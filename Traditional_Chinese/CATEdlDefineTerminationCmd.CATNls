@@ -1,0 +1,28 @@
+CATEdlDefineTerminationCmd.InitialState.Message  = "Select a connector, a contact, an equipment, a shell or a termination";
+CATEdlDefineTerminationCmd.InitialState2.Message = "Select a connector or termination";
+
+CATEdlDefineTerminationCmd.ElecIntSpliceTermState.Message     = "Define the id number";
+
+CATEdlDefineTerminationCmd.AssociatedGeoState.Message         = "Select a representation";
+
+CATEdlDefineTerminationCmd.AssociatedGeoCstState.Message      = "Select a representation";
+CATEdlDefineTerminationCmd.FirstConstraintCstState.Message    = "Select a line";
+
+SameIdNumber.Title = "Termination definition";
+SameIdNumber.Text  = "This id number already exists.";
+
+Contact.Title      = "Termination Definition";
+Contact.Text       = "You cannot create a termination on this contact:\nIt has already a termination (a termination is automatically created when defining a contact).";
+
+Stud.Title         = "Termination Definition";
+Stud.Text          = "You cannot create a termination on this stud:\nIt has already a termination and a stud can only have one termination.";
+
+TerminationNotification.Title = "Termination Definition";
+TerminationNotification.Text  = "You cannot create a termination on this electrical device.\n\nA termination can be created on the following devices:\n     - equipment\n     - shell\n     - single connector\n     - multi connector\n     - stud (only one termination)\n     - external splice\n     - internal splice\n     - terminal strip\n     - contact (only one termination).\nMoreover, the termination must be created on the electrical device reference.";
+
+TerminationNotification2.Title = "Termination Definition";
+TerminationNotification2.Text  = "You cannot create a termination on this electrical device.\n\nA termination can be created on single connector or a multi connector.\nMoreover, the termination must be created on the electrical device reference.";
+
+
+SamePublicationName.Title = "Termination Definition";
+SamePublicationName.Text  = "The specified termination name cannot be used because a publication with the same name already exists.\nPlease change the name of the termination.";

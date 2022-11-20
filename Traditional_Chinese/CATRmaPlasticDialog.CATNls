@@ -1,0 +1,170 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//===========================================================================
+//
+// CATRmaPlasticDialog (English)
+//
+//===========================================================================
+
+NoneShader   = "無";
+ImagesShader = "圖像";
+MarbleShader = "大理石";
+VeinShader   = "紋路";
+AlternateVeinShader = "交替紋路";
+RockShader   = "岩石";
+ChessboardShader = "棋盤";
+ClearCoatShader = "ClearCoat 360"; 
+CarPaintShader = "車子塗裝";
+ISLShader = "外部著色";
+
+tabContainer.basicPage.Title = "光線";
+tabContainer.basicPage.Help = "材料的光線參數";
+tabContainer.basicPage.LongHelp =
+"用來定義材料的光線參數.";
+
+
+tabContainer.texturePage.Title = "質地";
+tabContainer.texturePage.Help = "材料的質地參數";
+tabContainer.texturePage.LongHelp =
+"用來定義材料的質地參數 (選擇).";
+
+
+tabContainer.basicPage.colorLabel.Title = "顏色";
+tabContainer.basicPage.colorLabel.Help = "材料的顏色";
+tabContainer.basicPage.colorLabel.ShortHelp = "修改顏色";
+tabContainer.basicPage.colorLabel.LongHelp =
+"用來定義材料的顏色.";
+
+
+tabContainer.basicPage.colorValue.Title = "顏色";
+tabContainer.basicPage.colorValue.Help = "材料的顏色";
+tabContainer.basicPage.colorValue.ShortHelp = "修改顏色";
+tabContainer.basicPage.colorValue.LongHelp =
+"用來定義材料的顏色.";
+
+tabContainer.basicPage.filterLabel.Title = "(*)";
+
+tabContainer.basicPage.luminosityLabel.Title = "光度";
+tabContainer.basicPage.luminosityLabel.Help = "材料的光度";
+tabContainer.basicPage.luminosityLabel.ShortHelp = "修改光度系數";
+tabContainer.basicPage.luminosityLabel.LongHelp =
+"用來定義材料的亮度或暗亮.";
+
+
+tabContainer.basicPage.luminositySlider.Title = "光度";
+tabContainer.basicPage.luminositySlider.Help = "材料的光度";
+tabContainer.basicPage.luminositySlider.ShortHelp = "修改光度系數";
+tabContainer.basicPage.luminositySlider.LongHelp =
+"用來定義材料的亮度或暗亮.";
+
+
+tabContainer.basicPage.ambientLinkButton.Help = "鏈結環繞和散射顏色";
+tabContainer.basicPage.ambientLinkButton.ShortHelp = "鏈結環繞和散射顏色";
+tabContainer.basicPage.ambientLinkButton.LongHelp =
+"鏈結修改環繞和散射顏色";
+
+
+tabContainer.basicPage.contrastLabel.Title = "散射";
+tabContainer.basicPage.contrastLabel.Help = "材料的對比";
+tabContainer.basicPage.contrastLabel.ShortHelp = "修改散射係數";
+tabContainer.basicPage.contrastLabel.LongHelp =
+"加強明暗對比.";
+
+
+tabContainer.basicPage.contrastSlider.Title = "對比";
+tabContainer.basicPage.contrastSlider.Help = "材料的對比";
+tabContainer.basicPage.contrastSlider.ShortHelp = "修改對比系數";
+tabContainer.basicPage.contrastSlider.LongHelp =
+"用來定義材料的對比.";
+
+
+tabContainer.basicPage.diffuseLinkButton.Help = "鏈結反射和散射顏色";
+tabContainer.basicPage.diffuseLinkButton.ShortHelp = "鏈結反射和散射顏色";
+tabContainer.basicPage.diffuseLinkButton.LongHelp =
+"鏈結修改反射和散射顏色";
+
+
+tabContainer.basicPage.shininessLabel.Title = "明亮度";
+tabContainer.basicPage.shininessLabel.Help = "材料的明亮度";
+tabContainer.basicPage.shininessLabel.ShortHelp = "修改明亮系數";
+tabContainer.basicPage.shininessLabel.LongHelp =
+"用來定義材料的明亮度.";
+
+
+tabContainer.basicPage.shininessSlider.Title = "明亮度";
+tabContainer.basicPage.shininessSlider.Help = "材料的明亮度";
+tabContainer.basicPage.shininessSlider.ShortHelp = "修改明亮系數";
+tabContainer.basicPage.shininessSlider.LongHelp =
+"用來定義材料的明亮度.";
+
+
+tabContainer.basicPage.shininessExpLabel.Title = "粗糙度";
+tabContainer.basicPage.shininessExpLabel.Help = "材料的粗糙與否";
+tabContainer.basicPage.shininessExpLabel.ShortHelp = "修改反射度";
+tabContainer.basicPage.shininessExpLabel.LongHelp =
+"調整材料的明亮區域.";
+
+
+tabContainer.basicPage.shininessExpSlider.Title = "粗糙度";
+tabContainer.basicPage.shininessExpSlider.Help = "材料的粗糙與否";
+tabContainer.basicPage.shininessExpSlider.ShortHelp = "修改反射度";
+tabContainer.basicPage.shininessExpSlider.LongHelp =
+"調整材料的明亮區域.";
+
+
+tabContainer.basicPage.transparencyLabel.Title = "透明度";
+tabContainer.basicPage.transparencyLabel.Help = "材料的透明度";
+tabContainer.basicPage.transparencyLabel.ShortHelp = "修改透明系數";
+tabContainer.basicPage.transparencyLabel.LongHelp =
+"用來定義材料的透明度.";
+
+
+tabContainer.basicPage.transparencySlider.Title = "透明度";
+tabContainer.basicPage.transparencySlider.ShortHelp = "修改透明系數";
+tabContainer.basicPage.transparencySlider.Help = "材料的透明度";
+tabContainer.basicPage.transparencySlider.LongHelp =
+"用來定義材料的透明度.";
+
+
+tabContainer.basicPage.reflectivityLabel.Title = "反射性";
+tabContainer.basicPage.reflectivityLabel.Help = "材料的反射性";
+tabContainer.basicPage.reflectivityLabel.ShortHelp = "修改反射系數";
+tabContainer.basicPage.reflectivityLabel.LongHelp =
+"用來定義材料的反射性.
+附註 : 如果材料具有貼材,
+ 當材料不具反射性時才可顯示.";
+
+
+tabContainer.basicPage.reflectivitySlider.Title = "反射";
+tabContainer.basicPage.reflectivitySlider.Help = "材料的反射性";
+tabContainer.basicPage.reflectivitySlider.ShortHelp = "修改反射系數";
+tabContainer.basicPage.reflectivitySlider.LongHelp =
+"用來定義材料的反射性.
+附註 : 如果材料具有貼材,
+ 當材料不具反射性時才可顯示.";
+
+tabContainer.basicPage.reflectionCustom.Help = "進階反射設定";
+tabContainer.basicPage.reflectionCustom.ShortHelp = "進階反射設定";
+tabContainer.basicPage.reflectionCustom.LongHelp =
+"進階反射設定";
+
+tabContainer.basicPage.refractionLabel.Title = "折射 (*)";
+tabContainer.basicPage.refractionLabel.Help = "材料的析射";
+tabContainer.basicPage.refractionLabel.ShortHelp = "修改析射系數";
+tabContainer.basicPage.refractionLabel.LongHelp =
+"修改材料析射系數";
+
+
+tabContainer.basicPage.refractionSlider.Title = "折射";
+tabContainer.basicPage.refractionSlider.Help = "材料的析射";
+tabContainer.basicPage.refractionSlider.ShortHelp = "修改析射系數";
+tabContainer.basicPage.refractionSlider.LongHelp =
+"修改析射系數";
+
+tabContainer.basicPage.warningLabel.Title = "(*) 此參數只用來做軟體塗彩用";
+
+tabContainer.texturePage.textTypeFrm.textTypeLabel.Title = "型式 ";
+tabContainer.texturePage.textTypeFrm.textTypeCmbLabel.Help = "貼圖型式";
+tabContainer.texturePage.textTypeFrm.textTypeCmbLabel.ShortHelp = "修改貼圖型式";
+tabContainer.texturePage.textTypeFrm.textTypeCmbLabel.LongHelp =
+"定義應用在材料的貼圖型式";
+

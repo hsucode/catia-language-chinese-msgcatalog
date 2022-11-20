@@ -1,0 +1,1411 @@
+// ==================================================//
+// MachiningModeforPocket
+// ==================================================//
+MfgHelicalOutward = "向外螺旋";
+MfgHelicalInward  = "向內螺旋";
+MfgZigZag = "來回";
+MfgOneWay = "單向";
+MfgBackAndForth = "前後";
+
+MfgPocket = "封閉的減重槽";
+MfgAreaClear = "開放的減重槽";
+
+// ==================================================//
+// RadialStrategyforPocket
+// ==================================================//
+MfgMaxDistance = "最大距離";
+MfgToolDiameterRatio = "刀徑比例";
+MfgStepoverRatio = "重疊比率";
+
+// ==================================================//
+// AxialStrategy
+// ==================================================//
+MfgMaxDepthOfCut = "最大切削深度";
+MfgNumberOfLevels = "切層數目";
+MfgNumberOfLevelsNoTop = "無最上層的切層數目";
+
+// ==================================================//
+// ContouringMode
+// ==================================================//
+MfgCircular = "循圓";
+MfgAngular = "角度";
+MfgOptimized = "最佳化";
+MfgForcedCircular = "強迫循圓";
+
+// ==================================================//
+// DirectionOfCut
+// ==================================================//
+MfgClimb = "順銑";
+MfgConventional = "逆銑";
+
+// ==================================================//
+// PocketingFinish
+// ==================================================//
+MfgNoFinishPath = "無精銑路徑";
+MfgAtLastLevel = "只在最後層側精銑";
+MfgAtEachLevel = "在每一層側精銑";
+MfgAtBottom = "只在底層精銑";
+MfgComplete = "每一層都精銑";
+MfgFinishOnEachPlusBottom = "在每一層和底層都精銑";
+MfgFinishOnLastPlusBottom = "在最後一層和底層都精銑";
+
+// ==================================================//
+//MfgSequencing
+// ==================================================//
+MfgRadialFirst = "先徑向";
+MfgAxialFirst  = "先軸向";
+
+// ==================================================//
+// MfgMacroFeedrateType
+// ==================================================//
+MfgMacroMachiningFeedrate = "加工";
+MfgMacroApproachFeedrate  = "接近";
+MfgMacroRetractFeedrate   = "退刀";
+MfgMacroRapidFeedrate     = "快速";
+MfgMacroLocalFeedrate     = "局部";
+MfgMacroFinishingFeedrate = "精加工";
+MfgMacroAirCuttingFeedrate = "空切削";
+
+// ==================================================//
+// MfgMacroSpindleSpeedType
+// ==================================================//
+MfgMacroMachiningSpindleSpeed= "加工";
+MfgMacroApproachSpindleSpeed= "接近";
+MfgMacroRetractSpindleSpeed= "退刀";
+MfgMacroLocalSpindleSpeed= "局部";
+
+// ==================================================//
+// MfgMacroMode
+// ==================================================//
+MfgMacroDistance= "距離";
+MfgMacroToAPlane= "至平面";
+MfgMacroToSafety= "至安全面";
+
+MfgGeometry = "幾何";
+MfgEndOfPath = "最終路徑";
+MfgContourType = "輪廓形式";
+MfgIn = "入";
+MfgOut = "出";
+MfgCircle = "循圓";
+MfgAngle = "角度";
+MfgCuttingDirection = "切削方向";
+MfgRamping = "斜進刀";
+MfgAxial = "軸";
+MfgApproachMode = "趨進模式";
+MfgRadialStrategy = "徑向方式";
+MfgTangent = "相切";
+MfgHorizontal = "水平";
+MfgApproachModeForGC = "導引切削的進刀模式";
+MfgRetractModeForGC = "導引切削的退刀模式";
+MfgOnPart = "零件上";
+MfgApproachAndRetract = "進刀和退刀";
+MfgCuttingDepthActivation = "切削深度啟動";
+MfgStandard = "標準";
+MfgNo = "否";
+MfgYes = "是";
+MfgPlungeMode = "插刀模式";
+MfgTip = "刀尖";
+MfgContact = "接觸";
+MfgRelimitationMode = "極限模式";
+MfgDepthFirst = "先深度";
+MfgSideFirst = "先側邊";
+MfgSequencingMode = "連續模式";
+MfgLeft = "幾何左側";
+MfgRight = "幾何右側";
+MfgOn = "幾何上";
+MfgDrivingMode = "驅動模式";
+//MfgContouringModeForGC = "導引切削的輪廓模式";
+MfgContouringDrivingMode = "輪廓驅動模式";
+MfgParallelToPlane = "與平面平行";
+MfgParallelToCurve = "與曲線平行";
+MfgNormalToCurve = "與曲線垂直";
+MfgGuidingStrategy = "導引方式";
+MfgHard = "硬";
+MfgSoft = "軟";
+MfgHardnessMode = "堅硬模式";
+MfgTo = "內";
+MfgPast = "外";
+MfgCheckStopMode = "檢查停止模式";
+MfgNoSideFinish = "無精銑路徑";
+//MfgSideFinish = "側邊精銑";
+//MfgMaxDepthOfCut = "最大切削深度";
+//MfgAxialStrategy = "軸向深度";
+MfgBlind = "盲孔";
+MfgThrough = "穿孔";
+MfgBetweenTwoPlanes = "平面之間";
+MfgBetweenTwoCurves = "曲線之間";
+MfgBetweenCurveAndSurfaces = "曲線和曲面之間";
+MfgFlankContouring = "以刀側仞外形";
+MfgPointPosition = "點定位中";
+
+// ==================================================//
+// Start PlungeEnumParam                            //
+// Default,Tip,Diameter,Shoulder,Distance            //
+// ==================================================//
+MfgPlungeDefault   = "無";
+MfgPlungeDiameter  = "之直徑";
+MfgPlungeTip       = "以刀尖";
+MfgPlungeShoulder  = "以刀肩";
+MfgPlungeDistance  = "以距離";
+
+// ==================================================//
+// Start DepthEnumParam                              //
+// Default,Tip,Diameter,Shoulder,Distance,Break      //
+// ==================================================//
+MfgDepthDefault     = "無";
+MfgDepthTip         = "以刀尖 (Dt)";
+MfgDepthDiameter    = "以直徑 (Dd)";
+MfgDepthShoulder    = "以刀肩 (Ds)";  
+MfgDepthDistance    = "以距離 (Ddist)";  
+MfgDepthBreakThrough= "以打斷";  
+
+
+// ==================================================//
+// Start SpotDepthEnumParam                          //
+// Default,Tip,Diameter,Shoulder,Distance            //
+// ==================================================//
+MfgSpotDepthDefault        = "無";
+MfgSpotDepthTip            = "以刀尖";
+MfgSpotDepthDiameter       = "以直徑";
+MfgSpotDepthShoulder       = "以刀肩";  
+MfgSpotDepthDistance       = "以距離";  
+
+// ==================================================//
+// Start DeltaDepthEnumParam                         //
+// Default,Tip,Diameter,Shoulder,Distance,Increment  //
+// ==================================================//
+MfgDeltaDepthDefault   = "無";
+MfgDeltaDepthTip       = "以刀尖";
+MfgDeltaDepthDiameter  = "以直徑";
+MfgDeltaDepthShoulder  = "以刀肩"; 
+MfgDeltaDepthDistance  = "以距離"; 
+
+
+// ==================================================//
+// Start DwellEnumParam                         //
+// No, Rounds, Time  //
+// ==================================================//
+MfgDwellDefault  = "無";
+MfgDwellTime    = "以時間單位";
+MfgDwellRound   = "以旋轉圓數";
+MfgDwellRoundDouble   = "以旋轉圓數";
+
+// ==================================================//
+// Start LiftEnumParam                         		//
+// No, Distance, Polar						//
+// ==================================================//
+MfgLiftOffPolar = "以極座標";
+MfgLiftOffDistance = "以線性座標";
+MfgNoLiftOff = "無";
+
+
+
+// ==================================================//
+// Litteraux de Machinist.
+// ==================================================//
+M3xNone                            = "無";
+AlongToolAxis        = "沿刀具軸";
+AlongVector          = "沿向量";
+DirectFromSafety     = "沿安全面來";
+DirectToSafety       = "沿安全面去";
+TangentToMovement    = "切線移動";
+NormalToPS           = "垂直至安全面";
+LinkToSafety         = "與安全面連接";
+LinkToolAxis         = "連接刀具軸";
+
+	
+M3xMachiningModeZigZag			= "來回";
+M3xMachiningModeOneWayNext		= "單向下一個";
+M3xMachiningModeOneWaySame		= "單向相同";
+
+// Pour Between Contour
+M3xStepOverModeConstant			= "常數 2D";
+M3xStepOverModeViaScallopHeight 	= "以殘料高";
+M3xStepOverModeConstantOnPart	= "常數 3D";
+M3xStepOverModeMaximumOnPart 	= "最大 3D";
+
+// Pour Sweeping
+M3xStepOverModeSweepingConstant	= "常數";
+M3xStepOverModeSweepingViaScallopHeight = "經由殘料高度";
+
+// Pour ZLevel
+M3xStepOverModeZLevelConstant	= "常數";
+M3xStepOverModeZLevelViaScallopHeight = "經由殘料高度";
+M3xStepOverModeZLevelMaximum	= "最大";
+M3xStepOverModeZLevelContour 	= "外形上距離";
+
+// Inutile?
+M3xStepOverMode1Constant		= "常數";
+M3xStepOverMode1ViaScallopHeight	= "以殘料高";
+M3xStepOverMode1SmartStep		= "智慧步序";
+
+M3xMachiningZoneAll			= "全部";
+M3xMachiningZoneFrontalWalls		= "前壁";
+M3xMachiningZoneLateralWalls		= "側壁";
+M3xMachiningZoneHorizontalZones 	= "水平區域";
+
+M3xCutStrategyZOffset			= "Z 預留";
+M3xCutStrategyZPlane			= "Z 平面";
+M3xCutStrategyZProgressif		= "Z 漸進";
+
+M3xStepDirectionLeft			= "幾何左側";
+M3xStepDirectionRight			= "幾何右側";
+
+M3xStopPositionInside			= "之內";
+M3xStopPositionOutside			= "之外";
+M3xStopPositionOn				= "幾何上";
+
+M3xStopModeContactPoint			= "接觸點";
+M3xStopModeToolEnd			= "刀具端點";
+
+M3xRetractMacroMotionAlongToolAxis		= "沿刀具軸";
+M3xRetractMacroMotionAlongVector		= "沿向量方向";
+M3xRetractMacroMotionNormalToPS		= "垂直";
+M3xRetractMacroMotionTangentToMovement	= "切線移動";
+M3xRetractMacroMotionNone			= "無";
+
+M3xApproachMacroMotionAlongToolAxis		= "沿刀具軸";
+M3xApproachMacroMotionAlongVector		= "沿向量方向";
+M3xApproachMacroMotionNormalToPS		= "垂直";
+M3xApproachMacroMotionTangentToMovement	= "切線移動";
+M3xApproachMacroMotionNone			= "無";
+
+
+M3xApproachAndRetractMacroMotionAlongToolAxis	= "沿刀具軸";
+M3xApproachAndRetractMacroMotionCircularSlope	= "循圓或斜進刀";
+M3xApproachAndRetractMacroMotionCircular		= "循圓";
+M3xApproachAndRetractMacroMotionSlope		    = "斜進刀";
+
+
+M3xPlungeNoPlungeCheck			= "無檢查";
+M3xPlungeNoPlunge				= "無插刀";
+M3xPlungePlungeSameHeight		= "同高度";
+
+
+M3xHardSweepingModeOneWayNext		= "單向下一個";
+M3xHardSweepingModeOneWaySame		= "單向相同";
+M3xHardSweepingModeZigZag		= "來回";
+M3xHardSweepingModeSpiral		= "渦旋";
+M3xHardSweepingModeContourOnly	= "只有外形";
+M3xHardSweepingModeSpiralUGV		= "HSM 渦旋";
+
+
+M3xHardMachiningModeByPlane		= "以平面";
+M3xHardMachiningModeByArea		= "以區域";
+M3xHardMachiningModePocketsOnly	= "只有減重槽";
+M3xHardMachiningModeExternalOnly	= "外部零件";
+M3xHardMachiningModeExternalPockets = "外部零件和減重槽";
+M3xHardMachiningModeByPlPocketsOnly	= "減重槽以平面";
+M3xHardMachiningModeByPlExternalOnly = "其它零件以平面";
+M3xHardMachiningModeByPlExternalPockets = "外部零件和減重槽以平面";
+
+M3xHardCuttingModeConventional	= "逆銑";
+M3xHardCuttingModeClimb			=  "順銑";
+
+M3xHardEngagementModePlunge		= "插刀";
+M3xHardEngagementModeDrilling	= "鑽孔";
+M3xHardEngagementModeRamp		= "斜進刀";
+M3xHardEngagementModeHelix		= "螺旋";
+
+  
+M3xZLevelCuttingModeConventional	= "逆銑";
+M3xZLevelCuttingModeClimb		= "順銑";
+M3xZLevelCuttingModeAny			= "任意";
+  
+M3xContouringModeBetweenContour	= "外形之間";
+M3xContouringModeParallelContour	= "平形外形";
+M3xContouringModeSpineContour		= "垂直外形";
+  
+M3xSynchronizeYes				= "是";
+M3xSynchronizeNo				= "否";
+  
+M3xSideLeft					= "左";
+M3xSideRight				= "右";
+
+M3xToContourToward			= "至外形";
+M3xToContourFrom				= "從外形";
+  
+
+M3xFilterHVAll				= "全部";
+M3xFilterHVHorizontal			= "水平的";
+M3xFilterHVVertical			= "垂直的";
+
+M3xCuttingModeConventional		= "逆銑";
+M3xCuttingModeClimb			= "順銑";
+M3xCuttingModeNoMatter			= "任一";
+  
+M3xRotationSideClockWise		= "順時針";
+M3xRotationSideCounterClockWise	= "逆時針";
+  
+M3xUpDownModeUpward			= "上";
+M3xUpDownModeDownward			= "下";
+M3xUpDownModeNoMatter			= "任一";
+
+M3xInitPosOn				= "On";
+M3xInitPosTo				= "To";
+M3xInitPosPast				= "Past";
+
+M3xRetractAlongToolAxis       = "沿刀具軸";
+M3xRetractNormalToSafetyPlane = "與刀具軸垂直";
+M3xWithout                    = "沒有";
+M3xWith                       = "與";
+
+M3xSMSSweepingStrategy1  = "從導引 1 至導引 2";
+M3xSMSSweepingStrategy2  = "從導引 2 至導引 1";
+M3xSMSSweepingStrategy3  = "從導引至區域中心";
+M3xSMSSweepingStrategy4  = "從區域中心至導引";
+M3xSMSSweepingStrategy5  = "從導引至區域中心 ( 螺旋 ) ";
+M3xSMSSweepingStrategy6  = "從區域中心至導引 ( 螺旋 ) ";
+
+M3xInside	= "從內側邊";
+M3xOutside      = "從外側邊";
+
+M3xOutward = "向外";
+M3xInward = "向內";
+M3xAuto = "自動";
+M3xManual = "手動";
+M3xMacroMotionBackType = "退回";
+M3xMacroMotionCircular = "圓形";
+M3xMacroMotionBox = "盒";
+M3xCurved = "曲線的";
+M3xLinear = "直線的";
+M3xRight = "右";
+M3xLeft = "左";
+M3xCartesian = "以兩距離";
+M3xPolar = "以距離和角度";
+M3xHardSweepingModeSpiralPMG="螺旋的";
+M3xRatio = "重疊比率";
+M3xLength = "重疊長度";
+M3xStepoverRatio = "階度比率";
+M3xStepoverLength = "階度長度";
+
+// =====================================================================
+// * Attribute discrete values for Resources *
+// =====================================================================
+FINISH           = "精銑";
+ROUGH            = "粗銑";
+EITHER           = "任一";
+
+HIGH_SPEED_STEEL = "高速鋼";
+COATED_HIGH_SPEED_STEEL = "覆層高速鋼";
+CARBIDE          = "鎢鋼";
+COATED_CARBIDE   = "覆層鎢鋼";
+OTHER            = "其它";
+CERMETS          = "瓷經";
+CERAMICS         = "陶瓷";
+CUBIDE_BORON_NITRIDE = "立方氮化硼";
+
+RIGHT_HAND       = "右手";
+LEFT_HAND        = "左手";
+NEUTRAL          = "直仞";
+
+METRIC = "公制";
+INCH   = "英制";
+
+ONE_PIECE     = "整體";
+INSERT_HOLDER = "刀片刀把";
+
+NO = "否";
+YES = "是";
+
+GROOVE = "溝槽";
+CUTOFF = "切斷";
+
+SURFACE  = "曲面";
+TRAVERSE = "橫越";
+
+POINT = "點 (X,Y,Z)";
+AXIS = "軸 (X,Y,Z,I,J,K)";
+FROM = "From";
+GOTO = "Goto";
+ABS = "絕對";
+REL = "相對";
+BOTH = "最短";
+CLW = "順時針";
+CCLW = "逆時針";
+
+MFG_POWERED = "Powered";
+MFG_FIXED   = "固定";
+
+MFG_UNDEFINED             = "未定義";
+MfgHorizontalLatheMachine = "臥式車床";
+MfgVerticalLatheMachine   = "立式車床 Deprecated";
+
+ANSI   = "ANSI";
+ISO    = "ISO";
+NoCode = "編碼未使用";
+
+MfgSplitCircleNone   = "未分割圓弧";
+MfgSplitCircleV5Mode = "V5 模式. 分成兩半";
+MfgSplitCircleV4Mode = "V4 模式. 90度 和剩餘的";
+// * Attribute discrete values for Multi Axis *
+// =====================================================================
+
+
+MfgFixedNormangl			= "固定垂直角度";
+MfgVariableNormangl		= "變化垂直角度";
+MfgVariableBiNormangl		= "變化側垂直角度";
+MfgScallopHeight			= "殘料高度";
+MfgDistanceOnPart			= "依附在零件上的距離";
+MfgDistanceOnPlane		= "依附在平面上的距離";
+MfgNumberOfPathes			= "刀徑數目";
+
+MfgTgtDS				= "驅動面相切";
+MfgTantoFan				= "扇形相切"; 
+MfgCombinTanto			= "複合相切"; 
+MfgCombinParelm			= "複合平行";
+MfgMixedCombin			= "混合複合";
+MfgNormalPS			= "與零件垂直";
+
+MfgNoCutter				= "無"; 
+MfgActivePart 			= "作動零件";
+MfgFullAssembly			= "完全組立";
+
+Mfg5AxisDeActivateFanningNone          = "無       ";
+Mfg5AxisDeActivateFanningOnStart       = "在開始 ";
+Mfg5AxisDeActivateFanningOnEnd         = "在結束  ";
+Mfg5AxisDeActivateFanningOnStartAndEnd = "在開始和結束";
+
+// ==================================================//
+// MfgOutputStyle
+// ==================================================//
+MfgStandardOutput		= "無";
+MfgProfileOutput	    = "2D 刀具輪廓";
+MfgTipOutput  	        = "2D 徑向刀尖";
+
+// ==================================================//
+// MfgPitchSens
+// ==================================================//
+MfgRightThreaded		= "右手螺紋";
+MfgLeftThreaded		= "左手螺紋";
+
+// ==================================================//
+// MfgOutputMode
+// ==================================================//
+MfgYES     = "是";
+MfgNO	     = "否";
+MfgDEFAULT = "預設";
+
+
+// ==================================================//
+// MfgThreadType
+// ==================================================//
+MfgThreadInternal     = "內部的";
+MfgThreadExternal	    = "外部的";
+
+// ==================================================//
+// MfgHelixMode
+// ==================================================//
+MfgHelixPitch = "以單位英寸牙數";
+MfgHelixAngle = "以角度";
+
+// ==================================================//
+// MfgCircularMillingMode
+// ==================================================//
+MfgCircularMillingStandard = "標準";
+MfgCircularMillingHelical = "螺旋";
+
+// * Attribute discrete values for Lathe *
+// ==================================================//
+
+// ==================================================//
+// MfgLatheRoughingStrategy
+// ==================================================//
+
+MfgLongitudinal = "縱向的";
+MfgFace = "面";
+MfgContourParallel = "平行外形";
+
+// ==================================================//
+// MfgLatheMdOrientation
+// ==================================================//
+
+MfgInternal = "內部";
+MfgExternal = "外部";
+MfgFrontal = "前面";
+
+// ==================================================//
+// MfgLatheMdLocation
+// ==================================================//
+
+MfgFront = "前面";
+MfgBack = "後面";
+
+// ==================================================//
+// MfgLatheMachDirection
+// ==================================================//
+
+MfgToSpindle = "至刀具軸";
+MfgFromSpindle = "從刀具軸";
+
+MfgFromHeadStock = "由材料前端";
+MfgToHeadStock = "至材料前端";
+
+// ==================================================//
+// MfgLatheContouringMode
+// ==================================================//
+
+MfgEach = "每一";
+MfgEnd  = "結束";
+
+// ==================================================//
+// MfgLatheFirstPlungePos
+// ==================================================//
+
+MfgLeftUp = "左上";
+MfgCenter = "中心";
+MfgRightDown = "右下";
+MfgElse = "其它";
+
+// ==================================================//
+// MfgLatheCutComStrategy
+// ==================================================//
+
+MfgReverse = "逆轉";
+
+// ==================================================//
+// MfgLatheModeStart
+// ==================================================//
+
+MfgProfileEnd = "成形端";
+MfgNone = "無";
+
+MfgLatheOn				= "On";
+MfgLatheTo				= "To";
+MfgLathePast				= "Past";
+
+// ==================================================//
+// MfgLatheCornerProcessing
+// ==================================================//
+
+MfgChamfer = "倒角";
+MfgRadius = "半徑";
+
+// ==================================================//
+// MfgLatheLeadInType
+// ==================================================//
+
+MfgLinear = "線性";
+
+// New V5R14-1
+// ==================================================//
+// MfgLatheLiftOffMode
+// ==================================================//
+MfgToolEngaged = "當刀具加工時";
+
+// ==================================================//
+// MfgLatheProfileOutputMode
+// ==================================================//
+MfgfLathePartProfileOutput = "零件上輸出斷面";
+MfgfLatheToolProfileOutput = "刀具上輸出斷面";
+
+// ==================================================//
+// MfgLatheToolHolderConstraintMode
+// ==================================================//
+MfgfLatheAllHolderConstraint = "應用";
+MfgfLatheOmitHolderParameterConstraint = "忽略";
+// End New V5R14-1
+
+// ==================================================//
+// MfgLatheContouringCornerMode
+// ==================================================//
+
+MfgLatheAngular = "角度";
+
+// ==================================================//
+// MfgLatheInvertStrategy
+// ==================================================//
+
+MfgOverlap = "重疊";
+MfgThickness = "厚度";
+
+// ==================================================//
+// MfgLatheThreadProfile
+// ==================================================//
+
+MfgISO = "ISO";
+MfgISOb = "ISOb";
+MfgTrapezoidal = "Trapezoidal";
+MfgUNC = "UNC";
+MfgGaz = "Gaz";
+
+// ==================================================//
+// MfgLatheThreadUnit
+// ==================================================//
+
+MfgPitch = "牙數";
+MfgThreadPerInch = "單位英寸牙數";
+
+// ==================================================//
+// MfgLatheThreadMachining
+// ==================================================//
+
+MfgConstantDepthOfCut = "固定深度切削";
+MfgConstantSectionOfCut = "固定剖面切削";
+
+// ==================================================//
+// MfgLatheThreadPenetration
+// ==================================================//
+
+MfgStraight = "筆直";
+MfgFlankThread = "側面螺紋";
+MfgAlternate = "另一種";
+
+// ==================================================//
+// MfgLatheMacroMode
+// ==================================================//
+
+MfgLatheMacroDirect = "直接";
+MfgLatheMacroAxialRadial = "軸向 / 徑向";
+MfgLatheMacroRadialAxial = "徑向 / 軸向";
+MfgLatheStartOfPass = "起始路徑";
+MfgLatheOnTime = "時間正好";
+MfgLatheEndOfPass = "結束路徑";
+MfgLatheNumberOfPass = "路徑數目";
+
+//egndeb
+// ==================================================//
+// Mfg5AxisCurveMachining
+// ==================================================//
+// MfgThruElem    1/MfgToElem  2/MfgFromElem
+MfgThruElem				= "穿透元素"; 
+MfgToElem				= "至"; 
+MfgFromElem				= "從"; 
+//
+// MfgCurveMachiningType (1:MfgContact / 2:MfgSide / 3:MfgTip)
+MfgCurveMachiningType		= "曲線加工形式"; 
+MfgSide				= "側邊"; 
+// MfgCurveAxisStrategy 
+MfgCurveAxisStrategy		= "曲線軸方式";
+MfgInterpol				= "內插";
+MfgNormangl				= "導引和傾斜";
+MfgFittingCurvature		= "配合曲度";
+MfgThruPoint			= "經由點";
+MfgThruLine				= "垂直線";
+// MfgForcedContour
+MfgForcedContour			= "強制外形";
+
+MfgClose				= "封閉";
+MfgOpen				= "開放";
+// MfgFixedAxis
+MfgFixedAxis			= "固定軸";
+// MfgTanto
+MfgTanto				= "切至"; 
+// MfgGlobal
+MfgGlobal			= "預設為總體";
+//egnfin
+
+// ==================================================//
+// Multi-Axis attributs - CXR7
+// ==================================================//
+
+Mfg5AxisTipCurvFitt		= "最佳化前傾";
+Mfg5AxisSideCurvFitt		= "相切軸";
+Mfg5Axis4XNormangl		= "4-軸前傾 / 後傾";
+Mfg5AxisBiCurve			= "雙曲線";
+
+Mfg5AxisByOffset			= "以預留值";
+Mfg5AxisByComputation		= "以厚度";
+Mfg5AxisByContactHeight		= "以接觸長度";
+
+// ==================================================//
+// Copy Order attributs enumere
+// ==================================================//
+MfgTransformationType = "移轉形式";
+//----
+MfgTranslation        = "移動";
+MfgRotation           = "旋轉";
+MfgMirror             = "鏡射";
+MfgAxisSystems        = "軸至軸";
+MfgScaling            = "縮放";
+MfgAffinity           = "相似性";
+MfgMatrix             = "矩陣";
+
+MfgTranslationType    = "移轉形式";
+//----
+MfgAbsoluteAxisTranslation   ="絕對座標";
+MfgMachiningAxisTranslation  ="目前座標";
+MfgAxisAndLengthTranslation  ="方向 + 長度";
+
+MfgPriorityType = "順序";
+//----
+MfgPriorityToActivities = "所有動作 N 次";
+MfgPriorityToTransformation = "每一動作 N 次";
+
+MfgRotationType = "旋轉模式";
+//----
+MfgAxisRotation = "單一軸";
+MfgMachAxisRotation = "加工軸";
+
+MfgAxisMachAxis = "軸";
+//----
+MfgXMachAxis = "X";
+MfgYMachAxis = "Y";
+MfgZMachAxis = "Z";
+
+MfgRotationMode = "旋轉模式";
+MfgXY="XY: Z 旋轉";
+MfgYZ="YZ: X 旋轉";
+MfgZX="ZX: Y 旋轉";
+
+MfgMatrixType    = "矩陣形式";
+//----
+MfgAbsoluteAxisMatrix          = "在絕對軸系";
+MfgCurrentMachiningAxisMatrix  = "在目前加工軸系";
+MfgSelectedMachiningAxisMatrix = "在所選加工軸系";
+
+// ==================================================//
+// Multi-Axis attributs - CXR8
+// ==================================================//
+
+Mfg5Axis4XTilt	= "4-軸 前傾";
+
+Mfg5AxisFirst	= "起始";
+Mfg5AxisLast	= "最後";
+Mfg5AxisBoth	= "起始和最後";
+
+MfgAuto		= "自動";
+
+// ==================================================//
+// Patterns - CXR8
+// ==================================================//
+
+MfgFixedAxisPattern	= "固定軸";
+MfgVariableAxisPattern	= "變化軸";
+MfgNormalToPSPattern	= "垂直 PS 軸";
+
+MfgClosestPattern = "最近的";
+MfgManualPattern  = "手動";
+MfgAlongVectorPattern = "以帶狀";
+
+MfgTopPattern = "上元素";
+MfgProjectPattern  = "投影";
+
+// ==================================================//
+// Start Inside Outside - CXR8 
+// ==================================================//
+MfgStartInside   = "內側";
+MfgStartOutside  = "外側";
+MfgGuidingPoint   = "導引點";
+MfgOutputPoint  = "輸出點";
+
+// ==================================================//
+// PocketProgressionMode SMG - CXR8 
+// ==================================================//
+M3xPocketProgressionModeEither	= "兩者";
+M3xPocketProgressionModeInward	= "向內";
+M3xPocketProgressionModeOuward	= "向外";
+
+// ==================================================//
+// Limit line side 
+// ==================================================//
+M3xLimitLineInside = "內側";
+M3xLimitLineOutside = "外側";
+
+// ==================================================//
+// PSM
+// ==================================================//
+M3xMacroMotionPSM = "延長移動";
+// ==================================================//
+// Rework type - CXR9
+// ==================================================//
+MfgNoCornerChanel  = "無";
+MfgCorner          = "角落";
+MfgChannel         = "路徑上";
+MfgCornerChanel    = "角落和路徑上";
+
+// ==================================================//
+// Unused JMN/LHX - CXR9
+// ==================================================//
+MfgContouringOpenContour  = "未使用的";
+MfgContouringClosedContour  = "未使用的";
+MfgContouringIN  = "未使用的";
+MfgContouringOUT  = "未使用的";
+MfgContouringLEFT  = "未使用的";
+MfgContouringRIGHT  = "未使用的";
+
+// ==================================================//
+// Lathe Sequential - CXR9
+// ==================================================//
+
+// Check Mode Options
+//--------------------
+MfgLatheOnAPoint            = "On";
+MfgLatheOnAPoint.LongHelp   = "在點上.";
+MfgLatheToACurve            = "To";
+MfgLatheToACurve.LongHelp   = "至曲線.";
+MfgLatheOnACurve            = "On";
+MfgLatheOnACurve.LongHelp   = "在曲線上.";
+MfgLathePastACurve          = "越過";
+MfgLathePastACurve.LongHelp = "越過曲線.";
+
+MfgLatheExtended            = "延伸";
+MfgLatheExtended.LongHelp   = "檢查元素端點延伸.";
+MfgLatheActual              = "實際";
+MfgLatheActual.LongHelp     = "檢查元素端點未延伸.";
+
+// Feed And Speed Options
+//--------------------
+
+MfgLatheMach              = "加工";
+MfgLatheMach.LongHelp     = "定義加工進給.";
+MfgLatheLeadIn            = "進入";
+MfgLatheLeadIn.LongHelp   = "定義進入進給.";
+MfgLatheLiftOff           = "退出";
+MfgLatheLiftOff.LongHelp  = "定義退出進給.";
+MfgLatheRapid             = "快速";
+MfgLatheRapid.LongHelp    = "定義快速進給.";
+MfgLatheOther             = "其它值";
+MfgLatheOther.LongHelp    = "定義其它進給速值.";
+LINEARFEEDRATE            = "線性";
+ANGULARFEEDRATE           = "角度的";
+LINEARSPINDLESPEED        = "線性的";
+ANGULARSPINDLESPEED       = "角度的";
+
+// Direction Options
+//--------------------
+MfgLatheInverted          = "逆轉的";
+MfgLatheInverted.LongHelp = "逆轉的.";
+MfgLatheSame              = "相同";
+MfgLatheSame.LongHelp     = "相同.";
+
+// Guiding Point
+//--------------------
+MfgLatheLeft           = "左";
+MfgLatheLeft.LongHelp  = "左.";
+MfgLatheRight          = "右";
+MfgLatheRight.LongHelp = "右.";
+
+// Drive Options
+//--------------------
+MfgLatheDriveLine           = "線";
+MfgLatheDriveLine.LongHelp  = "定義驅動為線.";
+MfgLatheDriveAngle          = "角度";
+MfgLatheDriveAngle.LongHelp = "以角度定義驅動.";
+
+// Delta Options
+//--------------------
+MfgLatheDeltaPtPt                = "兩點間距離";
+MfgLatheDeltaPtPt.LongHelp       = "刀具移動以兩點間距離來移動.";
+MfgLatheDeltaLineDist            = "線和距離";
+MfgLatheDeltaLineDist.LongHelp   = "以所選的線和向量方向移動來定義刀具移動.";
+MfgLatheDeltaAngDist             = "角度和距離";
+MfgLatheDeltaAngDist.LongHelp    = "以從刀具軸計算的角度線來定義刀具移動.";
+MfgLatheDeltaDXDZ                = "軸向和徑向";
+MfgLatheDeltaDXDZ.LongHelp       = "以軸向和徑向來定義刀具移動.";
+
+// ==================================================//
+// Macros - SMG R9
+// ==================================================//
+M3xBetweenPassMacroMotionStraight = "直的";
+M3xBetweenPassMacroMotionHSM = "高速加工";
+M3xBetweenPassMacroMotionPSM = "延伸移動";
+M3xBetweenPassSameForAll = "以進刀來定義";
+M3xMacroMotionHSM = "高速加工";
+
+M3xClearanceMacroModeRetractOptimization = "最佳化";
+M3xClearanceMacroModeRetractToSafetyAlongToolAxis = "沿刀具軸";
+M3xClearanceMacroModeRetractToSafetyPerpendicular = "與安全面垂直";
+
+M3xMacroMotionSameForAll = "以進退刀來定義";
+
+// ==================================================//
+// Multi-pass - SMG R9
+// ==================================================//
+M3xMultiPassModeByNumberAndDepth = "以切層數目和最大切深";
+M3xMultiPassModeByNumberAndTotal = "以切層數目和總深";
+M3xMultiPassModeByDepthAndTotal = "以最大切深和總深";
+
+// ==================================================//
+// 5X Helix - CXR9
+// ==================================================//
+MfgNumberOfTurns  	= "迴轉數";
+MfgDistanceOnTurns    	= "迴轉間距離";
+
+// ==================================================//
+// Sweeping mode pour Prismatic Roughing - PMG R10
+// ==================================================//
+M3xPRSweepingModeHelical = "螺旋";
+M3xPRSweepingModeZigZag = "來回";
+
+// ==================================================//
+// Sequence Multi-pass - SMG R10
+// ==================================================//
+
+M3xMultiPassSequencingByZone = "以區域";
+M3xMultiPassSequencingByLevel = "以層";
+
+// ==================================================//
+// 5X Flank - CXR10
+// ==================================================//
+
+Mfg5AxisStandardOutput		= "無";
+Mfg5AxisCompensationOutput	= "3D 徑向 (PQR)";
+
+MfgStopCondAuto		= "自動";
+MfgStopCondTo		= "To";
+MfgStopCondOn		= "On";
+MfgStopCondPast		= "Past";
+MfgStopCondTgtDS	= "相切驅動面";
+
+MfgStartDirAuto		= "自動";
+MfgStartDirLeft		= "左";
+MfgStartDirRight	= "右";
+MfgStartDirFwd		= "向前";
+
+MfgDriveSideKeep	= "同第一個";
+MfgDriveSideSwap	= "交換";
+MfgDriveSideOn		= "On";
+
+// ==================================================//
+// 5X Curve - CXR10
+// ==================================================//
+
+MfgAlongRulingDir		= "沿規則方向";
+MfgAlongISO				= "沿參數線";
+MfgNormalToDriveCurve	= "與驅動曲線垂直";
+
+// ==================================================//
+// FAC ISO - CXR10
+// ==================================================//
+
+Mfg5AxisAddPasses = "新增路徑";
+
+// ==================================================//
+// PointToPoint - CXR10
+// ==================================================//
+MfgPtDeltaDXYZ 	       = "分件";
+MfgPtDeltaDX 	       = "沿 X 軸";
+MfgPtDeltaDY 	       = "沿 Y 軸";
+MfgPtDeltaParallelLine = "平行線";
+MfgPtDeltaNormalLine   = "垂直線";
+MfgPtDeltaAngleLine    = "與線夾角";
+
+// ==================================================//
+// Lathe -machine - CXR10
+// ==================================================//
+
+MfgLmtMachSynchroMode = "同步模式";
+MfgLmtUnilateral      = "單方向";
+MfgLmtMultilateral    = "多方向";
+MfgLmtBoth            = "兩者";
+
+MfgLmtSpindleType     = "刀軸型式";
+MfgLmtSpiMain         = "主要的";
+MfgLmtSpiCounter      = "數目";
+MfgLmtSpiEmbedded     = "植入的";
+
+MfgLmtSpiCaxisType    = "C 軸在刀軸上";
+MfgLmtNo              = "無";
+MfgLmtDiscrete        = "不連續";
+MfgLmtContinuous      = "連續";
+
+MfgLmtSpiCaxisRotaryDir = "C 軸旋轉方向";
+
+MfgLmtSpiCaxisRotType = "C 軸旋轉型式";
+MfgLmtSpiAbsolute     = "絕對";
+MfgLmtSpiIncremental  = "增量";
+
+MfgLmtTurretType      = "角檯型式";
+MfgLmtTurToolShop     = "刀具庫";
+MfgLmtTurRevolver     = "旋轉台";
+MfgLmtTurFixedTool    = "固定刀具";
+
+MfgLmtTurBAxisType    = "B 軸在角檯上";
+
+MfgLmtTurSpindleLink  = "角檯-主軸 鏈結";
+MfgLmtShared          = "分享";
+MfgLmtExclusive       = "唯一的";
+MfgLmtNone            = "無";
+
+// FAP : Lathe R11
+
+MFG_LATHE_MODIF_RAPID  = "以空切削速度更替 RAPID ";
+MFG_LATHE_RAPID_FEED   = "空切削速度";
+
+MfgRightOfGroove = "槽右側";
+MfgLeftOfGroove  = "槽左側";
+
+// FAP : Lathe R11 (end)
+
+// ==================================================//
+// SMG - MultiPockets - CXR11
+// ==================================================//
+
+M3xMultiPocketsSweepingModeHelical = "螺紋";
+M3xMultiPocketsSweepingModeConcentric = "同中心";
+M3xMultiPocketsSweepingModeZigZag = "來回";
+
+M3xMultiPocketsCenterOnly = "只有中心(1)";
+M3xMultiPocketsCenterAndBottom = "中心(1) 和底部(3)";
+M3xMultiPocketsCenterAndSide = "中心(1) 和側邊(2)";
+
+// ====================================================================//
+// Distribution Mode of points discretization on Sweep and CD - SMG R11
+// ====================================================================//
+
+M3x_Discretiz_Shifted = "平移";
+M3x_Discretiz_Aligned = "對齊";
+
+// SMG END
+
+
+//AJOUT Groove Milling R12
+MfgTop = "下 / 上";
+MfgBottom = "上 / 下";
+MfgMiddle = "中間";
+MfgMiddleAlternate = "中間交替";
+
+
+// ==================================================//
+// SMG - Macros - CXR12
+// ==================================================//
+M3xMacroModeUndefined = "錯誤";
+M3xMacroModeAlongToolAxis = "沿刀具軸";
+M3xMacroModeAlongVector = "沿向量";
+M3xMacroModeNormalToPS = "垂直";
+M3xMacroModeTangent = "與移動方向相切";
+M3xMacroModeNone = "無";
+M3xMacroModeBackType = "返回";
+M3xMacroModeCircular = "圓弧";
+M3xMacroModeBox = "盒";
+M3xMacroModePSM = "延長移動";
+M3xMacroModeHSM = "高速切削";
+M3xMacroModeSameForAll = "以進退刀定義";
+M3xMacroModeZLCircular = "圓弧";
+M3xMacroModeZLCircSlope = "圓弧或斜進";
+M3xMacroModeZLSlope = "斜進";
+M3xMacroModeZLPSM = "延長移動";
+M3xMacroMotionUser = "使用者自訂";
+// SMG END
+
+
+MfgMacroModeDirect      = "直接";
+MfgMacroModeVH          = "徑向 軸向";
+MfgMacroModeHV          = "軸向 徑向";
+MfgMacroModeCHA         = "圓弧 水平 軸向";
+MfgMacroModeHHA         = "水平 水平 軸向";
+MfgMacroModeAxial       = "軸向";
+MfgMacroModeRamping     = "斜進2";
+MfgMacroModeClrDist     = "距離 ";
+MfgMacroModeClrPlane    = "至平面 ";
+MfgMacroModeClrSfyPlane = "至安全平面 ";
+// Overload
+MfgMacroOverModePredefined = "預先定義";
+MfgMacroOverModeRamping    = "斜進";
+//AJOUT Cutter Compensation R12
+MfgCompContact = "接觸";
+MfgCompTipAndContact = "刀尖或接觸點";
+
+// ==================================================//
+// SMG - MultiPockets - CXR12
+// ==================================================//
+
+M3xStockContouringPositionAfter = "來回後";
+M3xStockContouringPositionBefore = "來回前";
+
+// ==================================================//
+// Mfg5XOutputStyle CXR13
+// ==================================================//
+
+MfgStdOutput		= "無";
+Mfg2DRadialTip		= "2D 徑向 - TIP (G41/G42)";
+Mfg2DRadialProfile	= "2D 徑向 - 斷面 (G41/G42)";
+Mfg3DRadialPQR  	= "3D 徑向 (PQR)";
+Mfg3DContact	    = "3D 接觸 (G29/CAT3Dxx)";
+
+MfgIfNeeded  		= "視需要";
+MfgForced	    		= "永遠";
+
+// ==================================================//
+// SMG R13
+// ==================================================//
+M3xYes = "是";
+M3xNo = "否";
+
+M3xMacroModeHMRPlunge = "插刀";
+M3xMacroModeHMRDrill = "鑽孔";
+M3xMacroModeHMRRamp = "斜進 ";
+M3xMacroModeHMRHelix = "螺旋";
+M3xHardSweepingModeOffsetOneWay = "以單向在零件上預留";
+M3xHardSweepingModeOffsetZigZag = "以來回在零件上預留";
+
+// ==================================================//
+// SMG R14
+// ==================================================//
+
+M3xMacroModeNoneBP = "直線";
+M3xMacroModeSameForAllBP  = "以進刀定義";
+M3xMacroModeSameLinkingBP  = "以進退刀鏈結來定義";
+MfgMacroDistanceSMG = "最佳化";
+MfgMacroToAPlaneSMG  = "沿刀軸";
+MfgMacroToPerpendicularSafetyPlaneSMG  = "垂直安全面";
+
+// ==================================================//
+// ISO / Video accuracy R14
+//=================================//
+MfgProgramCompensationModeSimulationAbsolute = "絕對";
+MfgProgramCompensationModeSimulationRelative = "相對";
+// Name of the Default Object for Positions of the Synchronisation and its options
+MfgStartOfActivity = "開始動作";
+MfgEndOfActivity   = "結束動作";
+// ==================================================//
+// MMG R14
+//=================================//
+MfgSegmtFirstRadial = "先線段後再徑向";
+MfgSegmtFirstAxial = "先線段後再軸向";
+
+MachiningAxisSystem = "加工軸系";
+TurningToolAxisSystem = "車床刀具軸系";
+
+//===========================
+//MfgTableRotationAngleMode
+//===========================
+Manual = "手動";
+Selection = "選擇";
+
+
+
+
+//===========================
+// Program Optimization for NUL
+//===========================
+MfgPgmNotOptimized = "未最佳化程式";
+MfgPgmOptimized = "最佳化程式";
+
+MfgPgmOptimization = "程式最佳化";
+
+
+
+M3xAccostingSide	=	 "初始刀具位置";
+M3xApproachAndRetractMacroMotion	=	 "連接路徑";
+M3xApproachMacroMotion	=	 "進刀模式";
+M3xApproachMacroMotionLinking	=	 "進刀模式";
+M3xBetweenPassMacroMotion	=	 "連接模式";
+M3xClearanceMacroMode	=	 "退刀模式";
+M3xContouringMode	=	 "循環型式";
+M3xCutStrategy	=	 "粗加工模式";
+M3xCuttingMode	=	 "切削模式"; 
+M3xEngagementMode	=	 "連接模式";
+M3xFilterHVMode	=	 "HV 過濾";
+M3xHardEngagementMode	=	 "連接模式";
+M3xHardInterpolationMode	=	 "內插模式";
+M3xHardMachiningMode	=	 "加工模式";
+M3xHardSweepingMode	=	 "刀具路徑型式";
+M3xHorizontalZonesDetectionMode	=	 "水平區域選擇";
+M3xLimitLineSide	=	 "加工側";
+M3xMachiningMode	=	 "刀具路徑型式";
+M3xMachiningZone	=	 "加工區域";
+M3xMultiPassMode	=	 "多重路徑輸入模式";
+M3xMultiPassSequencingMode	=	 "多重路徑順序模式";
+M3xMultiPocketsStrategy	=	 "加工方式";
+M3xMultiPocketsSweepingMode	=	 "刀具路徑型式";
+M3xOffsetSide	=	 "偏移側";
+M3xPlunge	=	 "插入";
+M3xPocketProgressionMode	=	 "螺旋運動";
+M3xProgressDirectionMode	=	 "刀具路徑型式";
+M3xPRSweepingMode	=	 "刀具路徑型式";
+M3xRatioOrLengthMode	=	 "路徑重疊模式";
+M3xRepartitionMode	=	 "分配模式";
+M3xRetractMacroMotion	=	 "退刀模式";
+M3xRetractMacroMotionLinking	=	 "退刀模式";
+M3xRetractTpSPMode	=	 "退至安全面模式";
+M3xSMSBitangencyMode	=	 "清角模式";
+M3xSMSSweepingStrategyMode	=	 "掃掠方式";
+M3xStepDirection	=	 "重疊側";
+M3xStepOverMode	=	 "未使用";
+M3xStepOverModeBetweenContour	=	 "重疊模式";
+M3xStepOverModeSweeping	=	 "重疊模式";
+M3xStepOverModeZLevel	=	 "重疊模式";
+M3xStockContouringPosition	=	 "零件輪廓位置";
+M3xStopMode	=	 "停止模式";
+M3xStopPosition	=	 "位置";
+M3xSynchronize	=	 "同步化";
+M3xToContour	=	 "方向";
+M3xUpDownMode	=	 "軸向方向";
+MFG_BORE_ABILITY	=	 "抬銑能力";
+MFG_COMPOSITION	=	 "組合";
+MFG_DESC_CODE	=	 "說明碼";
+MFG_HAND_STYLE	=	 "方向型式";
+MFG_HOLDER_CAPAB	=	 "刀把能力";
+MFG_INSERT_MAT	=	 "材料";
+MFG_ISO_APPR_ANG	=	 "ISO 進刀角度";
+MFG_ISO_BAR_TYPE	=	 "ISO 刀桿型式";
+MFG_ISO_CLAM_SYS	=	 "ISO 夾持系統";
+MFG_ISO_CLR_ANG	=	 "ISO 預留角度";
+MFG_ISO_CUTCOND	=	 "刀片切角狀態 (ISO)";
+MFG_ISO_DIR	=	 "ISO 方向";
+MFG_ISO_LENGTH	=	 "ISO 長度";
+MFG_ISO_SHAPE	=	 "ISO 外形";
+MFG_ISO_THICK	=	 "刀片厚度 (ISO)";
+MFG_ISO_TOL	=	 "Inscribed 直徑 (ISO)";
+MFG_ISO_TYPE	=	 "刀片型式 (ISO)";
+MFG_LATHE_RAD_AX	=	 "徑向軸";
+MFG_LATHE_SPN_AX	=	 "刀軸";
+Mfg_LatheGlobalFeedrateMagnitude	=	 "進給單位";
+Mfg_LatheGlobalSpindleMagnitude	=	 "刀軸單位";
+MFG_MACH_QUALITY	=	 "加工品質";
+MFG_MACHINE_COMP	=	 "加工匹配性 (內部參數)";
+MFG_OUTP_PREF_1	=	 "Pref. 輸出點 1";
+MFG_OUTP_PREF_2	=	 "Pref. 輸出點 2";
+MFG_OUTP_PREF_3	=	 "Pref. 輸出點 3";
+MFG_OUTPUT_FRMT	=	 "NC 資料輸出";
+MFG_OUTPUT_MODE	=	 "未使用";
+MFG_OUTPUT_TYPE	=	 "NC 資料輸出";
+MFG_ROT_DIR	=	 "旋轉方向";
+MFG_ROT_TYP	=	 "旋轉型式";
+MFG_ROTARY_AXIS	=	 "旋轉軸";
+MFG_ROTARY_CATEGORY	=	 "目錄";
+MFG_STRT_PT_SYNT	=	 "起始點方式";
+MFG_THREAD_CLASS	=	 "螺紋分類";
+MFG_THREAD_FORM	=	 "螺紋型式";
+MFG_TOOL_ASS_POWER	=	 "Power";
+MFG_TOOTH_MAT	=	 "刀齒型式";
+MFG_TOOTH_MATDES	=	 "刀齒材料說明";
+MFG_TOOTH_MATDESC	=	 "刀齒材料說明";
+MFG_WAY_OF_ROT	=	 "旋轉方向";
+Mfg5AxisAngleManagement	=	 "刀軸導引";
+Mfg5AxisDeActivateFanning	=	 "取消 fanning";
+Mfg5AxisEMToolAxisStrategy	=	 "刀軸模式";  
+Mfg5AxisHelixAxisStrategy	=	 "刀軸模式";    
+Mfg5AxisIsoparAxisStrategy	=	 "導引";
+Mfg5AxisLocalReStartingDirection	=	 "重新開始方向";
+Mfg5AxisLocalStoppingCondition	=	 "停止狀態";
+Mfg5AxisLocalSwapSideOnDS	=	 "驅動元素上的刀具位置";
+Mfg5AxisMultiLevelMode	=	 "模式";
+Mfg5AxisOutputType	=	 "輸出型式";
+Mfg5AxisSkipPath	=	 "忽略路徑";
+Mfg5AxisStartEnd	=	 "內部參數";
+Mfg5XHelixRadialStrategy	=	 "徑向方式";
+Mfg5XOutputType	=	 "補償輸出";
+MfgAutoContinuing	=	 "內部參數";
+MfgAxialStrategy	=	 "軸向方式";
+MfgAxisSystemType	=	 "加工軸型式";
+MfgCircularMillingMode	=	 "加工模式";
+MfgClosedContouringMatterSide	=	 "未使用";
+MfgCollisionCheckingCheck	=	 "檢查元素的干涉偵測";
+MfgCollisionCheckingDrive	=	 "驅動元素的干涉偵測";
+MfgCollisionCheckingEnd	=	 "第二限制的干涉偵測";
+MfgCollisionCheckingMode	=	 "干涉檢查模式";
+MfgCollisionCheckingPart	=	 "零件元素的干涉偵測";
+MfgCollisionCheckingStart	=	 "第一限制的干涉偵測";
+MfgCompensationMode	=	 "補償應用模式";
+MfgCondLim1	=	 "起始";
+MfgCondLim2	=	 "停止";
+MfgContouringContourCharacteristic	=	 "未使用";
+MfgContouringMode	=	 "輪廓模式";
+MfgContouringModeForGC	=	 "輪廓型式";    
+MfgCurveTgtAxisStrategySubModes	=	 "模式";
+MfgDefaultPositionOfSynchronisation	=	 "同步位置";
+MfgDirectionOfCut	=	 "切削方向";
+MfgEndPathINOUT	=	 "路徑端點";
+MfgFacingFinish	=	 "精加工模式";
+MfgForcedContour	=	 "強制輪廓";
+MfgGuidance	=	 "刀軸方式";
+MfgHoleExtension	=	 "延伸 ";
+MfgLatheContouringCornerMode	=	 "輪廓外側圓角";
+MfgLatheContouringMode	=	 "零件輪廓";
+MfgLatheCornerProcessing	=	 "其它圓角";
+MfgLatheCutcomStrategy	=	 "CUTCOM";
+MfgLatheDirection	=	 "加工方向";
+MfgLatheEODeltaCheckMode	=	 "增量檢查模式";
+MfgLatheEODriveDir	=	 "驅動方向";
+MfgLatheEODriveElemType	=	 "驅動元素型式";
+MfgLatheEOFeedrateMode	=	 "進給模式";
+MfgLatheEOFirstCheckMode	=	 "第一檢查模式";
+MfgLatheEOGuidingPoint	=	 "導引點";
+MfgLatheEOLimitCheck	=	 "第一檢查限制";
+MfgLatheEOLimitDrive	=	 "第二檢查限制";
+MfgLatheEOSecondCheckMode	=	 "第二檢查模式";
+MfgLatheEOType	=	 "動作型式";
+MfgLatheFirstCornerProcessing	=	 "基礎圓角";
+MfgLatheFirstFlankLeadInType	=	 "第一刀仞切入";
+MfgLatheFirstPlungePos	=	 "第一插入位置";
+MfgLatheGroovingOrientation	=	 "方位";
+MfgLatheInterruptMode	=	 "中斷模式";
+MfgLatheInvertLiftOffType	=	 "逆轉退出";
+MfgLatheInvertStrategy	=	 "逆轉方式";
+MfgLatheLastCornerProcessing	=	 "退出圓角";
+MfgLatheLastFlankLeadInType	=	 "最後刀仞切入";
+MfgLatheLeadInMode	=	 "切入";
+MfgLatheLeadInType	=	 "切入";
+MfgLatheLiftOffType	=	 "退出";
+MfgLatheMachDirection	=	 "加工方向";
+MfgLatheMdLocation	=	 "位置";
+MfgLatheMdOrientation	=	 "方位";
+MfgLatheModeEnd	=	 "端點限制模式";
+MfgLatheModeStart	=	 "起始裉制模式";
+MfgLatheNextPlungePos	=	 "下一插刀位置";
+MfgLatheOtherFlankLeadInType	=	 "其它刀仞切入";
+MfgLatheRampingRecessingStrategy	=	 "Recessing 方式";
+MfgLatheRampingRoughingStrategy	=	 "粗加工方式";
+MfgLatheRecessingStrategy	=	 "Recessing 模式";
+MfgLatheRoughingStrategy	=	 "粗加工模式";
+MfgLatheStartRampingPassMode	=	 "開始路徑模式";
+MfgLatheThreadMachining	=	 "螺紋型式";
+MfgLatheThreadOrientation	=	 "方位";
+MfgLatheThreadPenetration	=	 "螺紋穿透";
+MfgLatheThreadProfile	=	 "斷面";
+MfgLatheThreadUnit	=	 "螺紋單位";
+MfgLatheToolHolderConstraintMode	=	 "刀片刀把拘束";
+MfgLocalToolAxisStrategy	=	 "導引";
+MfgMachiningMode	=	 "刀具路徑型式";
+MfgMachiningModeforFacing	=	 "面銑刀路徑型式";                 
+MfgMachiningModeforPocket	=	 "減重槽銑刀路徑型式";      
+MfgMacroFeedrateType	=	 "進給型式";
+MfgMacroPredefinedMode	=	 "模式";
+MfgMacroType	=	 "副程式型式"; 
+MfgManualStartDir	=	 "手動方向";
+MfgOpenContouringMatterSide	=	 "未使用";
+MfgOutputStyle	=	 "補償輸出";
+MfgPatternOrderingMode	=	 "順序模式";
+MfgPatternTopMode	=	 "投影模式";
+MfgPitchSens	=	 "螺紋方向";
+MfgPocketingFinish	=	 "減重槽精銑模式";
+MfgPocketingStyle	=	 "減重槽型式";
+MfgProgramCompensationModeSimulation	=	 "刀具補償模式";
+MfgRadialStrategyforPocket	=	 "徑向方式";
+MfgReturnMode	=	 "返回模式";                 
+MfgReworkMode	=	 "重加工區域過濾型式";
+MfgSequencing	=	 "順序";
+MfgSideFinish	=	 "側精銑路徑模式";
+MfgSideFinishBottomThickness	=	 "底部銑側面預留";                 
+MfgStartHardness	=	 "開始 hardness";
+MfgStartOnRelim1	=	 "限制 1 上開始";
+MfgStartPosition	=	 "開始";
+MfgStopHardness	=	 "停止 hardness";
+MfgTableRotationAngleMode	=	 "定義";
+MfgThruElem	=	 "至 / 由";
+MfgToolAxis_Mode	=	 "刀軸方式";
+MfgToolAxisStrategy	=	 "刀軸方式";
+MfgToolSideOnGuideCurve	=	 "導引曲線上位置";
+MfgUseGuideCurve	=	 "使用導引曲線";
+MfgV4ApproachType	=	 "進刀型式";
+MfgV4CollCheck	=	 "干涉檢查";
+MfgV4CollisionCheck	=	 "線,曲線或外形的干涉檢查";
+MfgV4ComputedDistance	=	 "計算距離";
+MfgV4ContMillingType	=	 "接觸銑削型式";
+MfgV4ContourType	=	 "輪廓連接型式"; 
+MfgV4DistBetweenPathType	=	 "路徑間距離"; 
+MfgV4EdgeMode	=	 "圓角處理";  
+MfgV4FinishingPassDir	=	 "精銑路徑方向";  
+MfgV4FirstPlungeDir	=	 "第一插刀方向";
+MfgV4GeoRelimit	=	 "幾何元素限制";
+MfgV4LatheContouringMode	=	 "零件輪廓銑削";  
+MfgV4LatheCycleType	=	 "循環型式";  
+MfgV4LatheFirstPlungePos	=	 "第一插刀位置";
+MfgV4LatheMachDirection	=	 "加工方向";  
+MfgV4LatheMachiningDir	=	 "加工方向";  
+MfgV4LatheMachiningRecess	=	 "加工 Recess";  
+MfgV4LatheMdLocation	=	 "位置";  
+MfgV4LatheMdOrientation	=	 "方位";  
+MfgV4MachiningDirection	=	 "加工方向";  
+MfgV4PartSurfThickType	=	 "零件曲面厚度型式"; 
+MfgV4PlungeType	=	 "插刀型式";
+MfgV4PocketBoundaryType	=	 "減重槽邊界型式";
+MfgV4PosModeOnCheckElem	=	 "端點限制模式";
+MfgV4PosModeOnStartElem	=	 "起始限制模式";
+MfgV4RetractType	=	 "退刀型式";
+MfgV4Rework	=	 "再加工型式";
+MfgV4SkipPaths	=	 "忽略路徑";  
+MfgV4SurfMachMode	=	 "曲面加工"; 

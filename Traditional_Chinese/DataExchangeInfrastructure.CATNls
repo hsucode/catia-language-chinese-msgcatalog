@@ -1,0 +1,87 @@
+//NLS-ENGLISH VERSION
+//=======================================================================
+// MODULE :  DataExchangeInfrastructure
+//=======================================================================
+//  05/07/2001 : CRB : Low memory management
+//  13/07/2001 : CRB : Low memory management
+
+// Numeros utilises :
+//[9501] a [9530] Low memory management
+
+//
+//--------------------------------------
+//  Messages from CATExchangeEngine
+//--------------------------------------
+
+//
+
+// Error Message Window
+CATExchangeEngine.Msg.PbOnInput = "CATExchangeEngine 發生問題. 根源於輸入界面.";
+
+// Error Message Window
+CATExchangeEngine.Msg.PbOnOutput = "CATExchangeEngine 發生問題. 根源於輸出界面.";
+
+// Error Message Window
+CATExchangeEngine.Msg.PbOnMapping = "CATExchangeEngine 發生問題. 根源於對映.";
+
+// Error Message Window
+CATExchangeEngine.Msg.PbOnClose = "CATExchangeEngine 發生問題. 輸出界面未關閉.";
+
+// Error Message Window
+CATExchangeEngine.Msg.PbOnInClean = "CATExchangeEngine 發生問題. 輸入界面未清除.";
+
+// Error Message Window
+CATExchangeEngine.Msg.PbOnOutClean = "CATExchangeEngine 發生問題. 輸出界面未清除.";
+
+// Error Message Window
+CATExchangeEngine.Msg.NotInput = "CATExchangeEngine 發生問題. 未發現輸入界面.";
+
+// Error Message Window
+CATExchangeEngine.Msg.NotOutput = "CATExchangeEngine 發生問題. 未發現輸出界面.";
+
+// Error Message Window
+CATExchangeEngine.Msg.PbOnInit = "CATExchangeEngine 發生問題. 輸出界面未初始化.";
+
+// Error Message Window
+CATExchangeEngine.Msg.PbParsing = "CATExchangeEngine 發生問題. 根源於 IGES 界面剖析.";
+
+//erb//
+CATExchangeEngine.Msg.Blanc="	o~~~~~~~~~~~~~~~~~~~~~~~~~~o";
+
+
+// CATDXMemoryManagement -- crb
+
+// Messages d'erreur
+
+CATDXMemoryManagement.Error.MemoryLowSystemInteruption=
+"!  <E> [9501] 記憶體不足 : 系統無法再定位 -> 只轉換部份";
+
+CATDXMemoryManagement.Error.MemoryLow=
+"!  <E> [9502] 記憶體檢查不 OK : 記憶體不足 -> 只轉換部份";
+
+
+// Messages d'info
+
+CATDXMemoryManagement.Info.MemoryCheckTotalTime=
+"   <I> [9510] 記憶體檢查根據定位時間 : /p1 (cost in % /p2)";
+
+CATDXMemoryManagement.Info.MemoryManagementDesactivation=
+"   <I> [9511] 關閉記憶體管理可避免記憶體不足";
+
+CATDXMemoryManagement.Info.MemoryNotLow =
+"   <I> [9512] 記憶體檢查 OK : 轉換繼續";
+
+
+// Warning
+
+CATDXMemoryManagement.Warning.TooLongMemoryProcessing=
+"   <W> [9521] 檢查記憶體將花費較多時間";
+
+
+
+
+
+
+
+
+

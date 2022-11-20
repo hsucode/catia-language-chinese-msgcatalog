@@ -1,0 +1,389 @@
+// *--------------------------------------------*//
+// *               Exemple de message           *//
+// *  En_US                                     *//
+// *------------------------------------------- *//
+// ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// ERR_2000.Diagnostic = "Un des parametres est negatif";
+// ERR_2000.Advice     = "Utilisez des parametres positifs";
+
+// BothSides option with No Keep mode
+GSMUIINPUT_ERR_50.Request    = " ";
+GSMUIINPUT_ERR_50.Diagnostic = "兩側 選項與 不保留 模式不一致.";
+GSMUIINPUT_ERR_50.Advice     = "請關閉其中之一選項.";
+
+// Repeat Object option with No Keep mode
+GSMUIINPUT_ERR_60.Request    = "重覆物件命令未授權.";
+GSMUIINPUT_ERR_60.Diagnostic = "此命令與 不保留 模式不一致.";
+GSMUIINPUT_ERR_60.Advice     = "";
+// JetonNull
+GSMUIINPUT_ERR_100.Request    = " ";
+GSMUIINPUT_ERR_100.Diagnostic = "特徵 /p1 的位置碼: /p2 錯誤.";
+GSMUIINPUT_ERR_100.Advice     = " ";
+            
+// Spec inconsistante
+GSMUIINPUT_ERR_110.Request    = "無效元素.";
+GSMUIINPUT_ERR_110.Diagnostic = "偵測到元素 /p1 不一致, 可能導致不穩定.";
+GSMUIINPUT_ERR_110.Advice     = "請刪除它並建立一個新的.";
+
+// InvalidDir
+GSMUIINPUT_ERR_200.Request    = "無效的方向.";
+GSMUIINPUT_ERR_200.Diagnostic = "所輸入的方向具有無效的正向值.";
+GSMUIINPUT_ERR_200.Advice     = " ";
+
+// BoundGap
+GSMUIINPUT_ERR_300.Request    = "無效的邊界.";
+GSMUIINPUT_ERR_300.Diagnostic = "邊界 /p2 和 /p3 具有 /p1 的間隙.";
+GSMUIINPUT_ERR_300.Advice     = "請檢查這些元素.";
+
+// ElemSelect
+GSMUIINPUT_ERR_400.Request    = "元素已選.";
+GSMUIINPUT_ERR_400.Diagnostic = "在輸入表中元素已選.";
+GSMUIINPUT_ERR_400.Advice     = " ";
+
+//Non axis system element
+GSMUIINPUT_ERR_410.Request    = "無效元素.";
+GSMUIINPUT_ERR_410.Diagnostic = "所選元素 /p1 不是軸系.";
+GSMUIINPUT_ERR_410.Advice     = "請選擇軸系.";
+// Closed Curve
+GSMUIINPUT_ERR_500.Request    = " ";
+GSMUIINPUT_ERR_500.Diagnostic = "所選曲線 /p1 未封閉.";
+GSMUIINPUT_ERR_500.Advice     = "切面曲線必須是封閉且在同一平面.";
+
+// Planar 
+GSMUIINPUT_ERR_501.Request    = " ";
+GSMUIINPUT_ERR_501.Diagnostic = "所選的曲線 /p1 不是平面形式.";
+GSMUIINPUT_ERR_501.Advice     = "輸入曲線必須是封閉和平面形式的.";
+
+// Non updated element
+GSMUIINPUT_ERR_600.Request    = "所選元素 /p1 不是最新的.";
+GSMUIINPUT_ERR_600.Diagnostic = "輸入的元素必須是最新的.";
+GSMUIINPUT_ERR_600.Advice     = "更新此元素.";
+
+// Non duplicable element
+GSMUIINPUT_ERR_700.Request    = "所選元素 /p1 無法複製.";
+GSMUIINPUT_ERR_700.Diagnostic = "所輸入的元素必須是曲線或是可複製的元素.";
+GSMUIINPUT_ERR_700.Advice     = "選擇曲線或複製元素.";
+
+// Duplicate a no keep feature
+GSMUIINPUT_ERR_701.Request    = "所選元素 /p1 無法複製.";
+GSMUIINPUT_ERR_701.Diagnostic = "所輸入元素以非保留模式建立.";
+GSMUIINPUT_ERR_701.Advice     = "選擇另一元素.";
+
+
+// Sub Element not supported
+GSMUIINPUT_ERR_705.Request    = "使用的元素是或內含次元素.";
+GSMUIINPUT_ERR_705.Diagnostic = "輸入元素是次元素或與次元素有關.\n 公式不支援.";
+GSMUIINPUT_ERR_705.Advice     = "此命令不可使用次元素.\n 請萃取它來使用.";
+
+// Not a plane
+GSMUIINPUT_ERR_710.Request    = "所選元素 /p1 不是平面.";
+GSMUIINPUT_ERR_710.Diagnostic = "輸入元素必須是無限制的平面.";
+GSMUIINPUT_ERR_710.Advice     = "選擇平面.";
+
+// ElementNonConnexe
+GSMUIINPUT_ERR_800.Request    = "所選元素不是連接元素.";
+GSMUIINPUT_ERR_800.Diagnostic = "輸入元素 /p1 必須是連接元素.";
+GSMUIINPUT_ERR_800.Advice     = "使用另一元素, 或使用 NEAR 操作子來萃取連接元素.";
+
+// ElemNotContInTgt 
+GSMUIINPUT_ERR_810.Request    = "您已選擇 /p1";
+GSMUIINPUT_ERR_810.Diagnostic = "所選元素 /p1 一次微分 (Tangency) 不連續. 輸入元素必須是一次微分連續.";
+GSMUIINPUT_ERR_810.Advice     = "選擇一次微分連續元素.";
+
+// ElemNotFeaturisable
+GSMUIINPUT_ERR_820.Request    = "所選次元素無法萃取.";
+GSMUIINPUT_ERR_820.Diagnostic = "所萃取的次元素導引無法連接的結果 \n 此動作不被允許.";
+GSMUIINPUT_ERR_820.Advice     = "使用 NEAR 操作子來保持只有一個次元素.";
+
+// ElementNotRevolutionSurface
+GSMUIINPUT_ERR_900.Request    = "所選元素必須是旋轉曲面.";
+GSMUIINPUT_ERR_900.Diagnostic = "/p1 不是旋轉曲面.";
+GSMUIINPUT_ERR_900.Advice     = "選?旋轉曲面.";
+
+// Planar curve
+GSMUIINPUT_ERR_910.Request    = "必須是平面形式曲線或外形.";
+GSMUIINPUT_ERR_910.Diagnostic = "/p1 不是平面形式曲線或外形.";
+GSMUIINPUT_ERR_910.Advice     = "以平面形式曲線或外形來更換.";
+
+// Develop multiselection
+GSMUIINPUT_ERR_920.Request    = "平面式的線形是必須的.";
+GSMUIINPUT_ERR_920.Diagnostic = "/p1 不是平面形式或屬於之前所定義的平面.";
+GSMUIINPUT_ERR_920.Advice     = "請選擇適合的平面線形.";
+
+// Pour les boundary -> Selection d'un element dans une autre part.
+GSMUIINPUT_ERR_1000.Request    = "所選元素必須在同一零件中.";
+GSMUIINPUT_ERR_1000.Diagnostic = "您嚐試在另一個零件而非目前的零件上選取物件.";
+GSMUIINPUT_ERR_1000.Advice     = "請先輸入元素和它的依附元素, 然後再選擇它.";
+
+// Pour les boundary .
+GSMUIINPUT_ERR_1100.Request    = "所選元素不含有正確的可使用尺寸.";
+GSMUIINPUT_ERR_1100.Diagnostic = "所選物件尺寸是 /p1 但必須是 /p2.";
+GSMUIINPUT_ERR_1100.Advice     = "請選擇另一物件";
+
+GSMUIINPUT_ERR_1110.Request    = "所選元素不含有正確的可使用尺寸.";
+GSMUIINPUT_ERR_1110.Diagnostic = "尺寸 /p1 不正確. 特徵必須是點或曲線, \n 當選擇後尺寸必須小於所依附的.";
+GSMUIINPUT_ERR_1110.Advice     = "此物件不會被計入";
+
+GSMUIINPUT_ERR_1120.Request    = "所選元素不含有正確的可使用尺寸.";
+GSMUIINPUT_ERR_1120.Diagnostic = "尺寸 /p1 不正確. 特徵不可是點 \n 且所選擇後尺寸必須大於所投影的.";
+GSMUIINPUT_ERR_1120.Advice     = "請選另一物件或更換投影元素";
+
+GSMUIINPUT_ERR_1200.Request    = "特徵隱含在另一特徵的內部元素.";
+GSMUIINPUT_ERR_1200.Diagnostic = "元素 /p1 是另一特徵的內部元素, 且不可分享.";
+GSMUIINPUT_ERR_1200.Advice     = "請選另一物件";
+
+GSMUIINPUT_ERR_1210.Request    = "特徵隱含在另一特徵的內部元素.";
+GSMUIINPUT_ERR_1210.Diagnostic = "元素: /p1 \n 是另一特徵的內部元素, 且不可分享.";
+GSMUIINPUT_ERR_1210.Advice     = "請選另一物件";
+
+GSMUIINPUT_ERR_1220.Request    = "所選元素無效.";
+GSMUIINPUT_ERR_1220.Diagnostic = "元素 /p1 為內部邊線. \n 不允許內部邊線.";
+GSMUIINPUT_ERR_1220.Advice     = "請選另一物件";
+
+GSMUIINPUT_ERR_1300.Request    = "無效元素形式.";
+GSMUIINPUT_ERR_1300.Diagnostic = "元素 /p1 不是預期形式.";
+GSMUIINPUT_ERR_1300.Advice     = "建立正確的物件形式.";
+
+// pour l'assemble
+GSMUIINPUT_ERR_1400.Request    = "融合的元素距離值無效.";
+GSMUIINPUT_ERR_1400.Diagnostic = "數值必須大於 0 ";
+GSMUIINPUT_ERR_1400.Advice     = "且小於或等於 0.1 . ";
+
+GSMUIINPUT_ERR_1410.Request    = "更換模式中的無效選擇.";
+GSMUIINPUT_ERR_1410.Diagnostic = "移除元素 /p1 不在清單中.";
+GSMUIINPUT_ERR_1410.Advice     = "選擇其它物件 ";
+
+// pour le Healing
+GSMUIINPUT_ERR_1500.Request    = "所選元素不是物件中的內部元素可修補.";
+GSMUIINPUT_ERR_1500.Diagnostic = "元素 /p1 不在 /p2 內部.";
+GSMUIINPUT_ERR_1500.Advice     = "請選另一物件.";
+
+// Elements infinis
+GSMUIINPUT_ERR_1600.Request    = "所選元素是無限的.";
+GSMUIINPUT_ERR_1600.Diagnostic = "對此物件無法處理.";
+GSMUIINPUT_ERR_1600.Advice     = "請選另一物件.";
+
+// Elements Du sketch Multi contour
+GSMUIINPUT_ERR_1700.Request    = "所選元素不屬於草圖.";
+GSMUIINPUT_ERR_1700.Diagnostic = "對此物件無法處理.";
+GSMUIINPUT_ERR_1700.Advice     = "請選另一草圖物件.";
+
+// Pour le sweep adaptato-variationnel
+GSMUIINPUT_ERR_1800.Request    = "草圖 /p1是無效的";
+GSMUIINPUT_ERR_1800.Diagnostic = "它不含任何幾何元素, 或者為不連接";
+GSMUIINPUT_ERR_1800.Advice     = "請編輯草圖, 或選另一個";
+
+// Pour le curve smooth
+GSMUIINPUT_ERR_1900.Request    = "沒有不連續須要平順化.";
+GSMUIINPUT_ERR_1900.Diagnostic = "線的曲率仍可依平順動作強化.";
+GSMUIINPUT_ERR_1900.Advice     = " ";
+
+// Pour le replace/reroute
+GSMUIINPUT_ERR_2000.Request    = "更替模式中的無效元素.";
+GSMUIINPUT_ERR_2000.Diagnostic = "Brep 表現模式更改.";
+GSMUIINPUT_ERR_2000.Advice     = "選擇其它物件.";
+
+// pour l'Inverse
+GSMUIINPUT_ERR_2100.Request    = "無效逆轉.";
+GSMUIINPUT_ERR_2100.Diagnostic = "動作 /p1 無效.";
+GSMUIINPUT_ERR_2100.Advice     = "請檢查方向";
+
+// pour l'extractsolide
+GSMUIINPUT_ERR_2200.Request    = "更新失敗.";
+GSMUIINPUT_ERR_2200.Diagnostic = "所選元素可能產生循環更新.";
+GSMUIINPUT_ERR_2200.Advice     = "請選擇另一個.";
+
+GSMUIINPUT_ERR_2210.Request    = " /p1 無效.";
+GSMUIINPUT_ERR_2210.Diagnostic = "結果元素為包含模式 \n 將不含任何元素.";
+GSMUIINPUT_ERR_2210.Advice     = "停止包含模式 \n 或更改增長模式.";
+
+GSMUIINPUT_ERR_2220.Request    = "更新失敗.";
+GSMUIINPUT_ERR_2220.Diagnostic = " 元素名稱處理發生問題, 所選元素可能無法正確連結.";
+GSMUIINPUT_ERR_2220.Advice     = "請選擇另一元素.";
+
+GSMUIINPUT_ERR_2221.Request    = "選擇失敗.";
+GSMUIINPUT_ERR_2221.Diagnostic = "在新建模式的幾何中選擇連接元素.";
+GSMUIINPUT_ERR_2221.Advice     = "請選擇另一元素.";
+
+GSMUIINPUT_ERR_2222.Request    = "選擇失敗.";
+GSMUIINPUT_ERR_2222.Diagnostic = "所選元素無效.";
+GSMUIINPUT_ERR_2222.Advice     = "請選擇另一元素.";
+
+GSMUIINPUT_ERR_2223.Request    = "選擇失敗.";
+GSMUIINPUT_ERR_2223.Diagnostic = "所選元素無法辨識: 解法 \n 以右鍵命令刪除.";
+GSMUIINPUT_ERR_2223.Advice     = "請選擇另一元素.";
+
+GSMUIINPUT_ERR_2224.Request    = "選擇失敗.";
+GSMUIINPUT_ERR_2224.Diagnostic = "發生錯誤, 所選元素無效.";
+GSMUIINPUT_ERR_2224.Advice     = "請選擇另一元素.";
+
+GSMUIINPUT_ERR_2230.Request    = "所選元素無效.";
+GSMUIINPUT_ERR_2230.Diagnostic = "尺寸不正確.";
+GSMUIINPUT_ERR_2230.Advice     = "請選擇另一元素.";
+
+GSMUIINPUT_ERR_2231.Request    = "所選元素已納入系統.";
+GSMUIINPUT_ERR_2231.Diagnostic = "/p1 已在萃取結果.";
+GSMUIINPUT_ERR_2231.Advice     = " ";
+
+// pour le revolute
+GSMUIINPUT_ERR_2300.Request    = "所選的旋轉軸屬於斷面";
+GSMUIINPUT_ERR_2300.Diagnostic = "最好不要選取斷面本身做為旋轉軸";
+GSMUIINPUT_ERR_2300.Advice     = "請選擇另一旋轉軸";
+
+// pour le midpoint
+GSMUIINPUT_ERR_2400.Request    = "所選曲線為無限長.";
+GSMUIINPUT_ERR_2400.Diagnostic = "無法定義中間點.";
+GSMUIINPUT_ERR_2400.Advice     = "選擇有限長度曲線, 或曲面邊界.";
+
+// pour le midpoint
+GSMUIINPUT_ERR_2500.Request    = "所選曲線是封閉的.";
+GSMUIINPUT_ERR_2500.Diagnostic = "無法定義中間點.";
+GSMUIINPUT_ERR_2500.Advice     = "請選擇未封閉曲線, 或曲面邊界.";
+
+// pour le endpoint
+GSMUIINPUT_ERR_2600.Request    = "所選曲線為無限長.";
+GSMUIINPUT_ERR_2600.Diagnostic = "無法定義結束點.";
+GSMUIINPUT_ERR_2600.Advice     = "選擇有限長度曲線, 或曲面邊界.";
+
+// pour le endpoint
+GSMUIINPUT_ERR_2700.Request    = "所選曲線是封閉的.";
+GSMUIINPUT_ERR_2700.Diagnostic = "無法定義結束點.";
+GSMUIINPUT_ERR_2700.Advice     = "請選擇未封閉曲線, 或曲面邊界.";
+
+// circle - sphere  center
+GSMUIINPUT_ERR_2701.Request    = "無效元素.";
+GSMUIINPUT_ERR_2701.Diagnostic = "所選元素不是圓, 橢圓或球曲面.";
+GSMUIINPUT_ERR_2701.Advice     = "所選元素不是圓, 橢圓或球曲面.";
+
+// Warning pour l'intersect
+GSMUIINPUT_ERR_2800.Request    = "相交警告. ";
+GSMUIINPUT_ERR_2800.Diagnostic = "無法預期結果元素";
+GSMUIINPUT_ERR_2800.Advice     = "保持此元素將導致不精確結果";
+
+// pour l'offset
+GSMUIINPUT_ERR_2900.Request    = "移除的次元素無效.";
+GSMUIINPUT_ERR_2900.Diagnostic = "次元素 /p1 不屬於偏移曲面的部分.";
+GSMUIINPUT_ERR_2900.Advice     = "請選擇其它物件.";
+
+// pour l'offset flou
+GSMUIINPUT_ERR_2950.Request    = "無效元素.";
+GSMUIINPUT_ERR_2950.Diagnostic = "粗略偏移不允許平面和封閉曲面.";
+GSMUIINPUT_ERR_2950.Advice     = "請選擇其它物件.";
+
+// Warning pour le Split/Trim
+GSMUIINPUT_ERR_3000.Request    = "混淆的區域或模糊定位.";
+GSMUIINPUT_ERR_3000.Diagnostic = "例如, 元素是相切或它們的相對位置是模糊的.";
+GSMUIINPUT_ERR_3000.Advice     = "使用元素移除或保留選項";
+
+// Warning Tangent Design pour le Split/Trim
+GSMUIINPUT_ERR_3100.Request    = "不固定動作.";
+GSMUIINPUT_ERR_3100.Diagnostic = "輸入元素相切.";
+GSMUIINPUT_ERR_3100.Advice     = "請嚐試以點來分割或相切.";
+
+// Warning Tangent Design pour le Split/Trim
+GSMUIINPUT_ERR_3200.Request    = "不固定動作.";
+GSMUIINPUT_ERR_3200.Diagnostic = "輸入元素相切.";
+GSMUIINPUT_ERR_3200.Advice     = "請嚐試以曲線來分割或相切.";
+
+// Warning Tangent Design pour l'intersect
+GSMUIINPUT_ERR_3300.Request    = "不固定相切.";
+GSMUIINPUT_ERR_3300.Diagnostic = "輸入元素相切.";
+GSMUIINPUT_ERR_3300.Advice     = " ";
+
+// pour le Split/Trim
+GSMUIINPUT_ERR_3400.Request    = "所選元素不是內部元素.";
+GSMUIINPUT_ERR_3400.Diagnostic = "元素 /p1 不是本體的內部元素.";
+GSMUIINPUT_ERR_3400.Advice     = "請選擇另一物件.";
+
+// pour le Split/Trim
+GSMUIINPUT_ERR_3500.Request    = "切割元素無效.";
+GSMUIINPUT_ERR_3500.Diagnostic = "無限平面只可供封閉的線切割.";
+GSMUIINPUT_ERR_3500.Advice     = "薄殼只可供薄殼或線來切割: 點是無效的.";
+
+// Splitting volumes using curve with volume as result type not allowed.
+GSMUIINPUT_ERR_3501.Request    = "切割元素無效.";
+GSMUIINPUT_ERR_3501.Diagnostic = "當切割體積以體積為結果時, 切割元素必須為曲面.";
+GSMUIINPUT_ERR_3501.Advice     = "更改切割元素為曲面或平面或選擇曲面為結束型式.";
+
+// Splitting volumes with volume is not allowed.
+GSMUIINPUT_ERR_3502.Request    = "切割元素無效.";
+GSMUIINPUT_ERR_3502.Diagnostic = "以另一體積切割體積無效.";
+GSMUIINPUT_ERR_3502.Advice     = "更改切割元素為曲面或平面";
+
+// pour le Split/Trim
+GSMUIINPUT_ERR_3600.Request    = "未選擇要切割的元素.";
+GSMUIINPUT_ERR_3600.Diagnostic = "請先選要切割的元素.";
+GSMUIINPUT_ERR_3600.Advice     = "必須要知道切割元素的型式.";
+
+// ShapeMorphing Coupling Points
+GSMUIINPUT_ERR_3700.Request    = "無效複合點.";
+GSMUIINPUT_ERR_3700.Diagnostic = "點未依附在變形曲線上 ";
+GSMUIINPUT_ERR_3700.Advice     = "請修改此元素.";
+
+//Warning confusion corner
+GSMUIINPUT_ERR_3800.Request    = "部份元素 1 和元素  2 的邊線溶合.";
+GSMUIINPUT_ERR_3800.Diagnostic = "可能未完成所有解法.";
+GSMUIINPUT_ERR_3800.Advice     = "使用分割移除溶合區域.";
+
+//Warning WorkOnSupport3D Axis system not free
+GSMUIINPUT_ERR_3900.Request    = "選取失敗.";
+GSMUIINPUT_ERR_3900.Diagnostic = "/p1 已設定在軸系 /p2 上.";
+GSMUIINPUT_ERR_3900.Advice     = "請使用動作需要的 WorkOnSupport3D ";
+
+// Volume Extrude
+GSMUIINPUT_ERR_3901.Request    = "無效斷面.";
+GSMUIINPUT_ERR_3901.Diagnostic = "所選斷面為非平面形式或不是封閉或自我相交";
+GSMUIINPUT_ERR_3901.Advice     = "請選擇未自我相交且封閉的平面形式斷面或曲面.";
+
+// Volume Revol
+GSMUIINPUT_ERR_3902.Request    = "無效斷面.";
+GSMUIINPUT_ERR_3902.Diagnostic = "所選斷面為非平面形式或不是封閉或自我相交或是沒有軸的草圖";
+GSMUIINPUT_ERR_3902.Advice     = "請選擇未自我相交且封閉的平面形式斷面或曲面或是有軸的草圖. (開放草圖的起點和端點必須依附在草圖軸上)";
+
+// Volume Sweep
+GSMUIINPUT_ERR_3903.Request    = "無效斷面.";
+GSMUIINPUT_ERR_3903.Diagnostic = "所選斷面為非平面形式或不是封閉或自我相交或是多重區域";
+GSMUIINPUT_ERR_3903.Advice     = "請選擇未自我相交且封閉的單一區域平面形式斷面";
+
+// Line Angle warning
+GSMUIINPUT_ERR_3950.Request    = " ";
+GSMUIINPUT_ERR_3950.Diagnostic = "曲線未在依附上.";
+GSMUIINPUT_ERR_3950.Advice     = "曲線未在依附上, 或依附在平行依附的平面上 (當依附平面形式時).\n 線和曲線間的角度必須等於指定角度";
+
+// Container error
+GSMUIINPUT_ERR_4000.Request    = " ";
+GSMUIINPUT_ERR_4000.Diagnostic = "無法取得內含器, 無法載入命令";
+GSMUIINPUT_ERR_4000.Advice     = "啟動零件";
+
+// Sweep warning Direction on Profile (to be removed in R15)
+GSMUIINPUT_ERR_4050.Request    = "請檢查幾何.";
+GSMUIINPUT_ERR_4050.Diagnostic = "斷面幾何必須旋轉 180 度.";
+GSMUIINPUT_ERR_4050.Advice     = "這種情形, 逆轉定位方向來修正問題.";
+
+GSMUIINPUT_ERR_4100.Request    = "選擇上至元素失敗.";
+GSMUIINPUT_ERR_4100.Diagnostic = "延伸元素 /p1 和上至元素 /p2 的限制型式間, 只有上至元素是曲面才可行";
+GSMUIINPUT_ERR_4100.Advice     = "請更改這些元素.";
+
+GSMUIINPUT_ERR_4110.Request    = "選擇上至元素失敗.";
+GSMUIINPUT_ERR_4110.Diagnostic = "延伸元素 /p1 和上至元素 /p2 沒有相同依附.";
+GSMUIINPUT_ERR_4110.Advice     = "選擇依附或更改這些元素.";
+
+// Convert OB to Section error
+GSMUIINPUT_ERR_4200.Request    = " ";
+GSMUIINPUT_ERR_4200.Diagnostic = "無法建立切面, 所選的特徵不在相同平面上. ";
+GSMUIINPUT_ERR_4200.Advice     = "請選擇平面型式特徵.";
+
+// Multioutput
+GSMUIINPUT_ERR_4300.Request    = "警告";
+GSMUIINPUT_ERR_4300.Diagnostic = "/p1 無法移除.";
+GSMUIINPUT_ERR_4300.Advice     = "多重輸出中至少有一個特徵需要編輯此命令.";
+
+// Multioutput Split
+GSMUIINPUT_ERR_4400.Request    = " ";
+GSMUIINPUT_ERR_4400.Diagnostic = "保留兩側 和/或 相交計算選項";
+GSMUIINPUT_ERR_4400.Advice     = "只會應用在要切割的第一元素.";
+
+// Removed multi-section solid warning when inserted in first position
+GSMUIINPUT_ERR_4450.Request    = " ";
+GSMUIINPUT_ERR_4450.Diagnostic = "負型特徵 (如移除疊層實體)不可是零件本體中的第一個特徵.";
+GSMUIINPUT_ERR_4450.Advice     = " ";

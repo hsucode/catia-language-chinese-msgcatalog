@@ -1,0 +1,105 @@
+//
+Tab.Title = "批次升級";
+// 
+//
+// Migration Batch Frame
+Title = "批次升級";
+// Mode
+Mode.Title = "轉換模式";
+Mode.LongHelp = 
+"選擇要轉換的 V4 資料.";
+Mode.ConversionMode.SpaceAndDraw.Title = 
+"轉換 SPACE 和 DRAW";
+Mode.ConversionMode.SpaceAndDraw.LongHelp =
+"所有元素均升級至 V5 文件.";
+Mode.ConversionMode.Space.Title = 
+"只轉換 SPACE";
+Mode.ConversionMode.Space.LongHelp =
+"只轉換 SPACE 元素至 V5 文件.";
+Mode.ConversionMode.Draw.Title = 
+"只轉換 DRAW ";
+Mode.ConversionMode.Draw.LongHelp =
+"只轉換 DRAW 元素至 V5 文件.";
+Mode.CheckAttribut.Attribut.Title = 
+"顯示報告屬性";
+// Format
+Migration.Format.Title = "格式";
+Migration.Format.LongHelp =
+"選擇轉換格式.";
+Migration.Format.Spec.Title  = "如設定";
+Migration.Format.Spec.LongHelp =
+"如同設定轉換元素.";
+Migration.Format.Result.Title  = "如結果";
+Migration.Format.Result.LongHelp =
+"如同結果轉換元素.";
+// V4 Part Definition
+Migration.PartDef.Title = "V4 零件定義";
+Migration.PartDef.LongHelp =
+"選擇要升級成 CATPart 的 V4 零件定義.";
+Migration.PartDef.SetGeo.Title  = " 以幾何組立的 CATPart ";
+Migration.PartDef.SetGeo.LongHelp = 
+"接收升級幾何資料的 CATPart .";
+Migration.PartDef.Solid.Title  = " 實體 CATPart";
+Migration.PartDef.Solid.LongHelp = 
+"接收升級實體資料的 CATPart.";
+// Options 2D
+//Model StartUp pour Drawing
+2DParameters.Title = "繪圖參數";
+2DParameters.StartUpDrawing.StrtUpDr_lb.Title= 
+"初始繪圖路徑";
+2DParameters.StartUpDrawing.StrtUpDr_lb.LongHelp= 
+"升級繪圖時的預設模型.";
+2DParameters.StartUpDrawing.StrtUpDrBrowse.LongHelp= 
+"允許瀏覽 CATDrawing";
+2DParameters.StartUpDrawing.StrtUpDrBrowse.FileBoxDrawing.Title=
+"File Selection";
+// Mode de visu a appliquer pour les vues transparentes
+2DParameters.2DVisuModeFrame.2DVisuModelb.Title= 
+"為透明視圖投影 Space :";
+2DParameters.2DVisuModeFrame.NHR_2DVisuMode.Title= 
+"NHR V4 模式";
+2DParameters.2DVisuModeFrame.NHR_2DVisuMode.LongHelp= 
+"在升級視圖時允許使用 NHR 模式.";
+2DParameters.2DVisuModeFrame.HLR_2DVisuMode.Title= 
+"HLR V4 模式";
+2DParameters.2DVisuModeFrame.HLR_2DVisuMode.LongHelp= 
+"在升級視圖時允許使用 HLR 模式.";
+2DParameters.2DVisuModeFrame.SameAsV4Mode.Title= 
+"如同 V4 Model";
+2DParameters.2DVisuModeFrame.SameAsV4Mode.LongHelp= 
+"允許計入如同在透明視圖進級傳送 V4 Model.";
+//Interface de Migration
+MigrationInterface.Title = "升級界面";
+MigrationInterface.MigrItfLocation.MigrItf_lb.Title= 
+"界面名稱";
+MigrationInterface.MigrItfLocation.MigrItf_lb.LongHelp= 
+"升級界面名稱.";
+//MigrationInterface.MigrItfLocation.MigrItfBrowse.LongHelp= 
+//"Allows to browse a Migration Interface";
+// Mapping Files Location for Saving
+MappingSaving.Title = "儲存對應檔案的位置";
+MappingSaving.LongHelp =
+"選擇儲存對應檔案的位置";
+MappingSaving.SaveInDir.Title = "批次目的地目錄";
+MappingSaving.SaveInDir.LongHelp =" 批次介面時儲存對應檔案的目的地目錄";
+MappingSaving.SaveWithMdl.Title = "模型目錄";
+MappingSaving.SaveWithMdl.LongHelp =" 對應檔案儲存在模型目錄";
+MappingSaving.SaveInFile.Title = "指定目錄";
+MappingSaving.SaveInFile.LongHelp  ="對應檔案儲存在下列目錄.";
+MappingSaving.btnBrowseDir.LongHelp  ="允許在特殊的儲存位置儲存對應檔.";
+// Mapping Files Location for Retrieving
+MappingReading.Title = "對應檔案的萃取位置";
+MappingReading.LongHelp =
+"表列對應檔案的位置.";
+MappingReading.BtnFrame.AddBtn.Title="新增儲存位置";
+MappingReading.BtnFrame.AddBtn.LongHelp = 
+"允許新增儲存位置路徑";
+MappingReading.BtnFrame.RmBtn.LongHelp = 
+"允許從清單中移除儲存位置.";
+MappingReading.BtnFrame.UpBtn.LongHelp = 
+"允許從清單中向前移動儲存位置.";
+MappingReading.BtnFrame.DownBtn.LongHelp = 
+"允許從清單中向後移動儲存位置.";
+MappingReading.BtnFrame.AddBtn.DirSelMap.Title =
+"目錄選擇";
+

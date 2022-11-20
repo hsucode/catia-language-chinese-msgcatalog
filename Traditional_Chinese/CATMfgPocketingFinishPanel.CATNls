@@ -1,0 +1,60 @@
+Title = "精銑";
+Title.LongHelp = "在操作中為精銑指定參數.";
+
+// * MachiningMode *
+SideFinish = "模式";
+SideFinish.LongHelp = "指定在減重槽的側邊或底部是否要產生精銑.
+側邊精銑可在每一層或只在最底層產生.";
+
+// * SideThickness *
+Thickness = "側邊精銑預留";
+Thickness.LongHelp = "指定側邊精銑預留.";
+
+// * BottomThicknessOnSideFinish *
+MfgBottomThicknessOnSideFinish = "側邊精銑的底部預留";
+MfgBottomThicknessOnSideFinish.LongHelp = "Specifies the bottom thickness used for the last side
+finish pass at the end of the operation.";
+
+// * SideBottomThickness *
+SideBottomThickness = "底部的側面預留";
+SideBottomThickness.LongHelp = "指定底部的側面預留";
+
+// * BottomThickness *
+BottomThickness = "底部精銑預留";
+BottomThickness.LongHelp = "指定底部精銑預留.";
+
+// * SpringPath * 
+SpringPath = "螺旋路徑";
+SpringPath.LongHelp = "指定螺旋路徑如同前一個側邊精銑一樣. 
+螺旋路徑用來補償刀具本身的螺旋性質.";
+
+// * Avoid Scallop  * 
+AvoidScallopOnBottom = "避免底部殘料";
+AvoidScallopOnBottom.LongHelp = "針對底部加工, 為了避免未銑完全的殘料
+定義是否要調整刀具路徑間距離.";
+
+// * Cutter Profile Output  * 
+MfgOutputStyle = "補償輸出";
+MfgOutputStyle.LongHelp = "指定在 NC 資料中輸出補償:  
+
+無
+未計算補償
+
+2D 徑向刀尖
+在垂直刀軸的平面上計算償, 
+並相對刀具側啟動 (左或右). 
+所補償的為刀具半徑.
+輸出為刀尖點 (XT YT ZT). 
+
+2D 徑向外形
+在垂直刀軸的平面上計算償, 
+並相對刀具側啟動 (左或右). 
+所補償的為刀具半徑.
+輸出為刀具外形點 (XP YP ZP).";
+
+// * Nb Side Finish Path By Level *
+MfgNbSideFinishByLevel = "每層的側邊精銑路徑";
+MfgNbSideFinishByLevel.LongHelp = "定義每層的側邊精銑路徑";
+
+
+

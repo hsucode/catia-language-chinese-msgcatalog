@@ -1,0 +1,83 @@
+// Message catalog for CATFMNotify class (CATDlgNotify)
+//
+
+//###CATCloseBox###
+//  
+CloseTitle = "關閉";
+confirmText = "您要儲存已修改文件至";
+saveUnavailable = "尚未儲存 : 您將會遺失文件的修改 \n";
+//###CATExitBox###
+//
+ExitTitle = "退出";
+
+//###CATFileMenuMethods###
+//
+OpenTitle = "開啟";
+AlreadyOpenText = " 已經開啟. \n 重開檔案會使您修改過的資料遺失. 您確定要重開檔案?";
+AlreadyOpenTextNoModify = " 已經開啟. \n 此文件在目前工作中已被開啟,所以無法再重開但可開始編輯.";
+WasReadOnlyText = " 目前工作中是唯讀形態. \n 您正在準備寫入磁碟機. \n 您確定要更改此文件的可寫入屬性嗎?";
+SaveAsTitle = "另存檔名";
+SaveTitle = "儲存 ";
+ItemText = "此文件";
+ItemsText = "此文件";
+DirectoryText ="此目錄";
+ExistsInSessionText = " 工作已啟動. 請嘗試用別的名稱. \n";
+ExistsInSession = " /p1 項目已存在工作中. 請嘗試用別的名稱. \n";
+SaveAsNewWithSameFileName = "無法用同一名稱儲存成新的檔案. \n 請嚐試使用其他名稱.";
+ExistsText = " 已存在. \n 您要覆蓋它嗎?";
+FileExists = " /p1 項目已存在.";
+OverwriteOne = "您要覆蓋它嗎?";
+ExistText = " 已存在. \n 您要覆蓋它嗎?";
+FilesExist = " /p1 項目已存在.";
+OverwriteMany = "您要覆蓋它嗎?";
+ExistsText2 = " 已存在而且是唯讀. \n 請用別的名稱儲存或存在另一目錄.";
+ExistsReadOnly = " /p1 項目已存在且為唯讀. \n 請用別的名稱儲存或存在另一目錄.";
+SaveChangesMsg = "您要編輯下列已修改文件嗎";
+InaccessibleText = " 不存在或無法存取. 請用別的名稱.";
+FileDirNotAccessible = "檔案 /p1 \n 目錄 /p2 不存在或無法存取.";
+ReadOnlyText = "唯讀選擇.";
+SaveAbortedText = "儲存選擇並未正常結束.";
+DirtyPointedDocMessage  = "指出已修改的文件不會被儲存:";
+SeveralDocToSaveMessage = "啟動另一文件儲存動作,";
+EmbeddedPointedDocMessage = "已有一鏈結的 OLE 植入物件 : 可能遺失資料.";
+CompleteWarningMessage  = "指出已修改的文件尚未儲存且起動另一文件儲存選擇,";
+ModifiedSavedByOtherUserMessage = "同時間尚有其它使用者正在修改和儲存文件 : 再進行將會遺失修改部份.";
+HelpSaveAll = "使用 儲存管理 來避免此種問題.";
+HelpSaveMng = "請用另存新檔來避免此種問題.";
+SaveManText = "修改文件將不會儲存. ";
+ProceedMessage = "您要執行嗎?" ;
+WarmStartTitle = "暖開機" ;
+NoWarmStartWarning = "無法暖開機." ;
+WarmStartAgreementWarning = "您要重新開啟前一工作的資料嗎?" ;
+WarmStartErrorMessage = "暖開機失敗." ;
+PointedByDocInSessionMessage = " 目前執行已被別的文件參考,另存會更新連結至新檔案. \n 如要保持此連結,請不要忘記儲存此文件.\n 您可用儲存所有檔案來避免此項衝擊.";
+PointedByDocInSessionMessage2 = "/p1 已被工作中的其它文件參考. \n 儲存成 將會以新名稱更新工作中的鏈結. \n 若要保持此鏈結請記得要儲存此文件. \n 您可使用 儲存管理 來控制影響.";
+SaveAllTitle = "儲存所有檔案";
+CannotBeMovedUp = "因與其他文件的關係,所選子文件不會被移動";
+ReadOnlyDocBegin = "以下的文件乃唯讀且已被修改.";
+ReadOnlyDocEnd = "請使用另存新檔將文件儲存成其他檔名.";
+ImpossibleSaveMessage = "無法儲存所文件 (已存於磁碟機)";
+ImpossibleSavePDM = "無法自動儲存指向文件";
+ConfirmSaveAll = "儲存 /p1 文件 \n 您要執行嗎 ?";
+NoMacroForSaveAsNew = "無法以 存成新文件 來錄製副程式.";
+Itself = "/p1";
+IsADirectory = "/p1 是一個目錄.";
+SaveAllLocked = "下列 /p1 文件無法儲存 \n (萃取儲存時無法儲存) :\n";
+//
+DeleteTitle = "剪下或刪除時發生警告";
+DelOperat = "剪下或刪除時由此編輯器移掉了未儲存文件. 此文件將會由記憶體中移除且沒有進一步的警告, 另外回復動作也無法執行. ";
+PDMImpact = "在此文件執行儲存成文件時會影響儲存在資料庫中的文件 \n  /p1 \n 請注意儲存成文件將被當成資料庫中的新文件, \n 所影響的文件將標示成唯讀以確保儲存一致性. \n";
+//
+Error.LocationNotAuthorized.Title = "拖放錯誤" ;
+Error.LocationNotAuthorized.Text  = "/P01 檔案無法存取." ;
+InvalidName = "/p1 \n 以上檔案名稱無效.";
+//
+ChooseTitle = "文件選擇";
+DocLocWng   = "因鏈結文件的局部設定,導致無法存取所選文件 \"/p1\" , 因此無法自動重新載入且必須手動調整.\n 您要執行嗎 ?";
+//
+Msg.LoadingDocument.Text = "文件載入資料中 " ;
+//
+ProblemOccured      = "動作失敗 \n/P01 無法載入.\n" ;
+alreadyOpenedAs     = "程序中已存有相同名稱檔案." ;
+ResolveOpenConflict = "\n 執行動作必須先從程序中移除此檔案" ;
+

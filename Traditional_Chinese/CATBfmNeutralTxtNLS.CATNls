@@ -1,0 +1,79 @@
+GeneralTitle = "CATIA V5 BiW 汽車產品輸出至 CATIA V5 BiW 扣件中介格式";
+CorrepondenceTitle = "關鍵字定義:";
+
+HEADER   = "檔頭說明";
+VERSION  = " CATIA BiW 扣件資料交換中介格式版期";
+DATE     = "輸出日期";
+PRODUCT  = "產品名稱";
+UNIT     = "長度值單位";
+
+All_Joined_Parts = "All components that are referenced by a joint in the product";
+PATHID   = "Joined component Product Path (ex: RootProduct01!Product05.1!Part02.1!)";
+JCVERS   = "Joined component Version";
+JPN      = "Joined Component Name (Part Instance Name)";
+JCPN     = "Joined Component Number (Reference Part Number)";
+
+Joined_Parts = "Components joined by the same Joint body";
+
+FTY   = "Fastener feature type";
+SDF   = "Shape definition (0=Point3D,1=Hemisphere inwards material,2=Hemisphere outwards material,3=Shank,4=Shank with Head,5=Shank with Head & Foot,50=CurvePath,60=Cylinder,61=Hemi-cylinder inwards material,62=Hemi-cylinder outwards material,70=Diamond,71=Hemi-diamond inwards material,72=Hemi-diamond outwards material,80=Rectangle,81=Hemi-rectangle inwards material,82=Hemi-rectangle outwards material)";
+LOCX  = "X coordinate of fastener"; 
+LOCY  = "Y coordinate of fastener";
+LOCZ  = "Z coordinate of fastener";
+
+WX	  =	"X coordinate of fastener's Reference normal vector (W Vector = Surface Material Orientation)";
+WY	  = "Y coordinate of fastener's Reference normal vector (W vector = Surface Material Orientation)";
+WZ	  = "Z coordinate of fastener's Reference normal vector (W Vector = Surface Material Orientation)";
+KFLAG =	"K Axis Flag (If True, K Fastener Axis orientation is the same than W vector, if False, K vector is the invert of W)";
+UX	  = "X coordinate of fastener's Reference tangent vector (U vector = Vector tangent to the Fastener location surface)";
+UY	  = "Y coordinate of fastener's Reference tangent vector (U vector = Vector tangent to the Fastener location surface)";
+UZ	  = "Z coordinate of fastener's Reference tangent vector (U vector = Vector tangent to the Fastener location surface)";
+IFLAG = "I Axis Flag (If True, I Fastener Axis orientation is the same than U vector, if False, I vector is the invert of U)";
+
+PRD_PN			= "Root product reference part number";
+PRD_VERS		= "Product version";
+PRDINST_PATHID	= "Product instance path ID (ex: RootProduct01!Product05.1!)";
+
+LAYER			= "Layer";
+
+BfmJointElement_INFO = "Fastener computed projections on crossed thicknesses, ordered along material-oriented normal to support zone.";
+PROJ1X = "X coordinate of crossed thickness entry point";
+PROJ1Y = "Y coordinate of crossed thickness entry point";
+PROJ1Z = "Z coordinate of crossed thickness entry point";
+NORM1X = "X coordinate of material-oriented normal to crossed thickness entry point";
+NORM1Y = "Y coordinate of material-oriented normal to crossed thickness entry point";
+NORM1Z = "Z coordinate of material-oriented normal to crossed thickness entry point";
+
+PROJ2X = "X coordinate of crossed thickness exit point";
+PROJ2Y = "Y coordinate of crossed thickness exit point";
+PROJ2Z = "Z coordinate of crossed thickness exit point";
+NORM2X = "X coordinate of material-oriented normal to crossed thickness exit point";
+NORM2Y = "Y coordinate of material-oriented normal to crossed thickness exit point";
+NORM2Z = "Z coordinate of material-oriented normal to crossed thickness exit point";
+
+ZPATHID = "Zone Path ID (ex: RootProduct01!Product05.1!Part02.1!Surface12!)";
+
+BfmJointElement_CURVE = "Curvilinear fastener (e.g. BfmCurveBead)";
+MATHDEF                  = "Mathematical definition (or discretization method) of a curvilinear or an area fastener (POLSAG=Polyline using Sag criterium, POLSTEP=Polyline using Step criterium)";
+POL_DISCRETIZATION_PARAM = "Parameter value used to discretize a curvilinear or an area fastener (e.g. Sag value for Polyline definition)";
+NBPT                     = "Number of points resulting from the discretization of a curvilinear or an area fastener";
+
+BfmJointElement_INFO1 = "Fastener additional computed information";
+LENGTH = "Fastener length";
+VOLUME = "Fastener volume";
+
+BfmJointElement_PROJ = "Projection fastener (e.g. BfmSpotProjection)";
+PROJZPATHID = "Projection zone Path ID (ex: RootProduct01!Product05.1!Part02.1!Surface12!)";
+
+BfmJointElement_AREA = "Area fastener (e.g. BfmSurface)";
+
+VersionsTitle = "Neutral format versions summary";
+FormatVersionTitle = "Format version";
+CATIALevelTitle = "Minimum supporting CATIA level";
+CATIALevel.1.0 = "V5R10";
+CATIALevel.1.1 = "V5R10 SP2";
+CATIALevel.2.0 = "V5R11";
+CATIALevel.3.0 = "V5R12";
+CATIALevel.3.1 = "V5R12 SP3";
+CATIALevel.4.0 = "V5R14";
+CATIALevel.5.0 = "V5R15";

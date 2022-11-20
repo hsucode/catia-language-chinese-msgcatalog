@@ -1,0 +1,48 @@
+// NLS file for Enovia V5 Settings
+//-------------------------
+// English Version
+//-------------------------
+// modified by ebn - Jan 2002
+
+Frame.HeaderFrame.Global.Help="定義 ENOVIA V5 與 CATIA V5 的交換設定.";
+
+Help="定義交換 ENOVIA V5 的選項設定";
+
+Frame.HeaderFrame.Global.Title = "CATIA Client 交換管理";
+Frame.HeaderFrame.Global.LongHelp = "允許自訂從或至 ENOVIA V5 的輸出入設定";
+
+Frame.IconAndOptionsFrame.OptionsFrame._DMUMode.Title = "在 DMU 模式工作";
+Frame.IconAndOptionsFrame.OptionsFrame._DMUMode.LongHelp = "所有非必須性質未轉換. 
+請留意它會影系統效能.";
+Frame.IconAndOptionsFrame.OptionsFrame.EV5DMUMode.Title = "只檢視產品架構";
+Frame.IconAndOptionsFrame.OptionsFrame.EV5DMUMode.LongHelp = " DMU 的全部非必需性質 (拘束, 連接器, contextual 設計 ...) 將不會轉換. 
+將會影響運算效能.";
+
+// VKU --> Attributes Mapping Specific Controls (07.10.03)
+_AttributeMappingFrameID.HeaderFrame.Global.Title                                     = "使用者屬性對應";
+_AttributeMappingFrameID.HeaderFrame.Global.Help                                      = "定義 ENOVIA V5 和 CATIA V5 之間的交換設定.";
+_AttributeMappingFrameID.IconAndOptionsFrame.OptionsFrame._AttrMapFileLabelID.Title   = "屬性對應檔案";
+_AttributeMappingFrameID.IconAndOptionsFrame.OptionsFrame._AttrMapCheckButtonID.Title = "與屬性對應工作";
+_AttributeMappingFrameID.IconAndOptionsFrame.OptionsFrame._AttrMapFileDlg.Title       = "選擇屬性對應檔案";
+
+
+Warning.Msg   = "請重新執行應用程式以讓修改納入";
+Warning.Title = "警告";
+
+ServerFrame.HeaderFrame.Global.Title = "ENOVIA V5 伺服器交換管理";
+ServerFrame.HeaderFrame.Global.LongHelp = "允許自訂 ENOVIA LCA 伺服器";
+
+ServerFrame.IconAndOptionsFrame.OptionsFrame._DocIdLabel.Title = "文件命名屬性";
+ServerFrame.IconAndOptionsFrame.OptionsFrame._DocIdCombo.ShortHelp = "用來儲存文件名稱的 ENOVIA LCA 屬性";
+ServerFrame.IconAndOptionsFrame.OptionsFrame._DocIdLengthLabel.Title = "長度";
+ServerFrame.IconAndOptionsFrame.OptionsFrame._DocIdLengthCombo.ShortHelp = "允許的最長文件名稱";
+ServerFrame.IconAndOptionsFrame.OptionsFrame._PartIdLabel.Title = "零件命名屬性";
+ServerFrame.IconAndOptionsFrame.OptionsFrame._PartIdEditor.LongHelp = "用來儲存零件名稱的 ENOVIA LCA 屬性";
+ServerFrame.IconAndOptionsFrame.OptionsFrame._PartIdLengthLabel.Title = "長度";
+ServerFrame.IconAndOptionsFrame.OptionsFrame._PartIdLengthEditor.LongHelp = "允許的最長零件名稱";
+
+NoTrimOnSaveFrame.HeaderFrame.Global.Title = "儲存選項";
+NoTrimOnSaveFrame.HeaderFrame.Global.LongHelp = "允許自訂儲存至 ENOVIA V5";
+NoTrimOnSaveFrame.IconAndOptionsFrame.OptionsFrame._NoTrimOnSave.Title = "授權部份儲存";
+NoTrimOnSaveFrame.IconAndOptionsFrame.OptionsFrame._NoTrimOnSave.LongHelp = "允許部份儲存. 儲存時不會鎖定錯誤.";
+

@@ -1,0 +1,53 @@
+//=======================================================================
+// MODULE :  CATEXPEngine
+//=======================================================================
+//
+CATCheckEditor.ProgramEditor.Title="萃取 CATIA Version 4 連續型檔案成 CATIA Version 4 Models ";
+//
+//--------------------------------------
+//  Messages from ExtractModelFromSequentialBox 
+//--------------------------------------
+Title="ExtractModelFromSequential 批次作業";
+NoLicenceMessage="未有 V4I 軟體許可權.";
+MainFrame.lblTargetDirectory.Title="目的地目錄:";
+MainFrame.BrowseDir.Title="...";
+MainFrame.WillBeProcessed.Title="要處理的連續型檔案:";
+MainFrame.ListSelFiles.Cln0="名稱";
+MainFrame.ListSelFiles.Cln1="路徑";
+MainFrame.BrowseFileBox.Title="選擇的檔案";
+MainFrame.BrowseDirBox.Title="選擇的目的地";
+//
+MainFrame.WarningPanel.Title="警告";
+//
+BadTypeMessage="此形式檔案無法處理 : 不是連續型檔案";
+DoublonMessage="此檔案已屬於要處理的一組文件";
+BadTypeMsgMultiSel="此檔案無法處理:";
+DoublonMsgMultiSel="此檔案已屬於要處理的一組文件";
+//
+Inactive = "未作動";
+//
+IsAValidDirectory.Title="警告";
+IsAValidDirectory.NotADirectory="在目的地目錄欄位內的文字是檔案.";
+IsAValidDirectory.NoWritePermission="在目的地目錄欄位內的目錄為唯讀.";
+IsAValidDirectory.Inexistant="在目的地目錄欄位內的文字不是目錄.";
+IsAValidDirectory.Information="您必須更改它並再次執行 ExtractModelFromSequential.";
+//
+//--------------------------------------
+//  Messages from CATExpReportBox
+//--------------------------------------
+CATExpReportBox.Title.Report="ExtractModelFromSequential 報告";
+CATExpReportBox.FileBox.Title="儲存成";
+CATExpReportBox.FileBox.BOK="儲存";
+CATExpReportBox.BtnSaveTxt.Title="儲存成文字";
+CATExpReportBox.BtnBrowse.Title="瀏覽檔案";
+CATExpReportBox.BtnExtract.Title="萃取";
+CATExpReportBox.BtnRemove.Title="移除";
+CATExpReportBox.Warning.Title="警告";
+CATExpReportBox.FileBox.Warn1="已存在.
+您要覆寫它嗎 ? ";
+CATExpReportBox.FileBox.Warn2="已存在且為唯讀.
+請以其它名稱儲存或存至其它目錄.";
+CATExpReportBox.FileBox.Warn3="目錄不存在.";
+CATExpReportBox.FileBox.Warn4="目錄存在但為唯讀.
+請修改存取權或存至其它目錄.";
+//

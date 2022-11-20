@@ -1,0 +1,215 @@
+//##################################################################
+//#########          Resources Commandes Interop
+//##################################################################
+//##################################################################
+//#########          VPM
+//##################################################################
+//CATPDMCmdHeader.VPM_NewDbProduct.Title="VPM 新 Db 產品";
+//CATPDMCmdHeader.VPM_NewDbProduct.Category="PDM";
+//CATPDMCmdHeader.VPM_NewDbProduct.Help="開啟新產品與 PSN 溝通";
+//CATPDMCmdHeader.VPM_NewDbProduct.ShortHelp="新程序 ";
+//CATPDMCmdHeader.VPM_NewDbProduct.LongHelp="New product from PSN ";
+
+CATPDMCmdHeader.VPM_DbConn.Title="VPM 連結";
+CATPDMCmdHeader.VPM_DbConn.Category="PDM";
+CATPDMCmdHeader.VPM_DbConn.Help="Open/Close a connection to a specified database ";
+CATPDMCmdHeader.VPM_DbConn.ShortHelp="中斷 VPM 連結";
+CATPDMCmdHeader.VPM_DbConn.LongHelp="Open/Close a connection to a specified database ";
+CATPDMCmdHeader.VPM_DbConn.Connected="VPM 中斷";
+CATPDMCmdHeader.VPM_DbConn.NotConnected="VPM 連結";
+CATPDMCmdHeader.VPM_DbConn.ConnectedShortHelp="連結至 VPM";
+CATPDMCmdHeader.VPM_DbConn.NotConnectedShortHelp="中斷 VPM 連結";
+
+CATPDMCmdHeader.VPM_Ctxt.Title="PDM 載入 Context AsmDraw";
+CATPDMCmdHeader.VPM_Ctxt.Category="PDM";
+CATPDMCmdHeader.VPM_Ctxt.Help="由 PDM 載入組立繪圖檔案";
+CATPDMCmdHeader.VPM_Ctxt.ShortHelp="由 PDM 載入組立繪圖檔案";
+CATPDMCmdHeader.VPM_Ctxt.LongHelp="Load all context documents of an assembly drawing. This command doesn't work with something else than an assembly drawing coming from PDM";
+
+CATPDMCmdHeader.VPM_CATSetPDMProperties.Title="PDM 設定性質";
+CATPDMCmdHeader.VPM_CATSetPDMProperties.Category="PDM";
+CATPDMCmdHeader.VPM_CATSetPDMProperties.Help="設定 PDM 性質";
+CATPDMCmdHeader.VPM_CATSetPDMProperties.ShortHelp="設定 PDM 性質";
+CATPDMCmdHeader.VPM_CATSetPDMProperties.LongHelp=
+"This command lets the user define the PDM properties of documents by chosing
+- The type of PDM
+- The type of persistence and exposition in this PDM";
+
+CATPDMCmdHeader.VPM_NewPSNGraph.Title="VPM 新 PSN 圖";
+CATPDMCmdHeader.VPM_NewPSNGraph.Category="PDM";
+CATPDMCmdHeader.VPM_NewPSNGraph.Help="由 PSN 根產品開啟新圖 ";
+CATPDMCmdHeader.VPM_NewPSNGraph.ShortHelp="開啟圖 ";
+CATPDMCmdHeader.VPM_NewPSNGraph.LongHelp="開啟圖 ";
+
+CATPDMCmdHeader.VPM_IdentifyInPSN.Title="VPM 在 PSN 中名稱";
+CATPDMCmdHeader.VPM_IdentifyInPSN.Category="PDM";
+CATPDMCmdHeader.VPM_IdentifyInPSN.Help="在 PSN 中命名所選產品";
+CATPDMCmdHeader.VPM_IdentifyInPSN.ShortHelp="在 PSN 中命名";
+CATPDMCmdHeader.VPM_IdentifyInPSN.LongHelp="在 PSN 中命名";
+
+CATPDMCmdHeader.VPM_PubWhereUsed.Title="發行已使用的";
+CATPDMCmdHeader.VPM_PubWhereUsed.Category="PDM";
+CATPDMCmdHeader.VPM_PubWhereUsed.Help="以所選發行在 PSN 搜尋產品 ";
+CATPDMCmdHeader.VPM_PubWhereUsed.ShortHelp="在 MML 圖形使用發行 ";
+CATPDMCmdHeader.VPM_PubWhereUsed.LongHelp="Use of publication in MML graph ";
+
+CATPDMCmdHeader.VPM_LaunchBatchServer.Title="VPM 批次載入伺服器";
+CATPDMCmdHeader.VPM_LaunchBatchServer.Category="PDM";
+CATPDMCmdHeader.VPM_LaunchBatchServer.Help="載入 VPM 批次伺服器";
+CATPDMCmdHeader.VPM_LaunchBatchServer.ShortHelp="載入 VPM 批次伺服器";
+CATPDMCmdHeader.VPM_LaunchBatchServer.LongHelp="載入 VPM 批次伺服器";
+
+CATPDMCmdHeader.VPM_Open.Title="VPM 載入";
+CATPDMCmdHeader.VPM_Open.Category="PDM";
+CATPDMCmdHeader.VPM_Open.Help="由 VPM 批次伺服器載入";
+CATPDMCmdHeader.VPM_Open.ShortHelp="由 VPM 批次伺服器載入";
+CATPDMCmdHeader.VPM_Open.LongHelp="Load an assembly or a document in CV5 from a VPM batch serveur ";
+
+CATPDMCmdHeader.VPM_NewFederator.Title="VPM 新 Federator";
+CATPDMCmdHeader.VPM_NewFederator.Category="PDM";
+CATPDMCmdHeader.VPM_NewFederator.Help="新 Federator";
+CATPDMCmdHeader.VPM_NewFederator.ShortHelp="新 Federator";
+CATPDMCmdHeader.VPM_NewFederator.LongHelp="新 Federator";
+
+CATPDMCmdHeader.VPM_RunODTCode.Title="VPM 舊型式選擇";
+CATPDMCmdHeader.VPM_RunODTCode.Category="Interop";
+CATPDMCmdHeader.VPM_RunODTCode.Help="Selection of a Late Type during ODT Tests";
+CATPDMCmdHeader.VPM_RunODTCode.ShortHelp="Selection of a Late Type during ODT Tests";
+CATPDMCmdHeader.VPM_RunODTCode.LongHelp="Selection of a Late Type during the record of ODT Tests.";
+
+CATPDMCmdHeader.VPM_ResetPDMDocuments.Title="VPM 重設 PDM 文件";
+CATPDMCmdHeader.VPM_ResetPDMDocuments.Category="Interop";
+CATPDMCmdHeader.VPM_ResetPDMDocuments.Help="重設 PDM 文件";
+CATPDMCmdHeader.VPM_ResetPDMDocuments.ShortHelp="重設 PDM 文件";
+CATPDMCmdHeader.VPM_ResetPDMDocuments.LongHelp="重設 PDM 文件";
+
+
+//##################################################################
+//#########          NOMAD
+//##################################################################
+CATPDMCmdHeader.Nomad_OpenSession.Title="開啟 Nomad 工作";
+CATPDMCmdHeader.Nomad_OpenSession.Category="PDM";
+CATPDMCmdHeader.Nomad_OpenSession.Help="Open the Nomad Session in your local environment";
+CATPDMCmdHeader.Nomad_OpenSession.ShortHelp="開啟 Nomad 工作";
+CATPDMCmdHeader.Nomad_OpenSession.LongHelp="If there's a Nomad Session in your local environment, you can open it with this command";
+
+CATPDMCmdHeader.Nomad_Combo.Title="更換 Nomad-PDM";
+CATPDMCmdHeader.Nomad_Combo.Category="PDM";
+CATPDMCmdHeader.Nomad_Combo.Help="Switch documents in the current editor between a Nomad Session and a PDM Session";  
+CATPDMCmdHeader.Nomad_Combo.ShortHelp="更換 Nomad <-> PDM"; 
+CATPDMCmdHeader.Nomad_Combo.LongHelp="Switch documents in the current editor between a Nomad Session in your local environment and a PDM Session in a database environment"; 
+
+//##################################################################
+//#########          LCA
+//##################################################################
+CATPDMCmdHeader.LCA_Connect.Title="LCA 連結";
+CATPDMCmdHeader.LCA_Connect.Category="PDM";
+CATPDMCmdHeader.LCA_Connect.Help="連結 / 中斷 ENOVIA LCA";
+CATPDMCmdHeader.LCA_Connect.LongHelp="Establish / Close communication between CATIA and ENOVIA LCA Portal.";
+CATPDMCmdHeader.LCA_Connect.Connected="由 ENOVIA LCA 中斷";
+CATPDMCmdHeader.LCA_Connect.ConnectedTitle="LCA 中斷";
+CATPDMCmdHeader.LCA_Connect.NotConnected="連接至 ENOVIA LCA";
+CATPDMCmdHeader.LCA_Connect.NotConnectedTitle="LCA 連接";
+
+CATPDMCmdHeader.LCA_CATSetPDMProperties.Title="PDM 設定性質";
+CATPDMCmdHeader.LCA_CATSetPDMProperties.Help="設定 PDM 性質";
+CATPDMCmdHeader.LCA_CATSetPDMProperties.ShortHelp="設定 PDM 性質";
+CATPDMCmdHeader.LCA_CATSetPDMProperties.LongHelp=
+"This command lets the user define the PDM properties of documents by chosing
+- The type of PDM
+- The type of persistence and exposition in this PDM";
+
+CATPDMCmdHeader.LCA_Save.Title="LCA 儲存";
+CATPDMCmdHeader.LCA_Save.Category="PDM";
+CATPDMCmdHeader.LCA_Save.Help="在 ENOVIA LCA 伺服器中儲存資料...";  
+CATPDMCmdHeader.LCA_Save.ShortHelp="在 ENOVIA LCA 伺服器中儲存資料..."; 
+CATPDMCmdHeader.LCA_Save.LongHelp="Save the modifications in ENOVIA LCA server without committing data."; 
+
+CATPDMCmdHeader.LCA_Highlight.Title="LCA 亮度顯示";
+CATPDMCmdHeader.LCA_Highlight.Category="PDM";
+CATPDMCmdHeader.LCA_Highlight.Help="在 ENOVIA LCA 命名...";
+CATPDMCmdHeader.LCA_Highlight.ShortHelp="在 ENOVIA LCA 命名...";
+CATPDMCmdHeader.LCA_Highlight.LongHelp="Identify the selected objects in ENOVIA LCA editor.";
+
+CATPDMCmdHeader.LCA_GetChildren.Title="LCA 子層";
+CATPDMCmdHeader.LCA_GetChildren.Category="PDM";
+CATPDMCmdHeader.LCA_GetChildren.Help="Load Children From ENOVIA LCA... ";
+CATPDMCmdHeader.LCA_GetChildren.ShortHelp="Load Children From ENOVIA LCA... ";
+CATPDMCmdHeader.LCA_GetChildren.LongHelp="Directly load from ENOVIA LCA the children products of the selected instances.";
+
+CATPDMCmdHeader.LCA_UnloadBranch.Title="LCA 卸載分枝";
+CATPDMCmdHeader.LCA_UnloadBranch.Category="PDM";
+CATPDMCmdHeader.LCA_UnloadBranch.Help="Unload Branch From CATIAV5... ";
+CATPDMCmdHeader.LCA_UnloadBranch.ShortHelp="Unload Branch From CATIAV5... ";
+CATPDMCmdHeader.LCA_UnloadBranch.LongHelp="Unload the selected branch(es) of an ENOVIA imported product. ";
+
+CATPDMCmdHeader.LCA_RunOdtCode.Title="PDM 舊型式選擇";
+CATPDMCmdHeader.LCA_RunOdtCode.Category="PDM";
+CATPDMCmdHeader.LCA_RunOdtCode.Help="Selection of a Late Type during ODT Tests";  
+CATPDMCmdHeader.LCA_RunOdtCode.ShortHelp="Selection of a Late Type during ODT Tests"; 
+CATPDMCmdHeader.LCA_RunOdtCode.LongHelp="Selection of a Late Type during the record of ODT Tests."; 
+
+CATPDMCmdHeader.LCA_NewProduct.Title="LCA 新產品";
+CATPDMCmdHeader.LCA_NewProduct.Category="PDM";
+CATPDMCmdHeader.LCA_NewProduct.Help="New ENOVIA LCA Product... ";
+CATPDMCmdHeader.LCA_NewProduct.ShortHelp="New ENOVIA LCA Product... ";
+CATPDMCmdHeader.LCA_NewProduct.LongHelp="Debug purpose only: Create a New ENOVIA LCA Root Product.";
+
+CATPDMCmdHeader.LCA_LockMngmt.Title="LCA 鎖定管理";
+CATPDMCmdHeader.LCA_LockMngmt.Category="PDM";
+CATPDMCmdHeader.LCA_LockMngmt.Help="Lock/unlock ENOVIA entity from CATIAV5... ";
+CATPDMCmdHeader.LCA_LockMngmt.ShortHelp="Lock/unlock ENOVIA entity from CATIAV5... ";
+CATPDMCmdHeader.LCA_LockMngmt.LongHelp="Debug purpose only: Lock/unlock ENOVIA entity from CATIAV5, given its database name.";
+
+CATPDMCmdHeader.LCA_PrintLog.Title="LCA 列印記錄";
+CATPDMCmdHeader.LCA_PrintLog.Category="PDM";
+CATPDMCmdHeader.LCA_PrintLog.Help="Print Log For Debug...";  
+CATPDMCmdHeader.LCA_PrintLog.ShortHelp="Print Log For Debug...";
+CATPDMCmdHeader.LCA_PrintLog.LongHelp="Debug purpose only: Print Log For Debug...";
+
+CATPDMCmdHeader.LCA_Clean.Title="LCA 清理";
+CATPDMCmdHeader.LCA_Clean.Category="PDM";
+CATPDMCmdHeader.LCA_Clean.Help="Clean in Database...";
+CATPDMCmdHeader.LCA_Clean.ShortHelp="Clean in Database...";
+CATPDMCmdHeader.LCA_Clean.LongHelp="Debug purpose only: Clean in Database...";
+
+CATPDMCmdHeader.LCA_Commit.Title="LCA 認證";
+CATPDMCmdHeader.LCA_Commit.Category="PDM";
+CATPDMCmdHeader.LCA_Commit.Help="Commit in Database...";
+CATPDMCmdHeader.LCA_Commit.ShortHelp="Commit in Database...";
+CATPDMCmdHeader.LCA_Commit.LongHelp="Debug purpose only: Commit in Database...";
+
+CATPDMCmdHeader.LCA_LoadByName.Title="LCA 以名稱載入";
+CATPDMCmdHeader.LCA_LoadByName.Category="PDM";
+CATPDMCmdHeader.LCA_LoadByName.Help="Load By Name";
+CATPDMCmdHeader.LCA_LoadByName.ShortHelp="Load By Name";
+CATPDMCmdHeader.LCA_LoadByName.LongHelp="Debug purpose only: Load By Name";
+
+CATPDMCmdHeader.LCA_PrefixDoc.Title="LCA 字首文件";
+CATPDMCmdHeader.LCA_PrefixDoc.Category="PDM";
+CATPDMCmdHeader.LCA_PrefixDoc.Help="Prefix Doc";
+CATPDMCmdHeader.LCA_PrefixDoc.ShortHelp="Prefix Doc";
+CATPDMCmdHeader.LCA_PrefixDoc.LongHelp="Debug purpose only: Prefix Doc";
+
+CATPDMCmdHeader.LCA_LoadFederator.Title="LCA 載入 Federator";
+CATPDMCmdHeader.LCA_LoadFederator.Category="PDM";
+CATPDMCmdHeader.LCA_LoadFederator.Help="Load Federator";
+CATPDMCmdHeader.LCA_LoadFederator.ShortHelp="Load Federator";
+CATPDMCmdHeader.LCA_LoadFederator.LongHelp="Debug purpose only: Load Federator";
+
+//##################################################################
+//#########          A VIRER LORSQUE CES HEADERS N'APPARAITRONT PLUS
+//#########          DANS APPLICATION FRAME
+//##################################################################
+CATPDMCmdHeader.EnoviaV5Save.Title="LCASave";
+CATPDMCmdHeader.EnoviaV5Save.Help="Save data in ENOVIA LCA Server...";  
+CATPDMCmdHeader.EnoviaV5Save.ShortHelp="Save data in ENOVIA LCA Server..."; 
+CATPDMCmdHeader.EnoviaV5Save.LongHelp="Save the modifications in ENOVIA LCA server without committing data."; 
+
+CATPDMCmdHeader.OpenNomadSession.Title="開啟 Nomad 工作";
+CATPDMCmdHeader.OpenNomadSession.Help="Open the Nomad Session in your local environment";
+CATPDMCmdHeader.OpenNomadSession.ShortHelp="Open Nomad Session";
+CATPDMCmdHeader.OpenNomadSession.LongHelp="If there's a Nomad Session in your local environment, you can open it with this command";
+
+
+TitleNotifyNewSave="新存成";

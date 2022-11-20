@@ -1,0 +1,404 @@
+//----------------------------Document-------------------------------------
+// Titre
+//-------------
+Title="達梭系統軟體管理";
+FrameButton._PushButOK.Title    = "關閉";
+FrameButton._PushButHelp.Title = "求助";
+_Notify.ErrorTitle = "錯誤";
+//
+// Onglet General
+//---------------
+TabInfo._GeneralTab.Title                      = "一般";
+TabInfo._GeneralTab.LongHelp                   = "指出目前 CATIA 建立版本, 修改版本 (如果有), 和安裝路徑";
+TabInfo._GeneralTab.LabelGeneralLine1.Title    = " ";
+TabInfo._GeneralTab.LabelGeneralLine2.Title    = " ";
+TabInfo._GeneralTab.LabelGeneralLine3.Title    = " ";
+TabInfo._GeneralTab.LabelGeneralLine4.Title    = " ";
+TabInfo._GeneralTab.LabelGeneralLine5.Title    = " ";
+TabInfo._GeneralTab.LabelGeneralLine6.Title    = " ";
+TabInfo._GeneralTab.FrameGALevel.Title         = "建立版本";
+TabInfo._GeneralTab.FrameGALevel.LongHelp      = "建立版本";
+TabInfo._GeneralTab.LabelGALevel.LongHelp      = "建立版本";
+BuildLevel32 = "/p1 (32-位元)";
+BuildLevel64 = "/p1 (64-位元)";
+TabInfo._GeneralTab.FrameSPKLevel.Title        = "修改版本";
+TabInfo._GeneralTab.FrameSPKLevel.LongHelp     = "修改版本";
+TabInfo._GeneralTab.LabelSPKLevel.LongHelp     = "目前修改版本";
+TabInfo._GeneralTab.LabelLastSPKLevel.LongHelp = "最新已確認版本";
+_GeneralTab.LabelCurrentSPK                    = "目前修改版本 : /p1 \n";
+_GeneralTab.LabelLastSPK                       = "最新已確認修改版本 : /p1 \n";
+_GeneralTab.LabelLastSPKNone                   = "最新已確認修改版本 : 無 \n";
+_GeneralTab.LabelSPKNone                       = "無修改版本 \n";
+_GeneralTab.LabelCurrentHFX                    = "目前所安裝的暫時修正軟體     : /p1       \n";
+_GeneralTab.None                       = "無 \n";
+TabInfo._GeneralTab.FrameInstallPath.Title     = "安裝路徑";
+TabInfo._GeneralTab.FrameInstallPath.LongHelp  = "安裝路徑";
+TabInfo._GeneralTab.FrameInstallLanguages.Title     = "安裝語言和字型選項";
+TabInfo._GeneralTab.FrameInstallLanguages.LongHelp  = "安裝路徑";
+TabInfo._GeneralTab.LabelInstallPath.LongHelp  = "安裝路徑";
+TabInfo._GeneralTab.FrameCAA2.Title     = "CAA2";
+TabInfo._GeneralTab.FrameCAA2.LongHelp  = "CAA2";
+TabInfo._GeneralTab.LabelCAA2.LongHelp  = "CAA2";
+_GeneralTab.LabelCAA2Installed = "安裝在 /p1";
+TabInfo._GeneralTab.LabelCAA2NotInstalled ="未安裝";
+//
+// Onglet Information
+//-------------------
+TabInfo._InformationTab.Title                  = "已安裝軟體";
+TabInfo._InformationTab.LongHelp               = "顯示已安裝組態或已安裝產品";
+TabInfo._InformationTab.FrameConfigs.Title     = "已安裝組態";
+TabInfo._InformationTab.LabelInstalledLine1.Title=" ";
+TabInfo._InformationTab.FrameConfigs.LongHelp  = "顯示已安裝組態";
+TabInfo._InformationTab.EditorConfigs.LongHelp = "顯示已安裝組態";
+TabInfo._InformationTab.FrameProduits.Title    = "已安裝產品";
+TabInfo._InformationTab.FrameProduits.LongHelp = "顯示已安裝產品";
+TabInfo._InformationTab.EditorProduits.LongHelp= "顯示已安裝產品";
+//
+// Onglet Check Integrity
+//------------------------
+TabInfo._CheckIntegTab.Title                      = "整體性檢查";
+TabInfo._CheckIntegTab.LongHelp                   = "整體性檢查";
+TabInfo._CheckIntegTab.FrameInteg._EditorCheckInteg.LongHelp="";
+TabInfo._CheckIntegTab._LabelCheckI.Title="選擇您要執行的整體性檢查等級, 然後再按一下檢查按鈕.";
+TabInfo._CheckIntegTab._CheckIButton.Title="檢查";
+TabInfo._CheckIntegTab._FrameRadioCheck._RadioButtonI1.Title="等級 1 - 只檢查控制檔案  (最快)."; 
+TabInfo._CheckIntegTab._FrameRadioCheck._RadioButtonI2.Title="等級 2 - 檢查所有已存檔案."; 
+TabInfo._CheckIntegTab._FrameRadioCheck._RadioButtonI3.Title="等級 3 - 檢查所有已存檔案和有效性 (可能要花好幾分鐘)."; 
+TabInfo._CheckIntegTab._FrameRadioCheck._RadioButtonI1.LongHelp="等級 1 - 只檢查控制檔案."; 
+TabInfo._CheckIntegTab._FrameRadioCheck._RadioButtonI2.LongHelp="等級 2 - 檢查所有已存檔案."; 
+TabInfo._CheckIntegTab._FrameRadioCheck._RadioButtonI3.LongHelp="等級 3 - 檢查所有已存檔案和有效性."; 
+//
+_CheckIntegTab.IntegOK                            = "整體性檢查 OK\n";
+_CheckIntegTab.IntegKO                            = "整體性檢查 KO\n";
+
+//---------------------------------------------------------------------------
+// Progress Window du Check Integrity
+//---------------------------------------------------------------------------
+Progress1.Title           = "整體性檢查 - 等級 1";
+Progress2.Title           = "整體性檢查 - 等級 2";
+Progress3.Title           = "整體性檢查 - 等級 3";
+Progress1.Label1.Title    = "檢查中...";
+Progress2.Label1.Title    = "檢查中...";
+Progress3.Label1.Title    = "檢查中...";
+Progress1.Label2.Title    = "";
+Progress2.Label2.Title    = "";
+Progress3.Label2.Title    = "";
+CAAProgress1.Title        = "CAA 整體性檢查 - 等級 1";
+CAAProgress2.Title        = "CAA 整體性檢查 - 等級 2";
+CAAProgress3.Title        = "CAA 整體性檢查 - 等級 3";
+CAAProgress1.Label1.Title = "檢查中...";
+CAAProgress2.Label1.Title = "檢查中...";
+CAAProgress3.Label1.Title = "檢查中...";
+CAAProgress1.Label2.Title = "";
+CAAProgress2.Label2.Title = "";
+CAAProgress3.Label2.Title = "";
+//Progress.BCancel          = "取消" ;
+
+//
+// Onglet Check Prereqs
+//-----------------------
+TabInfo._CheckPrereqTab.Title="預先安裝檢查";
+TabInfo._CheckPrereqTab.LongHelp="預先安裝檢查";
+TabInfo._CheckPrereqTab.FramePrereq._EditorPrereq.LongHelp="";
+TabInfo._CheckPrereqTab.FrameView.LabelView.Title="按一下 已驗證組態 按鈕來獲得已驗證硬體組態   ";
+TabInfo._CheckPrereqTab.FrameView.PushView.Title="已驗證組態";
+_CheckPrereqTab.PrereqOK="預先安裝檢查成功 \n";
+_CheckPrereqTab.PrereqKO="預先安裝檢查未成功 \n";
+//
+//// Onglet NT Config
+//-----------------------
+TabInfo._NTConfigTab.Title="系統資訊";
+TabInfo._NTConfigTab.LongHelp="提供系統資訊";
+TabInfo._NTConfigTab.FrameNTConfig._EditorNTConfig.LongHelp="";
+//
+
+// Onglet SP Management
+//----------------------
+TabInfo._SPManageTab.Title="修改版本軟體管理";
+TabInfo._SPManageTab.LabSpace1.Title=" ";
+TabInfo._SPManageTab.LongHelp="修改版本軟體管理";
+TabInfo._SPManageTab.LabelManage1.LongHelp="";
+TabInfo._SPManageTab.LabelManage2.LongHelp="";
+TabInfo._SPManageTab.Labspace2.Title="";
+_SPManageTab.LabelCommitRollbackGA="您可以確認修改版本 /p1 或回復至 GA 版本.";
+_SPManageTab.LabelCommitRollbackSP="您可以確認修改版本 /p1 或回復至修改版本 /p2.";
+_SPManageTab.LabelWarning="在選取確認或回復前, 請退出任何達梭應用軟體.";
+_SPManageTab.LabelAlready="目前修改版本 /p1 已經確認.";
+_SPManageTab.LabelNoCommit="系統沒有修改版本來確認或回復.";
+_SPManageTab.LabelNoSPK="系統沒有安裝修改版本.";
+TabInfo._SPManageTab._PushButCommit.Title="確認";
+TabInfo._SPManageTab._PushButCommit.LongHelp="按一下確認按鈕來確認修改版本";
+TabInfo._SPManageTab.LabSpace3.Title="                       ";
+TabInfo._SPManageTab._PushButRollback.Title="回復";
+TabInfo._SPManageTab._PushButRollback.LongHelp="按一下回復按鈕來回復修改版本";
+TabInfo._SPManageTab.LabSpace4.Title="                     ";
+_SPManageTab.CommitOK="確認已成功 \n";
+_SPManageTab.NeedCommitCAA="您必須確認 CAA Service Pack /p1\n";
+_SPManageTab.CommitKO="確認失敗 \n";
+_SPManageTab.RollbackOK="回復已成功 \n";
+_SPManageTab.RollbackKO="回復失敗 \n";
+_SPManageTab.RollbackWarning = "您剛安裝的一些分件不是正確的版本 \n
+您必須安裝修改版本 /p1\n";
+_SPManageTab.RollbackIncomplete="請退出 CATSoftwareMgt 來完成回復 \n";
+_SPManageTab.NeedRollbackCAA="您必須應用回復 CAA Service Pack /p1\n";
+_SPManageTab.ErrVPMPeopleUpdate="命令 VPMPeopleUpdate 失敗 \n";
+_SPManageTab.ErrConsultLog="查看檔案 /p1\n";
+_SPManageTab.Notify.Title="修改版本軟體管理";
+_SPManageTab.LogFile.Debut="修改版本軟體管理";
+_SPManageTab.LogFile.Fin="修改版本軟體管理結束";
+_SPManageTab.LogFile.Commit="確認修改版本 /p1\n";
+_SPManageTab.LogFile.RollbacktoGA="回復修改版本 /p1 至 GA 版本 \n";
+_SPManageTab.LogFile.RollbacktoSPK="回復修改版本 /p1 至 修改版本 /p2\n";
+_SPManageTab.LabelGeneralInfo= "您必須是 super-user 來執行確認或回復";
+_SPManageTab.LabelGeneralInfoNT = "您必須是系統管理員來執行確認或回復";
+QuestionWindow.Title="執行程序中";
+QuestionWindow.Text="部份相關 CATIA 程序現正執行中,  要確保 Service Pack 安裝正確. \n 您要終止它們嗎 ?\n";
+WantLCAUpdate="回復時重新載入人員和組織資料庫? \n";
+DatabaseUpgrade="回復資料庫";
+//
+// Onglet CAA
+TabInfo._CAA2Tab.Title                  = "CAA2";
+TabInfo._CAA2.LongHelp               = "顯示 CAA2的已安裝組態或已安裝產品";
+TabInfo._CAA2Tab.FrameConfigsCAA2.Title     = "CAA2的已安裝組態";
+TabInfo._CAA2Tab.LabelInstalledCAA2Line1.Title=" ";
+TabInfo._CAA2Tab.FrameConfigsCAA2.LongHelp  = "顯示 CAA2的已安裝組態";
+TabInfo._CAA2Tab.EditorConfigsCAA2.LongHelp = "顯示 CAA2的已安裝組態";
+TabInfo._CAA2Tab.FrameProduitsCAA2.Title    = "CAA2 的已安裝產品";
+TabInfo._CAA2Tab.FrameProduitsCAA2.LongHelp = "顯示CAA2 的已安裝產品";
+TabInfo._CAA2Tab.EditorProduitsCAA2.LongHelp= "顯示CAA 的已安裝產品";
+
+
+
+//
+// Onglet Check Integrity
+//------------------------
+TabInfo._CheckIntegCAA2Tab.Title                      = "CAA 有效性檢查";
+TabInfo._CheckIntegCAA2Tab.LongHelp                   = "CAA 有效性檢查";
+TabInfo._CheckIntegCAA2Tab._EditorCheckIntegCAA2.LongHelp="";
+TabInfo._CheckIntegCAA2Tab._LabelCheckICAA2.Title="選擇您要執行的整體性檢查等級, 然後再按一下檢查按鈕.";
+TabInfo._CheckIntegCAA2Tab._CheckIButtonCAA2.Title="檢查";
+TabInfo._CheckIntegCAA2Tab._FrameRadioCheckCAA2._RadioButtonI1CAA2.Title="等級 1 - 只檢查控制檔案  (最快)."; 
+TabInfo._CheckIntegCAA2Tab._FrameRadioCheckCAA2._RadioButtonI2CAA2.Title="等級 2 - 檢查所有已存檔案."; 
+TabInfo._CheckIntegCAA2Tab._FrameRadioCheckCAA2._RadioButtonI3CAA2.Title="等級 3 - 檢查所有已存檔案和有效性 (可能要花好幾分鐘)."; 
+TabInfo._CheckIntegCAA2Tab._FrameRadioCheckCAA2._RadioButtonI1CAA2.LongHelp="等級 1 - 只檢查控制檔案."; 
+TabInfo._CheckIntegCAA2Tab._FrameRadioCheckCAA2._RadioButtonI2CAA2.LongHelp="等級 2 - 檢查所有已存檔案."; 
+TabInfo._CheckIntegCAA2Tab._FrameRadioCheckCAA2._RadioButtonI3CAA2.LongHelp="等級 3 - 檢查所有已存檔案和有效性.";
+ 
+// Onglet SP Management for CAA
+//------------------------------
+TabInfo._SPManageTabCAA2.Title="CAA2 的修改版本軟體管理";
+TabInfo._SPManageTabCAA2.LabSpace1CAA2.Title=" ";
+TabInfo._SPManageTabCAA2.LongHelp="CAA2 的修改版本軟體管理";
+TabInfo._SPManageTabCAA2.LabelManage1CAA2.LongHelp="";
+TabInfo._SPManageTabCAA2.LabelManage2CAA2.LongHelp="";
+TabInfo._SPManageTabCAA2.Labspace2CAA2.Title="";
+_SPManageTabCAA2.LabelCommitRollbackGA="您可以確認CAA2的修改版本 /p1 或回復至 GA 版本.";
+_SPManageTabCAA2.LabelCommitRollbackSP="您可以確認CAA2的修改版本 /p1 或回復至修改版本 /p2.";
+_SPManageTabCAA2.LabelWarning="";
+_SPManageTabCAA2.LabelAlready="目前的CCA2修改版本 /p1 已經確認.";
+_SPManageTabCAA2.LabelNoCommit="系統沒有CCA2修改版本來確認或回復.";
+_SPManageTabCAA2.LabelNoSPK="系統沒有安裝CCA2修改版本.";
+TabInfo._SPManageTabCAA2._PushButCommit.Title="確認 (CAA2)";
+TabInfo._SPManageTabCAA2._PushButCommit.LongHelp="按一下確認按鈕來確認CCA2修改版本";
+TabInfo._SPManageTabCAA2.LabSpace3.Title="                       ";
+TabInfo._SPManageTabCAA2._PushButRollback.Title="回復(CAA2)";
+TabInfo._SPManageTabCAA2._PushButRollback.LongHelp="按一下回復按鈕來回復CCA2修改版本";
+TabInfo._SPManageTabCAA2.LabSpace4.Title="                     ";
+_SPManageTabCAA2.CommitOK="CAA2 確認已成功 \n";
+_SPManageTabCAA2.CommitKO="CAA2 確認失敗 \n";
+_SPManageTabCAA2.NoCommitCAA2="您必須確認 Code Service Pack Level /p1\n 在確認 CAA Service Pack Level /p2 之前 \n";
+_SPManageTabCAA2.RollbackOK="CAA2 回復已成功  \n";
+_SPManageTabCAA2.RollbackKO="CAA2 回復失敗 \n";
+_SPManageTabCAA2.RollbackWarning = "您剛安裝的一些分件不是正確的CCA2版本";
+_SPManageTabCAA2.RollbackIncomplete="請退出 CATSoftwareMgt 來完成回復 CCA2\n";
+_SPManageTabCAA2.Notify.Title="CAA2 修改版本軟體管理";
+_SPManageTabCAA2.LogFile.Debut="CAA2 修改版本軟體管理";
+_SPManageTabCAA2.LogFile.Fin="結束 CAA2 修改版本軟體管理";
+_SPManageTabCAA2.LogFile.Commit="確認CCA2修改版本 /p1 \n";
+_SPManageTabCAA2.LogFile.RollbacktoGA="回復CCA2修改版本 /p1 至 GA 版本 \n";
+_SPManageTabCAA2.LogFile.RollbacktoSPK="回復CCA2修改版本 /p1 至修改版本 /p2\n";
+
+
+//
+// Onglet HFX Remove
+//----------------------
+TabInfo._RemoveHFXTab.Title="移除暫時修正檔";
+TabInfo._RemoveHFXTab.LabSpaceRemove.Title=" ";
+TabInfo._RemoveHFXTab.LongHelp="移除暫時修正檔";
+TabInfo._RemoveHFXTab.LabelRemoveHFX1.LongHelp="";
+_RemoveHFXTab.LabelRemoveHFX="如您要移除暫時修正檔 /p1, 請按 移除 按鈕.";
+_RemoveHFXTab.LabelNoHFX="未安裝暫時修正檔.";
+TabInfo._RemoveHFXTab._PushButRemoveHFX.Title="移除";
+TabInfo._RemoveHFXTab._PushButRemoveHFX.LongHelp="按下 移除安裝 按鈕來移除暫時修正檔";
+_RemoveHFXTab.RemoveHFXOK="暫時修正檔已成功移除 \n";
+_RemoveHFXTab.RemoveHFXKO="暫時修正檔未成功移除 \n";
+_RemoveHFXTab.ErrConsultLog="查看檔案 /p1\n";
+_RemoveHFXTab.Notify.Title="移除暫時修正檔";
+_RemoveHFXTab.LogFile.Debut="移除暫時修正檔";
+_RemoveHFXTab.LogFile.Fin="移除暫時修正檔結束";
+_RemoveHFXTab.LogFile.RemoveHFX="暫時修正檔 /p1 移除 \n";
+_RemoveHFXTab.LabelGeneralInfo= "系統管理者才可移除暫時修正檔";
+_RemoveHFXTab.LabelGeneralInfoNT = "系統管理者才可移除暫時修正檔";
+
+//---------------------------------------------------------------------------
+// BATCH
+//---------------------------------------------------------------------------
+Result.Title="\n 達梭系統軟體管理 \n";
+Result.GALevel="安裝版本= /p1\n";
+Result.SPLevel="修改版本 = /p1\n";
+Result.LabelCurrentSPK="目前已安裝的修改版本 : /p1 \n";
+ResultCAA2.LabelCurrentSPK="目前已安裝的CCA2修改版本 : /p1 \n";
+Result.LabelLastSPK="最新的修改版本已確認 : /p1\n";
+ResultCAA2.LabelLastSPK="最新的CCA2修改版本已確認 : /p1\n";
+Result.LabelLastSPKNone="最新的修改版本已確認 : 無 \n";
+ResultCAA2.LabelLastSPKNone="最新的CCA2修改版本已確認 : 無 \n";
+Result.LabelSPKNone="無修改版本 \n";
+ResultCAA2.LabelSPKNone="無CCA2修改版本 \n";
+Result.InstallCAA2="CAA2 已安裝在 /p1 \n";
+Result.InstalledConfigs="已安裝組態 :\n";
+Result.InstalledProducts="已安裝產品 :\n";
+Result.InstalledConfigsCAA2="已安裝CCA2組態 :\n";
+Result.InstalledProductsCAA2="已安裝CCA2產品 :\n";
+Result.CheckInteg="整體性檢查 \n";
+Result.CheckIntegCAA="整體性檢查- 版本 /p1\n";
+Result.IntegOK="整體性檢查成功 \n";
+Result.IntegKO="整體性檢查未成功 \n";
+Result.IntegCAAOK="CAA 整體性檢查成功 \n";
+Result.IntegCAAKO="CAA 整體性檢查未成功 \n";
+Result.OptioncaaIorI1Ignored ="CAA 未安裝 \n 選擇 -caaI/-caaI1 忽略 \n"; 
+Result.OptioncaaI2Ignored ="CAA 未安裝 \n 選擇 -caaI2 忽略 \n"; 
+Result.OptioncaaI3Ignored ="CAA 未安裝 \n 選擇 -caaI3 忽略 \n"; 
+Result.OptionI3IgnoredHFX = "暫時修正檔 /p1 已安裝 \n 選項 -I3 忽略 \n"; 
+Result.CheckPrereqs="預先安裝檢查 \n";
+Result.PrereqsOK="預先安裝檢查成功 \n";
+Result.PrereqsKO="預先安裝檢查未成功 \n";
+Result.CommitSP="確認修改版本 \n";
+Result.CommitSPCAA2="確認CCA2修改版本 \n";
+Result.OptioncaaCIgnored ="CAA 未安裝 \n 選擇 -caaC 忽略 \n"; 
+Result.OptioncaaCIgnored2 ="選擇 -caaC 忽略 \n"; 
+Result.OptioncaaRIgnored ="CAA 未安裝 \n 選擇 -caaR 忽略 \n"; 
+Result.OptioncaaRIgnored2 ="選擇 -caaR 忽略 \n"; 
+Result.NoSPKtoCommit="系統沒有修改版本可確認 \n";
+Result.NoSPKCAA2toCommit="系統沒有 CCA2 修改版本可確認 \n";
+Result.CommitOK="確認已成功 \n";
+Result.CommitCAA2OK="確認 CCA2 已成功 \n";
+Result.CommitKO="確認失敗 \n";
+Result.CommitCAA2KO="CCA2 確認失敗 \n";
+Result.RollbackSP="回復修改版本 \n";
+Result.RollbackCAA2SP="回復 CCA2 修改版本 \n";
+Result.NoSPKtoRollback="系統沒有修改版本可回復 \n";
+Result.NoSPKCAA2toRollback="系統沒有 CCA2 修改版本可回復 \n";
+Result.RollbackOK="回復已成功  \n";
+Result.RollbackCAA2OK="回復 CCA2 已成功 \n";
+Result.RollbackKO="回復失敗 \n";
+Result.RollbackCAA2KO="回復 CCA2 失敗 \n";
+Result.ErrVPMPeopleUpdate="命令 VPMPeopleUpdate 失敗 \n";
+Result.ErrConsultLog="參考檔案 /p1\n";
+Result.UnloadDir="安裝路徑: /p1\n";
+Result.RunningProcess="使用選項 -killprocess 來中止 Dassault Systemes 程序 :\n";
+// CONFIG NT
+Result.TargetId ="目標序號 : /p1";
+Result.Locale = "語法 : /p1";
+Result.MultiLanguageFalse ="多重語文使用者介面: 錯誤";
+Result.MultiLanguageTrue ="多重語文使用者介面: 真實";
+Result.UserEgalSystemFalse ="使用者 UI 語文相同系統 UI 語文:  錯誤";
+Result.UserEgalSystemTrue ="使用者 UI 語文相同系統 UI 語文:  真實";
+ResultB.MultiLanguageFalse ="多重語文使用者介面: 錯誤\n";
+ResultB.MultiLanguageTrue ="多重語文使用者介面: 真實\n";
+ResultB.UserEgalSystemFalse ="使用者 UI 語文相同系統 UI 語文:  錯誤\n";
+ResultB.UserEgalSystemTrue ="使用者 UI 語文相同系統 UI 語文:  真實\n";
+Result.Hostname ="主機名稱 : /p1" ;
+Result.OSLevel = "系統版本 : /p1" ;
+Result.Processor = "處理器 : /p1";
+Result.PhysicalMem="記憶體 : /p1";
+Result.VirtualMem ="虛擬記憶體 : /p1";
+Result.Paging ="分頁 : /p1";
+Result.Settings="顯示設定 :";
+Result.Resolution="解析度 : /p1 * /p2 圖素"; 
+Result.Refresh="更新速率: /p1 Hertz";
+Result.ColorPlanes ="顏色平面數目 : /p1";
+Result.ColorBits="每個圖素的周邊顏色位元數目 : /p1"; 
+Result.DeviceTable ="裝置顏色表的本體數目 : /p1"; 
+Result.ColorResolution ="裝置顏色的真實色彩解析度: /p1 每個圖素的位元數目"; 
+Result.VideoSettings ="影像設定:";
+Result.AdaptaterString ="硬體資訊.附加設備字串: /p1" ;
+Result.AdaptaterStringNA ="硬體資訊.附加設備字串 : 未使用";  
+Result.BiosString="硬體資訊.Bios字串 : /p1";
+Result.BiosStringNA ="硬體資訊.Bios字串 : 未使用"  ;
+Result.ChipType ="硬體資訊.晶片型式 :/p1" ;
+Result.ChipTypeNA ="硬體資訊.晶片型式: 未使用"; 
+Result.DacType ="硬體資訊.Dac型式 :/p1" ;
+Result.DacTypeNA ="硬體資訊.Dac型式: 未使用";
+Result.MemSize ="硬體資訊.記憶體大小 : /p1 MB";
+Result.MemSizeNA ="硬體資訊.記憶體大小 : 未使用";  
+Result.ImagePath ="驅動程式映射路徑 :/p1"  ;
+Result.ImagePathNA ="驅動程式映射路徑 : 未使用" ;
+Result.DriverVersion ="驅動程式版本 : /p1 ";
+Result.ProductVersion ="產品版本 : /p1"; 
+Result.ProductVersionNA ="產品版本  : 未使用"; 
+Result.FileVersion ="檔案版本 :/p1 ";
+Result.FileVersionNA ="檔案版本 : 未使用 ";
+Result.File ="檔案: /p1"; 
+Result.FileNA ="檔案 : 未使用";
+ResuletDate = "日期 : /p1";
+Result.Date = "日期 : 未使用";
+Result.UnknownAdapter="無效網路卡";
+Result.NetworkAdapter="網路卡: /p1";
+Result.Dlls ="預先安裝微軟 DLLs 和 DLL 的版期:"; 
+Result.DllsVersion ="/p1 : ";
+Result.DllsProductVersion ="產品版期 :/p1 ";
+Result.DllsFileVersion ="檔案 版期 :/p1 ";
+Result.DllsFile ="檔案 :/p1 " ;
+Result.DllsDate ="日期 :/p1" ;
+Result.Registry ="登錄變數 :" ;
+Result.Env = "環境變數 :" ;
+Result.BadOutputfile ="無法開啟檔案 /p1\n";
+Result.RemoveHFX="移除暫時修正檔中 ...\n";
+Result.RemoveHFXOK="暫時修正檔已成功移除 \n";
+Result.RemoveHFXKO="暫時修正檔移除失敗 \n";
+//----------------------------------------------------------------------------
+// Erreurs sur les Options
+//----------------------------------------------------------------------------
+Erroroption_o= "選項 -o 必須跟隨在檔案名稱之後 \n";
+Erroroption_CR="選項 -C and -R 不能同時使用 \n";
+Erroroption_CRcaa2="選項  -Ccaa2 and -Rcaa2 不能同時使用 \n";
+ErrorCreate="無法建立報告檔 /p1 \n";
+Erroroption_NoRkill="選項 -killprocess 只可以和 -R 或 -hfxR 選項共用 \n";
+Erroroptions="不好的選項 :\n";
+ErrorBadOption="/p1 是無效的選項 \n";
+Erroroption_su_C="您必須是系統管理者方可使用 -C 選項 \n";
+Erroroption_su_R="您必須是系統管理者方可使用 -R 選項 \n";
+Erroroption_su_Ccaa2="您必須是系統管理者方可使用  -Ccaa2 選項  \n";
+Erroroption_su_Rcaa2="您必須是系統管理者方可使用 -Rcaa2 選項  \n";
+Erroroption_I ="您不能同時使用 -I,-I1,-I2 or -I3 \n";
+//-----------------------------------------------------------------------------
+// Help
+//-----------------------------------------------------------------------------
+Help.Usage      ="使用 : \n";
+Help.CommandLineBatch="CATSoftwareMgtB [-h] [-L] [-I or -I1/-I2/-I3] [-P] [-C/-R][-noPOUpdate]  [-caaC/-caaR] [-caaI or -caaI1/-caaI2/-caaI3] [-hfxR] [-killprocess] [-o logfile]\n";
+Help.CommandLineNTBatch="CATSoftwareMgtB [-h] [-D] [-L] [-I or -I1/-I2/-I3] [-P] [-C/-R] [-noPOUpdate] [-caaC/-caaR]  [-caaI or -caaI1/-caaI2/-caaI3] [-hfxR] [-killprocess] [-o logfile]\n";
+Help.Dump       ="-D            : 完整輸出系統訊息";
+Help.Liste      ="-L            : 顯示已安裝組態或已安裝產品 \n";
+Help.Integ1     ="-I or -I1     : 整體性檢查 - Level 1 (只檢查控制檔案) \n";
+Help.Integ2     ="-I2           : 整體性檢查 - Level 2 (只檢查已存檔案)\n";
+Help.Integ3     ="-I3           : 整體性檢查 - Level 3 (檢查已存和有用的檔案)\n";
+Help.Prereqs    ="-P            : 預先安裝檢查 \n";
+Help.SP         ="-C/-R         : 執行確認或回復修改版本 \n";
+Help.SPCAA2     ="-caa2C/-caa2R : 執行CCA2 的確認或回復修改版本 \n";
+Help.IntegCAA1     ="-caaI or -caaI1: CAA 整體性檢查 - Level 1 (只檢查控制檔案) \n";
+Help.IntegCAA2     ="-caaI2         : CAA 整體性檢查 - Level 2 (只檢查已存檔案)\n";
+Help.IntegCAA3     ="-caaI3         : CAA 整體性檢查 - Level 3 (檢查已存和有用的檔案)\n";
+Help.Output     ="-o logfile    : 設定輸出記錄檔的名稱 (預設為 CATSoftwareMgt.log)\n";
+Help.Administrator="您必須是系統管理者方可使用 -C,-R,-Ccaa2 or -Rcaa2 選擇 \n";
+Help.OptionsIgnored="選擇 -caaC/-caaR 和 -caaI 或 -caaI1/-caaI2/-caaI3 將被忽格 如 CAA 未安裝 \n";
+help.killprocess  ="-killprocess  : 中止執行程序 \n";
+Help.Help         ="-h            : 顯示命令說明 \n";
+Help.noLCAUpdate  ="-noPOUpdate   : 如已安裝 ENOVIA LCA 將避免人員和組織資料庫被更新 \n";
+
+
+
+
+
+
+
+

@@ -1,0 +1,143 @@
+//====================================================================
+//  Messages for CATIA V5 Batch
+//  US Version
+//====================================================================
+ErrorDummy="內部錯誤 - Code= /p1";
+Warning="警告 : ";
+Error="錯誤   : ";
+LicenseKO1="/p1 不可用";
+LicenseKO2="目前組態不可使用批次作業";
+//====================================================================
+// Directory
+//====================================================================
+
+Directory.NotExist="目錄 \"/p1\" 不存在";
+Directory.NoWritePermission="Directory \"/p1\" does not match a write directory.
+          Change the access permission";
+Directory.NoReadPermission="Directory \"/p1\" does not match a read directory.
+          Change the access permission";
+Directory.Undefined="\"/p1\" Directory undefined.";
+Directory.NotSelected="You have to change it and launch the operation again.";
+Directory.IsaFile="\"/p1\" field is a not a directory but a file.";
+Directory.Conflict="Conflict beetween \"/p1\" file and \"-id /p2 \" directory";
+
+//====================================================================
+// Document
+//====================================================================
+Document.NoDomain="No Document typ can be reached
+No document can be selected on the site ... Check your environnement
+Batch aborted";
+Document.NoDocTyp="No Document typ defined
+Document selected can not be attached to a document type
+Valid document type on the site are /p1
+Batch aborted";
+
+Document.NotADoc="Document \"/p1\" is not a CATIA V5 Document";
+Document.NotACatiaDoc="Following list of doc are not CATIA V5 documents and are not supported by the application ..";
+Document.DocNotFound="Document \"/p1\" does not exist or can not be found ";
+Document.NoReadPermission="No Read access on Document /p1";
+Document.AlreadySelected="Document \"/p1\" already selected";
+Document.BadExtension="Document \"/p1\" invalid type of document";
+Document.GoodExtension="\t  Supported document Types are :";
+Document.ProcessKo="Document can not be processed ....";
+Document.ProcessoK="Document successfully processed ....";
+Document.NoWritePermission="No Write access on Document /p1";
+Document.InUse="Document \"/p1\" already in use by another application";
+Document.NoDoc="No Document meeting selection criteria";
+Document.ReadError="Document \"/p1\" can not be read";
+Document.WriteError="Document \"/p1\" can not be written";
+Document.Write="Document \"/p1\" successfully written";
+Document.NotModified="Document \"/p1\" not modified by operation";
+Document.AlreadyExist="Document \"/p1\" already exists and can not be overwritten
+Move the document or select the Replace option";
+Document.Overwritten="Document \"/p1\" already exists and has been overwritten";
+Document.CreationError="Document \"/p1\" cannot be created
+check the name of the document does not contain any non supported character";
+/////////////////////////////////////////////////////////////////////////////////
+// New documents ////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////
+Document.NewDocNoRefOverwrite="New document \"/p1\" cannot overwrite its reference
+Change the target directory or rename the new document";
+Document.NewDocAlreadyExist="New document \"/p1\" already exists in the target directory and cannot be overwritten
+       change the target directory or,
+       rename the new document, or
+       select the Replace option, or
+       rename or move the previous document in another directory";
+
+Document.NewDocNoWritePermission="New Document /p1 can not be created in the target directory
+	check the write permission on the target directory";
+Document.NewDocOverwritten="New document \"/p1\" already exists and has been overwritten";
+Document.NewDocBackuped="A previous version of the document has been backuped in  \"/p1\" ";
+Document.NewDocBackupAbort="A previous version of the document cannot be backuped in  \"/p1\"";
+Document.NewDocPowerCopied="Non modified document \"/p1\" has been successfully powercopied";
+Document.NewDocWrite="New document \"/p1\" successfully created";
+Document.NewDocWriteError="New document \"/p1\" cannot be created";
+// ----------------------------------------------------------------------------
+// Messages for Input File  ---------------------------------------------------
+// ----------------------------------------------------------------------------
+InputFile.Inexistant="Warning: Input file \"/p1\" does not exist";
+InputFile.NoReadAccess="Warning: No Read access on the input file /p1
+\t  File cannot be opened";
+
+// ----------------------------------------------------------------------------
+// Messages for Parameters ----------------------------------------------------
+// ----------------------------------------------------------------------------
+InvalidParameter.Information="You have to change invalid parameters and launch the operation again.";
+Parameter.Invalid="Warning: \"/p1\" parameter  is invalid";
+Parameter.Doubly="\t  Parameter already defined or invalid combination";
+Parameter.Unknown="Warning: \"/p1\" parameter is unknow
+\t  Use '-h' option to consult the list of known parameters";
+Parameter.Skipped="\t  Statement skipped";
+Parameter.Missing="Error: \"/p1\" parameter is missing 
+\t  Mandatory parameter is missing or badly informed
+\t  Use '-h' option to consult the list of mandatory parameters";
+
+//====================================================================
+// Messages for ReportFile ----------------------------------------------------
+//====================================================================
+ReportFile.Exist="Warning: Report File \"/p1\" already exists and will be overwritten";
+ReportFile.NoWriteAccess="Warning: Report File \"/p1\" already exists but is read-only
+\t  Report will be written in standard output";
+ReportFile.NoDir="Warning: Report File \"/p1\" cannot be created
+\t  Directory /p2 does not exist
+\t  Statement skipped - Report will be written in standard output";
+ReportFile.DirNoWriteAccess="Warning: Report File \"/p1\" cannot be created
+\t  Directory /p2 exists but is read only
+\t  Statement skipped - Report will be written in standard output";
+ReportFile.CurDirNoWriteAccess="Warning: Report File \"/p1\" cannot be created
+\t  Current Directory exists but is read only
+\t  Statement skipped - Report will be written in standard output";
+//====================================================================
+// Macro
+//====================================================================
+Macro.IsaDir="\"/p1\" field is a not a Macro but a directory.";
+Macro.MacroNotFound="Macro \"/p1\" does not exist or cannot be found ";
+Macro.NoReadPermission="No Read access on Macro /p1";
+Macro.MacroReadError="Macro \"/p1\" cannot be read";
+Macro.BadExtension="Macro \"/p1\" invalid type of Macro";
+Macro.InUse="Macro \"/p1\" already in use by another application";
+Macro.AlreadySelected="Macro was already defined
+selection of Macro \"/p1\" previously defined is skipped";
+Macro.NotSelected="Macro cannot be selected ....";
+Macro.Successful="Macro: execution successful";
+Macro.Aborted="Macro: execution aborted RC=/p1";
+Macro.NoSelection="No macro selected";
+
+//====================================================================
+// XmlFile
+//====================================================================
+XmlFile.IsaDir="\"/p1\" field is a not a XmlFile but a directory.";
+XmlFile.XmlFileNotFound="XmlFile \"/p1\" does not exist or cannot be found ";
+XmlFile.NoReadPermission="No Read access on XmlFile /p1";
+XmlFile.NoWritePermission="No Write access on XmlFile /p1";
+XmlFile.XmlFileReadError="XmlFile \"/p1\" cannot be read";
+XmlFile.XmlFileWriteError="XmlFile \"/p1\" cannot be written";
+XmlFile.BadExtension="XmlFile \"/p1\" invalid type of XmlFile";
+XmlFile.InUse="XmlFile \"/p1\" already in use by another application";
+XmlFile.AlreadySelected="XmlFile was already defined
+selection of XmlFile \"/p1\" previously defined is skipped";
+XmlFile.NotSelected="XmlFile cannot be selected ....";
+XmlFile.NoSelection="No XmlFile selected ....";
+XmlFile.Overwritten="XmlFile \"/p1\" already exists and will be overwritten";
+
+

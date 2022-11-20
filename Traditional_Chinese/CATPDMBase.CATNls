@@ -1,0 +1,32 @@
+CheckDocSaveTitle="指向這個的文件還沒存檔"; 
+CheckDocSaveQuestion="你總是要儲存這個文件嗎?";  
+ERR_PBInvalidCheckBBPublications = "為了要處理一組資料 並儲存在 ENOVIA 中, 您必須在 Black-Box 文件載入發行連結命令.";
+ERR_XMLParseError         = "Error while parsing /p1 \nLine: /p2 Column: /p3 Message: /p4\nSave to Enovia will not work after this.\nPlease modify the xml file and relaunch your session.";
+ERR_InvalidXMLFile = " XML 檔案與 DTD 檔案不一致.";
+ERR_FailDomainEvaFromAttr = "Can not get Enovia Customized Domain of part /p1 from its attribute /p2 as specified  by attribute mapping file /p3.";
+ERR_InValidDomainDef      = "The number of Domain Definitions should be 2. Modify the number of DomainDef node in the XML File";
+ERR_NullDefaultValue     = "Default Value is not defined for the node \n</p1 /p2=/p3 /p4 /p5=/p6>";
+ERR_WrongDefaultValue    = "Default Value is wrong for the node </p1 /p2=/p3 /p4 /p5=/p6>.\nRectify the error from xml file and restart CATIA.";
+ERR_FilePathModified     = "The xml file /p1 has been moved or renamed.\nCheck if the file is present or has read access. Attribute Mapping will not be done.";
+ERR_EditSystemAttribute   = "A System Attribute cannot have Editable tag as Yes.\n </p1> \nThis is not allowed in XML File.\nSave to Enovia will not work after this.\nPlease modify the xml file and relaunch your session.";
+
+ERR_MultiNamingError            = "You have already /p1 documents named /p2.";
+
+WRN_NoDefaultValueInSave = "Default value for the attribute /p1 in /p2 is not present in the Xml file.\nAttribute /p1 will not be Saved";
+WRN_NonUENotInBothAppl   = "For Attribute /p1 corresponding CATIA information should be present.\nSkipping /p1 Attribute.";
+
+ForceExtractSaveTitle="Extract Save in VPM on an instanciated document. Products which instanciate this document will not be saved."; 
+ForceExtractSaveQuestion="您要經常儲存此文件嗎 ?";  
+
+WRN_PSProductSpecAreInSession = "Assembly containing ProductSpec has arrived in session. Only Move operation on this kind of Assembly will be saved back to ENOVIA LCA.";
+
+ERR_TECHPACK_GetPathDatumAndStatus_failed = "Error when instrospecting the PRDLink. The Link is empty or NotUpToDate.";
+
+WRN_NoDefaultValueAndEnoAttrBlank = "The attribute /p1 has no default value in the Xml file and is blank in ENOVIA. Therefore it will not be imported and won't be modifiable in CATIA session.";
+
+Stat_Creation = "建立";
+Stat_Modification = "修改";
+Stat_Replace = "更換";
+Stat_Delete = "刪除";
+Stat_Doc_Creation_Modification = "文件 建立/修改"; 
+ 

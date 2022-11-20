@@ -1,0 +1,298 @@
+// COPYRIGHT DASSAULT SYSTEMES 
+//----------------------------
+
+
+// NLS error messages for the scripting component. 
+
+SourceLabel = "資源: ";
+DescriptionLabel = "敘述: ";
+HelpfileLabel = "說明檔: ";
+//CodeLabel = "錯誤碼: ";
+StatementLabel = "陳述: ";
+LineLabel = "行: ";
+ColumnLabel = "欄: ";
+
+EditPrompt = "您現在要編輯巨集程式碼嗎 ?";
+
+ScriptingERR_0000 = "內部錯誤. 傳回代碼等於 /p1.";
+
+ScriptingERR_1000.Request = "執行這個執行緒 (script)   \"/p1\".";
+ScriptingERR_1000.Diagnostic = "執行緒 (script) 進入點未發現.";
+ScriptingERR_1000.Advice = "定義 \"CATMain\" 程序那個將是執行緒 (script) 項目進入點.";
+
+ScriptingERR_1001.Request = "執行這個執行緒 \"/p1\".";
+ScriptingERR_1001.Diagnostic = "提供的參數不與功能期望的那些相匹配.";
+ScriptingERR_1001.Advice = "更新你的功能簽名以與參數中的路徑相匹配.";
+
+ScriptingERR_1002.Request = "執行這個執行緒 \"/p1\".";
+ScriptingERR_1002.Diagnostic = "/p1 執行緒引擎已經傳回以下的錯誤: \n/p2";
+ScriptingERR_1002.Advice = "查看語言參考指南或 V5 自動 APIs 文件說名.";
+
+ScriptingERR_1003.Request = "執行這個執行緒 \"/p1\".";
+ScriptingERR_1003.Diagnostic = "以下類型資料庫無法適當讀取: \n/p1.";
+ScriptingERR_1003.Advice = "檢查你執行環境的連接和或改變外部 typelibs 設定在 \"Scripting\" 選擇面板中.";
+
+ScriptingERR_1004.Request = "執行這個執行緒 \"/p1\".";
+ScriptingERR_1004.Diagnostic = " /p1 執行緒引擎沒有適當安裝.";
+ScriptingERR_1004.Advice = "安裝執行緒引擎且再次執行執行緒.";
+
+ScriptingERR_1005.Request = "執行這個執行緒 \"/p1\".";
+ScriptingERR_1005.Diagnostic = "無法找到進入點.";
+ScriptingERR_1005.Advice = "在公共 java 等級定義一公共靜態 \"CATMain\" 方式來輸入程序的進入點.";
+
+ScriptingERR_1007.Request = "執行這個執行緒 \"/p1\".";
+ScriptingERR_1007.Diagnostic = "具有引數的 \"CATMain\" 程序無法批次執行.";
+ScriptingERR_1007.Advice = "交談式執行執行緒或移除引數.";
+
+ScriptingERR_1008.Request = "執行這個執行緒 \"/p1\".";
+ScriptingERR_1008.Diagnostic = "目前的安全等級不允許執行任何的巨集.";
+ScriptingERR_1008.Advice = "因為輸出環境變數 CATMacroSecuritySystem 導致未執行執行緒 \"/p1\".";
+
+ScriptingERR_1100.Request = "重新命名執行緒 \"/p1\" as \"/p2\".";
+ScriptingERR_1100.Diagnostic = "這個名稱與已經存在的執行緒相匹配.";
+ScriptingERR_1100.Advice = "刪除 \"/p1\" 或選擇另一個執行緒名稱.";
+
+ScriptingERR_1101.Request = "重新命名執行緒  \"/p1\" as \"/p2\".";
+ScriptingERR_1101.Diagnostic = "副檔名 \"/p1\" 無效.";
+ScriptingERR_1101.Advice = "寫入 /p1 的執行緒必須有一個 \"/p2\" 副檔名.";
+
+ScriptingERR_1102.Request = "重新命名執行緒  \"/p1\" as \"/p2\".";
+ScriptingERR_1102.Diagnostic = "執行緒名稱  \"/p1\" 無效.";
+ScriptingERR_1102.Advice = "試試另一個執行緒名稱.";
+
+ScriptingERR_1103.Request = "重新命名執行緒  \"/p1\" as \"/p2\".";
+ScriptingERR_1103.Diagnostic = "寫入執行緒時一個錯誤發生.";
+ScriptingERR_1103.Advice = "檢查執行緒的權限.";
+
+ScriptingERR_1110.Request = "建立執行緒 \"/p1\".";
+ScriptingERR_1110.Diagnostic = "這個名稱與已經存在的執行緒相匹配.";
+ScriptingERR_1110.Advice = "刪除 \"/p1\" 或選擇另一個執行緒名稱.";
+
+ScriptingERR_1111.Request = "建立執行緒  \"/p1\".";
+ScriptingERR_1111.Diagnostic = "副檔名 \"/p1\" 無效.";
+ScriptingERR_1111.Advice = "寫入 /p1 的執行緒必須有一個 \"/p2\" 副檔名.";
+
+ScriptingERR_1112.Request = "建立執行緒  \"/p1\".";
+ScriptingERR_1112.Diagnostic = "執行緒名稱無效.";
+ScriptingERR_1112.Advice = "試試另一個執行緒名稱.";
+
+ScriptingERR_1113.Request = "建立執行緒  \"/p1\".";
+ScriptingERR_1113.Diagnostic = "寫入執行緒時一個錯誤發生.";
+ScriptingERR_1113.Advice = "檢查執行緒的權限.";
+
+ScriptingERR_1120.Request = "刪除執行緒 \"/p1\".";
+ScriptingERR_1120.Diagnostic = "刪除執行緒時一個錯誤發生.";
+ScriptingERR_1120.Advice = "檢查執行緒的權限.";
+
+ScriptingERR_1130.Request = "編輯執行緒 \"/p1\".";
+ScriptingERR_1130.Diagnostic = "編輯執行緒時一個錯誤發生.";
+ScriptingERR_1130.Advice = "檢查執行緒的權限.";
+
+ScriptingERR_1131.Request = "編輯執行緒  \"/p1\".";
+ScriptingERR_1131.Diagnostic = "寫入執行緒時一個錯誤發生.";
+ScriptingERR_1131.Advice = "檢查執行緒的權限.";
+
+ScriptingERR_1132.Request = "編輯執行緒  \"/p1\".";
+ScriptingERR_1132.Diagnostic = "編輯器 /p1 載入失敗.";
+ScriptingERR_1132.Advice = "檢查編輯器的權限.";
+
+ScriptingERR_1133.Request = "編輯執行緒  \"/p1\".";
+ScriptingERR_1133.Diagnostic = "執行緒 /p1 已經傳回錯誤碼 /p2.";
+ScriptingERR_1133.Advice = "查看編輯器手冊中錯誤代碼的描述.";
+
+ScriptingERR_1140.Request = "開啟巨集資料庫 \"/p1\".";
+ScriptingERR_1140.Diagnostic = "開啟資料庫時發生錯誤.";
+ScriptingERR_1140.Advice = "請確定路徑存在和檢查資料庫存取權.";
+
+ScriptingERR_1141.Request = "開啟巨集 \"/p1\".";
+ScriptingERR_1141.Diagnostic = "開啟巨集時發生錯誤.";
+ScriptingERR_1141.Advice = "請確定路徑存在和檢查巨集存取權.";
+
+ScriptingERR_1142.Request = "開啟巨集資料庫 \"/p1\".";
+ScriptingERR_1142.Diagnostic = "開啟資料庫時發生錯誤. VBA 未正確安裝.";
+ScriptingERR_1142.Advice = "請確定您的 VBA 已正確安裝.";
+
+ScriptingERR_1143.Request = "開啟巨集資料庫 \"/p1\".";
+ScriptingERR_1143.Diagnostic = "開啟資料庫時發生錯誤. VBA 未正確安裝.";
+ScriptingERR_1143.Advice = "請確定您的 VBA 已正確安裝. \n 您可使用管理員身份執行 V5RegServer 來登錄.";
+
+ScriptingERR_1150.Request = "建立 VBA 計劃 \"/p1\".";
+ScriptingERR_1150.Diagnostic = "計劃已經存在.";
+ScriptingERR_1150.Advice = "選擇另一個計劃名稱和移除現存的計劃.";
+
+ScriptingERR_1151.Request = "建立 VBA 計劃 \"/p1\".";
+ScriptingERR_1151.Diagnostic = "計劃建立已經失敗.";
+ScriptingERR_1151.Advice = "確認計劃路徑有效和檢查目錄的權限.";
+
+ScriptingERR_1152.Request = "建立 VBA 計劃 \"/p1\".";
+ScriptingERR_1152.Diagnostic = "副檔名 \"/p1\" 無效.";
+ScriptingERR_1152.Advice = "/p1 計劃必須結束於 \"/p2\" 副檔名.";
+
+ScriptingERR_1153.Request = "建立 VBA 計劃 \"/p1\".";
+ScriptingERR_1153.Diagnostic = "無法建立計劃. VBA 未正確安裝.";
+ScriptingERR_1153.Advice = "請確定您的 VBA 已正確安裝.";
+
+ScriptingERR_1154.Request = "建立 VBA 計劃 \"/p1\".";
+ScriptingERR_1154.Diagnostic = "無法建立計劃. VBA 未正確安裝.";
+ScriptingERR_1154.Advice = "請確定您的 VBA 已正確安裝. \n 您可使用管理員身份執行 V5RegServer 來登錄.";
+
+ScriptingERR_1160.Request = "刪除表格 \"/p1\".";
+ScriptingERR_1160.Diagnostic = "刪除表格時一個錯誤發生.";
+ScriptingERR_1160.Advice = "檢查表格的權限.";
+
+ScriptingERR_1170.Request = "重新命名表格 \"/p1\" 為 \"/p2\".";
+ScriptingERR_1170.Diagnostic = "這個名稱與已經存在的表格相匹配.";
+ScriptingERR_1170.Advice = "刪除 \"/p1\" 或選擇另一個表格名稱.";
+
+ScriptingERR_1172.Request = "重新命名表格 \"/p1\" 為 \"/p2\".";
+ScriptingERR_1172.Diagnostic = "表格名稱 \"/p1\" 無效.";
+ScriptingERR_1172.Advice = "試試另一個表格名稱.";
+
+ScriptingERR_1173.Request = "重新命名表格 \"/p1\" 為 \"/p2\".";
+ScriptingERR_1173.Diagnostic = "寫入表格時一個錯誤發生.";
+ScriptingERR_1173.Advice = "檢查表格的權限.";
+
+ScriptingERR_1180.Request = "建立巨集目錄 \"/p1\".";
+ScriptingERR_1180.Diagnostic = "目錄已經存在.";
+ScriptingERR_1180.Advice = "選擇另一個目錄名稱或移除現存的目錄.";
+
+ScriptingERR_1181.Request = "建立巨集目錄 \"/p1\".";
+ScriptingERR_1181.Diagnostic = "目錄建立已經失敗.";
+ScriptingERR_1181.Advice = "確認目錄路徑有效和檢查目錄的權限.";
+
+ScriptingERR_1190.Request = "顯示 VBA IDE.";
+ScriptingERR_1190.Diagnostic = "顯示 VBA IDE 時發生錯誤. VBA 未正確安裝.";
+ScriptingERR_1190.Advice = "確認 VBA 安裝完整且正確.";
+
+ScriptingERR_1191.Request = "顯示 VBA IDE.";
+ScriptingERR_1191.Diagnostic = "顯示 VBA IDE 時發生錯誤. VBA 未正確安裝.";
+ScriptingERR_1191.Advice = "請確定您的 VBA 已正確安裝. \n 您可使用管理員身份執行 V5RegServer 來登錄.";
+
+ScriptingERR_1200.Request = "修改執行緒設定";
+ScriptingERR_1200.Diagnostic = "存取設定檔時一個錯誤發生.";
+ScriptingERR_1200.Advice = "檢查 Scripting.CATSettings 檔的權限.";
+
+ScriptingERR_1201.Request = "檢查 jdk 路徑";
+ScriptingERR_1201.Diagnostic = "未設定用來顯現 java 巨集的 jdk 路徑.";
+ScriptingERR_1201.Advice = "請選擇正確安裝 jdk 版本 1.2 或更新版的目錄 \n 使用工具組 -> 選擇中的 一般 / 巨集中來設定.";
+
+ScriptingERR_1202.Request = "檢查 jdk 路徑";
+ScriptingERR_1202.Diagnostic = "所選 jdk 路徑 '/P1' 不正確 : '/P2' 檔案未找到.";
+ScriptingERR_1202.Advice = "請選擇正確安裝 jdk 版本 1.2 或更新版的目錄 \n 使用工具組 -> 選擇中的 一般 / 巨集中來設定.";
+
+ScriptingERR_1203.Request = "載入 Java 虛擬機器時發生錯誤.";
+ScriptingERR_1203.Diagnostic = " Java 虛擬機器因為 jdk 路徑 '/P1' 無法載入.";
+ScriptingERR_1203.Advice = "請檢查您的安裝 jdk.";
+
+RestartNeeded.Title= "更改 jdk 路徑";
+RestartNeeded.Message="警告 : Java 虛擬機器已與它 jdk 安裝執行中. \n 您必須重開應用程式來使用 jdk '/P1'.";
+
+ScriptingERR_1300.Request = "讀取程序性質";
+ScriptingERR_1300.Diagnostic = "因下列錯誤, 程序性質檔案毀損 :\n/p1";
+ScriptingERR_1300.Advice = "更正程序性質檔案.";
+
+ScriptingERR_1400.Request = "執行執行緒批次命令 \"CNEXT -macro /p1\".";
+ScriptingERR_1400.Diagnostic = "開啟檔案 \"/p1\" 時發生錯誤.";
+ScriptingERR_1400.Advice = "請確定路徑存在並檢查巨集權限.";
+
+ScriptingERR_1401.Request = "執行執行緒批次命令 \"CNEXT -macro /p1\".";
+ScriptingERR_1401.Diagnostic = "檔案 \"/p1\" 是一個目錄.";
+ScriptingERR_1401.Advice = "請指定不是目錄的檔案.";
+
+ScriptingERR_1402.Request = "執行執行緒批次命令 \"CNEXT -macro /p1\".";
+ScriptingERR_1402.Diagnostic = "文法不支援.";
+ScriptingERR_1402.Advice = "用法: \n CNEXT -macro X.txt -- 重新示檔案 X.txt (CATScript file)\nCNEXT -macro X.CATScript -- 重新示檔案 X.CATScript (CATScript file)\nCNEXT -macro X.catvbs -- 重新示檔案 X.catvbs (VBScript file)\nCNEXT -macro X.xml Y.xml [-remote] -- Replays the batch described by X.xml, with parameter file Y.xml\nCNEXT -macro X.catvba Y -- Replays macro Y in the VBA project X.catvba\nCNEXT -macro X.CATPart Y -- Replays macro Y in the V5 document X.CATPart\n";
+
+ScriptingERR_1403.Request = "執行執行緒批次命令 \"CNEXT -macro /p1\".";
+ScriptingERR_1403.Diagnostic = "未在 VBA 計劃中指定執行巨集.";
+ScriptingERR_1403.Advice = "用法: \nCNEXT -macro X.catvba Y -- Replays macro Y in the VBA project X.catvba.\n";
+
+ScriptingERR_1404.Request = "執行執行緒批次命令 \"CNEXT -macro /p1\".";
+ScriptingERR_1404.Diagnostic = "開啟 VBA 計劃 /p1 時失敗.";
+ScriptingERR_1404.Advice = "請確定計劃存在並檢查計劃權限.";
+
+ScriptingERR_1405.Request = "執行執行緒批次命令 \"CNEXT -macro /p1\".";
+ScriptingERR_1405.Diagnostic = "未在 VBA 計劃 /p2 中找到巨集 /p1 .";
+ScriptingERR_1405.Advice = "請檢查巨集名稱.";
+
+ScriptingERR_1406.Request = "執行執行緒批次命令 \"CNEXT -macro /p1\".";
+ScriptingERR_1406.Diagnostic = "未指定在 V5 文件中執行的巨集.";
+ScriptingERR_1406.Advice = "用法: \nCNEXT -macro X.CATPart Y -- Replays macro Y in the V5 document X.CATPart.\n";
+
+ScriptingERR_1407.Request = "執行執行緒批次命令 \"CNEXT -macro /p1\".";
+ScriptingERR_1407.Diagnostic = "未在 V5 文件 /p2 中找到巨集 /P1.";
+ScriptingERR_1407.Advice = "請檢查巨集名稱.";
+
+ScriptingERR_1408.Request = "執行執行緒批次命令 \"CNEXT -macro /p1\".";
+ScriptingERR_1408.Diagnostic = "無效批次說明檔案 \"/p1\".";
+ScriptingERR_1408.Advice = "請檢查批次檔案內容說明.";
+
+ScriptingERR_1409.Request = "執行執行緒批次命令 \"CNEXT -macro /p1\".";
+ScriptingERR_1409.Diagnostic = "無效批次參數檔案 \"/p1\".";
+ScriptingERR_1409.Advice = "用法: \nCNEXT -macro X.xml Y.xml [-remote] -- Replays the batch described by X.xml, with parameter file Y.xml\n";
+
+ScriptingERR_1410.Request = "執行執行緒批次命令 \"CNEXT -macro /p1\".";
+ScriptingERR_1410.Diagnostic = "VBA 未安裝.";
+ScriptingERR_1410.Advice = "安裝 VBA 或使用其它程式語言.";
+
+ScriptingERR_1500.Request = "開始 Java RMI 伺服器呼叫 /p1.";
+ScriptingERR_1500.Diagnostic = "開始 RMI 登錄時發生錯誤. 內部錯誤為 /p1";
+ScriptingERR_1500.Advice = "請檢查 RMI 登錄服務埠並再試一次.";
+
+ScriptingERR_1501.Request = "開始 Java RMI 伺服器呼叫 /p1.";
+ScriptingERR_1501.Diagnostic = "開始 RMI 登錄時發生錯誤. 內部錯誤為 /p1";
+ScriptingERR_1501.Advice = "請再嚐試開啟伺服器.";
+
+ScriptingERR_1502.Request = "停止 Java RMI 伺服器呼叫 /p1.";
+ScriptingERR_1502.Diagnostic = "開始 RMI 停止登錄時發生錯誤. 內部錯誤為 /p1";
+ScriptingERR_1502.Advice = "請再嚐試停止伺服器.";
+
+// For XML property parser integration
+PublicIdLabel = "公共 ID: ";
+SystemIdLabel = "系統 ID: ";
+MessageLabel = "訊息: ";
+SeverityLabel = "嚴重性: ";
+Severity1 = "警告";
+Severity2 = "錯誤";
+Severity3 = "嚴重錯誤";
+
+// Custom error messages for CATIASystemService::ExecuteScript
+
+ScriptingERR_1600.Request = "執行程序";
+ScriptingERR_1600.Diagnostic = "內部錯誤";
+ScriptingERR_1600.Advice = "";
+
+ScriptingERR_1601.Request = "執行程序 (/p1, /p2, /p3)";
+ScriptingERR_1601.Diagnostic = "內部錯誤";
+ScriptingERR_1601.Advice = "";
+
+ScriptingERR_1602.Request = "執行程序 (/p1, /p2, /p3)";
+ScriptingERR_1602.Diagnostic = "未知副程式資料庫 \"/p1\"";
+ScriptingERR_1602.Advice = "";
+
+ScriptingERR_1603.Request = "執行程序 (/p1, /p2, /p3)";
+ScriptingERR_1603.Diagnostic = "未知副程式 \"/p1\"";
+ScriptingERR_1603.Advice = "";
+
+ScriptingERR_1604.Request = "執行程序 (/p1, /p2, /p3)";
+ScriptingERR_1604.Diagnostic = "未知副程式功能 \"/p1\"";
+ScriptingERR_1604.Advice = "";
+
+ScriptingERR_1605.Request = "執行程序 (/p1, /p2, /p3)";
+ScriptingERR_1605.Diagnostic = "未知參數陣列大小";
+ScriptingERR_1605.Advice = "";
+
+ScriptingERR_1606.Request = "執行程序 (/p1, /p2, /p3)";
+ScriptingERR_1606.Diagnostic = "執行錯誤 \n(/p1)";
+ScriptingERR_1606.Advice = "";
+
+// Warning messages
+
+MarshalDuplicateNameWarning = "警告 : 巨集 '/p1' 已存在文件中. 巨集已更名成 '/p2'.";
+
+// Special message for VBA errors in batch
+
+ScriptingERR_1010.Request = "/p1";
+ScriptingERR_1010.Diagnostic = "VBA 執行程式錯誤.";
+ScriptingERR_1010.Advice = "請在交談式執行巨集並偵錯.";
+

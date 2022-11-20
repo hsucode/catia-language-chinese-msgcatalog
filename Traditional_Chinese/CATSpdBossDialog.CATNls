@@ -1,0 +1,83 @@
+// COPYRIGHT ImpactXoft 2003
+//===================================================================
+Title = "凸包";
+
+MainFrameId.ProfileFrameId.ProfileSelectionLabelId.Title = "斷面或曲面:  ";
+
+MainFrameId.PropFrameId.PropTabContainerId.DraftPropTabPageId.Title = "推拔";
+MainFrameId.PropFrameId.PropTabContainerId.FilletPropTabPageId.Title = "圓角";
+
+MainFrameId.PropFrameId.PropTabContainerId.LimitPropTabPageId.DistLimitFrameId.DistFirstLimitFrameId.Title = "Ceiling";
+MainFrameId.PropFrameId.PropTabContainerId.LimitPropTabPageId.DistLimitFrameId.DistSecondLimitFrameId.Title = "開啟中";
+MainFrameId.PropFrameId.PropTabContainerId.LimitPropTabPageId.DistLimitFrameId.DistMiscFrameId.DistMirrorExtentCheckButtonId.Title = "鏡向延伸";
+MainFrameId.PropFrameId.PropTabContainerId.LimitPropTabPageId.DistLimitFrameId.DistMiscFrameId.DistReverseDirecPushButtonId.Title = "逆轉方向";
+
+MainFrameId.PropFrameId.PropTabContainerId.FilletPropTabPageId.FilletFrameId.BlankLineLabel007Id.Title = "  ";
+MainFrameId.PropFrameId.PropTabContainerId.FilletPropTabPageId.FilletFrameId.FilletLateralRadiusCheckButtonId.Title =    "側向半徑:";
+MainFrameId.PropFrameId.PropTabContainerId.FilletPropTabPageId.FilletFrameId.FilletFirstLimitRadiusCheckButtonId.Title = "Ceiling 半徑:";
+MainFrameId.PropFrameId.PropTabContainerId.FilletPropTabPageId.FilletFrameId.FilletSecondLimitRadiusCheckButtonId.Title = "第二半徑:";
+
+MainFrameId.WallFrameId.Title = "牆";
+
+NoSelectionId = "未選擇";
+
+DistLimitTypeThroughId= "至薄殼:";
+
+DirectionTabPageId = "方向";
+DistanceTabPageId = "距離";
+
+DraftApplyFromFirstLimitId   = "Ceiling";
+DraftApplyFromSecondLimitId  = "開啟";
+
+//===================================================================
+// LongHelp
+//===================================================================
+
+MainFrameId.ProfileFrameId.LongHelp =
+"Specifies the boundary profile.";
+
+MainFrameId.PropFrameId.PropTabContainerId.LimitPropTabPageId.DistLimitFrameId.DistFirstLimitFrameId.LongHelp =
+"Specifies the limit defined in the
+direction of extrusion.";
+
+MainFrameId.PropFrameId.PropTabContainerId.LimitPropTabPageId.DistLimitFrameId.DistSecondLimitFrameId.LongHelp =
+"Specifies the limit opposite to the
+direction of extrusion.";
+
+MainFrameId.PropFrameId.PropTabContainerId.LimitPropTabPageId.DistLimitFrameId.DistMiscFrameId.DistMirrorExtentCheckButtonId.LongHelp =
+"Mirrors the extrusion length.";
+
+MainFrameId.PropFrameId.PropTabContainerId.LimitPropTabPageId.DistLimitFrameId.DistMiscFrameId.DistReverseDirecPushButtonId.LongHelp =
+"Reverses the direction of extrusion
+indicated by the arrow.";
+
+MainFrameId.WallFrameId.LongHelp =
+"Wall parameters.";
+
+MainFrameId.PropFrameId.PropTabContainerId.FilletPropTabPageId.FilletFrameId.FilletLateralRadiusCheckButtonId.LongHelp =
+"Indicates that lateral edges will be filleted.";
+
+MainFrameId.PropFrameId.PropTabContainerId.FilletPropTabPageId.FilletFrameId.FilletFirstLimitRadiusCheckButtonId.LongHelp =
+"Indicates that the capping face at ceiling
+limit will be filleted.";
+
+
+//===================================================================
+// Helping picture
+//===================================================================
+
+NoConstWall_DirInCeilingTextId = "Ceiling";
+NoConstWall_DirInOpeningTextId = "Opening";
+NoConstWall_DirInWallTextId = "牆";
+
+WithConstWall_DirInCeilingTextId = "Ceiling";
+WithConstWall_DirInOpeningTextId = "Opening";
+WithConstWall_DirInWallTextId = "牆";
+
+NoConstWall_DirOutCeilingTextId = "Ceiling";
+NoConstWall_DirOutOpeningTextId = "Opening";
+NoConstWall_DirOutWallTextId = "牆";
+
+WithConstWall_DirOutCeilingTextId = "Ceiling";
+WithConstWall_DirOutOpeningTextId = "Opening";
+WithConstWall_DirOutWallTextId = "牆";

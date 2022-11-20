@@ -1,0 +1,71 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwDimensionFrame
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    
+// DATE        :    26.11.1999
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    Tools/Option du Drafting
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//	01		   lgk   15.10.2002  Revision
+//=====================================================================================
+
+TitleGenFil="圓角產生組態";
+
+frameButtonGenFil.HeaderFrame.Global.Title="設定圓角產生";
+frameButtonGenFil.HeaderFrame.Global.LongHelp="設定圓角產生.
+讓您設定圓角產生.";
+
+frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioBoundaries.Title="邊界";
+frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioBoundaries.LongHelp="邊界
+定義 邊界圓角 是否顯示在視圖上.";
+
+frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioSymbo.Title="鏈結";
+frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioSymbo.LongHelp="鏈結
+定義 邊界圓角 是否顯示在視圖上.";
+
+frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioProjEd.Title="投影原始邊界";
+frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioProjEd.LongHelp="投影原始邊界
+定義 投影原始邊界 是否顯示在視圖上.";
+
+frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioOrigEd.Title="近似原始邊界";
+frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioOrigEd.LongHelp="近似原始邊界
+定義 原始邊界 是否顯示在視圖上.";
+
+
+
+TitleProject3DPts=" 3D 點投影";
+
+frameButtonProject3DPts.HeaderFrame.Global.Title="投影 3D 點群";
+frameButtonProject3DPts.HeaderFrame.Global.LongHelp="投影 3D 點群
+指定投影 3D 點繼承顯示符號或所選符號.";
+
+frameButtonProject3DPts.IconAndOptionsFrame.OptionsFrame.frameRadio3DSymbol.frameRadio3DSymbollocked.radioSymbolInherit.Title="3D 符號繼承";
+frameButtonProject3DPts.IconAndOptionsFrame.OptionsFrame.frameRadio3DSymbol.frameRadio3DSymbollocked.radioSymbolInherit.LongHelp="3D 符號繼承
+顯示繼承 3D 符號.";
+frameButtonProject3DPts.IconAndOptionsFrame.OptionsFrame.frameRadio3DSymbol.frameRadio3DSymbollocked.radioSymbol.Title="符號";
+frameButtonProject3DPts.IconAndOptionsFrame.OptionsFrame.frameRadio3DSymbol.frameRadio3DSymbollocked.radioSymbol.LongHelp="符號
+顯示所選符號.";
+frameButtonProject3DPts.IconAndOptionsFrame.OptionsFrame.frameRadio3DSymbol.frameRadio3DSymbollocked.comboSymbol.Title="符號";
+frameButtonProject3DPts.IconAndOptionsFrame.OptionsFrame.frameRadio3DSymbol.frameRadio3DSymbollocked.comboSymbol.LongHelp="符號
+顯示所選符號.";
+
+TitleWireFrameMod="3D 線架構投影模式";
+
+frmWireFrameMod.HeaderFrame.Global.Title="投影 3D 線架構";
+frmWireFrameMod.HeaderFrame.Global.LongHelp="投影 3D 線架構
+指定投影 3D 線架構是隱藏的或永遠可見.";
+
+frmWireFrameMod.IconAndOptionsFrame.OptionsFrame.radioFrmWireFrameMod.radioFrmWireFrameModlocked.radioHidden.Title="可以隱藏";
+frmWireFrameMod.IconAndOptionsFrame.OptionsFrame.radioFrmWireFrameMod.radioFrmWireFrameModlocked.radioHidden.LongHelp="可以隱藏
+指出所投影的 3D 線架構是隱藏的.";
+frmWireFrameMod.IconAndOptionsFrame.OptionsFrame.radioFrmWireFrameMod.radioFrmWireFrameModlocked.radioVisible.Title="永遠可見的";
+frmWireFrameMod.IconAndOptionsFrame.OptionsFrame.radioFrmWireFrameMod.radioFrmWireFrameModlocked.radioVisible.LongHelp="永遠可見的
+指出所投影的 3D 線架構是永遠可見的.";

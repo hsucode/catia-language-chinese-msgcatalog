@@ -1,0 +1,227 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+thickness.Title		= "Thickness";
+offset.Title		= "Offset";
+sweptvolume.Title	= "Swept Volume";
+silhouette.Title	= "Silhouette";
+wrapping.Title		= "Wrapping";
+freespace.Title		= "Free Space";
+simplification.Title		= "Simplification";
+vibrationvolume.Title		= "Vibration Volume";
+// END WIZARD REPLACEMENT ZONE
+
+// -----------------------------------
+// Nouvelle interface utilisateur - R8
+// -----------------------------------
+
+FrameDMU.HeaderFrame.Global.Title="交替形狀管理";
+FrameDMU.HeaderFrame.Global.ShortHelp="管理表現方式如同交替形狀.";
+FrameDMU.HeaderFrame.Global.LongHelp="管理表現方式如同交替形狀.";
+
+DMODirBrowser="儲存形狀路徑";
+
+FrameDMU.IconAndOptionsFrame.OptionsFrame.NameLabel.Title = "形狀名稱";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.NameLabel.ShortHelp = "形狀名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.NameLabel.LongHelp = "提供形狀名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateLabel.Title = "  啟動  ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateLabel.ShortHelp = "啟動形狀.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateLabel.LongHelp = "設定形狀為啟動表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultLabel.Title = "  預設  ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultLabel.ShortHelp = "預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultLabel.LongHelp = "設定形狀為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.PathLabel.Title = " 儲存的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.PathLabel.ShortHelp = " 用來儲存的預設路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.PathLabel.LongHelp = " 用來儲存的預設路徑 ";
+
+// Silhouette
+SilhouetteName = "輪廓";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageSilhouetteButton.Title="輪廓";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageSilhouetteButton.ShortHelp="管理輪廓表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageSilhouetteButton.LongHelp="管理如同交換形狀的輪廓表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SilhouetteNameEditor.ShortHelp="輪廓名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SilhouetteNameEditor.LongHelp="提供輪廓表現方式的名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateSilhouetteButton.ShortHelp="啟動輪廓表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateSilhouetteButton.LongHelp="啟動輪廓表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultSilhouetteButton.ShortHelp="設定輪廓為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultSilhouetteButton.LongHelp="設定輪廓為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SilhPathEditor.ShortHelp= " 用來儲存輪廓的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SilhPathEditor.LongHelp= " 用來儲存輪廓的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SilhPathPushButton.ShortHelp="以瀏覽選擇路徑.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SilhPathPushButton.LongHelp="以瀏覽選擇路徑.";
+
+// Wrapping
+WrappingName = "捲曲";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageWrappingButton.Title="捲曲";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageWrappingButton.ShortHelp="管理捲曲表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageWrappingButton.LongHelp="管理如同交換形狀的捲曲表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.WrappingNameEditor.ShortHelp="捲曲名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.WrappingNameEditor.LongHelp="提供捲曲表現方式的名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateWrappingButton.ShortHelp="啟動捲曲表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateWrappingButton.LongHelp="啟動捲曲表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultWrappingButton.ShortHelp="設定捲曲為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultWrappingButton.LongHelp="設定捲曲為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.WrapPathEditor.ShortHelp= " 用來儲存捲曲的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.WrapPathEditor.LongHelp= " 用來儲存捲曲的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.WrapPathPushButton.ShortHelp="以瀏覽選擇路徑.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.WrapPathPushButton.LongHelp="以瀏覽選擇路徑.";
+
+// Thickness
+ThicknessName = "厚度";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageThicknessButton.Title="厚度";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageThicknessButton.ShortHelp="管理厚度表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageThicknessButton.LongHelp="管理如同交換形狀的厚度表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ThicknessNameEditor.ShortHelp="厚度名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ThicknessNameEditor.LongHelp="提供厚度表現方式的名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateThicknessButton.ShortHelp="起動厚度表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateThicknessButton.LongHelp="起動厚度表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultThicknessButton.ShortHelp="設定厚度為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultThicknessButton.LongHelp="設定厚度為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ThickPathEditor.ShortHelp= " 用來儲存厚度的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ThickPathEditor.LongHelp= " 用來儲存厚度的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ThickPathPushButton.ShortHelp="以瀏覽選擇路徑.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ThickPathPushButton.LongHelp="以瀏覽選擇路徑.";
+
+// Offset
+OffsetName = "偏移";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageOffsetButton.Title="偏移";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageOffsetButton.ShortHelp="管理偏移表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageOffsetButton.LongHelp="管理如同交換形狀的偏移表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.OffsetNameEditor.ShortHelp="偏移名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.OffsetNameEditor.LongHelp="提供偏移表現方式的名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateOffsetButton.ShortHelp="啟動偏移表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateOffsetButton.LongHelp="啟動偏移表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultOffsetButton.ShortHelp="設定偏移為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultOffsetButton.LongHelp="設定偏移為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.OffPathEditor.ShortHelp= " 用來儲存偏移的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.OffPathEditor.LongHelp= " 用來儲存偏移的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.OffPathPushButton.ShortHelp="以瀏覽選擇路徑.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.OffPathPushButton.LongHelp="以瀏覽選擇路徑.";
+
+// SweptVolume
+SweptVolumeName = "掃掠實體";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageSweptVolumeButton.Title="掃掠實體";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageSweptVolumeButton.ShortHelp="管理掃掠實體表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageSweptVolumeButton.LongHelp="管理如同交換形狀的掃掠實體表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SweptVolumeNameEditor.ShortHelp="掃掠實體名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SweptVolumeNameEditor.LongHelp="提供掃掠實體表現方式的名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateSweptVolumeButton.ShortHelp="啟動掃掠實體表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateSweptVolumeButton.LongHelp="啟動掃掠實體表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultSweptVolumeButton.ShortHelp="設定掃掠實體為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultSweptVolumeButton.LongHelp="設定掃掠實體為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SwepVolPathEditor.ShortHelp= " 用來儲存掃掠實體的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SwepVolPathEditor.LongHelp= " 用來儲存掃掠實體的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SwepVolPathPushButton.ShortHelp="以瀏覽選擇路徑.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SwepVolPathPushButton.LongHelp="以瀏覽選擇路徑.";
+
+// FreeSpace
+FreeSpaceName = "自由空間";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageFreeSpaceButton.Title="自由空間";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageFreeSpaceButton.ShortHelp="管理自由空間表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageFreeSpaceButton.LongHelp="管理如同交換形狀的自由空間表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.FreeSpaceNameEditor.ShortHelp="自由空間名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.FreeSpaceNameEditor.LongHelp="提供自由空間表現方式的名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateFreeSpaceButton.ShortHelp="啟動自由空間表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateFreeSpaceButton.LongHelp="啟動自由空間表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultFreeSpaceButton.ShortHelp="設定自由空間為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultFreeSpaceButton.LongHelp="設定自由空間為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.FSpacePathEditor.ShortHelp= " 用來儲存自由空間的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.FSpacePathEditor.LongHelp= " 用來儲存自由空間的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.FSpacelPathPushButton.ShortHelp="以瀏覽選擇路徑.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.FSpacePathPushButton.LongHelp="以瀏覽選擇路徑.";
+
+// Simplification
+SimplificationName = "簡化";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageSimplificationButton.Title="簡化";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageSimplificationButton.ShortHelp="管理簡化表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageSimplificationButton.LongHelp="管理如同交換形狀的簡化表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SimplificationNameEditor.ShortHelp="簡化名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SimplificationNameEditor.LongHelp="提供簡化表現方式的名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateSimplificationButton.ShortHelp="啟動簡化表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateSimplificationButton.LongHelp="啟動簡化表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultSimplificationButton.ShortHelp="設定簡化為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultSimplificationButton.LongHelp="設定簡化為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SimplifPathEditor.ShortHelp= " 用來儲存簡化的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SimplifPathEditor.LongHelp= " 用來儲存簡化的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SimplifPathPushButton.ShortHelp="以瀏覽選擇路徑.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.SimplifathPushButton.LongHelp="以瀏覽選擇路徑.";
+
+// Vibration Volume
+VibrationVolumeName = "振動體積";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageVibrationVolumeButton.Title="振動體積";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageVibrationVolumeButton.ShortHelp="管理振動體積表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageVibrationVolumeButton.LongHelp="管理振動體積表現方式成為交替形式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.VibrationVolumeNameEditor.ShortHelp="振動體積名稱";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.VibrationVolumeNameEditor.LongHelp="提供振動體積表現方式名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateVibrationVolumeButton.ShortHelp="啟動振動體積表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateVibrationVolumeButton.LongHelp="啟動振動體積表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultVibrationVolumeButton.ShortHelp="設定振動體積成為預設表現方式";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultVibrationVolumeButton.LongHelp="設定振動體積成為預設表現方式";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.VibrVolPathEditor.ShortHelp= " 用來儲存振動體積的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.VibrVolPathEditor.LongHelp= " 用來儲存振動體積的路徑 ";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.VibrVolPathPushButton.ShortHelp="以瀏覽選擇路徑.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.VibrVolPathPushButton.LongHelp="以瀏覽選擇路徑.";
+
+// Merger
+MergerName = "溶合";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageMergerButton.Title="溶合";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageMergerButton.ShortHelp="管理溶合表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ManageMergerButton.LongHelp="管理溶合表現方式如另一種形狀.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.MergerNameEditor.ShortHelp="溶合名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.MergerNameEditor.LongHelp="提供溶合表現方式名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateMergerButton.ShortHelp="啟動溶合表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.ActivateMergerButton.LongHelp="啟動溶合表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultMergerButton.ShortHelp="設定溶合為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.DefaultMergerButton.LongHelp="設定溶合為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.MergerPathEditor.ShortHelp="儲存溶合路徑.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.MergerPathEditor.LongHelp="儲存溶合路徑.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.MergerPathPushButton.ShortHelp="瀏覽來選擇路徑.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.MergerPathPushButton.LongHelp="瀏覽來選擇路徑.";
+
+// 3D Cut
+3DCutName = "3D 切割";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.Manage3DCutButton.Title="3D 切割";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.Manage3DCutButton.ShortHelp="理 3D Cut 表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.Manage3DCutButton.LongHelp="管理 3D Cut 表現方式如另一種形狀.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.3DCutNameEditor.ShortHelp="3D Cut 名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.3DCutNameEditor.LongHelp="提供 3D Cut 表現方式名稱.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.Activate3DCutButton.ShortHelp="啟動 3D Cut 表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.Activate3DCutButton.LongHelp="啟動 3D Cut 表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.Default3DCutButton.ShortHelp="設定 3D Cut 為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.Default3DCutButton.LongHelp="設定 3D Cut 為預設表現方式.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.3DCutPathEditor.ShortHelp="儲存 3D Cut 路徑.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.3DCutPathEditor.LongHelp="儲存 3D Cut 路徑.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.3DCutPathPushButton.ShortHelp="瀏覽來選擇路徑.";
+FrameDMU.IconAndOptionsFrame.OptionsFrame.3DCutPathPushButton.LongHelp="瀏覽來選擇路徑.";
+
+// Frame de la couleur du wrapping
+ColorWrappingFrame.HeaderFrame.Global.Title=" 捲曲顏色";
+ColorWrappingFrame.HeaderFrame.Global.ShortHelp="選擇捲曲的預設顏色.";
+ColorWrappingFrame.HeaderFrame.Global.LongHelp="選擇捲曲的預設顏色.";
+
+ColorWrappingFrame.IconAndOptionsFrame.OptionsFrame.PartColorForWrapButton.Title = " 如可能則使用零件顏色, 否則... ";
+ColorWrappingFrame.IconAndOptionsFrame.OptionsFrame.PartColorForWrapButton.ShortHelp = " 如可能則使用零件顏色, 否則... ";
+ColorWrappingFrame.IconAndOptionsFrame.OptionsFrame.PartColorForWrapButton.LongHelp = " 如可能則使用零件顏色, 否則... ";
+ColorWrappingFrame.IconAndOptionsFrame.OptionsFrame.DefaultColorWrapLabel.Title = " 預設顏色.";
+ColorWrappingFrame.IconAndOptionsFrame.OptionsFrame.DefaultColorWrapLabel.ShortHelp = "捲曲的預設顏色.";
+ColorWrappingFrame.IconAndOptionsFrame.OptionsFrame.DefaultColorWrapLabel.LongHelp = "捲曲的預設顏色.";
+
+// Frame de la couleur du vibration volume
+ColorVibrVolFrame.HeaderFrame.Global.Title=" 振動體積的顏色.";
+ColorVibrVolFrame.HeaderFrame.Global.ShortHelp="選擇振動體積的預設顏色.";
+ColorVibrVolFrame.HeaderFrame.Global.LongHelp="選擇振動體積的預設顏色.";
+
+ColorVibrVolFrame.IconAndOptionsFrame.OptionsFrame.PartColorForVVButton.Title = " 如可能則使用零件顏色, 否則... ";
+ColorVibrVolFrame.IconAndOptionsFrame.OptionsFrame.PartColorForVVButton.ShortHelp = " 如可能則使用零件顏色, 否則... ";
+ColorVibrVolFrame.IconAndOptionsFrame.OptionsFrame.PartColorForVVButton.LongHelp = " 如可能則使用零件顏色, 否則... ";
+ColorVibrVolFrame.IconAndOptionsFrame.OptionsFrame.DefaultColorVVLabel.Title = " 預設顏色.";
+ColorVibrVolFrame.IconAndOptionsFrame.OptionsFrame.DefaultColorVVLabel.ShortHelp = "振動體積的預設顏色.";
+ColorVibrVolFrame.IconAndOptionsFrame.OptionsFrame.DefaultColorVVLabel.LongHelp = "振動體積的預設顏色.";
+
+// Frame du Save Management
+SaveManagementFrame.HeaderFrame.Global.Title=" 儲存掃掠體積管理";
+SaveManagementFrame.HeaderFrame.Global.ShortHelp="Choose to manage the save as operation in swept volume.";
+SaveManagementFrame.HeaderFrame.Global.LongHelp="Choose to manage the save as operation in swept volume.";
+
+SaveManagementFrame.IconAndOptionsFrame.OptionsFrame.SaveManagementButton.Title = " 使用一目錄並按一下滑鼠來管理.";
+SaveManagementFrame.IconAndOptionsFrame.OptionsFrame.SaveManagementButton.ShortHelp = "Use one directory to manage all the 'save as' in swept volume.";
+SaveManagementFrame.IconAndOptionsFrame.OptionsFrame.SaveManagementButton.LongHelp = "Use one directory to manage all the 'save as' in swept volume.";
+

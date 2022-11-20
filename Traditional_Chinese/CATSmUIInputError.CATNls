@@ -1,0 +1,457 @@
+// *---------------------------------------------*//
+// *            SMA , SMD : UI Errors            *//
+// *-------------------------------------------- *//
+//
+// !!! The key : Text before "." must only exist once in this file ( -> "PartERR_100")
+//
+// SheetMetal Parameters Not Found
+PartERR_100.Request    = " ";
+PartERR_100.Diagnostic = "目前文件中未發現板金參數.";
+PartERR_100.Advice     = "請檢查 Catia 安裝.";
+//
+// View Inactive
+PartERR_101.Request    = "您想要檢視展開視圖. ";
+PartERR_101.Diagnostic = "展開視圖未作動.";
+PartERR_101.Advice     = "";
+//
+PartERR_102.Request    = "您想要檢視收合視圖. ";
+PartERR_102.Diagnostic = "收合視圖未作動.";
+PartERR_102.Advice     = "";
+//
+PartERR_103.Request    = "您想要檢視其它視圖. ";
+PartERR_103.Diagnostic = "發生未知錯誤.";
+PartERR_103.Advice     = "";
+//
+
+// general for edit
+PartERR_200.Request    = "您嚐試在平坦視圖中編輯 /p 特徵.";
+PartERR_200.Diagnostic = 
+"此特徵建立在收合視圖.
+只能在收合視圖中編輯.";
+PartERR_200.Advice     = "請先選擇收合視圖再編輯它.";
+//
+
+PartERR_201.Request    = "您嚐試在收合視圖中編輯 /p 特徵.";
+PartERR_201.Diagnostic = 
+"此特徵建立在平順視圖.
+只能在平順視圖中編輯.";
+PartERR_201.Advice     = "請先選擇平順視圖再編輯它.";
+//
+
+// Preview
+PartERR_300.Request    = " ";
+PartERR_300.Diagnostic = "無法執行預視.";
+PartERR_300.Advice     = "檢查輸入特徵.";
+
+// Bead 
+PartERR_1001.Request    = " ";
+PartERR_1001.Diagnostic = "曲線未依附在零件本體.";
+PartERR_1001.Advice     = "請選擇另一曲線或投影它至零件本體.";
+//
+
+// Bead 
+PartERR_1002.Request    = " ";
+PartERR_1002.Diagnostic = "所選擇的包含數個曲線. ";
+PartERR_1002.Advice     = "請選擇曲線或只含一個定義區域的草圖.";
+//
+
+// Bead 
+PartERR_1003.Request    = " ";
+PartERR_1003.Diagnostic = "所選曲線為封閉的.";
+PartERR_1003.Advice     = "請選擇未封閉曲線或草圖 .";
+//
+           
+// Stamp 
+PartERR_1004.Request    = " ";
+PartERR_1004.Diagnostic = "印記參數組合無效.";
+
+
+// Cutout  
+PartERR_1005.Request    = " ";
+PartERR_1005.Diagnostic = "展開視圖無法建立特徵.";
+PartERR_1005.Advice     = "請選擇未展開視圖 .";
+//
+PartERR_1006.Request    = " ";
+PartERR_1006.Diagnostic = "無法建立特徵.";
+PartERR_1006.Advice     = "請建立第一個板金特徵.";
+//
+PartERR_1007.Request    = " ";
+PartERR_1007.Diagnostic = "不允許編輯切除.";
+PartERR_1007.Advice     = "請替換目前視圖.";
+
+PartERR_1010.Request    = "";
+PartERR_1010.Diagnostic = "無法開啟目錄瀏覽器.";
+PartERR_1010.Advice     = "請檢查在工具 選項中的目錄路徑.";
+
+PartERR_1011.Request    = "";
+PartERR_1011.Diagnostic = "無法建立特徵.";
+PartERR_1011.Advice     = "檢查目前特徵.";
+
+PartERR_1012.Request    = "";
+PartERR_1012.Diagnostic = "參數由標準表驅動.";
+PartERR_1012.Advice     = "無法修改.";
+// Corner Relief :  
+PartERR_2000.Request    = "";
+PartERR_2000.Diagnostic = "收合視圖不允許特徵定義.";
+PartERR_2000.Advice     = "請選擇展開視圖 .";
+
+PartERR_2001.Request    = "輪緣中已有二個圓角逸出.";
+PartERR_2001.Diagnostic = "輪緣中最多只能有二個圓角逸出.";
+PartERR_2001.Advice     = "請刪除第一個已存的圓角逸出.";
+
+PartERR_2002.Request    = "One of the flange has already 1 corner relieves and a side at none.";
+PartERR_2002.Diagnostic = "A corner relief must replace an existing side.";
+PartERR_2002.Advice     = "Please, change the none side to standard before creating the corner relief.";
+
+PartERR_2003.Request    = "One of the flange has 2 side at none.";
+PartERR_2003.Diagnostic = "A corner relief must replace an existing side.";
+PartERR_2003.Advice     = "Please, change one of the none side to standard before creating the corner relief.";
+
+PartERR_2010.Request    = "";
+PartERR_2010.Diagnostic = "此選項尚未可用.";
+PartERR_2010.Advice     = "請修改您的選擇.";
+ 
+PartERR_2020.Request    = "";
+PartERR_2020.Diagnostic = "草圖未封閉.";
+PartERR_2020.Advice     = "請選擇封閉草圖.";
+
+PartERR_2030.Request    = "";
+PartERR_2030.Diagnostic = "無效圓角離隙重排.";
+PartERR_2030.Advice     = "請修改您的選擇.";
+
+PartERR_2040.Request    = "";
+PartERR_2040.Diagnostic = "零件中必須最少存有二個展開特徵.";
+PartERR_2040.Advice     = "請選擇另一命令.";
+
+PartERR_2050.Request    = "";
+PartERR_2050.Diagnostic = "無法開啟目錄瀏覽器.";
+PartERR_2050.Advice     = "請檢查在工具 選項中的目錄路徑.";
+
+PartERR_2060.Request    = "";
+PartERR_2060.Diagnostic = "逸出斷面無效 : 它含有一個以上獨立點.";
+PartERR_2060.Advice     = "請修改斷面.";
+PartERR_2070.Request    = "";
+PartERR_2070.Diagnostic = "緩和斷面無效.";
+PartERR_2070.Advice     = "請修改斷面.";
+
+PartERR_2080.Request    = "";
+PartERR_2080.Diagnostic = "含鏈結的依附管理失敗.";
+PartERR_2080.Advice     = "請檢證依附";
+
+PartERR_2081.Request    = "Supports redefinition NOT allowed on /p.";
+PartERR_2081.Diagnostic = "There are already 2 Corner Relieves on this Flange.";
+PartERR_2081.Advice     = "You need to delete one Corner Relief before creating a new one.";
+
+PartERR_2082.Request    = "Supports redefinition NOT allowed on /p.";
+PartERR_2082.Diagnostic = "There is only 1 Side on this Flange.";
+PartERR_2082.Advice     = "You need to define the second Side of the Flange.";
+
+PartERR_2083.Request    = "Supports redefinition NOT allowed on /p.";
+PartERR_2083.Diagnostic = "There is NO Side on this Flange.";
+PartERR_2083.Advice     = "You need to define the 2 Sides of the Flange.";
+
+PartERR_2084.Request    = "Supports redefinition NOT allowed on /p.";
+PartERR_2084.Diagnostic = "A Side compensation exists on this Flange.";
+PartERR_2084.Advice     = "You need to remove the Side compensations of this Flange.";
+
+PartERR_2085.Request    = "Supports redefinition NOT allowed on /p.";
+PartERR_2085.Diagnostic = "";
+PartERR_2085.Advice     = "";
+PartERR_2090.Request    = "";
+PartERR_2090.Diagnostic = "重新定義依附只適用在曲面輪緣.";
+PartERR_2090.Advice     = "請檢證依附";
+
+PartERR_2095.Request    = "";
+PartERR_2095.Diagnostic = "逸出斷面無效 : 它含有未連接的邊線.";
+PartERR_2095.Advice     = "請檢查斷面";
+
+PartERR_2096.Request    = "";
+PartERR_2096.Diagnostic = "This choice is unavailable with the option : Check Support Redefinition.";
+PartERR_2096.Advice     = "Please, select a Profile";
+
+//Flange F&A et Stamp (merci de ne pas ajouter d'erreur 30XX)
+
+
+PartERR_3001.Request = "";
+PartERR_3001.Diagnostic ="脊椎線的相切連續性無效.";
+PartERR_3001.Advice = "請修改您的選擇.";
+
+PartERR_3002.Request = "";
+PartERR_3002.Diagnostic ="在限制輪緣中的脊椎線必須是未封閉外形.";
+PartERR_3002.Advice = "請修改您的選擇.";
+
+
+PartERR_3003.Request = "";
+PartERR_3003.Diagnostic ="斷面的相切連續性無效.";
+PartERR_3003.Advice = "請修改您的選擇.";
+
+PartERR_3004.Request = "";
+PartERR_3004.Diagnostic ="斷面未與脊椎線連接.";
+PartERR_3004.Advice = "請修改您的選擇.";
+
+PartERR_3005.Request = "";
+PartERR_3005.Diagnostic ="斷面未與依附相切.";
+PartERR_3005.Advice = "請修改您的選擇.";
+
+PartERR_3006.Request = "";
+PartERR_3006.Diagnostic ="斷面和依附間有間隙.";
+PartERR_3006.Advice = "請修改您的選擇.";
+
+PartERR_3007.Request = "";
+PartERR_3007.Diagnostic ="所選限制元素不允許計算脊椎線.";
+PartERR_3007.Advice = "請以點定義限制.";
+
+PartERR_3008.Request = "";
+PartERR_3008.Diagnostic ="兩限制必須與脊椎線相交.";
+PartERR_3008.Advice = "請修改您的選擇.";
+
+PartERR_3009.Request = "";
+PartERR_3009.Diagnostic ="兩限制相同";
+PartERR_3009.Advice = "請修改您的選擇.";
+
+PartERR_3010.Request = "";
+PartERR_3010.Diagnostic ="脊椎線和參數的組合造成無解";
+PartERR_3010.Advice = "請檢查輸入.";
+
+PartERR_3011.Request = "";
+PartERR_3011.Diagnostic ="無法找到標準參數檔";
+PartERR_3011.Advice = "請檢查預設檔案路徑.";
+
+PartERR_3012.Request = "";
+PartERR_3012.Diagnostic ="所選邊線無效.";
+PartERR_3012.Advice = "請檢查輸入.";
+
+PartERR_3013.Request = "";
+PartERR_3013.Diagnostic ="所選依附無效.";
+PartERR_3013.Advice = "請確認它屬於板金特徵.";
+
+PartERR_3014.Request = "";
+PartERR_3014.Diagnostic ="此依附上無法裁剪";
+PartERR_3014.Advice = "請檢查輸入.";
+
+PartERR_3015.Request = "";
+PartERR_3015.Diagnostic ="長度和半徑不相容";
+PartERR_3015.Advice = "請檢查輸入.";
+
+
+PartERR_3016.Request = "";
+PartERR_3016.Diagnostic ="The selected support is invalid.";
+PartERR_3016.Advice = "The selected face has to be a top or bottom face of the Sheet metal part";
+
+PartERR_3017.Request = "";
+PartERR_3017.Diagnostic ="The Profile plane is not normal to the spine.";
+PartERR_3017.Advice = "The plane must be normal to the spine.";
+
+
+// Stiffening Rib
+PartERR_4001.Request    = " ";
+PartERR_4001.Diagnostic = "所選曲面必須為本體的外部曲面. 且為圓柱曲面";
+PartERR_4001.Advice     = "請選擇本體的另一曲面.";
+
+// Surface Stamp
+PartERR_5001.Request    = " ";
+PartERR_5001.Diagnostic = "所選曲線未封閉.";
+PartERR_5001.Advice     = "請選擇封閉曲線或草圖 .";
+PartERR_5002.Request    = " ";
+PartERR_5002.Diagnostic = "The point or vertex does not lie on the first profile.";
+PartERR_5002.Advice     = "Select a point or vertex that lies on the first profile.";
+
+PartERR_5003.Request    = " ";
+PartERR_5003.Diagnostic = "The point or vertex does not lie on the second profile";
+PartERR_5003.Advice     = "Select a point or vertex that lies on the second profile.";
+
+PartERR_5004.Request    = " ";
+PartERR_5004.Diagnostic = "The stamping direction can not be computed.The stamp does not impact the current body.";
+PartERR_5004.Advice     = "Verify the current object.";
+
+// [curve / point] Mapping :
+PartERR_6000.Request    = "命令中發生未預期錯誤.";
+PartERR_6000.Diagnostic = "";
+PartERR_6000.Advice     = "";
+
+//
+PartERR_7000.Request    = " ";
+PartERR_7000.Diagnostic = "孔版期不適用.";
+PartERR_7000.Advice     = "請更換目前視圖.";
+
+
+// Corner / Chamfer
+PartERR_8000.Request    = " ";
+PartERR_8000.Diagnostic = "所選邊線之一無效.";
+PartERR_8000.Advice     = "建立圓角和倒角前, 請確認模型已被正確更新.";
+
+PartERR_8001.Request    = " ";
+PartERR_8001.Diagnostic = "/p1 edge(s) can't be used.
+These specifications will be removed.";
+PartERR_8001.Advice     = "";
+
+
+// FlatBend
+PartERR_9001.Request    = " ";
+PartERR_9001.Diagnostic = "所選草圖含有一個以上封閉斷面.";
+PartERR_9001.Advice     = "請選擇只含有線的草圖.";
+
+PartERR_9002.Request    = " ";
+PartERR_9002.Diagnostic = "所選草圖含有一個以上曲線.";
+PartERR_9002.Advice     = "請選擇只含有線的草圖.";
+
+PartERR_9003.Request    = " ";
+PartERR_9003.Diagnostic = "The selected sketch references an other Bend From Flat in this part or in another one.";
+PartERR_9003.Advice     = "Please, create a sketch from scratch.";
+
+
+// Recognize
+RecognizeERR_001.Request    = " ";
+RecognizeERR_001.Diagnostic = "The body to recognize contains sheetmetal features.";
+RecognizeERR_001.Advice     = "Make a copy paste as result of the body first, then try to recognize the solid.";
+RecognizeERR_101.Request    = " ";
+RecognizeERR_101.Diagnostic = "所選修剪面非平面形式.";
+RecognizeERR_101.Advice     = "請選擇另一修剪面.";
+
+RecognizeERR_102.Request    = " ";
+RecognizeERR_102.Diagnostic = "The selected face is not correct.";
+RecognizeERR_102.Advice     = "Select another face.";
+
+RecognizeERR_103.Request    = "The thickness of the geometry to recognize is different from the thickness defined in the sheet metal parameters.";
+RecognizeERR_103.Diagnostic = "No sheet metal feature will be recognized.";
+RecognizeERR_103.Advice     = "Modify the sheet metal parameters.";
+
+RecognizeERR_104.Request    = " ";
+RecognizeERR_104.Diagnostic = "The selected face is not in the body that will be recognized.";
+RecognizeERR_104.Advice     = "Select another face.";
+
+
+
+// Overlapping
+OverlappingERR_001.Request    = " ";
+OverlappingERR_001.Diagnostic = "Check overlapping is not allowed in folded view.";
+OverlappingERR_001.Advice     = "Select unfolded  view.";
+
+OverlappingERR_101.Request    = " ";
+OverlappingERR_101.Diagnostic = "An error occured in the checking operator.";
+OverlappingERR_101.Advice     = "Make sure your model is correct.";
+
+OverlappingERR_200.Request    = " ";
+OverlappingERR_200.Diagnostic = "No valid feature has been found.";
+OverlappingERR_200.Advice     = "Make sure your model is correct.";
+
+
+// Hopper
+HopperERR_Surface_001.Request    = "You are trying to create a hopper based on a surface.";
+HopperERR_Surface_001.Diagnostic = "The selected surface is not a ruled surface.";
+HopperERR_Surface_001.Advice     = "Select a ruled surface.";
+
+HopperERR_TearWire_001.Request    = "You are trying to create a hopper with a tear wire.";
+HopperERR_TearWire_001.Diagnostic = "The selected wire does not split the Hopper surface.";
+HopperERR_TearWire_001.Advice     = "Modify the selected wire or select another one.";
+
+HopperERR_TearWire_002.Request    = "You are trying to create a hopper with a tear wire.";
+HopperERR_TearWire_002.Diagnostic = "You have already selected one curve as Tear wire.";
+HopperERR_TearWire_002.Advice     = "Create only one curve that disconnects the surface.";
+
+HopperERR_TearWire_003.Request    = "You are trying to create a hopper with a tear wire.";
+HopperERR_TearWire_003.Diagnostic = "An edge from surface has already been selected.";
+HopperERR_TearWire_003.Advice     = "Continue selecting edges or create one curve.";
+
+HopperERR_TearWire_004.Request    = "You are trying to add an element in the hopper tear wire selection.";
+HopperERR_TearWire_004.Diagnostic = "This tear element is already in the list.";
+HopperERR_TearWire_004.Advice     = "Check the element you selected.";
+
+HopperERR_ReferenceWire_001.Request    = "You are trying to select the hopper reference wire.";
+HopperERR_ReferenceWire_001.Diagnostic = "The selected wire does not lie and/or cross the Hopper surface.";
+HopperERR_ReferenceWire_001.Advice     = "Modify the selected wire or select another one.";
+
+HopperERR_InvariantPoint_001.Request    = "You are trying to create a hopper.";
+HopperERR_InvariantPoint_001.Diagnostic = "The invariant point does not lie on the reference wire.";
+HopperERR_InvariantPoint_001.Advice     = "Modify that point or select another one.";
+
+HopperERR_InvariantPoint_002.Request    = "You are trying to create a hopper.";
+HopperERR_InvariantPoint_002.Diagnostic = "The invariant point does not lie on the Hopper surface.";
+HopperERR_InvariantPoint_002.Advice     = "Modify that point or select another one.";
+
+HopperERR_Creation_001.Request    = "You are trying to create a hopper.";
+HopperERR_Creation_001.Diagnostic = "The feature position in the specifications graph does not allow that creation.";
+HopperERR_Creation_001.Advice     = "Check the compliancy of that feature with the existing features.";
+
+HopperERR_FirstInBody_001.Request    = "You are trying to create a hopper.";
+HopperERR_FirstInBody_001.Diagnostic = "This feature can be created only as the first feature of a Body.";
+HopperERR_FirstInBody_001.Advice     = "Modify the current Body or select another Body.";
+
+HopperERR_FoldedView_001.Request    = "You are trying to create or edit a hopper.";
+HopperERR_FoldedView_001.Diagnostic = "This feature can be created or edited only in the folded view.";
+HopperERR_FoldedView_001.Advice     = "Change the current view to achieve your action.";
+
+HopperERR_ThickenPreview_001.Request    = "This hopper can not be built.";
+HopperERR_ThickenPreview_001.Diagnostic = "The input surface can not be thicken.";
+HopperERR_ThickenPreview_001.Advice     = "Change the material side or check if the surface can be offseted.";
+
+HopperERR_UnfoldPreview_001.Request    = "This hopper can not be built.";
+HopperERR_UnfoldPreview_001.Diagnostic = "The build in flatten view will fail.";
+HopperERR_UnfoldPreview_001.Advice     = "Check the surface developability and its compatibility with the other parameters.";
+
+
+// Extrude
+ExtrudeERR_FoldedView_001.Request    = "You are trying to create or edit a feature.";
+ExtrudeERR_FoldedView_001.Diagnostic = "This feature can be created or edited only in the folded view.";
+ExtrudeERR_FoldedView_001.Advice     = "Change the current view to achieve your action.";
+
+// User Stamp
+UserStampERR_Catalog_001.Request    = "You are trying to insert a part from a catalog.";
+UserStampERR_Catalog_001.Diagnostic = "The part can only be inserted if either the punch field or the die field is selected in the panel.";
+UserStampERR_Catalog_001.Advice     = "Select the appropriate field."; 
+
+// Mirror
+Mirror_ERR_001.Request    = "Selected  sub-element  cannot  be  extracted.";
+Mirror_ERR_001.Diagnostic = "The  extraction  of  this  sub-element  leads  to  a  result\nwhich  is  not  connected.  This  is  not  allowed.";
+Mirror_ERR_001.Advice     = "Use  NEAR  operator  to  keep  only  one  sub-element.";
+
+Mirror_ERR_002.Request    = "Selected  element  /p1  is  not  uptodate.";
+Mirror_ERR_002.Diagnostic = "The  input  element  has  to  be  uptodate.";
+Mirror_ERR_002.Advice     = "Update  this  element.";
+
+Mirror_ERR_003.Request    = "The  selected  element  is  a  non  connex  element.";
+Mirror_ERR_003.Diagnostic = "Input  element  /p1  has  to  be  connex.";
+Mirror_ERR_003.Advice     = "Use  another  element,  or  extract  connex  entity  with  NEAR  operator.";
+
+Mirror_ERR_004.Request	  = "You are trying to mirror a stamp in the unfolded view.";
+Mirror_ERR_004.Diagnostic = "This will lead to the confusion of the folded faces of the mirrored instances. You will not be able to act on these instances with other features.";
+Mirror_ERR_004.Advice     = "Create the mirror in the folded view if possible.";
+
+Mirror_ERR_005.Request	  = "You are trying to mirror a pattern.";
+Mirror_ERR_005.Diagnostic = "The current view is different from the view of creation of the pattern. This is not allowed.";
+Mirror_ERR_005.Advice	  = "Create the mirror in the view of creation of the pattern.";
+
+Mirror_ERR_006.Request	  = "You are trying to mirror a mirror.";
+Mirror_ERR_006.Diagnostic = "The current view is different from the view of creation of the first mirror. This is not allowed.";
+Mirror_ERR_006.Advice	  = "Create the mirror in the view of creation of the first mirror.";
+
+// Pattern
+Pattern_ERR_001.Request    = "You are trying to pattern a stamp in the unfolded view.";
+Pattern_ERR_001.Diagnostic = "This will lead to the confusion of the folded faces of the patterned instances. You will not be able to act on these instances with other feautres";
+Pattern_ERR_001.Advice     = "Create the pattern in the folded view if possible.";
+
+Pattern_ERR_002.Request	   = "You are trying to pattern a pattern.";
+Pattern_ERR_002.Diagnostic = "The current view is different from the view of creation of the first pattern. This is not allowed.";
+Pattern_ERR_002.Advice	   = "Create the pattern in the view of creation of the first pattern.";
+
+Pattern_ERR_003.Request	   = "You are trying to pattern a mirror.";
+Pattern_ERR_003.Diagnostic = "The current view is different from the view of creation of the mirror. This is not allowed.";
+Pattern_ERR_003.Advice	   = "Create the pattern in the view of creation of the mirror.";
+
+//Chamfer
+ChamferERR_001.Request = "";
+ChamferERR_001.Diagnostic ="Concave edges selection is not authorized.";
+ChamferERR_001.Advice = "Change your inputs.";
+
+CornerChamferERR_001.Request = "";
+CornerChamferERR_001.Diagnostic ="Some of the edges are faulty.";
+CornerChamferERR_001.Advice = "If you want to create the feature without these edges, click YES.";
+
+CornerChamferERR_002.Request = "";
+CornerChamferERR_002.Diagnostic ="Some of the selected edges are faulty.";
+CornerChamferERR_002.Advice = "The feature cannot be created";
+
+CornerChamferERR_003.Request = "";
+CornerChamferERR_003.Diagnostic ="All the selected edges are faulty.";
+CornerChamferERR_003.Advice = "The feature cannot be created.";
+

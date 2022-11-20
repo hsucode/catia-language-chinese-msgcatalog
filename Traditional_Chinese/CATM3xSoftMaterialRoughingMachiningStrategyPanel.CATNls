@@ -1,0 +1,18 @@
+Title = "加工中";
+
+CutStrategy = "粗銑形式";
+
+M3xMachiningMode = "刀具路徑方式";
+
+MachiningTolerance = "加工精度";
+
+M3xMachiningMode.LongHelp = "指定刀具移動. 刀具移動形式可以是:
+- 單向下一個: 連續的刀具路徑均為相同的方向
+             最後一刀與下一刀為斜線進刀. 
+- 單向相同: 連續的刀具路徑均為相同的方向
+           且每一次均回至同路徑的第一點
+           再連至下一路徑的第一點. 
+- 來回: 連續的刀具路徑為方向相反. ";
+
+MachiningTolerance.LongHelp = "指出理論和計算間刀具路徑間的最大允許距離.";
+

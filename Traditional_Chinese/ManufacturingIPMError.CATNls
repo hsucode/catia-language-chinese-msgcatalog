@@ -1,0 +1,57 @@
+// =====================================================================
+//
+// Erreurs Framework Manufacturing dedie a la generation de l'IPM
+// =================================
+//
+// Deux manieres de formater vos messages : 
+//
+// a- Specifier en delimitant avec le caractere '\n' :
+//       Request      (ce que l'on tentait de faire)
+//       Diagnostic   (ce qui est arrive)
+//       Advice       (...ce qu'il pourrait faire si possible)
+//
+//     Exemple :
+//       ERR_3000 = "Initializing '/p1' attribute in '/p2'.\nAttribute does not exist.\nContact your local support.";  
+//       
+//               NOTE : Le parametrage des messages se fait via SetNLSParameter
+//
+// ou bien
+//
+// b- Specifier vos messages avec la cle + les 3 facettes Request/Diagnostic/Advice
+//
+//     Exemple :
+//       ERR_3000.Request    "Initializing '/p1' attribute in '/p2'." 
+//       ERR_3000.Diagnostic "Attribute does not exist."
+//       ERR_3000.Advice     "\nContact your local support."
+// 
+//               NOTE : Le parametrage de chaque facette se fait par :
+//                         Request    : SetNLSRequestParams
+//                         Diagnostic : SetNLSDiagnosticParams
+//                         Advice     : SetNLSAdviceParams
+//
+// =====================================================================
+
+
+//************************************************************
+// Plage reservee aux messages generiques ERR_0000 a ERR_0999
+//************************************************************
+ERR_0100.Request    = "Error when generating or displaying IPM Volume."; 
+ERR_0100.Diagnostic = "\nIPM Volume cannot be generated or displayed because the user representation added\nto the tool or the tool assembly is not correct.";
+ERR_0100.Advice     = "\nPlease check that the user representation of the tool or the tool assembly is correctly defined.";
+
+//************************************************************
+// Plage reservee aux erreurs Curve Following ERR_1000 a ERR_1499
+//************************************************************
+ERR_1000.Request    = "產生或顯示 IPM 聲音時發生錯誤."; 
+ERR_1000.Diagnostic = "\n 因為刀具軸向未垂直曲線, 導致無法產生或顯示 IPM 聲音.";
+ERR_1000.Advice     = "\n 請檢查沿曲線加工工法的幾何定義是正確的 \n 且刀具軸向垂直曲線.";
+
+//************************************************************
+// Plage reservee aux erreurs Point to Point ERR_1500 a ERR_2000
+//************************************************************
+ERR_1500.Request    = "Error when generating or displaying IPM Volume."; 
+ERR_1500.Diagnostic = "\nIPM Volume cannot be generated or displayed because all motions are not in the same plane \nor/and that plane is not orthogonal to the Tool Axis.";
+ERR_1500.Advice     = "\nPlease check that geometric definition of all motions of the Point to Point operation are in a same plane \nand that the Tool Axis is orthogonal to that plane.";
+
+
+

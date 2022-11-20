@@ -1,0 +1,479 @@
+// English Version
+
+// View Menu Bar
+
+DNBProcCmdHeader.DELMPrcHideShowBaseFrameCmdHdr.Title="隱藏或顯示參考框架";
+// May be needed later if this command goes to a tool bar
+//DNBProcCmdHeader.DELMPrcHideShowBaseFrameCmdHdr.Help="Hide or Show Reference Frames of all or selected products and resources";
+//DNBProcCmdHeader.DELMPrcHideShowBaseFrameCmdHdr.ShortHelp="隱藏或顯示參考框架";
+//DNBProcCmdHeader.DELMPrcHideShowBaseFrameCmdHdr.LongHelp="Hide or Show Reference Frames (Reference Frames, axis systems, coordinate systems, etc..) for all or selected products and resources";
+// Data Views
+
+DNBProcCmdHeader.DELMPrc3DStandardViewerHdr.Title="3D 標準檢視器";
+DNBProcCmdHeader.DELMPrc3DStandardViewerHdr.Help="顯示所有項目和資源的圖形表現方式";
+DNBProcCmdHeader.DELMPrc3DStandardViewerHdr.ShortHelp="3D 標準檢視器";
+DNBProcCmdHeader.DELMPrc3DStandardViewerHdr.LongHelp="開啟所有項目和資源的圖形表現方式";
+
+DNBProcCmdHeader.DELMPrc3DAssignedViewerHdr.Title="3D 指定檢視器";
+DNBProcCmdHeader.DELMPrc3DAssignedViewerHdr.Help="檢視所有項目, 資源和活動指派的圖形表現方式";
+DNBProcCmdHeader.DELMPrc3DAssignedViewerHdr.ShortHelp="3D 指定檢視器";
+DNBProcCmdHeader.DELMPrc3DAssignedViewerHdr.LongHelp="開啟檢視所有項目, 資源和活動指派的圖形表現方式";
+
+DNBProcCmdHeader.DELMPrcPertChartHdr.Title="開啟波特圖";
+DNBProcCmdHeader.DELMPrcPertChartHdr.Help="開啟所選活動的波特圖";
+DNBProcCmdHeader.DELMPrcPertChartHdr.ShortHelp="開啟波特圖";
+DNBProcCmdHeader.DELMPrcPertChartHdr.LongHelp="選擇活動並開啟波特圖";
+
+DNBProcCmdHeader.DELMPrcPrecedentViewerHdr.Title="開啟 Precedent 檢視器";
+DNBProcCmdHeader.DELMPrcPrecedentViewerHdr.Help="Open a Precedent Viewer";
+DNBProcCmdHeader.DELMPrcPrecedentViewerHdr.ShortHelp="開啟 Precedent 檢視器";
+DNBProcCmdHeader.DELMPrcPrecedentViewerHdr.LongHelp="選擇根活動並開啟 Precedent 檢視器";
+
+DNBProcCmdHeader.DELMPrcGanttChartHdr.Title="開啟甘特圖";
+DNBProcCmdHeader.DELMPrcGanttChartHdr.Help="開啟甘特圖";
+DNBProcCmdHeader.DELMPrcGanttChartHdr.ShortHelp="開啟甘特圖";
+DNBProcCmdHeader.DELMPrcGanttChartHdr.LongHelp="選擇根活動並開啟甘特圖";
+
+DNBProcCmdHeader.DELMPrcResGanttChartHdr.Title="開啟資源甘特圖檢視器";
+DNBProcCmdHeader.DELMPrcResGanttChartHdr.Help="開啟資源甘特圖檢視器";
+DNBProcCmdHeader.DELMPrcResGanttChartHdr.ShortHelp="開啟資源甘特圖檢視器";
+DNBProcCmdHeader.DELMPrcResGanttChartHdr.LongHelp="Visualize Resource Usage with Execution of Process\non Resource in Gantt Viewer";
+
+DNBProcCmdHeader.DELMPrcListProductsHdr.Title="產品清單";
+DNBProcCmdHeader.DELMPrcListProductsHdr.Help="Lists the products associated to the process.";
+DNBProcCmdHeader.DELMPrcListProductsHdr.ShortHelp="產品清單";
+DNBProcCmdHeader.DELMPrcListProductsHdr.LongHelp="Lists the products of the process.";
+
+DNBProcCmdHeader.DELMPrcListResourcesHdr.Title="資源清單";
+DNBProcCmdHeader.DELMPrcListResourcesHdr.Help="Lists the resources associated to the process.";
+DNBProcCmdHeader.DELMPrcListResourcesHdr.ShortHelp="資源清單";
+DNBProcCmdHeader.DELMPrcListResourcesHdr.LongHelp="Lists the resources of the process.";
+
+DNBProcCmdHeader.DELMPrcListUnassignedProductsHdr.Title="清單未指定產品";
+DNBProcCmdHeader.DELMPrcListUnassignedProductsHdr.Help="Lists the unassigned products which were not associated to the process.";
+DNBProcCmdHeader.DELMPrcListUnassignedProductsHdr.ShortHelp="清單未指定產品";
+DNBProcCmdHeader.DELMPrcListUnassignedProductsHdr.LongHelp="Lists the unassigned products of the process.";
+
+DNBProcCmdHeader.DELMPrcListActAssOfProdHdr.Title="表列相關產品活動";
+DNBProcCmdHeader.DELMPrcListActAssOfProdHdr.Help="List all activities associated to the product.";
+DNBProcCmdHeader.DELMPrcListActAssOfProdHdr.ShortHelp="表列相關產品活動";
+DNBProcCmdHeader.DELMPrcListActAssOfProdHdr.LongHelp="Lists all activities associated to the product with type of assignment.";
+
+DNBProcCmdHeader.DELMPrcListActAssOfResHdr.Title="表列相關資源活動";
+DNBProcCmdHeader.DELMPrcListActAssOfResHdr.Help="List all activities associated to the resource.";
+DNBProcCmdHeader.DELMPrcListActAssOfResHdr.ShortHelp="表列相關資源活動";
+DNBProcCmdHeader.DELMPrcListActAssOfResHdr.LongHelp="Lists all activities associated to the resource with type of assignment.";
+
+DNBProcCmdHeader.DELMPrcListHyperlinksHdr.Title="超鏈結清單";
+DNBProcCmdHeader.DELMPrcListHyperlinksHdr.Help="Lists the hyperlinks available in the process.";
+DNBProcCmdHeader.DELMPrcListHyperlinksHdr.ShortHelp="超鏈結清單";
+DNBProcCmdHeader.DELMPrcListHyperlinksHdr.LongHelp="Lists the hyperlinks in the process.";
+
+// Activity Management
+
+DNBProcCmdHeader.DELMPrcImportProductHdr.Title="插入產品"; 
+DNBProcCmdHeader.DELMPrcImportProductHdr.Help="插入產品"; 
+DNBProcCmdHeader.DELMPrcImportProductHdr.ShortHelp="插入產品"; 
+DNBProcCmdHeader.DELMPrcImportProductHdr.LongHelp="Open the dialog box to import a product.";
+
+DNBProcCmdHeader.DELMPrcImportResourceHdr.Title="插入資源";
+DNBProcCmdHeader.DELMPrcImportResourceHdr.Help="插入資源";
+DNBProcCmdHeader.DELMPrcImportResourceHdr.ShortHelp="插入資源";
+DNBProcCmdHeader.DELMPrcImportResourceHdr.LongHelp="Open the dialog box to import a resource.";
+
+DNBProcCmdHeader.DELMPrcCatalogBrowserHdr.Title="目錄瀏覽器";
+DNBProcCmdHeader.DELMPrcCatalogBrowserHdr.Help="Places catalog components";
+DNBProcCmdHeader.DELMPrcCatalogBrowserHdr.ShortHelp="目錄瀏覽器";
+DNBProcCmdHeader.DELMPrcCatalogBrowserHdr.LongHelp="Inserts catalog components into the Process document.";
+
+DNBProcCmdHeader.DELMPrcD5DataImportHdr.Title="輸入 Delmia D5 分件";
+DNBProcCmdHeader.DELMPrcD5DataImportHdr.Help="Inserts an existing Delmia D5 Component";
+DNBProcCmdHeader.DELMPrcD5DataImportHdr.ShortHelp="輸入 Delmia D5 分件";
+DNBProcCmdHeader.DELMPrcD5DataImportHdr.LongHelp="Inserts an existing Delmia D5 Component";
+
+DNBProcCmdHeader.DELMPrcAddLibraryHdr.Title="輸入活動資料庫";
+DNBProcCmdHeader.DELMPrcAddLibraryHdr.Help="輸入活動資料庫";
+DNBProcCmdHeader.DELMPrcAddLibraryHdr.ShortHelp="輸入活動資料庫";
+DNBProcCmdHeader.DELMPrcAddLibraryHdr.LongHelp="Open a dialog box allowing to specify a new activity library.";
+
+DNBProcCmdHeader.DELMPrcLinkActivitiesHdr.Title ="鏈結動作";
+DNBProcCmdHeader.DELMPrcLinkActivitiesHdr.Help ="鏈結所選動作";
+DNBProcCmdHeader.DELMPrcLinkActivitiesHdr.ShortHelp="鏈結所選動作";
+DNBProcCmdHeader.DELMPrcLinkActivitiesHdr.LongHelp= "Select the activities to create a flow between them.";
+
+DNBProcCmdHeader.DELMPrcLinkChildActivitiesHdr.Title="鏈結下層動作";
+DNBProcCmdHeader.DELMPrcLinkChildActivitiesHdr.Help="鏈結下層動作";
+DNBProcCmdHeader.DELMPrcLinkChildActivitiesHdr.ShortHelp="自動鏈結下層動作";
+DNBProcCmdHeader.DELMPrcLinkChildActivitiesHdr.LongHelp="Automatically link children of the selected activities either in series or in parallel";
+
+DNBProcCmdHeader.DELMPrcAddActivityHdr.Title ="插入活動";
+DNBProcCmdHeader.DELMPrcAddActivityHdr.Help ="插入活動";
+DNBProcCmdHeader.DELMPrcAddActivityHdr.ShortHelp="插入活動";
+DNBProcCmdHeader.DELMPrcAddActivityHdr.LongHelp="插入活動";
+
+DNBProcCmdHeader.DELMPrcAddAttributeHdr.Title="新增屬性";
+DNBProcCmdHeader.DELMPrcAddAttributeHdr.Help="新增屬性";
+DNBProcCmdHeader.DELMPrcAddAttributeHdr.ShortHelp="新增屬性";
+DNBProcCmdHeader.DELMPrcAddAttributeHdr.LongHelp="Add Specific User Attribute on an Activity";
+
+DNBProcCmdHeader.DELMPrcGeneralAssignHdr.Title="指定產品或資源";
+DNBProcCmdHeader.DELMPrcGeneralAssignHdr.Help="Assign a product or resource to the selected activity";
+DNBProcCmdHeader.DELMPrcGeneralAssignHdr.ShortHelp="指定產品或資源";
+DNBProcCmdHeader.DELMPrcGeneralAssignHdr.LongHelp="Select a product or resource to assign and the activity";
+
+DNBProcCmdHeader.DELMPrcUnassignHdr.Title="取消指定產品或資源";
+DNBProcCmdHeader.DELMPrcUnassignHdr.Help="Unassign all products/resources from the selected activity";
+DNBProcCmdHeader.DELMPrcUnassignHdr.ShortHelp="取消指定產品或資源";
+DNBProcCmdHeader.DELMPrcUnassignHdr.LongHelp="Select an activity to unassign all products/resources";
+
+DNBProcCmdHeader.DELMPrcSPPAssignItemHdr.Title="指定項目";
+DNBProcCmdHeader.DELMPrcSPPAssignItemHdr.Help="Assign an item to the selected activity";
+DNBProcCmdHeader.DELMPrcSPPAssignItemHdr.ShortHelp"指定項目";
+DNBProcCmdHeader.DELMPrcSPPAssignItemHdr.LongHelp= "Select the item to assign and the activity";
+
+DNBProcCmdHeader.DELMPrcSPPFirstAssignItemHdr.Title="首先指定項目";
+DNBProcCmdHeader.DELMPrcSPPFirstAssignItemHdr.Help="First assign an item to the selected activity";
+DNBProcCmdHeader.DELMPrcSPPFirstAssignItemHdr.ShortHelp="首先指定項目";
+DNBProcCmdHeader.DELMPrcSPPFirstAssignItemHdr.LongHelp= "Select the item to assign and the activity";
+
+DNBProcCmdHeader.DELMPrcSPPUnassignItemHdr.Title="取消指定項目";
+DNBProcCmdHeader.DELMPrcSPPUnassignItemHdr.Help="Unassign an item to the selected activity";
+DNBProcCmdHeader.DELMPrcSPPUnassignItemHdr.ShortHelp="取消指定項目";
+DNBProcCmdHeader.DELMPrcSPPUnassignItemHdr.LongHelp="Select the activity";
+
+DNBProcCmdHeader.DELMPrcSPPAssignResourceHdr.Title="指定資源";
+DNBProcCmdHeader.DELMPrcSPPAssignResourceHdr.Help="Assign a resource to the selected activity";
+DNBProcCmdHeader.DELMPrcSPPAssignResourceHdr.ShortHelp="指定資源";
+DNBProcCmdHeader.DELMPrcSPPAssignResourceHdr.LongHelp="Select the resource to assign and the activity";
+
+DNBProcCmdHeader.DELMPrcSPPUnassignResourceHdr.Title="取消指定資源";
+DNBProcCmdHeader.DELMPrcSPPUnassignResourceHdr.Help="Unassign a Resource to the selected activity";
+DNBProcCmdHeader.DELMPrcSPPUnassignResourceHdr.ShortHelp="取消指定資源";
+DNBProcCmdHeader.DELMPrcSPPUnassignResourceHdr.LongHelp="Select the activity";
+
+DNBProcCmdHeader.DELMPrcSPPReplaceResourceHdr.Title="更換資源";
+DNBProcCmdHeader.DELMPrcSPPReplaceResourceHdr.Help="更換資源";
+DNBProcCmdHeader.DELMPrcSPPReplaceResourceHdr.ShortHelp="更換資源";
+DNBProcCmdHeader.DELMPrcSPPReplaceResourceHdr.LongHelp="更換資源";
+
+DNBProcCmdHeader.DELMPrcSPPAssignOutputHdr.Title="指定輸出項目";
+DNBProcCmdHeader.DELMPrcSPPAssignOutputHdr.Help="Assign output item to the selected activity";
+DNBProcCmdHeader.DELMPrcSPPAssignOutputHdr.ShortHelp="指定輸出項目";
+DNBProcCmdHeader.DELMPrcSPPAssignOutputHdr.LongHelp= "Select the item to assign and the activity";
+
+DNBProcCmdHeader.DELMPrcSPPUnassignOutputHdr.Title="取消指定輸出項目";
+DNBProcCmdHeader.DELMPrcSPPUnassignOutputHdr.Help="Unassign output item to the selected activity";
+DNBProcCmdHeader.DELMPrcSPPUnassignOutputHdr.ShortHelp="取消指定輸出項目";
+DNBProcCmdHeader.DELMPrcSPPUnassignOutputHdr.LongHelp= "Select the activity and the item to unassign";
+
+DNBProcCmdHeader.DELMConstraintToPrevCycleHdr.Title="循環間拘束";
+DNBProcCmdHeader.DELMConstraintToPrevCycleHdr.Help="循環間拘束";
+DNBProcCmdHeader.DELMConstraintToPrevCycleHdr.ShortHelp="循環間拘束";
+DNBProcCmdHeader.DELMConstraintToPrevCycleHdr.LongHelp="循環間拘束";
+// PPR Hub Commands
+
+DNBProcCmdHeader.DELMPrcSaveDetailingToPPRHubHdr.Title="存至 PPR Hub with new Detailing";
+DNBProcCmdHeader.DELMPrcSaveDetailingToPPRHubHdr.Help="Save in the PPR Hub with Simulation Detailing in a New Data block";
+DNBProcCmdHeader.DELMPrcSaveDetailingToPPRHubHdr.ShortHelp="Save in the PPR Hub with Simulation Detailing in a New Data block";
+
+DNBProcCmdHeader.DELMPrcFilterPPR_ProjectHdr.Title="由計劃而來的 PPR ";
+DNBProcCmdHeader.DELMPrcFilterPPR_ProjectHdr.Help="Opens a PPR tree from an existing PPR Hub project";
+DNBProcCmdHeader.DELMPrcFilterPPR_ProjectHdr.ShortHelp="Open PPR Hub project";
+
+DNBProcCmdHeader.DELMPrcResourceProjCmdHdr.Title="由計劃而來的資源";
+DNBProcCmdHeader.DELMPrcResourceProjCmdHdr.Help="Load resource from the project";
+DNBProcCmdHeader.DELMPrcResourceProjCmdHdr.ShortHelp="Load resource from the project";
+
+// AXB R15 - Mfg Kit highlight changes - R15MHI008.
+DNBProcCmdHeader.DELMImpPrdResHdr.Title="Import Products, Resources, Manufacturing Assemblies and Manufacturing Kit";
+DNBProcCmdHeader.DELMImpPrdResHdr.Help="Import Products, Resources, Manufacturing Assemblies and Manufacturing Kit from the PPR Database";
+DNBProcCmdHeader.DELMImpPrdResHdr.ShortHelp="Import Products, Resources, Manufacturing Assemblies and Manufacturing Kit from PPRHub";
+
+DNBProcCmdHeader.DELMPrcWorkSysCompCmdHdr.Title="工作系統分件";
+DNBProcCmdHeader.DELMPrcWorkSysCompCmdHdr.Help="Insert Work system Component from the PPR Hub library";
+DNBProcCmdHeader.DELMPrcWorkSysCompCmdHdr.ShortHelp="Insert Work system Component";
+
+DNBProcCmdHeader.DELMPrcProductProjCmdHdr.Title="由計劃而來的產品";
+DNBProcCmdHeader.DELMPrcProductProjCmdHdr.Help="Load products from the project";
+DNBProcCmdHeader.DELMPrcProductProjCmdHdr.ShortHelp="Load products from the project";
+
+DNBProcCmdHeader.DELMPrcSearchCmdHdr.Title="在 PPR Hub 中搜尋";
+DNBProcCmdHeader.DELMPrcSearchCmdHdr.Help="Searches entities in PPR Hub";
+DNBProcCmdHeader.DELMPrcSearchCmdHdr.ShortHelp="Search in PPR Hub";
+
+DNBProcCmdHeader.DELMPrcCreateIPDResourceHdr.Title="為 PPR Hub 所建立的資源";
+DNBProcCmdHeader.DELMPrcCreateIPDResourceHdr.Help="Create Resources for PPR Hub";
+DNBProcCmdHeader.DELMPrcCreateIPDResourceHdr.ShortHelp="Create Resources for PPR Hub";
+
+DNBProcCmdHeader.DELMPrcProductFromProcessHdr.Title="其它程序的產品";
+DNBProcCmdHeader.DELMPrcProductFromProcessHdr.Help="Load associated products for selected process";
+DNBProcCmdHeader.DELMPrcProductFromProcessHdr.ShortHelp="Load associated products for process";
+
+// VAR R13 - Compute Mfg. Context
+DNBProcCmdHeader.DELMPrcLoadMfgCtxHdr.Title="載入加工內容";
+DNBProcCmdHeader.DELMPrcLoadMfgCtxHdr.Help="Load manufacturing context in the V5 document";
+DNBProcCmdHeader.DELMPrcLoadMfgCtxHdr.ShortHelp="載入加工內容";
+
+DNBProcCmdHeader.DELMPrcEditVisuMfgCxtHdr.Title="Edit Visu Param of  Manufacturing Context";
+DNBProcCmdHeader.DELMPrcEditVisuMfgCxtHdr.Help="Edit Visualization Parameters of the loaded Manufacturing Context";
+DNBProcCmdHeader.DELMPrcEditVisuMfgCxtHdr.ShortHelp="Edit Visu Param of Manufacturing Context";
+
+DNBProcCmdHeader.DELMPrcCopyTemplateProcessHdr.Title="複製樣板工作";
+DNBProcCmdHeader.DELMPrcCopyTemplateProcessHdr.Help="Copy Standard Process From Template";
+DNBProcCmdHeader.DELMPrcCopyTemplateProcessHdr.ShortHelp="Copy Standard Process From Template";
+
+DNBProcCmdHeader.DELMPrcCopyStandardProcessHdr.Title="複製標準程序";
+DNBProcCmdHeader.DELMPrcCopyStandardProcessHdr.Help="Copy Standard Process From Project Library";
+DNBProcCmdHeader.DELMPrcCopyStandardProcessHdr.ShortHelp="Copy Standard Process From Project Library";
+
+DNBProcCmdHeader.DELMPrcCopyStandardResourceHdr.Title="複製標準資源";
+DNBProcCmdHeader.DELMPrcCopyStandardResourceHdr.Help="Copy Standard Resource From Project Library";
+DNBProcCmdHeader.DELMPrcCopyStandardResourceHdr.ShortHelp="Copy Standard Resource From Project Library";
+
+DNBProcCmdHeader.DELMPrcExtPropertyPanelHdr.Title="開啟延伸性質對話框";
+DNBProcCmdHeader.DELMPrcExtPropertyPanelHdr.Help="Open an Extended Property Panel for the selected PPR";
+DNBProcCmdHeader.DELMPrcExtPropertyPanelHdr.ShortHelp="Open Extended Property Panel";
+
+DNBProcCmdHeader.DELMPrcRemoveFromPPRHdr.Title="由 V5 PPR 文件移除";
+DNBProcCmdHeader.DELMPrcRemoveFromPPRHdr.Help="Remove not linked product / resource from V5 PPR document";
+DNBProcCmdHeader.DELMPrcRemoveFromPPRHdr.ShortHelp="Remove product / resource from V5 PPR document";
+
+DNBProcCmdHeader.DELMPrcObjectAccessStatusHdr.Title="獲取編輯資訊";
+DNBProcCmdHeader.DELMPrcObjectAccessStatusHdr.Help="Get edit information for selected PPR objects";
+DNBProcCmdHeader.DELMPrcObjectAccessStatusHdr.ShortHelp="Get edit information for selected PPR objects";
+
+DNBProcCmdHeader.DELMPrcPPRUnlockCmdHdr.Title="釋放所選 PPR 物件";
+DNBProcCmdHeader.DELMPrcPPRUnlockCmdHdr.Help="Unlock selected PPR objects";
+DNBProcCmdHeader.DELMPrcPPRUnlockCmdHdr.ShortHelp="Unlock selected PPR objects";
+
+DNBProcCmdHeader.DELMPrcPPRListReadOnlyHdr.Title="表列所有唯讀 PPR 物件";
+DNBProcCmdHeader.DELMPrcPPRListReadOnlyHdr.Help="List all PPR objects that are read only in this V5 document";
+DNBProcCmdHeader.DELMPrcPPRListReadOnlyHdr.ShortHelp="List all PPR objects that are read only in this V5 document";
+
+DNBProcCmdHeader.DELMPrcEditHubDocInfoHdr.Title="Edit PPR Hub Document's Information";
+DNBProcCmdHeader.DELMPrcEditHubDocInfoHdr.Help="Edit selected PPR Hub document's information";
+DNBProcCmdHeader.DELMPrcEditHubDocInfoHdr.ShortHelp="Edit selected PPR Hub document's information";
+
+
+DNBProcCmdHeader.DELMPrcPPRHubPackAndGoHdr.Title="建立壓縮並跳至資料組";
+DNBProcCmdHeader.DELMPrcPPRHubPackAndGoHdr.Help="Create Pack & Go data set";
+DNBProcCmdHeader.DELMPrcPPRHubPackAndGoHdr.ShortHelp="Create Pack & Go data set";
+
+DNBProcCmdHeader.DELMPrcDeleteBlobHdr.Title="刪除細部資料";
+DNBProcCmdHeader.DELMPrcDeleteBlobHdr.Help="Delete PPR Hub Process Detailing Data";
+DNBProcCmdHeader.DELMPrcDeleteBlobHdr.ShortHelp="Delete Process Detailing Data";
+// Logical Activities
+
+DNBProcCmdHeader.DELMPrcStartHdr.Title="開始";
+DNBProcCmdHeader.DELMPrcStartHdr.Help="Add a Start activity";
+DNBProcCmdHeader.DELMPrcStartHdr.ShortHelp="Add a Start activity";
+DNBProcCmdHeader.DELMPrcStartHdr.LongHelp="Add a Start activity in the active process.";
+
+DNBProcCmdHeader.DELMPrcStopHdr.Title="停止";
+DNBProcCmdHeader.DELMPrcStopHdr.Help="Add a Stop activity";
+DNBProcCmdHeader.DELMPrcStopHdr.ShortHelp="Add a Stop activity";
+DNBProcCmdHeader.DELMPrcStopHdr.LongHelp="Add a Stop activity in the active process.";
+
+DNBProcCmdHeader.DELMPrcOrInHdr.Title="OrIn";
+DNBProcCmdHeader.DELMPrcOrInHdr.Help="Add a OrIn activity";
+DNBProcCmdHeader.DELMPrcOrInHdr.ShortHelp="Add a OrIn activity";
+DNBProcCmdHeader.DELMPrcOrInHdr.LongHelp="Add a OrIn activity in the active process.";
+
+DNBProcCmdHeader.DELMPrcSwitchHdr.Title="交換";
+DNBProcCmdHeader.DELMPrcSwitchHdr.Help="Add a Switch activity";
+DNBProcCmdHeader.DELMPrcSwitchHdr.ShortHelp="Add a Switch activity";
+DNBProcCmdHeader.DELMPrcSwitchHdr.LongHelp="Add a Switch activity in the active process.";
+
+DNBProcCmdHeader.DELMPrcAndInHdr.Title="AndIn";
+DNBProcCmdHeader.DELMPrcAndInHdr.Help="Add a AndIn activity";
+DNBProcCmdHeader.DELMPrcAndInHdr.ShortHelp="Add a AndIn activity";
+DNBProcCmdHeader.DELMPrcAndInHdr.LongHelp="Add a AndIn activity in the active process.";
+
+DNBProcCmdHeader.DELMPrcAndOutHdr.Title="AndOut";
+DNBProcCmdHeader.DELMPrcAndOutHdr.Help="Add a AndOut activity";
+DNBProcCmdHeader.DELMPrcAndOutHdr.ShortHelp="Add a AndOut activity";
+DNBProcCmdHeader.DELMPrcAndOutHdr.LongHelp="Add a AndOut activity in the active process.";
+
+// PPR Tools
+
+DNBProcCmdHeader.DELMPrcCreateResourceHdr.Title="在 PPR 中建立資源";
+DNBProcCmdHeader.DELMPrcCreateResourceHdr.Help="Create Resources in PPR";
+DNBProcCmdHeader.DELMPrcCreateResourceHdr.ShortHelp="Create Resources in PPR";
+DNBProcCmdHeader.DELMPrcCreateResourceHdr.LongHelp="Create Resources in PPR";
+
+DNBProcCmdHeader.DELMPrcRemoveFromPPRListsHdr.Title="由 PPR 中移除";
+DNBProcCmdHeader.DELMPrcRemoveFromPPRListsHdr.Help="Remove from PPR";
+DNBProcCmdHeader.DELMPrcRemoveFromPPRListsHdr.ShortHelp="Remove from PPR";
+DNBProcCmdHeader.DELMPrcRemoveFromPPRListsHdr.LongHelp="Remove from Product or Resource List";
+
+DNBProcCmdHeader.DELMPrcReparentActivityHdr.Title="Reparent 動作";
+DNBProcCmdHeader.DELMPrcReparentActivityHdr.Help="Reparent Activity";
+DNBProcCmdHeader.DELMPrcReparentActivityHdr.ShortHelp="Reparent Activity";
+DNBProcCmdHeader.DELMPrcReparentActivityHdr.LongHelp="Reparent Activity";
+
+DNBProcCmdHeader.DELMPrcReparentResourceHdr.Title="Reparent 資源";
+DNBProcCmdHeader.DELMPrcReparentResourceHdr.Help="Reparent Resource";
+DNBProcCmdHeader.DELMPrcReparentResourceHdr.ShortHelp="Reparent Resource";
+DNBProcCmdHeader.DELMPrcReparentResourceHdr.LongHelp="Reparent Resource";
+
+DNBProcCmdHeader.DELMPrcRenumberActivitiesHdr.Title="活動重新編號";
+DNBProcCmdHeader.DELMPrcRenumberActivitiesHdr.Help="活動重新編號";
+DNBProcCmdHeader.DELMPrcRenumberActivitiesHdr.ShortHelp="活動重新編號";
+DNBProcCmdHeader.DELMPrcRenumberActivitiesHdr.LongHelp="Renumber all activities to have unique names";
+
+DNBProcCmdHeader.DELMPrcModelCheckerHdr.Title="檢視工作模型";
+DNBProcCmdHeader.DELMPrcModelCheckerHdr.Help="Examine Process Model";
+DNBProcCmdHeader.DELMPrcModelCheckerHdr.ShortHelp="Examine Process Model";
+DNBProcCmdHeader.DELMPrcModelCheckerHdr.LongHelp="Validates the process model against recommended practices";
+
+DNBProcCmdHeader.DELMPrcDocumentProcessHdr.Title="文件工作";
+DNBProcCmdHeader.DELMPrcDocumentProcessHdr.Help="Generate user-defined documentation for this process";
+DNBProcCmdHeader.DELMPrcDocumentProcessHdr.ShortHelp="Generate documentation";
+DNBProcCmdHeader.DELMPrcDocumentProcessHdr.LongHelp="Open a dialog which allows to select the process to document and the script.";
+
+DNBProcCmdHeader.DELMPrcReframePertChartHdr.Title="重新置中動作";
+DNBProcCmdHeader.DELMPrcReframePertChartHdr.Help="Reframe Activity In PPR//PERT Viewer";
+DNBProcCmdHeader.DELMPrcReframePertChartHdr.ShortHelp="Reframe Activity In PPR//PERT Viewer";
+DNBProcCmdHeader.DELMPrcReframePertChartHdr.LongHelp="Centers the selected activity in PPR//PERT Viewer";
+DNBProcCmdHeader.DELMPrcReframePertChartHdr.ErrMsg="No PERT Chart Open for the Level of the Selected Activity"; 
+
+DNBProcCmdHeader.DELMPrcCompareToolHdr.Title="比較工作";
+DNBProcCmdHeader.DELMPrcCompareToolHdr.Help="比較工作";
+DNBProcCmdHeader.DELMPrcCompareToolHdr.ShortHelp="Compare a modified process and its original";
+DNBProcCmdHeader.DELMPrcCompareToolHdr.LongHelp="Compare a modified process and its original";
+
+DNBProcCmdHeader.DELMPrcPPRSelectiveLoadHdr.Title="PPR 選擇載入";
+DNBProcCmdHeader.DELMPrcPPRSelectiveLoadHdr.Help="PPR 選擇載入";
+DNBProcCmdHeader.DELMPrcPPRSelectiveLoadHdr.ShortHelp="PPR 選擇載入";
+DNBProcCmdHeader.DELMPrcPPRSelectiveLoadHdr.LongHelp="PPR 選擇載入";
+
+DNBProcCmdHeader.DELMPrcPartSelectionWindowHdr.Title="零件選擇";
+DNBProcCmdHeader.DELMPrcPartSelectionWindowHdr.Help="零件選擇預覽視窗";
+DNBProcCmdHeader.DELMPrcPartSelectionWindowHdr.ShortHelp="零件選擇";
+DNBProcCmdHeader.DELMPrcPartSelectionWindowHdr.LongHelp="Opens a preview window on selected parts";
+// PERT Tools
+
+DNBProcCmdHeader.DELMPrcLayoutPertChartHdr.Title="布置波特圖";
+DNBProcCmdHeader.DELMPrcLayoutPertChartHdr.Help="Layout current PERT Chart";
+DNBProcCmdHeader.DELMPrcLayoutPertChartHdr.ShortHelp="Layout PERT Chart";
+DNBProcCmdHeader.DELMPrcLayoutPertChartHdr.LongHelp="Select the activity and layout a PERT Chart from this activity";
+
+// Positioning Tools
+
+DNBProcCmdHeader.DELMPrcCreatePositionHdr.Title="在程序 Context 中建立位置";
+DNBProcCmdHeader.DELMPrcCreatePositionHdr.Help="Create Positions of Products and Resources in Process Context";
+DNBProcCmdHeader.DELMPrcCreatePositionHdr.ShortHelp="Create Positions of Products and Resources in Process Context";
+DNBProcCmdHeader.DELMPrcCreatePositionHdr.LongHelp="Create Positions of Assigned Items/Output/Resources with respect to Assigned Resources or Parent Operation's Assigned Resource";
+
+DNBProcCmdHeader.DELMPrcShowPositionHdr.Title="在程序 Context 中顯示位置";
+DNBProcCmdHeader.DELMPrcShowPositionHdr.Help="Show Positions of Products and Resources in Process Context";
+DNBProcCmdHeader.DELMPrcShowPositionHdr.ShortHelp="Show Positions of Products and Resources in Process Context";
+DNBProcCmdHeader.DELMPrcShowPositionHdr.LongHelp="Show Positions of Carried over Products, Resources and Directly Assigned Items in Process Context";
+
+DNBProcCmdHeader.DELMPrcRestorePositionsHdr.Title="回復設計位置";
+DNBProcCmdHeader.DELMPrcRestorePositionsHdr.Help="Restore the design positions for the selected Products or Resources.";
+DNBProcCmdHeader.DELMPrcRestorePositionsHdr.ShortHelp="回復設計位置";
+DNBProcCmdHeader.DELMPrcRestorePositionsHdr.LongHelp="Restoress the design positions for the Selected Products or Resources.";
+
+DNBProcCmdHeader.DNBStateCreationCmdHdr.Title="建立狀態";
+DNBProcCmdHeader.DNBStateCreationCmdHdr.Help="Create new State.";
+DNBProcCmdHeader.DNBStateCreationCmdHdr.ShortHelp="Create new State";
+DNBProcCmdHeader.DNBStateCreationCmdHdr.LongHelp="Create Named States for Products / Resources and Create Beginn States or the 3D Context for Activities.";
+
+DNBProcCmdHeader.DNBDefineConditionCmdHdr.Title="定義狀態";
+DNBProcCmdHeader.DNBDefineConditionCmdHdr.Help="Define Begin conditions, End conditions and 3D context";
+DNBProcCmdHeader.DNBDefineConditionCmdHdr.ShortHelp="Define conditions";
+DNBProcCmdHeader.DNBDefineConditionCmdHdr.LongHelp="Define Begin conditions, End conditions and 3D context for Activities";
+
+DNBProcCmdHeader.DELMPrcStaticProcessVerificationHdr.Title="統計程序驗證";
+DNBProcCmdHeader.DELMPrcStaticProcessVerificationHdr.Help= "DELMIA Static Process Verification";
+DNBProcCmdHeader.DELMPrcStaticProcessVerificationHdr.ShortHelp="Static Process Verification";
+DNBProcCmdHeader.DELMPrcStaticProcessVerificationHdr.LongHelp= "Statically Verify Processes";
+
+DNBProcCmdHeader.DELMPrcProcessVerificationHdr.Title="程序驗證";
+DNBProcCmdHeader.DELMPrcProcessVerificationHdr.Help= "DELMIA Process Verification";
+DNBProcCmdHeader.DELMPrcProcessVerificationHdr.ShortHelp="Process Verification";
+DNBProcCmdHeader.DELMPrcProcessVerificationHdr.LongHelp= "Verify Processes";
+// URL
+
+DNBProcCmdHeader.DELMPrcNavig4DCameraHdr.Title="建立相機";
+DNBProcCmdHeader.DELMPrcNavig4DCameraHdr.Help="建立新相機";
+DNBProcCmdHeader.DELMPrcNavig4DCameraHdr.ShortHelp="建立相機";
+DNBProcCmdHeader.DELMPrcNavig4DCameraHdr.LongHelp= "Creates a new camera with default settings.";
+
+DNBProcCmdHeader.DELMPrcInsertURLHdr.Title="新增超鏈結";
+DNBProcCmdHeader.DELMPrcInsertURLHdr.Help="新增超鏈結";
+DNBProcCmdHeader.DELMPrcInsertURLHdr.ShortHelp="新增超鏈結";
+DNBProcCmdHeader.DELMPrcInsertURLHdr.LongHelp="新增超鏈結";
+
+DNBProcCmdHeader.DELMPrcOpenURLHdr.Title="至超鏈結";
+DNBProcCmdHeader.DELMPrcOpenURLHdr.Help="至超鏈結";
+DNBProcCmdHeader.DELMPrcOpenURLHdr.ShortHelp="至超鏈結";
+DNBProcCmdHeader.DELMPrcOpenURLHdr.LongHelp= "Jumps to the destination of the hyperlink";
+
+DNBProcCmdHeader.DELMPrcImageToActivityHdr.Title="附加圖檔";
+DNBProcCmdHeader.DELMPrcImageToActivityHdr.Help="附加圖檔";
+DNBProcCmdHeader.DELMPrcImageToActivityHdr.ShortHelp="Grab and attach image";
+DNBProcCmdHeader.DELMPrcImageToActivityHdr.LongHelp="Grab and attach image on an Activity";
+
+DNBProcCmdHeader.DELMPrcNavigation4DViewHdr.Title="建立標註視圖";
+DNBProcCmdHeader.DELMPrcNavigation4DViewHdr.Help="建立標註視圖";
+DNBProcCmdHeader.DELMPrcNavigation4DViewHdr.ShortHelp="建立標註視圖";
+DNBProcCmdHeader.DELMPrcNavigation4DViewHdr.LongHelp="建立標註視圖";
+
+DNBProcCmdHeader.DELMPrcNavigViewDialogHdr.Title="標註視圖...";
+DNBProcCmdHeader.DELMPrcNavigViewDialogHdr.Help="管理標註視圖";
+DNBProcCmdHeader.DELMPrcNavigViewDialogHdr.ShortHelp="管理標註視圖";
+DNBProcCmdHeader.DELMPrcNavigViewDialogHdr.LongHelp="管理使用者定義標註視圖";
+
+// Various
+
+DNBProcCmdHeader.DELMSimSync3DWorldHdr.Title="同步化 3D 模型";
+DNBProcCmdHeader.DELMSimSync3DWorldHdr.Help="Synchronize the 3D model with the selected activity.";
+DNBProcCmdHeader.DELMSimSync3DWorldHdr.ShortHelp="Synchronize the 3D Model with the Selected Activity";
+DNBProcCmdHeader.DELMSimSync3DWorldHdr.LongHelp="Synchronizes the 3D geometry with the selected activity.";
+
+DNBProcCmdHeader.DELMD5IHideShowASMPrcHdr.Title     = "顯示或隱藏含 inheritance 產品.";
+DNBProcCmdHeader.DELMD5IHideShowASMPrcHdr.ShortHelp = "顯示或隱藏含 inheritance 產品.";
+DNBProcCmdHeader.DELMD5IHideShowASMPrcHdr.Help      = "Hide/Show the selected product by propagating the graphical state to children";
+DNBProcCmdHeader.DELMD5IHideShowASMPrcHdr.LongHelp  = "Hide/Show the selected product by propagating the graphical state to children";
+
+DNBProcCmdHeader.DELMShowAllASMPrcHdr.Title     = "顯示含 inheritance 產品.";
+DNBProcCmdHeader.DELMShowAllASMPrcHdr.ShortHelp = "顯示含 inheritance 產品.";
+DNBProcCmdHeader.DELMShowAllASMPrcHdr.Help      = "Show the selected product by propagating the graphical state to children";
+DNBProcCmdHeader.DELMShowAllASMPrcHdr.LongHelp  = "Show the selected product by propagating the graphical state to children";
+
+DNBProcCmdHeader.CATSPPExportCmdHdr.Title     = "輸出 PPR";
+DNBProcCmdHeader.CATSPPExportCmdHdr.ShortHelp = "Export the product data defined in the CATProcess document.";
+DNBProcCmdHeader.CATSPPExportCmdHdr.Help      = "Export the product data defined in the CATProcess document.";
+DNBProcCmdHeader.CATSPPExportCmdHdr.LongHelp  = "Export the product data defined in the CATProcess document.\nContent can be:\n\tthe product AND resource list.\n\the product OR the resource list.";
+
+// MBOM Tools
+
+DNBProcCmdHeader.DELMPrcCreateMfgAssyHdr.Title="建立加工組立";
+DNBProcCmdHeader.DELMPrcCreateMfgAssyHdr.Help="Allows the user to create a Manufacturing Assembly";
+DNBProcCmdHeader.DELMPrcCreateMfgAssyHdr.ShortHelp="Create Manufacturing Assembly";
+DNBProcCmdHeader.DELMPrcCreateMfgAssyHdr.LongHelp="Allows the user to create a Manufacturing Assembly";
+
+DNBProcCmdHeader.DELMPrcCreateMfgKitHdr.Title="建立加工 Kit";
+DNBProcCmdHeader.DELMPrcCreateMfgKitHdr.Help="Allows the user to create a Manufacturing Kit";
+DNBProcCmdHeader.DELMPrcCreateMfgKitHdr.ShortHelp="Create Manufacturing Kit";
+DNBProcCmdHeader.DELMPrcCreateMfgKitHdr.LongHelp="Allows the user to create a Manufacturing Kit";
+
+DNBProcCmdHeader.DELMPrcBomViewerHdr.Title="MBOM 檢視器";
+DNBProcCmdHeader.DELMPrcBomViewerHdr.Help="Displays the Manufacturing Bill of Materials in a Viewer";
+DNBProcCmdHeader.DELMPrcBomViewerHdr.ShortHelp="MBOM Viewer";
+DNBProcCmdHeader.DELMPrcBomViewerHdr.LongHelp="Displays the Manufacturing Bill of Materials in a Viewer";
+
+DNBProcCmdHeader.DELMPrcBomToXMLHdr.Title="輸出 MBOM 至 XML";
+DNBProcCmdHeader.DELMPrcBomToXMLHdr.Help="Export the Manufacturing Bill of Materials to XML";
+DNBProcCmdHeader.DELMPrcBomToXMLHdr.ShortHelp="Export MBOM to XML";
+DNBProcCmdHeader.DELMPrcBomToXMLHdr.LongHelp="Export the Manufacturing Bill of Materials to XML Format";
+
+DNBProcCmdHeader.DELMPrcMAVersioningHdr.Title="加工產品版期";
+DNBProcCmdHeader.DELMPrcMAVersioningHdr.Help="Creates a new version of loaded Manufacturing Product";
+DNBProcCmdHeader.DELMPrcMAVersioningHdr.ShortHelp="Version Manufacturing Product";
+DNBProcCmdHeader.DELMPrcMAVersioningHdr.LongHelp="Creates a new version of loaded Manufacturing Product";
+
+
+

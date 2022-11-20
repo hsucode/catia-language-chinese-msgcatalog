@@ -1,0 +1,97 @@
+// ==========================================================
+// Resources file for VPM integration in DataLifeCyce Monitor
+// November 2003
+// US version
+// ==========================================================
+VpmDuc.Main.Title="在 ENOVIAVPM 中搜尋文件";
+VpmDuc.DocTypNLSName="ENOVIAVPM";
+
+VpmDuc.Frame.Connection.Title="資料庫連接";
+VpmDuc.Frame.Connection.Help="連接至資料庫";
+
+VpmDuc.User.Title="使用者名稱:";
+VpmDuc.XPwd.Title="密碼:";
+VpmDuc.Serv.Title="伺服器:";
+VpmDuc.Role.Title="角色:";
+VpmDuc.WhatRole.Title="您今天的角色?";
+VpmDuc.UnixHost.Title="Unix 主機:";
+
+VpmDuc.Btn.Connect.Title="連接";
+VpmDuc.Btn.Connect.Help="連接至資料庫";
+
+VpmDuc.Btn.ConnectRole.Title="搜尋角色";
+VpmDuc.Btn.ConnectRole.Help="搜尋清單中的可用角色";
+
+VpmDuc.Btn.Options.Title="選項";
+VpmDuc.Btn.Options.Help="Vpm 設定";
+
+// Query resources
+
+VpmDuc.Frame.Query.Title="搜尋文件";
+VpmDuc.Frame.Query.Help="在資料庫中搜尋文件";
+
+VpmDuc.Env.Title = "環境 :";
+VpmDuc.Table.Title = "表 :";
+
+VpmDuc.Btn.Apply.Title="應用";
+VpmDuc.Btn.Apply.Help="應用詢問";
+
+VpmDuc.Frame.Output.Title="輸出";
+VpmDuc.Frame.Output.Help="輸出";
+
+VpmDuc.Chk.SaveOnDisk.Title="儲存文件至目錄 : /p1";
+VpmDuc.Chk.SaveOnDisk.Help="儲存文件至目標目錄";
+
+VpmDuc.Lbl.SearchMode.Title="以字串搜尋文件";
+VpmDuc.Cmb.SearchMode.StartWith="起始為";
+VpmDuc.Cmb.SearchMode.With="含";
+VpmDuc.Cmb.SearchMode.Like="似";
+VpmDuc.Cmb.SearchMode.Equal="相當";
+
+VpmDuc.Chk.Change.Title="輸出命名定義";
+VpmDuc.Chk.Change.Help="自訂檔名定義";
+VpmDuc.Btn.Change.Title="自訂輸出命名...";
+VpmDuc.FileNamingDefChange.Title="自訂輸出命名";
+
+VpmDuc.FileNamingDefChange.Wng="更改輸出命名警告";
+VpmDuc.FileNamingDefChange.Txt="更改目前環境中 / 表格可能影響之前命名定義 \n 將應用新的預設命名定義 \n Select Change Naming Definition button to redefine your naming according the new Environment/Table attributes.";
+//////////////////////////// ERROR MESSAGES ////////////////////////////
+
+MsgInfo.Connection.OK="成功連接伺服器 /p1 ";
+MsgInfo.AlreadyConnected="已連接至伺服器 /p1";
+ERR.MappingKO="The mapping of the environment from the server /p1 has not been declared or can not be found. 
+Contact your administrator or declare your mapping via the Tools/Options";
+
+ERR.NoRole="No Role available for user
+Check user is declared in database
+Check a server is running";
+
+ERR.NoServer="No server are found in current configuration
+Contact your administrator or declare your mapping via the Tools/Options";
+
+EmptyBase.Title="資料庫中未發現文件
+空資料庫";
+NoDocFound.Title="No document satisfying the search criterion found in database
+Check \"/p1\" attribut is correctly mapped via the Tools/Options";
+
+DocFound.Title="資料庫中符合搜尋標準的 /p1 文件";
+
+ERR.CommitKO="認證資料庫中的修改發生錯誤";
+
+Warning.Title="警告";
+Error.Title="錯誤";
+Information.Title="資訊";
+
+LBL.TargetDirectory="目的地目錄";
+
+VpmDuc.Warning.Help.col1="下列文件目錄不存在 \n";
+VpmDuc.Warning.Help.col2="請安裝文件";
+VpmDuc.Warning.Title="警告";
+VpmDuc.Warning.NoBrowser="無瀏覽器";
+VpmDuc.ChkLbl.SaveToXML.Title="儲存選項";
+VpmDuc.Rad.DocID.Title="文件 ID";
+VpmDuc.Rad.DocID.Help="選擇儲存文件 ID";
+VpmDuc.Rad.VPMQuery.Title="詢問";
+VpmDuc.Rad.VPMQuery.Help="選擇儲存 VPM 詢問";
+
+

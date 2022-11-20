@@ -1,0 +1,59 @@
+//-----------------------------------------------------
+// Resource file for CATCCSBoundingBoxDlg class
+// En_US
+//-----------------------------------------------------
+//=============================================================================
+// COPYRIGHT DASSAULT SYSTEMES 2003
+//=============================================================================
+//
+//   Resource file for NLS purpose. 
+//
+//=============================================================================
+//
+// Implementation Notes :
+//
+//=============================================================================
+// 19/02/03 : jcb; creation
+//=============================================================================
+
+ Title = "建立圍繞盒";
+
+ NoSelection = "未選擇";
+
+ Standard = "標準";
+ 
+ // Axis definition
+ FrmRoot.FrmAxis.Title			= "軸定義 ";
+ FrmRoot.FrmAxis.LbAxis.Title	= " 方向  ";
+ 
+ // Bounding box definition
+ FrmRoot.CCSBoxFrame.Title			 = "圍繞盒定義 ";
+ FrmRoot.CCSBoxFrame.XMINLabel.Title = " X 最小  ";
+ FrmRoot.CCSBoxFrame.XMAXLabel.Title = " X 最大  ";
+ FrmRoot.CCSBoxFrame.YMINLabel.Title = " Y 最小  ";
+ FrmRoot.CCSBoxFrame.YMAXLabel.Title = " Y 最大  ";
+ FrmRoot.CCSBoxFrame.ZMINLabel.Title = " Z 最小  ";
+ FrmRoot.CCSBoxFrame.ZMAXLabel.Title = " Z 最大  ";
+ FrmRoot.CCSBoxFrame.XThickLabel.Title = " X 厚度 ";
+ FrmRoot.CCSBoxFrame.YThickLabel.Title = " Y 厚度 ";
+ FrmRoot.CCSBoxFrame.ZThickLabel.Title = " Z 厚度 ";
+
+ // Bounding box size
+ FrmRoot.CCSSizeFrame.Title			 = "圍繞盒大小 ";
+ FrmRoot.CCSSizeFrame.DXLabel.Title = " X 長度  ";
+ FrmRoot.CCSSizeFrame.DYLabel.Title = " Y 長度 ";
+ FrmRoot.CCSSizeFrame.DZLabel.Title = " Z 長度  ";
+
+ // Help
+ FrmRoot.FrmAxis.LongHelp = 
+	"Changes the axis system used to define the bounding box by choosing either:  
+an axis in one of the other axis systems,  
+a plane or a planar surface.";
+ 
+ FrmRoot.CCSBoxFrame.LongHelp = 
+	"Defines the minimum and maximum values that are required in X, Y and Z to create a box that would surround the part. 
+The default box is displayed in bold dark lines.";
+
+ FrmRoot.CCSSizeFrame.LongHelp = 
+    "Displays the size of the bounding box.";
+

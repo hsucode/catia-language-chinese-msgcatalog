@@ -1,0 +1,63 @@
+INFO_HELP="
+CATDMUCacheSettings 讀取和或修改暫存器設定.\n
+用法:\n
+   獲取說明資料:
+      CATDMUCacheSettings -h\n
+   讀取目前暫存器設定值 :
+      CATDMUCacheSettings -r outputfile [-unit string]\n
+   修改暫存器設定值 :
+      CATDMUCacheSettings [-r outputfile] [-a|-d]
+                          [-u localdir] [-g reldir1[ reldir2..]]
+                          [-tscheck|-notscheck] [-size value1]
+                          [-sag value2] [-vox value3] [-unit string]\n
+Windows 例子:\n
+   CATDMUCacheSettings -h
+   CATDMUCacheSettings -r c:\u\currentvalues.txt -unit INCH
+   CATDMUCacheSettings -a\n
+Unix 例子:\n
+   CATDMUCacheSettings -h
+   CATDMUCacheSettings -a -u /u/local -sag 0.1
+   CATDMUCacheSettings -r /u/currentvalues -a -u /u/local -sag 0.1\n
+引數:\n
+   -h            : 說明.
+   -r outputfile : 讀取設定 (修改前).
+                   命令線格式使用相同選擇.
+   -a            : 啟動暫存器管理.
+   -d            : 停止暫存器管理.
+   -u localdir   : 定義目前暫存器目錄.
+   -g reldir1 .. : 定義發行的暫存器目錄.
+   -tscheck      : 檢查時間記錄.
+   -notscheck    : 不檢查時間記錄.
+   -size value1  : 定義局部暫存器最大容量.
+                   容量大小以 MegaBytes 表示 (Mo).
+   -sag value2   : 以指定 sag 值來產生 cgr 檔.
+   -vox value3   : 以指定 voxel 值來產生 3dmap 檔.
+   -unit string  : 定義長度數值單位.
+                   可能是:
+                   - MM 公厘
+                   - CM 公分
+                   - M 公尺
+                   - INCH 英寸
+                   - FOOT 英尺
+                   預設單位為公厘 (MM).\n
+偵錯 :\n
+   可能的退出情形數值是 :\n
+      0   成功完成. \n
+      1   因下列原因失敗 :
+          - 未有軟體授權
+          - 缺少引數
+          - 無效選擇組合
+          - 選擇後缺少參數
+          - 缺少輸出檔案
+          - 無法寫入輸出檔
+          - 無效目錄\n
+      2   處理中錯誤.\n
+錯誤情形 :\n
+   退出情形 = 1:
+      使用標準錯誤檔案內所含資訊修改命令線或環境.\n
+   退出情形 = 2:
+      請連絡售商. 
+";
+ERR_PROCESSING="錯誤: CATDMUCacheSettings 處理失敗.";
+START_BATCH="CATDMUCacheSettings 開始在 :";
+STOP_BATCH="CATDMUCacheSettings 經過下列時間停止 :";

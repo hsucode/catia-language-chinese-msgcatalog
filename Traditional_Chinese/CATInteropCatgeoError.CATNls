@@ -1,0 +1,216 @@
+// Fw V4CGMInteroperability 
+//  module V4ToM2
+//______________________________________________________________
+// 1-100 errors aparaissant dans le constructeur de MMMObject 
+//class CATInteropCatgeoError, InteropCatgeo , CATInternalError
+//_______________________________________________________________
+// 1__99 erreurs varies
+MigrationERR_001.Request="與V4 元素的溝通:";
+MigrationERR_001.Diagnostic="此 V4 元素無法轉換, 輸入 MODEL 中含有無效元素.";
+MigrationERR_001.Advice="請用 CATCLN 功能來清除模型, 或在 CATIA V4 中重新手動定義它.";
+//
+// For IER = 105
+MigrationERR_002.Request="元素的溝通:";
+MigrationERR_002.Diagnostic="在輸入的模型中具有無效的溶入邊";
+MigrationERR_002.Advice="修剪面間的空隙值大於曲線相交裕度設定";
+// 100_199 for Solide Error *SOL
+//
+SolideERR_100.Request="與V4 實體的溝通:";
+SolideERR_100.Diagnostic="此 V4 實體無法轉換.";
+SolideERR_100.Advice="強制實體轉換.";
+//
+// 200_249 for *Ski   error
+//
+SkinERR_200.Request="與V4 組合面的溝通";
+SkinERR_200.Diagnostic="此 V4 組合面無法轉換";
+SkinERR_200.Advice="請檢查組合面.";
+//
+// 250_299 for *VOL  error
+//
+VolumeERR_250.Request="與V4 體積的溝通:";
+VolumeERR_250.Diagnostic="此 V4 體積無法轉換.";
+VolumeERR_250.Advice="請檢查體積.";
+//_____________________________________________________________
+// Geometry V4ToV5
+//class CATInteropInternalError, InteropInt , CATInternalError
+//_____________________________________________________________
+MiscErrorERR_300.Request="修剪面升級 : ";
+MiscErrorERR_300.Diagnostic="輸入修剪面時發生內部錯誤.";
+MiscErrorERR_300.Advice="請反應此問題.";
+//
+CurveERR_301.Request="輸入曲線或組合曲線:";
+CurveERR_301.Diagnostic="輸入曲線時發生內部錯誤.";
+CurveERR_301.Advice="請反應此問題.";
+//
+SurfaceERR_302.Request="輸入曲面:";
+SurfaceERR_302.Diagnostic="輸入曲面時發生內部錯誤.";
+SurfaceERR_302.Advice="請反應此問題.";
+//
+ReversedEdgeERR_303.Request="邊線轉換:";
+ReversedEdgeERR_303.Diagnostic="曲線無法投影至曲面.";
+ReversedEdgeERR_303.Advice="逆轉邊的方向.";
+//
+NoResultForSurfaceERR_304.Request="輸入曲面:";
+NoResultForSurfaceERR_304.Diagnostic="計算曲面時沒有輸出.";
+NoResultForSurfaceERR_304.Advice="請反應此問題.";
+//
+NoResultForCurveERR_305.Request="輸入曲線: ";
+NoResultForCurveERR_305.Diagnostic="計算曲線時沒有輸出.";
+NoResultForCurveERR_305.Advice="請反應此問題.";
+//
+NoResultForEdgeERR_306.Request="輸入邊:"; 
+NoResultForEdgeERR_306.Diagnostic="計算邊時沒有輸出.";
+NoResultForEdgeERR_306.Advice="請反應此問題.";
+//
+WrongResultForEdgeERR_307.Request="輸入邊:";
+WrongResultForEdgeERR_307.Diagnostic="計算邊時沒有輸出.";
+WrongResultForEdgeERR_307.Advice="請反應此問題.";
+//
+NullTangentOnCurveERR_308.Request="曲線輸入:";
+NullTangentOnCurveERR_308.Diagnostic="退化曲線的無效相切.";
+NullTangentOnCurveERR_308.Advice="修正曲線來強制無效切點.";
+//
+NullTangentOnSurfaceERR_309.Request="曲面輸入:";
+NullTangentOnSurfaceERR_309.Diagnostic="退化曲面的無效相切.";
+NullTangentOnSurfaceERR_309.Advice="修正曲面來強制無效切點.";
+//
+LowMemoryERR_310.Request="輸入轉換:";
+LowMemoryERR_310.Diagnostic="因記憶體不足而中斷.";
+LowMemoryERR_310.Advice="請簡化模型以減小模型大小.";
+//---------------------------------
+// Classe gerant les erreurs d'entree/sortie 
+//class CATInteropInputError, InteropInput , CATInputError
+//---------------------------------
+//
+ZEdgeERR_400.Request="邊溶合: ";
+ZEdgeERR_400.Diagnostic="偵測到一個 Z 銳邊. 此組態不支援.";
+ZEdgeERR_400.Advice=	"修改邊來符合 Z 組態.";
+//
+USurfaceERR_401.Request="曲面溶合:";
+USurfaceERR_401.Diagnostic="偵測到一個 U 曲面.";
+USurfaceERR_401.Advice="修改曲面來符合 U 組態.";
+//
+XFaceERR_402.Request="修剪面溶合:";
+XFaceERR_402.Diagnostic="偵測到一個 X 銳面.";
+XFaceERR_402.Advice="修改修剪面來符合 U 組態.";
+//
+MisOrientedFaceERR_403.Request="修剪面溶合:";
+MisOrientedFaceERR_403.Diagnostic="修剪面和薄殼不是同方向.";
+MisOrientedFaceERR_403.Advice=" 修改修剪面的方向.";
+//
+UnMergedEdgeERR_404.Request="修剪面邊溶合:";
+UnMergedEdgeERR_404.Diagnostic="偵測到一個無效的邊.";
+UnMergedEdgeERR_404.Advice="請檢查修剪面的邊是否完整.";
+//
+ZEdgeERR_405.Request="邊線昇級: \n";
+ZEdgeERR_405.Diagnostic="在空間定位上發現 Z 形邊線: /p1.\n";
+ZEdgeERR_405.Advice="請修改邊線來壓制 Z 形組態 .";
+//
+XEdgeERR_406.Request="溶合邊界曲線: \n";
+XEdgeERR_406.Diagnostic="邊界上的無效曲線方向 \n";
+XEdgeERR_406.Advice="曲線方向無效.";
+//
+ControlPointsTooCloseERR_407.Request="邊界溶合 : \n";
+ControlPointsTooCloseERR_407.Diagnostic="偵測到控制點太接近.\n";
+ControlPointsTooCloseERR_407.Advice="重做邊界來壓制錯誤.";
+//
+DegeneratedFaceERR_408.Request="溶合修剪面 :\n";
+DegeneratedFaceERR_408.Diagnostic="修剪面區域無效.\n";
+DegeneratedFaceERR_408.Advice="壓制修剪面.";
+//
+InvalidFaceERR_409.Request="修剪面溶合 :\n";
+InvalidFaceERR_409.Diagnostic="修剪面依附在兩個曲面上.\n";
+InvalidFaceERR_409.Advice="請用 CATCLN 功能來清除模型.";
+//
+InvalidDomainERR_410.Request="修剪面溶合 :\n";
+InvalidDomainERR_410.Diagnostic="修剪面邊界定義無效 \n";
+InvalidDomainERR_410.Advice="請檢查第一個定義是否內含其它的. \n 任意兩定義必須不相交. \n 任一個定義不可包含其它的定義 ";
+//
+FaceKoERR_411.Request="修剪面溶合 :";
+FaceKoERR_411.Diagnostic="修剪面 KO.";
+FaceKoERR_411.Advice="請檢查報告檔中的錯誤訊息.";
+//
+IntersectingLoopsERR_412.Request="修剪面溶合 :\n";
+IntersectingLoopsERR_412.Diagnostic="修剪面邊界在空間位置: /p1 相交.";
+IntersectingLoopsERR_412.Advice="修改修剪面來符合組態.";
+//
+ThinFaceERR_414.Request="修剪面升級 :\n";
+ThinFaceERR_414.Diagnostic="此修剪面邊界混亂 (薄修剪面).\n";
+ThinFaceERR_414.Advice="Suppress 此修剪面.";
+//
+InvalidEdgeConfigurationERR_415.Request="邊線升級 :\n
+";
+InvalidEdgeConfigurationERR_415.Diagnostic="在空間位置: /p1 偵測到無效邊線組態.";
+InvalidEdgeConfigurationERR_415.Advice="請檢查輸入模型的邊線組態是否有效.";
+//
+InvalidInputFaceERR_416.Request="修剪面升級 :\n
+";
+InvalidInputFaceERR_416.Diagnostic="輸入資料無效. \n
+";
+InvalidInputFaceERR_416.Advice="由輸入模型修正此修剪面";
+//
+InvalidInputVolumeOrSkinERR_417.Request="升級 :\n
+";
+InvalidInputVolumeOrSkinERR_417.Diagnostic="因 /p1 修剪面含有無效輸入資料, 導致將個別升級修剪面. \n
+";
+InvalidInputVolumeOrSkinERR_417.Advice="由輸入模型修正無效修剪面";
+//
+NotSplittedFaceERR_418.Request="修剪面升級 :\n
+";
+NotSplittedFaceERR_418.Diagnostic="修剪面只依附在一封閉曲面, not splitted whereas SplitSurf mode is activated. \n
+";
+NotSplittedFaceERR_418.Advice="分割曲面.";
+//
+//______________________________________________________________
+// Module V4MUToM2 
+// 1000 - 1099 : erreurs emises lors de la migration d'un
+//               solide polyhedrique V4.
+//
+// class CATInteropInputErrorMUV4, CATInputError.
+//_______________________________________________________________
+// 
+ConfusedPointsERR_1000.Request="轉換 V4 Solid mock-up 修剪面 :\n";
+ConfusedPointsERR_1000.Diagnostic="修剪面頂點混亂.\n";
+ConfusedPointsERR_1000.Advice="請移除反曲修剪面.";
+//
+InLinePointsERR_1001.Request="轉換 V4 Solid mock-up 修剪面 :\n";
+InLinePointsERR_1001.Diagnostic="修剪面頂點在線上.\n";
+InLinePointsERR_1001.Advice="請移除反曲修剪面.";
+//
+InsufficientPointsERR_1002.Request="轉換 V4 Solid mock-up 修剪面 :\n";
+InsufficientPointsERR_1002.Diagnostic="頂點不足定義修剪面.\n";
+InsufficientPointsERR_1002.Advice="請移除反曲修剪面.";
+//
+MiddlePlaneNotDefinedERR_1003.Request="轉換 V4 Solid mock-up 修剪面 :\n";
+MiddlePlaneNotDefinedERR_1003.Diagnostic="中介平面未定義. 無法建立修剪面.\n";
+MiddlePlaneNotDefinedERR_1003.Advice="";
+//
+//-------------------------------------------
+//BLI le 8/09/2002
+//  Liste des Warnings
+// Les warnings sont destines a Logger des anomalies
+// rencontrees lors de la migration qui n empechent 
+// pas de migrer l element mais pour autant le 
+// resultat est de qualite douteus
+// le numero est > 2000 
+//-------------------------------------------
+EdgeGapInLoopERR_2001.Request="轉換循環 \n
+";
+EdgeGapInLoopERR_2001.Diagnostic="兩邊界曲線間發現了不正常間隙長度 /p1 \n
+";
+EdgeGapInLoopERR_2001.Advice="兩曲線邊界間間隙 \n
+比曲線相交容差大";
+//
+EmptyShellERR_2002.Request="薄殼轉換 \n
+";
+EmptyShellERR_2002.Diagnostic="偵測到空的薄殼 \n
+";
+EmptyShellERR_2002.Advice="";
+//
+ThinFaceERR_2003.Request="修剪面轉換 \n
+";
+ThinFaceERR_2003.Diagnostic="偵測到薄修剪面. \n
+";
+ThinFaceERR_2003.Advice="";
+
+

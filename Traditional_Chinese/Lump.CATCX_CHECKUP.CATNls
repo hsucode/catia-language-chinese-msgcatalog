@@ -1,0 +1,39 @@
+//------------------------------------------------------
+// Resource file for internal Topological Check-Up 
+// En_EN
+//----------------------------------------------------------------------
+// CAUTION : each index is of maximum length of seventy-two characters !
+//-----------------------------------------------------------------------
+//
+//    *******************************************************************
+//    *  LUMP rule : coherence of active body status
+//    *******************************************************************
+//
+ActiveBody="Upward Links status in context of active /P2.";
+ActiveBody.Incoherent = "Upward Links status incoherent in context of Active /P2.";
+//
+IsMadeOf.nothing = 
+"is empty, no Volume found.";
+//
+IsMadeOf.multipleVolumes = 
+"is made of /P2 Volumes, Boolean operation may failed with such modelisation.";
+//
+//    *******************************************************************
+//    *  LUMP rule : volumes must be connected
+//    *******************************************************************
+//
+//
+IsAConnexDomain = "is a connex Domain of /P2 faces.";
+//
+IsAConnexDomain.denied= "is made of /P2 faces defining /P3 connex Domains ";
+//
+//
+//    *******************************************************************
+//    *  DOMAIN rule : at most one owner in a given Body
+//    *******************************************************************
+Topology.Touched =
+"is a touched topology (temporary attribute for boolean operation or smartduplication).";
+//
+OwnerInBody.many =
+"has many owners inside /P4 : (/P5-th of /P7 inside /P2) and (/P6-th of /P8 inside /P3).";
+//

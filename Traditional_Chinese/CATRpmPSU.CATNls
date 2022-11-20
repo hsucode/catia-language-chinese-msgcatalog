@@ -1,0 +1,55 @@
+INFO_START="開始執行 CATProductStructure ...";
+INFO_ArgV="輸入 --> ";
+INFO_Connection_User="Parameter for Enovia Connection: User =";
+INFO_Connection_Pwd="Parameter for Enovia Connection: Pwd =";
+INFO_Connection_Role="Parameter for Enovia Connection: Role =";
+INFO_Connection_Server="Parameter for Enovia Connection: Server =";
+INFO_Connection_sPwd="Parameter for Enovia Connection: Encrypted sPwd =";
+INFO_spwd_decodeOK="Encrypted password has been decoded...";
+INFO_oFile="Output File path is = ";
+INFO_ConnectCV5EV5="Starting connection between Catia and Enovia...";
+INFO_ConnectOK="Catia is connected to Enovia...";
+INFO_NoConnectCV5EV5="Connection between Catia and Enovia will not be set up...";
+INFO_DisconnectOK="Catia is now deconnected from Enovia...";
+INFO_GenerateOK="Product Structure report has been generated successfuly...";
+
+ERR_PARSING_Internal="### ERROR -> Internal Error while Parsing Inputs !!";
+ERR_MISS_WP="### ERROR -> Missing WPs in Inputs !!";
+ERR_MISS_OutFile="### ERROR -> Missing OutputFile name in Inputs !!";
+ERR_pwd_and_spwd="### ERROR -> iPwd and spwd option cannot be used together !";
+ERR_PSU_Not="### ERROR -> Report on Product Structure can NOT be generated !!" ;
+ERR_spwd_EmptyKO="### ERROR -> The encrypted password is an empty string !";
+ERR_spwd_decodeKO="### ERROR -> The encrypted password cannot be decoded !";
+ERR_Creator="### ERROR -> Internal Error before Report creation !";
+ERR_DisconnectKO="### ERROR -> Pb during Disconnection of Catia from Enovia !";
+ERR_ConnectKO="### ERROR -> Pb during Connection between Catia and Enovia !";
+ERR_CONNECT_Start="### ERROR -> Cannot connect to Enovia !";
+ERR_CONNECT_Internal="### ERROR -> Error while connecting to Enovia !";
+ERR_CONNECT_GetEnv="### ERROR -> Error while getting the Enovia Environment !";
+ERR_CONNECT_noSession="### ERROR -> No Catia Session is Available !";
+ERR_GenerateKO="### ERROR -> Generation the Product Structure failed !";
+
+HELP_PSU="
+--- HELP ---
+	Required
+	-----------------------------------
+		[-f]		--> Absolute Path of ONE WorkPackage
+		[-of]		--> Absolute Path of Output File
+
+	Options
+	-----------------------------------
+	
+		...Connection to ENOVIA will happen ONLY if ALL the following connection 
+		parameters are vaualted.
+
+		[-iUser]	--> ENOVIA user name (must have ADMIN rights)
+		[-iRole]	--> ENOVIA user role (ex: 'VPMADMIN.ADMIN.Default' or '+' for default)
+		[-iServer]	--> ENOVIA server name + port (ex: 'rs150dsa:38070')
+
+		[-iPwd]		--> ENOVIA user password
+		or
+		[-iSPwd]	--> ENOVIA Encrytped user password
+						The passord will be decrypted using 'CATIUExitCrypt' interface.
+						It needs to be encrypted prior to call the batch (cf Doc.)
+
+		[-h]		--> This HELP...";

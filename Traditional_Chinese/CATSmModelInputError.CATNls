@@ -1,0 +1,572 @@
+// COPYRIGHT DASSAULT SYSTEMES  2001
+//=============================================================================
+//
+// CATSmModelInputError.CATNls :
+// En_US                                 
+//
+//=============================================================================
+// Goal             : Input Error Catalog used for Sheet Metal Model
+// Owner            : sye
+// Creation date    : 11/10/2001
+// Usage notes      : This error is dedicated to end user input 
+// 
+// Message example : 
+// CATSmModelInputError_ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// CATSmModelInputError_ERR_2000.Diagnostic = "Un des parametres est negatif";
+// CATSmModelInputError_ERR_2000.Advice     = "Utilisez des parametres positifs";         
+//=============================================================================
+
+CATSmModelInputError_ERR_0001.Request    = "";
+CATSmModelInputError_ERR_0001.Diagnostic = "板金件萃取動作 : 方向之一是無效的.";
+CATSmModelInputError_ERR_0001.Advice     = "";         
+
+CATSmModelInputError_ERR_0002.Request    = "";
+CATSmModelInputError_ERR_0002.Diagnostic = "板金件萃取動作 : 萃取 lump 之一是無效的.";
+CATSmModelInputError_ERR_0002.Advice     = "";         
+
+CATSmModelInputError_ERR_0003.Request    = "";
+CATSmModelInputError_ERR_0003.Diagnostic = "板金件萃取動作 : 初始本體修剪面之一是無效的.";
+CATSmModelInputError_ERR_0003.Advice     = "";         
+
+CATSmModelInputError_ERR_0004.Request    = "";
+CATSmModelInputError_ERR_0004.Diagnostic = 
+"輸入特徵是無效的.";
+CATSmModelInputError_ERR_0004.Advice     = "";         
+
+CATSmModelInputError_ERR_0005.Request    = "";
+CATSmModelInputError_ERR_0005.Diagnostic = 
+"相關特徵 /p1 的本體是無效的.";
+CATSmModelInputError_ERR_0005.Advice     = "";         
+
+CATSmModelInputError_ERR_0006.Request    = "";
+CATSmModelInputError_ERR_0006.Diagnostic = 
+"相關特徵 /p1 的本體不是 3D 本體.";
+CATSmModelInputError_ERR_0006.Advice     = "";         
+
+CATSmModelInputError_ERR_0007.Request    = "";
+CATSmModelInputError_ERR_0007.Diagnostic = 
+"輸入本體修剪面不在特徵 /p1 內.";
+CATSmModelInputError_ERR_0007.Advice     = "";         
+
+CATSmModelInputError_ERR_0008.Request    = "";
+CATSmModelInputError_ERR_0008.Diagnostic = 
+"輸入修剪面含有錯誤形式, 它無法從特徵 /p1 萃取.";
+CATSmModelInputError_ERR_0008.Advice     = "";         
+
+CATSmModelInputError_ERR_0009.Request    = " ";
+CATSmModelInputError_ERR_0009.Diagnostic = "無法建立特徵.";
+CATSmModelInputError_ERR_0009.Advice     = "請先建立板金特徵.";
+ 
+//
+// 020 -> 039 : Erreurs relatives a l'insertion d'un feat
+//
+CATSmModelInputError_ERR_0020.Request    = "";
+CATSmModelInputError_ERR_0020.Diagnostic = 
+"A sheet metal feature can't be inserted at this position,
+because, there is a non sheet metal solid feature before this position.";
+CATSmModelInputError_ERR_0020.Advice     = "";
+
+CATSmModelInputError_ERR_0021.Request    = "";
+CATSmModelInputError_ERR_0021.Diagnostic = 
+"A sheet metal feature can't be inserted at this position,
+because, there is no sheet metal feature before this position.";
+CATSmModelInputError_ERR_0021.Advice     = "Please, create first a sheetmetal feature.";
+
+CATSmModelInputError_ERR_0022.Request    = "";
+CATSmModelInputError_ERR_0022.Diagnostic = 
+"A sheet metal feature can't be inserted in a non solid tool.";
+CATSmModelInputError_ERR_0022.Advice     = "Please, select a solid tool.";
+
+//
+// 050 -> 069 : Erreurs relatives au CCP
+//
+CATSmModelInputError_ERR_0050.Request    = "";
+CATSmModelInputError_ERR_0050.Diagnostic = "此零件內不存在板金件參數. 無法複製.";
+CATSmModelInputError_ERR_0050.Advice     = "請以板金件參數命令建立它或使用進階複製.";  
+
+CATSmModelInputError_ERR_0051.Request    = "";
+CATSmModelInputError_ERR_0051.Diagnostic = "無法複製. 請檢查您的輸入.";
+CATSmModelInputError_ERR_0051.Advice     = "請檢查所有相關的元素是否可複製";  
+
+CATSmModelInputError_ERR_0055.Request    = "";
+CATSmModelInputError_ERR_0055.Diagnostic = "零件中已存在腹板.";
+CATSmModelInputError_ERR_0055.Advice     = "請確定可複製所有相依物件";  
+
+//
+// 100 -> 199 : Erreurs relatives au stamp
+//
+CATSmModelInputError_ERR_0100.Request    = "";
+CATSmModelInputError_ERR_0100.Diagnostic = "參數導致展開印記.";
+CATSmModelInputError_ERR_0100.Advice     = "請檢查您的參數.";  
+       
+CATSmModelInputError_ERR_0101.Request    = "";
+CATSmModelInputError_ERR_0101.Diagnostic = "板金邊界上不允許印記 .";
+CATSmModelInputError_ERR_0101.Advice     = "請檢查您的輸入.";  
+
+//
+CATSmModelInputError_ERR_0102.Request    = "You try to set /p1 as a die for the stamp.";
+CATSmModelInputError_ERR_0102.Diagnostic = 
+"/p1 is already a punch for this stamp.
+Punch and die can not be the same.";
+CATSmModelInputError_ERR_0102.Advice     = "Choose an other die."; 
+
+//
+CATSmModelInputError_ERR_0103.Request    = "You try to set /p1 as a punch for the stamp.";
+CATSmModelInputError_ERR_0103.Diagnostic = 
+"/p1 is already a die for this stamp.
+Punch and die can not be the same.";
+CATSmModelInputError_ERR_0103.Advice     = "Choose an other punch."; 
+
+CATSmModelInputError_ERR_0104.Request    = "You try to make a stamp with a fillet.";
+CATSmModelInputError_ERR_0104.Diagnostic = "For 'With Die' option, if no die is selected, it is not possible to add a fillet.";
+CATSmModelInputError_ERR_0104.Advice     = "Select a die, choose 'With opening' option or uncheck fillet button."; 
+
+CATSmModelInputError_ERR_0105.Request    = "You have only defined a punch and no die.";
+CATSmModelInputError_ERR_0105.Diagnostic = "Your operation seems to be a cutting operation.";
+CATSmModelInputError_ERR_0105.Advice     = "Create a cutout or choose 'With opening' option if the die is implicit."; 
+
+CATSmModelInputError_ERR_0106.Request    = "";
+CATSmModelInputError_ERR_0106.Diagnostic = "The stamp cannot be unfolded because the flat pattern diameter exceeds the flanged hole external contour";
+CATSmModelInputError_ERR_0106.Advice     = "Change your parameters."; 
+
+//
+// 200 -> 299 : Erreurs relatives au pattern et mirror
+//
+CATSmModelInputError_ERR_0200.Request    = "You try to pattern or to mirror the feature /p1.";
+CATSmModelInputError_ERR_0200.Diagnostic = "The feature /p1 is not a sheet metal feature.";
+CATSmModelInputError_ERR_0200.Advice     = "You can only transform a sheet metal feature.";  
+
+//
+CATSmModelInputError_ERR_0201.Request    = "";
+CATSmModelInputError_ERR_0201.Diagnostic = 
+"The shape you try to pattern is a stamp without fillet or 
+a stamp with punch and die.
+Stamp without fillet and 
+stamp with punch and die can not be patterned.";
+CATSmModelInputError_ERR_0201.Advice     = "";  
+
+//
+CATSmModelInputError_ERR_0202.Request    = "";
+CATSmModelInputError_ERR_0202.Diagnostic = 
+"The shape you try to pattern or to mirror is non connex,
+Non connex shape can not be transformed.";
+CATSmModelInputError_ERR_0202.Advice     = 
+"Create several connex shapes and transform them.";  
+
+//
+CATSmModelInputError_ERR_0203.Request    = "";
+CATSmModelInputError_ERR_0203.Diagnostic = 
+"The shape you try to pattern or to mirror is not lying on a planar wall,
+only shape lying on a planar wall can be transformed.";
+CATSmModelInputError_ERR_0203.Advice     = 
+"Create the pattern or the mirror of the shape in flat view.";  
+
+//
+CATSmModelInputError_ERR_0204.Request    = "You try to create a pattern or a mirror.";
+CATSmModelInputError_ERR_0204.Diagnostic = "No object to transform is defined.";
+CATSmModelInputError_ERR_0204.Advice     = "You need to define an object to transform.";  
+
+//
+CATSmModelInputError_ERR_0205.Request    = "You try to create a pattern or a mirror.";
+CATSmModelInputError_ERR_0205.Diagnostic = "No transformation has been defined.";
+CATSmModelInputError_ERR_0205.Advice     = "You need to define a transformation.";  
+
+//
+CATSmModelInputError_ERR_0206.Request    = "";
+CATSmModelInputError_ERR_0206.Diagnostic = 
+"The shape you try to pattern or to mirror is not lying on a planar wall,
+only shape lying on a planar wall can be transformed.";
+CATSmModelInputError_ERR_0206.Advice     = ""; 
+
+// transfo non analytique
+CATSmModelInputError_ERR_0207.Request    = "";
+CATSmModelInputError_ERR_0207.Diagnostic = 
+"The feature you try to pattern or to mirror is associated to
+a non analytic mapping transformation.
+Feature associated to a mapping transformation can be transformed
+only if this transformation is an analytic mapping transformation.";
+CATSmModelInputError_ERR_0207.Advice     = ""; 
+
+// 
+CATSmModelInputError_ERR_0208.Request    = "";
+CATSmModelInputError_ERR_0208.Diagnostic = 
+"Some instances of the pattern lie on a support different 
+from the support on which the original feature lies. 
+Each instance of a pattern of a flange must lie on 
+the same support on which the flange lies.";
+CATSmModelInputError_ERR_0208.Advice     = ""; 
+
+// 
+CATSmModelInputError_ERR_0209.Request    = "";
+CATSmModelInputError_ERR_0209.Diagnostic = 
+"The mirror lie on a support different 
+from the support on which the original feature lies. 
+The mirror of a flange must lie on 
+the same support on which the flange lies.";
+CATSmModelInputError_ERR_0209.Advice     = ""; 
+
+// 
+CATSmModelInputError_ERR_0210.Request    = "";
+CATSmModelInputError_ERR_0210.Diagnostic = 
+"The shape of the feature you try to pattern or to mirror 
+has been modified by a bend or flatbend.
+The feature can not be patterned";
+CATSmModelInputError_ERR_0210.Advice     = 
+"Create the pattern just after the feature
+or create the pattern before the bend or flat bend"; 
+
+// 
+CATSmModelInputError_ERR_0211.Request    = "";
+CATSmModelInputError_ERR_0211.Diagnostic = 
+"The selected feature /p can not be patterned or mirrored
+in the 3D view because it has been created in the flat view.";
+CATSmModelInputError_ERR_0211.Advice     = 
+"Switch to the flat view and create the pattern or the mirror."; 
+
+// 
+CATSmModelInputError_ERR_0212.Request    = "";
+CATSmModelInputError_ERR_0212.Diagnostic = 
+"The selected feature /p can not be patterned or mirrored
+in the flat view because it has been created in the 3D view.";
+CATSmModelInputError_ERR_0212.Advice     = 
+"Switch to the 3D view and create the pattern or the mirror."; 
+// for CATIPatternAccess, methode GetReferenceOnPattern
+CATSmModelInputError_ERR_0213.Request    = "";
+CATSmModelInputError_ERR_0213.Diagnostic = 
+"Reference on the pattern can not be returned in the flat view 
+because the pattern has been created in the 3D view.";
+CATSmModelInputError_ERR_0213.Advice     = 
+"Switch to the 3D view and ask reference on the pattern."; 
+
+// 
+// for CATIPatternAccess, methode GetReferenceOnPattern
+CATSmModelInputError_ERR_0214.Request    = "";
+CATSmModelInputError_ERR_0214.Diagnostic = 
+"Reference on the pattern can not be returned in the 3D view 
+because the pattern has been created in the flat view.";
+CATSmModelInputError_ERR_0214.Advice     = 
+"Switch to the flat view and ask reference on the pattern."; 
+
+// 
+CATSmModelInputError_ERR_0215.Request    = "";
+CATSmModelInputError_ERR_0215.Diagnostic = 
+"The transformed shape of the feature you try to pattern or to mirror 
+does not lie on the part.
+The feature can not be transformed";
+CATSmModelInputError_ERR_0215.Advice     = 
+"Verify the parameters that define the positions
+for the duplication."; 
+
+//
+CATSmModelInputError_ERR_0216.Request    = "";
+CATSmModelInputError_ERR_0216.Diagnostic = 
+"The selected feature /p can not be transformed.";
+CATSmModelInputError_ERR_0216.Advice     = 
+""; 
+
+CATSmModelInputError_ERR_0217.Request    = "";
+CATSmModelInputError_ERR_0217.Diagnostic = 
+"The selected feature /p is inactive, it can not be transformed.";
+CATSmModelInputError_ERR_0217.Advice     = 
+"Select an active feature"; 
+
+CATSmModelInputError_ERR_0218.Request    = "";
+CATSmModelInputError_ERR_0218.Diagnostic = 
+"The selected feature /p was defined after the current feature.";
+CATSmModelInputError_ERR_0218.Advice     = 
+""; 
+
+CATSmModelInputError_ERR_0219.Request    = "";
+CATSmModelInputError_ERR_0219.Diagnostic = 
+"The selected feature /p does not belong to the current body.";
+CATSmModelInputError_ERR_0219.Advice     = 
+""; 
+
+CATSmModelInputError_ERR_0220.Request    = "";
+CATSmModelInputError_ERR_0220.Diagnostic = 
+"The slave transformations can not be computed.";
+CATSmModelInputError_ERR_0220.Advice     = 
+""; 
+
+//
+// 300 -> 399 : Erreurs relatives au Corner/Chamfer
+//
+CATSmModelInputError_ERR_0300.Request    = "";
+CATSmModelInputError_ERR_0300.Diagnostic = "The corner can not be computed with the given input parameters.";
+CATSmModelInputError_ERR_0300.Advice     = "Modify the input parameters.";  
+
+CATSmModelInputError_ERR_0301.Request    = "";
+CATSmModelInputError_ERR_0301.Diagnostic = "The chamfer can not be computed with the given input parameters.";
+CATSmModelInputError_ERR_0301.Advice     = "Modify the input parameters."; 
+
+
+CATSmModelInputError_ERR_0302.Request    = "One or several concave corners between two non planar supports are found.";
+CATSmModelInputError_ERR_0302.Diagnostic = "Only concave corners between two coplanar supports are allowed for the moment.";
+CATSmModelInputError_ERR_0302.Advice     = "Unselect this kind of edges.";
+
+CATSmModelInputError_ERR_0303.Request    = "";
+CATSmModelInputError_ERR_0303.Diagnostic = "The chamfer can not be computed .";
+CATSmModelInputError_ERR_0303.Advice     = "Modify the propagation mode to Tangency."; 
+
+//
+// 400 -> 424 : Erreurs relatives a l'operateur Fillet 
+//
+CATSmModelInputError_ERR_0400.Request    = "An Axial length of Extremity Relief  is too small.";
+CATSmModelInputError_ERR_0400.Diagnostic = "The Axial length of Extremities Relief  must be greater than /p1.";
+CATSmModelInputError_ERR_0400.Advice     = "Please change the axial length value.";  
+
+CATSmModelInputError_ERR_0401.Request    = "Error In Build of Fillet.";
+CATSmModelInputError_ERR_0401.Diagnostic = "An Extremity Relief Profile could not be computed.";
+CATSmModelInputError_ERR_0401.Advice     = "Please try and modify the input parameters."; 
+
+CATSmModelInputError_ERR_0402.Request    = "Error In Build of Conical Fillet.";
+CATSmModelInputError_ERR_0402.Diagnostic = "The conical axis could not be computed.";
+CATSmModelInputError_ERR_0402.Advice     = "Please modify the input parameters."; 
+
+
+CATSmModelInputError_ERR_0403.Request    = "Error In Build of Conical Fillet.";
+CATSmModelInputError_ERR_0403.Diagnostic = "The conical surface can not be computed.";
+CATSmModelInputError_ERR_0403.Advice     = "Please Check the orientations of supports and / or radii."; 
+
+CATSmModelInputError_ERR_0404.Request    = "Error In Build of Cylindrical Fillet.";
+CATSmModelInputError_ERR_0404.Diagnostic = "A Cylindrical face can not be computed between the two supports.";
+CATSmModelInputError_ERR_0404.Advice     = "Please change supports."; 
+
+CATSmModelInputError_ERR_0405.Request    = "Error In Build of Fillet.";
+CATSmModelInputError_ERR_0405.Diagnostic = "The Fillet must be computed with Planar supports";
+CATSmModelInputError_ERR_0405.Advice     = "Please change supports."; 
+
+CATSmModelInputError_ERR_0406.Request    = "Error In Build of Cylindrical Fillet.";
+CATSmModelInputError_ERR_0406.Diagnostic = "A Cylindrical surface  can not be computed between the cylindrical support and the planar support.";
+CATSmModelInputError_ERR_0406.Advice     = "Please change supports.";
+
+CATSmModelInputError_ERR_0407.Request    = "Error In Build of Fillet.";
+CATSmModelInputError_ERR_0407.Diagnostic = "The Planar supports are parallel.";
+CATSmModelInputError_ERR_0407.Advice     = "Please change supports.";
+
+CATSmModelInputError_ERR_0408.Request    = "Error In Build of Cylindrical Fillet.";
+CATSmModelInputError_ERR_0408.Diagnostic = "A Cylindrical surface can not be computed between the cylindrical support and the planar support.";
+CATSmModelInputError_ERR_0408.Advice     = "Please change cylindrical support direction or decrease fillet radius.";
+
+CATSmModelInputError_ERR_0409.Request    = "Error In Build of Cylindrical Fillet.";
+CATSmModelInputError_ERR_0409.Diagnostic = "A Cylindrical surface can not be computed between the two supports.";
+CATSmModelInputError_ERR_0409.Advice     = "Please change supports or increase fillet radius.";
+
+CATSmModelInputError_ERR_0410.Request    = "Error In Build of Cylindrical Fillet.";
+CATSmModelInputError_ERR_0410.Diagnostic = "There are several fillet solution.";
+CATSmModelInputError_ERR_0410.Advice     = "Please change supports.";
+
+CATSmModelInputError_ERR_0411.Request    = "Error In Build of Cylindrical Fillet.";
+CATSmModelInputError_ERR_0411.Diagnostic = "The axes of cylindrical supports are not parallel.";
+CATSmModelInputError_ERR_0411.Advice     = "Please change supports.";
+
+CATSmModelInputError_ERR_0412.Request    = "Error In Build of Cylindrical Fillet.";
+CATSmModelInputError_ERR_0412.Diagnostic = "The cylindrical supports have the same axis.";
+CATSmModelInputError_ERR_0412.Advice     = "Please change supports.";
+
+
+//
+// 425 -> 449 : Erreurs relatives a l'operateur de creation d'aretes de decoupe 
+//
+CATSmModelInputError_ERR_0425.Request    = "A closed intersection cannot be performed between /p1 and /p2.";
+CATSmModelInputError_ERR_0425.Diagnostic = "No intersection found.";
+CATSmModelInputError_ERR_0425.Advice     = "Please change input topology.";  
+
+CATSmModelInputError_ERR_0426.Request    = "A flat joint intersection cannot be performed between /p1 and /p2.";
+CATSmModelInputError_ERR_0426.Diagnostic = "No intersection found.";
+CATSmModelInputError_ERR_0426.Advice     = "Please change input topology.";   
+
+
+//
+// 450 -> 499 : Erreurs relatives au Design Table
+//
+CATSmModelInputError_ERR_0450.Request    = "No Values found in file /p1.";
+CATSmModelInputError_ERR_0450.Diagnostic = "The file must contained values.";
+CATSmModelInputError_ERR_0450.Advice     = "Please check the input file.";  
+
+CATSmModelInputError_ERR_0451.Request    = "Problem In SheetMetal Parameters deduction design table.";
+CATSmModelInputError_ERR_0451.Diagnostic = "No file found deduction design table.";
+CATSmModelInputError_ERR_0451.Advice     = "Please check the deduction design table.";
+
+CATSmModelInputError_ERR_0452.Request    = "The radius isn't link to standard radius by consequence the SheetMetal Parameters deduction design table isn't take into account.";
+CATSmModelInputError_ERR_0452.Diagnostic = "The radius isn't link to standard radius.";
+CATSmModelInputError_ERR_0452.Advice     = " ";
+ 
+CATSmModelInputError_ERR_0453.Request    = "Problem in SheetMetal Parameters deduction design table.";
+CATSmModelInputError_ERR_0453.Diagnostic = "The deduction can't be computed for an angle of  /p1 degrees.";
+CATSmModelInputError_ERR_0453.Advice     = "Please check the deduction table.";
+
+
+CATSmModelInputError_ERR_0454.Request    = "Problem in SheetMetal Parameters deduction design table.";
+CATSmModelInputError_ERR_0454.Diagnostic = "The angles column must be defined degree unit.";
+CATSmModelInputError_ERR_0454.Advice     = "Please change angle unit.";
+
+CATSmModelInputError_ERR_0455.Request    = "Problem in SheetMetal Parameters deduction design table.";
+CATSmModelInputError_ERR_0455.Diagnostic = "The deductions column must be defined length unit.";
+CATSmModelInputError_ERR_0455.Advice     = "Please change deduction unit.";
+ 
+CATSmModelInputError_ERR_0456.Request    = "Problem in SheetMetal Parameters deduction design table.";
+CATSmModelInputError_ERR_0456.Diagnostic = "Problem in the deductions column.";
+CATSmModelInputError_ERR_0456.Advice     = "Please check the deductions column."; 
+
+CATSmModelInputError_ERR_0457.Request    = "Problem in SheetMetal Parameters deduction design table.";
+CATSmModelInputError_ERR_0457.Diagnostic = "Problem in the angles column.";
+CATSmModelInputError_ERR_0457.Advice     = "Please check the angles column."; 
+
+CATSmModelInputError_ERR_0458.Request    = "";
+CATSmModelInputError_ERR_0458.Diagnostic = "The stamp's design table is no more compliant with the standard defined in the Sheetmetal parameters.";
+CATSmModelInputError_ERR_0458.Advice     = "Edit the stamp, push Standards button to activate the new standard and select appropriate.configuration in the table"; 
+
+       
+//
+// 500 -> 510 : Erreurs relatives au posage 
+//
+CATSmModelInputError_ERR_0500.Request    = "Change your parameters";
+CATSmModelInputError_ERR_0500.Diagnostic = "This geometry cannot be computed, because the result is too complex, or the geometry is not on the support";
+CATSmModelInputError_ERR_0500.Advice     = "Use the preview to show if the result is what you expected";  
+
+//
+// 511 -> 599 : Erreurs relatives au hole 
+//
+CATSmModelInputError_ERR_0511.Request    = "You want to set a support to a hole feature.";
+CATSmModelInputError_ERR_0511.Diagnostic = 
+"This support is invalid. It must be a feature Brep 
+on a top face or on a bottom face of a sheet metal feature.";
+CATSmModelInputError_ERR_0511.Advice     = "Select a top face or a bottom face of a sheet metal feature.";  
+
+CATSmModelInputError_ERR_0512.Request    = "";
+CATSmModelInputError_ERR_0512.Diagnostic = "The hole's design table is no more compliant with the standard defined in the Sheetmetal parameters.";
+CATSmModelInputError_ERR_0512.Advice     = "Edit the hole, push Standards button to activate the new standard and select appropriate configuration in the table"; 
+
+//
+// 600 -> 699 : Erreurs relatives au Hopper 
+//
+CATSmModelInputError_ERR_0600.Request    = "";
+CATSmModelInputError_ERR_0600.Diagnostic = "The Canonical Hopper geometry is too complex to be flattened. ";
+CATSmModelInputError_ERR_0600.Advice     = "Please, modify the canonical Hopper profiles or opening points.";
+
+// Les profiles
+CATSmModelInputError_ERR_0601.Request    = "";
+CATSmModelInputError_ERR_0601.Diagnostic = "The Hopper first sketch does not lead to a canonical Hopper.";
+CATSmModelInputError_ERR_0601.Advice     = "Please, modify the Hopper inputs.";  
+
+CATSmModelInputError_ERR_0602.Request    = "";
+CATSmModelInputError_ERR_0602.Diagnostic = "The Hopper second sketch does not lead to a canonical Hopper.";
+CATSmModelInputError_ERR_0602.Advice     = "Please, modify the Hopper inputs.";
+
+CATSmModelInputError_ERR_0603.Request    = "";
+CATSmModelInputError_ERR_0603.Diagnostic = "The Hopper Sketches are not consistent. The canonical Hopper can not be updated.";
+CATSmModelInputError_ERR_0603.Advice     = "Please, modify the Hopper inputs.";
+
+// Les points d ouverture
+CATSmModelInputError_ERR_0604.Request    = "";
+CATSmModelInputError_ERR_0604.Diagnostic = "The Hopper first opening point does not lie on the first sketch. The canonical Hopper can not be updated.";
+CATSmModelInputError_ERR_0604.Advice     = "Please, modify the Hopper inputs.";
+
+CATSmModelInputError_ERR_0605.Request    = "";
+CATSmModelInputError_ERR_0605.Diagnostic = "The Hopper second opening point does not lie on the first sketch. The canonical Hopper can not be updated.";
+CATSmModelInputError_ERR_0605.Advice     = "Please, modify the Hopper inputs.";
+
+CATSmModelInputError_ERR_0606.Request    = "";
+CATSmModelInputError_ERR_0606.Diagnostic = "The Hopper opening points do not lie on facing sketches elements. The canonical Hopper can not be updated.";
+CATSmModelInputError_ERR_0606.Advice     = "Please, modify the Hopper inputs.";
+
+// Messages generiques
+CATSmModelInputError_ERR_0607.Request    = "";
+CATSmModelInputError_ERR_0607.Diagnostic = "The Hopper folded shape update has failed.";
+CATSmModelInputError_ERR_0607.Advice     = "Please, modify the Hopper inputs.";
+
+CATSmModelInputError_ERR_0608.Request    = "";
+CATSmModelInputError_ERR_0608.Diagnostic = "The Hopper folded result (shape thickening) update has failed.";
+CATSmModelInputError_ERR_0608.Advice     = "Check your inputs or/and try to invert the material side.";
+//"Please, modify the Hopper inputs.";
+
+CATSmModelInputError_ERR_0609.Request    = "";
+CATSmModelInputError_ERR_0609.Diagnostic = "The Hopper flattened shape update has failed.";
+CATSmModelInputError_ERR_0609.Advice     = "Please, modify the Hopper inputs.";
+
+CATSmModelInputError_ERR_0610.Request    = "";
+CATSmModelInputError_ERR_0610.Diagnostic = "The Hopper flattened result update has failed.";
+CATSmModelInputError_ERR_0610.Advice     = "Please, modify the Hopper inputs.";
+
+
+CATSmModelInputError_ERR_Hopper_0601.Request    = "";
+CATSmModelInputError_ERR_Hopper_0601.Diagnostic = "The Hopper type can not be changed for that feature (created before V5R14).";
+CATSmModelInputError_ERR_Hopper_0601.Advice     = "Please, create another Hopper to access the complete functionnalities.";  
+
+// -- En forme --
+CATSmModelInputError_ERR_Hopper_FD_0601.Request    = "The update of the Hopper folded shape failed";
+CATSmModelInputError_ERR_Hopper_FD_0601.Diagnostic = "The reference wire does not lie on the Hopper surface or does not split it.";
+CATSmModelInputError_ERR_Hopper_FD_0601.Advice     = "Please, modify the reference wire.";  
+
+CATSmModelInputError_ERR_Hopper_FD_0602.Request    = "The update of the Hopper folded shape failed";
+CATSmModelInputError_ERR_Hopper_FD_0602.Diagnostic = "The tear wire does not lie on the Hopper surface or does not split it.";
+CATSmModelInputError_ERR_Hopper_FD_0602.Advice     = "Please, modify the tear wire.";  
+
+CATSmModelInputError_ERR_Hopper_FD_0603.Request    = "The update of the Hopper folded shape failed";
+CATSmModelInputError_ERR_Hopper_FD_0603.Diagnostic = "The Hopper specifications do not allow to build a result in the folded view.";
+CATSmModelInputError_ERR_Hopper_FD_0603.Advice     = "Please, modify the Hopper specifications.";  
+
+// -- A plat --
+CATSmModelInputError_ERR_Hopper_FP_0603.Request    = "The update of the Hopper unfolded shape failed";
+CATSmModelInputError_ERR_Hopper_FP_0603.Diagnostic = "The Hopper specifications do not allow to build a result in the unfolded view.";
+CATSmModelInputError_ERR_Hopper_FP_0603.Advice     = "Please, modify the Hopper specifications.";  
+
+//
+// 700 -> 799 : Erreurs relatives au Fold UnFold 
+//
+CATSmModelInputError_ERR_0700.Request    = "Build of /p1 failed.";
+CATSmModelInputError_ERR_0700.Diagnostic = "An unexpected error occured during the Folded build.";
+CATSmModelInputError_ERR_0700.Advice     = "";
+
+CATSmModelInputError_ERR_0701.Request    = "Fold / unfold operator error.";
+CATSmModelInputError_ERR_0701.Diagnostic = "It's not allowed to unfold face with null bend radius.";
+CATSmModelInputError_ERR_0701.Advice     = "Please, modify the inputs";
+
+CATSmModelInputError_ERR_0702.Request    = "Fold / unfold operator error.";
+CATSmModelInputError_ERR_0702.Diagnostic = "An open angle is null.";
+CATSmModelInputError_ERR_0702.Advice     = "Please, modify the inputs";
+
+CATSmModelInputError_ERR_0703.Request    = "Fold / unfold operator error.";
+CATSmModelInputError_ERR_0703.Diagnostic = "More than one transformation find on face /p1.";
+CATSmModelInputError_ERR_0703.Advice     = "";
+
+CATSmModelInputError_ERR_0704.Request    = "A folding face is found in unfolding faces list.";
+CATSmModelInputError_ERR_0704.Diagnostic = "An unfolding face was change to a folding face.";
+CATSmModelInputError_ERR_0704.Advice     = "Please, modify the inputs.";
+
+CATSmModelInputError_ERR_0705.Request    = "A unfolding face is found in folding faces list.";
+CATSmModelInputError_ERR_0705.Diagnostic = "An folding face was change to a unfolding face.";
+CATSmModelInputError_ERR_0705.Advice     = "Please, modify the inputs.";
+
+CATSmModelInputError_ERR_0706.Request    = "Fold / unfold operator error.";
+CATSmModelInputError_ERR_0706.Diagnostic = "Invalid Reference face.";
+CATSmModelInputError_ERR_0706.Advice     = "Please, modify the inputs";
+
+CATSmModelInputError_ERR_0707.Request    = "Fold / unfold operator error.";
+CATSmModelInputError_ERR_0707.Diagnostic = "One or Several faces cannot be unfold.";
+CATSmModelInputError_ERR_0707.Advice     = "Please, modify the inputs";
+
+//
+// 800 -> 899 : Erreurs relatives au Mirror
+//
+// 
+CATSmModelInputError_ERR_0800.Request    = "";
+CATSmModelInputError_ERR_0800.Diagnostic = 
+"The feature /p1 can not be mirrored.";
+CATSmModelInputError_ERR_0800.Advice     = ""; 
+
+CATSmModelInputError_ERR_0801.Request    = "";
+CATSmModelInputError_ERR_0801.Diagnostic = 
+"You set /p1 as an input of itself.
+You can't select this element because
+it would create an update cycle.";
+CATSmModelInputError_ERR_0801.Advice     = ""; 
+
+CATSmModelInputError_ERR_0802.Request    = "";
+CATSmModelInputError_ERR_0802.Diagnostic = 
+"You set a subelement of /p1 as an input of /p2.
+You can't select this element because
+it would create an update cycle.";
+CATSmModelInputError_ERR_0802.Advice     = ""; 
+

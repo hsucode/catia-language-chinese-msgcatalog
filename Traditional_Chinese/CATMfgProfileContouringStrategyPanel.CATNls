@@ -1,0 +1,61 @@
+
+MachiningMode = "刀具路徑形式";
+MachiningMode.LongHelp = "指出加工的切削形式:
+- 來回切削 : 前一個和後一個路徑的加工方向是相反的.
+- 單向切削: 前一個和後一個路徑的加工方向是相同的.";
+
+Sequencing  = "順序";
+Sequencing.LongHelp  = "指定加工順序:
+軸向: 先軸向再徑向
+徑向: 先徑向再軸向.";
+
+FirstCompensation = "補償號碼";
+FirstCompensation.LongHelp = "補償號碼";
+
+ClosedContour = "封閉刀具路徑";
+ClosedContour.LongHelp = "指定是否要封閉刀具路徑";
+
+Overhang = "重疊百分比";
+Overhang.LongHelp = "指定刀具路徑重疊比例";
+
+
+OutputStyle = "輸出補償";
+OutputStyle.LongHelp = "指定如何在 NC 資料中 
+輸出刀具補償:  
+
+無
+不輸出刀具補償
+
+2D 徑向刀尖
+在垂直刀具軸平面計算補償, 
+並相對刀具側計算補償 (左或右). 
+計算刀具半徑補償.
+輸出為刀尖點 (XT YT ZT). 
+
+2D 徑向輪廓
+在垂直刀具軸平面計算補償, 
+並相對刀具側計算補償 (左或右). 
+計算刀具半徑補償.
+輸出為刀具輪廓點 (XP YP ZP).";
+
+TabCont.Strategy.Title="加工";
+TabCont.Radial.Title="重疊";
+TabCont.Finish.Title="精加工";
+TabCont.GrooveStrategy.Title="方式";
+TabCont.RadialStrategy.Title="徑向";
+TabCont.AxialStrategy.Title="軸向";
+
+FirstCompensationMode = "補償的應用模式";
+FirstCompensationMode.LongHelp = "補償的應用模式";
+
+ToolOn = "刀具位置在導引上";
+ToolOn.LongHelp = "定義刀尖在導引元素上的位置.
+外形上預留和驅動模式已經計入. ";
+
+BottomCompensation = "底部補償";
+BottomCompensation.LongHelp = "底部補償";
+
+TopCompensation = "頂部補償";
+TopCompensation.LongHelp = "頂部補償";
+
+

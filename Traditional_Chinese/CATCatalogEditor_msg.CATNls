@@ -1,0 +1,121 @@
+//NLS-ENGLISH VERSION
+//=======================================================================
+// MODULE : CATCuiEditor 
+//=======================================================================
+
+//-----------------------------------------------------------------------
+// Window title
+//-----------------------------------------------------------------------
+
+CriticalErrorWindow.Title = "目錄中的重大錯誤";
+
+FatalErrorWindow.Title = "目錄中的嚴重錯誤";
+
+WarningWindow.Title = "目錄中的警告";
+
+InformationWindow.Title = "目錄中的資訊";
+
+CATCatalogEditor.title = "章節";
+
+//-----------------------------------------------------------------------
+// Critical Error Messages
+//-----------------------------------------------------------------------
+
+GraphNodeCreationFailed.CriticalErrorMessage = "建立圖形節點失敗.";
+
+NoFrmEditor.CriticalErrorMessage = "無法萃取相關類形編輯器.";
+
+NoCatalogTreeWindow.CriticalErrorMessage = "無法建立類形視窗.";
+
+NoContainerForGraphNode.CriticalErrorMessage = "無法建立類形的歷程樹視窗.";
+
+EndChapterSUCreationFailed.CriticalErrorMessage = "結束章節起始建立失敗.";
+
+ChapterSUCreationFailed.CriticalErrorMessage = "中間章節起始建立失敗.";
+
+ChapterInstFailed.CriticalErrorMessage = "章節節點的建立失敗.";
+
+PersChapterIsNull.CriticalErrorMessage = "沒有持續章節";
+
+OnlyOneChapterAtATime.CriticalErrorMessage = "一次只能檢視一個章節.";
+
+//-----------------------------------------------------------------------
+// Fatal Error Messages
+//-----------------------------------------------------------------------
+
+NoChildrenList.FatalErrorMessage = "無法展開圖形節點.";
+
+NolinkWithPersChapter.FatalErrorMessage = "圖形節點上未發現鏈結章節.";
+
+NolinkWithPersDesc.FatalErrorMessage = "章節上未發現分件.";
+PersChapterIsNull.FatalErrorMessage = "圖形節點指向無效章節.";
+
+NoCATICatalogChapter.FatalErrorMessage = "物件不是章節.";
+
+DocumentCreationFailed.FatalErrorMessage = "目錄文件建立失敗.";
+
+DocumentInitFailed.FatalErrorMessage = "目錄文件初始化失敗.";
+
+NoRootContainer.FatalErrorMessage = "目錄文件中無法找到根目錄.";
+
+NoCATICatalogChapterFactory.FatalErrorMessage ="文件中無法建立章節.";
+
+ContainerCreationFailed.FatalErrorMessage = "目錄文件程序中無法找到根目錄.";
+
+GraphWindowCreationFailed.FatalErrorMessage = "建立目錄視窗失敗.";
+
+DescPointsToNullObject.FatalErrorMessage = "說明點為無效物件.";
+
+DescParentChapterRetrievalFailed.FatalErrorMessage = "無法獲得說明資料的上層說明.";
+
+PointedChapterRetrievalFailed.FatalErrorMessage = "指向說明物件不是目錄章節.";
+
+NoObjectFilterAttribute.FatalErrorMessage = "無法獲得相關說明過濾器.";
+
+NullQueryResult.FatalErrorMessage = "無效詢問無法建立視圖.";
+
+NoSelectedObject.FatalErrorMessage = "沒有已選物件可顯示.";
+
+//-----------------------------------------------------------------------
+// Warning Messages
+//-----------------------------------------------------------------------
+
+NoChaptersInDoc.WarningMessage = "目錄文件中未含章節.";
+
+NoDescriptionInChapter.WarningMessage = "章節中未含說明.";
+
+RefPartInFamilyOpened_Synchro.WarningMessage = "此 CATPart 已在編輯中. \n 同步化之前必須先退出編輯.";
+
+RefPartInFamilyOpened_Creation.WarningMessage = "此 CATPart 已在編輯中. \n 建立零件家族前必須先退出編輯.";
+
+NODTFound.WarningMessage = "未找到設計表";
+//-----------------------------------------------------------------------
+// Information Messages
+//-----------------------------------------------------------------------
+
+
+//-----------------------------------------------------------------------
+// CATCatalogEditorFrame Messages
+//-----------------------------------------------------------------------
+
+// ChapterFrame section
+ChapterFrame.Title         = "章節標示";
+ChapterNameLabel.Title     = "章節名稱: ";
+ChapterTypeLabel.Title     = "章節型式: ";
+ChapterLocationLabel.Title = "章節位置: ";
+
+
+// KeywordsFrame section
+KeywordsFrame.Title  = "重點訊息";
+
+// TableFrame section
+TableFrame.Title = "章節表視圖";
+
+// DescriptionFrame section
+DescriptionFrame.Title = "所選列的詳細說明";
+
+NoChapterInQueryResult.CriticalMessage = "無章節可顯示";
+
+NoKeywordsInQueryResult.CriticalMessage = "章節中無關鍵字";
+
+NoDescriptionsInQueryResult.CriticalMessage = "章節中無說明";

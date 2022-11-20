@@ -1,0 +1,167 @@
+//---------------------------------------
+// Resource file for CATGSMUIPoint class
+// En_US
+//---------------------------------------
+
+Title="點定義";
+
+PointTypeCoord="座標值";
+PointTypeOnCrv="曲線上";
+PointTypeOnPln="平面上";
+PointTypeOnSur="曲面上";
+PointTypeCtr="圓或球中心";
+PointTypeTgt="相切於曲線上";
+PointTypeCKE="公式";
+PointTypeExpl="明確";
+PointTypeBetween="之間";
+
+frame1.LabList.Title="點的形式: ";
+frame1.CmbList.LongHelp="顯示建立點的可用方式.";
+
+//coord sans axe local
+OnCoord.LabelCoordX.Title="X = ";
+OnCoord.LabelCoordY.Title="Y = ";
+OnCoord.LabelCoordZ.Title="Z = ";
+OnCoord.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.Title="X";
+OnCoord.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可用內容視窗指定公式";
+OnCoord.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="Y";
+OnCoord.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可用內容視窗指定公式";
+OnCoord.FraLengTang3.EnglobingFrame.IntermediateFrame.Spinner.Title="Z";
+OnCoord.FraLengTang3.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可用內容視窗指定公式";
+OnCoord.FraSepar.LabelSepar.Title="參考 ";
+OnCoord.LabelOnCoordPoint.Title="點: ";
+OnCoord.LabRef.Title="   ";
+OnCoord.FrameErase.FraElem2.FraEdt.Edt.LongHelp="指定參考點. \n 如果沒有選擇點, 則參考原點.";
+OnCoord.FrameErase.PushIcon.Title="移除";
+OnCoord.FrameErase.PushIcon.ShortHelp="移除參考點.";
+OnCoord.FrameErase.PushIcon.LongHelp="允許移除參考點, \n 且使用預設值.";
+
+//coord avec axe local
+OnCoord.FraCoord.LabelCoordX.Title="X = ";
+OnCoord.FraCoord.LabelCoordY.Title="Y = ";
+OnCoord.FraCoord.LabelCoordZ.Title="Z = ";
+OnCoord.FraCoord.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.Title="X";
+OnCoord.FraCoord.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可用內容視窗指定公式";
+OnCoord.FraCoord.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="Y";
+OnCoord.FraCoord.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可用內容視窗指定公式";
+OnCoord.FraCoord.FraLengTang3.EnglobingFrame.IntermediateFrame.Spinner.Title="Z";
+OnCoord.FraCoord.FraLengTang3.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可用內容視窗指定公式";
+//OnCoord.ChkAxis.Title="絕對軸系座標";
+//OnCoord.ChkAxis.LongHelp="允許在絕對軸系座標檢視和修改座標.";
+OnCoord.FraRef.FrameErase.LabelOnCoordPoint.Title="點: ";
+OnCoord.FraRef.LabRef.Title="   ";
+OnCoord.FraRef.FrameErase.FraElem2.FraEdt.Edt.LongHelp="指定參考點. \n 如果沒有選擇點, 則參考原點.";
+OnCoord.FraRef.FrameErase.PushIcon.Title="移除";
+OnCoord.FraRef.FrameErase.PushIcon.ShortHelp="移除參考點.";
+OnCoord.FraRef.FrameErase.PushIcon.LongHelp="允許移除參考點, \n 且使用預設值.";
+// added code 3dplm for Axis System
+OnCoord.LabelAxis.Title="軸系: ";
+OnCoord.FraAxis.LongHelp="指定將逆轉的座標軸所參考的局部參考座標軸系. \n 如未指定,預設座標軸將為絕對座標軸系.";
+
+OnCrv.LabelOnCrvCurve.Title="曲線: ";
+OnCrv.FraDistRef1.LabelOnCrvPoint.Title="點: ";
+OnCrv.FraSepar0.LabelSepar0.Title="與參考元素距離";
+OnCrv.FraDistRef.FraRadio.Radio1.Title="曲線上距離";
+OnCrv.FraDistRef.FraRadio.Radio2.Title="曲線長度比例";
+OnCrv.FraDistRef.FraRadio.LongHelp="決定新點如何建立: \n  - 從參考點順著曲線一段距離 \n-  從參考點所給曲線長度比例.";
+OnCrv.FraDistRef.FraPush.PushNear.Title="近端";
+OnCrv.FraDistRef.FraPush.PushNear.LongHelp="允許您建立曲線終點 \n 最接近目前所定義點";
+OnCrv.FraDistRef.FraPush.PushMid.Title="中間點";
+OnCrv.FraDistRef.FraPush.PushMid.LongHelp="允許您建立曲線中點. \n 當參考點設定後, \n 會在參考點和終點間建立中間點.";
+OnCrv.FraDistRef.FraRadioEuc.RadioEuc1.Title="曲線上";
+OnCrv.FraDistRef.FraRadioEuc.RadioEuc2.Title="幾何上";
+OnCrv.FraDistRef.FraRadioEuc.LongHelp="決定距離量測方式 : \n    - 沿著曲線 (geodesic)\n    - 從參考點的絕對值 (euclidean)";
+OnCrv.FraDistRef1.PushB.Title="逆轉方向";
+OnCrv.FraSepar.LabelSepar.Title="參考 ";
+OnCrv.FraDistRef.LengthCont.FraCke.LabelOnCrvLength.Title="長度: ";
+OnCrv.FraDistRef.LengthCont.FraCke.LabelOnCrvRatio.Title="比例: ";
+OnCrv.FraDistRef.LengthCont.FraCke.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="數值";
+OnCrv.FraDistRef.LengthCont.FraCke.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可用內容視窗指定公式";
+OnCrv.FraElem1.LongHelp="指定要建立點的曲線.";
+OnCrv.FraDistRef1.FraElem2.LongHelp="指定為曲線距離要參考的點. 如果沒有選擇點, \n 將使用曲線端點.";
+OnCrv.FraDistRef1.PushB.LongHelp="顯示點 :\n- 在參考點的另一邊 \n (如果起初已選一點) \n- 以曲線的另一端點來計算 \n (如果起初沒選一點).";
+OnCrv.FraDistRef.LabDistRef.Title="   ";
+OnCrv.FraDistRef1.LabDistRef1.Title="   ";
+OnCrv.FraDistRef1.PushIcon.Title="移除";
+OnCrv.FraDistRef1.PushIcon.ShortHelp="移除參考點.";
+OnCrv.FraDistRef1.PushIcon.LongHelp="允許移除參考點, \n 且使用預設的.";
+
+
+OnPln.LabelOnPlnPlane.Title="面: ";
+OnPln.LabelOnPlnPoint.Title="點: ";
+OnPln.LabelOnPlnX.Title="H: ";
+OnPln.LabelOnPlnY.Title="V: ";
+OnPln.FraSepar.LabelSepar.Title="參考 ";
+OnPln.FraElem1.LongHelp="指定要建立點的平面.";
+OnPln.FrameErase.FraElem2.LongHelp="指定為計算座標在平面上的參考點. 如未選擇點, \n 投影至平面的原始點將用做參考.";
+OnPln.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.Title="H";
+OnPln.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您可使用右鍵內容來指定公式";
+OnPln.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="V";
+OnPln.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您可使用右鍵內容來指定公式";
+OnPln.LabRef.Title="   ";
+OnPln.FrameErase.PushIcon.Title="移除";
+OnPln.FrameErase.PushIcon.ShortHelp="移除參考點.";
+OnPln.FrameErase.PushIcon.LongHelp="允許移除參考點, \n 且使用預設的.";
+
+// start code 3dplm
+OnPln.FraSeparSur.LabelSeparSur.Title="投影 ";
+OnPln.LabelSur.Title="曲面: ";
+OnPln.FrameEditSur.FraElemSur.LongHelp="指定投影依附 \n 計算在平面上的點. 預設為未選擇依附.";
+// end code 3dplm
+
+OnSurf.LabelOnSurfSur.Title="曲面: ";
+OnSurf.LabelOnSurfPoint.Title="點: ";
+OnSurf.LabelOnSurfDir.Title="方向: ";
+OnSurf.LabelOnSurfDist.Title="距離: ";
+OnSurf.FraDirection.LongHelp="定義從參考點的曲面方向, \n 點將被建立.";
+OnSurf.FraSepar.LabelSepar.Title="參考 ";
+OnSurf.FraElem1.LongHelp="指定將被建立點的曲面.";
+OnSurf.FrameErase.FraElem2.LongHelp="指定參考點. 如未選擇點, \n 曲面的中心點將用作參考.";
+OnSurf.FraDirection.Editor.LongHelp="指定決定方向的線或以垂直平面方向決定的平面. \n
+您也可以右鍵內容輸入 X, Y, Z 方向分量.";
+OnSurf.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.Title="距離";
+OnSurf.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="定義在曲面上從參考點的距離. \n 您也可使用右鍵內容來指定公式";
+OnSurf.LabRef.Title="   ";
+OnSurf.FrameErase.PushIcon.Title="移除";
+OnSurf.FrameErase.PushIcon.ShortHelp="移除參考點.";
+OnSurf.FrameErase.PushIcon.LongHelp="允許移除參考點, \n 且使用預設值.";
+//start 3dplm code 27th august'04
+OnSurf.FraSeparDynPos.LabSeparDynPos.Title="動態定位 ";
+OnSurf.FraSeparDynPos.Coarse.Title="粗糙";
+OnSurf.FraSeparDynPos.Fine.Title="細緻";
+OnSurf.FraSeparDynPos.Coarse.ShortHelp="快速, 但為近似演算.";
+OnSurf.FraSeparDynPos.Coarse.LongHelp="使用 euclidean 演算法計算參考點和游標指定點間距離.";
+OnSurf.FraSeparDynPos.Fine.ShortHelp="精確演算.";
+OnSurf.FraSeparDynPos.Fine.LongHelp="如可能的話, 使用 geodesic 演算法計算參考點和游標指定點間距離.";
+//end 3dplm code
+
+
+OnCtr.LabelCtrCurve.Title="圓: ";
+OnCtr.FraElem1.LongHelp="指定中心用來建立點的圓或預設圓弧.";
+
+OnTgt.LabelTgtCurve.Title="曲線: ";
+OnTgt.LabelTgtDir.Title="方向: ";
+OnTgt.FraElem1.LongHelp="指定將被建立切點的曲線.";
+OnTgt.FraDirection.LongHelp="指定決定方向的線或以垂直平面方向決定的平面. \n
+您也可以右鍵內容輸入 X, Y, Z 方向分量.";
+
+PointCKE.FraPointCKE.LabelPointCKE.Title="點 : ";
+
+Between.FraPrincipal.LabelBetweenFirst.Title="點 1: ";
+Between.FraPrincipal.FraElem1.LongHelp="第一點";
+Between.FraPrincipal.LabelBetweenSecond.Title="點 2: ";
+Between.FraPrincipal.FraElem2.LongHelp="第二點";
+Between.FraPrincipal.LabelBetweenRatio.Title="比例 : ";
+Between.FraPrincipal.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="如果 d1 是第一點和建立點的距離, \n 和 d2 是第一點和第二點的距離, \n 然後比率是 d1/d2";
+Between.FraInverse.PushB.Title="逆轉方向";
+Between.FraInverse.PushB.LongHelp="逆轉方向至另一方向";
+Between.FraInverse.PushMid.Title="中間點";
+Between.FraInverse.PushMid.LongHelp="允許在第一點和第二點間建立中間點";
+// start code 3dplm
+//Combo lock help
+PointLockShort="按一下啟動自動型式變更.";
+PointUnlockShort="按一下關閉自動型式變更.";
+PointLockLong="按一下啟動自動型式變更.";
+PointUnlockLong="按一下關閉自動型式變更.";
+// end code 3dplm
+

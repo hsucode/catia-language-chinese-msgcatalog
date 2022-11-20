@@ -1,0 +1,82 @@
+// COPYRIGHT ImpactXoft 2003
+//===================================================================
+Title = "萃取體積";
+
+ExtractionMethodFrameId.MethodLabelId.Title = "體積型式:   ";
+
+ExtractionMethodFrameId.GrillRadioButtonId.ShortHelp = "柵欄體積萃取";
+ExtractionMethodFrameId.GrillRadioButtonId.Help      = "柵欄體積萃取";
+
+ExtractionMethodFrameId.ProtectedRadioButtonId.ShortHelp = "保護體積萃取";
+ExtractionMethodFrameId.ProtectedRadioButtonId.Help      = "保護體積萃取";
+
+GrillFrameId.Title = "柵欄體積";
+
+ProtectedFrameId.Title = "保護體積";
+ProtectedFrameId.ProtectedExtractFromLabelId.Title = "萃取由: ";
+ProtectedFrameId.ProtectedExtractFromDataFrameId.ProtectedExtractFromBodyFrameId.BodyExtractHolesCheckButtonId.Title = "孔     ";
+ProtectedFrameId.ProtectedExtractFromDataFrameId.ProtectedExtractFromBodyFrameId.BodyExtractProtectedVolumesCheckButtonId.Title = "保護";
+
+GrillSelectorLabelId = "選擇: ";
+
+BodySelectorLabelId = "選擇:     ";
+
+FeaturesSelectionLabelId = "選擇:      ";
+
+ExtractFromBodyId     = "本體";
+ExtractFromFeaturesId = "特徵";
+
+Grill3DLabelId = "柵欄";
+Body3DLabelId  = "本體";
+
+//===================================================================
+// LongHelp
+//===================================================================
+
+ExtractionMethodFrameId.MethodLabelId.LongHelp =
+"Specifies the volume extraction type.";
+
+ExtractionMethodFrameId.GrillRadioButtonId.LongHelp =
+"Creates a grill volume extraction feature.";
+
+ExtractionMethodFrameId.ProtectedRadioButtonId.LongHelp =
+"Creates a protected volume extraction feature.";
+
+GrillFrameId.GrillSelectorId.LongHelp =
+"Specifies the Grill feature to extract.";
+
+ProtectedFrameId.ProtectedExtractFromLabelId.LongHelp = 
+"Specifies the input type (Body or Features) of
+the entity to extract the protected volumes from.";
+
+ProtectedFrameId.ProtectedExtractFromComboId.LongHelp = 
+"Specifies the input type (Body or Features) of
+the entity to extract the protected volumes from.";
+
+ProtectedFrameId.ProtectedExtractFromDataFrameId.ProtectedExtractFromBodyFrameId.BodySelectorId.LongHelp =
+"Specifies the Body to extract protected volumes from.";
+
+ProtectedFrameId.ProtectedExtractFromDataFrameId.ProtectedExtractFromBodyFrameId.BodyExtractProtectedVolumesCheckButtonId.LongHelp =
+"Indicates that all protected volumes of the 
+selected Body are to be extracted.";
+
+ProtectedFrameId.ProtectedExtractFromDataFrameId.ProtectedExtractFromBodyFrameId.BodyExtractHolesCheckButtonId.LongHelp =
+"Indicates that all functional Hole features
+of the selected Body are to be extracted.";
+
+ProtectedFrameId.ProtectedExtractFromDataFrameId.ProtectedExtractFromFeaturesFrameId.ProtectedFeaturesSelectorMultiId.LongHelp =
+"Specifies the features to extract protected
+volumes from.  All selected features must
+be children of the same functional body.";
+
+//===================================================================
+// Helper Pictures
+//===================================================================
+
+ExtractedGrillTextId = "萃取柵欄";
+ExtractedTextId = "萃取";
+HolesTextId = "孔";
+ProtectedTextId = "保護";
+FeaturesTextId = "特徵";
+
+

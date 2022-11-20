@@ -1,0 +1,121 @@
+X="I";
+Y="J";
+Z="K";
+
+
+FrmValues.Mode_AxisFrame.AxisLabel.Title="軸:";
+
+FrmValues.Mode_NormalBottomFrame._ResultFrame.XLabel.Title="I:";
+FrmValues.Mode_NormalBottomFrame._ResultFrame.YLabel.Title="J:";
+FrmValues.Mode_NormalBottomFrame._ResultFrame.ZLabel.Title="K:";
+FrmValues.Mode_NormalBottomFrame._PBInvert.Title="逆轉方向";
+
+FrmValues.Mode_SelectionFrame._ResultFrame.XLabel.Title="I:";
+FrmValues.Mode_SelectionFrame._ResultFrame.YLabel.Title="J:";
+FrmValues.Mode_SelectionFrame._ResultFrame.ZLabel.Title="K:";
+FrmValues.Mode_SelectionFrame._PBInvert.Title="逆轉方向";
+
+FrmValues.Mode_ManualFrame._ResultFrame.XLabel.Title="I:";
+FrmValues.Mode_ManualFrame._ResultFrame.YLabel.Title="J:";
+FrmValues.Mode_ManualFrame._ResultFrame.ZLabel.Title="K:";
+FrmValues.Mode_ManualFrame._PBInvert.Title="逆轉方向";
+
+FrmValues.Mode_AxisFrame._ResultFrame.XLabel.Title="I:";
+FrmValues.Mode_AxisFrame._ResultFrame.YLabel.Title="J:";
+FrmValues.Mode_AxisFrame._ResultFrame.ZLabel.Title="K:";
+FrmValues.Mode_AxisFrame._PBInvert.Title="逆轉方向";
+
+FrmValues.Mode_PtViewFrame._ResultFrame.XLabel.Title="I:";
+FrmValues.Mode_PtViewFrame._ResultFrame.YLabel.Title="J:";
+FrmValues.Mode_PtViewFrame._ResultFrame.ZLabel.Title="K:";
+FrmValues.Mode_PtViewFrame._PBInvert.Title="逆轉方向";
+FrmValues.LongHelp="
+- Manual , choose one of the following: 
+     - Components to define the orientation by means of I, J and K components. 
+     - Angles to define the orientation by means of a rotation specified by means of one or two angles.
+       Example : Angle 1 about X, Angle 2 about Z 
+       => the tool axis is a rotated an Angle 1 about the x-axis, then rotated an Angle 2 about the y-axis 
+ 
+- Selection
+    if you select a line or linear edge, the tool axis will have the same orientation as that element 
+    if you select a planar element, the tool axis will be normal to that element. 
+ 
+- Points in the view
+	Select Points in the View from the combo, then select two points in the 3D viewer to define the tool axis orientation. 
+
+- Feature defined 
+    Select Feature defined from the combo, then select the machining feature in the 3D viewer. For example,
+    if you select an axial machining feature then the axis of the feature is taken as the tool axis. 
+
+The tool axis is visualized by means of an arrow. The direction can be reversed by clicking Reverse Direction in the dialog box. 
+
+You can also choose to display the tool at the Default position or at a User-defined position. 
+For a user-defined position, click the [...] button and select the desired position in the 3D viewer.
+ 
+NOTE :
+When a generic machine with 1 or 2 rotary axis on the head is referenced by the Part Operation,
+you can check machine accessibility when defining the tool axis of a machining operation.
+The Tool axis dialog box includes more options in this case.
+";
+
+NormalBottom="特徵定義";
+Selection="選擇";
+NormalView="正向視圖";
+Rotations="2 旋轉";
+Manual="手動";
+Axis="主要軸";
+PtView="視圖中的點";
+Rotation="軸";
+AxisLongHelpPrefix="修改參數數值 : 需要角度. 在軸上的角度限制數值為 ";
+DrivenByRelation="以知識庫關聯鎖定 (f(x))";
+
+// pour angle degree : 
+
+XYAngle="角 1 繞 X, 角 2 繞 Y";
+YZAngle="角 1 繞 Y, 角 2 繞 Z";
+ZXAngle="角 1 繞 Z, 角 2 繞 X";
+
+FrmMode.CoordRB.Title = "分件";
+FrmMode.AngleRB.Title = "角度";
+FrmMode.ChkBtnShowAxis.Title = "機具旋轉軸";
+FrmMode.LongHelp="
+- Manual , choose one of the following: 
+     - Components to define the orientation by means of I, J and K components. 
+     - Angles to define the orientation by means of a rotation specified by means of one or two angles.
+       Example : Angle 1 about X, Angle 2 about Z 
+       => the tool axis is a rotated an Angle 1 about the x-axis, then rotated an Angle 2 about the y-axis 
+ 
+- Selection
+    if you select a line or linear edge, the tool axis will have the same orientation as that element 
+    if you select a planar element, the tool axis will be normal to that element. 
+ 
+- Points in the view
+	Select Points in the View from the combo, then select two points in the 3D viewer to define the tool axis orientation. 
+
+- Feature defined 
+    Select Feature defined from the combo, then select the machining feature in the 3D viewer. For example,
+    if you select an axial machining feature then the axis of the feature is taken as the tool axis. 
+
+The tool axis is visualized by means of an arrow. The direction can be reversed by clicking Reverse Direction in the dialog box. 
+
+You can also choose to display the tool at the Default position or at a User-defined position. 
+For a user-defined position, click the [...] button and select the desired position in the 3D viewer.
+ 
+NOTE :
+When a generic machine with 1 or 2 rotary axis on the head is referenced by the Part Operation,
+you can check machine accessibility when defining the tool axis of a machining operation.
+The Tool axis dialog box includes more options in this case.
+";
+
+
+A="角度 1";
+B="角度 2";
+
+FrmDisp.ChkBtnShowTool.Title = "顯示刀具";
+FrmDisp.ChkBtnShowMachine.Title = "顯示機具";
+FrmBtn.RadBtnStdPos.Title   = "預設位置";
+FrmBtn.RadBtnUserPos.Title  = "使用者定義位置";
+FrmBtn.PushBtnUserPos.Title = "...";
+
+ToolAxis="刀具軸";
+MachiningDirection="加工方向";

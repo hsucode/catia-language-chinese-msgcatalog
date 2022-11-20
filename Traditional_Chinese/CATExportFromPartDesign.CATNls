@@ -1,0 +1,250 @@
+//NLS-ENGLISH VERSION
+//=======================================================================
+// MODULE :  PartDataCreation 
+//=======================================================================
+// 2002-04-03: KVL: CATPartExportedBody
+// 05/04/2002: JHH: Message sur les faces en auto-intersection
+// 08/07/2002: KVL: Instrumentation sur le parsing de la CATPart
+// 18/07/2002: KVL: Instrumentation sur les algos
+
+// Numeros utilises :
+//[5001] a [5149] messages generaux
+//[5150] a [5170] CATPartDesignInterface
+//[5200] a [5211] CATPartExpElement
+//[5250] a [5254] CATPartExportedBody
+//[5270] a [5271] CATPartExportedTools
+//[5290] CATPartExportedNurbsPCurve
+//[5310] a [5312] CATPartExportedFace
+//[5330] a [5331] CATPartExportedSurface
+//[5350] CATPartExportedEdge
+//[5400] a [5401] CATPartExportedProperties
+//[5450] CATPartCurveTools
+//
+
+//--------------------------------------
+//  Messages generaux
+//--------------------------------------
+
+CATPartExported.Error.Create3DCurve =
+"   <E> [5002] 從 /p1 無法建立 3D 曲線";
+
+
+//--------------------------------------
+//  Messages from CATPartInterface
+//--------------------------------------
+
+// Error Message Window
+CATPartInterface.Msg.Create3DCurve =
+"從 /p1 無法建立 3D 曲線";
+
+//
+//--------------------------------------
+//  Messages from CATPartDesignInterface
+//--------------------------------------
+CATPartDesignInterface.Info.NbElements=
+"   <I> [5150] 轉換元素數目為 /p4 /p3";
+
+CATPartDesignInterface.Info.OpenBody=
+"   <I> [5151] TREATMENT 未封閉本體 /p3";
+
+CATPartDesignInterface.Info.PartBody=
+"   <I> [5152] TREATMENT 零件本體 /p3";
+
+CATPartDesignInterface.Info.OpenBodySize=
+"   <I> [5153] 未封閉本體的元素數目為 /p4 /p3";
+
+CATPartDesignInterface.Info.PartBodySize=
+"   <I> [5154] 零件本體以 /p4 草圖 /p3 轉換";
+
+CATPartDesignInterface.Info.EmpreinteFeature=
+"   <I> [5155] 特徵 /p4 在實體 /p3 上含有 empreint";
+
+CATPartDesignInterface.Info.NoEmpreinteFeature=
+"   <I> [5156] 特徵 /p4 在實體 /p3 上沒有 empreint";
+
+CATPartDesignInterface.Info.SolidTreatment=
+"   <I> [5157] 實體 /p4 /p3 的處理";
+
+CATPartDesignInterface.Info.EmpreinteFeatureFace=
+"   <I> [5158] 特徵在修剪面 /p3 上含有 empreint";
+
+CATPartDesignInterface.Info.NoEmpreinteFeatureFace=
+"   <I> [5159] 特徵在修剪面 /p3 上沒有 empreint";
+
+CATPartDesignInterface.Warning.PbColorSolidTreatment=
+"   <I> [5160] 處理修剪面的顏色失敗 /p3";
+
+CATPartDesignInterface.Warning.PbBrepSolidTreatment=
+"   <I> [5161] BRep 不存在 /p3";
+
+CATPartDesignInterface.Warning.NoElement=
+"   <W> [5162] 沒有元素可轉換至 /p3";
+
+//
+//----------------------------------------------------
+//  Messages from CATPartExpElement(messages generaux)
+//----------------------------------------------------
+
+// Error Message Window
+CATPartExpElement.Msg.PbInMethod = 
+"   <W> [5200] 在 /p2 物件等級的 /p1 方法上有問題.";
+
+CATPartExpElement.Warning.PbInMethod = 
+"   <W> [5200] 在 /p2 物件等級的 /p1 方法上有問 (D)";
+
+// Error Message Window
+CATPartExpElement.Msg.UnavailableMethod = 
+" /p2 物件等級的 /p1 方法尚未可用.";
+CATPartExpElement.Warning.UnavailableMethod =
+" /p2 物件等級的 /p1 方法尚未可用.";
+
+//Fitting Surface(CATPartExportedFace et Surface)
+CATPartExpElement.Info.FittingSurface=
+"   <I> [5201] [T=/p2] [#/p4]  我們嚐試近似輸出此曲面成為 iges 格式 /p3";
+
+// Echec Fitting Curve
+CATPartExpElement.Warning.EchecFittingCurve = 
+"   <W> [5202] [T=/p2] [#/p4]  無法近似此曲線 (P)curve. /p3 ";
+
+// Echec Fitting Face
+CATPartExpElement.Warning.EchecFittingFace = 
+"   <W> [5203] [T=/p2] [#/p4]  無法近似此曲面. /p3";
+
+//(CATPartExportedNurbsCurve,SplineCurve,CATPartCurveTools)
+CATPartExpElement.Info.ConvertCrvToNurbsCrv=
+"   <I> [5204] [T=/p2] [#/p4]  轉換曲線成為 nurbs 曲線 /p3";
+
+//Echec de ConvertCrvToNurbsCrv
+CATPartExpElement.Warning.EchecConvertCrvToNurbsCrv=
+"   <W> [5205] [T=/p2] [#/p4]  轉換 /p3 時未發現解法";
+
+//(CATPartExportedPSpline, CATPartCurveTools)
+CATPartExpElement.Info.ConvertPSplineToNurbs=
+"   <I> [5206] [T=/p2] [#/p1]  轉換 PSpline 曲線成為 nurbs 曲線 /p1";
+
+//echec inclusion->projection(CATPartExportedCurve,NurbsCurve,SplineCurve)
+CATPartExpElement.Info.CATInclusionPtCrvEchec=
+"   <I> [5207] [T=/p2] [#/p4]  包括方式沒有解, 請嚐試用投影的. /p3";
+
+//echec projection->rattrapage
+CATPartExpElement.Warning.CATProjectionPtCrvEchec=
+"   <W> [5208] [T=/p2] [#/p4]  投影無法找到解法. /p3";
+
+//CreateDistanceMin
+CATPartExpElement.Info.CreatedistanceMin=
+"   <I> [5209] [T=/p2] [#/p4] 投影起始點至曲線 /p3 上的計算";
+
+//Echec de CreateDistanceMin
+CATPartExpElement.Warning.EchecCreatedistanceMin=
+"   <W> [5210] [T=/p2] [#/p4] 無法投影點至曲線 /p3 上";
+
+//Echec de parametrisation apres creation de la multiforme
+CATPartExpElement.Warning.EchecParametrizationOfMultiform=
+"   <W> [5211] [T=/p2] [#/p4] 參數化多重形式曲線失敗 /p3";
+//
+//--------------------------------------
+//  Messages from CATPartExportedBody
+//--------------------------------------
+
+// Self-intersecting face
+CATPartExportedBody.Error.SelfIntersectingFace=
+"   <E> [5250] 偵測到自我相交修剪面 (M)";
+
+// CatCreateTopRegularize
+CATPartExportedBody.Info.SmallEdges=
+"   <I> [5251] [T=/p2] 嚐試忽略較小邊線 /p1";
+
+// EchecCatCreateTopRegularize
+CATPartExportedBody.Warning.EchecSmallEdges=
+"   <W> [5252] [T=/p2] 嚐試忽略較小邊線 /p1 失敗";
+
+// Body with small edges
+CATPartExportedBody.Warning.SmallEdges=
+"   <W> [5253] [T=/p2] 忽略較小邊線 /p1";
+
+//CreateBoundedCellsIterator
+CATPartExportedBody.Info.BnddCellsIter=
+"   <I> [5254] [T=/p2] 建立本體 /p1 的每個修剪面單元";
+
+// Invalid Solid at Check
+CATPartExportedBody.Error.InvalidSolid=
+"!! <E> [5255] [T=/p2] 無效本體; 內含實體未輸出 /p3";
+
+// Invalid Shell at Check
+CATPartExportedBody.Error.InvalidShell=
+"!! <E> [5256] [T=/p2] 無效本體; 內含薄殼體未輸出 /p3";
+
+// Invalid Body at Check
+CATPartExportedBody.Warning.InvalidBody=
+"   <W> [5257] [T=/p2] 警告: 偵測到無效本體 /p3";
+
+// Non-manifold Body
+CATPartExportedBody.Warning.NonManifoldBody=
+"   <W> [5258] [T=/p2] 警告: 偵測到 non-manifold 本體 /p3";
+
+//
+//--------------------------------------
+//  Messages from CATPartExportedTools
+//--------------------------------------
+CATPartExportedTools.Info.Create3DCurve=
+"   <I> [5270] [T=/p2] [#/p1] 無法建立 3D 曲線, 請嚐試以 Iges 方法 /p3";
+
+CATPartExportedTools.Warning.Create3DCurveSmall=
+"   <W> [5271] [T=/p2] [#/p1] 3D 曲線太小 : /p4. 請嚐試以 Iges 方法 /p3";
+
+//
+//--------------------------------------
+//  Messages from CATPartExportedNurbsPCurve
+//--------------------------------------
+CATPartExportedNurbsPCurve.Info.ConvertPNurbsToNurbs=
+"   <I> [5290] [T=/p2] [#/p1]  忽略周期性 /p1 後再次計算 NurbsPCurve";
+
+//
+//--------------------------------------
+//  Messages from CATPartExportedFace
+//--------------------------------------
+CATPartExportedFace.Info.CreateEquivalentPCurve=
+"   <I> [5310] [T=/p2] [#/p1] 建立相關邊界 /p1 的新參數曲線";
+
+CATPartExportedFace.Info.CreateBoundaryIterator=
+"   <I> [5311] [T=/p2] [#/p4]  回復外形, 每一個外形和它們的方向 /p3";
+
+CATPartExportedFace.Info.Convert=
+"   <I> [5312] [T=/p2] [#/p1] 我們已在 PNurbs /p3 轉換 /p4";
+
+//
+//--------------------------------------
+//  Messages from CATPartExportedSurface
+//--------------------------------------
+CATPartExportedSurface.Info.CreateParam=
+"   <I> [5330] [T=/p2] [#/p4]   計算在曲面 /p3 上的參數 (U,V)";
+
+CATPartExportedSurface.Info.RecadrageParam=
+"   <I> [5331] [T=/p2] [#/p4] 限制曲面數值已被調整成 /p3";
+
+//
+//--------------------------------------
+//  Messages from CATPartExportedEdge
+//--------------------------------------
+CATPartExportedEdge.Info.CreatedistanceMinEdge=
+"   <I> [5350] [T=/p2] [#/p4] 我們以數方法比較兩條曲線, 取得最佳結果 /p3";
+
+CATPartExportedEdge.Warning.distance=
+"   <W> [5351] [T=/p2] [#/p4] pcurve 和 3D 曲線間距離在 0.002 和 0.01 之間. 可完成 /p3";
+
+//
+//------------------------------------------
+//  Messages from CATPartExportedProperties
+//------------------------------------------
+CATPartExportedProperties.Warning.NoProperty=
+"   <W> [5400] 處理元素 /p3 不影響性質" ;
+
+CATPartExportedProperties.Warning.SeveralProperty=
+"   <W> [5401] 影響處理元素的數個性質 : 性質可能是假的 /p3" ;
+
+//
+//------------------------------------------
+//  Messages from CATPartCurveTools
+//------------------------------------------
+CATPartCurveTools.Warning.NoInvert=
+"   <W> [5450] [T=/p2] [#/p1] Pcurve 的 CATPCurveEquation 形式無法轉換成 /p3" ;

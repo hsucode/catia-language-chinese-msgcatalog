@@ -1,0 +1,56 @@
+//=============================================================================
+// COPYRIGHT DASSAULT SYSTEMES  2002
+//=============================================================================
+//
+// CATHASCChkDlg: Resource file for NLS purposes:
+// Surface Connection Checker
+//
+//=============================================================================
+// Creation : MAX
+//=============================================================================
+
+CChk.DialogBox.Title = "曲面連接檢查器";
+NbSurfacesText = " 所選曲面";
+NbConnexDomainsText = " 連接區域";
+
+FrmRoot.FrmAlgo.LblMaximumGap.Title = "搜尋距離 :   ";
+FrmRoot.FrmAlgo.LblMaximumGap.LongHelp = "定義何種邊線將納入計算:
+只有邊線距離在所設定搜尋距離內的
+才納入計算;.";
+
+FrmRoot.FrmAlgo.InternalEdges.Title = "內部邊線";
+FrmRoot.FrmAlgo.InternalEdges.LongHelp = 
+"勾選此按鈕來執行所有曲面上的修剪面分析;
+取消勾選此按鈕來執行所有曲面上的分析";
+
+FrmRoot.FrmVisu.RdoVisuTab_0.Title = "複製";
+FrmRoot.FrmVisu.RdoVisuTab_1.Title = "植入";
+FrmRoot.FrmVisu.RdoVisuTab_2.Title = "多重連接";
+FrmRoot.FrmVisu.RdoVisuTab_3.Title = "重疊";
+FrmRoot.FrmVisu.RdoVisuTab_4.Title = "邊界";
+FrmRoot.FrmVisu.RdoVisuTab_5.Title = "距離";
+FrmRoot.FrmVisu.RdoVisuTab_6.Title = "相切";
+
+FrmRoot.FrmVisu.TypesPb_0.Title = " 修剪面";
+FrmRoot.FrmVisu.TypesPb_1.Title = " 位置";
+FrmRoot.FrmVisu.TypesPb_2.Title = " 位置";
+FrmRoot.FrmVisu.TypesPb_3.Title = " 位置";
+FrmRoot.FrmVisu.TypesPb_4.Title = " 邊界";
+FrmRoot.FrmVisu.TypesPb_5.Title = " 孔";
+FrmRoot.FrmVisu.TypesPb_6.Title = " 邊線";
+
+FrmRoot.FrmTransfer.LblMergingDistance.Title = "連接距離 :   ";
+FrmRoot.FrmTransfer.LblMergingDistance.LongHelp = "設定不同元素間的最小距離.
+元素間小於此距離者將會溶合";
+
+FrmRoot.FrmTransfer.LblAngleMini.Title = " < 切線錯誤 < ";
+FrmRoot.FrmTransfer.LblAngleMini.LongHelp = " 設定切線錯誤的角度值;
+最小值為小於此值將被視為沒有相切錯誤;
+大於此值將被視為沒有相切錯誤;";
+
+FrmRoot.FrmTransfer.TransferButton.Title = "   轉換   ";
+FrmRoot.FrmTransfer.TransferButton.LongHelp = "轉換目前間隔至另一本體.";
+
+Quick	= "快速";
+Regular	= "正常";
+User	= "使用者";

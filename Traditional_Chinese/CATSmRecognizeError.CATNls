@@ -1,0 +1,71 @@
+// ===============================================================================================
+// COPYRIGHT DASSAULT SYSTEMES 2003
+// ===============================================================================================
+// Objectif         : Catalogue des erreurs du Recognize
+// Responsable      : LOC
+// date de création : 27/08/2003
+// Commentaires     : 
+//
+// ===============================================================================================
+
+//-------------------------------------------------------------------
+// Recognize: Specs d'entrée incorrectes
+//-------------------------------------------------------------------
+//
+CATSmRecognizeError_ERR_0001.Request    = "Unable to init the build of a Recognition";
+CATSmRecognizeError_ERR_0001.Diagnostic = "Factories or Container not found.";
+CATSmRecognizeError_ERR_0001.Advice     = "You should verify the current Document.";
+
+CATSmRecognizeError_ERR_0002.Request    = "Unable to init the build of a Recognition";
+CATSmRecognizeError_ERR_0002.Diagnostic = "Recognize specifications not found.";
+CATSmRecognizeError_ERR_0002.Advice     = "You should verify the current Document.";
+
+CATSmRecognizeError_ERR_0010.Request    = "No Sheet Metal feature has been recognized.";
+CATSmRecognizeError_ERR_0010.Diagnostic = "";
+CATSmRecognizeError_ERR_0010.Advice     = "You should modify the geometry to be recognized.";
+
+CATSmRecognizeError_ERR_0011.Request    = "Unable to initialize the Recognition.";
+CATSmRecognizeError_ERR_0011.Diagnostic = "You should select at least one Wall to recognize.";
+CATSmRecognizeError_ERR_0011.Advice     = "Modify the geometry to recognize.";
+
+CATSmRecognizeError_ERR_0012.Request    = "Unable to build the Recognition.";
+CATSmRecognizeError_ERR_0012.Diagnostic = "Geometry to recognize contains at least one loop.";
+CATSmRecognizeError_ERR_0012.Advice     = "Modify the geometry to recognize or select faces.";
+
+CATSmRecognizeError_ERR_0013.Request    = "Unable to build the Recognition.";
+CATSmRecognizeError_ERR_0013.Diagnostic = "The recognized bends are not bounded to the reference face.";
+CATSmRecognizeError_ERR_0013.Advice     = "Modify the reference face.";
+
+CATSmRecognizeError_ERR_0014.Request    = "Unable to build the Recognition.";
+CATSmRecognizeError_ERR_0014.Diagnostic = "One of the recognized walls can not be thickened";
+CATSmRecognizeError_ERR_0014.Advice     = "Modify the geometry to be recognized.";
+
+//-------------------------------------------------------------------
+// Recognize: Warning, current restrictions
+//-------------------------------------------------------------------
+//
+CATSmRecognizeError_WAR_0001.Request    = "Current restriction: some of the recognized bends are not bounded to any recognized wall. They will not be built.";
+CATSmRecognizeError_WAR_0002.Request    = "Current restriction: recognized bends with null radius will not be built.";
+CATSmRecognizeError_WAR_0003.Request    = "Current restriction: recognized sharp stamps will not be built.";
+
+//-------------------------------------------------------------------
+// Recognize : Build FD
+//-------------------------------------------------------------------
+//
+CATSmRecognizeError_ERR_0100.Request    = "";
+CATSmRecognizeError_ERR_0100.Diagnostic = "An error occured during the Folded Recognize computation.";
+CATSmRecognizeError_ERR_0100.Advice     = "You should modify the input Parameters.";
+
+
+//-------------------------------------------------------------------
+// Recognize : Build FP
+//-------------------------------------------------------------------
+//
+CATSmRecognizeError_ERR_0200.Request    = "";
+CATSmRecognizeError_ERR_0200.Diagnostic = "An error occured during the Flattened Recognize computation.";
+CATSmRecognizeError_ERR_0200.Advice     = "You should modify the input Parameters.";
+
+ 
+
+
+

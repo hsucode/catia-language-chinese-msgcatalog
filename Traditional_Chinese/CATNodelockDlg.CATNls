@@ -1,0 +1,231 @@
+Title = "節點鎖定授權管理";
+
+// MENU BAR
+//
+NodelockMenuBar._MenuFile.Title                = "檔案";
+NodelockMenuBar._MenuFile._ItemImport.Title    = "輸入";
+NodelockMenuBar._MenuFile._ItemAdd.Title       = "新增";
+NodelockMenuBar._MenuFile._ItemExit.Title      = "退出";
+NodelockMenuBar._MenuFile._ItemRead.Title      = "讀取";
+NodelockMenuBar._MenuFile._ItemExtract.Title   = "萃取";
+
+NodelockMenuBar._MenuFile._ItemRestitute.Title = "恢復";
+NodelockMenuBar._MenuFile._ItemClear.Title     = "清理";
+NodelockMenuBar._MenuHelp.Title                = "說明";
+NodelockMenuBar._MenuHelp._ItemHelp.Title      = "說明" ;
+
+NodelockMenuBar._MenuFile.Mnemonic             = "F";
+NodelockMenuBar._MenuFile._ItemImport.Mnemonic = "I";
+NodelockMenuBar._MenuFile._ItemAdd.Mnemonic    = "d";
+NodelockMenuBar._MenuFile._ItemRead.Mnemonic   = "R";
+NodelockMenuBar._MenuFile._ItemExtract.Mnemonic   = "x";
+NodelockMenuBar._MenuFile._ItemRestitute.Mnemonic = "s";
+NodelockMenuBar._MenuFile._ItemClear.Mnemonic     = "C";
+NodelockMenuBar._MenuFile._ItemExit.Mnemonic   = "E";
+NodelockMenuBar._MenuHelp.Mnemonic             = "H";
+NodelockMenuBar._MenuHelp._ItemHelp.Mnemonic      = "H";
+
+// HELP
+//
+Help                                       = "輸入:
+   從 *.lic 授權証明輸入一個節點鎖定授權.
+
+新增:
+   讓你手動鍵入節點鎖定授權的內容,
+   如果你沒有電子的 *.lic 授權証明.
+   你必須填滿所有欄位 (在某些情況中, 
+   連續數字不是必須的).
+
+讀取:
+   讀取含有關於登記授權資訊的節點
+   鎖定檔.
+
+萃取:
+   由授權伺服器萃取目前軟體
+   可修改過期設定.
+   可能需要伺服器密碼.
+
+恢復
+   恢復目前離線軟體授權.
+  
+清理
+   清理 nodelock 檔案中無用授權."; 
+
+HelpNoExtract                              = "輸入 :
+   Imports a nodelock license from a *.lic license certificate.
+
+Add:
+   Lets you type in the contents of a nodelock license by hand,
+   if you do not have an electronic *.lic license certificate.
+   You must fill in all the fields (in certain cases, the 
+   Serial Number is not necessary).
+
+Read:
+   Reads the nodelock file containing information
+   about enrolled licenses.
+  
+Clear
+   Clear the nodelock file of obsolete licenses"; 
+   
+// MAIN PANEL
+//
+_info._LblTargetId.Title     = "目標 ID:" ;
+_info._LblTargetId.ShortHelp = "目標識別者" ;
+_info._LblTargetId.Help      = "目標識別者" ;
+_info._LblTargetId.LongHelp  = "目標識別者" ;
+
+_nodelock.LicenseValidity.Title = "授權到期";
+
+DaysLeft.texte                  = "/P1 天剩餘" ;
+DayLeft.texte                   = "一天剩餘" ;           
+LastDay.texte                   = "最後一天" ;           
+NoLongerAvailable.texte         = "一天前已失效" ;
+NoLongerAvailables.texte        = " /P1 天前已失效" ;
+NotYetAvailable.texte           = "尚未有效" ;
+
+// WARNING POPUP
+//
+Warning                   = "警告" ;
+LicenseTitle              = "授權" ;
+NotImportedTitle          = "授權未輸入";
+
+NodelockNotFound          = "節點鎖定檔案未發現: \n" ;
+NoLicenseFoundInNodelock  = "在節點鎖定檔案中未發現授權! \n" ;
+NotAdministrator          = "節點鎖定管理須要管理者權限" ;
+NotRoot                   = "節點鎖定管理 root 登入或 su - root 指令" ;
+NotWritable               = "節點鎖定管理需要寫入權限";
+LicenseNo                 = "未新增授權: \n" ;
+LicenseYes                = "新增授權成功" ;
+LicenseInvalidVID         = "無效的廠商 ID" ;
+LicenseInvalid            = "無效的授權" ;
+LicenseInvalidCertificate = "無效的証明檔" ;
+LicenseInvalidType        = "無效的授權類型" ;
+LicenseIOError            = "I/O 授權錯誤" ;
+LicenseLUMError           = "LUM 授權錯誤" ;
+LicenseImportError        = "授權輸入錯誤" ;
+LicenseCertifOpenError    = "開啟授權証明錯誤" ;
+LicenseTempOpenError      = "開啟授權暫存檔錯誤" ;
+LicenseNodelockOpenError  = "開啟授權節點鎖定檔錯誤. Write rights on nodelock file are required" ;
+LicenseCertifNotFound     = "授權証明未發現" ;
+LicenseInvalidTargetId    = "無效目標 Id" ;
+LicenseInvalidTargetType  = "無效目標類型" ;
+LicenseNotYetAvailable    = "沒有授權可用" ;
+LicenseHasExpired         = "授權已經過期" ;
+InvalidSerialNumber       = "授權內有無效的序號" ;
+InvalidUpdateLicense      = "無效的更新授權" ;
+NoInitialLicense          = "更新未有初始授權" ;
+DuplicateInitialLicense   = "初始授權已經提供" ;
+LoadCertifList            = "以下的授權在 \n 証明檔中不是有效的: \n\n";
+LicenseExtractSuccess     = "授權成功萃取"; 
+LicenseRestituteSuccess   = "授權成功恢復"; 
+LicenseClearSuccess       = "Nodelock 成功清理"; 
+LicenseAlreadyOffline     = "軟體授權離線"; 
+LicenseBadReservePeriod   = "不良保留時間"; 
+LicenseDriverNotRunning   = "驅動器未執行"; 
+MissingOfflineLicense     = "缺少離線軟體"; 
+LicenseInvalidTimestamp   = "無效時間"; 
+InvalidOfflineLicense     = "無效離線授權"; 
+LicenseNotFound           = "未發現軟體授權"; 
+LicenserFatalError        = "嚴重錯誤"; 
+LicenseDuplicateProduct   = "重覆產品"; 
+DuplicateOfflineLicense   = "重覆離線授權"; 
+LicenseNodPermDeny        = "無效授權密碼"; 
+LicenseAlreadyPreasent    = "已存在初始授權"; 
+
+// ADD WINDOW
+//
+_AddByHand.Title  = "手動新增授權" ;
+_AddByHand.BOK    = "新增";
+_FrmLicense.Title = "授權";
+
+_FrmLicense._LblVersion.Title            = "產品版期";
+_FrmLicense._LblPassword.Title           = "產品密碼";
+_FrmLicense._LblSerialNumber.Title       = "序號";
+_FrmLicense._LblAnnotation.Title         = "產品說明";
+_FrmLicense._LblComment.Title            = "備註";
+
+_FrmLicense.EditorVersion.ShortHelp      = "產品版期";
+_FrmLicense.EditorPassword.ShortHelp     = "產品密碼";
+_FrmLicense.EditorSerialNumber.ShortHelp = "授權序號";
+_FrmLicense.EditorAnnotation.ShortHelp   = "產品說明";
+_FrmLicense.EditorComment.ShortHelp      = "授權備註";
+
+_FrmLicense.EditorVersion.Help           = "產品版期";
+_FrmLicense.EditorPassword.Help          = "產品密碼";
+_FrmLicense.EditorSerialNumber.Help      = "授權序號";
+_FrmLicense.EditorAnnotation.Help        = "產品說明";
+_FrmLicense.EditorComment.Help           = "授權備註";
+
+_FrmLicense.EditorVersion.LongHelp       = "產品版期";
+_FrmLicense.EditorPassword.LongHelp      = "產品密碼";
+_FrmLicense.EditorSerialNumber.LongHelp  = "授權序號";
+_FrmLicense.EditorAnnotation.LongHelp    = "產品說明";
+_FrmLicense.EditorComment.LongHelp       = "授權備註";
+
+// IMPORT WINDOW
+//
+ImportFile.Title = "檔案選擇盒";
+
+FileSelectionDescCertif = "証明檔案 (*.lic)";
+FileSelectionDescAll    = "所有檔案 (*.*)";
+
+
+// EXTRACT WINDOW
+//
+_ExtractOK.Title        = "萃取";
+_ExtractLicence.Title   = " 萃取的授權 " ;
+_ExtractPassword.Title  = " 授權伺服器密碼 ";
+ExtractPopup.Title      = "萃取";
+ExtractSuccess.Text     = " 授權成功被萃取";
+ExtractError.Text       = " 授權萃取失敗";
+NoLicenseSelected.Text  = " 未選擇軟體"; 
+LstLic.DescriptionTitle = " 說明 ";
+LstLic.SerialNumberTitle= " 序號 ";
+LstLic.ExpirationTitle  = " 超過有效日期 (日) ";
+LstLic.ExpirationTimeTitle = " 超過有效時間 ";
+LstLic.PasswordTitle    = " 密碼 ";
+ExtractNo.Text          = "沒有密碼可萃取";
+
+LstLic.Help         = " Select a license to extract it. Click on the value of expiration (days) to modify it ";
+LstLic.ShortHelp    = " Select a license to extract it. Click on the value of expiration (days) to modify it ";
+
+Popup.Title           =	"萃取";
+ModifyExpiration.Text = "有效日期必須在 0 和 /P1 (初始有效日期)";
+
+// PASSWORD WINDOW
+//
+_FrmGlobal._FrmPassword.Title = "輸入授權密碼";
+_FrmGlobal._FrmPassword._LblPassword.Title = " 密碼 ";
+
+
+// RESTITUTE WINDOW
+//
+_RestituteOK.Title        = "恢復";
+_RestituteLicence.Title   = " 恢復授權 " ;
+RestitutePopup.Title      = "恢復";
+RestituteSuccess.Text     = " 成功恢復軟體授權";
+RestituteError.Text     = " 恢復軟體授權失敗";
+RestituteLstLic.Help      = " 選擇要恢復的軟體 ";
+RestituteLstLic.ShortHelp = " 選擇要恢復的軟體 ";
+RestituteNo.Text          = "沒有軟體可恢復";
+
+// CLEAR WINDOW
+//
+_ClearEditorLicence.Title   = " 授權的清理 " ;
+_ClearEditorLicence._ContainerClear._FrmClear._LblClear.Title="您要清理 nodelock 檔案嗎?";
+_ClearEditorLicence._ContainerClear._FrmClear._LblClear.Help="由 nodelock 檔案清除無用授權";
+_ClearEditorLicence._ContainerClear._FrmClear._LblClear.ShortHelp="由 nodelock 檔案清除無用授權";
+_ClearEditorLicence._ContainerClear._FrmClear._LblClear.LongHelp="由 nodelock 檔案清除無用授權";
+ClearPopup.Title      = " 要清除的授權 ";
+ClearSuccess.Text     = "Nodelock 檔案已被成功清理";
+ClearError.Text       = "Nodelock 檔案已被成功清理";
+ClearErrorWrite.Text  = "Nodelock 檔案已恢復 (premission deny on file)";
+
+I4DRIVERUnknown     = "無效網路卡或 target ID";
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+Title = "";
+
+
+CavitiesMachiningGenDefinition.Title = "いみ/凹娩/┏场 ﹚竡";
+
+MachiningTolerance = "弘";
+M3xHardMachiningMode = "家Α:";
+M3xHardCuttingMode = "ち玠家Α";
+
+
+M3xSideThickness = "凹娩箇痙玴";
+M3xBottomThickness = "キ跋办程箇痙玴";
+M3xBottomDetection = "キ跋办程箇痙";
+
+
+M3xSideThickness.LongHelp = "Specifies the remaining thickness on the sides left by center machining.";
+M3xBottomThickness.LongHelp = "Specifies the minimum thickness on the horizontal areas left by center machining.";
+M3xBottomDetection.LongHelp = "When activated, the remaining thickness on horizontal areas is exactly the given thickness.
+If not, the remaining thickness is greater than the given thickness.";
+
+
+MachiningTolerance.LongHelp = "Specifies the maximum allowed distance 
+between the theoretical and computed tool path.";
+
+M3xHardMachiningMode.LongHelp = "Specifies the type of area to be machined 
+and can be:  
+- By plane; the whole part is machined plane by plane, 
+- Outer part only; only the outside of the part is machined, 
+- Pockets only; only pockets on the part are machined, 
+- Outer part&pockets; the whole part is machined external area 
+  by external area and pocket by pocket.";
+
+
+M3xHardCuttingMode.LongHelp = "Specifies the position of the tool regarding 
+the surface to be machined. It can be climb or conventional";
+
+M3xHMRFraMachMode.ComboFirst.LongHelp = "Lets you decide to machine plane by plane or area by area.";
+M3xHMRFraMachMode.ComboSecond.LongHelp = "Lets you decide to machine either only the pockets, or only the outer part, or both.";

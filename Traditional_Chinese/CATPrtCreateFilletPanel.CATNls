@@ -1,0 +1,84 @@
+PanelEdgeFilletTitle           = "邊線圓角的定義";
+
+LongHelp = "邊線圓角的定義";
+
+PanelEdgeFilletRadius          = "半徑: ";
+PanelEdgeFilletAdvanced        = "進階";
+PanelEdgeFilletSimple          = "簡單";
+PropagationTitle               = "增加:";
+PanelEdgeFilletTangency        = "相切";
+PanelEdgeFilletMinimal         = "最小";
+PanelEdgeFilletObject          = "欲倒圓角的邊線: ";
+PanelEdgeFilletKeepButton      = "保持邊線";
+PanelEdgeFilletKeep            = "欲保持的邊線: ";
+PanelEdgeFilletShortRadius     = "修改半徑值";
+PanelEdgeFilletShortKeepButton = "保留邊線或保留曲面";
+BoundaryTitle                  = "端點:";
+PanelEdgeFilletUV              = "直線";
+PanelEdgeFilletConnect         = "平緩";
+PanelEdgeFilletMinimum         = "最小";
+PanelEdgeFilletMaximum         = "最大";
+PanelEdgeFilletReferenceElement= "依附: ";
+PanelFilletTrim                = "修剪依附元素";
+PanelRelimitationType          = "修剪重覆圓角";
+PanelLimitingFillet            = "限制元素:";
+PanelMultiLimitingFillet       = "限制元素組:";
+
+
+FrmRoot.FrmMain.CkeLabel.LongHelp = 
+"指出半徑值.
+半徑值必須大於0 (不包括0).";
+FrmRoot.FrmMain.ParamFrame.Spinner.LongHelp = 
+"指出半徑值.
+半徑值必須大於0 (不包括0).";
+FrmRoot.FrmMain.ParamFrame.EnglobingFrame.IntermediateFrame.Spinner.LongHelp = 
+"指出半徑值.
+半徑值必須大於0 (不包括0).";
+
+FrmRoot.FrmMain.ObjectLabel.LongHelp = 
+"指出要倒R的銳邊及修剪面.";
+FrmRoot.FrmMain.ObjectFrame.Sel.Edt.LongHelp = 
+"指出要倒R的銳邊及修剪面.";
+
+FrmRoot.FrmMain.PropagationLabel.LongHelp =
+"指出要倒R時的延伸方式有兩種.:
+
+相切: CATIA 在所選的邊中持續倒R
+直到有一邊不連續時.
+  
+最小: 延伸直到
+第一個幾何自然裁剪.";
+
+FrmRoot.FrmMain.PropagationCombo.LongHelp =
+"指出要倒R時的延伸方式有兩種:
+
+相切: CATIA 在所選的邊中持續倒R
+直到有一邊不連續時.
+  
+最小: 延伸直到
+第一個幾何自然裁剪.";
+
+FrmMore.RelimitObjectFrame.Sel.Lab.LongHelp = 
+"當選擇物件來倒R時指出不可被修改的邊.";
+FrmMore.RelimitObjectFrame.Sel.Edt.LongHelp = 
+"當選擇物件來倒R時指出不可被修改的邊.";
+
+FrmRoot.FrmMain.ParamFrame.Spinner.Title = "半徑"; 
+FrmRoot.FrmMain.ParamFrame.EnglobingFrame.IntermediateFrame.Spinner.Title = "半徑"; 
+
+FrmRoot.FrmMain.BoundaryLabel.LongHelp =
+"當對薄殼倒R角時指出裁剪模式.";
+
+FrmRoot.FrmMain.BoundaryCombo.LongHelp =
+"當對薄殼倒R角時指出邊界修剪模式.";
+
+FrmRoot.FrmMain.ReferenceElementFrame.LongHelp =
+"指出要倒R角的薄殼.";
+
+FrmMore.KeepEdgeFrame.RelimitObjectLabel.LongHelp = 
+"當選擇物件來倒R時指出不可被修改的邊.";
+FrmMore.KeepEdgeFrame.RelimitObjectFrame.Sel.Edt.LongHelp = 
+"當選擇物件來倒R時指出不可被修改的邊.";
+
+FrmRoot.FrmMain.Trim.LongHelp =
+"截斷依附且將其組立至倒圓角中.";

@@ -1,0 +1,34 @@
+// COPYRIGHT DASSAULT SYSTEMES 1999
+//=============================================================================
+//
+// Untrim Command :
+//   Resource file for NLS purpose.
+//
+//=============================================================================
+//
+// Implementation Notes :
+//
+//=============================================================================
+// Oct.  99   Creation                                   Frederic LETZELTER
+//=============================================================================
+
+CATStCmdUntrim.Title = "不修剪";
+
+CATStCmdUntrim.SelectSkin.Message = "選擇不修剪的元素";
+CATStCmdUntrim.errorSharedGeom.Message = "一或多個元素不能被裁剪因為 
+幾何並不是被每一個個體分享. 
+你應該在其上使用分解指令.";
+CATStCmdUntrim.InfiniteGeometry1.Message  = "幾何元素無限大. 無法執行不修剪.";
+CATStCmdUntrim.InfiniteGeometry.Message  = "以下幾何元素無限大. 無法執行不修剪.
+將建立圍繞盒上的修剪曲面.";
+CATStCmdUntrim.InfiniteGeometry2.Message = "部份幾何元素無限大. 無法執行不修剪.
+將建立圍繞盒上的修剪曲面.";
+CATStCmdUntrim.NotCompleteUntrim.Message = "以下幾何元素無限大. 無法執行完整不修剪.
+將建立圍繞盒上的修剪曲面.";
+CATStCmdUntrim.NotCompleteUntrim2.Message = "部份以下幾何元素無限大. 無法執行完整不修剪.
+將建立圍繞盒上的修剪曲面.";
+ProgressTaskUI.Title = "未修剪";
+ProgressTaskUI.ObjectName = "未修剪";
+ProgressTaskUI.Comment = "未修剪拓墣";
+ProgressTaskUI.Generating = "產生次物件中 ";
+ProgressTaskUI.On = "在全部中";

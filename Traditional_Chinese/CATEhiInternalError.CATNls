@@ -1,0 +1,41 @@
+// *--------------------------------------------*//
+// *               Exemple de message           *//
+// *  En_FR                                     *//
+// *------------------------------------------- *//
+// ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// ERR_2000.Diagnostic = "Un des parametres est negatif";
+// ERR_2000.Advice     = "Utilisez des parametres positifs";
+
+// NoSolution    
+EHIMODELINTERNAL_ERR_1.Request    = "";
+EHIMODELINTERNAL_ERR_1.Diagnostic = " 沒有發現解決方式";
+EHIMODELINTERNAL_ERR_1.Advice     = " ";
+
+// update error processing
+// 
+EHIMODELINTERNAL_ERR_999.Request    = "   ";
+EHIMODELINTERNAL_ERR_999.Diagnostic = "/p1";
+
+// NoSolution    
+EHIMODELINTERNAL_ERR_100.Request    = "";
+EHIMODELINTERNAL_ERR_100.Diagnostic = "曲線計算失敗";
+EHIMODELINTERNAL_ERR_100.Advice     = "修改一組線段的幾何定義";
+
+// NoSolution    
+EHIMODELINTERNAL_ERR_200.Request    = "長度程序的模式";
+EHIMODELINTERNAL_ERR_200.Diagnostic = "輸入長度比最小長度還小";
+EHIMODELINTERNAL_ERR_200.Advice     = "增加長度或修改程序定義";
+
+
+// Start Multiple Profile
+// Cyclic reference
+EHIMODELINTERNAL_ERR_300.Request    = "Cyclic Reference Detected.";
+EHIMODELINTERNAL_ERR_300.Diagnostic = "The profile is linked with neighbour segment profile.";
+EHIMODELINTERNAL_ERR_300.Advice     = "Remove Link of neighbour segment profile first.";
+
+// No Neighbour    
+EHIMODELINTERNAL_ERR_400.Request    = "No segment found with which the extremity can be linked.";
+EHIMODELINTERNAL_ERR_400.Diagnostic = "The given extremity is not connected to any other bundle segment.";
+EHIMODELINTERNAL_ERR_400.Advice     = "";
+
+// End Multiple Profile

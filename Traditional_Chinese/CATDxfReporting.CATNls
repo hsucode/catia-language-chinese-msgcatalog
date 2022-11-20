@@ -1,0 +1,115 @@
+//NLS-ENGLISH VERSION
+//=======================================================================
+// MODULE :  DxfDataExchange
+//=======================================================================
+// JVK 04-16-2002 : User Message strings - message text
+// JVK 06-10-2002 : User Message strings - message type
+// JVK 06-11-2002 : User Message strings - message legend
+// JVK 07-11-2002 : Import and Export informations
+// PRB 16/09/2002 : suppression separateurs inutiles
+// TBB 14/10/2002 : R11 dev Viewports
+// PRB 20/05/2003 : R12 Viewports
+// TBB 09/07/2003 : Automatic Format and Unit
+// PRB 24/11/2004 : message pour elements invisibles
+
+//-----------------------------------------------------------------------
+// Import and Export informations
+//-----------------------------------------------------------------------
+Context.GlobalInfoSectionTitle			= "~~~~~~~~~~~~~~~~~~~~~~~選項~~~~~~~~~~~~~~~~~~~~~~";
+Context.Import.AutomatisationTitle		= "\n~~~~~~~~~~~~~~~~~~AUTOMATISATION~~~~~~~~~~~~~~~~~~~~";
+Context.Import.AutomaticStandard		= "標準 : ";
+Context.Import.AutomaticFormat			= "格式 : ";
+Context.Import.Format					= "沒有標準格式可應用至此格式";
+Context.Import.AutomaticUnit			= "單位 : ";
+Context.Import.MappingTitle				= "\n~~~~~~~~~~~~~~~~~~~使用的對應~~~~~~~~~~~~~~~~~~~~";
+Context.Import.LineMappingTitle			= "\n 為線形:";
+Context.Import.TextMappingTitle			= "\n 為字形:";
+Context.Import.ThicknessMappingTitle	= "\n 轉換顏色成厚度:";
+Context.Import.UnitTitle				= "檔案使用單位         : ";
+Context.Import.Unit.Millimeter			= "公厘 (mm)";
+Context.Import.Unit.Centimeter			= "公分 (cm)";
+Context.Import.Unit.Meter				= "公尺 (m)";
+Context.Import.Unit.Inch				= "英寸 (in)";
+Context.Import.Unit.Foot				= "英尺 (ft)";
+Context.Import.Unit.ScaleFactor			= "縮放比例 = ";
+Context.Import.Unit.Automatic			= "自動";
+Context.Import.DestinationTitle			= "目的地視圖      : ";
+Context.Import.IG2DestinationTitle		= "目的地視圖               : ";
+Context.Import.IG2Destination.WorkingView= "工作視圖";
+Context.Import.IG2Destination.Background= "背景";
+Context.Import.SpaceConfigTitle			= "保留模型空間               : ";
+Context.Import.EndPointsTitle			= "建立結束點              : ";
+Context.Import.EndPoints.Never			= "絕不";
+Context.Import.EndPoints.Sometimes		= "只為新元件";
+Context.Import.EndPoints.Always			= "經常";
+Context.Import.DimensionTitle			= "轉換尺寸為 : ";
+Context.Import.Dimension.Real			= "真實尺寸";
+Context.Import.Dimension.Exploded		= "炸開幾何";
+Context.Import.Dimension.Detail			= "細部";
+Context.Import.ThicknessMappingModeTitle	= "顏色至厚度    : ";
+Context.Import.DftStandard				= "繪圖標準              : ";
+Context.Import.DxfStandard				= "DXF 標準                   : ";
+
+Context.General.Disabled                = "關閉";
+Context.General.Enabled	                = "啟動";
+
+Context.Export.SheetTitle				= "輸出圖紙                : ";
+Context.Export.Sheet.Current			= "只有目前";
+Context.Export.Sheet.All				= "全部";
+Context.Export.VersionTitle				= "版期            : ";
+Context.Export.Version.IGES2D			= "IGES-2D";
+Context.Export.Version.DXFDWGR12		= "DXF/DWG R12";
+Context.Export.Version.DXFDWGR13		= "DXF/DWG R13";
+Context.Export.Version.DXFDWGR14		= "DXF/DWG R14";
+Context.Export.Version.DXFDWG2000		= "DXF/DWG 2000";
+Context.Export.ModeTitle				= "輸出模式                    : ";
+Context.Export.Mode.SemanticAdvanced    = "圖形化";
+Context.Export.Mode.Semantic			= "結構";
+Context.Export.Mode.Graphic				= "圖形";
+Context.Export.TextUnicode				= "輸出萬用字型, 重新以萬用字型來定義標準形式來顯示";
+
+Context.Export.UnitTitle				= "輸出單位                    : ";
+Context.Export.Unit.Millimeter			= "公厘 (mm)";
+Context.Export.Unit.Inch				= "英寸 (in)";
+
+Context.Shape.MillimeterUnit			= " 公厘";
+
+//-----------------------------------------------------------------------
+// User Message strings (management)
+//-----------------------------------------------------------------------
+//detailed message legend
+Message.Legend.DetailedSection	="~~~~~~~~~~~~~~~~~轉換細部~~~~~~~~~~~~~~~~~";
+Message.Legend.StringTitleType	="訊息形式: <E> = 錯誤, <W> = 警告, <I> = 資訊";
+Message.Type.Error				="<E> ";
+Message.Type.Warning			="<W> ";
+Message.Type.Info				="<I> ";
+
+//message texts (automatic@rpt)
+Message.Text.Type				="Type ";
+Message.Text.ID				    ="命令 ";
+Message.Text.NotTransferred		="此元素未轉換";
+Message.Text.Transferred		="此元素已正確轉換";
+Message.Text.Degenerated		="此元素部份轉換";
+Message.Text.OutOfModel			="此元素超過模型大小";
+Message.Text.Invalid			="因此元素無效導致未轉換";
+Message.Text.NotSupported		="不支援此元素";
+Message.Text.NotSupportedChild	="因子元素不支援導致未轉換";
+
+//message texts (manual@err)
+Message.Text.EmptyElement					="此元素是空的";
+Message.Text.CatchDimensionInGraphicMode	="此元素轉換為圖形模式";
+Message.Text.ViewportAlreadyActivated		="已啟動一個視埠, 忽略其它的";
+Message.Text.OutOfSize		    ="檔案內有部份元素座標值超過允許值";
+Message.Text.MaxCoord           ="找到的最大座標值 :";
+Message.Text.AdviceScale		="建議 : 在輸入選項中設定縮放值. 建議值為";
+Message.Text.is3DEntity         ="3D 空間中的元素";
+Message.Text.isInvisible        ="元素不可見: 轉換為隱藏";
+Message.Text.HatchingPatternWithSmallPitch	="陰影圖樣較 CATIA　內定值小, 將會改為顏色圖樣";
+
+//message memory management
+Message.Title.Warning           ="警告";
+Message.Text.LowMemory          ="記憶體不足: 檔案未轉換或部份轉換";
+
+
+
+

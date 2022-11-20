@@ -1,0 +1,93 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 2000 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwFrameChamfer
+// LOCATION    :    DraftingIntUI
+// AUTHOR      :    fgx
+// BUT         :    Properties : Tab "Chamfer" 
+// DATE        :    07.03.2000
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS    user    date        purpose
+//    HISTORY       ----    ----        -------
+//=====================================================================================
+
+
+_titleValFormat.Title="數值格式";
+_titleValFormat.LongHelp=
+"設定數值格式的顯示.";
+
+_frameValFormat._radioValFormatDistDist.Title="距離 x 距離";
+_frameValFormat._radioValFormatDistDist.LongHelp=
+"設定類型的數值格式
+  \"距離 x 距離\".";
+
+_frameValFormat._radioValFormatDistAngle.Title="距離 x 角度";
+_frameValFormat._radioValFormatDistAngle.LongHelp=
+"設定類型的數值格式
+ \"距離 x 角度\".";
+
+_frameValFormat._radioValFormatAngleDist.Title="角度 x 距離";
+_frameValFormat._radioValFormatAngleDist.LongHelp=
+"設定類型的數值格式
+ \"角度 x 距離\".";
+
+_frameValFormat._radioValFormatDistance.Title="距離";
+_frameValFormat._radioValFormatDistance.LongHelp=
+"設定類型的數值格式
+  \"距離\".";
+
+_titleDescription.Title="數字的顯示";
+_titleDescription.LongHelp=
+"設定值的數字顯示說明.";
+
+_frameDescription._frameMoreInfoMain1._pushMoreInfoMain1.ShortHelp="瀏覽主要說明";
+_frameDescription._frameMoreInfoMain2._pushMoreInfoMain2.ShortHelp="瀏覽主要說明";
+_frameDescription._frameMoreInfoDual1._pushMoreInfoDual1.ShortHelp="瀏覽次要說明";
+_frameDescription._frameMoreInfoDual2._pushMoreInfoDual2.ShortHelp="瀏覽次要說明";
+
+_frameDescription._labelDescriptionMain1.Title="主要說明";
+_frameDescription._labelUnitOrderMain.Title="顯示y: ";
+_frameDescription._labelDescriptionDual1.Title="次要說明";
+_frameDescription._labelUnitOrderDual.Title="顯示: ";
+
+_frameDescription._comboDescriptionMain1.LongHelp=
+"設定數字顯示的第一個主要值的說明.";
+_frameDescription._comboDescriptionMain2.LongHelp=
+"設定數字顯示的第二個主要值的說明.";
+
+_frameDescription._comboUnitOrderMain1.LongHelp=
+"設定第一個主要值顯示的單位因子的數值.";
+_frameDescription._comboUnitOrderMain2.LongHelp=
+"設定第二個主要值顯示的單位因子的數值.";
+
+_frameDescription._comboDescriptionDual1.LongHelp=
+"設定數字顯示的第一個次要值的說明.";
+_frameDescription._comboDescriptionDual2.LongHelp=
+"設定數字顯示的第二個次要值的說明.";
+
+_frameDescription._comboUnitOrderDual1.LongHelp=
+"設定第一個次要值顯示的單位因子的數值.";
+_frameDescription._comboUnitOrderDual2.LongHelp=
+"設定第二個次要值顯示的單位因子的數值.";
+
+_titleRepType.Title="陳述類型";
+_titleRepType.LongHelp=
+"設定距離的陳述類型.";
+
+_frameRepType._radioRepTypeDistance.Title="兩符號";
+_frameRepType._radioRepTypeDistance.LongHelp=
+"設定兩符號型式的表現方式.";
+
+_frameRepType._radioRepTypeRadius.Title="一符號";
+_frameRepType._radioRepTypeRadius.LongHelp=
+"設定一符號型式的表現方式.";
+
+ONE_FACTOR="1 因子";
+TWO_FACTORS="2 因子";
+THREE_FACTORS="3 因子";
+

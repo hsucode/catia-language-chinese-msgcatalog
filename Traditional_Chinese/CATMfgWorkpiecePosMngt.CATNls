@@ -1,0 +1,36 @@
+Title = "工件原點管理";
+WorkpieceOriginListFrame.WorkpieceOriginList.Help = "顯示含索引和機具軸的數控碼";
+WorkpieceOriginListFrame.WorkpieceOriginList.ShortHelp = "數控碼特性清單";
+WorkpieceOriginListFrame.WorkpieceOriginList.LongHelp = "顯示含索引和機具軸的數控碼";
+ IsoCodeCol = "數控碼";
+ IndexCol = "索引";
+ AxisCol = "軸";
+WorkpieceCmdFrame.Title = "工件命令框架";
+WorkpieceCmdFrame.WorkpieceOriginAdd.Title = "新增";
+WorkpieceCmdFrame.WorkpieceOriginAdd.Help = "在目前的選擇後新增數控碼定義";
+WorkpieceCmdFrame.WorkpieceOriginAdd.ShortHelp = "新增數控碼定義";
+WorkpieceCmdFrame.WorkpieceOriginAdd.LongHelp = "在目前的選擇後新增數控碼定義";
+WorkpieceCmdFrame.WorkpieceOriginRemove.Title = "移除";
+WorkpieceCmdFrame.WorkpieceOriginRemove.Help = "移除定義原點的所選行";
+WorkpieceCmdFrame.WorkpieceOriginRemove.ShortHelp = "移除所選行";
+WorkpieceCmdFrame.WorkpieceOriginRemove.LongHelp = "移除定義原點的所選行";
+
+ERR_0001.Request    = " 未定義工件原點";
+ERR_0001.Diagnostic = "機具的目前零件工法未定義工件原點";
+ERR_0001.Advice     = "\n 請檢查您已將目前機具的零件工法與工件原點特性相關";
+
+ERR_0002.Request    = " W錯誤清單管理";
+ERR_0002.Diagnostic = "內部清單不一致";
+ERR_0002.Advice     = "\n 請聯絡售商";
+
+ERR_0003.Request    = " 移除工件原點無效";
+ERR_0003.Diagnostic = "無法刪除行";
+ERR_0003.Advice     = "\n'/p1'";
+
+ERR_0004.Request    = " 無法更改工件原點";
+ERR_0004.Diagnostic = " 在行 '/p1' 的更改無效";
+ERR_0004.Advice     = " 請檢視您的更改 \n'/p1'";
+
+ERR_0005.Request    = " 無法新增工作原點";
+ERR_0005.Diagnostic = " 行 '/p1' 的原點未新增";
+ERR_0005.Advice     = "\n'/p1'";

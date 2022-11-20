@@ -1,0 +1,87 @@
+Title	=	"Âà´«¤¸¯À";
+
+TrfNoSelection	=	"¥¼¿ï¾Ü";
+TrfUndefined	=	"¥¼©w¸q";
+TrfCut			=   "²¾°Ê";
+TrfCopy		=	"½Æ»s";
+TrfDone		=	"(*)";
+
+// Titre de la barre de progression
+ProgressBar	=	"½Ðµy­Ô...";
+
+// Type de propagation
+PropagationC0		=	"ÂI³sÄò";
+PropagationC1		=	"¬Û¤Á³sÄò";
+PropagationNone	=	"¥¼¼Wªø";
+
+// Selection complementaire
+ComplementaryButton =	"¥]§t¼Ò¦¡";
+
+// Titres des colonnes de la multi liste
+NumberColumnTitle		= "N°";
+ElementColumnTitle		= "¤¸¯À";
+SourceColumnTitle		= "¨Ó·½";
+DestinationColumnTitle	= "¥Øªº¦a";
+CutColumnTitle			= "²¾°Ê©Î½Æ»s";
+
+FrmRoot.FrmTransfer.Title ="Âà´«ªº¤¸¯À";
+
+FrmRoot.FrmTransfer.FrmPushRadio.FrmPushAction.PushRemove.Title  ="²¾°£ªº¤¸¯À ";
+FrmRoot.FrmTransfer.FrmPushRadio.FrmPushAction.PushReplace.Title ="­×§ïªº¤¸¯À ";
+FrmRoot.FrmTransfer.FrmPushRadio.FrmRadioButtons.RBModeCut.Title  ="²¾°Ê";
+FrmRoot.FrmTransfer.FrmPushRadio.FrmRadioButtons.RBModeCopy.Title ="½Æ»s";
+
+FrmRoot.FrmTransfer.FrmPropagation.LbPropagation.Title ="©µ¦ù§Î¦¡";
+FrmRoot.FrmTransfer.FrmDestination.LbDestination.Title ="¥Øªº¦a";
+
+ // Help
+FrmRoot.FrmTransfer.LongHelp =
+"±N¤¸¯À¥ÑµÑ¨ú°Ï°ìÂà´«¦Ü¨ä¥¦°Ï°ì.";
+
+ 
+ FrmRoot.FrmTransfer.FrmPushRadio.FrmPushAction.PushRemove.LongHelp =
+	"Removes an element from the list of selected faces.";
+ FrmRoot.FrmTransfer.FrmPushRadio.FrmPushAction.PushReplace.LongHelp = 
+	"Transfers an element from one area to another.";
+ FrmRoot.FrmTransfer.FrmPushRadio.FrmRadioButtons.RBModeCut.LongHelp = 
+	"Removes the face from its source area and copy it to the destination area.";
+ FrmRoot.FrmTransfer.FrmPushRadio.FrmRadioButtons.RBModeCopy.LongHelp = 
+	"Keeps the face in the source area and copies it to the destination area";
+
+ FrmRoot.FrmTransfer.FrmPropagation.LbPropagation.LongHelp = 
+	"No propagation: select the faces to transfer one by one.
+For point continuity and tangent continuity, select a reference face. 
+All the faces contiguous to the reference face are transferred";
+
+ FrmRoot.FrmTransfer.FrmPropagation.ComboPropagation.LongHelp = 
+	"No propagation: select the faces to transfer one by one.
+For point continuity and tangent continuity, select a reference face. 
+All the faces contiguous to the reference face are transferred";
+ 
+ FrmRoot.FrmTransfer.FrmPropagation.PushTrapPolygon.LongHelp = 
+	"Selects all of the faces inside the polygon trap.";
+ 
+ FrmRoot.FrmTransfer.FrmElement.ElementsList.LongHelp = 
+	"Displays information about a selected face.
+No: selection order,
+Element: name,
+Source: the area it belongs to,
+Destination: the area you want to send it to. 
+Move or Copy: indicates if the transfer should be a move or a copy.
+When you select a face in the list, it is highlighted in the graphic area. 
+A contextual menu is also available to Reframe on the face, choose its destination, apply the transfer or remove the face from the list
+Push the Modify Element button to make the transfer effective.";
+ 
+ FrmRoot.FrmTransfer.FrmDestination.LbDestination.LongHelp = 
+	"Lists the available destination areas.";
+ FrmRoot.FrmTransfer.FrmDestination.EditDestination.LongHelp = 
+	"Lists the available destination areas.";
+// Contextual menu
+ReframeOnEltItem		= "­«·sÅã¥Ü";
+ElementRemoveItem		="²¾°£ªº¤¸¯À";
+DestinationReplaceItem  ="­×§ïªº¤¸¯À";
+DestinationCavityItem	="¼Ò¥Þ";
+DestinationCoreItem	="¼Ò¤¯";
+DestinationSliderItem	="·Æ¶ô";
+DestinationOtherItem	="¨ä¥¦";
+

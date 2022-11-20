@@ -1,0 +1,67 @@
+CATEdlReconcilePlaceFromUipCmd.StateDisplayDeviceList.Message = "Select a schematic device from the list";
+
+CATEdlReconcilePlaceFromUipCmd.StateFirstSelectAll.Message    = "Select a functional or a physical device";
+CATEdlReconcilePlaceFromUipCmd.StateFirstSelectFunct.Message  = "Select a functional device";
+
+CATEdlReconcilePlaceFromUipCmd.StateSecondSelectFunct.Message = "Select a functional device";
+CATEdlReconcilePlaceFromUipCmd.StateSecondSelectPhysi.Message = "Select a physical device";
+
+CATEdlReconcilePlaceFromUipCmd.StateGetCavity.Message = "Select a cavity";
+
+CATEdlReconcilePlaceFromUipCmd.StateReconcile.Message          = "Reconcile";
+CATEdlReconcilePlaceFromUipCmd.StateQueryNotCompatible.Message = "Accept or cancel the link";
+
+CATEdlReconcilePlaceFromUipCmd.StateCatalogue.Message          = "Select the device to place";
+
+CATEdlReconcilePlaceFromUipCmd.pStateGetPlacementType.Message  = "Select the placement mode";
+
+CATEdlReconcilePlaceFromUipCmd.StateSelectDesc.Message = "Select the device to place";
+
+CATEdlReconcilePlaceFromUipCmd.StateSelectPossibleCavity.Message = "Select a cavity into place the selected device or click in the space to instantiate it directly";
+
+
+CATEdlReconcilePlaceFromUipCmd.AddFunctionalLinkPartiallySucceeded.Title = "Link partially done" ;
+CATEdlReconcilePlaceFromUipCmd.AddFunctionalLinkPartiallySucceeded.Text  = "All the functional sub entities have not been linked with a physical device" ;
+
+CATEdlReconcilePlaceFromUipCmd.AddFunctionalLinkSucceeded.Title = "Link done" ;
+CATEdlReconcilePlaceFromUipCmd.AddFunctionalLinkSucceeded.Text   = "The link between the functional and the physical devices is successfully done" ;
+
+CATEdlReconcilePlaceFromUipCmd.PartNumberIncompatibility.Title = "Incompatible Part Numbers";
+CATEdlReconcilePlaceFromUipCmd.PartNumberIncompatibility.Text  = "The functional and physical part numbers are incompatible";
+
+CATEdlReconcilePlaceFromUipCmd.AlreadyRealized.Functional.Title = "The Functional Device is already Realized";
+CATEdlReconcilePlaceFromUipCmd.AlreadyRealized.Functional.Text  = "The selected functional device is already linked to a physical device. Remove the existing link before creating a new one.";
+
+CATEdlReconcilePlaceFromUipCmd.AlreadyRealized.Physical.Title = "The physical device is already realized";
+CATEdlReconcilePlaceFromUipCmd.AlreadyRealized.Physical.Text  = "The selected physical device is already linked to a functional device. Remove the existing link before creating a new one.";
+
+CATEdlReconcilePlaceFromUipCmd.NOFunctionalSelected.Title = "No functional device selected";
+CATEdlReconcilePlaceFromUipCmd.NOFunctionalSelected.Text  = "The link can not be done, as no functional device has been selected." ;
+
+CATEdlReconcilePlaceFromUipCmd.NOPhysicalSelected.Title = "No electrical physical device selected";
+CATEdlReconcilePlaceFromUipCmd.NOPhysicalSelected.Text  = "The link can not be done, as no electrical physical device has been selected.\nThe selected physical component has to be electrified.";
+
+CATEdlReconcilePlaceFromUipCmd.EcpFuncNoEcpPhys.Title  = "No physical connector selected";
+CATEdlReconcilePlaceFromUipCmd.EcpFuncNoEcpPhys.Text   = "The link can not be done, as no physical connector has been selected.";
+
+CATEdlReconcilePlaceFromUipCmd.EqtFuncNoEqtPhys.Title = "No physical equipment selected";
+CATEdlReconcilePlaceFromUipCmd.EqtFuncNoEqtPhys.Text  = "The link cannot be done, as no physical equipment has been selected.";
+
+CATEdlReconcilePlaceFromUipCmd.ContactWithoutCavity.Title = "Contact not Placed in a Cavity";
+CATEdlReconcilePlaceFromUipCmd.ContactWithoutCavity.Text  = "The selected contact is not placed in a cavity.\nTo realize a functional link, the contact must be in a cavity";
+
+CATEdlReconcilePlaceFromUipCmd.PlaceSubEntitiesDlg.Title = "Placement Mode";
+CATEdlReconcilePlaceFromUipCmd.PlaceSubEntitiesDlg.Text  = "Place with connectors";
+
+CATEdlReconcilePlaceFromUipCmd.NoExternalSystemsSelected.Title = "No external systems selected";
+CATEdlReconcilePlaceFromUipCmd.NoExternalSystemsSelected.Text  = "No external systems selected, Select first external systems";
+
+CATEdlReconcilePlaceFromUipCmd.NoCatalogPathDefined.Title = "No catalog path defined";
+CATEdlReconcilePlaceFromUipCmd.NoCatalogPathDefined.Text  = "No catalog path defined in the tools options";
+
+CATEdlReconcilePlaceFromUipCmd.NoPinsRelinked.Title = "No more pins relinked";
+CATEdlReconcilePlaceFromUipCmd.NoPinsRelinked.Text  = "No more pins were relinked";
+
+CATEdlReconcilePlaceFromUipCmd.NoObjectFound.Title = "No Object Found";
+CATEdlReconcilePlaceFromUipCmd.NoObjectFound.Text  = "The object could not be loaded. Check links of your catalog please";
+

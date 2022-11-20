@@ -1,0 +1,44 @@
+rootFrm.Title = "無";
+rootFrm.ModeFrm.Title = "曲線模式";
+rootFrm.ModeFrm.Combo.Title = "建立模式";
+rootFrm.ModeFrm.Combo.LongHelp = 
+"Changes the computation mode for creating the curve.
+In Near Points mode, the approximated curve is mono-arc and its 
+degree can be selected. In Through Points mode, curves created are 
+multi-arc, and every points lie on them. The Control Point 
+mode creates curves whose control points are the selected points.";
+rootFrm.ModeFrm.SubModeFrm.Symetry.LongHelp = "Creates the curve symmetrically";
+rootFrm.ModeFrm.SubModeFrm.Symetry.ShortHelp = "對稱";
+rootFrm.ModeFrm.SubModeFrm.Closure.LongHelp = "Creates a closed curve";
+rootFrm.ModeFrm.SubModeFrm.Closure.ShortHelp = "封閉";
+rootFrm.DegAndArcFrm.Title = "曲線性質";
+rootFrm.DegAndArcFrm.MonoArc.Title = "單一弧";
+rootFrm.DegAndArcFrm.MonoArc.LongHelp = "Displays the number of arcs in the curve.";
+rootFrm.DegAndArcFrm.Degree.Title = "次序";
+rootFrm.DegAndArcFrm.Degree.LongHelp = "Displays the curve order.";
+rootFrm.DegAndArcFrm.Arc.Title = "弧";
+rootFrm.DegAndArcFrm.Arc.LongHelp = "Displays the number of arcs in the curve.";
+MultiDegreeLab = "階數 (每弧) ";
+MultiArcLab = "弧數";
+MonoDegreeLab = "階數 (最大) ";
+MonoDegreeCtrlLab = "階數 (總體) ";
+MonoArcLab = "單一弧 ";
+PlaneLab = "平面型式曲線";
+SpaceLab = "幾何上曲線";
+ThroughPoints = "經過點";
+Interpolate = "近接點";
+ControlPoint = "控制點";
+rootFrm.DisplayFrm.Title = "顯示";
+rootFrm.DisplayFrm.Curvature.LongHelp = "Displays a porcupine analysis";
+rootFrm.DisplayFrm.Curvature.ShortHelp = "垂直線分析";
+rootFrm.DisplayFrm.Deviation.LongHelp = "Displays the distance between the points and the curve
+(Only in Near Point mode)";
+rootFrm.DisplayFrm.Deviation.ShortHelp = "顯示變化";
+rootFrm.DisplayFrm.Grid.LongHelp = "Displays planar grid for the creation of the curve";
+rootFrm.DisplayFrm.Grid.ShortHelp = "隱藏或顯示格點";
+WarningTitle = "多重弧";
+WarningText = 
+"The curve creation mode is changed 
+into Multi-Arcs if the number of 
+control points exceeds seven, or 
+in closed creation mode";

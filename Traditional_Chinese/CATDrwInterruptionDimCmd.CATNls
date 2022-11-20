@@ -1,0 +1,94 @@
+//=====================================================================================
+//                                     CNEXT - CXR11
+//                          COPYRIGHT DASSAULT SYSTEMES 2002 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwInterruptionDimCmd
+// LOCATION    :    DraftingIntCommands
+// AUTHOR      :    flr
+// BUT         :    Dimension Interruption Management Command
+// DATE        :    08.10.2002
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//      01           lgk   11.10.2002  Validation
+//=====================================================================================
+
+//******************************************************************************
+// Command
+//******************************************************************************
+CATDrwInterruptionDimCmd.Add.UndoTitle="建立中斷";
+CATDrwInterruptionDimCmd.Remove.UndoTitle="刪除中斷";
+
+//******************************************************************************
+// States
+//******************************************************************************
+CATDrwInterruptionDimCmd.waitForDimState.Message=
+"以圍圈選擇一或多個尺寸";
+
+CATDrwInterruptionDimCmd.waitFor1stPointStateAdd.Message=
+"指定建立中斷的第一個點";
+
+CATDrwInterruptionDimCmd.waitFor1stPointStateRemove.Message=
+"指定定義移除中斷的點";
+
+CATDrwInterruptionDimCmd.waitFor2ndPointState.Message=
+"指定建立中斷的第二個點";
+
+//******************************************************************************
+// Agents
+//******************************************************************************
+CATDrwInterruptionDimCmd.DimSelAgent.UndoTitle = "尺寸選擇";
+CATDrwInterruptionDimCmd.2DPointIndication.UndoTitle = "第一點選擇";
+
+//******************************************************************************
+// Switches
+//******************************************************************************
+CATDrwInterruptionDimCmd.SwitchAgentRessource.AddOneSide.Title = "在一側增加中斷";
+CATDrwInterruptionDimCmd.SwitchAgentRessource.AddOneSide.ShortHelp = "在一側增加中斷";
+CATDrwInterruptionDimCmd.SwitchAgentRessource.AddOneSide.Help =
+"對每一個尺寸,在指定點間,中斷最接近的延伸線";
+CATDrwInterruptionDimCmd.SwitchAgentRessource.AddOneSide.LongHelp=
+"在一側增加中斷
+對每一個尺寸,在指定點間
+中斷最接近的延伸線";
+
+CATDrwInterruptionDimCmd.SwitchAgentRessource.AddBothSide.Title = "兩側增加中斷";
+CATDrwInterruptionDimCmd.SwitchAgentRessource.AddBothSide.ShortHelp = "兩側增加中斷";
+CATDrwInterruptionDimCmd.SwitchAgentRessource.AddBothSide.Help =
+"中斷所有尺寸的延伸線";
+CATDrwInterruptionDimCmd.SwitchAgentRessource.AddBothSide.LongHelp=
+"兩側增加中斷
+中斷所有尺寸的延伸線";
+
+CATDrwInterruptionDimCmd.SwitchAgentRessource.RemoveOne.Title = "移除中斷";
+CATDrwInterruptionDimCmd.SwitchAgentRessource.RemoveOne.ShortHelp = "移除中斷";
+CATDrwInterruptionDimCmd.SwitchAgentRessource.RemoveOne.Help =
+"移除最接近尺寸的中斷線";
+CATDrwInterruptionDimCmd.SwitchAgentRessource.RemoveOne.LongHelp=
+"移除中斷
+移除最接近尺寸的中斷線";
+
+CATDrwInterruptionDimCmd.SwitchAgentRessource.RemoveOneSide.Title = "在一側移除中斷";
+CATDrwInterruptionDimCmd.SwitchAgentRessource.RemoveOneSide.ShortHelp = "在一側移除中斷";
+CATDrwInterruptionDimCmd.SwitchAgentRessource.RemoveOneSide.Help =
+"移除每一個尺寸的一側中斷線";
+CATDrwInterruptionDimCmd.SwitchAgentRessource.RemoveOneSide.LongHelp=
+"在一側移除中斷
+移除最接近尺寸的所有中斷線";
+
+CATDrwInterruptionDimCmd.SwitchAgentRessource.RemoveAll.Title = "移除所有中斷線";
+CATDrwInterruptionDimCmd.SwitchAgentRessource.RemoveAll.ShortHelp = "移除所有中斷線";
+CATDrwInterruptionDimCmd.SwitchAgentRessource.RemoveAll.Help =
+"移除所有尺寸的所有中斷線";
+CATDrwInterruptionDimCmd.SwitchAgentRessource.RemoveAll.LongHelp=
+"移除所有中斷線
+移除所有尺寸的所有中斷線";
+
+
+
+
+

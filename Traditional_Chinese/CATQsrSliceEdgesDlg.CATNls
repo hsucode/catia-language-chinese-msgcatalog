@@ -1,0 +1,34 @@
+// Cree par CQO, Sept 01
+ 
+Title="曲線切片";
+BLess="<< 簡單";
+BMore="詳細 >>";
+
+FrmRoot.FrmElem.Title = "要切片的曲線";
+FrmRoot.FrmElem.LbElem.Title = "要切片的曲線";
+FrmRoot.FrmElem.LbElem.LongHelp = "選擇要切片的曲線";
+FrmRoot.FrmElem.FrmSel.Title = "選擇曲線";
+FrmRoot.FrmElem.FrmSel.LongHelp = "選擇要切片的曲線";
+FrmRoot.FrmElem.FrmSel.Ajouter.Title = "新增";
+FrmRoot.FrmElem.FrmSel.Ajouter.LongHelp = "新增曲線至列表";
+FrmRoot.FrmElem.FrmSel.Supprimer.Title = "移除";
+FrmRoot.FrmElem.FrmSel.Supprimer.LongHelp = "從表列移除曲線";
+FrmRoot.FrmDivers.More.Title = "詳細 >>";
+FrmRoot.FrmDivers.More.LongHelp = "顯示參數";
+FrmRoot.FrmDivers.Less.Title = "<< 簡單";
+FrmRoot.FrmDivers.Less.LongHelp = "隱藏參數";
+FrmRoot.FrmDivers.Lbbid.Title = "         ";
+FrmRoot.FrmDivers.Lbbid.LongHelp = "  ";
+FrmRoot.FrmDivers.ChkbVisu.Title = "節點上距離";
+FrmRoot.FrmDivers.ChkbVisu.LongHelp = "顯示曲線切段的偵錯:
+- 成對曲線間的距離為黃色.
+- 最小距離的最大值為黑色. 
+  按一下此數值來更新最大距離參數範圍.";
+FrmParam.Title = "參數";
+FrmParam.LongHelp = "切片動作參數";
+FrmParam.LbDistMin.Title = "最大距離 ";
+FrmParam.LbDistMin.LongHelp = "如最大距離小於此值則認為它們自我相交";
+FrmParam.ChkbFilter.Title = "最小長度";
+FrmParam.ChkbFilter.LongHelp = "設定所建曲線最小長度";
+FrmParam.LbLengthMin.Title = "最小長度";
+FrmParam.LbLengthMin.LongHelp = "設定所建曲線最小長度";

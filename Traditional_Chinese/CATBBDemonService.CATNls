@@ -1,0 +1,26 @@
+NotAdministratorBatch="BBDemonService 程式需要系統管理員權限.";
+ErrorBatchBadOptions.Text = "不良選項:\n";
+ErrorBatchNotValidOption1.Text ="/p1 為無效選項 \n";
+ErrorBatchNotValidOption3.Text ="/p1 /p2 /p3 為無效選項 \n";
+ErrorBatchMissingPorts.Text="您必須以 -backbonePorts 選項來指定骨幹埠 \n";
+ErrMissingOption.Text="您必須使用下列之一選項 :-create,-delete,-stop,-start\n" ;
+ErrExclusiveOptions.Text="選項 -create,-delete,-start,-stop 不可同時使用 \n";
+ErrWndV5RunPort.Text = "無效埠號碼 : /p1. 埠號碼必須大於或等於 /p2\n";
+ErrWndV5RunPortMax.Text = "無效埠號碼: /p1. 埠號碼必須小於或等於 /p2\n";
+BBDemonServiceCreate.Fin="骨幹服務已建立並開始";
+BBDemonServiceDelete.Fin="骨幹服務已成功停止並被刪除";
+BBDemonServiceStart.Fin="骨幹服務已成功開始";
+BBDemonServiceStop.Fin="骨幹服務已成功停止";
+//----------------------
+// HELP
+//---------------------
+HelpUsage.Text = "Usage:";
+HelpCommandLine.Text = "\nBBDemonService -create [-backbonePorts p1 p2] | -delete | -start | -stop | -h\n";
+HelpHelp.Text            ="-h                      : 顯示此說明.\n";
+HelpCreate.Text          ="-create                 : 建立和開始骨幹服務 \n";
+HelpbackbonePorts.Text   ="-backbonePorts p1 p2    : 只能使用 -create 選項來指定骨幹的通訊埠. 預設值為 /p1 和 /p2\n";
+HelpDelete.Text          ="-delete                 : 停止和刪除骨幹服務 \n";
+HelpStart.Text           ="-start                  : 開始骨幹服務 \n";
+HelpStop.Text            ="-stop                   : 停止骨幹服務 \n";
+
+

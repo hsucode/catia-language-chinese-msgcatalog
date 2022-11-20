@@ -1,0 +1,175 @@
+//  Messages for CATIA V5 File DocTyp adhesion - V5R13 implementation
+//   MODULE :  DocTypAdhesion.m
+//   US Version
+//=====================================================================
+CATIADocTyp.DocTypNLSName="檔案";
+CATIADocTyp.Title="選擇檔案";
+// User Interfaces resources ==========================================
+////////////////////////////////////////////// frame Input
+CATIADocTyp.Frame.Input.Title="輸入選項";
+CATIADocTyp.Frame.Input.Help="輸入選項";
+
+CATIADocTyp.Lbl.Select.Title="選擇";
+CATIADocTyp.Lbl.Select.Help="選擇";
+
+CATIADocTyp.Btn.SelectMember.Title=" 元件... ";
+CATIADocTyp.Btn.SelectMember.Help="由目錄中選擇一或多個元件";
+
+CATIADocTyp.Btn.SelectAll.Title="   全部...   ";
+CATIADocTyp.Btn.SelectAll.Help="由目錄中選擇全部元件";
+
+CATIADocTyp.BrowseDirBox.Title="瀏覽目錄盒";
+
+CATIADocTyp.Btn.SelectString.Title="  字串...  ";
+CATIADocTyp.Btn.SelectString.Help="由目錄以字串選擇元件";
+
+//////////////////////////////////////// selection Version resources
+CATIADocTyp.Chk.VersionSelection.Title="選擇已修改 CATIA V5 文件:";
+CATIADocTyp.Chk.VersionSelection.Help="依據 CATIA 版本屬性來選擇 CATIA V5 文件";
+
+CATIADocTyp.Edt.Version1Selection.Help=" 輸入文件的開始版期";
+CATIADocTyp.Edt.Version2Selection.Help=" 輸入文件的結束版期";
+
+CATIADocTyp.Cmb.Since = "從";
+CATIADocTyp.Cmb.Before = "之前";
+CATIADocTyp.Cmb.Between = "之間";
+//////////////////////////////////////// selection date resources
+CATIADocTyp.Chk.DateSelection.Title="選擇已修改文件:";
+CATIADocTyp.Chk.DateSelection.Help="依據日期標準來選擇文件";
+
+CATIADocTyp.Edt.DocumentDate1Selection.Help="輸入選擇的開始日期";
+CATIADocTyp.Edt.DocumentDate2Selection.Help="輸入選擇的結束日期";
+
+CATIADocTyp.NoStringDefined="未定義字串";
+
+CATIADocTyp.BtnMML.Title="選擇指向文件";
+CATIADocTyp.BtnMML.Help="選擇指向文件";
+
+CATIADocTyp.Chk.ExtendedSelection.Title="延伸選擇至次目錄";
+CATIADocTyp.Chk.ExtendedSelection.Help="延伸選擇至次目錄";
+
+////////////////////////////////////////////// frame Rename
+CATIADocTyp.Frame.Rename.Title="更名標準";
+CATIADocTyp.Frame.Rename.Help="更名標準";
+
+CATIADocTyp.Chk.Append.Title="附加字串";
+CATIADocTyp.Chk.Append.Help="增加字串在文件名稱之後";
+CATIADocTyp.Edt.Append.Title="附加字串";
+CATIADocTyp.Edt.Append.Help="定義附加字串";
+
+CATIADocTyp.Chk.Insert.Title="插入";
+CATIADocTyp.Chk.Insert.Help="插入";
+
+CATIADocTyp.Chk.Sub.Title="替換";
+CATIADocTyp.Chk.Sub.Help="替換";
+
+CATIADocTyp.Edt.Insert.Help="定義插入或替換的字串";
+CATIADocTyp.Lbl.FromCol.Title="由行列";
+CATIADocTyp.Edt.FromCol.Help="鍵入行列範圍";
+
+CATIADocTyp.RadioBtn.NoRename.Title="未更名";
+CATIADocTyp.RadioBtn.NoRename.Help="文件保留初始名稱";
+
+CATIADocTyp.RadioBtn.Rename.Title="更名";
+CATIADocTyp.RadioBtn.Rename.Help="文件已更名";
+
+CATIADocTyp.RadioBtn.RenameifExist.Title="更名如已存在";
+CATIADocTyp.RadioBtn.RenameifExist.Help="更名如已存在";
+
+////////////////////////////////////////////// frame Output
+CATIADocTyp.Frame.Output.Title="輸出選項";
+CATIADocTyp.Frame.Output.Help="輸出選項";
+
+CATIADocTyp.Chk.ReplaceDoc.Title="在目標內含器中更換已存文件";
+CATIADocTyp.Chk.ReplaceDoc.Help="在目標內含器中更換已存文件";
+
+CATIADocTyp.Lbl.TargetDirectory.Title="預設目標目錄";
+CATIADocTyp.Lbl.TargetDirectory.Help="目前預設目標目錄";
+
+CATIADocTyp.Btn.ResetTargetDir.Title="重設";
+CATIADocTyp.Btn.ResetTargetDir.Help="由資料生命周期監測器中回復目標目錄";
+
+CATIADocTyp.Btn.ChangeTargetDir.Title="更改目標目錄...";
+CATIADocTyp.Btn.ChangeTargetDir.Help="定義新目標目錄";
+
+CATIADocTyp.BrowseChangeTargetDirBox.Title="瀏覽更改目標目錄盒";
+
+CATIADocTyp.Chk.KeepFileTree.Title="保持目錄架構";
+CATIADocTyp.Chk.KeepFileTree.Help="在目標目錄下保持初始目錄架構";
+
+CATIADocTyp.Chk.KeepAtSameLocation.Title="保持在相同位置";
+CATIADocTyp.Chk.KeepAtSameLocation.Help="保持在相同位置";
+
+CATIADocTyp.Chk.ChkSaveNonModifiedDoc.Title="儲存未修改文件";
+CATIADocTyp.Chk.ChkSaveNonModifiedDoc.Help="在目標目錄儲存未修改文件, 當目標目錄不同於輸入目錄時";
+
+CATIADocTyp.Chk.ChkRenameNonModifiedDoc.Title="當儲存未修改文件時更名";
+CATIADocTyp.Chk.ChkRenameNonModifiedDoc.Help="當儲存未修改文件時更名";
+
+CATIADocTyp.List.MappingTable.Title="對應表";
+CATIADocTyp.List.MappingTable.Help="輸入輸出目錄對應表";
+
+CATIADocTyp.List.MappingTable.col1="由輸入目錄來的文件";
+CATIADocTyp.List.MappingTable.col1.H="由輸入目錄來的文件";
+CATIADocTyp.List.MappingTable.col2="輸出目錄";
+CATIADocTyp.List.MappingTable.col2="將會儲存在輸出目錄";
+CATIADocTyp.List.MappingTable.col3="初始化輸出目錄";
+
+CATIADocTyp.Btn.ResetMappingDir.Title="重設";
+CATIADocTyp.Btn.ResetMappingDir.Help="回復初始數值";
+
+CATIADocTyp.Btn.DefaultMappingDir.Title="預設";
+CATIADocTyp.Btn.DefaultMappingDir.Help="為所選全部輸出目錄影響目標目錄";
+
+CATIADocTyp.Btn.ChangeMappingDir.Title="更改...";
+CATIADocTyp.Btn.ChangeMappingDir.Help="更改所選輸出目錄";
+
+CATIADocTyp.BrowseChangeMappingDirBox.Title="瀏覽更改對應目錄盒";
+
+/////////////////////////////////// frame selection management 
+
+CATIADocTyp.Chk.SaveBackUp.Title="儲存文件的前一版期";
+CATIADocTyp.Chk.SaveBackUp.Help="儲存文件的前一版期";
+
+CATIADocTyp.Edt.TargetDirectory.Help="目前目標目錄";
+
+/////////////////////////////////// Warning Selection criteria
+CATIADocTyp.Warning.StartDateFormat = "輸入的開始日期格式不正確.請使用 YYYY.MM.DD 格式";
+CATIADocTyp.Warning.EndDateFormat = "輸入的結束日期格式不正確.請使用 YYYY.MM.DD 格式";
+CATIADocTyp.Warning.InvalidStartDate="所提供的開始日期無效. 請輸入的有效月年.";
+CATIADocTyp.Warning.InvalidEndDate="所提供的開始日期無效. 請輸入的有效月日.";
+//////////////////////////////////
+CATIADocTyp.Warning.VersionBetweenStart="輸入的開始版期必須在 CATIA V5R10 和  /p1 之間.";
+CATIADocTyp.Warning.VersionBetweenEnd="輸入的結束版期必須在 CATIA V5R10 和  /p1 之間.";
+CATIADocTyp.Warning.IncorrectRelease="最後版期的發行號碼小於開始版期的發行號碼. 請確定最後版期大於開始版期的發行號碼";
+CATIADocTyp.Warning.IncorrectServicePack="最後版期的 Service pack 號碼小於開始版期的 service pack 號碼. 請確定最後版期大於開始版期的 service pack 號碼";
+CATIADocTyp.Warning.VersionFormatStart="輸入的開始版期無效. 請使用 CATIA V5 Rx 或 CATIA V5 Rx SPy 格式.";
+CATIADocTyp.Warning.VersionFormatEnd ="輸入的結束版期無效. 請使用 CATIA V5 Rx 或 CATIA V5 Rx SPy 格式.";
+CATIADocTyp.Warning.VersionFormat="輸入的版期無效. 請使用 CATIA V5 Rx 或 CATIA V5 Rx SPy 格式.";
+
+//////////////////////////////////
+
+CATIADocTyp.Warning.EmptyDirectorySub = "提供的目錄和子目錄沒有任何 CATIA 文件. 請提供至少有一份 CATIA 文件的目錄.";
+CATIADocTyp.Warning.EmptyDirectory = "提供的目錄沒有任何 CATIA 文件. 請提供至少有一份 CATIA 文件的目錄.";
+
+CATIADocTyp.Warning.StartDateBeforeFinal="開始日期應較結束日期早,請檢查輸入日期.";
+CATIADocTyp.Warning.StartDateSameFinal="開始日期和結束日期一樣,請檢查輸入日期.";
+CATIADocTyp.Warning.StartDateBefore1970="開始日期不可早於 1970 並晚於今年. 請檢查輸入日期.";
+CATIADocTyp.Warning.StartDateBeforeCurrent="開始日期應早於現在日期. 請檢查輸入日期.";
+CATIADocTyp.Warning.EndDateBefore1970="結束日期不可早於 1970 並晚於今年. 請檢查輸入日期.";
+CATIADocTyp.Warning.EndDateBeforeCurrent="結束日期應早於現在日期. 請檢查輸入日期.";
+CATIADocTyp.Warning.DateDefault="輸入日期不正確,請使用 YYYY.MM.DD 格式";
+
+CATIADocTyp.Warning.NoAppendString="未定義附加字串.";
+CATIADocTyp.Warning.NoInsertString="未定義插入或替換字串.";
+CATIADocTyp.Warning.EntryFromColumn="輸入號碼必須在 [1-80] 之間.";
+CATIADocTyp.Warning.NoOptionSelected="至少必須勾選下列任何一項選項 附加/插入/替換 字串.";
+CATIADocTyp.Warning.RenameFailedReason="為插入或替換更名標準的 行輸入 大於文件名稱長度.\n\n";
+CATIADocTyp.Warning.RenameFailed="輸入文件更名失敗...\n";
+
+CATIADocTyp.Warning.Help.col1="下列文件路徑不存在 \n";
+CATIADocTyp.Warning.Help.col2="請安裝文件";
+CATIADocTyp.Warning.Title="警告";
+CATIADocTyp.Warning.NoBrowser="無瀏覽器";
+
+

@@ -1,0 +1,20 @@
+//*-------------------------------*//
+//* CATSysCommunication messages *//
+//*-------------------------------*//
+CATSysComPortNotFound_150001.Request = "無法找到主機 /p2 上的埠 /p1  ";
+CATSysComPortFailure_150002.Request = "無法宣告主機 /p2 上的埠 /p1";
+CATSysComPortAcceptFailed_150003.Request = "無法接受埠 /p1";
+CATSysComPortAcceptFailed_150004.Request = "等待埠 /p1 時發生錯誤";
+CATSysComInitSocketError_150102.Request = "在插座 (socket) 操作方面發生錯誤. 對骨幹的連接很可能失去.";
+CATSysComSendSocketError_150103.Request = "在插座 (socket) 傳送操作方面發生錯誤. 對骨幹的連接很可能失去.";
+CATSysComRecvSocketError_150104.Request = "在插座 (socket) 接收操作方面發生錯誤. 對骨幹的連接很可能失去.";
+CATSysComMsgClassError_151001.Request = "訊息分類 \p1 沒找到.";
+CATSysComMsgStreamError_151002.Request = "分類 \p1 的資料流動 (streaming) 期間的錯誤.";
+CATSysComMsgUnstreamError_151003.Request = "分類 \p1 的資料不流動 (unstreaming) 期間的錯誤.";
+CATSysComMsgClassInvalid_152001.Request = "訊息分類 \p1 必須實行 CATIStreamMsg.";
+CATSysComMsgClassInvalid_152002.Request = "訊息分類 \p1 必須實行 CATICommMsg.";
+CATSysComMsgInvalid_152003.Request = "訊息不需要一個答案.";
+CATSysComInstanciationError_152004.Request = "無法分類新建複本 \p1 的訊息物件.";
+CATSysComReentranceError_152005.Request = "內部錯誤. 再次入口條件發現.";
+CATSysComTimeoutOccurred_152006.Request = "超時發生.";
+CATSysComApplicationNotFound_152007.Request = "目標應用 \p1 不提供.";

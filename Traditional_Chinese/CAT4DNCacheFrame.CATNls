@@ -1,0 +1,96 @@
+CacheFrameActivation.HeaderFrame.Global.Title="快速記憶體活動";
+CacheFrameActivation.IconAndOptionsFrame.OptionsFrame.CacheActivationButton.Title="使用快速記憶體來工作";
+CacheFrameActivation.IconAndOptionsFrame.OptionsFrame.CacheActivationButton.ShortHelp=
+"使用快速記憶體來工作";
+CacheFrameActivation.IconAndOptionsFrame.OptionsFrame.CacheActivationButton.LongHelp=
+"為了更好的效能, 快速記憶體可以簡單的顯現方式來工作.
+這些檔案將代替幾何檔案而不改變顯現方式"; 
+
+CacheFramePath.HeaderFrame.Global.Title="快速記憶體路徑";
+
+CacheFramePath.IconAndOptionsFrame.OptionsFrame.CachePathLabel.Title="快速記憶體路徑";
+
+CacheFramePath.IconAndOptionsFrame.OptionsFrame.CachePathPushB.ShortHelp="選擇路徑";
+CacheFramePath.IconAndOptionsFrame.OptionsFrame.cachePathEditor.LongHelp=
+"用來儲存顯現方式的檔案目錄.
+只用在起動快速記憶體時.
+第一次時分件將被插入或被開啟, 它將被貼上在圖上.
+意思是相關的簡易檔案將被計算和儲存在快速記憶體和顯示在文件視窗中. 
+下一次需要分件時, (簡易檔案若已存在, 非原始文件) 
+將自動被載入至快速記憶體中";
+CacheFramePath.IconAndOptionsFrame.OptionsFrame.ShortHelp=
+"局部和已發行的快速記憶體絕對路徑位置";
+
+CacheFramePath.IconAndOptionsFrame.OptionsFrame.CachePathReleaseLabel.Title="釋出快速記憶體位置";
+
+CacheFramePath.IconAndOptionsFrame.OptionsFrame.CachePathRelPushB.ShortHelp="選擇路徑";
+
+CacheFramePath.IconAndOptionsFrame.OptionsFrame.cachePathReleaseEditor.LongHelp=
+"它是一個不必須存在機器上的唯讀暫存器.
+數個目錄可定義成釋放的暫存器. 如果在目前暫存器中無法找到簡化檔案,
+將展開目錄來瀏覽是否在其中之一上.
+如仍未找到, 分件將會被 tesselated 且儲存在局部暫存器上";
+
+
+CacheFramePath.IconAndOptionsFrame.OptionsFrame.ConfigCachePathRelPushB.Title="設定...";
+CacheFramePath.IconAndOptionsFrame.OptionsFrame.ConfigCachePathRelPushB.ShortHelp="設定已發行的快速記憶體";
+CacheFramePath.IconAndOptionsFrame.OptionsFrame.ConfigCachePathRelPushB.LongHelp=
+"減輕釋放暫存器組態. 它可以是:
+  - 在表列可用目錄中選一目錄,
+  - 修改搜尋次序.";
+
+CacheFrameSize.HeaderFrame.Global.Title="記憶體大小";
+
+CacheFrameSize.IconAndOptionsFrame.OptionsFrame.CacheSizeLabel.Title="最大";
+CacheFrameSize.IconAndOptionsFrame.OptionsFrame.SizeControlCheckButton.Title="檢查最大記憶體";
+CacheFrameSize.IconAndOptionsFrame.OptionsFrame.SizeControlCheckButton.ShortHelp=
+"快速記憶體系統可檢查局部快速記憶體的允許最大大小";
+CacheFrameSize.IconAndOptionsFrame.OptionsFrame.SizeControlCheckButton.LongHelp=
+"快速記憶體系統可檢查局部快速記憶體的允許最大大小";
+CacheFrameSize.IconAndOptionsFrame.OptionsFrame.CacheSizeLabel.Title="最大大小 ";
+CacheFrameSize.IconAndOptionsFrame.OptionsFrame.CacheSizeUnit.Title=" MB";
+CacheFrameSize.IconAndOptionsFrame.OptionsFrame.cacheSizeEditor.ShortHelp=
+"以百萬位元顯示的快速記憶體大小";
+CacheFrameSize.IconAndOptionsFrame.OptionsFrame.cacheSizeEditor.LongHelp=
+"局部暫存器中可儲存的百萬位元大小.
+如超過此大小, 將不計算並產生錯誤訊息檔案.";
+TimeStampFrame.HeaderFrame.Global.Title="時間";
+TimeStampFrame.IconAndOptionsFrame.OptionsFrame.TimeStampCheckButton.Title="檢查時間";
+TimeStampFrame.IconAndOptionsFrame.OptionsFrame.TimeStampCheckButton.ShortHelp=
+"檢查文件的最後修改時間";
+TimeStampFrame.IconAndOptionsFrame.OptionsFrame.TimeStampCheckButton.LongHelp=
+"The cache system can check or not the timestamps of the simplified file.
+Check the timestamp : when the cache system checks if the simplified file
+   exists in the local cache directory it compares the date of the component
+   and the date of the corresponding simplified file. If the simplified file 
+   is up-to-date, it is loaded in other case the component is re-tesselated
+   and the old simplified file is deleted.
+No check of the timestamp : if the simplified file exists in the local 
+   cache directory it is automatically loaded with no check.";
+TimeStampFrame.IconAndOptionsFrame.OptionsFrame.GMTCheckButton.Title="GMT 時間記號格式";
+TimeStampFrame.IconAndOptionsFrame.OptionsFrame.GMTCheckButton.ShortHelp=
+"使用 GMT 時間來產生時間記號";
+TimeStampFrame.IconAndOptionsFrame.OptionsFrame.GMTCheckButton.LongHelp=
+"使用 GMT 時間來產生時間記號";
+
+CacheContentFrame.HeaderFrame.Global.Title="暫存器內容";
+CacheContentFrame.IconAndOptionsFrame.OptionsFrame.LODCheckButton.Title="以詳細層產生 cgr ";
+CacheContentFrame.IconAndOptionsFrame.OptionsFrame.LODCheckButton.ShortHelp=
+"以詳細層產生 cgr ";
+CacheContentFrame.IconAndOptionsFrame.OptionsFrame.LODCheckButton.LongHelp=
+"以詳細層產生 cgr ";
+DirectoryBrowser.Title="快速記憶體路徑";
+
+DirectoryReleaseBrowser.Title="釋放快速記憶體位置";
+
+Notify.Title="警告";
+NotifyGMT.Title="警告";
+Warning="須重新執行 CATIA 應用，將已修改項目併入";
+ErrorMessage0="路徑與有效目錄不相關
+或無法建立目錄";
+ErrorMessage1="此目錄無法建立";
+ErrorMessage2="此路徑不屬於任一目錄";
+ErrorMessage3="目錄存取遭拒";
+ErrorMessage4=" 不是有效目錄";
+ErrorMessageGMT="無法起動暫存器 \n 暫存器版期不支援 \n 請使用 CATSysMvCache 批次作業來更新您的暫存器";
+ErrorGMTCachePath=" 無效目錄或 \n 無法選擇暫存器路徑 \n 暫存器版期不支援 \n 請使用 CATSysMvCache 批次作業來更新您的暫存器";

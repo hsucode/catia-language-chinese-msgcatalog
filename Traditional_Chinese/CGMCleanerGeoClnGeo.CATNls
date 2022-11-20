@@ -1,0 +1,158 @@
+//=====================================================================================
+//                          COPYRIGHT DASSAULT SYSTEMES 2002
+//-------------------------------------------------------------------------------------
+// Messages for CGM geometric cleaner rules
+//-------------------------------------------------------------------------------------
+
+// CATGeoClnBoundingBox
+
+BOB_1_CHK.Short		= "圍繞盒計算失敗.";
+BOB_1_CHK.Error		= "圍繞盒在 /p1 檢查失敗.";
+BOB_1_CLN_OK.Short	= "圍繞盒清理成功.";
+BOB_1_CLN_OK.Error	= "圍繞盒在 /p1 清理成功.";
+BOB_1_CLN_KO.Short	= "圍繞盒清理失敗.";
+BOB_1_CLN_KO.Error	= "圍繞盒在 /p1 清理失敗.";
+
+PSS_0_CHK.Short		= "超過依附的最大限制檢查失敗.";
+PSS_0_CHK.Error		= "超過依附 /p1 的最大限制檢查失敗.";
+PSS_0_CLN_OK.Short	= "未執行清理.";
+PSS_0_CLN_OK.Error	= "未執行清理.";
+PSS_0_CLN_KO.Short	= "未執行清理.";
+PSS_0_CLN_KO.Error	= "未執行清理.";
+
+PCE_1_CHK.Short		= "邊界曲線中的 POEC 曲線檢查失敗.";
+PCE_1_CHK.Error		= "邊界曲線中的 POEC /p1 曲線檢查失敗.";
+PCE_1_CLN_OK.Short	= "未執行檢查.";
+PCE_1_CLN_OK.Error	= "未執行檢查.";
+PCE_1_CLN_KO.Short	= "未執行檢查.";
+PCE_1_CLN_KO.Error	= "未執行檢查.";
+
+PPO_1_CHK.Short		= "特性曲線限制中的 POEC 特性參數檢查失敗.";
+PPO_1_CHK.Error		= "特性曲線限制中的 POEC /p1 特性參數檢查失敗.";
+PPO_1_CLN_OK.Short	= "未執行檢查.";
+PPO_1_CLN_OK.Error	= "未執行檢查.";
+PPO_1_CLN_KO.Short	= "未執行檢查.";
+PPO_1_CLN_KO.Error	= "未執行檢查.";
+
+CPO_1_CHK.Short		= "特性曲線限制中的 PCurve 特性參數檢查失敗.";
+CPO_1_CHK.Error		= "特性曲線限制中的 PCurve /p1 特性參數檢查失敗.";
+CPO_1_CLN_OK.Short	= "未執行檢查.";
+CPO_1_CLN_OK.Error	= "未執行檢查.";
+CPO_1_CLN_KO.Short	= "未執行檢查.";
+CPO_1_CLN_KO.Error	= "未執行檢查.";
+
+ICG_1_CHK.Short		= "IntCurve 間隙較解法小檢查失敗.";
+ICG_1_CHK.Error		= "在 /p1上的 IntCurve 間隙較解法小檢查失敗.";
+ICG_1_CLN_OK.Short	= "未執行檢查.";
+ICG_1_CLN_OK.Error	= "未執行檢查.";
+ICG_1_CLN_KO.Short	= "未執行檢查.";
+ICG_1_CLN_KO.Error	= "未執行檢查.";
+
+CCC_0_CHK.Short		= "曲線至少為 C1 連續檢查失敗.";
+CCC_0_CHK.Error		= "在 /p1 曲線至少為 C1 連續檢查失敗.";
+CCC_0_CLN_OK.Short	= "未執行檢查.";
+CCC_0_CLN_OK.Error	= "未執行檢查.";
+CCC_0_CLN_KO.Short	= "未執行檢查.";
+CCC_0_CLN_KO.Error	= "未執行檢查.";
+
+CCC_1_CHK.Short		= "曲面至少為 C1 連續檢查失敗.";
+CCC_1_CHK.Error		= "在 /p1 曲面至少為 C1 連續檢查失敗.";
+CCC_1_CLN_OK.Short	= "未執行檢查.";
+CCC_1_CLN_OK.Error	= "未執行檢查.";
+CCC_1_CLN_KO.Short	= "未執行檢查.";
+CCC_1_CLN_KO.Error	= "未執行檢查.";
+
+SPM_1_CHK.Short		= "邊界曲線 SetOfPointsMappingLimits 檢查失敗.";
+SPM_1_CHK.Error		= "邊界曲線 SetOfPointsMappingLimits 在 /p1 檢查失敗.";
+SPM_1_CLN_OK.Short	= "未執行清理.";
+SPM_1_CLN_OK.Error	= "未執行清理.";
+SPM_1_CLN_KO.Short	= "未執行清理.";
+SPM_1_CLN_KO.Error	= "未執行清理.";
+
+MPG_1_CHK.Short		= "巨集點的內部點間空隙太大.";
+MPG_1_CHK.Error		= "在 /p1 巨集點的內部點間空隙太大.";
+MPG_1_CLN_OK.Short	= "未執行檢查.";
+MPG_1_CLN_OK.Error	= "未執行檢查.";
+MPG_1_CLN_KO.Short	= "未執行檢查.";
+MPG_1_CLN_KO.Error	= "未執行檢查.";
+
+ULO_1_CHK.Short		= "曲線限制 - 有用的外部最大檢查失敗.";
+ULO_1_CHK.Error		= "曲線限制 - 有用的外部最大檢查在 /p1 失敗.";
+ULO_1_CLN_OK.Short	= "未執行清理.";
+ULO_1_CLN_OK.Error	= "未執行清理.";
+ULO_1_CLN_KO.Short	= "未執行清理.";
+ULO_1_CLN_KO.Error	= "未執行清理.";
+
+CGC_0_CHK.Short		= "曲線連續性檢查失敗.";
+CGC_0_CHK.Error		= " /p1 曲線連續性檢查失敗.";
+CGC_0_CLN_OK.Short	= "未執行清理.";
+CGC_0_CLN_OK.Error	= "未執行清理.";
+CGC_0_CLN_KO.Short	= "未執行清理.";
+CGC_0_CLN_KO.Error	= "未執行清理.";
+
+CGC_1_CHK.Short		= "曲面連續性檢查失敗.";
+CGC_1_CHK.Error		= " /p1 曲面連續性檢查失敗.";
+CGC_1_CLN_OK.Short	= "未執行清理.";
+CGC_1_CLN_OK.Error	= "未執行清理.";
+CGC_1_CLN_KO.Short	= "未執行清理.";
+CGC_1_CLN_KO.Error	= "未執行清理.";
+
+INF_1_CHK.Short		= "平面/線 - 模型大小內原點檢查失敗.";
+INF_1_CHK.Error		= "平面/線 - 模型大小內原點 /p1 檢查失敗.";
+INF_1_CLN_OK.Short	= "未執行清理.";
+INF_1_CLN_OK.Error	= "未執行清理.";
+INF_1_CLN_KO.Short	= "未執行清理.";
+INF_1_CLN_KO.Error	= "未執行清理.";
+
+INF_2_CHK.Short		= "圓/橢圓 - MathRep Inside ModelInfinite 檢查失敗.";
+INF_2_CHK.Error		= "圓/橢圓 - MathRep Inside ModelInfinite on /p1 檢查失敗.";
+INF_2_CLN_OK.Short	= "未執行清理.";
+INF_2_CLN_OK.Error	= "未執行清理.";
+INF_2_CLN_KO.Short	= "未執行清理.";
+INF_2_CLN_KO.Error	= "未執行清理.";
+
+CSG_1_CHK.Short		= "小型幾何 - 曲線弧度大於解析度檢查失敗.";
+CSG_1_CHK.Error		= "小型幾何 - 曲線弧度大於解析度 /p1 檢查失敗.";
+CSG_1_CLN_OK.Short	= "未執行清理.";
+CSG_1_CLN_OK.Error	= "未執行清理.";
+CSG_1_CLN_KO.Short	= "未執行清理.";
+CSG_1_CLN_KO.Error	= "未執行清理.";
+
+CSG_2_CHK.Short		= "小型幾何 - 曲面綴面大於解析度檢查失敗.";
+CSG_2_CHK.Error		= "小型幾何 - 曲面綴面大於解析度 /p1 檢查失敗.";
+CSG_2_CLN_OK.Short	= "未執行清理.";
+CSG_2_CLN_OK.Error	= "未執行清理.";
+CSG_2_CLN_KO.Short	= "未執行清理.";
+CSG_2_CLN_KO.Error	= "未執行清理.";
+
+ECG_1_CHK.Short		= "邊線內部間隙小於解析度檢查失敗.";
+ECG_1_CHK.Error		= "邊線內部間隙小於解析度 /p1 檢查失敗.";
+ECG_1_CLN_OK.Short	= "未執行清理.";
+ECG_1_CLN_OK.Error	= "未執行清理.";
+ECG_1_CLN_KO.Short	= "未執行清理.";
+ECG_1_CLN_KO.Error	= "未執行清理.";
+
+ECG_2_CHK.Short		= "邊線曲線實際間隙大於 100R 檢查失敗.";
+ECG_2_CHK.Error		= "邊線曲線實際間隙大 100R /p1 檢查失敗.";
+ECG_2_CLN_OK.Short	= "未執行清理.";
+ECG_2_CLN_OK.Error	= "未執行清理.";
+ECG_2_CLN_KO.Short	= "未執行清理.";
+ECG_2_CLN_KO.Error	= "未執行清理.";
+
+EIP_1_CHK.Short		= "邊線不可在相同歷程樹中含有相同 PCurves, 檢查失敗.";
+EIP_1_CHK.Error		= "邊線不可在相同歷程樹 /p1 中含有相同 PCurves, 檢查失敗.";
+EIP_1_CLN_OK.Short	= "未執行清理.";
+EIP_1_CLN_OK.Error	= "未執行清理.";
+EIP_1_CLN_KO.Short	= "未執行清理.";
+EIP_1_CLN_KO.Error	= "未執行清理.";
+
+INF_5_CHK.Short		= "圓柱/球/圓錐/手環面 - 無限模型內數學表現方式檢查失敗.";
+INF_5_CHK.Error		= "圓柱/球/圓錐/手環面 - 無限模型內數學表現方式 /p1 檢查失敗.";
+INF_5_CLN_OK.Short	= "未執行清理.";
+INF_5_CLN_OK.Error	= "未執行清理.";
+INF_5_CLN_KO.Short	= "未執行清理.";
+INF_5_CLN_KO.Error	= "未執行清理.";
+
+
+
+

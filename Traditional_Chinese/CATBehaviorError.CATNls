@@ -1,0 +1,85 @@
+//Les Binds 
+BindReachItself.Request.Expert="輸入錯誤.";	
+BindReachItself.Diagnostic.Expert="黏結結果為其本身.";
+BindReachItself.Advice.Expert ="請檢查輸入.";
+BindReachItself.Request.User="輸入錯誤";
+BindReachItself.Diagnostic.User="黏結結果為其本身.";
+BindReachItself.Advice.User="請聯繫專家.";
+
+BindReachNothing.Request.Expert="輸入錯誤";
+BindReachNothing.Diagnostic.Expert="黏結無法經由路徑 /p2 到達 /p1 .";
+BindReachNothing.Advice.Expert="請檢查輸入和 /p1 的可行性.";
+BindReachNothing.Request.User="輸入錯誤";
+BindReachNothing.Diagnostic.User="無法到達 /p1.";
+BindReachNothing.Advice.User="如 /p1 已存, 請聯繫專家.";
+
+// IN_Object lie mais non value
+LinkedAndSeen.Request.Expert="輸入錯誤";
+LinkedAndSeen.Diagnostic.Expert="輸入 /p1 鏈結至未設定參數 /p3 的 /p2 .";
+LinkedAndSeen.Advice.Expert="檢查 /p1.";
+
+LinkedAndSeen.Request.User="輸入錯誤";
+LinkedAndSeen.Diagnostic.User="輸入 /p1 鏈結至未設定參數 /p3 的 /p2 .";
+LinkedAndSeen.Advice.User="檢查 /p1.";
+
+LinkedAndHidden.Request.Expert="輸入錯誤";
+LinkedAndHidden.Diagnostic.Expert="輸入 /p1 鏈結至未設定參數.";
+LinkedAndHidden.Advice.Expert="請檢查輸入.";
+
+LinkedAndHidden.Request.User="輸入錯誤";
+LinkedAndHidden.Diagnostic.User="輸入 /p1 鏈結至未設定參數.";
+LinkedAndHidden.Advice.User="請聯繫專家.";
+
+// Knowledge types incompatible
+KnowledgeTypesError.Request.Expert="知識型式不一致";
+KnowledgeTypesError.Diagnostic.Expert=" \"/p1\" 屬性的知識型式 \"/p2\" 與 \"/p3\" 數值的 \"/p4\" 型式不一致.";
+KnowledgeTypesError.Advice.Expert="請檢查輸入.";
+
+KnowledgeTypesError.Request.User="知識型式不一致";
+KnowledgeTypesError.Diagnostic.User=" \"/p1\" 屬性的知識型式 \"/p2\" 與 \"/p3\" 數值的 \"/p4\" 型式不一致.";
+KnowledgeTypesError.Advice.User="請聯繫專家.";
+
+// Toutes les erreurs de typages
+NotAFeature.Request.Expert="執行錯誤";
+NotAFeature.Diagnostic.Expert="技術型式只能新增至特徵物件.";
+NotAFeature.Advice.Expert="請檢查設計.";
+
+NotAFeature.Request.User="執行錯誤";
+NotAFeature.Diagnostic.User="技術型式只能新增至特徵物件.";
+NotAFeature.Advice.User="請檢查設計.";
+
+NotABehavingObject.Request.Expert="執行錯誤";
+NotABehavingObject.Diagnostic.Expert="/p1 不支援技術型式.";
+NotABehavingObject.Advice.Expert="請檢查設計.";
+
+NotABehavingObject.Request.User="執行錯誤";
+NotABehavingObject.Diagnostic.User="/p1 不支援技術型式.";
+NotABehavingObject.Advice.User="請檢查設計.";
+
+TypedReference.Request.Expert="執行錯誤";
+TypedReference.Diagnostic.Expert="/p1 為已與 /p2 型式相關的參考.";
+TypedReference.Advice.Expert="請檢查設計.";
+
+TypedReference.Request.User="執行錯誤";
+TypedReference.Diagnostic.User="/p1 為已與 /p2 型式相關的參考.";
+TypedReference.Advice.User="請檢查設計.";
+
+
+TypedInstance.Request.Expert="執行錯誤";
+TypedInstance.Diagnostic.Expert="/p1 為已與 /p2 型式相關但與 /p3 不相關的參考.";
+TypedInstance.Advice.Expert="請檢查設計.";
+
+TypedInstance.Request.User="執行錯誤";
+TypedInstance.Diagnostic.User="/p1 為已與 /p2 型式相關但與 /p3 不相關的參考.";
+TypedInstance.Advice.User="請檢查設計.";
+
+// erreur de compatibilite entre deux types 
+// erreur de compatibilite entre deux types 
+TypeDoesNotExist.Request="型式 /p1 不存在目前的執行視圖中.";
+TypeDoesNotExist.Diagnostic="";
+TypeDoesNotExist.Advice="";
+
+TypesNotCompatible.Request="/p1 型式與 /p2 不一致";
+TypesNotCompatible.Diagnostic="";
+TypesNotCompatible.Advice="";
+

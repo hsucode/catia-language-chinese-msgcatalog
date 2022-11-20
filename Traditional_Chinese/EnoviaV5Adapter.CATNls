@@ -1,0 +1,168 @@
+
+DocLocator = "ENOVIA LCA";
+
+ProgressTaskUI.Title   = "儲存在 ENOVIA V5";
+ProgressTaskUI.Comment = "儲存中 ...";
+
+ConnectNotify.Title = "ENOVIA 入口未準備";
+ConnectNotify.Question = "啟動個別的 ENOVIA 伺服器?";
+
+// Error messages : ERR_, WRN_ or INF_ + identifier, /p1, /p2 ... for parameters.
+WRN_PbToAccessObjectInServer                    ="在 Enovia5 伺服器中存取物件時發生錯誤";
+WRN_Unlock_System_Pb	                        ="釋放時發生伺服器問題";
+WRN_Lock_Pb_OtherOwners                         ="鎖定時發生問題 : 部份文件已被其他使用者鎖定  \n";
+WRN_Lock_Pb_Server_mail                            ="鎖定時 EV5 伺服器發生問題 : \n/p1";
+WRN_Unlock_Pb_Server_mail                            ="釋放時 EV5 伺服器發生問題 : \n/p1";
+WRN_Lock_Pb_System                              ="鎖定時系統發生問題.";
+WRN_Lock_Pb_SystemOrOwner                       ="鎖定時發生問題. 可能部份文件已被其他使用者鎖定";
+WRN_Unlock_Pb_SystemOrOwner                     ="釋放時發生問題.";
+WRN_PSVpmLockOnRef			                    = "目前使用者未在參考 /p1上設定鎖定. \n 無法在 ENOVIA V5 伺服器中插入元件.";
+WRN_PSVpmConnection							            = "無法連接至 ENOVIA V5 伺服器. \n 動作將忽略.";
+WRN_PSVpmCreation							              = "無法在 ENOVIA V5 伺服器中建立物件 /p1 . \n 動作將忽略.";
+WRN_PSVpmMove								                = "無法在 ENOVIA V5  伺服器中更新物件 /p1 的位置矩陣. \n 動作將忽略.";
+WRN_PSVpmLock								                = "目前使用者未在 /p1 物件上設定鎖定. \n 無法在 ENOVIA V5 伺服器上修改.";
+WRN_PSVpmCheckOut								            = "目前使用者未登出文件 /p1 . \n 無法在 ENOVIA V5 伺服器上修改.";
+WRN_PSVpmDelete								              = "無法在 ENOVIA V5 伺服器上刪除物件 /p1 . \n 動作將忽略.";
+WRN_PSVpmAssociateDoc						            = "無法在 ENOVIA V5 伺服器上關聯文件至物件 /p1 . \n 動作將忽略.";
+WRN_PSVpmUpdateDoc							            = "無法在 ENOVIA V5 伺服器上更新文件 /p1 的資料. \n 動作將忽略.";
+WRN_PSVpmRemoveDoc							            = "無法在 ENOVIA V5 伺服器上移除文件 /p1 . \n 動作將忽略.";
+WRN_PSVpmGetName							              = "無法在 ENOVIA V5 伺服器上獲得文件名稱. \n 動作將忽略.";
+WRN_PSVpmGetType							              = "無法在 ENOVIA V5 伺服器上獲得物件型式. \n 動作將忽略.";
+WRN_PSVpmGetRef								              = "無法在 ENOVIA V5 伺服器上獲得物件 /p1 的參考. \n 動作將忽略.";
+WRN_PSVpmFindInst							              = "無法在 ENOVIA V5 伺服器上找到元件. \n 動作將忽略.";
+WRN_PSVpmCheckRef							              = "無法在 ENOVIA V5 伺服器上檢查參考是否存在. \n 動作將忽略.";
+WRN_PSVpmCheckGroup							            = "無法在 ENOVIA V5 伺服器上檢查群組是否存在. \n 動作將忽略.";
+WRN_PSVpmGetAssDoc							            = "無法在 ENOVIA V5 伺服器上獲取文件 /p1 是否相關. \n 動作將忽略.";
+WRN_PSVpmGetDocCont							            = "無法在 ENOVIA V5 伺服器上由文件 /p1 獲取資料. \n 動作將忽略.";
+WRN_PSVpmGetDocExt							            = "無法在 ENOVIA V5 伺服器上由文件 /p1 獲取副檔名. \n 動作將忽略.";
+WRN_PSVpmGetFather							            = "無法在 ENOVIA V5 伺服器上獲取物件 /p1 的上層元素. \n 動作將忽略.";
+WRN_PSVpmGetChildren						            = "無法在 ENOVIA V5 伺服器上獲取物件 /p1 的下層元素. \n 動作將忽略.";
+WRN_PSVpmRename								              = "無法在 ENOVIA V5 伺服器上更名物件 /p1 . \n 動作將忽略.";
+WRN_PSVpmRenameGreaterThan40				        = "無法更名物件 /p1 名稱. 名稱長度必須小於 40 個字元.  \n 動作將忽略.";
+WRN_PSVpmRenameGreaterThan  				        = "無法更名物件 /p1 名稱. 名稱長度必須小於 /p2 個字元.  \n 動作將忽略.";
+WRN_PSVpmRenameReleasedObject				        = "因版本已發行導致動作無法執行.";
+WRN_PSVpmPutAttribute						            = "無法在 ENOVIA V5 伺服器上儲存屬性 /p1 . \n 動作將忽略.";
+WRN_PSVpmGetPRC								              = "無法在 ENOVIA V5 伺服器上獲取物件根產品. \n 動作將忽略.";
+WRN_PSVpmGetPos								              = "無法在 ENOVIA V5 伺服器上獲取物件 /p1 的位置矩陣. \n 動作將忽略.";
+WRN_PSVpmConf								                = "沒有物件相關在 ENOVIA V5 中的 /p1 組態視圖. \n 無法儲存.";
+WRN_EnoviaV5DocEnvUnavailable				        = "ENOVIA5 文件環境未啟動. \n 請使用工具中的選項 (一般 l/ 文件) 來啟動";
+WRN_EnoviaV5PlugInInitFailed				        = "無法存取 EnoviaPlugIn 資料庫. \n 請檢查安裝.";
+WRN_EnoviaV5PlugInInitFailedNew				      = "無法存取 EnoviaPlugIn.";
+WRN_EnoviaV5PlugInStartServerFailed			    = "無法開始 ENOVIA V5 伺服器. \n 請設定 CATIAV5_ENOVIAV5_ServerName. \n 伺服器需要 Orbix.";
+WRN_PSVpmRefAlreadyExists					          = "建立新的 ENOVIA 參考 /p1.  ENOVIA 已存在參考. \n 動作將忽略. 更改參考名稱後再試一次.";
+WRN_PSVpmGroupAlreadyExists					        = "建立新的 ENOVIA 群組 /p1. ENOVIA 已存在群組. \n 動作將忽略. 更改群組後再試一次.";
+WRN_PSVpmRefNameGreaterThan40				        = "建立新的 ENOVIA 參考 /p1. 名稱長度必須小於 40 個字元.  \n 動作將忽略. 更改參考名稱後再試一次.";
+WRN_PSVpmRefNameGreaterThan  				        = "建立新的 ENOVIA 參考 /p1. 名稱長度必須小於 /p2 個字元.  \n 動作將忽略. 更改參考名稱後再試一次.";
+WRN_PSVpmSaveCnxStreamSubObjRefNotInDoc		  = " 物件 /p1 (元件之一) 隱藏在炸開連接. \n 它必須是儲存在 ENOVIA 中的部份文件.";
+WRN_PSVpmCatInEnoviaAndFileCatMod			      = "在檔案基礎上的目前設計目錄 /p1 , 因為已被儲存在 ENOVIA5 中, 請修改它";
+WRN_PSVpmFileCatUsedToBeSavedInEnovia		    = "儲存以檔案基礎上的目前設計前, 您的目錄管理員必須先在 ENOVIA V5 中儲存這些目錄.";
+WRN_PSVpmFileCatUsedAndSeveralEnoCatsToRec  = "以目前設計檔案為基礎的目錄 /p1 含有數個 ENOVIA5 相關目錄 : 不一致資料";
+WRN_PSVpmPartialLoadKO						          = "文件由 ENOVIA Vault 中正確萃取, 但無法在 CATIA 中讀取. \n 請檢查文件整體性. 文件保留在: \n/p1";
+WRN_PSVpmPartialLoadOK						          = "文件由 ENOVIA Vault 中正確萃取. \n 部份可在 CATIA 中讀取. \n 請檢查文件整體性. 文件保留在: \n/p1";
+WRN_PSVpmSaveAsDoc							            = "CATIA 無法為文件產生一致資料: /p1.\n 請檢查環境和資料.";
+WRN_PSVpmSaveInEV5NotStarted				            = "無法執行儲存在 ENOVIA LCA 的動作";
+WRN_PSVpmSaveInEV5Partial					            = "儲存程序發生錯誤. 只儲存部份.";
+ERR_PSVpmSaveInEV5Undo							            = "儲存中止: 儲存程序發生錯誤.";
+WRN_PSVpmCommitInEV5Failed					            = "儲存中止: 無法確認 ENOVIA LCA 資料庫.";
+WRN_PSVpmNoEditor							              = "沒有相關文件的編輯器: /p1\n 嚐試在產品中顯示外形.";
+WRN_PSVpmOldDocument						            = "文件 /p1\n 可能由資料庫中萃取. 要使用此類文件,\n 請由檔案 / 新的從 命令來執行.";
+WRN_PSVpmExtensionError						          = "無法在 ENOVIA LCA 中建立應用副檔名 /p1.\n 請檢查資料庫已被正確安裝.";
+WRN_PSVpmSaveFailed							            = "在 ENOVIA 資料庫中儲存物件 /p1 失敗";
+WRN_PSVpmStreamFailed							          = "在 vault 中列出文件 /p1 失敗";
+INF_PSVpmDocHBRenamed							          = "文件 /p1 已存在 ENOVIA 資料庫中. \n 它已被自動儲存成 /p2";
+INF_PSVpmDocHBTruncated						          = "文件名稱 /p1 超過 40 個字元.\n 它已被自動儲存成 /p2";
+INF_PSVpmDocHBTruncatedTo		          = "文件名稱 /p1 超過 /p2 個字元. \n 它已被自動儲存成 /p3";
+INF_PSVpmInsNameTruncatedMessage            =  "元件名稱長度必須小於 80 個字元. \n/p1 已依 ENOVIA LCA 需求自動截斷.";
+WRN_PSVpmReplaceRefMessage                  = " 在 ENOVIA LCA的元件 /p1 更換參考動作失敗.";
+WRN_PSVpmNonLockedSkipped		 = "元件 /p1 未儲存在 ENOVIA LCA\n 因元件未鎖定";
+WRN_PSVpmNonSavedSkipped		 = "元件 /p1 未儲存在 ENOVIA LCA";
+WRN_PSVpmConnectedNonSavedSkipped		 = "元件 /p1 未儲存在 ENOVIA LCA\n 因為此元件與修改的相關元件 /p2 無法儲存";
+
+WRN_PSVpmSaveDMUModeSkipped	 = "元件 /p1 未儲存在 ENOVIA LCA 中 \n 因為視圖產品架構選項為開啟狀態";
+WRN_PSVpmDeleteDMUModeSkipped	 = "在視圖產品架構模式下, 無法刪除元件, 在 /p1 中所刪除的元件將不會在 ENOVIA LCA 中被刪除.";
+
+WRN_PSVpmConnectedNonSavedContinued	 = "元件 /p1 儲存在 ENOVIA, 雖然與修改和未儲存的元件 /p2";
+ERR_PSVpmFatalSave       		 = "儲存 /p1 在 ENOVIA 時發生嚴重錯誤. \n 請退出 ENOVIA 工作並不儲存直接退出 CATIA ";
+WRN_PSVpmLastServerError     = "輸入 /p1 => /p2 時接收到資料";
+WRN_PSVpmUpdatePRCFailed	   = "在 ENOVIA 由參考更新PRC 時失敗.";
+ERR_UESaveStopSave = "使用者退出客制儲存程序時停止儲存動作";
+ERR_UESaveProcessControl = "/p1";
+WRN_UESaveProcessControl = "/p1";
+INF_InformationCatalogExploded = "當您在炸開模式儲存目錄時部份限制存在.\n 請查看文件 (...).";
+
+ERR_EFFileNeedToBeRenamed       = "定義檔案與已存的 ENOVIA 文件相衝突t. \n 檢查或更改檔案參考 /p1 以獲取正確處理.";
+ERR_EFInvalidDocumentName       = "無法建立 ENOVIA 文件 /p1 , \n 請檢查 ENOVIA 伺服器的可用性和命名規則.";
+ERR_EFInvalidDocumentRevision   = " ENOVIA 文件 /p1, 更新 /p2 導致無法在 ENOVIA 中定位檔案, \n 請檢查 ENOVIA 伺服器的可用性和命名規則.";
+ERR_EFInvalidDocumentTSProjection= "The ENOVIA document /p1, revision /p2 induced by a file is mismatching ENOVIA content, \n Check on a compatible file version having time /p3 ";
+ERR_EFInvalidDocTSorToBeRenamed  = "The ENOVIA document /p1 (.txt or .xls) has same name as a pre-existing ENOVIA document, \n rename it or the revision /p2 induced by a file is mismatching ENOVIA content, \n Check on a compatible file version having time /p3 ";
+ERR_EFInvalidDocumentProjection = " ENOVIA 文件已保護至檔案 /p1. \n 其它檔案 /p2 無法參考至此文件. \n 重新使用將導致保護或更改您的定義.";
+ERR_EFInvalidFileToDocument     = "/p1 檔案無法附加在 ENOVIA 文件後. \n ENOVIA 文件 /p2 為預期型式 /p3.";
+WRN_EFCannotSaveProjection      = "檔案 /p1 無法儲存在 ENOVIA Vault. \n 請檢查 ENOVIA 伺服器的可用性.";
+
+WRN_EFOneAtATime                = "一次只能保護一個檔案. 其它未執行的將依序執行.";
+ERR_EFCannotOverloadProjection  = "在 /p1 的檔案與 ENOVIA 伺服器中的版本不一致. \n 請移除此檔案或使用其它檔案.";
+ERR_EFCannotAccessVault         = "ENOVIA 檔案文件 /p1 無法由 ENOVIA Vault 中萃取.";
+ERR_EFCannotCopyFile            = "ENOVIA 檔案文件 /p1 無法複製. \n 請檢查網路和檔案系統的存取權.";
+WRN_EFMissingFileDefinition     = "檔案定義所需的 CATIA 物件. \n 請使用 鏈結編輯 檢查'";
+ERR_EFInvalidFileDefinition     = "無法處理檔案定義. \n 在 /p1 上缺少檔案副檔名";
+ERR_EFMissingFile               = "無法存取檔案定義. \n 請檢查檔案系統的存取權或更改檔案位置.";
+
+ERR_STEditedControlFALSE        = "/p1 definition is not currently marked as edited, but might be so. \n Check on Object Locking";   
+ERR_STEditableControlFAIL       = "/p1 definiton is not ENOVIA edit-able and therefore cannot be currently edited.\n Lock or object status or some other business rules forbid any edition of it";
+ERR_STReleasedControlFALSE      = "/p1 definition is not currently an ENOVIA frozen item.\n check on status"; 
+ERR_STReleasableControlFAIL     = "/p1 definition is not ENOVIA freeze-able item in that state.\n Check on object is not currently edited or considered as such by a lock for instance"; 
+
+INF_ENOVIACommit         		= "Committing the Transaction in the Database";
+INF_ENOVIARollback              = "Database recovery";
+WRN_ENOVIACommitKO              = "Database commit failed";
+WRN_ENOVIARollbackKO            = "Database recovery canceled: reconnect to the ENOVIA LCA server before you try to save again \nReason: unable to rollback data in the ENOVIA LCA database.";
+INF_ENOVIARollbackOK            = "Database recovery succeeded.  You can save again.";
+ERR_CATIARollbackKO             = "Unable to restore CATIA session data.";
+INF_CATIARollbackOK             = "CATIA session data restored successfully."; 
+INF_Save_Succeeded              = "Save succeeded";
+INF_Save_Failed                 = "Save failed";
+ERR_Save_Failed                 = "An error occured during save sequence. Save aborted.";
+ERR_OpenFromVaultKO             = "Cannot retrieve /p1 from the Vault. Contact your local administrator.\nVaultClient_PropertiesFilePath =/p2 \nVaultClient_PropertiesFileName =/p3";
+
+// SDM/27-Jan-04
+// Error messages related to business rules checking (security, lifecycle, etc...)
+
+WRN_PSBRNoPrivelege             = "Operation not granted for object /p1.";
+WRN_PSBRNotLocked               = "Operation not authorized! /p1 is not locked.";
+WRN_PSBRLockedByAnother         = "Operation not authorized! /p1 is locked by another user.";
+WRN_PSBRStatusNoUpdate          = "Operation not authorized! Current status of /p1 is not updateable.";
+WRN_PSBRStatusReleased          = "Operation not authorized! Object /p1 has reached a final status.";
+WRN_PSBRParentNotLocked         = "Operation not authorized! Parent of /p1 is not locked.";
+WRN_PSBRParentLockedByAnother   = "Operation not authorized! Parent of /p1 is locked by another user.";
+WRN_PSBRParentStatusNoUpdate    = "Operation not authorized! Parent of /p1 has status not updateable.";
+WRN_PSBRParentStatusReleased    = "Operation not authorized! Parent of /p1 has reached a final status.";
+WRN_PSBRStatusNoDelete          = "Operation not authorized! Current status of /p1 is not deleteable.";
+WRN_PSBRParentNotConfigured     = "Operation not authorized! Parent of /p1 is not configured.";
+WRN_PSBRChildLockedByAnother	= "Operation not authorized! Children of object /p1 are not locked by the current user.";
+WRN_PSBRUnknownError            = "Operation not authorized on /p1 and for unknown reason!";
+
+// SDM/16-Apr-04
+// Error messages related to DB errors
+ERR_DBInsertFailed              = "DB error occured on inserting a row into table. \nIt may be due to a unicity constraint violated or a not-null column not valuated.";
+
+//MUT 09 April 2004
+//Error and Warning messages related to the Technological Package
+ERR_TECHPACK_ClusterOwnerNotLoaded          = "TehPack Context not in session. The TechPack Context must be loaded before the TechPack";
+ERR_TECHPACK_VaultAccessDenied              = "Cannot access the vault.";
+ERR_TECHPACK_DatabaseCreationFailure        = "Failure when creating the TechPack /p1 in the database.";
+ERR_TECHPACK_DatabaseUpdateFailure          = "Failure when updating the TechPack /p1 in database.";
+ERR_TECHPACK_ClusterMandatoryAttribute      = "Failure when checking the TechPack attribute /p1.";
+WRN_TECHPACK_ClusterAttributeWillBeTrunc    = "TechPack attribute /p1 ( /p2 )too long( /p3 ), attribute will be truncated. the max size is /p4";
+WRN_VERSINON_CREATION_FAILED   = "Could not create new version because version date is not included in the current effectivity";
+WRN_NEW_VERSION_CREATION_FAILED = "Only Parts whose effectivity is made of date or specifications can be versioned";
+
+//XPN 13 January 2005
+WRN_FailureToSetPersistency                 = "You must set the Persistency of your Document by SetPDMProperties.";
+
+//AVM - 24 Jan05
+WRN_Operation_Denied	= "無法執行動作 ! /p1";
+
+//TSN - 17 Mar05 - Highlight R16
+WRN_NEW_VERSION_OBJECT_MAPPING = "Due to synchronization performed during versioning (/p1),\n newly created instances in EV5 may not be mapped in CV5 session.\n You may have to reload your session for further modifications.";
+
+WRN_SYNCHRO_FAILED_DUE_TO_CA_NO_SUCH_PROCESS = "Operation denied ! The user is not granted permission for this operation";

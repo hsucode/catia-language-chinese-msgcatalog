@@ -1,0 +1,108 @@
+// CATCreateAsmDOF.CATNls
+
+// English Version
+// Feb 27 2001
+
+
+// ==============================================================================================
+// DOF Panel Title
+// ==============================================================================================
+
+Title = " 自由度分析 ";
+
+Help = "定義與選擇的分件相關連的自由度";
+
+LongHelp = "自由度對話框 \n 定義與選擇的分件相關連的自由度.";
+
+//===============================================================================================
+// DOF Panel Frame number 1: The Analyzed Product Name
+//===============================================================================================
+
+AnalyzedProductName.Title  = " 分析的元素或關聯產品";
+
+AnalyzedProductName.Help = "定義分析的元素和完成的產品";
+
+AnalyzedProductName.LongHelp = "分析的元素 \n 定義分析的元素或關聯產品和完成的產品";
+
+//===============================================================================================
+// DOF Panel Frame number 1: The Represented DOF
+//===============================================================================================
+
+RepresentedDOF.Title = " 自由度";
+
+RepresentedDOF.Help = "定義與選擇的分件相關連的自由度表現";
+
+RepresentedDOF.LongHelp = "自由度 \n 定義與選擇的分件相關連的自由度表現";
+
+//===============================================================================================
+// DOF Panel Frame number 1: The Button Name
+//===============================================================================================
+
+RepresentedDOF.Rot = " 旋轉_";
+
+RepresentedDOF.PlaneRot = " 平面形式旋轉_";
+
+RepresentedDOF.Trans = " 平移_";
+
+NoDof.Title = "/P1 沒有自由度";
+
+NoDofBis.Title = "所選元素沒有自由度";
+
+Fixed.Title = "沒有自由度: /P1 是固定的";
+
+FixedBis.Title = "沒有自由度: 所選元素是固定的";
+
+Inactivated.Title = "/P1 未啟動";
+
+InactivatedBis.Title = "所選元素未啟動";
+
+ImpossibleConstraint.Title = "/P1 具有無法計算出結果的拘束集";
+
+ImpossibleConstraintBis.Title = "所選元素具有無法計算出結果的拘束集";
+
+ImpossibleDof.Title = "對 /P1 沒有建議方式";
+
+ImpossibleDofBis.Title = "對所選元素沒有建議方式";
+
+NoSelection.Title = "您須選擇一實體元素";
+
+NotUpdated.Title = "您須更新此文件";
+
+ModelKO.Title = "模型有問題";
+
+ModelKO1.Title = "/P1 具有六個自由度: 3 個旋轉和 3 個平移";
+
+ModelKO1Bis.Title = "所選元素具有六個自由度: 3 個旋轉和 3 個平移";
+
+NoFather.Title = "/P1 不在組立中. 無法計算自由度";
+
+NoFatherBis.Title = "所選元素不在組立中. 無法計算自由度";
+
+SolverKO.Title = "計算器沒有辦法計算 /P1 的自由度";
+
+SolverKOBis.Title = "計算器沒有辦法計算所選元素的自由度";
+
+SoftProduct.Title = "/P1 是撓性產品: 您需要選擇剛性產品";
+
+SoftProductBis.Title = "所選是撓性產品: 您需要選擇剛性產品";
+
+NotDirectlyUnderActiveProduct.Title = "所選產品 '/P1' 不是直接在作動產品下.";
+
+FatherProductIsNotActive.Title = "\n 計算所選產品的自由度, 啟動所選剛性產品的產品.";
+//===============================================================================================
+// DOF Panel Frame number 2: The Details of the Represented DOF
+//===============================================================================================
+
+DetailsOfRepresentedDOF.Title = " 詳細資訊 ";
+
+DetailsOfRepresentedDOF.Help = "提供顯現自由度的詳細資訊 ";
+
+DetailsOfRepresentedDOF.LongHelp = "詳細資訊 \n 提供顯現自由度的詳細資訊. ";
+
+//===============================================================================================
+// DOF Panel Frame number 2: Titles of column in the frame 2
+//===============================================================================================
+
+DetailsOfRepresentedDOF.Info.ColumnTitle1 = "顯示形式";
+DetailsOfRepresentedDOF.Info.ColumnTitle2 = "向量";
+DetailsOfRepresentedDOF.Info.ColumnTitle3 = "點";

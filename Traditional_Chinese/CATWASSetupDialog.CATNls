@@ -1,0 +1,136 @@
+Title= "執行網站應用";
+
+TabContainer.Runtime.Title= "來源";
+TabContainer.Runtime.PathLabel.Title= "V5 安裝目錄 :";
+TabContainer.Runtime.PathBrowser.Title= "...";
+TabContainer.Runtime.PathBrowser.ShortHelp= "瀏覽目錄...";
+TabContainer.WAS.Title= "伺服器";
+TabContainer.WAS.WASLabel.Title= "IBM WebSphere 應用伺服器目錄 :";
+TabContainer.WAS.Browse.Title= "...";
+TabContainer.WAS.Browse.ShortHelp= "瀏覽目錄...";
+TabContainer.DB.Title= "Persistency";
+TabContainer.DB.TypeLabel.Title= "驅動型式 :";
+TabContainer.DB.Frame.Parameters.DB2DatabaseName.Title= "資料庫名稱 :";
+TabContainer.DB.Frame.Parameters.ORADatabaseName.Title= "ORACLE SID :";
+
+TabContainer.DB.Frame.Parameters.DatabaseHost.Title= "資料庫主機 :";
+TabContainer.DB.Frame.Parameters.DatabasePort.Title= "資料庫埠 :";
+TabContainer.DB.Frame.Parameters.DriverJarLabel.Title= "JDBC 驅動檔案 :";
+TabContainer.DB.Frame.Parameters.BrowseJar.Title= "...";
+TabContainer.DB.Frame.Parameters.BrowseJar.ShortHelp= "瀏覽檔案...";
+TabContainer.DB.Frame.Parameters.JarSelector.Title= "選擇資料庫驅動器";
+TabContainer.DB.Frame.Parameters.UserLabel.Title= "使用者名稱 :";
+TabContainer.DB.Frame.Parameters.PasswordLabel.Title= "密碼 :";
+TabContainer.DB.Frame.Parameters.DirectoryLabel.Title= "Respository 目錄 :";
+TabContainer.DB.Frame.Parameters.DirSelector.Title= "選擇目錄";
+TabContainer.DB.Frame.Parameters.BrowseDir.Title= "...";
+TabContainer.DB.Frame.Parameters.BrowseDir.ShortHelp= "瀏覽目錄...";
+TabContainer.DB.Frame.Parameters.URLLabel.Title= "JDBC URL :";
+TabContainer.DB.Frame.Parameters.DriverLabel1.Title= "JDBC 驅動等級 :";
+TabContainer.DB.Frame.Parameters.DriverLabel2.Title= "JDBC Data 來源驅動等級 :";
+TabContainer.DB.Frame.Parameters.JndiNameLabel.Title= "JNDI Name :";
+TabContainer.DB.Frame.Parameters.TestConnection.Title= "Test Connection";
+
+TabContainer.Target.Title= "目的地";
+TabContainer.Target.TypeLabel.Title= "Target Type :";
+
+TabContainer.Target.Frame.WAS.WASLabel.Title= "IBM WebSphere Application Server Directory :";
+TabContainer.Target.Frame.WAS.BrowseWAS.Title= "...";
+TabContainer.Target.Frame.WAS.BrowseWAS.ShortHelp= "Browse Directories...";
+TabContainer.Target.Frame.WAS.TargetLabel.Title= "輸出 EAR 檔案 :";
+TabContainer.Target.Frame.WAS.BrowseEAR.Title= "...";
+TabContainer.Target.Frame.WAS.BrowseEAR.ShortHelp= "選擇檔案...";
+TabContainer.Target.Frame.WAS.RootURILabel.Title= "應用 Root URI :";
+TabContainer.Target.Frame.WAS.EnvNameLabel.Title= "環境名稱 :";
+TabContainer.Target.Frame.WAS.AddResources.Title= "在 EAR 中置放資源檔";
+TabContainer.Target.Frame.WAS.ClassLoader.Title= "在 EAR 中置放 java 碼";
+TabContainer.Target.Frame.WAS.PackagingFilter.Title= "更多...";
+TabContainer.Target.Frame.WAS.PackagingFilter.ShortHelp= "定義要發行的分件過濾器...";
+TabContainer.Target.Frame.WAS.Automatic.Title="Automatic Deployment";
+TabContainer.Target.Frame.WAS.Manual.Title="Manual Deployment";
+TabContainer.Target.Frame.WAS.GenerateJACL.Title="Generate JACL Property File";
+TabContainer.Target.Frame.WAS.TargetJACLLabel.Title= "Output JACL Property File :";
+TabContainer.Target.Frame.WAS.BrowseJACL.Title= "...";
+TabContainer.Target.Frame.WAS.BrowseJACL.ShortHelp= "Select File...";
+More.Text= "More>>";
+Less.Text= "Less<<";
+TabContainer.Target.Frame.WAS.MoreLess.MoreFrame.CellLabel.Title= "Cell :";
+TabContainer.Target.Frame.WAS.MoreLess.MoreFrame.NodeLabel.Title= "Node :";
+TabContainer.Target.Frame.WAS.MoreLess.MoreFrame.ServerLabel.Title= "Server :";
+TabContainer.Target.Frame.WAS.MoreLess.MoreFrame.X11DisplayLabel.Title= "X11 Display :";
+
+TabContainer.Target.Frame.WP.WPLabel.Title= "IBM WebSphere Portal Directory :";
+TabContainer.Target.Frame.WP.BrowseWP.Title= "...";
+TabContainer.Target.Frame.WP.BrowseWP.ShortHelp= "Browse Directories...";
+TabContainer.Target.Frame.WP.TargetLabel.Title= "Output WAR File :";
+TabContainer.Target.Frame.WP.BrowseWAR.Title= "...";
+TabContainer.Target.Frame.WP.BrowseWAR.ShortHelp= "Select File...";
+TabContainer.Target.Frame.WP.APILabel.Title= "Portlet API :";
+TabContainer.Target.Frame.WP.UseC2A.Title= "Enable Click-To-Action";
+TabContainer.Target.Frame.WP.EnvNameLabel.Title= "Environment Name :";
+TabContainer.Target.Frame.WP.AddResources.Title= "Put resource files in WAR";
+TabContainer.Target.Frame.WP.ClassLoader.Title= "Put java code in WAR";
+WAS.Text="WebSphere Application Server";
+WP.Text="WebSphere Portal";
+BrowseEARFileType.Text="Enterprise Application Archive (*.ear)";
+BrowseJACLFileType.Text="Property Files (*.properties)";
+
+TabContainer.Output.Title= "Output";
+
+CATJSystemNotFound.Title= "無效的 V5 安裝目錄";
+CATJSystemNotFound.Text= "安裝目錄中未發現 CATJSystem.jar 檔案 :\n/P1";
+CATJdeArchiveNotFound.Title= "無效的 V5 安裝目錄";
+CATJdeArchiveNotFound.Text= "安裝目錄中未發現 CATJdeArchive.jar :\n/P1";
+CATJsyDataSourceNotFound.Title= "Invalid V5 Installation Directory";
+CATJsyDataSourceNotFound.Text= "File CATJsyDataSource.jar not found in installation directory:\n/P1";
+WASNotFound.Title= "無效的 WAS 目錄";
+WASNotFound.Text= "無效的 WAS 目錄供應 (應該是 AppServer):\n/P1";
+WPNotFound.Title= "Invalid WP Directory";
+WPNotFound.Text= "The WP directory supplied is invalid (should be WebSphere or PortalServer):\n/P1";
+PortletWrapperNotFound.Title= "pbportlet.jar not found";
+PortletWrapperNotFound.Text= "pbportlet.jar (required for C2A) not found in WP installation.\nThis file should be in:\n/P1";
+DriverJARNotFound.Title= "無效的驅動器執行檔案";
+DriverJARNotFound.Text= "所指定檔案不存在 :\n/P1";
+DBInvalid.Title= "無效的 DB 組態";
+DBInvalid.Text= "指定的資料庫組態無效 :\n\n/P1";
+RunFailed.Title= "Failure";
+RunFailed.Text= "The EAR generation failed:\n\n/P1";
+JaclFailed.Title= "Failure";
+JaclFailed.Text= "Script for deploying application failed";
+JaclGenerationFailed.Title= "Failure";
+JaclGenerationFailed.Text= "Cannot create script for deploying application";
+Kill.Title= "Terminate Process";
+Kill.Text= "Terminate Launched Process?";
+MissingEAR.Title="Invalid Target Configuration";
+MissingEAR.Text="Missing Output EAR file.";
+MissingWAR.Title="Invalid Target Configuration";
+MissingWAR.Text="Missing Output WAR file.";
+RootURIInvalid.Title="Invalid Application Root URI";
+RootURIInvalid.Text="Invalid Root URI Name [/P1]: Should be '/' followed by alphanumeric characters and/or '_'.";
+
+Finished.Title= "Finished";
+Finished.Text= "Successful execution. Quit?";
+Finished.Type= "Information";
+
+TestConnection.Title= "Database Connection";
+TestConnection.Text= "Successful Database Connection";
+TestConnection.Type= "Information";
+
+BrowseTarget.Title= "目的地檔案";
+BrowseRunPath.Title= "選擇 V5 安裝目錄";
+BrowseWAS.Title= "選擇 IBM WebSphere 應用伺服器";
+
+DB2DriverInvalid.Title= "無效的 DB2 JDBC 驅動程式";
+DB2DriverInvalid.Text= "String db2jcc.jar not found in driver path: /P1";
+
+DB2DriverInvalid2.Title= "無效的 DB2 JDBC 驅動程式";
+DB2DriverInvalid2.Text= "The driver path /P1 must end with db2jcc.jar";
+
+ORACLEDriverInvalid.Title= "無效的 ORACLE JDBC 驅動程式";
+ORACLEDriverInvalid.Text= "String classes12.zip not found in driver path: /P1";
+
+ORACLEDriverInvalid2.Title= "無效的 ORACLE JDBC 驅動程式";
+ORACLEDriverInvalid2.Text= "The driver path /P1 must end with classes12.zip";
+
+ORACLESystemForbidden.Title= "Invalid ORACLE User Name";
+ORACLESystemForbidden.Text= "system not allowed as database user name parameter";

@@ -1,0 +1,424 @@
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Schematic Commands 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+CATHvuCommandHdr.CATHvuBuildComponentHdr.Title="建立分件";
+CATHvuCommandHdr.CATHvuBuildComponentHdr.Help="建立一個分件";
+CATHvuCommandHdr.CATHvuBuildComponentHdr.ShortHelp="建立分件";
+CATHvuCommandHdr.CATHvuBuildComponentHdr.LongHelp="建立一個分件.";
+
+CATHvuCommandHdr.CATHvuBuildGraphicHdr.Title="建立圖形";
+CATHvuCommandHdr.CATHvuBuildGraphicHdr.Help="建立一個圖形陳述";
+CATHvuCommandHdr.CATHvuBuildGraphicHdr.ShortHelp="建立圖形";
+CATHvuCommandHdr.CATHvuBuildGraphicHdr.LongHelp="建立一個圖形陳述.";
+
+CATHvuCommandHdr.CATHvuBuildConnectorHdr.Title="建立連接器";
+CATHvuCommandHdr.CATHvuBuildConnectorHdr.Help="建立一個連接器";
+CATHvuCommandHdr.CATHvuBuildConnectorHdr.ShortHelp="建立連接器";
+CATHvuCommandHdr.CATHvuBuildConnectorHdr.LongHelp="建立一個連接器.";
+
+CATHvuCommandHdr.CATHvuBuildFlowHdr.Title="建立內部流程";
+CATHvuCommandHdr.CATHvuBuildFlowHdr.Help="定義一個內部流程";
+CATHvuCommandHdr.CATHvuBuildFlowHdr.ShortHelp="建立內部流程";
+CATHvuCommandHdr.CATHvuBuildFlowHdr.LongHelp="定義一個內部流程.";
+
+CATHvuCommandHdr.CATHvuBuildCompGrpHdr.Title="建立分件群組";
+CATHvuCommandHdr.CATHvuBuildCompGrpHdr.Help="建立內含分件和程序的分件群組";
+CATHvuCommandHdr.CATHvuBuildCompGrpHdr.ShortHelp="建立分件群組";
+CATHvuCommandHdr.CATHvuBuildCompGrpHdr.LongHelp="建立內含分件和程序的分件群組";
+
+CATHvuCommandHdr.CATHvuBuildCompGrpFlowHdr.Title="建立分件群組內部流動";
+CATHvuCommandHdr.CATHvuBuildCompGrpFlowHdr.Help="建立分件群組內部流動";
+CATHvuCommandHdr.CATHvuBuildCompGrpFlowHdr.ShortHelp="建立分件群組內部流動";
+CATHvuCommandHdr.CATHvuBuildCompGrpFlowHdr.LongHelp="建立分件群組內部流動";
+
+CATHvuCommandHdr.CATHvuPlaceComponentHdr.Title="放置分件";
+CATHvuCommandHdr.CATHvuPlaceComponentHdr.Help="放置一個分件";
+CATHvuCommandHdr.CATHvuPlaceComponentHdr.ShortHelp="放置分件";
+CATHvuCommandHdr.CATHvuPlaceComponentHdr.LongHelp="放置一個分件.";
+
+CATHvuCommandHdr.CATHvuImageComponentHdr.Title="輸入分件圖像";
+CATHvuCommandHdr.CATHvuImageComponentHdr.Help="輸入分件圖像";
+CATHvuCommandHdr.CATHvuImageComponentHdr.ShortHelp="輸入分件圖像";
+CATHvuCommandHdr.CATHvuImageComponentHdr.LongHelp="由另一圖輸入分件圖像至目前圖中.";
+
+CATHvuCommandHdr.CATHvuFrameInfoHdr.Title="框架資訊";
+CATHvuCommandHdr.CATHvuFrameInfoHdr.Help="定義框架資訊";
+CATHvuCommandHdr.CATHvuFrameInfoHdr.ShortHelp="定義框架資訊";
+CATHvuCommandHdr.CATHvuFrameInfoHdr.LongHelp="定義框架資訊";
+
+CATHvuCommandHdr.CATHvuOnOffSheetHdr.Title="放置開或關薄件 (Sheet) 連接器";
+CATHvuCommandHdr.CATHvuOnOffSheetHdr.Help="放置開或關薄件 (Sheet) 連接器";
+CATHvuCommandHdr.CATHvuOnOffSheetHdr.ShortHelp="放置開或關薄件 (Sheet) 連接器";
+CATHvuCommandHdr.CATHvuOnOffSheetHdr.LongHelp="放置開或關薄件 (Sheet) 連接器.";
+
+CATHvuCommandHdr.CATHvuOnOffQueryHdr.Title="查詢開或關薄件 (Sheet) 連接器";
+CATHvuCommandHdr.CATHvuOnOffQueryHdr.Help="查詢開或關薄件 (Sheet) 連接器";
+CATHvuCommandHdr.CATHvuOnOffQueryHdr.ShortHelp="查詢開或關薄件 (Sheet) 連接器";
+CATHvuCommandHdr.CATHvuOnOffQueryHdr.LongHelp="查詢開或關薄件 (Sheet) 連接器的連結.";
+
+CATHvuCommandHdr.CATHvuOnOffLinkHdr.Title="連結開或關薄件 (Sheet) 連接器";
+CATHvuCommandHdr.CATHvuOnOffLinkHdr.Help="連結開或關薄件 (Sheet) 連接器";
+CATHvuCommandHdr.CATHvuOnOffLinkHdr.ShortHelp="連結開或關薄件 (Sheet) 連接器";
+CATHvuCommandHdr.CATHvuOnOffLinkHdr.LongHelp="連結開或關薄件 (Sheet) 連接器.";
+
+CATHvuCommandHdr.CATHvuOnOffUnlinkHdr.Title="不連結開或關薄件 (Sheet) 連接器";
+CATHvuCommandHdr.CATHvuOnOffUnlinkHdr.Help="不連結開或關薄件 (Sheet) 連接器";
+CATHvuCommandHdr.CATHvuOnOffUnlinkHdr.ShortHelp="不連結開或關薄件 (Sheet) 連接器";
+CATHvuCommandHdr.CATHvuOnOffUnlinkHdr.LongHelp="不連結開或關薄件 (Sheet) 連接器.";
+
+CATHvuCommandHdr.CATHvuRouteHVACLineHdr.Title="規定 HVAC 線路的程序線";
+CATHvuCommandHdr.CATHvuRouteHVACLineHdr.Help="規定 HVAC 線路的程序線";
+CATHvuCommandHdr.CATHvuRouteHVACLineHdr.ShortHelp="規定 HVAC 線路的程序線";
+CATHvuCommandHdr.CATHvuRouteHVACLineHdr.LongHelp="規定 HVAC 線路的程序線.";
+
+CATHvuCommandHdr.CATHvuCreateLogLineHdr.Title="建立線路 ID";
+CATHvuCommandHdr.CATHvuCreateLogLineHdr.Help="建立一條線路 ID";
+CATHvuCommandHdr.CATHvuCreateLogLineHdr.ShortHelp="建立線路 ID";
+CATHvuCommandHdr.CATHvuCreateLogLineHdr.LongHelp="建立一條線路 ID.";
+
+CATHvuCommandHdr.CATHvuSelQryLogLineHdr.Title="選擇或查詢線路 ID";
+CATHvuCommandHdr.CATHvuSelQryLogLineHdr.Help="選擇或查詢線路 IDs";
+CATHvuCommandHdr.CATHvuSelQryLogLineHdr.ShortHelp="選擇或查詢線路 ID";
+CATHvuCommandHdr.CATHvuSelQryLogLineHdr.LongHelp="選擇或查詢線路 IDs.";
+
+CATHvuCommandHdr.CATHvuTransferLogLineHdr.Title="轉換線路 ID";
+CATHvuCommandHdr.CATHvuTransferLogLineHdr.Help="轉換成員從一條線路 ID到另一條";
+CATHvuCommandHdr.CATHvuTransferLogLineHdr.ShortHelp="轉換線路 ID";
+CATHvuCommandHdr.CATHvuTransferLogLineHdr.LongHelp="轉換成員從一條線路 ID到另一條.";
+
+CATHvuCommandHdr.CATHvuMergeLogLineHdr.Title="溶合線 ID";
+CATHvuCommandHdr.CATHvuMergeLogLineHdr.Help="溶合線 ID 至另一個";
+CATHvuCommandHdr.CATHvuMergeLogLineHdr.ShortHelp="溶合線 ID";
+CATHvuCommandHdr.CATHvuMergeLogLineHdr.LongHelp="溶合線 ID 至另一個";
+
+CATHvuCommandHdr.CATHvuRenameLogLineHdr.Title="重新命名線路 ID";
+CATHvuCommandHdr.CATHvuRenameLogLineHdr.Help="重新命名一條線路 ID";
+CATHvuCommandHdr.CATHvuRenameLogLineHdr.ShortHelp="重新命名線路 ID";
+CATHvuCommandHdr.CATHvuRenameLogLineHdr.LongHelp="重新命名一條線路 ID.";
+
+CATHvuCommandHdr.CATHvuDeleteLogLineHdr.Title="刪除線路 ID";
+CATHvuCommandHdr.CATHvuDeleteLogLineHdr.Help="從文件中刪除局部線路 ID ";
+CATHvuCommandHdr.CATHvuDeleteLogLineHdr.ShortHelp="刪除線路 ID";
+CATHvuCommandHdr.CATHvuDeleteLogLineHdr.LongHelp="從文件中刪除局部線路 ID .";
+
+CATHvuCommandHdr.CATHvuLineIDImportHdr.Title="輸入或更新 線 IDs";
+CATHvuCommandHdr.CATHvuLineIDImportHdr.Help="從 XML 檔案輸入或更新 線 IDs";
+CATHvuCommandHdr.CATHvuLineIDImportHdr.ShortHelp="輸入或更新 線 IDs";
+CATHvuCommandHdr.CATHvuLineIDImportHdr.LongHelp="從 XML 檔案輸入或更新 線 IDs";
+
+CATHvuCommandHdr.CATHvuCreateZoneHdr.Title="建立區域";
+CATHvuCommandHdr.CATHvuCreateZoneHdr.Help="建立區域";
+CATHvuCommandHdr.CATHvuCreateZoneHdr.ShortHelp="建立區域";
+CATHvuCommandHdr.CATHvuCreateZoneHdr.LongHelp="建立區域.";
+
+CATHvuCommandHdr.CATHvuSelectZoneHdr.Title="選擇或詢問區域";
+CATHvuCommandHdr.CATHvuSelectZoneHdr.Help="選擇或詢問區域";
+CATHvuCommandHdr.CATHvuSelectZoneHdr.ShortHelp="選擇或詢問區域";
+CATHvuCommandHdr.CATHvuSelectZoneHdr.LongHelp="選擇或詢問區域.";
+
+CATHvuCommandHdr.CATHvuRenameZoneHdr.Title="更名區域";
+CATHvuCommandHdr.CATHvuRenameZoneHdr.Help="更名區域";
+CATHvuCommandHdr.CATHvuRenameZoneHdr.ShortHelp="更名區域";
+CATHvuCommandHdr.CATHvuRenameZoneHdr.LongHelp="更名區域.";
+
+CATHvuCommandHdr.CATHvuDeleteZoneHdr.Title="刪除區域";
+CATHvuCommandHdr.CATHvuDeleteZoneHdr.Help="從文件中刪除區域";
+CATHvuCommandHdr.CATHvuDeleteZoneHdr.ShortHelp="刪除區域";
+CATHvuCommandHdr.CATHvuDeleteZoneHdr.LongHelp="從文件中刪除區域";
+
+CATHvuCommandHdr.CATHvuDefZoneBdryHdr.Title="定義區域邊界";
+CATHvuCommandHdr.CATHvuDefZoneBdryHdr.Help="定義或更新區域邊界";
+CATHvuCommandHdr.CATHvuDefZoneBdryHdr.ShortHelp="定義區域邊界";
+CATHvuCommandHdr.CATHvuDefZoneBdryHdr.LongHelp="定義或更新區域邊界";
+
+CATHvuCommandHdr.CATHvuUpdateZoneHdr.Title="更新區域";
+CATHvuCommandHdr.CATHvuUpdateZoneHdr.Help="更新所有區域的內含";
+CATHvuCommandHdr.CATHvuUpdateZoneHdr.ShortHelp="更新區域";
+CATHvuCommandHdr.CATHvuUpdateZoneHdr.LongHelp="更新所有區域的內含";
+
+CATHvuCommandHdr.CATHvuRotateCompLeftHdr.Title="向左旋轉";
+CATHvuCommandHdr.CATHvuRotateCompLeftHdr.Help="向左旋轉分件 90 度";
+CATHvuCommandHdr.CATHvuRotateCompLeftHdr.ShortHelp="向左旋轉";
+CATHvuCommandHdr.CATHvuRotateCompLeftHdr.LongHelp="向左旋轉分件 90 度.";
+
+CATHvuCommandHdr.CATHvuRotateCompRightHdr.Title="向右旋轉";
+CATHvuCommandHdr.CATHvuRotateCompRightHdr.Help="向右旋轉分件 90 度";
+CATHvuCommandHdr.CATHvuRotateCompRightHdr.ShortHelp="向右旋轉";
+CATHvuCommandHdr.CATHvuRotateCompRightHdr.LongHelp="向右旋轉分件 90 度.";
+
+CATHvuCommandHdr.CATHvuFlipCompHorizHdr.Title="水平翻轉";
+CATHvuCommandHdr.CATHvuFlipCompHorizHdr.Help="水平翻轉分件";
+CATHvuCommandHdr.CATHvuFlipCompHorizHdr.ShortHelp="水平翻轉";
+CATHvuCommandHdr.CATHvuFlipCompHorizHdr.LongHelp="水平翻轉分件 (在它的垂直軸周圍) .";
+
+CATHvuCommandHdr.CATHvuFlipCompVertHdr.Title="垂直翻轉";
+CATHvuCommandHdr.CATHvuFlipCompVertHdr.Help="垂直翻轉分件";
+CATHvuCommandHdr.CATHvuFlipCompVertHdr.ShortHelp="垂直翻轉";
+CATHvuCommandHdr.CATHvuFlipCompVertHdr.LongHelp="垂直翻轉分件 (在它的水平軸周圍) .";
+
+CATHvuCommandHdr.CATHvuFlipCompInLineHdr.Title="程序線翻轉";
+CATHvuCommandHdr.CATHvuFlipCompInLineHdr.Help="在它的插入線周圍翻轉插入的分件";
+CATHvuCommandHdr.CATHvuFlipCompInLineHdr.ShortHelp="程序線翻轉";
+CATHvuCommandHdr.CATHvuFlipCompInLineHdr.LongHelp="在它的插入線周圍翻轉插入的分件.";
+
+CATHvuCommandHdr.CATHvuFlipCompConnectionsHdr.Title="翻轉連接";
+CATHvuCommandHdr.CATHvuFlipCompConnectionsHdr.Help="在一個插入的分件上翻轉連接";
+CATHvuCommandHdr.CATHvuFlipCompConnectionsHdr.ShortHelp="翻轉連接";
+CATHvuCommandHdr.CATHvuFlipCompConnectionsHdr.LongHelp="在一個插入的分件上翻轉連接.";
+
+CATHvuCommandHdr.CATHvuScaleCompHdr.Title="縮放";
+CATHvuCommandHdr.CATHvuScaleCompHdr.Help="縮放分件";
+CATHvuCommandHdr.CATHvuScaleCompHdr.ShortHelp="縮放分件";
+CATHvuCommandHdr.CATHvuScaleCompHdr.LongHelp="縮放分件.";
+
+CATHvuCommandHdr.CATHvuReplaceCompHdr.Title="更換";
+CATHvuCommandHdr.CATHvuReplaceCompHdr.Help="以其它分件更換此分件";
+CATHvuCommandHdr.CATHvuReplaceCompHdr.ShortHelp="更換分件";
+CATHvuCommandHdr.CATHvuReplaceCompHdr.LongHelp="以其它分件更換此分件";
+
+CATHvuCommandHdr.CATHvuAlignCompHorizHdr.Title="水平對齊";
+CATHvuCommandHdr.CATHvuAlignCompHorizHdr.Help="水平對齊分件";
+CATHvuCommandHdr.CATHvuAlignCompHorizHdr.ShortHelp="水平對齊";
+CATHvuCommandHdr.CATHvuAlignCompHorizHdr.LongHelp="水平對齊分件";
+
+CATHvuCommandHdr.CATHvuAlignCompVertHdr.Title="垂直對齊";
+CATHvuCommandHdr.CATHvuAlignCompVertHdr.Help="垂直對齊分件";
+CATHvuCommandHdr.CATHvuAlignCompVertHdr.ShortHelp="垂直對齊";
+CATHvuCommandHdr.CATHvuAlignCompVertHdr.LongHelp="垂直對齊分件";
+
+CATHvuCommandHdr.CATHvuSwapGraphicCompHdr.Title="交換圖形";
+CATHvuCommandHdr.CATHvuSwapGraphicCompHdr.Help="交換分件的圖形";
+CATHvuCommandHdr.CATHvuSwapGraphicCompHdr.ShortHelp="交換分件的圖形";
+CATHvuCommandHdr.CATHvuSwapGraphicCompHdr.LongHelp="交換分件的圖形.";
+
+CATHvuCommandHdr.CATHvuOnOffQueryConnection.Title="查詢連接";
+CATHvuCommandHdr.CATHvuOnOffQueryConnection.Help="查詢開或關圖紙連接";
+CATHvuCommandHdr.CATHvuOnOffQueryConnection.ShortHelp="查詢開或關圖紙 連接";
+CATHvuCommandHdr.CATHvuOnOffQueryConnection.LongHelp="查詢開或關圖紙的連接狀態.";
+
+CATHvuCommandHdr.CATHvuOnOffConnect.Title="連接開或關圖紙";
+CATHvuCommandHdr.CATHvuOnOffConnect.Help="連接開或關圖紙物件";
+CATHvuCommandHdr.CATHvuOnOffConnect.ShortHelp="連接開或關圖紙物件";
+CATHvuCommandHdr.CATHvuOnOffConnect.LongHelp="連接這個開或關圖紙物件到另一個.";
+
+CATHvuCommandHdr.CATHvuOnOffDisconnect.Title="不連接";
+CATHvuCommandHdr.CATHvuOnOffDisconnect.Help="不連接開或關圖紙連接器";
+CATHvuCommandHdr.CATHvuOnOffDisconnect.ShortHelp="不連接開或關圖紙連接器";
+CATHvuCommandHdr.CATHvuOnOffDisconnect.LongHelp="不從另一個連接這個開或關圖紙物件.";
+
+CATHvuCommandHdr.CATHvuActivateView.Title="作動視圖";
+CATHvuCommandHdr.CATHvuActivateView.Help="作動視圖";
+CATHvuCommandHdr.CATHvuActivateView.ShortHelp="設定選擇的視圖為作用中的";
+CATHvuCommandHdr.CATHvuActivateView.LongHelp="設定選擇的視圖為作用中的.";
+
+CATHvuCommandHdr.CATHvuTranslateHdr.Title="平移圖形";
+CATHvuCommandHdr.CATHvuTranslateHdr.Help="平移多重圖形和繪圖物件";
+CATHvuCommandHdr.CATHvuTranslateHdr.ShortHelp="平移圖形";
+CATHvuCommandHdr.CATHvuTranslateHdr.LongHelp="平移多重圖形和繪圖物件(並更新圖形物件)";
+
+CATHvuCommandHdr.CATHvuConnectHdr.Title="連接";
+CATHvuCommandHdr.CATHvuConnectHdr.Help="連接分件或者程序線到另一個分件或者程序線";
+CATHvuCommandHdr.CATHvuConnectHdr.ShortHelp="連接";
+CATHvuCommandHdr.CATHvuConnectHdr.LongHelp="連接分件或者程序線到另一個分件或者程序線.";
+
+CATHvuCommandHdr.CATHvuDisconnectHdr.Title="分開";
+CATHvuCommandHdr.CATHvuDisconnectHdr.Help="把分件或者程序線與另一個分件或者程序線分開";
+CATHvuCommandHdr.CATHvuDisconnectHdr.ShortHelp="分開";
+CATHvuCommandHdr.CATHvuDisconnectHdr.LongHelp="把分件或者程序線與另一個分件或者程序線分開.";
+
+CATHvuCommandHdr.CATHvuBreakRouteHdr.Title="打斷流程 ";
+CATHvuCommandHdr.CATHvuBreakRouteHdr.Help="打斷一條流程成為二條流程 ";
+CATHvuCommandHdr.CATHvuBreakRouteHdr.ShortHelp="打斷流程 ";
+CATHvuCommandHdr.CATHvuBreakRouteHdr.LongHelp="打斷一條流程成為二條流程 .";
+
+CATHvuCommandHdr.CATHvuCloseRouteHdr.Title="關閉程序線 (Route) ";
+CATHvuCommandHdr.CATHvuCloseRouteHdr.Help="關閉二條程序線 (Route) 成為一條";
+CATHvuCommandHdr.CATHvuCloseRouteHdr.ShortHelp="關閉程序線 (Route) ";
+CATHvuCommandHdr.CATHvuCloseRouteHdr.LongHelp="關閉二條程序線 (Route) 成為一條.";
+
+CATHvuCommandHdr.CATHvuFlowShowHdr.Title="流動顯示";
+CATHvuCommandHdr.CATHvuFlowShowHdr.Help="顯示或隱藏程序線或者線路 ID 的流動方向";
+CATHvuCommandHdr.CATHvuFlowShowHdr.ShortHelp="流動顯示";
+CATHvuCommandHdr.CATHvuFlowShowHdr.LongHelp="顯示或隱藏程序線或者線路 ID 的流動方向.";
+
+CATHvuCommandHdr.CATHvuFlowDirectionHdr.Title="流動方向";
+CATHvuCommandHdr.CATHvuFlowDirectionHdr.Help="反轉程序線或者線路 ID 的流動方向";
+CATHvuCommandHdr.CATHvuFlowDirectionHdr.ShortHelp="流動方向";
+CATHvuCommandHdr.CATHvuFlowDirectionHdr.LongHelp="反轉程序線或者線路 ID 的流動方向.";
+
+CATHvuCommandHdr.CATHvuFlowShowAllHdr.Title="顯示所有流動";
+CATHvuCommandHdr.CATHvuFlowShowAllHdr.Help="顯示所有程序線或者線路 IDs 的流動方向";
+CATHvuCommandHdr.CATHvuFlowShowAllHdr.ShortHelp="顯示所有流動";
+CATHvuCommandHdr.CATHvuFlowShowAllHdr.LongHelp="顯示所有程序線或者線路 IDs 的流動方向.";
+
+CATHvuCommandHdr.CATHvuFlowNoShowAllHdr.Title="隱藏所有流動";
+CATHvuCommandHdr.CATHvuFlowNoShowAllHdr.Help="隱藏所有程序線或者線路 IDs 的流動方向";
+CATHvuCommandHdr.CATHvuFlowNoShowAllHdr.ShortHelp="隱藏所有流動";
+CATHvuCommandHdr.CATHvuFlowNoShowAllHdr.LongHelp="隱藏所有程序線或者線路 IDs 的流動方向.";
+
+CATHvuCommandHdr.CATHvuGapShowAllHdr.Title="顯示所有間隔";
+CATHvuCommandHdr.CATHvuGapShowAllHdr.Help="顯示間隔在所有程序線交點";
+CATHvuCommandHdr.CATHvuGapShowAllHdr.ShortHelp="顯示所有間隔";
+CATHvuCommandHdr.CATHvuGapShowAllHdr.LongHelp="顯示間隔在所有程序線交點.";
+
+CATHvuCommandHdr.CATHvuGapNoShowAllHdr.Title="隱藏所有間隔";
+CATHvuCommandHdr.CATHvuGapNoShowAllHdr.Help="隱藏間隔在所有程序線交點";
+CATHvuCommandHdr.CATHvuGapNoShowAllHdr.ShortHelp="隱藏所有間隔";
+CATHvuCommandHdr.CATHvuGapNoShowAllHdr.LongHelp="隱藏間隔在所有程序線交點.";
+
+CATHvuCommandHdr.CATHvuRenameIDHdr.Title="重新命名 ID";
+CATHvuCommandHdr.CATHvuRenameIDHdr.Help="重新命名一個示意的物件 ID";
+CATHvuCommandHdr.CATHvuRenameIDHdr.ShortHelp="重新命名 ID";
+CATHvuCommandHdr.CATHvuRenameIDHdr.LongHelp="重新命名一個示意的物件 ID.";
+
+CATHvuCommandHdr.CATHvuManageLogicalPubHdr.Title="管理邏輯發行...";
+CATHvuCommandHdr.CATHvuManageLogicalPubHdr.Help="管理板件開啟或關閉的邏輯發行";
+CATHvuCommandHdr.CATHvuManageLogicalPubHdr.ShortHelp="管理邏輯發行";
+CATHvuCommandHdr.CATHvuManageLogicalPubHdr.LongHelp="管理板件開啟或關閉的邏輯發行";
+
+CATHvuCommandHdr.CATHvuManageDocLinksHdr.Title="管理文件鏈結...";
+CATHvuCommandHdr.CATHvuManageDocLinksHdr.Help="管理目前文件的文件鏈結";
+CATHvuCommandHdr.CATHvuManageDocLinksHdr.ShortHelp="管理文件鏈結";
+CATHvuCommandHdr.CATHvuManageDocLinksHdr.LongHelp="管理目前文件的文件鏈結";
+
+CATHvuCommandHdr.CATHvuMeasureHdr.Title="量測工具";
+CATHvuCommandHdr.CATHvuMeasureHdr.Help="圖示物件間的量測";
+CATHvuCommandHdr.CATHvuMeasureHdr.ShortHelp="量測工具";
+CATHvuCommandHdr.CATHvuMeasureHdr.LongHelp="圖示物件間的量測";
+
+CATHvuCommandHdr.CATHvuPartSelectionHdr.Title="零件選擇";
+CATHvuCommandHdr.CATHvuPartSelectionHdr.Help="選擇相關示意物件的零件號碼";
+CATHvuCommandHdr.CATHvuPartSelectionHdr.ShortHelp="零件選擇";
+CATHvuCommandHdr.CATHvuPartSelectionHdr.LongHelp="選擇相關示意物件的零件號碼";
+
+CATHvuCommandHdr.CATHvuNetworkAnalHdr.Title     = "網路";
+CATHvuCommandHdr.CATHvuNetworkAnalHdr.Help      = "取得連結物件的網路路徑";
+CATHvuCommandHdr.CATHvuNetworkAnalHdr.ShortHelp = "網路";
+CATHvuCommandHdr.CATHvuNetworkAnalHdr.LongHelp  = "取得連結物件的網路路徑";
+
+CATHvuCommandHdr.CATHvuRelatedObjectsHdr.Title="相關物件";
+CATHvuCommandHdr.CATHvuRelatedObjectsHdr.Help="顯示與所選物件鏈結的物件";
+CATHvuCommandHdr.CATHvuRelatedObjectsHdr.ShortHelp="相關物件";
+CATHvuCommandHdr.CATHvuRelatedObjectsHdr.LongHelp="顯示與所選物件鏈結的物件";
+
+CATHvuCommandHdr.CATHvuReportDefHdr.Title="報告定義";
+CATHvuCommandHdr.CATHvuReportDefHdr.Help="定義報告格式";
+CATHvuCommandHdr.CATHvuReportDefHdr.ShortHelp="報告定義";
+CATHvuCommandHdr.CATHvuReportDefHdr.LongHelp="定義報告格式";
+
+CATHvuCommandHdr.CATHvuReportGenHdr.Title="產生報告";
+CATHvuCommandHdr.CATHvuReportGenHdr.Help="產生報告格式";
+CATHvuCommandHdr.CATHvuReportGenHdr.ShortHelp="產生報告";
+CATHvuCommandHdr.CATHvuReportGenHdr.LongHelp="產生報告格式";
+
+CATHvuCommandHdr.CATHvuExportQueryHdr.Title="輸出詢問...";
+CATHvuCommandHdr.CATHvuExportQueryHdr.Help="輸出詢問至檔案";
+CATHvuCommandHdr.CATHvuExportQueryHdr.ShortHelp="輸出詢問";
+CATHvuCommandHdr.CATHvuExportQueryHdr.LongHelp="輸出詢問至檔案";
+
+CATHvuCommandHdr.CATHvuDataExportHdr.Title="輸出資料...";
+CATHvuCommandHdr.CATHvuDataExportHdr.Help="輸出圖形表示資料";
+CATHvuCommandHdr.CATHvuDataExportHdr.ShortHelp="輸出資料";
+CATHvuCommandHdr.CATHvuDataExportHdr.LongHelp="輸出包含物件, 屬性和關聯的統計資料";
+
+CATHvuCommandHdr.CATHvuPrjMngtHdr.Title="選擇或瀏覽...";
+CATHvuCommandHdr.CATHvuPrjMngtHdr.Help="計劃資源管理";
+CATHvuCommandHdr.CATHvuPrjMngtHdr.ShortHelp="計劃管理";
+CATHvuCommandHdr.CATHvuPrjMngtHdr.LongHelp="計劃資源管理";
+
+CATHvuCommandHdr.CATHvuPRMCheckerHdr.Title="有效化...";
+CATHvuCommandHdr.CATHvuPRMCheckerHdr.Help="有效化計劃資源 XML 中的資源";
+CATHvuCommandHdr.CATHvuPRMCheckerHdr.ShortHelp="計劃管理有效化";
+CATHvuCommandHdr.CATHvuPRMCheckerHdr.LongHelp="有效化計劃資源 XML 中的資源";
+
+CATHvuCommandHdr.CATHvuATSTextPlaceHdr.Title="置放文字樣板";
+CATHvuCommandHdr.CATHvuATSTextPlaceHdr.Help="在物件上置放文字樣板";
+CATHvuCommandHdr.CATHvuATSTextPlaceHdr.ShortHelp="置放文字樣板";
+CATHvuCommandHdr.CATHvuATSTextPlaceHdr.LongHelp="在物件上置放文字樣板";
+
+CATHvuCommandHdr.CATHvuInsertViewHdr.Title="已存視圖";
+CATHvuCommandHdr.CATHvuInsertViewHdr.Help="插入已存視圖至概要圖形中.";
+CATHvuCommandHdr.CATHvuInsertViewHdr.ShortHelp="插入已存視圖";
+CATHvuCommandHdr.CATHvuInsertViewHdr.LongHelp="插入已存視圖至概要圖形中.";
+
+CATHvuCommandHdr.CATHvuQueryCntrInfoHdr.Title="詢問連接器資訊";
+CATHvuCommandHdr.CATHvuQueryCntrInfoHdr.Help="詢問連接器資訊";
+CATHvuCommandHdr.CATHvuQueryCntrInfoHdr.ShortHelp="詢問連接器資訊";
+CATHvuCommandHdr.CATHvuQueryCntrInfoHdr.LongHelp="詢問連接器資訊";
+
+//------------------------------------------------------------------------------
+// Annotation Editor Contextual Menu Command
+//------------------------------------------------------------------------------
+CATHvuCommandHdr.CATHvuEditAnnotHdr.Title="註解編輯器...";
+CATHvuCommandHdr.CATHvuEditAnnotHdr.ShortHelp="註解編輯器";
+CATHvuCommandHdr.CATHvuEditAnnotHdr.Help="編輯註解";
+CATHvuCommandHdr.CATHvuEditAnnotHdr.LongHelp="提出編輯器以編輯註解的內容.";
+
+
+CATHvuCommandHdr.CATHvuURLInsertCmdHdr.Title="新增超鏈結";
+CATHvuCommandHdr.CATHvuURLInsertCmdHdr.Help="新增超鏈結";
+CATHvuCommandHdr.CATHvuURLInsertCmdHdr.ShortHelp="新增超鏈結";
+CATHvuCommandHdr.CATHvuURLInsertCmdHdr.LongHelp="新增超鏈結";
+
+CATHvuCommandHdr.CATHvuURLOpenCmdHdr.Title="跳至超鏈結";
+CATHvuCommandHdr.CATHvuURLOpenCmdHdr.Help="跳至超鏈結";
+CATHvuCommandHdr.CATHvuURLOpenCmdHdr.ShortHelp="跳至超鏈結";
+CATHvuCommandHdr.CATHvuURLOpenCmdHdr.LongHelp="跳至超鏈結目的地";
+
+//------------------------------------------------------------------------------
+// Drafting Text Update Command
+//------------------------------------------------------------------------------
+CATHvuCommandHdr.CATHvuTextUpdateHdr.Title="文字更新" ;
+CATHvuCommandHdr.CATHvuTextUpdateHdr.ShortHelp="文字更新";
+CATHvuCommandHdr.CATHvuTextUpdateHdr.Help="強迫更新目前圖紙中主要視圖的文字";
+CATHvuCommandHdr.CATHvuTextUpdateHdr.LongHelp=
+"強迫更新目前圖紙中主要視圖的文字";
+
+//------------------------------------------------------------------------------
+// Schematic Update Selection Command
+//------------------------------------------------------------------------------
+CATHvuCommandHdr.CATHvuSelectiveUpdateHdr.Title="更新選擇";
+CATHvuCommandHdr.CATHvuSelectiveUpdateHdr.ShortHelp="更新選擇";
+CATHvuCommandHdr.CATHvuSelectiveUpdateHdr.Help="更新選擇";
+CATHvuCommandHdr.CATHvuSelectiveUpdateHdr.LongHelp =
+"更新選擇
+更新繪圖, 圖紙或視圖中的選擇.";
+
+//------------------------------------------------------------------------------
+// Route Fix Command
+//------------------------------------------------------------------------------
+CATHvuCommandHdr.CATHvuRouteFixHdr.Title="鎖定形狀";
+CATHvuCommandHdr.CATHvuRouteFixHdr.ShortHelp="鎖定 route 中的基本形狀";
+CATHvuCommandHdr.CATHvuRouteFixHdr.Help="Maintains the basic shape of the route so that only the segment closest to the route extremity can be reshaped";
+CATHvuCommandHdr.CATHvuRouteFixHdr.LongHelp =
+"Maintains the basic shape of the route so that only the segment closest to the route extremity can be reshaped.";
+
+//------------------------------------------------------------------------------
+// Route Unfix Command
+//------------------------------------------------------------------------------
+CATHvuCommandHdr.CATHvuRouteUnfixHdr.Title="釋放形狀";
+CATHvuCommandHdr.CATHvuRouteUnfixHdr.ShortHelp="釋放 route 中的基本形狀";
+CATHvuCommandHdr.CATHvuRouteUnfixHdr.Help="Unlocks the route shape so that there is no restriction on how the route is reshaped";
+CATHvuCommandHdr.CATHvuRouteUnfixHdr.LongHelp =
+"Unlocks the route shape so that there is no restriction on how the route is reshaped.";
+
+CATHvuCommandHdr.CATHvuUpdateImageHdr.Title="詢問或更新圖像";
+CATHvuCommandHdr.CATHvuUpdateImageHdr.Help="Querying or updating a schematic diagram image object from its master";
+CATHvuCommandHdr.CATHvuUpdateImageHdr.ShortHelp="詢問或更新圖像";
+CATHvuCommandHdr.CATHvuUpdateImageHdr.LongHelp="Querying the images in a schematic document and/or updating an image object from its master.";
+
+CATHvuCommandHdr.CATHvuCatalogBrowserHdr.Title="目錄瀏覽器";
+CATHvuCommandHdr.CATHvuCatalogBrowserHdr.Help="目錄瀏覽器";
+CATHvuCommandHdr.CATHvuCatalogBrowserHdr.ShortHelp="目錄瀏覽器";
+CATHvuCommandHdr.CATHvuCatalogBrowserHdr.LongHelp="目錄瀏覽器";
+
+//=======================================================================
+//Reset Color
+//=======================================================================
+CATHvuCommandHdr.CATHvuResetColorHdr.Title="重設顏色";
+CATHvuCommandHdr.CATHvuResetColorHdr.Help="重設圖像物件顏色";
+CATHvuCommandHdr.CATHvuResetColorHdr.ShortHelp="重設顏色";
+CATHvuCommandHdr.CATHvuResetColorHdr.LongHelp="重設圖像物件顏色";
+
+

@@ -1,0 +1,357 @@
+// COPYRIGHT DASSAULT SYSTEMES 2005
+
+// --- Resources for ENOVIA Reconciliator batch infrastructure.
+// --- * Error messages : ERR_, WRN_ or INF_ + identifier, /p1, /p2.. for parameters.
+
+// --------------------------------------
+// --- End of batch execution messages.
+// --------------------------------------
+
+ReconciliatorProcessStatus            = "\nReconciliator process run successfuly" ;
+ReconciliatorProcessStatusFailedInput = "\nReconciliator process failed: Invalid inputs" ;
+ReconciliatorProcessStatusFailed      = "\nReconciliator process failed" ;
+
+// --------------------------------------
+// --- Batch command description.
+// --------------------------------------
+
+Help_AdditionalCmdBase           = "          [-connect xxx] [-role xxx]  [-user xxx] [-pwd xxx]" ;
+Help_AdditionalHelpCmd           = " /p1 -help\n" ;
+Help_AdditionalFile              = "    -file              Name of the CATIA file to be loaded and reconciled\n                    Several file statements are possible." ;
+Help_AdditionalStructure         = "    -structure         Enable to switch from a full document publication exposed\n                    to a mode where CATProducts are save in Structure exposed" ;
+Help_AdditionalReload            = "    -reload            Enable to set rule to reload instead of Overwrite for an object\n                    with a specified name. Several reload statements are possible." ;
+Help_AdditionalKeepExternal      = "    -keepExternal      Enable to set rule to Keep as External reference for a not loaded\n                    document. Several keepExternal statements are possible." ;
+Help_AdditionalForceKeepExternal = "    -forceKeepExternal Enable to force usage of Keep as External rule for broken link\n                    (document not found) where query return no document." ;
+Help_AdditionalPublication       = "    -publication       Enable to set an included CATProduct document to be publication exposed\n                    when the main CATProduct document is in Structure exposed mode\n                    (only when -structure parameter is used)." ;
+Help_AdditionalSimul             = "    -simul             Enable not to execute Save or Apply in VPDM" ;
+Help_AdditionalSimulExecute      = "                       . Execute means that reconciliation is applied, but save is not done" ;
+Help_AdditionalSimulRule         = "                       . Rule    means that the mapping and rules are set but\n                            neither reconciliation is applied nor save is done" ;
+Help_AdditionalSimulNoRule       = "                       . NoRule  means that only Reconciliation session creation is done." ;
+Help_AdditionalCheckDoc          = "    -checkDoc          Provide number of documents in the Reconcile session for validation." ;
+Help_AdditionalStatistics        = "    -statistics        Display execution statistics." ;
+Help_AdditionalXml               = "    -xml               Stream Reconciliation session in a XML file." ;
+Help_AdditionalHelp              = "    -help              Describe command syntax" ;
+Help_AdditionalQuery             = "    -queryName         Name of the criterion to be searched\n                  (Default is Simple Query)" ;
+Help_AdditionalConnect           = "    -connect           Provide a connection string describing how to establish connection\n                  to VPDM repository" ;
+Help_AdditionalRole              = "    -role              Role used for ENOVIA connection" ;
+Help_AdditionalUser              = "    -user              User for ENOVIA connection (default current user)" ;
+Help_AdditionalPwd               = "    -pwd               User password for database connection (default is blank)" ;
+Help_AdditionalInXML             = "    -inxml             Enables to specify an input EpeXML file to restart\n                  the batch from a previous reconcilation session\n                  this option should be used with -completeWithDefaultMapping if the XML file doesn't specify the mapping for all objects";
+Help_AdditionalEpeXML            = "    -epexml            Enables to generate an EpeXML file that will be used back with -inxml";
+Help_AdditionalOutputFile        = "    -outputFileList    Enables to define the file path of the output file containing\n                    the files that will be reconciled.";
+
+
+Help_AdditionalNewRevisionOnDoc  = "    -newRevision    Enable to set rule to New Revision for a mapped document\n                    Several newRevision statements are possible." ;
+Help_AdditionalNewVersionOnDoc   = "    -newVersion with DocName             \n                    Enable to set rule to New Version for a mapped document\n                    Several newVersion statements are possible." ;
+Help_AdditionalNewVersionOnPart  = "    -newVersion with PartVersionName     \n                    Enable to set rule to New Version for a part version\n                    Several newVersion statements are possible." ;
+Help_AdditionalForceNewVersion   = "    -forceNewVersion                     \n                    Enable to set rule to New Version for all mapped documents in session." ;
+
+// --------------------------------------
+// --- Execution messages.
+// --------------------------------------
+
+Msg_StartReconcile          = "\n\n\n -----> Start Reconciliator import program" ;
+Msg_CommandEcho             = "\n         Command:" ;
+Msg_OneFile                 = "\n\n ====   One CATIA File:     /p1" ;
+Msg_MultiFiles              = "\n\n ====   /p1 CATIA Files:" ;
+Msg_ObjectToReconcile       = "\n    . Object to be reconciled (/p1 top level objects)"  ;
+Msg_NoCriterion             = " ====   No Criterion name defined" ;
+Msg_Criterion               = " ====   Criterion name:     /p1" ;
+Msg_Connection              = " ====   Connection string:  /p1" ;
+Msg_Role                    = " ====   Role:               /p1" ;
+Msg_User                    = " ====   User:               /p1\n" ;
+Msg_OneDocument             = " ====   One document must be found in the reconcile session" ;
+Msg_Documents               = " ====   /p1 documents must be found in the reconcile session" ;
+Msg_Structure               = " ====   All CATProduct documents will be Structure exposed" ;
+Msg_Publication             = " ====   All documents will be in Publication exposed" ;
+Msg_ForceKeepExternal       = " ====   All broken links (documents not loaded) where not document is found will be reconciled with Keep as External rule." ;
+Msg_Statistics              = " ====   Display execution statistics" ;
+Msg_ReloadList              = " ====   We will try to set RELOAD reconciliation rule for following list of objects:" ;
+Msg_PublicationList         = " ====   Except following CATProduct(s) that will be saved in Publication exposed:" ;
+Msg_Drafting                = " ====   Drafting validation is activated (/p1)" ;
+Msg_ProductStructure        = " ====   Validation of Product structure is activated" ;
+Msg_BeforeSave              = " ====   Validation before save is activated (/p1)" ;
+Msg_AfterSave               = " ====   Validation before save is activated (/p1)" ;
+Msg_BeforeDrafting          = " ====   Drafting validation before save is activated (/p1)" ;
+Msg_KeepExternal            = " ====   We will try to set Keep as external reference reconcilition rule for following list of Proxy-document:" ;
+Msg_NewRevision             = " ====   We will try to set New Revision reconcilition rule for following list of documents:" ;
+Msg_NewVersion              = " ====   We will try to set New Version reconcilition rule for following list of objects:" ;
+Msg_SimulationMode          = " ====   Simulation mode is selected:" ;
+Msg_SimulRule               = "\n    . Process stop after reconciliation rules definition, so no reconciliation rule apply and no save in VPDM repository will be executed." ;
+Msg_SimulExecute            = "\n    . Apply reconciliation rules done, but no save inside VPDM repository will be executed." ;
+Msg_SimulOpen               = "\n    . Process stop before reconciliation rules definition." ;
+Msg_XmlOutput               = " ====   Generate an XML report in /p1" ;
+Msg_XmlEpeOutput            = " ====   Generate an XML for Stop/Restart in /p1" ;
+Msg_XmlInput                = " ====   Import XML from /p1" ;
+Msg_FilesOutput             = " ====   List of document reconciled will be wrote in output file /p1" ;
+Msg_FileDeletion            = " ====   Deletion of reconciled files at end of Reconciliation" ;
+Msg_ConnectionOk            = "\n    . VPDM connection successfuly establish" ;
+Msg_NoConnection            = "\n    . No VPDM connection defined, we are in simulation mode" ;
+Msg_LoadDocument            = "\n    . CATIA Document /p1 has been loaded" ;
+Msg_LockedDocument          = "\n    . CATIA Document /p1 has been locked in session" ;
+Msg_StrRecScn               = "\n\n    . Start reconciliation process" ;
+Msg_ChkDocNum               = "\n    . Check number of documents in reconcile session" ;
+Msg_StrRecRules             = "\n    . Start setting reconciliation rule on each objects (top level objects)" ;
+
+Msg_ComputeRecRule          = "\n    . Compute reconciliation rules\n" ;
+Msg_ComputeRecRule_Failed   = "\nERROR: Compute reconciliation rules failed\n" ;
+Msg_ComputeRecRule_OK       = "\n    . Compute reconciliation rules succeeded\n" ;
+
+Msg_LoadXML                 = "\n    . Compute session rules from input XML file /p1\n" ;
+Msg_LoadXML_Suite           = "\n    . Compute session rules from input XML: continued\n" ;
+Msg_LoadXML_Failed          = "\nERROR: Compute session rules from input XML failed" ;
+Msg_LoadXML_FailedFor       = "      . Compute session rules from input XML failed on /p1\n" ;
+Msg_LoadXML_OK              = "\n    . Compute session rules from input XML succeeded\n" ;
+
+Msg_UsingGlobalSet          = "\n    . Compute reconciliation rules using GlobalSet mechanism\n" ;
+Msg_UsingGlobalSet_Failed   = "\nERROR: Compute reconciliation rules using GlobalSet mechanism failed\n" ;
+Msg_UsingGlobalSet_OK       = "\n    . Compute reconciliation rules using GlobalSet succeeded\n" ;
+
+Msg_NoProdStructCompare     = "\n    . Product structure comparison is not available" ;
+Msg_DisplayComparison       = "\n    . Dump model after comparison\n" ;
+Msg_ExecComparison          = "\n    . Compute comparison" ;
+Msg_GenerateXml             = "\n    . Generate XML report on file /p1" ;
+Msg_ApplyRecRule            = "\n    . Apply reconciliation rules" ;
+Msg_ApplyOk                 = "\n    . Reconciliation operations run successfully." ;
+Msg_AllRecRulesNotSet       = "\n    . Reconciliation rule could not be applied\n(All reconciliation rules are not set)" ;
+Msg_PrintStatistic          = "\n       (Statistics: CPU time:  /p1 s / Ellapse time: /p2 s)\n" ;
+Msg_ApplyComparisonValid    = "\n    . Launch Validation of product structure exposition" ;
+Msg_ObjectStatistic         = "\n\n * Statistics: Number of objects in reconciliation session" ;
+Msg_DocStatistic            = "    . Number of Documents:                /p1" ;
+Msg_ProxyDocStatistic       = "    . Number of Documents not accessible: /p1" ;
+Msg_PartStatistic           = "    . Number of Parts:                    /p1" ;
+Msg_InstanceStatistic       = "    . Number of Instances:                /p1" ;
+Msg_NoDocFound              = "                No document found for /p1" ;
+Msg_SetRulePubExpReload     = "              + Set rule on this /p1 document /p2 as Publication exposed Reload from VPDM" ;
+Msg_SetRulePubExpNew        = "              + Set rule on document /p1 as Publication exposed as New document" ;
+Msg_OneDocFound             = "                One document found." ;
+Msg_AutoDocFound            = "                Several documents found, but only one is valid." ;
+Msg_SetRulePubExpOverWrt    = "              + Set rule on this /p1 document /p2 as Publication exposed Overwrite in VPDM." ;
+Msg_QueryOnTypeDocument      = "Document" ;
+Msg_QueryOnTypePart          = "Part" ;
+Msg_QueryOnTypeProxyDocument = "not loaded Document" ;
+Msg_NoPartFound             = "                No Part Found" ;
+Msg_SetRuleStrucNew         = "              + Set Reconciliatiom rule Structure exposed as new on this Product" ;
+Msg_OnePartFound            = "                One Part found" ;
+Msg_AutoPartFound           = "                Several Parts found, but only one is valid." ;
+Msg_SetRuleStrucOverWrite   = "              + Set rule on this ASM_Product as Structure exposed Overwrite in VPDM" ;
+Msg_SetRuleProxyPubKeepExt  = "              + Set rule on this proxy-document as Publication exposed & Keep as External Link" ;
+Msg_SetRuleProxyReloadExt   = "              + Set rule on this proxy-document as Publication exposed reload from VPDM" ;
+Msg_PrepareDrawingRecFailed = "           ===> Prepare drawing reconciliation failed " ;
+Msg_Document                = "      /p1: Document /p2 of type /p3\n            (CATIA Name: </p4> / </p5>)" ;
+Msg_ProxyDocument           = "      /p1: Document proxy /p2 of type /p3\n            (CATIA Name: </p4> / </p5>)" ;
+Msg_NumberOfDocuments       = "                /p1 documents found" ;
+Msg_NumberOfObjects         = "                /p1 object(s) found" ;
+Msg_NoRuleOnDocument        = "              + No Reconciliation rule set on this document /p1" ;
+Msg_NoRuleOnProxyDocument   = "              + No Reconciliation rule set on this document proxy /p1" ;
+Msg_NoRuleOnProduct         = "              + No Reconciliation rule set on this Product /p1" ;
+Msg_ImpRuleOnModel          = "              + Set rule on this model document /p1 is impossible" ;
+Msg_PartInDoc               = "            . /p1 Part: /p2" ;
+Msg_PartDelegatetoDocument  = "              + Rule will be computed on this Product based on document rule" ;
+Msg_CATProductContent       = "            CATProduct in Structure exposed containing /p1 Product" ;
+Msg_CATProductPublication   = "            CATProduct in Publication exposed containing /p1 Product" ;
+Msg_RunCriterionWithParams  = "              + Run /p1 criterion with following parameters for /p2 /p3:" ;
+Msg_RunCriterionNoParam     = "              + Run /p1 criterion with no parameter defined for /p2 /p3:" ;
+Msg_PrintRootInstance       = "      > Root instance: /p1" ;
+Msg_PrintInstance           = "> Instance: /p1 Compare: /p2" ;
+Msg_PrepareDrawingForSave   = "              + Prepare /p1 for save" ;
+Msg_UpdateDrawing           = "              + Update /p1" ;
+Msg_SaveDocument            = "              + Save /p1" ;
+Msg_CheckAfterSave          = "              + Check /p1 after save" ;
+Msg_UpdateWarningDrawing    = " WARNING: Some dimension(s) are isolated" ;
+Msg_UpdateAssembly          = "    . Update assembly structure" ;
+Msg_SavePSDoc               = "    . Save document CATPart/CATProduct/CATIA V4 model in Publication exposed" ;
+Msg_SaveOtherDoc            = "    . Save other documents (CATDrawing, ...)" ;
+Msg_NotSaved                = "      /p1: Document /p2 of type /p3 not saved" ;
+Msg_SavedOk                 = "      /p1: Document /p2 of type /p3 saved successfully\n" ;
+Msg_SaveAssemblyStructure   = "\n    . Save Assembly structure" ;
+Msg_ProductNotSaved         = "      Product /p1 has not been saved (/p2)\n" ;
+Msg_ProductSavedOk          = "      Product /p1 (/p2) saved successfully\n" ;
+Msg_Rollback                = "\n    . Rollback transaction after save errors" ;
+Msg_Commit                  = "\n    . Commit transaction" ;
+Msg_AssSavedFailed          = "\n    . Transaction commit on Assembly structure failed on /p1" ;
+Msg_AssSavedOk              = "\n    . Transaction commit on Assembly structure succeeded on /p1" ;
+Msg_DocSavedFailed          = "\n    . Transaction commit on other documents failed" ;
+Msg_DocSavedOk              = "\n    . Transaction commit on other documents succeeded" ;
+Msg_StartCheckPS            = "\n    . Start Assembly structure comparison\n" ;
+Msg_VPDMSessionClose        = "\n    . Waiting for VPM session to close" ;
+Msg_CATIASessionClose       = "\n    . Closing batch utility Session" ;
+
+// --------------------------------------
+// --- Execution messages in CATPDMReconcileImmBatchBaseAppli.
+// --------------------------------------
+
+Msg_StartApplication  = "starting batch application";
+Msg_BatchFinished     = "== BATCH Run Finished, result is /p1";
+Msg_BatchProviderOk   = "BATCH ===> GetProvider OK";
+Msg_BatchToPESConnTry = "BATCH ===> will try to connect to PES:";
+Msg_BatchToPESConnOk  = "BATCH ===> Connect OK ";
+Msg_BatchInitOk       = "BATCH INITIALISATION OK => Run...";
+Msg_EndApplication    = "end of batch application result = /p1";
+
+// ---------------------------------------------------------
+// --- Error messages in CATPDMReconcileImmBatchBaseAppli.
+// ---------------------------------------------------------
+
+ERR_BatchProviderFailed     = "BATCH KO ===> GetProvider FAILED";
+ERR_BatchProviderNULL       = "BATCH KO ===> Provider NULL";
+ERR_BatchToPESConnFailed1   = "BATCH KO ===> Connect FAILED";
+ERR_BatchToPESConnFailed2   = "BATCH KO ===> Connect != S_OK";
+ERR_BatchProviderConnFailed = "BATCH KO ===> IsConnected != S_OK";
+ERR_BatchInitFailed         = "== BATCH INITIALISATION FAILED";
+
+// ---------------------------------------------------
+// --- Execution messages in CATPDMEV5BatchServices.
+// ---------------------------------------------------
+
+Msg_StartSaveInEnovia = "ReconciliatorBatch: Going to save in ENOVIA:";
+Msg_SaveToVPDMOk      = "ReconciliatorBatch: Save succeeded (hr = /p1)";
+Msg_StartCommitInDB   = "ReconciliatorBatch: Going to commit assembly to Database...";
+Msg_CommitInVPMOk     = "ReconciliatorBatch: Commit succeeded (hr = /p1)";
+Msg_SaveWarningReg    = "ReconciliatorBatch: Save or Commit DONE but /p1 warning(s) are registered:";
+
+ERR_SaveToVPDMFailed     = "ReconciliatorBatch: Save FAILED hr = /p1";
+ERR_CommitInVPMFailed    = "ReconciliatorBatch: Commit FAILED hr = /p1";
+ERR_OpenOutputFileFailed = "ReconciliatorBatch: Not able to open file /p1. Option -outputFileList failed." ;
+
+// ----------------------------------------------------
+// --- Other Error messages in CATPDMEV5BatchServices.
+// ----------------------------------------------------
+
+ERR_ConnToVPDMFailed = "Connection to ENOVIA V5 VPM KO ===> IsConnected check failed";
+
+// --------------------------------------
+// --- Execution messages in CATScmBatchEngineEV5.
+// --------------------------------------
+
+Msg_StartInportProgram       = "\n\n\n -----> Start Reconciliator import program";
+Help_AdditionalCommandLineV5 = 
+"    -queryName      Name of the criterion to be searched
+                    (Default is \"Query by object Id\")
+    -server         Server name
+    -role           Role used for ENOVIA connection
+    -user           User for ENOVIA connection (default current user)
+    -pwd            User password for database connection (default '')" ;
+
+// --------------------------------------------
+// --- Error messages in CATScmBatchEngineEV5.
+// --------------------------------------------
+
+// --------------------------------------------
+// ---  messages in CATPDMReconcileEV5BatchExe.
+// --------------------------------------------
+
+ERR_RecScnFailed                 = "ERROR: Not able to install Reconciliation session";
+ERR_ReconciliatorOperationFailed = "ERROR: Reconciliation operation failed";
+
+// -----------------------------------------
+// --- Messages in CATPDMExtractEV5BatchExe.
+// -----------------------------------------
+
+Msg_StartExtractProgram  = "\n\n\n -----> Start Scm Extraction program\n";
+Msg_QueryFailed          = "ERROR: query failed : /p1 ";
+Msg_IncorrectSize        = "ERROR: query returned incorrect result size : /p1 ";
+Msg_PRCExpFailed         = "ERROR: expand of PRC failed : /p1";
+Msg_LoadOfAssemblyFailed = "ERROR: load of assembly failed : /p1";
+Msg_AdditionalDocuments  = "\nWork on addtional doc /p1 = < /p2 >\n";
+Msg_QueryFailedBadResult = "ERROR: query failed, bad result count:  /p1 ";
+Msg_LoadDoc_Failed       = "ERROR: Load of document /p1 failed : /p2 ";
+Msg_PreDRWRecFailed      = "ERROR:     ===> Prepare drawing reconciliation failed (RC=0x /p1 )\n";
+Msg_WrnFileAlreadyExist  = "Warning: file /p1 already exists \n";
+Msg_WrnFileDeleted       = "Warning: file /p1 will be deleted \n";
+Msg_FailedDelete         = "Warning:      failed to delete file /p1 \n";
+Msg_ExtDone              = "========= Extraction done into : /p1 \n";
+Msg_ResultIs             = "========= result is < /p1 > /p2 \n";
+
+// -----------------------------------------
+// --- Messages in CATPDMExtractEV4BatchExe.
+// -----------------------------------------
+
+Msg_RecVpm1ExtractPartVersion = "Extraction of part with\n     env=</p1>\n     table=</p2>\n     search string=</p3>\n     version=</p4>\n";
+Msg_RecVpm1ExtractKeptPart    = "The part to expand is : /p1\n";
+Msg_RecVpm1ExtractDocRevision = "Extraction of document with\n     env=</p1>\n     table=</p2>\n     search string=</p3>\n     type=</p4>\n     revision=</p5>\n";
+Msg_RecVpm1ExtractKeptDocument= "The document to load is : /p1\n";
+ERR_RecVpm1ExtractPartVersionErrorInMapping = "Error in mapping of attribute /p1. Attribute not found in mapping, filtering on version will be ignored\n";
+ERR_RecVpm1ExtractDocRevisionErrorInMapping = "Error in mapping of attribute /p1. Attribute not found in mapping, filtering on revision will be ignored\n";
+
+// --------------------------------------
+// --- Global set messages.
+// --------------------------------------
+
+Msg_GlobalExecutionStart      = "\n  . /p1 execution starting:" ;
+Msg_GlobalExecutionOk         = "    ===> /p1 execution was successful" ;
+ERR_GlobalSetNotUsable        = " ERROR: /p1 is not available in current session." ;
+ERR_GlobalExecutionKo         = " ERROR: /p1 execution FAILED." ;
+ERR_GlobalSetNotImplemented   = " ERROR: /p1 is not properly implemented (Interface implementation not found)" ;
+ERR_RecReconcileNotAuthorized = " ERROR: Batch utility /p1 is not authorized.\nCheck your licensing settings.";
+
+// --------------------------------------
+// --- Check messages.
+// --------------------------------------
+
+Msg_DrawingSheetScanHeader = "        --> Scan sheets list (/p1)" ;
+Msg_DrawingSheetScanView   = "            . Sheet /p1 (/p2 views)" ;
+Msg_DrawingViewHeader      = "              * View named /p1 (/p1 dimensions)" ;
+Msg_DrawingUpdateDimError  = "                >>> Update error for dimension named /p1" ;
+Msg_DrawingUpdateBadStatus = "                >>> Bad update status for dim named /p1" ;
+Msg_DrawingUpdateDimOk     = "           >>> Dimension successfully completed" ;
+Msg_DrawingUpdateStats     = "           >>>  Number of dimensions KO at update           = /p1\n           >>>  Number of dimensions with bad update status = /p1" ;
+
+// --------------------------------------
+// --- Error messages.
+// --------------------------------------
+
+ERR_InvalidCheckDoc          = " ERROR: Invalid value for option -checkDoc /p1\n        No check will be performed" ;
+ERR_UnKwnCmdParam            = " ERROR: Unknown command parameter /p1" ;
+ERR_BatchInputFileNotDef     = " ERROR: Input file for Batch reconciliation is not defined" ;
+ERR_NoConnectionVPDM         = " ERROR: Not able to establish VPDM connection" ;
+ERR_OpenCATIADoc             = " ERROR: Not able to open CATIA document /p1" ;
+ERR_LockDocFailed            = " ERROR: Not able to lock document /p1" ;
+ERR_ScnInstantiate           = " ERROR: Could not instanciate a reconciliation session" ;
+ERR_AccessLstDoc             = " ERROR: Not able to access to list of documents to be reconcilated" ;
+ERR_SetEnvObj                = " ERROR: Not able to set save environment on this object" ;
+ERR_RecExeFailed             = " ERROR: Execute reconciliation failed" ;
+ERR_RecLstInvalid            = " ERROR: Error list of documents to be reconciled is invalid" ;
+ERR_NoObjOrNoScnDef          = " ERROR: No object or no reconciliation session defined at time to set rule on a document" ;
+ERR_NoObjOrNoScnDefPart      = " ERROR: No object or no reconciliation session defined at time to set rule on a ASM Product" ;
+ERR_NoAccessLstCrt           = " ERROR: No access to list of criteria for /p1 /p2" ;
+ERR_NotValidCATDrawingDoc    = " ERROR: /p1 is not a valid CATDrawing document." ;
+ERR_MemoryAllocation         = " ERROR: Memory allocation problem" ;
+ERR_SetName                  = " ERROR: Not able to set name /p1" ;
+ERR_InvalidNbrDocument       = " ERROR: Expected /p1 documents and found /p2 documents" ;
+ERR_ExecuteFailed            = " ERROR: Execute reconciliation failed." ;
+ERR_NoRecSession             = " ERROR: No reconciliation session defined at time to set rule on a document." ;
+ERR_NoSaveEnvironment        = " ERROR: Not able to get save environment on this object." ;
+ERR_NoListOfDocuments        = " ERROR: Not able to access to list of documents to be reconcilated." ;
+ERR_NoAccessToOneDocument    = " ERROR: Error no access to CATIA Document." ;
+ERR_NoAccessCatiaProduct     = " ERROR: Error no access to CATIA Product" ;
+ERR_DrawingPreparation       = " ERROR: Drawing preparation for reconciliation failed" ;
+ERR_NotADocument             = " ERROR: Error list of documents to be reconciled is invalid (*)" ;
+ERR_PubNewError              = " ERROR: No able to set Publication exposed as new on this object" ;
+ERR_NoChildOnProduct         = " ERROR: Not able to find Product children of this CATProduct" ;
+ERR_PubNewNotAuthorizedMdl   = " ERROR: Publication exposed as New is not authorized for a CATIA V4 model" ;
+ERR_PubNewNotAuthorized      = " ERROR: Publication exposed as New is not authorized" ;
+ERR_PubReloadErrorMdl        = " ERROR: Publication exposed as reload from VPDM is not authorized for this CATIA V4 model" ;
+ERR_PubReloadError           = " ERROR: No able to set Publication exposed reload from VPDM" ;
+ERR_PubOverwNotAuthorized    = " ERROR: Publication exposed as Overwrite in VPDM is not authorized" ;
+ERR_PubReloadNotAuthorized   = " ERROR: Publication exposed as Reload from VPDM is not authorized" ;
+ERR_StructNewNotAuthorized   = " ERROR: Structure exposed as New is not authorized on this Product" ;
+ERR_StructNewdError          = " ERROR: No able to set Structure exposed as new on this Product" ;
+ERR_SetPDMInformation        = " ERROR: No able to set PDM information on this object" ;
+ERR_StructOverNotAuthorized  = " ERROR: Structure exposed as Overwrite in VPDM is not authorized on this Product" ;
+ERR_StructOverError          = " ERROR: No able to set Structure exposed as overwrite on this Product" ;
+ERR_AccessChildProduct       = " ERROR: Not able to find Product children of CATProduct" ;
+ERR_PubKeepNotAuthorized     = " ERROR: Publication Exposed as keep as external reference is not authorized" ;
+ERR_PubKeepError             = " ERROR: No able to set rule as Publication exposed & Keep as external reference" ;
+ERR_ProxyPubNewNotAuthorized = " ERROR: Publication Exposed as New is not authorized for a proxy-document and force Keep as External option is not set." ;
+ERR_CriterionNotApplicable   = " ERROR: No able to set /p1 as current Criterion on /p2 /p3" ;
+ERR_CriterionParameter       = " ERROR: No able to compute default Criterion parameters for /p1 on /p2 /p3" ;
+ERR_CriterionNotFound        = " ERROR: /p1 criterion is not available for /p2 /p3" ;
+ERR_CriterionError           = " ERROR: No able to run criterion /p1." ;
+ERR_NoAccessToDrawing        = " ERROR: No access to Drawing environment on /p1" ;
+ERR_NoAccessToComparison     = " ERROR: Not able to access comparison structure" ;
+ERR_InstanceNotIdentical     = "> ERROR on Instance: /p1 Compare: /p2" ;
+ERR_InvalidProductSaved      = " ERROR: Product structure comparison after Reconciliation is not Ok." ;
+ERR_ReconcileFailed          = " ERROR: Reconciliation operation failed" ;
+ERR_CreateCATIAEnv           = " ERROR: Not able to install CATIA environment" ;
+ 

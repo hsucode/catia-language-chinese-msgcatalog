@@ -1,0 +1,95 @@
+
+// Messages for Message Window
+Error.NoResource="錯誤: 無法模擬 /P01. 動作沒有指定資源.";
+Error.NotAMechanism="錯誤: 無法模擬 /P01. 指定資源, /P02, 不是機構.";
+Error.NoGrabbingDevice="錯誤: 無法模擬 Grab 動作 /P01. 沒有指定 Grabbing 裝置.";
+Error.NoGrabbedDevice="錯誤: 無法模擬 Grab 動作/P01. 沒有指定 Grabbed 裝置.";
+Error.NoTag="錯誤: 無法模擬 /P01. 沒有指定 Tag .";
+Error.NotARobot="錯誤: 無法模擬 /P01. 必須指定 robot 資源.";
+Error.UnableToSimulate="錯誤: 無法模擬 /P01.";
+Error.InvalidHomeName="錯誤: 無法模擬 /P01, 無效主鐖名稱 /P02.";
+
+Error.CantReachTag="錯誤: 無法到達 tag 位置";
+
+// CATDlgNotify messages
+MoveActivityFactoryError.Title = "無法取得工廠";
+MoveActivityFactoryError.Message = "內部錯誤: 無法獲取移動動作工廠.";
+
+UnableToCreateTagError.Title = "無法建立標籤";
+UnableToCreateTagError.Message = "內部錯誤: 無法建立 TagActivity 物件.";
+
+SPPChildManagementError.Title = "無法取得 CATISPPChildManagement";
+SPPChildManagementError.Message = "內部錯誤: 無法獲取 CATISPPChildManagement 介面.";
+
+NotAMech.Title = "選擇錯誤";
+NotAMech.Message = "所選物件不是機構.";
+
+UnreachableTag.Title = "無法到達 Tag";
+UnreachableTag.Message = "所選 Tag 無法到達";
+
+NotATagOrPath.Title = "選擇錯誤";
+NotATagOrPath.Message = "內部錯誤: 所選物件不是路徑或節點物件.";
+
+NoActionCreated.Title = "選擇根程序 ";
+NoActionCreated.Message = "錯誤 : 無法建立根程序動作, 至少要建立一路徑";
+
+AddActionFailed.Title = "無法建立動作";
+AddActionFailed.Message = "錯誤 : 新增動作失敗, 無法建立 AtomicActivities";
+
+NoActionAdded.Title = "無法新增動作";
+NoActionAdded.Message = "錯誤 : 所建動作已存在, 請修改名稱";
+
+NoResourceAssigned.Title = "沒有資源";
+NoResourceAssigned.Message = "指定動作未指定或無效資源.";
+
+Error.CollisionDetected = " /P01 偵測到干涉, 模擬時間: /P02";
+Info.Distance = "對 /P02 和 /P03 間的 /P01 最小距離是 /P04, 模擬時間: /P05";
+
+Error.NoHandle = "無法建立處理";
+
+CmdError.Title = "錯誤";
+CmdError.Message = "目前動作中不允許此動作";
+
+CurvesId = "曲線";
+HighlightId = "亮度顯示";
+
+OffId = "關閉";
+// HighlightId = "Highlight"; // previously declared
+VerboseId = "口語";
+InterruptId = "中斷";
+
+Precedence.LoopDetected1="設定 '/P01' 為 '/P02' 預設時偵測到迴圈";
+Precedence.LoopDetected2="活動 '/P01' 的預設限制忽略!";
+
+Precedence.InvalidPrecedent1="設定 '/P01' 為 '/P02' 預設時偵測到迴圈";
+Precedence.InvalidPrecedent2="活動 '/P01' 的預設限制忽略!";
+
+RepositionActivities.ProcCycle = "動作偵測到循環: ";
+BadAttachment = "下層抓取 : /P01 => /P02. 將忽略附件";
+
+BadAttachmentOnTag = "附件 /P01: /P02 => /P03 不支援且會被忽略.";
+InactiveProd="Product '/P01' 無法適當模擬! 可能已被關閉. 請嚐試啟動它, 再重新啟動模擬.";
+
+
+OffMonId = "關";
+OnMonId = "開";
+
+NoId = "N/A";
+ClearanceId = "裕度";
+ContactId = "接觸";
+ClashId = "干涉";
+
+PauseAct1 = "模擬將暫停 @ /P01 秒";
+PauseAct2 = "按下播放鈕繼續...";
+PauseAct3 = "前一所選活動為: /P01.";
+PauseAct4 = "目前活動設定為: /P01.";
+
+DNBSimMaxTime = "模擬己達最大時間且將停止.";
+
+DNBYesId = "是";
+DNBNoId = "否";
+DNBProcessId = "程序";
+DNBParentId = "上層";
+DNBContinueId = "繼續";
+DNBPauseId = "暫停";
+DNBNotAvailId = "無";

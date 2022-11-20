@@ -1,0 +1,151 @@
+// COPYRIGHT DASSAULT SYSTEMES 1999
+//=============================================================================
+//
+// VPMPosImportMsg:
+//	P&O Import/Export Library NLS Info Messages
+//
+// English version
+//
+//=============================================================================
+// Usage Notes:
+//=============================================================================
+// Feb 99   Creation                                   J.Poitreau
+//=============================================================================
+
+// --- Parameters
+POSImp_NO_DICTIONARY_PATH       = "$CATDictionaryPath is empty";
+POSImp_NO_FILE_SPECIFIED        = "A file name must be specified";
+POSImp_FILE_OPEN_FAILED         = "Failed to open file /P01";
+
+// --- Login
+POSImp_NO_MANAGER               = "Could not get P&O factory - Check CATDictionaryPath variable";
+POSImp_NO_CONNECTION            = "Cannot connect to database";
+POSImp_INVALID_VPM_USER         = "You are not recognized as a VPM user";
+POSImp_NO_VPM_ROLE              = "You are belonging NO role";
+POSImp_NO_ADMIN_ROLE            = "You are belonging NO ADMIN role";
+POSImp_LOGIN_FAILED             = "Login failed";
+
+// --- Objects
+POSImp_INVALID_OBJECT           = "/P01 [/P02] does not exist";
+POSImp_DEFAULT_MASK_FAILED      = "Could not import properly the /P01 mask";
+
+// -- Export
+POSExp_INVALID_DIRECTORY        = "Directory [/P01] does not exist";
+POSExp_CANNOT_CREATE_DIRECTORY  = "Could not create directory [/P01]";
+POSExp_DIRECTORY_IS_READONLY    = "Cannot write in directory [/P01]";
+POSExp_DEFAULT_MASK_FAILED      = "Could not export properly the /P01 mask";
+
+// --- Help
+POSImp_HELP_USAGE               = "[Usage]\n\n",
+"VPMPeopleImport [ -h | -lang ]\n",
+"                [ -user <sso_user> <sso_pwd> ]\n",
+"                [ -ctx VPMADMIN.<organization>.<project> ]\n",
+"                [ -export [ -org <orgid> ] ] <filename>\n",
+"                [ -savemask <directory> ]\n",
+"                [ -o [ <output> ] ]\n\n",
+" -h            : this help.\n",
+" -lang         : help on import/export file format.\n",
+" -user         : must be used when SSO is activated.\n",
+" -ctx          : when the administrator has several VPMADMIN contexts,\n",
+"                 this option avoids the user being asked to enter one\n",
+"                 to keyboard.\n",
+" -savemask     : to export all masks (other then DEFAULT) in\n",
+"                 <directory>/resources/masks/others (one file per mask).\n",
+" -export       : use export capability instead of import.\n",
+" -org <orgid>  : export only <orgid> sub-tree.\n",
+"                 Default is all P&O/Security database.\n",
+" <filename>    : name of input (output) file for import (export).\n",
+"                 The file format (textual) is specific to this tool.\n",
+" -o <output>   : generates the report into <output> file, rather than to\n",
+"                 console. Default <output> file is : VPMPeopleImport.log\n\n";
+POSImp_HELP_LANG_KEYWORDS = "[Language keywords]\n\n",
+" *MODE      : import mode (check and/or replace/no) [CHECK]\n",
+" *DDL       : DDL (database user management) generation mode\n",
+" *SEPARATOR : attributes separator (character)      [,]\n",
+" *NULL      : unset attribute representation value  [$]\n",
+" *PRJ       : project creation/update\n",
+" *ORG       : organization creation/update\n",
+" *PERSON    : person creation/update\n",
+" +MANAGER   : declaring previous person as manager of one organization\n",
+" *ROLE      : role creation/update\n",
+" *CTX       : context creation/update\n",
+" -ALL       : removing all persons from previous context\n",
+" +PERSON    : adding one person to previous context\n",
+" -PERSON    : removing one person to previous context\n",
+" !PERSON    : person deletion\n",
+" !ROLE      : role deletion\n",
+" !ORG       : organization deletion\n",
+" !PRJ       : project deletion\n",
+" !CTX       : context deletion\n",
+" +MASK      : adding one mask to previous context\n",
+" -MASK      : removing one mask to previous context\n",
+" *PROCESS   : user-process creation\n",
+" *PGROUP    : process group creation\n",
+" +PROCESS   : adding process to previous process group\n",
+" *PRIV      : privilege creation\n",
+" *DATA      : data group creation\n",
+" *MASK      : mask creation/update\n",
+" !MASK      : mask deletion\n",
+" *ENTITY    : entity ACI creation/update\n",
+" +FILTER    : adding filter to entity\n",
+" *ATTR      : attribute ACI creation/update\n",
+" +ACI       : creating operation ACI from previous attribute\n",
+" +VALUE     : adding authorized value to previous attribute\n",
+"Lines starting with // are considered as comments.";
+POSImp_HELP_LANG_SYNTAX = "[Language syntax]\n\n",
+" *MODE      [ CHECK ]    [ REPLACE | NOREPLACE ]\n",
+" *DDL       [ GENERATE ] [ EXECUTE ]\n",
+" *SEPARATOR <single_character>\n",
+" *NULL      <string_for_unset_attribute>\n",
+" *PRJ       <id>, <parent_prj_id> [, <description>]\n",
+" *ORG       <id>, <parent_org_id> [,<name> [,<description> [,<address>]]]\n",
+" *PERSON    <id>, <org_id> [,<FirstName> [,<LastName> [,<phone> [,<address> [,<email>]]]]]\n",
+" +MANAGER   <org_id>\n",
+" *ROLE      <name>, <UNUSED> [, <parent_role> [,<description>]]\n",
+" *CTX       <role_id>, <org_id> [, <project_id>]\n",
+"               Note: default project is : DEFAULT\n",
+" -ALL       \n",
+" +PERSON    <id>\n",
+" -PERSON    <id>\n",
+" !PERSON    <id>\n",
+" !ROLE      <id>\n",
+" !ORG       <id>\n",
+" !PRJ       <id>\n",
+" !CTX       <role_id>.<org_id>.<project_id>\n",
+" +MASK      <name>\n",
+" -MASK      <name>\n",
+" *PROCESS   <appli>, <function>, [<command>], <data_group_required>\n",
+" *PGROUP    <name>   [,<description>]\n",
+" +PROCESS   <appli>, <function> [,<command>]\n",
+" *PRIV      <authorization>, <someone>, <process> [,<data_group>]\n",
+"              with: <authorization> : 0 (revoked), 1 (granted) or 99 (public)\n",
+"                    <someone>       : PERSON=<id>\n",
+"                                  or: ROLE=<id>\n",
+"                                  or: ORG=<id>\n",
+"                                  or: PRJ=<id>\n",
+"                                  or: CTX=<role_id> . <org_id> . <project_id>\n",
+"                    <process>       : PROCESS=<appl> . <function> . [<command>]\n",
+"                                  or: PROCESS_GROUP=<name>\n",
+"                    <data_group>    : <type> . <name>\n",
+" *DATA      <name>, <type> [,<description> [,<usage>]]";
+POSImp_HELP_LANG_SYNTAX2 = " *MASK      <name> [, <project> [,<description> ]]\n",
+" !MASK      <name> \n",
+" *ENTITY    <name>, <mask_name> [,<alias> ]\n",
+" +FILTER    <operation>, <data_group>\n",
+" *ATTR      <name>, <entity_aci>, <mandatory> [, <alias>\n",
+"            [, <group>[, <order>[, <sensitive>[, <authorized_required>[, <default_value>]]]]]]\n",
+"              with: <entity_aci> = <entity_name>.<mask_name>\n",
+"                    <mandatory>, <sensitive>, <authorized_required> = Y or N\n",
+"              note: <sensitive> and <group> are unused\n",
+" +ACI       <operation>[, <modifiable_flag>]\n",
+"              with: <operation> is CREATE, READ, WRITE, QUERY, EZQUERY, LIST or TREE\n",
+"                    <modifiable_flag> = Y, N or H (default: Y)\n",
+" +VALUE     <value>\n\n",
+"Note about mask attribute: a warning is raised when consistency failure occurs:\n",
+"  1.attribute is not existing (missing in metadata while the entity exists);\n",
+"  2.metadata attribute definition  | mask attribute definition\n",
+"    -------------------------------+------------------------------------------\n",
+"    Mandatory flag equals 'Yes'      but mask attribute Required flag = N\n",
+"    Visibility flag is not 'Public'  but some ACI have been defined\n",
+"    AccessMode is 'Read'             but CREATE/WRITE ACI's modifiable flag = Y\n",
+"  3.authorized required flag is set to Y, while no default value is defined\n";

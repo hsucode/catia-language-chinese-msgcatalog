@@ -1,0 +1,34 @@
+// COPYRIGHT DASSAULT SYSTEMES  
+//=============================================================================
+//
+// Untrim Command :
+//   Resource file for NLS purpose.
+//
+//=============================================================================
+//
+// Implementation Notes :
+//
+//=============================================================================
+//                                   
+//=============================================================================
+
+CATStCmdFeatUntrim.Title = "未修剪";
+
+CATStCmdFeatUntrim.SelectElem.Message = "選擇取消裁剪的元素";
+CATStCmdFeatUntrim.errorSharedGeom.Message = "一個或以上的元素無法執行未修剪 
+因為幾何元素未被數個單位分享. 
+Y您必須先使用分解命令.";
+CATStCmdFeatUntrim.InfiniteGeometry1.Message  = "幾何元素為無限狀態. 無法執行未修剪.";
+CATStCmdFeatUntrim.InfiniteGeometry.Message  = "底線幾何元素為無限狀態. 無法執行未修剪.
+將建立以圍繞盒為主的修剪曲面.";
+CATStCmdFeatUntrim.InfiniteGeometry2.Message = "部份底線幾何元素為無限狀態. 無法執行未修剪.
+將建立以圍繞盒為主的修剪曲面.";
+CATStCmdFeatUntrim.NotCompleteUntrim.Message = "底線幾何元素為無限狀態. 部份無法執行未修剪.
+將建立以圍繞盒為主的修剪曲面.";
+CATStCmdFeatUntrim.NotCompleteUntrim2.Message = "部份底線幾何元素為無限狀態. 部份無法執行未修剪.
+將建立以圍繞盒為主的修剪曲面.";
+ProgressTaskUI.Title = "未修剪";
+ProgressTaskUI.ObjectName = "未修剪 ";
+ProgressTaskUI.Comment = "未修剪拓墣";
+ProgressTaskUI.Generating = "產生次物件 ";
+ProgressTaskUI.On = " 範圍外 ";

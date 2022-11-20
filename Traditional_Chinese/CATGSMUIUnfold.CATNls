@@ -1,0 +1,109 @@
+//-----------------------------------------------------------------------------
+// COPYRIGHT DASSAULT SYSTEMES 2003
+//-----------------------------------------------------------------------------
+//
+//                   CATGSMUIUnfold
+//
+//-----------------------------------------------------------------------------
+
+// Command Title.
+// -------
+CATGSMUIUnfold.Title = "展開命令";
+CATGSMUIUnfold.UndoTitle = "清除要保留的元素";
+
+// States.
+// -------
+CATGSMUIUnfold.StateOfSurfaceToUnfold.Message = "選擇要展開的曲面.";
+CATGSMUIUnfold.StateOfOriginToUnfold.Message = "選擇要展開的原點.";
+CATGSMUIUnfold.StateOfDirectionToUnfold.Message = "選擇要展開的方向.";
+CATGSMUIUnfold.StateOfReferenceFaceToUnfold.Message = "選擇要展開的參考.";
+
+CATGSMUIUnfold.StateOfAcqTargetSurface.Message = "選擇目標平面.";
+CATGSMUIUnfold.StateOfTargetOrigin.Message = "選擇目標原點.";
+CATGSMUIUnfold.StateOfTargetDirection.Message = "選擇目標方向.";
+
+CATGSMUIUnfold.StateOfAcqSpecToTear.Message = "選擇要處理的邊線或曲線.";
+
+CATGSMUIUnfold.StateOfAcqSpecToTransfer.Message = "選擇要轉換的點或曲線.";
+// Representations.
+// ----------------
+CATGSMUIUnfold.Result.ShortHelp= "展開的結果";
+
+CATGSMUIUnfold.SurfaceToUnfold.Axis.Title= "參考";
+CATGSMUIUnfold.TargetPlane.Axis.Title= "目標";
+
+CATGSMUIUnfold.EdgeToTear.Request= "要處理的邊線";
+CATGSMUIUnfold.EdgeToTear.Diagnostic= "避免幾何無法產生, 將處理此邊線.";
+
+CATGSMUIUnfold.TransferedSpecifications.Request="轉換的點或曲線.";
+
+// Notifications.
+// ----------------
+CATGSMUIUnfold.ReplaceDimension.Title="無效更換元素.";
+CATGSMUIUnfold.ReplaceDimension.Message="更換元素必須含有相同尺寸.";
+
+CATGSMUIUnfold.InvalidEdgeToTear.Title="需處理邊線或曲線無效.";
+CATGSMUIUnfold.InvalidEdgeToTear.Message="需處理的邊線或曲線 /p1 無效.
+您要移除它嗎 ?";
+
+CATGSMUIUnfold.OriginNotOnSurface.Title="參考的原點無效.";
+CATGSMUIUnfold.OriginNotOnSurface.Message="所選點不在展開曲面上.";
+
+CATGSMUIUnfold.DirectionNotOnSurface.Title="參考的方向無效.";
+CATGSMUIUnfold.DirectionNotOnSurface.Message="所選方向不在展開曲面上.";
+
+CATGSMUIUnfold.DirectionNotContainsOrigin.Title="參考的方向無效.";
+CATGSMUIUnfold.DirectionNotContainsOrigin.Message="所選方向與所選原點未鏈結.";
+
+CATGSMUIUnfold.ReferenceFaceNotOnSurface.Title="參考修剪面無效.";
+CATGSMUIUnfold.ReferenceFaceNotOnSurface.Message="所選修剪面不在展開曲面上.";
+
+CATGSMUIUnfold.ReferenceFaceNotContainsOrigin.Title="參考修剪面無效.";
+CATGSMUIUnfold.ReferenceFaceNotContainsOrigin.Message="所選修剪面與所選原點未鏈結.";
+
+CATGSMUIUnfold.ReferenceFaceNotContainsDirection.Title="參考修剪面無效.";
+CATGSMUIUnfold.ReferenceFaceNotContainsDirection.Message="所選修剪面與所選方向未鏈結.";
+
+CATGSMUIUnfold.FixedSideNeeded.Title="無法決定參考方向.";
+CATGSMUIUnfold.FixedSideNeeded.Message="所選的參考方向依附在要處理的邊線上.
+請選擇修剪面來決定要保持固定的邊線側.";
+
+// Agents Title
+// ----------------
+CATGSMUIUnfold.AgentOfIndSurfaceToUnfold.UndoTitle = "指定要展開的曲面";
+CATGSMUIUnfold.AgentOfAcqSurfaceToUnfold.UndoTitle = "選擇要展開的曲面";
+CATGSMUIUnfold.AgentOfRemSurfaceToUnfold.UndoTitle = "清除要展開的曲面";
+
+CATGSMUIUnfold.AgentOfIndOriginToUnfold.UndoTitle = "指定參考的原點";
+CATGSMUIUnfold.AgentOfAcqOriginToUnfold.UndoTitle = "選擇參考的原點";
+CATGSMUIUnfold.AgentOfRemOriginToUnfold.UndoTitle = "清除參考的原點";
+
+CATGSMUIUnfold.AgentOfIndDirectionToUnfold.UndoTitle = "指定參考的方向";
+CATGSMUIUnfold.AgentOfAcqDirectionToUnfold.UndoTitle = "選擇參考的方向";
+CATGSMUIUnfold.AgentOfRemDirectionToUnfold.UndoTitle = "清除參考的方向";
+
+CATGSMUIUnfold.AgentOfIndReferenceFaceToUnfold.UndoTitle = "指定參考的修剪面";
+CATGSMUIUnfold.AgentOfAcqReferenceFaceToUnfold.UndoTitle = "選擇參考的修剪面";
+CATGSMUIUnfold.AgentOfRemReferenceFaceToUnfold.UndoTitle = "清除參考的修剪面";
+
+CATGSMUIUnfold.AgentOfIndTargetSurface.UndoTitle = "指定目標平面";
+CATGSMUIUnfold.AgentOfAcqTargetSurface.UndoTitle = "選擇目標平面";
+CATGSMUIUnfold.AgentOfRemTargetSurface.UndoTitle = "清除目標平面";
+
+CATGSMUIUnfold.AgentOfIndTargetOrigin.UndoTitle = "指定目標原點";
+CATGSMUIUnfold.AgentOfAcqTargetOrigin.UndoTitle = "選擇目標原點";
+CATGSMUIUnfold.AgentOfRemTargetOrigin.UndoTitle = "清除目標原點";
+
+CATGSMUIUnfold.AgentOfIndTargetDirection.UndoTitle = "指定目標方向";
+CATGSMUIUnfold.AgentOfAcqTargetDirection.UndoTitle = "選擇目標方向";
+CATGSMUIUnfold.AgentOfRemTargetDirection.UndoTitle = "清除目標方向";
+
+CATGSMUIUnfold.AgentOfIndSpecToTear.UndoTitle = "指定要處理的邊線";
+CATGSMUIUnfold.AgentOfAcqEdgeToTear.UndoTitle = "選擇要處理的邊線";
+CATGSMUIUnfold.AgentOfAcqCurveToTear.UndoTitle = "選擇要處理的曲線";
+CATGSMUIUnfold.AgentOfRemSpecToTear.UndoTitle = "清除要處理的邊線";
+
+CATGSMUIUnfold.AgentOfIndSpecToTransfer = "指定要轉換的曲線或點";
+CATGSMUIUnfold.AgentOfAcqSpecToTransfer = "選擇要轉換的曲線或點";
+CATGSMUIUnfold.AgentOfRemSpecToTransfer = "清除要轉換的曲線或點";
+CATGSMUIUnfold.AgentOfRepTypeOfTransfer = "修改轉換型式";

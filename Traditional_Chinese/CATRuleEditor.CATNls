@@ -1,0 +1,106 @@
+// COPYRIGHT DASSAULT SYSTEMES  1998
+//=============================================================================
+//
+// Catalog for rule editor or check editor functionalities
+//
+//=============================================================================
+// 02/04/98   Creation                                   P.Pavard
+//============================================================================
+
+//titres
+// * Title Dialog Box *
+CATRuleEditor.Solution.Rule.Title = "規則編輯器";
+CATRuleEditor.Solution.Check.Title = "檢查編輯器 ";
+CATRuleEditor.Solution.RuleSet.Title = "規則設定編輯器";
+
+CATRuleEditor.cProperties_.priority = "優先度";
+CATRuleEditor.cProperties_.solver = "解決方式";
+CATRuleEditor.cProperties_.inference = "干涉模式";
+CATRuleEditor.cProperties_.variables = "變數";
+
+// combo filtre
+CATRuleEditor.cSolver_.forward = "向前";
+CATRuleEditor.cSolver_.backward = "向後";
+CATRuleEditor.cSolver_.both = "同時";
+
+// combo filtre
+CATRuleEditor.cFiring_.single = "單一";
+CATRuleEditor.cFiring_.multiple = "多重";
+CATRuleEditor.cFiring_.unique = "唯一";
+
+//Bouton AddParameter
+CATRuleEditor.AddParameter = "增加參數";
+
+// Titre de la fenetre "New Parameter" ouverte par appui sur "Add Parameter"
+CATRuleEditor.NewParameter.Title = "新參數";
+
+// Titre du frame pour la partie Error log
+CATRuleEditor.ErrorLog.Title = "錯誤記錄";
+
+// Titre du frame pour la partie correcting method
+CATRuleEditor.CorrectingMethod.Title = "更正方式";
+
+// Titre du champ de commentaire pour la correction
+CATRuleEditor.CorrectComment.Title = "更正說明";
+
+// Titre de la case a cocher pour la correction automatique
+CATRuleEditor.AutomaticCorrect.Title = "自動更正";
+
+// combo pour la selection du type de methode de correction
+CATRuleEditor.FunctionName.Title = "VB 程式 ";
+CATRuleEditor.AdviseCorrection.Title = "建議更正";
+CATRuleEditor.URL.Title = "URL";
+CATRuleEditor.UserFuncName.Title = "使用者功能";
+
+// commentaire que l on insere dans l editor de methode de correction
+CATRuleEditor.FunctionName.Comment = "輸入您的功能名稱: functionname(firstarg,...)";
+CATRuleEditor.AdviseCorrection.Comment = "輸入您的修正";
+CATRuleEditor.URL.Comment = "輸入您的 URL 來建議使用者修正";
+
+// Titre du champ d'aide pour le report (3ieme onglet)
+CATRuleEditor.HelpReport.Title = "求助說明";
+
+//Les messages pour la state command
+CATRuleEditor.FirstStateMessage = "選擇最好或基本規則";
+CATRuleEditor.SecondStateMessage = "名稱和說明定義";
+CATRuleEditor.ProtectionStateMessage = "安全警告";
+
+// les messages pour le premier dialogue
+CATRuleEditor.NameOfRule = "規則名稱:";
+CATRuleEditor.NameOfCheck = "名稱檢查:";
+CATRuleEditor.NameOfRuleSet = "規則設定名稱:";
+CATRuleEditor.Rule = "規則 ";
+CATRuleEditor.Check = "檢查 ";
+CATRuleEditor.RuleSet = "規則設定 ";
+
+// message d erreur lorsque il y a une erreur de parse en sortie de
+// l editeur de regle ou check
+CATRuleEditor.RuleParseError="規則中文法錯誤. \n 請檢查錯誤記錄以獲得進一步解釋";
+CATRuleEditor.CheckParseError="檢查中文法錯誤. \n 請檢查錯誤記錄以獲得進一步解釋";
+CATRuleEditor.ParseErrorExit=" 您確定要退出嗎? ";
+
+// les trois onglets de l editeur de check
+CATRuleEditor.ConditionTab.Title="狀況";
+CATRuleEditor.CorrectionTab.Title="更正";
+CATRuleEditor.ReportTab.Title="報告";
+
+// message d erreur pour un nom de composant qui existe deja
+CATRuleEditor.ErrorMessage= "專家分件 /p  已存在. 您要更換它嗎 ? ";
+CATRuleEditor.ErrorMessageTitle= " 錯誤 ";
+
+// message d erreur pour un composant qui est protege
+CATRuleEditor.ErrorProtection= "專家分件 /p  受保護. \n 您無法在它之下建立新的專家分件.";
+CATRuleEditor.ErrorProtectionTitle= " 安全警告 ";
+
+// message d erreur pour un composant qui est protege
+CATRuleEditor.EditProtection= "專家分件 /p  受保護. \n 不允許您編輯它.";
+
+// wizard
+CATRuleEditor.Wizard=" 物件瀏覽器... ";
+
+// Language label and type
+CATRuleEditor.LanguageLabel = "語言 :";
+CATRuleEditor.LanguageType.KWELanguage = "KWE 語言";
+CATRuleEditor.LanguageType.KWEComplexLanguage = "KWE 進階語言";
+CATRuleEditor.LanguageType.VBLanguage = "Visual Basic";
+

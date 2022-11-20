@@ -1,0 +1,25 @@
+//*-------------------------*//
+//* CATSystemError messages *//
+//*-------------------------*//
+ERR_CATSysSIGFPE_131073  = "算術的例外情況: 除數為零或溢位 / underflow";
+ERR_CATSysSIGBUS_131074  = "不匹配(Unaligned)記憶體存取";
+ERR_CATSysSIGSEGV_131075 = "記憶體存取違法(violation)";
+ERR_CATSysSIGILL_131076  = "不合法的用法說明"; 
+ERR_CATSysError_0001     = "未定義的錯誤"; 
+ERR_CATSysSTACKOV_131077 = "堆疊溢位";
+ERR_CATSysPRIVINS_131078 = "特權指令呼叫有無效的模式";
+ERR_CATSysPAGEERR_131079 = "Page-in  存取錯誤";
+ERR_CATSysNONCONT_131080 = "非可繼續的例外情況";
+ERR_CATSysINVDISP_131081 = "無效配置";
+ERR_CATSysARREXCD_131082 = "陣列結合(bound)超出";
+ERR_CATSysNoMEMRY_131083 = "沒有更多的記憶體";
+ERR_CATSysMEMCORR_131084 = "發現大量的 corruption";
+CATSysFatalERR_000001.Request = "Assertion failed:/p1在檔案 /p2 行數 /p3";
+CATSysFatalERR_000002 = "嚴重的內部錯誤";
+CATSysMemoryWng_132001 = "警告: 記憶體限制超過. \n 建議 : 請嚐試儲存資料並重新開 CATIA.";
+CATSysMemoryWng_132002 = "警告: 記憶體框架超過.\n 建議 : 請嚐試儲存資料並重新開 CATIA.";
+CATSysMemoryWng_132003 = "V5 記憶體管理警告";
+CATSysMemoryWng_132004 = "警告 : 偵測到記憶體不足";
+CATSysMemoryWng_132005 = "警告 : 偵測到記憶體位址不足";
+CATSysMemoryWng_132021 = "警告: 偵測到記憶體佔據位址已達 /p1 百分比,並超過警告限制 (/p2) \n 建議 : 請嚐試儲存資料並重新開啟 CATIA.";
+CATSysMemoryWng_132022 = "警告: 偵測到記憶體佔據框架已達 /p1 百分比,並超過警告限制(/p2). \n 記憶體使用達 /p3 百分比. \n 建議 : 請嚐試儲存資料並重新開啟 CATIA.";

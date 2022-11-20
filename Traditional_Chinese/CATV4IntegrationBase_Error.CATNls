@@ -1,0 +1,100 @@
+// -----------------
+//  ENGLISH VERSION
+// -----------------
+//  BATCH MIGRATION Error Messages
+// --------------------------------
+
+Migration.OpenKO = "文件不能閱讀" ;
+Migration.NoResult = "這個文件的更新沒有結果" ;
+Migration.UnableToFind = "無法找到文件" ;
+Migration.SaveKO = "無法儲存文件" ;
+Migration.AnalyseKO = "分析階段時發生錯誤" ;
+
+//  Messages divers
+// -----------------
+Migration.modeAnalyse = "解析 : " ;
+Migration.modeMigration = "溶合 : " ;
+
+Migration.msg_001= "產生 cgr 檔案將至輸出目錄";
+Migration.msg_002= "實體 Exact";
+Migration.msg_003= "實體 Exact Smart";
+//  Load session errors
+// ---------------------
+ERR_01 = "無法載入工作" ;
+
+//  Migration Errors
+// ------------------
+MigrationERR_001 = "記憶體定位錯誤" ;
+MigrationERR_002 = "為模型 /p
+多重模型相依分析結果 KO" ;
+
+//  Migration Mapping
+// -------------------
+Migration.Mapping.Found = "找到 V4 鏈結 : 找到對映檔案" ;
+Migration.Mapping.NotFound = "找到 V4 鏈結 : 未找到對映檔案" ;
+Migration.Mapping.Conflict = "超過一個以上檔案與指向檔案相同: " ;
+//  CATV4ToV5 command line
+// ------------------------
+CATV4ToV5ERR_001 = "*** 無效命令 ***" ;
+CATV4ToV5ERR_002 = "無法同時使用 -il 和 -if 參數" ;
+CATV4ToV5ERR_003 = "重覆定義參數" ;
+CATV4ToV5ERR_004 = "無法存取 -if 參數檔案" ;
+CATV4ToV5ERR_005 = "目標目錄重覆定義" ;
+CATV4ToV5ERR_006 = "未知參數" ;
+CATV4ToV5ERR_007 = "報告檔案重覆定義" ;
+CATV4ToV5ERR_008 = "無法建立報告檔案, 將使用標準輸出" ;
+CATV4ToV5ERR_009 = "此兩參數 ( -il / -if ) 是主要的" ;
+CATV4ToV5ERR_010 = "*** 此文件形式 /p ***
+無法以此功能升級" ;
+CATV4ToV5ERR_011 = "*** 升級分析階段失敗 ***" ;
+CATV4ToV5ERR_012 = "升級報告" ;
+CATV4ToV5ERR_013 = "建立報告時失敗" ;
+CATV4ToV5ERR_014 = "無效 -如果是參數的檔案" ;
+CATV4ToV5ERR_015 = "XML 檔案未定義" ;
+CATV4ToV5ERR_016 = "請注意: -if 選項需要文字檔案 (.txt) " ;
+CATV4ToV5ERR_017 = "部份升級: 指向問題 " ;
+CATV4ToV5ERR_018 = "*** 未授權命令 *** 無效授權" ;
+
+//  Migration Reports
+// -------------------
+MigrationReport.OptionList = "升級選項清單" ;
+
+MigrationReport.Level = "CATIA 版本 : V5 " ;
+
+MigrationReport.Spec = "如指定升級" ;
+MigrationReport.Result = "如結果升級" ;
+
+MigrationReport.SpaceDraw = "3D 和 2D 升級" ;
+MigrationReport.Space = "只有 3D 升級" ;
+MigrationReport.Draw = "只有 2D 升級" ;
+
+MigrationReport.PartSet = "零件定義為 : 一個零件一個幾何組" ;
+MigrationReport.PartSolide = "零件定義為 : 一個零件一個實體" ;
+
+MigrationReport.TargetDir = "輸出目錄 = " ;
+MigrationReport.TargetDirNone = "未定義輸出目錄" ;
+
+MigrationReport.MigrationInterface = "定義升級界面為 " ;
+MigrationReport.MasterAppli = "定義主要應用程式為為 " ;
+
+MigrationReport.DesignMode = "在設計模式間交換" ;
+
+MigrationReport.Openlight = "因啟動基本模式以致僅升級 3D " ;
+
+MigrationReport.Mockup = "獨立實體模型升級為 ";
+
+MigrationReport.SetDitto =		"結構元素: 幾何組和 Ditto" ;
+MigrationReport.SolidSetDitto = "結構元素: 實體和幾何組和 Ditto" ;
+MigrationReport.Solid =			"結構元素: 實體" ;
+MigrationReport.Layer =			"結構元素: 圖層" ;
+MigrationReport.Set =			"結構元素: 幾何組" ;
+MigrationReport.Ditto =			"結構元素: Ditto" ;
+MigrationReport.LayerSolid =	"結構元素: 圖層和實體" ;
+MigrationReport.SolidDitto =	"結構元素: 實體和 Ditto" ;
+MigrationReport.SolidSet =		"結構元素: 實體和幾何組" ;
+
+MigrationReport.Nada = "無結構元素" ;
+
+MigrationReport.UUIDCheck0="報告名稱衝突:"; 
+MigrationReport.UUIDCheck= "衝突"; 
+

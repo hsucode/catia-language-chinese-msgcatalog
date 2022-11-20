@@ -1,0 +1,73 @@
+//=============================================================================
+//                                     CNEXT - CXR5
+//                          COPYRIGHT DASSAULT SYSTEMES 2004 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATEduElecCableDBExporterCmd.CATNls
+// FRAMEWORK   :    CATEduUI
+// AUTHOR      :    ehh
+// DATE        :    September 2004
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Plant Ship Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//------------------------------------------------------------------------------
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// DialogEngine state prompts 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATEduElecCableDBExporterCmd.SelectWPToExportState.Message = "Select work packages to export into electrical cable database (from panel)";
+CATEduElecCableDBExporterCmd.DisplayExportResultsState.Message = "Select CLOSE or View report";
+CATEduElecCableDBExporterCmd.ViewReportState.Message = "Select CLOSE or Save As when finished viewing report";
+CATEduElecCableDBExporterCmd.SaveReportState.Message = "Select directory to save report to";
+
+NoDBConnectionText="You are disconnected from the database.  Please reconnect before using this command.";
+NoElecWPText="No electrical work packages were found.";
+CommandTitle="Electrical Cable Database Export"; 
+NoWpSelectedText="Please select one or more work packages to export";
+
+ExportResultsTitle = "Export Results Summary";
+ExportResultsText = "/P1 of /P2 work packages successfully exported.";
+
+ExportReportTitle = "Electrical Cable Database Export Report";
+ExportReportDate = "Date:  /P1";
+ExportReportTime = "Time:  /P1";
+ExportReportBodyTitle = "Work Packages Processed";
+ExportReportSuccessfulWP = "'/P1'  EXPORT SUCCESSFUL";
+ExportReportFailedWP = "'/P1'  EXPORT FAILED";
+ExportReportObjectLevelError = "Processing error for object '/P1': /P2";
+ExportReportWPLevelError = "Work package processing error: /P1";
+ExportReportWPLevelWarning = "Work package processing warning: /P1";
+ExportReportInternalError = "Internal error: /P1";
+
+ProgressTaskUI.Title = "Exporting work packages into database";
+//ProgressTaskUI.ObjectName = "Electrical Cable Database";
+//ProgressTaskUI.Comment = "Processing work packages";
+ProgressTaskUI.CommentRuntime = "Processing work package /P1 of /P2";
+
+EduExportERR_0001.Request = "Loading document";
+EduExportERR_0001.Diagnostic = "Document could not be loaded into the session";
+EduExportERR_0001.Advice = "Please notify data base adminstrator";
+EduExportERR_0002.Request = "Removing document";
+EduExportERR_0002.Diagnostic = "Document could not be removed from the session";
+EduExportERR_0002.Advice = "Please notify data base adminstrator";
+EduExportERR_0003.Request = "Putting work package data";
+EduExportERR_0003.Diagnostic = "Failed to create a work package record in the database";
+EduExportERR_0003.Advice = "Please notify data base adminstrator";
+EduExportERR_0004.Request = "Saving work package data";
+EduExportERR_0004.Diagnostic = "Failed to save data in the database.";
+EduExportERR_0004.Advice = "Please notify data base adminstrator";
+EduExportERR_0005.Request = "Saving work package data";
+EduExportERR_0005.Diagnostic = "Failed to save data in the database: /P1";
+EduExportERR_0005.Advice = "Please notify data base adminstrator";
+EduExportERR_0006.Request = "Ending put work package data";
+EduExportERR_0006.Diagnostic = "Failed to finish processing the work package record in the database";
+EduExportERR_0006.Advice = "Please notify data base adminstrator";
+EduExportERR_0007.Request = "Putting work package data or ending put work package data";
+EduExportERR_0007.Diagnostic = "Failed to create or finish processing the work package record in the database: /P1";
+EduExportERR_0007.Advice = "Please notify data base adminstrator";

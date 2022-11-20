@@ -1,0 +1,26 @@
+//-------------------------------------------------------------------------
+// Resource file for CATPrintSVGDialog
+// nsi - feb 2005
+//-------------------------------------------------------------------------
+Title = "進階組態";
+ImageStorageFrame.Title = "圖像";
+ImageStorageFrame.ImageStorageLabel.Title = "圖像儲存    ";
+ImageStorageExternal = "外部檔案";
+ImageStorageEmbed = "在 SVG 中插入";
+
+FontFrame.Title = "文字著色";
+FontFrame.TextLabel.Title = "文字            ";
+TextTesselation = "貼圖文字";
+TextUseSystemFont = "使用系統字型";
+
+ImageStorageFrame.ShortHelp = "在 SVG 中定義圖像儲存模式";
+ImageStorageFrame.Help = "If set to External File, the bitmaps are saved in external files, otherwise the bitmaps are saved in SVG file with base64 encoding.";
+ImageStorageFrame.LongHelp = "If set to External File, the bitmaps are saved in external files, otherwise the bitmaps are saved in SVG file with base64 encoding.";
+
+FontFrame.TextTesselation.ShortHelp = "定義文字著色模色";
+FontFrame.TextTesselation.Help = "If set to Tesselated Text, the texts are tesselated, otherwise they are rendered as text, the fonts should be installed on the computer.";
+FontFrame.TextTesselation.LongHelp = "If set to Tesselated Text, the texts are tesselated, otherwise they are rendered as text, the fonts should be installed on the computer.";
+
+FontFrame.SVGFontDialog.ShortHelp = "依據字型定義文字著色模色";
+FontFrame.SVGFontDialog.Help = "For a given font, the text could be tesselated, or it could reference the font or it could reference a sustituted font.";
+FontFrame.SVGFontDialog.LongHelp = "For a given font, the text could be tesselated, or it could reference the font or it could reference a sustituted font.";

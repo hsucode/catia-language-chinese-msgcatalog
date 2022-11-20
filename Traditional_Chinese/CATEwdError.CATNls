@@ -1,0 +1,90 @@
+Title = "命令取消";
+Message = "命令中產生無法回復的錯誤";
+Request	= "需求:";
+Diagnostic = "偵錯:";
+Advice = "建議:";
+
+RoutingError.Request    = "製程訊號";
+RoutingError.Diagnostic = "製程中產生無法回復的錯誤";
+RoutingError.Advice     = "請確定工作已完成";
+
+AllocationError.Request    = "記憶體定位";
+AllocationError.Diagnostic = "記憶體定位失敗, 可能超過大小";
+AllocationError.Advice     = "增加記憶體";
+
+InternalError.Request    = "存取內部資料";
+InternalError.Diagnostic = "傳回?數值";
+InternalError.Advice     = "請確定安裝是正確的";
+
+CompatibilitySyntaxError.Request    = "從檔案讀取相容表";
+CompatibilitySyntaxError.Diagnostic = "檔案語法正確";
+CompatibilitySyntaxError.Advice     = "檢查相容檔案";
+
+NoNetworkFound.Request    = "尋找線束製程";
+NoNetworkFound.Diagnostic = "未找到線束製程";
+NoNetworkFound.Advice     = "確定工作已完成";
+
+ExportError.Request    = "從線束輸出線";
+ExportError.Diagnostic = "線或線束性質無法取出";
+ExportError.Advice     = "確定工作已完成";
+
+ExportFileError.Request    = "從線束輸出線";
+ExportFileError.Diagnostic = "無法建立檔案";
+ExportFileError.Advice     = "檢查檔案名稱或碟空間";
+
+UnresolvedGeoBundles.Request    = "尋找 GBN";
+UnresolvedGeoBundles.Diagnostic = "無法找到要的 GBN";
+UnresolvedGeoBundles.Advice     = "確定工作已完成";
+
+PropertiesError.Request    = "掃描線性質";
+PropertiesError.Diagnostic = "無法找到線性質";
+PropertiesError.Advice     = "確定工作已完成";
+
+ContextNotFound.Request    = "開始目前右鍵內容";
+ContextNotFound.Diagnostic = "無法找到訊號或起動產品";
+ContextNotFound.Advice     = "檢查找到的訊號及起動產品";
+
+WireNotCreated.Request    = "建立線";
+WireNotCreated.Diagnostic = "一個未處理的錯誤發生";
+WireNotCreated.Advice     = "檢查右鍵內容, 檢查工作是否完成";
+
+WireCnxNotEditable.Request    = "嚐試編輯線連接";
+WireCnxNotEditable.Diagnostic = "無法存取元件性質";
+WireCnxNotEditable.Advice     = "確定工作已完成";
+
+BundleCreationFailed.Request    = "建立線束";
+BundleCreationFailed.Diagnostic = "一個未處理的錯誤發生";
+BundleCreationFailed.Advice     = "確定您可在此建立線束";
+
+GraphCorrupted.Request    = "存取製程網路";
+GraphCorrupted.Diagnostic = "一個未處理的錯誤發生";
+GraphCorrupted.Advice     = "退出命令再重試";
+
+IncorectExtremity.Request    = "增加極限至假訊號";
+IncorectExtremity.Diagnostic = "一個未處理的錯誤發生";
+IncorectExtremity.Advice     = "退出命令再重試";
+
+NetworkError.Request    = "在網路中接續連接";
+NetworkError.Diagnostic = "一個元件無法找到";
+NetworkError.Advice     = "確定工作已完成";
+
+ReconcileFailed.Request    = "和解元件";
+ReconcileFailed.Diagnostic = "和解操作失敗";
+ReconcileFailed.Advice     = "和解操作失敗";
+
+CannotModifyRoute.Request    = "修正線製程";
+CannotModifyRoute.Diagnostic = "發生一個模型錯誤";
+CannotModifyRoute.Advice     = "確定工作已完成";
+
+SplitError.Request    = "分離線連接";
+SplitError.Diagnostic = "發生一個模型錯誤";
+SplitError.Advice     = "確定工作已完成";
+
+NoSignalLinked.Request    = "尋找線訊號";
+NoSignalLinked.Diagnostic = "未找到連接訊號";
+NoSignalLinked.Advice     = "確定工作已完成";
+
+WireCnxNotCreated.Request    = "建立線連接";
+WireCnxNotCreated.Diagnostic = "發生未處理錯誤";
+WireCnxNotCreated.Advice     = "檢查選擇";
+

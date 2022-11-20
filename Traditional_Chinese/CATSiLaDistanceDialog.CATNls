@@ -1,0 +1,144 @@
+Title                    = "編輯距離和寬帶分析";
+TitleP1					 = "距離編輯";
+
+DistanceEdition.Title    = "定義";
+DistanceEdition.LongHelp = "讓您定義要檢查的計算形式 (距離或寬帶) 及您要計算的選擇";
+Frame.Title              = "結果";
+
+tab.page1.Title      = "定義";
+tab.page2.Title      = "結果";
+
+LType.Title          = "形式:";
+LType.LongHelp       = "指出計算形式: \n   - 最小 \n   - 沿著 (X, Y, Z) 方向. 結果是沿著方向的距離 \n   - 寬帶分析";
+
+DistMin.Title		 = "最小距離:" ;
+DistMin.LongHelp	 = "指出寬帶分析的最小距離" ;
+DistMax.Title		 = "最大距離:" ;
+DistMax.LongHelp	 = "指出寬帶分析的最大距離" ;
+LengthAccuracy.Title = "精確度:" ;
+LengthAccuracy.LongHelp = "定義三角形的最小長度" ;
+
+MinEd.LongHelp       = "指出寬帶分析的最小距離" ;
+MaxEd.LongHelp       = "指出寬帶分析的最大距離" ;
+tempFrame.LengthAccuracyEd.LongHelp       = "定義三角形的最小長度" ;
+
+Type.Mini            = "最小";
+Mini.Title           = "最小";
+Type.AlongX          = "沿 X";
+Type.AlongY          = "沿 Y";
+Type.AlongZ          = "沿 Z";
+Type.Fitcheck		 = "寬帶分析";
+Type.AlongV          = "向量定義";
+
+Mode.MultiLists      = "選擇之間";
+Mode.Inside          = "一選擇內";
+Mode.Outside         = "選擇全部";
+
+undef                = "未定義";
+Frame.LDist.Title    = "距離";
+Frame.LD.Title       = "增量";
+Frame.LDX.Title      = "X ";
+Frame.LDY.Title      = "Y ";
+Frame.LDZ.Title      = "Z ";
+Frame.L1.Title       = "點1";
+Frame.L1X.Title      = "X ";
+Frame.L1Y.Title      = "Y ";
+Frame.L1Z.Title      = "Z ";
+Frame.L2.Title       = "點 2";
+Frame.L2X.Title      = "X ";
+Frame.L2Y.Title      = "Y ";
+Frame.L2Z.Title      = "Z ";
+
+Frame.L1Name.Title   = "點 1 上";
+Frame.L2Name.Title   = "點 2 上";
+
+FrameVisu.Title = "視圖過濾器" ;
+
+FrameVisu.FrameGenSel1.Title = "選擇第一結果顯示" ;
+//FrameVisu.FrameGenSel1.LongHelp = "所選第一分件相關結果顯示" ;
+FrameVisu.FrameGenSel1.LongHelp = "定義選擇一的分件結果如何顯示" ;
+FrameVisu.FrameGenSel2.Title = "其他選擇結果顯示" ;
+//FrameVisu.FrameGenSel2.LongHelp = "它相關於表列二分件與選擇一的計算比較結果 :\n  
+//- 兩選擇模式間相關於選擇二 \n  
+//- 相關一組元素在其中之一選擇模式的最小距離 \n  
+//- 在 全部除了選擇外 的每一分件減去 選擇一 ";
+FrameVisu.FrameGenSel2.LongHelp = "定義相對選擇一的分件結果如何顯示 /n  - 在選擇模式間, 相關選擇二間 /n  - 在其一選擇內, 相關於兩分件間的最小距離量測 /n  - 在相對所有模式, 相對不在選擇一的所有文件" ;
+FrameVisu.FrameGenSel1.FrameMaxL.Title = "綠色" ;
+FrameVisu.FrameGenSel1.FrameMaxL.LongHelp = "定義相關綠色結果選擇一的顯示模式: \n 顯示 \n 不顯示 \n 透明" ;
+//Defines the visualization mode of the green result corresponding to the selection 1:\n Show\n Hide\n Transparent" ;
+FrameVisu.FrameGenSel1.FrameMaxL.MaxLS.Title =  "顯示                " ;
+FrameVisu.FrameGenSel1.FrameMaxL.MaxLNS.Title = "不顯示          " ;
+FrameVisu.FrameGenSel1.FrameMaxL.MaxLLL.Title = "透明" ;
+FrameVisu.FrameGenSel1.FrameMinL.Title = "紅色" ;
+FrameVisu.FrameGenSel1.FrameMinL.LongHelp =  "定義相關紅色結果選擇一的顯示模式: \n 顯示 \n 不顯示 \n 透明" ;
+//Defines the visualization mode of the red result corresponding to the selection 1:\n Show\n Hide\n Transparent" ;
+FrameVisu.FrameGenSel1.FrameMinL.MinLS.Title = "顯示                " ;
+FrameVisu.FrameGenSel1.FrameMinL.MinLNS.Title = "不顯示          " ;
+FrameVisu.FrameGenSel1.FrameMinL.MinLLL.Title = "透明" ;
+FrameVisu.FrameGenSel2.FrameMinR.Title = "紅色" ;
+FrameVisu.FrameGenSel2.FrameMinR.LongHelp =  "定義相關紅色結果選擇二的顯示模式: \n 顯示 \n 不顯示 \n 透明" ;
+
+//Defines the visualization mode of the red result corresponding to the selection 2:\n Show\n Hide\n Transparent" ;
+FrameVisu.FrameGenSel2.FrameMinR.MinRS.Title =  "顯示                " ;
+FrameVisu.FrameGenSel2.FrameMinR.MinRNS.Title = "不顯示          " ;
+FrameVisu.FrameGenSel2.FrameMinR.MinRLL.Title = "透明" ;
+FrameVisu.FrameGenSel2.FrameMaxR.Title = "綠色" ;
+FrameVisu.FrameGenSel2.FrameMaxR.LongHelp = "定義相關綠色結果選擇二的顯示模式: \n 顯示 \n 不顯示 \n 透明" ;
+//Defines the visualization mode of the green result corresponding to the selection 2:\n Show\n Hide\n Transparent" ;
+FrameVisu.FrameGenSel2.FrameMaxR.MaxRS.Title ="顯示                " ;
+FrameVisu.FrameGenSel2.FrameMaxR.MaxRNS.Title = "不顯示          " ;
+FrameVisu.FrameGenSel2.FrameMaxR.MaxRLL.Title = "透明" ;
+
+FrameVisu.FilterVisuBut.Title = "應用過濾器" ;
+FrameVisu.FilterVisuBut.Help = "應用顯示過濾器至目前結果" ;
+FrameVisu.FilterVisuBut.LongHelp = "應用顯示過濾器至目前結果" ;
+
+FrameVisu.ComboVisuGeomFrame.Title = "產品組" ;
+FrameVisu.ComboVisuGeomFrame.Help = "按一下結果視窗來存取此命令" ;
+FrameVisu.ComboVisuGeomFrame.LongHelp = "按一下結果視窗來存取此命令. \n 讓您定義要看所選產品的那一部份";
+
+FrameVisu.ComboVisuGeometry.Title = "產品顯示:" ;
+FrameVisu.ComboVisuGeometry.Help = "按一下結果視窗來存取此命令" ;
+FrameVisu.ComboVisuGeometry.LongHelp = "按一下結果視窗來存取此命令. \n 讓您定義要看所選產品的那一部份";
+
+FrameVisu.ComboVisuGeomFrame.ComboVisuGeometry.ShowShow = "顯示或顯示";
+FrameVisu.ComboVisuGeomFrame.ComboVisuGeometry.ShowNoshow = "顯示或不顯示";
+FrameVisu.ComboVisuGeomFrame.ComboVisuGeometry.ShowLowlight = "顯示或暗光";
+FrameVisu.ComboVisuGeomFrame.ComboVisuGeometry.NoshowShow = "不顯示或顯示";
+FrameVisu.ComboVisuGeomFrame.ComboVisuGeometry.NoshowNoshow = "不顯示或不顯示";
+FrameVisu.ComboVisuGeomFrame.ComboVisuGeometry.NoshowLowlight = "不顯示或暗光";
+FrameVisu.ComboVisuGeomFrame.ComboVisuGeometry.LowlightShow = "暗光或顯示";
+FrameVisu.ComboVisuGeomFrame.ComboVisuGeometry.LowlightNoshow = "暗光或不顯示";
+FrameVisu.ComboVisuGeomFrame.ComboVisuGeometry.LowlightLowlight = "暗光或暗光";
+  
+ToolBar.Title             = "距離工具";
+ToolBar.Viewer.Title      = "結果視窗";
+ToolBar.Viewer.ShortHelp  = "結果視窗";
+ToolBar.Viewer.Help       = "開啟/關閉新結果視窗";
+ToolBar.Viewer.LongHelp   = "結果視窗 \n 關閉新結果視窗";
+
+ToolBar.Reframe.Title     = "重設視窗";
+ToolBar.Reframe.ShortHelp = "以距離重設視窗";
+ToolBar.Reframe.Help      = "重設視窗";
+ToolBar.Reframe.LongHelp  = "重設視窗 \n 將結果顯示在結果視窗的可用區域上";
+
+//Progress bar
+
+ProgressTaskUI.Title       = "計算中 ...";
+ProgressTaskUI.ObjectName  = "弧道分析";
+ProgressTaskUI.Comment     = "步驟 1 : 曲面分析";
+
+//integration de la toolbar dans le panel de Distance et BA
+
+tempFrame.ViewerSec.Title      = "結果視窗";
+tempFrame.ViewerSec.ShortHelp  = "結果視窗";
+tempFrame.ViewerSec.Help       = "開啟或關閉新結果視窗";
+tempFrame.ViewerSec.LongHelp   = "結果視窗 \n 開啟或關閉新結果視窗";
+
+tempFrame.PublishDistance.LongHelp    = "距離發行 \n 發行距離成  .xml 檔案";
+tempFrame.PublishDistance.ShortHelp   = "輸出成";
+tempFrame.PublishDistance.Title       = "輸出到";
+
+
+
+DistanceInLCAAndReview = "當未授權連接至 VPM V5 時的內部檢視距離. \n 請關閉您的 DMU 檢視.";

@@ -1,0 +1,29 @@
+CATEhiSplitMultipleBranchableCmd.SelectSingleBranchableState.Message = "Select a branch to transfer";
+
+CATEhiSplitMultipleBranchableCmd.AutomaticSelectState.Message = "Select a branch";
+
+CATEhiSplitMultipleBranchableCmd.SelectOutputMBNSState.Message = "Select in the graph tree the destination Multi-Branchable Bundle Segment document";
+
+CATEhiSplitMultipleBranchableCmd.SelectOtherGBNState.Message = "Select in the graph tree the destination geometrical bundle";
+
+GBNNotLinkedToTheSameEBN = "Selected geometrical bundle is not linked to the same electrical bundle as the one linked to the initial geometrical bundle";
+BranchableNotLinkedToTheSameEBN = "Selected branch is associated to a geometrical bundle not linked to the same electrical bundle as the one linked to the initial geometrical bundle";
+MultiBranchableNotLinkedToTheSameEBN = "Selected Multi-Branchable Bundle Segment document is associated to a geometrical bundle not linked to the same electrical bundle as the one linked to the initial geometrical bundle";
+BranchableAlreadySelected = "Branch already selected";
+BranchableNotInSameMultiBranchable = "Branch not in same document";
+LastBranchableNotSelectable = "This branch is the last branch of its document not already selected for transfer.";
+BranchableLinkedToAnEBNNotTheGBN = "The destination geometrical bundle is not linked to an electrical bundle whereas the geometrical bundle of the selected branchable is.";
+MultiBranchableNotSelectableMatrix = "Multi-Branchable does not have same position matrix as origin Multi-Branchable";
+
+UpdatePtCycleWarning.Title = "Update cycle";
+UpdatePtCycleWarning.Text = "The point /P1 is involved in an update cycle after transfer simulation. So, it is replaced by an explicit point.";
+
+UpdateTgteCycleWarning.Title = "Update cycle";
+UpdateTgteCycleWarning.Text = "The curve /P1 is involved in an update cycle after transfer simulation. So, the tangency is not kept.";
+
+SaveWarning.Title = "Save problem";
+SaveWarning.Text = "Some documents of the session are not saved. Please save all the documents with 'Save Management' before using the transfer function";
+
+ContextWarning.Title = "Context problem";
+ContextWarning.Text = "Tangency constraints between transfered and non-transfered Branchables have been copied without link as the destination Geometrical Bundle is out of the original Multi-Branchable document context";
+

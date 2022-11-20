@@ -1,0 +1,279 @@
+//NLS-ENGLISH VERSION
+//=======================================================================
+// MODULE : CATIAModelEditor
+//=======================================================================
+//
+//-----------------------------------------------
+//  Messages from CATLibAdhesion
+//-----------------------------------------------
+CATLibAdhesion.ErrorMessage="作業系統無法讀取文件";
+//-----------------------------------------------
+//  Messages from CATLibObjExt
+//-----------------------------------------------
+CATLibObjExt.ErrorMessage="文件無法讀取";
+//-----------------------------------------------
+//  Messages from CATLibNode
+//-----------------------------------------------
+CATLibNode.MessageDRAW="無法打開 DRAW DETAIL";
+CATLibNode.MessageSYMBOL="無法打開 SYMBOL";
+CATLibNode.MessageSECTION="無法打開 SECTION";
+CATLibNode.MessageNCLATHE="無法打開 NC LATHE TOOL";
+CATLibNode.MessageNCMILL="無法打開 NC MILL TOOL";
+CATLibNode.MessageInconnu="無法打開此資料結構";
+//-----------------------------------------------------------
+//  Messages from CATLibSearchKwd, CATLibShow, CATLibFamExt
+//-----------------------------------------------------------
+CATLibKwd.unval.Label="Unval";
+CATLibKwd.true.Label="真實";
+CATLibKwd.false.Label="假造";
+//----------------------------------------
+//  Messages from CATLibCtxMenu
+//----------------------------------------
+CATLibCtxMenu.MessageSPACESECTION=
+"Cannot open a SPACE DETAIL referencing at least a SECTION";
+CATLibCtxMenu.MessagePartialConvert=
+"Conversion of detail not or partially processed";
+CATLibCtxMenu.open.Title="開啟...";
+CATLibCtxMenu.show.Title="顯示關鍵字...";
+CATLibCtxMenu.convertAsSpec.Title="根據規範轉換文件...";
+CATLibCtxMenu.convertAsResult.Title="如結果轉換文件...";
+CATLibCtxMenu.filter_FAM.Title="過濾器...";
+CATLibCtxMenu.filter_LIB.Title="過濾器...";
+CATLibCtxMenu.KeywordShow.Title="/p1's 關鍵字";
+CATLibCtxMenu.KeywordFilter.Title="家族搜尋: ";
+//--------------------------------------
+//  Messages from CATMdlCtxMenu
+//--------------------------------------
+CATMdlCtxMenu.ShowItem.Title="顯示";
+//--------------------------------------
+//  Messages from CATMdlAdhesion
+//--------------------------------------
+CATMdlAdhesion.Title="警告";
+CATMdlAdhesion.Message1="Model : ";
+CATMdlAdhesion.Message2="與project 檔案產生衝突 : ";
+CATMdlAdhesion.Message3="因Project檔案與此檔案相關: ";
+CATMdlAdhesion.Message4="您仍要執行嗎?";
+//--------------------------------------
+//  Messages from CATLibSearch
+//--------------------------------------
+CATLibSearch.callbacks.OKTitle="應用";
+CATLibSearch.callbacks.APPLYTitle="重設";
+//
+//=======================================================================
+// MODULE : CATIAModelFunctions
+//=======================================================================
+//--------------------------------------
+//  Messages from CATIAFilterCmd
+//--------------------------------------
+CATIAFilterDialog.Title="圖層過濾器";
+CATIAFilterDialog.f1.Title="可用過濾器";
+CATIAFilterDialog.f1.LongHelp = 
+"Lists all existing filters. When selected,
+these filters can be modified or deleted.";
+CATIAFilterDialog.f1.ListDesFiltres.LongHelp = 
+"Lists all existing filters. When selected,
+these filters can be modified or deleted.";
+CATIAFilterDialog.f2.Title="可見過濾器";
+CATIAFilterDialog.f2.LongHelp = 
+"Lists the visible layers of
+the filters selected opposite.";
+CATIAFilterDialog.f2.ListDesLayers.LongHelp =
+"Lists the visible layers of
+the filters selected opposite.";
+CATIAFilterDialog.createFilter.Title=" 建立 ";
+CATIAFilterDialog.createFilter.LongHelp = 
+"Displays another dialog box
+enabling filter creation.";
+CATIAFilterDialog.deleteFilter.Title=" 刪除 ";
+CATIAFilterDialog.deleteFilter.LongHelp = 
+"Displays another dialog box
+enabling filter deletion.";
+CATIAFilterDialog.modifyFilter.Title=" 修改 ";
+CATIAFilterDialog.modifyFilter.LongHelp = 
+"Displays another dialog box
+enabling filter modification.";
+CATIAFilterDialog.createFilter.Window.Title="建立圖層";
+CATIAFilterDialog.modifyFilter.Window.Title="修改 圖層";
+CATIAFilterDialog.FilterName.Title="名稱";
+CATIAFilterDialog.FilterName.text1.LongHelp = 
+"Allows you to give a name to one
+or more of the layers listed below.";
+CATIAFilterDialog.defaultFilterName.Title=" 圖層";
+CATIAFilterDialog.defaultFilterName.LongHelp =
+"Allows you to give a name to one
+or more of the layers listed below.";
+CATIAFilterDialog.VisibleLayers.Label="可見圖層";
+CATIAFilterDialog.VisibleLayers.LongHelp = 
+"Lists the visible layers in numerical order.";
+CATIAFilterDialog.f4.Layers.Title = "圖層";
+CATIAFilterDialog.f4.Layers.LongHelp = 
+"Lists the visible layers in numerical order.";
+CATIAFilterDialog.Listlayer.Line="圖層";
+CATIAFilterDialog.Listlayer.LongHelp=
+"Lists the visible layers in numerical order.";
+CATIAFilterDialog.ButtonAll.Title="全部";
+CATIAFilterDialog.ButtonAll.LongHelp=
+"Makes all layers visible. This enables you to make
+sure that the display status of each layer is visible.";
+CATIAFilterDialog.ButtonNone.Title="無";
+CATIAFilterDialog.ButtonNone.LongHelp=
+"Specifies that no filter is used. Provides no
+information on the display status of each layer.";
+CATIAFilterDialog.alllayers.Line="所有圖層";
+CATIAFilterDialog.nolayer.Line="無圖層";
+CATIAFilterDialog.FilterAll.Line= "所有";
+CATIAFilterDialog.FilterLaycur.Line="目前圖層";
+//
+//=======================================================================
+// MODULE : OM0PROPE
+//=======================================================================
+//
+//--------------------------------------
+//  Messages from CATAttributEditor
+//--------------------------------------
+CATAttributEditor.Title="屬性";
+//
+//--------------------------------------
+//  Messages from CATCommentEditor
+//--------------------------------------
+CATCommentEditor.Title="說明";
+//
+//--------------------------------------
+//  Messages from CATDittoEditor
+//--------------------------------------
+CATDittoEditor.Title="Ditto";
+//
+//--------------------------------------
+//  Messages from CATAttributPage
+//--------------------------------------
+CATAttributPage.Title0= "格式";
+CATAttributPage.Title1= "名稱";
+CATAttributPage.Title2="數值";
+CATAttributPage.Character="性質";
+CATAttributPage.Discret="不連續";
+CATAttributPage.Real="實際";
+CATAttributPage.Boolean="布林";
+//
+//--------------------------------------
+//  Messages from CATCheckDialog
+//--------------------------------------
+CATCheckDialog.Column1 = "標示名稱";
+CATCheckDialog.Column1.LongHelp =
+"Shows the V4 identifier of the geometrical
+element selected for the validity check.";
+CATCheckDialog.Column2="格式";
+CATCheckDialog.Column2.LongHelp = 
+"Tells you whether you have chosen
+the Geometry or Specifications format.";
+CATCheckDialog.Column3="訊息";
+CATCheckDialog.Column3.LongHelp =
+"Shows the result of the validity check.
+Click on one of the lines for more information.";
+CATCheckDialog.Green="G";
+CATCheckDialog.Yellow="Y";
+CATCheckDialog.Red="R";
+CATCheckDialog.LongHelp =
+"Shows the result of the validity check as follows:
+G (green) = will be copied as is to CATIA Version 5
+R (red) = will NOT be copied to CATIA Version 5 as is
+Y (yellow) = will NOT be copied to CATIA Version 5
+as is because of a link to a red-coded item.";
+//
+//--------------------------------------
+//  Messages from CATCheckGeometry
+//--------------------------------------
+CATCheckGeometry.Title="可用性檢查";
+CATCheckGeometry.Prompt="請選擇 確認 來退出";
+CATCheckGeometry.Warning="檢查尚未執行";
+CATCheckGeometry.Notify="檢查有效性";
+CATCheckGeometry.Info="沒有進一步資料";
+CATCheckGeometry.FormatSpec="規格";
+CATCheckGeometry.FormatResult="幾何";
+//
+//--------------------------------------
+//  Messages from CATCheckViewer
+//--------------------------------------
+CATCheckViewer.OKButton="確認 ";
+CATCheckViewer.Title="可用性檢查";
+
+//--------------------------------------
+//  Messages from CATProceduralCtxMenu
+//--------------------------------------
+CATProceduralCtxMenu.Info="沒有進一步資料";
+
+//
+//--------------------------------------
+//  Messages from CATErrMsgImpl
+//--------------------------------------
+CATErrMsgImpl.Message1="ABEND WINDOW U";
+CATErrMsgImpl.Message2="ABEND U ";
+CATErrMsgImpl.Message3=" - BASIC SOFTWARE ERROR";
+CATErrMsgImpl.Message700_1="INVALID ADDRESS ASSIGNED TO BASIC SUBROUTINE";
+CATErrMsgImpl.Message700_2="ADDRESS";
+CATErrMsgImpl.Message700_3="IS INCORRECT";
+CATErrMsgImpl.Message700_4="IT DOES NOT CORRESPOND TO AN ELEMENT ADDRESS IN MODEL";
+
+CATErrMsgImpl.Message701_1="ATTEMPT TO MODIFY PROTECTED DATA DESCRIPTION";
+CATErrMsgImpl.Message701_2="OF ELEMENT AT ADDRESS";
+
+CATErrMsgImpl.Message702_1="NO DATA DESCRIPTION FOUND";
+CATErrMsgImpl.Message702_2="FOR ELEMENT AT ADDRESS";
+
+CATErrMsgImpl.Message703_1="DATA DESCRIPTION LENGTH INVALID";
+
+CATErrMsgImpl.Message704_1="INVALID ELEMENT TYPE ASSIGNED";
+CATErrMsgImpl.Message704_2="TO BASIC SUBROUTINE";
+
+CATErrMsgImpl.Message705_1="INVALID LOGICAL LINK CONTROL BLOCK";
+CATErrMsgImpl.Message705_2="FOR ELEMENT AT ADDRESS";
+
+CATErrMsgImpl.Message707_1="INCONSISTENT DATA FOR SET ELEMENT AT ADDRESS";
+
+CATErrMsgImpl.Message709_1="INVALID LOGICAL LINK ADDRESS ASSIGNED";
+CATErrMsgImpl.Message709_2="TO BASIC SUBROUTINE";
+
+CATErrMsgImpl.Message711_1="INVALID LOGICAL LINK ADDRESS";
+CATErrMsgImpl.Message711_2="DETECTED AT ADDRESS";
+CATErrMsgImpl.Message711_3="IN MODEL";
+
+CATErrMsgImpl.Message712_1="INCONSISTENT MODEL STRUCTURE";
+CATErrMsgImpl.Message712_2="ERROR DETECTED AT DATA ADDRESS";
+
+CATErrMsgImpl.Message714_1="ADDRESS";
+CATErrMsgImpl.Message714_2="IS NOT A WORKSPACE";
+
+CATErrMsgImpl.Message715_1="INVALID OPERATION APPLIED TO TEMPORARY";
+CATErrMsgImpl.Message715_2="ELEMENT AT ADDRESS";
+
+CATErrMsgImpl.Message717_1="INVALID VALUE DETECTED IN MODEL";
+CATErrMsgImpl.Message717_2="MANAGEMENT COMMON DURING PACKING";
+
+CATErrMsgImpl.Message719_1="ADDRESS OF ERASED ELEMENT ASSIGNED";
+CATErrMsgImpl.Message719_2="TO BASIC SUBROUTINE";
+
+CATErrMsgImpl.Message721_1="OPERATION RESERVED FOR TEMPORARY ELEMENT APPLIED";
+CATErrMsgImpl.Message721_2="TO PERMANENT ELEMENT AT ADDRESS";
+
+CATErrMsgImpl.Message722_1="INVALID DATA DESCRIPTION TYPE";
+CATErrMsgImpl.Message722_2="ASSIGNED TO BASIC SUBROUTINE";
+
+CATErrMsgImpl.Message724_1="OPERATION RESERVED FOR TEMPORARY ELEMENT APPLIED";
+CATErrMsgImpl.Message724_2="ASSIGNED TO BASIC SUBROUTINE";
+
+CATErrMsgImpl.Message747_1="INVALID TEMPORARY GROUP NUMBER";
+CATErrMsgImpl.Message747_2="(RESULTING FROM MULTISECTION PROCESS)";
+CATErrMsgImpl.Message747_3="ASSIGNED TO BASIC SUBROUTINE";
+
+CATErrMsgImpl.Message750_1="ERROR DETECTED AT ADDRESS";
+CATErrMsgImpl.Message750_2="DURING";
+CATErrMsgImpl.Message750_3="MODEL CONSISTENCY VERIFICATION";
+
+CATErrMsgImpl.Message788_1="INVALID IDENTIFIER LENGTH DETECTED";
+
+CATErrMsgImpl.Message950_1="ELEMENT AT ADDRESS";
+CATErrMsgImpl.Message950_2="NOT IN CURRENT MODEL";
+
+CATErrMsgImpl.Message951_1="SET AT ADDRESS";
+CATErrMsgImpl.Message951_2="NOT IN CURRENT MODEL";
+
+CATErrMsgImpl.MessageDefault="NO ADDITIONAL INFORMATION";

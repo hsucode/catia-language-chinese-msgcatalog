@@ -1,0 +1,78 @@
+//-------------------------------------------------------------------------
+// Resource file for CATPrintOptionsDialog
+// fbq - Oct 97
+//-------------------------------------------------------------------------
+Title = "選項";
+
+Container.ColorPage.Title = "顏色";
+Container.ColorPage.ColorCorrection.Title = "改正顏色";
+Container.ColorPage.ColorCorrection.TrueColor.Title = "全彩";
+Container.ColorPage.ColorCorrection.TrueColor.LongHelp = "保持原始顏色";
+Container.ColorPage.ColorCorrection.GreyScale.Title = "灰階";
+Container.ColorPage.ColorCorrection.GreyScale.LongHelp = "轉換顏色至灰階";
+Container.ColorPage.ColorCorrection.Monochrome.Title = "單色";
+Container.ColorPage.ColorCorrection.Monochrome.LongHelp = "轉換所有非白色至黑色";
+Container.ColorPage.ColorCorrection.Gamma.Title = "Gamma 因子 (0.1 至 5.0): ";
+Container.ColorPage.ColorCorrection.GammaSpinner.LongHelp = "指定輸出的明亮度 (預設 gamma=1)";
+Container.ColorPage.ColorCorrection.WhitePixel.Title = "以黑色列印白色向量";
+Container.ColorPage.ColorCorrection.WhitePixel.LongHelp = "修改白色向量至黑色
+以便於白色紙上可顯示";
+Container.ColorPage.ColorCorrection.TextBlanking.Title = "列印空白文字";
+Container.ColorPage.ColorCorrection.TextBlanking.LongHelp = "勾選此選項時,將列印空白文字";
+
+Container.BannerPage.Title = "圖邊文字";
+Container.BannerPage.Frame.BannerPosition.Title = "位置: ";
+Container.BannerPage.Frame.BannerEdit.LongHelp = "可用字元 : $SCALE, $DATE, $TIME, $USER, $HOST";
+Container.BannerPage.Frame.BannerCombo.LongHelp = "圖邊字元列印在圖邊旁";
+Container.BannerPage.Frame.InsertLogo.Title = "插入標記";
+Container.BannerPage.Frame.LogoFileName.Title = "...";
+Container.BannerPage.Frame.LogoFileNameEdit.LongHelp = "指定含有標記的檔案 (BMP, TIFF, JPEG)";
+
+Container.VariousPage.Title = "多樣";
+Container.VariousPage.RenderMode.Title = "塗彩模式";
+Container.VariousPage.RenderModeCombo.LongHelp = "設定列印輸出的塗彩模式";
+Container.VariousPage.Quality.Title = "塗彩品質";
+Container.VariousPage.QualityCombo.LongHelp = "從低至高設定列印品質和解析度
+(相當螢幕解析度)";
+Container.VariousPage.LineWidthSpec.Title = "線寬: ";
+Container.VariousPage.LineWidthCombo.LongHelp = "指定線寬縮放";
+Container.VariousPage.LineTypeSpec.Title = "線形式: ";
+Container.VariousPage.LineTypeCombo.LongHelp = "指定線形縮放";
+Container.VariousPage.LineCapSpec.Title = "線端: ";
+Container.VariousPage.LineCapCombo.LongHelp = "指定線端點如何繪製";
+Container.VariousPage.ZoomText.Title = "文字縮放";
+Container.VariousPage.ZoomText.LongHelp = "指定文字是否要縮放大小";
+Container.VariousPage.LTOCheck.Title = "線形重疊";
+Container.VariousPage.LTOCheck.LongHelp = "啟動或關閉線形重疊檢查";
+Container.VariousPage.LTOCheck.ShortHelp = "啟動或關閉 LTO 檢查";
+Container.VariousPage.LTOCheck.Help = "啟動或關閉 LTO 檢查";
+
+LogoFileNameDialog.Title = "標記檔名";
+LogoFileNameDialog.TIFF  = "TIFF 檔案 (*.tif)";
+LogoFileNameDialog.BMP   = "Windows Bitmaps (*.bmp)";
+LogoFileNameDialog.JPEG  = "JPEG 檔案 (*.jpg)";
+
+Absolute = "絕對";
+Scaled = "縮放";
+NoThickness = "沒有厚度";
+
+FlatCap = "平坦";
+SquareCap = "方形";
+RoundCap = "圓形";
+
+None = "無";
+TopHorizontal = "上水平";
+BottomHorizontal  = "下水平";
+LeftVertical = "左垂直";
+RightVertical = "右垂直";
+
+LowResolution = "低";
+MediumResolution= "中";
+HighestResolution = "高";
+CustomResolution = "客制: /p1 dpi 最大.";
+
+DefautMode = "預設";
+NHRMode = "線架構";
+HLRMode = "隱藏線移除";
+NHRFaceMode = "以三角形面塗彩";
+HRVMode = "動態隱藏線移除";

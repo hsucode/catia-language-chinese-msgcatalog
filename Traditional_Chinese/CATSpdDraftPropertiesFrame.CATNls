@@ -1,0 +1,118 @@
+// COPYRIGHT ImpactXoft 2003
+//===================================================================
+
+BlankLineLabel030Id.Title = "  ";
+BlankLineLabel031Id.Title = "  ";
+BlankLineLabel032Id.Title = "  ";
+DraftBehaviorFrameId.DraftBehaviorLabelId.Title = "脫模性質:  ";
+
+DraftFirstLimitFrameId.DraftFirstLimitLabelId.Title = "角度:              ";
+DraftFirstLimitFrameId.DraftFirstLimitReverseAnglePushButtonId.Title = "逆轉";
+
+DraftClearanceFrameId.DraftClearanceLabelId.Title = "間隙體積角度:";
+DraftClearanceFrameId.DraftClearanceReverseAnglePushButtonId.Title = "逆轉";
+
+DraftApplyFromFrameId.Title = "中界元素";
+DraftApplyFromFrameId.DraftApplyFromSelectionFrameId.DraftApplyFromSelectionLabelId.Title = "選擇:  ";
+
+FacesToDraftFrameId.Title = "脫模修剪面";
+ 
+DraftMiscOptionsFrameId.DraftBothSidesCheckButtonId.Title = "兩側脫模";
+DraftMiscOptionsFrameId.DraftProfileEndsCheckButtonId.Title = "脫模至斷面結束";
+DraftMiscOptionsFrameId.DraftFilletSurfacesCheckButtonId.Title = "脫模圓角";
+
+DraftBehaviorNoneId = "無";
+DraftBehaviorIntrinsicId = "Intrinsic 至特徵";
+
+DraftApplyFromProfilePlaneId = "斷面平面";
+DraftApplyFromFirstLimitId   = "第一限制";
+DraftApplyFromSecondLimitId  = "第二限制";
+DraftApplyFromPlaneSurfId      = "平面或曲面";
+DraftApplyFromPartingElementId = "使用分模元素";
+
+FaceToDraftAllLateralId = "所有側邊修剪面";
+FaceToDraftByPullDirId  = "以拉伸方向選擇";
+FaceToDraftSelectId     = "選擇斷面曲面";
+
+NoSelectionId = "未選擇";
+
+FacesToDraftCurvesSelectionLabelId = "曲線:     ";
+
+PartingEqualNeutralCheckButtonId = "分模 =中界";
+
+NeutralElement3DLabelId = "中界元素";
+
+//===================================================================
+// LongHelp
+//===================================================================
+
+DraftBehaviorFrameId.LongHelp = 
+"Specifies whether feature will be drafted
+and if so where draft parameters are defined.";
+
+DraftFirstLimitFrameId.DraftFirstLimitLabelId.LongHelp =
+"Specifies the draft angle value. The value
+must be between -85 and 85 degrees (inclusive).";
+
+DraftFirstLimitFrameId.DraftFirstLimitReverseAnglePushButtonId.LongHelp =
+"Reverses the draft angle indicated by the blue cone.";
+
+DraftClearanceFrameId.DraftClearanceLabelId.LongHelp = 
+"Specifies clearance draft angle value. The value
+must be between -85 and 85 degrees (inclusive).";
+
+DraftClearanceFrameId.DraftClearanceReverseAnglePushButtonId.LongHelp = 
+"Reverses the clearance draft angle indicated by the red cone.";
+
+DraftApplyFromFrameId.LongHelp =
+"Neutral element parameters.";
+
+DraftApplyFromFrameId.DraftApplyFromComboId.LongHelp =
+"Specifies the location of the draft
+neutral element.";
+
+DraftApplyFromFrameId.DraftApplyFromSelectionFrameId.LongHelp =
+"Specifies the neutral element plane or surface.";
+
+FacesToDraftFrameId.LongHelp =
+"Faces to draft parameters.";
+
+FacesToDraftFrameId.FacesToDraftComboId.LongHelp =
+"Specifies the method used for determining
+which faces of the feature to draft.
+\"All lateral faces\" indicates all faces
+except limit capping faces. 
+\"Selected by pull direction\" indicates all
+vertical faces relative to pull direction.";
+
+FacesToDraftFrameId.FacesToDraftSelectionFrameId.LongHelp =
+"Specifies the faces to draft by selecting
+profile curves. Lateral faces originating
+from the selected curves will be drafted.";
+
+FacesToDraftFrameId.FacesToDraftOptionsFrameId.DraftFirstLimitFaceCheckButtonId.LongHelp =
+"Indicates that the capping face at the
+limit will be drafted.";
+
+FacesToDraftFrameId.FacesToDraftOptionsFrameId.DraftSecondLimitFaceCheckButtonId.LongHelp =
+"Indicates that the capping face at the
+limit will be drafted.";
+
+DraftMiscOptionsFrameId.PartingEqualNeutralCheckButtonId.LongHelp =
+"Indicates that the parting element is equal
+to the neutral element. Availability dependent
+upon draft behavior and neutral element style.";
+
+DraftMiscOptionsFrameId.DraftBothSidesCheckButtonId.LongHelp =
+"Indicates that the faces will be drafted
+in two directions from the parting element.
+Only available if \"Parting = Neutral\" 
+switch is ON.";
+
+DraftMiscOptionsFrameId.DraftProfileEndsCheckButtonId.LongHelp =
+"Indicates that the ends of open profiles
+are to be drafted.";
+
+DraftMiscOptionsFrameId.DraftFilletSurfacesCheckButtonId.LongHelp =
+"Indicates that the draft will be applied
+after the fillet surfaces are created.";

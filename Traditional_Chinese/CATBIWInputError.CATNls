@@ -1,0 +1,107 @@
+// COPYRIGHT DASSAULT SYSTEMES 
+//----------------------------
+// NLS message for the CATBIWInputError Error 
+
+//
+//-- Ridge
+RidgeIdenticalInputERR_1001.Request    = "相同元素.";
+RidgeIdenticalInputERR_1001.Diagnostic = "/p1 無法同時用在參考和基本曲面.";
+RidgeIdenticalInputERR_1001.Advice     = "請使用兩不同元素.";
+
+RidgeNonConnexInputERR_1002.Request    = "/p1 不是連接元素.";
+RidgeNonConnexInputERR_1002.Diagnostic = "基本曲面必須連接.";
+RidgeNonConnexInputERR_1002.Advice     = "請使用其它元素, 或使用萃取動作來萃取連接元件.";
+
+RidgeInfiniteInputERR_1003.Request    = "/p1 為無限元素.";
+RidgeInfiniteInputERR_1003.Diagnostic = "基本曲面元素必須為限制元素.";
+RidgeInfiniteInputERR_1003.Advice     = "請使用其它元素.";
+ 
+RidgeInfiniteInputERR_1004.Request    = "需定義參考方向.";
+RidgeInfiniteInputERR_1004.Diagnostic = "在參考曲線 /p1 上無法計算參考方向.";
+RidgeInfiniteInputERR_1004.Advice     = "需定義明確參考方向.";
+
+RidgeInvalidReferenceCurveERR_1005.Request    = "/p1 曲線無法用做參考.";
+RidgeInvalidReferenceCurveERR_1005.Diagnostic = "曲線必須在參考方向與基本曲面可投影. \n 且投影必須長到足夠連接基本曲面邊界.";
+RidgeInvalidReferenceCurveERR_1005.Advice     = "請使用其它元素, 或延伸它.";
+
+RidgeInvalidReferenceSurfaceERR_1006.Request    = "/p1 曲面無法用做參考.";
+RidgeInvalidReferenceSurfaceERR_1006.Diagnostic = "曲面必須與基本曲面有相交.\n 且相交曲線必須長到足夠連接基本曲面邊界.";
+RidgeInvalidReferenceSurfaceERR_1006.Advice     = "請使用其它元素, 或延伸它.";
+
+RidgeNonConnexReferenceLocationERR_1007.Request    = "未連接參考位置.";
+RidgeNonConnexReferenceLocationERR_1007.Diagnostic = "基本和參考元素導致未連接參考位置.";
+RidgeNonConnexReferenceLocationERR_1007.Advice     = "請使用其它元素.";
+
+RidgeClosedReferenceLocationERR_1008.Request    = "封閉參考位置.";
+RidgeClosedReferenceLocationERR_1008.Diagnostic = "基本和參考元素導致封閉參考位置.";
+RidgeClosedReferenceLocationERR_1008.Advice     = "請使用其它元素.";
+
+RidgeReferenceLocationIntersectionERR_1009.Request    = "兩參考位置曲線相交.";
+RidgeReferenceLocationIntersectionERR_1009.Diagnostic = "兩參考位置曲線不可相交.";
+RidgeReferenceLocationIntersectionERR_1009.Advice     = "使用不相交參考曲線.";
+
+RidgeMultipleG1ValuesERR_1010.Request    = "厚度值衝突.";
+RidgeMultipleG1ValuesERR_1010.Diagnostic = "定義超過一個以上數值在亮度顯示元素.";
+RidgeMultipleG1ValuesERR_1010.Advice     = "請移除未使用元素.";
+
+RidgeImpossibleSplitERR_1011.Request    = "Split operation cannot be performed.";
+RidgeImpossibleSplitERR_1011.Diagnostic = "Current Reference element(s) cannot correctly split the base surface.";
+RidgeImpossibleSplitERR_1011.Advice     = "You can switch off the split option.";
+
+//
+//-- Based Curve Law
+BCLAlreadyDefinedInputERR_2001.Request    = "已定義.";
+BCLAlreadyDefinedInputERR_2001.Diagnostic = "此元素已定義拘束值.";
+BCLAlreadyDefinedInputERR_2001.Advice     = "請使用已定義拘束.";
+
+BCLAConflictingValueERR_2002.Request    = "值衝突.";
+BCLAConflictingValueERR_2002.Diagnostic = "已定義拘束在切線相切.";
+BCLAConflictingValueERR_2002.Advice     = "請使用已定義拘束.";
+
+//
+//-- Hole
+PunchDirIsNotDefinedERR_3001.Request    = "衝壓方向未適當定義.";
+PunchDirIsNotDefinedERR_3001.Diagnostic = "/p1 點未依附在 /p2 基本曲面. \n 預設衝壓方向無法計算為垂直.";
+PunchDirIsNotDefinedERR_3001.Advice     = "使用其它依附在基本曲面上的點 \n 或明確定義衝壓方向";
+
+HoleInfiniteInputERR_3002.Request    = "/p1 為無限元素.";
+HoleInfiniteInputERR_3002.Diagnostic = "孔無法定義為無限元素.";
+HoleInfiniteInputERR_3002.Advice     = "請使用其它元素.";
+
+HoleInputDimensionIsNullERR_3003.Request    = " /p1 參數無法大於 0.";
+HoleInputDimensionIsNullERR_3003.Diagnostic = "參數值無效 = /p1.";
+HoleInputDimensionIsNullERR_3003.Advice     = "請更改參數值.";
+
+HoleInputDimensionIsGreaterThanERR_3004.Request    = "/p1 參數必須大於 /p2 .";
+HoleInputDimensionIsGreaterThanERR_3004.Diagnostic = " /p1 參數較 /p2 參數小 = /p3.";
+HoleInputDimensionIsGreaterThanERR_3004.Advice     = "請更改參數值.";
+
+HoleInputDimensionIsNTimesGreaterThanERR_3005.Request    = " /p1 參數必須大於 /p2 參數 /p3 倍數以上.";
+HoleInputDimensionIsNTimesGreaterThanERR_3005.Diagnostic = " /p1 參數比 /p2 參數小 /p4 倍 = /p3.";
+HoleInputDimensionIsNTimesGreaterThanERR_3005.Advice     = "請更改參數值.";
+
+//
+//-- TriangleBead
+TriangleBeadInvalidLocationElementERR_4001.Request    = "/p1 未依附在基本元素.";
+TriangleBeadInvalidLocationElementERR_4001.Diagnostic = "/p1 點未依附在 /p2 基本曲面上.";
+TriangleBeadInvalidLocationElementERR_4001.Advice     = "請使用另一元素.";
+
+TriangleBeadInvalidLocationElementERR_4002.Request    = "/p1 未依附在基本元素的尖稅邊線上.";
+TriangleBeadInvalidLocationElementERR_4002.Diagnostic = "/p1 點未依附在基本元素的尖稅邊線上.";
+TriangleBeadInvalidLocationElementERR_4002.Advice     = "請使用另一元素.";
+
+TriangleBeadLocationElementAmbiguityERR_4003.Request    = "滴面參考 localisation.";
+TriangleBeadLocationElementAmbiguityERR_4003.Diagnostic = "無法決定. /p1 依附在兩個 /p2 以上邊線.";
+TriangleBeadLocationElementAmbiguityERR_4003.Advice     = "請使用另一元素.";
+
+TriangleBeadValueOutOfRangeERR_4004.Request    = "The /p1 parameter value is out of range.";
+TriangleBeadValueOutOfRangeERR_4004.Diagnostic = "The maximum value (estimated) is /p1.";
+TriangleBeadValueOutOfRangeERR_4004.Advice     = "Decrease the /p1 parameter.";
+
+TriangleBeadValueOutOfRangeERR_4005.Request    = "The /p1 parameter value is out of range.";
+TriangleBeadValueOutOfRangeERR_4005.Diagnostic = "The result shape has to lie on the indicated subpart.";
+TriangleBeadValueOutOfRangeERR_4005.Advice     = "Decrease the /p1 parameter.";
+
+TriangleBeadValueOutOfRangeERR_4006.Request    = "Incompatible /p1 parameter value and Reference direction.";
+TriangleBeadValueOutOfRangeERR_4006.Diagnostic = "Red curves must have an intersection.";
+TriangleBeadValueOutOfRangeERR_4006.Advice     = "Decrease the /p1 parameter or modify the direction in order to define an intersection.";

@@ -1,0 +1,89 @@
+//------------------------------------------------------
+// Resource file for PolyhedralBodies errors 
+// En_EN
+//
+//
+//
+//----------------------------------geometry quality 
+//
+//  p1 is the topological object type
+//  p2 is the level of the object continuity
+//  P3 is the operator name
+//  P4 is the minimum requested continuity
+//
+PolOpInDiscontinuousGeometry=
+    " 多面體動作:  /p1 只有 G/p2 連續: 
+ /p3 動作至少需要 G/p4 連續 /p1 .
+- 請使用更一般的幾何物件"; 
+//
+//----------------------------------Divers
+//
+//
+//------------------------------------------------------
+// Resource file for internal topological operator errors 
+// En_EN
+//
+// 8500-8999- Polyhedral
+// 8500-8599  internal error
+// 8600-8699- Boolean Operators
+// 8700-8799- Sweep   Operators
+//
+//
+//------------------------------------------------------
+//    internal
+//------------------------------------------------------
+//
+//----------------------------------Null input
+//
+PolOpIntInternalError_ERR_8500="多面體動作: 內部錯誤 /p.";
+//
+PolOpIntDisconnect_ERR_8501 =
+       "分離動作: 內部錯誤.";
+//
+PolOpIntNotImplemented_ERR_8502 =
+       "多面體動作: this function is not implemented yet.";
+//
+PolOpIntBadPolology_ERR_8503 =
+       "多面體動作: 內部錯誤導致不良的拓墣組態.";
+//
+PolOpIntBadGeometry_ERR_8504 =
+       "多面體動作: 內部錯誤導致不良的幾何組態.";
+//
+PolOpIntMath_ERR_8505 =
+       "多面體動作: 數學軟體中發生 /p1 錯誤.";
+//
+PolOpIntAllPolo_ERR_8506 =
+        "多面體動作: 內部錯誤 /P1. ";
+//
+PolOpIntAllGeo_ERR_8507 =
+        "多面體動作: 使用數學軟體發生 /p1 錯誤.";
+//
+PolOpIntAllocation_ERR_8508 =
+        "多面體動作: 定位失敗.";
+//
+PolOpIntInvalidInput_ERR_8509 =
+        "多面體動作: 輸入引數無效.";
+//
+PolOpIntInvalidType_ERR_8510 =
+        "多面體動作: 輸入元素型式無效.";
+//
+PolOpIntEmptyResult_ERR_8511 =
+        "多面體動作: 您的動作結果無效.";
+//
+//------------------------------------------------------
+//    input
+//------------------------------------------------------
+//
+//----------------------------------geometry and topology
+//
+PolOpInNull_ERR_8600 =
+     "多面體動作: 指向輸入資料的指標是空的. 
+ 定義此資料或檢查指標未被取消定位.";
+//
+//----------------------------------Non manifold configuration
+//
+PolOpInNonManifold_ERR_8601 =
+     "多面體動作: 嚐試處理 non-manifold 組態失敗.";
+//
+//------------------------------------------------------
+//

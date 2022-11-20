@@ -1,0 +1,43 @@
+ERROR_BAD_REQUEST = "Bad request type.";
+ERROR_UNKNOWN_REQUEST = "Unkown request type.";
+ERROR_EMPTY_REQUEST = "Empty request.";
+ERROR_NO_POST_REQUEST = "Bad request. GET requests are not valid.";
+ERROR_INVALID_UID = "Invalid UID :";
+ERROR_BAD_XML = "Malformed XML request.";
+ERROR_NOTHING_TO_SEND = "No data to transfer : null bytes.";
+ERROR_NO_MODEL_NAME = "The model's name could not be determined.";
+ERROR_NO_MODEL_EXTENSION = "The model's extension could not be determined.";
+ERROR_CANNOT_CREATE_FILE = "Could not create the converted file on the server.";
+ERROR_NO_TESSELLATION_UID = "Could not get the UID of the document.";
+ERROR_FILE_NOT_FOUND = "File not found : ";
+ERROR_NO_DATA_TO_TESSELLATE = "Data to tessellate are null.";
+ERROR_NO_DTU = "No Tessellation Server is available.";
+ERROR_NO_DTU_MATCH_OS = "No Tessellation Server is available for the specified OS.";
+ERROR_NO_DTU_MATCH_SOURCE = "No Tessellation Server is available for the specified source.";
+ERROR_NO_DTU_MULTICAD = "No Tessellation Server supporting MultiCAD is available.";
+ERROR_TESSELLATION_FAILED_WITH_CODE = "The tessellation failed. The return code is ";
+ERROR_TESSELLATION_FAILED_NO_CODE = "The tessellation failed. An error message was returned but it did not have any return code.";
+ERROR_TESSELLATION_NULL = "Tessellation failed (no result).";
+ERROR_TESSELLATION_EMPTY = "Tessellation failed (empty result).";
+ERROR_TESSELLATION_TIMEOUT = "Tessellation timed out (";
+ERROR_TESSELLATION_TIMEOUT2 = " seconds)";
+ERROR_TESSELLATION_IO = "I/O error while decoding tessellation response. Please try again.";
+ERROR_TESSELLATION_DECODING = "The decoding of the tessellation result failed.";
+ERROR_TESSELLATION_NO_SHEET = "The 2D tessellation result does not contain any sheet.";
+ERROR_TESSELLATION_FAILED_NO_CONNECTION = "The tessellation failed because the Document Tessellation Utility could not contact a tessellation tool.";
+ERROR_TESSELLATION_FAILED_NO_CONNECTION_UTILITY = "The tessellation failed because the Document Tessellation Utility could not contact the following tool : ";
+ERROR_DOWNLOAD_FAILED = "This file was not found on the server : ";
+ERROR_NO_DOWNLOAD_URL = "No valid URL found for downloading tessellated file.";
+
+ERROR_INTERNAL = "An internal error occurred on the server. Please contact your system administrator.";
+
+ERROR_UNKNOWN_DEFINITION_TYPE = "Unknown definition type.";
+
+ERROR_CONNECTION = "Connection error : could not contact the Tessellation Utility.";
+ERROR_EMPTY_RESPONSE = "The server returned an empty response.";
+ERROR_WRONG_URL = "Could not determine the URL to the tessellated file.";
+ERROR_CLIENT_DOWNLOAD_FAILED = "The download of the model failed. Please try again.";
+ERROR_EMPTY_DOWNLOAD = "The download of the model returned an empty file.";
+ERROR_NO_TEMP_DIR = "The storage directory of the tessellation utility was not properly set in the Administration panel. Please contact your system administrator.";
+
+ERROR_LOAD_FAILED = "Error while loading : /P01 (/P02).";

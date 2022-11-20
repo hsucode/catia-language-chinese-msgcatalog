@@ -1,0 +1,104 @@
+//
+// ---------------------------
+// Coating 1D commande
+// ---------------------------
+//
+
+// Le titre du panel de dialogue associe a la commande
+
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.Title="Coating 1D Mesh";
+CATMSHCmdMeshPartCoating1D.UndoTitle="Coating 1D Mesh";
+
+//Il faut initialiser la liste du dialogue.
+
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.GParameters.NoSelection="No selection";
+
+// Le bouton apply.
+
+CATMSHCmdMeshPartCoating1D.CoatingApply.UndoTitle="Creation of mesh";
+
+// Le combo de selection du type d'extraction a appliquer.
+
+CATMSHCmdMeshPartCoating1D.GSpec="Extraction criteria";
+CATMSHCmdMeshPartCoating1D.GSpec.UndoTitle="Extraction criteria";
+
+// Le bouton de suppression d'un ou de tous les support(s)
+
+CATMSHCmdMeshPartCoating1D.RemoveMP.UndoTitle="Remove one support";
+CATMSHCmdMeshPartCoating1D.RemoveAllMP.UndoTitle="Remove all supports";
+
+//Le NLS du titre de la commande locale pour l'undo.
+
+CATMSHCmdMeshPartCoating1D.LSpec.UndoTitle="Local Specification";
+
+//Le NLS de la Frame des parametres globaux
+
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.GParameters.Title="Global Parameters";
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.GParameters.Help="Set global parameters";
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.GParameters.ShortHelp="Set global parameters";
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.GParameters.LongHelp="Set global parameters.";
+
+//Le NLS de la Frame des parametres locaux
+
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.LParameters.Title="Local Parameter";
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.LParameters.Help="Set local parameter";
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.LParameters.ShortHelp="Set local parameter";
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.LParameters.LongHelp="Set local parameter.";
+
+//Le NLS pour le combo des global parameters
+
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.GParameters.gparameterLbl.Title=" Extraction type: ";
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.GParameters.gparameterLbl.Help="Set the extraction type parameter";
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.GParameters.gparameterLbl.LongHelp="Set the extraction type parameter.";
+
+//Le NLS pour le texte accompagnant l'icone des global parameters
+
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.LParameters.lparameterLbl.Title=" Add a local parameter: ";
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.LParameters.lparameterLbl.Help="Add a local parameter";
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.LParameters.lparameterLbl.LongHelp="Add a local parameter.";
+
+//Le NLS pour la sous commande: parametre local
+
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.LParameters.ImposedMesh.Help="Add/Remove Mesh associated to geometry";
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.LParameters.ImposedMesh.ShortHelp="Add/Remove Mesh";
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.LParameters.ImposedMesh.LongHelp="Add/Remove Mesh associated to geometry.";
+
+//Le NLS du combo correspondant au parametre global
+
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.GParameters.CriteriaCombo.Help="Choose the extraction parameter in the combo";
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.GParameters.CriteriaCombo.ShortHelp="Choose the parameter";
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.GParameters.CriteriaCombo.LongHelp="Choose the extraction parameter in the combo.";
+
+//Le NLS concernant l'affichage de la liste deroulante
+
+alled     = "All edges";
+bounded   = "Boundary edges";
+inted     = "Internal edges";
+consted   = "Constrained edges";
+noconsted = "Non constrained edges";
+noneed    = "None";
+
+//Le NLS correspondant aux differents etats qui regissent le dialogue
+
+CATMSHCmdMeshPartCoating1D.InitialState.Message="Choose the mesh parts to extract";
+
+//Le NLS de l'agent de selection de mesh part (sur l'undo)
+
+CATMSHCmdMeshPartCoating1D.MeshSel.UndoTitle="Select 2D Mesh";
+
+//Le NLS de l'agent de selection de spec locales pour le delete (sur l'undo)
+
+CATMSHCmdMeshPartCoating1D.SpecSelected.UndoTitle="Delete Spec";
+CATMSHCmdMeshPartCoating1D.SpecSelectedEndCtx.UndoTitle="Delete Spec";
+
+// Erreurs associees au dialogue
+
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.CoatingERR_0007.Title = "Warning";
+CATMSHCmdMeshPartCoating1D.CoatingDlg1D.CoatingERR_0007.Text  = "One of the selected support(s)
+has not the appropriate dimension;
+choose others supports.";
+
+
+
+
+

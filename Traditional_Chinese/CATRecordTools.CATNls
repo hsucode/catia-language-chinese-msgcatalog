@@ -1,0 +1,42 @@
+Usage = "
+V5 record capture file management utility.
+
+Usage: RecordTools -s name [-Check|-FindPath path |-FindCmd cmdname] [-h, -?, -help]
+       RecordTools -s name -d name -ChangePath    oldpath newpath [ID]
+       RecordTools -s name -d name -ChangeSubPath oldpath newpath
+       RecordTools -s name -d name -ChangeData  ID datapos newdata
+       RecordTools -s name -d name -ChangeEvent ID newevent
+       RecordTools -s name -d name -Delete ID
+       RecordTools -s name -d name -DeleteSubPath subpath
+
+   -h, -?, -help    : This help
+   -s name          : Name of source file (usually capture.rec)
+   -d name          : Name of the destination file
+
+   -Check           : Checks integrity of source file and displays it in xml format
+   -FindPath        : Finds CATCommand path in source file
+   -findCmd         : Finds CATCommand name in source file
+
+   -ChangePath      : Changes whole path 'oldpath' into 'newpath' everywhere unless 'ID' is specified
+   -ChangeSubPath   : Changes subpath 'oldpath' into 'newpath'
+   -ChangeData      : Changes data in record block 'ID' at position 'datapos' into 'newdata'
+   -ChangeEvent     : Changes event in record block 'ID' into 'newevent'
+   -Delete          : Deletes record block 'ID'
+   -DeleteSubPath   : Deletes all record blocks containing 'subpath'
+
+   ID               : Interaction ID in the form CRnnn or CInnn, as given by -Check option";
+
+Error.0  = "# RecordTools-ERROR: ";
+Error.1  = "-s: missing source file.";
+Error.2  = "destination file cannot be identical to source file.";
+Error.3  = "-d: missing destination file.";
+Error.4  = "Missing record block number.";
+Error.5  = "Missing subpath.";
+Error.6  = "-s: cannot find source file";
+Error.7  = "Argument not recognized.";
+Error.8  = "-s: cannot open source file";
+Error.9  = "-d: missing destination file.";
+Error.10 = "-d: destination file already exists.";
+Error.11 = "-d: destination directory does not exists.";
+
+Error.99 = "變數數目錯誤.";

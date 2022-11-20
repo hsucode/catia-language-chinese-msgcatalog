@@ -1,0 +1,196 @@
+// ============================================================================
+// ============================================================================
+// SWKHmiCatalogs English Message File
+// ============================================================================
+// ============================================================================
+
+// --- DlgCatalog Commands ----------------------------------------------------
+Commands.Mode.LargeIcons = "大型圖示";
+Commands.Mode.Details = "詳細";
+Commands.Chapter.Title = "目前: ";
+Commands.CurrentCombo.LongHelp = "目前章節和直接存取至上一目錄.";
+Commands.BackButton.ShortHelp = "返回至上一層章節";
+Commands.BackButton.LongHelp = "返回至上一層章節";
+Commands.ModeCombo.ShortHelp = "顯示模式";
+Commands.ModeCombo.LongHelp = "以小圖示來顯示目錄物件並預視,大圖示和細部.";
+Commands.TreeCheckButton.ShortHelp = "目錄樹";
+Commands.TreeCheckButton.LongHelp = "顯示目錄樹.";
+Commands.OpenButton.ShortHelp = "瀏覽另一目錄";
+Commands.OpenButton.LongHelp = "選擇另一目錄來瀏覽.";
+Commands.OpenFile.Title = "選擇要開啟的目錄或要轉換的資料庫";
+
+SWKDlgCatalogFilterAdvPanel.Title = "過濾器";
+SWKDlgCatalogFilterAdvPanel.Query.Basic.Query.NoKeyword.Label.Title = "無關鍵字";
+SWKDlgCatalogFilterAdvPanel.Query.Basic.Title = "基本";
+
+DlgCatalogFilterLabel.Title = "過濾器: ";
+FilterFrame.QueryCombo.ShortHelp = "輸入您的過濾器: x.LENGTH==4";
+FilterFrame.QueryCombo.LongHelp = "在編輯器中輸入您的過濾器, \n 例子 x.LENGTH==4 .";
+FilterFrame.Advanced.ShortHelp = "過濾器智慧定義";
+FilterFrame.Advanced.LongHelp = "顯示對話框來幫助您定義過濾器.";
+FilterFrame.Reset.ShortHelp = "清除過濾器";
+FilterFrame.Reset.LongHelp = "清除目前過濾器.";
+FilterFrame.CheckMulti.ShortHelp = "起動多重詢問";
+FilterFrame.CheckMulti.LongHelp = "讓您可由所選章節詢問目錄章節.";
+
+DlgCatalogTypeColumnDetails = "型式";
+ApplyUndoRedoTitle = "應用";
+SaveUndoTitle = "儲存在人體目錄";
+LoadUndoTitle = "由人體目錄載入";
+OldManikinData = "<未知>";
+
+// -- Load command ------------------------------------------------------------
+SWKHmiCatalogs.UndoTitle = "開啟目錄";
+SWKHmiCatalogs.RedoTitle = "開啟目錄";
+
+SWKHmiCatalogs.SelectManikin.UndoTitle = "選擇人體模型";
+SWKHmiCatalogs.SelectManikin.RedoTitle = "選擇人體模型";
+SWKHmiCatalogs.SelectManikin.Message = "選擇人體模型...";
+
+SWKHmiCatalogs.SelectSegment.UndoTitle = "環節選擇";
+SWKHmiCatalogs.SelectSegment.RedoTitle = "環節選擇;
+SWKHmiCatalogs.SelectSegment.Message = "選擇一或以上環節...";
+
+SWKHmiCatalogs.SwitchSelToManikinDlgAgent.UndoTitle = "更換至人體模型選擇";
+SWKHmiCatalogs.SwitchSelToManikinDlgAgent.RedoTitle = "更換至人體模型選擇";
+SWKHmiCatalogs.SwitchSelToSegmentDlgAgent.UndoTitle = "更換至人體模型選擇";
+SWKHmiCatalogs.SwitchSelToSegmentDlgAgent.RedoTitle = "更換至人體模型選擇";
+
+SWKHmiCatalogs.SelectElement.Message = "選擇要儲存的人體模型元素...";
+// --- Load dialog ------------------------------------------------------------
+CatalogsLoadDlg.Title = "由人體目錄 /p2 載入 /p1 ";
+DescriptionTitle = "說明";
+
+PushBCancel.Title = "關閉";
+
+SafeworkCatalogFiles.Title = "安全工作目錄檔案 (*.catalog)";
+SafeworkLibraryFiles.Title = "安全工作資料庫檔案 (*.swl)";
+AllFiles.Title = "全部檔案 (*.*)";
+SelectCatalogFile.Title  = "選擇目錄檔案";
+
+LibraryFileNotFound =
+"/p1
+未找到檔案.
+請驗證路徑和檔案名稱是否正確.";
+
+ErrorOpeningLibraryFile =
+"/p1
+無法開啟此檔案.
+請驗證存取權限 (讀/寫).";
+
+ErrorReadingLibraryFile =
+"讀取資料庫時發生錯誤:
+/p1";
+
+NoPartsInLibrary = "資料庫未含零件";
+
+EnvError = "檔案必須由檔案系統載入";
+
+DescNotSelected = "請選擇目錄說明.";
+ImpossibleToApply = "應用說明時發生錯誤.";
+
+DataNotFound =
+"無法定位相關說明的資料.";
+
+// -- Save dialog -------------------------------------------------------------
+CatalogsSaveDlg.Title = "儲存 /p1 在人體目錄";
+SaveButton.Title = "儲存";
+
+MainFrame.HeaderFrame.HeaderFrame.LabelMemo.Title = "表頭: ";
+
+Posture = "姿勢";
+PostureAndPosition = "姿勢和位置";
+GlobalPostureAndPosition = "總體姿勢和位置";
+LocalPostureAndPosition = "局部姿勢和位置";
+PostureAndPos.Type = "姿勢和位置";
+Multiple = "多重";
+
+LocalPosture = "局部姿勢";
+GlobalPosture = "總體姿勢";
+Position = "位置";
+Display = "顯示";
+Coloring = "著色";
+Appearance = "外觀";
+Vision = "視野";
+Attaches = "附加";
+Referential = "指示的";
+Locks = "鎖定";
+LocksDof1 = "鎖定 DOF1";
+LocksDof2 = "鎖定 DOF2";
+LocksDof3 = "鎖定 DOF3";
+Anthropometry = "人體測量";
+IKBehaviors = "IK 行為";
+SegmentsOffsets = "環節偏移";
+AngularLimitations = "角度限制";
+AngularLimitationsDof1 = "角度限制 DOF1";
+AngularLimitationsDof2 = "角度限制 DOF2";
+AngularLimitationsDof3 = "角度限制 DOF3";
+PreferredAngles = "偏好角度";
+PreferredAnglesDof1 = "偏好角度 DOF1";
+PreferredAnglesDof2 = "偏好角度 DOF2";
+PreferredAnglesDof3 = "偏好角度 DOF3";
+Load = "載入";
+Loads = "載入";
+Constraint = "拘束";
+Constraints = "拘束";
+Reports = "報告";
+Properties = "所有性質";
+All = "所有屬性";
+
+MemoMissing = "未輸入表頭.  請輸入表頭.";
+
+ConfirmCreation = 
+"檔案不存在.
+您要建立它嗎 ?";
+
+ConfirmCreation.Title = "確認";
+ConfirmConvert = 
+"您無法開啟資料庫.  您要在目錄檔案中轉換此資料庫嗎?";
+ConfirmConvert.Title = "確認";
+
+NoSelectedSegment = 
+"未選擇環節.
+請選擇環節.";
+
+DuplicateSelection =
+"重覆選擇環節.
+ 環節 '/p1' 已經被選擇超過一次";
+ 
+ModifiedSavedByOtherUser = 
+"無法儲存 /p1
+目前正被其它使用者修改和使用 : 繼續進行將會遺失修改.
+您要進行嗎?";
+
+ModifiedSavedByOtherUser.Title = "儲存 - 多重檔案存取";
+
+// ---- Error messages --------------------------------------------------------
+InternalError = "內部錯誤.";
+LicenseRequired = "須要軟體授權.";
+ManikinSelectionFailed = "交互式選擇失敗.";
+ErrorOpeningFile = "無法開啟檔案 '/p1'.";
+ErrorFileDoesntExist = "檔案 '/p1' 不存在.";
+ErrorFileCATSwlDoesntMatch = "目錄說明與檔案 '/p1' 不一致.";
+FileIsReadOnly = "檔案 '/p1' 為唯讀.";
+ErrorAppendingToFile = "附加至檔案錯誤";
+InvalidSelection = "無效選擇.";
+FamilyNotSelected = "未選擇家族.  請選擇家族.";
+SelectSegment = "未選擇環節.  局部複製必須至少選擇一個環節.";
+ManikinIsForearm = "無法由前臂模型儲存此種型式資料.";
+
+// ----- SWKHmiCatalogsLoadInfosDlg
+SWKHmiCatalogsLoadInfosDlg.Title = "選擇要附加和拘束的物件";
+Attach = "附加";
+ConstraintName = "拘束(/p1)";
+ClickAndSelectObject = "按一下此處再選擇物件";
+AttachCstMultiList.Column1 = "型式";
+AttachCstMultiList.Column2 = "環節";
+AttachCstMultiList.Column3 = "物件";
+ClearButton.Title = "清理";
+
+AttachCstMultiListDel.Column1 = "人體模型";
+AttachCstMultiListDel.Column2 = "拘束";
+AttachCstMultiListDel.Column3 = "型式";
+AttachCstMultiListDel.Column4 = "Segment";
+AttachCstMultiListDel.Column5 = "物件";
+DeleteButton.Title = "刪除";
+ContraintWillBeDeleted = "拘束將刪除";

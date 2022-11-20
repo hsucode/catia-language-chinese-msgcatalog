@@ -1,0 +1,97 @@
+//
+// -----------------------------
+// MeshPartSummary
+// -----------------------------
+//
+
+// Etats
+
+CATMSHCmdMeshPartSummary.SummaryInitialState.Message="¿ï¾Ü¨Ìªþ: ºô®æ¹s¥ó©Î¤ÀªR";
+CATMSHCmdMeshPartSummary.SelectNodeState.Message="¿ï¾Ü¸`ÂI";
+
+// NLS static dialogue principal
+
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.Title ="³s±µÁ`µ²";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.RBFrame.ReportLbl.Title="Á`µ²¥H: ";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.RBFrame.ReportLbl.ShortHelp="Lists connections between several analyses or mesh parts\nReport and hide/show will be done in terms of analyses or mesh parts";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.RBFrame.RBAnalysis.Title="¤ÀªR";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.RBFrame.RBAnalysis.ShortHelp="Lists connections between several analyses\nReport and hide/show will be done in terms of analyses";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.RBFrame.RBMeshPart.Title="ºô®æ¹s¥ó";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.RBFrame.RBMeshPart.ShortHelp="Lists connections between several mesh parts\nReport and hide/show will be done in terms of mesh parts";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.SelectionLbl.Title="¿ï¾Ü: ";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.SelectionLbl.ShortHelp="Defines the selection as an analysis or a mesh part (even a connection mesh part)";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.MoreInfoBtn.Title="§ó¦h¸ê°T";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.MoreInfoBtn.ShortHelp="Gathers all kind of information concerning one connection\nButton disabled when multi selection in the list above";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ShowMshLstPushBtn.Title="Åã¥Ü©Ò¦³ºô®æ²M³æ";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ShowMshLstPushBtn.ShortHelp="Shows all connection meshes and connected meshes of the list above";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ShowAllMshPushBtn.Title="Åã¥Ü©Ò¦³ºô®æ";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ShowAllMshPushBtn.ShortHelp="Shows all meshes of all analyses pointed by the root analysis";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.SavePushBtn.Title="¥þ³¡¦s¦¨ HTML ÀÉ®×";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.SavePushBtn.ShortHelp="Saves all connections of the list above in HTML file";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.NodeSelItem.Title="¸`ÂI¿ï¾Ü";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.NodeSelItem.Help="Retrieves all analyses or mesh parts connected to a node";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.ReframeOnSuppConnItem.Help="Multi selection not available for Reframe On command";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.ReframeOnMPCItem.Title="­«·sÅã¥Ü³s±µ";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.ReframeOnMPCItem.Help="Multi selection not available for Reframe On command";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.CenterGraphOnSuppConnItem.Help="Multi selection not available for Center Graph command";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.CenterGraphOnMPCItem.Title="³s±µÅã¥Ü¹Ï¤¤";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.CenterGraphOnMPCItem.Help="Multi selection not available for Center Graph command";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.HideSuppConnItem.Help="Multi selection available for Hide command";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.HideMPCItem.Title="ÁôÂÃ³s±µ";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.HideMPCItem.Help="Multi selection available for Hide command";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.ShowSuppConnItem.Help="Multi selection available for Show command";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.ShowMPCItem.Title="Åã¥Ü³s±µ";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.ShowMPCItem.Help="Multi selection available for Show command";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.SaveItem.Title="Àx¦s¿ï¾Ü¬° HTML ÀÉ®×";
+CATMSHCmdMeshPartSummary.MeshPartSummaryDlg.SelectionFrame.ListFrame.ListOfConnections.ListOfConnectionsList.ListOfConnectionsCtxMenu.SaveItem.Help="Saves selected elements of the list in HTML file (multi selection available)";
+
+// NLS dynamic dialogue principal
+
+InvalidSupport="Invalid/destroyed support";
+NoSelection="No selection";
+Analysis="Analysis";
+MeshPart="Mesh Part";
+ListColumn0="N°";
+ListColumn1="/P01 connected to the selection";
+ListColumn2="Selection connected by";
+ListReframeOnSuppConnItem="Reframe On Connected /P01";
+ListCenterGraphOnSuppConnItem="Center Graph On Connected /P01";
+ListHideSuppConnItem="Hide Connected /P01";
+ListShowSuppConnItem="Show Connected /P01";
+
+// NLS static dialogue "more info"
+
+CATMSHCmdMeshPartSummary.MeshPartSummaryInfoDlg.Title="Connection Information";
+CATMSHCmdMeshPartSummary.MeshPartSummaryInfoDlg.MPConnectionLbl.Title="Connection mesh part: ";
+CATMSHCmdMeshPartSummary.MeshPartSummaryInfoDlg.ConnectedSupportLbl.Title="Connected mesh part: ";
+CATMSHCmdMeshPartSummary.MeshPartSummaryInfoDlg.TableLbl.Title="Global information: ";
+CATMSHCmdMeshPartSummary.MeshPartSummaryInfoDlg.FreeTextLbl.Title="Specific information: ";
+
+// NLS dynamic dialogue "more info"
+
+InfoPrefix="Mesh Part: ";
+
+// NLS static dialogue "node selection"
+
+CATMSHCmdMeshPartSummary.MeshPartSummaryNodeSelDlg.Title="Node Selection";
+CATMSHCmdMeshPartSummary.MeshPartSummaryNodeSelDlg.NodeSelLbl.Title="The selected node is connected to: ";
+
+// NLS static dialogue "generate report"
+
+CATMSHCmdMeshPartSummary.CATMSHBasicReportDlg.DirectoryLbl.Title="Output directory: ";
+CATMSHCmdMeshPartSummary.CATMSHBasicReportDlg.TitleLbl.Title="Title: ";
+CATMSHCmdMeshPartSummary.CATMSHBasicReportDlg.DirWindow.Title="File Browser";
+
+// NLS dynamic dialogue "generate report"
+
+All="All";
+Selection="Selection";
+ReportTitle="Save /P01 in HTML File";
+
+// NLS pour dialogue notification
+
+WngTitle="Warning";
+WngTxt="Do you want to keep the current 3D-vizualisation ?";
+
+ErrorTitle="Error";
+ErrorTxt="Root analysis is not synchronized.\nSynchronize the root analysis.";

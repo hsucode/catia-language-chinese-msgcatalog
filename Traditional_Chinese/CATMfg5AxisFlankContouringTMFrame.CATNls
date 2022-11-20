@@ -1,0 +1,40 @@
+
+Title						= "局部驅動曲面 ";
+
+_pDriveFrame					= "驅動上預留";
+_pGuidanceFrame					= "刀軸導引";
+_pGapLookAheadFrame				= "局部加工往前尋找";
+
+MfgLocalToolAxisStrategy       			= "局部";
+MfgLocalToolAxisStrategy.LongHelp		= "指定加工目前驅動的刀軸導引.";
+
+Mfg5Axis4XNormalConstraintFlag 			= "啟動四軸";
+Mfg5Axis4XNormalConstraintFlag.LongHelp		= "如所選刀軸方式允許, 可指定局部四軸導引.
+刀軸將沿著刀側活動定義對話框中所定義的四軸限制平面.";
+
+MfgLocalDriveThicknessToAdd    			= "新增局部";
+MfgLocalDriveThicknessToAdd.LongHelp		= "指定在目前整體驅動上可增加的局部預留數值.";
+
+pDriveGlobalOffsetFrame				= "整體";
+pDriveGlobalOffsetFrame.LongHelp		= "顯示整體動作的預留值.";
+
+pGuidanceGlobalModeFrame			= "整體";
+pGuidanceGlobalModeFrame.LongHelp		= "顯示整體動作的刀軸導引動作.";
+
+Mfg5AxisLocalReStartingDirection			= "重新開始方向";
+Mfg5AxisLocalReStartingDirection.LongHelp	= "在目前驅動上依據加工前一驅動刀具停駐位置,
+指定局部重新開始方向";
+
+Mfg5AxisLocalStoppingCondition				= "停止情形";
+Mfg5AxisLocalStoppingCondition.LongHelp		= "在目前檢查元素上指定局部停止情形 (如 下一驅動元素)";
+
+Mfg5AxisLocalSwapSideOnDS					= "驅動元素的刀具側";
+Mfg5AxisLocalSwapSideOnDS.LongHelp			= "依據組態所指定的驅動元素刀具邊";
+
+_pNavigPrevButton				= " << ";
+_pNavigPrevButton.ShortHelp			= "顯示前一驅動";
+
+_pNavigNextButton				= " >> ";
+_pNavigNextButton.ShortHelp			= "顯示下一驅動";
+
+pNavigLabel					= "瀏覽:";

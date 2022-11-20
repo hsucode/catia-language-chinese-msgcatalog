@@ -1,0 +1,58 @@
+// --- Error catalog for PPRNBRegistry module
+
+persist_query_conn_error.Request    = "Persistency Query Services";
+persist_query_conn_error.Diagnostic = "Connection /p1 not valid";
+persist_query_conn_error.Advice     = "Please, check the connection or try later";
+
+persist_query_store_error.Request    = "Store Persistent Query";
+persist_query_store_error.Diagnostic = "An error has occurred";
+persist_query_store_error.Advice     = "Please, try later";
+
+persist_query_delete_error.Request    = "Delete Persistent Query";
+persist_query_delete_error.Diagnostic = "An error has occurred";
+persist_query_delete_error.Advice     = "Please, try later";
+
+load_query_error.Request    = "Load Queries";
+load_query_error.Diagnostic = "See parent error";
+load_query_error.Advice     = "Please, retry";
+
+save_query_error.Request    = "Save Queries";
+save_query_error.Diagnostic = "See parent error";
+save_query_error.Advice     = "Please, retry";
+
+load_adapters_setting_error.Request    = "Load Adapters";
+load_adapters_setting_error.Diagnostic = "See parent error";
+load_adapters_setting_error.Advice     = "Please, retry";
+
+save_adapters_setting_error.Request    = "Save Adapters";
+save_adapters_setting_error.Diagnostic = "See parent error";
+save_adapters_setting_error.Advice     = "Please, retry";
+
+load_adapter_setting_error.Request    = "Load Adapter /p1";
+load_adapter_setting_error.Diagnostic = "See parent error";
+load_adapter_setting_error.Advice     = "Please, retry";
+
+save_adapter_setting_error.Request    = "Save Adapter /p1";
+save_adapter_setting_error.Diagnostic = "See parent error";
+save_adapter_setting_error.Advice     = "Please, retry";
+
+load_user_settings_query_error.Request = "Load User Query Settings";
+load_user_settings_query_error.Diagnostic = "See parent error";
+load_user_settings_query_error.Advice     = "Please, retry";
+
+save_user_settings_query_error.Request = "Save User Query Settings";
+save_user_settings_query_error.Diagnostic = "See parent error";
+save_user_settings_query_error.Advice     = "Please, retry";
+
+user_settings_query_set_value.Request    = "Set User Query Settings";
+user_settings_query_set_value.Diagnostic = "Parameter /p1 does not support value /p2";
+user_settings_query_set_value.Advice     = "Try a different value";
+
+load_root_list_error.Request    = "Load Root List";
+load_root_list_error.Diagnostic = "See parent error";
+load_root_list_error.Advice     = "Please, retry";
+
+save_root_list_error.Request    = "Save Root List";
+save_root_list_error.Diagnostic = "See parent error";
+save_root_list_error.Advice     = "Please, retry";
+

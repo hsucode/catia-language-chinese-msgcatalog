@@ -1,0 +1,204 @@
+//NLS-ENGLISH VERSION
+//=======================================================================
+// MODULE :  DataExchangeInfrastructure
+//=======================================================================
+//
+//	2001-06-20 : JRX : Legende pour en-tete des fichiers .err
+//	2001-07-02 : JRX : Ajout du niveau en en-tete des .err
+//  10/07/2001: CRB: Service de gestion memoire et evitement CD
+//	2001-07-12 : JRX : Mode DEBUG
+// 2001-08-03 : YFZ: New message dans le pour afficher la tolerence et 
+//                   le Mode d'optimisation C2
+// 2001-09-27 : RNO : New Messages for Geometric Properties
+// 2002-02-27 : ARH : GVP_Part: New Messages for Geometric Properties
+// 2002-07-01 : ARH : GVP_Assembly
+// 2002-08-21 : KVL : GVP (total area, length)
+// 2003-11-04 : ARH : Ajout CentroidRead pour GVP
+// 2004-06-15 : JHH : Message d'interruption utilisateur
+//-----------------------------------------------------------------------
+
+
+//
+//--------------------------------------
+//  Messages from CATExchangeErr
+//--------------------------------------
+// JRX - 2001-06-20
+
+CATExchangeErr.Head.Legende =
+"============================================
+*** = 處理新獨立元素
+  * = 中間處理
+!!  = 獨立元素 K.O.
+!   = 中間錯誤
+--------------------------------------------
+<I> = 資訊
+<W> = 警告
+<E> = 錯誤
+--------------------------------------------
+[0000]  = 訊息編號 : 0000";
+
+
+CATExchangeErr.Head.Interface =
+"[T=xxx] = 元素型式 : xxx
+[#0000] = 元素命名號碼 : 0000
+============================================";
+
+
+// JRX - 2001-07-02
+// Niveau d'affichage courant :
+
+CATExchangeErr.Level.Client =
+"真實顯示等級 : 客戶";
+
+CATExchangeErr.Level.Maintenance =
+"真實顯示等級 : 維護";
+
+CATExchangeErr.Level.Develop =
+"真實顯示等級 : 發展 (D)
+可用顯示等級 : Maintenance (M)";
+
+CATExchangeErr.Level.Stat =
+"真實顯示等級 : 維護 (S)
+可用顯示等級 : 維護 (M), 發展 (D)";
+
+CATExchangeErr.Level.Debug =
+"真實顯示等級 : <D> Debug
+可用顯示等級 : 維護 (M), 發展 (D), 統計 (S)";
+
+CATExchangeErr.Level.No =
+"真實顯示等級 : Undetermined
+顯示等級 : 維護 (M), 發展 (D), 統計 (S)";
+
+//
+//--------------------------------------
+//  Messages from CATReport
+//--------------------------------------
+
+//
+
+// Message Window
+CATReport.Msg.Input ="輸入檔: ";
+
+
+// Message Window
+CATReport.Msg.Output ="輸出檔: ";
+
+// Message Window
+CATReport.Msg.Detail ="~~~~~~~~~~~~~~~~~DETAILED CONVERSION~~~~~~~~~~~~~~~~~ ";
+
+// Message Window
+CATReport.Msg.Type ="  類型: ";
+
+// Message Window
+CATReport.Msg.Transferred ="   轉移正確的";
+
+// Message Window
+CATReport.Msg.Degenerated ="   衰退 ";
+
+// Message Window
+CATReport.Msg.Unsupported ="   沒有依附 ";
+
+// Message Window
+CATReport.Msg.NoTransferred ="   由於沒有依附下層(child)以致沒有轉移 ";
+
+// Message Window
+CATReport.Msg.BadTransferredTopology ="   拓撲轉移失敗";
+
+// Message Window
+CATReport.Msg.OutSize ="   在模型尺寸以外 ";
+
+// Message Window
+CATReport.Msg.BadTransferredGeometry ="   幾何轉移失敗 ";
+
+// Message Window
+CATReport.Msg.Summary ="~~~~~~~~~~~~~~~~~CONVERSION SUMMARY~~~~~~~~~~~~~~~~~ ";
+
+// Message Window
+CATReport.Msg.Time =" 抄寫時間: ";
+
+// Message Window
+CATReport.Msg.Invalide ="   無效的 ";
+
+
+
+
+
+
+// Message Window
+CATReport.Msg.Column1 = " 本體類型";
+// Message Window
+CATReport.Msg.Column2 = " OK ";
+// Message Window
+CATReport.Msg.Column3 = " KO ";
+// Message Window
+CATReport.Msg.Column4 = " NS ";
+// Message Window
+CATReport.Msg.Column5 = " OUT ";
+// Message Window
+CATReport.Msg.Column6 = " DEG ";
+// Message Window
+CATReport.Msg.Column7 = " INV ";
+
+
+
+
+CATReport.Msg.Bilan = " 結果 ";
+
+
+// Message Window
+CATReport.Msg.2 = " OK = 轉移 ";
+// Message Window
+CATReport.Msg.3 = " KO = 沒有轉移";
+// Message Window
+CATReport.Msg.4 = " NS = 沒有依附 ";
+// Message Window
+CATReport.Msg.5 = " OUT = 在尺寸以外";
+// Message Window
+CATReport.Msg.6 = " DEG = 衰退 ";
+// Message Window
+CATReport.Msg.7 = " INV = 無效的 ";
+
+// Message Window join
+CATReport.Msg.Join ="~~~~~~~~~~~~~~~~~RESULT OF JOIN OPTION~~~~~~~~~~~~~~~~~ ";
+// Message Window join
+CATReport.Msg.joinresult =" 建立在連接修剪面的薄殼 : ";
+// Message Window join
+CATReport.Msg.joinresultKo =" 嚐試連接的失敗次數 : ";
+
+//messages pour Layers
+CATReport.Msg.Layers ="此檔案中的很多檔案與圖層相關 :";                                           
+
+//Service de gestion memoire et evitement CD
+CATReport.Msg.MemoryLow ="低記憶體情形: 檔案部分轉換. 請增加記憶體數量.";
+
+
+//message pour la tolerance et le Mode d'optimisation C2
+CATReport.Msg.Tolerance = "最佳化 C2 連續 : ";
+CATReport.Msg.Automatic ="最佳化 C2 連續模式.";
+CATReport.Msg.Manuel ="最佳化 C2 連續手動模式.";
+CATReport.Msg.NoDeformation ="最佳化 C2 連續未變形模式.";
+
+//Geometric Properties Messages  
+CATReport.Msg.ComputedProperties = "已計算性質 : ";
+CATReport.Msg.ReadProperties = "讀取性質 : ";
+CATReport.Msg.ValidationPropertiesOK = "有效性成功 : ";
+CATReport.Msg.ValidationPropertiesKO = "有效性失敗 : ";
+CATReport.Msg.NoGVPAvailable=" 不可用";
+CATReport.Msg.SolidVolume = "體積 : ";
+CATReport.Msg.Centroid = "質量中心 : ";
+CATReport.Msg.CentroidRead = "中心讀取:";
+CATReport.Msg.Area = "面積 : ";
+CATReport.Msg.AreaTotal = "總體面積:";
+CATReport.Msg.Length = "長度:";
+CATReport.Msg.LengthTotal = "總體長度:";
+CATReport.Msg.ErrorRatio = "錯誤比例:";
+CATReport.Msg.ErrorDistance = "質量中心位置錯誤:";
+CATReport.Msg.CheckGVP = "幾何有效性質檢查:";
+CATReport.Msg.MaxErrorGVP = "最大錯誤:"; 
+CATReport.Msg.GVPCheckInstance = "在組立中檢查產品的元件位置";
+CATReport.Msg.GVPCheckProduct = "在組立中檢查產品的有效性質";
+
+// Interrupt button
+CATReport.Msg.Interrupt ="<I> 使用者中止轉換.";
+
+

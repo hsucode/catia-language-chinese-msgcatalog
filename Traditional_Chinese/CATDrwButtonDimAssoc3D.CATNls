@@ -1,0 +1,31 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwDimensionFrame
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    
+// DATE        :    26.11.1999
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    Tools/Option du Drafting
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//=====================================================================================
+
+Title="3D 上的尺寸關聯";
+//frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D.locked.Title="3D 上的關聯";
+frameDimAssoc3D.HeaderFrame.Global.Title = "3D 上的關聯";
+
+frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D.locked._radioDimForce2DAlways.Title="只建立非-關聯尺寸";
+frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D.locked._radioDimForce2DAlways.LongHelp="只建立3D 上沒有關聯的尺寸.";
+
+frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D.locked._radioDimForce2DWhenPb.Title="允許非-關聯尺寸";
+frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D.locked._radioDimForce2DWhenPb.LongHelp="建立 3D 上沒有關聯的尺寸
+只有 3D 關聯是不可能時.";
+
+frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D.locked._radioDimForce2DNever.Title="從不建立非-關聯尺寸";
+frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D.locked._radioDimForce2DNever.LongHelp="從不建立 3D 上沒有關聯的尺寸.";

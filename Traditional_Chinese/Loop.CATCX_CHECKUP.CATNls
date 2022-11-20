@@ -1,0 +1,121 @@
+//------------------------------------------------------
+// Resource file for internal Topological Check-Up 
+// En_EN
+//----------------------------------------------------------------------
+// CAUTION : each index is of maximum length of seventy-two characters !
+//-----------------------------------------------------------------------
+//
+VerticesConnexity.Ambiguous=
+"不是含有 /P3 個邊線的 /P2.";
+//
+//
+EmptyUV.LoopBoundingBox =
+"has an UV bounding Box defined as empty, where it contains at least one /P2.";
+//
+//        *******************************************************
+//        *  Bounding in Loop : primray data checker
+//        *******************************************************
+//
+GeometryMatterSide = 
+"/P5 location match /P6 orientation (/P4 Edges on /P2, /P3).";
+//
+GeometryMatterSide.failed = 
+"/P5 location mismatch /P6 orientation (/P4 Edges on /P2, /P3).";
+//
+ClosedEdges =
+"/P2 adjacent closed Edges, max UV gap (POEC on PCurve) /P3 compared to resolution /P4.";
+//
+PCurveOnSurface =
+"all /P4 PCurve(s) belongs to /P3 of /P2.";
+//
+PCurveOnSurface.Distinct =
+"/P6 (support of /P5) belongs to /P4 and not native support /P3 of /P2.";
+//
+//        *******************************************************
+//        *  Bounding in Loop : primray data checker
+//        *******************************************************
+//
+BoundingEdge.InvalidEdge = 
+"is bounding a non valid Edge /P2.";
+//
+//    *******************************************************************
+//    *  LOOP rule : geometrical consistency of orientations of PCurves
+//    *******************************************************************
+//
+CATOrientationLoop.throw = " unable to validate MatterSide of PCurves with exception thrown under CATOrientationLoop.";
+//
+//    *******************************************************************
+//    *  LOOP rule : coherence of active body status
+//    *******************************************************************
+//
+ActiveBody="Upward Links status in context of active /P2.";
+ActiveBody.Incoherent = "Upward Links status incoherent in context of Active /P2.";
+//
+//    *******************************************************************
+//    *  LOOP rule : Geometry of Edges do not intersect itself
+//    *******************************************************************
+//
+Geometry.Incomplete =
+"/P2 of  [/P3,/P4] with incomplete geometry (Poec,PCurve,Surface : [(/P5,/P7,/P9),(/P6,/P8,/P10)].";
+//
+//
+//    *******************************************************************
+//    *  LOOP rule : coherence interne de la Loop
+//    *******************************************************************
+//
+AdjacentEdges.NoEdge =
+"is empty, no Edge has been found.";
+//
+AdjacentEdges.OneEdge =
+"is made of only one Edge /P2 (Not supported for Inner/Outer Loop in CXR1 version)";
+//
+AdjacentEdges.SameEdgeTwice =
+"is made of /P2 encountered at least twice in Loop.";
+//
+//    *******************************************************************
+//    *  LOOP rule : adjacent edges
+//    *******************************************************************
+//
+//         ------------------------------------------------------
+//         --   Trivial check on Type or value of orientation
+//         -------------------------------------------------------
+AdjacentEdges.AbortedEdge =
+" failed on internal chain of edges on /P2-th Edge of Loop.";
+//
+AdjacentEdges.InvalidEdge =
+"is made of invalid Edge [/P2,/P3] when checking the /P4-th Edge of Loop.";
+//
+AdjacentEdges.InvalidOrientation =
+"is made of /P2 with no valid relative orientation in Loop.";
+//
+AdjacentEdges.InvalidVertices =
+"is made of invalid Vertices /P4 -> /P5 when checking continuity of Edge [/P2,/P3].";
+//
+//         ------------------------------------------------------
+//         --   True failure of Loop made of non connexe edges
+//         -------------------------------------------------------
+//
+AdjacentEdges.DisjointVertices =
+"is made of successive Edge [/P2,/P3] who do not share the same vertex: [/P4,/P5].";
+//
+AdjacentEdges.BooleanAdjacence =
+"successive Edge [/P2,/P3] failed on AdjacentVertex [/P4,/P5] (Loop->done() needed ?).";
+//
+//    *******************************************************************
+//    *  LOOP rule : consistency of Boolean data
+//    *******************************************************************
+//
+BoundingEdge.BooleanData =
+"is made of unexpected BooleanData (pure instance of class CATSubdBoundingEdge).";
+//
+//
+//    *******************************************************************
+//    *  DOMAIN rule : at most one owner in a given Body
+//    *******************************************************************
+Topology.Touched =
+"is a touched topology (temporary attribute for boolean operation or smartduplication).";
+//
+OwnerInBody.many =
+"has many owners inside /P4 : (/P5-th of /P7 inside /P2) and (/P6-th of /P8 inside /P3).";
+//
+ 

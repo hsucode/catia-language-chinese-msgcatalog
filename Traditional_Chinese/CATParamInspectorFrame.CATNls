@@ -1,0 +1,77 @@
+// COPYRIGHT DASSAULT SYSTEMES  1997
+//=============================================================================
+//
+// Catalog for CATParamInspectorFrame class
+//
+//=============================================================================
+// 10/22/97   Creation                                   A. Anquetil
+//============================================================================
+
+frIncremental.cbincremental.ShortHelp="勾選在最佳化模式工作 (以選擇建構增量數清單)";
+frIncremental.cbincremental.LongHelp = "在此編輯器, 您可決定是否在增量模式工作.\n",
+												 "增量模式意味您必須選擇增量特徵來存取參數 \n",
+												 ". 它是執行模式. \n",
+												 "非增量模式意味著所有的應用參數 \n",
+												 "必須在開始時即知道.";
+
+//bouton delete
+buttons.pbdelete.Title = "刪除參數";
+buttons.pbdelete.Help = "刪除目前參數";
+buttons.pbdelete.LongHelp = "於參數表中刪除所選參數.";
+
+//bouton add formula
+buttons.pbnewf.Title = "加入公式";
+buttons.pbnewf.Help = "於目前參數中加入另一公式";
+buttons.pbnewf.LongHelp = "將會進入公式編輯器讓您能在所選參數中加入另一公式.";
+
+//bouton delete formula
+buttons.pbdeletef.Title = "刪除公式";
+buttons.pbdeletef.Help = "刪除目前公式";
+buttons.pbdeletef.LongHelp = "刪除參數所附的公式.";
+
+//combo filtre
+CATParamInspectorFrame.plabel_.Title = "加過濾器在";
+combo.combo.LongHelp = "您可選擇想要顯示的參數型式表.\n當您選擇全部時, \n您可在3D視窗中選擇特徵或歷程樹來過濾參數.\n所選的特徵參數將會顯示於表列.";
+
+//warning
+CATParamInspectorFrame.Warning_.Title = "警告";
+CATParamInspectorFrame.FormatWarning_.Text = "您只可以刪除新加入零件的參數. \n 刪除特徵參數須將特徵一同刪除.";
+CATParamInspectorFrame.DeleteForbidden.Text = "您只可以刪除新加入零件的關聯. \n 應用程式所建立的關聯只可以該應用程式刪除.";
+
+//filtre
+CATParamInspectorFrame.LstFilter_.All = "全部";
+CATParamInspectorFrame.LstFilter_.RenamedParam = "更改參數名稱";
+CATParamInspectorFrame.LstFilter_.HiddenParam = "隱藏參數";
+CATParamInspectorFrame.LstFilter_.VisibleParam = "可見參數";
+CATParamInspectorFrame.LstFilter_.UserParam = "使用者參數";
+
+//explication
+explanation_.Title = "雙按參數來編輯";
+
+
+CATParamInspectorFrame.DeleteConfirmation_.Title = "刪除";
+CATParamInspectorFrame.ParamDeleteConfirmation_.Text = "您確定要刪除參數 /P1嗎 ?";
+CATParamInspectorFrame.FormulaDeleteConfirmation_.Text = "您確定要刪除參數 /P1嗎 ?";
+
+//combo WithEnumerateValues-WithRange-WithTolerance
+buttons.plabelwith_.Title = " 與 ";
+CATParamInspectorFrame.pcombwith_.Line1 = "單一值";
+CATParamInspectorFrame.pcombwith_.Line2 = "多重值";
+
+frIncremental.pbimport.Title = "輸入...";
+frIncremental.pbimport.ShortHelp = "允許您從Excel或表列式檔案建立參數和公式";
+frIncremental.pbimport.Help = "允許您從Excel或表列式檔案建立參數和公式";
+frIncremental.pbimport.LongHelp = "允許您從Excel或表列式檔案建立參數和公式. \n",
+"檔案格式必須如下列 :\n",
+"<Name Of Parameter1> <Value Of Parameter1> <Formula Of Parameter1 (optional)> <Comment Of Parameter1 (optional)>\n",
+"...\n",
+"<Name Of ParameterN> <Value Of ParameterN> <Formula Of ParameterN (optional)> <Comment Of ParameterN (optional)>\n",
+"如您使用來源檔當做文字檔, 行間必須用 tab 來間隔.\n",
+"參數形式是由數值引出, 所以您必須加入參數的單位";
+
+// Title of import file dialog
+FileTitleNT="請選擇 Excel 活頁簿, 或有間隔的文字檔";
+FileTitleUNIX="選擇 有間隔的文字檔";
+ImportError="輸入錯誤";
+ImportBilanMsg="參數 /P1 和公式 /P2已建立";
+ImportBilanHeader="輸入成功";

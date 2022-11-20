@@ -1,0 +1,816 @@
+MfgLatheOperationSU = "車床步序";
+MfgLatheOperation = "車床步序";
+
+//========================
+// Roughing operation
+//========================
+MfgLatheLongRoughSU = "粗車";
+MfgLatheLongRough = "粗車";
+
+MfgLatheStockClearance = "材料預留量";
+MfgLatheStockClearance.LongHelp = "定義垂直於材料斷面的預留量";
+
+MfgLatheGlobalPartThickness = "元件上厚度";
+MfgLatheGlobalPartThickness.LongHelp = "定義垂直於元件斷面的整體厚度";
+
+MfgLatheAxialPartOffset = "元件上軸預留";
+MfgLatheAxialPartOffset.LongHelp = "沿主軸方向預留元件斷面 \n 一個指定大小.";
+
+MfgLatheRadialPartOffset = "元件上徑向預留";
+MfgLatheRadialPartOffset.LongHelp = "垂直於主軸方向預留元件斷面 \n 一個指定大小.";
+
+MfgLatheDepthOfCut = "最大加工深度";
+MfgLatheDepthOfCut.LongHelp = "指定路徑間的最大距離";
+
+MfgLatheAxialDepthOfCut = "切削的軸向深度";
+MfgLatheAxialDepthOfCut.LongHelp = "沿徑向切深, \n 它決定平行輪廓粗車路徑間的最大距離";
+
+MfgLatheRadialDepthOfCut = "切削的徑向深度";
+MfgLatheRadialDepthOfCut.LongHelp = "沿軸向切深, \n 它決定平行輪廓粗車路徑間的最大距離";
+
+MfgLathePlungeDistance = "插刀前距離";
+MfgLathePlungeDistance.LongHelp = "定義在相對切削方向的每一個新的加工路徑前的插刀向量距離";
+
+MfgLathePlungeAngle = "插刀前角度";
+MfgLathePlungeAngle.LongHelp = "定義在相對切削方向的每一個新的加工路徑前的插刀向量角度";
+
+MfgLatheLeadInDistance = "切入距離";
+MfgLatheLeadInDistance.LongHelp = "定義相對切削方向和零件斷面的切入路徑長度, 
+\n 可能含零件預留值";
+
+MfgLatheLeadInAngle = "切入角度";
+MfgLatheLeadInAngle.LongHelp = "定義切入路徑的角度. 如果沒有必須的切入角度 \n , 則切入路徑平行於加工方向";
+
+MfgLatheAttackDistance = "Attack 距離";
+MfgLatheAttackDistance.LongHelp = "定義相對切削方向和零件斷面的 Attack 路徑長度, 
+\n 可能含零件預留值";
+
+MfgLatheLiftOffDistance = "提刀距離";
+MfgLatheLiftOffDistance.LongHelp = "定義相對於切削方向的每一個新路徑結束時的 \n 提刀路徑的長度";
+
+MfgLatheLiftOffAngle = "提刀角度";
+MfgLatheLiftOffAngle.LongHelp = "定義相對於切削方向的每一個新路徑結束時的 \n 提刀路徑的角度 ";
+
+MfgLatheStartLimitClearance = "起始限制預留量";
+MfgLatheStartLimitClearance.LongHelp = "指定起始元素的預留量";
+
+MfgLatheModeStart = "起始限制模式";
+MfgLatheModeStart.LongHelp = "允許您指定點,線或曲線當作加工的起始斷面.
+\n 起始加工位置也相對此元素來定義.";
+
+MfgLatheEndLimitClearance = "結束限制預留量";
+MfgLatheEndLimitClearance.LongHelp = "指定結束元素的預留量";
+
+MfgLatheModeEnd = "結束限制模式";
+MfgLatheModeEnd.LongHelp = "允許您指定點,線或曲線當作加工的結束斷面.
+\n 起始加工位置也相對此元素來定義.";
+
+MfgLatheRoughingStrategy = "粗車模式";
+MfgLatheRoughingStrategy.LongHelp = "允許您選擇所需的粗車模式 : \n 軸向,  修剪面或平行斷面";
+
+MfgLatheContouringMode = "加工零件斷面";
+MfgLatheContouringMode.LongHelp = "以下列方式指定軸向和粗車修剪面的斷面形式 \n 來清理零件斷面 :\n 無:  沒有斷面 \n 每一路徑 : 隨著每一零件斷面 \n 只有最後路徑 : 只有最後粗車路徑沿著斷面.";
+//========================
+// Grooving operation
+//========================
+MfgLatheGroovingSU = "車槽";
+MfgLatheGrooving = "車槽";
+
+MfgLatheGroovingOrientation = "方向";
+MfgLatheGroovingOrientation.LongHelp = "定義完成材料和零件幾何間的修剪
+\n 來決定加工區域.";
+
+MfgLatheMaxLevelDepth = "高度的最大深度";
+MfgLatheMaxLevelDepth.LongHelp = "在多重-高度車槽中,定義每一高度的最大深度.";
+
+MfgLatheInclineAngle = "傾斜角度";
+MfgLatheInclineAngle.LongHelp = "對於傾斜方向, 定義傾斜角度.";
+
+MfgLatheChipBreak	= "切斷切屑";
+MfgLatheChipBreak.LongHelp	= "指定在加工時是否要清除切屑.";
+
+MfgLatheFirstPlungePos = "第一插入位置";
+MfgLatheFirstPlungePos.LongHelp = "以可用選項之一依據槽的方向指定第一插入位置.";
+
+MfgLatheNextPlungePos = "下一插入位置";
+MfgLatheNextPlungePos.LongHelp = "如設定中心為第一插入位置, 您可依據端面加工刀軸 \n 內部或外部加工的材料起始位置 \n- 斜槽加工 \n 來指定下一插入位置.";
+
+MfgLatheGroovingContouringMode = "加工零件斷面";
+MfgLatheGroovingContouringMode.LongHelp = "槽加工結束時執行斷面加工";
+
+MfgLatheGrooveByLevel = "漸層槽加工";
+MfgLatheGrooveByLevel.LongHelp = "允許多層次加工槽.";
+
+MfgLatheChipPlungeDistance = "切屑插入距離";
+MfgLatheChipPlungeDistance.LongHelp = "指定需要清除切屑時的插入距離.";
+
+MfgLatheChipRetractDistance = "清除切屑時的退刀距離";
+MfgLatheChipRetractDistance.LongHelp = "指定需要清除切屑時的退刀距離.";
+
+MfgLatheChipClearDistance = "清除切屑時的安全距離";
+MfgLatheChipClearDistance.LongHelp = "指定需要清除切屑時的安全距離";
+
+
+//========================
+// Profile Finishing operation
+//========================
+MfgLatheProfileFinishSU = "斷面精加工";
+MfgLatheProfileFinish = "車床斷面精加工";
+
+MfgLatheLeadInRadius                = "切入半徑";
+MfgLatheLeadInRadius.LongHelp       = "定義圓形切入路徑的半徑.";
+
+MfgLatheLiftOffRadius               = "提刀半徑";  
+MfgLatheLiftOffRadius.LongHelp      = "定義圓形提刀路徑的半徑.";
+
+MfgLatheFirstCornerProcessing         = "進入圓角";
+MfgLatheFirstCornerProcessing.LongHelp= "定義要清除的進入圓角";
+
+MfgLatheLastCornerProcessing          = "退出圓角";
+MfgLatheLastCornerProcessing.LongHelp = "定義要清除的退出圓角";
+
+MfgLatheCornerProcessing              = "其它圓角";
+MfgLatheCornerProcessing.LongHelp     = "定義要清除的其它圓角";
+ 
+MfgLatheInvertLeadInDistance          = "反轉切入距離";
+MfgLatheInvertLeadInDistance.LongHelp = "加工逆轉曲面前的刀具路徑長度";
+
+MfgLatheInvertLiftOffDistance          = "反轉提刀距離";
+MfgLatheInvertLiftOffDistance.LongHelp = "刀具離開逆轉加工面時的路徑長度";
+
+MfgLatheInvertLiftOffRadius          = "反轉提刀半徑";
+MfgLatheInvertLiftOffRadius.LongHelp = "刀具離開逆轉加工面時的路徑長度";
+
+MfgLatheInvertLiftOffAngle          = "反轉提刀角度";
+MfgLatheInvertLiftOffAngle.LongHelp = "刀具離開逆轉加工面時的路徑方向";
+
+MfgLatheInvertThickness          = "逆轉厚度";
+MfgLatheInvertThickness.LongHelp = "逆轉元素首次所剩厚度";
+
+MfgLatheInvertClearance          = "逆轉容差";
+MfgLatheInvertClearance.LongHelp = "逆轉元素首次所剩未加工區域";
+
+MfgLatheInvertOverlap          = "逆轉重疊";
+MfgLatheInvertOverlap.LongHelp = "逆轉元素上加工兩次的距離";
+
+MfgLatheInvertOption              = "先加工逆轉元素";
+MfgLatheInvertOption.LongHelp     = "允許選擇加工逆轉或一般元素的優先度";
+
+MfgLatheInvertStrategy          = "逆轉方式";
+MfgLatheInvertStrategy.LongHelp = "允許選擇加工逆轉元素的方式 ";
+
+MfgLatheInvertLiftOffType          = "逆轉退刀形式";
+MfgLatheInvertLiftOffType.LongHelp = "逆轉加工曲面的刀具路徑形式 \n 圓弧或直線";
+
+MfgLatheFirstChamferLength            = "倒角長度";
+MfgLatheFirstChamferLength.LongHelp   = "以指定的數量倒斷面的 90 度圓角.";
+
+MfgLatheFirstCornerAngle              = "圓角角度";
+MfgLatheFirstCornerAngle.LongHelp     = "斷面的第一個圓角是圓的";
+
+MfgLatheFirstCornerRadius             = "圓角半徑";
+MfgLatheFirstCornerRadius.LongHelp    = "斷面的第一個圓角是圓的";
+
+MfgLatheLastChamferLength             = "倒角長度";
+MfgLatheLastChamferLength.LongHelp    = "只有斷面的 90 度圓角是倒角";
+
+MfgLatheLastCornerAngle               = "圓角角度";
+MfgLatheLastCornerAngle.LongHelp      = "斷面的最後一個圓角是圓的";
+
+MfgLatheLastCornerRadius              = "圓角半徑";
+MfgLatheLastCornerRadius.LongHelp     = "斷面的最後一個圓角是圓的";
+
+MfgLatheChamferLength                 = "倒角長度";
+MfgLatheChamferLength.LongHelp        = "只有斷面的 90 度圓角是倒角";
+
+MfgLatheCornerRadius                  = "圓角半徑";
+MfgLatheCornerRadius.LongHelp         = "斷面的所有圓角是圓的";
+
+//========================
+// Recessing operation
+//========================
+MfgLatheRecessingSU = "退刀";
+MfgLatheRecessing = "退刀";
+
+//========================
+// Threading operation
+//========================
+MfgLatheThreadingSU = "車螺紋";
+MfgLatheThreading = "車螺紋";
+
+MfgLathePitch                            = "牙數";
+MfgLathePitch.LongHelp                   = "定義螺紋牙數";
+
+MfgLatheThreadDepth                      = " 深度";
+MfgLatheThreadDepth.LongHelp             = "定義螺紋深度";
+
+MfgLatheThreadLength                     = "長度";
+MfgLatheThreadLength.LongHelp            = "定義螺紋長度";
+
+MfgLatheNominalDiameter                  = "公稱直徑.";
+MfgLatheNominalDiameter.LongHelp         = "定義公稱直徑";
+
+MfgLatheCrestDiameterClearance           = "在 crest 直徑的預留值";
+MfgLatheCrestDiameterClearance.LongHelp  = "定義螺蚊 crest 直徑的預留值.";
+
+MfgLatheThreadProfile = "斷面";
+MfgLatheThreadProfile.LongHelp = "允許定義特定螺紋斷面.";
+
+MfgLatheThreadOrientation = "方向";
+MfgLatheThreadOrientation.LongHelp = "指定依據螺紋的所需加工形式 : 外部或內部.";
+
+MfgLatheMdLocation = "位置";
+MfgLatheMdLocation.LongHelp = "位置";
+
+MfgLatheThreadUnit = "螺紋單位";
+MfgLatheThreadUnit.LongHelp = "指定其它的螺紋斷面形式. \n 螺紋單位自動設定成 : \n - ISO 和 Trapezoidal 斷面的 Pitch \n - UNC 和 Gas 斷面的每寸螺紋.";
+
+MfgLatheThreadPerInchNumber = "單位英寸螺紋";
+MfgLatheThreadPerInchNumber.LongHelp = "定義單位英寸螺紋";
+
+MfgLatheThreadNumber = "螺紋數目";
+MfgLatheThreadNumber.LongHelp = "當大於 1, 此值允許您加工多重螺紋.";
+
+MfgLatheThreadMachining = "螺紋型式";
+MfgLatheThreadMachining.LongHelp = "設定所需加工的螺紋型式 :\n - 常數切深 \n - 常數切面";
+
+MfgLatheThreadPenetration = "螺紋穿透";
+MfgLatheThreadPenetration.LongHelp = "指定加工螺紋的進入形式.";
+
+MfgLathePenetrationAngle = "穿透角度";
+MfgLathePenetrationAngle.LongHelp = "指定加工螺紋的穿透角度";
+
+MfgLatheMaxConstantDepthOfCut = "切深";
+MfgLatheMaxConstantDepthOfCut.LongHelp = "當設定螺紋為常數切深時的最大切深.";
+
+MfgLatheConstantsectionPassNumber = "刀具路徑數目";
+MfgLatheConstantsectionPassNumber.LongHelp = "當設定螺紋為常數切面時指定的刀具路徑數目";
+
+MfgLatheThreadFirstPasses = "第一路徑";
+MfgLatheThreadFirstPasses.LongHelp = "允許管理常數切面的第一穿透路徑.";
+
+MfgLatheFirstPassNumber = "第一路徑數目";
+MfgLatheFirstPassNumber.LongHelp = "管理常數切面的第一路徑數目";
+
+MfgLatheFirstSectionRate = "第一路徑切面比率";
+MfgLatheFirstSectionRate.LongHelp = "決定第一路徑的常數切面";
+
+MfgLatheThreadLastPasses = "最後路徑";
+MfgLatheThreadLastPasses.LongHelp = "允許管理最後路徑的常數切面穿透.";
+
+MfgLatheLastPassNumber = "最後路徑數目";
+MfgLatheLastPassNumber.LongHelp = "管理最後路徑的常數切面路徑數目";
+
+MfgLatheLastPassDepthOfCut = "最後路徑深度";
+MfgLatheLastPassDepthOfCut.LongHelp = "決定最後的路徑深度";
+
+MfgLatheThreadSpringPasses = "螺紋數目";
+MfgLatheThreadSpringPasses.LongHelp = "允許您要求常數切面的螺紋數目";
+
+MfgLatheSpringPassNumber = "螺紋路徑數目";
+MfgLatheSpringPassNumber.LongHelp = "允許您要求常數切面的螺紋路徑數目";
+//========================
+// Groove Finishing operation
+//========================
+MfgLatheGrooveFinishSU = "車槽精加工";
+MfgLatheGrooveFinish = "車槽精加工";
+
+MfgLatheFirstFlankLeadInType = "第一刀腹切入";
+MfgLatheFirstFlankLeadInType.LongHelp = "定義第一刀腹切入為直線或圓弧";
+
+MfgLatheLastFlankLeadInType = "最後刀腹切入";
+MfgLatheLastFlankLeadInType.LongHelp       = "定義最後刀腹切入為直線或圓弧";
+
+MfgLatheOtherFlankLeadInType = "其它刀腹切入";
+MfgLatheOtherFlankLeadInType.LongHelp      = "定義其它刀腹切入為直線或圓弧";
+
+MfgLatheRecessAutoOutput = "自動輸出";
+MfgLatheFixtureAvoiding = "阻礙";
+
+MfgLatheGougingSafetyAngle = "刀痕角度";
+MfgLatheGougingSafetyAngle.LongHelp = "要避免干涉, 可能的加工斜度是因刀片幾何可能以指定安全角度來減少.";
+
+MfgLatheContouringCornerMode          = "外部圓角的外形加工";
+MfgLatheContouringCornerMode.LongHelp = "定義加工外形為角度或圓弧切削";
+
+MfgLatheFirstFlankLeadInDistance           = "起始切入距離";
+MfgLatheFirstFlankLeadInDistance.LongHelp  = "定義車槽上的起始側面 (flank) 的切入距離.";
+
+MfgLatheFirstFlankLeadInAngle              = "起始切入角度";
+MfgLatheFirstFlankLeadInAngle.LongHelp	   = "定義車槽上的起始側面 (flank) 的切入角度.";
+
+MfgLatheFirstFlankLeadInRadius             = "起始切入半徑";
+MfgLatheFirstFlankLeadInRadius.LongHelp    = "定義車槽上的起始側面 (flank) 的切入半徑.";
+
+MfgLatheLastFlankLeadInDistance            = "結束切入距離";
+MfgLatheLastFlankLeadInDistance.LongHelp   = "定義車槽上的結束側面 (flank) 的切入距離.";
+
+MfgLatheLastFlankLeadInAngle               = "結束切入角度";
+MfgLatheLastFlankLeadInAngle.LongHelp      = "定義車槽上的結束側面 (flank) 的切入角度.";
+
+MfgLatheLastFlankLeadInRadius              = "結束切入半徑";
+MfgLatheLastFlankLeadInRadius.LongHelp     = "定義車槽上的結束側面 (flank) 的切入半徑.";
+
+MfgLatheOtherFlankLeadInDistance           = "其它切入距離";
+MfgLatheOtherFlankLeadInDistance.LongHelp  = "定義車槽上的其它側面 (flank) 的切入距離.";
+
+MfgLatheOtherFlankLeadInRadius             = "其它切入半徑";
+MfgLatheOtherFlankLeadInRadius.LongHelp    = "定義車槽上的其它側面 (flank) 的切入半徑.";
+
+MfgLatheOtherFlankLeadInAngle              = "其它 切入角度";
+MfgLatheOtherFlankLeadInAngle.LongHelp     = "定義車槽上的其它側面 (flank) 的切入角度.";
+
+MfgLatheBottomOverlap          = "重疊量";
+MfgLatheBottomOverlap.LongHelp = "指定車槽底部的加工重疊量.";
+
+MfgLatheBottomClearance          = "預留量";
+MfgLatheBottomClearance.LongHelp = "定義第一刀和下一刀間的預留值. 
+\n 刀槽的切削底部將加工至所留預留值.";
+
+
+MfgLatheLeadingSafetyAngle          = "前傾安全角度";
+MfgLatheLeadingSafetyAngle.LongHelp = "It defines the maximum slope on which machining can be done. The safety angle is added to the insert geometry.
+Note that a leading angle can also be defined on the insert-holder to define the maximum slope on which the tool assembly can machine.
+In this case, the angle that reduces the slope the most will be taken into account.";
+
+MfgLatheTrailingSafetyAngle          = "後傾安全角度";
+MfgLatheTrailingSafetyAngle.LongHelp = "It defines the maximum slope on which machining can be done. The safety angle is added to the insert geometry.
+Note that a trailing angle can also be defined on the insert-holder to define the maximum slope on which the tool assembly can machine.
+In this case, the angle that reduces the slope the most will be taken into account.";
+
+MfgLatheFixtureClearance          = "夾具預留量";
+MfgLatheFixtureClearance.LongHelp = "指定夾具預留量.";
+
+MfgLatheMachDirection 	        = "加工方向";
+MfgLatheMachDirection.LongHelp 	= "加工方向";
+
+MfgMachToler 	                = "加工精度";
+MfgMachToler.LongHelp 	        = "指定理論和計算值間的最大允許距離.";
+
+MfgMachiningTolerance            = "加工精度";
+MfgMachiningTolerance.LongHelp  = "指定理論和計算值間的最大允許距離.";
+
+MfgLatheLeadInMode = "切入";
+MfgLatheLeadInMode.LongHelp = "避免刀具損壞, 允許插入工件時減速";
+
+// New V5R14-1
+MfgLatheLiftOffMode = "退刀";
+MfgLatheLiftOffMode.LongHelp = "Allows choice between retract after each pass \nor retract when tool is engaged";
+
+MfgLatheProfileOutputMode = "斷面輸出";
+MfgLatheProfileOutputMode.LongHelp = "允許輸出斷面";
+
+MfgLatheToolHolderConstraintMode = "刀片刀把拘束";
+MfgLatheToolHolderConstraintMode.LongHelp = "Allows to ignore or apply the following technological attributes of the insert-holder if defined:
+- Max recessing depth 
+- Max cut depth 
+- Max boring depth 
+- Trailing angle
+- Leading angle 
+- Gouging angle. 
+If the option is applied, these attributes are taken into account and can reduce the machined area.";
+// End New V5R14-1
+
+MfgLatheMinMachMode = "最小加工半徑";
+MfgLatheMinMachMode.LongHelp = "允許以生料和零件限制加工區域. \n 您可能會因刀具形狀和要執行的加工形式限制加工區域.";
+
+MfgLatheMaxMachMode = "最大加工半徑";
+MfgLatheMaxMachMode.LongHelp = "允許以生料和零件限制加工區域. \n 您可能會因刀具形狀和要執行的加工形式限制加工區域.";
+
+MfgLatheJawsMode = " chuck jaws 的軸向限制";
+MfgLatheJawsMode.LongHelp = "外側或端面粗銑時, 指定為配合 chuck jaws 位置在加工軸向的預留.";
+
+MfgLatheMinMachRadius = "最小加工半徑";
+MfgLatheMinMachRadius.LongHelp = "最小加工半徑";
+
+MfgLatheMaxMachRadius = "最大加工半徑";
+MfgLatheMaxMachRadius.LongHelp = "最大加工半徑";
+
+MfgLatheJawPosition = " chuck jaws 的軸向限制";
+MfgLatheJawPosition.LongHelp = "安全性的最大軸向位置.";
+
+MfgLatheLeadInType 	            = "切入形式";
+MfgLatheLeadInType.LongHelp 	= "定義切入斷面為直線或圓弧型式";
+
+MfgLatheLiftOffType 	        = "退刀形式";
+MfgLatheLiftOffType.LongHelp 	= "定義從斷面退刀為直線或圓弧型式";
+
+MfgLatheMdOrientation           = "方向";
+MfgLatheMdOrientation.LongHelp  = "指定依據零件上加工位置的所需加工形式.";
+
+MfgLatheRecessMachining 	    = "Recess 加工";
+MfgLatheRecessMachining.LongHelp= "允許您要求 recess 加工.";
+
+MfgLatheUnderSpindleAxis 	    = "刀軸加工之下";
+MfgLatheUnderSpindleAxis.LongHelp = "端面加工時, 允許您要求在刀軸下加工";
+
+MfgLatheOutputPointChanged          = "修改輸出點";
+MfgLatheOutputPointChanged.LongHelp = "依據加工幾何斷面自動更改刀具輸出點.";
+
+MfgLatheCutcomStrategy 			= "CUTCOM";
+MfgLatheCutcomStrategy.LongHelp	= "要求在輸出刀具進刀和退刀時包含 CUTCOM 指令.";
+
+MFG_CYCLE_OUTPUT = "輸出 CYCLE 語法";
+MFG_CYCLE_OUTPUT.LongHelp = "指定如何輸出 NC 碼 : \n 輸出成 CYCLE 模式或 GOTO 模式.";
+// LAS : Debut R9
+
+//========================
+// Lathe Sequential Operation
+//========================
+MfgLatheSequentialOperationSU = "車床順序";
+MfgLatheSequentialOperation = "車床順序";
+
+//========================
+// Sequential motions
+//========================
+MfgSeqMotionLatheBase = "車床順序動作";
+MfgSeqMotionLatheDelta = "增量";
+MfgSeqMotionLatheFollow = "沿著";
+MfgSeqMotionLatheGoStd = "標準";
+MfgSeqMotionLatheIndirv = "沿 V 方向";
+MfgSeqMotionPPWord      = "PP 字元";
+
+// Les Attributs des Seq. Motions Lathe
+//-------------------------------------
+MfgLatheSeqMotionGeomFeature = "順序動作幾何特徵鏈結";
+MfgLatheSeqMotionGeomFeature.LongHelp = "鏈結至幾何特徵.";
+
+// Start Up de motion
+//--------------------
+MfgSeqMotionLatheGoGo        = "Go Go";
+
+// Types du motion
+//--------------------
+MfgLatheEOType           = "動作形式";
+MfgLatheEOType.LongHelp  = "定義刀具動作形式";
+MfgLatheGoStd            = "Go 標準";
+MfgLatheGoStd.LongHelp   = "至元素的 Go 標準動作.";
+MfgLatheGoGo             = "Go 標準";
+MfgLatheGoGo.LongHelp    = "相對兩元素的 Go 標準動作.";
+MfgLatheIndirv           = "Go 方向";
+MfgLatheIndirv.LongHelp  = "在方向向量的 Go 動作.";
+MfgLatheGoDelta          = "Go 增量";
+MfgLatheGoDelta.LongHelp = "Go 增量";
+MfgLatheFollow           = "沿著";
+MfgLatheFollow.LongHelp  = "沿著驅動元素的動作";
+MfgLathePP               = "PP 指令";
+MfgLathePP.LongHelp      = "PP 指令";
+// Speed Range
+//--------------------
+MfgLatheEOSpeedRangeNum = "速度範圍號碼";
+MfgLatheEOSpeedRangeNum.LongHelp     = "定義速度範圍號碼";
+// Direction sur la drive
+//--------------------
+MfgLatheEODriveDir = "驅動方向";
+MfgLatheEODriveDir.LongHelp     = "定義驅動方向";
+// xxxx
+//--------------------
+MfgLatheEOGuidingPoint = "導引點";
+MfgLatheEOGuidingPoint.LongHelp     = "定義導引點";
+// xxxx
+//--------------------
+MfgLatheEOFirstCheckMode = "第一檢查模式";
+MfgLatheEOFirstCheckMode.LongHelp     = "定義第一檢查模式";
+// xxxx
+//--------------------
+MfgLatheEOSecondCheckMode = "第二檢查模式";
+MfgLatheEOSecondCheckMode.LongHelp     = "定義第二檢查模式";
+// Go Delta definition
+//--------------------
+MfgLatheEODeltaCheckMode          = "增量檢查模式";
+MfgLatheEODeltaCheckMode.LongHelp = "定義 GO 增量檢查模式";
+MfgLatheEOValueDistance           = "距離";
+MfgLatheEOValueDistance.LongHelp  = "定義刀具動作距離.";
+MfgLatheEODeltaAxial              = "增量軸向 (Z)";
+MfgLatheEODeltaAxial.LongHelp     = "定義刀具動作的軸向分量.";
+MfgLatheEODeltaRadial             = "增量徑向 (X)";
+MfgLatheEODeltaRadial.LongHelp    = "定義刀具動作的徑向分量.";
+// Drive Element
+//--------------------
+MfgLatheEODriveElemType          = "驅動元素形式";
+MfgLatheEODriveElemType.LongHelp = "定義驅動元素形式";
+// Check And Drive limit
+//--------------------
+MfgLatheEOLimitCheck          = "第一限制模式";
+MfgLatheEOLimitCheck.LongHelp = "控制檢查元素的幾何延伸.";
+MfgLatheExtended              = "延伸";
+MfgLatheExtended.LongHelp     = "檢查元素的尾端已延伸.";
+MfgLatheActual                = "真實";
+MfgLatheActual.LongHelp       = "檢查元素的尾端未延伸.";
+MfgLatheEOLimitDrive          = "第二檢查限制模式";
+MfgLatheEOLimitDrive.LongHelp = "控制第二檢查元素的幾何延伸.";
+// Collision on check
+//--------------------
+MfgLatheEOCollCheck          = "避免干涉的檢查";
+MfgLatheEOCollCheck.LongHelp = "設定避免干涉的檢查元素";
+// Collision on drive
+//--------------------
+MfgLatheEOCollDrive          = "避免干涉的驅動";
+MfgLatheEOCollDrive.LongHelp = "設定避免干涉的驅動元素";
+// xxxx
+//--------------------
+MfgLatheEOFollowChangeDrive = "修改驅動";
+MfgLatheEOFollowChangeDrive.LongHelp     = "如下一個動作是沿著, 定義檢查元素將為驅動元素或保留驅動元素.";
+// xxxx
+//--------------------
+MfgLatheEOFeedrateMode          = "進給模式";
+MfgLatheEOFeedrateMode.LongHelp = "選擇總體進給的進給模式.";
+MFG_LOCALFEED                   = "局部進給";
+MFG_LOCALFEED.LongHelp          = "定義局部使用的進給.";
+MFG_LOCALFEED_VALUE             = "局部進給";
+MFG_LOCALFEED_VALUE.LongHelp    = "定義局部使用的進給.";
+// Sequential Feed and Speed
+//--------------------
+MfgLatheEOLocalSpindleMode                = "局部刀軸模式";
+MfgLatheEOLocalSpindleMode.LongHelp       = "定義局部刀軸模式";
+Mfg_LatheGlobalSpindleMagnitude           = "轉速單位";
+Mfg_LatheGlobalSpindleMagnitude.LongHelp  = "定義轉速單位";
+Mfg_LatheGlobalFeedrateMagnitude          = "進給單位";
+Mfg_LatheGlobalFeedrateMagnitude.LongHelp = "定義進給單位";
+// xxxx
+//--------------------
+MfgLatheEOLeftClearAngle = "左側的安全角度";
+MfgLatheEOLeftClearAngle.LongHelp     = "定義相對加工方向的刀片左側安全角度.";
+MfgLatheEORightClearAngle = "右側的安全角度";
+MfgLatheEORightClearAngle.LongHelp     = "定義相對加工方向的刀片右側安全角度.";
+MfgLatheEOValueAngle = "角度";
+MfgLatheEOValueAngle.LongHelp     = "定義新增至刀片的角度值.";
+// xxxx
+//--------------------
+MfgLatheEOGlobalCheckThickness          = "檢查的預留";
+MfgLatheEOGlobalCheckThickness.LongHelp = "定義在檢查面的預留. \n 如檢查模式為開啟模式時,參數將無法存取.";
+MfgLatheEOAxialCheckOffset              = "軸向檢查預留";
+MfgLatheEOAxialCheckOffset.LongHelp     = "軸向檢查預留. \n 如檢查模式為開啟模式時,參數將無法存取.";
+MfgLatheEORadialCheckOffset             = "徑向檢查預留";
+MfgLatheEORadialCheckOffset.LongHelp    = "定義徑向檢查預留";
+MfgLatheEOGlobalDriveThickness          = "第二檢查預留 \n 如檢查模式為開啟模式時,參數將無法存取.";
+MfgLatheEOGlobalDriveThickness.LongHelp = "定義第二檢查預留.";
+MfgLatheEOAxialDriveOffset              = "軸向第二檢查預留 \n 如檢查模式為開啟模式時,參數將無法存取.";
+MfgLatheEOAxialDriveOffset.LongHelp     = "定義軸向第二檢查預留. \n 如檢查模式為開啟模式時,參數將無法存取.";
+MfgLatheEORadialDriveOffset             = "徑向第二檢查預留";
+MfgLatheEORadialDriveOffset.LongHelp    = "定義 徑向第二檢查預留. \n 如檢查模式為開啟模式時,參數將無法存取.";
+
+// LAS : FIN R9
+
+// FAP : Debut R11
+
+MFG_LATHE_MODIF_RAPID          = "以空切削速度更換 RAPID ";
+MFG_LATHE_MODIF_RAPID.LongHelp = "以空切削速度更換 RAPID ";
+MFG_LATHE_RAPID_FEED           = "空切削速度";
+MFG_LATHE_RAPID_FEED.LongHelp  = "當選擇以空切削速度更換 RAPID 時的進給速度";
+
+//========================
+// Ramping Recessing operation
+//========================
+
+MfgLatheRampingRecessingSU = "車床斜進 Recessing";
+MfgLatheRampingRecessing   = "車床斜進 Recessing";
+
+MfgLatheRecessingStrategy = "Recessing 模式";
+MfgLatheRecessingStrategy.LongHelp = "允許您以單向, 來回或平行外形方式來加工 recess .";
+
+MFG_LATHE_FEED_STEP_NB = "進給步驟數目";
+MFG_LATHE_FEED_STEP_NB.LongHelp = "進給步驟數目";
+
+MFG_LATHE_LIGHT_FEED = "輕負荷進給";
+MFG_LATHE_LIGHT_FEED.LongHelp = "加工最深時的加工進給";
+
+MfgLatheRampingContouringMode = "加工零件外形";
+MfgLatheRampingContouringMode.LongHelp = "指定是否要在動作結束時加工零件外形";
+
+//========================
+// Ramping Roughing operation
+//========================
+
+MfgLatheRampingRoughingSU = "車床斜進粗車";
+MfgLatheRampingRoughing   = "車床斜進粗車";
+
+MfgLatheRampingClearance1	      = "第一刀的預留";
+MfgLatheRampingClearance1.LongHelp = "定義加工第一刀時在檢查面的預留.";
+
+MfgLatheRampingClearance2	      = "第二刀的預留";
+MfgLatheRampingClearance2.LongHelp = "定義加工第二刀時在檢查面的預留.";
+
+MfgLatheRampingAttackChamferLength = "加工倒角長度";
+MfgLatheRampingAttackChamferLength.LongHelp = "定義加工加工倒角角度.";
+
+MfgLatheRampingAttackCornerRadius  = "加工轉角半徑";
+MfgLatheRampingAttackCornerRadius.LongHelp = "定義加工轉角半徑";
+
+MfgLatheRampingAttackCornerAngle   = "加工轉角角度";
+MfgLatheRampingAttackCornerAngle.LongHelp = "定義加工轉角角度";
+
+MfgLatheMOLeadingAngle  = "MO 導入角度";
+MfgLatheMOLeadingAngle.LongHelp = "定義導入角度";
+
+MfgLatheMOTrailingAngle  = "MO 退出角度";
+MfgLatheMOTrailingAngle.LongHelp = "定義退出角度";
+
+MfgLatheMOGougingAngle  = "MO 刀痕角度";
+MfgLatheMOGougingAngle.LongHelp = "定義刀痕角度";
+
+MfgLatheRampingPlungeDistance = "重加工插刀前之距離";
+MfgLatheRampingPlungeDistance.LongHelp = "定義重加工插刀前之距離";
+
+MfgLatheRampingPlungeAngle    = "重加工插刀前角度";
+MfgLatheRampingPlungeAngle.LongHelp = "定義重加工插刀前角度";
+
+MfgLatheRampingReworkMode			  = "重加工模式";
+MfgLatheRampingReworkMode.LongHelp = "刀具路徑結束前啟動重加工模式 \n 請注意此選項需要有效的安全距離才能正確執行";
+
+MfgLatheRamping1stFlankPlungeDistance = "第一 Flank 的插刀距離";
+MfgLatheRamping1stFlankPlungeDistance.LongHelp = "第一 Flank 的插刀距離";
+
+MfgLatheRamping2ndFlankPlungeDistance = "第二 Flank 的插刀距離";
+MfgLatheRamping2ndFlankPlungeDistance.LongHelp = "第二 Flank 的插刀距離 \n 只在來回模式才可存取參數";
+
+MfgLatheRampingRecessingStrategy	  = "Recessing 方式";
+MfgLatheRampingRecessingStrategy.LongHelp = "定義 recessing 方式";
+
+MfgLatheRampingRoughingStrategy	      = "粗加工方式";
+MfgLatheRampingRoughingStrategy.LongHelp = "定義粗加工方式";
+
+MfgLatheStartRampingPassMode	      = "開始 Pass 模式";
+MfgLatheStartRampingPassMode.LongHelp = "開始 Pass 模式";
+
+MfgLatheDirection                     = "加工方向";
+MfgLatheDirection.LongHelp = "定義主要加工方向";
+
+// FAP : FIN R11
+
+MfgLeft = "左";
+MfgRight = "右";
+MfgUp = "上";
+MfgDown = "下";
+MfgToSpindle = "至刀軸";
+MfgFromSpindle = "從刀軸";
+MfgToHeadStock = "至材料前";
+MfgFromHeadStock = "從材料前";
+MfgLeftOfGroove = "槽左側";
+MfgRightOfGroove = "槽右側";
+
+MfgLatheToolCompensation = "刀具補償";
+MfgLatheToolCompensation.LongHelp = "允許您依據所需刀具輸出點選擇刀具補償.";
+
+//========================
+// Dwell
+//========================
+
+MFG_DWELL	= "暫停";
+
+MFG_DWELL_MODE	= "暫停模式";
+DwellEnumParam.LongHelp	= "定義以旋轉圈數或時間來暫停.";
+
+MFG_DWELL_REVOL_DOUBLE         	= "旋轉圈數";
+MFG_DWELL_REVOL_DOUBLE.LongHelp = "指定要暫停的旋轉圈數";
+
+MFG_DWELL_TIME              = "時間";
+MFG_DWELL_TIME.LongHelp     = "指定要暫停的時間";
+
+//========================
+// Feedrate
+//========================
+
+Feedrate = "進給";
+
+MFG_FEEDRATE_AUTO_UPD = "由刀具進給和轉速自動計算";
+MFG_FEEDRATE_AUTO_UPD.LongHelp = "啟動由刀具進給和轉速自動計算速度.";
+
+MFG_FEED_APP = "切入";
+MFG_FEED_APP.LongHelp = "此進給速度用於切入路徑.";
+
+MFG_FEED_PLUNGE = "插入";
+MFG_FEED_PLUNGE.LongHelp = "此進給速度用於插入路徑.";
+
+MFG_FEED_MACH = "加工";
+MFG_FEED_MACH.LongHelp = "此進給速度用於加工路徑.";
+
+MFG_LATHE_MACH_FEED = "加工";
+MFG_LATHE_MACH_FEED.LongHelp = "此進給速度用於加工.";
+
+MFG_CHAMFER_FEED = "倒角加工";
+MFG_CHAMFER_FEED.LongHelp = "倒角加工時使用此進給速度.";
+
+MFG_FEED_RETRACT = "退刀";
+MFG_FEED_RETRACT.LongHelp = "此進給速度用於退刀路徑.";
+
+Rapid = "快速";
+
+MFG_FEED_FINISH = "精加工";
+MFG_FEED_FINISH.LongHelp = "此進給速度用於精加工.";
+
+MfgLatheNextPlungeFeedrate = "下一插刀";
+MfgLatheNextPlungeFeedrate.LongHelp = "此進給速度用於下一插刀路徑.";
+
+MfgLatheFirstPlungeFeedrate = "第一插刀";
+MfgLatheFirstPlungeFeedrate.LongHelp = "此進給速度用於第一插刀路徑.";
+
+MfgLatheContouringFeedrate = "加工外形";
+MfgLatheContouringFeedrate.LongHelp = "此進給速度用於加工外形路徑.";
+
+MfgLatheInvertFinishFeedrate = "當逆轉";
+MfgLatheInvertFinishFeedrate.LongHelp = "此進給速度用於加工逆轉元素路徑.";
+
+MfgGlobalFeedrateMagnitude = "單位";
+MfgGlobalFeedrateMagnitude.LongHelp = "定義進給單位, \n 線性 (公厘或英寸/分鐘) 或 角速度 (公厘或 英寸/轉)";
+
+//========================
+// Spindle Speed
+//========================
+
+SpindleSpeed = "轉速";
+
+MFG_SPINDLE_SPEED_AUTO_UPD = "由刀具進給和轉速自動計算";
+MFG_SPINDLE_SPEED_AUTO_UPD.LongHelp = "啟動由刀具進給和轉速自動計算速度.";
+
+MFG_SPINDLE_MACH = "加工";
+MFG_SPINDLE_MACH.LongHelp = "加工時轉速";
+
+MfgGlobalSpindleMagnitude = "單位";
+MfgGlobalSpindleMagnitude.LongHelp = "定義轉速單位, \n 線性 (米或英寸/分鐘) 或 角速度 (轉/分鐘)";
+
+//========================
+// Macro Interrupt
+//========================
+
+InterruptOptionFrame = "中斷選項";
+
+MfgLatheInterruptMode = "中斷模式";
+MfgLatheInterruptMode.LongHelp = "允許定義中斷標準";
+
+MfgLatheInterruptTime = "中斷時間";
+MfgLatheInterruptTime.LongHelp = "由時間定義中斷標準";
+
+MfgLatheInterruptNbOfPass = "中斷間路徑數目";
+MfgLatheInterruptNbOfPass.LongHelp = "由路徑數目定義中斷標準. \n 請注意斜進刀算兩刀.";
+
+//========================
+// Strange Stuff 
+//========================
+
+//MfgLatheCuttingSpeed = "Cutting speed";
+
+//MfgLatheSpindleSpeed = "Spindle speed";
+
+MfgGlobalSpindleOutput = "輸出刀軸";
+MfgGlobalSpindleOutput.LongHelp = "在 APT 中是否輸出刀軸";
+
+//========================
+// Output
+//========================
+
+OutputParameter = "\n\n NC 輸出參數 : ";
+
+// Feed and Speeds
+MFG_FEED_MACH.Output             = "MFG_FEED_MACH 或 MFG_FED_MACH";
+MfgGlobalSpindleMagnitude.Output = "MFG_SPNDL_UNIT";
+MFG_SPINDLE_MACH.Output          = "MFG_SPNDL_SPEED, MFG_SPNDL_WAY";
+
+// Delay
+MFG_DWELL_MODE.Output         = "MFG_DELAY_UNIT 或 MFG_DWELL_MODE";
+MFG_DWELL_REVOL_DOUBLE.Output = "MFG_DELAY_VALUE";
+MFG_DWELL_TIME.Output         = "MFG_DELAY_VALUE";
+
+// Tooling
+MfgLatheToolCompensation.Output = "MFG_QUADRANT, MFG_TOOL_COMP, MFG_TL_COMP or MFG_LGTH_COR_REG";
+
+// Threading
+MfgLatheThreadFirstPasses.Output      = "MFG_FIR_PATH";
+MfgLatheFirstPassNumber.Output        = "MFG_NUM_FIR_PATH";
+MfgLatheThreadLastPasses.Output       = "MFG_LAS_PATH";
+MfgLatheLastPassNumber.Output         = "MFG_NUM_LAS_PATH";
+MfgLatheThreadSpringPasses.Output     = "MFG_SPR_PATH";
+MfgLatheSpringPassNumber.Output       = "MFG_NUM_SPR_PATH";
+MfgLatheCrestDiameterClearance.Output = "MFG_CRES_DIA_CLR";
+MfgLathePenetrationAngle.Output       = "MFG_ENTER_ANG";
+MfgLatheLeadInDistance.Output         = "MFG_LEAD_IN_DIST";
+MfgLatheLiftOffAngle.Output           = "MFG_LIFT_OFF_ANG";
+MfgLatheLiftOffDistance.Output        = "MFG_LIFT_OFF_DIS";
+MfgLatheLastPassDepthOfCut.Output     = "MFG_LAS_DEPT_CUT";
+MfgLatheFirstSectionRate.Output       = "MFG_FIR_SECT_RAT";
+MfgLatheThreadMachining.Output        = "MFG_THREAD_MACHINING";
+MfgLatheThreadPenetration.Output      = "MFG_THREAD_PENETRATION";
+MfgLatheThreadUnit.Output             = "MFG_THREAD_UNIT";
+MfgLatheThreadProfile.Output          = "MFG_THREAD_PROFILE";
+MfgLathePitch.Output                  = "MFG_THREAD_PITCH";
+MfgLatheThreadNumber.Output           = "MFG_NUM_THREADS";
+MfgLatheThreadPerInchNumber.Output    = "MFG_THRD_PR_UNIT";
+
+//========================
+// Tab Pages
+//========================
+
+GeneralTab = "一般";
+StrategyTab = "方式";
+MachiningTab = "加工";
+OptionTab = "選項";
+CornerProcessingTab = "圓角處理";
+InversionTab = "局部逆轉";
+ReworkTab = "重加工";
+ThreadTab = "螺紋";
+
+//========================
+// CAA LongHelp
+//========================
+
+CAAParameterName = "CAA 參數名稱";

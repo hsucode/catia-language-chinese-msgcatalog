@@ -1,0 +1,49 @@
+// *--------------------------------------------*//
+// *               Exemple de message           *//
+// *  En_US                                     *//
+// *------------------------------------------- *//
+// ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// ERR_2000.Diagnostic = "Un des parametres est negatif";
+// ERR_2000.Advice     = "Utilisez des parametres positifs";
+
+
+// NoSolution    
+HAS_ERR_900.Request    = "無解";
+HAS_ERR_900.Diagnostic = "此動作無解";
+HAS_ERR_900.Advice     = " ";
+
+// InvalidInput    
+HAS_ERR_1100.Request    = "無效的空輸入元素";
+HAS_ERR_1100.Diagnostic = "輸入元素之一為無效或空的, 此動作無解";
+HAS_ERR_1100.Advice     = " ";
+
+// Healing    
+HAS_ERR_1700.Request    = "修補失敗.";
+HAS_ERR_1700.Diagnostic = "元素間仍有 /p1 公厘的誤差.";
+HAS_ERR_1700.Advice     = "請嚐試強化此幾何元素.";
+
+HAS_ERR_1710.Request    = "修補失敗.";
+HAS_ERR_1710.Diagnostic = "元素間仍有 /p1 公厘的誤差.";
+HAS_ERR_1710.Advice     = "輸入元素 /p2 無法整形, 請嚐試強化或凍結此幾何元素.";
+
+// Healing moyen    
+HAS_ERR_1800.Request    = "修補部份失敗.";
+HAS_ERR_1800.Diagnostic = "元素間仍有 /p1 公厘的誤差.";
+HAS_ERR_1800.Advice     = "請嚐試強化此幾何元素.";
+
+// Join
+HAS_ERR_3850.Request    = "/p1 : 局部連接動作中斷在無效元素上.\n";
+HAS_ERR_3850.Diagnostic = " /p1 間角度大於角度門檻 .";
+HAS_ERR_3850.Advice     = "請修改角度門檻或輸入元素.";
+
+HAS_ERR_3851.Request    = "/p1 : 局部連接動作中斷在無效元素上.\n";
+HAS_ERR_3851.Diagnostic = "角度大於角度精度門檻 .";
+HAS_ERR_3851.Advice     = "請修改角度門檻或輸入元素.";
+
+HAS_ERR_3840.Request    = "/p1 : 局部連接動作中斷在無效元素上.\n";
+HAS_ERR_3840.Diagnostic = "輸入元素的依附 /p1 含有數個自我相交的邊線.";
+HAS_ERR_3840.Advice     = "修改輸入或產生它們的元素.";
+
+HAS_ERR_3820.Request    = "/p1 : 局部連接動作中斷在無效元素上.\n";
+HAS_ERR_3820.Diagnostic = "輸入元素 /p1 無效.";
+HAS_ERR_3820.Advice     = "修改輸入或產生它們的元素.";

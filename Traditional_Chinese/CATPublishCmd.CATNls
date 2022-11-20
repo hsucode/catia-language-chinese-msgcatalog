@@ -1,0 +1,120 @@
+CATPublishCmd.SelectElement.Message="選擇要發行的元素";
+CATPublishCmd.UndoTitle="發行";
+
+Publication = "發行";
+ComponentPublication="發行分件";
+Options="選擇";
+Name="名稱";
+Status="情形";
+Element="元素";
+
+PublishFrame.Buttons.Remove.Title="移除";
+PublishFrame.Buttons.Remove.ShortHelp="從表列中移除發行元素";
+PublishFrame.Buttons.Remove.LongHelp="從表列中移除發行元素";
+
+PublishFrame.Buttons.Browse.Title="瀏覽...";
+PublishFrame.Buttons.Browse.ShortHelp="以分件選擇元素發行";
+PublishFrame.Buttons.Browse.LongHelp="以分件選擇元素發行";
+
+PublishFrame.Buttons.Options.Title="選項...";
+PublishFrame.Buttons.Options.ShortHelp="發行選項";
+PublishFrame.Buttons.Options.LongHelp="發行選項";
+
+PublishFrame.Buttons.Import.Title="輸入...";
+PublishFrame.Buttons.Import.ShortHelp="從 .txt 文字檔輸入發行名稱";
+PublishFrame.Buttons.Import.LongHelp="從 .txt 文字檔輸入發行名稱";
+
+PublishFrame.Buttons.Export.Title="輸出...";
+PublishFrame.Buttons.Export.ShortHelp="輸出發行名稱至 .txt 文字檔";
+PublishFrame.Buttons.Export.LongHelp="輸出發行名稱至 .txt 文字檔";
+
+PublishFrame.Buttons.Parameter.Title="參數...";
+PublishFrame.Buttons.Parameter.ShortHelp="發行物件參數";
+PublishFrame.Buttons.Parameter.LongHelp="發行物件參數";
+
+ImportFile.Title="輸入";
+ImportFile.FilterType.1="文字檔案 (*.txt)";
+
+ExportFile.Title="輸出";
+ExportFile.FilterType.1="文字檔案 (*.txt)";
+
+
+OptionsFrame.RenameFrame.RenameLabel.Title="更名元素 : ";
+OptionsFrame.PublishBodyFeatureFrame.BodyFeatureSelection.Title="起動發行本體特徵";
+
+RenameNever="絕不";
+RenameAlways="經常";
+RenameAsk="詢問";
+
+AskFeatRnmMsg="您要將元素 '/P1' 更名成 '/P2' 嗎 ?";
+AskFeatRnmTtl="更名元素";
+
+PubOKTag="確認";
+PubNoFinalEltTag="沒有元素";
+PubNamePathBrokenTag="沒有分件";
+
+PubUnknownNameTag="未知分件 /p";
+PublicationNameTag="/p1: /p2";
+
+PublishRenameReplaceTag=
+"發行: 選取元素. 更名, 更替: 選取表列排";
+RenameReplaceTag=
+"更名: 選取名稱單元. 更換元素: 選取新元素";
+RenameTag=
+"更名: 選取名稱單元及輸入新名稱";
+
+Messages.PublishCSOMessage=
+"您要發行所選元素嗎 ?";
+
+Messages.PublishAlready=
+"元素 /p 己發行"; 
+Messages.PublishInvalidMsg=
+"元素 /p 無法發行,
+檢查  : 
+- 確認物件發行 (是否發行 ?). 
+- 元素型式 , 是否分件發行, 己發行在歷程樹上.";
+
+Messages.PublishVisuModeMsg=
+"Element of 'rep' visu type cannot be published,
+Check  : 
+- Representation mode of the part containing the object."; 
+
+Messages.PublishErrorMessage=
+"An error has occurred when trying to publish the element.
+The element can not be published.";
+
+ReplaceElementTitle="更換元素";
+Messages.ReplaceElementMessage="Do you want to replace the published element by '/P1' ?";
+Messages.ReplaceGeometricNotAllowedMessage="It is not allowed to replace a geometric element from '/P1' by a parameter.";
+Messages.ReplaceParameterNotAllowedMessage="It is not allowed to replace a parameter from '/P1' by a geometric element.";
+
+//Useless
+//Messages.DatabaseSaveNotify=" will not be saved in database structure document.\nThis restriction concerns any publication of publication.";
+
+IsValidToPublishTag="The '/p' element can be published.";
+PublishedByComponentTag="The '/p1' element is already published by the '/p2' component.";
+CannotBePublishedTag="The '/p' element cannot be published.";
+IsPublishedTag="The '/p1' element is published under the name '/p2'.";
+IsRemovedTag="The /p element is removed."; //Do not use '/p' since it is already done in the code.
+AreRemovedTag="The /p elements are removed."; //Do not use '/p' since it is already done in the code.
+ReplaceCanceled="The replace of /p elements is canceled.";
+
+BrowsePublishTag="To publish: select a component publication";
+BrowseReplaceTag="To replace the element: select a component publication";
+
+RenameError="The name '/p' already exists.\nEnter a different name.";
+RenameErrorCharacter="The name '/p' is not valid :
+- either is an empty string,
+- or  contains characters ':'  or  '!', 
+- or  has blank character at beginning or end of string." ; 
+
+
+Messages.PublishRenameInVpmSession=
+"Warning: Renaming a publication can have an impact on pointed documents that are not loaded in session.
+You can use tool 'Where is publication used' to check impacted documents (if connected to the database).";
+
+Messages.PublishRenameInContext=
+"Warning: Renaming a publication can have an impact on pointed documents that are not loaded in context.";
+
+Messages.PublishRenameElementParameterExists=
+"Warning: Parameter can not be rename, a paramter with same name already exists";

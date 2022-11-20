@@ -1,0 +1,165 @@
+//=============================================================================
+// COPYRIGHT DASSAULT SYSTEMES 2002
+//=============================================================================
+//
+// Distance Analysis Command :
+//   Resource file for NLS purpose. 
+//
+//=============================================================================
+//
+// Implementation Notes :
+//
+//=============================================================================
+// Oct. 02   Creation                                          Minh-Duc TRUONG
+//=============================================================================
+
+Title="距離";
+
+FrmLeft.FrmSelection.Title="選擇狀況";
+FrmLeft.FrmType.Title="量測方向";     // R12 Modification
+FrmLeft.FrmProjection.Title="投影空間 ";  // R12 Modification
+
+FrmLeft.FrmSelection.SourcesRadB.Title="第一組";
+FrmLeft.FrmSelection.SourcesRadB.LongHelp="
+啟動所選的第一組元素.";
+
+FrmLeft.FrmSelection.TargetsRadB.Title="第二組";
+FrmLeft.FrmSelection.TargetsRadB.LongHelp="
+啟動所選的第二組元素.";
+
+FrmLeft.FrmInversion.InvertAnalysisPush.Title="逆轉分析";
+FrmLeft.FrmInversion.InvertAnalysisPush.ShortHelp="逆轉分析計算";
+FrmLeft.FrmInversion.InvertAnalysisPush.LongHelp=
+"逆轉分析計算";
+
+FrmLeft.FrmSelection.RunningPtRadio.Title="執行點";
+FrmLeft.FrmSelection.RunningPtRadio.ShortHelp="啟動執行點";
+FrmLeft.FrmSelection.RunningPtRadio.LongHelp="
+啟動滑鼠點和原始點間的距離計算.";
+
+FrmLeft.FrmCenterBis.FrmDispIcons.DiagramPush.ShortHelp="2D 圖形";
+FrmLeft.FrmCenterBis.FrmDispIcons.DiagramPush.LongHelp=
+"顯示 2D 圖形
+(只適用單一方向元素).";
+
+FrmLeft.FrmCenterBis.FrmDispIcons.FullRadio.ShortHelp="全顏色範圍";
+FrmLeft.FrmCenterBis.FrmDispIcons.FullRadio.LongHelp=
+"以全顏色範圍來顯示.";
+
+FrmLeft.FrmCenterBis.FrmDispIcons.QuickRadio.ShortHelp="限制顏色範圍";
+FrmLeft.FrmCenterBis.FrmDispIcons.QuickRadio.LongHelp=
+"為了偵錯原因以限制顏色範圍來顯示.";
+
+FrmLeft.FrmCenterBis.FrmDispIcons.QuickCheck.ShortHelp="限制顏色範圍"; // Light Mode
+FrmLeft.FrmCenterBis.FrmDispIcons.QuickCheck.LongHelp=
+"為了快速偵錯原因以限制顏色範圍來顯示.";
+
+FrmLeft.FrmProjection.FrmProjMode.Radio3D.ShortHelp="元素沒有投影";
+FrmLeft.FrmProjection.FrmProjMode.Radio3D.LongHelp="元素沒有投影";
+FrmLeft.FrmProjection.FrmProjMode.RadioX.ShortHelp=	" X 方向投影";
+FrmLeft.FrmProjection.FrmProjMode.RadioX.LongHelp=
+"計算元素在 X 方向間投影.";
+FrmLeft.FrmProjection.FrmProjMode.RadioY.ShortHelp=	" Y 方向投影";
+FrmLeft.FrmProjection.FrmProjMode.RadioY.LongHelp=
+"計算元素在 Y 方向間投影.";
+FrmLeft.FrmProjection.FrmProjMode.RadioZ.ShortHelp=	" Z 方向投影";
+FrmLeft.FrmProjection.FrmProjMode.RadioZ.LongHelp=
+"計算元素在 Z 方向間投影.";
+FrmLeft.FrmProjection.FrmProjMode.RadioCompass.ShortHelp= "羅盤方向投影.";
+FrmLeft.FrmProjection.FrmProjMode.RadioCompass.LongHelp=
+"計算元素在羅盤方向方向間投影.";
+FrmLeft.FrmProjection.FrmProjMode.PlanarDistRadio.ShortHelp= "平面距離";
+FrmLeft.FrmProjection.FrmProjMode.PlanarDistRadio.LongHelp=
+"計算元素在單一尺寸和內含元素和其它元素的平面相交間距離";
+
+FrmLeft.FrmType.FrmTypeMode.NormalRadio.ShortHelp="垂直距離";
+FrmLeft.FrmType.FrmTypeMode.NormalRadio.LongHelp=
+"計算最小垂直距離";
+
+FrmLeft.FrmType.FrmTypeMode.RadioXMeasureDir.ShortHelp=	"X 方向距離";  // r12
+FrmLeft.FrmType.FrmTypeMode.RadioXMeasureDir.LongHelp=
+"計算沿 X 方向距離.";
+
+FrmLeft.FrmType.FrmTypeMode.RadioYMeasureDir.ShortHelp=	" Y 方向距離";  // r12
+FrmLeft.FrmType.FrmTypeMode.RadioYMeasureDir.LongHelp=
+"計算沿 Y 方向距離.";
+
+FrmLeft.FrmType.FrmTypeMode.RadioZMeasureDir.ShortHelp=	" Z 方向距離";  // r12
+FrmLeft.FrmType.FrmTypeMode.RadioZMeasureDir.LongHelp=
+"計算沿 Z 方向距離.";
+
+FrmLeft.FrmType.FrmTypeMode.RadioCompassMeasureDir.ShortHelp= "羅盤方向距離"; // r12
+FrmLeft.FrmType.FrmTypeMode.RadioCompassMeasureDir.LongHelp=
+"計算沿羅盤方向距離.";
+
+FrmLeft.FrmCenterBis.Title = "顯示選項";
+FrmLeft.FrmCenterBis.Espace1.Title = " ";
+FrmLeft.FrmCenterBis.Espace2.Title = "   ";
+FrmLeft.FrmCenterBis.Espace3.Title = "   ";
+FrmLeft.FrmCenterBis.Espace4.Title = "   ";
+
+FrmLeft.FrmCenterBis.MorePsh.Title="更多...";
+FrmLeft.FrmCenterBis.LessPsh.Title="較少...";
+
+FrmRight.FrmDisplay.PointsChk.Title="點 ";
+FrmRight.FrmDisplay.PointsChk.LongHelp=
+"顯示塗彩的點.";
+FrmRight.FrmDisplay.MinMaxChk.Title="最小或最大數值";
+FrmRight.FrmDisplay.MinMaxChk.LongHelp=
+"顯示最小和最大的數值位置.";
+FrmRight.FrmDisplay.ExactMaxChk.Title="確實最大數值";
+FrmRight.FrmDisplay.ExactMaxChk.LongHelp=
+"顯示精準的最大數值位置.";
+FrmRight.FrmDisplay.ColorScaleChk.Title="顏色比例";
+FrmRight.FrmDisplay.ColorScaleChk.LongHelp=
+"顯示或隱藏顏色比例.";
+
+FrmRight.FrmDisplay.StatChk.Title="分配統計";
+FrmRight.FrmDisplay.StatChk.LongHelp=
+"顯示或隱藏分配統計.";
+
+FrmRight.FrmDisplay.CombChk.Title="刺針組";
+FrmRight.FrmDisplay.CombChk.LongHelp=
+"顯示距離刺針.";
+
+FrmRight.FrmDisplay.FrmCombOptions.FrmComb.Title="刺針組";
+
+FrmRight.FrmDisplay.FrmCombOptions.DecalLbl.Title="     ";
+
+FrmRight.FrmDisplay.FrmCombOptions.FrmComb.EnvelopChk.Title="外形";
+FrmRight.FrmDisplay.FrmCombOptions.FrmComb.EnvelopChk.LongHelp=
+"顯示連接刺針頂點的曲線.";
+
+FrmRight.FrmDisplay.FrmCombOptions.FrmComb.InvertChk.Title="逆轉";
+FrmRight.FrmDisplay.FrmCombOptions.FrmComb.InvertChk.LongHelp=
+"逆轉刺針.";
+
+FrmRight.FrmDisplay.FrmCombOptions.FrmComb.AutoScaleChk.Title="自動縮放";
+FrmRight.FrmDisplay.FrmCombOptions.FrmComb.AutoScaleChk.LongHelp=
+"顯示可自動縮放的刺針.";
+
+
+FrmRight.FrmDisplay.Mapping.Title="貼圖";
+FrmRight.FrmDisplay.Mapping.LongHelp=
+"顯示貼圖對應.";
+
+FrmRight.FrmDisplay.LimitsPoints.Title="曲線限制";
+FrmRight.FrmDisplay.LimitsPoints.LongHelp=
+"限制不連續曲線.";
+
+FrmRight.FrmDisplay.MaxDist.Title="最大距離";
+FrmRight.FrmDisplay.MaxDist.LongHelp=
+"定義最大距離";
+
+FrmLeft.FrmCenterBis.FrmDispIcons.MaxDist.Title="最大距離"; // Light Mode 
+FrmLeft.FrmCenterBis.FrmDispIcons.MaxDist.LongHelp=
+"定義最大距離";
+
+FrmRight.FrmDiscretisation.Title="不連續";
+
+FrmRight.FrmDiscretisation.AutoTrapChk.Title="自動框選";
+FrmRight.FrmDiscretisation.AutoTrapChk.ShortHelp="自動目標點消除";
+FrmRight.FrmDiscretisation.AutoTrapChk.LongHelp="
+可自動消除曲面上不相關的點.";
+
+

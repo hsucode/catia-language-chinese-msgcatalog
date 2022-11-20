@@ -1,0 +1,118 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwFrameFont
+// LOCATION    :    DraftingIntUI
+// AUTHOR      :    fgx
+// BUT         :    Properties : Tab "Font" 
+// DATE        :    04.03.1999
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS    user    date        purpose
+//    HISTORY       ----    ----        -------
+//      00          fgx     04.03.99    Creation
+//=====================================================================================
+
+
+_frameBasic._labelFont.Title="字形: ";
+_frameBasic._comboFont.LongHelp=
+"設定字形
+在所選文字.";
+
+_frameBasic._labelStyle.Title="形式: ";
+_frameBasic._comboStyle.LongHelp=
+"設定字形形式
+在所選文字.";
+
+_frameBasic._labelSize.Title="大小: ";
+_frameBasic._comboSize.LongHelp=
+"設定字形大小
+在所選文字.";
+
+_frameBasic._labelUnderline.Title="下標: ";
+_frameBasic._comboUnderline.LongHelp=
+"設定下標屬性
+在所選文字.";
+
+_frameBasic._labelColor.Title="顏色: ";
+_frameBasic._comboColor.LongHelp=
+"設定顏色
+在所選文字.";
+
+_titleChar.Title="字元";
+
+_frameChar._labelRatio.Title="比率: ";
+_frameChar._spinnerRatio.LongHelp=
+"設定將應用在字型的大小比率.";
+
+_frameChar._labelSlant.Title="斜度 : ";
+_frameChar._spinnerSlant.LongHelp=
+"設定將應用在字型的斜度.";
+
+_frameChar._labelCharSpacing.Title="間隔: ";
+_frameChar._spinnerCharSpacing.LongHelp=
+"設定將應用在字型間的間隔.";
+
+_frameChar._labelPitch.Title="程度: ";
+_frameChar._comboPitch.LongHelp=
+"設定應用在所選文字的
+字型應用程度 (固定或變動).";
+
+_frameChar._checkKerning.Title="字間 ";
+_frameChar._checkKerning.LongHelp=
+"設定應用在所選文字的
+字間應用.";
+
+_titleAttr.Title="屬性 ";
+
+_frameAttr._checkStrikeThru.Title="中標";
+_frameAttr._checkStrikeThru.LongHelp=
+"設定中標屬性
+在所選文字.";
+
+_frameAttr._checkOverline.Title="上標 ";
+_frameAttr._checkOverline.LongHelp=
+"設定上標屬性
+在所選文字.";
+
+_frameAttr._checkSuperscript.Title="右上標 ";
+_frameAttr._checkSuperscript.LongHelp=
+"設定右上標屬性
+在所選文字.";
+
+_frameAttr._checkSubscript.Title="右下標";
+_frameAttr._checkSubscript.LongHelp=
+"設定右下標屬性
+在所選文字.";
+
+_titlePreview.Title="預覽";
+_framePreview.LongHelp=
+"預覽所選字形.";
+
+NONE="(None)";
+UNDERLINE="底線";
+
+REGULAR="一般";
+ITALIC="斜體";
+BOLD="粗體";
+BOLDITALIC="粗斜體";
+
+SAMPLE_STRING="AaBbCcYyZz";
+
+FIXED="固定的";
+VARIABLE="變動的";
+
+OFF="關閉";
+ON="開啟";
+
+
+OPENTYPE="開放型式字型.";
+TRUETYPE="實體型式字型.";
+POSTSCRIPT="PostScript 字型.";
+STROKE=" V4 Stroke 字型.";
+CID=" CID 字型.";
+

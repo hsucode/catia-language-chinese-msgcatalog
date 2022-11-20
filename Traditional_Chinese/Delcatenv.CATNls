@@ -1,0 +1,49 @@
+HelpNT.text = "delcatenv 的使用方式
+[-e environment_name]	        預設: DefaultEnvironment
+[-d storage_directory_name]	預設: CSIDL_APPDATA\CATEnv
+[-a user|global]		環境型式. 預設: user
+[-server]			啟動伺服器模式. 預設: 不啟動 (interactif)
+[-desktop yes|no]		移除桌面的環境表現圖示. 預設: 是
+[-v yes|no]		        啟動說明模式. 預設: 是
+[-tools]			移除工具列捷徑 (不包含命令)
+[-cs CATIA
+		ENOVIA_DMU_Navigator
+		ENOVIA_VPM
+		DELMIA
+     DELMIA_Automation
+		ENOVIA_3d_com
+		ENOVIA_VPM_Navigator ] 指定環境表現方式的產品線 (預設: CATIA)
+[-h|-help]			此說明." ;
+
+HelpUNIX.text = "delcatenv 的使用方式
+[-e environment_name]       預設: DefaultEnvironment
+[-d storage_directory_name] 預設:  $HOME/CATEnv
+[-a user|global]            環境型式. 預設: user
+[-server]                   啟動伺服器模式. 預設: 不啟動 (interactif)
+[-desktop yes|no]           移除桌面的環境表現圖示. 預設: 是
+[-v yes|no]                 啟動說明模式. 預設: 是
+[-unregserver]              不登錄 CATIA　至桌面(不包含命令)
+[-cs CATIA
+     ENOVIA_DMU_Navigator
+     ENOVIA_VPM
+     DELMIA
+     ENOVIA_3d_com
+     ENOVIA_VPM_Navigator ] 指定環境表現方式的產品線 (預設: CATIA)
+[-h|-help]			此說明." ;
+
+ErrDelEnvUsr.Text      = "刪除環境表現方式失敗" ;
+ErrDelEnv.Text         = "刪除環境失敗" ;
+ErrUnset.Text          = "未設定工作站失敗" ;
+MustBeSystemAdmin.text = "必須以系統管理員身份才可使用此選擇" ;
+EnvNameNotSpecified.Text	= "必須指定環境名稱";
+DefaultFolderNotFound.Text	= "預設環境檔案夾未找到";
+SpecifiedFolderNotFound.Text= "指定儲存檔案夾未找到";
+EnvFileNotFound.Text		= "環境檔案未找到";
+AccessPb.Text				= "無法建立或開啟檔案.]
+							   [請檢查您是否有存取儲存目錄的權限.]";
+NonValidType.Text			= "(user 或 global) 的型式必須以 -a 選擇來指定.";
+InitFolderFailed.Text		= "------------------ 警告 ----------------
+預設儲存檔案夾未找到.
+新儲存檔案夾會設定成 : ";
+NoHome.Text               = "未設定 'HOME' 環境參數" ;
+

@@ -1,0 +1,49 @@
+// Running criteria Frame
+RunningCriteriaFrmTitle = "執行標準";
+
+ConvergenceCriteriaLblTitle = "收歛速度 : ";
+
+ConvergenceSlow="慢";
+ConvergenceMedium="中";
+ConvergenceFast="快";
+ConvergenceInf="無限 (hill-climbing)";
+
+ConvergenceCmbHelp = "Defines the level of acceptation of bad solutions";
+ConvergenceCmbShortHelp = "Defines the level of acceptation of bad solutions.\nThe lower the convergence speed is, the higher the probability not to get stuck in local optima is";
+ConvergenceCmbLongHelp = "Defines the level of acceptation of bad solutions.\nIf you think your problems have a lot of local optima, you should use the lowest speed.\nIf you think that your problem has no local optima, you should choose infinite speed";
+
+// Termination Criteria Frame
+TerminationCriteriaFrmTitle = "結束標準";
+
+MaxNbEvaluationsLblTitle = "最大更新數目";
+
+MaxNoImprovementChkBTitle = "無精進的連續更新";
+MaxNoImprovementChkBHelp = "If this option is checked, the algorithm will terminate if the best solution doesn't improve after a given number of iterations";
+MaxNoImprovementChkBShortHelp = "Check this option if you want the algorithm to terminate if the best solution\ndoesn't improve after a given number of iterations";
+MaxNoImprovementChkBLongHelp = "Check this option if you want the algorithm to terminate if the best solution\ndoesn't improve after a given number of iterations";
+
+MaxTimeChkBTitle = "最大時間 (分)";
+MaxTimeChkBHelp = "Check this option if you want to limit the optimization duration";
+MaxTimeChkBShortHelp = "Check this option if you want to limit the optimization duration";
+MaxTimeChkBLongHelp = "Check this option if you want to limit the optimization duration.\nWhen the duration will be reached, the algorithm will finish the current iteration and end";
+
+NotPositivIntegerWg = "The given value must be an integer greater than 0. The editor will keep the old value.";
+NotPositivRealWg = "The given value must be a real greater than 0. The editor will keep the old value.";
+
+NotPositivIntegerWgHd = "使用者入門錯誤";
+
+//R14 stopping criteria for Objective, constraints and variables evolution over a sliding window of updates.
+StopRelativeObjective = "相對目標";
+StopAbsoluteObjective ="絕對目標";
+StopRelativeCst ="相對拘束";
+StopAbsoluteCst ="絕對拘束";
+StopAbsoluteVariable ="絕對變數";
+StopCriteriaWindow = "標準視窗";
+StopCriteria.Title = "數值發展標準";
+
+StoppingCriteriaFrm.AdvancedStoppingCriteria.LongHelp = "Termination is based on time of the run and number of update without improvement for all the algorithms.\n Additional criteria are available for the algorithm using derivatives.\n Each of this criterion is evaluated on a number of updates specified by the Window criterion at the botton of the list.\n 0 for any value means that the corresponding criterion is not taken into account.\n 0 for the window means that no criterion based on the objective/constraints/variables evolutions is taken into account.";
+StoppingCriteriaFrm.AdvancedStoppingCriteria.ShortHelp = "Termination is based on time of the run and number of update without improvement for all the algorithms.\n Additional criteria are available for the algorithm using derivatives.\n Each of this criterion is evaluated on a number of updates specified by the Window criterion at the botton of the list.\n 0 for any value means that the corresponding criterion is not taken into account.\n 0 for the window means that no criterion based on the objective/constraints/variables evolutions is taken into account.";
+
+
+
+

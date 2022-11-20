@@ -1,0 +1,142 @@
+//-----------------------------------------------------
+// Resource file for CATCCSPartingSurfaceDlg class
+// En_US
+//-----------------------------------------------------
+//=============================================================================
+// COPYRIGHT DASSAULT SYSTEMES 2003
+//=============================================================================
+//
+//   Resource file for NLS purpose. 
+//
+//=============================================================================
+//
+// Implementation Notes :
+//
+//=============================================================================
+// 19/02/03 : jcb; creation
+//=============================================================================
+
+ Title="¤À¼Ò­±©w¸q";
+
+ NoSelection = "¥¼¿ï¾Ü";
+
+ // Operation to compute
+ FrmRoot.FrmSrf.FrmOper.Title			= " °Ê§@ ";
+ FrmRoot.FrmSrf.FrmOper.LbOper1.Title	= "    ";
+ FrmRoot.FrmSrf.FrmOper.LbOper2.Title	= " ";
+ FrmRoot.FrmSrf.FrmOper.LbOper3.Title	= "    ";
+  
+ FrmRoot.FrmSrf.FrmJoin.Title				= " ¿ï¶µ ";
+ FrmRoot.FrmSrf.FrmJoin.JoinCreation.Title	= " ³sµ²¤À¼Ò­±  ";
+ FrmRoot.FrmSrf.FrmJoin.FrmToler.LbTolJoin.Title	= " ·»¦X¶ZÂ÷ ";
+ FrmRoot.FrmSrf.FrmJoin.FrmToler.LbTolSmooth.Title	= " ³Ì¤jÅÜ²§ ";
+
+ // Support to extrude
+ FrmRoot.FrmSupport.Title				= " Â_­±¨Ìªþ ";
+ FrmRoot.FrmSupport.LbSupport.Title		= " °Ñ¦Ò ";
+	
+ // Profile Elements
+ FrmRoot.FrmProfile.Title				= " Â_­±©w¸q ";
+ FrmRoot.FrmProfile.LbStart.Title		= " ³»ÂI 1:  ";
+ FrmRoot.FrmProfile.LbEnd.Title			= " ³»ÂI 2:  ";
+ FrmRoot.FrmProfile.InvertProfile.Title = " §¹¥þªº";
+ 
+ // Profile Direction
+ FrmRoot.FrmDirection.Title				= " ¤è¦V©w¸q ";
+ FrmRoot.FrmDirection.LbFrmDirection.Title = " ª½¨ì¯ó¹Ï:  ";
+
+ FrmRoot.FrmDirection.TabContainer.TabUpToSketch.Title = " ¦Ü¯ó¹Ï ";
+ FrmRoot.FrmDirection.TabContainer.TabUpToSketch.LbDirSketch.Title = " ¯ó¹Ï ";
+
+ FrmRoot.FrmDirection.TabContainer.TabDirLength.Title = " ¤è¦V+ªø«× ";
+ FrmRoot.FrmDirection.TabContainer.TabDirLength.LbDirLength.Title = " ¤è¦V ";
+ FrmRoot.FrmDirection.TabContainer.TabDirLength.LbLength.Title = " ªø«× ";
+
+ 
+ // Extrusion
+ FrmRoot.FrmExtrude.Title				= " ©Ô¦ù ";
+ 
+ // Titres des colonnes de la multi liste
+ NumberColumnTitle		= "N°";
+ ExtrudeColumnTitle		= "©Ô¦ù";
+ SupportColumnTitle		= "¨Ìªþ";
+ LengthColumnTitle		= "ªø«×";
+ LoftColumnTitle		= "Å|¼h";
+
+ // Contextual menu
+ ReframeOnEltItem		= "­«·sÅã¥Ü¦b";
+ LineRemoveItem			= "²¾°£ ";
+ HideItem				= "ÁôÂÃ ";
+ ShowItem				= "Åã¥Ü ";
+ EditItem				= "½s¿è ";
+ ReverseItem			= "°fÂà ";
+ LengthItem				= "ªø«× ";
+
+ // Loft sections
+ FrmRoot.FrmSection.Title				= " ¤Á­±©w¸q ";
+ FrmRoot.FrmSection.LbSection1.Title	= " ¤Á­±1 ";
+ FrmRoot.FrmSection.LbSection2.Title	= " ¤Á­±2 ";
+ 
+ // Loft guide
+ FrmRoot.FrmGuide.Title					= " ¾É¤Þ©w¸q ";
+ FrmRoot.FrmGuide.LbGuide.Title			= " °Ñ¦Ò ";
+ FrmRoot.FrmGuide.LbStartGuide.Title	= " ³»ÂI1:        ";
+ FrmRoot.FrmGuide.LbEndGuide.Title		= " ³»ÂI2:        ";
+ FrmRoot.FrmGuide.LoftInvertProfile.Title	= " ¤¬¸É ";
+ 
+ // Loft
+ FrmRoot.FrmLoft.Title				= "Å|¼h";
+
+ // Help
+ FrmRoot.FrmSrf.FrmOper.LongHelp = 
+	"Selects the type of operation used to create the parting surface: extrusion or loft.";
+ 
+ FrmRoot.FrmSrf.FrmJoin.JoinCreation.LongHelp = 
+	"Joins all the elements of the resulting parting surface";
+ 
+ FrmRoot.FrmSrf.FrmJoin.FrmToler.LbTolJoin.LongHelp = 
+	"Defines the merging distance of the resulting Join ";
+ FrmRoot.FrmSrf.FrmJoin.FrmToler.EditJoinToler.LongHelp = 
+	"Defines the merging distance of the resulting Join ";
+
+ FrmRoot.FrmSrf.FrmJoin.FrmToler.LbTolSmooth.LongHelp = 
+	"Defines the maximum deviation of the resulting curve smooth ";
+ FrmRoot.FrmSrf.FrmJoin.FrmToler.EditSmoothToler.LongHelp = 
+	"Defines the maximum deviation of the resulting curve smooth ";
+ 
+ FrmRoot.FrmSupport.LongHelp = 
+	"Displays the name of the element on which you will create the parting surface.";
+ 
+ FrmRoot.FrmProfile.LongHelp = 
+	"Displays the vertices limiting the profile of the parting surface you are creating.
+Once you have selected the profile support, the available vertices are displayed in white.
+Pick the ones you need. The profile is displayed in green. 
+Use the contextual menu to create additional points.";
+ 
+ FrmRoot.FrmProfile.InvertProfile.LongHelp = 
+ " Switches to the profile complementary to that proposed.";
+
+ FrmRoot.FrmGuide.LongHelp = 
+	"Displays the vertices limiting the guide of the parting surface you are creating.";
+
+ FrmRoot.FrmGuide.LoftInvertProfile.LongHelp =
+	" Switches to the profile complementary to that proposed.";
+
+ FrmRoot.FrmSection.LongHelp = 
+	"Displays the sections of the parting surface you are creating.";
+
+ FrmRoot.FrmDirection.LongHelp = 
+	"Defines the extrusion direction:
+Pick a sketch,
+The extraction direction is located in the plane of the sketch 
+and is normal to the selected edge.";
+
+ FrmRoot.FrmExtrude.LongHelp = 
+	"Lists the details of the extrusions you have already created in this operation. 
+A contextual menu is available to reframe on the extrusion, remove it, hide it or show it.
+When you select an element in the list, it is highlighted in the graphic area.";
+
+ FrmRoot.FrmLoft.LongHelp = 
+	"Lists the details of the lofts you have already created in this operation. 
+A contextual menu is available to reframe on the loft, remove it, hide it or show it.
+When you select an element in the list, it is highlighted in the graphic area.";

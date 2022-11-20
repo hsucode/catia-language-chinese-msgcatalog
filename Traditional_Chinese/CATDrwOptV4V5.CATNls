@@ -1,0 +1,46 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 1999
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwOptV4V5
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    
+// DATE        :    09.09.1999
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    Tools/Option du Drafting - Onglet V4 -> V5
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//      01           fgx   18.11.1999  Ajout de ConvertDimensionAsGraphic
+//		02			 dcf   27.06.2000  Ajout de ExplodeDitto
+//=====================================================================================
+
+Title="V4->V5";
+
+frameConvertDimensionAsGraphic.HeaderFrame.Global.Title="尺寸轉換模式";
+frameConvertDimensionAsGraphic.HeaderFrame.Global.LongHelp="定義 V5 中的尺寸轉換模式.";
+
+frameConvertDimensionAsGraphic.IconAndOptionsFrame.OptionsFrame.checkConvertDimensionAsGraphic.Title="轉換尺寸為圖形";
+frameConvertDimensionAsGraphic.IconAndOptionsFrame.OptionsFrame.checkConvertDimensionAsGraphic.LongHelp="轉換尺寸為圖形
+讓您轉換尺寸成為簡單圖形元素.";
+
+frameExplode.HeaderFrame.Global.Title="炸開模式 ";
+frameExplode.IconAndOptionsFrame.OptionsFrame.chkExplodeDitto.Title="轉換成 V5 元素時炸開 DITTO";
+frameExplode.IconAndOptionsFrame.OptionsFrame.chkExplodeSymbolo.Title="轉換成 V5 元素時炸開 DITTO";
+
+frameBlinkRed.HeaderFrame.Global.Title="閃動元素";
+frameBlinkRed.IconAndOptionsFrame.OptionsFrame.checkBlinkRed.Title="轉換閃動元素成為紅色元素";
+
+frameGVSXml.HeaderFrame.Global.Title="自發性視圖形式";
+frameGVSXml.IconAndOptionsFrame.OptionsFrame.lbl.Title="預設自發性視圖形式";
+frameGVSXml.IconAndOptionsFrame.OptionsFrame.chkGVSXml.LongHelp="選擇預設 xml 檔案來升級至 V5 視圖";
+
+frameGeom.HeaderFrame.Global.Title="幾何輸入 ";
+frameGeom.HeaderFrame.Global.LongHelp=" 2D 幾何輸入參數.";
+frameGeom.IconAndOptionsFrame.OptionsFrame._checkCenterEndPoints.Title="建立中心和結束點";
+frameGeom.IconAndOptionsFrame.OptionsFrame._checkCenterEndPoints.LongHelp="建立中心和結束點
+輸入 2D 幾何時
+建立圓的中心和曲線的端點.";

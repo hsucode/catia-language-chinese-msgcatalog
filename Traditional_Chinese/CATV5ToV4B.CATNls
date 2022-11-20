@@ -1,0 +1,77 @@
+ER_NOINPUTFILE="錯誤: 輸入檔名必須依循 -if 選擇";
+ER_NOLISTEFILE="錯誤: 輸入檔名必須依循 -l 選擇";
+ER_NODATABASEFILE="錯誤: 資料庫名稱必須依循 -db 選擇";
+ER_NODATABASEIDENT="錯誤: 輸入資料庫名稱必須依循 -id 選擇";
+ER_NONEINPUT="錯誤: 未提供輸入檔案";
+ER_INVALIDOUTPUT="錯誤: 未提供輸出檔案選擇";
+ER_INVALIDINPUT="錯誤: -if 和 -db 選擇的組合無效";
+ER_INVALIDLISTEINPUT="錯誤: -l 和 -if 或 -db 選擇的組合無效";
+ER_INVALIDFILEBASE="錯誤: -if 和 -id 選擇的組合無效";
+ER_INVALIDDATABASE="錯誤: -id 或 -l 選擇必須依循 -db 選擇";
+ER_FILEANDLIST="錯誤: -if [path] 和 -l [path] 選擇的組合無效";
+ER_INVALIDBASENAME="錯誤: 無效的資料庫名稱";
+ER_NOSERVERNAME="錯誤: 無伺服器名稱";
+ER_UNIXONLY="錯誤: VPM1 資料庫只在 UNIX 系統上可用";
+ER_SESSIONCREATE="錯誤: 無法建立程序";
+ER_NOLICENSE="*** 未授權命令 *** 授權無效" ;
+ER_INVALIDPATH="錯誤: 無效檔案路徑 : ";
+ER_DATABASECONN="錯誤: 無法連接資料庫";
+ER_OPENLISTFILE="錯誤: 清單檔案無法開啟 : ";
+ER_NODATABASEID="錯誤: 資料庫名稱無法獲得";
+ER_NOEXFILE="錯誤: 輸入檔案不存在 : ";
+ER_NOREADFILE="錯誤: 輸入檔案沒有讀取權限 : ";
+ER_NOACCESSFILE="錯誤: 無法存取輸入檔案 : ";
+ER_NOWRITE="錯誤: 輸出檔案沒有寫入權限 : ";
+ER_NOFILE="錯誤: 檔案不存在 : ";
+ER_NOTCORRECT="錯誤: 輸出檔案名稱不正確 :";
+ER_NOCREATE="錯誤: 無法建立輸出檔案 : ";
+ER_NOOPEN="錯誤: 開啟失敗 : ";
+ER_NOREMOVE="錯誤: 刪除失敗 : "; 
+ER_FILEPROCESSING="錯誤: 處理檔案時發生錯誤 : ";
+ER_DATAPROCESSING="錯誤: 處理資料時發生錯誤 : ";
+ER_NOSAVINGFORMAT="錯誤: 儲存模式必須先 -mod 選擇";
+ER_INVALIDSAVINGFORMAT="錯誤: 無效儲存模式";
+ER_INVALIDSWITCH="錯誤: 無效切換";
+ER_NOOUTPUTFILE="錯誤: 輸出檔案名稱必須依循 -of 選擇";  
+
+WN_USERNOTUSED="警告: -db 選擇未使用, -user 選擇忽略";
+WN_PWDNOTUSED="警告: -db 選擇未使用, -pwd 選擇忽略";
+INFO_SUCCESSFULL="CATV5ToV4 成功完成";
+INFO_PARTIALLY="CATV5ToV4 部份完成";
+INFO_HELP="用法: \n
+          CATV5ToV4   -if 輸入檔案 -of 輸出檔案 -mod 儲存模式 -report \n
+              -if       : 輸入檔案可以是 CATPart 或 
+			   文字檔案. 
+			   如果是文字檔案,它必須 
+			   1) 有  .txt 副檔名
+			   2) 含有 CATParts 路徑.
+ 			   如在 UNIX 系統上 .txt 檔案
+			   它必須含有類似  :
+			   /tmp/FirstPart.CATPart
+		                   /tmp/SecondPart.CATPart 
+ 			   如在 NT 系統上 .txt 檔案
+			   它必須含有類似  :
+			   E:\tmp\FirstPart.CATPart
+		                   E:\tmp\SecondPart.CATPart 
+	       -il       : 列舉 CATParts 檔案路徑.  
+	       -of	 : 含有適當副檔名的模型檔案. 
+	       -mod      : 儲存含有適當格式如 ASSO / NO_ASSO
+	       -report   : 報告目錄. 如未鍵入, 報告將儲存在 CATReport
+
+舉例: 
+CATV5ToV4 -if  /tmp/FirstPart.CATPart -of /tmp/Out -mod ASSO 
+允許在 /tmp/Out 目錄, 依相關模式,
+升級 FirstPart.CATPart 為 FirstPart.model 
+
+CATV5ToV4 -if  /tmp/List.txt -of /tmp/Out
+允許參考在 /tmp/Out 目錄內的 List.txt , 升級 Parts 
+List.txt 類似 :
+/tmp/FirstPart.CATPart
+/tmp/SecondPart.CATPart 
+
+CATV5ToV4 -il /tmp/FirstPart.CATPart /tmp/SecondPart.CATPart -of /tmp/Out
+允許如上述."; 
+
+
+
+

@@ -1,0 +1,184 @@
+// ============================================================================
+// ============================================================================
+// SWKHumanModelingProperties English Message File
+// ============================================================================
+// ============================================================================
+
+DataNotAvailable  = "DNA";
+NoManikinSelected = "There is no selected manikin.";
+ResetButton.Title = "Reset";
+DiffValExist      = "Different values exist";
+
+// ---------- SWKManikinAnthroPropFrame ---------------------------------------
+LabelDatabase.Title    = "Population: ";
+LabelSex.Title         = "Gender: ";
+LabelStaturePerc.Title = "Stature percentile: ";
+LabelWeightPerc.Title  = "Weight percentile: ";
+Anthro.Column1         = "Name";
+Anthro.Column2         = "Value (/p1)";
+Anthro.Column3         = "Value (%)";
+
+// ---------- SWKManikinAttachPropFrame ---------------------------------------
+AttachList.Column1 = "Segments";
+AttachList.Column2 = "Objects";
+DetachButton.Title = "Detach";
+PickAttachesExist = "One or more 'Picked' objects (cf. Pick activity) cannot be detached in this context.";
+
+// ---------- SWKManikinColorPropFrame ----------------------------------------
+FrameColoring.LabelAnalysis.Title = "Analysis :";
+ComboAnalysis.PreferentialAngles  = "Postural Score";
+ComboAnalysis.RULA                = "RULA";
+
+FrameColoring.LabelShowColors.Title   = "Show Colors :";
+FrameColoring.RadioBNoShow.Title      = "None";
+FrameColoring.RadioBAllShow.Title     = "All";
+FrameColoring.RadioBAllButMax.Title   = "All but Maximum Scores";
+FrameColoring.RadioBDiffOptions.Title = "Different options exist";
+
+FrameColoring.LabelDOFColoring.Title             = "Degree of Freedom :";
+FrameColoring.LabelCustomizedJointColoring.Title = "Preferred Angles :";
+FrameColoring.ObjectToColor.Title                = "Elements to color :";
+FrameColoring.CheckBSegmentColoring.Title        = "Segments";     
+FrameColoring.CheckBSurfaceColoring.Title        = "Surfaces";
+FrameColoring.ButtonResetColoring.Title          = "Reset";
+
+
+ComboDOFColoring.DOF1  = "Flexion/Extension (DOF1)";
+ComboDOFColoring.DOF2  = "Abduction/Adduction (DOF2)";
+ComboDOFColoring.DOF3  = "Rotation (DOF3)";
+ComboDOFColoring.Worst = "Worst DOF";
+
+ComboCustomizedJointColoring.PreferedAngle = "Preferred Angles ";
+ComboCustomizedJointColoring.Head          = "Head/Pelvic ";
+ComboCustomizedJointColoring.Thoracic      = "Thoracic";
+ComboCustomizedJointColoring.Lumbar        = "Lumbar";
+
+FrameColoring.LabelRULAType.Title = "Type :";
+ComboRULAType.General             = "General";
+ComboRULAType.Detailed            = "Detailed";
+ShowColorsSetting                 = "Unexpected error in the setting of the colors to show.";
+DOFColoredSetting                 = "Unexpected error in the setting of the DOF to color.";
+ObjectToColorSetting              = "Unexpected error in the setting of the object to color.";
+RULATypeColoringSetting           = "Unexpected error in the setting of the RULA type to color.";
+
+// ---------- SWKManikinDisplayPropFrame --------------------------------------
+RenderingFrame.Title                    = "Rendering";
+RenderingFrame.CheckBSegments.Title     = "Segments";
+RenderingFrame.CheckBEllipses.Title     = "Ellipses";
+RenderingFrame.CheckBMeshes.Title       = "Surfaces";
+RenderingFrame.LabelResolution.Title    = "Resolution:   ";
+
+VisionFrame.Title                       = "Vision";
+VisionFrame.CheckBLineOfSight.Title     = "Line of sight";
+VisionFrame.CheckBPeriphericCone.Title  = "Peripheral cone";
+VisionFrame.CheckBCentralCone.Title     = "Central cone";
+VisionFrame.LabelConeType.Title         = "Cone type   ";
+
+OthersFrame.Title                       = "Others";
+OthersFrame.CheckBCenterOfGravity.Title = "Center of gravity";
+ButtonResetDisplay.Title                = "Reset";
+
+ComboFlatCone                           = "Flat";
+ComboSphericCone                        = "Spherical";
+ComboBoundingCone                       = "Boundings";
+ComboSphericBoundingCone                = "Bounded cone";
+
+// ---------- SWKManikinIKBehaviorsPropFrame ----------------------------------
+SpineFrame.Title                           = "Spine";
+SpineFrame.CheckBSpineThoracic.Title       = "Thoracic";
+SpineFrame.CheckBSpineLumbar.Title         = "Lumbar";
+LineOfSightFrame.Title                     = "Line of Sight & Head";
+LineOfSightFrame.CheckBEyes.Title          = "Eyes";
+LineOfSightFrame.CheckBHead.Title          = "Line of Sight only";
+PelvisFrame.Title                          = "Pelvis";
+PelvisFrame.CheckBPelvisHTranslation.Title = "Horizontal Translation";
+PelvisFrame.CheckBPelvisVTranslation.Title = "Vertical Translation";
+PelvisFrame.CheckBPelvisRotation.Title     = "Transversal Rotation";
+PelvisFrame.CheckBPelvisOrientation.Title  = "Longitudinal Rotation";
+BalanceFrame.Title                         = "Balance";
+BalanceFrame.CheckBBalanceWithFeet.Title   = "Feet Motion";
+BalanceFrame.CheckBBalanceWithPelvic.Title = "Pelvic Motion";
+ResetButtonFrame.ResetButton.Title         = "Reset";
+
+// ---------- SWKManikinLimitationsPropFrame ----------------------------------
+LabelLimSelection.Title = "Body elements having user defined limitations (Percentile):";
+SegmentList.Column1                = "Body elements";
+SegmentList.Column2                = "DOFs";
+SegmentList.Column3                = "Lower limit";
+SegmentList.Column4                = "Upper limit";
+SegmentList.Column5                = "Manikin";
+SelectAllButton                    = "Select All";
+Lock                               = "Lock";
+NoLimits                           = "None";
+LabelOutsideHumanLimitations.Title = "* Value is outside of the human limitations";
+
+// ---------- SWKManikinLocksPropFrame ----------------------------------------
+LabelLocksSelection.Title = "These body elements are locked:";
+UnlockButton.Title = "Unlock";
+
+// ---------- SWKManikinPrefAngsPropFrame -------------------------------------
+RemoveButton.Title           = "Remove";
+LabelSelectionPrefAngs.Title = "Body elements on which prefered angles have been added :";
+
+// ---------- SWKManikinReferentialPropFrame ----------------------------------
+LabelReferential.Title = "Referential: ";
+ComboRef.EyePoint      = "Eye Point";
+ComboRef.HPoint        = "H-Point";
+ComboRef.LeftFoot      = "Left Foot";
+ComboRef.RightFoot     = "Right Foot";
+ComboRef.LowestFoot    = "H-Point Projection";
+ComboRef.Crotch        = "Crotch";
+ComboRef.LeftHand      = "Left Hand";
+ComboRef.RightHand     = "Right Hand";
+ComboRef.BetweenFeet   = "Between Feet";
+ButtonResetRef.Title   = "Reset";
+
+// ---------- SWKManikinVisionPropFrame ---------------------------------------
+FrameType.Title = "Type";
+
+SWKVisionPropTabCntr.SWKVisionFieldOfViewTabPage.Title                                             = "Field Of View ";
+SWKVisionPropTabCntr.SWKVisionFieldOfViewTabPage.FieldOfViewFrame.LabelHorizontalMonocular.Title   = "Horizontal monocular: ";
+SWKVisionPropTabCntr.SWKVisionFieldOfViewTabPage.FieldOfViewFrame.LabelHorizontalAmbinocular.Title = "Horizontal ambinocular: ";
+SWKVisionPropTabCntr.SWKVisionFieldOfViewTabPage.FieldOfViewFrame.LabelVerticalTop.Title           = "Vertical top: ";
+SWKVisionPropTabCntr.SWKVisionFieldOfViewTabPage.FieldOfViewFrame.LabelVerticalBottom.Title        = "Vertical bottom: ";
+SWKVisionPropTabCntr.SWKVisionFieldOfViewTabPage.FieldOfViewFrame.LabelCentral.Title               = "Central: ";
+SWKVisionPropTabCntr.SWKVisionFieldOfViewTabPage.FieldOfViewFrame.PBDefaultFieldOfView.ShortHelp   = "Restore the properties of the field of view to default.";
+
+SWKVisionPropTabCntr.SWKVisionDistanceTabPage.Title                                     = "Distance";
+SWKVisionPropTabCntr.SWKVisionDistanceTabPage.DistanceFrame.LabelFocusDistance.Title    = "Focus distance: ";
+SWKVisionPropTabCntr.SWKVisionDistanceTabPage.DistanceFrame.ChkBInfFocusDistance.Title  = "Infinite";
+SWKVisionPropTabCntr.SWKVisionDistanceTabPage.DistanceFrame.LabelPonctumProximum.Title  = "Ponctum Proximum:  ";
+SWKVisionPropTabCntr.SWKVisionDistanceTabPage.DistanceFrame.LabelPonctumRemotum.Title   = "Ponctum Remotum: ";
+SWKVisionPropTabCntr.SWKVisionDistanceTabPage.DistanceFrame.ChkBInfPonctumRemotum.Title = "Infinite";
+SWKVisionPropTabCntr.SWKVisionDistanceTabPage.DistanceFrame.PBDefaultDistance.ShortHelp = "Restore the properties of the distance to default.";
+
+SWKVisionPropTabCntr.SWKVisionWindowTabPage.Title = "Window display";
+ChkBHideTitle.Title                               = "Hide title";
+ChkBPeriphericContour.Title                       = "Peripheral contour";
+ChkBCentralSpot.Title                             = "Central spot";
+ChkBBlindSpot.Title                               = "Blind spot";
+PBRendering.Title                                 = "View modes...";
+LabelScale.Title                                  = "Scale:  ";
+PBDefaultVisionWindow.ShortHelp                   = "Restore the properties of the vision window display to default.";
+
+Binocular      = "Binocular";
+Ambinocular    = "Ambinocular";
+MonocularRight = "Monocular right";
+MonocularLeft  = "Monocular left";
+Stereo         = "Stereo";
+
+//---------- SWKManikinAppearancePropFrame ------------------------------------
+SegmentColorFrame.Title                    = "Selected Body Elements";
+SegmentColorFrame.LabelSurfaceColor.Title  = "Surface Color";
+SegmentColorFrame.LabelTransparency.Title  = "Transparency";
+SegmentColorFrame.LabelEllipsesColor.Title = "Ellipses Color";
+LabelDashTitle                             = "Line Type";
+LabelWeightTitle                           = "Thickness";
+SegmentColorFrame.LabelSegmentsColor.Title = "Segments Color";
+SegmentColorFrame.ResetColorButton.Title   = "Reset";
+HeadDetailsFrame.Title                     = "Head Details Colors";
+HeadDetailsFrame.LabelHair.Title           = "Hair:   ";
+HeadDetailsFrame.LabelEyes.Title           = "Eyes:   ";
+HeadDetailsFrame.LabelLips.Title           = "Lips:   ";
+HeadDetailsFrame.ResetHeadButton.Title     = "Reset";
+

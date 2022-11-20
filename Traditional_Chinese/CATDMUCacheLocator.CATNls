@@ -1,0 +1,53 @@
+INFO_HELP="
+CATDMUCacheLocator 定位相關表列文件暫存器資料. \n
+用法 : \n
+   獲得說明資訊 :
+      CATDMUCacheLocator -h\n
+   定位暫存器資料 :
+      CATDMUCacheLocator inputfile outputfile [-s char] [-t type] [-p dir]\n
+Windows 例子 :\n
+   CATDMUCacheLocator -h
+   CATDMUCacheLocator c:\u\input.txt c:\u\output.txt
+   CATDMUCacheLocator c:\u\input.txt c:\u\output.txt -p c:\cache -t 3dmap\n
+Unix 例子 :\n
+   CATDMUCacheLocator -h
+   CATDMUCacheLocator /u/input /u/output
+   CATDMUCacheLocator /u/input /u/output -p /u/cache -t 3dmap\n
+引數 :\n
+   -h            : 說明.
+   inputfile     : 輸入檔案含有文件表列.
+                   每一行必須含有文件名稱,
+                   隔線和文件的時間記錄.
+                   時間記錄使用 YYYY-mm-dd-HH.MM.SS 格式.
+                   如文件存在則時間記錄可更改成 YYYY-mm-dd-HH.MM.SS
+   outputfile    : 內含文件表列暫存器位置.
+                   每一行必須含有文件名稱, 隔線和文件相關的暫存器資料.
+   -s char       : 在輸人或輸出檔案內代表隔線的字元.
+                   預設為空白字元.
+   -t type       : 定義暫存器形式 (cgr, 3dmap, ...).
+                   預設為 cgr .
+   -p dir        : 定義用來代替設定內預設目錄的暫存器目錄. \n 
+                   在此情形下表列檔案, 目錄可能不存在或無法存取. \n
+偵錯 :\n
+   可能的退出情形數值是 :\n
+      0   成功完成. \n
+      1   因下列原因失敗 :
+          - 未有軟體授權
+          - 未啟動暫存器管理
+          - 缺少引數
+          - 無效參數
+          - 選擇後缺少參數
+          - 缺少輸入檔案
+          - 找不到檔案
+          - 無法開啟輸入檔案
+          - 文件形式不好 \n
+      2   處理中錯誤. \n
+錯誤情形 :\n
+   退出情形 = 1:
+      使用標準錯誤檔案內所含資訊修改命令線或環境.\n
+   退出情形 = 2:
+      請連絡售商.
+";
+ERR_PROCESSING="錯誤: CATDMUCacheLocator 處理失敗.";
+START_BATCH="CATDMUCacheLocator 開始在 :";
+STOP_BATCH="CATDMUCacheLocator 經過下列時間停止 :";

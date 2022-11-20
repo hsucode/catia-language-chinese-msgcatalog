@@ -1,0 +1,44 @@
+//=============================================================================
+//                                     CNEXT - CXR3
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATDrwTextReplicateCmd
+// LOCATION    :    DraftingIntCommands/CNext/resources/msgcatalog
+// AUTHOR      :    kkn
+// DATE        :    October 1999
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Drafting Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//     01          kkn   6/00      Improve message
+//------------------------------------------------------------------------------
+
+
+CATDrwTextReplicateCmd.UndoTitle="建立文字複製";
+
+CATDrwTextReplicateCmd.SelectAgent.UndoTitle="選擇文字";
+
+CATDrwTextReplicateCmd.WaitCSOState.Message="從清單中選擇文件名稱";
+CATDrwTextReplicateCmd.WaitTemplateTextState.Message="選擇樣版文字來複製; 它必須有屬性連結";
+CATDrwTextReplicateCmd.WaitLocationState.Message="選擇新文字所在位置";
+
+NotifyTitle="文字複製";
+// No CSO warning
+noCSONotifyText="需要預先選擇您想要文字鏈結並含有屬性的物件.  如, \n 當文字須鏈結至孔的直徑時, 須先從 CATPart 中選擇一孔.";
+
+// No Links warning
+noLinksNotifyText=
+"一些選擇的物件沒有 \n 與樣版相配的屬性.";
+
+// No Replicate warning
+noReplicateNotifyText=
+"沒有相配或模稜兩可的結果; \n 沒有複製.";
+
+CATDrwTextReplicateCmdWarningParmInClusterTitle="文字複製";
+CATDrwTextReplicateCmdWarningParmInCluster="所選物件無法用來複製文字 \n 因為它儲存在技術包裹中. \n 請選擇其它物件.";
+

@@ -1,0 +1,106 @@
+MfgGuidingStrategy							= "導引方式";
+
+MfgMachiningMode 				= "刀具路徑形式";
+MfgMachiningMode.LongHelp 		= "指定步序的切削模式 :
+- 來回切削 : 當啟動時先完成一個方向再執行下一個.
+- 單向 : 當起動時則只執行單一方向";
+MfgMachToler 				= "加工精度";
+MfgMachToler.LongHelp 			= "刀具路徑和完工零件的理論切削和完工零件裕度的允許變異";
+
+Mfg5AxisRadialStrategy			= "重疊";
+Mfg5AxisRadialStrategy.LongHelp	= "徑向方式";
+MfgScallopHeight 				= "殘料高度";
+MfgScallopHeight.LongHelp 		= "兩連續刀具路徑間所產生的最大殘料高度值";
+MfgMaxDistance 				= "路徑間距離";
+MfgMaxDistance.LongHelp 		= "依據所選徑向方式在兩連續路徑間的最大距離";
+MfgNumberOfPathes 			= "路徑數目";
+MfgNumberOfPathes.LongHelp 		= "路徑數目";
+
+MfgMachiningParameters              = "加工";
+MfgToolAxisStrategy                 = "刀軸";
+MfgStepoverParameters               = "徑向";
+MfgStrategyParameters               = "方式";
+MfgCompensationStrategy							= "補償";
+
+Mfg5AxisMachDirMode                 = "步進側邊";
+Mfg5AxisMachDirMode.LongHelp        = "指定總體加工方向導引平面的邊.";
+Mfg5AxisMachDirModeCD.LongHelp  	= "指定用來決定總體加工方向的導引外形邊.";
+Mfg5AxisEMToolAxisStrategy          = "刀軸模式";
+Mfg5AxisEMToolAxisStrategy.LongHelp = "刀軸模式";
+
+Mfg5AxisAngleManagement	            = "導引";
+Mfg5AxisAngleManagement.LongHelp    = "角度管理";
+MfgNormangl		            	= "前傾角度";
+MfgNormangl.LongHelp		    	= "前傾角度值";
+
+
+MfgMaxNormangl			    	= "最大前傾角度";
+MfgMaxNormangl.LongHelp		    	= "最大前傾角度值";
+MfgMinNormangl			    	= "最小前傾角度";
+MfgMinNormangl.LongHelp		    	= "最小前傾角度值";
+MfgBiNormangl		            = "側傾角度";
+MfgBiNormangl.LongHelp		    	= "側傾角度值";
+
+
+Mfg5AxisCollisionAngle		    	= "允許側傾";
+Mfg5AxisCollisionAngle.LongHelp	= "允許側傾變化範圍";
+Mfg5AxisMinHealDistance		    	= "最小跟部距離";
+Mfg5AxisMinHealDistance.LongHelp    = "最小跟部距離";
+MfgMinPathLenght		    		= "最小路徑長度";
+MfgMinPathLenght.LongHelp	    	= "最小路徑長度";
+MfgMaxDiscretizationStep	    	= "最大不連續路徑";
+MfgMaxDiscretizationStep.LongHelp   = "分開點間的線性確認路徑.";
+MfgMaxDiscretizationAngle	    	= "最大不連續角度";
+MfgMaxDiscretizationAngle.LongHelp  = "指定加工機可達到的兩連續點間的最大夾角.";
+
+MfgBetweenContours                  = "外形間";
+MfgBetweenContours.LongHelp         = "外形間";
+MfgParallelContour                  = "平行外形";
+MfgParallelContour.LongHelp         = "平行外形";
+MfgSpineContour                     = "垂直外形";
+MfgSpineContour.LongHelp            = "垂直外形";
+
+
+
+
+
+
+
+
+
+
+Mfg5AxisGuide1                      = "導引 1";
+Mfg5AxisGuide2                      = "導引 2";
+Mfg5AxisStop1                       = "停止 1";
+Mfg5AxisStop2                       = "停止 2";
+
+MfgDirectionOfCut                   = "切削方向";
+MfgDirectionOfCut.LongHelp		= "指定銑削方式: 
+- 順銑: 
+  刀具的前端 (在加工方向) 先插入材料
+- 逆銑:
+  刀具的後端 (在加工方向) 先插入材料 ";
+
+M3xMaxWidthToMachine	      	= "最大切削寬度";
+M3xMaxWidthToMachine.LongHelp 	= "指定在步進的導引方向加工開始的寬度.";
+M3xCntOverThickNess	          	= "外形預留";
+M3xCntOverThickNess.LongHelp  	= "指定外形預留.";
+M3xToContour		          	= "方向";
+M3xToContour.LongHelp	      	= "指定步進方向:
+- 從外形: 刀具路徑會開始平行導引外形
+  而步進會依循加工寬度側的預留,
+- 至外形: 刀具路徑會開始平行加工寬度的導引
+  而步進會朝向著導引.";
+
+Mfg5XOutputType			= "補償輸出";
+Mfg5XOutputType.LongHelp	= "指定 NC資料中如何輸出補償　:  
+
+無
+補償未計算.
+
+3D 接觸
+補償延著 3D 向量 (XN, YN, ZN) 計算, 垂直零件底面且與刀具底面接觸. 
+補償半徑為圓角半徑.
+輸出為接觸點 (XC, YC, ZC) 和垂直零件底面向量 (XN, YN, ZN). 
+如機具設定內設定, 也可產生刀尖點 (XT, YT, ZT). 
+多軸加工時輸出刀軸 (IJK) .";

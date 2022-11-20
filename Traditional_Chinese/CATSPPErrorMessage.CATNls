@@ -1,0 +1,84 @@
+// =====================================================================
+//  INTERNAL ERROR : PROCESS VALIDATION
+// =====================================================================
+
+ValidERR_0001.Request="/p has not a Start in his hierarchy";
+ValidERR_0001.Diagnostic="The execution can't be initialised";
+ValidERR_0001.Advice="Add a Start to/p";
+
+ValidERR_0002.Request="/p has not a hierarchy";
+ValidERR_0002.Diagnostic="An activity without hierarchy can't be executed with details";
+ValidERR_0002.Advice="Detail /p in creating some subactivities";
+
+ValidERR_0003.Request="/p is not linked to an activity";
+ValidERR_0003.Diagnostic="The validation can't be continued";
+ValidERR_0003.Advice="Link /p to his following activities";
+
+ValidERR_0004.Request="/p is unsolved or undefined";
+ValidERR_0004.Diagnostic="The validation can't be continued";
+ValidERR_0004.Advice="Solve or define /p";
+
+ValidERR_0005="An unexpected error is arrived";
+
+ValidERR_0006="The creation of this activity type is impossible to do. This type already exists.";
+
+ValidERR_0007.Request="/p is describe in a different file";
+ValidERR_0007.Diagnostic="An activity described in a different file can't be executed with details";
+
+ValidERR_0008.Request="All the branchs of the previous activity AndOut have not be executed";
+ValidERR_0008.Diagnostic="The execution can't be continued";
+ValidERR_0008.Advice="Come back to the previousactivity AndOut and execute the missing branchs";
+
+ValidERR_0009="We can't delete this activity type. \nThe ProcessLibrary document has been already saved and could be used";
+
+
+// =====================================================================
+//  INTERNAL ERROR : CONTROL FLOW
+// =====================================================================
+
+CFERR_0001.Request="/p1 has a precedence constraint with /p2";
+CFERR_0001.Diagnostic="The control flow can't be created";
+
+CFERR_0002.Request="/p1 has a indirect precedence constraint with /p2";
+CFERR_0002.Diagnostic="The control flow can't be created";
+
+
+
+// =====================================================================
+//  INPUT ERROR
+// =====================================================================
+
+// Ancienne erreur 1001
+// NullInput = "CATSPPInputError :: 'the parameter /p1 of the function /p2 is Null.'" ;
+InputERR_1001.Request = "the parameter /p1 of the function /p2 is Null";
+InputERR_1001.Diagnostic = "Null";
+InputERR_1001.Advice = "Null";
+
+// Ancienne erreur 1002
+// InvalidValue = "CATSPPInputError :: 'The value of the parameter /p1 of the function /p2 is not valid.'" ;
+InputERR_1002.Request = "The value of the parameter /p1 of the function /p2 is not valid";
+InputERR_1002.Diagnostic = "Null";
+InputERR_1002.Advice = "Null";
+
+// Ancienne erreur 1003
+// NoLinkable = "CATSPPInputError :: 'The creation of a control flow between /p1 and /p2 is not authorized'" ;
+InputERR_1003.Request = "The creation of a control flow between /p1 and /p2 is not authorized";
+InputERR_1003.Diagnostic = "Null";
+InputERR_1003.Advice = "Null";
+
+// Ancienne erreur 2001
+// NullSU = "CATSPPInternalError :: 'The class /p1 has not been finded int the attached library to the current process.'" ;
+InputERR_2001.Request = "The class /p1 has not been finded int the attached library to the current process";
+InputERR_2001.Diagnostic = "Null";
+InputERR_2001.Advice = "Null";
+
+// Add CFO 06/02/03
+InputERR_2002.Request = "the object /p1 is not an Item!";
+InputERR_2002.Diagnostic = "Null";
+InputERR_2002.Advice = "Null"; 
+
+
+
+
+
+

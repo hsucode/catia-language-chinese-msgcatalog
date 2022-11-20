@@ -1,0 +1,50 @@
+// --- catalog file for JDialog Table customization
+
+TruncPolicy.Title = "單元截斷方式";
+TruncPolicy.Help = "Defines how long table cells are truncated.";
+TruncPolicy.0.Title = "截斷 + 單元 Tooltip";
+TruncPolicy.0.Help = "Truncates text and shows the full cell text in a tooltip.";
+TruncPolicy.1.Title = "截斷 + 排 Tooltip";
+TruncPolicy.1.Help = "Truncates text and shows the full row text in a tooltip.";
+TruncPolicy.2.Title = "Wrap 文字";
+TruncPolicy.2.Help = "Wraps long cells on several lines.";
+
+ToolbarPolicy.Title = "工具列顯示方式";
+TableToolbarPolicy.Title = "工具表顯示方式";
+ToolbarPolicy.0.Title = "只有圖示";
+ToolbarPolicy.1.Title = "只有文字";
+ToolbarPolicy.2.Title = "圖示 + 文字 (右)";
+ToolbarPolicy.3.Title = "圖示 + 文字 (底)";
+
+Custo.Customize.Title = "偏好";
+Custo.Customize.Help = "編輯表偏好.";
+Custo.Title = "表偏好.";
+
+Custo.Button.OK.Title = "儲存";
+Custo.Button.OK.Help = "Save table preferences.";
+Custo.Button.CANCEL.Title = "取消";
+Custo.Button.CANCEL.Help = "Cancel table preferences.";
+Custo.Button.APPLY.Title = "套用";
+Custo.Button.APPLY.Help = "Apply (without saving) table preferences.";
+Custo.Button.RESET.Title = "重設";
+Custo.Button.RESET.Help = "Reset table preferences to default.";
+
+Custo.ShiftLeft.Help = "Shift column left.";
+Custo.ShiftRight.Help = "Shift column right.";
+Custo.ShowHide.Help = "Show/hide column.";
+
+Custo.Constr.fixed = "固定";
+Custo.Constr.min = "最小";
+//Custo.Constr.Help = "<u>Choose:</u><ul><li><b>fixed</b> sized column,<li>or <b>minimum</b> size (spreads if space is available).</ul>";
+Custo.Constr.Help = "Column constraint ('minimum' means it spreads over available space).";
+
+Custo.Width.Help = "Column size (in characters).";
+
+Custo.NbLines.Title = "顯示排: ";
+
+// --- %c is the constraint combo, %w is the width field
+Custo.WidthSentence = "%c 大小: %w";
+
+Export.Title = "輸出";
+ExportToExcel.Help = "輸出成 Excel";
+ExportToFile.Help = "輸出成 CSV 檔案";

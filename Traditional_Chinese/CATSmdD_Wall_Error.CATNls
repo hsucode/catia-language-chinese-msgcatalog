@@ -1,0 +1,86 @@
+// ===============================================================================================
+// COPYRIGHT DASSAULT SYSTEMES 2002
+// ===============================================================================================
+// Objectif         : Catalogue des erreurs du Wall
+// Responsable      : LOC
+// date de création : 25/04/2002
+// Commentaires     : 
+//
+// ===============================================================================================
+
+//-------------------------------------------------------------------
+// Wall: Specs d'entrée incorrectes
+//-------------------------------------------------------------------
+CATSmdD_Wall_Error_ERR_0001.Request    = "Unable to init the build of a Wall"; 
+CATSmdD_Wall_Error_ERR_0001.Diagnostic = "Factories or Container not found.";
+CATSmdD_Wall_Error_ERR_0001.Advice     = "You should verify the current Document.";
+
+CATSmdD_Wall_Error_ERR_0002.Request    = "Unable to init the build of a Wall";
+CATSmdD_Wall_Error_ERR_0002.Diagnostic = "Wall specifications not found.";
+CATSmdD_Wall_Error_ERR_0002.Advice     = "You should verify the current Document.";
+
+CATSmdD_Wall_Error_ERR_0010.Request    = "";
+CATSmdD_Wall_Error_ERR_0010.Diagnostic = "Thickness of the Sheet Metal Part not found or out of range.";
+CATSmdD_Wall_Error_ERR_0010.Advice     = "You should modify the input Parameters.";
+
+CATSmdD_Wall_Error_ERR_0011.Request    = "Selected profile is not correct.";
+CATSmdD_Wall_Error_ERR_0011.Diagnostic = "The profile should not intersect itself.";
+CATSmdD_Wall_Error_ERR_0011.Advice     = "Please redesign the profile.";
+
+CATSmdD_Wall_Error_ERR_0012.Request    = "Selected profile is not correct.";
+CATSmdD_Wall_Error_ERR_0012.Diagnostic = "The profile should be closed.";
+CATSmdD_Wall_Error_ERR_0012.Advice     = "Please redesign the profile.";
+
+CATSmdD_Wall_Error_ERR_0013.Request    = "Selected profile is not correct.";
+CATSmdD_Wall_Error_ERR_0013.Diagnostic = "The profile should be planar.";
+CATSmdD_Wall_Error_ERR_0013.Advice     = "Please redesign the profile.";
+
+CATSmdD_Wall_Error_ERR_0014.Request    = "Selected face is not correct.";
+CATSmdD_Wall_Error_ERR_0014.Diagnostic = "The face should be planar.";
+CATSmdD_Wall_Error_ERR_0014.Advice     = "Please modify your selection.";
+
+CATSmdD_Wall_Error_ERR_0015.Request    = "Selected tangent feature is not correct.";
+CATSmdD_Wall_Error_ERR_0015.Diagnostic = "The tangency conditions are not respected.";
+CATSmdD_Wall_Error_ERR_0015.Advice     = "Please modify your selection or redesign the profile.";
+
+CATSmdD_Wall_Error_ERR_0016.Request    = "Several faces have been selected.";
+CATSmdD_Wall_Error_ERR_0016.Diagnostic = "The Wall only accept one face.";
+CATSmdD_Wall_Error_ERR_0016.Advice     = "Please modify your selection.";
+
+
+//-------------------------------------------------------------------
+// Wall : Build FD
+//-------------------------------------------------------------------
+//
+CATSmdD_Wall_Error_ERR_0100.Request    = "";
+CATSmdD_Wall_Error_ERR_0100.Diagnostic = "An error occured during the Folded Wall computation.";
+CATSmdD_Wall_Error_ERR_0100.Advice     = "You should modify the input Parameters.";
+
+CATSmdD_Wall_Error_ERR_0101.Request    = "";
+CATSmdD_Wall_Error_ERR_0101.Diagnostic = "Folded Specifications of the Wall not Found.";
+CATSmdD_Wall_Error_ERR_0101.Advice     = "You should modify the input Parameters.";
+
+CATSmdD_Wall_Error_ERR_0102.Request    = "";
+CATSmdD_Wall_Error_ERR_0102.Diagnostic = "Folded Geometry of the Wall not Found.";
+CATSmdD_Wall_Error_ERR_0102.Advice     = "You should modify the input Parameters.";
+
+//-------------------------------------------------------------------
+// Wall : Build FP
+//-------------------------------------------------------------------
+
+CATSmdD_Wall_Error_ERR_0200.Request    = "";
+CATSmdD_Wall_Error_ERR_0200.Diagnostic = "An error occured during the Flattened Wall computation.";
+CATSmdD_Wall_Error_ERR_0200.Advice     = "You should modify the input Parameters.";
+
+CATSmdD_Wall_Error_ERR_0201.Request    = "";
+CATSmdD_Wall_Error_ERR_0201.Diagnostic = "Flattened Boundary Specifications of the Wall not Found.";
+CATSmdD_Wall_Error_ERR_0201.Advice     = "You should modify the input Parameters.";
+
+CATSmdD_Wall_Error_ERR_0202.Request    = "";
+CATSmdD_Wall_Error_ERR_0202.Diagnostic = "Flattened Boundary Geometry of the Wall not Found.";
+CATSmdD_Wall_Error_ERR_0202.Advice     = "You should modify the input Parameters.";
+
+
+
+
+

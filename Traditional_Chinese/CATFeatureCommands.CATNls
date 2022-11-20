@@ -1,0 +1,191 @@
+CATFecEditLinksWnd.frame_filter.owner_filter.Title="擁用者過濾器: ";
+
+CATFecEditLinksWnd.frame_filter.type_filter.Title="連接形式過濾器: ";
+
+CATFecEditLinksWnd.frame_filter.onlydoc_filter.Title="只顯示指向文件";
+
+CATFecEditLinksWnd.Col0="從元素";
+
+CATFecEditLinksWnd.Col1="至元素";
+
+CATFecEditLinksWnd.Col2="在複製件";
+
+CATFecEditLinksWnd.Col3="指向文件";
+
+CATFecEditLinksWnd.Col4="發行";
+
+CATFecEditLinksWnd.Col5="連接形式";
+
+CATFecEditLinksWnd.Col6="擁用者";
+
+CATFecEditLinksWnd.Col7="狀態";
+
+CATFecEditLinksWnd.Col8="最後同步化";
+
+CATFecEditLinksWnd.Col9="啟動情形";
+
+CATFecMigrLinksWnd.Title              = "升級鏈結";
+CATFecMigrLinksWnd.FromElemCol.Title  = "由元素";
+CATFecMigrLinksWnd.ToElemCol.Title    = "至元素";
+CATFecMigrLinksWnd.PointedDocCol.Titel= "指向元素";
+CATFecMigrLinksWnd.StatusCol.Title    = "情形";
+CATFecMigrLinks.SourceLabel.Title     = "指向文件 ";
+
+CATFecEditLinksWnd.frame_list.links_list.LongHelp = "從元素 = 指向元素
+至元素 = 指向元素
+狀態 = 連接形式  
+   OK : 所有情形完好
+   同步化 : 指向元素與已指向元素已同步化.
+   未同步化 : 指向元素與已指向元素未同步化.
+   參考元素未找到 : 指向元素未找到
+   文件未載入 : 指向文件已找到但未載入
+   文件未找到 : 指向文件未找到
+   獨立的 : 指向元素已獨立; 鏈結已打斷";
+
+
+
+CATFecEditLinksWnd.frame_button.button_synchronize.Title="同步化";
+
+CATFecEditLinksWnd.frame_button.button_activate.Title="啟動或不啟動";
+
+CATFecEditLinksWnd.frame_button.button_breaklink.Title="獨立";
+
+CATFecEditLinksWnd.frame_button.button_opensource.Title="開啟";
+
+CATFecEditLinksWnd.frame_button.button_findsource.Title="尋找";
+
+CATFecEditLinksWnd.frame_button.button_replace.Title="更換";
+
+CATFecEditLinksWnd.frame_button.button_replace_object.Title="更改發行";
+
+CATFecEditLinksWnd.frame_button.button_replace_in_session.Title="在工作中更換";
+
+CATFecEditLinksWnd.frame_button.button_load.Title="載入";
+
+CATFecEditLinksWnd.frame_button.button_synchronizeall.Title="同步化所有";
+
+CATFecEditLinksWnd.frame_button.button_olelinks.Title="OLE 連接...";
+
+CATFecEditLinksWnd.frame_button.bt_sync_last_version.Title="以最新版期更換";
+CATFecEditLinksWnd.frame_button.bt_sync_last_version.LongHelp="If a latest version exists
+    then it enables to eventually load this latest version and
+    then it replaces links with this latest version and
+    then it will further synchronize links (if relevant)"; 
+
+CATFecEditLinksWnd.frame_button.bt_sync_last_released.Title="更新至最新凍結版期";
+CATFecEditLinksWnd.frame_button.bt_sync_last_released.LongHelp="Do the same processing than Replace with latest version, 
+    but on a frozen one which might be not the latest";
+
+CATFecEditLinksWnd.frame_button.bt_sync_current_version.Title="以目前版期更換";
+
+CATFecEditLinksWnd.frame_label.source.Title="指向文件: ";
+CATFecEditLinksWnd.frame_label.refresh_button.Title="重新顯示";
+CATFecEditLinksWnd.frame_label.refresh_button.LongHelp="執行此命令後
+   將重新顯示中斷鏈結的文件, 系統將會嚐試存取所有指向文件.
+使用此命令是用來舉例說明如何重新存取未找到文件,
+而不用在網路重新連通後關閉編輯下的鏈結命令";
+
+CATFecEditLinksWnd.TitleDoc = "指向文件";
+
+CATFecEditLinksWnd.TitleDesignDoc = "設計文脈文件:";
+
+CATFecEditLinksWnd.TitleElement = "元素的鏈結";
+
+CATFecStatus.OK="確認";
+
+ecStatus.ElementSynchro      = "同步化"; 
+
+CATFecStatus.ElementNotSynchro="不同步化"; 
+
+CATFecStatus.ReferenceNotFound="參考未找到";
+
+CATFecStatus.DocSourceNotLoaded="文件未找到";
+
+CATFecStatus.DocSourceUnloadable = "不是 CATIA 文件";
+
+CATFecStatus.DocSourceNotFound="文件未找到";
+
+CATFecStatus.Broken="獨立";
+
+CATFecStatus.NoStatus="沒有狀態";
+
+CATFecStatus.Activated="啟動";
+
+CATFecStatus.Deactivated="不啟動";
+  
+CATFecEditLinksWnd.tab_container.tab_links.Title="鏈結";
+
+CATFecEditLinksWnd.tab_container.tab_doc_links.Title="指向文件";
+
+CATFeatureCommands.CATLinksCmd.InitialState.Message="選取一元素";
+
+CATFecEditLinksWnd.WrongSelection = "錯誤選擇";
+CATFecEditLinksWnd.NotSameDocMsg = "不是所有連結點指向相同文件.";
+CATFecEditLinksWnd.MoreThanOneDoc = "只有一項文件可被更換.";
+
+CATFecCombo.Filter.All = "(全部)";
+
+Warning.Links = "鏈結";
+
+Warning.MigrateLinks = "升級鏈結";
+
+Warning.Document = "文件";
+
+Warning.Element = "元素";
+
+Warning.NoLinks = " 未含外部鏈結.";
+
+Warning.NoMigrableLinks = " 未含外部升級鏈結.";
+
+Warning.Product = "元素產品鏈結無效.";
+
+CATFeatureCommands.Synchronize.Title="同步化";
+CATFeatureCommands.Synchronize.Help="同步化";
+CATFeatureCommands.Synchronize.ShortHelp="同步化";
+CATFeatureCommands.Synchronize.LongHelp="同步化";
+
+CATFeatureCommands.Isolate.Title="獨立";
+CATFeatureCommands.Isolate.Help="獨立";
+CATFeatureCommands.Isolate.ShortHelp="獨立";
+CATFeatureCommands.Isolate.LongHelp="獨立";
+
+CATFeatureCommands.Load.Title="載入";
+CATFeatureCommands.Load.Help="載入";
+CATFeatureCommands.Load.ShortHelp="載入";
+CATFeatureCommands.Load.LongHelp="載入";
+
+CATFeatureCommands.Activate.Title="啟動";
+CATFeatureCommands.Activate.Help="啟動所選物件";
+CATFeatureCommands.Activate.ShortHelp="啟動";
+CATFeatureCommands.Activate.LongHelp="啟動所選物件";
+
+CATFeatureCommands.Deactivate.Title="不啟動";
+CATFeatureCommands.Deactivate.Help="不啟動所選物件";
+CATFeatureCommands.Deactivate.ShortHelp="不啟動";
+CATFeatureCommands.Deactivate.LongHelp="不啟動所選物件";
+
+CATFeatureCommands.Message = "/p1";
+CATFeatureCommands.LinkRefusedDoc = "鏈結拒絕此文件.";
+CATFeatureCommands.LinksStillWithOldDoc = "文件
+/p1
+仍然鏈結此文件
+/p2
+無法重新指向所有文件.";
+
+CATExternalLinkValuator.NoReporterTitle = "無法替換";
+CATExternalLinkValuator.NoReporterMsg = "沒有錯誤可處理.";
+CATExternalLinkValuator.NoValuateItf = "沒有鏈結可替換此文件.";
+CATExternalLinkValuator.AllowKOTitle = "鏈結不允許如此修改";
+CATExternalLinkValuator.AllowKOMsg = "至少有一項鏈結不允許指向文件被更換. \n 您要繼續嗎 ?";
+CATExternalLinkValuator.DocChooserTitle = "指向文件";
+CATExternalLinkValuator.AcceptDocKOMsg1 = "選擇另一文件.";
+CATExternalLinkValuator.AcceptDocKOMsg2 = "至少有一項鏈結重覆使用此文件. \n 總之, 在允許時您要更換此文件嗎 ?";
+ELK_2003 = "同步化動作失敗."; 
+
+CATFeatureCommands.CATLinksCmd.Reroute.Message = "選擇新的指向物件";
+CATFeatureCommands.CATLinksCmd.Reroute.UndoTitle = "更改發行";
+CATFeatureCommands.CATRerouteObjectLinkMultiDocumentCommand.SelectAnObject.Message = "選擇新的指向物件";
+
+
+
+

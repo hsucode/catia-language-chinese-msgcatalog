@@ -1,0 +1,165 @@
+//*------------------------------*//
+//* CATSAMAnalysisError messages *//
+//*------------------------------*//
+
+ERR_CATAnalysisModeler_0001 = "分析模型產生錯誤";
+ERR_CATAnalysisModeler_9999 = "分析軟體錯誤 /P01 \n2 /P02";
+ERR_CATAnalysisModeler_9999.Diagnostic = "內部錯誤";
+
+ERR_CATAnalysisModeler_0002 = "此實體已經包含在一組中";
+
+ERR_CATAnalysisModeler_0003 = "V4 Model with /P01 solver or /P02 analysis type is not supported";
+ERR_CATAnalysisModeler_0003.Diagnostic = "V4 Model with /P01 solver or /P02 analysis type is not supported";
+ERR_CATAnalysisModeler_0003.Advice = "Choose a model with a supported solver";
+
+ERR_CATAnalysisModeler_0004 = "由於更新機械裝置失敗產生錯誤";
+ERR_CATAnalysisModeler_0004.Diagnostic = "實體無法被更新";
+
+ERR_CATAnalysisModeler_0005 = "沒有相關的材質在性質定義中";
+ERR_CATAnalysisModeler_0005.Diagnostic = "沒有相關的材質在性質定義中";
+
+ERR_CATAnalysisModeler_0006 = "材質不是正確的定義在設計上";
+ERR_CATAnalysisModeler_0006.Request = "請嚐試用詳盡材質資料";
+ERR_CATAnalysisModeler_0006.Diagnostic = "定義在 /P01 上的材質不正確";
+ERR_CATAnalysisModeler_0006.Advice = "應用材質在元件或產品上";
+
+ERR_CATAnalysisModeler_0007 = "在分析的文件中,下列的設計是不適當的";
+ERR_CATAnalysisModeler_0007.Request = "檢查你的設計";
+ERR_CATAnalysisModeler_0007.Advice = "修改你的設計";
+
+ERR_CATAnalysisModeler_0008 = "在設計上應用的材質沒有分析資料";
+ERR_CATAnalysisModeler_0008.Diagnostic = "應用的材質沒有分析資料 ";
+ERR_CATAnalysisModeler_0008.Advice = "改變材質或指定分析資料";
+
+ERR_CATAnalysisModeler_0009 = "元件本體 /P01 是空的";
+ERR_CATAnalysisModeler_0009.Diagnostic = "元件本體 /P01 是空的";
+ERR_CATAnalysisModeler_0009.Advice = "利用組合來建立元件本體";
+
+ERR_CATAnalysisModeler_0010.Diagnostic = "實體 /P01 是無法更新的";
+ERR_CATAnalysisModeler_0010.Advice = "檢查元件的定義";
+
+ERR_CATAnalysisModeler_0011.Diagnostic = "分析元件 /P01 沒有支援上";
+ERR_CATAnalysisModeler_0011.Advice = "編輯分析元件和選擇一個支援";
+
+ERR_CATAnalysisModeler_0012.Diagnostic = "沒有網格 (mesh) 元件與 /P01 相關";
+ERR_CATAnalysisModeler_0012.Advice = "請使用較小的尺寸與相關支援的 mesh.";
+
+WARN_CATAnalysisModeler_0012.Diagnostic = "沒有網格 (mesh) 元件與依附 /P01 相關";
+WARN_CATAnalysisModeler_0012.Advice = "使用較小的尺寸來網格化相關依附或檢查依附是否屬於網格區域 ";
+
+ERR_CATAnalysisModeler_0013.Diagnostic = "/P01 無法 網格 (mesh) 相關元件或組立元件";
+ERR_CATAnalysisModeler_0013.Advice = "請檢查是否存在及相關基準的有效性";
+
+ERR_CATAnalysisModeler_0014.Diagnostic = " /P01 的相關 網格 (mesh) 無法產生任何元件";
+ERR_CATAnalysisModeler_0014.Advice = "1. 網格 (mesh) 連接元件可能太大\n 2. 相連零件間的距離可能太大";
+
+ERR_CATAnalysisModeler_0015 = "幾何無法更新";
+ERR_CATAnalysisModeler_0015.Diagnostic = "幾何無法更新";
+ERR_CATAnalysisModeler_0015.Advice = "請編修您的幾何";
+
+ERR_CATAnalysisModeler_0016 = "檔案格式錯誤";
+ERR_CATAnalysisModeler_0016.Diagnostic = "檔案必須包含固定的 /P01 行數";
+ERR_CATAnalysisModeler_0016.Advice = "";
+
+ERR_CATAnalysisModeler_0017 = "檔案格式";
+ERR_CATAnalysisModeler_0017.Diagnostic = "單位符號 /P01 對 /P02 的量無效";
+ERR_CATAnalysisModeler_0017.Advice = "";
+
+ERR_CATAnalysisModeler_0018 = "您無法輸入作動文件";
+ERR_CATAnalysisModeler_0018.Diagnostic = "您無法輸入正在作動的文件";
+
+ERR_CATAnalysisModeler_0019 = "您無法輸入此文件";
+ERR_CATAnalysisModeler_0019.Diagnostic = "作動文件與輸入模型是鏈結的";
+
+ERR_CATAnalysisModeler_0020 = "檔案存取錯誤";
+ERR_CATAnalysisModeler_0020.Diagnostic = "檔案 /P01 無法存取";
+ERR_CATAnalysisModeler_0020.Advice = "檢查檔案名稱";
+
+ERR_CATAnalysisModeler_LIC = "基本軟體授權未獲取. ";
+ERR_CATAnalysisModeler_LIC.Diagnostic = "無法執行功能";
+ERR_CATAnalysisModeler_LIC.Advice = "檢查軟體授權";
+
+ERR_CATAnalysisModeler_0021 = "元件 /P01 無法編輯";
+ERR_CATAnalysisModeler_0021.Request = "嚐試編輯元件 /P01";
+ERR_CATAnalysisModeler_0021.Diagnostic = "元件已毀損";
+ERR_CATAnalysisModeler_0021.Advice = "重建元件";
+
+ERR_CATAnalysisModeler_0CCP = "元件 /P01 無法貼在所選特徵上";
+ERR_CATAnalysisModeler_0CCP.Request = "無法貼上";
+ERR_CATAnalysisModeler_0CCP.Diagnostic = "元件 /P01 無法貼在所選特徵上";
+ERR_CATAnalysisModeler_0CCP.Advice = "請選擇適合特徵";
+
+//*---- CATISamValidity en Model Check  ------------------------------*//
+WARN_CATAnalysisModeler_0022 = "元件 /P01 無效";
+WARN_CATAnalysisModeler_0022.Diagnostic = " /P01 開始定義不完整";
+WARN_CATAnalysisModeler_0023 = "元件 /P01 無效";
+WARN_CATAnalysisModeler_0023.Diagnostic = "依附號碼與 /P01 的定義不一致";
+WARN_CATAnalysisModeler_0024 = "元件 /P01 無效";
+WARN_CATAnalysisModeler_0024.Diagnostic = "依附型式與 /P01 的定義不一致";
+WARN_CATAnalysisModeler_0025 = "元件 /P01 無效";
+WARN_CATAnalysisModeler_0025.Diagnostic =  "根本設計特徵不再支援 /P01 的網格特性";
+WARN_CATAnalysisModeler_0026 = "元件 /P01 無效";
+WARN_CATAnalysisModeler_0026.Diagnostic =  "主要設計依附無法從 /P01 萃取";
+
+//*---- Fin CATISamValidity en Model Check  --------------------------*//
+
+//*---- Edit Links  ------------------------------*//
+ERR_CATAnalysisModeler_0030 = "/P01 文件的鏈結無法以 /P02 文件更換";
+ERR_CATAnalysisModeler_0031 = "/P01 文件的鏈結無法更換";
+ERR_CATAnalysisModeler_0032 = "指向文件無法獲取";
+ERR_CATAnalysisModeler_0033.Diagnostic = "指向文件不在記憶體中";
+ERR_CATAnalysisModeler_0033.Advice = "在鏈結管理中使用同步對話框.";
+
+//*---- Read Only  ------------------------------*//
+ERR_CATAnalysisModeler_0035.Diagnostic = "/P01 為唯讀, 不允修改";
+ERR_CATAnalysisModeler_0035.Request = "請修改 /P01 的存取權";
+
+//*---- Calcul des axes locaux  ------------------------------*//
+ERR_CATAnalysisModeler_0036.Diagnostic = "無法在 /P01 計算不明確軸系";
+ERR_CATAnalysisModeler_0036.Request = "不明確軸系無法在此類依附上計算";
+
+ERR_CATAnalysisModeler_0037.Diagnostic = "網格零件 /P01 無法更新";
+ERR_CATAnalysisModeler_0037.Advice = "上層元素數目必須等於1";
+//*---- import V4  ------------------------------*//
+WARN_CATAnalysisModeler_0100 = "元件 /P01 是不可轉變的";
+//*---- Export V4  ------------------------------*//
+ERR_CATAnalysisModeler_0101.Diagnostic = "無效 code page ";
+ERR_CATAnalysisModeler_0101.Request = "請在工具組選項中修改寫入參數";
+ERR_CATAnalysisModeler_V4Save.Diagnostic = "無法儲存 V4 模型, 沒有支援環境";
+
+ERR_CATAnalysisModeler_0102.Diagnostic = "無效 CATIA V4 模型 ";
+ERR_CATAnalysisModeler_0102.Request = "所選模型未含分析資料";
+
+ERR_CATAnalysisModeler_0103.Diagnostic = "無效 CATIA V4 模型 ";
+ERR_CATAnalysisModeler_0103.Request = "轉換前在模型上使用 GFIENV (2)";
+
+WARN_CATAnalysisModeler_UPDATE = "警告訊息";
+WARN_CATAnalysisModeler_ENTI = "更新元件 /P01 時發生警告";
+WARN_CATAnalysisModeler_MATERIAL = "未找到材料.";
+
+WARN_CATAnalysisModeler_SHEARasMEMB = "Some Elements will be considered as membrane, Shear panel behavior is not supported";
+
+
+WARN_CATAnalysisModeler_0038.Diagnostic = "Some mesh entities of the support haven't received values";
+WARN_CATAnalysisModeler_0038.Advice = "Check the intersection of the bounding box with the geometrical support";
+
+ERR_CATAnalysisModeler_0040.Request = "無法更新有限元素模型";
+ERR_CATAnalysisModeler_0040.Diagnostic = "部份組立鏈結已中斷";
+ERR_CATAnalysisModeler_0040.Advice = "回復組立鏈結, 或修改組立定義";
+
+ERR_CATAnalysisModeler_0041.Diagnostic = "相關檔案對應無效";
+ERR_CATAnalysisModeler_0041.Advice = "選擇已存檔案來對應";
+
+WARN_CATAnalysisModeler_0038.Diagnostic = "部份依附的網格本體未接收到數值";
+WARN_CATAnalysisModeler_0038.Advice = "請檢查圍繞盒與幾何依附的相交";
+
+NotLinkToAnalysis = "所選物件的文件必須與文件管理鏈結.";
+
+
+ERR_CATAnalysisModeler_0043.Diagnostic = "分析設定 /P01 指向未載入依附";
+ERR_CATAnalysisModeler_0043.Advice = "更新元件前載入依附";
+
+ERR_VB_1 = "無法以 /P02 當做上層元素建立 /P01 ";
+ERR_VB_2 = "未知物件型式 /P01 ";
+ERR_VB_3 = "無效品質: 需要 /P01 品質 ";
+ERR_VB_4 = "不允許支援型式";

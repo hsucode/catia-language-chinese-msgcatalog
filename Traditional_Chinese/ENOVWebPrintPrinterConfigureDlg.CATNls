@@ -1,0 +1,58 @@
+//-------------------------------------------------------------------------
+// Resource file for ENOVWebPrintPrinterConfigureDlg
+//-------------------------------------------------------------------------
+
+Title = "列印性質";
+
+PrinterFrame.Title = "印表機";
+PrinterFrame.LongHelp = "Identifies the printer.
+'File' gives the file pathname where the printer properties are stored.
+'Name' is the printer name.
+'Driver' lets you select the printer driver or language.
+Click 'Advanced Configuration...' to enter additional parameters,
+depending on the selected driver.";
+PrinterFrame.DescriptionLabel.Title = "名稱";
+PrinterFrame.Driver.Title = "驅動程式";
+PrinterFrame.LanguageFrame.AdvancedConfiguration.Title = "進階組態...";
+
+PaperFormatFrame.Title = "頁面格式";
+PaperFormatFrame.LongHelp = "Sets printer paper properties.
+'Default' sets the printer paper default format.
+'Maximum' sets the printer paper biggest supported format.
+'Portrait' and 'Lansdscape' set the default printer paper orientation.
+Click 'Default Margins' to set the printer paper margins default values.";
+PaperFormatFrame.DefaultPaperLabel.Title = "預設";
+PaperFormatFrame.MaximumPaperLabel.Title = "最大";
+PaperFormatFrame.OrientationFrame.Portrait.Title = "直印";
+PaperFormatFrame.OrientationFrame.Portrait.LongHelp = "Orients the paper vertically.";
+PaperFormatFrame.OrientationFrame.Landscape.Title = "橫印";
+PaperFormatFrame.OrientationFrame.Landscape.LongHelp = "Rotates the paper 90 degrees clockwise.";
+PaperFormatFrame.DefaultMargins.Title = "預設範圍...";
+
+ScriptsFrame.Title = "傳送執行緒";
+ScriptsFrame.LongHelp ="Sets the print output file pathname
+and the queue name or print command to execute.
+'Declaration' sets the print output file pathname to the Default ($HOME/catout.out)
+or to the pathname you want using Custom to set the CATOUT environment variable.
+'Execution' sets the print queue if you select 'Default' and a queue name,
+or lets you edit the script to invoke when printing if you choose 'Custom'.";
+ScriptsFrame.Declaration.Title = "宣告";
+ScriptsFrame.Scripts1.RunTimeDefault.Title = "預設";
+ScriptsFrame.Scripts1.RunTimeCustom.Title = "自訂";
+ScriptsFrame.OutputFileName.Title = "輸出檔案名稱";
+ScriptsFrame.RunTimePushButton.Title = "編輯執行緒...";
+ScriptsFrame.Execution.Title = "執行";
+ScriptsFrame.Scripts2.ExecutionDefault.Title = "預設";
+ScriptsFrame.Scripts2.ExecutionCustom.Title = "自訂";
+ScriptsFrame.Queue.Title = "佇列名稱";
+ScriptsFrame.ExecutionPushButton.Title = "編輯執行緒...";
+
+
+DefaultMargins.Title = "預設範圍";
+RunTimeEditor.Title = "執行執行緒";
+ExecutionEditor.Title = "傳送執行緒";
+
+NoGenerator.Title = "進階組態";
+NoGenerator.PText = "無法載入 /p1 驅動程式";
+
+TitleLock.PText = "印表機性質     參數無法更改";

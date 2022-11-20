@@ -1,0 +1,44 @@
+Title = "建立幾何";
+
+//AssociativeGeomFrame.Title = "定義";
+AssociativeGeomFrame.AssocGeomRadioButton.Title = "相關幾何";
+AssociativeGeomFrame.NoAssocGeomRadioButton.Title = "不相關幾何";
+
+CreateGeomFrame.GeomCreationCOG.Title     = "重心";
+CreateGeomFrame.GeomCreationArcCenter.Title = "弧心";
+
+CreateGeomFrame.GeomCreationPt1.Title     = "第一點";
+CreateGeomFrame.GeomCreationPt2.Title     = "第二點";
+CreateGeomFrame.GeomCreationPtMid.Title   = "中間點";
+CreateGeomFrame.GeomCreationLine.Title    = "線 ";
+
+CreateGeomFrame.GeomCreationMatrix.Title  = "軸系";
+
+//CreateGeomFrame.GeomCreationCOG.Title     = "建立重心";
+//CreateGeomFrame.GeomCreationArcCenter.Title = "建立弧心";
+
+//CreateGeomFrame.GeomCreationPt1.Title     = "建立最小距離的第一點";
+//CreateGeomFrame.GeomCreationPt2.Title     = "建立最小距離的第二點";
+//CreateGeomFrame.GeomCreationPtMid.Title   = "建立最小距離的中間點";
+//CreateGeomFrame.GeomCreationLine.Title    = "建立離點群最近距離的線";
+
+//CreateGeomFrame.GeomCreationMatrix.Title  = "建立主要軸軸系";
+
+Information             = "資訊";
+
+GeomCreationMatrixError = "無法建立相關軸系. 請檢查自訂對應是否含有必須的 CKE 參數.";
+GeomCreationCOGError    = "無法建立相關重心. 請檢查自訂對應是否含有必須的 CKE 參數.";
+
+
+GeomCreationAssociative = "無法建立相關幾何. 請檢查自訂對應是否含有必須的 CKE 參數.";
+GeomCreationLineFailed = "無法建立線. 請檢查點是否太遠.";
+
+GeomCreationUpdateCycle = "偵測到更新循環. 無法建立相關幾何.";
+
+GeomCreationLockedMeasure = "因量測鎖定導致無法建立相關幾何.";
+
+GeomCreationEqualPoints = "因為使用相同點導致無法建立線.";
+
+GeometryInMovedProduct = "含有量測幾何的零件必須仍在相對文件的相同位置且不能重新排序. \n 否則幾何元素可能不一致.";
+GeometryWithOtherAxisSystem = "如您使用其它軸系, 可能幾何會不一致.";
+

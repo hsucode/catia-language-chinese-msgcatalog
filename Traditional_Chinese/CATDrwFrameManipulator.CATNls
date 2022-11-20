@@ -1,0 +1,62 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwFrameManipulator
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    
+// DATE        :    26.11.1999
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    Tools/Option du Drafting
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//=====================================================================================
+
+frameManip.HeaderFrame.Global.Title="操作 ";
+frameManip.HeaderFrame.Global.LongHelp="定義顯示操作的預設參數.";
+
+frameManip.IconAndOptionsFrame.OptionsFrame.labelManipRefSize.Title="參考大小: ";
+frameManip.IconAndOptionsFrame.OptionsFrame.labelManipRefSize.LongHelp="參考大小
+used for displaying manipulators.";
+frameManip.IconAndOptionsFrame.OptionsFrame.editorManipRefSize.LongHelp="參考大小 用來顯示操作.";
+
+
+frameManip.IconAndOptionsFrame.OptionsFrame.checkManipZoom.Title="可放大 ";
+frameManip.IconAndOptionsFrame.OptionsFrame.checkManipZoom.LongHelp="可放大 定義操作如同幾何一樣可放大.";
+
+
+frameDim.HeaderFrame.Global.Title="尺寸操作 ";
+frameDim.HeaderFrame.Global.LongHelp="定義顯示尺寸, 建立和修改時的預設操作.";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimCreation.Title="建立";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimCreation.LongHelp="定義建立尺寸時顯示的操作.";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimModification.Title="修改";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimModification.LongHelp="定義修改尺寸時顯示的操作.";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimORun.Title="修改超出元素: ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimORun.LongHelp="修改超出動作允許修改每一個延伸線的超過部分.";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimBlank.Title="修改空白: ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimBlank.LongHelp="修改空白動作允許修改每一個延伸線的空白部分.";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimBefore.Title="之前插入: ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimBefore.LongHelp="操作前插入 允許在尺寸主要值之前簡易插入文字.";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimAfter.Title="之後插入: ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimAfter.LongHelp="操作後插入 允許在尺寸主要值之後簡易插入文字.";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimMoveValue.Title="移動數值: ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimMoveValue.LongHelp="移動動作 
+允許只移動尺寸值.";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimMoveDimLine.Title="移動尺寸線: ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimMoveDimLine.LongHelp="移動尺寸線動作
+允許只移動尺寸線.";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimMove2dPart.Title="移動尺寸線第二部分: ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimMove2dPart.LongHelp="移動尺寸線第二部分
+允許只移動尺寸線第二部分.";

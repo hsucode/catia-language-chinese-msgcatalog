@@ -1,0 +1,78 @@
+
+// Cree par CQO, Sept 02
+ 
+Title=" 曲線網格";
+
+FrmRoot.TabContainer.PreparationTabPage.Title = "預備";
+FrmRoot.TabContainer.PreparationTabPage.FrmElem.Title = "建構曲線";
+FrmRoot.TabContainer.PreparationTabPage.FrmElem.LongHelp = "選擇要切層的曲線";
+FrmRoot.TabContainer.PreparationTabPage.FrmElem.EdgesSelector.Title = "新增或移除";
+FrmRoot.TabContainer.PreparationTabPage.FrmElem.EdgesSelector.LongHelp = "從清單中新增或移除曲線";
+FrmRoot.TabContainer.PreparationTabPage.FrmSupport.Title = "依附";
+FrmRoot.TabContainer.PreparationTabPage.FrmSupport.LongHelp = "定義支援曲線網格的投影網格";
+FrmRoot.TabContainer.PreparationTabPage.FrmSupport.LbSupport.Title = "依附";
+FrmRoot.TabContainer.PreparationTabPage.FrmSupport.LbSupport.LongHelp = "曲線網格的投影依附";
+FrmRoot.TabContainer.PreparationTabPage.FrmSupport.CloudSelector.Title = "未選擇";
+FrmRoot.TabContainer.PreparationTabPage.FrmSupport.CloudSelector.LongHelp = "支援曲線網格的投影網格";
+FrmRoot.TabContainer.PreparationTabPage.FrmParam.Title = "參數";
+FrmRoot.TabContainer.PreparationTabPage.FrmParam.LongHelp = "建構動作參數";
+FrmRoot.TabContainer.PreparationTabPage.FrmParam.LbDistMin.Title = "最大距離 ";
+FrmRoot.TabContainer.PreparationTabPage.FrmParam.LbDistMin.LongHelp = "如最大距離小於此數值, 則認為曲線彼此相交.";
+FrmRoot.TabContainer.PreparationTabPage.FrmParam.ChkbFilter.Title = "過濾";
+FrmRoot.TabContainer.PreparationTabPage.FrmParam.ChkbFilter.LongHelp = "過濾較小曲線切段";
+
+FrmRoot.TabContainer.ConstrainstTabPage.Title = "拘束";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.Title = "拘束";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.LongHelp = "定義曲線網格上的拘束";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.LbTol.Title = "節點精度  ";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.LbTol.LongHelp = "若節點間距離小於此數值則認為兩節點相同";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.ChkbTan.Title = "自動相切";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.ChkbTan.LongHelp = "依據兩連接邊線間角度定義自動相切";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.ChkbProj.Title = "依附上投影";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.ChkbProj.LongHelp = "投影曲線網格至網格依附上";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.LbSmoothTol.Title = "平順精度  ";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.LbSmoothTol.LongHelp = "定義曲線網格投影的平順精度";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.ChkbGlobalDef.Title = "整體變形";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.ChkbGlobalDef.LongHelp = "沿著整體邊界變形";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.PushBDefault.Title = "預設拘束";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.PushBDefault.LongHelp = "設定拘束至預設值";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.Lbbid.Title = " ";
+FrmRoot.TabContainer.ConstrainstTabPage.FrmCst.Lbbid.LongHelp = " ";
+
+FrmRoot.TabContainer.FreezeTabPage.Title = "凍結";
+FrmRoot.TabContainer.FreezeTabPage.FreezeFrmElem.Title = "凍結";
+FrmRoot.TabContainer.FreezeTabPage.FreezeFrmElem.LongHelp = "指定在曲線網格化中不變形的曲線";
+FrmRoot.TabContainer.FreezeTabPage.FreezeFrmElem.FreezeEdgesSelector.Title = "新增或移除";
+FrmRoot.TabContainer.FreezeTabPage.FreezeFrmElem.FreezeEdgesSelector.LongHelp = "從清單中新增或移除固定曲線";
+FrmRoot.TabContainer.FreezeTabPage.FreezeFrmElem.Lbbidon.Title = "                                                                            ";
+FrmRoot.TabContainer.FreezeTabPage.FreezeFrmElem.Lbbidon.LongHelp = "                                                                            ";
+
+FrmRoot.TabContainer.DiagTabPage.Title = "顯示";
+FrmRoot.TabContainer.DiagTabPage.LongHelp = "顯示偵錯";
+FrmRoot.TabContainer.DiagTabPage.ChkbVisu.Title = "節點上距離";
+FrmRoot.TabContainer.DiagTabPage.ChkbVisu.LongHelp = "顯示成對苗線間距離";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.Title = "變異和曲率";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.ModeDevFrmElem.RBDevCvCv.Title = "曲線-曲線";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.ModeDevFrmElem.RBDevCvCv.ShortHelp = "曲線-曲線 變異";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.ModeDevFrmElem.RBDevCvCv.LongHelp = "顯示曲線網格和輸入曲線間變異";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.ModeDevFrmElem.RBDevCvPg.Title = "曲線-Plg";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.ModeDevFrmElem.RBDevCvPg.ShortHelp = "曲線-網格 變異";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.ModeDevFrmElem.RBDevCvPg.LongHelp = "顯示曲線網格和依附網格間變異";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.ModeDevFrmElem.RBDevCurvature.Title = "曲率";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.ModeDevFrmElem.RBDevCurvature.ShortHelp = "曲率";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.ModeDevFrmElem.RBDevCurvature.LongHelp = "顯示曲線網格邊線的曲率";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.DiagsEditor.Title = "變異統計";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.DiagsEditor.LongHelp = "顯示曲線網格和依附網格間的變異統計";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.ChkbDev.Title = "刺針";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.ChkbDev.LongHelp = "顯示曲線網格和依附網格或輸入曲線間的刺針變異";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.ChkbMaxDev.Title = "最大變異";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.ChkbMaxDev.LongHelp = "顯示曲線網格和依附網格或輸入曲線間的最大變異";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.LblScale.Title = "刺針縮放";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.LblDensity.Title = "刺針密度";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.SldScale.LongHelp = "刺針縮放";
+FrmRoot.TabContainer.DiagTabPage.DevFrmElem.SldDensity.LongHelp = "刺針密度";
+
+FrmRoot.FrmDelete.PushBDelete.Title = "刪除線";
+FrmRoot.FrmDelete.PushBDelete.LongHelp = "刪除曲線網格中的目前所選線";
+FrmRoot.FrmDelete.PushBMeshDelete.Title = "刪除線";
+FrmRoot.FrmDelete.PushBMeshDelete.LongHelp = "刪除曲線網格中的一條線";

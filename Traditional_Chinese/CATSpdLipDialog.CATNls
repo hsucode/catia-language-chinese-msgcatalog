@@ -1,0 +1,193 @@
+// COPYRIGHT ImpactXoft 2003
+//===================================================================
+Title = "唇";
+
+MainFrameId.BlankLineLabel001Id.Title = "  ";
+
+MainFrameId.MethodFrameId.MethodLabelId.Title = "方法:  ";
+
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.Title = "外形";
+
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.SimpleFrameId.HeightLabelId.Title = "高度:            ";
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.SimpleFrameId.ThicknessLabelId.Title = "厚度:       ";
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.SimpleFrameId.MateAngleLabelId.Title = "對應角度:  ";
+
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.CenterProfileFrameId.BlankLineLabel006Id.Title = "  ";
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.CenterProfileFrameId.BlankLineLabel007Id.Title = "  ";
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.CenterProfileFrameId.BlankLineLabel003Id.Title = "  ";
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.CenterProfileFrameId.BlankLineLabel009Id.Title = "  ";
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.CenterProfileFrameId.CenterProfileMoveProfileFrameId.CenterProfileMoveProfileCheckButtonId.Title = "移動斷面至路徑";
+
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.TwoProfileFrameId.BlankLineLabel005Id.Title = "  ";
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.TwoProfileFrameId.BlankLineLabel008Id.Title = "  ";
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.TwoProfileFrameId.TwoProfileMoveProfileFrameId.TwoProfileMoveProfileCheckButtonId.Title = "移動斷面至路徑";
+
+MainFrameId.MiscOptsFrameId.ProtectedVolumeCheckButtonId.Title = "保護體積";
+
+MainFrameId.ClearanceFrameId.Title = "預留";
+
+MainFrameId.PropFrameId.PropTabContainerId.DirPropTabPageId.Title = "控制";
+MainFrameId.PropFrameId.PropTabContainerId.DirPropTabPageId.BlankLineLabel004Id.Title = "  ";
+MainFrameId.PropFrameId.PropTabContainerId.DirPropTabPageId.ReverseDirectionFrameId.ReverseDirectionButtonId.Title = "逆轉方向";
+
+MainFrameId.PropFrameId.PropTabContainerId.DirPropTabPageId.PullingDirFrameId.Title = "斷面控制";
+MainFrameId.PropFrameId.PropTabContainerId.DirPropTabPageId.PullingDirFrameId.DirNormalToDivideElementCheckButtonId.Title = "與分隔元素垂直";
+
+MainFrameId.PropFrameId.PropTabContainerId.PathPropTabPageId.Title = "路徑";
+MainFrameId.PropFrameId.PropTabContainerId.PathPropTabPageId.PathFrameId.BlankLineLabel002Id.Title = "  ";
+MainFrameId.PropFrameId.PropTabContainerId.PathPropTabPageId.PathFrameId.PathEdgeTypeLabelId.Title = " 路徑型式:         ";
+MainFrameId.PropFrameId.PropTabContainerId.PathPropTabPageId.PathFrameId.EndExtensionLabelId.Title = " 結束延伸: ";
+
+NoSelectionId = "未選擇";
+
+MethodSimpleId = "單一";
+MethodCenterProfileId = "中心斷面";
+MethodTwoProfileId = "上或下斷面";
+
+CenterProfileSelectionLabelId = "斷面:  ";
+UpperProfileSelectionLabelId  = "上部斷面:  ";
+LowerProfileSelectionLabelId  = "下部斷面:  ";
+
+EdgesSelectionLabelId = "邊線或曲線:";
+
+DirVecSelectorTitleId = "參考: ";
+
+CenterProfile3DLabelId = "中心";
+UpperProfile3DLabelId = "上";
+LowerProfile3DLabelId = "下";
+PullingDir3DLabelId = "拉伸方向";
+
+ClearanceTypeOutsideId = "外側";
+ClearanceTypeInsideId = "內側";
+
+PathEdgeTypeInnerId = "內側";
+PathEdgeTypeOuterId = "外側";
+
+AllOuterSplitEdgesId = "所有外側分隔邊線";
+AllInnerSplitEdgesId = "所有內側分隔邊線";
+
+InsideAngleId = "內側角度:   ";
+OutsideAngleId = "外側角度:   ";
+
+ClearanceTextID = "預留";
+DivideTextID = "分隔";
+ElementTextID = "元素";
+InsideAngleTextID = "內側角度";
+MatingAngleTextID = "對應角度";
+OutsideAngleTextID = "外側角度";
+HeightTextID = "高度";
+ThicknessTextID = "厚度";
+UpperProfileTextID = "上部斷面";
+LowerProfileTextID = "下部斷面";
+
+ControlTypeKeepAngleId        = "保持角度";
+ControlTypePullingDirectionId = "拉伸方向";
+ControlTypeDividingElementId = "分隔元素";
+
+//===================================================================
+// LongHelp
+//===================================================================
+
+MainFrameId.MethodFrameId.MethodLabelId.LongHelp =
+"Specifies method used to create lip.";
+
+MainFrameId.MethodFrameId.MethodComboId.LongHelp =
+"\"Center profile\" creates lip by specifying
+a single curve as the lip profile.
+\"Upper/Lower profile\" creates lip by specifying
+curves for upper and lower lip profiles.
+\"Simple\" creates lip from a parametric
+description of the lip profile.";
+
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.LongHelp =
+"Lip shape parameters.";
+
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.SimpleFrameId.HeightLabelId.LongHelp =
+"Specifies height of the upper lip.";
+
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.SimpleFrameId.ThicknessLabelId.LongHelp =
+"Specifies thickness of the lip.";
+
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.SimpleFrameId.MateAngleLabelId.LongHelp =
+"Specifies angle (tilt) applied to the lip's
+mating faces. A negative value implies a
+snap fit.";
+
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.SimpleFrameId.NonMateAngleLabelId.LongHelp =
+"Specifies angle (tilt) between the lip's
+non-mating vertical and the Part face its
+connected to. Often used when draft is present.";
+
+MainFrameId.PropFrameId.PropTabContainerId.PathPropTabPageId.PathFrameId.LongHelp =
+"Path parameters.";
+
+MainFrameId.PropFrameId.PropTabContainerId.PathPropTabPageId.PathFrameId.PathEdgeTypeLabelId.LongHelp =
+"Specifies the divide's edge type that
+will be available for the lip's path.";
+
+MainFrameId.PropFrameId.PropTabContainerId.PathPropTabPageId.PathFrameId.PathEdgeTypeComboId.LongHelp =
+"Specifies the divide's edge type that 
+will be available for the lip's path.";
+
+MainFrameId.PropFrameId.PropTabContainerId.PathPropTabPageId.PathFrameId.AllSplitEdgesCheckButtonId.LongHelp =
+"Indicates that the lip's path is all 
+edges (inside or outside) generated by the
+divide feature.";
+
+MainFrameId.PropFrameId.PropTabContainerId.PathPropTabPageId.PathFrameId.EdgesSelectionEditorId.LongHelp =
+"Specifies the lip path curves.";
+
+MainFrameId.PropFrameId.PropTabContainerId.PathPropTabPageId.PathFrameId.EndExtensionLabelId.LongHelp =
+"Specifies the lip's end extension value.";
+
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.TwoProfileFrameId.TwoProfileUpperFrameId.UpperProfileSelectorId.LongHelp =
+"Specifies profile for the upper lip. The
+plane that profile lies on must intersect
+a portion of the selected path.";
+
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.TwoProfileFrameId.TwoProfileUpperFrameId.LowerProfileSelectorId.LongHelp =
+"Specifies profile for the lower lip. The
+plane that profile lies on must intersect
+a portion of the selected path.";
+
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.TwoProfileFrameId.TwoProfileMoveProfileFrameId.TwoProfileMoveProfileCheckButtonId.LongHelp =
+"Specified that the selected profile should be 
+automatically positioned on each lip path loop.";
+
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.CenterProfileFrameId.CenterProfileUpperFrameId.CenterProfileSelectorId.LongHelp =
+"Specifies center profile for the lip. The
+plane that profile lies on must intersect
+a portion of the selected path.";
+
+MainFrameId.PropFrameId.PropTabContainerId.ShapePropTabPageId.ShapeFrameId.ShapeSwapFrameId.CenterProfileFrameId.CenterProfileMoveProfileFrameId.CenterProfileMoveProfileCheckButtonId.LongHelp =
+"Specified that the selected profile should be 
+automatically positioned on each lip path loop.";
+
+MainFrameId.PropFrameId.PropTabContainerId.DirPropTabPageId.LongHelp = 
+"Pulling direction parameters.";
+
+MainFrameId.PropFrameId.PropTabContainerId.DirPropTabPageId.PullingDirFrameId.LongHelp = 
+"Pulling direction parameters.";
+
+MainFrameId.PropFrameId.PropTabContainerId.DirPropTabPageId.PullingDirFrameId.DirNormalToDivideElementCheckButtonId.LongHelp =
+"Makes the pull direction normal to the
+dividing element.";
+
+MainFrameId.PropFrameId.PropTabContainerId.DirPropTabPageId.PullingDirFrameId.DirVecFrameId.LongHelp =
+"Specifies pull direction.";
+
+MainFrameId.PropFrameId.PropTabContainerId.DirPropTabPageId.PullingDirFrameId.ReverseDirectionFrameId.ReverseDirectionButtonId.LongHelp =
+"Reverses the pulling direction indicated
+by the arrow and also what is defined as 
+the overlapping (upper) volume of the lip.";
+
+MainFrameId.MiscOptsFrameId.ProtectedVolumeCheckButtonId.LongHelp =
+"Indicates that no additional material
+(created by other features) will be added
+to the lip volume.";
+
+MainFrameId.ClearanceFrameId.LongHelp = 
+"Clearance parameters.";
+
+MainFrameId.ClearanceFrameId.ClearanceTypeComboId.LongHelp =
+"Specifies the inside or outside clearance.";

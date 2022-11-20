@@ -1,0 +1,53 @@
+// Message catalog for CATFileServices
+
+
+
+// AnalyseNewPath
+ERR_0001 = "目錄 '/p' 不存在或無法存取. 試另一個名稱.";
+ERR_0002 = "檔案 '/p' 已經存在且是唯讀. \n 以另一個名稱儲存或存在另一個目錄中.";
+ERR_0003 = "檔案 '/p' 已經存在. \n 你要覆寫它嗎?";
+ERR_0004 = "檔案 '/p' 已經存在處理程序中. 試另一個名稱. \n";
+ERR_0005 = "檔案 '/p' 已經存在且是唯讀. \n 以另一個名稱儲存或存在另一個目錄中.";
+ERR_0012 = "名稱 '/p' 無效. \n 以另一個名稱儲存.";
+
+
+// AnalyseSaveImpact
+ERR_0006 = " 修改的文件中的 /p 點將不被儲存. \n 你要繼續嗎 ?";
+ERR_0007 = " /p 有一個連結在 OLE 嵌入的物件上 : 可能資料遺失. \n 你要繼續嗎?";
+ERR_0008 = " 項目 \p 已經存在. \n 你要覆寫它嗎?";
+ERR_0009 = " 項目已經存在. \n 你要覆寫它們嗎?";
+ERR_0010 = " /p 已被處理程序中的其它文件參考. 另存新檔將更新新名稱的連結. \n 你要繼續嗎?";
+ERR_0011 = " /p 作動其它的儲存操作.\n 你要繼續嗎?";
+
+// 
+StartupLocator.Name = "目錄和起始文件";
+
+//--------------------------------------
+//  CATFmuSessionDocSelector
+//--------------------------------------
+CATFmuSessionDocSelector.Title     = "已載入文件";
+CATFmuSessionDocSelector.LongHelp  = "選擇一個已載入文件";
+CATFmuSessionDocSelector.ShortHelp = "選擇文件";
+
+//--------------------------------------
+//  CATFmuFileDocSelector
+//--------------------------------------
+CATFmuFileDocSelector.Title     = "檔案";
+CATFmuFileDocSelector.LongHelp  = "選擇檔案";
+CATFmuFileDocSelector.ShortHelp = "選擇檔案";
+
+//--------------------------------------
+//  CATFmuDLNameDocSelector
+//--------------------------------------
+CATFmuDLNameDocSelector.Title     = "邏輯檔案系統";
+CATFmuDLNameDocSelector.LongHelp  = "選擇使用邏輯檔案系統的檔案";
+CATFmuDLNameDocSelector.ShortHelp = "選擇檔案";
+
+//--------------------------------------
+//  CATFmuDocChooserEnvSelector
+//--------------------------------------
+CATFmuDocChooserEnvSelector.Title = "瀏覽";
+CATFmuDocChooserEnvSelector.Help  = "選擇環境和文件.";
+
+WarningPanel="警告";
+VolatilDocs="禁止動作. \n 由 ENOVIA 而來的特定文件無法被另一編輯器開啟.";

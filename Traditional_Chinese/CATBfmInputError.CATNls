@@ -1,0 +1,494 @@
+ERR_0001.Request    = "";
+ERR_0001.Diagnostic = "";
+ERR_0001.Advice     = "";
+
+ERR_0002.Request    = "Import of the Standard Settings.";
+ERR_0002.Diagnostic = "Error during the Import of the Set-Up Standard file.";
+ERR_0002.Advice     = "Please choose another File or cancel this Operation.";
+
+ERR_0003.Request    = "Import of the Standard Settings.";
+ERR_0003.Diagnostic = "The import method has failed, no litteral has been created.";
+ERR_0003.Advice     = "Please choose another file or cancel the operation.";
+
+ERR_0004.Request    = "";
+ERR_0004.Diagnostic = "The Parameter corresponding to this string hasn't been found.";
+ERR_0004.Advice     = "Please choose another file or cancel the operation.";
+
+ERR_0006.Request    = "";
+ERR_0006.Diagnostic = "The definition point cannot be projected onto a component zone.";
+ERR_0006.Advice     = "Please select another point or check the component zone specifications.";
+
+ERR_0007.Request    = "";
+ERR_0007.Diagnostic = "The definition point cannot be projected onto all the component zones.";
+ERR_0007.Advice     = "Please select another point or check the component zone specifications.";
+
+ERR_0008.Request    = "";
+ERR_0008.Diagnostic = "This Assembly Type is not correct.";
+ERR_0008.Advice     = "Please Update the Assembly Type.";
+
+ERR_0009.Request    = "";
+ERR_0009.Diagnostic = "BiW fastener information is only partially accessible.";
+ERR_0009.Advice     = "Please load children parts of the root product.";
+
+ERR_0010.Request    = "";
+ERR_0010.Diagnostic = "The following file could not be opened:\n /p1";
+ERR_0010.Advice     = "Please make sure the file has read access.";
+
+ERR_0011.Request    = "";
+ERR_0011.Diagnostic = "BiW JointBody Update Error";
+ERR_0011.Advice     = "Please update the BiW JointBody.";
+
+ERR_0012.Request    = "";
+ERR_0012.Diagnostic = "Synchronisation Error";
+ERR_0012.Advice     = "Please synchronise the Spot location specification.";
+
+ERR_0013.Request    = "";
+ERR_0013.Diagnostic = "Geometry Not Found";
+ERR_0013.Advice     = "The reference element is not found in the Assembly.";
+
+ERR_0014.Request    = "";
+ERR_0014.Diagnostic = "Invalid component";
+ERR_0014.Advice     = "The component does not provide a valid publication name.";
+
+ERR_0015.Request    = "";
+ERR_0015.Diagnostic = "Invalid BiW Joint";
+ERR_0015.Advice     = "Please update the BiW Joint.";
+
+ERR_0016.Request    = "";
+ERR_0016.Diagnostic = "The Assembly JointBody does not provide the publication of the BiW JointBody.";
+ERR_0016.Advice     = "Please update the Assembly Jointbody.";
+
+ERR_0017.Request    = "";
+ERR_0017.Diagnostic = "Directory /p1 does not exist.";
+ERR_0017.Advice     = "Please provide a valid path of an existing directory.";
+
+ERR_0018.Request    = "Import of the Standard Settings";
+ERR_0018.Diagnostic = "The Standard Settings File is not consistent";
+ERR_0018.Advice     = "Please check the Standard File";
+
+ERR_0019.Request    = "";
+ERR_0019.Diagnostic = "BiW Fastening information is not fully available.";
+ERR_0019.Advice     = "Non accessible data is marked as \"N/L\" (as Not Loaded).";
+
+ERR_0020.Request    = "";
+ERR_0020.Diagnostic = "Some BiW fasteners projection information cannot be computed for BiW fastener </p1>.";
+ERR_0020.Advice     = "The output will not include this information.";
+
+ERR_0021.Request    = "";
+ERR_0021.Diagnostic = "The fastener location is not connex.";
+ERR_0021.Advice     = "Please edit the fastener to choose one domain.";
+
+ERR_0022.Request    = "";
+ERR_0022.Diagnostic = "BiW SpotProjection Update Error. The defined Projection Component is not a linked component.";
+ERR_0022.Advice     = "Modify the BiWJoint to reconnect it, or change the Projection Component of the SpotProjection.";
+
+ERR_0023.Request    = "";
+ERR_0023.Diagnostic = "BiW SpotProjection Update Error. The defined Projection Zone is not a linked Zone.";
+ERR_0023.Advice     = "Modify the BiWJointBody to reconnect it, or change the Projection Zone of the SpotProjection.";
+
+ERR_0024.Request    = "";
+ERR_0024.Diagnostic = "The selected location curve is not connex.";
+ERR_0024.Advice     = "Please edit the fastener and select a connex curve.";
+
+ERR_0025.Request    = "";
+ERR_0025.Diagnostic = "Unable to compute the joint element location.";
+ERR_0025.Advice     = "Please select a valid location specification for this joint element.";
+
+ERR_0026.Request    = "Two distinct Joints cannot link the same components.";
+ERR_0026.Diagnostic = "Joint /p1 links the same components as an already existing Joint.";
+ERR_0026.Advice     = "Please reconnect this Joint to the appropriate components.";
+
+ERR_0027.Request    = "BiW Joint invalid status.";
+ERR_0027.Diagnostic = "This Joint links a missing component.";
+ERR_0027.Advice     = "";
+
+ERR_0028.Request    = "BiW Joint invalid status.";
+ERR_0028.Diagnostic = "This Joint links only one component.";
+ERR_0028.Advice     = "";
+
+ERR_0029.Request    = "BiW Joint invalid status.";
+ERR_0029.Diagnostic = "This Joint links no component.";
+ERR_0029.Advice     = "";
+
+ERR_0030.Request    = "BiW Joint invalid status.";
+ERR_0030.Diagnostic = "This Joint links components which are not in the same sub-assembly.";
+ERR_0030.Advice     = "";
+
+ERR_0031.Request    = "BiW invalid parent-child relationship.";
+ERR_0031.Diagnostic = "The selected parent object cannot have the specified object as a child.";
+ERR_0031.Advice     = "";
+
+ERR_0032.Request    = "New Joint Body zones have been modified.";
+ERR_0032.Diagnostic = "Some of the source Joint Body zones refer to publications\n",
+                      "that do not exist in the target Joint components.\n",
+					  "The target zones have been created as unspecified.";
+ERR_0032.Advice     = "";
+
+ERR_0033.Request    = "New Spot Projection zone has been modified.";
+ERR_0033.Diagnostic = "The source Spot Projection zone refers to a publication\n",
+                      "that does not exist in the target Joint components.\n",
+					  "The first target zone has been used instead.";
+ERR_0033.Advice     = "";
+
+ERR_0034.Request    = "Pasted object has failed active rules.";
+ERR_0034.Diagnostic = "Knowledge message:\n",
+                      "/p1";
+ERR_0034.Advice     = "Please de-activate the appropriate rule before pasting";
+
+ERR_0035.Request    = "The target parent of the object to be created should belong to a file based or a database black boxed product document.";
+ERR_0035.Diagnostic = "An object cannot be created within a volatile exposed product document loaded from database.";
+ERR_0035.Advice     = "Please specify a valid target parent object";
+
+ERR_0036.Request    = "The Import of the Standard Settings has failed";
+ERR_0036.Diagnostic = "The Standard Name is incorrect because different from 'GBF_STD'";
+ERR_0036.Advice     = "Please select a correct standard file named 'GBF_STD'";
+
+ERR_0038.Request    = "Bitangent circle needs a support surface if the curves are not coplanar";
+ERR_0038.Diagnostic = "Unable to compute the bitangent circle.";
+ERR_0038.Advice     = "Check that the curves are coplanar and that the radius is valid.";
+
+ERR_0039.Request    = "Fastener needs a valid location to update.";
+ERR_0039.Diagnostic = "Unable to compute any bitangent circle with the given input.";
+ERR_0039.Advice     = "Check the input curves, surface and radius.";
+
+ERR_0040.Request    = "Spot fasteners must have a zero-dimension location.";
+ERR_0040.Diagnostic = "The computed location of this fastener has not the right dimension.";
+ERR_0040.Advice     = "Modify the location specifications to have a zero-dimension location.";
+
+ERR_0041.Request    = "Curve fasteners must have a one-dimension location.";
+ERR_0041.Diagnostic = "The computed location of this fastener has not the right dimension.";
+ERR_0041.Advice     = "Modify the location specifications to have a one-dimension location.";
+
+ERR_0042.Request    = "Surface fasteners must have a two-dimension location.";
+ERR_0042.Diagnostic = "The computed location of this fastener has not the right dimension.";
+ERR_0042.Advice     = "Modify the location specifications to have a two-dimension location.";
+
+ERR_0043.Request    = "Creation of a Set-Up Standard.";
+ERR_0043.Diagnostic = "The selected File corresponds to a existed Set-Up Standard already imported.";
+ERR_0043.Advice     = "Please select another File or cancel this Set-Up Import Operation.";
+
+ERR_0044.Request    = "Creation of a Standard Settings.";
+ERR_0044.Diagnostic = "The Selected Path to the Set-Up File is not valid.";
+ERR_0044.Advice     = "Please define another valid access path or cancel this Set-Up Import Operation.";
+
+ERR_0045.Request    = "Curve fasteners location must be a finite curve.";
+ERR_0045.Diagnostic = "The location of this fastener is an infinite curve.";
+ERR_0045.Advice     = "Modify the location specifications to have a finite location.";
+
+ERR_0046.Request    = "BiW Joint must connect parts only.";
+ERR_0046.Diagnostic = "The following components:\n",
+                      "/p1",
+					  "are not valid.";
+ERR_0046.Advice     = "Replace these components by parts.";
+
+ERR_0047.Request    = "Surface fasteners location must be a finite surface.";
+ERR_0047.Diagnostic = "The location of this fastener is an infinite surface.";
+ERR_0047.Advice     = "Modify the location specifications to have a finite location.";
+
+ERR_0048.Request    = "Surface fasteners location must not be a closed surface.";
+ERR_0048.Diagnostic = "The location of this fastener is a closed surface.";
+ERR_0048.Advice     = "Modify the location specifications to extract sub-elements.";
+
+ERR_0060.Request    = "JointBody Publication must reference a two-dimension geometric element.";
+ERR_0060.Diagnostic = "The published element is not a surface.";
+ERR_0060.Advice     = "Please replace this JointBody Publication.";
+
+ERR_0061.Request    = "";
+ERR_0061.Diagnostic = "BiW SpotProjection Update Error. The defined Projection Component is not defined on Spot Projection.";
+ERR_0061.Advice     = "Modify the SpotProjection and specify the Projection Component.";
+
+// ------------------------------------------------------
+// ### Syntax errors at Import ###
+// ------------------------------------------------------
+
+ERR_0100.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0100.Diagnostic = "Invalid number of keywords.";
+ERR_0100.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0101.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0101.Diagnostic = "Invalid keyword: /p1.";
+ERR_0101.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0102.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0102.Diagnostic = "Unexpected keyword: /p1.";
+ERR_0102.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0103.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0103.Diagnostic = "Missing or unexpected keyword modifier in: /p1.";
+ERR_0103.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0104.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0104.Diagnostic = "Unexpected number of non empty cells.";
+ERR_0104.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0105.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0105.Diagnostic = "Missing file header description.";
+ERR_0105.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0106.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0106.Diagnostic = "The neutral format version of this file is newer than your running CATIA version.";
+ERR_0106.Advice     = "Contact the neutral file supplier.";
+
+ERR_0107.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0107.Diagnostic = "The product name in the neutral file differs from the current product name.";
+ERR_0107.Advice     = "To bypass this check, you can comment out the PRODUCT line in the neutral file.";
+
+ERR_0108.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0108.Diagnostic = "Unexpected non numerical value.";
+ERR_0108.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0109.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0109.Diagnostic = "Missing block closing tag: /p1.";
+ERR_0109.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0110.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0110.Diagnostic = "Missing joined parts list.";
+ERR_0110.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0111.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0111.Diagnostic = "Attribute values not aligned with titles.";
+ERR_0111.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0112.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0112.Diagnostic = "The following mandatory attribute is missing: /p1.";
+ERR_0112.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0113.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0113.Diagnostic = "The following part is defined twice: /p1.";
+ERR_0113.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0114.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0114.Diagnostic = "The local joined Part PathId </p1> is not defined in the global joined parts list.";
+ERR_0114.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0115.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0115.Diagnostic = "Too many attributes in this table.";
+ERR_0115.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0116.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0116.Diagnostic = "STY attribute should precede NTH attribute.";
+ERR_0116.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0117.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0117.Diagnostic = "The Zone references a part PathId </p1> not defined in the global joined parts list.";
+ERR_0117.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0118.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0118.Diagnostic = "The following feature type is not recognized: /p1.";
+ERR_0118.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0119.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0119.Diagnostic = "Invalid boolean value. Correct values are /p1, /p2.";
+ERR_0119.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0120.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0120.Diagnostic = "Missing coordinates: 3 are required.";
+ERR_0120.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0121.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0121.Diagnostic = "Element /p1 does not belong to body /p2.";
+ERR_0121.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0122.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0122.Diagnostic = "The following zone is defined twice: /p1.";
+ERR_0122.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0123.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0123.Diagnostic = "The following zone is not defined in the zones list: /p1.";
+ERR_0123.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0124.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0124.Diagnostic = "Attributes and joined parts should preceed the list of Joint Bodies.";
+ERR_0124.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0125.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0125.Diagnostic = "Attributes should preceed the list of joined parts.";
+ERR_0125.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0126.Request    = "Error found in import file:\n /p1, line /p2.";
+ERR_0126.Diagnostic = "Impossible to create published zone /p1.";
+ERR_0126.Advice     = "Please make sure the publication exists in the receiving product.";
+
+ERR_0127.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0127.Diagnostic = "Curves or Projection fastener specification block should be preceeded by elements specification block.";
+ERR_0127.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0128.Request    = "Error found in import file:\n /p1, line /p2.";
+ERR_0128.Diagnostic = "Joint Element name /p1 found twice in same Joint Body.";
+ERR_0128.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0129.Request    = "Error found in import file:\n /p1, line /p2.";
+ERR_0129.Diagnostic = "Joint Element name /p1 not found in current Joint Body.";
+ERR_0129.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0130.Request    = "Impossible import.";
+ERR_0130.Diagnostic = "Import cannot be done in a product instance.";
+ERR_0130.Advice     = "Retrieve the product reference before importing.";
+
+ERR_0131.Request    = "Error found in import file:\n /p1, line /p2.";
+ERR_0131.Diagnostic = "Unknown mathematical definition: /p1.";
+ERR_0131.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0132.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0132.Diagnostic = "Invalid zone path Id: /p1";
+ERR_0132.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0133.Request    = "Error found in import file:\n /p1, line /p2.";
+ERR_0133.Diagnostic = "The Part Number in the neutral file differs from the current Part Number.";
+ERR_0133.Advice     = "Fix the import file and re-run the import.";
+
+ERR_0134.Request    = "An Error has been found during the Import Process\n";
+ERR_0134.Diagnostic = "";
+ERR_0134.Advice     = "Please check the LOG file: </p1>\n";
+
+ERR_0135.Request    = "Syntax error found in import file:\n /p1, line /p2.";
+ERR_0135.Diagnostic = "The header defined Product file </p1> has not been found in the joined part PathId.";
+ERR_0135.Advice     = "Fix the import file and re-run the import.";
+
+
+// ------------------------------------------------------
+// $$$ Syntax error at Import for Warning LOG $$$
+// ------------------------------------------------------
+
+WAR_IMP_001.Request    = "Syntax error found in Import file:\n /p1, line /p2.";
+WAR_IMP_001.Diagnostic = "The product name </p1> in the Import file differs from the Session product name.";
+
+WAR_IMP_002.Request    = "Syntax error found in Import file:\n /p1, line /p2.";
+WAR_IMP_002.Diagnostic = "The Part Number attribute </p1> in the Import file has not been found in Product Session.";
+
+WAR_IMP_003.Request    = "Syntax error found in Import file:\n /p1, line /p2.";
+WAR_IMP_003.Diagnostic = "The PathId attribute </p1> in the Import file has not been found in Product Session.";
+
+WAR_IMP_004.Request    = "Syntax error found in Import file:\n /p1, line /p2.";
+WAR_IMP_004.Diagnostic = "The joint references part </p1> which has not been found in Product Session.";
+WAR_IMP_004.Advice     = "Not found component has been replaced by 'Disconnected' in the List of Joined Components.\n";
+
+WAR_IMP_005.Request    = "Syntax error found in Import file:\n /p1, line /p2.";
+WAR_IMP_005.Diagnostic = "The zone references PathId </p1> which has not been found in Product Session.";
+
+WAR_IMP_006.Request    = "Syntax error found in Import file:\n /p1, line /p2.";
+WAR_IMP_006.Diagnostic = "Impossible to get published zone </p1>.";
+
+
+// ------------------------------------------------------
+// $$$ Syntax error at Export for Warning LOG $$$
+// ------------------------------------------------------
+
+WAR_EXP_001.Diagnostic = "BiW Fastener </p1> does not have a normal vector.";
+WAR_EXP_001.Advice     = "Fastener's normal vector coordinates will be marked by 'N/A' in the output file,\nComputed projections on crossed thicknesses will be marked by 'N/L' in the output file,\nFastener crossed thicknesses attributes will be ordered along associated joint body zones list.";
+
+WAR_EXP_002.Diagnostic = "BiW fastener </p1> location cannot be projected on support contact zone, so material oriented normal to support zone does not exist for this fastener.";
+WAR_EXP_002.Advice     = "Fastener crossed thicknesses attributes will be ordered along associated joint body zones list.";
+
+WAR_EXP_003.Diagnostic = "Some computed projections on crossed thicknesses have failed for BiW fastener </p1>.";
+WAR_EXP_003.Advice     = "These results will be marked by 'N/L' in the output file,\nFastener crossed thicknesses attributes will be ordered along associated joint body zones list.";
+
+WAR_EXP_004.Diagnostic = "The distance between some projection points in different zones is lower than the CATIA identical points tolerance for BiW fastener </p1>.";
+WAR_EXP_004.Advice     = "Fastener crossed thicknesses attributes will be ordered along associated joint body zones list.";
+
+WAR_EXP_005.Diagnostic = "Some vector values cannot be computed for BiW fastener </p1>.";
+WAR_EXP_005.Advice     = "The output file will not include these informations.";
+
+WAR_EXP_006.Diagnostic = "The Following deactivated BiW fasteners have been found for product </p1> :\n\t/p2";
+WAR_EXP_006.Advice     = "These BiW fasteners will not be exported in the output file";
+
+WAR_EXP_007.Request    = "BiW Joint must connect only leaf Parts.";
+WAR_EXP_007.Diagnostic = "BiW Joint </p1> has the following linked components which are not leaf Parts:\n\t/p2";
+
+
+// ----------------------------------------------------------
+// ### Syntax errors In XML Input for Batch V5 Ex/Report ###
+// ----------------------------------------------------------
+
+ERR_XMLBatch_001.Request = "\nImpossible XML Input Argument Parameters Extraction!!!\n";
+ERR_XMLBatch_001.Diagnostic = "Argument Id </p1> doesn't exists or contains a Syntax ERROR!!!\n";
+ERR_XMLBatch_001.Advice = "You are not supposed to modify Argument Id --> Please Check with Default Ones!!!\n";
+
+ERR_XMLBatch_002.Request = "\nError detected on XML Input Argument Parameters Extraction!!!\n";
+ERR_XMLBatch_002.Diagnostic = "Argument Id </p1> doesn't exists or contains a Syntax ERROR!!!\n";
+ERR_XMLBatch_002.Advice = "You are not supposed to modify Argument Id --> Argument Value has been replaced by the default one!!!\n";
+
+ERR_XMLBatch_0020.Request = "\nImpossible XML Input Argument Parameters Extraction!!!\n";
+ERR_XMLBatch_0020.Diagnostic = "Bad Syntax for </p1> Argument Value!!!\n";
+ERR_XMLBatch_0020.Advice = "Please Check the Two possible Argument Values:[Yes/No]!!!\n";
+
+ERR_XMLBatch_00201.Request = "\nErreur detected on XML Input Argument Parameters Extraction!!!\n";
+ERR_XMLBatch_00201.Diagnostic = "Bad Syntax for </p1> Argument Value!!!\n";
+ERR_XMLBatch_00201.Advice = "Argument Value has been replaced by the default one:'No'!!!\n";
+
+ERR_XMLBatch_0021.Request = "\nImpossible XML Input Argument Parameters Extraction!!!\n";
+ERR_XMLBatch_0021.Diagnostic = "Bad Input for </p1> Argument Value!!!\n";
+ERR_XMLBatch_0021.Advice = "Please Check the possible Interval Argument Values:[0<Float<=10]!!!\n";
+
+ERR_XMLBatch_00211.Request = "\nError detected on XML Input Argument Parameters Extraction!!!\n";
+ERR_XMLBatch_00211.Diagnostic = "Bad Input for </p1> Argument Value!!!\n";
+ERR_XMLBatch_00211.Advice = "Argument Value has been replaced by the default one:'0.2'!!!\n";
+
+ERR_XMLBatch_0022.Request = "\nImpossible XML Input Argument Parameters Extraction!!!\n";
+ERR_XMLBatch_0022.Diagnostic = "Bad Syntax for </p1> Argument Value!!!\n";
+ERR_XMLBatch_0022.Advice = "Please Check the possible Interval Argument Values:[0<=Int<11]!!!\n";
+
+ERR_XMLBatch_00221.Request = "\nError detected on XML Input Argument Parameters Extraction!!!\n";
+ERR_XMLBatch_00221.Diagnostic = "Bad Syntax for </p1> Argument Value!!!\n";
+ERR_XMLBatch_00221.Advice = "Argument Value has been replaced by the default one:'1'!!!\n";
+
+ERR_XMLBatch_00231.Request = "\nImpossible XML Input Argument Parameters Extraction!!!\n";
+ERR_XMLBatch_00231.Diagnostic = "Bad Syntax for </p1> Argument Value!!!\n";
+ERR_XMLBatch_00231.Advice = "Please Check the three possible Argument Values:[Exp/RepS/RepF]!!!\n";
+
+ERR_XMLBatch_00232.Request = "\nImpossible XML Input Argument Parameters Extraction!!!\n";
+ERR_XMLBatch_00232.Diagnostic = "Bad Syntax for </p1> Argument Value!!!\n";
+ERR_XMLBatch_00232.Advice = "Please Check the four possible Argument Values:[Exp/RepS/RepF/ExpABFX]!!!\n";
+
+ERR_XMLBatch_0024.Request = "\nImpossible XML Input Argument Parameters Extraction!!!\n";
+ERR_XMLBatch_0024.Diagnostic = "Bad Syntax for </p1> Argument Value!!!\n";
+ERR_XMLBatch_0024.Advice = "Please Check the two possible Argument Values:[PolSag,PolStep]!!!\n";
+
+ERR_XMLBatch_00241.Request = "\nError detected on XML Input Argument Parameters Extraction!!!\n";
+ERR_XMLBatch_00241.Diagnostic = "Bad Syntax for </p1> Argument Value!!!\n";
+ERR_XMLBatch_00241.Advice = "Argument Value has been replaced by the default one:'PolSag'!!!\n";
+
+ERR_XMLBatch_003.Request = "\nImpossible XML Input File Parameter Extraction!!!\n";
+ERR_XMLBatch_003.Diagnostic = "Bad Syntax in the File Id!!!\n";
+ERR_XMLBatch_003.Advice = "Please Check the Input File Id (Must be 'Product File')!!!\n";
+
+ERR_XMLBatch_004.Request = "\nImpossible XML Input File Parameter Extraction!!!\n";
+ERR_XMLBatch_004.Diagnostic = "The Input File Path is wrong!!!\n";
+ERR_XMLBatch_004.Advice = "Please Check the Input File Path!!!\n";
+
+ERR_XMLBatch_005.Request = "Problem in Input Parameter Count!!!\n";
+ERR_XMLBatch_005.Diagnostic = "No Input Parameter found!!!\n";
+ERR_XMLBatch_005.Advice = "Verify Number of Input Parameter (see Default XML File)!!!\n";
+
+//ERR_XMLBatch_006.Request = "\nImpossible XML Output File Argument Parameter Extraction!!!\n";
+//ERR_XMLBatch_006.Diagnostic = "Output File Value is empty!!!\n";
+//ERR_XMLBatch_006.Advice = "Plesase Check the Output File Arg Value!!!\n";
+
+ERR_XMLBatch_006.Request = "\nError detected on XML Output File Argument Parameter Extraction!!!\n";
+ERR_XMLBatch_006.Diagnostic = "Output File Value is empty!!!\n";
+ERR_XMLBatch_006.Advice = "Output File Arg Value has been replaced by Input product file name!!!\n";
+
+ERR_XMLBatch_007.Request = "\nImpossible XML Output Folder Parameter Extraction!!!\n";
+ERR_XMLBatch_007.Diagnostic = "Bad Syntax in the Folder Id!!!\n";
+ERR_XMLBatch_007.Advice = "Please Check the Output Folder Id (Must be 'Output directory')!!!\n";
+
+ERR_XMLBatch_008.Request = "\nImpossible XML Output Folder Parameter Extraction!!!\n";
+ERR_XMLBatch_008.Diagnostic = "The Output Folder Path is wrong!!!\n";
+ERR_XMLBatch_008.Advice = "Please Check the Output Folder Path!!!\n";
+
+ERR_XMLBatch_009.Request = "\nError detected on XML Input Argument Parameters Extraction!!!\n";
+ERR_XMLBatch_009.Diagnostic = "Number of Input Parameter is not correct!!!\n";
+ERR_XMLBatch_009.Advice = "You are not supposed to Add/Remove lines in your XML file.\nPlease check with a default version\n";
+
+ERR_XMLBatch_010.Request = "\nImpossible Export Output File Generation!!!\n";
+ERR_XMLBatch_010.Diagnostic = "Product </p1> haven't got ABF elements!!!\n";
+ERR_XMLBatch_010.Advice = "Please Check the Input Product!!!\n";
+
+ERR_XMLBatch_011.Request = "\nErrors have been detected during the Export Process.";
+ERR_XMLBatch_011.Diagnostic = "";
+ERR_XMLBatch_011.Advice = "Please Consult the Batch LOG file\n";
+
+ERR_XMLBatch_999.Request = "\nImpossible to continue ABF Batch Program!!!\n";
+ERR_XMLBatch_999.Diagnostic = "ABF Licence is not correct or not existing!!!\n";
+ERR_XMLBatch_999.Advice = "Please Check ABF Licence validity!!!\n";
+

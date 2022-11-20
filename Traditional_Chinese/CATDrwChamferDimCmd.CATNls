@@ -1,0 +1,91 @@
+//=============================================================================
+//                                     CNEXT - CXR4
+//                          COPYRIGHT DASSAULT SYSTEMES 2000 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATDrwChamferDimCmd
+// LOCATION    :    DraftingIntCommands/CNext/resources/msgcatalog
+// AUTHOR      :    flr
+// DATE        :    7/10/2002
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Drafting Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//------------------------------------------------------------------------------
+
+//******************************************************************************
+// Command
+//******************************************************************************
+CATDrwChamferDimCmd.UndoTitle="建立倒角尺寸";
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Interactive Chamfer Dimension Cmd : Dialog  purpose ...
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+CATDrwChamferDimCmd.State1.Message="選擇要標尺寸的倒角線或曲面";
+CATDrwChamferDimCmd.State2_2d.Message="選擇第一條參考線";
+CATDrwChamferDimCmd.State2_3d.Message="選擇第一個參考曲面";
+CATDrwChamferDimCmd.State3_2d.Message="選擇第二條參考線或指定圖紙來結束建立";
+CATDrwChamferDimCmd.State3_3d.Message="選擇第二個參考曲面";
+CATDrwChamferDimCmd.State4.Message="指定圖紙來結束建立";
+
+//******************************************************************************
+// Agents
+//******************************************************************************
+CATDrwChamferDimCmd.FirstSelectionAgentSet.UndoTitle = "選擇倒角";
+CATDrwChamferDimCmd.BaseElem1Agent.UndoTitle = "選擇第一參考";
+CATDrwChamferDimCmd.BaseElem2Agent.UndoTitle = "選擇第二參考";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Dim line 1 symbol
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATDrwChamferDimCmd.repBarRessource._repRadius.Title="一個符號";
+CATDrwChamferDimCmd.repBarRessource._repRadius.ShortHelp="一個符號";
+CATDrwChamferDimCmd.repBarRessource._repRadius.Help=
+"含一個符號的尺寸線";
+CATDrwChamferDimCmd.repBarRessource._repRadius.LongHelp=
+"一個符號 :
+含一個符號的尺寸線.";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Dim line 2 symbols
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATDrwChamferDimCmd.repBarRessource._repLength.Title="二個符號";
+CATDrwChamferDimCmd.repBarRessource._repLength.ShortHelp="二個符號";
+CATDrwChamferDimCmd.repBarRessource._repLength.Help=
+"含二個符號的尺寸線";
+CATDrwChamferDimCmd.repBarRessource._repLength.LongHelp=
+"二個符號 :
+含二個符號的尺寸線.";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Length x Length
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATDrwChamferDimCmd.formatBarRessource._formatLxL.Title="長度 x 長度";
+CATDrwChamferDimCmd.formatBarRessource._formatLxL.LongHelp=
+"格式為 長度 x 長度";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Length x Angle
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATDrwChamferDimCmd.formatBarRessource._formatLxA.Title="長度 x 角度";
+CATDrwChamferDimCmd.formatBarRessource._formatLxA.LongHelp=
+"格式為 長度 x 角度";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Angle x Length
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATDrwChamferDimCmd.formatBarRessource._formatAxL.Title="角度 x 長度";
+CATDrwChamferDimCmd.formatBarRessource._formatAxL.LongHelp=
+"格式為 角度 x 長度";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Length
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATDrwChamferDimCmd.formatBarRessource._formatL.Title="長度";
+CATDrwChamferDimCmd.formatBarRessource._formatL.LongHelp=
+"格式為 長度";
+

@@ -1,0 +1,120 @@
+SelStrategy 					= "選擇方式...";
+MfgMachiningTabPage				= "加工";
+MfgStepOverTabPage				= "步進";
+MfgFinishingTabPage				= "精加工";
+MfgToolAxisTabPage				= "刀具軸";
+MfgHSMTabPage					= "高速切削";
+
+MfgToolAxisStrategy 				= "導引";
+MfgToolAxisStrategy.LongHelp			= "指定刀具如何導引.";
+MfgContactHeight 				= "接觸高度";
+MfgContactHeight.LongHelp			= "指定刀具邊必須與驅動曲面上的那一點相切. 
+接觸高度從刀尖沿著刀軸量測. 此點依據接觸高度從驅動面投影至刀具軸.";
+
+
+
+
+Mfg5AxisUserDefinedCuttingHeightFlag		= "使用刀具參數控制與規則面的接觸切削 ";
+Mfg5AxisUserDefinedCuttingHeightFlag.LongHelp	= "勾選來指定使用刀具的切削長度 
+否則將使用標準切削長度 (Lc) .";
+Mfg5AxisUserDefinedCuttingHeight		= "可用的切削長度";
+Mfg5AxisUserDefinedCuttingHeight.LongHelp	= "為目前刀具指定使用者自訂刀長.
+當接近具有負的脫模角的驅動面時, 
+此參數控制刀具與規則面的接觸或預留值非常有用,
+不需要更改資料庫的刀具選擇.";
+MfgLeaveDistance 					= "扇形離開動作的距離";
+MfgLeaveDistance.LongHelp			= "指定執行刀具扇形離開動作的距離.";
+
+MfgApproachDistance 				= "扇形接近動作的距離";
+MfgApproachDistance.LongHelp			= "指定執行刀具扇形接近動作的距離.";
+
+Mfg5AxisDeActivateFanning			= "停止扇形動作";
+Mfg5AxisDeActivateFanning.LongHelp		= "指定刀軸扇形動作模式.";
+
+MfgReUseFirstDrive				= "封閉刀具路徑";
+MfgReUseFirstDrive.LongHelp			= "為封閉外形, 勾選檢查框來指定第一個驅動面也是最後驅動面.";
+
+MfgManualTMDir					= "手動方向";
+MfgManualTMDir.LongHelp				= "勾選檢查框來指定驅動方向.
+否則, 它會自動依據參考位置來決定.";
+
+Mfg5AxisMachDirMode 				= "往前";
+Mfg5AxisMachDirMode.LongHelp			= "允許您手動決定驅動方向.";
+
+MfgMachToler 					 = "加工精度";
+MfgMachToler.LongHelp				= "連續路徑的精確度用來控制點分配和輸出位置的數目.";
+MfgMaxDistSteps					= "每段間的最大距離";
+MfgMaxDistSteps.LongHelp			= "點間的最大距離. 用來偵測驅動面的結束.";
+MfgMaxDiscretizationStep			= "最大不連續距離";
+MfgMaxDiscretizationStep.LongHelp		= "最大不連續距離用來確認點間是線性上分開的.";
+MfgMaxDiscretizationAngle			= "最大不連續角度";
+MfgMaxDiscretizationAngle.LongHelp		= "最大不連續角度指定加工機器可接受的兩連續點間的最大夾角.";
+
+MfgDirectionOfCut					= "切削方向";
+MfgDirectionOfCut.LongHelp			= "指定如何加工: 
+- 順銑: 
+  刀具的前端 (在加工方向) 先插入材料
+- 逆銑:
+  刀具的後端 (在加工方向) 先插入材料 ";
+
+MfgMachiningMode 					= "刀具路徑形式";
+MfgMachiningMode.LongHelp 			= "指定加工的路徑形式 :
+- 來回: 
+  加工方向在路徑間是相反的
+- 單方向: 
+  加工方向在路徑間是相同的.";
+
+
+MfgSequencingMode  				= "順序性";
+MfgSequencingMode.LongHelp  			= "指定加工順序:
+- 軸向: 
+  先軸向再徑向
+- 徑向: 
+  先徑向再軸向.";
+
+RadialStrategyFrame 				= "徑向方向";
+MfgDistanceBetweenPaths 			= "路徑間距離";
+MfgDistanceBetweenPaths.LongHelp 		= "指定在徑向方式下兩連續路徑間的最大距離.";
+
+MfgNumberOfRadialPaths 				= "路徑數目";
+MfgNumberOfRadialPaths.LongHelp 		= "指定在徑向方式下的路徑數目.";
+
+AxialStrategyFrame 				= "軸向方向 ";
+Mfg5AxisMultiLevelMode				= "模式"; 
+Mfg5AxisMultiLevelMode.LongHelp 		= "定義軸向路徑的計算模式.";
+MfgMaxDepthOfCut 					= "路徑間距離";
+MfgMaxDepthOfCut.LongHelp 			= "指定在軸向方式下兩連續路徑間的最大距離.";
+MfgNumberOfLevels 				= "階層數目";
+
+MfgNumberOfLevels.LongHelp 			= "指定在軸向方式下的階層數目.";
+
+
+
+Mfg5AxisOutputType			= "補償輸出";
+Mfg5AxisOutputType.LongHelp		= "指定 NC 資料中如何輸出刀具補償指令:  
+
+無
+補償未計算.
+
+2D 徑向刀尖
+在垂直刀具軸平面計算刀具補償, 並作動在刀具側邊 (左或右). 
+補償半徑為刀具半徑.
+輸出為刀尖點 (XT, YT, ZT). 
+
+3D 徑向
+補償延著 3D 向量計算(PQR), 垂直驅動曲面, 並與刀具側接觸. 
+補償半徑為刀具半徑.
+輸出為刀尖點 (XT, YT, ZT) 和驅動面的垂直方向 (PQR). 多軸加工時輸出刀軸向量 (IJK).";
+
+MfgLocal4XPlane = "選擇性 4 軸平面";
+SelLocal4XPlane = "在部份修改中按一下來選擇 4 軸方向.";
+
+MfgToolSideOnGuideCurve			= "定位在導引曲線";
+MfgToolSideOnGuideCurve.LongHelp	= "在相對前進方向的輔助導引元素上指定刀具位置.";
+
+MfgOffsetOnGuideCurve			= "導引曲線上預留";
+MfgOffsetOnGuideCurve.LongHelp	= "指定應用在輔助導引元素的側邊位置上的預留.";
+
+MfgUseGuideCurve				= "使用導引曲線";
+MfgUseGuideCurve.LongHelp		= "指定與輔助導引元素的刀具接觸模式: \n- 永遠.\n- 視需要 (只有在與驅動曲面有干涉風險時使用)";
+

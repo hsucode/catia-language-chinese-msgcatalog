@@ -1,0 +1,46 @@
+// Confirmation Panel
+ConfirmationTitle = "確認";
+//ConfirmTextSelectedSol = "這個命令將從解法移除部份資料. \n 可能需花費時間重新組建.";
+ConfirmTextSelectedSol = "這個命令將從解法移除部份資料. \n 可能需花費時間重新組建.";
+ConfirmTextAllSol = "這個命令將從解法移除部份資料. \n 可能需花費時間重新組建.";
+
+// Clear Data Dialog
+//CATElfSolverCmd.CATElfClearSolverDataCmd.CATElfWndClearSolverData.Title= "儲存清理";
+//CATElfSolverCmd.CATElfClearSolverDataCmd.CATElfWndClearSolverData.ClearFrame.ClearComputDataRB.Title ="清除計算資料";
+//CATElfSolverCmd.CATElfClearSolverDataCmd.CATElfWndClearSolverData.ClearFrame.ClearAllRB.Title="清除計算和結果資料";
+CATElfSolverCmd.CATElfClearSolverDataCmd.CATElfWndClearSolverData.Title= "外部儲存清理";
+CATElfSolverCmd.CATElfClearSolverDataCmd.CATElfWndClearSolverData.ClearFrame.ClearComputDataRB.Title ="清除計算資料";
+CATElfSolverCmd.CATElfClearSolverDataCmd.CATElfWndClearSolverData.ClearFrame.ClearAllRB.Title="清除計算和結果資料";
+
+// Clear Data Cmd
+//CATElfSolverCmd.CATElfClearSolverDataCmd.SelectRBForSolution.Message = "選擇清除選項以應用至所選解法";
+CATElfSolverCmd.CATElfClearSolverDataCmd.SelectRBForSolution.Message = "選擇清除選項以應用至所選解法";
+CATElfSolverCmd.CATElfClearSolverDataCmd.SelectRBForAllSolutions.Message = "選擇清除選項以應用至所有解法";
+CATElfSolverCmd.CATElfClearSolverDataCmd.ConfirmationWindowState.Message = "請按確認來繼續";
+
+
+// External Storage Sent To location Cmd
+//CATElfSolverCmd.CATElfCmdExternalStorage.InitState.Message = "修改結果或計算資料的儲存檔案夾路徑";
+CATElfSolverCmd.CATElfCmdExternalStorage.InitState.Message = "修改分析文件的外部儲存";
+
+// External Storage File Selection box
+//FileSelectionResults = "結果檔案 (*.CATAnalysisResults)";
+//FileSelectionComputations = "計算檔案 (*.CATAnalysisComputations)";
+FileSelectionResults = "CATAnalysisResults (*.CATAnalysisResults)";
+FileSelectionComputations = "CATAnalysisComputations (*.CATAnalysisComputations)";
+
+FileExistWarning = "檔案名稱衝突";
+//FileAlreadyExist = " 檔案名稱已存在. \n  您要覆寫它嗎 ?. \n \n" ;
+FileAlreadyExist = " 檔案名稱已存在. \n  您要覆寫它嗎 ?. \n \n" ;
+
+//CrunchZipTitle = "外部儲存衝突";
+//CrunchZipMessage = "目前參考的外部儲存已被前一個  CATAnalysis 文件參考. \n
+請更新外部儲存檔案名稱且重新執行 儲存成 動作.\n";
+
+SaveErrorTitle = "儲存錯誤";
+//SaveResultsErrorMessage = "CATAnalysisResults 儲存動作失敗.";
+//SaveComputationsErrorMessage = "CATAnalysisComputations 儲存動作失敗.";
+SaveResultsErrorMessage = "CATAnalysisResults 檔案儲存動作失敗.";
+SaveComputationsErrorMessage = "CATAnalysisComputations 檔案儲存動作失敗.";
+
+ERR_0001 = "\n 外部儲存衝突. \n 修改 /p 外部儲存並重新載入上一次儲存的動作.";

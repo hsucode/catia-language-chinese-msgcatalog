@@ -1,0 +1,1020 @@
+//---------------------------------------------------------------------------
+//  DIALOGUE COMMON TO ALL WINDOWS
+//---------------------------------------------------------------------------
+
+BOK = "< 退回" ;
+BCancel = "下一步 >" ;
+BApply = "取消" ;
+
+CATInsErrWindow.Title = "錯誤";
+
+//---------------------------------------------------------------------------
+//  SETUP WINDOW 
+//---------------------------------------------------------------------------
+
+Setup.Title = "/p1 /p2 安裝";
+ErrorWindow.Title = "錯誤";
+
+//---------------------------------------------------------------------------
+// ERRORS INIT
+//--------------------------------------------------------------------------
+ErrorSRCDIR = "錯誤 : SRCDIR 未設定 \n";
+ErrorSTARTDIR = "錯誤 : STARTDIR 未設定 \n";
+ErrHOME="錯誤: HOME 未設定 \n";
+NotRoot =  "您必須是系統管理者才可安裝 \n 請嚐試以下列指令來做系統管理者: \n su - root \n 或簽入成 root \n 然後再執行 /\/start \n";
+NotAdministrator="安裝程式時必須具有系統管理者權限.";
+ErrProductLine ="錯誤 : PRODUCT_LINE 未設定 \n";
+ErrMarketingVersion = "錯誤 : MARKETING_VERSION 未設定 \n";
+ErrOSDS = "錯誤 : OSDS 未設定 \n";
+ErrOpenLog ="警告: 無法開啟記錄檔 /p1 \n";
+ErrWndErrorWriteLog="警告: 無法寫入 /p1\n";
+ErrNoSpaceRootHome="在 /p1 無足夠的空間- 您必須最少具 /p2 Kb\n";	  
+ErrDirectXLCA="此機檯未安裝 DirectX 8.1 .\n- 若要執行 LCA 伺服器, 您必須從下列網站安裝 :\n http://www.microsoft.com/downloads/details.aspx?FamilyID=7f54ebd3-00d1-47bc-81db-3157fba4c3a7\n- 如您只要執行 LCA Client, DirectX 8.1 就不需要.";
+//---------------------------------------------------------------------------
+//  WELCOME 
+//---------------------------------------------------------------------------
+
+WndWelcome.Title     = "/p1 /p2 歡迎";
+Welcome.Label1.Title = "歡迎使用 /p1 /p2 設定程式. 此程式" ;
+Welcome.Label2.Title = "將安裝 /p1 /p2 在您的電腦上." ;
+Welcome.Label2GASP.Title = "將安裝 /p1 /p2 , 含 Service Pack level /p3 在您的電腦上." ;
+Welcome.Label3.Title = "\n";
+Welcome.Label4.Title = "按一下取消來退出安裝程式. 按一下下一步來繼續.\n";
+Welcome.Label5.Title = "\n";
+Welcome.Label6.Title = "/p1 (r) 第五版. (c) 達梭系統公司 2004. 版權所有.";
+Welcome.Label7.Title = "此軟體部份版權屬於第三者";
+Welcome.Label8.Title = "(請見文件中的 '特別注意').";
+Welcome.Label9.Title = "\n";
+Welcome.Label10.Title = "\n";
+Welcome.Label11.Title = "警告: 此軟體由智慧財產權保護法所保護";
+Welcome.Label12.Title = "交易(經商)祕密和國際的條約。陳述, 分發, 這個軟體,"; 
+Welcome.Label13.Title = "或以任何其它形式部分或者全部的再製";
+Welcome.Label14.Title = "均需要達梭系統公司或者它的代表人 ";
+Welcome.Label15.Title = "的預先同意. ";
+Welcome.Label16.Title = "任何未經許可的行為，均有可能構成侵權行為！";
+//------------------------------------------------------------------------
+//  TERMS AND CONDITIONS
+//-------------------------------------------------------------------------
+
+TermsAndConditions.Title     = "/p1 /p2 LICENSED SOFTWARE TERMS AND CONDITIONS";
+TermsAndConditions.Label1.Title = "Please read carefully the following Licensed Software Terms and Conditions" ;
+TermsAndConditions.Label2.Title = "\n" ;
+TermsAndConditions.TermsAgreeLabel1.Title="Do you agree with all the terms of the above Licensed Software Terms and Conditions?";
+TermsAndConditions.TermsAgreeLabel0.Title="\n";
+TermsAndConditions.TermsAgreeLabel2.Title="\n";
+TermsAndConditions.BCancel = "I agree";
+TermsAndConditions.BApply = "I disagree";
+
+//---------------------------------------------------------------------------
+//  LICENSE 
+//---------------------------------------------------------------------------
+
+License.Title         = "/p1 /p2 軟體授權 - TargetID = /p3";
+License.Label1.Title  ="If you already have a nodelock license:";
+License.Label2.Title  ="- you can import it right now by clicking on the Import Nodelock License button";
+License.Label3.Title  ="- you can also import it later by running the Nodelock Management tool.";
+License.Label4.Title  ="\n";
+License.Label5.Title  ="Instead, if you have a server license (also called concurrent license) you cannot import it ";
+License.Label6.Title  ="during the setup. You have to import it using the IBM LUM i4blt tool. This can be done before ";
+License.Label7.Title  ="or after the setup.";
+License.Label8.Title  ="\n";
+License.Label9.Title  ="If you don't have a license yet, you can successfully complete the setup anyway.";
+License.Label10.Title  ="\n";
+License.Label11.Title  ="\n";
+License.FrameButton.PushImport.Title = "Import Nodelock License";
+ImportCertificate.Title = "輸入證明書";
+
+//---------------------------------------------------------------------------
+//  ERROR MESSAGES: LICENSING
+//---------------------------------------------------------------------------
+
+ErrWndLicenseFile.Title = "錯誤";
+ErrWndLicenseFile.Text = "無法開啟密碼檔 /p1\n\n/p2\n";
+ErrWndLicenceNotImported.Title = "密碼未輸入";
+ErrWndLicenceInfo.Title = "資訊";
+ErrWndLicenceWarning.Title = "警告";
+//---------------------------------------------------------------------------
+//  DESTINATION DIRECTORY
+//---------------------------------------------------------------------------
+
+Destination.Title       = "選擇目的位置";
+Destination.Label1.Title   = "Setup 會安裝 /p1 /p2 在下列目錄:";
+Destination.Label1GASP.Title   = "Setup 會安裝 /p1 /p2 含 Service Pack Level /p3 在下列目錄:";
+Destination.Label2.Title   = "要安裝在此目錄 , 請按 下一步.";
+Destination.Label3.Title   = "\n";
+Destination.Label4.Title   = "\n";
+Destination.Label5.Title   = "\n";
+Destination.Label6.Title   = "您也可按取消或退出來選擇不安裝軟體 /p1 /p2 .";
+Destination.Label6GASP.Title   = "您也可按取消或退出來選擇不安裝軟體 /p1 /p2 含 Service Pack level /p3 .";
+Destination.Label7.Title   = "\n";
+Destination.Frame.Title    = "目的目錄 "; 
+Destination.Frame.BrowsePushButton.Title="瀏覽...";
+QtnWndCreateDirectory.Title = "確認建立目錄";
+QtnWndCreateDirectory.Text = "目錄 \n /p1 \n 不存在. \n 您要建立此目錄嗎? \n";
+BrowseBox.Title ="Select Directory";
+//---------------------------------------------------------------------------
+//  SELECT PATH
+//---------------------------------------------------------------------------
+
+DestinationWindows.Title       = "/p1 /p2 Choose Destination Location";
+DestinationWindows.Label1.Title   = "Setup will install /p1 /p2 in the following folder:";
+DestinationWindows.Label1GASP.Title   = "Setup will install /p1 /p2 with Service Pack Level /p3 in the following folder:";
+DestinationWindows.Label2.Title   ="To install to this folder, click Next.";
+DestinationWindows.Label3.Title   = "\n";
+DestinationWindows.Label4.Title   = "\n";
+DestinationWindows.Label5.Title   = "\n";
+DestinationWindows.Label6.Title   = "You can choose not to install /p1 /p2 by clicking Cancel to exit Setup.";
+DestinationWindows.Label6GASP.Title   = "You can choose not to install /p1 /p2 with Service Pack level /p3 by clicking Cancel to exit Setup.";
+DestinationWindows.Label7.Title   = "\n";
+DestinationWindows.Frame.Title    = "Destination Folder"; 
+DestinationWindows.ListFoldersFrame.Title    = "Existing installation folders:"; 
+DestinationWindows.Frame.BrowsePushButton.Title="Browse...";
+WarningFATTitle="WARNING: FAT File System";
+WarningFAT="The target folder is a FAT file system. We recommend you do not install on a FAT file system.\nFiles stored on a FAT file system take more disk space than on a NTFS file system.\n 
+Computed required space may be over-evaluated.\nDo you want to change the target folder?";
+//---------------------------------------------------------------------------
+//  IDENT
+//---------------------------------------------------------------------------
+Ident.Title          = "/p1 /p2 Enter Identifier for your new Installation";
+Ident.Label1.Title   = "Please enter a string to identify the new installation";
+Ident.Label2.Title   = "This string must contain uppercase letters or numbers and must not exceed 20 characters";
+Ident.Label3.Title   = "\n";
+Ident.Label4.Title   = "\n";
+Ident.Label5.Title   = "\n";
+Ident.IdentFrame.IdentLabel.Title ="Ident:";
+ErrWndIdent.Title = "Error";
+ErrorIdent = "The ident must contain only uppercases letters or digits ( less then 21 characters).\n";
+ErrorIdentAlreadyExists="Ident /p1 was already used for a previous installation. You must enter a new ident\n";
+//---------------------------------------------------------------------------
+//  ERROR MESSAGES: DESTINATION DIRECTORY  
+//---------------------------------------------------------------------------
+ErrWndCreateDir.Title = "錯誤";
+ErrWndCreateDir.Text = "建立目錄錯誤: \n/p1\n/p2\n";
+ErrWndBadDir.Title   = "錯誤";
+ErrWndBadDir.Text    = "不正確的安裝目錄 \n";
+ErrWndEmptyDir.Title = "錯誤";
+ErrWndEmptyDir.Text = "/p1 必須是空的 \n";
+ErrWndFileAlreadyExist.Title = "錯誤";
+ErrWndFileAlreadyExist.Text = "無法建立目錄 /p1\n. 名稱已存在. \n";
+ErrWndSyntaxDir.Title = "錯誤";
+ErrWndSyntaxDir.Text = "目錄語法錯誤. \n 空白和 tab 鍵是不允許的. \n";
+ErrWndStatFile.Title = "錯誤";
+ErrWndStatFile.Text = "存取統計目錄錯誤: \n/p1\n\n/p2\n";
+ErrWndAvailSpace.Title = "錯誤";
+ErrWndAvailSpace.Text = "計算可用空間錯誤: \n/p1\n/p2\n";
+ErrWndRequiredSpace.Title = "錯誤";
+ErrWndRequiredSpace.Text = "計算所需空間錯誤: \n/p1/p2\n";
+ErrWndGALevel.Title = "錯誤";
+ErrWndGALevel.Text = "您無法安裝 /p1 級資料至 /p2 級安裝. \n";
+ErrWndOS.Title = "錯誤";
+ErrWndOS.Text = "您無法安裝 /p1 操作系統至 /p2 操作系統. \n";
+ErrWndOpenExistingFile.Title = "錯誤";
+ErrWndOpenExistingFile.Text = "無法開啟 %s file.\n%s\n";
+
+//---------------------------------------------------------------------------
+//  ENVIRONMENT DIRECTORY
+//---------------------------------------------------------------------------
+
+Environment.Title       = "/p1 /p2 選擇環境位置";
+Environment.Label1.Title   = "Setup needs to create a file containing the runtime environment variables required ";
+Environment.Label2.Title   = "for starting a V5 session.";
+Environment.Label3.Title   = "\n";
+Environment.Label4.Title   ="You can choose to store this file in any directory, by changing the value below.";
+Environment.Label5.Title   = "\n";
+Environment.Label6.Title   = "However, we recommend you keep the default value.";
+Environment.Label7.Title   = "\n";
+Environment.Frame.Title    = "環境目錄"; 
+Environment.Frame.BrowsePushButton.Title="瀏覽..."; 
+ErrWndNoWriteEnvDir.Title  = "錯誤";
+ErrWndNoWriteEnvDir.Text   = " /p1 目錄無寫入權限. 請增加寫入權限或更換目錄 \n";
+ErrWndNoSpaceEnvDir.Title  = "錯誤";
+ErrWndNoSpaceEnvDir.Text   = "在目錄中無足夠的空間 /p1 - 您需要至少 8Kb\n";
+ 
+//---------------------------------------------------------------------------
+//  CHECK ENVIRONMENT
+//---------------------------------------------------------------------------
+
+CheckEnvironment.Title     = "/p1 /p2 選擇您的環境";
+CheckEnvironment.Label1.Title = "預設 /p1 環境已存在. \n"; 
+CheckEnvironment.Label2.Title = "\n";
+CheckEnvironment.Label3.Title = "如是無效的, 請選擇刪除它. \n" ;
+CheckEnvironment.Label4.Title = "\n" ;
+CheckEnvironment.Label5.Title = "如否, 請按選擇來建立新的環境." ;
+CheckEnvironment.Label6.Title = "\n" ;
+CheckEnvironment.Label7.Title = "\n" ;
+CheckEnvironment.Frame.EraseEnvironmentFileBtn.Title = "更換舊環境";
+CheckEnvironment.Frame.CreateNewEnvironmentBtn.Title = "建立新的環境 : /p1";
+
+//---------------------------------------------------------------------------
+//  INSTALLED CONFIGURATIONS/PRODUCTS  
+//---------------------------------------------------------------------------
+
+InstallProduct.Title     = "/p1 /p2 安裝組態和產品";
+InstallProduct.Label1.Title = "組態和產品已安裝"; 
+InstallProduct.Label2.Title = "在目錄 /p1中 \n.";
+InstallProduct.Label3.Title = "安裝 /p1 /p2 組態和產品, 請按下一步." ;
+InstallProduct.Label3GASP.Title = "To install /p1 /p2 configurations and/or products, with Service Pack level /p3, click Next." ;
+InstallProduct.Label4.Title = "安裝在不同位置, 請按 返回." ;
+InstallProduct.Label5.Title = "您可按取消或退出來不安裝 /p1 /p2 ." ;
+InstallProduct.Label5GASP.Title = "You can choose not to install /p1 /p2 with Service Pack level /p3 by clicking Cancel to exit setup." ;
+
+//---------------------------------------------------------------------------
+//   ERROR MESSAGES: INSTALLED CONFIGURATIONS/PRODUCTS  
+//---------------------------------------------------------------------------
+
+ErrWndProductAllInstalled.Title = "錯誤";
+ErrWndProductAllInstalled.Text = "所有在 CD-ROM 中的組態和產品已安裝. \n";
+
+//---------------------------------------------------------------------------
+//  CHOOSE SETUP TYPE
+//---------------------------------------------------------------------------
+
+Setup_Type.Title     = "/p1 /p2 設定型式";
+Setup_Type.Label1.Title = "\n";
+Setup_Type.Label2.Title = "選擇您偏好的設定型式, 然後按下一步";
+Setup_Type.Label3.Title = "\n";
+Setup_Type.Label4.Title = "\n";
+//Setup_type.FrameSetupType.Title  = "";
+Setup_Type.FrameSetupType.RBComplete.Title = "完成 - 將會安裝所有軟體";
+Setup_Type.FrameSetupType.RBCustom.Title =   "自訂   - 您可選擇要安裝的軟體";
+
+//---------------------------------------------------------------------------
+//  CHOOSE LANG
+//---------------------------------------------------------------------------
+
+ChooseLang.Title     = "/p1 /p2 安裝特定語言檔案和字型";
+ChooseLang.Label1.Title = "勾選選項來安裝使用者介面檔案";
+ChooseLang.Label2.Title = "為了適當語言將安裝語言索引字型";
+ChooseLang.Label3.Title="\n";
+ChooseLang.Label4.Title = "警告 : 您無法新增或移除語言或字型 ";
+ChooseLang.Label5.Title = "將來, 當新增組態或產品時";
+ChooseLang.Label6.Title="\n";
+ChooseLang.FrameLang.Title="使用者特定語言介面程式";
+ChooseLang.FrameLang.CheckFrench.Title= "法文 ";
+ChooseLang.FrameLang.CheckGerman.Title= "德文 ";
+ChooseLang.FrameLang.CheckItalian.Title= "義大利文 ";
+ChooseLang.FrameLang.CheckJapanese.Title= "日文 ";
+ChooseLang.FrameLang.CheckSiChinese.Title= "簡體中文";
+ChooseLang.FrameLang.CheckKorean.Title= "韓文";
+ChooseLang.CheckFonts.Title= "語言索引字型";
+//---------------------------------------------------------------------------
+//  SELECT SOFTWARE
+//---------------------------------------------------------------------------
+
+MediaProduct.Title     = "選擇軟體";
+MediaProduct.Label1.Title = "按一下您要安裝的組態或產品";
+MediaProduct.Label2.Title = "在目錄 /p1.";
+MediaProduct.Label3.Title = "您可按取消或退出來選擇不安裝 /p1 /p2 .";
+MediaProduct.Label3GASP.Title = "You can choose not to install /p1 /p2 with Service Pack Level /p3 by clicking Cancel to exit setup.";
+MediaProduct.Label4.Title = "\n";
+MediaProduct.ChooseLabel.Title = "從選擇:" ;
+MediaProduct.ProductSwitch.Text = "產品" ;
+MediaProduct.ConfigSwitch.Text = "組態" ;
+MediaProduct.ListLabel.Title = "選擇軟體:" ;
+MediaProduct.Frame.AvailableSizeLabel.Title = "可用空間" ;
+MediaProduct.Frame.RequiredSizeLabel.Title = "所需空間" ;
+MediaProduct.Frame.AvailableSizeValue.Title = "\t KB";
+MediaProduct.Frame.RequiredSizeValue.Title = "\t KB";
+//---------------------------------------------------------------------------
+//  SELECT EXTRA PRODUCTS
+//---------------------------------------------------------------------------
+
+ExtraProduct.Title     = "/p1 /p2 Select Extra Products";
+ExtraProduct.Label1.Title ="You can choose to install additional products by selecting Extra Products in the list below";
+ExtraProduct.Label2.Title = "\n";
+ExtraProduct.Label3.Title = "This list depends on the Configurations and Products you have selected in the previous ";
+ExtraProduct.Label4.Title = "panel and from the Configurations and Products you have previously installed";
+ExtraProduct.Label5.Title = "\n";
+ExtraProduct.Label6.Title = "\n";
+SelectExtraProduct.Column1.Title ="Extra Products             ";
+SelectExtraProduct.Column2.Title ="Linked Configurations and Products";
+ExtraProduct.Frame.AvailableSizeLabel.Title = "Space available  " ;
+ExtraProduct.Frame.RequiredSizeLabel.Title = "Space required  " ;
+ExtraProduct.Frame.AvailableSizeValue.Title  =" KB";
+ExtraProduct.Frame.RequiredSizeValue.Title   =" KB";
+//---------------------------------------------------------------------------
+//   ERROR MESSAGES: SELECT SOFTWARE
+//---------------------------------------------------------------------------
+
+ErrWndProductNotSelect.Title = "錯誤";
+ErrWndProductNotSelect.Text  = "至少要選擇一個組態或產品.\n";
+ErrWndProductAndExtraNotSelect.Title = "Error";
+ErrWndProductAndExtraNotSelect.Text  ="Select an extra-product or click on 'Back' button and select at least one configuration or one product.\n";
+ErrWndSizeToUnload.Title     = "錯誤";
+ErrWndSizeToUnload.Text      = "在 /p3 空間不足夠 \n 安裝所需軟體 \n\n\t : /p1 KB\n 所需 \t\t : /p2 KB\n";
+ErrWndSizeToUnloadSelected.Title     = "Error";
+ErrWndSizeToUnloadSelected.Text      = "There is not enough space in /p3\n to install the selected software.\n\nAvailable\t: /p1 KB\nRequired\t: /p2 KB\n";
+ErrWndEmptyMediaToc.Title    = "錯誤";
+ErrWndEmptyMediaToc.Text     = "CD-ROM 中所列組態或軟體是空的.\n";
+ErrWndNoCAFAdmin.Title       ="Error";
+ErrWndNoCAFAdmin.Text        ="Product /p1 cannot be installed alone,you need to select an additional configuration.\n";
+ErrWndNoCAFAdmin2.Title       ="Error";
+ErrWndNoCAFAdmin2.Text        ="These products cannot be installed alone,you need to select an additional configuration.\n";
+//---------------------------------------------------------------------------
+//  CATIA V5 INFO
+//---------------------------------------------------------------------------
+
+CatiaInfo.Title       = "/p1 /p2 CATIA V5 - ENOVIA LCA 交換資訊";
+CatiaInfo.Label1.Title   = "如您已安裝 CATIA V5 , 您可執行 CATIA V5";
+CatiaInfo.Label2.Title   = " 可勾選安裝路徑";
+CatiaInfo.Label3.Title   = "\n";
+CatiaInfo.CatiaInfoCheck.Title = "我要執行 CATIA V5 資訊";
+CatiaInfo.CatiaInfoFrame.Title = "CATIA V5 資訊";
+CatiaInfo.CatiaInfoFrame.CatiaInfoLabel.Title = " 您可按 瀏覽 按鈕來修改預設目錄";
+CatiaInfo.CatiaInfoFrame.CatiaInfoPathLabel.Title = "安裝路徑:";
+CatiaInfo.CatiaInfoFrame.CatiaInfoEnvPathLabel.Title ="環境路徑:"; 
+CatiaInfo.CatiaInfoFrame.CatiaInfoEnvNameLabel.Title ="環境檔案名稱:"; 
+CatiaInfo.CatiaInfoFrame.CatiaInfoPathBrowse.Title ="瀏覽...";
+CatiaInfo.CatiaInfoFrame.CatiaInfoEnvPathBrowse.Title ="瀏覽...";
+
+//---------------------------------------------------------------------------
+//  ORBIX  CONFIGURATION
+//---------------------------------------------------------------------------
+
+Orbix.Title       = "/p1 /p2 選擇 Orbix 組態";
+Orbix.Label1.Title   = "你的選擇要求你設定 Orbix";
+Orbix.Label2.Title   = "\n";
+Orbix.Label3.Title   = "如果你想要用預設值來執行 Orbix , 請按下一步";
+Orbix.Label4.Title   = "\n";
+Orbix.Label5.Title   = "我們建議你選擇預設值 \n";
+Orbix.Label6.Title   = "\n";
+Orbix.FrameOrbix.Title  = "Orbix 組態";
+Orbix.FrameOrbix.ItDaemonPortLabel.Title = "Orbix 程序Port 號碼 ";
+Orbix.FrameOrbix.ItDaemonServerBaseLabel.Title = "為程序執行伺服器開始程序埠號碼";
+Orbix.FrameOrbix.ItDaemonServerRangeLabel.Title = "程序執行伺服器";
+Orbix.FrameOrbix.CheckBootInit.Title = "開始時啟動Orbix 程序";
+Orbix.FrameOrbix.CheckAddPrivileges.Title = "Add required privileges for current user.";
+ErrWndOrbix.Title = "錯誤";
+ErrWndOrbixPort.Text = "Port  號碼必須大於或等於 /p1";
+ErrWndOrbixPortNotFree.Text = "埠 /p1 使用中. \n 您必須指定一個空的埠. \n 您可使用埠 /p2\n";
+ErrWndOrbixServerBase.Text  = "開始埠 /p1  號碼必須大於 Orbix 程序號碼";
+ErrWndOrbixServerRange.Text  = "埠號碼必須大於 50 \n";
+
+
+//---------------------------------------------------------------------------
+//  SERVERS TIMEOUT  CONFIGURATION
+//---------------------------------------------------------------------------
+
+ServersTimeout.Title = "/p1 /p2 伺服器連線時間超過組態";
+ServersTimeout.Label1.Title   = "您可自訂伺服器連線時間超過.";
+ServersTimeout.Label2.Title   = "數值範圍由 2 至 35700 分鐘";
+ServersTimeout.Label3.Title   = "\n";
+ServersTimeout.ServersTimeoutFrame.TimeoutLabel.Title = "伺服器時間超過: ";
+ErrWndServersTimeout.Title="Error";
+//---------------------------------------------------------------------------
+// VAULT CLIENT CONFIGURATION
+//---------------------------------------------------------------------------
+VaultClient.Title = "/p1 /p2  Vault Client 組態";
+VaultClient.Label1.Title   = "勾選此選項如您要設定 ENOVIA Vault Client 組態";
+VaultClient.Label2.Title   = "\n";
+VaultClient.Label3.Title   = "\n";
+VaultClient.VaultCheckButton.Title = "是, 我要設定 ENOVIA Vault Client";
+LaunchVaultClientSetup = "如您要設定 ENOVIA Vault Client, 請執行 VaultClientSetupB 程式 \n";
+LaunchVaultServerSetup = "要新增新的 Vault 伺服器, 請執行 VaultSetupB 程式 \n";
+
+//---------------------------------------------------------------------------
+// WEBAPPLI 
+//---------------------------------------------------------------------------
+WebAppli.Title = "/p1 /p2 Web Applications Configuration";
+WebAppli.Label1.Title ="Select a target application server type";
+WebAppli.Label2.Title   = "\n";
+WebAppli.FrameRadio.RBNone.Title="None.";
+WebAppli.FrameRadio.RBWebSphere.Title="IBM WebSphere Application Server.";
+WebAppli.FrameRadio.RBDotNet.Title="Microsoft Internet Information Server (IIS) with .NET framework.";
+WebAppli.FrameRadio.webURIFrame.webURILabel.Title="Application root URI: ";
+ErrWndWebAppli.Title = "Error";
+ErrNoWebURI.Text="You must enter a value for the root uri";
+ErrDotNetNotInstalled.Text="You cannot select this application server type, because .NET Framework 1.1 is not installed\n";
+ErrWebSphereNotInstalled.Text="You cannot select this application server type, because IBM WebSphere is not installed\n";
+//---------------------------------------------------------------------------
+//  CATIA V4
+//---------------------------------------------------------------------------
+
+CatiaV4.Title       = "/p1 /p2 CATIA V4 和 VPM1 可用";
+CatiaV4.Label1.Title   = "ENOVIA 3d com 可選擇性的驅動 CATIA V4 或 ENOVIA VPM1.\n";
+CatiaV4.Label2.Title   = "此產品必須在 ENOVIA 3d com 之前安裝. \n";
+CatiaV4.Label3.Title   = "您可選擇無,只有一個或兩個產品.\n";
+CatiaV4.Label4.Title   = "如您選擇 CATIA V4 或 ENOVIA VPM1, 請按輸入 \n";
+CatiaV4.Label5.Title   = "系統管理者的根目錄 \n";
+CatiaV4.Label6.Title   = "如果您選擇 CATIA V4, 請輸入您使用的 CATIA V4 版本 \n";
+CatiaV4.Label7.Title   ="\n";
+CatiaV4.CatiaV4Frame.Title  = "CATIA V4";
+CatiaV4.CatiaV4Frame.LabelCatiaV4Path.Title="請輸入CATIA V4 的管理者目錄:";
+CatiaV4.CatiaV4Frame.CheckButtonCatiaV4.Title="按一下來選擇 CATIA V4 產品";
+CatiaV4.CatiaV4Frame.LabelCatiaVersion.Title="選擇使用的 CATIA V4 版本 :";
+CatiaV4.CatiaV4Frame.FrameRadioVersion.RadioCatiaV422.Title="V423-1";
+CatiaV4.CatiaV4Frame.FrameRadioVersion.RadioCatiaV423.Title="V424-3";
+CatiaV4.VPM1Frame.Title  = "ENOVIA VPM1";
+CatiaV4.VPM1Frame.LabelVPM1Path.Title="輸入 ENOVIA VPM1 的管理者目錄:";
+CatiaV4.VPM1Frame.CheckButtonVPM1.Title="按一下來選擇 VPM1 產品";
+ErrWndV4.Title="錯誤";
+ErrWndV4IsNotaDir.Title  = "錯誤";
+ErrWndV4IsNotaDir.Text  = "目錄 /p1 不存在 \n";
+
+
+//---------------------------------------------------------------------------
+//  TOOL CONFIGURATION MANAGEMENT
+//---------------------------------------------------------------------------
+
+TCK.Title         = "/p1 /p2 工具組態管理";
+TCK.Label1.Title     = "選擇您要存取工具的方式";
+TCK.Label2.Title   = "選擇存取遠端 TCK 伺服器的設定";
+TCK.Label3.Title   = "選擇伺服器設定來安裝 TCK 伺服器";
+TCK.Label4.Title   = "您必須先填記伺服器資料表才可使用伺服器設定";
+TCK.FrameSetupType.Title  = "選擇 TCK 設定型式";
+TCK.FrameSetupType.RBNoServer.Title = "無伺服器設定";
+TCK.FrameSetupType.RBServer.Title = "主伺服器設定";
+TCK.FrameSetupType.RBClient.Title = "從伺服器設定";
+TCK.FrameSetupInfo.Title  = "主從伺服器資訊";
+TCK.FrameSetupInfo.LabelServerName.Title =" 伺服器名稱 :";
+TCK.FrameSetupInfo.LabelServerPort.Title =" 伺服器埠:";
+TCK.FrameSetupInfo.CheckTCKPort.Title ="通訊埠開放時檢查";
+TCK.FrameSetupInfo.CBTCKBoot.Title ="開機時啟動 TCK 伺服器"; 
+ErrWndTCK.Title = "Error"; 
+
+//---------------------------------------------------------------------------
+//  METASEARCH
+//---------------------------------------------------------------------------
+
+Metasearch.Title         = "/p1 /p2 MetaSearch 組立";
+Metasearch.Label1.Title     = "\n";
+Metasearch.Label2.Title     = "選擇 MetaSearch 組立";
+Metasearch.Label3.Title     = "\n";
+Metasearch.MetaSServerLabel.Title="MetaSearch 伺服器名稱: ";
+Metasearch.MetaSPortLabel.Title="MetaSearch 伺服器 port 號碼: ";
+Metasearch.MetaSEnableProxyCheck.Title ="啟動 Proxy";
+Metasearch.FrameMetasearch.MetaSProxyHNLabel.Title="Proxy 主機名稱:";
+Metasearch.FrameMetasearch.MetaSProxyLoginLabel.Title="Proxy 簽入名稱:";
+Metasearch.FrameMetasearch.MetaSProxyPasswdLabel.Title="Proxy 密碼:";
+Metasearch.FrameMetasearch.MetaSProxyPortLabel.Title="Proxy port 號碼:";
+Metasearch.FrameMetasearch.MetaSProxyDNLabel.Title="下列定義域不使用 proxy (使用直列來分割本體):";
+Metasearch.MetaSMailServerLabel.Title="郵件伺服器名稱: ";
+Metasearch.MetaSMailPortLabel.Title="郵件伺服器 port 號碼: ";
+Metasearch.MetaSLanguageLabel.Title=" Metasearch 使用者介面使用語言: ";
+ErrWndMetasearch.Title = "錯誤"; 
+Metasearch.Lang1="英文";
+Metasearch.Lang2="法文";
+Metasearch.Lang3="德文";
+Metasearch.Lang4="日文";
+Metasearch.Lang5="中文";
+Metasearch.Lang6="韓文";
+Metasearch.Lang7="義大利文";
+Metasearch.MetaSAdminEmailLabel.Title="管理者 e-mail:";
+Metasearch.MetaSTimeToLaunchLabel.Title="載入自動搜尋時間:";
+Metasearch.MetaSSnapShotPortLabel.Title="Snapshot 搜尋引擎埠號碼:";
+
+
+//---------------------------------------------------------------------------
+//   COMMUNICATION PORTS
+//---------------------------------------------------------------------------
+
+V5Run.Title       = "/p1 /p2 選擇溝通埠";
+V5Run.Label1.Title   = "達梭系統軟體需要保留";
+V5Run.Label2.Title   = "的溝通埠 \n";
+V5Run.Label3.Title   = "如果您要使用預設值, 請按下一步";
+V5Run.Label4.Title   = "\n";
+V5Run.Label5.Title   =  "\n";
+V5Run.Label6.Title   = "\n";
+V5Run.CheckUpdateServices.Title ="設定溝通埠 (強烈建議) \n";
+V5Run.FrameV5Run.Title  = "溝通埠 ";
+V5Run.FrameV5Run.PortLabelCatiav5bb.Title = "主幹程序預留埠 \n";
+V5Run.FrameV5Run.PortLabelCatiav5run.Title = "自動開啟主幹程序預留埠 \n";
+V5Run.FrameV5Run.PortLabelCATDeviceBroker.Title = "週邊設備中斷預留埠 \n";
+ErrWndV5Run.Title = "錯誤";
+ErrWndV5RunPort.Text = "無效的埠碼 :/p1. 埠碼須大於或等於 /p2\n";
+ErrWndV5RunPortMax.Text = "Invalid port number: /p1. Port number must be less than or equal to /p2\n";
+ErrWndV5RunPortNotFree.Text = "埠碼 /p1 忙碌中. \n 您必須指定一個空的埠. \n 您可使用埠碼 /p2";
+ErrEqualPorts.Text=" 所指定的三個埠碼必須都不同 \n";
+
+//---------------------------------------------------------------------------
+//   DATA DIRECTORIES
+//---------------------------------------------------------------------------
+
+DataDirectories.Title       = "/p1 /p2 資料目錄選擇";
+DataDirectories.FrameDataDirectories.DataDJavaHomeLabel.Title="請輸入 Java Home 路徑                       ";
+DataDirectories.FrameDataDirectories.DataDSharedWBLabel.Title = "請輸入 SharedWorkbook 資料儲存目錄";
+DataDirectories.FrameDataDirectories.DataDMetasearchLabel.Title="請輸入 Metasearch 資料儲存目錄";
+DataDirectories.FrameDataDirectories.DataDPublishLabel.Title="請輸入 Publish 資料儲存目錄";
+ErrWndDataDirectories.Title = "錯誤";
+
+
+//---------------------------------------------------------------------------
+//   CUSTOM SHORTCUT CREATION ( WIndows Only)
+//---------------------------------------------------------------------------
+
+Shortcut.Title       = "/p1 /p2 Custom Shortcut Creation";
+Shortcut.Label1.Title   ="Setup will create a startup icon on the desktop and entries in the Start Menu";
+Shortcut.Label2.Title   = "\n";
+Shortcut.Label3.Title   = "\n";
+Shortcut.Label4.Title   = "You can decide not to create any of these items by unchecking the appropriate Check Button";
+Shortcut.Label5.Title   = "\n";
+Shortcut.Label6.Title   = "\n";
+Shortcut.CheckShortcut.Title ="Creates a Startup icon on the desktop";
+Shortcut.CheckShortcutMenu.Title ="Creates a Startup shortcut in the Start Menu";
+Shortcut.CheckToolsMenu.Title ="Creates administrative tools entries in the Start Menu";
+
+//---------------------------------------------------------------------------
+//   ONLINE DOCUMENTATION ( Windows only)
+//---------------------------------------------------------------------------
+
+Documentation.Title       = "/p1 /p2 Select Documentation";
+Documentation.Label1.Title   = "If you have the /p1 /p2 Online Documentation CD-ROM,you can choose to install it";
+Documentation.Label2.Title   ="\n";
+Documentation.Label3.Title   = "\n";
+Documentation.CheckDocumentation.Title ="I want to install Online Documentation";
+//---------------------------------------------------------------------------
+//   ENTERDISK( Windows only)
+//---------------------------------------------------------------------------
+
+EnterDisk.Title       = "/p1 /p2 Enter Documentation CD-ROM";
+EnterDisk.Label1.Title   = "If you still want to set up the documentation, replace the product CD-ROM with the documentation CD-ROM  and ";                          
+EnterDisk.Label2.Title   = "press Next";
+EnterDisk.Label3.Title   = "If not, press Cancel to end the installation";
+EnterDisk.Label4.Title   = "You can also install the documentation by specifying another drive or folder ";
+EnterDisk.Label5.Title   = "\n";
+EnterDisk.Label6.Title   = "\n";
+EnterDisk.Label7.Title   = "\n";
+EnterDisk.FrameDisk.BrowseDiskValue.Title ="Browse...";
+ErrLaunchSetupDoc = "Setup failed to launch /p1\n";
+ErrBadCDROMDoc = "/p1 is not a correct path to install the documentation\n";
+ErrWndDoc.Title = "Error";
+
+//---------------------------------------------------------------------------
+//  RECAP
+//---------------------------------------------------------------------------
+
+Resume.Title              = "/p1 /p2 開始複製檔案";
+Resume.Label1.Title          = "設定程式已收集足夠資訊,來開始複製檔案.";
+Resume.Label2.Title          = "\n";
+Resume.Label3.Title          = "如果您要重新檢視或修改任何設定請按 上一步.";
+Resume.Label4.Title          = "如您滿意目前的設定請按 安裝 來開始複製檔案.";
+Resume.Label5.Title          = "\n";
+Resume.SettingLabel.Title    = "目前的設定";
+Resume.ProductName.Title     = "/p1 /p2";
+Resume.ProductNameGASP.Title     = "/p1 /p2 with Service Pack level /p3";
+Resume.DestinationName.Title = "目的地目錄";
+Resume.EnvironmentName.Title = "環境檔案名稱";
+Resume.SpaceUsed.Title       = "所需空間 : /p1 KB";
+Resume.SpaceAvail.Title      = "可用空間 : /p1 KB";
+Resume.ChosenLang.Title ="安裝特定語言檔案和字型:";
+Resume.ChosenNone.Title ="未新增特定語言檔案和字型";
+Resume.ChosenFrench.Title= "法文檔案";
+Resume.ChosenGerman.Title= "德文檔案";
+Resume.ChosenItalian.Title= "義大利文檔案";
+Resume.ChosenJapanese.Title= "日文檔案";
+Resume.ChosenSiChinese.Title= "簡體中文檔案";
+Resume.ChosenKorean.Title= "韓文";
+Resume.ChosenFonts.Title ="已安裝語言索引字型";
+Resume.CatiaInfo.Title       = "CATIA V5 資訊:";
+Resume.CatiaInfoNo.Title       = "沒有 CATIA V5 資訊:";
+Resume.CatiaInfoPath.Title       = "安裝路徑: /p1";
+Resume.CatiaInfoEnvPath.Title       = "環境路徑: /p1";
+Resume.CatiaInfoEnvName.Title       = "環境檔案: /p1";
+Resume.OrbixConfig.Title     = "Orbix 組態";
+Resume.OrbixDaemonPort.Title = "Orbix 埠碼 /p1";
+Resume.OrbixDaemonBootInit.Title = "開始時執行 Orbix 程序";
+Resume.Timeout.Title = "伺服器時間超過: /p1 mn";
+Resume.SetupVaultClient="ENOVIA Vault Client 設定需求";
+Resume.NoSetupVaultClient="ENOVIA Vault Client 設定未需求";
+Resume.WebAppli="Web Application Configuration";
+Resume.WebAppli.None="Selected application server: None";
+Resume.WebAppli.Websphere="Selected application server: Websphere";
+Resume.WebAppli.DotNet="Selected application server: IIS with .NET framework";
+Resume.NetIIS.RootURI="Applicatiom root URI: /p1";
+Resume.PathEnvCatiaV4.Title = "CATIA V4 管理者根目錄 : /p1";
+Resume.PathEnvVPM1.Title = "ENOVIA VPM1 管理者根目錄 : /p1";
+Resume.LibCatiaV4.Title="CATIA V4 版期 : /p1"; 
+Resume.TCKGeneral.Title="工具組態管理";
+Resume.TCKServerMode.Title="TCK 伺服器模式 :/p1";
+Resume.TCKServerName.Title="TCK 伺服器名稱 :/p1";
+Resume.TCKServerPort.Title="TCK 伺服器埠碼 :/p1";
+Resume.TCKBootInit.Title="開始時執行 TCK伺服器";
+Resume.RunServerFirstPort.Title  = "程序執行伺服器開始埠碼 /p1";
+Resume.RunServerRangePort.Title  = "程序執行伺服器範圍 /p1";
+Resume.DisableUpdateServices.Title = "溝通埠未設定 \n";
+Resume.V5RunGeneral.Title = "溝通埠";
+Resume.PortLabelCatiav5bb.Title  = "主幹程序預留埠 : /p1";
+Resume.PortLabelCatiav5run.Title  = "自動開啟主幹程序預留埠 : /p1";
+Resume.PortLabelCATDeviceBroker.Title = "週邊設備中斷預留埠 : /p1";
+Resume.MetasearchGeneral.Title="MetaSearch 組立:";
+Resume.MSServer.Title="MetaSearch 伺服器: /p1";
+Resume.MSPort.Title="MetaSearch 伺服器 port 號碼: /p1";
+Resume.MSEnableYES.Title="啟動 Proxy: 是";
+Resume.MSEnableNO.Title="啟動 Proxy: 否";
+Resume.MSProxyHost.Title="Proxy 主機名稱: /p1";
+Resume.MSProxyLogin.Title="Proxy 簽入: /p1";
+Resume.MSProxyPasswd.Title="Proxy 密碼: ******";
+Resume.MSProxyPort.Title="Proxy port 號碼: /p1";
+Resume.MSProxyDomains.Title="請不要使用下列 proxy 定義 :\n /p1";
+Resume.MSMailServer.Title="郵件伺服器名稱 : /p1";
+Resume.MSMailPort.Title="郵件伺服器 port 號碼: /p1";
+Resume.MSLang1.Title="metasearch 使用者介面語言: 英文";
+Resume.MSLang2.Title="metasearch 使用者介面語言: 法文";
+Resume.MSLang3.Title="metasearch 使用者介面語言: 德文";
+Resume.MSLang4.Title="metasearch 使用者介面語言: 日文";
+Resume.MSLang5.Title="metasearch 使用者介面語言: 中文";
+Resume.MSLang6.Title="metasearch 使用者介面語言: 韓文";
+Resume.MSLang7.Title="metasearch 使用者介面語言: 義大利文";
+Resume.MSAdminEmail.Title="管理者 e-mail: /p1";
+Resume.MSTimeToLaunch.Title="載入自動搜尋時間: /p1";
+Resume.MSSnapShotPort.Title="Snapshot 搜尋引擎埠號碼: /p1";
+Resume.InventionGeneral.Title="開創機器軟體 :";
+Resume.IMPort.Title="埠碼 : /p1";
+Resume.DataDirectoriesGeneral.Title = "資料目錄選擇:";
+Resume.DataDirectories.JavaHome.Title="Java Home 路徑 : /p1";
+Resume.DataDirectories.SHWBPath.Title="分享工作資料的儲存目錄 : /p1";
+Resume.DataDirectories.MetasearchPath.Title=" MetaSearch 資料的儲存目錄 : /p1";
+Resume.DataDirectories.PublishDataPath.Title=" Publish 資料的儲存目錄 : /p1";
+Resume.Shortcut.NoIcon="No icon will be created on the desktop";
+Resume.Shortcut.NoShortcut="No shortcut will be created in the start menu";
+Resume.Shortcut.NoTools="No tools will be created in the start menu";
+Resume.InstallDocumention="I want to install online Documentation";
+Resume.BCancel                = "Install";
+WantStopLumServer.Msg ="A running LUM server has been detected preventing correct setup.\nStop it now and then click the Yes button to continue installation.\nIf you want to stop it later, click on the No button and the installation will be interrupted.\n";
+WantStopLumServer.Title="A LUM server is running.";
+//---------------------------------------------------------------------------
+// COPY FILES 
+//---------------------------------------------------------------------------
+
+Transfer.Title         = "/p1 /p2 設定";
+FrameLab.Label1.Title  = "複製檔案...";
+FrameLab.Label2.Title  = "\n";
+FrameLab.Label3.Title  = "\n";
+Transfer.Pourcent = "/p1 /p2 Setup : /p3";
+Transfer.BCancel       = "取消" ;
+QuestionExit.Title="Exit Setup";
+QuestionExit.Text="Do you want to quit the setup?\nclick Yes to quit.\nclick No to continue the installation.";
+
+//---------------------------------------------------------------------------
+//   ERROR MESSAGES: COPY FILES  
+//---------------------------------------------------------------------------
+
+ErrWndTransfer.Title = "錯誤";
+ErrWndTransfer.Text  = "複製檔案錯誤. \n 請聯絡系統管理員. \n";
+ErrWndCustomize.Title = "錯誤";
+ErrWndCustomize.Text  = "設定環境變數 /p1 /p2 錯誤.";
+ErrWndCheckCATIAIntegrity.Title = "錯誤";
+ErrWndCheckCATIAIntegrity.Text = "完整性檢查失敗. \n 若需更多資訊, 請聯絡 /p1\n";
+ErrWndCheckIntegrity.Log = "完整性檢查失敗. \n";
+ErrWndEnvName.Title = "錯誤";
+ErrWndEnvName.Text = "檔案 /p1 尚未存在 \n";
+ErrWndEnvPathName.Title = "錯誤";
+ErrWndEnvPathName.Text = "開啟 /p1 檔案失敗 \n";
+ErrWndServicePack.Title = "警告";
+ErrWndServicePack.Text = "有些您剛安裝的軟體是不正確的. \n 您必須重新安裝 Service Pack /p1\n";
+ErrWndNothingToUnload.Title = "錯誤";
+ErrWndNothingToUnload.Text = "沒有文件可複製...?\n";
+ErrWndInterruptButton.Title = "錯誤";
+ErrWndInterruptButton.Text = "";
+InformationWindow.ErrWndInterruptButton.Title = "中斷程序...\n";
+ErrWndAccessToc.Title = "錯誤";
+ErrWndAccessToc.Text = "/p1 未載入\n";
+ErrWndOpenPresent.Title = "錯誤";
+ErrWndOpenPresent.Text = "無法開啟 /p1 : /p2";
+ErrWndOpenToc.Title = "錯誤";
+ErrWndOpenToc.Text = "無法開啟 /p1 : /p2";
+
+//---------------------------------------------------------------------------
+// BEFORE FINISH
+//---------------------------------------------------------------------------
+ErrSetcatenv="環境變數設定錯誤\n";
+ErrWndEnoviaSetupKO.Title     = "錯誤";
+ErrWndEnoviaSetupKO.Text      = "一旦您修正 ENOVIA 資料庫設定錯誤, \n 請重新執行命令 :\n\n/p1\n";
+
+ErrWndEnoviaSetupCancel.Title = "資訊";
+ErrWndEnoviaSetupCancel.Text  = "您已停止 ENOVIA 資料庫設定. \n 如您待會要再執行請再載入指令: \n\n/p1\n";
+ErrWndOpenServicesFile.Text = "設定程式無法更新 /p1.\n 無法開啟檔案 :/p2.\n";
+ErrWndWriteServicesFile.Text = "設定程式無法更新 /p1.\n 寫入失敗 :/p2.\n";
+ErrWndRenameServicesFile.Text = "設定程式無法更新 /p1.\n 更名失敗:/p2.\n";
+ErrWndAllocServicesFile.Text = "設定程式無法更新 /p1.\n 無法在記憶體中讀取檔案 : 定位 /p2 bytes 失敗 .\n";
+OKWriteServicesFile.Text= "成功更新 /p1\n";
+
+//---------------------------------------------------------------------------
+//  LOG FILE ERROR 
+//---------------------------------------------------------------------------
+QtnWndViewLogErrorPostInstall.Title = "問題 ?";
+QtnWndViewLogErrorPostInstall.Text  = "安裝時發生一些問題. \n 所有錯誤記錄在檔案 /p1 中. \n 您要讀取錯誤記錄檔嗎 ?";
+WndLogError.Title           ="記錄檔錯誤";
+ErrWndOpenLogFileError.Title = "錯誤";
+ErrWndOpenLogFileError.Text = "開啟錯誤記錄檔 /p1 失敗 \n/p2";
+//---------------------------------------------------------------------------
+//  ENOVIADBSETUP
+//---------------------------------------------------------------------------
+
+Enoviadbsetup.Title     = "Enoviadbsetup";
+Enoviadbsetup.Label1.Title = "\n";
+Enoviadbsetup.Label2.Title  ="EnoviaDbSetup is running ..." ;
+Enoviadbsetup.Label3.Title = "\n" ;
+Enoviadbsetup.Label4.Title = "Please wait until completion..." ;
+Enoviadbsetup.Label5.Title = "\n";
+
+//---------------------------------------------------------------------------
+//  WAITINSTALLDOC
+//---------------------------------------------------------------------------
+
+WaitInstallDoc.Title     = "Online Documentation Setup";
+WaitInstallDoc.Label1.Title ="\n";
+WaitInstallDoc.Label2.Title ="Online Documentation Setup is running ..." ;
+WaitInstallDoc.Label3.Title = "\n" ;
+WaitInstallDoc.Label4.Title = "Please wait until completion...\n" ;
+WaitInstallDoc.Label5.Title = "\n";
+//---------------------------------------------------------------------------
+// CHANGECDROM 
+//---------------------------------------------------------------------------
+NotifyChangeCD.Title="請輸入下一片 CD-ROM";
+NotifyChangeCD.MsgChange=" 請移除目前的 CD-ROM  且插入 CD-ROM 號碼 /p1\n";
+NotifyChangeCD.Error="CD-ROM 更換錯誤";
+NotifyChangeCD.ErrorChange="您沒有插入正確的 CD-ROM\n";
+ErrorNotify="Error";
+WarningNotify="Warning";
+
+//---------------------------------------------------------------------------
+//  FINISH 
+//---------------------------------------------------------------------------
+Finish.Title        = "/p1 /p2 安裝完成";
+Finish.LabelInterrupt1.Title = "安裝被中斷.";
+Finish.LabelInterrupt2.Title = "\n";
+Finish.LabelInterrupt3.Title = "更多資訊請參閱記錄檔 /p1";
+Finish.LabelInterrupt4.Title = "\n";
+Finish.LabelInterrupt5.Title = "\n";
+Finish.LabelTransferKO1.Title = "設定轉移已失敗.";
+Finish.LabelTransferKO2.Title = "\n";
+Finish.LabelTransferKO3.Title = "更多資訊請參閱記錄檔 /p1";
+Finish.LabelTransferKO4.Title = "\n";
+Finish.LabelTransferKO5.Title = "\n";
+Finish.LabelOKStart1.Title = "設定程式已成功安裝 /p1 /p2 在您的電腦上.";
+Finish.LabelOKStart2.Title = "\n";
+Finish.LabelOKStart3.Title = "\n";
+Finish.LabelOKStart4.Title = "\n";
+Finish.LabelOKStart5.Title = "\n";
+Finish.LabelENOVIAKO1.Title = "一旦您更正 ENOVIA 資料庫設定錯誤,";
+Finish.LabelENOVIAKO2.Title = "載入命令:";
+Finish.LabelENOVIAKO3.Title = "\n";
+Finish.LabelENOVIAKO4.Title = "/p1";
+Finish.LabelENOVIAKO5.Title = "\n";
+Finish.LabelENOVIACancel1.Title = "您已停止 ENOVIA 資料庫設定";
+Finish.LabelENOVIACancel2.Title = "如您待會要再執行請再載入指令 :";
+Finish.LabelENOVIACancel3.Title = "\n";
+Finish.LabelENOVIACancel4.Title = "/p1";
+Finish.LabelENOVIACancel5.Title = "\n";
+Finish.LabelENOVIANoStart1.Title = "設定程式已成功安裝 /p1 /p2 在您的電腦上.";
+Finish.LabelENOVIANoStart2.Title = "\n";
+Finish.LabelENOVIANoStart3.Title = "\n";
+Finish.LabelENOVIANoStart4.Title = "\n";
+Finish.LabelENOVIANoStart5.Title = "\n";
+Finish.RunCheck.Title = "我想現在載入 /p1 /p2 ";
+Finish.RunCheckWAS.Title = "我想現在載入 WAS 組態設定程式";
+Finish.BCancel = "完成";
+
+//---------------------------------------------------------------------------
+//  FINISHREBOOT - Windows Only 
+//---------------------------------------------------------------------------
+FinishReboot.Title        = "/p1 /p2 Setup Complete";
+FinishReboot.Label1.Title="Setup has finished copying files to your computer";
+FinishReboot.Label2.Title ="Before you can use /p1 /p2, you must restart your computer.";
+FinishReboot.Label3.Title ="\n"; 
+FinishReboot.Label4.Title ="\n";
+FinishReboot.FrameReboot.RBReboot.Title  ="Yes, I want to restart my computer now";
+FinishReboot.FrameReboot.RBNoReboot.Title ="No, I will restart my computer later"; 
+FinishReboot.BCancel = "Finish";
+
+
+//---------------------------------------------------------------------------
+//   ERROR MESSAGES: FINISH  
+//---------------------------------------------------------------------------
+
+ErrWndLaunch.Title   = "錯誤";
+ErrWndLaunch.Text    = "載入 /p1 /p2 失敗 \n";
+
+//---------------------------------------------------------------------------
+//  EXIT 
+//---------------------------------------------------------------------------
+
+Exit.Title        = "退出設定程式";
+Exit.Label1.Title = "設定未完成. 如您現在退出設定程式, 此";
+Exit.Label2.Title = "程式不會被安裝.";
+Exit.Label3.Title = "您可以待會再安裝來完成";
+Exit.Label4.Title = "安裝.";
+Exit.Label5.Title = "\n";
+Exit.Label6.Title = "要繼續安裝程式, 請按一下 繼續.";
+Exit.Label7.Title = "\n";
+Exit.Label8.Title = "要退出設定程式, 請按一下退出.";
+Exit.BCancel      = "退出設定程式";
+Exit.BOK          = "繼續";
+
+//-----------
+// ERRORS
+//-----------
+ErrInterrupt="訊號 /p1 中斷命令 \n";
+SetupInterrupted = "Setup has been interrupted\n";
+
+
+
+
+
+//---------------------------------------------------------------------------
+// BATCH
+//---------------------------------------------------------------------------
+ErrHotFixInstalled="在安裝新增組態或產品前, 您必須先移除暫時修正檔 \n";
+ErrSPKInterrupted="Service pack /p1 installation has been interrupted.\nYou need to complete service pack installation before installing additionnal configurations and(or) products\n";
+HomeCATIAV4="CATIA V4 的系統管理目錄 :/p1\n";
+HomeENOVIA="ENOVIA VPM1 的系統管理目錄 :/p1\n";
+ErrLicOptionIgnored="選項 -lic 被產品線 /p1 忽略 \n";
+InventionMachine="創新機械軟體 :/p1\n";
+ErrWndExtractTar.Text="無法從 tar 檔案 /p2 萃取 /p1 檔案 \n";
+CheckTmpDir.Text="請檢查 /p1 上的可用空間 \n";
+ErrWndOpenControlFile.Text="無法開啟檔案 /p1 - /p2\n";
+ErrWndDestination.Title = "錯誤";
+ErrorBatchDirUnloadNotExist.Text = "目錄 /p1 不存在. 您可以建立它或使用 新目錄 選項 \n";
+ErrorBatchReferenceNotExistHelp.Text ="表列在 CD片上的所有組態和產品, 使用清單選項 \n 欲指定表列組態和產品,請使用 -l \"list_to_unload\" 選項 \n 如 : -l \"AL2.slt ASD.prd KWA.prd\"\n";
+ErrorBatchExtraProductNotExistHelp.Text ="To list all references of extra-products on the CD-ROM, use the -list option\nTo specify a list of extra-products, use -lextra_prd \"list_to_unload\" option\nExample : -lextra_prd \"E5I.prd\"\n";
+ErrorBatchReferenceAlreadyUnload.Text = "警告 : 參考 /p1 已載入 \n";
+ErrorBatchExtraProductAlreadyUnload.Text = "WARNING: Extra-product /p1 is already unloaded\n";
+ErrorBatchOptionExtraProductIgnored.Text="WARNING: Option -allextra_prd is ignored since no extra-product can be unloaded\n";
+ErrorBatchReferenceNotExist.Text = "錯誤 :  參考 /p1 在 CD-ROM 上未安裝 \n";
+ErrorBatchExtraProductNotExist.Text = "Error : Reference /p1 is unknown on the CD-ROM\n";
+ErrorBatchExtraProductNotInstallable.Text="You must first unload a configuration or a product including /p1 before being able to install this extra-product\n";
+ErrorBatchIncompatibleOption.Text = "選項 /p1 和 /p2 無法同時使用 \n";
+WarningBatchIncompatibleOptionwithComplete.Text="Option /p1 is ignored for Complete installation\n"; 
+ErrorBatchNotValidOption1.Text ="/p1 不是有效選項 \n";
+ErrorBatchNotValidOption2.Text ="/p1 /p2 不是有效選項 \n";
+ErrorBatchNotValidOption3.Text ="/p1 /p2 /p3 不是有效選項 \n";
+ErrorBatchMissingParameterWithOption.Text="Option /p1 cannot be used alone\n";
+ErrorBatchMissingPorts.Text="You must specify backbone ports with option -backbonePorts\n";
+ErrorBatchBadOptions.Text = "不佳選項 :\n";
+ErrorBatchMissOption.Text = "您必須最少安裝一項產品或組態. 請使用 -l 或-all 選項來指定您要載入的組態或產品 \n";
+ErrorBatchOptionAndDir.Text = "選項 /p1 必須有一完整路徑 \n";
+ErrorBatchNoWriteEnvDir.Text = "選項 [-D /p1] 不正確. \n 設定程式沒有寫入 /p2 權利 \n";
+ErrorBatchNoWriteDir = "選項 [/p1 /p2] 不正確. \n 設定程式無法寫入 /p3\n";
+ErrorBatchOptionCheckEnv.Text = "選項 -env 必須依循 new 或 replace \n";
+ErrorBatchOptionTCKMode.Text = "選項 -TCK 模式必須依循 NoServer,Client 或 Server \n";
+ErrorBatchCheckEnvRequired.Text = "環境檔案 /p1 已存在. 您必須使用 \"-env replace|new\" 來選項替換舊的或建立新的環境 \n";
+ErrorBatchNothingToUnload.Text = "錯誤 : 所有以 -l 選項表列的組態和產品皆已載入 \n";
+ErrorBatchTransferKO1.Text = "轉移 KO - 回覆碼 = /p1\n";
+ErrorBatchTransferKO2.Text = "轉移 KO - 檔案 /p1 未找到 \n";
+ErrorBatchAddProductAndD.Text = "警告 : 當您增加產品或組態至已存的安裝時 -D 是被忽略的 \n";
+ErrorBatchAddProductAndEnv.Text = "警告 : 當您增加產品或組態至已存的安裝時 -env 是被忽略的 \n";
+ErrorBatchUpdatePRESENT.Text = "更新目前檔案 \n/p1\n";
+ErrorBatchJavaHome.Text = "使用 -JavaHome 選項或新增 JAVA_HOME 變數至您的環境中 \n";
+ErrorBatchOrbixOptionUsefull.Text = "警告 : Orbix 選項(-orbixport, -orbixbase, -orbixrange, -orbixboot) 是無用的, 因為 Orbix 不會被安裝 \n";
+ErrorBatchOrbixOptionUsefullNT.Text = "警告 : Orbix 選項(-addUserPrivilegesForOrbix, -orbixbase, -orbixrange) are not useful, because Orbix won't be installed\n";
+ErrBadOrbixPort2   = "Bad value for Orbix daemon port : /p1. Value must be less than /p2\n";
+ErrBadServerBase2  = "Bad value for starting port number for daemon-run servers : /p1. Value must be less than /p2\n";
+ErrBadServerRange2 ="Bad value for Orbix server range : /p1. Value must be less than /p2\n";
+ErrorBatchOptionUseless.Text="WARNING : Option /p1 is ignored\n";
+ErrorBatchTCKOptionUseless.Text = "警告 : TCK 選項 (-TCKMode, -TCKServerName, -TCKServerPort, -TCKBoot) 是無用的, 因為 TCKManagement 不會被安裝 \n";
+ErrorBatchForbiddenOption.Text = "您不可使用選項 -LibCATIAV4 不含 -DirCATIAV4\n";
+ErrorBatchBadLibV4.Text="-libCATIAV4 必須依循V423-1 或 V424-3\n";
+ErrorFreePorts.Text="軟體必需使用空閒的溝通埠, 請檢查選項 -backbonePorts 和 -VRPort \n";
+ErrEqualp1p2p3.Text="請檢查選項 -backbonePorts 和 -VRPort : port3, port4 和 port5 必須有不一樣的數值 \n"; 
+ErrbackboneEqualp1p2.Text="請檢查選項 -backbonePorts: port3 和 port4 必須有不一樣的數值 \n";
+ErrbackboneEqualp1p3.Text="請檢查選項 -backbonePorts: port3 和 port4 必須具有不同於預設的 -VRPort 選項 \n";
+ErrVRPortEqualp3p1.Text="請檢查選項 -VRPort: port5 必須具有不同於 -backbonePorts 的選項 \n"; 
+ErrorBatchBadNoLangParameter.Text="/p1 is not a valid parameter to use with -noLang.Valid parameters are : fr,ge,it,jp,ch,ko,all.\n";
+MsgSolutions = "#SOLUTIONS /p1 /p2\n#==========================================\n";
+MsgProducts      = "\n#PRODUCTS  /p1 /p2\n#==========================================\n";
+MsgExtraProducts = "\n#EXTRA-PRODUCTS  /p1 /p2\n#==========================================\n";
+MsgUnloadCAF="(/p1 of /p2) Unload /p3";
+ErrCmdFailed =" 命令 /p1 失敗.\n";	
+MsgUpdateFile = "更新檔案 /p1\n";
+ErrUpdateFile = "設定程式更新檔案 /p1 失敗 \n";
+ErrCreateDir =" 建立目錄 /p1 失敗 : /p2\n";
+MsgEnoviaDBsetup ="\n 執行 ENOVIA 資料庫設定 \n";
+MsgEnoviaDBsetupOK ="ENOVIA 資料庫設定成功完成 \n";
+MsgEnoviaDBsetupKO ="一旦您更正 ENOVIA 資料庫設定錯誤, \n 請重新執行命令 : /p1\n";
+MsgEnoviaDBsetupCANCEL ="您已停止 ENOVIA 資料庫設定. \n 如您待會要再執行請再載入指令: /p1\n";
+MsgEnoviaDBsetupBatch ="如果您要待會執行 ENOVIA 資料庫設定, \n 請再載入指令 : /p1\n";
+MsgEnoviaDBsetupKO2 ="ENOVIA 資料庫設定失敗 - 回覆碼 = /p1\n";
+MsgCheckIntegrity ="\n 執行檢查設定完整性 \n";
+MsgCheckIntegrityOK = "檢查完整性成功完成 \n";
+MsgInitial ="\n\n 初始安裝  /p1\n"; 
+MsgAdditional ="\n\n 進階組立 和/或 產品安裝 /p1"; 
+MsgEnv = "\ n 環境檔案名稱 : /p1///p2\n";
+MsgV5Run = "\n 溝通埠: \ncatiav5bb :/p1\ncatiav5run :/p2\nCATDeviceBroker : /p3\n";
+MsgUnload = "\n 所選的組態或產品將要安裝 :\n"; 
+MsgListe = "CAF /p1的數目 \n CAF 清單 :/p2 \n";
+MsgPost = "執行 /p1 後安裝 \n";
+ErrPost = "後安裝失敗 - rc=/p1 \n";
+ErrWindow = "更改面板 : \n 面板形式內部錯誤 :/p1\n ";
+ErrLabels = "建立標籤: \n 內部錯誤 : /p1 > /p2\n";
+ErrMaxWindow ="內部錯誤 : NBMAXERRORWINDOW 必須增加. \n 此項錯誤不會顯示在視窗上 :"; 
+ErrWndBadCopy="在批次模式, 您必須複製 CD-ROMs 在相同的目錄 \n";
+ErrCommandFailed="命令 /p1 失敗 \n";
+ErrCommandInterrupted ="命令 /p1 已中斷 \n"; 
+UpdatePRESENTLogInfo="更新檔案 PRESENT\n";
+BatchFailed="批次安裝失敗 : 請參考 /p1\n";
+FileUpdateOK="檔案 /p1 已成功更新";
+BatchPostExeFailed  = "安裝時發生一些錯誤. \n 記錄在檔案 /p1.\n";
+ErrorBatchJavaHomeUseless="選項 -JavaHome 是無效的 \n";
+ErrorBatchnewdirUseless ="選項 -newdir 是無效的, 因為 /p1 和 /p2 目錄已存在 \n";
+ErrorBatchTimeoutUseless.Text="選項 -Timeout 是無效的 \n";
+ErrBatchSyntaxMSServer="選項 -MSServer /p1 是無效的. 有效的選項為 -MSServer Hostname[:Port]\n" ;
+ErrBatchSyntaxMSProxyHost="選項 -MSProxyHost /p1 是無效的. 有效的選項為 -MSProxyHost Hostname[:Port]\n" ;
+ErrBatchSyntaxMSProxyLogin="選項 -MSProxyLogin /p1 是無效的. 有效的選項為 -MSProxyLogin name:password\n" ;
+ErrBatchSyntaxMSMailServer="選項 -MSMailServer /p1 是無效的. 有效的選項為 -MSMailServer Hostname[:Port]\n" ;
+ErrorBatchOptionUselesswithProductLine.Text="選項 /p1 在安裝 /p2 時是無效的 \n";
+ErrorBatchOptionUselessNoFWK.Text="框架工作 /p1 不會被安裝, 故選項 /p2 是無效的 \n";
+ErrorSetcatenv ="命令 [/p1 /p2] 失敗 \n";
+SuccessSetcatenv ="命令 [/p1 /p2] 成功 \n";
+ErrorUpdateEnvDir="更新資料路徑 : 安裝程式在檔案 /p3 中更新 /p1 至 /p2 失敗 \n";
+SuccessUpdateEnvDir="更新資料路徑 : 安裝程式在檔案 /p3 中更新 /p1 至 /p2 成功 \n";
+ErrorInstallFonts ="安裝字型 : 命令 /p1 /p2 失敗 \n";
+SuccessInstallFonts="安裝字型 : 命令 /p1 /p2 成功 \n";
+ErrorRegserver="Regserver :命令 /p1 /p2 失敗 \n";
+SuccessRegserver ="Regserver :命令 /p1 /p2 成功 \n";
+ErrorNetSetup="CATJadDOTNETSetup:Command  /p1 /p2 failed\n";
+SuccessNetSup ="CATJadDOTNETSetup:Command /p1 /p2 was successful\n"; 
+ErrorUpdateMachinist="UpdateMachinist :命令 /p1 /p2 失敗 \n";
+SuccessUpdateMachinist="UpdateMachinist :命令 /p1 /p2 成功 \n";
+ErrorUpdateRade="UpdateRade :命令 /p1 /p2 失敗 \n";
+SuccessUpdateRade="UpdateRade :命令 /p1 /p2 成功 \n";
+Error_NoEnv="環境檔案 /p1 未找到 \n";
+BatchNeedReboot="安裝程式已完全複製檔案至您的電腦中. \n 您必須重新開啟電腦以便執行 /p1 /p2\n.重新開啟後, 請以相同使用者簽入 \n";
+BatchForceReboot="安裝程式 /p1 /p2 已完全複製檔案至您的電腦中.\n 電腦將重新開啟 \n";
+BatchDLLOK="不需更新系統的 Dlls\n";
+MoveDLLfailed = "複製系統的 DLL /p1 失敗 - rc = /p2\n";
+ErrorOption_uIdentMandatory="/p1 軟體已安裝在 /p2 檔案夾中, 您必須使用 -u 和 -ident 選項 \n";
+ErrorBadOption_Extra="You must unload at least one configuration or one product before attempting to install an extra_product\n";
+ErrorOption_uMandatory="/p1 軟體已安裝在 /p2 檔案夾中, 您必須使用 -u 選項 \n";
+Info_IdentIgnored1="選項 -u 未使用, /p1 將為預設安裝目錄 \n 忽略選項 -ident \n";
+ErrorIdentIgnored="警告: 當您新增產品或組合至已存安裝時, -ident 選項將忽略 \n";
+ErrorIdentIgnored2="WARNING: -ident is ignored for the first installation\n";
+ErrorOption_BadIdent="無效值 /p1 :命令必須含有大寫字母或數字 , 且不可超過 20 個字元 \n";
+Info_RunExeIgnored="產品線 /p1 -exe 選項忽略 \n";
+ErrorIdentExists="名稱 /p1 已被上一個安裝使用. 請使用 -ident 選項給與新名稱 \n";
+ErrorIdentMandatory="-ident 選項是主要的 \n";
+ErrorNewdirIgnored="警告: 忽略 -newdir 選項, 因為 /p1 目錄已存在 \n";
+OptionAddPrivilegesIgnoredforProduct="安裝 /p1 時, 選項 -addUserPrivilegesForOrbix 無效 \n";
+ErrMissingPrivileges = "目前使用者的部份權限遺失. \n 未要求新增權限.\n"; 
+ErrAddPrivileges="新增目前使用者權限失敗. \n";
+OKAddPrivileges="新增目前使用者權限成功. \n";
+OptionAddPrivilegesIgnored="因使用者已具權限, 將忽略 -addUserPrivilegesForOrbix 選項. \n";
+BatchErrDotNetNotInstalled="You cannot use option -rootURI if .NET Framework 1.1 is not installed\n";
+BatchErrNoCAFAdmin="Product /p1 cannot be installed alone,you need to choose an additional configuration.\n";
+BatchErrNoCAFAdmin2="These products cannot be installed alone,you need to choose an additional configuration.\n";
+ErrWndTimeout = "Incorrect timeout value : /p1. Timeout value can range from 2 to 35700\n";
+//----------------------
+// HELP
+//---------------------
+HelpUsage.Text = "使用程度:";
+HelpUnload.Text        ="-u unload_dir                    : 指定預設目錄. 預設目錄為 /p1\n";
+/HelpUnloadMandatory.Text      ="-u unload_dir             : 指定載入目錄.此選項為必須的 \n";
+HelpIdent.Text         ="-ident IDENT                     : 為多重安裝指定名稱 \n";
+HelpNewDir.Text        ="-newdir                         :Creates the unload and environment directories if they don't exist.\n";
+HelpDirEnv.Text        = "-D env_dir                      : 指定環境目錄. 預設環境目錄為 /p1\n";
+HelpLic.Text           = "-lic pathname.LIC               : 輸入軟體使用權檔案. \n"; 
+HelpEnv.Text           = "-env new|replace                : 如果環境檔案已存在, 您可選擇更新或建立新的. \n";
+HelpExe.Text           = "-exe                            : 安裝完成時自動開啟 CATIA. \n";
+HelpSilent.Text        = "-s                              : 安靜模式. \n";
+HelpVerbose.Text       = "-v                              : 說明模式 .\n";
+HelpHelp.Text          = "-h                              : 顯示求助. \n";
+HelpList.Text          = "-list                           : 表列 CD-ROM上的組態和產品. \n";
+HelpAll.Text           = "-all                            : 載入 CD-ROM上所有的組態和產品. \n";
+HelpAllextra.Text      ="-allextra_prd                   :Unloads all the extra-products included by the configurations and products that will be installed or that are already installed.\n";
+HelpL.Text             = "-l list_to_unload               : 指定選擇的組態和產品來載入. \n";
+HelpLextra.Text        ="-lextra_prd list_to_unload      :Specifies a list of extra-products to unload.These extra-products must be included by the configurations and products that will be installed or that are already installed\n";
+HelpOrbixPort.Text          = "-orbixport port1           : 指定 Orbix 程序埠號碼 \n";
+HelpOrbixBase.Text    = "-orbixbase port2                : 指定執行程序伺服器開始埠號碼 \n";
+HelpOrbixRange.Text   = "-orbixrange range               : 指定執行程序伺服器範圍 \n";
+HelpOrbixBoot.Text      = "-orbixboot                      : 重新開機時自動開啟 Orbix 程序 \n";
+HelpAddUserPrivileges.Text  ="-addUserPrivilegesForOrbix      : 若使用者缺少權限時, 新增目前使用者權限 \n";
+HelpTimeout.Text            ="-Timeout time                   : 指定伺服器超過時間. 範圍可以由 2 至 40000 分鐘 \n";
+HelpbackbonePorts.Text      = "-backbonePorts port3 port4      : 為 backbone 指定溝通埠 - port3 的預設值和 port4 是 /p1 和 /p2\n";
+HelpVRPort.Text   =              "-VRPort port5                   : 指定週邊設備中斷器的溝通埠 - port5 的預設值是 /p1\n";
+HelpNoSetupPorts.Text      = "-noSetupPorts                   : 指定溝通埠未設定 \n";
+HelprootURI.Text       ="-rootURI myRootURI              :Specifies the rootURI to contact the application\n";
+HelpTCKMode.Text  =      "-TCKMode NoServer|Client|Server : 指定您要存取工具的方式, 必須是 NoServer,Client 或 Server 的模式 \n";
+HelpTCKServerName.Text = "-TCKServerName name                  : 指定伺服器名稱, 以模式 =NoServer 是無效的 \n";
+HelpTCKServerPort.Text =          "-TCKServerPort port                  : 指定 TCK 伺服器溝通埠號碼  ,以模式 =NoServer 是無效的 \n";
+HelpTCKServerBoot.Text =               "-TCKBoot                             : 重新開 TCK 時自動開啟 , 以模式 =NoServer 是無效的 \n";
+HelpDirCATIAV4.Text    =               "-DirCATIAV4                     : 為管理者根目錄指定 catiaV4 路徑 \n";
+HelplibCATIAV4.Text="-libCATIAV4  V423-1/V424-3      : 指定使用 CATIA V4 的版本是 V423-1 或 V424-3\n";
+HelpDirENOVIAVPM1.Text    =               "-DirVPM1                        : 為管理者根目錄指定 VPM1 路徑 \n";
+OptionIgnored.Text ="選擇 /p1 忽略 \n";
+FilesUptodate.Text ="檔案 /etc/services 和 /etc/inetd.conf 已更新 \n";
+HelpMSServer.Text      ="-MSServer Hostname[:Port]       : 指定 MetaSearch 伺服器和通信埠 \n";
+HelpMSEnableProxy.Text ="-MSEnableProxy                  : 存取 網際網路使用搜尋引擎時須啟動 3d com MetaSearch 使用者 來通過防火牆 \n";
+HelpMSProxyHost.Text   ="-MSProxyHost Hostname[:Port]    : 指定 3d com proxy 伺服器和通信埠 \n";
+HelpMSProxyLogin.Text  ="-MSProxyLogin login:password    : 指定 3d com proxy 簽入名稱和密碼 \n";
+HelpMSMailServer.Text  ="-MSMailServer Hostname[:Port]   : 指定郵件伺服器和通信埠\n";
+HelpMSLang.Text        ="-MSLang en|fr|de|ja|zh|ko|it    : 指定 MetaSearch 使用者介面所使用語言 english|french|german|japanese|chinese|korean|italian\n";
+HelpMSProxyDomains.Text="-MSProxyDomains list_domains    : 特殊定義不可使用 PROXY , 請使用 | 來分隔名稱 \n";
+HelpMSSnapshotPort.Text="-MSSnapshotPort port            : 指定 Snapshot 搜尋引擎埠號碼 \n"; 
+HelpMSTime.Text        ="-MSTime time (HH:MM)            : 指定何時載入自動搜尋 \n"; 
+HelpMSEmail.Text       ="-MSEmail e-mail                 : 指定管理者 e-mail\n";
+HelpShWBPath.Text      ="-ShWBPath Path                  : 為分享工作資料來指定儲存目錄 \n";
+HelpMSPath.Text        ="-MSPath Path                    : 為 MetaSearch 資料來指定儲存目錄 \n";
+HelpPublishPath.Text   ="-PublishPath path               : 為 Publish 資料來指定儲存目錄\n"; 
+HelpJavaHome.Text       ="-JavaHome Path                 : 指定 JavaHome 路徑\n";
+HelpReboot.Text            ="-noreboot                   : 如需要系統不會重開 \n";
+HelpCatiaV5.Text          ="[-CatiaV5Info/-CatiaV5Path Path -CatiaV5EnvPath Path -CatiaV5EnvName EnvName] : 用來做 CATIA V5 - ENOVIA V5 LCA 間交換用 \n";
+HelpCatiaV5Info.Text      = "-CatiaV5Info                 : 可獨立執行, 其它參數將使用預設值 \n";
+HelpCatiaV5Path.Text      ="-CatiaV5Path Path             : 指定 CATIA V5 安裝路徑 \n";
+HelpCatiaV5EnvPath.Text   ="-CatiaV5EnvPath EnvPath       : 指定 CATIA V5 環境路徑 \n";
+HelpCatiaV5EnvName.Text   ="-CatiaV5EnvName EnvName       : 指定 CATIA V5 環境檔案 \n"; 
+HelpnoLang.Text           ="-noLang \"fr ge it jp ch ko\"/-noLang all : 指定使用者不需安裝語言介面 french,german,italian,japanese,simplified chinese,korean\n";
+HelpnoFonts.Text          ="-noFonts                      : 指定使用者不安裝語言索引字型 \n";
+HelpnoCheckTCKPort.Text   ="-noCheckTCKPort               : 若通訊埠開放則不勾選 \n";
+HelpNoDesktopIcon.Text    ="-noDesktopIcon                : 未在桌面上建立開始圖式 \n";
+HelpNoStartMenuIcon.Text  ="-noStartMenuIcon              : 未在啟動內建立開始捷徑 \n";
+HelpNoStartMenuTools.Text ="-noStartMenuTools             : 未在開始命令內建立工具入口 \n";

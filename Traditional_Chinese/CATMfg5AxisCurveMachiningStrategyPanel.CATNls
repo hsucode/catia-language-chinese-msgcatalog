@@ -1,0 +1,113 @@
+SelStrategy 					= "選擇方式...";
+MfgMachiningTabPage				= "加工";
+MfgStepOverTabPage							= "徑向";
+MfgAxialTabPage								= "軸向";
+MfgFinishingTabPage				= "精加工";
+MfgToolAxisTabPage				= "刀具軸";
+
+MfgCurveAxisStrategy						= "刀軸模式";
+MfgCurveAxisStrategy.LongHelp			= "指定刀具軸導引.";
+
+MfgNormanglFrame					= "前傾選擇";
+Mfg5AxisAngleManagement						= "導引";
+Mfg5AxisAngleManagement.LongHelp		= "指定刀軸側傾或前傾的角度管理";
+MfgNormangl						= "     前傾角度";
+MfgNormangl.LongHelp				= "前傾角度值";
+MfgMaxNormangl					= "     最大前傾角度";
+MfgMaxNormangl.LongHelp				= "最大前傾角度值";
+MfgMinNormangl					= "     最小前傾角度";
+MfgMinNormangl.LongHelp				= "最小前傾角度值";
+MfgBiNormangl					= "     側傾角度";
+MfgBiNormangl.LongHelp				= "側傾角度值";
+Mfg5AxisCollisionAngle				= "     允許側傾";
+Mfg5AxisCollisionAngle.LongHelp		= "允許側傾變化的範圍";
+Mfg5AxisMinHealDistance				= "     最小後端距離";
+Mfg5AxisMinHealDistance.LongHelp		= "     最小後端距離";
+Mfg5AxisFanningDistance				= "     扇形動作距離";
+Mfg5AxisFanningDistance.LongHelp		= "扇形動作距離";
+
+MfgMachToler 					= "加工精度";
+MfgMachToler.LongHelp				= "指定理論的和計算的刀具路徑之間的最大允許距離.";
+MfgMaxDiscretizationStep			= "最大不連續步進值";
+MfgMaxDiscretizationStep.LongHelp		= "這個在點之間的指定最大距離的選擇. 它用來找出檢查曲面.";
+MfgMaxDiscretizationAngle			= "最大不連續角度";
+MfgMaxDiscretizationAngle.LongHelp		= "這個在刀具位置間指定刀具軸的最大角度變化的選擇. 它用來增加更多的刀具位置 (點和軸) 如果數值超過.";
+MfgContouringModeForGC 				= "輪廓的類型";
+MfgContouringModeForGC.LongHelp		= "指出圓角的輪廓類型是否是: 
+- 圓形的: 環繞圓角點的刀具旋轉點, 依據等同圓角的刀具半徑 
+- 有角的: 刀具不以圓角點接觸, 以兩線段構成的外形
+- 最佳的: 刀具依據分成與圓角相切的連續分配 
+- 強制圓弧: 刀具使用線段趨近的圓弧.";
+MfgDirectionOfCut					= "切削方向";
+MfgDirectionOfCut.LongHelp			= "指定如何銑製: 
+- 順銑 : 
+  刀具的前端 (在加工方向) 首先切入材料
+- 逆銑:
+  刀具的後端 (在加工方向) 首先切入材料 ";
+MfgForcedContour 	= "強制外形";
+MfgForcedContour.LongHelp = "指定外形是強制開啟或封閉.";
+MfgOverhang 					= "封閉外形重疊 (%)";
+MfgOverhang.LongHelp 				= "指出封閉外形重疊的百分比.";
+
+MfgMachiningMode 					= "刀具路徑樣式";
+MfgMachiningMode.LongHelp 			= "指出步序的切削模式:
+- 來回切削 : 從一個路徑到下一個的加工方向是相反的.
+- 單向切削: 從一個路徑到下一個使用相同的加工方向.";
+MfgSequencingMode  				= "順序";
+MfgSequencingMode.LongHelp  			= "指定切削完成順序:
+軸向: 軸向的切削比徑向的先執行
+徑向的: 徑向的切削比軸向的先執行.
+In case of points relimitation:
+By segment: all path inside a current couple of points is machined before taking into account the next couple of points
+By level: each level is machined entirely for all couple of points.";
+RadialBySegment = "先徑向 (by segment)";
+AxialBySegment = "先軸向 (by segment)";
+RadialByLevel = "先徑向 (by level)";
+AxialByLevel = "先軸向 (by level)";
+
+RadialStrategyFrame 				= "徑向方式";
+MfgDistanceBetweenPaths 			= "路徑間距離";
+MfgDistanceBetweenPaths.LongHelp 		= "以徑向方式定義二個連續刀具路徑間的最大距離 .";
+MfgNumberOfRadialPaths 				= "路徑數目";
+MfgNumberOfRadialPaths.LongHelp 		= "定義在徑向方式中刀具路徑的數量.";
+
+AxialStrategyFrame 				= "軸向方式";
+MfgMaxDepthOfCut 							= "最大切深";
+MfgMaxDepthOfCut.LongHelp 					= "Defines the maximum distance between two consecutive levels.\nThis parameter is used in contact mode or in between 2 curves mode when no auxiliary curve is defined.";
+MfgNumberOfLevels 				= "切層數目";
+MfgNumberOfLevels.LongHelp 			= "定義在軸向方式中切層的數目.";
+
+SideFinishFrame 					= "側面精加工";
+MfgSideFinish 					= "模式";
+MfgSideFinish.LongHelp 				= "指出是否精加工路徑是在加工區域的側面上被產生.
+側面精加工可在每一個高度被完成或者只有在步序的最後高度.";
+MfgSideThickness 					= "側面精加工厚度";
+MfgSideThickness.LongHelp 			= "指定用來作側面精加工的厚度.";
+MfgSideFinishBottomThickness 			= "在底部上的側面精加工厚度";
+MfgSideFinishBottomThickness.LongHelp 	= "指定用來作步序結束時最後的側面精加工路徑的厚度.";
+MfgNbSideFinishByLevel					= "每層側邊精銑路徑的數目";
+MfgNbSideFinishByLevel.LongHelp			= "指定軸向每層側邊精銑路徑的數目";
+MfgSpringPath 					= "螺旋路徑";
+MfgSpringPath.LongHelp 				= "指出是否螺旋路徑是在與先前的側面精加工路徑相同情況的側面上被產生. 
+螺旋路徑是用來補償刀具正常的 `螺旋 ' .";
+MfgBottomFinishPathThickness 			= "底部精加工厚度";
+MfgBottomFinishPathThickness.LongHelp 	= "指定底部精加工使用的厚度.";
+
+Mfg5AxisTangentAxisAngle			= "     允許前傾";
+Mfg5AxisTangentAxisAngle.LongHelp		= "     允許前傾範圍";
+
+MfgBottomFinishPathStyle			= "底部精銑路徑形式";
+MfgBottomFinishPathStyle.LongHelp	= "指定底部精銑路徑形式:
+- 來回: 路徑間的加工方向反向
+- 單向: 路徑間的加工方向相同.";
+
+MfgCurveTgtAxisStrategySubModes				= "模式";
+MfgCurveTgtAxisStrategySubModes.LongHelp	= "指定切線軸曲線伴隨次模式:
+- 沿規則線方向, 
+- 沿參數線方向, 
+- 垂直驅動曲線方向.";
+
+Mfg5AxisDisplayInfo = "顯示變異";
+Mfg5AxisDisplayInfo.LongHelp = "Allows to locate graphically deviations at the end of tool path computation.";
+
+

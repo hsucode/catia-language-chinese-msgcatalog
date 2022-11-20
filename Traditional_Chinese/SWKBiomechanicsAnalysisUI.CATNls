@@ -1,0 +1,138 @@
+// ============================================================================
+// ============================================================================
+// SWKBiomechanicsAnalysisUI English Message File
+// ============================================================================
+// ============================================================================
+
+DataNotAvailable = "DNA";
+
+ButtonExport.Title = "輸出...";
+
+// ----------------------------------------------------------------------------
+// SAA Command
+// ----------------------------------------------------------------------------
+ManikinSelectionFailed = "交談式選擇失敗.";
+
+SWKBiomechanicsAnalysisUI.SelectManikin.UndoTitle = "人體模型選擇";
+SWKBiomechanicsAnalysisUI.SelectManikin.RedoTitle = "人體模型選擇";
+SWKBiomechanicsAnalysisUI.SelectManikin.Message = "選擇人體模型 ...";
+
+LicenseRequired = "執行此動作需要軟體授權.";
+
+InvalidInput =
+"無效輸入.
+前臂無法使用此命令.";
+
+// ----------------------------------------------------------------------------
+// SAA Dialog
+// ----------------------------------------------------------------------------
+SAAWindowTitle = "/p1 - 雙機構單一動作分析";
+
+SAAMainFrame.LabelInput.Title = "輸入: ";
+SAAMainFrame.ButtonForceInput.Title = "力...";
+
+SAATabContainer.SummaryTab.Title = "總合";
+SAATabContainer.SpineLimitTab.Title = "L4-L5 脊椎限制";
+SAATabContainer.JointMomentTab.Title = "連接力矩力量資料";
+SAATabContainer.RForceMomentTab.Title = "反應力量和力矩";
+SAATabContainer.SegmentPosTab.Title = "Segment 位置";
+
+OutOfBOS = "系統重心超過支柱範圍";
+WrongLoadData = "載入資料無效";
+UnknownBiomechError = "分析時發生未預期錯誤";
+
+// Summary Tab
+// -----------
+MultiListTitle1 = "分析";
+MultiListTitle2 = "數值";
+
+MultiListLine_0  = "L4-L5 Moment (/p1)";
+MultiListLine_2  = "L4-L5 Compression (/p1)";
+MultiListLine_3  = "  Body Load Compression (/p1)";
+MultiListLine_4  = "  Axial Twist Compression (/p1)";
+MultiListLine_5  = "  Flex/Ext Compression (/p1)";
+MultiListLine_7  = "L4-L5 Joint Shear (/p1)";
+MultiListLine_9  = "Abdominal Force (/p1)";
+MultiListLine_10 = "Abdominal Pressure (/p1)";
+MultiListLine_12 = "Ground Reaction (/p1)";
+MultiListLine_13 = "  Total (X)";
+MultiListLine_14 = "  Total (Y)";
+MultiListLine_15 = "  Total (Z)";
+MultiListLine_17 = "  Left Foot (X)";
+MultiListLine_18 = "  Left Foot (Y)";
+MultiListLine_19 = "  Left Foot (Z)";
+MultiListLine_21 = "  Right Foot (X)";
+MultiListLine_22 = "  Right Foot (Y)";
+MultiListLine_23 = "  Right Foot (Z)";
+Posterior = " Posterior";
+Anterior = " Anterior";
+
+// Spine Limit Tab
+// ---------------
+Forces = "力";
+Value = "數值 (/p1)";
+Compression = " 壓縮限制";
+Shear = " 連結剪力限制";
+List = "List of Values";
+Graph = "Chart";
+
+// Joint Moment Strength Data Tab
+// ------------------------------
+JointMomentTitle_1 = "連結";
+JointMomentTitle_2 = "DOF";
+JointMomentTitle_3 = "力矩 (/p1)";
+JointMomentTitle_4 = "% Pop.Not Capable";
+JointMomentTitle_5 = "平均 (/p1)";
+JointMomentTitle_6 = "S.D (/p1)";
+JointMomentTitle_7 = "參考";
+
+// R Forces & Moment Tab
+// ---------------------
+MultiListRFMTitle1 = "Segment";
+MultiListRFMTitle2 = "Proximal Force (/p1)";
+MultiListRFMTitle3 = "Distal Force (/p1)";
+MultiListRFMTitle4 = "Proximal Moment (/p1)";
+MultiListRFMTitle5 = "Distal Moment (/p1)";
+x = "   X";
+y = "   Y";
+z = "   Z";
+
+// Segment Positions Tab
+// ---------------------
+MultiListSegPos1 = "Segment";
+MultiListSegPos2 = "Proximal 座標 (/p1)";
+MultiListSegPos3 = "Distal 座標 (/p1)";
+MultiListSegPos4 = "XY 平面角度 (/p1)";
+MultiListSegPos5 = "YZ 平面角度 (/p1)";
+MultiListSegPos6 = "重心座標 (/p1)";
+MultiListSegPos7 = "長度 (/p1)";
+
+// ----------------------------------------------------------------------------
+// Export Result Dialog
+// ----------------------------------------------------------------------------
+ExportFile.Title = "輸出結果";
+TextFiles.Title = "報告檔案 (*.txt)";
+
+ConfirmCreation.Title = "確認視窗";
+ConfirmCreation = 
+"檔案不存在.
+您要建立嗎 ?";
+
+ConfirmOverwrite.Title = "確認視窗";
+
+ConfirmOverwrite =
+"檔案已存在.
+您要覆寫嗎 ?";
+
+SpineLimitText = "Spine Limit Data Tab";
+SummaryText = "Summary Data Tab";
+RForcesText = "RForces Data Tab";
+JointMomentText = "Joint Moment Strength Data Tab";
+SegmentPosText = "Segment Positions Tab"; 
+
+SAAExportMainFrame.Title = "單一動作";
+SAAExportMainFrame.CheckBSummary.Title = "總計";
+SAAExportMainFrame.CheckBSpineLimit.Title = "Spine 限制";
+SAAExportMainFrame.CheckBJointMoment.Title = "連結力矩力量資料";
+SAAExportMainFrame.CheckBRForces.Title = "反作用力和力矩";
+SAAExportMainFrame.CheckBSegmentPos.Title = "Segment 位置";

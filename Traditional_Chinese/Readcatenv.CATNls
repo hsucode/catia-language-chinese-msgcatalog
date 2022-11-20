@@ -1,0 +1,20 @@
+HelpNT.text = "用法:
+readcatenv -e environment_name           指定環境名稱   
+           -a user|global                指定環境特性  
+           -var   variable               指定讀取變數
+           [-d storage_directory_name]   指定環境儲存目錄" ;
+HelpUNIX.text = "用法:
+readcatenv -e environment_name           指定環境名稱   
+           -a user|global                指定環境特性  
+           -var   variable               指定讀取變數
+           [-d storage_directory_name]   指定環境儲存目錄" ;
+ReadFailed.text				= "不能讀取這個環境" ;
+NoSuchVariable.text			= "變數不存在" ;
+SpecifiedFolderNotFound.Text= "指定的存儲目錄沒找到";
+EnvFileNotFound.Text		= "環境檔沒找到";
+BadOptions.Text				= "變數 (arguments) 不正確. 請檢查你的命令行";
+NonValidType.Text			= "以 -a 來指定環境形式 (user 或 global)";
+InitFolderFailed.Text		= "------------------ Warning ----------------
+The default storage folder was not found.
+The new storage folder was set to:
+";

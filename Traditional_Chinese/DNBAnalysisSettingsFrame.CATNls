@@ -1,0 +1,45 @@
+// COPYRIGHT DASSAULT SYSTEMES 2003
+//=============================================================================
+//
+// DNBAnalysisSettingsFrame
+//
+//=============================================================================
+// Usages Notes:
+//  Naming the frame in the property sheet :
+//    Tools/Options/DELMIA Infrastructure/Analysis 
+//
+//=============================================================================
+// Mar. 2003  Creation                                                      MMH
+//=============================================================================
+
+// Feedback frame
+FeedbackFrame.HeaderFrame.Global.Title = "分析回饋";
+FeedbackFrame.IconAndOptionsFrame.OptionsFrame.CkBeepId.Title     = "嗶";
+FeedbackFrame.IconAndOptionsFrame.OptionsFrame.CkBeepId.ShortHelp = "嗶 開啟或關閉";
+FeedbackFrame.IconAndOptionsFrame.OptionsFrame.CkBeepId.LongHelp  = "按下 開啟或關閉 嗶聲";
+
+// analysis mode activation frame
+AnlModeFrame.HeaderFrame.Global.Title = "分析模式動作";
+AnlModeFrame.IconAndOptionsFrame.OptionsFrame.CkAskAnlModeId.Title     = "起動分析模式";
+AnlModeFrame.IconAndOptionsFrame.OptionsFrame.CkAskAnlModeId.ShortHelp = "起動分析模式";
+AnlModeFrame.IconAndOptionsFrame.OptionsFrame.CkAskAnlModeId.LongHelp  = "起動分析模式對話框";
+
+AnlModeFrame.IconAndOptionsFrame.OptionsFrame.CkEnableAnlModeId.Title     = "自動起動分析模式";
+AnlModeFrame.IconAndOptionsFrame.OptionsFrame.CkEnableAnlModeId.ShortHelp = "自動起動分析模式";
+AnlModeFrame.IconAndOptionsFrame.OptionsFrame.CkEnableAnlModeId.LongHelp  = "按下自動起動分析模式";
+
+// analysis status frame
+AnlStatusFrame.HeaderFrame.Global.Title = "分析層級";
+AnlStatusFrame.IconAndOptionsFrame.OptionsFrame.ComboAnlStatusId.ShortHelp = "預設分析層級";
+AnlStatusFrame.IconAndOptionsFrame.OptionsFrame.ComboAnlStatusId.LongHelp  = "指定預設分析層級";
+
+// visualization frame
+VisuModeFrame.HeaderFrame.Global.Title = "顯示模式";
+VisuModeFrame.IconAndOptionsFrame.OptionsFrame.ComboVisuId.ShortHelp = "預設顯示模式";
+VisuModeFrame.IconAndOptionsFrame.OptionsFrame.ComboVisuId.LongHelp  = "選擇顯示干涉分析結果顯示";
+
+// Voxel frame
+VoxelFrame.HeaderFrame.Global.Title = "靜態分析";
+VoxelFrame.IconAndOptionsFrame.OptionsFrame.CkVoxelId.Title     = "使用 Voxelization";
+VoxelFrame.IconAndOptionsFrame.OptionsFrame.CkVoxelId.ShortHelp = "Enable/disable voxels during static analysis (collision detection)";
+VoxelFrame.IconAndOptionsFrame.OptionsFrame.CkVoxelId.LongHelp  = "Specify if voxels should be used for collision detection during static analysis";

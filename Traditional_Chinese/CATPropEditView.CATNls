@@ -1,0 +1,305 @@
+//=============================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1998 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATPropEditView
+// LOCATION    :    DraftingUI/CNext/resources/msgcatalog
+// AUTHOR      :    tbe
+// DATE        :    14/1/1998
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to View property
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :	ENGLISH VERSION
+//------------------------------------------------------------------------------
+//MODIFICATIONS     user  date      purpose
+//   HISTORY        ----  ----      -------
+//		01			ogk		26.01.99	- ajout pour les dressups
+//      02          ypr     10/05/00    - ajout pour thread
+//		03			ogk		01.09.00	- ajout	viewNameLabel (correction)
+//		04			ogk		24.10.00	- nouveau contenu (multi-sel)
+//		05			lgk		26.06.02	Revision
+//		06			lgk		15.10.02	Revision
+//		07			lgk		17.12.02	Revision
+//------------------------------------------------------------------------------
+
+
+// Global Parameters 
+// =================
+globalParamsFrameTitle.Title="大小和方向";
+globalParamsFrame.Title="總體參數";
+globalParamsFrame.LongHelp=
+"參數
+修改視圖參數 : 旋轉和比例."; 
+
+
+// Global Parameters / Scale
+// =========================
+globalParamsFrame.scaleEditors.scaleLabel.Title="比例 :";
+globalParamsFrame.scaleEditors.scaleLabel.Help="以正值修改視圖比例";
+globalParamsFrame.scaleEditors.scaleLabel.ShortHelp="視圖比例";
+globalParamsFrame.scaleEditors.scaleLabel.LongHelp="視圖比例
+以正值修改視圖比例.";
+//
+globalParamsFrame.scaleEditors.scaleSepLabel.Title=":";
+
+
+
+// Global Parameters / Angle
+// =========================
+globalParamsFrame.angleLabel.Title="角度 :";
+globalParamsFrame.angleLabel.Help="對所選視圖指定一個 旋轉 角度值";
+globalParamsFrame.angleLabel.ShortHelp="視圖角度";
+globalParamsFrame.angleLabel.LongHelp="視圖角度
+對所選視圖指定一個 旋轉 角度值.
+此值是以目前程序的單位來表示. 
+當您輸入值時, 您不需要指定單位. 但是, 
+如有需要您可暫時修改單位
+( 例如, 如果目前單位是 徑度量, 則輸入 180度 可代替 3.14 ";
+//
+globalParamsFrame.angleEdt.Title="角度 :";
+globalParamsFrame.angleEdt.Help="指定 旋轉 角度至所選視圖";
+globalParamsFrame.angleEdt.ShortHelp="視圖角度 ";
+globalParamsFrame.angleEdt.LongHelp="視圖角度 
+指定 旋轉 角度至所選視圖.
+此值是以目前程序的單位來表示. 
+當您輸入值時, 您不需要指定單位. 但是, 
+如有需要您可暫時修改單位
+( 例如, 如果目前單位是 徑度量, 則輸入 180度 可代替 3.14 ";
+
+
+
+// Name Parameters 
+// ===============
+nameParamsFrameTitle.Title="視圖名稱";
+nameParamsFrame.Title="視圖名稱";
+nameParamsFrame.LongHelp="視圖名稱
+修改所選視圖的名稱變數.";
+
+
+// Name Parameters / Prefix
+// ========================
+nameParamsFrame.prefixLabel.Title="字首 :";
+nameParamsFrame.prefixLabel.Help="增加字首至所選視圖名稱之前";
+nameParamsFrame.prefixLabel.ShortHelp="字首";
+nameParamsFrame.prefixLabel.LongHelp="字首
+增加字首至所選視圖名稱之前.";
+
+
+// Name Parameters / Ident
+// =======================
+nameParamsFrame.identLabel.Title="名稱 :";
+nameParamsFrame.identLabel.Help="指定所選視圖的名稱.";
+nameParamsFrame.identLabel.ShortHelp="名稱 ";
+nameParamsFrame.identLabel.LongHelp="名稱 
+指定所選視圖的名稱.";
+
+
+// Name Parameters / Suffix
+// ========================
+nameParamsFrame.suffixLabel.Title="字尾 :";
+nameParamsFrame.suffixLabel.Help="增加字尾至所選視圖名稱之後";
+nameParamsFrame.suffixLabel.ShortHelp="字尾 ";
+nameParamsFrame.suffixLabel.LongHelp="字尾 
+增加字尾至所選視圖名稱之後.";
+
+
+// Name Parameters / Name Editor
+// =============================
+nameParamsFrame.nameCkeEditorFrame.Title="具公式的名稱編輯器 :";
+nameParamsFrame.nameCkeEditorFrame.Name.EnglobingFrame.IntermediateFrame.Label.Title="編輯器 :";
+
+
+// Detail Name 
+// ===========
+detailParamsFrame.Title="平面分件";
+detailParamsFrame.ShortHelp="平面分件";
+
+
+// Detail Name / Editor
+// ===========
+detailviewTitle.Title="平面分件";
+detailParamsFrame.detailLabel.Title=" ";
+detailParamsFrame.detailLabel.Help="指定所選細部視圖的名稱";
+detailParamsFrame.detailLabel.ShortHelp="細部視圖";
+detailParamsFrame.detailLabel.LongHelp="細部視圖
+指定所選細部視圖的名稱.";
+
+// Dressup
+// =======
+dressupTitle.Title="修飾";
+generativeParamsFrame.Title="修飾";
+generativeParamsFrame.LongHelp=
+"修飾
+在所選的視圖上增加元素."; 
+
+
+
+// Fillets
+// =======
+filletFrame.Title=" 圓角";
+filletFrame.LongHelp=
+" "; 
+
+// Dressup / Hidden Lines 
+// ======================
+generativeParamsFrame.hiddenLinesChkBtn.Title="隱藏線";
+generativeParamsFrame.hiddenLinesChkBtn.LongHelp="隱藏線
+定義所選視圖是否顯示隱藏線.";
+
+
+
+// Dressup / Axis
+// ==============
+generativeParamsFrame.axisChkBtn.Title="軸";
+generativeParamsFrame.axisChkBtn.LongHelp="軸
+定義所選視圖是否顯示軸.";
+
+
+// Dressup / Center Line
+// ======================
+generativeParamsFrame.centerLinesChkBtn.Title="中心線";
+generativeParamsFrame.centerLinesChkBtn.LongHelp="中心線
+定義所選視圖是否顯示中心線.";
+
+
+
+// Dressup / Thread
+// ================
+generativeParamsFrame.threadChkBtn.Title="螺紋";
+//npq: 18/10/2005 IR 0513559 LongHelp added
+generativeParamsFrame.threadChkBtn.LongHelp="螺紋
+定義所選視圖是否顯示螺紋.";
+
+// Dressup / Fillets
+// =========================
+filletFrame.boundFilletChkBtn.Title="圓角 :";
+filletFrame.boundFilletChkBtn.LongHelp="圓角
+定義所選視圖是否顯示邊界圓角或鏈結圓角.";
+
+// Dressup / BoundaryFillets
+// =========================
+filletFrame.boundaryRdBtn.Title="邊界";
+filletFrame.boundaryRdBtn.LongHelp="邊界
+定義所選視圖是否顯示邊界圓角或鏈結圓角.";
+
+// Dressup / Original Edges
+// =========================
+filletFrame.ficFilletRdBtn.Title="象徵";
+filletFrame.ficFilletRdBtn.LongHelp="象徵
+定義所選視圖是否顯示象徵圓角.";
+
+filletFrame.projoriginaledgeFilletRdBtn.Title="投影原始邊界";
+filletFrame.originaledgeFilletRdBtn.Title = "近似化原始邊界";
+
+// Dressup / 3D Spec
+// ====================
+generativeParamsFrame.uncutSpecChkBtn.Title="3D 規範";
+generativeParamsFrame.uncutSpecChkBtn.LongHelp="3D 規範
+定義所選視圖是否顯示3D 規範.";
+
+// Dressup / 3D Wireframe
+// =======================
+generativeParamsFrame.3DWireframeChkBtn.Title="3D 線架構";
+generativeParamsFrame.3DWireframeChkBtn.LongHelp="3D 線架構
+定義所選視圖是否顯示3D 線架構.";
+
+// Dressup / 3D Wireframe A PARTIR DE LA R11
+// =========================================
+3DPointsFrame.3DWireframeFrame.3DWireframeChkBtn.Title="3D 線架構";
+3DPointsFrame.3DWireframeFrame.3DWireframeChkBtn.LongHelp="3D 線架構
+定義所選視圖是否顯示3D 投影線架構.";
+3DPointsFrame.3DWireframeFrame.3DWireframeHLRRdBtn.Title="可隱藏";
+3DPointsFrame.3DWireframeFrame.3DWireframeProjectionRdBtn.Title="永遠顯示";
+
+// Dressup / 3D Points
+// ====================
+generativeParamsFrame.3DPointsChkBtn.Title="3D 點";
+generativeParamsFrame.3DPointsChkBtn.LongHelp="3D 點
+定義是否要將 3D 點 顯示在所選視圖中.";
+3DPointsFrame.3DPointsChkBtn.Title="3D 點 :";
+3DPointsFrame.3DPointsChkBtn.LongHelp="3D 點
+定義是否要將 3D 點 顯示在所選視圖中.";
+3DPointsFrame.3DSymbolRdBtn.Title="3D 符號繼承";
+3DPointsFrame.3DSymbolRdBtn.LongHelp="3D 符號繼承
+顯示由 3D 繼承的符號特性";
+3DPointsFrame.UsrSymbolRdBtn.Title="符號";
+3DPointsFrame.UsrSymbolRdBtn.LongHelp="符號
+顯示所選符號";
+
+// Dressup / 3D Colors
+// ===================
+generativeParamsFrame.3DColorsChkBtn.Title="3D 顏色";
+generativeParamsFrame.3DColorsChkBtn.LongHelp="3D 顏色
+定義在所選視圖上是否要使用 3D 顏色 .";
+
+
+// Visu & Behaviour 
+// ================
+visuTitle.Title="顯示和性質";
+visuBehaviourFrame.Title="顯示和性質";
+visuBehaviourFrame.ShortHelp="所選視圖的顯示和性質";
+visuBehaviourFrame.Help="定義視框是否顯示或鎖定";
+visuBehaviourFrame.LongHelp="所選視圖的顯示和性質
+定義視框是否顯示或鎖定.";
+
+
+
+// Visu & Behaviour  / Frame
+// =========================
+visuBehaviourFrame.viewFrameChkBtn.Title="視圖外框";
+visuBehaviourFrame.viewFrameChkBtn.ShortHelp="顯示視圖外框";
+visuBehaviourFrame.viewFrameChkBtn.Help="定義視框是否顯示外框";
+visuBehaviourFrame.viewFrameChkBtn.LongHelp="顯示視圖外框
+定義視框是否顯示外框.";
+
+// Visu & Behaviour / visual clipping
+//===================================
+visuBehaviourFrame.FramingChkBtn.Title="截取顯示";
+visuBehaviourFrame.FramingChkBtn.ShortHelp="使用截取顯示";
+visuBehaviourFrame.FramingChkBtn.Help="定義在視圖中是否要使用截取顯示";
+
+
+// Visu & Behaviour  / Lock
+// ========================
+visuBehaviourFrame.viewLockChkBtn.Title="視圖鎖定";
+visuBehaviourFrame.viewLockChkBtn.ShortHelp="鎖定所選視圖";
+visuBehaviourFrame.viewLockChkBtn.Help="定義所選視圖是否鎖定";
+visuBehaviourFrame.viewLockChkBtn.LongHelp="鎖定所選視圖
+定義所選視圖是否鎖定.";
+
+// Generation Mode 
+// ================
+generationModeTitle.Title="產生模式";
+generationModeFrame.Title="產生模式";
+generationModeFrame.ShortHelp="所選視圖的產生模式";
+generationModeFrame.LongHelp=
+"指定所選視圖是由拓墣或 CGR 資料來產生和視必要重新產生它們.";
+
+generationModeFrame.DrwGenerationForBox.Title="只有所產生的零件大於";
+generationModeFrame.DrwGenerationForBox.LongHelp="只產生零件大於";
+generationModeFrame.spinGenBox.LongHelp="只產生零件大於";
+generationModeFrame.OcclusionCullingChkBtn.Title="啟動 occlusion culling";
+generationModeFrame.OcclusionCullingChkBtn.LongHelp="Enable occlusion culling
+The objects fully hidden are not taken into account during the computation";
+generationModeFrame.Combolabel.Title = "視圖產生模式";
+generationModeFrame.GenerationModeOption.Title = "選項";
+GenerationModeOptionPanelTitle= "產生模式選項";
+GenerationModeOptionPanelTitleHRV= "近似選項";
+
+// Messages divers
+// ===============
+
+TabTitle="視圖";
+TabTitle.LongHelp="定義視圖.";
+
+ScaleText="比例 :";
+ScaleOutOfRangeTitle="比例超過範圍";
+ScaleOutOfRangeText="比例值必須是正數且小於 10000.
+不正確的比例值已經自動地修改以接近可用值.";
+
+gvsFrame.buttonResetStyle.Title="重設至形式數值";
+gvsFrame.Title="自發視圖形式";
+GVSTitle.Title="自發視圖形式";
+GVSOverloadHelp="使用者參數太多"; 
+

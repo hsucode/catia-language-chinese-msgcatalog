@@ -1,0 +1,87 @@
+//----------------------------------------------
+// Resource file for CATGSMUIDevelopPanel class
+// En_US
+//----------------------------------------------
+
+Title="展開定義";
+
+FrameGlobal.FrameInputs.LabToDevelop.Title="線展開: ";
+FrameGlobal.FrameInputs.LabToDevelop.LongHelp="指出平面線架構來展開.";
+FrameGlobal.FrameInputs.SelToDevelop.LongHelp="指出平面線架構來展開.";
+
+FrameGlobal.FrameInputs.LabToDevelopPlane.Title="線架構平面: ";
+FrameGlobal.FrameInputs.LabToDevelopPlane.LongHelp="當不明顯時, 指定要展開的線面.";
+FrameGlobal.FrameInputs.SelToDevelopPlane.LongHelp="當不明顯時, 指定要展開的線面.";
+
+ChaineComputed="已計算";
+
+FrameGlobal.FrameInputs.LabSupport.Title="支援曲面: ";
+FrameGlobal.FrameInputs.LabSupport.LongHelp="指出用來支援展開的旋轉曲面.";
+FrameGlobal.FrameInputs.SelSupport.LongHelp="指出用來支援展開的旋轉曲面.";
+
+FrameGlobal.FrameMode.Title="展開方式";
+FrameGlobal.FrameMode.RadBModeDev.Title="展開-展開";
+FrameGlobal.FrameMode.RadBModeDev.LongHelp="指出線架構是沿著支援曲面軸系的雙軸來展開.";
+FrameGlobal.FrameMode.RadBModeDevProj.Title="展開-投影";
+FrameGlobal.FrameMode.RadBModeDevProj.LongHelp="指出線架構是沿著支援曲面軸系的單軸來展開,沿著另一軸投影.";
+//-/DEV/+
+FrameGlobal.FrameMode.RadBModeDevSpec.Title="展開-展開 逆轉";
+FrameGlobal.FrameMode.RadBModeDevSpec.LongHelp="指出線架構是沿著支援曲面軸系的第二軸來展開, 再沿著第一軸.";
+//-/DEV/-
+
+// FrameGlobal.FrameMode.RadBModeDevSpec.Title="展開-特殊";
+// FrameGlobal.FrameMode.RadBModeDevSpec.LongHelp="指出線架構是沿著母線展開後再沿著準線";
+
+FrameGlobal.FrameOption.Title="展開選擇參數";
+FrameGlobal.FrameOption.CheckBR.Title="放射狀: ";
+FrameGlobal.FrameOption.CheckBR.LongHelp="允許指定放射參數選擇 (比例).";
+FrameGlobal.FrameOption.CheckBI.Title="傾向: ";
+FrameGlobal.FrameOption.CheckBI.LongHelp="允許指定傾向參數選擇 (角度).";
+
+FrameGlobal.FrameOption.CheckBRadius.Title="中間半徑: ";
+
+FrameGlobal.NotifFrame.FraButton.SelPosButton.Title="定位平面線構";
+FrameGlobal.NotifFrame.FraButton.SelPosButton.LongHelp="預設展開動作,
+使用與將要被展開的線架構和依附原點鏈結的自動軸系.
+請檢查此盒來處理幾何或修改位置參數.";
+LabelShowPosParam="顯示參數 >>";
+LabelHidePosParam="隱藏參數 <<";
+
+FrameGlobal.NotifFrame.AdvFrame.Title="定位參數";
+
+FrameGlobal.NotifFrame.AdvFrame.LabelExplPos1.Title="原始線面";
+
+FrameGlobal.NotifFrame.AdvFrame.FraOriginMain.RadBOrigin1.Title="原始座標";
+FrameGlobal.NotifFrame.AdvFrame.FraOriginMain.RadBOrigin1.LongHelp="以座標來指出平面線架構的原點.";
+FrameGlobal.NotifFrame.AdvFrame.FraOriginMain.FraOrigin1.LabelLittX.Title="X: ";
+FrameGlobal.NotifFrame.AdvFrame.FraOriginMain.FraOrigin1.FraLittX.EnglobingFrame.IntermediateFrame.Spinner.Title="X";
+FrameGlobal.NotifFrame.AdvFrame.FraOriginMain.FraOrigin1.LabelLittY.Title="Y: ";
+FrameGlobal.NotifFrame.AdvFrame.FraOriginMain.FraOrigin1.FraLittY.EnglobingFrame.IntermediateFrame.Spinner.Title="Y";
+
+FrameGlobal.NotifFrame.AdvFrame.FraOriginMain.RadBOrigin2.Title="原始選擇";
+FrameGlobal.NotifFrame.AdvFrame.FraOriginMain.RadBOrigin2.LongHelp="以選點來指出平面線架構的原點.";
+FrameGlobal.NotifFrame.AdvFrame.FraOriginMain.FraOrigin2.LabOriginP1.Title="點: ";
+
+FrameGlobal.NotifFrame.AdvFrame.SepAngleDir1.TitleLabel.Title="線面的軸";
+
+FrameGlobal.NotifFrame.AdvFrame.FraDirection.RadBDirection1.Title="旋轉角度";
+FrameGlobal.NotifFrame.AdvFrame.FraDirection.RadBDirection1.LongHelp="以原點原始位置來旋轉平面線架構軸系.";
+FrameGlobal.NotifFrame.AdvFrame.FraDirection.FraDirection1.FraLittAngle.EnglobingFrame.IntermediateFrame.Spinner.Title="角度";
+
+
+FrameGlobal.NotifFrame.AdvFrame.FraDirection.RadBDirection2.Title="選擇第一軸";
+FrameGlobal.NotifFrame.AdvFrame.FraDirection.RadBDirection2.LongHelp="以選線或分件方式來指出平面線架構軸系的 X方向.";
+FrameGlobal.NotifFrame.AdvFrame.FraDirection.FraDirection2.LabDirection.Title="方向: ";
+
+
+FrameGlobal.NotifFrame.AdvFrame.SwapXAxisButton.Title="X 軸反向";
+FrameGlobal.NotifFrame.AdvFrame.SwapXAxisButton.LongHelp="逆轉 X軸方向.";
+FrameGlobal.NotifFrame.AdvFrame.SwapYAxisButton.Title="Y 軸反向";
+FrameGlobal.NotifFrame.AdvFrame.SwapYAxisButton.LongHelp="逆轉 Y軸方向.";
+
+FrameGlobal.NotifFrame.FraOriginSd.Title="依附上的原始";
+FrameGlobal.NotifFrame.FraOriginSd.LabOriginP2.Title="點: ";
+FrameGlobal.NotifFrame.FraOriginSd.LabOriginP2.LongHelp="在支援曲面上指出展開原點.";
+FrameGlobal.NotifFrame.FraOriginSd.SelOriginP2.LongHelp="在支援曲面上指出展開原點.";
+
+ElementsListTitle="要展開的元素";

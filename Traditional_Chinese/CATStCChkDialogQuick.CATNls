@@ -1,0 +1,61 @@
+//=============================================================================
+// COPYRIGHT DASSAULT SYSTEMES  1998
+//=============================================================================
+//
+// CATStCChkDialogQuick: Resource file for NLS purposes: 
+// Connect Checker Dialog Box, Quick Analysis 
+//
+//=============================================================================
+//
+// August '98						Thierry Caro
+//=============================================================================
+
+CChkQuick.DialogBox.Title = "快速違反分析";
+
+
+Frm1.DistanceLabel.Title = "距離 : ";
+Frm1.DistanceLabel.LongHelp = "定義所顯示顏色的以上距離
+(所選元素不符合位置標準) "; 
+
+
+Frm1.AngleLabel.Title = "相切 : ";
+Frm1.AngleLabel.LongHelp = "定義所顯示顏色的以上角度
+(所選元素不符合相切標準) ";
+
+
+Frm1.CurvatureLabel.Title = "曲度 : ";
+Frm1.CurvatureLabel.LongHelp = "定義所顯示顏色的不同曲率
+(所選元素不符合曲率標準) ";
+
+
+Frm1.OverlapLabel.Title = "重疊";
+Frm1.OverlapLabel.LongHelp = "顯示兩曲面重疊時兩邊線位置";
+
+Frm1.MinMaxInfoLabel.Title = "資訊";
+Frm1.MinMaxInfoLabel.LongHelp = "顯示最小和最大數值位置";
+
+Frm1.LabelMaxName.Title = "最大: ";
+Frm1.LabelMaxName.LongHelp = "指出曲面間最大計算值";
+
+
+Frm1.UnitMillimeter.Title = " 公厘";
+Frm1.UnitDegree.Title = " 度";
+Frm1.UnitPercent.Title = " %";
+
+
+FrmTol.Title = "最大間隙";
+FrmTol.LongHelp = "設定鄰近曲面的容差";
+
+
+FrmInfoNumbers.NbSelSurf.Title = " 已選擇曲面";
+FrmInfoNumbers.NbConnections.Title = " 連接偵測";
+
+
+FullAnalysisPushButton.Title = "全部...";
+FullAnalysisPushButton.LongHelp = "回復全面分析組態";
+
+
+FirstPanel.QuickAnalysisPushButton.Title = "快速...";
+FirstPanel.QuickAnalysisPushButton.LongHelp = "執行只顯示 不適合的距離,相切或曲率位置的快速分析.
+演算方式為先檢查距離標準是否適合.  如適合則再檢查相切; 如不適合, 則顯示相關位置.
+如相切情形符合情形則再檢查曲率. 如不適合, 則顯示相關位置.且不會再計算曲率的相關不同.";

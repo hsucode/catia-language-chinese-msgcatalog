@@ -1,0 +1,366 @@
+PrtInp1=          "這些參數無效.";
+PrtInp2=          "所選的本體與目前的本體無關連.";
+PrtInp3=          "所選的特徵不屬於目前的本體.";
+PrtInp4=          "所選的特徵被定義在目前的運算之後.";
+PrtInp5=          "無法產生結果";
+PrtInp6=          "所選本體未更新.";
+PrtInp7=          "你不能選擇此元素.它將會造成更新循環.";
+PrtInp8=          "無法產生結果元素: 所計算本體沒有幾何";
+PrtInp9=          "移除特徵 (減重槽 / 孔 / 槽 / 環槽) 無法成為零件實體的第一個特徵.";
+PrtInp10=          "沒有結果元素: 執行的本體沒有幾何";
+PrtInp11=          "無法辨識修剪面, 邊線或頂點.";
+PrtInp12=          "布林新增由插入新增體積建立 \n 關閉相同時會造成更新錯誤.";
+PrtInp13=		   "缺少布林特徵之一的操作子";
+
+PrtInt1=          "元件必需更新,才可以計算預視.";
+PrtInt2=          "無法計算.";
+PrtInt3=          "無法考慮幾何中的一個定義.";
+PrtInt4=          "無法計算的幾何.";
+PrtInt5=          "內部資料結構錯誤. 必需刪除特徵.";
+PrtInt6=          "在特徵上所執行的計算是不必要的.";
+
+PrtSketchKeep=    "您仍然要使用所選的草圖嗎 ?";
+PrtSketchInp1=    "對將建立的特徵, /n 所選的草圖是無效的 .";
+PrtSketchInp2=    "當目前特徵是本體的第一個特徵時, \n 您必須選擇厚度選項來使用未封閉斷面.";
+PrtSketchInp3=    "對於你要建立的特徵, \n 你必需用未封閉的斷面  .";
+PrtSketchInp4=    "選擇的草圖包含數個未封閉的斷面或一些用來建構的幾何元素. 
+你必需指定建構的幾何來解決斷面的定義不清楚.";
+PrtSketchInp5=    "對於你要建立的特徵, \n  /p1 草圖是無效的.";
+PrtSketchInp6=    "選擇的草圖包含定義成標準幾何元素的點.
+你必需轉換這些點成為建構元素 .";
+PrtSketchInp7=    "選擇的草圖包含數個斷面或一些用來建構的幾何元素.
+必需只有一個斷面. 你可以刪除幾何元素或轉換成建構元素.";
+PrtSketchInp8=    "選擇的草圖包含數個斷面. 至少有一個斷面是未封閉的 .\n 所有斷面必須是封閉的. ";
+PrtSketchInp9=    "選擇的草圖可能是含有過多拘束, 拘束不足或不一致. \n 您必須編輯此圖. 您可使用工具 -> 草圖分析 -> 偵測標籤 來知道那一個草圖需要編輯.";
+PrtSketchInp10=    "當目前特徵是本體的第一個特徵時, \n 您必須選擇厚度選項來使用未封閉斷面.";
+PrtSketchInp11=    "所選草圖未啟動.";
+PrtSketchInp12=    "所選草圖自我相交.";
+
+PrtProfileInp1=   "對於你要建立的特徵, \n 指定的斷面無效.";
+PrtProfileInp2=   "指定的斷面包含定義成標準幾何元素的點 .
+你必需轉換這些點成為建構的元素.";
+PrtProfileInp3=   "必需指定斷面.";
+PrtProfileInp4=   "所指定的斷面包含數個未封閉的外形或有些幾何己用來建構. \n 您必須指定建構幾何來解決不清楚的斷面.";
+PrtProfileInp5=   "沒有其它相關斷面.";
+PrtProfileInp6=   "相關斷面含有數個未封閉零件.";
+PrtProfileInp7=   "所指定的斷面與您要建立的特徵不相容. \n 相關斷面含有數個零件.";
+
+PrtCtrCrvInp1=    "對於你要建立的特徵, \n 所指定的中心曲線無效,  .";
+PrtCtrCrvInp2=    "指定的中心曲線包含定義成標準幾何的點 .
+你必需轉換這些點成為建構的元素 .";
+
+PrtLimitInp1=     "對於其中一個限制, \n 你必需指定平面或平面形式曲面.";
+PrtLimitInp2=     "對於其中一個限制, \n 你必需指定曲面或組合面.";
+PrtLimitInp3=     "對目前本體的第一個特徵, \n 你不能指定 到 ..下一個或最後一個 限制.";
+PrtLimitInp4=     "限制的型式無效.";
+PrtLimitInp5=     "其中一個指定的限制無法使用.";
+PrtLimitInp6=     "選擇屬於目前本體的面.";
+PrtLimitInp7=     "你不能選擇此特徵的結果幾何面.";
+PrtLimitInp8=     "選擇屬於目前本體或元件本體的面.";
+
+PrtMultiPrismInp1="偵測到影響斷面的修改. \n 您可編輯此特徵將修改納入.";
+PrtMultiPrismInp2="偵測到影響斷面的修改: \n      - /p1 拉伸定義保持, \n      - /p2 拉伸定義刪除, \n      - /p3 拉伸定義建立.";
+
+PrtPrismInp1=     "你必需增加厚度值.";
+PrtPrismInp2=     "該限制的平面或平面曲面 \n 垂直於草圖平面.";
+PrtPrismInp3=     "選擇的方向平行於草圖平面.";
+PrtPrismInp4=     "你必需指定拉伸的方向.";
+PrtPrismInp5=     "參考的方向無法使用.
+CATIA 將選擇預設的方向.";
+PrtPrismInp6=     "無法建立脫模和圓角.";
+PrtPrismInp7=     "厚度值的總和等於或小於 0 .\n 您必須增加數值.";
+PrtPrismInp8=     "您選擇非平面形式斷面, \n 必須按 詳細 按鈕 \n 或選擇 至平面 限制來指定拉伸方向";
+PrtPrismInp9=     "外形面無法使用. 須重新定義外形";
+PrtPrismInp10=     "依據拉伸方向斷面會自動相交. \n 須重新定義斷面或拉伸方向";
+PrtPrismInp11=     "您已選取一曲面或修剪面, \n 您必須定義拉伸方向 \n 您要定義它嗎 ?";
+PrtPrismInp12=     "鏡向延伸無法在第二限制的長度範圍使用多重數值.";
+
+PrtSolCombInp1=		"兩個拉伸的斷面方向必須不平行.";
+PrtSolCombInp2=		"指定的斷面至少有一個沒有封閉.";
+PrtSolCombInp3=		"第一個參考方向無法使用. \n 將會使用預設方向.";
+PrtSolCombInp4=		"第二個參考方向無法使用. \n 將會使用預設方向.";
+PrtSolCombInp5=		"第一分件 : 拉伸方向不可與斷面平面平行. \n 請更改方向.";
+PrtSolCombInp6=		"第一分件 : 拉伸方向不可與斷面平面平行. \n 請更改方向.";
+PrtSolCombInp7=		"所選草圖含有數個定義區域. 請選擇單一且封閉的草圖.";
+PrtSolCombInp8=		"第一分件 : 所選草圖含有過一個以上區域. 請選擇封閉且單一區域草圖.";
+PrtSolCombInp9=		"第二分件 : 所選草圖含有過一個以上區域. 請選擇封閉且單一區域草圖.";
+PrtSolCombInp10=	"第一和第二分件斷面相同.";
+
+PrtStiffInp1=     "加強條厚度等於或小於 0 . \n 您必須增加厚度值.";
+
+PrtFilletInp1=     "請選擇銳邊.";
+PrtFilletInp2=     "選擇的面沒有銳邊.";
+PrtFilletInp3=     "選擇點之前先選擇邊.";
+PrtFilletInp4=     "選擇的點已經定義.";
+PrtFilletInp5=     "選擇的邊已經定義 \n 請使用另一半徑值.";
+PrtFilletInp6=     "選擇屬於目前本體的邊.";
+PrtFilletInp7=     "選擇屬於目前本體的面.";
+PrtFilletInp8=     "/p1 邊和 /p2 面不能使用.
+點選確認鍵來移除這些定義.";
+PrtFilletInp9=     "你不能用頂點或平面在圓形邊上建立變化半徑圓角 .
+只能用點. 移除先前加入的頂點或平面.";
+PrtFilletInp10=    "選擇的點不能投影到選擇的邊.";
+PrtFilletInp11=     "你不能在未連接的邊上建立變化半徑圓角.";
+PrtFilletInp12=     "所選物件已定義.";
+PrtFilletInp13=     "你不能在複雜的邊上建立變化半徑圓角.";
+PrtFilletInp14=     "選擇元件設計元素.";
+PrtFilletInp15=     "你必需指定平面而不是平面形式曲面.";
+PrtFilletInp16=     "/p1 邊和 /p2 點定義不能使用.
+請點選確認鍵來移除這些定義.";
+PrtFilletInp17=     "選擇的物件是保留邊.";
+PrtFilletInp18=     "未獲軟體授權執行建立變化圓角時保留邊線.";
+PrtFilletInp19=     "/p1 邊, /p2 面和 /p3 保留邊不能使用. 
+請點選確認鍵來移除這些定義.";
+PrtFilletInp20=     "/p1 邊, /p2 點定義和 /p3 保留邊 \n 不能使用.
+請點選確認鍵來移除這些定義.";
+PrtFilletInp21=     "您無法在不具相同相切延伸的邊線上建立圓角.";
+PrtFilletInp22=     "任一修剪面上均無法置放固定曲線.";
+PrtFilletInp23=     "請確定未選擇超過四個頂點.";
+PrtFilletInp24=     "修剪面無法用來定義圓角.";
+PrtFilletInp25=     "您無法在封閉邊線上建立所選點的限制元素";
+PrtFilletInp26=     "所選限制元素之一無效. 請檢查物件的連接性";
+PrtFilletInp27=     "所選限制元素無效. 請檢查限制元素是否為要倒圓角的邊線";
+PrtFilletInp28=     "系統己完成圓角計算. 請檢查是否滿意結果.";
+PrtFilletInp29=     "所選限制元素無效. 限制元素與圓角依附相同";
+PrtFilletInp30=		"因設定更改, 無法計算目前圓角. 強迫計算它可能會更改它的外形.";
+PrtFilletInp31=		"所選邊線平順和尖銳各一半. 請選擇完全尖銳邊線.";
+PrtFilletInp32=		"在隱含保留邊線模式下,無法使用移除內部銳角邊線最佳化.";
+PrtFilletInp33=		"至少有一個未連接圓角邊線.";
+PrtFilletInp34=     "選擇屬於目前本體的實體的元素.";
+PrtFilletInp35=     "選擇為曲面圓角的依附曲面特徵的元素 (體積圓角的體積特徵).";
+PrtFilletInp36=     "選擇屬於目前本體的實體上的特徵修剪面.";
+PrtFilletInp37=     "選擇為曲面圓角的依附曲面特徵的修剪面 (體積圓角的體積特徵).";
+PrtFilletInp38=     "不允許次元素. 請選擇 3D 點或?要倒圓角的邊線上選擇一點";
+PrtFilletInp39=     "所選邊線無法用來建立含產生邊線選項的圓角. 請選擇其它邊線";
+PrtFilletInp40=     "順接圓角和 /p1 限制點無法使用, 因為它們與非連接邊線相關.";
+PrtFilletInp41=     "順接圓角無法使用, 因為它們與非連接邊線相關.";
+PrtFilletInp42=     "限制點無法使用, 因為它們與非連接邊線相關.";
+PrtFilletInp43=		"所選邊線非連接.";
+PrtFilletInp44=		"部份所選邊線不是銳邊";
+PrtFilletInp45=		"邊線次序不穩定. 圓角計算可能不佳";
+
+PrtFuncFillet01=	"所選邊線或修剪面屬於含有數個目標的局部修改. \n 此組態不允許.";
+PrtFuncFillet02=	"由兩外形相交的邊線結果. \n 此組態不允許.";
+PrtFuncFillet03=	"所選邊線或修剪面屬於可薄殼的. \n 此組態不允許.";
+PrtFuncFillet04=	"所選邊線或修剪面不屬於目前功能性本體.";
+PrtFuncFillet05=	"所選邊線或修剪面已被薄殼性質特徵產生. \n 無法以局部修改命令修改.";
+PrtFuncFillet06=	"所選邊線或修剪面導致循環.";
+PrtFuncFillet07=	"所選邊線或修剪面不屬於之前所選元素.\n 此組合不適用局部修改命令修改.";
+
+PrtRevolInp1=      "二個角度和必需大於 0.";
+PrtRevolInp2=      "你必需指定依附在斷面平面上的軸.";
+PrtRevolInp3=      "選擇的草圖必需封閉或在軸上封閉.";
+PrtRevolInp4=      "二個角度和必需小於 360度.";
+PrtRevolInp5=      "您無法在零件實體的第一個特徵, 對開放本體使用溶合結束選項.";
+PrtRevolInp6=      "斷面局部與軸垂直. 請選擇另一斷面不與軸平行的.";
+PrtRevolInp7=      "斷面局部與軸相交.請選擇另一斷面不與軸相交的.";
+PrtRevolInp8=      "所選斷面無法建立所需特徵. 相關斷面含有數個零件.";
+PrtRevolInp9=      "軸必須平行於草圖斷面";
+
+PrtPattInp1=     "特徵不能產生陣列.
+請點選確認鍵來移除這些定義.";
+PrtPattInp2=     "一些面或邊無法用
+來定義陣列方向.
+請點選確認鍵來移除這些定義.";
+PrtPattInp3=     "你必需指定點來定義軸.";
+PrtPattInp4=     "結果沒有相同的極性當作目前的本體.";
+PrtPattInp5=     "選擇的特徵 /p1 ,其中之一不能轉換.";
+PrtPattInp6=     "新建複本的數量只包含本來要作陣列的物件. 
+你必需增加數量.";
+PrtPattInp7=     "清單中的一或數個特徵已經被刪除. 
+資料將會不一致.你必需刪除轉換.";
+PrtPattInp8=     "所選的特徵之一不可轉換.
+為建立表列特徵陣列, 選擇陣列後必須先多重選擇特徵.";
+PrtPattInp9=     "所選陣列沒有點.";
+PrtPattInp10=    "目前實體或鏡射的陣列,體積,曲面和組立特徵無法炸開.";
+PrtPattInp11=     "所選的特徵無法轉移. 
+目前實體將被轉移";
+PrtPattInp12=     "新建複本的數目無效, 您必須增加數目.";
+PrtPattInp13=     "無法計算幾何:
+/p1 : /P2.";
+PrtPattInp14=     "請在選擇點前先選擇平面, 修剪面或邊線.";
+PrtPattInp15=     "自發性外形設計工作檯中不允許曲面或線架構陣列特徵中的陣列.";
+PrtPattInp16=     "選擇 GSD 元素.";
+PrtPattInp17=     "特徵清單中所建立的陣列不允許建立陣列 .";
+PrtPattInp18= "方形陣列的第一和第二參考方向無法互相平行";
+PrtPattInp19=     "因特徵刪除, 使用相同特徵的陣列物件更改為目前實體.";
+
+PrtHoleInp1=
+"螺紋深度必需 
+小於或等於總深度.";
+PrtHoleInp2=
+"魚眼孔直徑必需
+大於或等於主要直徑值.";
+PrtHoleInp3=
+"魚眼孔深度必需
+小於或等於總深度.";
+PrtHoleInp4=
+"倒錐形魚眼孔直徑必需
+大於或等於主要直徑值.";
+PrtHoleInp5=
+"倒錐形魚眼孔深度必需
+小於或等於總深度.";
+PrtHoleInp6=
+"錐形魚眼孔深度必需
+小於或等於總深度.";
+PrtHoleInp7=
+"孔直徑值必需 
+小於螺紋直徑值.";
+PrtHoleInp8="標準已經存在螺紋型式標準中.";
+PrtHoleInp9="檔案來源無法有效定義螺紋標準.";
+PrtHoleInp10="標準 /p1 不能被刪除 . 它至少被孔  /p2 使用.";
+
+PrtHoleInp11="無法找到公制的薄和厚的節距定義 .";
+PrtHoleInp12="標準 /p1 的檔案原始路徑已更改, 必須重新定義.";
+PrtHoleInp13="所選的檔案名稱與標準 /p1 不相關.";
+PrtHoleInp14="所選的方向和修剪面不相交.";
+PrtHoleInp15="所選擇元素和孔定義不一致.";
+PrtHoleInp16="孔直徑數值由公式驅動. \n 標準直徑數值 (/p1) 無法計入.";
+PrtHoleInp17="孔單位數量由公式驅動 .\n 標準單位數量 (/p1) 無法計入.";
+PrtHoleInp18="標準單位 (/p1) 與模形單位 (/p2) 不同. \n 警告: 數值將被轉換.";
+PrtHoleInp19="數值 /p1 不存在所選標準中.";
+PrtHoleInp20=
+"沈錐孔直徑必須大於或等於主要直徑數值.";
+PrtHoleInp21 = "標準已存在螺紋標準型式 .\n 您要將新的原始檔案成為參考嗎?";
+
+PrtFuncHole01="所選修剪面不屬於目前的功能性本體.";
+
+PrtSweepInp1=
+"拉伸的方向必需先定義.";
+PrtSweepInp2=
+"斷面和中心曲線不可在平行的平面上.";
+PrtSweepInp3=
+"指定的拉伸方向和中心曲線不允許 \n 計算非明確的雲形線.";
+PrtSweepInp4=
+"指定的中心曲線不能用.";
+PrtSweepInp5=
+"拉伸的方向不能用.";
+PrtSweepInp6=
+"指定的參考曲面不能用.";
+PrtSweepInp7=
+"斷面和中心曲線相同.";
+PrtSweepInp8=
+"選擇的斷面和中心曲線導致扭曲的組態. \n 使用較小曲率的中心曲線.";
+PrtSweepInp9=
+"中心曲線必須依附在參考曲面上.";
+PrtSweepInp10=
+"拉伸方向不可與路徑平行.";
+
+PrtThreadInp1="螺紋和絲攻的依附必須是圓柱.";
+PrtThreadInp2="絲攻的直徑必須大於依附直徑.";
+PrtThreadInp3="螺紋公稱直徑必須與依附直徑相等.";
+PrtThreadInp4="螺紋和絲攻的深度必須小於可用的依附深度. \n 可用的依附深度取決於螺紋和絲攻的深度";
+PrtThreadInp6="依附修剪面無法使用. 請按 確認鍵 來移除指定.";
+PrtThreadInp7="極限修剪面無法使用.請按 確認鍵 來移除指定.";
+PrtThreadInp8="極限修剪面無法使用.";
+PrtThreadInp9="依附修剪面無法使用.";
+PrtThreadInp10="極限修剪面必須是平面形式.";
+PrtThreadInp11="螺紋和絲攻的直徑必須大於 0.";
+PrtThreadInp12="螺紋和絲攻超過依附極限.";
+PrtThreadInp13="直徑支援值為 /p1.\n 以您定的標準建議值應為 /p2 .";
+PrtThreadInp14="公稱直徑 /p1 不存在您目前的標準 /p2 中. \n 標準會設成沒有標準";
+PrtThreadInp15="所選的修剪面屬於 /p1.\n 建議您使用孔的命令來攻牙.";
+PrtThreadInp16="所選的修剪面必須屬於已攻牙的孔.";
+PrtThreadInp17="在所選的修剪面至少有一個已攻牙的孔.";
+
+PrtShellInp1=     "一些面不能用.
+點選確認鍵來移除這些定義.";
+PrtShellInp2=     "厚度總和
+ 不能等於 0.";
+PrtShellInp3=     "一些指定的面是分離的.";
+PrtShellInp4=     "本體具有兩塊以上.
+所有塊狀會造成空心.";
+
+PrtShellInp5=     "選擇依附體積的修剪面.";
+PrtShellInp6=     "選擇屬於體積的修剪面.";
+
+PrtThicknessInp1=     "一些面不能用.
+請點選確認鍵來移除這些定義.";
+PrtThicknessInp2=     "一些指定的面是分離的.";
+PrtTrimInp1=     "一些面不能用.
+請點選確認鍵來移除這些定義.";
+PrtTrimInp2=     "選擇的面不能屬於選擇的本體.";
+PrtTrimInp3=     "選擇的面不能用.
+該面屬於 2個選擇的本體";
+PrtTrimInp4=     "選擇的面是修剪的.
+嘗試選擇未修剪的面.";
+PrtContextuelInp1=     "一些面不能用.
+請點選確認鍵來移除這些定義.";
+PrtContextuelInp2=     "連接問題: 點不能用.
+請點選確認鍵來移除這些定義.";
+PrtTrimInp5=     "取消選擇本體或體積將會同時取消選擇相關的修剪面.";
+
+PrtDraftInp1=          "注意選擇面中的一個已經拔模.
+無論如何,你不能再拔模一次. ";
+PrtDraftInp2=          "所選的幾何無法定義拉伸方向. ";
+PrtDraftInp3=          "為避免曲面扭曲, 一特定修剪面已產生. 請以脫模分析來檢查, 且以曲率分析來檢查曲率. ";
+PrtDraftInp4=     "您無法以兩側邊或選擇中介面來建立變化角度的脫模曲面.";
+PrtDraftInp5=     "脫模形式會被修改.";
+PrtDraftInp6=     "如您有數個角度值則無法建立常數脫模面.";
+PrtDraftInp7=     "您無法以未在相同切面方向的多重修剪面來建立變化脫模曲面.";
+PrtDraftInp8=     "選擇點前先定義中介曲線 \n.";
+PrtDraftInp9=     "所選的點無法投影.";
+PrtDraftInp10=     "如果在第二方向沒有脫模面 \n 則您無法在雙側建立脫模曲面.";
+PrtDraftInp11=     "使用者所定義的點已移除";
+PrtDraftInp12=     "脫模面的中介曲線已被局部修改.";
+PrtDraftInp13=     "內部錯誤 : 推拔的修剪面清單是空的.";
+PrtDraftInp14=     "因所產生的中界曲線未連接,導致所選修剪面無法脫模.";
+PrtDraftInp15=     "要推拔的面不可和中界面一樣.";
+PrtDraftInp16=     "封閉曲面上無法建立變化角度推拔. \n 只可使用 3D 點. 取消選擇預設頂點或平面.";
+PrtDraftInp17=     "未連接曲面上無法建立變化角度推拔.";
+
+PrtOffsetInp1=          "你不能選擇平面. ";
+
+PrtOffsetInp2=      "有些修剪面無法使用.
+請按一下 確認鍵 來移除規格.";
+
+PrtOffsetInp3=     "所選曲面無法偏移.";
+
+PrtSplitInp1=      "有些修剪面無法使用.
+請按一下 確認鍵 來移除規格.";
+PrtSplitInp2=      "更新後請檢查實體分割方向. 如果分割部份錯誤請編輯分割特徵.";
+PrtSplitInp3=      "因為分割定義更改, 分割方向可能會更改.";
+
+PrtCloseInp1= "特徵說明已經遺漏 \n 必需重新定義";
+PrtCloseInp2= "指定目的地無法使用.";
+
+PrtBooleanInp1="所選本體無法執行布林運算,請選擇另一本體.";
+PrtBooleanInp2="零件本體無法執行布林運算,請選擇另一本體.";
+PrtBooleanInp3="相關所選零件本體的零件無效.";
+PrtBooleanInp4=".";
+PrtBooleanInp5="執行本體為空的.";
+PrtBooleanInp6="所選和執行本體為空的.";
+PrtBooleanInp7="所選本體為空的.";
+PrtBooleanInp8="已選多重體積和本體.";
+PrtBooleanInp9="目前特徵不正確.";
+PrtBooleanInp10="所選體積必須屬於目前線性幾何組 \ 幾何組";
+PrtBooleanInp11="此特徵無法使用在組立動作";
+PrtBooleanInp12="多重選擇只適用在本體上";
+PrtBooleanInp13="所選元素導致循環. 請選擇另一元素";
+PrtBooleanInp14="所選體積不正確";
+PrtBooleanInp15="選擇本體";
+PrtBooleanInp16="此特徵無法執行布林動作";
+PrtBooleanInp17="選擇體積.";
+PrtBooleanInp18="無法執行交換動作";
+PrtBooleanInp19="布林動作位於新舊實體之間.
+執行本體位於布林操作子之下. 
+此組態不支援.
+導致操作本體內的主要顯示問題. 
+修正此問題,操作本體將會移至零件下.";
+PrtBooleanInp20="不允許在屬於相同幾何組間
+建立打斷布林動作.";
+PrtBooleanInp21="不可在相同的 OGS/工具 分枝執行布林動作";
+
+PrtAutoFilletInp1="修剪面選取為 Sliver 或 Crack";
+PrtAutoFilletInp2="修剪面選取為功能性修剪面";
+PrtAutoFilletInp3="此修剪面選擇為功能性修剪面, a Sliver 或 a Crack";
+
+PrtInterruptInp1="更新由使用者中斷";
+
+PrtDraftBSInp1="至少有一個選擇與己選的修剪面不匹配.";
+PrtDraftBSInp2 = "以雙側命令建立或編輯單側推拔己不再可用.
+為兩側或分模面選擇中界面現在是必須的要件.
+如缺少部分輸入,請參考說明圖.";
+PrtDraftBSInp3 = "己無法再選擇第二側的拉伸方向.
+拉伸方向己重設為預設.";
+

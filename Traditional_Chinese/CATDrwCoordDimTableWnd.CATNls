@@ -1,0 +1,75 @@
+//=============================================================================
+//                                     CNEXT - CXR2
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATDrwCoordDimTableCmd
+// LOCATION    :    DraftingIntCommands/CNext/resources/msgcatalog
+// AUTHOR      :    HBH
+// DATE        :    Octobre 2001
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Drafting Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date          purpose
+//   HISTORY       
+//    01		lgk	09.10.2002 Revision
+//------------------------------------------------------------------------------
+
+Title="軸系和列表參數";
+
+_axisSystemComboFrame._axisSystemLabel.Title="軸系: ";
+
+_axisSystemFrame._xLabel.Title="X: ";
+_axisSystemFrame._yLabel.Title="Y: ";
+_axisSystemFrame._zLabel.Title="Z: ";
+_axisSystemFrame._xSpinner.LongHelp="軸系原點的 X 座標.";
+_axisSystemFrame._ySpinner.LongHelp="軸系原點的 Y 座標.";
+_axisSystemFrame._zSpinner.LongHelp="軸系原點的 Z 座標.";
+
+_axisSystemFrame._angleFrame._angleLabel.Title="角度: ";
+_axisSystemFrame._angleFrame._angleLabel.LongHelp="定義 2D 軸系旋轉角度.";
+
+_axisSystemFrame._flipFrame._flipLabel.Title="翻轉: ";
+_axisSystemFrame._flipFrame._flipHorizontalPush.ShortHelp="水平翻轉";
+_axisSystemFrame._flipFrame._flipHorizontalPush.LongHelp="水平翻轉 2D 軸系.";
+_axisSystemFrame._flipFrame._flipVerticalPush.ShortHelp="垂直翻轉";
+_axisSystemFrame._flipFrame._flipVerticalPush.LongHelp="垂直翻轉 2D 軸系.";
+
+_axisSystemFrame._axisCreationCheck.Title="建立表現方式";
+_axisSystemFrame._axisCreationCheck.LongHelp="建立 2D 軸系表現方式";
+
+_tableContentTitle.Title="列表內容";
+
+_tableTitleFrame._tableTitleLabel.Title="標頭: ";
+_tableTitleFrame._tableTitleEditor.LongHelp="列表標頭";
+
+_tableFormatTitle.Title="列表格式";
+_tableFormatFrame._InvertCheckButton.Title="轉換列表";
+_tableFormatFrame._InvertCheckButton.LongHelp="轉換列表的行和列";
+_tableFormatFrame._sortFrame._sortCheck.Title="搜尋列表內含";
+_tableFormatFrame._sortFrame._sortCheck.LongHelp="依據特定標準搜尋列表內含.";
+_tableFormatFrame._sortFrame._sortPush.Title="...";
+_tableFormatFrame._sortFrame._sortPush.LongHelp="依據特定標準搜尋列表行.";
+
+_tableFormatFrame._splitFrame._splitCheck.Title="分割列表";
+_tableFormatFrame._splitFrame._splitCheck.LongHelp="分割列表成數個";
+_tableFormatFrame._splitFrame._splitPush.Title="...";
+_tableFormatFrame._splitFrame._splitPush.LongHelp="分割列表成數個";
+
+ColumnsFrame.Title2.Title="名稱";
+ColumnsFrame.Column.Title="行";
+NONE="無";
+LABEL="標籤 : A, B, C, ...";
+INDEX="索引 : 1, 2, 3, ...";
+ColumnsFrame.X.Title="X";
+ColumnsFrame.Y.Title="Y";
+ColumnsFrame.Z.Title="Z";
+REF="REF.";
+XTITLE="X";
+YTITLE="Y";
+ZTITLE="Z";
+ColumnsFrame._ReferenceOption.Title="...";
+ColumnsFrame._ReferenceOption.LongHelp=" 指定第一個文字或第一個參考索引. ";

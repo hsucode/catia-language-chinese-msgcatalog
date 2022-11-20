@@ -1,0 +1,209 @@
+// COPYRIGHT DASSAULT SYSTEMES 1999
+//=============================================================================
+//
+// Resources File for NLS purpose related to TPS types
+//
+//=============================================================================
+// Usage notes:
+//
+//=============================================================================
+// Sep. 1999  Creation                                                  G. Bapt
+//=============================================================================
+
+// Attention l ordre des supertypes/types (a modifier a chaque rajout d un 
+// nouveau supertype/type, si on veut le voir dans le filtre) est dans le 
+// fichier CATTPS.Rsc (car pas traduisible).
+
+//------------------------------------------------------------- Container Name
+CATTPS.CATTTRSCont = "標註";
+
+//------------------------------------------------------------------- Set Name
+CATTPS.f4a2d38f3ddc11d3a929006094b99c4b = "標註組合";
+CATTPS.GeneralSet = "組立標註組";
+
+//-------------------------------------------------------------- Sub Node Name
+CATTPS.SubNode.Captures = "鎖定圖像";
+CATTPS.SubNode.Views = "視圖";
+
+CATTPS.SubNode.Datums = "基準";
+CATTPS.SubNode.ReferenceFrames = "參考框架";
+CATTPS.SubNode.GeomTolerances = "幾何公差";
+CATTPS.SubNode.Dimensions = "尺寸";
+CATTPS.SubNode.Roughness = "粗度";
+CATTPS.SubNode.Welds = "焊接";
+CATTPS.SubNode.Notes = "標註";
+CATTPS.SubNode.PartialAreas = "部份區域";
+
+CATTPS.SubNode.Deviations = "變異";
+CATTPS.SubNode.Distances = "距離";
+CATTPS.SubNode.AnalysisVariations = "變異分析";
+CATTPS.SubNode.MorphingVariations = "外形變異";
+CATTPS.SubNode.Gravities = "重力";
+
+CATTPS.SubNode.FunctionnalConditions = "功能性情形";
+CATTPS.SubNode.FunctionnalLinks = "功能性鏈結";
+
+CATTPS.SubNode.Geometries = "建構幾何元素";
+
+CATTPS.SubNode.TTRS = "標註幾何特徵";
+
+//-------------------------------------------------------------- Capture Name
+CATTPS.c0074552099b11d6be990003479ec69d = "鎖定圖像";
+
+//----------------------------------------------------------------- View Name
+CATTPS.83ac740f150011d4949b0004ac96129fProjView = "投影視圖";
+CATTPS.83ac740f150011d4949b0004ac96129fSectView = "切面視圖";
+CATTPS.83ac740f150011d4949b0004ac96129fSCutView = "切割視圖";
+CATTPS.83ac740f150011d4949b0004ac96129fTopViews = "上視圖";
+CATTPS.83ac740f150011d4949b0004ac96129fLeftView = "左視圖";
+CATTPS.83ac740f150011d4949b0004ac96129fRearView = "後視圖";
+CATTPS.83ac740f150011d4949b0004ac96129fRighView = "右視圖";
+CATTPS.83ac740f150011d4949b0004ac96129fBottView = "底視圖";
+
+//----------------------------------------------------------------- Extraction View Name
+CATTPS.0fb2c0f4ef6d481389506a61bc87f795AlignVie = "對齊剖面視圖";
+CATTPS.0fb2c0f4ef6d481389506a61bc87f795AlignCut = "對齊切面視圖";
+CATTPS.0fb2c0f4ef6d481389506a61bc87f795OffsetVi = "偏移剖面視圖";
+CATTPS.0fb2c0f4ef6d481389506a61bc87f795OffsetCu = "偏移切面視圖";
+
+//------------------------------------------------------------------ Supertype
+CATTPSTolerance.0="公差";
+                  
+CATTPS.75a60f7f400611d3a92c006094b99c4b ="基準面";                           //1
+CATTPS.75a60f7a400611d3a92c006094b99c4b ="從";                            //2
+CATTPS.75a60f7e400611d3a92c006094b99c4b ="尺寸";                            //3
+// On est en ASME donc les supertypes  Position orientation and runout
+// sont regroupes sous la meme denomination
+CATTPS.75a60f7c400611d3a92c006094b99c4b ="位置定位和偏擺度";//4Posi
+CATTPS.75a60f7b400611d3a92c006094b99c4b ="位置定位和偏擺度";//4Orie
+CATTPS.75a60f7d400611d3a92c006094b99c4b ="位置定位和偏擺度";//4RunO
+CATTPS.f4a2d3953ddc11d3a929006094b99c4b ="無語義(Semantic)";                    //5
+CATTPS.75a60f9a400611d3a92c006094b99c4b ="粗糙度";                       //6
+
+//------------------------------------------------------------------------ Type
+
+//----------------------------------------------------------------------- Datum
+// 1.1 primary : 1.11 secondary : 1.12 tertiary : 1.13
+CATTPS.75a60f95400611d3a92c006094b99c4b = "簡單的基準面";
+CATTPS.75a60f97400611d3a92c006094b99c4b = "基準面系統"; //1.2
+// primary : 1.111 secondary : 1.112 tertiary : 1.113
+CATTPS.75a60f96400611d3a92c006094b99c4b = "基準面目標";
+CATTPS.335352e6432a11d3a92d006094b99c4b = "基準參考框架";
+
+//------------------------------------------------------------------------ Form
+CATTPS.75a60f81400611d3a92c006094b99c4b = "筆直";         //2.1
+CATTPS.7c122933e8b011d586080010a4899d8f = "軸直度";    //2.11
+CATTPS.75a60f82400611d3a92c006094b99c4b = "平坦";             //2.2
+CATTPS.75a60f83400611d3a92c006094b99c4b = "圓形";          //2.3
+CATTPS.75a60f84400611d3a92c006094b99c4b = "圓柱";         //2.4
+CATTPS.75a60f85400611d3a92c006094b99c4b = "任何線性的斷面公差";   //2.5
+CATTPS.75a60f86400611d3a92c006094b99c4b = "任何曲面的斷面公差";//2.6
+CATTPS.75a60f87400611d3a92c006094b99c4b = "圖樣位置"; //2.7
+
+//------------------------------------------------------------------------ Size
+CATTPS.75a60f90400611d3a92c006094b99c4b = "線性的";         //3.1
+CATTPS.75a60f91400611d3a92c006094b99c4b = "角度的";        //3.2
+CATTPS.75a60f94400611d3a92c006094b99c4b = "倒角尺寸";    //3.3
+CATTPS.75a60f99400611d3a92c006094b99c4b = "基本尺寸";//3.4
+CATTPS.75a60f92400611d3a92c006094b99c4b = "第二線性大小"; //3.5 Second linear
+CATTPS.17f49a80ec074a8a875dccac19a5cda9 = "定位線性尺寸";
+CATTPS.e41043ae361041eb81dcfff3ce045be4 = "定位角度尺寸";
+
+//-------------------------------------------- Position Orientation and Run-Out
+CATTPS.75a60f88400611d3a92c006094b99c4b = "平行";               //4.1
+CATTPS.75a60f89400611d3a92c006094b99c4b = "垂直";          //4.2
+CATTPS.75a60f8a400611d3a92c006094b99c4b = "角度";                //4.3
+CATTPS.75a60f8b400611d3a92c006094b99c4b = "位置";                //4.4
+CATTPS.75a60f8c400611d3a92c006094b99c4b = "同心";             //4.5
+CATTPS.75a60f8d400611d3a92c006094b99c4b = "對稱";                  //4.6
+CATTPS.10bdbb717a3611d3a93f006094b99c4b = "位置線性的斷面";   //4.7
+CATTPS.10bdbb707a3611d3a93f006094b99c4b = "位置曲面的斷面"; //4.8
+CATTPS.75a60f8e400611d3a92c006094b99c4b = "總偏擺度";             //4.9
+CATTPS.75a60f8f400611d3a92c006094b99c4b = "圓形偏擺度";          //4.10
+
+//----------------------------------------------------------------- NonSemantic
+CATTPS.f4a2d3943ddc11d3a929006094b99c4b = "文字";           //5.0
+CATTPS.75a60f98400611d3a92c006094b99c4b = "旗標備註";      //5.1
+CATTPS.7011eb2875cd11d59ee400508b13182d = "標註物件屬性";
+CATTPS.7cecb0fca0ed11d3a94e006094b99c4b = "基準面"; 
+CATTPS.75a60f80400611d3a92c006094b99c4b = "幾何公差"; 
+CATTPS.a78a75cb3c8811d494b10004ac96129f = "基準目標";
+CATTPS.3dccd85dccb211d394740004ac96129f = "焊接符號";
+CATTPS.53ce38e693b911d4907c0004ac96df1d = "尺寸";
+CATTPS.ea0e21c47f38456da94cb0c32cd3cead = "座標尺寸";
+
+//------------------------------------------------------------------- Roughness
+// Pas besoin deja declare en temps que Super Type
+//CATTPS.75a60f9a400611d3a92c006094b99c4b = "粗糙度";  //6.0
+
+//------------------------------------------------------------------- Deviation
+CATTPS.c17f1520a3ef11d3a951006094b99c4b = "偏差";
+CATTPS.f13928129f7611d484fa00008656f176 = "相關變異";
+CATTPS.20237ab2083111d5856e00008656f176 = "距離點到點";
+CATTPS.b0f4328ec20c11d5ab4900306e0aa2f3 = "分析幾何變異";
+CATTPS.dff5b5137d6b4cf38e686e7229de5d96 = "重力標註";
+CATTPS.bba0626dd7124a5f80a8743d179af7bb = "外形變異";
+
+//-------------------------------------------------------------- RestrictedArea
+CATTPS.444330305d8f11d6be950002b341dd3a = " 限制區域";
+//----------------------------------------------------------------- SingleLimit
+SingleLimit.Maximum       = "最大值";
+SingleLimit.Minimum       = "最小值";
+SingleLimit.AsInformation = "作為資訊";
+
+//------------------------------------------------------------- TTRS Class Type
+TTRS.Class.1 = "球形";
+TTRS.Class.2 = "平面";
+TTRS.Class.3 = "圓柱";
+TTRS.Class.4 = "螺旋狀";
+TTRS.Class.5 = "旋轉";
+TTRS.Class.6 = "稜柱狀";
+TTRS.Class.7 = "複雜";
+
+//-----------------------------------------------------------------------------
+TTRS.Type.1 = "單一";
+TTRS.Type.2 = "相關";
+TTRS.Type.3 = "圖樣";
+TTRS.Type.4 = "外形";
+
+//----------------------------------------------------- Tolerance Visualization
+TolVisu.PerfectForm = "完整型式 MMC 不需要";
+
+//----------------------------------------------------------------- Common Zone
+TPSCommonZone = "共同區域";
+TPSSurface    = "曲面";
+
+//-------------------------------------------------------- Constructed Geometry
+CATTPS.CGFakeProductName = "建構幾何產品";
+CATTPS.CGFakePartName    = "建構幾何零件";
+CATTPS.CGOpenBodyName    = " 3D 標註的幾何組";
+
+CATTPS.ConePoint         = "圓椎頂點";
+CATTPS.IntersectingPoint = "交點";
+CATTPS.CirclePoint       = "圓中心點";
+CATTPS.SpherePoint       = "球中心點";
+CATTPS.TorusPoint        = "環曲面中心點";
+
+CATTPS.CylindricalAxis   = "圓柱中心軸";
+CATTPS.ConeAxis          = "圓椎中心軸";
+CATTPS.TorusAxis         = "環曲面中心軸";
+CATTPS.RevolutionAxis    = "旋轉軸";
+CATTPS.IntersectingAxis  = "相交軸";
+
+CATTPS.ConePlane         = "標準面";
+CATTPS.PassingPlane      = "經過面";
+CATTPS.MedianPlane       = "中心面";
+CATTPS.AnglePlane        = "角度面";
+CATTPS.TorusPlane        = "環曲面中心平面";
+CATTPS.UpperThreadPlane    = "上螺紋平面";
+CATTPS.LowerThreadPlane    = "下螺紋平面";
+
+CATTPS.ConeCircle        = "標準圓";
+
+CATTPS.CirclingCylinder  = "圓形圓柱";
+CATTPS.RefCirclingCylinder = "圓形圓柱";
+CATTPS.ThreadCylinder      = "螺紋圓柱";
+
+CATTPS.Curve  = "曲線";
+
+CATTPS.ElementsThread    = "螺紋的幾何表現方式";

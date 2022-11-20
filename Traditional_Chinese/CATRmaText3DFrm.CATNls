@@ -1,0 +1,396 @@
+// COPYRIGHT DASSAULT SYSTEMES 2002
+//===========================================================================
+//
+// CATRmaText3DFrm (English)
+//
+//===========================================================================
+
+DisabledRampCursor = "關閉";
+EnableVeinColor    = "啟動";
+
+Marble0Lab.Title = "材料顏色 ";
+Marble1Lab.Title = "1   Vein 顏色 ";
+Marble2Lab.Title = "2   Vein 顏色 ";
+Marble3Lab.Title = "3   Vein 顏色 ";
+
+MarbleBut.Help = "大理石貼圖顏色參數";
+MarbleBut.ShortHelp = "大理石貼圖顏色參數";
+MarbleBut.LongHelp = "大理石貼圖顏色參數";
+
+Vein0Lab.Title = "Material 顏色 ";
+Vein1Lab.Title = "1   Vein 顏色 ";
+Vein2Lab.Title = "2   Vein 顏色 ";
+Vein3Lab.Title = "3   Vein 顏色 ";
+Vein4Lab.Title = "4   Vein 顏色 ";
+
+VeinBut.Help = "Vein 貼圖顏色參數";
+VeinBut.ShortHelp = "Vein 貼圖顏色參數";
+VeinBut.LongHelp = "指定 vein 顏色參數";
+
+VeinSld.Help = "Vein 寬度參數";
+VeinSld.ShortHelp = "Vein 寬度參數";
+VeinSld.LongHelp = "指定 vein 寬度參數";
+
+VeinChk.Help = "使用 vein 參數";
+VeinChk.ShortHelp = "使用 vein 參數";
+VeinChk.LongHelp = "指出 3D 貼圖是否使用 vein.";
+
+Rock0Lab.Title = "材料顏色 ";
+Rock1Lab.Title = "1        顏色 ";
+Rock2Lab.Title = "2        顏色 ";
+
+RockBut.Help = "Rock 貼圖顏色參數";
+RockBut.ShortHelp = "Rock 貼圖顏色參數";
+RockBut.LongHelp = "指定 rock 顏色參數.";
+
+ChessBoard0Lab.Title = "1   Tile 顏色 ";
+ChessBoard1Lab.Title = "2   Tile 顏色 ";
+ChessBoard2Lab.Title = "3   Tile 顏色 ";
+ChessBoard3Lab.Title = "4   Tile 顏色 ";
+ChessBoard4Lab.Title = "Join 顏色 ";
+
+ChessBoardBut.Help = "棋盤貼圖顏色參數";
+ChessBoardBut.ShortHelp = "棋盤貼圖顏色參數";
+ChessBoardBut.LongHelp = "棋盤貼圖顏色參數";
+
+ChessBoardChk.Help = "使用 tile 參數";
+ChessBoardChk.ShortHelp = "使用 tile 參數";
+ChessBoardChk.LongHelp = "指出 3D 貼圖是否使用 tile 參數";
+
+colorSepFrame.colorSepLabel.Title = "顏色";
+noiseSepFrame.noiseSepLabel.Title = "變形";
+bumpSepFrame.bumpSepLabel.Title = "Bump";
+transformSepFrame.transformSepLabel.Title = "變化";
+
+// Marble Frame
+//-------------
+noiseFactoryFrm.marbleFrm.chkTurbulence.Title = "擾流 ";
+noiseFactoryFrm.marbleFrm.chkTurbulence.Help  = "使用擾流功能";
+noiseFactoryFrm.marbleFrm.chkTurbulence.ShortHelp = "使用擾流";
+noiseFactoryFrm.marbleFrm.chkTurbulence.LongHelp = 
+"指定是否要使用擾流功能來變形貼圖.";
+
+noiseFactoryFrm.marbleFrm.octaveLab.Title = "複雜性 ";
+noiseFactoryFrm.marbleFrm.octaveLab.Help  = "貼圖的複雜參數";
+noiseFactoryFrm.marbleFrm.octaveLab.ShortHelp = "複雜參數 (從 1 至 10)";
+noiseFactoryFrm.marbleFrm.octaveLab.LongHelp  =
+"指定貼圖變化的複雜性.";
+
+noiseFactoryFrm.marbleFrm.octaveSld.Title = " 複雜性 ";
+noiseFactoryFrm.marbleFrm.octaveSld.Help  = "貼圖的複雜參數";
+noiseFactoryFrm.marbleFrm.octaveSld.ShortHelp = "複雜參數 (從 1 至 10)";
+noiseFactoryFrm.marbleFrm.octaveSld.LongHelp  =
+"指定貼圖變化的複雜性.";
+
+noiseFactoryFrm.marbleFrm.lacunarityLab.Title = "Perturbation ";
+noiseFactoryFrm.marbleFrm.lacunarityLab.Help  = "Perturbation parameter of the texture";
+noiseFactoryFrm.marbleFrm.lacunarityLab.ShortHelp = "Perturbation parameter (from 1 to 10)";
+noiseFactoryFrm.marbleFrm.lacunarityLab.LongHelp  =
+"Indicates the perturbation of the deformation of the texture.";
+
+noiseFactoryFrm.marbleFrm.lacunaritySld.Title = "Perturbation ";
+noiseFactoryFrm.marbleFrm.lacunaritySld.Help  = "Perturbation parameter of the texture";
+noiseFactoryFrm.marbleFrm.lacunaritySld.ShortHelp = "Perturbation parameter (from 1 to 10)";
+noiseFactoryFrm.marbleFrm.lacunaritySld.LongHelp  =
+"Indicates the perturbation of the deformation of the texture.";
+
+noiseFactoryFrm.marbleFrm.gainLab.Title = "Gain ";
+noiseFactoryFrm.marbleFrm.gainLab.Help  = "Gain parameter of the texture"; 
+noiseFactoryFrm.marbleFrm.gainLab.ShortHelp = "Gain parameter (from 0 to 2)";
+noiseFactoryFrm.marbleFrm.gainLab.LongHelp = 
+"Indicates the sub-complexity of the deformation of the texture.";
+
+noiseFactoryFrm.marbleFrm.gainSld.Title = "Gain ";
+noiseFactoryFrm.marbleFrm.gainSld.Help  = "Gain parameter of the texture"; 
+noiseFactoryFrm.marbleFrm.gainSld.ShortHelp = "Gain parameter (from 0 to 2)";
+noiseFactoryFrm.marbleFrm.gainSld.LongHelp = 
+"Indicates the sub-complexity of the deformation of the texture.";
+
+noiseFactoryFrm.marbleFrm.filterWidthLab.Title = "範圍 ";
+noiseFactoryFrm.marbleFrm.filterWidthLab.Help  = "貼圖的範圍參數";
+noiseFactoryFrm.marbleFrm.filterWidthLab.ShortHelp = "範圍參數 (從 2 至 4)";
+noiseFactoryFrm.marbleFrm.filterWidthLab.LongHelp  =
+"指定貼圖變化的範圍.";
+
+noiseFactoryFrm.marbleFrm.filterWidthSld.Title = "範圍 ";
+noiseFactoryFrm.marbleFrm.filterWidthSld.Help  = "貼圖的範圍參數";
+noiseFactoryFrm.marbleFrm.filterWidthSld.ShortHelp = "範圍參數 (從 2 至 4)";
+noiseFactoryFrm.marbleFrm.filterWidthSld.LongHelp  =
+"指定貼圖變化的範圍.";
+
+// Vein Frame
+//-----------
+noiseFactoryFrm.veinFrm.chkTurbulence.Title = "Turbulence ";
+noiseFactoryFrm.veinFrm.chkTurbulence.Help  = "Use the turbulence function";
+noiseFactoryFrm.veinFrm.chkTurbulence.ShortHelp = "Use the turbulence";
+noiseFactoryFrm.veinFrm.chkTurbulence.LongHelp = 
+"Indicates whether the turbulence function is use to deform the texture.";
+
+noiseFactoryFrm.veinFrm.amplitudeLab.Title = "範圍 ";
+noiseFactoryFrm.veinFrm.amplitudeLab.Help  = "貼圖的範圍參數";
+noiseFactoryFrm.veinFrm.amplitudeLab.ShortHelp = "範圍參數 (從 0 至 10)";
+noiseFactoryFrm.veinFrm.amplitudeLab.LongHelp  =
+"指定貼圖變化的範圍.";
+
+noiseFactoryFrm.veinFrm.amplitudeSld.Title = "範圍 ";
+noiseFactoryFrm.veinFrm.amplitudeSld.Help  = "貼圖的範圍參數";
+noiseFactoryFrm.veinFrm.amplitudeSld.ShortHelp = "範圍參數 (從 0 至 10)";
+noiseFactoryFrm.veinFrm.amplitudeSld.LongHelp  =
+"指定貼圖變化的範圍.";
+
+noiseFactoryFrm.veinFrm.octaveLab.Title = "Complexity ";
+noiseFactoryFrm.veinFrm.octaveLab.Help  = "Complexity parameter of the texture";
+noiseFactoryFrm.veinFrm.octaveLab.ShortHelp = "Complexity parameter (from 1 to 10)";
+noiseFactoryFrm.veinFrm.octaveLab.LongHelp  =
+"Indicates the complexity of the deformation of the texture.";
+
+noiseFactoryFrm.veinFrm.octaveSld.Title = " Complexity ";
+noiseFactoryFrm.veinFrm.octaveSld.Help  = "Complexity parameter of the texture";
+noiseFactoryFrm.veinFrm.octaveSld.ShortHelp = "Complexity parameter (from 1 to 10)";
+noiseFactoryFrm.veinFrm.octaveSld.LongHelp  =
+"Indicates the complexity of the deformation of the texture.";
+noiseFactoryFrm.veinFrm.lacunarityLab.Title = "Perturbation ";
+noiseFactoryFrm.veinFrm.lacunarityLab.Help  = "貼圖的 Perturbation 參數";
+noiseFactoryFrm.veinFrm.lacunarityLab.ShortHelp = "Perturbation 參數 (從 0 至 10)";
+noiseFactoryFrm.veinFrm.lacunarityLab.LongHelp  =
+"指定貼圖的 perturbation 參數";
+
+noiseFactoryFrm.veinFrm.lacunaritySld.Title = "Perturbation ";
+noiseFactoryFrm.veinFrm.lacunaritySld.Help  = "貼圖的 Perturbation 參數";
+noiseFactoryFrm.veinFrm.lacunaritySld.ShortHelp = "Perturbation 參數 (從 0 至 10)";
+noiseFactoryFrm.veinFrm.lacunaritySld.LongHelp  =
+"指定貼圖的 perturbation 參數";
+
+noiseFactoryFrm.veinFrm.gainLab.Title = "Gain ";
+noiseFactoryFrm.veinFrm.gainLab.Help  = "Gain parameter of the texture"; 
+noiseFactoryFrm.veinFrm.gainLab.ShortHelp = "Gain parameter (from 0 to 2)";
+noiseFactoryFrm.veinFrm.gainLab.LongHelp = 
+"Indicates the sub-complexity of the deformation of the texture.";
+
+noiseFactoryFrm.veinFrm.gainSld.Title = " Gain ";
+noiseFactoryFrm.veinFrm.gainSld.Help  = "Gain parameter of the texture"; 
+noiseFactoryFrm.veinFrm.gainSld.ShortHelp = "Gain parameter (from 0 to 2)";
+noiseFactoryFrm.veinFrm.gainSld.LongHelp = 
+"Indicates the sub-complexity of the deformation of the texture.";
+
+noiseFactoryFrm.veinFrm.filterWidthLab.Title = "Amplitude ";
+noiseFactoryFrm.veinFrm.filterWidthLab.Help  = "Amplitude parameter of the texture";
+noiseFactoryFrm.veinFrm.filterWidthLab.ShortHelp = "Amplitude parameter (from 2 to 4)";
+noiseFactoryFrm.veinFrm.filterWidthLab.LongHelp  =
+"Indicates the amplitude of the deformation of the texture.";
+
+noiseFactoryFrm.veinFrm.filterWidthSld.Title = "Amplitude ";
+noiseFactoryFrm.veinFrm.filterWidthSld.Help  = "Amplitude parameter of the texture";
+noiseFactoryFrm.veinFrm.filterWidthSld.ShortHelp = "Amplitude parameter (from 2 to 4)";
+noiseFactoryFrm.veinFrm.filterWidthSld.LongHelp  =
+"Indicates the amplitude of the deformation of the texture.";
+
+// Rock Frame
+//-----------
+noiseFactoryFrm.rockFrm.chkTurbulence.Title = "Turbulence ";
+noiseFactoryFrm.rockFrm.chkTurbulence.Help  = "使用 turbulence 功能";
+noiseFactoryFrm.rockFrm.chkTurbulence.ShortHelp = "使用 turbulence";
+noiseFactoryFrm.rockFrm.chkTurbulence.LongHelp = 
+"指定是否使用 turbulence 功能來變化貼圖.";
+
+noiseFactoryFrm.rockFrm.octaveLab.Title = "複雜性 ";
+noiseFactoryFrm.rockFrm.octaveLab.Help  = "貼圖的複雜性參數";
+noiseFactoryFrm.rockFrm.octaveLab.ShortHelp = "複雜性參數 (從 0 至 10)";
+noiseFactoryFrm.rockFrm.octaveLab.LongHelp  =
+"指定貼圖變化的複雜性.";
+
+noiseFactoryFrm.rockFrm.octaveSld.Title = "複雜性 ";
+noiseFactoryFrm.rockFrm.octaveSld.Help  = "貼圖的複雜性參數";
+noiseFactoryFrm.rockFrm.octaveSld.ShortHelp = "複雜性參數 (從 0 至 10)";
+noiseFactoryFrm.rockFrm.octaveSld.LongHelp  =
+"指定貼圖變化的複雜性.";
+
+noiseFactoryFrm.rockFrm.lacunarityLab.Title = "Perturbation ";
+noiseFactoryFrm.rockFrm.lacunarityLab.Help  = "貼圖的 Perturbation 參數";
+noiseFactoryFrm.rockFrm.lacunarityLab.ShortHelp = "Perturbation 參數 (從 0 至 10)";
+noiseFactoryFrm.rockFrm.lacunarityLab.LongHelp  =
+"指定貼圖的 perturbation 參數";
+
+noiseFactoryFrm.rockFrm.lacunaritySld.Title = "Perturbation ";
+noiseFactoryFrm.rockFrm.lacunaritySld.Help  = "貼圖的 Perturbation 參數";
+noiseFactoryFrm.rockFrm.lacunaritySld.ShortHelp = "Perturbation 參數 (從 0 至 10)";
+noiseFactoryFrm.rockFrm.lacunaritySld.LongHelp  =
+"指定貼圖的 perturbation 參數";
+
+noiseFactoryFrm.rockFrm.gainLab.Title = "Gain ";
+noiseFactoryFrm.rockFrm.gainLab.Help  = "貼圖的 Gain 參數";
+noiseFactoryFrm.rockFrm.gainLab.ShortHelp = "Gain 參數 (從 0 至 2)";
+noiseFactoryFrm.rockFrm.gainLab.LongHelp = 
+"指定貼圖變化的次複雜性.";
+
+noiseFactoryFrm.rockFrm.gainSld.Title = " Gain ";
+noiseFactoryFrm.rockFrm.gainSld.Help  = "貼圖的 Gain 參數";
+noiseFactoryFrm.rockFrm.gainSld.ShortHelp = "Gain 參數 (從 0 至 2)";
+noiseFactoryFrm.rockFrm.gainSld.LongHelp = 
+"指定貼圖變化的次複雜性.";
+
+noiseFactoryFrm.rockFrm.filterWidthLab.Title = "Amplitude ";
+noiseFactoryFrm.rockFrm.filterWidthLab.Help  = "Amplitude parameter of the texture";
+noiseFactoryFrm.rockFrm.filterWidthLab.ShortHelp = "Amplitude parameter (from 2 to 4)";
+noiseFactoryFrm.rockFrm.filterWidthLab.LongHelp  =
+"Indicates the amplitude of the deformation of the texture.";
+
+noiseFactoryFrm.rockFrm.filterWidthSld.Title = "Amplitude ";
+noiseFactoryFrm.rockFrm.filterWidthSld.Help  = "Amplitude parameter of the texture";
+noiseFactoryFrm.rockFrm.filterWidthSld.ShortHelp = "Amplitude parameter (from 2 to 4)";
+noiseFactoryFrm.rockFrm.filterWidthSld.LongHelp  =
+"Indicates the amplitude of the deformation of the texture.";
+
+// Chessboard Frame
+//-----------------
+noiseFactoryFrm.chessboardFrm.tileWLab.Title = "Tile 寬度 ";
+noiseFactoryFrm.chessboardFrm.tileWLab.Help = " Tile 寬度參數";
+noiseFactoryFrm.chessboardFrm.tileWLab.ShortHelp = " Tile 寬度參數";
+noiseFactoryFrm.chessboardFrm.tileWLab.LongHelp = 
+"指定貼圖的 tile 寬度.";
+
+noiseFactoryFrm.chessboardFrm.tileWSld.Title = "Tile 寬度 ";
+noiseFactoryFrm.chessboardFrm.tileWSld.Help = " Tile 寬度參數";
+noiseFactoryFrm.chessboardFrm.tileWSld.ShortHelp = " Tile 寬度參數";
+noiseFactoryFrm.chessboardFrm.tileWSld.LongHelp = 
+"指定貼圖的 tile 寬度.";
+
+noiseFactoryFrm.chessboardFrm.tileHLab.Title = "Tile 高度 ";
+noiseFactoryFrm.chessboardFrm.tileHLab.Help = " Tile 高度參數";
+noiseFactoryFrm.chessboardFrm.tileHLab.ShortHelp = " Tile 高度參數";
+noiseFactoryFrm.chessboardFrm.tileHLab.LongHelp = 
+"指定貼圖的 tile 高度.";
+
+noiseFactoryFrm.chessboardFrm.tileHSld.Title = "Tile 高度 ";
+noiseFactoryFrm.chessboardFrm.tileHSld.Help = "Tile 高度參數";
+noiseFactoryFrm.chessboardFrm.tileHSld.ShortHelp = " Tile 高度參數";
+noiseFactoryFrm.chessboardFrm.tileHSld.LongHelp = 
+"指定貼圖的 tile 高度.";
+
+noiseFactoryFrm.chessboardFrm.mortarWLab.Title = "連接寬度 ";
+noiseFactoryFrm.chessboardFrm.mortarWLab.Help = "連接寬度參數 ";
+noiseFactoryFrm.chessboardFrm.mortarWLab.ShortHelp = "連接寬度參數 ";
+noiseFactoryFrm.chessboardFrm.mortarWLab.LongHelp = 
+"指定貼圖的連接寬度.";
+
+noiseFactoryFrm.chessboardFrm.mortarWSld.Title = "連接寬度 ";
+noiseFactoryFrm.chessboardFrm.mortarWSld.Help = "連接寬度參數 ";
+noiseFactoryFrm.chessboardFrm.mortarWSld.ShortHelp = "連接寬度參數 ";
+noiseFactoryFrm.chessboardFrm.mortarWSld.LongHelp = 
+"指定貼圖的連接寬度.";
+
+noiseFactoryFrm.chessboardFrm.mortarHLab.Title = "連接高度 ";
+noiseFactoryFrm.chessboardFrm.mortarHLab.Help = "連接高度參數 ";
+noiseFactoryFrm.chessboardFrm.mortarHLab.ShortHelp = "連接高度參數 ";
+noiseFactoryFrm.chessboardFrm.mortarHLab.LongHelp = 
+"指定貼圖的連接高度.";
+
+noiseFactoryFrm.chessboardFrm.mortarHSld.Title = "連接高度 ";
+noiseFactoryFrm.chessboardFrm.mortarHSld.Help = "連接高度參數 ";
+noiseFactoryFrm.chessboardFrm.mortarHSld.ShortHelp = "連接高度參數 ";
+noiseFactoryFrm.chessboardFrm.mortarHSld.LongHelp = 
+"指定貼圖的連接高度.";
+
+noiseFactoryFrm.chessboardFrm.decalLab.Title = " 偏移 ";
+noiseFactoryFrm.chessboardFrm.decalLab.Help = " 偏移參數";
+noiseFactoryFrm.chessboardFrm.decalLab.ShortHelp = " 偏移參數 (從 0 至 0.5)";
+noiseFactoryFrm.chessboardFrm.decalLab.LongHelp = 
+"指定貼圖線的偏移.";
+
+noiseFactoryFrm.chessboardFrm.decalSld.Title = "偏移 ";
+noiseFactoryFrm.chessboardFrm.decalSld.Help = " 偏移參數";
+noiseFactoryFrm.chessboardFrm.decalSld.ShortHelp = " 偏移參數 (從 0 至 0.5)";
+noiseFactoryFrm.chessboardFrm.decalSld.LongHelp = 
+"指定貼圖線的偏移.";
+
+// Bump Frame
+//------------
+bumpFactoryFrm.bumpLab.Title = "範圍 ";
+bumpFactoryFrm.bumpLab.Help = "bump 應用貼圖的範圍";
+bumpFactoryFrm.bumpLab.ShortHelp = "Bump 範圍 (從 -1 至 1)";
+bumpFactoryFrm.bumpLab.LongHelp =
+"定義 bump 應用貼圖的範圍";
+
+bumpFactoryFrm.bumpSld.Title = "範圍 ";
+bumpFactoryFrm.bumpSld.Help = "bump 應用貼圖的範圍";
+bumpFactoryFrm.bumpSld.ShortHelp = "Bump 範圍 (從 -1 至 1)";
+bumpFactoryFrm.bumpSld.LongHelp =
+"定義 bump 應用貼圖的範圍";
+
+// Transformation Frame
+//---------------------
+transformFrm.xLabel.Title = "X ";
+transformFrm.yLabel.Title = "Y ";
+transformFrm.zLabel.Title = "Z ";
+
+transformFrm.scalingLabel.Title = "縮放 ";
+transformFrm.scalingLabel.Help = "貼圖的縮放變化";
+transformFrm.scalingLabel.ShortHelp = "縮放變化";
+transformFrm.scalingLabel.LongHelp = 
+"貼圖的縮放變化";
+
+transformFrm.xScaling.Title = "縮放 ";
+transformFrm.xScaling.Help = "沿 X 軸縮放";
+transformFrm.xScaling.ShortHelp = "沿 X 軸縮放";
+transformFrm.xScaling.LongHelp = 
+"貼圖沿 X 軸縮放";
+
+transformFrm.yScaling.Title = "縮放 ";
+transformFrm.yScaling.Help = "沿 Y 軸縮放";
+transformFrm.yScaling.ShortHelp = "沿 Y 軸縮放";
+transformFrm.yScaling.LongHelp = 
+"貼圖沿 Y 軸縮放";
+
+transformFrm.zScaling.Title = "縮放 ";
+transformFrm.zScaling.Help = "沿 Z 軸縮放";
+transformFrm.zScaling.ShortHelp = "沿 Z 軸縮放";
+transformFrm.zScaling.LongHelp = 
+"貼圖沿 Z 軸縮放";
+
+transformFrm.rotationLabel.Title = "旋轉 ";
+transformFrm.rotationLabel.Help = "貼圖的旋轉變化";
+transformFrm.rotationLabel.ShortHelp = "旋轉變化 (從 -360 至 360 度)";
+transformFrm.rotationLabel.LongHelp = 
+"貼圖的旋轉變化";
+
+transformFrm.xRotation.Title = "旋轉 ";
+transformFrm.xRotation.Help = "繞 X 軸旋轉";
+transformFrm.xRotation.ShortHelp = "繞 X 軸旋轉";
+transformFrm.xRotation.LongHelp = 
+"貼圖繞 X 軸旋轉";
+
+transformFrm.yRotation.Title = "旋轉 ";
+transformFrm.yRotation.Help = "繞 Y 軸旋轉";
+transformFrm.yRotation.ShortHelp = "繞 Y 軸旋轉";
+transformFrm.yRotation.LongHelp = 
+"貼圖繞 Y 軸旋轉";
+
+transformFrm.zRotation.Title = "旋轉 ";
+transformFrm.zRotation.Help = "繞 Z 軸旋轉";
+transformFrm.zRotation.ShortHelp = "繞 Z 軸旋轉";
+transformFrm.zRotation.LongHelp = 
+"貼圖繞 Z 軸旋轉";
+
+transformFrm.transLabel.Title = "平移 ";
+transformFrm.transLabel.Help = "貼圖平移變化";
+transformFrm.transLabel.ShortHelp = "平移變化";
+transformFrm.transLabel.LongHelp = 
+"貼圖平移變化";
+
+transformFrm.xTrans.Title = "平移 ";
+transformFrm.xTrans.Help = "沿 X　軸平移";
+transformFrm.xTrans.ShortHelp = "沿 X　軸平移";
+transformFrm.xTrans.LongHelp = 
+"貼圖沿 X　軸平移";
+
+transformFrm.yTrans.Title = "平移 ";
+transformFrm.yTrans.Help = "沿 Y 軸平移";
+transformFrm.yTrans.ShortHelp = "沿 Y 軸平移";
+transformFrm.yTrans.LongHelp = 
+"貼圖沿 Y　軸平移";
+
+transformFrm.zTrans.Title = "平移 ";
+transformFrm.zTrans.Help = "沿 Z 軸平移";
+transformFrm.zTrans.ShortHelp = "沿 Z 軸平移";
+transformFrm.zTrans.LongHelp = 
+"貼圖沿 Z　軸平移";

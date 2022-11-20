@@ -1,0 +1,293 @@
+// =====================================================================
+// Erreurs Flank Contoruing de 3000 a 
+//  Le reste est dans CATMfg5AxisOperationError
+//
+// Essayer de formater vos messages en specifiant (delimiteur = caracteres fin de ligne) :
+//       Request      (ce que l'on tentait de faire)
+//       Diagnostic   (ce qui est arrive)
+//       Advice       (...ce qu'il pourrait faire si possible)
+// ou bien
+//       Specifier vos messages avec la cle + les 3 facettes :
+//           ex: ERR_2002.Request    Reading data. 
+//               ERR_2002.Diagnostic Manufacturing software error : Access to a NULL handler.
+//               ERR_2002.Advice     Contact your local support.
+//
+// REMARK:
+// No need to type carriage-return characters at the end of your messages
+// since the panel automatically handles spaces between messages
+//
+// =====================================================================
+
+InfoTitle			= "加工資訊";
+WarningTitle		= "加工警告";
+ErrorTitle			= "加工錯誤";
+GeneralErrorTitle		= "錯誤";
+PanelTitle			= "加工錯誤";
+UpdateError			= "更新時發生內部錯誤";
+InternalError		= "加工軟體錯誤. \n 錯誤是 : /p1";
+InitError			= "初始化時發生錯誤";
+ErrorNotSpecified		= "未指定錯誤. \n 請連絡地區支援";
+
+
+
+//====================================================================================================
+// Erreurs Flank Contouring
+//====================================================================================================
+
+ERR_3001 = "多軸側仞外形銑削參數 OK.";
+ERR_3002 = "\t 軸向層數: ";
+ERR_3003 = "\t 徑向層數: ";
+ERR_3004 = "\t 驅動元素數目: ";
+
+ERR_3050 = "無法自動計算參考點和/或重新起始方向.
+可能是幾何元素太複雜, 導致無法自動計算.
+也可能有數學上的問題 (如, 半個圓柱) 和
+ 沒有一個簡單的標準可決定那一個是正確的.
+您必須手動選擇一個適合的參考點和重新起始方向.";
+
+ERR_3051 = "手動參考點太接近結束點.
+選擇另一點, 移除現有點或檢查手動方向.";
+
+ERR_3060 = "設定副程式動作時發生問題.
+請檢查參數.";
+
+ERR_3228 = "無效驅動面.
+驅動面幾何型式無效.
+如, 零件面和驅動面不可相同.";
+
+ERR_3251 = "刀具投影失敗.
+刀具無法投影至曲面上.
+可能是曲面的角度變化太大.
+可嚐試更改選項
+(如加工精度)\n 來解決此問題.";
+
+ERR_3314 = "無效驅動面.
+所選幾何元素不支援.";
+
+ERR_3315 = "無效起始元素.
+所選幾何元素不支援.";
+
+ERR_3316 = "無效停止元素.
+所選幾何元素不支援.";
+
+ERR_3317 = "未知起始移動方向.
+未定義前進方向.";
+
+ERR_3318 = "驅動面的幾何元素無效或起始或結束元素無效.
+只有修剪面或平面才是,
+有效的驅動面或起始,結束元素.";
+
+ERR_3319 = "刀具定義無效.
+刀具參數定義無效.";
+
+ERR_3320 = "未知動作.
+所執行動作無效.";
+
+ERR_3321 = "方向分量太小.
+輸入向量的分量值太小.  如, 向量
+'0,0,.000001' 的值太小.";
+
+ERR_3322 = "零件面幾何型式無效
+零件面只可以是平面, 修剪面, 曲面
+或規則曲面.";
+
+ERR_3323 = "刀具軸錯誤.
+刀具軸 I,J,K 數值太小.
+輸入向量的分量值太小  如, 刀具軸向量
+'0,0,.000001' 的值太小.";
+
+ERR_3324 = "己更改前進方向.
+系統無法計算沿驅動面的前進方向.
+常發生的原因為零件面與驅動面平行.";
+
+ERR_3325 = "己反轉前進方向.
+系統無法計算沿驅動面的前進方向.
+發生的原因為刀具與零件面平行或與驅動面垂直.
+也可能是刀具無法找到下一個加工面.";
+
+ERR_3328 = "刀具投影失敗.
+當嚐試分析加工曲面時發生錯誤.
+有可能是曲面的角度變化太大.
+如為起始點, 請試著修改參考點.";
+
+ERR_3329 = "刀具和驅動面的關係錯誤.
+系統無法計算刀具和驅動面的相對位置.";
+
+ERR_3338 = "刀具應用至曲面錯誤.
+系統無法應用刀具至曲面.";
+
+ERR_3339 = "無效輔助導引元素.
+至少有一個導引元素無法與驅動元素一起計算.
+請檢查導引元素是否可以適當投影至所選驅動面上";
+
+ERR_3340 = "驅動元素不連續.
+請使用右鍵命令的局部修改指令
+設定手動重新起始方向.";
+
+ERR_3341 = "結束位置錯誤.
+計算初始加工位置時發生錯誤.
+檢查起始元素, 它的位置和偏移, 第一個驅動面和零件面.
+For further investigation you can try one or more of the following:
+- no thickness on elements, 
+- no multiple paths,
+- a manual reference point,
+- a simple planar part surface,
+- a planar start element normal to the drive and part, 
+- condition ON or Tangent."; 
+
+ERR_3342 = "Ending position failure.
+Failure while driving along the first drive element.
+Check the first and second drive ( end element and condition on it if single drive).
+For further investigation you can try one or more of the following:
+- no thickness on elements, 
+- no multiple paths,
+- a manual starting direction LEFT or RIGHT,
+- a simple planar part surface,
+- use a single drive element with the current second drive set \nas the end element, 
+- condition ON or Tangent,
+- remove and check auxliary guiding element.
+Verify and if needed modify Local values on drive elements."; 
+
+ERR_3343 = "Ending position failure.
+Failure while driving along the second drive element.
+Check the second and third drive (end element and condition on it if two drives).
+Verify the order of the drive elements regarding the position of the start and end elements.
+Check if the curvature and thickness of the fillet is greater than the body radius of the tool.
+For further investigation you can try one or more of the following:
+- no thickness on elements, no multiple paths,
+- a simple planar part surface,
+- use two drive elements with the current third drive set \nas the end element, condition ON or Tangent.
+- use a single drive element with the current second drive set \nas the end element, condition ON or Tangent,
+in order to check the previous motion along the first drive.
+- remove and check auxiliary guiding element.
+Verify and if needed modify Local values on drive elements.
+Verify the Close tool path check box."; 
+
+ERR_3344 = "Ending position failure.
+Failure while driving along a drive element.
+Check this drive element and the following drive (end element and condition on it \nif the failure is on the last drive).
+Check if the curvature and thickness of the fillet is greater than the body radius of the tool.
+For further investigation you can try one or more of the following:
+- no thickness on elements, no multiple paths,
+- a simple planar part surface without thickness on it,
+- keep fewer drive elements with the following drive after failure set \nas the end element, condition ON or Tangent.
+- keep fewer drive elements with the failing drive after failure set \nas the end element, condition ON or Tangent,
+in order to check the previous motion along the previous drive.
+- remove and check auxiliary guiding element.
+Verify and if needed modify Local values on drive elements.
+Verify the Close tool path check box."; 
+
+ERR_3363 = "Impossible geometry case.
+This error code can be caused by different conditions :
+* The following surface could not be found with Tanto Fan\nTool Axis Strategy.
+* The drive surface normal became parallel to the tool axis.";
+
+ERR_3372 = "Invalid type or condition on limits.
+";
+
+ERR_3455 = "Computation interrupted due to tool jump.
+During tool path computation, unacceptable tool jumps were detected.
+This may arise when there are multiple part surfaces.
+Please contact your local support.";
+
+ERR_3456 = "Impossible condition on the following drive surface.
+A problem was found in determining a final position for
+the tool in relation to the following drive surface. 
+Verify that you have not requested an impossible 
+condition for applying the tool to the surface.";
+
+ERR_3457 = "Non contiguous drive elements.
+Please set a manual stopping condition using the contextual Local Modifications command.";
+
+ERR_3462 = "Specific condition on drive surface.
+Disk cutter and tool axis fanning requires\nthe tool to be ON the Surface.
+There is no tangent point to maintain a contact with the drive element.
+One possible reason is a too small cutting length.";
+
+ERR_3463 = "Specific condition on drive surface.
+Disk cutter and tool axis fanning requires\nthe tool to be ON the Surface.";
+
+ERR_3474 = "Feedrate is zero.
+The value given for a feedrate is zero. Feedrates
+should have a value greater than zero.";
+
+ERR_3479 = "Wrong Drive or start/end element.
+TANTO FAN tool axis strategy requires a Surface,
+a Face, a RSUR or a plane as the Drive element\nand Start/End element.";
+
+ERR_3506 = "Undefined forward direction.
+Forward direction cannot be computed.";
+
+ERR_3508 = "Invalid Drive element type for TANTO or PARELM tool axis strategy.
+Supported types for Drive element are surface, face,\nRSUR or plane.";
+
+ERR_3553 = "Contact Height is too small.
+The Contact Height used along the Drive Surface\nis too small.";
+
+ERR_3554 = "Tool projection onto Drive Surface failed.
+The tool could not be projected onto the drive surface.
+It is possible that the reference position is not
+facing the drive surface. Moving the reference
+point near to the drive should solve this problem.";
+
+ERR_3559 = "Out of tolerance.
+Out of tolerance in tool motion number \p1.";
+
+ERR_3666 = "Boundary discretization failed.
+A problem was detected when processing the boundary of the 
+part, drive or start/end element. \nPlease contact your local support.";
+
+ERR_3667 = "Conditions are too severe.
+Conditions are too severe for tool axis COMBIN mode.
+The tool failed to fan either away from the starting
+location or towards the following element. This error is
+usually generated when the fanning distance is
+too small. To resolve this error you can increase the
+leave/approach distance to be greater than the tool\ndiameter.";
+
+ERR_3671  = "Memory allocation problem.
+Unable to allocate memory.";
+
+ERR_3674  = "Cornering failed.
+Please check cornering radius.";
+
+ERR_3710 = "Internal Model Error
+Incoherency detected in Internal Model.";
+
+ERR_3717 = "Impossible offset along axis.
+The reason is that the angle between the tool axis\nand the normal to the part exceeds 90 degrees.";
+
+ERR_3718 = "Impossible offset along axis.
+The reason is that the normal to the part has not\nbeen correctly evaluated during computation.";
+
+ERR_3723 = "Internal Communication Error.
+An error occurred but is not correctly transmitted to the 5 axis monitor.\nPlease contact your local support.";
+
+ERR_3724 = "Automatic direction unsuccessful.
+The software was not\nable to find Left/Right direction for the first drive surface.
+This could be due to non adjacent drive elements, or a complex geometrical case.
+Please set a manual direction under Strategy tabpage.";
+
+ERR_3726 = "Invalid Max angle value.
+This value cannot be ZERO or a multiple of 180.\nPlease modify the Max Angle Value.";
+
+ERR_3730 = "Inconsistent tool motion.
+Some geometry cannot be evaluated. Please reselect it.";
+
+ERR_3731 = "Inconsistent tool motion.
+At least one part element cannot be evaluated.
+Please reset and\nreselect all part elements.";
+
+ERR_3732 = "Inconsistent tool motion.
+The drive element cannot be evaluated. Please reselect it.";
+
+ERR_3741 = "Undefined part curve.
+No curve was provided as part for drive '/p1'.";
+
+ERR_3742 = "Undefined part curve.
+This curve is not a boundary of selected drive surfaces.";
+
+ERR_3743 = "A negative part offset is used and its absolute value is bigger than the tool body radius. 
+This type of value for part offset is not compatible with collision checking on check elements.
+If you really want to perform collision checking on checks you must use a smaller negative offset on parts. 
+Otherwise unselect check elements.";

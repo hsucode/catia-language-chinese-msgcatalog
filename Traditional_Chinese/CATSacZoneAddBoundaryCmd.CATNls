@@ -1,0 +1,40 @@
+//=============================================================================
+//                                     CNEXT - CXR7
+//                          COPYRIGHT DASSAULT SYSTEMES 2001 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATSacZoneAddBoundaryCmd.CATNls
+// FRAMEWORK   :    CATSacUI
+// AUTHOR      :    jcz
+// DATE        :    March 2001
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  SAC Platform Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//------------------------------------------------------------------------------
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// DialogEngine state prompts 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATSacZoneAddBoundaryCmd.stSelectZoneID.Message="選擇一個區帶 (zone) ";
+CATSacZoneAddBoundaryCmd.stSelectZoneBoundary.Message="選擇區帶 (zone) 的邊界元素";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Information Panel messages 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+NotifyTitle="定義區帶 (zone) 邊界";
+
+// Boundary Select Not Closed
+BoundaryNotClosed = 
+  "選擇的邊界沒封閉. 請封閉這個邊界";
+AmbiguousBoundary = 
+  "選擇的邊界元素屬於超過一個以上的邊界. 請選擇非分享的邊界元素";
+NotValidBoundary = 
+  "選擇的邊界元素必須連接在一個現存的邊界元素上";
+RedundantBoundary = 
+  "選擇包含重覆邊界元素的邊線.";

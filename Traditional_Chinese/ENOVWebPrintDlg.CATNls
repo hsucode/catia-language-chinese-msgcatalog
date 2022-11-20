@@ -1,0 +1,57 @@
+Title = "列印";
+
+FramePrinters.Title = "印表機";
+FramePrinters.LabelPrinterName.Title = "印表機名稱:";
+FramePrinters.LabelPrinterName.ShortHelp = "選擇印表機.";
+FramePrinters.LabelPrinterName.Help = "選擇印表機.";
+FramePrinters.LabelPrinterName.LongHelp = "選擇印表機.";
+FramePrinters.PushButtonPrinterProperties.Title = "性質...";
+FramePrinters.PushButtonPrinterProperties.ShortHelp = "所選印表機性質.";
+FramePrinters.PushButtonPrinterProperties.Help = "性質
+更改所選印表機性質.";
+FramePrinters.PushButtonPrinterProperties.LongHelp = "性質
+更改所選印表機性質.";
+
+FramePositionSize.Title = "位置和大小";
+FramePositionSize.LongHelp = "位置和大小.
+指定圖像在紙中的位置和大小.";
+FramePositionSize.FramePosition.LabelLeft.Title = "左";
+FramePositionSize.FramePosition.LabelWidth.Title = "寬度";
+FramePositionSize.FramePosition.LabelBottom.Title = "底";
+FramePositionSize.FramePosition.LabelHeight.Title = "高度";
+FramePositionSize.FramePosition.LongHelp = "位置和大小.
+指定圖像在紙中的位置和大小.
+'Left' and 'Bottom' set the distances from the left and bottom margins respectively.
+'Width' and 'Height' set the image dimensions. 'Width' and 'Height' are linked in such
+a way that the Width/Height ratio remains constant. Changing Scale, Width or Height
+refreshes these three parameters simultaneously.";
+FramePositionSize.FrameFit.RadioButtonFitTo.Title = "配合:";
+FramePositionSize.FrameFit.LabelScale.Title = "縮放";
+FramePositionSize.FrameFit.RadioButtonFitInPage.Title = "配合紙張";
+FramePositionSize.FrameFit.RadioButtonNoFitting.Title = "No Fitting";
+FramePositionSize.FrameFit.LongHelp = "位置和大小.
+Specifies how the image is positioned on the page, and the image size.
+'No Fitting' prints the image with a scale equals to 1.
+'Fit in Page' centers the image and selects the appropriate scale to make
+the image as big as possible inside the margins.
+'Scale' sets the scale in percent of the image with respect to the document, 
+or sets the image dimensions to the selected format.";
+FramePositionSize.FrameRotation.LabelRotation.Title = "旋轉:";
+FramePositionSize.FrameRotation.LabelRotation.ShortHelp = "圖像旋轉.";
+FramePositionSize.FrameRotation.LabelRotation.LongHelp = "圖像旋轉.
+Specifies how the image is rotated.
+'Best Rotation' selects between 'Rotation: 0' and 'Rotation: 90' to
+best fit the image on the page with no or minimum clipping."; 
+
+FrameOptions.PushButtonPageSetup.Title = "紙張設定...";
+FrameOptions.PushButtonOptions.Title = "選項...";
+FrameOptions.PushButtonPreview.Title = "預覽...";
+FrameOptions.PushButtonPageSetup.LongHelp = "紙張設定.
+Sets up the paper format and the margins.";
+FrameOptions.PushButtonOptions.LongHelp = "選項
+Sets up printing options, such as printing in color,
+in greyscale or monochrome, adding a banner, or setting
+the quality factor.";
+FrameOptions.PushButtonPreview.LongHelp = "預覽.
+Shows how the image will look
+with the selected options.";

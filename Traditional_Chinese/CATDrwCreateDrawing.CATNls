@@ -1,0 +1,66 @@
+//=====================================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1998 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwCreateDrawing
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    Panel de new Drawing
+// DATE        :    14.09.1998
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//      00           fgx   14.09.1998    Creation 	
+//      01           fgx   14.04.1999    Modif
+//=====================================================================================
+
+Title="建立新圖形";
+
+frameOptions.labelComment.Title="選取自動配圖:";
+
+frameButtons.frameOkCancel.pushOk.Title="確認";
+frameButtons.frameOkCancel.pushCancel.Title="取消";
+
+BAPPLY="修改...";
+
+Standard="標準";
+ISO="ISO";
+ANSI="ANSI";
+JIS="JIS";
+
+frameOptions.frameDrawingType.radioEmpty.ShortHelp="空白圖紙";
+
+frameOptions.frameDrawingType.radioAll.ShortHelp="所有視圖";
+
+frameOptions.frameDrawingType.radioFDL.ShortHelp="前,下,右";
+
+frameOptions.frameDrawingType.radioFUR.ShortHelp="前,上,左";
+
+frameOptions.frameDrawingType.radioEmpty.Help="建立空白圖紙";
+
+frameOptions.frameDrawingType.radioAll.Help="所有投影視圖使用目前標準來建立視圖組合";
+
+frameOptions.frameDrawingType.radioFDL.Help="使用目前標準來建立前,後及右側視圖組合";
+
+frameOptions.frameDrawingType.radioFUR.Help="使用目前標準來建立前,上及左側視圖組合";
+
+frameOptions.frameDrawingType.radioEmpty.LongHelp=
+"空白圖紙
+建立空白圖紙";
+
+frameOptions.frameDrawingType.radioAll.LongHelp=
+"所有視圖
+所有投影視圖使用目前標準來建立視圖組合.";
+
+frameOptions.frameDrawingType.radioFDL.LongHelp=
+"前,下和左
+使用目前標準來建立前,下及左側視圖組合.";
+
+frameOptions.frameDrawingType.radioFUR.LongHelp=
+"前,上和右
+使用目前標準來建立前,上及左側視圖組合.";
+

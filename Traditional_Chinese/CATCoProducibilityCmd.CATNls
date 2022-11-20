@@ -1,0 +1,32 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+// END WIZARD REPLACEMENT ZONE
+
+SelectEntity = "Select a Ply or Sequence or Plies Group or Stacking";
+SelectSeedPoint = "Select a seed point";
+SelectSeedCurve = "Select a seed curve ";
+SelectDrapeCurve = "Select a order of drape curve";
+SelectInspectionPoint = "Select inspection points";
+SelectionEnd = "Modify specifications or press OK, Apply or Cancel";
+
+
+NOTIFYPLYEXISTS.TITLE = "Invalid strategy point";
+NOTIFYPLYEXISTS.MSG.POST = "The selected strategy point is outside the selected entity";
+NOTIFYSTGCURVE.TITLE = "Invalid strategy point and curve";
+NOTIFYSTGCURVE.MSG.POST = "The selected Strategy-point is not laying on selected selected Strategy-curve";
+
+
+NOTIFYPROPERROR.TITLE = "Fiber propagation error";
+NOTIFYPROPERROR.MSG.POST = "Fiber propagation has failed: change strategy, warp/weft, material or direction";
+WARPWEFTERROR.TITLE = "warp/weft error";
+WARPWEFTERROR.MSG.POST = "Fiber propagation has failed: change warp/weft";
+NOTIFYNOTINPLYGRPERROR.MSG = "Selected entity is not under ply group";
+NOTIFYNOTINPLYGRPERROR.TITLE = "Ply is not in ply group";
+NOTIFYALLOCATIONERROR.MSG = "Memory allocation failed for fiber nodes : reduce warp/weft values";
+NOTIFYALLOCATIONERROR.TITLE = "Allocation failed";
+NOTIFYDEFAULT.TITLE = "Flattening Error";
+NOTIFYDEFAULT.MSG.POST = "Insufficient data for flattening";
+
+KeepOpenBodyName = "_producibility_analysis";
+
+NOTIFYCYLPLY.TITLE = "Tube configuration detected";
+NOTIFYCYLPLY.MSG.POST = "Producibility analysis does not support such configuration.";

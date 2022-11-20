@@ -1,0 +1,34 @@
+Usage = "
+用法 : CATFlockOfBirdsDriver [-f Frequency] [-com SerialPortNumber] [-bps SerialPortSpeed] [-host BrokerHostName] [-m DeviceNumber TransformationMatrix] [-n NumberofDevices] [-mouse DeviceNumber]
+
+  -f : Event sending frequency from CATFlockOfBirdsDriver to V5 session. 
+       If not specified a default value of 100 Hz is used.
+
+  -com : Serial port number to which Flock of Birds is connected. 
+         If not specified a default value of 1 is used, meaning COM1 on Windows systems.
+
+  -bps : Serial port speed. 
+         If not specified the driver tries to connect to the FlockOfBirds at the speed of 115200 bps.
+
+  -host : Name the host on which the CATVisVRBroker is running. 
+          If not specified LocalHost is assumed.
+
+  -m : Position and orientation received from the Flock of Birds are multiplied by this matrix before
+       beeing sent to the V5 session. Matrix should be described in lines using the following format :
+       -m DeviceNumber [m11,m12,m13][m21,m22,m23][m31,m32,m33][m41,m42,m43]
+       If not specified the Identity matrix is assumed
+       You can specify one matrix for each tracker.
+
+  -n : Number of Flock of Birds running at the same time. 
+       If not specified one Flock of Birds is assumed.
+
+  -mouse : Device number of the Flock or Birds to which an Ascension 6D Mouse is connected. 
+           If not specified no 6D Mouse is supposed to be used. Numbering of the devices start
+           with number 1.
+
+  -debug : Activates Flock of Birds display of error messages";
+
+Configuring = "設定 Bird 中. 請稍候... ";
+ConfigFailed = "Bird 設定失敗.";
+ConfigSuccess = "Bird 設定成功.";
+BrokerDeclaration = "Bird driver declared to V5 broker.";

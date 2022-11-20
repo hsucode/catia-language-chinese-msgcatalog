@@ -1,0 +1,23 @@
+ENOVDBDEDLInternalERR_0001.Request = "request access to the CATRdbServers.CATSettings";
+ENOVDBDEDLInternalERR_0001.Diagnostic = "ReadSettings method failed";
+ENOVDBDEDLInternalERR_0001.Advice = "check if the CATRdbServers.CATSettings file is in the CATUserSettingPath directory and if the file is readable";
+
+ENOVDBDEDLInternalERR_0002.Request = "request to the setting ENOCOMMON in the CATRdbServers.CATSettings file";
+ENOVDBDEDLInternalERR_0002.Diagnostic = "ENOCOMMON not found in the file.";
+ENOVDBDEDLInternalERR_0002.Advice = "check if the ENOCOMMON setting is declared in the CATRdbServers.CATSettings file with PR0ADSRV or string ";
+
+ENOVDBDEDLInternalERR_0003.Request = "request to connect to the database";
+ENOVDBDEDLInternalERR_0003.Diagnostic = "[/p1]";
+ENOVDBDEDLInternalERR_0003.Advice = "check if the CATDbServer.CATSetting file exists in your CATUserSettingPath or contact the database administrator ";
+
+ENOVDBDEDLInternalERR_0004.Request = "check column DS on table [/p1]";
+ENOVDBDEDLInternalERR_0004.Diagnostic = "check the database table.";
+ENOVDBDEDLInternalERR_0004.Advice = "correct the database column. the value must be Y for Dassault Systemes data . N for customer data.";
+
+ENOVDBDEDLInternalERR_0005.Request = "database error while accessing the table [/p1].[/p2]";
+ENOVDBDEDLInternalERR_0005.Diagnostic = "[/p1]";
+ENOVDBDEDLInternalERR_0005.Advice = "";
+
+ENOVDBDEDLInternalERR_0006.Request = "database error while closing the connection to the database";
+ENOVDBDEDLInternalERR_0006.Diagnostic = "[/p1]";
+ENOVDBDEDLInternalERR_0006.Advice = "";

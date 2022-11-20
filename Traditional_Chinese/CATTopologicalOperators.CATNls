@@ -1,0 +1,2367 @@
+//------------------------------------------------------
+// Resource file for topological operator errors 
+// En_EN
+//------------------------------------------------------
+// CKN ??/??/?? Creation
+// NLD 05/12/01 TopOpInSweepInternalError_ERR_7504,
+//              TopOpInAllTopo_ERR_7505,
+//              TopOpInAllGeo_ERR_7506
+// AOV 15/03/02 TopOpInLineGeodesicPtPt+TopOpInSimilarCurve
+// ALV 04/04/02 TopOpInPointOnVertex_ERR_6312
+// ALV 10/04/02	Ajout des erreurs 6821-6849- Plane
+//				TopOpInRotationAxisNotParallel_ERR_6821 
+// ALV 09/01/03 TopOpInLineTooSmallLength_ERR_6005
+//              TopOpInCircleRadiusTooShort_ERR_6778
+// CCK 24/10/03 TopOpInSweepTooSharp_ERR_7030
+// NLD 24/10/03 TopOpInSweepSmallEdge_ERR_7031
+// NLD 24/10/03 TopOpInSweepNoKeptArea_ERR_7032
+// JSX 07/11/03 TopOpInExtrapolLostOfDir_ERR_7033
+// RNO 18/02/04 TopOpIntCleanCrvOutputG0BiggerInputG0_ERR_6506
+// NLD 18/02/04 TopOpInSweepInternalProfileInReport_ERR_7034
+// NLD 02/03/04 TopOpInSweepInvalidCenterCurveWarning_ERR_7035
+// NLD 02/03/05 Modification Advice ERR_7003 
+// FDS 16/03/04 TopOpInCloseOperator_ERR_6851.
+// FDS 07/04/04 TopOpInShellFromClosedWireOperator_ERR_6880.
+// NLD 13/05/04 Modification Advice TopOpInMaxGapDetection_ERR_5012
+//              et TopOpInTangencyMaxGapDetection_ERR_5013
+//              Suppression des \n superflus dans messages
+//              7011,7023, 7024, 7025, 7028, 7030, 7031
+//              Ajout TopOpInSweepCheckGapWarning_ERR_7036
+// OAU 14/05/04 Add warning    TopOpInDistanceMaxWarning_ERR_5019
+//                              TopOpInDistanceMaxWarning_ERR_5020
+//                              TopOpInDistanceMaxWarning_ERR_5021
+//                              TopOpInUnFoldedAero_ERR_6902
+//                              TopOpInUnFoldedAero_ERR_6903
+// OAU 14/05/04 Add             TopOpInUnFoldedAero_ERR_6904
+//                              TopOpInUnFoldedAero_ERR_6905
+// AJM 19/05/04 Added           TopOpIntBodyCheckInvalidCurvatureCurve_MSG
+//                              TopOpIntBodyCheckInvalidCurvatureSurface_MSG
+//                              TopOpIntBodyCheckSelfIntersectionShell_MSG
+// NLD 11/06/04 TopOpInSweepCheckExternalTangencyWarning_ERR_7037
+// OAU 03/06/04 Added           TopOpInUnFoldedAero_ERR_6906
+//                              TopOpInUnFoldedAero_ERR_6907
+// NLD 30/06/04 TopOpInSweepImpossibleCleanWarning_ERR_7038
+//              TopOpInSweepProfileNearC0Vertex_ERR_7039
+// NLD 22/07/04 TopOpInGeoCheck_ERR_7507
+// NLD 28/07/04 TopOpInNotLyingOn_ERR_7040
+//              TopOpInPtNotLyingOnWire_ERR_7041
+//              TopOpInPtNotLyingOnShell_ERR_7042
+// ALV 11/08/04 Ajout d'erreur pour la création de plan.
+//              TopOpInBasicBodyPlanar_ERR_6824...
+//             .TopOpInBasicBodyPlanar_ERR_6826
+// ALV 16/08/04 TopOpInTrimmedCorner_ERR_6322
+// NLD 20/09/04 TopOpInSweepNonC2NotAvailable_ERR_7043
+// OAU 28/09/04 Added           TopOpInUnFoldedAero_ERR_6908
+// NLD 08/10/07 TopOpInHybOpNullWireComputed_ERR_7562
+//              TopOpInHybOpNullEdgeInComputedWire_ERR_7563
+//              TopOpInSweepNullHomogenizedWire_ERR_7044
+//              TopOpInSweepNullEdgeInHomogenizedWire_ERR_7045
+// NLD 28/10/04 TopOpInSweepSmallEdgeFromInitialGuide_ERR_7046
+//              TopOpInSweepSmallEdgeFromInitialProfile_ERR_7047
+//              TopOpInSweepSmallEdgeFromFinalGuide_ERR_7048
+//              TopOpInSweepSmallEdgeFromFinalProfile_ERR_7049
+// NLD 04/11/04 TopOpInSweepProfileOrderWarning_ERR_7050
+// ALV 07/12/04 TopOpInTritangentCorner_ERR_6323
+// JSX 21 12 04 TopOpInHybOpTooLowCGMLevelForOption_ERR_7564
+// ALV 05/01/05 TopOpInCornerInternalError_ERR_6324
+//              TopOpInCornerParallelError_ERR_6325
+// NLD 24/12/04 TopOpInBlendTwist_ERR_7084
+// NLD 12/01/05 TopOpInLoftNoIntersection_ERR_7052 duplication de GeoOpInLoftNoIntersection_ERR_3008
+// NLD 31/01/05 TopOpInSweepC0Point_ERR_7053 duplication de GeoOpInSweepC0Point_ERR_3028
+// NLD 31/01/05 TopOpInSweepC0MeridianCurve_ERR_7054 duplication de GeoOpInSweepC0MeridianCurve_ERR_3029
+// NLD 02/02/05 TopGeoOpInSweepEdgeCurveCreation_ERR_7055 duplication de GeoOpInSweepEdgeCurveCreation_ERR_3031
+// NLD 24/02/05 TopOpInSweepTopologicalWrap_ERR_7056
+// OAU 14/02/05 ajout TopOpInUnFoldedAero_ERR_6909
+// FDS 16/03/05 TopOpIntRefFaceNeeded_ERR_8000 , TopOpIntInitialEdgeNotOnBorder_ERR_8001 , 
+//              TopOpInCloseOperator_ERR_6852
+// NLD 30/03/05 TopOpInSweepDraftDirNotNormalToNonG1SpinePlane_ERR_7057
+// JSX 16/05/05 TopOpInExtrapolationNegativeLength_Err7085
+// NLD 01/06/05 TopOpInSweepCheckDeviationFromProfile_ERR_7058
+//              TopOpInSweepCheckDeviationFromGuide_ERR_7059
+// NLD 02/06/05 TopOpInSweepEdgeLyingOnSharpEdge_ERR_7060
+//              TopOpInSweepGuidesHomogenization_ERR_7061
+//              TopOpInSweepProfilesHomogenization_ERR_7062
+// NLD 19/07/05 TopOpInBlendCurvatureContinuityAskedOnInternalEdge_ERR_7086
+//              TopOpInExtrapolationNegativeLength_Err7085 devient TopOpInExtrapolationNegativeLength_ERR_7085
+//------------------------------------------------------
+//
+//----------------------------------Null input
+//
+TopOpInNull =
+     "©ÝåN°Ê§@: ¿é¤J¸ê®Æ«ü¼ÐµL®Ä. 
+ ©w¸q¸ê®Æ©ÎÀË¬dºX¼Ð¬O§_©w¦ì¿ù»~.";
+//
+TopOpInNullProfileBody =
+     "©ÝåN°Ê§@: Â_­±¥»Åé«ü¼ÐµL®Ä.";
+//
+TopOpInInvalidProfileBody =
+     "©ÝåN°Ê§@: µL®ÄªºÂ_­±¥»Åé.";
+//
+TopOpInNonConnexCenterBody =
+     "©ÝåN°Ê§@: ²£¥Í±½±°®É¿ù»~. ¤¤¤ß¦±½u¤£¬O¤@­Ó³s±µªº¥»Åé.";
+//
+TopOpInNullCenterBody =
+     "©ÝåN°Ê§@: ¤¤¤ß¥»Åé«ü¼ÐµL®Ä.";
+//
+TopOpInInvalidOperator=
+     "©ÝåN°Ê§@: ¿é¤J°Ê§@µL®Ä.";
+//
+//----------------------------------Non manifold configuration
+//
+TopOpInNonManifold =
+     "©ÝåN°Ê§@: µL®Ä²ÕºAÀ|¸Õ.";
+//
+//----------------------------------Invalid dimension
+//
+TopOpInInvalidDimension=
+     "©ÝåN°Ê§@: ¥»Åé¤Ø¤oµL®Ä. 
+¾Þ§@®É½Ð¿ï¾Ü¥»Åé¤Ø¤o /p1 .";
+//
+TopOpInInvalidBodySize=
+        "©ÝåN°Ê§@: ¿é¤J¥»Åé§t¦³¼Æ­Ó©w¸q©Î¬OªÅªº. 
+         ¾Þ§@®É½Ð¿ï¾Ü¥u¦³¤@­Ó©w¸qªº¥»Åé.";
+//
+TopOpInInvalidCenterDimension =
+     "©ÝåN°Ê§@: 
+¤¤¤ß¥»Åé¥²¶·¬O³æ¤@½u¹Ï.";
+//
+TopOpInInvalidShellOperand =
+    "©ÝåN°Ê§@: ÂI©M½u¤£¥i¨Ï¥Î¦bÁ¡´ß©Î«p«×ªº¾Þ§@¤W.";
+//
+//----------------------------------geometry and topology
+//
+//
+TopOpInInvalidGeometry=
+    "©ÝåN°Ê§@: µLªkºIÂ_¥D¹s¥ó.
+     - ½Ð­×§ï³]©w¯S©Ê.";
+//
+TopOpInNoIntersection=
+    "©ÝåN°Ê§@: µLªkºIÂ_¥D¹s¥ó.
+     - ¦¹¤è¦V»Pµô°Å¥»Åé¨S¦³¬Û¥æ";
+//
+// NLD 28/07/04 
+//### utiliser de preference ###
+//              TopOpInNotLyingOn_ERR_7040
+//              TopOpInPtNotLyingOnWire_ERR_7041
+//              TopOpInPtNotLyingOnShell_ERR_7042
+//
+TopOpInNotLyingOn=
+    "©ÝåN°Ê§@: ¿é¤Jªº½u¥¼¨Ìªþ¦bÁ¡´ßªº¨Ìªþ¤W.
+     - ½Ð§ë¼v¦b¨Ìªþ¤W,¦A¨Ï¥Î§ë¼vªºµ²ªG.";
+//
+TopOpInPtNotLyingOnWire=
+    "©ÝåN°Ê§@: ¿é¤JªºÂI¥¼¨Ìªþ¦b½uªº¨Ìªþ¤W.
+     - ½Ð§ë¼v¦b¨Ìªþ¤W,¦A¨Ï¥Î§ë¼vªºµ²ªG.";
+//
+TopOpInPtNotLyingOnShell=
+    "©ÝåN°Ê§@: ¿é¤JªºÂI¥¼¨Ìªþ¦bÁ¡´ßªº¨Ìªþ¤W.
+
+     - ½Ð§ë¼v¦b¨Ìªþ¤W,¦A¨Ï¥Î§ë¼vªºµ²ªG.";
+//
+TopOpInTooSmallLength=
+    "©ÝåN°Ê§@: ¿é¤Jªº½u¤Óµu. 
+ µLªk¦b¨ä¤W«Ø¥ß©ÝåNÃä¬É.
+ - ¨Ï¥Î½uªø¶·¤j©ó´X¦ó¸ÑªR«×.";
+//
+TopOpInTooCloseLimits=
+    "©ÝåN°Ê§@: ¿é¤J½uªº­­¨î©w¸q¦¨¤Ó¤p½u¬q.
+µLªk¦b¨ä¤W«Ø¥ß©ÝåNÃä¬É.
+- ¨Ï¥Î­­¨î©w¸q©·ªø¤j©ó´X¦ó¸ÑªR«×.";
+//
+//
+//----------------------------------geometry quality 
+//
+//  p1 is the topological object type
+//  p2 is the level of the object continuity
+//  P3 is the operator name
+//  P4 is the minimum requested continuity
+//
+TopOpInDiscontinuousGeometry=
+    "©ÝåN°Ê§@:  /p1 ¥u¦³ G/p2 ³sÄò: 
+ /p3 °Ê§@»Ý­n¦Ü¤Ö G/p4  /p1 ³sÄò¤è¥i.
+- ½Ð¿ï¾Ü¸û¤@¯ëªºª«¥ó"; 
+//
+//----------------------------------Divers
+//
+TopOpInNonConnectedBody=
+     "À|¸Õ¥h³B²z¥¼³s±µªº¥»Åé.";
+//
+TopOpInTooLargeGapBody=
+     "©ÝåN°Ê§@: ¿é¤J¥»Åé¨ã¦³¤Ó¤jªº¶¡»Ø. 
+  ©ÝåN¥»ÅéµLªk¦b¦¹¥»Åé¤W°õ¤W.";
+//
+TopOpInNonFrozenBody=
+     "©ÝåN°Ê§@: ¿é¤J¥»Åéªº©w¸q¦³°ÝÃD. 
+  ½Ð½T»{±z¿é¤Jªº¥»Åé¤wÀË¬d¹L.";
+//
+TopOpInOffsetValue=
+     "©ÝåN°Ê§@: ¿é¤Jªº°¾²¾­È¤j©ó¦±­±¦±²v. 
+½Ð´î¤Ö¦¹¼Æ­È.";
+//
+//------------------------------------------------------
+// Resource file for internal topological operator errors 
+// En_EN
+//
+TopOpIntDisconnect =
+       "¥¼³s±µªº¾Þ§@°Ê§@: ¤º³¡¿ù»~.";
+//
+TopOpIntShell =
+       "Á¡´ß¾Þ§@°Ê§@: ¤º³¡¿ù»~.";
+//
+TopOpIntNotImplemented =
+       "©ÝåN°Ê§@: ¦¹¥\¯à©|¥¼¥i¥Î.";
+//
+TopOpIntBadTopology =
+       "©ÝåN°Ê§@: ¤º³¡¿ù»~±N¾É­P¤£¨Îªº©ÝåN²ÕºA";
+//
+TopOpIntBadGeometry =
+       "©ÝåN°Ê§@: ¤º³¡¿ù»~±N¾É­P¤£¨Îªº©ÝåN²ÕºA.";
+//
+TopOpIntMath =
+       "©ÝåN°Ê§@: ¿ù»~ /p1 µo¥Í¦b¼Æ¾Ç³nÅé¤W.";
+//
+// same message as TopOpInAllTopo_ERR_7505
+TopOpIntAllTopo =
+        "©ÝåN°Ê§@: ¤º³¡¿ù»~ /P1. ";
+//
+// same message as TopOpInAllGeo_ERR_7506
+TopOpIntAllGeo =
+        "©ÝåN°Ê§@: ¤º³¡¿ù»~ /P1 µo¥Í¦b¼Æ¾Ç³nÅé¤W.";
+//
+TopOpIntAllocation =
+        "©ÝåN°Ê§@: ©w¦ì¥¢±Ñ.";
+//
+TopOpIntInvalidInput =
+        "©ÝåN°Ê§@: ¿é¤J¤Þ¼Æ¬OµL®Äªº.";
+//
+TopOpIntInvalidType =
+        "©ÝåN°Ê§@: ¿é¤J¤¸¯À«¬¦¡¬OµL®Äªº.";
+//
+TopOpIntEmptyResult =
+        "©ÝåN°Ê§@: ±zªº¾Þ§@µ²ªG¬OªÅªº.";
+//
+//
+//------------------------------------------- error shell
+TopOpInShellEmptyResultDueToOpenings =
+        "Á¡´ß°Ê§@°Ê§@: ©Ò¦³¥»Åéªº­×°Å­±ÉÊ³Q¿ï¬°²¾°£.
+©Ò±oµ²ªG±N·|¬OªÅªº. ¦³¥i¯à¬O¦]¬°¦Û°Ê¤Á½u©µ¦ùªºÃö«Y.";
+//
+TopOpIntShellSurfaceExtrapolation =
+        "Á¡´ß°Ê§@°Ê§@: ¦±­±©µ¦ù¥¢±Ñ.
+½Ð­×§ïÁ¡´ß¼Æ­È.";
+//
+TopOpIntShellCurveExtrapolation =
+        "Á¡´ß°Ê§@°Ê§@: ¦±½u©µ¦ù¥¢±Ñ.
+½Ð­×§ïÁ¡´ß¼Æ­È.";
+//
+TopOpIntShellCurrentVersion =
+        "Á¡´ß©Î«p«×°Ê§@°Ê§@: ©Ò±oµ²ªGµLªk²Õ¥ß.
+½Ð´î¤ÖÁ¡´ß¼Æ­È.";
+//
+TopOpIntShellSelfIntersectingGraphForDisco2D =
+        "Á¡´ß©Î«p«×°Ê§@°Ê§@: µo²{¤Ó¤pªºÃä.";
+//
+TopOpIntShellSideFace =
+        "Á¡´ß©Î«p«×°Ê§@°Ê§@: Ãä½u­±µLªk­pºâ.
+- ¦³¥i¯à¯à¬O­×°Å­±§Îª¬¦³°ÝÃD.";
+//
+//------------------------------------------- error ribbon
+TopOpInRibbonNullRadius =
+	"¶ê¨¤°Ê§@°Ê§@: ©Ò¿ïªºÃä¤£¤¹³\¦b¤º³¡Ãä¤W©w¸qµL®Äªº¥b®|­­¨î.
+ - ²¾°£µL®Äªº¥b®|­­¨î
+§í©Î¿é¤J¤@­Ó¥¿­È.";
+//
+TopOpInRibbonMultipleSelection =
+"¶ê¨¤¾Þ§@°Ê§@: Ãä³Q¿ï¾Ü¨â¦¸, ¾É­P¤£¥¿½Tªº¸ÑÄ¶. \n
+- ½Ð¿ï¾Ü¤@¦¸. ";
+//
+TopOpInRibbonVariableSelection =
+"º¥ÅÜ¶ê¨¤°Ê§@°Ê§@: ¦]Ãä¤W¦³¨Ç¤£³sÄò, ¾É­P²£¥Í¦n´X­Ó¶ê¨¤°Ê§@, 
+µLªk¨Ï¥Îº¥ÅÜ¶ê¨¤°Ê§@. \n
+- ½Ð¤À¶}°õ¦æ­Ë¶ê¨¤. ";
+//
+TopOpIntRibbonOrder =
+"¶ê¨¤¾Þ§@°Ê§@: ©Ò¿ï¾É­P²£¥Í¦n´X­ÓµLªk±Æ§Çªº¶ê¨¤°Ê§@. \n
+- ½Ð¤À¶}°õ¦æ­Ë¶ê¨¤. ";
+//
+TopOpIntRibbonInternalError =
+        "¶ê¨¤©Î­Ë¨¤¾Þ§@°Ê§@: ¤º³¡¿ù»~.";
+//
+TopOpIntTwistedRibbon =
+        "¶ê¨¤©Î­Ë¨¤¾Þ§@°Ê§@: ribbon §á¦±. 
+¨ä¤¤¤@­ÓÅÜ¼Æ¤Ó¤j. 
+  - ¶ê¨¤: ´î¤Ö¥b®|,
+  - ­Ë¨¤: ´î¤Ö­Ë¨¤ªø«×©Î­×§ï¨¤«×,
+  - ²æ¼Ò: ´î¤Ö¨¤«×.";
+//
+TopOpIntInterruptedRibbon =
+        "¶ê¨¤©Î­Ë¨¤¾Þ§@°Ê§@:  ribbon ¤¤Â_. 
+³s±µªº°ÝÃDµo¥Í¦b¨â¦±­±ªº ribbon ¤W.
+  - ¶ê¨¤ : ´î¤p¥b®|. 
+  - ­Ë¨¤ : ´î¤Ö­Ë¨¤ªø«×©Î­×§ï¨¤«×. 
+  - ²æ¼Ò : ­×§ï¨¤«×,
+  - ­×§ï­pºâ ribbon ªº´X¦ó.";
+//
+TopOpIntRibbonRelimitation =
+        "¶ê¨¤©Î­Ë¨¤¾Þ§@°Ê§@: µLªkºIÂ_. 
+©ÝåN©Î´X¦ó¤Ó½ÆÂø.
+  - ¶ê¨¤ : ´î¤p¥b®|. 
+  - ­Ë¨¤ : ´î¤Ö­Ë¨¤ªø«×©Î­×§ï¨¤«×,
+  - ²æ¼Ò : ­×§ï¨¤«×.";
+//
+TopOpIntRibbonLocalReorder =
+        "¶ê¨¤©Î­Ë¨¤¾Þ§@°Ê§@: µLªk«Ø¥ß¶ê¦ó.
+  - ­«·s±q³Ì¤p¨ì³Ì¤j­È¾ã²z¶ê¨¤©Î­Ë¨¤ªº¾Þ§@.";
+//
+TopOpIntRibbonInitialization =
+        "¶ê¨¤©Î­Ë¨¤¾Þ§@°Ê§@: µLªkªì©l¤Æ¾Þ§@.
+  - §ó§ï°Ñ¼Æ­È.
+  - §ó§ï¾Þ§@°Ê§@.";
+//
+TopOpIntRibbonBadNumberOfFaces=
+"­Ë¶ê¨¤©Î ribbon °Ê§@¿ù»~ : 
+­×°Å­±¼Æ¿ù»~.";
+//
+TopOpIntRibbonBadNumberOfEdges=
+"­Ë¶ê¨¤©Î ribbon °Ê§@¿ù»~ :
+Ãä½u¼Æ¿ù»~.";
+//
+TopOpIntRibbonBadNumberOfRadii=
+"­Ë¶ê¨¤©Î ribbon °Ê§@¿ù»~ : 
+¥b®|¼Æ¿ù»~.";
+//
+TopOpIntRibbonNoExtrapolation =
+"­Ë¶ê¨¤©Î ribbon °Ê§@¿ù»~ : 
+©µ¦ù¸ê°T¿ò¥¢.";
+//
+TopOpIntRibbonNoGeometry =
+"­Ë¶ê¨¤©Î ribbon °Ê§@¿ù»~ : 
+¨S¦³´X¦ó, ½ÐÀË¬d±zªº¿é¤J.";
+//
+TopOpIntRibbonTooManySolution =
+"­Ë¶ê¨¤©Î ribbon °Ê§@¿ù»~ : 
+¤Ó¦h¸Ñ.";
+//
+//------------------------------------------- error draft
+TopOpIntDraftInternalError =
+        "²æ¼Ò­±°Ê§@: ¤º³¡¿ù»~.  ";
+//
+TopOpIntTwistedDraft =
+        "²æ¼Ò­±°Ê§@: §á¦±²æ¼Ò­±. 
+ - ´î¤Ö²æ¼Ò¨¤.";
+//
+TopOpIntInterruptedDraft =
+        "²æ¼Ò­±°Ê§@: ¤¤Â_²æ¼Ò­±.
+²æ¼Ò­±¶¡¦³³s±µ°ÝÃD.
+  - ´î¤Ö¨¤«×­È. 
+  - ­×§ï²æ¼Ò­±´X¦ó. ";
+//
+TopOpIntDraftRelimitation =
+        "²æ¼Ò­±°Ê§@: µLªkºIÂ_²æ¼Ò­±. 
+©ÝåN©Î´X¦ó¤Ó½ÆÂø.
+  - ´î¤Ö¨¤«×­È.";
+//
+TopOpIntDraftInitialization =
+        "²æ¼Ò­±°Ê§@: µLªkªì¤Æ°Ê§@.
+  - §ó§ï¾Þ§@¤¸¯À (±ý²æ¼Ò­±, ¤À¼Ò­±, ...).";
+//
+//------------------------------------------- error sweep
+TopOpIntSweepInternalError =
+        "±½±°°Ê§@: ¤º³¡¿ù»~.";
+//
+TopOpInAxisProfileIntersection =
+        "±ÛÂà°Ê§@: Â_­±»P±ÛÂà¶b¬Û¥æ.
+         ½Ð¿ï¾Ü¥t¤@Â_­±©Î±ÛÂà¶b.";
+//
+TopOpInProfilePerpendicularToAxis=
+        "±ÛÂà°Ê§@: Â_­±»PÂ_­±©M¶b¶¡ªº¤è¦V§½³¡««ª½.
+         µLªk«Ø¥ß±ÛÂà­±.
+         ½Ð¿ï¾ÜÂ_­±»P±ÛÂà¶b¤£««ª½ªº.";
+//
+TopOpInProfileParallelToDirection=
+        "Â_­±»P©Ô¦ù¤è¦V¥­¦æ.
+         µLªk«Ø¥ß©Ô¦ù­±.
+         ½Ð¿ï¾ÜÂ_­±»P±ÛÂà¶b¤£¥­¦æªº.";
+//
+TopOpInProfileOrientationChanging=
+        "Â_­±¬Û¹ï©Ô¦ù¤è¦V³»ÂI§ó§ï¤¤.
+         Â_­±¬Û¹ï©Ô¦ù¤è¦VÂ¶µÛ³»ÂI¥¿§ó§ï¤¤ ,
+         µLªk¦b¦¹¦ì¸m©w¸q©Ô¦ù.
+         ½Ð¿ï¾Ü»PÂ_­±¬Û®eªº¤è¦V.";
+//
+TopOpInProfileRevoluteOrientationChanging=
+        "Â_­±¬Û¹ï§½³¡±ÛÂà¤è¦V³»ÂI§ó§ï¤¤.
+         Â_­±¬Û¹ï§½³¡±ÛÂà¤è¦VÂ¶µÛ³»ÂI¥¿§ó§ï¤¤, 
+         µLªk¦b¦¹¦ì¸m©w¸q±ÛÂà.
+         ½Ð¿ï¾Ü»PÂ_­±¬Û®eªº¤è¦V.";
+//
+TopOpInExtrudeTwistedProfile=
+        "©Ô¦ù°Ê§@: ©Ò¿ïÂ_­±¥»¨­¬Û¥æ.
+         µLªk«Ø¥ß©Ô¦ù­±.
+         ½Ð¿ï¾ÜÂ_­±¥»¨­¤£¬Û¥æ.";
+//
+TopOpInExtrudeOverlappingProfiles=
+        "©Ô¦ù°Ê§@: ¨âÂ_­±¶¡¦³­«Å|²{¶H.
+         µLªk«Ø¥ß©Ô¦ù­±.
+         ­×§ï±z©Ò¿ïªºÂ_­±.";
+//
+TopOpInExtrudeCuspProfile=
+        "©Ô¦ù°Ê§@: ¨ã¦³ cusp ªºÂ_­±.
+         µLªk«Ø¥ß©Ô¦ù­±.
+         ½Ð¿ï¾Ü¤@¯ëªºÂ_­±.";
+//
+TopOpInExtrudeOpenProfile=
+        "©Ô¦ù°Ê§@: Â_­±¥¼«Ê³¬.
+         µLªk«Ø¥ß©Ô¦ù­±.
+         ½Ð¿ï¾Ü«Ê³¬Â_­±.";
+//
+TopOpIntExtrudeEmptyWire=
+        "©Ô¦ù°Ê§@: ©Ò¿ïÂ_­±¥¼§t¥ô¦ó¤¸¯À.
+         ½Ð¿ï¾Ü¨ä¥¦½u.";
+//------------------------------------------- error close
+TopOpInCloseNonPlanarOpening=
+         "«Ê³¬°Ê§@: ©Ò¿ï¥¼«Ê³¬¥»ÅéµLªk¥Ñ¥­­±§Î¦¡­×°Å­±«Ê³¬. ½ÐÀË¬d©Ò¦³¥»Åéªº¥­­±§Î¦¡­×°Å­±.";
+//
+TopOpIntCloseInternalError=
+        "«Ê³¬°Ê§@: ¤º³¡¿ù»~.";
+//
+TopOpInCloseInvalidOpening=
+         "«Ê³¬°Ê§@: ©Ò¿ï¥¼«Ê³¬¥»ÅéµLªk¥Ñ¥­­±§Î¦¡­×°Å­±«Ê³¬. ½Ð­×§ï¹s¥ó.";
+//------------------------------------------- error boundary
+TopOpInBoundaryClosedBody=
+         "Ãä¬É°Ê§@: ©Ò¿ï¥»Åé¬O«Ê³¬ªº, ¥¦¨S¦³Ãä¬É.
+          ¦p¦P¶ê²y¯ë.
+          ½Ð¿ï¾Ü¶}©ñ¥»Åé.";
+TopOpInBoundaryImmersedCell=
+         "Ãä¬É°Ê§@: ©Ò¿ï¤£ÄÝ©ó¥»Åé©ÎÃä¬É (·»¤J³æ¦ì). 
+          ½Ð¿ï¾Ü¥»Åéªº³æ¦ì.";
+//------------------------------------------- error loft
+TopOpInLoftOutsideProjection=
+"Â_­±²V¦¨¦±­±°Ê§@: ¤Á­±©Î¾É¤Þ½u¤§¤@ªº§ë¼vÂI¦b¯á´Õ½u­­¨î¥~.
+  ¾É¤Þ½u¦P¨B¤ÆµLªk§¹¦¨.
+  - ½Ð©µ¦ù¯á´Õ½u.";
+//
+TopOpInLoftNonPlanarSection=
+"Â_­±²V¦¨¦±­±°Ê§@: ¦³¨Ç¤Á­±©M¾É¤Þ½uªº¥æÂI¤£¦b¯á´Õ½uªº««ª½­±¤W, 
+ÁöµM¬O¥²¶·ªº.
+  - ½Ð­×§ï¤Á­±.";
+//
+// remplace par TopOpInSweepProfilesHomogenization_ERR_7062 le 02/06/05
+TopOpIntLoftSectionHomogenization=
+"Â_­±²V¦¨¦±­±°Ê§@: µLªk¦b­pºâÂ_­±²V¦¨¦±­±¤§«e¦P¨B¤ÆÂ_­±.";
+//
+// remplace par TopOpInSweepGuidesHomogenization_ERR_7061 le 02/06/05
+TopOpIntLoftGuideHomogenization=
+"Â_­±²V¦¨¦±­±°Ê§@: µLªk¦b­pºâÂ_­±²V¦¨¦±­±¤§«e¦P¨B¤Æ¾É¤Þ½u.";
+//
+//------------------------------------------- error fill
+TopOpInFillNormal=
+"¶ñº¡°Ê§@: ¨Ìªþ¤¸¯À¦b±µÄ²ÂI¥¼¨ã¦³¬Û¦Pªº««ª½¤è¦V.
+  - ½ÐÀË¬d±µÄ²ÂIªº««ª½¤è¦V, ¥B­×§ï¨Ìªþ¤¸¯À.";
+//
+//------------------------------------------- error corner and parallel
+//
+TopOpInCornerOutsideSupport=
+"¶ê¨¤©Î¥­¦æ°Ê§@: ©Ò²£¥Íªº¶ê¨¤©Î¥­¦æ¤¸¯À¶W¹L¨ÌªþªºÁ¡´ß .
+  - ½Ð©µ¦ù¨Ìªþ¤¸¯À.";
+//
+TopOpInCornerDegenerated=
+"¶ê¨¤°Ê§@: ©Ò²£¥Íªº¶ê¨¤¸ÀÅÜ¦¨¤@­ÓÂI, ¥BµLªk«Ø¥ß.
+  - ½Ð­×§ï¿ï¥ÎÂI©Î¥H©Ò©w¸q¥b®|¨Ó«Ø¥ß.";
+//
+TopOpIntCornerTooManySolutions=
+"¶ê¨¤°Ê§@: ¤Ó¦h¸Ñ.
+- ½Ð¿ï¾Ü¥t¤@¤¤¤ß, 
+- ©Î¿ï¾Üª½±µ¥H¶ê²y»P¨Ìªþ¤¸¯Àªº¬Û¥æ.";
+//
+TopOpIntCornerRelimitation=
+"¶ê¨¤°Ê§@: µLªkºIÂ_.";
+//
+TopOpInCornerNotAvailable=
+"¶ê¨¤°Ê§@: ±zµLªk¥H°_©l©M²×¤î¨¤«×¨Ó©w¸q¶ê¨¤.
+- ½Ð¥H¥b®|©MºIÂ_¨Óª½±µ©w¸q¥¦.";
+//
+TopOpInParallelExtrapolation=
+"¥­¦æ°Ê§@: ©µ¦ù¥­¦æ¥¼¬Û¥æ.
+- ¦³¥i¯à¬O¦y¨¤©Î¥~³¡¥­¦æ.";
+//
+TopOpInParallelRelimitation=
+"¥­¦æ°Ê§@: ¦³¥i¯à¨S¦³¬Û¥æ©Î¤Ó¦h¬Û¥æ.
+- ½Ð­×°Å¬Û¥æ½u.";
+//
+TopOpInParallelLoop=
+"¥­¦æ°Ê§@: ¦³¥i¯à¤Ó¦h¬Û¥æ.
+µ²ªG³y¦¨°j°é. 
+- ½Ð´î¤Ö°¾²¾­È";
+//
+//-------------------------- 
+//
+TopOpIntStylingFilletTriangularBreak=
+"³y§Î¶ê¨¤°Ê§@: ¦±­±¤§¤@µLªk¥´Â_.
+- ½Ð©µ¦ù¦±­±.";
+//
+TopOpInInvalidSurface=
+     "©ÝåN°Ê§@: ¥²¶·¬O Nurbs ¦±­±. 
+- ½ÐÂà´«¦¨ Nurbs ¦±­±.";
+
+//
+//  new-
+// 5000-  Common
+// 6000-6024- Line
+// 6025-6049- Point
+// 6050-6099- Extrapolation
+// 6100-6149- fillet
+// 6150-6199- draft
+// 6200-6249- helix
+// 6250-6299- split-trim
+// 6300-6349- corner-parallel
+// 6350-6399- concatenation
+// 6400-6449- PConic
+// 6450-6499- Lay Down
+// 6500-6549- clean curve (smooth curve)
+// 6550-6599- Shell/Thickness/Thick-Offset-Extrapolate Surface 
+// 6600-6649- HybOperator
+// 6650-6699- PolarExtremum
+// 6700-6749- spiral
+// 6750-6774- spline
+// 6775-6799- circle
+// 6800-6820- wirecontinuity
+// 6821-6849- Plane
+// 6850-6879- Close Operator
+// 6880-6899- Shell from close wire Operator
+// 7000-7099- sweep and loft
+// 7500       internal error
+// 7550-7599- Hybrid Operators
+// 8000-8050- EdgePropagate
+//
+TopOpInNotPlanar_ERR_5001.Request="©ÝåN°Ê§@:";
+TopOpInNotPlanar_ERR_5001.Diagnostic="©Ò¿ï¨Ìªþ¤¸¯À¤£¬O¥­­±Á¡´ß.";
+TopOpInNotPlanar_ERR_5001.Advice="½Ð¿ï¾Ü¥­­±¨Ìªþ¤¸¯À.";
+//
+TopOpInMultiSurfaces_ERR_5002.Request="©ÝåN°Ê§@:";
+TopOpInMultiSurfaces_ERR_5002.Diagnostic="©Ò¿ï¨Ìªþ¤¸¯À°Ñ¦Ò¦h­Ó¤£¦Pªº´X¦ó¦±­±.";
+TopOpInMultiSurfaces_ERR_5002.Advice="½Ð¿ï¾Ü°Ñ¦Ò³æ¤@´X¦ó¦±­±ªº¨Ìªþ¤¸¯À.";
+//
+TopOpInCuspContour_ERR_5003.Request="©ÝåN°Ê§@:";
+TopOpInCuspContour_ERR_5003.Diagnostic="©Ò¿ï¥~§Î§t¦³ cusp, ¾É­P³æ¤@¸Ñ.";
+TopOpInCuspContour_ERR_5003.Advice="½Ð¿ï¾Ü¤@¯ë´X¦ó¤¸¯À.";
+//
+TopOpInInitialization_ERR_5004.Request="©ÝåN°Ê§@:";
+TopOpInInitialization_ERR_5004.Diagnostic="°Ê§@µLªkªì©l¤Æ.";
+TopOpInInitialization_ERR_5004.Advice="½Ð¦Ü¤Ö§ó§ï¤@¶µ¾Þ§@.";
+//
+TopOpInClosedWire_ERR_5005.Request="©ÝåN°Ê§@:";
+TopOpInClosedWire_ERR_5005.Diagnostic="«Ê³¬¦±½uµLªk°õ¦æ¦¹°Ê§@.";
+TopOpInClosedWire_ERR_5005.Advice="½Ð¿ï¾Ü¶}©ñ¦±½u.";
+//
+TopOpInNotLinear_ERR_5006.Request="©ÝåN°Ê§@:";
+TopOpInNotLinear_ERR_5006.Diagnostic="©Ò¿ï¤¸¯À¤£¬Oª½½u.";
+TopOpInNotLinear_ERR_5006.Advice="½Ð¿ï¾Üª½½u.";
+//
+TopOpInMultiCurves_ERR_5007.Request="©ÝåN°Ê§@:";
+TopOpInMultiCurves_ERR_5007.Diagnostic="¿ï¾Ü½u°Ñ¦Ò¼Æ­Ó´X¦ó¦±½u.";
+TopOpInMultiCurves_ERR_5007.Advice="½Ð¿ï¾Ü°Ñ¦Ò³æ¤@´X¦ó¦±½u¤¸¯À.";
+//
+TopOpInNonC0Law_ERR_5008.Request="©ÝåN°Ê§@:";
+TopOpInNonC0Law_ERR_5008.Diagnostic="©Ò¿ïªº law ¤£³sÄò.";
+TopOpInNonC0Law_ERR_5008.Advice="½Ð¿ï¾Ü¼Æ­Ó³sÄò laws ¨Ó¥N´À.";
+//
+TopOpInNonWireBody_ERR_5009.Request="©ÝåN°Ê§@:";
+TopOpInNonWireBody_ERR_5009.Diagnostic="¿é¤J¥»Åé¤£¬O¥Ñ½u¨Ó«Ø¥ß.";
+TopOpInNonWireBody_ERR_5009.Advice="½Ð¿ï¾Ü¥u¦³½uªº¥»Åé.";
+//
+TopOpInInvalidPointOnWire_ERR_5010.Request="©ÝåN°Ê§@:";
+TopOpInInvalidPointOnWire_ERR_5010.Diagnostic="¿é¤JÂI©w¸q¦b½uªº¥»Åé¤W.";
+TopOpInInvalidPointOnWire_ERR_5010.Advice="½Ð¿ï¾Ü«D¥»ÅéªºÂI.";
+//
+TopOpInWarning_ERR_5011.Request="©ÝåN°Ê§@:";
+TopOpInWarning_ERR_5011.Diagnostic="´X¦ó¿ù»~Äµ§i";
+TopOpInWarning_ERR_5011.Advice="Äµ§i";
+//
+// N.B Ce message est utilise pour la detection standard CGM a 0.1
+// mais plus pour la detection plus fine dans le sweep a 0.001.  NLD130504
+// N.B voir aussi 7036 pour sweep
+TopOpInMaxGapDetection_ERR_5012.Request="©ÝåN°Ê§@:";
+TopOpInMaxGapDetection_ERR_5012.Diagnostic="µ²ªG´X¦ó§t¦³¶¡»Ø.";
+TopOpInMaxGapDetection_ERR_5012.Advice="­×§ï°Ñ¼Æ­È©Î§ó§ï°Ê§@.";
+//
+TopOpInTangencyMaxGapDetection_ERR_5013.Request="©ÝåN°Ê§@:";
+TopOpInTangencyMaxGapDetection_ERR_5013.Diagnostic="µ²ªG´X¦ó§t¦³¤Á½u¤£³sÄò.";
+TopOpInTangencyMaxGapDetection_ERR_5013.Advice="­×§ï°Ñ¼Æ­È©Î§ó§ï°Ê§@.";
+//
+TopOpInDistanceMinIntersectionToInfinite_ERR_5014.Request="³Ì¤p¶ZÂ÷ªº©ÝåN°Ê§@:";
+TopOpInDistanceMinIntersectionToInfinite_ERR_5014.Diagnostic="¨âµL­­¤¸¯À¶¡¨S¦³§½³¡³Ì¤p.";
+TopOpInDistanceMinIntersectionToInfinite_ERR_5014.Advice="¦b¦¹±¡§Î, ¨Ï¥Îµô°Å¤¸¯À.";
+//
+TopOpInNotWire_ERR_5015.Request="©ÝåN°Ê§@:";
+TopOpInNotWire_ERR_5015.Diagnostic="¥»Åé¤£¬O½u.";
+TopOpInNotWire_ERR_5015.Advice="¨Ï¥Î½u¬°¿é¤J.";
+//
+TopOpInNotShell_ERR_5016.Request="©ÝåN°Ê§@:";
+TopOpInNotShell_ERR_5016.Diagnostic="¥»Åé¤£¬OÁ¡´ß.";
+TopOpInNotShell_ERR_5016.Advice="¨Ï¥ÎÁ¡´ß¬°¿é¤J.";
+//
+TopOpInNotVertex_ERR_5017.Request="©ÝåN°Ê§@:";
+TopOpInNotVertex_ERR_5017.Diagnostic="¥»Åé¤£¬O³»ÂI.";
+TopOpInNotVertex_ERR_5017.Advice="¨Ï¥Î³»ÂI¬°¿é¤J.";
+//
+TopOpInDistanceMaxWarning_ERR_5018.Request="³Ì¤j¶ZÂ÷ªº©ÝåN°Ê§@:";
+TopOpInDistanceMaxWarning_ERR_5018.Diagnostic="³Ì¤j¦¨¥\¶ZÂ÷.";
+TopOpInDistanceMaxWarning_ERR_5018.Advice="";
+//
+TopOpInDistanceMaxWarning_ERR_5019.Request="³Ì¤j¶ZÂ÷ªº©ÝåN°Ê§@:";
+TopOpInDistanceMaxWarning_ERR_5019.Diagnostic="³Ì¤j¥¢®Ä¶ZÂ÷.";
+TopOpInDistanceMaxWarning_ERR_5019.Advice="";
+//
+TopOpInDistanceMaxWarning_ERR_5020.Request="³Ì¤j¶ZÂ÷ªº©ÝåN°Ê§@:";
+TopOpInDistanceMaxWarning_ERR_5020.Diagnostic="¤Ï¦±¶W¹LÁ¡´ß.";
+TopOpInDistanceMaxWarning_ERR_5020.Advice="";
+//
+TopOpInDistanceMaxWarning_ERR_5021.Request="³Ì¤j¶ZÂ÷ªº©ÝåN°Ê§@:";
+TopOpInDistanceMaxWarning_ERR_5021.Diagnostic="¥u¦³§ë¼v¤è¦¡.";
+TopOpInDistanceMaxWarning_ERR_5021.Advice="";
+//
+// 6000-6024 Line
+TopOpInLineIdenticalPoints_ERR_6001.Request="©ÝåN½u°Ê§@:";
+TopOpInLineIdenticalPoints_ERR_6001.Diagnostic="µLªk§Q¥Î¨âÂI¨Ó¨M©w½u.";
+TopOpInLineIdenticalPoints_ERR_6001.Advice="¥i¯à­ì¦]¬° :\n
+- ¿é¤JÂI¦b­ìÄÝ½u¤W ;\n
+- ©Ò¿ïÂI¬Û¦P.";
+//
+TopOpInLineMultipleSolution_ERR_6002.Request="©ÝåN½u«Ø¥ß :";
+TopOpInLineMultipleSolution_ERR_6002.Diagnostic="µLªk¸Ñ¥X: 
+¥i¯à¬OÂI»P¦±½u¤Wªºª½½u³¡¤À¦@½u.";
+TopOpInLineMultipleSolution_ERR_6002.Advice="­×§ï¿é¤JÂI.";
+//
+TopOpInLineOnSupport_ERR_6003.Request="¨Ìªþ¤¸¯À«Ø¥ß®É²£¥Íªº½u :";
+TopOpInLineOnSupport_ERR_6003.Diagnostic="µLªk¸Ñ¥X.";
+TopOpInLineOnSupport_ERR_6003.Advice="¦³¥i¯à¦b¨Ìªþ¤¸¯À¥~¦³¤@¸Ñ, ½Ð°fÂà½uªº¤è¦V.";
+//
+TopOpInLineOnSupportDirection_ERR_6004.Request="«Ø¥ß¨Ìªþ¤Wªº©ÝåN½u:";
+TopOpInLineOnSupportDirection_ERR_6004.Diagnostic="½uªº¤è¦V¤£¦b¨Ìªþªº¤Á­±¤W.";
+TopOpInLineOnSupportDirection_ERR_6004.Advice="½Ð¿ï¾Ü¦b¨Ìªþ¤Á­±¤Wªº¤è¦V.";
+//
+TopOpInLineTooSmallLength_ERR_6005.Request="©ÝåN½u¾Þ§@:";
+TopOpInLineTooSmallLength_ERR_6005.Diagnostic="½u¬qªø«×¤Ó¤p, µLªk°õ¦æ­pºâ½uªº°Ê§@.
+¤]¥i¯à¬O:
+  - ¿é¤Jªº¦V¶q¤Óµu
+  - ³¡¥÷¿é¤JÂI
+  - ¿é¤Jªº½uªø«×¤Óµu.";
+TopOpInLineTooSmallLength_ERR_6005.Advice="§ó§ï±zªº¿é¤J";
+//
+TopOpInLineNormalTwoPoints_ERR_6006.Request="©ÝåN½u««ª½¦±­±:";
+TopOpInLineNormalTwoPoints_ERR_6006.Diagnostic="«Ø¥ß½uªº­ìÂI¶W¹L¤@­Ó.";
+TopOpInLineNormalTwoPoints_ERR_6006.Advice="¥u¿ï¾Ü¤@ÂI.";
+//
+TopOpInLinePtDirTooCloseLimits_ERR_6007.Request="°Ê§@ ½u ÂI-¤è¦V";
+TopOpInLinePtDirTooCloseLimits_ERR_6007.Diagnostic="«Ø¥ß½u©Ò¨Ï¥Îªø«×¤Ó±µªñ­­¨î.";
+TopOpInLinePtDirTooCloseLimits_ERR_6007.Advice="½Ð¨Ï¥Î°ª©ó¼Ò«¬¸ÑªR«×ªº­­¨î­È.";
+//
+TopOpInLineGeodesicPtDir_ERR_6008.Request="°Ê§@ ½u ÂI-¤è¦V";
+TopOpInLineGeodesicPtDir_ERR_6008.Diagnostic="µLªk«Ø¥ß½u.";
+TopOpInLineGeodesicPtDir_ERR_6008.Advice="½ÐÀË¬dÂI¤£¬O¦bÁ¡´ßªºÃä¬É¤W.";
+//
+// 6025-6049- Point
+//
+TopOpInPointMultipleSolution_ERR_6025.Request="´M§ä¦±½u¤W»P´£¨Ñ¤è¦V¬Û¤ÁªºÂI:";
+TopOpInPointMultipleSolution_ERR_6025.Diagnostic=
+"½uªº³¡¤À¬°ª½½u¥B»P´£¨Ñ¤è¦V¥­¦æ.
+µLªk²£¥Í©Ò­nªºÂI.";
+TopOpInPointMultipleSolution_ERR_6025.Advice="½Ð­×§ï¤è¦V.";
+//
+TopOpInPointCurveIsNotPlanar_ERR_6026.Request="´M§ä¦±½u¤W»P´£¨Ñ¤è¦V¬Û¤ÁªºÂI:";
+TopOpInPointCurveIsNotPlanar_ERR_6026.Diagnostic="½uªº³¡¥÷¤£¬O¥­­±§Î¦¡.";
+TopOpInPointCurveIsNotPlanar_ERR_6026.Advice="½Ð¿ï¾Ü¥­­±§Î¦¡ªº½u.";
+//
+// 6050-6074- Extrapolation of a wire lying on a shell
+//
+TopOpInExtrapolWireOnShellInvalidWire_ERR_6050.Request="©µ¦ù½u¥»Åé:";
+TopOpInExtrapolWireOnShellInvalidWire_ERR_6050.Diagnostic="µL®Ä½u¥»Åé:";
+TopOpInExtrapolWireOnShellInvalidWire_ERR_6050.Advice="­×§ï½u¥»Åé©Î¿é¤J¤¸¯À :";
+//
+TopOpInExtrapolWireOnShellSelfIntersection_ERR_6051.Request="©µ¦ù½u¥»Åé:";
+TopOpInExtrapolWireOnShellSelfIntersection_ERR_6051.Diagnostic="¥Ñ©ó½u¥»Åé¥»¨­¬Û¥æ,¾É­P©µ¦ù½u¥»ÅéµL®Ä :";
+TopOpInExtrapolWireOnShellSelfIntersection_ERR_6051.Advice="­×§ï½u¥»Åé©Î¿é¤J¤¸¯À.";
+//
+TopOpIntExtrapolWireOnShellInternalError_ERR_6052="©µ¦ù½u¥»Åé : ¤º³¡¿ù»~";
+//
+TopOpInExtrapolWireNonIsotopology_ERR_6053.Request="¦ùªø½u¥»Åé:";
+TopOpInExtrapolWireNonIsotopology_ERR_6053.Diagnostic="¦ùªø½u¹F¨ì¨Ìªþ¦±½uÃä¬É.";
+TopOpInExtrapolWireNonIsotopology_ERR_6053.Advice="©w¸q¸û¤pªºªø«×.";
+//
+TopOpInExtrapolWireCurvatureProblem_ERR_6054.Request="©µ¦ù½u¥»Åé:";
+TopOpInExtrapolWireCurvatureProblem_ERR_6054.Diagnostic="½u¦±«×¤Ó¤j, 
+¥H­PµLªk¹F¨ì¥Ø¼Ð¥­­±.";
+TopOpInExtrapolWireCurvatureProblem_ERR_6054.Advice="©w¸q¸û¤pªºªø«×.";
+//
+TopOpInExtrapolWireSelfIntersection_ERR_6055.Request="©µ¦ù½u¥»Åé :";
+TopOpInExtrapolWireSelfIntersection_ERR_6055.Diagnostic="©µ¦ùµ²ªG³y¦¨¦Û§Ú¬Û¥æ.";
+TopOpInExtrapolWireSelfIntersection_ERR_6055.Advice="½Ð©w¸q¸û¤pªº©µ¦ù¶q.";
+//
+TopOpInExtrapolWireSelfIntersection_ERR_6056.Request="¦b¨Ìªþ¤W©µ¦ù½u¥»Åé:";
+TopOpInExtrapolWireSelfIntersection_ERR_6056.Diagnostic="¨Ìªþ³sÄò©Ê»P¦±°T©µ¦ù¤£¤Ç°t.";
+TopOpInExtrapolWireSelfIntersection_ERR_6056.Advice="";
+//
+// Fillet 6075-6149
+//
+TopOpInSpecificFace_6099.Request="Àô±a­pºâ:";
+TopOpInSpecificFace_6099.Diagnostic="¤w²£¥Í«ü©w¦±­±.";
+TopOpInSpecificFace_6099.Advice=" ½Ð¨Ï¥Î¦±²v¤ÀªR¤u¨ã¨Ó¤ÀªR¦±­±.";
+//
+TopOpInFilletTooLargeImpact_ERR_6100.Request="©ÝåN°Ê§@ :";
+TopOpInFilletTooLargeImpact_ERR_6100.Diagnostic="°Ê§@¹ï¥»Åé¼vÅT. \n
+¥»Åé¤W¦³¨Ç­«­n³¡¥÷·|¤£¨£.";
+TopOpInFilletTooLargeImpact_ERR_6100.Advice="­×§ï°Ñ¼Æ­È.";
+//
+TopOpInMultiRibbonInitialization_ERR_6101.Request="¦h­«Àô±a¶ê¨¤°Ê§@:";
+TopOpInMultiRibbonInitialization_ERR_6101.Diagnostic="¹ï¤@©Î¦h­ÓÀô±a°Ê§@µLªk°_©l¶ê¨¤°Ê§@.";
+TopOpInMultiRibbonInitialization_ERR_6101.Advice="«ØÄ³¤À¶}³B²z.";
+//
+TopOpInMultiRibbonDefinition_ERR_6102.Request="¦h­«Àô±a°Ê§@:";
+TopOpInMultiRibbonDefinition_ERR_6102.Diagnostic="³æ¤@°Ê§@µLªk³B²z¦h­«Àô±a.";
+TopOpInMultiRibbonDefinition_ERR_6102.Advice="³æ¤@Àô±a½Ð¤À§O³B²z.";
+//
+TopOpInLimitingVsInitialBody_ERR_6103.Request="©ÝåN°Ê§@:";
+TopOpInLimitingVsInitialBody_ERR_6103.Diagnostic="­­¨î¤¸¯À¥¼§¹¥þ»Pªì©l¥»Åé¬Û¥æ";
+TopOpInLimitingVsInitialBody_ERR_6103.Advice="½Ð­«·s³B²z­­¨î¤¸¯À¨Ó²Å¦X¦¹°Ê§@.";
+//
+TopOpIntTopRibSewing_ERR_6104.Request="©ÝåN°Ê§@:";
+TopOpIntTopRibSewing_ERR_6104.Diagnostic = "±½±°°Ê§@¿ù»~: µLªk¨M©w­n«O¯d©Î²¾°£ªº­×°Å­±.";
+TopOpIntTopRibSewing_ERR_6104.Advice="½ÐÀË¬d´X¦ó¤¸¯À.";
+//
+TopOpInPartingCannotBeUsed_ERR_6105.Request="©ÝåN°Ê§@:";
+TopOpInPartingCannotBeUsed_ERR_6105.Diagnostic="­­¨î©Î¤À¼Ò­±¤¸¯ÀµLªk¥¿½T¨Ï¥Î.";
+TopOpInPartingCannotBeUsed_ERR_6105.Advice="½ÐÀË¬d¬O§_¶·¨Ï¥Î­­¨î©Î¤À¼Ò­±¤¸¯À. \n ­«·sÅã¥Ü©Î²¾°Ê¥i¯à·|¦³À°§U.";
+//
+TopOpInStopOnSlightlySharpEdge_ERR_6106.Request="Àô±a­pºâ:";
+TopOpInStopOnSlightlySharpEdge_ERR_6106.Diagnostic="Àô±a°±¤î¦b¾UÃä.";
+TopOpInStopOnSlightlySharpEdge_ERR_6106.Advice="½ÐÀË¬d´X¦ó.";
+//
+TopOpInPointedBlend_ERR_6107.Request="Àô±a­pºâ:";
+TopOpInPointedBlend_ERR_6107.Diagnostic="Àô±aµLªk¨ìÃä¬ÉºÝÂI.";
+TopOpInPointedBlend_ERR_6107.Advice="½ÐÀË¬d´X¦ó.";
+//
+TopOpInStopOnSmallFaces_6108.Request="Àô±a­pºâ:";
+TopOpInStopOnSmallFaces_6108.Diagnostic="Àô±a°±¤î¦b¸û¤p­×°Å­±.";
+TopOpInStopOnSmallFaces_6108.Advice="½ÐÀË¬d´X¦ó.";
+//
+TopOpInVariableFilletIncoherentSpecs_ERR_6109.Request="ÅÜ¤Æ¶ê¨¤¿é¤J :";
+TopOpInVariableFilletIncoherentSpecs_ERR_6109.Diagnostic="¿é¤JÃä½uµL®Ä.";
+TopOpInVariableFilletIncoherentSpecs_ERR_6109.Advice="µLªk¦b¾UÃä©Î¤£³sÄòÃä«Ø¥ßÅÜ¤Æ¶ê¨¤.";
+//
+TopOpInStopOnSmallSteps_6110.Request="Àô±a­pºâ:";
+TopOpInStopOnSmallSteps_6110.Diagnostic="Àô±a°±¤î¦b¸û¤p³¡¥÷.";
+TopOpInStopOnSmallSteps_6110.Advice="½ÐÀË¬d´X¦ó.";
+//
+TopOpInKeepEdgeSpecificRelim_6111.Request="Àô±a­pºâ:";
+TopOpInKeepEdgeSpecificRelim_6111.Diagnostic="ºIÂ_®ÉµLªk«O«ùÃä¬É²ÕºA.";
+TopOpInKeepEdgeSpecificRelim_6111.Advice="½ÐÀË¬d´X¦ó.";
+//
+TopOpInStopOnSnapping_6112.Request="Àô±a­pºâ:";
+TopOpInStopOnSnapping_6112.Diagnostic="Àô±a¤w°±¤î¦b¨ã¬Û¦P´X¦óªºÀô±a¤W.";
+TopOpInStopOnSnapping_6112.Advice="½Ð§ó§ïÀô±a¦¸§Ç©Î±N¨äÅÜ¬°³æ¤@²Õ°Ê§@.";
+//
+TopOpInStopOnStoppedOnSingularity_6113.Request="Àô±a­pºâ:";
+TopOpInStopOnStoppedOnSingularity_6113.Diagnostic="Àô±a°±¤î´X¦ó³æ¤@©Ê.";
+TopOpInStopOnStoppedOnSingularity_6113.Advice="´î¤p°Ñ¼Æ­È©Î­×§ïÀô±a¶¥¼Æ.";
+//
+TopOpInHoldCurveContainsAJunctionEdge_6114.Request="Àô±a­pºâ:";
+TopOpInHoldCurveContainsAJunctionEdge_6114.Diagnostic="¤ä«ù¦±½u§t¦³¸õ±µÃä½u.";
+TopOpInHoldCurveContainsAJunctionEdge_6114.Advice="¥­¶¶¤ä«ù¦±½u.";
+//
+TopOpInCouldNotBePropagatedAsExpected_6115.Request="Àô±a­pºâ:";
+TopOpInCouldNotBePropagatedAsExpected_6115.Diagnostic="Àô±aµLªk¦p¹w´Á©µ¦ù.";
+TopOpInCouldNotBePropagatedAsExpected_6115.Advice="½ÐÀË¬dÀô±a©µ¦ù¿ù»~¦ì¸m«~½è.";
+//
+TopOpInSupportRelimitationNotAsExpected_6116.Request="Àô±aµô°Å:";
+TopOpInSupportRelimitationNotAsExpected_6116.Diagnostic="Àô±aµLªk¦p­n¨Dµô°Å.";
+TopOpInSupportRelimitationNotAsExpected_6116.Advice="½Ð¿ï¾Ü¥t¤@­×°Å¨Ìªþ¿ï¶µ.";
+//
+TopOpInOperationNotPossibleOnMultipleShells_6117.Request="Àô±a­pºâ:";
+TopOpInOperationNotPossibleOnMultipleShells_6117.Diagnostic="Àô±aµLªk¦b¦n´X­ÓÁ¡´ß¤W­pºâ.";
+TopOpInOperationNotPossibleOnMultipleShells_6117.Advice="½Ð¥u¿é¤J¤@­ÓÁ¡´ß.";
+//
+TopOpInOperationNotPossibleOnMultipleBodies_6118.Request="Àô±a­pºâ:";
+TopOpInOperationNotPossibleOnMultipleBodies_6118.Diagnostic="Àô±aµLªk¦b¦n´X­Ó¥»Åé¤W­pºâ.";
+TopOpInOperationNotPossibleOnMultipleBodies_6118.Advice="½Ð¥u¿é¤J¤@­Ó¥»Åé.";
+//
+TopOpInRelimitationNoContactOnASupport_6119.Request="ºIÂ_:";
+TopOpInRelimitationNoContactOnASupport_6119.Diagnostic="ºIÂ_­­¨î¦b±µÄ²¦±­±ªºÀô±a¤W";
+TopOpInRelimitationNoContactOnASupport_6119.Advice="­×§ï¿é¤J.";
+//
+TopOpInUnexpectedPointedBlend_6120.Request="Àô±a­pºâ:";
+TopOpInUnexpectedPointedBlend_6120.Diagnostic="¦]¬°¦±­±¬Û¤Á¾É­PÀô±a°±¤î. ¥¼¥ý°»´ú¨ì¬Û¤Á.";
+TopOpInUnexpectedPointedBlend_6120.Advice="Á×§K¬Û¤Á.";
+// 21-29 : AutoFillet
+TopOpInAutoFilletTooManyFilletsInInput_6121.Request="¦Û°Ê¶ê¨¤";
+TopOpInAutoFilletTooManyFilletsInInput_6121.Diagnostic="¥­¶¶²Õ¦X­±§t¦³¤º³¡¾UÃä. (·í¤£Åã¥Ü¥­¶¶Ãä½u®ÉÅã¥Ü¥­¶¶²Õ¦X­±)";
+TopOpInAutoFilletTooManyFilletsInInput_6121.Advice="¥i¯à®É, ²¾°£¿é¤J¥»Åé¤¤ªº¤£»Ý­n¶ê¨¤.";
+//
+TopOpInAutoFilletExistingSameRadiusFillet_6122.Request="¦Û°Ê¶ê¨¤";
+TopOpInAutoFilletExistingSameRadiusFillet_6122.Diagnostic="¿é¤J¥»Åé§t¦³¤@©Î¥H¤W­Ó¶ê¨¤©M¿é¤J¥b®|¬Û¦P";
+TopOpInAutoFilletExistingSameRadiusFillet_6122.Advice="¥Ñ¿é¤J²¾°£³o¨Ç¶ê¨¤";
+//
+TopOpInAutoFilletIllegalNotToFilletFaces_6123.Request="¦Û°Ê¶ê¨¤";
+TopOpInAutoFilletIllegalNotToFilletFaces_6123.Diagnostic="©Ò¿ïªº¾Fªñ¥\¯à¦±­±¥]§t¦³¥~¥Y©M¤º¥Wªº¦±½u.";
+TopOpInAutoFilletIllegalNotToFilletFaces_6123.Advice="½Ð½T©w©Ò¿ï¥\¯à¦±­±¤¤Ãä½u«¬¦¡¤@­P.";
+//
+TopOpInAutoFilletLowCurvatureGenerated_6124.Request="¦Û°Ê¶ê¨¤";
+TopOpInAutoFilletLowCurvatureGenerated_6124.Diagnostic="²£¥Í§C¦±²v¥b®|¦±­±";
+TopOpInAutoFilletLowCurvatureGenerated_6124.Advice="½ÐÀË¬d²£¥Í´X¦ó¤¸¯À";
+//
+TopOpInAutoFilletTooSmallInputRadius_6125.Request="¦Û°Ê¶ê¨¤";
+TopOpInAutoFilletTooSmallInputRadius_6125.Diagnostic="¿é¤J¥b®|¤Ó¤p";
+TopOpInAutoFilletTooSmallInputRadius_6125.Advice="§ó§ï¿é¤J¥b®|";
+//
+TopOpInAutoFilletTooBigInputRadius_6126.Request="¦Û°Ê¶ê¨¤";
+TopOpInAutoFilletTooBigInputRadius_6126.Diagnostic="¿é¤J¥b®|»P¼Ò«¬¤j¤p¬Û¤ñ¤Ó¤j";
+TopOpInAutoFilletTooBigInputRadius_6126.Advice="§ó§ï¿é¤J¥b®|";
+//
+TopOpInAutoFilletNoFilletCouldBeCreated_6127.Request="¦Û°Ê¶ê¨¤";
+TopOpInAutoFilletNoFilletCouldBeCreated_6127.Diagnostic="µLªk«Ø¥ß¶ê¨¤";
+TopOpInAutoFilletNoFilletCouldBeCreated_6127.Advice="§ó§ï¿é¤J¥b®|";
+//
+TopOpInAutoFilletFewFilletsCouldNotBeCreated_6128.Request="¦Û°Ê¶ê¨¤";
+TopOpInAutoFilletFewFilletsCouldNotBeCreated_6128.Diagnostic="³¡¥÷¶ê¨¤µLªk«Ø¥ß";
+TopOpInAutoFilletFewFilletsCouldNotBeCreated_6128.Advice="¥i¯à§½³¡¶ê¨¤¤Ó¤j. ÀË¬d¿é¤J¥b®|©ÎÂ²¤Æ´X¦ó¤¸¯À";
+//
+TopOpInAutoFilletLivingDeadEdge_6129.Request="¦Û°Ê¶ê¨¤";
+TopOpInAutoFilletLivingDeadEdge_6129.Diagnostic="¦Ü¤Ö¤@¾UÃä§½³¡¥­¶¶¤Æ.";
+TopOpInAutoFilletLivingDeadEdge_6129.Advice="§ó§ï³]­p¬°¾ãÅé¥­¶¶©Î¾UÃä.";
+//
+TopOpInVertexBlendTrackCreation_ERR_6130.Request="³»ÂI¶¶±µ :";
+TopOpInVertexBlendTrackCreation_ERR_6130.Diagnostic="µLªk«Ø¥ß¶ê¨¤Ãä¬É.";
+TopOpInVertexBlendTrackCreation_ERR_6130.Advice="Setback ¥i¯à¤£¥¿½T©Î¯Ê¤Ö.";
+//
+TopOpInVertexBlendSurfaceCreation_ERR_6131.Request="³»ÂI¶¶±µ :";
+TopOpInVertexBlendSurfaceCreation_ERR_6131.Diagnostic="©ÝåN¤Ó½ÆÂø : µLªk«Ø¥ßÂà¨¤¦±­±.";
+TopOpInVertexBlendSurfaceCreation_ERR_6131.Advice="½ÐÀË¬d³»ÂI¶¶±µ¿é¤J.";
+//
+TopOpInVertexBlendSurfaceSewing_ERR_6132.Request="³»ÂI¶¶±µ :";
+TopOpInVertexBlendSurfaceSewing_ERR_6132.Diagnostic="µL®Ä°h¦^¶ZÂ÷.";
+TopOpInVertexBlendSurfaceSewing_ERR_6132.Advice="½ÐÀË¬d³»ÂI¶¶±µ¿é¤J.";
+//
+TopOpInVertexBlendAllEdgesMustBeFilleted_ERR_6133.Request="³»ÂI¶ê¨¤ :";
+TopOpInVertexBlendAllEdgesMustBeFilleted_ERR_6133.Diagnostic="¥²¶·­Ë¶ê¨¤©Ò¦³ªºÃä½u.";
+TopOpInVertexBlendAllEdgesMustBeFilleted_ERR_6133.Advice="½ÐÀË¬d­Ë¶ê¨¤ªº¿é¤J, ©Îµô¤Á¤è¦V.";
+//
+TopOpInVertexBlendFilletsCannotCollide_ERR_6134.Request="³»ÂI¶ê¨¤ :";
+TopOpInVertexBlendFilletsCannotCollide_ERR_6134.Diagnostic="¥ô¦ó¨â¶ê¨¤¶¡ªº¤z¯A¥²¶·«ü©w¬°¶ê¨¤³»ÂI.";
+TopOpInVertexBlendFilletsCannotCollide_ERR_6134.Advice="½ÐÀË¬d¬O§_¤£»Ý­n­­¨î¤¸¯À.";
+//
+//TopOpInRibbon_InternalErrorForInfiniteLoop_ERR_6135 = "¤º³¡¿ù»~.";
+TopOpInRibbon_InternalErrorForInfiniteLoop_ERR_6135.Request="Àô±a­pºâ:";
+TopOpInRibbon_InternalErrorForInfiniteLoop_ERR_6135.Diagnostic="Àô±aµLªk¥¿½T¼W¥Í.";
+TopOpInRibbon_InternalErrorForInfiniteLoop_ERR_6135.Advice="½ÐÀË¬d¿é¤J´X¦ó¤¸¯À«~½è.";
+//
+TopOpInRibbonCollision_ERR_6136.Request="Àô±a­pºâ:";
+TopOpInRibbonCollision_ERR_6136.Diagnostic="©Ò«Ø´X¦ó°»´ú¨ìµL®Äªº¤z¯A.";
+TopOpInRibbonCollision_ERR_6136.Advice="´î¤Ö°Ñ¼Æ­È, §ó§ï°Ê§@©Î¼W¥[­­¨î¤¸¯À.";
+
+TopOpInMultiRibbonImpossibleSelection_ERR_6137.Request="¦h­«Àô±a°Ê§@:";
+TopOpInMultiRibbonImpossibleSelection_ERR_6137.Diagnostic="µLªk°õ¦æ¦h­«Àô±a°Ê§@.";
+TopOpInMultiRibbonImpossibleSelection_ERR_6137.Advice="­Ó§O°õ¦æÀô±a°Ê§@.";
+
+TopOpInImpossibleTrim_ERR_6138.Request="­×°Å¨Ìªþ:";
+TopOpInImpossibleTrim_ERR_6138.Diagnostic="µLªkµô°Å.";
+TopOpInImpossibleTrim_ERR_6138.Advice="§ó§ï¿é¤J¶ê¨¤.";
+
+TopOpInTooComplexOperation_ERR_6139.Request="©Ý¾ë°Ê§@ :";
+TopOpInTooComplexOperation_ERR_6139.Diagnostic="°Ê§@¤Ó½ÆÂø.";
+TopOpInTooComplexOperation_ERR_6139.Advice="§ó§ï¿é¤J.";
+
+TopOpInMultiRibbonImpossibleSelection_ERR_6140.Request="¦h­«Àô±a°Ê§@:";
+TopOpInMultiRibbonImpossibleSelection_ERR_6140.Diagnostic="Äµ§i : ¦Ü¤Ö¦³¤@­ÓÀô±aµLªk¥¿½T­pºâ.";
+TopOpInMultiRibbonImpossibleSelection_ERR_6140.Advice="½Ð¤À¶}­pºâÀô±a.";
+
+TopOpInDistanceLawNegativeValue_ERR_6141.Request="ÅÜ¤Æ¶ê¨¤:";
+TopOpInDistanceLawNegativeValue_ERR_6141.Diagnostic="Law ­pºâ¬°­t­È.";
+TopOpInDistanceLawNegativeValue_ERR_6141.Advice="½T©w Law ªº¼Æ­È¦b¥¿­È°Ï¶¡.";
+
+TopOpInDistanceLawNotPeriodicForClosedSpine_ERR_6142.Request="ÅÜ¤Æ¶ê¨¤:";
+TopOpInDistanceLawNotPeriodicForClosedSpine_ERR_6142.Diagnostic="¬°«Ê³¬¯á´Õ½u«ü©w«D©P´Á law.";
+TopOpInDistanceLawNotPeriodicForClosedSpine_ERR_6142.Advice="«Ø¥ß³sÄò¥B©P´Á law.";
+
+TopOpInDistanceLawZeroExceptAtEnds_ERR_6143.Request="ÅÜ¤Æ¶ê¨¤:";
+TopOpInDistanceLawZeroExceptAtEnds_ERR_6143.Diagnostic="Law ªº­È¦b°Ï¶¡¤¤¬° 0.";
+TopOpInDistanceLawZeroExceptAtEnds_ERR_6143.Advice="½Ð­×§ï law. ¥i¯à¤@°¼©Î¨â°¼ºÝÂI¦³ 0 ªº­È, ¦ý¤£¦b°Ï¶¡¤¤¶¡.";
+
+TopOpInEmptyResultBecauseOfLimiting_ERR_6144.Request="©ÝåN°Ê§@ :";
+TopOpInEmptyResultBecauseOfLimiting_ERR_6144.Diagnostic="¥Ñ©ó­­¨î©Î¤À¼Ò¤¸¯ÀÃö«Y, ¥i¤£ªì©l¤Æ.";
+TopOpInEmptyResultBecauseOfLimiting_ERR_6144.Advice="½ÐÀË¬d¬O§_¯u»Ý­n­­¨î©Î¤À¼Ò¤¸¯À©ÎÀË¬d¥¦ªº¦V. \n ­«·s§ïÅÜ¤Ø¤o¾AÀ³°Ê§@¤]¥i¯à¦³¥Î.";
+
+TopOpInMultiRibbonImpossibleSelection_ERR_6145.Request="¦h­«Àô±a°Ê§@:";
+TopOpInMultiRibbonImpossibleSelection_ERR_6145.Diagnostic="Äµ§i : ©Ò«Ø´X¦ó°»´ú¨ìµL®Ä¤z¯A.";
+TopOpInMultiRibbonImpossibleSelection_ERR_6145.Advice="½Ð¤À§O³B²zÀô±a.";
+
+
+TopOpIntTopRibSewing_ERR_6146.Request="©ÝåN°Ê§@:";
+TopOpIntTopRibSewing_ERR_6146.Diagnostic = "The operation of sewing may either lead to multi shell result or domain to sew is empty.";
+TopOpIntTopRibSewing_ERR_6146.Advice="Either use no trim option, increase spine length in case of ACA or Shape fillet.";
+
+TopOpInFilletIntersection_ERR_6147.Request="Multi ribbon operator:";
+TopOpInFilletIntersection_ERR_6147.Diagnostic="Warning : Only a group of connected edges can be performed in this operation. 
+There is at least one not connected edge.";
+TopOpInFilletIntersection_ERR_6147.Advice="Process the not connected edges in a separate operation.";
+
+TopOpInFilletIntersection_ERR_6148.Request="Multi ribbon operator:";
+TopOpInFilletIntersection_ERR_6148.Diagnostic="Warning : Only a group of the same convexity edges can be performed in this operation. 
+There are convex and concave edges in this selection.";
+TopOpInFilletIntersection_ERR_6148.Advice="Process the edges of different convexity in a separate operation.";
+
+TopOpInRadiusLawWithExtrema_ERR_6149.Request="Variable Fillet:";
+TopOpInRadiusLawWithExtrema_ERR_6149.Diagnostic="Radius law has got local extrema.";
+TopOpInRadiusLawWithExtrema_ERR_6149.Advice="Please modify the law.";
+
+//
+// draft 6150-6199
+//
+TopOpInDraftAddRemove_ERR_6150.Request="²æ¼Ò°Ê§@ :";
+TopOpInDraftAddRemove_ERR_6150.Diagnostic="²æ¼Ò°Ê§@µLªk¨M©w¬O¦bªì©l¹s¥ó¤W¥[©Î²¾°£§÷®Æ.";
+TopOpInDraftAddRemove_ERR_6150.Advice="´î¤Ö²æ¼Ò¨¤«×©Î­×§ï²æ¼Ò¤è¦V.";
+//
+TopOpInDraftReflect_ERR_6151.Request="²æ¼Ò¤Ï®g½u :";
+TopOpInDraftReflect_ERR_6151.Diagnostic="­pºâªº¤Ï®g½u¥¼³s±µ¥B¤À¶}¦b¼Æ­Ó°¼­±­×°Å­±¤W.";
+TopOpInDraftReflect_ERR_6151.Advice="½Ð­×§ï¿é¤J¥»Åéªº¥~§Î.";
+//
+TopOpInDraftTwistOnNeutral_ERR_6152.Request="²æ¼Ò°Ê§@ :";
+TopOpInDraftTwistOnNeutral_ERR_6152.Diagnostic="¤¤¬É­±¤Ó¹L°~®k.";
+TopOpInDraftTwistOnNeutral_ERR_6152.Advice="´î¤Ö²æ¼Ò¨¤«×©Î§ó´«°Ê§@©Î¤¤¬É­±.";
+//
+TopOpInDraftInternalTwist_ERR_6153.Request="²æ¼Ò°Ê§@:";
+TopOpInDraftInternalTwist_ERR_6153.Diagnostic="­pºâ²æ½¤­±§á¦±.";
+TopOpInDraftInternalTwist_ERR_6153.Advice="´î¤Ö²æ¼Ò¨¤«×©Î­×§ï²æ¼Ò¤è¦V©Î²æ¼Ò­±.";
+//
+TopOpInDraftCollision_ERR_6154.Request="²æ¼Ò°Ê§@ :";
+TopOpInDraftCollision_ERR_6154.Diagnostic="­pºâ²æ½¤­±¥»¨­¬Û¥æ.";
+TopOpInDraftCollision_ERR_6154.Advice="´î¤Ö²æ¼Ò¨¤«×©Î­×§ï²æ¼Ò¤è¦V©Î²æ¼Ò­±.";
+//
+TopOpInDraftCurvatureInversion_ERR_6155.Request="²æ¼Ò¤Ï®g½u°Ê§@ :";
+TopOpInDraftCurvatureInversion_ERR_6155.Diagnostic="¦±½u¦±²v»P¤Ï®g½u¬Û¤Ï.";
+TopOpInDraftCurvatureInversion_ERR_6155.Advice="´î¤Ö²æ¼Ò¨¤«×©Î­×§ï²æ¼Ò¤è¦V.";
+//
+TopOpInDraftRelimitation_ERR_6156.Request="²æ¼Ò°Ê§@:";
+TopOpInDraftRelimitation_ERR_6156.Diagnostic="²æ¼Ò­±µLªk­×°Å. ´X¦ó¹L©ó½ÆÂø.";
+TopOpInDraftRelimitation_ERR_6156.Advice="­×§ï°Ñ¼Æ­È, §ó§ï¾Þ§@¤l©Î­­¨î¤¸¯À.";
+//
+TopOpInDraftCreationDraftFaces_ERR_6157.Request="²æ¼Ò°Ê§@:";
+TopOpInDraftCreationDraftFaces_ERR_6157.Diagnostic="µLªk²Õ¥ß­×°Å­±. ­×°Å¦±½u¤£³sÄò.";
+TopOpInDraftCreationDraftFaces_ERR_6157.Advice="´î¤Ö²æ¼Ò¨¤«×©Î­×§ï²æ¼Ò¤è¦V©Î¦bªì©l´X¦ó¤W±j¨î¤Á½u³sÄò.";
+//
+TopOpInDraftCreationDraftFaces_ERR_6158.Request="²æ¼Ò°Ê§@:";
+TopOpInDraftCreationDraftFaces_ERR_6158.Diagnostic="µLªk²Õ¥ß­×°Å­±. ¨â¤¤¤¶¦±½u¤£³sÄò.";
+TopOpInDraftCreationDraftFaces_ERR_6158.Advice="´î¤Ö²æ¼Ò¨¤«×©Î­×§ï²æ¼Ò¤è¦V©Î¦bªì©l´X¦ó¤W±j¨î¤Á½u³sÄò.";
+//
+TopOpInDraftInternalDiscontinuity_ERR_6159.Request="²æ¼Ò°Ê§@:";
+TopOpInDraftInternalDiscontinuity_ERR_6159.Diagnostic="µLªk²Õ¥ß²æ¼Ò­×°Å­±. ¨â¤º³¡¦±½u¤£³sÄò.";
+TopOpInDraftInternalDiscontinuity_ERR_6159.Advice="´î¤Ö²æ¼Ò¨¤«×©Î­×§ï²æ¼Ò¤è¦V©Î¦bªì©l´X¦ó¤W±j¨î³sÄò¬Û¤Á.";
+//
+TopOpInDraftPartingOrientation_ERR_6160.Request="¤À¼Ò­±©w¦ì:";
+TopOpInDraftPartingOrientation_ERR_6160.Diagnostic="¨Ì¦¹¤À¼Ò­±µLªk¨M©w­n¼W¥[©Î´î¤Ö§÷®Æ.";
+TopOpInDraftPartingOrientation_ERR_6160.Advice="©w¸q¤À¼Ò¤è¦V©Î­×§ï°Ê§@.";
+//
+TopOpInDraftRelimitation_ERR_6161.Request="Àô±a­pºâ:";
+TopOpInDraftRelimitation_ERR_6161.Diagnostic="µLªkºIÂ_. Àô±a¤w°±¤î, ¦]¬°²æ¼Ò¦bÅX°Ê°¼¤Ó¹L°~®k.";
+TopOpInDraftRelimitation_ERR_6161.Advice="½Ð­×§ï°Ñ¼Æ­È©Î§ó§ï¾Þ§@¤l©Î·s¼W­­¨î¤¸¯À.";
+//
+TopOpInDraftRelimitation_ERR_6162.Request="Àô±a­pºâ:";
+TopOpInDraftRelimitation_ERR_6162.Diagnostic="µLªkºIÂ_.Àô±a ¤w°±¤î, ¦]¬°²æ¼Ò¦bÅX°Ê°¼¤Ï¦±.";
+TopOpInDraftRelimitation_ERR_6162.Advice="½Ð­×§ï°Ñ¼Æ­È©Î§ó§ï¾Þ§@¤l©Î·s¼W­­¨î¤¸¯À.";
+//
+TopOpInDraftRelimitation_ERR_6163.Request="Àô±a­pºâ:";
+TopOpInDraftRelimitation_ERR_6163.Diagnostic="µLªkºIÂ_. Àô±a ¤w°±¤î, ¦]¬°©Ò­pºâ´X¦ó¤Ó¤p.";
+TopOpInDraftRelimitation_ERR_6163.Advice="½Ð­×§ï°Ñ¼Æ­È©Î§ó§ï¾Þ§@¤l©Î·s¼W­­¨î¤¸¯À.";
+//
+TopOpInMultiLimitingIntersection_ERR_6164.Request="©ÝåN°Ê§@:";
+TopOpInMultiLimitingIntersection_ERR_6164.Diagnostic="°»´ú¨ì­­¨î©M¤À¼Ò­±¶¡µo¥Í¤z¯A.";
+TopOpInMultiLimitingIntersection_ERR_6164.Advice="­×§ï­­¨îªº¬Û¥æ©Î¤À¼Ò­±.";
+//
+TopOpInMultiLimitingIntersection_ERR_6165.Request="Àô±a­pºâ:";
+TopOpInMultiLimitingIntersection_ERR_6165.Diagnostic="µLªkºIÂ_. ¥i¯à¬O¦]¬°­­¨î©M¤À¼Ò­±¶¡µo¥Í¤z¯A.";
+TopOpInMultiLimitingIntersection_ERR_6165.Advice="­×§ï­­¨îªº¬Û¥æ©Î¤À¼Ò­±©Î­×§ï°Ñ¼Æ­È.";
+//
+TopOpInRibbonInitializationWithTangentIntersection_ERR_6166.Request="Àô±aªì©l¤Æ:";
+TopOpInRibbonInitializationWithTangentIntersection_ERR_6166.Diagnostic="µLªkªì©l¤Æ. ²Õ¦X­±¥i¯à»P¶KÂÐªº­×°Å­±¬Û¤Á.";
+TopOpInRibbonInitializationWithTangentIntersection_ERR_6166.Advice="½ÐÀ|¸Õ­×§ï¿é¤J¥»Åé.";
+//
+TopOpInRibbonInitializationWithLocalAmbiguity_ERR_6167.Request="Àô±aªì©l¤Æ:";
+TopOpInRibbonInitializationWithLocalAmbiguity_ERR_6167.Diagnostic="µLªkªì©l¤Æ. Àô±a¶¡¶W¹L¤T­ÓÃä½u.";
+TopOpInRibbonInitializationWithLocalAmbiguity_ERR_6167.Advice="½ÐÀ|¸Õ­×§ï¿é¤J¥»Åé.";
+//
+TopOpInRibbonCollisionBetweenSkinAndRelimShells_ERR_6168.Request="Àô±a­pºâ:";
+TopOpInRibbonCollisionBetweenSkinAndRelimShells_ERR_6168.Diagnostic="µLªkµô°Å. ¥i¯à°»´ú¨ì²Õ¦X­±©M¥»Åé¶¡ªº¤z¯A.";
+TopOpInRibbonCollisionBetweenSkinAndRelimShells_ERR_6168.Advice="½ÐÀ|¸Õ­×§ï¿é¤J.";
+//
+TopOpInRibbonInitializationOnSelection_ERR_6169.Request="Àô±aªì©l¤Æ:";
+TopOpInRibbonInitializationOnSelection_ERR_6169.Diagnostic="µLªkªì©l¤Æ©Ò¿ï­×°Å­±.";
+TopOpInRibbonInitializationOnSelection_ERR_6169.Advice="­×§ï©Ò¿ï­×°Å­±.";
+//
+TopOpInDraftRelimitation_ERR_6170.Request="Àô±a­pºâ:";
+TopOpInDraftRelimitation_ERR_6170.Diagnostic="µLªkµô°Å. °»´ú¨ì¬Û¤Á³]­p.";
+TopOpInDraftRelimitation_ERR_6170.Advice="½Ð­×§ï°Ñ¼Æ­È©Î§ó§ï¾Þ§@¤l©Î·s¼W­­¨î¤¸¯À.";
+//
+TopOpInDraftRelimitation_ERR_6171.Request="Àô±a­pºâ:";
+TopOpInDraftRelimitation_ERR_6171.Diagnostic="­×°ÅÄµ§i. °»´ú¨ì¬Û¤Á³]­p.";
+TopOpInDraftRelimitation_ERR_6171.Advice="½Ð­×§ï°Ñ¼Æ­È©Î§ó§ï¾Þ§@¤l©Î·s¼W­­¨î¤¸¯À.";
+//
+TopOpInDraftAddRemove_LongCylinder_ERR_6172.Request="²æ¼Ò°Ê§@:";
+TopOpInDraftAddRemove_LongCylinder_ERR_6172.Diagnostic="²æ¼Ò¦±­±¥¼»P¶ê¬W¬Û¥æ.";
+TopOpInDraftAddRemove_LongCylinder_ERR_6172.Advice="½Ð´î¤Ö¶ê¬Wªø«×©Î´î¤p¶ê¬W¶b©M©Ô¦ù¤è¦Vªº¨¤«×©Î¼W¥[²æ¼Ò¨¤«×.";
+//
+TopOpInRibbonSewingFaceError_ERR_6173.Request=" Á_¸É:";
+TopOpInRibbonSewingFaceError_ERR_6173.Diagnostic="«Ø¥ßµL®Ä­×°Å.";
+TopOpInRibbonSewingFaceError_ERR_6173.Advice="§ó§ï°Ê§@.";
+//
+TopOpInRibbonUnion_ERR_6174.Request="³W«h¤Æ:";
+TopOpInRibbonUnion_ERR_6174.Diagnostic="µ²¦Xµ²ªGÅé¿n®Éµo¥Í¿ù»~.";
+TopOpInRibbonUnion_ERR_6174.Advice="¨C­Ó³æ¤@Åé¿n§¡­«ÂÐ°õ¦æ¦¹°Ê§@.";
+//
+TopOpInDraftNoFacesProvided_ERR_6175.Request="±À©Þ°Ê§@:";
+TopOpInDraftNoFacesProvided_ERR_6175.Diagnostic="¤º³¡¥¼´£¨Ñ¥i±À©Þ­×°Å­±.";
+TopOpInDraftNoFacesProvided_ERR_6175.Advice="´£¨Ñ¥i±À©Þ­×°Å­±.";
+//
+TopOpInDraftAutomaticLimiting_ERR_6176.Request="±À©Þ°Ê§@:";
+TopOpInDraftAutomaticLimiting_ERR_6176.Diagnostic="µLªk¦Û°Ê²£¥Í­­¨î¤¸¯À¨ÓÁ×§K±À©Þ­±§á¦±.";
+TopOpInDraftAutomaticLimiting_ERR_6176.Advice="¤â°Ê©w¸q­­¨î­±.";
+//
+TopOpInDraftAutomaticUntwist_ERR_6177.Request="±À©Þ°Ê§@:";
+TopOpInDraftAutomaticUntwist_ERR_6177.Diagnostic="Äµ§i : ±À©Þ°Ê§@¤w§ó§ï§á¦±­±.";
+TopOpInDraftAutomaticUntwist_ERR_6177.Advice="§ó§ï§á¦±­±¥i¯à«D³]­p©Ò»Ý.";
+//
+TopOpInTrimSewFaceToReplaceInResult_ERR_6178.Request="Replace Face operator :";
+TopOpInTrimSewFaceToReplaceInResult_ERR_6178.Diagnostic="§ó´Àªº­×°Å­±¤´¦s¦bµ²ªG¥»Åé¤¤.";
+TopOpInTrimSewFaceToReplaceInResult_ERR_6178.Advice="­×§ï²Õ¦X­±¤è¦V¨ÓÁ_¸É¥¦.";
+//
+TopOpInTrimSewFaceToReplaceInResult_ERR_6179.Request="Topological operator:";
+TopOpInTrimSewFaceToReplaceInResult_ERR_6179.Diagnostic="The creation of an invalid flat body is impossible.";
+TopOpInTrimSewFaceToReplaceInResult_ERR_6179.Advice="Modify the parameter value(s) or change the operand(s).";
+//
+TopOpInDraftAutomaticUntwistFailure_ERR_6180.Request="Draft operator:";
+TopOpInDraftAutomaticUntwistFailure_ERR_6180.Diagnostic="Draft operator failed to untwist some/all twists.";
+TopOpInDraftAutomaticUntwistFailure_ERR_6180.Advice="Provide limiting elements to avoid Draft in twisted regions.";
+//
+TopOpInReflectLineOperator_ERR_6181.Request="Reflect line computation:";
+TopOpInReflectLineOperator_ERR_6181.Diagnostic="Warning : Reflect line operator has encountered one or several singularity point(s)";
+TopOpInReflectLineOperator_ERR_6181.Advice="Use near, extract or disassemble capability";
+//
+// helix 6200-6249
+//
+TopOpInHelixInvalidOriginOnAxis_ERR_6200.Request="«Ø¥ßÁ³±Û:";
+TopOpInHelixInvalidOriginOnAxis_ERR_6200.Diagnostic="­ì©lÂI¦bÁ³±Û½u¶b¤W.";
+TopOpInHelixInvalidOriginOnAxis_ERR_6200.Advice="¿ï¾Ü¥t¤@ÂI¤£¦bÁ³±Û½u¶b¤W.";
+//
+TopOpInHelixInvalidTaperAngle_ERR_6201.Request="«Ø¥ßÁ³±Û:";
+TopOpInHelixInvalidTaperAngle_ERR_6201.Diagnostic="Á³±Û¨¤¤p©ó 0 ©Î¤j©óµ¥©ó PI/2 ®|«×¶q.";
+TopOpInHelixInvalidTaperAngle_ERR_6201.Advice="¿ï¾Ü¥t¤@Á³±Û¨¤¤j©ó 0 ©Î¤p©ó PI/2 ®|«×.";
+//
+TopOpInHelixInvalidAngles_ERR_6202.Request="«Ø¥ßÁ³±Û:";
+TopOpInHelixInvalidAngles_ERR_6202.Diagnostic="µ²§ô¨¤«×¤p©ó©Îµ¥©ó°_©l¨¤«×.";
+TopOpInHelixInvalidAngles_ERR_6202.Advice="¿ï¾Ü¥t¤@µ²§ô¨¤«×¤j©ó°_©l¨¤«×.";
+//
+TopOpInHelixInvalidGuide_ERR_6203.Request="«Ø¥ßÁ³±Û:";
+TopOpInHelixInvalidGuide_ERR_6203.Diagnostic="Á³©ó¾É¤Þ¤£¬O½u.";
+TopOpInHelixInvalidGuide_ERR_6203.Advice="½Ð¿ï¾Ü½u¨Ó¾É¤Þ.";
+//
+TopOpInHelixInvalidOrigin_ERR_6204.Request="«Ø¥ßÁ³±Û:";
+TopOpInHelixInvalidOrigin_ERR_6204.Diagnostic="­ì©l¥»Åé¤£¬O³»ÂI.";
+TopOpInHelixInvalidOrigin_ERR_6204.Advice="½Ð¿ï¾Ü¥u§t¦³¤@­Ó³»ÂIªº¥»Åé.";
+//
+TopOpInHelixAxisProfileNotCoplanar_ERR_6205.Request="«Ø¥ßÁ³±Û:";
+TopOpInHelixAxisProfileNotCoplanar_ERR_6205.Diagnostic="¶b¥»Åé©MÂ_­±¤£¦@­±.";
+TopOpInHelixAxisProfileNotCoplanar_ERR_6205.Advice="½Ð¿ï¾Ü¨â¦@­±¤¸¯À.";
+//
+TopOpInHelixAxisOriginOutOfProfile_ERR_6206.Request="«Ø¥ßÁ³±Û:";
+TopOpInHelixAxisOriginOutOfProfile_ERR_6206.Diagnostic="­ìÂI¤£¦bÂ_­±¤W.";
+TopOpInHelixAxisOriginOutOfProfile_ERR_6206.Advice="½Ð¿ï¾Ü­ìÂI¨Ìªþ¦bÂ_­±¤W.";
+//
+// 6250-6299- split-trim
+//
+TopOpInSplitShellByMultiWires_ERR_6250.Request="¥H½u¨Ó¤À³ÎÁ¡´ß :";
+TopOpInSplitShellByMultiWires_ERR_6250.Diagnostic="¤À³Î¥»Åéªº½u§t¦³¦h­«¤£¨ã¬Û¦P¤è¦Vªº½u.";
+TopOpInSplitShellByMultiWires_ERR_6250.Advice="¥H³æ¤@½u¨Ó­«ÂÐ¤À³Î°Ê§@.";
+//
+// 6300-6349- corner
+//
+TopOpInTrimmedCorner_ERR_6300.Request="¶ê¨¤°Ê§@:";
+TopOpInTrimmedCorner_ERR_6300.Diagnostic="¦³¼Æ­Ó¸Ñ, ¥BµLªk¥H½u¨ÓºIÂ_.";
+TopOpInTrimmedCorner_ERR_6300.Advice="½Ð¥ý¥H¤£ºIÂ_¨Ó³B²z, µM«á¦A¥H¤â°Ê¤è¦¡¨ÓºIÂ_½u.";
+//
+TopOpInParallelClosedWire_ERR_6301.Request="¥­¦æ°Ê§@:";
+TopOpInParallelClosedWire_ERR_6301.Diagnostic="½u¬°«Ê³¬¥B¥­¦æ LAW ¤£¬O±`¼Æ.";
+TopOpInParallelClosedWire_ERR_6301.Advice="½Ð¿ï¾Ü±`¼Æ LAW, ©Î±N½u¤À³Î¦¨¨â³¡¤À¥BÀ³¥Î¦b¨C¤@¹s¥ó¤W.";
+//
+TopOpInParallelNegativeValues_ERR_6302.Request="¥­¦æ°Ê§@:";
+TopOpInParallelNegativeValues_ERR_6302.Diagnostic="¿é¤J LAW ¬°­t­È.";
+TopOpInParallelNegativeValues_ERR_6302.Advice="¤À³Î½u©M LAW ¦¨¥B¦³¬Û¦P¤è¦Vªº¼Æ³¡¤À¨Ó¤À³Î¹s¥ó.";
+//
+TopOpInThickWireNonConnectedBody_ERR_6303.Request="«p½u°Ê§@ :";
+TopOpInThickWireNonConnectedBody_ERR_6303.Diagnostic="¿é¤J¥»Åé¨ã¦³¼Æ­Ó¤£³s±µªº½u©w¸q.";
+TopOpInThickWireNonConnectedBody_ERR_6303.Advice="½Ð³s±µ¿é¤J¥»Åéªº©Ò¦³©w¸q.";
+//
+TopOpInParallelSelfIntersectedWire_ERR_6304.Request="¥­¦æ°Ê§@:";
+TopOpInParallelSelfIntersectedWire_ERR_6304.Diagnostic="¿é¤J½u¦Û§Ú¬Û¥æ.";
+TopOpInParallelSelfIntersectedWire_ERR_6304.Advice="½Ð¨Ï¥Î«D¦Û§Ú¬Û¥æ½u.";
+//
+TopOpInParallelNoEdgeSolution_ERR_6305.Request="¥­¦æ°Ê§@:";
+TopOpInParallelNoEdgeSolution_ERR_6305.Diagnostic="¥­¦æ°Ê§@µLªk­pºâ¦¹°Ê§@";
+TopOpInParallelNoEdgeSolution_ERR_6305.Advice="µÑ¨úÃä½u, ¤ÁÂ_¥¦¦A¸ÕµÛ¥­¦æ¥¦.";
+//
+TopOpInParallelExtInMatter_ERR_6306.Request="¥­¦æ°Ê§@:";
+TopOpInParallelExtInMatter_ERR_6306.Diagnostic="¥­¦æºÝÂI¦b¤º³¡";
+TopOpInParallelExtInMatter_ERR_6306.Advice="µÑ¨úªì©l½uºÝÂI";
+//
+TopOpInParallelSolToBoundary_ERR_6307.Request="¥­¦æ°Ê§@:";
+TopOpInParallelSolToBoundary_ERR_6307.Diagnostic="¤èªk²Å¦XÁ¡´ßÃä¬É";
+TopOpInParallelSolToBoundary_ERR_6307.Advice="¦bÅã¥ÜÂI¤ÁÂ_½u";
+//
+TopOpInParallelInvalidSol_ERR_6308.Request="¥­¦æ°Ê§@:";
+TopOpInParallelInvalidSol_ERR_6308.Diagnostic="¤Õ©Î¤èªk­«Å|";
+TopOpInParallelInvalidSol_ERR_6308.Advice="ÀôÂ¶µL®Ä¤ÁÂ_½u";
+//
+TopOpInParallelLawMatterInversion_ERR_6309.Request="LAW ¥­¦æ°Ê§@:";
+TopOpInParallelLawMatterInversion_ERR_6309.Diagnostic="°fÂà°Ê§@";
+TopOpInParallelLawMatterInversion_ERR_6309.Advice="¨â­Ó­­¨î¨¤«×ºÝÂI¶W¹L½d³ò";
+//
+TopOpInConnectImpossibleTrim_ERR_6310.Request="³s±µ¦±½u°Ê§@ :";
+TopOpInConnectImpossibleTrimn_ERR_6310.Diagnostic="¦¹¤è¦VµLªkµô°Å¦±½u.";
+TopOpInConnectImpossibleTrim_ERR_6310.Advice="°fÂà¤è¦V©Î«Ø¥ß³s±µ¦±½u©M¨Ï¥Îµô°Å°Ê§@.";
+//
+TopOpInConnectClosedTrim_ERR_6311.Request="³s±µ¦±½u°Ê§@ :";
+TopOpInConnectClosedTrim_ERR_6311.Diagnostic="µLªk¥H«Ê³¬½u§ô­×°Å";
+TopOpInConnectClosedTrim_ERR_6311.Advice="¿ï¾Ü¨âÂI¨Ã»P¥¦­Ì°µ«Ê³¬½u§ô­×°Å";
+//
+TopOpInPointOnVertex_ERR_6312.Request="¦b ½u§ô-½u§ô¶¡¾Þ§@ªº¶ê¨¤ÂI :";
+TopOpInPointOnVertex_ERR_6312.Diagnostic="ÂI¦b Non-G1 ½u§ôªº³»ÂI.";
+TopOpInPointOnVertex_ERR_6312.Advice="¥HÂIµô°Å½u§ô.";
+//
+TopOpInParallelNotComputed_ERR_6313.Request="¥­¦æ°Ê§@:";
+TopOpInParallelNotComputed_ERR_6313.Diagnostic="¥­¦æªº´X¦ó°ÝÃD.";
+TopOpInParallelNotComputed_ERR_6313.Advice="¦¹¨Ç½uµLªk­pºâ.";
+//
+TopOpInParallelNegativeValuesForG1_ERR_6314.Request="¥­¦æ°Ê§@:";
+TopOpInParallelNegativeValuesForG1_ERR_6314.Diagnostic="½u¤£¬O G1 ¥B¿é¤Jªº law ¦³­t­È .";
+TopOpInParallelNegativeValuesForG1_ERR_6314.Advice="¤À³Î law ¥B¾¨¶q¤À³Î law ¨Ï±o¨C¤@­Ó law ¨ã¦³¬Û¦Pªº¥¿­t¦V, ¨Ã¦b¨C¤@­Ó°Ê§@¤WÀ³¥Î.";
+//
+TopOpInCornerTgtCenterOnPt_ERR_6315.Request="¬Û¤Á¶ê°Ê§@";
+TopOpInCornerTgtCenterOnPt_ERR_6315.Diagnostic="µLªk§ë¼v¤¤¤ß¦b¦±½u¤W";
+TopOpInCornerTgtCenterOnPt_ERR_6315.Advice="µLªk­pºâ";
+//
+TopOpInCornerTgtCenterOnPt_ERR_6316.Request="¬Û¤Á¶ê°Ê§@";
+TopOpInCornerTgtCenterOnPt_ERR_6316.Diagnostic="§ë¼v¤¤¤ß¦b¦±½u¤WµL®Ä";
+TopOpInCornerTgtCenterOnPt_ERR_6316.Advice="µLªk­pºâ";
+//
+TopOpInConnectTrimForClosedConnect_ERR_6317.Request="³s±µ¦±½u°Ê§@ :";
+TopOpInConnectTrimForClosedConnect_ERR_6317.Diagnostic="µLªk¥H«Ê³¬³s±µ¦±½uµô°Å";
+TopOpInConnectTrimForClosedConnect_ERR_6317.Advice="½Ð¬°³s±µ©w¸q¿ï¾Ü¨â²Õ¤£¦Pªº½u©MÂI.";
+//
+TopOpInTangentInputCorner_ERR_6318.Request="¶ê¨¤°Ê§@:";
+TopOpInTangentInputCorner_ERR_6318.Diagnostic="¤¸¯À¤@©M¤¸¯À¤G¶¡ªº³¡¥÷Ãä½u¤w·»¦X.\n
+¥i¯àµLªk­pºâ¥þ³¡.";
+TopOpInTangentInputCorner_ERR_6318.Advice="¨Ï¥Î¤À³Î¨Ó²¾°£·»¦X°Ï°ì.";
+//
+TopOpInParallelIntersectDim1Corner_ERR_6319.Request="¶ê¨¤°Ê§@:";
+TopOpInParallelIntersectDim1Corner_ERR_6319.Diagnostic="µLªk­pºâ¤¸¯À¤@©M¤¸¯À¤G¶¡ªºÃä½u¤¤¤ß. \n
+¥i¯àµLªk­pºâ¥þ³¡.";
+TopOpInParallelIntersectDim1Corner_ERR_6319.Advice="¨Ï¥Î¤À³Î¨Ó²¾°£¥iºÃ°Ï°ì.";
+
+//SUH 2004:1:22
+TopOpInParallelDeviationDueToGap_WNG_6320.Request="¥­¦æ°Ê§@:";
+TopOpInParallelDeviationDueToGap_WNG_6320.Diagnostic="¦bªì©l½u¤¤ªº¶¡¹j©Ò«ü©wªºÅÜ²§¥i¯àµLªk¨Ì¾Ú.";
+TopOpInParallelDeviationDueToGap_WNG_6320.Advice="¦p¥­¦æµ²ªG«D¹w´Á, ­×¸ÉÁ¡´ß¨Ìªþ©Î¥­¶¶¿é¤J¨Ó¶ñº¡¶¡¹j.";
+//
+TopOpInCornerLayDownMultiDomain_ERR_6321.Request="¶ê¨¤°Ê§@:";
+TopOpInCornerLayDownMultiDomain_ERR_6321.Diagnostic="¸m©ñ¿é¤J½u¥Ñ¥¼³s±µªº¤£¦P¦¸¤¸¯À²Õ¦¨. ";
+TopOpInCornerLayDownMultiDomain_ERR_6321.Advice="¤À³Î¿é¤J½u, ©Î§ë¼v¦Ü¨Ìªþ¤W.";
+//
+TopOpInTrimmedCorner_ERR_6322.Request="¶ê¨¤°Ê§@:";
+TopOpInTrimmedCorner_ERR_6322.Diagnostic="¾ãÅé¶ê¨¤«Ø¥ß°Ê§@µLªk¨Ï¥Îµô´î¿ï¶µ.";
+TopOpInTrimmedCorner_ERR_6322.Advice="¨Ï¥Î¦¹°Ê§@¦b«Dµô°Å¼Ò¦¡, ©Î¥t¤@«Ø¥ß¼Ò¦¡ (Direct, ©Î complementary).";
+//
+TopOpInTritangentCorner_ERR_6323.Request="¤T¤Á¶ê¨¤°Ê§@:";
+TopOpInTritangentCorner_ERR_6323.Diagnostic="¿é¤JÂI¦b¿é¤J½u¥»Åé¤W.";
+TopOpInTritangentCorner_ERR_6323.Advice="¿ï¾Ü¤£¦b¿é¤J¥»Åé¤Wªº¿é¤JÂI(©Î¤À³Î¿é¤J½u¥»Åé), ©Î¨Ï¥ÎÂù¤Á©MÂI¶ê§Î¦¡.";
+//
+TopOpInCornerInternalError_ERR_6324="©ÝåN¶ê¨¤°Ê§@: ¤º³¡¿ù»~ /p.";
+//
+TopOpInCornerParallelError_ERR_6325.Request="¶ê¨¤°Ê§@:";
+TopOpInCornerParallelError_ERR_6325.Diagnostic="¥­¦æ©Î¿é¤J½uµLªk­pºâ.";
+TopOpInCornerParallelError_ERR_6325.Advice="²M²z±zªº¿é¤J½u (¦±²v©Î¤Á½u), ©ÎÂ²¤Æ¨Ìªþ.";
+//
+TopOpInParallelRelimitationPb_ERR_6349.Request="¥­¦æ°Ê§@ :";
+TopOpInParallelRelimitationPb_ERR_6349.Diagnostic="¥­¦æºIÂ_¥¢±Ñ";
+TopOpInParallelRelimitationPb_ERR_6349.Advice="ÀË¬d¿é¤J¦±½u¦³®Ä©Ê.";
+//
+//
+// 6350-6399- C2 concatenate
+//
+TopOpInC2ConcatenateInvalidCurve_ERR_6350.Request="C2 ³sµ²°Ê§@:";
+TopOpInC2ConcatenateInvalidCurve_ERR_6350.Diagnostic="¦b¿é¤Jªº½u¥»Åé¤W, ´X¦ó¤WªºÃä¬O¦±­±¤Wªº¦±½u.";
+TopOpInC2ConcatenateInvalidCurve_ERR_6350.Advice="¬°©Ò¦³½u¤WªºÃä¨Ï¥Î 3D ¦±½u.";
+//
+// 6400-6449- PConic
+//
+TopOpInConicInvalidConicDefinition_ERR_6400.Request="¶êÀ@°Ê§@:";
+TopOpInConicInvalidConicDefinition_ERR_6400.Diagnostic="µLªk«Ø¥ß¶êÀ@.";
+TopOpInConicInvalidConicDefinition_ERR_6400.Advice="½Ð­×§ïÂIªº¶¶§Ç©Î­×§ï¬Û¥æ.";
+//
+TopOpInConicGeometricConstructionFailed_ERR_6401.Request="¶êÀ@°Ê§@:";
+TopOpInConicGeometricConstructionFailed_ERR_6401.Diagnostic="«Ø¥ß¶êÀ@¥¢±Ñ.";
+TopOpInConicGeometricConstructionFailed_ERR_6401.Advice="½Ð­×§ïÂI©Î­×§ï¬Û¥æ.";
+//
+TopOpInConicTopologicalConstructionFailed_ERR_6402.Request="¶êÀ@°Ê§@:";
+TopOpInConicTopologicalConstructionFailed_ERR_6402.Diagnostic="«Ø¥ß¶êÀ@¥¢±Ñ.";
+TopOpInConicTopologicalConstructionFailed_ERR_6402.Advice="½Ð­×§ïÂI©Î­×§ï¬Û¥æ.";
+//
+// 6450 - 6499 - Lay down
+TopOpInLayDownNotOnSkin_ERR_6450.Request="©ñ¤U°Ê§@:";
+TopOpInLayDownNotOnSkin_ERR_6450.Diagnostic="°Ê§@¥»Åé¤£¦b¿é¤J²Õ¦X­±¥»Åé¤W.";
+TopOpInLayDownNotOnSkin_ERR_6450.Advice="§ë¼v¥»Åé¦b²Õ¦X­±¤W.";
+//
+// 6500-6549- clean curve (smooth curve)
+//
+TopOpInCleanCrvDeformationConstraintNotReached_ERR_6500.Request="¥HÅÜ§Î­­¨î²M°£¦±½u¾Þ§@°Ê§@:";
+TopOpInCleanCrvDeformationConstraintNotReached_ERR_6500.Diagnostic="¿é¤J©M­pºâª«Åé¶¡ªº³Ì¤jÅÜ§Î¶q¤j©ó³Ì¤j«ü©wÅÜ§Î.";
+TopOpInCleanCrvDeformationConstraintNotReached_ERR_6500.Advice="²M°£³sÄò­­¨î©Î¼W¥[³Ì¤j«ü©wÅÜ§Î.";
+//
+TopOpInCleanCrvInvalidFixedElement_ERR_6501.Request="¥H©T©w¤¸¯À²M°£¦±½u¾Þ§@°Ê§@:";
+TopOpInCleanCrvInvalidFixedElement_ERR_6501.Diagnostic="©T©w¤¸¯À¤£¬OÃä½u©Î¥~§Î³»ÂI¥i²M°£.";
+TopOpInCleanCrvInvalidFixedElement_ERR_6501.Advice="¿ï¾Ü¥~§Îªº³»ÂI©ÎÃä½u¶¡ªº©T©w¤¸¯À¨Ó²M°£.";
+//
+TopOpIntCleanCrvInternalError_ERR_6502="²M°£¦±½u¾Þ§@°Ê§@: ¤º³¡¿ù»~.";
+//
+TopOpIntCleanCrvCurveDescendance_ERR_6503.Request="²M°£¦±½u°Ê§@:";
+TopOpIntCleanCrvCurveDescendance_ERR_6503.Diagnostic="´X¦ó´î§Cµ{§Ç¥¢±Ñ.";
+TopOpIntCleanCrvCurveDescendance_ERR_6503.Advice="­×§ï°Ñ¼Æ.";
+//
+TopOpIntCleanCrvEdgeDescendance_ERR_6504.Request="²M°£¦±½u°Ê§@:";
+TopOpIntCleanCrvEdgeDescendance_ERR_6504.Diagnostic="Ãä½u´î§Cµ{§Ç¥¢±Ñ.";
+TopOpIntCleanCrvEdgeDescendance_ERR_6504.Advice="­×§ï°Ñ¼Æ.";
+//
+TopOpIntCleanCrvVertexDescendance_ERR_6505.Request="²M°£¦±½u°Ê§@:";
+TopOpIntCleanCrvVertexDescendance_ERR_6505.Diagnostic="³»ÂI´î§Cµ{§Ç¥¢±Ñ.";
+TopOpIntCleanCrvVertexDescendance_ERR_6505.Advice="­×§ï°Ñ¼Æ.";
+//
+TopOpIntCleanCrvOutputG0BiggerInputG0_ERR_6506="²M°£¦±½u°Ê§@ : °Ê§@¥¢±Ñ (¿é¥X G0 ¶¡»Ø¤j©ó¿é¤J G0 ¶¡»Ø).";
+//
+// 6550-6599- Shell/Thickness/Thick-Offset-Extrapolate Surface 
+// Messages generiques :
+TopOpInShell_ERR_6550="Á¡´ß";
+TopOpInShell_ERR_6551="«p«×";
+TopOpInShell_ERR_6552="«p«×¦±­±";
+TopOpInShell_ERR_6553="°¾²¾¦±­±";
+TopOpInShell_ERR_6554="©µ¦ù¦±­±";
+TopOpInShell_ERR_6555="²¾°£­×°Å­±";
+TopOpInShell_ERR_6556="¥H«p«×ºI°Å";
+//
+TopOpInShellCurrentRestriction_ERR_6560.Request="/p1 ¾Þ§@°Ê§@:";
+TopOpInShellCurrentRestriction_ERR_6560.Diagnostic="¦]¬°¥Ø«e©Î¥Ã¤[­­¨î¾É­Pµ²ªGµLªk²Õ¥ß.";
+TopOpInShellCurrentRestriction_ERR_6560.Advice="½Ð­×§ï¼Æ­È©Î¿é¤Jª«Åé.";
+//
+// Messages specifiques :
+//
+TopOpInShellSelfIntersection_ERR_6561.Request="/p1 ¾Þ§@°Ê§@:";
+TopOpInShellSelfIntersection_ERR_6561.Diagnostic="µ²ªGª«Åé¦³¦Û§Ú¬Û¥æ.";
+TopOpInShellSelfIntersection_ERR_6561.Advice="´î¤Ö¼Æ­È.";
+//
+TopOpInShellLocalDegeneration_ERR_6562.Request="/p1 ¾Þ§@°Ê§@:";
+TopOpInShellLocalDegeneration_ERR_6562.Diagnostic="¥Ø«eªº°¾²¾­È¾É­P³¡¤À¦±­±¤Ï¦±: µLªk«Ø¥ßª«Åé.";
+TopOpInShellLocalDegeneration_ERR_6562.Advice="´î¤Ö°¾²¾­È¥hÁ×§K¤Ï¦±©Î¼W¥[°¾²¾­È¨Ï¦±­±®ø¥¢.";
+//
+TopOpInExtrapolateSurfaceDegenerateCurve_ERR_6563.Request="©µ¦ù¦±­±¾Þ§@°Ê§@:";
+TopOpInExtrapolateSurfaceDegenerateCurve_ERR_6563.Diagnostic="¥Ø«e©µ¦ù¼Æ­È¾É­P¦±½u¤Ï¦±: µLªk«Ø¥ßª«Åé.";
+TopOpInExtrapolateSurfaceDegenerateCurve_ERR_6563.Advice="´î¤Ö¼Æ­È.";
+//
+TopOpInShellSurfaceExtrapolation_ERR_6564.Request="/p1 ¾Þ§@°Ê§@:";
+TopOpInShellSurfaceExtrapolation_ERR_6564.Diagnostic="©µ¦ù¦±­±¥¢±Ñ.";
+TopOpInShellSurfaceExtrapolation_ERR_6564.Advice="´î¤Ö¼Æ­È.";
+//
+TopOpInShellCurveExtrapolation_ERR_6565.Request="/p1 ¾Þ§@°Ê§@:";
+TopOpInShellCurveExtrapolation_ERR_6565.Diagnostic="©µ¦ù¦±½u¥¢±Ñ.";
+TopOpInShellCurveExtrapolation_ERR_6565.Advice="´î¤Ö¼Æ­È.";
+//
+TopOpInShellThickSurfaceSideFace_ERR_6566.Request="«p«×¦±­±¾Þ§@°Ê§@:";
+TopOpInShellThickSurfaceSideFace_ERR_6566.Diagnostic="°¼Ãä­×°Å­±µLªk­pºâ.";
+TopOpInShellThickSurfaceSideFace_ERR_6566.Advice="¥i¯à¬O­×°Å­±ªºÃä½u§Îª¬¨Ó°¾²¾.";
+//
+TopOpInShellSingularPoint_ERR_6567.Request="/p1 ¾Þ§@°Ê§@:";
+TopOpInShellSingularPoint_ERR_6567.Diagnostic="³æ¤@ÂIµLªk³B²z.";
+TopOpInShellSingularPoint_ERR_6567.Advice="­×§ï¿é¤Jª«Åé.";
+//
+TopOpInShellBadSmoothEdge_ERR_6568.Request="/p1 ¾Þ§@°Ê§@:";
+TopOpInShellBadSmoothEdge_ERR_6568.Diagnostic="Ãä¬É¤Ó¦y¥H­PµLªk°¾²¾.";
+TopOpInShellBadSmoothEdge_ERR_6568.Advice="½Ð±NÃä¬É¥­ºñ¤Æ.";
+//
+TopOpInShellRazorBladeEdge_ERR_6569.Request="/p1 ¾Þ§@°Ê§@:";
+TopOpInShellRazorBladeEdge_ERR_6569.Diagnostic="­×°Å­±°fÂà­Ë­P¥­½wÃä½uÅÜ¦¨¾UÃä.";
+TopOpInShellRazorBladeEdge_ERR_6569.Advice="½Ð´î¤Ö­È¨ÓÁ×§K°fÂà.";
+//
+TopOpInShellNoInterCrvSur_ERR_6570.Request="/p1 °Ê§@:";
+TopOpInShellNoInterCrvSur_ERR_6570.Diagnostic="¦]¦±­±»P¦±½u¥¼¬Û¥æ¥H­PµLªk­pºâ³»ÂI.";
+TopOpInShellNoInterCrvSur_ERR_6570.Advice="´î¤Ö¼Æ­È©Î­×§ï¿é¤J¥»Åé.";
+//
+TopOpInShellNoInterSurSur_ERR_6571.Request="/p1 °Ê§@:";
+TopOpInShellNoInterSurSur_ERR_6571.Diagnostic="¦]¦±­±»P¦±½u¥¼¬Û¥æ¥H­PµLªk­pºâ³»ÂI.";
+TopOpInShellNoInterSurSur_ERR_6571.Advice="´î¤Ö¼Æ­È©Î­×§ï¿é¤J¥»Åé.";
+//
+TopOpInShellLocalDegeneration_ERR_6572.Request="Á¡´ß°Ê§@¥~³¡°¾²¾ :";
+TopOpInShellLocalDegeneration_ERR_6572.Diagnostic="¥Ø«eªº°¾²¾­È¾É­P¦±­±¤Ï¦±: µLªk«Ø¥ß¥»Åé.";
+TopOpInShellLocalDegeneration_ERR_6572.Advice="´î¤Ö°¾²¾­È¨ÓÁ×§K¦±­±¤Ï¦±©Î¼W¥[°¾²¾­È¨Ï¦±­±§¹¥þ®ø¥¢.";
+//
+TopOpInShellRemoveFaceCannotBeDone_ERR_6573.Request="/p1 °Ê§@:";
+TopOpInShellRemoveFaceCannotBeDone_ERR_6573.Diagnostic="¬°¤Fµ²ªG¥²¶·²¾°£¥D­n­×°Å­±.";
+TopOpInShellRemoveFaceCannotBeDone_ERR_6573.Advice="±q­×°Å­±²M³æ¤¤²¾°£.";
+//
+TopOpInShellRemoveFaceFailure_ERR_6574.Request="/p1 °Ê§@:";
+TopOpInShellRemoveFaceFailure_ERR_6574.Diagnostic="¥H©Ò¿ï¾Üªº¤w©¿²¤­×°Å­±µLªk«Ê³¬³Ì«á¥»Åé.";
+TopOpInShellRemoveFaceFailure_ERR_6574.Advice="¨ú®ø¿ï¾Ü©¿²¤­×°Å­±¥B´î¤Ö°¾²¾­È.";
+//
+TopOpInExtrapolateSurfacePartialLyingOn_ERR_6575.Request="©µ¦ù¦±­±°Ê§@:";
+TopOpInExtrapolateSurfacePartialLyingOn_ERR_6575.Diagnostic="Ãä¬É¤£¬O§¹¥þ¨Ìªþ¦b³Ìªì²Õ¦X­±¤W.";
+TopOpInExtrapolateSurfacePartialLyingOn_ERR_6575.Advice="½Ð¿ï¾Ü³ÌªìÃä¬É¨Ìªþªº²Õ¦X­±.";
+//
+TopOpInShellNonManifoldVertex_ERR_6576.Request="/p1 °Ê§@:";
+TopOpInShellNonManifoldVertex_ERR_6576.Diagnostic="³òÂ¶µÛºÝÂIªº Non-manifold ²ÕºA.";
+TopOpInShellNonManifoldVertex_ERR_6576.Advice="§½³¡­×§ï¿é¤J¥»Åé.";
+//
+TopOpInShellInconsistentLyingOnSides_ERR_6577.Request="/p1 °Ê§@:";
+TopOpInShellInconsistentLyingOnSides_ERR_6577.Diagnostic="­×°Å½u©Ò©w¸q°Ï°ìµLªk¨Ï°Ê§@¨M©w
+¨º¤@°¼­n«O¯d.";
+TopOpInShellInconsistentLyingOnSides_ERR_6577.Advice="½Ð­×§ï­×°Å¥»Åé©Î¨Ï°Ï°ì¤@­P.";
+//
+TopOpInShellNotClosedTrimmingWire_ERR_6578.Request="/p1 °Ê§@:";
+TopOpInShellNotClosedTrimmingWire_ERR_6578.Diagnostic="­×°Å½u¥¼«Ê³¬.";
+TopOpInShellNotClosedTrimmingWire_ERR_6578.Advice="½Ð«Ê³¬µô°ÅÃä½u¨Ó©w¸q­n«O«ùªº°Ï°ì.";
+//
+TopOpInShellNonManifoldTrimmingWire_ERR_6579.Request="/p1 °Ê§@:";
+TopOpInShellNonManifoldTrimmingWire_ERR_6579.Diagnostic="³»ÂIªþªñ¦³¤Ó¦hªºµô°ÅÃä½u.";
+TopOpInShellNonManifoldTrimmingWire_ERR_6579.Advice="½Ð²¾°£³¡¥÷µô°ÅÃä½u¨Ï±o°Ï°ì¤@­P.";
+//
+TopOpInShellPropagationConflict_ERR_6580.Request="/p1 °Ê§@:";
+TopOpInShellPropagationConflict_ERR_6580.Diagnostic="­×°Å­±§t¦³¬Û½Ä¬ð¼Æ­È.";
+TopOpInShellPropagationConflict_ERR_6580.Advice="½Ð­×§ï©Ò¿ï­×°Å­±.";
+//
+TopOpInShellInconsistentLyingOn_ERR_6581.Request="/p1 °Ê§@:";
+TopOpInShellInconsistentLyingOn_ERR_6581.Diagnostic="³»ÂI©M¤G³s±µÃä½u¨Ìªþ¤£¤@­P.";
+TopOpInShellInconsistentLyingOn_ERR_6581.Advice="½ÐÀË¬d¨Ìªþªº¦³®Ä©Ê¨Ã­×§ïÃìµ²¤W¨Ìªþ.";
+//
+TopOpInThickPlusRegularizedFaces_ERR_6582.Request="°¾²¾°Ê§@:";
+TopOpInThickPlusRegularizedFaces_ERR_6582.Diagnostic="³¡¥÷­×°Å­±µLªkºë½T°¾²¾: °Ê§@µLªkÀ³¥Î¦b¤@¯ë­×°Å­±.";
+TopOpInThickPlusRegularizedFaces_ERR_6582.Advice="¥­¶¶¿é¤J­×°Å­±¥H½T«O½T¹ê°¾²¾¼Æ­È.";
+//
+TopOpInShellC1NotAvailable_ERR_6583.Request="/p1 °Ê§@:";
+TopOpInShellC1NotAvailable_ERR_6583.Diagnostic="¿é¤J¥»Åé§t¦³ C1 ¦±­± \n ¦ý¿é¤J¯S¼x¹ï C1 ³B²z¦Ó¨¥¤ÓÂÂ.";
+TopOpInShellC1NotAvailable_ERR_6583.Advice="½Ð§ó·s¿é¤J¯S¼x©Î«Ø¥ß·sªº¤¸¯À.";
+//
+TopOpInShellFadingEdge_ERR_6584.Request="/p1 °Ê§@:";
+TopOpInShellFadingEdge_ERR_6584.Diagnostic="¾UÃä§½³¡¥­¶¶°¾²¾¥¢±Ñ (fading edges).";
+TopOpInShellFadingEdge_ERR_6584.Advice="¥­¶¶¿é¤J¥»Åéªº¾FªñÃä½u©Îµô°Å¬Û¤Á°Ï°ì.";
+//
+TopOpInShellTooThinThickness_ERR_6585.Request="/p1 °Ê§@:";
+TopOpInShellTooThinThickness_ERR_6585.Diagnostic="¹êÅéªº«p«×¥²¶·¤j©ó CATIA¡@³æ¦ìªº¤d¤À¤§¤@­¿.";
+TopOpInShellTooThinThickness_ERR_6585.Advice="¼W¥[«p«×.";
+//
+TopOpInShellG0Distortion_ERR_6586.Request="/p1 operator:";
+TopOpInShellG0Distortion_ERR_6586.Diagnostic="Boundary distortion is greater than one CATIA unit, due to local sharpness.";
+TopOpInShellG0Distortion_ERR_6586.Advice="Decrease offset value.";
+//
+TopOpInShellGlobalDegeneration_ERR_6587.Request="/p1 operator:";
+TopOpInShellGlobalDegeneration_ERR_6587.Diagnostic="Current offset value leads to a global degeneration on a surface: 
+body cannot be built.";
+TopOpInShellGlobalDegeneration_ERR_6587.Advice="Decrease offset value.";
+//
+// 6600-6649- HybOperator
+//
+TopOpInHybOpInvalidTopology_ERR_6600.Request="Áp¶°¾Þ§@°Ê§@:";
+TopOpInHybOpInvalidTopology_ERR_6600.Diagnostic="µLªk³B²zµL®Äªº©ÝåN.";
+TopOpInHybOpInvalidTopology_ERR_6600.Advice="­×§ï¿é¤Jª«Åé©Î§R°£¨ã±j¨î¼Ò¦¡¿ï¾Üªº©ÝåN.";
+//
+TopOpInHybOpBodyNotIntersecting_ERR_6601.Request="§R°£©ÎºIÂ_¾Þ§@°Ê§@:";
+TopOpInHybOpBodyNotIntersecting_ERR_6601.Diagnostic="¿é¤Jª«Åé¤£¬Û¥æ.";
+TopOpInHybOpBodyNotIntersecting_ERR_6601.Advice="­×§ï¿é¤Jª«Åé©Î²£¥Í¥¦ªº¿é¤J¶µ¦¸.";
+//
+TopOpInHybOpDomainNotIntersecting_ERR_6602.Request="§R°£©ÎºIÂ_¾Þ§@°Ê§@:";
+TopOpInHybOpDomainNotIntersecting_ERR_6602.Diagnostic="¦³¨Ç¿é¤Jª«Åé¤£¬Û¥æ.";
+TopOpInHybOpDomainNotIntersecting_ERR_6602.Advice="­×§ï¿é¤Jª«Åé©Î²£¥Í¥¦ªº¿é¤J¶µ¦¸.";
+//
+TopOpInHybOpInvalidPropagate_ERR_6603.Request="§R°£©ÎºIÂ_¾Þ§@°Ê§@:";
+TopOpInHybOpInvalidPropagate_ERR_6603.Diagnostic="§R°£©ÎºIÂ_ªº½uµLªk¨M©w­n«O¯d¨º¤@Ãä.";
+TopOpInHybOpInvalidPropagate_ERR_6603.Advice="­×§ï¿é¤Jª«Åé©Î°_°Ê©µ¦ù¼Ò¦¡.";
+//
+TopOpInHybOpInvalidExtrapolation_ERR_6604.Request="¨ã¦³©µ¦ù¼Ò¦¡ªº§R°£©ÎºIÂ_¾Þ§@°Ê§@:";
+TopOpInHybOpInvalidExtrapolation_ERR_6604.Diagnostic="©ÝåNµLªk©µ¦ù.";
+TopOpInHybOpInvalidExtrapolation_ERR_6604.Advice="­×§ï¿é¤Jª«Åé©Î°_°Ê©µ¦ù¼Ò¦¡.";
+//
+TopOpInHybOpInvalidPosition_ERR_6605.Request="¤À³Î©Îµô°Å°Ê§@:";
+TopOpInHybOpInvalidPosition_ERR_6605.Diagnostic="¤À³Î©Îµô°Å°Ê§@©Ò©w¸qªº°Ï°ìµLªk¨M©w¦ó³B­n«O¯d.";
+TopOpInHybOpInvalidPosition_ERR_6605.Advice="­×§ï¿é¤J¥»Åé.";
+//
+TopOpInHybOpInvalidKeepRemoveInput_ERR_6606.Request="¤À³Î©Îµô°Å°Ê§@:";
+TopOpInHybOpInvalidKeepRemoveInput_ERR_6606.Diagnostic="¬ÛÃö«O«ù©Î²¾°£¼Ð·Çªº¿é¤J³æ¦ìµL®Ä©Î¤£ÄÝ©ó¿é¤J¥»Åé.";
+TopOpInHybOpInvalidKeepRemoveInput_ERR_6606.Advice="­×§ï¬ÛÃö«O«ù©Î²¾°£¼Ð·Çªº¿é¤J³æ¦ì.";
+//
+TopOpInHybOpInvalidKeepRemoveConflict_ERR_6607.Request="¤À³Î©Îµô°Å°Ê§@:";
+TopOpInHybOpInvalidKeepRemoveConflict_ERR_6607.Diagnostic="¦]¬°µLªk¨M©w­n«O¯d©Î§R°£,¬ÛÃö«O«ù©Î²¾°£¼Ð·Çªº¿é¤J³æ¦ìµL®Ä.";
+TopOpInHybOpInvalidKeepRemoveConflict_ERR_6607.Advice="­×§ï¬ÛÃö«O«ù©Î²¾°£¼Ð·Çªº¿é¤J³æ¦ì.";
+//
+TopOpInHybOpInvalidKeepRemoveAmbiguous_ERR_6608.Request="¤À³Î©Îµô°Å°Ê§@:";
+TopOpInHybOpInvalidKeepRemoveAmbiguous_ERR_6608.Diagnostic="¦]¬°¤Á³Î«á¦¨¬°¼Æ­Ó³¡¥÷,¬ÛÃö«O«ù©Î²¾°£¼Ð·Çªº¿é¤J³æ¦ìµL®Ä.";
+TopOpInHybOpInvalidKeepRemoveAmbiguous_ERR_6608.Advice="­×§ï¬ÛÃö«O«ù©Î²¾°£¼Ð·Çªº¿é¤J³æ¦ì.";
+//
+TopOpInHybOpWarningAmbiguousCells_ERR_6609.Request="¤À³Î©Îµô°Å°Ê§@:";
+TopOpInHybOpWarningAmbiguousCells_ERR_6609.Diagnostic="Äµ§i : ³¡¥÷¤¸¥óµLªk©w¦ì.";
+TopOpInHybOpWarningAmbiguousCells_ERR_6609.Advice="¨Ï¥Î«O¯d©Î²¾°£¿ï¶µ©Î­×§ï¿é¤J¥»Åé±µÄ².";
+//
+TopOpInHybOpWarningConfusionCells_ERR_6610.Request="¤À³Î©Îµô°Å°Ê§@:";
+TopOpInHybOpWarningConfusionCells_ERR_6610.Diagnostic="Äµ§i : ³¡¥÷¤¸¥óµLªk©w¦ì.";
+TopOpInHybOpWarningConfusionCells_ERR_6610.Advice="¨Ï¥Î«O¯d©Î²¾°£¿ï¶µ©Î­×§ï¿é¤J¥»Åé±µÄ².";
+//
+TopOpInHybOpWarningTangentDesignCells_ERR_6611.Request="¤À³Î©Îµô°Å©Î¬Û¥æ°Ê§@:";
+TopOpInHybOpWarningTangentDesignCells_ERR_6611.Diagnostic="Äµ§i : ³¡¥÷¤¸¯À¬ÛÃö¬Û¤Á³]­p.";
+TopOpInHybOpWarningTangentDesignCells_ERR_6611.Advice="½Ð­×§ï¿é¤J¥»Åé.";
+//
+TopOpInSmartProjectUnexpectedSolution_ERR_6612.Request="´¼¼z§ë¼v°Ê§@:";
+TopOpInSmartProjectUnexpectedSolution_ERR_6612.Diagnostic="µ²ªG«D´¼¼z§ë¼v";
+TopOpInSmartProjectUnexpectedSolution_ERR_6612.Advice="¨Ï¥Î§ë¼v©M¿ï¾Ü©Ò»Ý¤¸¯À.";
+//
+TopOpInJoinSharedCells_ERR_6613.Request="³s±µ°Ê§@:";
+TopOpInJoinSharedCells_ERR_6613.Diagnostic="³¡¥÷Ãä½u¶¡¶ZÂ÷¤j©ó·»¦X¶ZÂ÷, ¥Ñ¼Æ­Ó¿é¤J¦±­±¤À¨É. ±N¦Û°Ê³s±µ¦±­±.";
+TopOpInJoinSharedCells_ERR_6613.Advice="³]©w·»¦X¶ZÂ÷µ¥©ó³Ì¤j¶¡»Ø.";
+//
+TopOpInJoinSharedFaces_ERR_6614.Request="³s±µ°Ê§@:";
+TopOpInJoinSharedFaces_ERR_6614.Diagnostic="³¡¥÷­×°Å­±¥Ñ¼Æ­Ó¿é¤J¦±­±¤À¨É.";
+TopOpInJoinSharedFaces_ERR_6614.Advice="­×§ï¿é¤J¦±­±¨Ó°±¤î­×°Å­±¤À¨É.";
+//
+TopOpInJoinSharedCells_ERR_6615.Request="³s±µ°Ê§@:";
+TopOpInJoinSharedCells_ERR_6615.Diagnostic="³¡¥÷³»ÂI¶¡¶ZÂ÷¤j©ó·»¦X¶ZÂ÷, ¥Ñ¼Æ­Ó¿é¤J¦±­±¤À¨É. ±N¦Û°Ê³s±µ¦±­±.";
+TopOpInJoinSharedCells_ERR_6615.Advice="³]©w·»¦X¶ZÂ÷µ¥©ó³Ì¤j¶¡»Ø.";
+//
+TopOpInJoinRazorBladeEdges_ERR_6616.Request="³s±µ°Ê§@:";
+TopOpInJoinRazorBladeEdges_ERR_6616.Diagnostic="¾Fªñ­×°Å­±ªº³¡¥÷¤º³¡Ãä½u¬Û¤Ï. ¥i¯à¥Ñ©ó­×°Å­±­«Å|.";
+TopOpInJoinRazorBladeEdges_ERR_6616.Advice="½Ð­×§ï¾Fªñ­×°Å­±.";
+//
+TopOpIntHybOpErrorFace_ERR_6617.Request="³s±µ°Ê§@:";
+TopOpIntHybOpErrorFace_ERR_6617.Diagnostic="³¡¥÷­×°Å­±µLªk³B²z.";
+TopOpIntHybOpErrorFace_ERR_6617.Advice="¥Ñ¿é¤J¥»Åé²¾°£³o¨Ç­×°Å­±.";
+//
+TopOpIntJoinError_ERR_6618.Request="Join operator:";
+TopOpIntJoinError_ERR_6618.Diagnostic="Join operation has failed.";
+TopOpIntJoinError_ERR_6618.Advice="Modify input bodies according to associated diagnostics.";
+//
+TopOpIntJoinStopOnRBE_ERR_6619.Request="Join operator:";
+TopOpIntJoinStopOnRBE_ERR_6619.Diagnostic="Some edges haven't been merged, although they are closer than resolution, because skin will be unorientable.";
+TopOpIntJoinStopOnRBE_ERR_6619.Advice="They may come from faces overlap. Modify adjacent faces in order to suppress these overlaps.";
+//
+TopOpIntJoinWngOnRBE_ERR_6620.Request="Join operator:";
+TopOpIntJoinWngOnRBE_ERR_6620.Diagnostic="Some edges haven't been merged, although they are closer than merging distance, because skin will be unorientable.";
+TopOpIntJoinWngOnRBE_ERR_6620.Advice="They may come from faces overlap. Modify adjacent faces in order to suppress these overlaps.";
+//
+TopOpIntJoinUnoriSkin_ERR_6621.Request="Join operator:";
+TopOpIntJoinUnoriSkin_ERR_6621.Diagnostic="After some edge merges, the skin is unorientable.";
+TopOpIntJoinUnoriSkin_ERR_6621.Advice="It may come from a non manifold configuration which is not supported by Join operator.";
+//
+// 6650-6699- PolarExtremum
+//
+TopOpInPolarExtremumInvalidOriginOnWire_ERR_6650.Request="·¥ºÝÂI¾Þ§@°Ê§@:";
+TopOpInPolarExtremumInvalidOriginOnWire_ERR_6650.Diagnostic="·¥­ìÂI¦b½uª«Åé¤W.";
+TopOpInPolarExtremumInvalidOriginOnWire_ERR_6650.Advice="½Ð¿ï¾Ü·¥­ìÂI¤£¦b½uª«Åé¤W.";
+//
+TopOpInPolarExtremumDirPerpendicularToPlane_ERR_6651.Request="Polar extremum operator:";
+TopOpInPolarExtremumDirPerpendicularToPlane_ERR_6651.Diagnostic="Unable to compute min or max angle with a direction perpendicular to plane.";
+TopOpInPolarExtremumDirPerpendicularToPlane_ERR_6651.Advice="Select a direction with is not perpendicular to plane.";
+//
+// 6700-6749- spiral
+//
+TopOpIntSpiralInternalError_ERR_6700="´õ±Û½u¾Þ§@°Ê§@: ¤º³¡¿ù»~.";
+
+TopOpInSpiralInvalidOriginNotInPlane_ERR_6701.Request="´õ±Û½u¾Þ§@°Ê§@:";
+TopOpInSpiralInvalidOriginNotInPlane_ERR_6701.Diagnostic="´õ±Û½u­ìÂI¤£¦b«ü©w¥­­±¤W.";
+TopOpInSpiralInvalidOriginNotInPlane_ERR_6701.Advice="½Ð¿ï¾Ü­ìÂI¨Ìªþ¦b«ü©w¥­­±¤W.";
+//
+TopOpInSpiralTooSmallAxis_ERR_6702.Request="´õ±Û½u¾Þ§@°Ê§@:";
+TopOpInSpiralTooSmallAxis_ERR_6702.Diagnostic="´õ±Û½u¶bªø«×¤Ó¤p.";
+TopOpInSpiralTooSmallAxis_ERR_6702.Advice="½Ð¿ï¾Ü¸ûªøªº¶b.";
+//
+TopOpInSpiralInvalidAxisNotInPlane_ERR_6703.Request="´õ±Û½u¾Þ§@°Ê§@:";
+TopOpInSpiralInvalidAxisNotInPlane_ERR_6703.Diagnostic="´õ±Û½u¶b¤£¦b«ü©w¥­­±¤W.";
+TopOpInSpiralInvalidAxisNotInPlane_ERR_6703.Advice="½Ð¿ï¾Ü¶b¨Ìªþ¦b«ü©w¥­­±¤W.";
+//
+TopOpInSpiralNullInputBody_ERR_6704="´õ±Û½u¾Þ§@°Ê§@: ¿é¤Jª«ÅéµL®Ä.";
+//
+// 6750-6774- spline
+//
+TopOpInSplineInvalidTangentNotInTangentPlane_ERR_6750.Request="¶³§Î½u¾Þ§@°Ê§@:";
+TopOpInSplineInvalidTangentNotInTangentPlane_ERR_6750.Diagnostic="¤ÁÂI¤£¨Ìªþ¦b¦±­±¬Û¤Á¥­­±¤W.";
+TopOpInSplineInvalidTangentNotInTangentPlane_ERR_6750.Advice="½Ð¿ï¾Ü¤ÁÂI¨Ìªþ¦b¦±­±¬Û¤Á¥­­±¤W.";
+//
+TopOpInSplineInvalidInputBody_ERR_6751.Request="¶³§Î½u¾Þ§@°Ê§@:";
+TopOpInSplineInvalidInputBody_ERR_6751.Diagnostic="¤@­Ó¿é¤JÂIµL®Ä.";
+TopOpInSplineInvalidInputBody_ERR_6751.Advice="´£¨Ñ¦³®ÄÂI.";
+//
+TopOpInSplineInvalidConfusedBodies_ERR_6752.Request="¶³§Î½u¾Þ§@°Ê§@:";
+TopOpInSplineInvalidConfusedBodies_ERR_6752.Diagnostic="¨â³sÄòÂI¬°¦P¤@ÂI.";
+TopOpInSplineInvalidConfusedBodies_ERR_6752.Advice="½Ð¿ï¾Ü¨â¤£¦PÂI.";
+//
+TopOpInSplineInvalidTangent_ERR_6753.Request="Spline operator:";
+TopOpInSplineInvalidTangent_ERR_6753.Diagnostic="Tangent is NULL or less than resolution";
+TopOpInSplineInvalidTangent_ERR_6753.Advice="Choose a tangent at position /p1 more than resolution";
+//
+// 6775-6799- circle
+//
+TopOpInSplineInvalidAngleReference_ERR_6775.Request="ºIÂ_¶ê¾Þ§@°Ê§@:";
+TopOpInSplineInvalidAngleReference_ERR_6775.Diagnostic="©Ò¿ï©w¸q°_©l©M²×¤î¨¤«×ªº°Ñ¦ÒÂI¬O¶ê¤ß.";
+TopOpInSplineInvalidAngleReference_ERR_6775.Advice="½Ð¿ï¾Ü»P¶ê¤ß¤£¦PªºÂI, ©Ò¥H¿ïªºÂI©M¶ê¤ß©Òºc¦¨ªº½u¥i¥H©w¸q.";
+//
+TopOpInCircleTooLargeAngle_ERR_6776.Request="¶ê¾Þ§@°Ê§@:";
+TopOpInCircleTooLargeAngle_ERR_6776.Diagnostic="°_©l©Mµ²§ô¨¤«×¶¡­È¤j©ó 2*PI.";
+TopOpInCircleTooLargeAngle_ERR_6776.Advice="´î¤Öµ²§ô¨¤«×­È©Î¼W¥[°_©l¨¤«×­È.";
+//
+TopOpInCircleOutOfSupport_ERR_6777.Request="¶ê¾Þ§@°Ê§@:";
+TopOpInCircleOutOfSupport_ERR_6777.Diagnostic="µLªk¦bÁ¡´ß¤W«Ø¥ß¶ê.";
+TopOpInCircleOutOfSupport_ERR_6777.Advice="½Ð±N¨Ìªþ¤¸¯À§ï¬°¥­­±.";
+//
+TopOpInCirclePointNoProjectionOnCrv_ERR_6779.Request="¶ê¾Þ§@°Ê§@: Âù¤Á©MÂI";
+TopOpInCirclePointNoProjectionOnCrv_ERR_6779.Diagnostic="ÂIµLªk§ë¼v¦Ü°Ñ¦Ò¦±½u¤W"; 
+TopOpInCirclePointNoProjectionOnCrv_ERR_6779.Advice="­×§ïÂI";
+//
+// 6800-6820- wirecontinuity
+//
+TopOpInWireContinuityInvalidBodyWire_ERR_6800.Request="½u³sÄò©Ê¶q´ú°Ê§@:";
+TopOpInWireContinuityInvalidBodyWire_ERR_6800.Diagnostic="¥»Åé¥²¶·¬O³æ¤@½u.";
+TopOpInWireContinuityInvalidBodyWire_ERR_6800.Advice="½Ð¨Ï¥Î³æ¤@½u¥»Åé.";
+//
+// 6821-6849- Plane
+//
+TopOpInRotationAxisNotParallel_ERR_6821.Request="©ÝåN¥­­±«Ø¥ß:";
+TopOpInRotationAxisNotParallel_ERR_6821.Diagnostic="±ÛÂà¶b¤£¥­¦æ©ó°Ñ¦Ò.";
+TopOpInRotationAxisNotParallel_ERR_6821.Advice="½Ð¨Ï¥Î¥­¦æ©ó°Ñ¦Òªº±ÛÂà¶b.";
+//
+TopOpInBasicBodyPlanar_ERR_6822.Request="¤TÂI«Ø¥ß¥­­±:";
+TopOpInBasicBodyPlanar_ERR_6822.Diagnostic="¨ä¤¤¨âÂI¬Û¦P.";
+TopOpInBasicBodyPlanar_ERR_6822.Advice="½Ð¿ï¾Ü¤T­Ó¤£¦PÂI";
+//
+TopOpInBasicBodyPlanar_ERR_6823.Request="ÂI©M½u«Ø¥ß¥­­±:";
+TopOpInBasicBodyPlanar_ERR_6823.Diagnostic="ÂI¦b½u¤W";
+TopOpInBasicBodyPlanar_ERR_6823.Advice="½Ð¿ï¾Ü¥t¤@ÂI";
+//
+TopOpInBasicBodyPlanar_ERR_6824.Request="¥Ñ¨¤«×½u©M¥­­±«Ø¥ß¥­­±:";
+TopOpInBasicBodyPlanar_ERR_6824.Diagnostic="¿é¤J¤£¥¿½T";
+TopOpInBasicBodyPlanar_ERR_6824.Advice="½Ð­×§ï¿é¤J";
+//
+TopOpInBasicBodyPlanar_ERR_6825.Request="¥Ñ¨¤«×½u©M¥­­±«Ø¥ß¥­­±:";
+TopOpInBasicBodyPlanar_ERR_6825.Diagnostic="µL¸Ñªk. ¨¤«×¥²¶·¦b¤U¦C¤§¶¡ (ªì©l½u©M¥­­±¤§¶¡) \n
+©M (180 «× - ªì©l½u©M¥­­±¤§¶¡)";
+TopOpInBasicBodyPlanar_ERR_6825.Advice="§ó§ï¨¤«×­È";
+//
+TopOpInBasicBodyPlanar_ERR_6826.Request="¥Ñ¨¤«×½u©M¥­­±«Ø¥ß¥­­±:";
+TopOpInBasicBodyPlanar_ERR_6826.Diagnostic="¥­­±µ²ªG¥»Åé­pºâ¿ù»~";
+TopOpInBasicBodyPlanar_ERR_6826.Advice="§ó§ï¨¤«×­È";
+//
+TopOpInBasicBodyPlanar_ERR_6827.Request="¥Ñ¨¤«×½u©M¥­­±«Ø¥ß¥­­±:";
+TopOpInBasicBodyPlanar_ERR_6827.Diagnostic="½u»P¿é¤J¥­­±««ª½. µL¸Ñªk©ÎµL­­¸Ñ.";
+TopOpInBasicBodyPlanar_ERR_6827.Advice="½Ð­×§ï¿é¤J";
+//
+// 6850-6899- CloseOperator
+//
+TopOpInCloseOperator_ERR_6850.Request="«Ø¥ß«Ê³¬¥»Åé:";
+TopOpInCloseOperator_ERR_6850.Diagnostic="¨ä¤¤¤@­Ó¥­­±§Î¦¡Ãä¬É²£¥ÍµL®Ä­×°Å­±.";
+TopOpInCloseOperator_ERR_6850.Advice="½ÐÀ|¸Õ¥Î³sµ²°Ê§@³B²z¦±­±.";
+//
+TopOpInCloseOperator_ERR_6851.Request="«Ø¥ß«Ê³¬¥»Åé:";
+TopOpInCloseOperator_ERR_6851.Diagnostic="©Ò¿ï¥»ÅéµLªk«Ê³¬ \n
+¦]¤@«Ê³¬¥­­±§Î¦¡­×°Å­±»P¾Fªñ­×°Å­±¬Û¥æ.";
+TopOpInCloseOperator_ERR_6851.Advice="½Ð­×¸É©Ò¦³¥¼«Ê³¬¥»Åé.";
+//
+TopOpInCloseOperator_ERR_6852.Request="Closed body creation:";
+TopOpInCloseOperator_ERR_6852.Diagnostic="The input body does not contains faces.";
+TopOpInCloseOperator_ERR_6852.Advice="Provide a input body that contains faces.";
+//
+TopOpInCloseOperator_ERR_6853.Request="Closed body creation:";
+TopOpInCloseOperator_ERR_6853.Diagnostic="The input body contains intersecting shells.";
+TopOpInCloseOperator_ERR_6853.Advice="Provide a input body which has no intersecting shells.";
+//
+// 6850-6879- Shell from closed wire
+//
+TopOpInShellFromClosedWireOperator_ERR_6880.Request="«Ê³¬½uÁ¡´ß°Ê§@:";
+TopOpInShellFromClosedWireOperator_ERR_6880.Diagnostic="Äµ§i : ¿é¤J½u¦Û§Ú¬Û¥æ.";
+TopOpInShellFromClosedWireOperator_ERR_6880.Advice="­×§ï¿é¤J½u.";
+//
+// sweep and loft- new-
+//
+TopOpInSweepInvalidReference_ERR_7001.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepInvalidReference_ERR_7001.Diagnostic="µL®Äªº²¾°Ê¥­­± (««ª½©ó¯á´Õ½u) °Ñ¦Ò¤¸¯À©Î¬Û¥æ±¡§Î.";
+TopOpInSweepInvalidReference_ERR_7001.Advice="°Ñ¦Ò¤¸¯À¥²¶·¬OÁ¡´ß©Î¦±­± .";
+//
+TopOpInSweepNonConnexElement_ERR_7002.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepNonConnexElement_ERR_7002.Diagnostic="©Ò¿ï¤¸¯À¤£¬Û³s.";
+TopOpInSweepNonConnexElement_ERR_7002.Advice="¨C¤@Â_­±, ¤Á­±©M¾É¤Þ½u¥²¶·¬Û³s.";
+//
+// N.B je cree aussi un message 7035 qui est une variante pour les warnings
+TopOpInSweepInvalidCenterCurve_ERR_7003.Request="±½±°°Ê§@:";
+TopOpInSweepInvalidCenterCurve_ERR_7003.Diagnostic="¤¤¤ß¦±½u¤Á½u¤£¬Û³s©Î¤£¬O¥­­±§Î¦¡."; 
+TopOpInSweepInvalidCenterCurve_ERR_7003.Advice="½Ð¿ï¾Ü¤¤¤ß¦±½u¤Á½u¬Û³s©Î¬°¥­­±§Î¦¡.
+©Î¨Ï¥Î§t¾A·í°Ñ¼Æªº¥­¶¶±½±°¿ï¶µ";
+//
+TopOpInSweepIdenticalGuides_ERR_7004.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepIdenticalGuides_ERR_7004.Diagnostic="©Ò¿ï¾É¤Þ½u¬Û¦P ."; 
+TopOpInSweepIdenticalGuides_ERR_7004.Advice="©Ò¦³¾É¤Þ½u¶·¤£¦P.";
+//
+TopOpInSweepInvalidSpine_ERR_7005.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepInvalidSpine_ERR_7005.Diagnostic="µL®Ä¯á´Õ½u."; 
+TopOpInSweepInvalidSpine_ERR_7005.Advice="¯á´Õ½u¥²¶·¬°¦±½u©Î½u.";
+//
+TopOpInSweepInvalidProfile_ERR_7006.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepInvalidProfile_ERR_7006.Diagnostic="µL®ÄÂ_­±©Î¤Á­±."; 
+TopOpInSweepInvalidProfile_ERR_7006.Advice="Â_­±©Î¤Á­±¥²¶·¬O½u.";
+//
+TopOpInSweepNoSelection_ERR_7007.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepNoSelection_ERR_7007.Diagnostic="¨S¦³¿ï¾Ü¯á´Õ½u©Î¾É¤Þ½u."; 
+TopOpInSweepNoSelection_ERR_7007.Advice="½Ð¦Ü¤Ö¿ï¾Ü¤@­Ó¯á´Õ½u©Î¾É¤Þ½u.";
+//
+TopOpInSweepMovingPlane_ERR_7008.Request="±½±°°Ê§@:";
+TopOpInSweepMovingPlane_ERR_7008.Diagnostic="²¾°Ê­±©w¸q§Î¦¡©|¥¼­p¤J ."; 
+TopOpInSweepMovingPlane_ERR_7008.Advice="½Ð¿ï¾Ü¥t¤@©w¸q.";
+//
+TopOpInSweepProfileDimension012_ERR_7009.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepProfileDimension012_ERR_7009.Diagnostic="Â_­±©Î¤Á­±§t¦³Åé¿n©w¸q."; 
+TopOpInSweepProfileDimension012_ERR_7009.Advice="Â_­±©Î¤Á­±©w¸q¥²¶·¬O 0, 1 or 2.";
+//
+TopOpInSweepEmptyProfile_ERR_7010.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepEmptyProfile_ERR_7010.Diagnostic="Â_­±©Î¤Á­±¬OªÅªº."; 
+TopOpInSweepEmptyProfile_ERR_7010.Advice="½Ð¿ï¾Ü«DªÅªºÂ_­±©Î¤Á­±.";
+//
+TopOpInSweepNonHomogeneousProfile_ERR_7011.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepNonHomogeneousProfile_ERR_7011.Diagnostic="Â_­±©Î¤Á­±«D¦P½è:
+¥¦§t¦³¤£¦P¤Ø¤oªº©w¸q."; 
+TopOpInSweepNonHomogeneousProfile_ERR_7011.Advice="½Ð¿ï¾Ü¦P½è©ÊÂ_­±©Î¤Á­±.";
+//
+TopOpInSweepGuideDimension12_ERR_7012.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepGuideDimension12_ERR_7012.Diagnostic="¾É¤Þ½u§t¦³ÂI©ÎÅé¿n."; 
+TopOpInSweepGuideDimension12_ERR_7012.Advice="¾É¤Þ¦±½u¥²¶·¬O 1 or 2.";
+//
+TopOpInSweepEmptyGuide_ERR_7013.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepEmptyGuide_ERR_7013.Diagnostic="¾É¤Þ¦±½u¬OªÅªº."; 
+TopOpInSweepEmptyGuide_ERR_7013.Advice="½Ð¿ï¾Ü«DªÅªº¾É¤Þ¦±½u.";
+//
+TopOpInSweepMultiDomainGuide_ERR_7014.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepMultiDomainGuide_ERR_7014.Diagnostic="¾É¤Þ¦±½u¨ã¦³¦h­Ó©w¸q."; 
+TopOpInSweepMultiDomainGuide_ERR_7014.Advice="½Ð¿ï¾Ü³æ¤@©w¸q¾É¤Þ¦±½u.";
+//
+TopOpInSweepSpineDimension1_ERR_7015.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepSpineDimension1_ERR_7015.Diagnostic="¯áÀ@½u¤º§t«D½u©w¸q."; 
+TopOpInSweepSpineDimension1_ERR_7015.Advice="¯áÀ@½u¥²¶·¬O½u.";
+//
+TopOpInSweepEmptySpine_ERR_7016.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepEmptySpine_ERR_7016.Diagnostic="¯áÀ@½u¬OªÅªº."; 
+TopOpInSweepEmptySpine_ERR_7016.Advice="½Ð¿ï¾Ü¤£¬OªÅªº¯áÀ@½u.";
+//
+TopOpInSweepMultiDomainSpine_ERR_7017.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepMultiDomainSpine_ERR_7017.Diagnostic="¯áÀ@½u§t¦³¶W¹L¤@­Ó©w¸q.";  
+TopOpInSweepMultiDomainSpine_ERR_7017.Advice="½Ð¿ï¾Ü³æ¤@©w¸q¯áÀ@½u.";
+//
+TopOpInSweepSelfIntersectingGuide_ERR_7018.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepSelfIntersectingGuide_ERR_7018.Diagnostic="¾É¤Þ½u¥»¨­¬Û¥æ."; 
+TopOpInSweepSelfIntersectingGuide_ERR_7018.Advice="½Ð¿ï¾Ü¥»¨­¤£¬Û¥æ¾É¤Þ½u.";
+//
+TopOpInSweepSelfIntersectingSpine_ERR_7019.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepSelfIntersectingSpine_ERR_7019.Diagnostic="¯áÀ@½u¥»¨­¬Û¥æ."; 
+TopOpInSweepSelfIntersectingSpine_ERR_7019.Advice="½Ð¿ï¾Ü¥»¨­¤£¬Û¥æ¯áÀ@½u.";
+//
+TopOpInSweepNonPlanarMultiDomainProfile_ERR_7020.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepNonPlanarMultiDomainProfile_ERR_7020.Diagnostic="Â_­±©Î¤Á­±¨ã¦³¤@­Ó¥H¤W©w¸q¥B¤£¬O¥­­±§Î¦¡."; 
+TopOpInSweepNonPlanarMultiDomainProfile_ERR_7020.Advice="½Ð¿ï¾ÜÂ_­±©Î¤Á­±¨ã¦³¤@­Ó©w¸q¥B¬°¥­­±§Î¦¡.";
+//
+TopOpInSweepProfileDimensionWithTrimBody_ERR_7021.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepProfileDimensionWithTrimBody_ERR_7021.Diagnostic="¨Ì¾Ú­×°Å¥»Åé,¾É¤Þ½u¥B¦³¿ù»~¤Ø¤o."; 
+TopOpInSweepProfileDimensionWithTrimBody_ERR_7021.Advice="¾É¤Þ¤Ø¤o¥²¶·¬O­×°Å¥»Åé¤Ø¤o´î¤@ªº¤Ø¤o.";
+//
+TopOpInSweepNonG1Spine_ERR_7022.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInSweepNonG1Spine_ERR_7022.Diagnostic="¯áÀ@½u¤Á½u¤£³sÄò."; 
+TopOpInSweepNonG1Spine_ERR_7022.Advice="½Ð¿ï¾Ü¤Á½u³sÄò¯áÀ@½u.";
+//
+TopOpInLoftSectionD1Coupling_ERR_7023.Request="¨ã¦Û°Êµ²¦XªºÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInLoftSectionD1Coupling_ERR_7023.Diagnostic="¦b¨â¾É¤Þ½u¤§¶¡µ²¦X¤Á­±³»ÂI¤£¥i¯à."; 
+TopOpInLoftSectionD1Coupling_ERR_7023.Advice="- ½Ð¿ï¾Ü¬Û¦P³sÄò§Î¦¡©Î \n - ¼W¥[©Î²¾°£¾É¤Þ½u.";
+//
+TopOpInLoftSectionD2Coupling_ERR_7024.Request="¨ã¦Û°Êµ²¦XªºÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInLoftSectionD2Coupling_ERR_7024.Diagnostic="¤£¥i¯à
+- ¦b¨â¾É¤Þ½u¤§¶¡µ²¦X¤Á­±³»ÂI ©Î \n
+- ¦b¨â¾É¤Þ½u¤§¶¡ªº¤Á­±©w¸q. ©Î \n
+- ¨â³»ÂI¤Á½u¤£³sÄò ©Î \n
+- ¾É¤Þ½u©M¤Á½u¤£³sÄò ©Î \n
+³»ÂI¼Æ¤£¦P¦ý¤Á½u³sÄò,¦ý¦±²v¤£³sÄò."; 
+TopOpInLoftSectionD2Coupling_ERR_7024.Advice="- ½Ð¿ï¾Ü¬Û¦P³sÄò§Î¦¡©Î \n - ¼W¥[©Î²¾°£¾É¤Þ½u.";
+//
+TopOpInLoftSectionCoupling_ERR_7025.Request="¨ã¦Û°Êµ²¦XªºÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpInLoftSectionCoupling_ERR_7025.Diagnostic="¦b¨â¾É¤Þ½u¤§¶¡µ²¦X¤Á­±³»ÂI¤£¥i¯à. \n
+¦b¨â¾É¤Þ½u¤§¶¡ªº¤Á­±©w¸q,¨S¦³¬Û¦Pªº³»ÂI¼Æ."; 
+TopOpInLoftSectionCoupling_ERR_7025.Advice="- ½Ð¿ï¾Ü¬Û¦Pªº³»ÂI¼Æ©Î \n - ¼W¥[©Î²¾°£¾É¤Þ½u.";
+//
+TopOpInLoftProfilesAreIntersecting_ERR_7026.Request="Â_­±²V¦¨¦±­±°Ê§@:";
+TopOpInLoftProfilesAreIntersecting_ERR_7026.Diagnostic="¦³¨ÇÂ_­±¥»¨­¬Û¥æ."; 
+TopOpInLoftProfilesAreIntersecting_ERR_7026.Advice=" ½Ð¿ï¾Ü¤£¬Û¥æÂ_­±.";
+//
+TopOpInSweepTopologicalTwist_ERR_7027.Request="±½±°°Ê§@:";
+TopOpInSweepTopologicalTwist_ERR_7027.Diagnostic="Â_­±³»ÂI©Ô¦ù¾É¦Ü cusp."; 
+TopOpInSweepTopologicalTwist_ERR_7027.Advice="½Ð¿ï¾Ü¸û¤p¦±²vªº¾É¤Þ½u.";
+//
+TopOpInLoftTangencyOnInternalSection_ERR_7028.Request="Â_­±²V¦¨¦±­±°Ê§@:";
+TopOpInLoftTangencyOnInternalSection_ERR_7028.Diagnostic="¤w±j¨î¬Û¤Á­­¨î \n
+- ¥i¯à¦bÂ_­±²V¦¨¦±­±ªº²Ä¤@©Î³Ì«á¤Á­±©MÂ_­±¥¼ºIÂ_ \n
+- ©Î¦bÂ_­±²V¦¨¦±­±ªº¤º³¡¤Á­±."; 
+TopOpInLoftTangencyOnInternalSection_ERR_7028.Advice="À£¨î­­¨î©Î¨Ï¥ÎºIÂ_¿ï¾Ü.";
+//
+TopOpInExtrapolGuideNonG1_ERR_7029.Request="©µ¦ù¾Þ§@¤l:";
+TopOpInExtrapolGuideNonG1_ERR_7029.Diagnostic="¦±½u¬Û¤Á¤£³sÄò.";
+TopOpInExtrapolGuideNonG1_ERR_7029.Advice="¤À³Î¦±½u¥B¦U¦Û©µ¦ù©w¸q.";
+//
+TopOpInSweepTooSharp_ERR_7030.Request="±½±°©ÎÅ|¼h°Ê§@:";
+TopOpInSweepTooSharp_ERR_7030.Diagnostic="¦±­±¤Ó¦y¾U."; 
+TopOpInSweepTooSharp_ERR_7030.Advice="¿é¤J¸ê®Æ¤£¤@­P. \n
+¥i¯à¾É­P«áÄò°Ê§@¿ù»~";
+//
+// voir aussi 7046 a 7049
+TopOpInSweepSmallEdge_ERR_7031.Request="±½±°©ÎÅ|¼h©Î¶¶±µ°Ê§@:";
+TopOpInSweepSmallEdge_ERR_7031.Diagnostic="­×°Å­±Ãä½u¤Ó¤p."; 
+TopOpInSweepSmallEdge_ERR_7031.Advice="¥i¯à¾É­P«áÄò°Ê§@¿ù»~. \n
+- ²M²z¿é¤J¸ê®Æ \n
+- ÀË¬d½Æ¦X¸ê®Æ (Å|¼h©Î¶¶±µ) \n";
+//
+TopOpInSweepNoKeptArea_ERR_7032.Request="±½±°©ÎÅ|¼h©Î¶¶±µ°Ê§@:";
+TopOpInSweepNoKeptArea_ERR_7032.Diagnostic="¨Ï¥Î¤Á³Î¸ê®Æ®É¨S¦³«O¯d°Ï°ì."; 
+TopOpInSweepNoKeptArea_ERR_7032.Advice="½ÐÀË¬d¿é¤J¸ê®Æ";
+//
+TopOpInExtrapolLostOfDir_ERR_7033.Request="©µ¦ù°Ê§@:";
+TopOpInExtrapolLostOfDir_ERR_7033.Diagnostic="¥¼§t©Ò¦³¤è¦Vªº©ë§ô¥H­P¥¼¯à«Ø¥ß¦±­±.";
+TopOpInExtrapolLostOfDir_ERR_7033.Advice="²¾°£³¡¥÷¤è¦VÃä½u.";
+//
+TopOpInSweepInternalProfileInReport_ERR_7034.Request="Å|¼h°Ê§@:";
+TopOpInSweepInternalProfileInReport_ERR_7034.Diagnostic="¤¤¶¡ÂI¤Á­±¤w¥Î¨Ó©R¦W."; 
+TopOpInSweepInternalProfileInReport_ERR_7034.Advice="½Ðª`·N­×§ï½Æ¦X³»ÂI«áªº¤£Ã­©w±¡§Î.";
+//
+// 7035: variante pour warning du message 7003
+TopOpInSweepInvalidCenterCurveWarning_ERR_7035.Request="±½±°°Ê§@:";
+TopOpInSweepInvalidCenterCurveWarning_ERR_7035.Diagnostic="¤¤¤ß¦±½u¥i¯à¤Á½u¤£³sÄò©Î¬°«D¥­­±§Î¦¡,
+§Y¨Ï¥u­×§ï«Ü¤Ö¿é¤J¸ê®Æ, ­pºâ¤´¥i¯à¥¢±Ñ."; 
+TopOpInSweepInvalidCenterCurveWarning_ERR_7035.Advice="¿ï¾Ü¤Á½u³sÄò©Î¬°¥­­±§Î¦¡ªº¤¤¤ß¦±½u
+ ¨Ï¥Î§t¾A·í°Ñ¼Æªº¥­¶¶±½±°¿ï¶µ";
+//
+// 7036: variante pour warning sweep du message 5012
+TopOpInSweepCheckGapWarning_ERR_7036.Request="±½±°©ÎÅ|¼h©Î¶¶±µ°Ê§@:";
+TopOpInSweepCheckGapWarning_ERR_7036.Diagnostic="µ²ªG¦±­±¶¡°»´ú¨ìÁ_»Ø.";
+TopOpInSweepCheckGapWarning_ERR_7036.Advice="­×§ï°Ñ¼Æ©Î¼Ò«¬®e®t­È (¦p¦³)
+©Î§ó§ï°Ê§@.";
+//
+// 7037: contraintes de tangences externes non respectées
+TopOpInSweepCheckExternalTangencyWarning_ERR_7037.Request="±½±°©ÎÅ|¼h©Î¶¶±µ°Ê§@:";
+TopOpInSweepCheckExternalTangencyWarning_ERR_7037.Diagnostic="¦bµ²ªG©ÝåN©Î­­¨î¦±­±¶¡°»´ú¨ì¬Û¤Á¤£³sÄò.";
+TopOpInSweepCheckExternalTangencyWarning_ERR_7037.Advice="­×§ï°Ñ¼Æ©Î¼Ò«¬®e®t­È (¦p¦³)
+©Î§ó§ï°Ê§@.";
+//
+// 7038: nettoyage impossible
+TopOpInSweepImpossibleCleanWarning_ERR_7038.Request="±½±°©ÎÅ|¼h©Î¶¶±µ°Ê§@:";
+TopOpInSweepImpossibleCleanWarning_ERR_7038.Diagnostic="¦³¤@¿é¤J¥~§ÎµLªk²M²z.";
+TopOpInSweepImpossibleCleanWarning_ERR_7038.Advice="­×§ï¼Ò«¬®e®t¼Æ­È 
+©Î§ó§ï°Ê§@.";
+//
+// 7039: profil positionné sur un vertex C0
+TopOpInSweepProfileNearC0Vertex_ERR_7039.Request="±½±°°Ê§@:";
+TopOpInSweepProfileNearC0Vertex_ERR_7039.Diagnostic="¦b¥¼¤Á½u³sÄòªº¾É¤Þ¤W, Â_­±¥~§Î¦ì©ó©Î±µªñ³»ÂI.";
+TopOpInSweepProfileNearC0Vertex_ERR_7039.Advice="§ó§ïÂ_­±¦ì¸m.";
+//
+// 7040,7041,7042 not lying on elements. (with new error standard) NLD280704 
+TopOpInNotLyingOn_ERR_7040.Status="©ÝåN°Ê§@:";
+TopOpInNotLyingOn_ERR_7040.Diagnostic="¤@¿é¤J½u¥¼¨Ìªþ¦bÁ¡´ß¤W.";
+TopOpInNotLyingOn_ERR_7040.Advice="§ë¼v¦Ü¨Ìªþ¤W, µM«á¨Ï¥Î§ë¼v.";
+//
+TopOpInPtNotLyingOnWire_ERR_7041.Status="©ÝåN°Ê§@:";
+TopOpInPtNotLyingOnWire_ERR_7041.Diagnostic="¤@¿é¤JÂI¥¼¨Ìªþ¦b½u¤W.";
+TopOpInPtNotLyingOnWire_ERR_7041.Advice="§ë¼v¦Ü½u¤W, µM«á¨Ï¥Î§ë¼v.";
+//
+TopOpInPtNotLyingOnShell_ERR_7042.Status="©ÝåN°Ê§@:";
+TopOpInPtNotLyingOnShell_ERR_7042.Diagnostic="¤@¿é¤JÂI¥¼¨Ìªþ¦bÁ¡´ß¤W.";
+TopOpInPtNotLyingOnShell_ERR_7042.Advice="§ë¼v¦Ü¨Ìªþ¤W, µM«á¨Ï¥Î§ë¼v.";
+//
+TopOpInSweepNonC2NotAvailable_ERR_7043.Request="Sweep or Loft or Blend operator:";
+TopOpInSweepNonC2NotAvailable_ERR_7043.Diagnostic="Input body contains C1 non C2 surfaces or curves but the input feature is too old for C1 treatment.";
+TopOpInSweepNonC2NotAvailable_ERR_7043.Advice="Upgrade the input feature or create a new one.";
+// NLD081004
+TopOpInSweepNullHomogenizedWire_ERR_7044.Request="Sweep or Loft or Blend Operator:";
+TopOpInSweepNullHomogenizedWire_ERR_7044.Diagnostic="An intermediate relimited wire has no edge.";
+TopOpInSweepNullHomogenizedWire_ERR_7044.Advice="Modify the input to ensure a correct wire relimitation.
+Check wires relative positions";
+//
+// NLD081004
+TopOpInSweepNullEdgeInHomogenizedWire_ERR_7045.Request="Sweep or Loft or Blend Operator:";
+TopOpInSweepNullEdgeInHomogenizedWire_ERR_7045.Diagnostic="An intermediate homogenized wire has a null edge.";
+TopOpInSweepNullEdgeInHomogenizedWire_ERR_7045.Advice="Modify the input to ensure a correct homogenization of all wires.";
+//
+// NLD281004
+TopOpInSweepSmallEdgeFromInitialGuide_ERR_7046.Request="Sweep or Loft or Blend operator:";
+TopOpInSweepSmallEdgeFromInitialGuide_ERR_7046.Diagnostic="Face has a small edge that may come from an initial guide or spine."; 
+TopOpInSweepSmallEdgeFromInitialGuide_ERR_7046.Advice="It may lead to an error in following operations.
+- Clean input data
+- Check input guides or spine";
+//
+// NLD281004
+TopOpInSweepSmallEdgeFromInitialProfile_ERR_7047.Request="Sweep or Loft operator:";
+TopOpInSweepSmallEdgeFromInitialProfile_ERR_7047.Diagnostic="Face has a small edge that may come from an initial profile."; 
+TopOpInSweepSmallEdgeFromInitialProfile_ERR_7047.Advice="It may lead to an error in following operations.
+- Clean input data
+- Check input profiles";
+//
+// NLD281004
+TopOpInSweepSmallEdgeFromFinalGuide_ERR_7048.Request="Sweep or Loft or Blend operator:";
+TopOpInSweepSmallEdgeFromFinalGuide_ERR_7048.Diagnostic="Face has a small edge that may come from a final guide or spine."; 
+TopOpInSweepSmallEdgeFromFinalGuide_ERR_7048.Advice="It may lead to an error in following operations.
+- Clean input data
+- Check guide support faces
+- Check guide vertices coupling by spine plane";
+//
+// NLD281004
+TopOpInSweepSmallEdgeFromFinalProfile_ERR_7049.Request="Sweep or Loft operator:";
+TopOpInSweepSmallEdgeFromFinalProfile_ERR_7049.Diagnostic="Face has a small edge that may come from a final profile."; 
+TopOpInSweepSmallEdgeFromFinalProfile_ERR_7049.Advice="It may lead to an error in following operations.
+- Clean input data
+- Check profile support faces
+- Check profile vertices coupling";
+//
+// NLD281004
+TopOpInSweepProfileOrderWarning_ERR_7050.Request="Loft operator:";
+TopOpInSweepProfileOrderWarning_ERR_7050.Diagnostic="Wrong section order along the spine."; 
+TopOpInSweepProfileOrderWarning_ERR_7050.Advice="Computed surfaces may not correspond to user intent.
+- Change section selection order
+- Verify that each section is in a plane normal to the spine";
+//
+// FDS040105
+TopOpInSweepOpenProfileTwist_ERR_7051.Request="Sweep operator:";
+TopOpInSweepOpenProfileTwist_ERR_7051.Diagnostic="The extrapolation of the open profile is intersecting the profile."; 
+TopOpInSweepOpenProfileTwist_ERR_7051.Advice="Modify open profile to avoid a twist.";
+//
+// NLD120105 message issu de GeoOpInLoftNoIntersection_ERR_3008 pour aide au diagnostic
+TopOpInLoftNoIntersection_ERR_7052.Request ="Geometric loft operator:";
+TopOpInLoftNoIntersection_ERR_7052.Diagnostic ="A guide does not intersect one profile (or section). 
+This may be also due to the definition of the spine: 
+After the relimitation of the guide by the plane orthogonal to the spine, the guide does not intersect the profile (or section) anymore.";
+GeoOpInLoftNoIntersection_ERR_7052.Advice ="Select guides such that each guide intersects each profile (or section), or change the spine.";
+//
+// NLD310105 message issu de GeoOpInSweepC0Point_ERR_3028 pour aide au diagnostic
+TopOpInSweepC0Point_ERR_7053.Request ="Sweep or Loft:";
+TopOpInSweepC0Point_ERR_7053.Diagnostic ="Impossible to compute edges intersection at tangency discontinuity point.";
+TopOpInSweepC0Point_ERR_7053.Advice ="Check spine continuity.";
+//
+// NLD310105 message issu de GeoOpInSweepC0MeridianCurve_ERR_3029 pour aide au diagnostic
+TopOpInSweepC0MeridianCurve_ERR_7054.Request ="Sweep or Loft:";
+TopOpInSweepC0MeridianCurve_ERR_7054.Diagnostic ="Impossible to compute meridian curve by surfaces intersection at tangency discontinuity point.";
+TopOpInSweepC0MeridianCurve_ERR_7054.Advice ="Check spine continuity.";
+//
+// NLD310105 message issu de GeoOpInSweepEdgeCurveCreation_ERR_3031 pour aide au diagnostic
+TopOpInSweepEdgeCurveCreation_ERR_7055.Request ="Extrude or Sweep or Loft or Blend operator:";
+TopOpInSweepEdgeCurveCreation_ERR_7055.Diagnostic ="Impossible to compute the edge curve between two surfaces.";
+TopOpInSweepEdgeCurveCreation_ERR_7055.Advice ="Change your inputs.";
+//
+// NLD240205 message pour warning rebroussement detecte au niveau topologique
+TopOpInSweepTopologicalWrap_ERR_7056.Request="Sweep or Loft operator:";
+TopOpInSweepTopologicalWrap_ERR_7056.Diagnostic="The extrusion of a vertex of the profile leads to a wrap."; 
+TopOpInSweepTopologicalWrap_ERR_7056.Advice="Use a guide with a smaller curvature. Check output or change your inputs.";
+//
+// NLD300305 message pour warning ou erreur direction de depouille non normale au plan de spine du sweep
+TopOpInSweepDraftDirNotNormalToNonG1SpinePlane_ERR_7057.Request="Sweep operator:";
+TopOpInSweepDraftDirNotNormalToNonG1SpinePlane_ERR_7057.Diagnostic="Draft direction not normal to guide plane.";
+TopOpInSweepDraftDirNotNormalToNonG1SpinePlane_ERR_7057.Advice="Change draft direction or use a guide continuous in tangency or a limiting element
+to ensure sweep surfaces connexity";
+//
+// NLD010605 message pour warning sweepchecker: ecart par rapport aux profils
+TopOpInSweepCheckDeviationFromProfile_ERR_7058.Request="Loft operator:";
+TopOpInSweepCheckDeviationFromProfile_ERR_7058.Diagnostic="Gap detected between surface and input section.";
+TopOpInSweepCheckDeviationFromProfile_ERR_7058.Advice="Change area law or input data or modify the tolerant modelling parameter value(s)";
+//
+// NLD010605 message pour warning sweepchecker: ecart par rapport aux guides
+TopOpInSweepCheckDeviationFromGuide_ERR_7059.Request="Loft operator:";
+TopOpInSweepCheckDeviationFromGuide_ERR_7059.Diagnostic="Gap detected between surface and input guide.";
+TopOpInSweepCheckDeviationFromGuide_ERR_7059.Advice="Change input data or modify the tolerant modelling parameter value(s)";
+//
+// NLD020605 message pour warning creation ccv posee sur avec edge vive
+TopOpInSweepEdgeLyingOnSharpEdge_ERR_7060.Request="Topological operator:";
+TopOpInSweepEdgeLyingOnSharpEdge_ERR_7060.Diagnostic="Sharp edge in input wire may lead to wrong normal computation and unpredictable result.";
+TopOpInSweepEdgeLyingOnSharpEdge_ERR_7060.Advice="Change supporting shell.";
+//
+// NLD020605 message plus moderne pour homogeneisation des guides
+TopOpInSweepGuidesHomogenization_ERR_7061.Request="Sweep or Loft or Blend or Extrapol operator:";
+TopOpInSweepGuidesHomogenization_ERR_7061.Diagnostic="Impossible to homogenize the guides/spine topology before computation.";
+TopOpInSweepGuidesHomogenization_ERR_7061.Advice="Change input data or modify the tolerant modelling parameter value(s) if any.";
+//
+// NLD020605 message plus moderne pour homogeneisation des profils
+TopOpInSweepProfilesHomogenization_ERR_7062.Request="Loft or Blend operator:";
+TopOpInSweepProfilesHomogenization_ERR_7062.Diagnostic="Impossible to homogenize the sections topology before computation.";
+TopOpInSweepProfilesHomogenization_ERR_7062.Advice="Change input data or modify the tolerant modelling parameter value(s) if any.";
+//
+TopOpInSweepOutOfModelSize_ERR_7063.Request="Sweep operator:";
+TopOpInSweepOutOfModelSize_ERR_7063.Diagnostic="The guide is greater than model size."; 
+TopOpInSweepOutOfModelSize_ERR_7063.Advice="Use a shorter guide to stay inside the model size.";
+//
+//
+//Operator Blend (and extrapol G1) (7080-7099)
+//
+TopOpInBlendShellNonG1_ERR_7080.Request="¶¶±µ°Ê§@:";
+TopOpInBlendShellNonG1_ERR_7080.Diagnostic="¦bºÝÂI¤W¦±½uªº¤Á½u³sÄò¦ýÁ¡´ß¤£µM.";
+TopOpInBlendShellNonG1_ERR_7080.Advice="½Ð¦bºÝÂI¤W¤À³Î¦¹¦±½u.";
+//
+TopOpInBlendShellContainsAJunctionEdge_7081.Request="¶¶±µ°Ê§@:";
+TopOpInBlendShellContainsAJunctionEdge_7081.Diagnostic="¦±½u¤§¤@§t¦³¸õ±µÃä½u.";
+TopOpInBlendShellContainsAJunctionEdge_7081.Advice="½Ð¥­¶¶¦±½u.";
+//
+TopOpInBlendWireAreIntersecting_ERR_7082.Request="¶¶±µ°Ê§@:";
+TopOpInBlendWireAreIntersecting_ERR_7082.Diagnostic="½u¤§¶¡¬Û¥æ."; 
+TopOpInBlendWireAreIntersecting_ERR_7082.Advice="¨Ï¥Î«D¬Û¥æªº½u.";
+//
+TopOpInBlendNonCompatibleOption_ERR_7083.Request="Blend operator:";
+TopOpInBlendNonCompatibleOption_ERR_7083.Diagnostic="Some options are not compatible."; 
+TopOpInBlendNonCompatibleOption_ERR_7083.Advice="Tangent borders options are not used.";
+//
+TopOpInBlendTwist_ERR_7084.Request ="Blend or extrapol operator:";
+TopOpInBlendTwist_ERR_7084.Diagnostic ="The result contains at least one twisted surface.";
+TopOpInBlendTwist_ERR_7084.Advice ="Blend: Reduce tension or invert wire direction.\n Extrapol: Change Up to element";
+//
+TopOpInExtrapolationNegativeLength_Err_7085.Request ="Extrapol Operator.";
+TopOpInExtrapolationNegativeLength_Err_7085.Diagnostic ="The length is less than or equal to zero.";
+TopOpInExtrapolationNegativeLength_Err_7085.Advice ="Use a strictly positive length.";
+//
+TopOpInBlendCurvatureContinuityAskedOnInternalEdge_ERR_7086.Request="Blend operator:";
+TopOpInBlendCurvatureContinuityAskedOnInternalEdge_ERR_7086.Diagnostic="Curvature continuity option asked on an internal shell edge. Instable computation"; 
+TopOpInBlendCurvatureContinuityAskedOnInternalEdge_ERR_7086.Advice="Trim shell in order to solve face choice ambiguity and stabilize curvature computation.";
+//
+//Operators GeodesicPtPt and SimilarCurve (7100-7124)
+//
+TopOpInLineGeodesicPtPt_ERR_7100.Request="¾Þ§@´X¦ó ÂI¦ÜÂI";
+TopOpInLineGeodesicPtPt_ERR_7100.Diagnostic="¨S¦³¸Ñªk : ¥¼¦¬íK"; 
+TopOpInLineGeodesicPtPt_ERR_7100.Advice="½Ð­×§ïÂI";
+//
+TopOpInLineGeodesicPtPt_ERR_7101.Request="¾Þ§@´X¦ó ÂI¦ÜÂI";
+TopOpInLineGeodesicPtPt_ERR_7101.Diagnostic="ªì©l¤Æ®Éµo¥Í°ÝÃD"; 
+TopOpInLineGeodesicPtPt_ERR_7101.Advice="½Ð­×§ïÂI";
+//
+TopOpInSimilarCurve_ERR_7102.Request="¾Þ§@Ãþ¦ü¦±½u";
+TopOpInSimilarCurve_ERR_7102.Diagnostic="¦b°Ñ¦Ò¦±½u¤WµLªk§ë¼vÂI"; 
+TopOpInSimilarCurve_ERR_7102.Advice="½Ð­×§ïÂI";
+//
+TopOpInSimilarCurve_ERR_7103.Request="¾Þ§@Ãþ¦ü¦±½u";
+TopOpInSimilarCurve_ERR_7103.Diagnostic="¿é¤J¦±½u©M°Ñ¦Ò¦±½uªº««ª½¥­­±¨S¦³¬Û¥æ"; 
+TopOpInSimilarCurve_ERR_7103.Advice="½Ð­×§ï¨ä¤¤¤§¤@¦±½u";
+//
+TopOpInGeodesicProjection_ERR_7104.Request="¾Þ§@ Geodesic §ë¼v";
+TopOpInGeodesicProjection_ERR_7104.Diagnostic="µLªkºIÂ_½u"; 
+TopOpInGeodesicProjection_ERR_7104.Advice="­×§ï¥b®|";
+//
+TopOpInGeodesicProjection_ERR_7105.Request="¾Þ§@ Geodesic §ë¼v";
+TopOpInGeodesicProjection_ERR_7105.Diagnostic="µLªk­pºâ"; 
+TopOpInGeodesicProjection_ERR_7105.Advice="";
+//
+TopOpInExtrapolUpTo_ERR_7106.Request="©µ¦ù½u¦Ü½u";
+TopOpInExtrapolUpTo_ERR_7106.Diagnostic="µLªk¨Ï¥Î©µ¦ù"; 
+TopOpInExtrapolUpTo_ERR_7106.Advice="";
+//
+TopOpInExtrapolUpTo_ERR_7107.Request="Operator Extrapolation Wire UpTo Wire";
+TopOpInExtrapolUpTo_ERR_7107.Diagnostic="The UpTo element selected is not a wire"; 
+TopOpInExtrapolUpTo_ERR_7107.Advice="Modify it";
+//
+TopOpInExtrapolUpTo_ERR_7108.Request="Operator Extrapolation Wire UpTo on support";
+TopOpInExtrapolUpTo_ERR_7108.Diagnostic="Extrapolation upto impossible because intersection between support and UpTo element isn't a wire"; 
+TopOpInExtrapolUpTo_ERR_7108.Advice="Modify the UpTo element";
+//
+TopOpInExtrapolWire_ERR_7109.Request="Operator Extrapolation Wire in tangency on support";
+TopOpInExtrapolWire_ERR_7109.Diagnostic="The operator does not find any solution"; 
+TopOpInExtrapolWire_ERR_7109.Advice="It may be due to tangent of curve which is not in tangent plane";
+//
+TopOpInExtrapolWire_ERR_7110.Request="Operator Extrapolation Wire in curvature up to plane";
+TopOpInExtrapolWire_ERR_7110.Diagnostic="The line tangent to curve at the extremity of initial curve doesn't intersect the target plane"; 
+TopOpInExtrapolWire_ERR_7110.Advice="Modify the UpTo plane";
+//
+TopOpInExtrapolWire_ERR_7111.Request="Operator Extrapolation Wire in curvature up to plane";
+TopOpInExtrapolWire_ERR_7111.Diagnostic="Degenerated situation:tangent situation between curve and plane"; 
+TopOpInExtrapolWire_ERR_7111.Advice="Modify the UpTo plane";
+//
+TopOpInExtrapolWire_ERR_7112.Request="Operator Extrapolation Wire ";
+TopOpInExtrapolWire_ERR_7112.Diagnostic="The length specified must be positive"; 
+TopOpInExtrapolWire_ERR_7112.Advice="Modify the length";
+//
+TopOpInExtrapolWire_ERR_7113.Request="Operator Extrapolation Wire ";
+TopOpInExtrapolWire_ERR_7113.Diagnostic="Probleme to get extremity after laid down operation"; 
+//
+//    internal
+//
+// same message as TopOpInSweep_Internal_ERR_7504
+TopOpIntSweepInternalError_ERR_7500="©ÝåN±½±°­­¨î: ¤º³¡¿ù»~ /p.";
+//
+TopOpIntSweepDegeneratedSurface_ERR_7501="©ÝåN±½±°­­¨î : ²£¥ÍµL¥Î¦±­±.";
+//
+TopOpIntSweepNullPointerSpine_ERR_7502.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpIntSweepNullPointerSpine_ERR_7502.Diagnostic="¯áÀ@½u«ü¼ÐµL®Ä."; 
+TopOpIntSweepNullPointerSpine_ERR_7502.Advice="½Ð¨Ï¥Î¦³®Ä¯áÀ@½u«ü¼Ð.";
+//
+TopOpIntSweepNullPointerGuide_ERR_7503.Request="±½±°©ÎÂ_­±²V¦¨¦±­±°Ê§@:";
+TopOpIntSweepNullPointerGuide_ERR_7503.Diagnostic="¾É¤Þ½u«ü¼ÐµL®Ä."; 
+TopOpIntSweepNullPointerGuide_ERR_7503.Advice="½Ð¨Ï¥Î¦³®Ä¾É¤Þ½u«ü¼Ð.";
+//
+//---------------------------------- For error filtering with diagnosis aid
+// same message as TopOpIntSweep_Internal_ERR_7500
+TopOpInSweepInternalError_ERR_7504="©ÝåN±½±°°Ê§@: ¤º³¡¿ù»~.";
+// same message as TopOpIntAllTopo
+TopOpInAllTopo_ERR_7505="©ÝåN°Ê§@ : ¤º³¡¿ù»~.";
+// same message as TopOpIntAllGeo
+TopOpInAllGeo_ERR_7506="©ÝåN°Ê§@: ´X¦ó¤º³¡¿ù»~.";
+// NLD220704
+TopOpInGeoCheck_ERR_7507="©ÝåN°Ê§@: ÀË¬d´X¦ó¸ê®Æ®Éµo¥Í¤º³¡¿ù»~";
+//
+//
+//
+// ©ÝåN Operators 7550-7599 (internal)
+//
+TopOpIntHybOpUnexpectedOperatorInput_ERR_7550.Request="©ÝåN°Ê§@:";
+TopOpIntHybOpUnexpectedOperatorInput_ERR_7550.Diagnostic="¦]µL®Äªº°Ê§@©Î¿é¤J¾É­P§@¥Î¨ú®ø.";
+TopOpIntHybOpUnexpectedOperatorInput_ERR_7550.Advice="½Ð­×§ï¦Ü¤Ö¤@¶µ¿é¤J.";
+//
+TopOpIntHybOpInvalidRunManagement_ERR_7551.Request="©ÝåN°Ê§@:";
+TopOpIntHybOpInvalidRunManagement_ERR_7551.Diagnostic="¦]µL®Äªº°õ¦æ¤è¦¡³B²z¾É­P§@¥Î¨ú®ø.";
+TopOpIntHybOpInvalidRunManagement_ERR_7551.Advice="°õ¦æ¤è¦¡µLªk©I¥s¤G¤§.";
+//
+TopOpIntHybOpInvalidGetResultManagement_ERR_7552.Request="©ÝåN°Ê§@:";
+TopOpIntHybOpInvalidGetResultManagement_ERR_7552.Diagnostic="¦]µL®Äªº¨ú±oµ²ªG¤è¦¡³B²z¾É­P§@¥Î¨ú®ø.";
+TopOpIntHybOpInvalidGetResultManagement_ERR_7552.Advice="°õ¦æ¤èªk¥²¶·¦b¨ú±oµ²ªG¤èªk¤§«e.";
+//
+TopOpIntHybOpInvalidConfigManagement_ERR_7553.Request="©ÝåN°Ê§@:";
+TopOpIntHybOpInvalidConfigManagement_ERR_7553.Diagnostic="¦]µL®Äªº³nÅé±ÂÅv¾É­P§@¥Î¨ú®ø.";
+TopOpIntHybOpInvalidConfigManagement_ERR_7553.Advice="½Ð§ó§ï¥Ø«e³nÅé²ÕºA.";
+//
+TopOpIntHybOpInvalidGetConfigManagement_ERR_7554.Request="©ÝåN°Ê§@:";
+TopOpIntHybOpInvalidGetConfigManagement_ERR_7554.Diagnostic="¦]µL®Äªº³nÅé±ÂÅv¨ú±o³B²z¾É­P§@¥Î¨ú®ø.";
+TopOpIntHybOpInvalidGetConfigManagement_ERR_7554.Advice="³]©w³nÅé±ÂÅv¥²¶·¦b¨ú±o³nÅé±ÂÅv¤§«e.";
+//
+TopOpIntHybOpInvalidAutoIntersectFace_ERR_7555.Request="©ÝåN°Ê§@:";
+TopOpIntHybOpInvalidAutoIntersectFace_ERR_7555.Diagnostic="¦]¦Û§Ú¬Û¥æªºµL®Ä­×°Å­±¾É­P§@¥Î¨ú®ø.";
+TopOpIntHybOpInvalidAutoIntersectFace_ERR_7555.Advice="½Ð­×§ï¿é¤J¥»Åé©Î¿é¤J¨Ó²£¥Í¥¦.";
+//
+TopOpIntHybOpInvalidEmptyDomain_ERR_7556.Request="©ÝåN°Ê§@:";
+TopOpIntHybOpInvalidEmptyDomain_ERR_7556.Diagnostic="¥»Åé§t¦³ªÅªº©w¸q.";
+TopOpIntHybOpInvalidEmptyDomain_ERR_7556.Advice="½Ð­×§ï¿é¤J¥»Åé©Î¿é¤J¨Ó²£¥Í¥¦.";
+//
+TopOpIntHybOpInvalidOrientationManagement_ERR_7557.Request="©ÝåN°Ê§@:";
+TopOpIntHybOpInvalidOrientationManagement_ERR_7557.Diagnostic="µ²ªG¥»ÅéµLªk¦p¿é¤J¥»Åé¯ë©w¤è¦V.";
+TopOpIntHybOpInvalidOrientationManagement_ERR_7557.Advice="½Ð­×§ï¿é¤J¥»Åé©Î¿é¤J¨Ó²£¥Í¥¦.";
+//
+TopOpIntHybOpInvalidAngleBetweenFaces_ERR_7558.Request="©ÝåN °Ê§@:";
+TopOpIntHybOpInvalidAngleBetweenFaces_ERR_7558.Diagnostic="¨¤«×¤£²Å¾É­P¤¤¤î°Ê§@.";
+TopOpIntHybOpInvalidAngleBetweenFaces_ERR_7558.Advice="½Ð­×§ï¿é¤J¥»Åé©Î©Ò»Ý¨¤«×.";
+//
+TopOpIntHybOpInvalidAngleBetweenEdges_ERR_7559.Request="©ÝåN °Ê§@:";
+TopOpIntHybOpInvalidAngleBetweenEdges_ERR_7559.Diagnostic="¦]Ãä¬É¤£¬Û¹ï©Ò»Ý¨¤«×¼Ð·Ç¥H­P¤¤¤î°Ê§@.";
+TopOpIntHybOpInvalidAngleBetweenEdges_ERR_7559.Advice="­×§ï¿é¤J¥»Åé©Î»Ý¨D¨¤«×.";
+//
+TopOpIntHybOpInvalidSplitTrimInput_ERR_7560.Request="©ÝåN °Ê§@:";
+TopOpIntHybOpInvalidSplitTrimInput_ERR_7560.Diagnostic="¿é¤J¥»Åé¶¡¥¼¬Û¥æ¥H­P¤À³Î©Mµô°Å°Ê§@¥¢±Ñ.";
+TopOpIntHybOpInvalidSplitTrimInput_ERR_7560.Advice="­×§ï¿é¤J¥»Åé.";
+//
+TopOpIntHybOpInvalidTrimOrientation_ERR_7561.Request="©ÝåN °Ê§@:";
+TopOpIntHybOpInvalidTrimOrientation_ERR_7561.Diagnostic="µ²ªG¥»ÅéµLªk¦p¿é¤J¥»Åé©w¦ì.";
+TopOpIntHybOpInvalidTrimOrientation_ERR_7561.Advice="­×§ï¥»Åé©Î¤À¶}À|¸Õ¨C¤@­Ó©w¸q¦p¥¼³s±µ®É.";
+//
+// NLD081004
+TopOpInHybOpNullWireComputed_ERR_7562.Request="Topological Operator:";
+TopOpInHybOpNullWireComputed_ERR_7562.Diagnostic="The resulting wire has no edge.";
+TopOpInHybOpNullWireComputed_ERR_7562.Advice="Modify the input to ensure a correct wire relimitation.";
+//
+// NLD081004
+TopOpInHybOpNullEdgeInComputedWire_ERR_7563.Request="Topological Operator:";
+TopOpInHybOpNullEdgeInComputedWire_ERR_7563.Diagnostic="The resulting wire has a null edge.";
+TopOpInHybOpNullEdgeInComputedWire_ERR_7563.Advice="Modify the input to ensure a correct wire relimitation.";
+// JSX211204
+TopOpInHybOpTooLowCGMLevelForOption_ERR_7564.Request="Topological Operator:";
+TopOpInHybOpTooLowCGMLevelForOption_ERR_7564.Diagnostic="Some options are only available with the last version.";
+TopOpInHybOpTooLowCGMLevelForOption_ERR_7564.Advice="Upgrade the operator.";
+//
+//
+//Operator Wrap -Surface / Wrap Curve Blend (7600-7620)
+//
+TopOpInWrapSurfaceNoProjectionOnReferenceSurface_ERR_7600.Request="±²¦±¦±­±°Ê§@:";
+TopOpInWrapSurfaceNoProjectionOnReferenceSurface_ERR_7600.Diagnostic="­nÅÜ§Îªº¥»ÅéµLªk§¹¥þ§ë¼v¦Ü°Ñ¦Ò¦±­±¤W.";
+TopOpInWrapSurfaceNoProjectionOnReferenceSurface_ERR_7600.Advice="©µ¦ù°Ñ¦Ò©Î¥Ø¼Ð¦±­±.";
+//
+//
+TopOpInWrapCurveBadProjectionsOnReferenceSpine_ERR_7601.Request="±²¦±¦±½u°Ê§@:";
+TopOpInWrapCurveBadProjectionsOnReferenceSpine_ERR_7601.Diagnostic="­nÅÜ§Îªº¥»Åé¤£¬O§¹¥þªº¦b¶³§Î½uªº³W«h¾Fªñ°¼¤º.";
+TopOpInWrapCurveBadProjectionsOnReferenceSpine_ERR_7601.Advice="¿ï¾Ü¸û¤p¦±²vªº¯á´Õ½u.";
+//
+//
+TopOpInWrapSurfaceBadProjectionsOnReferenceSurface_ERR_7602.Request="±²¦±¦±­±°Ê§@:";
+TopOpInWrapSurfaceBadProjectionsOnReferenceSurface_ERR_7602.Diagnostic="­nÅÜ§Îªº¥»Åé¤£¬O§¹¥þªº¦b°Ñ¦Ò¦±­±ªº³W«h¾FªñÃä¤º.";
+TopOpInWrapSurfaceBadProjectionsOnReferenceSurface_ERR_7602.Advice="¿ï¾Ü¸û¤p¦±²vªº°Ñ¦Ò¦±­±.";
+//
+//
+TopOpInWrapCurveBadReparametrizationBySpine_ERR_7603.Request="±²¦±¦±½u°Ê§@:";
+TopOpInWrapCurveBadReparametrizationBySpine_ERR_7603.Diagnostic="°Ñ¦Ò©Î¥Ø¼Ð¦±½uµLªk¥H¶³§Î½u°Ñ¼Æ¤Æ.";
+TopOpInWrapCurveBadReparametrizationBySpine_ERR_7603.Advice="¿ï¾Ü¸û¤p¦±²vªº°Ñ¦Ò¦±½u.";
+//
+TopOpInWrapSurfaceTrimmedReferenceSurface_ERR_7604.Request="Wrap Surface Operator:";
+TopOpInWrapSurfaceTrimmedReferenceSurface_ERR_7604.Diagnostic="The trimmed reference surface differs from his underlying surface.";
+TopOpInWrapSurfaceTrimmedReferenceSurface_ERR_7604.Advice="Create another underlying surface.";
+//
+//
+TopOpInWrapSurfaceTrimmedTargetSurface_ERR_7605.Request="Wrap Surface Operator:";
+TopOpInWrapSurfaceTrimmedTargetSurface_ERR_7605.Diagnostic="The trimmed target surface differs from his underlying surface.";
+TopOpInWrapSurfaceTrimmedTargetSurface_ERR_7605.Advice="Create another underlying surface.";
+//
+//Operator Variable Offset (7630-7650)
+//
+TopOpInVarOffUnderDefined_ERR_7630.Request="ÅÜ¤Æ°¾²¾°Ê§@:";
+TopOpInVarOffUnderDefined_ERR_7630.Diagnostic="ÅÜ¤Æ­­¨îÃä½u¥¼¦bºÝÂI
+³Q¤@¯ë­­¨î¨Ó©ë§ô.";
+TopOpInVarOffUnderDefined_ERR_7630.Advice="ÀË¬d©Ò¦³­­¨îÃä½uªº°_©l©Mµ²§ôÂI§¡§t¦³¤@¯ë­­¨î.";
+//
+TopOpInVarOffTearing_ERR_7631.Request="ÅÜ¤Æ°¾²¾°Ê§@:";
+TopOpInVarOffTearing_ERR_7631.Diagnostic="¨â³sÄò¦±½u³y¦¨¦±­±ÅÜ§Î.";
+TopOpInVarOffTearing_ERR_7631.Advice="½Ð¨Ï¥Î¬Û¦P¥b®|©ÎÅÜ¤Æ­È.";
+//
+TopOpInVarOffNoConst_ERR_7632.Request="ÅÜ¤Æ°¾²¾°Ê§@:";
+TopOpInVarOffNoConst_ERR_7632.Diagnostic="µL©T©w¼Æ­È.";
+TopOpInVarOffNoConst_ERR_7632.Advice="½ÐÀË¬d¬O§_¦³©T©w­­¨î.";
+//
+TopOpInVarOffConstNotUsed_ERR_7633.Request="ÅÜ¤Æ°¾²¾°Ê§@:";
+TopOpInVarOffConstNotUsed_ERR_7633.Diagnostic="¥¼¨Ï¥Î±`¼Æ°¾²¾.";
+TopOpInVarOffConstNotUsed_ERR_7633.Advice="½ÐÀË¬d±`¼Æ°¾²¾¬O§_¦³®Ä.";
+//
+TopOpInVarOffHighVariation_ERR_7634.Request="ÅÜ¤Æ°¾²¾°Ê§@:";
+TopOpInVarOffHighVariation_ERR_7634.Diagnostic="Äµ§i : °¾²¾¼Æ­Èªº°ªÅÜ²§.";
+TopOpInVarOffHighVariation_ERR_7634.Advice="¦p»Ý­n, ­×§ï¿é¤J°¾²¾­È.";
+//
+TopOpInVarOffJoinFailure_ERR_7635.Request="ÅÜ¤Æ°¾²¾°Ê§@:";
+TopOpInVarOffJoinFailure_ERR_7635.Diagnostic="Äµ§i : ³s±µ¥¢±Ñ. µ²ªG¤º¥u¦³ÅÜ¤Æ°Ï°ì.";
+TopOpInVarOffJoinFailure_ERR_7635.Advice="";
+//
+TopOpInVarOffWrongConstraintWire_ERR_7636.Request="ÅÜ¤Æ°¾²¾°Ê§@:";
+TopOpInVarOffWrongConstraintWire_ERR_7636.Diagnostic="½u¥¼ª½±µ¥ÑÅÜ¤Æ¦±°ì¦Ó¨Ó.";
+TopOpInVarOffWrongConstraintWire_ERR_7636.Advice="¥ÑÅÜ¤Æ°Ï°ìµÑ¨ú·s©ë§ô½u.";
+//
+TopOpInVarOffSkinsOverlap_ERR_7637.Request="Variable Offset operator:";
+TopOpInVarOffSkinsOverlap_ERR_7637.Diagnostic="Some skins to offset overlap.";
+TopOpInVarOffSkinsOverlap_ERR_7637.Advice="Cut out the overlaping skins.";
+//
+TopOpInVarOffSmoothBetweenConstantAreas_ERR_7638.Request="Variable Offset operator:";
+TopOpInVarOffSmoothBetweenConstantAreas_ERR_7638.Diagnostic="Smooth edges split constant areas.";
+TopOpInVarOffSmoothBetweenConstantAreas_ERR_7638.Advice="Cut out differently the base surface.";
+//
+TopOpInVarOffFadingBetweenConstantAreas_ERR_7639.Request="Variable Offset operator:";
+TopOpInVarOffFadingBetweenConstantAreas_ERR_7639.Diagnostic="Locally smooth (fading) edges split constant areas.";
+TopOpInVarOffFadingBetweenConstantAreas_ERR_7639.Advice="Cut out differently the base surface.";
+//
+//----------------------------------internal error
+TopOpIntBoundaryWireNotClosed_ERR_7640="Ãä¬É°Ê§@: ¤º³¡¿ù»~ /p.";
+//
+TopOpIntVarOff_ERR_7641="ÅÜ¤Æ°¾²¾°Ê§@: ¤º³¡¿ù»~ /p.";
+//
+TopOpIntVarOff_SewingFailed_ERR_7642.Request="ÅÜ¤Æ°¾²¾°Ê§@:";
+TopOpIntVarOff_SewingFailed_ERR_7642.Diagnostic="³¡¥÷¥»Åé¥¼¨Ìªþ¦b°ò¥»¦±­±¤W.";
+TopOpIntVarOff_SewingFailed_ERR_7642.Advice="­×§ï¥¦¨Ï±oÃä¬É¨Ìªþ¦b°ò¥»¦±­±¤W.";
+//
+TopOpIntVarOffNoSurface_ERR_7643.Request="Variable Offset operator:";
+TopOpIntVarOffNoSurface_ERR_7643.Diagnostic="No surface is selected.";
+TopOpIntVarOffNoSurface_ERR_7643.Advice="Select a surface to offset.";
+//
+TopOpIntVarOffAllOffsetsFail_ERR_7644.Request="Variable Offset operator:";
+TopOpIntVarOffAllOffsetsFail_ERR_7644.Diagnostic="All offsets fail.";
+TopOpIntVarOffAllOffsetsFail_ERR_7644.Advice="Try with lower offset values.";
+//
+TopOpIntVarOffSomeOffsetsFail_ERR_7645.Request="Variable Offset operator:";
+TopOpIntVarOffSomeOffsetsFail_ERR_7645.Diagnostic="Update problem, some offsets fail.";
+TopOpIntVarOffSomeOffsetsFail_ERR_7645.Advice="Clean the selection of the sub-elements to remove, or make a new variable offset.";
+//
+TopOpIntVarOffNotFromBoundary_ERR_7646.Request="Variable Offset operator:";
+TopOpIntVarOffNotFromBoundary_ERR_7646.Diagnostic="The wire doesn't come from the boundary of a variable area.";
+TopOpIntVarOffNotFromBoundary_ERR_7646.Advice="To create a wire, make an Extract of the boudary of a variable area.";
+//
+TopOpInVarOffWeaklySharpBetweenConstantAreas_ERR_7647.Request="Variable Offset operator:";
+TopOpInVarOffWeaklySharpBetweenConstantAreas_ERR_7647.Diagnostic="Weakly sharp edges split constant areas.";
+TopOpInVarOffWeaklySharpBetweenConstantAreas_ERR_7647.Advice="Cut out differently the base surface.";
+//
+TopOpInVarOffUpdateFails_ERR_7648.Request="Variable Offset operator:";
+TopOpInVarOffUpdateFails_ERR_7648.Diagnostic="Some offsets of sub-parts fail.";
+TopOpInVarOffUpdateFails_ERR_7648.Advice="Clear the selection of sub-elements to remove. Then run the variable offset operator.";
+//
+TopOpInVarOffMultiDomainsWire_ERR_7649.Request="Variable Offset operator:";
+TopOpInVarOffMultiDomainsWire_ERR_7649.Diagnostic="The wire has many domains.";
+TopOpInVarOffMultiDomainsWire_ERR_7649.Advice="Split the wire in mono domain wires.";
+//
+TopOpInVarOffWireOnTwoShells_ERR_7650.Request="Variable Offset operator:";
+TopOpInVarOffWireOnTwoShells_ERR_7650.Diagnostic="The wire lies on two variable areas.";
+TopOpInVarOffWireOnTwoShells_ERR_7650.Advice="Split the wire in wires for each variable area.";
+//
+TopOpInVarOffWireTooCloseToBoundary_ERR_7651.Request="Variable Offset operator:";
+TopOpInVarOffWireTooCloseToBoundary_ERR_7651.Diagnostic="The wire is too close to the boundary of a variable area.";
+TopOpInVarOffWireTooCloseToBoundary_ERR_7651.Advice="Supress the part too close to the boundary.";
+//
+TopOpInVarOffWireNotG1_ERR_7652.Request="Variable Offset operator:";
+TopOpInVarOffWireNotG1_ERR_7652.Diagnostic="The wire is not continuous in tangence.";
+TopOpInVarOffWireNotG1_ERR_7652.Advice="Split the wire in continuous in tangence wires";
+//
+TopOpInVarOffWireOnNoShell_ERR_7653.Request="Variable Offset operator:";
+TopOpInVarOffWireOnNoShell_ERR_7653.Diagnostic="The wire lies on no variable area.";
+TopOpInVarOffWireOnNoShell_ERR_7653.Advice="Check your inputs.";
+//
+TopOpInVarOffIncompatibleValues_ERR_7654.Request="Variable Offset operator:";
+TopOpInVarOffIncompatibleValues_ERR_7654.Diagnostic="The offset values are incompatible. They must be equal.";
+TopOpInVarOffIncompatibleValues_ERR_7654.Advice="Modify the offset value of the medium curve.";
+//
+TopOpInVarOffNotG1WireContact_ERR_7655.Request="Variable Offset operator:";
+TopOpInVarOffNotG1WireContact_ERR_7655.Diagnostic="The medium curves are not continuous in tangence in their contact points.";
+TopOpInVarOffNotG1WireContact_ERR_7655.Advice="Modify their shape in their contact points.";
+//
+TopOpInVarOffPartiallyLies_ERR_7656.Request="Variable Offset operator:";
+TopOpInVarOffPartiallyLies_ERR_7656.Diagnostic="The medium curve lies partially on the variable area.";
+TopOpInVarOffPartiallyLies_ERR_7656.Advice="Use the option 'geometrie on support' or make a projection.";
+//
+//
+//
+//Operator Unfold (7660-7670) and also some generals
+//
+TopOpInTearingLeadsToNonConnexResult_ERR_7660.Request="®i¶}°Ê§@:";
+TopOpInTearingLeadsToNonConnexResult_ERR_7660.Diagnostic="»Ý­n Tearing, ¦ý±N·|¾É­P¥¼³s±µµ²ªG.";
+TopOpInTearingLeadsToNonConnexResult_ERR_7660.Advice="½Ð­×§ï¿é¤J¥»Åé.";
+//
+TopOpInImpossibleEdgeToTearSelection_ERR_7661.Request="®i¶}°Ê§@:";
+TopOpInImpossibleEdgeToTearSelection_ERR_7661.Diagnostic="¥i¯à¨Ï¥Î³¡¥÷Ãä½u¨Ó tearing.";
+TopOpInImpossibleEdgeToTearSelection_ERR_7661.Advice="½Ð­×§ï©Ò¿ïÃä½u¨Ó tear.";
+//
+TopOpInNonConnexResult_ERR_7662.Request="©ÝåN°Ê§@:";
+TopOpInNonConnexResult_ERR_7662.Diagnostic="±N·|¾É­P¥¼³s±µµ²ªG.";
+TopOpInNonConnexResult_ERR_7662.Advice="½Ð­×§ï¿é¤J.";
+//
+TopOpInAmbiguousSituation_ERR_7663.Request="©ÝåN°Ê§@:";
+TopOpInAmbiguousSituation_ERR_7663.Diagnostic="¿é¤JµL®Ä.";
+TopOpInAmbiguousSituation_ERR_7663.Advice="½Ð­×§ï¿é¤J.";
+//
+TopOpInSurfaceUnfoldImpossible_ERR_7664.Request="®i¶}°Ê§@:";
+TopOpInSurfaceUnfoldImpossible_ERR_7664.Diagnostic="µLªk®i¶}©Ò¦³¦±­±.";
+TopOpInSurfaceUnfoldImpossible_ERR_7664.Advice="½ÐÀË¬d¿é¤J¦±­±.";
+//
+TopOpInNonConnexLaidOn_ERR_7665.Request="®i¶} + Âà´«°Ê§@:";
+TopOpInNonConnexLaidOn_ERR_7665.Diagnostic="¿é¤J¥»Åé¤£³sÄò.";
+TopOpInNonConnexLaidOn_ERR_7665.Advice="­×§ïÂà´«¥»Åé.";
+//
+
+
+//
+//Operator UnFoldedAeroOperator (6900-6949)
+//
+TopOpInUnFoldedAero_ERR_6900.Request="UnFoldedAero °Ê§@ :";
+TopOpInUnFoldedAero_ERR_6900.Diagnostic=" UnFoldedAero °Ê§@µo¥Í¿ù»~.";
+TopOpInUnFoldedAero_ERR_6900.Advice=" UnFoldedAero °Ê§@µo¥Í¿ù»~ : ­×§ï°Ñ¼Æ¼Æ­È.";
+//
+TopOpInUnFoldedAero_ERR_6901.Request="UnFoldedAero °Ê§@ :";
+TopOpInUnFoldedAero_ERR_6901.Diagnostic="µ²ªG¤Ö§t¦³¤@­Ó§á¦±½u.";
+TopOpInUnFoldedAero_ERR_6901.Advice="´î¤Ö°Ñ¼Æ­È©Î´î¤Ö¦±­±ÅÜ§Î.";
+//
+TopOpInUnFoldedAero_ERR_6902.Request="UnFoldedAero °Ê§@ :";
+TopOpInUnFoldedAero_ERR_6902.Diagnostic="RefCurve bad ©w¸q : °Ï°ì¼Æ¶q¤£µ¥©ó 1.";
+TopOpInUnFoldedAero_ERR_6902.Advice="°Ï°ì¼Æ¶q¥²¶·µ¥©ó 1.";
+//
+TopOpInUnFoldedAero_ERR_6903.Request="UnFoldedAero °Ê§@ :";
+TopOpInUnFoldedAero_ERR_6903.Diagnostic="RefCurve bad ©w¸q : ¦bºP¦X©M®i¶}ªº RefCurves Ãä¬É¼Æ¥Ø¤£¬Ûµ¥.";
+TopOpInUnFoldedAero_ERR_6903.Advice="ºP¦X©M®i¶}ªº RefCurves Ãä¬É¼Æ¥Ø¶·¬Ûµ¥.";
+//
+TopOpInUnFoldedAero_ERR_6904.Request="UnFoldedAero °Ê§@ :";
+TopOpInUnFoldedAero_ERR_6904.Diagnostic="RefCurve bad ©w¸q : ÀË¬d null pointer.";
+TopOpInUnFoldedAero_ERR_6904.Advice="ÀË¬d null pointer.";
+//
+TopOpInUnFoldedAero_ERR_6905.Request="UnFoldedAero °Ê§@ :";
+TopOpInUnFoldedAero_ERR_6905.Diagnostic="ÀË¬d®Éµo¥Í¿ù»~.";
+TopOpInUnFoldedAero_ERR_6905.Advice="½ÐÀË¬d©Ò¿é¤Jªº¶¶±µ¤Á½u.";
+//
+TopOpInUnFoldedAero_ERR_6906.Request="UnFoldedAero °Ê§@ :";
+TopOpInUnFoldedAero_ERR_6906.Diagnostic="RefCurves bad ©w¸q : ºP¦X©M®i¶}ªº RefCurves ¹ï¬M¤£¤@­P.";
+TopOpInUnFoldedAero_ERR_6906.Advice="ºP¦X©M®i¶}ªº RefCurves ¹ï¬M¥²¶·¤@­P.";
+//
+TopOpInUnFoldedAero_ERR_6907.Request="UnFoldedAero °Ê§@ :";
+TopOpInUnFoldedAero_ERR_6907.Diagnostic="RefCurve bad ©w¸q : ¶¶±µ¤Á½u¤º³¡¬Û¤Á¤£³sÄò.";
+TopOpInUnFoldedAero_ERR_6907.Advice="¶¶±µ¤Á½u¤º³¡¬Û¤Á¥²¶·³sÄò.";
+//
+TopOpInUnFoldedAero_ERR_6908.Request="UnFoldedAero operator :";
+TopOpInUnFoldedAero_ERR_6908.Diagnostic="Size inconsistency between the two support shells : Check the compatibility of the different shells.";
+TopOpInUnFoldedAero_ERR_6908.Advice="Check the compatibility of the different shells.";
+//
+//
+TopOpInUnFoldedAero_ERR_6909.Request="UnFoldedAero operator :";
+TopOpInUnFoldedAero_ERR_6909.Diagnostic="Spine curve bad definition : Check the length compatibility of the different wire.";
+TopOpInUnFoldedAero_ERR_6909.Advice="The wire to transform can not be projected on the spine curve";
+//
+//Operator Regul Offset (6950-6974)
+//
+TopOpInRegulOffsetDeviation_ERR_6950.Request="Smoothed Offset operator :";
+TopOpInRegulOffsetDeviation_ERR_6950.Diagnostic="Input deviation has not been respected.";
+TopOpInRegulOffsetDeviation_ERR_6950.Advice="Try to increase input deviation.";
+//
+TopOpInRegulOffsetFacesAdj_ERR_6951.Request="Smoothed Offset operator :";
+TopOpInRegulOffsetFacesAdj_ERR_6951.Diagnostic="Cannot regularize two (or more than two) adjacent faces";
+TopOpInRegulOffsetFacesAdj_ERR_6951.Advice="Try to change inputs.";
+//
+TopOpInRegulOffsetFailure_ERR_6952.Request="Smoothed Offset operator :";
+TopOpInRegulOffsetFailure_ERR_6952.Diagnostic="Cannot regularize some faces";
+TopOpInRegulOffsetFailure_ERR_6952.Advice="Try to change inputs.";
+//Operator CATBodyChecker (Messages only)
+//
+TopOpIntBodyCheckInvalidCurvatureCurve_MSG = "µo²{µL®Ä¦±²v¥b®| = /p1  <= ¥i¤¹³\ [/p2] 
+¦b¦±½u°Ñ¼Æ = (Arc=/p3, Param=/p4)";
+TopOpIntBodyCheckInvalidCurvatureSurface_MSG = "µo²{µL®Ä¦±²v¥b®| = /p1  <= ¥i¤¹³\ [/p2] 
+¦b¦±­±°Ñ¼Æ = (PatchU=/p3, ParamU=/p4; PatchV=/p5, ParamV=/p6)";
+TopOpIntBodyCheckSelfIntersectionShell_MSG = "µo²{¦Û§Ú¬Û¥æÁ¡´ß: /p1_/p2";
+
+//
+//Operator FrFShellUnfold (7671-7680) : by SUH, 2004:12:30
+//
+TopOpInFrFSUDegenSurface_ERR_7671.Request="Free Form Unfold Operator:";
+TopOpInFrFSUDegenSurface_ERR_7671.Diagnostic="Some of the Faces have partly or fully degenerated geometry.";
+TopOpInFrFSUDegenSurface_ERR_7671.Advice="Modify the input body.";
+//
+TopOpInFrFSUInvalidSkin_ERR_7672.Request="Free Form Unfold Operator:";
+TopOpInFrFSUInvalidSkin_ERR_7672.Diagnostic="Invalid Input Skin: The skin should be mono-domain, manifold and connex.";
+TopOpInFrFSUInvalidSkin_ERR_7672.Advice="Modify the input body.";
+//
+TopOpInFrFSUClosedSharpCorner_ERR_7673.Request="Free Form Unfold Operator:";
+TopOpInFrFSUClosedSharpCorner_ERR_7673.Diagnostic="Invalid Input Skin: Either the skin is closed or some of the closed corners are sharp; this may lead to huge distortion, hence rejected.";
+TopOpInFrFSUClosedSharpCorner_ERR_7673.Advice="Modify the input body.";
+//
+TopOpInFrFSUTooSmallFeatures_WNG_7674.Request="Free Form Unfold Operator:";
+TopOpInFrFSUTooSmallFeatures_WNG_7674.Diagnostic="The input skin contains some edges or faces, which are comparatively too small. These may remain under-represented in the flattened result.";
+TopOpInFrFSUTooSmallFeatures_WNG_7674.Advice="If the result is not acceptable, modify the input skin.";
+//
+TopOpInFrFSUSelfIntersectingResult_ERR_7675.Request="Free Form Unfold Operator:";
+TopOpInFrFSUSelfIntersectingResult_ERR_7675.Diagnostic="Invalid Result: The flattened skin has self-intersecting boundary, hence rejected.";
+TopOpInFrFSUSelfIntersectingResult_ERR_7675.Advice="Modify the input body.";
+//
+//
+TopOpInFrFSUDeviationDueToClean_WNG_7676="Free Form Unfold Operator: The transferred curves may be quite distorted due to automatic healing.";
+//
+// Operator EdgePropagate (8000-8050)
+//
+//
+TopOpIntRefFaceNeeded_ERR_8000.Request="Edge Propagation Operator:";
+TopOpIntRefFaceNeeded_ERR_8000.Diagnostic="A reference face is needed for propagation orientation because the initial edge is internal or
+is in a non manifold configuration.";
+TopOpIntRefFaceNeeded_ERR_8000.Advice="Select a reference face.";
+//
+TopOpIntInitialEdgeNotOnBorder_ERR_8001.Request="Edge Propagation Operator:";
+TopOpIntInitialEdgeNotOnBorder_ERR_8001.Diagnostic="In boundary mode , the initial edge must be on the boundary.";
+TopOpIntInitialEdgeNotOnBorder_ERR_8001.Advice="Select a initial edge on the boundary.";
+//
+// Fillet (...continuation )(8051-8100)
+//
+TopOpInFilletIntersection_ERR_8051.Request="Multi ribbon operator:";
+TopOpInFilletIntersection_ERR_8051.Diagnostic="There is at least one sharp vertex with more than two edges to fillet. 
+The only configuration allowed is a vertex with two edges to fillet.";
+TopOpInFilletIntersection_ERR_8051.Advice="Process the each edge in a separate operation.";
+//
+//
+TopOpInLimitingCannotBeDefined_ERR_8052.Request="Topological operator:";
+TopOpInLimitingCannotBeDefined_ERR_8052.Diagnostic="Limiting element cannot be defined correctly.";
+TopOpInLimitingCannotBeDefined_ERR_8052.Advice="Check that limiting element is not in a local smooth area.";
+//
+
+
+

@@ -1,0 +1,46 @@
+Title = "加工的方式";
+Title.LongHelp = "指定加工方式的參數.";
+
+MachiningTolerance = "加工精確度";
+MachiningTolerance.LongHelp = "指定理論和計算的刀具路徑之間的最大值允許的距離值.";
+
+FixtureAccuracy = "夾具的精準值";
+FixtureAccuracy.LongHelp = "指定應用於夾具的預留容差. 
+如果刀具和夾具間的距離小於夾具預留容差和精確值, 
+則此刀具位置將會被移除.反之若距離較大則保留此刀具位置.";
+
+TypeOfContour = "輪廓型式";
+TypeOfContour.LongHelp = "指定刀具路徑在轉角的形式: 
+- 圓弧: 刀具沿著轉角轉動, 路徑半徑等於刀具半徑 
+- 角度: 刀具不與轉角點保持接觸, 而是組合兩個線段
+- 最佳化: 刀具與轉角保持相切
+- 強迫圓弧: 路徑以線段組合成趨近的圓弧.";
+
+DirectionOfCut = "切削方向";
+DirectionOfCut.LongHelp = "指定如何銑製: 
+- 順銑: 
+  刀具的前緣 (在加工方向) 先切進材料
+- 逆銑:
+  刀具的後緣 (在加工方向) 先切進材料 ";
+
+GrooveMachiningDirection = "加工方向";
+GrooveMachiningDirection.LongHelp = "指定如何銑削: 
+- 上下銑削: 
+  由上至下銑削
+- 下上銑削:
+  由下至上銑削";
+
+GrooveAxialStrategy = "軸向方式";
+GrooveAxialStrategy.LongHelp = "指定如何銑削: 
+- 標準銑削: 
+  ..........................
+- 中間銑削: 
+  ..........................
+- 中間交替銑削: 
+  ..........................";
+
+Sequencing  = "順序";
+Sequencing.LongHelp  = "指定銑削順序:
+軸向: 先加工軸向再徑向
+徑向: 先加工徑向再軸向.";
+

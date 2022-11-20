@@ -1,0 +1,511 @@
+TPSRuleBaseName = "¤½®t³W«h°ò·Ç";
+// Attention le .Name est utilise par le reporting comme nom
+// du fichier HTML génér? Il faut donc éviter les caractères incompatibles
+// avec la syntaxe des noms de fichiers
+
+//------------------------------------------------------------------------ TTRS
+
+TPSRuleTTRSNotBuild.Name = "¥¼§ó·sªº¤½®t¯S¼x.";
+TPSRuleTTRSNotBuild.Help = "¨Ï¥ÎªÌ¦±­±©Î¤@²Õ¦±­±¤£¬O³Ì·sªº.";
+TPSRuleTTRSNotBuild.CorrectFunction = "½Ð§ó·s¦¹¹s¥ó©Î²£«~.";
+
+TPSRuleTTRSVisuMode.Name = "´X¦ó¤¸¯À¦bÅã¥Ü¼Ò¦¡.";
+TPSRuleTTRSVisuMode.Help = "À³¥Î¦b 3D ¼Ðµùªº¨Ï¥ÎªÌ¦±­±©Î¤@²Õ¦±­±¦Ü¤Ö¦³¤@­Ó¤À¥ó¬O¦bÅã¥Ü¼Ò¦¡. ¥u¦³¦b³]­p¼Ò¦¡¤~¥i°_°Ê¼Ðµù.";
+TPSRuleTTRSVisuMode.CorrectFunction = "±N¬ÛÃö¹s¥ó©Î²£«~¸m¤J³]­p¼Ò¦¡.";
+
+TPSRuleTTRSUnresolved.Name = "¥¼¸ü¤J´X¦ó¤¸¯À.";
+TPSRuleTTRSUnresolved.Help = "À³¥Î¦b 3D ¼Ðµùªº¨Ï¥ÎªÌ¦±­±©Î¤@²Õ¦±­±¦Ü¤Ö¦³¤@­Ó¤À¥ó¥¼¸ü¤J¤u§@¤¤. ¥u¦³¥ý¸ü¤J¤u§@¤~¥i°_°Ê¼Ðµù.";
+TPSRuleTTRSUnresolved.CorrectFunction = "¸ü¤J¬ÛÃö¹s¥ó¦Ü¤u§@¤¤.";
+
+TPSRuleTTRSInvalidComp.Name = "µL®Ä¤À¥ó.";
+TPSRuleTTRSInvalidComp.Help = "À³¥Î¦b 3D ¼Ðµùªº¤@²Õ¦±­±¦Ü¤Ö¦³¤@­Ó¤À¥ó¬OµL®Äªº.";
+TPSRuleTTRSInvalidComp.CorrectFunction = "½Ð¨Ï¥Î´X¦óºÞ²z©R¥O¨Ó­×§ï, §ó´À©Î²¾°£µL®Ä¤À¥ó.";
+
+TPSRuleTTRSDestroyedComp.Name = "§R°£´X¦ó¤À¥ó.";
+TPSRuleTTRSDestroyedComp.Help = "À³¥Î¦b 3D ¼Ðµùªº¨Ï¥ÎªÌ¦±­±¤§¤@¤À¥ó¤w³Q§R°£.";
+TPSRuleTTRSDestroyedComp.CorrectFunction = "½Ð¨Ï¥Î´X¦óºÞ²z©R¥O¨Ó§ó´À©Î²¾°£¤À¥ó.";
+
+TPSRuleTTRSModifClass.Name = "¼Æ¾Ç¤º®e§ó§ï.";
+TPSRuleTTRSModifClass.Help = "¨Ï¥ÎªÌ¦±­±©Î¤@²Õ¦±­±¤£¦A¦³¬Û¦Pªº¼Æ¾Ç¤º®e (¦p, ­ì¨Ó¬O¥­­±§Î¦¡²{§ï¬°¶ê¬W§Î¦¡¥B¤£¦A¥­¦æ, ...). ¦¹§ó§ï¨S¦³¦Û°Ê¦³®Ä¥BÀ³¸Ó¤£¤¹³\µo¥Í.";
+TPSRuleTTRSModifClass.CorrectFunction = "½Ð³sµ¸°â°Ó.";
+
+TPSRuleTTRSModifAssocCase.Name = "¬ÛÃöªº©w¦ì±¡§Î§ó§ï.";
+TPSRuleTTRSModifAssocCase.Help = "À³¥Î¦b 3D ¼Ðµùªº¨Ï¥ÎªÌ¦±­±©Î¤@²Õ¦±­±ªº¬ÛÃö¦ì¸m§ó§ï. ¦¹§ó§ï¨S¦³¦Û°Ê¦³®Ä¥BÀ³¸Ó¤£¤¹³\µo¥Í.";
+TPSRuleTTRSModifAssocCase.CorrectFunction = "½Ð³sµ¸°â°Ó.";
+
+TPSRuleTTRSModifAdmissibleType.Name = "¤@²Õ¦±­±§Î¦¡§ó§ï.";
+TPSRuleTTRSModifAdmissibleType.Help = "¤@²Õ¦±­±§Î¦¡§ó§ï (¦p, ¤@¸s¤Õ¤£¦A¬O¦P¤@¸s¤Õ, ©Î, ¤@¸s¼Ñ¤£¦A¬O¦P¤@¸s¼Ñ, ...).";
+TPSRuleTTRSModifAdmissibleType.CorrectFunction = "½Ð¨Ï¥Î´X¦óºÞ²z©R¥O¨Ó­×§ï, §ó´À©Î²¾°£¤@²Õ¦±­±ªº¤À¥ó.";
+
+TPSRuleTTRSModifSurfCanonicity.Name = "¦±­±§Î¦¡§ó§ï.";
+TPSRuleTTRSModifSurfCanonicity.Help = "¨Ï¥ÎªÌ¦±­±©Î¤@²Õ¦±­±¤£¦A¦³¬Û¦Pªº¼Æ¾Ç¤º®e (¦p, ¥­­±¤À¥ó¤£¦A¬O¥­­±§Î¦¡, ¶ê¬W¤À¥ó¤£¦A¬O¶ê¬W§Î¦¡¥B¨S¦³¬Ûµ¥¤Ø¤o, ©Î¤Õ¤£¦A¬Oªø¤è§Î, ...). ¦¹§ó§ï¨S¦³¦Û°Ê¦³®Ä¥BÀ³¸Ó¤£¤¹³\µo¥Í.";
+TPSRuleTTRSModifSurfCanonicity.CorrectFunction = "½Ð³sµ¸°â°Ó, ¦^³ø¬ÛÃö°ÝÃD.";
+
+TPSRuleTTRSModifFoS.Name = "¯S¼xªº¤Ø¤o¯S©Ê§ó§ï.";
+TPSRuleTTRSModifFoS.Help = "¨Ï¥ÎªÌ¦±­±©Î¤@²Õ¦±­±¤£¦A¦³¯S¼x¤Ø¤o (¦p, ¤@¸s¶ê¬W¤À¥ó¤£¦A¦³¬Ûµ¥¤Ø¤o, ¤@¸s¼Ñ¤À¥ó¤£¦A¦³¬Ûµ¥¤Ø¤o, ...). ¦¹§ó§ï¨S¦³¦Û°Ê¦³®Ä¥BÀ³¸Ó¤£¤¹³\µo¥Í.";
+TPSRuleTTRSModifFoS.CorrectFunction = "½Ð³sµ¸°â°Ó.";
+
+TPSRuleTTRSInvalidRepresented.Name = "µL®Ä´X¦óªí²{¯S¼x.";
+TPSRuleTTRSInvalidRepresented.Help = "¨Ï¥ÎªÌ¦±­±©Î¤@²Õ¦±­±ªº´X¦óªí²{¤è¦¡¤£¤@­P (¥¦¤£À³Âê©w¥ô¦ó¦Û¥Ñ«×).";
+TPSRuleTTRSInvalidRepresented.CorrectFunction = "½Ð­×§ï¯S©Ê©Î¦ì¸m¨Ó­×§ïªí²{¤è¦¡¨Ï±o´X¦ó»Pªí²{¤è¦¡¤@­P.";
+
+TPSRuleTTRSNotPresent.Name = "µL®Ä´X¦ó.";
+TPSRuleTTRSNotPresent.Help = "¨S¦³´X¦ó¤¸¯À»P¼Ðµù¬ÛÃö.";
+TPSRuleTTRSNotPresent.CorrectFunction = "½Ð§R°£¼Ðµù¨Ã·s«Ø¤@­Ó.";
+
+TPSRuleLeaderAssocNotConnected.Name = "¬ÛÃö½bÀY¥¼³s±µ";
+TPSRuleLeaderAssocNotConnected.Help  = "¬ÛÃö½bÀY¥¼«ü¦V°Ñ¦Ò´X¦ó";
+TPSRuleLeaderAssocNotConnected.CorrectFunction  = "§ó§ï¼Ðµù¦ì¸m¨Ó­«·s³s±µ½bÀY";
+
+TPSRuleTypeNotAllowedRegardingTTRS.Name = "¤½®t§Î¦¡©M´X¦ó¦@³q©Ê";
+TPSRuleTypeNotAllowedRegardingTTRS.Help  = "¤½®t§Î¦¡¤£¤¹³\¬ÛÃö´X¦ó";
+TPSRuleTypeNotAllowedRegardingTTRS.CorrectFunction  = "½s¿è¤½®t©Î´X¦ó";
+//----------------------------------------------------------------------- Datum
+
+TPSRuleDatumLabelUnicity.Name = "°ò·Ç­±¼ÐÅÒ°ß¤@©Ê";
+TPSRuleDatumLabelUnicity.Help = "°ò·Ç­±¼ÐÅÒ¦b¤½®t¸Ë¸m¤¤±N¬O°ß¤@ªº";
+TPSRuleDatumLabelUnicity.CorrectFunction = "½s¿è°ò·Ç­±¼ÐÅÒ";
+
+TPSRuleDatumUpperCase.Name = "°ò·Ç­±¼ÐÅÒ¤j¼g¦r¥À";
+TPSRuleDatumUpperCase.Help = "°ò·Ç­±¼ÐÅÒ±N§t¦³¤j¼g¦r¥À (¤j¼gªº) ";
+TPSRuleDatumUpperCase.CorrectFunction = "½s¿è°ò·Ç­±¼ÐÅÒ";
+
+TPSRuleDatumAuthorizedCharacter.Name = "±ÂÅv°ò·Ç­±¼ÐÅÒ¦r¥À";
+TPSRuleDatumAuthorizedCharacter.Help = "°ò·Ç­±¼ÐÅÒ¤£À³§t¦³¦r¥À I, O ©Î Q (¨Ì¾Ú ASME Y14.5M-1994 ¼Ð·Ç."; ) ";
+TPSRuleDatumAuthorizedCharacter.CorrectFunction = "½s¿è°ò·Ç­±¼ÐÅÒ";
+//En fait, cette règle correspond plus ?un conseil informatif qu'?une interdiction
+//Il faudra donc prévoir différents niveaux de règles
+
+TPSRuleDatumIdenticalCharacter.Name = "¬Û¦Pªº°ò·Ç­±¼ÐÅÒ¦r¥À";
+TPSRuleDatumIdenticalCharacter.Help = "°ò·Ç­±¼ÐÅÒÀ³¥Ñ¬Û¦Pªº¦r¥À¤ÏÂÐªº²Õ¦¨ (ISO) ";
+TPSRuleDatumIdenticalCharacter.CorrectFunction = "½s¿è°ò·Ç­±¼ÐÅÒ";
+
+TPSRuleDatumLabelLength.Name = "°ò·Ç­±¼ÐÅÒªø«×";
+TPSRuleDatumLabelLength.Help = "°ò·Ç­±¼ÐÅÒ¤£À³¥Ñ¶W¹L¤G­Ó¦r¥À²Õ¦¨ (ASME) ";
+TPSRuleDatumLabelLength.CorrectFunction = "½s¿è°ò·Ç­±¼ÐÅÒ";
+
+TPSRuleTargetsOfDatumStatus.Name ="°ò·Ç¥Ø¼Ð±¡§Î";
+TPSRuleTargetsOfDatumStatus.Help ="©Ò¦³¥Ø¼Ð§¡¦³®Ä®É°ò·Ç¤~¦³®Ä";
+TPSRuleTargetsOfDatumStatus.CorrectFunction = "½s¿è©Î­×§ï°ò·Ç¥Ø¼Ð¨Ï¨ä¦³®Ä";
+
+TPSRuleDatumPlane.Name = "°ò·Ç¬Wª¬©Î½ÆÂø";
+TPSRuleDatumPlane.Help = "°ò·Ç¥­­±À³¸Ó¬°½ÆÂø©Î¬Wª¬¦±­±°ò·Ç¯S¼x.";
+TPSRuleDatumPlane.CorrectFunction = "½s¿è©M³]©w¦¨°ò·Ç¥­­±.";
+
+//---------------------------------------------------------------------- Target
+
+TPSRuleTargetLabelUnicity.Name = "¥Ø¼Ð¼ÐÅÒ°ß¤@©Ê";
+TPSRuleTargetLabelUnicity.Help = "¦b¤½®t¶°¦X¤¤¥Ø¼Ð¼ÐÅÒ¥²¶·¬O³æ¤@ªº";
+TPSRuleTargetLabelUnicity.CorrectFunction = "½s¿è¥Ø¼Ð¼ÐÅÒ©M¥H¥¼¨Ï¥Îªº¼ÐÅÒ¨Ó§ó´«";
+
+TPSRuleTargetReference.Name = "¥Ø¼Ð¼ÐÅÒ°Ñ§ï©ó¤w¦s°ò·Ç¼ÐÅÒ";
+TPSRuleTargetReference.Help = "°ò·Ç¼ÐÅÒÀ³¸Ó°Ñ¦Ò¤w¦sªº°ò·Ç¼ÐÅÒ";
+TPSRuleTargetReference.CorrectFunction = "½s¿è°ò·Ç¼ÐÅÒ©MÀË¬d°ò·Ç¼ÐÅÒªº°Ñ¦Ò";
+
+TPSRuleTargetReferenceNonUnique.Name = "¥Ø¼Ð¼ÐÅÒ°Ñ§ï©ó°ß¤@°ò·Ç¼ÐÅÒ";
+TPSRuleTargetReferenceNonUnique.Help = "°ò·Ç¼ÐÅÒ¥²¶·°Ñ¦Ò°ß¤@ªº°ò·Ç¼ÐÅÒ";
+TPSRuleTargetReferenceNonUnique.CorrectFunction = "½s¿è°ò·Ç¼ÐÅÒ©MÀË¬d°ò·Ç¼ÐÅÒªº°Ñ¦Ò";
+
+TPSRuleTargetNumber.Name = "°ò·Ç¼ÐÅÒ¥H¥¿¼Æµ²§ô";
+TPSRuleTargetNumber.Help = "°ò·Ç¼ÐÅÒ¥²¶·¥H¥¿¼Æµ²§ô ";
+TPSRuleTargetNumber.CorrectFunction = "½s¿è©MÀË¬d°ò·Ç¼ÐÅÒ©R¦W ";
+
+TPSRuleTargetSequentialNumbers.Name = "´`§Ç°ò·Ç¥Ø¼Ð¼Æ¥Ø ";
+TPSRuleTargetSequentialNumbers.Help = "°ò·Ç¼ÐÅÒ©R¦W¥²¶·±q 1 ¶}©l¥B´`§Çº¥¶i";
+TPSRuleTargetSequentialNumbers.CorrectFunction = "ÀË¬d°ò·Ç¼ÐÅÒ©R¦W¬O§_±q 1 ¶}©l¥B´`§Çº¥¶i";
+
+TPSRuleTargetTolValue.Name = "°ò·Ç¼ÐÅÒ¤j¤p";
+TPSRuleTargetTolValue.Help = "°ò·Ç¼ÐÅÒ¤j¤p¥²¶·¬Oµ´¹ï¥¿¼Æ.";
+TPSRuleTargetTolValue.CorrectFunction = "½s¿è°ò·Ç¥Ø¼Ð©M³]©w¥¿½T¤j¤p";
+
+TPSRuleTargetGeomIncludedInDatum.Name = "¤º§t°ò·Çªº°ò·Ç¼ÐÅÒ";
+TPSRuleTargetGeomIncludedInDatum.Help = "°ò·Ç¼ÐÅÒ´X¦ó¥²¶·§¹¥þ¥]¬A¦b°ò·Ç´X¦ó¤¤.";
+TPSRuleTargetGeomIncludedInDatum.CorrectFunction = "½s¿è©Î²¾°Ê°ò·Ç¼ÐÅÒ.";
+
+//------------------------------------------------------------- Reference Frame
+
+TPSRuleRefFrameLabelUnicity.Name = "°ò·Ç°Ñ¦Ò®Ø¼Ð¥Ü°ß¤@©Ê";
+TPSRuleRefFrameLabelUnicity.Help = "°ò·Ç°Ñ¦Ò®Ø¼Ð¥Ü¦b¤½®t¶°¤¤¥²¶·¬O°ß¤@";
+TPSRuleRefFrameLabelUnicity.CorrectFunction = "½s¿è°Ñ¦Ò®Ø";
+
+TPSRuleDatumsOfRefFrameExist.Name = "°ò·Ç°Ñ¦Ò®Ø°Ñ§ï©ó¤w¦s°ò·Ç";
+TPSRuleDatumsOfRefFrameExist.Help = "°ò·Ç°Ñ¦Ò®Ø¥²¶·°Ñ§ï¤w¦s°ò·Ç";
+TPSRuleDatumsOfRefFrameExist.CorrectFunction = "½s¿è°ò·Ç°Ñ¦Ò®Ø©M²¾°£";
+
+TPSRuleDatumsOfRefFrameStatus.Name = "°ò·Ç±¡§Î";
+TPSRuleDatumsOfRefFrameStatus.Help = "°ò·Ç°Ñ¦Ò®Øªº©Ò¦³°ò·Ç¦³®Ä¥¦¤~¦³®Ä";
+TPSRuleDatumsOfRefFrameStatus.CorrectFunction = "½s¿è°ò·Ç¨Ï¥¦­Ì¦³®Ä";
+
+//------------------------------------------------------ Geometrical Tolerances
+
+TPSRuleGDTPlnConsist.Name = "¥­­±»P´X¦ó¶¡ªº¤@­P©Ê";
+TPSRuleGDTPlnConsist.Help = "¥­­±³W®æ¥²¶·À³¥Î¦b¥­­±§Î¦¡ªº¦±­±";
+TPSRuleGDTPlnConsist.CorrectFunction = "½Ð«ü©w¥¿½Tªº§Îª¬¤½®t";
+
+TPSRuleGDTTolValue.Name = "¥¿¤½®t­È";
+TPSRuleGDTTolValue.Help = "- ¤½®t­È¥²¶·¬Oµ´¹ï¥¿­È, °£¤F·í«ü©w MMC ©M LMC ¾Þ§@¤l³Q«ü©w®É, ¤½®t­È¥i¥H¬OµL®Äªº.";
+TPSRuleGDTTolValue.CorrectFunction = "½s¿è GDT ©M¥¿½T³]©w¤½®t­È";
+
+//Trois points sont vérifiés dans la TPSRuleGDTTolValue . Pour la granularit?prévoir 3 entités différentes :
+//TPSRuleGDTTolValue pour la vérification de positive value
+
+TPSRuleGDTTolValueNull.Name = "¨Ï¥ÎµL®Ä¤½®t­È";
+TPSRuleGDTTolValueNull.Help = " ¤½®t­È¥²¬OµL®Äªº, °£¤F·í«ü©w MMC ©M LMC ¾Þ§@¤l³Q«ü©w®É. ";
+TPSRuleGDTTolValueNull.CorrectFunction = "¬°µL®Äªº¤½®t­È«ü©w MMC ©M LMC, ©Î¤£»Ý­n­×§ï­È®É­×§ï¤½®t­È. ";
+
+TPSRuleGDTTolValueRestrict.Name = "¤½®t¼Æ­È½d³ò";
+TPSRuleGDTTolValueRestrict.Help = "¹ï²Õ¦X³W®æ¦Ó¨¥, ²Ä¤G­Ó¼Æ­È¥²¶·¤p©ó²Ä¤@­Ó¼Æ­È ";
+TPSRuleGDTTolValueRestrict.CorrectFunction = "¦b²Õ¦X GDT ¤¤, ³]©w²Ä¤G­Ó¼Æ­È¤p©ó²Ä¤@­Ó¼Æ­È";
+
+TPSRuleGDTTolElemModifiers.Name = "¦b¤½®t¤¸¯À¤W©w¸q­×§ï¦]¤l";
+TPSRuleGDTTolElemModifiers.Help = "¹ï¤½®t¤¸¯À, ¦pªG¬O§Î¦¡¤½®t, ¥u¯à¦³¤@­Ó­×§ï¦]¤l©M¥¦¥²¶·¬O¦Û¥Ñª¬ºA²Å¸¹ (¹ï©Ò¦³§Î¦¡¤½®t) ©Î³Ì¤j§Î¦¡²Å¸¹ (¥u¹ï¹Ï¼Ë, ½u©Ê¥~§Î©M¥­­±§Î¦¡¤½®t). ¦pªG¬O¦ì¸m¤½®t, ©Ò¦³­×§ï¦]¤l (¦P®É¦h­Ó) ¥H¤U¦C­­¨î©Ó»{ : ¥u¦³¤@­Ó²Å¸¹ S M ©Î L(ASME) ·|¥X²{¦b¤½®t­È°¼©M¦pªG¦³¼Æ­Ó­×§ï¹Bºâ¤lÀ³¸Ó¦b²Ä¤@¦ì¸m . ¦Û¥Ñª¬ºA²Å¸¹ (¦pªG¦³¤@­Ó) ¥²¶·¦b P ¤§«e (¦pªG¦³¤@­Ó).
+¹ï°Ñ¦Ò¤¸¯Àªº­×§ï¹Bºâ¦]¤l, ¥¦¥²¶·¬O°ß¤@¥B¥u¯à¬O S( ¥u¦³ ASME ), M ©Î L";
+TPSRuleGDTTolElemModifiers.CorrectFunction = "½s¿è GDT ©M­×§ï­×§ï¦]¤l";
+
+//Sept points sont vérifiés dans la TPSRuleGDTTolElemModifiers. Pour la granularit? prévoir 6 régles suplémentaires
+//TPSRuleGDTTolElemModifiers pour any form specification, the Free State Symbol may be applied and specified alone
+
+//TPSRuleGDTTolElemFormModifier.Name = "maximum//least material condition application on form specification. ";
+//TPSRuleGDTTolElemFormModifier.Help = " For any Form specification, such as linear profile, planar and position specifications, the Maximum Material Condition (MMC) may be applied and specified alone. ";
+//TPSRuleGDTTolElemFormModifier.CorrectFunction = " Apply and specify alone the Maximum/Least Material Condition (MMC). ";
+
+//TPSRuleGDTTolElemFirstModifierOnOLR.Name = "MMC or LMC or S condition application for orientation, location and runout specifications";
+//TPSRuleGDTTolElemFirstModifierOnOLR.Help = " For any Orientation, Location and Runout specification, the first condition shall be MMC or LMC or S (ASME standard only). ";
+//TPSRuleGDTTolElemFirstModifierOnOLR.CorrectFunction = " Set first MMC or LMC or S (ASME only) condition for orientation, location and runout specifications. ";
+
+
+//TPSRuleGDTTolElemSecondModifierOnOLR.Name = "free state symbol application for orientation, location and runout specifications";
+//TPSRuleGDTTolElemSecondModifierOnOLR.Help = " For any Orientation, Location and Runout specification, the second condition shall be the free state symbol, if necessary. ";
+//TPSRuleGDTTolElemSecondModifierOnOLR.CorrectFunction = " Set second the free state symbol, if necessary, for orientation, location and runout specifications. ";
+
+//TPSRuleGDTTolElemThirdModifierOnOLR.Name = "projected tolerance zone symbol application for orientation, location and runout specifications";
+//TPSRuleGDTTolElemThirdModifierOnOLR.Help = " For any Orientation, Location and Runout specification, the third option shall be the projected tolerance zone symbol, if necessary. ";
+//TPSRuleGDTTolElemThirdModifierOnOLR.CorrectFunction = " Set third the projected tolerance zone symbol, if necessary, for orientation, location and runout specifications. ";
+
+//TPSRuleGDTTolElemFourthModifierOnOLR.Name = "statistical tolerancing symbol application for orientation, location and runout specifications";
+//TPSRuleGDTTolElemFourthModifierOnOLR.Help = " For any Orientation, Location and Runout specification, the fourth option shall be the statistical tolerancing symbol, if necessary. ";
+//TPSRuleGDTTolElemFourthModifierOnOLR.CorrectFunction = " Set fourth the statistical tolerancing symbol, if necessary, for orientation, location and runout specifications. ";
+
+//TPSRuleDatumElemModifiers.Name = "modifier specification on datum elements";
+//TPSRuleDatumElemModifiers.Help = " Only MMC (M symbol) or LMC (L symbol) or S (ASME standard only) conditions shall be specified on datum elements. ";
+//TPSRuleDatumElemModifiers.CorrectFunction = "Specify only MMC or LMC or S modifiers on datum elements";
+
+TPSRuleGDTRefExist.Name = "¦bµù¸Ñ¤¤°Ñ¦Ò°ò·Ç";
+TPSRuleGDTRefExist.Help = "¦bµù¸Ñ¤Wªº°ò·Ç°Ñ¦Ò¥²¶·³Q©w¸q¦bµù¸Ñ¶°¦X¤¤, ©M°Ñ¦Ò¥²¶·°Ñ¦Ò¶W¹L¤@­Ó¥H¤W¬[ºc";
+TPSRuleGDTRefExist.CorrectFunction = "½s¿èµù¸Ñ¨Ó°Ñ¦Ò¤w¦sªº°ò·Ç©Î«Ø¥ß¤í¯Ê°ò·Ç";
+
+
+//Deux points sont vérifiés dans la TPSRuleGDTRefExist . Pour la granularit? prévoir 1 régle suplémentaire
+//TPSRuleGDTRefExist pour l'existence des datums spécifiés dans le GDT (1 seule fois chacun)
+
+TPSRuleGDTDatUnicity.Name = "¦b´£¨Ñªº GDT ¤¤°ß¤@ªº°ò·Ç³W®æ";
+TPSRuleGDTDatUnicity.Help = " ¦b¬Û¦Pªº°Ñ¦Ò frame/GDT ¤¤¥u¥i¦³¤@­Ó°ò·Ç³W®æ";
+TPSRuleGDTDatUnicity.CorrectFunction = "¦b©Òµ¹»Pªº GDT ¤¤«ü©w°ß¤@ªº°ò·Ç";
+
+TPSRuleGDTDoubleRow.Name = "¨ã¦³¨â­Ó¹ï¥¿ªº GDT ";
+TPSRuleGDTDoubleRow.Help = "¦b§Î¦¡¤½®t GDT ¥i¥H¨â­Ó¹ïºÙ¨Ó©w¸q (©Ò¦³ºØÃþ), ¥H°Ñ¦Ò©w¦ì¤½®t©M¥~§Î¤½®t. ²Ä¤G±ø½u©Òµo²{ªº°Ñ¦Ò¤]¥²¶·°Ñ¦Ò²Ä¤@­Ó. ¦b¤½®t¤¸¯À¤Wªº­×§ï¹Bºâ¤l¦b¨â±ø½u¤W¥²¶·¬Û¦P, ¨â±ø½u¤Wªº°Ñ¦Ò¤]¶·¤@¼Ë";
+TPSRuleGDTDoubleRow.CorrectFunction = "½s¿èµù¸Ñ";
+
+//Quatre points sont vérifiés dans la TPSRuleGDTTolElemModifiers. Pour la granularit? prévoir 3 régles suplémentaires
+//TPSRuleGDTDoubleRow : For Any orientation, location, runout specification and profile specified with datum can be grouped into composite specifications.
+
+//TPSRuleGDTDoubleRowDatCorresp.Name = "composite GDT datum correspondance ";
+//TPSRuleGDTDoubleRowDatCorresp.Help = " For composite specifications, the datums specified in the second GDT shall be specified in the first GDT";
+//TPSRuleGDTDoubleRowDatCorresp.CorrectFunction = " Check the datum correspondance in the composite GDT ";
+
+//TPSRuleGDTDoubleRowZTModCorresp.Name= " toleranced-element modifier correspondance in composite GDT";
+//TPSRuleGDTDoubleRowZTModCorresp.Help = " For composite specifications, the modifiers on the toleranced element shall be the same in both specifications. ";
+//TPSRuleGDTDoubleRowZTModCorresp.CorrectFunction = " Check the toleranced-element modifier correspondance in composite GDT ";
+
+//TPSRuleGDTDoubleRowZTModCorresp.Name= " datum-element modifier correspondance in composite GDT";
+//TPSRuleGDTDoubleRowDatModCorresp.Help = " For composite specifications, the modifiers on datums shall be the same in both specifications ";
+//TPSRuleGDTDoubleRowDatModCorresp.CorrectFunction = " Check the datum modifier correspondance in composite GDT ";
+
+//TPSRuleGDTDoubleRowFormMod.Help = " For composite form specifications (no datum specified), the modifiers on the toleranced element may be different ";
+//TPSRuleGDTDoubleRowFormMod.CorrectFunction = " the toleranced-element modifiers may be different in composite form GDT ";
+//TPSRuleGDTDoubleRowFormMod.Name = " ??? ";
+//En fait, cette règle correspond plus ?un conseil informatif qu'?une interdiction
+//Il faudra donc prévoir différents niveaux de règles
+
+TPSRuleGDTRestrictValue.Name = "­­¨î¼Æ­È";
+TPSRuleGDTRestrictValue.Help = "¤½®t­È­­¨î¥²¶·µ´¬O¹ï¥¿­È, ¦pªG¬O¶ê¤½®t, ¥¦¥i©w¸q¦¨¨¤«×©M¥²¶·­­¨î¦b 0 ©M 360 «×.";
+TPSRuleGDTRestrictValue.CorrectFunction = "½s¿èµù¸Ñ©M­×§ï­­¨î";
+
+//Trois points sont vérifiés dans la TPSRuleGDTRestrictValue. Pour la granularit? prévoir 2 régles suplémentaires
+//TPSRuleGDTRestrictValue.Help  pour : The tolerance value restriction shall be strictly positive.
+
+//TPSRuleGDTRestrictAngularValue.Name = " ??? ";
+//TPSRuleGDTRestrictAngularValue.Help = " The circularity tolerance value restriction may be defined in degree. ";
+//TPSRuleGDTRestrictAngularValue.CorrectFunction = " Set the circularity tolerance value restriction in degree, if necessary. ";
+//En fait, cette règle correspond plus ?un conseil informatif qu'?une interdiction
+//Il faudra donc prévoir différents niveaux de règles
+
+//TPSRuleGDTRestrictRangeValue.Name = " circularity angular tolerance value range ";
+//TPSRuleGDTRestrictRangeValue.Help = " The circularity tolerance value restriction shall be a 0-to-360 degree value. ";
+//TPSRuleGDTRestrictRangeValue.CorrectFunction = " Set the circularity angular tolerance value between 0?and 360? ";
+
+//------------------------------ Geometrical Tolerances Without Reference Frame
+
+TPSRulePlaneDirection.Name = "¤½®t°Ï°ì¤è¦V";
+TPSRulePlaneDirection.Help = "¤½®t°Ï°ì¤è¦VµL®Ä";
+TPSRulePlaneDirection.CorrectFunction = "¿ï¾Ü¥t¤@­Ó¼Ðµù¥­­±, ©Î¨ä¥¦¤è¦V";
+
+//--------------------------------- Geometrical Tolerances With Reference Frame
+
+TPSRuleRefFrameOfTolExist.Name = "´X¦ó¤½®t°Ñ¦Ò©ó¤w¦s°ò·Ç®Ø";
+TPSRuleRefFrameOfTolExist.Help = "´X¦ó¤½®t¥²¶·°Ñ¦Ò©ó¤w¦s°ò·Ç®Ø";
+TPSRuleRefFrameOfTolExist.CorrectFunction = "¬ÛÃö¬Æ¥¦°ò·Ç°Ñ¦Ò®Ø¬[¦Ü´X¦ó¤½®t";
+
+TPSRuleRefFrameOfTolStatus.Name = "°ò·Ç°Ñ¦Ò®Ø±¡§Î";
+TPSRuleRefFrameOfTolStatus.Help = "¥u¦³°ò·Ç°Ñ¦Ò®Ø¦³®Ä®É, ´X¦ó¤½®t¤~¦³®Ä";
+TPSRuleRefFrameOfTolStatus.CorrectFunction = "­×¥¿°ò·Ç°Ñ¦Ò®Ø";
+//--------------------------------------------------------- Annotation Drafting
+
+TPSRuleDraftingAnnotation.Name = "¼Ðµù©w¸q";
+TPSRuleDraftingAnnotation.Help = "³]©w¼Ðµù·´·l";
+TPSRuleDraftingAnnotation.CorrectFunction  = "§R°£¼Ðµù¨Ã­««Ø¤@¹M ";
+
+//------------------------------------------------------------------- Dimension
+
+TPSRuleLimitsOfSize.Name = "¤j¤p¤Ø¤oªº¤½®t­­¨î";
+TPSRuleLimitsOfSize.Help  = "¤½®t¤W­­­È¥²¶·¤j©ó¤U­­­È";
+TPSRuleLimitsOfSize.CorrectFunction  = "½Õ¾ã¤½®t­­¨î";
+
+TPSRuleSingleLimitSpecifiedValue.Name = "³æ¤@­­¨î«ü©w­È";
+TPSRuleSingleLimitSpecifiedValue.Help = "³æ¤@­­¨î«ü©w­È¥²¶·¬O¥¿­È";
+TPSRuleSingleLimitSpecifiedValue.CorrectFunction  = "­×§ï³æ¤@­­¨î«ü©w­È";
+
+TPSRuleStringUExist.Name = "String_U °Ñ¼Æ©w¸q";
+TPSRuleStringUExist.Help = "string_U °Ñ¼Æ¥²¶·¦s¦b";
+TPSRuleStringUExist.CorrectFunction  = "©w¸q string_U °Ñ¼Æ";
+
+TPSRuleStringLExist.Name = "String_L °Ñ¼Æ©w¸q";
+TPSRuleStringLExist.Help = "string_L °Ñ¼Æ¥²¶·¦s¦b";
+TPSRuleStringLExist.CorrectFunction  = "©w¸q string_L °Ñ¼Æ";
+
+TPSRuleStringULengthType.Name = " string_U °Ñ¼Æ«¬¦¡";
+TPSRuleStringULengthType.Help = " string_U °Ñ¼Æ¥²¶·¬Oªø«×«¬¦¡;
+TPSRuleStringULengthType.CorrectFunction  = "­×§ï string_U °Ñ¼Æ";
+
+TPSRuleStringLLengthType.Name = " string_L °Ñ¼Æ«¬¦¡";
+TPSRuleStringLLengthType.Help = " string_L °Ñ¼Æ¥²¶·¬Oªø«×«¬¦¡";
+TPSRuleStringLLengthType.CorrectFunction  = "­×§ï string_L °Ñ¼Æ";
+
+TPSRuleAlphaTolerance.Name = "¤½®t©w¸q";
+TPSRuleAlphaTolerance.Help = "«ü©w¤½®t¥²¶·©w¸q¦b norm ¤¤";
+TPSRuleAlphaTolerance.CorrectFunction  = "¿ï¾Ü¨ä¥¦¤½®t";
+//------------------------------------------------------------- Basic Dimension
+
+TPSRuleFeatureLink.Name = "¯S¼x context ¦³®Ä©Ê.";
+TPSRuleFeatureLink.Help = "¨Ï¥Î¥Ø«e®Ø¬[¤Ø¤oªº¯S¼x¤£¾A¦X©Î¤£¦s¦b.";
+TPSRuleFeatureLink.CorrectFunction = "½Ð­×§ï context ¤¸¯À©Î­«·s«Ø¥ß.";
+
+TPSRuleResAreaDatumTarget.Name = "µL®Ä®Ø¬[ (°ò¥») ¤Ø¤o¤¸¯À.";
+TPSRuleResAreaDatumTarget.Help = "¦Ü¤Ö¦³¤@­Ó®Ø¬[ (°ò¥») ¤Ø¤o¤¸¯ÀÄÝ©ó­­¨î©Î¥Ø¼Ð´X¦ó.";
+TPSRuleResAreaDatumTarget.CorrectFunction  = "½Ð¨Ï¥Î´X¦ó³s±µºÞ²z©R¥O¨Ó­×§ïÀ³¥Î´X¦ó¦Ü®Ø¬[ (°ò¥») ¤Ø¤o©Î§R°£¥¦.";
+
+TPSRuleDRFInSupport.Name = "µL®Ä®Ø¬[ (°ò¥») ¤Ø¤o¤¸¯À.";
+TPSRuleDRFInSupport.Help = "®Ø¬[ (°ò¥») ¤Ø¤o¤¸¯À¥²¶·ÄÝ©ó©w¸q°ò·Ç°Ñ¦Ò®Ø¬[ªº°ò·Ç¯S¼x.";
+TPSRuleDRFInSupport.CorrectFunction  = "½Ð¨Ï¥Î´X¦ó³s±µºÞ²z©R¥O¨Ó­×§ïÀ³¥Î´X¦ó¦Ü®Ø¬[ (°ò¥») ¤Ø¤o©Î§R°£¥¦.";
+
+TPSRuleDRFAutoInSupport.Name = "µL®Ä®Ø¬[ (°ò¥») ¤Ø¤o¤¸¯À.";
+TPSRuleDRFAutoInSupport.Help = "¤º³¡¯S¼x¤Ø¤o¤j¤pµLªk¥Î°µ®Ø¬[ (°ò¥») ¤Ø¤o.";
+TPSRuleDRFAutoInSupport.CorrectFunction  = "§R°£®Ø¬[ (°ò¥») ¤Ø¤o.";
+
+TPSRuleTolGeomType.Name = "«D¥²­n´X¦X¤½®tªº®Ø¬[ (°ò¥») ¤Ø¤o.";
+TPSRuleTolGeomType.Help = " ¦P¶b©Î¦P¤ß, ¹ïºÙ, ««ª½, ¥­¦æ, ¶ê©·½ü¹ø, Á`Åé½ü¹ø, ¥­©Z«×, ª½«×, ¶ê©P«× (¯u¶ê)
+  ©M¶ê¬W´X¦ó¤½®t¤£»Ý­n®Ø¬[ (°ò¥») ¤Ø¤o.";
+TPSRuleTolGeomType.CorrectFunction  = "§R°£®Ø¬[ (°ò¥») ¤Ø¤o.";.";
+
+TPSRuleTolGeomInSupport.Name = "µL®Ä®Ø¬[ (°ò¥») ¤Ø¤o¤¸¯À.";
+TPSRuleTolGeomInSupport.Help = "®Ø¬[ (°ò¥») ¤Ø¤o¤¸¯À¥²¶·ÄÝ©ó¤½®t¯S¼x©Î¥D­n¥Î¨Ó©w¸q°ò·Ç°Ñ¦Ò®Ø¬[ªº°ò·Ç¯S¼x.
+  ¥¦­Ì¥u¥iÄÝ©ó°ò·Ç¯S¼x.";
+TPSRuleTolGeomInSupport.CorrectFunction  = "½Ð¨Ï¥Î´X¦ó³s±µºÞ²z©R¥O¨Ó­×§ïÀ³¥Î´X¦ó¦Ü®Ø¬[ (°ò¥») ¤Ø¤o©Î§R°£¥¦.";
+
+TPSRuleTolGeomAutoInSupport.Name = "µL®Ä®Ø¬[ (°ò¥») ¤Ø¤o¤¸¯À.";
+TPSRuleTolGeomAutoInSupport.Help = "¤º³¡¯S¼x¤Ø¤o¤j¤pµLªk¥Î°µ®Ø¬[ (°ò¥») ¤Ø¤o.";
+TPSRuleTolGeomAutoInSupport.CorrectFunction  = "§R°£®Ø¬[ (°ò¥») ¤Ø¤o.";.";
+
+TPSRuleTolGeomAngularity.Name = "¬°¨¤«×¤½®tªºµL®Ä®Ø¬[ (°ò¥») ¤Ø¤o¤¸¯À.";
+TPSRuleTolGeomAngularity.Help = "¦b¤½®t¯S¼x©M°ò·Ç¯S¼x¤¸¯À¶¡ªº®Ø¬[ (°ò¥») ¤Ø¤o¥u¥iÄÝ©ó¨¤«×¤½®tªº¨¤«×«¬¦¡.";
+TPSRuleTolGeomAngularity.CorrectFunction  = "§R°£®Ø¬[ (°ò¥») ¤Ø¤o.";.";
+
+TPSRuleFeatureUnicity.Name = "µL®Ä®Ø¬[ (°ò¥») ¤Ø¤o¤¸¯À.";
+TPSRuleFeatureUnicity.Help = "®Ø¬[ (°ò¥») ¤Ø¤o¥²¶·¬O¯S¼x context ªº°ß¤@.";
+TPSRuleFeatureUnicity.CorrectFunction = "§R°£®Ø¬[ (°ò¥») ¤Ø¤o.";.";
+
+//------------------------------------------------------ Constructed Geometries
+
+TPSRuleCGAssocCaseTTRS.Name = "´X¦óªí²{¤è¦¡©M¯S¼x¶¡ªºµL®Ä¬ÛÃö±¡§Î.";
+TPSRuleCGAssocCaseTTRS.Help = 
+"The geometric element used to represent the user surface\n
+or the group of surfaces is not consistent with it\n
+(it should not lock any of its degrees of freedom).";
+TPSRuleCGAssocCaseTTRS.CorrectFunction = "Modify represented geometry or its position\n
+or use the Geometry Connection Management to modify represented User Surface\n
+or use Constructed Geometry management command to modify represented link.";
+
+TPSRuleCGRepresentedTTRS.Name = "¨Ï¥ÎªÌ¦±­±ªºµL®Äªí²{¤è¦¡.";
+TPSRuleCGRepresentedTTRS.Help =
+"The geometric element represents a user surface\n
+or the group of surfaces which is not valid.";
+TPSRuleCGRepresentedTTRS.CorrectFunction = "Modify represented geometry\n
+or use the Geometry Connection Management to modify represented User Surface\n
+or use Constructed Geometry management command to modify represented link.";
+
+TPSRuleCGInterPointClassElements.Name = "©w¸qÂI´X¦ó¤è¦¡¤£¹ï.";
+TPSRuleCGInterPointClassElements.Help =
+"One of represented node element surface canonicity\n
+or support surface canonicity has changed\n
+or there is no more planar and cylindrical surfaces for definition of intersected point.";
+TPSRuleCGInterPointClassElements.CorrectFunction = "Modify represented geometry\n
+or use the Geometry Connection Management to modify represented User Surface\n
+or use Constructed Geometry management command to modify represented link.";
+
+TPSRuleCGPointCanonicity.Name = "Invalid support User Surface canonicity for point geometry.";
+TPSRuleCGPointCanonicity.Help = "Support User Surface canonicity has changed for geometrical contexts.";
+TPSRuleCGPointCanonicity.CorrectFunction = "Modify represented geometry\n
+or use the Geometry Connection Management to modify represented User Surface\n
+or use Constructed Geometry management command to modify represented link.";
+
+TPSRuleCGInterLineClass.Name = "Invalid User Surface class for definition of axis geometry.";
+TPSRuleCGInterLineClass.Help = "User Surface class has changed for definition of intersected axis.";
+TPSRuleCGInterLineClass.CorrectFunction = "Modify represented geometry\n
+or use the Geometry Connection Management to modify represented User Surface\n
+or use Constructed Geometry management command to modify represented link.";
+
+TPSRuleCGPlaneClassElements.Name = "©w¸q¥­­±´X¦ó¤è¦¡¤£¹ï.";
+TPSRuleCGPlaneClassElements.Help = "
+One of represented node element surface canonicity has changed for passing plane definition\n
+or there are not at last three spherical\n
+or one line cylindrical and one spherical\n
+or two cylindrical elements for passing plane definition\n
+or some element does not belong to common plane for passing plane definition.";
+TPSRuleCGPlaneClassElements.CorrectFunction = "Modify represented geometry\n
+or use the Geometry Connection Management to modify represented User Surface\n
+or use Constructed Geometry management command to modify represented link.";
+
+TPSRuleCGCircleSupport.Name = "©w¸q¶ê´X¦ó¤è¦¡¤£¹ï.";
+TPSRuleCGCircleSupport.Help = "Plane definition in conical context for circle intersection is not valid.";
+TPSRuleCGCircleSupport.CorrectFunction = "Check plane validity to get a good status.";
+
+TPSRuleCGCylinderClassPosElements.Name = "©w¸q¶ê¬W´X¦ó¤è¦¡¤£¹ï.";
+TPSRuleCGCylinderClassPosElements.Help = "
+One of represented node element surface canonicity has changed for cylinder or reference cylinder definition\n
+or some element does not belong to common cylinder for cylinder or reference cylinder definition\n
+or there are not at last three cylindrical elements for cylinder definition.";
+TPSRuleCGCylinderClassPosElements.CorrectFunction = "Modify represented geometry\n
+or use the Geometry Connection Management to modify represented User Surface\n
+or use Constructed Geometry management command to modify represented link.";
+
+TPSRuleCGCurveDistinct.Name = "©w¸q¦±½u´X¦ó¤è¦¡¤£¹ï.";
+TPSRuleCGCurveDistinct.Help = "Curve definition points are at same positions.";
+TPSRuleCGCurveDistinct.CorrectFunction = "Modify represented geometry\n
+or use the Geometry Connection Management to modify represented User Surface\n
+or use Constructed Geometry management command to modify represented link.";
+
+TPSRuleCGCurveElements.Name = "©w¸q¦±½u´X¦óªºÂI¼Æ¤£¹ï.";
+TPSRuleCGCurveElements.Help = "There are not at last two points for curve definition.";
+TPSRuleCGCurveElements.CorrectFunction = "Modify represented geometry\n
+or use the Geometry Connection Management to modify represented User Surface\n
+or use Constructed Geometry management command to modify represented link.";
+
+TPSRuleCGThreadHole.Name = "©w¸q¤Õ¹s¥ó¯S¼x¤£¹ï.";
+TPSRuleCGThreadHole.Help = "Part Hole feature is not defined as threaded hole.";
+TPSRuleCGThreadHole.CorrectFunction = "Edit Hole feature and set threaded hole behavior.";
+
+TPSRuleCGThreadFeatValidity.Name = "µL®Ä¤Õ¹s¥ó¯S¼x.";
+TPSRuleCGThreadFeatValidity.Help = "Represented User Surface is not valid depending on thread hole status.";
+TPSRuleCGThreadFeatValidity.CorrectFunction = "Edit Hole feature or geometry to get correct context.";
+
+// ------------------------------------------------------------ Tabulated Value
+
+TPSTabulatedValue.Name = "ªí¦C¼Æ­È";
+TPSTabulatedValue.Help  = "¦r¦ê°Ñ¼Æ¤£¦s¦b.";
+TPSTabulatedValue.CorrectFunction  = "½Ð«Ø¥ß¦r¦ê°Ñ¼Æ.";
+
+TPSBadTabulatedValue.Name = "¤£¥¿½Tªºªí¦C¼Æ­È";
+TPSBadTabulatedValue.Help  = "¦r¦ê°Ñ¼Æ¤£¬Oªø«×«¬¦¡.";
+TPSBadTabulatedValue.CorrectFunction  = "«Ø¥ßªø«×«¬¦¡°Ñ¼Æ.";
+
+TPSUBRefinementValue.Name = "²Ó³¡¤½®t­È";
+TPSUBRefinementValue.Help  = "²Ó³¡¤½®t­È¥²¶·¬O¥¿­È.
+ ­Y«ü©w§÷®Æª¬ªp, «h¥i¤£«Å§i.";
+TPSUBRefinementValue.CorrectFunction  = "«ü©w MMC ©Î LMC ¦]¤l,
+ ­Y¤£»Ý­n­×§ï¦]¤l«h½Ð­×§ï¤½®t­È.";
+
+TPSUBRefinementValueLow.Name = "²Ó³¡¤½®t­È";
+TPSUBRefinementValueLow.Help  = "²Ó³¡¤½®t­È¥²¶·¤p©ó¥D­n¤½®t­È.";
+TPSUBRefinementValueLow.CorrectFunction  = "½s¿è GDT ¥B³]©w¥¿½Tªº¤½®t­È.";
+
+TPSUBLengthApplicationValue.Name = "À³¥Îªø«×";
+TPSUBLengthApplicationValue.Help  = "¤½®tªºÀ³¥Îªø«×¥²¶·¬O¥¿­È 
+¥B¤p©ó¼Ò«¬ªº³Ì¤j­È. ©Î©·«×¤½®t¥²¶·¬O¥¿­È¥B¤p©ó 360 «× °.";
+TPSUBLengthApplicationValue.CorrectFunction  = "½s¿è GDT ¥B³]©w¥¿½TªºÀ³¥Îªø«×­È.";
+
+// -------------------------------------------------------- Projected Tolerance
+
+TPSProjectedTolerance.Name = "§ë¼v¤½®t°Ï°ì";
+TPSProjectedTolerance.Help  = "§ë¼v¤½®t°Ï°ì¤w¤£¦AÀ³¥Î¦b¤¸¯À¤W.
+ ¦¹¯S¼x¥²¶·À³¥Î¦b¥­¦æ¶ê¬W¤W.";
+TPSProjectedTolerance.CorrectFunction  = "½s¿è¤½®t©Î´X¦ó.";
+
+TPSProjectedToleranceReference.Name = "§ë¼v¤½®t°Ï°ì";
+TPSProjectedToleranceReference.Help  = "¥¼©w¸q§ë¼v¤½®t°Ï°ì°Ñ¦Ò";
+TPSProjectedToleranceReference.CorrectFunction  = "½s¿è¤½®t©Î³]©w§ë¼v¤½®t°Ï°ì°Ñ¦Ò.";
+
+TPSProjectedTolLength.Name = "§ë¼v¤½®t°Ï°ì";
+TPSProjectedTolLength.Help  = "¤½®tªºÀ³¥Îªø«×¥²¶·µ´¹ï¬O¥¿ªº¥B 
+¸û¼Ò«¬ªºµL­­ªø«×­­¨î¤p.";
+TPSProjectedTolLength.CorrectFunction  = "½Ð½s¿è GDT ¨Ã¥¿½T³]©wªø«×­È.";
+
+// ---------------------------------------------------------- Shifted Tolerance
+
+TPSShiftedTolerance.Name = "Âà´«¥~§Î¤½®t";
+TPSShiftedTolerance.Help  = "Âà´«­È¤£¥iµ¥©ó¤½®t­Èªº¤@¥b, 
+§_«h¤½®t°Ï°ì±N¤£Âà´«¦Ó±z±N¨Ï¥Î¤@¯ëªº¤½®t°Ï°ì.";
+TPSShiftedTolerance.CorrectFunction  = "½s¿èÂà´«­È.";
+
+// --------------------------------------------------------------- TangentPlane
+TPSTangentPlane.Name = "¬Û¤Á­±";
+TPSTangentPlane.Help  = "«D¥­­±§Î¦¡¦±­±µLªk¨Ï¥Î¬Û¤Á­±¦]¤l.";
+TPSTangentPlane.CorrectFunction  = "½Ð½s¿è´X¦ó.";
+
+// ---------------------------------------------------------------- LMC and MMC
+TPSReferenceFrameLMCMMC.Name = "¦b°ò·Ç¯S¼x¤Wªº LMC ©Î MMC";
+TPSReferenceFrameLMCMMC.Help  = "¨C¤@­Ó°ò·Ç¯S¼x¤¸¯À³£¥²¶·¦³ LMC ©Î MMC ªº¤j¤p¤½®t³]©w.";
+TPSReferenceFrameLMCMMC.CorrectFunction  = "½s¿è GDT ©M³]©w¥¿½TªºÀ³¥Î­È©Î«Ø¥ß¤j¤p¤½®t.";
+
+TPSTOLLMCMMC.Name = "¦b¤½®t¯S¼x¤Wªº LMC ©Î MMC";
+TPSTOLLMCMMC.Help  = "¨C¤@­Ó¤½®t¯S¼x¤¸¯À³£¥²¶·¦³ LMC ©Î MMC ªº¤j¤p¤½®t³]©w.";
+TPSTOLLMCMMC.CorrectFunction  = "½s¿è GDT ©M³]©w¥¿½TªºÀ³¥Î­È©Î«Ø¥ß¤j¤p¤½®t.";
+
+// --------------------------------------------------------------- AnnotationPlane
+
+TPSRuleAnnotationPlane.Name = "¼Ðµù¥­­±¦³®Ä©Ê";
+TPSRuleAnnotationPlane.Help = "¼Ðµù¥­­±¤£¦X¾A.";
+TPSRuleAnnotationPlane.CorrectFunction  = "Âà²¾¼Ðµù¦Ü¥t¤@µø¹Ï.";
+
+// ------------------------------------------------------------- RestrictedArea
+
+TPSRuleRestrictedAreaUndefined.Name ="­­¨î°Ï°ì¦³®Ä©Ê";
+TPSRuleRestrictedAreaUndefined.Help ="­­¨î°Ï°ì¤£¥]§t¦b­­¨î°Ï°ì¤º.";
+TPSRuleRestrictedAreaUndefined.CorrectFunction = "½Ð´î¤p­­¨î°Ï°ì¤j¤p©Î§ë¼v¥¦¦Ü­­¨î°Ï°ì.";
+
+TPSRuleRestrictedAreaDisjoined.Name ="­­¨î°Ï°ì¦³®Ä©Ê";
+TPSRuleRestrictedAreaDisjoined.Help ="­­¨î°Ï°ì¤£¥]§t¦b­­¨î°Ï°ì¤º.";
+TPSRuleRestrictedAreaDisjoined.CorrectFunction = "½Ð´î¤p­­¨î°Ï°ì¤j¤p©Î§ë¼v¥¦¦Ü­­¨î°Ï°ì.";
+
+TPSRuleRestrictedAreaInContact.Name ="­­¨î°Ï°ì¦³®Ä©Ê";
+TPSRuleRestrictedAreaInContact.Help ="­­¨î°Ï°ì¤£¥]§t¦b­­¨î°Ï°ì¤º.";
+TPSRuleRestrictedAreaInContact.CorrectFunction = "½Ð´î¤p­­¨î°Ï°ì¤j¤p©Î§ë¼v¥¦¦Ü­­¨î°Ï°ì.";
+
+// ------------------------------------------------------------- StandardSwitch
+
+TPSRuleStandardSwAsmeToIso.Name = "¼Ð·ÇÂà´«¦³®Ä©Ê";
+TPSRuleStandardSwAsmeToIso.Help = "The semantic data can't be converted from ASME/ANSI to ISO/JIS.";
+TPSRuleStandardSwAsmeToIso.CorrectFunction = "Create a new annotation with the required Standard.";
+
+TPSRuleStandardSwIsoToAsme.Name = "¼Ð·ÇÂà´«¦³®Ä©Ê";
+TPSRuleStandardSwIsoToAsme.Help = "The semantic data can't be converted from ISO/JIS to ASME/ANSI.";
+TPSRuleStandardSwIsoToAsme.CorrectFunction = "Create a new annotation with the required Standard.";

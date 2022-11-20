@@ -1,0 +1,137 @@
+Title1  = "主要脫模方向定義 ";
+Title2  = "滑塊 頂出塊 脫模方向定義 ";
+// Titre de la barre de progression
+ProgressBar	=	"請稍候...";
+
+Repere.MainDirection   = "主要脫模方向";
+Repere.SliderDirection = "滑塊或頂出塊方向";
+Body.Core              = "模仁";
+Body.Cavity            = "模穴";
+Body.Other             = "其它";
+Body.Slider            = "滑塊或頂出塊";
+Body.NoDraft           = "無脫模面";
+Join.Core              = "模仁";
+Join.Cavity            = "模穴";
+Join.Other             = "其它";
+Join.Slider            = "滑塊";
+OpenRemove			   = "移除曲面";
+OpenAdd				   = "增加曲面";
+ 
+// Type de propagation
+PropagationC0		   = "點連續";
+PropagationC1		   = "以區域";
+PropagationNone		   = "未增生";
+PropagationNoDraft	   = "無脫模修剪面";
+
+AngularToleranceCore   = "模仁角度容差";
+AngularToleranceCavity = "模穴角度容差";
+AngularToleranceOther  = "其它角度容差";
+AngularToleranceSlider = "滑塊或頂出器 角度容差";
+MerGeDistanceCore      = "模仁溶入距離";
+MerGeDistanceCavity    = "模穴溶入距離";
+MerGeDistanceOther     = "其它溶入距離";
+MerGeDistanceSlider    = "滑塊或頂出器 溶入距離";
+
+CATCCSDraftDlg.InitialState.Message   = "選擇物件做脫模分析";
+CATCCSDraftDlg.State1.Message         = "選擇脫方向";
+CATCCSDraftDlg.State2.Message         = "選擇連接";
+
+FrameGeneral.Title = "定義";
+
+FrameGeneral.FrameSysteme.Title = "脫模軸系";
+FrameGeneral.FrameSysteme.LongHelp = 
+	"Defines the pulling axis system";
+
+FrameGeneral.FrameSysteme.FrameDirectionDemoulage.Title = "方向";
+FrameGeneral.FrameSysteme.FrameDirectionDemoulage.LongHelp = 
+	"Defines the pulling direction axis either by its coordinates or using the compass.";
+
+FrameGeneral.FrameSysteme.FrameDirectionDemoulage.FrameEditDirection.LabelDirX.Title = "DX  ";
+
+FrameGeneral.FrameSysteme.FrameDirectionDemoulage.FrameDirection2Inv.CheckButtonLock.Title = "鎖定 ";
+FrameGeneral.FrameSysteme.FrameDirectionDemoulage.FrameDirection2Inv.CheckButtonLock.LongHelp = 
+	"Locks the direction to avoid unintentional modifications.
+The direction must be locked before using Local Transfer, Fly Analysis or Explode.";
+
+FrameGeneral.FrameSysteme.FrameDirectionDemoulage.FrameDirection2Inv.CheckButtonFly.Title = "計算時分析";
+FrameGeneral.FrameSysteme.FrameDirectionDemoulage.FrameDirection2Inv.CheckButtonFly.LongHelp  = 
+	"Displays the normal to the face when you move the mouse pointer over the surface";
+
+FrameGeneral.FrameSysteme.FrameDirectionDemoulage.FrameEditDirection.LabelDirY.Title = "DY  ";
+FrameGeneral.FrameSysteme.FrameDirectionDemoulage.FrameEditDirection.LabelDirZ.Title = "DZ  ";
+FrameGeneral.FrameSysteme.FrameDirectionDemoulage.FrameDirection2Inv.PushButtonInvert.Title = "反向";
+FrameGeneral.FrameSysteme.FrameDirectionDemoulage.FrameDirection2Inv.PushButtonInvert.LongHelp = 
+	"Reverses the puling direction";
+
+FrameGeneral.FrameSysteme.FrameParameterInv.FrameParameter.Title = "脫模角度";
+
+FrameGeneral.FrameSysteme.FrameParameterInv.FrameParameter.LongHelp = 
+	"Defines the minimum un-molding angle.";
+
+FrameGeneral.FrameSysteme.FrameParameterInv.FrameParameter.LabelDraftAngle.Title = "脫模角度";
+FrameGeneral.FrameSysteme.FrameParameterInv.FrameParameter.LabelErrCorde.Title = "弦錯誤 ";
+
+FrameGeneral.FrameSysteme.FrameParameterInv.FrameReset.PushButtonReset.Title = "重設";
+FrameGeneral.FrameSysteme.FrameParameterInv.FrameReset.PushButtonReset.LongHelp = 
+	"Resets Pulling Axis System";
+
+FrameGeneral.FrameBasInv.Title = "模具區域";
+FrameGeneral.FrameBasInv.LongHelp = "Extracts the mold areas";
+
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.Title = "萃取區域";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.LongHelp = 
+	"Assigns a color to the surfaces found according to the area to extract they belong to.
+Displays the size of each area to extract found.";
+
+FFrameGeneral.FrameBasInv.FrameExtract.CheckButtonCore.Title1   = "模仁";
+FrameGeneral.FrameBasInv.FrameExtract.CheckButtonCore.Title2   = "滑塊或頂出器";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.CheckButtonCore.Title1   = "模仁";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.CheckButtonCore.Title2   = "滑塊或頂出器";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.LabelCouleurCore.Title   = "綠色 ";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.CheckButtonCavity.Title  = "模穴";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.LabelCouleurCavity.Title = "紅色";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.CheckButtonSlider.Title  = "其它";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.CheckButtonNoDraft.Title = "無脫模面 ";
+
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.CheckButtonShadow.Title  = "Cast 陰影";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.CheckButtonShadow.LongHelp  = 
+	"Takes account of hidden faces for a given pulling direction.";
+
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.CheckButtonConnex.Title  = "已連接區域";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.CheckButtonConnex.LongHelp = 
+	"Uses all of the faces that are connected to the face you have selected (when active).";
+
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.LabelCouleurSlider.Title = "藍色";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.LabelCouleurNoDraft.Title= "粉紅色";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.LabelZoneConnexe.Title   = "已連接區域";
+
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.PushButtonSwitch.Title  = "更換 ";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.PushButtonSwitch.LongHelp= 
+	"Switchs the mold areas.";
+
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.CheckButtonRatio.Title	  = "忽略的面";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameExtract.CheckButtonRatio.LongHelp= 
+"Sets the acceptable percentage of facets in a surface that have a different orientation from the rest.";
+
+FrameGeneral.FrameBasInv.FrameTransfer.Title  = "轉換";
+FrameGeneral.FrameBasInv.FrameTransfer.LongHelp  = 
+	"No propagation: select the faces to transfer one by one.
+Point continuity: select a reference face. All the faces contiguous to the reference face are transferred.
+By area: select a face of a given color isolated among faces of another color. It will be transferred to the area of the surrounding color.";
+
+FrameGeneral.FrameBasInv.FrameTransfer.CheckButtonTransfer.Title  = "局部轉換 ";
+FrameGeneral.FrameBasInv.FrameTransfer.CheckButtonTransfer.LongHelp  = 
+	"Transfers one face of the part to one of the areas to extract";
+
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameVisu.Title = "顯示";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameVisu.LongHelp= 
+	"Displays the surfaces as faces or as facets.
+Use the facets display to check the orientation of the faces";
+
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameVisu.DisplayFace.Title    = " 顯示面 ";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameVisu.DisplayFacette.Title = " 顯示面 ";
+
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameVisu.DisplayExplode.Title = " 炸開 ";
+FrameGeneral.FrameBasInv.FrameMoldAreas.FrameVisu.DisplayExplode.LongHelp = 
+	"Explodes the mold areas along the axis of the current pulling direction";
+

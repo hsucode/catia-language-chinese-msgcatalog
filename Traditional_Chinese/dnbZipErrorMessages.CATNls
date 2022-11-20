@@ -1,0 +1,103 @@
+dnbZipErrorMsg             = "錯誤";
+dnbZipWarningMsg           = "警告";
+dnbZipCompareInfoMsg	   = "分析資訊";
+dnbZipReadGeometryFail     = "生料指定不適當";
+dnbZipReadTargetGeomFail   = "設計零件指定不適當";
+dnbZipReadJobDataFail      = "工作資料讀取錯誤. 無效工作檔案";
+dnbZipDocInitFail          = "初始化 ZipMill 發生錯誤";
+dnbZipStartJobFail         = "工作開始時發生錯誤";
+dnbZipNBlocksCmdFail       = "N 行 命令失敗";
+dnbZipOneBlockCmdFail      = "一行 命令失敗";
+dnbZipRestartCmdFail       = "重新開始 命令失敗";
+dnbZipRunToEndCmdFail      = "執行至結束 命令失敗";
+dnbZipRunBatchCmdFail      = "批次命令失敗";
+dnbZipResolutionChanged    = "為計入新的解法重新開始工作";
+dnbZipAnimateForwardFail   = "向前模擬失敗";
+dnbZipAnimateBackwardFail  = "向後模擬失敗";
+dnbZipRewindFail           = "回轉模擬失敗";
+dnbZipPickCloseupFail      = "特寫點選失敗";
+dnbZipAnimCreationFail     = "特寫模擬失敗";
+dnbZipFaultCloseupFail     = "模擬失敗";
+dnbZipShowTargetFail       = "沒有目標零件可用";
+dnbZipShowComparisonFail   = "沒有比較視圖可用";
+dnbZipComparisonFail       = "比較失敗";
+dnbZipEndofFile            = "已執行完畢";
+dnbZipIllegalFaultBBoxSize = "無效部份生料. 回復至前一數值";
+dnbZipIllegalPaddingLength = "無效凸塊長度. 回復至前一數值";
+dnbZipDocumentAlreadyOpen  = "無法開啟多重 ZipMill 文件";
+dnbZipPickOnTarget         = "在目標上無法選取";
+dnbZipSaveJobFail      = "儲存工作時發生錯誤";
+dnbZipInvalidJobImportDirectory       = 
+"工作只可在目前計劃中輸入";
+dnbZipJobDirectoryNotFound            =
+"目前計劃中不存在 ZIP_JOBS 目錄";
+dnbZipInvalidJobSaveDirectory       = 
+"工作只可在目前計劃的 ZIP_JOBS 目錄中儲存";
+dnbZipInvalidPartSaveDirectory =
+"工件只可在目前計劃的零件目錄中儲存";
+dnbZipInvalidSTLPartSaveDirectory =
+"工件只可在目前計劃的 STL 目錄中儲存";
+dnbZipFileExists = 
+"指定檔案名稱已存在. 請指定其它名稱"; 
+dnbZipNoProjectsSpecified =
+"沒有目前計劃可存";
+dnbZipNoCurrentProject =
+"沒有目前計劃可輸入 Zip 資料";
+dnbZipNBlocksInvalidInput =
+"行數必須是整數";
+dnbZipNBlocksNegativeInput =
+"行數必須是正數";
+dnbZipInvalidTolerance = "無效容差. 請輸入數值 1e-6<= 容差 <=10000. 回復至前一數值";
+dnbZipReadStockFail        =
+"無法開啟生料檔案";
+dnbZipReadTargetFail        =
+"無法開啟目標檔案";
+dnbZipMfgResolutionChanged = "加工方法的修改只會在下一次更新時顯示";
+DNBZipMfgUpdateCmdFail     = "ZipUpdate 命令失敗";
+DNBZipMfgZipContainerNotPresent = "ZipMill 內含器未建立";
+DNBZipMfgJobAlreadyPresent = "工作已存在";
+DNBZipMfgInitFail = "ZipMill 初始化時失敗";
+dnbZipNoJobsReadAccess =
+"目前計劃的 ZIP_JOBS 目錄沒有讀取權";
+dnbZipNoSTLDirWriteAccess =
+"目前計劃的 STL 目錄沒有寫入權限";
+dnbZipNoPartDirWriteAccess =
+"目前計劃或零件目錄沒有寫入權限";
+dnbZipNoSTLDirReadAccess =
+"目前計劃的 STL 目錄沒有讀取權限";
+dnbZipNoPartDirReadAccess =
+"目前計劃的零件目錄沒有讀取權限";
+dnbZipNoSaveDirReadAccess =
+"儲存工件的目錄沒有讀取權限";
+dnbZipNoSaveJobDirWriteAccess =
+"目前計劃或零件目錄沒有寫入權限";
+DNBZipMfgSaveCmdFailNoPerm =
+"目前目錄沒有寫入權限";
+DNBZipMfgUpdateStockFail = "載入生料失敗";
+DNBZipMfgUpdateDesignFail = "載入設計零件失敗";
+DNBZipMfgNoDir = "指定目錄不存在";
+dnbZipInCorrectTolerance = "不正確精確數值";
+dnbZipInCorrectGougeTolerance = "Gouge 分析的不正確精確數值";
+dnbZipInCorrectUnderCutTolerance = "剩餘材料分析的不正確精確數值";
+dnbZipInCorrectLoopTolerance = "指定容差數值不正確. 應用預設值.";
+dnbZipInCorrectMode = "不正確模式";
+DNBZipMfgInCorrectCollisionSate = "碰撞情形指示不正確";
+DNBZipMfgNoCloseUp = "建立特寫失敗";
+DNBZipMfgNoErrorsInPhotoCompare = "沒有產生錯誤";
+DNBZipMfgFileExists = "檔案 /P1 已存在. \n 您要覆寫它嗎?";
+DNBZipMfgFixtureNotProper = "夾具 '/P1' 的幾何不適當. 無法用做碰撞偵測.";
+DNBZipMfgExceptionFoundMesg = "發生未預期錯誤.";
+DNBZipMfgNoMemoryAvailable = "偵測到低記憶體. 無法完成命令.";
+DNBZipMfgNoCGRExtracted = "無法完成命令. \n 請檢查磁碟機或虛擬記憶體設定.";
+DNBZipMfgExceptionWithCorruptGeo = "發生未預期處理狀態. \n 粗料幾何不適當.";
+DNBZipRemoveChipError = "材料未切割.";
+DNBZipRemoveChipLastSelectError = "無法移除整塊材料";
+DNBZipProtectedModeMesg = "發生未預期錯誤. \n 請嚐試在保護模式下嚐試影像模擬.";
+DNBZipMfgMemoryExhaustion = "記憶體不足. 請檢查可用記憶體.";
+DNBZipMfgCollisionIgnoreMsg = "影像干涉未可用.";
+DNBZipMachNotAssigned = "零件加工未指定機具.";
+DNBZipMfgNoTarget = "未選擇設計零件. 無法開始分析命令.";
+DNBZipStrNotFound = "無法找到字串 /P1.";
+DNBZipIsoLineNotMachined = "無法定位刀具. 所選 ISO 線未加工.";
+dnbZipAnimMeasureRepStatus = "記憶體不足. 無法顯示點和邊線";
+dnbZipAnimMeasureRepStatus2 = "記憶體不足. 無法顯示點";

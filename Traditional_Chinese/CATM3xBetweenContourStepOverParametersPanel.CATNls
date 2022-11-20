@@ -1,0 +1,31 @@
+Title					= "方式";
+
+M3xSynchronize			= "同步";
+M3xCntOverThickNess		= "輪廓上的預留";
+M3xMaxWidthToMachine	= "加工的最大寬度";
+M3xOffsetSide			= "預留邊";
+M3xToContour			= "方向";
+M3xAccostingSide		= "刀具初始位置";
+
+M3xSMSBitangencyMode	= "小刀精修";
+
+
+
+
+
+M3xCntOverThickNess.LongHelp = "指定輪廓的預留的距離.";
+M3xMaxWidthToMachine.LongHelp= "指定由定義輪廓開始的加工寬度.";
+M3xOffsetSide.LongHelp		= "指定加工的導引輪廓邊.";
+M3xToContour.LongHelp		= "指定預留方向:
+- 由輪廓: 刀具路徑會由平移導引輪廓開始 
+  預留會依循預留至加工寬度,
+- 至輪廓: 刀具路徑會由平移導引的加工寬度開始
+  預留會依循朝向導引.";
+M3xAccostingSide.LongHelp	= "指定刀具路徑; 
+不論它是由導引輪廓開始, 
+或導引輪廓之前 (to),
+或導引輪廓之後 (past).";
+
+
+M3xSMSBitangencyMode.LongHelp = "指定是否要執行小刀精修.";
+

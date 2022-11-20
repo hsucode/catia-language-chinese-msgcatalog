@@ -1,0 +1,47 @@
+//=======================================================================
+// MODULE : CATV4ToV5NTCompatibilityName_Engine
+//=======================================================================
+//
+//--------------------------------------
+//  Messages from CATV4ToV5NTCompatibilityName Batch
+//--------------------------------------
+//
+ReportBegin="CATV4ToV5NTCompatibilityName - 報告";
+ReportEnd  ="CATV4ToV5NTCompatibilityName - 報告結束";
+FileName="處理的檔案";
+OutputDirectory="輸出目錄";
+BatchAborted1="批次中止 - 返回碼 =";
+BatchAborted2="沒有模型要處理";
+BatchSuccess="批次處理成功 - 返回碼 =";
+BatchPartial="批次處理部份成功 - 返回碼 =";
+ModelProcessed="模型已處理";
+ModelAborted="模型中止";
+// -----------------------------------------------------------
+File="檔案 <&param01.>";
+FileRenamed="\t  檔案含有無效名稱, 將會更名成 :
+\t  <&param01.>";
+FileNoRenamed="\t  檔案不需更名";
+FileOk="\t  檔案成功處理";
+FileKo="Error\t  程序中止";
+FileNoWrite="\t  檔案已存在且不需被覆寫";
+FileExists="警告 \t  寫入檔案發生問題 : <&param01.>
+\t  檔案已存在且無法覆寫";
+WriteAborted="警告 \t  寫入檔案發生問題 : <&param01.>
+\t  寫入時發生內部問題";
+RenameAborted="警告 \t  更名時發生內部問題";
+InternalError="內部錯誤";
+// -----------------------------------------------------------
+HelpMsg="USAGE: 
+    CATV4ToV5NTCompatibilityName -h -id inputDirectory -if inputfile/-il inputlist -od outputDirectory -depth level -report reportFile.txt
+
+       -h	 : 說明
+       -id	 : 輸入目錄或 DLNAME (選項)
+       -if       : 含有要處理檔案適當副檔名的文字表列
+                   (如 .model, .session, .dlv3 或 .exp).
+       -il       : 含有要處理檔案適當副檔名的文字表列.
+                   -if 或 -il 參數是必須的且可被定義數次
+       -od	 : 輸出目錄或 DLNAME (選項)                   
+       -depth    : 多重模型鏈結依附層級 (選項)       
+       -report   : 報告檔名 (選項)"; 
+
+

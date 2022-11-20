@@ -1,0 +1,163 @@
+//---------------------------------------------------------------
+// Resource file for CATGSMUICurvePanel2 class
+// US
+//---------------------------------------------------------------
+
+Title="程序定義";
+
+// --------------------
+// MultiList Definition
+// --------------------
+PtMultiList.LongHelp="表列雲形線將會經過的點.";
+
+EntrySectionD = "斷面-進入-切面";
+
+ExitSectionD = "斷面-退出-切面";
+
+ProfileMgtD = "斷面管理";
+
+
+// ----------------------
+// AddRemoveReplace Frame
+// ----------------------
+Col1="Routed 物件";
+Col2="切線方向.";
+Col3="BCPs";
+
+AddRemoveReplaceFrame.RemoveRadio.Title="移除";
+AddRemoveReplaceFrame.RemoveRadio.LongHelp="從表列中移除亮度顯示點.";
+AddRemoveReplaceFrame.RemoveRadio.ShortHelp="移除所選點";
+
+AddRemoveReplaceFrame.ReplaceRadio.Title="更換";
+AddRemoveReplaceFrame.ReplaceRadio.LongHelp="從表列中更換亮度顯示點.";
+AddRemoveReplaceFrame.ReplaceRadio.ShortHelp="更換所選點";
+
+AddRemoveReplaceFrame.RemovePushBt.Title="移除";
+AddRemoveReplaceFrame.RemovePushBt.LongHelp="從表列中移除亮度顯示點.";
+AddRemoveReplaceFrame.RemovePushBt.ShortHelp="從表列中移除亮度顯示點.";
+
+AddRemoveReplaceFrame.AfterRadio.Title="之後新增";
+AddRemoveReplaceFrame.AfterRadio.LongHelp="增加點在表列亮度顯示之後.";
+AddRemoveReplaceFrame.AfterRadio.ShortHelp="所選點後";
+
+AddRemoveReplaceFrame.BeforeRadio.Title="之前新增";
+AddRemoveReplaceFrame.BeforeRadio.LongHelp="增加點在表列亮度顯示之前.";
+AddRemoveReplaceFrame.BeforeRadio.ShortHelp="所選點前";
+
+AddRemoveReplaceFrame.PointFrame.Title   = "";
+AddRemoveReplaceFrame.SupportFrame.Title = "";
+AddRemoveReplaceFrame.DeviceFrame.Title  = "";
+
+// ---------------
+// OnSupport Frame
+// ---------------
+OnSupportFrame.OnSupportBt.Title="依附幾何";
+OnSupportFrame.OnSupportBt.LongHelp="投影雲形線至依附上.";
+OnSupportFrame.OnSupportBt.ShortHelp="投影雲形線至依附上.";
+
+OnSupportFrame.SuppoSelect.LongHelp="允許指定是否投影雲形線至依附曲面上.";
+
+// --------------
+// MoreInfo Frame
+// --------------
+MoreInfo="詳細 >>";
+LessInfo="基本 <<";
+MoreInfoBt.ShortHelp="隱藏或顯示詳細資訊";
+
+// -----------
+// POINT Frame
+// -----------
+PointFrame.Title = "";
+
+PointFrame.TgtAtPointLabel.Title    ="切線管理 : ";
+PointFrame.TgtAtPointLabel.LongHelp="管理程序點的相切情形.";
+PointFrame.TgtAtPointLabel.ShortHelp="管理程序點的相切情形.";
+
+PointFrame.SlackManagmentFrame.SlackManagmentLabel.Title="Slack 管理   : ";
+PointFrame.SlackManagmentFrame.SlackManagmentLabel.LongHelp="管理程序點的 slack.";
+PointFrame.SlackManagmentFrame.SlackManagmentLabel.ShortHelp="管理程序點的 slack.";
+PointFrame.SlackManagmentFrame.IgnoreSlackPushBt.Title  ="忽略 Slack";
+PointFrame.SlackManagmentFrame.IgnoreSlackPushBt.LongHelp="忽略程序點的 Slack";
+PointFrame.SlackManagmentFrame.IgnoreSlackPushBt.ShortHelp="忽略程序點的 Slack";
+
+PointFrame.CstTypeFrame.CstTypeLabel.Title    = "拘束形式      : ";
+PointFrame.CstTypeFrame.CstTypeLabel.LongHelp = "位置上的拘束形式: 任意或由曲線 ";
+
+PointFrame.CstTypeFrame.CstTypeCombo.LongHelp = "位置上的拘束形式: 任意或由曲線 ";
+
+// contrainte explicite
+PointFrame.ExplicitCstFrame.TgtDirLabel.Title = "切線方向 : ";
+PointFrame.ExplicitCstFrame.TgtDirLabel.ShortHelp="所選點的切線方向";
+PointFrame.ExplicitCstFrame.TgtDirLabel.LongHelp="定義所選點切線方向.";
+
+// contrainte par element
+PointFrame.FromEltCstFrame.CstEltLabel.Title ="元素           : ";
+PointFrame.FromEltCstFrame.CstEltLabel.LongHelp="在雲形線上指定位置和切線方向或含指定曲率的曲線元素.";
+PointFrame.FromEltCstFrame.CstEltFra.LongHelp="在雲形線上指定位置和切線方向或含指定曲率的曲線元素.";
+
+PointFrame.PushButtonFrame.RemoveTgtPushBt.Title = "移除相切";
+PointFrame.PushButtonFrame.ReverseTgtPushBt.Title = "逆轉相切";
+
+// -------------
+// SUPPORT Frame
+// -------------
+SupportFrame.Title = "";
+
+SupportFrame.OrientationLabel.Title  = "方向管理 : ";
+SupportFrame.OrientationPushBt.Title = "逆轉";
+SupportFrame.PositioningLabel.Title  = "定位管理 : ";
+SupportFrame.PositioningPushBt.Title = "位置";
+SupportFrame.ReplacementLabel.Title  = "更換型式         : ";
+SupportFrame.SelectionRadio.Title    = "選擇另一依附";
+SupportFrame.BrowseRadio.Title       = "瀏覽依附目錄";
+SupportFrame.BrowsePushBt.Title      = "瀏覽";
+
+// ------------
+// DEVICE Frame
+// ------------
+DeviceFrame.Title = "";
+
+DeviceFrame.KeepNoKeepTgtLabel.Title    = "相切 : ";
+DeviceFrame.KeepTgtRadio.Title          = "保持";
+DeviceFrame.NoKeepTgtRadio.Title        = "不保持";
+DeviceFrame.BundleCnctPtMultiList.Title = "表列 : ";
+
+Column1 = "Bundle 連接點";
+Column2 = "定義相切";
+
+CstTypeExplicit = "詳細";
+CstTypeFromElement = "由曲線";
+
+//--------------
+// offset frame
+//--------------
+//PointFrame.PointonSurfaceFrame.Title="";
+//PointFrame.PointonSurfaceFrame.LabelPointonsurface.Title="Offset management at creation";
+//PointFrame.PointonSurfaceFrame.LabelPointonsurface.LongHelp="Press Ctrl to select points on surface ";
+//PointFrame.PointonSurfaceFrame.Radioautomatic.Title="Automatic offset";
+//PointFrame.PointonSurfaceFrame.Radioautomatic.LongHelp="Create an offset egual to the bundle radius.";
+//PointFrame.PointonSurfaceFrame.RadioManual.Title="Manual offset";
+//PointFrame.PointonSurfaceFrame.RadioManual.LongHelp="Create an offset egual to the spinner value below";
+//PointFrame.PointonSurfaceFrame.Spinneroffset.LongHelp="Modifies the offset value";
+
+FrameLabel.Title="";
+FrameLabel.LabelPointonsurface.Title="建立時的偏移管理";
+FrameLabel.LabelPointonsurface.LongHelp="按 Ctrl 鍵可在曲面上選擇點.";
+
+PointonSurfaceFrame.Title="";
+PointonSurfaceFrame.Emptylabel.Title="                             ";
+PointonSurfaceFrame.Radioautomatic.Title="自動";
+PointonSurfaceFrame.Radioautomatic.LongHelp="修改偏移等於 bundle segment 半徑.";
+
+PointonSurfaceFrame.RadioManual.Title="手動";
+PointonSurfaceFrame.RadioManual.LongHelp="修改偏移等於下列值.";
+PointonSurfaceFrame.Spinneroffset.LongHelp="修改偏移值.";
+
+PointonSurfaceFrame.RadioAutoManual.Title="在安全範圍內自動偏移";
+PointonSurfaceFrame.RadioAutoManual.LongHelp="建立與一組新增旋轉數值的半徑相等的偏移.";
+PointonSurfaceFrame.SpinneroffsetAuto.LongHelp="修改在所選點的偏移值";
+
+
+
+
+

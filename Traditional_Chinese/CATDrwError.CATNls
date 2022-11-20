@@ -1,0 +1,157 @@
+//=====================================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1997 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwError
+// LOCATION    :    
+// AUTHOR      :    YPR
+// DATE        :    05/05/98
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    Catalogue NLS pour les erreurs drafting de base 
+//                  
+// inheritance :    
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+//MODIFICATIONS     user  date      purpose
+//   HISTORY        ----  ----      -------
+//   01             ppd   25.06.98  Error message for the command to create dimensions
+//         modif_01_ppd             (CreDimViewNotUpdated)
+//   02		  lgk	  25.06.02  Revision
+//   03		  lgk	  14.10.02  Revision2
+//   04		  wsa	  25.07.05  Addition
+//=====================================================================================
+
+CATDrwError.PanelTitleError = "繪圖錯誤";
+
+CATDrwError.PanelTitleWarning = "繪圖警告";
+
+CATDrwError.TestError = "測試成功";
+
+CATDrwError.OneSheetError = "最後一張圖紙無法刪除";
+
+CATDrwError.UpdateError = "產生視圖時有錯誤發生";
+
+CATDrwError.DocNotSavedError = "您無法從未儲存的文件中產生視圖, 請先儲存文件, 然後再試一次.";
+
+CATDrwError.CreDimViewNotUpdated = "您無法在未更新的視圖中建立尺寸, 請先更新視圖, 然後再試一次.";
+
+CATDrwError.DocReadOneFontWarning = "系統中欠缺一種叫做 /p2 的字形.
+但在此次執行中, 預設字形 /p1 會被用來參考.
+請檢查字形目錄或聯絡繪圖者.";
+
+CATDrwError.DocReadNFontWarning = "系統中欠缺數種字形.
+這些字型為 : /p2.
+但在此次執行中, 字形 /p1 會被用來顯示文字.
+請檢查字形目錄或聯絡繪圖者.";
+
+CATDrwError.InvalidSelectionError = "無效選擇. 
+請檢查顯示,選取和實體有效性.";
+
+CATDrwError.DetailViewNoIntersection = "圖樣定義外形未與視圖相交,請檢查作動視圖";
+
+CATDrwError.NothingToExtract = "沒有立體元素可投影. \n 有可能是空的模型, 產品或零件;
+如果是 V4 模型, 請檢查是否有組合修剪面或實體元素可用來投影.
+如果是零件, 請檢查是否是最新的.
+如果要立體線架構, 請勾選 工具組 > 選項 > 繪圖 > 視圖 來啟動 投影立體線架構.
+如果是 CATProcess 文件, 請在選擇平面前先選擇產品.";
+
+CATDrwError.EmptyEncumbrancy = "無效選擇.\n 所選實體阻礙是無效的;\n 有可能是空的模型, 產品或零件, 請勾選為設計模式.";
+
+CATDrwError.EncumbrancyUnfolded = "所選實體阻礙是無效的;\n 所選實體不可用來 \n 執行展開視圖命令.";
+
+CATDrwError.NotAGoodView = "目前視圖無法執行 ";
+
+CATDrwError.WrongView = "無法執行此動作. 視圖可能鎖定. \n 目前或已選的視圖必須是在確實表現模式下的自發視圖. \n 不允許含有切面, 展開和進階前視圖的 DMU 盒.";
+
+CATDrwError.NotUpdatedView = "目前或已選的視圖必須必須更新.";
+
+CATDrwError.NoShowMode = "3D 零件或產品為隱藏模式";
+
+CATDrwError.EmptySketch = "斷面是空的, 請再重做.";
+
+CATDrwError.ErrorType = " 錯誤的尺寸形式.";
+
+CATDrwError.ErrorParallel = " 尺寸未平行.";
+
+CATDrwError.EmptyView = "無法執行, 視圖是空的.";
+
+CATDrwError.DetailPasteInDesignSheet = "圖樣無法貼在設計紙上.";
+
+CATDrwError.ErrorProp = " 無法複製物件內容.";
+
+CATDrwError.ViewPasteInDetailSheet = "視圖無法貼在圖樣圖紙上.";
+
+CATDrwError.DittoPasteCycle = "您無法將 2D 分件貼在另一 2D 分件上.";
+
+CATDrwError.SectionCutNoIntersection = "圖樣斷面未與視圖相交,請啟動切面視圖視圖.";
+
+CATDrwError.SectionViewOrientation = "斷面的這一邊沒有元素,請選另一側.";
+
+CATDrwError.SaveAsCatalog = "建立目錄之前,目前視圖必需存為.CATDrawing 檔案";
+
+CATDrwError.InvalidProfile = "目前斷面是無效的.\n 請在結束編輯模式前修正它";
+
+CATDrwError.InvalidViewDefinition = "定義視圖的投影面不允許斷面修改.\n 請修改此視圖的定義平面.";
+
+CATDrwError.InvalidIsolatedView = "所產生視圖已獨立.\n 不允許斷面修改.";
+
+CATDrwError.LockedView = "所產生的視圖已鎖住. \n 斷面不允許修改.";
+
+CATDrwError.GenBalloonInvalidAssembly = "球形符號只有在組立視圖時才可使用";
+
+CATDrwError.GenBalloonNoNumbering = "沒有球形符號產生: 請檢查您的組立分件已有數值";
+
+CATDrwError.SubOperatorWarning = "A broken (or breakout) was applied on the view resulting from this callout. 
+Be aware that the specifications of the broken (or breakout) operation will remain the same, whereas the 
+geometry may be modified accordingly to the callout modification.";
+
+CATDrwError.Invalid3DProfile = "在空間中定義斷面的草圖無效.";
+
+CATDrwError.ProfileDefinedIn3D = "您想要編輯的斷面是在空間中的. 請使用編輯 / 鏈結 
+來開啟相關文件並修改斷面.";
+
+CATDrwError.ChangeExactToCgr = "在動作中繪圖可能遺漏了部份修飾元素.";
+
+CATDrwError.ViewIsFromCGR = "您的設定沒有相關.";
+
+CATDrwError.CreateCGRView = "將要依 CGR 產生視圖. 您要繼續嗎 ?";
+
+CATDrwError.CanNotResetToStandardProperties = "當選擇一或多個元素時無法重設標準性質.";
+
+CATDrwError.WireAndOccCullWarning = "You are about to use the Occlusion Culling capacity, with the 'Project 3D Wireframe' option activated.
+For proper results, make sure your wireframe elements are present in CGR data.
+This is the case if you activated the 'Save lineic elements in cache' option from
+Tools > Options > General > Display > Performances before the creation of CGR data
+(i.e. before you launched the part or product in Visualization mode).
+If not, you need to activate this option and then re-create the CGR data.
+See the Generative Drafting User's Guide for more information.";
+
+CATDrwError.IncompatibleRasterAndViewOrientation = "At least one of the selected views has a specific orientation,
+which is incompatible with view generation as raster.
+Set the angle value to 0, and then choose raster mode.";
+
+CATDrwError.NotAccessibleDirMessage = "Make sure the selected file is available on user's environments. Refer to:
+Administration Tasks > Setting Standard Parameters > Pattern Definition
+in the Interactive Drafting user's guide for more information.";
+
+CATDrwError.ReplaceError = "One or several of the Part instances referenced by the view can not be found in the new document";
+
+CATDrwError.TPSView = "Profile modifications are not allowed for views from 3D.";
+
+CATDrwError.NoNewScene = "It is impossible to Generate view from new scenes.";
+
+CATDrwError.EditCalloutWithBroken = "You are going to edit a callout that belongs to a broken view: 
+The profile will be translated as if in the unbroken view, whereas the generated geometry will remain in the
+broken configuration." ;
+
+CATDrwError.IncompatibleViewLinks = "Creating views referencing different instances of exploded products is not allowed in VPM/LCA context
+(all generated views must reference the same 3D elements).
+Creating views referencing VPM sessions, DMU components or new scenes is not allowed in VPM/LCA context.";
+
+CATDrwError.NotTheSameDoc = "You cannot modify the links of views that do not point to the same 3D document.";
+
+CATDrwError.DocNotLoaded = "The 3D pointed document is not loaded. 
+Use the Edit\links command or File\Desk in order to load it.";
+
+CATDrwError.CorruptedPreV5R15GAModel = "This model contains pre V5R15 GA data that is no more supported in V5R15 GA level of code.\nThis model cannot be read in V5R15 GA level of code";

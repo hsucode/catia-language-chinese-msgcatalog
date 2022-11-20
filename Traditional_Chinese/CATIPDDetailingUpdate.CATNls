@@ -1,0 +1,60 @@
+BatchHelpMsg="        
+       
+¥Îªk: 
+  -projects   :  Generates information (Project Name, Project ID, etc) on all the projects in the database 
+                 in a text file labelled \"DetailingUpdateProjectsInfo.txt\" 
+                 The location of this file can be found by running the batch with the \"-outputDir\" option
+  xxxxx       :  Where \"xxxxx\" is the project ID obtained from the file \"DetailingUpdateProjectsInfo.txt\" 
+                 This updates all the detailing information in the project corresponding to ID \"xxxxx\" 
+                 A Result file and a Trace file are generated after running this update
+                 The location of these files can be found by running the batch with the \"-outputDir\" option
+                 The Result file will be labelled as \"DetailingUpdateResults_<Date_Time_Stamp>_<ProjectName>.txt \" 
+                 The Trace file will be labelled as \"DetailingUpdateTraces_<Date_Time_Stamp>_<ProjectName>.txt \"  
+  -outputDir  :  Prints the directory where all the output files are created        
+  
+  -h          :  This help 
+  -help       :  Same as -h
+  -?          :  Same as -h
+  -UpdateFlexibility : This option will convert product and resources  to flexible mode . 
+                       Sample Use :\n\t\t\t\tCATIPDDetailingUpdate -UpdateFlexibility 562a8d16-7fca-4854-b7b9-c3135679f960@XDOErgoProject 
+
+       
+";
+NewBatchHelpMsg="
+     
+Options:
+
+  -projectID ID      : Option used to supply the ID of the project to execute on
+  -processID ID      : Option used to supply the ID of the process to execute on
+  -blobID    ID      : Option used to supply the ID of the detailing to execute on
+  -UpdateFlexibility : Option used to convert product and resources to flexible mode during loading & saving of a detailing
+                
+Usage: 
+
+  -h            : This mode prints out this help message
+  -help         : Same as -h
+  -?            : Same as -h
+  -outputDir    : This mode obtains and prints the directory name where all the output log files are created        
+  -projectsInfo : This mode generates information (Project Name, Project ID, etc) on all the projects in the database
+                    This information is written out in a log file labelled 'DetailingUpdateResults_<Date_Time_Stamp>.txt ' 
+                    Sample Usage: 
+                      'CATIPDDetailingUpdate -projectsInfo'
+  -blobInfo     : This mode generates information (Process Name, ID, Blob Name, ID, Release & Service Pack Level, etc) of all the detailing in a particular project
+                    This information is written out in a log file labelled 'DetailingUpdateResults_<Date_Time_Stamp>.txt' 
+                    The information in the log file is tab formatted so that it can be imported into a MS Excel file                        
+                    The ID of the project whose detailing information is required must be supplied using the '-projectID' option
+                    Sample Usage: 
+                      'CATIPDDetailingUpdate -blobInfo -projectID ProjectID'
+  -projectID    : This mode is the default mode (if the '-projectsInfo' or '-blobInfo' option is not supplied) and updates (loads & saved detailing) the detailing information in the project
+                    This update information is written out in two log files labelled 'DetailingUpdateResults_<Date_Time_Stamp>.txt' and 'DetailingUpdateTraces_<Date_Time_Stamp>.txt'
+                    Sample Usage: 
+                      'CATIPDDetailingUpdate -projectID ProjectID'
+                         This updates all the detailing in the project with ID 'ProjectID'
+                      'CATIPDDetailingUpdate -projectID ProjectID -processID ProcessID'
+                         This updates all the detailing at the process with ID 'ProcessID' in the project with ID 'ProjectID'
+                      'CATIPDDetailingUpdate -projectID ProjectID -processID ProcessID -blobID BlobID'
+                         This updates the detailing with ID 'BlobID' at the process with ID 'ProcessID' in the project with ID 'ProjectID'
+";
+
+
+

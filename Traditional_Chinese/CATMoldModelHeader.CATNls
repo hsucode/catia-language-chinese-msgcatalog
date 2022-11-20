@@ -1,0 +1,1043 @@
+//---------------------------------------------------
+// Ressource File for CATMoldModelHeader Class
+// En_US
+//  30/03/2000 : fdm; Suppression de PlateSketchHeader
+//  26/05/2000 : cqo; "GateHeader" est decompose en "GateCreationHeader" et
+//					  "GateEditionHeader"
+//  05/07/2000 : jcb; Ajout commande delete et AnglePin
+//  19/07/2000 : jcb; Ajout commande split
+//  06/09/2000 : jcb ; ajout split user component
+//  14/09/2000 : fdm; Add MoldSpaceMeasureBetweenHeader et MoldSpaceMeasureEdgeHeader
+//  24/10/2000 : jcb; ajout split Ejector et EjectorPin
+//  25/10/2000 : mlh; "CoolantChannelHeader" est decompose en "CoolantChannelCreationHeader" et
+//					  "CoolantChannelEditionHeader"
+//  26/10/2000 : lch; Ajout composants V5R6
+//  08/11/2000 ; fdm; Ajout EditComponent
+//  17/11/2000 : jcb; Ajout split CorePin, EjectorSleeve, Insert, SpruePuller
+//  20/11/2000 : jcb; SplitInsertHeader est decompose en SplitInsertNoSurfHeader,
+//                    SplitInsertCavitySurfHeader et SplitInsertCoreSurfHeader
+//  21/11/2000 ; fdm; Evolution EditComponent
+//  28/11/2000 ; lch; Remplace Pillar par Support Pillar
+//  18/01/2001 ; lch; Remplace "Creates a new mold plates" par "Creates a new mold"
+//  15/03/2001 ; lch; Ajout O-Ring
+//  29/05/2001 ; lch; Ajout DrillComponent command
+//  27/09/2001 ; fdm; CodeReview: menage
+//  03/10/2001 ; lch; Ajout Slider
+//  08/10/2001 ; lch; Ajout Retainer
+//  10/10/2001 ; lch; Ajout Plug
+//  22/05/2002 ; lch; Ajout Spring
+//  16/07/2002 ; lch; Ajout MoldEdition
+//  28/10/2002 ; lch; Ajout ExplodeHoles command
+//  18/11/2002 ; bga; Ajout "Add New Instance" dans le menu contextuel du composant.
+//  19/11/2002 ; bga; Ajout d'1 header par composant pour se brancher directement sur la commande d'edition
+//  13/12/2002 : fdm; R11: FinalGenerationHoles
+//  08/04/2003 ; bga; R12: Ajout Baffle
+//  03/12/2003 ; lch; R14: Ajout "Copy Reference" dans le menu contextuel du composant.
+//  08/12/2003 ; juw; R14: Ajout de "list by list" dans Drill component.
+//  15/01/2004 ; lch; R14: Ajout "Replace Component" dans le menu contextuel du composant.
+//  14/03/2005 ; lch; R16: Ajout "Activate/Deactivate Tooling Component" dans le menu contextuel du composant.
+//  22/03/2005 : fdm; R16; BMWAddRemove
+//---------------------------------------------------------------------------------------------------
+
+// =================================================
+// Palette MoldBase + Plate
+// =================================================
+// == Plates == 
+CATMoldModelHeader.MoldEdition.Title="編輯模具";
+CATMoldModelHeader.PlatesHeader.Title="模具平板...";
+CATMoldModelHeader.PlatesHeader.Help="建立模具平板.";
+CATMoldModelHeader.PlatesHeader.LongHelp="平板 \n 建立模具平板.";
+CATMoldModelHeader.PlatesHeader.ShortHelp="建立新模具";
+// == Plate == 
+CATMoldModelHeader.PlateHeader.Title="新模具平板...";
+CATMoldModelHeader.PlateHeader.Help="建立新模具平板.";
+CATMoldModelHeader.PlateHeader.LongHelp="平板 \n 建立新模具平板.";
+CATMoldModelHeader.PlateHeader.ShortHelp="增加模具平板";
+// == Insert == 
+CATMoldModelHeader.InsertHeader.Title="新入子 ...";
+CATMoldModelHeader.InsertHeader.Help="建立新入子.";
+CATMoldModelHeader.InsertHeader.LongHelp="平板 \n 建立新入子.";
+CATMoldModelHeader.InsertHeader.ShortHelp="建立新入子";
+CATMoldModelHeader.InsertEditHeader.Title="編輯分件";
+CATMoldModelHeader.InsertEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.InsertEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.InsertEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.InsertEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.InsertEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.InsertEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.InsertEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldInsertNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldInsertNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldInsertNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldInsertNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldInsertRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldInsertRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldInsertRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldInsertRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldInsertReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldInsertReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldInsertReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldInsertReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == Slider == 
+CATMoldModelHeader.SliderHeader.Title="新滑塊...";
+CATMoldModelHeader.SliderHeader.Help="建立新滑塊.";
+CATMoldModelHeader.SliderHeader.LongHelp="平板 \n 建立新滑塊.";
+CATMoldModelHeader.SliderHeader.ShortHelp="新增滑塊";
+CATMoldModelHeader.SliderEditHeader.Title="編輯滑塊分件";
+CATMoldModelHeader.SliderEditHeader.Help="編輯已存滑塊分件";
+CATMoldModelHeader.SliderEditHeader.LongHelp="模具 \n 編輯已存滑塊分件.";
+CATMoldModelHeader.SliderEditHeader.ShortHelp="編輯滑塊分件";
+CATMoldModelHeader.SliderEditGroupHeader.Title="編輯滑塊群組";
+CATMoldModelHeader.SliderEditGroupHeader.Help="編輯已存滑塊群組";
+CATMoldModelHeader.SliderEditGroupHeader.LongHelp="模具 \n 編輯已存滑塊群組.";
+CATMoldModelHeader.SliderEditGroupHeader.ShortHelp="編輯滑塊群組";
+CATMoldModelHeader.CATMldSliderNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldSliderNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldSliderNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldSliderNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldSliderRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldSliderRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSliderRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSliderRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldSliderReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldSliderReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSliderReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSliderReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == Retainer == 
+CATMoldModelHeader.RetainerHeader.Title="新定位器...";
+CATMoldModelHeader.RetainerHeader.Help="建立新定位器.";
+CATMoldModelHeader.RetainerHeader.LongHelp="平板 \n 建立新定位器.";
+CATMoldModelHeader.RetainerHeader.ShortHelp="新增定位器";
+CATMoldModelHeader.RetainerEditHeader.Title="編輯定位器分件";
+CATMoldModelHeader.RetainerEditHeader.Help="編輯已存定位器分件";
+CATMoldModelHeader.RetainerEditHeader.LongHelp="平板 \n 編輯已存定位器分件.";
+CATMoldModelHeader.RetainerEditHeader.ShortHelp="編輯定位器分件";
+CATMoldModelHeader.RetainerEditGroupHeader.Title="編輯定位器群組";
+CATMoldModelHeader.RetainerEditGroupHeader.Help="編輯已存定位器群組";
+CATMoldModelHeader.RetainerEditGroupHeader.LongHelp="模具 \n 編輯已存定位器群組.";
+CATMoldModelHeader.RetainerEditGroupHeader.ShortHelp="編輯定位器群組.";
+CATMoldModelHeader.CATMldRetainerNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldRetainerNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldRetainerNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldRetainerNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldRetainerRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldRetainerRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldRetainerRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldRetainerRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldRetainerReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldRetainerReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldRetainerReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldRetainerReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+
+// =================================================
+// Palette Locating
+// =================================================
+// == LocatingRing == 
+CATMoldModelHeader.LocatingRingHeader.Title="定位環...";
+CATMoldModelHeader.LocatingRingHeader.Help="增加定位環";
+CATMoldModelHeader.LocatingRingHeader.LongHelp="模具 \n 增加新定位環.";
+CATMoldModelHeader.LocatingRingHeader.ShortHelp="增加定位環";
+CATMoldModelHeader.LocatingRingEditHeader.Title="編輯分件";
+CATMoldModelHeader.LocatingRingEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.LocatingRingEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.LocatingRingEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.LocatingRingEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.LocatingRingEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.LocatingRingEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.LocatingRingEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldLocatingRingNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldLocatingRingNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldLocatingRingNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldLocatingRingNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldLocatingRingRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldLocatingRingRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldLocatingRingRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldLocatingRingRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldLocatingRingReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldLocatingRingReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldLocatingRingReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldLocatingRingReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == Sleeve == 
+CATMoldModelHeader.SleeveHeader.Title="襯套 ...";
+CATMoldModelHeader.SleeveHeader.Help="增加襯套 ";
+CATMoldModelHeader.SleeveHeader.LongHelp="模具 \n 增加新襯套.";
+CATMoldModelHeader.SleeveHeader.ShortHelp="增加襯套";
+CATMoldModelHeader.SleeveEditHeader.Title="編輯分件";
+CATMoldModelHeader.SleeveEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.SleeveEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.SleeveEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.SleeveEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.SleeveEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.SleeveEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.SleeveEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldSleeveNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldSleeveNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldSleeveNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldSleeveNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldSleeveRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldSleeveRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSleeveRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSleeveRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldSleeveReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldSleeveReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSleeveReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSleeveReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == Interlock == 
+CATMoldModelHeader.InterlockHeader.Title="內部鎖定裝置...";
+CATMoldModelHeader.InterlockHeader.Help="增加內部鎖定裝置";
+CATMoldModelHeader.InterlockHeader.LongHelp="模具 \n 增加新內部鎖定裝置.";
+CATMoldModelHeader.InterlockHeader.ShortHelp="增加內部鎖定裝置";
+CATMoldModelHeader.InterlockEditHeader.Title="編輯分件";
+CATMoldModelHeader.InterlockEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.InterlockEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.InterlockEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.InterlockEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.InterlockEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.InterlockEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.InterlockEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldInterlockNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldInterlockNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldInterlockNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldInterlockNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldInterlockRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldInterlockRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldInterlockRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldInterlockRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldInterlockReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldInterlockReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldInterlockReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldInterlockReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == Spacer == 
+CATMoldModelHeader.SpacerHeader.Title="間隔塊...";
+CATMoldModelHeader.SpacerHeader.Help="增加間隔塊";
+CATMoldModelHeader.SpacerHeader.LongHelp="模具 \n 增加新間隔塊.";
+CATMoldModelHeader.SpacerHeader.ShortHelp="增加間隔塊";
+CATMoldModelHeader.SpacerEditHeader.Title="編輯分件";
+CATMoldModelHeader.SpacerEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.SpacerEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.SpacerEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.SpacerEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.SpacerEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.SpacerEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.SpacerEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldSpacerNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldSpacerNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldSpacerNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldSpacerNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldSpacerRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldSpacerRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSpacerRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSpacerRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldSpacerReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldSpacerReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSpacerReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSpacerReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == DowelPin == 
+CATMoldModelHeader.DowelPinHeader.Title="內部銷...";
+CATMoldModelHeader.DowelPinHeader.Help="增加內部銷";
+CATMoldModelHeader.DowelPinHeader.LongHelp="模具 \n 增加新內部銷.";
+CATMoldModelHeader.DowelPinHeader.ShortHelp="增加內部銷";
+CATMoldModelHeader.DowelPinEditHeader.Title="編輯分件";
+CATMoldModelHeader.DowelPinEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.DowelPinEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.DowelPinEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.DowelPinEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.DowelPinEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.DowelPinEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.DowelPinEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldDowelPinNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldDowelPinNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldDowelPinNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldDowelPinNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldDowelPinRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldDowelPinRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldDowelPinRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldDowelPinRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldDowelPinReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldDowelPinReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldDowelPinReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldDowelPinReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+
+// =================================================
+// Palette Screws
+// =================================================
+
+// == CapScrew == 
+CATMoldModelHeader.CapScrewHeader.Title="螺絲頭...";
+CATMoldModelHeader.CapScrewHeader.Help="增加螺絲頭";
+CATMoldModelHeader.CapScrewHeader.LongHelp="模具 \n 增加新螺絲頭.";
+CATMoldModelHeader.CapScrewHeader.ShortHelp="增加螺絲頭";
+CATMoldModelHeader.CapScrewEditHeader.Title="編輯分件";
+CATMoldModelHeader.CapScrewEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.CapScrewEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.CapScrewEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.CapScrewEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.CapScrewEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.CapScrewEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.CapScrewEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldCapScrewNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldCapScrewNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldCapScrewNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldCapScrewNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldCapScrewRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldCapScrewRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldCapScrewRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldCapScrewRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldCapScrewReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldCapScrewReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldCapScrewReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldCapScrewReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == CountersunkScrew == 
+CATMoldModelHeader.CountersunkScrewHeader.Title="沉頭螺絲...";
+CATMoldModelHeader.CountersunkScrewHeader.Help="增加沉頭螺絲";
+CATMoldModelHeader.CountersunkScrewHeader.LongHelp="模具 \n 增加新沉頭螺絲.";
+CATMoldModelHeader.CountersunkScrewHeader.ShortHelp="增加沉頭螺絲";
+CATMoldModelHeader.CountersunkScrewEditHeader.Title="編輯分件";
+CATMoldModelHeader.CountersunkScrewEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.CountersunkScrewEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.CountersunkScrewEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.CountersunkScrewEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.CountersunkScrewEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.CountersunkScrewEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.CountersunkScrewEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldCountersunkScrewNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldCountersunkScrewNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldCountersunkScrewNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldCountersunkScrewNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldCountersunkScrewRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldCountersunkScrewRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldCountersunkScrewRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldCountersunkScrewRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldCountersunkScrewReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldCountersunkScrewReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldCountersunkScrewReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldCountersunkScrewReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == LockingScrew == 
+CATMoldModelHeader.LockingScrewHeader.Title="鎖定螺絲 ...";
+CATMoldModelHeader.LockingScrewHeader.Help="增加鎖定螺絲 ";
+CATMoldModelHeader.LockingScrewHeader.LongHelp="模具 \n 增加鎖定螺絲.";
+CATMoldModelHeader.LockingScrewHeader.ShortHelp="增加鎖定螺絲";
+CATMoldModelHeader.LockingScrewEditHeader.Title="編輯分件";
+CATMoldModelHeader.LockingScrewEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.LockingScrewEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.LockingScrewEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.LockingScrewEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.LockingScrewEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.LockingScrewEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.LockingScrewEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldLockingScrewNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldLockingScrewNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldLockingScrewNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldLockingScrewNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldLockingScrewRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldLockingScrewRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldLockingScrewRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldLockingScrewRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldLockingScrewReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldLockingScrewReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldLockingScrewReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldLockingScrewReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == BindingScrew == 
+CATMoldModelHeader.BindingScrewHeader.Title="接合螺絲...";
+CATMoldModelHeader.BindingScrewHeader.Help="增加接合螺絲";
+CATMoldModelHeader.BindingScrewHeader.LongHelp="模具 \n 增加新接合螺絲.";
+CATMoldModelHeader.BindingScrewHeader.ShortHelp="增加接合螺絲";
+CATMoldModelHeader.BindingScrewEditHeader.Title="編輯分件";
+CATMoldModelHeader.BindingScrewEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.BindingScrewEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.BindingScrewEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.BindingScrewEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.BindingScrewEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.BindingScrewEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.BindingScrewEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldBindingScrewNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldBindingScrewNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldBindingScrewNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldBindingScrewNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldBindingScrewRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldBindingScrewRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldBindingScrewRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldBindingScrewRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldBindingScrewReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldBindingScrewReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldBindingScrewReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldBindingScrewReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == RoundScrew == 
+CATMoldModelHeader.RoundScrewHeader.Title="圓形螺絲...";
+CATMoldModelHeader.RoundScrewHeader.Help="增加圓形螺絲";
+CATMoldModelHeader.RoundScrewHeader.LongHelp="模具 \n 增加新圓形螺絲.";
+CATMoldModelHeader.RoundScrewHeader.ShortHelp="增加圓形螺絲";
+CATMoldModelHeader.RoundScrewEditHeader.Title="編輯分件";
+CATMoldModelHeader.RoundScrewEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.RoundScrewEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.RoundScrewEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.RoundScrewEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.RoundScrewEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.RoundScrewEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.RoundScrewEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldRoundScrewNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldRoundScrewNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldRoundScrewNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldRoundScrewNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldRoundScrewRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldRoundScrewRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldRoundScrewRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldRoundScrewRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldRoundScrewReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldRoundScrewReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldRoundScrewReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldRoundScrewReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+
+// =================================================
+// Palette Ejector
+// =================================================
+
+
+// == Ejector == 
+CATMoldModelHeader.EjectorHeader.Title="射出器...";
+CATMoldModelHeader.EjectorHeader.Help="增加射出器";
+CATMoldModelHeader.EjectorHeader.LongHelp="模具 \n 增加新射出器.";
+CATMoldModelHeader.EjectorHeader.ShortHelp="增加射出器";
+CATMoldModelHeader.EjectorEditHeader.Title="編輯分件";
+CATMoldModelHeader.EjectorEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.EjectorEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.EjectorEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.EjectorEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.EjectorEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.EjectorEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.EjectorEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldEjectorNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldEjectorNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldEjectorNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldEjectorNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldEjectorRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldEjectorRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldEjectorRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldEjectorRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldEjectorReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldEjectorReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldEjectorReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldEjectorReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == EjectorPin == 
+CATMoldModelHeader.EjectorPinHeader.Title="射出器銷...";
+CATMoldModelHeader.EjectorPinHeader.Help="增加射出器銷";
+CATMoldModelHeader.EjectorPinHeader.LongHelp="模具 \n 增加新射出器銷.";
+CATMoldModelHeader.EjectorPinHeader.ShortHelp="增加射出器銷";
+CATMoldModelHeader.EjectorPinEditHeader.Title="編輯分件";
+CATMoldModelHeader.EjectorPinEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.EjectorPinEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.EjectorPinEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.EjectorPinEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.EjectorPinEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.EjectorPinEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.EjectorPinEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldEjectorPinNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldEjectorPinNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldEjectorPinNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldEjectorPinNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldEjectorPinRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldEjectorPinRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldEjectorPinRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldEjectorPinRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldEjectorPinReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldEjectorPinReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldEjectorPinReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldEjectorPinReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == EjectorSleeve == 
+CATMoldModelHeader.EjectorSleeveHeader.Title="射出器套筒...";
+CATMoldModelHeader.EjectorSleeveHeader.Help="增加射出器套筒";
+CATMoldModelHeader.EjectorSleeveHeader.LongHelp="模具 \n增加新射出器套筒.";
+CATMoldModelHeader.EjectorSleeveHeader.ShortHelp="增加射出器套筒";
+CATMoldModelHeader.EjectorSleeveEditHeader.Title="編輯分件";
+CATMoldModelHeader.EjectorSleeveEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.EjectorSleeveEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.EjectorSleeveEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.EjectorSleeveEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.EjectorSleeveEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.EjectorSleeveEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.EjectorSleeveEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldEjectorSleeveNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldEjectorSleeveNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldEjectorSleeveNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldEjectorSleeveNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldEjectorSleeveRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldEjectorSleeveRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldEjectorSleeveRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldEjectorSleeveRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldEjectorSleeveReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldEjectorSleeveReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldEjectorSleeveReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldEjectorSleeveReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == EjectorFlat == 
+CATMoldModelHeader.EjectorFlatHeader.Title="平坦射出器...";
+CATMoldModelHeader.EjectorFlatHeader.Help="增加平坦射出器";
+CATMoldModelHeader.EjectorFlatHeader.LongHelp="模具 \n 增加新平坦射出器.";
+CATMoldModelHeader.EjectorFlatHeader.ShortHelp="增加平坦射出器";
+CATMoldModelHeader.EjectorFlatEditHeader.Title="編輯分件";
+CATMoldModelHeader.EjectorFlatEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.EjectorFlatEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.EjectorFlatEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.EjectorFlatEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.EjectorFlatEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.EjectorFlatEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.EjectorFlatEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldEjectorFlatNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldEjectorFlatNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldEjectorFlatNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldEjectorFlatNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldEjectorFlatRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldEjectorFlatRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldEjectorFlatRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldEjectorFlatRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldEjectorFlatReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldEjectorFlatReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldEjectorFlatReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldEjectorFlatReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == SlideBlock == 
+CATMoldModelHeader.SlideBlockHeader.Title="滑塊...";
+CATMoldModelHeader.SlideBlockHeader.Help="增加滑塊";
+CATMoldModelHeader.SlideBlockHeader.LongHelp="模具 \n 增加新滑塊.";
+CATMoldModelHeader.SlideBlockHeader.ShortHelp="增加滑塊";
+CATMoldModelHeader.SlideBlockEditHeader.Title="編輯分件";
+CATMoldModelHeader.SlideBlockEditHeader.Help="編輯已存分件";
+CATMoldModelHeader.SlideBlockEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.SlideBlockEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.SlideBlockEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.SlideBlockEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.SlideBlockEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.SlideBlockEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldSlideBlockNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldSlideBlockNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldSlideBlockNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldSlideBlockNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldSlideBlockRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldSlideBlockRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSlideBlockRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSlideBlockRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldSlideBlockReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldSlideBlockReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSlideBlockReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSlideBlockReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == KnockOut == 
+CATMoldModelHeader.KnockOutHeader.Title="退出塊 ...";
+CATMoldModelHeader.KnockOutHeader.Help="增加退出塊 ";
+CATMoldModelHeader.KnockOutHeader.LongHelp="模具 \n 增加新的退出塊 .";
+CATMoldModelHeader.KnockOutHeader.ShortHelp="增加退出塊 ";
+CATMoldModelHeader.KnockOutEditHeader.Title="編輯分件";
+CATMoldModelHeader.KnockOutEditHeader.Help="編輯已存分件.";
+CATMoldModelHeader.KnockOutEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.KnockOutEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.KnockOutEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.KnockOutEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.KnockOutEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.KnockOutEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldKnockOutNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldKnockOutNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldKnockOutNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldKnockOutNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldKnockOutRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldKnockOutRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldKnockOutRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldKnockOutRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldKnockOutReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldKnockOutReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldKnockOutReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldKnockOutReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == CorePin == 
+CATMoldModelHeader.CorePinHeader.Title="核心銷 ...";
+CATMoldModelHeader.CorePinHeader.Help="增加核心銷";
+CATMoldModelHeader.CorePinHeader.LongHelp="模具 \n 增加核心銷.";
+CATMoldModelHeader.CorePinHeader.ShortHelp="增加核心銷";
+CATMoldModelHeader.CorePinEditHeader.Title="編輯分件";
+CATMoldModelHeader.CorePinEditHeader.Help="編輯已存分件.";
+CATMoldModelHeader.CorePinEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.CorePinEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.CorePinEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.CorePinEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.CorePinEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.CorePinEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldCorePinNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldCorePinNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldCorePinNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldCorePinNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldCorePinRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldCorePinRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldCorePinRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldCorePinRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldCorePinReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldCorePinReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldCorePinReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldCorePinReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == AnglePin == 
+CATMoldModelHeader.AnglePinHeader.Title="角度銷 ...";
+CATMoldModelHeader.AnglePinHeader.Help="增加角度銷";
+CATMoldModelHeader.AnglePinHeader.LongHelp="模具 \n 增加角度銷.";
+CATMoldModelHeader.AnglePinHeader.ShortHelp="增加角度銷";
+CATMoldModelHeader.AnglePinEditHeader.Title="編輯分件";
+CATMoldModelHeader.AnglePinEditHeader.Help="編輯已存分件.";
+CATMoldModelHeader.AnglePinEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.AnglePinEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.AnglePinEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.AnglePinEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.AnglePinEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.AnglePinEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldAnglePinNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldAnglePinNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldAnglePinNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldAnglePinNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldAnglePinRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldAnglePinRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldAnglePinRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldAnglePinRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldAnglePinReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldAnglePinReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldAnglePinReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldAnglePinReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == StopPin == 
+CATMoldModelHeader.StopPinHeader.Title="停止銷 ...";
+CATMoldModelHeader.StopPinHeader.Help="增加停止銷";
+CATMoldModelHeader.StopPinHeader.LongHelp="模具 \n 增加停止銷.";
+CATMoldModelHeader.StopPinHeader.ShortHelp="增加停止銷";
+CATMoldModelHeader.StopPinEditHeader.Title="編輯分件";
+CATMoldModelHeader.StopPinEditHeader.Help="編輯已存分件.";
+CATMoldModelHeader.StopPinEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.StopPinEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.StopPinEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.StopPinEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.StopPinEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.StopPinEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldStopPinNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldStopPinNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldStopPinNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldStopPinNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldStopPinRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldStopPinRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldStopPinRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldStopPinRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldStopPinReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldStopPinReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldStopPinReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldStopPinReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+
+// =================================================
+// Palette Injector
+// =================================================
+// == Pillar == 
+CATMoldModelHeader.SupportPillarHeader.Title="支撐柱 ...";
+CATMoldModelHeader.SupportPillarHeader.Help="增加支撐柱";
+CATMoldModelHeader.SupportPillarHeader.LongHelp="模具 \n 增加支撐柱.";
+CATMoldModelHeader.SupportPillarHeader.ShortHelp="增加支撐柱";
+CATMoldModelHeader.SupportPillarEditHeader.Title="編輯分件";
+CATMoldModelHeader.SupportPillarEditHeader.Help="編輯已存分件.";
+CATMoldModelHeader.SupportPillarEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.SupportPillarEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.SupportPillarEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.SupportPillarEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.SupportPillarEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.SupportPillarEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldSupportPillarNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldSupportPillarNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldSupportPillarNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldSupportPillarNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldSupportPillarRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldSupportPillarRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSupportPillarRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSupportPillarRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldSupportPillarReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldSupportPillarReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSupportPillarReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSupportPillarReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == SprueBushing == 
+CATMoldModelHeader.SprueBushingHeader.Title="澆注孔襯套 ...";
+CATMoldModelHeader.SprueBushingHeader.Help="增加澆注孔襯套";
+CATMoldModelHeader.SprueBushingHeader.LongHelp="模具 \n 增加澆注孔襯套.";
+CATMoldModelHeader.SprueBushingHeader.ShortHelp="增加澆注孔襯套";
+CATMoldModelHeader.SprueBushingEditHeader.Title="編輯分件";
+CATMoldModelHeader.SprueBushingEditHeader.Help="編輯已存分件.";
+CATMoldModelHeader.SprueBushingEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.SprueBushingEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.SprueBushingEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.SprueBushingEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.SprueBushingEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.SprueBushingEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldSprueBushingNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldSprueBushingNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldSprueBushingNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldSprueBushingNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldSprueBushingRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldSprueBushingRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSprueBushingRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSprueBushingRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldSprueBushingReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldSprueBushingReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSprueBushingReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSprueBushingReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == SpruePuller == 
+CATMoldModelHeader.SpruePullerHeader.Title="澆注孔拉桿 ...";
+CATMoldModelHeader.SpruePullerHeader.Help="增加澆注孔拉桿 ";
+CATMoldModelHeader.SpruePullerHeader.LongHelp="模具 \n 增加澆注孔拉桿 .";
+CATMoldModelHeader.SpruePullerHeader.ShortHelp="增加澆注孔拉桿 ";
+CATMoldModelHeader.SpruePullerEditHeader.Title="編輯分件";
+CATMoldModelHeader.SpruePullerEditHeader.Help="編輯已存分件.";
+CATMoldModelHeader.SpruePullerEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.SpruePullerEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.SpruePullerEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.SpruePullerEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.SpruePullerEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.SpruePullerEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldSpruePullerNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldSpruePullerNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldSpruePullerNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldSpruePullerNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldSpruePullerRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldSpruePullerRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSpruePullerRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSpruePullerRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldSpruePullerReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldSpruePullerReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSpruePullerReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSpruePullerReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == O-Ring == 
+CATMoldModelHeader.CATMldORingHeaderHdr.Title=" O 型環...";
+CATMoldModelHeader.CATMldORingHeaderHdr.Help="增加  O 型環";
+CATMoldModelHeader.CATMldORingHeaderHdr.LongHelp="模具 \n 增加新的  O 型環.";
+CATMoldModelHeader.CATMldORingHeaderHdr.ShortHelp="增加  O 型環";
+CATMoldModelHeader.CATMldORingEditHeaderHdr.Title="編輯  O 型環 分件";
+CATMoldModelHeader.CATMldORingEditHeaderHdr.Help="編輯已存  O 型環 分件";
+CATMoldModelHeader.CATMldORingEditHeaderHdr.LongHelp="模具 \n 編輯已存  O 型環 分件";
+CATMoldModelHeader.CATMldORingEditHeaderHdr.ShortHelp="編輯  O 型環 分件";
+CATMoldModelHeader.CATMldORingNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldORingNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldORingNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldORingNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldORingRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldORingRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldORingRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldORingRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldORingReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldORingReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldORingReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldORingReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == Plug == 
+CATMoldModelHeader.CATMldPlugHeader.Title="銷...";
+CATMoldModelHeader.CATMldPlugHeader.Help="新增銷";
+CATMoldModelHeader.CATMldPlugHeader.LongHelp="模具 \n 新增銷.";
+CATMoldModelHeader.CATMldPlugHeader.ShortHelp="新增銷";
+CATMoldModelHeader.CATMldPlugEditHeader.Title="編輯銷分件";
+CATMoldModelHeader.CATMldPlugEditHeader.Help="編輯已存銷分件";
+CATMoldModelHeader.CATMldPlugEditHeader.LongHelp="模具 \n 編輯已存銷分件.";
+CATMoldModelHeader.CATMldPlugEditHeader.ShortHelp="編輯銷分件";
+CATMoldModelHeader.CATMldPlugNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldPlugNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldPlugNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldPlugNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldPlugRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldPlugRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldPlugRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldPlugRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldPlugReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldPlugReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldPlugReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldPlugReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == Baffle == 
+CATMoldModelHeader.CATMldBaffleHeader.Title="阻尼板...";
+CATMoldModelHeader.CATMldBaffleHeader.Help="新增阻尼板";
+CATMoldModelHeader.CATMldBaffleHeader.LongHelp="模具 \n 新增阻尼板.";
+CATMoldModelHeader.CATMldBaffleHeader.ShortHelp="新增阻尼板";
+CATMoldModelHeader.CATMldBaffleEditHeader.Title="編輯阻尼板分件";
+CATMoldModelHeader.CATMldBaffleEditHeader.Help="編輯現存阻尼板分件";
+CATMoldModelHeader.CATMldBaffleEditHeader.LongHelp="模具 \n 編輯現存阻尼板分件";
+CATMoldModelHeader.CATMldBaffleEditHeader.ShortHelp="編輯阻尼板分件";
+CATMoldModelHeader.CATMldBaffleNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldBaffleNewInstanceHeaderHdr.Help="在已存一組分件中新增元件";
+CATMoldModelHeader.CATMldBaffleNewInstanceHeaderHdr.LongHelp="模具 \n 在已存一組分件中新增元件";
+CATMoldModelHeader.CATMldBaffleNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldBaffleRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldBaffleRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldBaffleRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldBaffleRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldBaffleReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldBaffleReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldBaffleReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldBaffleReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == Gate == 
+CATMoldModelHeader.GateEditionHeader.Title="入口編輯 ...";
+CATMoldModelHeader.GateEditionHeader.Help="編輯入口";
+CATMoldModelHeader.GateEditionHeader.LongHelp="模具 \n 入口編輯 .";
+CATMoldModelHeader.GateEditionHeader.ShortHelp="編輯入口";
+CATMoldModelHeader.GateCreationHeader.Title="入口 ...";
+CATMoldModelHeader.GateCreationHeader.Help="增加入口";
+CATMoldModelHeader.GateCreationHeader.LongHelp="模具 \n 增加入口.";
+CATMoldModelHeader.GateCreationHeader.ShortHelp="增加入口";
+// == Runner == 
+CATMoldModelHeader.RunnerHeader.Title="滑塊 ...";
+CATMoldModelHeader.RunnerHeader.Help="增加滑塊";
+CATMoldModelHeader.RunnerHeader.LongHelp="模具 \n 增加滑塊.";
+CATMoldModelHeader.RunnerHeader.ShortHelp="增加滑塊";
+// == CoolantChannel == 
+CATMoldModelHeader.CoolantChannelEditionHeader.Title="冷卻管路編輯 ...";
+CATMoldModelHeader.CoolantChannelEditionHeader.Help="編輯冷卻管路";
+CATMoldModelHeader.CoolantChannelEditionHeader.LongHelp="模具 \n 編輯冷卻管路.";
+CATMoldModelHeader.CoolantChannelEditionHeader.ShortHelp="編輯冷卻管路";
+CATMoldModelHeader.CoolantChannelCreationHeader.Title="冷卻管路 ...";
+CATMoldModelHeader.CoolantChannelCreationHeader.Help="增加冷卻管路 ";
+CATMoldModelHeader.CoolantChannelCreationHeader.LongHelp="模具 \n 增加冷卻管路.";
+CATMoldModelHeader.CoolantChannelCreationHeader.ShortHelp="增加冷卻管路";
+
+// =================================================
+// Palette Guiding
+// =================================================
+// == LeaderPin == 
+CATMoldModelHeader.LeaderPinHeader.Title="導引銷 ...";
+CATMoldModelHeader.LeaderPinHeader.Help="增加導引銷 ";
+CATMoldModelHeader.LeaderPinHeader.LongHelp="模具 \n 增加導引銷 .";
+CATMoldModelHeader.LeaderPinHeader.ShortHelp="增加導引銷 ";
+CATMoldModelHeader.LeaderPinEditHeader.Title="編輯分件";
+CATMoldModelHeader.LeaderPinEditHeader.Help="編輯已存分件.";
+CATMoldModelHeader.LeaderPinEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.LeaderPinEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.LeaderPinEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.LeaderPinEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.LeaderPinEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.LeaderPinEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldLeaderPinNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldLeaderPinNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldLeaderPinNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldLeaderPinNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldLeaderPinRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldLeaderPinRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldLeaderPinRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldLeaderPinRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldLeaderPinReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldLeaderPinReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldLeaderPinReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldLeaderPinReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == Bushing == 
+CATMoldModelHeader.BushingHeader.Title="襯套 ...";
+CATMoldModelHeader.BushingHeader.Help="增加襯套";
+CATMoldModelHeader.BushingHeader.LongHelp="模具 \n 增加襯套 .";
+CATMoldModelHeader.BushingHeader.ShortHelp="增加襯套";
+CATMoldModelHeader.BushingEditHeader.Title="編輯分件";
+CATMoldModelHeader.BushingEditHeader.Help="編輯已存分件.";
+CATMoldModelHeader.BushingEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.BushingEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.BushingEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.BushingEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.BushingEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.BushingEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldBushingNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldBushingNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldBushingNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldBushingNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldBushingRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldBushingRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldBushingRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldBushingRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldBushingReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldBushingReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldBushingReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldBushingReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == GuidePin == 
+CATMoldModelHeader.GuidePinHeader.Title="導引銷 ...";
+CATMoldModelHeader.GuidePinHeader.Help="增加導引銷";
+CATMoldModelHeader.GuidePinHeader.LongHelp="模具 \n 增加導引銷.";
+CATMoldModelHeader.GuidePinHeader.ShortHelp="增加導引銷";
+CATMoldModelHeader.GuidePinEditHeader.Title="編輯分件";
+CATMoldModelHeader.GuidePinEditHeader.Help="編輯已存分件.";
+CATMoldModelHeader.GuidePinEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.GuidePinEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.GuidePinEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.GuidePinEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.GuidePinEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.GuidePinEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldGuidePinNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldGuidePinNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldGuidePinNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldGuidePinNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldGuidePinRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldGuidePinRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldGuidePinRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldGuidePinRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldGuidePinReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldGuidePinReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldGuidePinReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldGuidePinReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+
+
+// =================================================
+// Palette User
+// =================================================
+// == UserComponent == 
+CATMoldModelHeader.UserComponentHeader.Title="使用者分件...";
+CATMoldModelHeader.UserComponentHeader.Help="增加使用者分件";
+CATMoldModelHeader.UserComponentHeader.LongHelp="模具 \n 增加新使用者分件.";
+CATMoldModelHeader.UserComponentHeader.ShortHelp="增加使用者分件";
+CATMoldModelHeader.UserComponentEditHeader.Title="編輯分件";
+CATMoldModelHeader.UserComponentEditHeader.Help="編輯已存分件.";
+CATMoldModelHeader.UserComponentEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.UserComponentEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.UserComponentEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.UserComponentEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.UserComponentEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.UserComponentEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldUserComponentNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldUserComponentNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldUserComponentNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldUserComponentNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldUserComponentRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldUserComponentRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldUserComponentRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldUserComponentRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldUserComponentReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldUserComponentReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldUserComponentReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldUserComponentReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == EyeBolt == 
+CATMoldModelHeader.EyeBoltHeader.Title="吊耳 ...";
+CATMoldModelHeader.EyeBoltHeader.Help="增加吊耳";
+CATMoldModelHeader.EyeBoltHeader.LongHelp="模具 \n 增加吊耳.";
+CATMoldModelHeader.EyeBoltHeader.ShortHelp="增加吊耳";
+CATMoldModelHeader.EyeBoltEditHeader.Title="編輯分件";
+CATMoldModelHeader.EyeBoltEditHeader.Help="編輯已存分件.";
+CATMoldModelHeader.EyeBoltEditHeader.LongHelp="模具 \n 編輯已存分件.";
+CATMoldModelHeader.EyeBoltEditHeader.ShortHelp="編輯分件";
+CATMoldModelHeader.EyeBoltEditGroupHeader.Title="編輯群組";
+CATMoldModelHeader.EyeBoltEditGroupHeader.Help="編輯已存群組";
+CATMoldModelHeader.EyeBoltEditGroupHeader.LongHelp="模具 \n 編輯已存群組.";
+CATMoldModelHeader.EyeBoltEditGroupHeader.ShortHelp="編輯群組";
+CATMoldModelHeader.CATMldEyeBoltNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldEyeBoltNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldEyeBoltNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldEyeBoltNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldEyeBoltRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldEyeBoltRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldEyeBoltRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldEyeBoltRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldEyeBoltReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldEyeBoltReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldEyeBoltReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldEyeBoltReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+// == Spring == 
+CATMoldModelHeader.SpringHeader.Title="彈簧...";
+CATMoldModelHeader.SpringHeader.Help="新增彈簧.";
+CATMoldModelHeader.SpringHeader.LongHelp="平板 \n 增加新彈簧.";
+CATMoldModelHeader.SpringHeader.ShortHelp="新增彈簧";
+CATMoldModelHeader.SpringEditHeader.Title="編輯彈簧新分件";
+CATMoldModelHeader.SpringEditHeader.Help="編輯已存彈簧分件";
+CATMoldModelHeader.SpringEditHeader.LongHelp="模具 \n 編輯已存彈簧分件";
+CATMoldModelHeader.SpringEditHeader.ShortHelp="編輯彈簧分件";
+CATMoldModelHeader.SpringEditGroupHeader.Title="編輯彈簧群組";
+CATMoldModelHeader.SpringEditGroupHeader.Help="編輯已存彈簧群組";
+CATMoldModelHeader.SpringEditGroupHeader.LongHelp="模具 \n 編輯已存彈簧群組";
+CATMoldModelHeader.SpringEditGroupHeader.ShortHelp="編輯彈簧群組";
+CATMoldModelHeader.CATMldSpringNewInstanceHeaderHdr.Title="新增元件";
+CATMoldModelHeader.CATMldSpringNewInstanceHeaderHdr.Help="在現存群組新增分件.";
+CATMoldModelHeader.CATMldSpringNewInstanceHeaderHdr.LongHelp="模具 \n 在現存群組新增分件.";
+CATMoldModelHeader.CATMldSpringNewInstanceHeaderHdr.ShortHelp="新增元件";
+CATMoldModelHeader.CATMldSpringRecopyHeaderHdr.Title="複製參考";
+CATMoldModelHeader.CATMldSpringRecopyHeaderHdr.Help="在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSpringRecopyHeaderHdr.LongHelp="模具 \n 在一組已存的複件中複製分件參考.";
+CATMoldModelHeader.CATMldSpringRecopyHeaderHdr.ShortHelp="複製分件參考.";
+CATMoldModelHeader.CATMldSpringReplaceHeaderHdr.Title="更換分件";
+CATMoldModelHeader.CATMldSpringReplaceHeaderHdr.Help="在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSpringReplaceHeaderHdr.LongHelp="模具 \n 在一組已存的複件中更換分件的參考目錄.";
+CATMoldModelHeader.CATMldSpringReplaceHeaderHdr.ShortHelp="更換分件的參考目錄.";
+
+
+// == GeneratingHoles == 
+CATMoldModelHeader.CATMldGeneratingHolesPadHeaderHdr.Title="最後產生的孔 (孔和凸塊)";
+CATMoldModelHeader.CATMldGeneratingHolesPadHeaderHdr.Help="平板上最後產生的孔 (孔和凸塊)";
+CATMoldModelHeader.CATMldGeneratingHolesPadHeaderHdr.LongHelp="模具 \n 平板上最後產生的孔 (孔和凸塊)";
+CATMoldModelHeader.CATMldGeneratingHolesPadHeaderHdr.ShortHelp="最後產生的孔 (孔和凸塊)";
+CATMoldModelHeader.CATMldGeneratingHolesHeaderHdr.Title="最後產生的孔 (孔)";
+CATMoldModelHeader.CATMldGeneratingHolesHeaderHdr.Help="平板上最後產生的孔 (孔)";
+CATMoldModelHeader.CATMldGeneratingHolesHeaderHdr.LongHelp="模具 \n 平板上最後產生的孔  (孔)";
+CATMoldModelHeader.CATMldGeneratingHolesHeaderHdr.ShortHelp="最後產生的孔 (孔)";
+CATMoldModelHeader.CATMldGeneratingPadHeaderHdr.Title="最後產生的孔(凸塊)";
+CATMoldModelHeader.CATMldGeneratingPadHeaderHdr.Help="平板上最後產生的孔(凸塊)";
+CATMoldModelHeader.CATMldGeneratingPadHeaderHdr.LongHelp="模具 \n 平板上最後產生的孔(凸塊)";
+CATMoldModelHeader.CATMldGeneratingPadHeaderHdr.ShortHelp="最後產生的孔(凸塊)";
+// == Delete == 
+CATMoldModelHeader.MoldDeleteHeader.Title="刪除分件";
+CATMoldModelHeader.MoldDeleteHeader.Help="刪除分件";
+CATMoldModelHeader.MoldDeleteHeader.LongHelp="模具 \n 刪除已定義分件.";
+CATMoldModelHeader.MoldDeleteHeader.ShortHelp="刪除分件";
+
+// == Activate/Deactivate Tooling Component == 
+CATMoldModelHeader.CATMldInactivateCmpHeaderHdr.Title="啟動或關閉工具分件";
+CATMoldModelHeader.CATMldInactivateCmpHeaderHdr.Help="啟動或關閉工具分件";
+CATMoldModelHeader.CATMldInactivateCmpHeaderHdr.LongHelp="模具 \n 啟動或關閉現存的工具分件";
+CATMoldModelHeader.CATMldInactivateCmpHeaderHdr.ShortHelp="啟動或關閉工具分件";
+
+// == Split Component == 
+CATMoldModelHeader.SplitComponentHeader.Title="分割分件 ...";
+CATMoldModelHeader.SplitComponentHeader.Help="分割分件 ";
+CATMoldModelHeader.SplitComponentHeader.LongHelp="模具 \n 以曲面分割已定義模具.";
+CATMoldModelHeader.SplitComponentHeader.ShortHelp="分割分件 ";
+
+// == Split CavityPlate == 
+CATMoldModelHeader.SplitCavityPlateHeader.Title="分割模穴平板...";
+CATMoldModelHeader.SplitCavityPlateHeader.Help="分割模穴平板";
+CATMoldModelHeader.SplitCavityPlateHeader.LongHelp="模具 \n 以曲面分割模穴平板.";
+CATMoldModelHeader.SplitCavityPlateHeader.ShortHelp="分割模穴平板";
+
+// == Split CorePlate == 
+CATMoldModelHeader.SplitCorePlateHeader.Title="分割模仁平板...";
+CATMoldModelHeader.SplitCorePlateHeader.Help="分割模仁平板";
+CATMoldModelHeader.SplitCorePlateHeader.LongHelp="模具 \n 以曲面分割模仁平板.";
+CATMoldModelHeader.SplitCorePlateHeader.ShortHelp="分割模仁平板";
+
+// == DirectManipulation Command ==
+CATMoldModelHeader.MoldManipulationHeader.Title="操作...";
+CATMoldModelHeader.MoldManipulationHeader.Help="透過手動的轉移或旋轉移動一個分件";
+CATMoldModelHeader.MoldManipulationHeader.ShortHelp="操作";
+CATMoldModelHeader.MoldManipulationHeader.LongHelp="操作 \n 透過手動的轉移或旋轉移動一個分件用 \n 滑鼠.";
+
+// == Snap Command ==
+CATMoldModelHeader.MoldSnapHeader.Title="擷取";
+CATMoldModelHeader.MoldSnapHeader.Help="透過擷取移動一個分件";
+CATMoldModelHeader.MoldSnapHeader.ShortHelp="擷取";
+CATMoldModelHeader.MoldSnapHeader.LongHelp="擷取 \n 透過擷取移動一個分件到另一個分件.";
+
+// == AsmMeasure Command ==
+CATMoldModelHeader.MoldSpaceMeasureBetweenHeader.Title="測量在...中間...";
+CATMoldModelHeader.MoldSpaceMeasureBetweenHeader.Help="測量兩個項目之間的距離和角度";
+CATMoldModelHeader.MoldSpaceMeasureBetweenHeader.ShortHelp="測量在...中間";
+CATMoldModelHeader.MoldSpaceMeasureBetweenHeader.LongHelp="測量兩個項目之間的距離和角度";
+
+CATMoldModelHeader.MoldSpaceMeasureEdgeHeader.Title="測量項目...";
+CATMoldModelHeader.MoldSpaceMeasureEdgeHeader.Help="測量相關連選擇項目的特性";
+CATMoldModelHeader.MoldSpaceMeasureEdgeHeader.ShortHelp="測量項目";
+CATMoldModelHeader.MoldSpaceMeasureEdgeHeader.LongHelp="測量相關連選擇項目的特性";
+
+// == Drill Component Command ==
+CATMoldModelHeader.CATMldDrillCmpHeaderHdr.Title="鑽分件...";
+CATMoldModelHeader.CATMldDrillCmpHeaderHdr.Help="以另一批分件來鑽一批分件";
+CATMoldModelHeader.CATMldDrillCmpHeaderHdr.LongHelp="模具 \n 以另一批分件來鑽一批分件";
+CATMoldModelHeader.CATMldDrillCmpHeaderHdr.ShortHelp="以另一批分件來鑽一批分件";
+
+//BMWAddRemove
+// == Distributed Drill Component Command ==
+CATMoldModelHeader.CATMldDistribDrillCmpHeaderHdr.Title="分配鑽孔分件...";
+CATMoldModelHeader.CATMldDistribDrillCmpHeaderHdr.Help="以其它的分件清單鑽孔一組分件";
+CATMoldModelHeader.CATMldDistribDrillCmpHeaderHdr.LongHelp="模具 \n 以其它的分件清單鑽孔一組分件";
+CATMoldModelHeader.CATMldDistribDrillCmpHeaderHdr.ShortHelp="以其它的分件清單鑽孔一組分件";
+
+// == Explode Holes Command ==
+CATMoldModelHeader.CATMldExplodeHolesHeaderHdr.Title="炸開的孔...";
+CATMoldModelHeader.CATMldExplodeHolesHeaderHdr.Help="在平板和分件上建立孔";
+CATMoldModelHeader.CATMldExplodeHolesHeaderHdr.LongHelp="模具 \n 在平板和分件上建立孔";
+CATMoldModelHeader.CATMldExplodeHolesHeaderHdr.ShortHelp="在平板和分件上建立孔";
+
+
+// == Analyse ==
+CATMoldModelHeader.CstAnalysis.Title="拘束...";
+CATMoldModelHeader.CstAnalysis.Help="顯示拘束情形";
+CATMoldModelHeader.CstAnalysis.ShortHelp="拘束情形";
+
+// == Concurrent Engineering Analysis Command ==
+CATMoldModelHeader.CATMldAnalyzeConcurrentHeaderHdr.Title="工具結構分析...";
+CATMoldModelHeader.CATMldAnalyzeConcurrentHeaderHdr.Help="為同步工程分析工具結構";
+CATMoldModelHeader.CATMldAnalyzeConcurrentHeaderHdr.LongHelp="為同步工程分析工具結構";
+CATMoldModelHeader.CATMldAnalyzeConcurrentHeaderHdr.ShortHelp="為同步工程分析工具結構";
+

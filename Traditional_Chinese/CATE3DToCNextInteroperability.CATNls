@@ -1,0 +1,80 @@
+// ****************************************************************************
+// CATIA Version 5 Release 2 Framework Electrical
+// VESD
+// Copyright Dassault Systemes 1998
+// ****************************************************************************
+//  Abstract:
+//  ---------
+//    
+//  E3D To CNext interoperability error messages
+//    
+// ****************************************************************************
+//  Usage:
+//  ------
+//
+// ****************************************************************************
+//  Main Methods:
+//  -------------
+//
+// ****************************************************************************
+//  Historic
+//  --------
+//
+//  Author: Michel Stufano
+//  Date  : 12/05/98
+//  Goal  : Creation
+//
+// ****************************************************************************
+//  Handle exceptions the following way :
+//  ------------------------------------
+//
+//  
+//   if (WrongType) {
+//     long ier = 0;
+//     CATUnicodeString key = "WrongType";
+//     CATElecInputError *err = 
+//       new CATElecInputError(ier, Key,"CATElecErrors");
+//     err->SetNLSParameters(3, "Mechant", "Fido", "Mechant");
+//     CATThrow(err);
+//   }
+//
+// ****************************************************************************
+// framework E3DToCNextInteroperability
+
+//----------------------------------------------------------------------------
+
+NullPointer = "指示器無效.";
+
+EmptyList   = "/p1 清單是空的.";
+
+InvalidJele = "The Jele = /p1 ;",
+              "這是一個無效值.";
+
+QIError     = "具有 QueryInterface錯誤:",
+              "到 /p1 從 /p2 .";
+
+CatgeoError = "CATGEO /p1 已經傳回錯誤代碼 ",
+              "ier = /p2 .";
+
+NoModelName = "模型名稱無效.";
+
+MemAllocation = "不能配置記憶體";
+
+ClassNotFound = "等級 /p1 未發現在字典中";
+
+E3DMigration.UpdateKO = "更新錯誤";
+
+E3DMigration.ComputeBNSKO = "BNS 計算失敗";
+
+E3DMigration.BuildProtectionKO = "保護建立失敗";
+
+E3DMigration.CPPPointRepNotFound = "未找到 CPP 點的表現方式, CPP 未溶合";
+
+E3DMigration.CPPNotMigrated = "所需的 CPP 未溶合, SIC-SIC 連結未建立";
+
+E3DMigration.ConvertKO = "更新時發生錯誤";
+
+E3DMigration.ConvertOK = "正確更新";
+
+E3DMigration.ComputeRuleViolation = "BNS 已被含較直徑小的彎曲半徑建立";
+

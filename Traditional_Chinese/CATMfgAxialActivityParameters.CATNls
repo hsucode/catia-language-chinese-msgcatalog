@@ -1,0 +1,261 @@
+MfgDwellDefault = "沒有暫停";
+MfgDwellTime    = "已定義時間";
+MfgDwellRound   = "已定義循環";
+ApproachLength   = "進刀";
+RetractLength   = "退刀";
+Breakthrough   = "穿透";
+
+PlungeValue   = "數值";
+Plunge = "插刀";
+Depth = "深度";
+SpotDepth = "點深度";
+
+MultiplicatorBM = "乘數 BM";
+DegressionDB    = "漸減 DB";
+DistanceAB      = "距離 AB";
+AngleWS         = "角度 WS";
+DistanceRTS     = "距離 RTS";
+BreakThroughTB  = "穿透 TB";
+
+ChamferDistance = "倒角長度";
+ChamferDiameter = "倒角直徑";
+ChamferDiameter2 = "倒角直徑 2";
+ChamferShoulder = "倒角肩部";
+RapidShoulder   = "快速肩部";
+
+BackDepth    = "背孔深度";
+BackDiameter = "背孔直徑";
+BackOffset   = "背孔預留";
+
+SlotDiameter = "槽直徑";
+
+Shoulder  = "肩部";
+Tip       = "刀尖";
+Distance  = "距離";
+Diameter  = "直徑";
+Rapid     = "快速";
+Dwell     = "暫停";
+PreDrilling ="第一個鑽孔";
+Processing ="處理中"; 
+Finishing = "精加工";
+Retract   = "退刀";
+SpindleStart ="主軸開始";
+SpindleStop  ="主軸停止";
+TransitionPath="變換間路徑";
+Tool_Tip   = "刀尖";
+Path_of_Tool_Tip= "刀尖路徑";
+X = "X";
+Y = "Y";
+Z = "Z"; 
+
+MFG_CLEAR_TIP = "進刀安全距離 (A)";
+MFG_CLEAR_TIP.LongHelp = 
+"定義接近參考孔時沿刀軸的安全距離.
+加工屬性為 MFG_CLEAR_TIP.";
+
+MFG_CLEAR_TIP_2 = "進刀安全距離 2 (A2)";
+MFG_CLEAR_TIP_2.LongHelp = 
+"只適用在搪孔和倒角時, 倒兩邊和背搪動作. 定義接近倒角和搪孔時沿刀軸的安全距離.
+加工屬性為 MFG_CLEAR_TIP_2.";
+
+MFG_BREAKTHROUGH        = "穿透 (B)";
+MFG_BREAKTHROUGH.LongHelp = "定義刀具完全穿過零件的距離.
+加工屬性為 MFG_BREAKTHROUGH.";
+
+MFG_CHAMFER_VAL = "倒角直徑 (C)";
+MFG_CHAMFER_VAL.LongHelp = "定義相關刀具
+圓椎部份的直徑數值.
+加工屬性為 MFG_CHAMFER_VAL.";
+
+// Plunge 
+PlungeEnumParam 		= "插刀模式";
+PlungeEnumParam.LongHelp = 
+"允許您指定依循參考孔來指定軸向插刀.
+些插刀選擇是由深度值來定義 
+(以刀尖或直徑來定義)
+及預留值.
+加工屬性為 MFG_PLUNGE_MODE.";
+
+MFG_PLUNGE_OFFST      	= "插刀預留值 (Po)";
+MFG_PLUNGE_OFFST.LongHelp   = "指定插刀預留值.
+加工屬性為 MFG_PLUNGE_OFFST.";
+
+MFG_PLUNGE_DIAMETER    	= "插刀直徑 (Pd)";
+MFG_PLUNGE_DIAMETER.LongHelp = "指定插刀直徑值.
+加工屬性為 MFG_PLUNGE_DIAMETER.";
+
+MFG_PLUNGE_TIP               = "插刀尖 (Pt)";
+MFG_PLUNGE_TIP.LongHelp      = "指定插刀尖值.
+加工屬性為 MFG_PLUNGE_TIP.";
+
+MFG_PLUNGE_SHOULDER          = "插刀肩";
+MFG_PLUNGE_SHOULDER.LongHelp = "指定插刀肩值";
+
+MFG_PLUNGE_DISTANCE    	= "插刀距離";
+MFG_PLUNGE_DISTANCE.LongHelp = "插刀距離";
+
+MFG_PLUNGE_FOR_CHAMFERING	= "插刀倒角";
+MFG_PLUNGE_FOR_CHAMFERING.LongHelp = "Specifies if the plunge for chamfering is to be done.
+The manufacturing attribute is MFG_PLUNGE_FOR_CHAMFERING.";
+
+
+
+// Depth
+DepthEnumParam 		= "深度模式";
+DepthEnumParam.LongHelp = 
+"定義深度是如何計算的.
+依據操作完成型式,
+可以刀尖,刀肩,直徑或距離值來計算. 
+加工屬性為 MFG_DEPTH_MODE.";
+
+MFG_DEPTH_TIP          = "刀尖深度 (Dt)";
+MFG_DEPTH_DIAMETER     = "直徑 (D)";
+MFG_DEPTH_OFFSET       = "預留";
+MFG_DEPTH_SHOULDER     = "刀肩深度 (Ds)";
+MFG_DEPTH_DISTANCE     = "距離深度 (Dd)";
+
+
+// Dwell
+DwellEnumParam	= "暫停模式";
+DwellEnumParam.LongHelp	= "定義以旋轉圈數或時間來暫停.";
+
+MFG_DWELL_REVOL          	= "旋轉圈數";
+MFG_DWELL_REVOL.LongHelp   = "定義旋轉圈數";
+
+MFG_DWELL_REVOL_DOUBLE          	= "旋轉圈數";
+MFG_DWELL_REVOL_DOUBLE.LongHelp   = "定義暫停的旋轉圈數";
+
+MFG_DWELL_TIME              = "時間";
+MFG_DWELL_TIME.LongHelp     = "定義時間";
+
+// Lift
+LiftEnumParam	= "平移模式";
+LiftEnumParam.LongHelp	= "指出退刀前用來預留刀具的平移模式.";
+
+MfgLiftOffPolar = "以極座標";
+MfgLiftOffDistance = "以線性座標";
+MfgNoLiftOff = "無";
+MFG_XOFF = "沿 X軸預留";
+MFG_XOFF.LongHelp = "指定沿 X軸預留";
+
+MFG_YOFF = "沿 Y軸預留";
+MFG_YOFF.LongHelp = "指定沿 Y軸預留";
+
+MFG_ZOFF = "沿 Z軸預留";
+MFG_ZOFF.LongHelp = "指定沿 Z軸預留";
+
+MFG_LIFT_DIST = "預留距離";
+MFG_LIFT_DIST.LongHelp = "指定預留距離";
+
+MFG_LIFT_ANGLE= "預留角度";
+MFG_LIFT_ANGLE.LongHelp= "指定預留角度";
+
+// Retract (Back Boring)
+MFG_RETRACT_CLEAR_TIP= "退刀";
+MFG_RETRACT_CLEAR_TIP.LongHelp= "指定退出數值";
+
+MFG_AXIAL_DEPTH            = "最大切深 (Dc)";
+MFG_AXIAL_DEPTH.LongHelp   = 
+"為下列項目定義最大切深:
+- 啄鑽模式下的第一階 
+- 斷屑模式下的切深.
+加工屬性為 MFG_AXIAL_DEPTH.";
+
+MFG_OFFSET_RET            = "退刀預留 (Or)";
+MFG_OFFSET_RET.LongHelp   = "為下列項目定義預留 :
+- 斷屑模式下每一切深後的退刀
+- 啄鑽模式下每一階進給後的退刀.
+加工屬性為 MFG_OFFSET_RET.";
+
+MFG_DEPTH_DEC            = "減少比率";
+MFG_DEPTH_DEC.LongHelp   = 
+"減少啄鑽每一階的有效切深 
+直到需要深度為止. 
+如果等於0, 則每一階的切深為常數值.
+加工屬性為 MFG_DEPTH_DEC.";
+
+MFG_DEPTH_LIM           = "減少限制";
+MFG_DEPTH_LIM.LongHelp  = 
+"指定減少深度的最大值. 
+啄鑽每一階的深度絕不比
+有效切深乘以減少限制值小. 
+此數值比須大於0.
+加工屬性為 MFG_DEPTH_LIM.";
+
+MFG_ROTABL_OUTPUT = "自動 ROTABL";
+MFG_ROTABL_OUTPUT.LongHelp = "使用 ROTABL 命令產生兩位置間的變換路徑.";
+
+MFG_CYCLE_OUTPUT = "輸出 CYCLE 命令";
+MFG_CYCLE_OUTPUT.LongHelp = "指定如何產生 NC 輸出:
+輸出成 CYCLE 模式或 GOTO 模式.";
+
+// Compensations outil
+MFG_TL_COMP ="第一補償";
+MFG_TL_COMP.LongHelp = "選擇刀具補償號碼";
+
+MFG_TL_COMP_2 ="第二補償";
+MFG_TL_COMP_2.LongHelp = "選擇刀具第二補償號碼";
+
+// Specifiques au Circular Milling et au Thread Milling
+
+MfgMachiningTolerance = "加工精度";
+MfgMachiningTolerance.LongHelp = "定義刀具路徑理論和計算值間的最大允許誤差.";
+
+MfgOutputStyle = "輸出型式";
+MfgOutputStyle.LongHelp = "定義如何輸出 NC 路徑位置:
+以刀尖或刀具外形.";
+
+// Specifiques au Circular Milling
+
+MfgCircularMillingMode = "加工模式";
+MfgCircularMillingMode.LongHelp = "指定加工模式:
+- 標準: 2.5 軸模式, 以垂直刀具軸的分層銑削.
+- 螺旋: 以螺旋方式.";
+
+MfgDistanceBetweenPaths = "刀具間距離 (Dp)";
+MfgDistanceBetweenPaths.LongHelp = "定義徑向方式時的刀具路徑間距離.";
+
+MfgNumberOfRadialPaths = "刀徑數目 (Np)";
+MfgNumberOfRadialPaths.LongHelp = "定義徑向方式時的刀具路徑數目.";
+
+MfgAxialStrategy = "軸向模式";
+MfgAxialStrategy.LongHelp = "定義每層刀具路徑間的路徑是如何計算.";
+
+MfgMaxDepthOfCut = "最大切深 (Mdc)";
+MfgMaxDepthOfCut.LongHelp = "定義軸向方式時的最大切深.";
+
+MfgNumberOfLevels = "切層數目 (Nl)";
+MfgNumberOfLevels.LongHelp = "定義軸向方式時的切層數目.";
+
+MfgSequencingMode  = "順序模式";
+MfgSequencingMode.LongHelp  = "定義刀具的加工順序:
+軸向: 先軸向再徑向
+徑向: 先徑向再軸向.";
+
+MfgDirectionOfCut = "切削方向";
+MfgDirectionOfCut.LongHelp = "指定切削方式: 
+- 順銑: 
+刀具的前端 (沿加工方向) 先插入材料
+- 逆銑:
+刀具的後端 (沿加工方向) 先插入材料 ";
+
+MfgOverhang = "重疊百分比";
+MfgOverhang.LongHelp = "定義依據刀具直徑在加工路徑間的比值.";
+
+MfgAutoDraftAngle  = "自動脫模角";
+MfgAutoDraftAngle.LongHelp  = "定義加工圓孔時上端和底部間的脫模角度.";
+
+HelixEnumParam = "螺旋模式";
+HelixEnumParam.LongHelp = 
+"如何定義螺旋: 以 pitch 或以角度.
+加工屬性為 MFG_HELIX_MODE.";
+
+MFG_HELIX_PITCH =  "Pitch (P)";
+MFG_HELIX_PITCH.LongHelp =  "定義螺旋 pitch";
+
+MFG_HELIX_ANGLE =  "角度 (Ang)";
+MFG_HELIX_ANGLE.LongHelp =  "定義螺旋角度";
+
+// Panel Outils
+MFG_MACH_QUALITY = "品質";
+MFG_MACH_QUALITY.LongHelp = "加工品質";

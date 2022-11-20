@@ -1,0 +1,189 @@
+//-----------------------------------------------------
+// Resource file for CATCCSShapeMorphingDlg class
+// En_US
+//-----------------------------------------------------
+//=============================================================================
+// COPYRIGHT DASSAULT SYSTEMES PROVENCE 2004
+//=============================================================================
+//
+//   Resource file for NLS purpose. 
+//
+//=============================================================================
+//
+// Implementation Notes :
+//
+//=============================================================================
+// 01/04/04 : jcb; creation
+//=============================================================================
+
+ Title		 = "仿真影像最佳化";
+
+ RSONewPart			= "RSO Morphing 零件";
+ RSOGeometricalSet	= "RSO_幾何組";
+ RSOFeatureName		= "數值化 Morphing";  
+ 
+ NoSelection		= "未選擇";
+ NbPtsTitle			= "檔案內點數 = "; 
+ MaxTitle			= "最大位移 = ";
+ MinTitle			= "最小位移 = ";
+ MoyTitle			= "平均位移 = ";
+ MaxError			= "最大錯誤 = ";
+ MoyError			= "平均錯誤 = ";
+ NbLostTitle		= "超出容差點數 = ";
+ NbIgnoredTitle		= "忽略點數 = ";
+ NbThresholdTitle	= "超過門檻點數 = ";
+ NbFilterTitle		= "過濾的點數 = ";
+ MoreTitle			= " 詳細 >>";
+ LessTitle			= " << 基本";
+
+ FrmRoot.Title														= " Morphing 定義 ";
+ FrmRoot.PushAdd.Title												= "    新增    ";
+
+ FrmRoot.FrmChooseDisplacement.Title								= " 位移定義 ";
+ FrmRoot.FrmChooseDisplacement.LbDisplacement.Title					= " 位移   ";
+ FrmRoot.FrmChooseDisplacement.PushFileOpen.Title					= " 開啟...";
+ FrmRoot.FrmChooseDisplacement.LbNbVector.Title						= " 向量數目    ";
+
+ FrmRoot.FrmElement.FrmSelElement.Title								= " 變形元素 ";
+ FrmRoot.FrmElement.FrmSelElement.LbElement.Title					= " 變形元素 ";
+ FrmRoot.FrmElement.FrmSelElement.Lbbid.Title						= "      ";
+ FrmRoot.FrmElement.FrmSelElement.LbElt.Title						= "        ";
+
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.Title								= " 位移 ";
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.FrmOptions.Title					= " 位移 ";
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.FrmOptions.LbTolerance.Title		= " 精度    ";
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.FrmOptions.LbCoeff.Title			= " 縮放        ";
+
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.FrmDisplayStd.Title									= " 顯示       ";
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.FrmDisplayStd.FrmScale.LbScale.Title				= " 縮放   ";
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.FrmDisplayStd.FrmDisplayStd1.ChkHideShowVector.Title= "   位移  ";
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.FrmDisplayStd.FrmDisplayStd1.ChkShowLostPts.Title	= "   超過容差 ";
+ 
+ FrmAdvanced.Title								= " 預覽  ";  
+ FrmAdvanced.FrmParams.Title					= " 參數  ";  
+ FrmAdvanced.FrmParams.LbAdvParam.Title			= "參數 : ";  
+ FrmAdvanced.FrmParams.LbRatio.Title			= " 忽略的點  ";  
+ FrmAdvanced.FrmParams.LbThreshold.Title		= " 門檻  ";  
+ FrmAdvanced.FrmParams.LbRadiusFilter.Title		= " 半徑過濾  ";  
+
+ FrmAdvanced.FrmDisplayAdv.Title						= " 顯示";  
+ FrmAdvanced.FrmDisplayAdv.Title						= " 顯示";  
+ FrmAdvanced.FrmDisplayAdv.LbAdvDisplay.Title			= "顯示 : ";  
+ FrmAdvanced.FrmDisplayAdv.ChkShowIgnoredPts.Title		= " 忽略的點";
+ FrmAdvanced.FrmDisplayAdv.ChkShowThresholdPts.Title	= " 超過門檻 "; 
+ FrmAdvanced.FrmDisplayAdv.ChkShowRadFilterPts.Title	= " 過濾的點";  
+
+ FrmRoot.FrmPart.Title					= "將會在零件中插入數值化 Morphing";
+ FrmRoot.FrmPart.InNewPart.Title		= "建立新的 CATPart ";
+ FrmRoot.FrmPart.InCurrentPart.Title	= "選擇目前零件";
+ // FrmRoot.FrmPart.InCurrentPart.Title	= "選擇已存零件";
+
+
+ // Help
+ // Displacement
+ FrmRoot.FrmChooseDisplacement.PushFileOpen.ShortHelp	= "開啟位移檔案";
+ FrmRoot.FrmChooseDisplacement.PushFileOpen.LongHelp	= "開啟向量位移檔案";
+ 
+ FrmRoot.FrmChooseDisplacement.ShortHelp  = "定義位移";
+ FrmRoot.FrmChooseDisplacement.LongHelp   = 
+ "定義位移.
+位移由向量檔案定義.";
+
+ FrmRoot.FrmChooseDisplacement.FrmEditDisplacement.ShortHelp	= "定義位移";
+ FrmRoot.FrmChooseDisplacement.LbDisplacement.LongHelp			= 
+ "選擇位移檔案.";
+ FrmRoot.FrmChooseDisplacement.FrmEditDisplacement.LongHelp		= 
+ "選擇位移檔案.";
+ FrmRoot.FrmChooseDisplacement.FrmEditDisplacement.EditDisplacement.LongHelp		= 
+ "選擇位移檔案.";
+
+ FrmRoot.FrmChooseDisplacement.FrmEditDisplacement.EditDisplacement.ShortHelp  = "定義位移";
+ FrmRoot.FrmChooseDisplacement.FrmEditDisplacement.EditDisplacement.LongHelp   = 
+ "定義位移.
+位移由向量檔案定義.";
+
+ // Shape to deform
+ FrmRoot.FrmElement.ShortHelp				= "選擇要變形的形狀 ";
+ FrmRoot.FrmElement.LongHelp				= 
+ "選擇要變形的形狀. 
+形狀可以是曲面或實體.";
+
+ FrmRoot.FrmElement.FrmSelElement.ShortHelp				= "選擇要變形的形狀 ";
+ FrmRoot.FrmElement.FrmSelElement.LongHelp				= 
+ "選擇要變形的形狀. 
+形狀可以是曲面或實體.";
+
+ FrmRoot.FrmElement.FrmSelElement.DisplayEltList.ShortHelp				= "顯示所選形狀清單";
+ FrmRoot.FrmElement.FrmSelElement.DisplayEltList.LongHelp				= 
+ "顯示所選形狀清單.";
+
+ FrmRoot.FrmElement.FrmSelElement.LbElement.ShortHelp					= "選擇要變形的形狀 ";
+ FrmRoot.FrmElement.FrmSelElement.LbElement.LongHelp					= 
+ "選擇要變形的形狀. 
+形狀可以是曲面或實體.";
+ 
+ FrmRoot.FrmElement.FrmSelElement.FrmEditElement.ShortHelp				= "選擇要變形的形狀 ";
+ FrmRoot.FrmElement.FrmSelElement.FrmEditElement.LongHelp				= 
+ "選擇要變形的形狀."; 
+
+ FrmRoot.FrmElement.FrmSelElement.FrmEditElement.ElementsList.ShortHelp	= "選擇要變形的形狀 ";
+ FrmRoot.FrmElement.FrmSelElement.FrmEditElement.ElementsList.LongHelp	= 
+ "選擇要變形的形狀."; 
+
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.LongHelp						= 
+ "定義位移選項.";
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.FrmOptions.LbTolerance.LongHelp	= 
+ "定義精度.";
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.FrmOptions.EditTolerance.LongHelp	= 
+ "定義精度.";
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.FrmOptions.LbCoeff.LongHelp			= 
+ "定義應用至所有向量的縮放.";
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.FrmOptions.EditCoeff.LongHelp		= 
+ "定義應用至所有向量的縮放.";
+
+ FrmRoot.FrmChooseDisplacement.FrmIconsDisplacement.LongHelp				= 
+ "顯示所選位移檔案清單";
+ FrmRoot.FrmChooseDisplacement.EditNbVectors.LongHelp						= 
+ "顯示位移統計.";
+
+ // Display
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.FrmDisplayStd.LongHelp					= 
+ "定義位移選項.";
+ 
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.FrmDisplayStd.FrmScale.LbScale.LongHelp	= 
+ "定義顯示向量的縮放.";
+ 
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.FrmDisplayStd.FrmDisplayStd1.ChkHideShowVector.LongHelp = 
+ "顯示雲形點的點和向量.";
+ 
+ FrmRoot.FrmOptionDisplay.FrmAllOptions.FrmDisplayStd.FrmDisplayStd1.ChkShowLostPts.LongHelp = 
+ "顯示超過容差的點.";
+
+ // Advanced parameters 
+ FrmMore.LongHelp					= 
+ "顯示或隱藏進階參數.";
+
+ FrmAdvanced.FrmParams.LbRatio.LongHelp			= 
+ "定義計算時所忽略點的百分比.";  
+ FrmAdvanced.FrmParams.SpinRatio.LongHelp			= 
+ "定義計算時所忽略點的百分比.";  
+
+ FrmAdvanced.FrmParams.LbThreshold.LongHelp		= 
+ "超過此位移距離的點將被過濾掉.";  
+ FrmAdvanced.FrmParams.SpinThreshold.LongHelp		= 
+  "超過此位移距離的點將被過濾掉.";  
+
+ FrmAdvanced.FrmDisplayAdv.LongHelp						= 
+ "定義顯示選項.";
+ FrmAdvanced.FrmDisplayAdv.ChkShowIgnoredPts.LongHelp	= 
+ "顯示已被忽略的點.";
+ FrmAdvanced.FrmDisplayAdv.ChkShowThresholdPts.LongHelp	= 
+ "顯示超過門檻的點.";
+
+
+ FrmRoot.FrmPart.LongHelp				= 
+ "結果可以建立在新的 CATPart 或在目前的 CATPart.
+選擇所需的選項.";
+
+
+

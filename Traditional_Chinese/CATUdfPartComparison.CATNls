@@ -1,0 +1,119 @@
+//Comparison for JohnnyPart
+ComparisonWindow.Title = "比較 /P1";
+ComparisonWindow.DefaultTitle = "比較";
+
+//FileChooserDialog
+FileChooserDialog.Title = " /P1 的參考零件";
+FileChooserDialog.DefaultTitle = "參考零件";
+
+//FileChooserDialog.DirectoryFrame.DirectoryEditor.ShortHelp = "目前目錄";
+//FileChooserDialog.DirectoryFrame.DirectoryPushButton.ShortHelp = "返回至暫存目錄";
+FileChooserDialog.DirectoryFrame.FileListLabel.Title = "參改文件";
+FileChooserDialog.DirectoryFrame.FileDeletePushButton.ShortHelp = "刪除暫存";
+FileChooserDialog.FileEditorFrame.FileEditor.LongHelp = 
+"參考零件文件.
+可輸入完整路徑.";
+FileChooserDialog.FileEditorFrame.FilePushButton.ShortHelp = "選擇檔案";
+FileChooserDialog.LayoutFrame.LayoutChooserLabel.Title = "視窗佈置";
+FileChooserDialog.LayoutFrame.VerticalLayout.ShortHelp = "垂直佈置";
+FileChooserDialog.LayoutFrame.VerticalLayout.LongHelp = 
+"兩視窗將會在另一個旁邊.";
+FileChooserDialog.LayoutFrame.HorizontalLayout.ShortHelp = "水平佈置";
+FileChooserDialog.LayoutFrame.HorizontalLayout.LongHelp = 
+"兩視窗將會在另一個後邊.";
+
+ErrorPanel.Title = "開啟時發生錯誤";
+NotACATPart = "所選檔案不是 .CATPart 文件.";
+DocumentAlreadyLoaded = 
+"所選檔案已開啟. 
+請關閉它後再重新打開它.";
+NeedSameDocument = 
+"需要類似文件版期.
+意義為要比較的檔案必須是經由 儲存成 動作所選的文件.";
+ImpossibleToOpen = "無法開啟所選檔案.";
+ComparingSameDocument = 
+"無法比較文件和它本身.";
+//TemporaryDirectory = "Temporary directory";
+ReferencePart = "參考零件文件";
+
+PartComparisonChooser.Title = "選擇參考零件";
+
+//Resources for all the Dialog windows of the temporary save creation
+//FileSaveDialog
+FileSaveDialog.Title = "暫時儲存建立檔案";
+FileSaveDialog.SaveNameLabel.Title = "暫時儲存檔案名稱";
+FileSaveDialog.SaveNameEditor.ShortHelp = "暫時儲存檔案名稱";
+//SaveNoNameNotify
+SaveNoNameNotify.Title = "遺失檔名";
+SaveNoNameNotify.Text  = "未輸入儲存名稱.";
+//SaveNameConflictNotify
+SaveNameConflictNotify.Title = "衝突"; 
+SaveNameConflictNotify.Text  = 
+"所輸入檔案名稱已存在.
+您要覆寫它嗎?";
+//SaveNameOKNotify
+SaveNameOKNotify.Title = "儲存已建立";
+SaveNameOKNotify.Text  = "儲存已建立";
+//SaveNameKONotify
+SaveNameKONotify.Title = "儲存時發生錯誤";
+SaveNameKONotify.Text  = 
+"因未知原因, 導致未完成儲存.
+請再試一次.";
+
+
+//Warning panel when Focus Point is changed during differential synchronization
+DifferentialViewSynchronization.ChangingFocusPoint.Text=
+"Focus point (activated through click-2) is not allowed
+in either viewer when views are differentially synchronized.";
+
+//Warning panel texts when launching "Reframe On Current Object" command
+ReframeOnCurrent.Situation3.Text = 
+"Possible disconcerting result:
+\"Reframe On Current\" command has been launched 
+on both sides where current objects are different.";
+
+ReframeOnCurrent.Situation4.Text = 
+"Conflict: \"Reframe On Current\" command is asked to 
+be launched on both sides and views are fully synchronized.
+
+To respect user's intent, the command has only been applied to the active view, 
+and the inactive view followed views full synchronization.";
+
+ReframeOnCurrent.Situation5.Text = 
+"Conflict: \"Reframe On Current\" command is asked to 
+be launched on both sides where current objects are different.
+
+To respect user's intent, the command has only been applied to the active view, 
+and the inactive view followed views full synchronization.";
+
+ReframeOnCurrent.Situation7.Text = 
+"Conflict: \"Reframe On Current\" command is asked to 
+be launched on both sides where current objects are different.
+
+To respect user's intent, the command has only been applied to the active view, 
+and the inactive view followed views differential synchronization.";
+
+
+CenterGraphOnCurrent.Warning.Text = 
+"Possible disconcerting result:
+\"Center Graph On Current\" command has been launched 
+on both sides where current objects are different.";
+
+ViewsCommandsAndSynchronizations.Text = 
+"Conflict: A view modification command is asked to 
+be launched on both sides, and views are synchronized.
+
+To respect user's intent, the command has only been applied to the active view, 
+and the inactive view followed views synchronization.";
+
+//Ressources avant R13SP2
+//Items from the synchronization tool bar
+SynchronizationStateToolBar.Title  = "同步化";
+SynchronizeViewButton.ShortHelp    = "同步化視窗";
+SynchronizeViewButton.LongHelp     = "更改視點時, 同步化兩視窗.
+也適應在圖形置中等命令.";
+SynchronizeCommandButton.ShortHelp = "同步化命令";
+SynchronizeCommandButton.LongHelp  = 
+"同步化命令, 可同時應用兩側.
+只有透過此選項方可同時應用於兩側. 與建立新元件不相關.";
+

@@ -1,0 +1,1557 @@
+// =====================================================================
+// NLS for MACHINING RESOURCES
+// =====================================================================
+
+RESOURCE_CONSISTENCY.LongHelp = "顯示資源屬性間的可能不一致性";
+
+// * Parameters categories *
+// =====================================================================
+ToolBase = "一般";
+Geom     = "幾何元素";
+Techno   = "技術";
+Feedrate = "進給和速度";
+ToolComp = "補償";
+ResourceUser = "自訂屬性";
+ResourceBase             = "一般";
+NumericalControl         = "數值控制";
+NumericalControlAdvanced = "進階數值控制";
+Spindle = "刀軸";
+ToolChange       = "刀具";
+Rotarytable      = "旋轉工件檯";
+Turret           = "刀塔";
+LatheTP_Spindle     = "刀塔";
+LatheTP_Rotarytable = "刀軸";
+LatheTP_Turret      = "橫越";
+RotaryData      = "旋轉資料";
+Compensation           = "補償";
+LatheTP_Compensation   = "補償";
+Options="NC 輸出";
+
+FirstAxis = "第一軸";
+SecondAxis = "第二軸";
+Axis = "軸";
+
+// * Resource Types *
+// =====================================================================
+Tools                      = "刀具";
+AllTypes                   = "所有型式";
+
+//-----------------------------------------------------------------------------
+
+MfgResource             = "加工資源";
+CATEMfgResource         = "加工資源";
+
+//-----------------------------------------------------------------------------
+
+MfgBaseTool             = "刀具";
+CATEMfgBaseTool         = "刀具";
+
+MfgBaseInsert           = "捨棄式刀片";
+CATEMfgBaseInsert       = "捨棄式刀片";
+
+MfgBaseToolAssembly     = "基本刀具組立";
+CATEMfgBaseToolAssembly = "基本刀具組立";
+
+MfgBaseMachine          = "基本機具";
+CATEMfgBaseMachine      = "基本機具";
+
+//-----------------------------------------------------------------------------
+
+MfgBaseLatheTool        = "基本刀片刀把";
+CATEMfgBaseLatheTool    = "基本刀片刀把";
+
+MfgAxialTool            = "軸向刀具";
+CATEMfgAxialTool        = "軸向刀具";
+
+MfgMillTool             = "銑刀刀具";
+CATEMfgMillTool         = "銑刀刀具";
+
+//-----------------------------------------------------------------------------
+
+MfgMillMachine          = "銑床機具";
+CATEMfgMillMachine      = "銑床機具";
+
+MfgLatheMachine         = "車床機具";
+CATEMfgLatheMachine     = "車床機具";
+
+//-----------------------------------------------------------------------------
+
+// * Machine Types *
+//-----------------------------------------------------------------------------
+Machines                   = "工具機";
+
+Mfg3AxisMachine                      = "3 軸工具機";
+CATEMfg3AxisMachine                  = "3 軸工具機";
+
+Mfg3AxisWithTableRotationMachine     = "3 軸含旋轉台工具機";
+CATEMfg3AxisWithTableRotationMachine = "3 軸含旋轉台工具機";
+
+Mfg5AxisMachine                      = "5軸工具機";
+CATEMfg5AxisMachine                  = "5軸工具機";
+
+MfgHorizontalLatheMachine            = "臥式車床工具機";
+CATEMfgHorizontalLatheMachine        = "臥式車床工具機";
+
+MfgVerticalLatheMachine              = "立式車床工具機 Deprecated";
+CATEMfgVerticalLatheMachine          = "立式車床工具機 Deprecated";
+
+CATEMfgMultiTurretLatheMachine       = "多重刀塔車床工具機";
+
+CATEMfgGenericMillMachine            = "通用銑床";
+
+// * Tool Types *
+//-----------------------------------------------------------------------------
+MfgDrillTool               = "鑽頭";
+CATEMfgDrillTool               = "鑽頭";
+MfgTapTool                 = "絲攻";
+CATEMfgTapTool                 = "絲攻";
+MfgReamerTool              = "鉸刀";
+CATEMfgReamerTool              = "鉸刀";
+MfgCountersinkTool         = "錐孔";
+CATEMfgCountersinkTool         = "錐孔";
+MfgSpotDrillTool           = "點鑽";
+CATEMfgSpotDrillTool           = "點鑽";
+MfgCounterboreMillTool     = "沈孔銑刀";
+CATEMfgCounterboreMillTool     = "沈孔銑刀";
+MfgEndMillTool             = "端銑刀";
+CATEMfgEndMillTool             = "端銑刀";
+MfgThreadMillTool          = "縲紋銑刀"; 
+CATEMfgThreadMillTool          = "縲紋銑刀"; 
+MfgFaceMillTool            = "面銑刀";
+CATEMfgFaceMillTool            = "面銑刀";
+MfgMultiDiamDrillTool      = "多層直徑鑽頭";
+CATEMfgMultiDiamDrillTool      = "多層直徑鑽頭";
+MfgTwoSidesChamferingTool  = "雙邊倒角刀";
+CATEMfgTwoSidesChamferingTool  = "雙邊倒角刀";
+MfgBoringAndChamferingTool = "搪刀和倒角刀";
+CATEMfgBoringAndChamferingTool = "搪刀和倒角刀";
+MfgConicalMillTool         = "圓錐銑刀";
+CATEMfgConicalMillTool         = "圓錐銑刀";
+MfgCenterDrillTool         = "中心鑽";
+CATEMfgCenterDrillTool         = "中心鑽";
+MfgBoringBarTool           = "搪刀桿";
+CATEMfgBoringBarTool           = "搪刀桿";
+MfgTSlotterTool            = "T-型銑刀";
+CATEMfgTSlotterTool            = "T-型銑刀";
+MfgAPTTool                 = "APT 刀具";
+CATEMfgAPTTool                 = "APT 刀具";
+
+// * Lathe Tools Holders *
+MfgExternalTool            = "外部刀具";
+CATEMfgExternalTool            = "外部刀具";
+MfgInternalTool            = "內部刀具";
+CATEMfgInternalTool            = "內部刀具";
+MfgGrooveExternalTool      = "溝槽外部刀具";
+CATEMfgGrooveExternalTool      = "溝槽外部刀具";
+MfgGrooveInternalTool      = "溝槽內部刀具";
+CATEMfgGrooveInternalTool      = "溝槽內部刀具";
+MfgGrooveFrontalTool       = "溝槽正面刀具";
+CATEMfgGrooveFrontalTool       = "溝槽正面刀具";
+MfgThreadExternalTool      = "螺紋外部刀具";
+CATEMfgThreadExternalTool      = "螺紋外部刀具";
+MfgThreadInternalTool      = "螺紋外部刀具";
+CATEMfgThreadInternalTool      = "內部螺紋刀具";
+
+// * Lathe Inserts *
+MfgRootInsert       = "捨棄式刀片";
+CATEMfgBaseInsert       = "捨棄式刀片";
+MfgISOInsert        = "ISO 捨棄式刀片";
+CATEMfgISOInsert        = "ISO 捨棄式刀片";
+MfgDiamondInsert    = "鑽石形 捨棄式刀片";
+CATEMfgDiamondInsert    = "鑽石形 捨棄式刀片";
+MfgSquareInsert     = "方形 捨棄式刀片";
+CATEMfgSquareInsert     = "方形 捨棄式刀片";
+MfgTriangularInsert = "三角形 捨棄式刀片";
+CATEMfgTriangularInsert = "三角形 捨棄式刀片";
+MfgRoundInsert      = "圓形 捨棄式刀片";
+CATEMfgRoundInsert      = "圓形 捨棄式刀片";
+MfgTrigonInsert     = "三角形 捨棄式刀片";
+CATEMfgTrigonInsert     = "三角形 捨棄式刀片";
+MfgGrooveInsert     = "開槽 捨棄式刀片";
+CATEMfgGrooveInsert     = "開槽 捨棄式刀片";
+MfgThreadInsert     = "螺紋 捨棄式刀片";
+
+// * CENIT Tool Types *
+// =====================================================================
+MfgWireEDMTool             = "線割 EDM 刀具";
+CATEMfgWireEDMTool      = "線割 EDM 刀具";
+
+MfgLaserBeam            = "雷射";
+CATEMfgLaserBeam        = "雷射";
+
+// * Assemblies Types *
+// =====================================================================
+
+MfgMillAndDrillToolAssembly     = "銑刀組立";
+CATEMfgMillAndDrillToolAssembly = "銑刀組立";
+
+MfgLatheToolAssembly            = "車刀組立";
+CATEMfgLatheToolAssembly        = "車刀組立";
+
+
+// =====================================================================
+// * Resources Attributes *
+// =====================================================================
+
+MFG_NAME           = "名稱";
+
+MFG_COMMENT           = "說明";
+
+MFG_REPOSITORY_SOURCE = "儲存器資源";
+MFG_ORIGINAL_ID       = "來源命名";
+
+
+MFG_TOOL_NUMBER           = "刀具號碼";
+ 
+MFG_TOOL_NUMBER.LongHelp  = "刀具號碼定義, 
+CAA 參數名稱為 MFG_TOOL_NUMBER.";
+ 
+
+MFG_BALL_TYPE             = "球刀";
+ 
+MFG_BALL_TYPE.LongHelp    = "將刀具型式定義成球刀, 
+CAA 參數名稱為 MFG_BALL_TYPE.";
+ 
+
+MFG_NB_OF_STAGES          = "階數";
+ 
+MFG_NB_OF_STAGES.LongHelp    = "定義階梯鑽頭的階數, 
+CAA 參數名稱為 MFG_NB_OF_STAGES.";
+ 
+
+MFG_NOMINAL_DIAM = "直徑";
+ 
+MFG_NOMINAL_DIAM.LongHelp   = "定義刀具的直徑, 
+CAA 參數名稱為 MFG_NOMINAL_DIAM.";
+ 
+
+MFG_CUT_LENGTH            = "切仞長";
+ 
+MFG_CUT_LENGTH.LongHelp   = "定義刀具上的有效切仞長度, 
+CAA 參數名稱為 MFG_CUT_LENGTH.";
+
+MFG_EFFECTIVE_LENGTH            = "有效切削長度";
+MFG_EFFECTIVE_LENGTH.LongHelp   = "定義刀具的有效切削長度.
+CAA 參數名稱為 : MFG_EFFECTIVE_LENGTH.";
+
+MFG_LENGTH            = "長度";
+MFG_LENGTH.LongHelp   = "定義刀具上的刀柄長度, 
+CAA 參數名稱為 MFG_LENGTH.";
+
+MFG_OVERALL_LGTH           = "全長";
+MFG_OVERALL_LGTH.LongHelp  = "定義刀具的全長, 
+CAA 參數名稱為 MFG_OVERALL_LGTH.";
+
+MFG_CORNER_RAD            = "刀具圓角";
+MFG_CORNER_RAD.LongHelp   = "定義刀具圓角, 
+CAA 參數名稱為 MFG_CORNER_RAD.";
+
+MFG_CORNER_RAD_2           = "上部刀具圓角";
+MFG_CORNER_RAD_2.LongHelp  = "定義上部刀具圓角, 
+CAA 參數名稱為 MFG_CORNER_RAD_2.";
+
+MFG_BODY_DIAM           = "刀柄本體直徑";
+MFG_BODY_DIAM.LongHelp  = "定義刀柄本體直徑, 
+CAA 參數名稱為 MFG_BODY_DIAM.";
+
+MFG_CUT_ANGLE           = "切削角度";
+MFG_CUT_ANGLE.LongHelp  = "定義切削角度, 
+CAA 參數名稱為 MFG_CUT_ANGLE.";
+
+MFG_ENTRY_DIAM           = "刀尖直徑";
+MFG_ENTRY_DIAM.LongHelp  = "定義刀尖的小徑, 
+CAA 參數名稱為 MFG_ENTRY_DIAM.";
+
+MFG_TL_TIP_LGTH            = "刀尖長度";
+MFG_TL_TIP_LGTH.LongHelp   ="定義在正確直徑上無法加工材料的部份 (刀具無功能的部份), 
+只使用在鑽頭,鉸刀,搪刀和絲攻.
+CAA 參數名稱為 MFG_TL_TIP_LGTH.";
+
+MFG_OUTSIDE_DIAM           = "外部直徑";
+MFG_OUTSIDE_DIAM.LongHelp  = "定義面銑刀和沉頭刀的外形直徑, 
+CAA 參數名稱為 MFG_OUTSIDE_DIAM.";
+
+MFG_TAPER_ANGLE           = "絲攻角度";
+MFG_TAPER_ANGLE.LongHelp      = "定義刀具的倒角角度, 
+CAA 參數名稱為 MFG_TAPER_ANGLE.";
+
+MFG_SIZE_DESIGN           = "尺寸設計";
+MFG_SIZE_DESIGN.LongHelp  = "以標準值來定義刀具尺寸. 只使用在中心鑽, 
+CAA 參數名稱為 MFG_SIZE_DESIGN.";
+
+MFG_LENGTH_1           = "長度 1";
+MFG_LENGTH_1.LongHelp  = "定義多重直徑刀具或搪刀和倒角刀的第一有效長度, 
+CAA 參數名稱為 MFG_LENGTH_1.";
+
+MFG_LENGTH_2           = "長度 2";
+MFG_LENGTH_2.LongHelp  ="定義多重直徑的第二有效長度, 
+CAA 參數名稱為 MFG_LENGTH_2.";
+
+MFG_CHAMFR_DIAM1           = "倒角直徑 1";
+MFG_CHAMFR_DIAM1.LongHelp  = "定義多重直徑或鉸刀倒角的第二有效直徑, 
+CAA 參數名稱為 MFG_CHAMFR_DIAM1.";
+
+MFG_CHAMFR_DIAM2           = "倒角直徑 2";
+MFG_CHAMFR_DIAM2.LongHelp  = "定義多重直徑的第三有效直徑, 
+CAA 參數名稱為 MFG_CHAMFR_DIAM2.";
+
+MFG_ANGLE2           = "切削角度 2";
+MFG_ANGLE2.LongHelp  = "定義多重直徑或雙邊倒角的第二有效角度, 
+CAA 參數名稱為 MFG_ANGLE2.";
+
+MFG_NON_CUT_DIAM           = "無效切仞直徑";
+MFG_NON_CUT_DIAM.LongHelp  = "定義搪刀桿的未切削端直徑, 
+CAA 參數名稱為 MFG_NON_CUT_DIAM.";
+
+MFG_MIN_DIAMETER           = "最小直徑";
+MFG_MIN_DIAMETER.LongHelp  = "定義可調搪刀桿的最小直徑, 
+CAA 參數名稱為 MFG_MIN_DIAMETER.";
+
+MFG_MAX_DIAMETER           = "最大直徑";
+MFG_MAX_DIAMETER.LongHelp  = "定義可調搪刀桿的最大直徑, 
+CAA 參數名稱為  MFG_MAX_DIAMETER.";
+
+MFG_TIP_LENGTH           = "刀尖長度";
+MFG_TIP_LENGTH.LongHelp  = "定義搪刀桿的位置和形狀, 
+CAA 參數名稱為 MFG_TIP_LENGTH.";
+
+MFG_TIP_RADIUS           = "刀尖半徑";
+MFG_TIP_RADIUS.LongHelp  = "定義搪刀桿的刀尖半徑, 
+CAA 參數名稱為 MFG_TIP_RADIUS.";
+
+MFG_TIP_ANGLE           = "刀尖角度";
+MFG_TIP_ANGLE.LongHelp  = "定義搪刀桿刀尖角度, 
+CAA 參數名稱為 MFG_TIP_ANGLE.";
+
+MFG_TOOL_ANGLE           = "刀具角度";
+MFG_TOOL_ANGLE.LongHelp  = "定義搪刀桿的刀具方向. 允許搪刀桿的刀尖和長度鏈結, 
+CAA 參數名稱為 MFG_TOOL_ANGLE.";
+
+MFG_APT_DIAMETER            = "公稱直徑";
+MFG_APT_DIAMETER.LongHelp   = "定義刀具切削直徑, 
+CAA 參數名稱為 MFG_APT_DIAMETER.";
+
+MFG_APT_RADIUS     = "刀具圓角";
+MFG_APT_RADIUS.LongHelp   = "定義刀具圓角, 
+CAA 參數名稱為 MFG_APT_RADIUS.";
+
+
+MFG_APT_ANGLE      = "刀具角度";
+MFG_APT_TIP_ANGLE  = "刀尖角度";
+MFG_APT_HEIGHT     = "高度";
+MFG_APT_HOR_DISTANCE  = "水平角度";
+MFG_APT_VER_DISTANCE  = "垂直角度";
+
+MFG_NB_OF_FLUTES           = "刀仞數目";
+MFG_NB_OF_FLUTES.LongHelp  = "定義刀仞數目, 
+CAA 參數名稱為 MFG_NB_OF_FLUTES.";
+
+MFG_TL_RAKE_ANG            = "刀具背角";
+MFG_TL_RAKE_ANG.LongHelp   = "定義刀具背角, 
+CAA 參數名稱為 MFG_TL_RAKE_ANG.";
+
+MFG_RADIAL_TL_RAKE_ANG            = "徑向刀具 rake 角度 ";
+MFG_RADIAL_TL_RAKE_ANG.LongHelp   = "定義徑向刀具 rake 角度
+CAA 參數名稱為 MFG_RADIAL_TL_RAKE_ANG.";
+
+
+MFG_TOOTH_MATDES           = "刀齒材料說明.";
+MFG_TOOTH_MATDES.LongHelp  = "允許使用者以附註文字來說明刀具, 
+例如, 可以 ISO 標準來定義刀具材料或參考被覆材料, 
+CAA 參數名稱為 MFG_TOOTH_MATDES.";
+
+MFG_TOOTH_MATDESC           = "刀齒材料說明.";
+MFG_TOOTH_MATDESC.LongHelp  = "允許使用者以附註文字來說明刀具, 
+例如, 可以 ISO 標準來定義刀具材料或參考被覆材料, 
+CAA 參數名稱為 MFG_TOOTH_MATDESC.";
+
+MFG_TOOTH_DES    = "刀齒材料說明";
+MFG_TOOTH_DES.LongHelp  = "允許使用者以附註文字來說明刀具, 
+例如, 可以是刀具供應商的刀片文字, 
+CAA 參數名稱為 MFG_TOOTH_DES.";
+
+MFG_TOOTH_DESC    = "刀齒材料說明";
+MFG_TOOTH_DESC.LongHelp  = "允許使用者以附註文字來說明刀具, 
+例如, 可以是刀具供應商的刀片文字.
+CAA 參數名稱為 MFG_TOOTH_DESC.";
+
+MFG_TOOTH_MAT    = "刀齒材料";
+MFG_TOOTH_MAT.LongHelp  ="定義刀齒材料形式. 它可使用下列值 :
+  高速鋼
+  被覆高速鋼
+  鎢鋼
+  被覆鎢鋼
+  其它
+CAA 參數名稱為 MFG_TOOTH_MAT.";
+
+MFG_WAY_OF_ROT   = "旋轉方式";
+MFG_WAY_OF_ROT.LongHelp = "定義刀具旋轉方式. 它可使用下列值 :
+  RIGHT_HAND
+  LEFT_HAND
+它應該與轉動方向相容.
+CAA 參數名稱為 MFG_WAY_OF_ROT.";
+
+MFG_MACH_QUALITY = "切削品質";
+MFG_MACH_QUALITY.LongHelp  = "定義刀具在粗銑或精銑的切削能力. 它可使用下列值 :
+  粗銑
+  精銑
+  兩者
+CAA 參數名稱為 MFG_MACH_QUALITY.";
+
+MFG_COMPOSITION  = "組合";
+MFG_COMPOSITION.LongHelp = "指定刀具組立形式. 它可使用下列值 :
+  單一
+  刀片刀把
+CAA 參數名稱為 MFG_COMPOSITION.";
+
+MFG_MAX_PLNG_ANG = "最大插刀角度";
+MFG_MAX_PLNG_ANG.LongHelp  = "定義銑刀的插刀能刀. 當銑刀可沿軸向插刀, 最大插刀角度等於 90 度.
+CAA 參數名稱為 MFG_MAX_PLNG_ANG.";
+
+MFG_MAX_MIL_LENGTH = "最大加工長度";
+MFG_MAX_MIL_LENGTH.LongHelp  = "以長度單位來說明刀具壽命.
+CAA 參數名稱為 MFG_MAX_MIL_LENGTH.";
+
+MFG_MAX_MIL_TIME = "最大刀具壽命";
+MFG_MAX_MIL_TIME.LongHelp = "以長度單位來說明刀具壽命.
+CAA 參數名稱為 MFG_MAX_MIL_TIME.";
+
+MFG_COOLNT_SNTX  = "切削水語法";
+MFG_COOLNT_SNTX.LongHelp = "指出切削水語法.
+CAA 參數名稱為 MFG_COOLNT_SNTX.";
+
+MFG_WEIGHT_SNTX  = "重量語法";
+MFG_WEIGHT_SNTX.LongHelp = "指出重量語法.
+CAA 參數名稱為 MFG_WEIGHT_SNTX.";
+
+MFG_THREAD_CLASS = "螺紋級數";
+MFG_THREAD_CLASS.LongHelp  = "定義絲攻螺紋尺寸容差
+並可使用下列值:
+  1B (英制螺牙形式)
+  2B (英制螺牙形式)
+  3B (英制螺牙形式)
+  5H (公制螺牙形式)
+  6H (公制螺牙形式)
+  7H (公制螺牙形式)
+  OTHER
+CAA 參數名稱為 MFG_THREAD_CLASS.";
+
+MFG_THREAD_FORM  = "螺牙形式";
+MFG_THREAD_FORM.LongHelp ="定義螺牙的標準形式 :
+  公制
+  英制
+  其它
+CAA 參數名稱為 MFG_THREAD_FORM.";
+
+MFG_PITCH_OF_THD = "螺牙節距";
+MFG_PITCH_OF_THD.LongHelp = "說明絲攻的螺牙節距.
+CAA 參數名稱為 MFG_PITCH_OF_THD.";
+
+MFG_PITCH_OF_THREAD = "螺牙節距";
+MFG_PITCH_OF_THREAD.LongHelp = "說明絲攻的螺牙節距.
+CAA 參數名稱為 MFG_PITCH_OF_THD.";
+
+MFG_NB_OF_THREAD = "螺紋數目";
+MFG_NB_OF_THREAD.LongHelp = "說明絲攻的螺紋數目.
+CAA 參數名稱為 MFG_NB_OF_THREAD.";
+
+MFG_THD_FRM_DESC           = "螺紋形式說明.";
+MFG_THD_FRM_DESC.LongHelp  = "允許使用者說明絲攻的螺紋形式. 
+例如, 如圓的螺紋
+CAA 參數名稱為 MFG_THD_FRM_DESC.";
+
+MFG_THD_CLS_DESC = "螺紋級數說明.";
+MFG_THD_CLS_DESC.LongHelp  = "允許使用者說明絲攻的螺紋形式.
+CAA 參數名稱為 MFG_THD_CLS_DESC.";
+
+MFG_BORE_ABILITY = "搪刀能力";
+MFG_BORE_ABILITY.LongHelp = "決定依據組態搪刀桿是使用在盲孔或穿孔. 可使用下列值 :
+  穿孔 ( 隱含切削角 < 90 度且刀具長度 > 0)
+  兩者 ( 隱含切削角 > 90 度且刀具長度 = 0)
+CAA 參數名稱為 MFG_BORE_ABILITY.";
+
+MFG_SITE_TYP    = "形式";
+MFG_SITE_TYP.LongHelp  = "定義輸出點形式的補償定義. 依據刀具形式列出可用形式.
+CAA 參數名稱為 MFG_SITE_TYP.";
+
+MFG_SITE_NUM    = "補正 Id";
+MFG_SITE_NUM.LongHelp  = "定義更正號碼. 此號碼必須是唯一的.
+CAA 參數名稱為 MFG_SITE_NUM.";
+
+MFG_LNG_NUM     = "補正號碼";
+MFG_LNG_NUM.LongHelp  = "定義補正號碼. 
+當在 APT 輸出中定義 NC 命令 MFG_TOOL_COMP 或 MFG_TL_COMP
+時可產生此號碼.
+CAA 參數名稱為 MFG_LNG_NUM.";
+
+MFG_RAD_NUM     = "半徑號碼";
+MFG_RAD_NUM.LongHelp  = "定義補正半徑號碼. 
+當工具機允許半徑補正時此號碼才有效. 
+當在輸出 APT 檔案並定義 NC　命令 MFG_TL_COMP_RAD
+資訊時，此號碼才可以產生. 
+CAA 參數名稱為 MFG_RAD_NUM.";
+
+MFG_CMP_TL_DIAM = "刀具直徑";
+MFG_CMP_TL_DIAM.LongHelp  = "對所選的補正定義刀具直徑.
+CAA 參數名稱為 MFG_CMP_TL_DIAM.";
+
+MFG_TOOL_CORE_DIAMETER = "未切削直徑";
+MFG_TOOL_CORE_DIAMETER.LongHelp = "指定刀具的未切削直徑.
+CAA 參數名稱為 MFG_TOOL_CORE_DIAMETER.";
+
+MFG_LENGTH_NOM_DIAM = "公稱直徑位置";
+MFG_LENGTH_NOM_DIAM.LongHelp = "指定如何量測公稱直徑.
+CAA 參數名稱為 MFG_LENGTH_NOM_DIAM.";
+
+// * Lathe Tool Holder Attributes*
+// =====================================================================
+MFG_DESC_CODE         = "說明碼";
+MFG_SHANK_WIDTH       = "柄寬";
+MFG_SHK_LENGTH_2      = "柄長 2";
+MFG_SHK_LENGTH_1      = "柄長 1";
+MFG_SHANK_HEIGHT      = "柄高";
+MFG_SHK_CUT_WDTH      = "柄切削寬度";
+MFG_CLEAR_ANGLE       = "間隙角度";
+MFG_INSERT_LGTH       = "刀片長度";
+MFG_INSERT_ANGLE      = "刀片角度";
+MFG_INSERT_WIDTH      = "刀片寬度";
+MFG_KAPPA_R           = "切削角角度";
+MFG_HAND_STYLE        = "傳遞形式";
+MFG_HAND_ANGLE        = "傳遞角度";
+MFG_MAX_CUT_WDTH      = "最大切削寬度";
+MFG_MAX_CUT_DPTH      = "最大切削深度";
+MFG_MIN_CUT_DIAM      = "最小切削直徑";
+MFG_MAX_CUT_DIAM      = "最大切削直徑";
+MFG_GAUGING_ANG       = "量測角度";
+MFG_HOLDER_CAPAB      = "刀把能刀";
+MFG_MAX_REC_DPTH      = "最大退刀深度";
+MFG_LEADING_ANG       = "導入角度";
+MFG_TRAILING_ANG      = "逃逸角度";
+MFG_BAR_CUT_RAD       = "刀桿切徑";
+MFG_BAR_LENGTH_1      = "刀桿長度 1";
+MFG_BAR_LENGTH_2      = "刀桿長度 2";
+MFG_MIN_DIAM          = "最小直徑";
+MFG_MAX_BOR_DPTH      = "最大搪刀深度";
+MFG_ISO_CUT_SIZE      = "ISO 切削尺寸";
+MFG_ISO_CUT_SIZE.LongHelp     = "定義 ISO 切削尺寸
+加工屬性為 MFG_ISO_CUT_SIZE.";
+MFG_ISO_WIDTH         = "ISO 寬度";
+MFG_ISO_WIDTH.LongHelp        = "定義 ISO 寬度
+加工屬性為 MFG_ISO_WIDTH.";
+MFG_ISO_LENGTH        = "ISO 長度";
+MFG_ISO_LENGTH.LongHelp       = "定義 ISO 長度
+加工屬性為 MFG_ISO_LENGTH.";
+MFG_ISO_DIR           = "ISO 方向";
+MFG_ISO_DIR.LongHelp          = "定義 ISO 方向
+加工屬性為 MFG_ISO_DIR.";
+MFG_ISO_CLR_ANG       = "ISO 間隙角度";
+MFG_ISO_CLR_ANG.LongHelp      = "定義 ISO 間隙角度
+加工屬性為 MFG_ISO_CLR_ANG.";
+MFG_ISO_HEIGHT        = "ISO 高度";
+MFG_ISO_HEIGHT.LongHelp       = "定義 ISO 高度
+加工屬性為 MFG_ISO_HEIGHT.";
+MFG_ISO_APPR_ANG      = "ISO 約略角度";
+MFG_ISO_APPR_ANG.LongHelp     = "定義 ISO 約略角度
+加工屬性為 MFG_ISO_APPR_ANG.";
+MFG_ISO_SHAPE         = "ISO 外形";
+MFG_ISO_SHAPE.LongHelp        = "定義 ISO 外形
+加工屬性為 MFG_ISO_SHAPE.";
+MFG_ISO_CLAM_SYS      = "ISO 壓持形式.";
+MFG_ISO_CLAM_SYS.LongHelp     = "定義 ISO 壓持形式.
+加工屬性為 MFG_ISO_CLAM_SYS.";
+MFG_ISO_BAR_DIA       = "ISO 刀桿直徑";
+MFG_ISO_BAR_DIA.LongHelp      = "定義 ISO 刀桿直徑
+加工屬性為 MFG_ISO_BAR_DIA.";
+MFG_ISO_BAR_TYPE      = "ISO 刀桿形式";
+MFG_ISO_BAR_TYPE.LongHelp     = "定義 ISO 刀桿形式
+加工屬性為 MFG_ISO_BAR_TYPE.";
+MFG_ISO_TOL               = "Inscribed 直徑 (ISO)";
+MFG_ISO_TOL.LongHelp      = "定義 ISO inscribed 直徑
+加工屬性為 MFG_ISO_TOL.";
+MFG_ISO_TYPE              = "刀片型式 (ISO)";
+MFG_ISO_TYPE.LongHelp     = "定義 ISO 刀片型式
+加工屬性為 MFG_ISO_TYPE.";
+MFG_ISO_THICK             = "刀片厚度 (ISO)";
+MFG_ISO_THICK.LongHelp    = "定義 ISO 刀片厚度
+加工屬性為 MFG_ISO_THICK.";
+MFG_ISO_NOSE_RAD          = "刀片鼻半徑 (ISO)";
+MFG_ISO_NOSE_RAD.LongHelp = "定義 ISO 刀片鼻半徑
+加工屬性為 MFG_ISO_NOSE_RAD.";
+MFG_ISO_CUTCOND           = "刀片切角情形 (ISO)";
+MFG_ISO_CUTCOND.LongHelp  = "定義 ISO 刀片切角情形
+加工屬性為 MFG_ISO_CUTCOND.";
+
+MFG_DESC_CODE.LongHelp       = "定義說明碼: ISO 或 ANSI.
+CAA 參數名稱為 MFG_DESC_CODE.";
+MFG_SHANK_WIDTH.LongHelp     = "定義刀把的寬度.
+CAA 參數名稱為 MFG_SHANK_WIDTH.";
+MFG_SHK_LENGTH_2.LongHelp    = "定義刀具作動外形的長度.
+CAA 參數名稱為 MFG_SHK_LENGTH_2.";
+MFG_SHK_LENGTH_1.LongHelp    = "定義刀具總長.
+CAA 參數名稱為 MFG_LENGTH_1.";
+MFG_SHANK_HEIGHT.LongHelp    = "定義刀把的高度.
+CAA 參數名稱為 MFG_SHANK_HEIGHT.";
+MFG_SHK_CUT_WDTH.LongHelp    = "定義刀具的切削寬度.
+CAA 參數名稱為 MFG_SHK_CUT_WDTH.";
+MFG_CLEAR_ANGLE.LongHelp     = "定義預留角度.
+CAA 參數名稱為 MFG_CLEAR_ANGLE.";
+MFG_INSERT_LGTH.LongHelp     = "定義刀片的切削仞長度.
+CAA 參數名稱為 MFG_INSERT_LGTH.";
+MFG_INSERT_ANGLE.LongHelp    = "定義刀片插入刀座的角度.
+CAA 參數名稱為 MFG_INSERT_ANGLE.";
+MFG_INSERT_WIDTH.LongHelp    = "定義刀片寬度.
+CAA 參數名稱為 MFG_INSERT_WIDTH.";
+MFG_KAPPA_R.LongHelp         = "定義刀片角度.
+CAA 參數名稱為 MFG_KAPPA_R.";
+MFG_HAND_STYLE.LongHelp      = "定義刀片形式.
+CAA 參數名稱為 MFG_HAND_STYLE, 可能值為 右手刀, 左手刀或中間.";
+MFG_HAND_ANGLE.LongHelp      = "定義刀片形式.
+CAA 參數名稱為 MFG_HAND_ANGLE.";
+MFG_MAX_CUT_WDTH.LongHelp    = "定義最大切寬.
+CAA 參數名稱為 MFG_MAX_CUT_WDTH.";
+MFG_MIN_CUT_DIAM.LongHelp    = "定義最小切入直徑.
+CAA 參數名稱為 MFG_MIN_CUT_DIAM.";
+MFG_MAX_CUT_DIAM.LongHelp    = "定義最大切入直徑.
+CAA 參數名稱為 MFG_MAX_CUT_DIAM.";
+MFG_HOLDER_CAPAB.LongHelp    = "定義刀把能力.
+CAA 參數名稱為 MFG_HOLDER_CAPAB 可能的值為 曲面, 移動或兩者.";
+MFG_BAR_CUT_RAD.LongHelp      = "定義刀具的切削半徑.
+CAA 參數名稱為 MFG_BAR_CUT_RAD.";
+MFG_BAR_LENGTH_1.LongHelp     = "定義刀具的總長.
+CAA 參數名稱為 MFG_BAR_LENGTH_1.";
+MFG_BAR_LENGTH_2.LongHelp     = "定義刀具作動部份的外形長度.
+CAA 參數名稱為 MFG_BAR_LENGTH_2.";
+MFG_MIN_DIAM.LongHelp         = "定義可切削的最小直徑.
+CAA 參數名稱為 MFG_MIN_DIAM.";
+
+// Insert-holder : Technological attributes influencing the area to machine
+
+MFG_LEADING_ANG.LongHelp     = "定義 leading angle of the insert-holder with respect to the axial axis.
+It 定義 maximum slope on which machining can be done. It can reduce the area to machine and leave material unmachined.
+\nNOTE: This attribute can be ignored using the 'Insert-holder constraints' option at turning operation level.
+\nParameter name for CAA : MFG_LEADING_ANG.";
+
+MFG_TRAILING_ANG.LongHelp     = "定義 trailing angle of the insert-holder with respect to the axial axis. 
+It 定義 maximum slope on which machining can be done. It can reduce the area to machine and leave material unmachined.
+\nNOTE: This attribute can be ignored using the 'Insert-holder constraints' option at turning operation level.
+\nParameter name for CAA : MFG_TRAILING_ANG.";
+
+MFG_GAUGING_ANG.LongHelp     = "定義 gouging angle of the insert-holder with respect to the axial axis.
+It 定義 maximum slope on which machining can be done. It can reduce the area to machine and leave material unmachined.
+\nNOTE: This attribute can be ignored using the 'Insert-holder constraints' option at turning operation level.
+\nParameter name for CAA : MFG_GAUGING_ANG.";
+
+MFG_MAX_CUT_DPTH.LongHelp    = "定義 maximum cut depth of the insert-holder.
+If this attribute value is less than the depth of the area to machine, it can reduce this area and leave material unmachined.
+\nNOTE: This attribute can be ignored using the 'Insert-holder constraints' option at turning operation level.
+\nParameter name for CAA : MFG_MAX_CUT_DPTH.";
+
+MFG_MAX_REC_DPTH.LongHelp    = "定義 maximum recessing depth of the insert-holder.
+If this attribute value is less than the depth of the area to machine, it can reduce this area and leave material unmachined.
+\nNOTE: This attribute can be ignored using the 'Insert-holder constraints' option at turning operation level.
+\nParameter name for CAA : MFG_MAX_REC_DPTH.";
+
+MFG_MAX_BOR_DPTH.LongHelp     = "定義 maximum boring depth of the insert-holder.
+If this attribute value is less than the depth of the area to machine, it can reduce this area and leave material unmachined.
+\nNOTE: This attribute can be ignored using the 'Insert-holder constraints' option at turning operation level.
+Parameter name for CAA : MFG_MAX_BOR_DPTH.";
+
+// =====================================================================
+// NLS for MACHINES
+// =====================================================================
+
+// * Machines Attributes *
+
+MFG_PPLIB_FILE   = "後處理器";
+MFG_PP_WORD_TBL  = "後處理器語法表";
+MFG_OUTPUT_TYPE  = "NC 資料形式";
+MFG_OUTPUT_FRMT  = "NC 資料格式";
+MFG_R_MIN_CIRC   = "最小內插半徑";
+MFG_R_MAX_CIRC   = "最大內插半徑";
+MFG_MIN_DISC     = "最小不連續弧差";
+MFG_MIN_ANGLE    = "最小不連續角度差";
+MFG_X_HOME_POS   = "原點 X";
+MFG_Y_HOME_POS   = "原點 Y";
+MFG_Z_HOME_POS   = "原點 Z";
+MFG_X_INIT_SPNDL = "方向 I";
+MFG_Y_INIT_SPNDL = "方向 J";
+MFG_Z_INIT_SPNDL = "方向 K";
+MFG_X_TOOL_POS   = "刀具更換點 X";
+MFG_Y_TOOL_POS   = "刀具更換點 Y";
+MFG_Z_TOOL_POS   = "刀具更換點 Z";
+MFG_TOOL_CATALOG = "刀具目錄";
+MFG_CMP_RAD_OPT  = "半徑補償值";
+MFG_STRT_PT_SYNT = "原點輸出";
+MFG_INT_LIN_3D   = "3D 線性內插.";
+MFG_INT_CIRC_2D  = "2D 圓內插.";
+MFG_INT_CIRC_3D  = "3D 圓內插.";
+MFG_X_ROT_CENTER = "圓中心點 X";
+MFG_Y_ROT_CENTER = "圓中心點 Y";
+MFG_Z_ROT_CENTER = "圓中心點 Z";
+MFG_ROTARY_AXIS  = "旋轉軸";
+MFG_ROTARY_ANGLE  = "旋轉角度";
+MFG_INIT_ROT_POS = "起始位置";
+MFG_ROT_DIR      = "旋轉方向";
+MFG_ROT_TYP      = "旋轉形式";
+MFG_X_TL_ORIENT  = "刀具方向 I";
+MFG_Y_TL_ORIENT  = "刀具方向 J";
+MFG_Z_TL_ORIENT  = "刀具方向 K";
+MFG_NURBS_OUTPUT = "3D Nurbs 內插";
+
+MFG_AXIAL_RADIAL_MOVE = "軸向 / 徑向移動";
+MFG_AXIAL_RADIAL_MOVE.LongHelp = "指定在軸向動作時, 
+自動避免干涉的軸向和徑向移動能力";
+
+MFG_MAX_FEEDRATE  = "最大加工進給";
+MFG_MAX_FEEDRATE.LongHelp = "指定最大加工進給.
+此功能用在 NC 加工驗證產品
+若速度超過設定值將會報告 (或刀具與材料干涉)";
+
+MFG_RAPID_FEED  = "快速進給";
+MFG_RAPID_FEED.LongHelp = "指定快速進給.
+用來計算總加工時間
+並可在 APT 中更換 RAPID 指令.";
+
+MFG_ROTABL_OUTPUT = "循環中輸出旋轉床檯";
+MFG_ROTABL_OUTPUT.LongHelp = "在軸向動作循環指令時指定輸出旋轉床檯指令";
+
+MFG_X_ORIGIN_ROTARY_DIR = "參考方向 X";
+MFG_X_ORIGIN_ROTARY_DIR.LongHelp = "定義相對參考機具加工軸系的 X 方向無效加工座標.";
+MFG_Y_ORIGIN_ROTARY_DIR = "參考方向 Y";
+MFG_Y_ORIGIN_ROTARY_DIR.LongHelp = "定義相對參考機具加工軸系的 Y 方向無效加工座標.";
+MFG_Z_ORIGIN_ROTARY_DIR = "參考方向 Z";
+MFG_Z_ORIGIN_ROTARY_DIR.LongHelp = "定義相對參考機具加工軸系的 Z 方向無效加工座標.";
+
+MFG_NAME.LongHelp    = "指定資源名稱.";
+
+MFG_COMMENT.LongHelp = "關聯說明至資源.";
+
+MFG_PPLIB_FILE.LongHelp = "Specifies the name of the post processor (PP) file
+(The PP type has to be selected in Tools>Options>Machining>Output.)";
+MFG_PPLIB_FILE.ShortHelp = "Specifies the name of the post processor (PP) file
+(The PP type has to be selected in Tools>Options>Machining>Output.)";
+MFG_PPLIB_FILE.Help = "Specifies the name of the post processor file";
+
+MFG_PP_WORD_TBL.LongHelp   = "指定關至後處理器字元的 PP 字元表名稱.";
+ 
+MFG_OUTPUT_TYPE.LongHelp   = "指定 NC 資料的輸出型式. 
+可以是下列數值:
+   APT (APT 資料, 預設值),
+   CLF-3000 (刀路記錄型式 3000 和 5000 ),
+   CLF-15000 (刀路記錄型式 15000),
+   ISO.";
+
+MFG_OUTPUT_FRMT.LongHelp   = "指定 NC 資料的輸出型式. 可以是下列數值:
+  點 (X,Y,Z 點資料, 預設值),
+  軸 (X,Y,Z,I,J,K 點資料和刀軸分向量).";
+
+MFG_R_MIN_CIRC.LongHelp    = "指定加工機具可達到的最小圓弧內插半徑.";
+MFG_R_MAX_CIRC.LongHelp   = "指定加工機具可達到的最大圓弧內插半徑.";
+
+MFG_MIN_DISC.LongHelp      = "指定加工機具可達到兩鄰近點間的最小距離. 
+小於此數值間的點將被忽略輸出.";
+MFG_MIN_ANGLE.LongHelp     = "指定加工機具可達到兩鄰近點間的最小刀軸變化. 
+小於此數值間的刀具軸變化點將被忽略輸出.";
+
+MFG_LATHE_RAD_AX          = "徑向軸:";
+MFG_LATHE_RAD_AX.LongHelp = "定義 radial axis, generally, the X axis.\nCombined with the spindle axis, it 定義 programming working plane,\n where the selected geometry is projected.
+\nOn turret, it 定義 plane where turning tool are represented.";
+
+MFG_LATHE_SPN_AX          = "刀具軸:";
+MFG_LATHE_SPN_AX.LongHelp = "定義 spindle and C axes, generally, the Z axis.\nCombined with the radial axis, it 定義 programming working plane\n where the selected geometry is projected.";
+
+MFG_LATHE_MAX_SPNDL_SPEED = "最大刀軸速度 : ";
+MFG_LATHE_MAX_SPNDL_SPEED.LongHelp = "Maximum Speed of the spindle\nAttribute used in time computations when machining at constant cutting speed.";
+
+MFG_LATHE_AX_AX           = "軸向軸 : ";
+MFG_LATHE_AX_AX.LongHelp = "定義 axial axis (X, Y or Z). With the radial axis, it 定義 plan to represent turning tools.";
+
+MFG_TRAVERSE_NB          = "移動數目";
+MFG_TRAVERSE_NB.LongHelp = "定義移動數目";
+
+MFG_TRAV_PITCH           = "移動單位距離";
+MFG_TRAV_PITCH.LongHelp  = "定義兩移動單位距離";
+
+MFG_X_HOME_POS.LongHelp    = "定義相對參考機具加工軸系原點的 X 座標. 如果此旋轉在程式的第一個位置, 播放床檯旋轉時將計入此點. ";
+MFG_Y_HOME_POS.LongHelp    = "定義相對參考機具加工軸系原點的 Y 座標. 如果此旋轉在程式的第一個位置, 播放床檯旋轉時將計入此點. ";
+MFG_Z_HOME_POS.LongHelp    = "定義相對參考機具加工軸系原點的 Z 座標. 如果此旋轉在程式的第一個位置, 播放床檯旋轉時將計入此點. ";
+
+MFG_X_TOOL_POS.LongHelp    = "定義相對參考機具加工軸系換刀點的 X 座標.";
+MFG_Y_TOOL_POS.LongHelp    = "定義相對參考機具加工軸系換刀點的 Y 座標.";
+MFG_Z_TOOL_POS.LongHelp    = "定義相對參考機具加工軸系換刀點的 Z 座標.";
+
+MFG_TOOL_CATALOG.LongHelp  = "指定預設的刀具目錄名稱.";
+
+MFG_CMP_RAD_OPT.LongHelp   = "指定支援半徑補償的能力.
+每一把刀具可定義自己的刀具半徑補償號碼. 
+當 NC 命令中有設定 MFG_TL_COMP_RAD
+將會在 APT 中輸出.";
+
+MFG_STRT_PT_SYNT.LongHelp  = "指定刀具起始點的使用文字形式: GOTO 或 FROM";
+
+MFG_INT_LIN_3D.LongHelp    = "指定機具在兩點間是否可做 3D 線性插入.";
+MFG_INT_CIRC_2D.LongHelp   = "指定機具在兩點間是否可做 2D 平面循圓.";
+MFG_INT_CIRC_3D.LongHelp   = "指定機具在兩點間是否可做 3D 循圓.";
+
+MFG_X_ROT_CENTER.LongHelp  = "定義相對機械座標原點的旋轉中心 X 軸座標. ";
+MFG_Y_ROT_CENTER.LongHelp  = "定義相對機械座標原點的旋轉中心 Y 軸座標.";
+MFG_Z_ROT_CENTER.LongHelp  = "定義相對機械座標原點的旋轉中心 Z 軸座標.";
+
+MFG_ROTARY_AXIS.LongHelp   = "如果機具有旋轉軸, 指定平行於旋轉軸的軸 (A, B 或 C) .";
+MFG_ROTARY_ANGLE.LongHelp   = "如果機具有旋轉軸, 指定旋轉角度.";
+MFG_INIT_ROT_POS.LongHelp  = "如果機具有旋轉軸, , 指定旋轉檯的起始角度.";
+MFG_ROT_DIR.LongHelp       = "指定機具可接受的旋轉方向 ( 順時針或逆時針或最短路徑 )用來鑽圓弧陣列 .";
+MFG_ROT_TYP.LongHelp       = "指定機具的旋轉方向為絕對值 . 
+此為目前版本的唯一選擇.";
+
+MFG_X_INIT_SPNDL.LongHelp  = "定義相對機械座標的 I 分量.";
+MFG_Y_INIT_SPNDL.LongHelp  = "定義相對機械座標的 J 分量.";
+MFG_Z_INIT_SPNDL.LongHelp  = "定義相對機械座標的 K 分量.";
+
+MFG_X_TL_ORIENT.LongHelp   = "定義相對機械座標的刀具 I 分量.";
+MFG_Y_TL_ORIENT.LongHelp   = "定義相對機械座標的刀具 J 分量.";
+MFG_Z_TL_ORIENT.LongHelp   = "定義相對機械座標的刀具 K 分量.";
+
+
+MFG_NURBS_OUTPUT.LongHelp = "未來使用";
+
+POINT = "點 (X,Y,Z)";
+AXIS = "軸 (X,Y,Z,I,J,K)";
+
+FROM = "FROM";
+GOTO = "GOTO";
+ABS = "絕對值";
+REL = "相對值";
+BOTH = "最短";
+CLW = "順時針";
+CCLW = "逆時針";
+
+SplitCircleType = "圓弧分割模式";
+
+MfgSplitCircleNone   = "不分割";
+MfgSplitCircleV5Mode = "兩相等弧";
+MfgSplitCircleV4Mode = "90 deg 弧 和 剩餘弧)";
+
+DefaultMachine.Title = "預設";
+NotSpecified = "未指定";
+
+MfgLatheSpindle       = "刀軸";
+
+CATEMfgLatheSpindle       = "刀軸";
+MfgLatheSpindle.LongHelp          = "定義刀軸參數";
+MfgLatheTurret        = "刀塔";
+CATEMfgLatheTurret        = "刀塔";
+MfgLatheTurret.LongHelp           = "定義 turret 參數";
+CATEMfgLmtMachineSpindle  = "刀軸";
+CATEMfgLmtMachineSpindle.LongHelp = "Define a spindle on a lathe multi turret machine";
+CATEMfgLmtMachineTurret   = "刀塔";
+CATEMfgLmtMachineTurret.LongHelp  = "Define a turret on a lathe multi turret machine";
+MfgLmtMachSynchroMode = "同步化模式";
+MfgLmtMachSynchroMode.LongHelp = "Define the synchronization mode handled by the machine";  
+MfgLmtUnilateral      = "單一方向";
+MfgLmtUnilateral.LongHelp      = "Only unilateral synchronization are managed";
+MfgLmtMultilateral    = "多重方向";
+MfgLmtMultilateral.LongHelp    = "Only multilateral synchronization are managed";
+MfgLmtBoth            = "兩者";
+MfgLmtBoth.LongHelp            = "Both unilateral and multilateral synchronization are managed";
+MfgLmtSpindleType     = "刀軸型式";
+MfgLmtSpindleType.LongHelp  = "The type of the spindle Main, Counter or embedded";
+MfgLmtSpiMain         = "主要";
+MfgLmtSpiMain.LongHelp      = "A main spindle of a multi spindle machine";
+MfgLmtSpiCounter      = "Counter";
+MfgLmtSpiCounter.LongHelp   = "A counter spindle of a multi spindle machine";
+MfgLmtSpiEmbedded     = "植入";
+MfgLmtSpiEmbedded.LongHelp  = "An embedded spindle";
+MfgLmtSpiCaxisType    = "刀軸上 C 軸";
+MfgLmtSpiCaxisType.LongHelp = "Indicate the possibility of C axis on spindle";
+MfgLmtNo              = "無";
+MfgLmtNo.LongHelp           = "There is no C axis on spindle";
+MfgLmtDiscrete        = "不連續";
+MfgLmtDiscrete.LongHelp     = "There is a discrete C axis on spindle";
+MfgLmtContinuous      = "連續";
+MfgLmtContinuous.LongHelp   = "There is a Continuous C axis on spindle";
+MfgLmtSpiCaxisRotaryDir = "C 軸旋轉方向";
+MfgLmtSpiCaxisRotaryDir.LongHelp = "Indicate the C axis rotary direction CLW, CCLW, shortest";
+MfgLmtSpiCaxisRotType = "C 軸旋轉型式";
+MfgLmtSpiCaxisRotType.LongHelp = "Indicate the way rotations are handled by the C axis";
+MfgLmtSpiAbsolute     = "絕對";
+MfgLmtSpiAbsolute.LongHelp     = "C axis managed by absolute angle value";
+MfgLmtSpiIncremental  = "增量";
+MfgLmtSpiIncremental.LongHelp  = "C axis managed by incremental angle value";
+MfgLmtTurretType      = "刀塔型式";
+MfgLmtTurretType.LongHelp   = "Define the turret type Tool Shop, Revolver, Fixed Tool";
+MfgLmtTurToolShop     = "刀倉";
+MfgLmtTurToolShop.LongHelp  = "The turret is a tool shop";
+MfgLmtTurRevolver     = "旋轉盤";
+MfgLmtTurRevolver.LongHelp  = "The turret is a revolver turret";
+MfgLmtTurFixedTool    = "固定刀具";
+MfgLmtTurFixedTool.LongHelp = "The turret is a fixed tool";
+MfgLmtTurBAxisType    = "刀塔上 B 軸";
+MfgLmtTurBAxisType.LongHelp = "Indicate the possibility to habe a B axis on turret (No, Discrete, Continuous)";
+MfgLmtTurSpindleLink  = "刀塔-刀軸 鏈結";
+MfgLmtTurSpindleLink.LongHelp = "Define the possible links between turrets and spindles";
+MfgLmtShared          = "分享";
+MfgLmtShared.LongHelp    = "The turret is shared by the spindles";
+MfgLmtExclusive       = "其它的";
+MfgLmtExclusive.LongHelp = "The turret is exclusively dedicated to the spindle ";
+MfgLmtNone            = "無";
+MfgLmtNone.LongHelp      = "No links is defined between turret and spindle";
+
+MfgLmtSpindleNameChooser          = "刀軸名稱 : ";
+MfgLmtSpindleNameChooser.LongHelp = "Spindle is used in : \n* Time Computation,\n* Master/Slave checks and\n* Machining directions for Turning operations
+It's mandatory for the computation of the operation. Otherwise the default spindle is the first one on the machine";
+
+MfgLmtSpindleName    = "刀軸名稱";
+MfgLmtSpindleName.LongHelp    = "Define the name of the spindle";
+MfgLmtSpindleNumber  = "刀軸號碼";
+MfgLmtSpindleNumber.LongHelp  = "The number of the spindle";
+MfgLmtSpiCenterX     = "中心點 X";
+MfgLmtSpiCenterX.LongHelp     = "Value of the first coordinate of the center of the spindle";
+MfgLmtSpiCenterY     = "中心點 Y";
+MfgLmtSpiCenterY.LongHelp     = "Value of the second coordinate of the center of the spindle";
+MfgLmtSpiCenterZ     = "中心點 Z";
+MfgLmtSpiCenterZ.LongHelp     = "Value of the trhird coordinate of the center of the spindle";
+MfgLmtSpiInitAngle   = "初始位置";
+MfgLmtSpiInitAngle.LongHelp   = "Initial rotary position of the spindle";
+MfgLmtSpiRotaryAngle = "旋轉角度";
+MfgLmtSpiRotaryAngle.LongHelp = "Current rotary angle of the spindle";
+
+MfgLmtTurretNameChooser          = "Turret 名稱 : ";
+MfgLmtTurretNameChooser.LongHelp = "Turret holding the tooling\nA turret can not be shared by 2 programs.
+It's manadatory to be able to compute operation below this program.";
+
+
+MfgLmtTurretName     = "刀塔名稱";
+MfgLmtTurretName.LongHelp       = "Define the name of the turret, output in NC code";
+MfgLmtTurretNumber   = "刀塔號碼";
+MfgLmtTurretNumber.LongHelp     = "Define the number of the turret, output in NC code";
+MfgLmtTurRefPtX      = "參考點 X";
+MfgLmtTurRefPtX.LongHelp        = "Value of the turret's reference Point X coordinate";
+MMfgLmtTurRefPtY      = "參考點 Y";
+MfgLmtTurRefPtY.LongHelp        = "Value of the turret's reference Point Y coordinate";
+MfgLmtTurRefPtZ      = "參考點 Z";
+MfgLmtTurRefPtZ.LongHelp        = "Value of the turret's reference Point Z coordinate";
+MfgLmtTurToolChgPtX  = "刀具更換點 X";
+MfgLmtTurToolChgPtX.LongHelp    = "Value of the turret's tool Change Point X coordinate";
+MfgLmtTurToolChgPtY  = "刀具更換點 Y";
+MfgLmtTurToolChgPtY.LongHelp    = "Value of the turret's tool Change Point Y coordinate";
+MfgLmtTurToolChgPtZ  = "刀具更換點 Z";
+MfgLmtTurToolChgPtZ.LongHelp    = "Value of the turret's tool Change Point Z coordinate";
+MfgLmtTurRotAxisX    = "旋轉軸 I";
+MfgLmtTurRotAxisX.LongHelp      = "The turret's Rotary Axis is along I axis";
+MfgLmtTurRotAxisY    = "旋轉軸 J";
+MfgLmtTurRotAxisY.LongHelp      = "The turret's Rotary Axis is along J axis";
+MfgLmtTurRotAxisZ    = "旋轉軸 K";
+MfgLmtTurRotAxisZ.LongHelp      = "The turret's Rotary Axis is along K axis";
+MfgLmtTurToolInvert  = "刀具可逆轉";
+MfgLmtTurToolInvert.LongHelp    = "Indicate the possibility of inverting tools mounted on the turret";
+MfgLmtTurNbToolPos   = "刀具位置數目";
+MfgLmtTurNbToolPos.LongHelp     = "Define the maximum number of tool that can be mounted on the turret";
+MfgLmtTurMaxToolStored = "最大刀具數目";
+MfgLmtTurMaxToolStored.LongHelp = "Define the maximum number of tool in the tool shop";
+MfgLmtTurFirstToolNum = "第一個刀具號碼";
+MfgLmtTurLastToolNum.LongHelp   = "Define the last tool number in the tool shop";
+MfgLmtTurLastToolNum = "最後一個刀具號碼";
+MfgLmtTurLastToolNum.LongHelp   = "Define the last tool number in the tool shop";
+MfgLmtRadAxisInvert = "徑向軸逆轉";
+MfgLmtRadAxisInvert.LongHelp    = "On this turret the main radial axis is inverted";
+MfgLmtSpiAxisInvert = "刀具軸逆轉";
+MfgLmtSpiAxisInvert.LongHelp    = "On this turret the main spindle axis is inverted";
+
+// =====================================================================
+// NLS for NC OUTPUT OPTIONS ON MACHINE
+// =====================================================================
+
+MfgInfoStatements  ="一般資訊 : ";
+MfgPartOpStatements  ="零件工法說明 : ";
+MfgMachOpStatements  ="加工工法名稱 : ";
+MfgGotoToolChange  ="包含刀具更換時的 GOTO 點";
+MfgRapidAtStart  ="設定每個工法前均快速定位";
+MfgRapidOutput  ="使用快速定位進給來代替 RAPID";
+MfgCycleSyntaxOutput  ="輸出 CYCLE ";
+MfgRemoveGotoBeforeCycle  ="移除CYCLE 前 GOTO 點";
+MfgCopyTracutProcessing  ="計算 COPY 和 TRACUT 動作";
+MfgRemoveDblePointAfterPPCommand  ="移除後處理字元後重覆點";
+MfgRemoveAlignedPoint  ="移除對正點";
+MfgXYZDigit  ="數值數目 : ";
+MfgXYZDecimalDigit  ="小數點前位數 : ";
+MfgIJKDigit  ="數字位數 : ";
+MfgIJKDecimalDigit  ="小數點後位數 : ";
+
+MfgInfoStatements.LongHelp = "Defines how information such as tool names and operation sequence numbers will be generated.
+ - PPRINT: generated with the PPRINT word
+ - None: not generated
+ - $$: generated as a comment (available for APT only).";
+
+MfgPartOpStatements.LongHelp = "Defines how part operation's comments will be generated.
+ - PPRINT: generated with the PPRINT word
+ - None: not generated
+ - $$: generated as a comment (available for APT only).";
+
+MfgMachOpStatements.LongHelp = "Defines how operations' names will be generated.
+ - PPRINT: generated with the PPRINT word
+ - None: not generated
+ - $$: generated as a comment (available for APT only).";
+
+MfgRapidOutput.LongHelp = "定義 formatting of the rapid motions.
+If the option is chosen, the rapid motions will be preceded by a FEEDRATE syntax whose value is that specified on the machine, if not they will be preceded by a RAPID syntax.";
+
+MfgRapidAtStart.LongHelp = "Specifies RAPID mode at start of operations if no Clearance macro is defined.";
+
+MfgCycleSyntaxOutput.LongHelp = "Defines for axial machining operations whether the CYCLE/ syntax is to be generated. Otherwise, the GOTO/ syntax is obtained in the NC data output.";
+
+MfgGotoToolChange.LongHelp = "Specifies GOTO/ syntax for each tool change.";
+
+MfgCopyTracutProcessing.LongHelp = "Specifies wether Copy or Tracut instructions should be processed.
+ - YES : Copy and/or tracut instructions will be processed.
+         In this case there will be no Copy or Tracut statement in the generated APT source.
+ - NO  : Copy and/or tracut instructions will not be processed.
+         In this case there will be Copy or Tracut statement in the generated APT source.";
+
+MfgRemoveGotoBeforeCycle.LongHelp = "If the option is chosen, GOTO orders before CYCLE syntax will not be generated.";
+MfgRemoveDblePointAfterPPCommand.LongHelp = "If the option is chosen, a point similar to the precedent will not be generated even if they are separated by a PP command.";
+MfgRemoveAlignedPoint.LongHelp = "If the option is chosen, points aligned between two other points will not be output.";
+MfgXYZDigit.LongHelp  ="Specifies the total number of characters (comma included) for each coordinates : X, Y and Z.";
+MfgXYZDecimalDigit.LongHelp  ="Specifies the number of decimal digits for coordinates X,Y and  Z";
+MfgIJKDigit.LongHelp  ="Specifies the total number of characters (comma included) for each vector components : I, J and K.";
+MfgIJKDecimalDigit.LongHelp  ="Specifies the number of decimal digits for vector components I, J et K";
+
+MfgAutoComputeStock="自動計算材料";
+
+MfgPostController="控制器模擬";
+MfgPostController.LongHelp = "Specifies the name of the Controller Emulator (CE) file
+(The CE type has to be selected in Tools>Options>Machining>Output.)";
+MfgPostController.ShortHelp = "Specifies the name of the Controller Emulator (CE) file
+(The CE type has to be selected in Tools>Options>Machining>Output.)";
+MfgPostController.Help = "Specifies the name of the Controller Emulator (CE) file.";
+
+MFG_LOCK_FOR_USERS="鎖定使用者機器編輯";
+
+// =====================================================================
+// NLS for TOOL ASSEMBLIES
+// =====================================================================
+MFG_DIAMETER_1  = "直徑 1";
+MFG_DIAMETER_1.LongHelp = "指定刀具的最大直徑.
+CAA 參數名稱為 MFG_DIAMETER_1.";
+
+MFG_DIAMETER_2  = "直徑 2";
+MFG_DIAMETER_2.LongHelp = 
+"指定刀把的最大直徑
+依據刀具組立的分件數目.
+CAA 參數名稱為 MFG_DIAMETER_2.";
+
+MFG_DIAMETER_3  = "直徑 3";
+MFG_DIAMETER_3.LongHelp = 
+"指定組立刀把的最大直徑.
+只有在分件數目為 3 時它才會計算.
+CAA 參數名稱為 MFG_DIAMETER_3.";
+
+MFG_DIAMETER_4  = "直徑 4";
+MFG_DIAMETER_4.LongHelp = 
+"Specifies the diameter 4 of the tool assembly holder.
+It is valuated only if the number of holder stages is greater or equal to 3.
+加工屬性為 MFG_DIAMETER_4.";
+
+MFG_DIAMETER_5  = "直徑 5";
+MFG_DIAMETER_5.LongHelp = 
+"Specifies the diameter 5 of the tool assembly holder.
+It is valuated only if the number of holder stages is greater or equal to 4.
+加工屬性為 MFG_DIAMETER_5.";
+
+MFG_DIAMETER_6  = "直徑 6";
+MFG_DIAMETER_6.LongHelp = 
+"Specifies the diameter 6 of the tool assembly holder.
+It is valuated only if the number of holder stages is equal to 5.
+加工屬性為 MFG_DIAMETER_6.";
+
+MFG_TL_SET_LGTH  = "全長";
+MFG_TL_SET_LGTH.LongHelp = "指定刀具組立的全長.
+CAA 參數名稱為 MFG_TL_SET_LGTH.";
+
+MFG_TL_SET_X  = "設定 X";
+MFG_TL_SET_X.LongHelp = 
+"指定刀具組立的 X 分量.
+CAA 參數名稱為 MFG_TL_SET_X.";
+
+MFG_TL_SET_Y  = "設定 Y";
+MFG_TL_SET_Y.LongHelp = 
+"指定刀具組立的 Y 分量.
+CAA 參數名稱為 MFG_TL_SET_Y.";
+
+MFG_TL_SET_Z  = "設定 Z";
+MFG_TL_SET_Z.LongHelp = 
+"指定刀具組立的 Z 分量.
+CAA 參數名稱為 MFG_TL_SET_Z.";
+
+MFG_ORIENT_ANGLE = "方位";
+MFG_ORIENT_ANGLE.LongHelp = 
+"如使用搪刀桿, 定義搪刀桿和刀具組立的夾角.
+CAA 參數名稱為 MFG_ORIENT_ANGLE.";
+
+MFG_NB_OF_COMP = "分件數目";
+MFG_NB_OF_COMP.LongHelp = "指定刀具組立的分件數目.
+CAA 參數名稱為 MFG_NB_OF_COMP.";
+
+MFG_ASS_GAGE_1 = "校規 1";
+MFG_ASS_GAGE_1.LongHelp = 
+"依據刀具組立的分件指定刀具和刀座或刀具和刀把間的組立校規.
+CAA 參數名稱為 MFG_ASS_GAGE_1.";
+
+MFG_ASS_GAGE_2 = "校規 2";
+MFG_ASS_GAGE_2.LongHelp = 
+"如果只有三個分件,在刀具組立中指定刀座和刀把間的組立校規.
+CAA 參數名稱為 MFG_ASS_GAGE_2.";
+
+MFG_TOOL_ASS_POWER = "Power";
+MFG_TOOL_ASS_POWER.LongHelp = 
+"定義刀具組立是 powered 或固定的 :
+   Powered 為刀具轉而零件固定
+   固定為刀具固定,而零件轉.
+CAA 參數名稱為 MFG_TOOL_ASS_POWER.";
+
+MFG_TL_SETUP_ANG = "設定角度";
+MFG_TL_SETUP_ANG.LongHelp = 
+"定義刀具組立的設定角度
+CAA 參數名稱為 MFG_TL_SETUP_ANG.";
+
+MFG_TOOL_INVERT = "逆轉刀具";
+MFG_TOOL_INVERT.LongHelp = 
+"定義如果逆轉刀具.
+CAA 參數名稱為 MFG_TOOL_INVERT.";
+
+MFG_OUTP_PREF_1 = "偏好輸出點 1";
+MFG_OUTP_PREF_1.LongHelp = 
+"定義第一個偏好輸出點.
+CAA 參數名稱為 MFG_OUTP_PREF_1.";
+
+MFG_OUTP_PREF_2 = "偏好輸出點 2";
+MFG_OUTP_PREF_2.LongHelp = 
+"定義第二個偏好輸出點.
+CAA 參數名稱為 MFG_OUTP_PREF_2.";
+
+MFG_OUTP_PREF_3 = "偏好輸出點 3";
+MFG_OUTP_PREF_3.LongHelp = 
+"定義第三個偏好輸出點.
+CAA 參數名稱為 MFG_OUTP_PREF_3.";
+
+MFG_POWERED = "Powered";
+MFG_FIXED   = "固定的";
+MfgNone     = "無";
+
+MFG_TURRET_NUMBER = "刀塔號碼";
+MFG_TURRET_NUMBER.LongHelp = 
+"定義安裝組立時的刀塔編號.
+CAA 參數名稱為 MFG_TURRET_NUMBER.";
+
+MFG_CONE_DIAMETER_1 = "圓錐直徑 1";
+MFG_CONE_DIAMETER_1.LongHelp = 
+"定義圓錐的上部直徑 (0 為圓柱).
+CAA 參數名稱為 MFG_CONE_DIAMETER_1.";
+
+MFG_CONE_DIAMETER_2 = "圓錐直徑 2";
+MFG_CONE_DIAMETER_2.LongHelp = 
+"定義 upper diameter of the cone (0 means cylinder).
+加工屬性為 MFG_CONE_DIAMETER_2.";
+
+MFG_CONE_DIAMETER_3 = "圓錐直徑 3";
+MFG_CONE_DIAMETER_3.LongHelp = 
+"定義 upper diameter of the cone (0 means cylinder).
+加工屬性為 MFG_CONE_DIAMETER_3.";
+
+MFG_CONE_DIAMETER_4 = "圓錐直徑 4";
+MFG_CONE_DIAMETER_4.LongHelp = 
+"定義 upper diameter of the cone (0 means cylinder).
+加工屬性為 MFG_CONE_DIAMETER_4.";
+
+MFG_CONE_DIAMETER_5 = "圓錐直徑 5";
+MFG_CONE_DIAMETER_5.LongHelp = 
+"定義 upper diameter of the cone (0 means cylinder).
+加工屬性為 MFG_CONE_DIAMETER_5.";
+
+MFG_HOLDER_LENGTH_1 = "長度刀把 1";
+MFG_HOLDER_LENGTH_1.LongHelp = 
+"定義 second holder cylinder length.
+加工屬性為 MFG_HOLDER_LENGTH_1.";
+
+MFG_HOLDER_LENGTH_2 = "長度刀把 2";
+MFG_HOLDER_LENGTH_2.LongHelp = 
+"定義 third holder cylinder length.
+加工屬性為 MFG_HOLDER_LENGTH_2.";
+
+MFG_HOLDER_LENGTH_3 = "長度刀把 3";
+MFG_HOLDER_LENGTH_3.LongHelp = 
+"定義 fourth holder cylinder length.
+加工屬性為 MFG_HOLDER_LENGTH_3.";
+
+MFG_HOLDER_STAGES = "刀把級數";
+MFG_HOLDER_STAGES.LongHelp = 
+"定義 number of cylinders which define the tool holder.
+加工屬性為 MFG_HOLDER_STAGES.";
+
+MFG_MACHINE_COMP = "Machine Compatibility";
+MFG_MACHINE_COMP.LongHelp = "Unused.\nParameter name for CAA : MFG_MACHINE_COMP.";
+
+// =====================================================================
+// NLS for ResourceRequirement
+// =====================================================================
+MfgResourceRequirement = "刀具詢問";
+MfgToolRequirement = "刀具詢問";
+MfgInsertRequirement = "插入詢問";
+
+// =====================================================================
+// NLS for LATHE INSERTS
+// =====================================================================
+MFG_NOSE_RADIUS = "刀鼻半徑";
+MFG_NOSE_RADIUS.LongHelp = "指定捨棄式刀片的刀鼻半徑.
+CAA 參數名稱為 MFG_NOSE_RADIUS.";
+
+MFG_INSERT_THICK = "厚度";
+MFG_INSERT_THICK.LongHelp = "指定捨棄式刀片的厚度.
+CAA 參數名稱為 MFG_INSERT_THICK.";
+
+MFG_INSERT_MAT = "材料";
+MFG_INSERT_MAT.LongHelp = "指定捨棄式刀片的材料.
+CAA 參數名稱為 MFG_INSERT_MAT.";
+
+MFG_LIFE_TIME = "壽命";
+MFG_LIFE_TIME.LongHelp = "指定捨棄式刀片的壽命.
+CAA 參數名稱為 MFG_LIFE_TIME.";
+
+MFG_INSERT_HEIGH = "高度";
+MFG_INSERT_HEIGH.LongHelp = "指定捨棄式刀片的高度.
+CAA 參數名稱為 MFG_INSERT_HEIGH.";
+
+MFG_BOTTOM_ANGLE = "底部角度";
+MFG_BOTTOM_ANGLE.LongHelp = "指定捨棄式刀片的底部角度.
+CAA 參數名稱為 MFG_BOTTOM_ANGLE.";
+
+MFG_FLANK_ANG_1 = "左仞角度";
+MFG_FLANK_ANG_1.LongHelp = "指定捨棄式刀片的左仞角度.
+CAA 參數名稱為 MFG_FLANK_ANG_1.";
+
+MFG_FLANK_ANG_2 = "右仞角度";
+MFG_FLANK_ANG_2.LongHelp = "指定捨棄式刀片的右仞角度.
+CAA 參數名稱為 MFG_FLANK_ANG_2.";
+
+MFG_NOSE_RAD_1 = "左鼻半徑";
+MFG_NOSE_RAD_1.LongHelp = "指定捨棄式刀片的左鼻半徑.
+CAA 參數名稱為 MFG_NOSE_RAD_1.";
+
+MFG_NOSE_RAD_2 = "右鼻半徑";
+MFG_NOSE_RAD_2.LongHelp = "指定捨棄式刀片的右鼻半徑.
+CAA 參數名稱為 MFG_NOSE_RAD_2.";
+
+MFG_THREAD_PROF = "螺紋外形";
+MFG_THREAD_PROF.LongHelp = "指定捨棄式刀片的螺紋外形.
+CAA 參數名稱為 MFG_THREAD_PROF.";
+
+MFG_THREAD_DEF = "螺紋定義";
+MFG_THREAD_DEF.LongHelp = "指定捨棄式刀片的螺紋定義.
+CAA 參數名稱為 MFG_THREAD_DEF.";
+
+MFG_THREAD_ANGLE = "螺紋角度";
+MFG_THREAD_ANGLE.LongHelp = "指定捨棄式刀片的螺紋角度.
+CAA 參數名稱為 MFG_THREAD_ANGLE.";
+
+MFG_PITCH_NUMBER = "節徑";
+MFG_PITCH_NUMBER.LongHelp = "指定捨棄式刀片的節徑.
+CAA 參數名稱為 MFG_PITCH_NUMBER.";
+
+MFG_MACH_TYPE = "加工形式";
+MFG_MACH_TYPE.LongHelp = "指定內部或外部的加工形式.
+CAA 參數名稱為 MFG_MACH_TYPE.";
+
+MFG_TOOTH_X = "牙 X";
+MFG_TOOTH_X.LongHelp = "指定捨棄式刀片的 X 結束位置.
+CAA 參數名稱為 MFG_TOOTH_X.";
+
+MFG_TOOTH_H = "牙 Y";
+MFG_TOOTH_H.LongHelp = "指定捨棄式刀片的牙高.
+CAA 參數名稱為 MFG_TOOTH_Y.";
+
+MFG_TOOTH_Z = "牙 Z";
+MFG_TOOTH_Z.LongHelp = "指定捨棄式刀片的 Z 結束位置.
+CAA 參數名稱為 MFG_TOOTH_Z.";
+
+MFG_GROOVE_TYPE = "形式";
+MFG_GROOVE_TYPE.LongHelp = "指定捨棄式刀片的車槽加工形式.
+CAA 參數名稱為 MFG_GROOVE_TYPE.";
+
+MFG_INSCRIB_DIAM = "Inscribed 直徑";
+MFG_INSCRIB_DIAM.LongHelp = "指定捨棄式刀片的 inscribed 圓周.
+CAA 參數名稱為 MFG_INSCRIB_DIAM.";
+
+// =====================================================================
+// * Feeds And Speeds Attributes *
+// =====================================================================
+MFG_VC = "原屬性切削速度";
+MFG_VC.LongHelp = "定義 Cutting speed of the tool.
+加工屬性為 MFG_VC.";
+
+MFG_VC_NEW = "切削速度";
+MFG_VC_NEW.LongHelp = "定義 Cutting speed of the tool.
+加工屬性為 MFG_VC_NEW.";
+
+MFG_PP = "切削深度";
+MFG_PP.LongHelp = "定義刀具的切削深度.
+CAA 參數名稱為 MFG_PP.";
+
+MFG_SZ = "每仞進給";
+MFG_SZ.LongHelp = "定義 Feedrate of the tool per tooth.";
+
+MFG_SZ_GLOBAL = "進給";
+MFG_SZ_GLOBAL.LongHelp = "定義 global Feedrate of the tool.
+加工屬性為 MFG_SZ_GLOBAL.";
+
+MFG_VC_FINISH = "原屬性精切削速度";
+MFG_VC_FINISH.LongHelp = "定義刀具的精切削速度.
+CAA 參數名稱為 MFG_VC_FINISH.";
+
+MFG_VC_FINISH_NEW = "精切削速度";
+MFG_VC_FINISH_NEW.LongHelp = "定義 Finishing cutting speed of the tool.
+加工屬性為 MFG_VC_FINISH_NEW.";
+
+MFG_AA_FINISH = "精切削軸向切深";
+MFG_AA_FINISH.LongHelp = "定義刀具的精切削軸向切深.
+CAA 參數名稱為 MFG_AA_FINISH.";
+
+MFG_AR_FINISH = "精切削徑向切深";
+MFG_AR_FINISH.LongHelp = "定義刀具的精切削徑向切深.
+CAA 參數名稱為 MFG_AR_FINISH.";
+
+MFG_SZ_FINISH = "每仞精切削進給";
+MFG_SZ_FINISH.LongHelp = "定義刀具的每仞精切削進給.
+CAA 參數名稱為 MFG_SZ_FINISH.";
+
+MFG_SZ_FINISH_GLOBAL = "精切削進給";
+MFG_SZ_FINISH_GLOBAL.LongHelp = "定義 Finishing feedrate of the tool.
+加工屬性為 MFG_SZ_FINISH_GLOBAL.";
+
+MFG_VC_ROUGH = "原屬性粗切削速度";
+MFG_VC_ROUGH.LongHelp = "定義刀具的粗切削速度.
+CAA 參數名稱為 MFG_VC_ROUGH.";
+
+MFG_VC_ROUGH_NEW = "粗切削速度";
+MFG_VC_ROUGH_NEW.LongHelp = "定義 Roughing cutting speed of the tool.
+加工屬性為 MFG_VC_ROUGH_NEW.";
+
+MFG_VC_ECROUTAGE_NEW = "Descaling 速度 (內部參數)";
+MFG_VC_ECROUTAGE_NEW.LongHelp = "Spindle speed defined to machine the crust of the part.
+加工屬性為 MFG_VC_ECROUTAGE_NEW.";
+
+MFG_VC_ECROUTAGE = "Descaling 速度 (內部參數)";
+MFG_VC_ECROUTAGE.LongHelp = "Spindle speed defined to machine the crust of the part.
+加工屬性為 MFG_VC_ECROUTAGE.";
+
+MFG_AA_ROUGH = "粗切削軸向切深";
+MFG_AA_ROUGH.LongHelp = "定義刀具的粗切削軸向切深.
+CAA 參數名稱為 MFG_AA_ROUGH.";
+
+MFG_AR_ROUGH = "粗切削徑向切深";
+MFG_AR_ROUGH.LongHelp = "定義刀具的粗切削徑向切深.
+CAA 參數名稱為 MFG_AR_ROUGH.";
+
+MFG_SZ_ROUGH = "每仞粗切削進給";
+MFG_SZ_ROUGH.LongHelp = "定義刀具的每仞粗切削進給.
+CAA 參數名稱為 MFG_SZ_ROUGH.";
+
+MFG_SZ_ROUGH_GLOBAL = "粗切削進給";
+MFG_SZ_ROUGH_GLOBAL.LongHelp = "定義 Roughing feedrate per tooth of the tool.
+加工屬性為 MFG_SZ_ROUGH_GLOBAL.";
+
+MFG_SZ_ECROUTAGE = "Descaling 進給 (內部參數)";
+MFG_SZ_ECROUTAGE.LongHelp = "Feedrate defined to machine the crust of the part.
+加工屬性為 MFG_SZ_ECROUTAGE.";
+
+MFG_PP_ROUGH= "粗切削切深(內部參數)";
+MFG_PP_ROUGH.LongHelp = "Depth defined to machine while roughing.
+加工屬性為 MFG_PP_ROUGH.";
+
+MFG_PP_ECROUTAGE = "Descaling 切深 (內部參數)";
+MFG_PP_ECROUTAGE.LongHelp = "Depth defined to machine the crust of the part.
+加工屬性為 MFG_PP_ECROUTAGE.";
+
+MFG_FEEDRATE_AUTO_UPD          = "從刀具進給和速度自動計算";
+MFG_FEEDRATE_AUTO_UPD.LongHelp = "啟動從刀片切深和速度自動計算進給.
+CAA 參數名稱為 MFG_FEEDRATE_AUTO_UPD.";
+MFG_SPINDLE_SPEED_AUTO_UPD          = "從刀具進給和速度自動計算";
+MFG_SPINDLE_SPEED_AUTO_UPD.LongHelp = "啟動從刀片切深和速度自動計算轉速.
+CAA 參數名稱為 MFG_SPINDLE_AUTO_UPD.";
+
+MFG_CUTTER_COMPENSATION           = "3D 接觸刀具補償";
+MFG_CUTTER_COMPENSATION.LongHelp = "定義 3D 接觸刀具補償";
+
+MFG_FORCE_NORMPS           = "設定 3D 接觸刀具補償至所有適用的工法";
+MFG_FORCE_NORMPS.LongHelp = "設定 3D 接觸刀具補償至所有適用的工法";
+
+MFG_LOWER_LIMIT = "下限";
+MFG_LOWER_LIMIT.LongHelp = "定義連接的下限.";
+
+MFG_UPPER_LIMIT = "上限";
+MFG_UPPER_LIMIT.LongHelp = "定義連接的上限.";
+//=============================================
+// Mahine Editor : Turret and Spindle Tabpages
+//=============================================
+
+pToolChangeFrame = "刀具更換點";
+
+TitleOfTurretsList = "Turrets";
+
+AddTurret= "新增 Turret";
+AddTurret.LongHelp=" Insert a new turret element on the lathe machine";
+
+RemoveTurret= "移除 Turret";
+RemoveTurret.LongHelp=" Remove a turret element from the lathe machine";
+
+MachiningAxisSystem = "零件軸系";
+MachiningAxisSystem.LongHelp = "Click to select a Part Axis system or modify the current one";
+
+TitleOfSpindlesList = "刀軸";
+
+AddSpindle= "新增刀軸";
+AddSpindle.LongHelp=" Insert a new spindle element on the lathe machine";
+
+RemoveSpindle= "移除刀軸";
+RemoveSpindle.LongHelp=" Remove a spindle element from the lathe machine";
+
+pCenterPointFrame = "刀軸中心點";
+
+ToolingAxisSystem = "車刀軸系";
+ToolingAxisSystem.LongHelp = "Click to modify the current Turning Tool Axis System";
+
+DefaultTASName = "車刀軸系的 ";
+
+InitFromTTASOrigin = "使用車刀軸系原點";
+InitFromTTASOrigin.LongHelp ="Use the origin of the Turning Tool Axis System to set Tool Change Point.";
+
+Axial = "軸向";
+Radial = "徑向";
+//========================
+// CAA LongHelp
+//========================
+
+CAAParameterName = "\n\n CAA 參數名稱: ";
+
+// =====================================================================
+// * Tool Attributes symbols *
+// =====================================================================
+
+MFG_NOMINAL_DIAM.Symbol = "D";
+MFG_OUTSIDE_DIAM.Symbol = "Da";
+MFG_ENTRY_DIAM.Symbol   = "d";
+MFG_BODY_DIAM.Symbol    = "db";
+MFG_NON_CUT_DIAM.Symbol = "dn";
+MFG_CHAMFR_DIAM1.Symbol = "d1";
+MFG_CHAMFR_DIAM2.Symbol = "d2";
+MFG_TOOL_CORE_DIAMETER.Symbol = "Dnc";
+
+MFG_CUT_LENGTH.Symbol   = "Lc";
+MFG_EFFECTIVE_LENGTH.Symbol = "Le";
+MFG_OVERALL_LGTH.Symbol = "L";
+MFG_TL_TIP_LGTH.Symbol  = "ld";
+MFG_LENGTH.Symbol       = "l";
+MFG_LENGTH_1.Symbol     = "l1";
+MFG_LENGTH_2.Symbol     = "l2";
+MFG_TIP_LENGTH.Symbol   = "lt";
+MFG_LENGTH_NOM_DIAM.Symbol = "Lnd";
+
+MFG_CORNER_RAD.Symbol   = "Rc";
+MFG_CORNER_RAD_2.Symbol = "Rc2";
+MFG_TIP_RADIUS.Symbol   = "Re";
+
+MFG_CUT_ANGLE.Symbol    = "A";
+MFG_TAPER_ANGLE.Symbol  = "Ach";
+MFG_ANGLE2.Symbol       = "A2";
+MFG_TIP_ANGLE.Symbol    = "E";
+MFG_TOOL_ANGLE.Symbol   = "B";
+
+MFG_SHK_LENGTH_1.Symbol = "l1";
+MFG_SHK_LENGTH_2.Symbol = "l2";
+MFG_SHK_CUT_WDTH.Symbol = "f";
+MFG_SHANK_WIDTH.Symbol  = "b";
+MFG_SHANK_HEIGHT.Symbol = "h";
+MFG_KAPPA_R.Symbol      = "Kr";
+
+MFG_MAX_CUT_DPTH.Symbol = "ar";
+
+MFG_BAR_LENGTH_1.Symbol = "l1";
+MFG_BAR_LENGTH_2.Symbol = "l2";
+MFG_BAR_CUT_RAD.Symbol  = "f";
+MFG_HAND_ANGLE.Symbol   = "ha";
+
+// =====================================================================
+// * Tool Assembly Attributes symbols *
+// =====================================================================
+
+MFG_DIAMETER_1.Symbol = "D1";
+MFG_DIAMETER_2.Symbol = "D2";
+MFG_DIAMETER_3.Symbol = "D3";
+MFG_DIAMETER_4.Symbol = "D4";
+MFG_DIAMETER_5.Symbol = "D5";
+MFG_DIAMETER_6.Symbol = "D6";
+MFG_TL_SET_LGTH.Symbol= "ST";
+MFG_ASS_GAGE_1.Symbol= "G1";
+MFG_ASS_GAGE_2.Symbol= "G2";
+MFG_HOLDER_LENGTH_1.Symbol = "l1";
+MFG_HOLDER_LENGTH_2.Symbol = "l2";
+MFG_HOLDER_LENGTH_3.Symbol = "l3";
+MFG_CONE_DIAMETER_1.Symbol = "d1";
+MFG_CONE_DIAMETER_2.Symbol = "d2";
+MFG_CONE_DIAMETER_3.Symbol = "d3";
+MFG_CONE_DIAMETER_4.Symbol = "d4";
+MFG_CONE_DIAMETER_5.Symbol = "d5";
+
+// =====================================================================
+// * Lathe Inserts Attributes symbols *
+// =====================================================================
+MFG_NOSE_RADIUS.Symbol  = "r";
+MFG_INSERT_LGTH.Symbol  = "l";
+MFG_INSCRIB_DIAM.Symbol = "iC";
+MFG_INSERT_ANGLE.Symbol = "a";
+MFG_INSERT_WIDTH.Symbol = "la";
+MFG_NOSE_RAD_1.Symbol   = "r1";
+MFG_NOSE_RAD_2.Symbol   = "r2";
+MFG_INSERT_HEIGH.Symbol = "l";
+
+// * Attribute discrete values *
+// =====================================================================
+FINISH           = "精加工";
+ROUGH            = "粗加工";
+EITHER           = "其一";
+
+HIGH_SPEED_STEEL = "高速鋼";
+COATED_HIGH_SPEED_STEEL = "覆層高速鋼";
+CARBIDE          = "鎢鋼";
+COATED_CARBIDE   = "覆層鎢鋼";
+OTHER            = "其它";
+CERMETS          = "瓷經";
+CERAMICS         = "陶瓷";
+CUBIDE_BORON_NITRIDE = "(CBN) Cubide Boron Nitride";
+
+RIGHT_HAND       = "右手";
+LEFT_HAND        = "左手";
+
+METRIC = "公制";
+INCH   = "英制";
+
+ONE_PIECE     = "整體";
+INSERT_HOLDER = "捨棄式刀把";
+
+NO = "否";
+YES = "是";
+
+CUTOFF = "切開";
+GROOVE = "切槽";
+
+MFG_UNDEFINED             = "未定義";
+MfgHorizontalLatheMachine  = "臥式車床工具機";
+MfgVerticalLatheMachine    = "立式車床工具機 Deprecated";
+
+ANSI   = "ANSI";
+ISO    = "ISO";
+NoCode = "未使用編碼";
+
+SURFACE  = "曲面";
+TRAVERSE = "橫越";
+BOTH     = "最短";
+

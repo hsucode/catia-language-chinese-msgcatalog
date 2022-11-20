@@ -1,0 +1,292 @@
+//------------------------------------------------------
+// Resource file for input topological objects errors 
+// En_EN
+//================================================================
+//                           INPUT
+//================================================================
+//----------------------------------Null or invalid input
+//
+TopObInNullPointer =
+     "對輸入資料 /P1的指標是零. 
+ 定義資料或檢查指標未曾移動位置.";
+//
+TopObInNullData =
+     "輸入資料 /P1 是零.";
+//
+TopObInEmptyObject =
+     " 物件  /P1 是空的.";
+//
+TopObInInvalidType =
+     "/p1 是無效的輸入資料型式 /p2. 使用 /p3 型式替代.";
+//
+TopObInIndex =
+     "索引 /p1 超出範圍, 最大值 : /p2";
+//
+//----------------------------------Orientation
+//
+TopObInBadOrientation =
+     "無效定位值 : /p1 不是一個有效的定位對於 /p2.";
+//
+TopObInBadMatterSideValue =
+     "無效的matter side值 : /P1 不是有效的 matter side 對於 /p2.";
+//
+TopObInBadLocationValue =
+     "無效的位置值 : /P1 不是有效的位置值對於 /p2.";
+//
+TopObInBadSideValue =
+     "無效的邊界值(sidevalue): /P1 不是有效的邊界值(side value)對於 /p2.";
+//
+//----------------------------------Invalid dimension
+//                               /p1 = cell, domain, .. /p2= good dimension
+TopObInInvalidDimension=
+     " /p1尺寸是無效的 : 使用尺寸/p2的一個 /p1 .";
+//
+TopObInTooSmallDimension=
+     "/p1尺寸太小  : 尺寸至少必需是 /p2.";
+//
+TopObInTooLargeDimension=
+     " /p1 尺寸太大 : 尺寸最大為 /p2.";
+//
+TopObInIncompatibleElement=
+     " /p1 和 /p2 不相容";
+//  
+//----------------------------------invalid element                          
+//
+TopObInNonModifiableElement=
+     " /p1 不是可更改的.";
+//
+TopObInNoGeometry=
+     " /p1 沒有相關的幾合.";
+//
+TopObInIncomplete=
+     " /p1 是不完全的.";
+//
+TopObInIncompleteSplit=
+     " 切割運算: 切割面並未完全的切割本體.
+選擇另一個面.";
+//
+TopObInSurSurUndetectedConfusion=
+     " 在二個面間的幾何混淆沒有被發現. 
+檢查本體間的接點.";
+//
+//----------------------------------All topological objects
+//
+TopObInCell=
+     "細胞";
+//
+TopObInDomain=
+     "網域";
+//
+TopObInBody=
+     "本體";
+//
+TopObInVertex=
+     "頂點";
+//
+TopObInEdge=
+     "邊";
+//
+TopObInFace=
+     "面";
+//
+TopObInVolume=
+     "體積";
+//
+TopObInLoop=
+     "循環";
+//
+TopObInLump=
+     "方塊";
+//
+TopObInVertexInVolume=
+     "體積的頂點";
+//
+TopObInVertexInFace=
+     "面的頂點";
+//
+TopObInWire=
+     "線";
+//================================================================
+//                           INTERNAL
+//================================================================
+//----------------------------------Unvailable
+//
+TopObIntUnvailable =
+     "對於物件 /P2 的方法 /P1 尚未可用.";
+//
+TopObIntobjectCreationFailed =
+     "/p1 等級的物件無法建立.";
+//
+TopObIntInterfaceFailed =
+     " /p1 完成(implementation)的連接(binding)到 /p2 介面失敗.
+      請檢查字典.";
+//
+TopObIntImplFailed =
+     "/p1介面的連接(Binding) 到 /p2 完成(implementation) 失敗.
+      請檢查字典.";
+//
+TopObIntMethodCallOrder =
+     "無效的方法呼叫順序. 方法 /p1 應該在 /p2 之後呼叫.";
+//
+TopObIntObjectType =
+     "沒有等級可與 /p1 型式的值匹配.";
+//
+TopObIntBadTopology =
+     "無效的拓撲組態已經發現.";
+//
+TopObIntImpossibleWriting =
+     "物件 /p1 不能被寫入.";
+//
+TopObIntAllocation =
+     "無法配置記憶體.";
+//
+TopObIntNoSubd =
+     " /p1 元素沒有 /p2 子網域.";
+//
+TopObIntSubd =
+     "內部錯誤 /p1, /p2.";
+//
+TopObIntBadGeometry =
+       "內部錯誤 /p1 導致壞的幾何組態.";
+//
+TopObIntMath =
+       "錯誤 /p1 在數學封包.";
+//
+// Topological model error 4000-4499
+//
+TopObInCheckJournal_ERR_4000.Request="拓墣報表檢查失敗.";
+TopObInCheckJournal_ERR_4000.Diagnostic="拓墣報表次序無法從從輸入本體指向輸出本體.";
+TopObInCheckJournal_ERR_4000.Advice="請檢查報表次序或複製或不複製輸入本體.";
+//
+TopObInLyingOnAmbiguousGeometry_ERR_4100.Request="依附的幾何依附模糊.";
+TopObInLyingOnAmbiguousGeometry_ERR_4100.Diagnostic="/P1 依附在 /P2 具有模糊的 /P3 和 /P4.";
+TopObInLyingOnAmbiguousGeometry_ERR_4100.Advice="避免模糊的依附幾何元素.";
+//
+//
+// Boolean Operators 4500-4999
+//
+TopObInBoolIncompleteSplit_ERR_4500.Request="布林運算: 用組合面切割.";
+TopObInBoolIncompleteSplit_ERR_4500.Diagnostic="組合面沒有正確的割穿其中一個體積: 切割無法計算";
+TopObInBoolIncompleteSplit_ERR_4500.Advice="選擇完整切割本體中體積的組合面.";
+
+TopObInBoolImpossibleSplit_ERR_4501.Request="布林動作: 以組合面來分割.";
+TopObInBoolImpossibleSplit_ERR_4501.Diagnostic="組合面有孔, 且孔位於本體內部: 分割無法計算.";
+TopObInBoolImpossibleSplit_ERR_4501.Advice="請選一內無孔的本體.";
+//
+TopObInBoolUnresolvedSpec_ERR_4502.Request="布林動作: 無法計算出結果特性.";
+TopObInBoolUnresolvedSpec_ERR_4502.Diagnostic="您的特性無法解出 : 無法執行截斷動作.";
+TopObInBoolUnresolvedSpec_ERR_4502.Advice="請修改修剪面選擇.";
+//
+TopObInBoolIncompleteCut_ERR_4503.Request="布林動作: 無法切割.";
+TopObInBoolIncompleteCut_ERR_4503.Diagnostic="一個本體無法切過另一個: 無法計算切割.";
+TopObInBoolIncompleteCut_ERR_4503.Advice="請修改本體的切割以致它們可以完全切割. 請嚐試增加一些限制.";
+//
+TopObInBoolIncompleteLayDown_ERR_4504.Request="布林動作: 邊界未全部置放.";
+TopObInBoolIncompleteLayDown_ERR_4504.Diagnostic="修剪面組合未全部置放在裁剪本體.";
+TopObInBoolIncompleteLayDown_ERR_4504.Advice="修正修剪面組合邊界使邊界可全部置放. 嚐試增加一些限制.";
+//
+TopObInBoolImpossibleSewing_ERR_4505.Request="縫補動作: 因方向不相容導致無法計算.";
+TopObInBoolImpossibleSewing_ERR_4505.Diagnostic="縫補修剪面方向導致無效結果.";
+TopObInBoolImpossibleSewing_ERR_4505.Advice="請逆轉修剪面方向.";
+//
+TopObInBoolImpossibleReport_ERR_4506.Request="布林動作: 幾何相交無法在亮度顯示區域計算.";
+TopObInBoolImpossibleReport_ERR_4506.Diagnostic="無法計算幾何 : 相切或較小的元素導致相交品質不好 (查看亮度顯示區域).";
+TopObInBoolImpossibleReport_ERR_4506.Advice="修改本體接觸 (使用限制, 分割或拉伸本體之一).";
+//
+TopObInBoolMissedConfusion_ERR_4507.Request="布林動作: 偵測到相切設計.";
+TopObInBoolMissedConfusion_ERR_4507.Diagnostic="亮度顯示相切區域無法解出.";
+TopObInBoolMissedConfusion_ERR_4507.Advice="請修改本體接觸 (使用限制, 分割或拉伸本體之一).";
+//
+TopObInBoolFaceFaceFailed_ERR_4508.Request="布林動作: 修剪面間相交失敗.";
+TopObInBoolFaceFaceFailed_ERR_4508.Diagnostic="亮度顯示的修剪面間比較無法計算出結果.";
+TopObInBoolFaceFaceFailed_ERR_4508.Advice="修改接觸的品質 (使用拘束).";
+//
+TopObInBoolNoLayDown_ERR_4509.Request="布林動作: 邊界未依附.";
+TopObInBoolNoLayDown_ERR_4509.Diagnostic="組合面邊界未依附在修剪本體.";
+TopObInBoolNoLayDown_ERR_4509.Advice="修改組合面邊界的接觸來依附. 請增加部份拘束.";
+//
+TopObInBoolTwistedVolume_ERR_4510.Request="布林動作: 產生扭曲體積.";
+TopObInBoolTwistedVolume_ERR_4510.Diagnostic="相對本體的位置和接觸不清楚.";
+TopObInBoolTwistedVolume_ERR_4510.Advice="請嚐試修改動作順序.";
+//
+TopObInBoolInaccurateContact_ERR_4511.Request="布林動作: 偵測到不確修剪面.";
+TopObInBoolInaccurateContact_ERR_4511.Diagnostic="無法處理亮度顯示修剪面間比較.";
+TopObInBoolInaccurateContact_ERR_4511.Advice="使用拘束修改接觸間品質或嚐試修補另一個至您的本體.";
+//
+TopObInBoolImpossibleCut_ERR_4512.Request="布林動作:  亮度顯示元素無法裁剪.";
+TopObInBoolImpossibleCut_ERR_4512.Diagnostic="亮度顯示元素無法裁剪 : 請檢查相切接觸.";
+TopObInBoolImpossibleCut_ERR_4512.Advice="修改本體的接觸 (使用拘束, 分割或本體擠出).";
+//
+TopObInSmartProjIncompleteSolution_ERR_4513.Request="智慧投影動作";
+TopObInSmartProjIncompleteSolution_ERR_4513.Diagnostic="無法完成線投影";
+TopObInSmartProjIncompleteSolution_ERR_4513.Advice="擠出原始殼或使用投影和選擇好的元件.";
+//
+TopObInSmartProjNoInitialisation_ERR_4514.Request="智慧投影動作";
+TopObInSmartProjNoInitialisation_ERR_4514.Diagnostic="無法開始線投影";
+TopObInSmartProjNoInitialisation_ERR_4514.Advice="只產生投影點或有太多選擇導致沒有解法.";
+//
+TopObInSmartProjCheckDistance_ERR_4515.Request="智慧投影動作";
+TopObInSmartProjCheckDistance_ERR_4515.Diagnostic="線智慧投影導致數個解法";
+TopObInSmartProjCheckDistance_ERR_4515.Advice="沒有智慧投影. 使用投影和選擇好的解法";
+//
+TopObInBoolImpossibleSplit_ERR_4516.Request="布林動作: 由組合面分割.";
+TopObInBoolImpossibleSplit_ERR_4516.Diagnostic="分割組合面無效: 它由互相相交的區塊組合. 亮度顯示的為相交部份";
+TopObInBoolImpossibleSplit_ERR_4516.Advice="以數個分割取代或以裁剪組合面來解決.";
+//
+TopObInBoolImpossibleMultiTrim_ERR_4517.Request="布林動作: Pieces 模式修剪";
+TopObInBoolImpossibleMultiTrim_ERR_4517.Diagnostic="無效輸入本體";
+TopObInBoolImpossibleMultiTrim_ERR_4517.Advice="輸入本體中至少須含有一區域.";
+//
+TopObInBoolImpossibleMultiTrim_ERR_4518.Request="布林動作: Pieces 模式修剪";
+TopObInBoolImpossibleMultiTrim_ERR_4518.Diagnostic="無效選擇: highlighted element (input number /p1) has been cut into /p2 portion(s): portion /p3 can not be kept!";
+TopObInBoolImpossibleMultiTrim_ERR_4518.Advice="更換輸入.";
+//
+TopObInBoolPositionComputation_ERR_4519.Request="布林動作: 無效體積重新合";
+TopObInBoolPositionComputation_ERR_4519.Diagnostic="One input body may be composed of a non-wanted thin volume. It can not be decided if it must be kept or not.";
+TopObInBoolPositionComputation_ERR_4519.Advice="Check bodies composition with GSD/Disassemble feature and use RemoveLump feature to keep only useful domains. Then retry the operation.";
+//
+TopObInSmartProjEqualSolution_ERR_4520.Request="智慧投影動作";
+TopObInSmartProjEqualSolution_ERR_4520.Diagnostic="Two solutions have the same max distance";
+TopObInSmartProjEqualSolution_ERR_4520.Advice="Use projection and select the good result.";
+//
+TopObInBoolLayDownBadOrientation_ERR_4521.Request="依附動作.";
+TopObInBoolLayDownBadOrientation_ERR_4521.Diagnostic="Lay down of several connected wires with bad orientation.";
+TopObInBoolLayDownBadOrientation_ERR_4521.Advice="Create one body for each wire, lay down them and join the results.";
+//
+TopObInSmartProjIncompleteSolution_ERR_4522.Request="依附動作.";
+TopObInSmartProjIncompleteSolution_ERR_4522.Diagnostic="Lay down of several connected wires with bad orientation.";
+TopObInSmartProjIncompleteSolution_ERR_4522.Advice="Create one body for each wire, lay down them and join the results.";
+//
+TopObIntCellNotInBody_ERR_4600.Request="/p1 : 單元不屬於本體.";
+TopObIntCellNotInBody_ERR_4600.Diagnostic="單元 /p1 不屬於本體 /p2. 所需動作無法執行.";
+TopObIntCellNotInBody_ERR_4600.Advice="修改輸入選擇.";
+//
+TopObIntCATGeoClean_ERR_4601.Request    ="幾何檢查偵測到異常.";
+TopObIntCATGeoClean_ERR_4601.Diagnostic ="在 /p2 偵測到異常 /p1 .";
+TopObIntCATGeoClean_ERR_4601.Advice     ="清理輸入文件並修正動作.";
+//
+TopObIntCATGeoClean_ERR_4602.Request    ="幾何檢查中止.";
+TopObIntCATGeoClean_ERR_4602.Diagnostic ="檢查時發生未預期錯誤.";
+TopObIntCATGeoClean_ERR_4602.Advice     ="請連絡售商.";
+//
+TopObIntImpossibleSituation_ERR_4603.Request="局部資料不適應.";
+TopObIntImpossibleSituation_ERR_4603.Diagnostic="操作導致無效狀態.";
+TopObIntImpossibleSituation_ERR_4603.Advice="修改輸入選擇.";
+//
+TopObInBoolWarningStabilization_ERR_4700.Request   ="部份結果曲線的方向不穩定.";
+TopObInBoolWarningStabilization_ERR_4700.Diagnostic="亮度顯示的曲線不定, 因為它是由數個輸入曲線而來, 或多重投影由單一輸入曲線而來 (輸入曲線為藍色的亮度顯示).";
+TopObInBoolWarningStabilization_ERR_4700.Advice    ="使用投影方向或只由組合依附面萃取有用的修剪面.";
+//
+TopObInBoolWarningBoundaryHealing_ERR_4701.Request   ="部份無效曲線在斷面上產生自動相交.";
+TopObInBoolWarningBoundaryHealing_ERR_4701.Diagnostic="亮度顯示曲線無效. 斷面無法修復.";
+TopObInBoolWarningBoundaryHealing_ERR_4701.Advice    ="重建曲面.";
+//
+TopObInBoolWarningRegularizator_ERR_4702.Request   ="部份修剪面互相相交: 無法規則化.";
+TopObInBoolWarningRegularizator_ERR_4702.Diagnostic="亮度顯示修剪面不相交. 本體無法規則化.";
+TopObInBoolWarningRegularizator_ERR_4702.Advice    ="請重新考慮本體設計.";
+//
+TopObInBoolWarningInaccurateContact_ERR_4703.Request   ="本體間不精確的接觸導致非連接結果.";
+TopObInBoolWarningInaccurateContact_ERR_4703.Diagnostic="亮度顯示修剪面雖然相切但無法溶合: 結果為數個定義域.";
+TopObInBoolWarningInaccurateContact_ERR_4703.Advice    ="請重新修改設計或使用 RemoveLump 特徵來減少定義域.";
+//
+//

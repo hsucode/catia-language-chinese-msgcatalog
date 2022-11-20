@@ -1,0 +1,101 @@
+//
+// CATIA License Manager Messages (low-level)
+//
+
+LicenseManager = "使用權管理";
+
+//
+// Messages
+//
+CheckFailed = " /P01 軟體使用權檢查失敗 \n CATIA 再 /P02 次即將停止執行";
+
+CheckFailedAS = "軟體授權 /P01 檢查未通過 \n 除了可使用儲存和退出命令外, 再經過 /P02 次軟體授權檢查失敗後將終止執行. \n 建議立即儲存文件";
+
+CheckOK = "軟體授權已成功檢查通過";
+
+TooManyChecksFailed = "已經過 /P01 試驗 \n CATIA 軟體使用權檢查仍然失敗, CATIA 將馬上停止";
+
+TooManyChecksFailedAS = "軟體授權 /P01 檢查未通過 \n 除了可使用儲存和退出命令外, 其餘命令均不可使用";
+
+NoSuchProduct = "需求產品未找到: /P01";
+
+InconpatibleEnvironment = "CATIA 無法在此環境執行";
+
+NoLicenseForDemo = " /P01 展示模式無可用的軟體使用權";
+
+LicenseRequestFailed = " 因 /P02 (/P03./P04./P05)\n/P06  錯誤而導致 /P01 軟體使用權檢查失敗 : /P07";
+
+LicenseRequestBLFailed = "Failed to request /P01 license for /P02 (/P03./P04./P05)\nAccording to our customer records, you are not entitled to use this level of code.\nPlease contact your nearest IBM PLM office or IBM PLM Business Partner who can assist you with any questions with respect to your licenses.";
+
+LicenseRequest64bitNotAllowed = "Failed to request /P01 license for /P02 (/P03./P04./P05)\n64-bit usage requires a V5 64-bit enabler add-on product as part of the configuration license\nPlease contact your nearest IBM PLM office or IBM PLM Business Partner, to upgrade this license.";
+
+AllLicensesUsed = "所有 /P05 為 /P01 的軟體 (/P02./P03./P04) 由下列使用:\n/P06";
+
+LicenseReleaseFailed = "因 /P01 (/P02./P03./P04)\n/P05 錯誤而導致軟體使用權釋出失敗: /P06";
+
+LicenseCheckFailed = "因 /P01 (/P02./P03./P04)\n/P05 錯誤而導致軟體使用權檢查失敗: /P06";
+
+LicenseRecovered = " /P01 (/P02./P03./P04) 軟體使用權已回覆";
+
+ErrorLoadingProduct = "載入 /P01 產品 (code /P02) 定義失敗 \n 請重新安裝. ";
+
+ProductInvalidVersion = " /P01 的產品版本 /P02 定義無效 \n 請重新安裝. ";
+
+LicenseNotYetAvailable = "為 /P02 (/P03./P04) 的 /P01 軟體使用權尚未有效";
+
+LicenseExpired = "為 /P02 (/P03./P04) 的 /P01 軟體使用權已過期";
+
+LUM_UpgradeServer = "LUM 伺服器不匹配 -- 請最少更新至4.6.0";
+
+LUM_InvalidServer = "在視窗 9X上與 LUM伺服器不匹配";
+
+LUM_UpgradeLicense = "LUM伺服器發生問題-- 請移除或重新加入軟體使用權";
+
+LUM_OpenTarget = "軟體使用權產生未支援的目標形式 -- 即將刪除! ";
+
+LUM_AIXTarget = "AIX 授權含有未支援的目標來源資料 -- 請刪除它";
+
+LUM_InvalidOsServer = "OS hosting LUM 伺服器不支援";
+
+NoLicenseForAlias = "沒有可用的軟體使用權 /P01 來滿足需求";
+
+ProductNotShareable = "軟體使用權 /P01 不可分享-- 請聯絡客戶服務";
+
+ProductNotAddon = "軟體使用權 /P01含有無效的另增 /P02 -- \n 請聯絡客戶服務";
+
+AddonPreqNotPresent = "自訂組態 /P01 未包含為新增 /P02 的先期需求軟體 \n 請聯絡客戶服務";
+
+ConfigHasPrereq = "組態 /P01 不需預先執行軟體 \n 請聯絡客戶服務";
+
+InvalidScale = "產品 /P01 無法使用大於目前組態的縮放 /P02 ";
+
+NamespaceBindingInUse = "LUM namespace binding 模式已啟動 -- 如可能的話請關閉它來縮短開啟時間";
+
+CannotStart = "目前所選軟體授權無法執行此應用程式. \n 請使用 CATOptionsMgt 工具來選擇適當的軟體授權 (一般/授權 標籤).";
+
+//
+// Dongle stuff
+//
+
+SP_InvalidVersion = "硬體鍵版本不匹配";
+
+SP_InvalidResponse = "與硬體鍵溝通失敗";
+
+SP_HasExpired = "硬體鍵已過有效期限";
+
+SP_TimeSetBackward = "日期被設為過去 -- 請更正";
+
+SP_CounterZero = "可用次數已超過";
+
+SP_LicenseNotFound = "硬體鍵未含此軟體使用權";
+
+SP_InternalError1 = "硬體鍵內部錯誤 #1";
+
+SP_InternalError2 = "硬體鍵內部錯誤 #2";
+
+//
+// License Types
+//
+nodelock_or_concurrent = "本機或網路版";
+nodelock = "本機版";
+concurrent = "網路版";

@@ -1,0 +1,154 @@
+//  Messages for CATIA V5 (Downward)Compatibility
+//  MODULE :  DownwardCompatibility
+//  US Version
+//====================================================================
+Title="CATIA V5 向下相容批次作業";
+Main.Title="向下相容性";
+BatchMonitor.Title="向下相容至 V5R6"; 
+Downward.Abstract="最新版本和 V5R6 間的向下相容性"; 
+Downward.Domain="資料相容性"; 
+
+// User Interfaces resources
+CATBack.comboVersion.Title="CATIA 版期";
+CATBack.comboAction.Title="執行";
+
+CATBack.BrowseDir.Title="...";
+CATBack.BrowseDirBox.Title="選擇目錄";
+CATBack.LblTargetDirectory.Title="目的地目錄";
+CATBack.BtnTargetDirectory.Title="...";
+
+CATBack.WarningPanel.Title="警告";
+CATBack.LblDocSelected.Title="所選 V5 文件:";
+CATBack.LblDocProcessed.Title="要處理的 V5 文件:";
+
+CATBack.BtnBrowse.Title="檔案瀏覽";
+CATBack.CheckMMLSupport.Title="指向文件";
+CATBack.CheckMMLSupport.Help="選擇指向文件";
+CATBack.BtnRemoveDoc.Title="移除";
+CATBack.BtnReplaceDoc.Title="更換";
+CATBack.Replace.Help = "更換已存分件";
+
+CATBack.ListSelDoc.Name="名稱";
+CATBack.ListSelDoc.Path="路徑";
+
+ComboAction.Convert="轉換";
+ComboAction.Info="資訊";
+ComboAction.Synchro="同步化";
+CATBack.CheckHtmlOpen.Title="開啟 html 報告";
+//============================================================
+// Error messages
+//============================================================
+WarningDoublonMessage="此檔案已屬於要處理的文件之一";
+WarningDoublonMsgMultiSel="此檔案已屬於要處理的文件之一:";
+
+WarningBadTypeMessage="此類形檔案無法處理";
+WarningBadTypeMsgMultiSel="這些檔案無法處理:";
+WarningInvalidFormat="檔案格式無效";
+//============================================================
+// Report messages
+//============================================================
+ReportBatchAborted1="批次中斷 - 返回碼=";
+ReportBatchAborted2="沒有文件被處理";
+ReportBatchPartial="批次作業部份處理 - 返回碼=";
+ReportBatchSuccess="批次作業成功被處理 - 返回碼=";
+ReportBegin="報告";
+ReportDocumentTitle="要處理的文件";
+ReportDocumentKO="文件未處理";
+ReportDocumentOK="文件成功被處理";
+ReportEnd="報告結束";
+ReportAction.Convert= "轉換 /p1 ";	  
+ReportAction.Synchro= "同步化 /p1 ";	  
+ReportAction.Info= " /p1 的資訊 ";	  
+ReportAction.Undef= "錯誤   : 未定義動作
+\t  需要宣告 轉換 或 同步化或資訊 動作
+\t  使用 '-h' 選項來顯示可使用參數清單";
+ReportAction.Unknown= "警告 : 動作 /p1 是未知的,
+\t  支援的動作為 : ";	  
+ReportVersion.Unknown= "警告 : 版本 /p1 不支援或不是 CATIA 版本,
+\t  支援的版本為 :";	  
+Report.Convert.CurrentVersion="目前版本 : /p1";
+Report.Convert.OutputDirectory="輸出目錄 : /p1";
+Report.Convert.TargetedVersion="目標版本 : /p1";
+
+//============================================================
+// Specific messages    "Info" action : Infoxxx
+//============================================================
+Info.DocVersion="   開啟文件的最舊版本 : /p1";
+Info.DocNotFound="   文件不存在或無法找到 ";
+Info.RefPath="   文件是由檔案 : /p1 的轉換檔案映像";
+Info.RefNotFound="   檔案不存在或無法找到 ";
+Info.RefVersion="   開啟參考的最舊版本 : /p1";
+Info.InfoKO="文件無法被處理";
+Info.InfoOK="文件已成功處理";
+//============================================================
+// Specific messages "Convert" action : Convertxxx
+//============================================================
+ConvertSelectionDocKo1="文件已是轉換映像檔 :";
+ConvertSelectionDocKo2="選擇中止, 選擇原始檔案 :";
+ConvertSelectionDocKo3="但是無法找到原始檔案或無法讀取 :";
+Convert.NotADoc="   要轉換的不是 CATIA V5 文件";
+Convert.DocNotFound="   文件不存在或無法找到 ";
+Convert.MinimalVersion="   開啟文件的最舊版本 : /p1";
+Convert.Needed="   文件需要被轉換";
+Convert.NotNeeded="   文件不需要被轉換";
+Convert.NoReadPermission="   沒有讀取權限. \n 請修改存取權";
+Convert.ReadAborted="   文件無法讀取";
+Convert.CreateAborted="   無法建立輸出文件 /p1";
+Convert.AlreadyExist="   文件已存在且無法覆寫. \n 請移動此文件.";
+Convert.WriteAborted="   文件無法寫入. \n 請檢查存取權";
+Convert.ErrorDummy="   轉換時發生內部錯誤";
+Convert.ConvertKO="文件無法轉換";
+Convert.ConvertOK="文件成功被處理";
+//============================================================
+// Specific messages "Synchro" action : Synchroxxx
+//============================================================
+SynchroSelectionDocKo1="文件無法被同步化 :";
+SynchroSelectionDocKo2="選擇中止, 檔案不是轉換映像檔";
+SynchroSelectionDocKo3="選擇中止, 原始檔案找不到或無法讀取";
+Synchro.NotADoc="   要同步化的文件不是 CATIA V5 文件";
+Synchro.DocNotFound="   文件不存在或無法找到 ";
+Synchro.NotAConvertedDoc="   文件不是轉換映像檔";
+Synchro.NoReadPermission="   無法讀取. \n 請修改存取權";
+Synchro.NoWritePermission="   文件無法寫入. \n 請檢查存取權";
+Synchro.RefNotADoc="   參考不是 CATIA V5 文件";
+Synchro.RefNotFound="   參考不存在或無法找到 ";
+Synchro.RefNoReadPermission="   沒有讀取權限. \n 請修改存取權";
+Synchro.RefPath="   文件是由檔案 : /p1 的轉換映像檔";
+Synchro.RefVersion="   開啟參考的最舊版本 : /p1";
+Synchro.DocVersion="   開啟文件的最舊版本 : /p1";
+Synchro.ReadAborted="   無法讀取文件";
+Synchro.ReadRefAborted="   無法讀取參考";
+Synchro.WriteAborted="   文件無法寫入. \n 請檢查存取權";
+Synchro.NoModif="   文件不須要同步化.";
+Synchro.ErrorDummy="   同步化時發生內部錯誤";
+Synchro.SynchroKO="文件無法同步化";
+Synchro.SynchroOK="文件成功被處理";
+
+Downward.Compatibility = "向下相容";
+
+//============================================================
+// Errors messages 
+//============================================================
+Error.Title="錯誤";
+ErrorDummy="內部錯誤 - 碼 =";
+
+HelpMsg="用法: 
+    CATDownwardCompatibility -id inputDirectory [-if inputfile/-il inputlist] -od outputDirectory 
+                             -action [Convert/Synchro/Info] -version CATIAV5Ri 
+                             -report reportFile.txt
+
+       -id	 : 輸入目錄或 DLNAME
+       -if       : 輸入檔案含有要處理的文件清單
+       -il       : 要處理的文件清單 
+                   -if 或 -il 參數是必須的 
+       -action   : 需求動作 
+                   轉換 : 轉換文件至版本參數可讀取的版本
+                   同步化 : 同步化在原始檔案的轉換檔案 
+                   資訊    : 提供所選檔案的資訊
+                   -action 參數是必須的
+       -version  : 目標 CATIA 版本
+                   轉換動作的主要參數 (不使用在同步化和資訊的動作模式)                   
+       -od	 : 輸出目錄或 DLNAME 
+                   是轉換動作的主要參數 (不使用在同步化和資訊的動作模式)               
+       -report   : 報告檔案名稱";
+

@@ -1,0 +1,37 @@
+//fichier   CATStCmdAdvFill 
+CATStCmdAdvFill.Title = "填滿";
+
+//Message au changement d'etat
+CATStCmdAdvFill.SelectFillLimitsState.Message="請選擇鄰近的邊來建立封閉的外形";
+CATStCmdAdvFill.NextEdgeSelection.Message="請選擇下一個連接的邊";
+CATStCmdAdvFill.BadSelection.Message="不正確的選擇: 任意或太遠. 請選擇連接的邊.";
+CATStCmdAdvFill.NotIntersectingSelection.Message="所選擇的邊間有間隙. 請選擇有交的邊.";
+CATStCmdAdvFill.ChooseFillConfig.Message="兩種可能的方式來填滿: 按一下來增加缺少的邊, 或手動來關閉缺少的間隙";
+//CATStCmdAdvFill.ModifyFillSurfaces.Message="更改填滿形式,當有連續點時更改邊界相連或張力";
+CATStCmdAdvFill.ModifyFillSurfaces.Message="更改填滿形式,更改邊界相連或中心點位置";
+
+//texts des continuites
+CATStCmdAdvFill.PointContinuity.MenuTitle="連續點";
+CATStCmdAdvFill.TangentContinuity.MenuTitle="連續相切";
+
+//text vu dans 3D
+CATStCmdAdvFill.PointContinuity.DisplayedTitle="點";
+CATStCmdAdvFill.TangentContinuity.DisplayedTitle="相切";
+CATStCmdAdvFill.GapText.DisplayedTitle="間隙 = ";
+
+//text du panel d'avertissement
+CATStCmdAdvFill.InvalidConfig.Title="無效填滿選擇";
+CATStCmdAdvFill.InvalidConfig.Message=
+"無效填滿組合!
+只選兩個邊無法建立填滿曲面,請重選或退出 填滿 命令.";
+
+// Message d'erreur
+CATStCmdAdvFill.errorWndTitle.Message="錯誤 填滿";
+CATStCmdAdvFill.error.Message="填滿時發生錯誤";
+
+// Message de worning
+CATStCmdAdvFill.warningWndTitle.Message="警告 填滿";
+CATStCmdAdvFill.warning.Message = 
+"兩曲線間的自由端點太小無法建立 4 邊填滿. 
+在外形選擇更多曲線或取消";
+

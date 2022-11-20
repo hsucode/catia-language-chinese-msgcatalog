@@ -1,0 +1,90 @@
+// MESSAGES DE LA DLL WFTOCACD
+//-----------------------------------------------------------------------------
+// Messages  in CATINSMediaToc.cpp
+//-----------------------------------------------------------------------------
+CATINSMediaToc.Error_Alloc="CATINSMediaToc 有內部錯誤 : 無法從 /p2 定位 /p1 字首 \n";
+CATINSMediaToc.Error_InitToc="CATINSMediaToc 有內部錯誤 : 線從 /p2 至 /p1 初始化失敗 \n";
+GetSize.Error_BadOS="無效的媒體 : 禁止安裝 /p1 作業系統資料至 /p2 作業系統 \n";       
+GetSize.Error_BadGALevel="無效的媒體 : 禁止安裝 /p1 版資料至 /p2 版資料 \n";
+GetSize.Msg_AlreadyInstalled="/p1 /p2: 已安裝軟體 \n";
+GetSize.Msg_SupersededSoftware="/p1 /p2: 替代軟體 \n";                 
+GetSize.Msg_PrereqNotfound=" /p2 的先期軟體 /p1 未找到. \n 雖然您要安裝 /p3, 但它將不被安裝. \n 繼續中...\n";
+GetSize.Msg2_PrereqNotfound=" /p2 的先期軟體 /p1 未找到. 媒體不完全 \n";
+GetSize.Msg_GANotfound="未找到 GA 版. \n 安裝 /p1 前必須先安裝正確的 GA 版 \n";
+GetSize.Msg_LowerLevel="/p1 較目前的 Service Pack level 為低 : /p2\n";
+GetSize.Error_nbtoinstall="CATINSMediaToc::GetSize: 內部錯誤 nbtoinstall\n";
+GetSize.Error_nbscanned="CATINSMediaToc::GetSize: 內部錯誤 nbscanned\n";
+GetSize.Error_nbifreq="CATINSMediaToc::GetSize: 內部錯誤 nbifreq\n";
+GetSize.Error_nbtoscanafter="CATINSMediaToc::GetSize: 內部錯誤 nbtoscanafter\n";
+GetSize.Msg_ProductNotfound="/p1 /p2 未在媒體上被發現 \n";
+GetSize.Error_nbtoscanafter2="CATINSMediaToc::GetSize: 內部錯誤 nbtoscanafter2\n";
+GetSize.Error_PrereqNotfound="先期所需的 /p1 /p2 未發現 \n";
+GetSize.Error_nbscanned2="CATINSMediaToc::GetSize: 內部錯誤 nbscanned2\n";
+GetSize.Error_nbtoscanafter3="CATINSMediaToc::GetSize: 內部錯誤 nbtoscanafter3\n";
+GetSize.Error_nbifreqafter="CATINSMediaToc::GetSize: 內部錯誤 nbifreqafter\n";
+//-----------------------------------------------------------------------------
+// Messages  in CATINSInstToc.cpp
+//-----------------------------------------------------------------------------
+CATINSInstToc.Error_Init="CATINSInstToc: 線從 /p2 至 /p1 初始化失敗 \n";
+CATINSInstToc.Error_Duplicate="CATINSInstToc:在 /p1 中複製 \n";
+CATINSInstToc.Error_NoFramework="CATINSInsToc: Np 框架中相關 /p1";
+ListContent.Title="# SUPERSEDED:\n#===========";
+ListContent.Superseded="/p1 以 /p2 來繼續";
+GetSize.NotAFix="/p1 不是 固定的 \n";
+GetSize.NotFound="未找到 /p1 \n";
+GetSize.InstToc.nbtoscanafter="CATINSInstToc::GetSize:內部錯誤 nbtoscanafter\n";
+GetSize.InstToc.nbtoscanafte2r="CATINSInstToc::GetSize: 內部錯誤 nbtoscanafter2\n";
+GetSize.InstToc.nbscanned="CATINSInstToc::GetSize: 內部錯誤 nbscanned\n";
+
+GetSize.InstToc.nbspsdafter="CATINSInstToc::GetSize: 內部錯誤 nbspsdafter\n";
+GetSize.InstToc.toRemove="CATINSInstToc::GetSize: 無法建立移除檔案 \n";
+GetSize.NotCorrectType="/p1 /p2 不是正確的形式 \n";
+GetSize.ToRemove.Notfound=" 未找到 /p1 /p2 \n";
+
+GetSize.InstToc.nbscanned2="CATINSInstToc::GetSize: 內部錯誤 nbtscanned2\n";
+GetSize.InstToc.nbtoscanafter2="CATINSInstToc::GetSize: 內部錯誤 nbtoscanafter2\n";
+GetSize.InstToc.nbspsdafter2="CATINSInstToc::GetSize: 內部錯誤 nbspsdafter2\n";
+//-----------------------------------------------------------------------------
+// Messages  in CATINSToc.cpp
+//-----------------------------------------------------------------------------
+CATINSToc.Error_Init="CATINSToc:: 起始無法開啟檔案 /p1\n";
+CATINSToc.Error_Init2="CATINSToc::Init:  內部錯誤 _NbToc = /p1\n";
+CATINSToc.Error_Allocate="CATINSToc:: 從 /p2 至 /p1 起始無法定位 \n";
+SetOS.Error="CATINSToc::SetOS: 在檔案 /p2 的線 /p1 作業系統不合 :\n 期望找到 /p3 和 /p4 作業系統 \n";
+SetGALevel.Error="CATINSToc::SetGALevel:在檔案 /p2 的線 /p1 GA版本不合 :\n /p3 期望找到 /p3 和 /p4 GA版本 \n";
+GetPackage.Error="CATINSToc::GetPackage: /p2 形式的 /p1 有內部錯誤 \n";
+Remove.Error="CATINSToc:: 移除 : /p1 /p2: 未在 /p3 中發現 \n";
+//-----------------------------------------------------------------------------
+// Messages  in CATINSUnitToc.cpp
+//-----------------------------------------------------------------------------
+CATINSUnitToc.error_type="CATINSUnitToc: 未知型式 : /p1\n";
+CATINSUnitToc.error_package="CATINSUnitToc: 未知組合軟體 : /p1\n";
+CATINSUnitToc.error_prereq="CATINSUnitToc: 未具有先期軟體 : /p1\n";
+//-----------------------------------------------------------------------------
+// Messages  in CheckIntegrity.cpp
+//-----------------------------------------------------------------------------
+CheckIntegrity.AloneDOCfwk="/p1: 沿框架 (no PDO prereqs it)";
+CheckIntegrity.Alonefwk="/p1: 沿框架 (no SLT or PRD prereqs it)";
+CheckIntegrity.Alonefsp="/p1: 沿 FSP (no SPK prereqs it)";
+CheckIntegrity.FilenotFound="/p1: 未發現檔案 , 如移除可能會有問題";
+CheckIntegrity.rOpenFailed="/p1: 無法以讀取模式開啟檔案";
+CheckIntegrity.readFailed="/p1: 無法讀取檔案";
+CheckIntegrity.statFailed="/p1: 無法決定檔案大小";
+CheckIntegrity.CheckSumMisMatch="/p1: 檢查碼不同, 不良或修改的檔案";
+CheckIntegrity.Prereq="/p1 是 /p2 的先期需要, 但未安裝";
+CheckIntegrity.Coreq="/p1="/p1 是 /p2 的核心, 但未安裝";
+//-----------------------------------------------------------------------------
+// Messages  in CATCheckSum.cpp
+//-----------------------------------------------------------------------------
+CATCheckSum.rOpenFailedControl="/p1: 無法以讀取模式開啟檔案, 請檢查權限模式 ; 新的控制檔案未建立 \n";
+CATCheckSum.rOpenFailedCksum="/p1:無法以讀取模式開啟檔案, 請檢查權限模式 ; 檢查碼未計算 \n";
+CATCheckSum.chPerm="/p1: 無法修改存取權限 \n";
+CATCheckSum.chPermPrev="/p1: 無法修改前一個的存取權限 \n";
+CATCheckSum.wOpenFailedControl="/p1: 無法以寫入模式開啟檔案, 請檢查權限模式 ; 新的控制檔案未建立 \n";
+CATCheckSum.fputs="Error : fputs failed ; 新的控制檔 /p1 案未建立 \n";
+//-----------------------------------------------------------------------------
+// Messages  in CATINSTocLib.cpp
+//-----------------------------------------------------------------------------
+CATINSTocLib.NoCATInstallPath="錯誤 (/p1) : CATInstallPath 未設定. 請檢查您的環境. \n";
+CATINSTocLib.NoFilePRESENT=" 錯誤 (/p1) : 未找到檔案 /p2 . 請檢查設定完整性. \n";
+CATINSTocLib.InstTOC=" 錯誤 (/p1) : /p2. 請檢查設定完整性. \n";

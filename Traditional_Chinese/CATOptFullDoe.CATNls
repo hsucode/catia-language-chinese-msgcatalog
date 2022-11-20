@@ -1,0 +1,67 @@
+Separator = "************************************************************************************************************";
+
+IncompleteDTWarning = "!!! Äµ§i : Á`Åé¹êÅç¥¼§¹¦¨ !!!";
+
+MatchingLevelValueArrayTitle = "ARRAY OF MATCHING BETWEEN LEVELS AND VALUES : gives the matching between level i and the real value of factor X";
+MatchingLevelValueArrayCaption = "Column 1 : available levels - Row 1: input factors - Others : matching level/value";
+
+CommonOutputDescription = " => ¿é¥X³B²z¦WºÙ : ";
+factorEffectDescription = " * ¬ã¨s¦]¤l : ";
+
+EffectsAverageArrayTitle_part1 = "ARRAYS OF FACTORS EFFECTS : for each output S and each factor X, it gives :";
+EffectsAverageArrayTitle_part2 = "Column 1 : value at each available level of factor X";
+EffectsAverageArrayTitle_part3 = "Column 2 : average of output S responses obtained for factor X at corresponding value (=µ)";
+EffectsAverageArrayTitle_part4 = "Column 4 and 5 : [Smin,Smax] = range in which you have 99,73% chance to obtain your ouput value with the corresponding factor value ([µ-3sigma,µ+3sigma])";
+EffectsAverageArrayTitle_part5 = "Column 3 : variance of output S responses obtained for factor X at corresponding value (= sigma^2)";
+ValuesColTitle = "¦]¤l¼Æ­È";
+AvgColTitle ="¥­§¡¿é¥X";
+VarColTitle = "¿é¥XÅÜ²§";
+SminColTitle = "Smin";
+SmaxColTitle = "Smax";
+
+
+InteractionAverageArrayTitle_part1 = "ARRAYS OF INTERACTIONS AVERAGES : gives the average of responses obtained for output S while factor X equals x AND factor Y equals y";
+InteractionAverageArrayTitle_part2 = "                                  -> if curves are parallel, effect of factor X doesn't depend on factor Y value (no interaction)";
+InteractionAverageArrayCaption = "";
+
+CommonEffectsGraphTitle_part1 = "¥­§¡®ÄÀ³";
+CommonEffectsGraphTitle_part2 = " on ";
+CommonEffectsGraphTitle_part3 = " (surrounded by min. and max. effect)";
+CommonEffectsOxAxisCaption = "¼Æ­È ";
+CommonOyAxisCaption_part1 = "¥­§¡";
+CommonOyAxisCaption_part2 = " ¤ÏÀ³";
+CommonEffectsOyAxisCaption = " (surrounded by min. and max. responses)";
+
+CommonInteractionGraphTitle_part1 = "¼vÅT ";
+CommonInteractionGraphTitle_part2 = " on ";
+CommonInteractionGraphTitle_part3 = " ¹ï¨C¤@­Ó¼Æ­È ";
+CommonInteractionGraphTitle_part4 = " (no interaction if curves are parallel)";
+CommonInteractionOxAxisCaption = "VALUE of ";
+
+EffectsSlopesArrayTitle_part1 = "ARRAYS OF EFFECTS SLOPES : gives the mean, the min. and the max. slopes of the effect curve in each range of factor values";
+EffectsSlopesArrayTitle_part2 = "                                                         -> use it to see in which part of the space the factor is more influent with a range of trust";
+EffectsSlopesArrayCaption = "Column 1 : range of study (given by [value at level i,value at level i+1]) - Others : slope (for a variation of one factor unit in the corresponding levels range, gives the number of output units changes)";
+ValuesRangeColTitle = "¼Æ­È½d³ò";
+MeanSlopeColTitle = "¥­§¡±×«×";
+minSlopeColTitle = "³Ì¤p±×«×";
+maxSlopeColTitle = "³Ì¤j±×«×";
+
+CommonSlopesGraphTitle_part1 = "¤ÏÀ³¦±½uªº¥­§¡±×«×";
+CommonSlopesGraphTitle_part2 = " on ";
+CommonSlopesGraphTitle_part3 = " (surrounded by min. and max. slopes)";
+CommonSlopesOxAxisCaption = "¾Ç²ß½d³ò = [value at level i,value at level i+1] of factor ";
+CommonSlopesOyAxisCaption = "±×«×";
+
+
+SaveResponsesProgressTaskUIComment = "¨BÆJ 1 : Computing and saving responses in the output file";
+SaveResultsProgressTaskUIComment = "¨BÆJ 2 : ¦b¿é¥XÀÉ®×¤º­pºâ©MÀx¦sµ²ªG";
+BuildGraphProgressTaskUIComment = "¨BÆJ 3 : ¦b¿é¥XÀÉ®×¤º­pºâ©MÀx¦s¹Ï§Î";
+
+runningErrSmy = "°õ¦æºtºâ¿ù»~";
+runningInitializeErrMsg = "Unexpected error occured during the initialization stage of the algorithm run :\n=> None experiment done, the output file remains empty";
+runningInitializeDTErrMsg = "Unexpected error occured during the initialization of the output file :\n=> None experiment done, the output file remains empty";
+runningUpdateErrMsg_part1 = "Unexpected error occured while running the experiment number "; 
+runningUpdateErrMsg_part2 = " (output factors values could not be computed for this combinaison of input factors) :\n=> Check that all the given ranges are compliant with your model\n=> Check that each input factor can be manually valuated with its value for this experiment";
+runningComputeResponseErrMsg = "Unexpected error occured during the responses computation stage of the algorithm run :\n=> All the done experiments were saved in the output file but the execution of the algorithm has been stopped";
+runningComputeResultErrMsg = "Unexpected error occured during the results computation stage of the algorithm run :\n => The computed experiments and results were saved in the output file but the execution of the algorithm has been stopped";
+

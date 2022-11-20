@@ -1,0 +1,135 @@
+Title = "板金件參數";
+
+_MainContainer._ParametersTabPage.Title = "參數";
+
+_MainContainer._ParametersTabPage._ValuesFrame._SMStandardLabel.Title    = "標準 :";
+_MainContainer._ParametersTabPage._ValuesFrame._SMStandardLabel.LongHelp = "此零件所使用的板金零件標準名稱";
+
+_MainContainer._ParametersTabPage._ValuesFrame._ThicknessLabel.Title    = "厚度 :";
+_MainContainer._ParametersTabPage._ValuesFrame._ThicknessLabel.LongHelp = "板金元件厚度";
+
+_MainContainer._ParametersTabPage._ValuesFrame._MinimumBendRadiusLabel.Title    = "最小彎曲半徑 :";
+_MainContainer._ParametersTabPage._ValuesFrame._MinimumBendRadiusLabel.LongHelp = "最小內部彎曲半徑";
+
+_MainContainer._ParametersTabPage._ValuesFrame._BendRadiusLabel.Title    = "順接曲面半徑 :";
+_MainContainer._ParametersTabPage._ValuesFrame._BendRadiusLabel.LongHelp = "標準順接曲面半徑";
+
+_MainContainer._ParametersTabPage._StandardsFilesPushButton.Title     = "板件標準檔...";
+_MainContainer._ParametersTabPage._StandardsFilesPushButton.ShortHelp = "板件標準檔";
+_MainContainer._ParametersTabPage._StandardsFilesPushButton.LongHelp  = "開啟板件標準檔以選擇數值";
+
+_MainContainer._ParametersTabPage._WarningCheckButton.Title			  = "檢查所有彎曲半徑";
+_MainContainer._ParametersTabPage._WarningCheckButton.LongHelp		  = "檢查所有彎曲半徑與標準彎曲半徑的一致性";
+
+
+_MainContainer._BendExtremitiesTabPage.Title    = "順接曲面端點";
+_MainContainer._BendExtremitiesTabPage.LongHelp = "選擇順接曲面端點的預設類型";
+
+MiniNoRelief     = "沒有清除的最小值";
+MiniSquareRelief = "方形清除";
+MiniRoundRelief  = "圓形清除";
+LimitedLinear    = "線性";
+LimitedCurved    = "相切";
+Maxi             = "最大";
+Closed           = "封閉";
+FlatJoint        = "平坦連結";
+
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._MiniNoReliefPushButton.Title     = "沒有清除的最小值";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._MiniSquareReliefPushButton.Title = "方形清除";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._MiniRoundReliefPushButton.Title  = "圓形清除";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._LimitedLinearPushButton.Title    = "線性";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._LimitedCurvedPushButton.Title    = "相切";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._MaxiPushButton.Title             = "最大";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._ClosedPushButton.Title           = "封閉";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._FlatJointPushButton.Title        = "平坦連結";
+
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._MiniNoReliefPushButton.ShortHelp     = "最小不清除";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._MiniSquareReliefPushButton.ShortHelp = "最小方形清除";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._MiniRoundReliefPushButton.ShortHelp  = "最小圓形清除";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._LimitedLinearPushButton.ShortHelp    = "線性形狀";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._LimitedCurvedPushButton.ShortHelp    = "曲線形狀";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._MaxiPushButton.ShortHelp             = "最大彎曲";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._ClosedPushButton.ShortHelp           = "封閉";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._ExtremitiesIconBox._FlatJointPushButton.ShortHelp        = "平坦連結";
+
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._LengthsFrame._Length1Label.Title    = "L1 :";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._LengthsFrame._Length1Label.LongHelp = "清除的第一個長度";
+
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._LengthsFrame._Length2Label.Title    = "L2 :";
+_MainContainer._BendExtremitiesTabPage._ExtremityCaractFrame._LengthsFrame._Length2Label.LongHelp = "清除的第二個長度";
+
+_MainContainer._BendCornerRelievesTabPage.Title    = "順接曲面圓角清除";
+_MainContainer._BendCornerRelievesTabPage.LongHelp = "選擇順接曲面圓角清除的預設類型";
+
+_MainContainer._BendCornerRelievesTabPage._CornerReliefCheckButton.Title     = "圓角清除";
+_MainContainer._BendCornerRelievesTabPage._CornerReliefCheckButton.LongHelp  = "圓角清除的建立的作動";
+_MainContainer._BendCornerRelievesTabPage._CornerReliefCheckButton.ShortHelp = "圓角清除的建立";
+_MainContainer._BendCornerRelievesTabPage._CornerReliefCheckButton.Help      = "圓角清除的建立的作動";
+
+_MainContainer._BendCornerRelievesTabPage._CornerReliefTypeFrame._CornerRelievesIconBox._CircularPushButton.Title    = "圓形圓角清除";
+_MainContainer._BendCornerRelievesTabPage._CornerReliefTypeFrame._CornerRelievesIconBox._RectangularPushButton.Title = "矩形圓角清除";
+_MainContainer._BendCornerRelievesTabPage._CornerReliefTypeFrame._CornerRelievesIconBox._TriangularPushButton.Title  = "三角形圓角清除";
+
+_MainContainer._BendCornerRelievesTabPage._CornerReliefTypeFrame._CornerReliefRadiusFrame._CornerReliefRadiusLabel.Title    = "半徑 : ";
+_MainContainer._BendCornerRelievesTabPage._CornerReliefTypeFrame._CornerReliefRadiusFrame._CornerReliefRadiusLabel.LongHelp = "圓形圓角清除的半徑";
+
+_MainContainer._BendAlowanceTabPage.Title = "順接曲面容差";
+
+_MainContainer._BendAlowanceTabPage._KFactorFrame._KFactorLabel.Title    = "K 因子 :";
+_MainContainer._BendAlowanceTabPage._KFactorFrame._KFactorLabel.LongHelp = "從內部彎曲側的中介位置";
+
+_MainContainer._BendAlowanceTabPage._DINNormaPushButton.Title     = "應用 DIN";
+_MainContainer._BendAlowanceTabPage._DINNormaPushButton.ShortHelp = "應用 DIN 公式";
+_MainContainer._BendAlowanceTabPage._DINNormaPushButton.LongHelp  = "計算 K 因子將會依據 DIN 公式來計算";
+
+// MDD - 25.03.2003 - Compensations
+
+
+_MainContainer._CompensationTabPage.Title = "Joggles";
+_MainContainer._CompensationTabPage._CompensationFrame._JoggleCompLabel.Title     = "補償 : ";
+_MainContainer._CompensationTabPage._CompensationFrame._JoggleCompLabel.ShortHelp = "補償方式";
+_MainContainer._CompensationTabPage._CompensationFrame._JoggleCompLabel.LongHelp  = "Joggle 補償方式";
+_MainContainer._CompensationTabPage._CompensationFrame._JoggleCompCombo.ShortHelp = "補償方式";
+_MainContainer._CompensationTabPage._CompensationFrame._JoggleCompCombo.LongHelp  = "Joggle 補償方式";
+
+_MainContainer._CompensationTabPage._RunoutFrame.Title = "Runout";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutTypeLabel.Title     = "定義   : ";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutTypeLabel.ShortHelp = "Runout 定義型式";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutTypeLabel.LongHelp  = "Joggles runout 定義型式";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutTypeCombo.ShortHelp = "Runout 定義型式";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutTypeCombo.LongHelp  = "Joggles runout 定義型式";
+
+_MainContainer._CompensationTabPage._RunoutFrame.Title = "公式";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutCoeffLabel.Title       = "Runout或深度 : ";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutCoeffLabel.ShortHelp   = "公式的係數";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutCoeffLabel.LongHelp    = "公式的係數 : Runout = 係數 * 深度";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutCoeffSpinner.ShortHelp = "公式的係數";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutCoeffSpinner.LongHelp  = "公式的係數 : Runout = 係數 * 深度";
+
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutFormulaLabel.Title       = "Runout 公式 : ";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutFormulaLabel.ShortHelp   = "Runout 公式型式";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutFormulaLabel.LongHelp    = "Runout 公式型式";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutFormulaType.ShortHelp    = "Runout 公式型式";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutFormulaType.LongHelp     = "Runout 公式型式";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutFormulaEditor.ShortHelp  = "Runout 公式檔案名稱";
+_MainContainer._CompensationTabPage._RunoutFrame._RunoutFormulaEditor.LongHelp   = "Runout 公式檔案名稱";
+
+JoggleCompensationNone      = "無";
+JoggleCompensationProc1     = "方式 1";
+JoggleCompensationProc2     = "方式 2";
+
+JoggleRunoutType1           = "外部";
+JoggleRunoutType2           = "內部";
+
+DefaultRunoutFormula        = "預設";
+NoRunoutFormula             = "無";
+FromFileRunoutFormula       = "由檔案";
+
+Error   = "錯誤";
+Warning = "警告";
+
+
+
+
+
+

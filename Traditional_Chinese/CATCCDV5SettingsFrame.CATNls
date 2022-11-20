@@ -1,0 +1,41 @@
+// COPYRIGHT DASSAULT SYSTEMES  1998
+//====================================================================
+//
+// CATDlgFrame resource file
+// CATCCDV5SettingsFrame
+//
+//====================================================================
+//
+// Audit Trail:
+//--------------------------------------------------------------------
+//   Author     : Vic Szeto
+//   Date       : 11/98
+//   Chg id     :
+//   Chg nature :
+//--------------------------------------------------------------------
+//   Modified   :
+//   Date       :
+//   Chg id     :
+//   Chg nature :
+//====================================================================
+ 
+Title="CCD->V5";
+
+TabPage.Title = "CCD->V5";
+ 
+frameDimOptionsTitle.HeaderFrame.Global.Title  = "尺寸選項";
+frameDimOptionsTitle.IconAndOptionsFrame.OptionsFrame.radioExplodeYes.Title =	"炸開尺寸";
+
+frameDimOptionsTitle.IconAndOptionsFrame.OptionsFrame.LongHelp =
+"CCD model 的尺寸物件將會炸開成 V5 的繪圖元素.";
+
+frameDimOptionsTitle.IconAndOptionsFrame.OptionsFrame.radioExplodeNo.Title =	"不可炸開尺寸";
+
+frameDimOptionsTitle.IconAndOptionsFrame.OptionsFrame.radioExplodeNo.LongHelp =
+"CCD model 的尺寸物件將會轉換成 V5 的繪圖元素.";
+
+frameSymCat.HeaderFrame.Global.Title = "CCD 符號目錄";
+frameSymCat.IconAndOptionsFrame.OptionsFrame.DirLabel.Title = "目錄";
+frameSymCat.IconAndOptionsFrame.OptionsFrame.DirLabel.LongHelp=
+"CCD 符號表轉換為 CATIA V5 目錄的主要目錄";
+SymCatDirectoryBrowser.Title = "CCD 符號目錄瀏覽器";

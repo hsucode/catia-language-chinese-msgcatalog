@@ -1,0 +1,164 @@
+//---------------------------------------
+// Resource file for CATGSMUIBlendPanel class
+// En_US
+//---------------------------------------
+
+Title="順接定義 : ";
+LimitFrame.StartLimFrame.StartCurveLabel.Title = "第一條曲線: ";
+LimitFrame.StartLimFrame.StartCurveLabel.LongHelp = "指出順接的第一條曲線.";
+
+LimitFrame.StartLimFrame.StartSupportLabel.Title = "第一依附曲面: ";
+LimitFrame.StartLimFrame.StartSupportLabel.LongHelp =
+"指出順接的第一依附曲面.
+第一條曲線必須依附在此曲面上.";
+
+LimitFrame.EndLimFrame.EndCurveLabel.Title = "第二條曲線: ";
+LimitFrame.EndLimFrame.EndCurveLabel.LongHelp = 
+"指出順接的第二條曲線.";
+
+LimitFrame.EndLimFrame.EndSupportLabel.Title = "第二依附曲面: ";
+LimitFrame.EndLimFrame.EndSupportLabel.LongHelp =
+"指出順接的第二依附曲面.
+第二條曲線必須依附在此曲面上.";
+
+ParameterFrame.ParamTabContainer.BasicPage.Title = "基本";
+ParameterFrame.ParamTabContainer.BasicPage.LongHelp = 
+"指出順接的兩極限連續及裁剪依附曲面.";
+
+
+ParameterFrame.ParamTabContainer.BasicPage.BasicFrame.ContFrame.StartContFrame.StartContLabel.Title = "第一連續: ";
+ParameterFrame.ParamTabContainer.BasicPage.BasicFrame.ContFrame.StartContFrame.StartContLabel.LongHelp = 
+"指出順接和第一依附曲面的連續
+連續性質可以是點,相切或曲率.";
+ParameterFrame.ParamTabContainer.BasicPage.BasicFrame.ContFrame.StartTrimButton.Title = "修剪第一依附曲面";
+ParameterFrame.ParamTabContainer.BasicPage.BasicFrame.ContFrame.StartTrimButton.LongHelp = 
+"指出如果第一依附曲面被第一條曲線裁剪且順接.";
+
+ParameterFrame.ParamTabContainer.BasicPage.BasicFrame.ContFrame.StartBorderFrame.StartBorderLabel.Title = "第一相切邊界";
+ParameterFrame.ParamTabContainer.BasicPage.BasicFrame.ContFrame.StartBorderFrame.LongHelp = 
+"指出如果順接邊界與第一依附相切 :
+   - 雙端點 : 第一條曲線的兩端點均相切,
+   - 無 : 邊界不具有相切拘束,
+   - 只有起始端點 : 第一條曲線的起始點相切,
+   - 只有結束端點 : 第一條曲線的結束點相切.";
+
+BothExtreTitle="雙端點";
+NoneExtreTitle="無";
+StartExtreTitle="只有起始端點";
+EndExtreTitle="只有結束端點 ";
+
+ParameterFrame.ParamTabContainer.BasicPage.BasicFrame.TrimFrame.EndContFrame.EndContLabel.Title = "第二連續: ";
+ParameterFrame.ParamTabContainer.BasicPage.BasicFrame.TrimFrame.EndContFrame.EndContLabel.LongHelp = 
+"指出順接和第二依附曲面的連續
+連續性質可以是點,相切或曲率.";
+
+ParameterFrame.ParamTabContainer.BasicPage.BasicFrame.TrimFrame.EndTrimButton.Title = "修剪第二依附曲面";
+ParameterFrame.ParamTabContainer.BasicPage.BasicFrame.TrimFrame.EndTrimButton.LongHelp = 
+"指出如果第二依附曲面被第二條曲線裁剪且順接.";
+
+ParameterFrame.ParamTabContainer.BasicPage.BasicFrame.TrimFrame.EndBorderFrame.EndBorderLabel.Title = "第二相切邊界";
+ParameterFrame.ParamTabContainer.BasicPage.BasicFrame.TrimFrame.EndBorderFrame.LongHelp = 
+"指出如果順接邊界與第二依附相切 :
+   - 雙端點 : 第二條曲線的兩端點均相切,
+   - 無 : 邊界不具有相切拘束,
+   - 只有起始端點 : 第二條曲線的起始點相切,
+   - 只有結束端點 : 第二條曲線的結束點相切.";
+
+ParameterFrame.ParamTabContainer.PointPage.Title = "封閉點";
+ParameterFrame.ParamTabContainer.PointPage.LongHelp = 
+"指出順接每一結束曲線的結束點.";
+
+ParameterFrame.ParamTabContainer.PointPage.PointFrame.StartPointFrame.StartPointLabel.Title = "第一結束點: ";
+ParameterFrame.ParamTabContainer.PointPage.PointFrame.StartPointFrame.StartPointLabel.LongHelp = 
+"指出第一曲線的結束點.
+第一曲線必須是封閉的.";
+
+ParameterFrame.ParamTabContainer.PointPage.PointFrame.EndPointFrame.EndPointLabel.Title = "第二結束點: ";
+ParameterFrame.ParamTabContainer.PointPage.PointFrame.EndPointFrame.EndPointLabel.LongHelp =
+"指出第二曲線的結束點.
+第二曲線必須是封閉的.";
+
+ParameterFrame.ParamTabContainer.CouplingPage.Title = "複合/脊椎線";
+ParameterFrame.ParamTabContainer.CouplingPageWithoutSpine.Title = "複合";
+ParameterFrame.ParamTabContainer.CouplingPage.LongHelp = 
+"指出曲線複合的形式 :
+- 比率 : 曲線以曲率比值來複合.
+- 相切 : 如果每一條曲線具有相同的相切不連續點, 
+則這些不連續點會複合,
+否則會顯示錯誤訊息.
+- 相切後曲率 : 如果每一條曲線具有相同的相切和曲率不連續點,
+曲率不連續點複合後,
+則這些不連續點會複合,
+否則會顯示錯誤訊息.
+- 頂點 : 如果每一條曲線具有相同的頂點, 
+則這些頂點會複合,
+否則會顯示錯誤訊息.";
+
+ParameterFrame.ParamTabContainer.TensionPage.Title = "張力";
+ParameterFrame.ParamTabContainer.TensionPage.LongHelp = 
+"指出順接每一依附曲面的張力.";
+
+ParameterFrame.ParamTabContainer.TensionPage.TensionFrame.StartTensionFrame.StartTensionButtonFrame.StartTension.Title = "第一張力: ";
+ParameterFrame.ParamTabContainer.TensionPage.TensionFrame.StartTensionFrame.StartTensionButtonFrame.StartTension.LongHelp =
+"指出順接第一依附曲面的張力.";
+
+ParameterFrame.ParamTabContainer.TensionPage.TensionFrame.EndTensionFrame.EndTensionButtonFrame.EndTension.Title = "第二張力: ";
+ParameterFrame.ParamTabContainer.TensionPage.TensionFrame.EndTensionFrame.EndTensionButtonFrame.EndTension.LongHelp =
+"指出順接第二依附曲面的張力.";
+
+ParameterFrame.ParamTabContainer.TensionPage.TensionFrame.StartTensionFrame.StartTensionButtonFrame.StartDefault.Title = "預設";
+ParameterFrame.ParamTabContainer.TensionPage.TensionFrame.StartTensionFrame.StartTensionButtonFrame.StartDefault.LongHelp = 
+"指出順接第一依附曲面的張力是預設值.";
+
+ParameterFrame.ParamTabContainer.TensionPage.TensionFrame.EndTensionFrame.EndTensionButtonFrame.EndDefault.Title = "預設";
+ParameterFrame.ParamTabContainer.TensionPage.TensionFrame.EndTensionFrame.EndTensionButtonFrame.EndDefault.LongHelp = 
+"指出順接第二依附曲面的張力是預設值.";
+
+ActionFrame.ReplaceButton.Title = "替換";
+ActionFrame.RemoveButton.Title = "移除";
+ActionFrame.ReverseButton.Title = "逆轉";
+
+PointContTitle="點";
+TangencyContTitle="相切";
+CurvatureContTitle="曲率";
+
+
+ParameterFrame.ParamTabContainer.TensionPage.TensionFrame.StartTensionFrame.StartTensionButtonFrame.StartTensionComb.LongHelp = 
+"指出順接第一依附曲面的張力是固定或線性值.";
+
+ParameterFrame.ParamTabContainer.TensionPage.TensionFrame.EndTensionFrame.EndTensionButtonFrame.EndTensionComb.LongHelp = 
+"指出順接第二依附曲面的張力是固定或線性值.";
+
+ConstantTensionTitle="固定";
+LinearTensionTitle="線性";
+STypeTensionTitle="S 形式";
+
+RatioCouplTitle="比率";
+TangencyCouplTitle="相切";
+CurvatureCouplTitle="相切後曲率";
+VertexCouplTitleKey="端點";
+SpineCouplTitleKey="雲形線";
+
+ParameterFrame.ParamTabContainer.TensionPage.TensionFrame.StartTensionFrame.StartValueFrame.StartParmFrame1.LongHelp = 
+"如果張力是固定或線性時,
+指出順接第一依附曲面的張力值.";
+
+ParameterFrame.ParamTabContainer.TensionPage.TensionFrame.StartTensionFrame.StartValueFrame.EndParmFrame1.LongHelp = 
+"如果張力是固定或線性時,
+指出順接第二依附曲面的張力值.";
+
+ParameterFrame.ParamTabContainer.TensionPage.TensionFrame.EndTensionFrame.EndValueFrame.StartParmFrame2.LongHelp = 
+"如果張力是固定或線性時,
+指出順接第二依附曲面的第一張力值.";
+
+ParameterFrame.ParamTabContainer.TensionPage.TensionFrame.EndTensionFrame.EndValueFrame.EndParmFrame2.LongHelp = 
+"如果張力是固定或線性時,
+指出順接第二依附曲面的第二張力值.";
+
+StartExtremityKey="T1 : ";
+EndExtremityKey="T2 :  ";
+
+ChaineDefaut="預設";
+ParameterFrame.ParamTabContainer.CouplingPage.SpineFrame.SpineLabel.Title="雲形線: ";
+ParameterFrame.ParamTabContainer.CouplingPage.SpineFrame.SpineLabel.LongHelp="當複合模式設為開啟時,指定將計算的雲形線.";
+ParameterFrame.ParamTabContainer.CouplingPage.SpineFrame.SpineSelector.LongHelp="當複合模式設為開啟時,指定將計算的雲形線.";

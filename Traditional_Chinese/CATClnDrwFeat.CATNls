@@ -1,0 +1,58 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 2001
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATRuleDrwAreaFill00
+// LOCATION    :    DraftingFeature
+// AUTHOR      :    hbh
+// BUT         :    
+// DATE        :    ??.??.2001
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    Regles pour le cleaner
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//=====================================================================================
+
+DrwAreaFill_0.ShortMessage="填滿面積未含外形";
+DrwAreaFill_0.ErrorMessage="填滿面積未含可定義外形的幾何元素";
+DrwAreaFill_0.CleanMessage="填滿面積資料已刪除.";
+
+DrwAreaFill_1.ShortMessage="面積填滿未組成";
+DrwAreaFill_1.ErrorMessage="面積填滿未被有效的模型元件組成且未具有複製";
+DrwAreaFill_1.CleanMessage="填滿面積資料已刪除.";
+
+DrwAreaFill_2.ShortMessage="面積填滿缺少曲線";
+DrwAreaFill_2.ErrorMessage="面積填滿具有不完整的外形; 其中之一曲線遺失";
+DrwAreaFill_2.CleanMessage="填滿面積資料已刪除.";
+
+DrwAreaFill_3.ShortMessage="面積填滿未具圖樣";
+DrwAreaFill_3.ErrorMessage="面積填滿未具任何定義圖樣, 顯示其中之一無效";
+DrwAreaFill_3.CleanMessage="圖樣已設定至面積填滿.";
+
+DrwAreaFill_4.ShortMessage="以外部鏈結執行面積填滿";
+DrwAreaFill_4.ErrorMessage="以鏈結其它文件來執行面積填滿";
+DrwAreaFill_4.CleanMessage="填滿面積資料已刪除.";
+
+DrwAssociativeObject_0.ShortMessage="相關指向與文件的外部鏈結";
+DrwAssociativeObject_0.ErrorMessage="相關指向與文件的外部鏈結";
+DrwAssociativeObject_0.CleanMessage="關聯性已刪除.";
+
+DrwPicture_0.ShortMessage="無效資料";
+DrwPicture_0.ErrorMessage="此文件含有效資料. 清理將會移除無效資料並縮小文件大小.";
+DrwPicture_0.CleanMessage="無用資料已刪除.";
+
+DrwTable_0.ShortMessage="表中資料無效";
+DrwTable_0.ErrorMessage="表中資料無效, 可能會產生問題,清理將會修正已知問題.";
+
+DrwText_0.ShortMessage="標註中有無效鏈結";
+DrwText_0.ErrorMessage="標註中有無效鏈結, 清理將會移除此鏈結";
+
+DrwDressUp_0.ShortMessage="修飾元素上無用的鏈結";
+DrwDressUp_0.ErrorMessage="修飾元素上無用的鏈結導致無效鏈結. 清理將會移除此鏈結";
+
+UselessData.ShortMessage="無效資料";
+UselessData.ErrorMessage="此文件含有效資料. 清理將會移除無效資料並縮小文件大小.";
+UselessData.CleanMessage="無用資料已刪除.";

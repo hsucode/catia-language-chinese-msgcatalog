@@ -1,0 +1,23 @@
+// Error messages : ERR_, WRN_ or INF_ + identifier, /p1, /p2.. for parameters.
+
+WRN_RecVpmNoConnection            = "No connection to Enovia VPM.\nPlease, connect manually to Enovia VPM prior to rerun the query.";
+WRN_RecPDMInvalidRule             = "Invalid rule for this object. \nThe reconciliation rule /p1 chosen for the object is not compatible with its type /p2";
+WRN_RecVpmCharacDBAccessKO        = "Database access to characteristics failed. \nNo comparison of characteristics available.";
+WRN_RecVpmCharacCV5AccessKO       = "In session access to characteristics failed. \nNo comparison of characteristics available.";
+WRN_RecPDMReloadDiffUuids         = "Reload of a different document not allowed.\nThe reload operation is only authorized if the document in session \nis replaced by a PDM document of same origin (identical internal UUIDs).";
+WRN_RecPDMReloadForceDiffUuids    = "The by-pass option forcing the ability to do a reload with inconsistent documents (different internal uuids) is activated in your Catia job. \nCurrently, the document /p1 \nwith a different internal UUID than the old one in session has beeing loaded from the PDM. \nAS A CONSEQUENCE, SOME LINKS WHICH IMPLIED THE RELOADED DOCUMENT HAVE PROBABLY BEEING LOST ! \nRecreate them and review in detail your session content before saving any data in the PDM. ";     
+WRN_RecPDMReloadDocEditorToClose  = "Reload(s) could not remove from session replaced document(s). \nThese document(s) with prefix RecPrepareReloadDocToClose_ in File-Desk are held by editors and must be closed manually. \nThis is to be done prior to save your session in ENOVIA VPM. "; 
+WRN_RecVpmInternalError           = "Internal error.\n"; 
+WRN_RecVpmSimpleQueryInvalid      = "These criteria could not be executed on this type of entity."; 
+WRN_RecVpmMemoryAllocation        = "Memory Allocation failed."; 
+WRN_RecVpmNotDocumentSupported    = "You have select a document which is not supported by reconciliation (/p1)	."; 
+WRN_RecVpmCriteriaNotEnoughArg    = "Selected criterion request /p1 arguments." ;
+WRN_RecVpmCommandAborted          = "Access to ENOVIA VPM failed (/p1 command aborted).\nPlease, check that your VPM application or VPM server is still running."; 
+WRN_RecVpmDecodeXML               = "Internal error.\nNot able to decode XML stream for VPM request /p1." ;
+WRN_RecErrorVPMExpand             = "Not able to access product structure definition in ENOVIA VPM:\n   /p1" ;
+WRN_RecNoRootAsmDefined           = "Root assembly not completely defined\nInternal error\n" ;
+WRN_RecVPDMCompareFailed          = "Assembly comparison between CATIA view and VPDM view failed for /p1\n" ;
+WRN_RecRelationNotFound           = "Inconsistent VPDM assembly structure view for part /p1\n" ;
+WRN_RecVpmDupDocumentsNames       = "All reconciled documents even with different extensions must have different names.\nPlease, assume different document names for all reconciled documents of your session. "; 
+WRN_RecEV4ErrorReport             = "Error during execution of intermediate query: /p1\n" ;
+ 

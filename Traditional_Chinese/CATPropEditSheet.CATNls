@@ -1,0 +1,97 @@
+//=============================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1997 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATPropEditSheet
+// LOCATION    :    DraftingUI/CNext/resources/msgcatalog
+// AUTHOR      :    jmt
+// DATE        :    Nov. 03 1997
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Drafting WorkShop
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATIONS     user	date		purpose
+//   HISTORY        ----	----		-------
+//		01			OGK		12.11.1998	- ajout pour 1er/3e triedre
+//------------------------------------------------------------------------------
+
+NameParameters.NameEditor.Title="顯示格式";
+NameParameters.nameText.Title="名稱: ";
+
+ScaleParameters.scaleEditors.scaleLabel.Title="縮放全部 : ";
+ScaleParameters.scaleEditors.scaleLabel.LongHelp=
+"允許您在圖紙上重新定義 縮放全部. 
+基於此, 您必須輸入 實數.";
+
+ScaleParameters.FrontIsomScalePrompt.Title="縮放全部: ";
+
+ScaleParameters.FrontIsomScalePrompt.LongHelp=
+"允許您在圖紙上重新定義 縮放全部. 
+基於此, 您必須輸入 實數.";
+
+projectionMethodFrameTitle.projectionMethodText.Title="投影方式 ";
+projectionMethodFrameTitle.projectionMethodText.LongHelp=
+"視圖建立
+定義投影模式:
+第一角: 左側視圖在右側.
+第三角: 左側視圖在左側.";
+
+projectionMethodFrame.firstAngleRBtn.Title="以第一角法建立投影視圖";
+projectionMethodFrame.firstAngleRBtn.LongHelp=
+"以第一角法定義投影視圖.
+結果為, 左側視圖在右側.";
+
+projectionMethodFrame.thirdAngleRBtn.Title="以第三角法建立投影視圖";
+projectionMethodFrame.thirdAngleRBtn.LongHelp=
+"以第三角法定義投影視圖.
+結果為, 左側視圖在左側.";
+
+genViewPosModeFrameTitle.genViewPosModeText.Title="自發性視圖定位式";
+genViewPosModeFrameTitle.genViewPosModeText.LongHelp=
+"定義更新間所產生視圖的定位方式.";
+
+genViewPosModeFrame.CGPosModeRBtn.Title="零件圍繞盒中心";
+genViewPosModeFrame.CGPosModeRBtn.LongHelp=
+"當執行更新時 3D 圖像的圍繞盒中心仍在相同位置.";
+
+genViewPosModeFrame.AxisPosModeRBtn.Title="零件 3D 軸";
+genViewPosModeFrame.AxisPosModeRBtn.LongHelp=
+"當執行更新時 3D 圖像的圍繞盒中心仍在相同位置.";
+
+pPrintAreaFrameTitle.pPrintAreaText.Title="列印區域 ";
+pPrintAreaFrameTitle.pPrintAreaText.LongHelp=
+"圖紙列印區域參數定義.";
+
+DfPrintArea.PAActivationCheck.Title="啟動";
+DfPrintArea.PAActivationCheck.LongHelp=
+"啟動或關閉此區域的列印.";
+
+DfPrintArea.DfPAXPos.Title="X:";
+DfPrintArea.DfPAXPos.LongHelp=
+"列印區域的 X 位置.";
+
+DfPrintArea.DfPAYPos.Title="Y:";
+DfPrintArea.DfPAYPos.LongHelp=
+"列印區域的 Y 位置.";
+
+DfPrintArea.DfPAWidth.Title="寬度:";
+DfPrintArea.DfPAWidth.LongHelp=
+"列印區域的寬度.";
+
+DfPrintArea.DfPAHeigth.Title="高度:";
+DfPrintArea.DfPAHeigth.LongHelp=
+"列印區域的高度.";
+
+TabTitle="圖紙";
+TabTitle.LongHelp="圖紙定義.";
+
+ErrorNotifyTitle="無效格式";
+ErrorNotifyText="輸入的縮放比例超過範圍 [10e-5 .. 10e+4].\n 此新值將不被計入.";
+
+DfPrintArea.FormatListComboLabel.Title="格式:";
+Portrait=" - 直印";
+Landscape=" - 橫印";
+SelectFormat="應用格式";
+

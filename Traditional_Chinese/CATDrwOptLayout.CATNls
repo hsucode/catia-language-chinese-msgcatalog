@@ -1,0 +1,74 @@
+//=====================================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwOptLayout
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    
+// DATE        :    06.01.1999
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    Tools/Option du Drafting - Onglet Layout
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//=====================================================================================
+
+Title="圖紙佈置";
+frameView.HeaderFrame.Global.Title="視圖建立";
+frameView.HeaderFrame.Global.LongHelp=
+"視圖建立
+定義要建立元素的視圖.";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewName.Title="視圖名稱";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewName.LongHelp=
+"自動建立 \" 視圖名稱 \" 文字.";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewScale.Title="縮放因子";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewScale.LongHelp=
+"自動建立 \" 縮放因子 \" 文字.";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewFrame.Title="視圖外框";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewFrame.LongHelp=
+"以視圖外框顯示 \" 視圖延伸 \".";
+frameView.IconAndOptionsFrame.OptionsFrame.checkGenPropa.Title="增加中斷和打斷的說明";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewOrient.Title="依據外形來定義輔助和切面視圖";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewOrient.LongHelp="依據外形來定義輔助和切面視圖";
+frameView.IconAndOptionsFrame.OptionsFrame.checkStrictPos.Title="依據 3D軸系檢視軸系";
+frameView.IconAndOptionsFrame.OptionsFrame.checkStrictPos.LongHelp="視圖投影平面軸系
+將由 3D 軸系投影定義.";
+
+
+frameSheet.HeaderFrame.Global.Title="新圖紙";
+frameSheet.HeaderFrame.Global.LongHelp="定義新建圖紙的參數.";        
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameRefSheet._frameRefSheetlocked._labelRefSheet.Title="原始圖紙 : ";
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameRefSheet._frameRefSheetlocked._labelRefSheet.LongHelp="定義新建圖紙使用原始圖紙的參數.";
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameRefSheet._frameRefSheetlocked.defaultSheetRBtn.Title="圖紙設成預設或第一張圖紙";
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameRefSheet._frameRefSheetlocked.defaultSheetRBtn.LongHelp="定義圖紙設成預設或第一張圖紙";
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameRefSheet._frameRefSheetlocked.firstSheetRBtn.Title="第一張圖紙";
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameRefSheet._frameRefSheetlocked.firstSheetRBtn.LongHelp="使用目前繪圖檔中的第一張圖紙.";
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameRefSheet._frameRefSheetlocked.diskSheetRBtn.Title="其它繪圖";
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameRefSheet._frameRefSheetlocked.diskSheetRBtn.LongHelp="瀏覽磁碟中的已存繪圖檔目錄來取得圖紙.";
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameCopySheet._labelCopySheet.Title="新增參數 : ";
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameCopySheet._labelCopySheet.LongHelp="定義是否將背景視圖複製至新圖紙中.";
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameCopySheet.backgroundInSheetCBtn.Title="複製背景視圖";
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameCopySheet.backgroundInSheetCBtn.LongHelp="定義是否將背景視圖複製至新圖紙中.";
+frameSheet.IconAndOptionsFrame.OptionsFrame.applyToDetailSheet.Title="應用至細部圖紙";
+frameSheet.IconAndOptionsFrame.OptionsFrame.applyToDetailSheet.LongHelp="定義是否將以上參數應用至細部圖紙.";
+
+
+frameTitleBlock.HeaderFrame.Global.Title="背景視圖";
+frameTitleBlock.HeaderFrame.Global.LongHelp="背景視圖.";
+frameTitleBlock.IconAndOptionsFrame.OptionsFrame.FrameAndTitleBlockLabel.Title="框架和文字區塊的目錄:";
+frameTitleBlock.IconAndOptionsFrame.OptionsFrame.FrameAndTitleBlockLabel.LongHelp=".";
+frameTitleBlock.IconAndOptionsFrame.OptionsFrame.FrameAndTitleBlockPath.Title="目錄";
+frameTitleBlock.IconAndOptionsFrame.OptionsFrame.FrameAndTitleBlockPath.LongHelp="框架和文字區塊形式的目錄";
+frameTitleBlock.IconAndOptionsFrame.OptionsFrame.LockBackgroundView.Title="鎖定背景視圖存取權";
+frameTitleBlock.IconAndOptionsFrame.OptionsFrame.LockBackgroundView.LongHelp="鎖定背景視圖存取權";
+
+frameCallout.HeaderFrame.Global.Title="切面 / 投影 輪廓";
+frameCallout.HeaderFrame.Global.LongHelp="為切面和投影視圖的 Callout 建立模式.";
+frameCallout.IconAndOptionsFrame.OptionsFrame.lbl.Title="使用在 V5R11 以前的繪圖:";
+frameCallout.IconAndOptionsFrame.OptionsFrame.lbl.LongHelp="以下選項使用在 V5R11 以前的繪圖";
+frameCallout.IconAndOptionsFrame.OptionsFrame.checkIndepSize.Title="大小與視圖比例不相關";
+frameCallout.IconAndOptionsFrame.OptionsFrame.checkIndepSize.LongHelp="輪廓 顯示大小與視圖比例不相關.";
+

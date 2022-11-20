@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////
+// container CGM checkup geometrique-topologique
+//**********************************************************************
+//
+//   --------------------------------------------------------------
+//        test de l'homogeinite geometrique des constituants
+//   --------------------------------------------------------------
+//
+IsDefined.Aborted =
+" 檢查分析中止, 發生未預期情形.";
+//
+EdgeCurve.undefined =
+"依附 /P2 不是邊界曲線.";
+//
+SpecCurve.EdgeCurve =
+"第 /P4 特性 /P3 不是有效曲線 (參考邊界曲線 /P2).";
+//
+GeometrySpec.Gap =
+"距離 /P5 (邊界曲線 /P2 和第 /P4 條曲線 /P3 間) > 解析度 /P6.";
+//
+GeometryComp.Gap =
+"距離 /P4 (邊界曲線 /P2 和分件曲線 /P3 間) > 解析度 /P5.";
+//
+//
+//   ----------------------------------------------------------------------
+//     on abbrege les controles geometriques si en dehors de la boite
+//   ---------------------------------------------------------------------
+//
+SPEC.OutsideMaxLimits =
+" 以 /P3 來參數化, 超過 /P2 的最大限制 [/P4, /P5 ] , 間隙為 /P6.";
+//
+//   ----------------------------------------------------------------------
+//     on abbrege les controles geometriques si en dehors de la boite
+//   ---------------------------------------------------------------------
+//
+EdgeCurve.MaxLimitsHigh =
+"CrvParam /P3 > (high_MaxLimits /P4 of RefEdgeCurve /P2  +  tol /P5). GapXYZ /P6 > tol /P7.";
+//
+EdgeCurve.MaxLimitsLow =
+"CrvParam /P3 < (low_MaxLimits /P4 of RefEdgeCurve /P2  -  tol /P5). GapXYZ /P6 > tol /P7.";
+//
+EdgeCurve.MaxLimitsComplex =
+"CrvParam outside MaxLimits of RefEdgeCurve /P2 with GapXYZ /P3 > tol /P4.";
+//
+//
+PCurve.MaxLimitsHigh =
+"CrvParam /P3 > (high_MaxLimits /P4 of PCurve /P2  +  tol /P5). GapXYZ /P6 > tol /P7.";
+//
+PCurve.MaxLimitsLow =
+"CrvParam /P3 < (low_MaxLimits /P4 of PCurve /P2  -  tol /P5). GapXYZ /P6 > tol /P7.";
+//
+PCurve.MaxLimitsComplex =
+"CrvParam outside MaxLimits of PCurve /P2 with GapXYZ /P3 > tol /P4.";
+//
+//
+PCurveReport.MaxLimitsHigh =
+"PCurve /P2 report. CrvParam /P4 > (high_MaxLimits /P5 of RefCurve /P3 + tol /P6). GapXYZ /P7 > tol /P7.";
+//
+PCurveReport.MaxLimitsLow =
+"PCurve /P2 report.CrvParam /P4 < (low_MaxLimits /P5 of RefCurve /P3 - tol /P6). GapXYZ /P7 > tol /P8.";
+//
+PCurveReport.MaxLimitsComplex =
+"PCurve /P2 report.CrvParam outside MaxLimits of RefCurve /P3 with GapXYZ /P4 > tol /P5.";
+//
+//   ----------------------------------------------------------------------
+//     on abbrege les controles geometriques si en dehors de la boite
+//   ---------------------------------------------------------------------
+//
+ModelSize.Outside =
+" 座標值 [/P3, /P4, /P5] 超過模型 /P2 大小. 可控制幾何變小.";

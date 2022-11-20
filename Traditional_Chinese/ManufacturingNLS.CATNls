@@ -1,0 +1,1928 @@
+// Pour des infos pertinentes la signification des differentes messages :
+//
+//
+//    a- Title = Nom de la commande affiché
+//              REGLES: - Commencer par un verbe à l'infinitif
+//                      - Min/maj : chaque mot doit commencer par une majuscule.
+//                  
+//    b- Help = Help affiché an bas à gauche du Frame CATIA
+//              REGLES: - Phrase normale au niveau des min/maj.
+//
+//    c- ShortHelp = Bulle affiché sur icône.
+//              REGLES: - Commencer par un verbe à l'infinitif
+//                      - Min/maj : chaque mot doit commencer par une majuscule.
+//
+//    d- LongHelp = Help affiché en selectionnant le Menu principal 'Help' + What's This ?
+//              REGLES: - Phrase normale au niveau des min/maj.
+//						- SOYEZ BAVARD !!!
+
+DesignFeature = "³]­p¯S¼x - °Ñ¼ÆµLªk­×§ï";
+MfgView = "¥[¤uÂsÄý¾¹";
+MfgDesign = "³]­p";
+MfgHole = "¤Õ";
+MfgPrismaticPocket = "¸W¬Wª¬´î­«¼Ñ";
+MfgPrismaticSlab = "¸W¬Wª¬«pªO";
+MfgAxial = "¶b¦V¯S¼x";
+MfgPrismaticSurfacing = "¸W¬Wª¬¦±­±";
+Mfg3AxisFeature = "¤T¶b¯S¼x";
+MfgProfileContouringFeature = "»Ñ«d¥~§Î¯S¼x";
+MfgPtToPtFeature = "ÂI¦ÜÂI¯S¼x";
+MfgCounterbore = "¨HÀY¤Õ";
+MfgCountersink = "³½²´¤Õ";
+MfgIntThreaded = "¤ºÁ³¯¾";
+MfgPatternDefinition = "°}¦C´X¦ó"; // VSC: For pattern definition.
+MfgMachiningPattern = "¥[¤u°}¦C";
+MfgPatternUsage = "¥[¤u°}¦C";
+MfgSpotDrill = "¤¤¤ßÆp";
+MfgCircularMill = "´`¶ê¤Á«d";
+MfgBackBore = "­I·e";
+Mfg2SidesChamfer = "ÂùÃä­Ë¨¤";
+MfgTSlot = "T ¼Ñ";
+MfgThreadMill = "»Ñ¤ú";
+MfgChamferedHole = "­Ë¨¤¤Õ";
+MfgMachiningAxisSystem = "¥[¤u¶b¨t";
+MfgAxisSystemType = "¥[¤u¶b«¬¦¡";
+Offset = "«p«×";
+Geometry = "´X¦ó";
+Tolerance = "ºë«×";
+SelectedFeature = "¯S¼x";
+Unknown = "¥¼ª¾ªº";
+None = "©|¥¼¿ï¾Ü´X¦ó¯S¼x";
+Diameter = "ª½®|";
+CBDiameter = "¨I¤Õª½®|";
+Depth = "²`«×";
+CSAngle 		= "³½²´¤Õ¨¤«×";
+CBDepth 		= "¨IÀY¤Õ²`«×";
+ThreadDepth = "Á³¯¾²`«×";
+THDepth     = "Á³¯¾²`«×";
+ThreadDiameter = "Á³¯¾ª½®|";
+THDiameter     = "Á³¯¾ª½®|";
+ThreadPitch = "Á³¯¾¸`¶Z";
+THPitch     = "Á³¯¾¸`¶Z";
+RightThreaded = "¥kÁ³¯¾";
+LeftThreaded = "¥ªÁ³¯¾";
+MfgPitchSens = "Á³¯¾¤è¦V";
+THMode       = "Á³¯¾¤è¦V";
+THSens		 = "Á³¯¾¤è¦V";
+Extension	 = "¤Õ©µ¦ù";
+Simple  = "ª½¤Õ";
+Tapered = "À@«×¤Õ";
+Counterbored = "³½²´¤Õ";
+Countersunk = "¨HÀY¤Õ";
+Counterdrilled = "¤¤¤ß¤Õ";
+Threaded = "Á³¯¾";
+MfgHoleExtension = "©µ¦ù ";
+JumpDistance = "¸õÅD¶ZÂ÷";
+MFG_AXIAL_RADIAL_LINKING = "¶b¦V-®|¦VÃìµ²";
+MfgGuidance = "¤M¶b¤è¦¡";
+MfgPatternTopMode = "§ë¼v¼Ò¦¡";
+MfgPatternOrderingMode = "¶¶§Ç¼Ò¦¡";
+MfgContouringMode = "¥~§Î¼Ò¦¡";
+CSDiameter         = "¨I¤Õª½®|";
+CSDepth = "¨I¤Õ²`«×";
+BackDepth = "«á°h²`«×";
+SlotDiameter = "¼Ñª½®|";
+CDDiameter         = "³½²´¤Õª½®|";
+CDAngle = "¨¤«×";
+CDDepth = "³½²´¤Õ²`«×";
+
+CHDiameter         = "­Ë¨¤ª½®|";
+
+OriginOffset         = "­ìÂI¹w¯d";
+
+MfgAxialFeature = "¶b¦V¯S¼x";
+MfgMachiningFeature = "¥[¤u¯S¼x";
+MfgPrismaticFeature = "¬Wª¬¯S¼x";
+
+// Smu : features base types
+MfgBase              = "¥[¤u°ò¥»¯S¼x";
+ManufacturingFeature = "¥[¤u¯S¼x";
+MachiningFeature     = "¥[¤u¯S¼x";
+PrismaticFeature     = "¤G¶b¥b¯S¼x";
+
+MfgMachinableAreaFeature = "¥i¥[¤u°Ï°ì";
+MfgMachinableGeomFeature = "¥i¥[¤u´X¦ó";
+
+MfgMachinableComputedStockFeature = "¥i¥[¤u­pºâ§÷®Æ";
+MfgMaxTurnEnvelopeMachinableFeature = "³Ì¤j±ÛÂà½d³ò";
+
+// Smu : Machinable features from GSSL Feature Recognition
+MfgMachinableBaseFeature  = "¥[¤u°ò¥»¯S¼x";
+MfgMachinableAxialFeature = "¥i¥[¤u¶b¦V¯S¼x";
+FeatureType     = "¯S¼x«¬¦¡";
+XAxis           = "­ìÂI X ¶b¤À¶q";
+YAxis           = "­ìÂI Y ¶b¤À¶q";
+ZAxis           = "­ìÂI Z ¶b¤À¶q";
+pX              = "­ìÂI X ®y¼Ð";
+pY              = "­ìÂI Y ®y¼Ð";
+pZ              = "­ìÂI Z ®y¼Ð";
+HoleType        = "¤Õ§Î¦¡";
+HoleBottomType  = "¤Õ©³³¡§Î¦¡";
+HoleBottomAngle = "¤Õ©³³¡¨¤«×";
+
+// VSC: New attributes exposed for Prismatic machining area
+MfgMinimumCornerRadius = "³Ì¤p¶ê¨¤¥b®|";
+MfgMinimumChannelWidth = "³Ì¤p³q¹D¼e«×";
+MfgMaximumChannelWidth = "³Ì¤j³q¹D¼e«×";
+MfgBottomFilletRadius  = "©³³¡¶ê¨¤¥b®|" ;
+
+// =====================================================================
+// NLS General
+// =====================================================================
+
+MfgIsActive = "±Ò°Ê ?";
+
+// =====================================================================
+// NLS for Macros
+// =====================================================================
+MfgMacroDistance= "¶ZÂ÷";
+MfgMacroPositionningAngleA="««ª½¨¤«×";
+MfgMacroPositionningAngleB="¤ô¥­¨¤«×";
+MfgMacroTgtDistance="¶ZÂ÷";
+MfgMacroCircleAngularPositionA="¨¤«×µ¥¤À";
+MfgMacroCircleAngularPositionB="¨¤«×­ìÂI";
+MfgMacroRadius="¥b®|";
+MfgMacroHorizontalSafetyDistance="¤ô¥­¦w¥þ¶ZÂ÷";
+MfgMacroVerticalSafetyDistance="««ª½¦w¥þ¶ZÂ÷";
+MfgMacroRampingAngle="±×¤Á¨¤«×";
+MfgMacroCornerValue = "°Æµ{¦¡¶ê¨¤¥b®|";
+MfgMacroCornized = "°Æµ{¦¡¶ê¨¤¤Æ";              
+MfgMacroMotionsActiveStatus = "±Ò°Ê°Æµ{¦¡ ?";       
+MfgMacroMotionsRelevant = "¥i¨Ï¥Î°Æµ{¦¡ ?";
+MfgMacroType = "°Æµ{¦¡§Î¦¡"; 
+MfgMacroMotion = "¸s²Õ";
+MfgMacroClearanceMotion = "¸s²Õ";
+MfgMacroMotions = "°Æµ{¦¡";
+MfgMacroClearanceMotions = "¤§¶¡";
+MfgMacroApproachMotions = "¶i¤M";
+MfgMacroRetractMotions = "°h¤M";
+MfgMacroBetweenFinishingPathMotions = "ªð¦^ºë¥[¤u¸ô®|";
+MfgMacroLinkingMotions = "³s±µ";
+MfgMacroReturnBetweenLevelMotions = "¶¥¼h¶¡³s±µ";
+MfgMacroReturnInOneLevelMotions = "¬Û¦P¼hªð¦^";
+
+ClearanceOptionFrame = "¶¡»Ø¿ï¶µ";
+MfgClearanceCorner = "§t¥b®|ªº¶ê¨¤¤Æ¶¡»Ø";
+MfgClearanceCorner.LongHelp = "¤¹³\¶¡»Ø¶ê¨¤¤Æ";
+
+// =====================================================================
+// Types des trajets elementaires de macro
+// =====================================================================
+
+MfgMacroElementaryNormalMotion               ="­«ª½";  
+MfgMacroElementaryBackMotion                 ="ªð¦^";
+MfgMacroElementaryCircularDirMotion          ="¤â°Ê¶ê©·";    
+MfgMacroElementaryBoxMotion                  ="²°";
+MfgMacroElementaryPSMMotion	                 ="±×¤Á²¾°Ê";
+MfgMacroElementaryHSMMotion		             ="°ª³t¥[¤u";
+MfgMacroElementaryHMRMotion                  ="²Ê¥[¤u";    
+MfgMacroElementaryHelixMotion                ="Á³±Û";
+MfgMacroElementaryRampingMotion              ="±×¶i";
+MfgMacroElementaryHorizontalMotion           ="¤ô¥­";
+MfgMacroElementaryGoToAPointMotion           ="¦Ü¤@ÂI";
+MfgMacroElementaryCircularMotion             ="¶ê©·"; 
+MfgMacroElementaryToolAxisMotion             ="¤M¶b";
+MfgMacroElementaryDeltaLnDistMotion          ="ªu½u¶ZÂ÷";
+MfgMacroElementaryAxialMotion                ="¶b¦V";
+MfgMacroPPWord                               ="PPWord";  
+MfgMacroElementaryGoToAPlaneMotion           ="¦Ü¤@¥­­±";
+// ===================================================
+// NLS for Copy Order
+// ============================================
+
+// PFE: Copy Order R7
+MfgNbOfCopy = "½Æ»s¼Æ¥Ø (N)";
+MfgDeltaX = "ªu X ¶ZÂ÷";
+MfgDeltaY = "ªu Y ¶ZÂ÷";
+MfgDeltaZ = "ªu Z ¶ZÂ÷";
+MfgKeepAssociativity  = "«O«ùÃìµ²";
+MfgTransformationType = "Âà²¾«¬¦¡";
+MfgRotationAngle = "¨¤«×";
+
+// PFE:  ajouts Copy Order R8 
+MfgDeltaAlongAxis = "ªu¤è¦V¶ZÂ÷";
+MfgTranslationType = "¥­²¾«¬¦¡";
+
+// PFE : ajouts copy order R10
+MfgPriorityType = "¶¶§Ç";
+MfgRotationType = "±ÛÂà«¬¦¡";
+MfgAxisMachAxis = "¶b";
+
+// PCB : ajouts copy order R12
+MfgMatrixType = "¯x°}«¬¦¡";
+MfgAffinityFactAlongX = "ªu X ¶b¤ñ¨Ò";
+MfgAffinityFactAlongY = "ªu Y ¶b¤ñ¨Ò";
+MfgAffinityFactAlongZ = "ªu Z ¶b¤ñ¨Ò";
+MfgScaleFact          = "¤ñ¨Ò";
+MfgMatrixFactX1       = "X1";
+MfgMatrixFactY1       = "Y1";
+MfgMatrixFactZ1       = "Z1";
+MfgMatrixFactX2       = "X2";
+MfgMatrixFactY2       = "Y2";
+MfgMatrixFactZ2       = "Z2";
+MfgMatrixFactX3       = "X3";
+MfgMatrixFactY3       = "Y3";
+MfgMatrixFactZ3       = "Z3";
+MfgMatrixAlongX       = "ªu X ¶b¥­²¾";
+MfgMatrixAlongY       = "ªu Y ¶b¥­²¾";
+MfgMatrixAlongZ       = "ªu Z ¶b¥­²¾";
+
+// =====================================================================
+// NLS for Machinist
+// =====================================================================
+
+ToolCornerRadius    = "¥b®|";
+ToolDiameter		= "ª½®|";
+ToolAngle               = "¨¤«×";
+ToolLength              = "ªø«×";
+UmaMachTol			= "ºë«×";
+UmaOverlap			= "­«ÂÐ (% ?)";
+UmaDepth			= "²`«×";
+UmaWidth			= "¼e«×";
+UmaLength			= "ªø«×";
+PartOverThickness       = "¹s¥ó¤Wªº¹w¯d";
+
+M3xAccostingSide = "³Ìªì¤M¨ã¸ô¸m";
+M3xApproachAndRetractMacroMotion = "Ãìµ²¸ô®|";
+M3xApproachAndRetractRadius = "¤U¤M©M°h¤M®|";
+M3xApproachDistance = "¤U¤M¶ZÂ÷";
+M3xApproachMacroMotion = "¤U¤M¼Ò¦¡";
+M3xApproachVectorX = "¤U¤M X ¤è¦V";
+M3xApproachVectorY = "¤U¤M Y ¤è¦V";
+M3xApproachVectorZ = "¤U¤M Z ¤è¦V";
+M3xAutomatiqueStrategy = "³Ì¨Î¤Æ¤è¦¡";
+M3xContouringMode = "´`Àô§Î¦¡";
+M3xCornerizationRadius = "¶ê¨¤¥b®|";
+M3xCtxOverThickness = "ÀË¬d­±¹w¯d";
+M3xCutStrategy = "²Ê»Ñ§Î¦¡";
+M3xCuttingMode = "¤Á«d¼Ò¦¡"; 
+M3xDeltaZ = "³Ì¤Ö¥[¤u²`«×";
+M3xDrillingSafetyDistance = "Æp¤Õ¦w¥þ¶ZÂ÷";
+M3xEngagementMode = "µ²¦X¼Ò¦¡";
+M3xFilterHVAngle = "³Ì¤p¨¤«×";
+M3xFilterHVLength = "³Ì¤pªø«×";
+M3xFilterHVMode = "HV ¹LÂo¾¹";
+M3xForceCompute = "±j¨î­«·s­pºâ";
+M3xHSMEngagementRadius = "Âà²¾¥b®|";
+M3xHardDrillToolAngle = "ÆpÀY¨¤«×";
+M3xHardDrillToolDiameter = "ÆpÀYª½®|";
+M3xHardDrillToolLength = "ÆpÀYªø«×";
+M3xHardEngagementMode = "µ²¦X¼Ò¦¡";
+M3xHardHelixDiameter = "Á³±Ûª½®| (% ?)";
+M3xHardInterpolationMode = "¤º³¡¼Ò¦¡";
+M3xHardMachiningMode = "¥[¤u¼Ò¦¡";
+M3xHardOverlap = "­«Å|¶ZÂ÷ (ª½®|¤ñ­È)";
+M3xHardStopOffset = "°±¤î¹w¯d (% ?)";
+M3xHardSweepingMode = "¤M¨ã¸ô®|§Î¦¡";
+M3xHighSpeed = "°ª³tªì«d";
+M3xLengthMin = "³Ì¤p¥[¤uªø«×";
+M3xLinkDistance = "¬ð®q¸õÅDªø«×";
+M3xLinkMode = "¬ð®q¸õÅD";
+M3xMachiningMode = "¤M¨ã¸ô®|§Î¦¡";
+M3xMachiningZone = "¥[¤u°Ï°ì";
+M3xMacroMotionRetractOptimization = "¥¼¨Ï¥Î";
+M3xMaxHorizontalSlope = "³Ì¤j¤ô¥­¶É±×";
+M3xMaxWidthToMachine = "³Ì¤j¥[¤u¼e«×";
+M3xMinFrontalSlope = "³Ì¤p«e¶É";
+M3xMinLateralSlope = "³Ì¤p°¼±×";
+M3xMinStepDistance = "³Ì¤p¨B¶i¶ZÂ÷";
+M3xMinZoneArea = "³Ì¤p¥[¤u¶ZÂ÷ (%?)";
+M3xOffsetEndPlane = "³Ì²×¥­­±¹w¯d";
+M3xOffsetLowerPlane = "©³­±¹w¯d";
+M3xOffsetSafetyPlane = "¦w¥þ­±¹w¯d";
+M3xOffsetSide = "¹w¯dÃä";
+M3xOffsetStartPlane = "°_©l¥­­±¹w¯d";
+M3xOffsetUpperPlane = "³»­±¹w¯d";
+M3xOverShoot = "·¥­­­±¹w¯d";
+M3xOverThickness = "¹s¥ó­±¹w¯d";
+M3xPartAutoLimit = "¹s¥ó¦Û°Ê­­¨î";
+M3xPlunge = "´¡¤M";
+M3xRaiseDistance = "¶b¦V¦w¥þ¶ZÂ÷";
+M3xRampAngle = "±×¶i¤M¨¤«×";
+M3xRetractDistance = "°h¤M¶ZÂ÷";
+M3xRetractMacroMotion = "°h¤M¼Ò¦¡";
+M3xRetractTpSPMode = "°h¤M¦Ü¦w¥þ­±¼Ò¦¡";
+M3xRetractVectorX = "°h¤M X ¤è¦V";
+M3xRetractVectorY = "°h¤M Y ¤è¦V";
+M3xRetractVectorZ = "°h¤M Z ¤è¦V";
+M3xReverseToolPath = "°fÂà¤M¨ã¸ô®|";
+M3xSMEngagementAngle = "µ²¦X¨¤«×";
+M3xSMSBitangencyMode = "²Ó¤M¦A¥[¤u";
+M3xSMSLayerModeValue = "³Ì¤j¤Á«d²`«×";
+M3xSMSLimitOverShoot = "·¥­­¹w¯d";
+M3xSMSReworkStrategyAngle = "¦A¥[¤u¤è¦¡¨¤«×";
+M3xSMSStopMode = "°Ñ¦Ò";
+M3xSMSStopPosition = "°±¾n¦ì¸m";
+M3xSMSSweepingStrategyMode = "±½±°¤è¦¡";
+M3xSafetyDistance = "®|¦V¦w¥þ¶ZÂ÷";
+M3xScallopHeight = "´Ý®Æ°ª«×";
+M3xSetSmartStepValue = "¨B¶i¶ZÂ÷";
+M3xStepDirection = "­«Å|Ãä";
+M3xStepDistance = "³Ì¤j¶ZÂ÷";
+M3xStepOverMode = "¥¼¨Ï¥Î";
+M3xStopMode = "°±¤î¼Ò¦¡";
+M3xStopPosition = "¦ì¸m";
+M3xSynchronize = "¦P¨B¤Æ";
+M3xToContour = "¤è¦V";
+M3xToolCoreDiameter = "¤M¨ã¥»Åéª½®|";
+M3xUpDownMode = "¶b¦V";
+M3xViewDirCheck = "¸I¼²ÀË¬d";
+M3xViewDirMode = "µø¹Ï¤è¦V";
+M3xVisuMode = "¿ï¾Ü¼Ò¦¡";
+M3xZLevelPassOverlap = "¸ô®|­«Å|";
+
+// =====================================================================
+// NLS for times
+// =====================================================================
+MfgNonMachiningTime = "µL¥[¤u®É¶¡";
+MfgWaitingTime = "µ¥«Ý®É¶¡";
+
+
+// =====================================================================
+// NLS for feeds & speeds
+// =====================================================================
+
+MFG_FEED_APP_VALUE = "¤U¤M¶iµ¹";
+MFG_FEED_APP_MODE = "§Ö³t¤U¤M¶iµ¹";
+MFG_FEED_PLUNGE_VALUE = "´¡¤M¶iµ¹";
+MFG_FEED_PLUNGE_MODE = "§Ö³t´¡¤M¶iµ¹";
+MFG_FEED_MACH_VALUE = "¥[¤u¶iµ¹";
+MFG_CHAMFER_FEED_VALUE = "­Ë¨¤¶iµ¹";
+MFG_FEED_RETRACT_VALUE = "°h¤M¶iµ¹";
+MFG_FEED_RETRACT_MODE = "§Ö³t°h¤M¶iµ¹";
+MFG_FEED_FINISH_VALUE = "ºë¥[¤u¶iµ¹";
+MfgGlobalFeedrateMagnitude = "¶iµ¹³æ¦ì";
+MFG_LATHE_MACH_FEED_VALUE = "¥[¤u¶iµ¹";
+
+MFG_SPINDLE_MACH_VALUE = "¥[¤uÂà³t";
+MFG_CHAMFER_SPINDLE_VALUE = "­Ë¨¤Âà³t";
+MFG_SPINDLE_FINISH_VALUE = "ºë¥[¤uÂà³t";
+MfgGlobalSpindleMagnitude = "Âà³t³æ¦ì";
+
+MFG_VC = "­ì¤Á«d³t«×";
+MFG_VC_NEW = "¤Á«d³t«×";
+MFG_PP = "¤Á²`";
+MFG_SZ = "¨C¥Q¶iµ¹";
+MFG_SZ_GLOBAL = "¶iµ¹";
+
+MFG_VC_FINISH = "­ìºë«d³t«×";
+MFG_VC_FINISH_NEW = "ºë«d³t«×";
+MFG_AA_FINISH = "ºë«d¶b¦V¤Á²`";
+MFG_AR_FINISH = "ºë«d®|¦V¤Á²`";
+MFG_SZ_FINISH = "¨C¥Qºë«d¶iµ¹";
+MFG_SZ_FINISH_GLOBAL = "ºë«d¶iµ¹";
+
+MFG_VC_ROUGH = "­ì²Ê«d³t«×";
+MFG_VC_ROUGH_NEW = "²Ê«d³t«×";
+MFG_AA_ROUGH = "²Ê«d¶b¦V¤Á²`";
+MFG_AR_ROUGH = "²Ê«d®|¦V¤Á²`";
+MFG_SZ_ROUGH = "¨C¥Q²Ê«d¶iµ¹";
+MFG_SZ_ROUGH_GLOBAL = "²Ê«d¶iµ¹";
+MFG_PP_ROUGH= "²Ê«d¤Á²` (¤º³¡°Ñ¼Æ)";
+
+MFG_VC_ECROUTAGE = "Descaling ³t«× (¤º³¡°Ñ¼Æ)";
+MFG_VC_ECROUTAGE_NEW = "Descaling ³t«×  (¤º³¡°Ñ¼Æ)";
+MFG_SZ_ECROUTAGE = "Descaling ¶iµ¹ (¤º³¡°Ñ¼Æ)";
+MFG_PP_ECROUTAGE = "Descaling ¤Á²` (¤º³¡°Ñ¼Æ)";
+
+// Feedrate Reduction in Corners
+MFG_FEED_REDUC_CORNERS = "Âà¨¤®É´î³t";
+MfgReductionRate = "´î¤Ö¤ñ²v";
+MfgReductionAngle = "³Ì¤p¨¤«×";
+MfgMaximumRadius = "³Ì¤j¥b®|";
+MfgDistBeforeCorner = "Âà¨¤«e¶ZÂ÷";
+MfgDistAfterCorner = "Âà¨¤«á¶ZÂ÷";
+
+MfgSlowdownRate = "´î³t¤ñ²v";
+
+MFG_MACHINE_COMP          = "¾÷¨ã¤Ç°t©Ê (¤º³¡°Ñ¼Æ)";
+MfgUndefined              = "¥¼©w¸q";
+MfgHorizontalLatheMachine = "ª×¨®";
+MfgVerticalLatheMachine   = "¥ß¨®";
+
+// =====================================================================
+// NLS for Prismatic Machining & Multi Axis Machining
+// =====================================================================
+
+MFG_AXIAL_DEPTH            = "³Ì¤j¤Á«d²`«×";
+MFG_BREAKTHROUGH        = "¬ï¶V";
+MFG_CHAMFER_VAL = "­Ë¨¤ª½®|";
+MFG_CLEAR_TIP       = "¤U¤M¶¡»Ø";
+MFG_CLEAR_TIP_2 = "¤U¤M¶¡»Ø 2";
+MFG_OUTPUT_MODE = "¥¼¨Ï¥Î";
+MFG_CYCLE_OUTPUT = "¿é¥X´`Àô»yªk";
+MFG_CYCLE_INSTRUCTION = "´`Àô NC «ü¥O";
+MFG_CYCLE_USER_SYNTAX = "´`Àô ¨Ï¥ÎªÌ»yªk";
+MFG_ROTABL_OUTPUT = "¦Û°Ê ROTABL";
+MFG_RESULT_MACHINING  = "¥[¤u¤£¦P²`«×";
+MFG_RESULT_THREAD_MACHINING = "¥[¤u¤£¦P²`«×Á³¯¾";
+MFG_DELTADEPTH_DIAMETER     = "¼W¥[ª½®|";
+MFG_DELTADEPTH_DISTANCE     = "¼W¥[ª½®|";
+MFG_DELTADEPTH_INC          = "¼W¥[¼W¶q";
+MFG_DELTADEPTH_MODE         = "¼W¥[¼Ò¦¡";
+MFG_DELTADEPTH_OFFSET       = "¼W¥[¹w¯d";
+MFG_DELTADEPTH_SHOULDER     = "¼W¥[¤MªÓ";
+MFG_DELTADEPTH_TIP          = "¼W¥[¤M¦y";
+MFG_DEPTH_DEC            = "´î¤Ö¤ñ¨Ò";
+MFG_DEPTH_DIAMETER     = "ª½®|";
+MFG_DEPTH_DISTANCE     = "¶ZÂ÷²`«×";
+MFG_DEPTH_LIM          = "´î¤Ö·¥­­";
+MFG_DEPTH_MODE         = "²`«×¼Ò¦¡";
+MFG_DEPTH_OFFSET       = "¹w¯d";
+MFG_DEPTH_SHOULDER     = "¤MªÓ²`«×";
+MFG_DEPTH_TIP          = "¤M¦y²`«×";
+MFG_DWELL_MODE         = "¼È°±¼Ò¦¡";
+MFG_DWELL_REVOL        = "±ÛÂà®É¼È°±";
+MFG_DWELL_REVOL_DOUBLE = "¥H±ÛÂà°é¼Æ­pºâ¼È°±";
+MFG_DWELL_TIME         = "¥H®É¶¡³æ¦ì¼È°±";
+MFG_HELIX_ANGLE = "Á³±Û¨¤«×";
+MFG_HELIX_MODE =  "Á³±Û¼Ò¦¡";
+MFG_HELIX_PITCH = "Á³±Û¸`¶Z";
+MFG_LIFT_ANGLE = "²¾°Ê¨¤«×";
+MFG_LIFT_DIST = "²¾°Ê¶ZÂ÷";
+MFG_LIFT_MODE = "²¾°Ê¤è¦¡";
+MFG_OFFSET_RET            = "°h¤M¹w¯d";
+MFG_PPWORDS = "«á³B²z¦r¤¸»yªk";
+MFG_PLUNGE_DIAMETER    	= "´¡¤Mª½®|";
+MFG_PLUNGE_DISTANCE    	= "´¡¤M¶ZÂ÷";
+MFG_PLUNGE_MODE       	= "´¡¤M¼Ò¦¡";
+MFG_PLUNGE_OFFST      	= "´¡¤M¹w¯d";
+MFG_PLUNGE_SHOULDER     = "´¡¤M¤MªÓ";
+MFG_PLUNGE_TIP              = "´¡¤M¤M¦y";
+MFG_PLUNGE_FOR_CHAMFERING	= "¬°­Ë¨¤´¡¤M";
+MFG_RETRACT_CLEAR_TIP   = "°h¤M";
+MFG_SPOTDEPTH_DIAM          = "ÂI¤Õª½®|";
+MFG_SPOTDEPTH_DISTANCE      = "ÂI¤Õ¶ZÂ÷";
+MFG_SPOTDEPTH_MODE          = "ÂI¤Õ¼Ò¦¡";
+MFG_SPOTDEPTH_OFFST         = "ÂI¤Õ¹w¯d";
+MFG_SPOTDEPTH_SHOULDER      = "ÂI¤Õ¤MªÓ";
+MFG_SPOTDEPTH_TIP           = "ÂI¤Õ¤M¦y";
+MFG_TL_COMP = "²Ä¤@¸ÉÀv";
+MFG_TL_COMP.LongHelp = "«ü©w¦b¥[¤uªk¤¤ªº¤M¨ã¸ÉÀv¸¹½X.";
+MFG_TL_COMP_2 = "²Ä¤G¸ÉÀv";
+MFG_TL_COMP_2.LongHelp = "«ü©w¦b¥[¤uªk¤¤ªº¤M¨ã¸ÉÀv¸¹½X.";
+MFG_XOFF = "ªu X ¶b¥­²¾";
+MFG_YOFF = "ªu Y ¶b¥­²¾";
+MFG_ZOFF = "ªu Z ¶b¥­²¾";
+Mfg5AxisAngleManagement		= "¤M¶b¾É¤Þ";
+Mfg5AxisCollisionAngle		= "¤¹³\¶É±×";
+Mfg5AxisCollisionBinor		= "¤¹³\¶É±×";
+Mfg5AxisEMToolAxisStrategy	= "¤M¶b¼Ò¦¡";       
+Mfg5AxisHelixAxisStrategy   	= "¤M¶b¼Ò¦¡";    
+Mfg5AxisMachDirMode		= "­«Å|";
+Mfg5AxisRadialStrategy		= "®|¦V¤è¦¡";
+Mfg5XHelixRadialStrategy	= "®|¦V¤è¦¡";
+MfgApproachDistance 		= "¤U¤M¶ZÂ÷";
+MfgApproachMode = "¤U¤M¼Ò¦¡";  
+MfgAutoContinuing			= "¤º³¡°Ñ¼Æ";
+MfgAutoDraftAngle  = "¦Û°Ê²æ¼Ò¨¤«×";
+MfgAvoidScallopOnBottom = "Á×§K©³³¡´Ý®Æ";  
+MfgAvoidScallop = "©Ò¦³¼hÁ×§K´Ý®Æ";  
+MfgAxialStrategy = "¶b¦V¤è¦¡";
+MfgBiNormangl			= "¶É±×¨¤«×";
+MfgBottomFinishPathThickness = "©³³¡ºë»Ñ«p«×";
+MfgNbSideFinishByLevel = "¨C¼hªº°¼Ãäºë»Ñ¸ô®|¼Æ¥Ø";
+MfgCheckMode1 			= "·¥­­ 1";
+MfgCheckMode2 			= "·¥­­ 2";
+MfgCircularMillingMode = "¥[¤u¼Ò¦¡";
+MfgClearanceDistance = "¹w¯d¶ZÂ÷";
+MfgCollisionCheckingCheck	= "ÀË¬d­±¸I¼²°»´ú";
+MfgCollisionCheckingDrive	= "ÅX°Ê­±¸I¼²°»´ú";
+MfgCollisionCheckingEnd		= "²Ä¤G·¥­­¸I¼²°»´ú";
+MfgCollisionCheckingMode	= "¸I¼²°»´ú¼Ò¦¡";
+MfgCollisionCheckingPart	= "¹s¥ó¤W¸I¼²°»´ú";
+MfgCollisionCheckingStart	= "²Ä¤@·¥­­¸I¼²°»´ú";
+MfgCollisionDrive			= "ÅX°Ê­±¸I¼²";
+MfgCollisionPart			= "¹s¥ó­±¸I¼²";
+MfgCollisionThkCheck		= "ÀË¬d­±¤¹³\¹L¤Á";
+MfgCollisionThkDrive		= "ÅX°Ê­±¤¹³\¹L¤Á";
+MfgCollisionThkEnd		= "§¹¦¨­±¤¹³\¹L¤Á";
+MfgCollisionThkPart		= "¹s¥ó­±¤¹³\¹L¤Á";
+MfgCollisionThkStart		= "°_©l­±¤¹³\¹L¤Á";
+MfgCollisionTolCheck		= "ÀË¬d­±ºë«×";
+MfgCollisionTolDrive		= "ÅX°Ê­±ºë«×";
+MfgCollisionTolEnd		= "§¹¦¨­±ºë«×";
+MfgCollisionTolPart		= "¹s¥ó­±ºë«×";
+MfgCollisionTolStart		= "°_©l­±ºë«×";
+MfgCondDrive = "ÅX°Ê­±¤W¦ì¸m";
+MfgCondLim1 			= "¶}©l";
+MfgCondLim2 			= "°±¤î";
+MfgContactHeight 			= "±µÄ²°ª«×";
+MfgContourType = "¥~§Î§Î¦¡";
+MfgContouringClosedContour = "¥~§Î¼Ò¦¡";
+MfgContouringDrivingMode = "¥~§Î¾É¤Þ¼Ò¦¡";
+MfgContouringModeForGC = "¥~§Î«¬¦¡";    
+MfgCorneringApproachDist 	= "®°§Î¶i¤M¶ZÂ÷";
+MfgCorneringFlag 			= "°jÂà¤M¨ã¸ô®|";
+MfgCorneringLeaveDist 		= "®°§Î°h¤M¶ZÂ÷";
+MfgCorneringRadius 		= "°jÂà¥b®|";
+MfgCurveAxisStrategy = "¾É¤Þ";
+MfgCurveMachiningSU = "¦±½u¤Á«d";
+MfgCutcom = "¦Û­q";
+MfgDirectionOfCut = "¤Á«d¤è¦V";
+MfgDistanceBetweenPaths = "¸ô®|¶¡¶ZÂ÷";
+MfgEndOfPath = "µ²§ô¸ô®|";
+MfgEndPathINOUT = "µ²§ô¸ô®|";
+MfgEndPathOverhangRatio = "¬ð¥X¤ñ¨Ò"; 
+MfgFacingFinish = "ºë»Ñ¼Ò¦¡";
+MfgFC5XDrivingMode = "»Ñ«dÃä";
+MfgFixtureAccuracy = "§¨¨ãºë½T«×";  
+MfgForcedContour			= "±j¨î¥~§Î";
+MfgGlobalCheckOffset = "ÀË¬d­±¹w¯d";
+MfgGlobalDriveThickness 	= "¥~§Î­±¹w¯d";
+MfgGlobalOffsetOnBottom = "©³³¡¹w¯d";
+MfgGlobalOffsetOnBoundary = "µwÃä¬É¹w¯d";
+MfgGlobalOffsetOnContour = "¥~§Î­±¹w¯d";
+MfgGlobalOffsetOnSoftBoundary = "³nÃä¬É¹w¯d";
+MfgGlobalOffsetOnTop = "¤W³¡¹w¯d";
+MfgGlobalPartOffset = "¹s¥ó­±¹w¯d";
+MfgGlobalPartThickness = "¹s¥ó­±¹w¯d«p«×";
+MfgGlobalSpindleOutput = "¿é¥XÂà³t"; 
+MfgHSMCorner = "°ª³t»Ñ«d°jÂà¥b®|";                  
+MfgHSMCornerFinish = "°¼Ãäºë­×°jÂà¥b®|";                 
+MfgHSMCornerRadius  = "°jÂà¥b®|";                
+MfgHSMCornerRadiusFinish  = "°¼Ãäºë­×°jÂà¥b®|";             
+MfgHSMExtraSegmentOverlap = "¦h¾l½u¬q­«Å|";                 
+MfgHSMExtraSegmentOverlapFinish = "¦b°¼Ãäºë­×ªº¦h¾l½u¬q­«Å|";
+MfgHSMLimitAngleFinish = "¦b°¼Ãäºë­×ªº­­¨î¨¤«×";                 
+MfgHSMMiniTransitionLength = "¶¶±µªø«×";                 
+MfgHSMRecoveryCoefficient = "¤¤¤ß¸ô®|­«Å|";                 
+MfgHSMTransitionAngle = "¶¶±µ¨¤«×";                 
+MfgHSMTransitionRadius = "¶¶±µ¥b®|"; 
+MfgHardnessOnBottom = "©³³¡";
+MfgHardnessOnTop = "¤W³¡";
+MfgImposedInnerPoint = "¤º³¡ÂI";
+MfgLeaveDistance = "°h¤M¶ZÂ÷";
+MfgMachiningDirIndic		= "­«Å|";
+MfgMachiningMode = "¤M¨ã¸ô®|§Î¦¡";
+MfgMachiningModeforFacing = "­±»Ñ¤M¤M¨ã¸ô®|§Î¦¡";                 
+MfgMachiningModeforPocket = "¼Ñ»Ñ¤M¤M¨ã¸ô®|§Î¦¡";
+MfgMachiningTolerance = "¥[¤uºë«×";
+MfgManualTMDir			= "¤â°Ê¤è¦V";
+MfgMaxBiNormangl			= "³Ì¤j¶É±×¨¤«×";
+MfgMaxDepth = "³Ì¤j²`«×";                 
+MfgMaxDepthOfCut = "³Ì¤j¤Á«d²`«×";
+MfgMaxDiscretizationAngle	= "³Ì¤j¤£³sÄò¨¤«×";
+MfgMaxDiscretizationStep	= "³Ì¤j¤£³sÄò­«Å|";
+MfgMaxDistance = "¸ô®|¶¡³Ì¤j¶ZÂ÷";                 
+MfgMaxDistSteps			= "³Ì¤j¤£³sÄò­«Å|";
+MfgMaxNormangl			= "³Ì¤j¾É¤Þ¨¤«×";
+MfgMinBiNormangl			= "³Ì¤p¶É±×¨¤«×";
+MfgMinDepth = "³Ì¤p²`«×";                 
+MfgMinNormangl			= "³Ì¤p¾É¤Þ¨¤«×";
+MfgMinPathLenght			= "³Ì¤p¸ô®|ªø«×";
+MfgMixteHelical  = "¦V¤º©Î¦V¥~Á³±Û²V¦X";                
+MfgNormangl				= "¾É¤Þ¨¤«×";
+MfgNumberOfLevels = "¼h¼Æ";
+MfgNumberOfPathes = "¸ô®|¼Æ";
+MfgNumberOfPathesAlongZ = "ªu Z ¶b¸ô®|¼Æ";       
+MfgNumberOfPathesOnSide = "ªu°¼Ãä¸ô®|¼Æ"; 
+MfgNumberOfRadialPaths = "¸ô®|¼Æ";
+MfgOffsetAlongToolAxis 		= "©³³¡ªu¤M¶b¹w¯d";
+MfgOffsetAxial1 = "¶b¹w¯d 1";
+MfgOffsetAxial2 = "¶b¹w¯d 2";
+MfgOffsetOnRelim1 = "·¥­­¹w¯d 1";
+MfgOffsetOnRelim2 = "·¥­­¹w¯d 2";
+MfgOffsetRelim1 			= "·¥­­¹w¯d 1";
+MfgOffsetRelim2 			= "·¥­­¹w¯d 2";
+MfgOutputStyle = "¸ÉÀv¿é¥X";
+MfgOverhang = "­«Å|¦Ê¤À¤ñ";
+MfgPtToPtOffset = "¹w¯d";
+MfgRadialStrategyforPocket = "®|¦V¤è¦¡";
+MfgRampingAngle = "¤U¤M¨¤«×";
+MfgReturnMode = "ªð¦^¼Ò¦¡";                 
+MfgReUseFirstDrive		= "­«ÂÐ¨Ï¥Î²Ä¤@ÅX°Ê";
+MfgScallopHeight = "´Ý®Æ°ª«×";                 
+MfgScallopPassRate = "´Ý®Æ¸g¹L¤ñ¨Ò";
+MfgSequencingMode  = "¶¶§Ç¼Ò¦¡";
+MfgSideAppClearance      = "¤M¨ã°¼Ãä¤U¤M¶¡»Ø";
+MfgSideApproachClearance = "¤M¨ã°¼Ãä¤U¤M¶¡»Ø";
+MfgSideFinish = "°¼Ãäºë»Ñ¸g¹L¼Ò¦¡";
+MfgBottomThicknessOnSideFinish = "°¼Ãäºë»Ñ©³³¡«p«×";      
+MfgSideFinishBottomThickness = "©³³¡°¼Ãäºë»Ñ«p«×";                 
+MfgSideOffsetIncrement = "°¼Ãäºë»Ñ¼W¶q";                  
+MfgSideThickness = "°¼Ãäºë»Ñ«p«×";
+MfgSpringPath = "Á³±Û¸ô®|";
+MfgStartHardness			= "¶}©lµw«×";
+MfgStartOnRelim1 = "¦b·¥­­ 1 ¶}©l";
+MfgStopHardness			= "µ²§ôµw«×";
+MfgThruElem				= "¦Ü©Î±q";
+MfgTipApproachClearance = "¤M¦y¤U¤M¶¡»Ø";
+MfgToolAxis                 = "¤M¶b";
+MfgToolAxis_Mode            = "¤M¶b¤è¦¡";
+MfgToolAxis_VectorX         = "¤M¶b¦V¶q X";
+MfgToolAxis_VectorY         = "¤M¶b¦V¶q Y";
+MfgToolAxis_VectorZ         = "¤M¶b¦V¶q Z";
+MfgToolAxisStrategy         = "¤M¶b¤è¦¡";
+MfgZOffsetIncrement = "Z ¹w¯d¼W¶q";
+
+
+// *** FTS : Debut attributs R9
+//-----------------------------
+
+// Global flank
+
+Mfg5AxisUserDefinedCuttingHeightFlag 	= "¥H¤M¨ã°Ñ¼Æ±±¨î®°§Î";
+Mfg5AxisUserDefinedCuttingHeight 	= "¥i¥Î¥Qªø";
+Mfg5AxisDeActivateFanning 		= "°±¤î®°§Î°Ê§@";
+
+// Sequential flank
+
+MfgLocalToolAxisStrategy       		= "¾É¤Þ";
+Mfg5Axis4XNormalConstraintFlag 		= "±Ò°Ê 4 ¶b";
+MfgLocalDriveThicknessToAdd    		= "©óÅX°Ê¤W¼W¥[¹w¯d";
+
+// *** FTS : Fin attributs R9
+//-----------------------------
+
+// *** FTS : Debut attributs R10
+//------------------------------
+
+// 5X curve and flank
+
+MfgBottomFinishPathStyle			= "©³³¡ºë»Ñ¸ô®|§Î¦¡";
+
+// 5X flank
+
+Mfg5AxisOutputType					= "¿é¥X§Î¦¡";
+
+// 5X curve
+
+MfgCurveTgtAxisStrategySubModes				= "¼Ò¦¡";
+
+// Fac iso
+
+MfgIsoparExtensionDistBeforeFirstPath			= "¶}©l©µ¦ù";
+MfgIsoparExtensionDistAfterLastPath			= "µ²§ô©µ¦ù";
+
+// Sequential flank
+
+Mfg5AxisLocalStoppingCondition			= "°±¤îª¬ªp";
+Mfg5AxisLocalReStartingDirection		= "­«·s¶}©l¤è¦V";
+Mfg5AxisLocalSwapSideOnDS			= "ÅX°Êªº¤M¨ã°¼";
+
+// *** FTS : Fin attributs R10
+//------------------------------
+
+// =====================================================================
+// Modifs Post R8 and R9(jmn)
+// =====================================================================
+
+MfgPocketingStyle = "´î­«¼Ñ§Î¦¡ ";
+MfgAllwaysStayOnBottom = "¤@ª½°±¯d¦b©³³¡";
+MfgPercentageReduction= "ºIÂ_Âà´«¶¡¸ô®|";
+MfgReworkMode = "¹LÂo­«¥[¤u°Ï°ì§Î¦¡";
+MfgReworkOverhang = "¶W¥X¥[­«¥[¤u°Ï°ì";
+MfgToolOn = "¤M¨ã¦ì¸m¦b¾É¤Þ¤W";
+MfgDriveBox = "³òÂ¶°Ï°ì";
+
+MfgBreakthrough = "¬ï¹L";
+MfgPocketingFinish = "´î­«¼Ñºë¥[¤u¼Ò¦¡";
+MfgHSMLimitAngle = "­­¨î¨¤«×";
+
+MfgCompensationMode = "¸ÉÀvÀ³¥Î¼Ò¦¡";
+MfgSequencing = "¶¶§Ç";
+
+Mfg5AxisTangentAxisAngle = "¤¹³\«e¾É";
+Mfg5AxisFanningDistance = "®°§Î°Ê§@¶ZÂ÷";
+
+MfgManualStartDir = "¤â°Ê¤è¦V";
+Mfg5AxisMultiLevelMode = "¼Ò¦¡";
+MfgCorneringFinishRadius = "¶ê¨¤¥b®|";
+
+MfgMinPathLength = "³Ì¤p¸ô®|ªø«×";
+Mfg5AxisMinHealDistance = "³Ì¤p®Ú³¡¶ZÂ÷";
+Mfg5AxisSkipPath = "¸õ¹L¸ô®|";
+Mfg5AxisIsoparAxisStrategy = "¾É¤Þ";
+
+MfgLatheRoughingStrategy = "²Ê¥[¤u¼Ò¦¡";
+MfgLatheMdLocation = "¦ì¸m";
+MfgLatheContouringMode = "¹s¥ó¥~§Î¥[¤u";
+MfgLatheLeadInMode = "¾É¤J";
+// New V5R14-1
+MfgLatheLiftOffMode = "°h¤M";
+MfgLatheProfileOutputMode = "Â_­±¿é¥X";
+MfgLatheToolHolderConstraintMode = "¤M§â­­¨î";
+// End New V5R14-1
+MfgLatheMinMachRadius = "³Ì¤p¥[¤u¥b®|";
+MfgLatheMaxMachRadius = "³Ì¤j¥[¤u¥b®|";
+MfgLatheJawPosition = "³n¤öªº¶b¦V­­¨î";
+MfgLatheChipPlungeDistance = "¤Á®h´¡¤J¶ZÂ÷";
+MfgLatheChipRetractDistance = "¤Á®h°h¥X¶ZÂ÷";
+MfgLatheChipClearDistance = "¤Á®h²M°£¶ZÂ÷";
+MfgLatheGougingSafetyAngle = "¤M¶Ë¦w¥þ¨¤«×";
+MfgLatheRecessingStrategy = "°h¥X¼Ò¦¡";
+MfgLatheRecessAutoOutput = "¦Û°Ê¿é¥X";
+MfgLatheMdOrientation = "¤è¦V";
+MfgLatheMachDirection = "¥[¤u¤è¦V";
+MfgLatheContouringCornerMode = "¥[¤u¥~³¡¶ê¨¤";
+MfgLatheCutcomStrategy = "¸ÉÀv";
+MfgLatheLeadInType = "«e¸m";
+MfgLatheLiftOffType = "°h¥X";
+MfgLatheFirstCornerProcessing = "¶i¤J¶ê¨¤";
+MfgLatheLastCornerProcessing = "°h¥X¶ê¨¤";
+MfgLatheCornerProcessing = "¨ä¥¦¶ê¨¤";
+MfgLatheInvertStrategy = "°fÂà¤è¦¡";
+MfgLatheInvertLiftOffType = "°fÂà°h¥X";
+MfgLatheFirstFlankLeadInType = "²Ä¤@¤Á¤J";
+MfgLatheLastFlankLeadInType = "³Ì«á¤Á¤J";
+MfgLatheOtherFlankLeadInType = "¨ä¥¦¤Á¤J";
+MfgLatheThreadProfile = "¥~³¡";
+MfgLatheThreadOrientation = "¤è¦V";
+MfgLatheThreadUnit = "Á³¯¾³æ¦ì";
+MfgLatheThreadPerInchNumber = "¨C³æ¦ìÁ³¯¾";
+MfgLatheThreadNumber = "Á³¯¾¼Æ";
+MfgLatheThreadMachining = "Á³¯¾§Î¦¡";
+MfgLatheConstantsectionPassNumber = "¸ô®|¼Æ¥Ø";
+MfgLatheMaxConstantDepthOfCut = "¤Á²`";
+MfgLatheThreadPenetration = "Á³¯¾¬ï³z";
+MfgLathePenetrationAngle = "¬ï³z¨¤«×";
+MfgLatheFirstPassNumber = "°_©l¸ô®|¼Æ¥Ø";
+MfgLatheFirstSectionRate = "°_©l¸ô®|¤Á­±¤ñ²v";
+MfgLatheLastPassNumber = "³Ì«á¸ô®|¼Æ¥Ø";
+MfgLatheLastPassDepthOfCut = "³Ì«á¸ô®|¤Á²`";
+MfgLatheSpringPassNumber = "Á³±Û¸ô®|¼Æ¥Ø";
+MfgLatheMacroMode="°Æµ{¦¡¼Ò¦¡";
+
+// *** LAS : Debut R9
+// Les Attributs des Seq. Motions Lathe
+//-------------------------------------
+MfgLatheSeqMotionGeomFeature = "¶¶§Ç¨®§É¥[¤u´X¦ó¯S¼x";
+MfgLatheSeqMotionGeomFeature.LongHelp = "¶¶§Ç¨®§É¥[¤u´X¦ó¯S¼x";
+
+// Start Up de motion
+//--------------------
+MfgSeqMotionLatheGoStd       = "¼Ð·Ç";
+MfgSeqMotionLatheGoGo        = "¼Ð·Ç";
+MfgSeqMotionLatheIndirv      = "¤è¦V";
+MfgSeqMotionLatheDelta       = "¼W¶q";
+MfgSeqMotionLatheFollow      = "ªuµÛ";
+MfgSeqMotionPPWord           = "PP ¦r¤¸";
+
+// Types du motion
+//--------------------
+MfgLatheEOType           = "¹B°Ê§Î¦¡";
+MfgLatheEOType.LongHelp  = "©w¸q¤M¨ã¹B°Ê§Î¦¡";
+MfgLatheGoStd            = "¼Ð·Ç";
+MfgLatheGoStd.LongHelp   = "¥H¼Ð·Ç¹B°Ê¦Ü¤¸¯À.";
+MfgLatheGoGo             = "¼Ð·Ç";
+MfgLatheGoGo.LongHelp    = "¥H¬Û¹ï¨â¤¸¯Àªº¼Ð·Ç¹B°Ê.";
+MfgLatheIndirv           = "¤è¦V";
+MfgLatheIndirv.LongHelp  = "ªu¤è¦V¦V¶q¹B°Ê.";
+MfgLatheGoDelta          = "¼W¶q";
+MfgLatheGoDelta.LongHelp = "¥H¼W¶q©w¸q¥­²¾.";
+MfgLatheFollow           = "ªuµÛ";
+MfgLatheFollow.LongHelp  = "ªuµÛÅX°Ê¤¸¯À¹B°Ê.";
+MfgLathePP               = "PP «ü¥O";
+MfgLathePP.LongHelp      = "PP «ü¥O.";
+// Speed Range
+//--------------------
+MfgLatheEOSpeedRangeNum = "Âà³t½d³ò¸¹½X";
+MfgLatheEOSpeedRangeNum.LongHelp     = 
+"©w¸qÂà³t½d³ò¸¹½X.";
+// Direction sur la drive
+//--------------------
+MfgLatheEODriveDir = "ÅX°Ê¤è¦V";
+MfgLatheEODriveDir.LongHelp     = 
+"©w¸qÅX°Ê¤è¦V";
+// xxxx
+//--------------------
+MfgLatheEOGuidingPoint = "¾É¤ÞÂI";
+MfgLatheEOGuidingPoint.LongHelp     = 
+"©w¸q¾É¤ÞÂI";
+// xxxx
+//--------------------
+MfgLatheEOFirstCheckMode = "²Ä¤@ÀË¬d¼Ò¦¡";
+MfgLatheEOFirstCheckMode.LongHelp     = 
+"©w¸q²Ä¤@ÀË¬d¼Ò¦¡";
+// xxxx
+//--------------------
+MfgLatheEOSecondCheckMode = "²Ä¤GÀË¬d¼Ò¦¡";
+MfgLatheEOSecondCheckMode.LongHelp     = 
+"©w¸q²Ä¤GÀË¬d¼Ò¦¡";
+// Go Delta definition
+//--------------------
+MfgLatheEODeltaCheckMode          = "¼W¶qÀË¬d¼Ò¦¡";
+MfgLatheEODeltaCheckMode.LongHelp = "©w¸q¼W¶q¤M¨ã¹B°Ê¼Ò¦¡";
+MfgLatheEOValueDistance           = "¶ZÂ÷";
+MfgLatheEOValueDistance.LongHelp  = "©w¸q¤M¨ã¹B°Ê¶ZÂ÷";
+MfgLatheEODeltaAxial              = "¼W¶q¶b (Z)";
+MfgLatheEODeltaAxial.LongHelp     = "©w¸q¤M¨ã¹B°Êªº¼W¶q¶b¦V¤À¶q.";
+MfgLatheEODeltaRadial             = "¼W¶q®|¦V (X)";
+MfgLatheEODeltaRadial.LongHelp    = "©w¸q¤M¨ã¹B°Êªº¼W¶q®|¦V¤À¶q.";
+// Drive Element
+//--------------------
+MfgLatheEODriveElemType          = "ÅX°Ê¤¸¯À§Î¦¡";
+MfgLatheEODriveElemType.LongHelp = "©w¸qÅX°Ê¤¸¯À§Î¦¡";
+// Check And Drive limit
+//--------------------
+MfgLatheEOLimitCheck          = "²Ä¤@ÀË¬d­­¨î";
+MfgLatheEOLimitCheck.LongHelp = "²Ä¤@ÀË¬d¤¸¯Àªº©µ¦ù±±¨î.";
+MfgLatheExtended              = "©µ¦ù";
+MfgLatheExtended.LongHelp     = "ÀË¬d¤¸¯Àªº²×ÂI¤w©µ¦ù.";
+MfgLatheActual                = "¹ê»Ú";
+MfgLatheActual.LongHelp       = "ÀË¬d¤¸¯Àªº²×ÂI¥¼©µ¦ù.";
+MfgLatheEOLimitDrive          = "²Ä¤GÀË¬d­­¨î";
+MfgLatheEOLimitDrive.LongHelp = "²Ä¤GÀË¬d¤¸¯Àªº©µ¦ù±±¨î.";
+// Collision on check
+//--------------------
+MfgLatheEOCollCheck          = "ÀË¬d¤¸¯Àªº¤z¯AÁ×§K";
+MfgLatheEOCollCheck.LongHelp = "³]©wÀË¬d¤¸¯Àªº¤z¯AÁ×§K";
+// Collision on drive
+//--------------------
+MfgLatheEOCollDrive          = "ÅX°Ê¤¸¯Àªº¤z¯AÁ×§K";
+MfgLatheEOCollDrive.LongHelp = "³]©wÅX°Ê¤¸¯Àªº¤z¯AÁ×§K";
+// xxxx
+//--------------------
+MfgLatheEOFollowChangeDrive = "§ó§ïÅX°Ê";
+MfgLatheEOFollowChangeDrive.LongHelp     = 
+"©w¸q¦pªGÀË¬d¤¸¯ÀÅÜ¬°ÅX°Ê¤¸¯À©Î¤´«O¯d¬°ÅX°Ê¤¸¯À.";
+// xxxx
+//--------------------
+MfgLatheEOFeedrateMode          = "¶iµ¹¼Ò¦¡";
+MfgLatheEOFeedrateMode.LongHelp = "¦bÁ`Åé¶iµ¹¿ï¾Üªº¶iµ¹¼Ò¦¡.";
+MFG_LOCALFEED                   = "¥Ø«e¶iµ¹";
+MFG_LOCALFEED.LongHelp          = "©w¸q¦b¥Ø«e¨Ï¥Îªº¶iµ¹.";
+MFG_SPINDLE_MACH		        = "¥Ø«e¥D¶bÂà³t";
+MFG_SPINDLE_MACH.LongHelp       = "©w¸q¥Ø«e¥D¶bÂà³t";
+MFG_LOCALFEED_VALUE             = "¥Ø«e¶iµ¹";
+MFG_LOCALFEED_VALUE.LongHelp    = "©w¸q¦b¥Ø«e¨Ï¥Îªº¶iµ¹.";
+// Sequential Feed and Speed
+//--------------------
+MfgLatheEOLocalSpindleMode                = "¥Ø«e¥D¶b¼Ò¦¡";
+MfgLatheEOLocalSpindleMode.LongHelp       = "©w¸q¥Ø«e¥D¶b¼Ò¦¡";
+Mfg_LatheGlobalSpindleMagnitude           = "¥D¶b³æ¦ì";
+Mfg_LatheGlobalSpindleMagnitude.LongHelp  = "©w¸q¥D¶b³æ¦ì";
+Mfg_LatheGlobalFeedrateMagnitude          = "¶iµ¹³æ¦ì";
+Mfg_LatheGlobalFeedrateMagnitude.LongHelp = "©w¸q¶iµ¹³æ¦ì";
+// xxxx
+//--------------------
+MfgLatheEOLeftClearAngle = "¥ª°¼¦w¥þ¨¤«×";
+MfgLatheEOLeftClearAngle.LongHelp     = 
+"©w¸q¬Û¹ï¥[¤u¤è¦V¥[¦b¤M¤ù¥ª°¼ªº¦w¥þ¨¤«×.";
+MfgLatheEORightClearAngle = "¥k°¼¦w¥þ¨¤«×";
+MfgLatheEORightClearAngle.LongHelp     = 
+"©w¸q¬Û¹ï¥[¤u¤è¦V¥[¦b¤M¤ù¥k°¼ªº¦w¥þ¨¤«×.";
+MfgLatheEOValueAngle = "¨¤«×";
+MfgLatheEOValueAngle.LongHelp     = 
+"©w¸q¤M¤ù¼W¥[ªº¨¤«×­È.";
+// xxxx
+//--------------------
+MfgLatheEOGlobalCheckThickness          = "ÀË¬d¤Wªº¹w¯d";
+MfgLatheEOAxialCheckOffset              = "¶b¦VÀË¬d¤Wªº¹w¯d";
+MfgLatheEORadialCheckOffset             = "®|¦VÀË¬d¤Wªº¹w¯d";
+MfgLatheEOGlobalDriveThickness          = "²Ä¤GÀË¬d¤Wªº¹w¯d";
+MfgLatheEOAxialDriveOffset              = "¶b¦V²Ä¤GÀË¬d¤Wªº¹w¯d";
+MfgLatheEORadialDriveOffset             = "®|¦V²Ä¤GÀË¬d¤Wªº¹w¯d";
+// *** LAS : FIN R9
+
+// *** JMN : DEBUT RI0335403B
+
+MfgLatheOutputPointChanged = "§ó§ï¿é¥XÂI";
+MfgLatheThreadFirstPasses = "²Ä¤@¸ô®|";
+MfgLatheThreadLastPasses = "³Ì«á¸ô®|";
+MfgLatheThreadSringPasses = "Á³±Û¸ô®|";
+MfgLatheRecessMachining = "°h¤M¥[¤u";
+MfgLatheMinMachMode = "³Ì¤p¥[¤u¥b®|";
+MfgLatheMaxMachMode = "³Ì¤j¥[¤u¥b®|";
+MfgLatheJawsMode = "³n¤öªº¶b¦V­­¨î";
+MfgLatheUnderSpindleAxis = "¦b¥D¶b¥[¤u¤U";
+MfgLatheFirstPlungePos = "²Ä¤@­Ó´¡¤M¦ì¸m";
+MfgLatheNextPlungePos = "¤U¤@­Ó´¡¤M¦ì¸m";
+MfgLatheGroovingContouringMode = "¥[¤u¹s¥ó¥~§Î";
+MfgLatheGrooveByLevel = "¥H¼h¯Å¨®ÁV";
+MfgLatheChipBreak = "¤ÁÂ_¤Á®h";
+MfgLatheInvertClearance = "°fÂà¸Î«×";
+MfgLatheInvertOverlap = "°fÂà­«Å|";
+MfgLatheInvertThickness = "°fÂà«p«×";
+MfgLatheInvertOption = "¥ý¥[¤u°fÂà¤¸¯À";
+MfgLatheToolCompensation = "¤M¨ã¸ÉÀv";
+CompNumber = "¸ÉÀv¸¹½X";
+
+// *** JMN : FIN RI0335403B
+
+// *** JMN / LHX pour R9 start
+
+MfgProgressThrough = "¥¼¨Ï¥Îªº";
+MfgToolDiameterRatioChoice = "¥¼¨Ï¥Îªº";
+MfgInvertProgressionDirection = "¥¼¨Ï¥Îªº";
+MfgForceLimits = "¥¼¨Ï¥Îªº";
+MfgContouringContourCharacteristic = "¥¼¨Ï¥Îªº";
+MfgClosedContouringMatterSide = "¥¼¨Ï¥Îªº";
+MfgOpenContouringMatterSide = "¥¼¨Ï¥Îªº";
+MfgContactMode = "¥¼¨Ï¥Îªº";
+
+// *** JMN / LHX pour R9  end
+
+// *** VCS : Debut R9
+// Attributs Sequential Motions PtToPt dans code generique
+//--------------------------------------------------------
+// Start Up de motion
+//--------------------
+MfgPtToPtSiteSU          = "¹B°Ê";
+// *** VCS : Fin R9
+MfgPtToPtSite            = "©w¦ì°Ê§@";
+MfgPtToPtDeltaSite       = "¼W¶q°Ê§@";
+
+M3xLimitLineSide = "­n¥[¤uªºÃä";
+M3xOvershootTolerance = "­«¥[¤u¼Ð·Ç";
+M3xPocketProgressionMode = "Á³±Û²¾°Ê";
+M3xRatioOrLengthMode = "¸ô®|­«Å|¼Ò¦¡";
+M3xHardOverlapLength = "¸ô®|­«Å| (ªø«×)";
+M3xPSMLength = "ªø«×";
+M3xPSMSafetyDistance      = "¦w¥þ¶ZÂ÷";
+M3xPSMAngle       = "¶É±×";
+M3xMacroApproachBackTypeCoordinateMode		= "©w¸q";
+M3xMacroApproachBackTypeLength			= "ªø«×";
+M3xMacroApproachBackTypeHeight			= "°ª«×";
+M3xMacroApproachBackTypeAngle				= "±×¶i¨¤«×";
+M3xMacroApproachBackTypeRadius			= "¥b®|";
+M3xMacroApproachCircularVectorComputationMode	= "¥­­±­pºâ¼Ò¦¡";
+M3xMacroApproachCircularAngle				= "¨¤«×";
+M3xMacroApproachCircularRadius			= "¥b®|";
+M3xMacroApproachBoxLinkingMode			= "Ãìµ²¼Ò¦¡";
+M3xMacroApproachBoxXLength				= "ªu¤Á½u¶ZÂ÷"; 
+M3xMacroApproachBoxYLength				= "ªu¤M¶b¶ZÂ÷"; 
+M3xMacroApproachBoxZLength				= "ªu««ª½¶b¶ZÂ÷"; 
+M3xMacroApproachBoxSide					= "««ª½¶b°¼"; 
+M3xMacroRetractBackTypeCoordinateMode		= "©w¸q";
+M3xMacroRetractBackTypeLength				= "ªø«×";
+M3xMacroRetractBackTypeHeight				= "°ª«×";
+M3xMacroRetractBackTypeAngle				= "±×¶i¨¤«×";
+M3xMacroRetractBackTypeRadius				= "¥b®|";
+M3xMacroRetractCircularVectorComputationMode	= "¥­­±­pºâ¼Ò¦¡";
+M3xMacroRetractCircularAngle				= "¨¤«×";
+M3xMacroRetractCircularRadius				= "¥b®|";
+M3xMacroRetractBoxLinkingMode				= "Ãìµ²¼Ò¦¡";
+M3xMacroRetractBoxXLength				= "ªu¤Á½u¶ZÂ÷"; 
+M3xMacroRetractBoxYLength				= "ªu¤M¶b¶ZÂ÷"; 
+M3xMacroRetractBoxZLength				= "ªu««ª½¶b¶ZÂ÷"; 
+M3xMacroRetractBoxSide					= "««ª½¶b°¼"; 
+M3xLinkFeedDistance					= "¶iµ¹ªø«×";
+M3xProgressDirectionMode = "¤M¨ã¸ô®|§Î¦¡";
+M3xHorizontalZonesDetectionMode = "¤ô¥­°Ï°ì¿ï¾Ü";
+
+// =====================================================================
+// NLS for Resources
+// =====================================================================
+
+MFG_ANGLE2           = "¨¤«× 2";
+MFG_APT_ANGLE      = "¤M¨ã¨¤«×";
+MFG_APT_DIAMETER            = "¤½ºÙª½®|";
+MFG_APT_HEIGHT     = "°ª«×";
+MFG_APT_HOR_DISTANCE  = "¤ô¥­¶ZÂ÷";
+MFG_APT_RADIUS     = "¶ê¨¤¥b®|";
+MFG_APT_TIP_ANG    = "¤M¦y¨¤«×";
+MFG_APT_VER_DISTANCE  = "««ª½¶ZÂ÷";
+MFG_ASS_GAGE_1 = "¼Ð·Ç¤Ø¤o 1";
+MFG_ASS_GAGE_2 = "¼Ð·Ç¤Ø¤o 2";
+MFG_BALL_TYPE             = "¶êÀY¤M¨ã";
+MFG_BAR_CUT_RAD       = "¶ê´Î¤Á«d¥b®|";
+MFG_BAR_LENGTH_1      = "¶ê´Îªø«× 1";
+MFG_BAR_LENGTH_2      = "¶ê´Îªø«× 2";
+MFG_BODY_DIAM           = "¥»Åéª½®|";
+MFG_BORE_ABILITY = "·e¤M¯à¤O";
+MFG_CHAMFR_DIAM1           = "­Ë¨¤ª½®| 1";
+MFG_CHAMFR_DIAM2           = "­Ë¨¤ª½®| 2";
+MFG_CLEAR_ANGLE       = "¶¡»Ø¨¤«×";
+MFG_CMP_RAD_OPT  = "¥b®|¸ÉÀv";
+MFG_CMP_TL_DIAM = "¤M¨ã¥b®|";
+MFG_COMMENT           = "»¡©ú";
+MFG_COMPOSITION  = "²Õ¦X";
+MFG_COOLNT_SNTX  = "§N«o»yªk";
+MFG_CORNER_RAD            = "¶ê¨¤¥b®|";
+MFG_CORNER_RAD_2           = "¤W³¡¶ê¨¤¥b®|";
+MFG_CUT_ANGLE           = "¤Á«d¨¤«×";
+MFG_CUT_LENGTH            = "¤Á«dªø«×";
+MFG_EFFECTIVE_LENGTH      = "¦³®Äªø«×";
+MFG_DESC_CODE         = "»¡©ú½X";
+MFG_DIAMETER_1  = "ª½®| 1";
+MFG_DIAMETER_2  = "ª½®| 2";
+MFG_DIAMETER_3  = "ª½®| 3";
+MFG_DIAMETER_4  = "ª½®| 4";
+MFG_DIAMETER_5  = "ª½®| 5";
+MFG_DIAMETER_6  = "ª½®| 6";
+MFG_ENTRY_DIAM           = "¥»Åéª½®|";
+MFG_GAUGING_ANG       = "¼Ð·Ç¨¤«×";
+MFG_HAND_ANGLE        = "¤â°Ê¨¤«×";
+MFG_HAND_STYLE        = "¤â°Ê§Î¦¡";
+MFG_HOLDER_CAPAB      = "¤M§â¯à¤O";
+MFG_INIT_ROT_POS = "³Ìªì¦ì¸m";
+MFG_INSERT_ANGLE      = "¤M¤ù¨¤«×";
+MFG_INSERT_LGTH       = "¤M¤ùªø«×";
+MFG_INSERT_MAT = "§÷®Æ";
+MFG_INSERT_THICK = "«p«×";
+MFG_INSERT_WIDTH      = "¤M¤ù¼e«×";
+MFG_INT_CIRC_2D  = "2D ¶ê§Î¤º´¡";
+MFG_INT_CIRC_3D  = "3D ¶ê§Î¤º´¡";
+MFG_INT_LIN_3D   = "3D ½u©Ê¤º´¡";
+MFG_ISO_APPR_ANG      = "ISO ¤U¤M¨¤«×";
+MFG_ISO_BAR_DIA       = "ISO ¶ê´Îª½«×";
+MFG_ISO_BAR_TYPE      = "ISO ¶ê´Î§Î¦¡";
+MFG_ISO_CLAM_SYS      = "ISO §¨«ù§Î¦¡";
+MFG_ISO_CLR_ANG       = "ISO ¶¡»Ø¨¤«×";
+MFG_ISO_CUTCOND       = "¤M¤ù¤ÁÃäª¬ºA (ISO)";
+MFG_ISO_CUT_SIZE      = "ISO ¤Á«d¤j¤p";
+MFG_ISO_DIR           = "ISO ¤è¦V";
+MFG_ISO_HEIGHT        = "ISO °ª«×";
+MFG_ISO_LENGTH        = "ISO ªø«×";
+MFG_ISO_NOSE_RAD      = "¤M¤ù»ó¥b®| (ISO)";
+MFG_ISO_SHAPE         = "ISO §Î¦¡";
+MFG_ISO_THICK         = "¤M¤ù«p«× (ISO)";
+MFG_ISO_TOL           = "Inscribed ª½®| (ISO)";
+MFG_ISO_TYPE          = "¤M¤ù«¬¦¡ (ISO)";
+MFG_ISO_WIDTH         = "ISO ¼e«×";
+MFG_KAPPA_R           = "Kappa R";
+MFG_LATHE_RAD_AX          = "®|¦V¶b";
+MFG_LATHE_AX_AX       = "Turret ¶b¦V¶b";
+MFG_LATHE_SPN_AX          = "¤M¨ã¶b";
+MFG_LEADING_ANG       = "¾É¤Þ¨¤«×";
+MFG_LENGTH            = "ªø«×";
+MFG_LENGTH_1           = "ªø«× 1";
+MFG_LENGTH_2           = "ªø«× 2";
+MFG_LENGTH_NOM_DIAM = "¤½ºÙª½®|¦ì¸m";
+MFG_LIFE_TIME = "¤M¨ã¹Ø©R";
+MFG_LNG_NUM     = "ªø«×¼Æ¥Ø";
+MFG_MACH_QUALITY = "¥[¤u«~½è";
+MFG_MACHINE_COMP = "¥[¤u¤@­P©Ê";
+MFG_MAX_BOR_DPTH      = "³Ì¤j·e¤M²`«×";
+MFG_MAX_CUT_DIAM      = "³Ì¤j¤Á«dª½®|";
+MFG_MAX_CUT_DPTH      = "³Ì¤j¤Á«d²`«×";
+MFG_MAX_CUT_WDTH      = "³Ì¤j¤Á«d¼e«×";
+MFG_MAX_DIAMETER           = "³Ì¤jª½®|";
+MFG_MAX_MIL_LENGTH = "³Ì¤j¤Á«dªø«×";
+MFG_MAX_MIL_TIME = "³Ì¤j¹Ø©R";
+MFG_MAX_PLNG_ANG = "³Ì¤j´¡¤M¨¤«×";
+MFG_MAX_REC_DPTH      = "³Ì¤j rec. ²`«×";
+MFG_MIN_ANGLE    = "³Ì¤p¤£³sÄò¨¤«×";
+MFG_MIN_CUT_DIAM      = "³Ì¤p¤Á«dª½®|";
+MFG_MIN_DIAM          = "³Ì¤pª½®|";
+MFG_MIN_DIAMETER           = "³Ì¤pª½®|";
+MFG_MIN_DISC     = "³Ì¤p¤£³sÄò¨B¶i";
+MFG_NAME           = "¦WºÙ";
+MFG_NB_OF_COMP = "¤À¥ó¼Æ¥Ø";
+MFG_NB_OF_FLUTES           = "¤M¥Q¼Æ¥Ø";
+MFG_NB_OF_STAGES          = "¯Å¼Æ";
+MFG_NB_OF_THREAD = "Á³¯¾¼Æ";
+MFG_NOMINAL_DIAM = "¤½ºÙª½®|";
+MFG_NON_CUT_DIAM           = "¥¼¤Á«dª½®|";
+MFG_NOSE_RADIUS = "»ó¥b®|";
+MFG_ORIENT_ANGLE = "¤è¦V";
+MFG_ORIGINAL_ID       = "¨Ó·½½s¸¹";
+MFG_OUTPUT_FRMT  = "NC ¸ê®Æ®æ¦¡";
+MFG_OUTP_PREF_1 = "°¾¦n¿é¥XÂI 1";
+MFG_OUTP_PREF_2 = "°¾¦n¿é¥XÂI 2";
+MFG_OUTP_PREF_3 = "°¾¦n¿é¥XÂI 3";
+MFG_OUTPUT_TYPE  = "NC ¸ê®Æ§Î¦¡";
+MFG_OUTSIDE_DIAM           = "¥~³¡ª½®|";
+MFG_OVERALL_LGTH           = "¥þªø";
+MFG_PITCH_OF_THD = "Á³¯¾¸`¶Z";
+MFG_PITCH_OF_THREAD = "Á³¯¾¸`¶Z";
+MFG_PP_WORD_TBL  = "«á³B²z¾¹¤å¦rªí";
+MFG_R_MAX_CIRC   = "³Ì¤j¤º´¡¥b®|";
+MFG_R_MIN_CIRC   = "³Ì¤p¤º´¡¥b®|";
+MFG_RAD_NUM     = "¥b®|¼Æ¥Ø";
+MFG_RADIAL_TL_RAKE_ANG            = "®|¦V¤M¨ã rake ¨¤«× ";
+MFG_REPOSITORY_SOURCE = "Repository ¨Ó·½";
+MFG_ROT_DIR      = "±ÛÂà¤è¦V";
+MFG_ROT_TYP      = "±ÛÂà§Î¦¡";
+MFG_ROTARY_ANGLE  = "±ÛÂà¨¤«×";
+MfgTableRotationAngleMode = "©w¸q";
+MFG_ROTARY_AXIS  = "±ÛÂà¶b";
+MFG_ROTARY_CATEGORY = "¥Ø¿ý";
+MFG_ROTARY_CATEGORY.LongHelp = "±ÛÂà¥Ø¿ý : §ÉÂi©Î¤MÀY";
+MFG_SHANK_HEIGHT      = "¤M¬`°ª«×";
+MFG_SHANK_WIDTH       = "¤M¬`¼e«×";
+MFG_SHK_CUT_WDTH      = "¤M¬`¤Á«d¼e«×";
+MFG_SHK_LENGTH_1      = "¤M¬`ªø«× 1";
+MFG_SHK_LENGTH_2      = "¤M¬`ªø«× 2";
+MFG_SITE_NUM    = "¥¿½T¼Æ¥Ø";
+MFG_SITE_TYP    = "§Î¦¡";
+MFG_SIZE_DESIGN           = "¤j¤p³]­p";
+MFG_STRT_PT_SYNT = "¶}©lÂI¤è¦¡";
+MFG_TAPER_ANGLE           = "´Õ§Î¨¤«×";
+MFG_THD_CLS_DESC = "Á³¯¾µ¥¯Å»¡©ú";
+MFG_THD_FRM_DESC           = "Á³¯¾§Îª¬»¡©ú.";
+MFG_THREAD_CLASS = "Á³¯¾µ¥¯Å";
+MFG_THREAD_FORM  = "Á³¯¾§Îª¬";
+MFG_TIP_ANGLE           = "¤M¦y¨¤«×";
+MFG_TIP_LENGTH           = "¤M¦yªø«×";
+MFG_TIP_RADIUS           = "¤M¦y¥b®|";
+MFG_TL_RAKE_ANG            = "¤M¦y±×«×";
+MFG_TL_SET_LGTH  = "¥þ³¡³]©wªø";
+MFG_TL_SET_X  = "³]©w X";
+MFG_TL_SET_Y  = "³]©w Y";
+MFG_TL_SET_Z  = "³]©w Z";
+MFG_TL_SETUP_ANG = "³]©w¨¤«×";
+MFG_TL_TIP_LGTH            = "¤M¨ã¤M¦yªø«×";
+MFG_TOOL_ANGLE           = "¤M¨ã¨¤«×";
+MFG_TOOL_ASS_POWER = "¤O¶q";
+MFG_TOOL_CATALOG = "¤M¨ã¥Ø¿ý";
+MFG_TOOL_CORE_DIAMETER = "µL¤Á«dª½®|";
+MFG_TOOL_INVERT = "¤M¨ã°fÂà";
+MFG_TOOL_NUMBER           = "¤M¨ã¼Æ¥Ø";
+MFG_TOOTH_DES    = "¤M¾¦»¡©ú";
+MFG_TOOTH_DESC    = "¤M¾¦»¡©ú";
+MFG_TOOTH_MAT    = "¤M¾¦§÷®Æ";
+MFG_TOOTH_MATDES           = "¤M¾¦§÷®Æ»¡©ú";
+MFG_TOOTH_MATDESC           = "¤M¾¦§÷®Æ»¡©ú";
+MFG_TRAILING_ANG      = "«á±×¨¤";
+MFG_TRAV_PITCH           = "¾î¶V¸`¶Z";
+MFG_TRAVERSE_NB          = "¾î¶V¼Æ¥Ø";
+MFG_TURRET_NUMBER = "Turret ¼Æ¥Ø";
+MFG_WAY_OF_ROT   = "±ÛÂà¤è¦¡";
+MFG_WEIGHT_SNTX  = "­«¶q»yªk";
+MFG_X_HOME_POS   = "­ìÂI X";
+MFG_X_INIT_SPNDL = "¤è¦V I";
+MFG_X_ROT_CENTER = "¤¤¤ßÂI X";
+MFG_X_TL_ORIENT  = "¤M¨ã¤è¦V I";
+MFG_X_TOOL_POS   = "¤M¨ã§ó´«ÂI X";
+MFG_Y_HOME_POS   = "­ìÂI Y";
+MFG_Y_INIT_SPNDL = "¤è¦V J";
+MFG_Y_ROT_CENTER = "¤¤¤ßÂI Y";
+MFG_Y_TL_ORIENT  = "¤M¨ã¤è¦V J";
+MFG_Y_TOOL_POS   = "¤M¨ã§ó´«ÂI Y";
+MFG_Z_HOME_POS   = "­ìÂI Z";
+MFG_Z_INIT_SPNDL = "¤è¦V K";
+MFG_Z_ROT_CENTER = "¤¤¤ßÂI Z";
+MFG_Z_TL_ORIENT  = "¤M¨ã¤è¦V K";
+MFG_Z_TOOL_POS   = "¤M¨ã§ó´«ÂI Z";
+
+MfgSetUpDeltaX = "³]©w¼W¶q X";                 
+MfgSetUpDeltaY = "³]©w¼W¶q Y";                 
+MfgSetUpDeltaZ = "³]©w¼W¶q Z";    
+MfgToolChangePointOnMachine = "¤M¨ã§ó´«ÂI";                 
+MfgToolChgX = "¤M¨ã§ó´«ÂI X";                  
+MfgToolChgY = "¤M¨ã§ó´«ÂI Y";                 
+MfgToolChgZ = "¤M¨ã§ó´«ÂI Z";                 
+MfgToolDiameterRatio = "¤M¨ãª½®|¦Ê¤À¤ñ";
+
+MFG_AXIAL_RADIAL_MOVE = "¶b¦V©Î®|¦V²¾°Ê";
+MFG_MAX_FEEDRATE  = "³Ì¤j¥[¤u¶iµ¹";
+MFG_RAPID_FEED  = "§Ö³t¶iµ¹";
+MFG_CONE_DIAMETER_1 = "¶ê´Õª½®| 1";
+MFG_CONE_DIAMETER_2 = "¶ê´Õª½®| 2";
+MFG_CONE_DIAMETER_3 = "¶ê´Õª½®| 3";
+MFG_CONE_DIAMETER_4 = "¶ê´Õª½®| 4";
+MFG_CONE_DIAMETER_5 = "¶ê´Õª½®| 5";
+MFG_CONE_LENGTH_1 = "¶ê´Õªø«× 1";
+MFG_CONE_LENGTH_2 = "¶ê´Õªø«× 2";
+MFG_CONE_LENGTH_3 = "¶ê´Õªø«× 3";
+MFG_HOLDER_STAGES = "¤M§â¯Å¼Æ";
+
+MFG_X_ORIGIN_ROTARY_DIR = "X ©w¦ì°Ñ¦Ò¤è¦V";
+MFG_Y_ORIGIN_ROTARY_DIR = "Y ©w¦ì°Ñ¦Ò¤è¦V";
+MFG_Z_ORIGIN_ROTARY_DIR = "Z ©w¦ì°Ñ¦Ò¤è¦V";
+
+MFG_SPLIT_CIRCLE_STRAT = "¤À³Î¶ê¤è¦¡";
+// =====================================================================
+// NLS for Lathe
+// =====================================================================
+
+// Roughing operation
+//========================
+MfgLatheLongRough = "¨®§É²Ê¥[¤u";
+
+MfgLatheStockClearance = "§÷®Æ¤Wªº¹w¯d";
+MfgLatheGlobalPartThickness = "§÷®Æ¤Wªº¹w¯d";
+MfgLatheAxialPartOffset = "¹s¥ó¤W¶b¦V¹w¯d";
+MfgLatheRadialPartOffset = "¹s¥ó¤W®|¦V¹w¯d";
+MfgLatheDepthOfCut = "³Ì¤j¤Á²`";
+MfgLatheAxialDepthOfCut = "¶b¦V¤Á²`";
+MfgLatheRadialDepthOfCut = "®|¦V¤Á²`";
+MfgLathePlungeDistance = "´¡¤M«e¶ZÂ÷";
+MfgLathePlungeAngle = "´¡¤M«e¨¤«×";
+MfgLatheLeadInDistance = "¤Á¶i¶ZÂ÷";
+MfgLatheLeadInAngle = "¤Á¶i¨¤«×";
+MfgLatheAttackDistance = "¶i¤J¶ZÂ÷";
+MfgLatheLiftOffDistance = "°h¤M¶ZÂ÷";
+MfgLatheLiftOffAngle = "°h¤M¨¤«×";
+MfgLatheStartLimitClearance = "¶}©l­­¨î¹w¯d";
+MfgLatheModeStart = "¶}©l­­¨î¼Ò¦¡";
+MfgLatheEndLimitClearance = "µ²§ô­­¨î¹w¯d";
+MfgLatheModeEnd = "µ²§ô­­¨î¼Ò¦¡";
+
+// Grooving operation
+//========================
+MfgLatheGrooving = "¨®§É¼Ñ¥[¤u";
+
+MfgLatheGroovingOrientation = "¤è¦V©Ê";
+MfgLatheMaxLevelDepth = "¨C¼h³Ì¤j¤Á²`";
+MfgLatheInclineAngle = "±×¶i¤M¨¤«×";
+
+// Profile Finishing operation
+//========================
+MfgLatheProfileFinish = "¥~§Îºë¨®";
+
+MfgLatheLeadInRadius                = "¶i¤M¥b®|";
+MfgLatheLiftOffRadius               = "°h¤M¥b®|";  
+MfgLatheInvertLeadInDistance          = "°fÂà¶i¤M¶ZÂ÷";
+MfgLatheInvertLiftOffDistance          = "°fÂà°h¤M¶ZÂ÷";
+MfgLatheInvertLiftOffRadius          = "°fÂà°h¤M¥b®|";
+MfgLatheInvertLiftOffAngle          = "°fÂà°h¤M¨¤«×";
+MfgLatheFirstChamferLength            = "­Ë¨¤ªø«×";
+MfgLatheFirstCornerAngle              = "¶ê¨¤¨¤«×";
+MfgLatheFirstCornerRadius             = "¶ê¨¤¥b®|";
+MfgLatheLastChamferLength             = "­Ë¨¤ªø«×";
+MfgLatheLastCornerAngle               = "¶ê¨¤¨¤«×";
+MfgLatheLastCornerRadius              = "¶ê¨¤¥b®|";
+MfgLatheChamferLength                 = "­Ë¨¤ªø«×";
+MfgLatheCornerRadius                  = "¶ê¨¤¥b®|";
+
+// Recessing operation
+//========================
+MfgLatheRecessing = "¨®§É Recessing";
+
+// Threading operation
+//========================
+MfgLatheThreading = "¨®¤ú";
+
+MfgLathePitch                            = "³æ¦ì¤ú¼Æ";
+MfgLatheThreadDepth                      = "²`«×";
+MfgLatheThreadLength                     = "ªø«×";
+MfgLatheNominalDiameter                  = "¤½ºÙª½®|";
+MfgLatheCrestDiameterClearance           = "³»³¡ª½®|ªº¸Î«×";
+
+// Groove Finishing operation
+//========================
+MfgLatheGrooveFinish = "ºë¨®¼Ñ";
+
+MfgLatheFirstFlankLeadInDistance           = "²Ä¤@­Ó¶i¤M¶ZÂ÷";
+MfgLatheFirstFlankLeadInAngle              = "²Ä¤@­Ó¶i¤M¨¤«×";
+MfgLatheFirstFlankLeadInRadius             = "²Ä¤@­Ó¶i¤M¥b®|";
+MfgLatheLastFlankLeadInDistance            = "³Ì«á¶i¤M¶ZÂ÷";
+MfgLatheLastFlankLeadInAngle               = "³Ì«á¶i¤M¨¤«×";
+MfgLatheLastFlankLeadInRadius              = "³Ì«á¶i¤M¥b®|";
+MfgLatheOtherFlankLeadInDistance           = "¨ä¥¦ªº¶i¤M¶ZÂ÷";
+MfgLatheOtherFlankLeadInRadius             = "¨ä¥¦ªº¶i¤M¥b®|";
+MfgLatheOtherFlankLeadInAngle              = "¨ä¥¦ªº¶i¤M¨¤«×";
+MfgLatheBottomOverlap          = "­«Å|";
+MfgLatheBottomClearance          = "¸Î«×";
+MfgLatheLeadingSafetyAngle          = "¤Þ¾É¦w¥þ¨¤«×";
+MfgLatheTrailingSafetyAngle          = "©ì©Ô¦w¥þ¨¤«×";
+MfgLatheFixtureClearance          = "§¨¨ã¸Î«×";
+
+MfgStartPosition              = "¶}©l";
+MfgStartInside                = "¤º°¼";
+MfgStartOutside               = "¥~°¼";
+MfgPercentageReductionBoolean = "¤ÁÂ_³s±µ¸ô®|";
+MfgScallopPass                = "¥~§Î¸ô®|";
+MfgScallopPassRatio           = "¥~§Î¤ñ¨Ò";
+MfgGuidingPoint               = "¾É¤ÞÂI";
+MfgOutputPoint                = "¿é¥XÂI";
+
+DepthValue                    = "²`«×­È";
+MfgNoCornerChanel             = "µL";
+MfgCorner                     = "Âà¨¤";
+MfgChannel                    = "¸ô®|";
+MfgCornerChanel               = "¨¤¸¨©M¸ô®|";
+
+// Update R8 SP2 - 5X MOs
+//========================
+MfgCorneringFinishFlag = "ºë¥[¤uÂà¨¤¤M¨ã¸ô®|";
+
+// Operations SMG
+//=================
+M3xSweepingSU = "±½±°";
+M3xSoftMaterialSU = "±½±°²Ê»Ñ";
+M3xBetweenContourSU = "¥~§ÎÅX°Ê";
+M3xZLevelSU = "µ¥°ª";
+M3xBitangencySU = "´Ý®Æ²M¨¤";
+M3xHardMaterialSU = "²Ê»Ñ";
+M3xSpiralMillingSU = "Á³±Û»Ñ«d";
+M3xPrismaticRoughingSU = "¤G¶b¥b²Ê»Ñ";
+M3xMultiPocketsSU = "¦h­«¼Ñ¥[¤u";
+
+// Surface Machining features.
+M3xFeature = "¦±­±¯S¼x";
+M3xRAFeature = "¦A¥[¤u°Ï°ì¯S¼x";
+M3xSAFeature = "±×­±°Ï°ì¯S¼x";
+M3xOffsetGroup = "¹w¯d¸s²Õ";
+M3xPoint = "ÂI";
+M3xPlane = "¥­­±";
+M3xLine = "½u";
+M3xArea = "°Ï°ì";
+
+M3xOffsetImposedPlane	= "¹w¯d";
+
+// OLC
+MFG_FEEDRATE_AUTO_UPD          = "¥Ñ¤M¤ù¤Á²`©M³t«×¦Û°Ê­pºâ";
+MFG_FEEDRATE_AUTO_UPD.LongHelp = "¥Ñ¤M¤ù¤Á²`©M³t«×¦Û°Ê­pºâ¶iµ¹
+¥[¤uÄÝ©Ê¬° MFG_FEEDRATE_AUTO_UPD.";
+MFG_SPINDLE_SPEED_AUTO_UPD          = "¥Ñ¤M¤ù¤Á²`©M³t«×¦Û°Ê­pºâ";
+MFG_SPINDLE_SPEED_AUTO_UPD.LongHelp = "¥Ñ¤M¤ù¤Á²`©M³t«×¦Û°Ê­pºâÂà³t
+¥[¤uÄÝ©Ê¬° MFG_SPINDLE_AUTO_UPD.";
+
+MFG_NURBS_OUTPUT="Nurbs ¿é¥X";
+
+// RA / MA Feature
+//========================
+Mfg2DRAFeature = "¨â¶b¥b­«¥[¤u°Ï°ì";
+Mfg2DMAFeature = "¨â¶b¥b­«¥[¤u°Ï°ì";
+
+// Update R9 - 3X MOs
+//========================
+M3xApproachDistanceLinking = "¶i¤M¶ZÂ÷";
+M3xApproachMacroMotionLinking = "¶i¤M¼Ò¦¡";
+M3xApproachVectorXLinking = "¶i¤M X ¤è¦V";
+M3xApproachVectorYLinking = "¶i¤M Y ¤è¦V";
+M3xApproachVectorZLinking = "¶i¤M Z ¤è¦V";
+M3xRetractDistanceLinking = "°h¤M¶ZÂ÷";
+M3xRetractMacroMotionLinking = "°h¤M¼Ò¦¡";
+M3xRetractVectorXLinking = "°h¤M X ¤è¦V";
+M3xRetractVectorYLinking = "°h¤M Y ¤è¦V";
+M3xRetractVectorZLinking = "°h¤M Z ¤è¦V";
+M3xMacroApproachBackTypeCoordinateLinkingMode		= "³s±µ©w¸q (¶i¤M)";
+M3xMacroApproachBackTypeLengthLinking			= "³s±µªø«× (¶i¤M)";
+M3xMacroApproachBackTypeHeightLinking			= "³s±µ°ª«× (¶i¤M)";
+M3xMacroApproachBackTypeAngleLinking				= "³s±µ±×¶i¤M (¶i¤M)";
+M3xMacroApproachBackTypeRadiusLinking			= "³s±µ¥b®| (¶i¤M)";
+M3xMacroApproachCircularVectorComputationLinkingMode	= "³s±µªº¥­­±­pºâ¼Ò¦¡ (¶i¤M)";
+M3xMacroApproachCircularAngleLinking				= "³s±µ¨¤«× (¶i¤M)";
+M3xMacroApproachCircularRadiusLinking			= "³s±µ¥b®| (¶i¤M)";
+M3xMacroApproachBoxLinkingLinkingMode			= "³s±µªº³s±µ¼Ò¦¡ (¶i¤M)";
+M3xMacroApproachBoxXLengthLinking				= "³s±µªº¤Á½u¶ZÂ÷ (¶i¤M)"; 
+M3xMacroApproachBoxYLengthLinking				= "³s±µªºªu¤M¶b¶ZÂ÷ (¶i¤M)";
+M3xMacroApproachBoxZLengthLinking				= "³s±µªºªu««ª½¶ZÂ÷ (¶i¤M)";
+M3xMacroApproachBoxSideLinking					= "³s±µªº««ª½¶b°¼ (¶i¤M)";
+M3xMacroRetractBackTypeCoordinateLinkingMode		= "³s±µ©w¸q (°h¤M)";
+M3xMacroRetractBackTypeLengthLinking				= "³s±µªø«× (°h¤M)";
+M3xMacroRetractBackTypeHeightLinking				= "³s±µ°ª«× (°h¤M)";
+M3xMacroRetractBackTypeAngleLinking				= "³s±µ±×¶i¤M (°h¤M)";
+M3xMacroRetractBackTypeRadiusLinking				= "³s±µ¥b®| (°h¤M)";
+M3xMacroRetractCircularVectorComputationLinkingMode	= "³s±µªº¥­­±­pºâ¼Ò¦¡ (°h¤M)";
+M3xMacroRetractCircularAngleLinking				= "³s±µ¨¤«× (°h¤M)";
+M3xMacroRetractCircularRadiusLinking				= "³s±µ¥b®| (°h¤M)";
+M3xMacroRetractBoxLinkingLinkingMode				= "³s±µªº³s±µ¼Ò¦¡ (°h¤M)";
+M3xMacroRetractBoxXLengthLinking				= "³s±µªº¤Á½u¶ZÂ÷ (°h¤M)"; 
+M3xMacroRetractBoxYLengthLinking				= "³s±µªºªu¤M¶b¶ZÂ÷ (°h¤M)";
+M3xMacroRetractBoxZLengthLinking				= "³s±µªºªu««ª½¶ZÂ÷ (°h¤M)";
+M3xMacroRetractBoxSideLinking					= "³s±µªº««ª½¶b°¼ (°h¤M)";
+M3xBetweenPassMacroMotion      = "Ãìµ²¼Ò¦¡";
+M3xClearanceMacroMode      = "°h¤M¼Ò¦¡";
+M3xMultiPassIsActive		= "¦h­«¸ô®|";
+M3xMultiPassMode = "¦h­«¸ô®|ªº¿é¤J¼Ò¦¡";
+M3xMultiPassNumberOfLevels = "¦h­«¸ô®|ªº¼h¼Æ";
+M3xMultiPassDepthByLevels = "¦h­«¸ô®|¥H¤Á²`©w¸q¼h";
+M3xMultiPassDepthTotalHeight = "¦h­«¸ô®|ªºÁ`°ª";
+M3xRapidFeedDistance = "¥¼¨Ï¥Îªº";
+M3xStockOvershoot = "¶W¹L½d³ò";
+M3xStockContouring = "¹s¥ó¥~§Î";
+
+M3xHardStopOffsetLength = "¥¼¨Ï¥Îªº";
+M3xHardHelixDiameterLength = "¥¼¨Ï¥Îªº";
+M3xHSMCornerRadius = "¥¼¨Ï¥Îªº";
+M3xHSMLimitAngle = "¥¼¨Ï¥Îªº";
+M3xHSMExtraSegmentOverlap = "¥¼¨Ï¥Îªº";
+M3xHSMCorneringOnSideFinishPath = "¥¼¨Ï¥Îªº";
+M3xHSMCornerRadiusOnSideFinishPath = "¥¼¨Ï¥Îªº";
+M3xHSMLimitAngleOnSideFinishPath = "¥¼¨Ï¥Îªº";
+M3xHSMTransitionRadius = "¥¼¨Ï¥Îªº";
+M3xHSMTransitionAngle = "¥¼¨Ï¥Îªº";
+M3xHSMTransitionLength = "¥¼¨Ï¥Îªº";
+M3xImposedPlaneSensitivity = "¥¼¨Ï¥Îªº";
+M3xConstantOrVariableDepth = "¥¼¨Ï¥Îªº";
+M3xMachineOnlyOrderedArea = "¥u¥[¤u±Æ§Çªº°Ï°ì";
+M3xMacroRetractBoxWeight = "¥¼¨Ï¥Îªº";
+M3xMacroRetractBoxWeightLinking = "¥¼¨Ï¥Îªº";
+M3xInfiniteSafetyDistance = "§¹¾ã¦w¥þ";
+
+M3xMacroApproachPSMLength = "¶i¤Mªº©µªø²¾°Êªø«×";
+M3xMacroApproachPSMSafetyDistance = "¶i¤Mªº©µªø²¾°Ê¦w¥þ¶ZÂ÷";
+M3xMacroApproachPSMAngle = "¶i¤Mªº©µªø²¾°Ê¨¤«×";
+M3xMacroApproachHSMEngagementRadius = "¶i¤Mªº HMS ¥b®|";
+M3xMacroApproachHSMEngagementAngle = "¶i¤Mªº HSM ¨¤«×";
+M3xMacroApproachHSMSafetyDistance = "¶i¤Mªº HSM ¦w¥þ¶ZÂ÷";
+M3xMacroApproachInfiniteSafetyDistance = "¶i¤Mªº§¹¾ã¦w¥þ";
+M3xMacroRetractPSMLength = "°h¤Mªº©µªø²¾°Êªø«×";
+M3xMacroRetractPSMSafetyDistance  = "°h¤Mªº©µªø²¾°Ê¦w¥þ¶ZÂ÷";
+M3xMacroRetractPSMAngle  = "°h¤Mªº©µªø²¾°Ê¨¤«×";
+M3xMacroRetractHSMEngagementRadius  = "°h¤Mªº HMS ¥b®|";
+M3xMacroRetractHSMEngagementAngle  = "°h¤Mªº HSM ¨¤«×";
+M3xMacroRetractHSMSafetyDistance  = "°h¤Mªº HSM ¦w¥þ¶ZÂ÷";
+M3xMacroRetractInfiniteSafetyDistance  = "°h¤Mªº§¹¾ã¦w¥þ";
+
+M3xMacroApproachLinkingPSMLength = "¶i¤MÃìµ²ªº©µªø²¾°Êªø«×";
+M3xMacroApproachLinkingPSMSafetyDistance = "¶i¤MÃìµ²ªº©µªø²¾°Ê¦w¥þ¶ZÂ÷";
+M3xMacroApproachLinkingPSMAngle = "¶i¤MÃìµ²ªº©µªø²¾°Ê¨¤«×";
+M3xMacroApproachLinkingHSMEngagementRadius = "¶i¤MÃìµ²ªº HMS ¥b®|";
+M3xMacroApproachLinkingHSMEngagementAngle = "¶i¤MÃìµ²ªº HSM ¨¤«×";
+M3xMacroApproachLinkingHSMSafetyDistance = "¶i¤MÃìµ²ªº HSM ¦w¥þ¶ZÂ÷";
+M3xMacroApproachLinkingInfiniteSafetyDistance = "¶i¤MÃìµ²ªº§¹¾ã¦w¥þ";
+M3xMacroRetractLinkingPSMLength = "°h¤MÃìµ²ªº©µªø²¾°Êªø«×";
+M3xMacroRetractLinkingPSMSafetyDistance  = "°h¤MÃìµ²ªº©µªø²¾°Ê¦w¥þ¶ZÂ÷";
+M3xMacroRetractLinkingPSMAngle  = "°h¤MÃìµ²ªº©µªø²¾°Ê¨¤«×";
+M3xMacroRetractLinkingHSMEngagementRadius  = "°h¤MÃìµ²ªº HMS ¥b®|";
+M3xMacroRetractLinkingHSMEngagementAngle  = "°h¤MÃìµ²ªº HSM ¨¤«×";
+M3xMacroRetractLinkingHSMSafetyDistance  = "°h¤MÃìµ²ªº HSM ¦w¥þ¶ZÂ÷";
+M3xMacroRetractLinkingInfiniteSafetyDistance  = "¶i¤MÃìµ²ªº§¹¾ã¦w¥þ";
+
+M3xInvMachDir = "¥[¤u¤è¦V°¼";
+M3xInvStartDir = "¶}©l¤è¦V°¼";
+M3xStayOnSurface = "¥¼¨Ï¥Îªº";
+M3xProgressDirectionOnSurface = "¥¼¨Ï¥Îªº";
+
+M3xMacroMotionSameForAll = "¥¼¨Ï¥Îªº";
+M3xReverseMA = "¥¼¨Ï¥Îªº";
+M3xOffsetSafetyPlaneLinking = "³s±µªº¦w¥þ¥­­±¹w¯d";
+M3xPocketProgression = "¥¼¨Ï¥Îªº";
+
+// Update R10 - 3X MOs
+//========================
+M3xStayOnBottom = "¯d¦b©³³¡";
+M3xWithCompensation = "¥¼¨Ï¥Îªº";
+M3xBottomDetection = "¤ô¥­°Ï°ì°»´ú";
+M3xBottomThickness = "©³³¡¹w¯d";
+M3xBottomFinishThickness = "©³³¡¥bºë»Ñ¹w¯d";
+M3xBottomAngle = "¤ô¥­°Ï°ì³Ì¤j¨¤«× ";
+M3xBottomHardOverlapLength = "©³³¡­«Å|¸ô®| (ªø«×)";
+M3xBottomHardOverlap = "©³³¡­«Å|¸ô®|  (¤ñ¨Ò)";
+M3xBottomRatioOrLengthMode = "©³³¡­«Å|©w¸q";
+M3xDifferentThicknessOnBottom = "¥¼¨Ï¥Î";
+M3xIsMaxDiscretization = "©w¸q¤£³sÄò¨BÆJ";
+M3xMaxDiscretization = "³Ì¤j¤£³sÄò¨BÆJ";
+M3xMultiPassSequencingMode = "¦h­«¶¶§Ç¸ô®|¼Ò¦¡";
+M3xBetweenPassDistance = "¥¼¨Ï¥Î";
+
+//----------------------------------
+// NCReview
+//----------------------------------
+// For V4NCLatheStandardOperation
+//===============================
+MfgV4IsCollisionCheck = "¥~§Îªº¤z¯AÀË¬d";
+MfgV4CollisionCheck = "½u, ¦±½u©Î¥~§Îªº¤z¯AÀË¬d";
+MfgV4GeoRelimit = "´X¦óºIÂ_";
+MfgV4MachTol = "¥[¤uºë«×";
+MfgV4ThicknessDrive = "ÅX°Ê¦±½uªº¥¿¦V¹w¯d";
+MfgV4AxialOffsetDrive = "ÅX°Ê¦±½uªº¶b¦V¹w¯d";
+MfgV4RadialOffsetDrive = "ÅX°Ê¦±½uªº®|¦V¹w¯d";
+MfgV4ThicknessCheck = "ÀË¬d¦±½uªº¥¿¦V¹w¯d";
+MfgV4AxialOffsetCheck = "ÀË¬d¦±½uªº¶b¦V¹w¯d";
+MfgV4RadialOffsetCheck = "ÀË¬d¦±½uªº®|¦V¹w¯d";
+MfgV4LeftSafetyAngle = "¥ª°¼¦w¥þ¨¤«×";
+MfgV4RightSafetyAngle = "¥k°¼¦w¥þ¨¤«×";
+MfgV4IsFeedRAPID = " RAPID ¼Ò¦¡ªº¶iµ¹"; 
+MfgV4FeedMachLinear = "¥[¤u³t«× ¨C¤ÀÄÁ³æ¦ì¤Ø¤o";
+MfgV4FeedMachAngular = "¥[¤u³t«× ¨CÂà³æ¦ì¤Ø¤o";
+MfgV4SpindleMachLinear = "¥[¤u³t«×  ¨C¤ÀÄÁ³æ¦ì¤Ø¤o";
+MfgV4SpindleMachAngular = "¥[¤u³t«×  ¨C¤ÀÄÁÂà³t";
+// For V4NCLatheCycleOperation 
+//===============================
+MfgV4LatheCycleType = "´`Àô«¬¦¡";  
+MfgV4LatheMdOrientation = "¤è¦V";  
+MfgV4LatheMdLocation = "¦ì¸m";  
+MfgV4LatheMachiningRecess = "¥[¤u¤¤°±¤î";  
+MfgV4LatheMachDirection = "¥[¤u¤è¦V";  
+MfgV4LatheContouringMode = "¥[¤u¹s¥ó¥~§Î";  
+MfgV4SemiFinition = "¥[¤u¹s¥ó¥~§Î";  
+MfgV4CorrectorChange = "§ó§ï¿é¥XÂI";  
+MfgV4MultiCutConditions = "¶iµ¹ÅÜ°Ê";  
+MfgV4ToolCompensation = "¸ÉÀv";  
+MfgV4EdgeMode = "¶ê¨¤³B²z¤¤";  
+MfgV4ClearanceOnStock = "§÷®Æ¤W¹w¯d";  
+MfgV4ThicknessOnFinish = "¹s¥ó¤W¹w¯d";  
+MfgV4AxialOffsetOnFinish = "¹s¥ó¤W¶b¦V¹w¯d";  
+MfgV4RadialOffsetOnFinish = "¹s¥ó¤W®|¦V¹w¯d";  
+MfgV4PlungeLimitAngle = "°h¥X¨¤«×";  
+MfgV4PrincipalEdgeAngle = "¾É¤J¨¤«×";  
+MfgV4LatheMinMachRadius = "³Ì¤p¥[¤u¥b®|";
+MfgV4LatheMaxMachRadius = "³Ì¤j¥[¤u¥b®|";
+MfgV4LatheJawPosition = "³n¤öªº¶b¦V­­¨î";
+MfgV4MaxDepth = "³Ì¤j·e§É²`«× ";
+MfgV4MaxGrooveDepth = "³Ì¤j¼Ñ";
+MfgV4MaxGrooveSlope = "¤M²ª¨¤«×";
+MfgV4LatheRadialDepthOfCut = "®|¦V¤Á²`";
+MfgV4LatheAxialDepthOfCut = "¶b¦V¤Á²`";
+MfgV4MaxDepthPass = "³Ì¤j¤Á²`";
+MfgV4LatheFirstPlungePos = "²Ä¤@­Ó´¡¤J¦ì¸m";
+MfgV4FirstPlungeDir = "²Ä¤@­Ó´¡¤J¤è¦V";
+MfgV4FirstPlungeRad = "²Ä¤@­Ó´¡¤J¥b®|";
+MfgV4LatheMachiningDir = "¥[¤u¤è¦V"; 
+MfgV4DiscretizationTol = "¥[¤uºë«×";  
+MfgV4LatheChamferLength = "­Ë¨¤ªø«×"; 
+MfgV4LatheCornerRadius = "¶ê¨¤¥b®|";  
+MfgV4FirstLatheChamferLength = "²Ä¤@­Ë¨¤ªø«×"; 
+MfgV4FirstLatheCornerRadius = "²Ä¤@¶ê¨¤¥b®|";  
+MfgV4LastLatheChamferLength = "³Ì«á­Ë¨¤ªø«×";  
+MfgV4LastLatheCornerRadius = "³Ì«á­Ë¨¤¥b®|";  
+MfgV4RetractType = "°h¤M§Î¦¡";
+MfgV4ApproachType = "¶i¤M§Î¦¡";
+MfgV4LatheAttackDistance = "§ð¤J¶ZÂ÷";
+MfgV4RetractAngle = "°h¥X¨¤«×";
+MfgV4LatheLeadInDistance = "¾É¤J¶ZÂ÷";
+MfgV4LatheLeadInAngle = "¾É¤J¨¤«×";
+MfgV4LeadInDistForRecess = "¾É¤J«e¶ZÂ÷";
+MfgV4LeadInAngleForRecess = "¾É¤J«e¨¤«×";
+MfgV4LatheLiftOffDistance = "°h¥X¶ZÂ÷";
+MfgV4AppTypeInSlowMode = "´¡¤J«¬¦¡";
+MfgV4RetTypeInSlowMode = "°h¥X«¬¦¡";
+MfgV4PosModeOnStartElem = "¶}©l­­¨î¼Ò¦¡";
+MfgV4PosModeOnCheckElem = "µ²§ô­­¨î¼Ò¦¡";
+MfgV4ClearanceOnStartElem = "¶}©l­­¨î¶¡»Ø";
+MfgV4ClearanceOnCheckElem = "µ²§ô­­¨î¶¡»Ø";
+MfgV4LatheLeadInRadius = "¾É¤J¥b®|";
+MfgV4LatheLiftOffRadius = "°h¥X¥b®|";
+MfgV4LatheFirstFlankLeadInType = "²Ä¤@°¼­±¾É¤J«¬¦¡";
+MfgV4LatheLastFlankLeadInType = "³Ì«á°¼­±¾É¤J«¬¦¡";
+MfgV4LatheOtherFlankLeadInType = "¨ä¥¦°¼­±¾É¤J«¬¦¡";
+MfgV4LatheFirstFlankLeadInDistance = "²Ä¤@°¼­±¾É¤J¶ZÂ÷";
+MfgV4LatheLastFlankLeadInDistance = "³Ì«á°¼­±¾É¤J¶ZÂ÷";
+MfgV4LatheOtherFlankLeadInDistance = "¨ä¥¦°¼­±¾É¤J¶ZÂ÷";
+MfgV4LatheFirstFlankLeadInRadius = "²Ä¤@°¼­±¾É¤J¥b®|";
+MfgV4LatheLastFlankLeadInRadius = "³Ì«á°¼­±¾É¤J¥b®|";
+MfgV4OtherLastFlankLeadInRadius = "¨ä¥¦°¼­±¾É¤J¥b®|";
+MfgV4LatheFirstFlankLeadInAngle = "²Ä¤@°¼­±¾É¤J¨¤«×";
+MfgV4LatheLastFlankLeadInAngle = "³Ì«á°¼­±¾É¤J¨¤«×";
+MfgV4OtherLastFlankLeadInAngle = "¨ä¥¦°¼­±¾É¤J¨¤«×";
+MfgV4FeedLeadIn = "¾É¤J";
+MfgV4FeedPlunge = "´¡¤J";
+MfgV4FeedFirstPlunge = "²Ä¤@­Ó´¡¤J";
+MfgV4FeedOtherPlunge = "¨ä¥¦´¡¤J";
+MfgV4FeedAttack = "§ð¤J";
+MfgV4FeedContour = "¤Á¥~§Î";
+MfgV4FeedLiftOff = "°h¥X";
+MfgV4FeedChamfer = "­Ë¨¤¥[¤u";
+MfgV4FeedOnFillet = "¶ê¨¤¥[¤u";
+MfgV4FeedPlungeContour = "¥~§Î¥[¤u";
+// For V4MachiningOperation
+//=========================
+MfgV4PartSurfThickType = "¦±­±¹w¯d«¬¦¡"; 
+MfgV4ContourType = "Ãìµ²¥~§Î«¬¦¡"; 
+MfgV4SurfMachMode = "¦±­±¥[¤u"; 
+MfgV4DistBetweenPathType = "¸ô®|¶¡¶ZÂ÷"; 
+MfgV4NumberOfLevels = "¸ô®|¼Æ¥Ø";  
+MfgV4FinishingPass = "ºë¥[¤u¸ô®|";  
+MfgV4MachiningDirection = "¥[¤u¤è¦V";  
+MfgV4FinishingPassDir = "¥[¤u¸ô®|¤è¦V";  
+MfgV4OptCycleMode = "´`Àô¼Ò¦¡³Ì¨Î¤Æ";  
+MfgV4SkipPaths = "¸õ¹L¸ô®|";  
+MfgV4PocketBoundaryType = "´î­«¼ÑÃä¬É«¬¦¡";
+MfgV4CollCheck = "¤z¯AÀË¬d";
+MfgV4ContMillingType = "»Ñ«d±µÄ²«¬¦¡";
+MfgV4Rework = "­«¥[¤u«¬¦¡";
+MfgV4PlungeType = "´¡¤M«¬¦¡";
+MfgV4ComputedDistance = "¤w­pºâ¶ZÂ÷";
+MfgV4SideThickness = "°¼Ãä¹w¯d";
+MfgV4PartSurfThickness = "¹s¥ó¦±­±¹w¯d";
+MfgV4FinalPartThickness = "³Ì«á¹s¥ó¹w¯d";
+MfgV4MachiningTolerance = "¥[¤uºë«×";
+MfgV4TiltAngle = "¶É¨¤";
+MfgV4ScallopHeight = "´Ý®Æ°ª«×";
+MfgV4OffsetAlongTLAxis = "ªu¤M¶b¹w¯d";
+MfgV4ThickCheckSurf = "ÀË¬d¦±­±¹w¯d";
+MfgV4FixtureThickness = "§¨¨ã¹w¯d";
+MfgV4DistBetweenPaths = "¸ô®|¶¡¶ZÂ÷";
+MfgV4RetractHeight = "°h¤M°ª«×";
+MfgV4RawThickCoeff = "Raw ¹w¯d«Y¼Æ";
+MfgV4FinishingRate = "ºë¥[¤u¸ô®|¤ñ¨Ò";
+MfgV4SlowDownRate = "­°³t¤ñ²v";
+MfgV4MinDistLinkMacro = "Ãìµ²°Æµ{¦¡³Ì¤p¶ZÂ÷";
+MfgV4OverrunDist = "¶W¥X¶ZÂ÷";
+MfgV4ThichCheckCurve = "ÀË¬d¦±½u¹w¯d";
+MfgV4MaxDiscretStep = "³Ì¤j¤£³sÄò¸ô®|";
+MfgV4MaxDiscretAngle = "³Ì¤j¤£³sÄò¨¤«×";
+MfgV4PlungeAngle = "´¡¤J¨¤«×";
+MfgV4MinDiscretStep = "³Ì¤p¤£³sÄò¸ô®|";
+MfgV4MinDiscretAngle = "³Ì¤p¤£³sÄò¨¤«×";
+// Literaux
+//==========
+MfgV4_No_Valued = "¥¼©w¸q¼Æ­È";
+MfgV4_NO = "¤£¬O";
+MfgV4_YES = "¬O";
+MfgV4_OFFOFF = "Ãö";
+MfgV4_ONOFF = "¶} CRV1©ÎÃö CRV2";
+MfgV4_OFFON = "Ãö CRV1©Î¶} CRV12";
+MfgV4_ONON = "¶} CRV1©Î¶} CRV2";
+MfgV4_AlongNorm = "ªu««ª½¤è¦V";
+MfgV4_AlongAxis = "ªu¤M¶b¤è¦V";
+MfgV4_Circle = "¶ê©P"; 
+MfgV4_Angle = "¨¤«×";
+MfgV4_Zig_Zag = "¨Ó¦^";
+MfgV4_One_Way = "³æ¦V";
+MfgV4_Scallop = "´Ý®Æ°ª«×"; 
+MfgV4_MaxDist = "¸ô®|¶¡³Ì¤j°ª«×";
+MfgV4_NBPaths = "¸ô®|¼Æ¥Ø";
+MfgV4_CLW = "¶¶Âà";
+MfgV4_CCLW = "°fÂà";
+MfgV4_None = "µL";
+MfgV4_First = "²Ä¤@­Ó";
+MfgV4_Last = "³Ì«á¤@­Ó";
+MfgV4_Both = "¨âªÌ";
+MfgV4_Standard = "¼Ð·Ç";
+MfgV4_RawMaterial = "¥Í®Æ";
+MfgV4_Extended = "©µ¦ù";
+MfgV4_Same_Z = "¬Û¦P Z";
+MfgV4_Low_Z = "§C Z";
+MfgV4_Low_ZReverse = "§C Z + °fÂà";
+MfgV4_Up = "¤W";
+MfgV4_Down = "¤U";
+MfgV4_OnPart = "¦b¹s¥ó¤W";
+MfgV4_OnPlane = "¦b¥­­±¤W";
+MfgV4_EbauchePassesParal = "";
+MfgV4_EbaucheChariotage = "";
+MfgV4_EbaucheDressage = "";
+MfgV4_RecessZig_Zag = "";
+MfgV4_Grooving = "";
+MfgV4_Finition = "";
+MfgV4_FinitionOutilGorge = "";
+MfgV4_Interieure = "¤º³¡";
+MfgV4_Exterieure = "¥~³¡";
+MfgV4_Frontale = "«e³¡";
+MfgV4_Front = "«e";
+MfgV4_Back = "«á";
+MfgV4_Each = "¨C¤@¸ô®|";
+MfgV4_End = "¥u¦³³Ì«á¸ô®|";
+MfgV4_Chamfer = "­Ë¨¤";
+MfgV4_Fillet = "¶ê¨¤";
+MfgV4_LeftUp = "¥ª¤W";
+MfgV4_Center = "¤¤¤ß";
+MfgV4_RightDown = "¥k¤U";
+MfgV4_Other = "¨ä¥¦";
+MfgV4_Left = "¥ª";
+MfgV4_Right = "¥k";
+MfgV4_To_spindle = "¦Ü¤M¶b";
+MfgV4_From_spindle = "±q¤M¶b";
+MfgV4_Direct = "ª½±µ";
+MfgV4_Axial_Radial = "¶b¦V-®|¦V";
+MfgV4_Radial_Axial = "®|¦V-¶b¦V";
+MfgV4_Vector = "¦V¶q";
+MfgV4_Circular = "¶ê©P";
+MfgV4_Radius = "¥b®|";
+MfgV4_To = "To";
+MfgV4_On = "On";
+MfgV4_Past = "Past";
+MfgV4_ToHeadStock_Spindle = "¦Ü §÷®Æ / ¤M¶b";
+MfgV4_FromHeadStock_Spindle = "¥Ñ §÷®Æ / ¤M¶b";
+
+MfgMacroAirCuttingFeedrate = "ªÅ¤Á«d¶iµ¹";
+
+
+// FAP : Debut R11
+
+MFG_LATHE_MODIF_RAPID          = "¥HªÅ¤Á«d³t«×§ó´À RAPID";
+MFG_LATHE_RAPID_FEED           = "ªÅ¤Á«d³t«×";
+
+//========================
+// Ramping Operations
+//========================
+MfgLatheDirection                     = "¥[¤u¤è¦V";
+
+MfgLatheRampingReworkMode			  = "­«¥[¤u¼Ò¦¡";
+MfgLatheMOLeadingAngle  = "¾É¤J¨¤«×";
+MfgLatheMOTrailingAngle  = "°h¥X¨¤«×";
+MfgLatheMOGougingAngle  = "¤M²ª¨¤«×";
+MfgLatheRamping1stFlankPlungeDistance = "²Ä¤@ Flank ªº´¡¤M¶ZÂ÷";
+MfgLatheRamping2ndFlankPlungeDistance = "²Ä¤G Flank ªº´¡¤M¶ZÂ÷";
+MfgLatheRampingRecessingStrategy	  = "Recessing ¤è¦¡";
+MfgLatheRampingRoughingStrategy	      = "²Ê¥[¤u¤è¦¡";
+MfgLatheStartRampingPassMode	      = "¶}©l Pass ¼Ò¦¡";
+
+MfgLatheRampingClearance1	      = "²Ä¤@¤M¹w¯d";
+MfgLatheRampingClearance2	      = "²Ä¤G¤M¹w¯d";
+
+MfgLatheRampingAttackChamferLength = "­Ë¨¤¥[¤uªø«×";
+MfgLatheRampingAttackCornerRadius  = "¶ê¨¤¥[¤u¥b®|";
+MfgLatheRampingAttackCornerAngle   = "¶ê¨¤¥[¤u¨¤«×";
+
+MfgLatheRampingPlungeDistance = "­«¥[¤u´¡¤J«e¶ZÂ÷";
+MfgLatheRampingPlungeAngle    = "­«¥[¤u´¡¤J«e¨¤«×";
+
+// Sequential motion geometric features
+MfgLatheSequentialFeature = "¨®§É¶¶§Ç´X¦ó¯S¼x";
+MfgLatheSequentialDeltaFeature = "¼W¶q´X¦ó¯S¼x";
+MfgLatheSequentialFollowFeature = "¦ñÀH´X¦ó¯S¼x";
+MfgLatheSequentialGoStdFeature = "GO ¼Ð·Ç´X¦ó¯S¼x";
+MfgLatheSequentialIndirvFeature = "GO ¤è¦V´X¦ó¯S¼x";
+
+//========================
+// Feature géométriques
+//========================
+LatheFeature = "¨®§É¥i¥[¤u°Ï°ì";
+MfgLatheLongRoughFeature = "²Ê¨®¥[¤u°Ï°ì";
+MfgLatheGroovingFeature = "¼Ñ¨®¥[¤u°Ï°ì";
+MfgLatheRecessingFeature = "Recess ¥[¤u°Ï°ì";
+MfgLatheThreadingFeature = "¨®Á³¯¾¥[¤u°Ï°ì";
+MfgLatheProfileFinishFeature = "¨®§Éºë¥[¤uÂ_­±°Ï°ì";
+MfgLatheGrooveFinishFeature = "¨®§Éºë¥[¤u¼ÑÂ_­±°Ï°ì";
+MfgLatheSequentialGlobalGeomFeature = "¨®§É¶¶§Ç¥[¤uÁ`Åé°Ï°ì";
+MfgLatheRampingRoughingFeature = "¨®§É±×¶i²Ê¥[¤u°Ï°ì";
+MfgLatheRampingRecessingFeature = "¨®§É±×¶i Recess ¥[¤u°Ï°ì";
+
+MfgName = "¦WºÙ";
+MfgComment = "»¡©ú";
+
+MfgLatheInterruptMode = "¤¤Â_¼Ò¦¡";
+MfgLatheInterruptTime = "¤¤Â_®É¶¡";
+MfgLatheInterruptNbOfPass = "¤¤Â_¶¡¸ô®|¼Æ¥Ø";
+
+MFG_LATHE_FEED_STEP_NB = "¶iµ¹¶¥¼Æ¼Æ¥Ø";
+MFG_LATHE_LIGHT_FEED_VALUE = "»´¸ü¤J¶iµ¹";
+MfgLatheRampingContouringMode  = "±×¶i¥~§Î¼Ò¦¡";
+MfgLatheThreadSpringPasses = "Á³±Û¸ô®|";
+
+// FAP : Fin R11
+// AJout LHX R12
+GrooveMachiningDirection = "¥[¤u¤è¦V";
+GrooveAxialStrategy = "¶b¦V¤è¦¡";
+
+// ==================================================//
+// SMG - Macros - CXR12
+// ==================================================//
+MfgMacroBetweenPassesMotions= "¸ô®|¶¡";
+MfgMacroAutomaticRoughingMotions = "¦Û°Ê²Ê¥[¤u";
+MfgMacroHeight= "°ª«×";
+MfgMacroXLength= "¤Á½u¤è¦V¶ZÂ÷";
+MfgMacroYLength= "¤M¶b¤è¦V¶ZÂ÷";
+MfgMacroZLength= "««ª½¤è¦V¶ZÂ÷";
+MfgMacroSide= "««ª½¶b°¼";
+MfgMacroLinkingMode= "Ãìµ²¼Ò¦¡";
+MfgMacroZLAngle= "±×¨¤«×";
+MfgMacroZLLength= "±×ªø«×";
+MfgMacroSafetyDistance= "¦w¥þ¶ZÂ÷";
+MfgMacroPredefinedMode= "¼Ò¦¡";
+// SMG END
+
+// Update R12 - 3X MOs
+M3xStockContouringPosition = "¥[¤u¹s¥ó¥~§Î¦ì¸m";
+M3xStockContouringRatio = "¥[¤u¹s¥ó¥~§Î¤ñ­È";
+M3xStockContouringNumberOfLevel = "¼h¼Æ";
+M3xMachiningDirectionIsManual = "¤â°Ê";
+M3xSideThickness = "°¼Ãä¹w¯d";
+M3xHSMCorneringOnContouringPath = "¥[¤u¹s¥ó¥~§Î¸ô®|¶ê¨¤";
+M3xHSMCornerRadiusOnContouringPath = "¥[¤u¹s¥ó¥~§Î¸ô®|¶ê¨¤¥b®|";
+
+// Transition Element Feature
+//========================
+MfgTransitionElementsFeature = "¶¶±µ¤¸¯À";
+
+// ==================================================//
+// SMG R13
+// ==================================================//
+MfgMacroPreRoughingMotions = "«e¤@°Ê§@";
+MfgMacroPostRoughingMotions = "«á¤@°Ê§@";
+
+M3xIgnoreFacesKO = "©¿²¤µL®Ä­×°Å­±";
+
+// Gestion du brut en cours
+//------------------------------
+
+ActualStock= "§ó·s§÷®Æ";
+
+ActualStock.Title     = "§ó·s¿é¤J§÷®Æ";
+ActualStock.ShortHelp = "§ó·s¿é¤J§÷®Æ";
+ActualStock.Help  = "§ó·s¥Ø«e¤uªkªº¿é¤J§÷®Æ";
+ActualStock.LongHelp  = "§ó·s¥Ø«e¤uªkªº¿é¤J§÷®Æ
+­pºâ©Ò¦³¨®§É¥[¤uªº´X¦ó¤¸¯À.
+©Ò¦³©Î³¡¥÷µ²ªG¯ó¹Ï¥i³Q¿ï¬°¥Ø«e¨B§Çªº¿é¤J§÷®Æ";
+
+// Prefix for Computed Stock
+DefaultPrefixActualStock       = "¿é¤J§÷®Æ¥»Åé";
+DefaultPrefixActualStockSketch = "¿é¤J§÷®Æ¯ó¹Ï";
+
+// Default preaix for Ref axis of the Part Operation
+DefaultRefAxisNamePO = "¹w³]°Ñ¦Ò¥[¤u¶b¨t ";
+
+// ==================================================//
+// ISO / Video accuracy R14
+// Delete unused Features (Ajout VCS R14 le 02/12/03)//
+// ==================================================//
+MfgProgramMCDBasedSimulation = "¼Æ±±½X°ò¥»¼ÒÀÀ";
+MfgProgramCompensationModeSimulation = "¤M¨ã¸ÉÀv¼Ò¦¡";
+
+MfgSetupDesignsAccuracy       = "³]­pºë«×";
+MfgSetupStocksAccuracy        = "§÷®Æºë«×";
+
+Mfg5AxisStartEnd			= "¤º³¡°Ñ¼Æ";
+MfgStart					= "¶}©l";
+MfgToolSideOnGuideCurve			= "¾É¤Þ¦±½u¦ì¸m";
+MfgToolSideOnGuideCurve.LongHelp	= "Specifies the position of the tool on the auxiliary guiding element \nwith respect to the Forward direction.";
+MfgOffsetOnGuideCurve			= "¾É¤Þ¦±½u°¾²¾";
+MfgOffsetOnGuideCurve.LongHelp	= "Specifies the offset to take into account \nfor the side positionning on the auxiliary guiding element.";
+MfgUseGuideCurve				= "¨Ï¥Î¾É¤Þ¦±½u";
+MfgUseGuideCurve.LongHelp		= "Specifies the tool contact mode with the auxiliary guiding element: \n- Always.\n- If Needed (that is only when there is a risk of collision with the drive surface)";
+Mfg5XOutputType			= "¿é¥X¸ÉÀv";
+Mfg5XOutputType.LongHelp	= "Specifies how cutter compensation instructions are to be generated on the NC data output:  
+
+None
+Compensation is not computed.
+
+3D contact
+Compensation is computed along a 3D vector (XN, YN, ZN), normal to the part surface, in contact with the end of the tool. 
+The radius that is compensated is the corner radius.
+Output is the contact point (XC, YC, ZC) and the part surface normal (XN, YN, ZN). 
+The tool tip point (XT, YT, ZT) may also be given if this choice is set on the machine. 
+Tool axis vector (IJK) is output in multi-axis.";
+MfgMacroFeedrateType= "¶iµ¹«¬¦¡";
+MfgMacroFeedrateValue="¶iµ¹³t«×";
+MfgMacroSpindleSpeedType="¤M¶b³t«×§Î¦¡";
+MfgMacroSpindleSpeedValue="¤M¶b³t«×­È";
+
+DeleteUnusedFeatPanelTitle = "§R°£¥¼¨Ï¥Î¯S¼x";
+DeleteUnusedFeatNbFound    = " §ä¨ì¥¼¨Ï¥Î¯S¼x";
+DeleteUnusedFeatAction     = "¿ï¾Ü¦¸²M³æ¯S¼x©M ©Î ¦³®Ä ¨ú®ø";
+
+And = " ©M ";
+Between = " ¤§¶¡ ";
+MfgApproachMacro            ="¶i¤M°Æµ{¦¡";
+MfgRetractMacro             ="°h¤M°Æµ{¦¡";
+MfgReturnTwoLevelMacroApp   ="¼h¶¡ªð¦^¶i¤M°Æµ{¦¡";
+MfgReturnTwoLevelMacroRet   ="¼h¶¡ªð¦^°h¤M°Æµ{¦¡";
+MfgReturnOneLevelMacroApp   ="³æ¼hªð¦^¶i¤M°Æµ{¦¡";
+MfgReturnOneLevelMacroRet   ="³æ¼hªð¦^°h¤M°Æµ{¦¡";
+MfgReturnFinishPathMacroApp ="ºë¨®ªð¦^¶i¤M°Æµ{¦¡";
+MfgReturnFinishPathMacroRet ="ºë¨®ªð¦^°h¤M°Æµ{¦¡";
+MfgLinkingMacroApp          ="Ãìµ²¶i¤M°Æµ{¦¡";
+MfgLinkingMacroRet          ="Ãìµ²°h¤M°Æµ{¦¡";
+
+// Editor for Machining Axis System
+//=================================
+Origin = "­ìÂI";
+Origin.LongHelp = "Specifies that an origin is to be specified instead of a machining axis system";
+
+Number = " ¼Æ¥Ø : ";
+Number.LongHelp = "For certain machine types, specifies the origin number\nAvailable only for origins";
+
+Group = " ¸s²Õ : ";
+Group.LongHelp = "For certain machine types, specifies the origin group\nAvailable only for origins";
+
+Name = "¶b¦WºÙ : ";
+Name.LongHelp = "Specifies the name of the machining axis system or origin";
+
+NCOutputParameters = "NC ¿é¥X°Ñ¼Æ";
+
+// ==================================================//
+// Ajout Prismatic Roughing (Rcn le 08/01/04)
+// ==================================================//
+M3xLimitContinuityTol = "ºë«×";
+M3xPRSweepingMode = "¤M¨ã¸ô«¬¦¡";
+M3xLimitPosition = "°±¤î¦ì¸m";
+M3xTruncatedTransitionPath = "ºIÂ_¶¶±µ¸ô®|";
+
+// ==================================================//
+// Ajout (PGD le 08/01/04)
+// ==================================================//
+MfgOpposite 			="¬Û¹ïµ{¦¡¼Ò¦¡";
+MfgGrooveMachiningDirection 	="¥[¤u¤è¦V";
+MfgGrooveAxialStrategy 		="¶b¦V¤è¦¡";
+MfgTopFinishPathThickness 	="³»©Î©³³¡ºë¥[¤u¹w¯d";
+MFG_RELIMIT_HOLE_ORIGIN 	="ºIÂ_¤Õ­ìÂI";
+MFG_INVERSE_PATTERN_ORDERING 	="°fÂà°}¦C¶¶§Ç";
+MFG_MACHINE_BLIND_THROUGH 	="¥[¤uª¼¤Õ©Î¬ï¤Õ";
+
+MfgLmtSpindleNumber       = "¤M¶b¼Æ¥Ø";
+MFG_LATHE_MAX_SPNDL_SPEED = "³Ì¤j¤M¶b³t«×";
+MfgLmtSpiCenterX          = "¤M¶b¤¤¤ß X";
+MfgLmtSpiCenterY          = "¤M¶b¤¤¤ß Y";
+MfgLmtSpiCenterZ          = "¤M¶b¤¤¤ß Z";
+MfgLmtSpiInitAngle        = "ªì©l¤M¶b¨¤«×¦ì¸m (¤º³¡°Ñ¼Æ)";
+MfgLmtSpiRotaryAngle      = "±ÛÂà¨¤«× (¤º³¡°Ñ¼Æ)";
+
+MfgLmtTurretNumber        = "Turret ¼Æ¥Ø";
+MfgLmtTurNbToolPos        = "¤M¨ã¦ì¸m¼Æ¥Ø (¤º³¡°Ñ¼Æ)";
+MfgLmtTurMaxToolStored    = "³Ì¤j¤M¨ã¼Æ¥Ø (¤º³¡°Ñ¼Æ)";
+MfgLmtTurFirstToolNum     = "²Ä¤@§â¤M (¤º³¡°Ñ¼Æ)";
+MfgLmtTurLastToolNum      = "³Ì«á¤@§â¤M (¤º³¡°Ñ¼Æ)";
+MfgLmtTurRefPtX           = "Turret °Ñ¦ÒÂI X";
+MfgLmtTurRefPtY           = "Turret °Ñ¦ÒÂI Y";
+MfgLmtTurRefPtZ           = "Turret °Ñ¦ÒÂI Z";
+MfgLmtTurToolChgPtX       = "¤M¨ã§ó´«ÂI X";
+MfgLmtTurToolChgPtY       = "¤M¨ã§ó´«ÂI Y";
+MfgLmtTurToolChgPtZ       = "¤M¨ã§ó´«ÂI Z";
+
+//========================
+// LongHelp PPR Tree
+//========================
+
+MissingTurretOnProgram = "/p1 ¥¼§¹¦¨ \n ¦]¬°¨S¦³»Pµ{¦¡¬ÛÃöªº turret.";
+ProgramWithNoTurret = "/p1 ¨S¦³¬ÛÃöªº turret. \n ¦p±z­n«Ø¥ß¨®§É°Ê§@,\n ±z¥²¶·«ü©w¤@­Ó turret.";
+
+MfgProgramOptimization = "µ{¦¡³Ì¨Î¤Æ";
+
+// Update R15 - 3X MOs
+M3xRepartitionMode = "¤À°t¼Ò¦¡";
+M3xGuideContinuityTol = "¾É¤Þºë«×";
+M3xConstantByFace = "¥H°Ï°ì¤À°t";
+M3xStepOverModeBetweenContour = "Å|¼h¼Ò¦¡";
+M3xSMSStopPosition1 = "¾É¤Þ2 ªº°±¤î¦ì¸m";
+M3xSMSLimitOverShoot1 = "¾É¤Þ2ªº¹w¯d";
+M3xSMSGuideOffsetUpdated = "¥¼¨Ï¥Î";
+M3xStepOverModeZLevel = "Å|¼h¼Ò¦¡";
+M3xStepOverModeSweeping = "Å|¼h¼Ò¦¡";
+M3xHardDistinctMode = "´î­«¼Ñªº©ú½T«¬¦¡";
+M3xHardComplementaryMode = "´î­«¼Ñªº¤M¨ã¸ô®|«¬¦¡";
+M3xToolCoreDiameter1 = "¥¼¨Ï¥Î";
+M3xPocketFilter = "´î­«¼Ñ¹LÂo¾¹";
+M3xSmallPassFilter = "¤p«¬¸ô®|¹LÂo";
+M3xMultiPocketsStrategy = "¥[¤u¤è¦¡";
+M3xMultiPocketsSweepingMode = "¤M¨ã¸ô®|«¬¦¡";
+M3xOffsetImposedPlane2 = "±j¨î¥­­±2 ¤W¹w¯d";
+M3xSideBottomFinishThickness = "°¼­±ªº©³³¡ºë¥[¤u¹w¯d";
+M3xSideMaxDepthOfCut = "°¼­±ªº³Ì¤j¥[¤u²`«×";
+
+ManufacturingSynchronisation = "¦P¨B¤Æ";
+MfgDefaultPositionOfSynchronisation = "¦P¨B¤Æ¦ì¸m";
+
+
+
+
+

@@ -1,0 +1,314 @@
+//
+// ---------------------------
+// Maillauto global parameters dialog
+// ---------------------------
+//
+
+Title="總體參數";
+Help="設定總體參數";
+ShortHelp="設定總體參數";
+LongHelp="設定網格化零件總體參數";
+
+TriaFrame.TriaTabContainer.GeomTabTria.Title="幾何";
+TriaFrame.TriaTabContainer.MeshTabTria.Title="網格";
+
+QuadFrame.QuadTabContainer.GeomTabQuad.Title="幾何";
+QuadFrame.QuadTabContainer.MeshTabQuad.Title="網格";
+
+MethodFrame.MethodLabel.Title = "網格形式  ";
+MethodFrame.MethodLabel.LongHelp = "設定曲面網格形式  ";
+
+MethodFrame.Button1.Title = "前端三角形";
+MethodFrame.Button1.Help = "設定前端三角形方式";
+MethodFrame.Button1.ShortHelp = "設定前端三角形方式";
+MethodFrame.Button1.LongHelp = "設定前端三角形方式";
+
+MethodFrame.Button2.Title = "前端四邊形";
+MethodFrame.Button2.Help = "設定前端四邊形方式";
+MethodFrame.Button2.ShortHelp = "設定前端四邊形方式";
+MethodFrame.Button2.LongHelp = "設定前端四邊形方式";
+
+elementFrame.elementLabel.Title = "元素型式  ";
+elementFrame.elementLabel.LongHelp = "設定曲面網格的元素型式.";
+
+elementFrame.RBLinear.Title="線性";
+elementFrame.RBLinear.Help="使用線性元素型式";
+elementFrame.RBLinear.ShortHelp="使用線性元素型式";
+elementFrame.RBLinear.RBLinear.LongHelp="使用線性元素型式";
+
+elementFrame.RBParabolic.Title="拋物線";
+elementFrame.RBParabolic.Help="使用拋物線元素型式";
+elementFrame.RBParabolic.ShortHelp="使用拋物線元素型式";
+elementFrame.RBParabolic.LongHelp="使用拋物線元素型式";
+
+GeometrySelDlg.Title="幾何選擇器";
+CATMSHDlgMtoParams.GeometrySelDlg.Title="幾何選擇器";
+
+TriaFrame.TriaTabContainer.MeshTabTria.MaxSizeLbl.Title="網格尺寸";
+TriaFrame.TriaTabContainer.MeshTabTria.MaxSizeLbl.LongHelp="設定網格化零件總體尺寸.";
+
+TriaFrame.TriaTabContainer.MeshTabTria.OffsetLbl.Title="偏移 ";
+TriaFrame.TriaTabContainer.MeshTabTria.OffsetLbl.LongHelp="設定網格化零件總體偏移.";
+
+TriaFrame.TriaTabContainer.GeomTabTria.CleanSizeLbl.Title="孔最小尺寸 ";
+TriaFrame.TriaTabContainer.GeomTabTria.CleanSizeLbl.LongHelp="設定要計入的孔最小尺寸.";
+
+TriaFrame.TriaTabContainer.GeomTabTria.MinSizeLbl.Title="最小尺寸   ";
+TriaFrame.TriaTabContainer.GeomTabTria.MinSizeLbl.LongHelp="設定最小元素尺寸.";
+
+TriaFrame.TriaTabContainer.GeomTabTria.SagLbl.Title="拘束弧差 ";
+TriaFrame.TriaTabContainer.GeomTabTria.SagLbl.LongHelp="設定網格化零件的拘束弧差.";
+
+TriaFrame.TriaTabContainer.MeshTabTria.MeshSagValueLbl.Title="絕對弧差";
+
+TriaFrame.TriaTabContainer.MeshTabTria.MeshAbsSag.Title="絕對弧差";
+TriaFrame.TriaTabContainer.MeshTabTria.MeshAbsSag.LongHelp="如勾選, 將計入絕對弧差.";
+
+TriaFrame.TriaTabContainer.MeshTabTria.MeshAbsSagValueLbl.Title="絕對弧差數值";
+
+TriaFrame.TriaTabContainer.MeshTabTria.MeshRelSag.Title="相對弧差";
+TriaFrame.TriaTabContainer.MeshTabTria.MeshRelSag.LongHelp="如勾選, 將計入相對弧差.";
+
+TriaFrame.TriaTabContainer.MeshTabTria.MeshRelSagValueLbl.Title="相對弧差數值";
+
+TriaFrame.TriaTabContainer.GeomTabTria.TolCaptureLbl.Title="精度";
+TriaFrame.TriaTabContainer.GeomTabTria.TolCaptureLbl.LongHelp="設定曲線自動抓取的精度.";
+
+TriaFrame.TriaTabContainer.MeshTabTria.MeshCaptureToleranceLbl.Title="精度";
+TriaFrame.TriaTabContainer.MeshTabTria.MeshCaptureToleranceLbl.LongHelp="設定自動網格抓取精度.";
+
+TriaFrame.TriaTabContainer.MeshTabTria.CaptureFilter.Title="過濾器";
+TriaFrame.TriaTabContainer.MeshTabTria.CaptureFilter.ShortHelp="濃縮過濾器";
+TriaFrame.TriaTabContainer.MeshTabTria.CaptureFilter.LongHelp="允許選擇網格來抓取.";
+
+TriaFrame.TriaTabContainer.MeshTabTria.MinSizeForSagLbl.Title="最小尺寸";
+TriaFrame.TriaTabContainer.MeshTabTria.MinSizeForSagLbl.LongHelp="設定以弧差網格的最小尺寸.";
+
+TriaFrame.TriaTabContainer.MeshTabTria.CaptureAuto.Title="自動網格抓取";
+TriaFrame.TriaTabContainer.MeshTabTria.CaptureAuto.Help="啟動或關閉自動網格抓取";
+TriaFrame.TriaTabContainer.MeshTabTria.CaptureAuto.LongHelp="啟動或關閉自動網格抓取.";
+
+TriaFrame.TriaTabContainer.GeomTabTria.CurveAuto.Title="曲線自動抓取";
+TriaFrame.TriaTabContainer.GeomTabTria.CurveAuto.Help="啟動或關閉曲線自動抓取";
+TriaFrame.TriaTabContainer.GeomTabTria.CurveAuto.LongHelp="啟動或關閉曲線自動抓取";
+
+TriaFrame.TriaTabContainer.GeomTabTria.DetailSimplification.Title="簡化時溶合";
+TriaFrame.TriaTabContainer.GeomTabTria.DetailSimplification.Help="啟動或關閉簡化時溶合";
+TriaFrame.TriaTabContainer.GeomTabTria.DetailSimplification.LongHelp="啟動或關閉簡化時溶合";
+
+TriaFrame.TriaTabContainer.MeshTabTria.StripOptimization.Title="線條最佳化";
+TriaFrame.TriaTabContainer.MeshTabTria.StripOptimization.Help="啟動或關閉沿線條節點位置最佳化";
+TriaFrame.TriaTabContainer.MeshTabTria.StripOptimization.LongHelp="啟動或關閉沿線條節點位置最佳化";
+
+TriaFrame.TriaTabContainer.GeomTabTria.FaceAngleLabel.Title="修剪面間角度";
+TriaFrame.TriaTabContainer.GeomTabTria.FaceAngleLabel.LongHelp="設定修剪面間角度";
+
+TriaFrame.TriaTabContainer.GeomTabTria.CurveAngleLabel.Title="曲線間角度";
+TriaFrame.TriaTabContainer.GeomTabTria.CurveAngleLabel.LongHelp="設定曲線間角度";
+
+QuadFrame.QuadTabContainer.MeshTabQuad.MaxSize2Lbl.Title="網格尺寸";
+QuadFrame.QuadTabContainer.MeshTabQuad.MaxSize2Lbl.LongHelp="設定網格化零件總體尺寸.";
+
+QuadFrame.QuadTabContainer.MeshTabQuad.Offset2Lbl.Title="偏移 ";
+QuadFrame.QuadTabContainer.MeshTabQuad.Offset2Lbl.LongHelp="設定網格化零件總體偏移.";
+
+QuadFrame.QuadTabContainer.GeomTabQuad.CleanSize2Lbl.Title="孔最小尺寸 ";
+QuadFrame.QuadTabContainer.GeomTabQuad.CleanSize2Lbl.LongHelp="設定要計入的孔最小尺寸.";
+
+QuadFrame.QuadTabContainer.GeomTabQuad.MinSize2Lbl.Title="最小尺寸   ";
+QuadFrame.QuadTabContainer.GeomTabQuad.MinSize2Lbl.LongHelp="設定最小尺寸.";
+
+QuadFrame.QuadTabContainer.GeomTabQuad.Sag2Lbl.Title="拘束弧差 ";
+QuadFrame.QuadTabContainer.GeomTabQuad.Sag2Lbl.LongHelp="設定網格化零件的拘束弧差.";
+
+QuadFrame.QuadTabContainer.MeshTabQuad.MinimizeTriangles.Title="三角形最小化";
+QuadFrame.QuadTabContainer.MeshTabQuad.MinimizeTriangles.LongHelp="如勾選, 三角形的數目最小化.";
+
+QuadFrame.QuadTabContainer.MeshTabQuad.OptimizeRegularity.Title="方向性網格";
+QuadFrame.QuadTabContainer.MeshTabQuad.OptimizeRegularity.LongHelp="如勾選且可能的話, 網格將順著方向.";
+
+QuadFrame.QuadTabContainer.GeomTabQuad.TolCapture2Lbl.Title="精度";
+QuadFrame.QuadTabContainer.GeomTabQuad.TolCapture2Lbl.LongHelp="設定曲線自動抓取的精度.";
+
+QuadFrame.QuadTabContainer.MeshTabQuad.MeshCaptureTolerance2Lbl.Title="精度";
+QuadFrame.QuadTabContainer.MeshTabQuad.MeshCaptureTolerance2Lbl.LongHelp="設定自動網格抓取的精度.";
+
+QuadFrame.QuadTabContainer.MeshTabQuad.CaptureAuto2.Title="自動網格抓取";
+QuadFrame.QuadTabContainer.MeshTabQuad.CaptureAuto2.Help="啟動或關閉自動網格抓取";
+QuadFrame.QuadTabContainer.MeshTabQuad.CaptureAuto2.LongHelp="啟動或關閉自動網格抓取";
+
+QuadFrame.QuadTabContainer.GeomTabQuad.CurveAuto2.Title="曲線自動抓取";
+QuadFrame.QuadTabContainer.GeomTabQuad.CurveAuto2.Help="啟動或關閉曲線自動抓取";
+QuadFrame.QuadTabContainer.GeomTabQuad.CurveAuto2.LongHelp="啟動或關閉曲線自動抓取";
+
+QuadFrame.QuadTabContainer.GeomTabQuad.DetailSimplification2.Title="簡化時溶合";
+QuadFrame.QuadTabContainer.GeomTabQuad.DetailSimplification2.Help="啟動或關閉簡化時溶合";
+QuadFrame.QuadTabContainer.GeomTabQuad.DetailSimplification2.LongHelp="啟動或關閉簡化時溶合";
+
+QuadFrame.QuadTabContainer.MeshTabQuad.StripOptimization.Title="線條最佳化";
+QuadFrame.QuadTabContainer.MeshTabQuad.StripOptimization.Help="啟動或關閉沿線條節點位置最佳化";
+QuadFrame.QuadTabContainer.MeshTabQuad.StripOptimization.LongHelp="啟動或關閉沿線條節點位置最佳化";
+
+QuadFrame.QuadTabContainer.GeomTabQuad.FaceAngleLabel2.Title="修剪面間角度";
+QuadFrame.QuadTabContainer.GeomTabQuad.FaceAngleLabel2.LongHelp="設定修剪面間角度";
+
+QuadFrame.QuadTabContainer.GeomTabQuad.CurveAngleLabel2.Title="曲線間角度";
+QuadFrame.QuadTabContainer.GeomTabQuad.CurveAngleLabel2.LongHelp="設定曲線間角度";
+
+//
+// Error Panel.
+//
+CATMSHCmdMtoParams.ErrorCoherence0.Title="錯誤";
+CATMSHCmdMtoParams.ErrorCoherence0.Text="網格尺寸必須大於 0.";
+
+CATMSHCmdMtoParams.ErrorCoherence1.Title="錯誤";
+CATMSHCmdMtoParams.ErrorCoherence1.Text="最小尺寸必須大於 0.";
+
+CATMSHCmdMtoParams.ErrorCoherence2.Title="錯誤";
+CATMSHCmdMtoParams.ErrorCoherence2.Text="最小弧差尺寸必須大於 0.";
+
+CATMSHCmdMtoParams.ErrorCoherence3.Title="錯誤";
+CATMSHCmdMtoParams.ErrorCoherence3.Text="拘束弧差必須大於 0.";
+
+CATMSHCmdMtoParams.ErrorCoherence4.Title="錯誤";
+CATMSHCmdMtoParams.ErrorCoherence4.Text="最小孔尺寸必須大於 0.";
+
+CATMSHCmdMtoParams.ErrorCoherence5.Title="錯誤";
+CATMSHCmdMtoParams.ErrorCoherence5.Text="網格抓取精度必須大於 0.";
+
+CATMSHCmdMtoParams.ErrorCoherence6.Title="錯誤";
+CATMSHCmdMtoParams.ErrorCoherence6.Text="曲線抓取精度必須大於 0.";
+
+CATMSHCmdMtoParams.ErrorCoherence7.Title="錯誤";
+CATMSHCmdMtoParams.ErrorCoherence7.Text="絕對弧差尺寸必須大於 0.";
+
+CATMSHCmdMtoParams.ErrorCoherence8.Title="錯誤";
+CATMSHCmdMtoParams.ErrorCoherence8.Text="最小尺寸必須較大.( 最小尺寸 > 0.001 * 網格大小 )";
+
+CATMSHCmdMtoParams.ErrorCoherence9.Title="錯誤";
+CATMSHCmdMtoParams.ErrorCoherence9.Text="網格尺寸必須大於最小尺寸.";
+
+CATMSHCmdMtoParams.ErrorCoherence10.Title="錯誤";
+CATMSHCmdMtoParams.ErrorCoherence10.Text="弧差必須較小. ( 弧差 < 0.2* 網格大小 )";
+
+CATMSHCmdMtoParams.ErrorCoherence11.Title="錯誤";
+CATMSHCmdMtoParams.ErrorCoherence11.Text="弧差必須較大. ( 弧差 > 0.05 * 網格大小 )";
+
+CATMSHCmdMtoParams.ErrorCoherence12.Title="錯誤";
+CATMSHCmdMtoParams.ErrorCoherence12.Text="偏移必須較小一點";
+
+CATMSHCmdMtoParams.ErrorCoherence13.Title="錯誤";
+CATMSHCmdMtoParams.ErrorCoherence13.Text="比較弧差值必須為正值.";
+
+CATMSHCmdMtoParams.ErrorCoherence14.Title="錯誤";
+CATMSHCmdMtoParams.ErrorCoherence14.Text="最小尺寸必須比網格尺寸小.";
+
+CATMSHCmdMtoParams.ParamsTopoChanged.Title="警告";
+CATMSHCmdMtoParams.ParamsTopoChanged.Text="此修改使得幾何簡易化無效.";
+
+CATMSHCmdMtoParams.ParamsMeshChanged.Title="警告";
+CATMSHCmdMtoParams.ParamsMeshChanged.Text="此修改使得網格無效.";
+
+//
+// Ajout pour le mailleur associatif
+//
+
+TabContainer.GeomTab.Title="幾何";
+TabContainer.MeshTab.Title="網格";
+
+TabContainer.MeshTab.MethodLabel.Title = "外形: ";
+TabContainer.MeshTab.MethodLabel.LongHelp = "設定曲面網格元素的外形.";
+
+TabContainer.MeshTab.ShapeFrame.Button1.Title = "前面三角形";
+TabContainer.MeshTab.ShapeFrame.Button1.Help = "設定前面三角形方式";
+TabContainer.MeshTab.ShapeFrame.Button1.ShortHelp = "設定前面三角形方式";
+TabContainer.MeshTab.ShapeFrame.Button1.LongHelp = "設定前面三角形方式";
+
+TabContainer.MeshTab.ShapeFrame.Button2.Title = "前面四邊形";
+TabContainer.MeshTab.ShapeFrame.Button2.Help = "設定前面四邊形方式";
+TabContainer.MeshTab.ShapeFrame.Button2.ShortHelp = "設定前面四邊形方式";
+TabContainer.MeshTab.ShapeFrame.Button2.LongHelp = "設定前面四邊形方式";
+
+TabContainer.MeshTab.elementLabel.Title = "型式: ";
+TabContainer.MeshTab.elementLabel.LongHelp = "設定曲面網格的元素型式.";
+
+TabContainer.MeshTab.ElementTypeFrame.RBLinear.Title="線性";
+TabContainer.MeshTab.ElementTypeFrame.RBLinear.Help="使用線性元素型式";
+TabContainer.MeshTab.ElementTypeFrame.RBLinear.ShortHelp="使用線性元素型式";
+TabContainer.MeshTab.ElementTypeFrame.RBLinear.RBLinear.LongHelp="使用線性元素型式";
+
+TabContainer.MeshTab.ElementTypeFrame.RBParabolic.Title="拋物線";
+TabContainer.MeshTab.ElementTypeFrame.RBParabolic.Help="使用拋物線元素型式";
+TabContainer.MeshTab.ElementTypeFrame.RBParabolic.ShortHelp="使用拋物線元素型式";
+TabContainer.MeshTab.ElementTypeFrame.RBParabolic.LongHelp="使用拋物線元素型式";
+
+TabContainer.MeshTab.Frame.TriaFrame.MaxSizeLbl.Title="網格大小";
+TabContainer.MeshTab.Frame.TriaFrame.MaxSizeLbl.LongHelp="設定網格零件的總體網格大小.";
+
+TabContainer.MeshTab.Frame.QuadFrame.MaxSizeLbl.Title="網格大小";
+TabContainer.MeshTab.Frame.QuadFrame.MaxSizeLbl.LongHelp="設定網格零件的總體網格大小.";
+
+TabContainer.MeshTab.Frame.TriaFrame.MeshAbsSag.Title="絕對弧差";
+TabContainer.MeshTab.Frame.TriaFrame.MeshAbsSag.LongHelp="如勾選, 絕對弧差將計入.";
+
+TabContainer.MeshTab.Frame.TriaFrame.MeshAbsSagValueLbl.Title="絕對弧差數值";
+
+TabContainer.MeshTab.Frame.TriaFrame.MeshRelSag.Title="相對弧差";
+TabContainer.MeshTab.Frame.TriaFrame.MeshRelSag.LongHelp="如勾選, 相對弧差將計入.";
+
+TabContainer.MeshTab.Frame.TriaFrame.MeshRelSagValueLbl.Title="相對弧差數值";
+
+TabContainer.MeshTab.Frame.TriaFrame.MinSizeForSagLbl.Title="最小大小";
+TabContainer.MeshTab.Frame.TriaFrame.MinSizeForSagLbl.LongHelp="設定含弧差網格的最小元素大小.";
+
+TabContainer.MeshTab.Frame.QuadFrame.CaptureAuto.Title="自動網格抓取";
+TabContainer.MeshTab.Frame.QuadFrame.CaptureAuto.Help="啟動或關閉 自動網格抓取";
+TabContainer.MeshTab.Frame.QuadFrame.CaptureAuto.LongHelp="啟動或關閉 自動網格抓取";
+
+TabContainer.MeshTab.Frame.TriaFrame.CaptureAuto.Title="自動網格抓取";
+TabContainer.MeshTab.Frame.TriaFrame.CaptureAuto.Help="啟動或關閉 自動網格抓取";
+TabContainer.MeshTab.Frame.QuadFrame.CaptureAuto.LongHelp="啟動或關閉 自動網格抓取";
+
+TabContainer.MeshTab.Frame.QuadFrame.MeshCaptureToleranceLbl.Title="精度";
+TabContainer.MeshTab.Frame.QuadFrame.MeshCaptureToleranceLbl.LongHelp="設定自動網格抓取精度.";
+
+TabContainer.MeshTab.Frame.TriaFrame.MeshCaptureToleranceLbl.Title="精度";
+TabContainer.MeshTab.Frame.TriaFrame.MeshCaptureToleranceLbl.LongHelp="設定自動網格抓取精度.";
+
+TabContainer.MeshTab.CaptureFilter.Title="過濾器";
+TabContainer.MeshTab.CaptureFilter.ShortHelp="縮減過濾器";
+TabContainer.MeshTab.CaptureFilter.LongHelp="允許選擇網格來抓取.";
+
+TabContainer.MeshTab.Frame.QuadFrame.DefaultMesh.Title = "預設方式";
+TabContainer.MeshTab.Frame.QuadFrame.DefaultMesh.LongHelp = "預設網格的設定型式.";
+
+Mapped = "對應自由網格";
+MinimalMesh = "最小網格";
+
+TabContainer.GeomTab.TopologySizeLbl.Title="拘束參考大小";
+TabContainer.GeomTab.TopologySizeLbl.LongHelp="設定拘束參考大小";
+
+TabContainer.GeomTab.ModifyTopologySize.Title="網格大小外的拘束";
+TabContainer.GeomTab.ModifyTopologySize.LongHelp="網格大小外的拘束";
+
+TabContainer.GeomTab.TopologySagLbl.Title="拘束弧差";
+TabContainer.GeomTab.TopologySagLbl.LongHelp="設定初始化的拘束弧差";
+
+TabContainer.GeomTab.SharpEdges.Title="新增銳邊";
+TabContainer.GeomTab.SharpEdges.LongHelp="如勾選, 將計入新增銳邊";
+
+TabContainer.GeomTab.FaceAngleLbl.Title="銳邊角度";
+TabContainer.GeomTab.FaceAngleLbl.LongHelp="設定銳邊角度";
+
+TabContainer.GeomTab.CleanSizeLbl.Title="最小孔大小 ";
+TabContainer.GeomTab.CleanSizeLbl.LongHelp="設定最小孔大小將計入.";
+
+TabContainer.GeomTab.OffsetLbl.Title="偏移 ";
+TabContainer.GeomTab.OffsetLbl.LongHelp="設定網格的總體偏移.";
+
+TabContainer.GeomTab.CurveAuto.Title="自動曲線抓取";
+TabContainer.GeomTab.CurveAuto.Help="啟動或關閉 自動曲線抓取";
+TabContainer.GeomTab.CurveAuto.LongHelp="啟動或關閉 自動曲線抓取";
+
+TabContainer.GeomTab.TolCaptureLbl.Title="精度";
+TabContainer.GeomTab.TolCaptureLbl.LongHelp="設定自動曲線抓取的精度.";

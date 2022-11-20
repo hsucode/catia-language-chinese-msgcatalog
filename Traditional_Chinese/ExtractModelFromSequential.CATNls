@@ -1,0 +1,68 @@
+//=======================================================================
+// MODULE : ExtractModelFromSequential_Engine
+//=======================================================================
+//
+//--------------------------------------
+//  Messages from ExtractModelFromSequential Batch
+//--------------------------------------
+//
+ReportBegin="順序萃取模式 - 報告";
+ReportEnd  ="順序萃取模式 - 報告結束";
+SequentialFileName="處理的序列檔案";
+ModeDemo="批次作業中止 : 展示版本 - 無法輸出檔案";
+OutputDirectory="輸出目錄";
+ModelGenerateName="產生模型";
+ModelCreationDate  ="   建立日期    
+ModelLastModifDate="   最後的修改日期: ";
+BatchAborted1="批次處理忽略 - 返回碼 =";
+BatchAborted2="沒有模型被處理";
+BatchSuccess="批次處理成功 - 返回碼 =";
+BatchPartial="批次處理部份執行 - 返回碼 =";
+ModelProcessed="模型已被處理";
+ModelAborted="模型被中斷";
+// Errors messages -------------------------------------------------
+ErrorMsg1001a="無效的文件類型";
+ErrorMsg1001b="序列檔必須是一個  '.exp' or dlv3 檔";
+ErrorMsg1002a="無效的資料結構";
+ErrorMsg1003a="無效的目錄";
+ErrorMsg1003b="目錄不存在";
+ErrorMsg1004a="無效的目錄";
+ErrorMsg1004b="目錄和成員的名稱之間衝突";
+ErrorMsg1005a="無效的目錄";
+ErrorMsg1005b="拒絕讀取";
+ErrorMsg1006a="無效的目錄";
+ErrorMsg1006b="拒絕寫入";
+ErrorMsg1007a="讀取檔案時發生問題";
+ErrorMsg1007b="檔案不存在";
+ErrorMsg1008a="讀取檔案時發生問題";
+ErrorMsg1008b="拒絕讀取";
+ErrorMsg1009a="讀取檔案時發生問題";
+ErrorMsg1009b="檔案使用中";
+ErrorMsg1010a="寫入檔案時發生問題";
+ErrorMsg1010b="拒絕寫入";
+ErrorMsg1011a="寫入檔案時發生問題";
+ErrorMsg1011b="檔案已經存在且不能覆寫";
+ErrorMsg1012a="寫入檔案時發生問題";
+ErrorMsg1012b="寫入時發生內部錯誤";
+ErrorMsg1013="警告 : 開啟輸出檔案錯誤 :
+\t  <&param01.>
+\t  檔案名稱含有不可使用的字元且會更改成 :
+\t  <&param02.>
+";
+ErrorMsg1102a="批次錯誤; 輸入參數太多";
+ErrorMsg1997a="內部錯誤";
+// --- Specific messages for Commande mode
+ErrorMsg1500="無效參數 - 參數重覆定義或無效組合 :";
+ErrorMsg1501="缺少參數 - 主要參數遺失 
+-id / -od / -if (or -il) 為主要的";
+ErrorMsg1502="無效參數 - 未知參數 :";
+HelpMsg="使用方法 : 
+    CATExtractModelFromSequential -h -id inputDirectory [-if inputfile/-il inputlist] -od outputDirectory -report reportFile.txt
+       -h	 : 求助
+       -id	 : 輸入序列目錄或 DLNAME
+       -if       : 如不是 -il 參數則, 
+                   輸入檔案內含有適當副檔名(如 .dlv3 或 .exp)的檔案順序
+       -il       : 輸入含有適當副檔名的順序檔表列.
+                   -if 或 -il 參數為必須的 
+       -od	 : 輸出模型目錄或 DLNAME
+       -report   : 報告檔案名稱"; 

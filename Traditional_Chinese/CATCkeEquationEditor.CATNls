@@ -1,0 +1,76 @@
+// COPYRIGHT DASSAULT SYSTEMES  1997
+//=============================================================================
+//
+// Catalog for CATCkeEquationEditor class
+//
+//=============================================================================
+// 10/22/97   Creation                                   A. Anquetil
+//============================================================================
+
+//titres
+CATCkeEquationEditor.Solution1.Title = "規則編輯器";
+CATCkeEquationEditor.Solution2.Title = "檢查編輯器";
+CATCkeEquationEditor.Solution3.Title = "方程式編輯器: /P1";
+CATCkeEquationEditor.Solution4.Title = "方程式編輯器";
+
+//bouton erase
+CATCkeEquationEditor.pbclearTexte_.Title = "清除";
+CATCkeEquationEditor.pbclearTexte_.Help = "清除公式欄位";
+CATCkeEquationEditor.pbclearTexte_.LongHelp = "清除公式欄位";
+
+CATCkeEquationEditor.f1line_.Help = "編輯表現方式內容";
+
+CATCkeEquationEditor.bmore_.Title = "精靈";
+CATCkeEquationEditor.bmore_.Help  = "開啟編輯精靈";
+CATCkeEquationEditor.bmore_.LongHelp = "開啟從表列過濾器中所含編輯字典的精靈,\n
+					您可以按一下要編輯公式的結果表, \n
+					來存取參數, 數學式, 字串功能, 單位等 ... ";
+
+
+//notification
+CATCkeEquationEditor.notifyCompilError_.Title = "文法錯誤";
+CATCkeEquationEditor.notifyCompilError_.Text = "無效的方程式: 不能儲存";
+
+//help
+CATCkeEquationEditor.Help1.Title = "規則編輯器說明";
+CATCkeEquationEditor.Help2.Title = "檢查編輯器說明";
+CATCkeEquationEditor.Help3.Title = "方程式編輯器說明";
+
+//warning
+CATCkeEquationEditor.Warning_.Title = "警告";
+CATCkeEquationEditor.NoOutParamWarning_.Text = "您必須指定參數來試算";
+CATCkeEquationEditor.NewRelationWarning_.Text = "您要指定此方程式成為目前試算的方程式嗎: /P1\n 輸入N會將目前方程式變為不可執行, 取消會回到前一畫面.";
+CATCkeEquationEditor.CycleWarning_.Text = "目前計算會產生循環計算, 此計算會被停止";
+
+CATCkeEquationEditor.lCategory_.Title = "字典";
+CATCkeEquationEditor.slCategory_.Line1 = "參數";
+CATCkeEquationEditor.slCategory_.Line2 = "主要字元";
+CATCkeEquationEditor.slCategory_.Line3 = "單位";
+CATCkeEquationEditor.slCategory_.Line4 = "運算因子";
+CATCkeEquationEditor.lResult_.Title = "成員 of /P1";
+
+//filtre
+CATCkeEquationEditor.LstFilter_.All = "全部";
+
+CATCkeEquationEditor.slParam_.LongHelp = "參數名稱 \n 此欄位顯示建立公式的參數名稱. \n 您可以在此欄位內更改成新名稱.";
+
+CATCkeEquationEditor.Content = "已經有相同名稱的參數存在";
+
+CATCkeEquationEditor.LoopWarning_.Title = "請小心";
+CATCkeEquationEditor.LoopWarning_.Text = "以量測參數來當做輸入因子有可能導致更新循環計算.\n量測值為:\n/P1";
+
+CATCkeEquationEditor.MultiValWarning_.Title = "請小心";
+CATCkeEquationEditor.MultiValWarning_.Text = " /P1 的關係評估值有可能不滿足多重的表列值.\n";
+
+CATCkeEquationEditor.NoUIObject.Message = "您未選擇啟動元件";
+CATCkeEquationEditor.NoUIObject.Title = "錯誤";
+
+CATCkeEquationEditor.rbmode_select_.Title = "選擇特徵";
+CATCkeEquationEditor.rbmode_select_.ShortHelp = "在 3D 或特徵中選擇, 將可編輯文字區域";
+CATCkeEquationEditor.rbmode_select_.Help = "在 3D 或特徵中選擇, 將可編輯文字區域";
+CATCkeEquationEditor.rbmode_select_.LongHelp = "在 3D 或特徵中選擇, 將可編輯文字區域";
+
+CATCkeEquationEditor.rbmode_filter_.Title = "過濾器";
+CATCkeEquationEditor.rbmode_filter_.ShortHelp = "在 3D 或特徵中選擇, 將可過濾表列";
+CATCkeEquationEditor.rbmode_filter_.Help = "在 3D 或特徵中選擇, 將可過濾表列";
+CATCkeEquationEditor.rbmode_filter_.LongHelp = "在 3D 或特徵中選擇, 將可過濾表列";

@@ -1,0 +1,62 @@
+// AUTHOR      :    gha
+// DATE        :    		Mar. 20 1998
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to LineUp  Window
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATIONS     user  date      purpose
+//   HISTORY        ----  ----      -------
+//     01           fgx   24.06.99  Nouvelle version de la commande
+//------------------------------------------------------------------------------
+
+Title="對齊";
+Help="定義尺寸對齊參數";
+
+_frameOffset._labelLength.Title="線性偏移: ";
+_frameOffset._editorLength.Help="輸入線性偏移值";
+_frameOffset._editorLength.LongHelp="定義參考和對正尺寸的線性偏移值.";
+
+_frameOffset._labelAngle.Title="角度偏移: ";
+_frameOffset._editorAngle.Help="輸入角度偏移偏移值";
+_frameOffset._editorAngle.LongHelp="定義參考和對正尺寸的角度偏移值.";
+
+_frameOptions._systemsOnly.Title="只有組立至系統";
+_frameOptions._systemsOnly.LongHelp="只有組立至系統
+只有組立尺寸至系統.
+不論每一個系統的小尺寸,
+或無法輸入系的小尺寸
+均會移動";
+
+_frameOffset._labelBaseOffset.Title="對參考的偏移: ";
+_frameOffset._labelBaseOffset.LongHelp="對參考的偏移數值,
+包含 長度 / 距離 / 角度和半徑和直徑值.";
+_frameOffset._spinnerBaseLength.LongHelp="對參考的偏移數值,
+包含 長度 / 距離 / 角度尺寸.";
+_frameOffset._spinnerBaseAngle.LongHelp="對參考的偏移數值,
+包含半徑和直徑尺寸.";
+
+_frameOffset._labelOffset.Title="尺寸間偏移: ";
+_frameOffset._labelOffset.LongHelp="尺寸間偏移數值,
+包含 長度 / 距離 / 角度和半徑和直徑值.";
+_frameOffset._spinnerLength.LongHelp="尺寸間偏移數值,
+包含 長度 / 距離 / 角度尺寸.";
+_frameOffset._spinnerAngle.LongHelp="尺寸間偏移數值,
+包含半徑和直徑尺寸.";
+
+_frameOptions._checkValStack.Title="對正基線式尺寸數值";
+_frameOptions._checkValStack.LongHelp="以一群組中最小尺寸為基準的對正基線式尺寸數值";
+_frameOptions._checkValCumul.Title="對正連續式尺寸數值";
+_frameOptions._checkValCumul.LongHelp="以一群組中最小尺寸為基準的對正連續式尺寸數值";
+
+_systemsOnly.Title="只有可辨識的方可進入系統";
+_systemsOnly.LongHelp="只有可辨識的方可進入系統.
+不論每一個系統的小尺寸,
+或無法輸入系的小尺寸
+均會移動";
+
+_frameOptions._frameFunnel._checkAutoFunnel.Title="自動增加側偏(funnel)";
+_frameOptions._frameFunnel._checkAutoFunnel.LongHelp="自動增加側偏(funnel),
+當尺寸無法正確表示時.";
+

@@ -1,0 +1,21 @@
+CATEdlDefineBundleCnctPtCmd.InitialState.Message                = "Select a connector, a contact, an equipment, a shell , a back shell, a termination or a bundle connection point";
+CATEdlDefineBundleCnctPtCmd.InitialStateP1.Message                = "Select a connector, an equipment or a bundle connection point";
+
+
+
+CATEdlDefineBundleCnctPtCmd.GeometricalPointRepState.Message    = "Select the geometry representing the bundle connection point (point)";
+CATEdlDefineBundleCnctPtCmd.SecondConstraintState.Message       = "Select a plane or a surface";
+
+CATEdlDefineBundleCnctPtCmd.GeometricalRepOtherState.Message    = "Select the geometry representing the bundle connection point (point, plane, surface)";
+CATEdlDefineBundleCnctPtCmd.FirstConstraintOtherState.Message   = "Select a point";
+CATEdlDefineBundleCnctPtCmd.SecondConstraintOtherState.Message  = "Select a plane or a surface";
+
+BundleCnctPtNotification.Title = "Bundle Connection Point Definition";
+//nhg 05:05:31 Modified for MIC.
+BundleCnctPtNotification.Text  = "You cannot create a bundle connection point on this electrical device.\n\nA bundle connection point can not be created on the following devices:\n     - internal splice\n     - filler plug\n     - multi insert connector";
+
+BundleCnctPt.Title = "Bundle Connection Point Definition";
+BundleCnctPt.Text  = "A bundle connection point has already been defined.\nThe selected element can only have one bundle connection point.";
+
+SamePublicationName.Title = "Bundle Connection Point Definition";
+SamePublicationName.Text  = "The specified connection point name cannot be used because a publication with the same name already exists.\nPlease change the name of the connection point.";

@@ -1,0 +1,147 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//===========================================================================
+//
+// CATRdgRenderDialog
+//
+//===========================================================================
+
+Title = "塗彩";
+
+currentViewpointLabel = "目前視點";
+noEnvironmentLabel = "無";
+noLightLabel = "無";
+noAnimationLabel = "無";
+
+noLabel = "不是的";
+yesLabel = "是的";
+
+onDiskLabel = "在磁碟上";
+onScreenLabel = "在螢幕上";
+
+//--------------------------------------
+// Summary frame
+//--------------------------------------
+shootingFrame.shootingLabel.Title = "目前的拍攝: ";
+shootingFrame.shootingCombo.Help = "用來塗彩的拍攝參數";
+shootingFrame.shootingCombo.ShortHelp = "用來塗彩的拍攝參數";
+shootingFrame.shootingCombo.LongHelp = 
+"定義用來塗彩的拍攝參數";
+
+summaryFrame.Title = "概要";
+
+summaryFrame.viewpointLabel.Title = "視點:";
+summaryFrame.viewpointLabel.Help = "用來塗彩的視點";
+summaryFrame.viewpointLabel.ShortHelp = "視點";
+summaryFrame.viewpointLabel.LongHelp =
+"用來塗彩的視點";
+
+summaryFrame.environmentLabel.Title = "環境:";
+summaryFrame.environmentLabel.Help = "用來塗彩的環境";
+summaryFrame.environmentLabel.ShortHelp = "環境";
+summaryFrame.environmentLabel.LongHelp =
+"用來塗彩的環境";
+
+summaryFrame.lightLabel.Title = "啟動光源:";
+summaryFrame.lightLabel.Help = "啟動用來塗彩的光源";
+summaryFrame.lightLabel.ShortHelp = "啟動光源";
+summaryFrame.lightLabel.LongHelp =
+"用來塗彩的光源數目.";
+
+summaryFrame.imageLabel.Title = "圖像:";
+summaryFrame.imageLabel.Help = "塗彩圖像";
+summaryFrame.imageLabel.ShortHelp = "圖像大小";
+summaryFrame.imageLabel.LongHelp =
+"用來塗彩的圖像大小";
+
+summaryFrame.imageFrame.imageXLabel.Title = " x ";
+summaryFrame.imageFrame.imageUnitLabel.Title = "像素";
+
+summaryFrame.outputLabel.Title = "輸出:";
+summaryFrame.outputLabel.Help = "輸出類型";
+summaryFrame.outputLabel.ShortHelp = "輸出類型";
+summaryFrame.outputLabel.LongHelp = 
+"用來塗彩的輸出類型";
+
+summaryFrame.texturesLabel.Title = "貼圖: ";
+summaryFrame.texturesLabel.Help = "貼圖模式";
+summaryFrame.texturesLabel.ShortHelp = "貼圖模式";
+summaryFrame.texturesLabel.LongHelp =
+"用來塗彩的貼圖狀態";
+
+summaryFrame.shadowsLabel.Title = "陰影:";
+summaryFrame.shadowsLabel.Help = "陰影模式";
+summaryFrame.shadowsLabel.ShortHelp = "陰影模式";
+summaryFrame.shadowsLabel.LongHelp =
+"用來塗彩的陰影狀態";
+
+summaryFrame.antialiasingLabel.Title = "防眩光: ";
+summaryFrame.antialiasingLabel.Help = "防眩光模式";
+summaryFrame.antialiasingLabel.ShortHelp = "防眩光模式";
+summaryFrame.antialiasingLabel.LongHelp =
+"用來塗彩的防眩光模式";
+
+summaryFrame.animationLabel.Title = "動畫: ";
+summaryFrame.animationLabel.Help = "動畫: ";
+summaryFrame.animationLabel.ShortHelp = "動畫: ";
+summaryFrame.animationLabel.LongHelp =
+"用來塗彩的動畫.";
+
+summaryFrame.videoButton.Title = "壓縮設定...";
+summaryFrame.videoButton.Help = "編輯影像壓縮設定";
+summaryFrame.videoButton.ShortHelp = "影像壓縮設定";
+summaryFrame.videoButton.LongHelp =
+"允許更改影像壓縮設定";
+
+summaryFrame.gatherLabel.Title = "最後聚焦: ";
+summaryFrame.gatherLabel.Help = "最後聚焦模式";
+summaryFrame.gatherLabel.ShortHelp = "最後聚焦模式";
+summaryFrame.gatherLabel.LongHelp =
+"用來塗彩的最後聚焦情形.";
+
+summaryFrame.globalLabel.Title = "整體照明: ";
+summaryFrame.globalLabel.Help = "整體照明模式";
+summaryFrame.globalLabel.ShortHelp = "整體照明模式";
+summaryFrame.globalLabel.LongHelp =
+"用來塗彩的整體照明情形.";
+
+summaryFrame.causticLabel.Title = "銳利: ";
+summaryFrame.causticLabel.Help = "銳利模式";
+summaryFrame.causticLabel.ShortHelp = "銳利模式";
+summaryFrame.causticLabel.LongHelp =
+"用來塗彩的銳利情形.";
+
+summaryFrame.dofLabel.Title = "景深: ";
+summaryFrame.dofLabel.Help = "景深模式";
+summaryFrame.dofLabel.ShortHelp = "景深模式";
+summaryFrame.dofLabel.LongHelp =
+"用來塗彩的景深情形.";
+
+summaryFrame.glowLabel.Title = "白熱: ";
+summaryFrame.glowLabel.Help = "白熱模式";
+summaryFrame.glowLabel.ShortHelp = "白熱模式";
+summaryFrame.glowLabel.LongHelp =
+"用來塗彩的白熱模式.";
+
+summaryFrame.toonLabel.Title = "卡通模式: ";
+summaryFrame.toonLabel.Help = "卡通模式";
+summaryFrame.toonLabel.ShortHelp = "卡通模式";
+summaryFrame.toonLabel.LongHelp =
+"用來塗彩的卡通模式.";
+//--------------------------------------
+// Buttons frame
+//--------------------------------------
+actionFrame.singleButton.Help = "塗彩一個單一框架";
+actionFrame.singleButton.ShortHelp = "塗彩單一框架";
+actionFrame.singleButton.LongHelp =
+"塗彩一個單一框架.";
+
+actionFrame.animationButton.Help = "塗彩一個動畫";
+actionFrame.animationButton.ShortHelp = "塗彩動畫";
+actionFrame.animationButton.LongHelp =
+"塗彩一個動畫.";
+
+actionFrame.cancelButton.Help = "取消";
+actionFrame.cancelButton.ShortHelp = "取消";
+actionFrame.cancelButton.LongHelp =
+"取消面板.";
+

@@ -1,0 +1,80 @@
+//-------------------------------------------------------------------------
+// Resource file for CATPrintAlbumDialog
+// fbq - Oct 97
+//-------------------------------------------------------------------------
+Title = "相簿";
+
+Splitter1.Splitter2.FolderList.Title = "";
+
+Splitter1.ImageFrame.PathFrame.PathLabel.Title = "路徑 :";
+
+PreviewItem.Title = "預覽";
+PlayItem.Title = "顯示";
+Splitter1.ImageFrame.List.ContextualMenu.PreviewItem.ShortHelp = "預覽或顯示";
+Splitter1.ImageFrame.List.ContextualMenu.PreviewItem.Help = "預覽或顯示所選檔案";
+Splitter1.ImageFrame.List.ContextualMenu.PreviewItem.LongHelp = 
+"Previews selected file. If you selected more than one image,
+all images are previewed together on the same page. You can also 
+use the 'Fit All In' and zooming commands inside the Preview window.
+If you select a video file, it is played. If you select an audio file it is played.";
+
+Splitter1.ImageFrame.List.ContextualMenu.EditItem.Title = "編輯";
+Splitter1.ImageFrame.List.ContextualMenu.EditItem.ShortHelp = "編輯";
+Splitter1.ImageFrame.List.ContextualMenu.EditItem.Help = "允許修改 raster 相片";
+Splitter1.ImageFrame.List.ContextualMenu.EditItem.LongHelp = "允許修改 raster 相片";
+
+Splitter1.ImageFrame.List.ContextualMenu.PrintItem.Title = "列印";
+Splitter1.ImageFrame.List.ContextualMenu.PrintItem.ShortHelp = "列印";
+Splitter1.ImageFrame.List.ContextualMenu.PrintItem.Help = "列印所選圖像";
+Splitter1.ImageFrame.List.ContextualMenu.PrintItem.LongHelp = "列印所選圖像";
+
+Splitter1.ImageFrame.List.ContextualMenu.SaveItem.Title = "存成";
+Splitter1.ImageFrame.List.ContextualMenu.SaveItem.ShortHelp = "存成";
+Splitter1.ImageFrame.List.ContextualMenu.SaveItem.Help = "儲存所選圖像為檔案";
+Splitter1.ImageFrame.List.ContextualMenu.SaveItem.LongHelp = 
+"Saves the selected images to a file in the specified format.
+The formats you can save to depend on the format (pixel or vector)
+in which the image was originally saved.";
+
+Splitter1.ImageFrame.List.ContextualMenu.CopyItem.Title = "複製";
+Splitter1.ImageFrame.List.ContextualMenu.CopyItem.ShortHelp = "複製";
+Splitter1.ImageFrame.List.ContextualMenu.CopyItem.Help = "複製所選圖像至剪貼簿";
+Splitter1.ImageFrame.List.ContextualMenu.CopyItem.LongHelp = "複製所選圖像至剪貼簿";
+
+Splitter1.ImageFrame.List.ContextualMenu.RenameItem.Title = "更名";
+Splitter1.ImageFrame.List.ContextualMenu.RenameItem.ShortHelp = "更名檔案";
+Splitter1.ImageFrame.List.ContextualMenu.RenameItem.Help = "允許更名檔案";
+Splitter1.ImageFrame.List.ContextualMenu.RenameItem.LongHelp = "允許更名檔案";
+
+Splitter1.ImageFrame.List.ContextualMenu.PropertiesItem.Title = "性質";
+Splitter1.ImageFrame.List.ContextualMenu.PropertiesItem.ShortHelp = "性質";
+Splitter1.ImageFrame.List.ContextualMenu.PropertiesItem.Help = "顯示所選檔案性質";
+Splitter1.ImageFrame.List.ContextualMenu.PropertiesItem.LongHelp = "顯示所選檔案性質";
+
+Splitter1.ImageFrame.List.ContextualMenu.EraseItem.Title = "刪除";
+Splitter1.ImageFrame.List.ContextualMenu.EraseItem.ShortHelp = "刪除";
+Splitter1.ImageFrame.List.ContextualMenu.EraseItem.Help = "由相簿中刪除所選檔案";
+Splitter1.ImageFrame.List.ContextualMenu.EraseItem.LongHelp = "由相簿中刪除所選檔案";
+
+Splitter1.ImageFrame.PathFrame.PathLabel.LongHelp = "選擇檔案目錄.
+This directory can be a DLName preceeded by 'CATDLN://', or can be an environment variable with ${} form.";
+Splitter1.ImageFrame.PathFrame.PathEditor.LongHelp = "選擇檔案目錄.
+This directory can be a DLName preceeded by 'CATDLN://', or can be an environment variable with ${} form.";
+
+Splitter1.ImageFrame.PathFrame.DefaultPathButton.LongHelp = "選擇檔案預設目錄.
+It is defined with ${CATAlbumRepository} or with ${CATTemp}\Album.";
+
+SaveTitle.PText		= "由 raster 編輯器中退出";
+SaveText.PText		= "覆寫 /p1 ?";
+
+EraseTitle.PText	= "確認需求";
+EraseText.PText		= "此命令將會刪除所選檔案.\n 確認刪除 ?";
+
+ReadOnlyTitle.PText = "警告訊息";
+ReadOnlyText.PText	= "無法移除唯讀檔案 : \n/p1";
+
+BigImageTitle.PText	= "確認需求";
+BigImageText.PText	= "此為大圖像, 將佔用很多記憶體. \n 確認編輯 ?";
+
+WarningVideoPlayTitle.PText = "警告訊息";
+WarningVideoPlayText.PText  = "無法播放影像: \n/p1";

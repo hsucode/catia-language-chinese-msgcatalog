@@ -1,0 +1,146 @@
+//---------------------------------------------------------------------------
+//  DIALOGUE COMMUN A TOUTES LES WINDOWS
+//---------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------
+//  SETUP WINDOW 
+//---------------------------------------------------------------------------
+
+
+//---------------------------------------------------------------------------
+//  WELCOME 
+//---------------------------------------------------------------------------
+
+Help.Title = "說明";
+Help.Label1.Title = "使用:";
+Help.Label2.Title = "\nsetcatenv [-e environment file name]";
+Help.Label3.Title = "\n          [-d environment directory name on UNIX only]";
+Help.Label4.Title = "\n          [-o Os Type]";
+Help.Label5.Title = "\n          [-s Cnext Type]";
+Help.Label6.Title = "\n          [-k Variable=Value]";
+Help.Label7.Title = "\n          [-u Variable=Value]";
+Help.Label8.Title = "\n          -p concatenates path (E:\\home\users\xxx\Env\CXRnRel;\\Machine\home\users\xxx\Env\CXRn)";
+Help.Label12.Title = "\n          -p concatenates path (/u/users/xxx/Env/CXRnrel:/u/users/xxx/Env/CXRn)";		  
+Help.Label10.Title= "\n          [-new yes/no]";
+Help.Label11.Title= "\n          [-v yes/no]";
+Help.Label9.Title = "\ndelcatenv [-e EnvironmentFileName]";
+
+//---------------------------------------------------------------------------
+//  LICENSE 
+//---------------------------------------------------------------------------
+
+
+//---------------------------------------------------------------------------
+//  DESTINATION 
+//---------------------------------------------------------------------------
+
+
+//---------------------------------------------------------------------------
+//  PRODUCT  
+//---------------------------------------------------------------------------
+
+
+//---------------------------------------------------------------------------
+//  RESUME 
+//---------------------------------------------------------------------------
+
+
+//---------------------------------------------------------------------------
+// TRANSFERT 
+//---------------------------------------------------------------------------
+
+
+
+//---------------------------------------------------------------------------
+//  FINISH 
+//---------------------------------------------------------------------------
+
+
+
+//---------------------------------------------------------------------------
+//  EXIT 
+//---------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------
+//  MESSAGES D'ERREURS  
+//---------------------------------------------------------------------------
+
+Err.Tilte = "錯誤";
+
+ErrNoBlank.Text = "在環境名稱中不允許空白字元";
+
+ErrNoHome.Text = "無法找到 'HOME' 環境變數";
+
+ErrArgList.Text = "引數清單不正確. \n Setcatenv 失敗";
+
+ErrInit.Text = "環境初始化失敗";
+
+ErrUserInit.Text = "使用者環境初始化失敗";
+
+ErrUpdate.Text = "更新環境失敗";
+
+ErrVariable.Text = "變數不存在. \n setcatenv 失敗.";
+ 
+ErrDelEnv.Text = "刪除環境桌面圖示失敗";
+ 
+ErrDelEnvUsr.Text = "刪除使用者環境失敗";
+ 
+DeleteFile.Text   = "檔案 /P1 已刪除";
+
+DeleteDir.Text    = "目錄 /P1 已刪除";
+
+RunningCommand.Text = "執行命令中: /P1";
+
+NotLastUninstall.Text = "因為系統中仍有安裝 V5 以致無法刪除圖示.";
+
+
+// La partie de TBT
+
+ErrMessage1.Text = "引數設定不正確. \n";
+ErrMessage2.Text = "引數清單設定不正確. \n", "接觸名稱               : /P1\n",                                                                                          "Var                               : /P2\n",                                                                                "VarType                       : /P3\n",                                                                                    "VarData                       : /P4\n",                                                                                    "VarPathConcatenation: /P5\n";
+ErrMessage3.Text = "引數清單設定不正確. \n", "連接:  /P1\n",                                                                                                      "連接名稱 : /P2\n";
+ErrMessage4.Text = "引數清單設定不正確. \n", "連接名稱 : /P1";
+ErrMessage5.Text = "無法關閉檔案 : \"/P1\".\n";
+ErrMessage6.Text = "無法建立目錄 : \"/P1\".\n";
+ErrMessage7.Text = "無法找到 \"/P1\" 環境變數. \n";
+ErrMessage8.Text = "無法找到 CNEXT 程式. \n";
+ErrMessage9.Text = "無法找到檔案 : \"/P1\".\n", "尋找檔案在 : \"/P2\".\n";
+ErrMessage10.Text = "無法找到捷徑路徑. \n";
+ErrMessage11.Text = "無法開啟 (rb) 檔案: \"/P1\".\n 請檢查檔案權限. \n";
+ErrMessage12.Text = "無法開啟 (w) 檔案: \"/P1\".\n 請檢查檔案權限 .\n";
+ErrMessage13.Text = "無法開啟 檔案: \"/P1\".\n 請檢查檔案權限 .\n";
+ErrMessage14.Text = "無法開啟 檔案: \"/P1\".\n 請檢查檔案 C:\\TEMP 是否存在. \n";
+ErrMessage15.Text = "無法讀取檔案: \"/P1\".\n 請檢查檔案權限. \n";
+ErrMessage16.Text = "無法儲存檔案: \"/P1\".\n 請檢查目錄權限或磁碟是否已滿. \n";
+ErrMessage17.Text = "無法設定環境. \n";
+ErrMessage18.Text = "無法設定互動環境登錄資料. \n";
+ErrMessage19.Text = "環境變數計算失敗. \n";
+ErrMessage20.Text = "檔案是空的 : \"/P1\".\n";
+ErrMessage21.Text = "檔案副檔名不被允許 : /P1.\n";
+ErrMessage22.Text = "檔頭起始失敗. \n";
+ErrMessage23.Text = "檔案起始失敗.\n";
+ErrMessage24.Text = "無法移除檔案 : /P1.\n";
+ErrMessage25.Text = "互動式檔案計算失敗. \n";
+ErrMessage26.Text = "互動式環境計算失敗. \n";
+ErrMessage27.Text = "無效引數: pszShortcutFile!\n";
+ErrMessage28.Text = "Mkdir 設定數值 : \"/P1\".\n";
+ErrMessage29.Text = "參數 4 是無用的. \n";
+ErrMessage30.Text = "解決方式失敗. \n";
+ErrMessage31.Text = "引數設定失敗. \n";
+ErrMessage32.Text = "設定說明失敗 \n";
+ErrMessage33.Text = "設定圖示失敗 \n";
+ErrMessage34.Text = "設定路徑失敗 \n";
+ErrMessage35.Text = "設定顯示路徑失敗 \n";
+ErrMessage36.Text = "建立捷徑失敗. \n";
+ErrMessage37.Text = "捷徑環境初始化失敗. \n";
+ErrMessage38.Text = "未定義參數型式. \n", "參數    : /P1",                                                                                                   "參數型式 : /P2",                                                                                                       "Variable Data : /P3",                                                                                                      "Variable Path : /P4",                                                                                                      "Data File         : /P5";
+ErrMessage39.Text = "未定義參數型式 : /P1\n";
+ErrMessage40.Text = "使用者環境設定失敗. \n";
+ErrMessage41.Text = "使用者互動式環境設定失敗.\n";
+ErrMessage42.Text = "使用者互動式環境將不會被更新. \n";
+ErrMessage43.Text = "無法獲得檔案內容. \n";
+ErrMessage44.Text = "登錄 / 目錄檔案未找到. \n";
+ErrMessage45.Text = "無法建立登錄連接 : /P1.\n";
+ErrMessage46.Text = "無法建立目錄 : \"/P1\".\n 使用者互動式環境將不會被更新. \n";
+ErrMessage47.Text = "無法移除管理者環境: /P1\n";
+ErrMessage48.Text = "無法移除使用者環境 : /P1\n";

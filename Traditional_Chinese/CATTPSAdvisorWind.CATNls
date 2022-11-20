@@ -1,0 +1,527 @@
+Title                                       = "語義的 (semantic) 容差度專家";
+
+FrameSet.LabelSet.Title                     = "目前的註解裝置";
+FrameSet.EditorSet.Help                     = "點選目前的註解裝置";
+FrameSet.EditorSet.ShortHelp                = "目前的註解裝置";
+FrameSet.EditorSet.LongHelp                = "目前的註解裝置 \n 點選目前的註解裝置";
+
+FrameCmd.Title                              = "指令";
+
+FrameCmd.TPSLabelType.Title                 = "幾何特徵形式 ";
+
+FrameCmd.TPSComboType.Title                 = "特徵形式";
+FrameCmd.TPSComboType.Help                  = "選擇特徵形式";
+FrameCmd.TPSComboType.ShortHelp             = "特徵形式";
+FrameCmd.TPSComboType.LongHelp              = "特徵形式 \n 選擇特徵形式.";
+
+TPSGeometricType          = "單一曲面, N 曲面,Tab 或槽, 圖樣, tabs 角度圖樣或槽, ,圓註銷或孔, 伸長銷或孔, 四方形銷或孔,四方形圓銷或孔, 非圓柱銷或孔及所有相關可能型式";
+
+ReferenceFrame.Title                        = "離開基準系統";
+
+FrameCmd.TextSupport.Title                     = "文字命令或斷面";
+FrameCmd.TextSupport.Help                      = "建立具有導引的文件";
+FrameCmd.TextSupport.ShortHelp                 = "具有導引的文件";
+FrameCmd.TextSupport.LongHelp                  = "導引 \n 建立具有導引的文件.";
+
+FrameCmd.TextProfile.Title                     = "文字命令斷面";
+FrameCmd.TextProfile.Help                      = "建立與唯一曲面或一組曲面鏈結的具導引線的文字";
+FrameCmd.TextProfile.ShortHelp                 = "具有導引的文字";
+FrameCmd.TextProfile.LongHelp                  = "具有導引的文字 \n 建立與唯一曲面或一組曲面鏈結的
+具導引線的文字.
+指定在一組曲面上的文字:
+-依據 ISO 標準, 設定相關一般區域的指定文字 (CZ).
+-依據 ASME 標準, t設定相關在 \" n x \" 曲面的指定文字.";
+
+FrameCmd.TextRelated.Title                     = "文字命令";
+FrameCmd.TextRelated.Help                      = "建立具有箭頭的文件";
+FrameCmd.TextRelated.ShortHelp                 = "具有箭頭的文件";
+FrameCmd.TextRelated.LongHelp                  = "前置箭頭 \n 建立具有箭頭的文件.";
+
+FrameCmd.TextPattern.Title                     = "CmdText";
+FrameCmd.TextPattern.Help                      = "建立具有箭頭的文件";
+FrameCmd.TextPattern.ShortHelp                 = "具有箭頭的文件";
+FrameCmd.TextPattern.LongHelp                  = "前置箭頭 \n 建立具有箭頭的文件.";
+
+FrameCmd.FlagNoteSupport.Title                     = "CmdFlagNoteSupportOrProfile";
+FrameCmd.FlagNoteSupport.Help                      = "建立與唯一使用者曲面或一組曲面的含導引線標註";
+FrameCmd.FlagNoteSupport.ShortHelp                 = "具箭頭旗標註";
+FrameCmd.FlagNoteSupport.LongHelp                  = "含導引線標註 \n 建立與唯一使用者曲面
+或一組曲面的含導引線標註
+對指定在一組曲面的含導引線標註 :
+-依據 ISO 標準, 設定相關一般區域的指定文字 (CZ).
+-依據 ASME 標準, t設定相關在 \" n x \" 曲面的指定文字.";
+
+FrameCmd.FlagNoteProfile.Title                     = "CmdFlagNoteProfile";
+FrameCmd.FlagNoteProfile.Help                      = "建立與唯一使用者曲面或一組曲面的含導引線標註";
+FrameCmd.FlagNoteProfile.ShortHelp                 = "具箭頭旗標註";
+FrameCmd.FlagNoteProfile.LongHelp                  = "含導引線標註 \n 建立與唯一使用者曲面
+或一組曲面的含導引線標註
+對指定在一組曲面的含導引線標註 :
+-依據 ISO 標準, 設定相關一般區域的指定文字 (CZ).
+-依據 ASME 標準, t設定相關在 \" n x \" 曲面的指定文字.";
+
+FrameCmd.FlagNoteRelated.Title     = "CmdFlagNoteRelated";
+FrameCmd.FlagNoteRelated.Help      = "Creates flag note with leader, on a median element";
+FrameCmd.FlagNoteRelated.ShortHelp = "具箭頭旗標註";
+FrameCmd.FlagNoteRelated.LongHelp  = "Flag Note with Leader\nCreates a flag note with leader, on the corresponding/related median element.";
+
+FrameCmd.FlagNotePattern.Title     = "CmdFlagNotePattern";
+FrameCmd.FlagNotePattern.Help      = "Creates flag note with a leader on a pattern";
+FrameCmd.FlagNotePattern.ShortHelp = "具箭頭旗標註";
+FrameCmd.FlagNotePattern.LongHelp  = "Flag Note with Leader\nCreates a flag note with leader on a pattern and URL support.";
+
+FrameCmd.RoughnessSupport.Title                     = "CmdRoughnessSupport";
+FrameCmd.RoughnessSupport.Help                      = "Creates a roughness linked to either a unique user surface or a set of surfaces";
+FrameCmd.RoughnessSupport.ShortHelp                 = "粗度";
+FrameCmd.RoughnessSupport.LongHelp                  = "粗度 \n Creates a roughness linked to 
+either a unique user surface or a set of surfaces.";
+
+FrameCmd.RoughnessProfile.Title                     = "CmdRoughnessProfile";
+FrameCmd.RoughnessProfile.Help                      = "Creates a roughness linked to either a unique user surface or a set of surfaces";
+FrameCmd.RoughnessProfile.ShortHelp                 = "粗度";
+FrameCmd.RoughnessProfile.LongHelp                  = "粗度 \nCreates a roughness linked to 
+either a unique user surface or a set of surfaces.";
+
+FrameCmd.DatumSupport.Title           = "CmdDatumSupport";
+FrameCmd.DatumSupport.Help            = "Specifies a  semantic datum on an unique user surface";
+FrameCmd.DatumSupport.ShortHelp       = "語法基準";
+FrameCmd.DatumSupport.LongHelp        = "Semantic Datum\nSpecifies a  semantic datum on an unique user surface.";
+
+FrameCmd.DatumProfile.Title        = "CmdDatumProfile";
+FrameCmd.DatumProfile.Help         = "Specifies a semantic datum on a set of surfaces";
+FrameCmd.DatumProfile.ShortHelp    = "語法基準";
+FrameCmd.DatumProfile.LongHelp        = "Semantic Datum\nSpecifies a semantic datum on a set of surfaces.
+Following ISO standard, this specification corresponds to a semantic datum specification in common zone (CZ).
+Following ASME standard, this specification corresponds to a semantic datum specification on \" n x \" surfaces.";
+
+FrameCmd.DatumRelated.Title        = "CmdDatumRelated";
+FrameCmd.DatumRelated.Help         = "Specifies a semantic datum on a median element";
+FrameCmd.DatumRelated.ShortHelp    = "語法基準";
+FrameCmd.DatumRelated.LongHelp        = "Semantic Datum\nSpecifies a semantic datum on the corresponding/related
+median element.";
+
+FrameCmd.DatumPattern.Title        = "CmdDatumPattern";
+FrameCmd.DatumPattern.Help         = "Specifies a semantic datum on a pattern";
+FrameCmd.DatumPattern.ShortHelp    = "語法基準";
+FrameCmd.DatumPattern.LongHelp     = "Semantic Datum\nSpecify a semantic datum on a pattern.";
+
+FrameCmd.DatumPatternOfRelated.Title        = "CmdDatumPatternOfRelated";
+FrameCmd.DatumPatternOfRelated.Help         = "Specifies a semantic datum on the median element of a pattern";
+FrameCmd.DatumPatternOfRelated.ShortHelp    = "語法基準";
+FrameCmd.DatumPatternOfRelated.LongHelp     = "Semantic Datum\nSpecifies a semantic datum on the median element of a pattern";
+
+FrameCmd.DiameterSupport.Title         = "CmdDiameterSupport";
+FrameCmd.DiameterSupport.Help          = "建立直徑";
+FrameCmd.DiameterSupport.ShortHelp     = "直徑";
+FrameCmd.DiameterSupport.LongHelp      = "直徑建立 \n 建立直徑.";
+
+FrameCmd.DiameterPattern.Title         = "CmdDiameterPattern";
+FrameCmd.DiameterPattern.Help          = "建立圖樣的直徑";
+FrameCmd.DiameterPattern.ShortHelp     = "圖樣直徑的建立";
+FrameCmd.DiameterPattern.LongHelp      = "圖樣直徑的建立 \n 建立圖樣的直徑.";
+
+FrameCmd.ThreadDiameterSupport.Title         = "CmdThreadDiameterSupport";
+FrameCmd.ThreadDiameterSupport.Help          = "在唯一使用者曲面上建立螺紋直徑";
+FrameCmd.ThreadDiameterSupport.ShortHelp     = "螺紋直徑";
+FrameCmd.ThreadDiameterSupport.LongHelp      = "螺紋直徑 \n 在唯一使用者曲面上建立螺紋直徑";
+
+FrameCmd.ThreadDiameterPattern.Title         = "CmdThreadDiameterPattern";
+FrameCmd.ThreadDiameterPattern.Help          = "在圖樣上建立直徑";
+FrameCmd.ThreadDiameterPattern.ShortHelp     = "圖樣直徑";
+FrameCmd.ThreadDiameterPattern.LongHelp      = "Pattern Diameter\nCreates a diameter on a pattern.";
+
+FrameCmd.TorusSmallDiameterSupport.Title         = "CmdTorusSmallDiameterSupport";
+FrameCmd.TorusSmallDiameterSupport.Help          = "建立環形小的-直徑";
+FrameCmd.TorusSmallDiameterSupport.ShortHelp     = "環形小的-直徑";
+FrameCmd.TorusSmallDiameterSupport.LongHelp      = "環形小的-直徑 \n 建立環形的小的直徑.";
+
+FrameCmd.TorusHighDiameterSupport.Title         = "CmdTorusHighDiameterSupport";
+FrameCmd.TorusHighDiameterSupport.Help          = "建立環形高的-直徑";
+FrameCmd.TorusHighDiameterSupport.ShortHelp     = "環形高的-直徑";
+FrameCmd.TorusHighDiameterSupport.LongHelp      = "環形高的-直徑 \n 建立環形的高的直徑.";
+
+FrameCmd.RadiusSupport.Title         = "CmdRadiusSupport";
+FrameCmd.RadiusSupport.Help          = "建立半徑";
+FrameCmd.RadiusSupport.ShortHelp     = "半徑";
+FrameCmd.RadiusSupport.LongHelp      = "半徑 \n 建立半徑.";
+
+FrameCmd.RadiusPattern.Title         = "CmdRadiusPattern";
+FrameCmd.RadiusPattern.Help          = "建立圖樣的半徑";
+FrameCmd.RadiusPattern.ShortHelp     = "圖樣的半徑";
+FrameCmd.RadiusPattern.LongHelp      = "圖樣的半徑 \n 建立圖樣的半徑.";
+
+FrameCmd.TorusSmallRadiusSupport.Title         = "CmdTorusSmallRadiusSupport";
+FrameCmd.TorusSmallRadiusSupport.Help          = "建立環形小的-半徑";
+FrameCmd.TorusSmallRadiusSupport.ShortHelp     = "環形小的-半徑";
+FrameCmd.TorusSmallRadiusSupport.LongHelp      = "環形小的-半徑 \n 建立環形的小的半徑.";
+
+FrameCmd.TorusHighRadiusSupport.Title         = "CmdTorusHighRadiusSupport";
+FrameCmd.TorusHighRadiusSupport.Help          = "建立環形高的-半徑";
+FrameCmd.TorusHighRadiusSupport.ShortHelp     = "環形高的-半徑";
+FrameCmd.TorusHighRadiusSupport.LongHelp      = "環形高的-半徑 \n 建立環形的高的半徑.";
+
+FrameCmd.LinearSizeRelated.Title         = "CmdLinearSizeRelated";
+FrameCmd.LinearSizeRelated.Help          = "建立距離";
+FrameCmd.LinearSizeRelated.ShortHelp     = "距離建立";
+FrameCmd.LinearSizeRelated.LongHelp      = "距離 \n 建立距離.";
+
+FrameCmd.LinearSizeOriented.Title         = "CmdLinearSizeOriented";
+FrameCmd.LinearSizeOriented.Help          = "建立相關建立原點的線性尺寸";
+FrameCmd.LinearSizeOriented.ShortHelp     = "相關建立原點的線性尺寸";
+FrameCmd.LinearSizeOriented.LongHelp      = "相關建立原點的線性尺寸 \n 建立相關建立原點的線性尺寸";
+
+FrameCmd.LinearSizePattern.Title         = "CmdLinearSizePattern";
+FrameCmd.LinearSizePattern.Help          = "在圖樣上建立距離";
+FrameCmd.LinearSizePattern.ShortHelp     = "圖樣上的距離";
+FrameCmd.LinearSizePattern.LongHelp      = "圖樣上的距離 \n 在圖樣上建立距離.";
+
+FrameCmd.AngularSizeSupport.Title         = "CmdAngularSizeSupport";
+FrameCmd.AngularSizeSupport.Help          = "在唯一使用者曲面上建立圓錐角度.";
+FrameCmd.AngularSizeSupport.ShortHelp     = "建立圓錐角度";
+FrameCmd.AngularSizeSupport.LongHelp      = "圓錐角度 \n 在唯一使用者曲面上建立圓錐角度.";
+
+FrameCmd.AngularSizeRelated.Title         = "CmdAngularSizeRelated";
+FrameCmd.AngularSizeRelated.Help          = "建立角度";
+FrameCmd.AngularSizeRelated.ShortHelp     = "角度建立";
+FrameCmd.AngularSizeRelated.LongHelp      = "角度 \n 建立角度.";
+
+FrameCmd.AngularSizeOriented.Title         = "CmdAngularSizeOriented";
+FrameCmd.AngularSizeOriented.Help          = "相關建立原點的角度尺寸";
+FrameCmd.AngularSizeOriented.ShortHelp     = "相關建立原點的角度尺寸";
+FrameCmd.AngularSizeOriented.LongHelp      = "相關建立原點的角度尺寸 \n 建立相關建立原點的角度尺寸";
+
+FrameCmd.AngularSizePattern.Title         = "CmdAngularSizePattern";
+FrameCmd.AngularSizePattern.Help          = "在圖樣上建立角度";
+FrameCmd.AngularSizePattern.ShortHelp     = "圖樣角度";
+FrameCmd.AngularSizePattern.LongHelp      = "圖樣角度 \n 在圖樣上建立角度.";
+
+
+FrameCmd.StraightnessSupport.Title           = "CmdStraightnessSupport";
+FrameCmd.StraightnessSupport.Help            = "指定平直性";
+FrameCmd.StraightnessSupport.ShortHelp       = "平直性規格";
+FrameCmd.StraightnessSupport.LongHelp        = "平直性規格 \n 指定平直性";
+
+FrameCmd.StraightnessProfile.Title           = "CmdStraightnessProfile";
+FrameCmd.StraightnessProfile.Help      = "指定平直性";
+FrameCmd.StraightnessProfile.ShortHelp        = "平直性規格";
+FrameCmd.StraightnessProfile.LongHelp        = "平直性規格";
+
+
+FrameCmd.StraightnessRelated.Title           = "CmdStraightnessRelated";
+FrameCmd.StraightnessRelated.Help      = "指定平直性";
+FrameCmd.StraightnessRelated.ShortHelp        = "平直性規格";
+FrameCmd.StraightnessRelated.LongHelp        = "平直性規格";
+
+FrameCmd.AxisStraightnessSupport.Title           = "CmdStraightnessSupport";
+FrameCmd.AxisStraightnessSupport.Help            = "Specifies an axis straightness on an unique user surface";
+FrameCmd.AxisStraightnessSupport.ShortHelp       = "軸直度規範";
+FrameCmd.AxisStraightnessSupport.LongHelp        = "Axis Straightness Specification\nSpecifies an axis straightness on an unique user surface.";
+
+FrameCmd.AxisStraightnessProfile.Title           = "CmdStraightnessProfile";
+FrameCmd.AxisStraightnessProfile.Help      = "Specifies an axis straightness on a set of surfaces";
+FrameCmd.AxisStraightnessProfile.ShortHelp        = "軸直度規範";
+FrameCmd.AxisStraightnessProfile.LongHelp        = "Axis Straightness Specification\nSpecifies an axis straightness on a set of surfaces.
+Following ISO standard, this specification corresponds to an axis straightness specification in common zone (CZ).
+Following ASME standard, this specification corresponds to an axis straightness specification on \" n x \" surfaces.";
+
+
+FrameCmd.FlatnessSupport.Title           = "CmdFlatnessSupport";
+FrameCmd.FlatnessSupport.Help            = "Specifies a flatness on an unique user surface";
+FrameCmd.FlatnessSupport.ShortHelp       = "平坦度規範";
+FrameCmd.FlatnessSupport.LongHelp        = "Flatness Specification\nSpecifies a flatness on an unique user surface.";
+
+FrameCmd.FlatnessProfile.Title           = "CmdFlatnessProfile";
+FrameCmd.FlatnessProfile.Help      = "Specifies a flatness on a set of surfaces";
+FrameCmd.FlatnessProfile.ShortHelp        = "平坦度規範";
+FrameCmd.FlatnessProfile.LongHelp        = "Flatness Specification\nSpecifies a flatness on a set of surfaces.
+Following ISO standard, this specification corresponds to a flatness specification in common zone (CZ).
+Following ASME standard, this specification corresponds to a flatness specification on \" n x \" surfaces.";
+
+FrameCmd.FlatnessRelated.Title           = "CmdFlatnessRelated";
+FrameCmd.FlatnessRelated.Help      = "Specifies a flatness on a median element";
+FrameCmd.FlatnessRelated.ShortHelp        = "平坦度規範";
+FrameCmd.FlatnessRelated.LongHelp        = "Flatness Specification\nSpecifies a flatness on the corresponding/related median element.";
+
+FrameCmd.CircularitySupport.Title           = "CmdCircularitySupport";
+FrameCmd.CircularitySupport.Help            = "Specifies a circularity on an unique user surface";
+FrameCmd.CircularitySupport.ShortHelp       = "圓度規範";
+FrameCmd.CircularitySupport.LongHelp        = "Circularity Specification\nSpecifies a circularity on an unique user surface.";
+
+FrameCmd.CircularityProfile.Title           = "CmdCircularityProfile";
+FrameCmd.CircularityProfile.Help      = "Specifies a circularity on a set of surfaces";
+FrameCmd.CircularityProfile.ShortHelp        = "圓度規範";
+FrameCmd.CircularityProfile.LongHelp        = "Circularity Specification\nSpecifies a circularity on a set of elements.
+Following ISO standard, this specification corresponds to a circularity specification in common zone (CZ).
+Following ASME standard, this specification corresponds to a circularity specification on \" n x \" elements.";
+
+FrameCmd.CylindricitySupport.Title           = "CmdCylindricitySupport";
+FrameCmd.CylindricitySupport.Help            = "Specifies a cylindricity on an unique user surface";
+FrameCmd.CylindricitySupport.ShortHelp       = "圓度規範";
+FrameCmd.CylindricitySupport.LongHelp        = "Cylindricity Specification\nSpecifies a cylindricity on an unique user surface.";
+
+FrameCmd.CylindricityProfile.Title           = "CmdCylindricityProfile";
+FrameCmd.CylindricityProfile.Help      = "Specifies a cylindricity on a set of surfaces";
+FrameCmd.CylindricityProfile.ShortHelp        = "圓度規範";
+FrameCmd.CylindricityProfile.LongHelp        = "Cylindricity Specification\nSpecifies a cylindricity on a set of surfaces.
+Following ISO standard, this specification corresponds to a cylindricity specification in common zone (CZ).
+Following ASME standard, this specification corresponds to a cylindricity specification on \" n x \" surfaces.";
+
+FrameCmd.ProfileOfALineSupport.Title           = "CmdProfileOfALineSupport";
+FrameCmd.ProfileOfALineSupport.Help            = "Specifies a profile of a line (on an unique user element)";
+FrameCmd.ProfileOfALineSupport.ShortHelp       = "外形線規範";
+FrameCmd.ProfileOfALineSupport.LongHelp        = "Profile-of-Line Specification\nSpecifies a profile of a line (on an unique user element).";
+
+FrameCmd.ProfileOfALineProfile.Title           = "CmdProfileOfALineProfile";
+FrameCmd.ProfileOfALineProfile.Help      = "Specifies a profile of a line on a set of elements";
+FrameCmd.ProfileOfALineProfile.ShortHelp        = "外形線規範";
+FrameCmd.ProfileOfALineProfile.LongHelp        = "Profile-of-Line Specification\nSpecifies a profile of a line on a set of elements.
+Following ISO standard, this specification corresponds to a profile-of-line specification in common zone (CZ).
+Following ASME standard, this specification corresponds to a profile-of-line specification on \" n x \" elements.";
+
+FrameCmd.ProfileOfASurfaceSupport.Title           = "CmdProfileOfASurfaceSupport";
+FrameCmd.ProfileOfASurfaceSupport.Help            = "Specifies a profile of a surface on an unique user surface";
+FrameCmd.ProfileOfASurfaceSupport.ShortHelp       = "外形曲面規範";
+FrameCmd.ProfileOfASurfaceSupport.LongHelp        = "Profile-of-Surface Specification\nSpecifies a profile of a surface on an unique user surface.";
+
+FrameCmd.ProfileOfASurfaceProfile.Title           = "CmdProfileOfASurfaceProfile";
+FrameCmd.ProfileOfASurfaceProfile.Help      = "Specifies a profile of a line on a set of surfaces";
+FrameCmd.ProfileOfASurfaceProfile.ShortHelp        = "外形曲面規範";
+FrameCmd.ProfileOfASurfaceProfile.LongHelp        = "Profile-of-Surface Specification\nSpecifies a profile of a surface on a set of surfaces.
+Following ISO standard, this specification corresponds to a profile-of-surface specification in common zone (CZ).
+Following ASME standard, this specification corresponds to a profile-of-surface specification on \" n x \" surfaces.";
+
+FrameCmd.PositionPattern.Title               = "CmdPositionPattern";
+FrameCmd.PositionPattern.Help          = "Specifies an position on a pattern";
+FrameCmd.PositionPattern.ShortHelp     = "位置度規範";
+FrameCmd.PositionPattern.LongHelp      = "Position Specification\Specifies an position on a pattern.";
+
+FrameCmd.PositionPatternOfRelated.Title      = "CmdPositionPatternOfRelated";
+FrameCmd.PositionPatternOfRelated.Help      = "Specifies a position on a median element";
+FrameCmd.PositionPatternOfRelated.ShortHelp        = "Position Specification";
+FrameCmd.PositionPatternOfRelated.LongHelp        = "Position Specification\nSpecifies a position on the corresponding/related
+median element of the pattern.";
+
+FrameCmd.AngularitySupport.Title             = "CmdAngularitySupport";
+FrameCmd.AngularitySupport.Help            = "Specifies an angularity on an unique user surface";
+FrameCmd.AngularitySupport.ShortHelp       = "角度規範";
+FrameCmd.AngularitySupport.LongHelp        = "Angularity Specification\nSpecifies an angularity on an unique user surface.";
+
+FrameCmd.AngularityProfile.Title             = "CmdAngularityProfile";
+FrameCmd.AngularityProfile.Help      = "Specifies an angularity on a set of surfaces";
+FrameCmd.AngularityProfile.ShortHelp        = "角度規範";
+FrameCmd.AngularityProfile.LongHelp        = "Angularity Specification\nSpecifies an angularity on a set of surfaces.
+Following ISO standard, this specification corresponds to an angularity specification in common zone (CZ).
+Following ASME standard, this specification corresponds to an angularity specification on \" n x \" surfaces.";
+
+FrameCmd.AngularityRelated.Title             = "CmdAngularityRelated";
+FrameCmd.AngularityRelated.Help      = "Specifies an angularity on a median element";
+FrameCmd.AngularityRelated.ShortHelp        = "角度規範";
+FrameCmd.AngularityRelated.LongHelp        = "Angularity Specification\nSpecifies an angularity on the corresponding/related
+median element of the pattern.";
+
+FrameCmd.PerpendicularitySupport.Title       = "CmdPerpendicularitySupport";
+FrameCmd.PerpendicularitySupport.Help            = "Specifies a perpendicularity on an unique user surface";
+FrameCmd.PerpendicularitySupport.ShortHelp       = "垂直度規範";
+FrameCmd.PerpendicularitySupport.LongHelp        = "Perpendicularity Specification\nSpecifies a perpendicularity on an unique user surface.";
+
+FrameCmd.PerpendicularityProfile.Title       = "CmdPerpendicularityProfile";
+FrameCmd.PerpendicularityProfile.Help      = "Specifies a perpendicularity on a set of surfaces";
+FrameCmd.PerpendicularityProfile.ShortHelp        = "垂直度規範";
+FrameCmd.PerpendicularityProfile.LongHelp        = "Perpendicularity Specification\nSpecifies a perpendicularity on a set of surfaces.
+Following ISO standard, this specification corresponds to a perpendicularity specification in common zone (CZ).
+Following ASME standard, this specification corresponds to a perpendicularity specification on \" n x \" surfaces.";
+
+FrameCmd.PerpendicularityRelated.Title       = "CmdPerpendicularityRelated";
+FrameCmd.PerpendicularityRelated.Help      = "Specifies a perpendicularity on a median element";
+FrameCmd.PerpendicularityRelated.ShortHelp        = "垂直度規範";
+FrameCmd.PerpendicularityRelated.LongHelp        = "Perpendicularity Specification\nSpecifies a perpendicularity on the corresponding/related
+median element of the pattern.";
+
+FrameCmd.ParallelismSupport.Title            = "CmdParallelismSupport";
+FrameCmd.ParallelismSupport.Help            = "Specifies a parallelism on an unique user surface";
+FrameCmd.ParallelismSupport.ShortHelp       = "平行度規範";
+FrameCmd.ParallelismSupport.LongHelp        = "Parallelism Specification\nSpecifies a parallelism on an unique user surface.";
+
+FrameCmd.ParallelismProfile.Title            = "CmdParallelismProfile";
+FrameCmd.ParallelismProfile.Help      = "Specifies a parallelism on a set of surfaces";
+FrameCmd.ParallelismProfile.ShortHelp        = "平行度規範";
+FrameCmd.ParallelismProfile.LongHelp        = "Parallelism Specification\nSpecifies a parallelism on a set of surfaces.
+Following ISO standard, this specification corresponds to a parallelism specification in common zone (CZ).
+Following ASME standard, this specification corresponds to a parallelism specification on \" n x \" surfaces.";
+
+FrameCmd.ParallelismRelated.Title            = "CmdParallelismRelated";
+FrameCmd.ParallelismRelated.Help      = "Specifies a parallelism on a median element";
+FrameCmd.ParallelismRelated.ShortHelp        = "平行度規範";
+FrameCmd.ParallelismRelated.LongHelp        = "Parallelism Specification\nSpecifies a parallelism on the corresponding/related
+median element of the pattern.";
+
+FrameCmd.PositionWithDRFSupport.Title        = "CmdPositionWithDRFSupport";
+FrameCmd.PositionWithDRFSupport.Help          = "Specifies an position with DRF, of an unique user surface";
+FrameCmd.PositionWithDRFSupport.ShortHelp     = "與 DRF 定位規範";
+FrameCmd.PositionWithDRFSupport.LongHelp      = "Position-with-DRF Specification\Specifies a position with DRF (Datum Reference Frame), on an unique user surface.";
+
+FrameCmd.PositionWithDRFProfile.Title        = "CmdPositionWithDRFProfile";
+FrameCmd.PositionWithDRFProfile.Help      = "Specifies a position with DRF, on a set of surfaces";
+FrameCmd.PositionWithDRFProfile.ShortHelp        = "與 DRF 定位規範";
+FrameCmd.PositionWithDRFProfile.LongHelp        = "Position-with-DRF Specification\nSpecifies a position with DRF (Datum Reference Frame) on a set of surfaces.
+Following ISO standard, this specification corresponds to a position-with-DRF specification in common zone (CZ).
+Following ASME standard, this specification corresponds to a position-with-DRF specification on \" n x \" surfaces.";
+
+FrameCmd.PositionWithDRFRelated.Title        = "CmdPositionWithDRFRelated";
+FrameCmd.PositionWithDRFRelated.Help      = "Specifies a position with DRF, on a median element";
+FrameCmd.PositionWithDRFRelated.ShortHelp        = "與 DRF 定位規範";
+FrameCmd.PositionWithDRFRelated.LongHelp        = "Position-with-DRF Specification\nSpecifies a position with DRF (Datum Reference Frame), on the corresponding/related
+median element.";
+
+FrameCmd.PositionWithDRFPattern.Title        = "CmdPositionWithDRFPattern";
+FrameCmd.PositionWithDRFPattern.Help          = "Specifies an position with DRF, on a pattern of unique user surfaces";
+FrameCmd.PositionWithDRFPattern.ShortHelp     = "與 DRF 定位規範";
+FrameCmd.PositionWithDRFPattern.LongHelp      = "Position-with-DRF Specification\Specifies a position with DRF (Datum Reference Frame), on a pattern of unique user surfaces.";
+
+FrameCmd.PositionWithDRFPatternOfRelated.Title        = "CmdPositionWithDRFPatternOfRelated";
+FrameCmd.PositionWithDRFPatternOfRelated.Help        = "Specifies a position with DRF, on the corresponding/related median element of the pattern.";
+FrameCmd.PositionWithDRFPatternOfRelated.ShortHelp     = "Position-with-DRF Specification";
+FrameCmd.PositionWithDRFPatternOfRelated.LongHelp        = "Position-with-DRF Specification\nSpecifies a position with DRF (Datum Reference Frame), on the corresponding/related
+median element of the pattern.";
+
+FrameCmd.ConcentricitySupport.Title        = "CmdConcentricitySupport";
+FrameCmd.ConcentricitySupport.Help            = "Specifies a concentricity on an unique user surface";
+FrameCmd.ConcentricitySupport.ShortHelp       = "同心規範";
+FrameCmd.ConcentricitySupport.LongHelp        = "Concentricity Specification\nSpecifies a concentricity on an unique user surface.";
+
+FrameCmd.ConcentricityProfile.Title        = "CmdConcentricityProfile";
+FrameCmd.ConcentricityProfile.Help      = "Specifies a concentricity on a set of surfaces";
+FrameCmd.ConcentricityProfile.ShortHelp        = "同心規範";
+FrameCmd.ConcentricityProfile.LongHelp        = "Concentricity Specification\nSpecifies a concentricity on a set of surfaces.
+Following ISO standard, this specification corresponds to a concentricity specification in common zone (CZ).
+Following ASME standard, this specification corresponds to a concentricity specification on \" n x \" surfaces.";
+
+FrameCmd.SymetrySupport.Title        = "CmdSymetrySupport";
+FrameCmd.SymetrySupport.Help            = "Specifies a symetry on an unique user surface";
+FrameCmd.SymetrySupport.ShortHelp       = "對稱規範";
+FrameCmd.SymetrySupport.LongHelp        = "Symetry Specification\nSpecifies a symetry on an unique user surface.";
+
+FrameCmd.SymetryProfile.Title        = "CmdSymetryProfile";
+FrameCmd.SymetryProfile.Help      = "Specifies a symetry on a set of surfaces";
+FrameCmd.SymetryProfile.ShortHelp        = "對稱規範";
+FrameCmd.SymetryProfile.LongHelp        = "Symetry Specification\nSpecifies a symetry on a set of surfaces.
+Following ISO standard, this specification corresponds to a symetry specification in common zone (CZ).
+Following ASME standard, this specification corresponds to a symetry specification on \" n x \" surfaces.";
+
+FrameCmd.SymetryRelated.Title        = "CmdSymetryRelated";
+FrameCmd.SymetryRelated.Help      = "Specifies a symetry on a median element";
+FrameCmd.SymetryRelated.ShortHelp        = "對稱規範";
+FrameCmd.SymetryRelated.LongHelp        = "Symetry Specification\nSpecifies a symetry on the corresponding/related
+median element of the pattern.";
+
+FrameCmd.ProfileOfALineWithDRFSupport.Title         = "CmdProfileOfALineWithDRFSupport";
+FrameCmd.ProfileOfALineWithDRFSupport.Help            = "Specifies a profile of a line with a DRF, on an unique user surface";
+FrameCmd.ProfileOfALineWithDRFSupport.ShortHelp       = "Profile-of-a-Line-with-DRF Specification";
+FrameCmd.ProfileOfALineWithDRFSupport.LongHelp        = "Profile-of-a-Line-with-DRF Specification\nSpecifies a profile of a line with a DRF (Datum Reference Frame), on an unique user surface.";
+
+FrameCmd.ProfileOfALineWithDRFProfile.Title         = "CmdProfileOfALineWithDRFProfile";
+FrameCmd.ProfileOfALineWithDRFProfile.Help      = "Specifies a profile of a line with a DRF, on a set of surfaces";
+FrameCmd.ProfileOfALineWithDRFProfile.ShortHelp        = "Profile-of-a-Line-with-DRF Specification";
+FrameCmd.ProfileOfALineWithDRFProfile.LongHelp        = "Profile-of-a-Line-with-DRF Specification\nSpecifies a profile of a line with a DRF (Datum Reference Frame), on a set of surfaces.
+Following ISO standard, this specification corresponds to a profile-of-a-line-with-DRF specification in common zone (CZ).
+Following ASME standard, this specification corresponds to a profile-of-a-line-with-DRF specification on \" n x \" surfaces.";
+
+FrameCmd.ProfileOfASurfaceWithDRFSupport.Title         = "CmdProfileOfASurfaceWithDRFSupport";
+FrameCmd.ProfileOfASurfaceWithDRFSupport.Help            = "Specifies a profile of a surface with a DRF, on an unique user surface";
+FrameCmd.ProfileOfASurfaceWithDRFSupport.ShortHelp       = "Profile-of-a-Surface-with-DRF Specification";
+FrameCmd.ProfileOfASurfaceWithDRFSupport.LongHelp        = "Profile-of-a-Surface-with-DRF Specification\nSpecifies a profile of a surface with a DRF (Datum Reference Frame), on an unique user surface.";
+
+FrameCmd.ProfileOfASurfaceWithDRFProfile.Title         = "CmdProfileOfASurfaceWithDRFProfile";
+FrameCmd.ProfileOfASurfaceWithDRFProfile.Help      = "Specifies a profile of a surface with a DRF, on a set of surfaces";
+FrameCmd.ProfileOfASurfaceWithDRFProfile.ShortHelp        = "Profile-of-a-Surface-with-DRF Specification";
+FrameCmd.ProfileOfASurfaceWithDRFProfile.LongHelp        = "Profile-of-a-Surface-with-DRF Specification\nSpecifies a profile of a surface with a DRF (Datum Reference Frame), on a set of surfaces.
+Following ISO standard, this specification corresponds to a profile-of-a-surface-with-DRF specification in common zone (CZ).
+Following ASME standard, this specification corresponds to a profile-of-a-surface-with-DRF specification on \" n x \" surfaces.";
+
+FrameCmd.CircularRunoutSupport.Title         = "CmdCircularRunoutSupport";
+FrameCmd.CircularRunoutSupport.Help            = "Specifies a circular runout on an unique user surface";
+FrameCmd.CircularRunoutSupport.ShortHelp       = "圓度規範";
+FrameCmd.CircularRunoutSupport.LongHelp        = "Circular Runout Specification\nSpecifies a circular runout on an unique user surface.";
+
+FrameCmd.CircularRunoutProfile.Title         = "CmdCircularRunoutProfile";
+FrameCmd.CircularRunoutProfile.Help      = "Specifies a circular runout on a set of surfaces";
+FrameCmd.CircularRunoutProfile.ShortHelp        = "圓度規範";
+FrameCmd.CircularRunoutProfile.LongHelp        = "Circular Runout Specification\nSpecifies a circular runout on a set of surfaces.
+Following ISO standard, this specification corresponds to a circular-runout specification in common zone (CZ).
+Following ASME standard, this specification corresponds to a circular-runout specification on \" n x \" surfaces.";
+
+FrameCmd.TotalRunoutSupport.Title         = "CmdTotalRunoutSupport";
+FrameCmd.TotalRunoutSupport.Help            = "Specifies a total runout on an unique user surface";
+FrameCmd.TotalRunoutSupport.ShortHelp       = "整體輪廓規範";
+FrameCmd.TotalRunoutSupport.LongHelp        = "Total Runout Specification\nSpecifies a total runout on an unique user surface.";
+
+FrameCmd.TotalRunoutProfile.Title         = "CmdTotalRunoutProfile";
+FrameCmd.TotalRunoutProfile.Help      = "Specifies a total runout on a set of surfaces";
+FrameCmd.TotalRunoutProfile.ShortHelp        = "整體輪廓規範";
+FrameCmd.TotalRunoutProfile.LongHelp        = "Total Runout Specification\nSpecifies a total runout on a set of surfaces.
+Following ISO standard, this specification corresponds to a total-runout specification in common zone (CZ).
+Following ASME standard, this specification corresponds to a total-runout specification on \" n x \" surfaces.";
+
+FrameCmd.FlagNoteNotCylPinHole.Title         = "CmdFlagNoteNotCylPinHole";
+FrameCmd.FlagNoteNotCylPinHole.Help            = "Creates flag note with a leader on a pattern";
+FrameCmd.FlagNoteNotCylPinHole.ShortHelp       = "總體輪廓特性";
+FrameCmd.FlagNoteNotCylPinHole.LongHelp        = "Total Runout Specification\nSpecifies a total runout on an unique user surface.";
+
+FrameCmd.TextNotCylPinHole.Title         = "CmdFlagNoteNotCylPinHole";
+FrameCmd.TextNotCylPinHole.Help            = "Creates a text with a leader on a pattern";
+FrameCmd.FlagNoteNotCylPinHole.ShortHelp       = "Flag Note with Leader";
+FrameCmd.FlagNoteNotCylPinHole.LongHelp        = "Flag Note with Leader\nCreates a flag note with leader on a pattern.";
+
+FrameCmd.DatumNotCylPinHole.Title        = "CmdDatumNotCylPinHole";
+FrameCmd.DatumNotCylPinHole.Help         = "Specifies a semantic datum on a pattern";
+FrameCmd.TextNotCylPinHole.ShortHelp       = "Text with Leader";
+FrameCmd.TextNotCylPinHole.LongHelp        = "Text with Leader\nCreates a text note with leader on a pattern.";
+
+FrameCmd.PositionPatternOfNotCylPinHole.Title               = "CmdPositionPatternOfNotCylPinHole";
+FrameCmd.PositionPatternOfNotCylPinHole.Help          = "Specifies an position on a pattern";
+FrameCmd.PositionPatternOfNotCylPinHole.ShortHelp     = "位置特性";
+FrameCmd.PositionPatternOfNotCylPinHole.LongHelp      = "Position Specification\Specifies an position on a pattern.";
+
+FrameCmd.PerpendicularityNotCylPinHole.Title       = "CmdPerpendicularityNotCylPinHole";
+FrameCmd.PerpendicularityNotCylPinHole.Help      = "Specifies a perpendicularity on a median element";
+FrameCmd.PerpendicularityNotCylPinHole.ShortHelp        = "垂直特性";
+FrameCmd.PerpendicularityNotCylPinHole.LongHelp        = "Perpendicularity Specification\nSpecifies a perpendicularity on the corresponding/related
+median element of the pattern.";
+
+FrameCmd.ParallelismNotCylPinHole.Title            = "CmdParallelismNotCylPinHole";
+FrameCmd.ParallelismNotCylPinHole.Help      = "Specifies a parallelism on a median element";
+FrameCmd.ParallelismNotCylPinHole.ShortHelp        = "平行特性";
+FrameCmd.ParallelismNotCylPinHole.LongHelp        = "Parallelism Specification\nSpecifies a parallelism on the corresponding/related
+median element of the pattern.";
+
+FrameCmd.PositionWithDRFNotCylPinHole.Title        = "CmdPositionWithDRFNotCylPinHole";
+FrameCmd.PositionWithDRFNotCylPinHole.Help          = "Specifies an position with DRF, on a pattern of unique user surfaces";
+FrameCmd.PositionWithDRFNotCylPinHole.ShortHelp     = "Position-with-DRF Specification";
+FrameCmd.PositionWithDRFNotCylPinHole.LongHelp      = "Position-with-DRF Specification\Specifies a position with DRF (Datum Reference Frame), on a pattern of unique user surfaces.";
+
+FrameCmd.PositionWithDRFPatternOfNotCylPinHole.Title        = "CmdPositionWithDRFPatternOfNotCylPinHole";
+FrameCmd.PositionWithDRFPatternOfNotCylPinHole.Help          = "Specifies an position with DRF, on a pattern of unique user surfaces";
+FrameCmd.PositionWithDRFPatternOfNotCylPinHole.ShortHelp     = "Position-with-DRF Specification";
+FrameCmd.PositionWithDRFPatternOfNotCylPinHole.LongHelp      = "Position-with-DRF Specification\Specifies a position with DRF (Datum Reference Frame), on a pattern of unique user surfaces.";
+
+FrameCmd.LinearSizeCylTabSlot.Title         = "CmdLinearSizeCylTabSlot";
+FrameCmd.LinearSizeCylTabSlot.Help          = "Creates a distance, on a median element";
+FrameCmd.LinearSizeCylTabSlot.ShortHelp     = "建立距離";
+FrameCmd.LinearSizeCylTabSlot.LongHelp      = "Distance\nCreates a distance, on a median element.";
+
+FrameCmd.LinearSize1stNotCylPinHole.Title         = "CmdLinearSize1stNotCylPinHole";
+FrameCmd.LinearSize1stNotCylPinHole.Help          = "Creates a distance, on a median element";
+FrameCmd.LinearSize1stNotCylPinHole.ShortHelp     = "建立距離";
+FrameCmd.LinearSize1stNotCylPinHole.LongHelp      = "Distance\nCreates a distance, on a median element.";
+
+FrameCmd.LinearSize2ndNotCylPinHole.Title         = "CmdLinearSize2ndNotCylPinHole";
+FrameCmd.LinearSize2ndNotCylPinHole.Help          = "Creates a distance, on a median element";
+FrameCmd.LinearSize2ndNotCylPinHole.ShortHelp     = "建立距離";
+FrameCmd.LinearSize2ndNotCylPinHole.LongHelp      = "Distance\nCreates a distance, on a median element.";
+
+FrameCmd.AngularityNotCylPinHole.Title        = "CmdAngularityNotCylPinHole";
+FrameCmd.AngularityNotCylPinHole.Help          = "Specifies an angularity, on a pattern of unique user surfaces";
+FrameCmd.AngularityNotCylPinHole.ShortHelp     = "角度設定";
+FrameCmd.AngularityNotCylPinHole.LongHelp      = "Angularity Specification\Specifies a angularity, on a pattern of unique user surfaces.";
+
+

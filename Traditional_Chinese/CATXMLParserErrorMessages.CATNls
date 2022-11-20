@@ -1,0 +1,183 @@
+// COPYRIGHT DASSAULT SYSTEMES 
+//----------------------------
+
+
+// NLS error messages for the XMLParser component. 
+
+SourceLabel = "原始: ";
+DescriptionLabel = "說明: ";
+HelpfileLabel = "說明檔案: ";
+//CodeLabel = "Error code: ";
+StatementLabel = "敘述: ";
+LineLabel = "線: ";
+ColumnLabel = "行: ";
+
+EditPrompt = "您現在要編輯巨集程式原始碼嗎 ?";
+
+XML4C_XMLException = "XML4C3.0 例外 \n 訊息: /p1\n 碼 : /p2\n 原始檔案: /p3\n 行數: /p4";
+Internal_Error_hr = "含有 hr = /p1 的內部錯誤 ";
+Internal_Error_msg = "含有 訊息 = /p1 的內部錯誤 ";
+
+ADAPTER_ILLEGAL_PREFIX = "無效名字空間字首 : /p1";
+ADAPTER_UNDECLARED_PREFIX = "未宣告名字空間字首 : /p1";
+
+NODE_ITERATOR_ILLEGAL_STATE = "CATIDOMNodeIterator: 疊帶已被引入 Detach.";
+
+XMLParserERR_0000 = "內部錯誤. 返回碼為 /p1.";
+
+XMLParserERR_1000 = "DOM 例外.";
+
+XMLParserERR_2000.Request = "/p1";
+XMLParserERR_2000.Diagnostic = "SAX 例外 : /p1";
+XMLParserERR_2000.Advice = "";
+
+XMLParserERR_2001.Request = "/p1";
+XMLParserERR_2001.Diagnostic = "SAX IO 例外 : /p1";
+XMLParserERR_2001.Advice = "";
+
+XMLParserERR_2002.Request = "/p1";
+XMLParserERR_2002.Diagnostic = "SAX parse 例外 : /p1\n 系統 Id : /p2\n 公開 Id : p3\n 列 : /p4\n 行 : /p5";
+XMLParserERR_2002.Advice = "";
+
+XMLParserERR_2003.Request = "/p1";
+XMLParserERR_2003.Diagnostic = "UTF-8 parse exception : /p1\nSystemId : /p2\nPublicId : p3\nLine : /p4\nColumn : /p5";
+XMLParserERR_2003.Advice = "";
+XMLParserERR_2100.Request = "Instantiate SAX parser";
+XMLParserERR_2100.Diagnostic = "無效選項定義.";
+XMLParserERR_2100.Advice = "選項名稱和數值必須有相同大小.";
+
+XMLParserERR_2101.Request = "Instantiate SAX parser";
+XMLParserERR_2101.Diagnostic = "未支援選項 \"/p1\".";
+XMLParserERR_2101.Advice = "導入 GetSupportedOptions 來獲取執行 parser 的支援選項.";
+
+XMLParserERR_2102.Request = "Instantiate SAX parser";
+XMLParserERR_2102.Diagnostic = "選項 \"/p2\" 的無效數值 \"/p1\" .";
+XMLParserERR_2102.Advice = "請參考為此選項授權數值的文件.";
+
+XMLParserERR_2200.Request = "/p1";
+XMLParserERR_2200.Diagnostic = "未知的 DOM 錯誤 /p1 : /p2";
+XMLParserERR_2200.Advice = "";
+
+XMLParserERR_2201.Request = "/p1";
+XMLParserERR_2201.Diagnostic = "索引大小錯誤 : /p1";
+XMLParserERR_2201.Advice = "";
+
+XMLParserERR_2202.Request = "/p1";
+XMLParserERR_2202.Diagnostic = "DOMSTRING_SIZE_ERR : /p1";
+XMLParserERR_2202.Advice = "";
+
+XMLParserERR_2203.Request = "/p1";
+XMLParserERR_2203.Diagnostic = "階層需求錯誤 : /p1";
+XMLParserERR_2203.Advice = "";
+
+XMLParserERR_2204.Request = "/p1";
+XMLParserERR_2204.Diagnostic = "索引文件錯誤 : /p1";
+XMLParserERR_2204.Advice = "";
+
+XMLParserERR_2205.Request = "/p1";
+XMLParserERR_2205.Diagnostic = "無效字元錯誤 : /p1";
+XMLParserERR_2205.Advice = "";
+
+XMLParserERR_2206.Request = "/p1";
+XMLParserERR_2206.Diagnostic = "不允許資料錯誤 : /p1";
+XMLParserERR_2206.Advice = "";
+
+XMLParserERR_2207.Request = "/p1";
+XMLParserERR_2207.Diagnostic = "不允許修改錯誤 : /p1";
+XMLParserERR_2207.Advice = "";
+
+XMLParserERR_2208.Request = "/p1";
+XMLParserERR_2208.Diagnostic = "未找到錯誤 : /p1";
+XMLParserERR_2208.Advice = "";
+
+XMLParserERR_2209.Request = "/p1";
+XMLParserERR_2209.Diagnostic = "不支援錯誤 : /p1";
+XMLParserERR_2209.Advice = "";
+
+XMLParserERR_2210.Request = "/p1";
+XMLParserERR_2210.Diagnostic = "INUSE_ATTRIBUTE_ERR : /p1";
+XMLParserERR_2210.Advice = "";
+
+XMLParserERR_2211.Request = "/p1";
+XMLParserERR_2211.Diagnostic = "無效狀態錯誤 : /p1";
+XMLParserERR_2211.Advice = "";
+
+XMLParserERR_2212.Request = "/p1";
+XMLParserERR_2212.Diagnostic = "文法錯誤 : /p1";
+XMLParserERR_2212.Advice = "";
+
+XMLParserERR_2213.Request = "/p1";
+XMLParserERR_2213.Diagnostic = "無效修改錯誤 : /p1";
+XMLParserERR_2213.Advice = "";
+
+XMLParserERR_2214.Request = "/p1";
+XMLParserERR_2214.Diagnostic = "名稱修改錯誤 : /p1";
+XMLParserERR_2214.Advice = "";
+
+XMLParserERR_2215.Request = "/p1";
+XMLParserERR_2215.Diagnostic = "無效存權錯誤 : /p1";
+XMLParserERR_2215.Advice = "";
+
+XMLParserERR_2300.Request = "/p1";
+XMLParserERR_2300.Diagnostic = "未辨識 SAX2 性質名稱 : /p1";
+XMLParserERR_2300.Advice = "";
+
+XMLParserERR_2301.Request = "/p1";
+XMLParserERR_2301.Diagnostic = "未支援 SAX2 性質名稱 : /p1";
+XMLParserERR_2301.Advice = "";
+
+XMLParserERR_2302.Request = "/p1";
+XMLParserERR_2302.Diagnostic = "未辨識 SAX2 特徵名稱 : /p1";
+XMLParserERR_2302.Advice = "";
+
+XMLParserERR_2303.Request = "/p1";
+XMLParserERR_2303.Diagnostic = "未支援 SAX2 特徵名稱 : /p1";
+XMLParserERR_2303.Advice = "";
+
+XMLParserERR_2304.Request = "/p1";
+XMLParserERR_2304.Diagnostic = "SAX2 性質名稱 : parsing 進行時無法修改 /p1 ";
+XMLParserERR_2304.Advice = "";
+
+XMLParserERR_2305.Request = "/p1";
+XMLParserERR_2305.Diagnostic = "SAX2 特徵名稱 : parsing 進行時無法修改 /p1 ";
+XMLParserERR_2305.Advice = "";
+
+XMLParserERR_2400.Request = "/p1";
+XMLParserERR_2400.Diagnostic = "I/O error";
+XMLParserERR_2400.Advice = "";
+
+XMLParserERR_2401.Request = "/p1";
+XMLParserERR_2401.Diagnostic = "API usage error: /p1. The requested action cannot be performed or would result in a not-well-formed XML document";
+XMLParserERR_2401.Advice = "";
+
+XMLParserERR_2402.Request = "";
+XMLParserERR_2402.Diagnostic = "Unsupported character transcoding";
+XMLParserERR_2402.Advice = "";
+
+XMLParserERR_2500.Request = "Binary XML error";
+XMLParserERR_2500.Diagnostic = "/p1";
+XMLParserERR_2500.Advice = "";
+BINARY_XML_DIAGNOSTIC = "/p1: No detailed diagnostic available";
+
+ERR_CHARACTER_INVALID = "Illegal sequence ']]>' in character data";
+ERR_CDATA_INVALID = "Illegal sequence ']]>' in CDATA section";
+ERR_PI_INVALID_DATA = "Invalid characters in processing instruction data";
+ERR_PI_XML = "Illegal processing instruction target";
+ERR_INVALID_COMMENT = "Illegal sequence '--' in comment";
+ERR_ATTRIBUTE_DEFINED = "Attribute already defined";
+ERR_XMLSPACE_VALUE = "Invalid value for attribute xml:space";
+ERR_XMLNS_PREFIX = "xmlns prefix is reserved for xml namespaces";
+ERR_XML_PREFIX = "the xml prefix is reserved";
+ERR_INVALID_VALUE = "Invalid value for option";
+ERR_DECLARATION = "Cannot write the XML declaration";
+ERR_DOCTYPE = "Cannot write the document type";
+ERR_NO_PREFIX_DEFINED = "No defined prefix for uri";
+ERR_DOCUMENT_CLOSED = "The document has already been closed";
+ERR_NO_CURRENT_ELEMENT = "No current element";
+ERR_NO_DOCUMENT = "No open document";
+ERR_INVALID_NAME = "Invalid name";
+ERR_INVALID_NCNAME = "Invalid ncname";
+ERR_INVALID_PUBID = "Invalid public id";
+ERR_INVALID_SYSTEMID = "Invalid system id";
+ERR_INVALID_CHARACTER_ENTITY = "Invalid character entity";
+ERR_INVALID_CHARS = "Invalid XML characters";

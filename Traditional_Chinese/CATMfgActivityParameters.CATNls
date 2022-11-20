@@ -1,0 +1,229 @@
+// * Symbol *
+Strategy = "方式";
+
+// * Symbol *
+Feedrate = "速度";
+
+// * Symbol *
+RetractFeedrate = "退刀進給率";
+
+// * Symbol *
+MachiningFeedrate = "加工的進給率";
+
+// * Symbol *
+ApproachFeedrate = "進刀進給率";
+
+// * Symbol *
+FirstRevFeedrate  = "進給率 1. 轉速";
+
+// * Symbol *
+SecondRevFeedrate = "進給率 2. 轉速";
+
+// * Symbol *
+FinishingFeedrate = "精加工的進給率";
+
+// * Symbol *
+MfgDwellDefault = "沒有暫停";
+
+// * Symbol *
+MfgDwellTime    = "暫停的單位時間";
+
+// * Symbol *
+MfgDwellRound   = "旋轉中暫停";
+
+// * Symbol *
+MfgDwellRoundDouble   = "旋轉中暫停數目";
+
+// * Symbol *
+ApproachLength   = "進刀";
+
+// * Symbol *
+RetractLength   = "退出";
+
+// * Symbol *
+Breakthrough   = "穿透(breakthrough)";
+
+// * Symbol *
+Comment   = "備註";
+
+// * Symbol *
+SpindleSpeed   = "主軸速度";
+
+// * Symbol *
+LowSpindleSpeed= "低主軸速度";
+
+// * Symbol *
+PlungeValue   = "數值 ";
+
+// * Symbol *
+Plunge = "插刀";
+
+// * Symbol *
+Depth = "深度";
+
+// * Symbol *
+SaveDistance = "儲存距離";
+
+// * Symbol *
+DeltaDepth = "增量深度";
+
+// * Symbol *
+RapidDepth = "快速深度";
+
+// * Symbol *
+SpotDepth = "點深度";
+
+// * Symbol *
+MfgToolAxis = "刀具軸";
+
+// Lift
+Lift      = "移動";
+MfgLiftOffPolar = "以極座標定義";
+MfgLiftOffDistance = "以線性座標定義";
+MfgNoLiftOff = "無";
+LiftX = "沿 X 軸移動";
+LiftY = "沿 Y 軸移動";
+LiftZ = "沿 Z 軸移動";
+LiftWay = "移動距離";
+LiftAngle= "移動角度";
+
+// Compensation
+FirstCompensation ="第一個補償值";
+SecondCompensation ="第二個補償值";
+
+
+
+// =============================//
+// Start Common Part            //
+// =============================//
+Rounds         = "旋轉";
+Time           = "時間";
+SecondClear    = "第二個清除";
+
+
+MfgChamferDiameter = "倒角直徑 (C)";
+MfgChamferDiameter.LongHelp = "MFG_CHAMFER_VAL: 倒角值, 與刀具錐形部分直徑相對應的哪個.";
+
+
+DeltaTip     = "增量刀尖";
+DeltaDiameter     = "增量直徑";
+DeltaOffset       = "增量預留";
+DeltaShoulder     = "增量刀肩";
+DeltaIncrement    = "增量增量";
+DeltaDistance     = "增量距離";
+
+SpotTip           = "點尖深度 (Dsp)";
+SpotDiameter      = "點直徑(Dd)";
+SpotOffset        = "點預留 (Osp)";
+SpotShoulder      = "點刀肩深度 (Dsp)";
+SpotDistance      = "點刀肩深度 (Dsp)";
+
+DepthTip          = "刀尖深度(Dt)";
+DepthDiameter     = "直徑 (D)";
+DepthOffset       = "預留";
+DepthShoulder     = "刀肩深度(Ds)";
+DepthDistance     = "距離深度 (Dd)";
+
+DepthBreak        = "穿透(Breakthrough) (B)";
+DepthBreak.LongHelp = "MFG_BREAKTHROUGH: 沿刀軸方向刀具完全穿越元件的的距離 .";
+
+PlungeOffset      = "插刀預留";
+PlungeDiameter    = "插刀直徑";
+PlungeTip         = "插刀刀尖深度";
+PlungeShoulder    = "插刀刀肩深度";
+PlungeDistance    = "插刀距離深度";
+SecondPlunge      = "第二個插刀";
+
+MultiplicatorBM = "Multiplicator BM";
+DegressionDB    = "Degression DB";
+DistanceAB      = "距離 AB";
+AngleWS         = "角度 WS";
+DistanceRTS     = "距離 RTS";
+BreakThroughTB  = "穿透(Breakthrough)TB";
+
+ChamferDistance = "倒角距離 ";
+ChamferDiameter = "倒角直徑";
+ChamferDiameter2 = "倒角直徑 2";
+ChamferShoulder = "倒角刀肩";
+RapidShoulder   = "快速刀肩";
+
+BackDepth    = "背面深度";
+BackDiameter = "背面直徑";
+BackOffset   = "背面預留";
+
+Shoulder  = "刀肩";
+Tip       = "刀尖";
+Distance  = "距離";
+Diameter  = "直徑";
+Rapid     = "快速";
+Dwell     = "暫停";
+PreDrilling ="第一個鑽孔";
+Processing ="處理中"; 
+Finishing = "精加工";
+Retract   = "退刀";
+SpindleStart ="主軸開始";
+SpindleStop  ="主軸停止";
+TransitionPath="順接路徑";
+Tool_Tip   = "刀尖";
+Path_of_Tool_Tip= "刀尖路徑";
+X = "X";
+Y = "Y";
+Z = "Z"; 
+1DOT5MPitch = "1 1/2 * 節距";
+
+Positionieren = "轉變";
+Abfahren = "退出";
+Letzter_Schnitt = "最後一刀";
+D = "D";
+R_Add_D = "R+D";
+CD1Decdep = "C+D*(1-Decdep)";
+CD12Decdep = "C+D*(1-2*Decdep)";
+RetractOffset = "退刀預留";
+DecrementDepth = "Decdep = 減量深度";
+D_EffectiveDepthOfCutComputed = "D = 切削的有效深度 (計算的)";
+C_Retract = "C = 退刀預留";
+R_Retract = "R = 退刀預留";
+Distance23 = "距離 (2,3) = 插刀刀尖 + D";
+Distance45 = "距離 (4,5) = 距離 (2,3)";
+Distance56 = "距離 (5,6) = 插刀刀尖+ D - C";
+Distance67 = "距離 (6,7) = C+D*(1-Decdep)";
+Distance1011 = "距離 (10,11) = C+D*(1-2*Decdep)";
+Distance35 = "距離 (3,5) = 距離 (6,8) = R";
+Distance89 = "距離 (5,6) = 距離 (8,9) = R + D";
+
+// Point To Point
+PtToPtOffset = "預留";
+PtToPtOffset.LongHelp = "MFG_OFF_TL_AXIS:指定一個沿刀具軸的預留";
+
+
+// * Symbol *
+EndOfPath = "路徑端點";
+
+// -----------------------
+// Auxiliary operations
+// -----------------------
+
+// Tool change information on Setup
+MfgToolChgX= "X 刀具改變";
+MfgToolChgY= "Y 刀具改變";
+MfgToolChgZ= "Z 刀具改變";
+
+CmdSequenceNum="序列號碼";
+
+// PP Instruction
+MFG_PPWORDS = "後處理操作指南";
+
+// Coordinate system
+
+// Table/Head Rotation
+MFG_ROTARY_ANGLE  = "轉動角度";
+MFG_ROT_DIR      = "轉動方向";
+MFG_ROT_TYP      = "轉動型式";
+MFG_ROTARY_CATEGORY = "目錄";
+MFG_ROTARY_CATEGORY.LongHelp = "旋轉目錄 : 床檯或刀頭";
+MFG_ROTARY_AXIS   = "旋轉軸";
+MFG_ANGLE_MODE    = "定義";
+
+// TransitionPath
+AutomaticTransition = "自動順接路徑";
+

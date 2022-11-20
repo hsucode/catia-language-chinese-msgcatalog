@@ -1,0 +1,73 @@
+//=============================================================================
+//                                     CNEXT - CXR5
+//                          COPYRIGHT DASSAULT SYSTEMES 2000 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATEgfExtractCmd.CATNls
+// FRAMEWORK   :    ElectricalFormboardDesign
+// AUTHOR      :    gha
+// DATE        :    June 2002
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Formboard Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//------------------------------------------------------------------------------
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// DialogEngine state prompts 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+CATEgfExtractCmd.SelectElement.Message     = "Select electrical bundle or geometrical bundle";
+CATEgfExtractCmd.SaveDocumentState.Message = "Document not saved";
+
+NoDoc.Title  = "Error Extract";
+NoDoc.Text   = "You cannot select a harness in the document where the extract command has been launched.";
+
+OnlyOneGbn.Title  = "Error Extract";
+OnlyOneGbn.Text   = "In the P1 configuration, the electrical bundle can be link with only one geometrical bundle";
+
+Error_SelectedObject.Title = "Error Extract";
+Error_SelectedObject.Text  = "An error has occured during the analyse of the selected element.";
+
+Error_inCleanRecordData.Title = "Error Extract";
+Error_inCleanRecordData.Text  = "An error has occured during the analyse of the electrical data.";
+
+Error_RemoveRefrence.Title = "Error Extract";
+Error_RemoveRefrence.Text  = "An error has occured during the remove of the contextual design.";
+
+Error_EmptyUndo.Title = "Error Extract";
+Error_EmptyUndo.Text  = "An error has occured during the empty of undo log.";
+
+Error_DuplicateData.Title = "Error Extract";
+Error_DuplicateData.Text  = "An error has occured during the data duplication.";
+
+Error_UpdateDataAfterExtract.Title = "Error Extract";
+Error_UpdateDataAfterExtract.Text  = "An error has occured during the creation of the link to the original data.";
+
+WarningBnsWithoutElecCurve.Title = "Warning Extract";
+WarningBnsWithoutElecCurve.Text  = "One or some bundle segments don't have an electrical curve,\nso these bundle segments have not been correctly managed during the extraction.";
+
+EnoviaMode.Title = "Error Extract";
+EnoviaMode.Text  = "Extract cannot be performed on the GBN\EBN because it is saved in structure exposed mode in Enovia";
+
+ExtractOneEBNNotification.Title = "Extract Multiple EBN  Error";
+ExtractOneEBNNotification.Text  = "It is allowed to Extract only one EBN";
+
+ExtractingMechSplineBranches.Title = "Extract" ;
+ExtractingMechSplineBranches.Text = "Selected bundle segments are built on mechanical splines in Slack mode.\n 
+The Extract operation will not modify this build mode. This may have repercussions\n
+when flattening, straightening and manipulating the bundle segments.";
+
+
+ExtractNoEBNAndGBNTogetherNotification.Title = "Extract Multiple EBN and GBN Error";
+ExtractNoEBNAndGBNTogetherNotification.Text  = "Extraction of EBN and GBN(s) simultaneously is not allowed";
+
+
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

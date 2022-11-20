@@ -1,0 +1,176 @@
+
+ReplaceDlg_.Title="更換";
+
+DeleteDlg_.Title="刪除";
+
+DeleteDlg_.MoreFrame_.AdvancedChildrenManagement_.Title="進階上下層關聯性管理";
+
+DeleteDlg_.MoreFrame_.AdvancedChildrenManagement_.LongHelp=
+  "指出將更換的物件 \n 確認下層零件將更新";
+
+ReplaceFrame_.Replace_.Title="更換: ";
+
+ReplaceFrame_.With_.Title="和: ";
+
+ReplaceFrame_.ReplaceColumn_.Title="更換";
+
+ReplaceFrame_.WithColumn_.Title="和";
+
+ReplaceFrame_.CheckDelete_.Title="刪除更換元件且不包括上層元素";
+
+ImpactFrame_.ImpactedElements_.Title="刪除所影響元素";
+
+ImpactFrame_.ImpactedElements_.LongHelp="列出可被刪除的影響元素";
+
+ImpactFrame_.ElementColumn_.Title="元素";
+
+ImpactFrame_.StatusColumn_.Title="現況";
+
+ImpactFrame_.DeleteUndelete_.Title="刪除或不刪除";
+
+ImpactFrame_.DeleteUndeleteAll_.Title="刪除或不刪除全部";
+
+DeleteFrame_.SepList_.Title="選擇";
+
+DeleteFrame_.SepList_.LongHelp="指出將被刪除的物件";
+
+DeleteFrame_.SepParents_.Title="上層元素";
+
+DeleteFrame_.DeleteParents_.Title="刪除包括上層元素";
+
+DeleteFrame_.SepChildren_.Title="下層元素";
+
+DeleteFrame_.DeleteChildren_.Title="刪除所有下層元素";
+
+DeleteFrame_.SepAggregated_.Title="關聯";
+
+DeleteFrame_.DeleteAggregated_.Title="刪除關聯元素";
+
+DeleteConfirmDlg_.Answer_.Title="您確定要刪除所選物件?";
+
+CATMechanicalCommands.OK="確認 ";
+
+CATMechanicalCommands.KO="KO";
+
+CATMechanicalCommands.DEL="刪除";
+
+CATMechanicalCommands.ALWAYSDEL="自動刪除";
+
+CATMechanicalCommands.Keep="保持";
+
+CATMechanicalCommands.KeepNeedReplace="保持, 需要更換";
+
+CATMechanicalCommands.KeepPropagate="保持, 附屬";
+
+CATMechanicalCommands.KeepSolid="保持, 實體";
+
+CATMechanicalCommands.KeepUsedBySolid="保持, 由實體使用";
+
+CATMechanicalCommands.YES="是";
+
+CATMechanicalCommands.NO="否";
+
+CATMechanicalCommands.Error="錯誤";
+
+CATMechanicalCommands.Warning="警告";
+
+CATMechanicalCommands.More="詳細 >>";
+
+CATMechanicalCommands.Less="<< 基本";
+
+CATMechanicalCommands.NoSelection="沒有選擇";
+
+CATMechanicalCommands.InvalidSelection="無效選擇";
+
+CATMechanicalCommands.UselessSelection=
+"沒有指向元素可以參考所選元素.
+ 將會產生上下層關係的循環或中斷次序規則.";
+
+CATMechanicalCommands.CATMcoDeleteCmd.UndoTitle = "刪除";
+
+CATMechanicalCommands.CATMcoDeleteCmd.ReplaceState.Message="選擇一個物件";
+
+CATMechanicalCommands.CATMcoDeleteCmd.InitialState.Message="選擇您需要的選擇";
+
+CATMechanicalCommands.CATMcoDeleteCmd.ConfirmState.Message="按 是或否";
+
+CATMechanicalCommands.CATMcoDeleteCmd.ConfirmState2.Message="選擇您需要保持的元素";
+
+CATMechanicalCommands.CATMcoReplaceCmd.UndoTitle = "更換";
+
+CATMechanicalCommands.CATMcoReplaceCmd.ReplaceState.Message="選擇一個物件";
+
+Replace.NotAccept=" 新元素無法更換所選元素. ";
+
+Replace.NotPossible="不可更換";
+
+Replace.WarningImpact=" : 此元素已產生被使用的次層元素. \n 在更新程序中,您必須更換它們.";
+
+Replace.WarningPointed="所選元素未指出";
+
+Delete.NotDelete="請重新考慮您的操作:您無法刪除此項元素.";
+
+Delete.NoUseless="發現無用的元素.";
+
+Delete.Elements="元素組";
+
+Delete.Deleted="已刪除";
+
+Delete.Kept="已保持";
+
+Delete.Index="索引";
+
+DeleteConfirmDlg_.Select_.SelectList_.LongHelp = 
+"刪除 = 元素將被刪除
+保持 = 元素將被保持
+保持, 附屬 = 此元素被另一您要保持的元素使用.
+                  所以您無法刪除它.
+保持, 由實體使用 = 此元素被實體使用.
+                      實體無法以此命令刪除.
+                      所以您無法刪除它.";
+
+DeleteConfirmDlg_.Select_.Message_.Title="使用右鍵命令框中選擇線來保持元素.";
+
+Delete.ConfirmDeletion ="刪除確認";
+
+Delete.DeleteUseless="刪除無效元素";
+
+ReplaceViewerDlg_.Title="更換檢視器";
+
+ReplaceViewerDlg_.ReplaceViewerFrame_.LinkCheck_.Title="鏈結檢視器";
+
+Delete.Publication="有些您要刪除的元素已發行: ";
+
+Delete.Published =" 發行成 ";
+
+Delete.Continue = "您仍要繼續刪除嗎?";
+
+Replace.UselessPointingDeleted = "無用: 刪除下層元素";
+
+Replace.UselessCycle = "無效: 下層元素循環中";
+
+Replace.UselessNotPointed = "無用: 未指向";
+
+Replace.NotReplaced = " 未更換";
+
+Exit.Continue = "您要繼續嗎 ?";
+
+Replace.WarningParentChildren="多重更換不適用在具有上下層關係元素. \n\n 請個別更換它.";
+
+Replace.PointingElements=" 指向元素: ";
+
+Replace.PointingElement=" 指向元素: ";
+
+Replace.Continue = "您要繼續更換動作嗎 ?";
+
+Replace.Exit = "即使部份元素未更換 \n 您仍要退出更換動作嗎 ?";
+
+Replace.Publication="您要更換的部份元素已發行成共用: ";
+
+Replace.WarningSolid=": 實體元素不允許更換.";
+
+Replace.WarningPointedCurrent="工作中物件不使用所用元素. \n 請更換工作中物件.";
+
+Replace.WarningNonUpdated=": 未更新元素不允許更換.";
+
+Replace.BreakesRules=": 無順序規則.";

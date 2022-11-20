@@ -1,0 +1,125 @@
+Instantiation.Title="在陣列上建立新元素 ";
+EditDef.Title="重覆自訂陣列定義";
+
+FrameFirst.Title="陣列和元件";
+
+FrameFirst.LabPatternObj.ShortHelp="選擇陣列";
+FrameFirst.LabPatternObj.LongHelp="選擇陣列";
+FrameFirst.CmbPatternObj.ShortHelp="選擇陣列";
+
+FrameFirst.LabPatternedObj.ShortHelp="選擇分件";
+FrameFirst.LabPatternedObj.LongHelp="選擇分件來建立";
+FrameFirst.CmbPatternedObj.ShortHelp="選擇分件";
+
+FrameFirst.LabInstanceMode.Title="陣列上首件";
+FrameFirst.InstanceMode.CreateNewInstance="建立首件";
+FrameFirst.InstanceMode.ReuseOriginalProduct="重覆使用原始元件";
+FrameFirst.InstanceMode.CutPasteOriginalProduct="剪貼原始元件";
+FrameFirst.InstanceMode.ShortHelp="選擇三分一項目";
+FrameFirst.InstanceMode.LongHelp="定義第一個陣列來建立的分件";
+
+FrameSecond.Title="重覆使用拘束";
+FrameSecond.ChoiceCstFrame.ChoiceAllCst.Title="全部  ";
+FrameSecond.ChoiceCstFrame.ChoiceNoCst.Title="無  ";
+FrameSecond.ChoiceCstFrame.ChoiceSelCst.Title="已選:";
+FrameSecond.ChoiceAllCst.Title="全部";
+FrameSecond.ChoiceNoCst.Title="無";
+FrameSecond.ChoiceSelCst.Title="已選:";
+// V5R9
+FrameSecond.FrameButton.SelAllCstButton.Title="全部";
+FrameSecond.FrameButton.ClearAllCstButton.Title="清除";
+
+ChkProdContainer.Title="在分件中加入新件";
+ChkProdContainer.ShortHelp="在元件中收集新件";
+ChkProdContainer.LongHelp="在元件中收集新件 :\n 警告: 此分件是固定產品. \n 有可能是過度拘束";
+
+BOK="確認";
+BApply="應用";
+BCancel="關閉";
+
+GatheringWarning="收集分件中有一項拘束不是最新的. \n 有可能是過度拘束.";
+
+CurrentSolidWarning="在 /p2 中的 /p1 陣列是目前實體 : \n 此情形下不保證可複製拘束. \n\n 建議您以不產生拘束來工作 \" 無 \":\n 預設值將會定位此分件.";
+FeatureListWarning=" /p1 在 /p2 中的陣列使用一組特徵: \n 重覆自訂陣列命令目前不支持重覆拘束.";
+GSDWarning=" /p1 在 /p2 中的陣列是一個 \" 自發性外形設計 \" 的陣列: \n 重覆自訂陣列命令目前不支持重覆拘束.";
+MirrorWarning=" /p1 在 /p2 中的陣列是鏡向的: \n 重覆自訂陣列命令目前不支持重覆拘束.";
+UnknownTypeWarning=" /p1 在 /p2 中的陣列形式是未知的: \n 重覆自訂陣列命令目前不支持重覆拘束.";
+PattOfPattWarning=" /p1 在 /p2 中使用一個陣列: \n 重覆自訂陣列命令目前不支持重覆拘束.";
+
+SheetMetalWarning=" /p1 在 /p2 中的陣列是一個 板金設計 的陣列: \n 重覆自訂陣列命令目前不支持重覆拘束.";
+SheetMetalError="在 /p2 中的 /p1 陣列是已定義在未展開視圖的 板金件設計 陣列 :\n\n 重覆自訂陣列命令只支援在收合視圖.";
+
+ExistingFeatPattWarning="您正在選擇一個陣列和一個已經與組立特徵陣列相關的分件.";
+
+
+CstLinkedToAnotherPattern="沒有鏈結分件的拘束可複製 \"/p2\" 和所選的陣列 \"/p1\", 雖然已經至少有一拘束與分件鏈結可複製和所選的陣列.
+此種情形下無法在兩分件間計算相對位置 (陣列中的位置 [1,1] 將會停駐).\n";
+
+NoCstBetweenProdPattAndProdinst="陣列零件 \"/p1\" 和被複製的分件 \"/p2\" 間沒有拘束:
+此種情形下無法在兩分件間計算相對位置 (陣列中的位置 [1,1] 將會停駐).\n";
+
+NoCstLinkingPattWarning="陣列 \"/p1\" 的幾何元素和要複製的分件 \"/p2\" 間沒有拘束:
+此種情形下無法在兩分件間計算相對位置 (陣列中的位置 [1,1] 將會停駐).\n";
+
+NoGenCst="無法複製拘束.\n";
+Recommended="建議至少要建立一個鏈結複製分件和所選陣列間的拘束.";
+
+UnknownError="複製陣列命令發生未預期錯誤";
+
+// New Look V5R6
+FramePattern.Title="陣列";
+FramePattern.LabPatternObj.ShortHelp="選擇陣列";
+FramePattern.LabPatternObj.LongHelp="選擇陣列";
+FramePattern.CmbPatternObj.ShortHelp="選擇陣列";
+FramePattern.LabNbInst.Title="新件:";
+FramePattern.LabNbInst.ShortHelp="所選的陣列中的新件";
+FramePattern.NbInstEdit.ShortHelp="所選的陣列中的新件";
+FramePattern.LabProdPatt.Title="分件中:   ";
+FramePattern.LabProdPatt.ShortHelp="分件中含有所選陣列的分件";
+FramePattern.ProdPattEdit.ShortHelp="分件中含有所選陣列的分件";
+
+FrameFeature.FeatureName.Title="名稱: ";
+FrameFeature.ChkFeaturePattern.Title="與陣列保持連結";
+FrameFeature.ChkFeaturePattern.ShortHelp="建立組立特徵陣列";
+FrameFeature.ChkFeaturePattern.LongHelp="建立組立特徵陣列. \n 所產生的分件和拘束會與此陣列相關.";
+// V5R9
+FrameFeature.WorkModeLabel.Title="產生的分件位置相對 :";
+FrameFeature.WorkModeFeature.Title="陣列的定義";
+FrameFeature.WorkModeConstraint.Title="產生拘束";
+
+FrameFeature.More.Title="詳細 >>";
+FrameFeature.Less.Title="精簡 <<";
+FrameFeature.ShowOutput.ShortHelp="顯示或隱藏更多資訊";
+FrameFeature.ShowOutput.LongHelp="在產生的物件上顯示或隱藏更多資訊";
+
+VisibleOutputFrame.GenObjLabel.Title=" ";
+VisibleOutputFrame.FeatureStatus.Title="情形:";
+VisibleOutputFrame.LocalUpdate.Title="局部更新: ";
+
+OutputsList.Num=" ";
+OutputsList.I="I";
+OutputsList.J="J";
+OutputsList.GeneratedComponents="產生分件";
+OutputsList.GeneratedConstraints="產生拘束";
+
+
+FrameCompo.Title="分件 instantiate";
+FrameCompo.LabPatternedObj.ShortHelp="選擇分件";
+FrameCompo.LabPatternedObj.LongHelp="選擇分件來建立新件";
+FrameCompo.CmbPatternedObj.ShortHelp="選擇分件";
+
+FrameCompo.LabInstanceMode.Title="陣列上首件";
+FrameCompo.InstanceMode.CreateNewInstance="建立首件";
+FrameCompo.InstanceMode.ReuseOriginalProduct="重覆使用原始元件";
+FrameCompo.InstanceMode.CutPasteOriginalProduct="剪貼原始元件";
+FrameCompo.InstanceMode.ShortHelp="選擇三分一項目";
+FrameCompo.InstanceMode.LongHelp="定義第一個陣列來建立的分件";
+
+FrameSecond.SelCstMultiList.ShortHelp="清單的拘束與舉出的分件和其它分件鏈結.";
+FrameSecond.SelCstMultiList.LongHelp="清單的拘束與舉出的分件和其它分件鏈結.您無法選擇可複製的拘束";
+
+CstName="拘束名稱";
+Component="第二個分件";
+LinkedPattern="鏈結陣列";
+
+

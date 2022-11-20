@@ -1,0 +1,322 @@
+//------------------------------------------------------
+// Resource file for internal Topological Check-Up 
+// En_EN
+//----------------------------------------------------------------------
+// CAUTION : each index is of maximum length of seventy-two characters !
+//-----------------------------------------------------------------------
+//
+LyingOn.Corrupted = 
+"contains /P2 incoherent Boolean occurence(s) (may be due to LyingOn LifeCycle).";
+//
+//  redondance des liens Pose-Sur
+//
+LyingOn.AmbiguousSameDomainSameGeometry = 
+"contains ambiguous lyingOn links on /P2 with same support /P5 on context of /P3.";
+//
+LyingOn.AmbiguousSameDomainDistinctGeometry = 
+"contains ambiguous lyingOn links on /P2 with support /P5 and /P6 on context of /P3.";
+//
+LyingOn.AmbiguousDistinctDomain = 
+"contains ambiguous lyingOn links on /P2 with support /P5 and /P6 on context of /P3 and /P4.";
+//
+LyingOn.SignWithoutInter = 
+"contains damaged LyingOn Link (Sign defined without _Inter) on /P2 with support /P4 on context of /P3.";
+//
+//
+BooleanCutting.Found = 
+"remaining /P2 (Temporary CATSubdOccurence of Boolean Modeler).";
+//
+IsMadeOf.incomplete = 
+"is partially defined with boundary vertices [/P2,/P3].";
+//
+IsMadeOf.incompletePOEC = 
+"is partially defined with boundary POEC [/P2,/P3].";
+//
+IsMadeOf.incompletePOECEdgeDomain = 
+"no POEC defined for Vertex /P2 in Domain /P3.";
+//
+BoundingBox.Empty = 
+"Empty computed Box (or not computable) with /P2 bounded with [/P3,/P4].";
+//
+Boundary.SameVertex =
+"is made of the same vertex /P2 at boundaries (Not supported in CXR1 version)";
+//
+ActiveBody.NoVertexGiveItBack =
+"is part of Active /P2, but not a Vertex gives it back.";
+//
+ActiveBody.GiveOutsideFace =
+"gives back /P2 which does not belong to Active /P3.";
+//
+//
+EdgeCurve.Invalid=
+"support /P2 is not a valid EdgeCurve.";
+//
+VertexPOEC=
+"Vertex [/P4,/P5] are represented /P6 & /P7 times (in Loop/Wire) with POEC [/P2,/P3].";
+//
+//
+VertexPOEC.DistinctSameActiveBody=
+"Vertex /P4 is represented by POEC /P2 and /P3 under same active Body /P5.";
+//
+VertexPOEC.DistinctActiveBodyPassiveBody=
+"Vertex /P4 is represented by POEC /P2 (for current body checked) and /P3.";
+VertexPOEC.DistinctPassiveBodies=
+"Vertex /P4 is represented by different POEC /P2 or /P3.";
+//
+//
+POECOrientation=
+"PCurve /P3 represented parameters from /P6 to /P7  (Loop /P2, POEC from /P4 to /P5).";
+//
+POECOrientation.Failed=
+"PCurve /P3 Orientation represented by decreasing parameters from /P6 to /P7 (Loop /P2, POEC from /P4 to /P5).";
+//
+//
+VertexGeometryOrientation=
+"/P5 EdgeCurve /P2 Orientation with parameters going from /P6 to /P7 (with /P3 and /P4).";
+//
+VertexGeometryOrientation.Failed=
+"/P5 EdgeCurve /P2 Orientation represented by parameters going from /P6 to /P7 (with /P3 and /P4).";
+//
+//
+GeometryVertices=
+"distance /P6 between geometry [/P4,/P5] of Vertex [/P2,/P3] > Resolution /P7";
+//
+GeometryVertices.Coincident=
+"distance /P6 between geometry [/P4,/P5] of extremities [/P2,/P3] < Resolution /P7";
+//
+EdgeLength.Degenerated = 
+"Curve /P2 has 2 equal extrem params (machine tolerance) on POECs [/P3,/P4]";
+//
+EdgePOEC.WrongPoecEdgeCurve =
+"contains /P2 which has an /P4 different from native EdgeCurve /P3.";
+//
+//
+//        *******************************************************
+//        *  Specific boolean checker
+//        *******************************************************
+//
+BooleanData.IsScar = 
+"remaining temporary data for Boolean Operation (_IsScar valuated).";
+//
+BooleanData.ReportDone = 
+"remaining temporary data for Boolean Operation (_ReportDone valuated).";
+//
+BooleanData.EdgeCurveList = 
+"remaining temporary data for Boolean Operation (_EdgeCurveList valuated).";
+//
+BooleanData.GraphObject = 
+"remaining temporary data for Boolean Operation (_GraphObject valuated).";
+//
+//    *******************************************************************
+//    *  EDGE rule : coherence of bounding edge
+//    *******************************************************************
+//
+BoundingEdge =
+"is bounded by /P2 with /P3 + POEC [/P4,/P5] in EdgeCurve /P6. Vertex[/P7,/P8].";
+//
+ActiveLoop = 
+"is smartly (in /P9) bounded by /P2 with  /P3 + POEC [/P4,/P5] in  /P6. Vertex[/P7,/P8].";
+//
+ActiveLoop.NoBackward =
+"is not found back as compoment of /P2 of active /P3 (/P4, /P5).";
+//
+WireGeometry =
+"is represented in /P2 with /P3, POEC [/P4,/P5], parm [/P6,/P7].";
+//
+VertexWire.NoVertex =
+" is inserted in /P2 with incomplete extremities [/P3,/P4].";
+//
+//         --------------------------------------------------------
+//         --   checking consistency CX-Subd of vertices in Wire
+//         ---------------------------------------------------------
+//
+EdgeWire.OriVsClass =
+"has incorrect internal representation in /P2 with OriVsClass /P3.";
+//
+WireVertices.Opposite =
+"is bounded by /P2 with Vertex [/P3,/P4] disoriented (Edge: [/P5,/P6] /P7 Geometry).";
+//
+WireVertices.NonOriented =
+"is bounded by /P2 but with incomplete Edge orientation: /P3 Geometry.";
+//
+WireVertices.Lacking =
+"is bounded by /P2 with incoherent vertices : [/P3,/P4] in Wire and [/P5,/P6] in Edge.";
+//
+ActiveWire.NoBackward = 
+"is not found as backward component of /P2 in active /P3.";
+//
+WirePoec.Outside =
+"bounded by POEC /P2 (Vertex /P4 in Wire /P3) belonging to /P6 (NOT the EdgeCurve /P5).";
+//
+WireGeometry.Incomplete =
+"has incomplete geometry in /P2 (/P3 and POEC [/P4,/P5] belonging to [/P6,/P7]).";
+//
+//         ------------------------------------------------------
+//         --   Trivial check on Type or value of orientation
+//         -------------------------------------------------------
+//
+VertexLoop.NoVertex =
+"is inserted in /P2 without complete boundary vertices [/P3,/P4].";
+//
+BoundingEdge.InvalidLoop = 
+"is bounding by a non valid Loop /P2.";
+//
+BoundingEdge.InvalidPCurve = 
+"is bounded by /P3 with invalid PCurve /P2.";
+//
+BoundingEdge.PCurveOutside =
+"is bounded by /P4 with /P3 which does not belong to /P2.";
+//
+//        *******************************************************
+//        *  Bounding in Loop : check bounding vertices
+//        *******************************************************
+//
+SubdEdge.NumberOfKO =
+"has /P2 internal Boolean occurence (CATSubdEdge) with severe anomalies.";
+//
+SubdEdge.wrongClass =
+"has internal Boolean occurence (/P3) whose Class is another Edge /P2.";
+//
+SubdEdge.NoSubdVertex =
+"has internal Boolean occurence (/P2) not bounding by any internal Boolean (SubdVertex).";
+//
+SubdEdge.SubdVertexNoClass =
+"has internal Boolean occurence (/P2) bounding by internal /P3 with no Vertex";
+//
+SubdEdge.IncoherentVertex =
+"has Vertices [/P2,/P3] not compatible with [/P4,/P5] of internal Boolean occurence (/P6).";
+//
+SubdEdge.NonOriented =
+"has undefined Orientation : /P3 Geometry and /P2 on internal Boolean occurence (/P4).";
+//
+SubdEdge.OppositeVertex =
+"has Vertices [/P2,/P3] inversed with internal /P4 Boolean occurence (/P6). Edge is /P5 GeometryOrientation.";
+//
+SubdEdge.EdgeCurveWithoutEdgeDomain =
+"has internal Boolean occurence (CATSubdEdgeCurve) whith no EdgeDomain (SetGeometryOnSupport ?).";
+//
+BoundingVertices.PoecOutside =
+"bounded by POEC /P2 (Vertex /P4 in Loop /P3) belonging to /P6 (NOT the EdgeCurve /P5).";
+//
+//        *******************************************************
+//        *  Bounding in Loop : specific boolean checker
+//        *******************************************************
+//
+BoundingEdge.BooleanData = 
+"remaining temporary data for Boolean Operation (Loop /P2, status /P3).";
+BooleanEdge.IntersectionEdge = 
+"remaining Intersection Edge for Boolean Operation (Loop /P23).";
+BooleanEdge.IntersectionVertex = 
+"remaining Intersection Vertex for Boolean Operation (Loop /P2).";
+BooleanEdge.ConfusedEdge = 
+"remaining Confused Edge for Boolean Operation (Loop /P2).";
+BooleanEdge.TwinData = 
+"remaining twin Data for Boolean Operation (Loop /P2).";
+//
+//    *******************************************************************
+//    *  Edge of adjacents Loop in the same Shell (EULER rule)
+//    *******************************************************************
+//
+EulerOnAdjacentLoop =
+"is bounded in Shell /P2 by adjacents Loop [/P3,/P4] with coherent matter side.";
+//
+EulerOnAdjacentLoop.DistinctEdge =
+"does give back the same Edge for Adjacent Loop [/P3,/P4] in Shell /P2.";
+//
+//    *******************************************************************
+//    *  EDGE rule : coherence of geometry support
+//    *******************************************************************
+//
+PCurveOrientation=
+"orientation /P5 of /P3 inside /P2 is coherent in Loop /P4.";
+//
+PCurveOrientation.Incoherent=
+"orientation /P5 of /P3 inside /P2 is not the expected /P6 in Loop /P4.";
+//
+//    ******************************************************************
+//    *  TOPOLOGY rule : Check must be done with a topology not touched
+//    ******************************************************************
+//
+// check la remise aux valeurs par defaut des flags booleens
+//
+BooleanData.IsScar = " : Remaining Flag IsScar = TRUE.";
+//
+BooleanData.ReportDone = " : Remaining Flag ReportDone = TRUE.";
+//
+//
+////////////////////////////////////////////////////////////////////////
+// 
+//  REPORT DES ANOMALIES DE CHECK de la Geometrie vers la Topologie
+//
+//   EdgeCurve of null length (resolution)
+//   EdgeCurve with big holes (iTolXYZ = 100 * resolution)
+//
+////////////////////////////////////////////////////////////////////////
+//
+//
+EdgeCurveLength.TooSmall =
+"has degenerated length /P5 < resolution /P6 (EdgeCurve /P2 between /P3 and /P4).";
+//
+//
+RefCurveDefinition.InvalidLength =
+"the RefCurve /P2 has degenerated length /P3 < resolution /P4.";
+//
+RefCurveDefinition.MaxGapError =
+"the RefCurve /P2 has MaxGapCalcule /P3 different MaxGapStocke /P4.";
+//
+CompCurveDefinition.InvalidLength =
+"the /P3 th Component Curve /P2 has degenerated length /P3 < resolution /P4.";
+//
+Mapping.GapXYZ =
+"GapXYZ /P5 > /P6  when mapping /P4 th Curve /P3 on RefCurve /P2 (CrvParan /P7 and /P8).";
+//
+//
+Evaluation.OutsideModelSize =
+"/P5 CrvParam on Curve /P2 gives Point (/P6,/P7,/P8) far beyong Model Size /P3 (distance /P4).";
+//
+//
+//
+IsDefined.Aborted =
+"Check analysis Aborted, unexpected exception thrown.";
+//
+//
+//    *******************************************************************
+//    *  EDGE rule : Curve of CATSubdEdge inside EdgeCurve
+//    *******************************************************************
+//
+SubdEdge.CurveNotInEdgeCurve =
+"has internal Boolean occurence (/P4) whose Curve /P2 is not a component of EdgeCurve /P3.";
+//
+//
+//    *******************************************************************
+//    *  non marque Junction avec IE marque
+//    *******************************************************************
+//
+TopJunction.IECouplingMergedCurve =
+"is not declared as Junction Edge but contains internal Boolean occurence defined as CouplingMergedCurve.";
+//
+//
+//    *******************************************************************************************
+//    *  Cell rule : for a given orientation, at most one owning domain in a given Body
+//    *******************************************************************************************
+//
+Topology.Touched =
+"is a touched topology (temporary attribute for boolean operation or smartduplication).";
+//
+BoundedDomainSameOrientation.many =
+"is /P8 /P6-th of /P2  and  /P9 /P7-th of /P3 for same /P4 inside /P5.";
+//
+//
+//    ******************************************************************
+//    *  FAT EDGE report->offense(this,"Edge","FatPCUseless",2,witness,0,NULL,0,NULL);
+//    ******************************************************************
+//
+Edge.FatPCUseless =
+"is a Fat Edge because of EC /P2 : PC /P3 useless in body /P4.";
+//
+//    ******************************************************************
+//    *  FAT EDGE report->offense(this,"Edge","FatSeveralPC",2,witness,1,nb,0,NULL);
+//    ******************************************************************
+Edge.FatSeveralPC =
+"is a Fat Edge because of EC /P2 : /P4 PC instead of 1 on surface /P3.";
+ 

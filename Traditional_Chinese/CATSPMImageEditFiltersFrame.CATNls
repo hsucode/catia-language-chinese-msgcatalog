@@ -1,0 +1,109 @@
+SPMCombined               =       "是";
+SPMNotCombined            =       "否";
+SPMCombineAll             =       "全部";
+SPMSmiAll                 =       "全部";
+SPMSmiUpper               =       "上面";
+SPMSmiMid                 =       "中間";
+SPMSmiLower               =       "下面";
+SPMSmiUpperAndLower       =       "上面和下面";
+
+SPMLineicElements         =       "1D 元素";
+SPMSurfaceElements        =       "2D 元素";
+SPMVolumeElements         =       "3D 元素";
+SPMAllDimensions          =       "全部";
+SPMNodesOfLineicElements  =       "1D 元素結點";
+SPMNodesOfSurfaceElements =       "2D 元素結點";
+SPMNodesOfVolumeElements  =       "3D 元素結點";
+
+SPMRealPart               =       "實體";
+SPMImaginaryPart          =       "影像";
+SPMModulusPart            =       "模數";
+SPMPhasisPart             =       "階段";
+SPMPositionIsNative       =       " (天然)";
+SPMCartesian              =       " (卡氏)";
+SPMCylindrical            =       " (圓柱)";
+SPMSpherical              =       " (球形)";
+
+valuesFrame.Title = "數值";
+
+valuesFrame.LabelPosition.Title = "位置:";
+valuesFrame.LabelPosition.LongHelp = "Enable to choose the position from which the results will be displayed.";
+valuesFrame.ComboPositions.LongHelp = "Select the position from which the results will be displayed.";
+
+valuesFrame.LabelValType.Title = "數值型式:";
+valuesFrame.LabelValType.LongHelp = "Enable to choose the value type";
+valuesFrame.ComboValType.LongHelp = "Select the desired value type among all available output.";
+
+valuesFrame.LabelComplex.Title = "複雜零件:";
+valuesFrame.LabelComplex.LongHelp = "Enable to choose the complex part";
+valuesFrame.ComboComplex.LongHelp = "Select the desired complex value part to be displayed.";
+
+valuesFrame.FrameRepeat.CheckButtonCombined.Title = "不可組合   ";
+valuesFrame.FrameRepeat.CheckButtonCombined.LongHelp = "To select combined or non combined values.";
+
+valuesFrame.FrameRepeat.LabelRepeat.Title = "數值組合:";
+valuesFrame.FrameRepeat.LabelRepeat.LongHelp = "Enable to choose the value set";
+valuesFrame.FrameRepeat.ComboRepeat.LongHelp = "Select the desired value set to be displayed.";
+
+optionsFrame.Title = "過濾器";
+
+optionsFrame.elementsFrameSeparator.showOptionsLabel.Title = "顯示過濾器為: ";
+optionsFrame.elementsFrameSeparator.showOptionsLabel.LongHelp = "The items below concern the element type selected here";
+optionsFrame.elementsFrameSeparator.ComboElements.LongHelp = "Select the desired element type to be filtered";
+
+optionsFrame.bidFrame.AxisLabel.Title= "軸系: ";
+optionsFrame.bidFrame.AxisLabel.LongHelp= "Enable to choose the axis system:";
+optionsFrame.bidFrame.elementsAxisFiltersFrame.AxisEditor.LongHelp = "The current axis system used";
+optionsFrame.bidFrame.elementsAxisFiltersFrame.PushButtonAxis.Title= "...";
+optionsFrame.bidFrame.elementsAxisFiltersFrame.PushButtonAxis.LongHelp= "To modify the current Axis System";
+optionsFrame.bidFrame.elementsAxisFiltersFrame.CheckButtonAxisDisplay.Title= "局部顯示";
+optionsFrame.bidFrame.elementsAxisFiltersFrame.CheckButtonAxisDisplay.LongHelp= "To display the current Axis System (this option has no effect during animation)";
+
+optionsFrame.bidFrame.LabelComponent.Title = "分件: ";
+optionsFrame.bidFrame.LabelComponent.LongHelp = "Enable to verify or modify Component filter";
+optionsFrame.bidFrame.ComboComponents.LongHelp = "Select the components to be displayed.";
+
+optionsFrame.bidFrame.LabelSMI.Title = "圖層: ";
+optionsFrame.bidFrame.LabelSMI.LongHelp = "Enable to verify or modify SMI filter";
+optionsFrame.bidFrame.ComboSmi.LongHelp = "Select the sub-layer from which the results will be displayed.";
+
+optionsFrame.bidFrame.ElementsLaminaFiltersFrame.RadioButtonLamina.Title = "Lamina: ";
+optionsFrame.bidFrame.ElementsLaminaFiltersFrame.RadioButtonLamina.LongHelp = "Enable to verify or modify Lamina filter";
+optionsFrame.bidFrame.ElementsLaminaFiltersFrame.RadioButtonPlyId.Title = "Ply id: ";
+optionsFrame.bidFrame.ElementsLaminaFiltersFrame.RadioButtonPlyId.LongHelp = "Enable to verify or modify Ply id filter";
+
+optionsFrame.bidFrame.ElementsLaminaFiltersFrame.SpinnerLamina.LongHelp = "Select the lamina from which the results will be displayed.";
+optionsFrame.bidFrame.ElementsLaminaFiltersFrame.LabelBornesLamina.LongHelp = "the lamina must be in [Min-Max] interval";
+
+optionsFrame.bidFrame.ElementsLaminaFiltersFrame.ComboPlyId.LongHelp = "Select the ply id from which the results will be displayed.";
+
+
+resultsFrame.Title = "Results";
+
+resultsFrame.LabelEnvelopMode.Title = "Envelop mode:";
+resultsFrame.envelopModeFrame.LabelEnvelopMode.LongHelp = "Enable to choose the envelop mode for which the results will be computed.";
+resultsFrame.envelopModeFrame.ComboEnvelopMode.LongHelp = "Select the envelop mode for which the results will be computed.";
+
+resultsFrame.LabelLaminaMode.Title = "Lamina:";
+resultsFrame.laminaModeFrame.RadioButtonLaminaOverAll.Title = "Over all ";
+resultsFrame.laminaModeFrame.RadioButtonLaminaOverAll.LongHelp = "Enable to modify the lamina mode";
+resultsFrame.laminaModeFrame.RadioButtonLaminaForEach.Title = "For each ";
+resultsFrame.laminaModeFrame.RadioButtonLaminaForEach.LongHelp = "Enable to modify the lamina mode";
+
+resultsFrame.LabelLayerMode.Title = "Layer:";
+resultsFrame.layerModeFrame.RadioButtonLayerOverAll.Title = "Over all ";
+resultsFrame.layerModeFrame.RadioButtonLayerOverAll.LongHelp = "Enable to modify the layer mode";
+resultsFrame.layerModeFrame.RadioButtonLayerForEach.Title = "For each ";
+resultsFrame.layerModeFrame.RadioButtonLayerForEach.LongHelp = "Enable to modify the layer mode";
+
+resultsFrame.LabelComponentMode.Title = "Component:";
+resultsFrame.componentModeFrame.RadioButtonComponentOverAll.Title = "Over all ";
+resultsFrame.componentModeFrame.RadioButtonComponentOverAll.LongHelp = "Enable to modify the component mode";
+resultsFrame.componentModeFrame.RadioButtonComponentForEach.Title = "For each ";
+resultsFrame.componentModeFrame.RadioButtonComponentForEach.LongHelp = "Enable to modify the component mode";
+
+FROMSOLVER = " (from solver)";
+
+MAXIMUM = "Maximum";
+MINIMUM = "Minimum";
+ABSOLUTEMAXIMUM = "Absolute maximum";

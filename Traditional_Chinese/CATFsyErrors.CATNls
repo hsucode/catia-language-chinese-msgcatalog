@@ -1,0 +1,50 @@
+TestLocking = "測試鎖定機構";
+//
+//
+DescriptionLocked_ERR0100.Request    = "嚐試去修改鎖定說明名稱 /p1";
+DescriptionLocked_ERR0100.Diagnostic = "保護已設定 (/p3-/p4-/p5 at /p6:/p7:/p8) 為原因 : /p2"; 
+DescriptionLocked_ERR0100.Advice     = "如果原因不重要,移除說明的保護";
+//
+//
+DuplicateAssociationToPPR_ERR1000.Request    = "試圖建立相關名稱 /p";
+DuplicateAssociationToPPR_ERR1000.Diagnostic = "這樣的名稱已經存在"; 
+DuplicateAssociationToPPR_ERR1000.Advice     = "不使用現存的名稱";
+//
+DuplicateLinkToPPR_ERR1001.Request    = "試圖在相關名稱 /p2 中建立與 /p1 的聯結";
+DuplicateLinkToPPR_ERR1001.Diagnostic = "這樣的聯結在相關中已經存在"; 
+DuplicateLinkToPPR_ERR1001.Advice     = "不在相關裡兩次連接這個相同的物件";
+//
+LinkToAnotherDocument_ERR1002.Request    = "試圖在相關名稱 /p2 中建立與 /p1 的聯結";
+LinkToAnotherDocument_ERR1002.Diagnostic = "相關性中所有聯結均指向文件 /p1, 所以您無法建立聯結至 /p2 因為這樣為引導至 /p3"; 
+LinkToAnotherDocument_ERR1002.Advice     = "所有相關的聯結需指向相同文件";
+//
+//
+DuplicateScript_ERR1010.Request    = "試圖建立程序名稱 /p";
+DuplicateScript_ERR1010.Diagnostic = "這樣的程序已經存在"; 
+DuplicateScript_ERR1010.Advice     = "不使用現存的程序";
+//
+//
+ActionAlreadyInGroup_ERR1020.Request    = "嚐試增加動作 /p1 至群組 /p2";
+ActionAlreadyInGroup_ERR1020.Diagnostic = "此動作已屬於群組"; 
+ActionAlreadyInGroup_ERR1020.Advice     = "請在增加至其它群組前先從群組移除";
+//
+ActionSourceBadForGroup_ERR1021.Request    = "嚐試增加動作 /p1 至群組 /p2";
+ActionSourceBadForGroup_ERR1021.Diagnostic = "動作來源在群組指出的輸出物件"; 
+ActionSourceBadForGroup_ERR1021.Advice     = "選擇一個與群組方向一致的動作";
+//
+ActionDestinationBadForGroup_ERR1022.Request    = "嚐試增加動作 /p1 至群組 /p2";
+ActionDestinationBadForGroup_ERR1022.Diagnostic = "動作目的在群組指出的輸出物件"; 
+ActionDestinationBadForGroup_ERR1022.Advice     = "選擇一個與群組方向一致的動作"
+//
+UntiedActionForGroup_ERR1023.Request    = "嚐試增加動作命名 /p1 至群組 /p2";
+UntiedActionForGroup_ERR1023.Diagnostic = "來源或動作目的地必須是物件"; 
+UntiedActionForGroup_ERR1023.Advice     = "選擇與群組方向一致的動作";
+//
+//
+NoGenerativeKnowledgeLicense_ERR1030.Request    = "嚐試從功能性元素 /P2 由程序 /P1 產生元素";
+NoGenerativeKnowledgeLicense_ERR1030.Diagnostic = "必須有使用 GenerativeKnowledge 的能力授權"; 
+NoGenerativeKnowledgeLicense_ERR1030.Advice     = "請確定您已取得 PKT (產品知識樣式) 的軟體授權";
+//
+NoGenerativeKnowledgeLicense_ERR1031.Request    = "嚐試取得從功能性元素 /P2 由程序 /P1 產生元素時的精靈";
+NoGenerativeKnowledgeLicense_ERR1031.Diagnostic = "必須有使用 GenerativeKnowledge 的能力授權"; 
+NoGenerativeKnowledgeLicense_ERR1031.Advice     = "請確定您已取得 PKT (產品知識樣式) 的軟體授權";

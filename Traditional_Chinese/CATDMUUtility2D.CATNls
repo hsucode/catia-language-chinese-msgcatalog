@@ -1,0 +1,65 @@
+START_BATCH="CATDMUUtility2D 開始在 :";
+STOP_BATCH="CATDMUUtility2D 停止在下列時間 : ";
+ERR_PROCESSING="錯誤: CATDMUUtility2D 無法處理.";
+ERR_TREATMENT="錯誤: 無法處理下列文件: ";
+OK_TREATMENT="確認: 己處理下列文件: ";
+
+INFO_HELP="USAGE: \n
+Retrieve the help information:
+ CATDMUUtility2D -h
+Export input data:
+ CATDMUUtility2D -id inputId -cgm outputlocation
+                [-sheet sheetName]
+                [-db VPM|ENOVIA5 -user user -spwd cryppwd -role role
+                 -server srv]
+
+Windows Examples:
+   CATDMUUtility2D -h
+   CATDMUUtility2D -id c:\u\input.model -cgm c:\tmp\model.cgm 
+Unix Examples:
+   CATDMUUtility2D -h
+   CATDMUUtility2D -id /u/input2/model.model -cgm c:\tmp\model.cgm -sheet Sheet.1
+
+Arguments:
+   -h                   : Help.
+   -id inputId          : To define the input document to treat.
+                          It can be: 
+                          - a path, eventually a DLName preceeded by 'CATDLN://').
+                          - a data base identifier (VPM or LCA)
+                          Different types of documents are treated: model, 
+                          CATDrawing, dxf, cdd, dwg
+   -db DatabaseType     : The data base Type : 
+                          VPM for VPM data base
+                          ENOVIA5 for LCA data base
+   -user user           : To define the data base user.
+   -spwd cryppwd        : To define the data base password of the user.
+                          It is decrypted before use.
+   -role role           : To define the data base role of the user.
+   -server srv          : To define the data base server.
+   -sheet sheetName     : To export a specific sheet from input data
+
+   NB: user, spwd, role and server parameters are required if input documents refer VPM or LCA.
+
+Diagnostics:
+   Possible exit status values are:
+      0   Successful completion.
+      1   Failure due to any of the following:
+          - licence not available
+          - missing arguments
+          - invalid parameter
+          - missing of parameter after an option
+          - missing input file
+          - unable to find a file
+          - unable to open an input file
+          - bad type of document
+      2   Processing error.
+      3   Partially processed.
+
+Troubleshooting:
+   Exit status = 1:
+      Modify command line or environment using information contained within
+      the standard error file.
+   Exit status = 2:
+      Contact you local support.
+   Exit status = 3:
+      Fix the files that cause problem. An interactive use of files may inform about problem.";

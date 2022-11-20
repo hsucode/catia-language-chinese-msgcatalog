@@ -1,0 +1,40 @@
+
+// the message box title to be used by all messages
+MessageTitle	= "特徵辨識";
+
+PA_NoOfRecognition.Request		= "零件分析:";
+PA_NoOfRecognition.Diagnostic	= "Rounds :\t/p1 recognized and /p2 colorized\n\tmax radius = /p3 , min radius = /p4";
+PA_NoOfRecognition.Advice	= "Fillets :\t/p1 recognized and /p2 colorized\n\tmax radius = /p3 , min radius = /p4";
+PA_NonRecognition.Request		= "零件分析:";
+PA_NonRecognition.Diagnostic	= "No fillets or rounds could be recognized!";
+PA_InValidRule.Request		= "零件分析:";
+PA_InValidRule.Diagnostic	= "This is invalid rule";
+PA_InValidRule.Advice	= "Please check the rule parameters.";
+PA_NoColorizeOptionSelected.Request		= "零件分析:";
+PA_NoColorizeOptionSelected.Diagnostic	= "Option 'Do not colorize' is selected for both, fillets and rounds !";
+
+PA_InValidRule_BaseConflict.Request		= "零件分析:";
+PA_InValidRule_BaseConflict.Diagnostic	= "This is invalid rule";
+PA_InValidRule_BaseConflict.Advice		= "Base radius of this rule conflicts with that of rule /p1";
+
+PA_InValidRule_IncorrectRange.Request		= "零件分析:";
+PA_InValidRule_IncorrectRange.Diagnostic	= "This is invalid rule";
+PA_InValidRule_IncorrectRange.Advice		= "The first radius value cannot be greater than the second value";
+
+PA_InValidRule_RangeConflict.Request		= "零件分析:";
+PA_InValidRule_RangeConflict.Diagnostic		= "This is invalid rule";
+PA_InValidRule_RangeConflict.Advice			= "Range of radius values of this rule conflicts with that of rule /p1";
+
+WorkOnlyOnSolids.Request = "零件分析:";
+WorkOnlyOnSolids.Diagnostic = "Part analysis requires at least one solid feature.";
+
+
+
+
+
+
+
+
+
+
+

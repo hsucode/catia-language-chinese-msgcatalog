@@ -1,0 +1,252 @@
+//------------------------------------------------------------------------    
+// Catia Version 5 R.4
+// Copyright DASSAULT SYSTEMES 1999                                           
+// ------------------------------------------------------------------------    
+//      RESPONSABLE:  E. CHAUVEAU
+//      FUNCTION   :  Ressource file (NLS)                                     
+//      USE        :  Create/Edit Part Operation
+// ------------------------------------------------------------------------    
+// Pour des infos pertinentes la signification des differentes messages :
+//
+//
+//    a- Title = Nom de la commande affiché
+//              REGLES: - Commencer par un verbe à l'infinitif
+//                      - Min/maj : chaque mot doit commencer par une majuscule.
+//                  
+//    b- Help = Help affiché en bas à gauche du Frame CATIA
+//              REGLES: - Phrase normale au niveau des min/maj.
+//
+//    c- ShortHelp = Bulle affichée
+//              REGLES: - Phrase normale au niveau des min/maj.
+//
+//    d- LongHelp = Help affiché en selectionnant le Menu principal 'Help' + What's This ?
+//              REGLES: - Phrase normale au niveau des min/maj.
+//						- SOYEZ BAVARD !!!
+
+// ------------------------------------------------------------------------    
+
+Title = "¹s¥ó¥[¤u°Ê§@";
+
+// ------------------------------------------------------------------------    
+// --- Icones
+// ------------------------------------------------------------------------    
+
+//Name
+FrameDesc.Name.Title     = "¦WºÙ: ";
+FrameDesc.Name.LongHelp     = "«ü©w¹s¥ó¥[¤u¶°¦WºÙ.";
+FrameDesc.NameEd.LongHelp     = "«ü©w¹s¥ó¥[¤u¶°¦WºÙ.";
+
+//Comments
+FrameDesc.Comment.Title  = "»¡©ú: ";
+FrameDesc.Comment.LongHelp  = "«ü©wªþÄÝ©ó¹s¥ó¥[¤u¶°ªº»¡©ú.";
+FrameDesc.CommentEd.LongHelp  = "«ü©wªþÄÝ©ó¹s¥ó¥[¤u¶°ªº»¡©ú.";
+
+//Machine
+FrameDesc.MachButton.Help = "¿ï¾Ü¾÷¨ã";
+FrameDesc.MachButton.ShortHelp = "¾÷¨ã";
+FrameDesc.MachButton.LongHelp = "¬°©Ò¿ïªº¹s¥ó¥[¤u¶°©Ò¥Îªº¾÷¨ã´£¨Ñ¦s¨ú¹ï¸Ü®Ø,
+¨Ã«ü©w¨ä¯S©Ê";
+FrameDesc.MachEd.LongHelp = "¬°©Ò¿ïªº¹s¥ó¥[¤u¶°©Ò¥Îªº¾÷¨ã´£¨Ñ¦s¨ú¹ï¸Ü®Ø,
+¨Ã«ü©w¨ä¯S©Ê.";
+No_machine_selected = " ¥¼¿ï¾Ü¾÷¨ã";
+
+//Machining axis system
+FrameDesc.AxisIcon.Help  = "¿ï¾Ü°Ñ¦Ò¥[¤u¶b¨t";
+FrameDesc.AxisIcon.ShortHelp = "°Ñ¦Ò¥[¤u¶b¨t";
+FrameDesc.AxisIcon.LongHelp = "¬°©Ò¿ïªº°Ñ¦Ò¥[¤u¶b¨t´£¨Ñ¦s¨ú¹ï¸Ü®Ø, 
+¤M¨ã¸ô®|ÂI®y¼Ð¥Ñ¦¹®y¼Ð´£¨Ñ.";
+FrameDesc.AxisEd.LongHelp = "¬°©Ò¿ïªº°Ñ¦Ò¥[¤u¶b¨t´£¨Ñ¦s¨ú¹ï¸Ü®Ø. 
+¤M¨ã¸ô®|ÂI®y¼Ð¥Ñ¦¹®y¼Ð´£¨Ñ.";
+No_machining_axis_selected = " ¥¼¿ï¾Ü°Ñ¦Ò¥[¤u¶b¨t";
+
+//Product
+GlobalGeom.IProduct.Help = "½Ð¿ï¾Ü²£«~©Î¹s¥ó";
+GlobalGeom.IProduct.ShortHelp = "²£«~©Î¹s¥ó";
+GlobalGeom.IProduct.LongHelp = "¬°©Ò¿ïªº±N¦b¹s¥ó¥[¤u¶°
+¥Î¨Ó¥[¤uªº²£«~©Î¹s¥ó´£¨Ñ¦s¨ú¹ï¸Ü®Ø";
+GlobalGeom.ProductEdt.LongHelp = "¬°©Ò¿ïªº±N¦b¹s¥ó¥[¤u¶°
+¥Î¨Ó¥[¤uªº²£«~©Î¹s¥ó´£¨Ñ¦s¨ú¹ï¸Ü®Ø";
+No_product_selected = " ¥¼¿ï¾Ü²£«~©Î¹s¥ó";
+GlobalGeom.IProductInst.Help = "¦b¹s¥ó²M³æ¤¤¿ï¾Ü²£«~";
+GlobalGeom.IProductInst.ShortHelp = "²£«~½Æ¥ó";
+GlobalGeom.IProductInst.LongHelp = "°Ê¦b²£«~²M³æ¤¤¿ï¾Ü,
+¤uªk¤¤±N­n¥[¤uªº²£«~";
+
+
+// Page Geometrie
+// -------------
+GeometryNotFound = "¥¼§ä¨ì´X¦ó";
+
+GlobalGeom.TabContainer.GeometryPage.Title = " ´X¦ó ";
+
+GlobalGeom.TabContainer.GeometryPage.IPart.ShortHelp = "³]­p¥Î¨Ó¼ÒÀÀªº¹s¥ó";
+GlobalGeom.TabContainer.GeometryPage.IPart.LongHelp = "¬°¼ÒÀÀ²¾°£§÷®Æ©Ò¨Ï¥Îªº¹s¥ó.";
+GlobalGeom.TabContainer.GeometryPage.IPart.Help  = "¿ï¾Ü¥Î¨Ó¼ÒÀÀªº¹s¥ó";
+GlobalGeom.TabContainer.GeometryPage.PartCmb.LongHelp = "¤¹³\¦s¨ú¬°¼ÒÀÀ²¾°£§÷®Æ©Ò¨Ï¥Îªº¹s¥ó.";
+No_designs_selected = " ¥¼¿ï¾Ü¹s¥ó (¥u¥Î¨Ó¼ÒÀÀ)";
+1_design_selected   = " ¤w¿ï¾Ü¤@¶µ¹s¥ó (¥u¥Î¨Ó¼ÒÀÀ)";
+_designs_selected   = " ¤w¿ï¾Ü¹s¥ó (¥u¥Î¨Ó¼ÒÀÀ)";
+
+GlobalGeom.TabContainer.SimulationPage.DesignAccuracyLabel.Title = "³]­pºë«×: ";
+GlobalGeom.TabContainer.SimulationPage.DesignAccuracyLabel.ShortHelp = "¬Û¤ù©Î¼v¤ù¼ÒÀÀªº³]­pºë«×";
+GlobalGeom.TabContainer.SimulationPage.DesignAccuracyLabel.Help = "¬Û¤ù©Î¼v¤ù¼ÒÀÀªº³]­pºë«×";
+GlobalGeom.TabContainer.SimulationPage.DesignAccuracyLabel.LongHelp = "¬Û¤ù©Î¼v¤ù¼ÒÀÀªº³]­pºë«×";
+
+GlobalGeom.TabContainer.SimulationPage.DesignAccuracyDefault.Title = "¹w³]";
+GlobalGeom.TabContainer.SimulationPage.DesignAccuracyDefault.ShortHelp = "¹w³]¬Û¤ù©Î¼v¤ù¼ÒÀÀªº³]­pºë«×";
+GlobalGeom.TabContainer.SimulationPage.DesignAccuracyDefault.Help = "¹w³]¬Û¤ù©Î¼v¤ù¼ÒÀÀªº³]­pºë«×";
+GlobalGeom.TabContainer.SimulationPage.DesignAccuracyDefault.LongHelp = "¹w³]¬Û¤ù©Î¼v¤ù¼ÒÀÀªº³]­pºë«×";
+
+GlobalGeom.TabContainer.GeometryPage.IStock.ShortHelp = "¥Î¨Ó¼ÒÀÀªº¥Í®Æ";
+GlobalGeom.TabContainer.GeometryPage.IStock.LongHelp = "¤¹³\¦s¨ú¬°¼ÒÀÀ²¾°£§÷®Æ©Ò¨Ï¥Îªº¥Í®Æ.";
+GlobalGeom.TabContainer.GeometryPage.IStock.Help  = "¿ï¾Ü¥Î¨Ó¼ÒÀÀªº¥Í®Æ";
+GlobalGeom.TabContainer.GeometryPage.StockCmb.LongHelp = "¤¹³\¦s¨ú¬°¼ÒÀÀ²¾°£§÷®Æ©Ò¨Ï¥Îªº¥Í®Æ.";
+No_stocks_selected = " ¥¼¿ï¾Ü¥Í®Æ (¥u¥Î¨Ó¼ÒÀÀ)";
+1_stock_selected   = " ¤w¿ï¾Ü¤@¶µ¥Í®Æ (¥u¥Î¨Ó¼ÒÀÀ)";
+_stocks_selected   = " ¤w¿ï¾Ü¥Í®Æ  (¥u¥Î¨Ó¼ÒÀÀ)";
+
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyLabel.Title = "§÷®Æºë«×: ";
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyLabel.ShortHelp = "¬Û¤ù©Î¼v¤ù¼ÒÀÀªº§÷®Æºë«×";
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyLabel.Help = "¬Û¤ù©Î¼v¤ù¼ÒÀÀªº§÷®Æºë«×";
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyLabel.LongHelp = "¬Û¤ù©Î¼v¤ù¼ÒÀÀªº§÷®Æºë«×";
+
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyDefault.Title = "¹w³]";
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyDefault.ShortHelp = "¬Û¤ù©Î¼v¤ù¼ÒÀÀªº¹w³]§÷®Æºë«×";
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyDefault.Help = "¬Û¤ù©Î¼v¤ù¼ÒÀÀªº¹w³]§÷®Æºë«×";
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyDefault.LongHelp = "¬Û¤ù©Î¼v¤ù¼ÒÀÀªº¹w³]§÷®Æºë«×";
+
+// AutoStock turning
+GlobalGeom.TabContainer.GeometryPage.StockCmb.ContextualStock.AutoStock.Title = "¬°¨®§É°Ê§@¦Û°Ê¿ï¾Ü§÷®Æ";
+GlobalGeom.TabContainer.GeometryPage.StockCmb.ContextualStock.AutoStock.Help      = "¬°¥Ø«e¨®§É°Ê§@¦Û°Ê¿ï¾Ü§÷®Æ¨Ã­pºâ";
+GlobalGeom.TabContainer.GeometryPage.StockCmb.ContextualStock.AutoStock.ShortHelp = "¬°¥Ø«e¨®§É°Ê§@¦Û°Ê¿ï¾Ü§÷®Æ¨Ã­pºâ
+¿ï¶µ¬°¤â°Ê¿ï¾Ü";
+GlobalGeom.TabContainer.GeometryPage.StockCmb.ContextualStock.AutoStock.LongHelp  = "¬°¥Ø«e¨®§É°Ê§@¦Û°Ê¿ï¾Ü§÷®Æ¨Ã­pºâ.
+¤â°Ê¿ï¾Ü¤´¥i¨Ï¥Î¦ýÅÜ¬°¿ï¾Ü©Ê.
+¦p¤â°Ê¿ï¾Ü§÷®Æ, ¤´±N·|¯Ç¤J­pºâ.";
+
+
+
+GlobalGeom.TabContainer.GeometryPage.IFixt.ShortHelp = "¥Î¨Ó¼ÒÀÀªº§¨¨ã";
+GlobalGeom.TabContainer.GeometryPage.IFixt.LongHelp = "¤¹³\¦s¨ú¬°¼ÒÀÀ²¾°£§÷®Æ©Ò¨Ï¥Îªº§¨¨ã.";
+GlobalGeom.TabContainer.GeometryPage.IFixt.Help  = "¿ï¾Ü¥Î¨Ó¼ÒÀÀªº§¨¨ã´X¦ó";
+GlobalGeom.TabContainer.GeometryPage.FixtCmb.LongHelp = "¤¹³\¦s¨ú¬°¼ÒÀÀ²¾°£§÷®Æ©Ò¨Ï¥Îªº§¨¨ã.";
+No_fixtures_selected = " ¥¼¿ï¾Ü§¨¨ã (¥u¥Î¨Ó¼ÒÀÀ)";
+1_fixture_selected   = " ¤w¿ï¾Ü¤@¶µ§¨¨ã (¥u¥Î¨Ó¼ÒÀÀ)";
+_fixtures_selected   = " ¤w¿ï¾Ü§¨¨ã (¥u¥Î¨Ó¼ÒÀÀ)";
+
+
+
+GlobalGeom.TabContainer.GeometryPage.ISafety.ShortHelp = "¦w¥þ­±";
+GlobalGeom.TabContainer.GeometryPage.ISafety.LongHelp = "¤¹³\¦s¨ú¹s¥ó¥[¤uªºÁ`Åé¦w¥þ­±´X¦ó.";
+GlobalGeom.TabContainer.GeometryPage.ISafety.Help  = "¿ï¾Ü¦w¥þ­±";
+GlobalGeom.TabContainer.GeometryPage.SafetyCmb.LongHelp = "¤¹³\¦s¨ú¹s¥ó¥[¤uªºÁ`Åé¦w¥þ­±´X¦ó.";
+No_Safety_selected = " ¥¼¿ï¾Ü¦w¥þ­±";
+1_Safety_selected   = " ¤w¿ï¾Ü¤@¶µ¦w¥þ­±";
+_Safety_selected   = " ¤w¿ï¾Ü¦w¥þ­±";
+Safety_no_found   = " ¥¼§ä¨ì¦w¥þ­±";
+Safety_no_synchro   = " ¦w¥þ­±¥¼¦P¨B";
+
+GlobalGeom.TabContainer.GeometryPage.ITraverseBox.ShortHelp = "¾î¶V²°¥­­±";
+GlobalGeom.TabContainer.GeometryPage.ITraverseBox.LongHelp = "¤¹³\¹s¥ó°Ê§@¤¤¦s¨ú¥Î¨Ó¿ï¾Ü©w¸q¾î¶V²°ªºÁ`Åé¥­­±´X¦ó¤¸¯À.";
+GlobalGeom.TabContainer.GeometryPage.ITraverseBox.Help  = "¿ï¾Ü¾î¶V²°¥­­±";
+GlobalGeom.TabContainer.GeometryPage.TraverseBoxCmb.LongHelp = "¤¹³\¹s¥ó°Ê§@¤¤¦s¨ú¥Î¨Ó¿ï¾Ü©w¸q¾î¶V²°ªºÁ`Åé¥­­±´X¦ó¤¸¯À.";
+No_TraverseBox_selected = "¥¼¿ï¾Ü¾î¶V²°¥­­±";
+1_TraverseBox_selected   = "¤w¿ï¾Ü 1 ¾î¶V²°¥­­±";
+_TraverseBox_selected   = " ¤w¿ï¾Ü¾î¶V²°¥­­±";
+
+GlobalGeom.TabContainer.GeometryPage.ITransition.ShortHelp = "Âà´«¥­­±";
+GlobalGeom.TabContainer.GeometryPage.ITransition.LongHelp = "¤¹³\¹s¥ó°Ê§@¤¤¦s¨ú¥Î¨Ó¿ï¾Ü©w¸q¾î¶V²°ªºÂà´«¥­­±´X¦ó¤¸¯À.";
+GlobalGeom.TabContainer.GeometryPage.ITransition.Help  = "¿ï¾ÜÂà´«¥­­±";
+GlobalGeom.TabContainer.GeometryPage.TransitionCmb.LongHelp = "¤¹³\¹s¥ó°Ê§@¤¤¦s¨ú¥Î¨Ó¿ï¾Ü©w¸q¾î¶V²°ªºÂà´«¥­­±´X¦ó¤¸¯À.";
+No_Transition_selected = "¥¼¿ï¾ÜÂà´«¥­­±";
+1_Transition_selected   = "¤w¿ï²Ä¤@Âà´«¶¡¥­­±";
+_Transition_selected   = "¤w¿ïÂà´«¶¡¥­­±";
+
+GlobalGeom.TabContainer.GeometryPage.IRotary.ShortHelp = "±ÛÂà¥­­±";
+GlobalGeom.TabContainer.GeometryPage.IRotary.LongHelp = "¤¹³\¹s¥ó°Ê§@¤¤¦s¨ú¥Î¨Ó¿ï¾Ü©w¸q¾î¶V²°ªº±ÛÂà¥­­±´X¦ó¤¸¯À.";
+GlobalGeom.TabContainer.GeometryPage.IRotary.Help  = "¿ï¾Ü±ÛÂà¥­­±";
+GlobalGeom.TabContainer.GeometryPage.RotaryCmb.LongHelp = "¤¹³\¹s¥ó°Ê§@¤¤¦s¨ú¥Î¨Ó¿ï¾Ü©w¸q¾î¶V²°ªº±ÛÂà¥­­±´X¦ó¤¸¯À.";
+No_Rotary_selected = " ¥¼¿ï¾Ü±ÛÂà¥­­±";
+1_Rotary_selected   = "¤w¿ï 1 ±ÛÂà¥­­±";
+_Rotary_selected   = " ¤w¿ï±ÛÂà¥­­±";
+
+GlobalGeom.TabContainer.GeometryPage.IIPMBody.ShortHelp = "¬° DPM ¥[¤uµ{§Ç­p¹ºªº IPM ¥»Åé";
+GlobalGeom.TabContainer.GeometryPage.IIPMBody.LongHelp = "¤¹³\±z¦s¨ú¬°¿ï¾Ü µ{§Ç¼Ò«¬(Process Model) ©Ò¨Ï¥Îªº¥»Åé´X¦ó.";
+GlobalGeom.TabContainer.GeometryPage.IIPMBody.Help  = "¬° µ{§Ç¼Ò«¬(Process Model) ©Ò¨Ï¥Îªº¥»Åé";
+GlobalGeom.TabContainer.GeometryPage.IPMBodyCmb.LongHelp = "¤¹³\±z¦s¨ú¬°¿ï¾Ü µ{§Ç¼Ò«¬(Process Model) ©Ò¨Ï¥Îªº¥»Åé´X¦ó.";
+No_IPMBody_selected = " ¥¼¿ï¾Ü IPM ¥»Åé";
+1_IPMBody_selected   = " 1 IPM ¥»Åé¤w¿ï¾Ü";
+_IPMBody_selected   = " IPM ¥»Åé¤w¿ï¾Ü";
+
+
+
+
+// Position in reference machinining axis system
+// -----------------------
+ToolChangePoint = "  ¤M¨ã§ó´«ÂI";
+ToolMountPoint = "  ¤M¨ã¬[±µÂI";
+MfgToolChgX = "X";
+MfgToolChgY = "Y";
+MfgToolChgZ = "Z";
+GlobalGeom.TabContainer.ToolChangePage.ToolChangePosition.ToolChangePositionXYZFrm.MfgToolChgX.LongHelp = "«ü¥X¤M¨ã§ó´«ÂIªº X®y¼Ð.";
+GlobalGeom.TabContainer.ToolChangePage.ToolChangePosition.ToolChangePositionXYZFrm.MfgToolChgY.LongHelp = "«ü¥X¤M¨ã§ó´«ÂIªº Y®y¼Ð.";
+GlobalGeom.TabContainer.ToolChangePage.ToolChangePosition.ToolChangePositionXYZFrm.MfgToolChgZ.LongHelp = "«ü¥X¤M¨ã§ó´«ÂIªº Z®y¼Ð.";
+
+MfgSetUpDeltaX = "¼W¶q X";
+MfgSetUpDeltaY = "¼W¶q Y";
+MfgSetUpDeltaZ = "¼W¶q Z";
+MfgSetUpDeltaX.LongHelp = "«ü©w³]©w§É¥x¤¤¤ßªº X ­È.
+¦¹³]©w¨M©w§É¥x¤¤¤ß»P°Ñ¦Ò¶bªº¬Û¹ïÃö«Y.";
+MfgSetUpDeltaY.LongHelp = "«ü©w³]©w§É¥x¤¤¤ßªº Y ­È.
+¦¹³]©w¨M©w§É¥x¤¤¤ß»P°Ñ¦Ò¶bªº¬Û¹ïÃö«Y.";
+MfgSetUpDeltaZ.LongHelp = "«ü©w³]©w§É¥x¤¤¤ßªº  Z ­È.
+¦¹³]©w¨M©w§É¥x¤¤¤ß»P°Ñ¦Ò¶bªº¬Û¹ïÃö«Y.";
+
+MfgUseMachineToolChangePoint = "¥Ñ¾÷¨ã.";
+GlobalGeom.TabContainer.ToolChangePage.ToolChangePosition.MfgUseMachineToolChangePoint.LongHelp = "¦p¤Ä¿ï¦¹¿ï¶µ, ¾÷¨ã©w¸q¼Æ­È (¥Ñ¾÷¨ã»s¼t®a)\n ±N·|¥Î¨Ó©w¸q¤M¨ã§ó´«ÂI.
+\n ¦¹ºØ±¡§Î¤U, ©ÒÅã¥Üªº®y¼Ð±N¤£·|±N¤M¨ãªø«×­p¤J.";
+
+MfgUseMachineHomePoint = "¥Ñ¾÷¨ã.";
+GlobalGeom.TabContainer.ToolChangePage.HomePosition.MfgUseMachineHomePoint.LongHelp = "¦p¤Ä¿ï¦¹¿ï¶µ, ¦b¾÷¨ã½s¿è¾¹¤¤ªº¤M¶b¼ÐÅÒ±N·|¥Î¨Ó©w¸q­ìÂI.";
+
+GlobalGeom.TabContainer.ToolChangePage.Title = " ¦ì¸m ";
+GlobalGeom.TabContainer.ToolChangePage.ToolChgType.Title = "¤M¨ã§ó´«§Î¦¡: ";
+GlobalGeom.TabContainer.ToolChangePage.ToolChangePosition.Title = "¤M¨ã§ó´«ÂI";
+GlobalGeom.TabContainer.ToolChangePage.ToolChangePosition.LongHelp = "¤M¨ã§ó´«ÂI©w¸q. \n (¤£·|¥Î¦b¦h Turret ¾÷¨ã.)";
+GlobalGeom.TabContainer.ToolChangePage.SetupPositionFrm.Title = "§É¥x¤¤¤ß³]©w";
+GlobalGeom.TabContainer.ToolChangePage.XTPos.Title = "X : ";
+GlobalGeom.TabContainer.ToolChangePage.YTPos.Title = "Y : ";
+GlobalGeom.TabContainer.ToolChangePage.ZTPos.Title = "Z : ";
+GlobalGeom.TabContainer.ToolChangePage.LabelPntId.Title = "Id : ";
+GlobalGeom.TabContainer.ToolChangePage.SelectPntButton.ShortHelp = "ÂIªº¹Ï§Î¿ï¾Ü";
+GlobalGeom.TabContainer.ToolChangePage.SelectPntButton.Help      = "ÂIªº¹Ï§Î¿ï¾Ü";
+GlobalGeom.TabContainer.ToolChangePage.HomePosition.Title= "­ìÂI";
+GlobalGeom.TabContainer.ToolChangePage.HomePosition.LongHelp= "­ìÂI©w¸q";
+
+// Page Simulation
+// -------------
+GlobalGeom.TabContainer.SimulationPage.Title = " ¼ÒÀÀ ";
+
+// Page Option
+// -------------
+GlobalGeom.TabContainer.OptionPage.Title = " ¿ï¶µ ";
+
+// AutoStock turning
+GlobalGeom.TabContainer.OptionPage.AutoStockButton.Title     = "¬°¨®§É°Ê§@¦Û°Ê¿ï¾Ü§÷®Æ";
+GlobalGeom.TabContainer.OptionPage.AutoStockButton.Help      = "¬°¥Ø«e¨®§É°Ê§@¦Û°Ê¿ï¾Ü§÷®Æ¨Ã­pºâ";
+GlobalGeom.TabContainer.OptionPage.AutoStockButton.ShortHelp = "¬°¥Ø«e¨®§É°Ê§@¦Û°Ê¿ï¾Ü§÷®Æ¨Ã­pºâ
+¿ï¶µ¬°¤â°Ê¿ï¾Ü";
+GlobalGeom.TabContainer.OptionPage.AutoStockButton.LongHelp  = "¬°¥Ø«e¨®§É°Ê§@¦Û°Ê¿ï¾Ü§÷®Æ¨Ã­pºâ.
+¤â°Ê¿ï¾Ü¤´¥i¨Ï¥Î¦ýÅÜ¬°¿ï¾Ü©Ê.
+¦p¤â°Ê¿ï¾Ü§÷®Æ, ¤´±N·|¯Ç¤J­pºâ.";
+
+// ------------------------------------------------------------------------    
+// Validation du changement de machine
+// ------------------------------------------------------------------------    
+ConfirmModifyMachine.Title    = "¿ï¾Ü·s¾÷¨ã";
+ConfirmModifyMachine.Text     = "¤w¦sªº¾÷¨ã·|³Q§R°£";
+ConfirmModifyMachine.BOK      = "½T©w";
+ConfirmModifyMachine.BCancel  = "¨ú®ø";
+
+CompleteImpact.Title  = "¹s¥ó¥[¤u§ó·s";
+CompleteImpact.Text   = "±zªº«e¤@­Ó§¹¦¨·|³Q§R°£";

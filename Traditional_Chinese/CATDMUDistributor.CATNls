@@ -1,0 +1,61 @@
+INFO_HELP="
+CATDMUDistributor copies DMU data (CATProduct, 相關暫存器資料和其它)
+   從它們目前位置提供表列至較遠位置或計算檔案表列來複製. \n
+用法 :\n
+   取得說明資訊:
+      CATDMUDistributor -h\n
+   從它們目前位置到較遠位置複製 DMU 資料 :
+      CATDMUDistributor inputdir cachedir docdir [-s char]\n
+   計算檔案表列來複製 :
+      CATDMUDistributor inputdir cachedir docdir -list file [-s char]\n
+Windows 例子 :\n
+   CATDMUDistributor -h
+   CATDMUDistributor c:\input e:\cache e:\document\n
+Unix 例子 :\n
+   CATDMUDistributor -h
+   CATDMUDistributor /u/input /v/cache /v/document\n
+引數 :\n
+   -h            : 說明.
+   inputdir      : 定義含有文件表列檔案的目錄.
+                   每一行必須含有文件名稱,
+   cachedir      : 定義較遠暫存器目錄.
+   docdir        : 定義含有除了暫存器資料外所有文件的較遠暫存器目錄.
+   -list file    : 含有要複製文件表列的輸出檔案.
+                   每一行含有原始資料路徑和以空白字元分隔的複製資料.
+   -s char       : 在輸人或輸出檔案內代表隔線的字元.
+                   預設為空白字元.\n
+偵錯 :\n
+    可能的退出情形數值是 :\n
+      0   成功完成. \n
+      1   因下列原因失敗 :
+          - 不具軟體授權
+          - 未啟動暫存器管理
+          - 缺少引數
+          - 無效參數
+          - 選擇後缺少參數
+          - 缺少輸入目錄
+          - 缺少暫存器目錄
+          - 缺少文件目錄
+          - 無效目錄
+          - 無法開啟輸入檔案
+          - 無法寫入輸出檔案
+      2   處理中錯誤. \n
+      3   部份處理完成. \n
+錯誤情形 :\n
+   退出情形 = 1:
+      使用標準錯誤檔案內所含資訊修改命令線或環境.\n
+   退出情形 = 2:
+      請連絡售商. \n
+   退出情形 = 3:
+      修正造成問題的檔案 : 標準錯誤檔案內含有檔名. 檔案內有說明問題.
+";
+ERR_PROCESSING="錯誤: CATDMUDistributor 處理失敗.";
+ERR_MISSING_INPUT_DIR="錯誤: 須定義輸入目錄.";
+ERR_MISSING_CACHE_DIR="錯誤: 須定義暫存器輸入目錄.";
+ERR_MISSING_DOCUMENT_DIR="錯誤: 須定義文件目錄.";
+ERR_COPY="錯誤: 相關下列文件的暫存器資料無法複製:";
+OK_COPY="OK: 相關下列文件的暫存器資料已複製:";
+NO_COPY="錯誤: 沒有相關下列文件的相關暫存器資料:";
+START_BATCH="CATDMUDistributor 開始在 :";
+STOP_BATCH="CATDMUDistributor 經過下列時間停止 :";
+

@@ -1,0 +1,55 @@
+//----------------------
+// NLS du graph d'etats 
+//----------------------
+CATSPMImageEditCmd.ModifyState.Message          = "使用所需選項修改圖像";
+CATSPMImageEditCmd.ColorModifyState.Message     = "選擇所須顏色";
+CATSPMImageEditCmd.SymbolModifyState.Message    = "修改符號的顯示選項";
+CATSPMImageEditCmd.OptionsModifyState.Message   = "修改顯示選項";
+
+//------------------------
+// NLS objets de dialogue 
+//------------------------
+SPMCombined             =       "是的";
+SPMNotCombined          =       "不是的";
+SPMCombineAll           =       "全部";
+SPMSmiAll               =       "全部";
+SPMSmiUpper             =       "上層";
+SPMSmiMid               =       "中間";
+SPMSmiLower             =       "下層";
+SPMSmiUpperAndLower     =       "上和下";
+SPMLaminaStart          =       "[1-";
+SPMLaminaEnd            =       "]";
+SPMLaminaMinMax         =       "[最小-最大]";
+SPMLineicElements       =       "線性元素";
+SPMSurfaceElements      =       "曲面元素";
+SPMVolumeElements       =       "體積元素";
+SPMAllElements          =       "全部";
+SPMRealPart             =       "實體";
+SPMImaginaryPart        =       "虛擬";
+SPMModulusPart          =       "係數";
+SPMPhasisPart           =       "階段";
+SPMArrow                =       "單箭頭";
+SPMDoubleArrow          =       "雙箭頭";
+SPMTensor               =       "Tensor";
+SPMRestraint            =       "限制";
+SPMPressure             =       "壓力";
+SPMAxis                 =       "軸";
+SPMCube                 =       "立方體";
+SPMTetra                =       "Tetra";
+SPMPoint                =       "點";
+
+//-------------------------------------------------------------
+// NLS du CATDlgNotify pour le changement du filtre "Position"
+//-------------------------------------------------------------
+CATSPMImageEditCmd.SPMErrorNotify.Title = "修改錯誤";
+No_Charac_For_Position = "此位置沒有字元. \n",
+                         "檢查影像定義或嚐試其它位置.";
+//-------------------------------------------------------------
+// NLS du CATDlgNotify pour l'edition d'une image inactive
+//-------------------------------------------------------------
+EditionErrorTitle = "警告 !";
+EditionErrorText  = "沒有編輯器可執行未啟動圖像. \n
+                    請先起動圖像 !";
+EditionErrorText2 = "沒有編輯器可執行未啟動圖像.\n",
+                    "刪除它 !";
+EditionErrorText3 = "空的網格無法編輯 !";

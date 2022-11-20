@@ -1,0 +1,30 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+// END WIZARD REPLACEMENT ZONE
+Migrate.HeaderFrame.Global.Title ="Bundle Segment 升級模式";
+
+Migrate.IconAndOptionsFrame.OptionsFrame.IdRadioFrame.IdBNS.Title = "Bundle segments";
+Migrate.IconAndOptionsFrame.OptionsFrame.IdRadioFrame.IdBNS.ShortHelp = "升級 V4 bundle segments 至 V5 bundle segments. One CATPart for each bundle segments";
+Migrate.IconAndOptionsFrame.OptionsFrame.IdRadioFrame.IdBNS.Help = "升級 V4 bundle segments to V5 bundle segments. One CATPart for each bundle segments";
+Migrate.IconAndOptionsFrame.OptionsFrame.IdRadioFrame.IdBranchable.Title = "多重分枝 bundle segments";
+Migrate.IconAndOptionsFrame.OptionsFrame.IdRadioFrame.IdBranchable.ShortHelp = "升級 V4 bundle segments to V5 bundle segments. All bundle segments of a geometrical bundle in a single CATPart document";
+Migrate.IconAndOptionsFrame.OptionsFrame.IdRadioFrame.IdBranchable.Help = "升級 V4 bundle segments to V5 bundle segments. All bundle segments of a geometrical bundle in a single CATPart document";
+IdNoE3DHelp =      "Electrical data migration from V4 to V5 is not enabled.\n",
+                   "To enable it, enter CATIE3DMigration in the \n",
+                   "Interface Name field in the Migration Batch tab.";                   
+IdBNSHelp =        "Migrate V4 BNSs to V5 bundle segments.\n",
+                   "Each V5 bundle segment will have its own CATPart document.\n",
+                   "All these bundle segments will be instantiated in the \n",
+                   "geometrical bundle CATProduct document.";
+IdBranchableHelp = "Migrate V4 BNSs to a V5 multi-branchable document.\n",
+                   "All the V4 BNSs of a given V4 GBN will result in a \n",
+                   "multi-branchable document: a single CATPart.";
+
+
+IdGBNTOFrame.HeaderFrame.Global.Title = "幾何 Bundle 升級模式";
+
+IdGBNTOFrame.IconAndOptionsFrame.OptionsFrame.IdComponent.Title = "分件";
+IdGBNTOFrame.IconAndOptionsFrame.OptionsFrame.IdComponent.ShortHelp = "升級 GBN 如同分件";
+IdGBNTOFrame.IconAndOptionsFrame.OptionsFrame.IdComponent.Help = "升級 GBN 如同分件";
+IdGBNTOFrame.IconAndOptionsFrame.OptionsFrame.IdProduct.Title = "產品";
+IdGBNTOFrame.IconAndOptionsFrame.OptionsFrame.IdProduct.ShortHelp = "升級 GBN 如同 CATProduct";
+IdGBNTOFrame.IconAndOptionsFrame.OptionsFrame.IdProduct.Help = "升級 GBN 如同 CATProduct";

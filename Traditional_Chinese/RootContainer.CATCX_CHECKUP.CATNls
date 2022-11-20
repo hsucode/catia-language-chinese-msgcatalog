@@ -1,0 +1,27 @@
+////////////////////////////////////////////////////////////////////////
+// container CGM checkup geometrique-topologique
+//**********************************************************************
+//
+//  +---------------------------------------------------------------------
+//  |  coherence des compteurs d'appropriation (UseCount)
+//  | avec la cardinalites des liens d'aggregation (GetLinks-Dependancy)     
+//  +--------------------------------------------------------------------
+//
+UseCount_Dependancy = 
+"the /P2 objects cumulate coherent UseCount or Dependancies /P3.";
+//
+MaxTag_ObjectsCount = 
+"contains /P3 objects with Tag between [1,/P2].";
+//
+MaxTag.Null = 
+"contains /P2 objects with null MaxTag.";
+//
+MaxTag.Incoherence = 
+"the /P2-th object has Tag /P4 higher than MaxTag /P3.";
+//
+ObjectsCount.Incoherence = 
+"contains /P3 objects incoherent with _ObjectsCount /P2.";
+//
+UseCount_Dependancy.mismatch = 
+"the /P2 objects cumulate UseCount /P3 mismatching the /P4 Dependancies.";
+//

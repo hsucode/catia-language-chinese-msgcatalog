@@ -1,0 +1,141 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+
+// END WIZARD REPLACEMENT ZONE
+
+Title = "幾何容差";
+Help = "";
+ShortHelp = "";
+LongHelp = "";
+
+frmMain.chkFilterSymbol.Title = "過濾器容差";
+frmMain.chkFilterSymbol.ShortHelp = "過濾器容差";
+frmMain.chkFilterSymbol.LongHelp = "表列可用幾何容差圖示符號會被過濾成適當特徵元素";
+
+frmMain.frmInsertSymbol.lblInsertSymbol.Title = "插入符號";
+frmMain.frmInsertSymbol.ibxSymbol.ShortHelp = "插入符號";
+frmMain.frmInsertSymbol.ibxSymbol.LongHelp = "在直徑區域和基準特徵修改區域間插入符號";
+
+frmMain.frmInsertSymbol.ibxSymbol.btnNone0.ShortHelp = "無";
+frmMain.frmInsertSymbol.ibxSymbol.btnNone0.LongHelp = "無.";
+
+frmMain.frmInsertSymbol.ibxSymbol.btnDiameter.ShortHelp = "直徑";
+frmMain.frmInsertSymbol.ibxSymbol.btnDiameter.LongHelp = "直徑區域定義相關直徑的容差.";
+
+frmMain.frmInsertSymbol.ibxSymbol.btnFreeState.ShortHelp = "自由狀態";
+frmMain.frmInsertSymbol.ibxSymbol.btnFreeState.LongHelp = "自由狀態變異
+加工中在移除受力後零件的變形.";
+
+frmMain.frmInsertSymbol.ibxSymbol.btnAtLeastMaterialCondition.ShortHelp = "最小材料狀態";
+frmMain.frmInsertSymbol.ibxSymbol.btnAtLeastMaterialCondition.LongHelp = "最小材料狀態
+此特徵含有尺寸容差所允許的最小材料狀態.";
+
+frmMain.frmInsertSymbol.ibxSymbol.btnAtMaximumMaterialCondition.ShortHelp = "最大材料狀態";
+frmMain.frmInsertSymbol.ibxSymbol.btnAtMaximumMaterialCondition.LongHelp = "最大材料狀態
+此特徵含有尺寸容差所允許的最大材料狀態.";
+
+frmMain.frmInsertSymbol.ibxSymbol.btnProjectedToleranceZone.ShortHelp = "投影容差區域";
+frmMain.frmInsertSymbol.ibxSymbol.btnProjectedToleranceZone.LongHelp = "投影容差區域";
+
+frmMain.frmInsertSymbol.ibxSymbol.btnRegardlessOfTheActualSize.ShortHelp = "忽略特徵大小";
+frmMain.frmInsertSymbol.ibxSymbol.btnRegardlessOfTheActualSize.LongHelp = "忽略特徵大小
+不論實際特徵大小,位置容差將被保持.";
+
+frmMain.frmInsertSymbol.ibxSymbol.btnTangentPlane.ShortHelp = "切面";
+frmMain.frmInsertSymbol.ibxSymbol.btnTangentPlane.LongHelp = "切面
+切面特徵修改因子.";
+
+frmMain.frmInsertSymbol.ibxSymbol.btnST.ShortHelp = "靜態容差";
+frmMain.frmInsertSymbol.ibxSymbol.btnST.LongHelp = "靜態容差";
+
+frmMain.frmInsertSymbol.ibxSymbol.btnArrow.ShortHelp = "之間";
+frmMain.frmInsertSymbol.ibxSymbol.btnArrow.LongHelp = "之間";
+
+
+frmMain.edtUpperText.ShortHelp = "上標文字";
+frmMain.edtUpperText.LongHelp = "輸入上標文字";
+
+frmMain.edtLowerText.ShortHelp = "下標文字";
+frmMain.edtLowerText.LongHelp = "輸入下標文字";
+
+frmMain.frmGDTObject.frmTolerance.Title = "容差";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.Title = "容差型式";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.ShortHelp = "容差特徵修改因子.";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.LongHelp = "定義應用在主要容差數值的特徵修改因子.";
+
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnNone1.ShortHelp = "無";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnNone1.LongHelp = "沒有幾何特性";
+
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnStraightness.ShortHelp = "直線度";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnStraightness.LongHelp = "新增幾何容差: 直線度";
+
+
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnFlatness.ShortHelp = "平面度";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnFlatness.LongHelp = "新增幾何容差: 平面度";
+
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnCircularity.ShortHelp = "真圓度";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnCircularity.LongHelp = "新增幾何容差: 真圓度";
+
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnCylindricity.ShortHelp = "圓柱度";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.Cylindricity.LongHelp = "新增幾何容差: 圓柱度";
+
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnProfileOfALine.ShortHelp = "線外形";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnProfileOfALine.LongHelp = "新增幾何容差: 線外形";
+
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnProfileOfASurface.ShortHelp = "曲面外形";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnProfileOfASurface.LongHelp = "新增幾何容差: 曲面外形";
+
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnAngularity.ShortHelp = "角度";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnAngularity.LongHelp = "新增幾何容差: 角度";
+
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnPerpendicularity.ShortHelp = "垂直度";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnPerpendicularity.LongHelp = "新增幾何容差: 垂直度";
+
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnParallelism.ShortHelp = "平行度";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnParallelism.LongHelp = "新增幾何容差: 平行度";
+
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnPosition.ShortHelp = "位置度";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnPosition.LongHelp = "新增幾何容差: 位置度";
+
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnConcentricity.ShortHelp = "同心度";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnConcentricity.LongHelp = "新增幾何容差: 同心度";
+
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnSymmetry.ShortHelp = "對稱度";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnSymmetry.LongHelp = "新增幾何容差: 對稱度";
+
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnCircularRunout.ShortHelp = "圓周外形";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnCircularRunout.LongHelp = "新增幾何容差: 圓周外形";
+
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnTotalRunout.ShortHelp = "總體外形";
+frmMain.frmGDTObject.frmTolerance.ibxToleranceType.btnTotalRunout.LongHelp = "新增幾何容差: 總體外形";
+
+frmMain.frmGDTObject.frmTolerance.frmTolVal.edtToleranceValue.Title = "容差數值";
+frmMain.frmGDTObject.frmTolerance.frmTolVal.edtToleranceValue.ShortHelp = "容差數值";
+frmMain.frmGDTObject.frmTolerance.frmTolVal.edtToleranceValue.LongHelp = "主要容差數值
+主要容差數值輸入編輯器.";
+
+frmMain.frmGDTObject.frmReference.Title = "參考";
+frmMain.frmGDTObject.frmReference.edtReferenceValue1.Title = "參考數值";
+frmMain.frmGDTObject.frmReference.edtReferenceValue1.ShortHelp = "主要基準文字";
+frmMain.frmGDTObject.frmReference.edtReferenceValue1.LongHelp = "主要基準文字
+主要基準文字輸入編輯器.";
+
+frmMain.frmGDTObject.frmReference.edtReferenceValue2.Title = "參考數值";
+frmMain.frmGDTObject.frmReference.edtReferenceValue2.ShortHelp = "第二基準文字";
+frmMain.frmGDTObject.frmReference.edtReferenceValue2.LongHelp = "第二基準文字
+第二基準文字輸入編輯器.";
+
+frmMain.frmGDTObject.frmReference.edtReferenceValue3.Title = "參考數值";
+frmMain.frmGDTObject.frmReference.edtReferenceValue3.ShortHelp = "第三基準文字";
+frmMain.frmGDTObject.frmReference.edtReferenceValue3.LongHelp = "第三基準文字
+第三基準文字輸入編輯器.";
+
+frmMain.frmGDTObject.frmUpDown.btnUp.Title = "前一行";
+frmMain.frmGDTObject.frmUpDown.btnUp.ShortHelp = "前一行";
+frmMain.frmGDTObject.frmUpDown.btnUp.LongHelp = "前一行";
+
+frmMain.frmGDTObject.frmUpDown.btnDown.Title = "下一行";
+frmMain.frmGDTObject.frmUpDown.btnDown.ShortHelp = "下一行";
+frmMain.frmGDTObject.frmUpDown.btnDown.LongHelp = "下一行";
+
+ErrorMessageDialog.Title   = "繪圖錯誤";
+ErrorMessageDialog.Message   = "容差形式未定義";

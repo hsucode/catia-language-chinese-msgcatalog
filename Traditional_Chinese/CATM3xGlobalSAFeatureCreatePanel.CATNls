@@ -1,0 +1,43 @@
+Title = "斜面區域";
+
+M3xSAToolFrame.ToolSel.Title = "參考: ";
+M3xSAToolFrame.ComboTool.LongHelp = "在文件中選擇刀具";
+
+ViewFrame.VisuState.SubsetMenu.HideShowMenu.Title = "隱藏或顯示";
+
+OffsetName    = "預留群組";
+M3xNoneOffset = "無";
+M3xColTitle1 = "區域";
+M3xColTitle2 = "隱藏 / 顯示";
+M3xShow = "顯示";
+M3xSACornerRadius = "刀具圓角 ";
+M3xSADiameter = "本體直徑 ";
+M3xSAMinSlope = "下部";
+M3xSAMaxSlope = "上部";
+M3xSATolerance = "精度 ";
+M3xSAPartOffset = "零件上預留 ";
+M3xSAOverlapLength = "重疊 ";
+M3xSASlopeFrame = "斜度";
+M3xSAToolFrame = "刀具";
+M3xSACompute = "計算";
+
+OffsetName.LongHelp = "Lets you select an offset group, when available.";
+M3xSACornerRadius.LongHelp = "指定刀具的圓角半徑.";
+M3xSADiameter.LongHelp = "指定刀具的本體直徑";
+M3xSAMinSlope.LongHelp = "指定斜面的最小角度.";
+M3xSAMaxSlope.LongHelp = "指定斜面的最大長度.";
+M3xSATolerance.LongHelp = "指定加工精度.";
+M3xSAPartOffset.LongHelp = "指定零件上的預留.";
+M3xSAOverlapLength.LongHelp = "指定區域間的重疊.";
+M3xSASlopeFrame.LongHelp = "Define three types of area on the part:
+- blue defines horizontal areas
+- yellow defines sloping, transitional areas between vertical and horizontal, 
+- red defines vertical areas.";
+
+Compute.Help = "計算斜面範圍";
+Compute.LongHelp = "計算斜面範圍";
+Compute.ShortHelp = "計算斜面範圍";
+
+ExportB.Title = "輸出";
+ExportWarning = "製造資訊";
+ExportMessage = "無可輸出. \n 請先計算斜面區域.";

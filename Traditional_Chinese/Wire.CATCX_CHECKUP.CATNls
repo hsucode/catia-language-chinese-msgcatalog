@@ -1,0 +1,64 @@
+//------------------------------------------------------
+// Resource file for internal Topological Check-Up 
+// En_EN
+//----------------------------------------------------------------- -----
+// CAUTION : each index is of maximum length of seventy-two characters !
+//-----------------------------------------------------------------------
+//
+VerticesConnexity.Ambiguous=
+"is Non Manifold with /P3 bounding Edges of /P2.";
+//
+//
+//    *******************************************************************
+//    *  WIRE rule : successive edge share common vertices
+//    *******************************************************************
+//
+AdjacentEdgesOpen =
+"is an Open Wire of /P4 adjacent Edge(s) with extremities [/P2,/P3].";
+//
+AdjacentEdgesClosed =
+"is a Closed Wire of /P3 adjacent Edge(s) with /P2 as common begin/end extremity.";
+//
+GeometryOpenWire.Coincident=
+"is Open with [/P2,/P3] at extremities but with same location (/P4, /P5, /P6) with gap /P7";
+//
+//         ------------------------------------------------------
+//         --   Trivial check on Type or value of orientation
+//         -------------------------------------------------------
+//
+AdjacentEdges.NoEdge =
+"is empty, no Edge has been found.";
+//
+BoundingEdge.InvalidEdge = 
+"is bounding invalid /P2.";
+//
+AdjacentEdges.AbortedEdge =
+" failed on internal chain of edges on /P2-th Edge of Wire.";
+//
+AdjacentEdges.InvalidOrientation =
+"is made of /P2 with no valid orientation (/P3 with support /P4).";
+//
+AdjacentEdges.InvalidVertices =
+"is made of invalid  /P4 -> /P5 when trying to check adjacency of [/P2,/P3].";
+//
+//         --------------------------------------------------------
+//         --   True failure of Wire made of non connexe edges
+//         ---------------------------------------------------------
+//
+AdjacentEdges.DisjointVertices =
+"is made of successive [/P2,/P3] which are not adjacent on [/P4,/P5].";
+//
+AdjacentEdges.SameEdgeTwice =
+"is made of /P2 encountered at least twice in Wire.";
+//
+//    ******************************************************************
+//    *  TOPOLOGY rule : Check must be done with a topology not touched
+//    ******************************************************************
+//
+Topology.Touched =
+"is a touched topology (temporary attribute for boolean operation or smartduplication).";
+//
+OwnerInBody.many =
+"has many owners in /P4 : (/P5-th inside /P7 of /P2) and (/P6-th inside /P8 of /P3).";
+//
+ 

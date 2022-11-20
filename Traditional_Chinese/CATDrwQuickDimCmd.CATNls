@@ -1,0 +1,180 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 1998 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwQuickDimCmd
+// LOCATION    :    DraftingIntCommands
+// AUTHOR      :    jmt
+// BUT         :    Commande de creation de cote
+// DATE        :    ??.10.1998
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//      01           fgx   04.10.2000  Rearchitecturation CXR6
+//=====================================================================================
+
+//******************************************************************************
+// Command
+//******************************************************************************
+CATDrwQuickDimCmd.UndoTitle="建立尺寸";
+
+//******************************************************************************
+// Agents
+//******************************************************************************
+CATDrwQuickDimCmd._agentSet.UndoTitle = "選擇";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Interactive Dimension Cmd : SwitchAgent related to Orientation purpose ...
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+CATDrwQuickDimCmd.OrientBarRessource.Bar.Title="定位";
+
+//******************************************************************************
+// Reference Element Button - V5R3 Only
+//******************************************************************************
+CATDrwQuickDimCmd.OrientBarRessource.RefElem.Title = "參考元素";
+CATDrwQuickDimCmd.OrientBarRessource.RefElem.ShortHelp="參考元素";
+CATDrwQuickDimCmd.OrientBarRessource.RefElem.Help=
+"尺寸線方向取決於選擇的元素";
+CATDrwQuickDimCmd.OrientBarRessource.RefElem.LongHelp=
+"參考元素
+尺寸線方向取決於選擇的元素";
+
+//******************************************************************************
+// Reference View Button - V5R3 Only
+//******************************************************************************
+CATDrwQuickDimCmd.OrientBarRessource.RefVue.Title = "視圖參考";
+CATDrwQuickDimCmd.OrientBarRessource.RefVue.ShortHelp="視圖參考";
+CATDrwQuickDimCmd.OrientBarRessource.RefVue.Help=
+"尺寸線方向被連結到視圖方向";
+CATDrwQuickDimCmd.OrientBarRessource.RefVue.LongHelp=
+"視圖參考
+尺寸線方向被連結到視圖方向";
+
+//******************************************************************************
+// Projected dimension Button
+//******************************************************************************
+CATDrwQuickDimCmd.OrientBarRessource._RefElem.Title = "投影尺寸";
+CATDrwQuickDimCmd.OrientBarRessource._RefElem.ShortHelp="投影尺寸";
+CATDrwQuickDimCmd.OrientBarRessource._RefElem.Help=
+"尺寸線方向取決於滑鼠位置";
+CATDrwQuickDimCmd.OrientBarRessource._RefElem.LongHelp=
+"投影尺寸
+尺寸線方向取決於滑鼠位置.";
+
+//******************************************************************************
+// Force dimension on element Button
+//******************************************************************************
+CATDrwQuickDimCmd.OrientBarRessource._RefAuto.Title = "元素上的強制尺寸";
+CATDrwQuickDimCmd.OrientBarRessource._RefAuto.ShortHelp="元素上的強制尺寸";
+CATDrwQuickDimCmd.OrientBarRessource._RefAuto.Help=
+"元素上的強制尺寸與標尺寸的元素平行";
+CATDrwQuickDimCmd.OrientBarRessource._RefAuto.LongHelp=
+"元素上的強制尺寸
+元素上的強制尺寸線與標尺寸的元素平行.";
+
+//******************************************************************************
+// Force horizontal dimension Button
+//******************************************************************************
+CATDrwQuickDimCmd.OrientBarRessource._RefHoriz.Title = "強制水平尺寸";
+CATDrwQuickDimCmd.OrientBarRessource._RefHoriz.ShortHelp="強制水平尺寸";
+CATDrwQuickDimCmd.OrientBarRessource._RefHoriz.Help=
+"強制尺寸線是水平的";
+CATDrwQuickDimCmd.OrientBarRessource._RefHoriz.LongHelp=
+"強制水平尺寸
+強制尺寸線是水平的.";
+
+//******************************************************************************
+// Force vertical dimension Button
+//******************************************************************************
+CATDrwQuickDimCmd.OrientBarRessource._RefVert.Title = "強制垂直尺寸";
+CATDrwQuickDimCmd.OrientBarRessource._RefVert.ShortHelp="強制垂直尺寸";
+CATDrwQuickDimCmd.OrientBarRessource._RefVert.Help=
+"強制尺寸線是垂直的";
+CATDrwQuickDimCmd.OrientBarRessource._RefVert.LongHelp=
+"強制垂直尺寸
+強制尺寸線是垂直的.";
+
+//******************************************************************************
+// Force user defined dimension Button
+//******************************************************************************
+CATDrwQuickDimCmd.OrientBarRessource._RefUser.Title = "沿方向的強制尺寸";
+CATDrwQuickDimCmd.OrientBarRessource._RefUser.ShortHelp="沿方向的強制尺寸";
+CATDrwQuickDimCmd.OrientBarRessource._RefUser.Help=
+"強制沿方向的尺寸線";
+CATDrwQuickDimCmd.OrientBarRessource._RefUser.LongHelp=
+"強制沿方向的尺寸線
+強制沿方向的尺寸線.";
+
+//******************************************************************************
+// True length dimension Button
+//******************************************************************************
+CATDrwQuickDimCmd.OrientBarRessource.VraiGrandeur.Title = "真實長度尺寸";
+CATDrwQuickDimCmd.OrientBarRessource.VraiGrandeur.ShortHelp="真實長度尺寸";
+CATDrwQuickDimCmd.OrientBarRessource.VraiGrandeur.Help=
+"在真實長度尺寸模式中建立尺寸";
+CATDrwQuickDimCmd.OrientBarRessource.VraiGrandeur.LongHelp=
+"真實長度尺寸
+在真實長度尺寸模式中建立尺寸.";
+
+
+//******************************************************************************
+// Force dimension along direction Button
+//******************************************************************************
+CATDrwQuickDimCmd.AlongDirBarRessource.DirectionParallel.Title = "沿方向的尺寸";
+CATDrwQuickDimCmd.AlongDirBarRessource.DirectionParallel.ShortHelp="沿方向的尺寸";
+CATDrwQuickDimCmd.AlongDirBarRessource.DirectionParallel.Help=
+"設定沿方向的尺寸";
+CATDrwQuickDimCmd.AlongDirBarRessource.DirectionParallel.LongHelp=
+"沿方向的尺寸
+設定沿方向的尺寸";
+
+//******************************************************************************
+// Force dimension perpendicular to direction Button
+//******************************************************************************
+CATDrwQuickDimCmd.AlongDirBarRessource.DirectionPerpendicular.Title = "與方向垂直的尺寸";
+CATDrwQuickDimCmd.AlongDirBarRessource.DirectionPerpendicular.ShortHelp= "與方向垂直的尺寸";
+CATDrwQuickDimCmd.AlongDirBarRessource.DirectionPerpendicular.Help=
+"設定與方向垂直的尺寸";
+CATDrwQuickDimCmd.AlongDirBarRessource.DirectionPerpendicular.LongHelp=
+"與方向垂直的尺寸
+設定與方向垂直的尺寸";
+
+//******************************************************************************
+// Force dimension along a fixed angle in view Button
+//******************************************************************************
+CATDrwQuickDimCmd.AlongDirBarRessource.DirectionAngle.Title = "沿視圖中固定角度的尺寸";
+CATDrwQuickDimCmd.AlongDirBarRessource.DirectionAngle.ShortHelp= "沿視圖中固定角度的尺寸";
+CATDrwQuickDimCmd.AlongDirBarRessource.DirectionAngle.Help=
+"設定沿視圖中固定角度的尺寸";
+CATDrwQuickDimCmd.AlongDirBarRessource.DirectionAngle.LongHelp=
+"沿視圖中固定角度的尺寸
+設定沿視圖中固定角度的尺寸";
+
+//******************************************************************************
+// Intersection detection switch
+//******************************************************************************
+CATDrwQuickDimCmd.IntersectionAgentResource.Check.Title="偵測相交點";
+CATDrwQuickDimCmd.IntersectionAgentResource.Check.ShortHelp="偵測相交點";
+CATDrwQuickDimCmd.IntersectionAgentResource.Check.Help=
+"標尺寸時偵測相交點";
+CATDrwQuickDimCmd.IntersectionAgentResource.Check.LongHelp=
+"偵測相交點
+標尺寸時偵測相交點";
+
+//******************************************************************************
+// Angle
+//******************************************************************************
+CATDrwQuickDimCmd.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "角度: ";
+CATDrwQuickDimCmd.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "依據方向鍵入角度";
+
+//******************************************************************************
+// Driving Dim Value
+//******************************************************************************
+CATDrwQuickDimCmd.Value.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "數值 : ";
+CATDrwQuickDimCmd.Value.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "請輸入驅動尺寸數值";
+

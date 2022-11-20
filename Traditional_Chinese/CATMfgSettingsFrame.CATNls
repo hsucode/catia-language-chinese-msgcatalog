@@ -1,0 +1,105 @@
+frameOper.labelOper.Title ="步序";
+frameColor.labelColor.Title ="顏色";
+
+// * Operation Options *
+// =====================
+
+FrameOper1.Title = "步序";
+
+FrameOper1.AutoEditOper.Title = "正好在建立以後開始編輯模式";
+FrameOper1.AutoEditOper.LongHelp = "編輯模式自動地開始以修改建立的步序的參數";
+
+FrameOper1.SearchToolInProgram.Title = "在建立以後在目前程式的前面的步序中搜尋相容刀具";
+FrameOper1.SearchToolInProgram.LongHelp = "在步序建立時, 如果相容刀具存在目前程式的前面的步序中, 它將被設定在新的中.否則,此步序將不會完成";
+
+FrameOper1.CreateDefTool.Title = "在文件中搜尋相容刀具或者在建立以後建立一預設值";
+FrameOper1.CreateDefTool.LongHelp = "在步序建立時, 在文件中搜尋以發現相容的刀具.如果沒有相容的存在, 文件中預設的一個會被建立且設定在建立的步序中.";
+
+FrameOper1.AutoSequencingButton.Title = "在建立之後依序加工步序";
+FrameOper1.AutoSequencingButton.LongHelp = "在建立之後,加工步序自動在目前的程式中排序.否則, 它將在特徵視圖中被管理";
+
+FrameOper1.CopyOperKeepToolLinkButton.Title = "當複製時保留刀具";
+FrameOper1.CopyOperKeepToolLinkButton.LongHelp = "當複製步序時, 刀具將在複製步序時被保留. 否則, 此步序將不會完成";
+
+FrameOper1.CopyOperKeepGeometryLinkButton.Title = "當複製時複製幾何的連結";
+FrameOper1.CopyOperKeepGeometryLinkButton.LongHelp = "當複製步序時, 幾何的連結將在複製步序時被複製. 否則, 幾何將必須定義.";
+
+
+// * Geometry Options *
+// =====================
+
+FrameColor1.LabelColorBottom.Title = "底部";
+FrameColor1.LabelColorBottom.LongHelp = " 3D 顯示器中底部的顏色";
+
+FrameColor1.LabelColorFlank.Title = "驅動和導引";
+FrameColor1.LabelColorFlank.LongHelp = "3D 顯示器中驅動和導引的顏色";
+
+FrameColor1.LabelColorLimit.Title = "修剪 ";
+FrameColor1.LabelColorLimit.LongHelp = "3D 顯示器中修剪元素的顏色";
+
+FrameColor1.LabelColorCheck.Title = "檢查和島(Islands) ";
+FrameColor1.LabelColorCheck.LongHelp = "3D 顯示器中檢查元素和島(Islands) 的顏色";
+
+FrameColor1.LabelColorRequired.Title = "必須的參數 ";
+FrameColor1.LabelColorRequired.LongHelp = "在步序和特徵編輯器中必須的參數的顏色";
+
+FrameColor1.LabelColorValuated.Title = "評估的參數 ";
+FrameColor1.LabelColorValuated.LongHelp = "在步序和特徵編輯器中評估的參數的顏色";
+
+FrameColor1.LabelColorOptional.Title = "選擇的參數 ";
+FrameColor1.LabelColorOptional.LongHelp = "在步序和特徵編輯器中選擇的參數的顏色";
+
+
+FrameColor1.LabelColorText.Title = "說明 ";
+FrameColor1.LabelColorText.LongHelp = "在步序和特徵編輯器中說明的顏色";
+
+
+// * Tool selection *
+// ------------------
+frameToolSel.labelToolSel.Title ="刀具選擇";
+
+// * Automatic Tool Query *
+FrameTool.ToolAutoQuery.Title = "修改以後的自動徵詢";
+FrameTool.ToolAutoQuery.LongHelp  = "在每一個修改以後,徵詢被執行";
+
+// * Tool Visualization *
+FrameTool.Tool2DVisu.Title = "選擇以後的刀具預覽";
+FrameTool.Tool2DVisu.LongHelp  = "刀具預覽是在選擇以後";
+
+// * PP tables and Tools location *
+// -------------------------------
+framePPTools.labelPPTools.Title ="刀具目錄和後處理表格";
+
+FramePPTool.LabelPPTool.Title     = "加工的路徑: ";
+FramePPTool.EditorPPTools.LongHelp  = "定義存取刀具目錄和後處理用語表格的路徑. 
+指定的路徑必須包括資料夾加工的 \ 後處理表格和加工的 \ 刀具.
+否則警告訊息將產生.";
+
+
+// * Tree Display *
+// ----------------
+frameTree.labelTree.Title ="歷程樹顯示";
+
+// * Tree *
+FrameTree1.PPRTreeVisualization.Title = "顯示產品資源模式中程序的歷程樹";
+// * Contextual Help *
+// * Contextual Help *
+FrameTree1.PPRTreeVisualization.LongHelp = "顯示產品資源模式中程序的歷程樹.";
+
+// * Collapse Tool Nodes *
+// FrameTree1.PPRTreeCollapseTools.Title = "Display tree in collapsing tool nodes";
+// * Contextual Help *
+// * Contextual Help *
+// FrameTree1.PPRTreeCollapseTools.LongHelp = "Display tree in collapsing tool nodes.";
+
+// * Tool Path Replay *
+// ------------------
+frameReplayTP.labelReplayTP.Title ="刀具路徑播放";
+
+// * ReplayTP *
+FrameReplayTP.ToolDisplayMode.Title = "在刀具路徑上靠近游標位置處顯示刀具.";
+// * Contextual Help *
+// * Contextual Help *
+FrameReplayTP.ToolDisplayMode.LongHelp = "在刀具路徑上靠近游標位置處顯示刀具.";
+
+

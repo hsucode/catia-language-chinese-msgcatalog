@@ -1,0 +1,75 @@
+// Erreurs d'execution du CATStRelimitWiresOperator
+
+InvalideTopologyError.Message = "An invalide topology detected in your selection";
+MultiDomainBodyError.Message = "The selected wire contains several non-connexe entities.Please select a connexe body";
+IntersectionCreationError.Message = "Intersection creation failed";
+MultiDomainIntersectError.Message = "The resulting intersection contains several non-connexe entities.";
+SeveralIntersectError.Message = "Mutliple intersections detected between two last selected wires.";
+MultipleVertexError.Message = "There is more then one solution to place the intersection point:
+                               possible auto-intersection for one of selected wires.";
+ClosedWireError.Message = "A closed wire could not be a part of fill contour.Please, select an open wire.";
+NonConnexeSplitError.Message ="Non connexe contour was generated.";
+NoSplitBodyError.Message ="No solution to create the contour between these two wires.";
+SelfIntersectionError.Message = "This fill contour is self intersecting.";
+
+ConnexionRunError1.Message="Invalide topology detected in the selected fill contour.";
+ConnexionRunError2.Message="There is at least one multi-domain wire in the selected fill contour.";
+ConnexionRunError3.Message="One of contour intersections creation failed.";
+ConnexionRunError4.Message="Some diconnected wires generated during intersection operation.";
+ConnexionRunError5.Message="Mutliple intersections detected between two consecutive wires in fill contour.";
+ConnexionRunError6.Message="A possible auto-intersection for one of selected wires was detected.";
+ConnexionRunError7.Message="An unknown topological error occurs creating closed fill contour.";
+ConnexionRunError8.Message="The modified wires don't intersect any more.";
+ConnexionRunError9.Message="A closed wire is detected in the fill contour.";
+ConnexionRunError10.Message="Non connexe contour was generated.";
+ConnexionRunError11.Message="No solution to create the contour between these two wires.";
+ConnexionRunError12.Message="This fill contour is self intersecting.";
+
+ConnexionRunError_ERR_1001.Request="Invalide topology detected in the selected fill contour.";
+ConnexionRunError_ERR_1001.Diagnostic = "";
+ConnexionRunError_ERR_1001.Advice     = "";
+
+ConnexionRunError_ERR_1002.Request="There is at least one multi-domain wire in the selected fill contour.";
+ConnexionRunError_ERR_1002.Diagnostic = "";
+ConnexionRunError_ERR_1002.Advice     = "";
+
+ConnexionRunError_ERR_1003.Request="One of contour intersections creation failed.";
+ConnexionRunError_ERR_1003.Diagnostic = "";
+ConnexionRunError_ERR_1003.Advice     = "";
+
+ConnexionRunError_ERR_1004.Request="Some diconnected wires generated during intersection operation.";
+ConnexionRunError_ERR_1004.Diagnostic = "";
+ConnexionRunError_ERR_1004.Advice     = "";
+
+ConnexionRunError_ERR_1005.Request="Mutliple intersections detected between two consecutive wires in fill contour.";
+ConnexionRunError_ERR_1005.Diagnostic = "";
+ConnexionRunError_ERR_1005.Advice     = "";
+
+ConnexionRunError_ERR_1006.Request="A possible auto-intersection for one of selected wires was detected.";
+ConnexionRunError_ERR_1006.Diagnostic = "";
+ConnexionRunError_ERR_1006.Advice     = "";
+
+ConnexionRunError_ERR_1007.Request="An unknown topological error occurs creating closed fill contour.";
+ConnexionRunError_ERR_1007.Diagnostic = "";
+ConnexionRunError_ERR_1007.Advice     = "";
+
+ConnexionRunError_ERR_1008.Request="The modified wires don't intersect any more.";
+ConnexionRunError_ERR_1008.Diagnostic ="The modified wires don't intersect any more.";
+ConnexionRunError_ERR_1008.Advice     ="The maximum distance between wires should not exceed 0.1 mm.";
+
+ConnexionRunError_ERR_1009.Request="A closed wire is detected in the fill contour.";
+ConnexionRunError_ERR_1009.Diagnostic ="";
+ConnexionRunError_ERR_1009.Advice     ="Replace the closed wire by an open one, or insert an adequat trim operation.";
+
+ConnexionRunError_ERR_10010.Request="A non-connexe contour was generated.";
+ConnexionRunError_ERR_10010.Diagnostic ="";
+ConnexionRunError_ERR_10010.Advice     ="";
+
+ConnexionRunError_ERR_10011.Request="No solution to create the contour between these two wires.";
+ConnexionRunError_ERR_10011.Diagnostic ="";
+ConnexionRunError_ERR_10011.Advice     ="";
+
+ConnexionRunError_ERR_10012.Request="This fill contour is self intersecting.";
+ConnexionRunError_ERR_10012.Diagnostic ="";
+ConnexionRunError_ERR_10012.Advice     =""; 
+

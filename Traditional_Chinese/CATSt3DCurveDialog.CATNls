@@ -1,0 +1,89 @@
+//==============================================================================
+// COPYRIGHT DASSAULT SYSTEMES  2000
+//==============================================================================
+//
+// CATSt3DCurveDialog: Resource file for NLS purpose related to 3D curve dialog
+//
+//==============================================================================
+//
+// Implementation Notes:
+//
+//==============================================================================
+// August 00   Creation                                    F. LETZELTER
+//==============================================================================
+
+Title="3D 曲線";
+BApplyMore.Title="詳細 ...";
+BApplyLess.Title="基本 ...";
+MainFrame.ComboFrame.Title="建立形式";
+MainFrame.ComboFrame.Combo.ThroughPoints.Title="經過的點";
+MainFrame.ComboFrame.Combo.ControlPoints.Title="控制的點";
+MainFrame.ComboFrame.Combo.NearPoints.Title="鄰近點";
+MainFrame.ComboFrame.LongHelp="選擇您要建立曲線的方式.
+曲線可以是:
+- 插補 (經過點)
+- 平順 (鄰近點)
+- 以控制點來建立.";
+MainFrame.ComboFrame.Combo.LongHelp="選擇您要建立曲線的方式.
+曲線可以是:
+- 插補 (經過點)
+- 平順 (鄰近點)
+- 以控制點來建立.";
+
+MainFrame.OptionsFrame.Title="點處理";
+MainFrame.OptionsFrame.LongHelp="提供使用者對曲線控制點的增加 ,移除或釋放";
+MainFrame.OptionsFrame.InsertPointCheck.Title="插入點";
+MainFrame.OptionsFrame.InsertPointCheck.ShortHelp="插入點";
+MainFrame.OptionsFrame.InsertPointCheck.LongHelp="在曲線中的任意位置插入點";
+MainFrame.OptionsFrame.RemovePointCheck.Title="移除點";
+MainFrame.OptionsFrame.RemovePointCheck.ShortHelp="移除點";
+MainFrame.OptionsFrame.RemovePointCheck.LongHelp="在曲線中的任意位置移除點";
+MainFrame.OptionsFrame.FreePointCheck.Title="釋放或限制點";
+MainFrame.OptionsFrame.FreePointCheck.ShortHelp="釋放或限制點";
+MainFrame.OptionsFrame.FreePointCheck.LongHelp="釋放或限制控制點以致 :
+- 如果釋放點, 則將不用限制點來趨近線形.
+- 如果限制點, 則將用限制點來趨近線形.
+  使用 CONTROL 鍵及最小距離來投影點.";
+
+MainFrame.OnPlaneFrame.Title="";
+MainFrame.OnPlaneFrame.LongHelp="";
+MainFrame.OnPlaneFrame.OnPlaneCheck.Title="不啟動幾何偵測";
+MainFrame.OnPlaneFrame.OnPlaneCheck.LongHelp="即使有些幾何已用滑鼠表示, 仍然允許使用者在目前的平面建立點.
+使用 CONTROL 鍵來投影幾何偵測到的點至目前平面.";
+
+MainFrame.MoreFrame.Title="選項";
+MainFrame.MoreFrame.LongHelp="提供使用者一些進階選項";
+MainFrame.MoreFrame.NoPrevisuCheck.Title="隱藏預視曲線";
+MainFrame.MoreFrame.NoPrevisuCheck.LongHelp="允許使用者隱藏預視曲線";
+MainFrame.MoreFrame.ToleranceFrame.ToleranceLabel.Title="變異 : ";
+MainFrame.MoreFrame.ToleranceFrame.ToleranceLabel.LongHelp="允許使用者設定曲線和控制點間的最大變異.";
+MainFrame.MoreFrame.ToleranceFrame.ToleranceSpinner.Title="";
+MainFrame.MoreFrame.ToleranceFrame.ToleranceSpinner.LongHelp="允許使用者設定曲線和控制點間的最大變異.";
+MainFrame.MoreFrame.ArcsFrame.ArcsLabel.Title="弧段 : ";
+MainFrame.MoreFrame.ArcsFrame.ArcsLabel.LongHelp="允許使用者設定弧的最大數目.
+此些弧將會自動插入曲線中. 此選項與手動弧限制插入不相容. 
+當使用者設定點成為弧限制時將自動停止作動 (背景命令).";
+MainFrame.MoreFrame.ArcsFrame.ArcsSpinner.Title="";
+MainFrame.MoreFrame.ArcsFrame.ArcsSpinner.LongHelp="允許使用者設定弧的最大數目.
+此些弧將會自動插入曲線中. 此選項與手動弧限制插入不相容. 
+當使用者設定點成為弧限制時將自動停止作動 (背景命令).";
+
+MainFrame.MoreFrame.MaxOrderFrame.MaxOrderLabel.Title="最大階 : ";
+MainFrame.MoreFrame.MaxOrderFrame.MaxOrderLabel.LongHelp="允許用者設定最大階數.
+This option is only available in Control Points mode and in Near Points mode with the Automatic Order chosen.
+This allows the user to set a bound for the computation of a mono-arc curve. When multi-arc, this value is no more taken into account.";
+MainFrame.MoreFrame.MaxOrderFrame.MaxOrderSpinner.Title="";
+MainFrame.MoreFrame.MaxOrderFrame.MaxOrderSpinner.LongHelp="允許用者設定最大階數.
+This option is only available in Control Points mode and in Near Points mode with the Automatic Order chosen.
+This allows the user to set a bound for the computation of a mono-arc curve. When multi-arc, this value is no more taken into account.";
+
+MainFrame.SmoothFrame.Title="平順選項";
+MainFrame.SmoothFrame.LongHelp="為近接點建立型式提供進階選項";
+MainFrame.SmoothFrame.ParamTypeFrame.ChordLengthTypeRadio.Title="弧長";
+MainFrame.SmoothFrame.ParamTypeFrame.UniformTypeRadio.Title="一致";
+MainFrame.SmoothFrame.ParamTypeFrame.ChordLengthTypeRadio.LongHelp="所建立曲線的弧長參數";
+MainFrame.SmoothFrame.ParamTypeFrame.UniformTypeRadio.LongHelp="所建立曲線的一致參數";
+MainFrame.SmoothFrame.IterationsFrame.IterationsLabel.Title="平順參數";
+MainFrame.SmoothFrame.IterationsFrame.IterationsLabel.LongHelp="設定計算平順參數時的重覆次數";
+MainFrame.SmoothFrame.IterationsFrame.UniformTypeRadio.LongHelp="設定計算平順參數時的重覆次數";
+

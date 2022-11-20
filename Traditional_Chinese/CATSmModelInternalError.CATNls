@@ -1,0 +1,457 @@
+// COPYRIGHT DASSAULT SYSTEMES  2001
+//=============================================================================
+//
+// CATSmModelInternalError.CATNls:
+// En_US                                     
+//
+//=============================================================================
+// Goal             : Internal Error Catalog used for Sheet Metal Model
+// Owner            : sye
+// Creation date    : 11/10/2001
+// Usage notes      : This error is for your internal algorithm or process errors 
+// Modifs			  : RGR : Rajout de textes bruts pour construction de msg d'erreur autres.
+// 
+// Message example : 
+// CATSmModelInternalError_ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// CATSmModelInternalError_ERR_2000.Diagnostic = "Un des parametres est negatif";
+// CATSmModelInternalError_ERR_2000.Advice     = "Utilisez des parametres positifs";         
+//=============================================================================
+//
+// 01 -> 99 : General errors C++, interfaces,...
+//
+CATSmModelInternalError_ERR_0001.Request    = "";
+CATSmModelInternalError_ERR_0001.Diagnostic = "軟體內部錯誤 : null or invalid handler.";
+CATSmModelInternalError_ERR_0001.Advice     = "";         
+
+CATSmModelInternalError_ERR_0002.Request    = "";
+CATSmModelInternalError_ERR_0002.Diagnostic = "軟體內部錯誤 : null or invalid pointer.";
+CATSmModelInternalError_ERR_0002.Advice     = "";
+
+CATSmModelInternalError_ERR_0003.Request    = "";
+CATSmModelInternalError_ERR_0003.Diagnostic = "軟體內部錯誤 : null or invalid vector.";
+CATSmModelInternalError_ERR_0003.Advice     = "";
+
+CATSmModelInternalError_ERR_0004.Request    = "";
+CATSmModelInternalError_ERR_0004.Diagnostic = "建立時發生未預期錯誤.";
+CATSmModelInternalError_ERR_0004.Advice     = "";
+
+
+CATSmModelInternalError_ERR_0005.Request    = "";
+CATSmModelInternalError_ERR_0005.Diagnostic = "You are trying to update only one view, because you have deactivated the others one. But This feature is defined in another view. So the update is impossible.";
+CATSmModelInternalError_ERR_0005.Advice     = "If you still want to performe this update, delete the features defined in others views, or activated the others needed views";
+
+CATSmModelInternalError_ERR_0006.Request    = "";
+CATSmModelInternalError_ERR_0006.Diagnostic = "Error In Copy / Paste : A parameter isn't link to Sheet Metal Parameters";
+CATSmModelInternalError_ERR_0006.Advice     = "";
+// 100 -> 199 : General errors on skin extraction
+CATSmModelInternalError_ERR_0100.Request    = "";
+CATSmModelInternalError_ERR_0100.Diagnostic = "軟體內部錯誤 : 組合面萃取失敗.";
+CATSmModelInternalError_ERR_0100.Advice     = "";         
+
+
+// 200 -> 205 : General errors on surfacic shape creation
+CATSmModelInternalError_ERR_0200.Request    = "";
+CATSmModelInternalError_ERR_0200.Diagnostic = "軟體內部錯誤 : 建立曲面外形失敗.";
+CATSmModelInternalError_ERR_0200.Advice     = "";         
+
+CATSmModelInternalError_ERR_0201.Request    = "";
+CATSmModelInternalError_ERR_0201.Diagnostic = "軟體內部錯誤 : ProcReport on Surfacic Shape has failed.";
+CATSmModelInternalError_ERR_0201.Advice     = "";         
+
+CATSmModelInternalError_ERR_0202.Request    = "";
+CATSmModelInternalError_ERR_0202.Diagnostic = "At least one Edge of the boundary is self intersecting.";
+CATSmModelInternalError_ERR_0202.Advice     = "Modify your inputs.";
+
+// 205 -> 299 : Erreur bend from flat
+CATSmModelInternalError_ERR_0205.Request    = "";
+CATSmModelInternalError_ERR_0205.Diagnostic = "The fixed point is coincident to a bending line which prevent to compute a fixed area.";
+CATSmModelInternalError_ERR_0205.Advice     = "Modify the fixed point.";         
+
+CATSmModelInternalError_ERR_0206.Request    = "";
+CATSmModelInternalError_ERR_0206.Diagnostic = "The fixed point has to lie on a face impacted by the operation and containing a line.";
+CATSmModelInternalError_ERR_0206.Advice     = "Modify the fixed point.";         
+
+CATSmModelInternalError_ERR_0207.Request    = "";
+CATSmModelInternalError_ERR_0207.Diagnostic = "At least one of the lines does not lie on the part body.";
+CATSmModelInternalError_ERR_0207.Advice     = "Modify the sketch.";         
+
+CATSmModelInternalError_ERR_0208.Request    = "";
+CATSmModelInternalError_ERR_0208.Diagnostic = "The fixed point do not allow compute a fixed area.";
+CATSmModelInternalError_ERR_0208.Advice     = "Check that the fixed point is not in a zone directly impacted by a created bend.";         
+
+CATSmModelInternalError_ERR_0209.Request    = "";
+CATSmModelInternalError_ERR_0209.Diagnostic = "One of the lines is lying on another surface than the profile plane.";
+CATSmModelInternalError_ERR_0209.Advice     = "Check that there is no interference with an other surface that could be at the tolerance interpreted as the plane";         
+
+CATSmModelInternalError_ERR_0210.Request    = "";
+CATSmModelInternalError_ERR_0210.Diagnostic = "One of the shape induced by a line is too complex.";
+CATSmModelInternalError_ERR_0210.Advice     = "Check that the lines and the associated parameters define an area that can be folded.";         
+
+CATSmModelInternalError_ERR_0211.Request    = "";
+CATSmModelInternalError_ERR_0211.Diagnostic = "A fixed point must be specified.";
+CATSmModelInternalError_ERR_0211.Advice     = "";  
+
+CATSmModelInternalError_ERR_0212.Request    = " ";
+CATSmModelInternalError_ERR_0212.Diagnostic = "The profile contains one or several curves.";
+CATSmModelInternalError_ERR_0212.Advice     = "The profile has to contain only lines.";
+       
+CATSmModelInternalError_ERR_0213.Request    = " ";
+CATSmModelInternalError_ERR_0213.Diagnostic = "There is  a clash between two generated bends.";
+CATSmModelInternalError_ERR_0213.Advice     = "This configuration is not supported.";
+
+// 300 -> 399 : General errors on thicken operation 
+CATSmModelInternalError_ERR_0300.Request    = "";
+CATSmModelInternalError_ERR_0300.Diagnostic = "Internal error in software : Thicken operation has failed.";
+CATSmModelInternalError_ERR_0300.Advice     = "";         
+
+CATSmModelInternalError_ERR_0301.Request    = "";
+CATSmModelInternalError_ERR_0301.Diagnostic = "Internal error in software : ProcReport on Solide has failed.";
+CATSmModelInternalError_ERR_0301.Advice     = "";         
+
+// uniquement CNEXT_client
+CATSmModelInternalError_ERR_0302.Request    = "";
+CATSmModelInternalError_ERR_0302.Diagnostic = "Trim By Thick Internal error : The number of modified faces is different between Top And Bottom Faces";
+CATSmModelInternalError_ERR_0302.Advice     = "";   
+
+// 400 -> 499 : Internal errors on Flange 
+CATSmModelInternalError_ERR_0400.Request    = "";
+CATSmModelInternalError_ERR_0400.Diagnostic = "Internal error in software : Guide cells do not have the same label the two views.";
+CATSmModelInternalError_ERR_0400.Advice     = "";         
+
+	//utilise uniquement en CNEXT_CLIENT
+CATSmModelInternalError_ERR_0401.Request    = "";
+CATSmModelInternalError_ERR_0401.Diagnostic = "Probleme de mise a plat de la courbe guide.";
+CATSmModelInternalError_ERR_0401.Advice     = "";   
+	//utilise uniquement en CNEXT_CLIENT
+CATSmModelInternalError_ERR_0402.Request    = "";
+CATSmModelInternalError_ERR_0402.Diagnostic = "Probleme de mise a plat d'une des limites.";
+CATSmModelInternalError_ERR_0402.Advice     = "";  
+
+ // 500 -> 599 : Internal errors on Stamp 
+	//utilise uniquement en CNEXT_CLIENT
+CATSmModelInternalError_ERR_0500.Request    = "";
+CATSmModelInternalError_ERR_0500.Diagnostic = "Probleme de mise a plat du contour exterieur.";
+CATSmModelInternalError_ERR_0500.Advice     = "";
+
+ 	//utilise uniquement en CNEXT_CLIENT
+CATSmModelInternalError_ERR_0501.Request    = "";
+CATSmModelInternalError_ERR_0501.Diagnostic = "Probleme dans la construction des courbes caracteristiques GSA.";
+CATSmModelInternalError_ERR_0501.Advice     = "";
+
+CATSmModelInternalError_ERR_0502.Request    = "";
+CATSmModelInternalError_ERR_0502.Diagnostic = "The profile must be specified.";
+
+	//Problemes dans l'operateur SewSkin
+CATSmModelInternalError_ERR_0510.Request    = "Sew Skin Operator";
+CATSmModelInternalError_ERR_0510.Diagnostic = "An error occurred when sewing skins";
+CATSmModelInternalError_ERR_0510.Advice     = "";
+
+ 	//utilise uniquement en CNEXT_CLIENT
+CATSmModelInternalError_ERR_0503.Request    = "";
+CATSmModelInternalError_ERR_0503.Diagnostic = "Probleme dans la construction du fillet.";
+CATSmModelInternalError_ERR_0503.Advice     = "";
+
+
+CATSmModelInternalError_ERR_0504.Request    = "";
+CATSmModelInternalError_ERR_0504.Diagnostic = "The support of the stamp is not defined";
+CATSmModelInternalError_ERR_0504.Advice     = "";
+
+
+CATSmModelInternalError_ERR_0505.Request    = "";
+CATSmModelInternalError_ERR_0505.Diagnostic = "The sketch is empty";
+CATSmModelInternalError_ERR_0505.Advice     = "";
+
+
+CATSmModelInternalError_ERR_0506.Request    = "";
+CATSmModelInternalError_ERR_0506.Diagnostic = "One of the contours of the profile has to contain all the others";
+CATSmModelInternalError_ERR_0506.Advice     = "";
+
+// Bead 
+CATSmModelInternalError_ERR_0507.Request    = "";
+CATSmModelInternalError_ERR_0507.Diagnostic = "The selection contains several contours. ";
+CATSmModelInternalError_ERR_0507.Advice     = "Please, select a curve or a sketch with only one contour.";
+
+CATSmModelInternalError_ERR_0508.Request    = "";
+CATSmModelInternalError_ERR_0508.Diagnostic = "The Fillet between the stamp and its support can not be computed. ";
+CATSmModelInternalError_ERR_0508.Advice     = "Check the radius value.";
+
+CATSmModelInternalError_ERR_0509.Request    = "";
+CATSmModelInternalError_ERR_0509.Diagnostic = "The stamp can not be done on this area. ";
+CATSmModelInternalError_ERR_0509.Advice     = "Edit the stamp and check that the profile or the punch is in a good position.";
+
+CATSmModelInternalError_ERR_0511.Request    = "";
+CATSmModelInternalError_ERR_0511.Diagnostic = "The skin used for stamp computation can not be thickened.";
+CATSmModelInternalError_ERR_0511.Advice     = "You can select some faces as openings to exclude it from the coputation";
+
+CATSmModelInternalError_ERR_0512.Request    = "";
+CATSmModelInternalError_ERR_0512.Diagnostic = "The skin used for stamp computation can not be thickened.";
+CATSmModelInternalError_ERR_0512.Advice     = "Check your inputs";
+ 
+CATSmModelInternalError_ERR_0513.Request    = "";
+CATSmModelInternalError_ERR_0513.Diagnostic = "The second profile must be specified.";
+CATSmModelInternalError_ERR_0513.Advice     = "";
+
+CATSmModelInternalError_ERR_0514.Request    = "";
+CATSmModelInternalError_ERR_0514.Diagnostic = "The second profile is empty.";
+CATSmModelInternalError_ERR_0514.Advice     = "";
+
+CATSmModelInternalError_ERR_0515.Request    = "";
+CATSmModelInternalError_ERR_0515.Diagnostic = "The profile selected is closed.";
+CATSmModelInternalError_ERR_0515.Advice     = "Select an opened profile.";
+
+CATSmModelInternalError_ERR_0516.Request    = "";
+CATSmModelInternalError_ERR_0516.Diagnostic = "The profile selected is not continuous in tangency.";
+CATSmModelInternalError_ERR_0516.Advice     = "Select an other profile.";
+
+CATSmModelInternalError_ERR_0517.Request    = "";
+CATSmModelInternalError_ERR_0517.Diagnostic = "The profile selected is opened.";
+CATSmModelInternalError_ERR_0517.Advice     = "Select an closed profile.";
+
+
+CATSmModelInternalError_ERR_0518.Request    = "";
+CATSmModelInternalError_ERR_0518.Diagnostic = "The profile selected does not contain two contours.";
+CATSmModelInternalError_ERR_0518.Advice     = "Select a profile with an inner contour and an outer one.";
+
+CATSmModelInternalError_ERR_0519.Request    = "";
+CATSmModelInternalError_ERR_0519.Diagnostic = "The section radius has to be greater or equal than the height (R1>=H).";
+CATSmModelInternalError_ERR_0519.Advice     = "Modify one of those two parameters.";
+
+CATSmModelInternalError_ERR_0520.Request    = "";
+CATSmModelInternalError_ERR_0520.Diagnostic = "The height has to be greater than the thickness (H>T).";
+CATSmModelInternalError_ERR_0520.Advice     = "Modify the height.";
+
+
+CATSmModelInternalError_ERR_0521.Request    = "";
+CATSmModelInternalError_ERR_0521.Diagnostic = "The height has to be smaller than the end radius (H<=R2).";
+CATSmModelInternalError_ERR_0521.Advice     = "Modify one of those two parameters.";
+
+CATSmModelInternalError_ERR_0522.Request    = "";
+CATSmModelInternalError_ERR_0522.Diagnostic = "In this configuration the maximum value for the radius is /p1 .";
+CATSmModelInternalError_ERR_0522.Advice     = "Modify the radius.";
+
+CATSmModelInternalError_ERR_0523.Request    = "";
+CATSmModelInternalError_ERR_0523.Diagnostic = "The height has to be smaller than the thickness (H<T).";
+CATSmModelInternalError_ERR_0523.Advice     = "Modify the height.";
+
+
+CATSmModelInternalError_ERR_0524.Request    = "";
+CATSmModelInternalError_ERR_0524.Diagnostic = "The limiting plane has to be normal to the stamping direction.";
+CATSmModelInternalError_ERR_0524.Advice     = "Modify the limiting plane.";
+
+
+CATSmModelInternalError_ERR_0525.Request    = "";
+CATSmModelInternalError_ERR_0525.Diagnostic = "The limiting plane defines the external surface of the stamp.The height induced by this plane has to be greater than the thickness.";
+CATSmModelInternalError_ERR_0525.Advice     = "Modify the height or the limiting plane.";
+
+CATSmModelInternalError_ERR_0526.Request    = "";
+CATSmModelInternalError_ERR_0526.Diagnostic = "In this configuration the maximum admissible value for the height is /p1 .";
+CATSmModelInternalError_ERR_0526.Advice     = "Modify the height.";
+
+CATSmModelInternalError_ERR_0527.Request    = "";
+CATSmModelInternalError_ERR_0527.Diagnostic = "In this configuration the maximum value for the radius R2 is /p1 .";
+CATSmModelInternalError_ERR_0527.Advice     = "Modify the radius.";
+
+ 
+
+CATSmModelInternalError_ERR_0528.Request    = "";
+CATSmModelInternalError_ERR_0528.Diagnostic = "One of the coupling points is no longer recongized.";
+CATSmModelInternalError_ERR_0528.Advice     = "Check and replace the coupling points.";
+
+CATSmModelInternalError_ERR_0529.Request    = "";
+CATSmModelInternalError_ERR_0529.Diagnostic = "One of the opening edges is no longer recognized.";
+CATSmModelInternalError_ERR_0529.Advice     = "Check and replace the opening edges.";
+
+CATSmModelInternalError_ERR_0530.Request    = "";
+CATSmModelInternalError_ERR_0530.Diagnostic = "The Fillet corresponding to Radius R2 can not be computed. ";
+CATSmModelInternalError_ERR_0530.Advice     = "Please, check the radius value or deactivate it.";
+
+CATSmModelInternalError_ERR_0531.Request    = "";
+CATSmModelInternalError_ERR_0531.Diagnostic = "The surface defined by the two profiles is too complex. ";
+CATSmModelInternalError_ERR_0531.Advice     = "Try to add coupling points.";
+
+CATSmModelInternalError_ERR_0532.Request    = "";
+CATSmModelInternalError_ERR_0532.Diagnostic = "The surface defined by the two profiles is too complex. ";
+CATSmModelInternalError_ERR_0532.Advice     = "Try to add or modify coupling points.";
+
+CATSmModelInternalError_ERR_0533.Request    = "";
+CATSmModelInternalError_ERR_0533.Diagnostic = "The surface defined by the two profiles is too complex.The stamp can not be computed ";
+CATSmModelInternalError_ERR_0533.Advice     = "";
+
+CATSmModelInternalError_ERR_0534.Request    = "";
+CATSmModelInternalError_ERR_0534.Diagnostic = "The diameter has to be smaller or equal than the thickness.";
+CATSmModelInternalError_ERR_0534.Advice     = "Modify the diameter.";
+
+CATSmModelInternalError_ERR_0535.Request    = "";
+CATSmModelInternalError_ERR_0535.Diagnostic = "The opening line must be specified.";
+CATSmModelInternalError_ERR_0535.Advice     = "";
+
+CATSmModelInternalError_ERR_0536.Request    = "";
+CATSmModelInternalError_ERR_0536.Diagnostic = "The opening line is no longer recognized.";
+CATSmModelInternalError_ERR_0536.Advice     = "Check and replace the opening line.";
+
+CATSmModelInternalError_ERR_0537.Request    = "";
+CATSmModelInternalError_ERR_0537.Diagnostic = "The parameters do not allow to compute the stamp.";
+CATSmModelInternalError_ERR_0537.Advice     = "Check it.";
+
+CATSmModelInternalError_ERR_0538.Request    = "";
+CATSmModelInternalError_ERR_0538.Diagnostic = "The profile does not contain any line.";
+CATSmModelInternalError_ERR_0538.Advice     = "Modify the profile.";
+
+
+CATSmModelInternalError_ERR_0539.Request    = "";
+CATSmModelInternalError_ERR_0539.Diagnostic = "The end radius has to be greater or equal than the section radius (R2>=R1).";
+CATSmModelInternalError_ERR_0539.Advice     = "Modify one of those two parameters.";
+
+CATSmModelInternalError_ERR_0540.Request    = "";
+CATSmModelInternalError_ERR_0540.Diagnostic = "The die is empty.";
+CATSmModelInternalError_ERR_0540.Advice     = "Check your inputs.";
+
+CATSmModelInternalError_ERR_0541.Request    = "";
+CATSmModelInternalError_ERR_0541.Diagnostic = "The punch is empty.";
+CATSmModelInternalError_ERR_0541.Advice     = "Check your inputs.";
+
+
+CATSmModelInternalError_ERR_0542.Request    = "";
+CATSmModelInternalError_ERR_0542.Diagnostic = "/p1";
+CATSmModelInternalError_ERR_0542.Advice     = "/p1";
+
+
+CATSmModelInternalError_ERR_0543.Request    = "";
+CATSmModelInternalError_ERR_0543.Diagnostic = "One of the company's rule is violated.";
+CATSmModelInternalError_ERR_0543.Advice     = "Check your inputs.";
+
+CATSmModelInternalError_ERR_0544.Request    = "";
+CATSmModelInternalError_ERR_0544.Diagnostic = "The profile is not valid for the feature you want to create.";
+CATSmModelInternalError_ERR_0544.Advice     = "Check that it is not a sketch containing only construction or output elements .";
+
+CATSmModelInternalError_ERR_0545.Request    = "";
+CATSmModelInternalError_ERR_0545.Diagnostic = "The second profile is not valid for the feature you want to create.";
+CATSmModelInternalError_ERR_0545.Advice     = "Check that the profile is not a sketch containing only construction or output elements .";
+
+CATSmModelInternalError_ERR_0546.Request    = "";
+CATSmModelInternalError_ERR_0546.Diagnostic = "The stamp can not be unfolded.";
+CATSmModelInternalError_ERR_0546.Advice     = "Check that it is build on a transformable area or deactivate the flat view to continue to design on the folded view.";
+
+
+CATSmModelInternalError_ERR_0547.Request    = "";
+CATSmModelInternalError_ERR_0547.Diagnostic = "The Flat Diameter is too big.With the choosen parameters the Flat Diameter has to be smaller than /p1 .";
+CATSmModelInternalError_ERR_0547.Advice     = "Modify the Flat Diameter.";
+
+CATSmModelInternalError_ERR_0548.Request    = "";
+CATSmModelInternalError_ERR_0548.Diagnostic = "The profile after lay down on the sheet metal part gives several contours.";
+CATSmModelInternalError_ERR_0548.Advice     = "It is not allowed when the profile is not a sketch. Modify your profile.";
+
+CATSmModelInternalError_ERR_0549.Request    = "";
+CATSmModelInternalError_ERR_0549.Diagnostic = "The height has to be smaller or equal than the thickness (H<=T).";
+CATSmModelInternalError_ERR_0549.Advice     = "Modify the height.";
+
+CATSmModelInternalError_ERR_0550.Request    = "";
+CATSmModelInternalError_ERR_0550.Diagnostic = "The profile selected is not a sketch. ";
+CATSmModelInternalError_ERR_0550.Advice     = "Select sketch as a profile.";
+
+//
+FlangeFilletError="Error during fillet computation.";
+
+ // 600 -> 649 : Internal errors on pattern 
+CATSmModelInternalError_ERR_0601.Request    = "";
+CATSmModelInternalError_ERR_0601.Diagnostic = "An unexpected error occurred during the build of pattern or mirror.";
+CATSmModelInternalError_ERR_0601.Advice     = "";
+
+// cet : Algo IsInPlace failed
+CATSmModelInternalError_ERR_0602.Request    = "";
+CATSmModelInternalError_ERR_0602.Diagnostic = "Internal error in software : The calculation of the current shape positioning has failed.";
+CATSmModelInternalError_ERR_0602.Advice     = "";
+
+CATSmModelInternalError_ERR_0603.Request    = "";
+CATSmModelInternalError_ERR_0603.Diagnostic = "An error occurred during the build of folded pattern.";
+CATSmModelInternalError_ERR_0603.Advice     = 
+"Check that each instance of the pattern lies on the part.";
+
+CATSmModelInternalError_ERR_0604.Request    = "";
+CATSmModelInternalError_ERR_0604.Diagnostic = "An error occurred during the build of unfolded pattern.";
+CATSmModelInternalError_ERR_0604.Advice     = 
+"Check that each instance of the pattern lies on the part.";
+
+CATSmModelInternalError_ERR_0605.Request    = "";
+CATSmModelInternalError_ERR_0605.Diagnostic = "An error occurred during the build of folded mirror.";
+CATSmModelInternalError_ERR_0605.Advice     = 
+"Check that the mirrored shape of the feature you try to mirror lies on the part.";
+
+CATSmModelInternalError_ERR_0606.Request    = "";
+CATSmModelInternalError_ERR_0606.Diagnostic = "An error occurred during the build of unfolded mirror.";
+CATSmModelInternalError_ERR_0606.Advice     = 
+"Check that the mirrored shape of the feature you try to mirror lies on the part.";
+
+ // 650 -> 699 : Internal errors on corner chamfer 
+CATSmModelInternalError_ERR_0650.Request    = "";
+CATSmModelInternalError_ERR_0650.Diagnostic = "An unexpected error occurred during the build of corner or chamfer.";
+CATSmModelInternalError_ERR_0650.Advice     = "";
+
+CATSmModelInternalError_ERR_0651.Request    = "";
+CATSmModelInternalError_ERR_0651.Diagnostic = "An error occurred during the build of folded corner.";
+CATSmModelInternalError_ERR_0651.Advice     = "";
+
+CATSmModelInternalError_ERR_0652.Request    = "";
+CATSmModelInternalError_ERR_0652.Diagnostic = "An error occurred during the build of unfolded corner.";
+CATSmModelInternalError_ERR_0652.Advice     = "";
+
+CATSmModelInternalError_ERR_0653.Request    = "";
+CATSmModelInternalError_ERR_0653.Diagnostic = "An error occurred during the build of folded chamfer.";
+CATSmModelInternalError_ERR_0653.Advice     = "";
+
+CATSmModelInternalError_ERR_0654.Request    = "";
+CATSmModelInternalError_ERR_0654.Diagnostic = "An error occurred during the build of unfolded chamfer.";
+CATSmModelInternalError_ERR_0654.Advice     = "";
+
+// vkq : Build diagnosis error
+CATSmModelInternalError_ERR_0655.Request    = "";
+CATSmModelInternalError_ERR_0655.Diagnostic = "All the selected edges are faulty. Feature cannot be created";
+CATSmModelInternalError_ERR_0655.Advice     = "";
+
+//jxv : Cuttings are temporary forbidden
+CATSmModelInternalError_ERR_0701.Request    = "This flange will generate cuttings";
+CATSmModelInternalError_ERR_0701.Diagnostic = "This option is not available yet";
+CATSmModelInternalError_ERR_0701.Advice     = "";
+
+//jxv : Nonsense sweep Result to build flange 
+CATSmModelInternalError_ERR_0801.Request    = "";
+CATSmModelInternalError_ERR_0801.Diagnostic = "The swept wall you intend to generate will not generate continuity with the support";
+CATSmModelInternalError_ERR_0801.Advice     = "Thanks to the preview, you will understand this particular configuration";
+
+//jxv : Nonsense sweep Result to build flange 
+CATSmModelInternalError_ERR_0802.Request    = "";
+CATSmModelInternalError_ERR_0802.Diagnostic = "A sweep error occurred during the flatten view swept wall build.";
+CATSmModelInternalError_ERR_0802.Advice     = "Make sure the input parameters make it unfoldable.";
+
+CATSmModelInternalError_ERR_0803.Request    = "";
+CATSmModelInternalError_ERR_0803.Diagnostic = "This flange is not allowed since it leads to non canonical surfaces.";
+CATSmModelInternalError_ERR_0803.Advice     = "";
+
+
+//jxv : Hopper warning
+Hopper_WarningMessage_1    = "The selected surface is ruled but not developable";
+Hopper_WarningMessage_2    = "So, the neutral fiber of the hopper you intend to create is not a ruled surface";
+Hopper_WarningMessage_3    = "The K Factor has not been taken into account";
+
+TangentDesign="Tangent Design could be unstable";
+
+//jxv : message de warning lorque l'une des BTL FD ou FP du flange est non continue en tangence (ou leurs fibres neutres)
+Flange_WarningMessage_1 = "The generated swept wall border in contact with the support is not continuous in tangency or another problem leads to no transformations computation.";
+Flange_WarningMessage_2 = "The swept wall can be constructed but you will have to deactivate the flatten view";
+Flange_WarningMessage_3 = "to manage other features creation on it.";
+//jhi
+WarningStamp01 = "The definition type of the flanged hole has been changed during the build.Check that the value of new parameters is appropriated";
+
+
+//pnl : operateur de mise a plat 901 -> 924  
+CATSmModelInternalError_ERR_0901.Request    = "Unfold Operator error";
+CATSmModelInternalError_ERR_0901.Diagnostic = "A cycle cannot be resolved in the flattened view.";
+CATSmModelInternalError_ERR_0901.Advice     = "Please, Change Bend Support(s).";
+
+CATSmModelInternalError_ERR_0902.Request    = "Unfold Operator error";
+CATSmModelInternalError_ERR_0902.Diagnostic = "Bend Allowance value /p1 is negative.";
+CATSmModelInternalError_ERR_0902.Advice     = "Check inputs datas.";
+
+CATSmModelInternalError_ERR_0903.Request    = "Unfold Operator error";
+CATSmModelInternalError_ERR_0903.Diagnostic = "Bend Radius is smaller than 0.";
+CATSmModelInternalError_ERR_0903.Advice     = "Change Bend radius or Thickness.";

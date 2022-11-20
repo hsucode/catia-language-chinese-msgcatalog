@@ -1,0 +1,267 @@
+// COPYRIGHT DASSAULT SYSTEMES 2003
+
+// --- Resources for CATIA Reconciliator GUI
+Title     = " Reconcile 視窗";
+Help     = "在工作中與 VPDM 系統 Reconcile 文件";
+LongHelp = "在工作中與 VPDM 系統 Reconcile 物件";
+
+GraphFrame.RecObjectTitle = "reconcile 物件";
+GraphFrame.NoName         = "未知名稱";
+
+FrameButtons.RecExeBtn.Title  = "應用";
+FrameButtons.CloseBtn.Title   = "關閉";
+
+PDMEnvCombo.ShortHelp = "目的地 VPDM";
+PDMEnvCombo.Help      = "定義目的地 VPDM";
+PDMEnvCombo.LongHelp  = "定義您要儲存的 VPDM 系統";
+
+ObjectViewCombo.ShortHelp     = "CATIA 樹視圖型式";
+ObjectViewCombo.Help          = "定義 CATIA 樹視圖內容";
+ObjectViewCombo.LongHelp      = "定義 CATIA 樹視圖顯示";
+ObjectViewCombo.ReferenceView = "零件和文件";
+ObjectViewCombo.InstanceView  = "元件";
+ObjectViewCombo.CompareView   = "比較";
+ObjectViewCombo.DocumentView  = "文件"        ;
+
+ObjTabularList.Status        = "情形";
+ObjTabularList.CompareStatus = "比較";
+ObjTabularList.Storage       = "模式";
+ObjTabularList.Rule          = "規則";
+ObjTabularList.Name          = "ID";
+ObjTabularList.Type          = "型式";
+ObjTabularList.Document      = "文件";
+ObjTabularList.Environment   = "環境";
+
+ObjTabularList.Overwrite     = "覆寫";
+ObjTabularList.New           = "新的";
+ObjTabularList.Reload        = "重新載入";
+ObjTabularList.Publication   = "發行";
+ObjTabularList.Structure     = "架構";
+ObjTabularList.Mixed         = "混合";
+ObjTabularList.KeepAsExternal = "保持外部";
+ObjTabularList.NewVersion     = "新版期"      ;
+ObjTabularList.NewRevision    = "新再版"     ;
+
+ObjTabularList.Delegate      = "代表";
+ObjTabularList.NoRuleSet     = "未設定";
+ObjTabularList.RuleSet       = "設定";
+
+ObjTabularList.Unknown       = "未比較"       ;
+ObjTabularList.ToBeDeleted   = "將刪除";
+ObjTabularList.NewInstance   = "新的";
+ObjTabularList.Identical     = "相同";
+ObjTabularList.Moved         = "移動";
+
+Object.Type.Part      = "零件";
+Object.Type.Instance  = "元件";
+
+RecExeStatusMultiList.TypeCol   = "型式";
+RecExeStatusMultiList.ObjectCol = "Reconciliation 物件";
+RecExeStatusMultiList.EnvCol    = "目的地環境";
+RecExeStatusMultiList.RuleCol   = "規則";
+RecExeStatusMultiList.VPDMCol   = "VPDM 物件";
+RecExeStatusMultiList.StatusCol = "情形";
+
+Environment.VPM1    = "ENOVIA VPM V4";
+Environment.File    = "檔案環境";
+Environment.ENOVIA5 = "ENOVIA V5 VPM";
+Environment.TeamPDM = "SmarTeam";
+Environment.TestPDM = "TestPDM";
+
+ReconcileExeWarning.Title   = "Reconcile 報告";
+ReconcileExeWarning.Message = "Reconciliation 成功執行.";
+
+RecExeStatusMultiList.Status.KO = "失敗";
+RecExeStatusMultiList.Status.OK = "完成";
+
+DummyRootNode.Title = "reconcile 物件";
+// --- Toolbar
+// --- * Rule selection button
+
+RulesFrame.OverwriteButton.Title="覆寫";
+RulesFrame.OverwriteButton.ShortHelp="覆寫";
+RulesFrame.OverwriteButton.Help="在資料庫中覆寫物件";
+RulesFrame.OverwriteButton.LongHelp="在資料庫中覆寫物件";
+
+RulesFrame.ReloadButton.Title="重新載入";
+RulesFrame.ReloadButton.ShortHelp="重新載入";
+RulesFrame.ReloadButton.LongHelp="由資料庫中重新載入物件";
+RulesFrame.ReloadButton.Help="由資料庫中重新載入物件";
+
+RulesFrame.NewButton.Title="新的 ";
+RulesFrame.NewButton.ShortHelp="新的 ";
+RulesFrame.NewButton.LongHelp="在資料庫中建立新物件 ";
+RulesFrame.NewButton.Help="在資料庫中建立新物件 ";
+
+RulesFrame.KeepPushBtn.Title     = "保持外部參考";
+RulesFrame.KeepPushBtn.ShortHelp = "保持外部參考";
+RulesFrame.KeepPushBtn.LongHelp  = "忽略未載入文件";
+RulesFrame.KeepPushBtn.Help      = "忽略在 reconciliation 動作的未載入文件 (中斷鏈結)";
+
+RulesFrame.NewRevisionPushBtn.Title     = "新再版" ;
+RulesFrame.NewRevisionPushBtn.ShortHelp = "存成新再版" ;
+RulesFrame.NewRevisionPushBtn.Help      = "文件存成新再版" ;
+RulesFrame.NewRevisionPushBtn.LongHelp  = "在資料庫中將文件存成新再版" ;
+
+RulesFrame.NewVersionPushBtn.Title     = "新版本" ;
+RulesFrame.NewVersionPushBtn.ShortHelp = "存成新版本" ;
+RulesFrame.NewVersionPushBtn.Help      = "文件存成新版本" ;
+RulesFrame.NewVersionPushBtn.LongHelp  = "在資料庫中將文件存成新版本" ;
+
+RulesFrame.GlobalRulePushBtn.Title="整體設定";
+RulesFrame.GlobalRulePushBtn.ShortHelp="整體設定";
+RulesFrame.GlobalRulePushBtn.LongHelp="一次應用所有規則在全部物件";
+RulesFrame.GlobalRulePushBtn.Help="一次應用所有規則在全部物件";
+
+RulesFrame.SearchButton.Title     = "定位...";
+RulesFrame.SearchButton.ShortHelp = "以屬性定義物件";
+RulesFrame.SearchButton.LongHelp  = "在 CATIA 視圖中以屬性定位或選擇物件";
+RulesFrame.SearchButton.Help      = "在 CATIA 視圖中以屬性定位或選擇物件";
+
+RulesFrame.PrintButton.Title     = "列印..."                               ;
+RulesFrame.PrintButton.ShortHelp = "列印 Reconciliation 程序"           ;
+RulesFrame.PrintButton.Help      = "顯示和列印 Reconciliation session" ;
+RulesFrame.PrintButton.LongHelp  = "顯示和列印 Reconciliation 程序成為 XML 檔案 " ;
+
+RulesFrame.ResetButton.Title     = "重設";
+RulesFrame.ResetButton.ShortHelp = "重設物件對應";
+RulesFrame.ResetButton.LongHelp  = "重設物件對應";
+RulesFrame.ResetButton.Help      = "重設物件對應";
+
+// --- * Storage mode management
+
+StorageModeCombo.ShortHelp               = "儲存模式";
+StorageModeCombo.Help                    = "定義儲存模式";
+StorageModeCombo.LongHelp                = "定義如何儲存 CATProduct";
+StorageModeCombo.StorageModeStruct.Title="結構顯現";
+StorageModeCombo.StorageModePub.Title="發行顯現";
+
+StorageModeSwitch.Title="警告";
+StorageModeSwitch.FromStructureExposedToPublicationExposed.Message="儲存模式為架構顯示. 您要更換至發行架構顯示模式嗎?";
+StorageModeSwitch.FromPublicationExposedToStructureExposed.Message="儲存模式為架構顯示. 您要更換至發行架構顯示模式嗎?";
+
+RulesFrame.SaveContainerBtn.ShortHelp="儲存應用內容器";
+RulesFrame.SaveContainerBtn.LongHelp="儲存應用內容器";
+
+LayoutFrame.LayoutLbl.Title=" 顯示 : ";
+LayoutFrame.LayoutChk.Title=" 佈置 ";
+
+LayoutSplitter.ObjectViewFrame.CATFrame.CATIATabContainer.CATIATab.Title = "CATIA 視圖";
+
+// --- Query tabpage ----
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.QueryTab.Title = " 詢問 ";
+
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.QueryTab.RuleTabRightFrm.Title = "在 VPDM 中搜尋物件";
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.QueryTab.RuleTabRightFrm.QryCritLabel.Title = "詢問標準";
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.QueryTab.RuleTabRightFrm.PDMObjLabel.Title = "VPDM 物件    ";
+
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.QueryTab.RuleTabRightFrm.Help      = "在 PDM 目的地環境中詢問適合所選標準的物件"; 
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.QueryTab.RuleTabRightFrm.LongHelp  = "在 PDM 目的地環境中詢問適合所選標準的物件"; 
+
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.QueryTab.RuleTabRightFrm.QryBtn.Title = "詢問";
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.QueryTab.RuleTabRightFrm.QryBtn.Help      = "在 PDM 目的地環境中詢問適合所選標準的物件"; 
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.QueryTab.RuleTabRightFrm.QryBtn.LongHelp  = "在 PDM 目的地環境中詢問適合所選標準的物件"; 
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.QueryTab.RuleTabRightFrm.QryBtn.ShortHelp = "在 VPDM 目的地環境" ;
+
+QueryTab.RuleTabRightFrm.PDMObjCountLabel					= "未完成執行詢問";
+QueryTab.RuleTabRightFrm.PDMObjCountLabel.MoreThanOneObject = "找到 VPDM 物件";
+QueryTab.RuleTabRightFrm.PDMObjCountLabel.NoObject          = "未找到物件";
+QueryTab.RuleTabRightFrm.PDMObjCountLabel.OneObject         = "找到 VPDM 物件";
+
+// --- GlobalRule tabpage ---
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.GlobalRuleTab.Title = " 整體設定 ";
+
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.GlobalRuleTab.RuleTabRightFrm2.Title = "整體設定";
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.GlobalRuleTab.RuleTabRightFrm2.GlobalRuleLabel.Title = "選擇一整體設定:";
+
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.GlobalRuleTab.RuleTabRightFrm2.Help      = "Global Rule to run on all objects of current reconciliator's session"; 
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.GlobalRuleTab.RuleTabRightFrm2.LongHelp  = "Global Rule to run on all objects of current reconciliator's session";
+
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.GlobalRuleTab.RuleTabRightFrm2.GlobalRuleBtn.Title = "應用";
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.GlobalRuleTab.RuleTabRightFrm2.GlobalRuleBtn.Help      = "Choose a Global Rule to run on all objects of current reconciliator's session"; 
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.GlobalRuleTab.RuleTabRightFrm2.GlobalRuleBtn.LongHelp  = "Choose a Global Rule to run on all objects of current reconciliator's session";
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.GlobalRuleTab.RuleTabRightFrm2.GlobalRuleBtn.ShortHelp = "Select a Global Rule to run" ;
+
+// --- VPDM tabpage ----
+LayoutSplitter.ObjectViewFrame.VPDMFrame.VPDMTabContainer.VPDMTab.Title = " VPDM 視圖 ";
+
+// --- dummylabel to correcta dialog bug on unix with CATDlgSplitter
+LayoutSplitter.ComparaisonFrame.LabelBidon.Title="  " ;
+
+// --- For Characteristic tab 
+LayoutSplitter.ComparaisonFrame.TabContainer.CharacteristicTab.Title                   = "特性";
+LayoutSplitter.ComparaisonFrame.TabContainer.CharacteristicTab.Help                   = "比較 CATIA 和 VPDM 物件的特性";
+LayoutSplitter.ComparaisonFrame.TabContainer.CharacteristicTab.LongHelp            = "比較 CATIA 和 VPDM 物件的特性";
+
+LayoutSplitter.ComparaisonFrame.TabContainer.CharacteristicTab.CharFrame.Title         = "特性比較";
+LayoutSplitter.ComparaisonFrame.TabContainer.CharacteristicTab.CharFrame.CharBtn.Title = "詢問";
+
+CharacteristicTab.Name    = "特性";
+CharacteristicTab.Status  = "情形";
+CharacteristicTab.Comment = "說明";
+
+// --- For 3DViewer tab 
+
+LayoutSplitter.ComparaisonFrame.TabContainer.3DViewerTab.Title = "3D 檢視器";
+LayoutSplitter.ComparaisonFrame.TabContainer.3DViewerTab.CATViewerFrm.CATViewerLabel.Title = "CATIA 3D 視圖";
+LayoutSplitter.ComparaisonFrame.TabContainer.3DViewerTab.CATViewerFrm.PDMViewerLabel.Title = "VPDM 3D 視圖";
+
+LayoutSplitter.ComparaisonFrame.TabContainer.3DViewerTab.ButtonFrm.Title               = "視點";
+LayoutSplitter.ComparaisonFrame.TabContainer.3DViewerTab.ButtonFrm.ViewerSyncBtn.Title = "依賴";
+LayoutSplitter.ComparaisonFrame.TabContainer.3DViewerTab.ButtonFrm.ViewerSyncBtn.ShortHelp = "Synchronized viewpoints" ;
+LayoutSplitter.ComparaisonFrame.TabContainer.3DViewerTab.ButtonFrm.Reframe.Title           = "Reframe"  ;
+LayoutSplitter.ComparaisonFrame.TabContainer.3DViewerTab.ButtonFrm.Reframe.ShortHelp       = "Fit all In" ;
+
+LayoutSplitter.ComparaisonFrame.TabContainer.3DViewerTab.ButtonFrm.ModeFrm.Title                 = "模式";
+LayoutSplitter.ComparaisonFrame.TabContainer.3DViewerTab.ButtonFrm.ModeFrm.GraphicRadioBtn.Title = "圖形";
+LayoutSplitter.ComparaisonFrame.TabContainer.3DViewerTab.ButtonFrm.ModeFrm.GeomRadioBtn.Title    = "幾何";
+LayoutSplitter.ComparaisonFrame.TabContainer.3DViewerTab.ButtonFrm.ModeFrm.VoxelRadioBtn.Title   = "Voxel";
+
+// --- For Report tab 
+
+LayoutSplitter.ComparaisonFrame.TabContainer.ReportTab.Title = "報告";
+LayoutSplitter.ComparaisonFrame.TabContainer.ReportTab.Help     = "Reconciliation 報告";
+LayoutSplitter.ComparaisonFrame.TabContainer.ReportTab.LongHelp = "Reconciliation 報告";
+
+// --- List tab
+LayoutSplitter.ComparaisonFrame.TabContainer.ListTab.Title = " 表列視圖 ";
+
+VPDMRootNode.Title = "VPDM 物件";
+
+InstanceUnknown       = "未比較 "  ;
+InstanceNew         = " 新的";
+InstanceIdentical   = " 同一";
+InstanceMoved       = " 移動";
+InstanceToBeDeleted = " 將要刪除";
+DocumentDelegate    = " 代表";
+DocumentReload      = " 重新載入";
+DocumentOverwrite   = " 覆寫";
+DocumentNew         = " 存成新的";
+DocumentMapped      = " 對映";
+DocumentUnknown     = " 未知";
+PartDelegate        = " 代表";
+PartOverwrite       = " 覆寫";
+PartNew             = " 存成新的";
+PartMapped          = " 對映";
+PartUnknown         = " 未知";
+DocumentAsNewRevision = " 新再版"  ;
+DocumentKeepExt       = " 檔案文件" ;
+PartAsNewVersion      = " 新版期"   ;
+
+// --- Error message when wrong selection is done on VPDM tree view
+
+VPDMView.InvalidSelection.Title = "警告";
+VPDMView.InvalidSelection.Msg   = "The storage mode is publication exposed. You must launch a query to identify the VPDM Object.";
+
+// --- To feed Warning detected at Reconciliator session initialization
+
+WarningMessage.Title = "警告";
+
+//Error message if error happen while opening browser
+
+ErrorOpenBrowser.Title   = "列印";
+ErrorOpenBrowser.Message = "開啟瀏覽器時發生錯誤";
+
+WarningOutputDirPathUnknown.Title   = "列印";
+WarningOutputDirPathUnknown.Message = "輸出目錄無效.";
+

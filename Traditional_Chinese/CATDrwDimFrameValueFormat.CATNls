@@ -1,0 +1,164 @@
+//=============================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1997 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATDrwDimFrameValueFormat
+// LOCATION    :    DraftingIntUI/CNext/resources/msgcatalog
+// AUTHOR      :    jmt
+// DATE        :    Nov. 03 1997
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Drafting WorkShop
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATIONS     user  date      purpose
+//   HISTORY        ----  ----      -------
+//     01			fgx	  18.02.99	Ajout des unites d'angle MINUTE et SECOND
+//     02			fgx	  08.03.99	Ajout du mode driving
+//     03			fgx	  18.11.99	Dim type
+//     04			LGK     25.06.02  Revision
+//------------------------------------------------------------------------------
+
+_titleDimType.Title="尺寸形式 ";
+
+ONE_PROJECTED_DIM = "投影形式";
+SEV_PROJECTED_DIM = "投影尺寸";
+ONE_TRUE_DIM = "真實尺寸";
+SEV_TRUE_DIM = "真實尺寸";
+UNDEFINED = "未定義";
+
+_frameDimType._checkDriving.Title="驅動";
+_frameDimType._checkDriving.Help="為尺寸設定驅動模式";
+_frameDimType._checkDriving.LongHelp="驅動
+為尺寸設定驅動模式.";
+
+_frameDimType._editorDriving.ShortHelp="數值";
+_frameDimType._editorDriving.Help="驅動幾何時編輯尺寸值";
+_frameDimType._editorDriving.LongHelp="數值
+驅動幾何時編輯尺寸值.";
+
+FrameBase.FrameLayoutTitle.LabelLayoutTitle.Title="數值方向";
+FrameBase.FrameDualValueTitle.LabelDualValueTitle.Title="複值";
+FrameFormatTitle.LabelFormatTitle.Title="格式 ";
+FrameFakeTitle.CheckButtonFakeTitle.Title="假尺寸";
+
+FrameBase.FrameLayout.LabelReference.Title="參考: ";
+FrameBase.FrameLayout.LabelOrientation.Title="方向: ";
+FrameBase.FrameLayout.LabelAngle.Title="角度: ";
+FrameBase.FrameLayout.LabelInOutValue.Title="位置: ";
+FrameBase.FrameLayout.LabelOffset.Title="偏移: ";
+FrameFormat.LabelValue.Title="主要值";
+FrameFormat.LabelDualValue.Title="複值";
+
+FrameFormat._labelUnitOrder.Title="顯示: ";
+FrameFormat._labelDescription.Title="說明: ";
+FrameFormat._frameMoreInfoMain._pushMoreInfoMain.ShortHelp="瀏覽主要說明";
+FrameFormat._frameMoreInfoDual._pushMoreInfoDual.ShortHelp="瀏覽複值說明";
+
+FrameFormat.LabelPrecision.Title="精確: ";
+FrameFormat.LabelFormat.Title="格式: ";
+
+FrameFormat.LabelValueFrac.Title    ="   1 / ";
+FrameFormat.LabelDualValueFrac.Title="   1 / ";
+FrameFake.LabelFakeMain.Title="主要值: ";
+FrameFake.LabelFakeDual.Title="複值: ";
+FrameFake.RadioButtonFakeNum.Title="數字的";
+FrameFake.RadioButtonFakeAlpha.Title="文字的";
+
+FrameBase.FrameDualValue.CheckButtonDualValue.Title="顯示複值";
+
+ComboReferenceLine0="螢幕";
+ComboReferenceLine1="視窗";
+ComboReferenceLine2="尺寸線";
+ComboReferenceLine3="延伸線";
+
+ComboInOutValueAUTO="自動";
+ComboInOutValueIN="內側";
+ComboInOutValueOUT="外側";
+
+ComboDualValueLine0="以下";
+ComboDualValueLine1="部份";
+ComboDualValueLine2="側至側";
+
+ComboValueFormatLine0="十進位";
+ComboValueFormatLine1="部份的";
+
+ComboDualValueFormatLine0="十進位";
+ComboDualValueFormatLine1="部份的";
+
+ComboOrientationLine0="平行";
+ComboOrientationLine1="垂直";
+ComboOrientationLine2="固定角度";
+
+ComboOrientationLine00="水平";
+ComboOrientationLine01="垂直";
+ComboOrientationLine02="固定角度";
+
+ONE_FACTOR="1 因子";
+TWO_FACTORS="2 因子";
+THREE_FACTORS="3 因子";
+
+DefaultFakeText="* 假值 *";
+
+FrameBase.FrameLayout.ComboReference.LongHelp=
+"提供數值位置的參考.";
+FrameBase.FrameLayout.ComboOrientation.LongHelp=
+"定義相關參考數值的方向.";
+FrameBase.FrameLayout.SpinnerAngle.LongHelp=
+"定義相關參考數值的角度.";
+FrameBase.FrameLayout.SpinnerOffset.LongHelp=
+"定義尺寸線的垂直偏移值.";
+FrameBase.FrameDualValue.CheckButtonDualValue.LongHelp=
+"顯示複值
+如檢查過請顯示複值.";
+FrameBase.FrameDualValue.ComboDualValue.LongHelp=
+"選擇
+複值的顯示模式.";
+
+FrameFormat._labelUnitOrder.LongHelp=
+"設定主要值和複值的單位因素顯示.";
+FrameFormat._labelDescription.LongHelp=
+"設定主要值和複值的說明顯示.";
+
+FrameFormat.LabelPrecision.LongHelp=
+"設定主要值和複值的數值精度.";
+FrameFormat.LabelFormat.LongHelp=
+"設定主要值和複值的數值格式.";
+
+FrameFormat._comboUnitOrder.LongHelp=
+"設定主要值需顯示的單位因子數目.";
+FrameFormat._comboDescriptionMain.LongHelp=
+"設定主要值的說明顯示.";
+FrameFormat._frameMoreInfoMain._pushMoreInfoMain.LongHelp=
+"顯示對話框來瀏覽或更改數值的主要說明.";
+FrameFormat.ComboValuePrecision.LongHelp=
+"設定主要值的精度.";
+FrameFormat.ComboValueFormat.LongHelp=
+"設定主要值的格式.";
+
+FrameFormat._comboDualUnitOrder.LongHelp=
+"設定複值需顯示的單位因子數目.";
+FrameFormat._comboDescriptionDual.LongHelp=
+"設定複值的說明顯示.";
+FrameFormat._frameMoreInfoDual._pushMoreInfoDual.LongHelp=
+"顯示對話框來瀏覽或更改複值的主要說明.";
+FrameFormat.ComboDualValuePrecision.LongHelp=
+"設定複值的精度.";
+FrameFormat.ComboDualValueFormat.LongHelp=
+"設定複值的格式.";
+
+FrameFakeTitle.CheckButtonFakeTitle.LongHelp=
+"更改尺寸至假值.";
+
+FrameFake.EditorFakeNumMain.LongHelp=
+"顯示主要值的假值.";
+FrameFake.EditorFakeAlphaMain.LongHelp=
+"顯示主要文字數值的假值.";
+FrameFake.EditorFakeNumDual.LongHelp=
+"顯示複值的假值.";
+FrameFake.EditorFakeAlphaDual.LongHelp=
+"顯示複值文字數值的假值.";
+
+SeeChamfer="參考倒角";
+

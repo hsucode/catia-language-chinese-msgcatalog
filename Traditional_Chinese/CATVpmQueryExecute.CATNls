@@ -1,0 +1,40 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//=============================================================================
+//
+// CATVpmQueryExecute:
+//	VPM Queries Execution NLS Messages
+//
+// English version
+//
+//=============================================================================
+// Usage Notes:
+//=============================================================================
+// Dec 98   Creation                                   J.Poitreau
+//=============================================================================
+
+// --- Query session
+QRY_INIT_FAILED       = "Could not create query's /P01";
+QRY_CLOSE_FAILED      = "Could not close query's /P01";
+
+// --- Query container
+QRY_CONT_NULL         = "Container is null (catastrophic error)";
+
+// --- Queries
+QRY_QUERY_NULL        = "Input query is null";
+// a) translation
+QRY_INVALID_JOIN_NB   = "Invalid join predicates number : obtained /P01 instead of /P02";
+QRY_TRANSLATE_FAILED  = "Failed to translate predicate";
+
+// --- Sort
+QRY_INVALID_ATTR      = "'/P01' is not an attribute of '/P02' object";
+QRY_INVALID_SORT_ATTR = "Sort cannot be done on '/P01' because attribute type is not STRING";
+
+// EVALUATION Software
+
+EVAL_FO_IS_NULL         = "VPMObject is NULL";
+EVAL_FO_HAS_NO_REAL_OBJ = "VPMObject is referencing a NULL persistent object";
+EVAL_NO_CONDITION       = "No condition was provided";
+EVAL_INVALID_ATTR       = "Object [/p1] has no [/p2] attribute";
+EVAL_UNSET_ATTR         = "Attribute [/p1] of [/p2] object is not valuated";
+EVAL_UNEXPECTED_END     = "Unexpected end of parsing on [/p1./p2] attribute";
+

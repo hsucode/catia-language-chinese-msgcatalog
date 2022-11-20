@@ -1,0 +1,224 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//===========================================================================
+//
+// CATRdgShootingEffectsFrame
+//
+//===========================================================================
+
+//--------------------------------------
+// Depth of field frame
+//--------------------------------------
+dofFrame.HeaderFrame.Global.Title = "範圍深度";
+
+dofFrame.IconAndOptionsFrame.OptionsFrame.dofParametersFrame.dofCheck.Title = "啟動";
+dofFrame.IconAndOptionsFrame.OptionsFrame.dofParametersFrame.dofCheck.Help = "切換範圍深度";
+dofFrame.IconAndOptionsFrame.OptionsFrame.dofParametersFrame.dofCheck.ShortHelp = "切換範圍深度";
+dofFrame.IconAndOptionsFrame.OptionsFrame.dofParametersFrame.dofCheck.LongHelp =
+"切換開啟或關閉範圍深度.
+The plane where objects appear in focus is
+defined by the camera target.
+Note: This effect works only with
+perspective cameras.";
+
+dofFrame.IconAndOptionsFrame.OptionsFrame.dofParametersFrame.dofRadiusLabel.Title = "混淆半徑: ";
+dofFrame.IconAndOptionsFrame.OptionsFrame.dofParametersFrame.dofRadiusLabel.Help = "定義混淆半徑";
+dofFrame.IconAndOptionsFrame.OptionsFrame.dofParametersFrame.dofRadiusLabel.ShortHelp = "混淆半徑";
+dofFrame.IconAndOptionsFrame.OptionsFrame.dofParametersFrame.dofRadiusLabel.LongHelp =
+"Defines the radius of confusion at the camera's 
+focal distance.
+Large numbers increase the blurring effect.
+The plane where objects appear in focus is
+defined by the camera target.";
+
+dofFrame.IconAndOptionsFrame.OptionsFrame.dofParametersFrame.dofRadiusSpinner.Help = "定義混淆半徑";
+dofFrame.IconAndOptionsFrame.OptionsFrame.dofParametersFrame.dofRadiusSpinner.ShortHelp = "混淆半徑";
+dofFrame.IconAndOptionsFrame.OptionsFrame.dofParametersFrame.dofRadiusSpinner.LongHelp =
+"Defines the radius of confusion at the camera's 
+focal distance.
+Large numbers increase the blurring effect.
+The plane where objects appear in focus is
+defined by the camera target.";
+
+//--------------------------------------
+// Glow frame
+//--------------------------------------
+glowFrame.HeaderFrame.Global.Title = "Glow";
+
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowCheck.Title = "啟動";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowCheck.Help = "切換 glow";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowCheck.ShortHelp = "切換 Glow";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowCheck.LongHelp =
+"切換開啟或關閉 glow.";
+
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowThresholdLabel.Title = "門檻:";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowThresholdLabel.Help = "Glow 門檻";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowThresholdLabel.ShortHelp = "Glow 門檻";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowThresholdLabel.LongHelp =
+"定義 glow 門檻. 
+A pixel with a color component (red, green, or blue)
+above that threshold will be glowed.
+This threshold determines how many pixels from
+the image will be processed for the glow effect.
+Note that a high number of pixels to process may 
+increase dramatically the processing time.";
+
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowThresholdSpinner.Help = "Glow 門檻";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowThresholdSpinner.ShortHelp = "Glow 門檻";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowThresholdSpinner.LongHelp =
+"定義 glow 門檻. 
+A pixel with a color component (red, green, or blue)
+above that threshold will be glowed.
+This threshold determines how many pixels from
+the image will be processed for the glow effect.
+Note that a high number of pixels to process may 
+increase dramatically the processing time.";
+
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowIntensityLabel.Title = "密度:";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowIntensityLabel.Help = "Glow 密度";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowIntensityLabel.ShortHelp = "Glow 密度";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowIntensityLabel.LongHelp =
+"定義  glow 密度. 
+This value affects the brightness 
+of the glow.
+This parameter has no effect on 
+the processing time.";
+
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowIntensitySpinner.Help = "Glow 密度";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowIntensitySpinner.ShortHelp = "Glow 密度";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowIntensitySpinner.LongHelp =
+"定義  glow 密度. 
+This value affects the brightness 
+of the glow.
+This parameter has no effect on 
+the processing time.";
+
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowSizeLabel.Title = "大小:";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowSizeLabel.Help = "Glow 大小";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowSizeLabel.ShortHelp = "Glow 大小";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowSizeLabel.LongHelp =
+"定義 glow 大小.
+Note that large sizes may increase
+dramatically the processing time.";
+
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowSizeSlider.Help = "Glow 大小";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowSizeSlider.ShortHelp = "Glow 大小";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowSizeSlider.LongHelp =
+"定義 glow 大小.
+Note that large sizes may increase
+dramatically the processing time.";
+
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowFlareFactorLabel.Title = "Flare 密度:";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowFlareFactorLabel.Help = "Flare 密度";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowFlareFactorLabel.ShortHelp = "Flare 密度";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowFlareFactorLabel.LongHelp =
+"定義 flare 密度.
+The flare is the colored disk.
+It is usually hardly perceptible
+so use low values.
+A value of 0 disables the flare.
+This parameter has no effect on 
+the processing time.";
+
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowFlareFactorSlider.Help = "Flare 密度";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowFlareFactorSlider.ShortHelp = "Flare 密度";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowFlareFactorSlider.LongHelp =
+"定義 flare 密度.
+The flare is the colored disk.
+It is usually hardly perceptible 
+so use low values.
+A value of 0 disables the flare.
+This parameter has no effect on 
+the processing time.";
+
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowFlareDiffusionLabel.Title = "Flare 散射:";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowFlareDiffusionLabel.Help = "Flare 散射";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowFlareDiffusionLabel.ShortHelp = "Flare 散射";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowFlareDiffusionLabel.LongHelp =
+"定義 flare 寬度.
+This parameter has no effect on 
+the processing time.";
+
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowFlareDiffusionSlider.Help = "Flare 散射";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowFlareDiffusionSlider.ShortHelp = "Flare 散射";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowFlareDiffusionSlider.LongHelp =
+"定義 flare 寬度.
+This parameter has no effect on 
+the processing time.";
+
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowRadialLineSizeLabel.Title = "徑向直線大小:";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowRadialLineSizeLabel.Help = "徑向直線大小";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowRadialLineSizeLabel.ShortHelp = "徑向直線大小";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowRadialLineSizeLabel.LongHelp =
+"直義徑向直線最大值.
+A value of 0 disables the radial lines.
+This parameter has no effect on the processing time.";
+
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowRadialLineSizeSlider.Help = "徑向直線大小";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowRadialLineSizeSlider.ShortHelp = "徑向直線大小";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowRadialLineSizeSlider.LongHelp =
+"直義徑向直線最大值.
+A value of 0 disables the radial lines.
+This parameter has no effect on the processing time.";
+
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowStarEffectLabel.Title = "開始影響:";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowStarEffectLabel.Help = "開始影響";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowStarEffectLabel.ShortHelp = "開始影響";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowStarEffectLabel.LongHelp =
+"Defines the shape of the radial lines.
+A value of 0 results in a random 
+distribution of radial lines, and a 
+value of 1 in cross-shaped radial lines.
+This parameter has no effect on 
+the processing time.";
+
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowStarEffectSlider.Help = "開始影響";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowStarEffectSlider.ShortHelp = "開始影響";
+glowFrame.IconAndOptionsFrame.OptionsFrame.glowParametersFrame.glowStarEffectSlider.LongHelp =
+"Defines the shape of the radial lines.
+A value of 0 results in a random 
+distribution of radial lines, and a 
+value of 1 in cross-shaped radial lines.
+This parameter has no effect on 
+the processing time.";
+
+//--------------------------------------
+// Cartoon frame
+//--------------------------------------
+cartoonFrame.HeaderFrame.Global.Title = "卡通";
+
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonCheck.Title = "啟動";
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonCheck.Help = "切換卡通塗彩";
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonCheck.ShortHelp = "切換卡通塗彩";
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonCheck.LongHelp =
+"切換卡通塗彩開啟或關閉.";
+
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonShadingCheck.Title = "只顯示輪廓";
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonShadingCheck.Help = "切換曲面塗彩";
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonShadingCheck.ShortHelp = "切換曲面塗彩";
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonShadingCheck.LongHelp =
+"切換曲面塗彩.
+When checked, only contours are rendered,
+the shading of surfaces is discarded during
+rendering post-processing.";
+
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonThicknessLabel.Title = "輪廓厚度:";
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonThicknessLabel.Help = "輪廓厚度";
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonThicknessLabel.ShortHelp = "輪廓厚度";
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonThicknessLabel.LongHelp =
+"定義輪廓厚度為圖像大小百分比.";
+
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonThicknessSpinner.Help = "輪廓厚度";
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonThicknessSpinner.ShortHelp = "輪廓厚度";
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonThicknessSpinner.LongHelp =
+"定義輪廓厚度為圖像大小百分比.";
+
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonStrokeCheck.Title = "筆效應";
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonStrokeCheck.Help = "切換筆效應";
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonStrokeCheck.ShortHelp = "切換筆效應";
+cartoonFrame.IconAndOptionsFrame.OptionsFrame.cartoonParametersFrame.cartoonStrokeCheck.LongHelp =
+"切換筆效應開啟或關閉.
+When set, the thickness of the contour line segment
+depends on its orientation. The contour lines
+are wider in the stroke direction.";
+
+

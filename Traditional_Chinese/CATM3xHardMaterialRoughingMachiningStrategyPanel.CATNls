@@ -1,0 +1,50 @@
+Title = "加工中";
+
+M3xHardSweepingMode = "刀具路徑形式";
+M3xHardDistinctMode = "減重槽中的距離形式";
+MachiningTolerance = "加工精度";
+M3xHardMachiningMode = "加工模式:";
+M3xHardCuttingMode = "切削模式";
+M3xHardEngagementMode = "模式";
+M3xStockContouring = "加工零件外形";
+M3xPocketProgressionMode = "螺旋移動";
+M3xStayOnBottom = "永遠停留在底部";
+M3xHardMachiningModeByArea = "以區域";
+
+M3xHardSweepingMode.LongHelp = "指定刀具移動. 刀具移動形式可以是:
+- 單向下一個: 連續的刀具路徑均為相同的方向
+             最後一刀與下一刀為斜線進刀. 
+- 單向相同: 連續的刀具路徑均為相同的方向
+           且每一次均回至同路徑的第一點
+           再連至下一路徑的第一點. 
+- 來回: 連續的刀具路徑為方向相反,
+- 螺旋: 刀具路徑為向內或向外並平行,
+- 只有外形: 刀具路徑只加工外形,
+- 同心: 刀具路徑同心且平行圓弧, 
+    切削模式和 STEPOVER 為固定,
+- 螺旋: 刀具路徑依據螺旋外形. ";
+
+MachiningTolerance.LongHelp = "指出理論和計算間刀具路徑間的最大允許距離.";
+
+M3xHardMachiningMode1.LongHelp = "指出加工零件的方式可以是:  
+- 以平面; 整個零件以平面形式加工, 
+- 以區域; 整個零件分區域加工.";
+
+M3xHardMachiningMode2.LongHelp = "指出加工零件的方式可以是:
+ 
+- 只有外部零件; 只加工外部零件, 
+- 只有減重槽; 只加工減重槽, 
+- 外部零件和減重槽; 整個零件加工外部零件和減重槽.";
+
+M3xHardCuttingMode.LongHelp = "指定在加工曲面的刀具位置. 它可以是順銑或逆銑";
+
+M3xStockContouring.LongHelp = "指定啟動 零件外形 選項";
+
+M3xPocketProgressionMode.LongHelp = "指定刀具在減重槽或外部區域移動的方式.
+可能是 :
+- 向內: 刀具從區域內的一點開始, 然後平行邊界並向內移動. 
+- 向外: 刀具從區域內的一點開始, 然後平行邊界並向外移動.
+- 兩者: 對減重槽而言, 刀具從減重槽內的一點開始, 然後平行邊界並向外移動;
+對外部區域而言, 刀具從生料邊界上的一點開始, 然後平行邊界並向內移動.";
+
+M3xStayOnBottom.LongHelp = "當刀具從一個區域移至另一區域時強迫刀具仍與減重槽底部接觸.";

@@ -1,0 +1,149 @@
+BatchDescription.Title="由 CATIA 檔案或 MULTICAD 檔案產生 cgr, 3dmap, hcg, wrl 及 NCGM 格式";
+
+START_BATCH="CATDMUUtility 開始在";
+STOP_BATCH="CATDMUUtility 在下列時間後停止";
+ERR_PROCESSING="錯誤: CATDMUUtility2D 無法執行.";
+ERR_TREATMENT="錯誤: 無法處理輸入文件";
+OK_TREATMENT="正常: 已成功處理輸入文件";
+ALL_TREATMENT_OK="CATDMUUtility 成功處理. ";
+
+ER_NONEINPUT="錯誤: 未提供輸入文件";
+WN_FANDLSWITCH="警告: -f 無法使用在 -l. -f 選項忽略";
+ER_FILEANDMP="錯誤: [3200] -f [path] and -mp 選項不可同時使. 使用 -l 與 -mp 為主要使用方式";
+ER_DATABASECONN="錯誤: [2000] 無法連接資料庫 ";
+ER_CORELISTEFILE="錯誤: [3100] 輸入清單檔案無效 ";
+ER_NODB="錯誤: -db 主要與下列選項共同使用: -coid -compid -catenv -cattab options";
+
+ER_INVALIDSWITCH="錯誤 :  [3200] 無效的開關";
+ER_WP_OUTPUT_FILE="錯誤:  [6100] 輸出檔案已存在並為唯讀 ";
+ER_INVALIDOUTPUT="錯誤:  [3200] 未提供輸出選項";
+ER_INVALIDINPUT="錯誤:  [3200]  -f 和 -db 的選項組合無效";
+ER_INVALIDLISTEINPUT="錯誤:  -l 與-f 或 -db 選項為無效的組合";
+ER_INVALIDFILEBASE="錯誤:  -f 與 -id 選項為無效的組合";
+ER_INVALIDDATABASE="錯誤:  -id 或 -l 選項必須跟隨 -db 選項";
+ER_NOSETTINGSVALUE="錯誤: 環境中未定義暫存器設定";
+ER_INVALIDCACHEVALUE="錯誤: 無效的暫存器目錄";
+ER_INVALIDBASENAME="錯誤: 無效的資料庫檔名";
+ER_NOSERVERNAME="錯誤: 無伺服器名稱";
+ER_FILEPROCESSING="錯誤: 處理檔案時發生問題 : ";
+ER_DATAPROCESSING="錯誤: 處理檔案時發生問題 : ";
+ER_LOGFILE="錯誤: CATDMUUtility 無法寫入記錄檔 : ";
+ER_SPWD="錯誤: CATDMUUtility 無法解析密碼";
+ER_BBCONTACT="無法接觸主幹";
+ER_BBDECLARE="無法在主幹通道上宣告";
+ER_BB_HANDLER="無法在主幹通道上相關處理";
+ER_MAXSON="平行處理的子程序限制為 1, 除了在 SGI 外";
+ER_MAXSONP1="P1 版本的平行處理子程序限制為 1";
+ER_NOTFOUND=" 無法找到此檔案或作動文件含有錯誤資訊";
+ER_MAXSON="平行處理的子程序限制為 1, 除了在 SGI 外";
+ER_MAXSONP1="P1 版本的平行處理子程序限制為 1";
+ER_NOTFOUND=" 無法找到此檔案或作動文件含有錯誤資訊";
+WN_NOWRPERMIT="警告: 無法寫入指定記錄檔";
+WN_JPGCAM="警告: 無效相機名稱";
+WN_NOT_IN_CACHE="警告: 暫存器中檔案無法網格化 : ";
+INFO_MAXSON="載入平行處理子程序數目為 = ";
+INFO_LOGFILE="CATDMUUtility 記錄檔是 : ";
+INFO_LICENCES_OK="找到軟體授權";
+INFO_LICENCES_KO="未找到軟體授權";
+INFO_SUCCESSFULL="CATDMUUtility 成功結束";
+INFO_SUCCESSFULL_MP=" 成功結束";
+INFO_CPULOOP_MP=" 失敗. 原因 : CPULOOP. 程序已被刪除";
+INFO_CD_MP=" 失敗. 原因 : COREDUMP";
+INFO_RC_MP=" 失敗. 原因 : RC = ";
+INFO_INTERRUPT_MP=" 使用者中斷";
+INFO_PARTIALLY="CATDMUUtility 部份完成";
+INFO_HELP="USAGE: \n
+          CATDMUUtility  -f 輸入檔案 -cgr 輸出檔案1 [-nolod]
+                         [-sag 數值] [-3dmap 輸出檔案2] [-vox 數值2]  [-apps [com|lnf|all]]
+                         [-box 輸出檔案3] [-unit 數值3]\n
+          CATDMUUtility  -l 輸入清單 -db 名稱 -user 使用者名稱 -pwd | -spwd 密碼 password
+                         -server 伺服器名稱 -cgr -cache [-mp]\n 
+          CATDMUUtility  -l 輸入清單 -f       -cgr -cache\n 
+               -f        : 輸入模型 或 具有適當副檔名的零件檔.(含有被 'CATDLN 處理的 DLName://')
+               -l        : 以 -f 清單輸入檔案, 或 以 -db 選項顯示資料庫名稱. 每一行必須含有一個文件路徑 
+               		   (含有被 'CATDLN 處理的 DLName://')
+               -db       : 輸入資料庫名稱 { VPM | ENOVIA5 } 或 處理清單資料庫名稱. 不可使用以 -f 選項
+                           或不用 -l 選項   
+               -product  : 輸出檔案 或 CATIA 組立 : CATProduct
+                           (MultiCAD 設定將被納入系統)
+               -cgr      : 輸出相關輸入檔案的 cgr 檔案
+                           如未提供檔案名稱, 輸出檔案將會產生在輸入的檔案目錄中
+               -NCGM     : 輸出相關輸入檔案的 NCGM 檔案
+                           如未提供檔案名稱, 輸出檔案將會產生在輸入的檔案目錄中
+               -3dmap    : 輸出相關輸入檔案的 3dmap 檔案
+                           如未提供檔案名稱, 輸出檔案將會產生在輸入的檔案目錄中
+               -wrl      : 輸出相關輸入檔案的 vrml 檔案
+                           如未提供檔案名稱, 輸出檔案將會產生在輸入的檔案目錄中
+	       -hcg      : 輸出相關輸入檔案的 hcg 檔案
+                           如未提供檔案名稱, 輸出檔案將會產生在輸入的檔案目錄中
+               -part     : 輸出相關輸入檔案的 CATPart 檔案
+                           如未提供檔案名稱, 輸出檔案將會產生在輸入的檔案目錄中
+               -drw      : 輸出相關輸入檔案的 CATDrawing 檔案
+                           如未提供檔案名稱, 輸出檔案將會產生在輸入的檔案目錄中
+               -jpg      : 輸出相關輸入檔案的 jpg 檔案
+                           如未提供檔案名稱, 輸出檔案將會產生在輸入的檔案目錄中
+                           jpg 選項限制 :
+                              -jpg 只可用 -f 選項 ( 不可使用 -l, -cache 和 -db 選項)
+                           -jpg 可用使用下列選項:
+                              -xsize : 相片的水平大小.  單位 : 圖素
+                                       需要整數值
+                              -ysize : 相片的垂直大小.  單位 : 圖素
+                                       需要整數值
+                              -camera : 指定相機 (視圖的點) 用來產生 jpg 檔案
+                                        需要相機名稱
+                              -viewmode : 選擇視圖模式
+                                          需要模式名稱
+                                                塗彩的表現方式
+                                                以邊線表現方式來顯示塗彩邊線
+                                                以線架構表現線架構表現方式
+                                                以材料表現材料表現方式
+                              -bk : 選擇背景顏色 
+                                    需要 0 或 1 的數值
+                                                0 為在工具 + 選項中的預設背景顏色
+                                                1 為白色的背景顏色
+                              -jpg 不可與 -mp 選項共用
+	       -log      : 儲存所有錯誤在記錄檔中
+			   如未指定記錄檔, CATDMUUtility 將會在暫存目錄中新建一個
+               -force    : 啟動時將重建輸出檔案
+               -vox      : 轉換至以特定 voxel 數值來產生 3map
+                           它使用在 -3dmap 或之後的選項.需要浮動值
+               -sag      : 轉換至以特定 sag 數值來產生 cgr
+                           需要浮動值.
+               -keepsag  : 啟動開關來網格化 cgr 檔案, 保持它的弧差值.
+			               -force 與 -keepsag 一起使用是必要的
+			 	       -sag 不可與 -keepsag 一起使用
+               -nolod    : 轉換至不以細部等級產生 CGR (LOD)
+                           或直接在 DMU 暫存器的模型
+               -box      : 轉換至產生輸入檔案的盒
+                           如果輸入檔案不是 cgr 檔案, -cgr 選項是主要的
+               -unit     : 轉換至適當的單位 { mm, cm, m, inch, foot}
+                           預設數值是輸入厘米 : mm
+               -cache    : 轉換至產生 CGR 檔案 或 零件檔
+                           或直接在 DMU 暫存器的模型
+               -apps     : 選擇性的選項來萃取說明頁並和或 V4 模型檔案中的圖層和過濾器
+                           您必須使用任何選項:
+                           com: 說明頁
+                           lnf: 圖層和過濾器
+                           all: 兩者
+               -user     : 使用者名稱 或 資料庫連接. 只使用在 -db 選項
+               -pwd      : 使用者名稱 或 資料庫連接. 只使用在 -db 選選項
+               -server   : 資料庫伺服器邏輯名稱 (定義在設定中).
+                           只使用在 -db 選項
+               -coid     : 轉換輸入 VPM 資料的 coid 名稱
+                           必須使用 -db, -compid, -catenv 和 -cattab 選項
+               -compid   : 轉換輸入 VPM 資料的 compid 名稱
+                           必須使用 -db, -coid, -catenv 和 -cattab 選項
+               -catenv   : 轉換輸入 VPM 資料的 catenv 名稱
+                           必須使用 -db, -coid, -compid and -cattab 選項
+               -cattab   : 轉換輸入 VPM 資料的 cattab 名稱
+                           必須使用 -db, -coid, -compid and -catenv 選項
+               -mp       : 將會多重處理 CATDMUUtility 作業
+                           多重處理作業必須設定在 :
+                           工具 + 選項 + 數值模型 + 多重處理設定.
+                           -l 和 -cache 選項為主要的,
+               -process  : 設定子程序數目. 可使用 -mp 選項
+               -timeout  : 設定終止時間. 此時間後, 將刪除子程序.
+                           可使用 -mp 選項.
+               -checksize: 起動此選項來將暫存器大小計入";
+
+

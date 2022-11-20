@@ -1,0 +1,55 @@
+HelpNT.text = "setcatenv 的使用
+[-e environment_name]	預設: DefaultEnvironment
+[-d storage_directory_name]	預設: CSIDL_APPDATA\CATEnv
+[-p concatenation path]	預設: 安裝根目錄
+[-a user|global]		環境的形式. 預設: 使用者
+[-server]			啟動伺服器模式. 預設: 未啟動 (interactif)
+[-new yes|no]		強制環境建立. 預設: 是
+[-icone yes|no            ]   在桌面建立圖示  預設: 是
+[-menu yes|no             ]   在開始建立捷徑      預設: 是
+[-desktop yes|no          ]   建立環境的桌面表現方向. 預設: 是 (equivalent to -icone yes -menu yes )
+[-cf path_of_environment  ]   更新環境所指定之路徑
+[-cs CATIA|ENOVIA_DMU_Navigator|ENOVIA_LCA|DELMIA|DELMIA_Automation|ENOVIA_3d_com|ENOVIA_VPM_Navigator]. Default: CATIA
+			指定產品線
+[-v yes|no]		啟動說明模式. 預設: 是
+[-regserver]		登錄 CATIA 至桌面 (不包含命令)
+[-tools]			設定工具組捷徑 (不包含命令)
+[-h|-help]			此說明." ;
+HelpUNIX.text = "setcatenv 的使用
+[-e environment_name]       預設: DefaultEnvironment
+[-d storage_directory_name] 預設: $HOME/CATEnv
+[-p concatenation path]     預設: 安裝根目錄 (/usr/catia/DassaultSystemes/B06)
+[-a user|global]            環境的形式. 預設: 使用者
+[-server]                   啟動伺服器模式. 預設: 未啟動 (interactif)
+[-new yes|no]               強制環境建立. 預設: 是
+[-desktop yes|no]           建立環境的桌面表現方向. 預設: 是, 除了 IRIX
+[-cf path_of_environment  ]   更新環境所指定之變數值
+[-cs CATIA|ENOVIA_DMU_Navigator|ENOVIA_LCA|DELMIA|ENOVIA_3d_com|CATIA_Machinist]. 預設: CATIA
+                            指定產品線
+[-v yes|no]                 啟動說明模式. 預設: 是
+[-regserver]                登錄 CATIA 至桌面 (不包含命令)
+[-h|-help]                  此說明." ;
+NoBlankInEnvName.text     = "環境名稱中不允許空白字元" ;
+NoHome.text               = "無法發現 'HOME' 環境變數" ;
+EnvCreationFailed.text    = "環境建立失敗" ;
+IconeCreationFailed.text  = "環境圖示建立失敗" ;
+IconeCreationFailed2.text   = "未建立桌面捷徑. 請檢查 /P1 是否在安裝目錄中." ;
+ModifyVariableFailed.text = "環境變數修改失敗" ;
+UpdateVariableFailed.text = "環境變數更新失敗" ;
+NoSuchVariable.text       = "變數不存在" ;
+WSSsetupFailed.text       = "工作站設定失敗" ;
+ToolsSetupFailed.text     = "工具安裝失敗" ;
+MustBeSystemAdmin.text    = "你必須是系統管理者以使用此選擇" ;
+RefFileNotFound.Text		= "向下的參考檔案未找到";
+EnvNameNotSpecified.Text	= "必須指定環境名稱";
+DefaultFolderNotFound.Text	= "預設環境檔案夾未找到";
+SpecifiedFolderNotFound.Text = "未找到目錄 \"/P1\" .";
+EnvFileNotFound.Text		= "環境檔案未找到";
+AccessPb.Text              = "無法儲存環境檔案至 \"/P1\".";
+FileAlreadyExist.Text		= "環境檔案已存在"; 
+NoConcatSpecified.Text		= "連接必須指定";
+DiskFull.Text				= "無法儲存環境檔案: 磁碟已滿";
+InitFolderFailed.Text		= "------------------ 警告 ----------------
+預設儲存檔案夾未找到.
+環境儲存在 :
+";

@@ -1,0 +1,200 @@
+// ==========================================================================
+// ==========================================================================
+// DNBHumanModelingUI English Message File
+// ==========================================================================
+// ==========================================================================
+MemoWindow.Title = "說明 (/p1)";
+MemoWindow.Editor.AnthroShortHelp = "Anthropometry 說明";
+MemoWindow.Editor.ManikinShortHelp = "人體模型說明";
+MemoWindow.Editor.AnthroVarableShortHelp = "Anthropometric 變數說明";
+MemoWindow.Editor.VisionShortHelp = "視景說明";
+MemoWindow.Editor.PostureShortHelp = "姿勢說明";
+MemoWindow.Editor.PrefAngleShortHelp = "偏好角度說明";
+PostureLabel.Title = "位置";
+
+ReachDistance.Message = "到達錯誤邊界: ";
+SelectSegment = "選擇部份...";
+SelectManikin = "選擇人體模型...";
+PutCompassOnTarget = "置放羅盤至目標上...";
+PlaceCompassAndSelectManikin = "置放羅盤至目標位置上並選擇人體模型...";
+PlaceCompassAndSelectSegment = "置放羅盤至目標位置上並選擇 segment...";
+PlaceCompassToMoveManikin = "置放羅盤至人體模型 /p1 的目標位置上, 或選擇另一人體模型...";
+LeftReachEnvelope = "左側可到達範圍";
+RightReachEnvelope = "右側可到達範圍";
+LeftReachEnvelopeConstruction.Title = "左側可到達範圍建構";
+RightReachEnvelopeConstruction.Title = "右側可到達範圍建構";
+
+PushIEdit.Title = "編輯...";
+PushIAdd.Title = "新增";
+PushIRemove.Title = "移除";
+PushIPostureSubMenu = "姿勢";
+PushIPrefAngleSubMenu = "偏好角度";
+PushIAngularLimitationSubMenu = "限制";
+PushIAttachSubMenu = "附加";
+PushIReset.Title = "重設";
+PushIDelete.Title = "刪除";
+PushIFixPermanent.Title = "永遠固定";
+PushIFixOnPermanent.Title = "固定在永遠";
+
+VisionNodeName = "視野";
+
+ActiveDocumentIsNotCATProduct =
+"此命令只可從 'CATProduct' 文件形態開始";
+
+CannotInsertManikin = "此文件無法含有一個以上人體模型.";
+SegmentMustBelongToHand = "所選部份必須是手或手指.";
+ConfirmSave = "您要儲存修改嗎 ?";
+ConfirmSave.Title = "確認";
+SaveAs.Title = "存成";
+TextFile.Title = "文字檔 (*.txt)";
+
+DisableAttachConfirm.Title = "確認";
+DisableAttachConfirm = 
+"人體模型至少有一個作動限制物件
+附加加被手拿取.
+您要關閉此附加或拿取嗎 ?
+
+如您選取關閉此附加或拿取,
+當退出 IK 模式時它將會重新建立.
+
+要取消此附加, 請按是.
+要保持此附加, 請按否.";
+
+DeletePartRelationConfirm =
+"至少有一個作動關聯與運動鏈相關.
+您要刪除此零件關聯嗎 ?
+
+要刪除此零件關聯,  請按是.
+要保持此零件關聯, 請按否.";
+
+InternalError = "內部錯誤.";
+UnknownError = "未知錯誤.";
+SegmentSelectionFailed = "選擇部份失敗.";
+LicenseRequired = "此動作需軟體授權.";
+
+IsNotPartRelation = "未找到與此拘束相關的幾何元素.";
+
+CATPartDocCreatedForOffsets =
+"新 CATPart 文件,
+/p1,
+己建立.";
+
+ManikinPartNumber = "人體模型";
+ForearmPartNumber = "前臂";
+
+SWKConstraintNode = "拘束";
+SWKLoadNode = "載入";
+BodyNodeName = "身體";
+SWKManikinPostureNode = "姿勢";
+SWKManikinPositionNode = "位置";
+SWKManikinPropertiesNode = "輪廓";
+SWKManikinSettingsNode = "設定";
+SWKPropDisplayNode = "顯示";
+SWKPropColouringNode = "著色";
+SWKPropAppearanceNode = "外表";
+SWKPropAttachesNode = "附加";
+SWKPropReferentialNode = "Referential";
+SWKPropIKBehavioursNode = "IK 行為";
+SWKPropSegmentsOffsetsNode = "偏移";
+SWKLineOfSightNode = "視線";
+SWKPropAngLimsNode = "角度限制";
+SWKPropAngLimsDof1Node = "DOF 1";
+SWKPropAngLimsDof2Node = "DOF 2";
+SWKPropAngLimsDof3Node = "DOF 3";
+SWKPropPrefAngsNode = "偏好角度";
+SWKPropPrefAngsDof1Node = "DOF 1";
+SWKPropPrefAngsDof2Node = "DOF 2";
+SWKPropPrefAngsDof3Node = "DOF 3";
+SWKReportsNode = "報告";
+
+SegmentTrunkNodeName = "軀體";
+SegmentLumbarSpinesNodeName = "腰";
+SegmentThoracicSpinesNodeName = "胸";
+SegmentNeckSpinesNodeName = "頸";
+SegmentRightArmNodeName = "右臂";
+SegmentRightFingersNodeName = "右手指";
+SegmentRightThumbNodeName = "拇指";
+SegmentRightIndexNodeName = "食指";
+SegmentRightMiddleFingerNodeName = "中指";
+SegmentRightAnnularNodeName = "Annular";
+SegmentRightAuricularNodeName = "耳部";
+SegmentLeftArmNodeName = "左臂";
+SegmentLeftFingersNodeName = "左手指";
+SegmentLeftThumbNodeName = "拇指";
+SegmentLeftIndexNodeName = "食指";
+SegmentLeftMiddleFingerNodeName = "中指";
+SegmentLeftAnnularNodeName = "Annular";
+SegmentLeftAuricularNodeName = "耳部";
+SegmentRightLegNodeName = "右腿";
+SegmentLeftLegNodeName = "左腿";
+
+SelectionNull = "未選擇物件.";
+
+SWKManikinEditor.Title = "人體模型";
+SWKProfileEditor.Title = "輪廓";
+SWKSettingsEditor.Title = "設定";
+SWKManikinAppearanceTabPage.Title = "外表";
+SWKManikinDisplayTabPage.Title = "顯示";
+SWKManikinColorTabPage.Title = "塗彩";
+SWKManikinVisionTabPage.Title = "視野";
+SWKManikinAttachTabPage.Title = "附加";
+SWKManikinAnthroTabPage.Title = "人體測量學";
+SWKManikinReferentialTabPage.Title = "指示的";
+SWKManikinIKBehaviorsTabPage.Title = "IK 行為";
+SWKManikinSegmentsOffsetsTabPage.Title = "偏移";
+SWKManikinLimitationsTabPage.Title = "角度限制";
+SWKManikinPrefAngsTabPage.Title = "偏好角度";
+
+SWKVisionEditor.Title = "視野";
+SWKSegmentsOffsetsEditor.Title = "偏移";
+SWKLimitationsEditor.Title = "角度限制";
+SWKPrefAngsEditor.Title = "偏好角度";
+SWKManikinPropertiesEditor.Title = "人體模型";
+SWKDisplayEditor.Title = "顯示";
+SWKColouringEditor.Title = "著色";
+SWKAppearanceEditor.Title = "外表";
+SWKIKBehavioursEditor.Title = "IK 行為";
+SWKAttachesEditor.Title = "附加";
+SWKReferentialEditor.Title = "Referential";
+SWKAnthroEditor.Title = "Anthropometry";
+
+ContextualSubMenu.EditVision.Title = "開啟視景視窗";
+
+InvalidInput =
+"無效輸入.
+前臂無法使用此命令.";
+
+NoMoreIKInThisMode=
+"無法執行逆轉運動.
+要在人體模型使用 IK 模式, 您必須先啟動
+或編輯它的上層產品.";
+
+DOFLockedMsg = "此自由度目前鎖定.";
+
+WrongActiveProductForIK =
+"因為上層產品 ('/p2') 未動作
+導致逆轉運動模式無法應用.
+
+在人體模型 '/p1' 上使用 IK 模式, 
+您必須先啟動上層產品.";
+
+CannotExitWorkbench =
+"退出工作檯失敗.
+ 無法找到人體模型.";
+
+Locked = "已鎖定";
+
+NewLine = "\n";
+OneSpaceWithNewLine = " \n";
+Information = "隱藏或顯示資訊";
+InfoMessage = "此節點不適用隱藏或顯示命令";
+NoEditingAvailable = "無法使用編輯命令.";
+PICKConstraintNotEditable = "PICK constraint edition is not available in this context.";
+
+Text = "文字檔案 (*.txt)";
+Html = "Html 檔案 (*.html)";
+All = "全部檔案 (*.*)";
+
+ActivityNameDlg.Title = "報告 ID";
+ActivityNameDlg.Label = "請輸入您的報告 ID:";
+

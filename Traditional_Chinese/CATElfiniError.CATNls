@@ -1,0 +1,923 @@
+ERR_0001.Diagnostic="INTERNAL ERROR";
+ERR_0001.Advice="/p";
+
+WARN_0002.Diagnostic="WARNING";
+WARN_0002.Advice="/p";
+
+ERR_0097.Diagnostic="Number of iterations unsufficient
+The convergence criterium /P11 is not reached 
+after /P01 iteration(s)
+The max relative error is: /P12";                                      
+
+ERR_0098.Request="Iteration number too small";
+ERR_0098.Diagnostic= "Only /P01 vectors computed instead of /P02 requested after /P03 iterations";  
+
+ERR_0099.Request="Computation with gradient method impossible";
+ERR_0099.Diagnostic= "Global singularity is detected\nCheck your Restraint case or your Young modulus\nUse a direct method if you want to visualize the singularity";  
+
+ERR_0100.Request="Reading file";
+ERR_0100.Diagnostic="Unable to read file /P21 \nCheck your computation and your External Storage.";
+
+ERR_0101.Request="Writing file";
+ERR_0101.Diagnostic="Unable to write file /P21 \nClean your External Storage. Disk may be full";
+
+ERR_0102.Request="Opening file";
+ERR_0102.Diagnostic="Unable to open file /P21 \nRelaunch the computation. " ;  
+
+ERR_0103.Request="Computation impossible";
+ERR_0103.Diagnostic="Number of eigen vectors is negative or null";
+ERR_0103.Advice="This number must be greater or equal to 1";
+
+ERR_0104.Request="Computation impossible";
+ERR_0104.Diagnostic="Maximum iteration number is negative";
+ERR_0104.Advice="This number must be greater or equal to 0";
+
+ERR_0105.Request="Computation impossible";
+ERR_0105.Diagnostic="Accuracy is negative or greater than 1.";
+ERR_0105.Advice="Accuracy must be beetween 0. and 1.";
+
+ERR_0106.Diagnostic="Computation with gradient method impossible, define the Static Case with a Gauss method";
+
+ERR_0107.Diagnostic="Error while searching StructureSet";
+
+ERR_0108.Diagnostic="NULL Argument";
+
+ERR_0109.Request="Computation of rotation force";
+ERR_0109.Diagnostic="Solver axis set is empty";
+ERR_0109.Advice="If you created your model before V5R4 Service Pack 1 re-create it
+with Service Pack 1 or greater.";
+
+WARN_0110.Diagnostic="Discarded element :
+Contact element discarded because of null contact direction.";
+
+WARN_0111.Diagnostic="Discarded element :
+Slider element discarded because of null sliding normal.";
+
+WARN_0112.Diagnostic="Discarded element :
+Planar element discarded because of null sliding direction.";
+
+WARN_0113.Diagnostic="Discarded element :
+Hybrid element discarded because of null contact direction.";
+
+ERR_0114.Diagnostic="Invalid description size in ExternalSolutionSet.";
+
+ERR_0115.Request="Static constrained modes computation is impossible";
+ERR_0115.Diagnostic="Static constrained modes can not be computed when contact elements are present";
+
+WARN_0116.Diagnostic="Launching computation on a new process   ...";
+
+ERR_0117.Request="Invalid block size";
+ERR_0117.Diagnostic="I/O error invalid block size";
+
+ERR_0118.Request="No big enough contiguous memory for computationon the new process ";
+ERR_0118.Diagnostic="No big enough contiguous memory for computation on the new process ";
+
+ERR_0119.Request="Data exchange failure";
+ERR_0119.Diagnostic="Data exchange failure occured during computation on the new process in /P21";
+
+WARN_0120.Diagnostic="Computation step skipped";
+
+ERR_0121.Request="Invalid kinematic element";
+ERR_0121.Diagnostic="Invalid number of master node : /P01 for kinematic element";
+
+WARN_0300.Diagnostic="No big enough contiguous memory for computation
+Allocation failed
+Requested memory block     : /P01 KBYTES
+Max memory block available : /P02 KBYTES
+We try another method wich uses more time but less memory";
+
+ERR_0301.Diagnostic="Program Error
+Parameter : /P01
+/P21";                                                                          
+
+ERR_0302.Diagnostic="No big enough contiguous memory for computation
+Allocation failed
+Requested memory block     : /P01 KBYTES
+Max memory block available : /P02 KBYTES";
+                                          
+ERR_0303.Diagnostic="Program Error: Work Space too small
+Work Space too small for computation 
+requested size      : /P01 KBYTES                                               
+Work Space size     : /P02 KBYTES";  
+                                          
+ERR_0304.Diagnostic="Memory allocation failed";
+  
+ERR_0314.Diagnostic="Block size too small 
+Stiffness matrix block size is too small                                          
+initial block size           : /P01                                             
+requested minimal block size : /P02";  
+
+ERR_0324.Diagnostic="Unknown material : material /P01 does not exist";                                    
+  
+
+ERR_0325.Diagnostic="Unknown axis
+Axis  : /P01 does not exist
+Unable to extract axis characteristics";                                        
+
+
+ERR_0327.Diagnostic="Wrong number of valueS
+Wrong number of characteristic values
+Characteristic : /P01 , Element : /P02
+Values in call : /P03
+Values stored  : /P04";
+
+ERR_0328.Diagnostic="Unknown element charasteristic
+characteristic : /P01 does not exist for elements
+unable to calculate pointers";
+
+ERR_0330.Diagnostic="Unknown load
+Load  : /P01 does not exist
+Unable to extract load characteristics";                                        
+
+ERR_0331.Diagnostic="Unknown characteristic
+Characteristic : /P01 does not exist for axis : /P02
+Unable to extract characteristic values";
+
+ERR_0332.Diagnostic="Wrong number of values 
+Wrong number of characteristic values
+Characteristic : /P01 , Axis : /P02
+Values in call : /P03
+Values stored  : /P04";
+
+ERR_0337.Diagnostic="Invalid parameters access
+Array of parameters /P21 cannot be accessed in read mode";                      
+
+ERR_0339.Diagnostic="Unknown parameters                                                    
+Array of parameters /P21 is unknown";                                           
+  
+ERR_0340.Diagnostic="Invalid parameters access                                             
+Array of parameters /P21 cannot be accessed in write mode";                     
+  
+ERR_0341.Diagnostic="Invalid parameters size                                               
+Invalid size for array of parameters /P21                                       
+Size in call : /P01                                                             
+Size stored  : /P02";                                                           
+  
+
+WARN_0350.Diagnostic="Eigenvalue failed to converge                                         
+Eigenvalue /P01 failed to converge                                              
+after /P02 iterations";                                                         
+ 
+
+ERR_0367.Diagnostic="Unknown characteristic                                                
+Characteristic : /P01 does not exist for Mater : /P02                           
+unable to extract characteristic values";                                       
+
+ERR_0368.Diagnostic="Wrong number of values                                                
+Wrong number of characteristic values                                           
+Characteristic : /P01 , Mater : /P02                                            
+Values in call : /P03                                                           
+Values stored  : /P04";       
+ 
+WARN_0571.Diagnostic="Invalid unused material                                                 
+Material /P21
+Invalid Young modulus: /P11";
+
+ERR_0572.Diagnostic="Invalid material                                                 
+Material /P21
+Invalid Young modulus: /P11";
+
+WARN_0573.Diagnostic="Invalid unused material                                                 
+Material /P21
+Invalid Poisson's ratio: /P11";
+
+ERR_0574.Diagnostic="Invalid material                                                 
+Material /P21
+Invalid Poisson's ratio: /P11";
+
+ERR_0594.Diagnostic="Invalid material                                                 
+Material /P21
+Invalid coefficient Q=1-Nu12*Nu21-Nu23*Nu32-Nu13*Nu31-2*Nu13*Nu21*Nu32
+Must be greater than 0.";
+
+WARN_0595.Diagnostic="Duplicate node                                                        
+Kinematic element number /P01 have a duplicate node                             
+( NODE NUMBER /P02 )";                                                         
+
+
+ERR_0596.Diagnostic="INVALID KINEMATIC ELEMENT
+/P01 KINEMATIC ELEMENT(S) HAVE DUPLICATE NODE(S)";            
+                  
+WARN_0597.Diagnostic="A slave node of a join element is also a master node of at least an other join element.";
+
+//Attention a la correspondance message NLS/message par defaut (cf. CATEElfComputeStructure.cpp)
+WARN_0598.Diagnostic = "/P01 contains /P02 join element(s) whose slave node is also a master node of at least an other join element.";
+
+ERR_0601.Request="Integer overflow";
+ERR_0601.Diagnostic="Integer overflow, model is too big";
+
+ERR_0602.Diagnostic="Abnormal exception occurs in sub-process";
+
+ERR_0603.Diagnostic="No big enough contiguous memory 
+for one mode computation
+Requested memory block     : /P01 KBYTES
+Max memory block available : /P02 KBYTES";
+
+ERR_0604.Diagnostic="No big enough contiguous memory
+for one factor computation
+Requested memory block     : /P01 KBYTES
+Max memory block available : /P02 KBYTES";
+
+ERR_0605.Diagnostic="BLOCKSIZE TOO SMALL                                                   
+STIFNESS MATRIX BLOCKSIZE IS TOO SMALL                                          
+INITIAL BLOCKSIZE            : /P01                                             
+REQUESTED MINIMAL BLOCKSIZE  : /P02";             
+
+
+ERR_0619.Diagnostic="Unable to compute Numbering                                           
+GAUSS/R6 Method with contact elements needs to have only one structure:
+- Check your Restraint
+- Check your Connections
+- Or use Gauss method if possible";                                                       
+  
+ERR_0623.Request="Gradient computation is not possible";
+ERR_0623.Diagnostic="several contact elements reference the same degree number : /P01";
+ERR_0623.Advice = "Use a direct method.";                                                                
+  
+WARN_0624.Diagnostic="INVALID CONTACT ELEMENT                                               
+THE CONTACT ELEMENT NUMBER /P01                                                 
+TOPOLOGICAL INDICES /P02,/P03,/P04,/P05                                         
+REFERENCES ONLY FIXED DEGREES";       
+ 
+  
+ERR_0625.Diagnostic="Number of iterations unsufficient                                     
+the convergence criterium /P11                                                  
+is not reached after /P01 iteration(s)
+the max relative error is : /P12
+edit the StaticCaseSolution and increase the maximum iteration number
+this number must be  superior than /P01";                                             
+
+WARN_0626.Diagnostic="Invalid contact element                                               
+The contact element number /P01                                                 
+is redundant with other contact elements.";
+ 
+WARN_0627.Diagnostic="Invalid contact element                                               
+The contact element number /P01                                                 
+references only fixed degrees.";       
+ 
+   
+
+ERR_0628.Request="Gradient computation.";
+ERR_0628.Diagnostic="Singularity detected ( divergent gradient solution) .";
+ERR_0628.Advice="Check your restraints or your assembly connections.";
+
+WARN_0629.Request="Swapping the front.";
+WARN_0629.Diagnostic="Not enough memory to keep the front in memory
+The front will be swapped to file and computation will slow down.";
+  
+ERR_0631.Request="Gradient computation is not possible";
+ERR_0631.Diagnostic="The model contains tightening elements";
+ERR_0631.Advice="Use a direct method or replace the tightening connections.";                                                                
+
+ERR_0637.Diagnostic="Invalid element geometry
+Test for element geometry has detected /P01 error(s)                            
+check your structure";                                                          
+
+//Attention a la correspondance message NLS/message par defaut (cf. CATEElfComputeStructure.cpp)
+WARN_0638.Diagnostic = "/P01 contains /P02 element(s) whose geometry may lead to inaccurate results.";
+
+//Attention a la correspondance message NLS/message par defaut (cf. CATEElfComputeCombinedDisp.cpp)
+WARN_0639.Diagnostic = "Combined solutions are not all based on the same restraint: this can lead to inconsistent results. Check that the combination makes sense !";
+
+ERR_0640.Diagnostic = "Invalid Frequency computation
+/P21";
+
+WARN_0641.Diagnostic = "/P01 contains /P02 element(s) whose geometry lead to inaccurate results.";
+
+ERR_0644.Diagnostic="Invalid material characteristic
+Test for Material(s) has detected /P01 Error(s)
+Check your Material(s)";
+
+WARN_0672.Diagnostic="System constraints are not verified
+one or more residual(s) is/are larger then the precision";                                   
+  
+WARN_0673.Diagnostic="Reaction is detected in singular direction
+Either load are applied in a singular direction,
+either system is over constraint and singularity generate global (not local) restraint.";       
+   
+ERR_0692.Diagnostic="Total Mass is null                                                       
+The total mass is null"; 
+
+WARN_0693.Diagnostic="Mass is null                                                       
+Loads RotationForce and Acceleration are not taken into account"; 
+
+ERR_0694.Request="Buckling computation is impossible";
+ERR_0694.Diagnostic="Buckling can not be computed when contact elements are present";
+
+ERR_0695.Request="Frequency computation is impossible";
+
+ERR_0695.Diagnostic="Frequency can not be computed when contact elements are present";
+
+ERR_0708.Diagnostic="Singularity detected in Lanczos computation                                                
+Possible causes:                                                       
+    1.Mass matrix may be ill-conditionned                                       
+      due to mass distribution                                                  
+    2.Number of required modes exceeds the number                               
+      of structure modes                                                        
+    3.The factorized matrix is close to be singular,                            
+      check the minimum pivot
+    4.If shifted, the shift may be close to an eigenvalue,
+      increase your shift value
+Compute less than /P01";                           
+   
+ERR_0709.Diagnostic="Factorization failed                                                  
+Absolute pivot number /P01: /P11                                               
+is less than the precision: /P12                                               
+Possible causes:  
+    1.Mass matrix may be ill-conditionned                                       
+      due to mass distribution                                                  
+    2.Number of required modes exceeds the number                               
+      of structure modes                                                        
+    3.The factorized matrix is close to be singular,                            
+      check the minimum pivot
+    4.If shifted, the shift may be close to an eigenvalue,
+      increase your shift value";
+
+ERR_0710.Diagnostic="Factorization failed                                       
+Absolute pivot number /P01: /P11                                                
+is less than the precision: /P12                                                
+Possible causes:
+    1.Load case may have no buckling component                                  
+    2.Number of required modes exceeds the number                               
+      of structure modes                                                        
+    3.The factorized matrix is close to be singular,                            
+      check the minimum pivot
+    4.If shifted, the shift may be close to an eigenvalue,
+      increase your shift value";
+  
+ERR_0711.Diagnostic="INVALID CLEARANCE                                                     
+NODES OF CONTACT ELEMENT /P01 ARE CLAMPED                                       
+THE CLEARANCE MUST BE GREATER THAN 0                                            
+CLEARANCE VALUE : /P11                                                          
+LOAD : /P21";                                                                   
+  
+WARN_0712.Diagnostic="CLAMPED CONTACT ELEMENT                                               
+NODES OF CONTACT ELEMENT /P01 ARE CLAMPED                                       
+LOAD : /P21";                                                                   
+
+ERR_0713.Diagnostic="FACTORIZATION FAILED IN CONTACT COMPUTATION                           
+ABSOLUTE PIVOT NUMBER /P01 IS NEGATIVE OR NULL                                  
+VALUE : /P11                                                                    
+POSSIBLE CAUSES :                                                               
+    1.CONTACT ELEMENTS ARE COINCIDING                                           
+    2.A CONTACT ELEMENT IS CLAMPED";                                           
+
+ERR_0755.Diagnostic="NEGATIVE EIGENVALUE                                                   
+NEGATIVE EIGENVALUE                                                             
+SINGULAR MATRIX                                                                 
+CHECK YOUR MINIMUM RELATIVE PIVOT";                                            
+
+WARN_0757.Diagnostic="THE OPTIMIZER COULD NOT FIND ANY FEASIBLE POINT.                      
+THE CURRENT DESIGN IS TOO FAR FROM THE OPTIMAL DESIGN                           
+OR SOME CONSTRAINTS HAVE TO BE RELEASED.";
+  
+ERR_0777.Request = "Computation interrupted by user.";
+ERR_0777.Diagnostic = "Computation has been partialy done.";
+
+ERR_0782.Request = "Computation impossible.";
+ERR_0782.Diagnostic= "No big enough contiguous memory for computation.
+Unable to factorize /P01 relation with /P02 degrees of freedom in a memory space of /P03 Meg.";
+
+ERR_0781.Request = "Factorized matrix computation.";
+ERR_0781.Diagnostic= "Singularity detected ( pivot too small )
+Possible reasons : missing restraint or connection specifications.
+Display deformation, translational displacement vectors or rotational displacement vectors to diagnostic the problem.";
+
+ERR_0783.Diagnostic= "Singularity detected ( relative pivot too small )
+Possible reason : The shift is close to a frequency value.
+Please, try with an other shift value";
+
+ERR_0784.Request = "Factorized matrix computation.";
+ERR_0784.Diagnostic= "Singularity detected ( absolute pivot too small )
+Possible reasons : missing restraint or connection specifications.
+Display deformation or displacement vectors to diagnostic the problem.";
+
+ERR_0785.Request = "Factorized matrix computation.";
+ERR_0785.Diagnostic= "Singularity detected ( relative pivot too small )
+Possible reasons : missing restraint or connection specifications.
+Display deformation or displacement vectors to diagnostic the problem.";
+  
+WARN_0786.Diagnostic="GLOBAL SINGULARITY                                                    
+THE DOF /P21 OF NODE /P01 IS SINGULAR                                           
+POSSIBLE CAUSE:                                                                 
+THE SINGULARITY MAY HAVE NOT BEEN REMOVED BY                                    
+THE CONSTRAINT STEP DUE TO THE FACT THAT THIS                                   
+NODE MAY BE LINKED TO A RIGID ELEMENT.";                                        
+
+ERR_0787.Request = "Multi load case computation.";
+ERR_0787.Diagnostic= "No load case define in the multi load case.";
+
+ERR_0788.Request = "Mass exclusion.";
+ERR_0788.Diagnostic= "Exclude is not authorized without Aditional Mass.";
+
+ERR_0789.Request = "Multi load case computation.";
+ERR_0789.Diagnostic= "Frequency computation with a static multi load case is not authorized.";
+    
+ERR_0790.Request = "Multi load case computation.";
+ERR_0790.Diagnostic= "Buckling computation with a static multi load case is not authorized.";
+    
+ERR_0800.Diagnostic="PREVIOUS STEP MISSING
+/P21  MUST BE SET BEFORE COMPUTING OPTIMIZATION";
+
+
+WARN_0807.Diagnostic="GLOBAL SINGULARITY
+/P01 OTHER DOF ARE SINGULAR POSSIBLE CAUSE:
+THE SINGULARITY MAY HAVE NOT BEEN REMOVED BY
+THE CONSTRAINT STEP DUE TO THE FACT THAT THIS
+NODE MAY BE LINKED TO A RIGID ELEMENT.";
+
+WARN_0812.Diagnostic="PROBLEM WITH CONTACT ELEMENT
+PROBLEM DETECTED WITH THE CONTACT ELEMENT /P01 POSSIBLE CAUSES :
+1.NODES OF CONTACT ELEMENTS ARE LINKED WITH KINEMATIC RELATION
+2.CONTACT ELEMENTS ARE COINCIDING
+3.A CONTACT ELEMENT IS CLAMPED THIS COULD LEAD TO A CONTACT 
+FACTORIZATION FAILURE";
+
+WARN_0999.Diagnostic="Displacement         : /P21
+Relation not verified: /P01
+Residual             : /P11
+Relative error       : /P12
+Precision            : /P13";
+
+ERR_1000.Request = "COMPUTATION FAILED";
+ERR_1000.Diagnostic= "No link with CATPart or CATProduct or CATIA model or ... ";
+ERR_1000.Advice = "IMPORT DOCUMENT TO ANALYSE";  
+
+ERR_1001.Diagnostic= "Invalid value on /P21:
+Value /P11 /P22 out of range: should be greater than /P12 /P22 
+check coefficient of combination: one of them seams to be negative";
+
+ERR_1002.Diagnostic= "Acquisition of field model failed:
+Found /P01 node(s) and /P02 element(s) in Mesh
+Check your model";
+
+ERR_1003.Diagnostic= "Acquisition of field model failed:
+Could not find any property
+Check your model";
+
+//ERR_1004.Request = "Acquisition of field model failed";
+//ERR_1004.Diagnostic= "Could not access find property for /P21";
+//ERR_1004.Advice = "Check your model";  
+ERR_1004.Diagnostic= "Acquisition of field model failed:
+Could not find property for /P21
+Check your model";
+
+
+WARN_1005.Diagnostic="Direction of a restraint realigned                                                    
+The direction of a restraint on node /P01 has been aligned with
+a connection direction. The difference /P11 was less than /P12";                                   
+
+//ERR_1006.Request = "Computation of load /P21 failed";
+//ERR_1006.Diagnostic= "Could not access reference temperature";
+//ERR_1006.Advice = "Check the environment set";  
+ERR_1006.Diagnostic= "Computation of load /P21 failed
+Could not access reference temperature
+Check the environment set";  
+
+ERR_1007.Request = "Access to solution's data impossible";
+ERR_1007.Diagnostic= "The solution is not up-to-date";
+ERR_1007.Advice = "Launch computation";  
+
+ERR_1008.Request = "Access to solution's data impossible";
+ERR_1008.Diagnostic= "The solution has not converged";
+ERR_1008.Advice = "Relaunch computation";  
+
+ERR_1009.Request = "Access to solution's data impossible";
+ERR_1009.Diagnostic= "The solution is singular";
+
+WARN_1010.Diagnostic="Feature /P21 had to be updated during solver's compute phase.
+Possible cause : the solution case holding the feature has been deleted";
+
+WARN_1011.Diagnostic="Previous External Storage data not recovered. ( /P21 ) ";
+
+ERR_1012.Diagnostic = "Storage failure : problem during external storage assembling.";
+
+ERR_1014.Request = "EST license not found";
+ERR_1014.Diagnostic= "/P21: this functionality is only available with the EST product";
+
+ERR_1015.Request    = "Combined static solution computation failed !";
+ERR_1015.Diagnostic = "Combined static solution computation is impossible: 
+at least one of the solutions to combine does not exist any more.";
+ERR_1015.Advice     = "Modify the static solutions list.";  
+
+ERR_1016.Diagnostic = "Storage failure : Unable to create temporary directory.";
+
+WARN_1017.Diagnostic="Direction of a restraint realigned                                                    
+The direction of a restraint on node /P01 has been aligned with
+the restraint direction of node /P02. The difference /P11 was less than /P12";                                   
+
+ERR_1018.Diagnostic="/P21 applied several times                                                    
+A /P21 has been applied several times to some elements
+Check your model trough the images.";                                   
+
+ERR_1019.Diagnostic="More than one property                                              
+Element has more than one property applied to it.
+Check your model using the Model Check command.";                                   
+
+ERR_1020.Diagnostic="More than one property                                              
+Every element has more than one property applied to it.
+Check your model using the Model Check command.";                                   
+
+ERR_1021.Diagnostic="Unauthorized property for element                                              
+One element has an unauthorized property
+Check your model using the Model Check command.";                                   
+
+ERR_1022.Diagnostic="Only one RotationForce authorized per Load
+Only one RotationForce is authorized for a same Load.";
+
+ERR_1023.Diagnostic = "Save failure : Unable to save CATAnalysisResults.";
+ERR_1024.Diagnostic = "Save failure : Unable to save CATAnalysisComputations.";
+
+ERR_1025.Diagnostic = "Solution not available, maybe singular problem.";
+
+ERR_1026.Diagnostic = "No material defined.";
+
+ERR_1027.Diagnostic = "Characteristic /P21 not available for set, node, and/or element defined in the CATAnalysis.";
+
+ERR_1028.Diagnostic="MASS_MOMENT_OF_INERTIA without POINT_MASS
+MASS_MOMENT_OF_INERTIA is not taken into account.";
+
+ERR_1029.Diagnostic="Only one Inertia is authorized per VirtualPart
+Only one Inertia is authorized for a same VirtualPart.";
+
+ERR_1030.Diagnostic="Compute impossible
+/P21 is not supported by Elfini Solver
+Modify the model before launching computation.";
+
+ERR_1031.Diagnostic = "Frequency not available, no free degrees of freedom.";
+
+ERR_1032.Diagnostic = "No big enough contiguous memory to read the total mass matrix in core.
+Use lanczos method which allowed computation with an out of core matrix";
+
+ERR_1033.Diagnostic = "Frequency computation impossible.
+The number of requested modes: /P01 must be inferior or equal 
+to the number of free degrees of freedom: /P02.";
+
+ERR_1034.Diagnostic = "Buckling computation impossible.
+The number of requested factors: /P01 must be inferior or equal 
+to the number of free degrees of freedom: /P02.";
+
+ERR_1035.Diagnostic="Compute impossible
+/P21 is not supported by Elfini Solver
+Modify /P22 before launching computation.";
+
+WARN_1036.Diagnostic = "Total mass matrix is in core on the new process.
+Computation will speed up.";
+
+ERR_1037.Diagnostic= "GPS product not found: solution can not be updated.";
+
+ERR_1100.Diagnostic="Error on data reception in /P21
+because the connexion with /P22 is closed.";
+
+ERR_1101.Diagnostic="Error on data reception in /P21
+because the data reception from /P22 is in time out .";
+
+ERR_1102.Diagnostic="Error on data reception in /P21
+because there are any data to receive from /P22 or wait error.";
+
+ERR_1103.Diagnostic="Error on data reception in /P21
+problem with the reception of the size of data from /P22.";
+
+ERR_1104.Diagnostic="Error on data reception in /P21
+because the size ot the buffer used to receive the data from /P22 is too small.";
+
+ERR_1105.Diagnostic="Error on data reception in /P21
+because the connexion with /P22 is not done.";
+
+ERR_1106.Diagnostic="Error on data reception in /P21
+due to a problem during the transmission by /P22.";
+
+ERR_1107.Diagnostic="Error on data reception in /P21
+because the way of execution is invalid.";
+
+ERR_1108.Diagnostic="Error on data reception in /P21
+due to bad reception of data from /P22.";
+
+ERR_1109.Diagnostic="Error on data reception in /P21
+due to a mismatch on the receiver.";
+
+ERR_1110.Diagnostic="Error on data transmission in /P21
+because the connexion with /P22 is closed.";
+
+ERR_1111.Diagnostic="Error on data transmission in /P21
+because the size of the data transmit to /P22 is invalid.";
+
+ERR_1112.Diagnostic="Error on data transmission in /P21
+because of a problem with the transmission of the size of data to /P22.";
+
+ERR_1113.Diagnostic="Error on data transmission in /P21
+because of a problem with the transmission of data to /P22.";
+
+ERR_1114.Diagnostic="Error on data transmission in /P21
+because of a problem with the response from /P22 after the transmission.";
+
+ERR_1115.Diagnostic="Error on data transmission in /P21
+because of a problem with the reception of the size of data by /P22.";
+
+ERR_1116.Diagnostic="Error on data transmission in /P21
+because the connexion with /P22 is not done.";
+
+ERR_1117.Diagnostic="Error on data transmission in /P21
+because the data of a precedant transmission has not been received by /P22.";
+
+ERR_1118.Diagnostic="Error on data transmission in /P21
+during an intern transmission from /P22.";
+
+ERR_1119.Diagnostic="Error on data transmission in /P21
+because the transmission is not performed or refused by /P22.";
+
+ERR_1120.Diagnostic="Error on data transmission in /P21
+because the way of execution is invalid.";
+
+ERR_1121.Diagnostic="No value for this chracteristic for the selected entities.";
+
+ERR_1122.Diagnostic="No big enough contiguous memory for computation
+Lanczos failed to converge.";                                         
+
+ERR_1123.Diagnostic="Unable to read the temperature environement
+Check your data";
+
+ERR_1124.Request    = "Static solution computation failed !";
+ERR_1124.Diagnostic = "Static case definition is invalid: no pre-processing set found";
+ERR_1124.Advice     = "This error occurs because the static solution does not belong to a valid case anymore.
+Modify or delete the invalid case(s).";
+
+//Attention a la correspondance message NLS/message par defaut (cf. CATEElfComputeCombinedDisp.cpp)
+WARN_1125.Diagnostic = "Combined solutions reference at least one contact property: this can lead to inconsistent results. Check that the combination makes sense !";
+
+// JRA : attention les 2 erreurs suivantes vont de paire (cf. CATElfInputProperty.cpp)
+ERR_1126.Request    = "Computation failed !";
+ERR_1126.Diagnostic = "At least one element is without property.";
+ERR_1126.Advice     = "Check your properties.";
+
+ERR_1127.Diagnostic = "/P01 contains /P02 element(s) without property. Check your properties !";
+
+WARN_1128.Diagnostic = "Elfini acquisition of /P21 : could not acquire charac /P22.
+Possible cause: one of your /P21 points on unmeshed geometry.";
+
+// ------------------------------------------------------
+// ### Syntax errors and warnings for Import V4 -> V5 process ###
+// ------------------------------------------------------
+ERR_1129.Request    = "Bad solver domain found in import file !";
+ERR_1129.Diagnostic = "Solver or analysis types not supported by import highlight.";
+ERR_1129.Advice     = "Choose an import file with CATIA FEA solver and MECA analysis type.";
+
+WARN_1130.Request    = "Invalid element in import file !";
+WARN_1130.Diagnostic = "The /P21 element conversion is not avalaible in import highlight.";
+WARN_1130.Advice     = "Choose an import file without this element and re-run import.";
+
+WARN_1131.Request    = "No material type name found in import file !";
+WARN_1131.Diagnostic = "The type of V4 material entity is empty in import file. 
+It's impossible to import the material characteristics.";
+WARN_1131.Advice     = "Check V4 model to attribute a valid type of material.";
+
+WARN_1132.Request    = "Unknown characteristic in material entity !";
+WARN_1132.Diagnostic = "The /P21 characteristic in /P22 material conversion is not  
+avalaible in import highlight.";
+WARN_1132.Advice     = "Delete this characteristic in V4 model file.";
+
+WARN_1133.Request    = "Unknown property in import file !";
+WARN_1133.Diagnostic = "The /P22 property conversion is not supported for /P21 elements.";
+WARN_1133.Advice     = "Choose another property or delete this one for these elements 
+and re-run import.";
+
+ERR_1134.Request    = "OFFSET_AX conversion failed !";
+ERR_1134.Diagnostic = "The axis referenced in OFFSET_AX characteristic was not found in 
+axis set for /P21 property.";
+ERR_1134.Advice     = "Check the axis type in OFFSET_AX characteristic and re-run import. 
+Only AXIS2, CAXIS and SAXIS axis types are accepted in import 
+highlight for OFFSET_AX characteristic.";
+
+ERR_1135.Request    = "MATER conversion failed !";
+ERR_1135.Diagnostic = "The material referenced in MATER characteristic was not found in 
+material set for /P21 property.";
+ERR_1135.Advice     = "Check the material type in MATER characteristic and re-run import.";
+
+ERR_1136.Request    = "AXIS conversion failed !";
+ERR_1136.Diagnostic = "The axis referenced in AXIS characteristic was not found in 
+axis set for /P21 property.";
+ERR_1136.Advice     = "Check the axis type in AXIS characteristic and re-run import.";
+
+WARN_1137.Request    = "OFFSET_AX conversion skipped !";
+WARN_1137.Diagnostic = "Possible causes: 
+    1.The axis type /P21 referenced in OFFSET_AX characteristic  
+      was not found in axis set for /P22 property.
+    2.The axis type is not consistent with offset operation.";
+WARN_1137.Advice     = "Check the axis type in OFFSET_AX characteristic and re-run import. 
+Only AXIS2, CAXIS and SAXIS axis types are accepted in import 
+highlight for OFFSET_AX characteristic.";
+
+WARN_1138.Request    = "AXIS conversion skipped !";
+WARN_1138.Diagnostic = "The axis type /P21 referenced in AXIS characteristic  
+is not supported by import highlight for /P22 property.";
+WARN_1138.Advice     = "Check the axis type in AXIS characteristic and re-run import. 
+Only AXIS1, TOPO1D, LOCAL2D, LOCAL3D, AXIS2, CAXIS and SAXIS axis types are  
+accepted in import highlight for AXIS characteristic.";
+
+WARN_1139.Request    = "Conversion of Translational or Rotational Stiffness 
+characteristics skipped !";
+WARN_1139.Diagnostic = "The /P21 characteristic conversion is not avalaible 
+in import highlight for /P22 property. Indeed, a beam with spring in the 
+extremities is not supported by CATIA V5 Elfini Solver.";
+WARN_1139.Advice     = "To avoid this message, attribute a null or negative 
+characteristic value in V4 model and re-run import.";
+
+WARN_1140.Request    = "Conversion of Position characteristics skipped !";
+WARN_1140.Diagnostic = "The /P21 characteristic conversion is not avalaible 
+in import highlight for /P22 property. Indeed, CATIA V5 Elfini Solver don't 
+support a variable loading applied in a beam element.";
+WARN_1140.Advice     = "To avoid this message, delete this characteristic in 
+V4 model and re-run import.";
+
+WARN_1141.Request    = "Characteristic not recognized by import highlight !";
+WARN_1141.Diagnostic = "The /P21 characteristic conversion is not supported 
+by import highlight for /P22 property. The /P21 characteristic conversion 
+was skipped.";
+WARN_1141.Advice     = "Check if this characteristic is valid in import 
+context.";
+
+ERR_1142.Request    = "Restraint Set conversion failed !";
+ERR_1142.Diagnostic = "The axis referenced in AXIS characteristic was not found 
+in axis set.";
+ERR_1142.Advice     = "Check the axis referenced in AXIS characteristic and re-run 
+import.Only AXIS2, CAXIS and SAXIS axis types are accepted in restraint set for 
+AXIS characteristic.";
+
+WARN_1143.Request    = "Restraint Set not transferred in V5 solver !";
+WARN_1143.Diagnostic = "The /P21 Restraint Set is not avalaible in import highlight.";
+WARN_1143.Advice     = "Delete this Restraint Set in V4 file or choose an import file 
+without this Restraint Set and re-run import. Only displacement restraint are supported 
+by import highlight.";
+
+ERR_1144.Request    = "Load enforced displacement conversion failed !";
+ERR_1144.Diagnostic = "No restraint set attached to load in DISP load type.";
+ERR_1144.Advice     = "Check the link between restraint set and load DISP in V4 model.";
+
+ERR_1145.Request    = "Load axis conversion failed !";
+ERR_1145.Diagnostic = "The axis referenced in AXIS characteristic was not found 
+in axis set for load /P21 entity.";
+ERR_1145.Advice     = "Check the axis referenced in AXIS characteristic and re-run 
+import.Only AXIS2, CAXIS and SAXIS axis types are accepted in load entity for AXIS 
+characteristic.";
+
+WARN_1146.Request    = "Pressure load conversion skipped !";
+WARN_1146.Diagnostic = "Pressure load characteristics not found.";
+WARN_1146.Advice     = "Check if pressure load entity isn't empty in V4 model.";
+
+WARN_1147.Request    = "Pressure load characteristic not transferred to V5 !";
+WARN_1147.Diagnostic = "The /P21 characteristic conversion is not avalaible in 
+import highlight. Characteristic conversion skipped !";
+WARN_1147.Advice     = "Modify pressure load in V4 model, delete this characteristic 
+and re-run import.";
+
+WARN_1148.Request    = "Thermal load not transferred to V5 !";
+WARN_1148.Diagnostic = "No characteristic found in thermal load entity. Thermal 
+load conversion aborted.";
+WARN_1148.Advice     = "Check characteristics in thermal load entity, fix them and 
+re-run import.";
+
+WARN_1149.Request    = "Load not transferred to V5 !";
+WARN_1149.Diagnostic = "The /P22 load conversion isn't supported by import highlight.";
+WARN_1149.Advice     = "To avoid this message, delete this load in V4 model and 
+re-run import.";
+
+WARN_1150.Request    = "Mass not transferred to V5 !";
+WARN_1150.Diagnostic = "The /P22 mass conversion isn't avalaible in import highlight.";
+WARN_1150.Advice     = "To avoid this message, delete this mass in V4 model and 
+re-run import.";
+
+WARN_1151.Request    = "AXIS conversion skipped !";
+WARN_1151.Diagnostic = "The axis type /P21 referenced in AXIS characteristic  
+is not supported by import highlight for /P22 property.";
+WARN_1151.Advice     = "Check the axis type in AXIS characteristic and re-run import. 
+Only LOCAL2D, LOCAL3D, AXIS2, CAXIS and SAXIS axis types are accepted in import 
+highlight for AXIS orthotrop characteristic. AXIS1 and TOPO1D are avalaible only 
+for beam elements and standard properties.";
+
+WARN_1152.Request    = "LOCAL3D axis conversion skipped !";
+WARN_1152.Diagnostic = "/P21 conversion is not supported for /P22 properties.";
+WARN_1152.Advice     = "Delete LOCAL3D axis type in AXIS characteristic and re-run 
+import. In fact, volume elements with composite or fiber properties are not supported 
+by import highlight. So, LOCAL3D conversion is available only for ORTHOTROP properties.";
+
+ERR_1201.Diagnostic="Uncompatible Mesh between exported CATElfExport file and CATAnalysis.";
+
+WARN_1202.Request    = "Singular solution Set cannot be exported";
+WARN_1202.Diagnostic = "Singular solution Set cannot be exported";
+WARN_1202.Advice     = "Check your solution set in order to remove singularity";
+
+ERR_1203.Request    = "Singular solution Set cannot be assembled";
+ERR_1203.Diagnostic = "Singular solution Set cannot be assembled";
+ERR_1203.Advice     = "Check your solution set in order to remove singularity";
+
+ERR_1204.Request    = "/P cannot be computed.";
+ERR_1204.Diagnostic = "One or more required preprocessing sets are missing.";
+ERR_1204.Advice     = "Create missing preprocessing sets under /P.";
+
+
+ERR_1205.Request    = "/P cannot be computed.";
+ERR_1205.Diagnostic = "Assembled solutions don't have the same number of occurences.";
+ERR_1205.Advice     = "Check the definition /P.";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,273 @@
+RotateGeneralNotification.Title = "Rotate Error";
+RotateGeneralNotification.Text  = "Electrical software error inside the rotate command";
+
+RotateExtrCurveNotification.Title = "Rotate Error";
+RotateExtrCurveNotification.Text  = "The Rotate Command cannot be performed because it is not possible to\n move a bundle segment on external curve within the MultiBranchable of \nthe selected bundle segment.";
+
+ErrorBendNotPossible.Title	 = "Bend not possible.";
+ErrorBendNotPossible.Text	 = "Bend is not possible at this point of the bundle segment. The distance between the bend point and next point on the spline should be greater than 2 times the bend radius.";
+
+ErrorBendNotPossibleAtSupport.Title  = "Bend not possible.";
+ErrorBendNotPossibleAtSupport.Text	 = "Bend is not possible at this point of the bundle segment.";
+
+ErrorBendNotPossibleForThisAngle.Title   = "Bend not possible for this angle.";
+ErrorBendNotPossibleForThisAngle.Text = "Bend of angle greater than 70 degrees is not possible at this point of the bundle segment.";
+
+ErrorCurveBuild.Title   = "Bend Error.";
+ErrorCurveBuild.Text	= "Bend cannot be performed for this angle.";
+
+ErrorMaxLimitOfBend.Title	= "Bend not possible for this angle.";
+ErrorMaxLimitOfBend.Text	= "Bend of angle greater than 90 degrees is not possible at this point of the bundle segment.";
+
+RollGeneralNotification.Title = "Roll Error";
+RollGeneralNotification.Text  = "Electrical software error inside the roll command";
+
+RollProjectionFaliedNotification.Title = "Roll Error";
+RollProjectionFaliedNotification.Text  = "Point Projection on bundle segment FAILED\n Please Indicate other point";
+
+RollProjectionFaliedNotification3Dpoint.Title = "Roll Error";
+RollProjectionFaliedNotification3Dpoint.Text  = "Point Projection on bundle segment FAILED\n Please Select other 3D Point and bundle segment";
+
+RollExtrCurveNotification.Title = "Roll Error";
+RollExtrCurveNotification.Text  = "The Roll Command cannot be performed because it is not possible to\n move a bundle segment on external curve within the MultiBranchable of \nthe selected bundle segment.";
+
+ElecCurveCheckNotification.Title = "Roll Selection Error" ;
+ElecCurveCheckNotification.Text = "Roll Command may not work properly because the underlying curve of the selected \n bundle segment is not an electrical curve but a standard spline." ;
+
+BendRadiusCheckNotification.Title = "Bend Radius Check";
+BendRadiusCheckNotification.Text  = "The roll radius is less than the bend radius of the bundle segment";
+
+RollBNSUpdateCheckNotification.Title = "Roll Error";
+RollBNSUpdateCheckNotification.Text  = "The Roll command cannot be performed because of any of the following reasons :\n- The projected point is too close to a support or a bundle segment extremity \n- The Roll start and end points are too close to each other\n- The Roll Start or End Point is too close to a point on the route of the bundle segment.";
+
+StraightGeneralNotification.Title = "Straighten Error";
+StraightGeneralNotification.Text  = "Electrical software error inside the straight command";
+
+StraightExtrCurveNotification.Title = "Straighten Error";
+StraightExtrCurveNotification.Text  = "The Straight Command cannot be performed because it is not possible to\n move a bundle segment on external curve within the MultiBranchable of \nthe selected bundle segment.";
+
+FlattenGeneralNotification.Title = "Flatten Error";
+FlattenGeneralNotification.Text  = "Electrical software error inside the flatten command";
+
+FlattenLoopNotification.Title = "Flatten Error";
+FlattenLoopNotification.Text  = "Harness cannot be flattenend as it contains loops.\nIt is required to manually unlink some of the bundle segments\n(like /P1)\nin order to remove all the loops before flattening";
+
+FlattenLinkErrorNotification.Title = "Flatten Error";
+FlattenLinkErrorNotification.Text  = "Harness cannot be flattenend as the /P1 \nor some connected bundle segment has possibly bad Electrical Links";
+
+FlattenSelectionNotContinuous.Title = "Flatten Selection Error";
+FlattenSelectionNotContinuous.Text  = "The geometrical bundle or the electrical bundle selected is not completely connected";
+
+FlattenNoElecCurve.Title = "Flatten Selection Error";
+FlattenNoElecCurve.Text  = "One or more bundle segments do not have an electrical curve.\nAdvice: Please update this bundle segment before relaunching the flatten command.";
+
+FlattenExtrCurveNotification.Title = "Flatten Error";
+FlattenExtrCurveNotification.Text  = "The Flatten Command cannot be performed because it is not possible to\n move a bundle segment on external curve within the MultiBranchable of \nthe selected bundle segment.";
+
+DirectionNotification.Title = "Direction Error";
+DirectionNotification.Text  = "Error in selection line";
+
+PlaneNotification.Title = "Plane Error";
+PlaneNotification.Text  = "Error in selection plane";
+
+PlaneSelectionInvalid.Title = "Error";
+PlaneSelectionInvalid.Text  = "The selected plane is forbidden because \nthe bundle segment tangency is normal at this plane ";
+
+FakeLengthGeneralNotification.Title = "Scale Error";
+FakeLengthGeneralNotification.Text  = "Electrical software error inside the scale command";
+
+FakeLengthRangeNotification.Title = "Scale Error";
+FakeLengthRangeNotification.Text  = "The fakeLength value can be only in between the 5% & 10000% of trueLengh";
+
+FakeLengthZeroValueNotification.Title = "Scale Error";
+FakeLengthZeroValueNotification.Text  = "The fakeLength value can not be negative or zero";
+
+FakeLengthExtrCurveNotification.Title = "Scale Error";
+FakeLengthExtrCurveNotification.Text  = "The fakeLength Command cannot be performed because it is not possible to\n move a bundle segment on external curve within the MultiBranchable of \nthe selected bundle segment.";
+
+SynchronizeGeneralNotification.Title = "Synchronize Harness Flattening Error";
+SynchronizeGeneralNotification.Text  = "Electrical software error inside the Synchronize Harness Flattening command";
+
+SynchronizeBNSNotExistNotification.Title = "Synchronize Harness Flattening Error";
+SynchronizeBNSNotExistNotification.Text  = "No bundle segment in the session";
+
+SynchronizeSelectEBNNotification.Title = "Synchronize Harness Flattening Warning";
+SynchronizeSelectEBNNotification.Text = "Select an Electrical Bundle to Synchronize";
+
+SynchronizeParaNotExistNotification.Title = "Synchronize Harness Flattening Error";
+SynchronizeParaNotExistNotification.Text  = "No harness flattening bundle segment in the session";
+
+SynchronizeHarnessNotOpenNotification.Title = "Synchronize Harness Flattening Warning";
+SynchronizeHarnessNotOpenNotification.Text  = "Synchronize command may not work properly because the 3D Harness Model is not Open";
+
+SynchronizeFlattenLinkBrokenNotification.Title = "Synchronize Harness Flattening Error";
+SynchronizeFlattenLinkBrokenNotification.Text  = "Synchronization is not possible because all bundle segments have the Flattening link broken";
+
+SynchronizeBnsNotAddedNotifications.Title = "Synchronize Harness Flattening Warning";
+SynchronizeBnsNotAddedNotifications.Text  = "Bundle Segment associated to the Internal Splice to be added, needs to be added first";
+
+SynchronizeHarnessSavedStructureExposed.Title = "Synchronize Harness Flattening Error";
+SynchronizeHarnessSavedStructureExposed.Text  = "Synchronization cannot be performed on the model because the 3D Harness Geometrical Bundle is saved in structure exposed mode in Enovia";
+
+FormboardNotification.Title = "Scale Error";
+FormboardNotification.Text  = "This bundle segment does not have a scale attribute";
+
+FormboardGeneralNotification.Title = "Electrical Harness Flattening Error";
+FormboardGeneralNotification.Text  = "Electrical software error inside the harness flattening command";
+
+FlattenParametersExistNotification.Title = "Flatten Parameters";
+FlattenParametersExistNotification.Text  = "Flattening parameters already exists in the session";
+
+DefaultXYPlane = " xy plane";
+
+AngleRangeNotification.Title = "Direction Dialog Error";
+AngleRangeNotification.Text  = "Input angle is out of range, please enter a value between -180 and +180";
+
+MinAngleRangeNotification.Title = "Harness Flattening Parameters Error";
+MinAngleRangeNotification.Text  = "Input angle is out of range, please enter a value between 0 and +180";
+
+CATEgfOption                            = " Synchronization Parameters";
+CATEgfGeneral		                        = " Options";
+CATEgfSimulation	                      = " Simulation";
+CATEgfAutomaticFlatten                  = " Automatic flattening on added components";
+CATEgfResetSyncAttributes               = " Reset the synchronization attributes";
+CATEgfAction                            = " Actions";
+CATEgfRemoveAdded                       = " Remove the added components";
+CATEgfAddMissing                        = " Add the missing components";
+CATEgfReplace                           = " Replace by the new reference components";
+CATEgfSyncBNSStructure                  = " Synchronize the bundle segment structure";
+CATEgfSyncAttributes                    = " Synchronize the attributes";
+CATEgfSyncKnowledgeParam                = " Synchronize the Knowledge Parameters";
+CATEgfComponents                        = " Components";
+CATEgfBNS                               = " Bundle segments";
+CATEgfDevices                           = " Devices";
+CATEgfSupports                          = " Supports";
+CATEgfProtections                       = " Protective Coverings";
+CATEgfWires                             = " Wires";
+CATEgfWireGroups                        = " Wire Groups";
+CATEgfInternalSplices                   = " Internal Splices";
+CATEgfYes                               = " YES";
+CATEgfNo                                = " NO";
+
+CATEgfSynched						              	= " The 3D harness design and the flattened harness documents are already synchronized.";
+
+CATEgfRemoveOption                      = " List of Removed Components";
+CATEgfNameGBN                           = " Bundle Name";
+CATEgfBundleSegment                     = " Bundle Segments";
+
+CATEgfMissingComponentOption            = " List of Added Components";
+
+CATEgfReplaceComponentOption            = " List of Replaced Components";
+
+CATEgfBNSStructModifyOption             = " List of Bundle Ssegment Structure Modifications";
+CATEgfNumberModified                    = " Modification Number"; 
+CATEgfNumberBefore                      = " Before";
+CATEgfNumberAfter                       = " After";
+
+CATEgfBNSAttributeModifyOption          = " List of Bundle Segment Attribute Modifications";
+CATEgfBNSName                           = " Name";
+CATEgfRefDesignator                     = " Reference Designator";
+CATEgfLength                            = " Length";
+CATEgfDiameter                          = " Diameter";
+CATEgfBendRadius                        = " Bend Radius";
+CATEgfSepCode                           = " Separation Code";
+CATEgfColor                             = " Color";
+CATEgfIfMoved                           = " If Moved";
+
+CATEgfDevicesAttributeModifyOption      = " List of Device Attribute Modifications";
+CATEgfInstName                          = " Instance Name";
+CATEgfSubType                           = " Sub Type";
+CATEgfRefPartNum                        = " Reference Part Number";
+CATEgfPartNo                            = " Part Number";
+
+CATEgfSupportsAttributeModifyOption     = " List of Support Attribute Modifications";
+CATEgfSupportBundleSegment              = " Support BundleSegment";
+CATEgfSupportPosition                   = " Support Position";
+CATEgfSupportUnlinked                   = " Support Not Linked";
+
+CATEgfProtectionsAttributeModifyOption  = " List of Protective Covering Attribute Modifications";
+CATEgfLayerNo                           = " Layer Number";
+CATEgfTapingAngle                       = " Taping Angle";
+CATEgfOverlapping                       = " Overlapping";
+CATEgfInnerDiameter                     = " Inner Diameter";
+CATEgfWidth                             = " Width";
+CATEgfThickness                         = " Thickness";
+CATEgfLinearMass                        = " Linear Mass";
+CATEgfWireLengthCoeff                   = " Wire Length Coefficient" ;
+CATEgfLineType                          = " Line Type";
+
+CATEgfDesignTable                       = " Design Table Configuration";
+CATEgfDesignTableNamesDiffer            = " The design table names differ";
+
+CATEgfWiresAttributeModifyOption        = " List of Wire Attribute Modifications";
+CATEgfWireRoute                         = " Route Modified";
+
+CATEgfWireGroupsAttributeModifyOption   = " List of Wire Group Attribute Modifications";
+CATEgfWireGroupRoute                    = " Route Modified";
+
+CATEgfInternalSplicesAttributeModifyOption  = " List of Internal Splice Attribute Modifications";
+CATEgfOffset                            = " Internal Splice Offset";
+
+CATEgfKnowledgeParametersModifyOption   = " List of Knowledge Parameters Modifications";
+CATEgfParamName                         = " Parameter Name";
+CATEgfParamFlattenValue                 = " Parameter Flatten Value";
+CATEgfParamHarnessValue                 = " Parameter Harness Value";
+CATEgfErrorParamNotFound                = " Error - Parameter Not Found";
+
+CATEgfRelationModifyOption              = " List of New Covered Elements" ;
+CATEgfNewCoveredElement                 = " New Covered Element" ;
+CATEgfOldCoveredElement                 = " Old Covered Element" ;
+
+CATEgfErrorElementOption                = " List of Elements Showing An Error";
+CATEgfErrorMessage                      = " Error Message";
+CATEgfLinkBroken                        = " The 3DF and 3DH link is broken";
+CATEgfErrorAnalyse                      = " Error during the Analyze";
+CATEgfErrorRemove                       = " Error during the Remove Component";
+CATEgfErrorBnsStructModify              = " Error during the Bundle Segment Structure";
+CATEgfErrorAdd                          = " Error during the Add Component";
+CATEgfErrorAttrAccess                   = " Error during the Attribute Access";
+CATEgfErrorReplace                      = " Error during Replace";
+CATEgfErrorAttrSyncBns                  = " Error during Bundle Segment Attribute Synchronization - Different Bundle Segment Structure"; 
+CATEgfErrorAttrSyncLinkFailed           = " Error during Attribute Synchronization - Internal link failed to 3D harness flattening from 3D harness design";
+CATEgfErrorNumSupports                  = " Error during Bundle Segment Attribute Synchronization - Different Number of Supports";
+CATEgfErrorSupportConfiguration         = " Error during Bundle Segment Attribute Synchronization - Different Supports Configuration";
+CATEgfErrorUnSavedDocument              = " Error during Add Compoment - The original component document is not saved";
+CATEgfErrorWireRouteSynchronization     = " Error during Wire Route Synchronization";
+CATEgfErrorWireGroupRouteSynchronization= " Error during Wire Group Route Synchronization";
+CATEgfErrorProtectionDisconnectedCurves = " Error during Protective Covering Synchronization - Underlying Curves are not connected";
+CATEgfErrorProtectionCurvesNotTangent   = " Error during Protective Covering Synchronization - Underlying Curves are not tangential";
+CATEgfErrorDeviceMove                   = " Error during Device Move";
+CATEgfErrorSegmentMove                  = " Error during Bundle Segment Move";
+CATEgfErrorWireRouteRead                = " Error while reading the Wire Route, so check it in the 3D harness data";
+CATEgfErrorWireGroupRouteRead           = " Error while reading the Wire Group Route, so check it in the 3D harness data";
+CATEgfErrorSyncKnowledgeParam           = " Error during Knowledge Parameters Synchronize";
+CATEgfErrorBNSInverseSense              = " Synchronze may have problems because the sense of Bundle Segment Curve is inverted";
+CATEgfErrorSyncDeviceMoveBNSInverted    = " Error during Device Move - Target Bundle Segment is inverted";
+CATEgfErrorKnowledgeParamRelation       = " Error during Knowledge Parameters Synchronize - Impossible to synchronize because the parameter contains a relation";
+CATEgfErrorKnowledgeParamType           = " Error during Knowledge Parameters Synchronize - Parameter doesn't have the same type";
+CATEgfErrorSyncRelation                 = " Error during Part To Part Relation Synchronize";
+CATEgfErrorSyncRelationIndivSelection   = " Error during Part To Part Relation Synchronize - Individual Selection mode, Covered Object not selected";
+CATEgfErrorSyncRelationElementOption    = " Error during Part To Part Relation Synchronize - Covered Element Option is OFF";
+CATEgfErrorLinkSupport                  = " Error during routing the bundle segment through the added support";
+CATEgfErrorBendRadiusOne                = " Synchronization of Bend radius leads to curve update error. So, the Bend radius value is not synchronized";
+CATEgfErrorBendRadiusTwo                = " Synchronization of attributes leads to curve update failure. So, the Bend radius value is set to 1mm to avoid Update error";
+CATEgfErrorBendRadiusThree              = " Update error after synchronization of attributes";
+CATEgfErrorCannotLinkSupportOverExtrmty = " Support can not be linked to bundle segment because, a branch point is coming inside the limits of support" ;
+CATEgfUndefinedError                    = " Undefined Error";
+
+CATEgfPtrNULL                           = " Pointer NULL";
+CATEgfFailedToRead                      = " Failed To Read";
+CATEgfAttributeUnset                    = " Attribute Unset";
+CATEgfAttributeNotAvailable             = " Not Available";
+
+CATEgfChooseFolder                      = " Select Folder for Html Report";
+
+CATEgfHtmlPathNotExistNotification.Title = "Synchronize Report Warning";
+CATEgfHtmlPathNotExistNotification.Text  = "Select a path inside the tool option if you want to generate the report";
+
+CATEgfODTCheckNotification.Title = "ODT Test Message";
+CATEgfODTCheckNotification.Text  = "Click OK";
+CATEgfUnconnectedBranchList      =  "List of Unconnected Branchables";
+FlattenFixedPoint				         = "Fixed Point";
+FlattenMobilePoint				       = "Select Network"; 
+

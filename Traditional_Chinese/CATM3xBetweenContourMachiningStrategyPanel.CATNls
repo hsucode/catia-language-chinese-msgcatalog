@@ -1,0 +1,28 @@
+Title = "加工中";
+
+CutStrategy = "導引方式";
+
+M3xMachiningMode = "刀具路徑形式";
+M3xMachiningMode.LongHelp = "指定刀具移動. 刀具移動形式可以是:
+- 單向下一個: 連續的刀具路徑均為相同的方向
+             最後一刀與下一刀為斜線進刀. 
+- 單向相同: 連續的刀具路徑均為相同的方向
+           且每一次均回至同路徑的第一點
+           再連至下一路徑的第一點. 
+- 來回: 連續的刀具路徑為方向相反. ";
+
+MachiningTolerance = "加工精度";
+MachiningTolerance.LongHelp = "指定理論和計算間刀具路徑間的最大允許距離.";
+M3xWithMaxDiscretization.LongHelp = "指定最大不連續";
+
+M3xReverseTP = "反向刀具路徑";
+M3xReverseTP.LongHelp = "由另一側開始刀具路徑";
+
+M3xWithMaxDiscretization = "最大不連續";
+M3xWithMaxDiscretization.LongHelp = "在平順區域增加不連續點";
+
+M3xStepDiscretization = "間隔";
+M3xStepDiscretization.LongHelp = "指定最大不連續值";
+
+M3xDistributionMode = "分配模式";
+M3xDistributionMode.LongHelp = "指定點的分配模式";

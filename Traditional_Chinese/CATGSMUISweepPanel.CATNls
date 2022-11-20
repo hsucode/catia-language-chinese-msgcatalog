@@ -1,0 +1,543 @@
+//--------------------------------------------
+// Resource file for CATGSMUISweepPanel class
+// En_US
+//--------------------------------------------
+
+// General texts
+//---------------------------------------------------------------
+TitleSURFACE            ="掃掠曲面定義";
+TitleVOLUME		="掃掠體積定義";
+
+SweepTypeUnspec="明確";
+SweepTypeSegment="線";
+SweepTypeCircle="圓";
+SweepTypeConic="圓錐";
+
+FraMenuBut.LabelList.Title="斷面形式: ";
+FraMenuBut.LabelList.LongHelp="表列您可使用的斷面形式.";
+FraMenuBut.LabelMini.Title="明確";
+FraMenuBut.FraButtons.MenuBExpl.ShortHelp="明確";
+FraMenuBut.FraButtons.MenuBExpl.LongHelp="以明確的使用者定義斷面來建立掃掠曲面.";
+FraMenuBut.FraButtons.MenuBCirc.ShortHelp="圓";
+FraMenuBut.FraButtons.MenuBCirc.LongHelp="以隱含的弧斷面來建立掃掠曲面.";
+FraMenuBut.FraButtons.MenuBLine.ShortHelp="線";
+FraMenuBut.FraButtons.MenuBLine.LongHelp="以隱含的線斷面來建立掃掠曲面.";
+FraMenuBut.FraButtons.MenuBConi.ShortHelp="圓錐";
+FraMenuBut.FraButtons.MenuBConi.LongHelp="以隱含的圓錐斷面來建立掃掠曲面.";
+
+FraMenuButVol.LabelList.Title="斷面型式: ";
+FraMenuButVol.LabelList.LongHelp="列出可用來掃掠的斷面.";
+FraMenuButVol.LabelMini.Title="明確";
+FraMenuButVol.FraButtons.MenuBExpl.ShortHelp="明確";
+FraMenuButVol.FraButtons.MenuBExpl.LongHelp="建立使用者定義的斷面來掃掠體積.";
+FraMenuButVol.FraButtons.MenuBCirc.ShortHelp="圓";
+FraMenuButVol.FraButtons.MenuBCirc.LongHelp="建立圓弧定義的斷面來掃掠體積.";
+FraMenuButVol.FraButtons.MenuBLine.ShortHelp="線";
+FraMenuButVol.FraButtons.MenuBLine.LongHelp="以推拔方向建立掃掠體積";
+
+FraSweep.Illustration.LongHelp="目前掃掠說明.";
+
+ChaineDefaut="預設";
+ChaineProjection="投影";
+ChaineMeanPlane="預設 (平均平面)";
+
+// Sweep unspec
+//---------------------------------------------------------------
+FraSweep.FraMandatory.LabProfile.Title="斷面: ";
+FraSweep.FraMandatory.LabProfile.LongHelp="指出要掃掠的斷面.";
+FraSweep.FraMandatory.Profile.LongHelp="指出要掃掠的斷面.";
+FraSweep.FraMandatory.LabGuideCurve.Title="導引曲線: ";
+FraSweep.FraMandatory.LabGuideCurve.LongHelp="指出第一個導引曲線.";
+FraSweep.FraMandatory.GuideCurve.LongHelp="指出第一個導引曲線.";
+
+FraSweep.FraOptional.ListeOnglet.Onglet1.Title="參考";
+FraSweep.FraOptional.ListeOnglet.Onglet1.LongHelp="允許您指定參考曲面和相對角度來控制斷面的位置.";
+
+FraSweep.FraOptional.ListeOnglet.Onglet1.SubFrameElt.LabReference.Title="曲面: ";
+FraSweep.FraOptional.ListeOnglet.Onglet1.SubFrameElt.LabReference.LongHelp="允許您指定參考曲面來控制斷面的位置,
+如未指定曲面, 預設為通過脊椎線的平面.";
+
+FraSweep.FraOptional.ListeOnglet.Onglet1.SubFrameElt.Reference.LongHelp="允許您指定參考曲面來控制斷面的位置,
+如未指定曲面, 預設為通過脊椎線的平面.";
+
+FraSweep.FraOptional.ListeOnglet.Onglet1.SubFrameLit.LabRefAngle.Title="角度: ";
+FraSweep.FraOptional.ListeOnglet.Onglet1.SubFrameLit.LabRefAngle.LongHelp="允許您指定相對角度來控制斷面的位置.";
+FraSweep.FraOptional.ListeOnglet.Onglet1.SubFrameLit.FraRefAngle.EnglobingFrame.IntermediateFrame.Spinner.Title="角度";
+FraSweep.FraOptional.ListeOnglet.Onglet1.SubFrameLit.LawButton.Title="Law...";
+
+FraSweep.FraOptional.ListeOnglet.Onglet2.Title="第二導引曲線";
+FraSweep.FraOptional.ListeOnglet.Onglet2.LongHelp="允許您指定第二導引曲線";
+FraSweep.FraOptional.ListeOnglet.Onglet2.LabGuideCurve2.Title="第二導引曲線: ";
+FraSweep.FraOptional.ListeOnglet.Onglet2.LabGuideCurve2.LongHelp="指定第二導引曲線";
+FraSweep.FraOptional.ListeOnglet.Onglet2.GuideCurve2.LongHelp="指定第二導引曲線";
+FraSweep.FraOptional.ListeOnglet.Onglet2.LabelDirComp.Title="定位型式: ";
+FraSweep.FraOptional.ListeOnglet.Onglet2.LabelDirComp.LongHelp="對雙導引的明確曲面, 它允許指定
+不同型式的定位選項.";
+SweepExpBirailPoints = "兩個點";
+SweepExpBirailPtDir = "點和方向";
+FraSweep.FraOptional.ListeOnglet.Onglet2.LabFittingPoint1.Title="第一導引曲線定位點: ";
+FraSweep.FraOptional.ListeOnglet.Onglet2.LabFittingPoint1.LongHelp="指定斷面的第一定位點.";
+FraSweep.FraOptional.ListeOnglet.Onglet2.FittingPoint1.LongHelp="指定斷面的第一定位點.";
+FraSweep.FraOptional.ListeOnglet.Onglet2.LabFittingPoint2.Title="第二導引曲線定位點: ";
+FraSweep.FraOptional.ListeOnglet.Onglet2.LabFittingPoint2.LongHelp="指定斷面的第二定位點.";
+FraSweep.FraOptional.ListeOnglet.Onglet2.FittingPoint2.LongHelp="指定斷面的第二定位點.";
+FraSweep.FraOptional.ListeOnglet.Onglet2.LabXAxisDirection.Title="定位方向: ";
+FraSweep.FraOptional.ListeOnglet.Onglet2.LabXAxisDirection.LongHelp="指定斷面的定位方向.";
+FraSweep.FraOptional.ListeOnglet.Onglet2.FraDirection.LongHelp="指定斷面的定位方向.";
+
+FraSweep.FraOptional.FrameSpine.LabSpine.Title="脊椎線: ";
+FraSweep.FraOptional.FrameSpine.LabSpine.LongHelp="指定脊椎曲線, (如果您使用與第一導引曲線不同的脊椎線).";
+FraSweep.FraOptional.FrameSpine.Spine.LongHelp="指定脊椎曲線, (如果您使用與第一導引曲線不同的脊椎線).";
+
+FraSweep.FraOptional.FrameSpine.LabRelimiter1.Title="  截斷元素 1: ";
+FraSweep.FraOptional.FrameSpine.LabRelimiter1.LongHelp="指定用來截斷脊椎線的第一個元素 (點或平面) 然後是掃掠曲面.";
+FraSweep.FraOptional.FrameSpine.Relimiter1.LongHelp="指定用來截斷脊椎線的第一個元素 (點或平面) 然後是掃掠曲面.";
+
+FraSweep.FraOptional.FrameSpine.LabRelimiter2.Title="  截斷元素 2: ";
+FraSweep.FraOptional.FrameSpine.LabRelimiter2.LongHelp="指定用來截斷脊椎線的第二個元素 (點或平面) 然後是掃掠曲面.";
+FraSweep.FraOptional.FrameSpine.Relimiter2.LongHelp="指定用來截斷脊椎線的第二個元素 (點或平面) 然後是掃掠曲面.";
+
+FraSweep.FraOptional.FrameTwist.SepStart.TitleLabel.Title="扭曲區域管理 ";
+FraSweep.FraOptional.FrameTwist.TwistBut.Title="預視時移除刀具";
+FraSweep.FraOptional.FrameTwist.TwistBut.LongHelp="允許以扭曲區域管理自動移除新增刀具.";
+
+// GSD_PULLINGDIREXPLICIT
+//---------------------------------------------------------------
+FraSweep.FraMandatory.FraComboExpl.LabComboExpl.Title="次集合: ";
+FraSweep.FraMandatory.FraComboExpl.LabComboExpl.LongHelp="表列使用明確斷面的掃掠曲面次集合.";
+FraSweep.FraMandatory.FraComboExpl.ComboExpl.LongHelp="表列使用明確斷面的掃掠曲面次集合.";
+
+FraSweep.FraMandatory.FraComboExplVol.LabComboExplVol.Title="次型式: ";
+FraSweep.FraMandatory.FraComboExplVol.LabComboExplVol.LongHelp="使用明確斷面表列掃掠體積次型式.";
+FraSweep.FraMandatory.FraComboExplVol.ComboExplVol.LongHelp="使用明確斷面表列掃掠體積次型式.";
+
+SweepExplicit1="以參考曲面";
+SweepExplicit2="以兩導引曲線 ";
+SweepExplicit3="以拉伸方向";
+
+FraSweep.FraMandatory.SubFrameElt.LabProfile.Title="斷面: ";
+FraSweep.FraMandatory.SubFrameElt.LabProfile.LongHelp="指定要掃掠的斷面.";
+FraSweep.FraMandatory.SubFrameElt.Profile.LongHelp="指定要掃掠的斷面.";
+
+FraSweep.FraMandatory.SubFrameElt.LabGuideCurve.Title="導引曲線: ";
+FraSweep.FraMandatory.SubFrameElt.LabGuideCurve.LongHelp="指定導引曲線.";
+FraSweep.FraMandatory.SubFrameElt.GuideCurve.LongHelp="指定導引曲線.";
+FraSweep.FraMandatory.SubFrameElt.LabGuideCurve1.Title="導引曲線 1: ";
+FraSweep.FraMandatory.SubFrameElt.LabGuideCurve1.LongHelp="指定第一導引曲線.";
+FraSweep.FraMandatory.SubFrameElt.GuideCurve1.LongHelp="指定第一導引曲線.";
+
+FraSweep.FraMandatory.SubFrameElt.LabReference.Title="曲面: ";
+FraSweep.FraMandatory.SubFrameElt.LabReference.LongHelp="指定在掃掠時
+用來控制斷面位置的參考曲面.
+如未指定曲面, 預設為通過脊椎線的平均平面.";
+FraSweep.FraMandatory.SubFrameElt.Reference.LongHelp="指定在掃掠時
+用來控制斷面位置的參考曲面.
+如未指定曲面, 預設為通過脊椎線的平均平面.";
+FraSweep.FraMandatory.SubFrameLit.LabRefAngle.Title="角度: ";
+FraSweep.FraMandatory.SubFrameLit.LabRefAngle.LongHelp="指定在掃掠時
+用來控制斷面位置的角度.";
+FraSweep.FraMandatory.SubFrameLit.FraRefAngle.EnglobingFrame.IntermediateFrame.Spinner.Title="角度";
+FraSweep.FraMandatory.SubFrameLit.LawButton.Title="Law...";
+
+FraSweep.FraMandatory.SubFrameElt.LabGuideCurve2.Title="導引曲線 2: ";
+FraSweep.FraMandatory.SubFrameElt.LabGuideCurve2.LongHelp="指定第二導引曲線.";
+FraSweep.FraMandatory.SubFrameElt.GuideCurve2.LongHelp="指定第二導引曲線.";
+FraSweep.FraMandatory.SubFrameElt.LabelDirComp.Title="定位型式: ";
+FraSweep.FraMandatory.SubFrameElt.LabelDirComp.LongHelp="對兩導引的明確掃掠曲面而言,它允許指定
+不同型式的定位選項.";
+FraSweep.FraMandatory.SubFrameElt.LabFittingPoint1.Title="- 定位點 1: ";
+//FraSweep.FraMandatory.SubFrameElt.LabFittingPoint1.LongHelp="指定斷面上的第一導引點.";
+//FraSweep.FraMandatory.SubFrameElt.FittingPoint1.LongHelp="指定斷面上的第一導引點.";
+FraSweep.FraMandatory.SubFrameElt.LabFittingPoint2.Title="- 定位點 2: ";
+//FraSweep.FraMandatory.SubFrameElt.LabFittingPoint2.LongHelp="指定斷面上的第二導引點.";
+//FraSweep.FraMandatory.SubFrameElt.FittingPoint2.LongHelp="指定斷面上的第二導引點.";
+FraSweep.FraMandatory.SubFrameElt.LabXAxisDirection.Title="- 定位方向: ";
+//FraSweep.FraMandatory.SubFrameElt.LabXAxisDirection.LongHelp="指定斷面上的定位方向.";
+//FraSweep.FraMandatory.SubFrameElt.FraDirection.LongHelp="指定斷面上的定位方向.";
+
+FittingPoint1LongHelp="指定斷面上的第一導引點.";
+FittingPoint2LongHelp="指定斷面上的第二導引點.";
+LabXAxisDirectionLongHelp="指定斷面上的定位方向.";
+//Automated Anchor Elements Computation
+Computed = " 已計算 ";
+AutoFittingPoint1LongHelp="指定斷面上的第一導引點.\n 預設為斷面平面和第一導引曲線的相交點.";
+AutoFittingPoint2LongHelp="指定斷面上的第二導引點. \n 預設為經過第一定位點並垂直脊椎線的平面與第二導引曲線的相交點.";
+AutoLabXAxisDirectionLongHelp="指定斷面上的定位方向. 預設方向為計算斷面平面和導引曲線之間.";
+
+FraSweep.FraMandatory.SubFrameElt.LabPullingDir.Title="方向: ";
+FraSweep.FraMandatory.SubFrameElt.LabPullingDir.LongHelp="指定在掃掠時
+用來控制斷面位置的拉伸方向.";
+
+FraSweep.FraOptional.GuideProjBut.Title="投影導引曲線為脊椎線";
+FraSweep.FraOptional.GuideProjBut.LongHelp="允許投影導引曲線至參考曲面
+如果是平面或平面垂直拉伸方向
+如果情形仍存在則使用投影為脊椎線.";
+
+// Tolerant sweep : explicite, lineaire, circulaire et conique
+//---------------------------------------------------------------
+FraSweep.FraOptional.FrameSmooth.SepStart.TitleLabel.Title="平順掃掠";
+FraSweep.FraOptional.FrameSmooth.FrameLayoutAngle.SmoothAngleButton.Title="角度修正: ";
+FraSweep.FraOptional.FrameSmooth.FrameLayoutAngle.SmoothAngleButton.LongHelp="允許在指定角度下
+移除不連續來執行平順掃掠(在移動框架和相切網格).";
+FraSweep.FraOptional.FrameSmooth.FrameLayoutAngle.FraLittSmoothAngle.EnglobingFrame.IntermediateFrame.Spinner.Title="平順角度";
+FraSweep.FraOptional.FrameSmooth.FrameLayoutDev.SmoothDevButton.Title="導引線變異: ";
+FraSweep.FraOptional.FrameSmooth.FrameLayoutDev.SmoothDevButton.LongHelp="允許以導引曲線中心在提供的半徑內
+所構成的圓徑內變化執行掃掠動作.";
+FraSweep.FraOptional.FrameSmooth.FrameLayoutDev.FraLittSmoothDev.EnglobingFrame.IntermediateFrame.Spinner.Title="平順變異";
+
+// Sweep explicite : positionnement
+//---------------------------------------------------------------
+FraSweep.FraOptional.NotifFrame.StartSeparator.TitleLabel.Title="定位參數 ";
+
+FraSweep.FraOptional.NotifFrame.FraButton.SelPosButton.Title="斷面定位";
+FraSweep.FraOptional.NotifFrame.FraButton.SelPosButton.LongHelp="使用位置斷面預設.
+在第一個掃掠平面手動定位斷面,
+勾選功能和調整幾何或修改定位參數.";
+LabelShowPosParam="顯示參數 >>";
+LabelHidePosParam="隱藏參數 <<";
+
+FraSweep.FraOptional.NotifFrame.AdvFrame.LabelExplPos1.Title="第一掃面的原點";
+
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraOriginMain.RadBOrigin1.Title="原點座標";
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraOriginMain.RadBOrigin1.LongHelp="以第一掃掠平面上的座標來標示定位軸系的原點.";
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraOriginMain.FraOrigin1.LabelLittX.Title="X: ";
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraOriginMain.FraOrigin1.FraLittX.EnglobingFrame.IntermediateFrame.Spinner.Title="X";
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraOriginMain.FraOrigin1.LabelLittY.Title="Y: ";
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraOriginMain.FraOrigin1.FraLittY.EnglobingFrame.IntermediateFrame.Spinner.Title="Y";
+
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraOriginMain.RadBOrigin2.Title="原點選擇";
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraOriginMain.RadBOrigin2.LongHelp="以第一掃掠平面上的點選來標示定位軸系的原點.";
+
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraOriginMain.FraOrigin2.LabOriginP1.Title="點: ";
+
+FraSweep.FraOptional.NotifFrame.AdvFrame.SepAngleDir1.TitleLabel.Title="第一掃面的軸";
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraDirection.RadBDirection1.Title="旋轉角度";
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraDirection.RadBDirection1.LongHelp="由原點的原始位置來旋轉定位軸系.";
+
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraDirection.FraDirection1.FraLittAngle.EnglobingFrame.IntermediateFrame.Spinner.Title="角度";
+
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraDirection.RadBDirection2.Title="選擇第一軸";
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraDirection.RadBDirection2.LongHelp="以選擇線或分量來標示定位軸的 X 軸.";
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraDirection.FraDirection2.LabDirection.Title="方向: ";
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraDirection.FraDirection2.LabDirection.LongHelp="以選擇線或分量來標示定位軸的 X 軸.";
+
+FraSweep.FraOptional.NotifFrame.AdvFrame.SwapXAxisButton.Title="X 軸倒置";
+FraSweep.FraOptional.NotifFrame.AdvFrame.SwapXAxisButton.LongHelp="逆轉 X 軸方向.";
+FraSweep.FraOptional.NotifFrame.AdvFrame.SwapYAxisButton.Title="Y 軸倒置";
+FraSweep.FraOptional.NotifFrame.AdvFrame.SwapYAxisButton.LongHelp="逆轉 Y 軸方向.";
+
+FraSweep.FraOptional.NotifFrame.AdvFrame.SwapXAxisButtonBirail.Title="斷面端點倒置";
+FraSweep.FraOptional.NotifFrame.AdvFrame.SwapXAxisButtonBirail.LongHelp="逆轉導引曲線的斷面終點.";
+FraSweep.FraOptional.NotifFrame.AdvFrame.SwapYAxisButtonBirail.Title="垂直方向倒置";
+FraSweep.FraOptional.NotifFrame.AdvFrame.SwapYAxisButtonBirail.LongHelp="逆轉斷面的垂直方向.";
+
+FraSweep.FraOptional.NotifFrame.AdvFrame.SepSdAxisSyst2.TitleLabel.Title="斷面定位點";
+
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraOriginSd.LabOriginP2.Title="點: ";
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraOriginSd.LabOriginP2.LongHelp="指出鏈結至斷面的軸系原點.";
+FraSweep.FraOptionalNotifFrame.AdvFrame.FraOriginSd.SelOriginP2.LongHelp="指出鏈結至斷面的軸系原點.";
+
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraOriginSd.LabDirection2.Title="X 軸方向: ";
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraOriginSd.LabDirection2.LongHelp="指定斷面軸系的 X 方向.";
+FraSweep.FraOptional.NotifFrame.AdvFrame.FraOriginSd.FraDirection.LongHelp="指定斷面軸系的原點.";
+
+// Sweep segment
+//---------------------------------------------------------------
+FraSweep.FraLayout1.FraComboLine.LabelComboLine.Title="次形式: ";
+FraSweep.FraLayout1.FraComboLine.LabelComboLine.LongHelp="表列使用線性斷面的掃掠次形式曲面.";
+FraSweep.FraLayout1.FraComboLine.ComboLine.LongHelp="表列使用線性斷面的掃掠次形式曲面.";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.FraDirection.LongHelp="指定決定方向的線或 \n 決定方向的平面垂直方向. \n 您也可使用右鍵輸入 X, Y, Z 的分量來決定方向.";
+
+SweepLine1="兩極限";
+SweepLine2="極限和中間";
+SweepLine3="和參考曲面";
+SweepLine4="和參考曲線";
+SweepLine5="和相切曲面";
+SweepLine6="與脫模方向";
+SweepLine7="以雙切曲面";
+
+// Good for sweep circle
+FraSweep.FraLayout1.FraMandatory.Title="代理元素";
+
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabGuide.Title="導引曲線 : ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabGuide.LongHelp="指定導引曲線.";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.Guide.LongHelp="指定導引曲線.";
+
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabGuideCurve1.Title="導引曲線1: ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabGuideCurve1.LongHelp="指定導引曲線1:";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.GuideCurve1.LongHelp="指定導引曲線1:";
+
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabGuideCurve2.Title="導引曲線2: ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabGuideCurve2.LongHelp="指定導引曲線2:";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.GuideCurve2.LongHelp="指定導引曲線2:";
+
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabCrvRef.Title="參考曲線: ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabCrvRef.LongHelp="指定用來定義角度的參考曲線.";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.CrvRef.LongHelp="指定用來定義角度的參考曲線.";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabSurfRef.Title="參考曲面: ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabSurfRef.LongHelp="指定用來定義角度的參考曲面.";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.SurfRef.LongHelp="指定用來定義角度的參考曲面.";
+
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabSurfTan.Title="相切曲面: ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabSurfTan.LongHelp="指定結果將是相切的曲面.";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.SurfTan.LongHelp="指定結果將是相切的曲面.";
+
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabDirection.Title="脫模方向: ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabDirection.LongHelp="指定脫模方向: 線, 平面或座標.";
+
+FraSweep.FraLayout1.FraMandatory.FrameDraftMode.LabDraftMode.Title="脫模計算模式: ";
+FraSweep.FraLayout1.FraMandatory.FrameDraftMode.LabDraftMode.LongHelp="指定脫模計算模式.";
+FraSweep.FraLayout1.FraMandatory.FrameDraftMode.RadBModeSquare.Title="方形";
+FraSweep.FraLayout1.FraMandatory.FrameDraftMode.RadBModeSquare.LongHelp="指定脫模方形計算模式.";
+FraSweep.FraLayout1.FraMandatory.FrameDraftMode.RadBModeCone.Title="圓椎";
+FraSweep.FraLayout1.FraMandatory.FrameDraftMode.RadBModeCone.LongHelp="指定脫模圓椎形計算模式.";
+
+FraSweep.FraLayout1.FraMandatory.FraLittLayout0.LabRefAngle.Title="角度: ";
+FraSweep.FraLayout1.FraMandatory.FraLittLayout0.FraRefAngle.EnglobingFrame.IntermediateFrame.Spinner.Title="角度";
+FraSweep.FraLayout1.FraMandatory.FraLittLayout0.LawButton.Title="Law...";
+
+FraSweep.FraLayout1.FraMandatory.FraLittLayout1.LabLength1.Title="長度 1: ";
+FraSweep.FraLayout1.FraMandatory.FraLittLayout1.FraLength1.EnglobingFrame.IntermediateFrame.Spinner.Title="長度 1";
+FraSweep.FraLayout1.FraMandatory.FraLittLayout1.LawButton1.Title="Law...";
+FraSweep.FraLayout1.FraMandatory.FraLittLayout1.LabLength2.Title="長度 2: ";
+FraSweep.FraLayout1.FraMandatory.FraLittLayout1.FraLength2.EnglobingFrame.IntermediateFrame.Spinner.Title="長度 2";
+FraSweep.FraLayout1.FraMandatory.FraLittLayout1.LawButton2.Title="Law...";
+
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabSpine.Title="脊椎線: ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabSpine.LongHelp="指定脊椎曲線.";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.Spine.LongHelp="指定脊椎曲線.";
+
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabSurfTan1.Title="第一相切曲面: ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabSurfTan1.LongHelp="指定第一相切曲面.";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.SurfTan1.LongHelp="指定第一相切曲面.";
+
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabSurfTan2.Title="第二相切曲面: ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabSurfTan2.LongHelp="指定第二相切曲面.";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.SurfTan2.LongHelp="指定第二相切曲面.";
+
+// Good for sweep circle
+FraSweep.FraOptional.Title="可選擇元素";
+
+FraSweep.FraOptional.FraSpineLayout.LabSpine.Title="脊椎線: ";
+FraSweep.FraOptional.FraSpineLayout.LabSpine.LongHelp="指定脊椎線, (如果您使用與第一導引曲線不同的脊椎線).";
+FraSweep.FraOptional.FraSpineLayout.Spine.LongHelp="指定脊椎線, (如果您使用與第一導引曲線不同的脊椎線).";
+
+FraSweep.FraOptional.FraSpineLayout.LabRelimiter1.Title="  截斷元素 1: ";
+FraSweep.FraOptional.FraSpineLayout.LabRelimiter1.LongHelp="指定用來截斷脊椎線的第一個元素 (點或平面) 然後是掃掠曲面.";
+FraSweep.FraOptional.FraSpineLayout.Relimiter1.LongHelp="指定用來截斷脊椎線的第一個元素 (點或平面) 然後是掃掠曲面.";
+
+FraSweep.FraOptional.FraSpineLayout.LabRelimiter2.Title="  截斷元素 2: ";
+FraSweep.FraOptional.FraSpineLayout.LabRelimiter2.LongHelp="指定用來截斷脊椎線的第二個元素 (點或平面) 然後是掃掠曲面.";
+FraSweep.FraOptional.FraSpineLayout.Relimiter2.LongHelp="指定用來截斷脊椎線的第二個元素 (點或平面) 然後是掃掠曲面.";
+
+FraSweep.FraOptional.SegmentButton.Title="第二條曲線當中間曲線";
+FraSweep.FraOptional.SegmentButton.LongHelp="指定第二個導引曲線當中間曲線.
+掃掠曲面的每一個掃掠平面間寬度是導引和中間曲線間距離的兩倍.";
+
+FraSweep.FraOptional.TrimOptionButton.Title="以相切曲面來修剪";
+FraSweep.FraOptional.TrimOptionButton.LongHelp="以相切曲面來修剪";
+
+FraSweep.FraOptional.TrimOptionButton1.Title="以第一相切曲面來修剪";
+FraSweep.FraOptional.TrimOptionButton1.LongHelp="以第一相切曲面來修剪";
+
+FraSweep.FraOptional.TrimOptionButton2.Title="以第二相切曲面來修剪";
+FraSweep.FraOptional.TrimOptionButton2.LongHelp="以第二相切曲面來修剪";
+
+FraSweep.FraOptional.SolutionSelectorFrame.EspaceLabel1.Title="解法: ";
+FraSweep.FraOptional.SolutionSelectorFrame.EspaceLabel1.LongHelp="讓您瀏覽解法.";
+
+FraSweep.FraOptional.FraLittLayout1.LabLength1.Title="長度 1: ";
+FraSweep.FraOptional.FraLittLayout1.FraLength1.EnglobingFrame.IntermediateFrame.Spinner.Title="長度 1";
+FraSweep.FraOptional.FraLittLayout1.LawButton.Title="Law...";
+FraSweep.FraOptional.FraLittLayout1.LabLength2.Title="長度 2: ";
+FraSweep.FraOptional.FraLittLayout1.FraLength2.EnglobingFrame.IntermediateFrame.Spinner.Title="長度 2";
+FraSweep.FraOptional.FraLittLayout1.LawButton2.Title="Law...";
+
+FraSweep.FraOptional.FraLittLayout2.LabLength2.Title="長度 2: ";
+FraSweep.FraOptional.FraLittLayout2.FraLength2.EnglobingFrame.IntermediateFrame.Spinner.Title="長度 2";
+
+FraSweep.FraOptional.FraLittLayout1.LabLengthElem1.Title="修剪元素 1: ";
+FraSweep.FraOptional.FraLittLayout1.LabLengthElem1.LongHelp="指定更換長度 1 的點或平面修剪曲面.";
+FraSweep.FraOptional.FraLittLayout1.LengthElem1.LongHelp="指定更換長度 1 的點或平面修剪曲面.";
+FraSweep.FraOptional.FraLittLayout2.LabLengthElem2.Title="修剪元素 2: ";
+FraSweep.FraOptional.FraLittLayout2.LabLengthElem2.LongHelp="指定更換長度 2 的點或平面修剪曲面.";
+FraSweep.FraOptional.FraLittLayout2.LengthElem2.LongHelp="指定更換長度 2 的點或平面修剪曲面.";
+
+FraSweep.FraOptional.SolutionSelectorFrame.CurrentEditor.Title="方法";
+FraSweep.FraOptional.SolutionSelectorFrame.CurrentEditor.LongHelp="顯示和允許輸入解法號碼.";
+
+FraSweep.FraOptional.OngletsDraftAngle.OngletCst.Title="全部定義";
+FraSweep.FraOptional.OngletsDraftAngle.OngletCst.LongHelp="指定為全部掃掠動作的固定脫模角度值.";
+FraSweep.FraOptional.OngletsDraftAngle.OngletCst.FraLittLayout0.LabRefAngle.Title="角度: ";
+FraSweep.FraOptional.OngletsDraftAngle.OngletCst.FraLittLayout0.FraRefAngle.EnglobingFrame.IntermediateFrame.Spinner.Title="角度";
+FraSweep.FraOptional.OngletsDraftAngle.OngletCst.FraLittLayout0.LawButton.Title="Law...";
+
+FraSweep.FraOptional.OngletsDraftAngle.OngletCstG1.Title="G1-常數";
+FraSweep.FraOptional.OngletsDraftAngle.OngletCstG1.LongHelp="指定導引曲線連續相切部份的脫模角度值.";
+FraSweep.FraOptional.OngletsDraftAngle.OngletCstG1.FraG1Angle.LabG1Angle.Title="目前角度: ";
+FraSweep.FraOptional.OngletsDraftAngle.OngletCstG1.FraG1Angle.LabG1Angle.LongHelp="指定導引曲線目前 G1 部份的脫模角度值.";
+FraSweep.FraOptional.OngletsDraftAngle.OngletCstG1.FraG1Angle.CkeFraG1Angle.LongHelp="指定導引曲線目前 G1 部份的脫模角度值.";
+FraSweep.FraOptional.OngletsDraftAngle.OngletCstG1.FraG1Angle.CkeFraG1Angle.EnglobingFrame.IntermediateFrame.Spinner.Title="目前角度";
+
+FraSweep.FraOptional.OngletsDraftAngle.OngletVar.Title="位置值";
+FraSweep.FraOptional.OngletsDraftAngle.OngletVar.LongHelp="允許指定導引曲線上位置點的脫模角度值.";
+FraSweep.FraOptional.OngletsDraftAngle.OngletVar.FraLocValAngle.LabLocValAngle.Title="目前角度: ";
+FraSweep.FraOptional.OngletsDraftAngle.OngletVar.FraLocValAngle.LabLocValAngle.LongHelp="指定目前點的脫模角度值.";
+FraSweep.FraOptional.OngletsDraftAngle.OngletVar.FraLocValAngle.CkeFraLocValAngle.LongHelp="指定目前點的脫模角度值.";
+FraSweep.FraOptional.OngletsDraftAngle.OngletVar.FraLocValAngle.CkeFraLocValAngle.EnglobingFrame.IntermediateFrame.Spinner.Title="目前角度";
+DraftLocationTitreColonne1="位置";
+DraftLocationTitreColonne2="數值";
+FraSweep.FraOptional.OngletsDraftAngle.OngletVar.RemoveLocBut.Title="移除目前位置";
+FraSweep.FraOptional.OngletsDraftAngle.OngletVar.RemoveLocBut.LongHelp="移除所選角度位置.";
+
+FraSweep.FraOptional.FraDraftLengthBut1.LabLengthType.Title="長度型式 1: ";
+FraSweep.FraOptional.FraDraftLengthBut1.LabLengthType.LongHelp="指定長度定義型式.";
+FraSweep.FraOptional.FraDraftLengthBut1.RadBFromCurve.LongHelp="從曲線: 掃掠曲面從此曲線開始.";
+FraSweep.FraOptional.FraDraftLengthBut1.RadBFromCurve.ShortHelp="從曲線";
+FraSweep.FraOptional.FraDraftLengthBut1.RadBStandard.LongHelp="標準: 長度從掃掠平面開始建立 (0 等於 '從曲線' 選擇).";
+FraSweep.FraOptional.FraDraftLengthBut1.RadBStandard.ShortHelp="標準";
+FraSweep.FraOptional.FraDraftLengthBut1.RadBFromUpTo.LongHelp="從或至: 長度由平面和曲面的相交來建立.";
+FraSweep.FraOptional.FraDraftLengthBut1.RadBFromUpTo.ShortHelp="從或至";
+FraSweep.FraOptional.FraDraftLengthBut1.RadBExtremum.LongHelp="從端點: 長度由端點平面沿脫模方向來計算.";
+FraSweep.FraOptional.FraDraftLengthBut1.RadBExtremum.ShortHelp="從端點";
+FraSweep.FraOptional.FraDraftLengthBut1.RadBLengthAlong.LongHelp="沿曲面: 長度用來當做平行曲線距離來限制掃掠曲面.";
+FraSweep.FraOptional.FraDraftLengthBut1.RadBLengthAlong.ShortHelp="沿曲面";
+
+FraSweep.FraOptional.FraDraftLengthBut2.LabLengthType.Title="長度型式 2: ";
+FraSweep.FraOptional.FraDraftLengthBut2.LabLengthType.LongHelp="指定長度定義型式.";
+FraSweep.FraOptional.FraDraftLengthBut2.RadBFromCurve.LongHelp="從曲線: 掃掠曲面從此曲線開始.";
+FraSweep.FraOptional.FraDraftLengthBut2.RadBFromCurve.ShortHelp="從曲線";
+FraSweep.FraOptional.FraDraftLengthBut2.RadBStandard.LongHelp="標準: 長度從掃掠平面開始建立 (0 等於 '從曲線' 選擇).";
+FraSweep.FraOptional.FraDraftLengthBut2.RadBStandard.ShortHelp="標準";
+FraSweep.FraOptional.FraDraftLengthBut2.RadBFromUpTo.LongHelp="從或至: 長度由平面和曲面的相交來建立.";
+FraSweep.FraOptional.FraDraftLengthBut2.RadBFromUpTo.ShortHelp="從或至";
+FraSweep.FraOptional.FraDraftLengthBut2.RadBExtremum.LongHelp="從端點: 長度由端點平面沿脫模方向來計算.";
+FraSweep.FraOptional.FraDraftLengthBut2.RadBExtremum.ShortHelp="從端點";
+FraSweep.FraOptional.FraDraftLengthBut2.RadBLengthAlong.LongHelp="沿曲面: 長度用來當做平行曲線距離來限制掃掠曲面.";
+FraSweep.FraOptional.FraDraftLengthBut2.RadBLengthAlong.ShortHelp="沿曲面";
+
+// Sweep circle
+//---------------------------------------------------------------
+FraSweep.FraLayout1.FraComboCircle.LabelComboCircle.Title="次形式: ";
+FraSweep.FraLayout1.FraComboCircle.LabelComboCircle.LongHelp="表列使用圓弧的掃掠曲面次形式.";
+FraSweep.FraLayout1.FraComboCircle.ComboCircle.LongHelp="表列使用圓弧的掃掠曲面次形式.";
+
+FraSweep.FraLayout1.FraComboCircleVol.LabelComboCircleVol.Title="次形式: ";
+FraSweep.FraLayout1.FraComboCircleVol.LabelComboCircleVol.LongHelp="表列使用圓弧的掃掠體積次形式.";
+FraSweep.FraLayout1.FraComboCircleVol.ComboCircleVol.LongHelp="表列使用圓弧的掃掠體積次形式.";
+
+SweepCircle1="三條導引曲線";
+SweepCircle2="二條導引曲線和半徑";
+SweepCircle3="圓心和二個角度";
+VolumeSweepCircle3="中心和參考曲線";
+SweepCircle4="圓心和半徑";
+SweepCircle5="兩個導引和相切曲面";
+SweepCircle6="一個導引和相切曲面";
+
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabGuideCurve3.Title="導引曲線 3: ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabGuideCurve3.LongHelp="指定導引曲線 3.";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.GuideCurve3.LongHelp="指定導引曲線 3.";
+
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabCenterCurve.Title="中心曲線: ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabCenterCurve.LongHelp="指定中心曲線.";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.CenterCurve.LongHelp="指定中心曲線.";
+
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabAngleRefCurve.Title="參考曲線: ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabAngleRefCurve.LongHelp="指定參考角度曲線.";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.AngleRefCurve.LongHelp="指定參考角度曲線.";
+
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabGuideCurveWithTangency.Title="相切的極限曲線: ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabGuideCurveWithTangency.LongHelp="指定相切的極限曲線: ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.GuideCurveWithTangency.LongHelp="指定相切的極限曲線";
+
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabLimitCurve.Title="極限曲線: ";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LabLimitCurve.LongHelp="指定其它極限曲線.";
+FraSweep.FraLayout1.FraMandatory.FraLayout2.LimitCurve.LongHelp="指定其它極限曲線.";
+
+FraSweep.FraLayout1.FraMandatory.FraLittLayout1.LabRadius.Title="半徑 : ";
+FraSweep.FraLayout1.FraMandatory.FraLittLayout1.LabRadius.LongHelp="指定半徑值.";
+FraSweep.FraLayout1.FraMandatory.FraLittLayout1.FraRadius.EnglobingFrame.IntermediateFrame.Spinner.Title="半徑";
+
+FraSweep.FraLayout1.FraMandatory.FraLittLayout1.LabAngle1.Title="角度 1: ";
+FraSweep.FraLayout1.FraMandatory.FraLittLayout1.LabAngle1.LongHelp="指定角度 1.";
+FraSweep.FraLayout1.FraMandatory.FraLittLayout1.FraAngle1.EnglobingFrame.IntermediateFrame.Spinner.Title="角度 1";
+
+FraSweep.FraLayout1.FraMandatory.FraLittLayout1.LabAngle2.Title="角度 2: ";
+FraSweep.FraLayout1.FraMandatory.FraLittLayout1.LabAngle2.LongHelp="指定角度 2.";
+FraSweep.FraLayout1.FraMandatory.FraLittLayout1.FraAngle2.EnglobingFrame.IntermediateFrame.Spinner.Title="角度 2";
+
+FraSweep.FraOptional.FraLittLayout2.ButOptionRadius.Title="使用固定半徑: ";
+FraSweep.FraOptional.FraLittLayout2.ButOptionRadius.LongHelp="允許指定圓徑.
+如未啟動, 半徑將相關中心和參考曲線的距離.";
+FraSweep.FraOptional.FraLittLayout2.FraRadius.EnglobingFrame.IntermediateFrame.Spinner.Title="半徑";
+FraSweep.FraOptional.FraLittLayout2.LawButton.Title="Law...";
+
+
+// Sweep conique
+//---------------------------------------------------------------
+FraSweep.FraLayout1.FraComboConic.LabelComboConic.Title="次形式: ";
+FraSweep.FraLayout1.FraComboConic.LabelComboConic.LongHelp="表列使用圓錐斷面的掃掠曲面次形式.";
+FraSweep.FraLayout1.FraComboConic.ComboConic.LongHelp="表列使用圓錐斷面的掃掠曲面次形式.";
+
+SweepConic1="兩個導引曲線";
+SweepConic2="參個導引曲線";
+SweepConic3="四個導引曲線";
+SweepConic4="五個導引曲線";
+
+FraSweep.FraLayout1.FraMandatory.FraGuide1.LabGuideCurve1.Title="導引曲線1: ";
+FraSweep.FraLayout1.FraMandatory.FraGuide1.LabGuideCurve1.LongHelp="指定導引曲線1.";
+FraSweep.FraLayout1.FraMandatory.FraGuide1.GuideCurve1.LongHelp="指定導引曲線1.";
+
+FraSweep.FraLayout1.FraMandatory.FraTan1.Title="相關相切元素";
+FraSweep.FraLayout1.FraMandatory.FraTan1.SubFra1.LabTangencyElement1.Title="相切: ";
+FraSweep.FraLayout1.FraMandatory.FraTan1.SubFra1.LabTangencyElement1.LongHelp="指定第一導引曲線的相切元素 (曲線或曲面).";
+FraSweep.FraLayout1.FraMandatory.FraTan1.SubFra1.TangencyElement1.LongHelp="指定第一導引曲線的相切元素 (曲線或曲面).";
+FraSweep.FraLayout1.FraMandatory.FraTan1.SubFra2.LabRefAngle1.Title="角度: ";
+FraSweep.FraLayout1.FraMandatory.FraTan1.SubFra2.LabRefAngle1.LongHelp="指定第一導引相切角度.";
+FraSweep.FraLayout1.FraMandatory.FraTan1.SubFra2.FraAngle1.EnglobingFrame.IntermediateFrame.Spinner.Title="角度1";
+FraSweep.FraLayout1.FraMandatory.FraTan1.SubFra2.LawButton.Title="Law...";
+
+FraSweep.FraLayout1.FraMandatory.FraGuideFin.LabGuideCurveFin.Title="最後導引曲線: ";
+FraSweep.FraLayout1.FraMandatory.FraGuideFin.LabGuideCurveFin.LongHelp="指定最後導引曲線.";
+FraSweep.FraLayout1.FraMandatory.FraGuideFin.GuideCurveFin.LongHelp="指定最後導引曲線.";
+
+FraSweep.FraLayout1.FraMandatory.FraTanFin.Title="相關相切元素";
+FraSweep.FraLayout1.FraMandatory.FraTanFin.SubFra1.LabTangencyElementFin.Title="相切: ";
+FraSweep.FraLayout1.FraMandatory.FraTanFin.SubFra1.LabTangencyElementFin.LongHelp="指定最後導引曲線的相切元素 (曲線或曲面).";
+FraSweep.FraLayout1.FraMandatory.FraTanFin.SubFra1.TangencyElementFin.LongHelp="指定最後導引曲線的相切元素 (曲線或曲面).";
+FraSweep.FraLayout1.FraMandatory.FraTanFin.SubFra2.LabRefAngleFin.Title="角度: ";
+FraSweep.FraLayout1.FraMandatory.FraTanFin.SubFra2.LabRefAngleFin.LongHelp="指定最後導引的相切角度.";
+FraSweep.FraLayout1.FraMandatory.FraTanFin.SubFra2.FraAngleFin.EnglobingFrame.IntermediateFrame.Spinner.Title="角度2";
+FraSweep.FraLayout1.FraMandatory.FraTanFin.SubFra2.LawButton.Title="Law...";
+
+FraSweep.FraLayout1.FraMandatory.FraExtra.LabGuideCurve2.Title="導引曲線2: ";
+FraSweep.FraLayout1.FraMandatory.FraExtra.LabGuideCurve2.LongHelp="指定導引曲線2.";
+FraSweep.FraLayout1.FraMandatory.FraExtra.GuideCurve2.LongHelp="指定導引曲線2.";
+
+FraSweep.FraLayout1.FraMandatory.FraExtra.LabGuideCurve3.Title="導引曲線3: ";
+FraSweep.FraLayout1.FraMandatory.FraExtra.LabGuideCurve3.LongHelp="指定導引曲線3.";
+FraSweep.FraLayout1.FraMandatory.FraExtra.GuideCurve3.LongHelp="指定導引曲線3.";
+
+FraSweep.FraLayout1.FraMandatory.FraExtra.LabGuideCurve4.Title="導引曲線4: ";
+FraSweep.FraLayout1.FraMandatory.FraExtra.LabGuideCurve4.LongHelp="指定導引曲線4.";
+FraSweep.FraLayout1.FraMandatory.FraExtra.GuideCurve4.LongHelp="指定導引曲線4.";
+
+FraSweep.FraLayout1.FraMandatory.FraExtra.LabParam.Title="參數: ";
+FraSweep.FraLayout1.FraMandatory.FraExtra.LabParam.LongHelp="指定圓椎參數.";
+FraSweep.FraLayout1.FraMandatory.FraExtra.FraParam.EnglobingFrame.IntermediateFrame.Spinner.Title="參數";
+FraSweep.FraLayout1.FraMandatory.FraExtra.FraParam.LongHelp="指定圓椎參數.";
+FraSweep.FraLayout1.FraMandatory.FraExtra.LawButton.Title="Law...";
+
+//sweep angular sector
+FraSweep.FraOptional.OngletsDraftAngle.OngletCst.FraLittLayout0.LabRefAngle.Title="角度: ";
+FraSweep.FraOptional.OngletsDraftAngle.OngletCst.FraLittLayout0.LawButton.Title="Law...";
+FraSweep.FraOptional.OngletsDraftAngle.OngletCst.FraLittLayout0.SolutionSelectorFrame.EspaceLabel1.Title = "角度部份: ";
+
+FraSweep.FraLayout1.FraMandatory.FraLittLayoutSol.SolutionSelectorFrame.EspaceLabel1.Title = "角度部份: ";
+
+FraSweep.FraMandatory.SolutionSelectorFrame.EspaceLabel1.Title = "角度部份: ";
+FraSweep.FraOptional.OngletsDraftAngle.OngletVar.SolutionSelectorFrame.EspaceLabel1.Title = "角度部份: ";
+FraSweep.FraOptional.OngletsDraftAngle.OngletCstG1.SolutionSelectorFrame.EspaceLabel1.Title = "角度部份: ";
+
+//end 
+

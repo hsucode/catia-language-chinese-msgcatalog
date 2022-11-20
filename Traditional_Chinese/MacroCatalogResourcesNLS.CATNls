@@ -1,0 +1,107 @@
+
+// =====================================================================
+// NLS for Macros in Catalog Browser Access or saving macro in catalog
+// =====================================================================
+
+// =====================================================================
+// Column titles  - keywords for each macro components 
+// =====================================================================
+KeyFamilyName          = "名稱";
+KeyName                = "名稱";
+KeyComment             = "說明";
+KeyType                = "型式";
+
+// =====================================================================
+// Macros types or macro families
+// =====================================================================
+
+MfgApproachMacro        ="進刀";
+MfgRetractMacro         ="退刀";
+MfgLinkingMacro         ="連接結";
+MfgReturnOneLevelMacro="在同一層返回";
+MfgReturnTwoLevelMacro="在兩層間返回";
+MfgReturnFinishPathMacro="返回精銑路徑";
+MfgClearanceMacro="路徑間預留";
+MfgBetweenPassesMacro="路徑間";
+MfgAutomaticRoughingMacro="自動粗銑";
+MfgPreRoughingMacro="前粗銑";
+MfgPostRoughingMacro="後粗銑";
+
+// =====================================================================
+// Elementary motion types 
+// =====================================================================
+
+MfgMacroElementaryNormalMotion               ="垂直";  
+MfgMacroElementaryBackMotion                 ="回到";
+MfgMacroElementaryCircularDirMotion          ="手動圓弧";    
+MfgMacroElementaryBoxMotion                  ="盒狀";
+MfgMacroElementaryPSMMotion	                 ="延長部份移動";
+MfgMacroElementaryHSMMotion		             ="高速銑削";
+MfgMacroElementaryHMRMotion                  ="粗銑";    
+MfgMacroElementaryHelixMotion                ="螺旋";
+MfgMacroElementaryRampingMotion              ="斜進";
+MfgMacroElementaryHorizontalMotion           ="水平";
+MfgMacroElementaryGoToAPointMotion           ="至一點";
+MfgMacroElementaryCircularMotion             ="圓弧"; 
+MfgMacroElementaryToolAxisMotion             ="刀軸";
+MfgMacroElementaryDeltaLnDistMotion          ="沿線距離";
+MfgMacroElementaryAxialMotion                ="軸向";
+MfgMacroPPWord                               ="後處理字元";  
+MfgMacroElementaryGoToAPlaneMotion           ="至平面";
+
+// =====================================================================
+// Message when saving a macro which already exists
+// =====================================================================
+
+MsgTitle                   = "副程式目錄 : ";
+MsgExist                   = " 已存在 ";
+MsgOverwrite               = " 副程式家族. 您要覆蓋它嗎 ?";
+
+// =====================================================================
+// Machining Process Catalog
+// =====================================================================
+
+// =====================================================================
+// Column titles  - keywords for each process components 
+// =====================================================================
+
+KeyProcessName                = "名稱";
+
+// =====================================================================
+// Machining Process Family in catalog
+// =====================================================================
+
+
+MachiningProcessFamily         =        "加工程序";  
+
+// =====================================================================
+// Machining Process Icons for catalog
+// =====================================================================
+// PFE: 27/04/2004 : removed keys: not possible to find where used ?!?
+//MachiningProcessIcon           =        "I_MfgMachiningProcess";  
+//MachiningProcessListIcon       =        "I_MfgMachiningProcessList";  
+
+// =====================================================================
+// Message when saving a machining process which already exists
+// =====================================================================
+
+MsgProcessTitle                   = "加工程序目錄 : ";
+MsgProcessExist                   = " 已存在 ";
+MsgProcessOverwrite               = " 家族. 您要覆寫嗎 ?";
+
+// =====================================================================
+// Message when saving a resource which already exists
+// =====================================================================
+
+MsgResourceTitle                  = "資源目錄";
+MsgResourceExist                  = " 已存在 ";
+MsgResourceOverwrite              = " 家族. 您要覆寫嗎 ?";
+
+// =====================================================================
+// Message when resource catalog structure was migrated during export
+// of a new resource
+// =====================================================================
+
+MsgResourceCatalogMigrationTitle  = "資源目錄架構升級";
+MsgResourceCatalogMigrationText   = "您的目錄使用舊的資料結構, 它已升級成新的 (支援組立刀具). \n 新的目錄將存成下列名稱:\n";
+

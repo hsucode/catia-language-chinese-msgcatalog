@@ -1,0 +1,202 @@
+//---------------------------------------------------------------
+// Resource file for CATGSMUICirclePanel class
+// US
+//---------------------------------------------------------------
+
+Title="圓的定義";
+
+CircleTypeCtrRad="中心和半徑";
+CircleTypeCtrPt="中心和點";
+CircleType2Pts="二點和半徑";
+CircleType3Pts="三點";
+CircleTypeBiRad="相切和半徑";
+CircleTypeBiPt="相切和點";
+CircleTypeTri="三切";
+CircleTypeExpl="明確";
+// Start 3DPLM Code 
+CircleTypeCtrAxis="中心和軸";
+CircleTypeCtrTgt="中心和相切";
+CircleRad = "半徑: ";
+CircleDia = "直徑: ";
+CircleRadHelp = "按一下來改換至直徑.";
+CircleDiaHelp = "按一下來改換至半徑.";
+CircleRadLongHelp = "按一下此按鈕, 輸入值會視為直徑.";
+CircleDiaLongHelp = "按一下此按鈕, 輸入值會視為半徑.";
+CircleRadSpinnerLongHelp = "指定圓半徑值.";
+CircleDiaSpinnerLongHelp = "指定圓直徑值.";
+// End 3DPLM Code 
+
+FGen.LabList.Title="圓的形式: ";
+FGen.CmbList.LongHelp="顯示建立圓的可用方式.";
+
+FCtrRad.FraGeo.LabelCtrRadCenter.Title="中心: ";
+FCtrRad.FraGeo.LabelCtrRadSupp.Title="依附: ";
+FCtrRad.ChkGeod.Title="依附的幾何元素";
+FCtrRad.FraGeo.FraElem1.LongHelp="指定圓心點.";
+FCtrRad.FraGeo.FraElem2.LongHelp="指定建立圓的參考依附平面. \n 如果中心點不依附在平面上，將會產生錯誤訊息. \n 如果已選擇曲面, 切面將被用做參考.";
+// 3DPLM Commented FCtrRad.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="指定圓的半徑值.";
+// 3DPLM Commented FCtrRad.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="半徑值";
+FCtrRad.ChkGeod.LongHelp="允許您投影圓至依附平面或曲面.";
+FCtrRad.AxisComputation.Title="軸計算";
+FCtrRad.LabDirection.Title="軸方向:";
+FCtrRad.AxisComputation.LongHelp="指定軸計算模式";
+FCtrRad.LabDirection.LongHelp="指定軸方向.";
+
+FCtrPt.FraGeo.LabelCtrPtCenter.Title="中心: ";
+FCtrPt.FraGeo.LabelCtrPtPoint.Title="點: ";
+FCtrPt.FraGeo.LabelCtrPtSupp.Title="依附: ";
+FCtrPt.ChkGeod.Title="依附的幾何元素";
+FCtrPt.FraGeo.FraElem1.LongHelp="指定圓心點.";
+FCtrPt.FraGeo.FraElem2.LongHelp="指定圓將經過的點.";
+FCtrPt.FraGeo.FraElem3.LongHelp="指定建立圓的參考依附平面. \n 如果中心點不依附在平面上，將會產生錯誤訊息. \n 如果已選擇曲面, 切面將被用做參考.";
+FCtrPt.ChkGeod.LongHelp="允許您投影圓至依附平面或曲面.";
+FCtrPt.AxisComputation.Title="軸計算";
+FCtrPt.LabDirection.Title="軸方向:";
+FCtrPt.AxisComputation.LongHelp="指定軸計算模式";
+FCtrPt.LabDirection.LongHelp="指定軸方向.";
+
+
+F2Pts.FraGeo.Label2PtsPoint1.Title="點 1: ";
+F2Pts.FraGeo.Label2PtsPoint2.Title="點 2: ";
+F2Pts.FraGeo.Label2PtsSupp.Title="依附: ";
+F2Pts.ChkGeod.Title="依附的幾何元素";
+F2Pts.PushInv.Title="另一解";
+F2Pts.FraGeo.FraElem1.LongHelp="指定圓將經過的第一點.";
+F2Pts.FraGeo.FraElem2.LongHelp="指定圓將經過的第二點.";
+F2Pts.FraGeo.FraDirection.LongHelp="指定建立圓的參考依附. \n 依附可以是平面或方向. \n 如選擇曲面則相切平面將用來做參考.";
+// 3DPLM Commented F2Pts.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="指定圓的半徑值.";
+F2Pts.ChkGeod.LongHelp="允許您投影圓至依附平面或曲面.";
+F2Pts.PushInv.LongHelp="允許您選擇可能符合規範的其它圓弧.";
+// 3DPLM Commented F2Pts.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="半徑值 : ";
+F2Pts.AxisComputation.Title="軸計算";
+F2Pts.LabDirection.Title="軸方向:";
+F2Pts.AxisComputation.LongHelp="指定軸計算模式";
+F2Pts.LabDirection.LongHelp="指定軸方向.";
+
+F3Pts.FraGeo.Label3PtsPt1.Title="點 1: ";
+F3Pts.FraGeo.Label3PtsPt2.Title="點 2: ";
+F3Pts.FraGeo.Label3PtsPt3.Title="點 3: ";
+F3Pts.FraGeod.Title="選擇";
+F3Pts.FraGeod.ChkGeod.Title="依附的幾何元素";
+F3Pts.FraGeod.Label3PtsGeod.Title="依附 : ";
+F3Pts.FraGeod.FraGeod2.LongHelp="指定建立圓的依附平面或曲面.";
+F3Pts.FraGeod.ChkGeod.LongHelp="允許您投影圓至依附平面或曲面.";
+F3Pts.FraGeo.FraElem1.LongHelp="指定圓將經過的第一點.";
+F3Pts.FraGeo.FraElem2.LongHelp="指定圓將經過的第二點.";
+F3Pts.FraGeo.FraElem3.LongHelp="指定圓將經過的第三點.";
+F3Pts.FraGeod.FraGeod.AxisComputation.Title="軸計算";
+F3Pts.FraGeod.LabDirection.Title="軸方向:";
+F3Pts.FraGeod.AxisComputation.LongHelp="指定軸計算模式";
+F3Pts.FraGeod.LabDirection.LongHelp="指定軸方向.";
+
+FBiRa.FraGeo.LabelBiRadCurve1.Title="元素 1: ";
+FBiRa.FraGeo.LabelBiRadCurve2.Title="元素 2: ";
+FBiRa.FraGeo.LabelBiRadSupp.Title="依附: ";
+// Start 3DPLM Code MPQ
+FBiRa.FraGeo.ChkTrimElem1.Title="修剪元素 1  ";
+FBiRa.FraGeo.ChkTrimElem2.Title="修剪元素 2  ";
+// End 3DPLM Code  MPQ
+// 3DPLM Commented FBiRa.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="半徑";
+FBiRa.FraGeo.FraElem1.LongHelp="指定與圓相切的第一條曲線.";
+FBiRa.FraGeo.FraElem2.LongHelp="指定與圓相切的第二條曲線.";
+FBiRa.FraGeo.FraElem3.LongHelp="指定將建立圓的平面.";
+// 3DPLM Commented FBiRa.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="指定圓的半徑值.";
+FBiRa.PushNext.Title="另一解";
+FBiRa.PushNext.LongHelp="允許您選擇另一圓";
+FBiRa.AxisComputation.Title="軸計算";
+FBiRa.LabDirection.Title="軸方向:";
+FBiRa.AxisComputation.LongHelp="指定軸計算模式";
+FBiRa.LabDirection.LongHelp="指定軸方向.";
+
+
+FBiPt.FraGeo.LabelBiPtCurve1.Title="元素 1: ";
+FBiPt.FraGeo.LabelBiPtCurve2.Title="曲線 2: ";
+FBiPt.FraGeo.LabelBiPtPoint.Title="點: ";
+FBiPt.FraGeo.LabelBiPtSupp.Title="依附";
+// Start 3DPLM Code MPQ
+FBiPt.FraGeo.ChkTrimElem1.Title="修剪元素 1  ";
+FBiPt.FraGeo.ChkTrimElem2.Title="修剪元素 2  ";
+// End 3DPLM Code  MPQ
+FBiPt.FraGeo.FraElem1.LongHelp="指定與圓相切的第一條曲線.";
+FBiPt.FraGeo.FraElem2.LongHelp="指定與圓相切的第二條曲線.";
+FBiPt.FraGeo.FraElem3.LongHelp="指定經過圓在第二條曲線上的點.";
+FBiPt.FraGeo.FraGeod2.LongHelp="指定將建立圓的平面.";
+FBiPt.PushNext.Title="另一解";
+FBiPt.PushNext.LongHelp="允許您選擇另一圓";
+FBiPt.AxisComputation.Title="軸計算";
+FBiPt.LabDirection.Title="軸方向:";
+FBiPt.AxisComputation.LongHelp="指定軸計算模式";
+FBiPt.LabDirection.LongHelp="指定軸方向.";
+
+FTriC.FraGeo.LabelTriCurve1.Title="元素 1: ";
+FTriC.FraGeo.LabelTriCurve2.Title="元素 2: ";
+FTriC.FraGeo.LabelTriCurve3.Title="元素 3: ";
+FTriC.FraGeo.LabelTriSupp.Title="依附: ";
+// Start 3DPLM Code MPQ
+FTriC.FraGeo.ChkTrimElem1.Title="修剪元素 1  ";
+FTriC.FraGeo.ChkTrimElem2.Title="修剪元素 2  ";
+// End 3DPLM Code  MPQ
+FTriC.FraGeo.FraElem1.LongHelp="指定與圓相切的第一條曲線.";
+FTriC.FraGeo.FraElem2.LongHelp="指定與圓相切的第二條曲線.";
+FTriC.FraGeo.FraElem3.LongHelp="指定與圓相切的第三條曲線.";
+FTriC.FraGeo.FraGeod2.LongHelp="指定將建立圓的平面.";
+FTriC.PushNext.Title="另一解";
+FTriC.PushNext.LongHelp="允許您選擇另一圓";
+FTriC.AxisComputation.Title="軸計算";
+FTriC.LabDirection.Title="軸方向:";
+FTriC.AxisComputation.LongHelp="指定軸計算模式";
+FTriC.LabDirection.LongHelp="指定軸方向.";
+
+FExpl.CircleRadius.LabelExpRadius.Title="半徑: ";
+FExpl.CircleRadius.UxValue.Title="半徑";
+FExpl.CircleRadius.UxValue.LongHelp="指定圓的半徑值.";
+FExpl.LabelExplNoInfo.Title="沒有資料";
+
+FrameLimits.FrameIcons.CircleAngles.Title="部份弧";
+FrameLimits.FrameIcons.CircleAngles.ShortHelp="部份弧";
+FrameLimits.FrameIcons.CircleAngles.LongHelp="指定將建立的圓弧. \n 弧區間是由起始和結束角度值來定義.";
+FrameLimits.FrameIcons.CircleWhole.Title="全圓";
+FrameLimits.FrameIcons.CircleWhole.ShortHelp="全圓";
+FrameLimits.FrameIcons.CircleWhole.LongHelp="指定將建立全圓.";
+FrameLimits.FrameIcons.CircleTrimmed.Title="截圓";
+FrameLimits.FrameIcons.CircleTrimmed.ShortHelp="截圓";
+FrameLimits.FrameIcons.CircleTrimmed.LongHelp="指定將建立的圓弧. \n 它將會由定義中的兩點或切點來截斷.";
+FrameLimits.FrameIcons.CircleComplem.Title="互補圓";
+FrameLimits.FrameIcons.CircleComplem.ShortHelp="互補圓";
+FrameLimits.FrameIcons.CircleComplem.LongHelp="指定將建立的互補圓弧. \n 它將會由定義中的兩點或切點來截斷.";
+
+FrameLimits.Title="圓的極限";
+FrameLimits.FrameAngles.LabelLimStart.Title="開始: ";
+FrameLimits.FrameAngles.LabelLimEnd.Title="結束: ";
+FrameLimits.FrameAngles.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="指定圓弧的起始角度";
+FrameLimits.FrameAngles.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.Title="開始";
+FrameLimits.FrameAngles.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="指定圓弧的結束角度";
+FrameLimits.FrameAngles.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="結束";
+
+// Start 3DPLM Code 
+FCtrTgt.FraGeo.LabelCtrTgtCenterCurve.Title="中心元素: ";
+FCtrTgt.FraGeo.LabelCtrTgtTangentCurve.Title="相切曲線: ";
+FCtrTgt.FraGeo.LabelCtrTgtSupport.Title="依附: ";
+//FCtrTgt.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="半徑";
+FCtrTgt.PushNext.Title="下一解";
+FCtrTgt.PushNext.LongHelp="允許選擇下一個所計算的解";
+FCtrTgt.AxisComputation.Title="軸計算";
+FCtrTgt.LabDirection.Title="軸方向:";
+FCtrTgt.AxisComputation.LongHelp="指定軸計算模式";
+FCtrTgt.LabDirection.LongHelp="指定軸方向.";
+
+FraCtrAxis.FraElem.LabelCtrAxisAxis.Title="軸或線: ";
+FraCtrAxis.FraElem.LabelCtrAxisPoint.Title="點: ";
+//FraCtrAxis.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="半徑";
+FraCtrAxis.CtrAxisProject.Title="在軸或線上投影點";
+FraCtrAxis.AxisComputation.Title="軸計算";
+FraCtrAxis.LabDirection.Title="軸方向:";
+FraCtrAxis.AxisComputation.LongHelp="指定軸計算模式";
+FraCtrAxis.LabDirection.LongHelp="指定軸方向.";
+
+//Combo lock help
+CircleLockShort="按一下來啟動自動型式更改.";
+CircleUnlockShort="按一下來關閉自動型式更改.";
+CircleLockLong="按一下來啟動自動型式更改.";
+CircleUnlockLong="按一下來關閉自動型式更改.";
+// End 3DPLM Code 

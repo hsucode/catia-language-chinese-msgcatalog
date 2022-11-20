@@ -1,0 +1,160 @@
+//R9 
+Title="羅盤操作參數";
+PositionLabel.Title = "座標";
+PositionLabel.ShortHelp = "羅盤座標";
+CoordPositionLabel.Title = "位置";
+CoordPositionLabel.ShortHelp = "羅盤原點位置";
+CoordAngleLabel.Title = "角度";
+CoordAngleLabel.ShortHelp = "Euler 角度 (Z 旋轉, X 旋轉, Z 旋轉)";
+CoordAlongX.Title = "沿 X";
+CoordAlongY.Title = "沿 Y";
+CoordAlongZ.Title = "沿 Z";
+ApplyPositionBtn.Title = "應用";
+ApplyPositionBtn.ShortHelp = "應用新位置至羅盤";
+AxisSystemLabel.Title = "參考";
+AxisSystemCombo.Line0 = "絕對";
+AxisSystemCombo.Line1 = "作動物件";
+
+IncrementLabel.Title = "增量";
+Reset_Btn.ShortHelp = "重設所有增量數值";
+TranslationLabel.Title = "平移增量";
+TranslationLabel.ShortHelp = "平移增量";
+RotationLabel.Title = "旋轉增量";
+RotationLabel.ShortHelp = "旋轉增量";
+AlongXOrU.Title = "沿 U";
+AlongXOrU.ShortHelp = "沿 U 軸的平移量";
+AlongYOrV.Title = "沿 V";
+AlongYOrV.ShortHelp = "沿 V 軸的平移量";
+AlongZOrW.Title = "沿 W";
+AlongZOrW.ShortHelp = "沿 W 軸的平移量";
+XTransFrame.XTrans_Minus_Btn.ShortHelp = "沿 U 軸負方向增量移動羅盤";
+XTransFrame.XTrans_Plus_Btn.ShortHelp  = "沿 U 軸正方向增量移動羅盤";
+YTransFrame.YTrans_Minus_Btn.ShortHelp = "沿 V 軸負方向增量移動羅盤";
+YTransFrame.YTrans_Plus_Btn.ShortHelp  = "沿 V 軸正方向增量移動羅盤";
+ZTransFrame.ZTrans_Minus_Btn.ShortHelp = "沿 W 軸負方向增量移動羅盤";
+ZTransFrame.ZTrans_Plus_Btn.ShortHelp  = "沿 W 軸正方向增量移動羅盤";
+
+XRotFrame.XRot_Minus_Btn.ShortHelp = "繞 U 軸負方向增量旋轉羅盤";
+XRotFrame.XRot_Plus_Btn.ShortHelp  = "繞 U 軸正方向增量旋轉羅盤";
+YRotFrame.YRot_Minus_Btn.ShortHelp = "繞 V 軸負方向增量旋轉羅盤";
+YRotFrame.YRot_Plus_Btn.ShortHelp  = "繞 V 軸正方向增量旋轉羅盤";
+ZRotFrame.ZRot_Minus_Btn.ShortHelp = "繞 W 軸負方向增量旋轉羅盤";
+ZRotFrame.ZRot_Plus_Btn.ShortHelp  = "繞 W 軸正方向增量旋轉羅盤";
+
+MeasureFrame.HeaderFrame.Global.Title = "量測";
+MeasureFrame.IconAndOptionsFrame.OptionsFrame.DistanceMeasureBtn.Title = "距離";
+MeasureFrame.IconAndOptionsFrame.OptionsFrame.DistanceMeasureBtn.ShortHelp = "要選擇的物件間距離";
+MeasureFrame.IconAndOptionsFrame.OptionsFrame.Distance_MinusBtn.ShortHelp = "沿著所計算的平移方向負向移動";
+MeasureFrame.IconAndOptionsFrame.OptionsFrame.Distance_PlusBtn.ShortHelp = "沿著所計算的平移方向正向移動";
+MeasureFrame.IconAndOptionsFrame.OptionsFrame.AngleMeasureBtn.Title = "角度";
+MeasureFrame.IconAndOptionsFrame.OptionsFrame.AngleMeasureBtn.ShortHelp = "所選兩物件間的旋轉角度";
+MeasureFrame.IconAndOptionsFrame.OptionsFrame.Angle_MinusBtn.ShortHelp = "以所計算的旋轉軸負向旋轉";
+MeasureFrame.IconAndOptionsFrame.OptionsFrame.Angle_PlusBtn.ShortHelp = "以所計算的旋轉軸正向旋轉";
+
+//R8 
+//Title="羅盤操作";
+
+MainFrame.PositionSep.PositionLabel.Title="位置";
+MainFrame.PositionSep.PositionLabel.LongHelp="設定羅盤位置";
+
+MainFrame.PositionFrame.XPosEdit.EnglobingFrame.IntermediateFrame.Label.Title="  X 或 U: ";
+MainFrame.PositionFrame.XPosEdit.EnglobingFrame.IntermediateFrame.Label.LongHelp="輸入羅盤位置X或U軸位置";
+MainFrame.PositionFrame.YPosEdit.EnglobingFrame.IntermediateFrame.Label.Title="Y 或 V: ";
+MainFrame.PositionFrame.YPosEdit.EnglobingFrame.IntermediateFrame.Label.LongHelp="輸入羅盤位置Y或V軸位置";
+MainFrame.PositionFrame.ZPosEdit.EnglobingFrame.IntermediateFrame.Label.Title="Z 或 W: ";
+MainFrame.PositionFrame.ZPosEdit.EnglobingFrame.IntermediateFrame.Label.LongHelp="輸入羅盤位置Z或W軸位置";
+
+MainFrame.PositionFrame.PhiPosEdit.EnglobingFrame.IntermediateFrame.Label.Title=" Phi: ";
+MainFrame.PositionFrame.PhiPosEdit.EnglobingFrame.IntermediateFrame.Label.LongHelp="輸入羅盤方向的 Phi 值";
+MainFrame.PositionFrame.ThetaPosEdit.EnglobingFrame.IntermediateFrame.Label.Title=" Theta: ";
+MainFrame.PositionFrame.ThetaPosEdit.EnglobingFrame.IntermediateFrame.Label.LongHelp="輸入羅盤方向的 theta 值";
+MainFrame.PositionFrame.PsiPosEdit.EnglobingFrame.IntermediateFrame.Label.Title=" Psi: ";
+MainFrame.PositionFrame.PsiPosEdit.EnglobingFrame.IntermediateFrame.Label.LongHelp="輸入羅盤方向的 Phi 值";
+
+MainFrame.PositionFrame.ApplyPositionBtn.Title="應用在新位置";
+MainFrame.PositionFrame.ApplyPositionBtn.LongHelp="移動羅盤至座標 U, V 和 W";
+MainFrame.PositionFrame.ApplyPositionBtn.Help="移動羅盤至座標 U, V 和 W";
+
+MainFrame.PositionFrame.EulerAngleLabel.Title="  Euler 角度:";
+MainFrame.PositionFrame.EulerAngleLabel.LongHelp="依據 ZXZ 方式, 相關目前羅盤位置的 Euler 角度";
+
+MainFrame.PositionFrame.CoordinatesLabel.Title="  座標 :";
+MainFrame.PositionFrame.CoordinatesLabel.LongHelp="目前軸系的羅盤座標";
+
+MainFrame.StepFrame.ApplyPositionBtn.Help="移動羅盤至指定位置";
+MainFrame.StepFrame.dX1Btn.LongHelp="沿著 U 正方向增量移動羅盤";
+MainFrame.StepFrame.dX2Btn.LongHelp="沿著 U 負方向增量移動羅盤";
+MainFrame.StepFrame.dY1Btn.LongHelp="沿著 V 正方向增量移動羅盤";
+MainFrame.StepFrame.dY2Btn.LongHelp="沿著 V 負方向增量移動羅盤";
+MainFrame.StepFrame.dZ1Btn.LongHelp="沿著 W 正方向增量移動羅盤";
+MainFrame.StepFrame.dZ2Btn.LongHelp="沿著 W 負方向增量移動羅盤";
+
+
+MainFrame.StepSep.StepLabel.Title="增量值";
+MainFrame.StepSep.StepLabel.LongHelp="以增量來移動或旋轉羅盤";
+
+MainFrame.VectorTransSep.VectorTransLabel.Title="向量平移";
+
+MainFrame.StepFrame.Translation.Title=" 平移";
+MainFrame.StepFrame.Translation.LongHelp="以增量來平移羅盤";
+
+MainFrame.StepFrame.dXEdit.EnglobingFrame.IntermediateFrame.Label.Title="  X 或 U: ";
+MainFrame.StepFrame.dXEdit.EnglobingFrame.IntermediateFrame.Label.LongHelp="輸入 U 座標";
+MainFrame.StepFrame.dYEdit.EnglobingFrame.IntermediateFrame.Label.Title="  Y 或 V: ";
+MainFrame.StepFrame.dYEdit.EnglobingFrame.IntermediateFrame.Label.LongHelp="輸入 V 座標";
+MainFrame.StepFrame.dZEdit.EnglobingFrame.IntermediateFrame.Label.Title="  Z 或 W: ";
+MainFrame.StepFrame.dZEdit.EnglobingFrame.IntermediateFrame.Label.LongHelp="輸入 W 座標";
+
+MainFrame.StepFrame.dX1Btn.Help="順著U軸正向增量移動羅盤";
+MainFrame.StepFrame.dX2Btn.Help="順著U軸負向增量移動羅盤";
+MainFrame.StepFrame.dY1Btn.Help="順著V軸正向增量移動羅盤";
+MainFrame.StepFrame.dY2Btn.Help="順著V軸負向增量移動羅盤";
+MainFrame.StepFrame.dZ1Btn.Help="順著W軸正向增量移動羅盤";
+MainFrame.StepFrame.dZ2Btn.Help="順著W軸負向增量移動羅盤";
+
+MainFrame.StepFrame.DistanceEdit.EnglobingFrame.IntermediateFrame.Label.Title="  距離: ";
+MainFrame.StepFrame.DistanceEdit.EnglobingFrame.IntermediateFrame.Label.LongHelp="顯示以量測距離選擇所測量的平移距離";
+
+MainFrame.StepFrame.SelectionTranslationBtn.Title="距離量測...";
+MainFrame.StepFrame.SelectionTranslationBtn.LongHelp="以兩元素所連接的方向來平移";
+MainFrame.StepFrame.SelectionTranslationBtn.Help="沿著兩個元素連成的向量移動";
+
+MainFrame.StepFrame.SelTranslation1Btn.LongHelp="同時沿著U,V,W正方向移動羅盤";
+MainFrame.StepFrame.SelTranslation2Btn.LongHelp="同時沿著U,V,W負方向移動羅盤";
+MainFrame.StepFrame.SelTranslation1Btn.Help="同時沿著U,V,W正方向移動羅盤";
+MainFrame.StepFrame.SelTranslation2Btn.Help="同時沿著U,V,W負方向移動羅盤";
+
+
+MainFrame.StepFrame.Rotation.Title="旋轉";
+MainFrame.StepFrame.Rotation.LongHelp="以增量來旋轉羅盤";
+
+MainFrame.StepFrame.AngleEdit.EnglobingFrame.IntermediateFrame.Label.Title="角度: ";
+MainFrame.StepFrame.AngleEdit.EnglobingFrame.IntermediateFrame.Label.LongHelp="設定旋轉角度";
+
+MainFrame.StepFrame.AngleSelBtn.Title="角度量測...";
+MainFrame.StepFrame.AngleSelBtn.LongHelp="順著兩個元素間的角度旋轉";
+MainFrame.StepFrame.AngleSelBtn.Help="順著兩個元素間的角度旋轉";
+
+MainFrame.StepFrame.XRotLabel.Title="X 或 U 軸: ";
+MainFrame.StepFrame.XRotLabel.LongHelp="對 U 軸旋轉";
+MainFrame.StepFrame.YRotLabel.Title="Y 或 V 軸: ";
+MainFrame.StepFrame.YRotLabel.LongHelp="對 V 軸旋轉";
+MainFrame.StepFrame.ZRotLabel.Title="Z 或 W 軸: ";
+MainFrame.StepFrame.ZRotLabel.LongHelp="對 W 軸旋轉";
+
+MainFrame.StepFrame.XRot1Btn.LongHelp="順著U軸正向增量旋轉羅盤";
+MainFrame.StepFrame.XRot2Btn.LongHelp="順著U軸負向增量旋轉羅盤";
+MainFrame.StepFrame.YRot1Btn.LongHelp="順著V軸正向增量旋轉羅盤";
+MainFrame.StepFrame.YRot2Btn.LongHelp="順著V軸負向增量旋轉羅盤";
+MainFrame.StepFrame.ZRot1Btn.LongHelp="順著W軸正向增量旋轉羅盤";
+MainFrame.StepFrame.ZRot2Btn.LongHelp="順著W軸負向增量旋轉羅盤";
+
+MainFrame.StepFrame.XRot1Btn.Help="順著U軸正向增量旋轉羅盤";
+MainFrame.StepFrame.XRot2Btn.Help="順著U軸負向增量旋轉羅盤";
+MainFrame.StepFrame.YRot1Btn.Help="順著V軸正向增量旋轉羅盤";
+MainFrame.StepFrame.YRot2Btn.Help="順著V軸負向增量旋轉羅盤";
+MainFrame.StepFrame.ZRot1Btn.Help="順著W軸正向增量旋轉羅盤";
+MainFrame.StepFrame.ZRot2Btn.Help="順著W軸負向增量旋轉羅盤";
+
+BOK="關閉";
+

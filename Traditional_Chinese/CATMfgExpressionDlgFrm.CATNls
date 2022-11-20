@@ -1,0 +1,86 @@
+// =====================================================================
+// NLS for parametrization frame (expressions parametrization)
+// =====================================================================
+
+FormulaManagementFrame.Frame008.ParametrizationField.Help      = "輸入知識運算式";
+FormulaManagementFrame.Frame008.ParametrizationField.ShortHelp = "知識運算式";
+FormulaManagementFrame.Frame008.ParametrizationField.LongHelp  = "輸入你的語法以參數化你的運算式";
+
+FormulaManagementFrame.OperatorAndFunctionFrame.Operator.Title        = "運算符號";
+FormulaManagementFrame.OperatorAndFunctionFrame.OperatorSel.Help      = "下拉運算符號 \n Note that, to look for a substring in another one,\n you have to use the Search() method combined with the = or <> operators\n For example, 'Hole.Name.Search(''MyHole'')<>-1' means 'Holes names containing 'MyHole' substring'";
+FormulaManagementFrame.OperatorAndFunctionFrame.OperatorSel.LongHelp  = "下拉運算符號以插入在公式裡面";
+FormulaManagementFrame.OperatorAndFunctionFrame.OperatorSel.ShortHelp = "運算符號 (look at long help)";
+
+FormulaManagementFrame.OperatorAndFunctionFrame.Function.Title        = "功能";
+FormulaManagementFrame.OperatorAndFunctionFrame.FunctionSel.Help      = "下拉選擇的功能";
+FormulaManagementFrame.OperatorAndFunctionFrame.FunctionSel.LongHelp  = "下拉選擇的功能以插入在公式裡面";
+// FormulaManagementFrame.OperatorAndFunctionFrame.FunctionSel.ShortHelp = "功能";
+
+FormulaManagementFrame.OperatorAndFunctionFrame.Unit.Title        = "單位";
+FormulaManagementFrame.OperatorAndFunctionFrame.UnitSel.Help      = "下拉選擇的單位";
+FormulaManagementFrame.OperatorAndFunctionFrame.UnitSel.LongHelp  = "下拉選擇的單位以定義它的任何值";
+// FormulaManagementFrame.OperatorAndFunctionFrame.UnitSel.ShortHelp = "單位";
+
+FormulaManagementFrame.DicoTypeAttributeFrame.Frame018.Dictionnary.Title        = "知識庫封包";
+FormulaManagementFrame.DicoTypeAttributeFrame.Frame018.DictionnaryList.Help     = "選擇一個封包";
+FormulaManagementFrame.DicoTypeAttributeFrame.Frame018.DictionnaryList.LongHelp = "選擇一個封包以顯示相關物件類型清單";
+FormulaManagementFrame.DicoTypeAttributeFrame.Frame018.DictionnaryList.ShortHelp = "選擇一個封包";
+FormulaManagementFrame.DicoTypeAttributeFrame.Frame018.DictionnaryList.MenuOnDictionnaryList.ExternFileSelection.Title     = "選擇外部檔案";
+
+FormulaManagementFrame.DicoTypeAttributeFrame.Frame019.Type.Title              = "類型";
+FormulaManagementFrame.DicoTypeAttributeFrame.Frame019.ObjectTypeList.Help     = "選擇物件類型";
+FormulaManagementFrame.DicoTypeAttributeFrame.Frame019.ObjectTypeList.LongHelp = "選擇物件類型以顯示屬性清單";
+FormulaManagementFrame.DicoTypeAttributeFrame.Frame019.ObjectTypeList.ShortHelp = "選擇物件類型";
+
+FormulaManagementFrame.DicoTypeAttributeFrame.Frame020.Attribute.Title        = "屬性";
+FormulaManagementFrame.DicoTypeAttributeFrame.Frame020.AttributeList.Help     = "選擇一個屬性";
+FormulaManagementFrame.DicoTypeAttributeFrame.Frame020.AttributeList.LongHelp = "選擇一個屬性以插入在運算式裡面";
+FormulaManagementFrame.DicoTypeAttributeFrame.Frame020.AttributeList.ShortHelp = "選擇一個屬性";
+
+// Nls Name for MfgFeatPackage, MfgActivityPackage and 
+// MfgResourcePackage packages
+Parametrization.Package.MfgFeatPackage = "加工特徵";
+Parametrization.Package.MfgActivityPackage = "加工活動";
+Parametrization.Package.MfgResourcePackage = "加工資源";
+
+// Nls Name for other used packages
+Parametrization.Package.PartDesign = "元件設計特徵";
+Parametrization.Package.GSDPackage = "造形設計特徵";
+Parametrization.Package.KnowledgeAdvisor = "知識庫和使用者特徵";
+// Parametrization.Package.YourPackage = "My dictionnary";
+
+// List of available packages for expressions parametrization
+// You have to increment the number of 'Parametrization.Package.' keyword
+// for new packages. All incremental numbers have to be used until the last 
+// one
+// Note that if you want to have specific packages for your activities and your machining features
+// you have to use the following rules:
+// - Package name for activities: xxxMfgActivityPackage where xxx is your own identifier
+// - Package name for machining features: yyyMfgFeatPackage where yyy is your own identifier
+
+Parametrization.Package.1 = "零件設計";
+Parametrization.Package.2 = "曲面設計";
+Parametrization.Package.3 = "知識庫提供者";
+// Parametrization.Package.4 = "YourPackage";
+
+simple_hole = "單純孔";
+tapered_hole = "錐孔";
+counterbored_hole = "背魚眼孔";
+counterdrilled_hole = "中心錐孔";
+countersunk_hole = "錐沈孔";
+unknown = "未知";
+
+blind = "盲孔";
+through = "穿孔";
+
+right_threaded = "右螺紋";
+left_threaded = "左螺紋";
+
+V_bottom = "V 底";
+flat_bottom = "平底";
+
+true = "實際";
+false = "虛假";
+
+Or = "或";
+contains = "拘束";

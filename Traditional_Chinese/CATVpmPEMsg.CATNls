@@ -1,0 +1,195 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//=============================================================================
+//
+// CATVpmPEMsg:
+//	P&O SDM Implementation NLS Info Messages
+//
+// English version
+//
+//=============================================================================
+// Usage Notes:
+//=============================================================================
+// Jun 98   Creation                                   J.Poitreau
+//=============================================================================
+
+// --- Interfaces
+PE_NOINTERFACE       = "Could not get /P01 interface - Check Dictionary";
+
+// --- Dictionary
+PE_NULL_DICO         = "Could not load default and/or custom dictionary";
+
+// --- Attributes
+PE_NOATTR            = "Could not use /P01 attribute";
+PE_NULL_ATTR         = "Attribute /P01 value is null";
+PE_INVALID_CHAR_IN_ID= "Identifiers as '/P01' MUST NOT contain special characters, such as '/P02'";
+PE_INVALID_ID_LENGTH = "Attribute /P01 length is /P02 and should be within range [1-/P03]";
+PE_CANNOT_xSET       = "Could not set /P01 /P02's attribute(s)";
+PE_CANNOT_SET_ATTR   = "Could not set /P01's /P02 attribute";
+PE_NULL_ORG          = "/P01 [/P02] belongs to NO organization";
+PE_ALREADY_ADDED     = "/P01 [/P02] is already added to /P03";
+PE_NO_ASSOCIATION    = "/P01 [/P02] is not associated to /P03";
+PE_INVALID_CONDITION = "Invalid condition: '/P01'";
+PE_INVALID_OBJ       = "Attribute /P01 expects a /P02 object, not a /P03";
+PE_EXPECTED_OBJ      = "Expected a /P01 object, not a /P02 [/P03]";
+
+// --- Assignments
+PE_UNEXPECTED_ASSIGNMENT = "[/P01] assignment expects a /P02 object, not a /P03";
+PE_NO_ASSIGNMENT     = "Object has nor /P01 nor /P02 assignment";
+
+// --- Objects
+PE_CREATION_FAILED   = "Could not create /P01 object";
+PE_EXISTING_OBJECT   = "Could not create /P01 [/P02] because it already exists";
+PE_UNPROCESS_OBJECT  = "Cannot process /P01 object";
+PE_NOT_VPM_OBJECT    = "Object is not a VPM object";
+PE_x_NON_ADDED_OBJECT      = "/P01 /P02 object(s) was(were) not added";
+PE_x_NON_REMOVED_OBJECT    = "/P01 /P02 object(s) was(were) not removed";
+PE_CANNOT_REMOVE_MY_ROLE   = "You cannot remove your roles";
+PE_CANNOT_REMOVE_ROOT_CTX  = "You cannot remove VPMADMIN.ADMIN.DEFAULT context";
+PE_CANNOT_REMOVE_ROOT_ROLE = "You cannot remove VPMADMIN role";
+PE_CANNOT_REMOVE_ROOT_PRJ  = "You cannot remove DEFAULT project";
+PE_CANNOT_DELETE_CURR_USER = "Cannot delete current login user";
+PE_CANNOT_DELETE_CURR_ROLE = "Cannot delete current login role";
+PE_CANNOT_DELETE_CURR_ORG  = "Cannot delete current login user's organization";
+PE_CANNOT_DELETE_CURR_ROLE_ORG  = "Cannot delete current login role's organization";
+PE_CANNOT_DELETE_NULL_OBJECT    = "Cannot delete /P01 object because it is NULL";
+PE_CANNOT_DELETE_ROOT_USER = "Cannot delete root administrator: /P01";
+PE_CANNOT_DELETE_ROOT_ORG  = "Cannot delete root organization";
+PE_OBJ_STILL_OWNS_OBJ      = "/P01 /P02 object(s) is(are) still associated";
+
+// --- Privileges/Rights on objects
+PE_NOT_ADMIN           = "You must use ADMINISTRATION role to realize this operation";
+PE_NOT_IN_DOMAIN       = "/P01 [/P02] does not belong to my domain of influence";
+PE_PRIV_CREATION_NO_DG    = "Privilege could not be created because DataGroup argument is null,\n",
+                            "but process [/P1] requires a not-null DataGroup";
+PE_PRIV_CREATION_PG_NO_DG = "Privilege could not be created because DataGroup argument is null,\n",
+                            "but ProcessGroup [/P1] contains at least one process\n",
+                            "(/P1) requiring a not-null DataGroup";
+
+// --- Session
+SESSION_NONE         = "Could not initialize [/P1]";
+
+INIT_CannotGetADMIN_ERR_0001  = "Cannot get ADMIN domain.
+Check :
+- environment file is correct and references all necessary setting files for database ;
+- VPMAdmin.adm file was properly loaded using LoadAdmin program.";
+
+INIT_CannotGetDomain_ERR_0002  = "Could not find domain [/P1].
+Check domain was imported into database (using LoadAdmin).";
+
+INIT_InvalidNumOfDomains_ERR_1000  = "Invalid number of business domains for PEOPLE [=/p1]
+Expected number is 2 if P&O is customized, 1 otherwise.";
+
+INIT_CannotGetPackage_ERR_1001  = "Could not get domain [/P1].
+Check domain was imported into database (using LoadAdmin).";
+
+INIT_CannotInitPackage_ERR_1002 = "Could not initialize domain [/P1].
+
+This can be due to :
+- the [/P1.metadata] file was not found through $CATDictionaryPath variable
+- in custo mode, the environment file does not concatenate installation and custo path";
+
+// --- Login
+LOGIN_NO_CONNECTION  = "Connection to database was impossible\nThis can be due to :\n- wrong environment\n- database not answering\n- wrong user//password";
+LOGIN_INVALID_POLICY = "A valid role (name.organization) must be specified\nwith EXACT_ROLE policy during login";
+LOGIN_UNKNOWN_ROLE   = "Role /P01 does not exist";
+LOGIN_UNKNOWN_PERSON = "User /P01 is not a recognized person";
+LOGIN_NO_ROLE        = "User /P01 has no role";
+LOGIN_NO_VALID_ROLE  = "User /P01 has no valid role matching login criteria";
+LOGIN_NOT_USER_ROLE  = "User /P01 cannot use /P02 role";
+LOGIN_LICENSE_FAILED    = "VPM Licensing failed";
+LOGIN_VALIDATION_FAILED = "Could not properly end login";
+LOGIN_INVALID_ROLE_ID   = "[/P01./P02] is not a valid role id. Syntax is: <role_name>.<org_id>";
+LOGIN_INVALID_COOKIE    = "Login cookie /P01 is invalid";
+LOGIN_NOT_ONE_OF_MY_ROLES = "Role /P01 is not one of your roles";
+LOGIN_SSO_FAILED          = "Single sign on check failed on server";
+SSO_MISSING_AUTH          = "Could not get user because SSO authentication was not done";
+SSO_MISSING_USER_PWD      = "No valid user/password was provided to authenticate";
+
+// --- Login state
+PE_INVALID_REQ_LEVEL = "Function /P01 requires state level [/P02]. Current level [/P03] is lower";
+
+// --- Access checkings
+CA_INVALID_SEC_ATTR     = "Could not initialise security attributes : /P01";
+CA_CANNOT_RESET_OWNERS  = "Owner attributes are already set. You cannot reset them.";
+CA_NOT_SEC_OBJECT       = "Object /P1 is not a secured object";
+CA_NO_SUCH_PROCESS      = "You are not granted permission to process [/P1]";
+CA_NO_SUCH_DATA_GROUP   = "You are not granted permission to process [/P1],\nbecause the object does not check the condition";
+CA_NO_CONDITION         = "You are not granted permission to process [/P1],\nbecause none of your privileges has a condition";
+CA_OBJECT_HAS_NO_DEF    = "Object of type [/p1] is not valid as it has no dictionary definition";
+CA_PROCESS_REVOKED      = "Access to process [/P1] is REVOKED";
+CA_PROCESS_DG_REVOKED   = "Access to process [/P1] on /P2 is REVOKED";
+CA_PROCESS_NOT_LICENSED = "Process [/p1::/p2] is not licensed";
+RULE_INVALID_ATTR       = "'/P1' is not a valid attribute";
+RULE_INVALID_ENTITY     = "Entity '/P1' does not exist";
+RULE_INVALID_ENTITY_ATTR= "Entity '/P1' has no '/P2' attribute";
+RULE_NOT_AN_AGGR        = "Attribute '/P1' is not an aggregate";
+RULE_NOT_A_REF_AGGR     = "Attribute '/P1' is not a references aggregate";
+RULE_NOT_A_REF          = "Attribute '/P1' is not a reference";
+RULE_COULDNOT_GET_VALUE = "Could not get value for '/P1' attribute";
+RULE_COULDNOT_GET_nVALUE = "Could not get /P1-th value for '/P2' aggregate";
+RULE_COULDNOT_CVT_DATE  = "Could not convert value '/P1' to date";
+RULE_COULDNOT_GET_URL   = "Could dereference URL, because '/P1' has an invalid value";
+RULE_COULDNOT_GET_nURL  = "Could dereference /P1-th URL, because '/P2' has an invalid value";
+RULE_NO_ELEMENTS        = "Aggregate '/P1' is empty";
+RULE_UNSATISFIED        = "'/P1'=/P2, does not verify rule [/P3]";
+RULE_INVALID_OP_TYPE        = "Operator '/P1' cannot be used for secured query filter";
+RULE_INVALID_QUERY_TYPE     = "'/P1' attribute type is invalid for this condition expression";
+RULE_INVALID_QUERY_TYPE_BIN = "'/P1' attribute type is binary, which cannot be supported for secured queries";
+RULE_INVALID_QUERY_PRED     = "[/P1] predicate cannot be used for secured queries";
+RULE_NOTYET_PREDEFINED       = "Predefined data groups '/P1' are not (yet) supported for secured queries";
+RULE_COULDNOT_GET_COND       = "Could not get condition from data group '/P1'";
+RULE_COULDNOT_PARSE_COND     = "Could not parse data group '/P1' condition : [/P2]";
+RULE_COULDNOT_CVT_COND2QUERY = "Could not convert data group '/P1' condition [/P2] for query";
+
+// --- Processes Registration
+REG_UNREGISTERED_METHOD = "No process is registered for class: /P1, method: /P2";
+REG_NO_CLASS_IID        = "No outgoing event interface was declared in register for class: /P1";
+REG_UNKNOWN_CLASS       = "/P1 is not a valid late-typed class";
+REG_INVALID_ARG         = "The supplied /P1 parameter is NULL. ";
+
+// --- Licensing
+
+LIC_Message.error        = "ERROR:";
+LIC_Message.reason       = "Reason:";
+LIC_Message.action       = "Action:";
+LIC_Message.trace        = "Trace:";
+LIC_NotAuthorized.code   = "Product /p1 is NOT AUTHORIZED";
+LIC_Unknown.code         = "Product /p1 has an UNKNOWN STATUS, and thus, could not be AUTHORIZED";
+LIC_VIOLATION_BANNER1    = "Licensing violation has been encountered.";
+LIC_VIOLATION_BANNER2    = "You SHOULD remove all additional person-to-role links to continue administration.";
+LIC_VIOLATION_BANNER3    = "Otherwise, creation/deletion actions are denied.";
+LIC_VIOLATION            = "Licensing violation:\n",
+                           "  /p1 /p2 licenses used on /p3 installed\n",
+                           "  Remove all additional person-to-role links (/p4)";
+LIC_NO_CATICPath.reason  = "CATICPath variable is empty";
+LIC_NO_CATICPath.action  = "Set CATICPath variable in order to find /p1 file";
+LIC_DLL_NOT_FOUND.reason = "/p1 file could not be found in $CATICPath";
+LIC_DLL_NOT_FOUND.action = "1) Check /p1 has been delivered\n",
+                           "2) Check the file can be found using $CATICPath";
+LIC_NO_LICENSE.reason    = "License /p1 could not be requested from LUM servers.";
+LIC_NO_LICENSE.action    = "Check your configuration file (i4ls.ini) in: /p1.\n",
+                           "   The [iFOR/LS NCS-Client] section must reference at least one LUM server\n",
+                           "   on which some /p2 licenses have been installed and are still valid.";
+LIC_TRACE                = "You can insert 'CATLM' trace in your /p1\n",
+                           "in order to see more information about Licensing initialisation";
+
+LIC_UNKNOWN_LICENCE    = "Licence /p1 is unknown (its IdentityCard could not be read)";
+LIC_NOT_ENOUGH_LICENCE = "Not enough /p1 licences: usage=/p2, installed=/p3";
+LIC_NO_MORE_LICENSE    = "No LCA license (/p1) is available (all in use)";
+LIC_LICENSING_REQ_ADMIN= "Licensing can only be managed in Administration mode";
+
+LIC_NO_LICENSE_W_ROLE        = "No license was associated to role(s)";
+LIC_NO_CONCURRENT_LICENSE    = "There is no valid concurrent license on LUM server(s)";
+LIC_NO_LCA_LICENSE           = "There is no valid concurrent LCA license (/p1) on LUM server(s)";
+LIC_NO_LCA_PRODUCT           = "No valid LCA product (/p1) was installed";
+LIC_NO_INSTALLED_LCA_LICENSE = "Installed LCA products are [/p1] while valid concurrent licenses are [/p2]";
+
+UDI_NoWrapper                  = "No UDI wrapper was defined with /p1";
+UDI_CouldNotCreateXMLFromFile  = "Failed to load file /p1 (due to invalid XML structure?)";
+UDI_CouldNotGetMOFRefAttr      = "Failed to get [/p1] attribute of [/p2].\n[/p3] attribute requires this value";
+UDI_CouldNotGetRoot            = "Failed to get root node from [/p1]";
+UDI_CouldNotGetNode            = "Failed to get node [/p1] from [/p2]";
+UDI_CouldNotGetNodeName        = "Failed to get node name of element number /p1 in [/p2]";
+
+// --- POS Events
+EVT_ACTION_VETOED = "Action [/P1] was vetoed by at least one event subscriber";

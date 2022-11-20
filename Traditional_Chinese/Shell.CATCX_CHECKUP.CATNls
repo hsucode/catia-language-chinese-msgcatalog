@@ -1,0 +1,43 @@
+//------------------------------------------------------
+// Resource file for internal Topological Check-Up 
+// En_EN
+//----------------------------------------------------------------------
+// CAUTION : each index is of maximum length of seventy-two characters !
+//-----------------------------------------------------------------------
+//
+//    *******************************************************************
+//    *  SHELL rule : coherence of active body status
+//    *******************************************************************
+//
+Face.Empty="is empty, no face has been found.";
+//
+Face.Twice="contains twice /P2 as components [/P3,/P4] with [/P5,/P6] side.";
+//
+Face.Invalid="is made of NULL Face as component /P2.";
+//
+ActiveBody="Upward Links status in context of active /P2.";
+//
+ActiveBody.Incoherent = "Upward Links status incoherent in context of Active Body /P2.";
+//
+IsAConnexDomain = "is a connex Domain of /P2 faces.";
+//
+IsAConnexDomain.denied= "is made of /P2 faces defining /P3 connex Domains ";
+//
+EulerOnAdjacentLoop.Disoriented =
+"contains /P7 /P3 and /P8 /P4 connected by /P2 with same matter side in shell (adjacents /P5,/P6).";
+//
+//
+EulerOnAdjacentLoop.Morethan2edges =
+"contains at least Three Faces /P3, /P4 and /P5 connected by /P2.";
+//
+//
+//    ******************************************************************
+//    *  TOPOLOGY rule : Check must be done with a topology not touched
+//    ******************************************************************
+//
+Topology.Touched =
+"is a touched topology (temporary attribute for boolean operation or smartduplication).";
+//
+OwnerInBody.many =
+"has many owners in /P4 : (/P5-th inside /P7 of /P2) and (/P6-th inside /P8 of /P3).";
+//

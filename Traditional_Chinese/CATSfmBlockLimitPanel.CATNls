@@ -1,0 +1,39 @@
+Title = "Block Limit Definition";
+ 
+// Type
+// =================================================================================
+
+Frame1.FrameType.LabList.Title = "Type: ";
+
+// Selecteur du plan de reference
+// =================================================================================
+Frame1.RefPlaneFrame.RefPlaneLabel.Title = "Reference element: ";
+Frame1.RefPlaneFrame.RefPlaneLabel.LongHelp = "Specifies the reference plane used to define the block limit.";
+Frame1.RefPlaneFrame.LabelOffValue.Title = "Offset: ";
+// Bouton de choix de l'orientation
+// =================================================================================
+Frame2.ButtonInvert.Title = "Other Side";
+Frame2.ButtonInvert.LongHelp = "Extends the block limit in the direction opposite\nthat shown in the preview.";
+
+// Bouton d'activation de l'orientation management
+// =================================================================================
+Frame2.CheckOri.Title = "Block limit orientation";
+Frame2.CheckOri.LongHelp = "Lets you check and define block limit orientation.";
+
+// Liste du naming des orientations
+// =================================================================================
+FraManagement.FraNameOri.LabListNameOri.Title = "Orientation name: ";
+FraManagement.FraNameOri.LabListNameOri.LongHelp = "Lets you select the correct orientation combination.";
+FraManagement.PushSwitchNameOri.Title = "Switch orientation name";
+FraManagement.PushSwitchNameOri.LongHelp = "Reverses named orientations.";
+
+
+// Bouton d'activation du sketch management
+// =================================================================================
+Frame1.CheckProfiles.Title = "Block limit profiles";
+Frame1.CheckProfiles.LongHelp = "Lets you edit the shape of the block limit.\nBlock limits are defined by two underlying sketches.";
+
+FraSketcher.FraProfile.LabProfile.Title = "Profile:";
+FraSketcher.FraProfile.LabProfile.LongHelp = "Defines the shape of the block limit in the transverse cut of the ship.";
+FraSketcher.FraGuide.LabGuide.Title = "Guide:";
+FraSketcher.FraGuide.LabGuide.LongHelp = "Defines the shape of the block limit in the longitudinal cut of the ship.";

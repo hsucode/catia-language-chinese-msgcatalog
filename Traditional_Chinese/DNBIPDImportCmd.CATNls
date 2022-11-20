@@ -1,0 +1,63 @@
+SessionLockTitle="確認";
+NoE5LockItf="無法鎖定此程序 - 無界面可處理";
+NoWriteLock="此程序已被下列使用者鎖定: /P1 在電腦: /P2";
+NoBlobWriteLock=" detailing 被使用者鎖定: /P1 在電腦: /P2";
+NoChangeRights="您沒有授權更改此程序";
+SessionLockMsg="\n 此文件已被開啟為唯讀模式. \n 將不會儲存文件修改. \n - 繼續嗎 ?";
+DNBIPDImportCmd.InitialState.Message="選擇計劃";
+DNBIPDImportCmd.BrowseProcessState.Message="選擇或搜尋要載入的計劃";
+DNBIPDImportCmd.SelectBlobState.Message="選擇要載入的 detailing";
+DNBIPDImportCmd.SearchPPRState.Message="搜尋程序, 產品或資源";
+DNBIPDImportCmd.SelectProcessState.Message="選擇要載入的程序";
+NoProcessError="所選的產品或資源沒有相關程序";
+InfoNoPrdOrResBom="計劃中未定義 BOM 或資源歷程樹";
+InfoNoPrdBom="計劃中未定義 BOM";
+InfoNoResBom="計劃中未定義資源歷程樹";
+FilterTitleString="過濾" ;
+DocumentReadOnlyTitleString= " (唯讀)" ;
+DocumentPartialReadOnlyTitleString= " (部份唯讀)" ;
+InvalidProcessErrorMsg1 = "無法載入所選程序, \n 它只顯示在計劃資料庫中";
+InvalidProcessErrorMsg2 = "無法載入所選程序, \n 可能被過濾掉了或只顯示在計劃資料庫中";
+SelectErrorTitle = "PPR Hub - 載入程序";
+ErrorTitle = "PPR Hub - 錯誤";
+InfoTitle = "PPR Hub - 資訊";
+
+proc_processes_prod.Title = "處理程序產品";
+proc_creates_prod.Title = "處理建立產品";
+proc_firstprocesses_prod.Title = "處理第一個程序產品";
+proc_removes_prod.Title = "處理移除產品";
+proc_uses_plant.Title = "處理使用資源";
+proc_runningon_plant.Title = "處理執行中的資源";
+
+VersionErrorTitle = "PPR Hub - 版期 / 互換錯誤";
+ParallelVersionErrorMsg = "無法為此計劃建立平行版期, 請在最新版本使用此指令或聯絡系統管理員";
+VersionCreationErrorMsg = "在此計劃建立版本或交換時發生錯誤, \n 可能計劃不允許平行版期, 聯絡系統管理員";
+ParallelVersionAdditionalErrorMsg = "\n\n 所選物件的最新版期為 ( ";
+
+NoProcessSelection.Message="請選擇程序";
+
+LockVersionErrorMsg1="無法所選程序建立版期, 因程序小於 < ";
+LockVersionErrorMsg2=" > 為鎖定的";
+BackButtonTitle="<-- 回復";
+
+CopyErrorMessage="無法建立複製. \n -可能部份程序或相關資源被鎖定 \n -或您已選擇  只在子層開始複製 選項 for a leaf process node.";
+
+NoAddChildInLoadedObject = "您沒有足夠權限可儲存程序模擬. \n 注意: 您可儲存非模擬資料, 以更改 工具 -> 選項設定 來 'Save to PPR Hub with no detailing'";
+
+PlanningStateErrorMsg="因為載入程序不在工作平面狀態, 您無法儲存 Detailing . \n 注意: 您可儲存非模擬資料, 以更改 工具 -> 選項設定 來  'Save to PPR Hub with no detailing'";
+
+OpenedInReadOnlyMode = "開啟為 唯讀- 您無法儲存任何資料在 PPR Hub 中";
+
+InvalidConnection = "Failed to load due to loss of connection to Process Engineer, Please try again by re-connecting";
+
+InvalidConnectionTitle = "Connection Lost";
+PartialReadOnlyMode="開啟為 部份唯讀 - 沒有資料可鎖定, 您無法修改任何載入資料.";
+V5DetailingSave="\n 只可儲存模擬 detailing. \n - 繼續嗎 ?";
+NO_JAVA_HOME="JAVA_HOME environment variable not set. Please set variable pointing to the location of the JDK/JRE installation folder";
+
+ConfirmPromptId="CMC-計畫";
+ConfirmPromptWarningId="警告! \nYou didn't select a Modstatement.\nNo changes in Manufacturing Hub are allowed.";
+
+LicenseError ="授權錯誤";
+LicenseMessage ="未找到 MCM 授權 \nSelected CMC Project cannot be opened without MCM License.";
+

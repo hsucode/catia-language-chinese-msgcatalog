@@ -1,0 +1,60 @@
+// COPYRIGHT DASSAULT SYSTEMES  1997
+//=============================================================================
+//
+// Catalog for CATCheckEditor class
+//
+//=============================================================================
+// 10/22/97   Creation                                   A. Anquetil
+//============================================================================
+
+// Fenetre principal
+//------------------
+CATCheckEditor.ProgramEditor.Title = "規則編輯器";
+
+CATCheckEditor.CheckEditor.Title = "檢查編輯器";
+
+// Liste Category
+//---------------
+CATCheckEditor.slCategory_.Keywords = "重要字元";
+
+// message a la fin de l apply
+//-----------------------------
+CATCheckEditor.Apply = "執行修改";
+
+
+// Label message :
+//-----------------------------------
+CATCheckEditor.lMessage_.Title = " 訊息:";
+
+// Entree par defaut dans la ligne des messages
+//---------------------------------------------
+CATCheckEditor.eComment_.notvalid = "無效的";
+
+// label pour le type de check
+//-----------------------------
+CATCheckEditor.lType_.Title = "檢查形式: ";
+
+// Titre dans la fenetre pour l activite
+//--------------------------------------
+CATCheckEditor.Active = "啟動";
+CATCheckEditor.Desactive = "未啟動";
+
+// Helps
+//---------------------
+CATCheckEditor.Message.LongHelp = "In this field, you can type in the message you want\nto display in the pop-up window when the check\nis in information or warning mode."; 
+CATCheckEditor.Message.Help = "Enter Message";
+
+CATCheckEditor.CheckEditor.Body.LongHelp = "This field is the Check editor.\nA Check is satisfied or not. If not satisfied, you can be informed depending on the check type.\nFor example, if not silent, the following check will inform the user when the two limits of PAD.1 are different\nPartBody\Pad.1\FirstLimit\Length == PartBody\Pad.1\SecondLimit\Length";
+CATCheckEditor.ProgramEditor.Body.Help = "Enter body of the Rule";
+CATCheckEditor.ProgramEditor.Body.LongHelp = "This field is the Rule editor.\nA Rule makes it possible to modify parameters under certain conditions.\nThe following syntax should be used :\n\nif (LENGTH.1 == 20mm)\n       MATERIAL.1 = \"alluminium\"\nelse if (LENGTH.1>20mm)\n          {\n          MATERIAL.1 = \"steel\"\n          Real.5 = 12mm\n          }\nelse\n          MATERIAL.1 = \"brass\"\n\nTo write parameter names you can type the name directly, use\nthe edition dictionary provided below or select the 3D constraints associated\nto the parameter. To display the 3D constraint simply select a\nfeature in the 3D window or feature tree.";
+CATCheckEditor.CheckEditor.Body.Help = "Enter body of the Check"; 
+
+CATCheckEditor.Category.LongHelp = "This edition dictionary will help you write in the editor\nby providing the list of math functions, string fucntions, units and parameters available.\nAn item selected in the dictionary will be copied in the editor field.";
+
+CATCheckEditor.Type.LongHelp = "Select a type for the current check :\n.Silent : The check status is displayed by an icon in the feature tree only.\n.Information : An information message is displayed in a pop-up window.\n.Warning : A warning pop-up will let you cancel the modifications which triggered the warning.";
+
+ApplyOnEmptyMsg="You can't apply with an empty text because this action deletes this feature.\nYou can push OK if you want to delete this feature";
+ApplyOnEmptyHd="Forbidden action";
+
+
+

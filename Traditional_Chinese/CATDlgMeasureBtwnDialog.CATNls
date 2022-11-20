@@ -1,0 +1,216 @@
+CommandModeDialogTitle = "之間量測";
+EditModeDialogTitle = "之間量測(編輯)";
+
+CancelButton="關閉";
+
+//
+// Meas types
+//
+MeasBtwnTypeSeparate = "之間量測";
+MeasBtwnTypeChain = "鏈式之間量測";
+MeasBtwnTypeFan = "扇形模式之間量測";
+MeasBtwnTypeItem = "量測項目";
+
+//
+// Input selection types
+//
+MeasInputTypeAnyGeometry = "任何幾何";
+MeasInputTypeAnyGeometryInfinite = "任何幾何, 無限制";
+MeasInputTypePointOnly = "只允許點";
+MeasInputTypeEdgeOnly = "只允許邊線";
+MeasInputTypeSurfaceOnly = "只允許曲面";
+MeasInputTypeProductOnly = "只有產品";
+MeasInputTypePointOnGeometry = "選取點";
+MeasInputTypeIntersection = "相交";
+MeasInputTypeEdgelimits = "邊線限制";
+MeasInputTypeArcCenter = "弧中心";
+MeasInputTypeCoordinate = "座標";
+MeasInputTypePickingAxis = "選取軸";
+MeasInputTypeCenterArc3Pts = "三點圓弧的中心";
+
+//
+// Mode of calculation types
+//
+MeasModeOfCalcExactThenApprox = "精準再近似";
+MeasModeOfCalcExact           = "精準";
+MeasModeOfCalcApprox          = "近似";
+MeasModeOfCalcUnknown         = "未知";
+
+//
+// Finite / Infinite combo
+//
+MeasBtwnFinite = "有限";
+MeasBtwnInfinite = "無限";
+
+
+// definition of Graph 
+CATDlgMeasureBtwnDialog.CATSiLaMeasureBetwCmd.Ref3PtsStateId="選擇三點";
+//
+// Help messages written in main window footer
+//
+RefAnyGeometryMsg = "指定量測參考項目";
+RefPointOnlyMsg = "指定量測參考點";
+RefEdgeOnlyMsg = "指定量測參考邊界";
+RefSurfaceOnlyMsg = "指定量測參考曲面";
+RefPtOnGeometryMsg = "指定幾何上的一點來做量測參考";
+RefPrimaryIntersectionMsg = "指定相交的第一項目";
+RefSecondaryIntersectionMsg = "指定相交的第二項目";
+RefEdgeLimitsMsg = "指定限制將會使用的邊";
+RefArcCenterItemMsg = "指定將會使用中心的弧";
+RefCoordinateMsg = "請輸入量測的參考座標值";
+
+TargetAnyGeometryMsg = "指定量測的目標項目";
+TargetPointOnlyMsg = "指定量測目標點";
+TargetEdgeOnlyMsg = "指定量測目標邊界";
+TargetSurfaceOnlyMsg = "指定量測目標曲面";
+TargetPtOnGeometryMsg = "指定幾何上的一點來做量測目標";
+TargetPrimaryIntersectionMsg = "指定相交的第一項目";
+TargetSecondaryIntersectionMsg = "指定相交的第二項目";
+TargetEdgeLimitsMsg = "指定限制將會使用的邊";
+TargetArcCenterItemMsg = "指定將會使用中心的弧";
+TargetCoordinateMsg = "請輸入量測的目標座標值";
+
+//
+// Input controls
+//
+DefinitionFrame.Title = "定義";
+DefinitionFrame.SubDefinitionFrame1.ComboFrame.ReferenceLabel.Title = "選擇 1 模式:";
+DefinitionFrame.SubDefinitionFrame1.ComboFrame.TargetLabel.Title = "選擇 2 模式:";
+DefinitionFrame.SubDefinitionFrame2.ModeOfCalcLabel.Title = "計算模式:";
+DefinitionFrame.SubDefinitionFrame2.OtherAxisCheckBut.Title = "其它軸 :";
+
+DefinitionFrame.MeasBtwnTypeLabel.Title = "量測型式:";
+DefinitionFrame.ReferenceLabel.Title = "選擇 1 模式:";
+DefinitionFrame.TargetLabel.Title = "選擇 2 模式:";
+DefinitionFrame.GlobalAxisCheckBut.Title = "主要軸";
+DefinitionFrame.OtherAxisCheckBut.Title = "其它軸 :";
+
+
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnPushButton.Title           = "之間量測";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnPushButton.ShortHelp       = "之間量測";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnPushButton.Help            = "兩選擇之間量測";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnPushButton.LongHelp        = "兩選擇之間量測";
+
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnChainPushButton.Title           = "量測連續模式";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnChainPushButton.ShortHelp       = "量測連續模式";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnChainPushButton.Help            = "兩選擇之間量測連續模式";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnChainPushButton.LongHelp        = "兩選擇之間量測連續模式";
+
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnFanPushButton.Title           = "量測 FAN 模式";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnFanPushButton.ShortHelp       = "之間量測 FAN 模式";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnFanPushButton.Help            = "兩選擇之間量測 FAN 模式";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnFanPushButton.LongHelp        = "兩選擇之間量測 FAN 模式";
+
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemPushButton.Title           = "量測項目";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemPushButton.ShortHelp       = "量測項目";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemPushButton.Help            = "提供項目特性";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemPushButton.LongHelp        = "提供項目特性";
+
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemThickPushButton.Title           = "量測厚度";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemThickPushButton.ShortHelp       = "量測厚度";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemThickPushButton.Help            = "在曲面上所選的點上沿著垂直方向來量測厚度.";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemThickPushButton.LongHelp        = "在曲面上所選的點上沿著垂直方向來量測厚度.";
+
+
+//
+// Type of Selection
+//
+PointLabel   = "點";
+EdgeLabel    = "邊";
+LineLabel    = "線";
+ArcLabel     = "弧";
+CurveLabel   = "曲線";
+SurfaceLabel = "曲面";
+PlaneLabel   = "平面";
+CylinderLabel = "圓柱";
+SphereLabel   = "球";
+VolumeLabel  = "體積";
+
+EllipseLabel   = "橢圓";
+ParabolaLabel  = "拋物線";
+HyperbolaLabel = "雙曲線";
+
+OnLabel = " 上 ";
+InLabel = " 內 ";
+
+
+//
+// Minimum distance labels
+//
+ResultsFrame.Title = "結果";
+ResultsFrame.LabelFrame.ModeOfCalcRes.Title   = "計算模式:     ";
+ResultsFrame.LabelFrame.SelectionLabel1.Title = "選擇 1:";
+ResultsFrame.LabelFrame.SelectionLabel2.Title = "選擇 2:";
+ResultsFrame.LabelFrame.MinDistValue.Title = "最小距離:";
+ResultsFrame.LabelFrame.MaxDistValue.Title = "最大距離:";
+ResultsFrame.LabelFrame.CurveLengthValue.Title = "曲線長度:";
+ResultsFrame.LabelFrame.MinDistComponents.Title = "分件:";
+ResultsFrame.DataFrame.MinDistComponents.XLabel.Title = "X";
+ResultsFrame.DataFrame.MinDistComponents.YLabel.Title = "Y";
+ResultsFrame.DataFrame.MinDistComponents.ZLabel.Title = "Z";
+ResultsFrame.LabelFrame.MinDistRefPt.Title = "點 1:";
+ResultsFrame.DataFrame.MinDistRefPt.XLabel.Title = "X";
+ResultsFrame.DataFrame.MinDistRefPt.YLabel.Title = "Y";
+ResultsFrame.DataFrame.MinDistRefPt.ZLabel.Title = "Z";
+ResultsFrame.LabelFrame.MinDistTargetPt.Title = "點 2:";
+ResultsFrame.DataFrame.MinDistTargetPt.XLabel.Title = "X";
+ResultsFrame.DataFrame.MinDistTargetPt.YLabel.Title = "Y";
+ResultsFrame.DataFrame.MinDistTargetPt.ZLabel.Title = "Z";
+
+ResultsFrame.LabelFrame.PointDistMax1Label.Title = "最大點 1:";
+ResultsFrame.DataFrame.PointDistMax1Editor.XLabel.Title = "X";
+ResultsFrame.DataFrame.PointDistMax1Editor.YLabel.Title = "Y";
+ResultsFrame.DataFrame.PointDistMax1Editor.ZLabel.Title = "Z";
+
+ResultsFrame.LabelFrame.PointDistMax2Label.Title = "最大點 2:";
+ResultsFrame.DataFrame.PointDistMax2Editor.XLabel.Title = "X";
+ResultsFrame.DataFrame.PointDistMax2Editor.YLabel.Title = "Y";
+ResultsFrame.DataFrame.PointDistMax2Editor.ZLabel.Title = "Z";
+
+ResultsFrame.LabelFrame.Angle.Title = "角度 :";
+
+ResultsFrame.MeasBtwnInvertButton.Title = "逆轉數值";
+
+CustomiseFrame.CreateGeometry.Title = "建立幾何";
+CustomiseFrame.Export.Title = "輸出...";
+CustomiseFrame.Customise.Title = "自訂...";
+CustomiseFrame.KeepState.Title = "保持量測";
+
+
+// SpacerLabel enables offset equivalent to X or Y or Z
+SpacerLabel = "   ";
+
+//
+// Coordinate entry
+//
+RefCoordEntryTitle = "參考座標";
+TargetCoordEntryTitle = "目的座標";
+
+MesureTooFarTitle = "警告";
+MesureTooFar = "所選兩元素間的距離已超過系統可顯示的距離. \n 
+請參考對話框所顯示的數值";
+
+// Commande de Notify
+
+Information = "資訊";
+MeasureBtwnDelete = "之間量測已取消, 因為其中之一的選擇已不存在.";
+MaxDistanceNoSolution = "計算最大距離無解. \n 量測沒有修改.";
+AxisNoSelection = "沒有選擇";
+AxisUnknown = "v4 軸系";
+
+//Menu Contextuel
+PointPushButton = "選擇點";
+ArcCenterPushButton = "選擇弧中心";
+InfiniteEdgePushButton = "選擇無限邊線";
+EdgeOnlyPushButton = "只選擇邊線";
+EdgeLimitPushButton = "選擇邊線限制";
+AxisSurfacePushButton = "選擇曲面軸";
+InfinitePlanePushButton = "選擇無限平面";
+SurfaceOnlyPushButton = "只選擇曲面";
+VolumePushButton = "選擇體積";
+ProductPushButton = "選擇產品";
+PickPointPushButton = "建立選取點";
+PickAxisPushButton = "建立選取軸";
+
+// JXO - pour se premunir d'un CD
+MeasureBetweenInLCAAndReview = "連接至 VPM V5 未授權在檢視中量測. \n 請關閉您的 DMU 檢視.";

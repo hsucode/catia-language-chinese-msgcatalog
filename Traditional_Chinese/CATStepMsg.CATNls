@@ -1,0 +1,59 @@
+// ==============================================================================================
+// Messages STEP
+// 
+// 16/10/2002: JHH : Creation
+// 25/06/2003: ARH : InvalidPositionOfComponent
+// 08/09/2003: ARH : OldStyleAssemblyStructure et DuplicatedProduct
+// 05/01/2004: ARH : DuplicatedProduct a l'export
+// 08/04/2004: ARH : RI446208: message
+// 04/06/2004: ARH : RI453883: message AssemblyCycle et AssemblyAsPart
+// 08/06/2004: ARH : RI455372: message WrongHeader
+// 20/07/2004: JHH : Modification message OldStyleAssemblyStructure (devient une information)
+// 22/10/2004: ARH : RI470187: message ErrorWriting
+// ==============================================================================================
+
+CATStepMsg.Imp.InvalidStepFile =
+"<E> 讀取 STEP 檔案時發生錯誤: ";
+
+CATStepMsg.Imp.WrongHeader =
+"<E> STEP 檔案無效 : 檔頭不完全";
+
+CATStepMsg.Exp.ErrorWriting =
+"<E> 寫入 STEP 檔案時發生錯誤";
+
+CATStepMsg.Imp.TooManySDAIerrors =
+"<E> 在 STEP 檔案中發生 50 個錯誤; 下一個錯誤將不會報告.";
+
+CATStepMsg.SimpleMsg =
+"/p1";
+
+CATStepMsg.Exp.InvalidPositionOfComponent =
+"<E>  '/p1' 產品 '/p2' 的元件  '/p1' 被 /p3 不正確的定位";
+
+CATStepMsg.Imp.OldStyleAssemblyStructure =
+"<I> 舊有型式組立特徵."; 
+
+CATStepMsg.Imp.DuplicatedProduct =
+"<E> 組立產品架構中有數個產品名稱為 '/p1' ";
+
+CATStepMsg.Exp.DuplicatedProduct =
+"<W> 重覆的產品 '/p1' 改名為 '/p2'";
+
+CATStepMsg.Exp.FlexibleProduct =
+"<W> 彈性產品 '/p1' 輸出為新產品";
+
+CATStepMsg.Exp.MissingDocument =
+"<E> 文件中與零件號碼 '/p1' 相關的遺失";
+
+CATStepMsg.Exp.WrongWire =
+"<E> 線 '/p1' 未輸出";
+
+CATStepMsg.Imp.AssemblyCycle =
+"<E> 產品 /p1 和 /p2 間的組立架構循環";
+
+CATStepMsg.Imp.AssemblyAsPart =
+"<E> 組立架構不正確. 幾何只是 transcribed";
+
+CATStepMsg.Imp.MatrixInvalide =
+"<W> 產品 '/p1' 的複件位置錯誤. 矩陣無效";
+

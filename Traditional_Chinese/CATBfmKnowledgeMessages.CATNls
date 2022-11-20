@@ -1,0 +1,59 @@
+UniqueIdRule.ShortMsg = "The /p1 fastener identifier already exists";
+UniqueIdRule.LongMsg  = "The following fasteners have common identifiers";
+
+SpotSpacingRule.ShortMsg = "Fasteners /p1 and /p2 spacing is less than\n",
+                           "the minimum of /p3";
+SpotSpacingRule.LongMsg  = "The following fasteners spacing is less than\n",
+                           "the minimum of /p1";
+
+MaxThickCountRule.ShortMsg = "The thickness count of /p1\n",
+                             "is not in the interval [/p2]";
+MaxThickCountRule.LongMsg  = "The thickness count of the following Joint Bodies\n",
+                             "is not in the interval [/p1]";
+
+ThicknessGapRule.ShortMsg = "Some gaps between crossed thicknesses of /p1\n",
+                            "are not in the interval [/p2] or cannot be computed";
+ThicknessGapRule.LongMsg = "Some gaps between crossed thicknesses of the following fasteners\n",
+                           "are not in the interval [/p1] or cannot be computed (N/A)";
+
+ForecastCountRule.ShortMsg = "Fastener count of /p1 does not match the forecast";
+ForecastCountRule.LongMsg = "The fastener count of the following containers\n",
+                            "does not match the forecast";
+
+ThickCrossingRule.ShortMsg = "Fastener /p1 does not cross all specified thicknesses";
+ThickCrossingRule.LongMsg = "The following fasteners do not cross all thicknesses\n",
+                            "specified by parent Joint Body";
+
+PointOnSurfRule.ShortMsg = "Fastener /p1 does not lie on a surface";
+PointOnSurfRule.LongMsg = "The following fasteners do not lie on a surface\n",
+                          "or cannot be projected on any surface (N/A)";
+
+PointNormalDevRule.ShortMsg = "Fastener /p1 specified normal vector is not set or deviates from computed normal vector";
+PointNormalDevRule.LongMsg  = "The following fasteners either have no specified normal vector (N/A)\n",
+                              "or it deviates from the one computed with respect to closest surface";
+
+ThickNormalsAlignRule.ShortMsg	= "Thicknesses normals of fastener /p1 are not aligned";
+ThickNormalsAlignRule.LongMsg	= "Thicknesses normals of the following fasteners are not aligned\n",
+							                  "or it deviates from the fasteners normals more than angular tolerance parameter";
+
+ThicknessRatioRule.ShortMsg	= "Maximum/Minimum thickness ratio of fastener /p1\n",
+                              "is higher than the maximum of /p2 or cannot be computed (N/A)";
+ThicknessRatioRule.LongMsg	= "Maximum/Minimum thickness ratio of following fasteners are higher\n",
+							                "than the maximum of /p1 or cannot be computed (N/A)";
+
+SpotCenterEdgeRule.ShortMsg = "Distance from fastener /p1 center to closest free edge is less than /p2";
+SpotCenterEdgeRule.LongMsg  = "Following fasteners center distance to closest free edge is less than /p1";
+
+SpotCircleEdgeRule.ShortMsg = "Distance from fastener /p1 border to closest free edge is less than /p2";
+SpotCircleEdgeRule.LongMsg  = "Following fasteners border distance to closest free edge is less than /p1";
+
+DiamOverhangRule.ShortMsg = "Diameter overhang distance of fastener /p1 is higher than /p2";
+DiamOverhangRule.LongMsg  = "Following fasteners diameter overhang distance is higher than /p1";
+
+CompareFastRule.ShortMsg = "Included fasteners of both selected Joint Bodies differ each others";
+CompareFastRule.LongMsg  = "Included fasteners of both selected Joint Bodies differ each others";
+
+SeriesAnnotationF1Rule.ShortMsg = "he Series Annotation of /p1 is not valid";
+SeriesAnnotationF1Rule.LongMsg = "The Series Annotation Name and Count of the following fasteners\n",
+                                 "are not valid";
+ 

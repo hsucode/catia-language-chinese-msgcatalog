@@ -1,0 +1,40 @@
+//=============================================================================
+//                                     CNEXT - CXR5
+//                          COPYRIGHT DASSAULT SYSTEMES 2004 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATEcwElecCableDBSetWPContextCmd.CATNls
+// FRAMEWORK   :    CATEcwDBUI
+// AUTHOR      :    ttm
+// DATE        :    September 2004
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Plant Ship Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//------------------------------------------------------------------------------
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// DialogEngine state prompts 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATEcwElecCableDBSetWPContextCmd.OKCancelState.Message="OK to Set Context";
+
+OKToSetContextTitle="Electrical Cable Database Set Context";
+OKToSetContextText=
+"In order to route or validate cables in ECR a work package\n
+context must be defined.  Since the Electrical Database may\n
+contain work package data exported for a different configuration\n
+it is required to define the pertinent work packages to be used.\n
+The context will be valid until you exit catia or reset the context.\n
+Is the list of work packages displayed all the work packages\n
+exported for this configuration?"; 
+CATEcwElecCableDBSetWPContextCmd.ErrCouldNotSetContext.Message = 
+"Set context failed.  No work packages found with a discipline of\n
+Equipment, Schematic, or Cableway.";
+CATEcwElecCableDBSetWPContextCmd.ErrWPOutOfDate.Message = 
+"One of the electrical work packages in the tree is out of date.\n
+Use the export command to reexport the out of date work package.";

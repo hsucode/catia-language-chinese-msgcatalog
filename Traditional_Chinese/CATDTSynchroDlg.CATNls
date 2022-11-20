@@ -1,0 +1,54 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+Title = "Manage Design Tables";
+ButtonsFrame.SynchroButton.Title = "Synchronize";
+ButtonsFrame.SynchroAllButton.Title = "Synchronize All";
+ButtonsFrame.SaveAsButton.Title = "Create New File...";
+ButtonsFrame.ChangeFileButton.Title = "Select New File...";
+ButtonsFrame.Empty1.Title = "  ";
+ButtonsFrame.Empty2.Title = "  ";
+ButtonsFrame.SynchroPDMButton.Title = "Synchronize (Enovia)";
+HelpLabel.Title = "Help";
+// END WIZARD REPLACEMENT ZONE
+ListTitle="名稱";
+State="狀態";
+SynchroOK="設計表已成功同步化";
+SynchroKO="設計表同步化時發生錯誤";
+ChangeFileOK="設計表檔案成功被更換";
+ChangeFileKO="設計表檔案更換時發生錯誤";
+SaveAsFileOK="設計表中資料存成新檔案";
+SaveAsFileKO="儲存設計表中資料為新檔案時發生錯誤";
+Desynchronized="檔案被修改. 設計表未同步化";
+FileNotReadableData="檔案無法讀取. 設計表含有資料";
+FileNotReadableNoData="檔案無法讀取. 設計表中未含有資料";
+FileNotFoundNoData="檔案遺失且設計表中未含有資料";
+FileNotFoundData="檔案遺失且設計表中含有資料";
+File="檔案 : ";
+NotFound="未找到";
+FileModifiedDataInside="上列檔案已修改, 且舊的資料在 model 入. \n 您可與新檔案同步化這些資料或保留舊資料";
+NotReadableDataInside="The above file is not readable on this system, but design table contains file data.\nYou can either save these data in a new file (this file will be the new source of the design table)\nor do nothing";
+NotReadableNoData="The above file is not readable on this system, and design table contains no data.\nYou can choose a new file as the design table source to heal this design table";
+SynchroOKLong="The design table has been successfully synchronized with file data";
+SynchroKOLong="An error was raised during the synchronization. You have to edit the design table source file to fix\nthe problem, and then maybe modify the design table";
+ChangeFileOKLong="The source file of the design table was successfully changed to above file";
+SaveAsFileOKLong="The data contained in the design table was successfully saved to above file.\nThe source file of the design table is now above file";
+ChangeFileKOLong="There was an error raised during the change of design table source file. It can be because the selected file was not found or has a wrong format, or it has two columns that have the same name";
+SaveAsFileKOLong="There was an error raised during the save of new file, maybe because you do not have the right to write in the selected directory";
+NotFoundDataInside="The above file couldn't be found, but design table contains file data.\nYou can either save these data in a new file (this file will be the new source of the design table)\nor do nothing";
+NotFoundNoDataInside="The above file couldn't be found, and design table contains no data.\nYou can choose a new file as the design table source to heal this design table";
+
+ProjectionOK="The design table was successfully synchronized";
+ProjectionKO="Error raised during Enovia synchronisation";
+SynchroLastOK="The design table was successfully synchronized on last version";
+SynchroLastKO="Error raised during Enovia synchronisation on last version";
+Editable=". File is editable";
+NotEditable=". Le File is not editable";
+EnoviaFile="The source of this design table is managed by Enovia LCA.\nThe table has data inside so synchronization is optional.\nThe synchronization is going to project the current version of the source and eventually suggest\na synchronization with upper version of the design table source";
+EnoviaFileShort="Source managed by Enovia LCA";
+SynchroLastVersion="The design table has been synchronized with the current version of its source.\n\nThere is an upper version on which the table can be synchronized.\nDo you want to do it now?";
+ProjectionOKLong="The synchronization on current version has been done.\nThe file projection if this source is : /P1";
+ProjectionKOLong="The synchronization with current version has failed.";
+SynchroLastOKLong="\nThe synchronization with last version succeeded";
+SynchroLastKOLong="\nThe synchronization with last version has failed";
+EditableLong="\nThis version can be edited";
+NotEditableLong="\nThis version can not be edited. You have to CheckOut the source in Enovia to have edition rights";
+

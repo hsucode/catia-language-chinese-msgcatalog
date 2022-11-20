@@ -1,0 +1,194 @@
+//---------------------------------------------------------------------------
+//  DIALOGUE COMMON TO ALL WINDOWS
+//---------------------------------------------------------------------------
+
+BOK = "< 上一步" ;
+BCancel = "下一步 >" ;
+BApply = "取消" ;
+
+CATInsErrWindow.Title = "錯誤";
+
+//---------------------------------------------------------------------------
+//  SETUP WINDOW 
+//---------------------------------------------------------------------------
+
+Setup.Title = "分配塗彩設定";
+ErrorWindow.Title = "錯誤";
+
+//---------------------------------------------------------------------------
+// ERRORS INIT
+//--------------------------------------------------------------------------
+ErrorSRCDIR = "錯誤: SRCDIR 未設定 \n";
+ErrorSTARTDIR = "錯誤: STARTDIR 未設定 \n";
+ErrHOME="錯誤: 原點未設定 \n";
+NotRoot =  "您必須以 super-user(root) 權限來安裝 \n\ 請以 super-user 來執行下列指令 :\nsu - root \nor  login root\nThen rerun /p1\/start \n";
+NotAdministratorBatch="需要管理者權限來安裝程式.";
+ErrOpenLog ="警告: 無法開啟記錄檔案 /p1 \n";
+ErrWndErrorWriteLog="警告: 無法寫入檔案 /p1\n";
+ErrNoSpaceRootHome=" /p1 沒有足夠的空間 - 至少需要 /p2 Kb\n";	  
+//--------------------------------------------------------------------------
+//  WELCOME 
+//---------------------------------------------------------------------------
+
+WndWelcome.Title     = "歡迎";
+Welcome.Label1.Title = "歡迎至分配塗彩設定安裝程式. 此程式" ;
+Welcome.Label2.Title = "將會安裝衛星檔案至您的電腦." ;
+Welcome.Label3.Title = "\n";
+Welcome.Label4.Title = "按一下取消退出安裝程式. 按一下下一步來繼續.";
+Welcome.Label5.Title = "\n";
+Welcome.Label6.Title = "\n";
+Welcome.Label7.Title = "\n";
+
+
+//---------------------------------------------------------------------------
+//  DESTINATION DIRECTORY
+//---------------------------------------------------------------------------
+
+WndDestination.Title       = "選擇安裝位置";
+Destination.Label1.Title   = "將會安裝衛星檔案至下列目錄:";
+Destination.Label2.Title   = "要安裝至下列目錄, 按一下下一步.";
+Destination.Label3.Title   = "\n";
+Destination.Label4.Title   = "\n";
+Destination.Label5.Title   = "\n";
+Destination.Label6.Title   = "您可按一下取消, 退出安裝分配塗彩設定安裝程式.";
+Destination.Label7.Title   = "\n";
+Destination.Label8.Title = "所需大小 : /p1 Kb\n";
+Destination.Label9.Title   = "\n";
+Destination.Frame.Title    = "安裝目錄"; 
+Destination.Frame.BrowsePushButton.Title="瀏覽...";
+QtnWndCreateDirectory.Title = "確認建立目錄";
+QtnWndCreateDirectory.Text = "目錄 \n/p1\n 不存在.\n 您要建立目錄嗎? \n";
+QtnWndDeleteDirectory.Title = "確認移除目錄.";
+QtnWndDeleteDirectory.Text = "目錄 /p1 已存在. \n 您要移除目錄嗎? \n";
+
+//---------------------------------------------------------------------------
+//  ERROR MESSAGES: DESTINATION DIRECTORY  
+//---------------------------------------------------------------------------
+ErrWndCreateDir.Title = "錯誤";
+ErrWndCreateDir.Text = "建立目錄錯誤 :\n/p1\n/p2\n";
+ErrWndBadDir.Title   = "錯誤";
+ErrWndBadDir.Text    = "安裝目錄不正確 \n";
+ErrWndEmptyDir.Title = "錯誤";
+ErrWndSyntaxDir.Title = "錯誤";
+ErrWndSyntaxDir.Text = "目錄文法不正確. \n 不允許空白字元和 tab .\n";
+ErrWndStatFile.Title = "錯誤";
+ErrWndStatFile.Text = "目錄存取錯誤: \n/p1\n\n/p2\n";
+ErrWndAvailSpace.Title = "錯誤";
+ErrWndAvailSpace.Text = "可用空間計算:\n/p1\n/p2\n";
+ErrWndRequiredSpace.Title = "錯誤";
+ErrWndRequiredSpace.Text = "可用空間計算:\n/p1/p2\n";
+ErrWndOpenExistingFile.Title = "錯誤";
+ErrWndOpenExistingFile.Text = "無法開啟 %s 檔案.\n%s\n";
+
+
+ 
+
+
+//---------------------------------------------------------------------------
+//  RECAP
+//---------------------------------------------------------------------------
+
+WndResume.Title              = "開始複製檔案";
+Resume.Label1.Title          = "安裝程式已有足夠資訊可開始安裝程式.";
+Resume.Label2.Title          = "\n";
+Resume.Label3.Title          = "如您要修改任何設定請按 上一步.";
+Resume.Label4.Title          = "如果要繼續, 請按下一步開始安裝程式.";
+Resume.Label5.Title          = "\n";
+Resume.SettingLabel.Title    = "目前設定";
+Resume.Satellit              ="衛星檔案安裝";
+Resume.Satellit.Unload       = "安裝目錄: /p1";
+Resume.Satellit.Need         = "所需空間  : /p1 KB";
+Resume.Satellit.Avail        = "可用空間 : /p1 KB";
+Resume.BCancel              = "安裝";
+
+
+//---------------------------------------------------------------------------
+// COPY FILES 
+//---------------------------------------------------------------------------
+
+Transfer.Title         ="衛星檔案安裝";
+Transfer.Label1.Title  = "開始複製檔案 ...";
+Transfer.Label2.Title  = "\n";
+Transfer.Label3.Title  = "\n";
+Transfer.BCancel       = "取消" ;
+
+//---------------------------------------------------------------------------
+//   ERROR MESSAGES: COPY FILES  
+//---------------------------------------------------------------------------
+
+ErrWndTransfer.Title = "錯誤";
+ErrWndTransfer.Text  = "複製檔案錯誤. \n 請連絡系統管理員. \n";
+ErrWndNothingToUnload.Title = "錯誤";
+ErrWndNothingToUnload.Text = "沒有檔案可複製...?\n";
+ErrWndInterruptButton.Title = "錯誤";
+ErrWndInterruptButton.Text = "";
+InformationWindow.ErrWndInterruptButton.Title = "中斷進行中 ...\n";
+
+
+//---------------------------------------------------------------------------
+//  FINISH 
+//---------------------------------------------------------------------------
+WndFinish.Title        = "安裝完成";
+Finish.LabelInterrupt1.Title = "設定已中斷.";
+Finish.LabelInterrupt2.Title = "\n";
+Finish.LabelInterrupt3.Title = "詳細資料請參考 /p1";
+Finish.LabelInterrupt4.Title = "\n";
+Finish.LabelInterrupt5.Title = "\n";
+Finish.LabelTransferKO1.Title = "安裝轉換失敗.";
+Finish.LabelTransferKO2.Title = "\n";
+Finish.LabelTransferKO3.Title = "詳細資料請參考 /p1";
+Finish.LabelTransferKO4.Title = "\n";
+Finish.LabelTransferKO5.Title = "\n";
+Finish.LabelOKStart1.Title = "已安裝衛星檔案至您的電腦.";
+Finish.LabelOKStart2.Title = "\n";
+Finish.LabelOKStart3.Title = "\n";
+Finish.LabelOKStart4.Title = "\n";
+Finish.LabelOKStart5.Title = "\n";
+Finish.BCancel = "完成";
+
+
+//---------------------------------------------------------------------------
+//  EXIT 
+//---------------------------------------------------------------------------
+
+Exit.Title        = "退出安裝程式";
+Exit.Label1.Title = "安裝程式未完成. 如您現在退出安裝程式";
+Exit.Label2.Title = "將不會安裝程式.";
+Exit.Label3.Title = "您可以待會再安裝";
+Exit.Label4.Title = "程式.";
+Exit.Label5.Title = "\n";
+Exit.Label6.Title = "要繼續安裝程式, 請按回復.";
+Exit.Label7.Title = "\n";
+Exit.Label8.Title = "退出安裝程式, 請按退出安裝.";
+Exit.BCancel      = "退出安裝.";
+Exit.BOK          = "回復.";
+
+//-----------
+// ERRORS
+//-----------
+ErrInterrupt="命令由訊號 /p1 中斷 \n";
+
+
+
+//---------------------------------------------------------------------------
+// BATCH
+//---------------------------------------------------------------------------
+
+ErrWndDestination.Title = "錯誤";
+createdirfailed = "安裝程式無法建立 /p1 : /p2\n";
+Option_rmdirRequiredWIN = "檔案夾 /p1 是空的. 需要選項 -rmdir 來安裝至檔案夾 \n";
+Option_rmdirRequiredUNIX= "檔案夾 /p1 是空的. 需要選項 -rmdir 來安裝至檔案夾 \n";
+rmdirfailed = "安裝程式無法刪除 /p1 : /p2\n";
+NoRightsWriteWIN = "安裝程式沒有寫入檔案夾 /p1 的權限\n";
+NoRightsWriteUNIX = "安裝程式沒有寫入檔案夾 /p1 的權限\n";
+NotEnoughSpace= " 安裝程式沒有足夠的空間 /p1\n 可用空間: /p2 Kb\n 所需空間: /p3 Kb\n";
+
+//----------------------
+// HELP
+//---------------------
+Help.Usage       = "用法:\n";
+Help.CommandLine = "startsatb [-u unload_dir] [-rmdir] [-v] [-h]\n";
+Help.Unload      ="-u unload_dir        : 指定安裝目錄.\n";
+Help.rmdir       ="-rmdir               : 刪除卸載目錄, 如已存.\n";
+Help.v           ="-v                   : 說明模式.\n";
+Help.Help        ="-h                   : 顯示說明.\n";

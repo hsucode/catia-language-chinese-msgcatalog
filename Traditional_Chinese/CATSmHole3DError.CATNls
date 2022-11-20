@@ -1,0 +1,67 @@
+// COPYRIGHT Dassault Systemes 2002
+//===================================================================
+//
+// CATSmHole3DError.CATNls
+// Error Catalog used for Hole3D feature
+//
+//===================================================================
+//
+// Usage notes:
+//
+//===================================================================
+//  NBM
+//===================================================================
+
+CATSmHole3DError_ERR_0001.Request    = "Build of /p1 failed.";
+CATSmHole3DError_ERR_0001.Diagnostic = "An unexpected error occured during the build.";
+CATSmHole3DError_ERR_0001.Advice     = "";
+
+CATSmHole3DError_ERR_0002.Request    = "The hole diameter value must be lower";
+CATSmHole3DError_ERR_0002.Diagnostic = "than the thread diameter value.";
+CATSmHole3DError_ERR_0002.Advice     = " ";
+
+CATSmHole3DError_ERR_0003.Request    = "The thread depth value must be";
+CATSmHole3DError_ERR_0003.Diagnostic = "lower or equal to the total depth value.";
+CATSmHole3DError_ERR_0003.Advice     = "";
+
+CATSmHole3DError_ERR_0004.Request    = "The hole can not be performed.";
+CATSmHole3DError_ERR_0004.Diagnostic = "You can not make a hole on this area.";
+CATSmHole3DError_ERR_0004.Advice     = "Try to use the hole normal to the sheet.";
+
+CATSmHole3DError_ERR_0005.Request    = "You want to set a support for a hole.";
+CATSmHole3DError_ERR_0005.Diagnostic = "This support is invalid. It must be a top face or a bottom face.";
+CATSmHole3DError_ERR_0005.Advice     = "Select a top face or a bottom face of a sheet metal part.";
+
+CATSmHole3DError_ERR_0006.Request    = "The hole can not be performed.";
+CATSmHole3DError_ERR_0006.Diagnostic = "The hole impact multi supports.";
+CATSmHole3DError_ERR_0006.Advice     = "You can make a hole only on a single face.";
+
+CATSmHole3DError_ERR_0007.Request    = "You want to set a support for a hole.";
+CATSmHole3DError_ERR_0007.Diagnostic = "This support is invalid. It must be a planar surface.";
+CATSmHole3DError_ERR_0007.Advice     = "Do you want to use the hole normal to the sheet.";
+
+CATSmHole3DError_ERR_0008.Request    = "You want to set a support for a hole.";
+CATSmHole3DError_ERR_0008.Diagnostic = "This support is not a planar surface but is valid since you deactivated the other view.";
+CATSmHole3DError_ERR_0008.Advice     = "If you activate the other view and update the part the hole creation will fail.";
+
+CATSmHole3DError_ERR_0009.Request    = "The hole can not be performed in dual view.";
+CATSmHole3DError_ERR_0009.Diagnostic = "The mapping operation failed.";
+CATSmHole3DError_ERR_0009.Advice     = "Check your inputs: positioning sketch or diameter.";
+
+CATSmHole3DError_ERR_0010.Request    = "The hole can not be performed.";
+CATSmHole3DError_ERR_0010.Diagnostic = "Impossible relimitation in the main part.";
+CATSmHole3DError_ERR_0010.Advice     = "No intersection with relimiting body in this direction : please reverse direction.";
+
+CATSmHole3DError_ERR_0011.Request    = "The hole can not be performed.";
+CATSmHole3DError_ERR_0011.Diagnostic = "Impossible relimitation in the main part.";
+CATSmHole3DError_ERR_0011.Advice     = "Check your inputs: positioning sketch or diameter.";
+
+CATSmHole3DError_ERR_0012.Request    = "The hole can not be performed.";
+CATSmHole3DError_ERR_0012.Diagnostic = "Impossible to compute the geometry.";
+CATSmHole3DError_ERR_0012.Advice     = "";
+
+// Warning lorqu'on fait un Hole3D sur une surface non plane en mode desynchro
+Hole3D_WarningMessage_1 = "You want to set a support for a hole.";
+Hole3D_WarningMessage_2 = "This support is not a planar surface but is valid since you deactivated the other view.";
+Hole3D_WarningMessage_3 = "If you activate the other view and update the part the hole creation will fail.";
+ 

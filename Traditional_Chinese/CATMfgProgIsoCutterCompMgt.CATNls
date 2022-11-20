@@ -1,0 +1,58 @@
+//-------------------- Panel ------------------------------//
+
+Title = "模擬的刀具補償管理";
+
+Help = "定義模擬使用的刀具半徑和長度.";
+
+ShortHelp = "定義模擬使用的刀具半徑和長度.";
+
+LongHelp = "專門管理 G41, G42 ISO 碼 (半徑補償)
+和 G43 ISO 碼 (2 和 3 軸長度補償) 的對話框.
+
+顯示所有的刀具, 和補正值等資源.
+
+可用來更改用在 ISO 模擬補正點的
+使用者半徑和使用者長度數值.";
+
+
+//-------------------- MultiList ------------------------------//
+
+MultiList.Help = "定義用在模擬的刀具半徑和長度.";
+
+MultiList.ShortHelp = "定義用在模擬的刀具半徑和長度.";
+
+MultiList.LongHelp = "專門管理 G41, G42 ISO 碼 (半徑補償)
+和 G43 ISO 碼 (2 和 3 軸長度補償) 的對話框.
+
+顯示所有的刀具, 和補正值等資源.
+
+可用來更改用在 ISO 模擬補正點的
+使用者半徑和使用者長度數值.";
+
+MultiList.ColumnTitle1 = "刀具名稱";
+MultiList.ColumnTitle2 = "刀具號碼";
+MultiList.ColumnTitle3 = "補正值";
+MultiList.ColumnTitle4 = "半徑";
+MultiList.ColumnTitle5 = "使用者半徑 ";
+MultiList.ColumnTitle6 = "長度";
+MultiList.ColumnTitle7 = "使用者長度";
+
+
+//-------------------- Buttons ------------------------------//
+
+RadiusRelativeMode.Title = "定義使用者半徑 / 公稱半徑";
+RadiusRelativeMode.Help = "如勾選此選項 : 模擬時將增加使用者半徑至公稱半徑,
+否則 : 模擬時將會以使用者半徑更換公稱半徑";
+RadiusRelativeMode.ShortHelp = "使用者半徑定義 : 相對 (/公稱) 或絕對 (更換公稱半徑)";
+RadiusRelativeMode.LongHelp = "如勾選此選項 : 模擬時將增加使用者半徑至公稱半徑,
+否則 : 模擬時將會以使用者半徑更換公稱半徑";
+
+LengthRelativeMode.Title = "定義使用者長度 / 公稱長度";
+LengthRelativeMode.Help = "如勾選此選項 : 模擬時將增加使用者長度至公稱長度,
+否則 : 模擬時將會以使用者長度更換公稱長度";
+LengthRelativeMode.ShortHelp = "使用者長度定義 : 相對 (/公稱) 或絕對 (更換公稱長度)";
+LengthRelativeMode.LongHelp = "如勾選此選項 : 模擬時將增加使用者長度至公稱長度,
+否則 : 模擬時將會以使用者長度更換公稱長度";
+
+
+

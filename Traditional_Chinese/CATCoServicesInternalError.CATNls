@@ -1,0 +1,34 @@
+// COPYRIGHT DASSAULT SYSTEMES  2005
+//=============================================================================
+//
+// CATCoServicesInternalError.CATNls :
+// En_US                                 
+//
+//=============================================================================
+// Goal             : Internal Error Catalog used for composite model
+// Owner            : sye
+// Creation date    : 11/10/2005
+// Usage notes      : This error is dedicated to end user input 
+// 
+// Message example : 
+// CATCoServicesInternalError_ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// CATCoServicesInternalError_ERR_2000.Diagnostic = "Un des parametres est negatif";
+// CATCoServicesInternalError_ERR_2000.Advice     = "Utilisez des parametres positifs";         
+//=============================================================================
+
+// general error 1-100
+CATCoServicesInternalError_ERR_0001.Request    = "";
+CATCoServicesInternalError_ERR_0001.Diagnostic = 
+"本體相關特徵 /p1 無效.";
+CATCoServicesInternalError_ERR_0001.Advice     = "";         
+
+//
+// reserved error 101-200 for multi splice gen  
+//
+CATCoServicesInternalError_ERR_0101.Request    = "";
+CATCoServicesInternalError_ERR_0101.Diagnostic = 
+"目前限制外形含有一個以上輸入曲線.
+一條曲線無法更換數個輸入曲線.";
+CATCoServicesInternalError_ERR_0101.Advice     = "";         
+
+

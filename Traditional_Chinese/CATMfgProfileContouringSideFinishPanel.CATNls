@@ -1,0 +1,41 @@
+Title = "側面精加工";
+Title.LongHelp = "指定步序中精加工路徑的參數.";
+
+// * MachiningMode *
+SideFinish = "模式";
+SideFinish.LongHelp = "指出無論如何精加工路徑是在加工區域的側面上被產生.
+側面精加工可在每一個高度被完成或者只有在步序的最後高度.";
+
+// * SideThickness *
+Thickness = "側面精加工厚度";
+Thickness.LongHelp = "指定用來作側面精加工的厚度.";
+
+// * BottomThicknessOnSideFinish *
+MfgBottomThicknessOnSideFinish = "側面精加工的底部預留";
+MfgBottomThicknessOnSideFinish.LongHelp = "Specifies the bottom thickness used for the last side
+finish pass at the end of the operation.";
+
+// * SideThickness *
+BottomThickness = "在底部上的側面預留";
+BottomThickness.LongHelp = "指定用來作步序結束時最後的側面精加
+工路徑的厚度.";
+
+SpringPath = "螺旋路徑";
+SpringPath.LongHelp = "指出無論如何螺旋路徑是在與先前的側面精加工
+路徑相同情況的側面上被產生. 
+螺旋路徑是用來補償刀具正常的 `螺旋' .";
+
+Cutcom = "刀具補償 (cutcom)";
+Cutcom.LongHelp = "指出無論如何補償 (CUTCOM) 後處理用語是在步序的側面
+精加工路徑和螺旋路徑之前被產生.";
+ThicknessBottom = "底部精銑預留";
+ThicknessBottom.LongHelp = "指出底部精銑預留厚度.";
+
+// * Bottom Finish Path Style *
+MfgBottomFinishPathStyle = "底部精銑路徑型式";
+MfgBottomFinishPathStyle.LongHelp = "定義底部精銑路徑型式";
+
+// * Nb Side Finish Path By Level *
+MfgNbSideFinishByLevel = "每層的側邊精銑路徑數目";
+MfgNbSideFinishByLevel.LongHelp = "定義每層的側邊精銑路徑數目";
+

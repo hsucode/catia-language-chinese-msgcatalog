@@ -1,0 +1,348 @@
+
+Fatal = "嚴重錯誤 : 編譯失敗";
+
+
+Lex_IllegalCharacter.Request = "in file: /P1, at line: /P2, at characters: /P3-/P4";
+Lex_IllegalCharacter.Diagnostic = "Illegal character (/p)";
+Lex_IllegalCharacter.Advice = "";
+
+Lex_Unterminated_comment.Request = "in file: /P1, at line: /P2, at characters: /P3-/P4";
+Lex_Unterminated_comment.Diagnostic = "Unterminated comment";
+Lex_Unterminated_comment.Advice = "Comments start with \"(*\" and end with \"*)\" ";
+
+Lex_Unterminated_string.Request = "in file: /P1, at line: /P2, at characters: /P3-/P4";
+Lex_Unterminated_string.Diagnostic = "Unterminated string";
+Lex_Unterminated_string.Advice = "String start with \" and end with \"";
+
+LexString_IllegalCharacter.Request = "in string \"/p1\" at line: /P2, at characters: /P3-/P4";
+LexString_IllegalCharacter.Diagnostic = "Illegal character (/P)";
+LexString_IllegalCharacter.Advice = "";
+
+LexString_Unterminated_comment.Request = "in string \"/p1\" at line: /P2, at characters: /P3-/P4";
+LexString_Unterminated_comment.Diagnostic = "Unterminated comment";
+LexString_Unterminated_comment.Advice = "Comments start with \"(*\" and end with \"*)\" ";
+
+LexString_Unterminated_string.Request = "in string \"/p1\" at line: /P2, at characters: /P3-/P4";
+LexString_Unterminated_string.Diagnostic = "Unterminated string";
+LexString_Unterminated_string.Advice = "String start with \" and end with \"";
+
+
+
+Syntax_FileNotFound.Request = "When trying to open file /P";
+Syntax_FileNotFound.Diagnostic = "/P";
+Syntax_FileNotFound.Advice = "";
+ 
+Syntax_Other.Request = "in file: /P1, at line: /P2, at characters: /P3-/P4";
+Syntax_Other.Diagnostic = "Syntax error";
+Syntax_Other.Advice = "/P";
+
+Syntax_Unclosed.Request = "in file: /P1, at line: /P2, at characters: /P3-/P4";
+Syntax_Unclosed.Diagnostic = "Syntax error: '/p' expected";
+Syntax_Unclosed.Advice = "in file: /P1, at line: /P2, at characters: /P3-/P4, this '/P5' might be unmatched";
+
+SyntaxString_Other.Request = "in string \"/P1\", at line: /P2, at characters: /P3-/P4";
+SyntaxString_Other.Diagnostic = "Syntax error at line: /P2, at characters: /P3-/P4";
+SyntaxString_Other.Advice = "";
+
+SyntaxString_Unclosed.Request = "in string \"/P1\", at line: /P2, at characters: /P3-/P4";
+SyntaxString_Unclosed.Diagnostic = "Syntax error at line: /P2, at characters: /P3-/P4: '/P' expected";
+SyntaxString_Unclosed.Advice = "at line: /P1, at characters: /P1-/P2, this '/P3' might be unmatched";
+
+KRootModule = "Root Module";
+KModule = "模數";
+KModuleType = "模數型式";
+KValue = "數值";
+KType = "型式";
+KOpen = "開啟";
+
+KMapping = "對應";
+KTrap = "圍框";
+KLocal = "(訊號, 變數或功能參數)";
+KStep = "步驟";
+KState = "狀態";
+KInstance = "複件";
+
+
+Scope_IdentNotDeclared.Request = "While checking scope ";
+Scope_IdentNotDeclared.Diagnostic = "/P1 identifier '/P2' is not declared";
+Scope_IdentNotDeclared.Advice = "check name is visible from this module";
+
+Scope_IdentInvalid.Request = "While checking scope ";
+Scope_IdentInvalid.Diagnostic = "/P1 identifier '/P2' is invalid";
+Scope_IdentInvalid.Advice = "correct errors in this ident";
+
+Scope_IdentReDeclared.Request = "While checking scope ";
+Scope_IdentReDeclared.Diagnostic = "/P1 identifier '/P2' is redeclared ";
+Scope_IdentReDeclared.Advice = "cannot declare two elements of the same name and same sort";
+
+Scope_IdentOverRiden.Request = "While checking scope ";
+Scope_IdentOverRiden.Diagnostic = "/P1 identifier '/P2' overides previous definition ";
+Scope_IdentOverRiden.Advice = "";
+
+Scope_PathNotDeclared.Request = "While resolving path '/P'";
+Scope_PathNotDeclared.Diagnostic = "/P1 '/P2' is not found in module '/P3'";
+Scope_PathNotDeclared.Advice = "Check that path is correct";
+
+Scope_RecordFieldNames.Request = "While checking record field '/P'";
+Scope_RecordFieldNames.Diagnostic = "Record field name '/P' appears twice";
+Scope_RecordFieldNames.Advice = "Field names must be distinct";
+
+Ladder_UnknownGotoLabel.Request = "While checking goto '/P'";
+Ladder_UnknownGotoLabel.Diagnostic = "This rung label is unknow";
+Ladder_UnknownGotoLabel.Advice = "Add the label to the target or check the label";
+
+Ladder_IncorrectContactFlag.Request = "While checking contact flag '/P'";
+Ladder_IncorrectContactFlag.Diagnostic = "This flag is illegal";
+Ladder_IncorrectContactFlag.Advice = "The possible flag are Direct, Inverted, Rising or Falling";
+
+Ladder_UnconnectedCoil.Request = "While checking the coil";
+Ladder_UnconnectedCoil.Diagnostic = "the target is not_specified";
+Ladder_UnconnectedCoil.Advice = "A variable must be specified as target of a coil";
+
+Ladder_UnconnectedPort.Request = "While checking the ports of '/P'";
+Ladder_UnconnectedPort.Diagnostic = "the input '/P' is not mapped";
+Ladder_UnconnectedPort.Advice = "All inputs ports of a block have to be mapped in a ladder";
+
+Ladder_UnspecifiedDirection.Request = "While checking the ports of '/P'";
+Ladder_UnspecifiedDirection.Diagnostic = "the direction of '/P' is not specified";
+Ladder_UnspecifiedDirection.Advice = "All ports of a block need a direction in a ladder";
+
+Type_InvalidDef.Request = "While scoping or checking definition ";
+Type_InvalidDef.Diagnostic = "This definition contains errors and cannot be correctly typed";
+Type_InvalidDef.Advice = "";
+
+Type_ContainsInvalidDef.Request = "While scoping or checking definition ";
+Type_ContainsInvalidDef.Diagnostic = "This definition contains invalid children";
+Type_ContainsInvalidDef.Advice = "";
+
+
+Type_FunctorParamMismatch.Request = "While checking type of functor applications";
+Type_FunctorParamMismatch.Diagnostic = "Argument of functor application does not match functor definition";
+Type_FunctorParamMismatch.Advice = "Module argument must define all signature elements of the formal module parameter";
+
+Type_ConstraintMismatch.Request = "While checking type of constrained modules";
+Type_ConstraintMismatch.Diagnostic = "Module structure does not match constraint signature";
+Type_ConstraintMismatch.Advice = "Constrained module must define all elements of the constraint signature";
+
+Type_ValueCompMismatch.Request = "While checking type of module components";
+Type_ValueCompMismatch.Diagnostic = "Type of value '/P' does not match the constraint signature";
+Type_ValueCompMismatch.Advice = "All component definitions must match the constraint signature";
+
+Type_TypeCompMismatch.Request = "While checking type of module components";
+Type_TypeCompMismatch.Diagnostic = "Definition of type '/P' does not match the constraint signature";
+Type_TypeCompMismatch.Advice = "All component definitions must match the constraint signature";
+
+Type_ModuleCompMismatch.Request = "While checking type of module components";
+Type_ModuleCompMismatch.Diagnostic = "Signature of sub-module '/P' does not match the constraint signature";
+Type_ModuleCompMismatch.Advice = "All component definitions must match the constraint signature";
+
+Type_CannotUnify.Request = "While checking /P1 '/P2'";
+Type_CannotUnify.Diagnostic = "Type of /P1 is '/P2' but should match with type '/P3'";
+Type_CannotUnify.Advice = "'/P'";
+
+Type_DoubleInit = "double initial value in signal declaration : /P";
+Type_DoubleCombine = "double combine in signal declaration : /P";
+Type_DoubleDirection = "double direction in port connexion : /P";
+Type_DoubleMapping = "double mapping in port connexion : /P";
+
+Type_IncompatibleDirectionStructure = "incompatible structure direction in port connexion";
+
+Type_NoNameAccess.Request = "While checking type of value '/P'";
+Type_NoNameAccess.Diagnostic = "Access field name '/P' is unknown";
+Type_NoNameAccess.Advice = "'/P' cannot be accessed";
+
+Type_NoPosAccess.Request = "While checking type of value '/P'";
+Type_NoPosAccess.Diagnostic = "Access position '/P' is unknown";
+Type_NoPosAccess.Advice = "'/P' cannot be accessed";
+
+Type_BadNameAccess.Request = "While checking type of value '/P'";
+Type_BadNameAccess.Diagnostic = "Access field name '/P' is unknown";
+Type_BadNameAccess.Advice = "Valid field names are {/P}";
+
+Type_BadPosAccess.Request = "While checking type of value '/P'";
+Type_BadPosAccess.Diagnostic = "Access position '/P' is out of bounds";
+Type_BadPosAccess.Advice = "Valid range position is [/P1, /P2]";
+
+Type_NameByPosAccess.Request = "While checking type of value '/P'";
+Type_NameByPosAccess.Diagnostic = "Trying to access field '/P' while type is accessible by position";
+Type_NameByPosAccess.Advice = "Valid range position is [/P1, /P2]";
+
+Type_PosByNameAccess.Request = "While checking type of value '/P'";
+Type_PosByNameAccess.Diagnostic = "Trying to access position '/P' while type is accessible by name";
+Type_PosByNameAccess.Advice = "Valid field names are {/P}";
+
+Type_ExternNotTyped = "'/P' must be typed";
+
+Type_TypeDeclarationsMismatch.Request = "While checking type of module components";
+Type_TypeDeclarationsMismatch.Diagnostic = "Definition of type '/P' does not match with its alias";
+Type_TypeDeclarationsMismatch.Advice = "Check the definition of the alias";
+
+Type_BadArgOfPredefType.Request = "While checking type of module components";
+Type_BadArgOfPredefType.Diagnostic = "Argument of type '/P' must be an extern type";
+Type_BadArgOfPredefType.Advice = "Check that the argument is an extern type";
+
+Type_NotAValue = "'/P' must be a value";
+Type_NotAFunctionType = "'/P' is not a function type";
+Type_NotAFunctionPath = "'/P' is not a function path";
+Type_NotAProcedurePath = "'/P' is not a procedure path";
+Type_NotABlockPath = "'/P' is not a block path";
+Type_NotAModuleFunctor = "This expression must be a module functor";
+Type_NotAModuleStructure = "'/P' must be a module structure";
+
+Type_FoundDeclaration = "found '/P'";
+
+Type_BadFunctorApplication = "Functor must be applied to a module path";
+Type_BadRunParameter = "Parameter of the run statement must be a block";
+
+Type_BadArgSignalOp = "Argument '/P1' of operator '/P2' must be a signal";
+
+Type_BadCombineFunction = "The function '/P' is used to combine signals: its type must be of the form ('ANY * 'ANY) -> 'ANY";
+
+Type_BadEmitAssign = "'/P' cannot be assigned nor emitted";
+Type_ConstantEmitAssign = "Constant '/P' cannot be assigned nor emitted";
+Type_VariableEmit = "Variable '/P' cannot be emitted";
+Type_SignalAssign = "Signal '/P' cannot be assigned";
+Type_NoInTrans = "Step '/P' has no incoming transitions";
+Type_NoIncomingStep = "Transition has no incoming step";
+Type_TransPriorities = "Step '/P' has at least two outgoing transitions with the same priority";
+Type_DoubleInitStep = "SFC cannot have several initial steps";
+Type_NoInitStep = "SFC must have an initial step";
+
+Type_CycleInUnification = "Cycle in unification";
+Type_FreeTypeVariable = "free type variable";
+Type_ArityError = "arity error";
+Type_DirectionAsType = "direction as type";
+Type_BadNumericType = "bad numeric type";
+
+Type_ShortCircuit = "short cut";
+
+Inline_PathNotFound.Request = "While inlining modules and blocks";
+Inline_PathNotFound.Diagnostic = "/P1 definition '/P' not found";
+Inline_PathNotFound.Advice = "Check that path is correct";
+
+Inline_PathInvalid.Request = "While inlining modules and blocks";
+Inline_PathInvalid.Diagnostic = "/P1 definition '/P' not found";
+Inline_PathInvalid.Advice = "Correct errors on this definition";
+
+Inline_ExternTypeMismatch.Request = "while scanning external constant, functions and procedures";
+Inline_ExternTypeMismatch.Diagnostic = "type mismatch for /P1, signature is /P2, expected signature is /P3";
+Inline_ExternTypeMismatch.Advice = "Constant with no initial value and which are not renamed must be declared in a external C-file, and therefore must have the same type in each block";
+
+Inline_PolymorphicType.Request = "While inlining main block";
+Inline_PolymorphicType.Diagnostic = "Signal '/P1' is of polymorphic type '/P2'";
+Inline_PolymorphicType.Advice = "Add some explicit type constraint";
+
+
+
+Graph_ImmediateLoop.Request = "while creating graph, in file /P1 at line: /P2, at characters: /P3-/P4";
+Graph_ImmediateLoop.Diagnostic = "potentially instantaneous loop";
+Graph_ImmediateLoop.Advice = "";
+
+Graph_ForbiddenFinalize.Request = "while creating graph, in file /P1 at line: /P2, at characters: /P3-/P4";
+Graph_ForbiddenFinalize.Diagnostic = "finalize action cannot contain pause, finalize or exit statements";
+Graph_ForbiddenFinalize.Advice = "";
+
+Graph_LinkNextOn = "triggers";
+Graph_LinkThenOn = "when true, test triggers";
+Graph_LinkElseOn = "when false, test triggers";
+Graph_LinkOff = "urgent transition kills";
+Graph_LinkSuspend = "suspends";
+Graph_LinkPauseOn = "turns on for next cycle";
+Graph_LinkPauseOff = "lazy transition kill for next cycle";
+Graph_LinkGuard = "set a guard on";
+Graph_LinkEndPar = "end of parallel branch triggers join transition of step";
+Graph_LinkIsPause = "join transition test if pause is active";
+Graph_LinkWriteOrder = "signal emission ordered before signal read";
+Graph_LinkEmitOrder = "signal emission ordered before signal read";
+Graph_LinkResetOrder = "signal reset ordered before signal read";
+Graph_LinkNextOrder = "ordered before";
+Graph_LinkThenOrder = "test is ordered before then branch";
+Graph_LinkElseOrder = "test is ordered before else branch";
+
+Graph_NodeRoot = "Root node";
+Graph_NodePivot = "Pivot node";
+Graph_NodeCall = "/P";
+Graph_NodeAssign = "/P";
+Graph_NodeIgnore = "/P";
+Graph_NodeInit = "Initialization of signal /P";
+Graph_NodeTest = "Test of expression /P";
+Graph_NodeSignal = "Signal node /P(used for linking signal emission and signal test)";
+Graph_NodeSet = "Emission of signal /P";
+Graph_NodeReincarnation = "Reincarnation of signal /P";
+Graph_NodeResetSignals = "Reset of signals /P";
+Graph_NodeSetOutput = "Output of signal /P";
+Graph_NodeTestGuard = "Test of guard";
+Graph_NodeEndBranch = "End of branch nb /P1";
+Graph_NodeMerge = "Join transition tests that all parallel branches are terminated";
+
+
+Graph_NodeCycle = "Instantaneous loop : /P";
+
+Reduce_DoubleEmission.Request = "while reducing graph, at file /P1 at line: /P2, at characters: /P3-/P4";
+Reduce_DoubleEmission.Diagnostic = "double emission of signal /P ";
+Reduce_DoubleEmission.Advice = "";
+Reduce_TooManyDoubleEmission = "too many double emission ";
+Reduce_TooManyEmission = "too many emission (/P1) on signal /P2 to check double emission ";
+Reduce_NodeDoubleEmit = "potential double emission on signal /P ";
+
+
+
+Order_CausalityLoop.Request = "while creating graph, in file /P1 at line: /P2, at characters: /P3-/P4";
+Order_CausalityLoop.Diagnostic = "causality loop";
+Order_CausalityLoop.Advice = "";
+
+Order_NodeCycle = "Causality loop : /P";
+
+
+DumpMain_EsiSigNotFound.Request = "while generating main c file";
+DumpMain_EsiSigNotFound.Diagnostic = "signal /P1 in esi file /P2 does not belong to interface of block /P3";
+DumpMain_EsiSigNotFound.Advice = "";
+
+DumpJava_FileProduced = "File produced : /P1";
+
+
+CommandLine_Bad.Request = "Attempt to parse command line argument";
+CommandLine_Bad.Diagnostic = "/P";
+CommandLine_Bad.Advice = "usage : lcm <options> files\ntype lcm -help for a complete list of options";
+
+CommandLine_Help = "usage : lcm <options> files\n/P";
+
+Compil_Version = "/P";
+Compil_Checked = "Syntax of \"/P\" is OK";
+Compil_TypeChecked = "Typechecking passed successfully /P1";
+Compil_Beautified = "beautified into file /P1";
+Compil_Scrambled = "scrambled into file /P1";
+Compil_Inlined = "inlined into file /P1";
+Compil_Kernel = "kernel translation printed into file /P1";
+Compil_Compiled = "compiled into file /P1";
+Compil_Inline = "Block is Inlined /P1";
+Compil_GraphCreated = "Graph created /P1";
+Compil_GraphReduced = "Graph created /P1";
+
+ErrorTypeCritical = "Critical error";
+ErrorTypeFatal = "Fatal error";
+ErrorTypeWarning = "Warning";
+ErrorTypeInformation = "Information";
+
+StrlFile = "Strl file is /P";
+StrlFileCompiled = "Strl file compiled into /P";
+
+ErrorLocation = "Error /P";
+ErrorLoop = "Error: Immediate loop\n/P";
+ErrorCausalityCycle = "Error: Causality cycle\n/P";
+ErrorInterface = "signals\n/P";
+InternalError = "Internal Error\n/P";
+
+FileKO = "Cannot find /P1 in /P2 environnement variable !";
+
+Model_ContainsWrongChildren = "This object contains children that have the following error : /P";
+Model_WrongReference = "Reference to a library which contains errors";
+
+DumpXcl_UnsupportedType.Request = "While checking compatibility between the application and the PLC";
+DumpXcl_UnsupportedType.Diagnostic = "the type '/P' appears to be not supported by the selected PLC or CPU";
+DumpXcl_UnsupportedType.Advice = "Select another PLC or CPU or avoid using the LCM type '/P'";
+
+
+
+
+

@@ -1,0 +1,65 @@
+//=======================================================================
+// MODULE : V5ToV4ReportServices
+//=======================================================================
+//--------------------------------------
+//  Messages from V5ToV4Report
+//--------------------------------------
+V5ToV4ReportServices.TooLargeGap1 = "它的間隙 ";
+V5ToV4ReportServices.TooLargeGap2 = " 太大了. 最大值應為 ";
+V5ToV4ReportServices.TooSmallEdge = "邊界長度太小. 最小值應為";
+V5ToV4ReportServices.SmallInvalidEdge = "因長度無效導致邊界已刪除, 因為長度小於";
+V5ToV4ReportServices.TooSmallSurface = "這個曲面至少有一個太小的邊界. 最小值應為";
+V5ToV4ReportServices.TooLargeEdge = "此曲線超過 V4 定義. 端點的最大座標在 [ "; 
+V5ToV4ReportServices.VertexOutsideV4ValidDomain = "有一點超過 V4 區域."; 
+V5ToV4ReportServices.PlaneOutsideV4ValidDomain = "平面之一超過 V4 區域."; 
+V5ToV4ReportServices.FaceOutsideV4ValidDomain = "曲線超過 V4 定義區域 : 此元素無法更新."; 
+V5ToV4ReportServices.CannotBeFitted = "一個修剪面的依附無法正確轉換 ";
+V5ToV4ReportServices.TooSmallFace = "小修剪面";
+V5ToV4ReportServices.SetNonMigratedBecauseOfSmallSupport = "因依附太小導致修剪面無法轉換";
+V5ToV4ReportServices.OpenFace = "修剪面無法封閉";
+V5ToV4ReportServices.NonMigratedFace = "此修剪面無法升級.";
+V5ToV4ReportServices.HasACurveToleranceGap = " 這個元素有一條曲線容差間隙.";
+V5ToV4ReportServices.WireMadeOfSmallEdges = "無法建立太小邊線";
+V5ToV4ReportServices.CannotBeClosed = "殼不能封閉到一個實體.";
+V5ToV4ReportServices.DegeneratedVolume = "因為定義不合, 無法建立 V4 體積.";
+V5ToV4ReportServices.SeveralConnexDomains = "因為在V5薄殼中有數個連接區域, 無法建立 V4 體積.";
+V5ToV4ReportServices.SetNoFaceInsideShell = "在薄殼中未偵測到修剪面.";
+V5ToV4ReportServices.CannotBeJoined = "面不能結合到一個殼中.";
+V5ToV4ReportServices.CannotBeCreated = "建立薄殼時發生錯誤.";
+V5ToV4ReportServices.CannotBeTranslated = "建立線時發生錯誤.";
+V5ToV4ReportServices.IsInError = "此本體在 V5 拓墣偵測到錯誤.";
+V5ToV4ReportServices.GravityGap = " V5 本體和 V4 本體重心間的距離是";
+V5ToV4ReportServices.VolumeRatio = " V5 和 V4 實體間的比較值是 ";
+V5ToV4ReportServices.InvalidV4Volume = "無效的 V4 實體";
+V5ToV4ReportServices.WrongMathsBlock = " V4 平面含有無效的數學區塊.";
+V5ToV4ReportServices.InvalidFaceDetectedInV4Volume = "V4 實體偵測到無效的修剪面";
+V5ToV4ReportServices.InvalidV4Topology = "無效的 V4 拓墣";
+V5ToV4ReportServices.SuccessRate1 = " 的 ";
+V5ToV4ReportServices.SuccessFaceRate2 = " 修剪面無法升級. 此修剪面的成功率是 ";
+V5ToV4ReportServices.SuccessVolumeRate2 = " 體積無法升級. 體積成功率為 ";
+V5ToV4ReportServices.SuccessVolumeRate3 = " 體積無法升級. 體積成功率為 ";
+V5ToV4ReportServices.InvalidEdge = "邊界無效";
+V5ToV4ReportServices.HasTheSameFaceOnBothSides = "邊界由相同修剪面所分享.";
+V5ToV4ReportServices.NonManifoldConfig = " 有一或數個沒有 manifold 邊線";
+V5ToV4ReportServices.SimplifCheck = " 修剪面數目在簡單化後為 ";
+V5ToV4ReportServices.NoUnifier = " 沒有拓墣 ";
+V5ToV4ReportServices.WasSuccessfullyHealed = "需要修補動作來對應 V4 的精度.";
+V5ToV4ReportServices.ManageBodyWithOnlySmallFaces = "只含有很小修剪面的本體已被刪除";
+V5ToV4ReportServices.IsATooSmallFaceInInternalEliminatedVolume = "無效的小修剪面已刪除";
+V5ToV4ReportServices.Locate = "在位置 (x/y/z) : ";
+V5ToV4ReportServices.BoundingBox = "圍繞盒端點位置為 (x/y/z) : ";
+V5ToV4ReportServices.Information = "特徵的資訊";
+V5ToV4ReportServices.Warning = "特徵的警告";
+V5ToV4ReportServices.Diagnosis = "偵錯";
+V5ToV4ReportServices.Result = "升級結果";
+V5ToV4ReportServices.ErrorFeatureBox = "您要以建立相關特徵來定位錯誤嗎 ?";
+V5ToV4ReportServices.ErrorFeatureBoxTitle = "儲存警告";
+V5ToV4ReportServices.InvalidBRep = "無效的 Brep 幾何元素.";
+V5ToV4ReportServices.OpenVolumeAndBorderFace = "此邊界為自由邊界. 相關體積無法建立.";
+V5ToV4ReportServices.SetErrorInV4ConcatenationStep = "連接 V4 間隔時發生錯誤. 無法建立體積且修剪面將轉移至不顯示.";
+V5ToV4ReportServices.NoBody = "CATPart 文件未含本體, 無法執行相關模式的升級";
+V5ToV4ReportServices.GapOf = "間隔的 ";
+V5ToV4ReportServices.ProgressBarComment0 = "模型啟中 ...";
+V5ToV4ReportServices.ProgressBarComment1 = "轉換成 V4 資料  ...";
+V5ToV4ReportServices.ProgressBarComment2 = "檢查 V4 符合規則中 ...";
+V5ToV4ReportServices.ProgressBarComment3 = "關閉模型中 ...";

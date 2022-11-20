@@ -1,0 +1,31 @@
+
+//
+//Gestion de toutes les erreurs pouvant subvenir
+//lors du maillage d'extraction.
+//
+
+CoatingERR_0001.Request    = "The extraction mode is not valid for a local specification.";
+CoatingERR_0001.Diagnostic = "The extraction mode chosen is not an existing option.";
+CoatingERR_0001.Advice     = "Change the extraction type in the panel of Coating Specification.";
+
+CoatingERR_0002.Request    = "There is no elements to extract.";
+CoatingERR_0002.Diagnostic = "The chosen mesh parts supports does not contain any elements of the appropriate dimension.";
+CoatingERR_0002.Advice     = "Choose mesh part(s) which contain element(s) of the appropriate dimension.";
+
+CoatingERR_0003.Request    = "One or more elements could not have been created.";
+CoatingERR_0003.Diagnostic = "The support(s) mesh part(s) could contain invalid 2D elements.";
+CoatingERR_0003.Advice     = "Check the support(s) mesh part(s).";
+
+CoatingERR_0004.Request    = "There is no supports.";
+CoatingERR_0004.Diagnostic = "No supports mesh parts of the appropriate dimension have been selected.";
+CoatingERR_0004.Advice     = "Choose mesh part(s) support(s) of the appropriate dimension and mesh again.";
+
+CoatingERR_0005.Request    = "The extraction mode is not valid.";
+CoatingERR_0005.Diagnostic = "The extraction mode chosen is not an existing option.";
+CoatingERR_0005.Advice     = "Change the extraction type in the panel of Coating.";
+
+CoatingERR_0006.Request    = "The associativity between geometry and elements could not have been created.";
+CoatingERR_0006.Diagnostic = "The associativity between geometry and surface elements of the support may not exist.";
+CoatingERR_0006.Advice     = "Check the support(s) mesh part(s) associativity.";
+
+

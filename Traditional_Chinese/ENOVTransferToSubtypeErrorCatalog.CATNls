@@ -1,0 +1,78 @@
+ENOVTransferToSubtypeERR_0001.Request = "request access to the CATRdbServers.CATSettings";
+ENOVTransferToSubtypeERR_0001.Diagnostic = "ReadSettings method failed";
+ENOVTransferToSubtypeERR_0001.Advice = "check if the CATRdbServers.CATSettings file is in the CATUserSettingPath directory and if the file is readable";
+
+ENOVTransferToSubtypeERR_0002.Request = "request to the setting VPMADMIN in the CATRdbServers.CATSettings file";
+ENOVTransferToSubtypeERR_0002.Diagnostic = "VPMADMIN not found in the file.";
+ENOVTransferToSubtypeERR_0002.Advice = "check if the VPMADMIN setting is declared in the CATRdbServers.CATSettings file with PR0ADSRV or string ";
+
+ENOVTransferToSubtypeERR_0003.Request = "request to connect to the database";
+ENOVTransferToSubtypeERR_0003.Diagnostic = "[/p1]";
+ENOVTransferToSubtypeERR_0003.Advice = "check if the CATDbServer.CATSetting file exists in your CATUserSettingPath or contact the database administrator ";
+
+ENOVTransferToSubtypeERR_0004.Request = "request of the dictionary manager";
+ENOVTransferToSubtypeERR_0004.Diagnostic = "cannot get it";
+ENOVTransferToSubtypeERR_0004.Advice = "Check if the CATDictionary path is OK (.dic files) ";
+
+ENOVTransferToSubtypeERR_0005.Request = "initializing the dictionary manager";
+ENOVTransferToSubtypeERR_0005.Diagnostic = "cannot init it";
+ENOVTransferToSubtypeERR_0005.Advice = "";
+
+ENOVTransferToSubtypeERR_0006.Request = "requesting a metadata file: [/p1]";
+ENOVTransferToSubtypeERR_0006.Diagnostic = "cannot load it";
+ENOVTransferToSubtypeERR_0006.Advice = "check the CATDictionaryPath, the file have to be in this path";
+
+ENOVTransferToSubtypeERR_0007.Request = "requesting a class definition: [/p1]";
+ENOVTransferToSubtypeERR_0007.Diagnostic = "cannot get it";
+ENOVTransferToSubtypeERR_0007.Advice = "check if the class definition exist in the metadata file.";
+
+ENOVTransferToSubtypeERR_0008.Request = "Get the interface of the class: [/p1]";
+ENOVTransferToSubtypeERR_0008.Diagnostic = "cannot get it";
+ENOVTransferToSubtypeERR_0008.Advice = "check that the input is really a class";
+
+ENOVTransferToSubtypeERR_0009.Request = "accessing table: /p1./p2";
+ENOVTransferToSubtypeERR_0009.Diagnostic = "database diagnostic : [/p1]";
+ENOVTransferToSubtypeERR_0009.Advice = "refer to the database error";
+
+ENOVTransferToSubtypeERR_0010.Request = "check validity of subtype";
+ENOVTransferToSubtypeERR_0010.Diagnostic = "invalid subtype: [/p1]";
+ENOVTransferToSubtypeERR_0010.Advice = "subtype does not conform to transform rules";
+ENOVTransferToSubtypeERR_0011.Request = "check if the ToClass is a suytype of the FromClass";
+ENOVTransferToSubtypeERR_0011.Diagnostic = "the to class does not derive from the FromClass";
+ENOVTransferToSubtypeERR_0011.Advice = "";
+
+ENOVTransferToSubtypeERR_0012.Request = "database access";
+ENOVTransferToSubtypeERR_0012.Diagnostic = "database diagnostic : [/p1]";
+ENOVTransferToSubtypeERR_0012.Advice = "refer to the database error";
+
+ENOVTransferToSubtypeERR_0013.Request = "get the pointer to the interface VPMIAdmin";
+ENOVTransferToSubtypeERR_0013.Diagnostic = "cannot get it ";
+ENOVTransferToSubtypeERR_0013.Advice = "check the CATDictionaryPath (*.dic) and the runtime environment";
+
+ENOVTransferToSubtypeERR_0014.Request = "init VPMIAdmin data";
+ENOVTransferToSubtypeERR_0014.Diagnostic = "failed to init ";
+ENOVTransferToSubtypeERR_0014.Advice = "check the CATUserSettingPath and database connection";
+
+ENOVTransferToSubtypeERR_0015.Request = "get the list of datadomain";
+ENOVTransferToSubtypeERR_0015.Diagnostic = "failed to get it ";
+ENOVTransferToSubtypeERR_0015.Advice = "check the admin data with ExportAdmin";
+
+ENOVTransferToSubtypeERR_0016.Request = "get the businessdomain of a datadomain";
+ENOVTransferToSubtypeERR_0016.Diagnostic = "failed to get it ";
+ENOVTransferToSubtypeERR_0016.Advice = "check the admin data with ExportAdmin";
+
+ENOVTransferToSubtypeERR_0017.Request = "get the datadomain of the ToMedatadata";
+ENOVTransferToSubtypeERR_0017.Diagnostic = "failed to get it ";
+ENOVTransferToSubtypeERR_0017.Advice = "check the admin data with ExportAdmin if the metadata name is declared.";
+
+ENOVTransferToSubtypeERR_0018.Request = "requesting the target of attribute: [/p1]";
+ENOVTransferToSubtypeERR_0018.Diagnostic = "cannot get it";
+ENOVTransferToSubtypeERR_0018.Advice = "check the metadata file";
+
+ENOVTransferToSubtypeERR_0019.Request = "requesting classes of metadata file: [/p1]";
+ENOVTransferToSubtypeERR_0019.Diagnostic = "cannot get them";
+ENOVTransferToSubtypeERR_0019.Advice = "check the metadata file syntax";
+
+ENOVTransferToSubtypeERR_0020.Request = "requesting elements of class: [/p1./p2]";
+ENOVTransferToSubtypeERR_0020.Diagnostic = "cannot get them";
+ENOVTransferToSubtypeERR_0020.Advice = "check the specified class syntax";

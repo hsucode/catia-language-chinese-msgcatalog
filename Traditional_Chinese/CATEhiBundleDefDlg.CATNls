@@ -1,0 +1,70 @@
+TitleBundleSegment.Text = "一群線段定義";
+TitleBranchable.Text = "分枝定義";
+
+MainFrame.NameLabel.Title    = "名稱:";
+MainFrame.NameLabel.LongHelp = "名稱 \n 定義一群線段名稱";
+
+MainFrame.DiameterLabel.Title    = "直徑:";
+MainFrame.DiameterLabel.LongHelp = "直徑 \n 定義一群線段直徑";
+
+MainFrame.SectionLabel.Title    = "切面:";
+MainFrame.SectionLabel.LongHelp = "切面 \n 定義一群線段切面";
+
+MainFrame.BendRadiusLabel.Title    = "彎曲半徑:";
+MainFrame.BendRadiusLabel.LongHelp = "彎曲半徑 \n 定義一群線段彎曲半徑";
+
+//axc
+BendRadiusFrame.Title = "檢查的彎曲半俓";
+BendRadiusFrame.BendRadiusLabel.Title    = "彎曲半俓:";
+BendRadiusFrame.BendRadiusLabel.LongHelp = "彎曲半俓 \n Defines the bundle segment bend radius.";
+BendRadiusFLEXFrame.BendRadiusLabelFLEX.Title    = "計算的彎曲半俓:";
+BendRadiusFLEXFrame.BendRadiusLabelFLEX.LongHelp = "計算的彎曲半俓";
+BendRadiusFrame.RatioCheckButton.Title    = "彎曲半俓比例:";
+BendRadiusFrame.RatioCheckButton.LongHelp = "Bend Radius Ratio\nDefines the ratio between the diameter and the bend radius.";
+
+//end axc
+MainFrame.RatioCheckButton.Title    = "比例彎曲半徑:";
+MainFrame.RatioCheckButton.LongHelp = "比例彎曲半徑 \n 定義在直徑和彎曲半徑間的比例";
+
+ModeFrame.Title    = "建立模式";
+ModeFrame.LongHelp = "建立模式 \n 就他的建立模式而論定義這群線段參數";
+
+ModeFrame.ModeLabel.Title    = "模式:";
+ModeFrame.ModeLabel.LongHelp = "模式 \n 定義這群線段建立模式";
+
+ModeFrame.SlackLabel.Title    = "鬆散(Slack)(%):";
+ModeFrame.SlackLabel.LongHelp = "鬆散(Slack) \n 關於以百分比表達的彎曲模式定義這群線段額外長度";
+
+ModeFrame.LengthLabel.Title    = "長度:";
+ModeFrame.LengthLabel.LongHelp = "長度 \n 定義精確一群線段長度";
+
+EditRouteButton.Title    = "程序定義";
+EditRouteButton.LongHelp = "程序定義\n 定義一群線段電子曲線";
+
+SegmentsDefintionPushButton.Title    = "定義部份";
+SegmentsDefintionPushButton.LongHelp = "定義部份 \n 定義多重部份的部份.";
+Separator.Title = " ";
+Separator.LongHelp = " ";
+
+InvertBNSLabel.Title    = "曲面上的一群線段                       ";
+InvertBNSLabel.LongHelp = "曲面上的一群線段 \n 依據依附曲面上的方向定義一群線段";
+
+InvertBNSPushButton.Title    = "逆轉";
+InvertBNSPushButton.LongHelp = "逆轉 \n 依據依附曲面上的方向逆轉一群線段";
+
+Slack.Text  = "鬆散(Slack)";
+Length.Text = "長度";
+Bend.Text   = "彎曲";
+ConstrainedLength.Text = "拘束長度"; //axc FLEX Algo
+
+DiameterTooSmall.Title = "一群線段定義";
+DiameterTooSmall.Text  = "彎曲半徑比直徑更小, \n 這個組態也許不真實: \n 一群線段程序可能無法使用";
+
+ExternalCurveLabel.Title = "外部曲線: ";
+ExternalCurveLabel.LongHelp = "外部曲線 \nSets the external curve on which bundle segment is to be built.";
+
+ExternalCurveSeperator.Title = " ";
+
+//axc FLEX algo
+BranchDefNotification.Title = "模式選擇";
+BranchDefNotification.Text  = "無法存取拘束長度模式 \nClick YES to force computation in Slack mode \nClick NO to cancel this action ";

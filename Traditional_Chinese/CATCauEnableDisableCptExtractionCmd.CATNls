@@ -1,0 +1,41 @@
+//=============================================================================
+//                                     CNEXT - CXR14
+//                          COPYRIGHT DASSAULT SYSTEMES 2004 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATCauEnableDisableCptExtractionCmd.CATNls
+// FRAMEWORK   :    CATCompAccessUI
+// AUTHOR      :    ehh
+// DATE        :    August 2002
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  C&A Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//------------------------------------------------------------------------------
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// DialogEngine state prompts 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATCauEnableDisableCptExtractionCmd.SelectSketchState.Message="Select wall system sketch or wall system (for all sketches)";
+CATCauEnableDisableCptExtractionCmd.EnableDisableCptsState.Message="Select compartment outline to toggle extraction status";
+
+UpdateWallSystemWarningTitle="牆系修改警告";
+UpdateWallSystemWarningText="Wall system will be updated with sketch changes prior to compartment extraction";
+OldWallSystemErrorTitle="舊牆系警告";
+OldWallSystemErrorText="This wall system has old modeling.  Please update it using the 'Update Wall System' command before enabling/disabling compartment generation.";
+OutOfDateWallSystemErrorTitle="未更新牆系警告";
+OutOfDateWallSystemErrorText="This wall system is out of date.  Please update it using the 'Update Wall System' command before enabling/disabling compartment generation.";
+WallSystemWithWallsRequiredTitle="Wall System Without Walls Error";
+WallSystemWithWallsRequiredText="This command only operates on wall systems that have walls.  The wall system you selected does not.";
+  
+//EnableCptExtractionMenu = "Enable compartment extraction";
+//DisableCptExtractionMenu = "Disable compartment extraction";
+//YesEnd = "Yes:End";
+
+
+

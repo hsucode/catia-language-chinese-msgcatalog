@@ -1,0 +1,114 @@
+INFO_START="開始 CATReportUtility...";
+INFO_WPFullPath="目前 WP 路徑為:";
+INFO_WPType="目前 WP 型式為:";
+INFO_WPOutput="目前 WP 輸出為:";
+INFO_REPORT_Gen="WP 報告已產生.";
+INFO_InputTempl="輸入樣板檔案為:";
+INFO_InputDtd="輸入 Dtd 檔案為:";
+INFO_InputOutDir="輸出目錄路徑為:";
+INFO_InputOneWP="將使用單一輸入 WP: ";
+INFO_InputListWP="使用輸入清單 WP d: ";
+INFO_InputOneQuery="將使用單一詢問 : ";
+INFO_InputListQueries="使用輸入清單詢問 : ";
+INFO_QueryReadOK="將使用此詢問 : ";
+INFO_QueryUsedKO="此詢問將不會使用 : ";
+INFO_Generation_WO_Q="未使用外部詢問產生報告.";
+INFO_Generation_W_Q="使用外部詢問產生報告.";
+INFO_Type="需要的輸出報告型式為: ";
+INFO_DTD_Reajust="將調整輸出報告 XML 檔案.";
+INFO_ArgV="輸入 --> ";
+INFO_DisconnectOK="Catia is now deconnected from Enovia...";
+INFO_ConnectCV5EV5="Starting connection between Catia and Enovia...";
+INFO_NoConnectCV5EV5="Connection between Catia and Enovia will not be set up...";
+INFO_ConnectOK="Catia is connected to Enovia...";
+INFO_Connection_User="Parameter for Enovia Connection: User =";
+INFO_Connection_Pwd="Parameter for Enovia Connection: Pwd =";
+INFO_Connection_Role="Parameter for Enovia Connection: Role =";
+INFO_Connection_Server="Parameter for Enovia Connection: Server =";
+INFO_Connection_sPwd="Parameter for Enovia Connection: Encrypted sPwd =";
+INFO_spwd_decodeOK="Encrypted password has been decoded...";
+
+ERR_QUERY_ReadKO="### 錯誤 -> 無法讀取此詢問: ";
+ERR_PARSING_Internal="### 錯誤 -> Internal Error while Parsing Inputs !!";
+ERR_MISS_Templ="### 錯誤 -> Missing Template file in Input !!";
+ERR_MISS_WP="### 錯誤 -> Missing WPs in Inputs !!";
+ERR_CONFLICT_WP="### 錯誤 Conflict -> Cannot have BOTH 1 WP and 1 List WPS in Input !!";
+ERR_CONFLICT_Queries="### 錯誤 Conflict -> cannot have BOTH 1 Query and 1 List of Queries in Input !!";
+ERR_GRU_Not="### 錯誤 -> Report can NOT be generated !!" ;
+ERR_READ_Wps="### 錯誤 -> Error while reading List of WPs (Check parameter file) !!";
+ERR_READ_Qs="### 錯誤 -> Error while reading List of Queriess (Check parameter file) !!";
+ERR_GRU_Creator="### 錯誤 -> Fail in ReportCompute Creator !!";
+ERR_GRU_Fail="### 錯誤 -> Report Generation failed !!" ;
+ERR_REPORT_NOTGen="### 錯誤 ->WP Report has NOT been generated !!";
+ERR_GENERATION="### 錯誤 -> Error during Report Generation !!";
+ERR_OPEN_DOC="### ERROR -> Error while opening the Document (cannot be opened) !!";
+ERR_INPUTNoArg="### 錯誤 -> No Arguments in Inputs... !!";
+ERR_INPUTNoTreated="### 錯誤 -> No Treated Inputs...!!";
+ERR_INPUTCheckPara="### 錯誤 -> Check Intput Parameter failed !!";
+ERR_INPUTMissRequired="### 錯誤 -> Required Input is missing in command line !!";
+ERR_INPUTMissPara="### 錯誤 -> Input Parameter is missing (After option). !!";
+ERR_INPUTMissArg="### 錯誤 -> Argument are missing !!";
+ERR_INPUTBadOption="### 錯誤 -> The follwing Option is NOT recognised: ";
+ERR_READ_Type="### 錯誤 -> The following Type is NOT recognised: ";
+ERR_READ_File="### 錯誤 -> The following file cannot be read: ";
+ERR_WRITE_Dir="### 錯誤 -> The following Directory does NOT have write access: ";
+ERR_DTD_Path="### 錯誤 -> The option -outAdjust can be used ONLY with type XML !";
+ERR_NO_QuerryDefined="### 錯誤 -> There is NO query defined (External or embbded in Template file) !";
+ERR_CONNECT_Start="### 錯誤 -> Cannot connect to Enovia !";
+ERR_CONNECT_Internal="### 錯誤 -> Error while connecting to Enovia !";
+ERR_CONNECT_GetEnv="### 錯誤 -> Error while getting the Enovia Environment !";
+ERR_CONNECT_noSession="### 錯誤 -> No Catia Session is Available !";
+ERR_DisconnectKO="### 錯誤 -> Pb during Disconnection of Catia from Enovia !";
+ERR_ConnectKO="### 錯誤 -> Pb during Connection between Catia and Enovia !";
+ERR_INPUTAlreadyTreated="### 錯誤 -> The following input has been declared twice : ";
+ERR_pwd_and_spwd="### 錯誤 -> iPwd and spwd option cannot be used together !";
+ERR_spwd_decodeKO="### 錯誤 -> The encrypted password cannot be decoded !";
+ERR_spwd_EmptyKO="### 錯誤 -> The encrypted password is an empty string !";
+
+HELP_GRU="
+--- HELP ---
+	Required
+	-----------------------------------
+		[-f]		--> Absolute Path of ONE WorkPackage
+		or
+		[-l]		--> Path of a WorkPackage List (Txt file)
+						One Absolute Path per Line
+
+		[-iTpl]		--> Absolute Path of A Template XML File
+
+
+	Options
+	-----------------------------------
+		[-iQ]		--> Absolute Path of ONE Querry XML file
+		or
+		[-ilQ]		--> Path of a Querry List (Txt file)
+						One Absolute Path per Line
+
+		...If NO external queries are being used, Queries MUST be
+		pre-defined whitin the Template file.
+	
+		[-oDir]		--> Absolute Path of OutputDirectory
+						Default is Same as Input Directory
+						Do not add / or \ at the end of the path
+		[-oType]	--> Type of output Report ('htm','xls','txt' or 'xml')
+						Type by default is 'xml'
+		[-iDtd]		--> Absolute Path of a Dtd XML File (For XML Reports)
+						Path will be declared in OutputReport File.
+		[-oFixXML]	--> Comment out the line <!DOCTYPE> in the output XML File.
+						Once commented out, no need of DTD file to read the Report.
+						No arguments needed for this specific option.
+
+		...Connection to ENOVIA will happen ONLY if ALL the following connection 
+		parameters are vaualted.
+
+		[-iUser]	--> ENOVIA user name (must have ADMIN rights)
+		[-iRole]	--> ENOVIA user role (ex: 'VPMADMIN.ADMIN.Default' or '+' for default)
+		[-iServer]	--> ENOVIA server name + port (ex: 'rs150dsa:38070')
+
+		[-iPwd]		--> ENOVIA user password
+		or
+		[-iSPwd]	--> ENOVIA Encrytped user password
+						The passord will be decrypted using 'CATIUExitCrypt' interface.
+						It needs to be encrypted prior to call the batch (cf Doc.)
+
+		[-h]		--> This HELP...";

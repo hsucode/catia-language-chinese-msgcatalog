@@ -1,0 +1,67 @@
+// COPYRIGHT DASSAULT SYSTEMES 2004
+
+forceNew       = "Force mapped object to New? " ;
+forceOverwrite = "Force all to Overwrite? " ;
+forceNewVersion = "Force all to New Version? " ;
+onlyOnDocuments = "Apply rule only on documents";
+vpdm           = "VPDM: " ;
+structure      = "Structure exposed? " ;
+queryName      = "Query Choice: " ;
+ENOVIA5        = "ENOVIA VPM V5";
+VPM1           = "ENOVIA VPM V4";
+implicitRule   = "Apply implicit rules after query?";
+
+reset        = "Reset choice: " ;
+resetChoice1 = "only rules" ;
+resetChoice2 = "rules and mapping" ;
+forceReload  = "Force all document to Reload? " ;
+forceNewRevision  = "Force all document to New Revision? " ;
+forceKeepExternal  = "Force all document to KeepExternal? " ;
+
+queryNameForPRC            = "Query Choice For PRC: " ;
+implicitRuleForVPDMMapping = "Apply implicit rules after mapping?";
+forceMappingForVPDMMapping = "Force mapping?";
+skipWhenMapped = "Do not run query on mapped object?";
+
+AllAtNew        = "All objects as New" ;
+AllAtOverWrite  = "All objects as Overwrite" ;
+AllAtReload     = "All documents as Reload" ;
+AllAtNewVersion = "All objects as New Version" ;
+AllAtNewRevision= "All documents as New Revision" ;
+AllAtKeepExternal    = "All documents as KeepExternal" ;
+GlobalEnv      = "Set storage mode" ;
+GlobalQuery    = "Global query" ;
+ResetAll       = "Reset all" ;
+
+VPDMMapping = "Mapping based on VPDM View";
+
+AllAtNew.LongHelp       = "To set all unmapped objects to New.\nIf option is checked, mapped objects will be set to new also." ;
+AllAtOverWrite.LongHelp = "To set all objects with no rule to Overwrite.\nUse check option to ignore when a rule is or not already set." ;
+AllAtReload.LongHelp    = "To set all documents with no rule to Reload.\nUse check option to ignore when a rule is or not already set." ;
+AllAtKeepExternal.LongHelp    = "To set all documents with no rule to KeepExternal.\nUse check option to ignore when a rule is or not already set." ;
+GlobalEnv.LongHelp      = "To set the storage mode on all documents." ;
+GlobalQuery.LongHelp    = "To run the proposed query with default criteria." ;
+ResetAll.LongHelp       = "To reset all the rules and undo the mapping depending on the selection." ;
+VPDMMapping.LongHelp    = "To do the mapping based on the VPDM View." ;
+
+AllAtNewVersion.LongHelp = "To set all objects with no rule to New Version.\nUse check option to ignore when a rule is or not already set." ;
+AllAtNewRevision.LongHelp    = "To set all documents with no rule to New Revision.\nUse check option to ignore when a rule is or not already set." ;
+
+
+AllAtNew.ShortHelp       = "Set all unmapped objects to New." ;
+AllAtOverWrite.ShortHelp = "Set all objects with no rule to Overwrite." ;
+AllAtReload.ShortHelp    = "Set all documents with no rule to Reload." ;
+AllAtKeepExternal.ShortHelp    = "Set all documents with no rule to KeepExternal." ;
+GlobalEnv.ShortHelp      = "Set the storage mode on all documents." ;
+GlobalQuery.ShortHelp    = "Run the proposed query with default criteria." ;
+ResetAll.ShortHelp       = "Reset all the rules and undo the mapping." ;
+VPDMMapping.ShortHelp    = "To do the mapping based on the VPDM View." ;
+
+AllAtNewVersion.ShortHelp = "Set all objects with no rule to New Version." ;
+AllAtNewRevision.ShortHelp= "Set all documents with no rule to New Revision." ;
+
+
+WRN_GlobalQueryPrepareCrit = "Execution of query /p1 failed while preparing query criterion.";
+WRN_GlobalQueryExecuteCrit = "Execution of criterion /p1 failed at query execution."         ;
+
+

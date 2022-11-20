@@ -1,0 +1,183 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//===========================================================================
+//
+// CATRdgShootingPictureFrame
+//
+//===========================================================================
+
+currentViewpointLabel = "目前視點";
+noEnvironmentLabel = "無";
+noLightLabel = "無";
+
+//--------------------------------------
+// Scene frame
+//--------------------------------------
+sceneFrame.HeaderFrame.Global.Title = "視景";
+
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.cameraLabel.Title = "相機:";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.cameraCombo.Help = "Defines active camera for rendering";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.cameraCombo.ShortHelp = "Active Camera for Rendering";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.cameraCombo.LongHelp =
+"Defines the viewpoint to render.";
+
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.environmentLabel.Title = "環境:";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.environmentCombo.Help = "Defines active environment for rendering";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.environmentCombo.ShortHelp = "Active Environment for Rendering";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.environmentCombo.LongHelp =
+"Defines the environment to use for rendering.";
+
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.lightLabel.Title = "光源:";
+
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.lightSelectedLabel.Title = "已選";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.lightList.Help = "Defines active lights for rendering";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.lightList.ShortHelp = "Active Lights for Rendering";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.lightList.LongHelp =
+"Defines the lights to activate for rendering.";
+
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.lightAvailableLabel.Title = "可用";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.lightAvailableList.Help = "List of available lights";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.lightAvailableList.ShortHelp = "Available Lights";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.lightAvailableList.LongHelp =
+"Lists the lights that can be made active for rendering.";
+
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.lightButtonsFrame.lightAddButton.Help = "Adds to selected lights";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.lightButtonsFrame.lightAddButton.ShortHelp = "Add";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.lightButtonsFrame.lightAddButton.LongHelp = 
+"Adds lights to the list of lights activated for rendering.";
+
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.lightButtonsFrame.lightRemoveButton.Help = "Removes from selected lights";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.lightButtonsFrame.lightRemoveButton.ShortHelp = "Remove";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.sceneParametersFrame.lightButtonsFrame.lightRemoveButton.LongHelp = 
+"Remove lights to the list of lights activated for rendering.";
+
+sceneFrame.IconAndOptionsFrame.OptionsFrame.previewButton.Help = "Display camera view";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.previewButton.ShortHelp = "Camera View";
+sceneFrame.IconAndOptionsFrame.OptionsFrame.previewButton.LongHelp = 
+"Displays the camera view. On large 
+scenes the update can take some time.";
+//--------------------------------------
+// Size frame
+//--------------------------------------
+sizeFrame.HeaderFrame.Global.Title = "圖像大小";
+
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizePredefinedSmallLabel.Title = "小";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizePredefinedLargeLabel.Title = "大";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizePredefinedSlider.Help = "預先定義圖像大小";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizePredefinedSlider.ShortHelp = "預先定義圖像大小";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizePredefinedSlider.LongHelp =
+"Lists all predefined sizes.";
+
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizeRatioButton.Help = "鎖定大小比率";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizeRatioButton.ShortHelp = "鎖定大小比率";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizeRatioButton.LongHelp =
+"Locks the ratio between image height and length.";
+
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizeUserWidthSpinner.Help = "定義圖像寬度";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizeUserWidthSpinner.ShortHelp = "圖像寬度";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizeUserWidthSpinner.LongHelp =
+"Defines image width in pixels.";
+
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizeUserHeightSpinner.Help = "定義圖像高度";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizeUserHeightSpinner.ShortHelp = "圖像高度";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizeUserHeightSpinner.LongHelp =
+"Defines image height in pixels.";
+
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizeUserXLabel.Title = " x ";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters1Frame.sizeUserUnitLabel.Title = "圖素  ";
+
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters2Frame.sizeRatioLabel.Title = "比率";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters2Frame.sizeRatioPredefinedRadio.Title = "預先定義:";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters2Frame.sizeRatioCustomRadio.Title = "自訂:";
+
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters2Frame.sizePredefinedCombo.Help = "預先定義比率";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters2Frame.sizePredefinedCombo.ShortHelp = "預先定義比率";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters2Frame.sizePredefinedCombo.LongHelp =
+"Lists predefined ratios.";
+
+size1  = "A4";
+size2  = "6 x 6";
+size3  = "標準";
+size4  = "4 / 3";
+size5  = "24 x 36";
+size6  = "16 mm";
+size7  = "16 / 9";
+size8  = "HDTV";
+size9  = "Panavision";
+size10 = "Panorama";
+size11 = "CCD 1/2";
+size12 = "CCD 1/4";
+
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters2Frame.sizeRatioSpinner.Help = "Ratio between height and width";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters2Frame.sizeRatioSpinner.ShortHelp = "Frame Size Ratio";
+sizeFrame.IconAndOptionsFrame.OptionsFrame.sizeParametersFrame.sizeParameters2Frame.sizeRatioSpinner.LongHelp =
+"Ratio between frame height and width.";
+
+sizePreviewLabel = "螢幕";
+
+//--------------------------------------
+// Output frame
+//--------------------------------------
+outputFrame.HeaderFrame.Global.Title = "輸出";
+
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputScreenRadio.Title = "螢幕上";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputScreenRadio.Help = "Rendering is output on screen";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputScreenRadio.ShortHelp = "Screen Output";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputScreenRadio.LongHelp =
+"Rendering is output on screen.";
+
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputDiskRadio.Title = "磁碟上";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputDiskRadio.Help = "Rendering is output on disk";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputDiskRadio.ShortHelp = "Disk Output";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputDiskRadio.LongHelp =
+"Rendering is output on disk.";
+
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputDirectoryLabel.Title = "目錄:";
+
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputDirectoryEditor.Help = "Output Directory";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputDirectoryEditor.ShortHelp = "Output Directory";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputDirectoryEditor.LongHelp =
+"Defines the directory where rendered images are saved.";
+
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputDirectoryButton.Help = "瀏覽";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputDirectoryButton.ShortHelp = "瀏覽";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputDirectoryButton.LongHelp =
+"Browses the directory where rendered images are saved.";
+
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputNameLabel.Title = "名稱:";
+
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputNameEditor.Help = "File name of rendered image";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputNameEditor.ShortHelp = "Rendered Image Name";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputNameEditor.LongHelp =
+"Defines the name of the rendered image.";
+
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputSingleTypeLabel.Title = "框架格式:";
+
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputSingleTypeCombo.Help = "File format of saved frames";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputSingleTypeCombo.ShortHelp = "Output Frame Format";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputSingleTypeCombo.LongHelp =
+"Defines the file format of the saved frames.";
+
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputAnimationTypeLabel.Title = "動畫格式:";
+
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputAnimationTypeCombo.Help = "File format of saved animations";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputAnimationTypeCombo.ShortHelp = "Output Animation Format";
+outputFrame.IconAndOptionsFrame.OptionsFrame.outputParametersFrame.outputFileFrame.outputAnimationTypeCombo.LongHelp =
+"Defines the file format of the saved animations.";
+
+tifLabel = "TIFF True Color (*.tif)";
+tifPackbitsLabel = "TIFF True Color Compressed (*.tif)";
+rgbLabel = "SGI Format (*.rgb)";
+bmpLabel = "Windows Bitmap (*.bmp)";
+jpgFairQualityLabel = "JPEG Fair Quality (*.jpg)";
+jpgMediumQualityLabel = "JPEG Medium Quality (*.jpg)";
+jpgHighQualityLabel = "JPEG High Quality (*.jpg)";
+picLabel = "Apple Macintosh Format (*.pic)";
+psdLabel = "Adobe Photoshop Format (*.psd)";
+pngLabel = "Portable Network Graphics (*.png)";
+tgaLabel = "Truevision Targa (*.tga)";
+
+sequenceLabel = "框架順序";
+mpegLabel = "MPEG-1 Video (*.mpg)";
+aviLabel = "Microsoft AVI (*.avi)";
+quickTimeLabel = "Apple QuickTime (*.mov)";
+movieLabel = "SGI Movie (*.movie)";

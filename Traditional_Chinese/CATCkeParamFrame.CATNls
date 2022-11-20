@@ -1,0 +1,99 @@
+// COPYRIGHT DASSAULT SYSTEMES  1997
+//=============================================================================
+//
+// Catalog for CATCkeParamFrame class
+//
+//=============================================================================
+// 10/22/97   Creation                                   A. Anquetil
+//  7/11/00   Adding SetOfEquations:           D. Ouchakov, LEDAS Ltd. (vtn1)
+//============================================================================
+
+//Objet graphic
+CATCkeParamFrame.ParamValue_.Help = "更改參數值 : 需要 /P1 .";
+CATCkeParamFrame.ParamValue_.LongHelp ="更改參數值 : 需要 /P1 .";
+
+//Warning
+CATCkeParamFrame.Warning_.Title        = "警告";
+CATCkeParamFrame.FormatWarning_.Text   = "參數形式錯誤";
+CATCkeParamFrame.FormulaWarning1_.Text = "已存的公式會被取消";
+CATCkeParamFrame.FormulaWarning2_.Text = "已存的規則會被取消";
+
+//Menu contextuel
+CATCkeParamFrame.CreateFormulaMenu_.Title    = "編輯公式 ...";
+CATCkeParamFrame.ModifyEquMenu_.Title        = "公式";
+//tdv debut
+CATCkeParamFrame.ModifyDeactivatedEquMenu_.Title        = "關閉公式";
+CATCkeParamFrame.ModifyAllDeactivatedEquMenu_.Title        = "關閉公式";
+//tdv fin
+CATCkeParamFrame.EditEquMenu_.Title          = "編輯 ...";
+CATCkeParamFrame.DeleteEquMenu_.Title        = "刪除";
+CATCkeParamFrame.DesactivateMenu_.Title      = "不動作";
+CATCkeParamFrame.ActivateMenu_.Title         = "動作";
+CATCkeParamFrame.RenameMenu_.Title           = "編輯 ...";
+CATCkeParamFrame.MeasuringMenu_.Title        = "之間量測 ...";
+CATCkeParamFrame.MeasuringMenu2_.Title        = "量測項目...";
+CATCkeParamFrame.CreateToleranceMenu_.Title           = "增加容差 ...";
+CATCkeParamFrame.ModifyToleranceMenu_.Title        = "容差";
+CATCkeParamFrame.EditToleranceMenu_.Title          = "編輯 ...";
+CATCkeParamFrame.SuppressToleranceMenu_.Title        = "壓制";
+
+CATCkeParamFrame.ListOfValuesGeneralSubMenu_.Title     = "多重數值";
+CATCkeParamFrame.ListOfValuesUpdateMenu_.Title     = "更新數值...";
+CATCkeParamFrame.ListOfValuesSuppressMenu_.Title     = "壓制數值...";
+CATCkeParamFrame.ListOfValuesAddMenu_.Title     = "新增多重數值...";
+CATCkeParamFrame.ListOfValuesQuestionSuppression.Text = "您確定要刪除多重數值嗎?";
+CATCkeParamFrame.ListOfValuesQuestionSuppression.Title = "刪除多重數值嗎";
+
+CATCkeParamFrame.CreateRangeMenu_.Title = "增加範圍 ...";
+CATCkeParamFrame.ModifyRangeMenu_.Title = "範圍";
+CATCkeParamFrame.EditRangeMenu_.Title = "編輯 ...";
+CATCkeParamFrame.SuppressRangeMenu_.Title = "壓制";
+CATCkeParamFrame.CommentMenu_.Title = "編輯說明 ...";
+CATCkeParamFrame.HideMenu_.Title = "隱藏";
+CATCkeParamFrame.ShowMenu_.Title = "顯示";
+CATCkeParamFrame.LockMenu_.Title = "鎖定";
+CATCkeParamFrame.UnlockMenu_.Title = "釋放";
+CATCkeParamFrame.UnSetMenu_.Title = "未設定";
+DissociateMenu="移除設計表關聯性";
+DissociateQuestion="您確定要移除關聯性嗎 ? \n 此參數將無法被任何設計表使用";
+DissociateHeader="移除關聯性 ?";
+
+CATCkeParamFrame.CommentDlg_.Title = " /P1 的說明";
+
+//ShortHelp
+CATCkeParamFrame.widget1.ShortHelp = " /P1";
+CATCkeParamFrame.widget2.ShortHelp = " 程式 : /P1";
+CATCkeParamFrame.widget3.ShortHelp = "輸入 /P1";
+
+//Dialog
+CATCkeParamFrame.RenameDlg_.Title = "編輯參數";
+
+RelButtonDTHelp="開啟對話框，允許您更改驅動設計表的組態";
+RelButtonFormHelp="開啟對話框，允許您更改驅動方程式";
+RelButtonRuleHelp="開啟對話框，允許您更改驅動規則";
+RelButtonCheckHelp="開啟對話框，允許您更改檢查";
+
+CATCkeParamFrame.Warning.Title = "警告";
+CATCkeParamFrame.Warning.Text = "您可編輯此公式, 因它具有外部操作子, 且智識提供者軟體授權無效";
+
+MeasureResult="您要複製此參數的量測結果嗎 ?";
+MeasureResult2="您要使用量測所建立的參數來建立公式嗎 (回答 是) \n 或您只要複製它的數值 (回答 否)?";
+MeasureResultHd="量測命令結束";
+
+//FastForm="In this calculator fonctionnality, the dimensions without units are considered like dimensions expressed in MKS\n(meter for length magnitude for instance).\n\nIt is so strongly advised to type all units\n(the 10+10 expression won't necessary give the same result than if you directly type 20)";
+//FastFormHd="Warning";
+
+// Added by vtn1 on 7/11/2000:
+RelButtonSetOfEquationsHelp="開啟對話框允許您更改一組方程式";
+Unset="未設定";
+
+NoFormulaForVolatile="此參數無法新增公式";
+// Added by SOC on 22/03/02
+IntegerOverflowWg = "超出整數容量";
+MeasureHelp="編輯驅動量測";
+
+RemoveLinkWithMeasure="移除鏈結量測";
+
+// SGQ
+CATCkeParamFrame.LCAProxiesWarning.Title = "警告";
+CATCkeParamFrame.LCAProxiesWarning.Text = "因為未載入參數或特徵導致無法編輯由技術支援而來的物件";

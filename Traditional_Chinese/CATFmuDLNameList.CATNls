@@ -1,0 +1,43 @@
+DLNameList.CtxMenu.UPCtxt.Title     = "上"     ;
+DLNameList.CtxMenu.DownCtxt.Title   = "下"   ;
+DLNameList.CtxMenu.DeleteCtxt.Title = "刪除" ;
+DLNameList.CtxMenu.PathCtxt.Title   = "瀏覽" ;
+DLNameList.CtxMenu.CreateCtxt.Title = "新"    ;
+DLNameList.CtxMenu.ImportCtxt.Title = "輸入" ;
+DLNameList.CtxMenu.ExportCtxt.Title = "輸出" ;
+
+Column.DLName        = "DLName"         ;
+Column.WindowsFolder = "Windows 檔案夾" ;
+Column.UnixFolder    = "Unix 檔案夾" ;
+
+DefaultDLNamePrefix.Text = "DLNAME" ;
+
+Error.Create.Title                     = "建立 DLName 錯誤" ;
+Error.Create.E_FAIL.Text               = "無法建立 DLName" ;
+Error.Create.E_ACCESSDENIED.Text       = "無法建立與 DLName 的實體路徑鏈結 \n 存取失敗" ;
+Error.Create.ERROR_INVALID_NAME.Text   = "無法建立與 DLName 的實體路徑名稱 \n 不允許 Meta 字元" ;
+Error.Create.ERROR_DIRECTORY.Text      = "DLName 的實體路徑鏈結已被使用在檔案中" ;
+Error.Create.ERROR_PATH_NOT_FOUND.Text = "無法建立與 DLName 的實體路徑鏈結 \n (上層路徑是否存在?)" ;
+Error.Create.ERROR_Default.Text        = "無法建立 DLName" ;
+
+Error.Rename.Title                  = "更改 DLName 名稱錯誤"                                               ;
+Error.Rename.NameInUse.Text         = " DLName /P01 已存在. \n 您必須輸入不同名稱." ;
+Error.Rename.BadName.Text           = " DLName /P01 不適合. \n 保留舊的.";
+Error.Rename.BadRDLNameName.Text    = " DLName /P01 不適合使用者根 DLName. \n Last foil must be the DLName name. \n 保留舊的."; 
+Error.Rename.CannotRename.Text      = "無法更改 DLName 名稱為 /P01. \n 保留舊的.";
+Error.Rename.CannotRenameLink.Text  = "無法更改 DLName 名稱為 /P01. because of bad update of subDLNames links. \n 保留舊的."; 
+Error.Rename.CannotRenamePath.Text  = "無法更改 DLName 名稱為 /P01. because of bad update of subDLNames paths. \n 保留舊的."; 
+Error.Rename.CannotReplacePath.Text    = "無法更改 DLName 路徑. DLName /P01. \n 保留舊的."; 
+Error.Rename.CannotReplaceSubPath.Text = "無法更改 sub-DLName /P01 路徑. \n 保留舊的."; 
+
+Warning.DeleteSubDLName.Title             = "刪除 DLName 警告" ;
+Warning.DeleteSubDLName.One.Text          = "There's a SubDLName to delete with DLName /P01.\nDo you still want to delete this DLName and it's sub-DLName...?" ;
+Warning.DeleteSubDLName.MoreThanOne.Text  = "They're SubDLNames to delete with DLName /P01.\nDo you still want to delete this DLName and it's sub-DLNames...?" ;
+
+Error.Delete.Title                    = "刪除 DLName 錯誤" ;
+Error.Delete.BadDLNameName.Text       = "不佳的 DLName 更名. \n 沒有東西可刪除."         ;
+Error.Delete.CantFindDLName.Text      = "無法找到指定的 DLName. \n 沒有東西可刪除."         ;
+Error.Delete.CantDeleteDLName.Text    = "無法刪除指定的 DLName. \n 停止刪除."   ;
+Error.Delete.CantDeleteSubDLName.Text = "無法刪除次 DLName. \n 停止刪除."   ;
+Error.Delete.AllDLNameNotDeleted.Text = "所有 DLNames 未刪除."                         ;
+

@@ -1,0 +1,35 @@
+// Copyright DASSAULT SYSTEMES 1999
+// --------------------------------------------------------------------------------------
+//	RESPONSABLE : Christophe DAGRON (amm)
+//	FUNCTION    : Ressource File (NLS)
+//	USE         : AnalysisVisualization Object CATSPMLayoutDialog
+// --------------------------------------------------------------------------------------
+
+// *************************************************************************
+//	Message to the translaters in German and Japenese :
+//  Thanks to keep as many blank spaces as set in the different characters chains.
+//  This is important as it modifies the location of the text in the windows...
+// *************************************************************************
+
+// * Title Dialog Box *
+Title="圖像佈置";
+
+TileFrame.Tile_RadioButton.Title       = "爆炸圖";
+TileFrame.Tile_RadioButton.ShortHelp   = "炸開作動圖像";
+TileFrame.Tile_RadioButton.LongHelp    = "沿著軸或平面在目前情形下安排作動圖像";
+
+TileFrame.ExplodeOptionsFrame.Direction_Label.Title        = "沿著: ";
+TileFrame.ExplodeOptionsFrame.Direction_Combo.ShortHelp    = "爆炸方向";
+TileFrame.ExplodeOptionsFrame.Direction_Combo.LongHelp     = "選擇要炸開的方向";
+
+TileFrame.ExplodeOptionsFrame.Distance_Label.Title         = "距離: ";
+TileFrame.ExplodeOptionsFrame.Distance_Editor.ShortHelp    = "連續兩圖像間的距離";
+TileFrame.ExplodeOptionsFrame.Distance_Editor.LongHelp     = "連續兩圖像間的距離";
+
+TileFrame.ExplodeOptionsFrame.DefaultDistance_PB.Title     = "預設";
+TileFrame.ExplodeOptionsFrame.DefaultDistance_PB.ShortHelp = "預設距離數值";
+TileFrame.ExplodeOptionsFrame.DefaultDistance_PB.LongHelp  = "預設連續兩圖像間的距離";
+
+TileFrame.Untile_RadioButton.Title     = "預設";
+TileFrame.Untile_RadioButton.ShortHelp = "炸開回復";
+TileFrame.Untile_RadioButton.LongHelp  = "將所有圖像回復至炸開前位置";

@@ -1,0 +1,196 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwDimensionFrame
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    
+// DATE        :    26.11.1999
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    Tools/Option du Drafting
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+// 01			lgk 17.12.02 Revision
+//=====================================================================================
+
+
+frameDimSketch.HeaderFrame.Global.Title="建立尺寸";
+frameDimSketch.HeaderFrame.Global.LongHelp="定義在建立尺寸時的定位及對齊方式.";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.checkDimSketch.Title="依據游標來建立尺寸 (同時按 CTRL)";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.checkDimSketch.LongHelp="依據滑鼠指標來建立尺寸. 
+按下 控制 鍵可讓您暫時 
+啟動或不啟動此模式.";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.checkDimLinePosRelative.Title="尺寸線和幾何元素間的固定偏移量";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.checkDimLinePosRelative.LongHelp="當幾何元素移動時，保持尺寸線和幾何元素間的距離.";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.frameLinePosValue.labelDimLinePosValue.Title="預設尺寸線和幾何元素距離: ";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.frameLinePosValue.labelDimLinePosValue.LongHelp="定義預設尺寸線和幾何元素距離
+當幾何元素移動時，保持尺寸線和幾何元素間的距離.";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._checkDimLineUpEnds.Title="定位後結束尺寸線建立";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._checkDimLineUpEnds.LongHelp="當您選擇另一尺寸線來定位時,
+會自動結束尺寸線建立.";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.frameDimAssoc3D.pushAssoc3D.Title="相關 3D";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.frm.checkDimDriveAuto.Title="永遠驅動尺寸";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.frm.checkDimDriveAuto..LongHelp="在 2D 幾何元素或 3D 間建立驅動尺寸";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.frm.chkDetectChamfer.Title="偵測倒角";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.frm.chkDetectChamfer.LongHelp="偵測倒角並建立適當尺寸";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._frameDimCircle._labelDimCircle.Title="預設以圓圈圍繞尺寸";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._frameDimCircle.lblFTADimCircle.Title="在圓或圓柱或旋轉曲面建立";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._frameDimCircle._frameDimCircleRadio._frameDimCircleRadiolocked._radioDimCircleCenter.Title="中心";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._frameDimCircle._frameDimCircleRadio._frameDimCircleRadiolocked.radFTADimCenter.Title="中心或軸";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._frameDimCircle._frameDimCircleRadio._frameDimCircleRadiolocked._radioDimCircleCenter.LongHelp="預設以圓圈圍繞尺寸.";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._frameDimCircle._frameDimCircleRadio._frameDimCircleRadiolocked.radFTADimCenter.LongHelp="預設, 在圓或圓柱上建立尺寸
+或旋轉中心軸.";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._frameDimCircle._frameDimCircleRadio._frameDimCircleRadiolocked._radioDimCircleEdge.Title="邊界";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._frameDimCircle._frameDimCircleRadio._frameDimCircleRadiolocked.radFTADimEdge.Title="邊界";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._frameDimCircle._frameDimCircleRadio._frameDimCircleRadiolocked._radioDimCircleEdge.LongHelp="預設以圓圈圍繞邊界.";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._frameDimCircle._frameDimCircleRadio._frameDimCircleRadiolocked.radFTADimEdge.LongHelp="By default, creates dimensions on circle's or cylinder's
+or revolute's edge.";
+
+_frameMove.HeaderFrame.Global.Title="移動 ";
+_frameMove.HeaderFrame.Global.LongHelp="定義尺寸移動方式. 請參閱 操作 標籤.";
+
+_frameMove.IconAndOptionsFrame.OptionsFrame._checkDimSnap.Title="以預設擷取 (同時按下 shift 鍵) ";
+_frameMove.IconAndOptionsFrame.OptionsFrame._checkDimSnap.LongHelp="移動尺寸時起動擷取模式.
+請使用 自訂擷取 按鈕來自定尺寸鎖定模式.
+按下 Shift 鍵可讓您暫時 
+啟動或不啟動此模式.";
+_frameMove.IconAndOptionsFrame.OptionsFrame._frameDimSnap._pushDimSnap.Title="自訂擷取中...";
+_frameMove.IconAndOptionsFrame.OptionsFrame._frameDimSnap._pushDimSnap.LongHelp="自訂尺寸在格線中的位置或符號間數值的鎖定模式";
+_frameMove.IconAndOptionsFrame.OptionsFrame._checkDimMoveSubPart.Title="只移動所選的次零件";
+_frameMove.IconAndOptionsFrame.OptionsFrame._checkDimMoveSubPart.LongHelp="只移動所選次零件中的尺寸
+(尺寸線, 數值, 或第二尺寸線).";
+
+
+_frameLineUp.HeaderFrame.Global.Title="對齊 ";
+_frameLineUp.HeaderFrame.Global.LongHelp="定義在建立或對齊命令時使用在對齊尺寸的參數. 您可定義在系統或忽略它.";
+
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._labelLineUpBaseOffset.Title="至參考的預設偏移:";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._labelLineUpBaseOffset.LongHelp="為長度,距離,角度 
+和半徑或直徑
+所設至參考的預設偏移值.";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._editorLineUpBaseOffsetLength.LongHelp="為長度,距離,角度
+所設至參考的預設偏移值.";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._editorLineUpBaseOffsetAngle.LongHelp="為半徑,直徑
+所設至參考的預設偏移值.";
+
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._labelLineUpOffset.Title="尺寸間的預設偏移值:";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._labelLineUpOffset.LongHelp="為長度,距離,角度 
+和半徑或直徑
+所設尺寸間的預設偏移值.";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._editorLineUpOffsetLength.LongHelp="為長度,距離,角度
+所設尺寸間的預設偏移值.";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._editorLineUpOffsetAngle.LongHelp="為半徑,直徑
+所設尺寸間的預設偏移值.";
+
+_frameLineUp.IconAndOptionsFrame.OptionsFrame.checkLineUpStackVal.Title="對正連續式尺寸數值";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame.checkLineUpStackVal.LongHelp="依最小尺寸組對正連續式尺寸數值";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame.checkLineUpCumulVal.Title="對正基線式尺寸數值";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame.checkLineUpCumulVal.LongHelp="依最小尺寸組對正基線式尺寸數值";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame.tmpFrame.checkLineUpAutoFunnel.Title="自動增加側彎(FUNNEL)";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame.tmpFrame.checkLineUpAutoFunnel.LongHelp="當尺寸線無法正確顯示時
+自動增加側彎.";
+
+_frameDesignMode.HeaderFrame.Global.Title="分析顯示模式";
+_frameDesignMode.HeaderFrame.Global.LongHelp="定義可以用不同自訂顏色來表現不同形式尺寸的模式.";
+
+_frameDesignMode.IconAndOptionsFrame.OptionsFrame._checkDesignMode.Title="啟動分析顯示模式";
+_frameDesignMode.IconAndOptionsFrame.OptionsFrame._checkDesignMode.LongHelp="顯示以不同和自訂的顏色來表現尺寸.";
+
+_frameDesignMode.IconAndOptionsFrame.OptionsFrame.diagColorsPushButton.Title="形式和顏色...";
+_frameDesignMode.IconAndOptionsFrame.OptionsFrame.diagColorsPushButton.LongHelp="顯示以不同和自訂的顏色來表現不同尺寸形式.";
+
+
+
+dimAssocWnd.Title="與 3D 相關的尺寸";
+//frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked.Title="與 3D 相關";
+dimAssocWnd.frameDimAssoc3D.HeaderFrame.Global.Title ="與 3D 相關的尺寸";
+
+dimAssocWnd.frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked._radioDimForce2DAlways.Title="只建立非相關尺寸";
+dimAssocWnd.frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked._radioDimForce2DAlways.LongHelp="只建立非相關的 3D 尺寸";
+
+dimAssocWnd.frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked._radioDimForce2DWhenPb.Title="允許非相關尺寸";
+dimAssocWnd.frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked._radioDimForce2DWhenPb.LongHelp="允許建立非相關 3D 尺寸
+只在可適用 3D 狀況下.";
+
+dimAssocWnd.frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked._radioDimForce2DNever.Title="絕不建立非相關尺寸";
+dimAssocWnd.frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked._radioDimForce2DNever.LongHelp="絕不建立非相關 3D 尺寸";
+
+dimAssocWnd.Title="與 3D 相關的尺寸";
+//frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked.Title="Associativity on 3D";
+dimAssocWnd.frameAssocDimApprox.HeaderFrame.Global.Title = " \"近似\" 模式視圖的相關性";
+
+dimAssocWnd.frameAssocDimApprox.IconAndOptionsFrame.OptionsFrame.chkAssocDimOnApproximate.Title="允許在近似視圖建立相關尺寸";
+dimAssocWnd.frameAssocDimApprox.IconAndOptionsFrame.OptionsFrame.chkAssocDimOnApproximate.LongHelp="如勾選, the dimension associativity rule defined in the \"associativity on 3D\" section will be applied in approximated views,\nelse the dimensions will be non associative in those views.";
+
+dimSnapWnd.Title="尺寸萃取中";
+dimSnapWnd.frameDimSnap.HeaderFrame.Global.Title = "尺寸萃取";
+dimSnapWnd.frameDimSnap.HeaderFrame.Global.LongHelp = "Configure the way the dimension snaps.";
+dimSnapWnd.frameDimSnap.IconAndOptionsFrame.OptionsFrame.frameRadioDimSnap.frameRadioDimSnaplocked._radioDimSnapOnGrid.Title = "格線上";
+dimSnapWnd.frameDimSnap.IconAndOptionsFrame.OptionsFrame.frameRadioDimSnap.frameRadioDimSnaplocked._radioDimSnapOnGrid.LongHelp = "Snaps the position of the dimension on the grid.";
+dimSnapWnd.frameDimSnap.IconAndOptionsFrame.OptionsFrame.frameRadioDimSnap.frameRadioDimSnaplocked._radioDimSnapValue.Title = "以符號間數值";
+dimSnapWnd.frameDimSnap.IconAndOptionsFrame.OptionsFrame.frameRadioDimSnap.frameRadioDimSnaplocked._radioDimSnapValue.LongHelp = "Snaps the value to its standard position 
+if it's located between symbols.";
+dimSnapWnd.frameDimSnap.IconAndOptionsFrame.OptionsFrame.frameRadioDimSnap.frameRadioDimSnaplocked._radioDimSnapBoth.Title = "兩者";
+dimSnapWnd.frameDimSnap.IconAndOptionsFrame.OptionsFrame.frameRadioDimSnap.frameRadioDimSnaplocked._radioDimSnapBoth.LongHelp = "Both snaps position on the grid 
+and value between symbols.";
+
+// NLS de l'onglet Dimension pour Analysis Colors
+dimColor.Title="型式和顏色";
+dimColor.frameDimColor.HeaderFrame.Global.Title="型式和顏色";
+dimColor.frameDimColor.HeaderFrame.Global.LongHelp=
+"Lets you define and customize the different 
+colors to use for various types of dimensions.";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkNotUpToDate.Title="未更新尺寸";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkNotUpToDate.LongHelp=
+"Defines the color used in analysis display mode 
+to represent dimensions that are not up-to-date.";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkNonAssociative.Title="不相關尺寸 (on 3D)";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkNonAssociative.LongHelp=
+"Defines the color used in analysis display mode
+to represent dimensions that are not associated 
+to 3D geometry.";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkBroken.Title="尺寸轉換成圖形";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkBroken.LongHelp=
+"Defines the color used in analysis display mode 
+to represent dimensions converted to graphical elements.";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkFake.Title="假尺寸";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkFake.LongHelp=
+"Defines the color used in analysis display mode
+to represent fake dimensions.";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkDriving.Title="尺寸驅動 2D 幾何元素";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkDriving.LongHelp=
+"Defines the color used in analysis display mode
+to represent dimensions that drive 2D geometry.";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkDim3DCst.Title="由 3D 拘束產生尺寸";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkDim3DCst.LongHelp=
+"Defines the color used in analysis display mode 
+to represent dimensions generated from 3D constraints.";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkDimNUTD3DCst.Title="尺寸驅動未更新 3D 拘束";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkDimNUTD3DCst.LongHelp=
+"Defines the color used in analysis display mode 
+to represent dimensions that drive 3D constraints 
+which are not up-to-date.";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkTrue.Title="實際尺寸";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.checkTrue.LongHelp=
+"Defines the color used in analysis display mode
+to represent True length dimensions.";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkIsolatedDim.Title="獨立尺寸";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkIsolatedDim.LongHelp="Defines the color used in analysis display mode
+to represent dimensions that are not linked to any geometry.";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimOnNonVisGeom.Title="隱藏幾何元素的尺寸";
+dimColor.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimOnNonVisGeom.LongHelp="Defines the color used in analysis display mode to represent
+dimensions that are attached to geometry which is not visible.";

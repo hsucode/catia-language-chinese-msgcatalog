@@ -1,0 +1,150 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//===========================================================================
+//
+// CATRdgShootingPhotonsFrame
+//
+//===========================================================================
+
+//--------------------------------------
+// Gather frame
+//--------------------------------------
+gatherFrame.HeaderFrame.Global.Title = "最後收集";
+
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherCheck.Title = "啟動";
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherCheck.Help = "Switches Final Gathering";
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherCheck.ShortHelp = "Switch Final Gathering";
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherCheck.LongHelp =
+"Switches on/off final gathering.
+Final Gathering means that at each shaded point,
+the hemisphere above is sampled by sending rays
+into appropriate directions to compute indirect
+illumination, in addition to direct illumination.";
+
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherAccuracyLabel.Title = "射線: ";
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherAccuracySpinner.Help = "Defines the number of rays fired";
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherAccuracySpinner.ShortHelp = "Fired Rays";
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherAccuracySpinner.LongHelp =
+"Defines how many rays are fired from each pixel
+to calculate the indirect illumination.
+Higher numbers increase the precision but reduce
+performance. If the number is too low, soft
+patterns of light and shadow appear.";
+
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherMaxRadiusLabel.Title = "最大半徑: ";
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherMaxRadiusSpinner.Help = "Defines the maximum radius";
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherMaxRadiusSpinner.ShortHelp = "Maximum Radius For Interpolation";
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherMaxRadiusSpinner.LongHelp =
+"Defines the maximum distance at which another final
+gather step result may be used for interpolation. 
+Lower numbers increase the number of final gathering 
+steps, and increase precision at the cost of lower 
+performance. If set to 0 the distance is computed 
+from the scene extent.";
+
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherMinRadiusLabel.Title = "最小半徑: ";
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherMinRadiusSpinner.Help = "Defines the minimum radius";
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherMinRadiusSpinner.ShortHelp = "Minimum Radius For Interpolation";
+gatherFrame.IconAndOptionsFrame.OptionsFrame.gatherParametersFrame.gatherMinRadiusSpinner.LongHelp =
+"Specifies that a final gather result must be used for 
+interpolation if it is within this distance. 
+This parameter tends to have less influence on the 
+rendering quality than the maximum radius. If set 
+to 0 the distance used is 10% of maximum radius.";
+
+//--------------------------------------
+// Global frame
+//--------------------------------------
+globalFrame.HeaderFrame.Global.Title = "整體照明";
+
+globalFrame.IconAndOptionsFrame.OptionsFrame.globalParametersFrame.globalCheck.Title = "啟動";
+globalFrame.IconAndOptionsFrame.OptionsFrame.globalParametersFrame.globalCheck.Help = "Switches Global Illumination";
+globalFrame.IconAndOptionsFrame.OptionsFrame.globalParametersFrame.globalCheck.ShortHelp = "Switch Global Illumination";
+globalFrame.IconAndOptionsFrame.OptionsFrame.globalParametersFrame.globalCheck.LongHelp =
+"Switches on/off global illumination.
+Global illumination is the simulation of all light 
+interreflection effects in a scene (except caustics).
+This includes effects such as color bleeding between
+adjacent walls. 
+Global illumination effects are subtle but add realism 
+to a scene.
+The computation of global illumination requires a photon
+map generated in a preprocessing step in which photons
+are emitted from the light sources and traced through 
+the scene using photon tracing.
+During surface shading the photon map is used to add 
+indirect illumination.";
+
+globalFrame.IconAndOptionsFrame.OptionsFrame.globalParametersFrame.globalAccuracyLabel.Title = "Photons: ";
+globalFrame.IconAndOptionsFrame.OptionsFrame.globalParametersFrame.globalAccuracySpinner.Help = "Defines the number of global illumination photons used";
+globalFrame.IconAndOptionsFrame.OptionsFrame.globalParametersFrame.globalAccuracySpinner.ShortHelp = "Global Illumination Photons Used";
+globalFrame.IconAndOptionsFrame.OptionsFrame.globalParametersFrame.globalAccuracySpinner.LongHelp =
+"Defines the maximum number of photons used to compute
+the local intensity of global illumination.
+The default is 500. Large numbers like 2000 make global 
+illumination smoother but slower.";
+
+globalFrame.IconAndOptionsFrame.OptionsFrame.globalParametersFrame.globalRadiusLabel.Title = "最大半徑: ";
+globalFrame.IconAndOptionsFrame.OptionsFrame.globalParametersFrame.globalRadiusSpinner.Help = "Defines photons maximum radius";
+globalFrame.IconAndOptionsFrame.OptionsFrame.globalParametersFrame.globalRadiusSpinner.ShortHelp = "Photons Maximum Radius";
+globalFrame.IconAndOptionsFrame.OptionsFrame.globalParametersFrame.globalRadiusSpinner.LongHelp =
+"Defines how far photons will be searched in the
+scene to compute the local intensity of global 
+illumination.
+If set to 0 the distance is computed from the
+scene extent.";
+
+//--------------------------------------
+// Caustic frame
+//--------------------------------------
+causticFrame.HeaderFrame.Global.Title = "Caustics";
+
+causticFrame.IconAndOptionsFrame.OptionsFrame.causticParametersFrame.causticCheck.Title = "啟動";
+causticFrame.IconAndOptionsFrame.OptionsFrame.causticParametersFrame.causticCheck.Help = "Switches Caustics";
+causticFrame.IconAndOptionsFrame.OptionsFrame.causticParametersFrame.causticCheck.ShortHelp = "Switch Caustics";
+causticFrame.IconAndOptionsFrame.OptionsFrame.causticParametersFrame.causticCheck.LongHelp =
+"Switches on/off caustics.
+Caustics are light pattern that are created when light 
+from a light source illuminates a diffuse surface via 
+one or more speculare reflections or transmissions.
+Examples:
+- Light patterns created on the bottom of a 
+  swimming pool.
+- Light being focused by a glass of water.
+The computation of caustics requires a photon map 
+generated in a preprocessing step in which photons
+are emitted from the light sources and traced through 
+the scene using photon tracing.
+During surface shading the photon map is used to add 
+indirect illumination.";
+
+causticFrame.IconAndOptionsFrame.OptionsFrame.causticParametersFrame.causticAccuracyLabel.Title = "Photons: ";
+causticFrame.IconAndOptionsFrame.OptionsFrame.causticParametersFrame.causticAccuracySpinner.Help = "Defines the number of caustic photons used";
+causticFrame.IconAndOptionsFrame.OptionsFrame.causticParametersFrame.causticAccuracySpinner.ShortHelp = "Caustic Photons Used";
+causticFrame.IconAndOptionsFrame.OptionsFrame.causticParametersFrame.causticAccuracySpinner.LongHelp =
+"Defines the maximum number of photons used to compute
+the local intensity of caustic brightness.
+The default is 100. Large numbers like 200 make caustics
+less noisy but also more blurry and slower.";
+
+causticFrame.IconAndOptionsFrame.OptionsFrame.causticParametersFrame.causticRadiusLabel.Title = "最大半徑: ";
+causticFrame.IconAndOptionsFrame.OptionsFrame.causticParametersFrame.causticRadiusSpinner.Help = "Defines photons maximum radius";
+causticFrame.IconAndOptionsFrame.OptionsFrame.causticParametersFrame.causticRadiusSpinner.ShortHelp = "Photons Maximum Radius";
+causticFrame.IconAndOptionsFrame.OptionsFrame.causticParametersFrame.causticRadiusSpinner.LongHelp =
+"Defines how far photons will be searched in the
+scene to compute the local intensity of caustic
+brightness.
+If set to 0 the distance is computed from the
+scene extent.";
+
+//--------------------------------------
+// Ambient frame
+//--------------------------------------
+ambientFrame.HeaderFrame.Global.Title = "材料";
+
+ambientFrame.IconAndOptionsFrame.OptionsFrame.ambientParametersFrame.ambientCheck.Title = "Do not use ambient";
+ambientFrame.IconAndOptionsFrame.OptionsFrame.ambientParametersFrame.ambientCheck.Help = "Disables use of material ambient";
+ambientFrame.IconAndOptionsFrame.OptionsFrame.ambientParametersFrame.ambientCheck.ShortHelp = "Disable Material Ambient";
+ambientFrame.IconAndOptionsFrame.OptionsFrame.ambientParametersFrame.ambientCheck.LongHelp =
+"Enables or disables the use of material ambient parameter.
+When using indirect illumination, the ambient parameter of
+materials should not be used.";

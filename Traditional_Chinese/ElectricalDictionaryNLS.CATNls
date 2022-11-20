@@ -1,0 +1,318 @@
+// * Solution *
+Electrical="電子的";
+// * Discipline *
+ElecDiscipline="規律";
+
+// **********
+// * Signal *
+// **********
+
+ElecSignal="信號";
+ElecGroupSignal="信號群組";
+ElecGroundSignal="地面信號";
+ElecShieldingSignal="防護信號";
+ElecVideoSignal="視頻信號";
+ElecPowerSignal="動力信號";
+ElecCommandSignal="命令信號";
+ElecSignalRoute="信號路線";
+
+ElecSignalExtremity="信號極端";
+ElecSignalRouteExtremity="信號路線極端"; 
+ElecOffSheet="離開片連接器";
+
+// **************
+// * Wire/Cable *
+// **************
+
+ElecWire="電子線束";
+ElecWireLight="電線";
+ElecWireExtremity="電線端點";
+ElecWireExtremityLight="電線端點";
+ElecWireGroup="線群組";
+
+
+// **********
+// * System *
+// **********
+
+ElecSystem="系統";
+
+// *******************
+// * Fnct Composants *
+// *******************
+
+ElecFnctCon="功能連接器";
+ElecFnctEqt="功能連接器";
+
+ElecFnctCntPt="接觸點";
+
+
+// ********************
+// * Physical Devices *
+// ********************
+
+ElecBayArea="盒內區域";
+
+ElecConShell="連接器殼";
+
+ElecConPart="連接器零件";
+
+ElecEqtPart="設備零件";
+
+ElecSicCon="單一插入物連接器";
+
+ElecMicCon="多重插入物連接器";
+
+ElecStud="大頭釘";
+
+ElecIntSplice="內部接合";
+
+ElecExtSplice="外部接合";
+
+ElecTermBlock="終端塊";
+
+ElecTermStrip="終端條";
+
+ElecContact="接觸";
+
+ElecFillerPlug="填充料插頭";
+
+ElecBackShell="背殼";
+
+// ***********************
+// * Device's connectors *
+// ***********************
+
+ElecCavity="電子穴";
+
+ElecTermination="電子終止";
+
+ElecTerminationCst="電子終止 (幾何拘束)";
+
+ElecCavityCnctPt="電子穴 連接點";
+
+ElecConnectorCnctPt="電子連接器連接點";
+
+ElecBundleCnctPt="電子捆(包)連接點";
+
+ElecBackShellCnctPt="電子後殼連接點";
+
+ElecShellCnctPt="電子薄殼連接點";
+
+ElecSupport="電子依附";
+// ***********
+// * Harness *
+// ***********
+
+ElecBundle="捆(包)";
+
+ElecBundleLink="捆(包)連接";
+
+ElecGeoBundle="幾何捆(包)";
+
+ElecBundleSegmentC="Bundle Segment";
+ElecBundleSegment="Bundle Segment";
+ElecMultipleBundleSegment="可分枝的 Bundle Segment";
+ElecMultiBranchable="多重可分枝";
+ElecBranchableC="可分枝";
+ElecBranchable="可分枝";
+
+ElecTape = "膠帶";
+ElecCorrugateTube = "Corrugated 管子";
+ElecProtection = "保護";
+ElecBundleSurface="捆(包)曲面";
+
+ElecBundleSegmentExtremity="切面末端";
+ElecBppAttr="線段組定位點 ";
+ElecBsfExtremity="曲面組端點";
+
+ElecCurve="彈性曲線";
+
+// *************
+// * Schematic *
+// *************
+ElecSchCable="電纜";
+ElecSchCableExtremityCtr="電纜端點";
+
+ElecSchWire="線";
+ElecSchWireExtremityCtr="線端點";
+
+ElecSchEquipment="設備";
+ElecSchSocket="插座";
+ElecSchJunctionBox="連接盒";
+ElecSchSwitch="開關";
+ElecSchPlug="插銷";
+ElecSchTerminalBoard="終端板";
+
+
+ElecSchConnector="電子連接器";
+ElecSchPinCtr="銷";
+ElecSchWidePinCtr="寬銷";
+
+ElecSchBusBar		=	"Bus Bar";
+ElecSchDevice		=	"裝置";
+ElecSchFuse			=	"保險絲";
+ElecSchMatingCtr	=	"對應連接器";
+ElecSchAssemblyCtr	=	"組合連接器";
+ElecSchGenEquipment			=	"一般設備 ";
+ElecSchGenJunctionBox		=	"一般連接盒";
+ElecSchGenContinuityDevice	=	"一般連續裝置 ";
+AC3PPower				=		"三向交流電";
+AC3PGenerator			=		"三向交流電發電機";
+AC3PUPS					=		"三向交流電不斷電系統";
+AC3PLoad				=		"三向交流電負載";
+AC3PCapacitor			=		"三向交流電電容";
+AC3PZigZag				=		"三向交流電來回";
+AC3PTransformer			=		"三向交流電變壓器";
+AC3PReactor				=		"三向交流電反應器";
+AC1PEquipment			=		"單向設備";
+AC1PPower				=		"單向電流";
+AC1PGenerator			=		"單向電流發電機";
+AC1PCapacitor			=		"單向電流電容器";
+AC1PTransformer			=		"單向電流變壓器";
+AC1PReactor				=		"單向電流反應器";
+DCLoad					=		"直流負載";
+DCMotor					=		"直流馬達";
+DCBattery				=		"直流電池";
+DCRectifier				=		"直流整流器";
+AC3PBusBar				=		"三向交流 bus bar";
+AC1PBusBar				=		"單向交流 bus bar";
+AC3PSwitch				=		"三向交流開關";
+AC1PSwitch				=		"單向交流開關";
+DCSwitch				=		"直流開關";
+AC1PFuse				=		"單向交流保險絲";
+DCFuse					=		"直流保險絲";
+AC3PBreaker				=		"三向交流無熔絲開關";
+AC1PBreaker				=		"單向交流無熔絲開關";
+AC3PEquipment			=		"三向交流設備";
+AC3PSynchronousMotor	=		"三向交流同步馬達";
+AC3PBranchCapacitor		=		"三向交流分枝電容器";
+AC3PMotor				=		"三向交流馬達";
+AC3PWTransformer		=		"三向交流 W 變壓器";
+AC3PPhaseShiftingTransformer	=	"三向交流 shifting 變壓器";
+AC3PDuplexReactor		=		"三向交流複式反應器";
+AC3PAutoTransformer		=		"三向交流自動變壓器";
+AC1PMotor				=		"單向交流馬達";
+AC1PBranchCapacitor		=		"單向交流分枝電容器";
+DCEquipment				=		"直流設備";
+DCBusBar				=		"直流 bus bar";
+AC3PFuse				=		"三向交流保險絲";
+DCBreaker				=		"直流無熔絲開關";
+DCGenerator			    =		"直流發電機";
+
+
+// **********
+// * Others *
+// **********
+
+ElecLogicalContact="邏輯接觸";
+ElecLogicalTermination="邏輯銷";
+ElecWireCnx="金屬線連接";
+ElecSignalRouteCnx="信號程序連接";
+ElecFromToCnx="信號末端連接";
+ElecOffSheetCnx="Off Sheet 連接";
+ElecFnctCnx="功能性連接";
+ElecBundleCnx="一組連接";
+ElecCnx="連接";
+ElecRelationCnx="比較連接";
+ElecLogTerm="邏輯端點";
+ElecMountingEquipment = "附著設備";
+
+// * Properties *
+Elec_BendRadius="折彎半徑";
+Elec_CATALOG="目錄";
+Elec_Color="色彩";
+Elec_Cutting_Length="切割長度";
+Elec_Diameter="直徑";
+Elec_External_Reference="外部參考";
+Elec_Extra_Length="額外長度";
+Elec_Ground_Unicity="地面 Unicity";
+Elec_Id_Number="Id 數目";
+Elec_Is_Disconnect="未連接";
+Elec_Is_Routable="可程式的";
+Elec_Is_Multi_Sheet="多重張數";
+Elec_Length="長度";
+Elec_Nominal_Part_Num="名詞上的零件號碼";
+Elec_Nominal_Voltage="名詞上的電壓";
+Elec_Number="號碼";
+Elec_Recom_Wire_Type="建議電線";
+Elec_Ref_Des="參考設計者";
+Elec_Routing_Priority="程序優先度";
+Elec_Section="部份";
+Elec_Signal_Section="部份";
+Elec_Sep_Code="分開碼";
+Elec_Shielding_Term="防護終止";
+Elec_Signal_IO="訊號輸出入";
+Elec_Signal_Unicity="訊號 Unicity";
+Elec_Sub_Type="次型式";
+Elec_Joint_Type = "連接形式";
+Elec_User_Desc="使用者說明";
+Elec_User_Name="功能";
+Elec_V4PARTNUM="V4 零件號碼";
+Elec_V4LIBRARY="V4 零件號碼";
+Elec_V4FAMILY="V4 家族";
+Elec_Ws_Ref="Ws_Ref";
+Elec_X_Position="X 位置";
+Elec_Y_Position="Y 位置";
+Elec_Z_Position="Z 位置";
+Elec_Line_Weight="重量";
+Elec_Segreg="分隔碼";
+Elec_Bend_Radius="折彎半徑";
+Elec_Creation_Mode="建立模式";
+Elec_Di_SlackOUT="分散式鬆弛";
+Elec_Di_Slack="分散式鬆弛";
+Elec_LengthOUT="Length in out";
+Elec_Slack="局部 Slack";
+Elec_Name="名稱";
+Elec_Zone="電子區域"; 
+Elec_ListPhysical = "表列實體 realise 訊號 ";
+Elec_Signal = "ElecSignal who the ElecWire realise";
+Elec_FullConnected = "完全連接";
+Elec_External_Diameter ="外部直徑 ";
+Elec_Continuity	=	"連續性";
+Elec_Offset = "偏移";
+Elec_Route_Validation = "有效程序線";
+Elec_Separation_Distance = "分隔距離";
+3DExtr = "3D 端點";
+Elec_IsRouted = "Is routed";
+Elec_IsNetworkConnex = "網格連接性";
+Elec_Bend_Radius_OK = "彎曲半徑 ok";
+Elec_Inner_Diameter = "內部直徑";
+Elec_Line_Type = "線形式";
+Elec_Thickness = "厚度";
+Elec_Bend_Radius_Delta = "增量彎曲半徑";
+Elec_Covering_Length = "重覆長度";
+Elec_Number_Layer = "疊層數目";
+Elec_Tape_Thickness = "膠帶厚度";
+Elec_Tape_Width= "膠帶寬度";
+Elec_Taping_Angle = "黏貼角度" ;
+Elec_Total_Tape_Length = "膠帶總長" ;
+Elec_Total_Thickness = "總厚度" ;
+Elec_Bend_Radius_Protection_OK ="彎曲半徑保護 ok";
+Elec_FromDevice	= "由裝置";
+Elec_ToDevice	= "至裝置";
+Elec_FromConnectionPoint =	"由連接點";
+Elec_ToConnectionPoint	 =	"至連接點";
+Elec_Signal_Id = "訊號 ID";
+Elec_Ref_PartNumber = "參考零件號碼";
+IsSingleInBundleSegment = "至少有一單一組部份";
+IncludedWires = "所包含線清單";
+CoveredBundleSegments = "包含 bundle segment 清單";
+Elec_WireGroup_Length = "線群組長度";
+Elec_Wire_Length_Coeff = "線和線群組長度間係數";
+Elec_WireGroup_Type = "線群組型式";
+Elec_Parent = "上層元素";
+Elec_Min_Bend_Radius= "最小彎曲半徑";
+NumberOfConnectedBundles="Number of connected bundles to the given exremity";
+NumberOfConnectedDevices="Number of connected devices to the bundle segment";
+Elec_FromContactPartNumber="Part Number value of the contact connected on the cavity to which the first extremity of the wire is connected";
+Elec_ToContactPartNumber="Part Number value of the contact connected on the cavity to which the second extremity of the wire is connected";
+
+// ***********
+// * Formboard *
+// ***********
+Elec_Fmbd_Modify = "同步化";
+Elec_True_Length = "實長";
+
+Elec_ProtectionLevel = "保護層級";
+

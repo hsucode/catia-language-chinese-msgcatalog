@@ -1,0 +1,54 @@
+//==============================================================================
+// COPYRIGHT DASSAULT SYSTEMES  1998
+//==============================================================================
+//
+// CATStOffsetDialog: Resource file for NLS purpose related to Offset dialog
+//
+//==============================================================================
+//
+// Implementation Notes:
+//
+//==============================================================================
+// July 98   Creation                                    F. LETZELTER
+//==============================================================================
+
+Title="偏移曲面";
+BApplyMore.Title="更多...";
+BApplyLess.Title="更少...";
+MainFrame.OffFrame.Title="形式";
+MainFrame.OffFrame.OffRadioFrame.SimpleRadio.Title="簡單";
+MainFrame.OffFrame.OffRadioFrame.VariableRadio.Title="變化";
+MainFrame.PrefFrame.Title="極限";
+MainFrame.PrefFrame.RadioFrame.TolerRadio.Title="精度";
+MainFrame.PrefFrame.RadioFrame.DegreeRadio.Title="階數";
+MainFrame.PrefFrame.SpinnerFrame.SpinnerDegreeFrame.DegreeULabel.Title="增量 U : ";
+MainFrame.PrefFrame.SpinnerFrame.SpinnerDegreeFrame.DegreeVLabel.Title="增量 V : ";
+MainFrame.OffFrame.DuplicateFrame.DuplicateCheck.Title="保持原始";
+OptionsFrame.DisplayFrame.Title="顯示";
+OptionsFrame.DisplayFrame.ViewCheck.Title="偏移值";
+OptionsFrame.DisplayFrame.ViewNormalsCheck.Title="垂直";
+OptionsFrame.DisplayFrame.ViewCornersCheck.Title="轉角";
+OptionsFrame.DisplayFrame.ViewInfoCheck.Title="資訊";
+OptionsFrame.DisplayFrame.ViewDegreeCheck.Title="階數";
+OptionsFrame.DisplayFrame.ViewTolerCheck.Title="精度";
+
+MainFrame.OffFrame.LongHelp="Performs either a simple or a variable offset";
+MainFrame.OffFrame.OffRadioFrame.SimpleRadio.LongHelp="Performs a simple offset with the same value at each corner";
+MainFrame.OffFrame.OffRadioFrame.VariableRadio.LongHelp="Performs a variable offset with a value per corner";
+MainFrame.PrefFrame.RadioFrame.TolerRadio.LongHelp="Sets the maximum deviation allowed";
+MainFrame.PrefFrame.RadioFrame.DegreeRadio.LongHelp="Sets the maximum U and V orders allowed";
+OptionsFrame.DisplayFrame.AdjustNormalsPush.LongHelp="Sets all normals to the same direction";
+MainFrame.PrefFrame.SpinnerFrame.SpinnerDegreeFrame.DegreeULabel.LongHelp="Enter a value or click the spinner to set a new degree U value";
+MainFrame.PrefFrame.SpinnerFrame.SpinnerDegreeFrame.DegreeVLabel.LongHelp="Enter a value or click the spinner to set a new degree V value";
+MainFrame.PrefFrame.SpinnerFrame.SpinnerDegreeFrame.TolerSpinner.LongHelp="Enter a value or click the spinner to set a new tolerance value";
+MainFrame.PrefFrame.SpinnerFrame.SpinnerDegreeFrame.DegreeUSpinner.LongHelp="Enter a value or click the spinner to set a new degree U value";
+MainFrame.PrefFrame.SpinnerFrame.SpinnerDegreeFrame.DegreeVSpinner.LongHelp="Enter a value or click the spinner to set a new degree V value";
+MainFrame.OffFrame.DuplicateFrame.DuplicateCheck.LongHelp="If checked, creates offset elements while keeping the original elements.
+If unchecked, replaces original elements when performing the offset.";
+OptionsFrame.DisplayFrame.ViewCheck.LongHelp="Displays the values of every offset";
+OptionsFrame.DisplayFrame.ViewNormalsCheck.LongHelp="Displays the normals to every element";
+OptionsFrame.DisplayFrame.ViewCornersCheck.LongHelp="Displays manipulators on corners to every element";
+OptionsFrame.DisplayFrame.ViewInfoCheck.LongHelp="Displays the offset type
+on every element (Basic/Advanced)";
+OptionsFrame.DisplayFrame.ViewDegreeCheck.LongHelp="Displays the order of every element";
+OptionsFrame.DisplayFrame.ViewTolerCheck.LongHelp="Displays the maximum deviation of every element";

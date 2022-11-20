@@ -1,0 +1,272 @@
+//=============================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1997 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATTemplatePanel
+// LOCATION    :    DraftingGenUI/CNext/resources/msgcatalog/
+// AUTHOR      :    jmt
+// DATE        :    Oct. 29 1997
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Wizard Views
+//                  Creation Panel.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :	Suite a des modifs majeures, il faut comprendre ici
+//					ISO=1er triedre .. ANSI=3e triedre
+//------------------------------------------------------------------------------
+//MODIFICATIONS     user  date      purpose
+//   HISTORY        ----  ----      -------
+//
+//                  abr   27/04/98  mise ?jour standards ergo sur commentaires
+//                                  en accord avec ogk
+//					ogk	  03.07.98  modif des steps + ajout de 2 variables
+//					ogk	  07.07.98  modif de textes pour correction RI 197653
+//------------------------------------------------------------------------------
+
+WizardStep1="視圖精靈 (步驟 1/2) : 預設組態";
+WizardStep2="視圖精靈 (步驟 2/2) : 安排組態";
+WizardStep3="視圖精靈 (步驟 3/3) : 實體選擇";
+
+UpFrm.ViewFrm.PreviewFrm.Title="預視 ";
+UpFrm.HelpFrm.Title="提示精靈";
+
+UpFrm.ViewFrm.PreviewFrm.LongHelp=
+"顯示所選組態的預視.";
+UpFrm.HelpFrm.LongHelp=
+"顯示提示精靈.";
+
+Error1Text="您無法在佈置圖中
+插內兩個以上型式相同的視圖.";
+Error2Text="佈置圖中至少須有一個主要視圖
+來繪製其它視圖! 
+請退回前一動作來插入主要視圖 
+(前視圖或等角視圖).";
+
+//  (Window Frame Zone)
+//  AddStep1FrameHelpEditor=
+//  "Inserts a combination of many views by pressing 
+//  any button in the left panel. A front or isometric view 
+//  can be set as the main view via the contextual menu. 
+//  Then, the main view will be drawn in the green color.
+//  Any view can be moved when selected, or deleted
+//  using the contextual menu.";
+//  AddStep2FrameHelpEditor=
+//  "Inserts more views by selecting them from the left
+//  window. Activating the link will make the projected views
+//  linked to the main view. Increment the minimum distance
+//  to leave more space between the views in the drawing.";
+//  AddStep3FrameHelpEditor=
+//  "Make sure you select a plane if there is at least one
+//  front view in the preview.";
+
+CheckLinkCATDlgCheckText="投影視圖: 鏈結至主要視圖";
+CheckLinkCATDlgUncheckText="投影視圖: 未鏈結至主要視圖";
+
+CheckLinkCATDlgCheckText.LongHelp=
+"設定等角視圖與主視圖鏈結.";
+CheckLinkCATDlgUncheckText.LongHelp=
+"設定等角視圖不與主視圖鏈結.";
+
+CurrentNameText="投影視圖: 未鏈結至主要視圖";
+MainViewTypeNoneText="主要視圖是: [無]";
+MainViewTypeFrontText="主要視圖是前視圖";
+MainViewTypeIsometricText="主要視圖是對稱視圖";
+AddStep3FrameStep3FrmSelectionText=
+"實體獲取: 在零件或模型上按一下.";
+
+CurrentNameText.LongHelp=
+"定義投影視圖不與主視圖鏈結.";
+MainViewTypeNoneText.LongHelp=
+"定義沒有主視圖.";
+MainViewTypeFrontText.LongHelp=
+"定義主視圖為前視圖.";
+MainViewTypeIsometricText.LongHelp=
+"定義主視圖為等角視圖.";
+AddStep3FrameStep3FrmSelectionText.LongHelp=
+"在零件或模型上按一下來獲取實體.";
+
+NextTitle="Next >";
+FinishTitle="完成";
+DownFrm.WindowButtonsFrm.Cancel.Title="取消";
+DownFrm.WindowButtonsFrm.Previous.Title="< 上一個";
+DownFrm.WindowButtonsFrm.Next.Title="下一個 >";
+DownFrm.WindowButtonsFrm.Finish="完成";
+InContextDelete="刪除";
+InContextMainView="設定與主視圖一致";
+UpFrm.StepFrm.Step1Frm.Load.Title="載入...";
+UpFrm.StepFrm.Step1Frm.CustomizedView1.Title=" ";
+UpFrm.StepFrm.Step1Frm.CustomizedView2.Title=" ";
+UpFrm.StepFrm.Step1Frm.CustomizedView3.Title=" ";
+UpFrm.StepFrm.Step2Frm.FrontView.Title="前視圖";
+UpFrm.StepFrm.Step2Frm.RearView.Title="後視圖";
+UpFrm.StepFrm.Step2Frm.TopView.Title="上視圖";
+UpFrm.StepFrm.Step2Frm.BottomView.Title="下視圖";
+UpFrm.StepFrm.Step2Frm.LeftView.Title="左視圖";
+UpFrm.StepFrm.Step2Frm.RightView.Title="右視圖";
+UpFrm.StepFrm.Step2Frm.IsomView.Title="立體圖";
+UpFrm.StepFrm.Step2Frm.Clear.Title="清除佈置";
+UpFrm.ViewFrm.InfoFrm.LinkWith.Title="鏈結";
+UpFrm.StepFrm.Step2Frm.SaveAs.Title="存檔";
+
+DownFrm.WindowButtonsFrm.Cancel.LongHelp=
+"取消前一個選擇.";
+DownFrm.WindowButtonsFrm.Previous.LongHelp=
+"退回至前一視窗.";
+DownFrm.WindowButtonsFrm.Next.LongHelp=
+"跳至下列視窗.";
+DownFrm.WindowButtonsFrm.Finish.LongHelp=
+"結束.";
+InContextDelete.LongHelp=
+"刪除所選組態.";
+InContextMainView.LongHelp=
+"設定視圖為主要視圖.";
+
+UpFrm.StepFrm.Step1Frm.Text1.Title="標準形式:";
+UpFrm.StepFrm.Step1Frm.Text2.Title="使用者形式:";
+UpFrm.ViewFrm.InfoFrm.SpaceLabel.Title="視圖間最小距離:";
+UpFrm.StepFrm.Step2Frm.SpaceLabel2.Title="視圖間:";
+
+UpFrm.StepFrm.Step1Frm.Text1.LongHelp=
+"定義標準型式.";
+UpFrm.StepFrm.Step1Frm.Text2.LongHelp=
+"定義使用者定義型式.";
+UpFrm.ViewFrm.InfoFrm.SpaceLabel.LongHelp=
+"應用視圖間的最小距離.";
+UpFrm.StepFrm.Step2Frm.SpaceLabel2.LongHelp=
+"應用視圖間的距離.";
+
+
+UpFrm.StepFrm.Step1Frm.Load.ShortHelp="載入自訂組態";
+UpFrm.StepFrm.Step2Frm.FrontView.ShortHelp="前視圖";
+UpFrm.StepFrm.Step2Frm.RearView.ShortHelp="後視圖";
+UpFrm.StepFrm.Step2Frm.TopView.ShortHelp="上視圖";
+UpFrm.StepFrm.Step2Frm.BottomView.ShortHelp="下視圖";
+UpFrm.StepFrm.Step2Frm.LeftView.ShortHelp="左視圖";
+UpFrm.StepFrm.Step2Frm.RightView.ShortHelp="右視圖";
+UpFrm.StepFrm.Step2Frm.IsomView.ShortHelp="等角視圖";
+UpFrm.StepFrm.Step2Frm.Clear.ShortHelp="清除預覽";
+UpFrm.ViewFrm.InfoFrm.LinkWith.ShortHelp="視圖鏈結";
+UpFrm.StepFrm.Step2Frm.SaveAs.ShortHelp="儲存組態";
+
+UpFrm.StepFrm.Step1Frm.Load.Help="載入使用者自訂佈圖";
+UpFrm.StepFrm.Step2Frm.FrontView.Help="建立前視圖";
+UpFrm.StepFrm.Step2Frm.RearView.Help="建立後視圖";
+UpFrm.StepFrm.Step2Frm.TopView.Help="建立上視圖";
+UpFrm.StepFrm.Step2Frm.BottomView.Help="建立下視圖";
+UpFrm.StepFrm.Step2Frm.LeftView.Help="建立左視圖";
+UpFrm.StepFrm.Step2Frm.RightView.Help="建立右視圖";
+UpFrm.StepFrm.Step2Frm.IsomView.Help="建立等角視圖";
+UpFrm.StepFrm.Step2Frm.Clear.Help="移除預覽視窗中的全部視圖";
+UpFrm.ViewFrm.InfoFrm.LinkWith.Help="鏈結投影視窗與上層視窗";
+UpFrm.StepFrm.Step2Frm.SaveAs.Help="儲存預視組態至檔案中";
+
+UpFrm.StepFrm.Step1Frm.Load.LongHelp=
+"載入使用者自訂組態
+載入使用者自訂視窗佈圖.";
+UpFrm.StepFrm.Step2Frm.FrontView.LongHelp=
+"前視圖
+建立前視圖.";
+UpFrm.StepFrm.Step2Frm.RearView.LongHelp=
+"後視圖
+建立後視圖.";
+UpFrm.StepFrm.Step2Frm.TopView.LongHelp=
+"上視圖
+建立上視圖.";
+UpFrm.StepFrm.Step2Frm.BottomView.LongHelp=
+"下視圖
+建立下視圖.";
+UpFrm.StepFrm.Step2Frm.LeftView.LongHelp=
+"左視圖
+建立左視圖.";
+UpFrm.StepFrm.Step2Frm.RightView.LongHelp=
+"右視圖
+建立右視圖.";
+UpFrm.StepFrm.Step2Frm.IsomView.LongHelp=
+"等角視圖
+建立等角視圖.";
+UpFrm.StepFrm.Step2Frm.Clear.LongHelp=
+"清除預覽
+移除預覽視窗中的全部視圖.";
+UpFrm.ViewFrm.InfoFrm.LinkWith.LongHelp=
+"視圖鏈結
+鏈結投影視圖與上層視圖窗.";
+UpFrm.StepFrm.Step2Frm.SaveAs.LongHelp=
+"儲存組態
+儲存預視組態至檔案中.";
+
+ComposedView1CaptionISO = "下, 前, 左";
+ComposedView2CaptionISO = "右, 下, 前";
+ComposedView3CaptionISO = "前, 左, 上";
+ComposedView4CaptionISO = "右, 前, 上";
+ComposedView5CaptionISO = "上, 左, 前, 下, 右, 等角";
+ComposedView6CaptionISO = "所有類形視圖";
+ComposedView1CaptionANSI = "上, 前, 右";
+ComposedView2CaptionANSI = "左, 前, 上";
+ComposedView3CaptionANSI = "前, 下, 右";
+ComposedView4CaptionANSI = "左, 下, 前";
+ComposedView5CaptionANSI = "上, 左, 前, 下, 右, 等角";
+ComposedView6CaptionANSI = "所有類形視圖";
+
+ComposedView1ToolTipISO = "使用第一角法的組態 1";
+ComposedView2ToolTipISO = "使用第一角法的組態 2";
+ComposedView3ToolTipISO = "使用第一角法的組態 3";
+ComposedView4ToolTipISO = "使用第一角法的組態 4";
+ComposedView5ToolTipISO = "使用第一角法的組態 5";
+ComposedView6ToolTipISO = "使用第一角法的組態 6";
+ComposedView1ToolTipANSI = "使用第三角法的組態 1";
+ComposedView2ToolTipANSI = "使用第三角法的組態 2";
+ComposedView3ToolTipANSI = "使用第三角法的組態 3";
+ComposedView4ToolTipANSI = "使用第三角法的組態 4";
+ComposedView5ToolTipANSI = "使用第三角法的組態 5";
+ComposedView6ToolTipANSI = "使用第三角法的組態 6";
+
+ComposedView1HelpMessageISO="建立下, 前, 左佈圖";
+ComposedView2HelpMessageISO="建立右, 下, 前佈圖";
+ComposedView3HelpMessageISO="建立前, 左, 上佈圖";
+ComposedView4HelpMessageISO="建立右, 前, 上佈圖";
+ComposedView5HelpMessageISO="建立上, 左, 前, 下, 右, 等角佈圖";
+ComposedView6HelpMessageISO="建立所有類形視圖佈圖";
+ComposedView1HelpMessageANSI="建立上, 前, 右佈圖";
+ComposedView2HelpMessageANSI="建立左, 前, 上佈圖";
+ComposedView3HelpMessageANSI="建立前, 下, 右佈圖";
+ComposedView4HelpMessageANSI="建立左, 下, 前佈圖";
+ComposedView5HelpMessageANSI="建立上, 左, 前, 下, 右, 等角佈圖";
+ComposedView6HelpMessageANSI="建立所有類形視圖佈圖";
+
+ComposedView1ContextualHelpISO=
+"使用第一角法的組態 1 (下, 前, 左)
+建立下, 前, 左佈圖";
+ComposedView2ContextualHelpISO=
+"使用第一角法的組態 2 (右, 下, 前)
+建立右, 下, 前佈圖";
+ComposedView3ContextualHelpISO=
+"使用第一角法的組態 3 (前, 左, 上)
+建立前, 左, 上佈圖";
+ComposedView4ContextualHelpISO=
+"使用第一角法的組態 4 (右, 前, 上)
+建立右, 前, 上佈圖";
+ComposedView5ContextualHelpISO=
+"使用第一角法的組態 5 (上, 左, 前, 下, 右, 等角)
+建立上, 左, 前, 下, 右, 等角佈圖";
+ComposedView6ContextualHelpISO=
+"使用第一角法的組態 6 (所有類形視圖)
+建立所有類形視圖佈圖";
+ComposedView1ContextualHelpANSI=
+"使用第三角法的組態 1 (上, 前, 右)
+建立上, 前, 右佈圖";
+ComposedView2ContextualHelpANSI=
+"使用第三角法的組態 2 (左, 前, 上)
+建立左, 前, 上佈圖";
+ComposedView3ContextualHelpANSI=
+"使用第三角法的組態 3 (前, 下, 右)
+建立前, 下, 右佈圖";
+ComposedView4ContextualHelpANSI=
+"使用第三角法的組態 4 (左, 下, 前)
+建立左, 下, 前佈圖";
+ComposedView5ContextualHelpANSI=
+"使用第三角法的組態 5 (上, 左, 前, 下, 右, 等角)
+建立上, 左, 前, 下, 右, 等角佈圖";
+ComposedView6ContextualHelpANSI=
+"使用第三角法的組態 6 (所有類形視圖)
+建立所有類形視圖佈圖";
+

@@ -1,0 +1,50 @@
+Title = "顯示設定";
+BApply = "重設";
+LODFrame.Title = "詳細層級";
+CullFrame.Title = "圖素 Culling";
+
+LODFrame.stLODLabel.Title = "靜態";
+LODFrame.stLODLabel.ShortHelp = "定義靜態物件的顯示品質.
+較小值 = 顯示所有細緻.";
+LODFrame.stLODLabel.LongHelp = "增加 / 移除靜態物件的顯示品質.
+雖然您不想移除幾何元素, 常用在您不需要顯示所有細緻品質. 
+設定較小值可見所有細緻值, 
+或較大值可見較粗糙品質.";
+LODFrame.stLODSlider.Title = "靜態 LOD";
+LODFrame.stLODSlider.ShortHelp = "0.0 - 40.0";
+LODFrame.stLODSlider.LongHelp = "允許所選的靜態 LOD 值介於 0.0 - 40.0";
+
+LODFrame.dynLODLabel.Title = "移動時";
+LODFrame.dynLODLabel.ShortHelp = "定義移動時的顯示品質.
+較大值 = 移動較大零件較快.";
+LODFrame.dynLODLabel.LongHelp = "增加 / 移除移動時的顯示品質.
+如設定較大值則移動較大零件較快. 
+當您釋放滑鼠後, 靜態顯示品質再顯示.";
+LODFrame.dynLODSlider.Title = "動態 LOD";
+LODFrame.dynLODSlider.ShortHelp = "0.0 - 40.0";
+LODFrame.dynLODSlider.LongHelp = "允許所選的動態 LOD 值介於 0.0 - 40.0";
+
+CullFrame.stCullLabel.Title = "動態";
+CullFrame.stCullLabel.ShortHelp = "定義顯示物件的最小圖素大小.";
+CullFrame.stCullLabel.LongHelp = "Adds or removes display quality for static objects.
+Even if you do not want to move geometry, it is often 
+useful to remove details you do not need to see. 
+Set a low value if you want to see all the details, 
+or a high value to remove details.";
+CullFrame.stCullSlider.Title = "動態圖素 Culling";
+CullFrame.stCullSlider.ShortHelp = "0 - 40";
+CullFrame.stCullSlider.LongHelp = "允許選擇動態圖素 Culling 數值在 0 - 40 之間";
+
+CullFrame.dynCullLabel.Title = "移動時";
+CullFrame.dynCullLabel.ShortHelp = "定義顯示物件移動時的最小圖素大小.
+較大數值 = 大物件移動較快.";
+CullFrame.dynCullLabel.LongHelp = "移動物件時新增或移除顯示品質.
+You will be able to move large parts more quickly if 
+you set While Moving to a high value. When you release 
+the mouse after moving the part, the static size will be redisplayed.";
+CullFrame.dynCullSlider.Title = "動態圖素 Culling";
+CullFrame.dynCullSlider.ShortHelp = "0 - 40";
+CullFrame.dynCullSlider.LongHelp = "允許選擇動態圖素 Culling 數值在 0 - 40 之間";
+
+DNBVisSetErrorTitleId = "警告";
+DNBVisSetErrorMsgId = "This action will modify the corresponding values from the VisualizationRepository.CATSettings file!\nDo you want to continue?";

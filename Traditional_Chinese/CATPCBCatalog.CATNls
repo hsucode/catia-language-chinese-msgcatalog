@@ -1,0 +1,45 @@
+
+Begin0.Message = "目錄和 CATPart 檔案的建立 \n";
+Begin1.Message = "列出有問題的件號 \n";
+
+Comment1.Message = "以下的參考不存在資料庫中: \n\t/p1 \n";
+Comment2.Message = "或件號中包含一些禁止的字元 \n";
+Comment3.Message = "像是 \ / : * ?  < \" > | \n\n";
+Comment4.Message = "這些參考沒有記錄在 /p2 中 \n";
+Comment4b.Message = "請選擇你的元件和記錄你的目錄中的分件 \n";
+Comment5.Message = "\t 元件建立由 CBD\tOriginal 元件 \n";
+ 
+CommentList1.Message = "\n\t 以下的元件沒有儲存: \n";
+CommentList1b.Message = "\n\t 以下的元件是惟讀的: \n";
+CommentList2.Message = "\n\t 以下的元件不是分件: \n";
+CommentList3.Message = "\n\t 請為以下的元件再次使用建立分件圖示 \n";
+
+CatSuccess.Message = "你的目錄已經成功儲存 !";
+CatNoSuccess.Message = "目錄沒有被修改 ";
+CatNoSuccess1.Message = "目錄沒有被修改";
+CatNoSuccess2.Message = "有些分件沒有在目錄中儲存 \n 請開啟 /p1 檔案";
+CatNoSuccess2bis.Message = "有些分件沒有相關幾何 \n 請開啟 /p1 檔案";
+CatNoSuccess3.Message = "此目錄是惟讀的";
+//cvv 05:09:09 IR 0507780 To Display new message if any component is modifed 
+InfoNew.title = "資訊";
+//Start cvv 05:09:01 IR 0507780
+ComponentModified.Message = "分析時部份分件被修改, 因為點或線是新建的.\n 請使用儲存管理來查看被修改分件.";
+//End cvv 05:09:01 IR 0507780
+
+Info.title = "資訊";
+Warning1.title = "警告";
+Question.title = "問題";
+
+ERR_OUV0 ="不能找到這個目錄";
+ERR_OUV  ="這個目錄不存在 \n 你想要建立它?";
+ERR_OUV1 =" 遺漏的資訊";
+ERR_OUV2 ="在新增這個分件到目錄中以前, 你必須儲存它";
+//ERR_OUV21 ="選擇的分件沒被考慮到. \n 請確認是否所有的特性被定義和/或它們是否儲存";
+ERR_OUV3 ="電子行為已經存在";
+ERR_OUV4 ="電子行為沒有完全建立,  \n 請再次使用建立分件圖示";
+ERR_OUV5 ="這個元件不是一個分件!";
+ERR_OUV6 = "此檔案是惟讀的";
+ERR_OUV7 ="CATPart檔案未被考慮 \n 請開啟 \\ErrorRecordCatalog.report 檔案";
+ERR_FAMILY="此目錄未含任何家族. \n 請問您要預建一個家族嗎 ? ";
+       
+Component.Name="分件";

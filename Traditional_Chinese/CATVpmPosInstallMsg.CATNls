@@ -1,0 +1,50 @@
+// COPYRIGHT DASSAULT SYSTEMES 1999
+//=============================================================================
+//
+// CATVpmPosInstallMsg:
+//	P&O Installation Library NLS Info Messages
+//
+// English version
+//
+//=============================================================================
+// Usage Notes:
+//=============================================================================
+// Jan 99   Creation                                   J.Poitreau
+//=============================================================================
+
+// --- Attributes
+POSInst_INVALID_ID_LENGTH = "/P01 argument's length is /P02, but should be less or equal to /P03";
+POSInst_INVALID_MODE      = "Input mode value is /P01, but should be 0 (insert) or 1 (delete)";
+POSInst_NULL_ID           = "/P01 parameter's length is 0";
+POSInst_NO_CONNECTION     = "Cannot connect to /P01 database";
+
+POSInst_NO_LOGINSESSION   = "VPMSession could not be initialized";
+POSInst_NO_SESSION        = "Login Session could not be initialized";
+
+POSInst_CREATION_FAILED   = "Could not create /P01 [/P02]";
+POSInst_COMMIT_FAILED     = "Commit failed";
+POSInst_COMMIT_SEEMS_OK_BUT_FAILED = "Althrough commit succeeded, mask was not created - Check Database configuration (e.g: LOGFILSIZE in DB2)";
+POSInst_LOGIN_FAILED      = "Login failed (code is: /P01)";
+
+POSInst_PARTIALLY_FAILED  = "/P01 object(s) on /P02 was(were) created";
+POSInst_GLOBALLY_FAILED   = "None of the /P01 object(s) was created";
+
+// --- General messages
+POSInst_UNAVAILABLE_UNDO  = "UNDO capability is not available. Installation can be re-executed anyway!";
+
+// -- Help
+POSInst_HELP_USAGE        = "[Usage]\n\n",
+"VPMPeopleUpdate [ -h ] [ -p ] [ -m ] [ -s ]\n",
+"                [ -savemask <directory> ]\n",
+"                [ { -html [<file>] | -o <file> } ]\n\n",
+"purpose  : updates standard processes and/or DEFAULT mask\n\n",
+"-h       : generates this help\n",
+"-p       : updates ENOVIA standard processes only\n",
+"-m       : updates DEFAULT mask only\n",
+"-s       : simulation mode (no commit done)\n",
+"-savemask: to export DEFAULT mask in\n",
+"           <directory>/resources/masks/default\n",
+"-html    : send report to <file> (default: VPMPeopleUpdate.html)\n",
+"-o <file>: generates the report into <file> file, rather than to console.\n",
+"           Notice you cannot use -html and -o options at the same time.\n\n",
+"Note:      command \"VPMPeopleUpdate\" acts as \"VPMPeopleUpdate -p -m -s\"";

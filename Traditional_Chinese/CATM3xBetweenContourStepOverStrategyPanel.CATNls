@@ -1,0 +1,44 @@
+Title = "徑向";
+
+StepOverMode = "刀具預留";
+StepOverMode.LongHelp = "Specifies whether the stepover is 
+- constant along a plane perpendicular to the tool axis, 
+- computed from a scallop height value,
+- constant between tool tips 3D coordinates,
+- limited to a maximum distance between tool tips 3D coordinates.";
+
+StepDistance = "路徑間最大距離";
+M3xScallopHeight = "殘料高度";
+M3xMinStepDistance = "路徑間最小距離";
+M3xAutomatiqueStrategy = "最佳化方式";
+M3xSetSmartStepValue = "距離";
+M3xSMSLayerModeValue = "最大切深";
+M3xSMSSweepingStrategyMode = "掃掠方式";
+
+StepDistance.LongHelp = "指定兩刀徑間的最大距離.";
+
+
+M3xScallopHeight.LongHelp = "指定兩刀徑間的最大殘留厚度. 
+您也可以訂立兩刀徑間的殘料高來
+定義最大和最小距離.  ";
+
+
+M3xMinStepDistance.LongHelp = "如您選取殘料高的重疊模式
+可指定兩刀徑間的最小距離";
+
+M3xAutomatiqueStrategy.LongHelp = "最佳化方式";
+
+
+M3xSetSmartStepValue.LongHelp = "指定兩刀徑間沿著零件所量測的最大距離.";
+M3xSMSLayerModeValue.LongHelp = "指定在重加工區域的最大徑向切削深度.";
+M3xSMSSweepingStrategyMode.LongHelp = "指定切削次序可以是下列 :
+- 從導引線一至導引線二 : 刀具路徑會從導引線一開始 
+                               而在導引線二結束,
+- 從導引線二至導引線一  :刀具路徑會從導引線二開始 
+                               而在導引線一結束,
+- 從導引線至中心線 : 刀具路徑會從導引線一連續朝區域中心, 
+                               然後再從導引線二連續朝區域中心,
+- 從中心線至導引線 : 刀具路徑會從區域中心連續朝向導引線一,
+                                然後再回到區域中人再連續朝向導引線二,
+- 從導引線至中心線螺旋 : 刀具路徑會從兩導引線開始然後在中心結束,
+- 從中心線至導線引螺引: 刀具路徑會從區域中心開始然後朝向導引線.";

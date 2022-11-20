@@ -1,0 +1,42 @@
+//
+// Internal error
+//
+InternalError.Request.Expert= "執行錯誤"; 
+InternalError.Diagnostic.Expert = "執行時發生內部錯誤.";
+InternalError.Advice.Expert = "檢查輸入.";
+
+InternalError.Request.User= "執行錯誤"; 
+InternalError.Diagnostic.User = "執行時發生內部錯誤.";
+InternalError.Advice.User = "聯繫專家.";
+
+CallCycle.Request.Expert= "設計錯誤"; 
+CallCycle.Diagnostic.Expert = "呼叫行為造成循環";
+CallCycle.Advice.Expert = "檢查輸入的不同呼叫行為";
+
+CallCycle.Request.User= "設計錯誤";
+CallCycle.Diagnostic.User = "呼叫行為造成循環";
+CallCycle.Advice.User = "聯繫專家.";
+
+MapError.Request.User= "執行錯誤"; 
+MapError.Diagnostic.User = "呼叫行為造成錯誤";
+MapError.Advice.User = "聯繫專家.";
+
+MapError.Request.Expert= "執行錯誤"; 
+MapError.Diagnostic.Expert = "屬性對應時發生錯誤";
+MapError.Advice.Expert = "檢查輸入.";
+
+CalledCreateError.Request.User= "執行錯誤"; 
+CalledCreateError.Diagnostic.User = "無法建立呼叫行為";
+CalledCreateError.Advice.User = "請檢查呼叫行為的可用性";
+
+CalledCreateError.Request.Expert= "執行錯誤"; 
+CalledCreateError.Diagnostic.Expert = "無法建立呼叫行為";
+CalledCreateError.Advice.Expert = "請檢查呼叫行為的可用性";
+
+CalledExpositionError.Request.User= "執行錯誤"; 
+CalledExpositionError.Diagnostic.User = "無法建立呼叫行為";
+CalledExpositionError.Advice.User = "檢查顯示的呼叫行為";
+
+CalledExpositionError.Request.Expert= "執行錯誤"; 
+CalledExpositionError.Diagnostic.Expert = "因為未顯示導致無法建立呼叫行為";
+CalledExpositionError.Advice.Expert = "檢查顯示的呼叫行為和知識索引是否為最新的已存資料.";

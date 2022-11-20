@@ -1,0 +1,42 @@
+//=============================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1997 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATCreateGenerativeView
+// LOCATION    :    DraftingGenUI/CNext/resources/msgcatalog/
+// AUTHOR      :    OGK
+// DATE        :    19.03.98
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Front & Isom Views
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATIONS     user  date      purpose
+//   HISTORY        ----  ----      -------
+//		01			gk		08.11.99	creation NullStateIsom
+//------------------------------------------------------------------------------
+
+// A faire disparaitre a la fin de la R4 SPx
+// *****************************************
+
+CATCreateGenerativeView.NullState.Message="在3D空間選擇一個參考平面";
+CATCreateGenerativeView.NullStateIsom.Message="在3D空間中任一位置點一下滑鼠";
+CATCreateGenerativeView.FirstState.Message="點選圖紙以產生視圖或運用箭頭重新定義視圖方向";
+
+
+// Exclusif R5 et +
+// ****************
+
+
+CommandTitle="建立視圖";
+
+ChangeOfEditorText="當使用視圖建立指令時,已經有組件或文件被選擇,不允許再選擇另一個零件.
+因此指令被取消了.它將從平面文件重新開始.";
+
+BodyInAssembly="即使我們可藉著開啟 .CATPart 檔案所選本體
+在一或多個本體建立視圖,
+但還是禁止在組立中選取一或多個本體來建立視圖.";
+
+BodyInAssemblyWarning="不建議在組立中選擇一或以上個本體來建立視圖:
+結果視圖將不會鏈結至組立且部份功能將無法使用.";

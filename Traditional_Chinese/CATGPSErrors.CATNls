@@ -1,0 +1,435 @@
+//*------------------------------*//
+//* CATGPSErrors messages *//
+//*------------------------------*//
+
+ERR_NoDefaultMeshableFeature = " /P01 的元件本體是空的或者外部視圖在研究的曲面上沒有定義";
+ERR_NoDefaultMeshableFeature.Diagnostic = "/P01 的元件本體是空的或者外部視圖在研究的曲面上沒有定義";
+ERR_NoDefaultMeshableFeature.Advice = "使用組件以建立你的元件本體或者工具\外部視圖以宣告研究的曲面";
+
+ERR_WarningInTransition = "偵測到的警告清單";
+ERR_AANotSynchronized1 = "The analysis content is not synchronized with currently active product representations";
+ERR_AANotSynchronized2 = "You can either use the 2D Viewer command to synchronize or keep the current analysis content";
+
+ERR_TooMuchMeshPart = "超過一個以上的網格元件相關聯到 /P01";
+ERR_TooMuchMeshPart.Diagnostic = "超過一個以上的網格元件相關聯到 /P01";
+ERR_TooMuchMeshPart.Advice = "刪除進階網格工作檯中無用的網格元件";
+
+ERR_MeshedFeatureInNoShow = "元件 /P02 的網格曲面 /P01 在隱藏模式中: 你所看見的不是你要進行網格化的";
+ERR_MeshedFeatureInNoShow.Diagnostic = "元件 /P02 的網格曲面 /P01 在隱藏模式中: 你所看見的不是你要進行網格化的";
+ERR_MeshedFeatureInNoShow.Advice = "放置元件 /P02 的曲面 /P01 在顯示模式中";
+
+ERR_NoElementsInMeshPart = "網格零件 /P01 未定義任何元素";
+ERR_NoElementsInMeshPart.Diagnostic = "網格零件 /P01 未定義任何元素";
+ERR_NoElementsInMeshPart.Advice = "請檢查檔案";
+
+ERR_NoOrientationPoint = "在樑 /P01 內容中未定義方向點";
+ERR_NoOrientationPoint.Diagnostic = "在樑 /P01 內容中未定義方向點";
+ERR_NoOrientationPoint.Advice = "在樑 /P01 內容中定義方向點";
+
+ERR_OrientationPointOnBeamSupport = "所選方向點在樑的依附上. \n 樑的每一個元素的局部點將不被計算.";
+ERR_OrientationPointOnBeamSupport.Diagnostic = "所選方向點在樑的依附上. \n 樑的每一個元素的局部點將不被計算.";
+ERR_OrientationPointOnBeamSupport.Advice = "請選擇其它方向點.";
+
+ERR_OrientationPointOnSpotWeld = "所選方位點無效";
+ERR_OrientationPointOnSpotWeld.Diagnostic = "The chosen orientation point is not valid.\nThe local axis on the beam will not be computable.";
+ERR_OrientationPointOnSpotWeld.Advice = "Choose another orientation point.";
+
+ERR_WrongTypeOfMeshPart = "相關 /P01 性質的錯誤網格型式";
+ERR_WrongTypeOfMeshPart.Diagnostic = "請檢查模型";
+ERR_WrongTypeOfMeshPart.Advice = "請檢查模型";
+
+ERR_WrongParentsMeshPart = "沒有或超過二個以上的網格零件與連接網格零件 /P01 相關";
+ERR_WrongParentsMeshPart.Diagnostic = "請檢查模型";
+ERR_WrongParentsMeshPart.Advice = "請檢查模型";
+
+ERR_NoElementInMeshPart = "網格零件 /P01 內未定義元素";
+ERR_NoElementInMeshPart.Diagnostic = "網格零件內未定義元素";
+ERR_NoElementInMeshPart.Advice = "網格零件內未定義元素";
+
+CheckMessage_SupportOK = "Specifications are consistent on /P01 of /P02";
+CheckMessage_NoMeshPart = "No consistent MeshPart is defined on /P01 of /P02";
+CheckMessage_TwoManyMeshParts= "More than one meshpart is defined on /P01 of /P02. Choose one and delete the others";
+CheckMessage_NoProperty = "No consistent Property is defined on /P01 of /P02";
+CheckMessage_TwoManyProperties = "More than one property is defined on /P01 of /P02. Choose one and delete the others";
+CheckMessage_NoMaterial= "No Material is defined on /P01 of /P02. Apply a Material to this part in the design document";
+CheckMessage_NoSupportFeature = "依附無效";
+CheckMessage_NoASMProduct = "依附無效. 零件必須刪除";
+CheckMessage_SpecInvalid = "/P01 無效";
+CheckMessage_MPAndPropTypes = "The types of the meshpart and the property are not consistent on /P01 of /P02";
+CheckMessage_StatusUnknown = "No Check available in model checker with mapping property. Use property fringe image to check that  mapping property is applied on all elements";
+
+ERR_Generative_NoMaterial.Diagnostic = "沒有材料與此性質相關. 請檢查模型.";
+
+//ERR_Generative_NoIsoMat = "設計中未適當定義材料";
+//ERR_Generative_NoIsoMat.Request = "請嚐試明確化材料資料";
+ERR_Generative_NoIsoMat.Diagnostic = " /P01 中未適當定義材料";
+ERR_Generative_NoIsoMat.Advice = "在零件或產品上應用材料";
+
+ERR_Generative_MatNotSupported2.Diagnostic = "Type of material /P01 is not supported for /P02";
+ERR_Generative_MatNotSupported2.Advice = "Change your material definition";
+
+ERR_Generative_MatNotSupported.Diagnostic = "Material type is not supported";
+ERR_Generative_MatNotSupported.Advice = "Check the materials definition";
+
+ERR_Generative_NonIsotropic_NotSupported.Request = "Material is not supported";
+ERR_Generative_NonIsotropic_NotSupported.Diagnostic = "/P01 must be an isotropic material.";
+ERR_Generative_NonIsotropic_NotSupported.Advice = "Change the material type";
+
+ERR_Generative_Connection01.Diagnostic = "Contact on surfacic geometry or non geometric group is not allowed.";
+ERR_Generative_Connection02.Diagnostic = "組立限制上不允許樑. 請使用距離連接";
+ERR_Generative_Connection03.Diagnostic = 在連接幾何上至少有一個網格零件遺失";
+ERR_Generative_Connection04 = "連接 /P01 沒有相關網格零件";
+ERR_Generative_Connection04.Diagnostic = "連接 /P01 沒有相關網格零件";
+ERR_Generative_Connection04.Advice = "請檢查模型";
+ERR_Generative_Connection05.Diagnostic = "螺栓不允許. 沒有一個連接幾何有旋轉軸線";
+ERR_Generative_Connection06.Diagnostic = "樑切面尺寸不一致.";
+ERR_Generative_Connection07.Diagnostic = "連接必須連接兩零件.";
+ERR_Generative_Connection08.Diagnostic = "The analysis connection contains a handler.\nThis connection property is not authorized on connection with handler.";
+ERR_Generative_Connection09.Diagnostic = "Slider on surfacic geometry or non geometric group is not allowed.";
+ERR_Generative_Connection10.Diagnostic = "Bolt is not allowed if one of the support of the connection is a free group.";
+ERR_Generative_Connection11.Diagnostic = "Pressure fitting on surfacic geometry or non geometric group is not allowed.";
+ERR_Generative_Connection12.Diagnostic = "Computation of normals for contact connections is not possible on lines or points.";
+ERR_Generative_Connection13.Diagnostic = "Computation of normals for pressure fitting connections is not possible on lines or points.";
+ERR_Generative_Connection14.Diagnostic = "Computation of normals for slider connections is not possible on lines or points.";
+ERR_Periodicity_001.Diagnostic = "Periodicity conditions can only be applied on groups under defined under a mesh part.";
+
+ERR_VirtContactPartNotOn3D.Diagnostic = "虛擬接觸零件只允許在曲面和 3D 物件的邊線上";
+
+ERR_RotOn3DMP = "旋轉拘束在 3D 中不會應用在網格零件上";
+ERR_RotOn3DMP.Diagnostic = "旋轉拘束在 3D 中不會應用在網格零件上";
+ERR_RotOn3DMP.Advice = "旋轉拘束在 3D 中不會應用在網格零件上";
+Warning_RotOn3DMP = "因網格零件為 3D 以致將不計入旋轉拘束";
+
+ERR_Generative_SensorParameters01.Diagnostic = "已刪除參數";
+ERR_Generative_SensorParameters02.Diagnostic = "此組態無法建立參數. \n 即使是選擇一個頂點來當做依附或使用後處理程序";
+ERR_Generative_SensorParameters03.Diagnostic = "建立參數的限制數目為 10. \n 您必須更改您的偵測器定義";
+ERR_Generative_SensorCurves01.Diagnostic = "此組態沒有可使用的 XY 繪圖. \n 您必須更改您的偵測器定義";
+ERR_Generative_Sensor_NoEntityInSelection.Diagnostic = "No element found in the supports for this position.\nChange the selection or the position.";
+ERR_Generative_SensorImage01.Diagnostic = "The solution is not updated. To edit the sensor, update the solution first.";
+ERR_Generative_SensorOutputNb.Diagnostic = "Update failed. Unexpected number of parameters in the sensor.";
+ERR_Generative_Sensor_WrongNbOfOutput.Diagnostic = "The sensor definition is not valid.";
+ERR_Generative_Sensor_WrongNbOfOutput.Advice = "The sensor must be limited to one lamina and one layer";
+ERR_Generative_Sensor_NoOccurrence.Diagnostic = "The sensor /P01 cannot be updated";
+ERR_Generative_Sensor_NoOccurrence.Advice = "No occurrence is defined. Modify the sensor definition";
+ERR_Generative_SensorSupport.Diagnostic = "The selected support has no value.";
+
+ERR_Sensor_PointAmbiguous.Diagnostic = "Sensor output cannot be defined for this point";
+ERR_Sensor_PointAmbiguous.Advice = "The point may belong to several supports with different dimensions";
+
+ERR_Design_Generic_Conn01.Diagnostic = "多重切面不允許頂點";
+ERR_Design_Generic_Conn02.Diagnostic = "機械特徵不允許多重切面";
+ERR_Design_Generic_Conn03.Diagnostic = "多重切面幾何只允許在相同特徵";
+ERR_Design_Generic_Conn05.Diagnostic = "在一側含有頂點的連接不接受處理點";
+ERR_Design_Generic_Conn06.Diagnostic = "所選的未封閉本體至少須拘束一點";
+ERR_Design_Generic_Conn07.Diagnostic = "Multi-selection is not allowed for groups.";
+ERR_Design_Generic_Conn08.Diagnostic = "Selected group must be in a sub-analysis of an assembly.";
+
+ERR_Design_HalfPoint_Conn01.Diagnostic = "The selected mesh part has to be in the same document as the entity that is being created.";
+ERR_Design_HalfPoint_Conn02.Diagnostic = "The selection of connection mesh part is not allowed.";
+ERR_Design_HalfPoint_Conn03.Diagnostic = "The multi-selection is only allowed inside the same analysis";
+
+ERR_MultiSelVariable.Diagnostic = "多重切面不允許在變化切面樑.";
+
+ERR_Adaptivity01.Diagnostic = "只支援 OCTREE 網格零件";
+ERR_Adaptivity02.Diagnostic = "執行適應程序前必須更新 /P01 解法";
+ERR_Adaptivity03.Diagnostic = "在 '/P01' 下的適應設定將不會列入計算. \n 您必須建立新的適應設定.";
+ERR_Adaptivity04.Diagnostic = "沒有可用的適應模型. \n 計算前請建立新的.";
+ERR_Adaptivity05.Diagnostic = "Selected meshpart must be defined in the current document";
+ERR_Adaptivity06.Diagnostic = "Selected solution is not supported";
+ERR_Adaptivity07.Diagnostic = "Entity /P01 is not a valid sensor parameter. \nSelect a parameter from the same case as that of the adapted solution";
+ERR_Adaptivity08.Diagnostic = "Selected sensor parameter /P01 is not of a valid type. \nList type parameters are not allowed.";
+
+Warning_Handler_Connection = "處理點 /P01 將不會被 /P02 納入計算.";
+
+Warning_Adaptivity_Global_Size = "網格零件 '/P01' 的整體大小已從 /P02 更改至 /P03 公厘.";
+Warning_Adaptivity_Global_Sag = "網格零件 '/P01' 的整體孤差已關閉.";
+Warning_Convergence_Reached = "參數 '/P01' 的數值已收歛. 上一個變異為 /P02 %, 較 /P03 % 精度為小.";
+Warning_Convergence_Non_Reached = "參數 '/P01' 的數值未收歛. 上一個變異為 /P02 %, 較 /P03 % 精度為大.";
+Warning_Stop_Criteria = "物件錯誤未到達.";
+Warning_Convergence = "下部物件錯誤必須達到參數收歛.";
+Warning_Old_Adaptivity = "在 '/P01' 下的適應設定將不會列入計算. \n 除非您建立新的適應設定,要繼續嗎?";
+Warning_Errors_Reached = "物件錯誤已到達. \n 您要重新產生網格大小對應和載入適應程序嗎 ?";
+Warning_Invalid_Adaptivity = "Adaptivity specifications are unvalid.";
+
+ERR_Load_Valid1.Diagnostic = "此負載無法允許混合的虛擬零件和本體. \n 請建立兩個不同的負載.";
+
+ERR_LoadExcitation1.Diagnostic = "載入激力無法選擇使力位移";
+ERR_LoadExcitation2.Diagnostic = "A load excitation can't select a temperature field.";
+ERR_LoadExcitation3.Diagnostic = "A load excitation can't select a load set situated under a preprocessing case";
+
+ERR_VirBoltTightProp = "無法明確化虛擬螺栓繫緊";
+ERR_VirBoltTightProp.Request = "請嚐試明確化虛擬螺栓繫緊性質";
+ERR_VirBoltTightProp.Diagnostic = "虛擬螺栓繫緊連接軸長度無效.";
+ERR_VirBoltTightProp.Advice = "請檢查連接.";
+
+ERR_Explicit_ImportedBeam.Diagnostic = "/P01 無效";
+ERR_Explicit_ImportedBeam.Advice = "請檢查強制樑定義. \n 可能原因為:  CATPart 文件中含有未找到或未載入的切面";
+
+ERR_IncorrectUnitForDesignTable1.Diagnostic = " /P01 行必須沒有單位";
+ERR_IncorrectUnitForDesignTable1.Advice = "請移除單位符號";
+Mapping_NoValues.Diagnostic = "The selected file contains no values";
+Mapping_NoValues.Advice = "Check the format of the file (no blank)";
+
+ERR_MissingUnitForDesignTable.Diagnostic = "行 /P01 應為 /P02";
+ERR_MissingUnitForDesignTable.Advice = "在檔案的第一行增加單位符號";
+ERR_Mapping_MissingValuesInColumn.Diagnostic = "The column /P01 is not valid.";
+ERR_Mapping_MissingValuesInColumn.Advice = "Make sure a numerical value is defined for each cell.";
+
+ERR_AppliedOnTransfo_Support.Diagnostic = "依附必須至少應用在一個轉換網格零件上";
+ERR_AppliedOnTransfo_Support.Advice = "請修改依附";
+
+ERR_AppliedOnTransfo_ImplicitAxis.Diagnostic = "依附必須至少應用在一個轉換網格零件上";
+ERR_AppliedOnTransfo_ImplicitAxis.Advice = "請使用非不明確軸";
+
+ERR_AppliedOnTransfo_Contact.Diagnostic = "依附必須至少應用在一個轉換網格零件上";
+ERR_AppliedOnTransfo_Contact.Advice = "不允許接觸";
+
+ERR_AppliedOnTransfo_Bolt.Diagnostic = "依附必須至少應用在一個轉換網格零件上";
+ERR_AppliedOnTransfo_Bolt.Advice = "不允許螺栓";
+
+ERR_DistributedForce_OnFreeGroup_WithoutHandler.Diagnostic = "如您要應用均布力在自由群組,則必須指定處理因子.";
+
+ERR_NullThiknessOnMP = "相關 /P01 的薄殼厚度無效";
+ERR_NullThiknessOnMP.Diagnostic = "相關 /P01 的薄殼厚度無效";
+ERR_NullThiknessOnMP.Advice = "您必須指定不為零的厚度";
+
+ERR_NoFeatureComposite = "You need to have plies defined for a ply analysis and zones defined for a zone analysis";
+ERR_NoFeatureComposite.Diagnostic = "No plies or zones defined.";
+ERR_NoFeatureComposite.Advice = "Create plies or zones for a ply or zone analysis";
+
+ERR_BarPropertyOnBeamElements = "Bar property isn't allowed on beam elements";
+ERR_BarPropertyOnBeamElements.Diagnostic = "Bar property isn't allowed on beam elements.";
+ERR_BarPropertyOnBeamElements.Advice = "Change the type of the elements if you want to apply a bar property on them.";
+
+ERR_BeamProperty = "Entity /P01: beam properties have been put on bar elements.\nOnly area is taken into account with bar elements.";
+ERR_ShellProperty = "The mesh has generated quadrangle shear panel elements and triangle membrane elements.";
+
+ERR_LocalBarPropertyOnBeamElements = "Local property must be of the same type as the parent property";
+ERR_LocalBarPropertyOnBeamElements.Diagnostic = "Local property must be of the same type as the parent property.";
+ERR_LocalBarPropertyOnBeamElements.Advice = "Change the type of the elements if you want to apply this local property on them.";
+
+ERR_Mesh_ExplicitProperty2D.Diagnostic = "No mesh elements associated to /P01.";
+ERR_Mesh_ExplicitProperty2D.Advice = "Check the mesh support of /P01.";
+
+ERR_ConnectionBar = "Bar properties are not allowed on connection elements.";
+ERR_ConnectionBar.Diagnostic = "Bar properties are not allowed on connection elements.";
+
+ERR_BeamConnexionIxx = "The beams of the connection have been made infinitely rigid in torison to avoid a singularity";
+ERR_BeamConnexionSizeNull.Diagnostic = "At least one beam element of the /P01 is of null size.\nYou can only use non structural element (rigid, spring...) of null size";
+
+ERR_Explicit_NoMaterial.Diagnostic = "No material was found in the design.\nPossible cause: The material catalog is not loaded or found";
+ERR_Explicit_NoZoneMaterial.Diagnostic = "No material was found in the design of the composite zones.\nPossible causes:\n- A zone was defined in the model with no layers\n- The material catalog is not loaded or found";
+ERR_Explicit_NoPlyMaterial.Diagnostic = "No material was found in the design of the composite plies or cores.\nPossible causes:\n- A ply or a core was defined in the model without material\n- The material catalog is not loaded or found";
+
+ERR_AA_PropertyExplicit.Diagnostic = "The property /P01 is not defined in the same Analysis document as the elements on which it is applied";
+ERR_AA_PropertyExplicit.Advice = "Create the property in the same document as the meshpart";
+ERR_AA_PropertyUI.Diagnostic = "The property cannot be applied on meshparts not located in the current document";
+ERR_AA_PropertyUI.Advice = "Create the property in the same document as the meshpart";
+
+ERR_Orientation_Element_rosette = "In /P01, at least two elements of the same zone have a different orientation with respect to the Z axis of the rosette.";
+ERR_Orientation_Element_rosette2 = "This bad design of the zones may affect the results if using non isotropic material.";
+ERR_Orientation_Element_rosette3 = "Consider splitting the zone or change the orientation of the Z axis of the rosette to solve this issue.";
+
+ERR_Same_Lines.Diagnostic = "The two selected lines should be different.";
+ERR_Same_Bodies.Diagnostic = "The two selected bodies should be different.";
+
+ERR_MaterialComposite.Diagnostic = "No material corresponds to /P1.\nDelete this composite property and recreate it";
+ERR_MaterialComposite2.Diagnostic = "No material was detected on one of the zones of /P1.\nPossible causes:\n-The material catalog is not loaded.\n-One of the zone is defined without any layer";
+
+ERR_CompositeZoneGroupShell = "No zone group was found with the same support as /P01.";
+ERR_CompositeZoneGroupShell2 = "All the zone group where taken into account for the transfer of composite properties.";
+ERR_NoPlyComposite.Diagnostic = "When updating /P1, on at least one element, no ply was found when core sampling.\nCheck the definition of the corresponding plies.\nIf there is no defect in the plies design, tunning manually the core sampling depth might solve this issue.";
+ERR_NoZoneComposite.Diagnostic = "When updating /P1, on at least one element, no zone was found when core sampling.\nCheck the definition of the corresponding zones.\nIf there is no defect in the zones design, tunning manually the core sampling depth might solve this issue.";
+
+ERR_ExplicitBearingLoadAxis.Diagnostic = "The supports of /P01 must share the same axis";
+ERR_ExplicitBearingLoadNullForce.Diagnostic = "The force of /P01 being parallel to the support revolution axis, the resulting load is null";
+ERR_ExplicitBearingLoadNullForce.Advice = "Change the force orientation";
+
+ERR_NoProjection.Diagnostic = "An error occurred updating /P01:\nAt least for one element the projection of the center of gravity on the chosen surface was not possible";
+ERR_NoProjection.Advice = "Choose a consistent surface";
+ERR_MultipleProjection = "One or More Mesh Element in /P01 have multiple normal projection on the chosen surface";
+
+
+ERR_CylSphUserAxis.Diagnostic = "Degree of freedom release in /P1 failed. User axis origin is same as the bar element of the connection";
+ERR_CylSphUserAxis.Advice = "Move the axis origin or change the axis type";
+
+ERR_Composite_Tangent.Diagnostic = "For at least one element, the Z axis of the rosette is in the element plane.\nChange the rosette orientation to get consistent angle defintions:\nIndeed, the projection of the laminate direction in the element plane faiked.";
+ERR_NoCompositeInfo.Diagnostic = "Some materials used to defined /P1 do not have composite properties.\nEdit the composite tab of the corresponding materials of your catalog to create the composite properties";
+
+ERR_Composite_Material_NotSupported.Diagnostic = "One of the material described in the design of the composite is anisotrope or orthotropic 3D.\nThe analysis of these materials as layer of a composite is not supported.";
+ERR_MaterialOrtho01 = "An axis system is useless when the material is isotropic.";
+ERR_MaterialOrtho01.Diagnostic = "An axis system is useless when the material is isotropic.";
+
+ERR_SurfaceConnOrient.Diagnostic = "Orientation geomtery for beams inside connections can not be a surface";
+
+ERR_ChangeMeshType.Diagnostic = "The Change Type command is prohibited on a inhomogeneous selection of meshes.";
+
+ERR_OFFSET_MultipleDomains.Diagnostic = "ERROR in Offset in /P01. \nVariable Offset can't be applied on meshes with multiple domains or on self intersecting mesh";
+ERR_DOF_NOUNIQUEENDS.Diagnostic = "ERROR in DOF Release in /P01. \nNo unique start and end of the mesh found";
+ERR_ExplicitFailed.Diagnostic = "Change type command failed";
+ERR_BearingLoadAngle.Diagnostic = "The angle should be greter than 0 and smaller than 360 in degrees.";
+
+ERR_VariableBeamOnConnectionBeam = "Variable beams are not allowed in beams inside connections";
+ERR_VariableBeamOnConnectionBeam.Diagnostic = "Variable beams are not allowed in beams inside connections.";
+ERR_VariableBeamOnConnectionBeam.Advice = "Change beam type if you want to apply a beam property.";
+
+ERR_VariableBeam_MultipleDomains.Diagnostic = "ERROR in Beam definition in /P01. \nVariable Beams can't be applied on meshes with multiple domains or on self intersecting mesh";
+
+MappingProperty_NoUserMaterial.Diagnostic = "ERROR when updating /P01. \nNo user material was found in the material set.";
+MappingProperty_NoUserMaterial.Advice = "Create the user material(s) you want to use in the mapping property file.";
+
+MappingProperty_NoUserMaterial2.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01: \nThe material defined in the property file wasn't found in the material set.";
+MappingProperty_NoUserMaterial2.Advice = "Check the name of the material in the mapping property file.";
+
+MappingProperty_GeomWithNoNode.Diagnostic = "/P01.\n The geometry /P02 doesn't have any node.";
+MappingProperty_GeomWithNoNode.Advice = "Check the name of the geometry /P02.";
+
+ERR_DOFOFFSETOnBar.Diagnostic = "Offset and Released DOF are not allowed on bar elements.";
+
+ERR_Validation_XMLFile = "Entity /P22 can not be updated. \nAn error was found in the file /P23. \nLine /P01: \n/P21";
+ERR_Validation_XMLFile.Diagnostic = "Entity /P22 can not be updated. \nAn error was found in the file /P23. \nLine /P01: \n/P21";
+ERR_Validation_XMLFile.Advice = "Modify the mapping property file to make it valid.";
+
+ERR_CannotCreateDir.Diagnostic ="Unable to create the specified directory";
+ERR_InAccessibleFileOrDir.Diagnostic="The selected xml file is not accessible";
+ERR_InAccessibleFileOrDir.Advice="Check the write access of the file";
+ERR_WriteFailed.Diagnostic="Failed to create the xml file";
+ERR_IncorrectTol.Diagnostic="Tolerance can not be negative";
+ERR_IncorrectAxisFromat.Diagnostic="Incorrect axis format";
+ERR_IncorrectFileNameOrDir.Diagnostic="Invalid file name or directory";
+
+NFY_CopyStatus.Diagnostic = "Number of body properties created: /P01 \nNumber of connection properties created: /P02\nFailed to create body property on support(s): /P03\nFailed to create connection property on support(s): /P04";
+NFY_CopyStatusNoFailedCopy.Diagnostic = "Number of body properties created: /P01\nNumber of connection properties created: /P02";
+
+ERR_NoBoltAxisFound.Diagnostic ="No unique bolt direction can be found for /P1.\nCheck the connection supports";
+
+MappingProperty_Wrong_Default_Axis.Diagnostic ="Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01: \n/P21\nAxis defined  is not valid.";
+MappingProperty_Wrong_Default_Axis.Advice = "Check the support and give the path of an existing axis in CATIA tree or enter axis values with expected format";
+
+MappingProperty_nbLamina = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01: \nThe NB_LAMINA charac is different from the number of laminates you defined.";
+MappingProperty_nbLamina.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01: \nThe NB_LAMINA charac is different from the number of laminates you defined.";
+MappingProperty_nbLamina.Advice = "Modify the mapping property file to make it valid.";
+
+MappingProperty_CompositePosition.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01: \nIt's not possible to define several laminates on the same position.";
+MappingProperty_CompositePosition.Advice = "Check the position values of the laminates.";
+
+MappingProperty_indexLaminas.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01: \nAn invalid position has been specified for one of the defined laminates.";
+MappingProperty_indexLaminas.Advice = "Check the position values of the laminates.";
+
+ERR_MappingNoCuredThickness.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nSome materials used to defined /P22 do not have composite properties.";
+ERR_MappingNoCuredThickness.Advice = "Edit the composite tab page of the corresponding materials of your catalog to create the composite properties.";
+MappingProperty_NoCommonElts.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nThe xml references don't have any common finite elements:\n/P21";
+MappingProperty_NoAssocFE.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01: \n/P21\nThis geometry doesn't have any associated finite elements of the requested dimension.";
+MappingProperty_PathNotFound.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\n/P21\nThe path was not found in the tree.";
+MappingProperty_PathNotFound.Advice = "Check the syntax of this path in the xml file.";
+MappingProperty_NoAssocNode.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\n/P21\nThe xml reference doesn't have any associated node.";
+MappingProperty_EltsNotFound = "\nSome finite elements of the property /P01 haven't been found.Element coordinates:";
+MappingProperty_EltNotFound = "X=/P01 Y=/P02 Z=/P03";
+ERR_FileDoesNotExist.Diagnostic="The selected xml file does not exist";
+ERR_FileDoesNotExist.Advice="Check the file path";
+ERR_InAccessibleFile.Diagnostic="The selected xml file is not accessible";
+ERR_InAccessibleFile.Advice="Check the read access of the file";
+ERR_XMLFileDoesNotExist.Diagnostic="Entity /P01 cannot be updated.The selected xml file does not exist";
+ERR_XMLFileDoesNotExist.Advice="Check the file path";
+ERR_XMLInAccessibleFile.Diagnostic="Entity /P01 cannot be updated.The selected xml file is not accessible";
+ERR_XMLInAccessibleFile.Advice="Check the read access of the file";
+MappingProperty_ShearPanelIncompatible.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nAt least one element isn't compatible with the shear panel type.";
+MappingProperty_ShearPanelIncompatible.Advice = "Modify the property physical type of the concerned element.";
+ERR_MappingProperty_NotAtEnd.Diagnostic="Entity /P01 cannot be updated.\nThere can be only one Mapping property and it should be the last property in the property set.";
+ERR_MappingProperty_NotAtEnd.Advice="Make sure that there is a single Mapping property.\nAlso check that the mapping property is the last property - Use Reorder Children functionality on property set if required.";
+MappingProperty_ShearPanelIncompatible.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nAt least one finite element doesn't support the shear panel type.";
+MappingProperty_WrongPhysicalType.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nAt least one element has been overloaded.";
+MappingProperty_OrientationVectorValues = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nThe orientation vector you defined must have 3 values.";
+MappingProperty_OffsetValuesNumber.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nThe number of beam offset values isn't correct.";
+MappingProperty_OffsetValuesNumber.Advice = "Modify the definition of the offset to make it valid.";
+MappingProperty_ConstantOffset.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nThe offset definition must be constant for a multi selection of elements.";
+MappingProperty_ConstantOffset.Advice = "Define a constant offset for this property.";
+MappingProperty_MissingDof.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nA degrees of freedom definition is missing.";
+MappingProperty_MissingDof.Advice = "You must define the end and start degrees of freedom characs.";
+MappingProperty_SeveralOrientation.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nThe orientation definition must be unique.";
+MappingProperty_SeveralOrientation.Advice = "Keep only one orientation definition.";
+MappingProperty_ConstantDof.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nThe degrees of freedom definition must be constant for a multi selection of elements.";
+MappingProperty_ConstantDof.Advice = "Define constant degrees of freedom for this property.";
+MappingProperty_DofStartValuesNumber.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nThe start degrees of freedom definition doesn't have a valid number of values.";
+MappingProperty_DofStartValuesNumber.Advice = "Define six values.";
+MappingProperty_DofEndValuesNumber.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nThe end degrees of freedom definition doesn't have a valid number of values.";
+MappingProperty_DofEndValuesNumber.Advice = "Define six values.";
+MappingProperty_NoEltsToSearch.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nThere is no element of the requested dimension in the model.";
+MappingProperty_NoEltsToSearch.Advice = "Check that your model is compatible with the requested property.";
+MappingProperty_CompositeOverload.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nAt least one element already has a composite property defined on it.";
+MappingProperty_CompositeOverload.Advice = "It's not possible to overload composite properties. Modify the property definition.";
+MappingProperty_Beam_XAndWParallel.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nFailed to calculate orientation direction with the chosen orientation geometry.\nEither the orientation direction is parallel to the beam or the beam has a null length at some location(s).\nThe local axis on each element of the beam will not be computable.";
+MappingProperty_Beam_XAndWParallel.Advice = "Choose another orientation.";
+MappingProperty_Beam_NullSize.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nNull size element(s) found in the mesh the property applied on.";
+MappingProperty_Beam_NullSize.Advice = "Change your mesh specifications.";
+MappingProperty_Beam_NoDefinedOrientation.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01:\nNo orientation has been defined.\nOrientation definition is mandatory for beam properties.";
+MappingProperty_Beam_NoDefinedOrientation.Advice  = "Define an orientation for this beam property.";
+MappingProperty_NoAssocMPFE.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01: \n/P21\nThis meshpart doesn't have any associated finite elements of the requested dimension.";
+MappingProperty_NoAssocGroupFE.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01: \n/P21\nThis group doesn't have any associated finite elements of the requested dimension.";
+MappingProperty_MultipleMPNames.Diagnostic = "Entity /P22 cannot be updated.\nAn error was found in the file /P23.\nLine /P01: \n/P21\nThe xml reference cannot have more than one mesh part names because no element can belong to more than one mesh part";
+
+ERR_NoLicence_VBeam.Diagnostic ="/P01 cannot be updated.\nEST licence is required to use variable beams";
+ERR_NoLicence_OrientationBeam.Diagnostic ="/P01 cannot be updated.\nEST licence is required to use orientation defined by line, edge, axis or surface";
+
+ERR_NoLicence_MatOrtho.Diagnostic = "/P01 cannot be updated.\nEST licence is required to use orthotropic material";
+ERR_FreeOrProxiGroupNotAllowed.Diagnostic ="Proximity groups and free groups are not allowed for normal computations based on geometries (contact)";
+
+ERR_OrientationParallelToBeamSupport = "The chosen orientation geometry is parallel to the beam support at some location(s).\nThe local axis on each element of the beam will not be computable.";
+ERR_OrientationParallelToBeamSupport.Diagnostic = "The chosen orientation geometry is parallel to the beam support at some location(s).\nThe local axis on each element of the beam will not be computable.";
+ERR_OrientationParallelToBeamSupport.Advice = "Choose another orientation geometry.";
+
+ERR_VariableOnNonVariableLocalBeam = "Variable beam property is not allowed if local beam property type is not Variable beam.";
+ERR_VariableOnNonVariableLocalBeam.Diagnostic = "Variable beam property is not allowed if local beam property type is not Variable beam.";
+ERR_VariableOnNonVariableLocalBeam.Advice = "Change the beam type of local properties of this property to Variable beam.";
+
+ERR_NonVariableOnVariableLocalBeam = "Non Variable beam property is not allowed if local beam property type is Variable beam.";
+ERR_NonVariableOnVariableLocalBeam.Diagnostic = "Non Variable beam property is not allowed if local beam property type is Variable beam.";
+ERR_NonVariableOnVariableLocalBeam.Advice = "Change the beam type of local properties of this property to non Variable beam.";
+
+ERR_Expl_VariableOnNonVariableLocalBeam = "Unable to explicit variable beam property.";
+ERR_Expl_VariableOnNonVariableLocalBeam.Diagnostic = "/P01 cannot be updated. \nVariable beam property is not allowed if local beam property type is not Variable beam.";
+ERR_Expl_VariableOnNonVariableLocalBeam.Advice = "Change the beam type of local properties of this property to Variable beam.";
+
+ERR_Expl_NonVariableOnVariableLocalBeam = "Unable to explict non variable beam property.";
+ERR_Expl_NonVariableOnVariableLocalBeam.Diagnostic = "/P01 cannot be updated. \nNon Variable beam property is not allowed if local beam property type is Variable beam.";
+ERR_Expl_NonVariableOnVariableLocalBeam.Advice = "Change the beam type of local properties of this property to non Variable beam.";
+
+ERR_Expl_OrientGeomBeamParallel = "The chosen orientation geometry results in orientation direction being parallel to the beam support at some location(s).\nThe local axis on each element of the beam will not be computable.";
+ERR_Expl_OrientGeomBeamParallel.Diagnostic = "/P01 cannot be updated.\nFailed to calculate orientation direction with the chosen orientation geometry.\nEither the resulting orientation direction is parallel to the beam support or it is NULL at some location(s).\nThe local axis on each element of the beam will not be computable.";
+ERR_Expl_OrientGeomBeamParallel.Advice = "Choose another orientation geometry.";
+
+ERR_Expl_NULLBeamElement = "Null size element found in the mesh the property applied on.";
+ERR_Expl_NULLBeamElement.Diagnostic = "/P01 cannot be updated.\nNull size element(s) found in the mesh the property applied on.";
+ERR_Expl_NULLBeamElement.Advice = "Change your mesh specifications.";
+
+ERR_NULLSecondDirection.Diagnostic = "An error occurred updating /P01:\nAt least for one element the normal projection of center of gravity onto the chosen surface is parallel to the selected direction";
+ERR_NULLSecondDirection.Advice = "Choose consistent orientation surface and direction";
+ERR_OrientationLineNotStraight.Diagnostic = "The selected orientation geometry for direction is not a straight line.";
+
+ERR_ReactionSensor_OnRestraintPtr_BadRestraintType = "Restraint type not allowed.";
+ERR_ReactionSensor_OnRestraintPtr_BadRestraintType.Diagnostic = "The type of the choosen restraint cannot be handled by a restraint sensor.";
+ERR_ReactionSensor_OnRestraintPtr_BadRestraintType.Advice = "Choosen another type of restraint.";
+ERR_ReactionSensor_OnRestraintPtr_BadConnectionType = "Connection type not allowed.";
+ERR_ReactionSensor_OnRestraintPtr_BadConnectionType.Diagnostic = "The type of the choosen connection cannot be handled by a restraint sensor.";
+ERR_ReactionSensor_OnRestraintPtr_BadConnectionType.Advice = "Choosen another type of connection.";
+ERR_HandlerForVirtualPart.Diagnostic = "Handler point not allowed when a virtual part is selected as support";
+ERR_MultipleSupportWithVirtualPart.Diagnostic = "Multiple supports not allowed when a virtual part has already been selected as support";
+ERR_BoltNullSize.Diagnostic = "When updating /P1 The elemnt of bolt tightening was detected as being of null size which is an invalid configuration";
+ERR_OnlyOneSpider = "Warning when updatin /P01:\n The configuration with a point on one side may lead to tightening in an undesired direction.";
+
+ERR_InvalidImportedForce.Diagnostic = "It is not possible to update /P01. You need to re-import this force.";
+ERR_CACConn_Present = "The analysis document contains following connection properties applied on analysis connections defined in the product document.These connections will not be supported in further release.Click Migrate Connections button in model checker command to migrate.";
+
+Warning_Interpolation_Force = "Import of force vector (/P01,/P02,/P03) on coordinates (/P04,/P05,/P06) has failed";
+Warning_Interpolation_Moment = "Import of moment vector (/P01,/P02,/P03) on coordinates (/P04,/P05,/P06) has failed";
+ERR_InterpolationFailed.Diagnostic = "Interpolation failed";
+ERR_Import_UPDATE = "Error messages";
+
+ERR_Interpolation_CheckMesh = "Import is impossible";
+ERR_Interpolation_CheckMesh.Diagnostic = "Current mesh is not equal to imported mesh";
+
+ERR_Interpolation_BadFile = "Import is impossible";
+ERR_Interpolation_BadFile.Diagnostic = "The file can't be imported";
+
+ERR_Interpolation_Interrupt = "Import is interrupted";
+ERR_Interpolation_Interrupt.Diagnostic = "Import is interrupted";

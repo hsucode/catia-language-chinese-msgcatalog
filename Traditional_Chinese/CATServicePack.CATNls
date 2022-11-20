@@ -1,0 +1,388 @@
+//---------------------------------------------------------------------------
+//  DIALOGUE COMMUN A TOUTES LES WINDOWS
+//---------------------------------------------------------------------------
+
+BOK = "< 上一步" ;
+BCancel = "下一步 >" ;
+BApply = "取消" ;
+
+
+//--------------------------------------------------------------------------
+// ERRORS DURING INITIALIZATION
+//--------------------------------------------------------------------------
+ErrorSRCDIR="安裝 SPK 失敗: SRCDIR 沒有設定 \n";
+ErrorOSDS="安裝 SPK 失敗: OSDS 沒有設定 \n";
+ErrorBLOCKDEV="SetupSPK 已失敗 : BLOCKDEV 未設定 \n";
+ErrHOME="SetupSPK 失敗: HOME 未設定 \n";
+
+//---------------------------------------------------------------------------
+//  WELCOME 
+//---------------------------------------------------------------------------
+
+WndWelcome.Title     = "歡迎安裝 service pack !";
+Welcome.Label1.Title = "歡迎使用 service pack 安裝程式. 這程式" ;
+Welcome.Label2.Title = "將安裝一個 service pack在你的系統上" ;
+Welcome.Label3.Title = "\n";
+Welcome.Label4.Title = "按下一步以繼續安裝程式";
+Welcome.Label5.Title = "\n";
+Welcome.Label6.Title = "\n";
+Welcome.Label7.Title = "本軟體的部分包含第三者的版權著作";
+Welcome.Label8.Title = "(請查看文件中的特別注意事項).";
+Welcome.Label9.Title = "\n";
+Welcome.Label10.Title = "\n";
+Welcome.Label11.Title = "警告: 本軟體受版權法、智慧財產權、商業機密和國際";
+Welcome.Label12.Title = "條約保護,未經 達梭系統公司書面同意不可以任何"; 
+Welcome.Label13.Title = "方式、任何媒體盜拷及散發、儲存、介紹、傳輸本軟 ";
+Welcome.Label14.Title = "體或引用文中部份資料,";
+Welcome.Label15.Title = "任何未經授權的行為都可能會受到民法與刑法的嚴懲";
+Welcome.Label16.Title = "";
+QuestionWindow.Title="程序執行中";
+QuestionWindow.Text="有些達梭系統程序正在執行, 無法修改 Service Pack 的設定. \n 您要終止它嗎? \n";
+WantKillProcess ="有些達梭系統程序正在執行, 無法修改 Service Pack 的設定. \n 您要終止它嗎? \n";
+InfoOrbixKilled="程序 orbixd 已被設定程式刪除 \n";
+ListProcessKilled="以下表列程序已被刪除:\n";
+//---------------------------------------------------------------------------
+//  DESTINATION 
+//---------------------------------------------------------------------------
+
+WndDestination.Title       = "選擇安裝路徑";
+//Destination.Label1.Title   = "\n";
+Destination.Label1Code  = "service pack 將會安裝在以下的目錄中";
+Destination.Label1CAA   = "service pack 將會安裝在以下的目錄中";
+Destination.Label2.Title   = "\n";
+Destination.Label3.Title   = "安裝在此目錄中,請按下一步.";
+Destination.Label4Code = "此目錄必須是 GA 版已安裝的目錄";
+Destination.Label4CAA = "此目錄必須是 CAA GA 版已安裝的目錄";
+Destination.Label5.Title   = "\n";
+Destination.Label6.Title   = "你可以按下取消鍵退出安裝程式,不繼續安裝 service pack";
+Destination.Label7.Title   = "\n";
+Destination.Frame.Title    = "目標目錄";
+Destination.Frame.BrowsePushButton.Title="瀏覽...";
+ErrBadOSAIX = "無法安裝 CAA /p1-bit 媒體至 /p2-bit \n";
+//---------------------------------------------------------------------------
+//  DESTINATION  NT
+//---------------------------------------------------------------------------
+
+WndDestinationNT.Title       = "選擇目的地位置";
+//Destination.Label1.Title   = "\n";
+DestinationNT.Label1Code   = "安裝程式會將 service pack 安裝在以下指定的目錄.";
+DestinationNT.Label1CAA   = "安裝程式會將 CAA service pack 安裝在以下指定的目錄.";
+DestinationNT.Label2.Title   = "\n";
+DestinationNT.Label3.Title   = "安裝在此目錄請按下一步.";
+DestinationNT.Label4.Title = "您可從已存目錄表列中選擇另一目錄";
+DestinationNT.Label5.Title   = "\n";
+DestinationNT.Label6.Title   = "您可按下取消鍵來取消安裝 service pack.";
+DestinationNT.Label7.Title   = "\n";
+DestinationNT.Frame.Title    = "目的地目錄";
+DestinationNT.ListFoldersFrame.Title    = "已存安裝目錄";
+//---------------------------------------------------------------------------
+//  MEDIA PRODUCT  
+//---------------------------------------------------------------------------
+
+WndMediaSPK.Title     = "選擇 Service Pack 安裝模式";
+MediaSPK.Label1.Title = "安裝程序將按照 /p1 指示安裝 service pack";
+MediaSPK.Label2.Title = "如果你要繼續安裝,請按下一步";
+MediaSPK.Label3.Title = "你可以按下取消鍵退出安裝程式,不繼續安裝 service pack" ;
+MediaSPK.ListLabel.Title = "達梭公司 Service Pack ";
+
+MediaSPK.BlankLabel.Title = "\n";
+MediaSPK.ImpossibleCommit = "無法自動簽核認可, 因原始碼的 Service Pack 尚未簽核認可";
+MediaSPK.ForceCommit = "需要自動簽核認可, 因原始碼的 Service Pack 已簽核認可";
+MediaSPK.ImpossibleCommit.Interrupt = "無法自動簽核認可, 因為 Service Pack 安裝己中斷";
+MediaSPK.ForceCommit.Interrupt = "需要自動簽核認可, 因為 Service Pack 安裝己中斷";
+BatchSPK.ImpossibleCommit = "無法自動簽核認可, 因原始碼的 Service Pack 尚未簽核認可　\n　選擇 -bC 將會忽略　\n";
+BatchSPK.ForceCommit = "需要自動簽核認可, 因原始碼的 Service Pack 已簽核認可 \n 選擇 -b 已忽略 \n";
+MediaSPK.AvailableSize = "可用空間 :/p1 Kb ";
+MediaSPK.RequiredSize = "需要空間 :/p1 Kb ";
+MediaSPK.AutomaticRequiredSize = "預估需要空間 :/p1 Kb ";
+MediaSPK.AutomaticAvailableSize= "               可用空間 :/p1 Kb ";
+MediaSPK.CommitButton.Title = "自動簽核認可 service pack"; 
+MediaSPK.FrameLCA.LCAButton.Title = "更新人員和組織資料庫 (強烈建議)";
+MediaSPK.FrameLCA.LCAInfo2Button.Title="如您現在不更新, 您必須稍候再執行 VPMPeopleUpdate 指令來更新 ";
+MediaSPK.FrameLCA.LCAInfo3Button.Title="開始 ENOVIA LCA 程序之前先手動.";
+MediaSPK.FrameLCA.LCAInfo1Button.Title ="如您決定要更新, 請確認執行前先執行資料庫.";
+
+
+//---------------------------------------------------------------------------
+//  RESUME 
+//---------------------------------------------------------------------------
+
+WndResume.Title        = "開始複製 Service Pack 軟體";
+Resume.Label1.Title = "安裝程式已有足夠的資訊可開始複製程式檔案";
+Resume.Label2.Title = "你可以檢視目前的設定";
+Resume.Label3.Title = "如果你要重新檢視或改變設定,請按上一步";
+Resume.Label4.Title = "按下安裝,開始複製檔案";
+Resume.Label5.Title = "\n";
+Resume.SettingLabel.Title = "目前的設定";
+Resume.ProductName.Title = "達梭公司 Service Pack ";
+Resume.DestinationName.Title = "目標目錄";
+Resume.Available.Title = "可用空間 : /p1 Kb";
+Resume.Required.Title = "需要空間 : /p1 Kb";
+Resume.EstimatedRequired.Title = "預估需要空間 : /p1 Kb";
+Resume.AutomaticCommit = "Service Pack 將被自動簽核認可(commit)";
+WndResume.BCancel = "安裝";
+
+//---------------------------------------------------------------------------
+// TRANSFERT 
+//---------------------------------------------------------------------------
+Transfer.BCancel = "取消" ;
+QuestionExit.Title="退出 Service Pack 安裝";
+QuestionExit.Text="您要退出 Service Pack 安裝嗎? \n 按 是 來退出. \n 按 否 可繼續安裝.";
+Transfer.Pourcent = "Service Pack 設定 : /p1";
+
+//---------------------------------------------------------------------------
+// CHANGECDROM 
+//---------------------------------------------------------------------------
+NotifyChangeCD.Title="請插入下一片 CD-ROM";
+NotifyChangeCD.MsgChange=" 請退出目前 CD-ROM  並插入 CD-ROM 第 /p1 片 \n";
+NotifyChangeCD.Error="更換 CD-ROM 錯誤";
+NotifyChangeCD.ErrorChange="您沒有插入正確的 CD-ROM\n";
+
+
+//---------------------------------------------------------------------------
+//  FINISH 
+//---------------------------------------------------------------------------
+WndFinish.Title        = "安裝完成";
+Finish.LabelInterrupt1.Title = "安裝被中斷";
+Finish.LabelInterrupt2.Title = "\n";
+Finish.LabelInterrupt3.Title = "檢視記錄檔  /p1 ,可獲得更多的訊息";
+Finish.LabelInterrupt4.Title = "\n";
+Finish.LabelInterrupt5.Title = "\n";
+Finish.LabelTransferKO1.Title = "安裝轉移失敗";
+Finish.LabelTransferKO2.Title = "\n";
+Finish.LabelTransferKO3.Title = "檢視記錄檔 /p1 ,可獲得更多的訊息";
+Finish.LabelTransferKO4.Title = "\n";
+Finish.LabelTransferKO5.Title = "\n";
+Finish.LabelOKNoStart1.Title = "\n";
+Finish.LabelOKNoStart2.Title = "\n";
+Finish.LabelOKNoStart3.Title = "service pack 已經成功的安裝在你的系統上";
+Finish.LabelOKNoStart4.Title = "\n";
+Finish.LabelOKNoStart5.Title = "\n";
+Finish.BCancel = "完成";
+
+
+//---------------------------------------------------------------------------
+//  EXIT 
+//---------------------------------------------------------------------------
+
+Exit.Title        = "退出安裝程序";
+Exit.Label1.Title = "安裝尚未完成.如果你現在退出安裝程序,";
+Exit.Label2.Title = "程式將不被安裝";
+Exit.Label3.Title = "你可以等一會再執行安裝程序以完成";
+Exit.Label4.Title = "安裝";
+Exit.Label5.Title = "\n";
+Exit.Label6.Title = "繼續安裝程式,請按下繼續";
+Exit.Label7.Title = "\n";
+Exit.Label8.Title = "退出安裝程式, 請按下退出安裝";
+Exit.BCancel = "退出安裝";
+Exit.BOK  = "繼續";
+
+
+//---------------------------------------------------------------------------
+//  MESSAGES D'ERREURS  
+//---------------------------------------------------------------------------
+
+ErrWndCustomize.Title = "錯誤";
+ErrWndCustomize.Text  = "service pack 定製安裝錯誤";
+
+ErrWndLaunch.Title   = "錯誤";
+ErrWndLaunch.Text    = "service pack 發動錯誤";
+
+ErrWndTransfer.Title = "錯誤";
+ErrWndTransfer.Text  = "檔案複製錯誤 \n 請連繫系統管理員";
+
+ErrWndBadDir.Title   = "錯誤";
+ErrWndBadDir.Text    = "安裝目錄不正確";
+
+ErrWndSizeToUnload.Title = "錯誤";
+ErrWndSizeToUnload.Text = "可用的 \t : /p1 KBytes \n 需要的 \t : /p2 KBytes\n\n 沒有足夠的空間來複製 /p3\n";
+
+ErrWndSizeToUnloadAutomatic.Title = "錯誤";
+ErrWndSizeToUnloadAutomatic.Text = "可用 \t : /p1 KBytes\n 需要 \t : /p2 KBytes( 包含 /p3 KBytes 暫時使用) \n\n 未含足夠空間來複製至 /p4\n";
+
+ErrWndSyntaxDir.Title = "錯誤";
+ErrWndSyntaxDir.Text = "安裝目錄語法不正確 \n 空白鍵和 tab鍵是禁止的 \n";
+
+ErrWndStatFile.Title = "錯誤";
+ErrWndStatFile.Text = "問題存取目錄統計資料 :\n/p1\n\n/p2\n";
+
+ErrWndEmptyDir.Title = "錯誤";
+ErrWndEmptyDir.Text = "/p1 必需是空的 \n";
+
+ErrWndFileAlreadyExist.Title = "錯誤";
+ErrWndFileAlreadyExist.Text = "無法建立目錄 /p1\n 名稱已經存在 \n";
+
+ErrWndAvailSpace.Title = "錯誤";
+ErrWndAvailSpace.Text = "磁碟上可用空間計算錯誤 /p1:\n/p2\n";
+
+ErrWndRequiredSpace.Title = "錯誤";
+ErrWndRequiredSpace.Text = "需要的空間計算錯誤 \n/p1/p2\n";
+
+ErrWndDiskInfo.Title = "錯誤";
+ErrWndDiskInfo.Text = "無法取得磁碟資訊 :/p1\n";
+
+
+ErrWndProductNotSelect.Title = "錯誤";
+ErrWndProductNotSelect.Text = "至少一個套組或模組必需被選擇 \n";
+
+ErrWndProductAllInstalled.Title = "錯誤";
+ErrWndProductAllInstalled.Text = "所有在光碟機中的模組均已被安裝 \n";
+
+ErrWndNoSPK.Title = "錯誤";
+ErrWndNoSPK.Text = "在安裝媒體中沒有 Service Pack 存在";
+
+ErrWndMediaTocError.Title = "錯誤";
+ErrWndMediaTocError.Text = "在安裝媒體 TOC中 發現一個錯誤 :/p1";
+
+ErrWndBadPresent.Title = "錯誤";
+ErrWndBadPresent.Text ="無效的檔案格式 /p1 :/p2\n";
+
+ErrWndErrorCD.Title = "錯誤";
+ErrWndErrorCD.Text ="Service Pack 級別 /p1已經被安裝在 /p2.\n 你不需要安裝Service Pack級別 /p3\n";
+
+ErrWndNoNeedSPK.Title = "錯誤";
+ErrWndNoNeedSPK.Text = "不需要安裝Service Pack /p1 在 /p2\n";
+
+ErrWndInterruptSPK.Title = "錯誤";
+ErrWndInterruptSPK.Text = "Service Pack 級別 /p1 己中斷 \n, 所以您無法安裝 Service Pack 級別 /p2 在 /p3\n";
+
+ErrWndInterruptOptionbCIgnored.Text = "Option -bC is ignored, because Service Pack level /p1 has been interupted in not automatic commit mode\n";
+ErrWndInterruptOptionbCForcee.Text  = "Service Pack level /p1 has been interrupted, installation will go on in automatic commit mode\n";
+
+ErrWndNoNeedSPKNT.Title = "錯誤";
+ErrWndNoNeedSPKNT.Text = "不需要安裝Service Pack /p1 ";
+
+ErrWndOS.Title = "錯誤";
+ErrWndOS.Text = "你不能安裝 /p1 O.S. 資料到 /p2 O.S.\n";
+
+ErrWndNoCommit.Title = "錯誤";
+ErrWndNoCommit.Text = "你必需簽核認可 (commit) 或退回 Service Pack 級別 /p1 在安裝 Service Pack 級別 /p2之前 \n 執行 /p3\n";
+
+InfoSPKCommited ="此 Service Pack /p1 已經被簽核認可 (committed), 現在你不能再簽核認可 (commit) 或退回將要執行的安裝 \n"; 
+InfoSPKNotCommited ="此 Service Pack /p1 已經被安裝但尚未簽核認可 (committed), 自動簽核認可 (Commit) 是不可能的 \n"; 
+
+ErrWndExtractCab.Title = "錯誤";
+ErrWndExtractCab.Text = "無法取得檔案 /p1 從檔案櫃 /p2\n";
+
+ErrWndExtractTar.Title = "錯誤";
+ErrWndExtractTar.Text = "無法取得檔案 /p1 從 tar 檔案 /p2\n";
+
+CheckTmpDir = "檢查/p1 是否未滿 \n";
+ 
+ErrWndOpenControlFile.Title = "錯誤";
+ErrWndOpenControlFile.Text = "無法開啟檔案 /p1 : /p2\n";
+
+ErrWndRenameFile.Title = "錯誤";
+ErrWndRenameFile.Text = "無法更新 /p1 檔名成 /p2";
+
+ErrWndSaveFile = "在service pack安裝前不能存檔 : \n/p1.\請連繫系統管理員";
+ErrWndTransfer = "轉換時產生錯誤, 請連繫系統管理員 \n.";
+
+ErrWndGALevel.Title = "錯誤";
+ErrWndGALevel.Text = "你不能安裝 /p1 級別資料到 /p2 級別安裝程序中";
+
+ErrWndAccessToc.Title = "錯誤";
+ErrWndAccessToc.Text = "/p1 沒被卸載 \n";
+
+ErrWndOpenPresent.Title = "錯誤";
+ErrWndOpenPresent.Text = "無法開啟 /p1 : /p2";
+
+ErrWndOpenToc.Title = "錯誤";
+ErrWndOpenToc.Text = "無法開啟 /p1 : /p2";
+
+ErrWndEmptyMediaToc.Title = "錯誤";
+ErrWndEmptyMediaToc.Text = "光碟機中的套組或模組清單是空的";
+
+ErrWndNothingToUnload.Title = "錯誤";
+ErrWndNothingToUnload.Text = "沒有資料可複製... \n";
+
+InfoAlreadyCommit.Title="訊息";
+InfoAlreadyCommit.text = "此 SPK /p1 已經被簽核認可,現在你不能再簽核認可 (commit) 或退回將要執行的安裝 ";
+
+ErrWndNoGA.Title   = "錯誤";
+ErrWndNoGA.Text    = "沒有安裝達梭公司的套組或模組";
+
+ErrWndOpenSPKList.Title   = "錯誤";
+ErrWndOpenSPKList.Text    = "無法開啟或建立檔案 /p1 : /p2";
+
+Information.Title  ="訊息";
+InfoWindow.Title = "訊息";
+//ErrorWindow.Title = "錯誤";
+
+NotAdministrator="開始 SPK 需要管理者權限";
+NotAdministratorBatch="StartSPKB 需要管理者權限";
+NotRoot="開始SPK 需要root 簽進或 su - root 指令";
+CATIAIsRunning="卸載 CATIA 檔案問題 \n 檢查是否 CATIA正在執行 \n 清除相關程序再重新開始 service pack 安裝";
+
+ErrOpenLog="警告: 無法開啟記錄檔 /p1\n ";
+ErrSetupSPK ="Service Pack 安裝結束 - rc = /p1 - 詳細資料請看 /p2 "; 
+OKSetupSPK = "Service Pack 安裝結束 \n";
+ErrOpenFile = "警告 : 無法開啟檔案 /p1\n";
+MsgInterrupt = "訊號打斷命令 /p1\n";
+ErrLabels = "CATInsWindow: 內部錯誤 - NBLabels = /p1 > MaxNbLabels =/p2\n";
+ErrVPMPeopleUpdate="命令 VPMPeopleUpdate 失敗 \n";
+ErrConsultLog="參看結果檔 /p1\n";
+CodeNotInstalled = "您必須在安裝 Service Pack 之前先安裝軟體等級 /p1 \n";
+ErrorNotify= "錯誤";
+WarningNotify="警告";
+//----------------------------------------------------------------------------
+// BATCH 
+//----------------------------------------------------------------------------
+ErrInterrupAutomatic ="Service Pack 級別 /p1 己中斷, 安裝將會執行自動簽核模式 \n";
+ErrInterrupNotAutomatic ="Service Pack 級別 /p1 己中斷, 安裝將會執行自動簽核模式 \n";
+ErrHotFixInstalled="安裝 Service Pack 前, 請先移除暫時修正檔 /p1 \n";
+BatchSPK.RunningProcess="以下顯示的程序已執行, 為保證 Service Pack 的安裝 \n 請終止它們後再重新執行 startspkB\n";
+ErrorBatchMissOption.Text = "您必須指定批次作業的選擇 \n";
+ErrorOptions="不適當選擇 : \n";
+ErrorBadOption= "/p1 不是一個有效的選擇 \n";
+Error_option_u = "選擇 -u 必需被加在路徑名稱後面 \n";
+Error_option_betbC = "選擇 -b 和 -bC不能同時使用 \n";
+ErrorBadTOC = "/p1 檔案格式不適當 :\n";
+ErrorNoSPK ="在安裝媒體中沒有 Service Pack存在 \n";
+ErrorNoGA=" GA 未安裝在 /p1\n";
+ErrorNoFolder = "資料夾 /p1 已經被移除 \n";
+ErrorBadDir ="目錄 /p1 不存在 \n";
+ErrWndBadCopy="在批次模式, 您必須複製 CD-ROMs 在相同目錄 \n";
+ErrorNoFile ="File /p1 不存在 \n";
+ErrorBadPresent ="/p1 檔案格式無效 /p1 :\n";
+ErrorNoPresent="沒有 GA安裝在 /p1- 檔案 /p2沒被發現 \n";
+SPKLogInfo ="/p1 將被卸載 \n";
+ErrorBadMedia_1="在為 caa 安裝 Service Pack level /p3 前, 您必須先安裝 /p2 Service Pack 等級 /p1 \n";
+ErrorBadMedia_2="Service Pack 等級 /p1 為 /p2 已安裝. 您必須安裝相同 caa 等級 Service Pack \n";
+WarningNeedInstallSPK_CAA="CAA 已安裝, 您須先為 CAA 安裝 Service Pack /p1 \n";
+NbCAFLogInfo="CAF數量 = /p1\n";
+ListCAFLogInfo="CAF清單 : /p1\n";
+SizeLogInfo="需要的空間= /p1 Kb - 可用的空間= /p2 Kb\n";
+SizeLogInfoAutomatic="預估需要的空間= /p1 Kb - 可用的空間= /p2 Kb\n";
+UnloadCAFLogInfo ="(/p1 of /p2) 卸載 /p3\n";
+UpdatePRESENTLogInfo="更新檔案 PRESENT\n";
+Error_nooption_u="你必需使用選擇 -u 去指定 GA 安裝在何處 \n";
+CheckInteg="檢查安裝的完整性  :\n";
+CheckIntegKO="檢查完整性失敗 \n";
+CheckIntegInfo="獲得更多的訊息, 請參考 /p1\n";
+CheckIntegWarning="你必需重新安裝 Service Pack /p1\n";
+CheckIntegOK="檢查完整性成功結束 \n";
+BatchFailed="批次安裝 ServicePack 失敗 : 請參考 /p1\n";
+SetupSPKInterrupted ="Service Pack 安裝已經被中斷 \n";
+ErrorTransfert="移轉 SetupSPK 時失敗 - RC :/p1\n";
+ErrorOpenSPKLevel="無法開啟檔案/p1 - /p2\n";
+ErrorUpdateSPKLevel="\n 不可能更新級別 SPK.txt \n 沒有 Service Pack已經被卸載 \n" ;
+ErrCommandFailed="命令 /p1 失敗 \n";
+ErrCommandInterrupted ="命令 /p1 中斷 \n";
+ErrorOption_uMandatory="選項 -u 是安裝 service pack 的主要選項 \n GA 級 /p1 已安裝在 /p2 目錄 \n";
+Batch.AvailableSize ="可用空間      :/p1 Kb\n";
+Batch.RequiredSize = "所需空間       :/p1 Kb\n";
+Batch.UnloadDir=     "目的地目錄 :/p1\n";
+Help.Usage= "用法: \n";
+Help.CommandLine="\nstart [-b/-bC] [-u unload directory] [-noPOUpdate] [-killprocess] [-v] [-h]\n";
+Help.CommandLineNT="\nStartSPKB [-b/-bC] [-u unload directory] [-noPOUpdate] [-killprocess] [-v] [-h]\n";
+Help.bC=     "-bC          : 執行批次設定和簽核認可 Service Pack\n";
+Help.bCNT  =     "-bC          : performs service pack setup and commits Service Pack\n";
+Help.b =     "-b           : 執行批次設定 ( 選項 如果使用不是 -s 的批次選項) \n";
+Help.bNT =     "-b           : 執行批次設定 ( 選項)\n";
+Help.Unload= "-u UnloadDir : 指定下載目錄. 如不使用, 預設為 /usr/DassaultSystemes/B09\n";
+Help.UnloadNT= "-u UnloadDir : 指定下載目錄, 如果有數個已裝的 GA 版 \n";
+Help.v     = "-v           : 詳細顯示設定.\n";
+Help.h     =     "-h           : displays help.\n";
+Help.killprocess="-killprocess  : 刪除在安裝目錄內的程序 \n";
+Help.noLCAUpdate  ="-noPOUpdate   : 如已安裝 ENOVIA LCA, 防止人員和組織資料庫更新 \n";

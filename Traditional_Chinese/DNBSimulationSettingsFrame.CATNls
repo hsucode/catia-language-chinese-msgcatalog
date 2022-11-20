@@ -1,0 +1,145 @@
+// COPYRIGHT DASSAULT SYSTEMES Delmia 2000 
+//=============================================================================
+//
+// DNBSimulationSettingsFrame
+//
+//=============================================================================
+// Usages Notes:
+//  Naming the frame in the property sheet :
+//    Tools/Options/Infrastructure/DELMIA Infrastructure/Simulation 
+//
+//=============================================================================
+// Dec. 2000  Creation                                                      MMH
+// Mar. 2003  Modify: Remove Beep, add Dynamic clash                        MMH
+// Aug. 2003  Modify: Add State Management, Update Cycle Time               MMH
+// Sep  2004  Added enable / disable annotation activities					SMW
+// Apr. 2005  Added enable / disable End Condition                          RTL
+//=============================================================================
+
+// Build time frame
+SimuFrame.HeaderFrame.Global.Title = "程序編寫";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckStateMgtId.Title     = "狀態管理";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckStateMgtId.ShortHelp = "開或關狀態管理";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckStateMgtId.LongHelp  = "按一下檢核鈕已使作用或使不能作用狀態管理";
+
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckEndConditionId.Title     = "應用結束狀態";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckEndConditionId.ShortHelp = "應用結束狀態開或關";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckEndConditionId.LongHelp  = "按一下檢核鈕已使作用或使不能作用結束狀態動作";
+
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckTextId.Title	 = "文字訊息動作          ";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckTextId.ShortHelp = "文字訊息動作開或關";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckTextId.LongHelp  = "按一下檢核鈕已使作用或使不能作用文字訊息動作";
+
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckViewId.Title	 = "視角動作";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckViewId.ShortHelp = "視角動作開或關";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckViewId.LongHelp  = "按一下檢核鈕已使作用或使不能作用視角動作";
+
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckHlnkId.Title	 = "超連結動作";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckHlnkId.ShortHelp = "超連結動作開或關";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckHlnkId.LongHelp  = "按一下檢核鈕已使作用或使不能作用超連結動作";
+
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckAnnotationId.Title     = "標註動作";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckAnnotationId.ShortHelp = "標註動作開或關";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckAnnotationId.LongHelp  = "按一下檢核鈕已使作用或使不能作用標註動作";
+
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckDisableId.Title	    = "同步不作用";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckDisableId.ShortHelp = "同步不作用開或關";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckDisableId.LongHelp  = "按一下檢核鈕已使作用或使不能作用同步";
+
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckSelAgentId.Title     = "啟動選擇代理的顯示對話框";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckSelAgentId.ShortHelp = "啟動或關閉選擇代理的顯示對話框";
+SimuFrame.IconAndOptionsFrame.OptionsFrame.CheckSelAgentId.LongHelp  = "啟動或關閉選擇代理的顯示對話框";
+
+// AutoSync frame
+AutoSyncFrame.HeaderFrame.Global.Title = "自動同步化";
+AutoSyncFrame.IconAndOptionsFrame.OptionsFrame.RadioStepId.Title	 = "步驟";
+AutoSyncFrame.IconAndOptionsFrame.OptionsFrame.RadioStepId.ShortHelp = "步驟模式";
+AutoSyncFrame.IconAndOptionsFrame.OptionsFrame.RadioStepId.LongHelp  = "使用步驟模式在自動同步期間";
+
+AutoSyncFrame.IconAndOptionsFrame.OptionsFrame.RadioAnimId.Title	 = "平順的動畫模式";
+AutoSyncFrame.IconAndOptionsFrame.OptionsFrame.RadioAnimId.ShortHelp = "平順的動畫模式";
+AutoSyncFrame.IconAndOptionsFrame.OptionsFrame.RadioAnimId.LongHelp  = "使用平順的動畫模式在自動同步期間";
+
+AutoSyncFrame.IconAndOptionsFrame.OptionsFrame.SpinnerStepSizeId.Title	   = "步序尺寸";
+AutoSyncFrame.IconAndOptionsFrame.OptionsFrame.SpinnerStepSizeId.ShortHelp = "預設的步序尺寸";
+AutoSyncFrame.IconAndOptionsFrame.OptionsFrame.SpinnerStepSizeId.LongHelp  = "選擇預設的步序尺寸值";
+
+// Run time frame
+RunTimeFrame.HeaderFrame.Global.Title = "Common Simulation Options";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckStateMgtId.Title     = "狀態管理";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckStateMgtId.ShortHelp = "開或關狀態管理";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckStateMgtId.LongHelp  = "按一下檢核鈕已使作用或使不能作用狀態管理";
+
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckEndConditionId.Title     = "應用結束狀態";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckEndConditionId.ShortHelp = "應用結束狀態開或關";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckEndConditionId.LongHelp  = "按一下檢核鈕已使作用或使不能作用結束狀態動作";
+
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckTextId.Title	   = "文字訊息動作";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckTextId.ShortHelp = "文字訊息動作開或關";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckTextId.LongHelp  = "按一下檢核鈕已使作用或使不能作用文字訊息動作";
+
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckViewId.Title	   = "視角動作";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckViewId.ShortHelp = "視角動作開或關";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckViewId.LongHelp  = "按一下檢核鈕已使作用或使不能作用視角動作";
+
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckHlnkId.Title	   = "超連結動作";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckHlnkId.ShortHelp = "超連結動作開或關";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckHlnkId.LongHelp  = "按一下檢核鈕已使作用或使不能作用超連結動作";
+
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckAnnotationId.Title     = "標註動作";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckAnnotationId.ShortHelp = "標註動作開或關";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckAnnotationId.LongHelp  = "按一下檢核鈕已使作用或使不能作用標註動作";
+
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckPauseId.Title     = "暫停模擬動作";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckPauseId.ShortHelp = "開或關暫停模擬動作";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunCheckPauseId.LongHelp  = "按一下開或關暫停模擬動作";
+
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunSpinStepSizeId.Title	  = "步序尺寸";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunSpinStepSizeId.ShortHelp = "預設的步序尺寸";
+RunTimeFrame.IconAndOptionsFrame.OptionsFrame.RunSpinStepSizeId.LongHelp  = "選擇預設的步序尺寸值";
+RunStepSizeTitle = "間隔大小";
+
+// UI frame
+UserInterfaceFrame.HeaderFrame.Global.Title = "使用者介面";
+UserInterfaceFrame.IconAndOptionsFrame.OptionsFrame.UICheckSimTlbId.Title     = "更改至工具列形式";
+UserInterfaceFrame.IconAndOptionsFrame.OptionsFrame.UICheckSimTlbId.ShortHelp = "勾選為工具列, 不勾選為對話框";
+UserInterfaceFrame.IconAndOptionsFrame.OptionsFrame.UICheckSimTlbId.LongHelp  = "勾選來使用工具列, 不勾選來使用對話框";
+
+// Dynamic Clash frame
+DynClashFrame.HeaderFrame.Global.Title = "程序模擬";
+DynClashFrame.IconAndOptionsFrame.OptionsFrame.LabelDynClashId.Title = "動態干涉 ";
+DynClashFrame.IconAndOptionsFrame.OptionsFrame.ComboDynClashId.ShortHelp = "動態干涉模式";
+DynClashFrame.IconAndOptionsFrame.OptionsFrame.ComboDynClashId.LongHelp  = "選擇動態干涉模式";
+
+DynClashFrame.IconAndOptionsFrame.OptionsFrame.PSCheckCycleTimeId.Title     = "更新循環時間";
+DynClashFrame.IconAndOptionsFrame.OptionsFrame.PSCheckCycleTimeId.ShortHelp = "開或關更新循環時間";
+DynClashFrame.IconAndOptionsFrame.OptionsFrame.PSCheckCycleTimeId.LongHelp  = "勾選來開或關更新循環時間";
+
+// Process Verification frame
+ProcVerifFrame.HeaderFrame.Global.Title = "程序驗證";
+ProcVerifFrame.IconAndOptionsFrame.OptionsFrame.PVCheckStateId.Title     = "狀態管理 (局部)";
+ProcVerifFrame.IconAndOptionsFrame.OptionsFrame.PVCheckStateId.ShortHelp = "在程序驗證中開或關閉狀態管理";
+ProcVerifFrame.IconAndOptionsFrame.OptionsFrame.PVCheckStateId.LongHelp  = "勾選在程序驗證中開或關閉狀態管理";
+
+ProcVerifFrame.IconAndOptionsFrame.OptionsFrame.PVCheckEndConditionId.Title     = "應用結束狀態 (本地)";
+ProcVerifFrame.IconAndOptionsFrame.OptionsFrame.PVCheckEndConditionId.ShortHelp = "在 PV 中作用或使不能作用結束狀態動作";
+ProcVerifFrame.IconAndOptionsFrame.OptionsFrame.PVCheckEndConditionId.LongHelp  = "在程序驗證中按一下檢核鈕已使作用或使不能作用結束狀態動作";
+
+AuthActTypeID = "活動型式";
+AuthEnabledID = "啟動";
+
+RunActTypeID = "活動型式";
+RunEnabledID = "啟動";
+RunBehaviorID = "行為";
+
+AuthTextId.ActType = "文字訊息動作";
+AuthViewId.ActType = "視點動作";
+AuthHlnkId.ActType = "超鏈結動作";
+AuthAnnotId.ActType = "標註動作";
+
+RunTextId.ActType = "文字訊息動作";
+RunViewId.ActType = "視點動作";
+RunHlnkId.ActType = "超鏈結動作";
+RunAnnotId.ActType = "標註動作";
+RunPauseId.ActType = "模擬暫停動作";
+RunVisId.ActType = "顯示動作";

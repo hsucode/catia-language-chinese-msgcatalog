@@ -1,0 +1,64 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//===========================================================================
+//
+// CATRdgPlugin
+//
+//===========================================================================
+
+Alias = "預設";
+Frame = "框架";
+Translating = "開始編驛...";
+Preprocessing = "前處理...";
+Rendering = "著色...";
+Photons = "光線散射...";
+FinalGather = "計算最後獲取點...";
+Glow = "過濾 glow...";
+Contours = "計算外形...";
+
+FatalERR_001.Request = "Fatal Internal Error:";
+FatalERR_001.Diagnostic = "/p1";
+FatalERR_001.Advice = "Save your data and exit";
+FatalERR_002.Request = "Fatal Error:";
+FatalERR_002.Diagnostic = "A fatal error already occured";
+FatalERR_002.Advice = "Save your data and exit";
+
+RenderERR_0001 = "Unable to initialize plugin";
+RenderERR_0002 = "Unable to get frame count";
+RenderERR_0003 = "Unable to set frame";
+RenderERR_0004 = "Unable to get options";
+RenderERR_0005 = "Translation of options failed";
+RenderERR_0006 = "Unable to get lights";
+RenderERR_0007 = "Translation of lights failed";
+RenderERR_0008 = "Unable to get environment";
+RenderERR_0009 = "Translation of environment failed";
+RenderERR_0010 = "Unable to get camera";
+RenderERR_0011 = "Translation of camera failed";
+RenderERR_0012 = "Unable to get geometry";
+RenderERR_0013 = "Translation of geometry failed";
+RenderERR_0014 = "Creation of root group failed";
+RenderERR_0015 = "Rendering failed";
+RenderERR_0016 = "Could not define texture /p1. Check image format.";
+
+NetworkERR_0001.Request = "Testing connection:";
+NetworkERR_0001.Diagnostic = "Unable to find a usable WinSock DLL";
+NetworkERR_0001.Advice = "Check your network install";
+
+NetworkERR_0002.Request = "Testing connection:";
+NetworkERR_0002.Diagnostic = "Could not find mi-ray service";
+NetworkERR_0002.Advice = "Check /p1 file";
+
+NetworkERR_0003.Request = "Testing connection:";
+NetworkERR_0003.Diagnostic = "Could not find host address";
+NetworkERR_0003.Advice = "Check the host name";
+
+NetworkERR_0004.Request = "Testing connection:";
+NetworkERR_0004.Diagnostic = "Could not create socket";
+NetworkERR_0004.Advice = "Check your network install";
+
+NetworkERR_0005.Request = "Testing connection:";
+NetworkERR_0005.Diagnostic = "Could not start connection";
+NetworkERR_0005.Advice = "Check satellite for port number and client launcher configuration\n(inetd for UNIX and rayserver for Windows)";
+
+NetworkERR_0006.Request = "Adding satellite:";
+NetworkERR_0006.Diagnostic = "Could not get satellite data before timeout end";
+NetworkERR_0006.Advice = "Check satellite install";

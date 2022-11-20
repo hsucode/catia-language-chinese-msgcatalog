@@ -1,0 +1,126 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//===========================================================================
+//
+// CATRdgShootingQualityFrame
+//
+//===========================================================================
+
+//--------------------------------------
+// Raytracing frame
+//--------------------------------------
+raytracingFrame.HeaderFrame.Global.Title = "著色";
+
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingCheck.Title = "射線:";
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingCheck.Help = "Switches to raytracing mode";
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingCheck.ShortHelp = "射線模式";
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingCheck.LongHelp =
+"Switches on/off raytracing mode.";
+
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingReflectionsLabel.Title = "反射:";
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingReflectionsSpinner.Help = "Defines the number of reflections";
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingReflectionsSpinner.ShortHelp = "反射數目";
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingReflectionsSpinner.LongHelp =
+"Defines the maximum count of reflections for light rays.";
+
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingRefractionsLabel.Title = "折射:";
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingRefractionsSpinner.Help = "定義折射數目";
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingRefractionsSpinner.ShortHelp = "折射數目";
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingRefractionsSpinner.LongHelp =
+"Defines the maximum count of refractions for light rays.";
+
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingReboundsLabel.Title = "彈回:";
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingReboundsSpinner.Help = "定義彈回數目";
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingReboundsSpinner.ShortHelp = "彈回數目";
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingReboundsSpinner.LongHelp =
+"Defines the maximum count of rebounds (reflections and refractions)
+for light rays.";
+
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingTexturesCheck.Title = "顯示貼圖";
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingTexturesCheck.Help = "顯示貼圖著色";
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingTexturesCheck.ShortHelp = "顯示貼圖著色";
+raytracingFrame.IconAndOptionsFrame.OptionsFrame.raytracingParametersFrame.raytracingTexturesCheck.LongHelp =
+"Switches on/off texture rendering";
+
+//--------------------------------------
+// Shadows frame
+//--------------------------------------
+shadowsFrame.HeaderFrame.Global.Title = "陰影";
+
+shadowsFrame.IconAndOptionsFrame.OptionsFrame.shadowsParametersFrame.shadowsCheck.Title = "顯示陰影";
+shadowsFrame.IconAndOptionsFrame.OptionsFrame.shadowsParametersFrame.shadowsCheck.Help = "更換陰影計算";
+shadowsFrame.IconAndOptionsFrame.OptionsFrame.shadowsParametersFrame.shadowsCheck.ShortHelp = "更換陰影計算";
+shadowsFrame.IconAndOptionsFrame.OptionsFrame.shadowsParametersFrame.shadowsCheck.LongHelp =
+"Switches on/off shadow computation.";
+
+//--------------------------------------
+// Antialiasing frame
+//--------------------------------------
+aliasingFrame.HeaderFrame.Global.Title = "精度";
+
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingPredefinedRadio.Title = "預先定義:";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingPredefinedRadio.Help = "預先定義品質";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingPredefinedRadio.ShortHelp = "預先定義品質";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingPredefinedRadio.LongHelp =
+"Rendering predefined qualities.";
+
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomRadio.Title = "自訂:";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomRadio.Help = "自訂品質";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomRadio.ShortHelp = "自訂品質";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomRadio.LongHelp =
+"Minimum sample, maximum sample and contrast values are anti-aliasing parameters.";
+
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingPredefinedFrame.aliasingQualityLowLabel.Title = "低";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingPredefinedFrame.aliasingQualityHighLabel.Title = "高";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingPredefinedFrame.aliasingQualitySlider.Help = "定義著色品質";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingPredefinedFrame.aliasingQualitySlider.ShortHelp = "著色品質";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingPredefinedFrame.aliasingQualitySlider.LongHelp =
+"Defines the rendering quality.";
+
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingPredefinedFrame.aliasingCheck.Title = "反失真";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingPredefinedFrame.aliasingCheck.Help = "更換至反失真模式";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingPredefinedFrame.aliasingCheck.ShortHelp = "更換至反失真模式";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingPredefinedFrame.aliasingCheck.LongHelp =
+"Switches on/off anti-aliasing mode.";
+
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomFrame.aliasingMinSampleCombo.Help = "最小樣本計算";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomFrame.aliasingMinSampleCombo.ShortHelp = "最小樣本計算";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomFrame.aliasingMinSampleCombo.LongHelp =
+"Sets the minimum count of ray cast for 1,4 or 16 pixels.";
+
+minSample1 = "16 pixels square";
+minSample2 = "4 pixels square";
+minSample3 = "pixel";
+minSample4 = "1/4 pixel square";
+minSample5 = "1/16 pixel square";
+minSample6 = "1/64 pixel square";
+
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomFrame.aliasingCustomText1Label.Title = "Cast 1 ray at each corner of a ";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomFrame.aliasingCustomText2Label.Title = ".";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomFrame.aliasingCustomText3Label.Title = "If the corresponding colors differ more than ";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomFrame.aliasingCustomText4Label.Title = "for each RGB components, subdivide the square in";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomFrame.aliasingCustomText5Label.Title = "4 up to a maximum number of ";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomFrame.aliasingCustomText6Label.Title = ".";
+
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomFrame.aliasingMaxSampleCombo.Help = "最大樣本計算";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomFrame.aliasingMaxSampleCombo.ShortHelp = "最大樣本計算";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomFrame.aliasingMaxSampleCombo.LongHelp =
+"Sets the maximum count of ray cast for 1,4 or 16 pixels.";
+
+maxSample1 = "1 ray per 16 pixels";
+maxSample2 = "1 ray per 4 pixels";
+maxSample3 = "1 ray per pixel";
+maxSample4 = "4 rays per pixel";
+maxSample5 = "16 rays per pixel";
+maxSample6 = "64 rays per pixel";
+
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomFrame.aliasingContrastSpinner.Help = "Contrast threshold below which no oversampling is done";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomFrame.aliasingContrastSpinner.ShortHelp = "Contrast Oversampling Threshold";
+aliasingFrame.IconAndOptionsFrame.OptionsFrame.aliasingParametersFrame.aliasingCustomFrame.aliasingContrastSpinner.LongHelp =
+"Contrast value sets the contrast threshold for adaptative oversampling, that is,
+the maximum contrast threshold between pixels, below which no oversampling will
+be done. If the contrast of any RGB component between the currently calculated
+pixel and neighboring pixels weighted by their sum is greater than this threshold,
+the pixel is oversampled.
+Note: Setting this value very low will result in more oversampling and longer 
+rendering time.";
+

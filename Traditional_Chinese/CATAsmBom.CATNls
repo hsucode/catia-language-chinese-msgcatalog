@@ -1,0 +1,155 @@
+// CATAsmBom.CATNls
+
+// English Version
+// tbu mars 1999
+// crx june 1999
+
+// File for following classes CATAsmBom, CATAsmCmdBom, CATAsmBomViewer, CATBomFormatViewer
+
+CATAsmBom.Title="材料表";
+
+//  (1) separators : WARNING : ONE character strings
+
+CATAsmBom.BOM.blank=" ";
+CATAsmBom.BOM.vsep="|";
+CATAsmBom.BOM.hsep="-";
+CATAsmBom.BOM.csep="+";
+CATAsmBom.BOM.cframe="=";
+
+//  (2) titles
+
+CATAsmBom.BOM.GeneratedDate="計算日期: ";
+CATAsmBom.BOM.UsedSearchOrder="使用的選擇次序: ";
+CATAsmBom.BOM.None = "無";
+CATAsmBom.BOM.TitleName="材料表: ";
+CATAsmBom.BOM.QtyName="數量";
+CATAsmBom.BOM.TypeName="型式";
+CATAsmBom.BOM.TypeAssy="組立";
+CATAsmBom.BOM.TypePart="零件";
+CATAsmBom.BOM.PathName="路徑";
+CATAsmBom.BOM.Unretrieved="未取出物件: ";
+
+CATAsmBom.BOM.RecapName="重述要點: ";
+CATAsmBom.BOM.MultiSelection="多重選擇";
+CATAsmBom.BOM.DifferentParts="不同零件: ";
+CATAsmBom.BOM.TotalParts="全部零件: ";
+
+FORMAT.Name = "格式";
+FORMAT.Default = "AP203 格式";
+FORMAT.Extern = "外部格式";
+
+Help = "分析 : 材料表";
+BOK =  "確認";
+BApply = "存為 ...";
+
+FormatViewer.Title = "材料表 : 格式定義";
+FormatViewer.Help = "定義材料表格式";
+
+PrintBom.BApply = "應用";
+PrintBom.BOK = "確認";
+PrintBom.Title = "將材料表存為";
+
+PrintReport.BApply = "應用";
+PrintReport.BOK = "確認";
+PrintReport.Title = "將報告明細存為";
+
+WarningSaveWindow.Title= "儲存警告";
+WarningSaveWindow.Text= "檔案已存在. \n 您要覆寫它嗎 ?";
+
+FileAlias.TxtAlias = "文字檔案";
+FileAlias.HtmlAlias = "Html 檔案";
+FileAlias.XlsAlias = "微軟 Excel 工作單";
+
+tabContainer.tabPage_BOM.Title = "材料表";
+tabContainer.tabPage_BOM.Help = "材料表";
+tabContainer.tabPage_BOM.container.frame.Help = "顯示作動分件的材料表" ;
+tabContainer.tabPage_BOM.container.frame.frameBom.LongHelp="顯示作動分件的材料表. \n - 數量 : 每一個子分量的數目 \n - 零件號碼 : 子分件命名 \n -形式 : 組合件或零件 \n - 命名 : 選擇性命名 \n - 改版 : 選擇性命名.";
+tabContainer.tabPage_BOM.frameRecapBom.Help="重新顯示作動分件的摘要";
+tabContainer.tabPage_BOM.frameRecapBom.LongHelp="重新顯示作動分件的複製 \n - 數量 : 每一個子分量的數目 \n - 零件號碼 : 子分件命名.";
+tabContainer.tabPage_BOM.frame_Formats.comboChoice_Bom.Help = "選擇顯示格式";
+tabContainer.tabPage_BOM.frame_Formats.Btn_Format.Title = "格式定義";
+tabContainer.tabPage_BOM.frame_Formats.Btn_Format.Help = "編輯顯示格式";
+
+// panel de formats
+
+frameChoice_Format.lblChoice_Bom.Title = "格式選擇";
+frameChoice_Format.comboChoice_Bom.Help = "選擇一種格式";
+frameChoice_Format.btnAdd_Format.Title = "增加";
+frameChoice_Format.btnAdd_Format.Help = "增加一種格式";
+frameChoice_Format.btnRename_Format.Title = "更名";
+frameChoice_Format.btnRename_Format.Help = "更名所選格式";
+frameChoice_Format.btnRem_Format.Title = "移除";
+frameChoice_Format.btnRem_Format.Help = "移除所選格式";
+frame_SO.Title = "其它資訊";
+frame_SO.Btn_SO.Title = "顯示選擇次序";
+frame_SO.Btn_SO.Help = "如果您想要顯示選擇次序請勾選";
+frame_SO.Btn_SO.LongHelp = "如果您想要顯示選擇次序請勾選";
+Splitter_Choice.frameChoice_Bom.Help = "顯示材料表性質";
+Splitter_Choice.frameChoice_Bom.Title = "材料表性質";
+Splitter_Choice.frameChoice_Bom.Shown_Properties.Title = "顯示性質";
+Splitter_Choice.frameChoice_Bom.Hidden_Properties.Title = "隱藏性質";
+Splitter_Choice.frameChoice_Recap.Help = "顯示格式的所選性質";
+Splitter_Choice.frameChoice_Recap.Title = "要點性質";
+Splitter_Choice.frameChoice_Recap.Shown_Properties.Title = "顯示性質";
+Splitter_Choice.frameChoice_Recap.Hidden_Properties.Title = "顯示性質";
+Splitter_Choice.frameChoice_Bom.btn_right.Title = "-->";
+Splitter_Choice.frameChoice_Bom.btn_right.Help = "移除格式的所選性質";
+Splitter_Choice.frameChoice_Bom.btn_right.ShortHelp = "隱藏性質";
+Splitter_Choice.frameChoice_Bom.btn_all_right.Title = "==>";
+Splitter_Choice.frameChoice_Bom.btn_all_right.Help = "移除格式的所有性質";
+Splitter_Choice.frameChoice_Bom.btn_all_right.ShortHelp = "隱藏所有性質";
+Splitter_Choice.frameChoice_Bom.btn_left.Title = "<--";
+Splitter_Choice.frameChoice_Bom.btn_left.Help = "增加此格式所選性質";
+Splitter_Choice.frameChoice_Bom.btn_left.ShortHelp = "顯示性質";
+Splitter_Choice.frameChoice_Bom.btn_all_left.Title = "<==";
+Splitter_Choice.frameChoice_Bom.btn_all_left.Help = "增加此格式所有性質";
+Splitter_Choice.frameChoice_Bom.btn_all_left.ShortHelp = "顯示所有性質";
+Splitter_Choice.frameChoice_Bom.btn_move.Title = "移動";
+Splitter_Choice.frameChoice_Bom.btn_move.Help = "更改次序";
+Splitter_Choice.frameChoice_Bom.btn_move.ShortHelp = "更改性質次序";
+
+Splitter_Choice.frameChoice_Recap.btn_right.Title = "-->";
+Splitter_Choice.frameChoice_Recap.btn_right.Help = "移除格式的所選性質";
+Splitter_Choice.frameChoice_Recap.btn_right.ShortHelp = "隱藏性質";
+Splitter_Choice.frameChoice_Recap.btn_all_right.Title = "==>";
+Splitter_Choice.frameChoice_Recap.btn_all_right.Help = "移除格式的所有性質";
+Splitter_Choice.frameChoice_Recap.btn_all_right.ShortHelp = "隱藏所有性質";
+Splitter_Choice.frameChoice_Recap.btn_left.Title = "<--";
+Splitter_Choice.frameChoice_Recap.btn_left.Help = "增加此格式所選性質";
+Splitter_Choice.frameChoice_Recap.btn_left.ShortHelp = "顯示性質";
+Splitter_Choice.frameChoice_Recap.btn_all_left.Title = "<==";
+Splitter_Choice.frameChoice_Recap.btn_all_left.Help = "增加此格式所有性質";
+Splitter_Choice.frameChoice_Recap.btn_all_left.ShortHelp = "顯示所有性質";
+Splitter_Choice.frameChoice_Recap.btn_move.Title = "移動";
+Splitter_Choice.frameChoice_Recap.btn_move.Help = "更改性質次序";
+Splitter_Choice.frameChoice_Recap.btn_move.ShortHelp = "更改次序";
+
+// Listing report
+tabContainer.tabPage_REPORT.Title = "列出報告";
+tabContainer.tabPage_REPORT.Help = "列出報告";
+tabContainer.tabPage_REPORT.Splitter_Report.frame_Report.editor_Report.Help = "列出將被儲存的報告";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.Title = "列出報告的性質";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.Help = "列出報告的性質";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.button_Refresh.Title = "更新";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.button_Refresh.Help = "更新報告的顯示";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.button_SearchOrder.Title = "顯示選擇次序";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.button_SearchOrder.Help = "如果您想要顯示選擇次序請勾選";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.button_SearchOrder.LongHelp = "如果您想要顯示選擇次序請勾選";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.Shown_Properties.Title = "顯示性質";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.Hidden_Properties.Title = "顯示性質";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.btn_right.Title = "-->";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.btn_right.Help = "移除格式的所選性質";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.btn_right.ShortHelp = "隱藏性質";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.btn_all_right.Title = "==>";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.btn_all_right.Help = "移除格式的所有性質";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.btn_all_right.ShortHelp = "隱藏所有性質";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.btn_left.Title = "<--";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.btn_left.Help = "增加此格式所選性質";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.btn_left.ShortHelp = "顯示性質";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.btn_all_left.Title = "<==";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.btn_all_left.Help = "增加此格式所有性質";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.btn_all_left.ShortHelp = "顯示所有性質";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.btn_move.Title = "移動";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.btn_move.Help = "更改性質次序";
+tabContainer.tabPage_REPORT.Splitter_Report.frameChoice_Report.btn_move.ShortHelp = "更改次序";
+

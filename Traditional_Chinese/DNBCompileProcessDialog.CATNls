@@ -1,0 +1,34 @@
+Title = "編譯模擬";
+ 
+DNBCompProcNameFrame.DNBCompProcNameLabel.Title = "名稱: ";
+DNBCompProcNameFrame.DNBCompProcNameLabel.ShortHelp = "重播名稱";
+DNBCompProcNameFrame.DNBCompProcNameLabel.LongHelp = "點選重播名稱.";
+
+DNBCompProcFloatFrame.DNBCompProcFloatLabel.Title="鎖定步序尺寸: ";
+DNBCompProcFloatFrame.DNBCompProcFloatLabel.ShortHelp="重播步序尺寸";
+DNBCompProcFloatFrame.DNBCompProcFloatLabel.LongHelp="點選重播步序尺寸.";
+
+DNBCompProcFloatFrame.DNBCompSaveChkButton.Title="保留初始狀態 ";
+DNBCompProcFloatFrame.DNBCompSaveChkButton.ShortHelp="在重播中保留初始狀態 ";
+DNBCompProcFloatFrame.DNBCompSaveChkButton.LongHelp="啟動或停止重播中初始狀態的儲存 ";
+
+DNBCompProcFloatFrame.DNBCompViewpointChkButton.Title="應用視點";
+DNBCompProcFloatFrame.DNBCompViewpointChkButton.ShortHelp="記錄影像時應用視點";
+DNBCompProcFloatFrame.DNBCompViewpointChkButton.LongHelp="抓取影像時啟動或停止視點動作.";
+
+frameAnimFile.Title = "產生影像";
+frameAnimFile.frameAnimFileOpt.CompressorSetupButton.Title = "設定";
+frameAnimFile.frameAnimFileOpt.CompressorSetupButton.ShortHelp = "設定";
+frameAnimFile.frameAnimFileOpt.CompressorSetupButton.Help = "設定影片參數";
+frameAnimFile.frameAnimFileOpt.CompressorSetupButton.LongHelp = "為目前錄影設定影片參數";
+frameAnimFile.frameAnimFileOpt.GenerateAnimFileButton.Title = "產生動畫檔案";
+frameAnimFile.frameFileName.fileNameButton.Title = "檔名 ...";
+frameAnimFile.frameFileName.fileNameButton.LongHelp = "檔名. 選擇要儲存動畫的檔名.";
+
+warningtitle = "警告";
+warninguse = "此命令需要動畫, 但在文件中未發現. \n 您必須先建立動畫再錄製它.";
+warningFileAccessProtected = "無法錄製動畫至檔案 : __p1 \n 檔案存取有問題";
+warningFileAlreadyExists = "檔案 : __p1 已存在 \n 將會被所建立的動畫檔更換.";
+warningNoVideoFormatSetUp = "目前格式無設定";
+popUpErrorTitle = "警告";
+popUpErrorMessage = "產生影片檔時發生錯誤 ! \n 最新錯誤訊息: \n    __p1 \n\n 請檢查磁碟空間是否足夠.";

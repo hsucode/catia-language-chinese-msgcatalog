@@ -1,0 +1,128 @@
+// ==============================================================================================
+// Generalites
+// ==============================================================================================
+
+// Label
+General.Workshop.Title = "繪圖架構";
+
+// Label
+General.Dialog.Title = "IGES 2D";
+
+
+// ==============================================================================================
+// Options d'Import
+// ==============================================================================================
+
+Import.Frame.Label = " 開啟 IGES 2D 選擇 ";
+
+// Unit
+Import.ComboUnit.item_0 = "公厘 (mm)";
+Import.ComboUnit.item_1 = "公分 (cm)";
+Import.ComboUnit.item_2 = "公尺 (m)";
+Import.ComboUnit.item_3 = "英寸 (in)";
+Import.ComboUnit.item_4 = "英尺 (ft)";
+Import.ComboUnit.item_5 = "自動";
+
+// Fichier Incorrect
+Import.BadFile.Title = " 開啟錯誤";
+Import.BadFile.Content = " 無效 IGES 檔案.";
+
+
+// ==============================================================================================
+// Nouvelle boite de dialogue
+// ==============================================================================================
+
+// --------------------
+// >>>>>>>IMPORT<<<<<<<
+// --------------------
+_ToolsImport.HeaderFrame.Global.Title = " 輸入";
+
+// --- Standard ---
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameStandard.Title = "標準";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameStandard._LabelDftStd.Title = "繪圖:      ";
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameStandard._LabelDxfStd.Title = "Iges 2D:      ";
+
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameStandard._ComboDftStd.ShortHelp = "Select the 'CATIA Drafting' standard of the IG2 file to be imported.\nThe 'Import External Format' mode , will automatically choose the standard from the existing drawing.";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameStandard._ComboDftStd.LongHelp = "Selects the Drafting standard for the IGES file to be imported.\nThe Import External Format mode will automatically choose the standard from the existing drawing.";
+
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameStandard._ComboDxfStd.ShortHelp = "Select the 'IGES 2D' standard of the IG2 file to be imported.\nThis option will be used both for 'Open File' and for 'Import External Format' modes.";
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameStandard._ComboDxfStd.LongHelp = "Select the 'IGES 2D' standard of the IG2 file to be imported.\nThis option will be used both for 'Open File' and for 'Import External Format' modes.";
+// --- Unit ---
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameUnit._LabelUnit.Title = " 檔案的單位:  ";
+
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameUnit._ComboUnit.ShortHelp = "選擇要輸入的 IGES 檔案的單位";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameUnit._ComboUnit.LongHelp = "選擇要輸入的 IGES 檔案的單位. \n 全部幾何元素被重新計算以便將輸入檔案和目前工作中的單位一致.";
+
+// --- View	---
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameView._LabelView.Title = " 目的地視圖:  ";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameView._RadioWorkingView.Title = "工作中視圖";
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameView._RadioWorkingView.ShortHelp = "選擇輸入資料的目的地";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameView._RadioWorkingView.LongHelp = "選擇輸入資料的目的地: \n 在視圖模式中修改繪圖背景以獲取資料.";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameView._RadioBackground.Title = "背景";
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameView._RadioBackground.ShortHelp = "選擇輸入資料的目的地";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameView._RadioBackground.LongHelp = "選擇輸入資料的目的地: \n 在視圖模式中修改繪圖背景以獲取資料.";
+
+// --- EndPoints ---
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameEndPoints._LabelEndPoints.Title = " 建立結束點:  ";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameEndPoints._RadioNeverCreateEndPoints.Title = "絕不";
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameEndPoints._RadioNeverCreateEndPoints.ShortHelp = "任何本體均不建立線段的結束點";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameEndPoints._RadioNeverCreateEndPoints.LongHelp = "任何本體均不建立線段的結束點";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameEndPoints._RadioSometimesCreateEndPoints.Title = "為少數本體";
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameEndPoints._RadioSometimesCreateEndPoints.ShortHelp = "只為 hatch 邊線和混合多邊線建立線段的結束點";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameEndPoints._RadioSometimesCreateEndPoints.LongHelp = "只為 hatch 邊線和混合多邊線建立線段的結束點";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameEndPoints._RadioAlwaysCreateEndPoints.Title = "永遠";
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameEndPoints._RadioAlwaysCreateEndPoints.ShortHelp = "任何本體均建立線段的結束點";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameEndPoints._RadioAlwaysCreateEndPoints.LongHelp = "任何本體均建立線段的結束點";
+
+// --- Dimension ---
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameDimension._LabelDimension.Title = " 轉換尺寸成為:  ";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameDimension._RadioRealDimension.Title = "尺寸";
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameDimension._RadioRealDimension.ShortHelp = "選擇輸入尺寸格式成為";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameDimension._RadioRealDimension.LongHelp = "以此選項, 尺寸元件將會轉換成為尺寸. \n 未處理的尺寸型式會轉換成為細部.";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameDimension._RadioDetailDimension.Title = "細部";
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameDimension._RadioDetailDimension.ShortHelp = "選擇輸入尺寸格式為細部";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameDimension._RadioDetailDimension.LongHelp = "以此選項, 尺寸元件將會轉換成為細部.";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameDimension._RadioExplodedDimension.Title = "幾何";
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameDimension._RadioExplodedDimension.ShortHelp = "選擇輸入尺寸格式為幾何元素";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameDimension._RadioExplodedDimension.LongHelp = "以此選項, 尺寸元件將會轉換成為炸開幾何元素.";
+
+
+// --------------------
+// >>>>>>>EXPORT<<<<<<<
+// --------------------
+_ToolsExport.HeaderFrame.Global.Title = " 輸出";
+
+// --- Sheets ---
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameSheets._LabelAllSheets.Title = "輸出圖紙:  ";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameSheets._RadioAllSheets.Title = "全部";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameSheets._RadioAllSheets.ShortHelp = "在不同檔案輸出所有圖紙";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameSheets._RadioAllSheets.LongHelp = "在不同檔案輸出所有圖紙. \n 產生檔案將會以所選取檔案加上輸出圖紙檔案名稱.";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameSheets._RadioOnlyCurrentSheet.Title = "只有目前的";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameSheets._RadioOnlyCurrentSheet.ShortHelp = "只輸出目前的圖紙";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameSheets._RadioOnlyCurrentSheet.LongHelp = "只輸出目前的圖紙";
+
+// --- Export Mode ---
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameExportMode._LabelExportMode.Title = "輸出模式:  ";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameExportMode._RadioSemanticAdvancedMode.Title = "圖形";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameExportMode._RadioSemanticAdvancedMode.ShortHelp = "含有圖形尺寸的簡易編輯結果";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameExportMode._RadioSemanticAdvancedMode.LongHelp = "提供具簡易編輯的結果 \n 群組化幾何成為區塊, \n 輸出圖層, 文字和語義.";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameExportMode._RadioSemanticMode.Title = "架構";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameExportMode._RadioSemanticMode.ShortHelp = "簡易編輯結果";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameExportMode._RadioSemanticMode.LongHelp = "提供具簡易編輯的結果 \n 群組化幾何成為區塊, \n 輸出圖層和文字.";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameExportMode._RadioGraphicMode.Title = "圖形";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameExportMode._RadioGraphicMode.ShortHelp = "真實圖形輸出";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameExportMode._RadioGraphicMode.LongHelp = "提供與原始顯示相同的輸出.";

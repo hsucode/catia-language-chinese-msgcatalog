@@ -1,0 +1,23 @@
+// COPYRIGHT DASSAULT SYSTEMES 
+//----------------------------
+// NLS message for the CATBIWInternalError Error 
+
+//
+//-- Hole
+HoleNoProjectionERR_1001.Request    = "無解.";
+HoleNoProjectionERR_1001.Diagnostic = "孔形狀無法投影在基本曲面上.";
+HoleNoProjectionERR_1001.Advice     = "更改孔位置.";
+
+HoleNonManifoldERR_1002.Request    = "無法計算孔.";
+HoleNonManifoldERR_1002.Diagnostic = "投影至 /p1 的孔外形導致 non manifold 情形.";
+HoleNonManifoldERR_1002.Advice     = "更改孔位置或修改依附曲面.";
+
+HoleEquidistantSolutionERR_1003.Request    = "無法定義近接法.";
+HoleEquidistantSolutionERR_1003.Diagnostic = "投影至 /p1 的孔外形導致多個解法, 由中心點等分.";
+HoleEquidistantSolutionERR_1003.Advice     = "更改孔位置來解決不確定解.";
+
+//
+//-- Bead
+BeadNotcompletelyLieOnBaseERR_4001.Request    = "滴面未完全依附在基本曲面 /p1 上. \n 亮度顯示點間計算失敗";
+BeadNotcompletelyLieOnBaseERR_4001.Diagnostic = "滴面外形必須完全定義在基本曲面上.";
+BeadNotcompletelyLieOnBaseERR_4001.Advice     = "修改滴面位置或參數.";

@@ -1,0 +1,87 @@
+// CATAssSettings.CATNls
+
+// English Version
+// tbu avril 1999
+
+Title="組立";
+Help="定義組立工具選擇";
+
+// Bounding Box' visibility
+
+// AsmSetCont.BoundingBoxVisible.Title="邊界盒";
+// AsmSetCont.BoundingBoxVisible.Help="顯示邊界盒";
+// AsmSetCont.BoundingBoxVisible.LongHelp="邊界盒 \n 顯示或不顯示邊界盒.";
+// AsmSetCont.BoundingBoxVisible.BndBoxButton.Title="可見的";
+// AsmSetCont.BoundingBoxVisible.BndBoxButton.Help="顯示邊界盒.";
+// AsmSetCont.BoundingBoxVisible.BndBoxButton.LongHelp="顯示邊界盒.";
+
+// Reconnect constraint on Cut/Copy/Paste
+
+AsmSetCont.RecCstOnCCPFrame.Title="貼上元件";
+AsmSetCont.RecCstOnCCPFrame.Help="不論有無應用組立拘束均貼上元件";
+AsmSetCont.RecCstOnCCPFrame.LongHelp="貼上元件 \n 不論有無應用組立拘束均貼上元件.";
+
+AsmSetCont.RecCstOnCCPFrame.BtNone.Title="未有組立拘束";
+AsmSetCont.RecCstOnCCPFrame.BtNone.Help="無應用組立下貼上元件";
+AsmSetCont.RecCstOnCCPFrame.BtNone.LongHelp="允許在無應用組立下貼上元件.";
+
+AsmSetCont.RecCstOnCCPFrame.BtCopy.Title="複製後方可貼上組立拘束";
+AsmSetCont.RecCstOnCCPFrame.BtCopy.Help="複製後方可貼上組立拘束";
+AsmSetCont.RecCstOnCCPFrame.BtCopy.LongHelp="複製後方可貼上組立拘束.";
+
+AsmSetCont.RecCstOnCCPFrame.BtCut.Title="剪下後方可貼上組立拘束";
+AsmSetCont.RecCstOnCCPFrame.BtCut.Help="剪下後方可貼上組立拘束";
+AsmSetCont.RecCstOnCCPFrame.BtCut.LongHelp="剪下後方可貼上組立拘束.";
+
+AsmSetCont.RecCstOnCCPFrame.BtCopyAndCut.Title="貼上有組立拘束時";
+AsmSetCont.RecCstOnCCPFrame.BtCopyAndCut.Help="有組立拘束時貼上";
+AsmSetCont.RecCstOnCCPFrame.BtCopyAndCut.LongHelp="有組立拘束時貼上.";
+
+// Update's depth
+
+AsmSetCont.UpdateFrame.Title="更新";
+AsmSetCont.UpdateFrame.UpdateFrame2.UpdateAutoFrame._RadioAutoUpdate.Title = "自動";
+AsmSetCont.UpdateFrame.UpdateFrame2.UpdateAutoFrame._RadioAutoUpdate.LongHelp = 
+"Automatically updates the active component when it is no updated.";
+AsmSetCont.UpdateFrame.UpdateFrame2.UpdateAutoFrame._RadioManualUpdate.Title = "手動";
+AsmSetCont.UpdateFrame.UpdateFrame2.UpdateAutoFrame._RadioManualUpdate.LongHelp = 
+"作動文件修改時不會自動更新.";
+
+AsmSetCont.UpdateFrame.UpdateFrame2.UpdateDepthFrame.LongHelp="更新 \n 允許您更新作動分件的作動層級或所有層級的拘束.";
+AsmSetCont.UpdateFrame.UpdateFrame2.UpdateDepthFrame.Help="允許您更新作動分件的作動層級或所有層級的拘束.";
+AsmSetCont.UpdateFrame.UpdateFrame2.UpdateDepthFrame.UpdateFstLevelButton.Title="啟動層級";
+AsmSetCont.UpdateFrame.UpdateFrame2.UpdateDepthFrame.UpdateFstLevelButton.LongHelp="允許您更新作動分件的作動層級的拘束.";
+AsmSetCont.UpdateFrame.UpdateFrame2.UpdateDepthFrame.UpdateDepthButton.Title="所有層級";
+AsmSetCont.UpdateFrame.UpdateFrame2.UpdateDepthFrame.UpdateDepthButton.LongHelp="允許您更新作動分件所有層級的拘束.";
+
+AsmSetCont.UpdateDepthFrame.Title="更新";
+AsmSetCont.UpdateDepthFrame.LongHelp="更新 \n 允許您更新作動元件或其所有階層的拘束.";
+AsmSetCont.UpdateDepthFrame.Help="允許您更新作動元件或其所有階層的拘束";
+AsmSetCont.UpdateDepthFrame.UpdateFstLevelButton.Title="起動等級";
+AsmSetCont.UpdateDepthFrame.UpdateFstLevelButton.LongHelp="允許您更新作動元件的拘束.";
+AsmSetCont.UpdateDepthFrame.UpdateDepthButton.Title="所有階層";
+AsmSetCont.UpdateDepthFrame.UpdateDepthButton.LongHelp="允許您更新作動元件的拘束.";
+
+// Constraints Creation
+
+AsmSetCont.CreateCstFrame.Title="建立拘束";
+AsmSetCont.CreateCstFrame.Help="建立拘束 \n 使用或不使用發行的幾何來建立拘束";
+AsmSetCont.CreateCstFrame.LongHelp="使用或不使用發行的幾何來建立拘束.";
+AsmSetCont.CreateCstFrame.CreateWithPublish.Title="只使用發行過的幾何建立拘束";
+AsmSetCont.CreateCstFrame.CreateWithPublish.Help="只使用發行過的幾何建立拘束";
+AsmSetCont.CreateCstFrame.CreateWithPublish.LongHelp="允許您只使用發行過的幾何建立拘束.";
+
+// Warning When moving a componant involved in a FixTogether
+
+AsmSetCont.WarnMovingFixTFra.Title="移動元件";
+AsmSetCont.WarnMovingFixTFra.WarnMovingFixTFBtn.Title="移動元件於固定組中會顯示警告";
+AsmSetCont.WarnMovingFixTFra.WarnMovingFixTFBtn.Help="移動元件於固定組中會顯示警告";
+AsmSetCont.WarnMovingFixTFra.WarnMovingFixTFBtn.LongHelp="移動元件於固定組中會顯示警告.";
+
+
+
+AsmSetCont.AUTOSWITCHFRM.Title="存取幾何";
+AsmSetCont.AUTOSWITCHFRM.AUTOSWITCHCB.Title="自動轉換至設計模式";
+AsmSetCont.AUTOSWITCHFRM.AUTOSWITCHCB.Help="允許在顯示模式下藉由形狀來選擇幾何";
+AsmSetCont.AUTOSWITCHFRM.AUTOSWITCHCB.LongHelp="存取幾何 \n 允許在顯示模式下藉由形狀來選擇幾何.";
+

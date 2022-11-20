@@ -1,0 +1,41 @@
+Title="過濾器編輯";
+FilterFrame.FilterLabel.Title="過濾器名稱:";
+LayersList.Visible.Title="可見圖層";
+LayersList.Unvisible.Title="不可見圖層";
+AllLayers.Title="所有圖層";
+AllPB.Title="全部";
+NonePB.Title="無";
+CombinationFrame.CombinationLabel.Title="組合:";
+
+FilterFrame.FilterNameEditor.LongHelp=
+"Enter or modify the name of the filter.";
+VisibleLayers.LongHelp=
+"Visibility attribute for the list of layers.
+You can define a filter as a list of visible layers,
+then all the other layers will be invisible.
+You can define a filter as a list of unvisible layers,
+then all the other layers will be visible.";
+VisibleLayersList.LongHelp=
+"List of layers composing the filter.
+These layers will be visible or unvisible
+depending on the value of the visibility combo.
+Select a layer to remove it from this list.";
+AllLayersList.LongHelp=
+"List of all the defined layers
+(except these composing the filter).
+Select a layer to remove it from this list
+and to add it to the filter.";
+AllPB.LongHelp=
+"Adds all the defined layers to the filter.";
+NonePB.LongHelp=
+"Removes all the layers from the filter.";
+CombinationFrame.CombinationEditor.LongHelp=
+"Logical combination of layers and filters.
+Use numbers for layers and names for filters.
+Parenthesis allow subsets definition.
+Use a comma between two layer numbers for a range.
+& and + are for intersection and union
+of two sets of layers or filters.
+! is for the complement of a set.
+This field is available only if 
+the layers list of the filter is empty.";

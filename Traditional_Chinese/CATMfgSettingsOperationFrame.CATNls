@@ -1,0 +1,75 @@
+// * Operation Options *
+// =====================
+
+
+
+frameCre.HeaderFrame.Global.Title = "預設數值";
+
+frameCre.IconAndOptionsFrame.OptionsFrame.UseBlockInit.Title = "在目前程式中使用預設數值";
+frameCre.IconAndOptionsFrame.OptionsFrame.UseBlockInit.LongHelp = 
+"使用目前程式的預設數值
+而不使用原始數值";
+
+frameAftCre.HeaderFrame.Global.Title = "建立或在啟始 MP 後";
+
+frameAftCre.IconAndOptionsFrame.OptionsFrame.AutoEditOper.Title						= "開始編輯模式(MP 不適用)";
+frameAftCre.IconAndOptionsFrame.OptionsFrame.AutoEditOper.LongHelp					= 
+"建立程序時自動開啟編輯模式來修改參數";
+frameAftCre.IconAndOptionsFrame.OptionsFrame.SearchToolInProgram.Title				= "於前一個程序搜尋相容刀具";
+frameAftCre.IconAndOptionsFrame.OptionsFrame.SearchToolInProgram.LongHelp			= 
+"在目前程式的前一個程序中建立程序時,
+若有相容刀具存在時,它會被設成新的. 
+否則程序未完成";
+
+frameAftCre.IconAndOptionsFrame.OptionsFrame.CreateDefTool.Title					= "使用預設刀具";
+frameAftCre.IconAndOptionsFrame.OptionsFrame.CreateDefTool.LongHelp					= 
+"當建立程序時,在目前文件中會先執行搜尋相容刀具. 如果沒有相容刀具存在, 則在建立程序時會於文件中預建.";
+
+frameAftCre.IconAndOptionsFrame.OptionsFrame.AutoSequencingButton.Title				= "循續加工程序";
+frameAftCre.IconAndOptionsFrame.OptionsFrame.AutoSequencingButton.LongHelp			= 
+"目前程式建立後所有加工程序會自動排序. 否則它會由特徵視圖處理";
+
+frameAftCre.IconAndOptionsFrame.OptionsFrame.CopyOperKeepToolLinkButton.Title		= "複製時保持刀具";
+frameAftCre.IconAndOptionsFrame.OptionsFrame.CopyOperKeepToolLinkButton.LongHelp	= 
+"當複製程序時,刀具會被保留,否則程序未完成";
+
+frameAftCre.IconAndOptionsFrame.OptionsFrame.MPInstant_TLAbsPos.Title		= "MP 複件 : 保留刀具軸的絕對位置";
+frameAftCre.IconAndOptionsFrame.OptionsFrame.MPInstant_TLAbsPos.LongHelp	= 
+"複製 MP 時, 保持刀具軸動作的絕對位置,
+否則將更改位置以保留刀具軸的相對座標.";
+
+frameCopy.HeaderFrame.Global.Title = "複製時";
+
+frameCopy.IconAndOptionsFrame.OptionsFrame.CopyOperKeepGeometryLinkButton.Title		= "複製幾何鏈結";
+frameCopy.IconAndOptionsFrame.OptionsFrame.CopyOperKeepGeometryLinkButton.LongHelp	= 
+"當複製程序時,幾何鏈結會被複製,否則程序未完成.";
+
+frameGeo.HeaderFrame.Global.Title = "當選擇幾何";
+
+frameGeo.IconAndOptionsFrame.OptionsFrame.InitContourButton.Title		= "從底部選擇初始化外形和島";
+frameGeo.IconAndOptionsFrame.OptionsFrame.InitContourButton.LongHelp	= 
+"如未選擇外形而選擇底部時,
+底部的邊界將當做外形, 而內部的邊界將當做島(減重槽).";
+
+frameDisplay.HeaderFrame.Global.Title = "顯示";
+frameDisplay.IconAndOptionsFrame.OptionsFrame.DisplayTPOnMO.Title		= "在目前的零件工法顯示刀具路徑動作";
+frameDisplay.IconAndOptionsFrame.OptionsFrame.DisplayTPOnMO.LongHelp	= 
+"在目前的零件工法顯示刀具路徑動作並可選取.
+如果您按一下刀具路徑, 相關動作將可編輯.
+在刀具路徑圖形顯示中可執行顯示或隱藏管理.";
+
+frameIHMBasic.HeaderFrame.Global.Title = "使用者界面";
+frameIHMBasic.IconAndOptionsFrame.OptionsFrame.ModeIHMBasic.Title		= "簡化模式";
+frameIHMBasic.IconAndOptionsFrame.OptionsFrame.ModeIHMBasic.LongHelp	= "定義簡化使用者模式來建立和編輯動作";
+
+frameFeedrate.HeaderFrame.Global.Title = "開始進給";
+frameFeedrate.IconAndOptionsFrame.OptionsFrame.StartFeedMgt.Title		= "使用在近接副程式中使用的順接動作進給.";
+frameFeedrate.IconAndOptionsFrame.OptionsFrame.StartFeedMgt.LongHelp	= "If a clearance macro is active on the operation,
+the feedrate of its transition motion will be used at start
+of the tool path of the operation.";
+
+
+
+
+
+

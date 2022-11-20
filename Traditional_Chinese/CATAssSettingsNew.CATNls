@@ -1,0 +1,95 @@
+// CATAssSettingsNew.CATNls
+
+// English Version
+// tbu avril 1999
+
+Help="定義組立工具選擇";
+
+// Reconnect constraint on Cut/Copy/Paste
+
+RecCstOnCCPFrame.HeaderFrame.Global.Title="貼上分件";
+RecCstOnCCPFrame.Help="不論是否有組立拘束應用在它, 均貼上分件";
+RecCstOnCCPFrame.LongHelp="貼上分件 \n 允許您不論是否有組立拘束應用在它, 均貼上分件.";
+
+RecCstOnCCPFrame.IconAndOptionsFrame.OptionsFrame.BtNone.Title="無組立拘束";
+RecCstOnCCPFrame.IconAndOptionsFrame.OptionsFrame.BtNone.Help="無組立拘束來貼上分件";
+RecCstOnCCPFrame.IconAndOptionsFrame.OptionsFrame.BtNone.LongHelp="允許您沒有組立拘束應用在它, 依然貼上分件.";
+
+RecCstOnCCPFrame.IconAndOptionsFrame.OptionsFrame.BtCopy.Title="複製後有組立拘束";
+RecCstOnCCPFrame.IconAndOptionsFrame.OptionsFrame.BtCopy.Help="複製後在組立拘束上貼上分件";
+RecCstOnCCPFrame.IconAndOptionsFrame.OptionsFrame.BtCopy.LongHelp="允許您在複製後, 在組立拘束上貼上分件.";
+
+RecCstOnCCPFrame.IconAndOptionsFrame.OptionsFrame.BtCut.Title="剪下後有組立拘束";
+RecCstOnCCPFrame.IconAndOptionsFrame.OptionsFrame.BtCut.Help="允許您剪下後在組立拘束上貼上分件";
+RecCstOnCCPFrame.IconAndOptionsFrame.OptionsFrame.BtCut.LongHelp="允許您剪下後在組立拘束上貼上分件 \n 剪下後有組立拘束.";
+
+RecCstOnCCPFrame.IconAndOptionsFrame.OptionsFrame.BtCopyAndCut.Title="一直有組立拘束";
+RecCstOnCCPFrame.IconAndOptionsFrame.OptionsFrame.BtCopyAndCut.Help="允許您在組立拘束應用上貼上分件";
+RecCstOnCCPFrame.IconAndOptionsFrame.OptionsFrame.BtCopyAndCut.LongHelp="允許您在組立拘束應用上貼上分件 \n 一直有組立拘束.";
+
+// Update
+
+UpdateAutoFrame.HeaderFrame.Global.Title="更新";
+
+UpdateAutoFrame.IconAndOptionsFrame.OptionsFrame._RadioAutoUpdate.Title="自動";
+UpdateAutoFrame.IconAndOptionsFrame.OptionsFrame._RadioAutoUpdate.Help="當文件未更新時, 自動更新作動分件";
+UpdateAutoFrame.IconAndOptionsFrame.OptionsFrame._RadioAutoUpdate.LongHelp="當文件未更新時, 自動更新作動分件.";
+
+UpdateAutoFrame.IconAndOptionsFrame.OptionsFrame._RadioManualUpdate.Title="手動";
+UpdateAutoFrame.IconAndOptionsFrame.OptionsFrame._RadioManualUpdate.Help="當文件修改時, 將不會自動更新作動分件";
+UpdateAutoFrame.IconAndOptionsFrame.OptionsFrame._RadioManualUpdate.LongHelp="當文件修改時, 將不會自動更新作動分件.";
+
+UpdateDepthFrame.HeaderFrame.Global.Title="更新增生深度";
+
+UpdateDepthFrame.IconAndOptionsFrame.OptionsFrame.UpdateFstLevelButton.Title="作動層";
+UpdateDepthFrame.IconAndOptionsFrame.OptionsFrame.UpdateFstLevelButton.Help="在作動分件上更新作動層級的拘束";
+UpdateDepthFrame.IconAndOptionsFrame.OptionsFrame.UpdateFstLevelButton.LongHelp="在作動分件上更新作動層級的拘束.";
+
+UpdateDepthFrame.IconAndOptionsFrame.OptionsFrame.UpdateDepthButton.Title="所有層";
+UpdateDepthFrame.IconAndOptionsFrame.OptionsFrame.UpdateDepthButton.Help="在作動分件上更新所有層級的拘束";
+UpdateDepthFrame.IconAndOptionsFrame.OptionsFrame.UpdateDepthButton.LongHelp="在作動分件上更新所有層級的拘束.";
+
+// Real Update Status : Begin
+
+RealUpdtStatusFrame.HeaderFrame.Global.Title=" 開啟時計算實際更新情形 ";
+
+RealUpdtStatusFrame.IconAndOptionsFrame.OptionsFrame._RadioAutoUpdtStatus.Title="自動";
+RealUpdtStatusFrame.IconAndOptionsFrame.OptionsFrame._RadioAutoUpdtStatus.Help="當啟動暫存器時, 在開啟時自動載入所需資料";
+RealUpdtStatusFrame.IconAndOptionsFrame.OptionsFrame._RadioAutoUpdtStatus.LongHelp="當啟動暫存器時, 在開啟時自動載入所需資料";
+
+RealUpdtStatusFrame.IconAndOptionsFrame.OptionsFrame._RadioManualUpdtStatus.Title="手動";
+RealUpdtStatusFrame.IconAndOptionsFrame.OptionsFrame._RadioManualUpdtStatus.Help="當啟動暫存器時, 在開啟時不自動載入所需資料";
+RealUpdtStatusFrame.IconAndOptionsFrame.OptionsFrame._RadioManualUpdtStatus.LongHelp="模型以 CGR 開啟";
+
+
+// Real Update Status : End
+// Constraints Creation
+
+CreateCstFrame.HeaderFrame.Global.Title="建立拘束";
+CreateCstFrame.Help="為建立拘束是否使用發行幾何";
+CreateCstFrame.LongHelp="允許您為建立拘束是否使用發行幾何.";
+
+CreateCstFrame.IconAndOptionsFrame.OptionsFrame.rbPublishNone.Title="使用任何幾何元素";
+CreateCstFrame.IconAndOptionsFrame.OptionsFrame.rbPublishNone.Help="在作動分件上 (不論發行與否) 均使用任何幾何元素";
+CreateCstFrame.IconAndOptionsFrame.OptionsFrame.rbPublishChild.Title="只使用發行的子分件";
+CreateCstFrame.IconAndOptionsFrame.OptionsFrame.rbPublishChild.Help="只使用發行的子分件來建立分件";
+CreateCstFrame.IconAndOptionsFrame.OptionsFrame.rbPublishAll.Title="使用任何層級的發行幾何元素";
+CreateCstFrame.IconAndOptionsFrame.OptionsFrame.rbPublishAll.Help="使用任何層級的發行幾何元素來建立拘束";
+
+// Warning When moving a componant involved in a FixTogether
+
+WarnMovingFixTFra.HeaderFrame.Global.Title="在固定一起中移動分件";
+WarnMovingFixTFra.IconAndOptionsFrame.OptionsFrame.MoveFixTLab2.Title="延伸選擇至所有相關分件.";
+WarnMovingFixTFra.IconAndOptionsFrame.OptionsFrame.MoveFixTAllwaysRd.Title="經常";
+WarnMovingFixTFra.IconAndOptionsFrame.OptionsFrame.MoveFixTNeverRd.Title="絕不";
+WarnMovingFixTFra.IconAndOptionsFrame.OptionsFrame.MoveFixTAskRd.Title="每次皆詢問";
+WarnMovingFixTFra.IconAndOptionsFrame.OptionsFrame.WarnMovingFixTFBtn.Title="當移動一個固定在一起的分件時顯示警告";
+WarnMovingFixTFra.IconAndOptionsFrame.OptionsFrame.WarnMovingFixTFBtn.Help="當移動一個固定在一起的分件時顯示警告";
+WarnMovingFixTFra.IconAndOptionsFrame.OptionsFrame.WarnMovingFixTFBtn.LongHelp="允許您移動一個固定在一起的分件時顯示警告.";
+
+// Auto switch Visu -> Design mode
+
+AUTOSWITCHFRM.HeaderFrame.Global.Title="存取至幾何";
+AUTOSWITCHFRM.IconAndOptionsFrame.OptionsFrame.AUTOSWITCHCB.Title="自動轉換至設計模式";
+AUTOSWITCHFRM.IconAndOptionsFrame.OptionsFrame.AUTOSWITCHCB.Help="允許您在顯示模式經由外形選擇幾何";
+AUTOSWITCHFRM.IconAndOptionsFrame.OptionsFrame.AUTOSWITCHCB.LongHelp="存取幾何 \n 在設計顯示模式自動轉換外形以選擇幾何.";

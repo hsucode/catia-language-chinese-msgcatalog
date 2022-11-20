@@ -1,0 +1,63 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 2000 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwOptManip
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    
+// DATE        :    30.10.2000
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    Tools/Option du Drafting
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+// 	01		lgk	17.12.02 Revision
+//=====================================================================================
+
+Title="管理";
+
+toolDrwMng.HeaderFrame.Global.Title="繪圖管理";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkOnlyFileNewFrom.Title="避免 檔案 > 新的";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkOnlyFileNewFrom.LongHelp="只允許您從檔案 / 新的 命令來建繪圖檔.";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkOnlyUserDefault.Title="鎖定 只有預設值 形式";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkOnlyUserDefault.LongHelp="只讓您以預設值建立元素.";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkAllowUserDefault.Title="避免 設成預設 和 重設所有預設 ";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkAllowUserDefault.LongHelp="避免建立和重新初始化所有預設值.";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkSwitchStandard.Title="避免更換繪圖標準";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkSwitchStandard.LongHelp="避免更換繪圖標準";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkUpdateStandard.Title="避免更新繪圖標準";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkUpdateStandard.LongHelp="避免更新繪圖標準";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkBackgroundView.Title="避免存取視圖背景";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkBackgroundView.LongHelp="避免存取視圖背景";
+
+toolDrwStyle.HeaderFrame.Global.Title="形式管理";
+toolDrwStyle.HeaderFrame.Global.LongHelp="形式管理";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.chkStyleCreation.Title="永遠使用形式數值來建立新物件";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.chkStyleCreation.LongHelp="永遠使用形式數值來建立新物件";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.lbl.Title="建立新的圖紙從(為 V5R14 之前的繪圖): ";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.lbl.LongHelp="由 xml 檔案或第一張所定義的形式來建立新圖紙.";
+
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.frmRadio.frmRadiolocked.radSheetStyle.Title="形式";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.frmRadio.frmRadiolocked.radSheetStyle.LongHelp="由 xml 檔案來建立新圖紙.";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.frmRadio.frmRadiolocked.radSheetCurrent.Title="第一張圖紙";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.frmRadio.frmRadiolocked.radSheetCurrent.LongHelp="由第一張所定義的形式來建立新圖紙.";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.lblPre.Title="為 V5 R11 之前的繪圖:";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.lblPre.LongHelp="按照可用的選項來定義 V5 R11 之前的繪圖";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.checkOnlyUserDefault.Title="鎖定 使用者預設 形式";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.checkOnlyUserDefault.LongHelp="只使用使用者預設性質建立元素.";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.checkAllowUserDefault.Title="避免 設成預設 和 重設所有預設 ";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.checkAllowUserDefault.LongHelp="避免您建立和重新初始化使用者預設性質.";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.chkReset.Title="在對話盒中顯示重設按鈕";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.chkReset.LongHelp="在對話盒中顯示重設按鈕";
+
+toolGVS.HeaderFrame.Global.Title="自發性視圖形式";
+toolGVS.HeaderFrame.Global.LongHelp="定義自發性視圖形式";
+toolGVS.IconAndOptionsFrame.OptionsFrame.chkPreventGVS.Title="避免定義自發性視圖用法";
+toolGVS.IconAndOptionsFrame.OptionsFrame.chkPreventGVS.LongHelp="避免定義自發性視圖用法";
+
+toolDress.HeaderFrame.Global.Title="修飾";
+toolDress.IconAndOptionsFrame.OptionsFrame.checkDimDriving3D.Title="避免驅動 3D 元素來標示尺寸";
+toolDress.IconAndOptionsFrame.OptionsFrame.checkDimDriving3D.LongHelp="避免驅動 3D 元素來標示尺寸";

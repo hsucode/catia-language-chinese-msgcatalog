@@ -1,0 +1,110 @@
+//
+// ---------------------------
+// Coating 1D commande
+// ---------------------------
+//
+
+// Le titre du panel de dialogue associe a la commande
+
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.Title="Coating 2D Mesh";
+CATMSHCmdMeshPartCoating2D.UndoTitle="Coating 2D Mesh";
+
+//Il faut initialiser la liste du dialogue.
+
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.GParameters.NoSelection="No selection";
+
+// Le bouton apply.
+
+CATMSHCmdMeshPartCoating2D.CoatingApply.UndoTitle="Creation of mesh";
+
+// Le combo de selection du type d'extraction a appliquer.
+
+CATMSHCmdMeshPartCoating2D.GSpec="Extraction criteria";
+CATMSHCmdMeshPartCoating2D.GSpec.UndoTitle="Extraction criteria";
+
+// Le bouton de suppression d'un ou de tous les support(s)
+
+CATMSHCmdMeshPartCoating2D.RemoveMP.UndoTitle="Remove one support";
+CATMSHCmdMeshPartCoating2D.RemoveAllMP.UndoTitle="Remove all supports";
+
+//Le NLS de la liste de mesh parts
+
+GParameters.Column0 ="MeshParts";
+GParameters.RemoveMPBtn.Title ="Remove";
+GParameters.RemoveMPBtn.LongHelp="Remove the selected MeshPart.";
+GParameters.GParametersList.GParametersCtxMenu.RemoveMPItm.Title="Remove";
+GParameters.RemoveAllMPBtn.Title="Remove All";
+GParameters.RemoveAllMPBtn.LongHelp="Remove all MeshParts.";
+GParameters.GParametersList.GParametersCtxMenu.RemoveAllMPItm.Title ="Remove all";
+
+//Le NLS du titre de la commande locale pour l'undo.
+
+CATMSHCmdMeshPartCoating2D.LSpec.UndoTitle="Local Specification";
+
+//Le NLS de la Frame des parametres globaux
+
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.GParameters.Title="Global Parameters";
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.GParameters.Help="Set global parameters";
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.GParameters.ShortHelp="Set global parameters";
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.GParameters.LongHelp="Set global parameters.";
+
+//Le NLS de la Frame des parametres locaux
+
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.LParameters.Title="Local Parameter";
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.LParameters.Help="Set local parameter";
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.LParameters.ShortHelp="Set local parameter";
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.LParameters.LongHelp="Set local parameter.";
+
+//Le NLS pour le combo des global parameters
+
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.GParameters.gparameterLbl.Title=" Extraction type: ";
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.GParameters.gparameterLbl.Help="Set the extraction type parameter";
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.GParameters.gparameterLbl.LongHelp="Set the extraction type parameter.";
+
+//Le NLS pour le texte accompagnant l'icone des global parameters
+
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.LParameters.lparameterLbl.Title=" Add a local parameter: ";
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.LParameters.lparameterLbl.Help="Add a local parameter";
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.LParameters.lparameterLbl.LongHelp="Add a local parameter.";
+
+//Le NLS pour la sous commande: parametre local
+
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.LParameters.ImposedMesh.Help="Add/Remove Mesh associated to geometry";
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.LParameters.ImposedMesh.ShortHelp="Add/Remove Mesh";
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.LParameters.ImposedMesh.LongHelp="Add/Remove Mesh associated to geometry.";
+
+//Le NLS du combo correspondant au parametre global
+
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.GParameters.CriteriaCombo.Help="Choose the extraction parameter in the combo";
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.GParameters.CriteriaCombo.ShortHelp="Choose the parameter";
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.GParameters.CriteriaCombo.LongHelp="Choose the extraction parameter in the combo.";
+
+//Le NLS concernant l'affichage de la liste deroulante
+
+boundfc   = "Boundary faces";
+nonefc    = "None";
+
+//Le NLS correspondant aux differents etats qui regissent le dialogue
+
+CATMSHCmdMeshPartCoating2D.InitialState.Message="Choose the mesh parts to extract";
+
+//Le NLS de l'agent de selection de mesh part (sur l'undo)
+
+CATMSHCmdMeshPartCoating2D.MeshSel.UndoTitle="Select 3D Mesh";
+
+//Le NLS de l'agent de selection de spec locales pour le delete (sur l'undo)
+
+CATMSHCmdMeshPartCoating2D.SpecSelected.UndoTitle="Delete Spec";
+CATMSHCmdMeshPartCoating2D.SpecSelectedEndCtx.UndoTitle="Delete Spec";
+
+// Erreurs associees au dialogue
+
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.CoatingERR_0007.Title = "Warning";
+CATMSHCmdMeshPartCoating2D.CoatingDlg2D.CoatingERR_0007.Text  ="One of the selected support(s)
+has not the appropriate dimension;
+choose others supports.";
+
+
+
+
+

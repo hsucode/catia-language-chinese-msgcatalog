@@ -1,0 +1,2081 @@
+// LGK Quick Revision 25/07/2002
+// LGK Revision 2	    15/10/2002
+// LGK Revision 3	    14/01/2003
+// NMB Revision 4       21/03/2003
+// NMB Revision all     24/03/2003
+
+DYS.Settings.Notify.Ttl.NegativeGridSpacing = "間隔";
+DYS.Settings.Notify.Msg.NegativeGridSpacing = "請輸入格子間隔的正數值.";
+DYS.Settings.Notify.Ttl.NegativeGridSecStep = "刻度";
+DYS.Settings.Notify.Msg.NegativeGridSecStep = "請輸入正值來決定刻度值.";
+
+DYS.SettingFrame.Title = "草圖";
+
+SketcherUI.CATComDYSInit.SelectState.Message = "請選擇平面, 邊界平面或草圖.";
+
+SketcherUI.CATComDYSContour.FirstPoint.Message = "點選斷面的起始點.";
+SketcherUI.CATComDYSContour.CreateLine.Message = "點選目前線段的端點.";
+SketcherUI.CATComDYSContour.CreateTgtArc.Message = "點一下決定目前相切圓的端點.";
+SketcherUI.CATComDYSContour.Create3PtsArc.Message = "點一下決定目前弧的第二點.";
+SketcherUI.CATComDYSContour.Create3PtsArc.Create3PtsArcCmd.ThirdPoint.Message = "點一下決定目前弧的端點.";
+SketcherUI.CATComDYSContour.SwitchBar.Line.Title = "線";
+SketcherUI.CATComDYSContour.SwitchBar.Line.Help = "建立直線.";
+SketcherUI.CATComDYSContour.SwitchBar.Line.LongHelp = "轉換至直線命令.";
+SketcherUI.CATComDYSContour.SwitchBar.Line.ShortHelp = "線";
+SketcherUI.CATComDYSContour.SwitchBar.TgtArc.Title = "切線弧";
+SketcherUI.CATComDYSContour.SwitchBar.TgtArc.Help = "建立與已定義的線或弧相切的圓弧，拖拉和釋放游標也可建一圓弧.";
+SketcherUI.CATComDYSContour.SwitchBar.TgtArc.LongHelp = "轉換至相切弧命令.";
+SketcherUI.CATComDYSContour.SwitchBar.TgtArc.ShortHelp = "切線弧";
+SketcherUI.CATComDYSContour.SwitchBar.3PtsArc.Title = "三點弧";
+SketcherUI.CATComDYSContour.SwitchBar.3PtsArc.Help = "任意點選三點來定義圓弧";
+SketcherUI.CATComDYSContour.SwitchBar.3PtsArc.LongHelp = "轉換至三點弧命令.";
+SketcherUI.CATComDYSContour.SwitchBar.3PtsArc.ShortHelp = "三點建弧";
+// Gestion Visu Copilote
+SketcherUI.CATComDYSContour.FirstPt.Name.Title = "第一點: ";
+SketcherUI.CATComDYSContour.FirstPt.Name.Help = "定義座標軸第一點";
+SketcherUI.CATComDYSContour.FirstPt.Name.ShortHelp = "第一點";
+SketcherUI.CATComDYSContour.FirstPt.Name.LongHelp = "定義座標軸第一點";
+SketcherUI.CATComDYSContour.FirstPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSContour.FirstPt.ULabel.ShortHelp = "第一點的水平座標";
+SketcherUI.CATComDYSContour.FirstPt.UEditor.ShortHelp = "第一點的水平座標";
+SketcherUI.CATComDYSContour.FirstPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSContour.FirstPt.VLabel.ShortHelp = "第一點的垂直座標";
+SketcherUI.CATComDYSContour.FirstPt.VEditor.ShortHelp = "第一點的垂直座標";
+
+SketcherUI.CATComDYSRect.FirstPoint.Message = "點選第一點來定義矩形.";
+SketcherUI.CATComDYSRect.EndPoint.Message = "點選第二點來定義矩形.";
+// Gestion Visu Copilote
+SketcherUI.CATComDYSRect.StartPt.Name.Title = "第一點: ";
+SketcherUI.CATComDYSRect.StartPt.Name.Help = "定義座標軸第一點";
+SketcherUI.CATComDYSRect.StartPt.Name.ShortHelp = "第一點";
+SketcherUI.CATComDYSRect.StartPt.Name.LongHelp = "定義座標軸第一點";
+SketcherUI.CATComDYSRect.StartPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSRect.StartPt.ULabel.ShortHelp = "第一點的水平座標";
+SketcherUI.CATComDYSRect.StartPt.UEditor.ShortHelp = "第一點的水平座標";
+SketcherUI.CATComDYSRect.StartPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSRect.StartPt.VLabel.ShortHelp = "第一點的垂直座標";
+SketcherUI.CATComDYSRect.StartPt.VEditor.ShortHelp = "第一點的垂直座標";
+SketcherUI.CATComDYSRect.EndPt.Name.Title = "第二點: ";
+SketcherUI.CATComDYSRect.EndPt.Name.Help = "定義座標軸第二點";
+SketcherUI.CATComDYSRect.EndPt.Name.ShortHelp = "第二點";
+SketcherUI.CATComDYSRect.EndPt.Name.LongHelp = "定義座標軸第二點";
+SketcherUI.CATComDYSRect.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSRect.EndPt.ULabel.ShortHelp = "第二點的水平座標.";
+SketcherUI.CATComDYSRect.EndPt.UEditor.ShortHelp = "第二點的水平座標.";
+SketcherUI.CATComDYSRect.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSRect.EndPt.VLabel.ShortHelp = "第二點的垂直座標.";
+SketcherUI.CATComDYSRect.EndPt.VEditor.ShortHelp = "第二點的垂直座標.";
+SketcherUI.CATComDYSRect.Width.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "寬度: ";
+SketcherUI.CATComDYSRect.Width.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "寬度";
+SketcherUI.CATComDYSRect.Width.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "寬度";
+SketcherUI.CATComDYSRect.Width.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "定義寬度值.";
+SketcherUI.CATComDYSRect.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "高度: ";
+SketcherUI.CATComDYSRect.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "高度";
+SketcherUI.CATComDYSRect.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "高度";
+SketcherUI.CATComDYSRect.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "定義高度值.";
+
+SketcherUI.CATComDYSCenteredRect.initState.Message = "選擇或按一下點來建立四邊形的中心點";
+SketcherUI.CATComDYSCenteredRect.pointSelected.Message = "選擇或按一下第二點來建立四邊形的中心點";
+SketcherUI.CATComDYSCenteredRect.StartPt.Name.Title = "第一點: ";
+SketcherUI.CATComDYSCenteredRect.StartPt.Name.Help = "定義第一點座標";
+SketcherUI.CATComDYSCenteredRect.StartPt.Name.ShortHelp = "第一點";
+SketcherUI.CATComDYSCenteredRect.StartPt.Name.LongHelp = "定義第一點座標";
+SketcherUI.CATComDYSCenteredRect.StartPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSCenteredRect.StartPt.ULabel.ShortHelp = "第一點的第一個座標";
+SketcherUI.CATComDYSCenteredRect.StartPt.UEditor.ShortHelp = "第一點的第一個座標";
+SketcherUI.CATComDYSCenteredRect.StartPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSCenteredRect.StartPt.VLabel.ShortHelp = "第一點的第二個座標";
+SketcherUI.CATComDYSCenteredRect.StartPt.VEditor.ShortHelp = "第一點的第二個座標";
+SketcherUI.CATComDYSCenteredRect.EndPt.Name.Title = "第二點: ";
+SketcherUI.CATComDYSCenteredRect.EndPt.Name.Help = "第二點";
+SketcherUI.CATComDYSCenteredRect.EndPt.Name.ShortHelp = "第二點";
+SketcherUI.CATComDYSCenteredRect.EndPt.Name.LongHelp = "第二點";
+SketcherUI.CATComDYSCenteredRect.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSCenteredRect.EndPt.ULabel.ShortHelp = "第二點的第一個座標";
+SketcherUI.CATComDYSCenteredRect.EndPt.UEditor.ShortHelp = "第二點的第一個座標";
+SketcherUI.CATComDYSCenteredRect.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSCenteredRect.EndPt.VLabel.ShortHelp = "第二點的第二個座標";
+SketcherUI.CATComDYSCenteredRect.EndPt.VEditor.ShortHelp = "第二點的第二個座標";
+SketcherUI.CATComDYSCenteredRect.Width.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "寬度: ";
+SketcherUI.CATComDYSCenteredRect.Width.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "寬度";
+SketcherUI.CATComDYSCenteredRect.Width.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "寬度";
+SketcherUI.CATComDYSCenteredRect.Width.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "定義寬度值.";
+SketcherUI.CATComDYSCenteredRect.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "高度: ";
+SketcherUI.CATComDYSCenteredRect.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "高度";
+SketcherUI.CATComDYSCenteredRect.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "高度";
+SketcherUI.CATComDYSCenteredRect.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "定義高度值.";
+
+SketcherUI.CATComDYSCenteredParallelogram.FirstLineState.Message = "選擇第一條線";
+SketcherUI.CATComDYSCenteredParallelogram.SecondLineState.Message = "選擇第二條線";
+SketcherUI.CATComDYSCenteredParallelogram.MoveDimensionsState.Message = "選擇或按一下結束點來建立中心平行矩形";
+SketcherUI.CATComDYSCenteredParallelogram.EndPt.Name.Title = "結束點: ";
+SketcherUI.CATComDYSCenteredParallelogram.EndPt.Name.Help = "定義結束點的座標";
+SketcherUI.CATComDYSCenteredParallelogram.EndPt.Name.ShortHelp = "結束點";
+SketcherUI.CATComDYSCenteredParallelogram.EndPt.Name.LongHelp = "定義結束點的座標";
+SketcherUI.CATComDYSCenteredParallelogram.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSCenteredParallelogram.EndPt.ULabel.ShortHelp = "結束點的第一座標";
+SketcherUI.CATComDYSCenteredParallelogram.EndPt.UEditor.ShortHelp = "結束點的第一座標";
+SketcherUI.CATComDYSCenteredParallelogram.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSCenteredParallelogram.EndPt.VLabel.ShortHelp = "結束點的第二座標";
+SketcherUI.CATComDYSCenteredParallelogram.EndPt.VEditor.ShortHelp = "結束點的第二座標";
+SketcherUI.CATComDYSCenteredParallelogram.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "高度: ";
+SketcherUI.CATComDYSCenteredParallelogram.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "高度";
+SketcherUI.CATComDYSCenteredParallelogram.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "高度";
+SketcherUI.CATComDYSCenteredParallelogram.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "定義高度值.";
+SketcherUI.CATComDYSCenteredParallelogram.Width.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "寬度: ";
+SketcherUI.CATComDYSCenteredParallelogram.Width.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "寬度";
+SketcherUI.CATComDYSCenteredParallelogram.Width.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "寬度";
+SketcherUI.CATComDYSCenteredParallelogram.Width.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "定義寬度值.";
+
+SketcherUI.CATComDYSParallelogram.FirstSide.Message = "任意點選一點來定義第一邊.";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPoint.Message = "任意點選一點來定位第一邊.";
+SketcherUI.CATComDYSParallelogram.SecondSide.Message = "任意點選一點來定義第二邊";
+// Gestion Visu Copilote
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.Name.Title = "第一圓角: ";
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.Name.Help = "第一圓角";
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.Name.ShortHelp = "第一圓角";
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.Name.LongHelp = "第一圓角";
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.ULabel.ShortHelp = "第一圓角的第一座標";
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.UEditor.ShortHelp = "第一圓角的第一座標";
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.VLabel.ShortHelp = "第一圓角的第二座標";
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.VEditor.ShortHelp = "第一圓角的第二座標";
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.Length_Label.Title = "W: ";
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.Length_Label.ShortHelp = "平行四邊形寬度";
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.Length_Value.ShortHelp = "平行四邊形寬度";
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.Angle_Label.Title = "A: ";
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.Angle_Label.ShortHelp= "平行四邊形水平參考和邊的角度";
+SketcherUI.CATComDYSParallelogram.LineCmd.StartPt.Angle_Value.ShortHelp= "平行四邊形水平參考和邊的角度";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.Name.Title = "第二圓角: ";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.Name.Help = "第二圓角";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.Name.ShortHelp = "第二圓角";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.Name.LongHelp = "定義第二圓角";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.ULabel.ShortHelp = "第二圓角的第一座標";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.UEditor.ShortHelp = "第二圓角的第一座標";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.VLabel.ShortHelp = "第二圓角的第二座標";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.VEditor.ShortHelp = "第二圓角的第二座標";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.Length_Label.Title = "W: ";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.Length_Label.ShortHelp = "平行四邊形寬度";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.Length_Value.ShortHelp = "平行四邊形寬度";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.Angle_Label.Title = "A: ";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.Angle_Label.ShortHelp= "平行四邊形水平參考和邊的角度";
+SketcherUI.CATComDYSParallelogram.LineCmd.EndPt.Angle_Value.ShortHelp= "平行四邊形水平參考和邊的角度";
+SketcherUI.CATComDYSParallelogram.EndPt.Name.Title = "第三點: ";
+SketcherUI.CATComDYSParallelogram.EndPt.Name.Help = "第三點";
+SketcherUI.CATComDYSParallelogram.EndPt.Name.ShortHelp = "第三點";
+SketcherUI.CATComDYSParallelogram.EndPt.Name.LongHelp = "第三點";
+SketcherUI.CATComDYSParallelogram.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSParallelogram.EndPt.ULabel.ShortHelp = "第三點的水平座標";
+SketcherUI.CATComDYSParallelogram.EndPt.UEditor.ShortHelp = "第三點的水平座標";
+SketcherUI.CATComDYSParallelogram.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSParallelogram.EndPt.VLabel.ShortHelp = "第三點的垂直座標";
+SketcherUI.CATComDYSParallelogram.EndPt.VEditor.ShortHelp = "第三點的垂直座標";
+SketcherUI.CATComDYSParallelogram.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "高度: ";
+SketcherUI.CATComDYSParallelogram.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "高度";
+SketcherUI.CATComDYSParallelogram.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "高度";
+SketcherUI.CATComDYSParallelogram.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "請輸入高度值";
+SketcherUI.CATComDYSParallelogram.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "角度: ";
+SketcherUI.CATComDYSParallelogram.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "角度";
+SketcherUI.CATComDYSParallelogram.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "角度";
+SketcherUI.CATComDYSParallelogram.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "請輸入角度值";
+
+SketcherUI.CATComDYSRectOrient.FirstSide.Message = "任意點選一點來定義第一邊.";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPoint.Message = "任意點選一點來定義第一邊";
+SketcherUI.CATComDYSRectOrient.SecondSide.Message = "任意點選一點來定義第二邊.";
+// Gestion Visu Copilote
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.Name.Title = "第一圓角: ";
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.Name.Help = "第一圓角";
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.Name.ShortHelp = "第一圓角";
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.Name.LongHelp = "第一圓角";
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.ULabel.ShortHelp = "第一圓角的第一座標";
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.UEditor.ShortHelp = "第一圓角的第一座標";
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.VLabel.ShortHelp = "第一圓角的第二座標";
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.VEditor.ShortHelp = "第一圓角的第二座標";
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.Length_Label.Title = "W: ";
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.Length_Label.ShortHelp = "矩形寬度";
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.Length_Value.ShortHelp = "矩形寬度";
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.Angle_Label.Title = "A: ";
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.Angle_Label.ShortHelp= "矩形水平參考和邊的角度";
+SketcherUI.CATComDYSRectOrient.LineCmd.StartPt.Angle_Value.ShortHelp= "矩形水平參考和邊的角度";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.Name.Title = "第二圓角: ";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.Name.Help = "第二圓角";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.Name.ShortHelp = "第二圓角";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.Name.LongHelp = "第二圓角";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.ULabel.ShortHelp = "第二圓角的第一座標.";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.UEditor.ShortHelp = "第二圓角的第一座標.";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.VLabel.ShortHelp = "第二圓角的第二座標";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.VEditor.ShortHelp = "第二圓角的第二座標";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.Length_Label.Title = "W: ";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.Length_Label.ShortHelp = "矩形寬度";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.Length_Value.ShortHelp = "矩形寬度";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.Angle_Label.Title = "A: ";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.Angle_Label.ShortHelp= "矩形水平參考和邊的角度";
+SketcherUI.CATComDYSRectOrient.LineCmd.EndPt.Angle_Value.ShortHelp= "矩形水平參考和邊的角度";
+SketcherUI.CATComDYSRectOrient.EndPt.Name.Title = "第三圓角 : ";
+SketcherUI.CATComDYSRectOrient.EndPt.Name.Help = "第三圓角";
+SketcherUI.CATComDYSRectOrient.EndPt.Name.ShortHelp = "第三圓角";
+SketcherUI.CATComDYSRectOrient.EndPt.Name.LongHelp = "第三圓角";
+SketcherUI.CATComDYSRectOrient.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSRectOrient.EndPt.ULabel.ShortHelp = "第三點的水平座標";
+SketcherUI.CATComDYSRectOrient.EndPt.UEditor.ShortHelp = "第三點的水平座標";
+SketcherUI.CATComDYSRectOrient.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSRectOrient.EndPt.VLabel.ShortHelp = "第三點的垂直座標";
+SketcherUI.CATComDYSRectOrient.EndPt.VEditor.ShortHelp = "第三點的垂直座標";
+SketcherUI.CATComDYSRectOrient.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "高度: ";
+SketcherUI.CATComDYSRectOrient.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "高度";
+SketcherUI.CATComDYSRectOrient.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "高度";
+SketcherUI.CATComDYSRectOrient.Height.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "請輸入高度值";
+
+SketcherUI.CATComDYSRelimit.FirstElem.Message = "選取一個點或曲線形式元素.";
+SketcherUI.CATComDYSRelimit.SecondElem.Message = "選取第二個點或曲線元素或選擇原來的元素來截斷.";
+SketcherUI.CATComDYSRelimit.TrimElemForMSel.Message = "選取一條曲線來截斷所有元素";
+SketcherUI.CATComDYSRelimit.LocationForMsel.Message = "按一下來決定要保留的部份";
+SketcherUI.CATComDYSRelimit.SwitchBar.Trim_All.Title = "全部截斷";
+SketcherUI.CATComDYSRelimit.SwitchBar.Trim_All.Help = "全部截斷.";
+SketcherUI.CATComDYSRelimit.SwitchBar.Trim_All.LongHelp = " 截斷所有元素.";
+SketcherUI.CATComDYSRelimit.SwitchBar.Trim_All.ShortHelp = "截斷所有元素";
+SketcherUI.CATComDYSRelimit.SwitchBar.Trim_El1.Title = "截斷第一個元素";
+SketcherUI.CATComDYSRelimit.SwitchBar.Trim_El1.Help = "截斷第一個元素";
+SketcherUI.CATComDYSRelimit.SwitchBar.Trim_El1.LongHelp = "截斷第一個元素";
+SketcherUI.CATComDYSRelimit.SwitchBar.Trim_El1.ShortHelp = "截斷第一個元素";
+SketcherUI.CATComDYSRelimit.NoRelimitation.Title = "截斷";
+SketcherUI.CATComDYSRelimit.NoRelimitation.Message = "無法截斷所選的元素.";
+SketcherUI.CATComDYSRelimit.NonIntersected.Title = "元素沒有相交";
+SketcherUI.CATComDYSRelimit.NonIntersected.Message = "所選元素沒有相交,無法截斷";
+SketcherUI.CATComDYSRelimit.SuperImposed.Title = "已限制的元素";
+SketcherUI.CATComDYSRelimit.SuperImposed.Message = "元素已被限制,無法截斷";
+SketcherUI.CATComDYSRelimit.LengthToDist.Title = "截斷";
+SketcherUI.CATComDYSRelimit.LengthToDist.Message = "無法截斷已標示長度的元素, \n 要將長度轉換成距離嗎? \n";
+SketcherUI.CATComDYSRelimit.CheckMiddlePoint.Title = "截斷";
+SketcherUI.CATComDYSRelimit.CheckMiddlePoint.Message = "此動作後中間點的限制將會被更改. \n 確定要修改嗎 ?";
+
+SketcherUI.CATComDYSQuickTrim.Elem.Message = "選擇曲線形式元素";
+SketcherUI.CATComDYSQuickTrim.SwitchBar.RubberIn.Title = "框選內";
+SketcherUI.CATComDYSQuickTrim.SwitchBar.RubberIn.Help = "刪除所選部份元素";
+SketcherUI.CATComDYSQuickTrim.SwitchBar.RubberIn.LongHelp = "刪除所選部份元素.";
+SketcherUI.CATComDYSQuickTrim.SwitchBar.RubberIn.ShortHelp = "刪除所選部份元素";
+SketcherUI.CATComDYSQuickTrim.SwitchBar.RubberOut.Title = "框選外";
+SketcherUI.CATComDYSQuickTrim.SwitchBar.RubberOut.Help = "保持所選部份元素";
+SketcherUI.CATComDYSQuickTrim.SwitchBar.RubberOut.LongHelp = "保持所選部份元素.";
+SketcherUI.CATComDYSQuickTrim.SwitchBar.RubberOut.ShortHelp = "保持所選部份元素";
+SketcherUI.CATComDYSQuickTrim.SwitchBar.Keep.Title = "保持";
+SketcherUI.CATComDYSQuickTrim.SwitchBar.Keep.Help = "打斷所選部份元素";
+SketcherUI.CATComDYSQuickTrim.SwitchBar.Keep.LongHelp = "打斷所選部份元素.";
+SketcherUI.CATComDYSQuickTrim.SwitchBar.Keep.ShortHelp = "打斷所選部份元素";
+SketcherUI.CATComDYSQuickTrim.LengthToDist.Title = "快速打斷";
+SketcherUI.CATComDYSQuickTrim.LengthToDist.Message = "無法打斷長度元素, \n 要將長度轉變成距離嗎? \n";
+SketcherUI.CATComDYSQuickTrim.CheckMiddlePoint.Title = "快速截斷";
+SketcherUI.CATComDYSQuickTrim.CheckMiddlePoint.Message = "請注意,此動作後中間點的限制將會被更改或刪除. \n 確定要修改嗎 ?";
+
+SketcherUI.CATComDYSClose.Elem.Message = "選擇曲線形式元素";
+
+SketcherUI.CATComDYSComplementary.Elem.Message = "請選擇圓或橢圓的弧";
+
+SketcherUI.CATComDYSCorner.FirstElem.Message = "選擇第一條曲線或共用點.";
+SketcherUI.CATComDYSCorner.SecondElem.Message = "選擇第二條曲線.";
+SketcherUI.CATComDYSCorner.Rubber.Message = "按一下以決定圓角位置.";
+SketcherUI.CATComDYSCorner.Radius.Message = "請輸入圓角半徑.";
+SketcherUI.CATComDYSCorner.SwitchBar.Trim_All.Title = "全部截斷";
+SketcherUI.CATComDYSCorner.SwitchBar.Trim_All.Help = "截斷所有元素";
+SketcherUI.CATComDYSCorner.SwitchBar.Trim_All.LongHelp = "截斷所有元素";
+SketcherUI.CATComDYSCorner.SwitchBar.Trim_All.ShortHelp = "截斷所有元素";
+SketcherUI.CATComDYSCorner.SwitchBar.Trim_El1.Title = "截斷第一個元素";
+SketcherUI.CATComDYSCorner.SwitchBar.Trim_El1.Help = "截斷第一個元素";
+SketcherUI.CATComDYSCorner.SwitchBar.Trim_El1.LongHelp = "截斷第一個元素";
+SketcherUI.CATComDYSCorner.SwitchBar.Trim_El1.ShortHelp = "截斷第一個元素";
+SketcherUI.CATComDYSCorner.SwitchBar.No_Trim.Title = "不截斷";
+SketcherUI.CATComDYSCorner.SwitchBar.No_Trim.Help = "不截斷元素";
+SketcherUI.CATComDYSCorner.SwitchBar.No_Trim.LongHelp = "不截斷元素";
+SketcherUI.CATComDYSCorner.SwitchBar.No_Trim.ShortHelp = "不截斷元素";
+SketcherUI.CATComDYSCorner.SwitchBar.StdLine.Title = "標準線截斷";
+SketcherUI.CATComDYSCorner.SwitchBar.StdLine.Help = "以標準線截斷所有元素";
+SketcherUI.CATComDYSCorner.SwitchBar.StdLine.LongHelp = "以標準線截斷所有元素";
+SketcherUI.CATComDYSCorner.SwitchBar.StdLine.ShortHelp = "標準線截斷";
+SketcherUI.CATComDYSCorner.SwitchBar.ConstrLine.Title = "建構線截斷";
+SketcherUI.CATComDYSCorner.SwitchBar.ConstrLine.Help = "以建構線截斷所有元素";
+SketcherUI.CATComDYSCorner.SwitchBar.ConstrLine.LongHelp = "以建構線截斷所有元素";
+SketcherUI.CATComDYSCorner.SwitchBar.ConstrLine.ShortHelp = "建構線截斷";
+SketcherUI.CATComDYSCorner.SwitchBar.ConstrLineNoTrim.Title = "建構線未截斷";
+SketcherUI.CATComDYSCorner.SwitchBar.ConstrLineNoTrim.Help = "以未截斷建構線截斷所有元素";
+SketcherUI.CATComDYSCorner.SwitchBar.ConstrLineNoTrim.LongHelp = "以未截斷建構線截斷所有元素";
+SketcherUI.CATComDYSCorner.SwitchBar.ConstrLineNoTrim.ShortHelp = "建構線未截斷";
+SketcherUI.CATComDYSCorner.NoRelimitation.Title = "圓角命令";
+SketcherUI.CATComDYSCorner.NoRelimitation.Message = "所選的元素不會被截斷. \n";
+SketcherUI.CATComDYSCorner.LengthToDist.Title = "圓角命令";
+SketcherUI.CATComDYSCorner.FirstLengthToDist.Message = "無法截斷已標示長度的元素, \n 您要將長度轉換成距離嗎? \n";
+SketcherUI.CATComDYSCorner.SecondLengthToDist.Message = "無法截斷已標示長度的元素, \n 您要將長度轉換成距離嗎? \n";
+SketcherUI.CATComDYSCorner.CheckMiddlePoint.Title = "圓角命令";
+SketcherUI.CATComDYSCorner.FirstCheckMiddlePoint.Message = "請注意,此動作後第一個所選元素的中間點限制將會被更改. \n 確定要修改嗎 ?";
+SketcherUI.CATComDYSCorner.SecondCheckMiddlePoint.Message = "請注意,此動作後第二個所選元素的中間點限制將會被更改. \n 確定要修改嗎 ?";
+SketcherUI.CATComDYSCorner.ImpCorner.Title = "圓角命令";
+SketcherUI.CATComDYSCorner.ImpossibleCorner.Message = "無法以此半徑值建立圓角. \n";
+SketcherUI.CATComDYSCorner.SuperImposed.Title = "已限制的元素";
+SketcherUI.CATComDYSCorner.SuperImposed.Message = "元素已被限制,無法建立圓角. \n";
+SketcherUI.CATComDYSCorner.Radius.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "半徑: ";
+SketcherUI.CATComDYSCorner.Radius.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "圓角半徑"; 
+
+SketcherUI.CATComDYSChamfer.FirstElem.Message = "選擇第一條曲線或共用點.";
+SketcherUI.CATComDYSChamfer.SecondElem.Message = "選擇第二條曲線.";
+SketcherUI.CATComDYSChamfer.Rubber.Message = "按一下以決定圓角位置.";
+SketcherUI.CATComDYSChamfer.RubberL1L2.Message = "按一下以決定倒角位置";
+SketcherUI.CATComDYSChamfer.RubberL1Ang.Message = "按一下以決定倒角位置";
+SketcherUI.CATComDYSChamfer.LengthAndAngle.Message = "請輸入長度和角度";
+SketcherUI.CATComDYSChamfer.Length1AndLength2.Message = "請輸入二個長度來定義倒角";
+SketcherUI.CATComDYSChamfer.Length1AndAngle.Message = "請輸入長度和角度來定義倒角";
+SketcherUI.CATComDYSChamfer.SwitchBar.Trim_All.Title = "修剪全部";
+SketcherUI.CATComDYSChamfer.SwitchBar.Trim_All.Help = "修剪全部元素";
+SketcherUI.CATComDYSChamfer.SwitchBar.Trim_All.LongHelp = "修剪所選全部元素.";
+SketcherUI.CATComDYSChamfer.SwitchBar.Trim_All.ShortHelp = "修剪所選全部元素";
+SketcherUI.CATComDYSChamfer.SwitchBar.Trim_El1.Title = "修剪所選第一個元素";
+SketcherUI.CATComDYSChamfer.SwitchBar.Trim_El1.Help = "修剪所選第一個元素";
+SketcherUI.CATComDYSChamfer.SwitchBar.Trim_El1.LongHelp = "只裁剪所選第一個元素.";
+SketcherUI.CATComDYSChamfer.SwitchBar.Trim_El1.ShortHelp = "修剪所選第一個元素";
+SketcherUI.CATComDYSChamfer.SwitchBar.No_Trim.Title = "不修剪";
+SketcherUI.CATComDYSChamfer.SwitchBar.No_Trim.Help = "不修剪元素";
+SketcherUI.CATComDYSChamfer.SwitchBar.No_Trim.LongHelp = "不修剪元素.";
+SketcherUI.CATComDYSChamfer.SwitchBar.No_Trim.ShortHelp = "不修剪";
+SketcherUI.CATComDYSChamfer.SwitchBar.StdLine.Title = "標準線截斷";
+SketcherUI.CATComDYSChamfer.SwitchBar.StdLine.Help = "修剪兩元素直到它們相交處";
+SketcherUI.CATComDYSChamfer.SwitchBar.StdLine.LongHelp = "修剪兩元素直到它們相交處";
+SketcherUI.CATComDYSChamfer.SwitchBar.StdLine.ShortHelp = "標準線截斷";
+SketcherUI.CATComDYSChamfer.SwitchBar.ConstrLine.Title = "建構線截斷";
+SketcherUI.CATComDYSChamfer.SwitchBar.ConstrLine.Help = "以建構線截斷兩元素";
+SketcherUI.CATComDYSChamfer.SwitchBar.ConstrLine.LongHelp = "以建構線截斷兩元素";
+SketcherUI.CATComDYSChamfer.SwitchBar.ConstrLine.ShortHelp = "建構線截斷";
+SketcherUI.CATComDYSChamfer.SwitchBar.ConstrLineNoTrim.Title = "建構線未截斷";
+SketcherUI.CATComDYSChamfer.SwitchBar.ConstrLineNoTrim.Help = "以未截斷建構線截斷所有元素";
+SketcherUI.CATComDYSChamfer.SwitchBar.ConstrLineNoTrim.LongHelp = "以未截斷建構線截斷所有元素";
+SketcherUI.CATComDYSChamfer.SwitchBar.ConstrLineNoTrim.ShortHelp = "建構線未截斷";
+SketcherUI.CATComDYSChamfer.KeyBar.AngleHyp.Title = "角度或斜邊";
+SketcherUI.CATComDYSChamfer.KeyBar.AngleHyp.Help = "定義角度和斜邊";
+SketcherUI.CATComDYSChamfer.KeyBar.AngleHyp.LongHelp = "請定義第一個元素的角度和斜邊";
+SketcherUI.CATComDYSChamfer.KeyBar.AngleHyp.ShortHelp  = "以角度和斜度來定義倒角";
+SketcherUI.CATComDYSChamfer.KeyBar.L1L2.Title = "L1,L2";
+SketcherUI.CATComDYSChamfer.KeyBar.L1L2.Help = "定義 L1 和 L2 長度";
+SketcherUI.CATComDYSChamfer.KeyBar.L1L2.LongHelp = "定義 L1 和 L2 長度來定義倒角";
+SketcherUI.CATComDYSChamfer.KeyBar.L1L2.ShortHelp = "L1 和 L2 定義倒角";
+SketcherUI.CATComDYSChamfer.KeyBar.L1Angle.Title = "L1 和角度";
+SketcherUI.CATComDYSChamfer.KeyBar.L1Angle.Help = "定義 L1 長度和角度";
+SketcherUI.CATComDYSChamfer.KeyBar.L1Angle.LongHelp = "定義以第一個元素 L1 長度和角度";
+SketcherUI.CATComDYSChamfer.KeyBar.L1Angle.ShortHelp = "L1 以角度來定義倒角";
+SketcherUI.CATComDYSChamfer.NoRelimitation.Title = "倒角命令";
+SketcherUI.CATComDYSChamfer.NoRelimitation.Message = "所選元素不會被裁剪.";
+SketcherUI.CATComDYSChamfer.LengthToDist.Title = "倒角命令";
+SketcherUI.CATComDYSChamfer.FirstLengthToDist.Message = "因無法裁剪已定義長度元素，\n 您要將第一個所選元素的長度轉變成距離嗎?";
+SketcherUI.CATComDYSChamfer.SecondLengthToDist.Message = "因無法裁剪已定義長度元素，\n 您要將第一個所選元素的長度轉變成距離嗎?";
+SketcherUI.CATComDYSChamfer.CheckMiddlePoint.Title = "倒角命令";
+SketcherUI.CATComDYSChamfer.FirstCheckMiddlePoint.Message = "請注意,此動作後第一個所選元素的中間點限制將會被更改. \n 確定要修改嗎 ?";
+SketcherUI.CATComDYSChamfer.SecondCheckMiddlePoint.Message = "請注意,此動作後第二個所選元素的中間點限制將會被更改. \n 確定要修改嗎 ?";
+SketcherUI.CATComDYSChamfer.SuperImposed.Title = "強制元素";
+SketcherUI.CATComDYSChamfer.SuperImposed.Message = "所選元素為強制元素，\n 無法建立倒角";
+SketcherUI.CATComDYSChamfer.ImpChamfer.Title = "倒角命令";
+SketcherUI.CATComDYSChamfer.ImpossibleChamfer.Message = "無法以此長度和角度建立倒角.";
+SketcherUI.CATComDYSChamfer.ImpossibleChamferL1L2.Message = "無法以此長度建立倒角.";
+SketcherUI.CATComDYSChamfer.Length.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "長度: ";
+SketcherUI.CATComDYSChamfer.Length.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "倒角的長度";
+SketcherUI.CATComDYSChamfer.Length.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "倒角的長度";
+SketcherUI.CATComDYSChamfer.FirstLength.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "第一長度: ";
+SketcherUI.CATComDYSChamfer.FirstLength.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "第一長度來定義倒角";
+SketcherUI.CATComDYSChamfer.FirstLength.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "沿著第一元素的長度";
+SketcherUI.CATComDYSChamfer.SecondLength.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "第二長度: ";
+SketcherUI.CATComDYSChamfer.SecondLength.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "第二長度來定義倒角";
+SketcherUI.CATComDYSChamfer.SecondLength.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "沿著第二元素的長度";
+SketcherUI.CATComDYSChamfer.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "角度: ";
+SketcherUI.CATComDYSChamfer.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "倒角和第一個元素的夾角";
+SketcherUI.CATComDYSChamfer.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "倒角和第一個元素的夾角";
+
+
+SketcherUI.CATComDYSLine.CreateLine.Message = "選擇一個點或任意按一下來決定起始點";
+SketcherUI.CATComDYSCenterLine.CreateCenterLine.Message = "選擇一個點或任意按一下來決定起始點";
+SketcherUI.CATComDYSCenterLine.ModifyLine.Title = "建立軸";
+SketcherUI.CATComDYSCenterLine.ModifyLine.Message = "所選的線會被轉移至軸. \n 您要移轉這些點? ";
+
+SketcherUI.CATComDYSGenericLine.StartPoint.Message = "任意點選一點做為起始點.";
+SketcherUI.CATComDYSGenericLine.EndPoint.Message = "任意點選一點做為起始點";
+// Gestion Visu Copilote
+SketcherUI.CATComDYSGenericLine.StartPt.Name.Title = "第一點";
+SketcherUI.CATComDYSGenericLine.StartPt.Name.Help = "第一點";
+SketcherUI.CATComDYSGenericLine.StartPt.Name.ShortHelp = "第一點";
+SketcherUI.CATComDYSGenericLine.StartPt.Name.LongHelp = "第一點";
+SketcherUI.CATComDYSGenericLine.StartPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSGenericLine.StartPt.ULabel.ShortHelp = "第一點的水平座標";
+SketcherUI.CATComDYSGenericLine.StartPt.UEditor.ShortHelp = "第一點的水平座標";
+SketcherUI.CATComDYSGenericLine.StartPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSGenericLine.StartPt.VLabel.ShortHelp = "第一點的垂直座標";
+SketcherUI.CATComDYSGenericLine.StartPt.VEditor.ShortHelp = "第一點的垂直座標";
+SketcherUI.CATComDYSGenericLine.StartPt.Length_Label.Title = "L: ";
+SketcherUI.CATComDYSGenericLine.StartPt.Length_Label.ShortHelp = "線段長度";
+SketcherUI.CATComDYSGenericLine.StartPt.Length_Value.ShortHelp = "線段長度";
+SketcherUI.CATComDYSGenericLine.StartPt.Angle_Label.Title = "A: ";
+SketcherUI.CATComDYSGenericLine.StartPt.Angle_Label.ShortHelp= "線段和水平參考線的夾角";
+SketcherUI.CATComDYSGenericLine.StartPt.Angle_Value.ShortHelp= "線段和水平參考線的夾角";
+SketcherUI.CATComDYSGenericLine.EndPt.Name.Title = "第二點: ";
+SketcherUI.CATComDYSGenericLine.EndPt.Name.Help = "第二點";
+SketcherUI.CATComDYSGenericLine.EndPt.Name.ShortHelp = "第二點";
+SketcherUI.CATComDYSGenericLine.EndPt.Name.LongHelp = "第二點";
+SketcherUI.CATComDYSGenericLine.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSGenericLine.EndPt.ULabel.ShortHelp = "請輸入第二點的水平座標.";
+SketcherUI.CATComDYSGenericLine.EndPt.UEditor.ShortHelp = "請輸入第二點的水平座標.";
+SketcherUI.CATComDYSGenericLine.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSGenericLine.EndPt.VLabel.ShortHelp = "請輸入第二點的垂直座標";
+SketcherUI.CATComDYSGenericLine.EndPt.VEditor.ShortHelp = "請輸入第二點的垂直座標";
+SketcherUI.CATComDYSGenericLine.EndPt.Length_Label.Title = "L: ";
+SketcherUI.CATComDYSGenericLine.EndPt.Length_Label.ShortHelp = "線段長度";
+SketcherUI.CATComDYSGenericLine.EndPt.Length_Value.ShortHelp = "線段長度";
+SketcherUI.CATComDYSGenericLine.EndPt.Angle_Label.Title = "A: ";
+SketcherUI.CATComDYSGenericLine.EndPt.Angle_Label.ShortHelp= "線段和水平參考線的夾角";
+SketcherUI.CATComDYSGenericLine.EndPt.Angle_Value.ShortHelp= "線段和水平參考線的夾角";
+
+
+SketcherUI.CATComDYSSpline.FirstPoint.Message = "任意點選雲形線的第一點.";
+SketcherUI.CATComDYSSpline.NextPoint.Message = "點選雲形線的下一點. 連按兩下可結束雲形線定義.";
+// Gestion Visu Copilote
+SketcherUI.CATComDYSSpline.ControlPt.Name.Title = "控制點: ";
+SketcherUI.CATComDYSSpline.ControlPt.Name.Help = "控制點";
+SketcherUI.CATComDYSSpline.ControlPt.Name.ShortHelp = "控制點";
+SketcherUI.CATComDYSSpline.ControlPt.Name.LongHelp = "控制點";
+SketcherUI.CATComDYSSpline.ControlPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSSpline.ControlPt.ULabel.ShortHelp = "控制點的水平座標";
+SketcherUI.CATComDYSSpline.ControlPt.UEditor.ShortHelp = "控制點的水平座標";
+SketcherUI.CATComDYSSpline.ControlPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSSpline.ControlPt.VLabel.ShortHelp = "控制點的垂直座標";
+SketcherUI.CATComDYSSpline.ControlPt.VEditor.ShortHelp = "控制點的垂直座標";
+SketcherUI.CATComDYSSpline.CloseSpline = "Close spline";
+
+SketcherUI.CATComDYSSpline2.FirstPoint.Message = "選擇或按一下雲形線的第一點";
+SketcherUI.CATComDYSSpline2.NextPoint.Message = "選擇或按一下雲形線的第二點. 雙按滑鼠可結束雲形線選取.";
+SketcherUI.CATComDYSSpline2.TangentDir.Message = "選擇或按一下點來定位切線";
+SketcherUI.CATComDYSSpline2.ControlPt.Name.Title = "控制點: ";
+SketcherUI.CATComDYSSpline2.ControlPt.Name.Help = "定義控制點";
+SketcherUI.CATComDYSSpline2.ControlPt.Name.ShortHelp = "控制點";
+SketcherUI.CATComDYSSpline2.ControlPt.Name.LongHelp = "定義控制點座標.";
+SketcherUI.CATComDYSSpline2.ControlPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSSpline2.ControlPt.ULabel.ShortHelp = "控制點的水平座標";
+SketcherUI.CATComDYSSpline2.ControlPt.UEditor.ShortHelp = "控制點的水平座標";
+SketcherUI.CATComDYSSpline2.ControlPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSSpline2.ControlPt.VLabel.ShortHelp = "控制點的垂直座標";
+SketcherUI.CATComDYSSpline2.ControlPt.VEditor.ShortHelp = "控制點的垂直座標";
+SketcherUI.CATComDYSSpline2.TgtCopilot.Name.Title = "點座標: ";
+SketcherUI.CATComDYSSpline2.TgtCopilot.Name.Help = "定義點座標";
+SketcherUI.CATComDYSSpline2.TgtCopilot.Name.ShortHelp = "點座標";
+SketcherUI.CATComDYSSpline2.TgtCopilot.Name.LongHelp = "定義點座標";
+SketcherUI.CATComDYSSpline2.TgtCopilot.ULabel.Title = "H: ";
+SketcherUI.CATComDYSSpline2.TgtCopilot.ULabel.ShortHelp = "點的水平座標";
+SketcherUI.CATComDYSSpline2.TgtCopilot.UEditor.ShortHelp = "點的水平座標";
+SketcherUI.CATComDYSSpline2.TgtCopilot.VLabel.Title = "V: ";
+SketcherUI.CATComDYSSpline2.TgtCopilot.VLabel.ShortHelp = "點的垂直座標";
+SketcherUI.CATComDYSSpline2.TgtCopilot.VEditor.ShortHelp = "點的垂直座標";
+SketcherUI.CATComDYSSpline2.CloseSpline = "封閉雲形線";
+SketcherUI.CATComDYSSpline2.CheckAgent.Check.Title = "連接至限制點";
+SketcherUI.CATComDYSSpline2.CheckAgent.Check.Help = "連接至曲線限制點";
+SketcherUI.CATComDYSSpline2.CheckAgent.Check.LongHelp = "連接至曲線限制點";
+SketcherUI.CATComDYSSpline2.CheckAgent.Check.ShortHelp = "連接至限制點";
+SketcherUI.CATComDYSSpline2.ContinuitySwitchBar.Continuity0.Title = "C0";
+SketcherUI.CATComDYSSpline2.ContinuitySwitchBar.Continuity0.ShortHelp = "點連續";
+SketcherUI.CATComDYSSpline2.ContinuitySwitchBar.Continuity1.Title = "C1";
+SketcherUI.CATComDYSSpline2.ContinuitySwitchBar.Continuity1.ShortHelp = "切線連續";
+SketcherUI.CATComDYSSpline2.ContinuitySwitchBar.Continuity2.Title = "C2";
+SketcherUI.CATComDYSSpline2.ContinuitySwitchBar.Continuity2.ShortHelp = "曲率連續";
+SketcherUI.CATComDYSSpline2.Tension.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "張量: ";
+SketcherUI.CATComDYSSpline2.Tension.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "切線張量";
+SketcherUI.CATComDYSSpline2.TangencyAngle.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "角度: ";
+SketcherUI.CATComDYSSpline2.TangencyAngle.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "切線角度";
+SketcherUI.CATComDYSSpline2.TangencySwitchBar.Parallel.Title = "平行";
+SketcherUI.CATComDYSSpline2.TangencySwitchBar.Parallel.ShortHelp = "平行切線";
+SketcherUI.CATComDYSSpline2.TangencySwitchBar.Perpendicular.Title = "垂直";
+SketcherUI.CATComDYSSpline2.TangencySwitchBar.Perpendicular.ShortHelp = "垂直切線";
+SketcherUI.CATComDYSSpline2.TangencySwitchBar.Horizontal.Title = "水平";
+SketcherUI.CATComDYSSpline2.TangencySwitchBar.Horizontal.ShortHelp = "水平切線";
+SketcherUI.CATComDYSSpline2.TangencySwitchBar.Vertical.Title = "垂直";
+SketcherUI.CATComDYSSpline2.TangencySwitchBar.Vertical.ShortHelp = "垂直切線";
+
+SketcherUI.CATComDYSConnect.FirstElem.Message = "請選擇第一個元素來連接";
+SketcherUI.CATComDYSConnect.SecondElem.Message = "請選擇第二個元素來連接";
+SketcherUI.CATComDYSConnect.SwitchBar.Spline.Title = "曲線連接";
+SketcherUI.CATComDYSConnect.SwitchBar.Spline.Help = "以雲形線連接";
+SketcherUI.CATComDYSConnect.SwitchBar.Spline.LongHelp = "以雲形線連接兩曲線.";
+SketcherUI.CATComDYSConnect.SwitchBar.Spline.ShortHelp = "以雲形線連接兩曲線";
+SketcherUI.CATComDYSConnect.SwitchBar.Circle.Title = "圓弧連接";
+SketcherUI.CATComDYSConnect.SwitchBar.Circle.Help = "以圓弧連接";
+SketcherUI.CATComDYSConnect.SwitchBar.Circle.LongHelp = "以圓弧連接兩曲線.";
+SketcherUI.CATComDYSConnect.SwitchBar.Circle.ShortHelp = "以圓弧連接兩曲線";
+SketcherUI.CATComDYSConnect.ContinuitySwitchBar.Continuity0.Title = "C0";
+SketcherUI.CATComDYSConnect.ContinuitySwitchBar.Continuity0.ShortHelp = "點連續";
+SketcherUI.CATComDYSConnect.ContinuitySwitchBar.Continuity1.Title = "C1";
+SketcherUI.CATComDYSConnect.ContinuitySwitchBar.Continuity1.ShortHelp = "切線連續";
+SketcherUI.CATComDYSConnect.ContinuitySwitchBar.Continuity2.Title = "C2";
+SketcherUI.CATComDYSConnect.ContinuitySwitchBar.Continuity2.ShortHelp = "曲率連續";
+SketcherUI.CATComDYSConnect.Tension.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "張力: ";
+SketcherUI.CATComDYSConnect.Tension.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "切線張力"; 
+SketcherUI.CATComDYSConnect.NoSolution.Title   = "連接";
+SketcherUI.CATComDYSConnect.NoSolution.Message = "所選兩元素無法建立連接曲線. \n\n 提醒 : 所選的點位很重要 : \n 所建立的連接曲線由點位所決定. \n 切線和端點需離您所選的元素越近越好.";
+
+SketcherUI.CATComEdit2DConnect.ErrorPoint.Title="警告";
+SketcherUI.CATComEdit2DConnect.ErrorPoint.Message = "點必須屬於曲線或將屬於曲線.";
+
+SketcherUI.CATComEdit2DConnect.DefinitionConnectCurve.Message="選擇欄位來修改連接曲線的位置";
+SketcherUI.CATComEdit2DConnect.SelectionFirstPoint.Message="選擇或按一下點來決定連接曲線的第一個結束點位置";
+SketcherUI.CATComEdit2DConnect.SelectionSecondPoint.Message="選擇或按一下點來決定連接曲線的第二個結束點位置";
+SketcherUI.CATComEdit2DConnect.SelectionFirstCurve.Message="選擇曲線來決定連接曲線的第一個結束點的曲率切線";
+SketcherUI.CATComEdit2DConnect.SelectionSecondCurve.Message="選擇曲線來決定連接曲線的第二個結束點的曲率切線";
+
+SketcherUI.CATComDYSCircleCtrRds.CreateCircle.Message = "任意點選一點定義圓心.";
+SketcherUI.CATComDYSArcCtrRds.CreateArc.Message = "任意點選一點定義圓心.";
+SketcherUI.CATComDYSArcCtrRds.ArcCmd.Center.Name.Title = "弧心 : ";
+// ------------------------------------------------------------------------------------------------------------------
+// Cercle ferme Centre + Rayon
+SketcherUI.CATComDYSGenericCircleCtrRds.SetCenter.Message = "任意點選一點定義圓心.";
+SketcherUI.CATComDYSGenericCircleCtrRds.SetRadius.Message = "任意點選一點定義圓心.";
+// Copilot
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.Name.Title = "圓心: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.Name.Help = "請輸入圓心座標";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.Name.ShortHelp = "圓心: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.Name.LongHelp = "圓心: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.ULabel.Title = "H: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.ULabel.ShortHelp = "圓心的水平座標";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.UEditor.ShortHelp = "圓心的水平座標";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.VLabel.Title = "V: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.VLabel.ShortHelp = "圓心的垂直座標";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.VEditor.ShortHelp = "圓心的垂直座標";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.Radius_Label.Title = "R: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.Radius_Label.ShortHelp = "圓徑";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.Radius_Value.ShortHelp = "圓徑";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.StartAngle_Label.Title = "A: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.StartAngle_Label.ShortHelp= "圓弧起始點和水平參考線的夾角";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.StartAngle_Value.ShortHelp= "圓弧起始點和水平參考線的夾角";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.SectorAngle_Label.Title = "S: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.SectorAngle_Label.ShortHelp= "以角度為方向";
+SketcherUI.CATComDYSGenericCircleCtrRds.Center.SectorAngle_Value.ShortHelp= "以角度為方向";
+SketcherUI.CATComDYSGenericCircleCtrRds.Radius.Name.Title = "位於圓上的點: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.Radius.Name.Help = "位於圓上的點的座標: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.Radius.Name.ShortHelp = "位於圓上的點: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.Radius.Name.LongHelp = "位於圓上的點: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.Radius.ULabel.Title = "H: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.Radius.UName.ShortHelp = "無用的值";
+SketcherUI.CATComDYSGenericCircleCtrRds.Radius.UEditor.ShortHelp = "無用的值";
+SketcherUI.CATComDYSGenericCircleCtrRds.Radius.VLabel.Title = "V: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.Radius.VName.ShortHelp = "無用的值";
+SketcherUI.CATComDYSGenericCircleCtrRds.Radius.VEditor.ShortHelp = "無用的值";
+SketcherUI.CATComDYSGenericCircleCtrRds.Radius.Radius_Label.Title = "R: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.Radius.Radius_Label.ShortHelp = "圓徑";
+SketcherUI.CATComDYSGenericCircleCtrRds.Radius.Radius_Value.ShortHelp = "圓徑";
+// ------------------------------------------------------------------------------------------------------------------
+// Arc relimite Centre + Rayon
+SketcherUI.CATComDYSGenericCircleCtrRds.SetArcStart.Message = "任意點選一點定義圓徑及圓弧起始點.";
+SketcherUI.CATComDYSGenericCircleCtrRds.SetArcEnd.Message = "移動游標來點選圓弧終點.";
+// Copilot
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.Name.Title = "起始點: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.Name.Help = "圓弧起始點的座標: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.Name.ShortHelp = "起始點: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.Name.LongHelp = "起始點: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.ULabel.Title = "H: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.UName.ShortHelp = "圓弧起始點的水平座標";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.UEditor.ShortHelp = "圓弧起始點的水平座標";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.VLabel.Title = "V: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.VName.ShortHelp = "圓弧起始點的垂直座標";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.VEditor.ShortHelp = "圓弧起始點的垂直座標";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.Radius_Label.Title = "R: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.Radius_Label.ShortHelp = "圓徑";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.Radius_Value.ShortHelp = "圓徑";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.StartAngle_Label.Title = "A: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.StartAngle_Label.ShortHelp= "圓弧起始點和水平參考線的夾角";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.StartAngle_Value.ShortHelp= "圓弧起始點和水平參考線的夾角";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.SectorAngle_Label.Title = "S: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.SectorAngle_Label.ShortHelp= "以角度為方向";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcStart.SectorAngle_Value.ShortHelp= "以角度為方向";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.Name.Title = "終點: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.Name.Help = "圓弧終點座標: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.Name.ShortHelp = "終點: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.Name.LongHelp = "終點: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.ULabel.Title = "H: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.UName.ShortHelp = "圓弧終點的水平座標";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.UEditor.ShortHelp = "圓弧終點的水平座標";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.VLabel.Title = "V: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.VName.ShortHelp = "圓弧終點的垂直座標";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.VEditor.ShortHelp = "圓弧終點的垂直座標";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.Radius_Label.Title = "R: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.Radius_Label.ShortHelp = "圓徑";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.Radius_Value.ShortHelp = "圓徑";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.StartAngle_Label.Title = "A: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.StartAngle_Label.ShortHelp= "圓弧起始點和水平參考線的夾角";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.StartAngle_Value.ShortHelp= "圓弧起始點和水平參考線的夾角";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.SectorAngle_Label.Title = "S: ";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.SectorAngle_Label.ShortHelp= "以角度為方向";
+SketcherUI.CATComDYSGenericCircleCtrRds.ArcEnd.SectorAngle_Value.ShortHelp= "以角度為方向";
+// ------------------------------------------------------------------------------------------------------------------
+
+
+SketcherUI.CATComDYSCircle3Pts.CreateCircle.Message = "任意點選一點做為圓的起始點";
+SketcherUI.CATComDYSCircle3Pts.CircleCmd.StartPt.Name.Title = "第一點: ";
+SketcherUI.CATComDYSCircle3Pts.CircleCmd.EndPt.Name.Title = "最後一點: ";
+SketcherUI.CATComDYSArc3Pts.CreateArc.Message = "任意點選一點做為圓弧的起始點";
+SketcherUI.CATComDYSArc3Pts.ArcCmd.SecondPoint.Message = "任意點選第二點做為圓弧會經過的點";
+SketcherUI.CATComDYSArc3Pts.ArcCmd.ThirdPoint.Message = "任意點選第三點做為圓的終點";
+SketcherUI.CATComDYSArc3Pts.ArcCmd.StartPt.Radius_Label.ShortHelp = "圓弧半徑";
+SketcherUI.CATComDYSArc3Pts.ArcCmd.StartPt.Radius_Value.ShortHelp = "圓弧半徑";
+SketcherUI.CATComDYSArc3Pts.ArcCmd.MidPt.Radius_Label.ShortHelp = "圓弧半徑";
+SketcherUI.CATComDYSArc3Pts.ArcCmd.MidPt.Radius_Value.ShortHelp = "圓弧半徑";
+SketcherUI.CATComDYSArc3Pts.ArcCmd.EndPt.Radius_Label.ShortHelp = "圓弧半徑";
+SketcherUI.CATComDYSArc3Pts.ArcCmd.EndPt.Radius_Value.ShortHelp = "圓弧半徑";
+SketcherUI.CATComDYSArc3Pts132.CreateArc.Message = "任意點選一點做為圓的起始點";
+SketcherUI.CATComDYSArc3Pts132.ArcCmd.SecondPoint.Message = "任意點選第三點做為圓的終點";
+SketcherUI.CATComDYSArc3Pts132.ArcCmd.ThirdPoint.Message = "任意點選第二點做為圓弧會經過的點";
+SketcherUI.CATComDYSArc3Pts132.ArcCmd.StartPt.Radius_Label.ShortHelp = "圓弧半徑";
+SketcherUI.CATComDYSArc3Pts132.ArcCmd.StartPt.Radius_Value.ShortHelp = "圓弧半徑";
+SketcherUI.CATComDYSArc3Pts132.ArcCmd.MidPt.Radius_Label.ShortHelp = "圓弧半徑";
+SketcherUI.CATComDYSArc3Pts132.ArcCmd.MidPt.Radius_Value.ShortHelp = "圓弧半徑";
+SketcherUI.CATComDYSArc3Pts132.ArcCmd.EndPt.Radius_Label.ShortHelp = "圓弧半徑";
+SketcherUI.CATComDYSArc3Pts132.ArcCmd.EndPt.Radius_Value.ShortHelp = "圓弧半徑";
+
+SketcherUI.CATComDYSGenericCircle3Pts.FirstPoint.Message = "任意點選一點做為圓的起始點";
+SketcherUI.CATComDYSGenericCircle3Pts.SecondPoint.Message = "任意點選第二點做為圓弧會經過的點";
+SketcherUI.CATComDYSGenericCircle3Pts.ThirdPoint.Message = "任意點選第三點做為圓的終點";
+SketcherUI.CATComDYSGenericCircle3Pts.StartPt.Name.Title = "起始點: ";
+SketcherUI.CATComDYSGenericCircle3Pts.StartPt.Name.Help = "起始點";
+SketcherUI.CATComDYSGenericCircle3Pts.StartPt.Name.ShortHelp = "起始點";
+SketcherUI.CATComDYSGenericCircle3Pts.StartPt.Name.LongHelp = "定義圓的起始點.";
+SketcherUI.CATComDYSGenericCircle3Pts.StartPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSGenericCircle3Pts.StartPt.ULabel.ShortHelp = "第一點的水平座標.";
+SketcherUI.CATComDYSGenericCircle3Pts.StartPt.UEditor.ShortHelp = "第一點的水平座標.";
+SketcherUI.CATComDYSGenericCircle3Pts.StartPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSGenericCircle3Pts.StartPt.VLabel.ShortHelp = "第一點的垂直座標.";
+SketcherUI.CATComDYSGenericCircle3Pts.StartPt.VEditor.ShortHelp = "第一點的垂直座標.";
+SketcherUI.CATComDYSGenericCircle3Pts.StartPt.Radius_Label.Title = "R: ";
+SketcherUI.CATComDYSGenericCircle3Pts.StartPt.Radius_Label.ShortHelp = "圓徑";
+SketcherUI.CATComDYSGenericCircle3Pts.StartPt.Radius_Value.ShortHelp = "圓徑";
+SketcherUI.CATComDYSGenericCircle3Pts.MidPt.Name.Title = "第二點: ";
+SketcherUI.CATComDYSGenericCircle3Pts.MidPt.Name.Help = "第二點";
+SketcherUI.CATComDYSGenericCircle3Pts.MidPt.Name.ShortHelp = "第二點";
+SketcherUI.CATComDYSGenericCircle3Pts.MidPt.Name.LongHelp = "請輸入第二點的水平座標";
+SketcherUI.CATComDYSGenericCircle3Pts.MidPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSGenericCircle3Pts.MidPt.ULabel.ShortHelp = "請輸入第二點的水平座標.";
+SketcherUI.CATComDYSGenericCircle3Pts.MidPt.UEditor.ShortHelp = "請輸入第二點的水平座標.";
+SketcherUI.CATComDYSGenericCircle3Pts.MidPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSGenericCircle3Pts.MidPt.VLabel.ShortHelp = "請輸入第二點的垂直座標.";
+SketcherUI.CATComDYSGenericCircle3Pts.MidPt.VEditor.ShortHelp = "請輸入第二點的垂直座標.";
+SketcherUI.CATComDYSGenericCircle3Pts.MidPt.Radius_Label.Title = "R: ";
+SketcherUI.CATComDYSGenericCircle3Pts.MidPt.Radius_Label.ShortHelp = "圓徑";
+SketcherUI.CATComDYSGenericCircle3Pts.MidPt.Radius_Value.ShortHelp = "圓徑";
+SketcherUI.CATComDYSGenericCircle3Pts.EndPt.Name.Title = "終點: ";
+SketcherUI.CATComDYSGenericCircle3Pts.EndPt.Name.Help = "終點";
+SketcherUI.CATComDYSGenericCircle3Pts.EndPt.Name.ShortHelp = "終點";
+SketcherUI.CATComDYSGenericCircle3Pts.EndPt.Name.LongHelp = "終點";
+SketcherUI.CATComDYSGenericCircle3Pts.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSGenericCircle3Pts.EndPt.ULabel.ShortHelp = "請輸入圓弧終點的水平座標.";
+SketcherUI.CATComDYSGenericCircle3Pts.EndPt.UEditor.ShortHelp = "請輸入圓弧終點的水平座標.";
+SketcherUI.CATComDYSGenericCircle3Pts.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSGenericCircle3Pts.EndPt.VLabel.ShortHelp = "請輸入圓弧終點的垂直座標.";
+SketcherUI.CATComDYSGenericCircle3Pts.EndPt.VEditor.ShortHelp = "請輸入圓弧終點的垂直座標.";
+SketcherUI.CATComDYSGenericCircle3Pts.EndPt.Radius_Label.Title = "R: ";
+SketcherUI.CATComDYSGenericCircle3Pts.EndPt.Radius_Label.ShortHelp = "圓徑";
+SketcherUI.CATComDYSGenericCircle3Pts.EndPt.Radius_Value.ShortHelp = "圓徑";
+
+/// Creation Ellipse V2.0
+SketcherUI.CATComDYSEllipseCtrRds.Center.Message = "任意點選一點定義橢圓中心.";
+SketcherUI.CATComDYSEllipseCtrRds.MajorRadius.Message = "任意點選一點定義橢圓主要軸向及方向.";
+SketcherUI.CATComDYSEllipseCtrRds.MinorRadius.Message = "任意點選一點定義橢圓上的一點.";
+// Gestion Visu Copilote
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.Name.Title = "橢圓中心: ";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.Name.Help = "標示橢圓中心";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.Name.ShortHelp = "橢圓中心";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.Name.LongHelp = "標示橢圓中心.";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.ULabel.ShortHelp = "橢圓中心的水平座標";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.UEditor.ShortHelp = "橢圓中心的水平座標";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.VLabel.ShortHelp = "橢圓中心的垂直座標";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.VEditor.ShortHelp = "橢圓中心的垂直座標";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.MajorRadius_Label.Title = "主要圓徑: ";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.MajorRadius_Label.ShortHelp = "主要圓徑";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.MajorRadius_Value.ShortHelp = "主要圓徑";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.MinorRadius_Label.Title = "次要圓徑: ";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.MinorRadius_Label.ShortHelp = "次要圓徑";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.MinorRadius_Value.ShortHelp = "次要圓徑";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.Angle_Label.Title = "A: ";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.Angle_Label.ShortHelp = "方向性";
+SketcherUI.CATComDYSEllipseCtrRds.FirstPt.Angle_Value.ShortHelp = "方向性";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.Name.Title = "主要軸向終點:  ";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.Name.Help = "標示主要軸向終點";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.Name.ShortHelp = "主要軸向終點";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.Name.LongHelp = "標示主要軸向終點";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.ULabel.ShortHelp = "請輸入主要軸向終點的水平座標.";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.UEditor.ShortHelp = "請輸入主要軸向終點的水平座標.";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.VLabel.ShortHelp = "請輸入主要軸向終點的垂直座標.";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.VEditor.ShortHelp = "請輸入主要軸向終點的垂直座標.";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.MajorRadius_Label.Title = "主要圓徑: ";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.MajorRadius_Label.ShortHelp = "主要圓徑";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.MajorRadius_Value.ShortHelp = "主要圓徑";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.MinorRadius_Label.Title = "次要圓徑: ";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.MinorRadius_Label.ShortHelp = "次要圓徑";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.MinorRadius_Value.ShortHelp = "次要圓徑";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.Angle_Label.Title = "A: ";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.Angle_Label.ShortHelp = "方向性";
+SketcherUI.CATComDYSEllipseCtrRds.SecondPt.Angle_Value.ShortHelp = "方向性";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.Name.Title = "次要軸向終點: ";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.Name.Help = "標示次要軸向終點";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.Name.ShortHelp = "次要軸向終點";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.Name.LongHelp = "標示次要軸向終點";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.ULabel.ShortHelp = "該點的水平座標";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.UEditor.ShortHelp = "該點的水平座標";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.VLabel.ShortHelp = "該點的垂直座標";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.VEditor.ShortHelp = "該點的垂直座標";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.MajorRadius_Label.Title = "主要圓徑: ";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.MajorRadius_Label.ShortHelp = "主要圓徑";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.MajorRadius_Value.ShortHelp = "主要圓徑";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.MinorRadius_Label.Title = "次要圓徑: ";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.MinorRadius_Label.ShortHelp = "次要圓徑";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.MinorRadius_Value.ShortHelp = "次要圓徑";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.Angle_Label.Title = "A: ";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.Angle_Label.ShortHelp = "方向性";
+SketcherUI.CATComDYSEllipseCtrRds.ThirdPt.Angle_Value.ShortHelp = "方向性";
+
+
+SketcherUI.CATComDYSBreak.FirstElem.Message = "選擇將被截斷的點或共用點.";
+SketcherUI.CATComDYSBreak.SecondElem.Message = "選擇截斷元素.";
+SketcherUI.CATComDYSBreak.LengthToDist.Title = "截斷";
+SketcherUI.CATComDYSBreak.LengthToDist.Message = "無法截斷已標示尺寸的元素, \n 您要將長度轉換成距離嗎? \n";
+SketcherUI.CATComDYSBreak.CheckMiddlePoint.Title = "截斷";
+SketcherUI.CATComDYSBreak.CheckMiddlePoint.Message = "請注意,此動作後中間點的限制將會被更改或刪除. \n 確定要修改嗎 ?";
+SketcherUI.CATComDYSBreak.Explode.Title = "截斷";
+SketcherUI.CATComDYSBreak.Explode1.Message = "所有選擇的點將會無關聯性. \n";
+SketcherUI.CATComDYSBreak.Explode.Message = "所有選擇的點將會無關聯性. \n";
+
+
+SketcherUI.CATComDYSUseEdge.SelElem.Message = "與草圖平面相交的立體元素";
+SketcherUI.CATComDYSUseEdge.NoIntBox.Title = "與草圖平面相交";
+SketcherUI.CATComDYSUseEdge.NoInt.Message = "與草圖平面相交失敗: \n 相交不存在. \n";
+SketcherUI.CATComDYSUseEdge.PartialInt.Message = "警告: 只有與草圖平面相交的元素才有關聯性. (無關聯性的元素數量有=  ";
+SketcherUI.CATComDYSUseEdge.NoAssInt.Message = "警告: 只有與草圖平面相交的元素才有關聯性. (無關聯性的元素數量有= ";
+
+
+SketcherUI.CATComDYSUseEdgeProj.SelElem.Message = "選取您想要投影至草圖平面的立體元素.";
+SketcherUI.CATComDYSUseEdgeProj.NoProjBox.Title = "投影至草圖平面";
+SketcherUI.CATComDYSUseEdgeProj.NoProj.Message = "投影至草圖平面失敗: \n 所選元素無法投影 \n";
+SketcherUI.CATComDYSUseEdgeProj.PartialProj.Message = "警告: 只有可投影至草圖平面的元素才有關聯性. (無關聯性的元素數量有= ";
+SketcherUI.CATComDYSUseEdgeProj.NoAssProj.Message = "警告: 只有可投影至草圖平面的元素才有關聯性. (無關聯性的元素數量有= ";
+
+SketcherUI.CATComDYSUseEdgeSilh.SelElem.Message = "選擇您要投影至草圖的曲面側邊";
+SketcherUI.CATComDYSUseEdgeSilh.NoProjBox.Title = "投影至草圖的立體元素側邊";
+SketcherUI.CATComDYSUseEdgeSilh.NoProj.Message = "投影至草圖的立體元素側邊失敗: \n 所選曲面無法投影 \n";
+SketcherUI.CATComDYSUseEdgeSilh.PartialProj.Message = "警告 : 只有投影至草圖的立體元素側邊才相關. (不相關的元素數目為 = ";
+SketcherUI.CATComDYSUseEdgeSilh.NoAssProj.Message = "警告 : 投影至草圖的立體元素側邊不相關. (不相關的元素為 = ";
+
+SketcherUI.CATComDYSPoint.PointCreation.Message = "按一下來產生點.";
+SketcherUI.CATComDYSPoint.Point.Name.Title = "點座標: ";
+SketcherUI.CATComDYSPoint.Point.ULabel.Title = "H: ";
+SketcherUI.CATComDYSPoint.Point.ULabel.ShortHelp = "請輸入該點的水平座標.";
+SketcherUI.CATComDYSPoint.Point.UEditor.ShortHelp = "請輸入該點的水平座標.";
+SketcherUI.CATComDYSPoint.Point.VLabel.Title = "V: ";
+SketcherUI.CATComDYSPoint.Point.VLabel.ShortHelp = "請輸入該點的垂直座標.";
+SketcherUI.CATComDYSPoint.Point.VEditor.ShortHelp = "請輸入該點的垂直座標.";
+SketcherUI.CATComDYSPoint.Barycenter.Title = "建立等間距中心";
+SketcherUI.CATComDYSPoint.Barycenter.Message = "建立與所選點群的等間距中心點. \n 確定要建立此點嗎 ?";
+
+
+SketcherUI.2DElementType.Construction.Title = "建構元素";
+
+SketcherUI.2DPointPanel.Title = "點的定義";
+
+SketcherUI.2DPointEditor.CartesianPage.Title = "直角座標";
+SketcherUI.2DPointEditor.CartesianPage.Help = "標示該點的座標.";
+SketcherUI.2DPointEditor.CartesianPage.LongHelp = "標示該點的座標.";
+SketcherUI.2DPointEditor.CartesianPage.H_Length.Title  = "H:";
+SketcherUI.2DPointEditor.CartesianPage.X.Spinner.Title = "H";
+SketcherUI.2DPointEditor.CartesianPage.V_Length.Title  = "V:";
+SketcherUI.2DPointEditor.CartesianPage.Y.Spinner.Title = "V";
+SketcherUI.2DPointEditor.PolarPage.Title = "極座標";
+SketcherUI.2DPointEditor.PolarPage.Help = "標示該點的極座標.";
+SketcherUI.2DPointEditor.PolarPage.LongHelp = "標示該點的極座標.";
+SketcherUI.2DPointEditor.PolarPage.Radius_Length.Title  = "圓徑:";
+SketcherUI.2DPointEditor.PolarPage.Radius.Spinner.Title = "圓徑";
+SketcherUI.2DPointEditor.PolarPage.Alpha_Angle.Title    = "角度:";
+SketcherUI.2DPointEditor.PolarPage.Angle.Spinner.Title  = "角度";
+
+SketcherUI.2DDirectionEditor.Length.Title         = "長度: ";
+SketcherUI.2DDirectionEditor.Length.Spinner.Title = "長度";
+SketcherUI.2DDirectionEditor.Angle.Title          = "角度:  ";
+SketcherUI.2DDirectionEditor.Angle.Spinner.Title  = "角度";
+
+
+SketcherUI.CATComEdit2DCircle.PanelState.Message = "請輸入圓的定義.";
+SketcherUI.2DCirclePanel.Title = "圓的定義";
+SketcherUI.2DCirclePanel.Center.Title = "圓心";
+SketcherUI.2DCirclePanel.Radius_Length.Title = "圓徑: ";
+SketcherUI.2DCirclePanel.CircleRadius.Spinner.Title = "圓徑";
+
+SketcherUI.CATComEdit2DEllipse.PanelState.Message = "請輸入橢圓的定義.";
+
+SketcherUI.2DEllipsePanel.Title = "橢圓的定義";
+SketcherUI.2DEllipsePanel.Center.Title = "圓心";
+SketcherUI.2DEllipsePanel.MajorRadius_Length.Title = "主要圓徑: ";
+SketcherUI.2DEllipsePanel.EllipseMajorRadius.Spinner.Title = "主要圓徑";
+SketcherUI.2DEllipsePanel.MinorRadius_Length.Title = "次要圓徑: ";
+SketcherUI.2DEllipsePanel.EllipseMinorRadius.Spinner.Title = "次要圓徑";
+SketcherUI.2DEllipsePanel.Alpha_Angle.Title = "角度: ";
+SketcherUI.2DEllipsePanel.Angle.Spinner.Title = "角度";
+
+
+SketcherUI.CATComEdit2DLine.PanelState.Message = "請輸入線的定義";
+SketcherUI.CATComEdit2DLine.ErrorModif.Title   = "無效值";
+SketcherUI.CATComEdit2DLine.ErrorModif.Message = "所附與的幾何限制依附在此線上 \n 請勿輸入此特殊值. \n 增加或移除此限制來修改此線.";
+
+SketcherUI.CATComEdit2DParabola.PanelState.Message = "請輸入拋物線的定義";
+SketcherUI.CATComEdit2DParabola.ErrorModif.Title   = "無效值";
+SketcherUI.CATComEdit2DParabola.ErrorModif.Message = "請輸入不同的拋物線焦點或頂點.";
+
+SketcherUI.CATComEdit2DHyperbola.PanelState.Message = "請輸入雙曲線的定義";
+SketcherUI.CATComEdit2DHyperbola.ErrorModif.Title   = "無效值";
+SketcherUI.CATComEdit2DHyperbola.ErrorModif.Message = "請輸入不同的拋物線焦點或頂點.";
+
+SketcherUI.2DLinePanel.Title = "線的定義";
+SketcherUI.2DLinePanel.StartPoint.Title = "終點 1";
+SketcherUI.2DLinePanel.EndPoint.Title = "終點 2";
+SketcherUI.2DLinePanel.Parameters.Title = "參數";
+
+SketcherUI.CATComEdit2DPoint.PanelState.Message  = "請輸入新點的座標.";
+
+SketcherUI.CATComEdit2DSpline.PanelState.Message  = "選取控制點,如有需要也可設定相切和曲率半徑或移除它";
+SketcherUI.CATComEdit2DSpline.SelNewPoint.Message  = "選取所需的新控制點";
+
+SketcherUI.2DCstPointPanel.Title = "控制點定義";
+SketcherUI.2DCstPointPanel.PanelState.Message  = "請輸入新點的座標,需要時也可設定相切條件";
+SketcherUI.2DCstPointPanel.2DCstPointEditor.Help = "點";
+SketcherUI.2DCstPointPanel.2DCstPointEditor.LongHelp = "點";
+
+SketcherUI.Editor2DCstTangent.TangentImposition.Title = "相切";
+SketcherUI.Editor2DCstTangent.TangentImposition.Help = "強制相切.";
+SketcherUI.Editor2DCstTangent.TangentImposition.LongHelp = "強制相切.";
+SketcherUI.Editor2DCstTangent.InvertTangent.Title = "逆轉相切";
+SketcherUI.Editor2DCstTangent.InvertTangent.Help = "逆轉相切";
+SketcherUI.Editor2DCstTangent.InvertTangent.LongHelp = "逆轉相切方向.";
+SketcherUI.Editor2DCstTangent.CurvatureImposition.Title = "曲率半徑:";
+SketcherUI.Editor2DCstTangent.CurvatureImposition.Help = "強制曲率";
+SketcherUI.Editor2DCstTangent.CurvatureImposition.LongHelp = "強制曲率.";
+
+
+SketcherUI.CATComDYSCircleXYRds.CircleData.Message = "請輸入圓心的絕對座標,也可先選一參考點.";
+SketcherUI.CATComDYSCircleXYRds.CircleDataWithRef.Message = "請輸入圓心的絕對座標,也可先選一參考點.";
+
+SketcherUI.CATComDYSPointXY.PointData.Message = "請輸入新點的絕對座標,也可先選一參考點.";
+SketcherUI.CATComDYSPointXY.PointDataWithRef.Message = "請輸入新點的絕對座標,也可先選一參考點.";
+
+SketcherUI.3DPointPanel.Title = "點 定義";
+
+SketcherUI.3DPointEditor.CartesianPage.Title = "直角座標";
+SketcherUI.3DPointEditor.CartesianPage.Help = "標示該點的座標.";
+SketcherUI.3DPointEditor.CartesianPage.LongHelp = "標示該點的座標.";
+SketcherUI.3DPointEditor.CartesianPage.X_Length.Title  = "x:     ";
+SketcherUI.3DPointEditor.CartesianPage.X.Spinner.Title = "x";
+SketcherUI.3DPointEditor.CartesianPage.Y_Length.Title  = "y:     ";
+SketcherUI.3DPointEditor.CartesianPage.Y.Spinner.Title = "y";
+SketcherUI.3DPointEditor.CartesianPage.Z_Length.Title  = "z:     ";
+SketcherUI.3DPointEditor.CartesianPage.Z.Spinner.Title = "z";
+SketcherUI.3DPointEditor.CylindricalPage.Title = "圓柱";
+SketcherUI.3DPointEditor.CylindricalPage.Help = "標示圓柱基點的座標.";
+SketcherUI.3DPointEditor.CylindricalPage.LongHelp = "標示圓柱基點的座標.";
+SketcherUI.3DPointEditor.CylindricalPage.Radius_Length.Title  = "圓徑:";
+SketcherUI.3DPointEditor.CylindricalPage.Radius.Spinner.Title = "圓徑";
+SketcherUI.3DPointEditor.CylindricalPage.Theta_Angle.Title    = "Theta: ";
+SketcherUI.3DPointEditor.CylindricalPage.Theta.Spinner.Title  = "Theta";
+SketcherUI.3DPointEditor.CylindricalPage.Height_Length.Title  = "高度:";
+SketcherUI.3DPointEditor.CylindricalPage.Height.Spinner.Title = "高度";
+SketcherUI.3DPointEditor.SphericalPage.Title = "球狀";
+SketcherUI.3DPointEditor.SphericalPage.Help = "標示球狀基點的座標.";
+SketcherUI.3DPointEditor.SphericalPage.LongHelp = "標示球狀基點的座標.";
+SketcherUI.3DPointEditor.SphericalPage.Radius_Length.Title  = "圓徑:";
+SketcherUI.3DPointEditor.SphericalPage.Radius.Spinner.Title = "圓徑";
+SketcherUI.3DPointEditor.SphericalPage.Theta_Angle.Title    = "Theta: ";
+SketcherUI.3DPointEditor.SphericalPage.Theta.Spinner.Title  = "Theta";
+SketcherUI.3DPointEditor.SphericalPage.Phi_Angle.Title      = "Phi:   ";
+SketcherUI.3DPointEditor.SphericalPage.Phi.Spinner.Title    = "Phi";
+
+SketcherUI.CATComEdit3DLine.PanelState.Message  = "更改線的定義.";
+
+SketcherUI.CATComEdit3DPlane.PanelState.Message = "更改面的定義.";
+
+SketcherUI.CATComEdit3DPoint.PanelState.Message = "輸入點的座標.";
+
+SketcherUI.3DPlanePanel.Title = "面的定義";
+SketcherUI.3DPlanePanel.Origin.Title = "原點";
+SketcherUI.3DPlanePanel.Origin.Help = "原點";
+SketcherUI.3DPlanePanel.Origin.LongHelp = "原點";
+SketcherUI.3DPlanePanel.Normal.Title = "垂直";
+SketcherUI.3DPlanePanel.Normal.Help = "垂直";
+SketcherUI.3DPlanePanel.Normal.LongHelp = "垂直";
+SketcherUI.3DPlanePanel.Normal.X_Vector.Title = "x:";
+SketcherUI.3DPlanePanel.Normal.UxValue.Title  = "Nx";
+SketcherUI.3DPlanePanel.Normal.Y_Vector.Title = "y:";
+SketcherUI.3DPlanePanel.Normal.UyValue.Title  = "Ny";
+SketcherUI.3DPlanePanel.Normal.Z_Vector.Title = "z:";
+SketcherUI.3DPlanePanel.Normal.UzValue.Title  = "Nz";
+
+SketcherUI.3DLinePanel.Title = "線的定義";
+SketcherUI.3DLinePanel.Origin.Title = "原點";
+SketcherUI.3DLinePanel.Origin.Help = "標示線的原點.";
+SketcherUI.3DLinePanel.Origin.LongHelp = "標示線的原點.";
+SketcherUI.3DLinePanel.Direction.Title = "方向";
+SketcherUI.3DLinePanel.Direction.Help = "標示線的方向.";
+SketcherUI.3DLinePanel.Direction.LongHelp = "標示線的方向.";
+SketcherUI.3DLinePanel.Direction.X_Vector.Title = "x:";
+SketcherUI.3DLinePanel.Direction.UxValue.Title  = "Dx";
+SketcherUI.3DLinePanel.Direction.Y_Vector.Title = "y:";
+SketcherUI.3DLinePanel.Direction.UyValue.Title  = "Dy";
+SketcherUI.3DLinePanel.Direction.Z_Vector.Title = "z:";
+SketcherUI.3DLinePanel.Direction.UzValue.Title  = "Dz";
+
+// Symmetry Command
+SketcherUI.CATComDYSSymmetry.ElementMirror.Message = "選擇要以對稱來複製的元素組合";
+SketcherUI.CATComDYSSymmetry.ElementSymmetry.Message = "選擇要對稱的元素組";
+SketcherUI.CATComDYSSymmetry.Symmetry.Message = "選取可讓所有元素等距離的線或軸.";
+
+// Isolate Command
+SketcherUI.CATComDYSIsolate.GetImportedGeometry.Message = "選取您想要去掉關聯性的相交或投影元素.";
+SketcherUI.CATComDYSIsolate.RerouteNeeded.Title   = "警告: 也許需要重新程序";
+SketcherUI.CATComDYSIsolate.RerouteNeeded.Message = "相關獨立元素的規格可能須重新程序";
+SketcherUI.CATComDYSIsolate.IsolateFailed.Message = "獨立動作失敗 !";
+SketcherUI.CATComDYSIsolate.IsolateFailed.Title = "警告";
+
+// Ressources NLS (CXR2 Commands)
+// AutoConstraint Command
+
+SketcherUI.CATComAutoConstraint.stateGetEltSel.Message = "選取或不選取被限制的元素或選擇其它的選擇.";
+SketcherUI.CATComAutoConstraint.stateGetEltRef.Message = "選取或不選取參考的元素或選擇其它的選擇.";
+SketcherUI.CATComAutoConstraint.stateGetEltSym.Message = "選取或不選取對稱線元素或選擇其它的選擇.";
+SketcherUI.CATComAutoConstraint.AutoConstraintPanel.Title    = "自動限制";
+SketcherUI.CATComAutoConstraint.AutoConstraintPanel.ObjectSelLabel.Title     = "將被限制的元素:";
+SketcherUI.CATComAutoConstraint.AutoConstraintPanel.ObjectSelLabel.LongHelp  = "將被限制的元素";
+SketcherUI.CATComAutoConstraint.AutoConstraintPanel.ObjectRefLabel.Title     = "參考元素:";
+SketcherUI.CATComAutoConstraint.AutoConstraintPanel.ObjectRefLabel.LongHelp  = "參考元素";
+SketcherUI.CATComAutoConstraint.AutoConstraintPanel.ObjectSymLabel.Title     = "對稱線:";
+SketcherUI.CATComAutoConstraint.AutoConstraintPanel.ObjectSymLabel.LongHelp  = "對稱線";
+SketcherUI.CATComAutoConstraint.AutoConstraintPanel.ObjectModeLabel.Title    = "限制模式:";
+SketcherUI.CATComAutoConstraint.AutoConstraintPanel.ObjectModeLabel.LongHelp = "標示限制產生模式";
+SketcherUI.CATComAutoConstraint.AutoConstraintPanel.ObjectModeCombo.Stacked.Item = "堆疊";
+SketcherUI.CATComAutoConstraint.AutoConstraintPanel.ObjectModeCombo.Chained.Item = "鏈結";
+
+NoSelection            = "未選取";
+2DLine                 = "線";
+2DLine_s               = "線";
+2DPoint                = "點";
+2DPoint_s              = "點";
+2DCircle               = "圓";
+2DCircle_s             = "圓";
+2DEllipse              = "橢圓";
+2DEllipse_s            = "橢圓";
+2DSplineCurve          = "雲形線";
+2DSplineCurve_s        = "雲形線";
+2DCstPoint             = "限制點";
+2DCstPoint_s           = "限制點";
+2DCstPointTangent      = "相切";
+2DCstPointTangent_s    = "相切";
+Imported3DGeometry     = "輸入幾何.";
+Imported3DGeometry_s   = "已輸入幾何. ";
+CATBrpObject           = "已輸入幾何.";
+CATBrpObject_s         = "已輸入幾何. ";
+2DAxis_HDirection      = "水平方向";
+2DAxis_VDirection      = "垂直方向";
+CATRSurImpl            = "修剪面";
+CATRSurImpl_s          = "修剪面組";
+R7Imported3DGeometry   = "輸入幾何";
+R7Imported3DGeometry_s = "輸入幾何";
+
+
+// Ressources NLS
+// Panel Animation Contrainte
+
+SketcherUI.CATComDimAnimate.SelCst.Message = "選擇限制點去模擬";
+SketcherUI.CATComDimAnimate.KeyValues.Message = "輸入值";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Title = "模擬限制";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Parameters.Title     = "參數";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Parameters.LongHelp  = "參數";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Parameters.FirstValue.Title    = "首值:";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Parameters.FirstValue.LongHelp = "首值";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Parameters.LastValue.Title    = "末值:";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Parameters.LastValue.LongHelp = "末值";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Parameters.NbStep.Title    = "步驟數量:";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Parameters.NbStep.LongHelp = "步驟數量";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.Title    = "動作";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.LongHelp = "動作";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.RunReverse.Title          = "執行背景模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.RunReverse.Help           = "執行背景模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.RunReverse.ShortHelp      = "執行背景模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.RunReverse.LongHelp       = "執行背景模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.Pause.Title          = "暫停模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.Pause.Help           = "暫停模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.Pause.ShortHelp      = "暫停模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.Pause.LongHelp       = "暫停模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.Stop.Title          = "停止模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.Stop.Help           = "停止模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.Stop.ShortHelp      = "停止模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.Stop.LongHelp       = "停止模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.RunForward.Title          = "執行模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.RunForward.Help           = "執行模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.RunForward.ShortHelp      = "執行模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.Actions.RunForward.LongHelp       = "執行模擬";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.Title = "選擇";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.OneShot.Title          = "執行一次";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.OneShot.Help           = "執行一次";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.OneShot.ShortHelp      = "執行一次";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.OneShot.LongHelp       = "執行一次";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.Reverse.Title          = "倒轉";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.Reverse.Help           = "倒轉";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.Reverse.ShortHelp      = "倒轉";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.Reverse.LongHelp       = "倒轉";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.Loop.Title          = "循環";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.Loop.Help           = "循環";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.Loop.ShortHelp      = "循環";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.Loop.LongHelp       = "循環";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.Repeat.Title          = "重覆";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.Repeat.Help           = "重覆";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.Repeat.ShortHelp      = "重覆";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.RepeatOption.Repeat.LongHelp       = "重覆";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.HideConstraints.Title     = "隱藏限制";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.HideConstraints.Help       = "隱藏限制";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.HideConstraints.ShortHelp  = "隱藏限制";
+SketcherUI.CATComDimAnimate.AnimateConstraintPanel.HideConstraints.LongHelp   = "隱藏限制";
+
+//
+// keyhole profile
+//
+SketcherUI.CATCom2DKeyHole.FirstSide.Message  = "定義中心到中心的距離";
+SketcherUI.CATCom2DKeyHole.Entraxe.EndPoint.Message = "定義小圓的中心";
+SketcherUI.CATCom2DKeyHole.SecondSide.Message = "於鍵孔的斷面上點選一點來定義第一個圓徑";
+SketcherUI.CATCom2DKeyHole.ThirdSide.Message = "於鍵孔的斷面上點選一點來定義第二個圓徑";
+SketcherUI.CATCom2DKeyHole.Radius.Message = "請輸入半徑值";
+SketcherUI.CATCom2DKeyHole.Radius.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "半徑值: ";
+SketcherUI.CATCom2DKeyHole.Radius.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "橢圓形斷面的半徑值"; 
+SketcherUI.CATCom2DKeyHole.Entraxe.StartPt.Name.Title = "第一個中心: ";
+SketcherUI.CATCom2DKeyHole.Entraxe.StartPt.Name.Help = "鍵孔斷面的第一個中心";
+SketcherUI.CATCom2DKeyHole.Entraxe.StartPt.Name.ShortHelp = "鍵孔斷面的第一個中心";
+SketcherUI.CATCom2DKeyHole.Entraxe.StartPt.Name.LongHelp = "鍵孔斷面的第一個中心";
+SketcherUI.CATCom2DKeyHole.Entraxe.StartPt.ULabel.Title = "H: ";
+SketcherUI.CATCom2DKeyHole.Entraxe.StartPt.VLabel.Title = "V: ";
+SketcherUI.CATCom2DKeyHole.Entraxe.EndPt.Name.Title = "第二個中心: ";
+SketcherUI.CATCom2DKeyHole.Entraxe.EndPt.Name.Help = "鍵孔斷面的第二個中心";
+SketcherUI.CATCom2DKeyHole.Entraxe.EndPt.Name.ShortHelp = "鍵孔斷面的第二個中心";
+SketcherUI.CATCom2DKeyHole.Entraxe.EndPt.Name.LongHelp = "鍵孔斷面的第二個中心";
+SketcherUI.CATCom2DKeyHole.Entraxe.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATCom2DKeyHole.Entraxe.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATCom2DKeyHole.FirstRadius.Name.Title = "第一個半徑: ";
+SketcherUI.CATCom2DKeyHole.FirstRadius.Name.Help = "於鍵孔的斷面上第一點來定義第一個圓徑";
+SketcherUI.CATCom2DKeyHole.FirstRadius.Name.ShortHelp = "於鍵孔的斷面上第一點來定義第一個圓徑";
+SketcherUI.CATCom2DKeyHole.FirstRadius.Name.LongHelp = "於鍵孔的斷面上第一點來定義第一個圓徑";
+SketcherUI.CATCom2DKeyHole.FirstRadius.ULabel.Title = "H: ";
+SketcherUI.CATCom2DKeyHole.FirstRadius.VLabel.Title = "V: ";
+SketcherUI.CATCom2DKeyHole.SecondRadius.Name.Title = "第一個半徑: ";
+SketcherUI.CATCom2DKeyHole.SecondRadius.Name.Help = "於鍵孔的斷面上第二點來定義第二個圓徑";
+SketcherUI.CATCom2DKeyHole.SecondRadius.Name.ShortHelp = "於鍵孔的斷面上第二點來定義第二個圓徑";
+SketcherUI.CATCom2DKeyHole.SecondRadius.Name.LongHelp = "於鍵孔的斷面上第二點來定義第二個圓徑";
+SketcherUI.CATCom2DKeyHole.SecondRadius.ULabel.Title = "H: ";
+SketcherUI.CATCom2DKeyHole.SecondRadius.VLabel.Title = "V: ";
+
+//
+//  Elongated hole
+//
+SketcherUI.CATCom2DTrouOblong.FirstSide.Message  = "定義中心到中心的距離";
+SketcherUI.CATCom2DTrouOblong.SecondSide.Message = "於長圓孔斷面上點選來定義一點";
+SketcherUI.CATCom2DTrouOblong.Radius.Message = "請輸入圓徑.";
+SketcherUI.CATCom2DTrouOblong.Radius.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "長圓孔斷面的圓徑: ";
+SketcherUI.CATCom2DTrouOblong.Radius.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "長圓孔斷面的圓徑"; 
+SketcherUI.CATCom2DTrouOblong.Entraxe.StartPt.Name.Title = "第一個中心: ";
+SketcherUI.CATCom2DTrouOblong.Entraxe.StartPt.Name.Help = "長圓孔斷面上中心到中心的第一點";
+SketcherUI.CATCom2DTrouOblong.Entraxe.StartPt.Name.ShortHelp = "長圓孔斷面上中心到中心的第一點";
+SketcherUI.CATCom2DTrouOblong.Entraxe.StartPt.Name.LongHelp = "長圓孔斷面上中心到中心的第一點";
+SketcherUI.CATCom2DTrouOblong.Entraxe.StartPt.ULabel.Title = "H: ";
+SketcherUI.CATCom2DTrouOblong.Entraxe.StartPt.VLabel.Title = "V: ";
+SketcherUI.CATCom2DTrouOblong.Entraxe.EndPt.Name.Title = "第二個中心: ";
+SketcherUI.CATCom2DTrouOblong.Entraxe.EndPt.Name.Help = "長圓孔斷面上中心到中心的第二點";
+SketcherUI.CATCom2DTrouOblong.Entraxe.EndPt.Name.ShortHelp = "長圓孔斷面上中心到中心的第二點";
+SketcherUI.CATCom2DTrouOblong.Entraxe.EndPt.Name.LongHelp = "長圓孔斷面上中心到中心的第二點";
+SketcherUI.CATCom2DTrouOblong.Entraxe.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATCom2DTrouOblong.Entraxe.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATCom2DTrouOblong.EndPt.Name.Title = "長圓孔斷面上的一點: ";
+SketcherUI.CATCom2DTrouOblong.EndPt.Name.Help = "長圓孔斷面上的一點";
+SketcherUI.CATCom2DTrouOblong.EndPt.Name.ShortHelp = "長圓孔斷面上的一點";
+SketcherUI.CATCom2DTrouOblong.EndPt.Name.LongHelp = "長圓孔斷面上的一點";
+SketcherUI.CATCom2DTrouOblong.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATCom2DTrouOblong.EndPt.VLabel.Title = "V: ";
+
+//
+// Cylindrical elongated hole
+//
+SketcherUI.CATCom2DTrouOblongArc.FirstSide.Message  = "定義中心到中心的圓弧";
+SketcherUI.CATCom2DTrouOblongArc.SecondSide.Message = "於長圓孔斷面上點選來定義一點";
+SketcherUI.CATCom2DTrouOblongArc.CenterPt.Name.Title = "中心到中心的圓弧: ";
+SketcherUI.CATCom2DTrouOblongArc.Radius.Message = "請輸入圓徑.";
+SketcherUI.CATCom2DTrouOblongArc.Radius.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "圓徑: ";
+SketcherUI.CATCom2DTrouOblongArc.Radius.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "長圓孔斷面上的圓徑"; 
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.CenterPt.Name.Title = "圓心: ";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.CenterPt.Name.Help = "長圓孔斷面圓弧的中心";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.CenterPt.Name.ShortHelp = "長圓孔斷面圓弧的中心";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.CenterPt.Name.LongHelp = "長圓孔斷面圓弧的中心";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.CenterPt.ULabel.Title = "H: ";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.CenterPt.VLabel.Title = "V: ";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.PtOn.Name.Title = "第一個中心: ";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.PtOn.Name.Help = "長圓孔斷面圓弧上中心到中心的第一點";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.PtOn.Name.ShortHelp = "長圓孔斷面圓弧上中心到中心的第一點";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.PtOn.Name.LongHelp = "長圓孔斷面圓弧上中心到中心的第一點";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.PtOn.ULabel.Title = "H: ";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.PtOn.VLabel.Title = "V: ";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.EndPt.Name.Title = "第二個中心: ";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.EndPt.Name.Help = "長圓孔斷面圓弧上中心到中心的第二點";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.EndPt.Name.ShortHelp = "長圓孔斷面圓弧上中心到中心的第二點";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.EndPt.Name.LongHelp = "長圓孔斷面圓弧上中心到中心的第二點";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATCom2DTrouOblongArc.EntraxeArc.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATCom2DTrouOblongArc.EndPt.Name.Title = "長圓孔斷面圓弧上的一點: ";
+SketcherUI.CATCom2DTrouOblongArc.EndPt.Name.Help = "長圓孔斷面圓弧上的一點";
+SketcherUI.CATCom2DTrouOblongArc.EndPt.Name.ShortHelp = "長圓孔斷面圓弧上的一點";
+SketcherUI.CATCom2DTrouOblongArc.EndPt.Name.LongHelp = "長圓孔斷面圓弧上的一點";
+SketcherUI.CATCom2DTrouOblongArc.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATCom2DTrouOblongArc.EndPt.VLabel.Title = "V: ";
+
+//
+// Hexagone
+//
+SketcherUI.CATCom2DHexagon.FirstPoint.Message = "任意點選來定義六角形的第一點.";
+SketcherUI.CATCom2DHexagon.EndPoint.Message = "任意點選來定義六角形的第二點.";
+// Gestion Visu Copilote
+SketcherUI.CATCom2DHexagon.StartPt.Name.Title = "六角形的中心: ";
+SketcherUI.CATCom2DHexagon.StartPt.Name.Help = "六角形的中心";
+SketcherUI.CATCom2DHexagon.StartPt.Name.ShortHelp = "六角形的中心";
+SketcherUI.CATCom2DHexagon.StartPt.Name.LongHelp = "六角形的中心";
+SketcherUI.CATCom2DHexagon.StartPt.ULabel.Title = "H: ";
+SketcherUI.CATCom2DHexagon.StartPt.ULabel.ShortHelp = "中心點的水平座標";
+SketcherUI.CATCom2DHexagon.StartPt.UEditor.ShortHelp = "中心點的水平座標";
+SketcherUI.CATCom2DHexagon.StartPt.VLabel.Title = "V: ";
+SketcherUI.CATCom2DHexagon.StartPt.VLabel.ShortHelp = "中心點的垂直座標";
+SketcherUI.CATCom2DHexagon.StartPt.VEditor.ShortHelp = "中心點的垂直座標";
+SketcherUI.CATCom2DHexagon.EndPt.Name.Title = "六角形上的點: ";
+SketcherUI.CATCom2DHexagon.EndPt.Name.Help = "六角形上的點";
+SketcherUI.CATCom2DHexagon.EndPt.Name.ShortHelp = "六角形上的點";
+SketcherUI.CATCom2DHexagon.EndPt.Name.LongHelp = "六角形上的點";
+SketcherUI.CATCom2DHexagon.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATCom2DHexagon.EndPt.ULabel.ShortHelp = "請輸入六角形上點的水平座標.";
+SketcherUI.CATCom2DHexagon.EndPt.UEditor.ShortHelp = "請輸入六角形上點的水平座標.";
+SketcherUI.CATCom2DHexagon.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATCom2DHexagon.EndPt.VLabel.ShortHelp = "請輸入六角形上點的垂直座標.";
+SketcherUI.CATCom2DHexagon.EndPt.VEditor.ShortHelp = "請輸入六角形上點的垂直座標.";
+SketcherUI.CATCom2DHexagon.Dimension.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "尺寸: ";
+SketcherUI.CATCom2DHexagon.Dimension.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "尺寸";
+SketcherUI.CATCom2DHexagon.Dimension.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "尺寸";
+SketcherUI.CATCom2DHexagon.Dimension.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "請輸入尺寸";
+SketcherUI.CATCom2DHexagon.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "角度: ";
+SketcherUI.CATCom2DHexagon.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "角度";
+SketcherUI.CATCom2DHexagon.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "角度";
+SketcherUI.CATCom2DHexagon.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "請輸入角度";
+//
+// Points Spaces
+//
+SketcherUI.CATComDYSPointsSpaces.SelCrvSupport.Message  = "選取線或點來定義點.";
+SketcherUI.CATComDYSPointsSpaces.SelOriginPoint.Message = "選取原始點";
+SketcherUI.CATComDYSPointsSpaces.SelEndPoint.Message = "在對話框中選擇終點或更改顯示值";
+SketcherUI.CATComDYSPointsSpaces.KeyParameters.Message = "請輸入間隔及點數.";
+//
+SketcherUI.CATComDYSPointsSpaces.2DPointsSpacesPanel.Title = "等距離點定義";
+SketcherUI.CATComDYSPointsSpaces.2DPointsSpacesPanel.Parameters.Title = "參數";
+SketcherUI.CATComDYSPointsSpaces.2DPointsSpacesPanel.Parameters.ParameterMode.Title = "參數: ";
+SketcherUI.CATComDYSPointsSpaces.2DPointsSpacesPanel.Parameters.ParameterModeCombo.NbAndSpacing.Item = "點和間隔";
+SketcherUI.CATComDYSPointsSpaces.2DPointsSpacesPanel.Parameters.ParameterModeCombo.NbAndLength.Item = "點和長度";
+SketcherUI.CATComDYSPointsSpaces.2DPointsSpacesPanel.Parameters.ParameterModeCombo.SpacingAndLength.Item = "間隔和長度";
+SketcherUI.CATComDYSPointsSpaces.2DPointsSpacesPanel.Parameters.NbStep.Title = "新點: ";
+SketcherUI.CATComDYSPointsSpaces.2DPointsSpacesPanel.Parameters.NbStepValue.Title = "新點群";
+SketcherUI.CATComDYSPointsSpaces.2DPointsSpacesPanel.Parameters.DistanceValue.Title = "間隔: ";
+SketcherUI.CATComDYSPointsSpaces.2DPointsSpacesPanel.Parameters.DistanceValue.Spinner.Title = "間隔";
+SketcherUI.CATComDYSPointsSpaces.2DPointsSpacesPanel.Parameters.LengthValue.Title = "長度: ";
+SketcherUI.CATComDYSPointsSpaces.2DPointsSpacesPanel.Parameters.LengthValue.Spinner.Title = "長度";
+SketcherUI.CATComDYSPointsSpaces.2DPointsSpacesPanel.ReverseDirection.Title = " 反方向 ";
+
+
+// Rotate command
+
+SketcherUI.CATComDYSRotate.SelState.Message="選取欲旋轉的幾何元素";
+SketcherUI.CATComDYSRotate.Point1State.Message="任意點選旋轉點";
+SketcherUI.CATComDYSRotate.Point2State.Message="任意點選點來定義角度的參考線";
+SketcherUI.CATComDYSRotate.Point3State.Message="任意點選點來定義角度";
+SketcherUI.CATComDYSRotate.Help="旋轉繪圖元素";
+
+
+// Gestion mini toolbar de saisie de coordonnees
+SketcherUI.CATComDYSRotate.CenterPt.Name.Title = "中心點: ";
+SketcherUI.CATComDYSRotate.CenterPt.Name.Help = "中心點";
+SketcherUI.CATComDYSRotate.CenterPt.Name.ShortHelp = "中心點";
+SketcherUI.CATComDYSRotate.CenterPt.Name.LongHelp = "中心點";
+SketcherUI.CATComDYSRotate.CenterPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSRotate.CenterPt.ULabel.ShortHelp = "請輸入中心點的水平座標";
+SketcherUI.CATComDYSRotate.CenterPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSRotate.CenterPt.VLabel.ShortHelp = "請輸入中心點的垂直座標";
+SketcherUI.CATComDYSRotate.StartPt.Name.Title = "第一點: ";
+SketcherUI.CATComDYSRotate.StartPt.Name.Help = "第一點";
+SketcherUI.CATComDYSRotate.StartPt.Name.ShortHelp = "第一點";
+SketcherUI.CATComDYSRotate.StartPt.Name.LongHelp = "第一點";
+SketcherUI.CATComDYSRotate.StartPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSRotate.StartPt.ULabel.ShortHelp = "請輸入中心點的水平座標";
+SketcherUI.CATComDYSRotate.StartPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSRotate.StartPt.VLabel.ShortHelp = "請輸入中心點的垂直座標";
+SketcherUI.CATComDYSRotate.EndPt.Name.Title = "第二點: ";
+SketcherUI.CATComDYSRotate.EndPt.Name.Help = "第二點";
+SketcherUI.CATComDYSRotate.EndPt.Name.ShortHelp = "第二點";
+SketcherUI.CATComDYSRotate.EndPt.Name.LongHelp = "第二點";
+SketcherUI.CATComDYSRotate.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSRotate.EndPt.ULabel.ShortHelp = "請輸入第二點的水平座標";
+SketcherUI.CATComDYSRotate.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSRotate.EndPt.VLabel.ShortHelp = "請輸入第二點的垂直座標";
+
+// Rotate Panel
+SketcherUI.CATComDYSRotate.TransfoPanel.Title="旋轉定義";
+SketcherUI.CATComDYSRotate.TransfoPanel.DuplicatePanel.Title="複製";
+SketcherUI.CATComDYSRotate.TransfoPanel.DuplicatePanel.DupNumLabel.Title="複製元件: ";
+SketcherUI.CATComDYSRotate.TransfoPanel.DuplicatePanel.DupCheck.Title="複製模式";
+SketcherUI.CATComDYSRotate.TransfoPanel.DuplicatePanel.CstCheck.Title="限制保存";
+SketcherUI.CATComDYSRotate.TransfoPanel.AnglePanel.Title="角度";
+SketcherUI.CATComDYSRotate.TransfoPanel.AnglePanel.Value.Title="值: ";
+SketcherUI.CATComDYSRotate.TransfoPanel.AnglePanel.StepMode.Title="鎖定模式";
+
+// Scale command
+
+SketcherUI.CATComDYSScale.SelState.Message="選擇要縮放的幾何";
+SketcherUI.CATComDYSScale.Point1State.Message="選取或按一下縮放中心";
+SketcherUI.CATComDYSScale.Point2State.Message="選取或按一下點來決定縮放比率";
+SketcherUI.CATComDYSScale.Help="伸長繪圖元素";
+
+
+// Gestion mini toolbar de saisie de coordonnees
+SketcherUI.CATComDYSScale.StartPt.Name.Title = "中心點: ";
+SketcherUI.CATComDYSScale.StartPt.Name.Help = "指定中心點";
+SketcherUI.CATComDYSScale.StartPt.Name.ShortHelp = "中心點";
+SketcherUI.CATComDYSScale.StartPt.Name.LongHelp = "指定中心點.";
+SketcherUI.CATComDYSScale.StartPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSScale.StartPt.ULabel.ShortHelp = "中心點水平座標";
+SketcherUI.CATComDYSScale.StartPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSScale.StartPt.VLabel.ShortHelp = "中心點垂直座標";
+SketcherUI.CATComDYSScale.EndPt.Name.Title = "結束點 : ";
+SketcherUI.CATComDYSScale.EndPt.Name.Help = "指定結束點";
+SketcherUI.CATComDYSScale.EndPt.Name.ShortHelp = "結束點";
+SketcherUI.CATComDYSScale.EndPt.Name.LongHelp = "指定結束點.";
+SketcherUI.CATComDYSScale.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSScale.EndPt.ULabel.ShortHelp = "結束點水平座標";
+SketcherUI.CATComDYSScale.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSScale.EndPt.VLabel.ShortHelp = "結束點垂直座標";
+
+// Scale Panel
+SketcherUI.CATComDYSScale.TransfoPanel.Title="縮放定義";
+SketcherUI.CATComDYSScale.TransfoPanel.DuplicatePanel.Title="複製";
+SketcherUI.CATComDYSScale.TransfoPanel.DuplicatePanel.DupCheck.Title="複製模式";
+SketcherUI.CATComDYSScale.TransfoPanel.DuplicatePanel.CstCheck.Title="保留限制";
+SketcherUI.CATComDYSScale.TransfoPanel.ScalePanel.Title="縮放";
+SketcherUI.CATComDYSScale.TransfoPanel.ScalePanel.Value.Title="數值 :";
+SketcherUI.CATComDYSScale.TransfoPanel.ScalePanel.StepMode.Title="鎖定模式";
+
+
+// Translate command
+
+SketcherUI.CATComDYSTranslate.SelState.Message="選擇將要平移的幾何元素";
+SketcherUI.CATComDYSTranslate.Point1State.Message="選擇或按一下平移的起始點";
+SketcherUI.CATComDYSTranslate.Point2State.Message="選擇或按一下平移的結束點";
+SketcherUI.CATComDYSTranslate.Help="平移繪圖元素";
+
+
+// Gestion mini toolbar de saisie de coordonnees
+SketcherUI.CATComDYSTranslate.StartPt.Name.Title = "起始點: ";
+SketcherUI.CATComDYSTranslate.StartPt.Name.Help = "起始點";
+SketcherUI.CATComDYSTranslate.StartPt.Name.ShortHelp = "起始點";
+SketcherUI.CATComDYSTranslate.StartPt.Name.LongHelp = "起始點";
+SketcherUI.CATComDYSTranslate.StartPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSTranslate.StartPt.ULabel.ShortHelp = "請輸入起始點的水平座標";
+SketcherUI.CATComDYSTranslate.StartPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSTranslate.StartPt.VLabel.ShortHelp = "請輸入起始點的垂直座標";
+SketcherUI.CATComDYSTranslate.EndPt.Name.Title = "終點: ";
+SketcherUI.CATComDYSTranslate.EndPt.Name.Help = "終點";
+SketcherUI.CATComDYSTranslate.EndPt.Name.ShortHelp = "終點";
+SketcherUI.CATComDYSTranslate.EndPt.Name.LongHelp = "終點";
+SketcherUI.CATComDYSTranslate.EndPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSTranslate.EndPt.ULabel.ShortHelp = "請輸入終點的水平座標";
+SketcherUI.CATComDYSTranslate.EndPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSTranslate.EndPt.VLabel.ShortHelp = "請輸入終點的垂直座標";
+
+// Translate Panel
+SketcherUI.CATComDYSTranslate.TransfoPanel.Title="平移定義";
+SketcherUI.CATComDYSTranslate.TransfoPanel.DuplicatePanel.Title="複製";
+SketcherUI.CATComDYSTranslate.TransfoPanel.DuplicatePanel.DupNumLabel.Title="複製元件 :";
+SketcherUI.CATComDYSTranslate.TransfoPanel.DuplicatePanel.DupCheck.Title="複製模式";
+SketcherUI.CATComDYSTranslate.TransfoPanel.DuplicatePanel.CstCheck.Title="保留限制";
+SketcherUI.CATComDYSTranslate.TransfoPanel.LengthPanel.Title="長度";
+SketcherUI.CATComDYSTranslate.TransfoPanel.LengthPanel.Value.Title="值: ";
+SketcherUI.CATComDYSTranslate.TransfoPanel.LengthPanel.StepMode.Title="鎖定模式";
+SketcherUI.CATComDYSTranslate.TransfoPanel.DuplicatePanel.InternalCstCheck.Title="保持內部拘束";
+SketcherUI.CATComDYSTranslate.TransfoPanel.DuplicatePanel.ExternalCstCheck.Title="保持外部拘束";
+
+
+// Creation Parabole par foyer
+SketcherUI.CATComDYSParabolaFocus.Focus.Message = "任意點選來決定焦點.";
+SketcherUI.CATComDYSParabolaFocus.Apex.Message = "任意點選來決定頂點.";
+SketcherUI.CATComDYSParabolaFocus.Pt1.Message = "任意點選來決定拋物線的第一點.";
+SketcherUI.CATComDYSParabolaFocus.Pt2.Message = "任意點選來決定拋物線的第二點.";
+// Gestion Visu Copilote
+SketcherUI.CATComDYSParabolaFocus.FirstPt.Name.Title = "焦點: ";
+SketcherUI.CATComDYSParabolaFocus.FirstPt.Name.Help = "請標示拋物線焦點";
+SketcherUI.CATComDYSParabolaFocus.FirstPt.Name.ShortHelp = "拋物線焦點";
+SketcherUI.CATComDYSParabolaFocus.FirstPt.Name.LongHelp = "拋物線焦點.";
+SketcherUI.CATComDYSParabolaFocus.FirstPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSParabolaFocus.FirstPt.ULabel.ShortHelp = "拋物線焦點的水平座標";
+SketcherUI.CATComDYSParabolaFocus.FirstPt.UEditor.ShortHelp = "拋物線焦點的水平座標";
+SketcherUI.CATComDYSParabolaFocus.FirstPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSParabolaFocus.FirstPt.VLabel.ShortHelp = "拋物線焦點的垂直座標";
+SketcherUI.CATComDYSParabolaFocus.FirstPt.VEditor.ShortHelp = "拋物線焦點的垂直座標";
+SketcherUI.CATComDYSParabolaFocus.SecondPt.Name.Title = "頂點: ";
+SketcherUI.CATComDYSParabolaFocus.SecondPt.Name.Help = "請標示拋物線頂點";
+SketcherUI.CATComDYSParabolaFocus.SecondPt.Name.ShortHelp = "拋物線頂點";
+SketcherUI.CATComDYSParabolaFocus.SecondPt.Name.LongHelp = "請標示拋物線頂點";
+SketcherUI.CATComDYSParabolaFocus.SecondPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSParabolaFocus.SecondPt.ULabel.ShortHelp = "拋物線頂點的水平座標";
+SketcherUI.CATComDYSParabolaFocus.SecondPt.UEditor.ShortHelp = "拋物線頂點的水平座標";
+SketcherUI.CATComDYSParabolaFocus.SecondPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSParabolaFocus.SecondPt.VLabel.ShortHelp = "拋物線頂點的垂直座標";
+SketcherUI.CATComDYSParabolaFocus.SecondPt.VEditor.ShortHelp = "拋物線頂點的垂直座標";
+SketcherUI.CATComDYSParabolaFocus.ThirdPt.Name.Title = "第一點: ";
+SketcherUI.CATComDYSParabolaFocus.ThirdPt.Name.Help = "第一點";
+SketcherUI.CATComDYSParabolaFocus.ThirdPt.Name.ShortHelp = "第一點";
+SketcherUI.CATComDYSParabolaFocus.ThirdPt.Name.LongHelp = "第一點";
+SketcherUI.CATComDYSParabolaFocus.ThirdPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSParabolaFocus.ThirdPt.ULabel.ShortHelp = "第一點的水平座標";
+SketcherUI.CATComDYSParabolaFocus.ThirdPt.UEditor.ShortHelp = "第一點的水平座標";
+SketcherUI.CATComDYSParabolaFocus.ThirdPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSParabolaFocus.ThirdPt.VLabel.ShortHelp = "第一點的垂直座標";
+SketcherUI.CATComDYSParabolaFocus.ThirdPt.VEditor.ShortHelp = "第一點的垂直座標";
+SketcherUI.CATComDYSParabolaFocus.FourthPt.Name.Title = "第二點: ";
+SketcherUI.CATComDYSParabolaFocus.FourthPt.Name.Help = "第二點";
+SketcherUI.CATComDYSParabolaFocus.FourthPt.Name.ShortHelp = "第二點";
+SketcherUI.CATComDYSParabolaFocus.FourthPt.Name.LongHelp = "第二點";
+SketcherUI.CATComDYSParabolaFocus.FourthPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSParabolaFocus.FourthPt.ULabel.ShortHelp = "第二點的水平座標";
+SketcherUI.CATComDYSParabolaFocus.FourthPt.UEditor.ShortHelp = "第二點的水平座標";
+SketcherUI.CATComDYSParabolaFocus.FourthPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSParabolaFocus.FourthPt.VLabel.ShortHelp = "第二點的垂直座標";
+SketcherUI.CATComDYSParabolaFocus.FourthPt.VEditor.ShortHelp = "第二點的垂直座標";
+SketcherUI.2DParabolaPanel.Title = "拋物線定義";
+SketcherUI.2DParabolaPanel.Focus.Title = "焦點";
+SketcherUI.2DParabolaPanel.Apex.Title = "頂點";
+
+// Creation Hyperbole par foyer
+SketcherUI.CATComDYSHyperbolaFocus.Focus.Message = "任意點選來決定焦點.";
+SketcherUI.CATComDYSHyperbolaFocus.Center.Message = "任意點選來決定中心.";
+SketcherUI.CATComDYSHyperbolaFocus.Apex.Message = "任意點選來決定頂點.";
+SketcherUI.CATComDYSHyperbolaFocus.Pt1.Message = "任意點選來決定雙曲線上的第一點.";
+SketcherUI.CATComDYSHyperbolaFocus.Pt2.Message = "任意點選來決定雙曲線上的第二點.";
+// Gestion Visu Copilote
+SketcherUI.CATComDYSHyperbolaFocus.FirstPt.Name.Title = "焦點: ";
+SketcherUI.CATComDYSHyperbolaFocus.FirstPt.Name.Help = "請標示雙曲線焦點";
+SketcherUI.CATComDYSHyperbolaFocus.FirstPt.Name.ShortHelp = "雙曲線焦點";
+SketcherUI.CATComDYSHyperbolaFocus.FirstPt.Name.LongHelp = "請標示雙曲線焦點.";
+SketcherUI.CATComDYSHyperbolaFocus.FirstPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSHyperbolaFocus.FirstPt.ULabel.ShortHelp = "雙曲線焦點的水平座標";
+SketcherUI.CATComDYSHyperbolaFocus.FirstPt.UEditor.ShortHelp = "雙曲線焦點的水平座標";
+SketcherUI.CATComDYSHyperbolaFocus.FirstPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSHyperbolaFocus.FirstPt.VLabel.ShortHelp = "雙曲線焦點的垂直座標";
+SketcherUI.CATComDYSHyperbolaFocus.FirstPt.VEditor.ShortHelp = "雙曲線焦點的垂直座標";
+SketcherUI.CATComDYSHyperbolaFocus.FirstPt.Excentricity_Label.Title = "e: ";
+SketcherUI.CATComDYSHyperbolaFocus.FirstPt.Excentricity_Label.ShortHelp = "離心值";
+SketcherUI.CATComDYSHyperbolaFocus.FirstPt.Excentricity_Value.ShortHelp = "離心值";
+SketcherUI.CATComDYSHyperbolaFocus.SecondPt.Name.Title = "中心: ";
+SketcherUI.CATComDYSHyperbolaFocus.SecondPt.Name.Help = "請標示雙曲線中心";
+SketcherUI.CATComDYSHyperbolaFocus.SecondPt.Name.ShortHelp = "雙曲線中心";
+SketcherUI.CATComDYSHyperbolaFocus.SecondPt.Name.LongHelp = "請標示雙曲線中心";
+SketcherUI.CATComDYSHyperbolaFocus.SecondPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSHyperbolaFocus.SecondPt.ULabel.ShortHelp = "雙曲線中心水平座標";
+SketcherUI.CATComDYSHyperbolaFocus.SecondPt.UEditor.ShortHelp = "雙曲線中心水平座標";
+SketcherUI.CATComDYSHyperbolaFocus.SecondPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSHyperbolaFocus.SecondPt.VLabel.ShortHelp = "雙曲線中心垂直座標";
+SketcherUI.CATComDYSHyperbolaFocus.SecondPt.VEditor.ShortHelp = "雙曲線中心垂直座標";
+SketcherUI.CATComDYSHyperbolaFocus.SecondPt.Excentricity_Label.Title = "e: ";
+SketcherUI.CATComDYSHyperbolaFocus.SecondPt.Excentricity_Label.ShortHelp = "離心值";
+SketcherUI.CATComDYSHyperbolaFocus.SecondPt.Excentricity_Value.ShortHelp = "離心值";
+SketcherUI.CATComDYSHyperbolaFocus.ThirdPt.Name.Title = "頂點: ";
+SketcherUI.CATComDYSHyperbolaFocus.ThirdPt.Name.Help = "請標示雙曲線頂點";
+SketcherUI.CATComDYSHyperbolaFocus.ThirdPt.Name.ShortHelp = "雙曲線頂點";
+SketcherUI.CATComDYSHyperbolaFocus.ThirdPt.Name.LongHelp = "請標示雙曲線頂點";
+SketcherUI.CATComDYSHyperbolaFocus.ThirdPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSHyperbolaFocus.ThirdPt.ULabel.ShortHelp = "請標示雙曲線頂點的水平座標";
+SketcherUI.CATComDYSHyperbolaFocus.ThirdPt.UEditor.ShortHelp = "請標示雙曲線頂點的水平座標";
+SketcherUI.CATComDYSHyperbolaFocus.ThirdPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSHyperbolaFocus.ThirdPt.VLabel.ShortHelp = "請標示雙曲線頂點的垂直座標";
+SketcherUI.CATComDYSHyperbolaFocus.ThirdPt.VEditor.ShortHelp = "請標示雙曲線頂點的垂直座標";
+SketcherUI.CATComDYSHyperbolaFocus.ThirdPt.Excentricity_Label.Title = "e: ";
+SketcherUI.CATComDYSHyperbolaFocus.ThirdPt.Excentricity_Label.ShortHelp = "離心值";
+SketcherUI.CATComDYSHyperbolaFocus.ThirdPt.Excentricity_Value.ShortHelp = "離心值";
+SketcherUI.CATComDYSHyperbolaFocus.FourthPt.Name.Title = "第一點: ";
+SketcherUI.CATComDYSHyperbolaFocus.FourthPt.Name.Help = "第一點";
+SketcherUI.CATComDYSHyperbolaFocus.FourthPt.Name.ShortHelp = "第一點";
+SketcherUI.CATComDYSHyperbolaFocus.FourthPt.Name.LongHelp = "第一點";
+SketcherUI.CATComDYSHyperbolaFocus.FourthPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSHyperbolaFocus.FourthPt.ULabel.ShortHelp = "第一點的水平座標";
+SketcherUI.CATComDYSHyperbolaFocus.FourthPt.UEditor.ShortHelp = "第一點的水平座標";
+SketcherUI.CATComDYSHyperbolaFocus.FourthPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSHyperbolaFocus.FourthPt.VLabel.ShortHelp = "第一點的垂直座標";
+SketcherUI.CATComDYSHyperbolaFocus.FourthPt.VEditor.ShortHelp = "第一點的垂直座標";
+SketcherUI.CATComDYSHyperbolaFocus.FourthPt.Excentricity_Label.Title = "e: ";
+SketcherUI.CATComDYSHyperbolaFocus.FourthPt.Excentricity_Label.ShortHelp = "離心值";
+SketcherUI.CATComDYSHyperbolaFocus.FourthPt.Excentricity_Value.ShortHelp = "離心值";
+SketcherUI.CATComDYSHyperbolaFocus.FifthPt.Name.Title = "第二點";
+SketcherUI.CATComDYSHyperbolaFocus.FifthPt.Name.Help = "第二點";
+SketcherUI.CATComDYSHyperbolaFocus.FifthPt.Name.ShortHelp = "第二點";
+SketcherUI.CATComDYSHyperbolaFocus.FifthPt.Name.LongHelp = "第二點";
+SketcherUI.CATComDYSHyperbolaFocus.FifthPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSHyperbolaFocus.FifthPt.ULabel.ShortHelp = "第二點的水平座標";
+SketcherUI.CATComDYSHyperbolaFocus.FifthPt.UEditor.ShortHelp = "第二點的水平座標";
+SketcherUI.CATComDYSHyperbolaFocus.FifthPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSHyperbolaFocus.FifthPt.VLabel.ShortHelp = "第二點的垂直座標";
+SketcherUI.CATComDYSHyperbolaFocus.FifthPt.VEditor.ShortHelp = "第二點的垂直座標";
+SketcherUI.CATComDYSHyperbolaFocus.FifthPt.Excentricity_Label.Title = "e: ";
+SketcherUI.CATComDYSHyperbolaFocus.FifthPt.Excentricity_Label.ShortHelp = "離心值";
+SketcherUI.CATComDYSHyperbolaFocus.FifthPt.Excentricity_Value.ShortHelp = "離心值";
+
+SketcherUI.2DHyperbolaPanel.Title = "雙曲線定義";
+SketcherUI.2DHyperbolaPanel.Focus.Title = "焦點";
+SketcherUI.2DHyperbolaPanel.Center.Title = "中心點";
+SketcherUI.2DHyperbolaPanel.Excentricity.Title = "離心值";
+SketcherUI.2DHyperbolaPanel.Excentricity.Spinner.Title = "離心值";
+SketcherUI.2DHyperbolaPanel.Excentricity_Value.Title = "離心值 :";
+
+SketcherUI.CATComDYSLine.Sym.Check.Title= "對稱形延伸";
+SketcherUI.CATComDYSLine.Sym.Check.LongHelp= "建立與起始點相關的對稱線.";
+SketcherUI.CATComDYSLine.Sym.Check.ShortHelp= "建立對稱線.";
+SketcherUI.CATComDYSLine.Sym.Check.Help= "檢核此按鈕來建立對稱的對稱線.";
+SketcherUI.CATComDYSCenterLine.Sym.Check.Title= "對稱的延伸";
+SketcherUI.CATComDYSCenterLine.Sym.Check.LongHelp= "建立與起始點相關的對稱線.";
+SketcherUI.CATComDYSCenterLine.Sym.Check.ShortHelp= "建立對稱軸.";
+SketcherUI.CATComDYSCenterLine.Sym.Check.Help= "檢核此按鈕來建立對稱的對稱軸.";
+
+// Creation Line bi-tangente
+SketcherUI.CATCom2DLine2Tangent.FirstElement.Message = "第一個相切: 選擇幾何來建立相切線";
+SketcherUI.CATCom2DLine2Tangent.SecondElement.Message = "第二個相切: 選擇幾何來建立相切線";
+SketcherUI.CATCom2DLine2Tangent.NoSolution.Title   = "雙相切線";
+SketcherUI.CATCom2DLine2Tangent.NoSolution.Message = "所選兩元素無法建立雙相切線. \n 提醒: 所選點的位置非常重要: \n 線乃依據所選點的位置而決定. \n 相切乃儘量靠近所選元素.";
+
+// Creation Cercle tri-tangent
+SketcherUI.CATCom2DCircle3Tangent.FirstElement.Message = "第一個相切: 選擇幾何來建立相切圓";
+SketcherUI.CATCom2DCircle3Tangent.SecondElement.Message = "第二個相切: 選擇幾何來建立相切圓";
+SketcherUI.CATCom2DCircle3Tangent.ThirdElement.Message = "第三個相切: 選擇幾何來建立相切圓";
+SketcherUI.CATCom2DCircle3Tangent.NoSolution.Title   = "三相切圓";
+SketcherUI.CATCom2DCircle3Tangent.NoSolution.Message = "所選三元素無法建立三相切圓. \n 提醒: 所選點的位置非常重要: \n 線乃依據所選點的位置而決定. \n 相切乃儘量靠近所選三元素.";
+
+// AutoSearch
+SketcherUI.CATCom2DAutoSearch.SelElem.Message = "選擇用來執行自動搜尋的幾何";
+SketcherUI.CATCom2DAutoSearch2.SelElem.Message = "選擇用來執行自動搜尋的幾何";
+SketcherUI.CATCom2DAutoSearch2.Resolution.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "容差: ";
+SketcherUI.CATCom2DAutoSearch2.Resolution.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "容差";
+SketcherUI.CATCom2DAutoSearch2.Resolution.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "容差";
+SketcherUI.CATCom2DAutoSearch2.Resolution.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "輸入相同點的容差值";
+SketcherUI.CATCom2DAutoSearch2.CheckContour.Check.Title = "自動選取斷面";
+SketcherUI.CATCom2DAutoSearch2.CheckContour.Check.Help = "自動選取斷面";
+SketcherUI.CATCom2DAutoSearch2.CheckContour.Check.LongHelp = "當遇上封閉曲線時停止自動選取斷面.";
+SketcherUI.CATCom2DAutoSearch2.CheckContour.Check.ShortHelp = "自動選取斷面";
+
+// Analyse
+SketcherUI.CATCom2DAnalyse.SelElement.Message = "選擇要分析的幾何";
+SketcherUI.CATCom2DAnalyse.NewElement.Message   = "為所選的投影或相交選擇新的依附元素";
+SketcherUI.CATCom2DAnalyse.UpdateNeeded.Title   = "警告: 需要更新";
+SketcherUI.CATCom2DAnalyse.UpdateNeeded.Message = "Y草圖必須更新以便將更改納入 (退出和重新進入草圖)";
+SketcherUI.CATCom2DAnalyse.ReplaceError.Title   = "警告: 更換";
+SketcherUI.CATCom2DAnalyse.ReplaceError.Message = "無法以所選元素更換投影或依附相交.";
+SketcherUI.CATCom2DAnalyse.MultiSelError.Title   = "警告: 更換";
+SketcherUI.CATCom2DAnalyse.MultiSelError.Message = "選擇一個投影或依附相交來執行更換命令.";
+SketcherUI.CATCom2DAnalyse.StrWrongPt        = "錯誤的點";
+SketcherUI.CATCom2DAnalyse.StrPtNotInCst     = "警告: 點不是在建構模式";
+SketcherUI.CATCom2DAnalyse.StrWrongCoinc     = "錯誤的同時發生";
+SketcherUI.CATCom2DAnalyse.StrImpossCoinc    = "警告:  不可能同時發生";
+SketcherUI.CATCom2DAnalyse.StrDegenerated    = "反曲";
+SketcherUI.CATCom2DAnalyse.StrInvalidCrv     = "警告:無效曲線(起始點與終點為同一點)";
+SketcherUI.CATCom2DAnalyse.StrClosed         = "封閉曲線";
+SketcherUI.CATCom2DAnalyse.StrOpened         = "未封閉曲線";
+SketcherUI.CATCom2DAnalyse.StrIsolated       = "獨立元素";
+SketcherUI.CATCom2DAnalyse.StrIsolPtNotInCst = "警告: 獨立點不是在建構模式";
+SketcherUI.CATCom2DAnalyse.StrCurves         = "曲線";
+SketcherUI.CATCom2DAnalyse.StrProfile        = "斷面";
+SketcherUI.CATCom2DAnalyse.StrAutoCrossing   = " - 警告: 自動交錯斷面";
+SketcherUI.CATCom2DAnalyse.StrNonManifold    = " 警告: 沒有多重拓墣";
+SketcherUI.CATCom2DAnalyse.StrCheckPassed    = "全部檢查通過";
+SketcherUI.CATCom2DAnalyse.StrEndPtDist      = "終點距離= ";
+SketcherUI.CATCom2DAnalyse.StrProjection     = "投影";
+SketcherUI.CATCom2DAnalyse.StrImplicitProj   = "不明確投影";
+SketcherUI.CATCom2DAnalyse.StrWrongProj      = "錯誤投影";
+SketcherUI.CATCom2DAnalyse.StrIntersection   = "相交";
+SketcherUI.CATCom2DAnalyse.StrImplicitInter  = "不明確相交";
+SketcherUI.CATCom2DAnalyse.StrWrongInter     = "錯誤相交";
+SketcherUI.CATCom2DAnalyse.StrValid          = "有效";
+SketcherUI.CATCom2DAnalyse.StrDeactivated    = "未作動";
+SketcherUI.CATCom2DAnalyse.StrPoints         = "點";
+
+
+// Solving status
+StrUnderConstrained = "在拘束下";
+StrIsoConstrained   = "Iso-拘束"; 
+StrOverConstrained  = "拘束超過";
+StrInconsistent     = "不一致";
+StrNotChanged       = "未更改";
+StrUnknown          = "未知";
+StrConstraintType   = "拘束";
+StrGeometryType     = "幾何";
+StrReferenceElement  = "參考元素";
+StrConstructionGeom = " [建構]";
+StrAxisGeom =		" [軸]";
+StrInactivatedConstr = " [未啟動]";
+StrIsoConstrainedByConstruction = "已拘束 [不影響]";
+
+// Activate Command
+SketcherUI.CATComDYSActivate.GetImportedGeometry.Message = "請選擇您想要起動的投影或相交";
+
+// 2D Conic
+SketcherUI.CATComDYSConic.Pt1.Message = "任意按一下來決定第一個點";
+SketcherUI.CATComDYSConic.Pt2.Message = "任意按一下來決定第二個點";
+SketcherUI.CATComDYSConic.Pt3.Message = "任意按一下來決定圓錐第一個點";
+SketcherUI.CATComDYSConic.Pt4.Message = "任意按一下來決定圓錐第二個點";
+SketcherUI.CATComDYSConic.Pt5.Message = "任意按一下來決定圓錐第三個點";
+SketcherUI.CATComDYSConic.Pt6.Message = "任意按一下來決定第一個點的切線";
+SketcherUI.CATComDYSConic.Pt7.Message = "任意按一下來決定第二個點的切線";
+SketcherUI.CATComDYSConic.Pt8.Message = "任意按一下來決定第終點的切線";
+SketcherUI.CATComDYSConic.Pt9.Message = "任意按一下來決定圓錐外中心點";
+SketcherUI.CATComDYSConic.Tgte1.Check.Title = "切線";
+SketcherUI.CATComDYSConic.Tgte1.Check.Help = "第一個點的切線";
+SketcherUI.CATComDYSConic.Tgte1.Check.LongHelp = "終點的切線.";
+SketcherUI.CATComDYSConic.Tgte1.Check.ShortHelp = "第一個點的切線";
+SketcherUI.CATComDYSConic.Tgte2.Check.Title = "切線";
+SketcherUI.CATComDYSConic.Tgte2.Check.Help = "第二個點的切線";
+SketcherUI.CATComDYSConic.Tgte2.Check.LongHelp = "第二個點的切線.";
+SketcherUI.CATComDYSConic.Tgte2.Check.ShortHelp = "第二個切線";
+SketcherUI.CATComDYSConic.TwoTgtes.Check.Title = "切線";
+SketcherUI.CATComDYSConic.TwoTgtes.Check.Help = "終點的切線";
+SketcherUI.CATComDYSConic.TwoTgtes.Check.LongHelp = "終點的切線.";
+SketcherUI.CATComDYSConic.TwoTgtes.Check.ShortHelp = "兩個切線";
+// Gestion visu copilot
+SketcherUI.CATComDYSConic.FirstPtLim.Name.Title = "第一結束點: ";
+SketcherUI.CATComDYSConic.FirstPtLim.Name.Help = "第一結束點";
+SketcherUI.CATComDYSConic.FirstPtLim.Name.ShortHelp = "第一結束點";
+SketcherUI.CATComDYSConic.FirstPtLim.Name.LongHelp = "第一結束點";
+SketcherUI.CATComDYSConic.FirstPtLim.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConic.FirstPtLim.ULabel.ShortHelp = "第一結束點的水平座標";
+SketcherUI.CATComDYSConic.FirstPtLim.UEditor.ShortHelp = "第一結束點的水平座標";
+SketcherUI.CATComDYSConic.FirstPtLim.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConic.FirstPtLim.VLabel.ShortHelp = "第一結束點的垂直座標";
+SketcherUI.CATComDYSConic.FirstPtLim.VEditor.ShortHelp = "第一結束點的垂直座標";
+SketcherUI.CATComDYSConic.FirstPtLim.Excentricity_Label.Title = "e: ";
+SketcherUI.CATComDYSConic.FirstPtLim.Excentricity_Label.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.FirstPtLim.Excentricity_Value.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.SecondPtLim.Name.Title = "第二結束點: ";
+SketcherUI.CATComDYSConic.SecondPtLim.Name.Help = "第二結束點";
+SketcherUI.CATComDYSConic.SecondPtLim.Name.ShortHelp = "第二結束點";
+SketcherUI.CATComDYSConic.SecondPtLim.Name.LongHelp = "第二結束點";
+SketcherUI.CATComDYSConic.SecondPtLim.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConic.SecondPtLim.ULabel.ShortHelp = "第二結束點的水平座標";
+SketcherUI.CATComDYSConic.SecondPtLim.UEditor.ShortHelp = "第二結束點的水平座標";
+SketcherUI.CATComDYSConic.SecondPtLim.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConic.SecondPtLim.VLabel.ShortHelp = "第二結束點的垂直座標";
+SketcherUI.CATComDYSConic.SecondPtLim.VEditor.ShortHelp = "第二結束點的垂直座標";
+SketcherUI.CATComDYSConic.SecondPtLim.Excentricity_Label.Title = "e: ";
+SketcherUI.CATComDYSConic.SecondPtLim.Excentricity_Label.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.SecondPtLim.Excentricity_Value.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.FirstPt.Name.Title = "第一點: ";
+SketcherUI.CATComDYSConic.FirstPt.Name.Help = "第一點";
+SketcherUI.CATComDYSConic.FirstPt.Name.ShortHelp = "第一點";
+SketcherUI.CATComDYSConic.FirstPt.Name.LongHelp = "第一點";
+SketcherUI.CATComDYSConic.FirstPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConic.FirstPt.ULabel.ShortHelp = "第一點的水平座標";
+SketcherUI.CATComDYSConic.FirstPt.UEditor.ShortHelp = "第一點的水平座標";
+SketcherUI.CATComDYSConic.FirstPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConic.FirstPt.VLabel.ShortHelp = "第一點的垂直座標";
+SketcherUI.CATComDYSConic.FirstPt.VEditor.ShortHelp = "第一點的垂直座標";
+SketcherUI.CATComDYSConic.FirstPt.Excentricity_Label.Title = "e: ";
+SketcherUI.CATComDYSConic.FirstPt.Excentricity_Label.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.FirstPt.Excentricity_Value.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.SecondPt.Name.Title = "第二點: ";
+SketcherUI.CATComDYSConic.SecondPt.Name.Help = "第二點";
+SketcherUI.CATComDYSConic.SecondPt.Name.ShortHelp = "第二點";
+SketcherUI.CATComDYSConic.SecondPt.Name.LongHelp = "第二點";
+SketcherUI.CATComDYSConic.SecondPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConic.SecondPt.ULabel.ShortHelp = "第二點的水平座標";
+SketcherUI.CATComDYSConic.SecondPt.UEditor.ShortHelp = "第二點的水平座標";
+SketcherUI.CATComDYSConic.SecondPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConic.SecondPt.VLabel.ShortHelp = "第二點的垂直座標";
+SketcherUI.CATComDYSConic.SecondPt.VEditor.ShortHelp = "第二點的垂直座標";
+SketcherUI.CATComDYSConic.SecondPt.Excentricity_Label.Title = "e: ";
+SketcherUI.CATComDYSConic.SecondPt.Excentricity_Label.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.SecondPt.Excentricity_Value.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.ThirdPt.Name.Title = "第三點: ";
+SketcherUI.CATComDYSConic.ThirdPt.Name.Help = "第三點";
+SketcherUI.CATComDYSConic.ThirdPt.Name.ShortHelp = "第三點";
+SketcherUI.CATComDYSConic.ThirdPt.Name.LongHelp = "第三點";
+SketcherUI.CATComDYSConic.ThirdPt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConic.ThirdPt.ULabel.ShortHelp = "第三點的水平座標";
+SketcherUI.CATComDYSConic.ThirdPt.UEditor.ShortHelp = "第三點的水平座標";
+SketcherUI.CATComDYSConic.ThirdPt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConic.ThirdPt.VLabel.ShortHelp = "第三點的垂直座標";
+SketcherUI.CATComDYSConic.ThirdPt.VEditor.ShortHelp = "第三點的垂直座標";
+SketcherUI.CATComDYSConic.ThirdPt.Excentricity_Label.Title = "e: ";
+SketcherUI.CATComDYSConic.ThirdPt.Excentricity_Label.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.ThirdPt.Excentricity_Value.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.FirstTgte.Name.Title = "第一相切: ";
+SketcherUI.CATComDYSConic.FirstTgte.Name.Help = "第一相切點";
+SketcherUI.CATComDYSConic.FirstTgte.Name.ShortHelp = "第一相切";
+SketcherUI.CATComDYSConic.FirstTgte.Name.LongHelp = "第一相切";
+SketcherUI.CATComDYSConic.FirstTgte.AngleLabel.Title = "A: ";
+SketcherUI.CATComDYSConic.FirstTgte.AngleLabel.ShortHelp = "第一相切的角度值";
+SketcherUI.CATComDYSConic.FirstTgte.AngleEditor.ShortHelp = "第一相切的角度值";
+SketcherUI.CATComDYSConic.FirstTgte.Excentricity_Label.Title = "e: ";
+SketcherUI.CATComDYSConic.FirstTgte.Excentricity_Label.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.FirstTgte.Excentricity_Value.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.SecondTgte.Name.Title = "第二相切: ";
+SketcherUI.CATComDYSConic.SecondTgte.Name.Help = "第二相切";
+SketcherUI.CATComDYSConic.SecondTgte.Name.ShortHelp = "第二相切";
+SketcherUI.CATComDYSConic.SecondTgte.Name.LongHelp = "第二相切";
+SketcherUI.CATComDYSConic.SecondTgte.AngleLabel.Title = "A: ";
+SketcherUI.CATComDYSConic.SecondTgte.AngleLabel.ShortHelp = "第二相切的角度值";
+SketcherUI.CATComDYSConic.SecondTgte.AngleEditor.ShortHelp = "第二相切的角度值";
+SketcherUI.CATComDYSConic.SecondTgte.Excentricity_Label.Title = "e: ";
+SketcherUI.CATComDYSConic.SecondTgte.Excentricity_Label.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.SecondTgte.Excentricity_Value.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.TwoTgtes.Name.Title = "雙相切點: ";
+SketcherUI.CATComDYSConic.TwoTgtes.Name.Help = "雙相切點";
+SketcherUI.CATComDYSConic.TwoTgtes.Name.ShortHelp = "雙相切點";
+SketcherUI.CATComDYSConic.TwoTgtes.Name.LongHelp = "雙相切點";
+SketcherUI.CATComDYSConic.TwoTgtes.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConic.TwoTgtes.ULabel.ShortHelp = "雙相切點的水平座標";
+SketcherUI.CATComDYSConic.TwoTgtes.UEditor.ShortHelp = "雙相切點的水平座標";
+SketcherUI.CATComDYSConic.TwoTgtes.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConic.TwoTgtes.VLabel.ShortHelp = "雙相切點的垂直座標";
+SketcherUI.CATComDYSConic.TwoTgtes.VEditor.ShortHelp = "雙相切點的垂直座標";
+SketcherUI.CATComDYSConic.TwoTgtes.Excentricity_Label.Title = "e: ";
+SketcherUI.CATComDYSConic.TwoTgtes.Excentricity_Label.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.TwoTgtes.Excentricity_Value.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.Excentricity.Name.Title = "頂點 : ";
+SketcherUI.CATComDYSConic.Excentricity.Name.Help = "離心點";
+SketcherUI.CATComDYSConic.Excentricity.Name.ShortHelp = "離心點";
+SketcherUI.CATComDYSConic.Excentricity.Name.LongHelp = "定義離心點的頂點";
+SketcherUI.CATComDYSConic.Excentricity.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConic.Excentricity.ULabel.ShortHelp = "定義離心點的頂點的水平座標";
+SketcherUI.CATComDYSConic.Excentricity.UEditor.ShortHelp = "定義離心點的頂點的水平座標";
+SketcherUI.CATComDYSConic.Excentricity.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConic.Excentricity.VLabel.ShortHelp = "定義離心點的頂點的垂直座標";
+SketcherUI.CATComDYSConic.Excentricity.VEditor.ShortHelp = "定義離心點的頂點的垂直座標";
+SketcherUI.CATComDYSConic.Excentricity.Excentricity_Label.Title = "e: ";
+SketcherUI.CATComDYSConic.Excentricity.Excentricity_Label.ShortHelp = "離心性";
+SketcherUI.CATComDYSConic.Excentricity.Excentricity_Value.ShortHelp = "離心性";
+
+
+// 2D conic curve like GSD
+SketcherUI.CATComDYSConicCurve.SwitchBar.TwoPoints.Title = "兩點";
+SketcherUI.CATComDYSConicCurve.SwitchBar.TwoPoints.Help = "以兩點建立圓椎曲線";
+SketcherUI.CATComDYSConicCurve.SwitchBar.TwoPoints.LongHelp = "以兩點建立圓椎曲線";
+SketcherUI.CATComDYSConicCurve.SwitchBar.TwoPoints.ShortHelp = "兩點";
+SketcherUI.CATComDYSConicCurve.SwitchBar.FourPoints.Title = "四點";
+SketcherUI.CATComDYSConicCurve.SwitchBar.FourPoints.Help = "以四點建立圓椎曲線";
+SketcherUI.CATComDYSConicCurve.SwitchBar.FourPoints.LongHelp = "以四點建立圓椎曲線";
+SketcherUI.CATComDYSConicCurve.SwitchBar.FourPoints.ShortHelp = "四點";
+SketcherUI.CATComDYSConicCurve.SwitchBar.FivePoints.Title = "五點";
+SketcherUI.CATComDYSConicCurve.SwitchBar.FivePoints.Help = "以五點建立圓椎曲線";
+SketcherUI.CATComDYSConicCurve.SwitchBar.FivePoints.LongHelp = "以五點建立圓椎曲線";
+SketcherUI.CATComDYSConicCurve.SwitchBar.FivePoints.ShortHelp = "五點";
+SketcherUI.CATComDYSConicCurve.SwitchBar.StartEndTgt.Title = "開始和結束相切";
+SketcherUI.CATComDYSConicCurve.SwitchBar.StartEndTgt.Help = "在開始點和結束點建立相切";
+SketcherUI.CATComDYSConicCurve.SwitchBar.StartEndTgt.LongHelp = "在圓椎曲線的開始點和結束點建立相切";
+SketcherUI.CATComDYSConicCurve.SwitchBar.StartEndTgt.ShortHelp = "開始和結束相切";
+SketcherUI.CATComDYSConicCurve.SwitchBar.TgtIntPt.Title = "切線相交點";
+SketcherUI.CATComDYSConicCurve.SwitchBar.TgtIntPt.Help = "建立相交點在端點定義切線方向";
+SketcherUI.CATComDYSConicCurve.SwitchBar.TgtIntPt.LongHelp = "建立相交點在圓椎曲線的開始點和結束點端點定義切線方向";
+SketcherUI.CATComDYSConicCurve.SwitchBar.TgtIntPt.ShortHelp = "切線相交點";
+SketcherUI.CATComDYSConicCurve.Parameter.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "參數: ";
+SketcherUI.CATComDYSConicCurve.Parameter.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "定義參數";
+SketcherUI.CATComDYSConicCurve.Parameter.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "參數";
+SketcherUI.CATComDYSConicCurve.Parameter.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "定義參數值";
+SketcherUI.CATComDYSConicCurve.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "角度: ";
+SketcherUI.CATComDYSConicCurve.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "定義角度";
+SketcherUI.CATComDYSConicCurve.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "角度";
+SketcherUI.CATComDYSConicCurve.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "定義切線方向的角度值.";
+SketcherUI.CATComDYSConicCurve.EndPtOfCrv.Check.Title = "最近的結束點";
+SketcherUI.CATComDYSConicCurve.EndPtOfCrv.Check.Help = "定義最近的結束點";
+SketcherUI.CATComDYSConicCurve.EndPtOfCrv.Check.LongHelp = "定義最近的結束點";
+SketcherUI.CATComDYSConicCurve.EndPtOfCrv.Check.ShortHelp = "最近的結束點";
+SketcherUI.CATComDYSConicCurve.Tangent.Check.Title = "相切";
+SketcherUI.CATComDYSConicCurve.Tangent.Check.Help = "定義經過點的相切";
+SketcherUI.CATComDYSConicCurve.Tangent.Check.LongHelp = "定義圓椎曲線所經過點的相切";
+SketcherUI.CATComDYSConicCurve.Tangent.Check.ShortHelp = "經過點的相切";
+SketcherUI.CATComDYSConicCurve.StartPointState.Message = "選擇或按一下點來定位第一個結束點"; 
+SketcherUI.CATComDYSConicCurve.EndPointState.Message = "選擇或按一下點來定位第二個結束點"; 
+SketcherUI.CATComDYSConicCurve.FirstIPassPointState.Message = "選擇或按一下點來定位圓椎曲線的第一個結束點"; 
+SketcherUI.CATComDYSConicCurve.SecondIPassPointState.Message = "選擇或按一下點來定位圓椎曲線的第二個結束點"; 
+SketcherUI.CATComDYSConicCurve.ThirdIPassPointState.Message = "選擇或按一下點來定位圓椎曲線的第三個點"; 
+SketcherUI.CATComDYSConicCurve.TangentIntersectPointState.Message = "選擇或按一下點來決定相交切線點";
+SketcherUI.CATComDYSConicCurve.ParamOrPassPointState.Message = "選擇或按一下點來決定圓椎曲線經過的點或輸入參數";
+SketcherUI.CATComDYSConicCurve.StartTangentState.Message = "選擇或按一下點來決定第一個結束點的切線";
+SketcherUI.CATComDYSConicCurve.EndTangentState.Message = "選擇或按一下點來決定第二個結束點的切線";
+SketcherUI.CATComDYSConicCurve.FirstIPassTangentState.Message = "選擇或按一下點來決定圓椎曲線第一點的切線";
+SketcherUI.CATComDYSConicCurve.SecondIPassTangentState.Message = "選擇或按一下點來決定圓椎曲線第二點的切線";
+SketcherUI.CATComDYSConicCurve.NoSolution.Title   = "圓椎曲線";
+SketcherUI.CATComDYSConicCurve.NoSolution.Message = "所選元素無法建立圓椎曲線.";
+
+SketcherUI.CATComDYSConicCurve.PtCopilot.Name.Title = "點座標: ";
+SketcherUI.CATComDYSConicCurve.PtCopilot.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConicCurve.PtCopilot.ULabel.ShortHelp = "點的水平座標";
+SketcherUI.CATComDYSConicCurve.PtCopilot.UEditor.ShortHelp = "點的水平座標";
+SketcherUI.CATComDYSConicCurve.PtCopilot.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConicCurve.PtCopilot.VLabel.ShortHelp = "點的垂直座標";
+SketcherUI.CATComDYSConicCurve.PtCopilot.VEditor.ShortHelp = "點的垂直座標";
+
+SketcherUI.CATComDYSConicCurve.StartPointCplt.Name.Title = "開始點: ";
+SketcherUI.CATComDYSConicCurve.StartPointCplt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConicCurve.StartPointCplt.ULabel.ShortHelp = "開始點的水平座標";
+SketcherUI.CATComDYSConicCurve.StartPointCplt.UEditor.ShortHelp = "開始點的水平座標";
+SketcherUI.CATComDYSConicCurve.StartPointCplt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConicCurve.StartPointCplt.VLabel.ShortHelp = "開始點的垂直座標";
+SketcherUI.CATComDYSConicCurve.StartPointCplt.VEditor.ShortHelp = "開始點的垂直座標";
+
+SketcherUI.CATComDYSConicCurve.EndPointCplt.Name.Title = "結束點: ";
+SketcherUI.CATComDYSConicCurve.EndPointCplt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConicCurve.EndPointCplt.ULabel.ShortHelp = "結束點的水平座標";
+SketcherUI.CATComDYSConicCurve.EndPointCplt.UEditor.ShortHelp = "結束點的水平座標";
+SketcherUI.CATComDYSConicCurve.EndPointCplt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConicCurve.EndPointCplt.VLabel.ShortHelp = "結束點的垂直座標";
+SketcherUI.CATComDYSConicCurve.EndPointCplt.VEditor.ShortHelp = "結束點的垂直座標";
+
+SketcherUI.CATComDYSConicCurve.Point1Cplt.Name.Title = "第一點: ";
+SketcherUI.CATComDYSConicCurve.Point1Cplt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConicCurve.Point1Cplt.ULabel.ShortHelp = "第一點的水平座標";
+SketcherUI.CATComDYSConicCurve.Point1Cplt.UEditor.ShortHelp = "第一點的水平座標";
+SketcherUI.CATComDYSConicCurve.Point1Cplt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConicCurve.Point1Cplt.VLabel.ShortHelp = "第一點的垂直座標";
+SketcherUI.CATComDYSConicCurve.Point1Cplt.VEditor.ShortHelp = "第一點的垂直座標";
+
+SketcherUI.CATComDYSConicCurve.Point2Cplt.Name.Title = "第二點: ";
+SketcherUI.CATComDYSConicCurve.Point2Cplt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConicCurve.Point2Cplt.ULabel.ShortHelp = "第二點的水平座標";
+SketcherUI.CATComDYSConicCurve.Point2Cplt.UEditor.ShortHelp = "第二點的水平座標";
+SketcherUI.CATComDYSConicCurve.Point2Cplt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConicCurve.Point2Cplt.VLabel.ShortHelp = "第二點的垂直座標";
+SketcherUI.CATComDYSConicCurve.Point2Cplt.VEditor.ShortHelp = "第二點的垂直座標";
+
+SketcherUI.CATComDYSConicCurve.Point3Cplt.Name.Title = "第三點: ";
+SketcherUI.CATComDYSConicCurve.Point3Cplt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConicCurve.Point3Cplt.ULabel.ShortHelp = "第三點的水平座標";
+SketcherUI.CATComDYSConicCurve.Point3Cplt.UEditor.ShortHelp = "第三點的水平座標";
+SketcherUI.CATComDYSConicCurve.Point3Cplt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConicCurve.Point3Cplt.VLabel.ShortHelp = "第三點的垂直座標";
+SketcherUI.CATComDYSConicCurve.Point3Cplt.VEditor.ShortHelp = "第三點的垂直座標";
+
+SketcherUI.CATComDYSConicCurve.PassingPointCplt.Name.Title = "經過點: ";
+SketcherUI.CATComDYSConicCurve.PassingPointCplt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConicCurve.PassingPointCplt.ULabel.ShortHelp = "經過點的水平座標";
+SketcherUI.CATComDYSConicCurve.PassingPointCplt.UEditor.ShortHelp = "經過點的水平座標";
+SketcherUI.CATComDYSConicCurve.PassingPointCplt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConicCurve.PassingPointCplt.VLabel.ShortHelp = "經過點的垂直座標";
+SketcherUI.CATComDYSConicCurve.PassingPointCplt.VEditor.ShortHelp = "經過點的垂直座標";
+
+SketcherUI.CATComDYSConicCurve.TgtCopilot.Name.Title = "點座標: ";
+SketcherUI.CATComDYSConicCurve.TgtCopilot.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConicCurve.TgtCopilot.ULabel.ShortHelp = "點的水平座標";
+SketcherUI.CATComDYSConicCurve.TgtCopilot.UEditor.ShortHelp = "點的水平座標";
+SketcherUI.CATComDYSConicCurve.TgtCopilot.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConicCurve.TgtCopilot.VLabel.ShortHelp = "點的垂直座標";
+SketcherUI.CATComDYSConicCurve.TgtCopilot.VEditor.ShortHelp = "點的垂直座標";
+
+SketcherUI.CATComDYSConicCurve.StartTangentCplt.Name.Title = "開始切線: ";
+SketcherUI.CATComDYSConicCurve.StartTangentCplt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConicCurve.StartTangentCplt.ULabel.ShortHelp = "開始切線的水平座標";
+SketcherUI.CATComDYSConicCurve.StartTangentCplt.UEditor.ShortHelp = "開始切線的水平座標";
+SketcherUI.CATComDYSConicCurve.StartTangentCplt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConicCurve.StartTangentCplt.VLabel.ShortHelp = "開始切線的垂直座標";
+SketcherUI.CATComDYSConicCurve.StartTangentCplt.VEditor.ShortHelp = "開始切線的垂直座標";
+
+SketcherUI.CATComDYSConicCurve.EndTangentCplt.Name.Title = "結束切線: ";
+SketcherUI.CATComDYSConicCurve.EndTangentCplt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConicCurve.EndTangentCplt.ULabel.ShortHelp = "結束切線的水平座標";
+SketcherUI.CATComDYSConicCurve.EndTangentCplt.UEditor.ShortHelp = "結束切線的水平座標";
+SketcherUI.CATComDYSConicCurve.EndTangentCplt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConicCurve.EndTangentCplt.VLabel.ShortHelp = "結束切線的垂直座標";
+SketcherUI.CATComDYSConicCurve.EndTangentCplt.VEditor.ShortHelp = "結束切線的垂直座標";
+
+SketcherUI.CATComDYSConicCurve.Tangent1Cplt.Name.Title = "第一切線: ";
+SketcherUI.CATComDYSConicCurve.Tangent1Cplt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConicCurve.Tangent1Cplt.ULabel.ShortHelp = "第一切線的水平座標";
+SketcherUI.CATComDYSConicCurve.Tangent1Cplt.UEditor.ShortHelp = "第一切線的水平座標";
+SketcherUI.CATComDYSConicCurve.Tangent1Cplt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConicCurve.Tangent1Cplt.VLabel.ShortHelp = "第一切線的垂直座標";
+SketcherUI.CATComDYSConicCurve.Tangent1Cplt.VEditor.ShortHelp = "第一切線的垂直座標";
+
+SketcherUI.CATComDYSConicCurve.Tangent2Cplt.Name.Title = "第二切線: ";
+SketcherUI.CATComDYSConicCurve.Tangent2Cplt.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConicCurve.Tangent2Cplt.ULabel.ShortHelp = "第二切線的水平座標";
+SketcherUI.CATComDYSConicCurve.Tangent2Cplt.UEditor.ShortHelp = "第二切線的水平座標";
+SketcherUI.CATComDYSConicCurve.Tangent2Cplt.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConicCurve.Tangent2Cplt.VLabel.ShortHelp = "第二切線的垂直座標";
+SketcherUI.CATComDYSConicCurve.Tangent2Cplt.VEditor.ShortHelp = "第二切線的垂直座標";
+
+SketcherUI.CATComDYSConicCurve.PtTgIntCopilot.Name.Title = "切線相交點: ";
+SketcherUI.CATComDYSConicCurve.PtTgIntCopilot.ULabel.Title = "H: ";
+SketcherUI.CATComDYSConicCurve.PtTgIntCopilot.ULabel.ShortHelp = "切線相交點的水平座標";
+SketcherUI.CATComDYSConicCurve.PtTgIntCopilot.UEditor.ShortHelp = "切線相交點的水平座標";
+SketcherUI.CATComDYSConicCurve.PtTgIntCopilot.VLabel.Title = "V: ";
+SketcherUI.CATComDYSConicCurve.PtTgIntCopilot.VLabel.ShortHelp = "切線相交點的垂直座標";
+SketcherUI.CATComDYSConicCurve.PtTgIntCopilot.VEditor.ShortHelp = "切線相交點的垂直座標";
+
+SketcherUI.CATComEdit2DConicCurve.ErrorNumberElement.Title = "圓椎曲線定義";
+SketcherUI.CATComEdit2DConicCurve.ErrorNumberElement.Message = "圓椎曲線的輸入數值不可超過五個. \n 請重新輸入.";
+
+SketcherUI.CATComEdit2DConicCurve.DefinitionConicCurve.Message = "選擇欄位來修改圓椎曲線定義";
+SketcherUI.CATComEdit2DConicCurve.SelectionStartPoint.Message = "選擇或按一下點來定位第一個結束點"; 
+SketcherUI.CATComEdit2DConicCurve.SelectionEndPoint.Message = "選擇或按一下點來定位第二個結束點"; 
+SketcherUI.CATComEdit2DConicCurve.SelectionFirstPoint.Message = "選擇或按一下點來定位圓椎曲線的第一個點"; 
+SketcherUI.CATComEdit2DConicCurve.SelectionSecondPoint.Message = "選擇或按一下點來定位圓椎曲線的第二個點"; 
+SketcherUI.CATComEdit2DConicCurve.SelectionThirdPoint.Message = "選擇或按一下點來定位圓椎曲線的第三個點"; 
+SketcherUI.CATComEdit2DConicCurve.SelectionTangentIntersectionPoint.Message = "選擇或按一下點來定位圓椎曲線的切線相交點"; 
+SketcherUI.CATComEdit2DConicCurve.SelectionStartTangent.Message = "選擇或按一下點來定位圓椎曲線第一個結束點的切線"; 
+SketcherUI.CATComEdit2DConicCurve.SelectionEndTangent.Message = "選擇或按一下點來定位圓椎曲線第二個結束點的切線"; 
+SketcherUI.CATComEdit2DConicCurve.SelectionFirstTangent.Message = "選擇或按一下點來定位圓椎曲線第一個點的切線"; 
+SketcherUI.CATComEdit2DConicCurve.SelectionSecondTangent.Message = "選擇或按一下點來定位圓椎曲線第二個點的切線"; 
+SketcherUI.CATComEdit2DConicCurve.PtCopilot.Name.Title = "點座標: ";
+SketcherUI.CATComEdit2DConicCurve.PtCopilot.ULabel.Title = "H: ";
+SketcherUI.CATComEdit2DConicCurve.PtCopilot.ULabel.ShortHelp = "點的水平座標";
+SketcherUI.CATComEdit2DConicCurve.PtCopilot.UEditor.ShortHelp = "點的水平座標";
+SketcherUI.CATComEdit2DConicCurve.PtCopilot.VLabel.Title = "V: ";
+SketcherUI.CATComEdit2DConicCurve.PtCopilot.VLabel.ShortHelp = "點的垂直座標";
+SketcherUI.CATComEdit2DConicCurve.PtCopilot.VEditor.ShortHelp = "點的垂直座標";
+// Creation Offset Contour
+SketcherUI.CATCom2DOffsetContour.SelElement.Message = "選擇將以偏移值來定義的幾何元素";
+SketcherUI.CATCom2DOffsetContour.NewPosition.Message = "選擇一點或按一下來定位新元素";
+// Gestion Visu Copilote
+SketcherUI.CATCom2DOffsetContour.NewPosition.Name.Title = "新位置: ";
+SketcherUI.CATCom2DOffsetContour.NewPosition.Name.Help = "定義複製元素的新位置";
+SketcherUI.CATCom2DOffsetContour.NewPosition.Name.ShortHelp = "新位置";
+SketcherUI.CATCom2DOffsetContour.NewPosition.Name.LongHelp = "定義複製元素的新位置.";
+SketcherUI.CATCom2DOffsetContour.NewPosition.ULabel.Title = "H: ";
+SketcherUI.CATCom2DOffsetContour.NewPosition.ULabel.ShortHelp = "水平座標 (複製元素的原點)";
+SketcherUI.CATCom2DOffsetContour.NewPosition.UEditor.ShortHelp = "水平座標 (複製元素的原點)";
+SketcherUI.CATCom2DOffsetContour.NewPosition.VLabel.Title = "V: ";
+SketcherUI.CATCom2DOffsetContour.NewPosition.VLabel.ShortHelp = "垂直座標 (複製元素的原點)";
+SketcherUI.CATCom2DOffsetContour.NewPosition.VEditor.ShortHelp = "垂直座標 (複製元素的原點)";
+SketcherUI.CATCom2DOffsetContour.NewPosition.Offset_Label.Title = "偏移: ";
+SketcherUI.CATCom2DOffsetContour.NewPosition.Offset_Label.Help = "定義偏移值";
+SketcherUI.CATCom2DOffsetContour.NewPosition.Offset_Label.ShortHelp = "偏移值";
+SketcherUI.CATCom2DOffsetContour.NewPosition.Offset_Label.LongHelp = "定義原元素和複製元素的偏移值.";
+SketcherUI.CATCom2DOffsetContour.NewPosition.Offset_Value.ShortHelp = "偏移值";
+SketcherUI.CATCom2DOffsetContour.PropagSwitchBar.No_Propagation.Title = "不延伸";
+SketcherUI.CATCom2DOffsetContour.PropagSwitchBar.No_Propagation.Help = "不延伸";
+SketcherUI.CATCom2DOffsetContour.PropagSwitchBar.No_Propagation.LongHelp = "不延伸.";
+SketcherUI.CATCom2DOffsetContour.PropagSwitchBar.No_Propagation.ShortHelp = "不延伸";
+SketcherUI.CATCom2DOffsetContour.PropagSwitchBar.Tg_Propagation.Title = "切線延伸";
+SketcherUI.CATCom2DOffsetContour.PropagSwitchBar.Tg_Propagation.Help = "切線延伸";
+SketcherUI.CATCom2DOffsetContour.PropagSwitchBar.Tg_Propagation.LongHelp = "切線延伸.";
+SketcherUI.CATCom2DOffsetContour.PropagSwitchBar.Tg_Propagation.ShortHelp = "切線延伸";
+SketcherUI.CATCom2DOffsetContour.PropagSwitchBar.Pt_Propagation.Title = "點延伸";
+SketcherUI.CATCom2DOffsetContour.PropagSwitchBar.Pt_Propagation.Help = "點延伸";
+SketcherUI.CATCom2DOffsetContour.PropagSwitchBar.Pt_Propagation.LongHelp = "點延伸.";
+SketcherUI.CATCom2DOffsetContour.PropagSwitchBar.Pt_Propagation.ShortHelp = "點延伸";
+SketcherUI.CATCom2DOffsetContour.BothSideCheckBar.Check.Title = "雙邊偏移";
+SketcherUI.CATCom2DOffsetContour.BothSideCheckBar.Check.Help = "雙邊偏移";
+SketcherUI.CATCom2DOffsetContour.BothSideCheckBar.Check.LongHelp = "建立雙邊偏移.";
+SketcherUI.CATCom2DOffsetContour.BothSideCheckBar.Check.ShortHelp = "雙邊偏移";
+SketcherUI.CATCom2DOffsetContour.NbDuplications.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "複製體: ";
+SketcherUI.CATCom2DOffsetContour.NbDuplications.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "複製體";
+SketcherUI.CATCom2DOffsetContour.NbDuplications.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "複製體的數目.";
+SketcherUI.CATCom2DOffsetContour.NbDuplications.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "複製體的數目";
+SketcherUI.CATCom2DOffsetContour.PartialOffset.Title = "偏移部份完成";
+SketcherUI.CATCom2DOffsetContour.PartialOffset.Message = "警告: 只有這些偏移值會被納入. \n (建立的偏移值數目 = ";
+SketcherUI.CATCom2DOffsetContour.CheckIntersection.Title = "偏移";
+SketcherUI.CATCom2DOffsetContour.CheckIntersection.Message = "無法計算偏移. \n 未輸入 manifold 或程序線自我相交.";
+
+// Point Intersection Command
+SketcherUI.CATCom2DPointIntersect.Element.Message = "選擇一群元素與另一元素相交";
+SketcherUI.CATCom2DPointIntersect.Intersect.Message = "選擇將要相交的元素";
+
+// Point Projection Command
+SketcherUI.CATCom2DPointProject.Element.Message = "選擇一群元素將要投影至另一元素";
+SketcherUI.CATCom2DPointProject.Project.Message = "選擇將要投影的元素";
+
+SketcherUI.CATCom2DPointProject.ProjectOrtho.Message = "選擇將要投影點的元素";
+SketcherUI.CATCom2DPointProject.ProjectAlongDir.Message = "選擇點或按一下來定位點或投影方向";
+SketcherUI.CATCom2DPointProject.ProjectOntoCurve.Message = "選擇將要投影點的元素";
+
+SketcherUI.CATCom2DPointProject.SwitchBar.Orthogonal.Title = "垂直";
+SketcherUI.CATCom2DPointProject.SwitchBar.Orthogonal.Help = "建立垂直投影";
+SketcherUI.CATCom2DPointProject.SwitchBar.Orthogonal.LongHelp = "更改至垂直投影模式.";
+SketcherUI.CATCom2DPointProject.SwitchBar.Orthogonal.ShortHelp = "垂直投影";
+SketcherUI.CATCom2DPointProject.SwitchBar.AlongDirection.Title = "沿方向";
+SketcherUI.CATCom2DPointProject.SwitchBar.AlongDirection.Help = "沿方向建立投影";
+SketcherUI.CATCom2DPointProject.SwitchBar.AlongDirection.LongHelp = "更改至沿方向投影模式.";
+SketcherUI.CATCom2DPointProject.SwitchBar.AlongDirection.ShortHelp = "沿方向";
+
+SketcherUI.CATCom2DPointProject.ProjDirCplt.Name.Title = "方向: ";
+SketcherUI.CATCom2DPointProject.ProjDirCplt.ULabel.Title = "H: ";
+SketcherUI.CATCom2DPointProject.ProjDirCplt.ULabel.ShortHelp = "方向點的水平座標";
+SketcherUI.CATCom2DPointProject.ProjDirCplt.UEditor.ShortHelp = "方向點的水平座標";
+SketcherUI.CATCom2DPointProject.ProjDirCplt.VLabel.Title = "V: ";
+SketcherUI.CATCom2DPointProject.ProjDirCplt.VLabel.ShortHelp = "方向點的垂直座標";
+SketcherUI.CATCom2DPointProject.ProjDirCplt.VEditor.ShortHelp = "方向點的垂直座標";
+
+SketcherUI.CATCom2DPointProject.ProjAngle.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "角度: ";
+SketcherUI.CATCom2DPointProject.ProjAngle.Dimension.EnglobingFrame.IntermediateFrame.Label.Help = "定義投影方向的角度";
+SketcherUI.CATCom2DPointProject.ProjAngle.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "方向的角度";
+SketcherUI.CATCom2DPointProject.ProjAngle.Dimension.EnglobingFrame.IntermediateFrame.Label.LongHelp = "定義投影方向的角度";
+
+SketcherUI.CATCom2DPointProject.PointProjection.Title = "投影點";
+SketcherUI.CATCom2DPointProject.NotProjPointAlongDir.Message = "沿投影方向無法投影 !";
+SketcherUI.CATCom2DPointProject.NotProjPoint.Message = " 無法投影 !";
+SketcherUI.CATCom2DPointProject.PartialProjPoint.Message = "警告 : 無法投影一或多個點 !";
+
+// Commande Droite infinie
+SketcherUI.CATComDYSLineHV.CreateLine.Message = "選擇一點或按一下來定位線";
+SketcherUI.CATComDYSLineHV.SwitchBar.Horizontal.Title = "水平";
+SketcherUI.CATComDYSLineHV.SwitchBar.Horizontal.Help = "建立水平線";
+SketcherUI.CATComDYSLineHV.SwitchBar.Horizontal.LongHelp = "變更至水平線.";
+SketcherUI.CATComDYSLineHV.SwitchBar.Horizontal.ShortHelp = "水平線";
+SketcherUI.CATComDYSLineHV.SwitchBar.Vertical.Title = "垂直";
+SketcherUI.CATComDYSLineHV.SwitchBar.Vertical.Help = "建立垂直線";
+SketcherUI.CATComDYSLineHV.SwitchBar.Vertical.LongHelp = "變更至垂直線.";
+SketcherUI.CATComDYSLineHV.SwitchBar.Vertical.ShortHelp = "垂直線";
+SketcherUI.CATComDYSLineHV.SwitchBar.Standard.Title = "以兩點";
+SketcherUI.CATComDYSLineHV.SwitchBar.Standard.Help = "建立經過兩點的線";
+SketcherUI.CATComDYSLineHV.SwitchBar.Standard.LongHelp = "變更至經過兩點的線.";
+SketcherUI.CATComDYSLineHV.SwitchBar.Standard.ShortHelp = "經過兩點的線";
+
+// Commande Bissectrice infinie
+SketcherUI.CATCom2DBisectingLine.FirstLine.Message = "選擇用來二分面積的線";
+SketcherUI.CATCom2DBisectingLine.SecondLine.Message = "選擇用來二分面積的第二條線";
+
+// Noms des noeuds virtuels du graphe.
+ConstraintGroup = "拘束";
+GeometryGroup = "幾何";
+ExternalGroup = "使用邊線";
+
+// Edit Operator (UseEdge)
+SketcherUI.CATComEdit2DOperator.SelNewRef.Message   = "請為此操作子選取新的 3D 元素";
+SketcherUI.CATComEdit2DOperator.SelNewNear.Message   = "請為此操作子選取新的最近元素";
+SketcherUI.CATComEdit2DOperator.NoSelection   = "沒有選擇";
+SketcherUI.CATComEdit2DOperator.ReferenceElement   = "參考元素";
+
+// Edit 2DOutput
+SketcherUI.CATComEdit2DOutput.initState.Message  = "為此輸出選擇新元素";
+SketcherUI.CATComEdit2DOutput.ReferenceElement   = "參考元素";
+SketcherUI.CATComEdit2DOutput.WarningTitle.Title = "輸出特徵編輯";
+SketcherUI.CATComEdit2DOutput.DegeneratedElement.Message = "所選元素扭曲. \n 請選擇其它元素.";
+SketcherUI.CATComEdit2DOutput.AlreadyPublishElement.Message = "所選元素己發行. \n 請選擇其它元素.";
+
+// Edit Offset (UseEdge)
+SketcherUI.CATComEdit2DOffset.SelNewOffsetElem.Message   = "請為此偏移選取新的 3D 元素";
+SketcherUI.CATComEdit2DOffset.SelNewOffsetElem.Message   = "請為此偏移選取新的參考元素";
+SketcherUI.CATComEdit2DOffset.NoSelection   = "沒有選擇";
+SketcherUI.CATComEdit2DOffset.ReferenceElement   = "要偏移的物件";
+
+// Sketch Positioning
+SketcherUI.CATComCreateSketchPosition.StateCreation.Message = "選擇平面,兩條線,座標軸,平面形式修剪面或草圖";
+SketcherUI.CATComSketchPosition.stateEltSup1.Message = "選擇平面,兩條線,座標軸,平面形式修剪面或草圖";
+SketcherUI.CATComSketchPosition.stateEltSup2.Message = "選擇第二條線";
+SketcherUI.CATComSketchPosition.stateEltOrigin1.Message = "選擇原點模式或 3D 元素";
+SketcherUI.CATComSketchPosition.stateEltOrigin2.Message = "選擇第二條線";
+SketcherUI.CATComSketchPosition.stateEltOrient.Message = "選擇原點模式或 3D 元素";
+SketcherUI.CATComSketchPosition.stateNeutral.Message = "有效化絕對位置或修改設定";
+
+// Line Normal to Curve
+SketcherUI.CATCom2DLineNormalToCurve.state1.Message  = "按一下來定義線的第一個端點";
+SketcherUI.CATCom2DLineNormalToCurve.state2.Message = "按一下來選擇曲線";
+SketcherUI.CATCom2DLineNormalToCurve.state3.Message = "按一下來選擇曲線";
+SketcherUI.CATCom2DLineNormalToCurve.state4.Message = "按一下來定義線的第二個端點";
+SketcherUI.CATCom2DLineNormalToCurve.Pt1Agt.Name.Title = "第一點: ";
+SketcherUI.CATCom2DLineNormalToCurve.Pt1Agt.Name.Help = "第一點 ";
+SketcherUI.CATCom2DLineNormalToCurve.Pt1Agt.Name.ShortHelp = "第一點";
+SketcherUI.CATCom2DLineNormalToCurve.Pt1Agt.Name.LongHelp = "第一點";
+SketcherUI.CATCom2DLineNormalToCurve.Pt1Agt.ULabel.Title = "H: ";
+SketcherUI.CATCom2DLineNormalToCurve.Pt1Agt.ULabel.ShortHelp = "第一點的第一個座標";
+SketcherUI.CATCom2DLineNormalToCurve.Pt1Agt.UEditor.ShortHelp = "第一點的第一個座標";
+SketcherUI.CATCom2DLineNormalToCurve.Pt1Agt.VLabel.Title = "V: ";
+SketcherUI.CATCom2DLineNormalToCurve.Pt1Agt.VLabel.ShortHelp = "第一點的第二個座標";
+SketcherUI.CATCom2DLineNormalToCurve.Pt1Agt.VEditor.ShortHelp = "第一點的第二個座標";
+SketcherUI.CATCom2DLineNormalToCurve.Pt2Agt.Name.Title = "第二點: ";
+SketcherUI.CATCom2DLineNormalToCurve.Pt2Agt.Name.Help = "第二點";
+SketcherUI.CATCom2DLineNormalToCurve.Pt2Agt.Name.ShortHelp = "第二點";
+SketcherUI.CATCom2DLineNormalToCurve.Pt2Agt.Name.LongHelp = "第二點";
+SketcherUI.CATCom2DLineNormalToCurve.Pt2Agt.ULabel.Title = "H: ";
+SketcherUI.CATCom2DLineNormalToCurve.Pt2Agt.ULabel.ShortHelp = "第二點的第一個座標";
+SketcherUI.CATCom2DLineNormalToCurve.Pt2Agt.UEditor.ShortHelp = "第二點的第一個座標";
+SketcherUI.CATCom2DLineNormalToCurve.Pt2Agt.VLabel.Title = "V: ";
+SketcherUI.CATCom2DLineNormalToCurve.Pt2Agt.VLabel.ShortHelp = "第二點的第二個座標";
+SketcherUI.CATCom2DLineNormalToCurve.Pt2Agt.VEditor.ShortHelp = "第二點的第二個座標";
+SketcherUI.CATCom2DLineNormalToCurve.LineNormalToCurveMode.Check.Title = "選擇曲線前";
+SketcherUI.CATCom2DLineNormalToCurve.LineNormalToCurveMode.Check.Help = "建立線之前先選擇曲線";
+SketcherUI.CATCom2DLineNormalToCurve.LineNormalToCurveMode.Check.LongHelp = "建立線之前先選擇曲線";
+SketcherUI.CATCom2DLineNormalToCurve.LineNormalToCurveMode.Check.ShortHelp = "選擇曲線前";
+
+//edit spline
+SketcherUI.CATComEdit2DSpline.ControlPt.Name.Title = "點座標: ";
+SketcherUI.CATComEdit2DSpline.ControlPt.ULabel.Title = "H: ";
+SketcherUI.CATComEdit2DSpline.ControlPt.ULabel.ShortHelp = "第一個點座標";
+SketcherUI.CATComEdit2DSpline.ControlPt.UEditor.ShortHelp = "第一個點座標";
+SketcherUI.CATComEdit2DSpline.ControlPt.VLabel.Title = "V: ";
+SketcherUI.CATComEdit2DSpline.ControlPt.VLabel.ShortHelp = "第二個點座標";
+SketcherUI.CATComEdit2DSpline.ControlPt.VEditor.ShortHelp = "第二個點座標";
+
+SketcherUI.CATComEdit2DSpline2.PanelState.Message  = "選取控制點且必要時, 設定切線和曲率半徑或移除它.";
+SketcherUI.CATComEdit2DSpline2.SelNewPoint.Message  = "選取所需的新控制點";
+SketcherUI.CATComEdit2DSpline2.SelCurveTgtDir.Message  = "選擇所選點的切線方向";
+SketcherUI.CATComEdit2DSpline2.SelCurveCrvDir.Message  = "選擇所選點的曲率方向";
+SketcherUI.CATComEdit2DSpline2.SelCurveRefElt.Message  = "選擇所選點的參考元素";
+SketcherUI.CATComEdit2DSpline2.ControlPt.Name.Title = "控制點: ";
+SketcherUI.CATComEdit2DSpline2.ControlPt.ULabel.Title = "H: ";
+SketcherUI.CATComEdit2DSpline2.ControlPt.ULabel.ShortHelp = "點的水平座標";
+SketcherUI.CATComEdit2DSpline2.ControlPt.UEditor.ShortHelp = "點的水平座標";
+SketcherUI.CATComEdit2DSpline2.ControlPt.VLabel.Title = "V: ";
+SketcherUI.CATComEdit2DSpline2.ControlPt.VLabel.ShortHelp = "點的垂直座標";
+SketcherUI.CATComEdit2DSpline2.ControlPt.VEditor.ShortHelp = "點的垂直座標";
+
+//Output creation
+SketcherUI.CATComDYSOutput.InitState.Message = "選擇一或多個 2D 幾何.";
+SketcherUI.CATComDYSOutput.WarningPanel.Title = "輸出特徵建立";
+SketcherUI.CATComDYSOutput.PublishedElement.Message = "所選元素己發行. \n 請選擇其它元素.";
+SketcherUI.CATComDYSOutput.AllPublishedElement.Message = "所選元素己發行. \n 請選擇其它元素.";
+SketcherUI.CATComDYSOutput.DegeneratedElement.Message = "所選元素扭曲. \n 請選擇其它元素.";
+SketcherUI.CATComDYSOutput.AllDegeneratedElement.Message = "所選元素扭曲. \n 請選擇其它元素.";
+SketcherUI.CATComDYSOutput.PublishAndDegeneratElement.Message = "所選元素己發行且扭曲. \n 請選擇其它元素.";
+SketcherUI.CATComDYSOutput.WarningCreation.Message = "警告 : 一或多個元素己發行且扭曲. \n 已建立 /p1 輸出特徵.";
+
+// Contextual (Corner/Chamfer)
+SketcherUI.CATComDYSContextual.MultiSelError.Message ="點屬於相同輸入幾何 !\n 建構線選項不允許多重選擇. \n 分別選擇點並檢查選項.";
+SketcherUI.CATComDYSContextual.MultiSelError.Title   ="多重選擇";
+
+// Fix Together 
+SketcherUI.CATComDYSFixTogether.SelectionState.Message = "選擇一或多個 2D 幾何元素";
+SketcherUI.CATComDYSFixTogether.EditFixTogether.Message = "編輯, 選擇一或多個 2D 幾何元素";
+
+//Output Profile creation
+SketcherUI.CATComDYSOutputProfile.InitState.Message = "選擇一或多個 2D 幾何元素";
+SketcherUI.CATComDYSOutputProfile.EditOutputProfile.Message = "編輯輸出斷面.";
+
+//Edition Output Profile creation
+SketcherUI.CATComEdit2DOutputProfile.EditOutputProfile.Message = "選擇一或多個 2D 幾何元素";
+SketcherUI.CATComEdit2DOutputProfile.ConnexityWarning.Message = "未驗證連續性 !";
+SketcherUI.CATComEdit2DOutputProfile.TangencyWarning.Message = "未驗證切線連續性 !";
+SketcherUI.CATComEdit2DOutputProfile.CurvatureWarning.Message = "未驗證曲率連續性 !";
+SketcherUI.CATComEdit2DOutputProfile.ManifoldWarning.Message = "未驗證 Manifold !";
+SketcherUI.CATComEdit2DOutputProfile.IntersectWarning.Message = "已存相交 !";
+SketcherUI.CATComEdit2DOutputProfile.HomogeneousWarning.Message = "未驗證 Homogeneity !";
+SketcherUI.CATComEdit2DOutputProfile.InvalidInputs.Message = "無效輸入";
+SketcherUI.CATComEdit2DOutputProfile.HelpInputs.Title = "輸出斷面定義"; 
+SketcherUI.CATComEdit2DOutputProfile.HelpInputs.Message = "已刪除輸入幾何元素 \n 您要使用輸出幾何為輸入嗎 ?";
+
+SketcherUI.CATSwitchHeaderInSelect.OutputProfileSetEltTypeConstruction.Title = "警告";
+SketcherUI.CATSwitchHeaderInSelect.OutputProfileSetEltTypeConstruction.Message = "幾何元素已顯現在輸出幾何斷面中. \n 如您轉換此幾何元素為建構元素 \n 輸出斷面結果將會更改. \n\n 您確定要執行嗎?";
+
+// Constraint multiEdition
+SketcherUI.CATComDYSCstMultiEdition.SelectionState.Message = "選擇一或多個 2D 拘束";
+SketcherUI.CATComDYSCstMultiEdition.EditionState.Message = "選擇一個 2D 拘束";
+
+SketcherUI.CATComDYSInit.AggregSketchKO.Title   = "警告";
+SketcherUI.CATComDYSInit.AggregSketchKO.Message = "您無法在目前特徵新增草圖.\n ?前特徵指向外部應用程式.\n 定義另一特徵為目前的特徵.";
+

@@ -1,0 +1,56 @@
+// =====================================================================
+// Erreurs Manufacturing
+// Essayer de formater vos messages en specifiant (delimiteur = caracteres fin de ligne) :
+//       Request      (ce que l'on tentait de faire)
+//       Diagnostic   (ce qui est arrive)
+//       Advice       (...ce qu'il pourrait faire si possible)
+// =====================================================================
+
+ComputeErr="     刀具路徑顯示問題 .\n            請檢查您的參數.";
+SetDataFromTool="     需要重新計算刀具路徑 \n 設定刀具資料時發生錯誤 \n 請檢查您的參數";
+SetTolerance="     需要重新計算刀具路徑 \n 設定容差時發生錯誤 \n 請檢查您的參數";
+SetToolAxis="     需要重新計算刀具路徑 \n 設定刀軸時發生錯誤 \n 請檢查您的參數";
+SetGeometry="     需要重新計算刀具路徑 \n 設定幾何時發生錯誤 \n 請檢查您的參數";
+SetToolPositionMode="     需要重新計算刀具路徑 \n 設定刀具位置時發生錯誤 \n 請檢查您的參數";
+SetMultiLevelData="     需要重新計算刀具路徑 \n 設定刀具多層資料時發生錯誤 \n 請檢查您的參數";
+SetAppRetMotion="     需要重新計算刀具路徑 \n 設定副程式時發生錯誤 \n 請檢查您的參數";
+SetPlnCircleMotion="     需要重新計算刀具路徑 \n 設定副程式時發生錯誤 \n 請檢查您的參數";
+ComputeToolPath="     需要重新計算刀具路徑 \n 設定刀具路徑資料時發生錯誤 \n 請檢查您的參數";
+SetToolPath="     需要重新計算刀具路徑 \n 設定刀具路徑資料時發生錯誤 \n 請檢查您的參數";
+SetClearMotion="     需要重新計算刀具路徑 \n 設定驅動曲線時發生錯誤 \n 請檢查您的參數";
+SetDriveCurve="     需要重新計算刀具路徑 \n 設定 2D參數時發生錯誤 \n 請檢查您的參數";
+SetContouringMode="     需要重新計算刀具路徑 \n 設定外形模式時發生錯誤 \n 請檢查您的參數";
+NoSfyPlane="    副程式未定義必須的安全面";
+NotAuthorizedAxialMode="目前的軸向模式只可使用在兩平面間的外形\n 參數以層的階數來計算";
+WrongToolAxisOrientation="刀具軸必須垂直於底部平面"; 
+NotValidFinishOnSoftBottom="參數修改 \n 精銑模式不相容於底部\n 請檢查您的參數";
+NotAuthorizedOffsetOnRelim="在限制元素的負預留值不可超過刀具半徑值";
+ForceContouringModeWithProfileOutput="外部選擇設定為圓形以便輸出圓的刀具路徑輸出"; 
+NegativeOffsetOnContourWithProfileOutput="外形的負預留值必須被設成正數或不設定";
+CutterProfileWithoutBetweenTwoPlanes="輸出形式將以平面間的不同外形來計算";
+CutcomWithCutterProfileMode="- Cutcom PP 字元在副程式中被偵測到 \n- 刀具外形開啟 : 自動加入數控補償資料輸出 \n- 可能會導致不可測結果";
+CutterProfileModeWithoutAppMacro="- 刀具外形模式開啟但未定義進刀副程式 \n- 定義進刀副程式允許刀具連接可使用";
+InvalidRelimOffset="截斷元素的預留較小 -(刀具半徑)\n- 將自動更改至 -((刀具半徑)";
+InvalidNbRelimElem="在點定位模式選取超過一個以上的限制元素 \n 請移除無效限制元素 ";
+NoRelimElemDetected="在點定位模式未選取限制元素 \n 請選擇限制元素 ";
+NoRelimitingPointAllowed="在點定位模式點不可當做限制元素 \n 請選取曲線限制元素 ";
+MonoContourOnRelim="一個以上導引不允許限制元素";
+CornerizeValues="HSM 轉角路徑不可超過刀具半徑";
+CannotEdit="動作無法正確編輯 \n";
+SoftInContour="斷面中含有軟元素時不允許含有截斷元素";
+
+ERR_1000.Request    = "選擇點或頂點來當做開始或結束的截斷元素.";
+ERR_1000.Diagnostic = "在此情形截斷和預留無法計入.
+\n 在此形式選擇下開始或截斷將設定成 開啟.";
+ERR_1000.Advice     = "選擇曲線和邊線來做開始或結束的截斷元素以便將截斷和預留計入.";
+
+ERR_1001.Request    = "萃取斷面."; 
+ERR_1001.Diagnostic = "無法萃取: 修剪面連接間無法決定斷面";
+ERR_1001.Advice     = "請選取其它修剪面或邊線";
+
+ERR_1002.Request    = "在島上讀取預留."; 
+ERR_1002.Diagnostic = "島上的預留和外形預留不同";
+ERR_1002.Advice     = "外形預留應用在所有島上";
+
+
+

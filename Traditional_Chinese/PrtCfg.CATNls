@@ -1,0 +1,156 @@
+PrtCfg.Title = "零件設計";
+PrtCfg.Help = "零件設計工作檯";
+PrtCfg.ShortHelp = "零件設計";
+PrtCfg.LongHelp = "此工作檯可用來產生零件.";
+
+
+// Menu Edit
+
+PrtUpdate.Mnemonic="U";
+PrtActiveObject.Mnemonic="A";
+
+// Menu Insert
+// TSN le 24 05 00 ajout du titre 
+PrtSelect.Title="選擇 (B)";
+// TSN le 24 05 00 ajout du titre 
+PrtSketcher.Title="草圖 (S)";
+PrtSketch.Title="草圖";
+PrtSketch.Mnemonic="S";
+PrtSketchPositioning.Mnemonic="k";
+PrtBody.Mnemonic="B";
+PrtFeatNewBody.Mnemonic="S";
+ContainerGS.Title="幾何組";
+ContainerBody.Title="本體";
+
+PrtTransformationFeature.Title="移轉特徵(T)";
+PrtTransformationFeature.Mnemonic="T";
+PrtMirror.Mnemonic="M";
+PrtSplit.Mnemonic="S";
+PrtScaling.Mnemonic="c";
+PrtRectangularPattern.Mnemonic="R";
+PrtCircularPattern.Mnemonic="C";
+PrtUserPattern.Mnemonic="U";
+PrtTranslation.Mnemonic="T";
+PrtRotation.Mnemonic="o";
+PrtSymmetry.Mnemonic="y";
+
+PrtDressupFeature.Title="修飾特徵(D)";
+PrtDressupFeature.Mnemonic="D";
+PrtFillet.Mnemonic="F";
+PrtFilletVariable.Mnemonic="V";
+PrtFilletFace.Mnemonic="a";
+PrtFilletTritangent.Mnemonic="r";
+PrtChamfer.Mnemonic="C";
+PrtDraftStandard.Mnemonic="r";
+PrtDraftReflect.Mnemonic="f";
+PrtShell.Mnemonic="S";
+PrtThickness.Mnemonic="T";
+
+PrtNewDraft.Title="進階草圖";
+PrtNewDraft.Mnemonic="N"; 
+
+PrtBooleanOperation.Title="布林運算(B)";
+PrtBooleanOperation.Mnemonic="B";
+PrtBoolAssemble.Mnemonic="s";
+PrtBoolAdd.Mnemonic="A";
+PrtBoolRemove.Mnemonic="R";
+PrtBoolIntersect.Mnemonic="I";
+PrtBoolTrim.Mnemonic="U";
+BoolRemoveLump.Mnemonic="L";
+
+// @RGL V5R4 powercopy
+PrtAdvancedDup.Title        = "進階複製工具組";
+PrtPowerCopy.Title          = "進階複製";
+PrtTemplate.Title           = "進階複製";
+PrtCatalog.Title            = "目錄";
+
+// @RGL V5R7 UDF
+PrtUDF.Title        = "使用者特徵";
+
+PrtSurfaceBasedFeature.Title="曲面型特徵(S)";
+PrtSurfaceBasedFeature2.Title="曲面加強型特徵";
+PrtSurfaceBasedFeature.Mnemonic="S";
+PrtOffset.Mnemonic="T";
+PrtClose.Mnemonic="C";
+PrtSewing.Mnemonic="w";
+
+PrtSketchBasedFeature.Title="草圖型特徵(k)";
+PrtSketchBasedFeature2.Title="草圖精簡型特徵";
+PrtSketchBasedFeature.Mnemonic="k";
+PrtPad.Mnemonic="P";
+PrtPocket.Mnemonic="o";
+PrtHole.Mnemonic="H";
+PrtShaft.Mnemonic="S";
+PrtGroove.Mnemonic="G";
+PrtStiffener.Mnemonic="i";
+PrtRib.Mnemonic="R";
+PrtSlot.Mnemonic="S";
+PrtPositiveLoft.Mnemonic="L";
+PrtNegativeLoft.Mnemonic="f";
+// @ RGL V5R6 : Mnemonic a rajouter sur Blend
+PrtPadDF.Mnemonic="a";
+PrtPocketDF.Mnemonic="c";
+
+PrtConstraints.Title="拘束(C)";
+PrtConstraints.Mnemonic="C";
+PrtConstraint.Mnemonic="C";
+PrtConstraintWithPanel.Mnemonic="o";
+PrtReferenceElements.Title="參考元素(R)";
+PrtReferenceElements.Mnemonic="R";
+PrtPlane.Title="Plane";
+PrtPlane.Mnemonic="P";
+PrtRectangles.Mnemonic="P";
+PrtPlaneOffset.Mnemonic="O";
+PrtPlaneAngle.Mnemonic="A";
+PrtSpline.Mnemonic="S";
+PrtLine.Mnemonic="L";
+PrtPoint.Mnemonic="o";
+
+// Menu Tools
+
+PrtParentChildren.Mnemonic="P";
+PrtEquation.Mnemonic="E";
+
+// Palettes
+
+PrtWireframe.Title="參考元素";
+PrtTools.Title="工具";
+PrtView.Title="視圖";
+PrtWireframe1.Title="加強形參考元素";
+PrtWireframe2.Title="精簡形參考元素";
+PrtAnalysis.Title="分析";
+PrtAnnotationsPalette.Title="註解";
+
+//Sous-palettes
+
+PrtFillet.Title="圓角";
+PrtDraftContainer.Title="脫模";
+PrtSurfaceBased.Title="曲面型特徵";
+PrtTransformation.Title="轉換";
+PrtBoolean.Title="布林運算";
+PrtContainerPad.Title="凸塊";
+PrtContainerPocket.Title="減重槽";
+PrtPattern.Title="陣列";
+PrtInsertBody.Title="插入";
+PrtContainerSketcher.Title="草圖";
+PrtContainerAdvSketchBaseFeat.Title="進階拉伸特徵";
+
+// Sketch-Based Compact Expanded ToolBars
+PrtContainerPrism.Title="拉伸";
+PrtContainerRevol.Title="旋轉";
+PrtContainerSweep.Title="掃掠";
+PrtContainerLoft.Title="混成";
+
+// Reference Element Compact Expanded ToolBars
+PrtContainerWire.Title="參考元素";
+
+// AdvancedDressUp ToolBar
+PrtAdvancedDressUp.Title="進階修飾特徵";
+
+
+// Only Current Toolbar
+PrtOnlyCurrent.Title="視圖模式";
+
+// Remove Face Tool bar
+PrtRemoveFace.Title = "移除或更換修剪面";
+

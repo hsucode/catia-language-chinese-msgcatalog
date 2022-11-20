@@ -1,0 +1,112 @@
+// This file contains all error messages
+
+// Input Errors
+// GSSMfrERR_1000 - GSSMfrERR_1999
+
+GSSMfrERR_1000 = "零件內容不能是空的";
+GSSMfrERR_1001 = "未設定整體辨識控制";
+GSSMfrERR_1002 = "未選擇修剪面";
+GSSMfrERR_1003 = "未選擇本體";
+GSSMfrERR_1004 = "所選特徵型式不支援";
+GSSMfrERR_1005 = "設定未通過";
+GSSMfrERR_1006 = "設定特徵 RSUR 不可用";
+GSSMfrERR_1007 = "儲存使用者輸入錯誤";
+GSSMfrERR_1008 = "進度對話框中修剪面顯示數目錯誤";
+GSSMfrERR_1009 = "萃取使用者輸入錯誤";
+GSSMfrERR_1010 = "處理使用者輸入錯誤";
+GSSMfrERR_1011 = "顯示所選本體名稱錯誤";
+GSSMfrERR_1012 = "一個或以上所選本體與所選標準不一致";
+GSSMfrERR_1013 = "處理一個或以上的預選本體發生錯誤";
+GSSMfrERR_1014 = "處理一個或以上的預選修剪面發生錯誤";
+GSSMfrERR_1015 = "數值 /p1/p2 超過範圍 : 應該大於 0/p2";
+GSSMfrERR_1016 = "選擇了部份無效修剪面 \n 只選特徵的所有修剪面";
+GSSMfrERR_1017 = "未選擇所有特徵的修剪面 \n 選擇特徵的所有修剪面";
+GSSMfrERR_1018 = "選擇屬於本體的修剪面";
+GSSMfrERR_1019 = "選擇含有一個以上 lumps 本體的修剪面 \n 請選擇其它修剪面";
+GSSMfrERR_1020 = "選擇含有一個以上 lumps 本體的修剪面 \n 請選擇其它本體";
+GSSMfrERR_1021 = "無法選擇本體";
+GSSMfrERR_1022 = "在隱藏模式選擇本體 \n 請選擇其它本體";
+GSSMfrERR_1023 = "所選零件不是最新的 \n 請在辨識前先更新它";
+GSSMfrERR_1024 = "此修剪面上無可用特徵開啟 \n 請選擇其它修剪面";
+GSSMfrERR_1025 = "使用者輸入錯誤 \n\t1. 所選曲面只含有一個修剪面 \n\t2. OR 修剪面間沒有連續性.";
+
+// Core Library/CV Errors
+// GSSMfrERR_2000 - GSSMfrERR_2999
+GSSMfrERR_2000 = "建立 FRBODY 時發生錯誤";
+GSSMfrERR_2001 = "萃取 CamView 管理時發生錯誤";
+GSSMfrERR_2002 = "萃取 CamView 時發生錯誤";
+GSSMfrERR_2003 = "辨識指定特徵時發生錯誤";
+GSSMfrERR_2004 = "未辨識特徵";
+GSSMfrERR_2005 = "辨識特徵失敗";
+GSSMfrERR_2006 = "辨識特徵失敗 \n 請確認您至少選擇了一個所需辨識特徵的修剪面";
+GSSMfrERR_2007 = "所選本體沒有 2.5-軸可加工的特徵";
+GSSMfrERR_2008 = "/p1:\n/p2\n 您要以其它的本體繼續嗎 ?";
+GSSMfrERR_2009 = "/p1:\n/p2";
+GSSMfrERR_2010 = "銑製特徵為尖銳圓角 \n 此種未擠出特徵無法辨識";
+GSSMfrERR_2011 = "無法在多重 LUMP 且無完整外形的本體上辨識特徵";
+GSSMfrERR_2012 = "辨識特徵失敗. \n 尺寸太小以致無法加工";
+
+
+// Mapper Errors
+// GSSMfrERR_3000 - GSSMfrERR_3999
+GSSMfrERR_3000 = "對應 CV 特徵至 GSSMfrFeature 失敗";
+GSSMfrERR_3001 = "建立可加工特徵失敗. \n 頂部修剪面與底部不平行.";
+
+
+
+// Creation Erros
+// GSSMfrERR_4000 - GSSMfrERR_4999
+GSSMfrERR_4000 = "無法建立儲存使用者輸入的新物件";
+GSSMfrERR_4001 = "無法為命令狀態表建立一個或以上的所需狀態";
+GSSMfrERR_4002 = "無法為命令建立一個或以上的對話框";
+GSSMfrERR_4003 = "無法建立一個或以上的轉換使用者動作至輸入的對話框";
+GSSMfrERR_4004 = "因特徵已存在加工視圖中以致無法建立.";
+
+
+// Other Internal Errors
+// GSSMfrERR_5000 - GSSMfrERR_5999
+GSSMfrERR_5000 = "從零件內容中萃取零件失敗";
+GSSMfrERR_5001 = "從零件內容中萃取本體失敗";
+GSSMfrERR_5002 = "執行狀態表失敗";
+GSSMfrERR_5003 = "所選的使用者設定無法儲存在 CATSetting 檔案中";
+GSSMfrERR_5004 = "辨識一個或以上的可加工特徵失敗";
+GSSMfrERR_5005 = "由參數無法建立編輯器";
+GSSMfrERR_5006 = "萃取作動文件失敗";
+GSSMfrERR_5007 = "從 CATNls 檔案讀取失敗";
+GSSMfrERR_5008 = "輸出可加工特徵資訊錯誤";
+GSSMfrERR_5009 = "無法萃取目前使用者簽入名稱";
+GSSMfrERR_5010 = "無法萃取所需環境名稱";
+GSSMfrERR_5011 = "無法萃取系統暫目錄";
+GSSMfrERR_5012 = "所選修剪面無法指定可加工區域 \n 請確定您已選擇了正確修剪面";
+GSSMfrERR_5013 = "在目前工作中萃取長度單位失敗";
+GSSMfrERR_5014 = "選擇本體空的 \n 請選其它本體";
+GSSMfrERR_5015 = "沒有特徵與所選修剪面相關 \n 請選擇其它修剪面";
+GSSMfrERR_5016 = "使用者取消了特徵辨識特徵";
+GSSMfrERR_5017 = "檢查所選本體的顯示或不顯示情形";
+GSSMfrERR_5018 = "辨識特徵與指定型式不同.\n";
+
+// Information
+GSSMfrInfo_1000 = "因為更改設計表導致需更新加工視圖. \n 現在要更新加工視圖嗎 ?";
+GSSMfrInto_1001 = "建立 /p2 特徵的 /p1 ";
+
+// User Choice
+GSSMfrInterruptChoice_1000 = "Feature Recognition was interrupted.Do you wish to create the features recognized so far?";
+GSSMfrInterruptChoice_1001 = "Feature Recognition was interrupted.Do you wish to create the features and patterns so far?";
+GSSMfrInterruptChoice_1003 = "Feature Creation was interrupted";
+
+//Co-Axial Errors
+GSSMfrERR_CoAxial_1000 ="Merge Operation failed \n Selected Holes must have same Diameter";
+GSSMfrERR_CoAxial_1001 ="Merge Operation failed \n Selected Holes must have same Axis";
+GSSMfrERR_CoAxial_1002 ="Merge Operation failed \n Selection must have only one Blind Hole \n Blind Hole Must be the lowermost in the Hole \n sequence";
+GSSMfrERR_CoAxial_1003 ="Merge Operation failed \n Selected Holes must have same Fitting Tolerances";
+GSSMfrERR_CoAxial_1004 ="Merge Operation failed \n Some of the selected holes does not contain Tolerance hole";
+GSSMfrERR_CoAxial_1005 ="Merge Operation failed \n Selected holes does not contain same Thread Parameters";
+GSSMfrERR_CoAxial_1006 ="Merge Operation failed \n There Should not be more than one Blind Hole in Selected Holes \n Select Holes with One Blind Hole";
+GSSMfrERR_CoAxial_1007 ="Merge Operation failed \n Selected Hole should not have discontinous Threads";
+GSSMfrERR_CoAxial_1008 ="Merge Operation failed \n In Selected Holes Top Most hole should be Threaded";
+GSSMfrERR_CoAxial_1009 ="Selected Hole Should not be a part of Pattern";
+GSSMfrERR_CoAxial_10010 ="Counter Bore or Counter Sunk or Counter Drill Hole \n is Having Hole Axis in Reverse direction \n Merge is not Correct \n Counter Hole should be top or Bottom Hole, all other Simple Hole's should lie below";
+GSSMfrERR_CoAxial_10011 ="Selected Merge Hole should contain Onle One Counter Hole";
+GSSMfrERR_CoAxial_10012 ="There is a Hole of smaller Diameter which lies on the same axis of the selected Holes \n Merging this holes may create problem to smaller Hole";
+GSSMfrERR_CoAxial_1010 = "Merge Operation failed \n Selected holes do not have same Thread Sense";
+

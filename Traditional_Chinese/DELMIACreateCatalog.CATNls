@@ -1,0 +1,148 @@
+
+
+InputErrorNoManagerId           = "\t\t!!!¿ù»~ : catalog management not available";
+InputErrorFileNotFoundId        = "\t\t!!!¿ù»~ : file not found or missing for argument /p1";
+InputErrorBadArgumentsId        = "\t\t!!!¿ù»~ : bad or missing argument for /p1";
+InputErrorIncompatibilityId     = "\t\t!!!¿ù»~ : option incompatibility between /p1 and /p2";
+InputErrorBadD5RootLibId        = "\t\t!!!¿ù»~ : /p1 invalid D5 root library.";
+InputErrorNoD5RootLibId         = "\t\t!!!¿ù»~ : No D5 root library defined.";
+InputErrorSessionId             = "\t\t!!!¿ù»~ : Failed to create the session";
+InputErrorUnknownArgumentsId    = "\t\t!!!¿ù»~ : Unknown arguments for /p1";
+
+InputStartId                    = "µ{¦¡°õ¦æ¤¤...";
+InputEndId                      = "µ{¦¡°õ¦æ¤¤...";
+
+InputDocumentReadOnlyId         = "\t\t!!Äµ§i : Document in read-only mode: /p1";
+
+
+InputErrorD5RootPathId          = "\t\t!!!¿ù»~ : -p argument invalid or missing";
+InputErrorV5RootPathId          = "\t\t!!!¿ù»~ : -t argument invalid or missing";
+InputErrorManufId               = "\t\t!!!¿ù»~ : -manuf argument invalid or missing";
+InputErrorManufListId           = "\t\t!!!¿ù»~ : -lmanuf argument invalid or missing";
+InputErrorRootCatalogId         = "\t\t!!!¿ù»~ : -rootcatalog argument invalid or missing";
+InputErrorFileNameId            = "\t\t!!!¿ù»~ : -file argument invalid or missing";
+InputErrorNbArgumentsId         = "\t\t!!!¿ù»~ : too many arguments";
+InputErrorD5PathId              = "\t\t!!!¿ù»~ : The path for the D5 Device library is incorrect";
+InputErrorD5LibId               = "\t\t!!!¿ù»~ : The path for the D5 Device library is uncorrect. Please provide the path to a library(example : D:\\Robotlib on Windows or /usr/Weldgunlib, ...). It is case sensitive.";
+InputErrorSessionCreationId     = "\t\t!!!¿ù»~ : Session CAN NOT BE CREATED. Start another shell";
+InputErrorFileLocationId        = "\t\t!!!¿ù»~ : The file specified /p1 can not be located at defined location /p2";
+InputErrorGetV5ProductId        = "\t\t!!!¿ù»~ : Failed to obtain V5 CATProduct document : /p1";
+InputErrorCatalogCreationId     = "\t\t!!!¿ù»~ : Failed in creation of V5 catalogs : /p1";
+InputErrorWriteId               = "\t\t!!!¿ù»~ : Write permission denied for /p1";
+InputErrorOpenId                = "\t\t!!!¿ù»~ : Can not open /p1";
+InputErrorSaveId                = "\t\t!!!¿ù»~ : Can not save /p1";
+InputErrorCreateId              = "\t\t!!!¿ù»~ : Can not create /p1";
+InputErrorDeleteId              = "\t\t!!!¿ù»~ : Can not delete /p1";
+InputErrorDeleteId              = "\t\t!!!¿ù»~ : Can not delete /p1";
+InputNbErrorId                  = "\t\tNumber of errors : /p1";
+
+
+InputDocumentCreationId         = "\t\t\tCreation of /p1";
+InputDocumentFoundId            = "\t\t\tDocument found at /p1";
+InputDocumentSavedId            = "\t\t\tDocument saved at /p1";
+InputDocumentSavingId           = "\t\t\tDocument saving ... : /p1";
+InputD5ConversionId             = "\t\t\tConverting D5 Data ...";
+InputNbD5DeviceFoundId          = "\t\t\tNumber of D5 Devices found : /p1";
+InputCatalogSavedId             = "\tCatalog saved at /p1";
+InputCatalogSavingId            = "\tCatalog saving at /p1";
+InputCatalogDeletionId          = "\tDeleting old /p1 at /p2...";
+InputCatalogDeletedId           = "\t/p1 deleted";
+InputEndingId                   = "\tEnding program ... ";
+
+CheckV5CatalogId                = "Checking V5 catalogs...";
+CheckV5ProductId                = "Checking V5 CATProduct...";
+UpdatingCatalogId               = "Updating catalogs...";
+InputNbD5DeviceToProcessId      = "Nunmber of D5 devices to process: /p1";
+
+FinalReportTextId               = "\tFINAL REPORT";
+NbCatalogFoundId                = "\tNumber of catalogs found           : /p1";
+NbCatalogCreatedId              = "\tNumber of catalogs created         : /p1";
+NbCatalogUpdatedId              = "\tNumber of catalogs updated         : /p1";
+NbD5IgnoredId                   = "\tNumber of D5 Devices ignored       : /p1";
+NbD5ConsideredId                = "\tNumber of D5 Devices considered    : /p1";
+NbV5ProductFoundId              = "\tNumber of V5 CATProducts found     : /p1";
+NbV5ProductCreatedId            = "\tNumber of V5 CATProducts created   : /p1";
+NbV5ProductUpdatedId            = "\tNumber of V5 CATProducts updated   : /p1";
+TotalId                         = "TOTAL";
+NbTotalD5Id                     = "\t\tNumber of D5 Devices             : /p1";
+NbTotalV5Id                     = "\t\tNumber of V5 CATProducts         : /p1";
+
+
+
+FinalReportId                   = "
+\n\n-----------------------------------------------------------------------\n
+COPYRIGHT DASSAULT SYSTEMES 2002 : DELMIA Corp.
+\t FINAL REPORT :
+\t Number of Catalogs Found        : /p1 
+\t Number of Catalogs Created      : /p2 
+\t Number of Catalogs Updated      : /p3 
+\t Number of D5 Device  Ignored    : /p4 
+\t Number of D5 Device  Considered : /p5 
+\t Number of V5 Product Existing   : /p6 
+\t Number of V5 Product Created    : /p7 
+\t Number of V5 Product Updated    : /p8 
+\t
+\t TOTAL :                       
+\t Number of D5 Devices            : /p9
+\t Number of V5 Products           : /p10 \n";
+
+LongHelpId                      =  "\
+\t-h                  : show the short help
+\t-help               : show the long help
+\t-p <path>           : path of the root D5 device library(directory).(mandatory)
+\t-t <path>           : target path for the V5 catalogs and product.(directory)
+\t                      By default, it is the same as the path of the root D5 device library.
+\t  WARNING : DO NOT use this option unless you want to create a separate copy of
+\t            the V5 catalogs and V5 CATProduct documents. D5 data will NOT be COPIED.
+\t            It implies that V5 CATProduct documents are still referring to the D5 data.
+\t-manuf <name>       : generation/update by manufacturer (or category) (sub-directory below DEVICES)
+\t                      Provide the name of the manufacturer (category) whose D5 devices will be converted.
+\t-lmanuf <name>      : provide the path of a text file containing a list of manufacturers (categories)
+\t                      whose D5 devices will be converted.
+\t-updateproducts     : update existing V5 CATProduct document from D5 Devices.
+\t                      By default, existing V5 CATProduct document will not be updated.
+\t-rootcatalog <name> : create/update the name of the root catalog with the name mentionned.
+\t                      By default, it is set to the name of the of the D5 root library directory.
+\t-file <file path>   : create/update V5 CATProduct and CGR associated to the file name.
+\t                      Option to use to bring one single D5 file in a V5 catalog.
+\t-lfile <file path>  : Text file. Create/update V5 CATProduct and CGR associated to D5 device files.
+\t                      Option to use to bring several D5 files in a V5 catalog.
+\t-newcatalog         : destroy previous catalogs to generate new ones.n\
+\t-debug              : to display messages during conversion.n\
+\t\n
+\t WARNING : All paths are absolute paths : there is no relative paths.
+\t
+\t  SETUP:
+\t  To run this program, run it from a console windows (DOS on WINDOWS or xterm on UNIX.)
+\t  EXAMPLES OF USE: 
+\t\n
+\t\t 1 - creation of V5 catalogs from D5 libray located at D:\Robotlib for example:
+\t\t      -> DELMIACreateCatalog -p D:\Robotlib 
+\t\t    The program will create all V5 catalogs for the entire library. If you want specify which V5 catalogs
+\t\t to be created, use the option -manuf (for only one catalog) or -lmanuf <path of text file>. The text file
+\t\t (for example D:\MyTextFile.txt) contains the following lines :
+\t\t\t\tCOMAU       
+\t\t\t\tMOTOMAN     
+\t\t\t\tFANUC       
+\t\t  By doing so, only COMAU.catalog, MOTOMAN.catalog and FANUC.catalog will be created.
+\t\t\n
+\t\t 2 - update/regeneration of V5 catalogs from D5 library.
+\t\t      -> DELMIACreateCatalog -p D:\Robotlib 
+\t\t    The command is the same as in 1. The program will check if V5 catalogs are existing and create them if 
+\t\t necessary. It will also create any V5 products from D5 devices that are not yet existing. However, for V5 
+\t\t CATProduct document that are already existing, they will NOT be changed unless mentionned with the option 
+\t\t -updateproducts. By doing so, all existing V5 CATProduct document will be updated.\n
+\t\t\t WARNING :    update of existing V5 products will make them unavailable if they were used
+\t\t                in other documents in a different a release level !!!
+\t\t\n
+\t\t 3 - add a D5 device in a V5 catalog :
+\t\t      -> DELMIACreateCatalog -p D:\Robotlib -file D:\Robotlib\DEVICES\SAMPLES\DELMIARobot
+\t\t    The program will update/create if not existing a V5 CATProduct based on 
+\t\t D:\Robotlib\DEVICES\SAMPLES\DELMIARobot device file and insert it in the appropriate catalogs.
+\t\t\n
+\n\n\tFor further information, you can contact us at www.delmia.com.";
+
+
+ShortHelpId                     = "DELMIACreateCatalog -p <path_of_D5_library> [-t <path_of_the_target>] [-h|-help] \
+ [-manuf <manufacturer_name>|-lmanuf <manufacturer_list_in_text_file>] [-file <file_fullpath> | -lfile <list_of_path_in_text_file>] [-newcatalog] [-updateproducts] [-rootcatalog <root catalog name>] [-debug]";
+

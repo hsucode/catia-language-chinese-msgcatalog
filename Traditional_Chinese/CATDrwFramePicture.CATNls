@@ -1,0 +1,71 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 2001 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwFramePicture
+// LOCATION    :    DraftingIntUI
+// AUTHOR      :    fgx
+// BUT         :    Properties : Tab "Picture" 
+// DATE        :    01.10.2001
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS    user    date        purpose
+//    HISTORY       ----    ----        -------
+//=====================================================================================
+
+_titlePosition.Title="位置";
+_framePosition._labelH.Title="水平: ";
+_framePosition._spinnerH.LongHelp="定義圖片左下角的水平位置";
+_framePosition._labelV.Title="垂直: ";
+_framePosition._spinnerV.LongHelp="定義圖片左下角的垂直位置";
+
+_titleSize.Title="大小";
+_frameSize._labelSizeW.Title="寬度: ";
+_frameSize._spinnerSizeW.LongHelp="圖片寬度, 沒有 crop";
+_frameSize._labelSizeH.Title="高度: ";
+_frameSize._spinnerSizeH.LongHelp="圖片高度, 沒有 crop";
+
+_titleScale.Title="縮放";
+_frameScale._labelScaleW.Title="寬度: ";
+_frameScale._spinnerScaleW.LongHelp="圖片寬度, 沒有 crop";
+_frameScale._labelScaleH.Title="高度: ";
+_frameScale._spinnerScaleH.LongHelp="圖片高度, 沒有 crop";
+_frameScaleOption._checkRatioLock.Title="相對比例鎖定";
+_frameScaleOption._checkRatioLock.LongHelp="縮放圖片時 鎖定相對比例";
+
+_titleOSize.Title="原始大小";
+_frameOSize._labelOSizeW.Title="寬度: ";
+_frameOSize._editorOSizeW.LongHelp="插入圖片時的原始尺寸大小";
+_frameOSize._labelOSizeH.Title="高度: ";
+_frameOSize._editorOSizeH.LongHelp="插入圖片時的原始高度大小";
+_frameOSize._pushResetOSize.Title="重設";
+_frameOSize._pushResetOSize.LongHelp="重設圖片至原來大小";
+
+_titleCrop.Title="Crop 從";
+_frameCrop._labelCropT.Title="上: ";
+_frameCrop._spinnerCropT.LongHelp="從上 Crops 圖片";
+_frameCrop._labelCropB.Title="下: ";
+_frameCrop._spinnerCropB.LongHelp="從下 Crops 圖片";
+_frameCrop._labelCropL.Title="左: ";
+_frameCrop._spinnerCropL.LongHelp="從左 Crops 圖片";
+_frameCrop._labelCropR.Title="右: ";
+_frameCrop._spinnerCropR.LongHelp="從右 Crops 圖片";
+
+_titleCompression.Title="壓縮";
+_frameCompression._comboCompression.LongHelp="壓縮語法";
+_frameCompression._labelCompressionRate.ShortHelp="壓縮比例 = 磁碟大小 / 未壓縮大小";
+_frameCompression._labelCompressionRate.LongHelp="Compression rate = 磁碟大小 / 未壓縮大小";
+_frameCompression._labelCompressionSize.ShortHelp="磁碟上圖像大小";
+_frameCompression._labelCompressionSize.LongHelp="磁碟上圖像大小";
+
+NONE="無";
+PNG="PNG";
+JPEG="JPEG";
+CCITTG3="CCITTG3";
+BYTES="位元組";
+KB="KB";
+
+

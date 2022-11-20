@@ -1,0 +1,1626 @@
+//NLS-ENGLISH VERSION
+//=======================================================================
+// MODULE :  PartDataCreation 
+//=======================================================================
+//  28/02/2001: CRB: Suppressmode + feature when non join
+//  23/04/2001: JRX: Nouveaux messages dans CATPartImportedLoop
+//  24/04/2001: JRX: '[T=/p2] [/p1] ' au debut des messages pour simplifier les stats + uniformisation
+//  30/04/2001: JRX: CATPartImportedBSplineCurve + PCurve
+//  09/05/2001: JRX: CATPartImportedBSplineSurface
+//	14/05/2001: JRX: CATPartImportedTrimmedSurface
+//  13/06/2001: JHH: Ajout CATPartImportedFace.Info.FaceOrientation
+//  02/07/2001: JHH: Numero de la face dans le message CATPartImportedFace.Info.FaceOrientation
+//  02/07/2001: JRX: /p3 (en fin de ligne) --> donne le niveau d'affichage du message
+//	05/07/2001: CRB: CATPartJoinProcessing
+//  11/07/2001: JRX: CATPartImportedBSplineCurve
+//	16/07/2001: CRB: Join in one pass
+//  20/07/2001: RNO: CATPartImportedBSplineCurve (Closure Point On Edge)
+//  23/07/2001: JRX: ***PROCESSING ELEMENT dans Join, Shell et Volume
+//  09/08/2001: JRX: Tx de decoupe des courbes et surfaces ; rationnalite des BSplines
+//  27/08/2001: JRX: CATPartImportedCylinder
+//  25/10/2001: DFB: Ajout de la detection des trous - et pb orientation - sur les loops 2D/3D
+//  26/11/2001: JRX: CATPartImportedRuledSurface - reorientation d'1 profile.
+//  03/12/2001: DFB: Message si CATDXFaceKO active + OrientCurvesOK.
+//  13/12/2001: JHH: Message erreur de creation de solide
+//	20/12/2001: DFB: Message si posage renvoie une pcurve < a la tol (PosagePCurveNulle 0092).
+//	08/01/2002: DFB: Message si l'orientation des PCurves est reparee (OrientPCurvesOK 0451).
+//  10/01/2002: JRX: Optimize New/Old
+//  18/01/2002: RNO: CleanCurve et Clean Loop
+//  23/01/2002: DFB: Message si Surface114
+//  29/01/2002: DFB: CATPartImportedBSplinePCurve - PermuteLimitsKnots et AdjustedLimitsKnots
+//	01/02/2002: DFB: Message si le transfert M2V5 est en echec (RI 333176) 
+//  01/02/2002: RNO: Mise a jour des messages CleanCurve et Clean Loop
+//  13/02/2002: RNO : Message PCurve Fermee dans EdgeUse [452]
+//  25/02/2002: RNO : Messages sur optimize rattrap dans ImportedBsplinePCurve + Message TopoRed dans ImportedElement
+//  06/03/2002: JRX: Import des Groupes IGES en Selection Sets a partir de R9
+//  07/03/2002: DFB: Message d'erreur dans ImportedLoop si le trou dans la loop 2d calculee est trop grand [0086]
+//					 et si la loop est trop eloignee de la surface [0085]
+//  12/03/2002: JHH: Messages pour l'import des groupes
+//  12/03/2002: DFB: Messages sur la validite du Wire [0701]...
+//  13/03/2002: RNO: Correction messages doublons clean
+//  22/03/2002: DFB: Mise en place du Checker sur la qualite des Nurbs (surfaces et curves) de Pierre Garcon [0223] & [0159]
+//  28/03/2002: RNO: Ajout de messages pour le checker de body du cleanface + Message dans ImportedFace
+//  19/04/2002: KVL: Ajout d'un message d'exception dans le cassage des surfaces ferm嶪s
+//  24/04/2002: ABM: Ajout d'un message relatif aux echecs M2V5 pour les surfaces sans topologie
+//  29/04/2002: JRX: messages 0173 a 0175 (CATPartImportedRuledSurface)
+//  16/05/2002: C. Guinamard: Ajout messages 0280 a 0282  ("Fiiting" dans CATPartImportedBSplineSurface)
+//  17/05/2002: JHH: Messages pour les faces fines eliminees au Join
+//  28/05/2002: DFB: Messages pour le CheckerNurbsQuality (0159->0165 et 0217->0223)
+//  04/06/2002: DFB: Gestion du bodymultiface pour le cleanface (avec Rhum1).
+//  11/06/2002: DFB: Integration du code de PRG et MIW sur l'optimize (0171->0179 + 0271->0279 + 0283->0296
+//  03/07/2002: JHH: Message pour les echecs de creation de coque par M2V5 (-> non-regression)
+//  06/08/2002: DFB: Message s'il n'y a pas de courbes 3d dans l'arete (passee au posage) [0081]
+//  23/08/2002: DFB: Message sur la continuite des surfaces + fitting
+//  19/11/2002: ARH: Ajout message sur les relimitations invalides de cone.
+//  17/09/2003: DFB: Ajout message sur Tores Degeneres
+
+// Numeros utilises :
+//[0001] a [0014] CATPartImportedElement
+
+//[0015] a [0019] CATPartImported (generaux)
+//[0020] a [0040] CATPartImportedBSplineSurface
+
+//[0041] a [0069] CATPartImportedFace
+
+//[0070] a [0074] + [0654] CATPartImportedSurface
+
+//[0075] a [0130] CATPartImportedLoop
+
+//[0131] a [0179] CATPartImportedBSplineCurve
+
+//[0199] a [0216] CATPartJoinProcessing (CATPartImportedJoinedShell)
+
+//[0217] a [0230] CATPartImportedBSplineSurface
+
+//[0231] a [0280] CATPartImportedBSplinePCurve
+
+//[0281] a [0350] CATPartImportedBSplineSurface
+
+//[0351] a [0355] CATPartImportedCylinder
+
+//[0401] a [0420] CATPartImportedSurfaceOfRevolution
+
+//[0451] a [0452] CATPartImportedEdgeUse
+
+//[0480] a [0486] CATPartImportedGroup
+
+//[0491] a [0500] CATProductStructureTranslator
+
+//[0501] a [0520] CATPartImportedEllipse
+
+//[0550] a [0570] CATPartDesignInterface
+
+//[0601] a [0653] Messages pour CATPartCleanCurve
+//[0675] a [0700] Messages pour CATPartCleanLoop
+
+//[0701] a [0704] Messages pour CATPartImportedTools 
+
+//[0710] a [0749] Messages pour CATPartImportedFace
+
+//[0750] CATPartImportedOffsetSurface
+
+//[0770] a [0775] CATPartImportedRuledSurface
+
+//[0776]          CATPartDesignInterface
+
+//[0777] a [0790] CATPartImportedRuledSurface
+
+//[0801] a [0802] CATPartImportedLine
+
+//[0825] CATPartImportedPLine
+
+//[0830] CATPartImportedTorus
+
+//[0850] a [0860] CATPartImportedElement (suite)
+
+//[0900] a [0949] CATPartImportedShell
+
+//[0950] a [0989] CATPartImportedVolume
+
+//--------------------------------------
+//  Messages from CATPartDesignInterface
+//--------------------------------------
+
+CATPartDesignInterface.Msg.RootContainer =
+"   <I> 文件中未含基本內容... /p3";
+
+CATPartDesignInterface.Msg.InterfDatumFeature =
+"   <I> 未發現介面基準 /p3";
+
+CATPartDesignInterface.Msg.Model =
+"   <I> 未發現 CATIA 模型... /p3";
+
+CATPartDesignInterface.Msg.DatumFeature =
+"   <I> 無法建立基準特徵 /p3";
+
+CATPartDesignInterface.Error.Degenere =
+"   <E> [T=/p2] [/p1] 因為太小的 /p3 導致元素褪化";
+
+CATPartDesignInterface.Error.Create =
+"   <E> [T=/p2] [/p1] 無法產生 /p3"; 
+
+CATPartDesignInterface.Error.CreateDatum =
+"!  <E> [0554] [T=/p2] [/p1] 特徵建立時發生錯誤. /p3"; 
+
+CATPartDesignInterface.Info.Name=
+"   <I> [0776] [T=/p2] [/p1] 元件名稱為 /p3";
+
+CATPartDesignInterface.Info.AnnotationInv=
+"   <I> [0550] [T=/p2] [/p1] 無效的幾何標註建立在 /p3";
+
+CATPartDesignInterface.Warning.AnnotationInvKO=
+"   <I> [0551] [T=/p2] [/p1] 無效幾何標註未建立 /p3";
+
+CATPartDesignInterface.Warning.ExcCreateAnnotation=
+"   <W> [0552] [T=/p2] [/p1] 當建立無效幾何標註 /p3 時發生例外情形";
+
+CATPartDesignInterface.Warning.PtsConfondusNoPlane=
+"   <W> [0553] [T=/p2] [/p1] 無法為無效幾何標註 /p3 建立平面";
+
+CATPartDesignInterface.Info.BeginningImport=
+"
+--------------------------------------------------
+***<I> [0555] 開始輸入中 ... /p3 ***";
+
+CATPartDesignInterface.Error.NothingToImport=
+"!  <E> [0556] 沒有東西可輸入 : 輸出零件可能是空的 /p3";
+
+
+//--------------------------------------
+//  Messages from CATProductStructureTranslator
+//--------------------------------------
+//[0491] a [0500] 
+
+CATProductStructureTranslator.Info.ProductProcessing=
+"===================================================
+***<I> [0498] /p4  處理中 ... /p3 ***
+===================================================
+";
+
+
+CATProductStructureTranslator.Error.NoCATPart=
+"!! <E> [0499] 目前產品複件未建立 /p3
+--------------------------------------------------
+";
+
+CATProductStructureTranslator.Info.CATPartIsCreated=
+"   <I> [0500] /p4   已建立, 您可儲存此檔案 /p3
+--------------------------------------------------
+";
+
+
+
+//--------------------------------------
+//  Messages from CATNCGMInterface
+//--------------------------------------
+
+CATNCGMInterface.Msg.DatumFeature =
+"   <E> 建立基準特徵 /p3 發現錯誤";
+
+
+//----------------------------------------
+//  Messages from CATPartImportedPoint
+//----------------------------------------
+ 
+CATPartImportedPoint.Error.Point=
+"   <E> [T=/p2] [/p1] 座標點 /p3 未建立";
+
+
+//-----------------------------------------
+//  Messages generaux a plusieurs routines
+//-----------------------------------------
+// Numerotation : de [0015] a [0019]
+
+CATPartImported.Error.CATCatch=
+"   <E> [0015] [T=/p2] [/p1] 元素未建立 /p3";
+
+CATPartImported.Error.GeomFact=
+"   <E> [0016] 幾何因子未存在 /p3";
+
+CATPartImported.Error.Type=
+"   <E> [0017] 元素形式未知 /p3"; 
+
+CATPartImported.Error.TypeSupported=
+"   <E> [0018] 元素形式不支援 /p3"; 
+
+CATPartImported.Error.Degenere=
+"!! <E> [0019] [T=/p2] [/p1]  元素形式退化, 無法建立 /p3"; 
+
+
+//--------------------------------------
+//  Messages from CATPartImportedCircle
+//--------------------------------------
+
+CATPartImportedCircle.Error.Circle=
+"   <E> [T=/p2] [/p1] 圓未建立 /p3";
+
+CATPartImportedCircle.Error.Degenere =
+"   <E> [T=/p2] [/p1] 因圓徑太小, 導致圓褪化 /p3";
+
+
+//--------------------------------------
+//  Messages from CATPartImportedCone
+//--------------------------------------
+
+CATPartImportedCone.Error.Cone=
+"   <E> [T=/p2] [/p1] 圓錐未建立 /p3";
+
+CATPartImportedCone.Error.ConeRelimitation=
+"   <E> [T=/p2] [/p1] 標準曲面的修剪參數是錯誤的 /p3";
+
+//--------------------------------------
+//  Messages from CATPartImportedLine
+//--------------------------------------
+ 
+/////ERB/////////CATPartImportedLine.Error.Line =
+//"   <E> [T=/p2] [/p1] 未建立線 /p3";
+//erb
+CATPartImportedLine.Error.SmallLine =
+"   <E> [0801] [T=/p2] [/p1] 線退化 /p3";
+CATPartImportedLine.Error.LineOut =
+"   <E> [0802] [T=/p2] [/p1] 線超過模型大小 /p3";
+
+
+//--------------------------------------
+//  Messages from CATPartImportedPLine
+//--------------------------------------
+
+CATPartImportedPLine.Error.Line=
+"   <E> [T=/p2] [/p1] PLine 未建立 /p3";
+
+CATPartImportedPLine.Error.NewLineCreation=
+"   <E> [0825] [T=/p2] [/p1] 新 PLine 建立失敗 /p3";
+
+
+//--------------------------------------
+//  Messages from CATPartImportedSphere
+//--------------------------------------
+ 
+CATPartImportedSphere.Error.Sphere=
+"   <E> [T=/p2] [/p1] 球未建立 /p3";
+
+
+//--------------------------------------
+//  Messages from CATPartImportedTorus
+//--------------------------------------
+
+CATPartImportedTorus.Error.Torus=
+"   <E> [T=/p2] [/p1] Torus  未建立 /p3";
+
+CATPartImportedTorus.Info.TorusDegenere=
+"   <I> [0830] [T=/p2] [/p1] 建立反曲甜甜圈 /p3";
+
+//---------------------------------------
+//  Messages from CATPartImportedPolyLine
+//---------------------------------------
+
+CATPartImportedPolyLine.Error.PolyLine=
+"   <E> [T=/p2] [/p1] Polyline 未建立 /p3";
+
+
+//--------------------------------------
+//  Messages from CATPartImportedPlane
+//--------------------------------------
+
+CATPartImportedPlane.Error.Plane=
+"   <E> [T=/p2] [/p1] 平面未建立 /p3";
+
+
+//--------------------------------------
+//  Messages from CATPartImportedCylinder
+//--------------------------------------
+// Numerotation : de [0351] a [0353]
+
+CATPartImportedCylinder.Error.Cylinder=
+"   <E> [0351] [T=/p2] [/p1] 圓柱未建立 /p3";
+
+CATPartImportedCylinder.Error.NoDirectrix=
+"   <E> [0352] [T=/p2] [/p1] 圓錐 /p3 沒有正確的直接曲線";
+
+CATPartImportedCylinder.Error.StartEndPoint=
+"   <E> [0353] [T=/p2] [/p1] 無法建立圓柱 : 結束點與開始點 /p3 相同";
+
+//------------------------------------------------
+//  Messages from CATPartImportedTabulatedCylinder
+//------------------------------------------------
+
+CATPartImportedTabCyl.Error.ObjectTabCyl=
+"   <E> [T=/p2] [/p1] Tabulated 圓柱物件未建立 /p3"; 
+
+
+//--------------------------------------------
+//  Messages from CATPartImportedBSplineCurve
+//--------------------------------------------
+// Numerotation : de [0131] a [0179]
+
+ 
+CATPartImportedBSplineCurve.Error.BsplCrv=
+"   <E> [0131] [T=/p2] [/p1] NURBS 曲線未建立 /p3";
+ 
+CATPartImportedBSplineCurve.Error.Knot=
+"   <E> [0132] [T=/p2] [/p1] 未依附的 multiplicities KnotVector BSpline 曲線 /p3";
+
+CATPartImportedBSplineCurve.Error.BSplineCrvException=
+"!  <E> [0133] [T=/p2] [/p1] 建立 BSpline 曲線時偵測到錯誤 /p3";
+
+CATPartImportedBSplineCurve.Warning.BSplineCrvParamException=
+"   <W> [0134] [T=/p2] [/p1] 重設 BSpline 曲線參數 /p3 時偵測到例外情形";
+
+// (specifique STEP)
+CATPartImportedBSplineCurve.Error.BSplineCrvStartPoint=
+"   <E> [0135] [T=/p2] [/p1] 無法決定 BSpline 曲線的開始參數 /p3";
+
+// (specifique STEP)
+CATPartImportedBSplineCurve.Error.BSplineCrvEndPoint=
+"   <E> [0136] [T=/p2] [/p1] 無法決定 BSpline 曲線的結束參數 /p3";
+
+CATPartImportedBSplineCurve.Info.CrvC2=
+"   <I> [0137] [T=/p2] [/p1] 曲線是 C2. 嚐試在 NURBS 曲線中轉換... /p3";
+
+CATPartImportedBSplineCurve.Info.CrvNotC2=
+"   <I> [0138] [T=/p2] [/p1] 曲線不是 C2. 嚐試切開... /p3";
+
+CATPartImportedBSplineCurve.Warning.OneCrvNull=
+"   <W> [0139] [T=/p2] [/p1] 一個從 BSpline 萃取的曲線未建立 /p3";
+
+CATPartImportedBSplineCurve.Error.NoPole=
+"   <E> [0140] [T=/p2] [/p1]  BSpline 曲線 /p3 沒有極性";
+
+CATPartImportedBSplineCurve.Error.NoKnot=
+"   <E> [0141] [T=/p2] [/p1] BSpline 曲線 /p3 沒有 Knot";
+
+CATPartImportedBSplineCurve.Info.MergedExtr=
+"   <I> [0142] [T=/p2] [/p1] 曲線端點溶入 /p3";
+
+CATPartImportedBSplineCurve.Info.ClosedCrv=
+"   <I> [0143] [T=/p2] [/p1] 曲線是封閉的 /p3";
+
+CATPartImportedBSplineCurve.Warning.PbLimitation=
+"   <W> [0144] [T=/p2] [/p1] 曲線在限制 /p3 表現錯誤";
+
+CATPartImportedBSplineCurve.Info.CrvNull=
+"   <W> [0145] [T=/p2] [/p1] 曲線可能有無效長度 /p3";
+
+CATPartImportedBSplineCurve.Warning.ProjPointCrvFail=
+"   <W> [0146] [T=/p2] [/p1] 投影點至曲線失敗 /p3";
+
+CATPartImportedBSplineCurve.Info.PermuteLimitsKnots=
+"   <I> [0147] [T=/p2] [/p1] 極限 Knot 數值已被變更 /p3";
+
+CATPartImportedBSplineCurve.Info.AdjustedLimitsKnots=
+"   <I> [0148] [T=/p2] [/p1] 極限 Knot 數值已被調整 /p3";
+
+CATPartImportedBSplineCurve.Warning.ClosurePointOnEdge=
+"   <I> [0149] [T=/p2] [/p1] 在 BSpline 封閉曲線 /p3 邊線中發現一個封閉點";
+
+CATPartImportedBSplineCurve.Error.ExcClamp=
+"!  <E> [0150] [T=/p2] [/p1] BSpline 曲線不支援 : 無法建立 /p3";
+
+CATPartImportedBSplineCurve.Error.ExcSplit=
+"!  <E> [0151] [T=/p2] [/p1] 建立 BSpline 曲線 (ActiveSplit) /p3 時發生例外情形";
+
+CATPartImportedBSplineCurve.Info.BSplineCrvIsRational=
+"   <I> [0152] [T=/p2] [/p1] BSpline 是比例性 /p3";
+
+CATPartImportedBSplineCurve.Info.BSplineCrvNbCut=
+"   <I> [0153] [T=/p2] [/p1] BSpline 已在 /p4 被截斷成 /p3 新曲線";
+
+CATPartImportedBSplineCurve.Info.BSplineCrvNotCut=
+"   <I> [0154] [T=/p2] [/p1] BSpline 曲線未被截斷 /p3";
+
+CATPartImportedBSplineCurve.Info.OptimizeNew=
+"   <I> [0155] [T=/p2] [/p1] BSpline 曲線已被最佳化 (新) /p3";
+
+CATPartImportedBSplineCurve.Info.OptimizeOld=
+"   <I> [0156] [T=/p2] [/p1] BSpline 曲線已被最佳化 (舊) /p3";
+
+CATPartImportedBSplineCurve.Warning.NURBSCrvParamExceptionRattrap=
+"   <W> [0157] [T=/p2] [/p1] 重新參數 BSpline 曲線 C1 時發生例外情形. 嚐試鎖定... /p3";
+
+CATPartImportedBSplineCurve.Error.NURBSCrvParamException=
+"   <E> [0158] [T=/p2] [/p1] 重新參數 BSpline 曲線 C1 時發生例外情形. 嚐試鎖定... /p3";
+
+CATPartImportedBSplineCurve.Warning.CheckNurbsQualError=
+"   <W> [0159] [T=/p2] [/p1] Nurbs 曲線品質檢查器因錯誤 /p3 而退出";
+
+CATPartImportedBSplineCurve.Warning.CheckNurbsQualDiag1=
+"   <W> [0160] [T=/p2] [/p1] NURBS 曲線品質檢查器偵錯: 曲線太小 /p3";
+
+CATPartImportedBSplineCurve.Warning.CheckNurbsQualDiag5=
+"   <W> [0161] [T=/p2] [/p1] NURBS 曲線品質檢查器偵錯: 控制點超過空間 /p3";
+
+CATPartImportedBSplineCurve.Warning.CheckNurbsQualDiag3=
+"   <W> [0162] [T=/p2] [/p1] NURBS 曲線品質檢查器偵錯: 偵錯到內部扭曲和銳邊 /p3";
+
+CATPartImportedBSplineCurve.Warning.CheckNurbsQualDiag4=
+"   <W> [0163] [T=/p2] [/p1] NURBS 曲線品質檢查器偵錯: 偵錯到外部扭曲和銳邊 /p3";
+
+CATPartImportedBSplineCurve.Warning.CheckNurbsQualDiag6=
+"   <W> [0164] [T=/p2] [/p1] NURBS 曲線品質檢查器偵錯: 微小曲率 /p3";
+
+CATPartImportedBSplineCurve.Warning.CheckNurbsQualDiag0=
+"   <W> [0165] [T=/p2] [/p1] NURBS 曲線品質檢查器偵錯: 曲線的弧太小 /p3";
+
+CATPartImportedBSplineCurve.Warning.CheckNurbsQualDiag2=
+"   <W> [0166] [T=/p2] [/p1] NURBS 曲線品質檢查器偵錯: 外部切線無效 /p3";
+
+CATPartImportedBSplineCurve.Warning.CheckNurbsQualDiag7=
+"   <W> [0167] [T=/p2] [/p1] NURBS 曲線品質檢查器偵錯: 不佳參數 /p3";
+
+CATPartImportedBSplineCurve.Warning.CheckNurbsQualDiag8=
+"   <W> [0168] [T=/p2] [/p1] NURBS 曲線品質檢查器偵錯: 指向曲面 /p3";
+
+CATPartImportedBSplineCurve.Info.CorrectionOK=
+"   <I> [0169] [T=/p2] [/p1] NURBS 曲線品質修正: 問題已修正. /p3";
+
+CATPartImportedBSplineCurve.Warning.CorrectionKO=
+"   <W> [0170] [T=/p2] [/p1] NURBS 曲線品質修正: 問題無法完全修正 ! /p3";
+
+CATPartImportedBSplineCurve.Warning.NurbsQualityCheckerException=
+"   <W> [0999] ---WARNING--- NURBS 品質修正: 嚴重錯誤! /p3";
+
+// PRG 2002-06-04
+CATPartImportedBSplineCurve.Info.BSplineCrvDegr=
+"   <I> [0171] [T=/p2] [/p1] BSpline 曲線角度為 /p4  /p3";
+CATPartImportedBSplineCurve.Info.BSplineCrvNbArc=
+"   <I> [0172] [T=/p2] [/p1] BSpline 曲線的弧數目 /p4  /p3";
+
+CATPartImportedBSplineCurve.Info.BSplineCrvNewDegr=
+"   <I> [0173] [T=/p2] [/p1] 新 BSpline 曲線階數為 /p4  /p3";
+CATPartImportedBSplineCurve.Info.BSplineCrvNewNbArc=
+"   <I> [0174] [T=/p2] [/p1] 新 BSpline 曲線弧數目 /p4  /p3";
+
+CATPartImportedBSplineCurve.Info.BSplineCrvNewNbCrv=
+"   <I> [0175] [T=/p2] [/p1] 曲線的弧數目 /p4  /p3";
+CATPartImportedBSplineCurve.Info.BSplineCrvNbCrvC1=
+"   <I> [0176] [T=/p2] [/p1] C1 曲線的新數目 /p4  /p3";
+CATPartImportedBSplineCurve.Info.BSplineCrvNbCrvC2=
+"   <I> [0177] [T=/p2] [/p1] C2 曲線的新數目 /p4  /p3";
+CATPartImportedBSplineCurve.Info.BSplineCrvDeviationOptimize=
+"   <I> [0178] [T=/p2] [/p1] 最佳化後的變異 /p4  /p3";
+
+CATPartImportedBSplineCurve.Warning.ErrorCutCnNew=
+"   <W> [0179] [T=/p2] [/p1] 新的最佳化切割方法發生錯誤 /p3";
+
+CATPartImportedBSplineCurve.Warning.ErreurReparam=
+"   <W> [0180] [T=/p2] [/p1] 重新參數化曲線 /p3 時發生錯誤";
+
+//--------------------------------------------
+//  Messages from CATPartImportedOffsetCurve
+//--------------------------------------------
+ 
+CATPartImportedOffsetCurve.Error.OffCrv=
+"   <E> [T=/p2] [/p1] 偏移曲線未建立 /p3";
+
+
+//--------------------------------------------
+//  Messages from CATPartImportedOffsetSurface
+//--------------------------------------------
+
+CATPartImportedOffsetSurface.Error.OffsetSur=
+"   <E> [T=/p2] [/p1] 偏移曲面未建立 /p3";
+
+CATPartImportedOffsetSurface.Info.ProcessSurfOffset=
+"   <I> [0750] [T=/p2] [/p1] 基本偏移曲面處理中... /p3";
+
+
+//--------------------------------------------
+//  Messages from CATPartImportedBSplinePCurve
+//--------------------------------------------
+// Numerotation : de [0231] a [0280]
+
+ 
+CATPartImportedBSplinePCurve.Error.BsplPCrv=
+"   <E> [0231] [T=/p2] [/p1] NURBS 參數曲線未建立 /p3";
+ 
+//CATPartImportedBSplineCurve.Error.Knot=
+//"   <E> [0232] [T=/p2] [/p1] 未支援的 multiplicities KnotVector BSpline 參數曲線 /p3";
+
+CATPartImportedBSplinePCurve.Error.BSplinePCrvExc=
+"!  <E> [0233] [T=/p2] [/p1] 建立 BSpline 曲線參數 /p3 時偵測到例外情形";
+
+CATPartImportedBSplinePCurve.Warning.BSplinePCrvParamExc=
+"   <W> [0234] [T=/p2] [/p1] 參數化 BSpline 曲線參數 /p3 時偵測到例外情形";
+
+// (specifique STEP)
+//CATPartImportedBSplinePCurve.Error.BSplinePCrvStartPoint=
+//"   <E> [0235] [T=/p2] [/p1] 無法決定 BSpline 曲線的開始參數 /p3";
+
+// (specifique STEP)
+//CATPartImportedBSplinePCurve.Error.BSplinePCrvEndPoint=
+//"   <E> [0236] [T=/p2] [/p1] 無法決定 BSpline 曲線的結束參數 /p3";
+
+CATPartImportedBSplinePCurve.Info.PCrvC2=
+"   <I> [0237] [T=/p2] [/p1] 參數曲線是 C2. 嚐試在 NURBS 曲線中轉換... /p3";
+
+CATPartImportedBSplinePCurve.Info.PCrvNotC2=
+"   <I> [0238] [T=/p2] [/p1] 參數曲線不是 C2. 嚐試切開... /p3";
+
+CATPartImportedBSplinePCurve.Warning.OnePCrvNull=
+"   <W> [0239] [T=/p2] [/p1] 一個從 BSpline 萃取的曲線未建立 /p3";
+
+CATPartImportedBSplinePCurve.Error.NoPole=
+"   <E> [0240] [T=/p2] [/p1] BSpline 曲線 /p3 沒有極性";
+
+CATPartImportedBSplinePCurve.Error.NoKnot=
+"   <E> [0241] [T=/p2] [/p1] BSpline 曲線 /p3 沒有 Knot";
+
+CATPartImportedBSplinePCurve.Info.PCrvNull=
+"   <W> [0245] [T=/p2] [/p1] 參數曲線可能有無效長度 /p3";
+
+CATPartImportedBSplinePCurve.Info.PermuteLimitsKnots=
+"   <I> [0247] [T=/p2] [/p1] 限制 Knot 數值已變更 /p3";
+
+CATPartImportedBSplinePCurve.Info.AdjustedLimitsKnots=
+"   <I> [0248] [T=/p2] [/p1] 限制 Knot 數值已調整 /p3";
+CATPartImportedBSplinePCurve.Info.BSplinePCrvIsRational=
+"   <I> [0252] [T=/p2] [/p1] BSpline 參數曲線是比例 /p3";
+
+CATPartImportedBSplinePCurve.Info.BSplinePCrvNbCut=
+"   <I> [0253] [T=/p2] [/p1] BSpline 參數已在 /p4 被截斷成 /p3 新參數曲線";
+
+CATPartImportedBSplinePCurve.Info.BSplinePCrvNotCut=
+"   <I> [0254] [T=/p2] [/p1] BSpline 參數曲線未被 /p3 截斷";
+
+CATPartImportedBSplinePCurve.Info.OptimizeNew=
+"   <I> [0255] [T=/p2] [/p1] BSpline 曲線已被最佳化 (新) /p3";
+
+CATPartImportedBSplinePCurve.Info.OptimizeOld=
+"   <I> [0256] [T=/p2] [/p1] BSpline 曲線已被最佳化 (舊) /p3";
+
+CATPartImportedBSplinePCurve.Warning.NURBSPCrvParamExceptionRattrap=
+"   <W> [0257] [T=/p2] [/p1] 重新參數 BSpline 曲線 C1 時發生例外情形. 嚐試鎖定... /p3";
+
+CATPartImportedBSplinePCurve.Error.NURBSPCrvParamException=
+"   <E> [0258] [T=/p2] [/p1] 重新參數 BSpline 曲線 C1 時發生例外情形. 嚐試鎖定... /p3";
+
+CATPartImportedBSplinePCurve.Warning.OptimizeNewFailed =
+"   <W> [0259] [T=/p2] [/p1] 最佳化新的 參數化曲線時發生例外情形... 請嚐試使用最佳化舊的 ... /p3";
+
+CATPartImportedBSplinePCurve.Warning.OptimizeOldFailed =
+"   <W> [0260] [T=/p2] [/p1] 最佳化舊的 參數化曲線時發生例外情形... 請嚐試使用最佳化新的 ... /p3";
+
+// PRG 2002-06-04
+CATPartImportedBSplinePCurve.Info.BSplinePCrvDegr=
+"   <I> [0271] [T=/p2] [/p1] BSpline PCurve 階數 /p4  /p3";
+CATPartImportedBSplinePCurve.Info.BSplinePCrvNbArc=
+"   <I> [0272] [T=/p2] [/p1] BSpline PCurve 弧數 /p4  /p3";
+
+CATPartImportedBSplinePCurve.Info.BSplinePCrvNewDegr=
+"   <I> [0273] [T=/p2] [/p1] 新 BSpline PCurve 階數為 /p4  /p3";
+CATPartImportedBSplinePCurve.Info.BSplinePCrvNewNbArc=
+"   <I> [0274] [T=/p2] [/p1] 新 BSpline PCurve 弧數為 /p4  /p3";
+
+CATPartImportedBSplinePCurve.Info.BSplinePCrvNewNbPCrv=
+"   <I> [0275] [T=/p2] [/p1] PCurves 數目為 /p4  /p3";
+CATPartImportedBSplinePCurve.Info.BSplinePCrvNbPCrvC1=
+"   <I> [0276] [T=/p2] [/p1] C1 PCurves 數目為 /p4  /p3";
+CATPartImportedBSplinePCurve.Info.BSplinePCrvNbPCrvC2=
+"   <I> [0277] [T=/p2] [/p1] C2 PCurves 的新數目為 /p4  /p3";
+CATPartImportedBSplinePCurve.Info.BSplinePCrvDeviationOptimize=
+"   <I> [0278] [T=/p2] [/p1] 最佳化 /p4  /p3 的變異";
+
+CATPartImportedBSplinePCurve.Warning.ErrorCutCnNew=
+"   <W> [0279] [T=/p2] [/p1] 為最佳化新的分割產生錯誤 /p3";
+CATPartImportedBSplinePCurve.NoSurfaceSupport=
+"!  <E> [0280] [T=/p2] [/p1] 沒有曲面依附 /p3";
+
+//-----------------------------------------------
+//  Messages from CATPartImportedBSplineSurface
+//-----------------------------------------------
+// Numerotation : de [0020] a [0040] + [0217] a [0230] + [0281] a [0318]
+
+// ////////////////////////////////////////////////////////////////
+//            Be carefull :
+//     Don't change the chain '[0020] [T=/p2] [/p1]'
+//      it is used in ODT FacePlanarityDetection.sh
+
+CATPartImportedBSplineSurface.Info.PlanIdentif=
+"   <I> [0020] [T=/p2] [/p1] 修剪面與平面 /p3 相同";
+
+// ////////////////////////////////////////////////////////////////
+
+CATPartImportedBSplineSurface.Error.Knot=
+"   <E> [0022] 未支援的 multiplicities KnotVector Bspline 曲面 /p3";
+
+CATPartImportedBSplineSurface.Warning.NURBSSurfaceParamExceptionRattrap=
+"   <W> [0023] [T=/p2] [/p1] 重新參數化 BSpline 曲面 /p3 C1 時發生錯誤. 第二次嚐試 ...";
+
+CATPartImportedBSplineSurface.Error.NURBSSurfaceParamException=
+"   <E> [0024] [T=/p2] [/p1] 重新參數化 BSpline 曲面 /p3 C1 時發生嚴重錯誤";
+
+CATPartImportedBSplineSurface.Info.ClosedSurfU=
+"   <W> [0028] [T=/p2] [/p1] 曲面在 U 是封閉的 /p3";
+CATPartImportedBSplineSurface.Info.ClosedSurfV=
+"   <W> [0029] [T=/p2] [/p1] 曲面在 V 是封閉的 /p3";
+CATPartImportedBSplineSurface.Info.UnclosedSurfU=
+"   <I> [0030] [T=/p2] [/p1] 曲面在 U 不是封閉的 /p3";
+CATPartImportedBSplineSurface.Info.UnclosedSurfV=
+"   <I> [0031] [T=/p2] [/p1] 曲面在 V 不是封閉的 /p3";
+
+CATPartImportedBSplineSurface.Error.ExcCreateC2=
+"!  <E> [0035] 建立 C2 曲面時偵測到例外倩形 /p3";
+
+CATPartImportedBSplineSurface.Error.ParsingNurbsSurf=
+"!  <E> [0038] [T=/p2] [/p1] 分析曲面 /p3 時發生錯誤";
+CATPartImportedBSplineSurface.Error.Iges114NurbsSurf=
+"   <E> [0039] [T=/p2] [/p1] IGES 無法轉換參數雲形曲面成為曲面 /p3";
+
+CATPartImportedBSplineSurface.Info.SurfIsRational=
+"   <I> [0040] [T=/p2] [/p1] BSpline 曲面是比例 /p3";
+
+CATPartImportedBSplineSurface.Warning.CheckNurbsQualError=
+"   <W> [0217] [T=/p2] [/p1] Nurbs 曲面品質檢查器因錯誤 /p3 退出";
+
+CATPartImportedBSplineSurface.Warning.CheckNurbsQualDiag1=
+"   <W> [0218] [T=/p2] [/p1] NURBS 曲面品質檢查器偵錯: 曲面太小 /p3";
+
+CATPartImportedBSplineSurface.Warning.CheckNurbsQualDiag5=
+"   <W> [0219] [T=/p2] [/p1] NURBS 曲面品質檢查器偵錯: 控制點超過空間 /p3";
+
+CATPartImportedBSplineSurface.Warning.CheckNurbsQualDiag3=
+"   <W> [0220] [T=/p2] [/p1] NURBS 曲面品質檢查器偵錯: 偵測到內部尖銳或扭曲 /p3";
+
+CATPartImportedBSplineSurface.Warning.CheckNurbsQualDiag4=
+"   <W> [0221] [T=/p2] [/p1] NURBS 曲面品質檢查器偵錯: 偵測到外部尖銳或扭曲 /p3";
+
+CATPartImportedBSplineSurface.Warning.CheckNurbsQualDiag6=
+"   <W> [0222] [T=/p2] [/p1] NURBS 曲面品質檢查器偵錯: 微小曲率 /p3";
+
+CATPartImportedBSplineSurface.Warning.CheckNurbsQualDiag0=
+"   <W> [0223] [T=/p2] [/p1] NURBS 曲面品質檢查器偵錯: 曲面的綴面太小 /p3";
+
+CATPartImportedBSplineSurface.Warning.CheckNurbsQualDiag2=
+"   <W> [0224] [T=/p2] [/p1] NURBS 曲面品質檢查器偵錯: 外部切面無效 /p3";
+
+CATPartImportedBSplineSurface.Warning.CheckNurbsQualDiag7=
+"   <W> [0225] [T=/p2] [/p1] NURBS 曲面品質檢查器偵錯: 不良參數 /p3";
+
+CATPartImportedBSplineSurface.Warning.CheckNurbsQualDiag8=
+"   <W> [0226] [T=/p2] [/p1] NURBS 曲面品質檢查器偵錯: 指向曲面 /p3";
+
+CATPartImportedBSplineSurface.Info.OptimizeNew=
+"   <I> [0227] [T=/p2] [/p1] BSpline 曲面已被最佳化 (新) /p3";
+
+CATPartImportedBSplineSurface.Info.OptimizeOld=
+"   <I> [0228] [T=/p2] [/p1] BSpline 曲面已被最佳化 (舊) /p3";
+CATPartImportedBSplineSurface.Info.BSplineSurfNotCut=
+"   <I> [0229] [T=/p2] [/p1] BSpline 曲面未被 /p3 截斷";
+
+CATPartImportedBSplineSurface.Info.BSplineSurfNbCut=
+"   <I> [0230] [T=/p2] [/p1] BSpline 曲面被 /p4 截斷成為新的 /p3 曲面";
+
+CATPartImportedBSplineSurface.Warning.NurbsQualityCheckerException=
+"   <W> [0999] [T=/p2] [/p1] NURBS 曲面品質修正: 嚴重錯誤! /p3";
+
+// PRG 2002-06-04
+CATPartImportedBSplineSurface.Info.BSplineSurfDegrU=
+"   <I> [0283] [T=/p2] [/p1] BSpline 曲面 U 階 /p4  /p3";
+CATPartImportedBSplineSurface.Info.BSplineSurfDegrV=
+"   <I> [0284] [T=/p2] [/p1] BSpline 曲面 V 階 /p4  /p3";
+
+CATPartImportedBSplineSurface.Info.BSplineSurfNewDegrU=
+"   <I> [0285] [T=/p2] [/p1] 新的 BSpline 曲面 U 階 /p4  /p3";
+CATPartImportedBSplineSurface.Info.BSplineSurfNewDegrV=
+"   <I> [0286] [T=/p2] [/p1] 新的 BSpline 曲面 V 階 /p4  /p3";
+
+CATPartImportedBSplineSurface.Info.BSplineSurfNbArcU=
+"   <I> [0287] [T=/p2] [/p1] 在 U 方向的弧數 /p4  /p3";
+CATPartImportedBSplineSurface.Info.BSplineSurfNbArcV=
+"   <I> [0288] [T=/p2] [/p1] 在 V 方向的弧數 /p4  /p3";
+
+CATPartImportedBSplineSurface.Info.BSplineSurfNewNbArcU=
+"   <I> [0289] [T=/p2] [/p1] 在 U 方向的新弧數 /p4  /p3";
+CATPartImportedBSplineSurface.Info.BSplineSurfNewNbArcV=
+"   <I> [0290] [T=/p2] [/p1] 在 V 方向的新弧數 /p4  /p3";
+
+CATPartImportedBSplineSurface.Info.BSplineSurfNewNbSurfU=
+"   <I> [0291] [T=/p2] [/p1] 在 U 方向的曲面數 /p4  /p3";
+CATPartImportedBSplineSurface.Info.BSplineSurfNewNbSurfV=
+"   <I> [0292] [T=/p2] [/p1] 在 V 方向的曲面數 /p4  /p3";
+
+CATPartImportedBSplineSurface.Info.BSplineSurfNbSurfC1=
+"   <I> [0293] [T=/p2] [/p1] C1 曲面的數目 /p4  /p3";
+CATPartImportedBSplineSurface.Info.BSplineSurfNbSurfC2=
+"   <I> [0294] [T=/p2] [/p1] C2 曲面的數目 /p4  /p3";
+
+CATPartImportedBSplineSurface.Info.BSplineSurfDeviationOptimize=
+"   <I> [0295] [T=/p2] [/p1] 最佳化後的變異 /p4  /p3";
+
+CATPartImportedBSplineSurface.Warning.ErrorCutCnNew=
+"   <W> [0296] [T=/p2] [/p1] 最佳化後的新分割方法錯誤 /p3";
+
+CATPartImportedBSplineSurface.Info.SurfAlreadyC2=
+"   <I> [0297] [T=/p2] [/p1] 曲面已是 C2 /p3";
+
+CATPartImportedBSplineSurface.Info.SurfDejaOptim=
+"   <W> [0299] [T=/p2] [/p1] 曲面已最佳化 : 它由單一綴面 /p3 組成";
+
+CATPartImportedBSplineSurface.Warning.EchecCheckContinuitySurf=
+"   <W> [0300] [T=/p2] [/p1] 連續性檢查器 /p3";
+
+CATPartImportedBSplineSurface.Info.CheckContinuitySurfCnI=
+"   <W> [0301] [T=/p2] [/p1] CheckContinuity : 曲面為 /p4 /p3";
+
+CATPartImportedBSplineSurface.Warning.CheckContinuitySurfNoG1=
+"   <W> [0302] [T=/p2] [/p1] CheckContinuity : 曲面不是 G1 /p3";
+
+CATPartImportedBSplineSurface.Info.CheckContinuitySurfC1=
+"   <W> [0303] [T=/p2] [/p1] CheckContinuity : 曲面是 C1. 適應配合是可能的 ! /p3";
+
+CATPartImportedBSplineSurface.Warning.CheckContinuitySurfNoC1=
+"   <W> [0304] [T=/p2] [/p1] BSpline 曲面不是 C1. 無法近似化曲面";
+
+CATPartImportedBSplineSurface.Warning.SurfNoC2=
+"   <W> [0305] [T=/p2] [/p1] 曲面不是 C2 /p3";
+
+CATPartImportedBSplineSurface.Warning.ErrorNewParam=
+"   <W> [0306] [T=/p2] [/p1] 重新參數化曲面 /p3 錯誤";
+
+CATPartImportedBSplineSurface.Info.TryClipping=
+"   <I> [0307] [T=/p2] [/p1] 嚐試剪貼曲面 /p3";
+
+CATPartImportedBSplineSurface.Info.ClippingOK=
+"   <I> [0308] [T=/p2] [/p1] 曲面已被 3D 邊界 /p3 的環繞盒分割";
+
+CATPartImportedBSplineSurface.Warning.NoClipping=
+"   <W> [0309] [T=/p2] [/p1] 曲面剪貼沒有限制. /p3";
+
+CATPartImportedBSplineSurface.Warning.ClippingException=
+"   <W> [0310] [T=/p2] [/p1] 曲面剪貼未成功. /p3";
+
+CATPartImportedBSplineSurface.Info.CorrectionOK=
+"   <I> [0311] [T=/p2] [/p1] NURBS 曲面品質修正: 問題已修正. /p3";
+
+CATPartImportedBSplineSurface.Warning.CorrectionKO=
+"   <W> [0312] [T=/p2] [/p1] NURBS 曲面品質修正: 問題無法完全修正 ! /p3";
+
+CATPartImportedBSplineSurface.Warning.SurfFermee2D=
+"   <W> [0313] PCurves 在封閉曲面上尚不可執行  /p3";
+
+CATPartImportedBSplineSurface.Info.TryFitting=
+"   <I> [0314] [T=/p2] [/p1] 嚐試以下列精度來近似配合 = /p4 /p3";
+
+CATPartImportedBSplineSurface.Info.FittingOK=
+"   <I> [0315] [T=/p2] [/p1] 近似化曲面成功, 使用新的 近似化 曲面 ";
+
+CATPartImportedBSplineSurface.Info.FittingKO=
+"   <I> [0316] [T=/p2] [/p1] 近似化曲面失敗, 使用原始的 未適應 曲面 /p3";
+
+CATPartImportedBSplineSurface.Warning.FittingDeviation=
+"   <W> [0317] [T=/p2] [/p1] 近似化曲面的變異 (以等參數線來計算) 為 : /p4 公厘 ";
+
+CATPartImportedBSplineSurface.Info.MaxFittingDeviation=
+"   <I> [0318] 要有較佳的 BSpline 曲面, 您可使用最小的 曲線和曲面近似化 精度 : /p4 公厘 ";
+
+//-----------------------------------------------
+//  Messages from CATPartImportedCompositeCurve
+//-----------------------------------------------
+
+CATPartImportedCompositeCurve.Error.CatiaCcrv=
+"   <E>[T=/p2] [/p1] 組合曲面形式無法建立 /p3";
+
+
+//-------------------------------------
+//  Messages from CATPartImportedDitto
+//-------------------------------------
+
+
+//-------------------------------------
+//  Messages from CATPartImportedEdge
+//-------------------------------------
+
+CATPartImportedEdge.Error.EdgeCrv=
+"   <E>[T=/p2] [/p1] 基本曲面形式未支援... /p3";
+
+CATPartImportedEdge.Error.Edge=
+"   <E> [T=/p2] [/p1] 錯誤的曲線建立 /p3";
+
+CATPartImportedEdge.Error.EdgeProj=
+"   <E> [T=/p2] [/p1] 投影曲線 /p3 時發生錯誤";
+
+
+//-------------------------------------
+//  Messages from CATPartImportedEdgeOnSurface
+//-------------------------------------
+
+CATPartImportedEdgeOnSurface.Error.Edge=
+"   <E> [T=/p2] [/p1] 錯誤的曲線建立 /p3";
+
+CATPartImportedEdgeOnSurface.Error.EdgeProj=
+"   <E> [T=/p2] [/p1] 投影曲線 /p3 時發生錯誤";
+
+
+//---------------------------------------
+//  Messages from CATPartImportedEllipse
+//---------------------------------------
+// Numeros reserves : [0501] a [0520]
+
+CATPartImportedEllipse.Error.Ellipse=
+"!  <E> [0502] [T=/p2] [/p1] 無法建立橢圓 /p3";
+
+CATPartImportedEllipse.Error.InvalidEllipse=
+"!  <E> [0503] [T=/p2] [/p1] 無效資料 : 橢圓不可含有無效半徑 /p3";
+
+//-----------------------------------------
+//  Messages from CATPartImportedHyperbola
+//-----------------------------------------
+
+
+CATPartImportedHyperbola.Error.Hyperbole=
+"   <E> [T=/p2] [/p1] 無法建立雙曲線 /p3";
+
+
+//-----------------------------------------
+//  Messages from CATPartImportedParabole
+//-----------------------------------------
+
+CATPartImportedParabola.Error.Parabole=
+"   <E> [T=/p2] [/p1] 無法建立拋物線 /p3";
+
+
+//--------------------------------------------------
+//  Messages from CATPartImportedSurfaceOfRevolution
+//--------------------------------------------------
+
+CATPartImportedSurfaceOfRevolution.Error.SurRevBas=
+"   <E> [0401] [T=/p2] [/p1] 無法建立旋轉曲面 /p3";
+
+CATPartImportedSurfaceOfRevolution.Error.SurRevCatCrv=
+"   <E> [0402] [T=/p2] [/p1] 從旋轉曲面的基本曲線已建立, 但不是 CATCurve... /p3";
+
+CATPartImportedSurfaceOfRevolution.Error.SurRev=
+"   <E> [0403] [T=/p2] [/p1] 無法建立旋轉曲面 /p3";
+
+CATPartImportedSurfaceOfRevolution.Info.CylindreIdentif=
+"   <I> [0404] [T=/p2] [/p1] 曲面辨識成圓柱 /p3";
+
+CATPartImportedSurfaceOfRevolution.Error.SurRevIntersect=
+"!  <E> [0405] [T=/p2] [/p1] 無效資料 : 曲線與旋轉軸 /p3 相交";
+
+CATPartImportedSurfaceOfRevolution.Info.ModifAngle=
+"   <I> [0406] [T=/p2] [/p1] 無效資料: 旋轉角度已修改為 (0 至 Pi) /p3";
+//--------------------------------------------
+//  Messages from CATPartImportedRuledSurface
+//--------------------------------------------
+//
+// Numerotation : de [0770] a [0775]
+// [0776] est deja pris !!!
+// Numerotation : de [0777] a [0790]
+
+CATPartImportedRuledSurface.Error.RuledSur=
+"!  <E> [0770] [T=/p2] [/p1] 無法建立線性曲面 /p3";
+
+CATPartImportedRuledSurface.Info.RuledSurfSecCurveToOrder=
+"   <I> [0771] [T=/p2] [/p1] 第二外形在相反階數 /p3";
+
+CATPartImportedRuledSurface.Info.RuledSurfSecCurveOrdered=
+"   <I> [0772] [T=/p2] [/p1] 調整後, 此兩規則曲面外形是同階的 /p3";
+
+CATPartImportedRuledSurface.Info.OnlySecondCurveNotRational =
+"   <I> [0773] [T=/p2] [/p1] 第二個曲面斷面不是有理的 (第一個是有理的). 新增配重... /p3 中";
+
+CATPartImportedRuledSurface.Info.OnlyFirstCurveNotRational =
+"   <I> [0774] [T=/p2] [/p1] 第一個曲面斷面不是有理的 (第二個是有理的). 新增配重... /p3 中";
+
+CATPartImportedRuledSurface.Info.BothCurvesRational =
+"   <I> [0775] [T=/p2] [/p1] 調整後, 兩曲面皆是有理的 /p3";
+
+CATPartImportedRuledSurface.Error.IntersectRuledSur=
+"!  <E> [0777] [T=/p2] [/p1] 無法建立規則曲面: 斷面自我相交 /p3";
+
+
+//------------------------------------
+//  Messages from CATPartImportedFace
+//------------------------------------
+//
+// Numerotation : de [0041] a [0069]
+// Numerotation : de [0710] a [0749]
+
+CATPartImportedFace.Error.FaceSurf=
+"   <E> [0041] [T=/p2] [/p1] 修剪面的基本曲面未支援 /p3";
+
+CATPartImportedFace.Error.Face=
+"   <E> [0042] [T=/p2] [/p1] 曲面建立錯誤. 無法建立修剪面 /p3";
+
+CATPartImportedFace.Error.FaceCreate=
+"   <E> [0043] [T=/p2] [/p1] 無法建立修剪面 /p3";
+
+CATPartImportedFace.Error.FaceKO=
+"   <E> [0044] [T=/p2] [/p1] 因 3D 的邊界曲線不連續以致無法建立修剪面 /p3";
+
+CATPartImportedFace.Error.FaceLoop=
+"   <E> [0045] 讀取邊界資訊時發生錯誤 /p3";
+
+CATPartImportedFace.Error.CreateLoop=
+"   <E> [0046] [T=/p2] [/p1] 邊界的邊界未建立 /p3";
+
+CATPartImportedFace.Error.FaceSurfSup=
+"!  <E> [0047] [T=/p2] [/p1] 基本曲面形式未支援 /p3";
+
+CATPartImportedFace.Error.FaceKOoverload=
+"   <E> [0048] KO 修剪面空間超過負載. 在此空間中沒有更多元件 /p3";
+
+//JRX 2001-05-14
+CATPartImportedFace.Error.TypeFace=
+"   <E> [0049] [T=/p2] [/p1] 形式未確認 /p3";
+CATPartImportedFace.Error.NoSurface=
+"   <E> [0050] [T=/p2] [/p1] Face : 沒有曲面 (空的清單) /p3";
+
+CATPartImportedFace.Error.ExcCreatSupport=
+"   <E> [0051] [T=/p2] [/p1] 建立依附曲面 /p3 時發生例外情形";
+CATPartImportedFace.Warning.ExcListGeomKO=
+"   <W> [0052] [T=/p2] [/p1] 取得 GeometryKO 清單 /p3 時發生例外情形";
+
+CATPartImportedFace.Info.SurfPlane=
+"   <I> [0053] [T=/p2] [/p1] 曲面是平面 /p3";
+CATPartImportedFace.Info.SurfNotPlane=
+"   <I> [0054] [T=/p2] [/p1] 曲面不是平面 /p3";
+
+CATPartImportedFace.Error.LoopKO=
+"!  <E> [0055] [T=/p2] [/p1] 未建立邊界 /p3";
+CATPartImportedFace.Info.NextLoop=
+"   <I> [0056] [T=/p2] [/p1] 與下一個邊界繼續處理中... /p3";
+
+CATPartImportedFace.Info.ProcessLoop=
+"  *<I> [0057] [T=/p2] [/p1] 邊界處理中... /p3";
+CATPartImportedFace.Info.LoopOK=
+"   <I> [0058] [T=/p2] [/p1] 邊界正確轉換... /p3";
+CATPartImportedFace.Info.ProcessSurf=
+"  *<I> [0059] [T=/p2] [/p1] 曲面處理中... /p3";
+
+CATPartImportedFace.Info.FaceOrientation=
+"   <I> [0060] [T=/p2] [/p1] 不好的曲面或修剪面方向. 問題修正 /p3";
+
+CATPartImportedFace.Info.NbSurfCreated=
+"   <I> [0061] [T=/p2] [/p1] 最初曲面已被 /p4 截斷成為部份 /p3 曲面";
+
+CATPartImportedFace.Info.ProcessLoop2=
+"  *<I> [0062] [T=/p2] [/p1] 邊界執行中... (第二次) /p3";
+
+CATPartImportedFace.Info.ReductionTopoFailure=
+"   <I> [0063] [T=/p2] [/p1] 拓墣減少失敗. 轉移未清理的修剪面 (錯誤碼 : /p4 ) /p3";
+
+CATPartImportedFace.Info.NewTransfoOnFace=
+"   <I> [0064] [T=/p2] [/p1] 新的轉換矩陣已應用在修剪面 /p3 上";
+
+CATPartImportedFace.Info.OldTransfoOnFace=
+"   <I> [0065] [T=/p2] [/p1] 轉換矩陣已應用在修剪面 /p3 上";
+
+CATPartImportedFace.Info.NoTransfoOnFace=
+"   <I> [0066] [T=/p2] [/p1] 沒有轉換矩陣應用在修剪面 /p3 上";
+
+CATPartImportedFace.Info.Rattrap=
+"   <I> [0067] [T=/p2] [/p1] 嚐試相關曲面 /p3 新方向的另一個修剪面轉換";
+
+CATPartImportedFace.Warning.InvalidLoopSurface=
+"   <W> [0068] [T=/p2] [/p1] 邊界和曲面區域含無效資料 (錯誤碼: /p4 ) /p3";
+
+CATPartImportedFace.Error.LoopOutOfSurface=
+"   <E> [0745] [T=/p2] [/p1] 無效資料: 邊界不在曲面區域 /p3 上";
+
+CATPartImportedFace.Info.ChangeExternalLoop=
+"   <I> [0746] [T=/p2] [/p1] 外部邊界可能是這一個 (清單中的號碼 /p4 , 不是第一個) /p3";
+
+CATPartImportedFace.Warning.Face143WithLoops=
+"   <W> [0747] [T=/p2] [/p1] 型式 143 修剪面未只參考外部邊界 /p3";
+CATPartImportedFace.Info.SurfaceOf2ndFace=
+"   <I> [0748] [T=/p2] [/p1] 第二修剪面的基礎曲面已納入計算... /p3";
+
+CATPartImportedFace.Error.SurfaceIsAFace=
+"!  <E> [0749] [T=/p2] [/p1] 無效資料: 不是基本曲面但為第二修剪面 /p3";
+
+
+//---------------------------------------
+//  Messages from CATPartImportedSurface
+//---------------------------------------
+//
+// Numerotation : de [0070] a [0074] 
+
+CATPartImportedSurface.Info.FailingM2V5SingleSurf=
+"   <I> [0070] [T=/p2] [/p1] 從幾何曲面而來的薄殼未被 M2TOV5 建立: 建立分割 KO 物體組";
+
+CATPartImportedSurface.Msg.Create=
+"   <I> [0071] 呼叫 /p1 方式的物件等級 /p2 (D)";
+
+CATPartImportedSurface.Msg.ExceptionInMethod=
+"   <E> [0072] 例外方式 /p1 物件等級 /p2 (D)";
+
+CATPartImportedSurface.Error.RecupData=
+"   <E> [0073] [T=/p2] [/p1] 曲面資料讀取失敗";
+
+CATPartImportedSurface.Info.SurfaceAlreadyCreated=
+"   <I> [0074] [T=/p2] [/p1] 曲面已建立";
+
+CATPartImportedSurface.Info.NoSurfaceTiedtoTrimmedSurface=
+"   <I> [0654] [T=/p2] [/p1] 沒有曲面相關的修剪面";
+
+//------------------------------------
+//  Messages from CATPartImportedLoop
+//------------------------------------
+//
+// Numerotation : de [0080] a [0130]
+
+// Info : Surface = 114 - On ne passe pas par la Loop 2D - dfb 2002-01-23
+CATPartImportedLoop.Info.Surface114=
+"   <I> [0087] [T=114] 曲面為參數雲形曲面 - 2D 邊界不使用 /p3"; 
+
+			// Gestion des trous 3D/2D
+
+// Info : Mauvaise orientation des Curves 3D reparee. - dfb
+CATPartImportedLoop.Info.OrientCurvesOK=
+"   <I> [0093] [T=/p2] [/p1] 逆轉 3D 曲線已被重新定位 /p3"; 
+// Warning : Mauvaise orientation des Curves 3D  - dfb
+CATPartImportedLoop.Warning.OrientCurves=
+"   <W> [0094] [T=/p2] [/p1] 此邊界內含逆轉 3D 曲線 /p3"; 
+
+// Warning : Trou 2D dans la loop - dfb
+CATPartImportedLoop.Warning.HoleLoop=
+"   <W> [0095] [T=/p2] [/p1] 所計算的 2D 邊界在兩邊間造成孔 : /p4 /p3";
+
+// Warning : Trou 2D dans la loop entre PCurves d'une meme edge- dfb
+CATPartImportedLoop.Warning.HoleLoopEdge=
+"   <W> [0096] [T=/p2] [/p1] 所計算的 2D 邊界在一邊間造成孔 /p3";
+
+CATPartImportedLoop.Error.HoleLoopEdge=
+"   <E> [0086] [T=/p2] [/p1] 計算的 2D 邊界是無效的 /p3";
+
+// decoupes
+
+CATPartImportedLoop.Info.StatsNbCrv=
+"   <I> [0089] [T=/p2] [/p1] 修剪面邊界有太多分割. 使用: 使用拓墣減少選項或曲線最佳化 請查閱使用者導引 /p3";
+
+CATPartImportedLoop.Info.NbCrvBefore=
+"   <I> [0097] [T=/p2] [/p1] 迴圈由 /p4 IGES 曲線 /p3 產生";
+
+CATPartImportedLoop.Info.NbEdgesAfter=
+"   <I> [0098] [T=/p2] [/p1] 此迴圈由 /p4 部份邊線組合 (裁切後) /p3";
+
+CATPartImportedLoop.Info.NbCurvesAfter=
+"   <I> [0099] [T=/p2] [/p1] 此迴圈由 /p4 部份邊線組合 (裁切後) /p3";
+
+// erreur courbe loin de la surface
+
+CATPartImportedLoop.Error.CrvNotOnSurf=
+"   <E> [0100] [T=/p2] [/p1] 無效資料 : 曲線不在曲面上";
+
+// Lay Down
+
+CATPartImportedLoop.Info.PosageException=
+"   <I> [0101] [T=/p2] [/p1] 依附曲線時發生例外情形 /p3";
+
+CATPartImportedLoop.Error.Posage=
+"   <E> [0102] [T=/p2] [/p1] 依附未成功 /p3";
+
+CATPartImportedLoop.Warning.PbPosage=
+"   <I> [0103] [T=/p2] [/p1] 操作無法依附曲線 /p3";
+
+CATPartImportedLoop.Error.MultiSurf=
+"   <E> [0104] [T=/p2] [/p1] 依附未成功, 因為建立多重曲面失敗 /p3";
+
+
+
+CATPartImportedLoop.Info.LayDownKOtryProj=
+"   <I> [0105] [T=/p2] [/p1] 無法依附曲線, 請嚐試投影 .... /p3";
+
+CATPartImportedLoop.Info.PosagePCurveNulle=
+"   <I> [0092] [T=/p2] [/p1] 置放曲線所提供的參數曲線大小小於容差值. PCurve 未建立 /p3";
+
+// Projection
+
+CATPartImportedLoop.Warning.ProjectionKO=
+"   <W> [0106] [T=/p2] [/p1] 投影曲線失敗 /p3";
+
+ 
+
+
+CATPartImportedLoop.Warning.Project3D=
+"   <W> [0108] [T=/p2] [/p1] 動作無法投影 3D 曲線 /p3";
+
+CATPartImportedLoop.Error.ProjCrvSur=
+"   <E> [0109] Failure : CreateProjection 動作未建立 /p3";
+
+CATPartImportedLoop.Error.DistMaxLoopSurf=
+"   <E> [0085] [T=/p2] [/p1] 3D 邊界與曲面太遠 (距離 = /p4) /p3";
+
+// Model space & 3D curves
+
+CATPartImportedLoop.Info.Processing3DBecauseSettings =
+"   <I> [0088] [T=/p2] [/p1] 您的設定中, 您已選擇為 /p3 只用 3D曲線當邊界";
+
+CATPartImportedLoop.Error.ExcProjection=
+"   <E> [0110] [T=/p2] [/p1] 以 3D 曲線處理 /p3 中, 偵測到邊界例外情形";
+
+CATPartImportedLoop.Info.ModelSpaceProcessing=
+"   <I> [0111] [T=/p2] [/p1] 邊界處理中 - 定義在模型空間 /p3";
+
+CATPartImportedLoop.Info.C3Dfail=
+"   <I> [0112] [T=/p2] [/p1] 3D 曲線未建立 /p3";
+
+// PCurves
+
+
+CATPartImportedLoop.Info.Processing2D =
+"   <I> [0084] [T=/p2] [/p1] 參數曲線產生邊界 /p3";
+
+CATPartImportedLoop.Warning.PCurveException=
+"   <W> [0114] [T=/p2] [/p1] 曲線參數化時發生錯誤 /p3";
+
+
+CATPartImportedLoop.Warning.PossiblePunctual3DCurve=
+"   <W> [0119] [T=/p2] [/p1] 3D 曲線的邊線可能是穿孔 /p3";
+
+// punctual curves & merged extremities
+
+CATPartImportedLoop.Warning.MergedExtrCrv=
+"   <W> [0121] [T=/p2] [/p1] 曲線端點溶入 /p3";
+
+CATPartImportedLoop.Info.NulLength=
+"   <I> [0122] [T=/p2] [/p1] 曲線是準確的 /p3";
+
+CATPartImportedLoop.Error.NotNulLength=
+"   <E> [0123] [T=/p2] [/p1] 曲線有長度 (> 解析度) /p3";
+
+CATPartImportedLoop.Info.Closed3DCrv=
+"   <I> [0090] [T=/p2] [/p1] 3D 曲線是封閉的. 請嚐試分割 ... /p3";
+
+CATPartImportedLoop.Info.Closed3DCrvCorrectlySplit=
+"   <I> [0091] [T=/p2] [/p1] 封閉的 3D 曲線已被正確的分割 /p3";
+
+// others
+
+CATPartImportedLoop.Error.NbEdge0_3DCurve=
+"   <E> [0124] [T=/p2] [/p1] 在迴圈 /p3 內沒有 3D 的邊線";
+
+CATPartImportedLoop.Info.NbEdge0_PCurve=
+"   <I> [0125] [T=/p2] [/p1] 在迴圈 /p3 內沒有參數形式";
+
+CATPartImportedLoop.Error.Split=
+"   <E> [0127] [T=/p2] [/p1] 曲線 /p3" 分割;
+
+CATPartImportedLoop.Info.NoNurbsSurface=
+"   <I> [0128] 因為曲面不是 NURBS 形式, 以致參數曲線無法處理 /p3";  // pb libelle type surface /p2  // Devpt in SUG
+
+CATPartImportedLoop.Info.SurfNotC2=
+"   <I> [0129] 因為曲面不是 C2 形式, 以致參數曲線無法處理 /p3"; // pb libelle type surface /p2 // Devpt in SUG
+
+CATPartImportedFace.Error.ExcCreateM2V5=
+"   <E> [0130] [T=/p2] [/p1] 例外 M2V5 /p3";
+
+// Clean Loop
+CATPartImportedLoop.Info.NbElemInLoopAv=
+"   <I> [0082] [T=/p2] [/p1] 清理前在邊界中的元素數目 : /p4  /p3";
+
+CATPartImportedLoop.Info.NbElemInLoopAp=
+"   <I> [0083] [T=/p2] [/p1] 清理後在邊界中的元素數目 : /p4  /p3";
+
+CATPartImportedLoop.Warning.NoCurveInEdge=
+"   <W> [0081] [T=/p2] [/p1] 在邊線 /p3 沒有曲線";
+
+CATPartImportedLoop.Info.NbPCurves=
+"   <I> [0080] [T=/p2] [/p1] 曲線已置放 (或投影) 在 /p4 Pcurve(s) /p3";
+
+CATPartImportedLoop.Info.Pref3D=
+"   <I> [0075] [T=/p2] [/p1] 參數曲線 /p3 前使用 3D 曲線的指定輸入檔案";
+
+CATPartImportedLoop.Warning.Only3DNo2D=
+"   <W> [0076] [T=/p2] [/p1] 沒有參數曲線. 只可使用 3D 曲線 /p3 ";
+
+CATPartImportedLoop.Warning.Only2DNo3D=
+"   <W> [0077] [T=/p2] [/p1] 沒有 3D 曲線. 只可使用參數曲線 /p3 ";
+
+CATPartImportedLoop.Info.CannotUse2DBecauseSurf=
+"   <I> [0078] [T=/p2] [/p1] 無法在曲面 /p3 上處理參數曲線";
+
+CATPartImportedLoop.Error.NoLoop=
+"   <E> [0079] [T=/p2] [/p1] 無效資料: 邊界 /p3 上沒有曲線";
+
+//------------------------------------
+//  Messages from CATPartImportedShell
+//------------------------------------
+// Numeros reserves de 900 a 949
+
+CATPartImportedShell.Info.ProcessingElement=
+"***薄殼處理中 [T=/p2] [/p1] /p3";
+
+CATPartImportedShell.Error.ShellCreate=
+"   <E> [0900] [T=/p2] [/p1] 未建立薄殼 /p3";
+
+CATPartImportedShell.Warning.ThinFace=
+"   <W> [0901] [T=/p2] [/p1] 偵測到薄修剪面且被清除 /p3";
+
+CATPartImportedShell.Warning.ThinFaces=
+"   <W> [0902] [T=/p2] [/p1] 偵測到薄修剪面且被清除 /p3";
+
+CATPartImportedShell.Warning.CreateM2V5=
+"   <W> [0903] [T=/p2] [/p1] 建立薄殼時產生錯誤; 嚐試修補 /p3";
+
+
+//  Messages from CATPartImportedWorkingSurface
+//--------------------------------------
+
+CATPartImportedWorkingSurface.Msg.GetC2Surface =
+"   <E> 沒有 C2 曲面與目前的作動曲面鏈結 /p3";
+
+
+//--------------------------------------
+//  Messages from CATPartImportedWorkingCurve
+//--------------------------------------
+
+CATPartImportedWorkingCurve.Msg.ValuateFirstInit =
+"   <E> 沒有曲面可用來建立工作曲面 /p3";
+//--------------------------------------
+//  Messages from CATPartImportedVolume
+//--------------------------------------
+// Numeros reserves de [0950] a [0989]
+
+CATPartImportedVolume.Info.ProcessingElement=
+"\n*處理實體 [T=/p2] [/p1] /p3";
+
+CATPartImportedVolume.Error.VolumeCreate=
+"   <E> [0950] [T=/p2] [/p1] 實體未建立 /p3";
+
+
+//--------------------------------------
+//  Messages from CATPartImportedElement
+//--------------------------------------
+// Numerotation : de [0001] a [0012]
+//           et de : [0850] a [0854] 
+
+CATPartImportedElement.Info.ElemProcessing=
+"*** 元素處理中 [T=/p2] [/p1]";
+
+// JRX 2002-07-11 : pour les elements de solides ou de volumes, par exemple
+CATPartImportedElement.Info.ProcessingElement=
+" **處理元素中 [T=/p2] [/p1]";
+
+// type 300 de IGES :
+CATPartImportedElement.Info.JoinProcessing=
+"*** 連接元素處理中";
+
+// si on n'a pas les proprietes de l'element
+CATPartImportedElement.Info.NewElemProcessing=
+"*** 元素處理中 ...";
+
+CATPartImportedElement.Info.EltCreated=
+"   <I> [0001] [T=/p2] [/p1] 元素被正確建立 /p3";
+
+CATPartImportedElement.Error.Create=
+"!! <E> [0002] [T=/p2] [/p1] 元素未建立 /p3";
+
+//JRX 2001-07-05
+CATPartImportedElement.Error.EntityNotSupported=
+"!! <E> [0003] [T=/p2] [/p1] 元素不支援 /p3";
+
+CATPartImportedElement.Warning.CreatM2V5=
+"   <W> [0004] [T=/p2] [/p1] 以 M2V5 建立的元件不成功. /p3";
+
+CATPartImportedElement.Info.M2V5Engine=
+"  *<I> [0005] [T=/p2] [/p1] 以 M2V5Engine 轉換元素 /p3";
+
+CATPartImportedElement.Warning.TransfKO=
+"   <W> [0006] [T=/p2] [/p1] 以 M2V5Engine 轉換元素不成功 - 第二次嚐試... /p3";
+
+CATPartImportedElement.Error.Invalid=
+"!! <I> [0007] [T=/p2] [/p1] 無效資料 : 此元素無法建立 /p3";
+
+CATPartImportedElement.Error.ModelSize=
+"!! <E> [0008] [T=/p2] [/p1] 此元素無法建立 , 因它超過模型大小 /p3"; 
+
+CATPartImportedElement.Error.WireKO=
+"   <W> [0009] [T=/p2] [/p1] 曲線間不連續, 電子線無效, 會建立獨立曲線 /p3";
+
+CATPartImportedElement.Error.ExcCreat=
+"   <E> [0010] [T=/p2] [/p1] 建立元素時發生例外情形 /p3";
+
+CATPartImportedElement.Error.M2V5KO=
+"!  <E> [0011] [T=/p2] [/p1] 以 M2V5Engine 無法轉換 /p3";
+
+// Warning : le mode Debug Face KO est active - dfb
+CATPartImportedElement.Warning.DebugFaceKO=
+"   <W> [0012] [T=/p2] [/p1] 偵錯修剪面 KO 模式 /p3";
+// dfb 2002-02-01
+CATPartImportedElement.Warning.M2V5TrsfEchec=
+"   <W> [0013] [T=/p2] [/p1] 以 M2V5Engine 轉換未完成 : 修剪面號碼 /p4 未建立 /p3";
+
+// rno 25/02/2002
+CATPartImportedElement.Info.ReductionTopoFailure=
+"   <W> [0014] [T=/p2] [/p1] 拓墣降階失敗. 未清理修剪面轉換 (錯誤號碼 : /p4 ) /p3";
+
+// dfb 2002-07-31
+CATPartImportedElement.Warning.ErreurTrsfM2V5=
+"   <I> [0850] [T=/p2] [/p1] 以 M2V5Engine 轉換是錯誤的 (錯誤號碼 : /p4 ) /p3";
+
+CATPartImportedElement.Info.NbFaceAfterTrsfM2V5=
+"   <W> [0851] [T=/p2] [/p1] 以 M2V5 轉換後修剪面的數目為: /p4 /p3";
+
+CATPartImportedElement.Warning.GVPError=
+"   <W> [0852] [T=/p2] [/p1] 性質有效性失敗 /p3";
+
+CATPartImportedElement.Info.GVPEntity=
+"   <I> [0853] [T=/p2] [/p1] 元件的幾何有效性質 : /p4 ";
+// Ne pas mettre de /p3 pour ce message [0853] --> outils de recherche
+
+CATPartImportedElement.Info.WireNotCreat=
+"   <I> [0854] [T=/p2] [/p1] 此元素不是曲線無法建立 /p3";
+
+
+//--------------------------------------
+//  Messages for feature's Tree of Geometry Ko and Discrepancy
+//--------------------------------------
+
+// These messages are used to name the feature created with Geometrie retrieved from Face Kos
+//exemple : body is named : FaceKO#177
+// Sur177_1, ...
+CATPartDesignInterface.Msg.NameFaceAmbiguous =
+"InvalidFace#";
+CATPartDesignInterface.Msg.NameAmbiguousBody =
+"Invalid Input Geometry";
+CATPartDesignInterface.Msg.NameBody =
+"Geometry Failure";
+CATPartDesignInterface.Msg.NameFace =
+"FaceKO#";
+CATPartDesignInterface.Msg.NameSurface =
+"Sur";
+CATPartDesignInterface.Msg.NameCurve =
+"Crv";
+CATPartDesignInterface.Msg.NamePCurve =
+"PCrv";
+
+//--------------------------------------
+// Messages about ambiguous elements
+// ( CATPartImportedInvalidElement.cpp )
+//______________________________________
+
+CATPartImportedInvalidElement.Msg.HoleAmbiguousness = 
+"含孔的單一邊界 
+大小 : ";
+
+CATPartImportedInvalidElement.Msg.DistanceAmbiguousness = 
+"3D 曲線未貼在曲面上";
+
+
+
+//--------------------------------------
+//  Messages from Join
+//
+// (CATPartImportedJoinedShell.cpp)
+//--------------------------------------
+// Numeroration : [0199] a [0216]
+
+
+CATPartJoinProcessing.Error.FaceNotJoined =
+"   <E> [0199] [T=/p2] [/p1] 此修剪面未連接. /p3";
+
+CATPartJoinProcessing.Info.JoinInOnePass =
+"   <E> [0200] [T=/p2] [/p1] 連接動作依使用者容差只有一次是實際的. /p3";
+
+CATPartJoinProcessing.Info.JoinStarting =
+"  *<I> [0201] [T=/p2] [/p1] 連接處理開始 /p3";
+CATPartJoinProcessing.Info.JoinFaceProcessing =
+"  *<I> [0202] [T=/p2] [/p1] 修剪面處理中 /p3";
+CATPartJoinProcessing.Info.JoinProcessing =
+"  *<I> [0203] [T=/p2] [/p1] 連接處理中 /p3";
+
+CATPartJoinProcessing.Error.JoinNoElement =
+"   <E> [0204] [T=/p2] [/p1] 沒有元素可連接 /p3";
+
+CATPartJoinProcessing.Warning.FirstJoinNOK =
+"   <W> [0205] [T=/p2] [/p1] 第一連接不成功 /p3";
+
+CATPartJoinProcessing.Error.SecondJoinNOK =
+"   <E> [0206] [T=/p2] [/p1] 第二連接不成功 /p3";
+
+CATPartJoinProcessing.Info.FirstNotAllJoined =
+"   <I> [0207] [T=/p2] [/p1] 部分第一個連接 /p3";
+CATPartJoinProcessing.Info.SecondNotAllJoined =
+"   <I> [0208] [T=/p2] [/p1] 部分第二個連接 /p3";
+CATPartJoinProcessing.Info.FirstFacesAllJoined =
+"   <I> [0209] [T=/p2] [/p1] 所有修剪面在第一次連接 /p3";
+CATPartJoinProcessing.Info.SecondFacesAllJoined =
+"   <I> [0210] [T=/p2] [/p1] 所有修剪面在第二次連接 /p3";
+
+CATPartJoinProcessing.Info.JoinOK =
+"   <I> [0211] [T=/p2] [/p1] 連接成功 /p3";
+CATPartJoinProcessing.Error.JoinNOK =
+"   <E> [0212] [T=/p2] [/p1] 連接不成功 /p3";
+
+CATPartJoinProcessing.Error.PbWitFaceId =
+"   <E> [0213] [T=/p2] [/p1] 特徵未建立 : 一個未連接的修剪面已被更名 /p3";
+
+CATPartJoinProcessing.Error.JoinNOKFace =
+"   <E> [0214] [T=/p2] [/p1] 連接失敗 (修剪面處理時發生問題) /p3";
+
+CATPartJoinProcessing.Error.JoinPbOperator =
+"   <E> [0215] [T=/p2] [/p1] 連接失敗 (連接動作問題) /p3";
+
+CATPartJoinProcessing.Info.Color=
+"   <I> [0216] [T=/p2] [/p1] R=/p3 G=/p4 B=/p5 The Entity Color is overridden (Debug)" ;
+
+//----------------------------------------------
+//  Messages from CATPartImportedEdgeUse.cpp
+//----------------------------------------------
+// Numeroration : [0451] 
+
+// Info : Mauvaise orientation des PCurves reparee. - dfb 2002-01-08
+CATPartImportedEdgeUse.Info.OrientPCurvesOK=
+"   <I> [0451] [T=/p2] [/p1] 逆轉 2D 曲線已被重新定位 /p3"; 
+
+CATPartImportedEdgeUse.Info.PCurveSplit=
+"   <I> [0452] [T=/p2] [/p1] 參數化曲線因為是封閉的所以已分割 /p3";
+
+//=====================================================
+//========== Messages pour le CleanCurve dans CATPartCleanCurve
+//=====================================================
+
+// dans CATPartCleanCurve
+CATPartCleanCurve.Info.AnalyseStartEdge =
+"   <I> [0601] [T=/p2] [/p1] 分析邊界 /p3";
+CATPartCleanCurve.Info.AnalyseStartCI =
+"   <I> [0602] [T=/p2] [/p1] 分析獨立曲線 /p3";
+
+CATPartCleanCurve.Info.CloseCurvEdge =
+"   <I> [0605] [T=/p2] [/p1] 邊界是封閉的  /p3";
+CATPartCleanCurve.Info.CloseCurvCI =
+"   <I> [0606] [T=/p2] [/p1] 獨立曲線是封閉的  /p3";
+
+CATPartCleanCurve.Info.GContStartAvant =
+"   <I> [0607] [T=/p2] [/p1] G- 連續 分析 ...開始 /p3";
+
+CATPartCleanCurve.Info.GContEndAvant =
+"   <I> [0608] [T=/p2] [/p1] G- 連續 分析 ...結束 /p3";
+
+CATPartCleanCurve.Info.CurvG0AvantEdge =
+"   <I> [0609] [T=/p2] [/p1] GlobalG0 清理前的錯誤邊界 : /p4 /p3"; 
+CATPartCleanCurve.Info.CurvG0AvantCI =
+"   <I> [0610] [T=/p2] [/p1] GlobalG0 清理前的錯誤獨立曲線 : /p4 /p3"; 
+
+
+CATPartCleanCurve.Info.CurvG1AvantEdge =
+"   <I> [0611] [T=/p2] [/p1] GlobalG1Error 清理前的邊界 : /p4 /p3"; 
+CATPartCleanCurve.Info.CurvG1AvantCI =
+"   <I> [0612] [T=/p2] [/p1] GlobalG1Error 清理前的獨立曲線 : /p4 /p3"; 
+
+CATPartCleanCurve.Info.CurvG2AvantEdge =
+"   <I> [0613] [T=/p2] [/p1] GlobalG2Error 清理前的邊界 : /p4 /p3";
+CATPartCleanCurve.Info.CurvG2AvantCI =
+"   <I> [0614] [T=/p2] [/p1] GlobalG2Error 清理前的獨立曲線 : /p4 /p3";
+
+CATPartCleanCurve.Warning.CleanCurvReturnCode =
+"   <I> [0616] [T=/p2] [/p1] CLEANCURVE 回復碼 : /p4 /p3";
+
+CATPartCleanCurve.Info.GContStartApresEdge =
+"   <I> [0618] [T=/p2] [/p1] 開始邊界的 G- 連續分析清理 /p3";
+CATPartCleanCurve.Info.GContStartApresCI =
+"   <I> [0619] [T=/p2] [/p1] 開始獨立邊界的 G- 連續分析清理 /p3";
+
+CATPartCleanCurve.Info.GContEndApresEdge =
+"   <I> [0620] [T=/p2] [/p1] 結束邊界的 G- 連續分析清理 /p3";
+CATPartCleanCurve.Info.GContEndApresCI =
+"   <I> [0621] [T=/p2] [/p1] 結束獨立邊界的 G- 連續分析清理 /p3";
+
+CATPartCleanCurve.Info.CurvG0ApresEdge =
+"   <I> [0622] [T=/p2] [/p1] GlobalG0Error 清理後的邊界: /p4 /p3"; 
+CATPartCleanCurve.Info.CurvG0ApresCI =
+"   <I> [0623] [T=/p2] [/p1] GlobalG0Error 清理後的獨立邊界: /p4 /p3"; 
+
+CATPartCleanCurve.Info.CurvG1ApresEdge =
+"   <I> [0624] [T=/p2] [/p1] GlobalG1Error 清理後的邊界: /p4 /p3";
+CATPartCleanCurve.Info.CurvG1ApresCI =
+"   <I> [0625] [T=/p2] [/p1] GlobalG1Error 清理後的獨立邊界: /p4 /p3";
+
+CATPartCleanCurve.Info.CurvG2ApresEdge =
+"   <I> [0626] [T=/p2] [/p1] GlobalG2Error 清理後的邊界: /p4 /p3";
+CATPartCleanCurve.Info.CurvG2ApresCI =
+"   <I> [0627] [T=/p2] [/p1] GlobalG2Error 清理後的獨立邊界: /p4 /p3";  
+
+CATPartCleanCurve.Warning.EmptyListEdge =
+"   <W> [0628] [T=/p2] [/p1] 因清理曲線命令回復空的清單 /p3 以致邊界未清理"; 
+CATPartCleanCurve.Warning.EmptyListCI =
+"   <W> [0629] [T=/p2] [/p1] 因清理曲線命令回復空的清單 /p3 以致獨立邊界未清理"; 
+
+CATPartCleanCurve.Warning.MemoryWarning =
+"   <W> [0630] [T=/p2] [/p1] CCVCleanCurve 無法建立  /p3"; 
+
+CATPartCleanCurve.Warning.CCVThrow =
+"   <W> [0631] [T=/p2] [/p1] CCVCleanCurve 已執行  /p3";
+
+CATPartCleanCurve.Warning.CurvSplitFailedEdge =
+"   <W> [0634] [T=/p2] [/p1] 分割封閉邊界曲線 ..未成功 /p3";
+CATPartCleanCurve.Warning.CurvSplitFailedCI =
+"   <W> [0635] [T=/p2] [/p1] 分割獨立封閉邊界曲線 ..未成功 /p3";
+
+CATPartCleanCurve.Warning.EdgeDcrz =
+"   <W> [0638] [T=/p2] [/p1] 減少的邊界元素數目 : /p4  /p3";
+
+CATPartCleanCurve.Info.MaxGapAvant =
+"   <I> [0639] [T=/p2] [/p1] 清理循環前的最大 3D 間隙 : /p4 /p3";
+
+CATPartCleanCurve.Info.MaxGapApres =
+"   <I> [0640] [T=/p2] [/p1] 清理循環後的最大 3D 間隙 : /p4 /p3";
+
+CATPartCleanCurve.Warning.CleanLoopFailed =
+"   <W> [0641] [T=/p2] [/p1] 清理循環失敗 /p3";
+
+CATPartCleanCurve.Warning.CurveTooSmall =
+"   <W> [0642] [T=/p2] [/p1] 清理曲線的總長太小. ( 長度 : /p4 )/p3 ";
+
+CATPartCleanCurve.Info.Maxdef =
+"   <I> [0644] [T=/p2] [/p1] 產生的最大變異 : /p4 . /p3";
+
+CATPartCleanCurve.Warning.ChkUnicDomain =
+"   <W> [0645] [T=/p2] [/p1] 本體中的定義與 /p3 不同";
+
+CATPartCleanCurve.Warning.ChkOneDomainPtr =
+"   <W> [0646] [T=/p2] [/p1] 本體中的指標無效 /p3";
+
+CATPartCleanCurve.Warning.ChkIsNotAShell =
+"   <W> [0647] [T=/p2] [/p1] 本體不是薄殼 /p3";
+
+CATPartCleanCurve.Warning.ChkUnicShell = 
+"   <W> [0648] [T=/p2] [/p1] 本體含有數個薄殼 /p4 /p3";
+
+CATPartCleanCurve.Warning.ChkHaveCell =
+"   <W> [0649] [T=/p2] [/p1] 此本體未含 CELL /p3";
+
+CATPartCleanCurve.Warning.CleanFaceExcJoin=
+"   <W> [0651] [T=/p2] [/p1] 連接時發生例外情形  /p3";
+
+CATPartCleanCurve.Warning.CleanFaceEchecJoin=
+"   <W> [0652] [T=/p2] [/p1] 拓墣減少失敗. 連接在多重本體 /p3 未成功";
+
+CATPartImportedElement.Warning.ExcReductionTopo=
+"   <W> [0653] [T=/p2] [/p1] 拓墣減少時發生例外情形.  /p3";
+
+//--------------------------------------
+//  Messages from CATPartImportedGroup
+//--------------------------------------
+// Numerotation : de [0480] a [0486]
+
+CATPartImportedGroup.Info.SelectionSetCreated =
+"   <I> [0480] [T=/p2] [/p1] IGES 群組含有 /p4 元素 - 已正確建立選擇組合 /p3";
+
+CATPartImportedGroup.Error.ExcGroup = 
+"   <W> [0481] [T=/p2] [/p1] 建立選擇組合 /p3 時發生例外情形";
+
+CATPartImportedGroup.Info.ElementInSelectionSet =
+"   <I> [0482] [T=/p2] [/p1] IGES 群組新增元素號碼 /p4 至選擇組合 /p3";
+
+CATPartImportedGroup.Warning.ElementNotInSelectionSet =
+"   <W> [0483] [T=/p2] [/p1] IGES 群組無法新增元素號碼 /p4 至選擇組合 /p3";
+
+CATPartImportedGroup.Warning.ElementFromGroupNotCreated =
+"   <I> [0484] [T=/p2] [/p1] IGES 群組元素號碼 /p4 無法建立 /p3";
+
+CATPartImportedGroup.Warning.SelectionSetEmpty =
+"   <W> [0485] [T=/p2] [/p1] 未建立選擇組合, 因為 /p3 中沒有選擇元素";
+
+CATPartImportedGroup.Info.SelectionSetNotCreatedBecauseOption =
+"   <W> [0486] [T=/p2] [/p1] 未建立選擇組合, 因為未在設定 /p3 中選擇轉換群組.";
+
+//----------------------------------------
+//  Messages from CATPartImpSelectionSets
+//----------------------------------------
+
+CATPartImpSelectionSets.Warning.SelectionSetOverflow =
+"   <W> 選擇組合超出範圍; 只有 /p1 第一個元素已增加至選擇組合 /p2";
+
+
+//--------------------------------------
+//  Messages from CATPartImportedTools
+//--------------------------------------
+// Numerotation : de [0701] a [0704]
+
+CATPartImportedTools.Warning.CourbeOrient= 
+"   <W> [0701] [T=/p2] [/p1] 線 /p3 內的曲線有錯誤的方向";
+
+CATPartImportedTools.Warning.CourbeDegen=
+"   <W> [0702] [T=/p2] [/p1] 線內有反曲線 /p3";
+
+CATPartImportedTools.Warning.TrouWire=
+"   <W> [0703] [T=/p2] [/p1] 線內有孔 =  /p4 公厘  /p3";
+
+CATPartImportedTools.Info.ClosedWire=
+"   <I> [0704] [T=/p2] [/p1] 線為封閉的  /p3";
+
+

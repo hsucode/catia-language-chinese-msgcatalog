@@ -1,0 +1,348 @@
+// COPYRIGHT ImpactXoft 2003
+//===================================================================
+//===========================================================================
+// Feature spec-tree names
+//===========================================================================
+
+// All_CATISpd all features need a name
+SpdBodyRef         = "本體";
+SpdBoss          = "凸包";
+SpdCut           = "切";
+SpdCutout        = "輪廓";
+SpdDraftProperties = "推拔性質";
+SpdDivide		   = "分開";
+SpdExtract               = "萃取";
+SpdExtractBehavior       = "行為萃取";
+SpdExtractionProperties  = "萃取性質";
+SpdExtrude       = "拉伸";
+SpdFlange                = "輪緣";
+SpdGrill         = "柵欄";
+SpdImport          = "輸入";
+SpdJoin                  = "連接";
+SpdLip             = "唇";
+SpdMirror          = "鏡射";
+SpdOffset                = "偏移";
+SpdPattern         = "陣列";
+SpdPocket        = "減重槽";
+SpdPPF			   = "PPF";
+SpdReinforcement = "加強";
+SpdRest          = "停駐";
+SpdRevolve       = "旋轉";
+SpdRib           = "肋";
+SpdShell         = "薄殼性質";
+SpdSnapLock              = "Snap 鎖定";
+SpdThicken       = "厚度曲面";
+SpdXForm		   = "轉換";
+
+SpdXfs     		   = "外部功能性設定";
+
+SpdDivideNLS	   = "分開";
+SpdExtrudeNLS      = "擠出掃掠";
+SpdPPFNLS          = "推拉適應";
+
+SpdCFSBoolean      = "CFS 移除";
+
+SpdJoinData        = "連接資料";
+SpdScrew           = "螺絲";
+
+SpdCustomScrew			= "自訂螺絲";
+//===========================================================================
+// Feature alias names
+//===========================================================================
+
+SpdBodyRefSV			= "可薄殼本體";
+SpdBodyRefPV			= "穴本體";
+SpdBodyRefOSV			= "仁本體";
+SpdBodyRefNVStar		= "內在本體";
+SpdBodyRefFPV			= "新增本體";
+SpdBodyRefFNV			= "保護本體";
+SpdBodyRefRemove		= "移除本體";
+SpdBodyRefIntersect		= "相交本體";
+
+SpdDivideUpper			= "分開";
+SpdDivideLower			= "分開";
+SpdDivideBody			= "分開本體";
+
+SpdExtractCoreBody		= "模仁本體";
+SpdExtractCavityBody	= "模穴本體";
+SpdExtractProtectedBody = "保護本體";
+SpdExtractGrillBody     = "柵欄本體";
+SpdExtractBody          = "萃取本體";
+
+SpdExtractCoreFPV       = "新增萃取模仁";
+SpdExtractCoreFNV       = "保護萃取模仁";
+
+SpdExtractCavityFPV     = "新增萃取模穴";
+SpdExtractCavityFNV     = "保護萃取模穴";
+
+SpdExtractGrillFPV      = "新增萃取格框";
+SpdExtractGrillFNV      = "保護萃取格框";
+
+SpdExtractProtectedFPV  = "新增萃取保護";
+SpdExtractProtectedFNV  = "保護萃取保護";
+
+SpdExtractBehaviorSV   = "可薄殼行為萃取";
+SpdExtractBehaviorPV   = "模穴行為萃取";
+SpdExtractBehaviorDCC  = "模仁行為萃取";
+SpdExtractBehaviorNVS  = "內部行為萃取";
+SpdExtractBehaviorFPV  = "新增行為萃取";
+SpdExtractBehaviorFNV  = "保護行為萃取";
+
+SpdExtrudeDistSV		= "薄殼柱塊";
+SpdExtrudeDistPV		= "穴柱塊";
+SpdExtrudeDistOSV		= "仁柱塊";
+SpdExtrudeDistNVStar	= "內部柱塊";
+SpdExtrudeDistFPV		= "新增柱塊";
+SpdExtrudeDistFNV		= "已保護柱塊";
+SpdExtrudeDistRemove	= "移除柱塊";
+SpdExtrudeDistIntersect	= "相交柱塊";
+
+SpdExtrudePathSV		= "可薄殼掃掠";
+SpdExtrudePathPV		= "穴掃掠";
+SpdExtrudePathOSV		= "仁掃掠";
+SpdExtrudePathNVStar	= "內部掃掠";
+SpdExtrudePathFPV		= "新增掃掠";
+SpdExtrudePathFNV		= "已保護掃掠";
+SpdExtrudePathRemove	= "移除掃掠";
+SpdExtrudePathIntersect	= "相交掃掠";
+
+SpdJoinHead				= "頭";
+SpdJoinThread			= "螺紋";
+
+SpdLipUpper             = "上唇";
+SpdLipLower             = "下唇";
+
+SpdPatternRectangular	= "矩形陣列";
+SpdPatternCircular		= "圓形陣列";
+SpdPatternUserDefined	= "自訂陣列";
+
+SpdPPFPush				= "推";
+SpdPPFPull				= "拉";
+SpdPPFFitting			= "適應";
+
+SpdRevolveSV		= "可薄殼旋轉";
+SpdRevolvePV		= "穴旋轉";
+SpdRevolveOSV		= "仁旋轉";
+SpdRevolveNVStar	= "內部旋轉";
+SpdRevolveFPV		= "新增旋轉";
+SpdRevolveFNV		= "已保護旋轉";
+SpdRevolveRemove		= "移除旋轉";
+SpdRevolveIntersect		= "相交旋轉";
+
+SpdCantileverHookClip   = "Cantilever Hook Clip";
+SpdCantileverLoopClip   = "Cantilever Loop Clip";
+SpdCantileverHookTrap   = "Cantilever Hook Trap";
+SpdCantileverLoopCatch  = "Cantilever Loop Catch";
+
+SpdThickSurfaceSV		= "可薄殼厚度曲面";
+SpdThickSurfacePV		= "穴厚度曲面";
+SpdThickSurfaceOSV		= "仁厚度曲面";
+SpdThickSurfaceNVStar	= "內部厚度曲面";
+SpdThickSurfaceFPV		= "新增厚度曲面";
+SpdThickSurfaceFNV		= "已保護厚度曲面";
+SpdThickSurfaceRemove	= "移除厚度曲面";
+SpdThickSurfaceIntersect= "相交厚度曲面";
+
+SpdXFormRotate			= "旋轉";
+SpdXFormTranslate		= "平移";
+SpdXFormScaling			= "縮放";
+SpdXFormSymmetry		= "對稱";
+SpdXFormAxis			= "軸至軸";
+SpdXFormAffinity		= "相似";
+
+//===========================================================================
+// Feature parameter names
+// All_CATISpd - All attributes that end up in Fx or Parent/Child
+//               should have a name mapping
+//===========================================================================
+
+// Direction interface
+SpdToDistanceLimitLength   = "第一限制";
+SpdFromDistanceLimitLength = "第二限制";
+SpdDirToSelectionOffset    = "第一限制偏移";
+SpdDirFromSelectionOffset  = "第二限制偏移";
+SpdMirrorExtent            = "第二限制先鏡向";
+SpdDirectionSymmetrical    = "限制上的對稱關聯";
+
+// Fillet interface
+SpdFilletLateralRadius = "倒側向圓角";
+SpdFilletBottomRadius  = "圓角第一半徑";
+SpdFilletTopRadius     = "圓角第二半徑";
+
+// Draft interface
+SpdDraft1stAngleLimit  = "脫模第一限制角度";
+SpdDraft2ndAngleLimit  = "脫模第二限制角度";
+SpdDraftSplitEdgeFilletRad = "推拔側的圓角半徑";
+
+SpdThickness               = "厚度1";
+SpdThickness2              = "厚度2";
+SpdSplitThickness          = "分割厚度";
+
+// Wall interface
+SpdWallThickness           = "牆厚度";
+SpdWallBodyThickness       = "本體牆厚度關聯";
+
+// 2ndWall interface
+Spd2ndWallThickness        = "預留牆厚度";
+
+// Revolve
+SpdAngle               = "角度";
+SpdAntiAngle           = "第二角度";
+SpdAngleMirrored           = "第二角度先鏡向";
+
+// Shell
+SpdShellBodyThickness  = "薄殼本體厚度";
+
+// Grill feature
+SpdHeight              = "高度";
+SpdWidth               = "寬度";
+SpdRibsHeight		   = "肋高度";
+SpdRibsWidth		   = "肋寬度";
+SpdRibsTopOffset       = "肋上端偏移";
+SpdSpikesHeight            = "尖針高度";
+SpdSpikesWidth             = "尖針寬度";
+SpdSpikesTopOffset     = "針刺上端偏移";
+SpdSpikesBottomOffset  = "針刺下端偏移";
+SpdIslandThickness         = "島厚度";
+
+// Reinforcement feature
+SpdReinforcementHeight = "高度";
+SpdReinforcementWidth  = "寬度";
+
+// Cut feature
+SpdFilletCutRadius         = "切割圓角半徑";
+SpdCutterOffset            = "切割元素偏移";
+
+// Offset feature
+SpdOffsetValue             = "OffsetValue";
+
+// Rib feature
+SpdRibPostTaperAngle	   = "後端推拔角度";
+SpdRibPostDiameter		   = "後端直徑";
+
+// Lip
+SpdLipUpperClearance       = "上餘隙";
+SpdLipLowerClearance       = "下餘隙";
+SpdLipHeight               = "高度";
+SpdLipThickness            = "寬度";
+SpdLipAngle                = "角度";
+SpdLipInnerAngle           = "內部角度";
+
+// Pattern
+SpdPatternFirstDirInstanceCount  = "第一方向的複件數目";
+SpdPatternFirstDirSpacingLength  = "第一方向的間隔";
+SpdPatternFirstDirTotalLength    = "第一方向的長度";
+SpdPatternFirstDirSpacingAngle   = "第一方向的角度間隔";
+SpdPatternFirstDirTotalAngle     = "第一方向的總體角度";
+
+SpdPatternSecondDirInstanceCount = "第二方向的複件數目";
+SpdPatternSecondDirSpacingLength = "第二方向的間隔";
+SpdPatternSecondDirTotalLength   = "第二方向的長度";
+
+SpdPatternKeyIndexInFirstDir     = "第一方向的主要複件索引";
+SpdPatternKeyIndexInSecondDir    = "第二方向的主要複件索引";
+
+SpdPatternKeyRotationAngle       = "圍繞主要複件";
+
+// PPF
+SpdClearanceThickness			 = "間隙厚度";
+
+// Rest
+SpdClearanceDraftAngle           = "推拔預留角度";
+
+// Snap Lock
+SpdSLPositionOffset              = "ClipPositionsOffset";
+SpdSLCatchToleranceWidth		 = "CatchToleranceWidth";
+SpdSLCatchToleranceEngage        = "CatchToleranceEngagement";
+SpdSLToleranceWidth				 = "ToleranceWidth";
+SpdSLToleranceEngage             = "ToleranceEngagement";
+SpdSLToleranceLength             = "ToleranceLength";
+SpdSLToleranceOffset             = "ToleranceOffset";
+SpdSLToleranceDepth              = "ToleranceDepth";
+SpdSLUnderCutDepth               = "RetentionUndercutDepth";
+SpdSLLength						 = "Length";
+SpdSLLoopLength				     = "LoopLength";
+SpdSLCatchLength				 = "CatchLength";
+SpdSLWidth						 = "Width";
+SpdSLBeamThickAtWall			 = "ThicknessAtWall";
+SpdSLLoopBeamThickAtWall		 = "LoopThicknessAtWall";
+SpdSLBeamThickAtRetention		 = "ThicknessAtRetention";
+SpdSLBeamWidthAtWall			 = "WidthAtWall";
+SpdSLThickAtTop					 = "BeamThicknessAtTop";
+SpdSLLoopThickAtTop              = "LoopThicknessAtTop";
+SpdSLBeamWidthAtRetention	     = "WidthAtRetention";
+SpdSLOffset						 = "Offset";
+SpdSLHeight						 = "Height";
+SpdSLThickAtBottom				 = "LoopWidth";				
+SpdSLThickAtSide1                = "LoopThicknessAtSide1";
+SpdSLThickAtSide2                = "LoopThicknessAtSide2";
+SpdSLRetentionLength             = "RetentionLength";
+SpdSLHookTipLength               = "HookTipLength";
+SpdSLRetentionAngle				 = "RetentionAngle";
+SpdSLInsertionAngle				 = "InsertionAngle";
+SpdSLLoopRetentionAngle			 = "LoopRetentionAngle";
+SpdSLLoopInsertionAngle			 = "LoopInsertionAngle";
+
+// XForm
+SpdXFormDistance				 = "距離";
+SpdXFormX						 = "X";
+SpdXFormY						 = "Y";
+SpdXFormZ						 = "Z";
+SpdXFormRotationAngle			 = "角度";
+SpdXFormScaleScale				 = "縮放";
+SpdXFormYScale					 = "Y 縮放";
+SpdXFormZScale					 = "Z 縮放";
+
+
+
+// Screw
+SpdScrewHeadDiameter			 = "頭直徑";
+SpdScrewShankDiameter			 = "柄直徑";
+SpdScrewThreadDiameter			 = "螺紋直徑";
+SpdScrewHeadHeight				 = "頭高度";
+SpdScrewShankHeight				 = "柄高度";
+SpdScrewThreadHeight			 = "螺紋高度";
+
+// JoinData
+SpdJoinHeadClearance			 = "頭預留";
+SpdJoinHeadInnerDraft			 = "頭內側推拔角度";
+SpdJoinHeadOuterDraft            = "頭外側推拔角度";
+
+SpdJoinThreadClearance           = "螺紋預留";
+SpdJoinThreadInnerDraft		     = "螺紋內側推拔角度";
+SpdJoinThreadOuterDraft          = "螺紋外側推拔角度";
+SpdThreadWallThickness           = "螺紋牆厚度";
+SpdJoinThreadDepth               = "ThreadHeightClearance";
+
+SpdJoinClampGuideHeight          = "夾持導引高度";
+SpdJoinClampInnerDraft           = "夾持內側推拔角度";
+SpdJoinClampSideClearance        = "夾持側面預留";
+SpdJoinClampHeightClearanc       = "夾持高度預留";
+
+SpdJoinShankSideClearance        = "柄側預留";
+SpdJoinShankInnerDraft           = "柄內側推拔角度";
+SpdJoinShankHeightClearanc		 = "柄高度預留";
+
+// Join gusset added in R16
+SpdJoinGussetExistOn             = "GussetExistOn";
+SpdJoinGussetInitialAngle        = "GussetInitialAngle";
+SpdJoinGussetNumberOf            = "GussetNumberOf";
+SpdJoinGussetHeadOffset          = "GussetHeadOffset";
+SpdJoinGussetThreadOffset        = "GussetThreadOffset";
+SpdJoinGussetShoulderWidth       = "GussetShoulderWidth";
+SpdJoinGussetThickness           = "GussetWallThickness";
+SpdJoinGussetDraftAngle          = "GussetDraftAngle";
+SpdJoinGussetFlareAngle          = "GussetFlareAngle";
+SpdJoinGussetFilletRadius        = "GussetFilletRadius";
+SpdJoinGussetBlendRadius         = "GussetBlendRadius";
+
+// Flange added in R16
+SpdFlangeWidth                   = "輪緣寬度";
+SpdFlangeThickness               = "輪緣厚度";
+SpdFlangeTopRadius               = "輪緣上部半徑";
+SpdFlangeBottomRadius            = "輪緣底部半徑";
+SpdFlangeSideRadius              = "輪緣側面半徑";
+SpdFlangeDraftAngle              = "輪緣推拔角度";
+
+
+

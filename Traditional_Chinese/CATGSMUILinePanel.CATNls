@@ -1,0 +1,213 @@
+//---------------------------------------------------------------
+// Resource file for CATGSMUILinePanel class
+// US
+//---------------------------------------------------------------
+
+Title="線的定義";
+
+LineTypePtPt="點到點";
+LineTypePtDir="點和方向";
+LineTypeAngle="角度與曲線垂直";
+LineTypeTgt="與曲線相切";
+LineTypeNrm="與曲面垂直";
+LineTypeNrmC="與曲線垂直";
+LineTypeBisecting="平分線";
+LineTypeExpl="明確的";
+
+frame1.LabList.Title="直線形式:";
+frame1.CmbList.LongHelp="顯示建立線的可用方式.";
+
+PtPtFrame.FraGeo.LabelPtPtPointO.Title="點1: ";
+PtPtFrame.FraGeo.LabelPtPtPointE.Title="點2: ";
+PtPtFrame.FraGeo.LabelPtPtSupp.Title="依附 : ";
+PtPtFrame.FraGeo.LabelPtPtStart.Title="開始 : ";
+PtPtFrame.FraGeo.LabelPtPtEnd.Title="結束 : ";
+PtPtFrame.FraGeo.FraElem1.LongHelp="指定線的第一個端點.";
+PtPtFrame.FraGeo.FraElem2.LongHelp="指定線的第二個端點.";
+PtPtFrame.FraGeo.FraGeod2.LongHelp="指定投影線的依附曲面.將會建立 geodesic 線 \n 此資料為選項之一.";
+PtPtFrame.FraGeo.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.Title="開始";
+PtPtFrame.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="結束";
+PtPtFrame.FraGeo.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="指定從開始點的延伸線. \n 您也可使用右鍵內容指定公式";
+PtPtFrame.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="指定從結束點的延伸線. \n 您也可使用右鍵內容指定公式";
+PtPtFrame.ChkMirror.Title="鏡像延伸";
+PtPtFrame.ChkMirror.LongHelp="鏡像延伸";
+PtPtFrame.ChkRepeat.Title="下一次開始時再選擇第二點";
+PtPtFrame.ChkRepeat.LongHelp="下一次命令開始時, 第一點將會變為目前所選第二點.";
+PtPtFrame.FraRadio.LabelRadio.Title="長度型式";
+PtPtFrame.FraRadio.RadioLength.Title="長度";
+PtPtFrame.FraRadio.RadioInfinite.Title="無限";
+PtPtFrame.FraRadio.RadioInfStart.Title="無限起始點";
+PtPtFrame.FraRadio.RadioInfEnd.Title="無限結束點";
+PtPtFrame.FraGeo.LabelPtPtUpto1.Title="上至 1: ";
+PtPtFrame.FraGeo.LabelPtPtUpto2.Title="上至 2: ";
+PtPtFrame.FraGeo.FraUpto1.LongHelp="指定第一個向上元素來建立線.";
+PtPtFrame.FraGeo.FraUpto2.LongHelp="指定第二個向上元素來建立線.";
+
+PtDirFrame.FraGeo.LabelPtDirPoint.Title="點: ";
+PtDirFrame.FraGeo.LabelPtDirDirection.Title="方向: ";
+PtDirFrame.FraGeo.LabelPtDirStart.Title="開始: ";
+PtDirFrame.FraGeo.LabelPtDirEnd.Title="結束: ";
+PtDirFrame.FraGeo.LabelPtDirSupp.Title="依附: ";
+PtDirFrame.FraGeo.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.Title="開始";
+PtDirFrame.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="結束";
+PtDirFrame.PushRev.Title="逆轉方向";
+PtDirFrame.PushRev.LongHelp="指定在點另一邊要建立的線.";
+PtDirFrame.FraGeo.FraElem1.LongHelp="指定建立線的參考點.";
+PtDirFrame.FraGeo.FraDirection.LongHelp="指定決定方向的線或 \n 以平面垂直方向決定方向的平面. \n 您也可以右鍵內容來指定 X, Y, Z 分量來決定方向.";
+PtDirFrame.FraGeo.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可以右鍵內容來指定公式 ";
+PtDirFrame.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可以右鍵內容來指定公式 ";
+PtDirFrame.FraGeo.FraGeod2.LongHelp="指定線依附的曲面. \n 此資料為選擇.";
+PtDirFrame.ChkMirror.Title="鏡射延伸";
+PtDirFrame.ChkMirror.LongHelp="鏡射偏移";
+PtDirFrame.FraRadio.LabelRadio.Title="長度型式";
+PtDirFrame.FraRadio.RadioLength.Title="長度";
+PtDirFrame.FraRadio.RadioInfinite.Title="無限";
+PtDirFrame.FraRadio.RadioInfStart.Title="無限起始點";
+PtDirFrame.FraRadio.RadioInfEnd.Title="無限結束點";
+
+PtDirFrame.FraGeo.LabelPtDirUpto1.Title="上至 1: ";
+PtDirFrame.FraGeo.LabelPtDirUpto2.Title="上至 2: ";
+PtDirFrame.FraGeo.FraUpto1.LongHelp="指定第一個向上元素來建立線.";
+PtDirFrame.FraGeo.FraUpto2.LongHelp="指定第二個向上元素來建立線.";
+
+AngFrame.FraGeo.LabelAngCurve.Title="曲線: ";
+AngFrame.FraGeo.LabelAngSupp.Title="依附: ";
+AngFrame.FraGeo.LabelAngPoint.Title="點: ";
+AngFrame.FraGeo.LabelAngAngle.Title="角度: ";
+AngFrame.FraGeo.LabelAngStart.Title="開始: ";
+AngFrame.FraGeo.LabelAngEnd.Title="結束: ";
+AngFrame.PushNrm.Title="垂直曲線";
+AngFrame.PushRev.Title="逆轉方向";
+AngFrame.PushRev.LongHelp="指定在點的另一邊將建立的線.";
+AngFrame.ChkGeod.Title="依附上的幾何";
+AngFrame.FraGeo.FraAngTang.EnglobingFrame.IntermediateFrame.Spinner.Title="角度";
+AngFrame.FraGeo.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.Title="開始";
+AngFrame.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="結束";
+AngFrame.FraGeo.FraElem1.LongHelp="指定可定義新線角度的參考曲線切線.";
+AngFrame.FraGeo.FraElem2.LongHelp="指定參考曲線所依附的曲面.";
+AngFrame.FraGeo.FraElem3.LongHelp="指定可定義新線的參考曲線切點.";
+AngFrame.FraGeo.FraAngTang.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可以右鍵內容來指定公式 ";
+AngFrame.FraGeo.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可以右鍵內容來指定公式 ";
+AngFrame.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可以右鍵內容來指定公式 ";
+AngFrame.ChkGeod.LongHelp="允許您在依附曲面上以 Geodesic 模式建立新線.";
+AngFrame.PushNrm.LongHelp="允許您指定使用 90 度來定義新線.";
+AngFrame.ChkMirror.Title="鏡射延伸";
+AngFrame.ChkMirror.LongHelp="鏡射結束偏移";
+AngFrame.FraRadio.LabelRadio.Title="長度型式";
+AngFrame.FraRadio.RadioLength.Title="長度";
+AngFrame.FraRadio.RadioInfinite.Title="無限";
+AngFrame.FraRadio.RadioInfStart.Title="無限起始點";
+AngFrame.FraRadio.RadioInfEnd.Title="無限結束點";
+
+AngFrame.FraGeo.LabelAngUpto1.Title="上至 1: ";
+AngFrame.FraGeo.LabelAngUpto2.Title="上至 2: ";
+AngFrame.FraGeo.FraUpto1.LongHelp="指定第一個向上元素來建立線.";
+AngFrame.FraGeo.FraUpto2.LongHelp="指定第二個向上元素來建立線.";
+
+TgtFrame.FraGeo.LabelTgtCurve.Title="曲線: ";
+TgtFrame.FraGeo.LabelTgtPoint.Title="元素 2: ";
+TgtFrame.FraGeo.LabelTgtSupport.Title="依附: ";
+TgtFrame.FraGeo.FraGeod2.LongHelp="指定線所依附的曲面在雙切模式下, 依附是必須的.";
+TgtFrame.ChkBiTangent.Title="相切";
+TgtFrame.FraGeod.Title="相切選擇";
+TgtFrame.FraGeod.FraLong.LabelTgtStart.Title="開始: ";
+TgtFrame.FraGeod.FraLong.LabelTgtEnd.Title="結束: ";
+TgtFrame.FraGeod.ChkGeod.Title="依附上的幾何";
+TgtFrame.FraGeod.PushRev.Title="逆轉方向";
+TgtFrame.FraGeod.PushRev.LongHelp="指定在點的另一邊將建立的線.";
+TgtFrame.FraGeod.FraLong.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.Title="開始";
+TgtFrame.FraGeod.FraLong.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="結束";
+TgtFrame.FraGeod.FraLong.LabelTgtStart.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可以右鍵內容來指定公式 ";
+TgtFrame.FraGeod.FraLong.LabelTgtEnd.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可以右鍵內容來指定公式 ";
+TgtFrame.FraGeo.FraElem1.LongHelp="指定線所依附的曲線.";
+TgtFrame.FraGeo.FraElem2.LongHelp="為單一相切所建立的線所指定的參考點, \n 或指定曲線或點定義線在相交或雙切模式.";
+TgtFrame.FraGeod.ChkGeod.LongHelp="允許您在依附曲面上以 Geodesic 模式建立新線.";
+TgtFrame.FraGeod.frameTgt.ComboTangent.LongHelp="定義相切模式 :\n -單一相切 : 所建立的線將與曲線相切並經過投影至曲線上的點. \n - 雙切 : 所建立的線將同時與兩元素相交.";
+TextM="單一相切";
+TextB="雙切";
+TgtFrame.FraGeod.frameTgt.LabTgt.Title="形式: ";
+TgtFrame.FraGeod.PushNext.Title="另一解";
+TgtFrame.FraGeod.PushNext.LongHelp="允許您選擇另一已計算的線.";
+TgtFrame.FraGeod.ChkMirror.Title="鏡射延伸";
+TgtFrame.FraGeod.ChkMirror.LongHelp="鏡射偏移";
+TgtFrame.FraGeod.FraRadio.LabelRadio.Title="長度型式";
+TgtFrame.FraGeod.FraRadio.RadioLength.Title="長度";
+TgtFrame.FraGeod.FraRadio.RadioInfinite.Title="無限";
+TgtFrame.FraGeod.FraRadio.RadioInfStart.Title="無限起始點";
+TgtFrame.FraGeod.FraRadio.RadioInfEnd.Title="無限結束點";
+TgtFrame.FraGeod.FraLong.LabelTgtUpto1.Title="上至 1: ";
+TgtFrame.FraGeod.FraLong.LabelTgtUpto2.Title="上至 2: ";
+TgtFrame.FraGeod.FraUpto1.LongHelp="指定第一個向上元素來建立線.";
+TgtFrame.FraGeod.FraUpto2.LongHelp="指定第二個向上元素來建立線.";
+
+NrmFrame.FraGeo.LabelNrmSkin.Title="曲面: ";
+NrmFrame.FraGeo.LabelNrmPoint.Title="點: ";
+NrmFrame.FraGeo.LabelNrmStart.Title="開始: ";
+NrmFrame.FraGeo.LabelNrmEnd.Title="結束: ";
+NrmFrame.FraGeo.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.Title="開始";
+NrmFrame.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="結束";
+NrmFrame.FraGeo.FraElem1.LongHelp="指定以曲面垂直方向來定義新線的曲面.";
+NrmFrame.FraGeo.FraElem2.LongHelp="指定以曲面垂直方向來定義新線經過的曲面上點.";
+NrmFrame.FraGeo.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可以右鍵內容來指定公式 ";
+NrmFrame.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可以右鍵內容來指定公式 ";
+NrmFrame.PushRev.Title="逆轉方向";
+NrmFrame.PushRev.LongHelp="指定在點的另一邊將建立的線.";
+NrmFrame.ChkMirror.Title="鏡射延伸";
+NrmFrame.ChkMirror.LongHelp="鏡射偏移";
+NrmFrame.FraRadio.LabelRadio.Title="長度型式";
+NrmFrame.FraRadio.RadioLength.Title="長度";
+NrmFrame.FraRadio.RadioInfinite.Title="無限";
+NrmFrame.FraRadio.RadioInfStart.Title="無限起始點";
+NrmFrame.FraRadio.RadioInfEnd.Title="無限結束點";
+NrmFrame.FraGeo.LabelNrmUpto1.Title="上至 1: ";
+NrmFrame.FraGeo.LabelNrmUpto2.Title="上至 2: ";
+NrmFrame.FraGeo.FraUpto1.LongHelp="指定第一個向上元素來建立線.";
+NrmFrame.FraGeo.FraUpto2.LongHelp="指定第二個向上元素來建立線.";
+
+BisectingFrame.FraGeo.LabelBisectLine1.Title="線 1: ";
+BisectingFrame.FraGeo.LabelBisectLine2.Title="線 2: ";
+BisectingFrame.FraGeo.LabelBisectPoint.Title="點: ";
+BisectingFrame.FraGeo.LabelBisectSupp.Title="依附: ";
+BisectingFrame.FraGeo.LabelBisectStart.Title="開始: ";
+BisectingFrame.FraGeo.LabelBisectEnd.Title="結束: ";
+BisectingFrame.FraGeo.FraElem1.LongHelp="指定第一條線.";
+BisectingFrame.FraGeo.FraElem2.LongHelp="指定第二條線.";
+BisectingFrame.FraGeo.FraElem4.LongHelp="指定開始點.\n 此為選擇.";
+BisectingFrame.FraGeo.FraGeod2.LongHelp="指定線要投影的依附曲面.\n 此為選擇.";
+BisectingFrame.FraGeo.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.Title="開始";
+BisectingFrame.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="結束";
+BisectingFrame.FraGeo.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="指定從起始點的延伸線. \n 您也可使用右鍵來指定公式";
+BisectingFrame.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="指定從結束點的延伸線. \n 您也可使用右鍵來指定公式";
+BisectingFrame.ChkMirror.Title="鏡向延伸";
+BisectingFrame.ChkMirror.LongHelp="鏡向結束延伸";
+BisectingFrame.PushRev.Title="逆轉方向";
+BisectingFrame.PushRev.LongHelp="指定在點另一側要建立的線.";
+BisectingFrame.PushNext.Title="下一解";
+BisectingFrame.PushNext.LongHelp="允許選擇下一個要計算的線.";
+BisectingFrame.FraRadio.LabelRadio.Title="長度型式";
+BisectingFrame.FraRadio.RadioLength.Title="長度";
+BisectingFrame.FraRadio.RadioInfinite.Title="無限";
+BisectingFrame.FraRadio.RadioInfStart.Title="無限起始點";
+BisectingFrame.FraRadio.RadioInfEnd.Title="無限結束點";
+
+BisectingFrame.FraGeo.LabelBisectUpto1.Title="上至 1: ";
+BisectingFrame.FraGeo.LabelBisectUpto2.Title="上至 2: ";
+BisectingFrame.FraGeo.FraUpto1.LongHelp="指定第一個向上元素來建立線.";
+BisectingFrame.FraGeo.FraUpto2.LongHelp="指定第二個向上元素來建立線.";
+
+ExpDirFrame.FrameDir.Title="方向: ";
+ExpDirFrame.FrameDir.LabelExpDirX.Title="X: ";
+ExpDirFrame.FrameDir.LabelExpDirY.Title="Y: ";
+ExpDirFrame.FrameDir.LabelExpDirZ.Title="Z: ";
+ExpDirFrame.No_information_available.Title="無可用的資訊";
+ExpDirFrame.UxValue.LongHelp="指定線的 X 分量.";
+ExpDirFrame.UyValue.LongHelp="指定線的 Y 分量.";
+ExpDirFrame.UzValue.LongHelp="指定線的 Z 分量.";
+
+// start code 3dplm
+//Combo lock help
+LineLockShort="按一下啟動自動型式更改.";
+LineUnlockShort="按一下關閉自動型式更改.";
+LineLockLong="按一下啟動自動型式更改.";
+LineUnlockLong="按一下關閉自動型式更改.";
+// end code 3dplm

@@ -1,0 +1,41 @@
+// COPYRIGHT DASSAULT SYSTEMES  1999
+//=============================================================================
+//
+// Catalog for CATKnowledgeSheet class
+//
+//=============================================================================
+// 15/01/99   Creation                                  A.Anquetil
+// 08/04/99	  LongHelp									ppg.
+//============================================================================
+
+//Objet graphique
+TabPage.Title = "知識庫";
+UILabelFrame.UILabel.Title = "知識庫";
+CATKnowledgeSheet.Onglet.Title = "知識庫";
+
+
+CATKnowledgeSheet.WithoutRelButton.Title = "無驅動關係";
+CATKnowledgeSheet.WithLocalRelButton.Title = "以驅動關係相關參數來局部複製";
+CATKnowledgeSheet.WithExternalRelButton.Title = "以驅動關係相關參數來外部複製";
+
+//LongHelp
+CATKnowledgeSheet.main1.LongHelp = "樹狀視圖選擇: ";
+CATKnowledgeSheet.main2.LongHelp = " - 參數可以或不可以數值顯示.";
+CATKnowledgeSheet.main3.LongHelp = " - 公式驅動參數可以或不可以數值顯示.";
+CATKnowledgeSheet.main4.LongHelp = "貼上參數選擇 :";
+CATKnowledgeSheet.main5.LongHelp = " - 參數以未具驅動關係來貼上.";
+CATKnowledgeSheet.main6.LongHelp = " - 參數以具部份複製驅動關係來貼上.";
+CATKnowledgeSheet.main7.LongHelp = " - 參數以具外部複製驅動關係來貼上.";
+CATKnowledgeSheet.main8.LongHelp = "參數名稱圍繞選擇 :";
+CATKnowledgeSheet.main9.LongHelp = " - 請檢查您的參數名稱是否是拉丁文字.";
+CATKnowledgeSheet.main10.LongHelp = "載入延伸語言資料庫 :";
+CATKnowledgeSheet.main11.LongHelp = " - 請檢查, 如您想使用量測或定義其它的應用資料庫使用者功能或終端資料庫 (CAA2) (可節省時間).";
+CATKnowledgeSheet.dt.LongHelp="設計表選項 :\n",
+"    - 同步化選項 :\n    The synchronization notion is only for cases where design table file data has been copied into the model.\n",
+"    The automatic synchronization means that the the content of the table is always the same than the content of the file.\n",
+"    The interactive synchronization is going to raise a panel after the load that will allow you to decide if synchronization has to be done or not.\n",
+"    The manual synchronization implies that no synchronization is done until you synchronize with Edit Links or with Contextual Menu on design table\n",
+"    - 複製資料選項 :\n    This option controls the activation of Copy Data Into Model mode for new design tables";
+CATKnowledgeSheet.linefeed.LongHelp = "\n";
+
+Restart="您必須重開 CATIA V5 來確保修改納入.";

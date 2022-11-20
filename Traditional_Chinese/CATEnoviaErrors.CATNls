@@ -1,0 +1,374 @@
+// Critical error
+ERR_0001.Request = "/p";
+ERR_0001.Diagnostic = "Unexpected error!";
+ERR_0001.Advice = "Contact your Site Administrator";
+
+//Error Settings  management
+ERR_0011.Request = "Retrieving a setting repository ";
+ERR_0011.Diagnostic = "The product setting /p1 has not been valuated ";
+ERR_0011.Advice = "Contact your Site Administrator or declare your own setting via the
+Tools->Options... command (Infrastructure / ENOVIAvpm tab)";
+
+ERR_0012.Request = "Retrieving a server name ";
+ERR_0012.Diagnostic = "The server /p1 has not been declared ";
+ERR_0012.Advice = "- Check the name of the server.
+- Check both user and password.
+- Or contact your Site Administrator for setting up your environment.";
+
+ERR_0013.Request = "Retrieving a mapping between an ENOVIAvpm environment";
+ERR_0013.Diagnostic = "The mapping of the environment /p1 
+from the server /p2 has not been declared ";
+ERR_0013.Advice = " Contact your Site Administrator or declare your own mapping via the
+Tools->Options... command (Infrastructure / ENOVIAvpm tab) ";
+
+ERR_0014.Request = " You need to restart the session to take these modifications into account. ";
+ERR_0014.Diagnostic = "";
+ERR_0014.Advice = "";
+
+ERR_0015.Request = "Retrieving a mapping with an ENOVIAvpm environment";
+ERR_0015.Diagnostic = "The attribute mapping on the table /p1 
+for the environment /p2 
+from the server /p3 has not been declared ";
+ERR_0015.Advice = " Contact your Site Administrator or declare your own mapping via the
+Tools->Options... command (Infrastructure / ENOVIAvpm tab) ";
+
+ERR_0016.Request = " Your documents have been successfully exploded in the Database. 
+In order to preserve the data integrity, please close your CATIA Session and reload your data from the database.";
+ERR_0016.Diagnostic = "";
+ERR_0016.Advice = "";
+
+ERR_0017.Request = " You have chosen to cancel your save operation. 
+Notice that your applicative objects and Product Structure operations have not been saved.";
+ERR_0017.Diagnostic = "";
+ERR_0017.Advice = "";
+
+// Connection error management
+ERR_0020.Request = "Accessing data from database /p";
+ERR_0020.Diagnostic = "No connection.";
+ERR_0020.Advice = "Connect to the database /p via the -Connect- command";
+
+ERR_0021.Request = "Connection to the database /p";
+ERR_0021.Diagnostic = "There are some missing parameters";
+ERR_0021.Advice = "Check that you have filled all the mandatory fields";
+
+ERR_0022.Request = "Connecting to the database /p";
+ERR_0022.Diagnostic = "The connection cannot be done.";
+ERR_0022.Advice = "- Try to reconnect via the -Connect- command.
+- Contact your Site Administrator.";
+
+// -------------------------------------------------------
+// Database error management
+// -------------------------------------------------------
+
+ERR_0100.Request = "Attempt to access some data from the database /p1";
+ERR_0100.Diagnostic = "Internal Error : 
+/p1";
+ERR_0100.Advice = "";
+
+ERR_0101.Request = "Attempt to connect to the database /p1";
+ERR_0101.Diagnostic = "Internal Error : 
+/p1";
+ERR_0101.Advice = "Contact your Site Administrator";
+
+ERR_0102.Request = "Attempt to access to a column in database /p1 ";
+ERR_0102.Diagnostic = "The column /p1 in the environment /p2 does not exist";
+ERR_0102.Advice = "Check if the environment /p1 exists or contact your Site Adminstrator";
+
+ERR_0103.Request = "Attempt to access data from the database /p1 ";
+ERR_0103.Diagnostic = "The database /p1 has not been installed with the RAW_COID option";
+ERR_0103.Advice = "Contact your Site Adminstrator - interoperability with /p1 is impossible";
+
+ERR_0104.Request = "Attempt to access data from the database /p1 ";
+ERR_0104.Diagnostic = "The database /p1 has not been installed with the NEW_MATRIX option";
+ERR_0104.Advice = "Contact your Site Adminstrator - interoperability with /p1 is impossible";
+
+// -------------------------------------------------------
+// Document load error management
+// -------------------------------------------------------
+
+ERR_0200.Request = "Attempt to load a model stored with the /p option";
+ERR_0200.Diagnostic = "This feature is not natively supported in CATIA V5";
+ERR_0200.Advice = "You can develop the management of your own options. Please contact your Site Adminstrator for more informations. ";
+
+ERR_0201.Request = "Load of a model stored with the /p option";
+ERR_0201.Diagnostic = "An internal error has occured";
+ERR_0201.Advice = "Unable to read the data.";
+
+ERR_0202.Request = "Read of the associated data of a document.";
+ERR_0202.Diagnostic = "No /p data is associated to this document.";
+ERR_0202.Advice = "Verify that the data exists.";
+
+ERR_0203.Request = "Read of the associated data of a document.";
+ERR_0203.Diagnostic = "No access rignts on /p.";
+ERR_0203.Advice = "Change the rights.";
+
+ERR_0210.Request = "Load of a linked document.";
+ERR_0210.Diagnostic = "No ENOVIAvpm PSN is currently opened.";
+ERR_0210.Advice = "Open a related PSN with the /p document attached.";
+
+ERR_0211.Request = "Load of a linked document.";
+ERR_0211.Diagnostic = "The /p document cannot be found in the current ENOVIAvpm PSN.";
+ERR_0211.Advice = "Open a related PSN with the /p document attached.";
+
+ERR_0212.Request = "Cannot import instances or documents";
+ERR_0212.Diagnostic = "The /p document Cannot import instances or documents under a CATPart";
+ERR_0212.Advice = "Unload the /p document and reload its children.";
+
+ERR_0213.Request = "Attemp to load a document";
+ERR_0213.Diagnostic = "Cannot check the root product of a document";
+ERR_0213.Advice = "Data can be lost";
+
+ERR_0214.Request = "Attemp to load a document";
+ERR_0214.Diagnostic = "Documents cannot be loaded in DMU when they don't belong to an assembly";
+ERR_0214.Advice = "Use CATIA instead of DMU";
+
+ERR_0215.Request = "Read of the associated data of a document.";
+ERR_0215.Diagnostic = "No DBLFAIX data is associated to this document. The document isn't loaded.";
+ERR_0215.Advice = "";
+
+ERR_0216.Request = "Attemp to import a PDM document.";
+ERR_0216.Diagnostic = "PDM documents cannot be loaded in a File based CATProduct. ";
+ERR_0216.Advice = "";
+
+//lin 13/06/05 - included error tage here 
+ERR_0217.Request = "The Document /p is already open or loaded in Session";
+ERR_0217.Diagnostic = "Close all documents in CATIA first and then reopen from VPM";
+
+// CUI : Adding Security Check
+ERR_0271.Request = "An error occured when checking the security access";
+ERR_0271.Diagnostic = "Contact your Site Administrator";
+ERR_0271.Advice = "";
+
+ERR_0272.Request = "Security Error";
+ERR_0272.Diagnostic = "You are not allowed to load the document /p";
+ERR_0272.Advice = "";
+
+
+// -------------------------------------------------------
+// Document save error management
+// -------------------------------------------------------
+
+ERR_0250.Request = "Save document in the ENOVIAvpm";
+ERR_0250.Diagnostic = "An internal error has occured";
+ERR_0250.Advice = "Unable to save the data.";
+
+ERR_0251.Request = "Save document in the ENOVIAvpm";
+ERR_0251.Diagnostic = "Unable to communicate with ENOVIAvpm ";
+ERR_0251.Advice = "Make sure that ENOVIAvpm is launched and then retry to save your work.";
+
+ERR_0252.Request = "Save document in the ENOVIAvpm";
+ERR_0252.Diagnostic = "The update was not successful ";
+ERR_0252.Advice = "ENOVIAvpm return code : /p1
+Short Message : /p2
+Long Message : /p3";
+
+ERR_0253.Request = "Save document in the ENOVIAvpm";
+ERR_0253.Diagnostic = "Nothing to save";
+ERR_0253.Advice = "Nothing has been done.";
+
+ERR_0254.Request = "Save document in the ENOVIAvpm";
+ERR_0254.Diagnostic = "A problem occurs while trying to save.";
+ERR_0254.Advice = "Your document may be corrupted.";
+
+ERR_0255.Request = "Save document in the ENOVIAvpm";
+ERR_0255.Diagnostic = "Trying to save a CATIAV4 model.";
+ERR_0255.Advice = "It is impossible to update a CATIAV4 model from V5.";
+
+ERR_0256.Request = "Save document in the ENOVIAvpm";
+ERR_0256.Diagnostic = "Trying to save an undeclared document.";
+ERR_0256.Advice = "Please first save this document by using the Create&Save facility in ENOVIAvpm.";
+
+// ajout pour VPM NT (idem 252 mais pour portal)
+ERR_0257.Request = "Save document in the ENOVIAvpm";
+ERR_0257.Diagnostic = "The update was not successful";
+ERR_0257.Advice = "ENOVIA Portal return code : /p1
+Short Message : /p2
+Long Message : /p3";
+
+ERR_0258.Request = "Extract Save document in ENOVIAvpm";
+ERR_0258.Diagnostic = "Extract Save not authorized on instances already existing in VPM if they are in an assembly in CATIA V5";
+ERR_0258.Advice = "Please load only the part you want to modify and save from VPM to CATIA V5 and do the extract/save operation.";
+
+ERR_0259.Request = "Save document coming from ENOVIAvpm";
+ERR_0259.Diagnostic = "A CATIAV4 model coming from ENOVIAvpm can not be saved into file on Windows";
+ERR_0259.Advice = "Please make this operation on UNIX system with same Code Page.";
+
+ERR_0260.Request = "Extract Save document in ENOVIAvpm by using Replace by target option";
+ERR_0260.Diagnostic = "Replace by target Extract Save is not authorized to replace a part that is already in session";
+ERR_0260.Advice = "Please close documents in session to avoid corrupting your data.";
+
+ERR_0261.Request = "This model has been modified. Save aborted";
+ERR_0261.Diagnostic = "";
+ERR_0261.Advice = "";
+
+// Migration ergonomique
+ERR_0300.Request = "Synchronize & Save";
+ERR_0300.Diagnostic = "The Synchronize and Save In Database commands are now obsolete";
+ERR_0300.Advice = "They have been integrated with the Classical Save (File Save) command.
+Please use it. ";
+
+// Update from base error management
+ERR_0301.Request = "Attempt to access data from the database /p1";
+ERR_0301.Diagnostic = "The given identifier is no more in the database";
+ERR_0301.Advice = "The database has probably been updated meanwhile.
+Try to rebuild your session from VPM.";
+
+// -------------------------------------------------------
+// Asynchronous move error management 
+// -------------------------------------------------------
+
+ERR_0400.Request = "Attempt to send move information to ENOVIAvpm.";
+ERR_0400.Diagnostic = "The current VPM user has no move rights in the selected assembly.";
+ERR_0400.Advice = "";
+
+ERR_0401.Request = "Update positions data in ENOVIAvpm.";
+ERR_0401.Diagnostic = "Some problems occur while working on product(s) : /p";
+ERR_0401.Advice = "";
+
+ERR_0402.Request = "Update positions data in ENOVIAvpm.";
+ERR_0402.Diagnostic = "Nothing to update";
+ERR_0402.Advice = "";
+
+ERR_0403.Request = "Moving a structure in V5.";
+ERR_0403.Diagnostic = "The modifications of antoher assembly hasn't yet been sent to VPM.";
+ERR_0403.Advice = "Synchronize first the product /p and then try again to move the selected piece.";
+
+ERR_0404.Request = "Moving a structure in V5.";
+ERR_0404.Diagnostic = "The root product of the current document is not a dedicated product.";
+ERR_0404.Advice = "This operation won't be sent to VPM.";
+
+// -----------------------------
+// ProductStructure Edition Mode
+// -----------------------------
+
+ERR_0500.Request = "Attempt to synchronize an object.";
+ERR_0500.Diagnostic = "This feature (/p) is not available.";
+ERR_0500.Advice = "Please, check for further upgrades of ENOVIAvpm.";
+
+ERR_0501.Request = "Attempt to delete an object.";
+ERR_0501.Diagnostic = "A problem occurs in ENOVIAvpm :
+Short Message : /p1
+Long Message : /p2";
+ERR_0501.Advice = "This operation has not been commited.";
+
+ERR_0502.Request = "Attempt to create an object.";
+ERR_0502.Diagnostic = "A problem occurs in ENOVIAvpm :
+Short Message : /p1
+Long Message : /p2";
+ERR_0502.Advice = "This operation has not been commited.";
+
+ERR_0503.Request = "Attempt to move a structure.";
+ERR_0503.Diagnostic = "A problem occurs in ENOVIAvpm :
+Short Message : /p1
+Long Message : /p2";
+ERR_0503.Advice = "This operation has not been commited.";
+
+ERR_0504.Request = "Attempt to replace an object by another.";
+ERR_0504.Diagnostic = "A problem occurs in ENOVIAvpm :
+Short Message : /p1
+Long Message : /p2";
+ERR_0504.Advice = "This operation has not been commited.";
+
+// ------------------------------
+// Catalog load error management
+// ------------------------------
+
+ERR_0600.Request = "Attempt to open a catalog in a CatalogBrowser.";
+ERR_0600.Diagnostic = "It's not possible to open a catalog in a CatalogBrowser when no document is edited.";
+ERR_0600.Advice = "Please, create a new Part before opening in a CatalogBrowser.";
+
+// -----------------------------------
+// Publication where used
+// -----------------------------------
+
+ERR_0700.Request = "Identifying a publication in a MML graph";
+ERR_0700.Diagnostic = "Error during identification of the publication in the MML graph";
+ERR_0700.Advice = "Identification of the publication not possible";
+
+ERR_0701.Request = "Identifying a publication in a MML graph";
+ERR_0701.Diagnostic = "/p1";
+ERR_0701.Advice = "/p1";
+
+// -------------------------------------------------------
+// PSN panel interoperability error management
+// -------------------------------------------------------
+
+ERR_1000.Request = "Communication with ENOVIAvpm";
+ERR_1000.Diagnostic = "A problem occurs";
+ERR_1000.Advice = "If the problem persists, contact your Site Administrator.";
+
+ERR_1001.Request = "Add a branch from ENOVIAvpm";
+ERR_1001.Diagnostic = "The V5 editor does not have the same root product as the PSN one";
+ERR_1001.Advice = "Create a new Db Product with the New Db Product command
+or push REPLACE in ENOVIAvpm to create a new session";
+
+ERR_1002.Request = "Communication with ENOVIAvpm";
+ERR_1002.Diagnostic = "ENOVIAvpm cannot be detected. ";
+ERR_1002.Advice = "Launch a new ENOVIAvpm process.";
+
+ERR_1003.Request = "Communication with ENOVIAvpm.";
+ERR_1003.Diagnostic = "Error while sending a message (ier = /p).";
+ERR_1003.Advice = "Save your work and launch a new ENOVIAvpm process.";
+
+ERR_1004.Request = "Communication with ENOVIAvpm";
+ERR_1004.Diagnostic = "Error while receiving a message (ier = /p).";
+ERR_1004.Advice = "Save your work and launch a new ENOVIAvpm process.";
+
+//added for VPM NT cancel operation ( 10/24/01 )
+ERR_1005.Request = "Synchronize & Save";
+ERR_1005.Diagnostic = "Operations have been canceled by user.";
+//ERR_1005.Advice = "Save your work and launch a new ENOVIAvpm process.";
+
+ERR_1006.Request = "Open a assembly from ENOVIAvpm";
+ERR_1006.Diagnostic = "The data stream is corrupted!";
+ERR_1006.Advice = "If the problem persists, contact your Site Administrator.
+The ENOVIAvpm database structure may be corrupted.";
+
+ERR_1007.Request = "Load context documents of assembly drawing";
+ERR_1007.Diagnostic = "The load context document of assembly drawing command cannot be launched
+when the PSN of the assembly is not opened!";
+ERR_1007.Advice = "Open the PSN of the assembly before launching the command.";
+
+
+// -------------------------------------------------------
+// VPM Server error management
+// -------------------------------------------------------
+
+ERR_2001.Request = "Attempt to launch ENOVIAvpm Server";
+ERR_2001.Diagnostic = "ENOVIAvpm Server cannot be launched";
+ERR_2001.Advice = "Contact your Site Administrator. You can also check the shell -StartVPMBatchFromV5Batch.sh-";
+
+ERR_2002.Request = "Attempt to communicate with ENOVIAvpm Server";
+ERR_2002.Diagnostic = "ENOVIAvpm Server is not launched";
+ERR_2002.Advice = "Contact your Site Administrator.";
+
+ERR_2003.Request = "Attempt to connect ENOVIAvpm Server";
+ERR_2003.Diagnostic = "ENOVIAvpm Server cannot be connected";
+ERR_2003.Advice = "/p";
+
+// -------------------------------------------------------
+// Probleme de compatibilite
+// -------------------------------------------------------
+
+ERR_3000.Request = "Load a structure";
+ERR_3000.Diagnostic = "The interoperability between ENOVIAvpm1.2 and /p is no more supported";
+ERR_3000.Advice = "Upgrade your ENOVIAvpm server a least to the 1.3 version.";
+
+// -------------------------------------------------------
+// VPM Error
+// -------------------------------------------------------
+ERR_3010.Request = "ENOVIAvpm";
+ERR_3010.Diagnostic = "Error : /p1
+/p2 ";
+ERR_3010.Advice = "/p";
+
+// -------------------------------------------------------
+// Msg Parameters Catalog 
+// -------------------------------------------------------
+
+CreateNoPrd = "Create a non-product object";
+CreateRef = "Create a reference object";
+CreateFather = "Create a link with an non-mapped object";
+RepNoPrd = "Replace a non-product object";
+RepRef = "Replace with a new reference object";
+RepFather = "Replace under an non-mapped object";

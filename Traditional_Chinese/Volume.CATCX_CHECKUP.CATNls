@@ -1,0 +1,28 @@
+//------------------------------------------------------
+// Resource file for internal Topological Check-Up 
+// En_EN
+//----------------------------------------------------------------------
+// CAUTION : each index is of maximum length of seventy-two characters !
+//-----------------------------------------------------------------------
+//
+//
+//    ******************************************************************
+//    *  TOPOLOGY rule : Check must be done with a topology not touched
+//    ******************************************************************
+//
+Topology.Touched =
+" is a touched volume.";
+//
+Volume.WithoutShell =
+" is a volume without a shell.";
+//
+EulerOnAdjacentLoop.NoAdjacence =
+"is Open with free /P2 Border of /P3 inside /P4 (expecting adjacences for /P5).";
+//
+//    *******************************************************************************************
+//    *  Cell rule : for a given orientation, at most one owning domain in a given Body
+//    *******************************************************************************************
+//
+BoundedDomainSameOrientation.many =
+"is /P8 /P6-th of /P2  and  /P9 /P7-th of /P3 for same /P4 inside /P5.";
+//

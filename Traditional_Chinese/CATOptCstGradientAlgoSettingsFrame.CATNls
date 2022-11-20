@@ -1,0 +1,57 @@
+// Running criteria Frame
+RunningCriteriaFrmTitle = "執行標準";
+
+ConvergenceCriteriaLblTitle = "收歛速度 : ";
+
+ConvergenceSlow="慢";
+ConvergenceMedium="中";
+ConvergenceFast="快";
+ConvergenceInf="無限 (hill-climbing)";
+
+ConvergenceCmbHelp = "Defines the level of acceptation of bad solutions";
+ConvergenceCmbShortHelp = "Select a convergence speed";
+ConvergenceCmbLongHelp = "Convergence speed\nDefines the level of acceptation of bad solutions.\nIf you have many local optima, use the lowest speed.\nIf your problem has no local optima, choose infinite speed";
+
+// Termination Criteria Frame
+TerminationCriteriaFrmTitle = "結束標準";
+
+MaxNbEvaluationsLblTitle = "更新最大次數";
+
+MaxNoImprovementChkBTitle = "未精進的接續更新";
+MaxNoImprovementChkBHelp = "If this option is checked, the algorithm will terminate if the best solution does not improve after a given number of iterations";
+MaxNoImprovementChkBShortHelp = "Check this option to enter a number of iterations";
+MaxNoImprovementChkBLongHelp = "Consecutive updates without improvements\nWhen checked, enables the algorithm to terminate if the best solution\ndoes not improve after a given number of iterations";
+
+MaxTimeChkBTitle = "最大時間 (分鐘)";
+MaxTimeChkBHelp = "If checked, enables to limit the optimization duration";
+MaxTimeChkBShortHelp = "Check this option to limit the optimization duration";
+MaxTimeChkBLongHelp = "Maximum time (minutes)\nWhen checked, enables to limit the optimization duration.\nWhen the maximum time is reached, the algorithm finishes the current iteration and stops";
+
+NotPositivIntegerWg = "The given value must be an integer greater than 0. The editor will keep the old value.";
+NotPositivRealWg = "The given value must be a real greater than 0. The editor will keep the old value.";
+
+NotPositivIntegerWgHd = "使用者進入錯誤";
+
+//R14 stopping criteria for Objective, constraints and variables evolution over a sliding window of updates.
+StopRelativeObjective = "相對物件";
+StopAbsoluteObjective ="絕對物件";
+StopRelativeCst ="相對拘束";
+StopAbsoluteCst ="絕對拘束";
+StopAbsoluteVariable ="絕對變數";
+StopCriteriaWindow = "標準視窗";
+StopCriteria.Title = "數值變化標準";
+
+StoppingCriteriaFrm.AdvancedStoppingCriteria.LongHelp = "Evolution Criteria\nTermination based on the duration of the run and number of updates without improvement are available for all the algorithms.\n Additional criteria are available for the algorithm using derivatives.\n Each of these criteria is evaluated depending on a number of updates specified by the Window criterion.\n 0 for one value means that the corresponding criterion is not taken into account.\n 0 for the window means that no criterion based on the objective/constraints/variables value evolution is taken into account.";
+StoppingCriteriaFrm.AdvancedStoppingCriteria.ShortHelp = "Termination is based on time of the run and number of updates without improvement are available for all the algorithms.\n Additional criteria are available for the algorithm using derivatives.\n Each of these criteria  is evaluated based on a number of updates specified by the Window criterion at the bottom of the list.\n 0 for any value means that the corresponding criterion is not taken into account.\n 0 for the window means that no criterion based on the objective/constraints/variables value evolution is taken into account.";
+
+
+EvolutionCriteriaMultiList.Column1.Title= "數值變化標準";
+EvolutionCriteriaMultiList.Colum2.Title="數值";
+
+
+
+
+
+
+
+

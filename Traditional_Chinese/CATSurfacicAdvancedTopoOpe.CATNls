@@ -1,0 +1,143 @@
+//------------------------------------------------------
+// Resource file for SurfacicAdvancedTopoOpe  errors 
+// En_EN
+// Plage autorise 8500-8999
+//----------------------------------invalid input
+//
+//8500->8519 **** Bump *************
+SurfacicAdvTopOpInBumpInvalidLimit_ERR_8500.Request="Bump 動作:";
+SurfacicAdvTopOpInBumpInvalidLimit_ERR_8500.Diagnostic="限制不是線"; 
+SurfacicAdvTopOpInBumpInvalidLimit_ERR_8500.Advice="修改限制.";
+//
+SurfacicAdvTopOpInBumpInvalidLimit_ERR_8501.Request="Bump 動作:";
+SurfacicAdvTopOpInBumpInvalidLimit_ERR_8501.Diagnostic="變形的限制線未封閉."; 
+SurfacicAdvTopOpInBumpInvalidLimit_ERR_8501.Advice="選擇封閉線來定義限制.";
+//
+SurfacicAdvTopOpInBumpInvalidLimit_ERR_8502.Request="Bump 動作:";
+SurfacicAdvTopOpInBumpInvalidLimit_ERR_8502.Diagnostic="限制線不在變形本體上."; 
+SurfacicAdvTopOpInBumpInvalidLimit_ERR_8502.Advice="投影限制線至本體.";
+//
+SurfacicAdvTopOpInBumpInvalidLimit_ERR_8503.Request="Bump 動作:";
+SurfacicAdvTopOpInBumpInvalidLimit_ERR_8503.Diagnostic="您需要限制點來依附或不依附, \n
+ 在本體的邊界修剪面組合變形."; 
+SurfacicAdvTopOpInBumpInvalidLimit_ERR_8503.Advice="使用完全在本體上的線, 或修改本體.";
+//
+SurfacicAdvTopOpInBumpInvalidPoint_ERR_8504.Request="Bump 動作:";
+SurfacicAdvTopOpInBumpInvalidPoint_ERR_8504.Diagnostic="中心點不是頂點."; 
+SurfacicAdvTopOpInBumpInvalidPoint_ERR_8504.Advice="選擇中心頂點.";
+//
+SurfacicAdvTopOpInBumpInvalidPoint_ERR_8505.Request="Bump 動作:";
+SurfacicAdvTopOpInBumpInvalidPoint_ERR_8505.Diagnostic="中心頂點在限制的外側."; 
+SurfacicAdvTopOpInBumpInvalidPoint_ERR_8505.Advice="選擇限制線區域內中心點, \n
+或修改限制線或方向.";
+//
+SurfacicAdvTopOpInBumpInvalidPoint_ERR_8506.Request="Bump 動作:";
+SurfacicAdvTopOpInBumpInvalidPoint_ERR_8506.Diagnostic="(投影)中心點與限制(投影)太接近."; 
+SurfacicAdvTopOpInBumpInvalidPoint_ERR_8506.Advice="修改中心點, 限制或方向.";
+//
+SurfacicAdvTopOpInBumpInvalidLimit_ERR_8507.Request="Bump 動作:";
+SurfacicAdvTopOpInBumpInvalidLimit_ERR_8507.Diagnostic="投影方向與限制不相稱. \n
+ 在方向視圖中限制產生自我相交."; 
+SurfacicAdvTopOpInBumpInvalidLimit_ERR_8507.Advice="請修改限制或投影方向";
+
+
+//8520->8529 **** Marsh Error *************
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8520.Request="Morphing 動作:";
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8520.Diagnostic="一個參考元素使用了兩次!"; 
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8520.Advice="更改參考.";
+//
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8521.Request="Morphing 動作:";
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8521.Diagnostic="參考為開啟, 目標已關閉."; 
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8521.Advice="請修改參考或目標.";
+//
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8522.Request="Morphing 動作:";
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8522.Diagnostic="參考為關閉, 目標為開啟."; 
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8522.Advice="請修改參考或目標.";
+
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8523.Request="Morphing 動作:";
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8523.Diagnostic="兩剛性參考互相交插"; 
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8523.Advice="修改其一剛性參考.";
+
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8524.Request="Morphing 動作:";
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8524.Diagnostic="無法完成剛性拘束,因為與其它拘束不一致."; 
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8524.Advice="修改剛性參考或它的形式.";
+
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8525.Request="Morphing 動作:";
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8525.Diagnostic="此組態中沒有物件可變形."; 
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8525.Advice="請檢查拘束, 外形和限制曲線的位置.";
+
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8526.Request="Morphing 動作:";
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8526.Diagnostic="曲線未在依附上."; 
+SurfacicAdvTopOpInMarshInvalidConstraint_ERR_8526.Advice="修改曲線或依附.";
+
+// 8530->8549 **** Marsh Warning ************
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8530.Request="Morphing 動作:";
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8530.Diagnostic="在參考或目標曲線上發現部份間隙.";
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8530.Advice="平順這些曲線.";
+
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8531.Request="Morphing 動作:";
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8531.Diagnostic="參考和目標曲線間發現不一致切線不連續.";
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8531.Advice="平順此曲線.  \n
+ 或增加複合點, 來傳送參考不連續至目標不連續.";
+
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8532.Request="Morphing 動作:";
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8532.Diagnostic="參考和目標曲線間發現不一致曲率不連續.";
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8532.Advice="平順此曲線.  \n
+ 或增加複合點, 來傳送參考不連續至目標不連續.";
+
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8533.Request="Morphing 動作:";
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8533.Diagnostic="點必須移至不連續兩目標點. \n
+品質和精度可能會較差.";
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8533.Advice="- 請檢查目標曲線是否相交 \n
+- 增加複合點, 來傳送相交參考點至相交目標點.";
+
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8534.Request="Morphing 動作:";
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8534.Diagnostic="切線目標不一致.";
+
+
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8535.Request="Morphing 動作:";
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8535.Diagnostic="剛性參考與另一元素相交. \n
+鄰近相交點無法需要剛性.";
+
+//8550->8569 ***** Offset variables *****
+SurfacicAdvTopOpInOffsetVarInvalidValues_ERR_8550.Request="變化偏移動作:";
+SurfacicAdvTopOpInOffsetVarInvalidValues_ERR_8550.Diagnostic ="未定義偏移.";
+SurfacicAdvTopOpInOffsetVarInvalidValues_ERR_8550.Advice="檢查偏移定義";
+
+SurfacicAdvTopOpInOffsetVarInvalidValues_ERR_8551.Request="變化偏移動作:";
+SurfacicAdvTopOpInOffsetVarInvalidValues_ERR_8551.Diagnostic ="偏移值不一致.";
+SurfacicAdvTopOpInOffsetVarInvalidValues_ERR_8551.Advice="請更正數值";
+
+SurfacicAdvTopOpInOffsetVarInvalidValues_ERR_8552.Request="變化偏移動作:";
+SurfacicAdvTopOpInOffsetVarInvalidValues_ERR_8552.Diagnostic ="部份偏移數值太大.";
+SurfacicAdvTopOpInOffsetVarInvalidValues_ERR_8552.Advice="請減少數值或修改曲面.";
+
+SurfacicAdvTopOpInOffsetVarInvalidInput_ERR_8553.Request="變化偏移動作:";
+SurfacicAdvTopOpInOffsetVarInvalidInput_ERR_8553.Diagnostic ="曲面切線不連續.";
+SurfacicAdvTopOpInOffsetVarInvalidInput_ERR_8553.Advice="請使用切線連續曲面.";
+
+SurfacicAdvTopOpInOffsetVarInvalidValues_ERR_8554.Request="變化偏移動作:";
+SurfacicAdvTopOpInOffsetVarInvalidValues_ERR_8554.Diagnostic ="此偏移值 \n
+曲面的切線值無法滿足.";
+SurfacicAdvTopOpInOffsetVarInvalidValues_ERR_8554.Advice="減少偏移值或 \n
+增加曲面切線值";
+
+// 8570->8589 **** RSO Warning ************
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8570.Request="RSO morphing 動作:";
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8570.Diagnostic="位移隱含在外形上有很大的變形.";
+SurfacicAdvTopOpInMarshDoubtfulInput_ERR_8570.Advice=" 調整位移. \n
+By example you 可使用 <忽略點> 參數.";
+
+
+//8600->8620 ***** Composite IML *****
+SurfacicAdvTopOpInTopoIMLSurfaceInvalidInput_ERR_8600.Request="IML 曲面動作:";
+SurfacicAdvTopOpInTopoIMLSurfaceInvalidInput_ERR_8600.Diagnostic ="所有 plies 與零件邊線混淆.";
+SurfacicAdvTopOpInTopoIMLSurfaceInvalidInput_ERR_8600.Advice="檢查 IML 定義";
+
+SurfacicAdvTopOpInTopoIMLSurfaceInvalidInput_ERR_8601.Request="IML 曲面動作:";
+SurfacicAdvTopOpInTopoIMLSurfaceInvalidInput_ERR_8601.Diagnostic="偏移線時失敗.";
+SurfacicAdvTopOpInTopoIMLSurfaceInvalidInput_ERR_8601.Advice="檢查 ply 幾何.";
+
+SurfacicAdvTopOpInTopoIMLSurfaceInvalidInput_ERR_8602.Request="IML 曲面動作:";
+SurfacicAdvTopOpInTopoIMLSurfaceInvalidInput_ERR_8602.Diagnostic="無法以零件邊線裁剪曲面.";
+SurfacicAdvTopOpInTopoIMLSurfaceInvalidInput_ERR_8602.Advice="檢查零件邊線.";

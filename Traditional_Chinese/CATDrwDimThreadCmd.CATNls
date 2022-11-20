@@ -1,0 +1,72 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 2001 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwDimThreadCmd
+// LOCATION    :    DraftingIntCommands
+// AUTHOR      :    fgx
+// BUT         :    Commande de creation de cotes sur threads (top and/or side views)
+// DATE        :    07.03.2001
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//=====================================================================================
+
+//******************************************************************************
+// Command
+//******************************************************************************
+CATDrwDimThreadCmd.Title = "螺紋尺寸";
+CATDrwDimThreadCmd.UndoTitle = "建立螺紋尺寸";
+
+//******************************************************************************
+// States
+//******************************************************************************
+CATDrwDimThreadCmd.waitForSelState.Message = "選擇螺紋圖像以標示尺寸";
+CATDrwDimThreadCmd.waitFor2sdLineState.Message = "選擇第二條 2D 線, 平行到第一條";
+
+//******************************************************************************
+// Agents
+//******************************************************************************
+CATDrwDimThreadCmd._agentSet._elemAgent.UndoTitle = "螺紋表現方式選擇";
+CATDrwDimThreadCmd._agentSet._lineAgent1.UndoTitle = "第二 2D 線選擇";
+CATDrwDimThreadCmd._agentSet.2DPointIndication.UndoTitle = "選擇";
+
+CATDrwDimThreadCmd.OrientBarRessource.Bar.Title="定位";
+
+//******************************************************************************
+// Force dimension on element Button
+//******************************************************************************
+CATDrwDimThreadCmd.OrientBarRessource._refElem.Title = "強加尺寸在元素上";
+CATDrwDimThreadCmd.OrientBarRessource._refElem.ShortHelp="強加尺寸在元素上";
+CATDrwDimThreadCmd.OrientBarRessource._refElem.Help=
+"強加尺寸線平行到被標示尺寸的元素";
+CATDrwDimThreadCmd.OrientBarRessource._refElem.LongHelp=
+"強加尺寸在元素上
+強加尺寸線平行到被標示尺寸的元素.";
+
+//******************************************************************************
+// Force horizontal dimension Button
+//******************************************************************************
+CATDrwDimThreadCmd.OrientBarRessource._refHori.Title = "強加水平尺寸";
+CATDrwDimThreadCmd.OrientBarRessource._refHori.ShortHelp="強加水平尺寸";
+CATDrwDimThreadCmd.OrientBarRessource._refHori.Help=
+"強加平行尺寸線";
+CATDrwDimThreadCmd.OrientBarRessource._refHori.LongHelp=
+"強加水平尺寸
+強加平行尺寸線.";
+
+//******************************************************************************
+// Force vertical dimension Button
+//******************************************************************************
+CATDrwDimThreadCmd.OrientBarRessource._refVert.Title = "強加垂直尺寸";
+CATDrwDimThreadCmd.OrientBarRessource._refVert.ShortHelp="強加垂直尺寸";
+CATDrwDimThreadCmd.OrientBarRessource._refVert.Help=
+"強加垂直尺寸線";
+CATDrwDimThreadCmd.OrientBarRessource._refVert.LongHelp=
+"強加垂直尺寸
+強加垂直尺寸線.";
+

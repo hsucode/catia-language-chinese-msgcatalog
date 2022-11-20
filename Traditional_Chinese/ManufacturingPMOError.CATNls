@@ -1,0 +1,178 @@
+// =====================================================================
+// Erreurs Manufacturing
+// Essayer de formater vos messages en specifiant (delimiteur = caracteres fin de ligne) :
+//       Request      (ce que l'on tentait de faire)
+//       Diagnostic   (ce qui est arrive)
+//       Advice       (...ce qu'il pourrait faire si possible)
+// =====================================================================
+
+
+WrongToolAxisOrientation="刀軸必須與底面平行"; 
+NotValidDistanceBetweenpath="路徑間距離必須比刀軸直徑小"; 
+NotValidAxialMode="多層動作需有一頂部平面"; 
+SuccessfullChecking="動作驗證成功完成"; 
+FailedChecking="動作驗證失敗"; 
+NotCompleteOperation="動作未完成"; 
+NotCompleteOperationCheckSafetyPlane="動作未完成. 請檢查是否在設計變更時是否刪除了安全面 ?"; 
+NegatifOffsetWithHardBottom="底部負值預留以硬底設成無效"; 
+NoRetBetweenLevelsMacroDefine="多層動作副程式沒有使用者回復";
+ExtraSegmentOverlapp="HSM 額外的線段重覆必須小於刀具直徑";
+CrzRadius="HSM 圓角半徑必須小於刀具半徑";
+Recouvrement="Recovery 係數間補償, 刀具半徑和 HSM 圓角半徑失敗";
+WrongToolAxisDirection="刀具軸必須從底部至頂部平面 \n 逆轉刀具軸或修改選擇"; 
+WrongMachiningDirection="加工方向和刀具軸平行 \n 請修改加工方向"; 
+ImpossibleRelimitation="無法截斷 \n 請檢查截斷情形"; 
+NotValidDistanceBetweenLevel="上下間距離太小 \n 請檢查精銑參數"; 
+NothingToMill="無可加工材料"; 
+TooLargeNegativeThicknessOnGeometry="幾何上的負值偏移太大"; 
+
+ERR_3000.Request    = ""; 
+ERR_3000.Diagnostic = "未加工刀具直徑必須小於目前刀具直徑.";
+ERR_3000.Advice     = "";
+
+ERR_3001.Request    = ""; 
+ERR_3001.Diagnostic = "Collision detected in macros :\n/p1";
+ERR_3001.Advice     = "";
+
+ERR_90100.Request    ="";
+ERR_90100.Diagnostic ="Extra segment overlap value is greater than tool nominal diameter";
+ERR_90100.Advice     ="Verify that extra segment overlap is less than the tool nominal diameter.";
+
+ERR_90101.Request    ="";
+ERR_90101.Diagnostic ="Finish corner radius is greater than tool radius";
+ERR_90101.Advice     ="Verify that finish corner radius is less than the tool radius.";     
+
+ERR_90102.Request    ="";     
+ERR_90102.Diagnostic ="Corner radius is greater than tool radius";
+ERR_90102.Advice     ="Corner radius must be less than or equal to the tool radius.";
+
+ERR_90103.Request    ="";
+ERR_90103.Diagnostic ="Invalid parameters for ramping approach";
+ERR_90103.Advice     ="Verify the parameters used to define the ramping approach.";
+
+ERR_90104.Request    ="";     
+ERR_90104.Diagnostic ="Distance between paths is greater than tool nominal diameter";
+ERR_90104.Advice     ="Verify that distance between paths is less than tool nominal diameter";
+
+ERR_90105.Request    ="";
+ERR_90105.Diagnostic ="Slowdown rate value is too small";   
+ERR_90105.Advice     ="Slowdown rate must be greater than 0.0";
+
+ERR_90106.Request    ="";
+ERR_90106.Diagnostic ="Invalid transition angle for HSM";    
+ERR_90106.Advice     ="Transition angle must be between 0.0 and 90.0 degrees.";
+  
+ERR_90107.Request    ="";
+ERR_90107.Diagnostic ="Corner limit angle for HSM is too big";
+ERR_90107.Advice     ="Corner limit angle must be less than 90 degrees.";
+
+ERR_90108.Request    ="";
+ERR_90108.Diagnostic ="Side finish thickness is greater than tool radius";
+ERR_90108.Advice     ="Side finish thickness must be less than or equal to tool radius.";
+
+ERR_90109.Request    ="";
+ERR_90109.Diagnostic ="Scallop pass ratio is too big";
+ERR_90109.Advice     ="Scallop pass ratio must be less than or equal to 50% of tool nominal diameter.";
+
+ERR_90110.Request    ="";
+ERR_90110.Diagnostic ="Overhang rate is too great";
+ERR_90110.Advice     ="Shift calculated from overhang rate must be less than or equal to tool radius.";
+
+ERR_90111.Request    ="";
+ERR_90111.Diagnostic ="Corner radius on scallop path is greater than corner radius";    
+ERR_90111.Advice     ="Verify the corner radius for the scallop path.";
+
+ERR_90112.Request    ="";
+ERR_90112.Diagnostic ="Tool non cutting diameter is greater than tool nominal diameter";
+ERR_90112.Advice     ="Verify the tool non cutting diameter is less than or equal to tool nominal diameter.";
+
+ERR_90113.Request    ="";
+ERR_90113.Diagnostic ="Rework areas computation failed";
+ERR_90113.Advice     ="Verify the validity of tool parameters, geometry offsets, and machining parameters.";
+
+ERR_90114.Request    ="";
+ERR_90114.Diagnostic ="Impossible to apply slowdown feedrate in corner";
+ERR_90114.Advice     ="Verify the values of  feedrate reduction parameters in Feeds&Speeds tab page";
+
+ERR_90115.Request    ="";
+ERR_90115.Diagnostic ="Approach macro tool path computation failed";
+ERR_90115.Advice     ="Verify parameters of approach macro motions.";
+
+ERR_90116.Request    ="";
+ERR_90116.Diagnostic ="Return in a level macro tool path computation failed";
+ERR_90116.Advice     ="Verify parameters of return in a level macro motions";
+
+ERR_90117.Request    ="";
+ERR_90117.Diagnostic ="Retract macro tool path computation failed";
+ERR_90117.Advice     ="Verify parameters of retract macro motions";
+
+ERR_90118.Request    ="";
+ERR_90118.Diagnostic ="Return between levels macro tool path computation failed";
+ERR_90118.Advice     ="Verify parameters of return between levels macro motions";
+
+ERR_90119.Request    ="";
+ERR_90119.Diagnostic ="Invalid number of side finish paths by level";
+ERR_90119.Advice     ="Verify the number of side finish paths by level.";
+
+ERR_90120.Request    ="";
+ERR_90120.Diagnostic ="Tool path computation failed for 2D radial profile compensation output";
+ERR_90120.Advice     ="Verify tool parameters and geometry offsets.";
+
+ERR_90121.Request    ="";
+ERR_90121.Diagnostic ="Machining domain is too small for specified tool and geometry offsets";
+ERR_90121.Advice     ="Verify tool parameters and geometry offsets.";
+
+ERR_90122.Request    ="";
+ERR_90122.Diagnostic ="Machining domain is too small to apply HSM corner parameters";
+ERR_90122.Advice     ="Verify tool parameters, geometry offsets, and HSM corner parameters.";
+
+ERR_90123.Request    ="";
+ERR_90123.Diagnostic ="Machining domain is too small";
+ERR_90123.Advice     ="Verify tool parameters, geometry offsets, HSM corner parameters, and machining tolerance.";
+
+ERR_90124.Request    ="";
+ERR_90124.Diagnostic ="Machining domain is too small";
+ERR_90124.Advice     ="Verify tool parameters, geometry offsets, HSM corner parameters, and machining tolerance.";
+
+ERR_90125.Request    ="";
+ERR_90125.Diagnostic ="Machining domain is too small for tool non cutting diameter";
+ERR_90125.Advice     ="Verify tool parameters (including tool non cutting diameter), geometry offsets, HSM corner parameters, and machining tolerance.";
+
+ERR_90126.Request    ="";    
+ERR_90126.Diagnostic ="The computed machining domain is too small: no roughing can be done.";
+ERR_90126.Advice     ="Verify tool parameters, geometry offsets, and machining parameters (side finish thickness,...).";
+
+ERR_90127.Request    ="";
+ERR_90127.Diagnostic ="Machining start point computation failed";
+ERR_90127.Advice     ="Verify tool parameters, geometry offsets, and machining parameters.";
+
+ERR_90128.Request    ="";
+ERR_90128.Diagnostic ="Imposible to compute ramping approach";
+ERR_90128.Advice     ="Tool non cutting diameter is too large to compute the ramping approach.\nVerify tool parameters, geometry offsets, and machining parameters.";
+
+ERR_90129.Request    ="";  
+ERR_90129.Diagnostic ="Machining domain is too small";
+ERR_90129.Advice     ="Verify tool parameters and geometry offsets.";
+
+ERR_90130.Request    ="";
+ERR_90130.Diagnostic ="Tool path computation failed";
+ERR_90130.Advice     ="Verify tool parameters, geometry offsets, and machining parameters";
+
+ERR_90131.Request    ="";
+ERR_90131.Diagnostic ="Invalid machining domain computation";
+ERR_90131.Advice     ="Verify tool parameters, geometry offsets, and machining parameters.";
+
+ERR_90132.Request    ="";
+ERR_90132.Diagnostic ="Impossible to apply HSM corner parameters";
+ERR_90132.Advice     ="Verify HSM corner parameters.";
+
+ERR_90133.Request    ="";
+ERR_90133.Diagnostic ="Invalid machining tolerance";
+ERR_90133.Advice     ="Verify machining tolerance is smaller than tool radius.";
+
+//======= Warning messages 
+
+WRN_90200.Request    = "";
+WRN_90200.Diagnostic = "Some Rework Areas are not machined";
+WRN_90200.Advice     = "Verify tool parameters (including tool non cutting diameter), geometry offsets, HSM corner parameters, and machining parameters";
+

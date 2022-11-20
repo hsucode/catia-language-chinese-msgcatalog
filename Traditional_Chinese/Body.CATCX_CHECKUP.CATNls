@@ -1,0 +1,80 @@
+//------------------------------------------------------
+// Resource file for internal Topological Check-Up 
+// En_EN
+//----------------------------------------------------------------------
+// CAUTION : each index is of maximum length of seventy-two characters !
+//-----------------------------------------------------------------------
+//
+//
+Vertex.ConfusionOnGeometry=
+"在相同位置 (/P5, /P6, /P7) 含有 /P4 頂點 [/P2,/P3,...] 具有最大間隙 /P8.";
+//
+Edge.ConfusionOnGeometry=
+"在相同位置含有 /P4 頂點 [/P2,/P3,...] 具有最大間隙 /P5.";
+//
+//
+//    *******************************************************
+//    *  BODY rule : must be streamable
+//    *******************************************************
+//
+Streamable.Failed =
+"物件 /P2 與版本 /P4 不相容.";
+//
+//    *******************************************************
+//    *  BODY rule : aggregate Domain must be locate in 3D
+//    *******************************************************
+//
+DomainInBody.WrongType =
+" /P2 邊界無效. 高尺寸必須是 3.";
+//
+DomainIn3D =
+"以 /P2 邊界圍繞已正確的定位在 3D 空間.";
+//
+DomainIn2D =
+"以 /P2 邊界圍繞已正確的定位在 2D 空間.";
+//
+DomainInSpace.failed =
+"以 /P2 邊界圍繞不在 2D 也不在 3D 空間.";
+//
+//
+ActiveBody.throw =
+"無法確認是作動本體 (分析時內部中斷).";
+//
+//
+ActiveBody.InactiveCell = "可能是作動本體, 但內含不相容 /P2.";
+//
+ActiveBody ="是作動本體 (/P2 頂點提出 /P3 邊界, 接下來是 /P4 修剪面).";
+//
+//    ******************************************************************
+//    *  TOPOLOGY rule : Check must be done with a topology not touched
+//    ******************************************************************
+//
+Topology.Touched =
+"是可見的拓墣 (布林動作或智慧複製的暫時屬性).";
+//
+Body.PointOutOfSpace=
+"具座標 [/P3, /P4, /P5] 的 /P2 超過限制 /P6.";
+//
+//    ******************************************************************
+//    *  report->PotDeVin(this,"Body","BoundingBoxTooSmall",1,witness,0,NULL,2,valbox);
+//    ******************************************************************
+//
+Body.BoundingBoxTooSmall =
+"具有太小的圍繞盒, 距離 /P4 (對 /P2 外部盒) > 解析度 /P3.";
+//
+Body.BoundingBoxVertexOutside =
+"/P6 圍繞盒. /P2 定位在 /P6=/P3 外部 /P6-box [/P4,/P5].";
+//
+Body.BoundingBoxVertexNotComputable =
+"圍繞盒具有 /P2 無法有效.";
+//
+Body.BoundingBoxVertices =
+"圍繞盒對 /P2 頂點 X=[/P3,/P4]  Y=[/P5,/P6]  Z=[/P7,/P8] 有效 (解析度 /P9).";
+//
+Infinite.OutsideModelSize =
+"不是無限且內含 /P2 具座標 ( /P4, /P5, /P6 ) 已超過模型大小 /P3.";
+//
+
+
+
+

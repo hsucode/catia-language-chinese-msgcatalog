@@ -1,0 +1,98 @@
+
+// COPYRIGHT DASSAULT SYSTEMES 2000
+
+//
+// NLS Message for the CATMacroEditor Application window
+//
+ 
+Editor.Title                     	= "巨集編輯器 v1.0";
+
+// Menu Management
+
+MacroEditorBarMenu.File.Title = "檔案";
+MacroEditorBarMenu.File.New.Title = "新的";
+MacroEditorBarMenu.File.Open.Title = "開啟...";
+MacroEditorBarMenu.File.Save.Title = "儲存";
+MacroEditorBarMenu.File.SaveAs.Title = "儲存成...";
+MacroEditorBarMenu.File.Exit.Title = "退出";
+
+MacroEditorBarMenu.Edit.Title = "編輯";
+MacroEditorBarMenu.Edit.GoToLine.Title = "跳至線...";
+MacroEditorBarMenu.Edit.Find.Title = "尋找 ...";
+
+// Status Bar
+
+StatusBar.Line							= "線 : ";
+StatusBar.Column						= "行 : ";
+
+// Tool Bar
+
+MacroEditorToolBar.Title					= "巨集編輯器";
+MacroEditorToolBar.New.Title			= "新的";
+MacroEditorToolBar.New.ShortHelp	= "新的檔案";
+MacroEditorToolBar.Open.Title			= "開啟";
+MacroEditorToolBar.Open.ShortHelp	= "開啟檔案";
+MacroEditorToolBar.Save.Title			= "儲存";
+MacroEditorToolBar.Save.ShortHelp	= "儲存檔案";
+
+// Browser
+
+OpenDlgFile.Title						= "開啟";
+SaveAsDlgFile.Title					= "儲存成";
+
+TypeDescription.CATScript		= "程序基本檔 (*.CATScript)";
+TypeDescription.Text				= "文字檔 (*.txt)";
+TypeDescription.AllFiles		= "所有檔案 (*)";
+
+// Prompt For Save
+
+PromptForSave.Title					= "巨集編輯器";
+PromptForSave.Text					= "/p1 檔案內的文字已修改. \n 您要儲存變更嗎?";
+
+// Prompt For Create
+
+PromptForCreate.Title					= "巨集編輯器";
+PromptForCreate.Text					= "/p1 檔案不存在. 您要建立它嗎?";
+
+// Go To Line Input
+
+GoToLineInputDlg.Title							= 	"跳至線";
+GoToLineInputDlg.InputLineLabel.Title			=	"行數 : ";
+GoToLineInputDlg.InputLineLabel.LongHelp	= "提供一個區域讓您能輸入想至的行數.";
+GoToLineInputDlg.InputLineEditor.LongHelp	= "提供一個區域讓您能輸入想至的行數.";
+
+// Find Input
+
+FindInputDlg.Title																			= 	"尋找";
+FindInputDlg.BOK.Title																	= 	"尋找下一個";
+FindInputDlg.BCancel.Title															= 	"關閉";
+FindInputDlg.FindLabel.Title														= 	"尋找什麼 : ";
+FindInputDlg.FindLabel.LongHelp													= 	"提供一個區域讓您輸入要尋找的文字.";
+FindInputDlg.FindEditor.LongHelp												= 	"提供一個區域讓您輸入要尋找的文字.";
+FindInputDlg.GroupRadioButtons.Title										= 	"方向";
+FindInputDlg.GroupRadioButtons.LongHelp									= 	
+"Specifies which direction to search starting from the cursor in the document. 
+ . Choose Up to search backward, toward the beginning of the document.
+ . Choose Down to search forward, toward the end of the document.";
+FindInputDlg.GroupRadioButtons.UpRadioButton.Title			= 	"上";
+FindInputDlg.GroupRadioButtons.DownRadioButton.Title		= 	"下";
+
+// FindErrorWindow
+
+FindErrorWindow.Title						= 	"巨集編輯器";
+FindErrorWindow.Text						= 	"無法找到字串 \"/p1\".";
+// File Error Management
+
+ErrorWindow.Title 					= "/p1 內有錯誤";
+
+FileError.TooManyOpenFiles	= "開啟太多檔案.";
+FileError.FileExists				= "檔案 \"/p1\" 已存在.";
+FileError.AccessDenied			= "檔案 \"/p1\" 您沒有存取權限.";
+FileError.InvalidName				= " \"/p1\" 的檔案名稱無效.";
+FileError.FileNotFound			= " \"/p1\" 未找到.";
+FileError.DiskFull					= "磁碟已滿.";
+FileError.InvalidParameter	= "無效參數.";
+FileError.InvalidHandle			= " 對 \"/p1\" 的檔案處理無效.";
+FileError.OperationAborted	= "操作取消.";
+FileError.UnknownError			= "未知的錯誤.";
+

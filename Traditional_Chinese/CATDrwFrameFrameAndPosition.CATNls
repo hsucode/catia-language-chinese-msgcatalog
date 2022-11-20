@@ -1,0 +1,201 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwFrameFrameAndPosition
+// LOCATION    :    DraftingIntUI
+// AUTHOR      :    fgx
+// BUT         :    Properties : Tab "FrameAndPosition" 
+// DATE        :    04.03.1999
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS    user    date        purpose
+//    HISTORY       ----    ----        -------
+//      00          fgx     04.03.99    Creation
+//      01          fgx     09.09.99    Ajout anchor line
+
+//	  03     	  lgk	    25.06.02    Revision
+//=====================================================================================
+
+_frameFrame._labelFrame.Title="外框: ";
+_frameFrame._comboFrame.LongHelp=
+"設定所選文字的外框顯示.";
+
+_frameFrame._labelColor.Title="顏色: ";
+_frameFrame._comboColor.LongHelp=
+"設定所選文字的外框顯示顏色.";
+
+_frameFrame._labelThickness.Title="厚度: ";
+_frameFrame._comboThickness.LongHelp=
+"設定所選文字的外框顯示厚度.";
+
+_frameFrame._labelLineType.Title="線形: ";
+_frameFrame._comboLineType.LongHelp=
+"設定所選文字的外框顯示線形.";
+
+_titlePosition.Title="位置 ";
+
+_framePosition._labelAnchor.Title="定位點: ";
+_framePosition._comboAnchor.LongHelp=
+"設定所選文字的定位點.";
+
+_framePosition._labelAnchorLine.Title="定位模式: ";
+_framePosition._comboAnchorLine.LongHelp=
+"設定所選文字的定位模式.";
+
+_framePosition._labelLineSpacing.Title="線距: ";
+_framePosition._spinnerLineSpacing.LongHelp=
+"設定所選文字的線距.";
+
+_framePosition._labelSpacingMode.Title="線距模式: ";
+_framePosition._comboSpacingMode.LongHelp=
+"設定所選文字的線距模式.";
+
+_framePosition._labelX.Title="X: ";
+_framePosition._editorX.LongHelp=
+"設定所選文字的X座標.";
+
+_framePosition._labelY.Title="Y: ";
+_framePosition._editorY.LongHelp=
+"設定所選文字的Y座標.";
+
+_framePosition._labelJustif.Title="正當: ";
+_framePosition._comboJustif.LongHelp=
+"設定所選文字的正當性.";
+
+_framePosition._checkWordWrap.Title="字元包裹長度: ";
+_framePosition._editorWordWrap.LongHelp=
+"設定所選文字的包裹長度.";
+
+
+
+_titleOrientation.Title="方向 ";
+
+_frameOrientation._labelReference.Title="參考: ";
+_frameOrientation._comboReference.LongHelp=
+"設定所選文字的參考方向.";
+
+_frameOrientation._labelOrientation.Title="方向: ";
+_frameOrientation._comboOrientation.LongHelp=
+"設定所選文字的方向.";
+
+_frameOrientation._labelAngle.Title="角度: ";
+_frameOrientation._spinnerAngle.LongHelp=
+"設定所選文字的參考角度.";
+
+_frameOrientation._labelMirroring.Title="鏡射: ";
+_frameOrientation._comboMirroring.LongHelp=
+"設定所選文字鏡射.";
+
+_titleParameters.Title="選擇 ";
+
+_frameParameters._checkDisplayUnit.Title="顯示單位 ";
+_frameParameters._checkDisplayUnit.LongHelp=
+"在含有參數的文字中顯示或隱藏單位.";
+
+_frameParameters._checkScalable.Title="比例應用";
+_frameParameters._checkScalable.LongHelp=
+"應用視圖或 2D 參考分件比例 
+至文件顯示.";
+
+_frameParameters._checkBackField.Title="背後欄位 ";
+_frameParameters._checkBackField.LongHelp=
+"允許上標和下標對齊.";
+
+_frameParameters._checkBlank.Title="背景空白";
+_frameParameters._checkBlank.LongHelp=
+"文字背景空白, 當文字顯示在圖樣或圖片上時.";
+
+_frameParameters._labelSuperscript.Title="上標: ";
+_frameParameters._labelSubscript.Title="下標: ";
+_frameParameters._labelOffset.Title="偏移 ";
+_frameParameters._labelSize.Title="大小 ";
+
+_frameParameters._spinnerSuperOffset.LongHelp=
+"從文字基本線的上標垂直位置, 
+文字字型大小比例.";
+
+_frameParameters._spinnerSubOffset.LongHelp=
+"從文字基本線的下標垂直位置, 
+文字字型大小比例.";
+
+_frameParameters._spinnerSuperSize.LongHelp=
+"上標高度, 
+文字字型大小比例.";
+
+_frameParameters._spinnerSubSize.LongHelp=
+"下標高度, 
+文字字型大小比例.";
+
+_frameParameters._labelTextBox.Title="顯示: ";
+_frameParameters._comboTextBox.LongHelp=
+"顯示文字字串, 它的圍繞盒或隱藏它, 
+來避免繪圖檔過度負荷.";
+
+
+NONE="(無)";
+RECTANGLE="四方形";
+SQUARE="正方形";
+CIRCLE="圓形";
+SCORED_CIRCLE="記號圓";
+DIAMOND="菱形";
+TRIANGLE="三角形";
+FLAG_RIGHT="向右";
+FLAG_LEFT="向左";
+FLAG_BOTH="兩側同時";
+OBLONG="矩形";
+ELLIPSE="橢圓";
+OBLONG_RIGHT="長方形右側";
+OBLONG_LEFT="長方形左側";
+STICKING="黏著";
+SET="設定";
+FIXED_SUPPORT="固定依附";
+NOTA="Nota";
+SYM_PART="對稱零件";
+SYM_SET="對稱組合";
+SCORED_RECTANGLE="Scored 四方形";
+PARALLELOGRAM="平行四邊形";
+
+TOP_LEFT="左上";
+TOP_CENTER="中上";
+TOP_RIGHT="右上";
+MIDDLE_LEFT="中左";
+MIDDLE_CENTER="中中";
+MIDDLE_RIGHT="中右";
+BOTTOM_LEFT="左下";
+BOTTOM_CENTER="中下";
+BOTTOM_RIGHT="中右";
+
+TOP_BOTTOM="上或下線";
+CAP_BASE="頂或底線";
+GLOBAL="總體";
+SYMBOL= "符號";
+
+JUSTIF_LEFT="左";
+JUSTIF_CENTER="中";
+JUSTIF_RIGHT="右";
+
+REF_SCREEN="圖紙";
+REF_VIEW="視窗或平面分件";
+
+ORIENT_HORI="水平的";
+ORIENT_VERTI="垂直的";
+ORIENT_FIXED="固定角度";
+
+AUTO_FLIP="自動翻轉";
+BOTTOM_TO_TOP="下到上";
+BASE_TO_CAP="底到頂";
+BASE_TO_BASE="底到底";
+
+NO_FLIP="不翻轉";
+FLIP_HORIZONTAL="水平翻轉";
+FLIP_VERTICAL="垂直翻轉";
+FLIP_BOTH="兩者皆翻轉";
+
+SHOW_VALUE="顯示數值";
+SHOW_GLOBAL_BOX="顯示盒";
+NO_SHOW_VALUE="隱藏數值";
+

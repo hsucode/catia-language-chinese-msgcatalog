@@ -1,0 +1,90 @@
+// messages d'erreurs internes SPM
+
+ERR_001.Request    ="/p";
+ERR_001.Diagnostic ="/p";
+ERR_001.Advice     ="/p";
+
+ERR_100.Request    ="在 : /p 中發生內部錯誤";
+ERR_100.Diagnostic ="/p";
+ERR_100.Advice     ="/p";
+
+ERR_200.Request    ="在 : /p 中發生失敗";
+ERR_200.Diagnostic ="/p";
+ERR_200.Advice     ="/p";
+
+ERR_300.Request    ="在 : /p 中發現不好的數值";
+ERR_300.Diagnostic ="/p";
+ERR_300.Advice     ="/p";
+
+ERR_400.Request    ="在 : /p 中未發現";
+ERR_400.Diagnostic ="/p";
+ERR_400.Advice     ="/p";
+
+ERR_500.Request    ="在檔案 : /p1 中發現有 XML 錯誤. \n 錯誤位置在行 : /p2 和列 : /p3 ";
+ERR_500.Diagnostic ="偵錯 : /p";
+ERR_500.Advice     ="請修改您的 XML 檔案 !";
+
+ERR_600.Request    ="在檔案 : /p 中發現有 XML 錯誤.";
+ERR_600.Diagnostic ="此圖像名稱已定義在 : /p";
+ERR_600.Advice     ="請更改圖像名稱 !, 否則將會忽略此圖像 !";
+
+ERR_650.Request    ="在 XML 檔案中發現錯誤: /p";
+ERR_650.Diagnostic ="此圖像檔案名稱未定義 : /p";
+ERR_650.Advice     ="圖像副檔名不可與新圖像檔名稱定義 !";
+
+ERR_655.Request    ="在 XML 檔案中發現錯誤: /p";
+ERR_655.Diagnostic ="圖像檔案名稱未定義位置: /p";
+ERR_655.Advice     ="圖像副檔名移除位置後,必須至少含有一位置 !";
+
+ERR_660.Request    ="在 XML 檔案中發現錯誤: /p";
+ERR_660.Diagnostic ="圖像參考名稱未定義位置: /p";
+ERR_660.Advice     ="必須先定義圖像參考 !";
+
+ERR_700.Request    ="建立圖像名稱失敗 : /p";
+ERR_700.Diagnostic ="未找到可用的位置 ";
+ERR_700.Advice     ="請檢查圖像定義 !";
+
+ERR_705.Request    ="無法建立環繞型式名稱 : /p";
+ERR_705.Diagnostic ="無可用位置 ";
+ERR_705.Advice     ="請檢查環繞型式定義 !";
+
+ERR_710.Request    ="抱歉! 無法在此工作檯執行更新.";
+ERR_710.Diagnostic =" ";
+ERR_710.Advice     =" ";
+
+ERR_715.Request    ="建立失敗 : /p";
+ERR_715.Diagnostic ="此選項尚未可用 ";
+ERR_715.Advice     ="修改圖像定義 !";
+
+ERR_800.Request    =" XML 檔案中發現錯誤: /p";
+ERR_800.Diagnostic ="錯誤 : /p";
+ERR_800.Advice     ="請修改您的檔案 !";
+
+ERR_900.Request    =" /p1 無法使用輸出資料命令";
+ERR_900.Diagnostic ="允許 /p1 ";
+ERR_900.Advice     ="更改 /p1 !";
+
+ERR_950.Request    ="輸出資料命令不可用 : /p1 ";
+ERR_950.Diagnostic ="目前路徑為 : /p1 ";
+ERR_950.Advice     ="更改路徑 ! : /p1";
+
+GenericClientTitle   = "內部錯誤";
+GenericClientMessage = "後處理器發生內部錯誤 !";
+ExplicitErrorTitle   = "錯誤";
+
+ERR_BadLengthFormat.Request    ="未辦識長度格式 !";
+ERR_BadLengthFormat.Diagnostic ="檢查數值和單位.";
+
+UpdateWarningWindowTitle			     = "警告 !";
+UpdateWarningMessageForRestraintAndLoad  = "網格需更新.\n",
+										   "This operation may take some time !\n",
+										   "\tContinue ?";
+UpdateWarningMessageForSolution          = "解法需更新.\n",
+										   "This operation may take some time !\n",
+										   "\tContinue ?";
+UpdateWarningMessageForReadOnly          = "此工作檯內無法更新.\n",
+										   "\tSorry.";
+
+EnvelopComputationInterrupted.Request = "/p 使用者中斷計算";
+
+

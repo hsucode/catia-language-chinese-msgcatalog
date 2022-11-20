@@ -1,0 +1,115 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//===========================================================================
+//
+// CATDrwPageSetup English
+//
+//===========================================================================
+// Avril	98		fgx		Creation des widgets
+//===========================================================================
+Title="頁面設定";
+
+frameApplyOn.labelApplyOn.Title="應用至 : ";
+
+frmStandard.HeaderFrame.Global.Title="標準";
+frmStandard.HeaderFrame.Global.LongHelp="標準
+應用標準至文件.";
+frmStandard.IconAndOptionsFrame.OptionsFrame.comboStandard.Title="";
+frmStandard.IconAndOptionsFrame.OptionsFrame.comboStandard.LongHelp="";
+frmStandard.IconAndOptionsFrame.OptionsFrame.pushUpdateStandard.Title="更新";
+frmStandard.IconAndOptionsFrame.OptionsFrame.pushUpdateStandard.LongHelp="更新標準
+從標準檔案複製資訊至繪圖中.";
+
+//frameStandardTitle.frameStdTitle.labelStandardTitle.Title="Standard ";
+//frameStandardTitle.frameStdTitle.labelStandardTitle.LongHelp="Standard
+//Applies a standard to the document: \"ISO\" or \"ANSI\".";
+//frameStandardTitle.UpdateStandardBtn.Title="Update";
+//frameStandardTitle.UpdateStandardBtn.LongHelp="Update Standard
+//Copies the information from the standard file into the drawing.";
+
+
+frmFormat.HeaderFrame.Global.Title="格式";
+frmFormat.HeaderFrame.Global.LongHelp="格式
+定義可用格式. 選擇後相關寬度和高度將會顯示. 
+所選格式將會顯示在預視上.";
+frmFormat.IconAndOptionsFrame.OptionsFrame.frameFormatEditor.labelWidth.Title="寬度: ";
+frmFormat.IconAndOptionsFrame.OptionsFrame.frameFormatEditor.labelWidth.LongHelp="顯示所選格式的寬度.";
+frmFormat.IconAndOptionsFrame.OptionsFrame.frameFormatEditor.labelHeight.Title="高度: ";
+frmFormat.IconAndOptionsFrame.OptionsFrame.frameFormatEditor.labelHeight.LongHelp="顯示所選格式的高度.";
+
+//frameFormatTitle.labelFormatTitle.Title="Format ";
+//frameFormatTitle.labelFormatTitle.LongHelp="Format
+//Defines the available formats. The corresponding \"width\" 
+//and \"height\" appear once the format is selected. 
+//The selected format is automatically displayed in the 
+//preview.";
+//frameFormat.frameFormatEditor.labelWidth.Title="Width: ";
+//frameFormat.frameFormatEditor.labelWidth.LongHelp="Displays the \"width\" corresponding to the selected format.";
+//frameFormat.frameFormatEditor.labelHeight.Title="Height: ";
+//frameFormat.frameFormatEditor.labelHeight.LongHelp="Displays the \"height\" corresponding to the displayed format.";
+
+
+frmOrient.HeaderFrame.Global.Title="方向";
+frmOrient.HeaderFrame.Global.LongHelp="方向
+定義可用的兩種方向形式: 直向和橫向.";
+frmOrient.IconAndOptionsFrame.OptionsFrame.frameRadioOrientation.radioPortrait.Title="直向";
+frmOrient.IconAndOptionsFrame.OptionsFrame.frameRadioOrientation.radioPortrait.LongHelp="設定圖紙方向為直向.";
+frmOrient.IconAndOptionsFrame.OptionsFrame.frameRadioOrientation.radioLandscape.Title="橫向";
+frmOrient.IconAndOptionsFrame.OptionsFrame.frameRadioOrientation.radioLandscape.LongHelp="設定圖紙方向為橫向";
+
+//frameOrientationTitle.labelOrientationTitle.Title="Orientation ";
+//frameOrientationTitle.labelOrientationTitle.LongHelp="Orientation
+//Defines the two available orientation types: \"Portrait\" 
+//and \"Landscape\".";
+//frameOrientation.frameRadioOrientation.radioPortrait.Title="Portrait";
+//frameOrientation.frameRadioOrientation.radioPortrait.LongHelp="Sets sheet orientation to \"Portrait\".";
+//frameOrientation.frameRadioOrientation.radioLandscape.Title="Landscape";
+//frameOrientation.frameRadioOrientation.radioLandscape.LongHelp="Sets sheet orientation to \"Landscape\".";
+
+
+
+frmBack.HeaderFrame.Global.Title="背景";
+frmBack.IconAndOptionsFrame.OptionsFrame.BackgroundBtn.Title="插入背景視圖...";
+
+//backgroundTitle.backgroundLabel.Title="Background";
+//insertBackgroundBtn.Title="Insert Background View...";
+
+
+
+otherOption.checkSameAsPrinter.Title="如同印表機設定";
+otherOption.checkSameAsPrinter.LongHelp="應用印表機預設值.";
+
+otherOption.checkShowFormat.Title="顯示格式";
+otherOption.checkShowFormat.LongHelp="在圖紙上顯示格式.";
+
+otherOption.frameApplyOn.labelApplyOn.Title="應用在: ";
+otherOption.frameApplyOn.labelApplyOn.LongHelp="應用頁面設定在 所有圖紙
+或目前圖紙.";
+
+//checkSameAsPrinter.Title="Same as printer format";
+//checkSameAsPrinter.LongHelp="Applies the default printer setup format.";
+//
+//checkShowFormat.Title="Show Format";
+//checkShowFormat.LongHelp="Visualizes the format on the sheet.";
+//
+//frameApplyOn.labelApplyOn.Title="Apply on: ";
+//frameApplyOn.labelApplyOn.LongHelp="Applies the page setup to \"all the sheets\" or to the
+//\"current sheet\".";
+
+
+
+currentSheet="目前圖紙";
+currentSheet.LongHelp="應用頁面至目前圖紙.";
+
+allSheets="所有圖紙";
+allSheets.LongHelp="應用頁面至所有圖紙";
+
+
+
+AlreadyExistingFormat="已有其它格式使用相同名稱. 請使用其它格式名稱.";
+Error="錯誤";
+
+UpdateStandardWarningTitle="標準更改或更新";
+UpdateStandardWarningMessage="標準更改或更新無法回復. 您要繼續嗎?";
+
+InvalidStandardErrorTitle="無效標準";
+InvalidStandardErrorMessage="所選的檔案標準無效或為早版期. 請檢查 XML 檔案.";

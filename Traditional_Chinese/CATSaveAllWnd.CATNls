@@ -1,0 +1,101 @@
+// NLS file for CATSaveAllWnd
+//---------------------------
+// English Version
+//---------------------------
+
+Titre_general1="全部存檔";
+Titre_general2="儲存管理";
+
+// CATDlgMultiList _SaveML
+
+frmInfos.frmMultiList.ColonneA1 = "位置";
+frmInfos.frmMultiList.ColonneA2 = "狀態";
+frmInfos.frmMultiList.ColonneA3 = "檔名";
+frmInfos.frmMultiList.ColonneA4 = "動作";
+frmInfos.frmMultiList.ColonneA5 = "存取";
+
+frmInfos.frmPath.frmMultiList.ShortHelp = "路徑 = 存檔的路徑 \n 狀態 = 檔案的狀態";
+frmInfos.frmPath.frmMultiList.LongHelp = 
+"路徑 = 存檔的路徑 
+狀態 = 檔案的狀態
+   新檔 : 開新檔案, 付與一個檔名
+   開啟舊檔 : 在你的處理程序中開啟, 不需修改
+   修改 : 在你的處理程序中修改
+   惟讀 : 修改和惟讀,需要一個新名稱來存檔
+   儲存暫停 : 將被儲存
+   自動儲存暫停: 將被儲存(相關聯文件)";
+
+// CATDlgPushButton Save As ..
+TitleBrows = "另存新檔";
+
+frmInfos.frmButton.Save.Title = "存檔";
+frmInfos.frmButton.Save.ShortHelp = "將選擇的檔案存檔";
+frmInfos.frmButton.Save.LongHelp = "以相同檔名,將選擇的檔案存檔";
+
+frmInfos.frmButton.Save_As.Title = "另存新檔...";
+frmInfos.frmButton.Save_As.ShortHelp = "將選擇的檔案另存新檔...";
+frmInfos.frmButton.Save_As.LongHelp = "將選擇的檔案另存新檔...";
+
+frmInfos.frmButton.Propagate_directory.Title="承襲目錄...";
+frmInfos.frmButton.Propagate_directory.ShortHelp = "儲存文件及其子文件在同一目錄中 ...";
+frmInfos.frmButton.Propagate_directory.LongHelp = "儲存所選文件的子文件在同一目錄中...";
+
+frmInfos.frmButton.Reset.Title="重新設定";
+frmInfos.frmButton.Reset.ShortHelp = "取消另存新檔 ... ";
+frmInfos.frmButton.Reset.LongHelp = "取消另存新檔... ";
+
+frmInfos.frmButton.Save_All.Title = "全部儲存";
+frmInfos.frmButton.Save_All.ShortHelp = "儲存非唯讀的修改文件";
+frmInfos.frmButton.Save_All.LongHelp = "儲存相同名稱非唯讀的修改文件";
+
+frmInfos.frmPath.frmMultiList.CtxMenu.Select_All_Pointed.Title = "選擇所有指向的";
+frmInfos.frmPath.frmMultiList.CtxMenu.Product_Tree.Title = "產品樹";
+
+frmInfos.frmApplyPattern.Pattern_Name.Title = "陣列名稱:";
+frmInfos.frmApplyPattern.Pattern_Name.ShortHelp = "顯示陣列名稱";
+frmInfos.frmApplyPattern.Pattern_Name.LongHelp = "使用此輸入盒顯示清單中的陣列名稱";
+
+frmInfos.frmApplyPattern.Apply_Pattern.Title = "應用陣列";
+frmInfos.frmApplyPattern.Apply_Pattern.ShortHelp = "應用陣列";
+frmInfos.frmApplyPattern.Apply_Pattern.LongHelp = "按一下來應用清單中的陣列";
+
+frmInfos.frmApplyPattern.Edit_Pattern.Title = "編輯陣列";
+frmInfos.frmApplyPattern.Edit_Pattern.ShortHelp = "編輯陣列";
+frmInfos.frmApplyPattern.Edit_Pattern.LongHelp = "按一下來編輯清單中的陣列";
+
+frmInfos.frmButton.Preview.Title="檢視無關聯...";
+frmInfos.frmButton.Preview.ShortHelp = "檢視所選文件的連結 ...";
+frmInfos.frmButton.Preview.LongHelp = "檢視所選文件的連結 ...";
+
+frmInfos.frmMsg.Independant.Title="啟始無關聯的儲存";
+frmInfos.frmMsg.Independant.LongHelp = 
+"啟始無關聯的儲存.
+勾選此選項可使你獨立存檔, 也就是說,不會儲存關聯的儲存";
+
+New="開新檔案";
+Opened="開啟舊檔";
+OpenedRO="開啟唯讀";
+Modified="修改";
+ModifiedRO="修改唯讀";
+ModifiedSavedByOtherUser="由其它使用者修改後儲存";
+Synchronized="以同步化來修改";
+Read_Only="唯讀";
+Read_Write="讀寫";
+Saved="儲存暫停";
+Auto_Save="自動儲存暫停";
+ToSave="儲存";
+ToAutoSave="自動儲存";
+ToReadOnly="設定唯讀";
+
+// Label de report
+nls_report1="/P1  新檔留下";
+nls_report2="/P1  惟讀檔留下";
+nls_report3="/P1  存檔";
+nls_report4="/P1  自動存檔";
+nls_report5="/P1  未存檔留下";
+
+Warning = "警告";
+EnableIndependant = "此選擇將使你獨立儲存文件,
+請小心,這個選擇可能會讓你遺失一些必需被儲存的資料";
+ConfirmSaveAs = "執行由資料庫儲存文件將會無法儲存. \n 您仍要執行嗎 ?";
+ConfirmSave = "執行由資料庫環境儲存將會無法儲存. \n 您仍要執行嗎 ?";

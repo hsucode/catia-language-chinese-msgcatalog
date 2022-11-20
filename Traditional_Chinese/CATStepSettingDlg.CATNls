@@ -1,0 +1,141 @@
+// ==============================================================================================
+// Generalites
+// ==============================================================================================
+
+// Label
+General.Workshop.Title = "PrtWks";
+
+// Label
+General.Dialog.Title = "STEP";
+
+// ==============================================================================================
+// Nouvelle boite de dialogue
+// ==============================================================================================
+_ToolsExport.HeaderFrame.Global.Title ="輸出";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameAP._LblAP.Title ="應用協議 ( AP ) : ";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameAP._AP203.Title ="203";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameAP._AP203.ShortHelp =" 以 AP203 輸出 ( 控制設計組態)  ";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameAP._AP203.LongHelp =" 以 AP203 輸出 ( 控制設計組態)  ";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameAP._AP214.Title ="214";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameAP._AP214.ShortHelp =" 以 AP214 輸出 ( 汽車機構設計程序核心資訊 )  ";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameAP._AP214.LongHelp =" 以 AP214 輸出 ( 汽車機構設計程序核心資訊 )  ";
+
+
+// =============================================================================================
+// pour la boite de dialog (Options d'Export)
+// =============================================================================================
+
+Export.AP203.Title = "AP203";
+Export.AP214.Title = "AP214";
+Export.AP203Ext.Title = "AP203 含延伸定義";
+Export.AP203Ed2.Title = "AP203 版本 2";
+Export.AP.Help = 
+"AP203: 以 AP203 輸出 ( 控制設計組態)
+AP214: 以 AP214 輸出 ( 汽車機構設計程序核心資訊 )  ";
+Export.AP.SaveAs = "----應用協議 ( AP )----";
+Export.ResetButton.Title = "重設";
+Export.DialogBox.Title = "儲存成 STEP 格式";
+
+// ==============================================================================================
+// Nouvelle boite de dialogue
+// ==============================================================================================
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameASM._LblASM.Title ="組立 : ";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameASM._Struct.Title ="鏈結至 CATIA";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameASM._Struct.ShortHelp ="輸出與 CATIA 檔案鏈結的架構.";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameASM._Struct.LongHelp ="輸出與 CATIA 檔案鏈結的架構.";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameASM._StructGeo.Title ="單一 STEP 檔案";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameASM._StructGeo.ShortHelp ="輸出含有相同 STEP 檔案的架構.";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameASM._StructGeo.LongHelp ="輸出含有相同 STEP 檔案的架構.";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameASM._RefExt.Title ="STEP 外部參考";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameASM._RefExt.ShortHelp ="輸出架構和相關幾何在不同的 STEP 檔案.";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameASM._RefExt.LongHelp ="輸出架構和相關幾何在不同的 STEP 檔案.";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameASM._RefExt2.Title ="CATIA 外部參考";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameASM._RefExt2.ShortHelp ="參考 CATIA 檔案的架構輸出";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameASM._RefExt2.LongHelp ="參考 CATIA 檔案的架構輸出";
+
+// ==============================================================================================
+// Nouvelle boite de dialogue
+// ==============================================================================================
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameUnits._LblUnits.Title ="單位 : ";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameUnits._Unitmm.Title ="公厘";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameUnits._Unitmm.ShortHelp =" 以公厘輸出 ";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameUnits._Unitmm.LongHelp =" 以公厘輸出 ";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameUnits._UnitInch.Title ="英寸";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameUnits._UnitInch.ShortHelp =" 以英寸輸出";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameUnits._UnitInch.LongHelp =" 以英寸輸出";
+
+// ==============================================================================================
+// Nouvelle frame General
+// ==============================================================================================
+_ToolsGeneral.HeaderFrame.Global.Title = "一般";
+_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._Report.Title = "詳細報告";
+//_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._Report.ShortHelp = "含有轉換元件清單的報告";
+_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._Report.LongHelp = "含有轉換元件清單的報告";
+_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._Gvp.Title = "幾何有效性質 ( GVP )";
+//_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._Gvp.ShortHelp = "含有報告資訊的幾何有效性質計算";
+_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._Gvp.LongHelp = "含有報告資訊的幾何有效性質計算";
+_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._ToleranceGVPPushButton.Title = "精度";
+//_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._ToleranceGVPPushButton.ShortHelp = "定義 GVP 精度";
+_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._ToleranceGVPPushButton.LongHelp = "定義 GVP 精度";
+_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._GroupMod.Title = "群組 (選擇集合)";
+//_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._GroupMod.ShortHelp = "啟動群組管理, STEP 群組將與所選集合對應";
+_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._GroupMod.LongHelp = "啟動群組管理, STEP 群組將與所選集合對應";
+// ==============================================================================================
+// Pour la gestion des Messages du cote STEP
+// ==============================================================================================
+CATStepImpTrimmedCurve.Param =" <E> 修剪曲線數目: /p1 含有參數問題";
+
+// ==============================================================================================
+// Nouvelle frame Show/NoShow
+// ==============================================================================================
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameShow._LblShow.Title = "顯示或隱藏 : ";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameShow._Show.Title = "也輸出未顯示元件";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameShow._Show.ShortHelp = "也輸出未顯示元件";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameShow._Show.LongHelp = "如未勾選, 將只輸出顯示元件.";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameShow._LayersFilters.Title = "亦輸出未顯示圖層";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameShow._LayersFilters.ShortHelp = "亦輸出屬於未顯示圖層元件";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameShow._LayersFilters.LongHelp = "Enables export of entities belonging to non-visualized layers, that are ignored if unchecked.";
+
+// ==============================================================================================
+// Cles pour les boutons a 1 etat + Titre pour definire la partie Options
+// ==============================================================================================
+OptionRpt.CheckButton.Enable = "啟動";
+OptionRpt.CheckButton.Disable = "停止";
+OptionRpt.Title = "~~~~~~~~~~~~~~~~~~~~STEP 選項~~~~~~~~~~~~~~~~~~~~~";
+
+// ==============================================================================================
+// Nouvelle frame Import Curves & Surfaces
+// ==============================================================================================
+// DFB 2003-01-07
+_ToolsImport.HeaderFrame.Global.Title = "輸入";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2._LblOptC2.Title ="曲線和曲面的連續最佳化 :";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2._ModeNoOptC2New.Title ="未最佳化";
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2._ModeNoOptC2New.ShortHelp ="在非連續點分割曲線和曲面";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2._ModeNoOptC2New.LongHelp = "以非連續點分割來適用元素至模型.";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2._ModeOptC2New.Title ="自動最佳化";
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2._ModeOptC2New.ShortHelp ="以自動幾何變形來最佳化";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2._ModeOptC2New.LongHelp = "以控制幾何變形來適用元素至模型.";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2._ModeAdvancedOptC2New.Title ="進階最佳化";
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2._ModeAdvancedOptC2New.ShortHelp ="以使用者參數來控制幾何變形的最佳化";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2._ModeAdvancedOptC2New.LongHelp = "以使用者參數來控制幾何變形來適用元素至模型.";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2._ParameterPushButton.Title ="參數";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameMultiCAD._LblMultiCAD.Title ="插入已存分件模式 : ";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameMultiCAD._ModeMultiCAD.Title ="多重 CAD";
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameMultiCAD._ModeMultiCAD.ShortHelp ="以 多重 CAD 模式, 所更新的機構工作仍在 STEP 檔案上.";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameMultiCAD._ModeMultiCAD.LongHelp ="以 多重 CAD 模式, 所更新的機構工作仍在 STEP 檔案上.";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameIASM._LblIASM.Title         ="組立實體架構: ";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameIASM._ModeIASM.Title ="每個產品一個 CATProduct";
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameIASM._ModeIASM.ShortHelp ="對每個 STEP 產品啟動 CATProduct 檔案建立.";
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameIASM._ModeIASM.LongHelp ="對每個 STEP 產品啟動 CATProduct 檔案建立, 不只針對根產品.";
+
+// ==============================================================================================
+// Frame Export Header
+// ==============================================================================================
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameHeader._LblHeader.Title ="       STEP 檔案的檔頭 : ";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameHeader._HeaderPushButton.Title ="定義...";
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameHeader._HeaderPushButton.ShortHelp ="按下按鈕來定義 STEP 檔案的檔頭. ";
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameHeader._HeaderPushButton.LongHelp ="按下按鈕來定義 STEP 檔案的檔頭. ";
+
+

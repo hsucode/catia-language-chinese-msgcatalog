@@ -1,0 +1,69 @@
+//=====================================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwOptGen
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    
+// DATE        :    06.01.1999
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    Tools/Option du Drafting - Onglet Generative
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//      00           fgx   06.01.1999  Creation 	
+//      01           fgx   08.01.1999  Passage sur CATDrwOptTitle et CATDrwOptIcon
+//      02           fgx   13.01.1999  Nouvelles options gendim
+//      03           fgx   21.01.1999  Nouvelles options elements generes
+//      04           fgx   28.01.1999  Ajout de GenDimFilter et GenDimAnal
+//      05           fgx   05.02.1999  Ajout de GenDimAutoTrans
+//      06           fgx   14.04.1999  Modif de GenGeo
+//	  08		   lgk   26.06.2002  Revision
+//	  09 	    	   lgk   15.10.02    Revision
+//=====================================================================================
+
+Title="產生";
+
+frameGenDim.HeaderFrame.Global.Title="建立尺寸";
+frameGenDim.HeaderFrame.Global.LongHelp=
+"建立尺寸
+定義以3D零件的拘束產生尺寸.
+下列的拘束可被產生: 距離, 
+長度, 角度, 半徑 和直徑. ";
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDim.Title="更新圖紙時建立尺寸.";
+
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimFilter.Title="建立之前先過濾";
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimFilter.LongHelp=
+"產生前先存取 尺寸產生過濾器 對話框.";
+
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimAutoPos.Title="建立後自動定位";
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimAutoPos.LongHelp=
+"建立後自動定位.";
+
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimAutoTrans.Title="允許視窗間自動轉換";
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimAutoTrans.LongHelp=
+"再產生尺寸後,
+允許在視窗間自動轉換最佳位置.";
+
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimAnal.Title="建立後分析";
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimAnal.LongHelp=
+"產生後可存取 尺寸產生分析器 對話框.";
+
+frameGenDim.IconAndOptionsFrame.OptionsFrame.labelGenDimSemiAuto.Title="按步就班模式下延遲建立: ";
+
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimFromPart.Title="產生組立視圖中零件的尺寸";
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimFromPart.LongHelp=
+"產生組立視圖中零件的尺寸";
+frameGenDim.IconAndOptionsFrame.OptionsFrame.labelGenDimSemiAuto.LongHelp=
+"按步就班模式定義尺寸時
+指定延遲建立每一尺寸.";
+
+frameGenBal.HeaderFrame.Global.Title="產生球形標註";
+frameGenBal.HeaderFrame.Global.LongHelp=
+"定義建立球形標註選擇.";
+frameGenBal.IconAndOptionsFrame.OptionsFrame.checkGenBalloonByInstance.Title="為產品的所有元件建立球形標註";
+frameGenBal.IconAndOptionsFrame.OptionsFrame.checkGenBalloonByInstance.LongHelp="為產品的所有元件建立球形標註";
+

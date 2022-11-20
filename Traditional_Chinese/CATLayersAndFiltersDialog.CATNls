@@ -1,0 +1,103 @@
+Title="圖層和過濾器";
+
+_TabContainer._CurrentTabPage.Title="目前的";
+_TabContainer._CurrentTabPage._CurrentLayerLabel.Title="目前的圖層:";
+_TabContainer._CurrentTabPage._CurrentFilterLabel.Title="目前的圖層:";
+
+_TabContainer._FiltersTabPage.Title="過濾器";
+_TabContainer._FiltersTabPage.FiltersListLabel.Title="過濾器";
+_TabContainer._FiltersTabPage._CreateFilterPB.Title="建立";
+_TabContainer._FiltersTabPage._ModifyFilterPB.Title="修改";
+_TabContainer._FiltersTabPage._DeleteFilterPB.Title="刪除";
+
+_TabContainer._LayersTabPage.Title="圖層";
+_TabContainer._LayersTabPage._AddLayerPB.Title="增加";
+_TabContainer._LayersTabPage._RemoveLayerPB.Title="移除";
+_TabContainer._LayersTabPage._ApplyLayerPB.Title="應用";
+
+LayersList.Column1.Title   = "數值";
+LayersList.Column2.Title   = "名稱";
+LayersList.Column3.Title   = "說明";
+Filter.None.Name           = "無圖層應用";
+Filter.All.Name            = "顯示所圖層";
+Filter.Laycur.Name         = "只顯示目前圖層";
+Layer.General.Name         = "一般";
+Layer.General.Comment      = "預設圖層";
+LayersList.Visible.Title   = "可見圖層";
+LayersList.Unvisible.Title = "不可見圖層";
+LayersList.Default.Title   = "圖層特性";
+LayersList.Combination.Title = "組合";
+
+CurrentLayer.DefaultName   = "預設名稱";
+CurrentLayer.DefaultComment= 
+  "因未發現目前圖層,系統自動建立圖層";
+
+_TabContainer._CurrentTabPage._LayersCombo.LongHelp=
+"Current layer name.
+This combo lists all the existing layers.
+Selecting a layer in this list
+changes the current layer.
+Selecting an object in a graphic viewer
+sets the corresponding layer as current.";
+_TabContainer._CurrentTabPage._FiltersCombo.LongHelp=
+"目前過濾器名稱.
+This combo lists all the existing filters.
+Selecting a filter in this list
+changes the current filter.";
+_TabContainer._CurrentTabPage._CurrentLayerNumberEditor.LongHelp=
+"Current layer number.
+Entering the number of an existing layer
+sets this layer as the current layer.";
+
+_TabContainer._FiltersTabPage._FiltersList.LongHelp=
+"List of filters.
+Lists all the existing layer filters.
+Selecting a filter in this list
+displays its characteristics.
+The three first filters in this list are
+standard: you can not modify or delete them.";
+_TabContainer._FiltersTabPage._FilterLayersList.LongHelp=
+"Characteristics of the selected filter.
+Displays the way the selected filter is composed:
+list of visible or unvisible layers,
+or logical combination of layers and filters.";
+_TabContainer._FiltersTabPage._CreateFilterPB.LongHelp=
+"Create a new filter.";
+_TabContainer._FiltersTabPage._ModifyFilterPB.LongHelp=
+"Modify the selected filter.
+The current filter can not be modified.";
+_TabContainer._FiltersTabPage._DeleteFilterPB.LongHelp=
+"Delete the selected filter.
+The current filter can not be deleted.";
+
+_TabContainer._LayersTabPage._LayersList.LongHelp=
+"List of layers.
+Selecting a layer highlights its objects (if visible).
+Selecting an object in a graphic viewer selects
+the corresponding layer in this list.";
+_TabContainer._LayersTabPage._AddLayerPB.LongHelp=
+"Add a layer to the list.
+Enter the characteristics of the layer
+before using this command.";
+_TabContainer._LayersTabPage._RemoveLayerPB.LongHelp=
+"Remove the selected layer from the list.";
+_TabContainer._LayersTabPage._ApplyLayerPB.LongHelp=
+"Apply the selected layer to objects.
+Select this button and then the objects.";
+_TabContainer._LayersTabPage._LayerNumberEditor.LongHelp=
+"Number of the selected layer.
+Enter a new number to add a layer to the list.";
+_TabContainer._LayersTabPage._LayerNameEditor.LongHelp=
+"Name of the selected layer.
+Enter a new name to add a layer to the list
+or to modify the name of the selected layer.";
+_TabContainer._LayersTabPage._LayerCommentEditor.LongHelp=
+"Comment of the selected layer.
+Enter a new comment to modify
+the comment of the selected layer.";
+
+Keyword.SetSeparator    = ",";
+Keyword.OpenExpression  = "(";
+Keyword.CloseExpression = ")";
+
+DocumentTypeError = "目前文件形式無法使用此命令.";

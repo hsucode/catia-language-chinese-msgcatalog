@@ -1,0 +1,74 @@
+// COPYRIGHT ImpactXoft 2003
+//===================================================================
+SelectionErrorTitleId = "選取錯誤";
+SelectionErrorUpdateCycleId = "選擇導致特徵更新循環.";
+SelectionErrorBreakAssocId = "選擇導致特徵更新循環. \n 您要建立與所選項目無鏈結的基準嗎?";
+SelectionErrorIsolateId = "選擇導致特徵更新循環.\n 您要獨立所選元素嗎?";
+SelectionErrorIsolateFailedId = "獨立所選元素失敗.";
+
+UnresolvedTitleId = "特徵定義錯誤";
+
+DirParallelSketchErrorTitleId = "特徵定義錯誤";
+DirParallelSketchErrorId = "所選方向平行草圖平面";
+
+InWorkObjectMoldedPartErrorTitleId = "特徵定義錯誤";
+InWorkObjectMoldedPartErrorId = "無法在目前工作檯建立模具零件特徵. \n 在工作物件中選擇另一個或在新本體中插入.";
+
+AxisNotInSketchPlaneErrorTitleId = "特徵定義錯誤";
+AxisNotInSketchPlaneErrorId = "您必須選擇一個依附在斷面平面的軸.";
+
+PreviewErrorTitleId = "預視特徵錯誤";
+
+SketchInvalidWarningTitleId = "特徵定義錯誤";
+SketchInvalidWarningId      = "此草圖無法使用在您要建立的特徵上.  \n 您仍要使用此草圖嗎?";
+SketchInvalidConsructPntsWarningId = "所選草圖含有定義為標準幾何元素的點.  您必須轉換這些點為建構元素. \n 您仍要使用所選的草圖嗎 ?";
+
+InToShellLimitTypeNotValidErrorTitleId = "特徵定義錯誤";
+InToShellLimitTypeNotValidErrorId      = "至薄殼 限制型式在目前的延伸型式不可用.";
+
+UpgradeCFSErrorTitleId = "特徵定義錯誤";
+UpgradeCFSErrorId = "下列特徵刪除前, 模具零件特徵無法使用.";
+
+SweptProfNotPlanarErrorTitleId = "特徵定義錯誤";
+SweptProfNotPlanarErrorId = "掃掠斷面必須為平面形式.";
+
+FilletedFaceRemoveWarningTitleId = "特徵定義警告";
+FilletedFaceRemoveWarningId = "您要倒圓角的修剪面正在薄殼性質中被移除.\n 所有與此修剪面切線連續的修剪面都將被移除.";
+
+PatternDirParallelErrorTitleId = "特徵定義錯誤";
+PatternDirParallelErrorId = "矩形陣列的第一和第二參考方向互不平行.";
+
+SplitFaceRemoveWarningTitleId = "特徵定義警告";
+SplitFaceRemoveWarningId = "所有與分割修剪面切線連續的修剪面均會在分割本體中被移除.";
+
+InvalidTargetFeatureSelectedTitleId = "無效選擇";
+InvalidTargetSelectedMsgId = "選擇 \"/p1\" 無法修改.";
+InvalidTargetSelectedModifiedId = "\"/p1\" 已被 \"/p2\" 修改.";
+InvalidTargetSelectedAncestorId = "\"/p1\" 已被編輯修改.";
+InvalidTargetSelectedDescendantId = "\"/p1\" 已被正在編輯的特徵修改.";
+
+InvalidTargetSelectedToShellCycleShellableId = "\"/p1\" cannot be modified because update cycle results.\n The following combination produces an update cycle:\n (1) Feature you are editing is using To Shell limitation.\n (2) \"/p2\" feature is a shellable feature, or it\n is modifying a shellable feature.";
+InvalidTargetSelectedToShellCycleDivideId = "\"/p1\" cannot be modified because update cycle results.\n The following combination produces an update cycle:\n (1) Feature you are editing is using To Shell limitation.\n (2) \"/p2\" feature is a divide feature, or it\n is modifying a divide feature.";
+InvalidTargetSelectedToShellCycleMMLId = "\"/p1\" cannot be modified because update cycle results.\n The following combination produces an update cycle:\n (1) Feature you are editing is using To Shell limitation.\n (2) \"/p2\" feature is a nimport feature, or it\n is modifying an import feature.";
+InvalidTargetSelectedToShellCycleCoreId = "\"/p1\" cannot be modified because update cycle results.\n The following combination produces an update cycle:\n (1) Shell Properties wall direction is Outside.\n (2) Feature you are editing is using To Shell limitation.\n (3) \"/p2\" feature is producing a core volume.";
+
+InvalidTargetSelectedRefGeomCycleId = "\"/p1\" cannot be modified because update cycle results.\n\nThe following combination produces an update cycle:\n (1) Feature you are editing is referencing some geometry (e.g. some other selected item).\n (2) This referenced geometry is dependent on a volume that \"/p2\" contributes to.";
+
+ExtractSurfacesErrorTitleId = "萃取曲面錯誤";
+ExtractSurfacesChangePendingErrorId = "無法在尚未更或修改中的特徵上萃取曲面. \n 選擇預視按鈕檢視是否有更新尚未完成.";
+
+ChangeBehavLimitTypeWarningTitleId = "特徵定義警告";
+ChangeBehavLimitTypeWarningId = "Feature's \"To Shell\" limit types were reset to \"Length\" type.";
+
+UnknownScrewErrorTitleId = "特徵定義警告";
+UnknownScrewErrorId = "未知目錄 screw.";
+
+DirParallelDividePlaneErrorTitleId = "特徵定義錯誤";
+DirParallelDividePlaneErrorId = "所選方向與分隔面平行.";
+
+WallOutsideNoThicknessErrorTitleId = "特徵定義警告";
+WallOutsideNoThicknessErrorId = 
+"An outside wall direction means that Shellable features produce 
+a core volume which is thickened outward by the body thickness.  
+Because a core volume by itself is not visible, Shellable features 
+may disappear when the body thickness is zero.";

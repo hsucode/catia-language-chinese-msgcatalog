@@ -1,0 +1,114 @@
+DMUUtilityERR_4001 = " ";
+
+DMUUtilityERR_4000.Request    = "空鍵";
+DMUUtilityERR_4000.Diagnostic = "/p";
+DMUUtilityERR_4000.Advice     = "";
+
+DMUUtilityERR_4002.Request    = "Input";
+DMUUtilityERR_4002.Diagnostic = "No input file provided";
+DMUUtilityERR_4002.Advice     = "Use at least an input option";
+
+DMUUtilityERR_5000.Request    = "建立輸出文件";
+DMUUtilityERR_5000.Diagnostic = "[5000] 輸出的特別格式文件與文件不相容: /p";
+DMUUtilityERR_5000.Advice     = "";
+
+DMUUtilityERR_5001.Request    = "建立輸出文件";
+DMUUtilityERR_5001.Diagnostic = "下列文件已被成功處理: /p";
+DMUUtilityERR_5001.Advice     = "";
+
+DMUUtilityERR_5002.Request    = "建立輸出文件";
+DMUUtilityERR_5002.Diagnostic = "無法應用指定過濾器至文件: /p";
+DMUUtilityERR_5002.Advice     = "請檢查過濾檔案文法";
+
+DMUUtilityERR_5003.Request    = "Output document creation";
+DMUUtilityERR_5003.Diagnostic = "Camera cannot be founded into the document: /p";
+DMUUtilityERR_5003.Advice     = "Check the name of the camera";
+
+
+DMUUtilityERR_5200.Request    = "Incompatible options";
+DMUUtilityERR_5200.Diagnostic = "-f cannot be used with -l. -f option is ignored";
+DMUUtilityERR_5200.Advice     = "";
+
+DMUUtilityERR_5210.Request    = "Incompatible options";
+DMUUtilityERR_5210.Diagnostic = "[3200] Invalid combination of -f and -mp options";
+DMUUtilityERR_5210.Advice     = "Use of -l option is mandatory with -mp";
+
+DMUUtilityERR_5220.Request    = "Incompatible options";
+DMUUtilityERR_5220.Diagnostic = "-db option is mandatory with -coid -compid -catenv -cattab options";
+DMUUtilityERR_5220.Advice     = "Use of -db option is mandatory with -coid -compid -catenv -cattab";
+
+DMUUtilityERR_5230.Request    = "Incompatible options";
+DMUUtilityERR_5230.Diagnostic = "Invalid combination of -f and -db options";
+DMUUtilityERR_5230.Advice     = "Use of -l or -id option is mandatory with -db";
+
+DMUUtilityERR_5110.Request    = "不相容選項";
+DMUUtilityERR_5110.Diagnostic = "[3300]  -sag 和 -keepsag 不相容";
+DMUUtilityERR_5110.Advice     = "壓制 -sag 或 -keepsag 選項";
+
+DMUUtilityWNG_5120.Request    = "不相容選項";
+DMUUtilityWNG_5120.Diagnostic = "[3300] 未使用 -3dmap 選項, -vox 選項被忽略";
+DMUUtilityWNG_5120.Advice     = "使用 -3dmap 選項, 或壓制 -vox 選項";
+
+DMUUtilityERR_5130.Request    = "不相容選項";
+DMUUtilityERR_5130.Diagnostic = "[3300] -cgr 和 -force 必須與 -keepsag 選項共用";
+DMUUtilityERR_5130.Advice     = "新增遺失選項 : -cgr, -force";
+
+DMUUtilityERR_5140.Request    = "Incompatible options";
+DMUUtilityERR_5140.Diagnostic = "Output file name is incompatible with -cache option. Output file name will be ignored and output will be generated in cache";
+DMUUtilityERR_5140.Advice     = "Suppress output file names";
+
+DMUUtilityERR_5150.Request    = "Incompatible options";
+DMUUtilityERR_5150.Diagnostic = "-filter option will be ignored for input files different of CATPart, CATProduct, model.";
+DMUUtilityERR_5150.Advice     = "Apply -filter on specified type format";
+
+DMUUtilityERR_5160.Request    = "Incompatible options";
+DMUUtilityERR_5160.Diagnostic = "[3200] -xsize, -ysize, -camera, -viewmode and -bk are only available for jpg generation";
+DMUUtilityERR_5160.Advice     = "Add -jpg option or suppress the incompatible option";
+
+DMUUtilityERR_5170.Request    = "Incompatible options";
+DMUUtilityERR_5170.Diagnostic = "shading, shadingedges, wireframe or material must follow the -viewmode option";
+DMUUtilityERR_5170.Advice     = "Check the paramameter of -viewmode";
+
+DMUUtilityERR_5180.Request    = "Incompatible options";
+DMUUtilityERR_5180.Diagnostic = "only default camera (* front, * back, *left, * right, * top, * bottom, * iso) are available with cgr and model input files";
+DMUUtilityERR_5180.Advice     = "Check the paramameter of -camera";
+
+DMUUtilityERR_5190.Request    = "Incompatible options";
+DMUUtilityERR_5190.Diagnostic = "0 (default background color) or 1 (white background) must follow the -bk option";
+DMUUtilityERR_5190.Advice     = "Check the paramameter of -bk";
+
+
+DMUUtilityERR_5400.Request    = "Missing information";
+DMUUtilityERR_5400.Diagnostic = "Cannot extract sag from cgr \p";
+DMUUtilityERR_5400.Advice     = "Check validity of cgr";
+
+DMUUtilityERR_5410.Request    = "Missing information";
+DMUUtilityERR_5410.Diagnostic = "Cannot extract sag from cgr \p";
+DMUUtilityERR_5410.Advice     = "Check validity of cgr";
+
+
+DMUUtilityERR_5500.Request    = "Database";
+DMUUtilityERR_5500.Diagnostic = "[2000] the database cannot be connected";
+DMUUtilityERR_5500.Advice     = "Check the connexion with the database";
+
+
+DMUUtilityERR_5600.Request    = "Settings management";
+DMUUtilityERR_5600.Diagnostic = "[4000] 'Level of detail' setting is locked. CATDMUUtility will ignore -vox option ";
+DMUUtilityERR_5600.Advice     = "Unlock 'Level of detail' setting";
+
+DMUUtilityERR_5610.Request    = "Settings management";
+DMUUtilityERR_5610.Diagnostic = "'Sag' setting is locked. CATDMUUtility cannot change sag value ";
+DMUUtilityERR_5610.Advice     = "Unlock 'Sag' setting";
+
+DMUUtilityERR_5620.Request    = "Settings management";
+DMUUtilityERR_5620.Diagnostic = "[4000] 'Check cache size' setting is locked. Cache size is limited ";
+DMUUtilityERR_5620.Advice     = "Unlock 'Check cache size' setting";
+
+
+DMUUtilityERR_5700.Request    = "Cache";
+DMUUtilityERR_5700.Diagnostic = "Cache size exceeded. Least recently used cache elements have been deleted";
+DMUUtilityERR_5700.Advice     = "";
+
+
+
+

@@ -1,0 +1,67 @@
+//
+// ---------------------------
+// generic command
+// ---------------------------
+//
+CATMSHCmdQuadToTri.OperInitialState.Message="選擇要分割的網格零件";
+CATMSHCmdQuadToTri.UndoTitle="分割四邊至三邊";
+
+CATMSHCmdQuadToTri.OperMPSel.Message="選擇要分割的網格零件";
+CATMSHCmdQuadToTri.OperMPSel.UndoTitle="網格零件選擇";
+
+CATMSHCmdQuadToTri.OperOK.Message="選擇分割標準 / 按下確認鍵分割所有部份";
+CATMSHCmdQuadToTri.OperOK.UndoTitle="分割";
+
+CATMSHCmdQuadToTri.QuadToTriCANCEL.Message="取消分割";
+CATMSHCmdQuadToTri.QuadToTriCANCEL.UndoTitle="取消分割";
+
+CATMSHCmdQuadToTri.OperContState.Message="選擇分割的方式或按確認鍵執行動作";
+CATMSHCmdQuadToTri.OperContState.UndoTitle="分割的方式";
+//
+// ---------------------------
+// Split Quads to Trias command
+// ---------------------------
+//
+//
+
+//
+// ---------------------------
+// Split Quad Panel
+// ---------------------------
+//
+//
+CATMSHCmdQuadToTri.QuadToTriDlg.Title="分割四周";
+
+CATMSHCmdQuadToTri.QuadToTriDlg.SplitCriteria.Title="分割標準:";
+CATMSHCmdQuadToTri.QuadToTriDlg.SplitCriteria.LongHelp="分割四部份的標準:";
+
+CATMSHCmdQuadToTri.QuadToTriDlg.Method1.Title="最小直角";
+CATMSHCmdQuadToTri.QuadToTriDlg.Method1.LongHelp="選擇最小的對角線來分割成四部份";
+
+CATMSHCmdQuadToTri.QuadToTriDlg.Method2.Title="最佳品質";
+CATMSHCmdQuadToTri.QuadToTriDlg.Method2.LongHelp="選擇最佳品質來分割成四部份";
+
+// Selection has no quadrangle elements.
+//
+CATMSHCmdQuadToTri.Notify.Title="錯誤";
+CATMSHCmdQuadToTri.Notify.Text="網格未含四方形元素.";
+//
+// Warning Window
+//
+CATMSHCmdQuadToTri.WarningOK.Message="網格零件不是最新的 : 分割 是或否?";
+CATMSHCmdQuadToTri.WarningCANCEL.UndoTitle="取消分割";
+
+CATMSHCmdQuadToTri.ShowWindow.Message="網格零件不是最新的.";
+CATMSHCmdQuadToTri.ConfirmOperMPUpToDateDlg.Title="警告";
+CATMSHCmdQuadToTri.ConfirmOperMPUpToDateDlg.IconLbl.Title="圖示";
+CATMSHCmdQuadToTri.ConfirmOperMPUpToDateDlg.Text1Lbl.Title="網格零件不是最新的.";
+CATMSHCmdQuadToTri.ConfirmOperMPUpToDateDlg.Text2Lbl.Title="您確定要執行此動作嗎 ?";
+CATMSHCmdQuadToTri.ConfirmOperMPUpToDateDlg.SettingCheck.Title="將來不提示.";
+CATMSHCmdQuadToTri.ConfirmOperMPUpToDateDlg.SettingCheck.LongHelp="如關閉檢查警告";
+CATMSHCmdQuadToTri.ConfirmOperMPUpToDateDlg.BCancel="否";
+CATMSHCmdQuadToTri.ConfirmOperMPUpToDateDlg.BOK="是";
+
+InterNodesWarning.Title="警告";
+InterNodesWarning.Text="含橢圓元素的網格零件不可分割.";
+
+

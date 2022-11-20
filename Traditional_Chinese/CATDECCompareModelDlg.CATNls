@@ -1,0 +1,152 @@
+ ImportTitle  = "輸入模具零件";
+ CompareTitle  = "比較模具零件";
+ ImportPrefix = "輸入 ";
+ ComparePrefix  = "比較模具零件與 ";
+
+
+ MergeTitle      = "幾何比較";
+ OpenAdd      = "增加曲面";
+ OpenRemove      = "移除曲面";
+ SimilarFaces    = "   修剪面 ";
+ SpecificFacesRef = "   修剪面 ";
+ SpecificFacesNew = "   修剪面 ";
+
+ FrmRootMerge.FrmVisu.Title                     = "亮度顯示修剪面    ";
+ FrmRootMerge.FrmVisu.CheckVisuTab_0.Title         = "相同修剪面    ";
+ FrmRootMerge.FrmVisu.CheckVisuTab_0.LongHelp      = "Displays the faces that are identical in both CATPart in a given color according to tolerance.";
+ 
+ FrmRootMerge.FrmVisu.LblNbSimilar_.Title       = "  ------";
+ FrmRootMerge.FrmVisu.LblNbSpecific_.Title         = "  ------/------";
+ FrmRootMerge.FrmVisu.LblNbNewSpecific_.Title      = "  ------/------";
+
+ FrmRootMerge.FrmVisu.CheckVisuTab_1.Title         = "不同修剪面   ";
+ FrmRootMerge.FrmVisu.CheckVisuTab_1.LongHelp      = "Displays the faces that are different in both CATPart in a given color.";
+ 
+ FrmRootMerge.FrmVisu.CheckVisuTab_2.Title         = "植入修剪面   ";
+ FrmRootMerge.FrmVisu.CheckVisuTab_2.LongHelp      = "Displays the faces that are embedded in both CATPart in a given color.";
+
+ FrmRootMerge.FrmEps.Title                   = "比較 ";
+ FrmRootMerge.FrmEps.LblEps.Title               = "距離 : ";
+ FrmRootMerge.FrmEps.LblEps.LongHelp            = "Defines the tolerance for comparison.";
+
+ FrmRootMerge.FrmEps.QuickAlgo.Title            = "快速... ";
+ FrmRootMerge.FrmEps.QuickAlgo.LongHelp         = "Provides a quicker but less precise comparison : some identical faces will not be detected.";
+
+ FrmRootMerge.FrmTrans.Title                    = "萃取指定修剪面 ";
+ FrmRootMerge.FrmTrans.CheckImportDiff.Title       = "由新的 CATPart";
+ FrmRootMerge.FrmTrans.CheckImportDiff.LongHelp    = "Imports specific faces in a specfic geometrical set.";
+
+ FrmRootMerge.FrmTrans.CheckMoveDiff.Title         = "由目前的 CATPart";
+ FrmRootMerge.FrmTrans.CheckMoveDiff.LongHelp      = "Moves specific faces into a specfic geometrical set.";
+
+ FrmRootMerge.FrmMerge.LbLayout.Title         = "視窗佈圖 ";
+ FrmRootMerge.FrmMerge.LbLayout.LongHelp      = "Defines the layout of the comparison window.";
+
+ FrmRootMerge.FrmMerge.VerticalLayout.Title         = "垂直視窗";
+ FrmRootMerge.FrmMerge.VerticalLayout.LongHelp      = "Defines the orientation for window comparison as vertical. The reference CATPart will be in the right window.";
+
+ FrmRootMerge.FrmMerge.HorizontalLayout.Title         = "水平視窗";
+ FrmRootMerge.FrmMerge.HorizontalLayout.LongHelp      = "Defines the orientation for window comparison as horizontal. The reference CATPart will be in the lower window.";
+
+ FrmRootMerge.FrmMerge.PushMerge.Title         = " 溶入 ";
+ FrmRootMerge.FrmMerge.PushMerge.LongHelp      = "Launches a merge tool to record the differences found.";
+
+ FrmRootMerge.FrmMerge.Blanc1.Title         = "  ";
+ FrmRootMerge.FrmMerge.Blanc2.Title         = "  ";
+ FrmRootMerge.FrmMerge.Blanc3.Title         = "  ";
+
+ DupliqueTitle                              = "警告: 複製或植入修剪面";
+ //FrmRootDuplique.MessDuplique.Title         = "在 CATPart 中未發現可比較的複製或植入修剪面. 將忽略和原始一樣的複製或植入修剪面.";
+ FrmRootDuplique.MessDuplique.Title     = "已在 CATPart 中發現可比較的複製或植入修剪面.";
+ FrmRootDuplique.MessCause.Title        = "將忽略和原始一樣的複製或植入修剪面.";
+ FrmRootDuplique.MessToDo.Title         = "使用曲面連接檢查器來清理 CATPart.";
+
+//======================= Boite de merge =============================//
+
+MergeTitle = "溶合 CATPart";
+NomTrf_0 = "Identical_1";
+NomTrf_1 = "Different_Reference_1";
+NomTrf_2 = "Different_Current_1";
+NomTrf_3 = "Embedded_Reference_1";
+NomTrf_4 = "Embedded_Current_1";
+NomTrf_5 = "Identical_1";
+NomTrf_6 = "Different_Reference_1";
+NomTrf_7 = "Different_Current_1";
+NomTrf_8 = "Embedded_Reference_1";
+NomTrf_9 = "Embedded_Current_1";
+
+
+FrmRootMerge.TabContainer.Tab_1.Title = "幾何組";
+
+FrmRootMerge.TabContainer.Tab_1.Copy_1_1.Title = "複製   ";
+
+FrmRootMerge.TabContainer.Tab_1.Into_1_1.Title = "至 :  ";
+
+FrmRootMerge.TabContainer.Tab_1.Check_1_1_1.Title = "相同修剪面";
+FrmRootMerge.TabContainer.Tab_1.Check_1_1_1.LongHelp = "Copies identical faces into a given Geometrical Set.";
+
+FrmRootMerge.TabContainer.Tab_1.Check_1_2_2.Title = "不同修剪面 (由參考)";
+FrmRootMerge.TabContainer.Tab_1.Check_1_2_2.LongHelp = "Copies different faces from reference CATPart into a given Geometrical Set.";
+
+FrmRootMerge.TabContainer.Tab_1.Check_1_3_3.Title = "不同修剪面 (由目前)";
+FrmRootMerge.TabContainer.Tab_1.Check_1_3_3.LongHelp = "Copies different faces from current CATPart into a given Geometrical Set.";
+
+FrmRootMerge.TabContainer.Tab_1.Check_1_4_4.Title = "植入修剪面 (由參考)";
+FrmRootMerge.TabContainer.Tab_1.Check_1_4_4.LongHelp = "Copies embedded faces from reference CATPart into a given Geometrical Set.";
+
+FrmRootMerge.TabContainer.Tab_1.Check_1_5_5.Title = "植入修剪面 (由目前)";
+FrmRootMerge.TabContainer.Tab_1.Check_1_5_5.LongHelp = "Copies embedded faces from current CATPart into a given Geometrical Set.";
+
+//
+FrmRootMerge.TabContainer.Tab_2.Title = "選擇組";
+
+FrmRootMerge.TabContainer.Tab_2.Copy_2_1.Title = "放   ";
+
+FrmRootMerge.TabContainer.Tab_2.Into_2_1.Title = "至 :  ";
+
+FrmRootMerge.TabContainer.Tab_2.Check_2_1_1.Title = "相同修剪面";
+FrmRootMerge.TabContainer.Tab_2.Check_2_1_1.LongHelp = "Puts identical faces into a given Selection Set.";
+
+FrmRootMerge.TabContainer.Tab_2.Check_2_2_2.Title = "不同修剪面 (由參考)";
+FrmRootMerge.TabContainer.Tab_2.Check_2_2_2.LongHelp = "Puts different faces from reference CATPart into a given Selection Set.";
+
+FrmRootMerge.TabContainer.Tab_2.Check_2_3_3.Title = "不同修剪面 (由目前)";
+FrmRootMerge.TabContainer.Tab_2.Check_2_3_3.LongHelp = "Puts different faces from current CATPart into a given Selection Set.";
+
+FrmRootMerge.TabContainer.Tab_2.Check_2_4_4.Title = "植入修剪面 (由參考)";
+FrmRootMerge.TabContainer.Tab_2.Check_2_4_4.LongHelp = "Puts embedded faces from reference CATPart into a given Selection Set.";
+
+FrmRootMerge.TabContainer.Tab_2.Check_2_5_5.Title = "植入修剪面 (由目前)";
+FrmRootMerge.TabContainer.Tab_2.Check_2_5_5.LongHelp = "Puts embedded faces from current CATPart into a given Selection Set.";
+
+//
+FrmRootMerge.TabContainer.Tab_3.Title = "Color";
+
+FrmRootMerge.TabContainer.Tab_3.Copy_3_1.Title = "更改   ";
+
+FrmRootMerge.TabContainer.Tab_3.Into_3_1.Title = "至 :  ";
+
+FrmRootMerge.TabContainer.Tab_3.Check_3_1_1.Title = "相同修剪面";
+FrmRootMerge.TabContainer.Tab_3.Check_3_1_1.LongHelp = "Changes the color of identical faces to a given color.";
+
+FrmRootMerge.TabContainer.Tab_3.Check_3_2_2.Title = "不同修剪面 (由參考)";
+FrmRootMerge.TabContainer.Tab_3.Check_3_2_2.LongHelp = "Changes the color of different faces from reference CATPart to a given color.";
+
+FrmRootMerge.TabContainer.Tab_3.Check_3_3_3.Title = "不同修剪面 (由目前)";
+FrmRootMerge.TabContainer.Tab_3.Check_3_3_3.LongHelp = "Changes the color of different faces from current CATPart to a given color.";
+
+FrmRootMerge.TabContainer.Tab_3.Check_3_4_4.Title = "植入修剪面 (由參考)";
+FrmRootMerge.TabContainer.Tab_3.Check_3_4_4.LongHelp = "Changes the color of embedded faces from reference CATPart to a given color.";
+
+FrmRootMerge.TabContainer.Tab_3.Check_3_5_5.Title = "植入修剪面 (由目前)";
+FrmRootMerge.TabContainer.Tab_3.Check_3_5_5.LongHelp = "Changes the color of embedded faces from current CATPart to a given color.";
+
+//
+FrmRootMerge.FrmRooty.Model.Title = "目的地 CATPart : ";
+FrmRootMerge.FrmRooty.Model.LongHelp = "Stores the data in a new CATPart or in the current CATPart.";
+
+FrmRootMerge.FrmRooty.pRadioNew.Title = "新的";
+FrmRootMerge.FrmRooty.pRadioNew.LongHelp = "Creates the merging CATPart in a new CATPart.";
+
+FrmRootMerge.FrmRooty.pRadioCur.Title = "目前的";
+FrmRootMerge.FrmRooty.pRadioCur.LongHelp = "Creates the merging CATPart in the current CATPart.";

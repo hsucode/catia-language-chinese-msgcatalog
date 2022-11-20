@@ -1,0 +1,1102 @@
+//**********************************
+//* Assembly Workshop Resource File*
+//**********************************
+// ---------------------
+// Notes for developpers
+// ---------------------
+// 1. This file is used by the state commands
+//    and the following command header classes :
+//    PRDCmdWorkshop, CATAsmCmdPartHeader & CATAsmCmdProductHeader
+// 2. At developper's level, it is requested to deliver 
+//    both English resource file AND French resource file.
+//    (=> don't forget to check the headers consistency !)
+//-------------------------
+// English Version
+//-------------------------
+// tbu, 22 juin 1998, pii
+// nll, feb 1998
+
+// ==============================================================================================
+// Error Message
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort0="沒有錯誤.";
+
+PRDCmdWorkshop.ERRLong0="沒有錯誤.";
+
+PRDCmdWorkshop.ERRSev0="0";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort1="無效的物件.";
+
+PRDCmdWorkshop.ERRLong1="您無法應用此命令 %% 在所選物件.";
+
+PRDCmdWorkshop.ERRSev1="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort2="此檔案的副檔名無效.";
+
+PRDCmdWorkshop.ERRLong2="此檔案的副檔名 \"%%\" 無效. \n 有效的副檔名為: %%.";
+
+PRDCmdWorkshop.ERRSev2="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort3="此文件無效.";
+
+PRDCmdWorkshop.ERRLong3="此文件名稱: \n \"%%\" \n 不存在. \n 請選擇已存文件.";
+
+PRDCmdWorkshop.ERRSev3="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort4="偵測到內部錯誤.";
+
+PRDCmdWorkshop.ERRLong4="內部計算錯誤. 請嚐試再執行此命令.";
+
+PRDCmdWorkshop.ERRSev4="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort5="無法顯示此文件.";
+
+PRDCmdWorkshop.ERRLong5="此文件名稱: \n \"%%\" \n 無法在3D視圖顯示. \n 請選擇其它文件.";
+
+PRDCmdWorkshop.ERRSev5="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort6="此文件無法更新.";
+
+PRDCmdWorkshop.ERRLong6="您不允許覆蓋此文件";
+
+PRDCmdWorkshop.ERRSev6="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort7=" \" 新分件 \" 命令對此分件無效.";
+
+PRDCmdWorkshop.ERRLong7="您無法應用此命令 \" 新分件 \" 至所選分件.";
+
+PRDCmdWorkshop.ERRSev7="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort8=" \" 新零件 \" 命令對此零件無效.";
+
+PRDCmdWorkshop.ERRLong8="您無法應用此命令 \" 新零件 \" 至所選分件.";
+PRDCmdWorkshop.ERRSev8="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort9=" \" 表現方式 -> 相關... \" 命令對此產品無效.";
+
+PRDCmdWorkshop.ERRLong9="您無法應用此命令 \" 表現方式 -> 相關... \" 至所選分件.";
+
+PRDCmdWorkshop.ERRSev9="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort10=" \" 已存分件... \" 命令對此產品無效.";
+
+PRDCmdWorkshop.ERRLong10="您無法應用此命令 \" 已存分件... \" 至所選分件.";
+
+PRDCmdWorkshop.ERRSev10="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort11=" \" 表現方式 -> 啟動... \" 命令對此產品無效.";
+
+PRDCmdWorkshop.ERRLong11="您無法應用此命令 \" 表現方式 -> 啟動... \" 至所選分件.";
+
+PRDCmdWorkshop.ERRSev11="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort12=" \" 表現方式 -> 不啟動... \" 命令對此產品無效.";
+
+PRDCmdWorkshop.ERRLong12="您無法應用此命令 \" 表現方式 -> 不啟動... \" 至所選分件.";
+
+PRDCmdWorkshop.ERRSev12="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort13=" \" 載入 \" 命令對此產品無效.";
+
+PRDCmdWorkshop.ERRLong13="您無法應用此命令 \" 載入 \" 至所選分件.";
+
+PRDCmdWorkshop.ERRSev13="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort14=" \" 卸載 \" 命令對此產品無效.";
+
+PRDCmdWorkshop.ERRLong14="您無法應用此命令 \" 卸載 \" 至所選分件.";
+
+PRDCmdWorkshop.ERRSev14="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort15=" \" 表現方式 -> 移除... \" 命令對此產品無效.";
+
+PRDCmdWorkshop.ERRLong15="您無法應用此命令 \" 表現方式 -> 移除... \" 至所選分件.";
+
+PRDCmdWorkshop.ERRSev15="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort16=" \" 表現方式 -> 取代... \" 命令對此產品無效.";
+
+PRDCmdWorkshop.ERRLong16="您無法應用此命令 \" 表現方式 -> 取代... \" 至所選分件.";
+
+PRDCmdWorkshop.ERRSev16="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort17="零件號碼 \"%%\" 已存在.";
+
+PRDCmdWorkshop.ERRLong17="組立中零件號碼必須是唯一的. 零件號碼 \"%%\" 已存在.";
+
+PRDCmdWorkshop.ERRSev17="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort18="分件 \"%%\" 無法卸截.";
+
+PRDCmdWorkshop.ERRLong18="文件 \n\"%%\"\n 中使用的分件己被工作檯使用.";
+
+PRDCmdWorkshop.ERRSev18="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort19="分件不允許被貼上.";
+
+PRDCmdWorkshop.ERRLong19="分件 \"%%\" 與形狀表現方式相關.\n貼上前須先移除形狀表現方式.";
+
+PRDCmdWorkshop.ERRSev19="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort20="分件不允許被貼上.";
+
+PRDCmdWorkshop.ERRLong20="分件 \"%%\" 只允許讀取.";
+
+PRDCmdWorkshop.ERRSev20="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort21="分件不允許被貼上.";
+
+PRDCmdWorkshop.ERRLong21="檔案所含分件 \"%%\" 尚未載入. \n 貼上前須先載入.";
+
+PRDCmdWorkshop.ERRSev21="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort22="分件不允許被貼上.";
+
+PRDCmdWorkshop.ERRLong22="分件 \"%%\" 不允許被貼上本身. \n 請貼在其他分件.";
+
+PRDCmdWorkshop.ERRSev22="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort23="分件不允許被貼上.";
+
+PRDCmdWorkshop.ERRLong23="檔案所含分件 \"%%\" 尚未儲存. \n 貼上前請先儲存檔案 \"%%\"";
+
+PRDCmdWorkshop.ERRSev23="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort24="V4 Session 部份輸入";
+
+PRDCmdWorkshop.ERRLong24="%% 模型文件 out of %% 無法輸入 :\n- 原始形是資料庫. \n- 此文件參考一或多個文件的複製. \n- 文件和程序文件不在同一個目錄 (只適用 Windows NT).";
+
+PRDCmdWorkshop.ERRSev24="1";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort25="您無法貼上V4的表現方式至此產品上.";
+
+PRDCmdWorkshop.ERRLong25="此產品 \"%%\" 是次組合. \n 貼上V4分件前請先移除子分件.";
+
+PRDCmdWorkshop.ERRSev25="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort26="分件不允許被貼上.";
+
+PRDCmdWorkshop.ERRLong26="分件 \"%%\" 是一個CATPart 文件. \n 分件無法加在CATPart 文件上.";
+
+PRDCmdWorkshop.ERRSev26="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort27="分件不允許編輯.";
+
+PRDCmdWorkshop.ERRLong27="分件 \"%%\" 是複製分件. \n 只有原始分件可被編輯.";
+
+PRDCmdWorkshop.ERRSev27="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort28="前後相關的連結會被打斷.";
+
+PRDCmdWorkshop.ERRLong28="您正在刪除相關文件, 同步化外部參考前,請先更改新件的前後相關.";
+
+PRDCmdWorkshop.ERRSev28="1";
+
+// ==============================================================================================
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort29="貼上目標無效.";
+
+PRDCmdWorkshop.ERRLong29="所複製的物件是本身的,您無法將此格式貼在其他文件上.  請使用特別貼上來打斷連結.";
+
+PRDCmdWorkshop.ERRSev29="1";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort30="分件無法被編輯.";
+
+PRDCmdWorkshop.ERRLong30="分件參考 \"%%\" 是一個新版的相關分件. \n 編輯前您需先獨立它或定義新的內含";
+
+PRDCmdWorkshop.ERRSev30="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort31="貼上資料前發生錯誤.";
+
+PRDCmdWorkshop.ERRLong31="檔案 \"%%\" 無法複製.";
+
+PRDCmdWorkshop.ERRSev31="2";
+
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort32="分件已獨立.";
+
+PRDCmdWorkshop.ERRLong32="分件參考 \"%%\" 是一個新版的前後相關的分件.";
+
+PRDCmdWorkshop.ERRSev32="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort33="無法載入.";
+
+PRDCmdWorkshop.ERRLong33="所選分件已載入";
+
+PRDCmdWorkshop.ERRSev33="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort34="無法載入.";
+
+PRDCmdWorkshop.ERRLong34="所選分件已卸載.";
+
+PRDCmdWorkshop.ERRSev34="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort35=" \" 更換分件... \" 命令對此產品無效.";
+
+PRDCmdWorkshop.ERRLong35="您無法應用此命令 \" 更換分件... \" 至所選分件.";
+
+PRDCmdWorkshop.ERRSev35="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort36="無法插入檔案 \"%%\".";
+
+PRDCmdWorkshop.ERRLong36="未知形式 \"%%\".";
+
+PRDCmdWorkshop.ERRSev36="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort37="此產品 \"啟動 / 不啟動 分件...\" 命令無效.";
+
+PRDCmdWorkshop.ERRLong37="您無法應用此命令 \"啟動 / 不啟動 分件...\" 至所選分件.";
+
+PRDCmdWorkshop.ERRSev37="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort38="警告 : 檔案 \"%%\" 已存在.  它無法以 \"%%\" 名稱儲存 \"%%\".";
+
+PRDCmdWorkshop.ERRLong38="預設名稱 \"%%\" 將會使用.";
+
+
+PRDCmdWorkshop.ERRSev38="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ERRShort39="此物件無效.";
+
+PRDCmdWorkshop.ERRLong39="您無法應用此命令 %% 至所選的物件.  使用尋找命令來替代.";
+
+PRDCmdWorkshop.ERRSev39="2";
+
+// ==============================================================================================
+// EDIT Menu
+// ==============================================================================================
+
+PRDCmdWorkshop.Delete.Title="刪除...";
+
+PRDCmdWorkshop.Delete.Help="刪除所選擇目";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.UpdateHeader.Title="更新";
+
+PRDCmdWorkshop.UpdateHeader.Help="更新拘束";
+
+PRDCmdWorkshop.UpdateHeader.ShortHelp="更新";
+
+PRDCmdWorkshop.UpdateHeader.LongHelp="更新 \n 組立修改後更新拘束 \n (新拘束, 修改拘束, 移動分件).";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.SelectPartConstraints.Title="分件拘束";
+
+PRDCmdWorkshop.SelectPartConstraints.Help="選擇作動分件的拘束連結至子分件";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.AsmAddRep.Title="相關...";
+
+PRDCmdWorkshop.AsmAddRep.Help="相關表現方式至所選分件";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.PrdMultiRep.Title="表現方式管理...";
+
+PRDCmdWorkshop.PrdMultiRep.Help="所選分件的表現方式管理";
+
+PRDCmdWorkshop.PrdMultiRep.ShortHelp="表現方式管理";
+
+PRDCmdWorkshop.PrdMultiRep.LongHelp="表現方式管理
+管理所選分件的表現方式.
+允許您關聯, 移除, 啟動, 不啟動,
+或更名表現方式或設定定預設值.
+表現方式可以是 cgr, wrl 或 V4 model 格式.";
+
+// ==============================================================================================
+PRDCmdWorkshop.ERRShort40="此產品是一個 VPM 產品且對 \" 新零件 \" 命令無效.";
+
+PRDCmdWorkshop.ERRLong40="您無法執行 \" 新零件 \" 命令至 VPM 分件.";
+
+PRDCmdWorkshop.ERRSev40="2";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.PrdReplaceComponent.Title="更換分件...";
+
+PRDCmdWorkshop.PrdReplaceComponent.Help="更換所選的分件的顯示模式";
+
+PRDCmdWorkshop.PrdReplaceComponent.ShortHelp="更換分件";
+
+PRDCmdWorkshop.PrdReplaceComponent.LongHelp="更換分件
+已現存的分件更換所選的分件.";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.PrdReplaceComponentInSession.Title="在工作中更換分件 ...";
+
+PRDCmdWorkshop.PrdReplaceComponentInSession.Help="在工作中更換所選分件";
+
+PRDCmdWorkshop.PrdReplaceComponentInSession.ShortHelp="在工作中更換分件";
+
+PRDCmdWorkshop.PrdReplaceComponentInSession.LongHelp="在工作中更換分件
+在工作中以另一已存分件更換所選分件.";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.AsmActRep.Title="表現方式";
+
+PRDCmdWorkshop.AsmActRep.Help="啟動表現方式";
+
+PRDCmdWorkshop.AsmActRep.ShortHelp="表現方式";
+
+PRDCmdWorkshop.AsmActRep.LongHelp="啟動表現方式";
+
+// ================================================================================================
+
+PRDCmdWorkshop.AsmActRepInside.Title="起動最後結點";
+
+PRDCmdWorkshop.AsmActRepInside.Help="啟動所選分件的預設表現方式和其關的所有子分件";
+
+PRDCmdWorkshop.AsmActRepInside.ShortHelp="起動最後結點";
+
+PRDCmdWorkshop.AsmActRepInside.LongHelp="啟動所選分件的預設表現方式和其關的所有子分件";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.AsmDesactRep.Title="不起動結點";
+
+PRDCmdWorkshop.AsmDesactRep.Help="不啟動所選分件的表現方式";
+
+PRDCmdWorkshop.AsmDesactRep.ShortHelp="不起動結點";
+
+PRDCmdWorkshop.AsmDesactRep.LongHelp="不啟動所選分件的表現方式";
+
+// =======================================================================================================
+
+PRDCmdWorkshop.AsmDesactRepInside.Title="不起動最後結點";
+
+PRDCmdWorkshop.AsmDesactRepInside.Help="不啟動所選分件的預設表現方式和其關的所有子分件";
+
+PRDCmdWorkshop.AsmDesactRepInside.ShortHelp="不起動最後結點";
+
+PRDCmdWorkshop.AsmDesactRepInside.LongHelp="不啟動所選分件的預設表現方式和其關的所有子分件";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.AsmRemRep.Title="移除";
+
+PRDCmdWorkshop.AsmRemRep.Help="移除分件的表現方式";
+
+
+// ==============================================================================================
+
+PRDCmdWorkshop.AsmRepRep.Title="更換...";
+
+PRDCmdWorkshop.AsmRepRep.Help="更換所選分件";
+
+
+// ==============================================================================================
+
+PRDCmdWorkshop.AsmLoad.Title="載入";
+
+PRDCmdWorkshop.AsmLoad.Help="載入所選分件";
+
+PRDCmdWorkshop.AsmLoad.ShortHelp="載入";
+
+PRDCmdWorkshop.AsmLoad.LongHelp="載入所選分件";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.AsmUnload.Title="卸除";
+
+PRDCmdWorkshop.AsmUnload.Help="卸除所選分件";
+
+PRDCmdWorkshop.AsmUnload.ShortHelp="卸除";
+
+PRDCmdWorkshop.AsmUnload.LongHelp="卸除所選分件";
+// ==============================================================================================
+
+PRDCmdWorkshop.DesignMode.Title="設計模式";
+
+PRDCmdWorkshop.DesignMode.Help="變更所選分件為設計模式";
+
+PRDCmdWorkshop.DesignMode.ShortHelp="設計模式";
+
+PRDCmdWorkshop.DesignMode.LongHelp="變更所選分件為設計模式";
+// ==============================================================================================
+
+PRDCmdWorkshop.VisualizationMode.Title="顯示模式";
+
+PRDCmdWorkshop.VisualizationMode.Help="變更所選分件為顯示模式";
+
+PRDCmdWorkshop.VisualizationMode.ShortHelp="顯示模式";
+
+PRDCmdWorkshop.VisualizationMode.LongHelp="變更所選分件為顯示模式";
+
+// ==============================================================================================
+// NLS Undo
+PRDCmdWorkshop.CATPrdStateCmd.AssemblyAgent.UndoTitle="所選物件";
+PRDCmdWorkshop.CATAsmCmdImpComp.ACQ_FILEPOPUP2.UndoTitle="所選檔案";
+PRDCmdWorkshop.CATPrdCmdReplaceCompInSession.UndoTitle="工作中分件置換";
+PRDCmdWorkshop.CATPrdCmdReplaceComp.UndoTitle="分件置換";
+PRDCmdWorkshop.CATPrdCmdIsolateCtx.UndoTitle="零件獨立";
+PRDCmdWorkshop.CATPrdCmdDefineCtx.UndoTitle="Contextual 鏈結定義";
+PRDCmdWorkshop.CATAsmCmdLoad.UndoTitle="載入中";
+PRDCmdWorkshop.CATAsmCmdUnload.UndoTitle="卸載中";
+PRDCmdWorkshop.CATPrdCmdReorder.UndoTitle="重排歷程樹";
+PRDCmdWorkshop.CATPrdStateRepCmd.UndoTitle="表現方式管理";
+PRDCmdWorkshop.CATPrdStateRepCmd.ProductAgent.UndoTitle="零件選擇";
+PRDCmdWorkshop.CATPrdCmdLoadGeometry.UndoTitle="設計模式";
+PRDCmdWorkshop.CATPrdCmdLoadVisu.UndoTitle="顯示模式";
+PRDCmdWorkshop.CATAsmCmdActRep.UndoTitle="節點啟動";
+PRDCmdWorkshop.CATAsmCmdDesactRep.UndoTitle="節點關閉";
+PRDCmdWorkshop.CATAsmCmdActRepInside.UndoTitle="結束點啟動";
+PRDCmdWorkshop.CATAsmCmdDesactRepInside.UndoTitle="結束點關閉";
+PRDCmdWorkshop.CATPrdCmdExploseBlock.UndoTitle="彈性或剛性次組合";
+PRDCmdWorkshop.CATPrdCmdExploseBlock.AssemblyAgent.UndoTitle="選擇物件";
+PRDCmdWorkshop.CATPrdCmdInactivation.UndoTitle="分件啟動或關閉";
+PRDCmdWorkshop.CATPrdCmdPropagPosition.UndoTitle="定位至參考延伸";
+PRDCmdWorkshop.CATPrdCmdPropagPosition.AssemblyAgent.UndoTitle="物件選擇";
+PRDCmdWorkshop.CATPrdCmdGenerateNumbering.UndoTitle="產生數目";
+PRDCmdWorkshop.CATPrdCmdGenerateNumbering.ProductAgent.UndoTitle = "零件選擇";
+PRDCmdWorkshop.CATPrdCmdPreInit.UndoTitle="選擇性載入";
+
+// ==============================================================================================
+// INSERT Menu
+// ==============================================================================================
+
+PRDCmdWorkshop.AsmAddPart.Title="增加元件";
+
+PRDCmdWorkshop.AsmAddPart.Help="增加新元件";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.AsmAddProduct.Title="新分件";
+
+PRDCmdWorkshop.AsmAddProduct.Help="插入新分件";
+
+PRDCmdWorkshop.AsmAddProduct.ShortHelp="分件";
+
+PRDCmdWorkshop.AsmAddProduct.LongHelp="新分件 \n 插入新分件.";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.AsmAddNewProduct.Title="新產品";
+
+PRDCmdWorkshop.AsmAddNewProduct.Help="插入新產品";
+
+PRDCmdWorkshop.AsmAddNewProduct.ShortHelp="產品";
+
+PRDCmdWorkshop.AsmAddNewProduct.LongHelp="新產品 \n 插入新產品.";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.AsmImportComponent.Title="插入分件";
+
+PRDCmdWorkshop.AsmImportComponent.Help="插入已存分件";
+
+PRDCmdWorkshop.AsmImportComponent.ShortHelp="插入已存分件";
+
+PRDCmdWorkshop.AsmImportComponent.LongHelp="插入分件 \n 插入已存分件.";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.AsmAddNewPart.Title="新零件";
+
+PRDCmdWorkshop.AsmAddNewPart.Help="插入新零件";
+
+PRDCmdWorkshop.AsmAddNewPart.ShortHelp="零件";
+
+PRDCmdWorkshop.AsmAddNewPart.LongHelp="新零件 \n 插入新零件.";
+
+//=====================================================
+PRDCmdWorkshop.PrdIsolateContext.Title="獨立零件";
+PRDCmdWorkshop.PrdIsolateContext.Help="打斷外部連結";
+PRDCmdWorkshop.PrdIsolateContext.ShortHelp="獨立零件";
+PRDCmdWorkshop.PrdIsolateContext.LongHelp="獨立零件. \n 打斷外部連結.";
+//=====================================================
+PRDCmdWorkshop.PrdDefineContext.Title="定義背景鏈結";
+PRDCmdWorkshop.PrdDefineContext.Help="更改至可編輯";
+PRDCmdWorkshop.PrdDefineContext.ShortHelp="定義背景鏈結";
+PRDCmdWorkshop.PrdDefineContext.LongHelp="定義背景鏈結. \n 定義背景鏈結和可編輯背景的零件.";
+//====================================================
+// Product selective load command :
+// 1. command header title + help
+PRDCmdWorkshop.ProductInit.Title="選擇性載入";
+PRDCmdWorkshop.ProductInit.Help="管理要載入的次產品";
+PRDCmdWorkshop.ProductInit.ShortHelp="選擇性載入";
+PRDCmdWorkshop.ProductInit.LongHelp="選擇性載入. \n 管理要載入的次產品";
+// 2. state command messages
+PRDCmdWorkshop.CATPrdCmdPreInit.PreInitCheckUIActif.Message="選擇有效嗎 ?";
+PRDCmdWorkshop.CATPrdCmdPreInit.PreInitMainState.Message="選擇產品和相關動作";
+//====================================================
+PRDCmdWorkshop.PrdExploseBlock.Title="軟或硬 組立";
+PRDCmdWorkshop.PrdExploseBlock.Help="定位組立元件";
+PRDCmdWorkshop.PrdExploseBlock.ShortHelp="軟或硬 組立";
+PRDCmdWorkshop.PrdExploseBlock.LongHelp="軟或硬 組立. \n 定位或不定位組立元件.";
+//====================================================
+PRDCmdWorkshop.PrdInactivation.Title="啟動或不啟動 分件";
+PRDCmdWorkshop.PrdInactivation.Help="啟動或不啟動 分件";
+PRDCmdWorkshop.PrdInactivation.ShortHelp="啟動或不啟動 分件";
+PRDCmdWorkshop.PrdInactivation.LongHelp="啟動或不啟動 分件";
+//====================================================
+PRDCmdWorkshop.PrdPropagPosition.Title="延伸位置至參考";
+PRDCmdWorkshop.PrdPropagPosition.Help="提供陣列位置至組立參考";
+PRDCmdWorkshop.PrdPropagPosition.ShortHelp="延伸位置至參考";
+PRDCmdWorkshop.PrdPropagPosition.LongHelp="延伸位置至參考.\n 提供陣列位置至組立參考.";
+//====================================================
+PRDCmdWorkshop.PrdEncapsulate.Title="組裝封包.";
+PRDCmdWorkshop.PrdEncapsulate.Help="建立自動發行和資料.";
+PRDCmdWorkshop.PrdEncapsulate.ShortHelp="建立自動發行和資料.";
+PRDCmdWorkshop.PrdEncapsulate.LongHelp="為產品建立自動發行和資料.";
+
+//====================================================
+PRDCmdWorkshop.PrdExternalize.Title="外部產生";
+PRDCmdWorkshop.PrdExternalize.Help="外部化零件參考";
+PRDCmdWorkshop.PrdExternalize.ShortHelp="外部化";
+PRDCmdWorkshop.PrdExternalize.LongHelp="外部化零件 \n 外部化所選零件參考";
+
+//====================================================
+PRDCmdWorkshop.PrdExternalizeAll.Title="外部外所有次產品";
+PRDCmdWorkshop.PrdExternalizeAll.Help="外部外所有次產品的參考";
+PRDCmdWorkshop.PrdExternalizeAll.ShortHelp="外部外全部";
+PRDCmdWorkshop.PrdExternalizeAll.LongHelp="外部外所有次產品 \n 外部外所選產品的所有次產品參考";
+
+// ==============================================================================================
+// NLS Undo
+
+PRDCmdWorkshop.CATAsmCmdImpComp.UndoTitle="退出分件插入";
+PRDCmdWorkshop.CATAsmCmdAddProduct.UndoTitle="分件新增";
+PRDCmdWorkshop.CATAsmCmdAddNewProduct.UndoTitle="產品新增";
+PRDCmdWorkshop.CATAsmCmdAddNewPart.UndoTitle="零件新增";
+// ==============================================================================================
+// TOOLS Menu
+// ==============================================================================================
+
+PRDCmdWorkshop.CalculatorHeader.Title="方程式 ...";
+
+PRDCmdWorkshop.CalculatorHeader.Help="建立拘束方程式";
+
+PRDCmdWorkshop.CalculatorHeader.ShortHelp="方程式";
+
+
+PRDCmdWorkshop.CalculatorHeader.LongHelp="方程式 \n 建立拘束方程式.";
+
+
+// ==============================================================================================
+// ANALYZE Menu
+// ==============================================================================================
+PRDCmdWorkshop.BillOfMaterial.Title="材料表...";
+PRDCmdWorkshop.BillOfMaterial.Help="在作動產品上建立材料表";
+PRDCmdWorkshop.BillOfMaterial.ShortHelp="材料表";
+
+PRDCmdWorkshop.CstAnalysis.Title="拘束...";
+
+PRDCmdWorkshop.CstAnalysis.Help="顯示作動分件的拘束結論";
+
+
+// ==============================================================================================
+
+PRDCmdWorkshop.ClashCommand.Title="干涉計算...";
+
+PRDCmdWorkshop.ClashCommand.Help="分件間的干涉計算";
+
+
+// ==============================================================================================
+
+PRDCmdWorkshop.SectionCommand.Title="剖面計算...";
+
+PRDCmdWorkshop.SectionCommand.Help="分件間的剖面計算";
+
+
+// ==============================================================================================
+
+PRDCmdWorkshop.FindPos.Title="幾何解碼...";
+
+PRDCmdWorkshop.FindPos.Help="組立中幾何解碼";
+
+
+// ==============================================================================================
+// Contextual menu
+// ==============================================================================================
+
+// no new command for now
+
+// ==============================================================================================
+// State Command messages
+// ==============================================================================================
+
+PRDCmdWorkshop.TstSelValidity.Message = "選擇有效嗎?";
+PRDCmdWorkshop.CATPrdStateCmd.TstSelValidity.Message = "選擇有效否 ?";
+PRDCmdWorkshop.CATPrdStateRepCmd.TstSelValidity.Message = "選擇有效否 ?";
+PRDCmdWorkshop.CATPrdCmdExploseBlock.TstSelValidity.Message = "選擇有效否 ?";
+PRDCmdWorkshop.CATPrdCmdPropagPosition.TstSelValidity.Message = "選擇有效否 ?";
+
+PRDCmdWorkshop.SelPartAddProduct.Message="選擇分件來插入新分件";
+PRDCmdWorkshop.CATPrdStateCmd.SelPartAddProduct.Message="選擇分件來插入新分件";
+
+PRDCmdWorkshop.SelPartImpComp.Message = "選擇分件來插入已存分件";
+PRDCmdWorkshop.CATPrdStateCmd.SelPartImpComp.Message = "選擇分件來插入已存分件";
+PRDCmdWorkshop.CATPrdCmdReplaceComp.SelPartImpComp.Message = "選擇分件來插入已存分件";
+
+PRDCmdWorkshop.CATAsmCmdImpComp.SetCursor.Message = "設定游標";
+PRDCmdWorkshop.CATAsmCmdImpComp.NameConflict.Message = "名稱衝突";
+PRDCmdWorkshop.CATAsmCmdImpComp.NamePanel.Message = "名稱對話框";
+PRDCmdWorkshop.CATAsmCmdImpComp.InputPanel.Message = "輸入對話框";
+PRDCmdWorkshop.CATAsmCmdImpComp.TestNewNames.Message = "測試新名稱";
+PRDCmdWorkshop.CATAsmCmdImpComp.ReporterPanel.Message = "報告者對話框";
+PRDCmdWorkshop.CATAsmCmdImpComp.FinalErrorReportState.Message = "錯誤報告";
+
+PRDCmdWorkshop.CATAsmCmdUnload.Encore.Message = "重覆";
+
+PRDCmdWorkshop.CATPrdCmdReplaceComp.SetCursor.Message = "設定游標";
+PRDCmdWorkshop.CATPrdCmdReplaceComp.NameConflict.Message = "名稱衝突";
+PRDCmdWorkshop.CATPrdCmdReplaceComp.NamePanel.Message = "名稱對話框";
+PRDCmdWorkshop.CATPrdCmdReplaceComp.InputPanel.Message = "輸入對話框";
+PRDCmdWorkshop.CATPrdCmdReplaceComp.PresqueFini.Message = "幾乎完成";
+PRDCmdWorkshop.CATPrdCmdReplaceComp.compoReplace.Message = "分件更換";
+
+PRDCmdWorkshop.CATPrdCmdIsolateCtx.SelPartIsolate.Message = "選擇要獨立的分件";
+PRDCmdWorkshop.CATPrdCmdDefineCtx.SelectState.Message = "選擇";
+PRDCmdWorkshop.CATAsmCmdActRepInside.ReportingError.Message = "錯誤報告";
+PRDCmdWorkshop.CATAsmCmdActRepInside.PreviousReportingError.Message = "前一錯誤報告";
+
+PRDCmdWorkshop.CATPrdCmdReplaceComp.SelPartRepComp.Message = "選擇要更換的分件";
+
+PRDCmdWorkshop.SelCompFile.Message = "選擇分件檔案";
+PRDCmdWorkshop.CATPrdStateCmd.SelCompFile.Message = "選擇分件檔案";
+PRDCmdWorkshop.CATPrdCmdReplaceComp.SelCompFile.Message = "選擇分件檔案";
+
+PRDCmdWorkshop.CATPrdStateRepCmd.RepPreview.Message = "確認或取消外形表現選擇";
+
+//PRDCmdWorkshop.SelPartAddRep.Message="選擇分件與外形表現相關";
+
+PRDCmdWorkshop.CATPrdStateRepCmd.SelRepFile.Message = "選擇外形表現文件";
+
+PRDCmdWorkshop.CATPrdStateRepCmd.SelProductRep.Message = "選擇產品";
+PRDCmdWorkshop.CATPrdStateRepCmd.SelReplace.Message = "更換";
+PRDCmdWorkshop.CATPrdStateRepCmd.SelMultiRep.Message = "選擇表現方式";
+
+PRDCmdWorkshop.CATPrdCmdExploseBlock.WhichMethod.Message = "何種方式";
+PRDCmdWorkshop.CATPrdCmdExploseBlock.ExploseBlock.Message = "炸開區塊";
+PRDCmdWorkshop.CATPrdCmdExploseBlock.SelAssembly.Message = "選擇組立";
+
+PRDCmdWorkshop.CATPrdCmdInactivation.SelPartInactivate.Message = "選擇要關閉的零件";
+
+PRDCmdWorkshop.CATPrdCmdPropagPosition.SelAssembly.Message = "選擇組立";
+PRDCmdWorkshop.CATPrdCmdPropagPosition.Propagate.Message = "延伸";
+
+PRDCmdWorkshop.CATPrdCmdGenerateNumbering.SelNumbering.Message = "選擇";
+
+//PRDCmdWorkshop.SelPartActRep.Message="選擇要啟動外形表現方式的分件";
+
+//PRDCmdWorkshop.SelPartDesactRep.Message="選擇要關閉外形表現方式的分件";
+
+//PRDCmdWorkshop.SelPartRemRep.Message="選擇要移除外形表現方式的分件";
+
+//PRDCmdWorkshop.SelPartRepRep.Message="選擇要更換外形表現方式的分件";
+// ==============================================================================================
+
+//PRDCmdWorkshop.SelShapeRem.Message = "選擇主要或替換的形狀來移除";
+
+//PRDCmdWorkshop.SelShapeAdd.Message = "選擇主要或替換的形狀來增加";
+
+//PRDCmdWorkshop.SelShapeAct.Message = "選擇主要或替換的形狀來啟動";
+
+//PRDCmdWorkshop.SelShapeRep.Message = "選擇主要或替換的形狀來替換";
+
+//PRDCmdWorkshop.FindPosInitState.Message = "選擇第一個分件";
+
+//PRDCmdWorkshop.FindPosFirstState.Message = "選擇第二個分件";
+
+//PRDCmdWorkshop.FindPosSecondState.Message = "選擇另一分件或計算...";
+
+//PRDCmdWorkshop.DeleteAsmInitState.Message = "選擇零件或分件來刪除...";
+
+//PRDCmdWorkshop.SelectRootProduct.Message = "選擇最上層分件";
+
+PRDCmdWorkshop.SelProdAction.Message = "選擇分件";
+PRDCmdWorkshop.CATPrdStateCmd.SelProdAction.Message = "選擇分件";
+
+PRDCmdWorkshop.SelPartAddNewProduct.Message = "選擇分件來加入產品";
+PRDCmdWorkshop.CATPrdStateCmd.SelPartAddNewProduct.Message = "選擇分件來加入產品";
+
+PRDCmdWorkshop.SelProductRep.Message = "選擇分件來處理表現方式";
+PRDCmdWorkshop.CATPrdStateCmd.SelProductRep.Message = "選擇分件來處理表現方式";
+
+PRDCmdWorkshop.SelNumbering.Message = "選擇數目模式";
+// ==============================================================================================
+
+PRDCmdWorkshop.AddNewPart.Message = "請選擇分件來插入新零件";
+PRDCmdWorkshop.CATPrdStateCmd.AddNewPart.Message = "請選擇分件來插入新零件";
+PRDCmdWorkshop.CATAsmCmdAddNewPart.HasBeenAddedState.Message = "插入新零件";
+
+PRDCmdWorkshop.AskPosState.Message = "您要為新零件定義新的原點嗎?";
+PRDCmdWorkshop.CATPrdStateCmd.AskPosState.Message = "您要為新零件定義新的原點嗎?";
+
+//PRDCmdWorkshop.AskFileExistState.Message = "您要覆寫已存文件嗎?";
+
+PRDCmdWorkshop.posState.Message = "以選擇分件或點來為新零件定義新的原點";
+PRDCmdWorkshop.CATPrdStateCmd.posState.Message = "以選擇分件或點來為新零件定義新的原點";
+
+//PRDCmdWorkshop.SavePopup.Message = "儲存新零件";
+
+PRDCmdWorkshop.TstRepository.Message = "輸入新零件號碼";
+PRDCmdWorkshop.CATPrdStateCmd.TstRepository.Message = "輸入新零件號碼";
+
+PRDCmdWorkshop.AskPartNumberState.Message = "輸入新零件號碼";
+PRDCmdWorkshop.CATPrdStateCmd.AskPartNumberState.Message = "輸入新零件號碼";
+
+// ==============================================================================================
+
+AskPosPopup.Title="新零件: 原點";
+
+AskPosPopup.Message="您要為新零件定義新原點嗎? \n\n 按 \" 是 \" 來定義分件的原點
+或 \n 做為新原點的點. \n\n 按 \" 否 \" 定義組立原點做為新零件的原點.";
+
+AskPosPopup.YesButton = "是";
+
+AskPosPopup.NoButton = "否";
+
+AskFileExistPopup.Title="新零件: 文件名稱";
+
+AskFileExistPopup.Message="零件已存在.\n 您要覆蓋它嗎?";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.CATAsmCmdUnload.SelPartUnload.Message = "選擇分件來卸載";
+
+PRDCmdWorkshop.CATAsmCmdUnload.TstDocUse.Message = "此文件是否有在其他地方使用?";
+
+PRDCmdWorkshop.CATAsmCmdUnload.QrySave.Message = "您要儲存修改過的文件嗎?";
+
+PRDCmdWorkshop.CATAsmCmdUnload.SaveAsS.Message = "您至少要儲存一次文件才可卸載此文件";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.PCOPanel.Message = "輸入新的自主性分件名稱.";
+
+PRDCmdWorkshop.CATPrdCmdReplaceComp.NfyMultiInst.Message = "您要繼續置換嗎 ?";
+
+PRDCmdWorkshop.CATPrdCmdReplaceComp.showPanelState.Message = "請選擇動作 : 編輯, 更換, 新增層級或移除一些.";
+
+PRDCmdWorkshop.EditPanel.Message = "在節點上使用右鍵命令欄.";
+
+PRDCmdWorkshop.CATPrdStateCmd.EditPanel.Message = "使用右鍵命令在節點上啟動.";
+
+PRDCmdWorkshop.NewNameState.Message = "輸入新物件名稱.";
+
+PRDCmdWorkshop.SelReplaceNode.Message = "選擇物件來置換所選節點.";
+
+PRDCmdWorkshop.SelInsertNode.Message = "選擇產品插入在所選節點之前.";
+
+PRDCmdWorkshop.CATPrdCmdExploseBlock.Rigidification.Message = "您要繼續命令嗎 ?";
+
+PRDCmdWorkshop.popupWarning.Title = "重要警告";
+
+// ==============================================================================================
+
+unloadQuerySavePanel.Title = "文件卸載";
+
+unloadQuerySavePanel.Message = "卸載此文件前,您要儲存它嗎?";
+
+// ==============================================================================================
+PanelSaveAs.Title = "卸載前先儲存文件";
+
+PanelSaveAs.BOK = "儲存";
+
+PanelSaveAs.BCancel = "取消";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.InSide.Title="子族";
+
+PRDCmdWorkshop.InSide.ShortHelp="子族";
+
+PRDCmdWorkshop.InSide.Help="選擇目前選擇的子族";
+
+PRDCmdWorkshop.InSide.LongHelp="選擇目前選擇的子族";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.OutSide.Title="其他";
+
+PRDCmdWorkshop.OutSide.ShortHelp="其他";
+
+PRDCmdWorkshop.OutSide.Help="除了所選分件外其餘的分件";
+
+PRDCmdWorkshop.OutSide.LongHelp="除了所選分件外其餘的分件";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.AllSide.Title="全部 ";
+PRDCmdWorkshop.AllSide.ShortHelp="全部 ";
+
+PRDCmdWorkshop.AllSide.Help="選擇全部的分件";
+
+PRDCmdWorkshop.AllSide.LongHelp="選擇全部的分件";
+
+// ==============================================================================================
+PRDCmdWorkshop.InvertSide.Title="除外";
+PRDCmdWorkshop.InvertSide.ShortHelp="Inversion";
+PRDCmdWorkshop.InvertSide.Help="除了目前選擇和次產品外所有其它分件";
+
+PRDCmdWorkshop.InvertSide.LongHelp="除了目前選擇和次產品外所有其它分件";
+
+// ==============================================================================================
+PRDCmdWorkshop.GenerateNumbering.LongHelp="產生具有表現方式的號碼";
+
+PRDCmdWorkshop.GenerateNumbering.Title="產生號碼";
+
+PRDCmdWorkshop.GenerateNumbering.Help="產生具有表現方式的號碼";
+
+PRDCmdWorkshop.GenerateNumbering.ShortHelp="產生號碼";
+
+//==============================================================================================
+
+// ==============================================================================================
+
+PRDCmdWorkshop.Reorder.Title="重排歷程樹";
+
+PRDCmdWorkshop.Reorder.Help="更改所選產品的子族歷程次序";
+
+PRDCmdWorkshop.Reorder.ShortHelp="重排歷程樹";
+
+PRDCmdWorkshop.Reorder.LongHelp="更改所選產品的子族歷程次序";
+
+PRDCmdWorkshop.CATPrdCmdReorder.SelProdforMove.Message = "選擇您要移動的分件";
+
+PRDCmdWorkshop.CATPrdCmdReorder.BeginFree.Message = "在表中選擇您要移動的分件";
+
+PRDCmdWorkshop.CATPrdCmdReorder.SelProductReorder.Message="選擇分件來重新排列子族";
+//==============================================================================================
+
+InOutCont="選擇模式";
+Activation="表現方式";
+Components="分件";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.SaveActivState.Title="儲存動作狀態";
+
+PRDCmdWorkshop.SaveActivState.Help="儲存所有形狀表現方式的動作狀態";
+
+PRDCmdWorkshop.SaveActivState.ShortHelp="儲存動作狀態";
+
+PRDCmdWorkshop.SaveActivState.LongHelp="儲存所有形狀表現方式的動作狀態";
+// ==============================================================================================
+// Pour nos amis de Volvo
+PRDCmdWorkshop.PrdCmdCS.Title="建立座標系";
+
+PRDCmdWorkshop.PrdCmdCS.Help="建立座標系";
+
+PRDCmdWorkshop.PrdCmdCS.ShortHelp="建立座標系";
+
+PRDCmdWorkshop.PrdCmdCS.LongHelp="建立座標系";
+
+// ==============================================================================================
+
+PRDCmdWorkshop.CATPrdCmdDefineCtx.DefineCtx.Message = "選取分件來更換它的上下層關係.";
+//PRDCmdWorkshop.ShowInfosState.Message = "按一下確認來更換它的上下層關係";
+
+//==============================================================================================
+
+PRDCmdWorkshop.PrdDocTemplate.Title			= "建立文件樣板 ...";
+PRDCmdWorkshop.PrdDocTemplate.Help			= "建立文件樣板";
+PRDCmdWorkshop.PrdDocTemplate.ShortHelp			= "文件樣板";
+PRDCmdWorkshop.PrdDocTemplate.LongHelp			= "建立文件樣板";
+// WBS
+
+pcoCont="自主性分件";
+
+PRDCmdWorkshop.PrdCmdAddNewPCO.Title      = "增加新視圖.";
+PRDCmdWorkshop.PrdCmdAddNewPCO.Help       = "增加新視圖.";
+PRDCmdWorkshop.PrdCmdAddNewPCO.ShortHelp  = "增加新視圖.";
+PRDCmdWorkshop.PrdCmdAddNewPCO.LongHelp   = "增加新視圖.";
+
+PRDCmdWorkshop.PrdCmdInsertPCO.Title      = "插入視圖.";
+PRDCmdWorkshop.PrdCmdInsertPCO.Help       = "插入視圖.";
+PRDCmdWorkshop.PrdCmdInsertPCO.ShortHelp  = "插入視圖.";
+PRDCmdWorkshop.PrdCmdInsertPCO.LongHelp   = "插入視圖.";
+
+PRDCmdWorkshop.PCOCmdAddNewPCO.Title      = "增加新 GCO.";
+PRDCmdWorkshop.PCOCmdAddNewPCO.Help       = "增加新 GCO.";
+PRDCmdWorkshop.PCOCmdAddNewPCO.ShortHelp  = "增加新 GCO.";
+PRDCmdWorkshop.PCOCmdAddNewPCO.LongHelp   = "增加新 GCO.";
+
+PRDCmdWorkshop.PCOCmdSetActiveView.Title      = "設定作動視圖.";
+PRDCmdWorkshop.PCOCmdSetActiveView.Help       = "設定作動視圖.";
+PRDCmdWorkshop.PCOCmdSetActiveView.ShortHelp  = "設定作動視圖.";
+PRDCmdWorkshop.PCOCmdSetActiveView.LongHelp   = "設定作動視圖.";
+
+PRDCmdWorkshop.PCOCmdInsertNewComponent.Title      = "插入新分件.";
+PRDCmdWorkshop.PCOCmdInsertNewComponent.Help       = "插入新分件.";
+PRDCmdWorkshop.PCOCmdInsertNewComponent.ShortHelp  = "插入新分件.";
+PRDCmdWorkshop.PCOCmdInsertNewComponent.LongHelp   = "插入新分件.";
+
+PRDCmdWorkshop.PCOCmdInsertNewProduct.Title      = "插入新產品.";
+PRDCmdWorkshop.PCOCmdInsertNewProduct.Help       = "插入新產品.";
+PRDCmdWorkshop.PCOCmdInsertNewProduct.ShortHelp  = "插入新產品.";
+PRDCmdWorkshop.PCOCmdInsertNewProduct.LongHelp   = "插入新產品.";
+
+PRDCmdWorkshop.PCOCmdInsertNewPart.Title      = "插入新零件.";
+PRDCmdWorkshop.PCOCmdInsertNewPart.Help       = "插入新零件.";
+PRDCmdWorkshop.PCOCmdInsertNewPart.ShortHelp  = "插入新零件.";
+PRDCmdWorkshop.PCOCmdInsertNewPart.LongHelp   = "插入新零件.";
+
+PRDCmdWorkshop.PCOCmdInsertExistingComponent.Title      = "插入已存分件.";
+PRDCmdWorkshop.PCOCmdInsertExistingComponent.Help       = "插入已存分件.";
+PRDCmdWorkshop.PCOCmdInsertExistingComponent.ShortHelp  = "插入已存分件.";
+PRDCmdWorkshop.PCOCmdInsertExistingComponent.LongHelp   = "插入已存分件.";
+
+PRDCmdWorkshop.PCOCmdRemoveLink.Title      = "由 GCO 移除產品.";
+PRDCmdWorkshop.PCOCmdRemoveLink.Help       = "由 GCO 移除產品.";
+PRDCmdWorkshop.PCOCmdRemoveLink.ShortHelp  = "由 GCO 移除產品.";
+PRDCmdWorkshop.PCOCmdRemoveLink.LongHelp   = "由 GCO 移除產品.";
+
+WBS_SetActiveView_ERROR1_Title = "作動視圖錯誤";
+WBS_SetActiveView_ERROR1_Message  = "未定義作動視圖.";
+
+// graph des noeuds contextuels
+
+PRDCmdWorkshop.PrdEditCtxNode.Title      = "編輯節點.";
+PRDCmdWorkshop.PrdEditCtxNode.Help       = "編輯節點.";
+PRDCmdWorkshop.PrdEditCtxNode.ShortHelp  = "編輯節點.";
+PRDCmdWorkshop.PrdEditCtxNode.LongHelp   = "編輯節點來更改名稱.";
+
+PRDCmdWorkshop.PrdReplaceCtxNode.Title      = "更換節點.";
+PRDCmdWorkshop.PrdReplaceCtxNode.Help       = "更換節點.";
+PRDCmdWorkshop.PrdReplaceCtxNode.ShortHelp  = "更換節點.";
+PRDCmdWorkshop.PrdReplaceCtxNode.LongHelp   = "在圖形中選擇其它物件來更換節點.";
+
+PRDCmdWorkshop.PrdInsertCtxNode.Title      = "之前插入節點.";
+PRDCmdWorkshop.PrdInsertCtxNode.Help       = "之前插入節點.";
+PRDCmdWorkshop.PrdInsertCtxNode.ShortHelp  = "之前插入節點.";
+PRDCmdWorkshop.PrdInsertCtxNode.LongHelp   = "在圖形中選擇其它物件之前插入節點.";
+
+PRDCmdWorkshop.PrdDeleteCtxNode.Title      = "刪除節點.";
+PRDCmdWorkshop.PrdDeleteCtxNode.Help       = "刪除節點.";
+PRDCmdWorkshop.PrdDeleteCtxNode.ShortHelp  = "刪除節點.";
+PRDCmdWorkshop.PrdDeleteCtxNode.LongHelp   = "在圖形中刪除節點.";
+
+// commandes des vues PCOs
+
+PRDCmdWorkshop.DisplayGlobalView.Title      = "顯示總體視圖";
+PRDCmdWorkshop.DisplayGlobalView.Help       = "顯示產品架構視圖和自主性分件視圖.";
+PRDCmdWorkshop.DisplayGlobalView.ShortHelp  = "顯示產品架構視圖和自主性分件視圖.";
+PRDCmdWorkshop.DisplayGlobalView.LongHelp   = "顯示產品架構視圖和自主性分件視圖.";
+
+PRDCmdWorkshop.DisplayActiveView.Title      = "顯示作動視圖";
+PRDCmdWorkshop.DisplayActiveView.Help       = "只顯示作動的產品視圖和未使用的產品.";
+PRDCmdWorkshop.DisplayActiveView.ShortHelp  = "只顯示作動的產品視圖和未使用的產品.";
+PRDCmdWorkshop.DisplayActiveView.LongHelp   = "只顯示作動的產品視圖和未使用的產品.";
+
+PRDCmdWorkshop.DisplayProductStructureView.Title      = "顯示產品架構視圖";
+PRDCmdWorkshop.DisplayProductStructureView.Help       = "只顯示產品架構視圖";
+PRDCmdWorkshop.DisplayProductStructureView.ShortHelp  = "只顯示產品架構視圖";
+PRDCmdWorkshop.DisplayProductStructureView.LongHelp   = "只顯示產品架構視圖";
+
+PRDCmdWorkshop.DisplayViewTree.Title      = "顯示歷程樹";
+PRDCmdWorkshop.DisplayViewTree.Help       = "只顯示歷程樹不顯示任何產品";
+PRDCmdWorkshop.DisplayViewTree.ShortHelp  = "只顯示歷程樹不顯示任何產品";
+PRDCmdWorkshop.DisplayViewTree.LongHelp   = "只顯示歷程樹不顯示任何產品";
+
+// Assembly move command
+
+PRDCmdWorkshop.PrdTranslationRotation.Title="平移或旋轉...";
+PRDCmdWorkshop.PrdTranslationRotation.Help="以平移或旋轉移動分件";
+PRDCmdWorkshop.PrdTranslationRotation.ShortHelp="平移或旋轉";
+PRDCmdWorkshop.PrdTranslationRotation.LongHelp="平移或旋轉 \n 以定義值平移或旋轉移動分件.";
+
+WarningTitleReorder = "歷程樹重新排序";
+WarningMsgReorder = "動作未儲存在 ENOVIA";
+
+PRDCmdWorkshop.ReplaceLink.Title="更換鏈結";
+PRDCmdWorkshop.ReplaceLink.Help="自動更換目前產品的參考分件";
+PRDCmdWorkshop.ReplaceLink.ShortHelp="自動更換目前產品的參考分件";
+PRDCmdWorkshop.ReplaceLink.LongHelp="自動更換在相同位置的目前產品的參考分件";
+
+PRDCmdWorkshop.InteractiveUpdate.Title="更新情形檢查器";
+PRDCmdWorkshop.InteractiveUpdate.Help="檢查輸入的 MultiCAD 資料更新情形";
+PRDCmdWorkshop.InteractiveUpdate.ShortHelp="檢查輸入的 MultiCAD 資料更新情形";
+PRDCmdWorkshop.InteractiveUpdate.LongHelp="檢查輸入的 MultiCAD 資料更新情形";
+
+PRDCmdWorkshop.RemoveMCADLinks.Title="移除 MultiCAD 鏈結";
+PRDCmdWorkshop.RemoveMCADLinks.Help="移除 MultiCAD 鏈結和釋放轉移資料";
+PRDCmdWorkshop.RemoveMCADLinks.ShortHelp="移除 MultiCAD 鏈結和釋放轉移資料";
+PRDCmdWorkshop.RemoveMCADLinks.LongHelp="移除 MultiCAD 鏈結和釋放轉移資料";
+
+
+

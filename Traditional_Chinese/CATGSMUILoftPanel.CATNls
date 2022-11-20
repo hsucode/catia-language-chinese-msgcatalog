@@ -1,0 +1,186 @@
+//----------------------------------------------
+// Resource file for CATGSMUILoftPanel class
+// En_US
+//----------------------------------------------
+
+
+WindowTitle="斷面混成曲面定義: ";
+PartUnionWindowTitle="斷面混成實體定義: ";
+PartRemovalWindowTitle="移除斷面混成實體定義: ";
+VolumeWindowTitle="斷面混成體積定義";
+
+LoftFrame.SectionsFrame.Title="斷面";
+//LoftFrame.SectionsFrame.LongHelp=
+SectionsFrameLongHelp=
+"指出斷面曲線來掃掠建立斷面混成曲面,
+曲面在起始和最終曲線及
+封閉曲線封閉點均為相切.";
+PartSectionsFrameLongHelp=
+"指出斷面曲線來掃掠建立斷面混成曲面,
+曲面在起始和最終曲線及
+封閉曲線封閉點均為相切.";
+
+
+// number of the selected elements
+NumberColumnTitle="無";
+
+SectionColumnTitle="斷面";
+TangentColumnTitle="相切";
+PointColumnTitle="封閉點";
+
+EditPtTitle="結束封閉點";
+CreatePtTitle="建立封閉點";
+
+CompTgtTitle="相切計算";
+NonCompTgtTitle="無相切計算";
+
+LoftFrame.SectionsFrame.SectionsList.SectionsCxtMenu.SectionsReplaceItem.Title="更換";
+LoftFrame.SectionsFrame.SectionsList.SectionsCxtMenu.SectionsRemoveItem.Title="移除";
+LoftFrame.SectionsFrame.SectionsList.SectionsCxtMenu.SectionsTgtReplaceItem.Title="更換相切";
+LoftFrame.SectionsFrame.SectionsList.SectionsCxtMenu.SectionsTgtRemoveItem.Title="移除相切";
+LoftFrame.SectionsFrame.SectionsList.SectionsCxtMenu.SectionsPtReplaceItem.Title="更換封閉點";
+LoftFrame.SectionsFrame.SectionsList.SectionsCxtMenu.SectionsPtRemoveItem.Title="移除封閉點";
+LoftFrame.SectionsFrame.SectionsList.SectionsCxtMenu.SectionsAddItem.Title="新增";
+LoftFrame.SectionsFrame.SectionsList.SectionsCxtMenu.SectionsAddAfterItem.Title="之後新增";
+LoftFrame.SectionsFrame.SectionsList.SectionsCxtMenu.SectionsAddBeforeItem.Title="之前新增";
+
+LoftFrame.GuidesFrame.LongHelp="指出導引,脊椎線和斷面複合.";
+
+LoftFrame.GuidesFrame.GuidesTabContainer.MiddlesTabPage.Title="導引";
+//LoftFrame.GuidesFrame.GuidesTabContainer.MiddlesTabPage.LongHelp=
+MiddlesTabPageLongHelp=
+"指出用來導引斷面混成曲面的曲線,
+每條導引曲線均在相切曲面
+且與斷面混成曲面為相切.";
+
+PartMiddlesTabPageLongHelp=
+"指出用來導引斷面混成實體的曲線,
+每條導引曲線均在相切曲面
+且與斷面混成實體為相切 ..";
+
+MiddleColumnTitle="導引";
+ReferenceColumnTitle="相切";
+LoftFrame.GuidesFrame.GuidesTabContainer.MiddlesTabPage.MiddlesFrame.MiddlesListFrame.MiddlesList.MiddlesCxtMenu.MiddlesReplaceItem.Title="更換";
+LoftFrame.GuidesFrame.GuidesTabContainer.MiddlesTabPage.MiddlesFrame.MiddlesListFrame.MiddlesList.MiddlesCxtMenu.MiddlesRemoveItem.Title="移除";
+LoftFrame.GuidesFrame.GuidesTabContainer.MiddlesTabPage.MiddlesFrame.MiddlesListFrame.MiddlesList.MiddlesCxtMenu.MiddlesAddItem.Title="新增";
+LoftFrame.GuidesFrame.GuidesTabContainer.MiddlesTabPage.MiddlesFrame.MiddlesListFrame.MiddlesList.MiddlesCxtMenu.MiddlesAddAfterItem.Title="之後新增";
+LoftFrame.GuidesFrame.GuidesTabContainer.MiddlesTabPage.MiddlesFrame.MiddlesListFrame.MiddlesList.MiddlesCxtMenu.MiddlesAddBeforeItem.Title="之前新增";
+LoftFrame.GuidesFrame.GuidesTabContainer.MiddlesTabPage.MiddlesFrame.MiddlesListFrame.MiddlesList.MiddlesCxtMenu.MiddlesRefReplaceItem.Title="更換相切";
+LoftFrame.GuidesFrame.GuidesTabContainer.MiddlesTabPage.MiddlesFrame.MiddlesListFrame.MiddlesList.MiddlesCxtMenu.MiddlesRefRemoveItem.Title="移除相切";
+
+LoftFrame.GuidesFrame.GuidesTabContainer.SpineTabPage.Title="脊椎線";
+//LoftFrame.GuidesFrame.GuidesTabContainer.SpineTabPage.LongHelp=
+SpineTabPageLongHelp=
+"指出讓切面可繞著產生斷面混成曲面的曲線.";
+PartSpineTabPageLongHelp=
+"指出讓切面可繞著產生斷面混成實體的曲線.";
+
+LoftFrame.GuidesFrame.GuidesTabContainer.SpineTabPage.SpineFrame.SpineButton.Title="計算脊椎線";
+LoftFrame.GuidesFrame.GuidesTabContainer.SpineTabPage.SpineFrame.SpineButton.LongHelp="指定計算脊椎線.";
+UserSpineTitle="脊椎線: ";
+LoftFrame.GuidesFrame.GuidesTabContainer.SpineTabPage.SpineFrame.SpineSelector.LongHelp="指定使用者自訂脊椎線.";
+
+LoftFrame.GuidesFrame.GuidesTabContainer.RelimTabPage.Title="截斷";
+LoftFrame.GuidesFrame.GuidesTabContainer.RelimTabPage.LongHelp=
+"當同時選擇兩項 :
+    斷面混成曲面將會沿著脊椎線掃掠, 然後被起始和最終切面截斷.  
+當同時不選擇兩項 :
+    斷面混成曲面將會沿著脊椎線掃掠.
+     - 如果脊椎線為使用者自訂, 然後斷面混成曲面將被脊椎線截斷.
+     - 如果脊椎線為計算後所得, 此斷面混成曲面將自動被截斷 :
+          - 如果沒有導引線, 將由起始和終點切面來截斷.
+          - 以導引端點, 如果有導引線.
+當只選擇 '斷面混成曲面由起始切面截斷' 選擇勾選 : 
+     斷面混成曲面將會沿著脊椎線掃掠, 將會被起始切面截斷,  
+     - 如果脊椎線為使用者自訂, 此斷面混成曲面將被脊椎線端點相對起始切面截斷.
+     - 如果脊椎線為計算後所得, 此斷面混成曲面將被截斷 :
+          - 由終點切面, 如果沒有導引線.
+          - 如果有導引線, 由導引端點相對起始切面截斷.
+當只選擇 '斷面混成曲面由結束切面截斷' 選擇勾選 : 
+     斷面混成曲面將會沿著脊椎線掃掠, 將會被結束切面截斷,  
+     - 如果脊椎線為使用者自訂, 此斷面混成曲面將被脊椎線端點相對結束切面截斷.
+     - 如果脊椎線為計算後所得, 此斷面混成曲面將被截斷 :
+          - 由終點切面, 如果沒有導引線.
+          - 如果有導引線, 由導引端點相對結束切面截斷.";
+
+LoftFrame.GuidesFrame.GuidesTabContainer.RelimTabPage.StartRelimButton.Title="斷面混成曲面由起始切面截斷.";
+LoftFrame.GuidesFrame.GuidesTabContainer.RelimTabPage.EndRelimButton.Title="斷面混成曲面由結束切面截斷";
+
+LoftFrame.GuidesFrame.GuidesTabContainer.RelimTabPage.StartRelimButton.LongHelp=
+"當勾選 , 斷面混成曲面將會沿著脊椎線掃掠, 將會被起始切面截斷.";
+
+LoftFrame.GuidesFrame.GuidesTabContainer.RelimTabPage.EndRelimButton.LongHelp=
+"當勾選 , 斷面混成曲面將會沿著脊椎線掃掠, 將會被結束切面截斷.";
+
+// surface canonique
+LoftFrame.GuidesFrame.GuidesTabContainer.CanonicalTabPage.Title="標準元素";
+LoftFrame.GuidesFrame.GuidesTabContainer.CanonicalTabPage.LongHelp="偵測元素型式.";
+
+LoftFrame.GuidesFrame.GuidesTabContainer.CanonicalTabPage.PlaneDetection.Title="偵測平面形式曲面";
+LoftFrame.GuidesFrame.GuidesTabContainer.CanonicalTabPage.PlaneDetection.LongHelp=
+"當勾選 , 系統偵測到元素型式將會自動轉換成稍候使用的元素型式.";
+
+LoftFrame.Frame057.ObjectActionFrame.ReplaceButton.Title="更換";
+LoftFrame.Frame057.ObjectActionFrame.ReplaceButton.LongHelp="允許您選擇元素來更換新元素.";
+LoftFrame.Frame057.ObjectActionFrame.RemoveButton.Title="移除";
+LoftFrame.Frame057.ObjectActionFrame.RemoveButton.LongHelp="允許您從表中移除所選元素.";
+LoftFrame.Frame057.ObjectActionFrame.AddButton.Title="新增";
+LoftFrame.Frame057.ObjectActionFrame.AddButton.LongHelp="允許您新增元素至表中.";
+
+// coupling
+LoftFrame.GuidesFrame.GuidesTabContainer.CouplingTabPage.Title="複合";
+
+LoftFrame.GuidesFrame.GuidesTabContainer.CouplingTabPage.SectionCouplFrame.LongHelp=
+"指出切面如何複合 :
+- 比率 : 曲面依曲線比率來複合.
+- 相切 : 如果每一個切面具有相同的不連續相切點, 則複合這些點,
+否則顯示錯誤訊息.
+- 相切後曲率: 如果每一個切面具有相同的相切及不連續曲率點,
+則複合相切不連續點,
+否則顯示錯誤訊息.
+- 頂點 : 如果每一個切面具有相同的頂點 , 
+ 則複合這些點,
+否則顯示錯誤訊息.";
+
+
+
+LoftFrame.GuidesFrame.GuidesTabContainer.CouplingTabPage.SectionCouplFrame.SectionCouplLabel.Title="切面複合: ";
+RatioCouplTitle="比率";
+TangencyCouplTitle="相切";
+CurvatureCouplTitle="相切後曲率";
+VertexCouplTitleKey="極限點";
+
+LoftFrame.GuidesFrame.GuidesTabContainer.CouplingTabPage.CouplTypeFrame.SameNbPtsButton.Title="當具相同點時才複合它";
+
+// coupling list columns
+Coupling="複合";
+CouplingName="複合";
+
+// coupling list contextual menu
+LoftFrame.GuidesFrame.GuidesTabContainer.CouplingTabPage.CouplPointsFrame.CouplingList.CouplingCxtMenu.CouplingEditItem.Title="定義";
+LoftFrame.GuidesFrame.GuidesTabContainer.CouplingTabPage.CouplPointsFrame.CouplingList.CouplingCxtMenu.CouplingRemoveItem.Title="移除";
+LoftFrame.GuidesFrame.GuidesTabContainer.CouplingTabPage.CouplPointsFrame.CouplingList.CouplingCxtMenu.CouplingRemoveAllItem.Title="移除全部";
+LoftFrame.GuidesFrame.GuidesTabContainer.CouplingTabPage.CouplPointsFrame.CouplingList.CouplingCxtMenu.CouplingAddItem.Title="新增";
+LoftFrame.GuidesFrame.GuidesTabContainer.CouplingTabPage.CouplPointsFrame.CouplingList.CouplingCxtMenu.CouplingAddAfterItem.Title="之後新增";
+LoftFrame.GuidesFrame.GuidesTabContainer.CouplingTabPage.CouplPointsFrame.CouplingList.CouplingCxtMenu.CouplingAddBeforeItem.Title="之前新增";
+
+LoftFrame.GuidesFrame.GuidesTabContainer.CouplingTabPage.CouplPointsFrame.CouplingList.LongHelp=
+"指定導引斷面混成曲面的複合.";
+
+// show coupling lines
+LoftFrame.GuidesFrame.GuidesTabContainer.CouplingTabPage.CouplPointsFrame.ShowCouplLinesButton.Title="顯示複合曲線";
+
+LoftFrame.GuidesFrame.GuidesTabContainer.CouplingTabPage.CouplPointsFrame.ShowCouplLinesButton.LongHelp=
+"指定要顯示的複合曲線.";
+
+// Smooth
+
+LoftFrame.SmoothOptionsFrame.Title="平順參數";
+
+LoftFrame.SmoothOptionsFrame.SmoothDeviationActivityCheckButton.Title="變異 : ";
+LoftFrame.SmoothOptionsFrame.SmoothDeviationActivityCheckButton.LongHelp="啟動或關閉建立疊層曲面動作時的變異.";
+LoftFrame.SmoothOptionsFrame.SmoothDeviationFrame.SmoothDeviationValue.EnglobingFrame.IntermediateFrame.Spinner.Title="變異";
+
+LoftFrame.SmoothOptionsFrame.SmoothAngleThresholdActivityCheckButton.Title="角度修正 : ";
+LoftFrame.SmoothOptionsFrame.SmoothAngleThresholdActivityCheckButton.LongHelp="啟動或關閉建立疊層曲面動作時的角度修正.";
+LoftFrame.SmoothOptionsFrame.SmoothAngleThresholdFrame.SmoothAngleThresholdValue.EnglobingFrame.IntermediateFrame.Spinner.Title="角度修正";

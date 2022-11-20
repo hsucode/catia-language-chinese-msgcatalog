@@ -1,0 +1,91 @@
+Title = "CATIA 新增安裝";
+
+
+PresentFileMissing				= "\"PRESENT\" 2 未存取: /P1" ;
+PresentFileNotOpen              = "無法開啟 \"PRESENT\" 檔案: /P1" ;
+PresentFileNotRead		        = "無法讀取 \"PRESENT\" 檔案: /P1" ;
+CodeDirFileNotOpen				= "無法開啟 \"CodeDir.txt\" 檔案: /P1" ;
+CodeDirFileNotRead		        = "無法讀取 \"CodeDir.txt\" 檔案: /P1" ;
+CAADirFileNotOpen				= "警告 : 無法開啟 \"CAADir.txt\" 檔案: /P1" ;
+CAADirFileNotRead		        = "無法讀取 \"CAADir.txt\" 檔案: /P1" ;
+
+DirectoryNotOpen				= "無法開啟目錄 : /P1" ;
+DirectoryNotDeleted				= "無法刪除目錄 : /P1" ;
+DirectoryNotCreated				= "無法建立目錄 : /P1" ;
+DirectoryNotChanged				= "無法更改目前目錄至 /P1" ;
+FileNotDeleted					= "無法刪除檔案 : /P1";
+ControlFileNotOpen				= "無法開啟控制檔案 : /P1" ;
+
+UsageNT                         =  
+"To build an archive file based on the differences between the V5Rn GA and V5Rn SP2 levels, for example, run the CATDeltaInstall command as follows:
+CATDeltaInstall -s 0 -d \"C:\ Program Files\Dassault Systemes\B0n\intel_a\" -a E:\users\MyUser\MyArchiveFile
+ 
+ The full command syntax is: 
+CATDeltaInstall -s PreviousServicePackNumber [-d InstallationDirectory] 
+[-l|-a ArchiveFile] [-h]
+
+-s: previous level number: the level can be either a service pack or the GA level for the same release; 
+0 = GA, 1 = service pack 1, 2 = service pack 2, etc.; the default is 0.
+A service pack must have been correctly installed if you intend to build an archive based on the differences between this service pack and another level. For example, if you installed only the V5Rn GA and V5Rn SP2 levels, you cannot specify \"-s 1\" as an argument (because you did not install the V5Rn SP1 level). 
+-d: Installation directory; when the command is run from the installation directory, this argument is not required 
+-l: only lists the files which are different between the two installation levels; this list can be used to build a different type of archive (for example, WinZip) 
+-a: builds an archive file with the specified name (requires the CabArc utility) 
+-h: help. 
+Note that there are two distinct operating modes:
+
+build an archive file (using the \"-a\" argument) 
+only list the files which are different between the two installation levels (using the \"-l\" argument)"; 
+ 
+UsageUnix                       = 
+"To build an archive file based on the differences between the V5Rn GA and V5Rn SP2 levels, for example, run the CATDeltaInstall command as follows:
+./catstart -run \"CATDeltaInstall -s 0 -d /usr/Dassault Systemes/B0n/os_a -a /u/users/MyUser/MyArchiveFile -t /tmp\"
+ 
+ The full command syntax is: 
+CATDeltaInstall -s PreviousServicePackNumber [-d InstallationDirectory] 
+[-l|-a ArchiveFile] [-t TemporaryWorkDirForUnixOnly] [-h]
+
+-s: previous level number: the level can be either a service pack or the GA level for the same release; 
+0 = GA, 1 = service pack 1, 2 = service pack 2, etc.; the default is 0.
+A service pack must have been correctly installed if you intend to build an archive based on the differences between this service pack and another level. For example, if you installed only the V5Rn GA and V5Rn SP2 levels, you cannot specify \-s 1\" as an argument (because you did not install the V5Rn SP1 level). 
+-d: Installation directory; when the command is run from the installation directory, this argument is not required 
+-l: only lists the files which are different between the two installation levels; this list can be used to build a different type of archive 
+-a: builds an archive file with the specified name 
+-t: temporary file for storing archive file; the default is /tmp 
+-h: help. 
+Note that there are two distinct operating modes:
+
+build an archive file (using the \"-a\" argument) 
+only list the files which are different between the two installation levels (using the \"-l\" argument).";
+
+ExampleNT						= "例子 : CATDeltaInstall -s 1 -d \"C:Program Files\Dassault Systemes\B11\intel_a\" -a E:\users\My_User\My_Archive_File";
+ExampleUnix						= "例子 : CATDeltaInstall -s 1 -d \"/usr/Dassault Systemes/B11/unix_a\" -a /u/users/My_User/My_Archive_File -t /tmp";
+NumberRequired					= "前一版的 service pack 號碼必是號碼";
+PreviousSPK						= "前一版的 service pack (/P1) 未曾安裝過";
+EqualSPK						= "前一個 service pack (-s 選項) 和已安裝的 service pack 相同.";
+GAandSPK						= "前一個 service pack (-s 選項 /P1) 已安裝 GA 和 Service Package cdrom. CATDeltaInstall 將會以 GA Level 安裝.";
+OpenListFile					= "文件清單檔案 (/P1) 無法開啟  ";
+RemoveListFile					= "文件清單檔案 (/P1) 無法刪除  ";
+CopyFileNotDone					= "無法複製檔案: /P1";
+ChmodNotDone					= "無法更改檔案模式至: /P1";
+StartProcess					= "無法啟動程序至:  /P1";
+RunProcess						= "無法啟動程序:  /P1";
+
+ArchiveDone						= "文件被正確存檔";
+ArchiveNoteDone					= "文件未被正確存檔";
+ArchiveCommand					= "文件命令: /P1";
+ArchiveFileCAA					= "\n 安裝程式 /P1 已建立兩個文件檔案: ,\n/P1CAA 為 caa 安裝.";
+CabarcNotFound                  = "請檢查 CABARC.exe 是否參考下列路徑: /P1. 具 -a 選項的必須選項為 CABARC 功能. 必須先安裝此軟體.";
+CAANotInstalled					= "警告 : CAA 在目錄: /P1 中未安裝";
+HfxInstalled					= "當已安裝 hot fix 時無法處理 CATDeltaInstall 檔案";
+ExclusiveOptions				= "選項 -l 和 -a 不包含.";
+SPKNotCommitted                 = "未認可 Service Pack 時, 無法處理 CATDeltaInstall 檔案.";
+
+InvalidFile						= "無效檔案名稱: /P1" ;
+UnexpectedFile					= "未預期錯誤檔案名稱 : /P1";
+BufferSmall                     = "暫存器太小  ";
+GetDisk                         = "無法獲取磁碟資料 ";
+FileNotOpen						= "無法開啟檔案 : /P1" ;
+TemporarySize                   = "暫時目錄無足夠空間 : /P1 ";
+AvailableSize                   = "可用大小 (bytes): /P1 ";
+NeededSize		                = "所需大小 (bytes): /P1 ";
+NeededSizeFor	                = "所需大小, 包含暫存空間 (Kbytes): /P1 ";

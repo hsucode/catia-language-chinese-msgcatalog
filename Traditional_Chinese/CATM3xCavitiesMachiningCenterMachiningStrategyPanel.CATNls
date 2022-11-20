@@ -1,0 +1,40 @@
+Title = "加工";
+
+M3xMultiPocketsSweepingMode = "刀具路徑形式";
+M3xPocketProgressionMode = "螺旋移動";
+M3xStayOnBottom = "永遠停留在底部";
+
+
+M3xStockContouringHelical = "外形銑製時強制切削模式";
+M3xStockContouringHelical.LongHelp = "Forces the tool to respect the cutting even following the contours on part.";
+
+
+M3xMultiPocketsSweepingMode.LongHelp = "Specifies the tool movements. The tool path style can be:
+- Helical: the tool path is composed of successive inward or outward parallels,
+- Concentric: the tool follows concentric and parallel arcs; 
+    cutting mode and stepover are constant,
+- Back and forth: the tool path alternates directions during successive passes.";
+
+M3xPocketProgressionMode.LongHelp = "Specifies the way the tool moves in a pocket or an external zone.
+It can be :
+- Inward: the tool starts from a point inside the zone and 
+follows inward paths parallel to the boundary. 
+- Outward: the tool starts from a point inside the zone and 
+follows outward paths parallel to the boundary.
+- Both: for pockets, the tool starts from a point inside the pocket and 
+follows outward paths parallel to the boundary;
+for external zones, the tool starts from a point on the rough stock boundary and 
+follows inward paths parallel to the boundary.";
+
+M3xStayOnBottom.LongHelp = "Forces the tool to remain in contact with the 
+pocket bottom when moving from one domain to another.";
+
+
+M3xStockContouringPosition = "外形路徑";
+M3xStockContouringPosition.LongHelp = "Specifies the position of the contouring pass";
+
+M3xStockContouringRatio = "外形路徑比值";
+M3xStockContouringRatio.LongHelp = "Ajusts the position of the contouring pass to optimize scallop removal (% of tool diameter)";
+
+M3xStockContouringNumberOfLevel = "外形數目";
+M3xStockContouringNumberOfLevel.LongHelp = "Specifies the number of contouring passes to optimize the tool loading";

@@ -1,0 +1,415 @@
+
+Title = "編輯切面";
+
+FrameDefinition.Title                = "定義";
+FrameDefinition.LongHelp             = "讓您定義切面名稱及將執行的選擇";
+
+FrameDimensions.Title                = "尺寸";
+FrameDimensions.LongHelp                = "定義切面位置和尺寸的工具";
+
+FrameDimensions.LabelWidth.Title     = "寬度:";
+FrameDimensions.LabelWidth.LongHelp  = "定義切面在 Y 方向的長度";
+FrameDimensions.LabelHeight.Title    = "高度:";
+FrameDimensions.LabelHeight.LongHelp  = "定義切面在 X 方向的長度";
+FrameDimensions.LabelThickness.Title = "厚度:";
+FrameDimensions.LabelThickness.LongHelp  = "定義兩切面間的厚度 (只在切層及盒狀模式)";
+
+
+//PlaneNormaleFrame.Title = "限制";
+FrameDimensions.PlaneNormaleLabel.Title = "垂直限制:";
+FrameDimensions.PlaneNormaleLabel.LongHelp = "定義平面的垂直限制";
+FrameDimensions.PlaneNormaleFrame.LongHelp = "定義平面的垂直限制";
+FrameDimensions.PlaneNormaleFrame.PlaneNormaleX.Title = "X" ;
+FrameDimensions.PlaneNormaleFrame.PlaneNormaleY.Title = "Y" ;
+FrameDimensions.PlaneNormaleFrame.PlaneNormaleZ.Title = "Z" ;
+OutputOpt.Title = "輸出選擇";
+
+
+SectionPlanesGenericName             = "平面選擇";
+
+ToolBar.Title                        = "切面工具";
+FrameDefinition.NewViewer.Title              = "視窗";
+FrameDefinition.NewViewer.ShortHelp          = "結果視窗";
+FrameDefinition.NewViewer.Help               = "打開或關閉 新結果視窗";
+FrameDefinition.NewViewer.LongHelp           = "結果視窗 \n 打開或關閉 新結果視窗";
+
+ToolBar.ReframeView.Title            = "重設";
+ToolBar.ReframeView.ShortHelp        = "重設結果視窗";
+ToolBar.ReframeView.Help             = "重設結果視窗";
+ToolBar.ReframeView.LongHelp         = "重設結果視窗 \n 重設結果視窗";
+
+FrameDefinition.PublishSection.Title           = "輸出成...";
+FrameDefinition.PublishSection.ShortHelp       = "輸出成...";
+FrameDefinition.PublishSection.Help            = "輸出切面結果至不同格式";
+FrameDefinition.PublishSection.LongHelp        = "輸出切面結果至不同格式";
+
+FrameDefinition.GeneralOptions.AutoUpdate.Title           = "自動更新";
+FrameDefinition.GeneralOptions.AutoUpdate.ShortHelp       = "自動更新";
+FrameDefinition.GeneralOptions.AutoUpdate.Help            = "啟動或不啟動自動更新";
+FrameDefinition.GeneralOptions.AutoUpdate.LongHelp        = "啟動或不啟動自動更新";
+
+FrameDefinition.GeneralOptions.FreezeBut.Title           = "切面凍結";
+FrameDefinition.GeneralOptions.FreezeBut.ShortHelp       = "切面凍結";
+FrameDefinition.GeneralOptions.FreezeBut.Help            = "凍結或不凍結切面結果";
+FrameDefinition.GeneralOptions.FreezeBut.LongHelp        = "凍結或不凍結切面結果";
+
+
+FrameDefinition.SectionStyleIconBox.SectionOnePlane.Title        = "平面";
+FrameDefinition.SectionStyleIconBox.SectionOnePlane.ShortHelp    = "切面";
+FrameDefinition.SectionStyleIconBox.SectionOnePlane.Help         = "使用平面來當做切面工具";
+FrameDefinition.SectionStyleIconBox.SectionOnePlane.LongHelp     = "切面 \n 使用平面來當做切面工具";
+
+FrameDefinition.SectionStyleIconBox.SectionSlice.Title           = "切層";
+FrameDefinition.SectionStyleIconBox.SectionSlice.ShortHelp       = "切層";
+FrameDefinition.SectionStyleIconBox.SectionSlice.Help            = "使用雙平面來當做切面工具";
+FrameDefinition.SectionStyleIconBox.SectionSlice.LongHelp        = "切層 \n 使用雙平面來當做切面工具";
+
+FrameDefinition.SectionStyleIconBox.SectionClippBox.Title        = "盒狀";
+FrameDefinition.SectionStyleIconBox.SectionClippBox.ShortHelp    = "盒狀切面";
+FrameDefinition.SectionStyleIconBox.SectionClippBox.Help         = "使用盒狀來當做切面工具";
+FrameDefinition.SectionStyleIconBox.SectionClippBox.LongHelp     = "盒狀切面 \n 使用盒狀來當做切面工具";
+
+ToolBar.SectionStyleIconBox.NetOfPlane.Title           = "網狀平面";
+ToolBar.SectionStyleIconBox.NetOfPlane.ShortHelp       = "網狀平面";
+ToolBar.SectionStyleIconBox.NetOfPlane.Help            = "建立一組網狀規則平面";
+ToolBar.SectionStyleIconBox.NetOfPlane.LongHelp        = "建立一組網狀規則平面";
+
+FrameDefinition.Section3DCut.Title            = "切";
+FrameDefinition.Section3DCut.ShortHelp        = "切體";
+FrameDefinition.Section3DCut.Help             = "啟動或不啟動體積切割";
+FrameDefinition.Section3DCut.LongHelp         = "體積切割 \n 啟動或不啟動體積切割";
+
+FrameDefinition.SectionViewerOptions.SectionFilled.Title            = "填滿";
+FrameDefinition.SectionViewerOptions.SectionFilled.ShortHelp        = "切面填滿";
+FrameDefinition.SectionViewerOptions.SectionFilled.Help             = "啟動或不起切面填滿";
+FrameDefinition.SectionViewerOptions.SectionFilled.LongHelp         = "切面填滿 \n 啟動或不起切面填滿";
+
+FrameDefinition.ClashDetection.Title            = "碰撞偵測";
+FrameDefinition.ClashDetection.ShortHelp        = "碰撞偵測";
+FrameDefinition.ClashDetection.Help             = "在第二檢視器中啟動或不啟動自動碰撞偵測";
+FrameDefinition.ClashDetection.LongHelp         = "在第二檢視器中啟動或不啟動自動碰撞偵測";
+
+ToolBar.ClashDetection.Title            = "碰撞偵測";
+ToolBar.ClashDetection.ShortHelp        = "碰撞偵測";
+ToolBar.ClashDetection.Help             = "在第二檢視器中啟動或不啟動自動碰撞偵測";
+ToolBar.ClashDetection.LongHelp         = "切面填滿 \n 在第二檢視器中啟動或不啟動自動碰撞偵測";
+
+FrameDimensions.PositionInvert.Title          = "逆轉";
+FrameDimensions.PositionInvert.ShortHelp      = "逆轉垂直方向";
+FrameDimensions.PositionInvert.Help           = "逆轉切面工具的垂直方向";
+FrameDimensions.PositionInvert.LongHelp       = "垂直逆轉 \n 逆轉切面工具的垂直方向";
+
+FrameDimensions.PositionEditor.Title          = "定位和標尺寸";
+FrameDimensions.PositionEditor.ShortHelp      = "編輯位置和尺寸";
+FrameDimensions.PositionEditor.Help           = "打開或關閉切面工具位置和尺寸的對話盒";
+FrameDimensions.PositionEditor.LongHelp       = "編輯位置 \n 打開或關閉切面工具位置和尺寸的對話盒";
+
+FrameDimensions.PositionReset.Title           = "重設";
+FrameDimensions.PositionReset.ShortHelp       = "重設位置";
+FrameDimensions.PositionReset.Help            = "重設切面工具至其原始位置";
+FrameDimensions.PositionReset.LongHelp        = "重設位置 \n 重設切面工具至其原始位置";
+
+ToolBar.Lock2DView.Title              = "鎖定";
+ToolBar.Lock2DView.ShortHelp          = "2D 鎖定";
+ToolBar.Lock2DView.Help               = "鎖定或不鎖定平面視圖結果視窗";
+ToolBar.Lock2DView.LongHelp           = "2D 鎖定 \n 鎖定或不鎖定平面視圖結果視窗";
+
+ToolBar.ImportViewpoint.Title     = "輸入視點";
+ToolBar.ImportViewpoint.ShortHelp = "輸入視點並鎖定 2D ";
+ToolBar.ImportViewpoint.Help      = "在切面視圖上應用主要視點並鎖定結果視圖如同 2D 視圖";
+ToolBar.ImportViewpoint.LongHelp  = "輸入視點並鎖定 2D \n 在切面視圖上應用主要視點並鎖定結果視圖如同 2D 視圖";
+
+ToolBar.RotateViewIconBox.RotateViewRight.Title      = "向右旋轉";
+ToolBar.RotateViewIconBox.RotateViewRight.ShortHelp  = "向右旋轉";
+ToolBar.RotateViewIconBox.RotateViewRight.Help       = "將視圖向右旋轉 90 度";
+ToolBar.RotateViewIconBox.RotateViewRight.LongHelp   = "向右旋轉 \n 將視圖向右旋轉 90 度";
+
+ToolBar.RotateViewIconBox.RotateViewLeft.Title     = "向左旋轉";
+ToolBar.RotateViewIconBox.RotateViewLeft.ShortHelp = "向左旋轉";
+ToolBar.RotateViewIconBox.RotateViewLeft.Help      = "將視圖向左旋轉";
+ToolBar.RotateViewIconBox.RotateViewLeft.LongHelp  = "向左旋轉 \n 將視圖向左旋轉";
+
+ToolBar.SwapViewIconBox.SwapViewHoriz.Title      = "垂直翻轉";
+ToolBar.SwapViewIconBox.SwapViewHoriz.ShortHelp  = "垂直翻轉";
+ToolBar.SwapViewIconBox.SwapViewHoriz.Help       = "將視圖垂直翻轉";
+ToolBar.SwapViewIconBox.SwapViewHoriz.LongHelp   = "垂直翻轉 \n 將視圖垂直翻轉";
+
+ToolBar.SwapViewIconBox.SwapViewVertic.Title     = "水平翻轉";
+ToolBar.SwapViewIconBox.SwapViewVertic.ShortHelp = "水平翻轉";
+ToolBar.SwapViewIconBox.SwapViewVertic.Help      = "將視圖水平翻轉";
+ToolBar.SwapViewIconBox.SwapViewVertic.LongHelp  = "水平翻轉 \n 將視圖水平翻轉";
+
+FrameDefinition.SectionViewerOptions.SectionGrid.Title             = "格狀";
+FrameDefinition.SectionViewerOptions.SectionGrid.ShortHelp         = "格狀";
+FrameDefinition.SectionViewerOptions.SectionGrid.Help              = "顯示結果視窗的格點";
+FrameDefinition.SectionViewerOptions.SectionGrid.LongHelp          = "格狀 \n 顯示結果視窗的格點";
+
+FrameDefinition.SectionViewerOptions.SectionGridEditor.Title       = "編輯格狀";
+FrameDefinition.SectionViewerOptions.SectionGridEditor.ShortHelp   = "編輯格狀";
+FrameDefinition.SectionViewerOptions.SectionGridEditor.Help        = "打開或關閉格狀內容的對話框";
+FrameDefinition.SectionViewerOptions.SectionGridEditor.LongHelp    = "編輯格狀 \n 打開或關閉格狀內容的對話框";
+
+ToolBar.ExitCommand.Title          = "退出";
+ToolBar.ExitCommand.ShortHelp      = "退出";
+ToolBar.ExitCommand.Help           = "結束切面結果編輯";
+ToolBar.ExitCommand.LongHelp       = "結束切面結果編輯";
+
+NetOfPlaneDefinition.Title = "網狀平面";
+NetOfPlaneDefinition.LongHelp = "網狀平面 \n 設定網狀平面的數目 ";
+
+NetOfPlaneDefinition.NbrPlaneLbl.Title = "平面數目:";
+NetOfPlaneDefinition.NbrPlaneLbl.LongHelp = "平面數目 \n 設定網狀平面的數目 ";
+
+More = "詳細 >>" ;
+Less = "<< 簡單" ;
+
+ToolBar.PositionTargetIconBox.PositionTarget.Title          = "選擇";
+ToolBar.PositionTargetIconBox.PositionTarget.ShortHelp      = "幾何的目標";
+ToolBar.PositionTargetIconBox.PositionTarget.Help           = "以圖形選擇來定位所選工具";
+ToolBar.PositionTargetIconBox.PositionTarget.LongHelp       = "幾何的目標 \n 以圖形選擇來定位所選工具";
+
+ToolBar.PositionTargetIconBox.PositionTargetCylinder.Title          = "選擇";
+ToolBar.PositionTargetIconBox.PositionTargetCylinder.ShortHelp      = "幾何的目標";
+ToolBar.PositionTargetIconBox.PositionTargetCylinder.Help           = "以圖形選擇來定位所選工具";
+ToolBar.PositionTargetIconBox.PositionTargetCylinder.LongHelp       = "幾何的目標 \n 以圖形選擇來定位所選工具 \n 偵測孔及圓柱, 和切面的位置與物件垂直";
+
+FrameDimensions.PositionTarget.Title          = "選擇";
+FrameDimensions.PositionTarget.ShortHelp      = "幾何的目標";
+FrameDimensions.PositionTarget.Help           = "以圖形選擇來定位所選工具, 偵測孔或圓柱";
+FrameDimensions.PositionTarget.LongHelp       = "幾何的目標 \n 以圖形選擇來定位所選工具 \n 偵測孔及圓柱, 和切面的位置與物件垂直";
+
+SECTIONPLANE.TypeName     = "切面平面";
+SECTION_RESULT.TypeName   = "切面";
+
+SectionPlaneAttribute		= "平面尺寸" ;
+
+
+
+TabContSection.FrameDimensions.PlaneNormaleLabel.Title = "垂直限制:" ;
+TabContSection.FrameDimensions.PlaneNormaleLabel.LongHelp = "定義平面的垂直" ;
+TabContSection.FrameDimensions.PlaneNormaleFrame.LongHelp = "定義平面的垂直" ;
+TabContSection.FrameDimensions.PlaneNormaleFrame.PlaneNormaleX.Title = "X" ;
+TabContSection.FrameDimensions.PlaneNormaleFrame.PlaneNormaleY.Title = "Y" ;
+TabContSection.FrameDimensions.PlaneNormaleFrame.PlaneNormaleZ.Title = "Z" ;
+
+TabContSection.FrameDefinition.Title                = "定義";
+TabContSection.FrameDefinition.ShortHelp                = "定義";
+TabContSection.FrameDefinition.LongHelp             = "讓您定義切面平面名稱和選擇您要完成的切面";
+
+TabContSection.FrameDimensions.Title                = "定位";
+TabContSection.FrameDimensions.ShortHelp                = "定位";
+TabContSection.FrameDimensions.LongHelp                = "定義切面的位置和尺寸工具組";
+
+TabContSection.FrameResult.Title                = "結果";
+TabContSection.FrameResult.ShortHelp                = "結果";
+TabContSection.FrameResult.LongHelp                = "定義切面結果行為的工具組" ;
+
+TabContSection.FrameOutput.Title                = "行為";
+TabContSection.FrameOutput.ShortHelp                = "行為";
+TabContSection.FrameOutput.LongHelp                = "定義命令外平面的行為工具";
+
+
+TabContSection.FrameDimensions.InvisibleLabel1.Title = "   " ;
+TabContSection.FrameDimensions.InvisibleLabel2.Title = "   " ;
+TabContSection.FrameDimensions.InvisibleLabel3.Title = "   " ;
+TabContSection.FrameDimensions.InvisibleLabel4.Title = "   " ;
+
+TabContSection.FrameDimensions.Position3Points.ShortHelp = "以 2/3 選擇定位" ;
+TabContSection.FrameDimensions.Position3Points.Help = "以 2/3 選擇定位" ;
+TabContSection.FrameDimensions.Position3Points.LongHelp = "以選取 3 點, 2 線或 1 點或 1 線來定位" ;
+
+ErreurPointSame = "請選取與前一選擇不同的點" ;
+ErreurVectNonCopl = "請選取與前一線共面的線" ;
+ErreurPointLineaire = "請選取與前一選擇不共面的點" ;
+ErreurLignePointLineaire = "請選取不含前一選擇點的線" ;
+ErreurVectIdentical = "請選擇另一線" ;
+
+position3PointState1 = "選取第一選項來鎖定" ;
+position3PointState2 = "選取第二選項來鎖定" ;
+position3PointState3 = "選取第三選項來鎖定" ;
+
+//a rajouter
+TabContSection.FrameOutput.pageOutputFrame.AutoUpdate.Title           = "更新";
+TabContSection.FrameOutput.pageOutputFrame.AutoUpdate.ShortHelp       = "自動更新";
+TabContSection.FrameOutput.pageOutputFrame.AutoUpdate.Help            = "啟動或關閉自動更新";
+TabContSection.FrameOutput.pageOutputFrame.AutoUpdate.LongHelp        = "啟動或關閉自動更新";
+
+TabContSection.FrameOutput.pageOutputFrame.FreezeBut.Title           = "凍結切面";
+TabContSection.FrameOutput.pageOutputFrame.FreezeBut.ShortHelp       = "凍結切面";
+TabContSection.FrameOutput.pageOutputFrame.FreezeBut.Help            = "凍結或釋放切面結果";
+TabContSection.FrameOutput.pageOutputFrame.FreezeBut.LongHelp        = "凍結或釋放切面結果";
+
+TabContSection.FrameOutput.pageOutputFrame.ManualUpdate.Title           = "手動更新";
+TabContSection.FrameOutput.pageOutputFrame.ManualUpdate.ShortHelp       = "手動更新";
+TabContSection.FrameOutput.pageOutputFrame.ManualUpdate.Help            = "啟動或關閉手動更新";
+TabContSection.FrameOutput.pageOutputFrame.ManualUpdate.LongHelp        = "啟動或關閉手動更新";
+
+TabContSection.FrameResult.mySecondLineFrameResult.Title           = "選項";
+TabContSection.FrameResult.mySecondLineFrameResult.iconRempli1.Title = "   " ;
+TabContSection.FrameResult.mySecondLineFrameResult.iconRempli2.Title = "   " ;
+TabContSection.FrameResult.mySecondLineFrameResult.iconRempli40.Title = "   " ;
+TabContSection.FrameResult.myFirstLineFrameResult.iconRempli3.Title = "         " ;
+TabContSection.FrameResult.myFirstLineFrameResult.labelFleche.Title = " -->" ;
+
+TabContSection.FrameResult.myFirstLineFrameResult.NewViewer.Title              = "視窗";
+TabContSection.FrameResult.myFirstLineFrameResult.NewViewer.ShortHelp          = "結果視窗";
+TabContSection.FrameResult.myFirstLineFrameResult.NewViewer.Help               = "開啟或關閉新結果視窗";
+TabContSection.FrameResult.myFirstLineFrameResult.NewViewer.LongHelp           = "結果視窗 \n 開啟或關閉顯示新結果的視窗";
+
+TabContSection.FrameResult.myFirstLineFrameResult.PublishSection.Title           = "輸出成...";
+TabContSection.FrameResult.myFirstLineFrameResult.PublishSection.ShortHelp       = "輸出成";
+TabContSection.FrameResult.myFirstLineFrameResult.PublishSection.Help            = "以不同格式輸出切面";
+TabContSection.FrameResult.myFirstLineFrameResult.PublishSection.LongHelp        = "以不同格式輸出切面";
+
+TabContSection.FrameResult.mySecondLineFrameResult.SectionFilled.Title            = "填滿";
+TabContSection.FrameResult.mySecondLineFrameResult.SectionFilled.ShortHelp        = "切面填滿";
+TabContSection.FrameResult.mySecondLineFrameResult.SectionFilled.Help             = "啟動或關閉切面填滿";
+TabContSection.FrameResult.mySecondLineFrameResult.SectionFilled.LongHelp         = "切面填滿 \n 啟動或關閉切面填滿";
+
+TabContSection.FrameResult.mySecondLineFrameResult.ClashDetection.Title            = "干涉偵測";
+TabContSection.FrameResult.mySecondLineFrameResult.ClashDetection.ShortHelp        = "干涉偵測";
+TabContSection.FrameResult.mySecondLineFrameResult.ClashDetection.Help             = "在第二個檢視器中啟動或關閉自動干涉偵測";
+TabContSection.FrameResult.mySecondLineFrameResult.ClashDetection.LongHelp         = "干涉偵測 \n 在第二個檢視器中啟動或關閉自動干涉偵測";
+
+TabContSection.FrameResult.mySecondLineFrameResult.SectionGrid.Title             = "格線";
+TabContSection.FrameResult.mySecondLineFrameResult.SectionGrid.ShortHelp         = "格線";
+TabContSection.FrameResult.mySecondLineFrameResult.SectionGrid.Help              = "在結果視窗中顯示格線";
+TabContSection.FrameResult.mySecondLineFrameResult.SectionGrid.LongHelp          = "格線 \n 在結果視窗中開啟或關閉格線";
+
+TabContSection.FrameResult.mySecondLineFrameResult.SectionGridEditor.Title       = "編輯格線";
+TabContSection.FrameResult.mySecondLineFrameResult.SectionGridEditor.ShortHelp   = "編輯格線";
+TabContSection.FrameResult.mySecondLineFrameResult.SectionGridEditor.Help        = "開啟或關閉對話框來處理格線性質";
+TabContSection.FrameResult.mySecondLineFrameResult.SectionGridEditor.LongHelp    = "編輯格線 \n 開啟或關閉對話框來處理格線性質";
+
+TabContSection.FrameDimensions.PositionInvert.Title          = "逆轉";
+TabContSection.FrameDimensions.PositionInvert.ShortHelp      = "逆轉垂直方向";
+TabContSection.FrameDimensions.PositionInvert.Help           = "逆轉切面工具的垂直方向";
+TabContSection.FrameDimensions.PositionInvert.LongHelp       = "逆轉垂直 \n 逆轉切面工具的垂直方向";
+
+TabContSection.FrameDimensions.PositionEditor.Title          = "位置和尺寸";
+TabContSection.FrameDimensions.PositionEditor.ShortHelp      = "編輯位置和尺寸";
+TabContSection.FrameDimensions.PositionEditor.Help           = "開啟或關閉對話框來編輯切面工具的位置和尺寸";
+TabContSection.FrameDimensions.PositionEditor.LongHelp       = "編輯位置 \n 開啟或關閉對話框來編輯切面工具的位置和尺寸";
+
+TabContSection.FrameDimensions.PositionReset.Title           = "重設";
+TabContSection.FrameDimensions.PositionReset.ShortHelp       = "重設位置";
+TabContSection.FrameDimensions.PositionReset.Help            = "重設切面至原始位置";
+TabContSection.FrameDimensions.PositionReset.LongHelp        = "重設位置 \n 重設切面至原始位置";
+
+TabContSection.FrameDimensions.PositionTarget.Title          = "選擇";
+TabContSection.FrameDimensions.PositionTarget.ShortHelp      = "幾何元素目的地";
+TabContSection.FrameDimensions.PositionTarget.Help           = "以選擇圖形, 偵測孔和圓柱體形式定位切面工具";
+TabContSection.FrameDimensions.PositionTarget.LongHelp       = "幾何元素目的地 \n 以選擇圖形, 偵測孔和圓柱體形式定位切面工具";
+
+
+TabContSection.FrameDefinition.mySecondFrameDefinition.SectionStyleIconBox.SectionOnePlane.Title        = "平面";
+TabContSection.FrameDefinition.mySecondFrameDefinition.SectionStyleIconBox.SectionOnePlane.ShortHelp    = "切面";
+TabContSection.FrameDefinition.mySecondFrameDefinition.SectionStyleIconBox.SectionOnePlane.Help         = "使用平面來當做切面";
+TabContSection.FrameDefinition.mySecondFrameDefinition.SectionStyleIconBox.SectionOnePlane.LongHelp     = "切面 \n 使用平面來當做切面";
+
+TabContSection.FrameDefinition.mySecondFrameDefinition.SectionStyleIconBox.SectionSlice.Title           = "分隔";
+TabContSection.FrameDefinition.mySecondFrameDefinition.SectionStyleIconBox.SectionSlice.ShortHelp       = "分隔切面";
+TabContSection.FrameDefinition.mySecondFrameDefinition.SectionStyleIconBox.SectionSlice.Help            = "使用兩平行面當做切面工具";
+TabContSection.FrameDefinition.mySecondFrameDefinition.SectionStyleIconBox.SectionSlice.LongHelp        = "分隔切面 \n 使用兩平行面當做切面工具";
+
+TabContSection.FrameDefinition.mySecondFrameDefinition.SectionStyleIconBox.SectionClippBox.Title        = "盒";
+TabContSection.FrameDefinition.mySecondFrameDefinition.SectionStyleIconBox.SectionClippBox.ShortHelp    = "切面盒";
+TabContSection.FrameDefinition.mySecondFrameDefinition.SectionStyleIconBox.SectionClippBox.Help         = "使用切面盒當做切面工具";
+TabContSection.FrameDefinition.mySecondFrameDefinition.SectionStyleIconBox.SectionClippBox.LongHelp     = "切面盒 \n 使用切面盒當做切面工具";
+
+TabContSection.FrameDefinition.mySecondFrameDefinition.Section3DCut.Title            = "切";
+TabContSection.FrameDefinition.mySecondFrameDefinition.Section3DCut.ShortHelp        = "切體積";
+TabContSection.FrameDefinition.mySecondFrameDefinition.Section3DCut.Help             = "開啟或關閉切體積";
+TabContSection.FrameDefinition.mySecondFrameDefinition.Section3DCut.LongHelp         = "切體積 \n 啟動時以平面將材料清除, 產品中在隔面或盒狀以外的都將被視為穴狀. 關閉時將重新顯現移除材料";
+
+TabContSection.FrameResult.myFirstLineFrameResult.iconRempli4.Title = "          " ;
+
+TabContSection.FrameResult.myFirstLineFrameResult.SectionGridEditor.Title       = "編輯格線";
+TabContSection.FrameResult.myFirstLineFrameResult.SectionGridEditor.ShortHelp   = "編輯格線";
+TabContSection.FrameResult.myFirstLineFrameResult.SectionGridEditor.Help        = "開啟或關閉格線性質管理對話框";
+TabContSection.FrameResult.myFirstLineFrameResult.SectionGridEditor.LongHelp    = "開啟或關閉格線性質管理對話框";
+
+TabContSection.FrameDefinition.mySecondFrameDefinition.spaceLabel1.Title = "     " ;
+TabContSection.FrameDefinition.mySecondFrameDefinition.spaceLabel2.Title = "  " ;
+
+TabContSection.FrameDimensions.InvisibleLabel0.Title = "      " ;
+
+
+
+UpdateContainer = "行為" ;
+
+
+
+
+TabContSection.FrameGeneralP1.Title                = "定義";
+TabContSection.FrameGeneralP1.ShortHelp                = "定義";
+TabContSection.FrameGeneralP1.LongHelp             = "讓您定義切面名稱和選擇要執行在那一個切面";
+
+TabContSection.FrameDimensionsP1.Title                = "定位";
+TabContSection.FrameDimensionsP1.ShortHelp                = "定位";
+TabContSection.FrameDimensionsP1.LongHelp                = "定義切面位置和尺寸的工具";
+
+
+TabContSection.FrameGeneralP1.Section3DCut.Title            = "切";
+TabContSection.FrameGeneralP1.Section3DCut.ShortHelp        = "切體積";
+TabContSection.FrameGeneralP1.Section3DCut.Help             = "啟動或關閉切體積";
+TabContSection.FrameGeneralP1.Section3DCut.LongHelp         = "切體積 \n 啟動以平面移除材料, 可顯示零件的中間形狀. 關閉切面可獲得原來的零件形狀";
+
+TabContSection.FrameGeneralP1.NewViewer.Title              = "視窗";
+TabContSection.FrameGeneralP1.NewViewer.ShortHelp          = "結果視窗";
+TabContSection.FrameGeneralP1.NewViewer.Help               = "開啟或關閉新的結果視窗";
+TabContSection.FrameGeneralP1.NewViewer.LongHelp           = "結果視窗 \n 開啟或關閉新的結果視窗";
+
+TabContSection.FrameGeneralP1.spaceLabel1.Title = "                " ;
+
+TabContSection.FrameDimensionsP1.PlaneNormaleLabel.Title = "     垂直拘束:    " ;
+TabContSection.FrameDimensionsP1.PlaneNormaleLabel.LongHelp = "定義零件的垂直" ;
+TabContSection.FrameDimensionsP1.PlaneNormaleFrame.LongHelp = "定義零件的垂直" ;
+TabContSection.FrameDimensionsP1.PlaneNormaleFrame.PlaneNormaleX.Title = " X    " ;
+TabContSection.FrameDimensionsP1.PlaneNormaleFrame.PlaneNormaleY.Title = " Y    " ;
+TabContSection.FrameDimensionsP1.PlaneNormaleFrame.PlaneNormaleZ.Title = " Z    " ;
+
+TabContSection.FrameDimensionsP1.InvisibleLabel0.Title = "      " ;
+TabContSection.FrameDimensionsP1.InvisibleLabel1.Title = "      " ;
+TabContSection.FrameDimensionsP1.InvisibleLabel2.Title = "      " ;
+TabContSection.FrameDimensionsP1.InvisibleLabel3.Title = "      " ;
+TabContSection.FrameDimensionsP1.InvisibleLabel4.Title = "      " ;
+
+TabContSection.FrameDimensionsP1.Position3Points.ShortHelp = "以選擇 2/3 來定位" ;
+TabContSection.FrameDimensionsP1.Position3Points.Help = "以選擇 2/3 來定位" ;
+TabContSection.FrameDimensionsP1.Position3Points.LongHelp = "以選擇 3 個點, 2 線或 1 點 / 1 線來定位" ;
+
+TabContSection.FrameDimensionsP1.PositionInvert.Title          = "逆轉";
+TabContSection.FrameDimensionsP1.PositionInvert.ShortHelp      = "逆轉垂直";
+TabContSection.FrameDimensionsP1.PositionInvert.Help           = "逆轉切面工具的垂直";
+TabContSection.FrameDimensionsP1.PositionInvert.LongHelp       = "逆轉垂直 \n 逆轉切面工具的垂直";
+
+TabContSection.FrameDimensionsP1.PositionEditor.Title          = "定位和標尺寸";
+TabContSection.FrameDimensionsP1.PositionEditor.ShortHelp      = "編輯位置和尺寸";
+TabContSection.FrameDimensionsP1.PositionEditor.Help           = "開啟或關閉編輯切面工具位置和尺寸的對話框";
+TabContSection.FrameDimensionsP1.PositionEditor.LongHelp       = "編輯位置 \n 開啟或關閉編輯切面工具位置和尺寸的對話框";
+
+TabContSection.FrameDimensionsP1.PositionReset.Title           = "重設";
+TabContSection.FrameDimensionsP1.PositionReset.ShortHelp       = "重設位置";
+TabContSection.FrameDimensionsP1.PositionReset.Help            = "重設切面工具位置至原點位置";
+TabContSection.FrameDimensionsP1.PositionReset.LongHelp        = "重設位置 \n 重設切面工具位置至原點位置";
+
+TabContSection.FrameDimensionsP1.PositionTarget.Title          = "選擇";
+TabContSection.FrameDimensionsP1.PositionTarget.ShortHelp      = "幾何目標";
+TabContSection.FrameDimensionsP1.PositionTarget.Help           = "以圖形選擇的位置和切面工具, 偵測孔和圓柱";
+TabContSection.FrameDimensionsP1.PositionTarget.LongHelp       = "幾何目標 \n 以圖形選擇的位置和切面工具, 偵測孔和圓柱, 並定義切面與物件垂直";
+
+TabContSection.FrameResult.myFirstLineFrameResult.Section3DCut.Title            = "切";
+TabContSection.FrameResult.myFirstLineFrameResult.Section3DCut.ShortHelp        = "切體積";
+TabContSection.FrameResult.myFirstLineFrameResult.Section3DCut.Help             = "啟動或關閉切體積";
+TabContSection.FrameResult.myFirstLineFrameResult.Section3DCut.LongHelp         = "切體積 \n 啟動以平面移除材料, 可顯示零件的中間形狀. 關閉切面可獲得原來的零件形狀";
+
+TabContSection.FrameDefinition.mySecondFrameDefinition.CutOrCulling.Section3DCut.Title            = "切";
+TabContSection.FrameDefinition.mySecondFrameDefinition.CutOrCulling.Section3DCut.ShortHelp        = "切體積";
+TabContSection.FrameDefinition.mySecondFrameDefinition.CutOrCulling.Section3DCut.Help             = "啟動或關閉切體積";
+TabContSection.FrameDefinition.mySecondFrameDefinition.CutOrCulling.Section3DCut.LongHelp         = "切體積 \n 啟動以平面移除材料, 可顯示零件的中間形狀. 關閉切面可獲得原來的零件形狀";
+
+TabContSection.FrameDefinition.mySecondFrameDefinition.CutOrCulling.SectionMask.Title            = "遮護";
+TabContSection.FrameDefinition.mySecondFrameDefinition.CutOrCulling.SectionMask.ShortHelp        = "切面遮護";
+TabContSection.FrameDefinition.mySecondFrameDefinition.CutOrCulling.SectionMask.Help             = "啟動或關閉切面遮護";
+TabContSection.FrameDefinition.mySecondFrameDefinition.CutOrCulling.SectionMask.LongHelp         = "切體積 \n 啟動可得到以平面移除材料, 關閉可將材料重新載入";

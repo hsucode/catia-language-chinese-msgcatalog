@@ -1,0 +1,45 @@
+// COPYRIGHT DASSAULT SYSTEMES  2005
+//=============================================================================
+//
+// CATCoServicesInputError.CATNls :
+// En_US                                 
+//
+//=============================================================================
+// Goal             : Input Error Catalog used for Sheet Metal Model
+// Owner            : sye
+// Creation date    : 11/10/2005
+// Usage notes      : This error is dedicated to end user input 
+// 
+// Message example : 
+// CATCoServicesInputError_ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// CATCoServicesInputError_ERR_2000.Diagnostic = "Un des parametres est negatif";
+// CATCoServicesInputError_ERR_2000.Advice     = "Utilisez des parametres positifs";         
+//=============================================================================
+
+// general error 1-100
+CATCoServicesInputError_ERR_0001.Request    = "";
+CATCoServicesInputError_ERR_0001.Diagnostic = 
+"本體相關特徵 /p1 無效.";
+CATCoServicesInputError_ERR_0001.Advice     = "";         
+
+//
+// reserved error 101-200 for multi splice gen  
+//
+CATCoServicesInputError_ERR_0101.Request    = "";
+CATCoServicesInputError_ERR_0101.Diagnostic = 
+"輸入 ply 數目無效.";
+CATCoServicesInputError_ERR_0101.Advice     = "";         
+
+CATCoServicesInputError_ERR_0102.Request    = "";
+CATCoServicesInputError_ERR_0102.Diagnostic = 
+"輸入 splice 曲線無效.";
+CATCoServicesInputError_ERR_0102.Advice     = "";         
+
+CATCoServicesInputError_ERR_0103.Request    = "";
+CATCoServicesInputError_ERR_0103.Diagnostic = 
+"圓柱 ply /p 的切層結果
+為多重區域且無內在輪廓.";
+CATCoServicesInputError_ERR_0103.Advice     = 
+"如 ply 含有內部輪廓, 前兩條 splicing 曲線
+不可與內部輪廓相交";         
+

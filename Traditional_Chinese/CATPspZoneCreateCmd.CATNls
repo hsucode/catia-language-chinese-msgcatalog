@@ -1,0 +1,54 @@
+//=============================================================================
+//                                     CNEXT - CXR5
+//                          COPYRIGHT DASSAULT SYSTEMES 2000 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATPspZoneCreateCmd.CATNls
+// FRAMEWORK   :    CATPlantShipUI
+// AUTHOR      :    jcz
+// DATE        :    March 2001
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Schematic Platform Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//                 kkn   5/02    DSA TR VSHI-59AMYS Clarify InvalidDirectoryText
+//------------------------------------------------------------------------------
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// DialogEngine state prompts 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATPspZoneCreateCmd.InitialState.Message="選擇區域等級或鍵入區域號碼";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Information Panel messages 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+NotifyTitle="建立區域";
+
+// Missing Zone Class Information
+NoZoneClassText=
+  "從等級檢視器選取區域來定義將建立的區域等級.";
+// Missing Zone ID Information
+NoZoneIDText=
+  "鍵入將建立的區域號碼."; 
+// Missing everything
+TheWorksText=
+  "從等級檢視器選取及鍵入號碼來定義將建立的區域等級.";
+//Duplicate ID keyed in
+DuplicateZoneIDText=
+  "區域號碼已存在. 請鍵入其它號碼"; 
+//Invalid characters in ID
+InvalidCharactersZoneIDText=
+  "區域號碼存在無效字元. 請鍵入其它號碼";    
+//Invalid directory 
+InvalidDirectoryText=
+  "設定 XML 計劃檔案區域的存取權限.";  
+//NO directory defined
+NoDirectoryDefinedText=
+  "在 工具組 + 選擇 中定義的目錄是無效的. 請指定其它目錄";
+
+

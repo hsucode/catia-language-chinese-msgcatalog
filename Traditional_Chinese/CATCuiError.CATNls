@@ -1,0 +1,51 @@
+//---------------------------------------------------------------
+// Resource file for CATCuiError class
+// Us
+//---------------------------------------------------------------
+ErrorTitle           = "錯誤";
+
+//Erreurs pour les chapitre
+ExistingChapterName  = "章節名稱已存在";
+NoChapterName        = "先定義名稱";
+
+//Erreurs pour les mots-cles
+ExistingKeyName      = "關鍵字名稱已存在";
+NoKeyName            = "先定義名稱";
+
+//Erreurs pour les descriptions
+NoDescCreate         = "此章節中無法加入說明";
+NoDescName           = "先定義名稱";
+AlreadyLoaded        = "無法以新的方式開啟此文件, \n 此文件在工作中已開啟";
+NoOpen               = "無法開啟文件";
+
+//Erreurs pour les deletes
+NoDelete			 = "無法刪除此物件";
+NoDelete1			 = "無法刪除此根章節";
+NoDelete2			 = "無法刪除目前文件";
+
+//Erreurs pour la selection du composant a pointer
+PointedObjDocIsToBeSaved = "所選物件的擁有者文件必須先儲存才能執行此動作.";
+
+UnkLink            = "未知情形";
+//Erreur pour les liens casses
+BrokenLink         = "打斷";
+ObjectNotFound     = "在檔案 /p1 \n 中無法發現參考物件. \n 此物件可能已被刪除.";
+
+//Warning pour le copy de keywords
+NoKeywordsToCopy	= "沒有關鍵字可複製.";
+TitleWarning		= "警告";
+
+//Erreur pour les problemes d'instanciations non supportees
+NoInstanciation   = "此類型的物件無法複製 (/p1).\n";
+
+//Error when the "Open" command is launch on a description and the reference document is already opened.
+alreadyOpenedAs="動作失敗 \n 程序中已存在相同名稱檔案 \n 請先移除程序中的檔案再執行此動作";
+
+//Error for Re-synchronize command
+NoCatalogInSession      ="目前程序中未開啟目錄...";
+// CatalogNotOpenFromENOVIA="The catalog cannot be opened from Enovia...";
+CatalogNotOpened        ="目錄無法開啟...";
+ErrorRetrieveRootChapter="從目錄中無法萃取根章節...";
+ErrorResolvingQuery     ="應用過濾器時發生錯誤...";
+
+PointedObjDocIsACatalog = "所選文件不能是目錄.";

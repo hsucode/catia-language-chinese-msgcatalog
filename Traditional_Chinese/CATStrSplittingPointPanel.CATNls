@@ -1,0 +1,26 @@
+// Dialog Component
+// Panel Point on Curve for System Split command
+
+//-------------------------------------------------------------------------------------------
+//Panel title
+//-------------------------------------------------------------------------------------------
+Title="分割點";
+
+//-------------------------------------------------------------------------------------------
+//Distance section
+//-------------------------------------------------------------------------------------------
+DstRadFrm.LongHelp="Determines whether the split point \nis to be created at a: \n- given distance along the curve \n    from the reference point \n- given curve length ratio\n    from the reference point.";
+
+DstRadFrm.DstLenRad.Title="曲線上距離:";
+DstRadFrm.DstRatRad.Title="曲線長度比率:";
+
+//-------------------------------------------------------------------------------------------
+//Reference section
+//-------------------------------------------------------------------------------------------
+RefSep.Label.Title="參考 ";
+
+RefLbl.Title   ="點:";
+RefEdt.LongHelp="Specifies the point used as reference when defining the split point.";
+
+DirBtn.Title   ="逆轉方向";
+DirBtn.LongHelp="Creates the split point on the other side of the reference point.";

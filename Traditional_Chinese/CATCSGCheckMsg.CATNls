@@ -1,0 +1,241 @@
+//Framework FromSolidV4toPart
+ 
+//---------------------------------------------------------------------------
+CatgeoError1 = " 所選的 CATIA V4 元素 /P1 含有不好的資料結構 ";
+CatgeoError2 = " 從 /P2 所選的 CATIA V4 元素 /P1 含有不好的資料結構 ";
+CatgeoError3 = " CATIA V4 Jele 元素 /P1 含有不好的資料結構 ";
+//---------------------------------------------------------------------------
+GeometryStatusNYI="/P1 動作未執行";
+GeometryStatusCPb="/P1 連續問題";
+GeometryStatusAsRt="/P1 只有幾何檢查";
+GeometryStatusError="無 V4 實體元素";
+GeometryStatusV3Isolated="獨立的 Mock-up 實體元素";
+GeometryStatusV3Isolated2="無歷程 => 以 CGR 轉移";
+GeometryStatusCSGReadingPb="讀取 CSG 時發生錯誤";
+GeometryStatusV3NonIsolated="無獨立的 Mock-up 實體元素";
+GeometryStatusV3NonIsolated2="如果 CP 是結果 --> 建立 cgr 檔案";
+//---------------------------------------------------------------------------
+MigreV3IsolatedResult="獨立的 Mock-up 實體元素 /P1 的轉檔結果 : ";
+MigreV3IsolatedSpec="特殊獨立的 Mock-up 實體元素 /P1 的轉檔結果 : ";
+MigreV3Isolated="獨立的 Mock-up 實體元素 /P1 未貼上";
+MigreV3Result="獨立的 Mock-up 實體元素 /P1 : ";
+MigreV3Spec="特殊獨立的 Mock-up 實體元素 /P1 : ";
+MigreV3="- 產生的 cgr 檔案將會置入模形儲存的目錄";
+PbCreationCGR  = " - 建立 cgr 檔案失敗 : 目錄中的模型只供讀取";
+NoCreationCGR=" - 沒有建立 cgr 檔案";
+// JNV
+MigreV3NoCGRButResult1="- CATMigrSolidMUV4AsPart 設定已啟動";
+MigreV3NoCGRButResult2=" V3 實體 /P1 升級需要 如結果 以取代 如 cgr";
+//BLI NLS Action
+MigreSolidTopologyPb=" 無效或沒有執行說明導致轉換失敗. ";
+CreatedByTheFeature=" 以特徵建立 ";
+withJELE=" 以 JELE ";
+InternalError=" 內部錯誤 ";
+Brepfrom="由 Brep "; 
+from=" 由 ";
+InvalidBrepGeometry=" 無效幾何 ";
+Context="內容 ";
+Localisation="局部化 "; 
+//
+PbReadingCSG="當讀取實體 /P1 CSG 歷程樹時發生問題 : ";
+TransferMockUp     = "Mock-up 實體元素 /P1 未貼上 : ";
+//
+CheckError="檢查錯誤";
+//---------------------------------------------------------------------------
+SketchCRV   = "/P1: 無效的 CRVs";
+SketchCCV   = "/P1: CCVs 未支援";
+SketchError = "未知的草圖";
+//---------------------------------------------------------------------------
+OperationNYI="/P1 操作未執行";
+Impossible="/P1 不可貼上";
+PrimitiveNYI="/P1 動作未執行";
+UnaryOpError="/P1: 無效的元件";
+TriTangent       = "三切圓角未支援";
+MultiRuban       = "多重圓角";
+MultiBloc        = "具不等半徑的多重圓角";
+NoEdge           = "無邊定義";
+NoRadius         = "無特定半徑";
+NoRollingEdgeFil = "圓角上未定義滾動邊 : ";
+NoRollingEdge    = "滾動邊圓角未定義 : ";
+VariableFil      = "變化半徑 : ";
+//
+MultiParting     = "多重分模面";
+MultiNeutral     = "多重中界面";
+MultiAngle       = "多重角度 ";
+ImplicitDir      = "隱藏方向";
+NoFaces          = "沒有修剪面可供拔模";
+KeepEdge         = "保持邊的拔模反射未支援 ";
+KeepFace         = "保持修剪面的拔模反射未支援 ";
+DraftNeutral     = "中界面下的拔模未支援";
+NoPropag         = "無衍生";
+DraftBothSideAndMultiAngle   = "未支援雙側及多重角度脫模面 ";
+DraftBothSideAndMultiNeutral = "未支援雙側及多重中界面 ";
+DraftBothSide                = "未支援雙側脫模面 ";
+DraftMultiNeutral            = "未支援多重中界面 ";
+DraftMultiDir                = "未支援多重脫模方向 ";
+//
+AssembleError0    = "組立動作"; 
+AssembleError     = "組立動作未執行"; 
+//Chamfrein
+MultiConstraintBloc = "錯誤拘束";
+ImpossibleMode      = "建立倒角時發生錯誤 ";
+BadCreation         = "建立錯誤: ";
+
+//Transfor
+MultiConstraints    = "多重拘束 ";
+UnknownConstraint   = "未知拘束 ";
+InnerTransformation = "內部轉換";
+ImpossiblePattern   = "陣列不是移動或旋轉 ";
+
+//Datum
+NotC2Close        = "一個內部的修剪面不是 C2 ";
+NotC2Face         = "修剪面不是 C2";
+NotC2Offset       = "一個偏移的修剪面不是 C2 ";
+NotSmartSolid0    = "不是智慧實體";
+NotSmartSolid     = "不是智慧實體";
+NotC2Proj         = "一個投影內部的修剪面不是 C2 ";
+NotC2Surface      = "曲面不是 C2 ";
+NotUpdatedSolid   = "實體未更新";
+NotC2Volume       = "一個體積的修剪面不是 C2 ";
+BadMacroPrim      = "錯誤的集合式元件";
+NotC2Pyramid      = "一個三角柱的修剪面不是 C2 ";
+NotC2Sweep        = "一個掃掠的修剪面不是 C2 ";
+NotC2Import       = "一個輸入的修剪面不是 C2 ";
+MultipleBodyDatum = "基準含有多重本體";
+InactivatedDatum  = "不啟動基準 --> 不會溶入";
+OKResultGeometry="幾何檢查 OK";
+KOResultGeometry="幾何檢查 KO";
+//---------------------------------------------------------------------------
+OperationStatusNYI = "動作未執行";
+OperationStatusAF  = "元件聲明失敗";
+//---------------------------------------------------------------------------
+UnaryOpNYI         ="Unary 動作未執行 :";
+BinaryOpNYI        ="數值動作未執行 :";
+PrimNYI            ="元件未支援:";
+TypeNYI            ="/P1 形式";
+OtherKONYI         ="動作 (neither unary nor binary) 尚未執行";
+
+//---------------------------------------------------------------------------
+//                        Messages integrant des donnees suplementaires
+//---------------------------------------------------------------------------
+TransferBRepGal1 = "CATIA V4 元素 /P1 尚未貼上";
+TransferBRepGal2 = "CATIA V4 元素 /P2 因為 /P1 只有部分貼上";
+TransferBRepGal3 = "CATIA V4 Jele 元素 /P1 尚未貼上";
+//
+TransferBRepPoint1 = "CATIA V4 點 /P1 未被貼上";
+TransferBRepPoint2 = "CATIA V4 點 /P2 因為 /P2 只有部分被貼上";
+TransferBRepPoint3 = "CATIA V4 Jele 點 /P1 未被貼上";
+//
+TransferBRepCurve1 = "CATIA V4 曲線 /P1 尚未貼上";
+TransferBRepCurve2 = "The CATIA V4 曲線 /P1 已被打斷成好幾段並已被部分貼上";
+TransferBRepCurve3 = "The CATIA V4 Jele 曲線 /P1 尚未貼上";
+//
+TransferBRepLine1 = "CATIA V4 線元素 /P1 尚未貼上";
+TransferBRepLine2 = "CATIA V4 線元素 /P2 因為 /P1 只有部分貼上";
+TransferBRepLine3 = "CATIA V4 Jele 線元素 /P1 尚未貼上";
+//
+TransferBRepSurface1 = "CATIA V4 曲面元素 /P1 尚未貼上";
+TransferBRepSurface2 = "The CATIA V4 曲面 /P1 已被打斷成好幾段並已被部分貼上";
+TransferBRepSurface3 = "CATIA V4 Jele 曲面元素 /P1 尚未貼上";
+//
+TransferBRepPlane1 = "CATIA V4 平面元素 /P1 尚未貼上";
+TransferBRepPlane2 = "CATIA V4 平面元素 /P2 因為 /P1 只有部分貼上";
+TransferBRepPlane3 = "CATIA V4 Jele 平面元素 /P1 尚未貼上";
+//
+TransferBRepFace1 = "CATIA V4 修剪面元素 /P1 尚未貼上";
+TransferBRepFace2 = "The CATIA V4 修剪面 /P1 已被打斷成好幾段並已被部分貼上";
+TransferBRepFace3 = "CATIA V4 Jele 修剪面元素 /P1 尚未貼上";
+//
+TransferBRepSki1 = "CATIA V4 集合面 /P1 尚未貼上";
+TransferBRepSki2 = "The CATIA V4 集合面 /P1 已被打斷成好幾段並已被部分貼上";
+TransferBRepSki3 = "CATIA V4 Jele 集合面元素 /P1 尚未貼上";
+//
+TransferBRepVol1 = "CATIA V4 體積 /P1 尚未貼上";
+TransferBRepVol2 = "The CATIA V4 體積 /P1 已被打斷成好幾段並已被部分貼上";
+TransferBRepVol3 = "CATIA V4 Jele 體積 /P1 尚未貼上";
+//
+TransferBRepBRep1 = "CATIA V4 brep /P1 尚未貼上";
+TransferBRepBRep2 = "CATIA V4 brep /P2 因為 /P1 只有部分貼上";
+TransferBRepBRep3 = "CATIA V4 brep of Jele /P1 尚未貼上";
+//
+TransferBRepSol1 = "CATIA V4 實體 /P1 尚未貼上";
+TransferBRepSol2 = "The CATIA V4 實體 /P1 已被打斷成好幾段並已被部分貼上";
+TransferBRepSol3 = "CATIA V4 Jele 實體  /P1 尚未貼上";
+TransferBRepSol4 = "CATIA V4 實體  /P1 已被部分貼上, 因為";
+// ---------------------------------
+TransferBRepNoHist1 = "CATIA V4 solide /P1 無法貼成 As Specs : 因沒有歷程資料";
+TransferBRepNoHist2 = "CATIA V4 從選擇的 /P2 而來的元素 /P1 無法貼成 As Specs : 因沒有歷程資料";
+TransferBRepNoHist3 = "CATIA V4 solide of Jele /P1 無法貼成 As Specs : 因沒有歷程資料";
+// ---------------------------------
+SolidUpdatedKO= "實體 /P1 無法貼上 :  在 CATIA V4 內未更新";
+// ---------------------------------
+SolidUpdatedV5KO=" SOLID /P1 而來的本體表現出 V5 更新錯誤 ";
+//
+//
+TransferNotSmartSol = "CATIA V4 實體 /P1 尚未貼上, 因為它不是智慧實體";
+//
+TransferBRepDitto1 = "CATIA V4 ditto /P1 尚未貼上";
+TransferBRepDitto2 = "CATIA V4 ditto /P2 因為細部 /P1 只有部分被貼上";
+TransferBRepDitto3 = "CATIA V4 ditto of Jele /P1 尚未貼上";
+//
+TransferBRepDittoCARWL1 = "CATIA V4 ditto /P1 無法以具鏈結來當結果貼上";
+TransferBRepDittoCARWL2 = "從細部 /P1 而來的 CATIA V4 ditto /P2, 無法以具鏈結來當結果貼上";
+TransferBRepDittoCARWL3 = "從細部 Jele /P1 而來的 CATIA V4 ditto /P2, 無法以具鏈結來當結果貼上";
+//
+TransferBRepDetail1 = "CATIA V4 detail /P1 尚未貼上";
+TransferBRepDetail2 = "CATIA V4 detail /P2 因為次元素 /P1 只有部分被貼上";
+TransferBRepDetail3 = "CATIA V4 detail of Jele /P1 尚未貼上";
+//
+TransferBRepDetailPartiel1 = "CATIA V4 detail /P1 部份被貼上";
+TransferBRepDetailPartiel2 = "CATIA V4 detail /P2 因次元素 /P1 導致部份被貼上";
+TransferBRepDetailPartiel3 = "CATIA V4 detail of Jele /P1 部份被貼上";
+//
+TransferCpAsResultWithLink0="- 由 CATIA V4 貼上的細部必須在 V5 中更新, 在執行 CopyAsResultWithLink V5 dittos 之前";
+TransferCpAsResultWithLink1 = "有一個從 CATIA V4 貼上的細部 /P1 元素在本地端 V5 更新時產生錯誤";
+TransferCpAsResultWithLink2 = "有一個從 CATIA V4 貼上的細部 /P2 元素在本地端 V5 /P1 更新時產生錯誤";
+TransferCpAsResultWithLink3 = "有一個從 CATIA V4 貼上的細部 Jele /P1 元素在本地端 V5 更新時產生錯誤";
+//
+
+// ----------------------------------------------------------------------------------------
+TransferDetailMessageGal01 = "使用相當 CATV4ToV5Migration 批次作業.";
+TransferDetailMessageGal02 = "從此 Model 升級至 CATPart 是不適當的.";
+//
+TransferDetailBodies1 = "因 CATIA V4 細部 /P1 含有數個未組合的元件.";
+TransferDetailBodies2 = "因 CATIA V4 細部 /P2 含有數個未組合的元件 : /P1...";
+TransferDetailBodies3 = "因 CATIA V4 細部 Jele /P1 含有數個未組合的元件.";
+//
+TransferDetailFederation01 = "CATIA V5 應人工組立它們.";
+TransferDetailFederation02 = "您要求強制執行它.";
+TransferDetailFederation03 = "強烈建議不要如此執行, 可能導致無法預測的結果.";
+//
+TransferDetailGeom1 = "因 CATIA V4 細部 /P1 只含有幾何. \n 它將會直接升級而不含細部.";
+TransferDetailGeom2 = "因 CATIA V4 細部 /P2 只含有幾何. \n 它將會直接升級而不含細部 /P1...";
+TransferDetailGeom3 = "因 CATIA V4 細部 Jele /P1 只含有幾何. \n 它將會直接升級而不含細部.";
+//
+TransferDetailDittos1 = "因 CATIA V4 細部 /P1 只含有細部.";
+TransferDetailDittos2 = "因 CATIA V4 細部 /P2 只含有細部 : /P1...";
+TransferDetailDittos3 = "因 CATIA V4 細部 Jele /P1 只含有細部.";
+//
+//
+// ----------------------------------------------------------------------------------------
+//
+ConstraintGeometrical="幾何元素";
+ConstraintScanOnCloud="雲形點上掃描";
+//
+// ----------------------------------------------------------------------------------------
+//
+UpdateKOAndInactivate=" - 更新 V4V5 時發生錯誤 - ";
+// 
+// Messages speciaux pour enrichir le nommage des solides
+TreeWithErrorDuringPaste=" _貼上時發生錯誤";
+TreeWithErrorDuringCheck=" _檢查時發生錯誤";
+TreeWithErrorDuringUpdate=" _V5 更新時發生錯誤";
+//
+// ----------------------------------------------------------------------------------------
+//
+ApplyTransfoKO1="移動 /P1 時發生錯誤";
+ApplyTransfoKO2="因為 /P1, 導致移動 /P2 時發生錯誤 ";
+ApplyTransfoKO3="移動 /P1 時發生錯誤";
+//
+
+

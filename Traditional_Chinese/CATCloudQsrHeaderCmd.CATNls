@@ -1,0 +1,364 @@
+//-------------------------------------------------------------------------
+// NLS File for CATCloudQsrCommandHeader Class
+// May 2001 : Creation	; CQO
+// 06/06/01	: CQO ; Mise a jour messages de Help sur les actions externes
+// 07/06/01 : CQO ; Ajout du Split de GSD
+// 08/06/01 : CQO ; Ajout toolbar de transformations
+// 11/06/01 : CDZ ; Modif de CATCloudCanonic vers CATQsrCanonic
+// 11/06/01 : CQO ; Suppression de Union Cloud
+// 13/06/01 : CQO ; Ajout de la projection de GSD
+// 11/09/01 : TTD ; Modif de CATCldPowerFit vers CATQsrPowerFit
+// 17/09/01 : CQO ; Ajout de la commande SliceEdges 
+// 20/09/01 : JLH ; Renomination des composants suivant les canons.
+// 28/09/01 : CQO ; Ajout de la commande Scale GSD
+// 29/01/02 : CQO ; Ajout de la commande FSS Curvature Analysis
+// 19/03/02 : CQO ; Ajout des transfos Affinity et AxisToAxis
+// 28/05/02 : TTD ; Ajout de la commande Free Edges
+// 17/06/02 : CQO ; Ajout de la commande AdjustNode
+// 23/12/02 : CQO ; Ajout de la commande Connect
+// 27/08/02 : CQO ; Ajout de la commande CurveNetwork
+// 30/01/03 - CQO - Suppression de la commande Connect de GSD (ca occupe ...)
+// 12/02/03 - CQO - Ajout de la barre d'outils WireFrame (Point, Ligne, Plan et Cercle de GSD).
+// 06/10/03 - CQO - OpenBody devient Geometrical set
+// 25/01/05 - CQO - Correction RI A481188 Loft -> multi-sections
+//-------------------------------------------------------------------------
+//
+// ==============================================================================================
+// Les headers de commandes Cloud QSR
+// ==============================================================================================
+
+CATCloudQsrHeaderCmd.CATQsrCreateCleanCtHdr.Title = "清理外形...";
+CATCloudQsrHeaderCmd.CATQsrCreateCleanCtHdr.ShortHelp = "清理外形";
+CATCloudQsrHeaderCmd.CATQsrCreateCleanCtHdr.Help = "建立清理外形";
+CATCloudQsrHeaderCmd.CATQsrCreateCleanCtHdr.LongHelp = 
+"清理外形
+建立清理外形";
+
+CATCloudQsrHeaderCmd.CATQsrAdjustNodeHdr.Title = "調整節點...";
+CATCloudQsrHeaderCmd.CATQsrAdjustNodeHdr.ShortHelp = "調整節點";
+CATCloudQsrHeaderCmd.CATQsrAdjustNodeHdr.Help = "在節點上設定連續拘束";
+CATCloudQsrHeaderCmd.CATQsrAdjustNodeHdr.LongHelp = 
+"調整節點
+在節點上設定連續拘束 (曲線與切面相合)";
+
+CATCloudQsrHeaderCmd.CATQsrCanonicHdr.Title = "基本曲面辨認...";
+CATCloudQsrHeaderCmd.CATQsrCanonicHdr.ShortHelp = "基本曲面辨認";
+CATCloudQsrHeaderCmd.CATQsrCanonicHdr.Help = "基本曲面辨認";
+CATCloudQsrHeaderCmd.CATQsrCanonicHdr.LongHelp = 
+"基本曲面辨認
+基本曲面辨認";
+
+CATCloudQsrHeaderCmd.CATQsrPowerFitHdr.Title = "進階配合...";
+CATCloudQsrHeaderCmd.CATQsrPowerFitHdr.ShortHelp = "進階配合";
+CATCloudQsrHeaderCmd.CATQsrPowerFitHdr.Help = "進階配合";
+CATCloudQsrHeaderCmd.CATQsrPowerFitHdr.LongHelp = 
+"進階配合
+進階配合";
+
+CATCloudQsrHeaderCmd.CATQsrCurvatureHdr.Title = "曲率分割...";
+CATCloudQsrHeaderCmd.CATQsrCurvatureHdr.ShortHelp = "曲率標準分割";
+CATCloudQsrHeaderCmd.CATQsrCurvatureHdr.Help = "沿曲率線分割";
+CATCloudQsrHeaderCmd.CATQsrCurvatureHdr.LongHelp = 
+"曲率分割
+沿曲率線分割";
+
+CATCloudQsrHeaderCmd.CATQsrSlopeHdr.Title = "斜率分割...";
+CATCloudQsrHeaderCmd.CATQsrSlopeHdr.ShortHelp = "斜率標準分割"; 
+CATCloudQsrHeaderCmd.CATQsrSlopeHdr.Help = "沿斜率線分割";
+CATCloudQsrHeaderCmd.CATQsrSlopeHdr.LongHelp = 
+"斜率分割
+沿斜率線分割";
+
+CATCloudQsrHeaderCmd.CATQsrSliceEdgesHdr.Title = "曲線切片...";
+CATCloudQsrHeaderCmd.CATQsrSliceEdgesHdr.ShortHelp = "曲線切片"; 
+CATCloudQsrHeaderCmd.CATQsrSliceEdgesHdr.Help = "切片曲線";
+CATCloudQsrHeaderCmd.CATQsrSliceEdgesHdr.LongHelp = 
+"曲線切片
+切片曲線";
+
+CATCloudQsrHeaderCmd.CATQsrCreateCurveNetworkHdr.Title = "曲線網格...";
+CATCloudQsrHeaderCmd.CATQsrCreateCurveNetworkHdr.ShortHelp = "曲線網格"; 
+CATCloudQsrHeaderCmd.CATQsrCreateCurveNetworkHdr.Help = "建立曲線網格"; 
+CATCloudQsrHeaderCmd.CATQsrCreateCurveNetworkHdr.LongHelp = 
+"曲線網格
+建立曲線網格"; 
+
+CATCloudQsrHeaderCmd.CATQsrCreateSurfaceNetworkHdr.Title = "曲面網格...";
+CATCloudQsrHeaderCmd.CATQsrCreateSurfaceNetworkHdr.ShortHelp = "曲面網格"; 
+CATCloudQsrHeaderCmd.CATQsrCreateSurfaceNetworkHdr.Help = "建立曲面網格"; 
+CATCloudQsrHeaderCmd.CATQsrCreateSurfaceNetworkHdr.LongHelp = 
+"曲面網格
+建立曲面網格";
+
+CATCloudQsrHeaderCmd.CATQsrSplitCleanCtHdr.Title = "分割乾淨外形...";
+CATCloudQsrHeaderCmd.CATQsrSplitCleanCtHdr.ShortHelp = "分割乾淨外形";
+CATCloudQsrHeaderCmd.CATQsrSplitCleanCtHdr.Help = "以曲線分割乾淨外形";
+CATCloudQsrHeaderCmd.CATQsrSplitCleanCtHdr.LongHelp = 
+"分割乾淨外形
+以曲線分割乾淨外形";
+
+CATCloudQsrHeaderCmd.CATQsrCreateQuickSurfHdr.Title = "自動曲面..."; 
+CATCloudQsrHeaderCmd.CATQsrCreateQuickSurfHdr.ShortHelp = "自動曲面";
+CATCloudQsrHeaderCmd.CATQsrCreateQuickSurfHdr.Help = "在網格上自動建立曲面";
+CATCloudQsrHeaderCmd.CATQsrCreateQuickSurfHdr.LongHelp = 
+"自動曲面
+在網格上自動建立曲面";
+
+// ==============================================================================================
+// Les headers de commandes Cloud Editor redefinis.
+// ==============================================================================================
+
+CATCloudQsrHeaderCmd.CATQsrProjectCurveHdr.Title = "曲線投影...";
+CATCloudQsrHeaderCmd.CATQsrProjectCurveHdr.ShortHelp = "投影曲線";
+CATCloudQsrHeaderCmd.CATQsrProjectCurveHdr.Help = "投影曲線在雲形點上";
+CATCloudQsrHeaderCmd.CATQsrProjectCurveHdr.LongHelp = 
+"投影曲線
+投影曲線在雲形點上.
+選擇投影方向和
+結果曲線的點數.";
+
+
+CATCloudQsrHeaderCmd.CATQsrPlanarSectionHdr.Title = "平面切面...";
+CATCloudQsrHeaderCmd.CATQsrPlanarSectionHdr.Help = "切雲形點成為平面切面";
+CATCloudQsrHeaderCmd.CATQsrPlanarSectionHdr.ShortHelp = "平面切面";
+CATCloudQsrHeaderCmd.CATQsrPlanarSectionHdr.LongHelp =
+"平面切面
+切雲形點成為平面切面.";
+
+
+CATCloudQsrHeaderCmd.CATQsrFreeEdgesHdr.Title     = "自由邊線 ..." ;
+CATCloudQsrHeaderCmd.CATQsrFreeEdgesHdr.ShortHelp = "建立自由邊線" ;
+CATCloudQsrHeaderCmd.CATQsrFreeEdgesHdr.Help      = "建立自由邊線" ;
+CATCloudQsrHeaderCmd.CATQsrFreeEdgesHdr.LongHelp  =
+"自由邊線
+在自由邊線上建立掃描." ;
+
+CATCloudQsrHeaderCmd.CATQsrDisplayOptionsHdr.Title="雲形點顯示選擇...";
+CATCloudQsrHeaderCmd.CATQsrDisplayOptionsHdr.ShortHelp="雲形點顯示";
+CATCloudQsrHeaderCmd.CATQsrDisplayOptionsHdr.Help = "更改掃描, 格點和雲形點的顯示模式";
+CATCloudQsrHeaderCmd.CATQsrDisplayOptionsHdr.LongHelp = 
+"雲形點顯示
+更改掃描, 格點和雲形點的顯示模式";
+
+
+CATCloudQsrHeaderCmd.CATQsrScan2DHdr.Title="由掃描產生草圖...";
+CATCloudQsrHeaderCmd.CATQsrScan2DHdr.ShortHelp="掃描產生草圖";
+CATCloudQsrHeaderCmd.CATQsrScan2DHdr.Help ="由掃描或一組掃描而來的草圖";
+CATCloudQsrHeaderCmd.CATQsrScan2DHdr.LongHelp = 
+"掃描產生草圖
+由掃描或一組掃描而來的草圖";
+
+CATCloudQsrHeaderCmd.CATQsrScanToCurveHdr.Title="由掃描產生曲線...";
+CATCloudQsrHeaderCmd.CATQsrScanToCurveHdr.ShortHelp="由掃描而來的曲線";
+CATCloudQsrHeaderCmd.CATQsrScanToCurveHdr.Help ="由掃描或一組掃描而來的曲線";
+CATCloudQsrHeaderCmd.CATQsrScanToCurveHdr.LongHelp = 
+"由掃描而來的曲線
+由掃描或一組掃描而來的曲線";
+
+
+CATCloudQsrHeaderCmd.CATQsrActivateHdr.Title = "啟動..."; 
+CATCloudQsrHeaderCmd.CATQsrActivateHdr.ShortHelp = "啟動";
+CATCloudQsrHeaderCmd.CATQsrActivateHdr.Help = "起動或不啟動雲形點區域";
+CATCloudQsrHeaderCmd.CATQsrActivateHdr.LongHelp =
+"啟動
+起動或不啟動雲形點區域";
+
+
+// ==============================================================================================
+// Les headers de commandes Free Style redefinis.
+// ==============================================================================================
+
+CATCloudQsrHeaderCmd.CATQsrCurveOnGeometryHdr.Title = "3D 曲線...";
+CATCloudQsrHeaderCmd.CATQsrCurveOnGeometryHdr.ShortHelp = "3D 曲線";
+CATCloudQsrHeaderCmd.CATQsrCurveOnGeometryHdr.Help = "按一下已存幾何 (點, 雲形點, 曲線, 曲面) 來建立 3D 曲線";
+CATCloudQsrHeaderCmd.CATQsrCurveOnGeometryHdr.LongHelp =
+"空間中曲線
+從經過的已存幾何元素上的點建立 3D 曲線.
+雙擊滑鼠來結束曲線建立.";
+
+
+CATCloudQsrHeaderCmd.CATQsrDynDistanceHdr.Title = "距離分析...";
+CATCloudQsrHeaderCmd.CATQsrDynDistanceHdr.ShortHelp = "距離分析";
+CATCloudQsrHeaderCmd.CATQsrDynDistanceHdr.Help = "分析兩組元素間的距離";
+CATCloudQsrHeaderCmd.CATQsrDynDistanceHdr.LongHelp =
+"距離分析
+分析兩組元素間的距離.";
+
+
+
+CATCloudQsrHeaderCmd.CATQsrDynCurvatureHdr.Title = "曲率分析...";
+CATCloudQsrHeaderCmd.CATQsrDynCurvatureHdr.ShortHelp = "曲率分析";
+CATCloudQsrHeaderCmd.CATQsrDynCurvatureHdr.Help = "刺針曲率分析";
+CATCloudQsrHeaderCmd.CATQsrDynCurvatureHdr.LongHelp =
+"刺針曲率分析
+在任意曲線上執行刺針曲率分析.";
+
+CATCloudQsrHeaderCmd.CATQsrLoftHdr.Title = "斷面混成...";
+CATCloudQsrHeaderCmd.CATQsrLoftHdr.ShortHelp = "斷面混成曲面";
+CATCloudQsrHeaderCmd.CATQsrLoftHdr.Help = "建立斷面混成曲面";
+CATCloudQsrHeaderCmd.CATQsrLoftHdr.LongHelp =
+"斷面混成曲面
+在導引曲線和一或數個斷面
+和數個不同的 LAW 來建立斷面混成曲面.";
+
+  
+// ==============================================================================================
+// Les headers de commandes ShapeDesign redefinis.
+// ==============================================================================================
+
+CATCloudQsrHeaderCmd.CATQsrOpenBodyHdr.Title			= "幾何組...";
+CATCloudQsrHeaderCmd.CATQsrOpenBodyHdr.Help				= "建立幾何組";
+CATCloudQsrHeaderCmd.CATQsrOpenBodyHdr.ShortHelp		= "幾何組";
+CATCloudQsrHeaderCmd.CATQsrOpenBodyHdr.LongHelp			= "建立幾何組";
+
+CATCloudQsrHeaderCmd.CATQsrShapeBodyHdr.Title     = "循序幾何組..." ;
+CATCloudQsrHeaderCmd.CATQsrShapeBodyHdr.Help      = "建立循序幾何組" ;
+CATCloudQsrHeaderCmd.CATQsrShapeBodyHdr.ShortHelp = "循序幾何組" ;
+CATCloudQsrHeaderCmd.CATQsrShapeBodyHdr.LongHelp  = "建立循序幾何組." ;
+
+CATCloudQsrHeaderCmd.CATQsrTranslateHdr.Title			= "平移...";
+CATCloudQsrHeaderCmd.CATQsrTranslateHdr.ShortHelp		= "平移";
+CATCloudQsrHeaderCmd.CATQsrTranslateHdr.Help			= "沿著方向來平移元素";
+CATCloudQsrHeaderCmd.CATQsrTranslateHdr.LongHelp		= 
+"平移
+沿著方向來平移元素.";
+
+CATCloudQsrHeaderCmd.CATQsrRotateHdr.Title		= "旋轉...";
+CATCloudQsrHeaderCmd.CATQsrRotateHdr.ShortHelp	= "旋轉";
+CATCloudQsrHeaderCmd.CATQsrRotateHdr.Help			= "繞一軸來旋轉元素";
+CATCloudQsrHeaderCmd.CATQsrRotateHdr.LongHelp		= 
+"旋轉
+繞一軸來旋轉元素.";
+
+CATCloudQsrHeaderCmd.CATQsrScaleHdr.Title		= "縮放...";
+CATCloudQsrHeaderCmd.CATQsrScaleHdr.ShortHelp	= "縮放";
+CATCloudQsrHeaderCmd.CATQsrScaleHdr.Help			= "縮放元素";
+CATCloudQsrHeaderCmd.CATQsrScaleHdr.LongHelp		= 
+"縮放
+縮放元素";
+
+CATCloudQsrHeaderCmd.CATQsrSymmetryHdr.Title		= "對稱...";
+CATCloudQsrHeaderCmd.CATQsrSymmetryHdr.ShortHelp	= "對稱";
+CATCloudQsrHeaderCmd.CATQsrSymmetryHdr.Help		= "以對稱來轉換元素";
+CATCloudQsrHeaderCmd.CATQsrSymmetryHdr.LongHelp	= 
+"對稱
+以對稱來轉換元素.";
+
+CATCloudQsrHeaderCmd.CATQsrAffinityHdr.Title		= "相似轉換...";
+CATCloudQsrHeaderCmd.CATQsrAffinityHdr.ShortHelp	= "相似轉換";
+CATCloudQsrHeaderCmd.CATQsrAffinityHdr.Help		= "以相似矩陣轉換元素";
+CATCloudQsrHeaderCmd.CATQsrAffinityHdr.LongHelp	= 
+"相似轉換
+以相似矩陣轉換元素.";
+
+CATCloudQsrHeaderCmd.CATQsrAxisToAxisHdr.Title     = "軸至軸..." ;
+CATCloudQsrHeaderCmd.CATQsrAxisToAxisHdr.Help      = "轉換元素從一軸轉換至另一軸" ;
+CATCloudQsrHeaderCmd.CATQsrAxisToAxisHdr.ShortHelp = "軸至軸" ;
+CATCloudQsrHeaderCmd.CATQsrAxisToAxisHdr.LongHelp  =
+"軸至軸
+轉換元素從一軸轉換至另一軸" ;
+
+CATCloudQsrHeaderCmd.CATQsrSplitHdr.Title                  = "分割...";
+CATCloudQsrHeaderCmd.CATQsrSplitHdr.ShortHelp              = "分割";
+CATCloudQsrHeaderCmd.CATQsrSplitHdr.Help                   = "使用分割元素來修剪元素";
+CATCloudQsrHeaderCmd.CATQsrSplitHdr.LongHelp               = 
+"分割
+使用分割元素來修剪元素.";
+
+CATCloudQsrHeaderCmd.CATQsrTrimHdr.Title                  = "修剪...";
+CATCloudQsrHeaderCmd.CATQsrTrimHdr.ShortHelp              = "修剪";
+CATCloudQsrHeaderCmd.CATQsrTrimHdr.Help                   = "分割和組立兩元素";
+CATCloudQsrHeaderCmd.CATQsrTrimHdr.LongHelp               = 
+"修剪
+分割和組立兩元素.";
+
+
+CATCloudQsrHeaderCmd.CATQsrExtendHdr.Title = "延伸...";
+CATCloudQsrHeaderCmd.CATQsrExtendHdr.ShortHelp = "延伸";
+CATCloudQsrHeaderCmd.CATQsrExtendHdr.Help = "以延伸曲面和曲線來建立延伸";
+CATCloudQsrHeaderCmd.CATQsrExtendHdr.LongHelp =
+"延伸
+以延伸曲面邊界和曲線端點來建立延伸";
+
+
+CATCloudQsrHeaderCmd.CATQsrFilletEdgeHdr.Title            = "邊界圓角...";
+CATCloudQsrHeaderCmd.CATQsrFilletEdgeHdr.Help             = "建立邊界圓角";
+CATCloudQsrHeaderCmd.CATQsrFilletEdgeHdr.ShortHelp        = "邊界圓角";
+CATCloudQsrHeaderCmd.CATQsrFilletEdgeHdr.LongHelp         = 
+"邊界圓角
+在曲面的邊界上建立邊界圓角.";
+
+
+CATCloudQsrHeaderCmd.CATQsrIntersectHdr.Title         = "相交...";
+CATCloudQsrHeaderCmd.CATQsrIntersectHdr.Help          = "以相交兩幾何元素來建立幾何";
+CATCloudQsrHeaderCmd.CATQsrIntersectHdr.ShortHelp     = "相交";
+CATCloudQsrHeaderCmd.CATQsrIntersectHdr.LongHelp      = 
+"相交
+建立曲面間的相交曲線.";
+
+
+CATCloudQsrHeaderCmd.CATQsrProjectHdr.Title         = "投影...";
+CATCloudQsrHeaderCmd.CATQsrProjectHdr.Help          = "投影點和曲線依附元素上";
+CATCloudQsrHeaderCmd.CATQsrProjectHdr.ShortHelp     = "投影";
+CATCloudQsrHeaderCmd.CATQsrProjectHdr.LongHelp      = 
+"投影
+投影點和曲線依附元素上.";
+
+
+CATCloudQsrHeaderCmd.CATQsrJoinHdr.Title         = "連接...";
+CATCloudQsrHeaderCmd.CATQsrJoinHdr.Help          = "連接曲線和曲面";
+CATCloudQsrHeaderCmd.CATQsrJoinHdr.ShortHelp     = "連接";
+CATCloudQsrHeaderCmd.CATQsrJoinHdr.LongHelp      = 
+"連接
+建立連接.";
+
+//CATCloudQsrHeaderCmd.CATQsrConnectHdr.Title        = "連接曲線...";
+//CATCloudQsrHeaderCmd.CATQsrConnectHdr.ShortHelp    = "建立兩曲線間連接";
+//CATCloudQsrHeaderCmd.CATQsrConnectHdr.Help         = "連接曲線";
+//CATCloudQsrHeaderCmd.CATQsrConnectHdr.LongHelp     = 
+//"連接曲線
+//建立兩曲線間連接
+//並計入連續拘束.";
+
+CATCloudQsrHeaderCmd.CATQsrConnectCheckerHdr.Title        = "連接檢查器...";
+CATCloudQsrHeaderCmd.CATQsrConnectCheckerHdr.ShortHelp    = "連接檢查器";
+CATCloudQsrHeaderCmd.CATQsrConnectCheckerHdr.Help         = "檢查曲面連接";
+CATCloudQsrHeaderCmd.CATQsrConnectCheckerHdr.LongHelp     = 
+"連接檢查器
+在兩曲面間執行連接分析: 
+距離, 角度或曲率分析.";
+
+CATCloudQsrHeaderCmd.CATQsrInformationsHdr.Title = "資訊...";
+CATCloudQsrHeaderCmd.CATQsrInformationsHdr.ShortHelp = "資訊";
+CATCloudQsrHeaderCmd.CATQsrInformationsHdr.Help = "提供雲形點的統計資料";
+CATCloudQsrHeaderCmd.CATQsrInformationsHdr.LongHelp =
+"資訊
+提供雲形點的統計資料.";
+
+CATCloudQsrHeaderCmd.CATQsrGSDPointHdr.Title     = "點..." ;
+CATCloudQsrHeaderCmd.CATQsrGSDPointHdr.Help      = "建立一或多個點" ;
+CATCloudQsrHeaderCmd.CATQsrGSDPointHdr.ShortHelp = "點" ;
+CATCloudQsrHeaderCmd.CATQsrGSDPointHdr.LongHelp  = 
+"點
+建立一或多個點" ;
+
+CATCloudQsrHeaderCmd.CATQsrGSDLineHdr.Title     = "線..." ;
+CATCloudQsrHeaderCmd.CATQsrGSDLineHdr.Help      = "建立一線" ;
+CATCloudQsrHeaderCmd.CATQsrGSDLineHdr.ShortHelp = "線" ;
+CATCloudQsrHeaderCmd.CATQsrGSDLineHdr.LongHelp  = 
+"線
+建立一線" ;
+
+CATCloudQsrHeaderCmd.CATQsrGSDPlaneHdr.Title     = "平面..." ;
+CATCloudQsrHeaderCmd.CATQsrGSDPlaneHdr.Help      = "建立一平面" ;
+CATCloudQsrHeaderCmd.CATQsrGSDPlaneHdr.ShortHelp = "平面" ;
+CATCloudQsrHeaderCmd.CATQsrGSDPlaneHdr.LongHelp  = 
+"平面
+建立一平面" ;
+
+CATCloudQsrHeaderCmd.CATQsrGSDCircleHdr.Title     = "圓..." ;
+CATCloudQsrHeaderCmd.CATQsrGSDCircleHdr.Help      = "建立一圓或圓弧" ;
+CATCloudQsrHeaderCmd.CATQsrGSDCircleHdr.ShortHelp = "圓" ;
+CATCloudQsrHeaderCmd.CATQsrGSDCircleHdr.LongHelp  = 
+"圓
+建立一圓或圓弧" ;

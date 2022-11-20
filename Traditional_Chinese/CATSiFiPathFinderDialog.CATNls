@@ -1,0 +1,90 @@
+CATSiFiPathFinderDialog.CATSiFiPathFinderCommand.state0.Message = "選擇模擬";
+CATSiFiPathFinderDialog.CATSiFiPathFinderCommand.state1.Message = "規定需要的資料和發動計算";
+CATSiFiPathFinderDialog.CATSiFiPathFinderCommand.statek.Message = "選擇關心部份的結束動作";
+
+PFSelect.Title = "選擇";
+
+Main.Def.Title            = "定義";
+Main.Def.TPBasic.Title    = "基本";
+Main.Def.TPAdvanced.Title = "進階";
+Main.Def.TPOther.Title    = "其它";
+Main.Sim.Title            = "模擬";
+Main.FParameters.Title    = "參數";
+Progress.Stop.Title       = "停止";
+Main.Def.TPAdvanced.FAdvanced.ChekBPart.Title = "將軌跡應用至零件";
+
+PF.error.Info    = "資訊";
+PF.error.Warning = "警告";
+PF.error.Error   = "錯誤";
+PF.error.1 = "記憶體不夠";
+PF.error.2 = "第一個位置無效 : 發現干涉";
+PF.error.3 = "最大值時間超過";
+PF.error.4 = "移動的物件無效";
+PF.error.5 = "路徑已經超出干涉. \n 沒有計算需要";
+PF.error.6 = "沒有出路. \n 有可能由於太高的  \" 最小的細部 \"";
+PF.error.7 = "沒有出路. \n 移動的物件被堵塞";
+PF.error.8 = "因為沒有相關項目以致無法執行路徑尋找.";
+PF.error.9 = "文件中沒有軌跡和模擬";
+
+PF.Publish.OnExperiment  = "在上面發現的路徑:";
+PF.Publish.Info          = "資訊:";
+PF.Publish.Warning       = "警告:";
+PF.Publish.Error         = "由於一個錯誤計算停止了:";
+PF.Publish.Stoped        = "由於使用者要求計算停止了";
+PF.Publish.Parameters    = "參數";
+PF.Publish.TimeFormat    = "%Hh %Mm %Ss";
+PF.Publish.Time          = "過去的時間:";
+PF.Publish.NbPts         = "計算的點的數目:";
+PF.Publish.NbSmoothedPts = "平順以後點的數目:";
+
+S.Publish.OnExperiment  = "平順在:";
+
+PF.VisuMode.Title    = "顯示:";
+PF.VisuMode.On       = "開";
+PF.VisuMode.Off      = "關";
+PF.VisuMode.Strombo  = "Strombo (1/20)";
+PF.VisuMode.LongHelp = "顯示模式 : \n  - 開: 一個步驟以後的一次顯示. \n  - 關: 沒有顯示(max-time after 1h). \n  - Strombo: 每 20 個步驟一次顯示.";
+
+PF.IgnoreClash.Title    = "忽略干涉";
+PF.IgnoreClash.LongHelp = "自動忽略干涉";
+
+PFP.NoSelection = "沒有選擇";
+
+F3DMap.Environment.Title     = "環境";
+F3DMap.Motion.Title          = "運轉";
+F3DMap.Accuracy.Title        = "最小的細部:";
+F3DMap.TranslationStep.Title = "轉移步驟:";
+F3DMap.RotationGain.Title    = "旋轉獲得:";
+F3DMap.Box.Title             = "圍繞盒:";
+F3DMap.Box.Environment	     = "環境";
+F3DMap.Box.Path		     = "路徑";
+F3DMap.Box.Custom	     = "自訂";
+F3DMap.Steps.Title           = "步驟:";
+F3DMap.Steps.Small           = "小";
+F3DMap.Steps.Medium          = "中";
+F3DMap.Steps.Large           = "大";
+F3DMap.Steps.Advanced        = "進階 ...";
+F3DMap.Repulse.Title         = "擊退結果:";
+F3DMap.Repulse.Low           = "低";
+F3DMap.Repulse.Medium        = "中";
+F3DMap.Repulse.High          = "高";
+F3DMap.ConstantSpeed.Title   = "固定的速度";
+FClash.Angle.Title           = "角度:";
+FClash.Vector.Title          = "向量:";
+FClash.Vector.VectorX        = "X 向量";
+FClash.Vector.VectorY        = "Y 向量";
+FClash.Vector.VectorZ        = "Z 向量";
+
+F3DMap.Accuracy.LongHelp        = "用作環境的描述的精確度";
+F3DMap.TranslationStep.LongHelp = "在一步驟的轉移中允許的最大值距離";
+F3DMap.RotationGain.LongHelp    = "從旋轉中取得 (從 0.5 到 2)";
+F3DMap.Box.LongHelp             = "衝突檢查盒的尺寸";
+F3DMap.Steps.LongHelp           = "一般精確度";
+F3DMap.Repulse.LongHelp         = "允許移動的物件接近環境";
+F3DMap.ConstantSpeed.LongHelp   = "保持固定速度以播放模擬";
+FClash.Angle.LongHelp           = "允許的最大值角度清除";
+FClash.Vector.LongHelp          = "測試這個角度清除的向量";
+
+Smooth.error.Title   = "錯誤";
+Smooth.error.Message = "因為沒有相關物件導致無法執行平順軌跡模擬.";
+

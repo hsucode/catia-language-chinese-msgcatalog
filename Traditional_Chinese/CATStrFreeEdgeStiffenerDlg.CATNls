@@ -1,0 +1,95 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+Title = "Stiffener on Free Edge";
+TabsFrame.TabContainer.GeometryTabPage.Title = "Geometry";
+TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.SupportFrame.WebSupportLabel.Title = " Edge(s): ";
+TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.SupportFrame.WebSupportCombo.Help = "List of plate free edge(s) or opening(s) defining the stiffener trace.";
+TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.SupportFrame.WebSupportCombo.LongHelp = "The list of plate free edge(s) or opening(s) upon which stiffener functions will be created.";
+TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.SupportFrame.ContinuousEdgeCheckButton.Title = "Entire limit";
+TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.SupportFrame.ContinuousEdgeCheckButton.Help = "Stiffen the entire continous free edge, or just a sub-element.";
+TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.SupportFrame.ContinuousEdgeCheckButton.LongHelp = "If checked, then the entire continuous free edge selected will be stiffened.\nIf not checked, then only the sub-element selected will be stiffened.";
+TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.SupportLimtsFrame.SupportLimitsSepFrame.LimitsLabel.Title = "Limits ";
+TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.WebSupportLimitsFrame.WebSupportLimitsMultiList.Help = "Stiffener on Free Edge limit(s), offset(s) and end cut(s).";
+TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.WebSupportLimitsFrame.WebSupportLimitsMultiList.LongHelp = "Define the start and end limiting elements, offset(s), and end cut(s) for the stiffener on free edge.";
+ TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.WebSupportLimitsFrame.WebSupportLimitsMultiList.ColumnTitle1 = "Stiffener end ";
+ TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.WebSupportLimitsFrame.WebSupportLimitsMultiList.ColumnTitle2 = "Limit                  ";
+ TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.WebSupportLimitsFrame.WebSupportLimitsMultiList.ColumnTitle3 = "Offset        ";
+ TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.WebSupportLimitsFrame.WebSupportLimitsMultiList.ColumnTitle4 = "End Cut            ";
+TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.WebSupportLimitsFrame.InvertStiffenerButton.Title = "Invert Stiffener";
+TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.WebSupportLimitsFrame.InvertStiffenerButton.Help = "Invert the stiffener to the other side of the defined limit.";
+TabsFrame.TabContainer.GeometryTabPage.WebSupportFrame.WebSupportLimitsFrame.InvertStiffenerButton.LongHelp = "Invert the stiffener to the other side of the defined limit.  Available only when one limit is defined.";
+TabsFrame.TabContainer.GeometryTabPage.SupportAngleSepFrame.AngleSepLabel.Title = "Angle & Offset ";
+TabsFrame.TabContainer.GeometryTabPage.WebAngleFrame.AngleLabel.Title = " Web angle:     ";
+TabsFrame.TabContainer.GeometryTabPage.WebAngleFrame.AngleSpinner.Help = "Angle of stiffener on free edge's web.";
+TabsFrame.TabContainer.GeometryTabPage.WebAngleFrame.AngleSpinner.LongHelp = "Angle of stiffener on free edge's web.";
+TabsFrame.TabContainer.GeometryTabPage.SuperPlateFrame.PlateLabel.Title = " Plate:     ";
+TabsFrame.TabContainer.GeometryTabPage.SuperPlateFrame.PlateEditor.Help = "A plate must be defined to hold the functional stiffener to be created.";
+TabsFrame.TabContainer.GeometryTabPage.SuperPlateFrame.PlateEditor.LongHelp = "The functional stiffener to be created will be a member of the plate selected.";
+TabsFrame.TabContainer.GeometryTabPage.TraceOffsetFrame.TraceOffsetLabel.Title = " Trace offset:  ";
+TabsFrame.TabContainer.GeometryTabPage.TraceOffsetFrame.TraceOffsetSpinner.Help = "Stiffener trace will be offset by this amount.";
+TabsFrame.TabContainer.GeometryTabPage.TraceOffsetFrame.TraceOffsetSpinner.LongHelp = "Stiffener trace will be offset by this amount.";
+TabsFrame.TabContainer.MaterialOrientionTabPage.Title = "Material & Orientation";
+TabsFrame.TabContainer.MaterialOrientionTabPage.MaterialFrame.CombosFrame.MaterialLabel.Title = "Material: ";
+TabsFrame.TabContainer.MaterialOrientionTabPage.MaterialFrame.CombosFrame.MaterialCombo.Help = "The Stiffener's material.";
+TabsFrame.TabContainer.MaterialOrientionTabPage.MaterialFrame.CombosFrame.MaterialCombo.LongHelp = "Defines what material to use for the Stiffener.";
+TabsFrame.TabContainer.MaterialOrientionTabPage.MaterialFrame.CombosFrame.GradeLabel.Title = "Grade: ";
+TabsFrame.TabContainer.MaterialOrientionTabPage.MaterialFrame.CombosFrame.GradeCombo.Help = "The Stiffener's material grade.";
+TabsFrame.TabContainer.MaterialOrientionTabPage.MaterialFrame.CombosFrame.GradeCombo.LongHelp = "Defines what material grade to be use for the Stiffener.";
+TabsFrame.TabContainer.MaterialOrientionTabPage.MaterialFrame.CombosFrame.SectionLabel.Title = "Section: ";
+TabsFrame.TabContainer.MaterialOrientionTabPage.MaterialFrame.CombosFrame.SectionsCombo.Help = "The Stiffener's section.";
+TabsFrame.TabContainer.MaterialOrientionTabPage.MaterialFrame.CombosFrame.SectionsCombo.LongHelp = "Defines which section (with size definition)  to use for the Stiffener.";
+TabsFrame.TabContainer.MaterialOrientionTabPage.OrientationSepFrame.OrientationLabel.Title = "Orientation";
+TabsFrame.TabContainer.MaterialOrientionTabPage.OrientationFrame.PlateSideLabel.Title = "  Plate side: ";
+TabsFrame.TabContainer.MaterialOrientionTabPage.OrientationFrame.SectionOrientationLabel.Title = "  Section orientation: ";
+TabsFrame.TabContainer.MaterialOrientionTabPage.OrientationFrame.AnchorPointLabel.Title = "  Anchor point: ";
+TabsFrame.TabContainer.MaterialOrientionTabPage.OrientationFrame.AnchorPointCombo.Help = "The anchor point of the Stiffener Function.";
+TabsFrame.TabContainer.MaterialOrientionTabPage.OrientationFrame.AnchorPointCombo.LongHelp = "Defines which anchor point to use for the Stiffener Function.";
+TabsFrame.TabContainer.MaterialOrientionTabPage.OrientationFrame.AnchorPointOffsetLabel.Title = "  Anchor point offset: ";
+TabsFrame.TabContainer.MaterialOrientionTabPage.OrientationFrame.AnchorPointOffsetSpinner.Help = "The anchor point offset of the Stiffener Function.";
+TabsFrame.TabContainer.MaterialOrientionTabPage.OrientationFrame.AnchorPointOffsetSpinner.LongHelp = "Defines the offset from anchor point to use for the Stiffener Function.";
+TabsFrame.TabContainer.MaterialOrientionTabPage.OrientationFrame.SectionOrientationFlipBtnFrame.SectionOrientationFlipPushBtn.Title = "Flip";
+TabsFrame.TabContainer.MaterialOrientionTabPage.OrientationFrame.SectionOrientationFlipBtnFrame.SectionOrientationFlipPushBtn.Help = "Flip the section orientation direction.";
+TabsFrame.TabContainer.MaterialOrientionTabPage.OrientationFrame.SectionOrientationFlipBtnFrame.SectionOrientationFlipPushBtn.LongHelp = "Flip the section orienation direction.  This will flip both the web thickness, and the flange direction.";
+TabsFrame.TabContainer.MaterialOrientionTabPage.OrientationFrame.PlateSideFlipBtnFrame.PlateSideFlipPushBtn.Title = "Flip";
+TabsFrame.TabContainer.MaterialOrientionTabPage.OrientationFrame.PlateSideFlipBtnFrame.PlateSideFlipPushBtn.Help = "Flip the stiffener to the other side of the plate.";
+TabsFrame.TabContainer.MaterialOrientionTabPage.OrientationFrame.PlateSideFlipBtnFrame.PlateSideFlipPushBtn.LongHelp = "Flip the stiffener to the other side of the plate.";
+CategoryAndNameFrame.CategoryFrame.CategoryLabel.Title =  " Category:";
+CategoryAndNameFrame.NameFrame.StiffenerNameLabel.Title = " Name:      ";
+CategoryAndNameFrame.NameFrame.NamingConventionCheckButton.Title = "Automatic";
+// END WIZARD REPLACEMENT ZONE
+
+catBottomLeft     = "Bottom left";
+catBottomCenter   = "Bottom center";
+catBottomRight    = "Bottom right";
+catCenterLeft     = "Center left";
+catCenterCenter   = "Center";
+catCenterRight    = "Center right";
+catTopLeft        = "Top left";
+catTopCenter      = "Top center";
+catTopRight       = "Top right";
+catGravity        = "Gravity";
+catGravityBottom  = "Gravity bottom";
+catGravityLeft    = "Gravity left";
+catGravityRight   = "Gravity right";
+catGravityTop     = "Gravity top";
+catWebSideLeft    = "Web Side Left";
+catWebCenter      = "Web Center";
+catWebSideRight   = "Web Side Right";
+
+SectionProperties = "Section properties";
+OtherSection      = "More ...";
+
+NoSelection = "No selection";
+
+Start = "Start";
+End   = "End";
+
+SearchForSectionInCatalogFailed = "Section not found in catalog.";
+
+LimitRefPlaneMenu     = "Select Reference Plane";
+LimitDefineOffsetMenu = "Define Offset";
+LimitDeleteLimitMenu  = "Delete Limit";
+LimitDefineEndCutMenu = "Define End Cut";
+LimitDeleteEndCutMenu = "Delete End Cut";
+LimitSelectHullMenu  = "Select Hull";
+
+ 

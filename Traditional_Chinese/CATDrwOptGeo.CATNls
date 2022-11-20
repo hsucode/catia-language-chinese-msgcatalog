@@ -1,0 +1,179 @@
+//=====================================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwOptGeo
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    
+// DATE        :    06.01.1999
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    Tools/Option du Drafting - Onglet Geometry
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//      00           fgx   06.01.1999  Creation 	
+//      01           fgx   08.01.1999  Passage sur CATDrwOptTitle et CATDrwOptIcon
+//      02           fgx   20.01.1999  Ajout des options de visu des cst
+//      03           fgx   20.01.1999  Deplacement des options de la grid de geo a gal
+//      04           fgx   20.01.1999  Ajout de CreateCenter
+//      05           fgx   22.02.1999  Ajout de CstCreation, retrait de CreateConstraint
+//      06           fgx   23.08.1999  Manipulation directe de la geometrie
+//      07           lgk   18.12.02    revision
+//=====================================================================================
+
+Title="幾何";
+
+frameCenter.HeaderFrame.Global.Title = "幾何";
+frameCenter.HeaderFrame.Global.LongHelp = "在幾何中提供新建複本的能力.";
+frameCenter.IconAndOptionsFrame.OptionsFrame.checkCenter.Title = "建立圓和橢圓的中心";
+frameCenter.IconAndOptionsFrame.OptionsFrame.checkCenter.LongHelp = "當建立圓和橢圓時, 建立圓和橢圓的中心.";
+frameCenter.IconAndOptionsFrame.OptionsFrame._checkDragWithEndPts.Title = "拖拉元素終點來包括";
+frameCenter.IconAndOptionsFrame.OptionsFrame._checkDragWithEndPts.LongHelp = "拖拉元素包含終點.";
+frameCenter.IconAndOptionsFrame.OptionsFrame.chkEndPtsDuplGenGeom.Title = "當複製所產生幾何元素時建立結束點";
+frameCenter.IconAndOptionsFrame.OptionsFrame.chkEndPtsDuplGenGeom.LongHelp = "當複製所產生幾何元素時建立結束點";
+frameCenter.IconAndOptionsFrame.OptionsFrame.chkShowHV.Title = "在工具中顯示 H 和 V 欄位";
+frameCenter.IconAndOptionsFrame.OptionsFrame.chkShowHV.LongHelp = "在建立平面幾何元素或偏移元素時, 在工具中顯示 H 和 V 欄位.";
+
+//drag elements
+frameCenter.IconAndOptionsFrame.OptionsFrame.checkGeomDrag.Title="允許直接操作";
+frameCenter.IconAndOptionsFrame.OptionsFrame.checkGeomDrag.LongHelp="允許使用滑鼠移動幾何元素.";
+frameCenter.IconAndOptionsFrame.OptionsFrame.dragOptionPushButton.Title="解出模式";
+frameCenter.IconAndOptionsFrame.OptionsFrame.dragOptionPushButton.LongHelp = "讓您定義用來移動元素的解出模式.";
+
+frameCstCreation.HeaderFrame.Global.Title="建立拘束";
+frameCstCreation.HeaderFrame.Global.LongHelp=
+"建立含有偵測
+和基準特徵的拘束.";
+frameCstCreation.IconAndOptionsFrame.OptionsFrame.checkCstCreation.Title="建立偵測到和特徵基礎的拘束.";
+frameCstCreation.IconAndOptionsFrame.OptionsFrame.checkCstCreation.LongHelp=
+"建立含有偵測和基準特徵的拘束.";
+
+frameCstCreation.IconAndOptionsFrame.OptionsFrame.framePushButton.smartPickPushButton.Title="聰明選取";
+frameCstCreation.IconAndOptionsFrame.OptionsFrame.framePushButton.smartPickPushButton.LongHelp="動態偵測邏輯拘束.";
+
+frameCstVisu.HeaderFrame.Global.Title="顯示拘束";
+
+frameCstVisu.HeaderFrame.Global.LongHelp=
+"定義 2D 拘束顯示選項.";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.LongHelp=
+"定義 2D 拘束顯示選項.";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.checkCstVisu.Title="顯示拘束";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.checkCstVisu.LongHelp=
+"顯示下列拘束.";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.labelCstRefSize.Title="參考大小: ";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.labelCstRefSize.LongHelp="參考大小為顯示拘束符號大小的參考. 若更改它將為影響所有拘束表現方式.";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.editorCstRefSize.LongHelp="拘束大小為顯示拘束符號大小的參考. 若更改它將為影響所有拘束表現方式.";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.labelCstColor.Title="拘束顏色: ";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.comboCstColor.LongHelp="拘束顏色為顯示拘束符號大小的顏色. 若更改它將為影響所有拘束表現方式.";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.labelCstColor.LongHelp="拘束顏色為顯示拘束符號大小的顏色. 若更改它將為影響所有拘束表現方式.";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.frameCTPushButton.cstTypesPushButton.Title="拘束形式";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.frameCTPushButton.cstTypesPushButton.LongHelp="定義顯示不同形式的拘束.";
+
+
+frameGeomManipDirect.HeaderFrame.Global.Title="操作者 ";
+frameGeomManipDirect.HeaderFrame.Global.LongHelp="如果操作子在幾何可被移除前必須先按一下來啟動, 允許直接操作定義.";
+
+frameGeomManipDirect.IconAndOptionsFrame.OptionsFrame.checkGeomManipDirect.Title="允許直接操作";
+frameGeomManipDirect.IconAndOptionsFrame.OptionsFrame.checkGeomManipDirect.LongHelp="如果操作子在幾何可被移除前必須先按一下來啟動, 允許直接操作定義.";
+
+
+
+frameDiagColors.HeaderFrame.Global.Title = "顏色";
+frameDiagColors.HeaderFrame.Global.LongHelp = "顏色 \n 定義元素顏色.";
+frameDiagColors.IconAndOptionsFrame.OptionsFrame.checkVisualizationDiag.Title = "顯示偵錯";
+frameDiagColors.IconAndOptionsFrame.OptionsFrame.checkVisualizationDiag.LongHelp = "在拘束元素上顯示偵錯.";
+frameDiagColors.IconAndOptionsFrame.OptionsFrame.diagColorsPushButton.Title = "顏色 ...";
+frameDiagColors.IconAndOptionsFrame.OptionsFrame.diagColorsPushButton.LongHelp = "定義偵錯顏色.";
+frameDiagColors.IconAndOptionsFrame.OptionsFrame.labelOtherColors.Title = "其它元素顏色";
+frameDiagColors.IconAndOptionsFrame.OptionsFrame.labelOtherColors.LongHelp = "其它元素顏色.";
+frameDiagColors.IconAndOptionsFrame.OptionsFrame.otherColorsPushButton.Title = "顏色 ...";
+frameDiagColors.IconAndOptionsFrame.OptionsFrame.otherColorsPushButton.LongHelp = "定義其它元素顏色.";
+
+
+// NLS push button solving mode dans onglet geometry
+geoAllowGeomManip.Title="拖動零件";
+geoAllowGeomManip.frameButtonDragElts.HeaderFrame.Global.Title = "拖動零件  ";
+geoAllowGeomManip.frameButtonDragElts.HeaderFrame.Global.LongHelp = "定義如何移動零件.";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.checkDragWithEndPts.Title = "拖動含結束點零件";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.checkDragWithEndPts.LongHelp = "拖動零件, 含它們的結束點.";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.frameDragMode.Title = "解決模式 ";//for moving elements";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.frameDragMode.frameDragModelocked.radioDragModeStd.Title = "標準模式";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.frameDragMode.frameDragModelocked.radioDragModeStd.LongHelp = "使用標準模式移動元素.";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.frameDragMode.frameDragModelocked.radioDragModeMin.Title = "最小移動";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.frameDragMode.frameDragModelocked.radioDragModeMin.LongHelp = "執行最小移動.";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.frameDragMode.frameDragModelocked.radioDragModeRel.Title = "釋放";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.frameDragMode.frameDragModelocked.radioDragModeRel.LongHelp = "使用釋放.";
+
+// Push Button SmartPick
+geoSmartPick.Title="智慧選取";
+geoSmartPick.frameSmartPick.HeaderFrame.Global.Title="智慧選取";
+geoSmartPick.frameSmartPick.HeaderFrame.Global.LongHelp=
+"智慧選取 
+智慧選取可自動偵測 2D元素的位置.";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickCoincid.Title="線和圓的依附";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickCoincid.LongHelp=
+"偵測線和圓的依附.";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickAlign.Title="對正 ";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickAlign.LongHelp=
+"定義兩元素相互對正.";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickParaPerpenTang.Title="平行, 垂直和相切 ";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickParaPerpenTang.LongHelp=
+"定義兩元素相互平行, 
+垂直或相切.";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickHoriVerti.Title="水平和垂直";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickHoriVerti.LongHelp=
+"定義兩元素相互水平或垂直.";
+
+// Constraints types
+geoTypeCst.Title="拘束型式";
+geoTypeCst.frameConstraintsTypes.HeaderFrame.Global.Title="拘束型式";
+geoTypeCst.frameConstraintsTypes.HeaderFrame.Global.LongHelp="定義要顯示的不同拘束型式.";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuHori.Title="水平 ";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuHori.LongHelp="水平 
+顯示水平拘束.";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuVerti.Title="垂直";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuVerti.LongHelp="垂直 
+顯示垂直拘束.";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuPara.Title="平行 ";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuPara.LongHelp="平行 
+顯示平行拘束.";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuPerpen.Title="垂直 ";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuPerpen.LongHelp="垂直
+顯示垂直拘束.";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuConcen.Title="同心 ";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuConcen.LongHelp="同心 
+顯示同心拘束.";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuCoinci.Title="一致 ";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuCoinci.LongHelp="一致 
+顯示一致拘束.";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuTangen.Title="相切 ";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuTangen.LongHelp="相切 
+顯示相切拘束.";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuSym.Title="對稱 ";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuSym.LongHelp="對稱 
+顯示對稱拘束.";
+
+// NLS de l'onglet Geometry pour le diagnostic des couleurs
+geoVisuDiagColor.Title="偵錯顏色";
+geoVisuDiagColor.frameButtonDiagColors.HeaderFrame.Global.Title = "偵錯顏色";
+geoVisuDiagColor.frameButtonDiagColors.HeaderFrame.Global.LongHelp = "偵錯顏色\n 定義偵錯顏色.";
+geoVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelOverConsElts.Title = "過多拘束元素 ";
+geoVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelOverConsElts.LongHelp = "過多拘束元素 \n 定義使用在過多拘束模型中的元素顏色.";
+geoVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelIsoConsElts.Title = "Iso-拘束元素 ";
+geoVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelIsoConsElts.LongHelp = "Iso-拘束元素 \n 定義使用在 iso-拘束模型中的元素顏色.";
+geoVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelInconsElts.Title = "不一致元素 ";
+geoVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelInconsElts.LongHelp = "不一致元素 \n 定義使用在不一致模型中的元素顏色.";
+geoVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelNotChanElts.Title = "未更改元素 ";
+geoVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelNotChanElts.LongHelp = "未更改元素 \n 定義使用在未更改元素的顏色.";
+
+// NLS de l'onglet Geometry pour Other Colors
+geoOtherColor.Title="其它元素顏色";
+geoOtherColor.frameButtonOtherColors.HeaderFrame.Global.Title = "顏色  ";
+geoOtherColor.frameButtonOtherColors.HeaderFrame.Global.LongHelp = "顏色\n 定義其它元素顏色.";
+geoOtherColor.frameButtonOtherColors.IconAndOptionsFrame.OptionsFrame.labelConstElts.Title = "建構元素 (為 V5R11 前的繪圖元素) ";
+geoOtherColor.frameButtonOtherColors.IconAndOptionsFrame.OptionsFrame.labelConstElts.LongHelp = "建構元素 \n 定義使用在 V5R11 前的繪圖元素顏色.";
+geoOtherColor.frameButtonOtherColors.IconAndOptionsFrame.OptionsFrame.labelSmartPick.Title = "智慧選取 ";
+geoOtherColor.frameButtonOtherColors.IconAndOptionsFrame.OptionsFrame.labelSmartPick.LongHelp = "智慧選取元素 \n 定義使用在智慧選取元素的顏色.";

@@ -1,0 +1,118 @@
+//=============================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATDrwComboHeader
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// DATE        :    10.02.99
+//------------------------------------------------------------------------------
+// DESCRIPTION :    
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :	 
+//------------------------------------------------------------------------------
+//MODIFICATIONS     user  date      purpose
+//   HISTORY        ----  ----      -------
+//     01		  fgx	  03.03.99	cles pour le NLS des unites
+//     02           lgk   14.10.02  Revision
+//------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------
+// Font Name
+//------------------------------------------------------------------------------
+CATDrwComboHeader.DrwFontName.Title="字形名稱" ;
+CATDrwComboHeader.DrwFontName.ShortHelp="字形名稱";
+CATDrwComboHeader.DrwFontName.Help="設定文字方塊的字形名稱" ;
+CATDrwComboHeader.DrwFontName.LongHelp =
+"字形名稱
+設定文字方塊的字形名稱.";
+
+//------------------------------------------------------------------------------
+// Font Size
+//------------------------------------------------------------------------------
+CATDrwComboHeader.DrwFontSize.Title="字形大小" ;
+CATDrwComboHeader.DrwFontSize.ShortHelp="字形大小";
+CATDrwComboHeader.DrwFontSize.Help="設定文字方塊的字形大小" ;
+CATDrwComboHeader.DrwFontSize.LongHelp =
+"字形大小
+設定文字方塊的字形大小.";
+
+//------------------------------------------------------------------------------
+// Tolerance
+//------------------------------------------------------------------------------
+CATDrwComboHeader.DrwTolerance.Title="容差" ;
+CATDrwComboHeader.DrwTolerance.ShortHelp="容差";
+CATDrwComboHeader.DrwTolerance.Help="設定尺寸容差" ;
+CATDrwComboHeader.DrwTolerance.LongHelp =
+"設定尺寸容差.";
+
+//------------------------------------------------------------------------------
+// Precision
+//------------------------------------------------------------------------------
+CATDrwComboHeader.DrwPrecision.Title="精密度" ;
+CATDrwComboHeader.DrwPrecision.ShortHelp="精密度";
+CATDrwComboHeader.DrwPrecision.Help="設定顯示數值的精密度" ;
+CATDrwComboHeader.DrwPrecision.LongHelp =
+"精密度
+設定尺寸容差.";
+
+//------------------------------------------------------------------------------
+// Unit
+//------------------------------------------------------------------------------
+CATDrwComboHeader.DrwUnit.Title="單位" ;
+CATDrwComboHeader.DrwUnit.ShortHelp="單位";
+CATDrwComboHeader.DrwUnit.Help="設定尺寸的主要單位" ;
+CATDrwComboHeader.DrwUnit.LongHelp =
+"單位
+設定尺寸的主要單位.";
+
+//------------------------------------------------------------------------------
+// Numerical Display
+//------------------------------------------------------------------------------
+CATDrwComboHeader.DrwNumDisp.Title="數值顯示說明" ;
+CATDrwComboHeader.DrwNumDisp.ShortHelp="數值顯示說明";
+CATDrwComboHeader.DrwNumDisp.Help="設定主要尺寸值的數值顯示說明" ;
+CATDrwComboHeader.DrwNumDisp.LongHelp =
+"數值顯示說明
+設定主要尺寸值的數值顯示說明.";
+
+//------------------------------------------------------------------------------
+// Tolerance Type
+//------------------------------------------------------------------------------
+CATDrwComboHeader.DrwTolDescrip.Title="容差說明" ;
+CATDrwComboHeader.DrwTolDescrip.ShortHelp="容差說明";
+CATDrwComboHeader.DrwTolDescrip.Help="設定主要尺寸值的容差說明" ;
+CATDrwComboHeader.DrwTolDescrip.LongHelp =
+"容差說明
+設定主要尺寸值的容差說明.";
+
+//------------------------------------------------------------------------------
+// Style
+//------------------------------------------------------------------------------
+CATDrwComboHeader.DrwStyle.Title="形式" ;
+CATDrwComboHeader.DrwStyle.ShortHelp="形式";
+CATDrwComboHeader.DrwStyle.Help="設定建立新物件的形式" ;
+CATDrwComboHeader.DrwStyle.LongHelp =
+"形式
+設定建立新物件的形式 :
+- 原始值 : CATIA 預設數值 , 被工具列數值重覆載入;
+- 使用者預設值: 使用者預設值, 被工具列數值重覆載入;
+- 只有使用者預設值: 使用者預設值, 未重覆載入.";
+NORMAL="原始性質";
+USER_DEFAULT="使用者預設性質";
+ONLY_USER_DEFAULT="只有使用者預設性質";
+
+//------------------------------------------------------------------------------
+// Keys for Units' NLS
+//------------------------------------------------------------------------------
+MM="公厘";
+INCH="英寸";
+
+DEG="度";
+MIN="度-分";
+SEC="度-分-秒";
+RAD="徑度量";
+
+NO_TOLERANCE="(無容差)";
+

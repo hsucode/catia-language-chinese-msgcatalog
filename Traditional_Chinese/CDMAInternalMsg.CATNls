@@ -1,0 +1,65 @@
+// NLS file for CDMAInterop
+//-------------------------
+// English Version
+//-------------------------
+// htn, 11 May 1998
+
+DocLocVPM.Name = "ENOVIA VPM  資料庫";
+
+//==========================================================================
+//PathDlg
+//==========================================================================
+Frame.Lunix.Title=" UNIX 路徑 ";
+Frame.Lnt.Title=" NT 路徑 ";
+//PathDlgTitle = "UNIX 和 NT 路徑 ";
+
+//==========================================================================
+//PathAdm
+//==========================================================================
+//Title = " NT 路徑和 UNIX 路徑 間的映射";
+
+Frame.FramePB.pbOK.Title= " OK ";
+Frame.FramePB.pbCANCEL.Title= " 離開 ";
+Frame.FramePB.pbNEW.Title= " 新增 ";
+Frame.FramePB.pbDEL.Title= "刪除";
+Frame.FramePB.pbRES.Title= "回復";
+Frame.FramePB.pbSAVE.Title= "儲存";
+
+
+msg1="連接到 CDMA 資料庫是不可能的";
+msg2="沒有 Part_List 表格在 CDMA 資料庫中";
+msg3="CDMA 資料庫不是在 RAW_COID 模式中";
+msg4="CDMA 資料庫不是在  NEW_MATRIX 模式中";
+msg5="遺失一些連接的參數";
+msg6="不可能發現此上下文的(context)的映射
+使用 CDMA/產品結構映射選擇透過
+工具->選擇... 指令 (Enovia/CDMA tab) 以定義一個.";
+msg7="沒有  $EXT表格在 CDMA 資料庫中";
+
+ConnError="連接錯誤";
+ConnParam="連接";
+
+msgAddProd="無法執行指令: ";
+msgConnServer="伺服器尚未存在.
+使用 工具->選項... ==> CDMAInterop
+CDMA Interoperability 管理者以產生它."; 
+Trouble="用 CDMA 表格的問題";
+
+msgBuildAll_1="CATIA_MODEL 表格在此環境中未發現";
+msgBuildAll_2="$EXT_LF 表格未發現";
+msgBuildAll_3="$INFO_LF 表格未發現";
+
+
+//==========================================================================
+//Mapping des path UNIX NT
+//==========================================================================
+
+pathdelete = "刪除資訊";
+msgdelete = "你真的要刪除選擇的映射嗎?";
+msgdeletewarning = "選擇的映射被刪除,作動刪除按鈕之前.";
+pathrestore = "回復確認";
+msgrestore = "所有的修改將會遺失. 繼續嗎?";
+pathexit = "離開確認";
+
+PathAdmTitle = "NT 路徑和 UNIX 路徑間的關係";
+PathDlgTitle = " NT 和 UNIX 路徑的建構";

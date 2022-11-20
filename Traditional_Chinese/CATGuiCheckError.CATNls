@@ -1,0 +1,61 @@
+//____________________________________________________________________________
+//
+// CATGuiCheckError...
+//____________________________________________________________________________
+ 
+
+// ...
+GSMUICHECK_ERR_000.Request    = "外形無法檢查.";
+GSMUICHECK_ERR_000.Diagnostic = "計算時發生內部問題.";
+GSMUICHECK_ERR_000.Advice     = ".";
+
+// Forme vide.
+GSMUICHECK_ERR_100.Request    = "外形是空的.";
+GSMUICHECK_ERR_100.Diagnostic = "會發生更新錯誤.";
+GSMUICHECK_ERR_100.Advice     = "";
+      
+GSMUICHECK_ERR_110.Request    = "外形 /p1 是空的.";
+GSMUICHECK_ERR_110.Diagnostic = " /p1 會發生更新錯誤.";
+GSMUICHECK_ERR_110.Advice     = "";
+           
+// Dimension incoherent.
+GSMUICHECK_ERR_200.Request    = "尺寸未定義.";
+GSMUICHECK_ERR_200.Diagnostic = "所選定義區域尺寸是不同的.";
+GSMUICHECK_ERR_200.Advice     = "請選擇相等尺寸的定義區域.";
+
+// Dimension incoherent.
+GSMUICHECK_ERR_300.Request    = "外形未連接.";
+GSMUICHECK_ERR_300.Diagnostic = "外形無法被其它動作使用.";
+GSMUICHECK_ERR_300.Advice     = "修改設定或使用 近接 (Near).";
+
+GSMUICHECK_ERR_310.Request    = "外形 /p1 未連接.";
+GSMUICHECK_ERR_310.Diagnostic = "外形 /p1 無法被其它動作使用.";
+GSMUICHECK_ERR_310.Advice     = "修改設定或使用 近接 (Near).";
+
+// Probleme topologique.
+GSMUICHECK_ERR_1000.Request    = "外形有拓墣錯誤.";
+GSMUICHECK_ERR_1000.Diagnostic = "";
+GSMUICHECK_ERR_1000.Advice     = "";
+
+// Intersection.
+GSMUICHECK_ERR_1100.Request    = "相交.";
+GSMUICHECK_ERR_1100.Diagnostic = "定義區域相交.";
+GSMUICHECK_ERR_1100.Advice     = "";
+
+GSMUICHECK_ERR_1110.Request    = "相交.";
+GSMUICHECK_ERR_1110.Diagnostic = "定義區域 /p1 和 /p2 相交.";
+GSMUICHECK_ERR_1110.Advice     = "";
+
+// Auto Intersection.
+GSMUICHECK_ERR_1200.Request    = "自我相交.";
+GSMUICHECK_ERR_1200.Diagnostic = "定義區域自我相交.";
+GSMUICHECK_ERR_1200.Advice     = "";
+
+GSMUICHECK_ERR_1210.Request    = "自我相交.";
+GSMUICHECK_ERR_1210.Diagnostic = "定義區域 /p1 自我相交.";
+GSMUICHECK_ERR_1210.Advice     = "";
+
+// 
+GSMUICHECK_ERR_2000.Request    = "完成檢查.";
+GSMUICHECK_ERR_2000.Diagnostic = "未找到拓墣問題.";
+GSMUICHECK_ERR_2000.Advice     = "";

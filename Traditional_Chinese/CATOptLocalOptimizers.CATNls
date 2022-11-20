@@ -1,0 +1,41 @@
+nbMaxEvalSmy = "執行結束情形";
+nbMaxEvalMsg = " 最大更新數目到達 \n => 此種解法可能不是最好, 仍有可能繼續更新.";
+timeExceededMsg = " 最大更新數目到達 \n => 此種解法可能不是最好, 仍有可能繼續更新.";
+
+timeExceededSmy = "執行結束情形";
+
+consecutiveBadSmy = "執行結束情形";
+consecutiveBadMsg = "最大更新數目到達 \n => 無法更好了.";
+
+
+NoFeasibleRegionFound = "演算法無法找到可行的起始點.";
+
+// SOC - 23/09/02
+missingFreeParmMsg = "要執行最佳化, 您必須至少提供一個自由參數. \n 提醒 : 自由參數為可供更改以獲至最佳化的參數.";
+missingFreeParmSmy = "缺少自由參數";
+missingParamToOptimizeMsg = "此演算法需要參數來最佳化.";
+missingParamToOptimizeSmy = "缺少參數來最佳化";
+algorithmCompatibilityMsg = "梯度演算若無拘束則無法執行 :\n=> 請至少建立一個拘束或在所提供的演算法表列中選擇 無拘束梯度";
+algorithmCompatibilitySmy = "演算法與所定義最佳化不一致";
+internalErrorSmy = "內部錯誤";
+
+FirstUpdateError = "第一次更新時失敗. 局部搜尋中止.";
+
+GradientEvaluationError = " 評估向量梯度時失敗. 中止.";
+
+EvaluationErrorAfterGradient = "向量梯度積分後無法回復數值. 局部搜尋中止.";
+
+
+EqualityConstraintsIgnored="所選演算法不支援等分拘束. 將忽略所有等分拘束. 詳細情形請參考說明文件.";
+
+OptimizerForDerivativesProviderName=" Derivative 提供者的局部演算法 ";
+OptimizerCurrentEvaluation= " 評估 ";
+
+ObjectiveNotDerProvider=" 物件不是 derivative 提供者.";
+ConstraintsNoDer = "無法獲得拘束的 derivatives ";
+ObjectiveNoDer = "無法獲得物件的 derivatives.";
+ObjectiveUnableToGetOutputValues = "無法獲得物件的輸出數值.";
+
+AbsoluteBoundsReached = "至少有一個自由參數邊界己達到.";
+
+

@@ -1,0 +1,62 @@
+
+TabPageTitle = "DMU 干涉";
+
+TORetrieve.HeaderFrame.Global.Title = "資訊萃取";
+TORetrieve.IconAndOptionsFrame.OptionsFrame.RadBItself.Title    = "從前一計算";
+TORetrieve.IconAndOptionsFrame.OptionsFrame.RadBItself.LongHelp = "從前一計算萃取資訊";
+TORetrieve.IconAndOptionsFrame.OptionsFrame.RadBVPM.Title       = "從 PDM ";
+TORetrieve.IconAndOptionsFrame.OptionsFrame.RadBVPM.LongHelp    = "從PDM萃取資訊.";
+TORetrieve.IconAndOptionsFrame.OptionsFrame.RadBXML.Title       = "從 XML";
+TORetrieve.IconAndOptionsFrame.OptionsFrame.RadBXML.LongHelp    = "由 XML 儲存器中萃取資料";
+TORetrieve.IconAndOptionsFrame.OptionsFrame.RadBNone.Title      = "無";
+TORetrieve.IconAndOptionsFrame.OptionsFrame.RadBNone.LongHelp   = "計算後無資料可萃取";
+
+TOViewer.HeaderFrame.Global.Title = "結果視窗";
+TOViewer.IconAndOptionsFrame.OptionsFrame.CheckBAutoViewerOpen.Title    = "自動打開";
+TOViewer.IconAndOptionsFrame.OptionsFrame.CheckBAutoViewerOpen.LongHelp = "自動打開結果視";
+
+TOSelection.HeaderFrame.Global.Title = "在結果窗中顯示";
+TOSelection.IconAndOptionsFrame.OptionsFrame.RadBListConflict.Title    = "以衝突表列"; 
+TOSelection.IconAndOptionsFrame.OptionsFrame.RadBListConflict.LongHelp = "計算後在結果窗中顯示衝突表列";
+TOSelection.IconAndOptionsFrame.OptionsFrame.RadBListProduct.Title     = "以產品表列"; 
+TOSelection.IconAndOptionsFrame.OptionsFrame.RadBListProduct.LongHelp  = "計算後在結果窗中顯示產品表列";
+TOSelection.IconAndOptionsFrame.OptionsFrame.CheckBAutoLineSelect.Title     = "自動選擇第一行"; 
+TOSelection.IconAndOptionsFrame.OptionsFrame.CheckBAutoLineSelect.LongHelp  = "自動選擇第一行 (以衝突表列或產品表列)";
+
+TOTypeComputation.HeaderFrame.Global.Title = "計算形式";
+TOTypeComputation.IconAndOptionsFrame.OptionsFrame.LabelType.Title    = "預設計算形式 : ";
+TOTypeComputation.IconAndOptionsFrame.OptionsFrame.LabelType.LongHelp = "預設計算形式";
+TOTypeComputation.IconAndOptionsFrame.OptionsFrame.LabelClearance.Title    = "裕度值 : ";
+TOTypeComputation.IconAndOptionsFrame.OptionsFrame.LabelClearance.LongHelp = "預設裕度值";
+
+TOAfterApply.HeaderFrame.Global.Title = "當初始計算中";
+TOAfterApply.IconAndOptionsFrame.OptionsFrame.CheckBAutoComputeDepth.Title    = "計算穿透深度或最小距離 ";
+TOAfterApply.IconAndOptionsFrame.OptionsFrame.CheckBAutoComputeDepth.LongHelp = "自動計算穿透深度 \n 或在初始計算時的最小距離";
+TOAfterApply.IconAndOptionsFrame.OptionsFrame.RadBAutoComputeDepth.Title    = "計算穿透深度或最小距離 ";
+TOAfterApply.IconAndOptionsFrame.OptionsFrame.RadBAutoComputeDepth.LongHelp = "自動計算穿透深度 \n 或在初始計算時的最小距離";
+TOAfterApply.IconAndOptionsFrame.OptionsFrame.RadBAutoComputeFine.Title     = "計算所有數值和圖形結果";
+TOAfterApply.IconAndOptionsFrame.OptionsFrame.RadBAutoComputeFine.LongHelp  = "依據細部計算表中的定義來自動計算所有數值和圖形結果. \n 計算時間可能會很久. \n 進給棒不可用.";
+TOAfterApply.IconAndOptionsFrame.OptionsFrame.RadBAutoComputeNone.Title     = "無 ";
+TOAfterApply.IconAndOptionsFrame.OptionsFrame.RadBAutoComputeNone.LongHelp  = "無更多計算";
+
+
+Clash                 = "干涉";
+ClashContact          = "接觸 + 干涉";
+ClashContactClearance = "間隙 + 接觸 + 干涉";
+
+
+TitreWarn1 = "警告";
+TextWarn1  = "穿透深度或最小距離已在 \n DMU 干涉頁被強制計算 - 詳細計算 \n (數值結果下) ";
+
+
+//Progress bar
+
+ProgressTaskUI.Title       = "計算 ...";
+ProgressTaskUI.ObjectName  = "干涉";
+ProgressTaskUI.Comment     = "階層 1 : 計算所有產品";
+
+
+PBComment1    = "階段 1/2 : 計算所有產品";
+PBComment2    = "階段 2/2 : 計算數值和圖形結果";
+
+

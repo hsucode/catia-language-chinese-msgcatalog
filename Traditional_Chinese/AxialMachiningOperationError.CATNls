@@ -1,0 +1,450 @@
+// =====================================================================
+//
+// Erreurs Framework 'PrismaticMachining'
+// =================================
+//
+// Deux manieres de formater vos messages : 
+//
+// a- Specifier en delimitant avec le caractere '\n' :
+//       Request      (ce que l'on tentait de faire)
+//       Diagnostic   (ce qui est arrive)
+//       Advice       (...ce qu'il pourrait faire si possible)
+//
+//     Exemple :
+//       ERR_3000 = "Initializing /p1 attribut in /p2.\nAttribut does not exist.\nContact your local support.";  
+//       
+//               NOTE : Le parametrage des messages se fait via SetNLSParameter
+//
+// ou bien
+//
+// b- Specifier vos messages avec la cle + les 3 facettes Request/Diagnostic/Advice
+//
+//     Exemple :
+//       ERR_3000.Request    "Initializing </p1> attribut in </p2>." 
+//       ERR_3000.Diagnostic "Attribut does not exist."
+//       ERR_3000.Advice     "Contact your local support."
+// 
+//               NOTE : Le parametrage de chaque facette se fait par :
+//                         Request    : SetNLSRequestParams
+//                         Diagnostic : SetNLSDiagnosticParams
+//                         Advice     : SetNLSAdviceParams
+//
+// =====================================================================
+ 
+//************************************************************
+// INFORMATION MESSAGES FOR AXIAL MACHINING OPERATIONS
+//************************************************************
+MSG_0050.Request    = "";
+MSG_0050.Diagnostic = "幾何相關成功回覆.";
+MSG_0050.Advice     = "";
+
+//************************************************************
+// ERRORS FOR AXIAL MACHINING OPERATIONS
+//************************************************************
+
+ERR_0050.Request    = "計算刀具路徑";
+ERR_0050.Diagnostic = "/p1 必須為正數.";
+ERR_0050.Advice     = "請檢查策略性的參數.";
+
+ERR_0060.Request    = "計算刀具路徑";
+ERR_0060.Diagnostic = "未發現方向.";
+ERR_0060.Advice     = "請檢查幾何.";
+
+ERR_0070.Request    = "計算刀具路徑";
+ERR_0070.Diagnostic = "未發現孔.";
+ERR_0070.Advice     = "請檢查幾何.";
+
+ERR_0080.Request    = "計算刀具路徑";
+ERR_0080.Diagnostic = "無法鑽孔.";
+ERR_0080.Advice     = "\n 所有位置均被使用者停止或 \n 因檢查元素而無法到達.";
+
+ERR_0081.Request    = "計算刀具路徑";
+ERR_0081.Diagnostic = "無法鑽孔.";
+ERR_0081.Advice     = "\n 因刀具與幾何不匹配以致無法鑽孔.";
+
+ERR_0099.Request    = "VDX VDX VDX VDX";
+ERR_0099.Diagnostic = "/p1 contre /p2.";
+ERR_0099.Advice     = "連繫你的當地支援.";
+
+ERR_0100.Request    = "計算刀具路徑";
+ERR_0100.Diagnostic = "需要其中一個參數 /p1 , /p2 和 /p3 必須定義.";
+ERR_0100.Advice     = "連繫你的當地支援.";
+
+ERR_0150.Request    = "計算刀具路徑";
+ERR_0150.Diagnostic = "加工直徑必須大於刀具直徑.";
+ERR_0150.Advice     = "請檢查幾何或刀具直徑.";
+
+ERR_0151.Request    = "計算刀具路徑";
+ERR_0151.Diagnostic = "路徑間距離必須大於 0.";
+ERR_0151.Advice     = "請檢查幾何.";
+
+ERR_0152.Request    = "計算刀具路徑";
+ERR_0152.Diagnostic = "加工螺紋直徑必須大於刀具直徑.";
+ERR_0152.Advice     = "請檢查幾何或刀具直徑.";
+
+ERR_0155.Request    = "計算刀具路徑";
+ERR_0155.Diagnostic = "副程式中的圓弧動作半徑較最小的已計算路徑半徑為大.";
+ERR_0155.Advice     = "為了避免干涉, 此數值已設成較小的路徑值 /p1 .";
+
+ERR_0160.Request    = "刀具路徑計算中";
+ERR_0160.Diagnostic = "特徵和刀具的 PITCH 數不同.";
+ERR_0160.Advice     = "請檢查您的參數.";
+
+ERR_0161.Request    = "刀具路徑計算中";
+ERR_0161.Diagnostic = "特徵和刀具的旋轉方式不同.";
+ERR_0161.Advice     = "請檢查您的參數.";
+
+ERR_0162.Request    = "刀具路徑計算中";
+ERR_0162.Diagnostic = "特徵和刀具的旋轉方式及 PITCH 均不同.";
+ERR_0162.Advice     = "請檢查您的參數.";
+
+ERR_0200.Request    = "計算刀具路徑";
+ERR_0200.Diagnostic = "提昇(Lift)參數不合法的結合.";
+ERR_0200.Advice     = "連繫你的當地支援.";
+
+ERR_0500.Request    = "計算刀具路徑";
+ERR_0500.Diagnostic = "/p1 沒有相關連的刀具.";
+ERR_0500.Advice     = "指定刀具到 /p1.";
+
+// WARNING MESSAGES FOR TOOLPATH COMPUTATION
+// Messages Compensation Outil
+ERR_0510.Request    = "刀具路徑計算中";
+ERR_0510.Diagnostic = "刀具修正器所需已不再存在.";
+ERR_0510.Advice     = "\n 請編輯活動且選擇有用的.";
+
+ERR_0520.Request    = "刀具路徑計算中";
+ERR_0520.Diagnostic = "因刀具太短以致無法搪孔 \n 在下列位置: /p1.";
+ERR_0520.Advice     = "\n 請檢查刀具.";
+
+ERR_0600.Request    = "從直徑計算頂點(Tip)";
+ERR_0600.Diagnostic = "圓角半徑不為零時不可能計算 ";
+ERR_0600.Advice     = "請檢查刀具";
+
+ERR_0610.Request    = "從直徑計算頂點(Tip)";
+ERR_0610.Diagnostic = "/p1 大於 /p2";
+ERR_0610.Advice     = "請檢查策略性的參數.";
+
+ERR_0620.Request    = "從倒角直徑計算倒角頂點(Tip)";
+ERR_0620.Diagnostic = "/p1 大於 /p2";
+ERR_0620.Advice     = "請檢查策略性的參數.";
+
+ERR_0700.Request    = "計算Z 軸時產生問題";
+ERR_0700.Diagnostic = "/p1 應該小於 /p2";
+ERR_0700.Advice     = "請檢查策略性的參數.";
+
+ERR_0710.Request    = "計算刀具路徑";
+ERR_0710.Diagnostic = " /p1 和 /p2 其中一個參數可被定義,不是全部.";
+ERR_0710.Advice     = "請連繫你的當地支援.";
+
+ERR_0720.Request    = "計算刀具路徑";
+ERR_0720.Diagnostic = " /p1 和 /p2 應該一起定義或不定義";
+ERR_0720.Advice     = "請連繫你的當地支援.";
+
+//************************************************************
+// Plage messages generiques ERR_1000 a ERR_1999
+//************************************************************
+//
+ERR_1000 = "刀具直徑大於加工直徑";
+ERR_1001 = "刀具公稱直徑較倒角直徑小, 以致無法加工";
+ERR_1002 = "刀具切削長度較加工深度小";
+
+//************************************************************
+// Plage messages generiques ERR_2000 a ERR_2999
+//************************************************************
+//
+
+// Messages generaux
+//
+InfoTitle      = "製造的資訊";
+WarningTitle   = "製造的警告";
+ErrorTitle     = "製造的錯誤";
+GeneralErrorTitle  = "錯誤";
+PanelTitle     = "製造的錯誤";
+UpdateError    = "更新時的內部錯誤";
+InternalError  = "製造的軟體錯誤. \n 錯誤是: /p1";
+InitError      = "初始化的錯誤";
+ErrorNotSpecified = "錯誤不明確. \n 連繫你的當地支援";
+
+ERR_2000 = "製造的軟體錯誤. \n 連繫你的當地支援.";
+ERR_2001 = "製造的軟體錯誤. \n 錯誤是: /p1 \n 連繫你的當地支援.";
+
+ERR_2002 = "讀取資料. \n 製造的軟體錯誤 : 存取到無效的處理. \n 連繫你的當地支援.";
+ERR_2003 = "要求的 </p1> 處理者 從 </p2>. \n 製造的軟體錯誤 : 要求失敗. \n 連繫你的當地支援.";
+ERR_2004 = "讀取的或設定的 </p1> 屬性從</p2> \n 製造的軟體錯誤 : 屬性不存在. \n 連繫你的當地支援.";
+
+ERR_3000 = "初始化的 </p1> 屬性在 </p2>. \n 屬性不存在. \n 連繫你的當地支援.";  
+ERR_3001 = "初始化的 </p1>. \n </p1> 是無效的. \n 連繫你的當地支援.";  
+ERR_3002 = "讀取的 </p1> 屬性從 </p2>. \n 屬性不存在. \n 連繫你的當地支援.";  
+ERR_3003 = "讀取的 </p1>. \n 物件無效. \n 連繫你的當地支援.";  
+
+//
+// Messages CutCopyPaste
+//
+ERR_3100 = "複製產生的幾何圖形未被保留. \n 定義新的幾合來加工.";
+
+
+//************************************************************
+// Plage ERR_3500 a 3999 : Messages Activites
+//************************************************************
+//
+// Messages ToolPath
+//
+ERR_3500.Request    = "計算刀具路徑."; 
+ERR_3500.Diagnostic = "刀具路徑的計算不可用對於 /p1.";
+ERR_3500.Advice     = "如果此活動應該可重播, 連繫你的當地支援.";
+ERR_3501.Request    = "刀具路徑計算錯誤."; 
+ERR_3501.Diagnostic = "動作號碼 /p1 未定義參考點.";
+ERR_3501.Advice     = "對所有計算的位置, 必須定義參考點. \n 它必須是之前的動作點或參考點.";
+ERR_3502.Request    = "刀具路徑計算錯誤."; 
+ERR_3502.Diagnostic = "動作號碼 /p1 未正確被計算.";
+ERR_3502.Advice     = "修改動作參數後再試一次. \n 或連繫你的當地支援.";
+ERR_3503.Request    = "刀具路徑計算錯誤."; 
+ERR_3503.Diagnostic = "為位置運動號碼 /P1 所選的零件必須是平面形式曲面.";
+ERR_3503.Advice     = "選擇平面形式曲面.";
+ERR_3504.Request    = "刀具路徑計算錯誤."; 
+ERR_3504.Diagnostic = "為位置運動號碼 /P1 所選的零件曲面必須是垂直於刀軸.";
+ERR_3504.Advice     = "請選擇適當的零件曲面或修改動作的刀軸方向.";
+ERR_3505.Request    = "刀具路徑計算錯誤."; 
+ERR_3505.Diagnostic = "當讀取為位置運動號碼 /P1 的動作位置零件鏈結的幾何時發生問題.";
+ERR_3505.Advice     = "修改動作參數後再試一次. \n 或連繫你的當地支援.";
+//
+//************************************************************
+// Plage ERR_4000 a 4499 : Messages Item (Geometrie, etc)     
+//************************************************************
+//
+ERR_4000 = "無相鄰的面. \n 選擇的面必須與先前選擇的其中一個相鄰";
+ERR_4001 = "位置是從設計陣列初始化的";
+ERR_4002 = "面與工具軸不平行. \n 選擇面的主要(ruling)方向必須與工具軸平行 /p1.";
+ERR_4003 = "不是一個規則面. \n 選擇的面必須是一個規則曲面.";
+ERR_4004 = "輪廓線不是封閉的. \n 選擇的輪廓線必須是封閉的.";
+ERR_4005 = "輪廓線是用 /p1 底部的外部曲線初始化";
+ERR_4006 = "輪廓線是用 /p1 底部的外部曲線初始化. \n 1 島(island)從內部的區域建立.";
+ERR_4007 = "輪廓線是用 /p1 底部的外部曲線初始化 \n /p2 島(island)從內部的區域建立.";
+ERR_4008 = "無法達成的幾何. \n 幾何  </p1> 也許已經刪除";
+ERR_4009 = "無法達成的設計特徵. \n 特徵  </p1> 也許已經刪除";
+ERR_4010.Request    = "無效選擇."; 
+ERR_4010.Diagnostic = "所選的零件必須是平面形式曲面.";
+ERR_4010.Advice     = "選擇平面形式曲面.";
+ERR_4011.Request    = "無效選擇."; 
+ERR_4011.Diagnostic = "所選的零件曲面必須是垂直於刀軸.";
+ERR_4011.Advice     = "請選擇適當的零件曲面或修改動作的刀軸方向.";
+ERR_4012.Request    = "無效選擇."; 
+ERR_4012.Diagnostic = "當讀取與動作位置零件鏈結的幾何時發生問題.";
+ERR_4012.Advice     = "請選擇適當的零件曲面 \n 或連繫你的當地支援.";
+
+//************************************************************
+// Plage ERR_4500 a 4999 : Message Resources (Tool, Machine, etc)
+//************************************************************
+
+
+
+
+//************************************************************
+// Plage ERR_5000 a 5499 : Messages PPWord Table.
+//************************************************************
+
+ERR_5000 = "讀取後處理用語表格. \n 無指令名稱在 *INSERT 之後. \n 錯誤行號 /p1.";
+ERR_5001 = "讀取後處理用語表格. \n 無效的關鍵字 *. \n 錯誤行號 /p1.";
+ERR_5002 = "讀取後處理用語表格. \n 不正確的指令區塊  *START-*END. \n *START 是缺少的.";
+ERR_5003 = "讀取後處理用語表格. \n 不正確的指令區塊 *START-*END. \n *END 是缺少的.";
+ERR_5004 = "讀取後處理用語表格. \n 指令名稱 NC_ 必須跟隨 *START_NC_COMMAND. \n 錯誤行號 /p1.";
+ERR_5005 = "讀取後處理用語表格. \n 指令名稱 NC_ 必須跟隨 *START_NC_INSTRUCTION. \n 錯誤行號 /p1.";
+ERR_5006 = "讀取後處理用語表格. \n 參數名稱 MFG_ 必須跟隨 *START_LIST. \n 錯誤行號 /p1.";
+ERR_5007 = "讀取後處理用語表格. \n 參數名稱 MFG_ 必須跟隨 *START_FORMAT. \n 錯誤行號 /p1.";
+ERR_5008 = "讀取後處理用語表格. \n 未知的關鍵字 *START. \n 錯誤行號 /p1.";
+ERR_5009 = "讀取後處理用語表格. \n 後處理用語表格無法開啟";
+ERR_5010 = "讀取後處理用語表格. \n 後處理用語表格未定義. \n 定義後處理用語表格在機器上 \n";
+ERR_5011 = "讀取後處理用語表格. \n Machine 未定義. \n 定義機器和後處理用語表格在機器上 \n";
+
+
+//************************************************************
+// Plage ERR_5500 a 5999 : Messages Replay.
+//************************************************************
+
+ERR_REPLAY_0001 = "重播刀具路徑. \n 程式是空的或缺乏可重播的操作";
+ERR_REPLAY_0002 = "重播刀具路徑. \n 與程式相連的刀具路徑是空的";
+ERR_REPLAY_0003 = "重播刀具路徑. \n 與程式相連的刀具路徑是空的";
+ERR_REPLAY_0004 = "重播刀具路徑. \n 在程式中的操作不作用";
+
+
+//************************************************************
+// Plage ERR_6000 a 6499 : CATMfg
+//************************************************************
+
+//=======================================================================
+//=======================================================================
+//                        ======== BACTH ========                        
+//=======================================================================
+//=======================================================================
+
+//===================================================================
+//  0/ Generalite
+//===================================================================
+
+MSG_BATCH_00001 = "批次處理, 輸入資料: /p \n";
+ERR_BATCH_00002 = "路徑名稱是空的. \n";
+MSG_BATCH_00003 = "批次處理結束. \n";
+MSG_BATCH_00004 = "批次處理開始. \n";
+ERR_BATCH_00005 = "開啟工作處理程序錯誤. \n";
+MSG_BATCH_00006 = "\n---------------------------------------\n\n";
+
+//===================================================================
+//  1/ Lecture du fichier ft05
+//===================================================================
+MSG_BATCH_10000 = "ft05 檔案讀取 : 開始. \n";
+ERR_BATCH_10001 = "ft05 檔案讀取錯誤. \n";
+MSG_BATCH_11000 = "ft05 檔案讀取 : 結束. \n";
+
+//===================================================================
+//  2/ Verification des donnees du fichier ft05 
+//===================================================================
+MSG_BATCH_20000 = "檔案 ft05 資料的驗証 : 開始. \n";
+ERR_BATCH_20001 = "檔案 ft05 資料的驗証錯誤 . \n";
+ERR_BATCH_20100 = "必須的關鍵字 /p 未發現. \n";
+ERR_BATCH_20101 = " *APT 或者 *CLF 關鍵字不是明確的. \n";
+ERR_BATCH_20102 = "關鍵字 *APT 和 *CLF 是互斥的. \n";
+ERR_BATCH_20200 = "關鍵字值未發現 /p.\n";
+ERR_BATCH_20301 = "關鍵字的最小半徑值 *CIR 是不正確的. \n";
+ERR_BATCH_20302 = "關鍵字的最大半徑值 *CIR 是不正確的. \n";
+ERR_BATCH_20303 = "找不到關鍵字的最大半徑值 *CIR. \n";
+ERR_BATCH_20400 = "無法存取程式文件 (關鍵字 *REA 和 *MOD). \n";
+ERR_BATCH_20500 = "建立的NC 檔(關鍵字 *WRI 和 *MEM) 已經存在且不能複寫(關鍵字 *REP). \n";
+ERR_BATCH_20600 = "建立的文件存檔 (keywords *FLW and *MDW) 已經存在且不能複寫(關鍵字 *MRP). \n";
+ERR_BATCH_20700 = "建立的 ISO 檔 (關鍵字 *PSO 和 *NSO) 已經存在且不能複寫 (關鍵字 *RSO). \n";
+ERR_BATCH_20800 = "關鍵字 /p 值不在正確的數值範圍內. \n";
+ERR_BATCH_20900 = "關鍵字 /p 值是負數. \n";
+MSG_BATCH_21000 = "檔案 ft05 資料的驗証 : 結束. \n";
+
+//===================================================================
+//  3/ Lecture du document a traiter 
+//===================================================================
+MSG_BATCH_30000 = "文件的讀取: 開始. \n";
+ERR_BATCH_30001 = "文件的讀取錯誤. \n";
+MSG_BATCH_31000 = "文件的讀取: 結束. \n";
+
+//===================================================================
+//  4/ Verification du document a traiter 
+//===================================================================
+MSG_BATCH_40000 = "文件的驗証: 開始. \n";
+ERR_BATCH_40001 = "文件的驗証錯誤. \n";
+ERR_BATCH_40100 = "程式 (關鍵字 *PRG) 未發現. \n";
+MSG_BATCH_41000 = "文件的驗証: 結束. \n";
+
+//===================================================================
+//  5/ Initialisation de la machine
+//===================================================================
+MSG_BATCH_50000 = "加工初始化 : 開始. \n";
+ERR_BATCH_50001 = "加工初始化錯誤. \n";
+MSG_BATCH_51000 = "加工初始化: 結束. \n";
+
+//===================================================================
+//  6/ Generation du fichier NC Code
+//===================================================================
+MSG_BATCH_60000 = "NC 碼檔案的產生 : 開始. \n";
+ERR_BATCH_60001 = "NC 碼檔案的產生錯誤 . \n";
+MSG_BATCH_61000 = "NC 碼檔案的產生 : 結束. \n";
+
+//===================================================================
+//  7/ Sauvegarde du document modifie
+//===================================================================
+MSG_BATCH_70000 = "文件的存檔 : 開始. \n";
+ERR_BATCH_70001 = "文件的存檔錯誤. \n";
+MSG_BATCH_71000 = "文件的存檔: 結束. \n";
+
+//===================================================================
+//  8/ Generation du fichier ISO Code
+//===================================================================
+MSG_BATCH_80000 = "ISO 檔案的產生: 初次開始. \n";
+ERR_BATCH_80001 = "ISO 檔案的產生錯誤. \n";
+MSG_BATCH_81000 = "ISO 檔案的產生: 結束. \n";
+
+//===================================================================
+//  9/ Dump du contenu de la ft05 (Donnees dans le GeneratorData)
+//===================================================================
+MSG_BATCH_90000 = "FT05 檔案 : 開始. \n";
+MSG_BATCH_91100 = "關鍵字 :  /p \n";
+MSG_BATCH_91000 = "FT05 檔案: 結束. \n";
+
+//=======================================================================
+//=======================================================================
+//                        ======== TOOLS ========                        
+//=======================================================================
+//=======================================================================
+
+ERR_TOOL_CORRECTOR_0001  = "定義暫存器數目. \n 暫存器數目: /p 已經存在. \n 選擇一個不存在的暫存器數目.";
+
+// La bonne description estr celle-ci mais la parametrisation ne marche pas.. 
+//ERR_TOOL_CORRECTOR_0001.Request    = "定義暫存器數目.";
+//ERR_TOOL_CORRECTOR_0001.Diagnostic = "暫存器數目: /p1 已經存在.";
+//ERR_TOOL_CORRECTOR_0001.Advice     = "選擇一個不存在的暫存器數目.";
+
+ERR_TOOL_CORRECTOR_0002  = "定義直徑值. \n 直徑值應該 >= /p1 和 <= /p2 \n 選擇一個有效的直徑值.";
+// La bonne description estr celle-ci mais la parametrisation ne marche pas.. 
+//ERR_TOOL_CORRECTOR_0002.Request    = "定義直徑值.";
+//ERR_TOOL_CORRECTOR_0002.Diagnostic = "直徑值應該 >= /p1 和 <= /p2";
+//ERR_TOOL_CORRECTOR_0002.Advice     = "選擇一個有效的直徑值.";
+
+//=======================================================================
+//=======================================================================
+//                        ======== END TOOLS ========                        
+//=======================================================================
+//=======================================================================
+
+// 
+//************************************************************
+// Vieux format de message : a eviter maintenant et merci de les migrer (utiliser ERR_XXXX)
+//************************************************************
+//
+DesignNotFound = "設計的產品不能重新取得";
+ResourceNotFound  = "來源不能重新取得";
+StrategyParameterNotFound = "策略性的參數 \n /p1 未發現. \n TXT 檔中的可能錯誤 /p2\n 資訊:所有實際上可用的策略參數的清單: \n/p3\n\n 所有實際上可用的策略參數的清單在起動中: /p4";
+StrategyParameterNameNotFound = "策略性參數的名稱 \n /p1 未發現. \n 策略性參數 /p1 是一個 /p2.\n TXT 檔中的可能錯誤 /p3\n\nInfo: 所有實際上可用的策略參數的清單:\n/p4\n\n 所有實際上可用的策略參數的清單在起動中:/p5";
+TxtFileFormatError = "在 TXT 檔中 : /p1 \n 此行: /p2 \n 沒有必須的格式: <name> <xvalue> <yvalue>";
+TxtFileNotReadable= "TXT 檔: /p1 發現, 但不能讀取";
+IconNotAssigned= "無法發現任何有效的 Icon 檔對於 /p1";
+WrongBitmapFileFormat= "BMP 檔: /p1 可能有一個錯誤的Bitmap 檔案格式 \n 我可能開啟和讀取但無法理解";
+XYchangesNotAllowed= "X 和 Y 不應該改變 \n 原來的值: X /p1 Y /p2\n 新的值: X /p3 Y /p4";
+NoBitmapFilePath= "對Bitmap 的給與無檔案路徑";
+BitmapNotReadable = "BMP 檔: /p1 發現, 但不能讀取";
+GetComponentLinksError= "錯誤在 GetComponentLinks";
+ToolPathComputationError = "錯誤在 ToolPath Computation";
+ViewerNotGenerated = "在 /p1 是沒有 2D-視圖產生";
+WrongDriveElement = "錯誤驅動元素";
+ExactOneOfthe3ParametersHasToBeDefined = "要求參數中的1個 /p1 , /p2 和 /p3 必須被定義";
+Breakthrough_But_No_OperationLength = "突破點(Breakthrough)但沒有OperationLength的定義";
+IllegalCombinationOfLiftParameters = "提昇的(Lift)參數不合法結合";
+NotPossibleElseFound = " 沒有其它可能的發現";
+ToolPathNotCalculated = "刀具路徑未計算";
+CuttingLengthNotFound = "切割長度未發現";
+DirectionNotFound = "方向未發現";
+HoleNotFound = "孔未發現";
+NoActivityFound = " 活動未發現";
+NoIntersectionFound = "在工具直徑上未發現相交 /p1";
+NoToolAssociated = "無工具關連";
+IntersectionsOnArcsNotDupported = "在弧上的相交未支援在 \n CATMfgToolPathGeneratorBase::CalculateTipFromDiameter";
+NoToolGeomFound = "未發現刀具幾何";
+OriginNotFound = "起點未發現";
+NeededParameterNotFound = "必要的參數 /p1 未發現";
+OneOfTheFollowingParameterNotFound = "參數 /p1 或 /p2 未發現";
+OnlyBothParameterShouldBeDefined = "參數 /p1 和 /p2 應該一起定義或不定義";
+OnlyOneParameterMayBeDefined = "只有參數 /p1 和 /p2 其中一個可以定義, 不是全部";
+Should_be_greater_than = " Z-軸計算的問題: \n 參數 /p1 = /p2 應該大於 /p3";
+Should_be_smaller_than = "Z-軸計算的問題: \n 參數 /p1 = /p2 應該小於 /p3";
+Parameter_greaterthan_Diameter = "參數 /p1 是大於 /p2 參數 /p3";
+ParameterNotFound_ExistingParameters = "參數  \n /p1 未發現. \n 列出所有可用的參數:\n/p2";
+ToolParameterNoFound = "刀具參數 /p1 未發現";
+WrongToolCuttingAngle = "錯誤的刀具切割角度 /p1";
+WrongToolTipZCoordinateCalculated = "對於刀具直徑 /p1 錯誤的刀尖 Z-軸 /p2 被計算";
+WrongToolTipLengthCalculated = "錯誤的刀尖長度 /p1 計算";
+NoFeatureFound = "未發現相關連的特徵";
+InternalPocketingError = "內部拉伸切割錯誤";
+WrongDrivesElement = "錯誤的驅動元素";
+WrongIslandsElement = "錯誤的島(Island)元素";
+WrongPartElement = "錯誤的元件元素";
+NoToolPathFactoryFound = "未發現刀具路徑架構";
+NoFeedrateParametersFound = "未發現進給率參數";
+ThisToolTypeHasNoToolTipLength = "型式 /p1 的刀具沒有刀尖長度";
+Breakthrough_And_DepthDistance_Defined = "穿越點(Breakthrough)和深度距離定義 ";
+
+
+

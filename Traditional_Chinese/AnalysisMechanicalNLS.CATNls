@@ -1,0 +1,234 @@
+// -----------------------------
+// Analysis Entities : Property 
+// -----------------------------
+SAM3DSolid = "3D 性質";
+SAMShell = "2D 性質";
+SAMDesignComposite = "輸入的組合性質";
+SAMShellLocal = "局部 2D 性質";
+SAMBeam = "1D 性質";
+SAMBeamLocal = "局部樑性質";
+SAMImportedBeamProp = "輸入樑性質";
+SAMMappedPropertyEntity = "對應性質";
+
+//------------------------------
+// Analysis Entities : Materiau
+//------------------------------
+
+SAMIsoMaterial = "材料";
+SAMThermalMaterial = "熱材料";
+SAMNonLinearMaterial = "非線性材料";
+SAMUserIsoMaterial = "使用者等量材料";
+SAMUserMaterial = "使用者材料";
+// Basic Component thermalMaterial
+//
+
+SAMThermalConductivity = "熱傳導";
+SAMSpecificHeat = "比熱";
+SAMEmissivity = "放射性";
+
+// Basic Component de MaterialWithNoSupport
+//
+
+SAMYoungModulus = "楊氏系數";
+SAMPoissonRatio = "包松比";
+SAMDensity = "密度";
+SAMThermalExpansion = "熱膨漲";
+SAMShearModulus = "降伏力量";
+
+// -----------------------------
+// Analysis Entities : Groups
+// -----------------------------
+SAMVertexGroup = "點群組";
+SAMEdgeGroup = "線群組";
+SAMSurfaceGroup = "曲面群組";
+SAMBodyGroup = "本體群組";
+SAMBoxFEGroup = "盒群組";
+SAMSphereFEGroup = "球群組";
+SAMVertexByProxi = "由鄰近點群組";
+SAMLineByProxi = "由鄰近線群組";
+SAMSurfaceByProxi = "由鄰近曲面群組";
+SAMLineBoundaryGroup = "由邊界線群組";
+SAMSurfBoundaryGroup = "由邊界曲面群組";
+
+SAMVertexGroupMP = "點群組";
+SAMEdgeGroupMP = "線群組";
+SAMSurfaceGroupMP = "曲面群組";
+SAMVertexByProxiMP = "由鄰近點群組";
+SAMLineByProxiMP = "由鄰近線群組";
+SAMSurfaceByProxiMP = "由鄰近曲面群組";
+SAMLineByProxiMP = "由鄰近線群組";
+SAMSurfaceByProxiMP = "由鄰近曲面群組";
+SAMLineBoundaryGroupMP = "由邊界線群組";
+SAMSurfBoundaryGroupMP = "由邊界曲面群組";
+// -----------------------------
+// Analysis Entities : Restraint
+// -----------------------------
+SAMClamp = "夾持";
+SAMPivot = "旋轉點";
+SAMSlidingPivot = "滑動的旋轉點";
+SAMSlider = "滾動";
+SAMSurfaceSlider = "曲面滑動";
+SAMBallJoin = "球形接頭";
+SAMRestraint = "自訂約束條件";
+SAMRestIsostatic = "壓力均衡";
+
+// -------------------------
+// Analysis Entities : Loads
+// -------------------------
+SAMPressureMag = "壓力";
+SAMTemperatureField = "溫度欄位";
+SAMTempFromThermSolutionEntity = "由熱解的溫度範圍";
+SAMTempFromThermSolutionBC = "熱解";
+SAMPressure = "壓力";
+SAMForceVector = "力向量";
+SAMDistributedForce = "均佈力";
+SAMLineicForce = "線力密度";
+SAMSurfacicForce = "曲面力密度";
+SAMVolumicForce = "體積力";
+SAMForceDensity = "體積力密度";
+SAMMoment = "力距";
+SAMEnforcedDisp = "強制執行的位移";
+
+SAMTransAcceleration = "加速度";
+SAMRotationForce = "旋轉力";
+
+SAMBearingLoad="軸承負荷";
+
+SAMImportedForce="強制力量";
+SAMImportedMoment="輸入力矩";
+
+// pour le type enumere SAMBearOrientation
+radial="徑向";
+parallel="平行";
+
+// pour le type enumere SAMBearProfileType
+sinusoidal="正弦曲線";
+parabolic="拋物線";
+userLaw="Law";
+
+inward = "向內";
+outward = "向外";
+// ------------------------------
+// Analysis Entities : Equipments
+// ------------------------------
+SAMDistributedMass = "分配的質量";
+SAMLineicMass = "線質量密度";
+SAMSurfacicMass = "曲面質量密度";
+SAMInertiaMass = "分配的質量和慣性";
+SAMCombineMass = "組合質量";
+SAMCombineLoad = "組合負載";
+
+// ---------------------------------------
+// Analysis Entities : Assembly Constraint
+// ---------------------------------------
+SAMFaceFaceFastenedSpring = "繫緊彈簧連接性質";
+SAMFaceFaceFastened = "繫緊連接性質";
+SAMFaceFaceSlider = "滑動的連接性質";
+SAMFaceFaceContact = " 接觸的連接性質";
+SAMDistantRigid	= "剛體連接性質";
+SAMDistantSmooth = "平順的連接性質";
+SAMPressureFitting="壓配連結性質";
+SAMBoltTightening="螺栓繫緊連接性質";
+SAMVirtBoltTightening="虛擬螺栓繫緊連接性質";
+SAMVirtSpringBoltTigh="虛擬彈簧螺栓繫緊連接性質";
+SAMSpotWeldingConnect="點焊接連接性質";
+SAMSeamWeldConnect="縫補焊接連接性質";
+SAMSurfWeldConnect="曲面焊接連接性質";
+SAMHalfPointPropConnect="節點界面性質";
+SAMPointPointPropConnect="節點至節點連接性質";
+SAMPeriodicConnection="間隔情形性質";
+SAMGenericDistant="使用者自訂連接性質";
+
+// pour le type enumere SAMBoltTighOrientation
+same="相同";
+opposite="相對";
+
+// --------------------------------
+// Analysis Entities : Virtual Part
+// --------------------------------
+SAMVirPartContact = "接觸的虛擬零件";
+SAMVirPartRigid = "剛體虛擬零件";
+SAMVirPartSmooth = "平順的虛擬零件";
+SAMVirPartRigidSpring = "剛體彈簧虛擬零件";
+SAMVirPartSmoothSpring = "剛體彈簧虛擬零件";
+
+// BasicComponents
+// --------------
+SAMDTPtrPressure = "壓力表";
+SAMDTPtrSurfForce = "曲面力量表";
+SAMDTPtrLinForce = "線性力量表";
+SAMDTPtrVolForce = "體積力量表";
+SAMDTPtrShell = "厚度表";
+SAMDTPtrImportedForceDesignTable.1 = "輸入力量表";
+SAMDTPtrImportedMomentDesignTable.1 = "輸入力矩表";
+
+// pour le type enumere GPSCustoWeld
+Rigid="剛體";
+RigidSpringRigid="剛體 - 彈簧 - 剛體";
+SpringRigidSpring="彈簧 - 剛體 - 彈簧";
+Beam="樑";
+Hexahedron="六面體";
+
+GPSCustoSpotWeld="點焊";
+
+SAMGlobalSensor = "總體偵測器";
+SAMImageSensor = "局部偵測器";
+SAMLoadPreproSensor="負載偵測器";
+SAMMultiLoadPreproSensor="多重負載偵測器";
+SAMMassPreproSensor="慣性偵測器";
+SAMReactionSensor = "反應偵測器";
+
+// enumere pour les sensors
+GPSProcessNone = "無";
+GPSProcessMin = "最小";
+GPSProcessMax = "最大";
+GPSProcessAverage = "平均";
+
+// Adaptatif
+SAMAdaptivitySet = "適應性";
+SAMAdaptivityEntity = "整體適應性";
+SAMLocalAdaptEntity = "局部適應性";
+
+//Connection Design
+SAMGenericConnDesign = "一般分析連接";
+SAMPointConnDesign = "點分析連接";
+SAMPointConnDesignWOP = "單一零件內的點分析連接";
+SAMLineConnDesign = "線分析連接";
+SAMLineConnDesignWOP = "單一零件內的線分析連接";
+SAMSurfConnDesign = "曲面分析連接";
+SAMSurfConnDesignWOP = "單一零件內的曲面分析連接";
+SAMPointHalfConnDesign = "點分析界面";
+SAMPointPointConnDesign = "點至點分析連接";
+
+// Multi LoadSet
+AnalysisMultiLoadSet = "多重負載";
+//
+SAMImportForceUIEntity = "輸入力";
+
+// Inertia Sensor (manage all output parameters NLS)
+ParamMass = "Mass";
+ParamInertiaXX = "Ixx";
+ParamInertiaYY= "Iyy";
+ParamInertiaZZ= "Izz";
+ParamInertiaXY= "Iyz";
+ParamInertiaXZ= "Ixz";
+ParamInertiaYZ= "Ixy";
+ParamCouplingXX= "Cxx";
+ParamCouplingYY= "Cyy";
+ParamCouplingZZ= "Czz";
+ParamCouplingXY= "Cxy";
+ParamCouplingXZ= "Cxz";
+ParamCouplingYZ= "Cyz";
+ParamCDGx= "Gx";
+ParamCDGy= "Gy";
+ParamCDGz= "Gz";
+
+//Imported loads
+SAMImportForceEntity="己載入負載";
+
+
+
+
+
+
+

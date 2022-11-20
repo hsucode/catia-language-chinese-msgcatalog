@@ -1,0 +1,78 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//===========================================================================
+//
+// CATRscLightPhotonsPropertyFrame
+//
+//===========================================================================
+
+indirectSepFrame.indirectSepLabel.Title = "光線";
+indirectSepFrame.indirectSepLabel.Help = "光線設定";
+indirectSepFrame.indirectSepLabel.ShortHelp = "光線";
+indirectSepFrame.indirectSepLabel.LongHelp =
+"更改光線參數.";
+
+indirectCheck.Title = "放射光線";
+indirectCheck.Help = "啟動放射光線";
+indirectCheck.ShortHelp = "啟動放射光線";
+indirectCheck.LongHelp =
+"啟動或停止放射光線.";
+
+energyLabel.Title = "強度因子";
+energyLabel.Help = "定義非直接照射強度因子";
+energyLabel.ShortHelp = "定義非直接照射強度因子";
+energyLabel.LongHelp =
+"定義非直接照射強度因子.
+實際照射強度為照射強度乘以此因子.
+此因子可分別調整直接和非直接的照射強度.
+預設值為1, 故兩者相等比例.";
+
+energySlider.Help = "定義非直接照射強度因子";
+energySlider.ShortHelp = "非直接照射強度因子";
+energySlider.LongHelp =
+"定義非直接照射強度因子.
+實際照射強度為照射強度乘以此因子.
+此因子可分別調整直接和非直接的照射強度.
+預設值為1, 故兩者相等比例.";
+
+globalEmittedLabel.Title = "總體照射光線";
+globalEmittedLabel.Help = "定義總體照射光線";
+globalEmittedLabel.ShortHelp = "總體照射光線";
+globalEmittedLabel.LongHelp =
+"當計算總體光源強度時定義光源的最大數目.
+此數值定義總體照明的塗彩品質.
+光線的數目在 10000 和 1000000 之間.
+較小的數目會造成模糊. 
+如最後顯示開啟, 一般來說較小值是可接受的.
+註: 較大值會大量增加塗彩時間.";
+
+globalEmittedSlider.Help = "定義總體照射光線";
+globalEmittedSlider.ShortHelp = "總體照射光線";
+globalEmittedSlider.LongHelp =
+"當計算總體光源強度時定義光源的最大數目.
+此數值定義總體照明的塗彩品質.
+光線的數目在 10000 和 1000000 之間.
+較小的數目會造成模糊. 
+如最後顯示開啟, 一般來說較小值是可接受的.
+註: 較大值會大量增加塗彩時間.";
+
+causticEmittedLabel.Title = "散焦光線";
+causticEmittedLabel.Help = "定義散焦光線";
+causticEmittedLabel.ShortHelp = "散焦光線";
+causticEmittedLabel.LongHelp =
+"當計算散焦光線時定義光源的最大數目.
+此數值定義總體照明的塗彩品質.
+光線的數目在 10000 和 1000000 之間.
+較小的數目會造成模糊. 
+如最後顯示開啟, 一般來說較小值是可接受的.
+註: 較大值會大量增加塗彩時間.";
+
+causticEmittedSlider.Help = "定義散焦光線";
+causticEmittedSlider.ShortHelp = "散焦光線";
+causticEmittedSlider.LongHelp =
+"當計算散焦光線時定義光源的最大數目.
+此數值定義總體照明的塗彩品質.
+光線的數目在 10000 和 1000000 之間.
+較小的數目會造成模糊. 
+如最後顯示開啟, 一般來說較小值是可接受的.
+註: 較大值會大量增加塗彩時間.";
+

@@ -1,0 +1,144 @@
+PanelVarFilletTitle       = "變化圓角定義";
+PanelEdgeFilletTitle      = "邊線圓角定義"; 
+
+LongHelp = "定義 (變化) 圓角";
+
+FrmRoot.FrmMain.CkeLabel.Title           = "半徑: ";
+FrmRoot.FrmMain.PropagationLabel.Title   = "增生:";
+FrmMore.KeepEdgeFrame.RelimitObjectLabel.Title  = "保留的邊線: ";
+FrmRoot.FrmMain.PointLabel.Title          = "點: ";
+FrmRoot.FrmMain.VariationLabel.Title      = "變異:";
+FrmRoot.FrmMain.BoundaryLabel.Title       = "端點:";
+
+PanelVarFilletEdge        = "欲加圓角的邊: ";
+PanelEdgeFilletObject          = "倒圓角物件: "; 
+PanelVarEdgeFilletKeepButton = "保持邊線";
+PanelVarFilletCuPanelEdgeFilletSelectedFeatures = "已選特徵: ";
+
+PanelVarFilletCubic       = "圓錐";
+PanelVarFilletLinear      = "線性";
+
+PanelVarFilletTangency         = "相切";
+PanelVarFilletMinimal          = "最小";
+PanelVarFilletFreeEdges        = "內部邊線";
+PanelVarFilletPartAgainstCurrent = "與目前實體相交";
+PanelVarFilletGeneratedEdges = "相交邊線";
+PanelVarFilletAgainstCore = "與模仁相交";
+PanelVarFilletAgainstCavity = "與模穴相交";
+PanelVarFilletAgainstFeatures = "與所選特徵相交";
+
+
+PanelEdgeFilletUV              = "直線";
+PanelEdgeFilletConnect         = "平緩";
+PanelEdgeFilletMinimum         = "最小";
+PanelEdgeFilletMaximum         = "最大";
+
+FrmRoot.FrmMain.ReferenceElementLabel.Title = "依附: ";
+FrmRoot.FrmMain.Trim.Title     = "修剪依附";
+FrmRoot.FrmMain.RelimitationMode.Title    = "修剪重覆圓角";
+
+PanelLimitingFillet            = "限制元素 :";
+PanelMultiLimitingFillet       = "限制元素組 :";
+
+FrmMore.SpineFrame.CircleFillet.Title     = "圓形倒角";
+FrmMore.SpineFrame.SpineObjectLabel.Title = "脊椎線 :";
+
+FrmMore.BlendFrame.SetbackValueLabel.Title		= "退回距離: ";
+FrmMore.BlendFrame.BlendVertex.Title        = "順接轉角 ";
+FrmMore.BlendFrame.ObjectLabel.Title		= " ";
+PanelMultiEdgeFilletEdges	   = "圓角邊線";
+PanelMultiEdgeFilletObjects	   = "圓角物件";
+FrmMore.ChkSharpEdgeRemoveFrame.SharpEdgeRemove.Title = "移除內部銳邊最佳化";
+
+LimitingElements = "限制元素";
+PointElements     = "點元素";
+PanelPartingFillets = "分模元素";
+
+FrmRoot.FrmMain.CkeLabel.LongHelp = 
+"如為固定圓角, 請指定半徑值
+若為變化圓角, 請指出亮度顯示的半徑值.
+半徑值必須大於或等於 0 .";
+FrmRoot.FrmMain.ParamFrame.Spinner.LongHelp = 
+"如為固定圓角, 請指定半徑值
+若為變化圓角, 請指出亮度顯示的半徑值.
+半徑值必須大於或等於 0 .";
+FrmRoot.FrmMain.ParamFrame.EnglobingFrame.IntermediateFrame.Spinner.LongHelp = 
+"如為固定圓角, 請指定半徑值
+若為變化圓角, 請指出亮度顯示的半徑值.
+半徑值必須大於或等於 0 .";
+
+FrmRoot.FrmMain.ObjectLabel.LongHelp = 
+"將被倒圓角的邊:
+指出將被倒圓角的銳邊,
+如為固定圓角則為修剪面.";
+FrmRoot.FrmMain.ObjectFrame.Sel.Edt.LongHelp = 
+"將被倒圓角的邊:
+指出將被倒圓角的銳邊,
+如為固定圓角則為修剪面.";
+
+FrmRoot.FrmMain.PropagationLabel.LongHelp =
+"指出要倒圓角時的延伸方式有兩種.:
+
+相切: CATIA 在所選的邊中持續倒圓角
+直到有一邊不連續時.
+  
+最小: 延伸直到
+第一個幾何自動修剪."; 
+
+FrmRoot.FrmMain.PropagationCombo.LongHelp =
+"指出要倒圓角時的延伸方式有兩種.:
+
+相切: CATIA 在所選的邊中持續倒圓角
+直到有一邊不連續時.
+  
+最小: 延伸直到
+第一個幾何自然裁剪.";
+
+FrmRoot.FrmMain.PointLabel.LongHelp = 
+"指出倒圓角將經過的點. 
+可在所選的邊上按一下來產生點.";
+
+FrmRoot.FrmMain.PointFrame.Sel.Edt.LongHelp = 
+"指出倒圓角將經過的點. 
+可在所選的邊上按一下來產生點.";
+
+FrmRoot.FrmMain.VariationLabel.LongHelp =
+"指出圓角角變化的方式.
+
+變化方式有兩種:
+立方體: 圓角從一種漸漸變化至另一種.
+線性: 圓角從一種直接變化至另一種.";
+
+FrmRoot.FrmMain.VariationCombo.LongHelp =
+"指出圓角變化的方式.
+
+變化方式有兩種:
+圓錐曲線: 圓角半徑值隨圓椎曲率漸漸變化.
+線性: 圓角半徑值線性變化.";
+
+FrmRoot.FrmMain.ParamFrame.Spinner.Title = "半徑"; 
+FrmRoot.FrmMain.ParamFrame.EnglobingFrame.IntermediateFrame.Spinner.Title = "半徑"; 
+
+FrmRoot.FrmMain.BoundaryLabel.LongHelp =
+"當對薄殼倒圓角時指出裁剪模式.";
+
+FrmRoot.FrmMain.BoundaryCombo.LongHelp =
+"當對薄殼倒圓角時指出邊界修剪模式.";
+
+FrmRoot.FrmMain.ReferenceElementFrame.LongHelp =
+"指出要倒圓角的薄殼.";
+
+FrmMore.KeepEdgeFrame.RelimitObjectLabel.LongHelp = 
+"當選擇物件來倒圓角時指出不可被修改的邊.";
+FrmMore.KeepEdgeFrame.RelimitObjectFrame.Sel.Edt.LongHelp = 
+"當選擇物件來倒圓角時指出不可被修改的邊.";
+
+FrmRoot.FrmMain.RelimitationMode.LongHelp     = "修剪依附並組立它至圓角";
+
+FrmMore.PartingFrame.PartingObjectFrame.LongHelp = "指定極限";
+
+FrmMore.BlendFrame.BlendObjectFrame.LongHelp = "指定重新外形的圓角";
+
+FrmMore.PartingElementFrame.PartingObjectElementFrame.LongHelp = "指定分模元素";
+
+

@@ -1,0 +1,25 @@
+//NLS-ENGLISH VERSION
+//=======================================================================
+// MODULE :  DataExchangeInfrastructure
+//=======================================================================
+//  10/07/2001: CRB: Service de gestion memoire et evitement CD
+
+//
+//--------------------------------------
+//  Messages from CATReportBox
+//--------------------------------------
+
+//CATReportBox.Msg.Pourcentages = "\n	%s %% of file transcribed \n";
+//CATReportBox.Msg.Chemin = "\n For more information see : %s.rpt \n";
+
+CATReportBox.Msg.Transfer=" 轉換完成 ";
+CATReportBox.Msg.Information="\n 更多資訊請查看 : \n ";
+CATReportBox.Msg.Err.Invalid="\n    無效輸入檔案. \n    轉換中止.";
+CATReportBox.Msg.Err.NoPresent="\n   檔案不存在. \n    轉換中止.";
+CATReportBox.Msg.Err.NoLicence="\n   沒有軟體授權.\n    轉換中止.";
+
+CATReportBox.Msg.TransferLowMemory="記憶體太低: 只轉換部份檔案. 請增加記憶體數目.";
+
+// Warning : la boite de dialogue de fin de transfert est affichee
+CATReportBox.Warning.CompletionDialogBox=
+"   <W> [9002] [T=/p2] [/p1] 完成對話框顯示在 /p4 /p3"; 

@@ -1,0 +1,55 @@
+ERR_0001.Request    = "ず场岿粇";
+ERR_0001.Diagnostic = "NULL Handler";
+ERR_0001.Advice     = " ";
+
+ERR_0002.Request    = "ず场岿粇";
+ERR_0002.Diagnostic = "NULL Pointer";
+ERR_0002.Advice     = " ";
+
+ERR_0003.Request    = "ず场岿粇";
+ERR_0003.Diagnostic = "FAILED Result";
+ERR_0003.Advice     = " ";
+
+ERR_0004.Request    = "ず场岿粇";
+ERR_0004.Diagnostic = "FATAL Result";
+ERR_0004.Advice     = " ";
+
+
+
+ERR_0005.Request    = "No Enovia ARPath found for this ENOVIA Model";
+ERR_0005.Diagnostic = "Export cannot log the ARPath for this model. The connection can be broken with the ENOVIA server";
+ERR_0005.Advice     = "Check your ENOVIA connection";
+
+
+ERR_0006.Request    = "Impossible to find this model informations";
+ERR_0006.Diagnostic = "Export cannot find any informations for this model. No information relative to the name of this model can be found in the export file. The connection can be broken with the ENOVIA server or the session is invalid";
+ERR_0006.Advice     = "Check your environment";
+
+
+//--------------------------------------------------------------------------------------------------
+// Warning. Il sert a prevenir l'utilisateur lors du Mirror copy de l'inversion des normales
+// dans le cas ou le recalcule de normale ne donne pas la meme normale que la normale symetrique
+//--------------------------------------------------------------------------------------------------
+ERR_0007.Request    = "The KVectors of some of the transformed fasteners have been modified.
+";
+ERR_0007.Diagnostic = "The KVectors of the transformed fasteners are initialized with the transformed KVector of the original fasteners. 
+In this case, the KVector computations of some of the transformed fasteners are not consistent with these initializations.  
+So the computed values are taken.
+";
+ERR_0007.Advice     = "Orientations of the symmetrical CATParts do not respect the symmetry of the original orientations. 
+Or you don't have thickness on the symmetrical CATParts. Please Check them.";
+
+
+
+//--------------------------------------------------------------------------------------------------
+// Numero eleve car erreur introduite sur HF de la R12 alors que de nouvelle erreurs sont deja en 14
+// Renumerotation des que les import pourrons etre realises
+// Le CPP a modifier sera CATEBfmContInit
+//--------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------
+// Erreur de gestion de la duplication des containers applicatifs CATBfm au sein d'un meme CATProduct
+//--------------------------------------------------------------------------------------------------
+ERR_0100.Request    = "ABF data container must be unique in a CATProduct document.";
+ERR_0100.Diagnostic = "In this document, ABF data container is duplicated.";
+ERR_0100.Advice     = "The data must be recovered manually. Please contact your internal CATIA support administrator in order to recover them.";
+

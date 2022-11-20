@@ -1,0 +1,109 @@
+//General
+Warning="Äµ§i";
+
+//Ports message
+BadElementForPastePortsIn="Cannot paste port in the selected object.";
+BadInPortsIsLeaf = "Cannot paste: Root port must be Tuple or Record.";
+
+//Instance message
+BadElementForPasteInstancesIn="Cannot paste instance in the selected object.";
+
+//Pattern message
+BadElementForPastePatternsIn="Cannot paste pattern in the selected object.";
+BadInPatternsIsLeaf = "Cannot paste: Root pattern must be Tuple or Record.";
+
+//module definition message
+PositionQuestion = "Insert inside or after";
+PositionMessage = "Insert inside module ?" ;
+BadElementForPasteModElemIn="Cannot paste Module element in the selected object.";
+NoPasteLibrary = "Cannot paste library : Use \"Add library\" command.";
+
+//CCP inside DB2
+ImpossibleToPasteModuleInILOrTS = "Cannot paste module.";
+ImpossibleToPasteBlocksWithoutSameFather = "Cannot paste \"/P1\" element in \"/P2\" .";
+SureToCopyBlock = "Do you want \"/P1\" will be overwriten?
+	Proceed ?";
+
+//life cycle
+EmtyUndoRedoStack = "Running this command will empty the Undo-Redo stack.
+	Proceed?";
+
+InvalidModule="This component is owned by an invalid module,
+Update this module before";
+ 
+EditLib="This component is in a library, if you edit it you modify the library !
+Do you want to continue";
+
+NoRemove1="This object \"/P1\" can not be removed";
+
+OkToRemove1="Are you sure to remove this object  \"/P1\"?";
+
+NoRemove2="At least one of these objects can not be removed";
+
+OkToRemove2="Are you sure to remove these objects ?";
+OkToReplace="Are you sure to replace all the contain of /P1 by the contain of /P2?";
+
+LibraryUsed="This library is used by another, it can not be removed";
+RestoreLib="Some libraries previously hidden are now useful and are restored";
+SameName="Some libraries and perhaps the root module have the same name, rename one element";
+
+
+PbWithSave="Because of syntax errors, the workspace of document /P1 is saved in temporary mode, not compliant with future version.
+You are advised to correct errors ";
+
+NotOutsideRoot="It is forbidden to paste outside the root module /P1";
+
+NoPaste="No paste of such object allowed in a /P1 object";
+InsideOnlyInModule="Paste inside object /P1 of type /P2 forbidden, paste possible only in module";
+
+ReplaceMainOnlyByModule="The main module /P1 can be replaced only by a module, not a /P2";
+NoHomogeneous="The selected objects cannot be copied together";
+
+AfterBeforeOnlyWithAction="Cannot paste action after or before object /P1 of class /P2";
+BadToPasteInstruction="Cannot paste action in object /P1 of class /P2";
+BadToReplaceInstruction="Cannot replace  object /P1 of class /P2 by an action";
+OnlyOneToReplaceInstruction="Only the first copied action will be used to replace this one";
+OnlyOneToReplacePort="Only the first copied port will be used to replace this one";
+//BadElementForPortsIn="Cannot paste port in object /P1 of class /P2";
+BadKindForPorts="Cannot paste port in object /P1 of class /P2 and kind /P3";
+NoPortFind="Block without port : cannot be copied in";
+BadKindOfPort="The port /P1 is of kind Leaf: cannot paste element on it";
+NewVersion="New. Not stored in vault";
+CheckedInVersion="Checked-in";
+CheckedOutVersion="Checked-out. Not stored in vault";
+ReleasedVersion="Released";
+NotValidDbId="Not valid version";
+
+LibLink="Logic library link";
+
+AUTLciDirection="Direction";
+AUTLciExpr="Expr";
+AUTLciInstance="Instance";
+AUTLciInstruction="Instruction";
+AUTLciLibrary="Library";
+AUTLciMapping="Mapping";
+AUTLciModDef="ModDef";
+AUTLciModElement="ModElement";
+AUTLciModSig="ModSig";
+AUTLciModType="ModType";
+AUTLciModule="Module";
+AUTLciPattern="Pattern";
+AUTLciPort="Port";
+AUTLciStep="Step";
+AUTLciTransition="Transition";
+AUTLciTypeDef="TypeDef";
+AUTLciTypeExpr="TypeExpr";
+AUTLciValType="ValType";
+AUTLciValueDef="ValueDef";
+AUTLciWorkspace="Workspace";
+LIBDIR = "AUTCsmPrd";
+LIBEXBLOCK = "AUTExBlock";
+TaskPort="Port for tasks";
+Sensor="Sensors ports";
+ExternalBlock="External block";
+ReferenceModule="Reference of Exposed module";
+SimpleReference="Simple Reference";
+
+LibStatusNotFound="This document \"/P1\" is not a module document";
+LibStatusCycle="Circular reference with document \"/P1\"";
+LibStatusError="Internal error when loading document \"/P1\"";

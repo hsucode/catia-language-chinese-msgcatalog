@@ -1,0 +1,65 @@
+Title="命名圖層";
+
+LayersList.NumberColumn.Title= "數目";
+LayersList.NameColumn.Title  = "名稱";
+
+mainFrame.cmdFrame.newLayer.Title="新的";
+mainFrame.cmdFrame.deleteLayer.Title="刪除";
+
+mainFrame.listFrame.LayersList.ShortHelp="命名圖層的清單.";  
+mainFrame.listFrame.LayersList.LongHelp="命名圖層的清單.
+只有命名的圖層被列出.
+在圖層區域輸入圖層號碼,以便使用預設名稱將此
+圖層新增到清單中, 如果它不是已經存在.
+選擇圖層前先預選它的物件 (如果是可見的).
+號碼或名稱的第二個選擇使它可編輯.
+在相反的次序中選擇欄位標題排序欄位.";
+mainFrame.cmdFrame.newLayer.ShortHelp=
+"新增一圖層到清單中.";
+mainFrame.cmdFrame.newLayer.LongHelp=
+"新增一圖層到清單中.
+一條新線將新增到清單中,
+以第一個未使用圖層號碼及預設名稱.
+這些 號碼及名稱可以直接在清單中輕易的更新
+(點選二次).";  
+mainFrame.cmdFrame.deleteLayer.ShortHelp=
+"從清單中移除.";
+mainFrame.cmdFrame.deleteLayer.LongHelp=
+"從清單中移除選擇的圖層.
+目前的圖層和 '一般 ' 圖層不能被移除.";
+
+NoneLayer.Title="無";
+GeneralLayer.Title="一般";
+OtherLayers="其它的圖層...";
+ComboLayers.ShortHelp.Body="圖層 ";
+ComboLayers.Document.ShortHelp = "文件中圖層的定位位置";
+ComboLayers.Settings.ShortHelp = "CATSettings 儲存器中圖層的定位位置";
+ComboLayers.LongHelp="圖層區域.
+顯示選擇物件的圖層號碼
+或目前的圖層如果不選擇任何東西.
+這個號碼能變更為改變選擇物件的圖層或目前的圖層.
+選擇箭頭以看見命名的圖層的清單.
+在清單中, ' 其它圖層...' 項目編輯清單
+在其它的對話框中.";
+
+Layer.Title="圖層 ";
+
+RemoveLayer.Info =
+"從圖層清單中移除一個圖層而不刪除它 :
+只有它的名稱被刪掉. 使用這個圖層的顯示過濾器保持可用
+且在這個圖層中的物件保留在其中.";
+LayerNumberAlreadyExists.Info =
+"圖層號碼已經存在清單中.
+號碼變更被忽略.";
+LayerGeneralNotModified.Info =
+"一般的圖層不能修改.
+更改被忽略.";
+LayerNameEmpty.Info =
+"輸入名稱是空的.
+名稱更改被忽略.";
+LayerNameAlreadyExists.Info =
+"圖層的名稱已存在清單中.
+ 名稱更改被忽略.";
+LayerCurrentNotModified.Info =
+"目前圖層的數目不能被修改.
+  數目更改被忽略.";

@@ -1,0 +1,39 @@
+// COPYRIGHT ImpactXoft 2003
+//===================================================================
+BlankLineLabel001Id.Title = "  ";
+ProfControlOptsFrameId.Title = "斷面控制";
+ProfControlOptsFrameId.BlankLineLabel002Id.Title = "  ";
+ProfControlOptsFrameId.MoveProfToPathCheckButtonId.Title = "移動斷面至路徑";
+
+ControlSelectionLabelId = "選擇: ";
+
+ControlTypeKeepAngleId        = "保持角度";
+ControlTypePullingDirectionId = "拉伸方向";
+ControlTypeReferenceSurfaceId = "參考曲面";
+
+ControlPullDir3DLabelId = "控制方向";
+ControlRefSurf3DLabelId = "控制曲面";
+
+//===================================================================
+// LongHelp
+//===================================================================
+
+ProfControlOptsFrameId.LongHelp =
+"Parameters for profile control.";
+
+ProfControlOptsFrameId.ProfControlTypeFrameId.ControlTypeComboId.LongHelp =
+"Defines the swept profile control mode.
+By default the profile is swept keeping 
+its angle with the center curve constant.
+You can specify the profile orientation
+by selecting a pulling direction or a 
+reference surface.";
+
+ProfControlOptsFrameId.ProfControlSelectionFrameId.LongHelp =
+"Specifies pulling direction or reference
+surface.";
+
+ProfControlOptsFrameId.MoveProfToPathCheckButtonId.LongHelp = 
+"Specifies that the swept profile should be 
+automatically positioned on each center curve
+loop. Not valid for Keep Angle control mode.";

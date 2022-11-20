@@ -1,0 +1,128 @@
+ ImportTitle  = "輸入模具零件";
+ CompareTitle  = "比較模具零件";
+ ImportPrefix = "輸入 ";
+ ComparePrefix  = "比較模具零件與";
+
+ NoSelection="未選擇";
+
+ ScalingCenter="原點";
+ AffinityCenter="軸系";
+
+ OrgLAS		= "局部軸系";
+ OrgBBC		= "結合盒中心";
+ OrgGC		= "重心";
+ OrgCoord	= "座標";
+ OrgMainPulling = "主要脫模方向"; 
+ 
+ Surfaces   = " 曲面";
+
+ // Contextual menu ToImport
+ ListeDisplayItem	= "顯示清單";
+ ListeResetItem		= "重設清單"; 
+
+ FrmRoot.FrmModel.LongHelp =
+ "使用具鏈結的複製 / 貼上來輸入模具零件.";
+
+ FrmRoot.FrmModel.Title					= "模型 ";
+ FrmRoot.FrmModel.LbReference.Title		= "參考 ";
+ FrmRoot.FrmModel.LbBody.Title			= "本體 ";
+ FrmRoot.FrmModel.LbSurf.Title			= "曲面 ";
+ FrmRoot.FrmModel.PushFileOpen.Title	= "開啟...";
+ FrmRoot.FrmModel.PushFileOpen.ShortHelp = "開啟模具零件";
+FrmRoot.FrmModel.PushFileOpen.LongHelp = "開啟模具零件";
+ FrmRoot.FrmModel.ModeSurface.LongHelp   = "輸入封閉曲面或一組曲面";
+
+ FrmRoot.FrmModel.FrmEditReference.EditReference.ShortHelp  = "CATPart 名稱";
+ FrmRoot.FrmModel.FrmEditReference.EditReference.LongHelp   = 
+ "定義 CATPart 的路徑和名稱";
+
+ FrmRoot.FrmModel.FrmEditBody.EditBody.ShortHelp  = "輸入本體";
+ FrmRoot.FrmModel.FrmEditBody.EditBody.LongHelp   = "定義輸入本體";
+ 
+ FrmRoot.FrmModel.FrmEditSurf.EditSurf.ShortHelp  = "輸入曲面";
+ FrmRoot.FrmModel.FrmEditSurf.EditSurf.LongHelp   = "定義輸入曲面";
+
+ FrmRoot.FrmOrgShk.FrmAxisSystem.Title						= "軸系 ";
+ FrmRoot.FrmOrgShk.FrmAxisSystem.FrmOrigin.Title			= "原點 ";
+ FrmRoot.FrmOrgShk.FrmAxisSystem.FrmOrigin.LbOrigineX.Title = " X  ";
+ FrmRoot.FrmOrgShk.FrmAxisSystem.FrmOrigin.LbOrigineY.Title = " Y  ";
+ FrmRoot.FrmOrgShk.FrmAxisSystem.FrmOrigin.LbOrigineZ.Title = " Z  ";
+ FrmRoot.FrmOrgShk.FrmAxisSystem.ShortHelp					= "初始軸系 ";
+ FrmRoot.FrmOrgShk.FrmAxisSystem.LongHelp					= 
+ "定義模具零件原點
+ 和初始軸系 ";
+
+ FrmRoot.FrmOrgShk.FrmShrink.Title = "縮水率 ";
+
+ FrmRoot.FrmOrgShk.FrmShrink.FrmScaling.Title			= "縮放定義 ";
+ FrmRoot.FrmOrgShk.FrmShrink.FrmScaling.LbCenter.Title	= " 參考 ";
+ FrmRoot.FrmOrgShk.FrmShrink.FrmScaling.LbRatio.Title	= " 比率 ";
+
+ FrmRoot.FrmOrgShk.FrmShrink.FrmAffinity.Title			= "相似定義 ";
+ FrmRoot.FrmOrgShk.FrmShrink.FrmAffinity.LbCenter.Title = " 參考 ";
+ FrmRoot.FrmOrgShk.FrmShrink.FrmAffinity.LbRatioX.Title = "  X 比率";
+ FrmRoot.FrmOrgShk.FrmShrink.FrmAffinity.LbRatioY.Title = "  Y 比率";
+ FrmRoot.FrmOrgShk.FrmShrink.FrmAffinity.LbRatioZ.Title = "  Z 比率";
+
+ FrmRoot.FrmOrgShk.FrmShrink.FrmOper.RBScaling.ShortHelp  = "以縮放率縮放 ";
+ FrmRoot.FrmOrgShk.FrmShrink.FrmOper.RBScaling.LongHelp   = 
+ "以縮放率縮放";
+
+ FrmRoot.FrmOrgShk.FrmShrink.FrmOper.RBAffinity.ShortHelp  = "以相似性縮放 ";
+ FrmRoot.FrmOrgShk.FrmShrink.FrmOper.RBAffinity.LongHelp   = 
+ "以相似性縮放";
+
+ FrmRoot.FrmOrgShk.FrmShrink.FrmOper.RBNone.ShortHelp  = "無縮放 ";
+ FrmRoot.FrmOrgShk.FrmShrink.FrmOper.RBNone.LongHelp   = 
+ "不計算縮放";
+
+ FrmRoot.FrmOrgShk.FrmShrink.FrmNone.LbBid1.Title  = "   ";
+ FrmRoot.FrmOrgShk.FrmShrink.FrmNone.LbBid2.Title  = "   ";
+ FrmRoot.FrmOrgShk.FrmShrink.FrmNone.LbNoShrink.Title  = "   無縮放  ";
+ FrmRoot.FrmOrgShk.FrmShrink.FrmNone.LbBid3.Title  = "   ";
+
+
+ CATCCSCompareModelCmd.InitialState.Message = "輸入模型與目前的來比較.";
+ CATCCSCompareModelCmd.StateCompare.Message = "選擇選項來比較.";
+ CATCCSCompareModelCmd.stateCompute.Message = "選擇選項來溶合.";
+
+ MergeTitle		  = "比較";
+ OpenAdd		  = "增加曲面";
+ OpenRemove		  = "移除曲面";
+ SimilarFaces	  = " 修剪面 ";
+ SpecificFacesRef = " 修剪面 ";
+ SpecificFacesNew = " 修剪面 ";
+
+ FrmRootMerge.FrmVisu.Title   						= "亮度顯示修剪面    ";
+ FrmRootMerge.FrmVisu.CheckVisuTab_0.Title   		= "類似修剪面    ";
+ FrmRootMerge.FrmVisu.CheckVisuTab_0.ShortHelp		= "類似修剪面顏色 ";
+ FrmRootMerge.FrmVisu.CheckVisuTab_0.LongHelp		= "以提供顏色顯示類似修剪面 ";
+ 
+ FrmRootMerge.FrmVisu.LblNbSimilar_.Title			= "  ------";
+ FrmRootMerge.FrmVisu.LblNbSpecific_.Title			= "  ------/------";
+ FrmRootMerge.FrmVisu.LblNbNewSpecific_.Title		= "  ------/------";
+
+ FrmRootMerge.FrmVisu.CheckVisuTab_1.Title   		= "指定目前模型   ";
+ FrmRootMerge.FrmVisu.CheckVisuTab_1.ShortHelp		= "指定目前模型修剪面顏色";
+ FrmRootMerge.FrmVisu.CheckVisuTab_1.LongHelp		= "以提供顏色顯示目前模型修剪面顏色";
+ 
+ FrmRootMerge.FrmVisu.CheckVisuTab_2.Title   		= "指定新模型   ";
+ FrmRootMerge.FrmVisu.CheckVisuTab_2.ShortHelp		= "指定新模型修剪面顏色";
+ FrmRootMerge.FrmVisu.CheckVisuTab_2.LongHelp		= "以提供顏色顯示新模型修剪面顏色";
+
+ FrmRootMerge.FrmEps.Title   						= "比較 ";
+ FrmRootMerge.FrmEps.LblEps.Title   				= "精度 : ";
+ FrmRootMerge.FrmEps.LblEps.ShortHelp				= "比較精度";
+ FrmRootMerge.FrmEps.LblEps.LongHelp				= "定義比較修剪面精度";
+
+ FrmRootMerge.FrmTrans.Title   						= "萃取指定修剪面 ";
+ FrmRootMerge.FrmTrans.CheckImportDiff.Title   		= "由新模型";
+ FrmRootMerge.FrmTrans.CheckImportDiff.ShortHelp	= "輸入指定修剪面";
+ FrmRootMerge.FrmTrans.CheckImportDiff.LongHelp		= "在指定幾何組輸入指定修剪面";
+
+ FrmRootMerge.FrmTrans.CheckMoveDiff.Title   		= "由目前模型";
+ FrmRootMerge.FrmTrans.CheckMoveDiff.ShortHelp		= "由目前模型移動指定修剪面";
+ FrmRootMerge.FrmTrans.CheckMoveDiff.LongHelp		= "由目前模型移動指定修剪面";
+
+
+

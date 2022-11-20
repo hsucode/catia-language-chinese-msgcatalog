@@ -1,0 +1,56 @@
+//
+// ---------------------------
+// generic command
+// ---------------------------
+//
+CATMSHCmdOffset.OperInitialState.Message="選擇要偏移的網格零件.";
+CATMSHCmdOffset.UndoTitle="網格偏移";
+
+CATMSHCmdOffset.OperMPSel.Message="選擇要偏移的網格零件.";
+CATMSHCmdOffset.OperMPSel.UndoTitle="網格零件選擇";
+
+CATMSHCmdMoveNode.OperOK.Message="執行偏移動作";
+CATMSHCmdOffset.OperOK.UndoTitle="偏移";
+
+CATMSHCmdOffset.OperCANCEL.Message="取消偏移";
+CATMSHCmdOffset.OperCANCEL.UndoTitle="取消偏移";
+
+CATMSHCmdOffset.OperContState.Message="繼續";
+CATMSHCmdOffset.OperContState.UndoTitle="繼續";
+//
+// ---------------------------
+// move node command
+// ---------------------------
+//
+CATMSHCmdOffset.OffsetState.Message="輸入偏移數值或修改方向來偏移網格零件.";
+CATMSHCmdOffset.OffsetState.UndoTitle="輸入偏移數值或修改方向來偏移.";
+
+//
+// Mesh Offset panel
+//
+CATMSHCmdOffset.OffsetDlg.Title="格點偏移值";
+CATMSHCmdOffset.OffsetDlg.OffsetLbl.Title="偏移值: ";
+CATMSHCmdOffset.OffsetDlg.OffsetLbl.LongHelp="設定移轉的偏移值.";
+
+
+//
+// Selection has no elements to offset.
+//
+CATMSHCmdOffset.Notify.Title="錯誤";
+CATMSHCmdOffset.Notify.Text="選擇未含元素可偏移: 必須含薄殼元素.";
+
+// Warning window
+//
+CATMSHCmdOffset.WarningOK.Message="網格零件不是最新的 : 偏移 是/否?";
+CATMSHCmdOffset.WarningCANCEL.UndoTitle="取消偏移";
+
+CATMSHCmdOffset.ShowWindow.Message="網格零件不是最新的.";
+CATMSHCmdOffset.ConfirmOperMPUpToDateDlg.Title="警告";
+CATMSHCmdOffset.ConfirmOperMPUpToDateDlg.IconLbl.Title="圖示";
+CATMSHCmdOffset.ConfirmOperMPUpToDateDlg.Text1Lbl.Title="網格零件不是最新的.";
+CATMSHCmdOffset.ConfirmOperMPUpToDateDlg.Text2Lbl.Title="您確定要執行動作嗎 ?";
+CATMSHCmdOffset.ConfirmOperMPUpToDateDlg.SettingCheck.Title="將來不提示.";
+CATMSHCmdOffset.ConfirmOperMPUpToDateDlg.SettingCheck.LongHelp="如關閉檢查警告";
+CATMSHCmdOffset.ConfirmOperMPUpToDateDlg.BCancel="否";
+CATMSHCmdOffset.ConfirmOperMPUpToDateDlg.BOK="是";
+

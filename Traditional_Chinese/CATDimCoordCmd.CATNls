@@ -1,0 +1,60 @@
+//=============================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1997 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATDimCoordCmd
+// LOCATION    :    DraftingIntCommands/CNext/resources/msgcatalog
+// AUTHOR      :    jmt
+// DATE        :    Apr. 29 1998
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Drafting Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//     01          BSD   13/03/02  Command modify
+//------------------------------------------------------------------------------
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Interactive Coordinate Dimension Cmd : Dialog  purpose ...
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//******************************************************************************
+// Command
+//******************************************************************************
+CATDimCoordCmd.UndoTitle="Coordinate Dimension(s) Creation";
+
+//******************************************************************************
+// States
+//******************************************************************************
+CATDimCoordCmd.selectionState.Message="選擇一或多個點";
+CATDimCoordCmd.positionState.Message=
+"指定尺寸位置來結束指令";
+
+//******************************************************************************
+// Agents
+//******************************************************************************
+CATDimCoordCmd.SelectionAgentSet.CATDimCoordSelectionAgent.UndoTitle = "點選擇";
+
+//******************************************************************************
+// Switches
+//******************************************************************************
+CATDimCoordCmd._pSwitchCmdAgent._iType2D.Title = "2D 座標";
+CATDimCoordCmd._pSwitchCmdAgent._iType2D.ShortHelp= "2D 座標";
+CATDimCoordCmd._pSwitchCmdAgent._iType2D.Help=
+"在草圖建立 2D 座標或同時產生點";
+CATDimCoordCmd._pSwitchCmdAgent._iType2D.LongHelp=
+"2D 座標
+在草圖建立 2D 座標或同時產生點";
+
+CATDimCoordCmd._pSwitchCmdAgent._iType3D.Title = "3D 座標";
+CATDimCoordCmd._pSwitchCmdAgent._iType3D.ShortHelp= "3D 座標";
+CATDimCoordCmd._pSwitchCmdAgent._iType3D.Help=
+"在產生點只建立 3D 座標";
+CATDimCoordCmd._pSwitchCmdAgent._iType3D.LongHelp=
+"3D 座標
+在產生點只建立 3D 座標";
+

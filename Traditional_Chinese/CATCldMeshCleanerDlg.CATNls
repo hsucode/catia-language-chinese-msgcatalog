@@ -1,0 +1,73 @@
+//==============================================================================================
+// COPYRIGHT DASSAULT SYSTEMES PROVENCE 2003
+//==============================================================================================
+// 26-Mar-2003 - JLH - Creation
+//==============================================================================================
+
+Title = "網格清理" ;
+
+CorruptedSfx1     = " 三角形" ;
+CorruptedSfxN     = " 三角形" ;
+DuplicatedSfx1    = " 三角形" ;
+DuplicatedSfxN    = " 三角形" ;
+NonOrientableSfx1 = " 三角形" ;
+NonOrientableSfxN = " 三角形" ;
+NMFEdgesSfx1      = " 邊線" ;
+NMFEdgesSfxN      = " 邊線" ;
+NMFVerticesSfx1   = " 頂點" ;
+NMFVerticesSfxN   = " 頂點" ;
+NonOrientable     = "一未定位網格." ;
+NonOrientables    = "一未定位網格." ;
+OnlyOneZone       = "只有一個區域 -> 未分割" ;
+SeveralZones      = " 連接區域" ;
+
+RootFrame.Pages.DeletionPag.Title     = "刪除" ;
+RootFrame.Pages.DeletionPag.LongHelp  = "Deletes corrupted/duplicated triangles, non-manifold edges and/or vertices." ;
+RootFrame.Pages.StructurePag.Title    = "架構" ;
+RootFrame.Pages.StructurePag.LongHelp = "Treatments on the global structure of the mesh." ;
+
+RootFrame.Pages.DeletionPag.AnalyzeBtn.Title    = "分析" ;
+RootFrame.Pages.DeletionPag.AnalyzeBtn.LongHelp = "Analyzes the mesh to prepare the miscelleaneous treatments." ;
+RootFrame.Pages.DeletionPag.StatusLbl.Title     = "統計" ;
+RootFrame.Pages.DeletionPag.StatusLbl.LongHelp  = "Gives the current statistics of the mesh." ;
+RootFrame.Pages.DeletionPag.ColorsLbl.Title     = "預覽顏色" ;
+RootFrame.Pages.DeletionPag.ColorsLbl.LongHelp  = "Defines the colors for the pre-visualization." ;
+
+RootFrame.Pages.DeletionPag.CorruptedBtn.Title    = "中斷三角形" ;
+RootFrame.Pages.DeletionPag.CorruptedBtn.LongHelp = "Deletes corrupted triangles." ;
+
+RootFrame.Pages.DeletionPag.DuplicatedBtn.Title    = "複製三角形" ;
+RootFrame.Pages.DeletionPag.DuplicatedBtn.LongHelp = "Deletes duplicated triangles." ;
+
+RootFrame.Pages.DeletionPag.NonOrientableBtn.Title    = "不一致方向" ;
+RootFrame.Pages.DeletionPag.NonOrientableBtn.LongHelp = "Deletes couples of connected triangles with inconsistent orientation between them." ;
+
+RootFrame.Pages.DeletionPag.NMFEdgesBtn.Title       = "沒有邊界" ;
+RootFrame.Pages.DeletionPag.NMFEdgesBtn.LongHelp    = "Deletes non-manifold edges." ;
+
+RootFrame.Pages.DeletionPag.NMFVerticesBtn.Title    = "沒有邊界頂點" ;
+RootFrame.Pages.DeletionPag.NMFVerticesBtn.LongHelp = "Deletes non-manifold vertices." ;
+
+RootFrame.Pages.DeletionPag.IsolatedBtn.Title    = "獨立三角形" ;
+RootFrame.Pages.DeletionPag.IsolatedBtn.LongHelp = "Deletes isolated triangles." ;
+RootFrame.Pages.DeletionPag.IsolatedSld.Title    = "三角形數目" ;
+RootFrame.Pages.DeletionPag.IsolatedSld.LongHelp = "Defines the maximum number of triangles in an isolated sub-mesh to delete." ;
+
+RootFrame.Pages.DeletionPag.LongEdgesBtn.Title    = "長邊界" ;
+RootFrame.Pages.DeletionPag.LongEdgesBtn.LongHelp = "Deletes triangles with long edges." ;
+RootFrame.Pages.DeletionPag.MaxLengthFrm.Title    = "Max. Length" ;
+RootFrame.Pages.DeletionPag.MaxLengthFrm.LongHelp = "Defines the maximum length of edges." ;
+
+RootFrame.Pages.StructurePag.DirectLbl.Title         = "直接三角形" ;
+RootFrame.Pages.StructurePag.DirectLbl.LongHelp      = "Preview color for direct triangles." ;
+RootFrame.Pages.StructurePag.OppositeLbl.Title       = "不直接三角形" ;
+RootFrame.Pages.StructurePag.OppositeLbl.LongHelp    = "Preview color for indirect triangles." ;
+RootFrame.Pages.StructurePag.OrientationBtn.Title    = "方向" ;
+RootFrame.Pages.StructurePag.OrientationBtn.LongHelp = "Orientates triangles in the same way (if possible)." ;
+
+RootFrame.Pages.StructurePag.CnxZonesBtn.Title    = "在連接區域分割" ;
+RootFrame.Pages.StructurePag.CnxZonesBtn.LongHelp = "Splits the mesh into connected zones." ;
+RootFrame.Pages.StructurePag.DistinctBtn.Title    = "不連續" ;
+RootFrame.Pages.StructurePag.DistinctBtn.LongHelp = "Splits in distinct entities." ;
+RootFrame.Pages.StructurePag.GroupedBtn.Title     = "群組" ;
+RootFrame.Pages.StructurePag.GroupedBtn.LongHelp  = "Splits in distinct cells grouped in one entity." ;

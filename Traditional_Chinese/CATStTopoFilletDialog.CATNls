@@ -1,0 +1,116 @@
+//=============================================================================
+// COPYRIGHT DASSAULT SYSTEMES  2005
+//=============================================================================
+//
+// CATStTopoFilletDialog: Resource file for NLS purpose related to TopoFillet command
+//
+//=============================================================================
+//
+// Implementation Notes:
+//
+//=============================================================================
+// March 05   Creation                                    Ritesh Kanetkar
+//=============================================================================
+Title= "A 級圓角";
+TabCont.GeneralTab.Title = "輸入";
+TabCont.ApproxTab.Title = "近似";
+TabCont.GeneralTab.MainFrame.ContinuityFrame.Title  = "精度";
+TabCont.GeneralTab.MainFrame.RadiusFrame.Title  = "半徑";
+TabCont.GeneralTab.MainFrame.ArcTypeFrame.Title  = "弧形式";
+TabCont.GeneralTab.MainFrame.ParameterFrame.Title  = "參數";
+TabCont.GeneralTab.MainFrame.ResultFrame.Title  = "結果";
+TabCont.GeneralTab.MainFrame.OptionFrame.Title  = "選項";
+TabCont.GeneralTab.MainFrame.SelectionFrame.Title  = "選擇";
+
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.PDefault.Title = "預設";
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.PPatch1.Title = "綴面 1";
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.PPatch2.Title = "綴面 2";
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.PAverage.Title = "平均";
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.PBlend.Title = "順接";
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.PChordal.Title = "弧長";
+
+TabCont.GeneralTab.MainFrame.ResultFrame.TrimCombo.TrimFace.Title = "裁剪面";
+TabCont.GeneralTab.MainFrame.ResultFrame.TrimCombo.TrimApprox.Title = "近似";
+
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSurCombo.SSStitch.Title = "Stitch";
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSurCombo.SSRip.Title = "Rip";
+
+TabCont.GeneralTab.MainFrame.ResultFrame.MergeCombo.MergeG1.Title = "G1";
+TabCont.GeneralTab.MainFrame.ResultFrame.MergeCombo.MergeG2.Title = "G2";
+
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G0Radio.ShortHelp = "G0";
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G0Radio.LongHelp = "G0 continuity between the topo fillet and input elements";
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G1Radio.ShortHelp = "G1";
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G1Radio.LongHelp = "G1 continuity between the topo fillet and input elements";
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G2Radio.ShortHelp = "G2";
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G2Radio.LongHelp = "G2 continuity between the topo fillet and input elements";
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G3Radio.ShortHelp = "G3";
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G3Radio.LongHelp = "G3 continuity between the topo fillet and input elements";
+
+
+TabCont.GeneralTab.MainFrame.RadiusFrame.Radius.ShortHelp = "固定半徑";
+TabCont.GeneralTab.MainFrame.RadiusFrame.Radius.LongHelp = "Constant Radius for the topo fillet";
+TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadFlag.ShortHelp = "最小半徑";
+TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadFlag.LongHelp = "Minimum radius ON/OFF";
+TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadius.ShortHelp = "最小半徑值";
+TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadius.LongHelp = "Minimum radius value";
+TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadRelativeFlag.ShortHelp = "相對半徑";
+TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadRelativeFlag.LongHelp = "Relative Radius ON/OFF";
+TabCont.GeneralTab.MainFrame.RadiusFrame.VariableRadChkBtn.ShortHelp = "變化半徑";
+TabCont.GeneralTab.MainFrame.RadiusFrame.VariableRadChkBtn.LongHelp = "Variable Radius ON/OFF";
+
+TabCont.GeneralTab.MainFrame.ArcTypeFrame.BlendRadio.ShortHelp = "順接";
+TabCont.GeneralTab.MainFrame.ArcTypeFrame.BlendRadio.LongHelp = "Creates a blend surface between input elements";
+TabCont.GeneralTab.MainFrame.ArcTypeFrame.ApproxRadio.ShortHelp = "近似";
+TabCont.GeneralTab.MainFrame.ArcTypeFrame.ApproxRadio.LongHelp = "Creates a circular Bezier approximation between input elements";
+TabCont.GeneralTab.MainFrame.ArcTypeFrame.ExactRadio.ShortHelp = "確定";
+TabCont.GeneralTab.MainFrame.ArcTypeFrame.ExactRadio.LongHelp = "Creates a rational surface with true circular sections";
+
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.ShortHelp = "參數";
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.LongHelp = " Different options for parameterization of the fillet surface";
+
+TabCont.GeneralTab.MainFrame.ResultFrame.TrimSwitch.ShortHelp = "裁剪結果";
+TabCont.GeneralTab.MainFrame.ResultFrame.TrimSwitch.LongHelp = "Trim Result option ON/OFF";
+TabCont.GeneralTab.MainFrame.ResultFrame.TrimCombo.ShortHelp = "裁剪面 / 裁剪近似";
+TabCont.GeneralTab.MainFrame.ResultFrame.TrimCombo.LongHelp = "Type of the trim result option Trim Face - The result is a face
+                                                               Trim Approx - Result is not a face";
+TabCont.GeneralTab.MainFrame.ResultFrame.Extrapol.ShortHelp = "延伸";
+TabCont.GeneralTab.MainFrame.ResultFrame.Extrapol.LongHelp = "Extrapolates the result fillet surface";
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSur.ShortHelp = "小曲面";
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSur.LongHelp = "If both input sets have more than one surface and the boundaries of the surfaces are 
+                                                              not exactly on the same position, the result is a (very) small surface. Its ON/OFF mode";
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSurCombo.ShortHelp = "Stitch/Rip";
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSurCombo.LongHelp = "Stitch: The small surface can be stitched with one of the neighbor surfaces
+                                                                   Rip: The small surface is (along its diagonal) divided into two surfaces";
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSurfaceTolerancee.ShortHelp = "Small Surface Tolerance";
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSurfaceTolerancee.LongHelp = "Tolerance for creating the small surface";
+TabCont.GeneralTab.MainFrame.ResultFrame.Merge.ShortHelp = "溶合";
+TabCont.GeneralTab.MainFrame.ResultFrame.Merge.MergeCombo.LongHelp = "This option is only of interest if the fillet surface results in more than one surface. 
+                                                                      These surfaces can be joined and the result is one surface";
+TabCont.GeneralTab.MainFrame.ResultFrame.MergeCombo.ShortHelp = "溶合連續性";
+TabCont.GeneralTab.MainFrame.ResultFrame.MergeCombo.LongHelp = "溶合連續性";
+
+TabCont.GeneralTab.MainFrame.OptionFrame.TrimBase.ShortHelp = "裁剪輸入";
+TabCont.GeneralTab.MainFrame.OptionFrame.TrimBase.LongHelp = "Trims the input elements of the topo fillet";
+TabCont.GeneralTab.MainFrame.OptionFrame.ChordalFillet.ShortHelp = "弧圓角";
+TabCont.GeneralTab.MainFrame.OptionFrame.ChordalFillet.LongHelp = "The distance between the edges of the fillet in direction of the rolling ball is the chordal distance";
+TabCont.GeneralTab.MainFrame.OptionFrame.CtrlPts.ShortHelp = "控制點";
+TabCont.GeneralTab.MainFrame.OptionFrame.CtrlPts.LongHelp = "Enables shape modifications of the fillet surface";
+TabCont.GeneralTab.MainFrame.OptionFrame.TrueMinimalRadius.ShortHelp = "實際最小";
+TabCont.GeneralTab.MainFrame.OptionFrame.TrueMinimalRadius.LongHelp = "Minimum radius is controlled";
+TabCont.GeneralTab.MainFrame.OptionFrame.IndependentApproximation.ShortHelp = "獨立近似";
+TabCont.GeneralTab.MainFrame.OptionFrame.IndependentApproximation.LongHelp = "Independent internal approximation";
+
+TabCont.GeneralTab.MainFrame.SelectionFrame.FirstSetSur.ShortHelp = "選擇曲面組 1";
+TabCont.GeneralTab.MainFrame.SelectionFrame.FirstSetSur.LongHelp = "Select first set of surfaces for topo fillet operation";
+TabCont.GeneralTab.MainFrame.SelectionFrame.SecondSetSur.ShortHelp = "選擇曲面組 2";
+TabCont.GeneralTab.MainFrame.SelectionFrame.SecondSetSur.LongHelp = "Select second set of surfaces for topo fillet operation";
+TabCont.GeneralTab.MainFrame.SelectionFrame.FirstSetCur.ShortHelp = "選擇曲線組 1";
+TabCont.GeneralTab.MainFrame.SelectionFrame.FirstSetCur.LongHelp = "Select first set of curves for topo fillet operation";
+TabCont.GeneralTab.MainFrame.SelectionFrame.SecondSetCur.ShortHelp = "選擇曲線組 2";
+TabCont.GeneralTab.MainFrame.SelectionFrame.SecondSetCur.LongHelp = "Select second set of curves for topo fillet operation";
+TabCont.GeneralTab.MainFrame.SelectionFrame.SpineSet.ShortHelp = "選擇脊椎組";
+TabCont.GeneralTab.MainFrame.SelectionFrame.SpineSet.LongHelp = "Select the spine for topo fillet operation";
+TabCont.GeneralTab.MainFrame.SelectionFrame.PtOnSpineSet.ShortHelp = "選擇脊椎線上點";
+TabCont.GeneralTab.MainFrame.SelectionFrame.PtOnSpineSet.LongHelp = "Select a point on spine for topo fillet operation";
+

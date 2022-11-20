@@ -1,0 +1,75 @@
+TabCont.Frame0.Title="選項";
+TabCont.ApproxTab.Title="近似";
+TabCont.Frame0.RadiusFrame.Title = "半徑";
+TabCont.Frame0.RadiusFrame.Radius.LongHelp = "圓角半徑";
+
+TabCont.Frame0.EdgeToleranceFrame.Title = "邊線容差";
+TabCont.Frame0.EdgeToleranceFrame.EdgeTolerancee.LongHelp  = "偵測共邊的容差. 如未偵測到共邊, 無法建立變化圓角";
+
+TabCont.Frame0.RadiusFrame.MinRadFlag.Title = "最小半徑";
+TabCont.Frame0.RadiusFrame.MinRadFlag.LongHelp = "圓角中間的最小半徑";
+TabCont.Frame0.RadiusFrame.MinRadius.LongHelp = "圓角中間的最小半徑";
+TabCont.Frame0.RadiusFrame.MinRadRelativeFlag.Title = "相對";
+TabCont.Frame0.RadiusFrame.MinRadRelativeFlag.LongHelp = "相對最小變化半徑的最小半徑";
+
+TabCont.Frame0.OptionFrame.Title = "選項";
+TabCont.Frame0.OptionFrame.TrimBase.Title = "修剪依附";
+TabCont.Frame0.OptionFrame.TrimBase.LongHelp = "在圓角邊界上修剪參考曲面";
+TabCont.Frame0.OptionFrame.VarRad.Title = "變化圓角";
+TabCont.Frame0.OptionFrame.VarRad.LongHelp = "啟動變化圓角 (只在邊界容差許可時才有可能)";
+TabCont.Frame0.OptionFrame.ChordalFillett.Title = "弦圓角";
+TabCont.Frame0.OptionFrame.ChordalFillett.LongHelp = "啟動相對弦長的圓角";
+TabCont.Frame0.OptionFrame.FeatureModelingg.Title = "特徵模形";
+TabCont.Frame0.OptionFrame.FeatureModelingg.LongHelp = "起動圓角外形修改";
+TabCont.Frame0.OptionFrame.TrueMinimalRadiuss.Title = "最小實長";
+TabCont.Frame0.OptionFrame.TrueMinimalRadiuss.LongHelp = "起動最小實長選項";
+TabCont.Frame0.OptionFrame.IndependentApproximationn.Title = "獨立";
+TabCont.Frame0.OptionFrame.IndependentApproximationn.LongHelp = "獨立內部近似";
+
+TabCont.Frame0.ResultFrame.Title = "結果";
+TabCont.Frame0.ResultFrame.Extrapoll.Title = "延伸";
+TabCont.Frame0.ResultFrame.Extrapoll.LongHelp = "圓角也延伸參考曲面";
+TabCont.Frame0.ResultFrame.TrimSwitch.Title = "修剪";
+TabCont.Frame0.ResultFrame.TrimSwitch.LongHelp = "修剪結果曲面";
+TabCont.Frame0.ResultFrame.TrimCombo.LongHelp = "修剪面: 圓角曲面是被裁剪的基本曲面, 結果為修剪面
+近似: 修剪面的邊界是可調整的, 但圓角曲面依舊是基本曲面";
+TabCont.Frame0.ResultFrame.JoinButton.Title = "溶合";
+TabCont.Frame0.ResultFrame.JoinButton.LongHelp = "圓角曲面已溶合, 只可在符合 G2-條件時溶合";
+TabCont.Frame0.ResultFrame.JoinCombo.LongHelp = "圓角曲面已溶合, 只可在符合 G2-條件時溶合";
+TabCont.Frame0.ResultFrame.SkipSmallButton.Title = "較小";
+TabCont.Frame0.ResultFrame.SkipSmallButton.LongHelp = "處理較小的曲面";
+TabCont.Frame0.ResultFrame.SkipSmallCombo.LongHelp = "Stitch: 較小的曲面與附近的大曲面溶合
+Rip: 以對角線裁切小曲面再與附近的大曲面溶合";
+TabCont.Frame0.ResultFrame.SmallSurfaceTolerancee.LongHelp = "比此值為小的圓角曲面將被處理";
+
+Trim.Face = "修剪面";
+Trim.Approx = "近似";
+Trim.Stitch = "Stitch";
+Trim.Rip = "Rip";
+Trim.TrimResult = "結果";
+Trim.TrimBase = "基本";
+Trim.TrimAll  = "全部";
+
+TabCont.Frame0.Continuity.Title = "連續性";
+TabCont.Frame0.Continuity.ContCombo.LongHelp = "圓角和參考曲面間的連續品質 (G0 - G2)";
+
+TabCont.ApproxTab.ParamFrame.Title = "參數";
+TabCont.ApproxTab.ParamFrame.LongHelp = "定義圓角曲面的參數化";
+Parameterization.Defaultt = "預設";
+Parameterization.Patch11 = "綴面1";
+Parameterization.Patch22 = "綴面2";
+Parameterization.Averagee = "平均";
+Parameterization.Blendd  = "順接";
+Parameterization.3dd  = "弦";
+
+TabCont.Frame0.ArcTypee.Title = "弧的形式";
+ArcType.Blendd = "順接";
+ArcType.Bezierr = "簡略";
+ArcType.Rationall = "精確";
+
+TabCont.Frame0.AssociativityFrame.Title = "相關";
+TabCont.Frame0.AssociativityFrame.Associativity.Title = " ";
+TabCont.Frame0.AssociativityFrame.AssociativityCombo.LongHelp = "相關模式";
+Associativity.Tick = "Tick";
+Associativity.Tock = "Tock";
+

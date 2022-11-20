@@ -1,0 +1,125 @@
+//---------------------------------------------------------------
+// Resource file for CATGSMUISweepVarPanel class
+// US
+//---------------------------------------------------------------
+
+Title="適應性掃掠定義";
+
+Frame0.Frame1.GuideLabel.Title = "導引曲線:";
+Frame0.Frame1.GuideLabel.LongHelp = "指定導引曲線";
+Frame0.Frame1.GuideSelector.LongHelp = "指定導引曲線";
+
+Frame0.Frame1.ReferenceLabel.Title = "參考曲面:";
+Frame0.Frame1.ReferenceLabel.LongHelp="指定用來控制掃掠時
+定位斷面的參考曲面 . 
+如未指定曲面, 
+預設為經過脊椎線的平均平面.";
+Frame0.Frame1.ReferenceSelector.LongHelp="指定用來控制掃掠時
+定位斷面的參考曲面 . 
+如未指定曲面, 
+預設為經過脊椎線的平均平面.";
+
+Frame0.Frame1.SketchLabel.Title = "草圖:";
+Frame0.Frame1.SketchLabel.LongHelp = "指定要掃掠的草圖.
+建議方式 :
+- 選擇草圖前
+先選擇導引曲線, 參考曲面和脊椎線.
+- 以右鍵命令建立草圖.";
+Frame0.Frame1.SketchFrame.SketchSelector.LongHelp = "指定要掃掠的草圖.
+建議方式 :
+- 選擇草圖前
+先選擇導引曲線, 參考曲面和脊椎線.
+- 以右鍵命令建立草圖.";
+
+Frame0.TabBox.SectionsPage.Title = "切面";
+Frame0.TabBox.ParentsPage.Title = "上層關聯";
+Frame0.TabBox.ParametersPage.Title = "參數";
+Frame0.TabBox.MFPage.Title = "移動的框架";
+Frame0.TabBox.RelimitationPage.Title = "截斷";
+
+Frame0.Frame1.SpineLabel.Title = "脊椎線:";
+Frame0.Frame1.SpineLabel.LongHelp = "指定脊椎曲線,
+如您要使用與第一導引曲線不同的脊椎線.";
+Frame0.Frame1.SpineSelector.LongHelp = "指定脊椎曲線,
+如您要使用與第一導引曲線不同的脊椎線.";
+
+Frame0.TabBox.MFPage.SagFrame.DiscreLabel.Title = "不連續: ";
+Frame0.TabBox.MFPage.SagFrame.DiscreLabel.LongHelp = "設定不連續步進值.";
+Frame0.TabBox.MFPage.SagFrame.SagLabel.Title = "步進值: ";
+Frame0.TabBox.MFPage.SagFrame.SagLabel.LongHelp =
+"降低導致減緩效能的數值
+和增加這個精度.";
+
+SectionsCol1 = " 名稱    ";
+SectionsCol2 = " 依附 ";
+ParentsCol1  = " 用法   ";
+ParentsCol3  = " 導引   ";
+
+NoSelection = "沒有選擇";
+ManipSection = "處理動作";
+
+ChaineMeanPlane="預設 (平均平面)";
+
+Frame0.Frame1.SketchFrame.SketchSelector.SketchCxtMenu.SketchCreateItem.Title = "建立草圖";
+Frame0.Frame1.SketchFrame.SketchSelector.SketchCxtMenu.SketchEditItem.Title = "編輯草圖";
+Frame0.Frame1.SketchFrame.SketchSelector.SketchCxtMenu.SketchEditWithPanelItem.Title = "以對話框編輯草圖";
+
+
+Frame0.TabBox.SectionsPage.SectionsList.LongHelp = "切面的清單";
+Frame0.TabBox.SectionsPage.SectionsList.SectionsCxtMenu.SectionRemoveItem.Title = "移除切面";
+Frame0.TabBox.SectionsPage.SectionsList.SectionsCxtMenu.SectionRenameItem.Title = "更名切面";
+Frame0.TabBox.SectionsPage.SectionsList.SectionsCxtMenu.SectionsAddAfterItem.Title = "之後增加";
+Frame0.TabBox.SectionsPage.SectionsList.SectionsCxtMenu.EditSectionInSketcherItem.Title = "在草圖中編輯";
+Frame0.TabBox.SectionsPage.SectionsEdit.RenameLabel.Title = "目前切面: ";
+Frame0.TabBox.SectionsPage.SectionsEdit.RenameLabel.LongHelp = "允許您更名目前切面";
+Frame0.TabBox.SectionsPage.SectionsEdit.RenameEditor.LongHelp = "更名目前切面";
+Frame0.TabBox.SectionsPage.SectionsActions.RemoveSection.Title = "移除切面";
+Frame0.TabBox.SectionsPage.SectionsActions.RemoveSection.ShortHelp = "移除目前切面";
+Frame0.TabBox.SectionsPage.SectionsActions.RemoveSection.LongHelp = "移除目前切面";
+Frame0.TabBox.SectionsPage.SectionsActions.RenameSection.Title = "更名切面";
+Frame0.TabBox.SectionsPage.SectionsActions.RenameSection.ShortHelp = "更名目前切面";
+Frame0.TabBox.SectionsPage.SectionsActions.RenameSection.LongHelp = "更名目前切面";
+
+Frame0.TabBox.ParentsPage.ParentsList.LongHelp = "列出草圖上層關聯";
+Frame0.TabBox.ParentsPage.ParentsList.ParentsCxtMenu.ParentsReplaceItem.Title = "取代上層關聯";
+Frame0.TabBox.ParentsPage.ParentsActions.ReplaceParent.Title = "取代上層關聯";
+Frame0.TabBox.ParentsPage.ParentsActions.ReplaceParent.ShortHelp = "取代草圖上層關聯";
+Frame0.TabBox.ParentsPage.ParentsActions.ReplaceParent.LongHelp = "取代草圖上層關聯";
+Frame0.TabBox.ParentsPage.SelectNewParentFrame.SelectNewParentLabel.Title="上層關聯: ";
+Frame0.TabBox.ParentsPage.SelectNewParentFrame.SelectNewParentLabel.LongHelp = "取代草圖上層關聯";
+Frame0.TabBox.ParentsPage.SelectNewParentFrame.SelectNewParentLabel.ShortHelp = "取代草圖上層關聯";
+Frame0.TabBox.ParentsPage.SelectNewParentFrame.NewParentSelector.LongHelp = "取代草圖上層關聯";
+Frame0.TabBox.ParentsPage.SelectNewParentFrame.NewParentSelector.ShortHelp = "取代草圖上層關聯";
+
+Frame0.TabBox.ParametersPage.CurrentSectionFrame.CurrentSectionLabel.Title = "目前的切面:";
+Frame0.TabBox.ParametersPage.CurrentSectionFrame.CurrentSectionLabel.LongHelp = "目前的切面";
+Frame0.TabBox.ParametersPage.ParametersFrame.NoConstraintLabel.Title = "沒有拘束";
+Frame0.TabBox.ParametersPage.ParametersFrame.NoConstraintLabel.LongHelp = "此草圖沒有定義拘束";
+
+Frame0.CheckQuickPreview.Title = "掃掠切面預覽";
+Frame0.CheckQuickPreview.LongHelp = 
+	"建立曲面的快速表現方式.
+	您可以更改變異值來增加評估數目";
+
+SaveFrame.SaveLabel.Title = "取消命令但保持草圖, 使用:";
+SaveFrame.SaveLabel.LongHelp = "取消命令但保持草圖執行中"; 
+
+Frame0.FraSmooth.LabelLittDev.Title="變異: ";
+Frame0.FraSmooth.LabelLittDev.LongHelp ="減小數值
+將導致效能降低
+但精度增加.";
+
+Frame0.FraSmooth.LabelLittAng.Title="角度修正: ";
+Frame0.FraSmooth.FraLittDev.EnglobingFrame.IntermediateFrame.Spinner.Title="變異";
+Frame0.FraSmooth.FraLittAng.EnglobingFrame.IntermediateFrame.Spinner.Title="角度修正";
+
+Frame0.TabBox.RelimitationPage.RelimitationFrame.RelimOnFirstSection.Title="在起始切面截斷";
+Frame0.TabBox.RelimitationPage.RelimitationFrame.RelimOnLastSection.Title="在結束切面截斷";
+
+Frame0.TabBox.RelimitationPage.RelimitationFrame.RelimOnFirstSection.LongHelp=
+"如勾選, 如指定的掃掠曲面將會沿脊椎線掃掠,
+然後在開始切面截斷.";
+
+Frame0.TabBox.RelimitationPage.RelimitationFrame.RelimOnLastSection.LongHelp=
+"如勾選, 如指定的掃掠曲面將會沿脊椎線掃掠,
+然後在結束切面截斷.";

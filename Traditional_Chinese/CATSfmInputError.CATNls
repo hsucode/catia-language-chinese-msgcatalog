@@ -1,0 +1,147 @@
+// *--------------------------------------------*//
+// *               Message example              *//
+// *                                            *//
+// *------------------------------------------- *//
+// SFMINPUT_ERR_2000.Request    = "Operation failed";
+// SFMINPUT_ERR_2000.Diagnostic = "Curve support /p1 is invalid";
+// SFMINPUT_ERR_2000.Advice     = "Choose a smoother curve";
+
+
+
+///////////////////////////////////////////////////////////////////////////
+//                                 CCP                                   //
+///////////////////////////////////////////////////////////////////////////
+
+// Global
+SFMCCP_ERR_GLOBAL0000 = "CCP: Cross application paste forbidden.";
+
+// Hull
+SFMCCP_ERR_HULL0000 = "Cannot delete the Hull.";
+SFMCCP_ERR_HULL0001 = "Cannot copy the Hull.";
+
+// Plate
+SFMINPUT_ERR_0000 = "Cannot copy a Plate since it is managed by the Plates object.";
+SFMINPUT_ERR_0001 = "Cannot delete a Plate since it is managed by the Plates object.";
+
+// IntSection
+SFMINPUT_ERR_0010 = "Cannot copy an IntSection.";
+
+// Stiffener
+SFMINPUT_ERR_0004 = "Your destination must be a SuperPlate.";
+SFMINPUT_ERR_0005 = "You have to select first your new Web support and then your SuperPlate as destination.";
+
+// ProfilesSet
+SFMCCP_ERR_0000 = "Cannot copy a ProfilesSet.";
+SFMCCP_ERR_0001 = "Cannot delete a ProfilesSet.";
+
+// SuperPlate
+SFMCCP_ERR_SUPERPLATE0000 = "CCP SuperPlate: the active part is not a system part.";
+SFMCCP_ERR_SUPERPLATE0001 = "CCP SuperPlate: the selected part is not a system part.";
+SFMCCP_ERR_SUPERPLATE0002 = "CCP SuperPlate: first selection should be the new support of the SuperPlate and second one the destination system part.";
+SFMCCP_ERR_SUPERPLATE0003 = "CCP SuperPlate: select a geometry inside the active system.";
+
+// PlatesSet
+SFMCCP_ERR_PLATESSET0000 = "CCP PlatesSet: the destination should be a SuperPlate.";
+
+// OpeningsSet
+SFMCCP_ERR_OPENINGSSET0000 = "CCP OpeningsSet: the destination should be a SuperPlate.";
+SFMCCP_ERR_OPENINGSSET0001 = "CCP OpeningsSet: the destination should be a SuperProfile.";
+
+// Opening
+SFMCCP_ERR_OPENING0000 = "CCP Opening: the destination should be a SuperPlate.";
+SFMCCP_ERR_OPENING0001 = "CCP Opening: the destination should be a SuperProfile.";
+
+// MainSuperBeamsSet
+SFMCCP_ERR_MAINSUPERBEAMSSET0000 = "CCP MainSuperBeamsSet: the active part is not a system part.";
+SFMCCP_ERR_MAINSUPERBEAMSSET0001 = "CCP MainSuperBeamsSet: the selected part is not a system part.";
+
+// SuperStiffenersSet
+SFMCCP_ERR_SUPERSTIFFENERSSET0000 = "CCP SuperStiffenersSet: the destination should be a SuperPlate.";
+SFMCCP_ERR_SUPERSTIFFENERSSET0001 = "CCP SuperStiffenersSet: copy forbidden.";
+
+// SuperStiffener
+SFMCCP_ERR_SUPERSTIFFENER0000 = "CCP SuperStiffener: select at least a destination.";
+SFMCCP_ERR_SUPERSTIFFENER0001 = "CCP SuperStiffener: select a geometry inside the active system.";
+SFMCCP_ERR_SUPERSTIFFENER0002 = "CCP SuperStiffener: select a new web support and then the destination SuperPlate.";
+SFMCCP_ERR_SUPERSTIFFENER0003 = "CCP SuperStiffener: select a new web support or a new SuperPlate.";
+SFMCCP_ERR_SUPERSTIFFENER0004 = "CCP SuperStiffener: the active part is not a system part.";
+SFMCCP_ERR_SUPERSTIFFENER0005 = "CCP SuperStiffener: the current SuperPlate is not inside the active system part.";
+
+// SuperBeam
+SFMCCP_ERR_SUPERBEAM0000 = "CCP SuperBeam: the active part is not a system part.";
+SFMCCP_ERR_SUPERBEAM0001 = "CCP SuperBeam: the selected part is not a system part.";
+SFMCCP_ERR_SUPERBEAM0002 = "CCP SuperPillar: the destination should be a SuperPlate.";
+SFMCCP_ERR_SUPERBEAM0003 = "CCP SuperBeam: first selection should be the new support.";
+SFMCCP_ERR_SUPERBEAM0004 = "CCP SuperPillar: first selection should be the new support.";
+SFMCCP_ERR_SUPERBEAM0005 = "CCP SuperBeam: new limits should be a SuperPlate or a surface.";
+SFMCCP_ERR_SUPERBEAM0006 = "CCP SuperPillar: new limits should be a SuperPlate.";
+
+// SuperStiffenerOnFreeEdge
+SFMCCP_ERR_SUPERSOFE0000 = "CCP SuperStiffenerOnFreeEdge: copy only available through the copy of a SuperPlate.";
+
+// SfmConnectionsSet
+SFMCCP_ERR_CONNECTIONSET0000 = "Cannot copy a ConnectionsSet.";
+SFMCCP_ERR_CONNECTIONSET0000 = "Cannot delete a ConnectionsSet.";
+
+///////////////////////////////////////////////////////////////////////////
+//                            POWERCOPY                                  //
+///////////////////////////////////////////////////////////////////////////
+SFMPOWERCOPY_ERR_0000 = "The active part is not a system part.";
+
+
+///////////////////////////////////////////////////////////////////////////
+//                             MoldedSurface                             //
+///////////////////////////////////////////////////////////////////////////
+SFMMOLDEDSURFACE_ERR_0000 = "Mismatch between relimiting elements and orientations. Edit SuperPlate to remove a limit.";
+SFMMOLDEDSURFACE_ERR_0001 = "You must define a molded support.";
+
+
+///////////////////////////////////////////////////////////////////////////
+//                         Stiffener/IntTrace                            //
+///////////////////////////////////////////////////////////////////////////
+SFMINPUT_ERR_0002 = "The projection on the Molded surface is null.";
+SFMINPUT_ERR_0003 = "The intersection between the Web support and the Molded surface is null.";
+SFMINTTRACE_ERR_0000 = "You must define a web support.";
+
+
+///////////////////////////////////////////////////////////////////////////
+//                            MasterMode                                 //
+///////////////////////////////////////////////////////////////////////////
+SFMMASTERMODE_ERR_0000 = "This is already in master mode.";
+SFMMASTERMODE_ERR_0001 = "Cannot swap to master mode since the link with the original sketch is broken.";
+SFMMASTERMODE_ERR_0002 = "Cannot swap to master mode since this opening is not in Sketch mode.";
+SFMMASTERMODE_ERR_0003 = "Cannot swap to master mode since the MoldedSurface or WebSurface is not planar.";
+
+
+///////////////////////////////////////////////////////////////////////////
+//                             FreeEdge                                  //
+///////////////////////////////////////////////////////////////////////////
+SFMINPUT_ERR_0014 = "Opening not totally included into the molded surface.";
+
+
+///////////////////////////////////////////////////////////////////////////
+//                             Planning Break                             //
+///////////////////////////////////////////////////////////////////////////
+SFMINPUT_ERR_0015 = "Cannot delete this planning break because it is in between two other planning breaks.";
+
+
+///////////////////////////////////////////////////////////////////////////
+//                             PBM Block                             //
+///////////////////////////////////////////////////////////////////////////
+SFMINPUT_ERR_0016 = "Cannot delete this planning break functional volume because it is not empty.";
+
+
+
+///////////////////////////////////////////////////////////////////////////
+//                         Plate/MoldedSurface                           //
+///////////////////////////////////////////////////////////////////////////
+SFMINPUT_ERR_0017 = "The two last limits don't intersect. The contour can not be built.";
+SFMINPUT_ERR_0018 = "The last limit is not correct. The contour can not be built. Change the orientation";
+SFMINPUT_ERR_0019 = "The limit doesn't intersect the support. The contour can not be built.";
+SFMINPUT_ERR_0020 = "A contour solution can not be computed with the last selected limit.";
+
+
+ 
+
+
+

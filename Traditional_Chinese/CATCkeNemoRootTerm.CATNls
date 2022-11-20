@@ -1,0 +1,54 @@
+// COPYRIGHT DASSAULT SYSTEMES 2000
+//===================================================================
+//
+// Catalog for CACkeNemoRootTerm class
+//
+//===================================================================
+//
+// Usage notes:
+//
+//===================================================================
+//
+// Jul 2000  Creation:            Dmitri Ouchakov, LEDAS Ltd. (vtn1)
+// Nov 2000  Modification:           D. Ouchakov,  LEDAS Ltd. (vtn1)
+//===================================================================
+NoInputs="未選擇輸入參數 \n",
+         "(可能是一個錯誤)";
+NoOutputs="未選擇輸出參數 \n",
+          "(可能是一個錯誤)";
+NoSolutions="無解";
+ErrorMessage.NoBlackBoxDetected.Title="拘束偵測到可能的問題. \n",
+                                        "\n",
+                                         "下列式子 (可能的黑盒子) 對未知參數無效. \n\n";
+ErrorMessage.NoBlackBoxDetected.Text="\n 可能的原因為: \n",
+                                        "- 方程式中未表現量測 \n",
+                                        "  (您可使用此方程式的特徵來代替它.) \n",
+                                        "- 特徵內的量測與變數不相依 \n",
+                                        "  選擇. \n", 
+                                        "- 拘束符合無法決定是否影響量測 \n",
+                                        "  (請增加黑盒子的精確度選項).\n\n",
+                                        "仍可計算解法 \n";
+ErrorMessage.SoEBlackBoxDetected.Title="拘束符合偵測到可能的問題.\n\n",
+                                        "下列參數:\n\n";
+ErrorMessage.SoEBlackBoxDetected.Text="\nare the output parameters of Set Of Equations relations and are calculated as black boxes.\n",
+                                        "As a Set Of Equations relation is an ambiguous function, the appropriate black box\n", 
+                                        "can lost solutions during its computations.\n\n",
+                                        "To resolve the problem, it is recommended:\n", 
+                                        "- Copy the text of the Set Of Equations relations into the current Constraint Satisfaction model.\n",
+                                        "- Deactivate the Set Of Equations relations.\n";
+
+InformationMessage.SolvingSuccess.Text = "\n 成功計算. \n";
+
+Object="\n   動作: ";
+Line  ="\n   線: \n";
+
+Contradiction        ="\n 下列地方發生予盾:";
+ContradictionOnRanges="\n 警告! 輸入範圍不一致或模型不一致:";
+IncompatibleModel    ="\n 警告! 模型不一致.";
+Interruption         ="\n 警告 使用者中斷計算";
+InternalError        ="\n\n 下列地方發生內部錯誤:";
+AllSolutionsFound    ="已找到所有解法.";
+SolvingSuccess       ="計算成功.";
+
+
+

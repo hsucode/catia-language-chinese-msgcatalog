@@ -1,0 +1,331 @@
+//NLS-ENGLISH VERSION
+//=======================================================================
+// MODULE : CATIALibraryEditor
+//=======================================================================
+//
+// Main Messages
+// -------------
+Parameters.ErrorMessage="
+無效的參數. 用法:
+CATFromLibToCatalog library_path  new_catalog_path
+";
+Parameters.Message="
+正建立新的路徑目錄:
+  /p1
+ 從路徑中的資料庫: 
+  /p2";
+Session.ErrorMessage="
+CATIA 處理程序問題
+";
+Licensing.ErrorMessage="
+軟體授權問題 : 所需的 V4I 產品不可用
+";
+AccessToLibraryOnNT.ErrorMessage="
+在這個作業系統上不能閱讀資料庫. 使用 http 協定.
+";
+AccessToCatalogWithHttp.ErrorMessage="
+Http 存取無法用來建立目錄
+";
+ReportFileCreation.ErrorMessage="
+無法建立紀錄檔.
+";
+ConversionTable0.ErrorMessage="
+未發現字元轉換表在
+  /p1
+";
+ConversionTable1.ErrorMessage="
+字元轉換表位於
+  /p1
+導致錯誤在行 /p2.
+";
+DocInSession.ErrorMessage="
+文件:
+  /p1
+已經存在處理程序中.
+執行程序稿前關閉它.
+";
+DocCreation.ErrorMessage="
+文件建立過程的問題:
+  /p1
+";
+OverWrittenPart.Message="
+警告 ! 先前資料庫物件的轉換導致相似名稱的元件:
+  /p1
+ 先前的元件將被覆寫.
+";
+OverWrittenFamilyCatalog.Message="
+警告 ! 其它的家族(family)導致相同名稱目錄的建立:
+  /p1
+先前的目錄將被覆寫.
+";
+//
+// CATCreateSupchapter messages
+// ----------------------------
+BeginningLisfamChapterTreatment.Message="/p1 章節 ";
+CatalogDocRoot.ErrorMessage="
+內部錯誤: 目錄根容器無法被重新取得.
+ /p1
+";
+NewKeyword.Message="建立的關鍵字 /p1
+";
+FamilyKeyword.Label="家族(family)";
+NewFamilyDescription.Message="
+建立的說明與細部類型的家族(family)是相關連的 /p1
+";
+EvaluateFamilyKeyword.Message=" 評估關鍵字 /p1 到 /p2
+";
+FamilyDescriptionLink.Message="說明與章節相連結 /p1
+";
+RetrievedFamilyChapter.Message="家族章節 /p 已萃取
+";
+NonDetailFamily.Message="\n 家族(family) /p1 不是細部類型.
+此家族 /p1 不是 Detail
+導致(family)沒有轉換.
+";
+SpecificReasonCreatingChapter2.ErrorMessage="    - 沒有現存在 V4 資料庫中的族系
+";
+//
+// CATMappingFamilyChapter messages
+// --------------------------------
+BeginningFamilyTreatment.Message="家族(family) /p1";
+CreatingDiscreteKeyword.Message="建立中 (從不連續資料庫中的一個)     關鍵字: /p1
+";
+CreatingNumericKeyword.Message="建立中(從數字資料庫中的一個)      關鍵字: /p1
+";
+CreatingAlphanumericKeyword.Message="建立中 (從按字母排序資料庫中的一個) 關鍵字: /p1
+";
+CreatingBooleanKeyword.Message="建立中(從布林資料庫中的一個)      關鍵字: /p1
+";
+ExistingKeyword.ErrorMessage="關鍵字 /p1 以經存在 .
+";
+Keyword.ErrorMessage="
+內部錯誤: 新的關鍵字 /p1 無法建立.
+";
+SkippingDetailDescription.Message="
+與細部 /p1 相關的說明已存在.
+ 說明不會再建立
+"; 
+NewDetailDescription.Message="
+建立的說明號碼 /p1 與空間的細部 /p2 相關";
+EvaluationKeyword.Message="
+評估關鍵字 /p1 = /p2";
+SkippingKeywordCreation.Message="跳過建立關鍵字 : 它們好像已經存在
+";
+BooleanTrue.Label="真實";
+BooleanFalse.Label="虛假";
+Unvalued.Label="UNVAL";
+FilteredNameDetail.Message="
+過濾的細部名稱 = /p1";
+NonSpaceDetail.Message="
+/p1 不是空間的細部: 
+無法轉換且沒有目錄說明被建立.
+";
+DetailConversion.Message="
+                                    ----------------
+ 空間細部的元件轉換 /p1
+                                    ----------------
+";
+FinalPartName.Message="與轉換細部相關連的元件 /p1 命名為: /p2";
+PartNeedUpdate.Message="細部 /p1 的轉換 必須被更新.
+";
+AlreadyExistingPart.Message="警告: 元件名稱
+  /p1
+ 已經存在且將會遺失.
+";
+LoadDetail.ErrorMessage="載入細部文件期間的錯誤 /p1
+";
+PartialConversion.Message="
+*** 細部元素的轉換處理了一部份
+";
+UpdatePart.ErrorMessage="更新元件期間的錯誤.
+";
+PersistentPart.ErrorMessage="
+*** 元件文件不能儲存 ***
+    可能的原因: 
+    - 元件文件包含禁止字元
+";
+Title.Bilan.Message="  /p1 家族(FAMILY)轉換綜合體
+";
+NbDetails.Bilan.Message="家族細部的數量                                  = /p1
+";
+NbNonSpace.Bilan.Message="- 非-空間細部的數量                                    = /p1
+";
+NbNotLoaded.Bilan.Message="- 無法載入的細部數量                      = /p1
+";
+NbNotConverted.Bilan.Message="- 無法轉換的細部數量                   = /p1
+";
+NbPartNotUpdated.Bilan.Message="- 相關連的元件的細部數量無法被更新 = /p1
+";
+NbPartNotSaved.Bilan.Message="- 相關連的元件的細部數量無法被儲存   = /p1
+";
+ComplementaryResults.Bilan.Message="額外的結果:
+";
+NbFiltered.Bilan.Message="- 名稱必須過濾的細部數量               = /p1
+";
+NbDuplicateNames.Bilan.Message="- 複製 CATIA V5 元件名稱的數量                 = /p1
+";
+FinalResults.Bilan.Message=" 最後結果:
+";
+NbDescriptions.Bilan.Message="- 在章節中建立說明的數量                      = /p1
+";
+Missingdetails.Bilan.Message="- 不在目錄章節中提供的細部數量           = /p1
+";
+TreatedDetails.Bilan.Message="- 處理的細部的數量                                      = /p1
+";
+//
+// General Batch Messages
+// ----------------------
+NewChapter.Message="
+
+
+正建立文件中的章節 
+  /p1
+
+";
+NewChapter2.Message="
+
+
+正建立中的章節 /p1
+
+";
+RetrievedChapter.Message="
+
+章節 /p1 從文件中萃取
+
+";
+ChapterDefinition.Message="
+章節定義: 
+";
+Chapter.ErrorMessage="
+內部錯誤: 新章節 /p1 無法建立.
+";
+Description.ErrorMessage="
+內部錯誤: 說明號碼 /p1 無法建立.
+";
+PersistentChapter.ErrorMessage="
+*** 章節文件無法存檔 ***
+    可能的原因:
+    - 路徑文件包含禁止的字元
+";
+CreatingChapter.ErrorMessage="
+*** 章節沒有建立與資料庫入口點的聯繫 ***
+";
+SpecificReasonCreatingChapter1.ErrorMessage="  可能的原因 :
+    - 資料庫 V4 毀壞
+";
+BatchAborted.Message="
+
+                         -------------
+                         批次處理中途失敗
+                         -------------
+";
+BatchSuccessful.Message="
+
+                         ------------------------
+                         批次處理成功結束
+                         ------------------------
+";
+//
+//
+//
+//
+//Conversion messages
+//-------------------
+PartExist0.Message="
+警告! 元件 
+  /p1
+ 已經存在且將遺失. 
+";
+PartCCP.ErrorMessage="警告! 元件文件的問題: 
+  /p1
+ 元件將不被儲存
+";
+AsSpec.Message="
+
+*************************************************************************
+           空間細部將被轉換 'AS SPEC' 
+*************************************************************************
+
+";
+AsResult.Message="
+*************************************************************************
+             空間細部將被轉換 'AS RESULT' 
+*************************************************************************
+
+";
+NOUpdateMode.Message="
+
+**********************************************************************
+              元件未更新 
+**********************************************************************
+
+";
+UpdateMode.Message="
+
+**********************************************************************
+              元件將被更新 
+**********************************************************************
+
+";
+TestMode0.Message="
+**********************************************************************
+                沒有現存元件的測試 
+**********************************************************************
+
+";
+NOUpdateMode.Bilan.Message="- 元件未更新 !!!
+";
+SimulationMode.Message="
+*************************************************************************
+                         模式 = 模擬 
+*************************************************************************
+
+";
+MigrationMode.Message="
+*************************************************************************
+                         模式 = 昇級 
+*************************************************************************
+
+";
+RattrapMode.Message="
+*************************************************************************
+                         MODE = RATTRAP
+***************************************************************************
+
+";
+
+//
+// CATConvertDRAWDetail messages
+// --------------------------------
+DrawDetailConversion.Message="
+                                    ----------------
+ DRAW 細部繪圖轉換 /p1
+                                    ----------------
+";
+DrawExist0.Message="
+警告! Draw 細部
+  /p1
+已存在而且遺失.
+";
+BlankFailed.ErrorMessage="****** 建立空的模型失敗! ******
+";
+TransferFailed.ErrorMessage="****** 資料庫細部 /P1 轉換至空的模型失敗! ******
+";
+NumberDetails.Message="在細部 /p1 中的數目: /p2
+";
+CreationV5.Message="建立新的 V5 繪圖成功.
+";
+CreationV5.ErrorMessage="****** 建立新的 V5 繪圖失敗! ******
+";
+Converted.Message="轉換在 /p2 中的細部 Nb /p1 成功.
+";
+Converted.ErrorMessage="******* 轉換在 /p2 中的細部 Nb /p1 失敗! *******
+";
+SaveAs.Message="儲存繪圖 V4 /p1 至繪圖 V5 /p2 成功.
+";
+SaveAs.ErrorMessage="******* 儲存繪圖 V4 /p1 至繪圖 V5 /p2 失敗! ******
+";
+SearchOfFirstView.Message="搜尋 V5 的第一視圖 /p1 成功.
+";
+SearchOfFirstView.ErrorMessage="****** 搜尋 V5 的第一視圖 /p1 失敗! ******
+";

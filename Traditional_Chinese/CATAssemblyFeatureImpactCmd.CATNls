@@ -1,0 +1,63 @@
+/// NLS file for CATAssemblyFeatureImpactCmd
+//-------------------------
+// English Version
+//-------------------------
+
+Titre_general="組立特徵定義";
+
+// frame name
+frmInfos.frmName.LblName.Title = "名稱: ";
+frmInfos.frmName.EditorName.Help = "定義組立特徵名稱";
+frmInfos.frmName.EditorName.LongHelp = "定義組立特徵名稱.";
+frmInfos.frmName.Btn_Add_Page.Title = "新增系列";
+frmInfos.frmName.Btn_Add_Page.Help = "新增新系列";
+frmInfos.frmName.Btn_Add_Page.LongHelp = "新增新系列";
+frmInfos.frmName.Btn_Remove_Page.Title = "移除系列";
+frmInfos.frmName.Btn_Remove_Page.Help = "移除所選系列";
+frmInfos.frmName.Btn_Remove_Page.LongHelp = "移除所選系列";
+
+// CATDlgMultiList frmMultiListA - old panel
+frmInfos.frmCandidates.Title = "會被影響";
+frmInfos.frmMultilistA.ColonneA1 = "零件名稱";
+frmInfos.frmMultilistA.ColonneA2 = "產品路徑";
+frmInfos.frmCandidates.frmMultiListA.ShortHelp = "表列會被影響的零件";
+frmInfos.frmCandidates.frmMultiListA.LongHelp = "表列會被組立特徵影響的零件";
+// CATDlgMultiList frmMultiListA - with splitter
+frmInfos.splittter.frmCandidates.Title = "可能被影響的零件";
+frmInfos.splittter.frmCandidates.frmMultiListA.ShortHelp = "表列可能被動作影響的零件";
+frmInfos.splittter.frmCandidates.frmMultiListA.LongHelp = "表列可能被動作影響的零件";
+
+// frame central boutons - old panel
+frmInfos.frmButton.ImpactAll.ShortHelp = "增加所有零件至影響表列";
+frmInfos.frmButton.ImpactSelected.ShortHelp = "增加所有零件至影響表列";
+frmInfos.frmButton.UnimpactAll.ShortHelp = "移除所有零件至影響表列";
+frmInfos.frmButton.UnimpactSelected.ShortHelp = "移除所有零件至影響表列";
+// frame central boutons - with splitter
+frmInfos.splittter.secondFrame.frmButton.ImpactAll.ShortHelp = "增加所有零件至影響零件表列";
+frmInfos.splittter.secondFrame.frmButton.ImpactSelected.ShortHelp = "增加所有零件至影響零件表列";
+frmInfos.splittter.secondFrame.frmButton.UnimpactAll.ShortHelp = "移除所有零件至影響零件表列";
+frmInfos.splittter.secondFrame.frmButton.UnimpactSelected.ShortHelp = "移除所有零件至影響零件表列";
+
+// CATDlgMultiList frmMultiListV - old panel
+frmInfos.frmElected.Title = "被影響零件";
+frmInfos.frmMultilistV.ColonneB1 = "名稱";
+frmInfos.frmMultilistV.ColonneB2 = "路徑";
+frmInfos.frmMultilistV.ColonneB3 = "資訊";
+frmInfos.frmElected.frmMultiListV.ShortHelp = "表列將會被影響的零件";
+frmInfos.frmElected.frmMultiListV.LongHelp = "表列將會被組立特徵影響的零件";
+// CATDlgMultiList frmMultiListV - with splitter
+frmInfos.splittter.secondFrame.frmElected.Title = "被影響的零件";
+frmInfos.splittter.secondFrame.frmElected.frmMultiListV.ShortHelp = "表列可能被動作影響的零件";
+frmInfos.splittter.secondFrame.frmElected.frmMultiListV.LongHelp = "表列可能被動作影響的零件";
+
+// HighlightImpacts
+frmInfos.HighlightImpacts.Title = "亮度顯示被影響零件";
+frmInfos.HighlightImpacts.LongHelp = "亮度顯示會被組立特徵影響的零件.";
+frmInfos.HighlightSerie.Title = "亮度顯示系列 所影響零件";
+frmInfos.HighlightSerie.LongHelp = "亮度顯示被目前系列所影響的零件";
+
+// warnings
+NoSolidBody_warning.Title = "組立特徵定義 - 警告";
+NoSolidBody_warning.Text = "部份影響零件未含任何實體. \n 可能會導致更新錯誤. \n 請檢查所影響零件表列中的訊息行.";
+
+PotentialUpdateError = "可能的更新錯誤";

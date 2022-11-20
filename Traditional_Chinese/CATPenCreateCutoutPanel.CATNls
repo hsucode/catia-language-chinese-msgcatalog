@@ -1,0 +1,84 @@
+Title = "建立 Cutout 草圖";
+
+PlacementFrame.Title = "置放";
+PlacementFrame.PlaceOnSideFrame.PlacementSideLabel.Title = "置放在邊:";
+PlacementFrame.PlaceOnSideFrame.Side1RBtn.Title        = "置放在邊1";
+PlacementFrame.PlaceOnSideFrame.Side1RBtn.ShortHelp    = "置放在邊1";
+PlacementFrame.PlaceOnSideFrame.Side1RBtn.LongHelp     = "置放 cutout 草圖在穿透物件的平面第一邊.";
+PlacementFrame.PlaceOnSideFrame.Side2RBtn.Title        = "置放在邊2";
+PlacementFrame.PlaceOnSideFrame.Side2RBtn.ShortHelp    = "置放在邊2";
+PlacementFrame.PlaceOnSideFrame.Side2RBtn.LongHelp     = "置放 cutout 草圖在穿透物件的平面第一邊.";
+PlacementFrame.PlacementLocationFrame.PlacementLocationLabel.Title = "  位置:  ";
+PlacementFrame.PlacementLocationFrame.XLabel.Title = "X:";
+PlacementFrame.PlacementLocationFrame.XValue.Title = "X:";
+PlacementFrame.PlacementLocationFrame.XValue.LongHelp = "置放 cutout 的 X 位置";
+PlacementFrame.PlacementLocationFrame.YLabel.Title = "Y:";
+PlacementFrame.PlacementLocationFrame.YValue.Title = "Y:";
+PlacementFrame.PlacementLocationFrame.YValue.LongHelp = "置放 cutout 的 Y 位置";
+PlacementFrame.PlacementLocationFrame.ZLabel.Title = "Z:";
+PlacementFrame.PlacementLocationFrame.ZValue.Title = "Z:";
+PlacementFrame.PlacementLocationFrame.ZValue.LongHelp = "置放 cutout 的 Z 位置";
+
+TopFrame.CutoutPenName.Title = "穿透 ID:";
+TopFrame.PenName.Title = "穿透 ID";
+TopFrame.PenName.LongHelp = "建立 Cutout 外形時的穿透 ID.";
+TopFrame.CutoutModeLabel.Title = "外形由下列定義:";
+
+CreateModeTabContainer.RulesBasedTabPage.Title = "規則";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.CutoutRuleFrame.CutoutRuleLabel.Title = "計算使用規則:";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.CutoutRuleFrame.CutoutRule.Title = "規則名稱";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.CutoutRuleFrame.CutoutRule.LongHelp = "計算目前外形參數的規則名稱.";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeNameFrame.ShapeNameLabel.Title = "Cutout 外形:";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeNameFrame.ShapeName.Title = "Cutout 外形";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeNameFrame.ShapeName.LongHelp = "穿透 Cutout 目錄中的 cutout 外形名稱.";
+
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeParametersFrame.HeightLabel.Title = "V:";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeParametersFrame.HeightValue.Title = "高度";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeParametersFrame.HeightValue.LongHelp = "Vertical length to be assigned to the cutout CATPart parameter CATRouVerticalLength";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeParametersFrame.WidthLabel.Title  = "H:";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeParametersFrame.WidthValue.Title  = "H";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeParametersFrame.WidthValue.LongHelp = "Horizontal length to be assigned to the cutout CATPart parameter CATRouVerticalLength";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeParametersFrame.SkewDistLabel.Title = "歪斜距離:";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeParametersFrame.SkewDistValue.Title = "歪斜距離";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeParametersFrame.SkewDistValue.LongHelp = "The elongation of the cutout hole due to the penetration angle, caused by the angle of the\npenetrating object and the thickness of the penetrated object.\nThis value is zero for a perpendicular penetration.";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeParametersFrame.SkewTolerLabel.Title = "歪斜精度:";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeParametersFrame.SkewTolerValue.Title = "歪斜精度";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeParametersFrame.SkewTolerValue.LongHelp = "The tolerance allowed in the Skew Distance to consider this hole perpendicular to the penetrated object.";
+
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeParameterListFrame.ShapeParameterList.Column0Title = "參數名稱";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeParameterListFrame.ShapeParameterList.Column1Title = "數值";
+CreateModeTabContainer.RulesBasedTabPage.RulesBasedTabFrame.ShapeParameterListFrame.ShapeParameterList.Title = "參數";
+
+CreateModeTabContainer.StdCatalogTabPage.Title = "標準目錄";
+CreateModeTabContainer.StdCatalogTabPage.StdCatalogTabFrame.StandardCutoutNameLabel.Title = "標準 Cutout:";
+CreateModeTabContainer.StdCatalogTabPage.StdCatalogTabFrame.StandardCutoutNameValue.Title = "標準 Cutout名稱";
+CreateModeTabContainer.StdCatalogTabPage.StdCatalogTabFrame.StandardCutoutNameValue.ShortHelp = "標準 Cutout名稱";
+CreateModeTabContainer.StdCatalogTabPage.StdCatalogTabFrame.StandardCutoutNameValue.LongHelp = "The selected Cutout Sketch name in the Standard Cutout catalog.";
+CreateModeTabContainer.StdCatalogTabPage.StdCatalogTabFrame.StandardCutoutCatalogBtn.Title = "目錄";
+CreateModeTabContainer.StdCatalogTabPage.StdCatalogTabFrame.StandardCutoutCatalogBtn.ShortHelp = "開啟目錄";
+CreateModeTabContainer.StdCatalogTabPage.StdCatalogTabFrame.StandardCutoutCatalogBtn.LongHelp = "Open the Standard Cutout catalog to select a Standard Cutout.";
+
+CreateModeTabContainer.ManSketchTabPage.Title = "手動草圖";
+CreateModeTabContainer.ManSketchTabPage.ManSketchTabFrame.ManualSketchLabel.Title = "手動草圖:";
+CreateModeTabContainer.ManSketchTabPage.ManSketchTabFrame.ManualSketchValue.Title = "手動草圖名稱";
+CreateModeTabContainer.ManSketchTabPage.ManSketchTabFrame.ManualSketchValue.ShortHelp = "手動草圖名稱";
+CreateModeTabContainer.ManSketchTabPage.ManSketchTabFrame.ManualSketchValue.LongHelp = "The sketch name in the manual sketch part.";
+CreateModeTabContainer.ManSketchTabPage.ManSketchTabFrame.ManualSketcherBtn.Title = "草圖";
+CreateModeTabContainer.ManSketchTabPage.ManSketchTabFrame.ManualSketcherBtn.ShortHelp = "開啟草圖";
+CreateModeTabContainer.ManSketchTabPage.ManSketchTabFrame.ManualSketcherBtn.LongHelp = "Open the Sketcher to manually sketch the cutout profile.\nIf no cutout part is defined, a new part is created.";
+
+NoSelection                              = "未選取";
+ErrTooFewHighLightedObjects              = "Could not get two or more clashing objects in the Penetration. \nCheck your Penetration data.";
+ErrCannotSetCatalogPath                  = "無法設定目錄路徑.  請檢查 工具組 -> 選項  -> 設備和系統 -> 設計標準.  \n 目錄 = ";
+ErrNoCATIPenPenetrationObject            = "穿透物件未與 CATIPenPenetrationObject 相連 ... 無法使用間隙規則.";
+ErrCouldNotDetermineShape                = "無法決定穿透物件的外形 ... 無法使用間隙規則.";
+ErrCouldNotDetermineCutoutShape          = "無法決定輪廓外形. \n 請檢查資源名稱 = /p1 ,外形 = /p2 的計劃管理檔案";
+ErrCouldNotGetOpeningsPath               = "無法獲得以資源名稱定義的開啟目錄路徑 = ";
+ErrCouldNotFindCutoutShape               = "開啟目錄中無法找到輪廓外形.  \n 請檢查資源名稱 = /p1 ,外形 = /p2 的計劃管理檔案";
+WrnCouldNotFindCutoutRule                = "No penetration cutout rule for the objects of the penetration. \nCheck the rules in Project Management File for Resource Name= /p1 \nfor objects /p2.";
+ErrCouldNotFindStructureObject           = "無法以規則決定間隙. \n 無法找到具屬性的結構物件 ";
+ErrCouldNotGetClearance                  = "無法以規則決定間隙. 使用 '緊固' 屬性, \n 無法在間隙規則中對映行使用 PenetrationType = ";
+WrnNoClash                               = "未偵測到碰撞. 沒有碰撞物件無法建立輪廓.";
+WrnNoCutoutSelected                      = "未選擇輪廓零件. 置放前必須先在開啟目錄中選擇輪廓零件.";
+WrnCouldNotDeterminePenetrationObject    = "無法決定穿透物件, 將置放輪廓在作動產品層級. \n 只能辨識管路和 HVAC 元素";
+ErrCouldNotGetCutoutRulesCATProduct      = "Could not read the rules in the Penetration Cutout Rules file. \nCheck Project Management File for Resource Name= /p1";

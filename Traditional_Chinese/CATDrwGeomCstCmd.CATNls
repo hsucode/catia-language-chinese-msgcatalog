@@ -1,0 +1,35 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 2001 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwGeomCstCmd
+// LOCATION    :    DraftingIntCommands
+// AUTHOR      :    fgx
+// DATE        :    29.03.2001
+//=====================================================================================
+
+// Types of geometrical constraints
+constraint_type_3="同心";
+constraint_type_5="平行";
+constraint_type_6="垂直";
+constraint_type_7="一致";
+constraint_type_8="相切";
+constraint_type_9="對稱";
+constraint_type_11="固定";
+constraint_type_12="水平";
+constraint_type_100="垂直";
+constraint_type_106="中間點";
+constraint_type_108="等距點";
+
+// No constraint in that configuration
+NO_CST="無拘束";
+
+// Create or apply constraint
+CREATE="建立";
+APPLY="應用";
+
+// Dialog states
+CATDrwGeomCstCmd.waitForFirstSelState.Message="選擇第一個幾何元素";
+CATDrwGeomCstCmd.waitForSecondSelState.Message="選擇第二個幾何元素, 或選擇要建立的拘束";
+CATDrwGeomCstCmd.waitForThirdSelState.Message="選擇要當做對稱軸的線, 或選擇要建立的拘束";
+

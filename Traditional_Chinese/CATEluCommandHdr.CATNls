@@ -1,0 +1,493 @@
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Schematic Commands 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+CATEluCommandHdr.CATEluBuildComponentHdr.Title="Build Component";
+CATEluCommandHdr.CATEluBuildComponentHdr.Help="Build a component";
+CATEluCommandHdr.CATEluBuildComponentHdr.ShortHelp="Build Component";
+CATEluCommandHdr.CATEluBuildComponentHdr.LongHelp="Build a component.";
+
+CATEluCommandHdr.CATEluBuildGraphicHdr.Title="Build Graphic";
+CATEluCommandHdr.CATEluBuildGraphicHdr.Help="Build a graphic representation";
+CATEluCommandHdr.CATEluBuildGraphicHdr.ShortHelp="Build Graphic";
+CATEluCommandHdr.CATEluBuildGraphicHdr.LongHelp="Build a graphic representation.";
+
+CATEluCommandHdr.CATEluBuildConnectorHdr.Title="Build Connector";
+CATEluCommandHdr.CATEluBuildConnectorHdr.Help="Build a connector";
+CATEluCommandHdr.CATEluBuildConnectorHdr.ShortHelp="Build Connector";
+CATEluCommandHdr.CATEluBuildConnectorHdr.LongHelp="Build a connector.";
+
+CATEluCommandHdr.CATEluAddPinHdr.Title="Add Pins";
+CATEluCommandHdr.CATEluAddPinHdr.Help="Add one or several pins";
+CATEluCommandHdr.CATEluAddPinHdr.ShortHelp="Add Pins";
+CATEluCommandHdr.CATEluAddPinHdr.LongHelp="Add one or several pins to a component.";
+
+CATEluCommandHdr.CATEluRenamePinHdr.Title="Rename Pins";
+CATEluCommandHdr.CATEluRenamePinHdr.Help="Rename one pin";
+CATEluCommandHdr.CATEluRenamePinHdr.ShortHelp="Rename pin";
+CATEluCommandHdr.CATEluRenamePinHdr.LongHelp="Rename pin.";
+
+CATEluCommandHdr.CATEluCreateTerminalBoardHdr.Title="Build Terminal Board";
+CATEluCommandHdr.CATEluCreateTerminalBoardHdr.Help="Build a terminal board";
+CATEluCommandHdr.CATEluCreateTerminalBoardHdr.ShortHelp="Build Terminal Board";
+CATEluCommandHdr.CATEluCreateTerminalBoardHdr.LongHelp="Build a terminal board in a junction box.";
+
+CATEluCommandHdr.CATEluManagePotentialHdr.Title="Manage potential in Terminal Board";
+CATEluCommandHdr.CATEluManagePotentialHdr.Help="Manage potential in Terminal Board";
+CATEluCommandHdr.CATEluManagePotentialHdr.ShortHelp="Manage potential in Terminal Board";
+CATEluCommandHdr.CATEluManagePotentialHdr.LongHelp="Manage potential in Terminal Board";
+
+
+CATEluCommandHdr.CATEluMbOrientInAssHdr.Title="Create Graphic";
+CATEluCommandHdr.CATEluMbOrientInAssHdr.Help="Create Graphic in Assembly";
+CATEluCommandHdr.CATEluMbOrientInAssHdr.ShortHelp="Create Graphic in Assembly";
+CATEluCommandHdr.CATEluMbOrientInAssHdr.LongHelp="Create Graphic in Assembly (Ex: Terminal Board in a JunctionBox)";
+
+
+CATEluCommandHdr.CATEluBuildCompGrpHdr.Title="Build Component Group";
+CATEluCommandHdr.CATEluBuildCompGrpHdr.Help="Build a component group consisting of components";
+CATEluCommandHdr.CATEluBuildCompGrpHdr.ShortHelp="Build Component Group";
+CATEluCommandHdr.CATEluBuildCompGrpHdr.LongHelp="Build a component group consisting of components.";
+
+CATEluCommandHdr.CATEluBuildFlowHdr.Title="Build Internal Flow";
+CATEluCommandHdr.CATEluBuildFlowHdr.Help="Define an internal flow";
+CATEluCommandHdr.CATEluBuildFlowHdr.ShortHelp="Build Internal Flow";
+CATEluCommandHdr.CATEluBuildFlowHdr.LongHelp="Define an internal flow.";
+
+CATEluCommandHdr.CATEluPlaceComponentHdr.Title="Place Component";
+CATEluCommandHdr.CATEluPlaceComponentHdr.Help="Place a component";
+CATEluCommandHdr.CATEluPlaceComponentHdr.ShortHelp="Place Component";
+CATEluCommandHdr.CATEluPlaceComponentHdr.LongHelp="Place a component.";
+
+CATEluCommandHdr.CATEluImageComponentHdr.Title="Import Component Image";
+CATEluCommandHdr.CATEluImageComponentHdr.Help="Import a component image";
+CATEluCommandHdr.CATEluImageComponentHdr.ShortHelp="Import Component Image";
+CATEluCommandHdr.CATEluImageComponentHdr.LongHelp="Import the image of a component from another diagram into the current one.";
+
+CATEluCommandHdr.CATEluFrameInfoHdr.Title="Frame Information";
+CATEluCommandHdr.CATEluFrameInfoHdr.Help="Define Frame Information";
+CATEluCommandHdr.CATEluFrameInfoHdr.ShortHelp="Define Frame Infomation";
+CATEluCommandHdr.CATEluFrameInfoHdr.LongHelp="Define Frame Infomation.";
+
+CATEluCommandHdr.CATEluRouteCableLineHdr.Title="Route Cable";
+CATEluCommandHdr.CATEluRouteCableLineHdr.Help="Route a cable";
+CATEluCommandHdr.CATEluRouteCableLineHdr.ShortHelp="Route Cable";
+CATEluCommandHdr.CATEluRouteCableLineHdr.LongHelp="Route an electrical cable.";
+
+CATEluCommandHdr.CATEluRouteWireLineHdr.Title="Route Wire";
+CATEluCommandHdr.CATEluRouteWireLineHdr.Help="Route a wire";
+CATEluCommandHdr.CATEluRouteWireLineHdr.ShortHelp="Route Wire";
+CATEluCommandHdr.CATEluRouteWireLineHdr.LongHelp="Route an electrical wire.";
+
+CATEluCommandHdr.CATEluCheckSignalDiagHdr.Title="Update Signal Flow Diagram";
+CATEluCommandHdr.CATEluCheckSignalDiagHdr.Help="Update the signal flow diagram";
+CATEluCommandHdr.CATEluCheckSignalDiagHdr.ShortHelp="Update Signal Flow Diagram";
+CATEluCommandHdr.CATEluCheckSignalDiagHdr.LongHelp="Update the signal flow diagram.";
+
+CATEluCommandHdr.CATEluWiresManagementHdr.Title="Wires Management";
+CATEluCommandHdr.CATEluWiresManagementHdr.Help="Manage wires connections";
+CATEluCommandHdr.CATEluWiresManagementHdr.ShortHelp="Wires Management";
+CATEluCommandHdr.CATEluWiresManagementHdr.LongHelp="Manage the wires connections";
+
+CATEluCommandHdr.CATEluOnOffSheetHdr.Title="Place On/Off Sheet Connectors";
+CATEluCommandHdr.CATEluOnOffSheetHdr.Help="Place On/Off Sheet connectors";
+CATEluCommandHdr.CATEluOnOffSheetHdr.ShortHelp="Place On/Off Sheet Connectors";
+CATEluCommandHdr.CATEluOnOffSheetHdr.LongHelp="Place On/Off Sheet connectors.";
+
+CATEluCommandHdr.CATEluOnOffQueryHdr.Title="Query On/Off Sheet Connectors";
+CATEluCommandHdr.CATEluOnOffQueryHdr.Help="Query On/Off Sheet connectors";
+CATEluCommandHdr.CATEluOnOffQueryHdr.ShortHelp="Query On/Off Sheet Connectors";
+CATEluCommandHdr.CATEluOnOffQueryHdr.LongHelp="Query the links of On/Off Sheet connectors.";
+
+CATEluCommandHdr.CATEluOnOffLinkHdr.Title="Link On/Off Sheet Connectors";
+CATEluCommandHdr.CATEluOnOffLinkHdr.Help="Link On/Off Sheet connectors";
+CATEluCommandHdr.CATEluOnOffLinkHdr.ShortHelp="Link On/Off Sheet Connectors";
+CATEluCommandHdr.CATEluOnOffLinkHdr.LongHelp="Link On/Off Sheet connectors.";
+
+CATEluCommandHdr.CATEluOnOffUnlinkHdr.Title="Unlink On/Off Sheet Connectors";
+CATEluCommandHdr.CATEluOnOffUnlinkHdr.Help="Unlink On/Off Sheet connectors";
+CATEluCommandHdr.CATEluOnOffUnlinkHdr.ShortHelp="Unlink On/Off Sheet Connectors";
+CATEluCommandHdr.CATEluOnOffUnlinkHdr.LongHelp="Unlink On/Off Sheet connectors.";
+
+CATEluCommandHdr.CATEluCreateZoneHdr.Title="Create Zone";
+CATEluCommandHdr.CATEluCreateZoneHdr.Help="Create a Zone";
+CATEluCommandHdr.CATEluCreateZoneHdr.ShortHelp="Create Zone";
+CATEluCommandHdr.CATEluCreateZoneHdr.LongHelp="Create a Zone.";
+
+CATEluCommandHdr.CATEluSelectZoneHdr.Title="Select/Query Zone";
+CATEluCommandHdr.CATEluSelectZoneHdr.Help="Select/Query Zones";
+CATEluCommandHdr.CATEluSelectZoneHdr.ShortHelp="Select/Query Zone";
+CATEluCommandHdr.CATEluSelectZoneHdr.LongHelp="Select/Query Zones.";
+
+CATEluCommandHdr.CATEluRenameZoneHdr.Title="Rename Zone";
+CATEluCommandHdr.CATEluRenameZoneHdr.Help="Rename a Zone";
+CATEluCommandHdr.CATEluRenameZoneHdr.ShortHelp="Rename Zone";
+CATEluCommandHdr.CATEluRenameZoneHdr.LongHelp="Rename a Zone.";
+
+CATEluCommandHdr.CATEluDeleteZoneHdr.Title="Delete Zone";
+CATEluCommandHdr.CATEluDeleteZoneHdr.Help="Delete a local Zone from the document";
+CATEluCommandHdr.CATEluDeleteZoneHdr.ShortHelp="Delete Zone";
+CATEluCommandHdr.CATEluDeleteZoneHdr.LongHelp="Delete a local Zone from the document.";
+
+CATEluCommandHdr.CATEluDefZoneBdryHdr.Title="Define Zone Boundaries";
+CATEluCommandHdr.CATEluDefZoneBdryHdr.Help="Define/update the boundaries of a zone";
+CATEluCommandHdr.CATEluDefZoneBdryHdr.ShortHelp="Define Zone Boundaries";
+CATEluCommandHdr.CATEluDefZoneBdryHdr.LongHelp="Define/update the boundaries of a zone.";
+
+CATEluCommandHdr.CATEluUpdateZoneHdr.Title="Update Zones";
+CATEluCommandHdr.CATEluUpdateZoneHdr.Help="Update the membership of all zones";
+CATEluCommandHdr.CATEluUpdateZoneHdr.ShortHelp="Update Zones";
+CATEluCommandHdr.CATEluUpdateZoneHdr.LongHelp="Update the membership of all zones.";
+
+CATEluCommandHdr.CATEluRouteElectricalLineHdr.Title="Route Electrical Line";
+CATEluCommandHdr.CATEluRouteElectricalLineHdr.Help="Route an Electrical line";
+CATEluCommandHdr.CATEluRouteElectricalLineHdr.ShortHelp="Route Electrical Line";
+CATEluCommandHdr.CATEluRouteElectricalLineHdr.LongHelp="Route an Electrical line.";
+
+CATEluCommandHdr.CATEluCreateLogLineHdr.Title="Create Cable";
+CATEluCommandHdr.CATEluCreateLogLineHdr.Help="Create a cable";
+CATEluCommandHdr.CATEluCreateLogLineHdr.ShortHelp="Create Cable";
+CATEluCommandHdr.CATEluCreateLogLineHdr.LongHelp="Create a cable.";
+
+CATEluCommandHdr.CATEluSelQryLogLineHdr.Title="Select/Query Line ID";
+CATEluCommandHdr.CATEluSelQryLogLineHdr.Help="Select/Query Line IDs";
+CATEluCommandHdr.CATEluSelQryLogLineHdr.ShortHelp="Select/Query Line ID";
+CATEluCommandHdr.CATEluSelQryLogLineHdr.LongHelp="Select/Query Line IDs.";
+
+CATEluCommandHdr.CATEluTransferLogLineHdr.Title="Transfer Line ID";
+CATEluCommandHdr.CATEluTransferLogLineHdr.Help="Transfer members from one Line ID to another";
+CATEluCommandHdr.CATEluTransferLogLineHdr.ShortHelp="Transfer Line ID";
+CATEluCommandHdr.CATEluTransferLogLineHdr.LongHelp="Transfer members from one Line ID to another.";
+
+CATEluCommandHdr.CATEluRenameLogLineHdr.Title="Rename Line ID";
+CATEluCommandHdr.CATEluRenameLogLineHdr.Help="Rename a Line ID";
+CATEluCommandHdr.CATEluRenameLogLineHdr.ShortHelp="Rename Line ID";
+CATEluCommandHdr.CATEluRenameLogLineHdr.LongHelp="Rename a Line ID.";
+
+CATEluCommandHdr.CATEluDeleteLogLineHdr.Title="Delete Line ID";
+CATEluCommandHdr.CATEluDeleteLogLineHdr.Help="Delete a local Line ID from the document";
+CATEluCommandHdr.CATEluDeleteLogLineHdr.ShortHelp="Delete Line ID";
+CATEluCommandHdr.CATEluDeleteLogLineHdr.LongHelp="Delete a local Line ID from the document.";
+
+CATEluCommandHdr.CATEluStoreSchematicDeviceHdr.Title="Schematic Device Storage";
+CATEluCommandHdr.CATEluStoreSchematicDeviceHdr.Help="Store Schematic Device";
+CATEluCommandHdr.CATEluStoreSchematicDeviceHdr.ShortHelp="Store Schematic Device";
+CATEluCommandHdr.CATEluStoreSchematicDeviceHdr.LongHelp="Store a schematic device from the document.";
+
+CATEluCommandHdr.CATEluCatalogBrowserHdr.Title="Catalog Browser";
+CATEluCommandHdr.CATEluCatalogBrowserHdr.Help="Catalog Browser";
+CATEluCommandHdr.CATEluCatalogBrowserHdr.ShortHelp="Catalog Browser";
+CATEluCommandHdr.CATEluCatalogBrowserHdr.LongHelp="Catalog Browser";
+
+
+
+CATEluCommandHdr.CATEluImportCabDiagHdr.Title="Import from Cable Diagram";
+CATEluCommandHdr.CATEluImportCabDiagHdr.Help="Import from Cable Diagram at a Wire Level";
+CATEluCommandHdr.CATEluImportCabDiagHdr.ShortHelp="Import from Cable Diagram";
+CATEluCommandHdr.CATEluImportCabDiagHdr.LongHelp="Import an Electrical Assembly from Cable Level to Wire Level";
+
+
+
+
+CATEluCommandHdr.EluLinkSchPhys.Title="Link 2D->3D";
+CATEluCommandHdr.EluLinkSchPhys.Help="Link 2D->3D";
+CATEluCommandHdr.EluLinkSchPhys.ShortHelp="Link 2D->3D";
+CATEluCommandHdr.EluLinkSchPhys.LongHelp="Link 2D->3D";
+
+CATEluCommandHdrWithCSO.EluUnlinkSchPhys.Title="Unlink 2D->3D";
+CATEluCommandHdrWithCSO.EluUnlinkSchPhys.Help="Unlink 2D->3D";
+CATEluCommandHdrWithCSO.EluUnlinkSchPhys.ShortHelp="Unlink 2D->3D";
+CATEluCommandHdrWithCSO.EluUnlinkSchPhys.LongHelp="Unlink 2D->3D";
+
+CATEluCommandHdr.CATEluRotateCompLeftHdr.Title="Rotate Left";
+CATEluCommandHdr.CATEluRotateCompLeftHdr.Help="Rotate a component left 90 degrees";
+CATEluCommandHdr.CATEluRotateCompLeftHdr.ShortHelp="Rotate Left";
+CATEluCommandHdr.CATEluRotateCompLeftHdr.LongHelp="Rotate a component left 90 degrees.";
+
+CATEluCommandHdr.CATEluRotateCompRightHdr.Title="Rotate Right";
+CATEluCommandHdr.CATEluRotateCompRightHdr.Help="Rotate a component right 90 degrees";
+CATEluCommandHdr.CATEluRotateCompRightHdr.ShortHelp="Rotate Right";
+CATEluCommandHdr.CATEluRotateCompRightHdr.LongHelp="Rotate a component right 90 degrees.";
+
+CATEluCommandHdr.CATEluFlipCompHorizHdr.Title="Flip Horizontal";
+CATEluCommandHdr.CATEluFlipCompHorizHdr.Help="Flip a component horizontally";
+CATEluCommandHdr.CATEluFlipCompHorizHdr.ShortHelp="Flip Horizontal";
+CATEluCommandHdr.CATEluFlipCompHorizHdr.LongHelp="Flip a component horizontally (about its vertical axis).";
+
+CATEluCommandHdr.CATEluFlipCompVertHdr.Title="Flip Vertical";
+CATEluCommandHdr.CATEluFlipCompVertHdr.Help="Flip a component vertically";
+CATEluCommandHdr.CATEluFlipCompVertHdr.ShortHelp="Flip Vertical";
+CATEluCommandHdr.CATEluFlipCompVertHdr.LongHelp="Flip a component vertically (about its horizontal axis).";
+
+CATEluCommandHdr.CATEluFlipCompInLineHdr.Title="Flip In Line";
+CATEluCommandHdr.CATEluFlipCompInLineHdr.Help="Flip an inserted component about its insertion line";
+CATEluCommandHdr.CATEluFlipCompInLineHdr.ShortHelp="Flip In Line";
+CATEluCommandHdr.CATEluFlipCompInLineHdr.LongHelp="Flip an inserted component about its insertion line.";
+
+CATEluCommandHdr.CATEluFlipCompConnectionsHdr.Title="Flip Connections";
+CATEluCommandHdr.CATEluFlipCompConnectionsHdr.Help="Flip the connections on an inserted component";
+CATEluCommandHdr.CATEluFlipCompConnectionsHdr.ShortHelp="Flip Connections";
+CATEluCommandHdr.CATEluFlipCompConnectionsHdr.LongHelp="Flip the connections on an inserted component.";
+
+CATEluCommandHdr.CATEluScaleCompHdr.Title="Scale";
+CATEluCommandHdr.CATEluScaleCompHdr.Help="Scale a component";
+CATEluCommandHdr.CATEluScaleCompHdr.ShortHelp="Scale Component";
+CATEluCommandHdr.CATEluScaleCompHdr.LongHelp="Scale a component.";
+
+CATEluCommandHdr.CATEluReplaceCompHdr.Title="Replace";
+CATEluCommandHdr.CATEluReplaceCompHdr.Help="Replace a component with another component";
+CATEluCommandHdr.CATEluReplaceCompHdr.ShortHelp="Replace Component";
+CATEluCommandHdr.CATEluReplaceCompHdr.LongHelp="Replace a component with another component.";
+
+CATEluCommandHdr.CATEluAlignCompHorizHdr.Title="Align Horizontal";
+CATEluCommandHdr.CATEluAlignCompHorizHdr.Help="Align components horizontally";
+CATEluCommandHdr.CATEluAlignCompHorizHdr.ShortHelp="Align Horizontal";
+CATEluCommandHdr.CATEluAlignCompHorizHdr.LongHelp="Align components horizontally.";
+
+CATEluCommandHdr.CATEluAlignCompVertHdr.Title="Align Vertical";
+CATEluCommandHdr.CATEluAlignCompVertHdr.Help="Align a component vertically";
+CATEluCommandHdr.CATEluAlignCompVertHdr.ShortHelp="Align Vertical";
+CATEluCommandHdr.CATEluAlignCompVertHdr.LongHelp="Align a component vertically.";
+
+CATEluCommandHdr.CATEluSwapGraphicCompHdr.Title="Swap Graphic";
+CATEluCommandHdr.CATEluSwapGraphicCompHdr.Help="Swap Graphic of a  component";
+CATEluCommandHdr.CATEluSwapGraphicCompHdr.ShortHelp="Swap Component Graphic";
+CATEluCommandHdr.CATEluSwapGraphicCompHdr.LongHelp="Swap graphic of a component.";
+
+CATEluCommandHdr.CATEluOnOffQueryConnection.Title="Query connection";
+CATEluCommandHdr.CATEluOnOffQueryConnection.Help="Query a On/Off Sheet connection";
+CATEluCommandHdr.CATEluOnOffQueryConnection.ShortHelp="Query On/Off Sheet Connection";
+CATEluCommandHdr.CATEluOnOffQueryConnection.LongHelp="Query the connection status of an On/Off Sheet object.";
+
+CATEluCommandHdr.CATEluOnOffConnect.Title="Connect";
+CATEluCommandHdr.CATEluOnOffConnect.Help="Connect a On/Off Sheet object";
+CATEluCommandHdr.CATEluOnOffConnect.ShortHelp="Connect On/Off Sheet object";
+CATEluCommandHdr.CATEluOnOffConnect.LongHelp="Connect this On/Off Sheet object to another.";
+
+CATEluCommandHdr.CATEluOnOffDisconnect.Title="Disconnect";
+CATEluCommandHdr.CATEluOnOffDisconnect.Help="Disconnect a On/Off Sheet connection";
+CATEluCommandHdr.CATEluOnOffDisconnect.ShortHelp="Disconnect On/Off Sheet Connection";
+CATEluCommandHdr.CATEluOnOffDisconnect.LongHelp="Disconnect this On/Off Sheet object from another.";
+
+CATEluCommandHdr.CATEluActivateView.Title="Activate View";
+CATEluCommandHdr.CATEluActivateView.Help="Activate View";
+CATEluCommandHdr.CATEluActivateView.ShortHelp="Sets the selected view as the active one";
+CATEluCommandHdr.CATEluActivateView.LongHelp="Sets the selected view as the active one.";
+
+CATEluCommandHdr.CATEluTranslateHdr.Title="Schematic Translate";
+CATEluCommandHdr.CATEluTranslateHdr.Help="Translate multiple schematic and drafting objects";
+CATEluCommandHdr.CATEluTranslateHdr.ShortHelp="Schematic Translate";
+CATEluCommandHdr.CATEluTranslateHdr.LongHelp="Translate multiple schematic and drafting objects (and update the schematic connections).";
+
+CATEluCommandHdr.CATEluConnectHdr.Title="Connect";
+CATEluCommandHdr.CATEluConnectHdr.Help="Connect a component or route to another component or route";
+CATEluCommandHdr.CATEluConnectHdr.ShortHelp="Connect";
+CATEluCommandHdr.CATEluConnectHdr.LongHelp="Connect a component or route to another component or route.";
+
+CATEluCommandHdr.CATEluDisconnectHdr.Title="Disconnect";
+CATEluCommandHdr.CATEluDisconnectHdr.Help="Disconnect a component or route from another component or route";
+CATEluCommandHdr.CATEluDisconnectHdr.ShortHelp="Disconnect";
+CATEluCommandHdr.CATEluDisconnectHdr.LongHelp="Disconnect a component or route from another component or route.";
+
+CATEluCommandHdr.CATEluUpdateImageHdr.Title="Query/Update Images";
+CATEluCommandHdr.CATEluUpdateImageHdr.Help="Querying or updating a schematic diagram image object from its master";
+CATEluCommandHdr.CATEluUpdateImageHdr.ShortHelp="Query/Update Images";
+CATEluCommandHdr.CATEluUpdateImageHdr.LongHelp="Querying the images in a schematic document and/or updating an image object from its master.";
+
+CATEluCommandHdr.CATEluBreakRouteHdr.Title="Break Route";
+CATEluCommandHdr.CATEluBreakRouteHdr.Help="Break up a route into two routes";
+CATEluCommandHdr.CATEluBreakRouteHdr.ShortHelp="Break Route";
+CATEluCommandHdr.CATEluBreakRouteHdr.LongHelp="Break up a route into two routes.";
+
+CATEluCommandHdr.CATEluCloseRouteHdr.Title="Close Route";
+CATEluCommandHdr.CATEluCloseRouteHdr.Help="Close two broken routes into one";
+CATEluCommandHdr.CATEluCloseRouteHdr.ShortHelp="Close Route";
+CATEluCommandHdr.CATEluCloseRouteHdr.LongHelp="Close two broken routes into one.";
+
+CATEluCommandHdr.CATEluFlowShowHdr.Title="Flow Show";
+CATEluCommandHdr.CATEluFlowShowHdr.Help="Show/no show the flow direction of a route or Line ID";
+CATEluCommandHdr.CATEluFlowShowHdr.ShortHelp="Flow Show";
+CATEluCommandHdr.CATEluFlowShowHdr.LongHelp="Show/no show the flow direction of a route or Line ID.";
+
+CATEluCommandHdr.CATEluFlowDirectionHdr.Title="Flow Direction";
+CATEluCommandHdr.CATEluFlowDirectionHdr.Help="Reverse the flow direction of a route or Line ID";
+CATEluCommandHdr.CATEluFlowDirectionHdr.ShortHelp="Flow Direction";
+CATEluCommandHdr.CATEluFlowDirectionHdr.LongHelp="Reverse the flow direction of a route or Line ID.";
+
+CATEluCommandHdr.CATEluFlowShowAllHdr.Title="Show All Flow";
+CATEluCommandHdr.CATEluFlowShowAllHdr.Help="Show the flow direction on all routes or Line IDs";
+CATEluCommandHdr.CATEluFlowShowAllHdr.ShortHelp="Show All Flow";
+CATEluCommandHdr.CATEluFlowShowAllHdr.LongHelp="Show the flow direction on all routes or Line IDs.";
+
+CATEluCommandHdr.CATEluFlowNoShowAllHdr.Title="Noshow All Flow";
+CATEluCommandHdr.CATEluFlowNoShowAllHdr.Help="Noshow the flow direction on all routes or Line IDs";
+CATEluCommandHdr.CATEluFlowNoShowAllHdr.ShortHelp="Noshow All Flow";
+CATEluCommandHdr.CATEluFlowNoShowAllHdr.LongHelp="Noshow the flow direction on all routes or Line IDs.";
+
+CATEluCommandHdr.CATEluGapShowAllHdr.Title="Show All Gaps";
+CATEluCommandHdr.CATEluGapShowAllHdr.Help="Show gaps at all route intersections";
+CATEluCommandHdr.CATEluGapShowAllHdr.ShortHelp="Show All Gaps";
+CATEluCommandHdr.CATEluGapShowAllHdr.LongHelp="Show gaps at all route intersections.";
+
+CATEluCommandHdr.CATEluGapNoShowAllHdr.Title="Noshow All Gaps";
+CATEluCommandHdr.CATEluGapNoShowAllHdr.Help="Noshow gaps at all route intersections";
+CATEluCommandHdr.CATEluGapNoShowAllHdr.ShortHelp="Noshow All Gaps";
+CATEluCommandHdr.CATEluGapNoShowAllHdr.LongHelp="Noshow gaps at all route intersections.";
+
+CATEluCommandHdr.CATEluRenameIDHdr.Title="Rename ID";
+CATEluCommandHdr.CATEluRenameIDHdr.Help="Rename a schematic object ID";
+CATEluCommandHdr.CATEluRenameIDHdr.ShortHelp="Rename ID";
+CATEluCommandHdr.CATEluRenameIDHdr.LongHelp="Rename a schematic object ID.";
+
+CATEluCommandHdr.CATEluManageLogicalPubHdr.Title="Manage Logical Publications...";
+CATEluCommandHdr.CATEluManageLogicalPubHdr.Help="Manage the logical publications of an on/off sheet connector";
+CATEluCommandHdr.CATEluManageLogicalPubHdr.ShortHelp="Manage Logical Publications";
+CATEluCommandHdr.CATEluManageLogicalPubHdr.LongHelp="Manage the logical publications of an on/off sheet connector.";
+
+CATEluCommandHdr.CATEluManageDocLinksHdr.Title="Manage Document Links...";
+CATEluCommandHdr.CATEluManageDocLinksHdr.Help="Manage documents links for current document";
+CATEluCommandHdr.CATEluManageDocLinksHdr.ShortHelp="Manage Document Links";
+CATEluCommandHdr.CATEluManageDocLinksHdr.LongHelp="Manage document links for current document";
+
+CATEluCommandHdr.CATEluMeasureHdr.Title="Measure Tool";
+CATEluCommandHdr.CATEluMeasureHdr.Help="Measure between schematic objects";
+CATEluCommandHdr.CATEluMeasureHdr.ShortHelp="Measure Tool";
+CATEluCommandHdr.CATEluMeasureHdr.LongHelp="Measure between schematic objects.";
+
+CATEluCommandHdr.CATEluQueryCntrInfoHdr.Title="Query Connector Info";
+CATEluCommandHdr.CATEluQueryCntrInfoHdr.Help="Query Connector Info";
+CATEluCommandHdr.CATEluQueryCntrInfoHdr.ShortHelp="Query Connector Info";
+CATEluCommandHdr.CATEluQueryCntrInfoHdr.LongHelp="Query Connector Info.";
+
+//------------------------------------------------------------------------------
+// Annotation Editor Contextual Menu Command
+//------------------------------------------------------------------------------
+CATEluCommandHdr.CATEluEditAnnotHdr.Title="Annotation Editor...";
+CATEluCommandHdr.CATEluEditAnnotHdr.ShortHelp="Annotation Editor";
+CATEluCommandHdr.CATEluEditAnnotHdr.Help="Edit an annotation";
+CATEluCommandHdr.CATEluEditAnnotHdr.LongHelp="Brings up an editor to edit the contents of the annotation.";
+
+CATEluCommandHdr.ElecAnalysisLinks.Title="Related Objects";
+CATEluCommandHdr.ElecAnalysisLinks.ShortHelp="Related Objects";
+
+//------------------
+// ProjectManagement
+//------------------
+CATEluCommandHdr.CATEluPrjMngtHdr.Title="Select/Browse...";
+CATEluCommandHdr.CATEluPrjMngtHdr.Help="Manage a project of resources";
+CATEluCommandHdr.CATEluPrjMngtHdr.ShortHelp="Project Management";
+CATEluCommandHdr.CATEluPrjMngtHdr.LongHelp="Manage a project of resources";
+
+CATEluCommandHdr.CATEluPRMCheckerHdr.Title="Validation...";
+CATEluCommandHdr.CATEluPRMCheckerHdr.Help="Validate Resources in Project Resources XML";
+CATEluCommandHdr.CATEluPRMCheckerHdr.ShortHelp="Project Management Validation";
+CATEluCommandHdr.CATEluPRMCheckerHdr.LongHelp="Validate Resouces in Project Resources XML";
+
+CATEluCommandHdr.CATEluATSTextPlaceHdr.Title="Place Text Template";
+CATEluCommandHdr.CATEluATSTextPlaceHdr.Help="Place a Text Template on an object";
+CATEluCommandHdr.CATEluATSTextPlaceHdr.ShortHelp="Place Text Template";
+CATEluCommandHdr.CATEluATSTextPlaceHdr.LongHelp="Place a Text Template on an object.";
+
+//CATEluCommandHdr.CATEluRenameIDHdr.Title="Rename ID";
+//CATEluCommandHdr.CATEluRenameIDHdr.Help="Rename a schematic object ID";
+//CATEluCommandHdr.CATEluRenameIDHdr.ShortHelp="Rename ID";
+//CATEluCommandHdr.CATEluRenameIDHdr.LongHelp="Rename a schematic object ID.";
+
+CATEluCommandHdr.CATEluPartSelectionHdr.Title="Part Selection";
+CATEluCommandHdr.CATEluPartSelectionHdr.Help="Select a part number to be associated to the schematic object";
+CATEluCommandHdr.CATEluPartSelectionHdr.ShortHelp="Part Selection";
+CATEluCommandHdr.CATEluPartSelectionHdr.LongHelp="Select a part number to be associated to the schematic object.";
+
+CATEluCommandHdr.CATEluNetworkAnalHdr.Title="Networks";
+CATEluCommandHdr.CATEluNetworkAnalHdr.Help="Gets networks or paths of connected objects";
+CATEluCommandHdr.CATEluNetworkAnalHdr.ShortHelp="Networks";
+CATEluCommandHdr.CATEluNetworkAnalHdr.LongHelp="Gets networks or paths of connected objects.";
+
+CATEluCommandHdr.CATEluRelatedObjectsHdr.Title="Related Objects";
+CATEluCommandHdr.CATEluRelatedObjectsHdr.Help="Shows the objects linked to the selected object";
+CATEluCommandHdr.CATEluRelatedObjectsHdr.ShortHelp="Related Objects";
+CATEluCommandHdr.CATEluRelatedObjectsHdr.LongHelp="Shows the objects linked to the selected object";
+
+
+//------------------
+// Reporting command
+//------------------
+CATEluCommandHdr.CATEluReportDefHdr.Title="Report Definition";
+CATEluCommandHdr.CATEluReportDefHdr.Help="Define a report format";
+CATEluCommandHdr.CATEluReportDefHdr.ShortHelp="Report Definition";
+CATEluCommandHdr.CATEluReportDefHdr.LongHelp="Define a report format";
+
+CATEluCommandHdr.CATEluReportGenHdr.Title="Report Generation";
+CATEluCommandHdr.CATEluReportGenHdr.Help="Generate a report format";
+CATEluCommandHdr.CATEluReportGenHdr.ShortHelp="Report Generation";
+CATEluCommandHdr.CATEluReportGenHdr.LongHelp="Generate a report format";
+
+CATEluCommandHdr.CATEluExportQueryHdr.Title="Export Queries...";
+CATEluCommandHdr.CATEluExportQueryHdr.Help="Export queries to files";
+CATEluCommandHdr.CATEluExportQueryHdr.ShortHelp="Export Queries";
+CATEluCommandHdr.CATEluExportQueryHdr.LongHelp="Export queries to files.";
+
+CATEluCommandHdr.CATEluDataExportHdr.Title="Export Data...";
+CATEluCommandHdr.CATEluDataExportHdr.Help="Export Schematic data";
+CATEluCommandHdr.CATEluDataExportHdr.ShortHelp="Export Data";
+CATEluCommandHdr.CATEluDataExportHdr.LongHelp="Export Schematic data including objects, attributes, and relationships";
+
+
+//------------------------------------------------------------------------------
+// Insert Existing View Command
+//------------------------------------------------------------------------------
+CATEluCommandHdr.CATEluInsertViewHdr.Title="Existing View";
+CATEluCommandHdr.CATEluInsertViewHdr.Help="Insert an existing drafting view into a schematic diagram.";
+CATEluCommandHdr.CATEluInsertViewHdr.ShortHelp="Insert Existing View";
+CATEluCommandHdr.CATEluInsertViewHdr.LongHelp="Intended to insert an intelligent drafting dropoff view (with extracted zones) into a schematic document.";
+
+//------------------------------------------------------------------------------
+// Drafting Text Update Command
+//------------------------------------------------------------------------------
+CATEluCommandHdr.CATEluTextUpdateHdr.Title="Text Update" ;
+CATEluCommandHdr.CATEluTextUpdateHdr.ShortHelp="Text Update";
+CATEluCommandHdr.CATEluTextUpdateHdr.Help="Forces the update of the text in the main view of the current sheet";
+CATEluCommandHdr.CATEluTextUpdateHdr.LongHelp=
+"Forces the update of the text in the main view of the current sheet.";
+
+//------------------------------------------------------------------------------
+// Schematic Update Selection Command
+//------------------------------------------------------------------------------
+CATEluCommandHdr.CATEluSelectiveUpdateHdr.Title="Update Selection";
+CATEluCommandHdr.CATEluSelectiveUpdateHdr.ShortHelp="Update Selection";
+CATEluCommandHdr.CATEluSelectiveUpdateHdr.Help="Updates Selection";
+CATEluCommandHdr.CATEluSelectiveUpdateHdr.LongHelp =
+"Update Selection
+Updates the selection in a drawing, a sheet or a view.";
+
+//------------------------------------------------------------------------------
+// Route Fix Command
+//------------------------------------------------------------------------------
+CATEluCommandHdr.CATEluRouteFixHdr.Title="Lock shape";
+CATEluCommandHdr.CATEluRouteFixHdr.ShortHelp="Lock basic shape of route";
+CATEluCommandHdr.CATEluRouteFixHdr.Help="Maintains the basic shape of the route so that only the segment closest to the route extremity can be reshaped";
+CATEluCommandHdr.CATEluRouteFixHdr.LongHelp =
+"Maintains the basic shape of the route so that only the segment closest to the route extremity can be reshaped.";
+
+//------------------------------------------------------------------------------
+// Route Unfix Command
+//------------------------------------------------------------------------------
+CATEluCommandHdr.CATEluRouteUnfixHdr.Title="Unlock shape";
+CATEluCommandHdr.CATEluRouteUnfixHdr.ShortHelp="Unlock basic shape of route";
+CATEluCommandHdr.CATEluRouteUnfixHdr.Help="Unlocks the route shape so that there is no restriction on how the route is reshaped";
+CATEluCommandHdr.CATEluRouteUnfixHdr.LongHelp =
+"Unlocks the route shape so that there is no restriction on how the route is reshaped.";
+//------------------------------------------------------------------------
+// Replace Cable Command
+//------------------------------------------------------------------------
+CATEluCommandHdr.CATEluReplaceCableHdr.Title="Replace Cable Reference";
+CATEluCommandHdr.CATEluReplaceCableHdr.Help="Replace Cable Reference";
+CATEluCommandHdr.CATEluReplaceCableHdr.ShortHelp="Replace Cable Reference";
+CATEluCommandHdr.CATEluReplaceCableHdr.LongHelp="Replace Cable Reference";
+//Reset Color
+CATEluCommandHdr.CATEluResetColorHdr.Title="Reset Color";
+CATEluCommandHdr.CATEluResetColorHdr.Help="Reset a schematic object color";
+CATEluCommandHdr.CATEluResetColorHdr.ShortHelp="Reset Color";
+CATEluCommandHdr.CATEluResetColorHdr.LongHelp="Reset a schematic object color.";
+
+

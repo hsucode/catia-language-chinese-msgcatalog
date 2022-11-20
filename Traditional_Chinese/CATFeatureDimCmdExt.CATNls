@@ -1,0 +1,60 @@
+//=====================================================================================
+//                                     CNEXT - CXR10
+//                          COPYRIGHT DASSAULT SYSTEMES 2002
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATFeatureDimCmdExt
+// LOCATION    :    DraftingIntCommands
+// AUTHOR      :    FLR
+// BUT         :    Feature dimensioning command
+// DATE        :    05/17/02
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//     01  		    lgk 25.06.2002 Revision
+//=====================================================================================
+
+//******************************************************************************
+// Command
+//******************************************************************************
+CATFeatureDimCmdExt.UndoTitle="建立技術特徵尺寸";
+
+//******************************************************************************
+// States
+//******************************************************************************
+CATFeatureDimCmdExt.MessageBeforeFirstSelection=
+"選擇技術特徵.";
+
+CATFeatureDimCmdExt.MessageAfterFirstSelection=
+"選擇其它技術特徵, 選擇對齊的尺寸, 或任意按一下來退出.";
+
+//=============================================================================
+// Switch
+//=============================================================================
+CATFeatureDimCmdExt.ModeAgentResource.Multi.Title="多重內部技術特徵尺寸";
+CATFeatureDimCmdExt.ModeAgentResource.Multi.ShortHelp="多重內部技術特徵尺寸";
+CATFeatureDimCmdExt.ModeAgentResource.Multi.Help="建立多重內部技術特徵尺寸";
+CATFeatureDimCmdExt.ModeAgentResource.Multi.LongHelp =
+"多重內部技術特徵尺寸
+建立多重內部技術特徵尺寸";
+
+CATFeatureDimCmdExt.ModeAgentResource.Chain.Title="鏈結技術特徵尺寸";
+CATFeatureDimCmdExt.ModeAgentResource.Chain.ShortHelp="鏈結技術特徵尺寸";
+CATFeatureDimCmdExt.ModeAgentResource.Chain.Help="建立鏈結技術特徵尺寸";
+CATFeatureDimCmdExt.ModeAgentResource.Chain.LongHelp =
+"鏈結技術特徵尺寸
+建立鏈結技術特徵尺寸";
+
+CATFeatureDimCmdExt.CheckAgentRessource.Check.Title = "顯示或隱藏技術特徵尺寸對話框";
+CATFeatureDimCmdExt.CheckAgentRessource.Check.ShortHelp = "顯示或隱藏技術特徵尺寸對話框";
+CATFeatureDimCmdExt.CheckAgentRessource.Check.Help =
+"顯示或隱藏技術特徵尺寸對話框";
+CATFeatureDimCmdExt.CheckAgentRessource.Check.LongHelp=
+"顯示或隱藏技術特徵尺寸對話框
+顯示或隱藏技術特徵尺寸對話框.";
+
+
+

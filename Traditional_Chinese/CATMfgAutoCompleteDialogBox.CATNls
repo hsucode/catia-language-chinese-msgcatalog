@@ -1,0 +1,104 @@
+title = "順接路徑";
+
+Selection = "選擇";
+
+Reset = "重設";
+SelectAll = "選擇全部";
+
+NoSel = "未選擇";
+AllProg = "為所有程式產生順接路徑";
+
+operation = " 工法";
+program = " 程式";
+
+SelectionFrame.SelectionEditor.ShortHelp = "選擇程式";
+SelectionFrame.SelectionEditor.LongHelp = "在 PPR 歷程樹上按一下來選擇程式";
+SelectionFrame.ResetButton.ShortHelp = "重設選擇";
+SelectionFrame.ResetButton.LongHelp = "重設所有選擇程式";
+SelectionFrame.SelectAllButton.ShortHelp = "選擇全部程式";
+SelectionFrame.SelectAllButton.LongHelp = "在 PPR 歷程樹上選擇全部程式";
+
+PriorityOrderFrame.HeaderFrame.Global.Title                     = "優先排序"; 
+PriorityOrderFrame.IconAndOptionsFrame.OptionsFrame.ToolChange.Title          = "刀具更改";    
+//PriorityOrderFrame.IconAndOptionsFrame.OptionsFrame.ToolChange.ShortHelp      = "刀具更改優先";    
+PriorityOrderFrame.IconAndOptionsFrame.OptionsFrame.ToolChange.LongHelp       = "刀具更改優先 \n 刀具更改依附在刀具更換後的順接路徑內";
+PriorityOrderFrame.IconAndOptionsFrame.OptionsFrame.MachineRotation.Title     = "機具旋轉";    
+PriorityOrderFrame.IconAndOptionsFrame.OptionsFrame.MachineRotation.ShortHelp = "機具旋轉優先";    
+PriorityOrderFrame.IconAndOptionsFrame.OptionsFrame.MachineRotation.LongHelp  = "機具旋轉優先 \n 機具旋轉依附在刀具更換後的順接路徑內";
+
+MachineRotationCreationOptionsFrame.HeaderFrame.Global.Title    = "機具旋轉建立選項";
+
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.FirstAxisFrame.Title = "第一軸";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.FirstAxisFrame.FirstAxisLabel.Title = "第一軸   :";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.FirstAxisFrame.CLW.Title = "CLW";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.FirstAxisFrame.CLW.ShortHelp = "機具旋轉方向可行性";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.FirstAxisFrame.CLW.LongHelp = "機具旋轉順時針方向可行性";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.FirstAxisFrame.CCLW.Title = "CCLW";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.FirstAxisFrame.CCLW.ShortHelp = "機具旋轉方向可行性";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.FirstAxisFrame.CCLW.LongHelp = "機具旋轉逆時針方向可行性";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.FirstAxisFrame.Shortest.Title = "最短";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.FirstAxisFrame.Shortest.ShortHelp = "機具旋轉方向可行性";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.FirstAxisFrame.Shortest.LongHelp = "自動計算方向";
+
+
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.SecondAxisFrame.Title = "第二軸";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.SecondAxisFrame.SecondAxisLabel.Title = "第二軸  :";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.SecondAxisFrame.CLW.Title = "CLW";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.SecondAxisFrame.CLW.ShortHelp = "機具旋轉方向可行性";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.SecondAxisFrame.CLW.LongHelp = "機具旋轉順時針方向可行性";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.SecondAxisFrame.CCLW.Title = "CCLW";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.SecondAxisFrame.CCLW.ShortHelp = "機具旋轉方向可行性";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.SecondAxisFrame.CCLW.LongHelp = "機具旋轉逆時針方向可行性";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.SecondAxisFrame.Shortest.Title = "最短";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.SecondAxisFrame.Shortest.ShortHelp = "機具旋轉方向可行性";
+MachineRotationCreationOptionsFrame.IconAndOptionsFrame.OptionsFrame.SecondAxisFrame.Shortest.LongHelp = "自動計算方向";
+
+RotableCreation.HeaderFrame.Global.Title ="建立機具旋轉";
+RotableCreation.IconAndOptionsFrame.OptionsFrame.RotableCreationEnable.Title ="床檯";
+//RotableCreation.IconAndOptionsFrame.OptionsFrame.RotableCreationEnable.ShortHelp = "啟動建立旋轉";
+RotableCreation.IconAndOptionsFrame.OptionsFrame.RotableCreationEnable.LongHelp = "定義包含旋轉床檯順接路徑的選項"; 
+
+RotableCreation.IconAndOptionsFrame.OptionsFrame.RotheadCreationEnable.Title = "擺頭";
+//RotableCreation.IconAndOptionsFrame.OptionsFrame.RotheadCreationEnable.ShortHelp = "啟動建立擺頭";
+RotableCreation.IconAndOptionsFrame.OptionsFrame.RotheadCreationEnable.LongHelp = "定義包含擺頭順接路徑的選項"; 
+
+TransitionPathCreation.HeaderFrame.Global.Title = "順接路徑建立範圍";
+TransitionPathCreation.IconAndOptionsFrame.OptionsFrame.ToMachiningOperation.Title = "至加工工法";
+//TransitionPathCreation.IconAndOptionsFrame.OptionsFrame.ToMachiningOperation.ShortHelp = "定義順接路徑建立範圍選項"; 
+TransitionPathCreation.IconAndOptionsFrame.OptionsFrame.ToMachiningOperation.LongHelp = "在每一個程式工法前的順接路徑. \n 如工法前有加工軸, \n 相關工法的順接路徑將會加在加工軸之前.";
+TransitionPathCreation.IconAndOptionsFrame.OptionsFrame.ToToolChange.Title = "至刀具更換";
+TransitionPathCreation.IconAndOptionsFrame.OptionsFrame.ToToolChange.ShortHelp = "定義標準順接路徑建立範圍選項";
+TransitionPathCreation.IconAndOptionsFrame.OptionsFrame.ToToolChange.LongHelp = "順接路徑新增至每個刀具更換之前";
+TransitionPathCreation.IconAndOptionsFrame.OptionsFrame.ToMachineRotation.Title = "至機具旋轉";
+//TransitionPathCreation.IconAndOptionsFrame.OptionsFrame.ToMachineRotation.ShortHelp = "定義標準順接路徑建立範圍選項";
+TransitionPathCreation.IconAndOptionsFrame.OptionsFrame.ToMachineRotation.LongHelp = "標準順接路徑建立在機具旋轉之前(包含之前定義的, 如手動建立的) \n 和目前以自動完成建立的. 在第一個情形下, 將建立的順接路徑, 在第二個情形下,\n 將新增至已存順接路徑內.";
+
+RetractApproachMode.HeaderFrame.Global.Title = "進退刀動作";
+RetractApproachMode.IconAndOptionsFrame.OptionsFrame.PerpendicularTransitionPlane.Title = "垂直順接平面";
+//RetractApproachMode.IconAndOptionsFrame.OptionsFrame.PerpendicularTransitionPlane.ShortHelp = "定義進退刀模式選項";
+RetractApproachMode.IconAndOptionsFrame.OptionsFrame.PerpendicularTransitionPlane.LongHelp = "定義進退刀模式動作";
+RetractApproachMode.IconAndOptionsFrame.OptionsFrame.AlongToolAxisOfOperation.Title = "沿工法刀軸";
+//RetractApproachMode.IconAndOptionsFrame.OptionsFrame.AlongToolAxisOfOperation.ShortHelp = "定義進退刀模式選項";
+RetractApproachMode.IconAndOptionsFrame.OptionsFrame.AlongToolAxisOfOperation.LongHelp = "定義進退刀模式動作";
+
+NoTransitionPlane.HeaderFrame.Global.Title = "如無順接平面"; 
+NoTransitionPlane.IconAndOptionsFrame.OptionsFrame.ComputeAxialRadialMode.Title = "計算軸向和徑向移動"; 
+//NoTransitionPlane.IconAndOptionsFrame.OptionsFrame.ComputeAxialRadialMode.ShortHelp = "只有在未定義順接平面時的方式選項."; 
+NoTransitionPlane.IconAndOptionsFrame.OptionsFrame.ComputeAxialRadialMode.LongHelp = "只有在未定義順接平面時的方式選項."; 
+
+ForceTraverseMotionOnTop.HeaderFrame.Global.Title = "上端的橫向移動"; 
+ForceTraverseMotionOnTop.IconAndOptionsFrame.OptionsFrame.TraverseMotionOnTop.Title = "在盒的上部平面強制移動"; 
+// ForceTraverseMotionOnTop.IconAndOptionsFrame.OptionsFrame.TraverseMotionOnTop.ShortHelp = "在盒的上部平面強制移動"; 
+ForceTraverseMotionOnTop.IconAndOptionsFrame.OptionsFrame.TraverseMotionOnTop.LongHelp = "在盒的上部平面強制移動"; 
+
+AfterLastOperation.HeaderFrame.Global.Title = "在程式結束..."; 
+AfterLastOperation.IconAndOptionsFrame.OptionsFrame.ReturnToMachineHomePosition.Title = "返回至加工原點位置"; 
+// AfterLastOperation.IconAndOptionsFrame.OptionsFrame.ReturnToMachineHomePosition.ShortHelp = "An additional transition path is generated after the last machining operation to return to the machine home position."; 
+AfterLastOperation.IconAndOptionsFrame.OptionsFrame.ReturnToMachineHomePosition.LongHelp = "An additional transition path is generated after the last machining operation to return to the machine home position."; 
+
+CopyTracutFound1  = "無法產生順接路徑";
+CopyTracutFound2  = "在 COPY 動作之前";
+OldMachine1       = "NC 不是一般機具";
+OldMachine2       = "只能產生機具旋轉";
+NoProblemDetected = "未偵測到問題";
+NoProgramDetected = "未選擇程式";

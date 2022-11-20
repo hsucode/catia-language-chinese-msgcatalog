@@ -1,0 +1,46 @@
+// COPYRIGHT DASSAULT SYSTEMES  2004
+//====================================================================
+//
+// CATDlgDialog resource file
+// CATSacUpdateImageDlg
+//
+//====================================================================
+//
+// Audit Trail:
+//--------------------------------------------------------------------
+//   Author     : Edward J. Hersh (ehh)
+//   Date       : August, 2004
+//   Chg id     :
+//   Chg nature :
+//--------------------------------------------------------------------
+//   Modified   :
+//   Date       :
+//   Chg id     :
+//   Chg nature :
+//====================================================================
+//
+Title = "詢問或更新圖像";
+ID.Title = "名稱";
+Status.Title = "更新情形";
+RefDoc.Title = "主要文件//發行名稱";
+ImageListFrame.ImageMultiList.ShortHelp="目前文件的圖像清單和它們的更新情形";
+ImageListFrame.ImageMultiList.LongHelp="List of images in the current document, their update statuses, 
+and their master document names.  Possible update statuses:
+   
+    Up to date: image object is up to date with its master
+    Out of date: the image object attribute values or line ID membership differs from its master
+    Master object not found: the master object was not found because it has been renamed or deleted
+    Incompatible master object: the master object has been replaced and the master and image no longer share the same reference object
+    Master document not found: the document containing the master object was not found in the session"; 
+ReframeChkB.Title = "選擇顯示置中";
+UpdateSelectionPushBtn.Title = "更新選擇";
+UpdateSelectionPushBtn.ShortHelp = "更新目前選擇";
+UpdateSelectionPushBtn.LongHelp = "Update only the currently selected image.  (Only one selection at a time is permitted).";
+UpdateAllPushBtn.Title = "更新所有舊的";
+UpdateAllPushBtn.ShortHelp = "更新所有舊的圖像";
+UpdateAllPushBtn.LongHelp = "Update only those images in the list that are out of date.";
+UpdateStatusUpToDate = "最新的";
+UpdateStatusOutOfDate = "舊的";
+UpdateStatusMasterDocNotFound = "未找到主要文件";
+UpdateStatusMasterObjNotFound = "未找到主要物件";
+UpdateStatusIncompatibleMaster = "不一致主要物件";

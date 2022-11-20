@@ -1,0 +1,182 @@
+// COPYRIGHT DASSAULT SYSTEMES 2000
+//===========================================================================
+//
+// CATSamMaterialFrame (English)
+//
+//===========================================================================
+Analysis = "分析";
+
+analysisFrame.Title = "結構的特性";
+
+SAMYoungModulus.EnglobingFrame.IntermediateFrame.Label.Title= "楊氏模數";
+SAMYoungModulus.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的楊氏模數";
+SAMYoungModulus.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp =
+"描述材料勁度的楊氏模數";
+
+SAMPoissonRatio.EnglobingFrame.IntermediateFrame.Label.Title = "包松比";
+SAMPoissonRatio.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的包松比";
+SAMPoissonRatio.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp =
+"材料的包松比
+( 機械的擴張性 , 值介於 0 和 0.5之間 )";
+
+SAMDensity.EnglobingFrame.IntermediateFrame.Label.Title = "密度";
+SAMDensity.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的密度";
+SAMDensity.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp =
+"材料的密度( 用作形態計算)";
+
+SAMThermalExpansion.EnglobingFrame.IntermediateFrame.Label.Title = "熱擴張";
+SAMThermalExpansion.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的熱擴張";
+SAMThermalExpansion.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp =
+"材料的熱擴張 (熱擴張影響 ) ";
+
+SAMShearModulus.EnglobingFrame.IntermediateFrame.Label.Title = "降伏強度";
+SAMShearModulus.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的降伏強度";
+SAMShearModulus.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp =
+"材料的降伏強度. 
+與最大 VON MISES 值比較以查看是否元件失敗";
+
+// SAMOrthotropic
+SAMYoungModulus_11.EnglobingFrame.IntermediateFrame.Label.Title = "縱向楊氏模數";
+SAMYoungModulus_11.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的縱向楊氏模數";
+SAMYoungModulus_11.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "縱向楊氏模數";
+
+SAMYoungModulus_22.EnglobingFrame.IntermediateFrame.Label.Title = "橫向楊氏模數";
+SAMYoungModulus_22.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的橫向楊氏模數";
+SAMYoungModulus_22.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp= "橫向楊氏模數";
+
+SAMPoissonRatio_12.EnglobingFrame.IntermediateFrame.Label.Title = "XY 平面的包松比";
+SAMPoissonRatio_12.EnglobingFrame.IntermediateFrame.Label.Value.Help = "XY 平面的材料包松比";
+SAMPoissonRatio_12.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "XY 平面的包松比";
+
+SAMPoissonRatio_13.EnglobingFrame.IntermediateFrame.Label.Title = "XZ 平面的包松比";
+SAMPoissonRatio_13.EnglobingFrame.IntermediateFrame.Label.Value.Help = " XZ 平面的材料包松比";
+SAMPoissonRatio_13.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = " XZ 平面的包松比";
+
+SAMPoissonRatio_23.EnglobingFrame.IntermediateFrame.Label.Title = " YZ 平面的包松比";
+SAMPoissonRatio_23.EnglobingFrame.IntermediateFrame.Label.Value.Help = " YZ 平面的材料包松比";
+SAMPoissonRatio_23.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = " YZ 平面的包松比";
+
+SAMShearModulus_12.EnglobingFrame.IntermediateFrame.Label.Title = " XY 平面的剪力模數";
+SAMShearModulus_12.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的 XY 平面的剪力模數";
+SAMShearModulus_12.EnglobingFrame.IntermediateFrame.Label.Value.longHelp = " XY 平面的剪力模數";
+
+SAMShearModulus_1Z.EnglobingFrame.IntermediateFrame.Label.Title = " XZ 平面的剪力模數";
+SAMShearModulus_1Z.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的 XZ 平面的剪力模數";
+SAMShearModulus_1Z.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = " XZ 平面的剪力模數";
+
+SAMShearModulus_2Z.EnglobingFrame.IntermediateFrame.Label.Title = " YZ 平面的剪力模數";
+SAMShearModulus_2Z.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的 YZ 平面的剪力模數";
+SAMShearModulus_2Z.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = " YZ 平面的剪力模數";
+
+SAMShearModulus_13.EnglobingFrame.IntermediateFrame.Label.Title = " XZ 平面的剪力模數";
+SAMShearModulus_13.EnglobingFrame.IntermediateFrame.Label.Value.Help= "材料的 XZ 平面的剪力模數";
+SAMShearModulus_13.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = " XZ 平面的剪力模數";
+
+SAMShearModulus_23.EnglobingFrame.IntermediateFrame.Label.Title = " YZ 平面的剪力模數";
+SAMShearModulus_23.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的 YZ 平面的剪力模數";
+SAMShearModulus_23.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = " YZ 平面的剪力模數";
+
+SAMTensileStressLimit_X.EnglobingFrame.IntermediateFrame.Label.Title = "縱向拉應力";
+SAMTensileStressLimit_X.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的縱向拉應力";
+SAMTensileStressLimit_X.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "縱向拉應力";
+
+SAMCompressiveStressLimit_X.EnglobingFrame.IntermediateFrame.Label.Title = "縱向壓應力";
+SAMCompressiveStressLimit_X.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的縱向壓應力";
+SAMCompressiveStressLimit_X.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "縱向壓應力";
+
+SAMTensileStressLimit_Y.EnglobingFrame.IntermediateFrame.Label.Title = "橫向拉應力";
+SAMTensileStressLimit_Y.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的橫向拉應力";
+SAMTensileStressLimit_Y.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "橫向拉應力";
+
+SAMCompressiveStressLimit_Y.EnglobingFrame.IntermediateFrame.Label.Title = "橫向壓應力";
+SAMCompressiveStressLimit_Y.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的橫向壓應力";
+SAMCompressiveStressLimit_Y.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "橫向壓應力";
+
+SAMTensileStrainLimit_X.EnglobingFrame.IntermediateFrame.Label.Title = "縱向張力應變";
+SAMTensileStrainLimit_X.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的縱向張力應變";
+SAMTensileStrainLimit_X.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "縱向張力應變";
+
+SAMCompressiveStrainLimit_X.EnglobingFrame.IntermediateFrame.Label.Title = "縱向壓應變";
+SAMCompressiveStrainLimit_X.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的縱向壓應變";
+SAMCompressiveStrainLimit_X.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "縱向壓應變";
+
+SAMTensileStrainLimit_Y.EnglobingFrame.IntermediateFrame.Label.Title = "橫向張力應變";
+SAMTensileStrainLimit_Y.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的橫向張力應變";
+SAMTensileStrainLimit_Y.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "橫向張力應變";
+
+SAMCompressiveStrainLimit_Y.EnglobingFrame.IntermediateFrame.Label.Title = "橫向壓應變";
+SAMCompressiveStrainLimit_Y.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的橫向壓應變";
+SAMCompressiveStrainLimit_Y.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "橫向壓應變";
+
+SAMThermalExpansion_X.EnglobingFrame.IntermediateFrame.Label.Title ="縱向熱擴張";
+SAMThermalExpansion_X.EnglobingFrame.IntermediateFrame.Label.Value.Help ="材料的縱向熱擴張";
+SAMThermalExpansion_X.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp ="縱向熱擴張";
+
+SAMThermalExpansion_Y.EnglobingFrame.IntermediateFrame.Label.Title = "橫向熱擴張";
+SAMThermalExpansion_Y.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的橫向熱擴張";
+SAMThermalExpansion_Y.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "橫向熱擴張";
+
+SAMThermalExpansion_33.EnglobingFrame.IntermediateFrame.Label.Title = "垂直向熱擴張";
+SAMThermalExpansion_33.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的垂直向熱擴張";
+SAMThermalExpansion_33.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "垂直向熱擴張";
+
+analysisFrame.stressFrame.Title = "應力限制";
+analysisFrame.strainFrame.Title = "應變限制";
+// combo de selection de type de materaiux
+MaterialType.Help="定義材料種類";
+MaterialType.MaterialTypeLabel.Title="材料";
+MaterialType.MaterialTypeCombo.SAMIsotropicMaterial.Title="等向材料";
+MaterialType.MaterialTypeCombo.SAMOrthotropicMaterial.Title="平面 Orthotropic 材料";
+MaterialType.MaterialTypeCombo.SAMFiberMaterial.Title="Fiber 材料";
+MaterialType.MaterialTypeCombo.SAMHoneyCombMaterial.Title="HoneyComb 材料";
+MaterialType.MaterialTypeCombo.SAMOrthotropic3DMaterial.Title="立體 Orthotropic 材料";
+MaterialType.MaterialTypeCombo.SAMAnisotropicMaterial.Title="Anisotropic 材料";
+
+
+// Material HONEYCOMB
+SAMYoungModulus_33.EnglobingFrame.IntermediateFrame.Label.Title ="垂直向楊式系數";
+SAMYoungModulus_33.EnglobingFrame.IntermediateFrame.Label.Value.Help ="材料的垂直向楊式系數";
+SAMYoungModulus_33.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp="垂直向楊式系數";
+
+SAMShearStressLimit_13.EnglobingFrame.IntermediateFrame.Label.Title = " XZ 平面的剪應力限制";
+SAMShearStressLimit_13.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的 XZ 平面剪應力限制";
+SAMShearStressLimit_13.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = " XZ 平面的剪應力限制";
+
+SAMShearStressLimit_23.EnglobingFrame.IntermediateFrame.Label.Title = " YZ 平面的剪應力限制";
+SAMShearStressLimit_23.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的 YZ 平面剪應力限制";
+SAMShearStressLimit_23.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = " YZ 平面的剪應力限制";
+
+// Material FIBER
+SAMShearStressLimit_12.EnglobingFrame.IntermediateFrame.Label.Title = " XY 平面的剪應力限制";
+SAMShearStressLimit_12.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的 XY 平面的剪應力限制";
+SAMShearStressLimit_12.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = " XY 平面的剪應力限制";
+
+// Material ANISOTROPE
+SAMThermalExpansion_Z.EnglobingFrame.IntermediateFrame.Label.Title = "垂直向熱擴張";
+SAMThermalExpansion_Z.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的垂直向熱擴張";
+SAMThermalExpansion_Z.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "垂直向熱擴張";
+
+SAMShearModulus_11.EnglobingFrame.IntermediateFrame.Label.Title = "縱向剪力模數";
+SAMShearModulus_11.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的縱向剪力模數";
+SAMShearModulus_11.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "縱向剪力模數";
+
+SAMShearModulus_22.EnglobingFrame.IntermediateFrame.Label.Title = "側向剪力模數";
+SAMShearModulus_22.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的側向剪力模數";
+SAMShearModulus_22.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "側向剪力模數";
+
+SAMShearModulus_33.EnglobingFrame.IntermediateFrame.Label.Title = "垂直向剪力模數";
+SAMShearModulus_33.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的垂直向剪力模數";
+SAMShearModulus_33.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "垂直向剪力模數";
+
+SAMTensileStressLimit.EnglobingFrame.IntermediateFrame.Label.Title = "張力應變";
+SAMTensileStressLimit.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的張力應變";
+SAMTensileStressLimit.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "張力應變";
+
+SAMCompressiveStressLimit.EnglobingFrame.IntermediateFrame.Label.Title = "壓應力";
+SAMCompressiveStressLimit.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的壓應力";
+SAMCompressiveStressLimit.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "壓應力";
+
+SAMShearStressLimit.EnglobingFrame.IntermediateFrame.Label.Title = "剪應力";
+SAMShearStressLimit.EnglobingFrame.IntermediateFrame.Label.Value.Help = "材料的剪應力";
+SAMShearStressLimit.EnglobingFrame.IntermediateFrame.Label.Value.LongHelp = "剪應力";
+

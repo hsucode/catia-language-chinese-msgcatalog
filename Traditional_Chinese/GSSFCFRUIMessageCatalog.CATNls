@@ -1,0 +1,66 @@
+
+// the message box title to be used by all messages
+MessageTitle	= "特徵辨認";
+MessageTitleUpdateFailed = "更新失敗";
+
+UnspecifiedError= "發生未預期錯誤. \n 請將詳細步驟向售商反映, 感謝您!";
+NoIsoSolid		= "文件中沒有單獨實體. \n 特徵辨認只可應用在單獨實體 \n 要獲取獨立實體 : 複製本體 -> 特別貼上 -> 如結果 ";
+InvalidIsoSolid	= "所選擇要做為特徵辨認的物體含有一個以上的 lump. \n 所選擇要做為特徵辨認的單獨實體只可含有一個 lump.";
+SetSolidAsIWO	= "工作中的物件不是單獨實體. \n 請在開始辨識前先設成為單獨實體.";
+WeirdTopologyError		= "請選擇屬於相同 lump 的實體.";
+AttemptToRerecognize	= "特徵辨識無法處理重新設定. \n 請只選取屬於單獨實體的物件.";
+VolumeDifference = "建立特徵時體積變化很大. \n 您或許想回復上一步驟.";
+AttemptToSelFaceFromSelFaceListToUptoFace  = "所選物件已定義.";
+AttemptToSelFaceFromUserPickedFaceListToUptoFace  = "The Selected Object is face picked by user.";
+FullyParmeterized = "輸入工作物件已完整定義. \n 且在目前文件中也沒有獨立實體";
+FullyParmeterizedButMoreThanOneIsolatedSolid = "所輸入的獨立實體已被完整參數化. \n 請選擇另一單獨實體來參數化."; 
+
+FeatureCreationERR_0001.Request			= "建立特徵失敗!";
+FeatureCreationERR_0001.Diagnostic = "無法建立 /p1 .";
+
+
+FeatureRecognitionFailure.Request			= "特徵辨識失敗!";
+FeatureRecognitionFailure.Diagnostic		= "/p1 /p2 /p3";
+
+TryBooleanRecognition = "\n 您可嚐試辨識為布林.";
+TryGrooveOrBooleanRecognition = "\n 您可嚐試辨識環槽為布林.";
+TryGrooveRecognition = "\n 您可嚐試辨識為環槽.";
+
+FeatureRecognitionCanceled = "特徵辨識取消. \n 無法辨識特徵.";
+FeatureCreationCanceled = "特徵辨識取消. \n 結果幾何元素與初始幾何元素不同, \n 且特徵內容必須手動排序";
+
+UnknownFeatureRecognitionFailed		= "所選的一組元件無法辨識為特徵.";
+ChamferRecognitionFailed			= "所選的一組元件無法辨識為倒角.";
+FilletRecognitionFailed				= "所選的一組元件無法辨識為圓角.";
+HoleRecognitionFailed				= "所選的一組元件無法辨識為孔.";
+PadRecognitionFailed				= "所選的一組元件無法辨識為凸塊.";
+PocketRecognitionFailed				= "所選的一組元件無法辨識為減重槽.";
+GrooveRecognitionFailed				= "所選的一組元件無法辨識為環槽.";
+ShaftRecognitionFailed				= "所選的一組元件無法辨識為軸.";
+DraftRecognitionFailed				= "所選的一組元件無法辨識為脫模.";
+BooleanRecognitionFailed			= "所選的一組元件無法辨識為布林.";
+AFRFailed							= "沒有自動可辨識特徵.\n";
+TryManualRecognition				= "您可嚐試手動辨識.";
+
+DVErrorERR_0003 = "發生未預期狀況. \n 請將詳細步驟向售商反映, 感謝您!";
+
+OneFeatureDeactivated = "無法成功建立一特徵, 已被關閉. \n 您可以編輯內容來修正它.";
+SomeFeaturesDeactivated = "無法成功建立 /p1 的特徵, 已被關閉. \n 您可以編輯內容來修正它.";
+
+UpdateERR_0001 = "更新失敗! \n\n 部份面和邊線無法使用. \n 請更新零件並編輯不正確的特徵.";
+
+RFFailed				= "\n 因為無法移除部份修剪面.";
+BOFailed				= "\n 因為部份布林動作失敗.";
+RFAndBOFailed			= "\n 因為無法移除部份修剪面, 且部份布林動作失敗.";
+VCFailed				= "\n 因為體積檢查失敗";
+
+CreateRecognizedFeatureAfterCancel	= "您要建立目前的特徵辨識嗎 ?";
+AllFacesChainedInLFR	= "未控制鏈結! \n 本體鏈結的所有修剪面 : 移除鏈結修剪面中. \n 選擇適合的修剪面和鏈結選項";
+
+WorkOnlyOnActivePartDesignFeatures = "特徵辨識需要在工作物件中可啟動零件設計特徵. \n 請設定作動零件設計特徵為工作物件.";
+WorkOnlyOnValidPartDesignFeatures = "特徵辨識需要在工作物件中可有效化零件設計特徵. \n 請有效化作動零件設計特徵為工作物件.";
+
+
+
+
+

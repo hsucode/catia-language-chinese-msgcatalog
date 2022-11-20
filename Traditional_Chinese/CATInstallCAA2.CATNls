@@ -1,0 +1,394 @@
+//---------------------------------------------------------------------------
+//  DIALOGUE COMMON TO ALL WINDOWS
+//---------------------------------------------------------------------------
+
+BOK = "< 退回" ;
+BCancel = "下一個 >" ;
+BApply = "取消" ;
+
+CATInsErrWindow.Title = "錯誤";
+
+//---------------------------------------------------------------------------
+//  SETUP WINDOW 
+//---------------------------------------------------------------------------
+
+Setup.Title = " CAA /p1 /p2 設定";
+
+//---------------------------------------------------------------------------
+// ERRORS INIT
+//--------------------------------------------------------------------------
+ErrorSRCDIR = "錯誤: SRCDIR 未設定 \n";
+ErrorSTARTDIR = "錯誤: STARTDIR 未設定 \n";
+ErrHOME="錯誤: HOME 未設定 \n";
+NotRoot =  "您必須以系統管理員身份安裝 \n\ 請以下列指令來嚐試具有系統管理員權限 :\nsu - root \n 或  login root\n 然後再重新開始 \/start \n";
+NotAdministrator="Installation program requires administrator pivileges.";
+ErrProductLine ="錯誤: PRODUCT_LINE 未設定 \n";
+ErrMarketingVersion = "錯誤: MARKETING_VERSION 未設定 \n";
+ErrOSDS = "錯誤: OSDS 未設定 \n";
+ErrOpenLog ="警告: 無法開啟記錄檔 /p1 \n";
+ErrWndErrorWriteLog="警告: 無法寫入 /p1\n";
+ErrNoSpaceRootHome="在 /p1 中的空間不夠 - 您需要至少 /p2 Kb\n";	  
+
+//---------------------------------------------------------------------------
+//  WELCOME 
+//---------------------------------------------------------------------------
+
+WndWelcome.Title     = "CAA /p1 /p2  歡迎";
+Welcome.Label1.Title = "歡迎使用 CAA /p1 /p2 安裝程式. 此程式" ;
+Welcome.Label2.Title = "將會安裝 CAA /p1 /p2 在您的電腦." ;
+Welcome.Label2GASP.Title = "will install CAA /p1 /p2 with Service Pack /p3 on your computer." ;
+Welcome.Label3.Title = "\n";
+Welcome.Label4.Title = "按一下來取消安裝. 按一下下一步來繼續.";
+Welcome.Label5.Title = "\n";
+Welcome.Label6.Title = "/p1 (r) 版本5. (c) 達梭系統1994-2004. 版權所有.";
+Welcome.Label7.Title = "部份軟體版權屬於第三公司所有";
+Welcome.Label8.Title = "(請看文件中的 '特殊註記').";
+Welcome.Label9.Title = "\n";
+Welcome.Label10.Title = "\n";
+Welcome.Label11.Title = "警告: 此軟體是由軟體保護法所保護.";
+Welcome.Label12.Title = "軟體的部份或全部重製圴依國際相關法規保護,"; 
+Welcome.Label13.Title = "表示, 分配, 傳遞此軟體以任何形式";
+Welcome.Label14.Title = "及或任何媒體圴需依達梭系統公司允許";
+Welcome.Label15.Title = "或它的利益. 其它未授權的行為圴會觸犯相關法律";
+Welcome.Label16.Title = "損害或罪犯起訴.";
+CodeNotInstalled=   "There is no installed code for /p1 level\n";
+
+//------------------------------------------------------------------------
+//  TERMS AND CONDITIONS
+//-------------------------------------------------------------------------
+
+WndTermsAndConditions.Title     = "CAA /p1 /p2 LICENSED SOFTWARE TERMS AND CONDITIONS";
+TermsAndConditions.Label1.Title = "Please read carefully the following Licensed Software Terms and Conditions" ;
+TermsAndConditions.Label2.Title = "\n" ;
+TermsAndConditions.TermsAgreeLabel1.Title="Do you agree with all the terms of the above Licensed Software Terms and Conditions?";
+TermsAndConditions.TermsAgreeLabel0.Title="\n";
+TermsAndConditions.TermsAgreeLabel2.Title="\n";
+TermsAndConditions.BCancel = "I agree";
+TermsAndConditions.BApply = "I disagree";
+
+//---------------------------------------------------------------------------
+//  CODE LOCATION DIRECTORY
+//---------------------------------------------------------------------------
+
+WndCodeLocation.Title       = "CAA /p1 /p2  輸入資料位置";
+CodeLocation.Label1.Title   = "請輸入安裝 /p1 /p2 的目錄";
+CodeLocation.Label1GASP.Title   = "Enter the directory where code /p1 /p2 with Service Pack /p3 has been installed";
+CodeLocation.Label2.Title   = "\n";
+CodeLocation.Label3.Title   = "\n";
+CodeLocation.Label4.Title   = "\n";
+CodeLocation.Label5.Title   = "\n";
+CodeLocation.Label6.Title   = "\n";
+CodeLocation.Label7.Title   = "\n";
+CodeLocation.Frame.Title    = "資料位置";
+CodeLocation.Frame.BrowsePushButton.Title="瀏覽"; 
+
+
+//---------------------------------------------------------------------------
+//  CODE LOCATION   WINDOWS
+//---------------------------------------------------------------------------
+
+WndCodeLocationNT.Title       = "CAA /p1 /p2 Select Destination folder";
+CodeLocationNT.Label1.Title   = "Setup will install CAA /p1 /p2 in the folder  indicated below.";
+CodeLocationNT.Label1GASP.Title   = "Setup will install CAA /p1 /p2 with Service Pack /p3 in the folder  indicated below.";
+CodeLocationNT.Label2.Title   = "\n";
+CodeLocationNT.Label3.Title   = "To install to this folder , click Next.";
+CodeLocationNT.Label4.Title = "You may select another folder from the existing folder list";
+CodeLocationNT.Label5.Title   = "\n";
+CodeLocationNT.Label6.Title   = "\n";
+CodeLocationNT.Label7.Title   = "\n";
+CodeLocationNT.Frame.Title    = "Destination Folder";
+CodeLocationNT.ListFoldersFrame.Title    = "Existing installation folders";
+//---------------------------------------------------------------------------
+// ERRORS CODELOCATION
+//---------------------------------------------------------------------------
+ErrorCodeLocation="安裝在 /p1 的資料不是 /p2 等級 \n 請輸入安裝 /p2 等級的目錄 \n";
+ErrBadOSAIX = "It is forbidden to install CAA /p1-bit media onto /p2-bit installation\n";
+//---------------------------------------------------------------------------
+//  DESTINATION DIRECTORY
+//---------------------------------------------------------------------------
+
+WndDestination.Title       = "CAA /p1 /p2  選擇目的位置";
+Destination.Label1.Title   = "請輸入安裝 CAA /p1 /p2 的目錄";
+Destination.Label1GASP.Title   = "Enter the directory in which you want to install CAA /p1 /p2 with Service Pack /p3";
+Destination.Label2.Title   = "安裝在此軟體目錄, 請按下一步.";
+Destination.Label3.Title   = "\n";
+Destination.Label4.Title   = "\n";
+Destination.Label5.Title   = "\n";
+Destination.Label6.Title   = "您可按下取消來退出安裝 CAA /p1 /p2 .";
+Destination.Label7.Title   = "\n";
+Destination.Frame.Title    = "目的目錄"; 
+Destination.Frame.BrowsePushButton.Title="瀏覽";
+QtnWndCreateDirectory.Title = "確認建立目錄";
+QtnWndCreateDirectory.Text = "目錄 \n/p1\n 不存在.\n 您要建立它嗎 ?\n";
+
+//---------------------------------------------------------------------------
+//  ERROR MESSAGES: DESTINATION DIRECTORY  
+//---------------------------------------------------------------------------
+
+ErrWndCreateDir.Title = "錯誤";
+ErrWndCreateDir.Text = "建立目錄錯誤 :\n/p1\n/p2\n";
+ErrWndBadDir.Title   = "錯誤";
+ErrWndBadDir.Text    = "不正確的安裝目錄 \n";
+ErrWndEmptyDir.Title = "錯誤";
+ErrWndEmptyDir.Text = "/p1 必須是空的 \n";
+ErrWndFileAlreadyExist.Title = "錯誤";
+ErrWndFileAlreadyExist.Text = "無法建立目錄 /p1\n. 名稱已存在. \n";
+ErrWndCAA2NoPresent.Title = "錯誤";
+ErrWndCAA2NoPresent.Text ="檔案 /p1 未找到. 您未輸入正確目錄名稱或安裝軟體已損? \n.";
+ErrWndCAA2NoDir.Title ="錯誤";
+ErrWndCAA2NoDir.Text="目錄 /p1 未存在. 您未輸入正確目錄名稱. \n";
+ErrWndSyntaxDir.Title = "錯誤";
+ErrWndSyntaxDir.Text = "目錄名稱文法錯誤. \n 空格和 tab 鍵不允許. \n";
+ErrWndStatFile.Title = "錯誤";
+ErrWndStatFile.Text = "存取目錄統計資料有問題: \n/p1\n\n/p2\n";
+ErrWndAvailSpace.Title = "錯誤";
+ErrWndAvailSpace.Text = "計算可用空間失敗 :\n/p1\n/p2\n";
+ErrWndRequiredSpace.Title = "錯誤";
+ErrWndRequiredSpace.Text = "計算所需空間失敗 :\n/p1/p2\n";
+ErrWndGALevel.Title = "錯誤";
+ErrWndGALevel.Text = "您無法安裝 /p1 等級資料至 /p2 等級安裝. \n";
+ErrWndOS.Title = "錯誤";
+ErrWndOS.Text = "您無法安裝 /p1 系統資料至 /p2 系統資料. \n";
+
+
+//---------------------------------------------------------------------------
+//  INSTALLED CAA2 PRODUCTS
+//---------------------------------------------------------------------------
+
+WndInstallProduct.Title     = "安裝 CAA /p1 /p2   組立和/或產品";
+InstallProduct.Label1.Title = " CAA 組立和產品已安裝 "; 
+InstallProduct.Label2.Title = "在目錄 /p1\n.";
+InstallProduct.Label3.Title = "要安裝 CAA /p1 /p2 組立和產品, 請按下一步." ;
+InstallProduct.Label4.Title = "要選不同的安裝位置, 請按上一步." ;
+InstallProduct.Label5.Title = "您可按一下取消鍵來退出 CAA /p1 /p2 設定程式." ;
+InstallProduct.Label5GASP.Title = "You can choose not to install CAA /p1 /p2 with Service Pack /p3 by clicking Cancel to exit setup." ;
+WndMediaProduct.Title     = "CAA /p1 /p2 選擇軟體";
+MediaProduct.Label1.Title = "按一下來選擇您要安裝的 CAA 組立和產品";
+MediaProduct.Label2.Title = "在目錄 /p1.";
+MediaProduct.Label3.Title = "您可按一下取消鍵來退出 CAA /p1 /p2 設定程式." ;
+MediaProduct.Label3GASP.Title = "You can choose not to install CAA /p1 /p2 with Service Pack /p3 by clicking Cancel to exit setup.";
+MediaProduct.Label4.Title = "\n";
+MediaProduct.ChooseLabel.Title = "選擇從:" ;
+MediaProduct.ProductSwitch.Text = "產品" ;
+MediaProduct.ConfigSwitch.Text = "組態" ;
+MediaProduct.ListLabel.Title = "所選軟體:" ;
+MediaProduct.Frame.AvailableSizeLabel.Title = "可用空間" ;
+MediaProduct.Frame.RequiredSizeLabel.Title = "所需空間" ;
+MediaProduct.Frame.AvailableSizeValue.Title = " KB";
+MediaProduct.Frame.RequiredSizeValue.Title = " KB";
+
+
+
+
+
+//---------------------------------------------------------------------------
+//   ERROR MESSAGES: INSTALLED CAA2 PRODUCTS 
+//---------------------------------------------------------------------------
+
+ErrWndProductAllInstalled.Title = "錯誤";
+ErrWndProductAllInstalled.Text = "所有在 CD-ROM 上的 CAA 產品已安裝.\n";
+
+//---------------------------------------------------------------------------
+//  CHOOSE SETUP TYPE
+//---------------------------------------------------------------------------
+
+WndSetup_Type.Title     = "CAA /p1 /p2  設定形式";
+Setup_Type.Label1.Title = "\n";
+Setup_Type.Label2.Title = "請選擇您偏好的設定, 然後按下一步";
+Setup_Type.Label3.Title = "\n";
+Setup_Type.Label4.Title = "\n";
+Setup_Type.FrameSetupType.RBComplete.Title = "全部 - 所有軟體均會安裝";
+Setup_Type.FrameSetupType.RBCustom.Title   = "自訂   - 您可選擇要安裝的軟體";
+
+//---------------------------------------------------------------------------
+//   ERROR MESSAGES: SELECT SOFTWARE
+//---------------------------------------------------------------------------
+
+ErrWndProductNotSelect.Title = "錯誤";
+ErrWndProductNotSelect.Text = "至少須選擇一項產品. \n";
+ErrWndSizeToUnload.Title = "錯誤";
+ErrWndSizeToUnload.Text = " /p3 可用空間不足安裝所有軟體 \t : /p1 KB \n 所需 \t\t : /p2 KB\n";
+ErrWndEmptyMediaToc.Title = "錯誤";
+ErrWndEmptyMediaToc.Text = "光碟上所顯示的產品是空的.\n";
+
+//---------------------------------------------------------------------------
+//  RECAP
+//---------------------------------------------------------------------------
+
+WndResume.Title        = "CAA /p1 /p2  開始複製檔案";
+Resume.Label1.Title = "設定程式已收集足夠資訊可開始複製 CAA 檔案.";
+Resume.Label2.Title = "\n";
+Resume.Label3.Title = "如果您要重新檢視或更改任何設定, 請按 返回.";
+Resume.Label4.Title = "如您滿意目前設定, 請按 下一步 開始複製檔案.";
+Resume.Label5.Title = "\n";
+Resume.SettingLabel.Title = "目前設定";
+Resume.ProductName.Title = "CAA /p1 /p2";
+Resume.ProductNameGASP.Title = "CAA /p1 /p2 with Service Pack /p3";
+Resume.DestinationName.Title = "目的目錄";
+Resume.SpaceUsed.Title = "所需空間 : /p1 KB";
+Resume.SpaceAvail.Title ="可用空間 : /p1 KB";
+Resume.BCancel = "安裝";
+
+//---------------------------------------------------------------------------
+// COPY FILES 
+//---------------------------------------------------------------------------
+
+Transfer.Title      = "CAA /p1 /p2  設定";
+Transfer.Label1.Title  = "複製檔案中...";
+Transfer.Label2.Title  = "\n";
+Transfer.Label3.Title  = "\n";
+Transfer.Pourcent = "CAA /p1 /p2 Setup : /p3";
+Transfer.BCancel = "取消" ;
+QuestionExit.Title="Exit Setup";
+QuestionExit.Text="Do you want to quit the setup?\nclick Yes to quit.\nclick No to continue the installation.";
+
+//---------------------------------------------------------------------------
+//   ERROR MESSAGES: COPY FILES  
+//---------------------------------------------------------------------------
+
+ErrWndTransfer.Title = "錯誤";
+ErrWndTransfer.Text  = "複製檔案失敗. \n 請聯絡系統管理員. \n";
+ErrWndCheckCATIAIntegrity.Title = "錯誤";
+ErrWndCheckCATIAIntegrity.Text = "完整性檢查失敗. \n 完整資訊, 請參考 /p1\n";
+ErrWndEnvName.Title = "錯誤";
+ErrWndEnvName.Text = "檔案 /p1 未存在 \n";
+ErrWndEnvPathName.Title = "錯誤";
+ErrWndEnvPathName.Text = "開啟 /p1 檔案失敗 \n";
+ErrWndServicePack.Title = "警告";
+ErrWndServicePack.Text = "有些您安裝的分件不是正確的版本. \n 您必須重新安裝 Service Pack /p1\n";
+ErrWndNothingToUnload.Title = "錯誤";
+ErrWndNothingToUnload.Text = "無文件可複製...?\n";
+ErrWndInterruptButton.Title = "錯誤";
+ErrWndInterruptButton.Text = "";
+InformationWindow.ErrWndInterruptButton.Title = "程序中斷...\n";
+
+
+//---------------------------------------------------------------------------
+//  FINISH 
+//---------------------------------------------------------------------------
+
+WndFinish.Title        = "CAA /p1 /p2  安裝完成";
+Finish.LabelInterrupt1.Title = "安裝已被中斷.";
+Finish.LabelInterrupt2.Title = "\n";
+Finish.LabelInterrupt3.Title = "更多資訊, 請參考記錄檔 /p1";
+Finish.LabelInterrupt4.Title = "\n";
+Finish.LabelInterrupt5.Title = "\n";
+Finish.LabelTransferKO1.Title = "設定移轉失敗.";
+Finish.LabelTransferKO2.Title = "\n";
+Finish.LabelTransferKO3.Title = "更多資訊, 請參考記錄檔 /p1";
+Finish.LabelTransferKO4.Title = "\n";
+Finish.LabelTransferKO5.Title = "\n";
+Finish.LabelOKStart1.Title = "設定程式已完成安裝 CAA /p1 /p2 在您的電腦上.";
+Finish.LabelOKStart1GASP.Title = "Setup has finished installing CAA /p1 /p2 with Service Pack /p3 on your computer.";
+Finish.LabelOKStart2.Title = "\n";
+Finish.LabelOKStart3.Title = "\n";
+Finish.LabelOKStart4.Title = "\n";
+Finish.LabelOKStart5.Title = "\n";
+
+Finish.RunCheck.Title = "我想現在瀏覽 /p1 /p2 文件";
+Finish.BCancel = "完成";
+
+//---------------------------------------------------------------------------
+// CHANGECDROM 
+//---------------------------------------------------------------------------
+NotifyChangeCD.Title="CAA /p1 /p2  請輸入下一片 CD-ROM";
+NotifyChangeCD.MsgChange=" 請移除目前的 CD-ROM  且插入 CD-ROM 號碼 /p1\n";
+NotifyChangeCD.Error="CD-ROM 更換錯誤";
+NotifyChangeCD.ErrorChange="您沒有插入正確的 CD-ROM\n";
+
+//---------------------------------------------------------------------------
+//   ERROR MESSAGES: FINISH  
+//---------------------------------------------------------------------------
+
+ErrWndLaunch.Title   = "錯誤";
+ErrWndLaunch.Text    = "載入Netscape 錯誤 \n";
+
+//---------------------------------------------------------------------------
+//  EXIT 
+//---------------------------------------------------------------------------
+
+Exit.Title        = "CAA /p1 /p2  退出安裝";
+Exit.Label1.Title = "安裝未完成. 如您現在退出安裝程式";
+Exit.Label2.Title = "程式將不被安裝.";
+Exit.Label3.Title = "您可待會再安裝";
+Exit.Label4.Title = "安裝.";
+Exit.Label5.Title = "\n";
+Exit.Label6.Title = "要繼續安裝程式, 請按 繼續.";
+Exit.Label7.Title = "\n";
+Exit.Label8.Title = "欲退出安裝程式, 按一下 退出 設定程式.";
+Exit.BCancel = "退出 設定程式";
+Exit.BOK  = "繼續";
+
+
+//----------------------------------------------------------------------------
+// Errors
+//---------------------------------------------------------------------------
+
+Interrupt.Text="命令被訊號中斷 /p1";
+ErrorChangePanel.Text="更改視窗 : 視窗形式內部錯誤 /p1\n";
+ErrorNbLabels.Text="CATInsWindow:: 建立標的 - 內部錯誤 : /p1 > /p2\n";
+MsgSolutions.Text = "#SOLUTIONS /p1 /p2\n#==========================================\n";
+MsgProducts.Text = "#PRODUCTS /p1 /p2\n#==========================================\n";
+MsgUnloadCAF = "(/p1 of /p2) 載入 /p3\n";
+MsgUpdate.Text = "更新檔案 PRESENT\n";
+MsgUnloadDir.Text ="\n 載入目錄 : /p1\n";
+MsgUnloadConfigs.Text ="\n 下列組態或產品將被安裝 :\n";
+MsgListe = "Number of CAF /p1\nList of CAF : \n";
+SpaceUsed.Text = "Required space  : /p1 KB\n";
+SpaceAvail.Text ="Available space : /p1 KB\n";
+ErrMaxWindow.Text ="內部錯誤 : NBMAXERRORWINDOW 必須增加 \n 此錯誤無法在視窗中顯示 :\n" ;
+InfoNeedInstallCAASPK = "您需要安裝 CAA Service Pack Level /p1\n";
+//---------------------------------------------------------------------------
+// BATCH
+//---------------------------------------------------------------------------
+ErrWndDestination.Title = "錯誤";
+ErrorWindow.Title = "錯誤";
+ErrNoGACode.Text ="安裝 CAA 前必須先安裝 /p1 \n" ;
+ErrorBatchReferenceNotExistHelp.Text ="表列光碟上的所有組態和產品, 請使用 -list 選項 \n 指定組態或清單, 使用 -l \"list_to_unload\" option\nExample : -l \"AL2.slt.caa2  ASD.prd.caa2\"\n";
+ErrorBatchReferenceAlreadyUnload.Text = "警告 : 參考 /p1 已載入 \n";
+ErrorBatchReferenceNotExist.Text = "錯誤: 參考 /p1 在光碟上未知 \n";
+ErrorBatchCodeNotInstalled.Text="錯誤: /p1 無法載入, 因相關資料未安裝 \n";
+WarningConfigAlreadyInstalled.Text ="警告: 組立 /p1 已安裝 \n";
+WarningProductAlreadyInstalled.Text ="警告: 產品 /p1 已安裝 \n";
+ErrorBatchIncompatibleOption.Text = "選項 /p1 和 /p2 無法同時使用 \n";
+ErrorBatchNotValidOption1.Text ="/p1 不是有效選項 \n";
+ErrorOption_CodeMandatory="Option -code is mandatory to install CAA API\n GA level /p1 is installed in /p2 folders\n";
+ErrorBatchNotValidOption2.Text ="/p1 /p2 不是有效選項 \n";
+ErrorBatchBadOptions.Text = "不好選項 :\n";
+ErrorBatchMissing_Code.Text = "您必須使用 -code 選項來指定載入目錄 \n";
+ErrorBatchMissOption.Text = "您必須至少安裝一項組態或產品. 使用 -l 或 -all 選項來指定您要安裝的組態或產品 \n";
+ErrorBatchOptionAndDir.Text = "選項 /p1 必須有完整的路徑 \n";
+ErrorBatchNothing.Text = "錯誤: 清單 /p1 不正確, 沒有可載入的軟體 \n";
+ErrorBatchNothingToUnload.Text = "錯誤: 所有的清單 -l 選項組態和產品已載入 \n";
+WarningProductCodeNotInstalled.Text="警告: 產品 /p1 無法載入, 因相關資料未安裝 \n";
+WarningConfigCodeNotInstalled.Text="警告: 組立 /p1 無法載入, 因相關資料未安裝 \n";
+ErrorBatchTransferKO1.Text = "轉移 KO - 回授碼 = /p1\n";
+ErrorBatchTransferKO2.Text = "轉移 KO - 檔案 /p1 未找到 \n";
+ErrorBatchUpdatePRESENT.Text = "更新 PRESENT 檔案失敗 \n/p1\n";
+ErrInterrupt="命令被訊號 /p1 中斷 \n";
+BatchFailed="批次安裝失敗 : 請參考 /p1\n";
+ErrWndBadCopy="在批次模式, 您必須複製 CD-ROMs 在相同的目錄 \n";
+ErrCommandFailed="命令 /p1 失敗 \n";
+ErrCommandInterrupted ="命令 /p1 已中斷 \n"; 
+UpdatePRESENTLogInfo="更新檔案 PRESENT\n";
+SetupInterrupted ="批次 CAA 設定中斷 \n"; 
+BatchOptionuIgnored="選項 -u 忽略 \n";
+ErrorBatchDirUnloadNoWrite="設定程式無法存取 /p1 目錄 \n";
+ErrorBatchDirUnloadNotExist.Text = "目錄 /p1 不存在. 您必須建立它或使用 -newdir 選項 \n";
+// HELP
+//---------------------
+HelpUsage.Text = "用法:";
+HelpCommandLine.Text = "\nstart -code Code_dir [-u CAA_unload_dir] [-newdir] [-s] [-v] [-h] -list|-all|-l \"list_to_unload\"\n";
+HelpCommandLineNT.Text = "\nStartCAAB [-code Code_dir] [-v] [-h] -list|-all|-l \"list_to_unload\"\n";
+HelpUnload.Text        = "-u CAA_unload_dir               : 指定 CAA 的載入目錄.\n";
+HelpCode.Text          = "-code Code_dir                  : 指定之前的載入目錄 \n";
+HelpCodeNT.Text        = "-code Code_dir                  : 如果有好幾個 GA 安裝, 則指定之前所安裝位置 \n";
+HelpNewDir.Text        = "-newdir                         : 若目錄不存在時則建立它.\n";
+HelpSilent.Text        = "-s                              : 安靜模式.\n";
+HelpVerbose.Text       = "-v                              : 說明模式.\n";
+HelpHelp.Text          = "-h                              : 顯示說明.\n";
+HelpList.Text          = "-list                           : 顯示 CD-ROM 上的產品和組立.\n";
+HelpAll.Text           = "-all                            : 下載 CD-ROM 上的所有產品和組立.\n";
+HelpL.Text             = "-l list_to_unload               : 表列要安裝的產品和組立.\n";
+OptionIgnored.Text ="選項 /p1 是忽略的 \n";
+Help.Example="start -code /usr/DassaultSystemes/Code -u /usr/DassaultSystemes/CAA -newdir -l ASD.prd.caa2\n";

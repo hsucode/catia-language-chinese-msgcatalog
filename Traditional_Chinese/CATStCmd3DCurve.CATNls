@@ -1,0 +1,50 @@
+// COPYRIGHT DASSAULT SYSTEMES 2000
+//=============================================================================
+//
+// FreeStyle 3D curve Command :
+//   Resource file for NLS purpose.
+//
+//=============================================================================
+//
+// Implementation Notes :
+//
+//=============================================================================
+// Sept.  00   Creation                                   Frederic LETZELTER
+//=============================================================================
+CATStCmd3DCurve.Title = "3D 曲線";
+
+CATStCmd3DCurve.initialState.Message = "任意按一下來建立您的建構點. 也可選擇掃描點.";
+CATStCmd3DCurve.InsertRemoveState.Message = "在點應該增加或者移走的地方選擇線段";
+CATStCmd3DCurve.ConstraintState.Message = "選擇點被約束的依附. 使用 CTRL 鍵以投影它, 或者使用進行點";
+CATStCmd3DCurve.SelectScan.Message="選擇掃描中的所有點";
+CATStCmd3DCurve.SelectPoints.Message="選擇幾何組中的所有點";
+
+CATStCmd3DCurve.pbCreationTypeRecup.Message = "不能重新得到建立類型屬性.";
+CATStCmd3DCurve.pbPointsRecup.Message = "不能重新得到建構點特性.";
+CATStCmd3DCurve.pbClosureModeRecup.Message = "不能重新得到閉合模式屬性.";
+CATStCmd3DCurve.pbSymmetryModeRecup.Message = "不能重新得到對稱模式屬性.";
+CATStCmd3DCurve.pbOrderRecup.Message = "不能重新得到階數屬性.";
+CATStCmd3DCurve.pbNbMaxArcsRecup.Message = "無法萃取弧最大數目的屬性.";
+CATStCmd3DCurve.pbFeatFactRecup.Message = "不能重新得到特徵工廠.";
+CATStCmd3DCurve.pbSpecCreation.Message = "在建立特徵時一個錯誤發生.";
+
+CATStCmd3DCurve.ProjectionType.MinProjection.Message = "使用最小距離的投影";
+CATStCmd3DCurve.ProjectionType.MouseProjection.Message = "在點上擷取";
+
+CATStCmd3DCurve.CATSt3DCurveManip.ImposeTangency.Message = "加入相切";
+CATStCmd3DCurve.CATSt3DCurveManip.ImposeCurvature.Message = "加入曲率";
+CATStCmd3DCurve.CATSt3DCurveManip.SetArcLimit.Message = "設定為弧限制";
+CATStCmd3DCurve.CATSt3DCurveManip.Deviation.Message = "Dev : ";
+CATStCmd3DCurve.CATSt3DCurveManip.Order.Message = " 階數 : ";
+CATStCmd3DCurve.CATSt3DCurveManip.Edit.Message = "編輯";
+
+CATStCmd3DCurve.CATSt3DCurveEltPick.InsertPoint.Message = "在這裡插入一個點";
+CATStCmd3DCurve.CATSt3DCurveEltPick.InsertFirstPoint.Message="在此點前插入一點";
+CATStCmd3DCurve.CATSt3DCurveEltPick.RemovePoint.Message = "移除這個點";
+CATStCmd3DCurve.CATSt3DCurveEltPick.ConstraintPoint.Message = "限制這個點";
+CATStCmd3DCurve.CATSt3DCurveEltPick.FreePoint.Message = "釋放這個點";
+
+CATStCmd3DCurve.CATSt3DCurveEltPick.InterdictionConstraintPoint.Message = "因為連續性的問題導致無法限制點";
+
+CATStCmd3DCurve.CATSt3DCurveEltPick.InterdictionRemovePoint.Message = "因為連續性的問題導致無法移除點";
+

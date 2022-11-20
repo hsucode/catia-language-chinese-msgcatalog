@@ -1,0 +1,90 @@
+//---------------------------------------
+// Resource file for CATGuiWrapCurvePanel class
+// En_US
+//---------------------------------------
+
+Title="繞曲定義";
+
+FrameSurface.Frame001.Label002.Title = "變形的曲面: ";
+FrameSurface.Frame001.LongHelp = "指定變形的曲面.";
+
+FrameSurface.FrameNoShow.CheckButtonNoShow.Title = "隱藏變形的曲面";
+FrameSurface.FrameNoShow.LongHelp = 
+"定義預覽後, 指定變形曲面將隱藏.";
+
+TabContainer015.CurvesTabPage.Title = "曲線";
+TabContainer015.CurvesTabPage.LongHelp = 
+"指定參考曲線,目標曲線
+和拘束條件在 wrap 曲線曲面產生上.";
+
+// number of the selected elements
+NumberColumnTitle = "無";
+
+RefColumnTitle = "參考";
+TargetColumnTitle = "目標";
+
+TabContainer015.CurvesTabPage.Frame004.Frame006.LongHelp = 
+"指定參考曲線和目標曲線.
+參考曲線不能彼此穿過交叉.
+目標曲線不能彼此穿過交叉.";
+
+TabContainer015.CurvesTabPage.Frame004.Frame006.Frame009.PushButtonRemove.Title = "移除";
+TabContainer015.CurvesTabPage.Frame004.Frame006.Frame009.PushButtonRemove.LongHelp = 
+"允許移除選擇的一對參考曲線和目標曲線.";
+
+TabContainer015.CurvesTabPage.Frame004.Frame006.Frame009.PushButtonInsert.Title = "在之前插入";
+TabContainer015.CurvesTabPage.Frame004.Frame006.Frame009.PushButtonInsert.LongHelp = 
+"在選擇曲線前允許插入參考曲線.";
+
+TabContainer015.CurvesTabPage.Frame004.Frame047.Frame070.Label011.Title = "參考 : ";
+TabContainer015.CurvesTabPage.Frame004.Frame047.Frame070.LongHelp = "指定參考曲線.";
+
+TabContainer015.CurvesTabPage.Frame004.Frame047.Frame068.CheckButtonRefCurve.Title = "固定參考曲線";
+TabContainer015.CurvesTabPage.Frame004.Frame047.Frame068.CheckButtonRefCurve.LongHelp = 
+"指定如果選擇的參考曲線固定時,
+那就是沒有任何目標曲線與它相關連.";
+
+TabContainer015.CurvesTabPage.Frame004.Frame047.Frame010.Label013.Title = "目標 : ";
+TabContainer015.CurvesTabPage.Frame004.Frame047.Frame010.LongHelp = "指定目標曲線.";
+
+TabContainer015.CurvesTabPage.Frame004.Frame049.Label051.Title = "目前的曲線: ";
+
+NoneKeepTitle = "無";
+TangencyKeepTitle = "保留相切";
+CurvatureKeepTitle = "保留曲率";
+TabContainer015.CurvesTabPage.Frame004.Frame059.Label061.Title = "拘束條件";
+
+TabContainer015.CurvesTabPage.Frame004.Frame062.Label063.Title = "在第一條曲線上 : ";
+TabContainer015.CurvesTabPage.Frame004.Frame062.Label064.Title = "在最後一條曲線上: ";
+TabContainer015.CurvesTabPage.Frame004.Frame062.LongHelp = 
+"在產生的變形曲面上指定限制條件,
+在第一條曲線和最後一條曲線上:
+- 無 : 沒有限制條件,
+- 保留相切 : 變形曲面的相切
+  相同於第一條曲線和或最後一條曲線上的原始曲面,
+- 保留曲率: 變形曲面的相切和曲率相同於第一條曲線和或最後一條曲線上的原始曲面.";
+
+TabContainer015.ReferenceTabPage.Title = "參考";
+
+TabContainer015.ReferenceTabPage.Frame018.CheckButtonRefSpine.Title = "與第一個參考曲線相同";
+TabContainer015.ReferenceTabPage.Frame018.CheckButtonRefSpine.LongHelp = 
+"指定脊椎線等於第一個參考曲線.";
+
+TabContainer015.ReferenceTabPage.Frame018.Frame022.Label020.Title = "脊椎線 : ";
+TabContainer015.ReferenceTabPage.Frame018.Frame022.LongHelp = 
+"指定使用者定義的脊椎線.";
+
+TabContainer015.ReferenceTabPage.Frame019.CheckButtonRefDir.Title = "計算";
+TabContainer015.ReferenceTabPage.Frame019.CheckButtonRefDir.LongHelp = 
+"指定投影方向由 CATIA 計算";
+
+TabContainer015.ReferenceTabPage.Frame019.Frame071.RadioAutoDir.Title = "已計算的";
+TabContainer015.ReferenceTabPage.Frame019.Frame071.RadioNormalDir.Title = "垂直";
+TabContainer015.ReferenceTabPage.Frame019.Frame071.RadioNormalDirInv.Title = "垂直(逆轉)";
+
+TabContainer015.ReferenceTabPage.Frame019.Frame025.Label026.Title = "方向 : ";
+TabContainer015.ReferenceTabPage.Frame019.Frame025.LongHelp = 
+"指定使用者定義的投影方向.";
+
+TabContainer015.ReferenceTabPage.Frame052.Label054.Title = "脊椎線";
+TabContainer015.ReferenceTabPage.Frame056.Label058.Title = "投影方向";

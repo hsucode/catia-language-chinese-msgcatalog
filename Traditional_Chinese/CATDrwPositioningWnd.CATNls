@@ -1,0 +1,89 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwPositioningWnd
+// LOCATION    :    DraftingIntCommands
+// AUTHOR      :    fgx
+// BUT         :    Panel de choix de positionnement
+// DATE        :    15.12.1999
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//   	01		    lgk   10.12.02 	   Revision
+//=====================================================================================
+
+Title="定位";
+Help="對齊, 間隔, 散佈或移動元素";
+
+_titleAlign.Title="對齊";
+_titleAlign.LongHelp="以下列方式對齊物件.";
+_frameAlign._pushLeft.ShortHelp="左邊對齊";
+_frameAlign._pushCenter.ShortHelp="中心對齊";
+_frameAlign._pushRight.ShortHelp="右邊對齊";
+_frameAlign._pushTop.ShortHelp="上緣對齊";
+_frameAlign._pushMiddle.ShortHelp="中間對齊";
+_frameAlign._pushBottom.ShortHelp="下緣對齊";
+
+_frameAlign._pushLeft.LongHelp="左邊對齊
+所有物件對齊最左邊的一個.";
+_frameAlign._pushCenter.LongHelp="中心對齊
+所有物件對齊最中心的一個.";
+_frameAlign._pushRight.LongHelp="右邊對齊
+所有物件對齊最右邊的一個.";
+_frameAlign._pushTop.LongHelp="上緣對齊
+所有物件對齊最上緣的一個.";
+_frameAlign._pushMiddle.LongHelp="中間對齊
+所有物件對齊最中間的一個.";
+_frameAlign._pushBottom.LongHelp="下緣對齊
+所有物件對齊最下緣的一個.";
+
+
+
+_titleSpace.Title="間隔";
+_titleSpace.LongHelp="定義物件間間隔.";
+_frameSpace._spinnerSpace.LongHelp="間隔排列物件時要使用的數值.";
+_frameSpace._pushMinX.ShortHelp="從左邊到右邊間隔排列";
+_frameSpace._pushMaxX.ShortHelp="從右邊到左邊間隔排列";
+_frameSpace._pushMinY.ShortHelp="從下緣到上緣間隔排列";
+_frameSpace._pushMaxY.ShortHelp="從上緣到下緣間隔排列";
+
+_frameSpace._pushMinX.LongHelp="從左邊到右邊間隔排列,
+定義物件間間隔, 以他們中間最左邊者為參考.";
+_frameSpace._pushMaxX.LongHelp="從右邊到左邊間隔排列,
+定義物件間間隔, 以他們中間最右邊者為參考.";
+_frameSpace._pushMinY.LongHelp="從下緣到上緣間隔排列,
+定義物件間間隔, 以他們中間最下緣者為參考.";
+_frameSpace._pushMaxY.LongHelp="從上緣到下緣間隔排列,
+定義物件間間隔, 以他們中間最上緣者為參考.";
+
+
+
+_titleDistrib.Title="分佈";
+_titleDistrib.LongHelp="在 2 個最大距離之間分佈物件.";
+_frameDistrib._pushDistribX.ShortHelp="水平分佈";
+_frameDistrib._pushDistribY.ShortHelp="垂直分佈";
+
+_frameDistrib._pushDistribX.LongHelp="水平分佈
+在最左邊和最右邊之間分佈物件.";
+_frameDistrib._pushDistribY.LongHelp="垂直分佈
+在最上緣和最下緣之間分佈物件.";
+
+
+
+_titleMove.Title="移動";
+_titleMove.LongHelp="一整區塊的移動物件.";
+_frameMove._spinnerMove.LongHelp="移動物件時要使用的數值.";
+_frameMove._pushIncX.ShortHelp="水平移動";
+_frameMove._pushIncY.ShortHelp="垂直移動";
+
+_frameMove._pushIncX.LongHelp="水平移動
+水平移動物件.";
+_frameMove._pushIncY.LongHelp="垂直移動
+垂直移動物件.";
+
+

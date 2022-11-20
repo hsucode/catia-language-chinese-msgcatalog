@@ -1,0 +1,18 @@
+NotRoot =  "You must be super-user(root) to run setV5Ports\n";
+NotAdministratorBatch="setV5Ports program requires administrator pivileges.";
+ErrorBatchBadOptions.Text = "Bad Options:\n";
+ErrorBatchNotValidOption1.Text ="/p1 is not a valid option\n";
+ErrorBatchNotValidOption3.Text ="/p1 /p2 /p3 is not a valid option\n";
+ErrorBatchMissingPorts.Text="You must specify backbone ports with option -backbonePorts\n";
+ErrWndV5RunPort.Text = "Invalid port number: /p1. Port number must be greater than or equal to /p2\n";
+ErrWndV5RunPortMax.Text = "Invalid port number: /p1. Port number must be less than or equal to /p2\n";
+
+//----------------------
+// HELP
+//---------------------
+HelpUsage.Text = "Usage:";
+HelpCommandLine.Text = "\nsetV5Ports [-backbonePorts p1 p2] [-VRPort p3]|-h\n";
+HelpHelp.Text            ="-h                      : Displays this help.\n";
+HelpbackbonePorts.Text   ="-backbonePorts p1 p2    : Specifies communication ports for backbone. Default values are /p1 and /p2\n";
+HelpVRPort.Text           ="-VRPort p3             : Specifies communication port for peripheral device broker - default value is /p1\n";
+

@@ -1,0 +1,198 @@
+//=============================================================================
+//                                     CNEXT - CXR5
+//                          COPYRIGHT DASSAULT SYSTEMES 2004 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATEcwElecCableDBRouteCableCmd.CATNls
+// FRAMEWORK   :    ElectricalCableway
+// AUTHOR      :    ttm
+// DATE        :    October 2004
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Plant Ship Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//------------------------------------------------------------------------------
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// DialogEngine state prompts 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATEcwElecCableDBRouteCableCmd.QueryCableOptionState.Message="Select method to query cables from the data base";
+CATEcwElecCableDBRouteCableCmd.DisplayCableListState.Message="Select cables to route, validate or delete";
+CATEcwElecCableDBRouteCableCmd.DisplayEquipmentListState.Message="Select equipment to query cables connected to them";
+CATEcwElecCableDBRouteCableCmd.ForbidNonPartialState.Message="Select node to forbid path";
+CATEcwElecCableDBRouteCableCmd.ForbidPartialRouteFromState.Message="Select partial route From node";
+CATEcwElecCableDBRouteCableCmd.ForbidPartialRouteToState.Message="Select partial route To node";
+CATEcwElecCableDBRouteCableCmd.DisplayCableListResultState.Message="Select cable to highlight path";
+CATEcwElecCableDBRouteCableCmd.DisplayCableListPRSelFromState.Message="Select where to partial route FROM";
+CATEcwElecCableDBRouteCableCmd.RecommendNonPartialState.Message="Select node in the order of the recommended path";
+CATEcwElecCableDBRouteCableCmd.RecommendPartialRouteFromState.Message="Select partial route From node";
+CATEcwElecCableDBRouteCableCmd.RecommendPartialRouteToState.Message="Select partial route To node";
+CATEcwElecCableDBRouteCableCmd.DisplayCableListPRSelToState.Message="Select where to partial route TO";
+CATEcwElecCableDBRouteCableCmd.GetCablesOnNwkObjectNonPartialState.Message="Select node to select cables going through node";
+CATEcwElecCableDBRouteCableCmd.GetCablesOnNwkObjectPartialRouteFromState.Message="Select node to select cables going through node";
+CATEcwElecCableDBRouteCableCmd.GetCablesOnNwkObjectPartialRouteToState.Message="Select node to select cables going through node";
+CATEcwElecCableDBRouteCableCmd.DisplaySchematicListState.Message="Select Schematic work packages to manage cables";
+CATEcwElecCableDBRouteCableCmd.AnalyzeCableState.Message="Select a cable to analyze";
+CATEcwElecCableDBRouteCableCmd.RouteReportTitle = "Electrical Cable Database Route Cable Report";
+CATEcwElecCableDBRouteCableCmd.PartialRouteReportTitle = "Electrical Cable Database Partial Route Cable Report";
+CATEcwElecCableDBRouteCableCmd.ValidateReportTitle = "Electrical Cable Database Validate Cable Report";
+CATEcwElecCableDBRouteCableCmd.DeleteReportTitle = "Electrical Cable Database Delete Cable Report";
+CATEcwElecCableDBRouteCableCmd.FromExtraLengthReportTitle = "Electrical Cable Database Update From Equipment Extra Length Report";
+CATEcwElecCableDBRouteCableCmd.ToExtraLengthReportTitle = "Electrical Cable Database Update To Equipment Extra Length Report";
+CATEcwElecCableDBRouteCableCmd.InitializationReportTitle = "Network errors:             ";
+CATEcwElecCableDBRouteCableCmd.SummaryReportTitle = "Summary:                          ";
+CATEcwElecCableDBRouteCableCmd.CablePullReportTitle = "Cable Path                        ";
+CATEcwElecCableDBRouteCableCmd.CableListStatusTitle1 = "#";
+CATEcwElecCableDBRouteCableCmd.CableListStatusTitle2 = "Cable";
+CATEcwElecCableDBRouteCableCmd.CableListStatusTitle3 = "Status";
+CATEcwElecCableDBRouteCableCmd.CableListStatusTitle4 = "Schematic";
+CATEcwElecCableDBRouteCableCmd.ErrorRequestTitle = "Operation:  ";
+CATEcwElecCableDBRouteCableCmd.ErrorDiagnosticTitle = "Diagnostic: ";
+CATEcwElecCableDBRouteCableCmd.ErrorAdviseTitle = "Advise:     ";
+NodeID = "Node: /P1";
+WP = "Work Package: /P1";
+Position = "Position: /P1, /P2, /P3";
+Classification = "Classification: /P1";
+GrowthFactor = "Growth Factor: /P1%";
+CablewayHeight1 = "Cableway Height1: /P1";
+CablewayHeight2 = "Cableway Height2: /P1";
+CablewayHeight3 = "Cableway Height3: /P1";
+CablewayHeight4 = "Cableway Height4: /P1";
+CablewayHeight5 = "Cableway Height5: /P1";
+CablewayWidth = "Cableway Width: /P1";
+Diameter = "Diameter: /P1";
+MinBendRadius = "Minimum Bend Radius: /P1";
+MaxLength = "Maximum Length: /P1";
+WeightPerLength = "Weight per unit length: /P1";
+CableIDAndSchematic = "Cable: /P1  Schematic: /P2";
+CableIDAndStatus = "Cable: /P1  Status: /P2";
+FromPort = "From Equipment: /P1";
+ToPort = "To Equipment: /P1";
+SchematicID = "Schematic: /P1";
+CableLength = "   Cable Length: /P1";
+CableCategory = "Cable Category: /P1";
+Tightness = "Tightness: /P1";
+MainKeystationFalse = "Main key station: False";
+MainKeystationTrue = "Main key station: True";
+CableLengthNoBlank = "Cable Length: /P1";
+NodeAndWPAndPercentFill = "Work Package: /P1,  Pass through: /P2, Percent Fill: /P3 %";
+PercentFill = "Percent Fill: /P1 %";
+ReportDate = "Date:  /P1";
+ReportTime = "Time:  /P1";
+ErrorObject = "Error with object:  /P1";
+NumberOfSelectedCables = "Number of selected cables:  /P1";
+CATEcwElecCableDBRouteCableCmd.ErrContextNotSet.Message = 
+"Error: Work package context not set.\n
+In order to route or validate cables using the\n
+Electrical database you must first set the\n
+work package context.  In the VPM Navigator work bench\n
+use the Set work package Context command.";
+CATEcwElecCableDBRouteCableCmd.Title.Message = "Manage Cables";
+CATEcwElecCableDBRouteCableCmd.InvalidSelectionTitle.Message = "Invalid selection";
+CATEcwElecCableDBRouteCableCmd.ErrContextHasNoCableway.Message = 
+"Warning: Work package context has no cableway elements.\n
+You will not be able to route or validate cables.\n
+Electrical database you must first set the\n
+work package context.  In the VPM Navigator work bench\n
+use the Set work package Context command.";
+CATEcwElecCableDBRouteCableCmd.ErrNoSchematicWP.Message = 
+"Error: No schematic work packages found in current context.\n
+In order to route or validate cables using the\n
+Electrical database you must first include all of the\n
+schematic work packages defined for the configuration.\n
+In the VPM Navigator work bench use the Set work package\n
+Context command.";
+CATEcwElecCableDBRouteCableCmd.ErrNoEquipmentFound.Message = 
+"Error: No equipment found in current context.\n
+In order to route or validate cables using the\n
+Electrical database you must first include all of the\n
+equipment work packages defined for the configuration.\n
+In the VPM Navigator work bench use the Set work package\n
+Context command.";
+CATEcwElecCableDBRouteCableCmd.ErrNoCablesFound.Message = 
+"Error: No cables found in current context.\n
+In order to route or validate cables using the\n
+Electrical database you must first include all of the\n
+schematic work packages defined for the configuration.\n
+In the VPM Navigator work bench use the Set work package\n
+Context command.";
+CATEcwElecCableDBRouteCableCmd.ErrFatalError.Message=
+"Fatal error has occurred.\n
+Request:    /p1 \n
+Diagnostic: /p2 \n
+Advise:     /p3";
+CATEcwElecCableDBRouteCableCmd.ErrCannotSelectPartialFromTo.Message = 
+"Error: Cannot select Partial route From or To object.\n
+Selection will be ignored.";
+CATEcwElecCableDBRouteCableCmd.ErrCannotSelectRecommendObject.Message = 
+"Error: Cannot select a recommend object.\n
+Selection will be ignored.";
+CATEcwElecCableDBRouteCableCmd.ErrCannotSelectForbidObject.Message = 
+"Error: Cannot select a forbid object.\n
+Selection will be ignored.";
+CATEcwElecCableDBRouteCableCmd.ErrCannotSelectPartialMiddle.Message = 
+"Error: Cannot select in the middle of a partial route.\n
+You may select the ends of a partial route.\n
+Selection will be ignored.";
+CATEcwElecCableDBRouteCableCmd.NoDBConnectionText.Message="You are disconnected from the database.  Please reconnect before using this command.";
+CATEcwElecCableDBRouteCableCmd.From.Message = "From";
+CATEcwElecCableDBRouteCableCmd.To.Message = "To";
+RC_FailedToValidate ="Failed to validate";
+RC_FailedToValidateLongHelp ="Unable to validate the route of the selected cable";
+RC_InvalidBendRadius ="Invalid cableway bendradius";
+RC_InvalidBendRadiusLongHelp ="The bendradius of the routed cableway exceeds the cable's requirement";
+RC_HgrOverloaded ="The cableway element is overloaded";
+RC_HgrOverloadedLongHelp ="The Percentage Fill plus the Growth Factor of the cableway element is greater than 1.0";
+RC_InvalidRoute ="Invalid route";
+RC_InvalidRouteLongHelp ="No cable is found in the cableway element";
+RC_RouteValidated ="Full route validated";
+RC_RouteValidatedLongHelp ="The route of the selected cable is valid";
+RC_PartRouteValidated ="Partial route validated";
+RC_PartRouteValidatedLongHelp ="The subroute of the selected cable is valid";
+RC_RouteIsIncomplete ="Route is incomplete";
+RC_RouteIsIncompleteLongHelp ="The extremities of the cable are not found in the route";
+RC_RouteIsBroken ="Route is broken";
+RC_RouteIsBrokenLongHelp ="The routed cableway objects are not all connected";
+RC_DeleteFailed ="Failed to delete";
+RC_DeleteFailedLongHelp ="Unable to delete the selected cable";
+RC_CableNotRouted ="Cable not routed ";
+RC_CableNotRoutedLongHelp ="The cable is not routed";
+RC_Undefined ="Undefined";
+RC_UndefinedLongHelp ="No cable routes found";
+RC_Full ="Fully Routed";
+RC_FullLongHelp ="Cable is fully routed";
+RC_Partial ="Partially Routed";
+RC_PartialLongHelp ="Cable is partially routed";
+RC_CableCategory ="The cableway element is not compatible with the cable";
+RC_CableCategoryLongHelp ="The cableway element and the cable have different Cable Category property values";
+RouteStatus_Undefined = "Not Routed";
+RouteStatus_Full = "Fully Routed";
+RouteStatus_Partial = "Partially Routed";
+RouteStatus_NeedValidate = "Need Validate";
+RouteStatus_Broken = "Broken Route";
+RouteStatus_OutOfDate = "Out Of Date";
+RouteStatus_OutOfContext_Full = "Out Of Context - Fully Routed";
+RouteStatus_OutOfContext_Partial = "Out Of Context - Partially Routed";
+RouteStatus_OutOfContext_Broken = "Out Of Context - Broken Route";
+RC_RouteFailed ="Unable to route";
+RC_RouteFailedLongHelp ="Unable to find a valid path between the From and To objects to route";
+RC_DeleteOK ="Route deleted";
+RC_DeleteOKLongHelp ="The route is deleted for the selected cable";
+RC_UpdatePerFillFailed ="Route deleted but percent fill is not updated";
+RC_UpdatePerFillFailedLongHelp ="The route is deleted for the selected cable but the percent fill of the cableway is not updated correctly.  To fix the percent fill problem, just exit the command and start again.";
+RC_SubRouteNotFound ="Subroute is not found";
+RC_SubRouteNotFoundLongHelp ="Unable to delete.  The subroute is not found in the selected cable.";
+RC_PartNotValidate ="Partial route not validated";
+RC_PartNotValidateLongHelp ="All subroutes of the cable need to be validated prior to the partial route operation.";
+RC_CableWaterTight ="The cable penetration's type(Water Tight) is not compatible with the cable";
+RC_CableWaterTightLongHelp ="Only water tight cable can route to a water tight cable penetration.";
+RC_WPOutOfContext ="Unable to validate the cable that is in Out Of Context status";
+RC_WPOutOfContextLongHelp ="The impacted workpackages(Cableway and Equipment) of the cable need to be in the current context for the Validate command to work correctly.";
+RC_InternalError ="Unable to validate the cable correctly due to the internal error";
+RC_InternalErrorLongHelp ="Internal errors are encountered during the validation process of the cable.";
+

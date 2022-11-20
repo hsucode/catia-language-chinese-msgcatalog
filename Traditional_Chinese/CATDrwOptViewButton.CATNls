@@ -1,0 +1,54 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwDimensionFrame
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    
+// DATE        :    26.11.1999
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    Tools/Option du Drafting
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//	01		   lgk   15.10.2002  Revision
+//=====================================================================================
+
+TitleRasterOptions="光柵模式選項";
+
+frmRasterOptions.HeaderFrame.Global.Title="光柵模式選項";
+frmRasterOptions.HeaderFrame.Global.LongHelp="光柵組態視圖選項";
+
+frmRasterOptions.IconAndOptionsFrame.OptionsFrame.lblRasterMode.Title="模式";
+frmRasterOptions.IconAndOptionsFrame.OptionsFrame.lblRasterMode.LongHelp="模式";
+
+HRD_Mode             = "動態隱藏線消除";
+ShadingMode          = "著色";
+ShadingWithEdgesMode = "含邊線著色";
+
+frmRasterOptions.IconAndOptionsFrame.OptionsFrame.lblLOD.Title="細部層級:";
+frmRasterOptions.IconAndOptionsFrame.OptionsFrame.lblLOD.LongHelp="細部層級:";
+frmRasterOptions.IconAndOptionsFrame.OptionsFrame.lblLODVisu.Title="為顯示";
+frmRasterOptions.IconAndOptionsFrame.OptionsFrame.lblLODVisu.LongHelp="為顯示";
+frmRasterOptions.IconAndOptionsFrame.OptionsFrame.lblLODPrint.Title="為列印";
+frmRasterOptions.IconAndOptionsFrame.OptionsFrame.lblLODPrint.LongHelp="為列印";
+
+LowQualityMode       = "低品質";
+NormalQualityMode    = "正常品質";
+HighQualityMode      = "高品質";
+CustomizeMode        = "自訂";
+
+
+
+TitleHRVOptions="近似模式";
+
+frmHRVOptions.HeaderFrame.Global.Title="近似模式選項";
+frmHRVOptions.HeaderFrame.Global.LongHelp="近似模式選項組態";
+
+frmHRVOptions.IconAndOptionsFrame.OptionsFrame.lblHRVLOD.Title = "細部層級 :";
+
+XGraph = "LOD";
+YGraph = "時間";

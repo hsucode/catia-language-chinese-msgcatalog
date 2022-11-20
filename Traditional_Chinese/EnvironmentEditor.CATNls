@@ -1,0 +1,210 @@
+//----------------------------------------------------------
+// Main Window
+Title = "環境編輯器" ;
+//***************************************
+//*      Menu Bar                       *
+//***************************************
+MenuBar.MenuFile.Title               = "環境" ;
+MenuBar.MenuFile.ItemCreate.Title    = "新增" ;
+MenuBar.MenuFile.ItemCreateFrom.Title   = "新的由 ..." ;
+MenuBar.MenuFile.ItemDelete.Title    = "刪除" ;
+MenuBar.MenuFile.ItemEdit.Title      = "編輯" ;
+MenuBar.MenuFile.ItemSortByDate.Title   = "以日期排列";
+MenuBar.MenuFile.ItemSortByMode.Title   = "以模式排列";
+MenuBar.MenuFile.ItemSortByName.Title   = "以名稱排列";
+MenuBar.MenuFile.ItemExit.Title      = "退出" ;
+//
+MenuBar.MenuOptions.Title                    = " 選擇" ;
+MenuBar.MenuHelp.Title                       = " 求助" ;
+MenuBar.MenuHelp.ItemHelp.Title              = " 求助" ;
+MenuBar.MenuOptions.ItemSetUserDir.Title     = "設定使用者儲存目錄" ;
+MenuBar.MenuOptions.ItemSetGlobalDir.Title   = "設定總體儲存目錄" ;
+//
+//
+//***************************************
+//*      Environment Frame      *
+//***************************************
+main.FrEnv.TxtListEnv.Title     = "環境" ;
+LstEnv.NameTitle                = "名稱";
+LstEnv.ModeTitle                = "模式";
+LstEnv.PathTitle                = " 路徑";
+LstEnv.DateTitle                = " 上一次修正";
+main.ItemSplitter.FrEnv.CtxMnuEnv.ItemCreate.Title      = "新增" ;
+main.ItemSplitter.FrEnv.CtxMnuEnv.ItemCreateFrom.Title   =   "新的從 ..." ;
+main.ItemSplitter.FrEnv.CtxMnuEnv.ItemDelete.Title      = "刪除" ;
+main.ItemSplitter.FrEnv.CtxMnuEnv.ItemEdit.Title         = "編輯" ;
+main.ItemSplitter.FrEnv.CtxMnuEnv.ItemSortByDate.Title   =   "以日期排序";
+main.ItemSplitter.FrEnv.CtxMnuEnv.ItemSortByMode.Title   =   "以模式排序";
+main.ItemSplitter.FrEnv.CtxMnuEnv.ItemSortByName.Title   =   "以名稱排序";
+
+main.ItemSplitter.FrVar.CtxMnuVar.ItemVarCreate.Title   =   "新變數";
+main.ItemSplitter.FrVar.CtxMnuVar.ItemVarEdit.Title     =   "編輯變數 ";
+main.ItemSplitter.FrVar.CtxMnuVar.ItemVarDelete.Title   =   "刪除變數";
+main.ItemSplitter.FrVar.CtxMnuVar.ItemSaveModif.Title   =   "儲存";
+
+FrInfo.Title					= " 環境儲存目錄";
+FrInfo.GlobalDirectoryText.Title= " 總體環境: ";
+FrInfo.UserDirectoryText.Title  = " 使用者環境: ";
+FrInfo.CtxMnuInfo.ItemSetUserDir.Title  = "設定使用者儲存目錄" ;
+FrInfo.CtxMnuInfo.ItemSetGlobalDir.Title   = "設定總體儲存目錄" ;
+
+Popup.Title                     = " 環境編輯訊息";
+//
+//
+//***************************************
+//*      Variables Frame      *
+//***************************************
+main.FrVar.TxtListVar.Title     = " 環境變數" ;
+LstVar.NameTitle                = " 名稱";
+LstVar.ValueTitle               = " 數值";
+LstVar.CommentTitle             = " 說明";
+//
+//
+//***************************************
+//*      Variable Edit Frame      *
+//***************************************
+main.FrVar.FrEdt.Key.Title      = " 名稱 :   " ;
+main.FrVar.FrEdt.Value.Title    = " 數值:   " ;
+main.FrVar.FrEdt.ModVar.Title   = " 修改 " ;
+//
+//***************************************
+//*      New Environment Window          *
+//***************************************
+Create.Title                    = " 新環境" ;
+Create.Name.Title               = "名稱 : ";
+Create.Path.Title               = "安裝路徑 : ";
+Create.Mode.Title               = "模式 : ";
+Create.Prod.Title               = "產品線 : ";
+Create.CopyFrom.Title           = " 建立從 :"; 
+Create.CbRepresentation.Title   = " 增加桌面圖示";
+Create.CbDesktopIcon.Title      = " 增加桌面圖示";
+Create.CbMenuIcon.Title        = " 新增捷徑至開始工作列";
+Create.CbServer.Title           = " 伺服器";
+Create.CbDeleteOld.Title        = " 覆寫已存環境";
+Create.BOK                      = " 確認";
+Create.BCancel                  = " 取消";
+Create.UserMode.Text            = " 使用者";
+Create.GlobalMode.Text          = " 總體";
+Create.SelectUserDir.Text       = " 選擇一個環境";
+Create.DefaultName.Text         = "Env001";
+Create.DefaultPath.Text         = "安裝路徑 : ";
+Create.EnvList_Label.Text       = " 環境形式: ";
+//***************************************
+//*      New Environment From Window         *
+//***************************************
+CreateFrom.Title                    = " 建立環境由 /P1" ;
+CreateFrom.Name.Title               = " 名稱 : ";
+CreateFrom.Path.Title               = " 安裝路徑 : ";
+CreateFrom.Mode.Title               = " 模式 : ";
+CreateFrom.Prod.Title               = " 產品線 : ";
+CreateFrom.CbRepresentation.Title   = " 新增桌面圖示";
+CreateFrom.CbDesktopIcon.Title      = " 新增桌面捷徑";
+CreateFrom.CbMenuIcon.Title        = " 新增開始工作列捷徑";
+CreateFrom.CbDeleteOld.Title        = " 覆寫己存環境";
+CreateFrom.BOK                      = " 確認";
+CreateFrom.BCancel                  = " 取消";
+CreateFrom.UserMode.Text            = " 使用者";
+CreateFrom.GlobalMode.Text          = " 總體";
+CreateFrom.DefaultName.Text         = "Env001";
+CreateFrom.DefaultPath.Text         = " 安裝路徑";
+CreateFrom.EnvList_Label.Text       = " 環境形式: ";
+CreateFrom.CopyOf.Text              = "複製的" ;
+CreateFrom.RBFrame.RBBefore.Title   = "在安裝路徑前插入新路徑";
+CreateFrom.RBFrame.RBAfter.Title    = "在安裝路徑後附加新路徑";
+CreateFrom.AddNewPath.Title         = "在環境中新增路徑 :";
+CreateFrom.NewPathLabel.Title       = "新路徑 :";
+//
+//***************************************
+//*      Variable Window          *
+//***************************************
+ModifyVar.Title                   = "變數編輯器" ;
+ModifyVar.Name.Title              = "名稱:     " ;
+ModifyVar.Value.Title             = "數值:    " ;
+ModifyVar.Comment.Title           = "說明:  " ;
+ModifyVar.NoEmptyName.Text        = "您必須指定變數名稱.";
+ModifyVar.NoEnvToModify.Text      = "無法獲得環境 !";
+ModifyVar.PopupTitle              = "環境編輯訊息";
+//
+//***************************************
+//*      Error and warning messages     *
+//***************************************
+AdminWarning.Text               = " 警告: 身為系統管理員, 您可建立, 修改和刪除總體環境";
+AskDefaultEnv.Text              = " 此環境由 CATIAENV 所使用. \n 您要修改它嗎 ?";
+AskDeleteDefaultEnv.Text        = " 此環境由 CATIAENV 所使用. \n 如果您刪除它, CATIAENV 下一次可能無法執行. \n 刪除此環境嗎 ?";
+AskDeleteVariable.Text          = " 刪除此環境的 /P1 嗎 ? ";
+AskModifyVar.Text               = " 修改 /P1 ?";
+AskSaveEnv.Text                 = " /P1 已修改. 您要儲存它嗎 ? ";
+CATIAENV_Error_Title.txt        = " 錯誤訊息";
+CATIAENV_Help_Title.txt         = " CATIAENV  資訊";
+CannotWriteDefFolder.Text       = " 錯誤: 在儲存目錄中無法寫入資訊";
+Create.AskIrix.Text             = " 警告: \n 建立與此環境相關的圖形表現方式 \n 桌面必須重新編譯, 可能須要花費一點時間 \n 您要繼續嗎 ?";
+Create.DataCreationFailed.Text  = " 錯誤: 無法建立環境資料";
+Create.IrixIsNotAdmin.Text      = " 警告: \n 未建立圖示. \n 您必須為系統管理員來重新編譯桌面. ";
+Create.NoBlank.Text             = " 環境名稱不支援空白字元";
+Create.RepCreationFailed.Text   = " 未建立桌面圖示.\n 請檢查 /P1 是否已存在安裝路徑中.";
+CreateVar.VarAlreadyExist.Text  = " /P1 己存在, 請選擇另一變數名稱.";
+Create.WrongPath.Text           = " 未找到指定檔案.";
+CreateDefUserDir.Text           = " 預設使用者環境儲存目錄在 ";
+CreateDefUserDirFailed.Text     = " 錯誤: CATIAENV 無法為使用者環境建立預設儲存目錄. \n 請在工具組 選項中選擇其它儲存目錄: 選項 -> 選擇使用者儲存目錄."; 
+DataDeleteFailed.Text           = " 刪除環境資料失敗";
+DefaultFolderNotFound.Text      = " 未找到預設儲存目錄. "; 
+DeleteFailed.Text               = " 刪除環境資料和圖形表現資料失敗";
+DiskFull.Text                   = " 無法寫入環境檔案 : 磁碟已滿.";
+EnvFileNotFound.Text            = " 未找到環境檔案.";
+EnvNameNotSpecified.Text        = " 必須指定環境名稱";
+ErrorDeleteVariable.Text        = " 錯誤: 無法刪除此變數";
+FileAlreadyExist.Text           = " 此環境名稱已存在";
+GlobalCreationFailed.Text       = " 設定管理者環境失敗";
+GlobalDeleteAsk.Text            = " 刪除所選總體環境 ?";
+GlobalDeleteNotAllowed.Text     = " 您想要刪除總體環境, 但您不是管理者";
+ModifyVarFailed.Text            = " 修改環境失敗";
+NoConcatenationSpecified.Text   = " 必須指定連接路徑.";
+NotValidDirectory.txt           = " 無法存取目錄 :" ;
+NoVariableFound.Text            = " 此環境中未找到參數. ";
+ReadFailed.Text                 = " 無法讀取檔案";
+RefFileCannotBeOpened.Text      = " 開啟參考檔案時發生問題.";
+RefFileNotFound.Text            = " 缺少參考檔案.";
+RepDeleteFailed.Text            = " 刪除環境圖形表現資料失敗";
+SpecifiedFolderNotFound.Text    = " 未找到儲存目錄.";
+UnableToOpenEnvFile.Text        = " 無法開啟環境檔案";
+UnableToWriteEnvFile.Text       = " 寫入環境檔案時發生問題.";
+UnknownError.Text               = " 處理環境時發生錯誤.";
+UserCreationFailed.Text         = " 設定使用者環境失敗";
+UserDeleteAsk.Text              = " 刪除所選使用者環境 ?";
+VariableNotFound.Text           = " 錯誤: 未找到變數. ";
+NoDeleteOffVariable.Text        = " /P1 是正式參數. \n 您無法刪除它.";
+//
+//
+//***************************************
+//*      Help messages                  *
+//***************************************
+ItemCreate.Help                 = " 建立新的環境";
+ItemDelete.Help                 = " 刪除所選環境";
+ItemEdit.Help                   = " 顯示所選環境";
+ItemExit.Help                   = " 退出 Catiaenv";
+ItemSaveModif.Help              = " 儲存所有修改";
+ItemSetUserDir.Help             = " 設定使用者儲存目錄";
+ItemSetGlobalDir.Help           = " 設定總體儲存目錄";
+ItemVarCreate.Help              = " 建立新的變數 ";
+ItemVarDelete.Help              = " 刪除所選變數 ";
+ItemVarEdit.Help                = " 編輯所選變數 ";
+LstEnv.Help                     = " 選取一個環境";
+LstVar.Help                     = " 按一下變數值來修改";
+LstVar.ShortHelp                = " 按一下變數值來修改";
+LstVarDisable.ShortHelp         = " 您無法修改總體環境";
+SaveEnvKO.ShortText             = " 環境檔案未儲存: 發生問題 ! ";
+SaveEnvOK.ShortText             = " 環境檔案已儲存.";
+SelectGlobalDir.Text            = " 選擇儲存目錄 - 總體環境";
+SelectUserDir.Text              = " 選擇儲存目錄 - 使用者環境";
+//
+CATIAENV_NT.Help                = " 
+CATIAENV    [-userdir  C:\my_user_dir  ]    [-globaldir C:\my_global_dir]
+
+-userdir   : 指定使用者環境儲存目錄.
+-globaldir : 指定總體環境儲存目錄.";
+//
+CATIAENV_UNIX.Help              = "
+CATIAENV     [-userdir  $HOME/my_user_dir  ]     [-globaldir   /my_global_dir]
+
+-userdir   :  指定使用者環境儲存目錄.    
+-globaldir :  指定總體環境儲存目錄.  ";

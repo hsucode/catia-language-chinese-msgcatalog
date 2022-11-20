@@ -1,0 +1,302 @@
+//---------------------------------------------------------------------------
+//  DIALOGUE COMMUN A TOUTES LES WINDOWS
+//---------------------------------------------------------------------------
+
+BOK = "< 退回" ;
+BCancel = "下一個 >" ;
+BApply = "取消" ;
+
+
+//--------------------------------------------------------------------------
+// ERRORS DURING INITIALIZATION
+//--------------------------------------------------------------------------
+ErrorSRCDIR="SetupHFX failed: SRCDIR is not set\n";
+ErrorOSDS="SetupHFX failed: OSDS is not set\n";
+ErrorBLOCKDEV="SetupHFX failed: BLOCKDEV is not set\n";
+ErrHOME="SetupHFX failed: HOME is not set\n";
+
+//---------------------------------------------------------------------------
+//  WELCOME 
+//---------------------------------------------------------------------------
+
+WndWelcome.Title     = "Welcome to Dassault Systemes Hot Fix Setup";
+Welcome.Label1.Title = "Welcome to the hot fix setup program. This program will install a hot fix " ;
+Welcome.Label2.Title = "on your computer." ;
+Welcome.Label3.Title = "\n";
+Welcome.Label4.Title = "Click Next to continue with the setup program.";
+Welcome.Label5.Title = "\n";
+Welcome.Label6.Title = "\n";
+Welcome.Label7.Title = "Portions of this software incorporate copyrighted works of third parties";
+Welcome.Label8.Title = "(see 'Special Notices' in Documentation).";
+Welcome.Label9.Title = "\n";
+Welcome.Label10.Title = "\n";
+Welcome.Label11.Title = "WARNING: This software is protected by copyright law, intellectual property law,";
+Welcome.Label12.Title = "trade secret and international treaties. Partial or global reproduction,"; 
+Welcome.Label13.Title = "representation, distribution, transmission of this software, in any form";
+Welcome.Label14.Title = "and/or any medium requires the prior written permission of Dassault Systemes";
+Welcome.Label15.Title = "or its beneficiaries. Any unauthorized act may result in a civil claim for";
+Welcome.Label16.Title = "damages and/or criminal prosecution.";
+QuestionWindow.Title="Running processes";
+QuestionWindow.Text="Some Dassault Systemes processes are running, preventing correct Hot Fix setup.\nDo you want to terminate them?\n";
+WantKillProcess ="Some Dassault Systemes processes are running, preventing correct Hot Fix setup.\nDo you want to terminate them?\n";
+InfoOrbixKilled="Process orbixd was killed by setup program\n";
+ListProcessKilled="Processes listed below have been killed:\n";
+//---------------------------------------------------------------------------
+//  DESTINATION 
+//---------------------------------------------------------------------------
+
+WndDestination.Title       = "Choose Destination Location";
+Destination.Label1.Title  = "Setup will install this hot fix in the destination directory indicated below.";
+Destination.Label2.Title   = "\n";
+Destination.Label3.Title   = "To install to this directory, click Next.";
+Destination.Label4.Title   = "You can choose not to install the hot fix by clicking Cancel to exit setup.";
+Destination.Label5.Title   = "\n";
+Destination.Frame.Title    = "Destination Directory";
+Destination.Frame.BrowsePushButton.Title="Browse...";
+//---------------------------------------------------------------------------
+//  DESTINATION  NT
+//---------------------------------------------------------------------------
+
+WndDestinationNT.Title       = "Choose Destination Location";
+DestinationNT.Label1.Title   = "Setup will install this hot fix in the destination folder  indicated below.";
+DestinationNT.Label2.Title   = "\n";
+DestinationNT.Label3.Title   = "To install to this folder , click Next.";
+DestinationNT.Label4.Title = "You may select another folder from the existing folder list";
+DestinationNT.Label5.Title   = "\n";
+DestinationNT.Label6.Title   = "You can choose not to install the hot fix by clicking Cancel to exit setup.";
+DestinationNT.Label7.Title   = "\n";
+DestinationNT.Frame.Title    = "Destination Folder";
+DestinationNT.ListFoldersFrame.Title    = "Existing installation folders";
+//---------------------------------------------------------------------------
+//  MEDIA PRODUCT  
+//---------------------------------------------------------------------------
+
+WndMediaHFX.Title     = "Dassault Systemes Hot Fix Setup";
+MediaHFX.Label1.Title = "Setup will install the hot fix indicated below in /p1";
+MediaHFX.Label2.Title = "If you want to continue, click Next.";
+MediaHFX.Label3.Title = "You can choose not to install the hot fix by clicking Cancel to exit setup.                     " ;
+MediaHFX.ListLabel.Title = "Dassault Systemes Hot Fix";
+MediaHFX.BlankLabel.Title = "\n";
+MediaHFX.AvailableSize = "Available space :/p1 Kb ";
+MediaHFX.RequiredSize = "Required space  :/p1 Kb ";
+
+//---------------------------------------------------------------------------
+//  RESUME 
+//---------------------------------------------------------------------------
+
+WndResume.Title        = "Start Copying Hot Fix Files";
+Resume.Label1.Title = "Setup has enough information to start copying the program files.";
+Resume.Label2.Title = "You can verify the current settings.";
+Resume.Label3.Title = "If you want to review or change any settings, click Back.";
+Resume.Label4.Title = "To begin copying files, click Install.";
+Resume.Label5.Title = "\n";
+Resume.SettingLabel.Title = "Current Settings";
+Resume.ProductName.Title = "Dassault Systemes Hot Fix";
+Resume.DestinationName.Title = "Destination Directory";
+Resume.Required.Title = "Required space : /p1 Kb";
+Resume.Avail.Title =    "Available space : /p1 Kb";
+Resume.BCancel = "Install";
+
+
+//---------------------------------------------------------------------------
+//  FINISH 
+//---------------------------------------------------------------------------
+WndFinish.Title        = "End of Hot Fix Setup";
+Finish.LabelInterrupt1.Title = "Setup was interrupted.";
+Finish.LabelInterrupt2.Title = "\n";
+Finish.LabelInterrupt3.Title = "For more information, consult log file $HOME/cxinst.log.";
+Finish.LabelInterrupt4.Title = "\n";
+Finish.LabelInterrupt5.Title = "\n";
+Finish.LabelTransferKO1.Title = "Setup transfer has failed.";
+Finish.LabelTransferKO2.Title = "\n";
+Finish.LabelTransferKO3.Title = "For more information, consult log file $HOME/cxinst.log.";
+Finish.LabelTransferKO4.Title = "\n";
+Finish.LabelTransferKO5.Title = "\n";
+Finish.LabelOKNoStart1.Title = "\n";
+Finish.LabelOKNoStart2.Title = "\n";
+Finish.LabelOKNoStart3.Title = "Setup has finished installing the hot fix on your computer.";
+Finish.LabelOKNoStart4.Title = "\n";
+Finish.LabelOKNoStart5.Title = "\n";
+Finish.BCancel = "Finish";
+
+
+//---------------------------------------------------------------------------
+//  EXIT 
+//---------------------------------------------------------------------------
+
+Exit.Title        = "Exit Setup";
+Exit.Label1.Title = "Setup is not complete. If you quit the Setup program now, the";
+Exit.Label2.Title = "program will not be installed.";
+Exit.Label3.Title = "You may run the Setup program later to complete the";
+Exit.Label4.Title = "installation.";
+Exit.Label5.Title = "\n";
+Exit.Label6.Title = "To continue installing the program, click Resume.";
+Exit.Label7.Title = "\n";
+Exit.Label8.Title = "To quit the Setup program, click Exit Setup.";
+Exit.BCancel = "Exit Setup";
+Exit.BOK  = "Resume";
+
+
+//---------------------------------------------------------------------------
+//  MESSAGES D'ERREURS  
+//---------------------------------------------------------------------------
+
+ErrWndCustomize.Title = "Error";
+ErrWndCustomize.Text  = "Error customizing hot fix setup";
+
+
+ErrWndTransfer.Title = "Error";
+ErrWndTransfer.Text  = "Error copying files.\nContact your administrator.";
+
+ErrWndBadDir.Title   = "Error";
+ErrWndBadDir.Text    = "Incorrect Installation Directory";
+
+ErrWndSizeToUnload.Title = "Error";
+ErrWndSizeToUnload.Text = "Available\t : /p1 KBytes\nRequired\t : /p2 KBytes\n\nNot enough space to copy in /p3\n";
+
+ErrWndSyntaxDir.Title = "Error";
+ErrWndSyntaxDir.Text = "Syntax of destination directory is incorrect.\nSpace and tab are forbidden.\n";
+
+ErrWndStatFile.Title = "Error";
+ErrWndStatFile.Text = "Problem accessing directory statistics :\n/p1\n\n/p2\n";
+
+ErrWndEmptyDir.Title = "Error";
+ErrWndEmptyDir.Text = "/p1 must be empty\n";
+
+ErrWndFileAlreadyExist.Title = "Error";
+ErrWndFileAlreadyExist.Text = "Can't create the directory /p1\nThe name already exists.\n";
+
+ErrWndAvailSpace.Title = "Error";
+ErrWndAvailSpace.Text = "Error computing available space on disk /p1:\n/p2\n";
+
+ErrWndRequiredSpace.Title = "Error";
+ErrWndRequiredSpace.Text = "Error computing required space.\n/p1/p2\n";
+
+ErrWndDiskInfo.Title = "Error";
+ErrWndDiskInfo.Text = "Unable to get disk information :/p1\n";
+
+
+ErrWndProductAllInstalled.Title = "Error";
+ErrWndProductAllInstalled.Text = "All the products on the CD-ROM are already installed.\n";
+
+ErrWndNoSPK.Title = "Error";
+ErrWndNoSPK.Text = "There is no Hot Fix on media";
+
+ErrWndMediaTocError.Title = "Error";
+ErrWndMediaTocError.Text = "An error was found in Media TOC :/p1";
+
+ErrWndBadPresent.Title = "Error";
+ErrWndBadPresent.Text ="Invalid format for file /p1 :/p2\n";
+
+ErrWndOS.Title = "Error";
+ErrWndOS.Text = "You cannot install /p1 operating system data onto the /p2 operating system.\n";
+
+ErrWndExtractCab.Title = "Error";
+ErrWndExtractCab.Text = "Cannot extract file /p1 from cabinet file /p2\n";
+
+ErrWndExtractTar.Title = "Error";
+ErrWndExtractTar.Text = "Cannot extract file /p1 from tar file /p2\n";
+
+CheckTmpDir = "Check if /p1 is not full\n";
+ 
+ErrWndOpenControlFile.Title = "Error";
+ErrWndOpenControlFile.Text = "Cannot open control file /p1 : /p2\n";
+
+ErrWndRenameFile.Title = "Error";
+ErrWndRenameFile.Text = "Cannot rename file /p1 to /p2";
+
+ErrWndSaveFile = "Cannot save files before setup of hot fix:\n/p1.\nContact your administrator.";
+ErrWndTransfer = "Error during transfer. Contact your administrator \n.";
+
+ErrWndGALevel.Title = "Error";
+ErrWndGALevel.Text = "You cannot install /p1 level data onto a /p2 level installation";
+
+ErrWndAccessToc.Title = "Error";
+ErrWndAccessToc.Text = "/p1 was not unloaded\n";
+
+ErrWndOpenPresent.Title = "Error";
+ErrWndOpenPresent.Text = "Cannot open /p1 : /p2";
+
+ErrWndOpenToc.Title = "Error";
+ErrWndOpenToc.Text = "Cannot open /p1 : /p2";
+
+ErrWndEmptyMediaToc.Title = "Error";
+ErrWndEmptyMediaToc.Text = "List of configurations and/or products on CD-ROM is empty.";
+
+ErrWndNothingToUnload.Title = "Error";
+ErrWndNothingToUnload.Text = "Nothing to copy...?\n";
+
+ErrWndNoGA.Title   = "Error";
+ErrWndNoGA.Text    = "There are no Dassault Systemes configurations or products installed.";
+
+Information.Title  ="Information";
+InfoWindow.Title = "Information";
+ErrorWindow.Title = "Error";
+
+NotAdministrator="StartHFX requires administrator pivileges.";
+NotAdministratorBatch="StartHFXB requires administrator pivileges.";
+NotRoot="start requires root logon or the su - root command.";
+CATIAIsRunning="Problem unloading files.\nCheck if there is a Dassault Systemes process running.\nKill the process and restart the hot fix installation procedure.";
+ErrOpenLog="WARNING: Can't open log file/p1\n ";
+ErrSetupSPK ="End Hot Fix Setup  - rc = /p1 - See /p2 for more information"; 
+OKSetupSPK = "End Hot Fix Setup \n";
+ErrOpenFile = "WARNING : Can't open file /p1\n";
+MsgInterrupt = "Command interrupted by signal /p1\n";
+ErrLabels = "CATInsWindow: internal error- NBLabels = /p1 > MaxNbLabels =/p2\n";
+ErrVPMPeopleUpdate="Command VPMPeopleUpdate failed\n";
+ErrConsultLog="Consult file /p1\n";
+
+ErrorNotify="Error";
+WarningNotify="Warning";
+//----------------------------------------------------------------------------
+// BATCH 
+//----------------------------------------------------------------------------
+BatchSPK.RunningProcess="Processes listed below are running, preventing correct Hot Fix Installation\nPlease kill them and restart the installation program\n";
+ErrorBatchMissOption.Text = "You must specify options to use this batch\n";
+ErrorOptions="Bad options : \n";
+ErrorBadOption= "/p1 is not a valid option\n";
+Error_option_u = "option -u must be followed with a pathname\n";
+Error_option_betbC = "options -b and -bC cannot be used simultaneously\n";
+ErrorBadTOC = "File /p1 has a bad format:\n";
+ErrorNoSPK ="There is no Hot Fix to install on this media\n";
+ErrorNoGA="There is no GA installed in /p1\n";
+ErrorNoFolder = "Folder /p1 has been removed\n";
+ErrorBadDir ="Directory /p1 doesn't exist\n";
+ErrWndBadCopy="In batch mode, you need to copy the CD-ROMs in the same directory\n";
+ErrorNoFile ="File /p1 doesn't exist\n";
+ErrorBadPresent ="Invalid format for file /p1 :\n";
+ErrorNoPresent="There is no GA installed in /p1\nFile /p2 was not found\n";
+SPKLogInfo ="/p1 is going to be unloaded\n";
+ErrorBadMedia_1="You need to install Hot Fix level /p1 for code for /p2,before installing hot fix level /p3 for caa\n";
+ErrorBadMedia_2="Hot Fix Level /p1 for /p2 is already installed. You need to install the same level of hot fix for caa\n";
+WarningNeedInstallSPK_CAA="CAA is installed,so you need to install Hot Fix /p1 for CAA\n";
+NbCAFLogInfo="Number of CAF = /p1\n";
+ListCAFLogInfo="List of CAF : /p1\n";
+SizeLogInfo="Required space = /p1 Kb - Available space= /p2 Kb\n";
+SizeLogInfoAutomatic="Estimated required space= /p1 Kb (including /p2 Kb for temporary use) - Available space= /p3 Kb\n";
+UnloadCAFLogInfo="Unload /p1\n";
+UpdatePRESENTLogInfo="Update file PRESENT\n";
+Error_nooption_u="You must use option -u to specify where is your GA installation\n";
+CheckInteg="Check Setup Integrity :\n";
+CheckIntegKO="Check Integrity failed\n";
+CheckIntegInfo="For more information, consult /p1\n";
+CheckIntegWarning="You must re-install Hot Fix /p1\n";
+CheckIntegOK="Check Integrity successfully ended\n";
+BatchFailed="Batch Hot Fix Setup failed . Consult /p1 file\n";
+SetupSPKInterrupted ="Hot Fix Installation has been interrupted.\n";
+ErrorTransfert="SetupHFX failed during transfert - RC :/p1\n";
+ErrorOpenSPKLevel="Cannot open file /p1 - /p2\n";
+ErrorUpdateSPKLevel="\nImpossible to update LevelHFX.txt\nNo Hot Fix has been unloaded\n" ;
+ErrCommandFailed="Command /p1 failed\n";
+ErrCommandInterrupted ="Command /p1 was interrupted\n";
+ErrorOption_uMandatory="Option -u is mandatory to install this hot fix\n GA level /p1 is installed in /p2 folders\n";
+Help.Usage= "Usage: \n";
+Help.CommandLine="\nstart [-s] [-u unload directory] [-v] [-b] [-killprocess]\n";
+Help.CommandLineNT= "\nstarthfxb [-u unload directory]  [-v] [-killprocess]\n";
+Help.b         = "-b           : performs batch setup\n";
+Help.Unload    = "-u UnloadDir : specifies unload directory.If not used, default is /p1\n";
+Help.UnloadNT  = "-u UnloadDir : specifies unload directory, if there are several  installed GA\n";
+Help.v     =     "-v           : Verbose mode.\n";
+Help.killprocess="-killprocess : Kills processes which are running in installation folder\n";
+HelpSilent ="-s           : Silent mode.\n";
+

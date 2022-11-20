@@ -1,0 +1,1710 @@
+// =====================================================================
+//
+// Erreurs Framework 'Manufacturing'
+// =================================
+//
+// Deux manieres de formater vos messages : 
+//
+// a- Specifier en delimitant avec le caractere '\n' :
+//       Request      (ce que l'on tentait de faire)
+//       Diagnostic   (ce qui est arrive)
+//       Advice       (...ce qu'il pourrait faire si possible)
+//
+//     Exemple :
+//       ERR_3000 = "Initializing '/p1' attribute in '/p2'.\nAttribute does not exist.\nContact your local support.";  
+//       
+//               NOTE : Le parametrage des messages se fait via SetNLSParameter
+//
+// ou bien
+//
+// b- Specifier vos messages avec la cle + les 3 facettes Request/Diagnostic/Advice
+//
+//     Exemple :
+//       ERR_3000.Request    "Initializing '/p1' attribute in '/p2'." 
+//       ERR_3000.Diagnostic "Attribute does not exist."
+//       ERR_3000.Advice     "\nContact your local support."
+// 
+//               NOTE : Le parametrage de chaque facette se fait par :
+//                         Request    : SetNLSRequestParams
+//                         Diagnostic : SetNLSDiagnosticParams
+//                         Advice     : SetNLSAdviceParams
+//
+// =====================================================================
+
+
+//************************************************************
+// Plage reservee ERR_0000 a ERR_1999 
+//************************************************************
+ERR_1000 = "±z­n±N¤U¦C¬ÛÃö NC¿ï¶µ³]©w¦¨¬°¨t²Î³Ì¨Î¤Æ¶Ü? \n
+¤@¯ë:
+	¨ú®ø ¦Û°Ê§ó·s°Ê§@
+	¿ï¾Ü «G«×Åã¥Ü
+	¨ú®ø ¨ú®ø´¼¼z§Î NC ¼Ò¦¡ \n
+¸ê·½:
+	¨ú®ø ­×§ï«á¦Û°Ê¸ß°Ý \n
+¾Þ§@:
+	¨ú®ø ½Æ»s´X¦óÃìµ²
+¿é¥X:
+	³]©w Àx¦s¤M¨ã¸ô®|¦b¥~³¡ÀÉ®× (¬°¦±­±¥[¤u²£«~)
+	¨ú®ø ¦b¤M¨ã¸ô®|¤¤Àx¦s±µÄ²ÂI
+	³]©w ¤M¨ã¿é¥XÂI¬° ¤M¨ã¤¤¤ß
+¬Û¤ù©Î¼v¤ù:
+	³]©w ¼ÒÀÀ¦bµ{¦¡¼h¯Å
+	³]©w ¼v¹³¸I¼²¬°©¿²¤
+	³]©w ¿ù»~²°¬°µL
+        ¨ú®ø ¦b¿ï¨úÂIÅã¥Ü©Ò¦³¸ê°T
+	³]©w ¤M¨ã©M­±§Îªí²{¬° ¼Ð·Ç
+	³]©w ¬Û¤ù¸ÑªR«×¬° 0
+	³]©w ¤M¶b¤º´¡¨¤«×¬° 10 «×
+	¿ï¾Ü ³Ì¨Î¤Æ¼v¹³
+
+§Ú­Ì¤]«ØÄ³¤U¦C³]©w:
+      ¨ú®ø ¦b¤@¯ë³]©w¤¤ªº¦Û°ÊÀx¦s³]©w      
+      ³]©w ¦b¤@¯ë ®Ä¯à¤¤ªº¦^´_°ïÅ|¤j¤p¬°1
+      ³]©w ¦b¤@¯ë ¬Û®e©Ê IGES ¤¤ªº¿é¤J ³Ì¨Î¤Æ C2 ¤â°Ê¦Ü 0.01 
+      ¨ú®ø ¦±­±¥[¤u°Ê§@¤¤ªº ¹s¥ó¦Û°Ê­­¨î.
+
+      ¸û¦hªº¥[¤u¸ô®|ÂI(¶W¹L 100,000 ÂI®É), 
+	  «ØÄ³±z³]©w¿é¥X¼ÐÅÒ ¤M¨ã¸ô®|Àx¦s 
+	  ¬° Àx¦s¦b¥~³¡ÀÉ®× ¥H¸`¬Ù°O¾ÐÅé.";
+
+//
+//************************************************************
+// Plage messages generiques ERR_2000 a ERR_2999
+//************************************************************
+//
+
+ERR_2000.Diagnostic  = "µo¥Í¥¼¹w´Áªº¿ù»~.";
+ERR_2000.Advice = "½Ð¦A¸Õ¤@¦¸,©Î \n ½Ð³sµ¸±zªº¤ä´©°â°Ó.";
+
+ERR_2001 = "µo¥Í¥¼¹w´Áªº¿ù»~, ½Ð¦A¸Õ¤@¦¸,©Î \n ½Ð³sµ¸±zªº¤ä´©°â°Ó.";
+ERR_2002 = "ÄY­«¿ù»~. \n ¥[¤u³nÅé¿ù»~ : ¦s¨úµL®Ä¾Þ§@¼Æ­È. \n ½Ð³sµ¸±zªº¤ä´©°â°Ó.";
+ERR_2003 = "ÄY­«¿ù»~ '/p1' ¾Þ§@¼Æ­È '/p2'.\n ¥[¤u³nÅé¿ù»~ : »Ý¨D¥¢±Ñ. \n ½Ð³sµ¸±zªº¤ä´©°â°Ó.";
+ERR_2004 = "ÄY­«¿ù»~ ±q '/p2'\n  Åª¨ú©Î³]©w '/p1' ÄÝ©Ê. ¥[¤u³nÅé¿ù»~: ÄÝ©Ê¤£¦s¦b. \n ½Ð³sµ¸±zªº¤ä´©°â°Ó.";
+
+ERR_2005 = "µL¤M¨ã¥Ø¿ý©Î«á³B²z¾¹ªí. \n «ü©w¸ô®|: \p1 µL¤M¨ã¥Ø¿ý©Î«á³B²z¾¹ªí. \n ½ÐÀË¬d±zªºÀô¹Ò.";
+
+ERR_2006.Diagnostic = "µo¥Í¥¼¹w´Áªº¿ù»~. \n ¿ù»~¬O : /p1.";
+ERR_2006.Advice     = "½Ð¦A¸Õ¤@¦¸. §_«h½Ð³sµ¸±zªº¤ä´©°â°Ó.";
+
+ERR_3000 = "¤£¤ä´© '/p1' ¦b '/p2' ªºÄÝ©Ê. \n ÄÝ©Ê¥¼¦s¦b. \n ½Ð³sµ¸±zªº¤ä´©°â°Ó.";  
+ERR_3001 = " '/p1'. \n '/p1' ¬OµL®Äªº. \n ½Ð³sµ¸±zªº¤ä´©°â°Ó.";  
+ERR_3002 = "±q '/p2' Åª¨ú '/p1' ªºÄÝ©Ê. \n ÄÝ©Ê¥¼¦s¦b. \n ½Ð³sµ¸±zªº¤ä´©°â°Ó.";  
+ERR_3003 = "Åª¨ú '/p1'. \n ª«¥óµL®Ä. \n ½Ð³sµ¸±zªº¤ä´©°â°Ó.";  
+
+ERR_3004 = "Àô¹Ò°Ñ¼Æ³]©w¥¼´Á. \n ½ÐÀË¬d¬O§_³]©w:\nMFG_R10_WINDOW\nMFG_R8GA_EXPAND_GRAPH\nMFG_ODT_OLD_PPINST_PANEL";
+
+//************************************************************
+// Plage ERR_3010 a ERR_3099 : Activites
+//************************************************************
+//
+ERR_3010.Diagnostic = "©R¥O¥¢±Ñ.";
+ERR_3010.Advice     = "½Ð¦A¸Õ¤@¦¸, §_«h½Ð³sµ¸±zªº¤ä´©°â°Ó.";  
+
+//
+ERR_3011.Request    = "¹Ï¹³¦¨¥\Àx¦s.";
+ERR_3011.Diagnostic = "¹Ï¹³ÀÉ®× : /p1 \n ¤w¦¨¥\ªºÀx¦s¦b¬¡°Ê©Ê : /p2.";
+
+//
+
+// Gestion ToolAxis
+//
+ERR_3050.Request    = "¦b /p1 Åª¨ú¤M¨ã¶b."; 
+ERR_3050.Diagnostic = "¤M¨ã¶bµLªkÅª¨ú.";
+ERR_3050.Advice     = "½ÐÀË¬d¤M¨ã¶b¬O§_¥¿½T©w¸q.";
+//
+// Messages CutCopyPaste
+//
+ERR_3100.Request    = "°Å¤U©Î¶K¤W©Î½Æ»s©R¥O³B²z."; 
+ERR_3100.Diagnostic = "©R¥O¤w¥¢±Ñ.";
+ERR_3100.Advice     = "½Ð¦A¸Õ¤@¦¸, §_«h½Ð³sµ¸±zªº¤ä´©°â°Ó.";
+
+ERR_3101.Request    = "À|¸Õ±N '/p1' ¶K¦b '/p2' «á."; 
+ERR_3101.Diagnostic = "¦¹°Ê§@¤£¥i¯à.";
+ERR_3101.Advice     = "½Ð¿ï¾Ü¾A¦X '/p1' ªº´¡¤J¼h.";
+
+ERR_3102.Request    = "À|¸Õ±N '/p1' ¶K¦b '/p2' ¤W'."; 
+ERR_3102.Diagnostic = " ¦¹°Ê§@¤£¥i¯à .";
+ERR_3102.Advice     = "½Ð¿ï¾Ü¬Û®eªº¤¸¯À¨Ó¶K¤W '/p1'.";
+
+ERR_3103.Diagnostic = " ¦¹°Ê§@¤£¥i¯à ."; 
+
+ERR_3104.Diagnostic = "'/p1' ±q¥t¤@­Ó¤å¥ó¤W¦Ó¨Ó. µLªk±N¥¦¶K¦b³o­Ó¤W.";
+
+ERR_3105.Request    = "À|¸Õ«Ø¥ß½Æ»sÂà´«,  ¦b '/p1'«áªº COPY ©Î TRACUT«ü¥O."; 
+ERR_3105.Diagnostic = " '/p1' ¬¡°Ê¨S¦³±µ§Ç.";
+ERR_3105.Advice     = "\n ±z¥²¶·¿ï¾Ü¶¶§Ç¬¡°Ê¨Ó«Ø¥ß½Æ»sÂà´«, COPY ©Î TRACUT «ü¥O";
+
+ERR_3106.Diagnostic = "/p1 ¥¼³]©w¯Á¤Þ¤w³Q '/p2' §R°£.";
+//
+ERR_3107.Diagnostic = " '/p1' ¨S¦³¥¼³]©w¯Á¤Þ.";
+
+ERR_3108.Request    = "À|¸Õ¦b '/p2' «á¶K¤W '/p1' ."; 
+ERR_3108.Diagnostic = "»P '/p1' ©M '/p2' ¹s¥ó¤uªkªº²£«~¤£¦P.";
+ERR_3108.Advice     = "\n ½Ð¦b 2 ¹s¥ó¤uªk¨Ï¥Î¬Û¦P²£«~.";
+
+ERR_3109.Request    = "À|¸Õ¦b '/p1' «á¶K¤W."; 
+ERR_3109.Diagnostic = "³¡¥÷½Æ»sª«¥ó°Ñ¦Ò '/p1' ª«¥ó";
+ERR_3109.Advice     = "\n ½ÐÀ|¸Õ­×§ï¸ê®Æ²Õ¨Ó­×§ï½Æ»s. §_«h½Ð³sµ¸±zªº¤ä´©°â°Ó.";
+
+ERR_3110.Request    = "À|¸Õ¦b '/p1' ¶K¤W."; 
+ERR_3110.Diagnostic = "±µ¦¬¹s¥ó¤uªk¨S¦³²£«~¬ÛÃö. \n ¦b PPRHub Àô¹Ò, ±zµLªk¦b¦¹±¡§Î¥H´X¦óÃìµ²½Æ»s¨Ó½Æ»s.";
+ERR_3110.Advice     = "\n ±z¥²¶·¥ý¨Ï²£«~¬ÛÃö¦A¦b¹s¥ó¤uªk¤¤¨Ó½Æ»s¥ô¦ó°Ê§@.";
+
+ERR_3111.Request    = "À|¸Õ¦b '/p1' ¶K¤W."; 
+ERR_3111.Diagnostic = "¦b PPRHub Àô¹Ò, ±zµLªk¦b¥[¤u¤uªk¤¤¦³ NC ³]©w²Õ¥ß¬ÛÃö®É¥H´X¦óÃìµ²½Æ»s¨Ó½Æ»s.";
+ERR_3111.Advice     = "\n ±z¥²¶·«Ø¥ß·sªº¹s¥ó¤uªk, ±N²£«~»P·sªºµ{§Ç¬ÛÃö.\n µM«á±z¤~¥i¥H½Æ»s©Ò¦³µ{¦¡.";
+//
+// Messages Gestion Workbench
+//
+ERR_3200.Request    = "'/p1' ¤w³Q¿ï¨ú."; 
+ERR_3200.Diagnostic = "'/p1' ¦]ÄÝ©ó¥t¤@­Ó¤å¥ó,¬GµLªk­×§ï.";
+ERR_3200.Advice     = "¦p±z­n­×§ï '/p1', ½Ð¿ï¾Üµøµ¡©R¥O¨Ó±Ò°Ê¦¹¤å¥ó.";
+
+//
+// Messages Compensation
+//
+ERR_3250.Request    = "­×§ï ID /p1 ¤£¦A¦s¦b."; 
+ERR_3250.Diagnostic = "¬°¦¹°Ê§@ªº·s­×§ï¤l¤w¿ï.";
+ERR_3250.Advice     = "\n ¦p­n¨Ï¥Î¥¦½Ð¥ýÀË¬d.";
+
+ERR_3251.Diagnostic = "³B²z¤M¨ã¸ÉÀv¸¹½X®Éµo¥Í¿ù»~.";
+ERR_3251.Advice     = "\n ½ÐÀË¬d¸ÉÀv¸¹½X©M¨B§Ç¤¤©Ò¿ïªº¤M¨ã.";
+
+// Lathe
+ERR_3252.Request    = "¤M§â¤w§ó§ï."; 
+ERR_3252.Diagnostic = "¦¹¨B§Ç¤w¹w¿ï¸ÉÀv¸¹½X«¬¦¡ '/p1' \n ½ÐÀË¬d¬O§_¬O±z­nªº.";
+ERR_3252.Advice     = "\n ¦b¤M¤ù¤M§âªº¨ä¥¦¸ÉÀv«¬¦¡ : /p1";
+
+ERR_3253.Request    = "¥¼©w¸q¥Ø«e¤M¤ù¤M§â  '/p1' ªº¤M¨ã¸ÉÀv."; 
+ERR_3253.Diagnostic = "¦¹°Ê§@¤w¹w¿ï¤M¨ã¸ÉÀv«¬¦¡ '/p1' .";
+
+//====================================
+// Messages Gestion Machining Process (3300 - 3499)
+//====================================
+
+ERR_3300.Diagnostic = "¥[¤uµ{§Ç¥]§tµLªk¥[¤u¬Û¦P´X¦óªºµ{§Ç.";
+ERR_3300.Advice     = "\n ½T©w©Ò¦³¥[¤uµ{§Ç¥]§t¥i¥[¤u¬Û¦P´X¦óªºµ{§Ç.";
+
+ERR_3301.Request    = "'/p1' ¤w¿ï¾Ü."; 
+ERR_3301.Diagnostic = "'/p1' ¥[¤uµ{§Ç¨ã¦³¤£¬Û®eªºµ{§Ç.";
+ERR_3301.Advice     = "\n ½T©w '/p1' ¥[¤uµ{§Ç¨ã¦³¬Û®eªºµ{§Ç.";
+
+ERR_3302.Diagnostic = "µL®Äªº´X¦ó¿ï¾Ü.";
+ERR_3302.Advice     = "\n ½Ð¿ï¾Ü¨ã¦³´X¦ó¬Û®eªº¥[¤uµ{§Ç°Ê§@.";
+
+ERR_3303.Request    = "'/p1' ¤w¿ï¾Ü."; 
+ERR_3303.Diagnostic = "¥[¤uµ{§Ç°Ê§@µLªk´¡¤J¦b¦¹¼h¯Å.";
+ERR_3303.Advice     = "\n ½Ð¦bµ{¦¡¤¤¿ï¾Üµ{§Ç©Îµ{¦¡.";
+
+ERR_3304.Request    = "À³¥Î¥[¤uµ{§Ç '/p1'."; 
+ERR_3304.Diagnostic = "ÄY­«¿ù»~µo¥Í.";
+ERR_3304.Advice     = "\n ½Ð¦AÀ|¸Õ. §_«h½Ð³sµ¸±zªº¦a°Ï¤ä´©. \n/p1";
+
+ERR_3305.Request    = "À³¥Î¥[¤uµ{§Ç '/p1'."; 
+ERR_3305.Diagnostic = "/p1 °Ê§@¤w¦¨¥\«Ø¥ß.";
+
+ERR_3307.Request    = "¤M¨ãÀô¹Òªì©l¤Æ¥¢±Ñ."; 
+ERR_3307.Diagnostic = "¤M¨ã©Ò»Ý¶µ¥ØµLªk³Q°Ê§@³B²z.";
+ERR_3307.Advice     = "\n ½ÐÀË¬d¤â°Ê¤M¨ã¿ï¾Ü¤u§@¥¿½T. §_«h¡A½Ð³sµ¸±zªº¦a°Ï¤ä´©.";
+
+ERR_3308.Diagnostic = "¥[¤uµ{§Ç '/p1' ¬OªÅªº.";
+ERR_3308.Advice     = "\n ½Ð¦bÀ³¥Îµ{§Ç«e©w¸q°Ê§@. \n ¥[¤uµ{§Ç©w¸q¦b¤å¥ó '/p1 ¤¤'.";
+
+ERR_3309.Request    = "À³¥Î¥[¤uµ{§Ç '/p1'."; 
+ERR_3309.Diagnostic = " /p2 ­Ó°Ê§@¤¤¤w¦³ /p1 ­Ó°Ê§@³¡¤Àªì©l¤Æ.";
+ERR_3309.Advice     = "\n ½ÐÀË¬d¤U¦C°Ê§@ /p1 ªº¦³®Ä©Ê \n §¹¦¨°O¿ý¸ê°T:\n/p2";
+
+ERR_3310.Request    = "°Ê§@ '/p1' ªº´X¦óªì©l¤Æ."; 
+ERR_3310.Diagnostic = "´X¦óªì©l¤Æ¥¢±Ñ.";
+ERR_3310.Advice     = "½ÐÀË¬d´X¦ó¬O§_»P°Ê§@ /p1 ¬Û®e";
+
+ERR_3311.Request    = "¤M¨ã©Ò»Ý¶µ¥Ø¦b '/p1' ³B²z¤¤."; 
+ERR_3311.Diagnostic = "¤M¨ã©Ò»Ý¶µ¥Ø¥¢±Ñ.";
+ERR_3311.Advice     = "½ÐÀË¬d¤â°Ê¿ï¾Ü¤M¨ã /p1 ªº¦³®Ä©Ê";
+
+ERR_3312.Request    = "°Ê§@ '/p1' ªì©l¤Æ."; 
+ERR_3312.Diagnostic = "°Ê§@ªì©l¤Æ¥¢±Ñ.";
+ERR_3312.Advice     = "\n ½Ð¤â°Ê«Ø¥ß¬Û¦üªº°Ê§@. §_«h¡A½Ð³sµ¸±zªº¦a°Ï¤ä´©.";
+
+ERR_3313.Request    = "¦b '/p1' ªºªì©l°Ê§@µ{§Ç."; 
+ERR_3313.Diagnostic = "ªì©l°Ê§@µ{§Ç¥¢±Ñ.";
+ERR_3313.Advice     = "\n ½ÐÀ|¸Õ¤â°Ê«Ø¥ßµ{§Ç.";
+
+ERR_3314.Request    = "¦b '/p1' ªì©l¤½¦¡."; 
+ERR_3314.Diagnostic = "¤½¦¡ªì©l¤Æ¥¢±Ñ.";
+ERR_3314.Advice     = "½Ð¦b¾÷±ñµ{§Ç '/p2' ¤W½s¿è '/p1' ¤½¦¡¨ÓÀË¬d¥¦. \n/p3";
+
+ERR_3315.Request    = "½Ð¿ï¾Ü·s¿é¤J."; 
+ERR_3315.Diagnostic = "À³¥Î¥[¤uµ{§ÇµLªk¬O·s¿é¤Jªº.";
+ERR_3315.Advice     = "½Ð¦b¨ä¥¦¤å¥ó¿ï¾Ü·s¿é¤J.";
+
+ERR_3316.Request    = "¬° '/p1' ¶·³B²z¤M¨ã»Ý¨D."; 
+ERR_3316.Diagnostic = "¦b¶J¦s¤º®e¤¤¥¼µo²{±N¥Î¤M¨ã :\n/p1";
+ERR_3316.Advice     = "½ÐÀË¬d¥[¤u¤¤¥i¥Îªº¤M¨ã´X¦ó.";
+
+ERR_3317.Request    = "À³¥Î¥[¤uµ{§Ç '/p1'."; 
+ERR_3317.Diagnostic = "¥[¤uµ{§Ç¥²¶·À³¥Î¦b 'CATProcess' ¥[¤u¤å¥ó¤¤";
+ERR_3317.Advice     = "½Ð¦bÀ³¥Î¥[¤uµ{§Ç«e¡A¥ý¥Ñ ¶}©l + ¥[¤u ¨Ó«Ø¥ß CATProcess.";
+
+ERR_3318.Request    = "¦bµ{§Ç '/p1' ªº°Æµ{¦¡¤Wªì©l¤Æ´X¦ó."; 
+ERR_3318.Diagnostic = "°Æµ{¦¡°Ê§@ªº´X¦ó¹ïÀ³¥¢±Ñ.";
+ERR_3318.Advice     = "½ÐÀË¬d´X¦ó¬O§_»P°Æµ{¦¡°Ê§@ /p1 ¤@­P";
+
+ERR_3319.Request    = "©I¥s CATIMfgMacroMotionsGeomMapping CAA ¤¶­±¤è¦¡"; 
+ERR_3319.Diagnostic = "¥i¯à¬O¤èªk²£¥Í¤F¿ù»~±¡§Î \n ©Î¦^±Â²M³æ»P¿é¤Jªº¤j¤p¤£¦P.";
+ERR_3319.Advice     = "½ÐÀË¬d±zªº°õ¦æ±¡§Î©M½T»{¦^±Â²M³æªº¤j¤p";
+
+ERR_3320.Request    = "¸õ¦Ü¥­­±°Æµ{¦¡°Ê§@¹ïÀ³"; 
+ERR_3320.Diagnostic = "¦¹ºØ°Æµ{¦¡°Ê§@µLªkÀ³¥Î¦¹¤¸¯À¬°¥­­±";
+ERR_3320.Advice     = "½ÐÀË¬d±zªº¤¸¯À¬O§_¥i¥Î";
+
+ERR_3321.Request    = "´¡¤J¦C¿ï¾Ü"; 
+ERR_3321.Diagnostic = "©Ò¿ïª«¥óµLªk³Q¥Î¨Ó°õ¦æ ½Æ»s©Î²¾Âà «ü¥O";
+ERR_3321.Advice     = "±z¥²¶·¿ï¾Ü»s³yµ{¦¡©Î¨ä¤¤¤§¤@";
+
+ERR_3322.Request    = "¨Ì¾Ú '/p2' ¥[¤uµ{§Ç ÀË¬d©Ò¿ï¯S¼x '/p1' ¤¤"; 
+ERR_3322.Diagnostic = "°õ¦æÀË¬d¥¢±Ñ";
+ERR_3322.Advice     = "¨Ì¾Ú '/p1' ¯S¼xÄÝ©Ê½Ð±±¨î '/p2' ¥[¤uµ{§ÇÀË¬d. \n /p3";
+
+ERR_3323.Request    = "´¡¤J¦C¿ï¾Ü"; 
+ERR_3323.Diagnostic = "µLªk¿ï¾Ü¥[¤uµ{§Çªº¹w³]´¡¤J¦C";
+ERR_3323.Advice     = "±z¥²¶·¿ï¾Ü»s³yµ{¦¡©Î¨ä¤¤¤§¤@";
+
+ERR_3324.Request    = "ÀË¬d¤M¨ã²Õ¥ßÀx¦s¾¹ '/p1'."; 
+ERR_3324.Diagnostic = "¤M¨ã²Õ¥ßÀx¦s¾¹ÀË¬d¥¢±Ñ.";
+ERR_3324.Advice     = "¥H¤â°Ê¿ï¾Ü¤M¨ã²Õ¥ß¨Ó½T©w¤M¨ã²Õ¥ßÀx¦s¾¹ '/p1' ¦s¦b, ©Î \n ½T©w¦³¤@­Ó¥H¤Wªº¤M¨ã¥Ø¿ý. \n ¨ÃÀË¬d¦b ¤u¨ã + ¿ï¶µ ¥[¤u¸ê·½ ¤¤ªº¸ô®|. ";
+
+ERR_3325.Request    = "ÀË¬d¤M¨ã¶J¦s¤º®e '/p1'."; 
+ERR_3325.Diagnostic = "ÀË¬d¤M¨ã¶J¦s¤º®e¥¢±Ñ.";
+ERR_3325.Advice     = "¥H¤â°Ê¿ï¾Ü¤M¨ã¨Ó½T©w¤M¨ã¶J¦s¾¹ '/p1' ¦s¦b¡A§_«h½Ð³sµ¸·í¦a¨t²Î¤ä´©.";
+
+ERR_3326.Request    = "´¡¤J¦b '/p2' ¤¤ªº·s°Ê§@«¬¦¡  '/p1'."; 
+ERR_3326.Diagnostic = "´¡¤J¥¢±Ñ.";
+ERR_3326.Advice     = "¥Ñ©ó°Ñ¦Ò°Ê§@¥¼¥]§t¦b¥[¤uµ{§Ç¤¤¾É­P´¡¤J¥¢±Ñ, ©Î¦]¤U¦C­ì¦] :\n/p1";
+
+ERR_3351.Request    = "µLªk°_©l½s¿è¤½¦¡"; 
+ERR_3351.Diagnostic = "¤@©Î¦h­Ó­×§ï¤å¦r¾É­P»yªk¿ù»~";
+ERR_3351.Advice     = "\n ½ÐÀ|¸Õ¥u¼W¥[¤å¦r©Î§R°£¶}©l©Îµ²§ô¤½¦¡.";
+
+ERR_3352 = "±zµLªk¦b¹Bºâ¤l«á¥t¼W¥[¤@­Ó¹Bºâ¤l"; 
+ERR_3353 = "±zµLªk¦b ')' ©Î¹Bºâ¤l«á¥t¼W¥[¤@­Ó¹Bºâ¤l"; 
+ERR_3354 = "±zµLªk¦b¹Bºâ¤l«á¥t¼W¥[¤@­Ó¥\¯à"; 
+ERR_3355 = "±zµLªk¦b¨S¦³«e¤@­Ó '(' «á¥[¤@­Ó  ')'"; 
+ERR_3356 = "±zµLªk¦b¹Bºâ¤l«á¥t¼W¥[¤@­Ó¹Bºâ¤l"; 
+ERR_3357 = "±zµLªk¦b¹Bºâ¤l©Î¬A©·«á¼W¥[³æ¦ì"; 
+ 
+ERR_3358.Request    = "±zµLªk¥H¥ô¦ó²z¥Ñ¼W¥[ '/p1' ¦Ü¤½¦¡"; 
+ERR_3358.Diagnostic = "¤½¦¡ªº«e«á¤å¤£¤¹³\¦¹¼W¥[";
+ERR_3358.Advice     = "\n ¦pªG°ÝÃD¤´µM¦s¡A¦b½Ð­«·s©w¸q¤½¦¡.";
+
+ERR_3359.Request    = "µLªkÂà´« '/p1' ¦¨¬°§Aªº»y¨¥"; 
+ERR_3359.Diagnostic = "³B²z®Éµo¥ÍÂà´«¿ù»~";
+ERR_3359.Advice     = "\n ½ÐÀ|¸Õ­«·s©w¸q±zªº¤½¦¡. \n ¦pªG°ÝÃD¤´µM¦s¦b¡A½Ð³sµ¸±zªº¦a°Ï¤ä´©.";
+
+ERR_3360 = "¤£½×¦p¦ó¡A±zµLªk­×§ï±zªº¤½¦¡©w¸q"; 
+
+ERR_3361.Request    = " '/p1' ¤½¦¡­pºâ¤¤"; 
+ERR_3361.Diagnostic = "'/p1' °Ñ¼ÆµLªk¨Ï¥Î¦b¦¹¤½¦¡¤¤";
+ERR_3361.Advice     = "\n ½Ð¦b¥[¤uµ{§Ç¤¤­«·s©w¸q¤½¦¡¡A¨Ó½T©w¥¦¬O¥i­pºâªº";
+ 
+ERR_3362.Request    = " '/p1' ¤½¦¡­pºâ¤¤"; 
+ERR_3362.Diagnostic = "'/p1' °Ñ¼Æ¤£¬O¥[¤u¯S¼x°Ñ¼Æ";
+ERR_3362.Advice     = "\n ¦b«e«á¤å¤¤, ¦b¥[¤u¯S¼x°Ñ¼Æ¤¤¥¼µo²{¦¹°Ñ¼Æ \n ½ÐÅçÃÒ±z¥i¨Ï¥Î¥¦ (¥¦¦³¥X²{¦b¹Bºâ½s¿è¾¹¤¤¶Ü ?)"; 
+
+ERR_3364.Request    = " '/p1' ¤½¦¡­pºâ¤¤"; 
+ERR_3364.Diagnostic = " '/p1' ¬¡°Ê©Ê¤¤¨S¦³¬ÛÃöªº³]­p¯S¼x©Î¥[¤u°Ï°ì";
+ERR_3364.Advice     = "\n ·íÀ³¥Î¥[¤uµ{§Ç©Î¤£¦b¤½¦¡¤¤¨Ï¥Î¯S¼xÄÝ©Ê®É¥ô¿ï¤@­Ó³]­p¯S¼x";
+
+ERR_3366.Request    = " '/p1' ¤½¦¡­pºâ¤¤"; 
+ERR_3366.Diagnostic = "µLªk¨Ï¥Î '/p1' ³]­p¯S¼x°Ñ¼Æ";
+ERR_3366.Advice     = "\n ½ÐÅçÃÒ±z¥i¨Ï¥Îªº ±Mªù¤u§@Âi ";
+
+ERR_3367.Request    = " '/p1' ¤½¦¡­pºâ¤¤"; 
+ERR_3367.Diagnostic = "µLªk¨Ï¥Î³]­p©Î»s³y¯S¼x°Ñ¼Æ";
+ERR_3367.Advice     = "\n ¦¹¬°³nÅé­­¨î";
+
+ERR_3368.Request    = " '/p1' ¤½¦¡­pºâ¤¤"; 
+ERR_3368.Diagnostic = "¨S¦³¥[¤u¯S¼x¬ÛÃö '/p1' ¥[¤u°Ê§@";
+ERR_3368.Advice     = "\n ¦pªG¨S¦³«Ø¥ß¥[¤u¯S¼x¡A½Ð¤£­n¨Ï¥Î¦b¤½¦¡¤ºªº¥[¤u¯S¼x";
+
+ERR_3369.Request    = " '/p1' ¤½¦¡­pºâ¤¤"; 
+ERR_3369.Diagnostic = "¨S¦³¥[¤u°Ê§@¤w©w¸q©Î­pºâ";
+ERR_3369.Advice     = "\n ±zµLªk¦b«e«á¤å¤¤¨Ï¥Î°Ê§@©Î¤M¨ãÄÝ©Ê";
+
+ERR_3370.Request    = " '/p1' ¤½¦¡­pºâ¤¤"; 
+ERR_3370.Diagnostic = "'/p1' °Ñ¼Æ¤£¬O°Ê§@°Ñ¼Æ";
+ERR_3370.Advice     = "\n ½Ð½s¿è±z¥i¨Ï¥Î¨Ó½s¿èªº°Ê§@";
+
+ERR_3371.Request    = " '/p1' ¤½¦¡­pºâ¤¤"; 
+ERR_3371.Diagnostic = "'/p1' °Ñ¼Æ¤£¬O¤@­Ó¤M¨ã°Ñ¼Æ";
+ERR_3371.Advice     = "\n ½ÐÀË¬d¦¹°Ñ¼Æ¬O¯uªº¤M¨ã°Ñ¼Æ";
+
+ERR_3372.Request    = " '/p1' ¤½¦¡­pºâ¤¤"; 
+ERR_3372.Diagnostic = "¦b '/p1' ¤¤ªºÄÝ©ÊµLªk¨Ï¥Î";
+ERR_3372.Advice     = "\n ½Ð¤£­n¨Ï¥Î¦¹¤è¦¡";
+
+ERR_3373.Request    = " '/p1' ¤½¦¡­pºâ¤¤"; 
+ERR_3373.Diagnostic = "©Ò¦Ò»{¸ê·½ (¥Ñ¤uªk¦Ó¨Óªº¤M¨ã©Î¥Ø«e¹s¥ó¤uªkªº¾÷¨ã) \n ¤£¾A¥Î '/p1' °Ê§@";
+ERR_3373.Advice     = "\n ½ÐÀË¬d¥¼§ä¨ì¸ê·½­ì¦].\n µL¤M¨ã¸ß°Ý­ì¦]©Î¨S¦³¹s¥ó¤uªk¼vÅT¾÷¨ã, \n ¤£­n¦bªí²{¤è¦¡¤¤¨Ï¥Î¸ê·½ÄÝ©Ê (¤½¦¡, »Ý¨D¤M¨ã, ÀË¬d, ³W«h)";
+
+ERR_3374.Request    = " '/p1' ¤½¦¡­pºâ¤¤"; 
+ERR_3374.Diagnostic = "'/p1' ÄÝ©Ê¤£¬O '/p2' ¬¡°ÊÄÝ©Ê©ÎµLªk¨Ï¥Î";
+ERR_3374.Advice     = "\n ½ÐÀË¬d¤½¦¡¥i¥H³Q¼W¥[¦ÜÄÝ©Ê¤¤.";
+
+ERR_3375.Request    = " '/p1' ¤½¦¡­pºâ¤¤"; 
+ERR_3375.Diagnostic = "¤½¦¡ªº '/p1' ¥»ÅéµLªk¦b '/p3' ¬¡°Ê©Êªº '/p2' ÄÝ©Ê¤¤³Q«Ø¥ß";
+ERR_3375.Advice     = "\n ½ÐÅçÃÒ '/p1' ÄÝ©Ê¤¤¥i¥H¾Ö¦³³o¨Ç¤½¦¡";
+
+ERR_3376.Request    = " '/p1' ¤½¦¡­pºâ¤¤"; 
+ERR_3376.Diagnostic = "'/p2' ÄÝ©Ê¬ÛÃöªº¤½¦¡ '/p1'  µLªk³Q­pºâ";
+ERR_3376.Advice     = "\n ¬°§ó¦h¸ê°T½Ð½s¿è '/p1' ¬¡°Ê©Ê";
+
+ERR_3377.Request    = " ªì©l¤M¨ã»Ý¨D¤½¦¡­pºâ¤¤"; 
+ERR_3377.Diagnostic = "µLªk¸ü¤J '/p1' ª¾ÃÑ¤å¥ó³nÅé";
+ERR_3377.Advice     = "\n ½ÐÅçÃÒ±z¥i¦b«e«á¤å¤¤¨Ï¥Î¦¹³nÅé. \n ¦pªG°ÝÃD¤´µM¦s¦b¡A½Ð³sµ¸±zªº¦a°Ï¤ä´©.";
+
+ERR_3378.Request    = " '/p1' ¤M¨ã»Ý¨D¤½¦¡­pºâ¤¤"; 
+ERR_3378.Diagnostic = "'/p1' ¤£¬O¤wª¾¤M¨ã§Î¦¡©Î»P»¡©ú '/p2' ¤£¬ÛÃö";
+ERR_3378.Advice     = "\n ½ÐÀË¬d '/p1' ¬O¦³®Äªº¤M¨ã§Î¦¡¦WºÙ.";
+
+ERR_3379.Request    = " '/p1'  ¤M¨ã»Ý¨D¤½¦¡­pºâ¤¤"; 
+ERR_3379.Diagnostic = "'/p1' ¤½¦¡¥»Åé©M¥¦ªº '/p2' Ã±¦W¨Ï¦b '/p3' ¬¡°Ê©Ê¤WµLªk­pºâ";
+ERR_3379.Advice     = "\n ½ÐÀË¬d¤£¦P°Ñ¼Æ¨Ì¾Ú¥¦­Ìªº³æ¦ì¡A¦³®Ä©Ê©Î¨ä¥¦©Ê½è¬O§_¥i¥Î.";
+
+ERR_3380.Request    = " '/p1' ªí²{¤è¦¡"; 
+ERR_3380.Diagnostic = "¬° '/p1' ¬¡°Ê, ªí²{¤è¦¡µLªk­pºâ";
+ERR_3380.Advice     = "\n ½ÐÀË¬d±z¥i¨Ï¥Îªºªí²{¤è¦¡";
+
+ERR_3381.Request    = " '/p1' ªí²{¤è¦¡"; 
+ERR_3381.Diagnostic = "ªí²{¤è¦¡ '/p1' ¥»Åé©M¬ÛÃö '/p2' ¬¡°ÊµLªk«Ø¥ß";
+ERR_3381.Advice     = "\n ½ÐÀË¬d±z¥i¨Ï¥Îªºªí²{¤è¦¡";
+
+ERR_3382.Request    = " '/p1' ªí²{¤è¦¡"; 
+ERR_3382.Diagnostic = "ªí²{¤è¦¡ '/p1' ¥»ÅéµLªk­pºâ";
+ERR_3382.Advice     = "\n ½ÐÀË¬d±zªºªí²{¤è¦¡¬O¥¿½Tªº";
+
+ERR_3383.Request    = " '/p1' ³]­p¯S¼x¹ï¬M"; 
+ERR_3383.Diagnostic = "©I¥s¤U¦C¤èªk¿ù»~ : '/p1'";
+ERR_3383.Advice     = "\n ½ÐÀË¬d±zªº '/p1' CAA ¤¶­±.";
+
+ERR_3384.Request    = " '/p1' ¶b¦V°Ê§@¤Wªº¨Ï¥ÎªÌ¯S¼x¹ï¬M"; 
+ERR_3384.Diagnostic = " '/p1' ¿é¤Jªº¨Ï¥ÎªÌ¯S¼xµLªk¥Î°µÆpÂI";
+ERR_3384.Advice     = "\n ½Ð¦b¥[¤uµ{§Ç°Ê§@ªº½s¿è¤½¦¡¿ï¾ÜÀË¬d¬ÛÃöªºÆpÂI¦WºÙ©Î¹w³]ªº CATMfgUdfForMappingToMfg.CATNls ¬M¹ïÀÉ®×";
+
+ERR_3385.Request    = " '/p1' ¶b¦V°Ê§@¤Wªº¨Ï¥ÎªÌ¯S¼x¹ï¬M"; 
+ERR_3385.Diagnostic = " ¥¼§ä¨ì '/p1' ¥Î°µÆpÂIªº¨Ï¥ÎªÌ¯S¼x";
+ERR_3385.Advice     = "\n ½Ð¦b¥[¤uµ{§Ç°Ê§@ªº½s¿è¤½¦¡¿ï¾ÜÀË¬d¬ÛÃöªºÆpÂI¦WºÙ©Î¹w³]ªº CATMfgUdfForMappingToMfg.CATNls ¬M¹ïÀÉ®×";
+
+ERR_3386.Request    = " '/p1' ¶b¦V°Ê§@¤Wªº¨Ï¥ÎªÌ¯S¼x¹ï¬M"; 
+ERR_3386.Diagnostic = " '/p1' ¿é¤Jªº¨Ï¥ÎªÌ¯S¼xµLªk¥Î°µÆpÂI";
+ERR_3386.Advice     = "\n ½Ð¦b¥[¤uµ{§Ç°Ê§@ªº½s¿è¤½¦¡¿ï¾ÜÀË¬d¬ÛÃöªºÆpÂI¦WºÙ©Î¹w³]ªº CATMfgUdfForMappingToMfg.CATNls ¬M¹ïÀÉ®×";
+
+ERR_3387.Request    = " '/p1' ¶b¦V°Ê§@¤Wªº¨Ï¥ÎªÌ¯S¼x¹ï¬M"; 
+ERR_3387.Diagnostic = " ¥¼§ä¨ì '/p1' ¥Î°µÆpÂIªº¨Ï¥ÎªÌ¯S¼x";
+ERR_3387.Advice     = "\n ½Ð¦b¥[¤uµ{§Ç°Ê§@ªº½s¿è¤½¦¡¿ï¾ÜÀË¬d¬ÛÃöªºÆpÂI¦WºÙ©Î¹w³]ªº CATMfgUdfForMappingToMfg.CATNls ¬M¹ïÀÉ®×";
+
+ERR_3388.Request    = "¶b¦V¸ê®Æ¤Wªº  '/p1' ¯S¼x¹ïÀ³"; 
+ERR_3388.Diagnostic = " ¯S¼x '/p1' µLªk¦bÆp¤Õ°}¦C©Î¨BÆJ¤W¹ïÀ³";
+ERR_3388.Advice     = "\n ©ó«È¤áÀô¹Ò, ±z¥²¶·°õ¦æ CATIMfgDesignHoleParameters ¤¶­±";
+
+ERR_3389.Request    = " '/p1' ¤½¦¡¸Ñ¨M¤¤";
+ERR_3389.Diagnostic = "µLªk­pºâ¬ÛÃö '/p2' enumerated ÄÝ©Êªº¤½¦¡ '/p1' ¥»Åé";
+ERR_3389.Advice     = "\n ½ÐÀË¬d±z¥i¨Ï¥Îªº¸ê®Æ \n ¥i¯à¼Æ­È¬° : '/p1'";
+
+//************************************************************
+// Plage ERR_3500 a 3999 : Messages Activites
+//************************************************************
+//
+// Messages generiques ToolPath
+//
+ERR_3500.Request    = "­pºâ¤M¨ã¸ô®|."; 
+ERR_3500.Diagnostic = "µLªk¬° '/p1' ­pºâ¤M¨ã¸ô®|.";
+ERR_3500.Advice     = "¦pªG¦¹°Ê§@»Ý­n­«ÂÐ, ½Ð³sµ¸±zªº¤ä´©°â°Ó.";
+//
+// Messages generiques Lecture sur Ressource 
+//
+ERR_3530.Request    = "¦b '/p1' ¤WÅª¨ú¾÷¾¹."; 
+ERR_3530.Diagnostic = "¾÷¾¹¥¼©w¸q.";
+ERR_3530.Advice     = "¦b '/p1' ¤W©w¸q¾÷¾¹.";
+
+ERR_3531.Request    = "¦b '/p1' ¤WÅª¨ú¹B°Ê¸ê°T."; 
+ERR_3531.Diagnostic = "¦b '/p1' ¤W¥¼µo²{¹B°Ê¸ê°T.";
+ERR_3531.Advice     = "½ÐÀË¬d¾÷¾¹¬O§_³Q¥¿½T©w¸q¦b '/p1' ¤W.";
+
+ERR_3532.Request    = "¦b '/p1' ¤WÅª¨ú¸ê°T."; 
+ERR_3532.Diagnostic = "¸ê°T '/p1' ¬OµL®Äªº.";
+ERR_3532.Advice     = "½ÐÀË¬d '/p1' §_³Q¥¿½T©w¸q¦b '/p2' ¤W.";
+
+//
+// Messages Generation de Rotation Machine 
+//
+ERR_3533.Diagnostic = "'/p1' ¦ì¸mµLªk¹F¨ì.";
+ERR_3533.Advice     = "­×§ï¦b '/p1' ¤Wªº±ÛÂà¶b©w¸q¦b '/p2' ¤W©Î '/p3' ¤M¨ã¶b.";
+//
+ERR_3534.Diagnostic = "µLªk±N±ÛÂà©w¸q¦b '/p1' ¤W.";
+ERR_3534.Advice     = "­×§ï¾÷¾¹¦b '/p1' ¤W.";
+//
+ERR_3535.Diagnostic = "ÁöµM¨S¦³©w¸q¾÷¾¹,¦ý /p1 ±ÛÂà¤w«Ø¥ß.";
+ERR_3535.Advice     = "¦b '/p1' ¤W©w¸q¾÷¾¹¨Ó«Ø¥ß¦³®Ä±ÛÂà.";
+//
+ERR_3536.Diagnostic = "/p1 ±ÛÂà¤w³Q¦¨¥\«Ø¥ß.";
+//
+ERR_3537.Diagnostic = "©R¥O¦¨¥\§¹¦¨. ¨S¦³¾÷¾¹±ÛÂà³Q«Ø¥ß.";
+//
+ERR_3538.Diagnostic = "'/p1' ¥¼§¹¦¨.";
+ERR_3538.Advice     = "²£¥Í¾÷¾¹±ÛÂà¤§«e¥ý§¹¦¨©w¸q©Î¤£±Ò°Ê '/p1' .";
+//
+ERR_3539.Diagnostic = "/p1 ¶W¥X /p2 ¾÷¾¹±ÛÂà¤w³Q¦¨¥\§R°£.";
+//
+ERR_3540.Diagnostic = "©R¥O¦¨¥\§¹¦¨. ¨S¦³¦Û°Ê¾÷¾¹±ÛÂà¨Ó§R°£.";
+//
+ERR_3541.Diagnostic = "©w¸q¾÷¨ã«eµLªk±ÛÂà.";
+ERR_3541.Advice     = "½Ð¥ý©w¸q¾÷¨ã '/p1' ¦A³B²z©R¥O.";
+//
+ERR_3542.Diagnostic = "©w¸q¦b '/p2' ªº¾÷¨ã '/p1' ¨S¦³¦¹¥\¯à.";
+//
+ERR_3543.Diagnostic = "±ÛÂàÂà´«µL®Ä.";
+ERR_3543.Advice = "½Ð­×§ï©Î²¾°£¦¹±ÛÂàÂà´«.";
+
+ERR_3544.Diagnostic = "¤M¨ã¤è¦V¤£¥i¥­¦æ¾÷¨ã±ÛÂà¶b.";
+ERR_3544.Advice     = "­×§ï±ÛÂà¶b©Î©w¸q¦b '/p2' ¤¤ªº¤M¨ã¤è¦V '/p1' .";
+//
+ERR_3545.Diagnostic = "'/p1' ¤M¶b»P¾÷¨ã±ÛÂà¶b¥­¦æ.";
+ERR_3545.Advice     = "­×§ï©w¸q¦b '/p2' ¤¤ªº¾÷¨ã±ÛÂà¶b '/p1'  ©Î¤M¶b '/p3'.";
+//
+ERR_3546.Diagnostic = "§É¥x­ìÂI¤£¥i»P¾÷¨ã±ÛÂà¶b¥­¦æ.";
+ERR_3546.Advice     = "­×§ï±ÛÂà¶b©Î©w¸q¦b '/p2' ¤¤ªº§É¥x­ìÂI '/p1' .";
+//
+ERR_3547.Diagnostic = "'/p1' ¤M¨ã¶b»P¾÷¾¹±ÛÂà¶b¥­¦æ,
+¥H­PµLªk­pºâ¤M¨ã¸ô®| '/p2' .";
+ERR_3547.Advice     = "­×§ï©w¸q¦b '/p2' ªº±ÛÂà¶b '/p1' ©Î¤M¨ã¶b '/p3',
+©Î­pºâ¤M¨ã¸ô®| '/p4'.";
+
+//
+ERR_3548.Diagnostic = "¦]¦b '/p1' ¤¤ªº¾÷¾¹©w¸q¾É­PµLªk°õ¦æ±ÛÂà.";
+ERR_3548.Advice     = "¨Ï¥Î©R¥O¨Ó²£¥Í¶¶±µ¸ô®|.";
+
+ERR_3549.Request    = "¾÷¨ã±ÛÂà¤M¨ã¸ô®|­pºâ."; 
+ERR_3549.Diagnostic = "¤M¨ã¸ô®|ªº«e¤@­ÓÂI©Î¶b,¾÷¨ãµLªk¹F¨ì."; 
+ERR_3549.Advice     = "\n ½ÐÀË¬d¬°¦óµLªk¨ì¹F¦ì¸m.";
+
+ERR_3800.Request    = "¥Ñ '/p1' Åª¨ú¤M¨ã¸ô®|."; 
+ERR_3800.Diagnostic = "¤M¨ã¸ô®| '/p1' ¥¼­pºâ.";
+ERR_3800.Advice     = "\n ­pºâ¾÷¨ã±ÛÂà¤M¨ã¸ô®|«e½Ð¥ý­pºâ '/p1' .";
+
+ERR_PRJ_ROTAXIS01     = "¦¹±ÛÂà¶bµL®Ä.";
+ERR_PRJ_ROTAXIS02     = "µL¥i¥Î±ÛÂà¶b.";
+//
+// Messages Generation de Tool Change 
+//
+ERR_3550.Diagnostic = "©R¥O¦¨¥\§¹¦¨. ¨S¦³¤M¨ã§ó´«³Q«Ø¥ß.";
+//
+ERR_3551.Diagnostic = "/p1 ¤M¨ã§ó´«³Q¦¨¥\«Ø¥ß.";
+//
+ERR_3552.Diagnostic = "/p1 ¶W¥X /p2 ¤M¨ã§ó´«¤w³Q¦¨¥\§R°£.";
+//
+ERR_3553.Diagnostic = "©R¥O¦¨¥\§¹¦¨. ¨S¦³¦Û°Ê¤M¨ã§ó´«¨Ó§R°£.";
+//
+//
+// Messages Gestion contexte creation activite 
+//
+ERR_3560.Diagnostic = "¹s¥ó¤uªk¤¤¥¼¿ï¾Ü¾÷¨ã.\n ¦b¦¹±¡§Î¤M¶b¬° (Z+) ¥B®|¦V¶b¬° (X+) ¬Û¹ï©w¸q©ó¹s¤û¤uªk¤¤ªº¥[¤u¶b¨t.\n
+These two axes define the turning machining plane. Geometry to be selected must lie on this plane.";
+ERR_3560.Advice     = "\nTo specify other axes, define a machine. For milling machine, define local turning machining planes.";
+//
+ERR_3561.Diagnostic = "Axial and Radial axes for part spindle plane not correctly defined.";
+ERR_3561.Advice     = "\nCheck definition of Axial and Radial identificators on Machine";
+
+ERR_3562.Diagnostic = "Axial and Radial axes for turret plane not correctly defined.";
+ERR_3562.Advice     = "\nCheck definition of Axial and Radial identificators on Machine";
+//
+// Messages pour AutoSequence
+// --------------------------
+ERR_3600.Request    = "¥H ¶ZÂ÷·j´M ©Î §ÉÂi¨¤«× ªº´X¦ó¼Ð·Ç¨Ó°õ¦æ¦Û°Ê±Æ§Ç."; 
+ERR_3600.Diagnostic = "¥[¤u°Ê§@ /p1 ¤£¬O³Ì·sªº.";
+ERR_3600.Advice     = "¥H´X¦ó¼Ð·Ç¦Û°Ê±Æ§Ç¶·­n³Ì·sªº¥[¤u°Ê§@­pºâ, ©Ò¥H½Ð½T©w©Ò¿ïªº¥[¤u°Ê§@³£¬O³Ì·s¥B³Q­pºâ¹Lªº.";
+
+ERR_3601.Request    = "¥H ¶ZÂ÷·j´M ©Î ¨¤«× ªº´X¦ó¼Ð·Ç¨Ó°õ¦æ¦Û°Ê±Æ§Ç."; 
+ERR_3601.Diagnostic = "¥[¤u°Ê§@ /p1 ¥¼­pºâ.";
+ERR_3601.Advice     = "¦Û°Ê±Æ§Ç¶·­n¤w­pºâªº¥[¤u°Ê§@, ©Ò¥H½Ð½T©w©Ò¿ïªº¥[¤u°Ê§@³£¬O³Q­pºâ¹Lªº.";
+
+ERR_3602.Request    = "An insertion point in program has been defined, so no program should be selected to be sequenced."; 
+ERR_3603.Request    = "An insertion point in program has been defined, so all selected machining operations should be in same program."; 
+ERR_3604.Request    = "The insertion point is a program, it should be the one owning the machining operations to be sequenced."; 
+ERR_3605.Request    = "An insertion point in program has been defined, it should not be one of the selected machining operations."; 
+ERR_3606.Request    = "An insertion point in program has been defined, it should be in same program than the selected machining operations."; 
+
+// Messages Generation de Auto Complete
+// --------------------------
+ERR_3700.Request    = "¦b '/p1' ¤¤Åª¨ú¤M¨ã¸ô®|."; 
+ERR_3700.Diagnostic = "¤M¨ã¸ô®| '/p1' ¥¼­pºâ.";
+ERR_3700.Advice     = "\n ²£¥Í¶¶±µ¸ô®|«e,­pºâµ{¦¡ªº©Ò¦³¤uªk.";
+
+ERR_3701.Request    = "­pºâ¥Ñ '/p1' ¦Ü '/p2' ªº¶¶±µ¸ô®|."; 
+ERR_3701.Diagnostic = "¾÷¾¹µLªk¨ì¹Fªº³Ì«á '/p1' ªºÂI©Î¶b."; 
+ERR_3701.Advice     = "\n ½ÐÀË¬d¥¼¦óµLªk¨ì¹F¦¹¦ì¸m.";
+
+ERR_3702.Request    = "­pºâ¥Ñ '/p1' ¦Ü '/p2' ªº¶¶±µ¸ô®|."; 
+ERR_3702.Diagnostic = "¾÷¾¹µLªk¨ì¹Fªº²Ä¤@­Ó '/p1' ªºÂI©Î¶b."; 
+ERR_3702.Advice     = "\n ½ÐÀË¬d¥¼¦óµLªk¨ì¹F¦¹¦ì¸m.";
+
+ERR_3703.Request    = "¦b '/p1' ¤WÅª¨ú¤M¨ã¸ô®|.";
+ERR_3703.Diagnostic = "'/p1' ¤£¬O³Ì·s¥B¤]¥¼Âê©w. ¥¦¬O¤£¥i¾aªº."; 
+ERR_3703.Advice     = "\n ½ÐÂê©w¦¹¤uªk¨Ã­«·s­pºâ¤@¦¸.";
+
+//
+//************************************************************
+// Plage ERR_4000 a 4499 : Messages Item (Geometrie, etc)     
+//************************************************************
+//
+ERR_4000 = "µL¾Fªñ­×°Å­±. \n ©Ò¿ï­×°Å­±¥²¶·¦b¤§«e©Ò¿ï­×°Å­±®ÇÃä.";
+ERR_4001 = "¦ì¸m¤w³Q³]­p°}¦Cªì©l¤Æ";
+ERR_4002 = "­×°Å­±¥¼¥­¦æ¤M¨ã¶b. \n ¦±­±¯S©Ê½u¥²¶·¥­¦æ¤M¨ã¶b /p1.";
+ERR_4003 = "¤£¬O³W«h­×°Å­±. \n ©Ò¿ï­×°Å­±¥²¶·¬O³W«h­×°Å­±(Ruled Surface).";
+ERR_4004 = "¥~§Î¥¼«Ê³¬. \n ©Ò¿ï¥~§Î¥²¶·¬O«Ê³¬ªº.";
+ERR_4005 = "¥~§Î¤w³Q¥~³¡¦±½u©³³¡ªº /p1 ªì©l¤Æ";
+ERR_4006 = "¥~§Î¤w³Q¥~³¡¦±½u©³³¡ªº /p1 ªì©l¤Æ. \n ±q¤º³¡©w¸q°ì¤¤«Ø¥ß¤@®q.";
+ERR_4007 = "¥~§Î¤w³Q¥~³¡¦±½u©³³¡ªº /p1 ªì©l¤Æ. \n ±q¤º³¡©w¸q°ì¤¤«Ø¥ß /p2 ®q.";
+ERR_4008 = "´X¦óµLªk¦s¨ú. \n ´X¦ó '/p1' ¥i¯à³Q§R°£";
+ERR_4009 = "µLªk¦s¨ú³]­p¯S¼x. \n ¯S¼x '/p1' ¥i¯à³Q§R°£";
+ERR_4010 = "µø¹Ï¤è¦V»P¶}©l¤è¦V¥­¦æ. \n ½Ð¥t¿ï¤£¥­¦æªº¤è¦V";
+ERR_4011 = "©Ò¿ï¤¸¯À¤w³Q©w¸q¦¨­­¨î /p1. \n ½Ð¥t¿ï¨ä¥¦¤¸¯À";
+ERR_4012 = "©Ò¿ï´X¦ó©|¥¼¤ä´© /p1. \n ½Ð¥t¿ï¨ä¥¦´X¦ó";
+ERR_4013 = "©Ò¿ï°}¦C¦ì¸mµL®Ä. \n ¦ì¸m '/p1' ¬O°}¦C¨ä¥»¨­";
+ERR_4014.Diagnostic = "©Ò¿ï¤¸¯À¬O¥¼³s±µªº¤¸¯À.";
+ERR_4014.Advice     = "¨Ï¥Î¨ä¥¦¤¸¯À, ©Î¨Ï¥Î NEAR ¾Þ§@¤lµÑ¨ú³s±µ¤¸¥ó.";
+
+ERR_4015.Request    = "§ë¼vÂI¦b¹s¥ó¦±­±¤W.";
+ERR_4015.Diagnostic = "¦Ü¤Ö¦³¤@ÂIµLªk§ë¼v¦b«ü©wªº¹s¥ó¦±­±¤W.";
+ERR_4015.Advice     = "\n ­×§ïÂI©Î¹s¥ó¦±­±.";
+
+ERR_4016.Request    = "¶¥¼Æ­«±Æ¥¢±Ñ. \n «e¤@¶¥¼Æ¤w­×§ï.";
+ERR_4016.Diagnostic = "¤º³¡¶¥¼Æ¸ê®ÆÀË¬d®Éµo¥Í¿ù»~.";
+ERR_4016.Advice     = "\n ½Ð­×§ï¿é¤J¸ê®Æ©M¦AÀ|¸Õ©ÎÁpµ¸°â°Ó.";
+
+ERR_4017.Request    = "¶¥¼Æ­«±Æ¥¢±Ñ. \n «e¤@¶¥¼Æ¥¼­×§ï.";
+ERR_4017.Diagnostic = "¤º³¡¶¥¼Æ¸ê®ÆÀË¬d®É°»´ú¨ìµL®Ä¶¥¼Æ¼Ò¦¡.";
+ERR_4017.Advice     = "\n ½Ð­×§ï¿é¤J¸ê®Æ©M¦AÀ|¸Õ©ÎÁpµ¸°â°Ó.";
+
+ERR_4018.Request    = "¶¥¼Æ­«±Æ¥¢±Ñ. \n «e¤@¶¥¼Æ¥¼­×§ï.";
+ERR_4018.Diagnostic = "µL®Ä¶¥¼Æ¼e«×.";
+ERR_4018.Advice     = "\n ½Ð¿é¤J¥¿­È.";
+
+ERR_4019.Request    = "¶¥¼Æ­«±Æ¥¢±Ñ. \n «e¤@¶¥¼Æ¥¼­×§ï.";
+ERR_4019.Diagnostic = "¶¥¼Æ¤è¦V¨S¦³­ìÂI.";
+ERR_4019.Advice     = "\n ½Ð¬°¶¥¼Æ¤è¦V¿ï¾Ü©Î«ü©w­ìÂI.";
+
+ERR_4020.Request    = "©µ¦ù¥¢±Ñ.";
+ERR_4020.Diagnostic = "³Ì«á¿ï¾Üªº¨â­ÓÃä¬É¤£ÄÝ©ó¬Û¦P¥»Åé á.";
+ERR_4020.Advice     = "\n ½Ð¿ï¾ÜÄÝ©ó¬Û¦P¥»ÅéªºÃä¬É.";
+
+ERR_4021.Request    = "±q­×°Å­±¤¤µLªk§ä¨ì¯S¼x."; 
+ERR_4021.Diagnostic = "¤@­Ó©Î¥H¤Wªº¯S¼xÄÝ©ó©|¥¼¶}±Òªº°Ñ¦Ò¤å¥ó.";
+ERR_4021.Advice     = "\n À|¸Õ¥H¥Ø«e¤å¥ó¶}±Ò°Ñ¦Ò¤å¥ó.
+\n ¿ï¾Ü ½s¿è©ÎÃìµ²... ¦b¥D­nµøµ¡¿ï³æ.";
+
+ERR_4022.Request    = "¥¼¿ï¾Ü°Ñ¦Ò¯S¼x."; 
+ERR_4022.Diagnostic = "¦p©w¸q¯S¼x¸ß°Ý«h¶·¿ï¾Ü°Ñ¦Ò¯S¼x.";
+ERR_4022.Advice     = "\n «ö¤@¤U¿ï¾Ü°Ñ¦Ò¯S¼x©R¥O.
+\n ¨Ó¿ï¾Ü°Ñ¦Ò¯S¼x.";
+
+ERR_4023.Request    = "¥~§Î°»´ú¥¢±Ñ."; 
+ERR_4023.Diagnostic = "°»´ú¨ìªº¥~§Î¤£¬O manifold.";
+ERR_4023.Advice     = "Âà´«¦Ü¤â°Ê¿ï¾Ü.";
+
+ERR_4024.Request    = "µL®Ä¥~§Î³sµ²."; 
+ERR_4024.Diagnostic = "­n³sµ²ªº¥~§Î¬O«Ê³¬ªº.";
+ERR_4024.Advice     = "½Ð¿ï¾Ü¨ä¥¦¥~§Î.";
+
+ERR_4025.Request    = "µLªk­pºâµ²ªG.";
+ERR_4025.Diagnostic = "µLªk­pºâ¥[¤u½uµ²ªG.";
+ERR_4025.Advice     =  "\n ¥i¯àµLªk©µ¦ù. ½Ð§ó§ïÃìµ²¼Ò¦¡";
+
+ERR_4026.Request    = "ÁôÂÃªº¥»Åé¯Ç¤J­pºâ.";
+ERR_4026.Diagnostic = "¤M¨ã­pºâ®É¡A³¡¥÷ªºÁôÂÃ¥»Åé¤w¯Ç¤J­pºâ.";
+ERR_4026.Advice     =  "\n ¥i¯àªº¸Ü½Ð²¾°£¥¦­Ì";
+
+ERR_4027.Request    = "¤¸¯ÀµLªk¿ï¾Ü.";
+ERR_4027.Diagnostic = "ÂI¤w³Q¿ï¾Ü¬°­­¨î. µLªk·s¼W¥ô¦ó¤¸¯À";
+ERR_4027.Advice     =  "\n ¥i¯à®É²¾°£¦¹¤¸¯À";
+
+ERR_4028.Request    = "µL®Ä¿ï¾Ü.";
+ERR_4028.Diagnostic = "µLªk·s¼WÂI¦Ü­­¨î.";
+ERR_4028.Advice     =  "\n ¿ï¾Ü¨ä¥¦¤¸¯À";
+
+ERR_4029.Request    = "©Ò¿ïµ¥¯Å¤£¤@­P.";
+ERR_4029.Diagnostic = "'From' µ¥¯Å¥²¶·¤p©ó©Îµ¥©ó 'To' µ¥¯Å.";
+ERR_4030.Request    = "©Ò¿ïµ¥¯Å¤£¤@­P.";
+ERR_4030.Diagnostic = "´¡¤J¦ì¸m¥²¶·¦b 'From' ©Î 'To' ¤§«áµ¥¯Å.";
+
+ERR_4031.Request    = "No machining feature to delete.";
+ERR_4031.Diagnostic = "No unused machining feature found for the requested type(s).";
+
+ERR_4032.Request    = "Contour connection failed."; 
+ERR_4032.Diagnostic = "Contours cannot be connected automatically";
+ERR_4032.Advice     = "Select contours manually";
+
+//***************************************************************
+// Plage ERR_4500 a 4999 : Message Resources (Tool, Machine, etc)
+//***************************************************************
+ERR_4500.Request    = "µL®Äªº¥[¤u¸ô®|.";
+ERR_4500.Diagnostic = "¤M¨ã¸ô®|¥Ø¿ý :/p1 \n ©Î PP ªí :/p2 \n ¥i¯à¬OªÅªº©Î¤£¦s¦b.";
+ERR_4500.Advice     = "½ÐÀË¬d¤M¨ã¸ô®|¥Ø¿ý. \n ¥¦¥²¶·¥]§t¥[¤u PP ªí©M¥[¤u¤M¨ã²Õ.";
+
+ERR_4501.Request    = "¤M¨ã¸¹½X¤w¦s¦b.";
+ERR_4501.Diagnostic = "¤M¨ã¸¹½X¤w¦s¦b. \n ¦b¿é¥XÀÉ®×¥i¯à¦³¤£¥i´úªºµ²ªG.";
+ERR_4501.Advice     = "½ÐÀË¬d¤M¨ã¸¹½X.";
+
+ERR_4502.Diagnostic = "/p1 ¤M¨ã¤w¦¨¥\±q¥Ø¿ý¿é¤J.";
+
+ERR_4503.Diagnostic = "/p1 ¤M¨ã¤w¦¨¥\±q¥Ø¿ý¿é¤J.";
+
+ERR_4504.Diagnostic = "©Ò¿ïªº°Ê§@¨S¦³¬Û®eªº¤M¨ã.
+\n ¦Ü¤Ö¦³¤@­Ó¤M¨ã¤£³Q°Ê§@¤ä´©";
+ERR_4504.Advice     = "©Ò¿ï°Ê§@¤ä´©¬Û¦P¤M¨ã§Î¦¡.";
+
+ERR_4505.Diagnostic = "¤M¨ã¹Ï¹³¤w¦¨¥\²£¥Í : /p1";
+
+ERR_4506.Request    = "¼Æ­È¤£³Q¤¹³\.";
+ERR_4506.Diagnostic = "¼Æ­È /p1 ¬°ÄÝ©Ê /p2 ¤£³Q¤¹³\. \n ¼Æ­È³]¦¨ /p3";
+ERR_4506.Advice     = "\n ½Ð¥I¤©¥¿½T­È.";
+
+ERR_4507.Request    = "¤£¥¿½Tªº¤M¨ã§ó¥Ø¿ý.";
+ERR_4507.Diagnostic = "¥Ø¿ý /p1 ¤£¥i¨Ï¥Î¦b¤M¨ã§ó´«.\n ³¹¸`¦WºÙ: /p2 ¤£¦s¦b.";
+ERR_4507.Advice     = "\n ½Ð¿ï¾Ü¥¿½Tªº¤M¨ã¥Ø¿ý.";
+
+ERR_4508.Request    = "¥¼§ä¨ì¤M¨ã.";
+ERR_4508.Diagnostic = "¥Ø¿ý¤¤¥¼§ä¨ì¤M¨ã.";
+ERR_4508.Advice     = "\n ½Ð¿ï¾Ü¨ä¥¦¥Ø¿ý.";
+
+ERR_4509.Request    = "§ä¨ì³¡¤À¤M¨ã.";
+ERR_4509.Diagnostic = "¥u¦³ /p1 ¤M¨ã¦WºÙ³Q§ä¨ì.";
+
+ERR_4601.Request    = "§ï¥¿¸¹½X¤w¦s¦b.";
+ERR_4601.Diagnostic = "µn¿ý¸¹½X /p1 ¤w¦s¦b";
+ERR_4601.Advice     = "½Ð¨Ï¥Î°ß¤@ªºµn¿ý¸¹½X.";
+
+ERR_4602.Request    = "µL®Ä¤M¨ãª½®|­È.";
+ERR_4602.Diagnostic = "§ó¥¿ÂIªº¤M¨ãª½®|­È¹w¤¶©ó /p1 ©M /p2 ¤§¶¡.";
+ERR_4602.Advice     = "½Ð¿é¤J¦³®Äªº¤M¨ãª½®|­È.";
+
+ERR_4603.Request    = "¸ê®Æ®w³s±µ¥¢±Ñ.";
+ERR_4603.Diagnostic = "\nSQL ¿ù»~ /p1";
+ERR_4603.Advice     = "\n ½ÐÀË¬d¸ê®Æ®w³s±µÀÉ®×: /p1\n ©M / ©ÎÀË¬d¸ê®Æ®wªA°È¬O§_¤w±Ò°Ê";
+
+ERR_4604.Request    = "¸ê®Æ®w¿ï¾Ü¦¸§Ç¥¢±Ñ.";
+ERR_4604.Diagnostic = "\nSQL ¶¶§Ç : \n/p1\nOracle ¿ù»~¬° : \n/p2";
+ERR_4604.Advice     = "\n ½ÐÀË¬d¸ê®Æ®w³s±µ©Î¤º®e";
+
+ERR_4605.Request    = "¤M¨ã¤@­P©Êµo¥Í°ÝÃD.";
+ERR_4605.Diagnostic = "\n ¤U¦C©ë§ô¥¼¬ÛÃö : '/p1' .";
+ERR_4605.Advice     = "\n ½Ð½s¿è©MÅçÃÒ¤M¨ã°Ñ¼Æ";
+
+ERR_4610.Request    = "µLªk¦b°Ê§@ '/p1' ¤W«Ø¥ß°Æµ{¦¡.";
+ERR_4610.Diagnostic = "\n'/p1' °Æµ{¦¡¹ï¦¹°Ê§@µL®Ä. ";
+ERR_4610.Advice     = "\n ½Ð¿ï¾Ü¨ä¥¦°Æµ{¦¡";
+
+ERR_4611.Request    = "µLªk¦b°Ê§@ '/p1' ¤W«Ø¥ß°Æµ{¦¡.";
+ERR_4611.Diagnostic = "\n'/p1' ¦b context ¤¤¬O¤@­ÓµL®Äªº°Æµ{¦¡. ";
+ERR_4611.Advice     = "\n ½Ð¿ï¾Ü¨ä¥¦°Æµ{¦¡";
+
+ERR_4612.Request    = "µLªk¦b°Ê§@ '/p1' ¤W«Ø¥ß°Æµ{¦¡.";
+ERR_4612.Diagnostic = "\n ©Ò¦³ªº°Æµ{¦¡°Ê§@¦b context ¤¤§¡µL®Ä. ";
+ERR_4612.Advice     = "\n ½Ð¿ï¾Ü¨ä¥¦°Æµ{¦¡";
+
+ERR_4613.Request    = "µLªk«Ø¥ß°Æµ{¦¡.";
+ERR_4613.Diagnostic = "\n ¨S¦³¥Ø«eªº°Ê§@. ";
+ERR_4613.Advice     = "\n ½Ð¿ï¾Ü¥[¤u°Ê§@";
+
+ERR_4614.Request    = "µLªk¦b°Ê§@ '/p1' ¤W«Ø¥ß°Æµ{¦¡.";
+ERR_4614.Diagnostic = "\n'/p1'";
+ERR_4614.Advice     = "\n ½Ð¿ï¾Ü¨ä¥¦°Æµ{¦¡";
+
+ERR_4615.Request    = "µLªkÀx¦s°Æµ{¦¡.";
+ERR_4615.Diagnostic = "\n µLªk¦b¥Ø¿ý¤¤Àx¦s°Æµ{¦¡ '/p1' . ";
+ERR_4615.Advice     = "\n ½ÐÀË¬d¦s¨úÅv";
+
+ERR_4616.Request    = "°Æµ{¦¡¤À¥ó '/p1' ¤¤§t¦³µL®Äªº°Æµ{¦¡¼Æ­È«¬¦¡.";
+ERR_4616.Diagnostic = "\n °Æµ{¦¡«¬¦¡  '/p1' ¥¼ª¾. ";
+ERR_4616.Advice     = "\n ½ÐÀË¬d°Æµ{¦¡¤À¥ó¤¤ªºÃöÁä¦r«¬¦¡, ÀÉ®× MacroCatalogResourcesNLS ªº NLS «¬¦¡µû¦ô©Î ¥Ø¿ý©M¥Ø«eªº NLS ¤£¤@­P";
+
+ERR_4617.Request    = "¿ù»~¥Ø¿ýÀÉ®×.";
+ERR_4617.Diagnostic = "\n ÀÉ®× '/p1' µLªk¼g¤J.";
+ERR_4617.Advice     = "\n ½ÐÀË¬d¦s¨úÅv";
+
+ERR_4618.Request    = "Database not compatible with Tool List.";
+ERR_4618.Advice     = "\nPlease contact your local support to update database content";
+
+// Machine
+// -------
+ERR_4650.Diagnostic    = "¥Ø¼Ð¦ì¸mµLªk¥H¾÷¾¹¨ì¹F.";
+
+ERR_4651.Diagnostic    = "¥Ø¼Ð¦ì¸m¶W¹L¾÷¾¹¦æµ{.";
+
+ERR_4652.Request    = "Invalid product.";
+ERR_4652.Diagnostic = "The selected product has not the properties of a NC machine.";
+ERR_4652.Advice     = "Use the machine tool builder to define those properties.";
+
+ERR_4653.Request    = "Invalid choice.";
+ERR_4653.Diagnostic = "The option 'Set 3D Contact compensation to all operations' can not be checked
+if a 3D compensation mode is chosen.";
+ERR_4653.Advice     = "Please refer to the program directory for more information.";
+
+//************************************************************
+// Plage ERR_4700 a 4750 : Messages Visualisation (Assembly, Tool, plaquette, etc...)
+//************************************************************
+
+ERR_4700.Request    = "'/p1' ªºÅã¥Ü¥¢±Ñ.";
+ERR_4700.Advice     = "\n ½ÐÀË¬d¤M¨ã©Î¾÷¨ã°Ñ¼Æ.";
+
+ERR_4701.Request    = "Åã¥Ü DXF ¥¢±Ñ, ¨Ï¥Î¼Ð·Çªí²{¤è¦¡´À¥N";
+ERR_4701.Diagnostic = "µLªk¬° DXF ÀÉ®× '/p1'¥H 3D ¤è¦¡¨Óªí²{.";
+ERR_4701.Advice     = "\n ½ÐÀË¬d DXF ÀÉ®×.";
+
+ERR_4702.Request    = "Åã¥Ü IPM Åé¿n®Éµo¥Í¿ù»~."; 
+ERR_4702.Diagnostic = "IPM Åé¿nµLªkÅã¥Ü.";
+ERR_4702.Advice     = "\n ½ÐÀË¬d¥[¤u°Ê§@¤¤ªº´X¦ó©w¸q¬O¥¿½Tªº \n ¥B¤w©w¸q¤M¨ã (¦p»Ý­n¤M¨ã)";
+
+ERR_4703.Request    = "¸ê·½Åã¥Ü¥¢±Ñ.";
+ERR_4703.Diagnostic = "µLªk­pºâ /p1 ªº 3D ªí²{¤è¦¡.";
+ERR_4703.Advice     = "\n ½ÐÀË¬d¸ê·½ªº´X¦ó. \n ª`·N¥i¯à·|°±¤î°õ¦æ¼ÒÀÀ.";
+ERR_4704.Request    = "Visualization failed for '/p1'.";
+ERR_4704.Advice     = "\nFor turning tooling, check Axial and Radial axes defined:\n
+a- No machine selected : default is Z+,X+ axes of the Reference Machining Axis defined at Part Operation level.
+b- Horizontal or Vertical lathe machine : defined on Spindle tab page.
+c- Multi-Slide Lathe machine : defined on Turret tab page.
+d- Other machine : Z+,X+ axes defined locally on turning operation.";
+
+ERR_4705.Request    = "Error when displaying IPM Volume."; 
+ERR_4705.Diagnostic = "IPM Volume cannot be displayed because the tool axis is not normal to the curves.";
+ERR_4705.Advice     = "\nPlease check that geometric definition of Curve Following operation is correct \nand that its tool axis is normal to the curves.";
+//====================================================================================================
+// MultiTurret MultiSpindle at operation level
+//====================================================================================================
+ERR_TURRET_RADIAL_AXIS_SPINDLE_COLINEAR.Request = "Radial Turning Tool Axis of '/p1' and Spindle are parallel.";
+ERR_TURRET_RADIAL_AXIS_SPINDLE_COLINEAR.Diagnostic = "The Turning Tool Radial Axis of '/p1' is parallel to Spindle Axis of the Part Axis System.";
+ERR_TURRET_RADIAL_AXIS_SPINDLE_COLINEAR.Advice     = "\nChange Turning Tool Axis System.";
+
+//************************************************************
+// Plage ERR_4800 a 4810 : Messages de doublon de noms
+// LAR pour OLC IR 378769
+//************************************************************
+
+ERR_4800.Request    = "¤M¨ã¦WºÙ¤w¦s¦b";
+ERR_4800.Diagnostic = "\n ±N·|¦b /p1 ¤¤¦Û°Ê§ó§ï.";
+
+ERR_4801.Request    = "¤M¨ã²Õ¥ß¦WºÙ¤w¦s¦b";
+ERR_4801.Diagnostic = "\n ±N·|¦b /p1 ¤¤¦Û°Ê§ó§ï.";
+
+ERR_4802.Request    = "¤M¤ù¦WºÙ¤w¦s¦b";
+ERR_4802.Diagnostic = "\n ±N·|¦b /p1 ¤¤¦Û°Ê§ó§ï.";
+
+ERR_4803.Request    = "¤M¨ã²Õ¥ß¦WºÙ /p1 ¤w¦s¦b,\n ¦ý»P¤uªk¤£¬Û®e.";
+ERR_4803.Advice     = "\n ½Ð¿ï¾Ü¨ä¥¦¤M¨ã²Õ¥ß.";
+
+ERR_4804.Request    = "¤M¨ã²Õ¥ß¦WºÙ /p1 ¤w¦s¦b,\n ¦ý»P¤uªk¤£¬Û®e.";
+ERR_4804.Advice     = "\n ½Ð¿ï¾Ü¨ä¥¦¤M¤ù.";
+
+ERR_4805.Request    = "¤M¨ã¦WºÙ /p1 ¤w¦s¦b,\n ¦ý»P¤uªk¤£¬Û®e.";
+ERR_4805.Advice     = "\n ½Ð¿ï¾Ü¨ä¥¦¤M¨ã¦WºÙ.";
+
+//************************************************************
+// Plage ERR_5000 a 5499 : Messages PPWord Table.
+//************************************************************
+
+ERR_5000 = "Åª¨ú PP ¦r¤¸ªí. \n *INSERT «á¥¼¦³¦W¥O¦WºÙ. \n ½u /p1 ¦³¿ù»~.";
+ERR_5001 = "Åª¨ú PP ¦r¤¸ªí. \n µL®ÄªºÃöÁä¦r *. \n ½u /p1 ¦³¿ù»~.";
+ERR_5002 = "Åª¨ú PP ¦r¤¸ªí. \n µL®Äªº©R¥O°Ï¶ô ¯Ê¤Ö *START-*END. \n*START ©R¥O.";
+ERR_5003 = "Åª¨ú PP ¦r¤¸ªí. \n µL®Äªº©R¥O°Ï¶ô ¯Ê¤Ö *START-*END. \n*END .";
+ERR_5004 = "Åª¨ú PP ¦r¤¸ªí. \n ©R¥O¦WºÙ NC_  ¥²¶·±µ¦b *START_NC_COMMAND ¤§«á. \n ½u /p1 ¦³¿ù»~.";
+ERR_5005 = "Åª¨ú PP ¦r¤¸ªí. \n ©R¥O¦WºÙ NC_  ¥²¶·±µ¦b *START_NC_INSTRUCTION¤§«á. \n ½u /p1 ¦³¿ù»~.";
+ERR_5006 = "Åª¨ú PP ¦r¤¸ªí. \n °Ñ¼Æ¦WºÙ MFG_  ¥²¶·±µ¦b *START_LIST. ¤§«á. \n ½u /p1 ¦³¿ù»~.";
+ERR_5007 = "Åª¨ú PP ¦r¤¸ªí. \n °Ñ¼Æ¦WºÙ MFG_  ¥²¶·±µ¦b *START_FORMAT. ¤§«á. \n ½u /p1 ¦³¿ù»~.";
+ERR_5008 = "Åª¨ú PP ¦r¤¸ªí. \n ¥¼ª¾ÃöÁä¦r *START.  \n ½u /p1 ¦³¿ù»~.";
+ERR_5009 = "Åª¨ú PP ¦r¤¸ªí. \n µLªk¶}±Ò PP ¦r¤¸ªí";
+ERR_5010 = "Åª¨ú PP ¦r¤¸ªí. \n PP ¦r¤¸ªí¥¼©w¸q. \n ½Ð¥ý¦b¾÷¾¹¤W©w¸q PP¦r¤¸ªí \n";
+ERR_5011 = "Åª¨ú PP ¦r¤¸ªí. \n ¾÷¾¹¥¼©w¸q. \n ½Ð¥ý¦b¾÷¾¹¤W©w¸q¾÷¾¹©M PP¦r¤¸ªí \n";
+
+ERR_5013.Request    = "¿ï¾Ü»yªk '/p1'."; 
+ERR_5013.Diagnostic = "/p1 °Ñ¼Æ¤w³Q§ä¨ì¥B±q»yªk¤¤²¾°£.";
+ERR_5013.Advice     = "½Ð¿ï¾Ü¦¸¦r¤¸©Î¦b¥Ø«eÄæ¦ì¤¤¿é¤J¼Æ­È¨Óµ²§ô«ü¥O.";
+
+ERR_5014.Request    = "¥Ñ¥Ø«e¤åªk, /p1  ."; 
+ERR_5014.Diagnostic = "¤U¦C¦r¤¸ : /p1 ¦b PPTable ¤¤¥¼µo²{.";
+ERR_5014.Advice     = "¨Ï¥Î«e½Ð¥ýÀË¬d.";
+
+ERR_5015.Request    = "Åª¨ú PP ¦r¤¸ªí¤¤."; 
+ERR_5015.Diagnostic = "¥¼§ä¨ì PP ¦r¤¸ªí.";
+ERR_5015.Advice     = "½ÐÀË¬d¾÷¨ã©w¸qªº PP ¦r¤¸ªí¸ô®|©M¦WºÙ.";
+
+
+//************************************************************
+// Plage ERR_5500 a 5749 : Messages Replay.
+//************************************************************
+
+ERR_5501 = "­«¼½¤M¨ã¸ô®|. \n µ{¦¡¬OªÅªº©Î¥¼§t¦³¥i¼½©ñªº°Ê§@.";
+ERR_5502 = "­«¼½¤M¨ã¸ô®|. \n ¥Ø«eµ{¦¡¥¼§t¦³¥i¼½©ñªº.";
+ERR_5503 = "­«¼½¤M¨ã¸ô®|. \n ¥Ø«e°Ê§@¥¼§t¦³¥i¼½©ñªº.";
+ERR_5504 = "­«¼½¤M¨ã¸ô®|. \n µ{¦¡¤ºªº°Ê§@¥¼±Ò°Ê.";
+ERR_5505 = "­«¼½¤M¨ã¸ô®|. \n ¥Ø«eª«¥ó¥¼§t¦³¬ÛÃö¤M¨ã¸ô®|.";
+ERR_5506 = "­«¼½¤M¨ã¸ô®|. \n ¨S¦³¤M¨ã¸ô®|¥iÅã¥Ü.";
+ERR_5507 = "­«¼½¤M¨ã¸ô®|. \n µ{§Ç¥¼§¹¦¨. \n ½ÐÀË¬d°Ñ¼Æ,´X¦ó©Î¤M¨ã.";
+ERR_5508 = "À£ÁY¤M¨ã¸ô®|. \n À£ÁY¤M¨ã¸ô®|¦¨¥\. \n ¥~³¡ÀÉ®×¬O /p1.";
+ERR_5509 = "¸ÑÀ£ÁY¤M¨ã¸ô®|. \n ¸ÑÀ£ÁY¤M¨ã¸ô®|¦¨¥\.";
+ERR_5510 = "À£ÁY¤M¨ã¸ô®|. \n µ{¦¡¤º¥¼§t¦³¤M¨ã¸ô®|.";
+ERR_5511 = "¸ÑÀ£ÁY¤M¨ã¸ô®|. \n µ{§Ç¤º¥¼§t¦³¤M¨ã¸ô®|.";
+ERR_5512 = "µ{§Ç¥¼§¹¦¨. \n ­«¼½¤W¤@­Ó­pºâªº¤M¨ã¸ô®|.";
+ERR_5513 = "NC ÀÉ®×¥¼§ä¨ì. \n NC ÀÉ®× /p1¥i¯à³Q§R°£©Î²¾°Ê.";
+ERR_5514 = "­pºâ¤M¨ã¸ô®|¤¤. \n ­pºâ³Q¤¤Â_.";
+
+ERR_5515.Request    = "µL®Äªº¥[¤u¸ô®|.";
+ERR_5515.Diagnostic = "¸ô®| /p1 ¤£¦s¦b©Î¨S¦³¼g¤JÅv­­.";
+ERR_5515.Advice     = "¿ï¾Ü¨ã¦³¼g¤JÅv­­ªº¤w¦s¥Ø¿ý.";
+
+ERR_5516 = "¤M¨ã¸ô®|®y¼Ðªº¥~³¡ÀÉ®×¥¼§ä¨ì.
+¥~³¡ÀÉ®× /p1  ¥i¯à¤w³Q§R°£©Î²¾°Ê.
+½Ð¦A´M§ä©Î­«·s­pºâ.
+±z¤]¥i¨Ï¥Î 'ÀÉ®×¡@+¡@¶Ç°e¦Ü...' ½Æ»s¾A·í¥~³¡ÀÉ®×¦Ü¥Ø«e¤å¥ó.";
+ERR_5517 = "°O¾ÐÅé©w¦ì¿ù»~.";
+ERR_5518 = "²¾°£¤M¨ã¸ô®|. \n ¥¼¿ï¾Ü°Ê§@";
+ERR_5519 = "²¾°£¤M¨ã¸ô®|. \n ©Ò¿ïµ{¦¡¬OªÅªº";
+ERR_5520 = "²¾°£¤M¨ã¸ô®|. 
+¬°°Ê§@ /p1 ²¾°£¤M¨ã¸ô®|¥¢±Ñ.
+½Ð¦AÀ|¸Õ©ÎÁpµ¸°â°Ó";
+ERR_5521 = "²¾°£¤M¨ã¸ô®|. \n ©R¥Oµ²§ô";
+
+ERR_5522 = "­pºâ¤M¨ã¸ô®|. \n ¥¼¿ï¾Ü°Ê§@";
+ERR_5523 = "­pºâ¤M¨ã¸ô®|. \n ©R¥Oµ²§ô. \n ­pºâ¥¼§¹¦¨.";
+ERR_5524 = "­pºâ¤M¨ã¸ô®|. \n ©R¥Oµ²§ô. \n 1 ­pºâ§¹¦¨.";
+ERR_5525 = "­pºâ¤M¨ã¸ô®|. \n ©R¥Oµ²§ô. \n/p1 ­pºâ§¹¦¨.";
+ERR_5526 = "­pºâ¤M¨ã¸ô®|. 
+¬°°Ê§@ /p1 ªº¤M¨ã¸ô®|­pºâ¥¢±Ñ.
+½Ð¦AÀ|¸Õ. §_«h½ÐÁpµ¸°â°Ó";
+ERR_5527 = "­pºâ¤M¨ã¸ô®|. 
+¥¼¦³¼Ð·Çªº¤M¨ã¸ô®|­pºâ¤è¦¡.";
+ERR_5528 = "­«·sÅã¥Ü¤M¨ã¸ô®|. 
+µL®Ä¿ï¾Ü.
+±z¥i¿ï¾Ü¤@­Óµ{¦¡©Î¤@©Î¦h­Óµ{§Ç";
+
+ERR_5529 = "¤M¨ã¸ô®|­pºâ¤¤. \n °Ê§@ /p1 ¥¼§¹¦¨. \n ½ÐÀË¬d°Ñ¼Æ, ´X¦ó©Î¤M¨ã.";
+
+ERR_5530.Request    = "½Æ»sÂà´«­pºâ¤¤.";
+ERR_5530.Diagnostic = "°Ñ¦Ò¥[¤u­pºâ°Ê§@¥¼­pºâ.";
+ERR_5530.Advice     = "½Æ»sÂà´«­pºâ«e, ¥²¶·­pºâ°Ñ¦Ò¥[¤u°Ê§@.";
+
+ERR_5531.Request    = "½Æ»sÂà´«­pºâ¤¤.";
+ERR_5531.Diagnostic = "¤£¥i¯à­pºâ.";
+ERR_5531.Advice     = "À|¸Õ±j­¢­pºâ°Ñ¦Ò¥[¤u°Ê§@.";
+
+ERR_5532.Request    = "µL®ÄÀÉ®×°ÆÀÉ¦W.";
+ERR_5532.Diagnostic = "ÀÉ®×°ÆÀÉ¦W /p1 ©Ò§tªº '.' ¦r¤¸¤£¤¹³\.";
+ERR_5532.Advice     = "½Ð©w¸q¦³®ÄªºÀÉ®×°ÆÀÉ¦W.";
+
+ERR_5533 = "­pºâ¤M¨ã¸ô®|. \n /p1 ²£¥Í¿ù»~. \n/p2 ­pºâ§¹¦¨.";
+
+
+ERR_5534 = "¬°½Æ»sÅã¥Ü¤M¨ã¸ô®|. 
+¦¹½Æ»s°Ê§@Ãìµ²¦Ü TRACUT °Ï¶ô¤º.
+­n­p¤J tracut ¼Ò¦¡, ±z¥²¶·°h¥XÅã¥Ü©R¥O¨Ã­«·s°õ¦æ¥¦.";
+
+ERR_5535 = "Replaying tool path.
+Tool path cannot be displayed properly because at least one tool path point has an infinite coordinate.
+Try to compute tool path again";
+
+ERR_5536.Request    = "Computing tool path.";
+ERR_5536.Diagnostic = "Two consecutive positions have opposite tool axes in the linking macro.\nIt is not possible to solve the tool axes interpolation is this case.";
+ERR_5536.Advice     = "Add a tool axis motion in the linking macro in order to avoid this situation.";
+
+ERR_5537 = "Replaying tool path.
+User representation cannot be found for '/p1' resource. Path for user representation is '/p2'.   
+You should recover the link between resource and user representation or remove the user representation";
+
+ERR_5538 = "Replaying Tool Path. \nOperation is not synchronized. \nCheck geometry or formulas.";
+ERR_5539 = "Computing Tool Path. \nOperation /p1 is not synchronized. \nCheck geometry or formulas.";
+
+//**********************************************************************
+// Plage ERR_PRJ_MCDBased : NC code based simulation (ISO/MCD)
+//**********************************************************************
+ERR_PRJ_MCDBased = "Replaying Tool Path. \nProgram simulation is in MCD mode.";
+
+ERR_PRJ_MCDBased01.Request    = "Simulation using NC Code.\n";
+ERR_PRJ_MCDBased01.Diagnostic = "Controller Emulator not defined.\n";
+ERR_PRJ_MCDBased01.Advice     = "In order to launch a simulation based on a NC Code file, you have to :
+\t - choose a Post Processor provider in Tools > Option > Machining > Output
+\t - select a Product as NC Machine
+\t - define a Post Processor and an appropriate Controller Emulator on this machine.
+\t - select ISO as NC data type on this machine.";
+
+ERR_PRJ_MCDBased02.Request    = "Simulation using NC Code.\n";
+ERR_PRJ_MCDBased02.Diagnostic = "NC machine not correct.\n";
+ERR_PRJ_MCDBased02.Advice     = "In order to launch a simulation based on a NC Code file, you have to :
+\t - choose a Post Processor provider in Tools > Option > Machining > Output
+\t - select a Product as NC Machine
+\t - define a Post Processor and an appropriate Controller Emulator on this machine.
+\t - select ISO as NC data type on this machine.";
+
+ERR_PRJ_MCDBased03.Request    = "Simulation using NC Code.\n";
+ERR_PRJ_MCDBased03.Diagnostic = "NC data type not correctly defined on machine.\n";
+ERR_PRJ_MCDBased03.Advice     = "In order to launch a simulation based on a NC Code file, you have to :
+\t - choose a Post Processor provider in Tools > Option > Machining > Output
+\t - select a Product as NC Machine
+\t - define a Post Processor and an appropriate Controller Emulator on this machine.
+\t - select ISO as NC data type on this machine.";
+
+//**********************************************************************
+//****************************************************
+// Plage ERR_5500 a 5749 : Licensing compute tool path
+//****************************************************
+ERR_5541.Request    = "¤M¨ã¸ô®|­pºâ¤¤.";
+ERR_5541.Diagnostic = "µo¥Í³nÅé±ÂÅv°ÝÃD.";
+ERR_5541.Advice     = "»Ý­n PMG, SMG, AMG, LMG, MPM ©Î MLM ³nÅé±ÂÅv.";
+
+ERR_5542.Request    = "¤M¨ã¸ô®|­pºâ¤¤.";
+ERR_5542.Diagnostic = "µo¥Í³nÅé±ÂÅv°ÝÃD.";
+ERR_5542.Advice     = "»Ý­n PMG, SMG, AMG ©Î MPM ³nÅé±ÂÅv.";
+
+ERR_5543.Request    = "¤M¨ã¸ô®|­pºâ¤¤.";
+ERR_5543.Diagnostic = "µo¥Í³nÅé±ÂÅv°ÝÃD.";
+ERR_5543.Advice     = "»Ý­n PMG, AMG, LMG, MPM ©Î MLM ³nÅé±ÂÅv.";
+
+ERR_5544.Request    = "¤M¨ã¸ô®|­pºâ¤¤.";
+ERR_5544.Diagnostic = "µo¥Í³nÅé±ÂÅv°ÝÃD.";
+ERR_5544.Advice     = "»Ý­n PMG, SMG, AMG, LMG, MPM ©Î MLM ³nÅé±ÂÅv.";
+
+ERR_5545.Request    = "¤M¨ã¸ô®|­pºâ¤¤.";
+ERR_5545.Diagnostic = "µo¥Í³nÅé±ÂÅv°ÝÃD.";
+ERR_5545.Advice     = "»Ý­n PMG, AMG ©Î MPM ³nÅé±ÂÅv.";
+
+ERR_5546.Request    = "¤M¨ã¸ô®|­pºâ¤¤.";
+ERR_5546.Diagnostic = "µo¥Í³nÅé±ÂÅv°ÝÃD.";
+ERR_5546.Advice     = "»Ý­n SMG ©Î AMG ³nÅé±ÂÅv.";
+
+ERR_5547.Request    = "¤M¨ã¸ô®|­pºâ¤¤.";
+ERR_5547.Diagnostic = "µo¥Í³nÅé±ÂÅv°ÝÃD.";
+ERR_5547.Advice     = "»Ý­n MMG ©Î AMG ³nÅé±ÂÅv.";
+
+ERR_5548.Request    = "¤M¨ã¸ô®|­pºâ¤¤.";
+ERR_5548.Diagnostic = "µo¥Í³nÅé±ÂÅv°ÝÃD.";
+ERR_5548.Advice     = "»Ý­n MMG, AMG ©Î SMG ³nÅé±ÂÅv.";
+
+ERR_5549.Request    = "¤M¨ã¸ô®|­pºâ¤¤.";
+ERR_5549.Diagnostic = "µo¥Í³nÅé±ÂÅv°ÝÃD.";
+ERR_5549.Advice     = "»Ý­n AMG ³nÅé±ÂÅv.";
+
+ERR_5550.Request    = "¤M¨ã¸ô®|­pºâ¤¤.";
+ERR_5550.Diagnostic = "µo¥Í³nÅé±ÂÅv°ÝÃD.";
+ERR_5550.Advice     = "»Ý­n LMG ©Î MLM ³nÅé±ÂÅv.";
+
+ERR_5551.Request    = "¤M¨ã¸ô®|­pºâ¤¤.";
+ERR_5551.Diagnostic = "µo¥Í³nÅé±ÂÅv°ÝÃD.";
+ERR_5551.Advice     = "»Ý­n  MPG ³nÅé±ÂÅv.";
+
+ERR_5552.Request    = "¤M¨ã¸ô®|­pºâ¤¤.";
+ERR_5552.Diagnostic = "µo¥Í³nÅé±ÂÅv°ÝÃD.";
+ERR_5552.Advice     = "»Ý­n LMG P2 ©Î MLM ³nÅé±ÂÅv.";
+
+//************************************************************
+// Plage ERR_5750 a 5999 : Messages APT Import.
+//************************************************************
+
+ERR_5750 = "¿é¤J APT ÀÉ®×. \n APT ÀÉ®×µLªk¿é¤J, ¦]¬°¥¦¤º§tÂ_­±ªºNC¿é¥X.";
+ERR_5751 = "APT ÀÉ®×¿é¤J¤¤. \n APT ÀÉ®×µLªk¿é¤J, ¦]¬°¥¦¤º§t¤M¨ã¤¤¤ßªº NC ¿é¥X.";
+ERR_5752 = "APT ÀÉ®×¿é¤J¤¤. \n APT ÀÉ®×µLªk¿é¤J: ¦]¥¦§t¦³ PQR ¸ê®Æ.";
+ERR_5753 = "APT ÀÉ®×¿é¤J¤¤. \n APT ÀÉ®×µLªk¿é¤J: ¦]¥¦§t¦³ Nurbs ¸ê®Æ.";
+ERR_5754 = "APT ÀÉ®×¿é¤J¤¤. \n APT ÀÉ®×µLªk¿é¤J: ¦]¥¦§t¦³ Contact ¸ê®Æ.";
+ERR_5755 = "APT ÀÉ®×¿é¤J¤¤. \n APT ÀÉ®×µLªk¿é¤J: ¦]¥¦§t¦³ ROTHED ¸ê®Æ.";
+ERR_5756 = "APT ÀÉ®×¿é¤J¤¤. \n APT ÀÉ®×µLªk¿é¤J: ¦]¥¦§t¦³ ROTABL ¸ê®Æ. \n »P¹s¥ó¤uªk¤¤©Ò©w¸q¾÷¾¹¤£¦P.";
+
+ERR_5760.Request    = "­pºâ½Æ»sÂà´«.";
+ERR_5760.Diagnostic = "­pºâ¥¢±Ñ.";
+ERR_5760.Advice     = "©Ò¦³¿ï¾Üªº¥[¤u°Ê§@¥²¶·³Ì·sªº¥B¥²¶·Âê©w .";
+
+ERR_5761.Request    = "·s¼W°Ñ¦Ò¥[¤u°Ê§@.";
+ERR_5761.Diagnostic = "µLªk·s¼W°Ñ¦Ò¥[¤u°Ê§@.";
+ERR_5761.Advice     = "À|¸Õ±j­¢­pºâ°Ñ¦Ò¥[¤u°Ê§@.";
+
+ERR_5762.Request    = "·s¼W°Ñ¦Ò¥[¤u°Ê§@.";
+ERR_5762.Diagnostic = "µLªk·s¼W°Ñ¦Ò¥[¤u°Ê§@.";
+ERR_5762.Advice     = "©Ò¦³¿ï¾Üªº¥[¤u°Ê§@¥²¶·§t¦³¬Û¦Pªº¤M¨ã";
+
+ERR_5763.Request    = "­pºâ½Æ»sÂà´«.";
+ERR_5763.Diagnostic = "­pºâ¥¢±Ñ.";
+ERR_5763.Advice     = "©Ò¦³¿ï¾Üªº¥[¤u°Ê§@¥²¶·§t¦³¬Û¦Pªº¤M¨ã";
+
+ERR_5764.Request    = "­pºâ½Æ»sÂà´«.";
+ERR_5764.Diagnostic = "­pºâ¥¢±Ñ.";
+ERR_5764.Advice     = "À|¸Õ±j­¢­pºâ°Ñ¦Ò¥[¤u°Ê§@.";
+
+ERR_5765.Request    = "Compute Copy-Transformation.";
+ERR_5765.Diagnostic = "Transformation Computation Fail.";
+ERR_5765.Advice     = "Check transformation definition,\n check ambiguous geometrical elements";
+
+ERR_5770.Request    = "­pºâ½Æ»sÂà´«.";
+ERR_5770.Diagnostic = "­pºâ¥¢±Ñ.";
+ERR_5770.Advice     = "¨S¦³¨¬°÷ªº­p¾ÐÅé¥i¨Ñ­pºâ, \n ½ÐÀ|¸Õ¥H¸û¤Öªº½Æ»s¼Æ¥Ø¨Ó­pºâ.";
+
+ERR_5771.Request    = "­pºâ COPY °Ê§@.";
+ERR_5771.Diagnostic = "­pºâ¥¢±Ñ.";
+ERR_5771.Advice     = "½ÐÀ|¸Õ­pºâ©Ò¦³¬¡°Ê (¥]§t¤M¨ã§ó§ï) \n ¦b¼½©ñ COPY °Ê§@ªº¯Á¤Þ¶¡.";
+
+// Messages Clfile
+ERR_5900.Request    = "¶}±Ò Clfile ÀÉ®×¿ù»~";
+ERR_5900.Diagnostic = "µLªk¶}±Ò clfile ÀÉ®×.";
+ERR_5900.Advice     = "½Ð¿ï¾Ü Clfile ¸ô®|©ÎÀÉ®×";
+
+ERR_5901.Request    = "¶}±Ò APT ÀÉ®×¿ù»~";
+ERR_5901.Diagnostic = "µLªk¶}±Ò APT ÀÉ®×.";
+ERR_5901.Advice     = "½ÐÀË¬d¸ô®|©MÅª¼gÄÝ©Ê.";
+
+ERR_5902.Request    = "Åª¨ú°O¿ý¸¹½X¥¢±Ñ: ";
+ERR_5902.Diagnostic = "µLªkÅª¨ú clfile ¸¹½X.";
+ERR_5902.Advice     = "½ÐÀË¬d©Ò¿ï Clfile ¸ô®|©ÎÀÉ®×";
+
+ERR_5903.Request    = "Ãö³¬ Clfile ÀÉ®×¥¢±Ñ";
+ERR_5903.Diagnostic = " clfile ÀÉ®×µLªkÃö³¬.";
+ERR_5903.Advice     = "½ÐÀË¬d©Ò¿ï Clfile ¸ô®|©ÎÀÉ®×";
+
+ERR_5904.Request    = "¥¼¦b PP ªí¤¤§ä¨ì¥D­n¦r¤¸";
+ERR_5904.Diagnostic = " clfile ¤¤¥¼§ä¨ì PP ªí¤¤ªº¥D­n¦r¤¸.";
+ERR_5904.Advice     = "½ÐÀËªH PP ªí¤¤¬ÛÃöªº¥D­n¦r¤¸¦r½X.";
+
+ERR_5905.Request    = "¥¼¦b PP ªí¤¤§ä¨ì¦¸­n¦r¤¸";
+ERR_5905.Diagnostic = " clfile ¤¤¥¼§ä¨ì PP ªí¤¤ªº¦¸­n¦r¤¸.";
+ERR_5905.Advice     = "½ÐÀËªH PP ªí¤¤¬ÛÃöªº¦¸­n¦r¤¸¦r½X.";
+
+ERR_5906.Request    = "¬° 3000 µ¥¯Å°O¿ýªº¶ê©w¸qµL®Ä";
+ERR_5906.Diagnostic = "¦b clfile ¤¤¨S¦³¥¿½Tªº 3000 ¶ê©w¸q.";
+ERR_5906.Advice     = "½ÐÀË¬d clfile ÀÉ®×©w¸q.";
+
+ERR_5907.Request    = "¬° 5000 µ¥¯Å°O¿ý©w¸qµL®Ä: ¥¼©w¸q¤M¨ã¦ì¸m";
+ERR_5907.Diagnostic = "¦b clfile ¤¤¨S¦³¥¿½Tªº 5000 ¶ê©w¸q.";
+ERR_5907.Advice     = "½ÐÀË¬d clfile ÀÉ®×©w¸q.";
+
+ERR_5908.Request    = "µL®Ä®e®t©w¸q (INTOL)";
+ERR_5908.Diagnostic = "¦b clfile ¤¤¨S¦³¥¿½Tªº 6000 µ¥¯Å°O¿ý©w¸q.";
+ERR_5908.Advice     = "½ÐÀË¬d clfile ÀÉ®×©w¸q.";
+
+ERR_5909.Request    = "µL®Ä®e®t©w¸q (OUTTOL)";
+ERR_5909.Diagnostic = "¦b clfile ¤¤¨S¦³¥¿½Tªº 6000 µ¥¯Å°O¿ý©w¸q.";
+ERR_5909.Advice     = "½ÐÀË¬d clfile ÀÉ®×©w¸q.";
+
+ERR_5910.Request    = "µL®Äªº¤M¨ã©w¸q";
+ERR_5910.Diagnostic = "¦b clfile ¤¤¨S¦³¥¿½Tªº 6000 µ¥¯Å°O¿ý©w¸q.";
+ERR_5910.Advice     = "½ÐÀË¬d clfile ÀÉ®×©w¸q.";
+
+ERR_5911.Request    = "µL®Äªº¤M¨ã¶b©w¸q";
+ERR_5911.Diagnostic = "¦b clfile ¤¤¨S¦³¥¿½Tªº 9000 µ¥¯Å°O¿ý©w¸q.";
+ERR_5911.Advice     = "½ÐÀË¬d clfile ÀÉ®×©w¸q.";
+
+ERR_5912.Request    = "µL®Äªº MULTAX ©w¸q";
+ERR_5912.Diagnostic = "¦b clfile ¤¤¨S¦³¥¿½Tªº 9000 µ¥¯Å°O¿ý©w¸q.";
+ERR_5912.Advice     = "½ÐÀË¬d clfile ÀÉ®×©w¸q.";
+
+ERR_5913.Request    = "¬° 15000 µ¥¯Å°O¿ýªº¶ê©w¸qµL®Ä";
+ERR_5913.Diagnostic = "¦b clfile ¤¤¨S¦³¥¿½Tªº 15000 ¶ê©w¸q.";
+ERR_5913.Advice     = "½ÐÀË¬d clfile ÀÉ®×©w¸q.";
+
+ERR_5914.Request    = "¥¼ª¾ªºµ¥¯Å°O¿ý";
+ERR_5914.Diagnostic = " ";
+ERR_5914.Advice     = " ";
+
+ERR_5915.Request    = "¥D­n¦r¤¸°ÝÃD";
+ERR_5915.Diagnostic = " ";
+ERR_5915.Advice     = " ";
+
+ERR_5920.Request    = "°O¿ý¸¹½X";
+ERR_5920.Diagnostic = " ";
+ERR_5920.Advice     = " ";
+
+ERR_5921.Request    = "Clfile µ¥¯Å";
+ERR_5921.Diagnostic = " ";
+ERR_5921.Advice     = " ";
+
+ERR_5922.Request    = "½X";
+ERR_5922.Diagnostic = " ";
+ERR_5922.Advice     = " ";
+
+
+
+//************************************************************
+// Plage ERR_6000 a 6499 : CATMfg
+//************************************************************
+
+//************************************************************
+// Plage ERR_6500 a 6600 : V5-VNC integration
+//************************************************************
+
+ERR_6500 = "°Æµ{¦¡¿é¥X¦Ü VNC. \n Åª¨ú°Æµ{¦¡¥¢±Ñ. \n ¿ò¥¢ÀÉ®×¬O /p1.";
+
+//                          ======== Setup VNCMachine ========                                       
+TOOL_POSITION_UNREACHABLE.Request    = "¦ì¸mµLªk¨ì¹F";
+TOOL_POSITION_UNREACHABLE.Advice = "½ÐÀË¬d¹s¥ó³]©w.";
+
+TOOL_POSITION_REACHABLE.Request    = "¦ì¸mµLªk¨ì¹F";
+
+CHECK_REACHABILTY_KO_NO_MFG_MACHINE.Request    = "ÀË¬d¹F¦¨©Ê.";
+CHECK_REACHABILTY_KO_NO_MFG_MACHINE.Diagnostic = "¸ê·½¤£°÷.";
+CHECK_REACHABILTY_KO_NO_MFG_MACHINE.Advice     = 
+"±z¥²¶·¦b¹s¥ó¨B§Ç¤¤©w¸q¬ÛÃöªº VNC ¾÷¨ã,¨Ã©w¦ì¹s¥ó.";
+
+CHECK_REACHABILTY_KO_NO_VNC_MACHINE.Request    = "ÀË¬d¹F¦¨©Ê.";
+CHECK_REACHABILTY_KO_NO_VNC_MACHINE.Diagnostic = "¨S¦³¬ÛÃöªº VNC ¾÷¨ã.";
+CHECK_REACHABILTY_KO_NO_VNC_MACHINE.Advice     = 
+"«ü©w¥H¹s¥ó°Ê§@©M©w¦ì¨Ó¿ï¾Ü VNC ¾÷¨ã.";
+
+
+//=======================================================================
+//=======================================================================
+//                        ======== BACTH ========                        
+//=======================================================================
+//=======================================================================
+
+//===================================================================
+//  0/ Generalite
+//===================================================================
+
+MSG_BATCH_00001 = "§å¦¸, ¿é¤J¸ê®Æ : /p \n";
+ERR_BATCH_00002 = "§å¦¸¦WºÙ¬OªÅªº .\n";
+MSG_BATCH_00003 = "§å¦¸§¹¦¨ .\n";
+MSG_BATCH_00004 = "¶}©l§å¦¸¤u§@ .\n";
+ERR_BATCH_00005 = "°õ¦æ¤u§@¶}©l¥¢±Ñ.\n";
+MSG_BATCH_00007 = "µL®ÄÃöÁä¦r¤¸ : *CGR (P2 ¥\¯à©Ê).\n";
+MSG_BATCH_00006 = "\n---------------------------------------\n\n";
+MSG_BATCH_00008 = "¦¨¥\¿é¥X NC µ²§ô. \n ¸Ô²Ó¸ê®Æ½Ð¬d¬Ý°O¿ýÀÉ®×. \n";
+ERR_BATCH_00009 = "µo¥Í¿ù»~. \n ¥i¯à¥¼²£¥Í¿é¥XÀÉ®×. \n ¸Ô²Ó¸ê®Æ½Ð¬d¬Ý°O¿ýÀÉ®×. \n";
+ERR_BATCH_00010 = "Licensing problem. A PMG, SMG, AMG, LMG, MPM or MLM license is required";
+
+//===================================================================
+//  1/ Lecture du fichier ft05
+//===================================================================
+MSG_BATCH_10000 = "Åª¨ú ft05 ÀÉ®× : ¶}©l. \n";
+ERR_BATCH_10001 = "Åª¨ú ft05 ÀÉ®×¿ù»~ .\n";
+MSG_BATCH_11000 = "Åª¨ú ft05 ÀÉ®× : §¹¦¨ .\n";
+
+//===================================================================
+//  2/ Verification des donnees du fichier ft05 
+//===================================================================
+MSG_BATCH_20000 = "ÀË¬dÀÉ®× ft05 ¸ê®Æ : ¶}©l. \n";
+ERR_BATCH_20001 = "ÅçÃÒÀÉ®× ft05 ¸ê®Æ .\n";
+ERR_BATCH_20100 = "¥D­n¦r¤¸ /p ¥¼§ä¨ì .\n";
+ERR_BATCH_20101 = " *APT ©Î *CLF ÃöÁä¦r¥¼«ü©w. \n";
+ERR_BATCH_20102 = "ÃöÁä¦r *APT ©M *CLF ¥¼¥]§t .\n";
+ERR_BATCH_20200 = "ÃöÁä¦r¤º¥¼§t¼Æ­È /p.\n";
+ERR_BATCH_20301 = "ÃöÁä¦r *CIR ªº³Ì¤p¥b®|­È³]©w¤£¥¿½T .\n";
+ERR_BATCH_20302 = "ÃöÁä¦r *CIR ªº³Ì¤j¥b®|­È³]©w¤£¥¿½T .\n";
+ERR_BATCH_20303 = "¿ò¥¢ÃöÁä¦r *CIR ªº³Ì¤j¥b®|­È .\n";
+ERR_BATCH_20400 = "µLªk¦s¨úµ{¦¡¤å¥ó (ÃöÁä¦r  *REA ©M *MOD).\n";
+ERR_BATCH_20500 = "©Ò«Ø¥ßªº NC ÀÉ®× (ÃöÁä¦r *WRI ©M *MEM) ¤w¦s¦b¥BµLªk³QÂÐ»\ (ÃöÁä¦r *REP).\n";
+ERR_BATCH_20600 = "©Ò«Ø¥ßªº¤å¥óÀÉ®× (ÃöÁä¦r *FLW and *MDW) ¤w¦s¦b¥BµLªk³QÂÐ»\ (ÃöÁä¦r *MRP).\n";
+ERR_BATCH_20700 = "©Ò«Ø¥ßªºISOÀÉ®× (ÃöÁä¦r *PSO and *NSO) ¤w¦s¦b¥BµLªk³QÂÐ»\ (ÃöÁä¦r *RSO).\n";
+ERR_BATCH_20800 = "ÃöÁä¦r¼Æ­È /p ¤£¦b¥¿½Tªº¼Æ­È½d³ò¤º. \n";
+ERR_BATCH_20900 = "ÃöÁä¦r¼Æ­È /p ¬O­tªº .\n";
+MSG_BATCH_21000 = "ÅçÃÒÀÉ®× ft05 ¸ê®Æ : µ²§ô .\n";
+ERR_BATCH_21100 = "¨S¦³ PPPAR ÀÉ®×©w¸q¦b ISO ¼Ò¦¡¤º .\n";
+ERR_BATCH_21200 = "*FOM 2 or *TOM 2 ¥u¥Î¦b APT ©Î NCCode.\n";
+
+//===================================================================
+//  3/ Lecture du document a traiter 
+//===================================================================
+MSG_BATCH_30000 = "Åª¨ú¤å¥ó : ¶}©l .\n";
+ERR_BATCH_30001 = "Åª¨ú¤å¥ó¿ù»~ .\n";
+MSG_BATCH_31000 = "Åª¨ú¤å¥ó : µ²§ô .\n";
+ERR_BATCH_30002 = "Ãö³¬¤å¥ó¿ù»~ .\n";
+ERR_BATCH_30003 = "¿ù»~ : µ{§Ç¤¤ªº /p µ{¦¡»P ft05 ÀÉ®×¤¤¦WºÙ¤@­P. \n";
+ERR_BATCH_30004 = "¿ù»~ : ¨â­Ó©Ò¿ïµ{¦¡ÀÉ¦W¬Û¦P. \n";
+
+//===================================================================
+//  4/ Verification du document a traiter 
+//===================================================================
+MSG_BATCH_40000 = "ÅçÃÒ¤å¥ó : ¶}©l .\n";
+ERR_BATCH_40001 = "ÅçÃÒ¤å¥ó¿ù»~.\n";
+ERR_BATCH_40100 = "µ{¦¡ (ÃöÁä¦r *PRG) ¥¼§ä¨ì .\n";
+MSG_BATCH_41000 = "ÅçÃÒ¤å¥ó: µ²§ô .\n";
+
+//===================================================================
+//  5/ Initialisation de la machine
+//===================================================================
+MSG_BATCH_50000 = "¾÷¾¹ªì©l¤Æ : ¶}©l .\n";
+ERR_BATCH_50001 = "¾÷¾¹ªì©l¤Æ¥¢±Ñ .\n";
+ERR_BATCH_50002 = "Äµ§i : ¾÷¾¹ : ³Ì¤p©Î³Ì¤jªº¤º´¡¥b®|¤£¥¿½T : /p1 \n";
+ERR_BATCH_50003 = "Äµ§i : ¾÷¾¹ : ¦b¯S©w¦ì¸mµLªk§ä¨ì PP ¦r¤¸  \n";
+MSG_BATCH_51000 = "¾÷¾¹ªì©l¤Æ : µ²§ô .\n";
+
+//===================================================================
+//  6/ Generation du fichier NC Code (Ajout \n devant Start NC code et INIT pour lisibilit-
+//===================================================================
+MSG_BATCH_60000 = "\n ²£¥ÍNC½XÀÉ®× : ¶}©l. \n";
+ERR_BATCH_60001 = "²£¥ÍNC½XÀÉ®×¿ù»~ .\n";
+MSG_BATCH_61000 = "²£¥ÍNC½XÀÉ®× : µ²§ô. \n";
+
+MSG_BATCH_61010 = "Äµ§i :  /p1 ±Ò°Ê¥¼§¹¦¨ .\n";
+MSG_BATCH_61011 = "Äµ§i:  /p1 ±Ò°Ê¥¼§¹¦¨ .\n";
+MSG_BATCH_61012 = "Äµ§i:  /p1 ±Ò°Ê¤£¬O³Ì·sªº .\n";
+MSG_BATCH_61013 = "¸ê°T : /p1 ±Ò°Ê¤w³Q§ó·s .\n";
+MSG_BATCH_61014 = "¸ê°T:  /p1 »¡©ú¥¼§ä¨ì .\n";
+MSG_BATCH_61015 = "¿ù»~ : /p1 ªº¤M¨ã¸ô®|­pºâ¥¢±Ñ .\n";
+MSG_BATCH_61016 = "¿ù»~ : ¥~§Î¿é¥X : ¿é¥X¥~§Î«e¨S¦³¤M¦yÂI.\n";
+MSG_BATCH_61017 = "¿ù»~ : ¥~§Î¿é¥X : ¿é¥X¥~§Î«á¨S¦³¤M¦yÂI.\n";
+
+MSG_BATCH_61018 = "\n ¸ê°T: ** ±Ò°Ê /p1 : ¶}©l. ** \n";
+MSG_BATCH_61019 = "¸ê°T: ** ±Ò°Ê /p1 : µ²§ô. ** \n";
+MSG_BATCH_61020 = "¸ê°T: ** ¥[¤u©M©Ò¦³®É¶¡  : /p1 ¤ÀÄÁ ** \n";
+
+MSG_BATCH_61021 = "¿ù»~: PPCommand ¬OªÅªº.\n";
+MSG_BATCH_61022 = "¸ê°T: ¬¡°Ê /p1.\n";
+ERR_BATCH_61023 = "¿ù»~: °O¾ÐÅé¤£¨¬.\n";
+MSG_BATCH_61024 = "¸ê°T: ±j­¢¦b /p1 ¤W­pºâ.\n";
+MSG_BATCH_61025 = "Äµ§i: °Ê§@ /p1 ¬°Âê©w.\n";
+MSG_BATCH_61027 = "Äµ§i: °Ê§@ /p1 ªº¤M¨ã¸ô®|Âê©w.\n";
+
+ERR_BATCH_61026 = "¿ù»~: ¶¶±µ¸ô®|ªº¶b¦V¤M¶b¿ù»~. \n";
+MSG_BATCH_61027 = "Warning: tool path of activity /p1 is locked.\n";
+MSG_BATCH_61028 = "Warning: activity /p1 is not synchronous.\n";
+
+//  Generation du fichier clfile
+ERR_BATCH_62001 = "Äµ§i: clfile ¤¤¨S¦³³¯­z :\n                 /p1\n";
+MSG_BATCH_62002 = "                  PP ªí¤¤¨S¦³¥D­n¦r¤¸ : /p1\n";
+MSG_BATCH_62003 = "                  PP ªí¤¤¨S¦³¦¸­n¦r¤¸ : /p1\n";
+ERR_BATCH_62004 = "¿ù»~: ·í¦b clfile ¤¤¼g¤J°O¿ý®É - ¥Ø«e³¯­z¬° :\n               /p1\n";
+
+ERR_BATCH_62010 = "¿ù»~ : /p1 \n ¤w¦s¦b,¦ý§ó´«¥¦ªº¿ï¶µ¥¼¤Ä¿ï.\n";
+ERR_BATCH_62011 = "¿ù»~ : ¦s¨ú \n/p1\n ©Úµ´.\n";
+ERR_BATCH_62012 = "¿ù»~ : /p1 \n ¤£¦s¦b.\n";
+
+ERR_BATCH_62013 = "¿ù»~ : µL®Ä¶ê©·©w¸q /p1.\n";
+
+//===================================================================
+//  7/ Sauvegarde du document modifie
+//===================================================================
+MSG_BATCH_70000 = "Àx¦s¤å¥ó : ¶}©l .\n";
+ERR_BATCH_70001 = "Àx¦s¤å¥ó¿ù»~ .\n";
+MSG_BATCH_71000 = "Àx¦s¤å¥ó : µ²§ô .\n";
+
+//===================================================================
+//  8/ Generation du fichier ISO Code
+//===================================================================
+MSG_BATCH_80000 = "²£¥Í ISO ÀÉ®× : ­º¦¸. \n";
+ERR_BATCH_80001 = "²£¥Í ISO ÀÉ®×¿ù»~ .\n";
+MSG_BATCH_81000 = "²£¥Í ISO ÀÉ®× : µ²§ô .\n";
+
+//===================================================================
+//  9/ Dump du contenu de la ft05 (Donnees dans le GeneratorData)
+//===================================================================
+MSG_BATCH_90000 = "FT05 ÀÉ®× : ¶}©l .\n";
+MSG_BATCH_91100 = "ÃöÁä¦r  :  /p \n";
+MSG_BATCH_91000 = "FT05 ÀÉ®× : µ²§ô.\n";
+
+//=======================================================================
+//=======================================================================
+//                        ======== TOOLS ========                        
+//=======================================================================
+//=======================================================================
+
+ERR_TOOL_CORRECTOR_0001  = "©w¸qµn¿ý¸¹½X .\n µn¿ý¸¹½X : /p ¤w¦s¦b. \n ½Ð¿ï¾Ü¤w¦s¦bµn¿ý¸¹½X.";
+
+// La bonne description estr celle-ci mais la parametrisation ne marche pas.. 
+//ERR_TOOL_CORRECTOR_0001.Request    = "Defining register number.";
+//ERR_TOOL_CORRECTOR_0001.Diagnostic = "Register number: /p1 already exists.";
+//ERR_TOOL_CORRECTOR_0001.Advice     = "Choose an inexisting register number.";
+
+ERR_TOOL_CORRECTOR_0002  = "ª½®|¼Æ­È©w¸q¤¤. \n ª½®|¼Æ­È¥²¶·¬O >= /p1 an <= /p2\n ½Ð¿ï¾Ü¦³®Äª½®|¼Æ­È.";
+// La bonne description estr celle-ci mais la parametrisation ne marche pas.. 
+//ERR_TOOL_CORRECTOR_0002.Request    = "Defining diameter value.";
+//ERR_TOOL_CORRECTOR_0002.Diagnostic = "Diameter value should be >= /p1 an <= /p2";
+//ERR_TOOL_CORRECTOR_0002.Advice     = "Choose a valid diameter value.";
+
+//=======================================================================
+//=======================================================================
+//                        ======== END TOOLS ========                        
+//=======================================================================
+//=======================================================================
+
+
+//                        ======== SIMULATION ========                        
+PHOTO_VIDEO.Request    = "¶}±Ò·s¼ÒÀÀµøµ¡";
+PHOTO_VIDEO.Diagnostic = "¼ÒÀÀµøµ¡¤w¦s¦b";
+PHOTO_VIDEO.Advice     = "½ÐÃö³¬ÂÂ¼ÒÀÀµøµ¡¨Ã¦A¸Õ¤@¹M";
+
+//                                        
+PHOTO_VIDEO_CHECK_CLOSURE.Request    = "©w¸q¼ÒÀÀ¥Í®Æ";
+PHOTO_VIDEO_CHECK_CLOSURE.Diagnostic = "©Ò¿ï´X¦ó¥¼«Ê³¬ \n ¼ÒÀÀµ²ªG¤£¥i¥Î";
+PHOTO_VIDEO_CHECK_CLOSURE.Advice     = "½Ð¤Å¿ï¾Ü¦±­±¤å¥ó";
+
+//                                        
+PHOTO_VIDEO_DEFAULT_TOLERANCE.Request    = " /p1 ªº¥[¤uºë«×¬° /p2 mm";
+PHOTO_VIDEO_DEFAULT_TOLERANCE.Diagnostic = "·í¥[¤uºë«×¤p©ó .01 ¤½Íù®É, ¥Ø«eª©¥»ªº¤ÀªR©R¥O¥i¯à·|²£¥Í¤Ó²ÊÁWªºµ²ªG";
+PHOTO_VIDEO_DEFAULT_TOLERANCE.Advice     = "\n ½Ð»P°â°ÓÁpµ¸.";
+
+//                                        
+VIDEO_NO_FIXED_TOOL_AXIS.Request    = "/p1 ±N¤£·|³Q¼ÒÀÀ";
+VIDEO_NO_FIXED_TOOL_AXIS.Diagnostic = "¤M¨ã¶b¤£¬O©T©wªº";
+VIDEO_NO_FIXED_TOOL_AXIS.Advice = "¦b¬Û¤ù¼Ò¦¡, ¤M¨ã¶b¥²¶·¬O©T©w¥B¥­¦æ©ó¹s¥ó¥[¤u®y¼Ð Z ¶b. \n ±z¥i¨Ï¥Î¼v¹³¼Ò¦¡.";
+
+//                                        
+VIDEO_TOOL_AXIS_NOT_Z.Request    = "/p1 ¤£·|³Q¼ÒÀÀ";
+VIDEO_TOOL_AXIS_NOT_Z.Diagnostic = "¤M¨ã¶b¤£¥­¦æ©ó Z ¶b";
+VIDEO_TOOL_AXIS_NOT_Z.Advice = "¦b¬Û¤ù¼Ò¦¡, ¤M¨ã¶b¥²¶·¬O©T©w¥B¥­¦æ©ó¹s¥ó¥[¤u®y¼Ð Z ¶b. \n ±z¥i¨Ï¥Î¼v¹³¼Ò¦¡.";
+
+//                                        
+VIDEO_BYPLANE.Request    = "¥­­±¹ï¥­­±©M³t«×¹ï³t«×¼Ò¦¡¹ï¼v¹³ÀÉµL®Ä.";
+VIDEO_BYPLANE.Diagnostic = "¥u¦³³sÄò©Ê©MÂI¹ïÂI¼Ò¦¡¥i¥Î";
+VIDEO_BYPLANE.Advice = "½Ð¿ï¾Ü³sÄò©Ê©MÂI¹ïÂI¼Ò¦¡¥i¥Î";
+
+//
+VIDEO_RESULT_FILE_NOT_FOUND.Request    = "¦b /p1 ¤Wªº ³Ìªñ¤@¦¸Àx¦s¼v¹³ µLªk°Ê§@. ±N·|°õ¦æ¥þ³¡¼v¹³.";
+VIDEO_RESULT_FILE_NOT_FOUND.Diagnostic = "§t¦³¬ÛÃö /p1 ¼v¹³µ²ªGªº /p2 ÀÉ®×µLªk§ä¨ì.";
+VIDEO_RESULT_FILE_NOT_FOUND.Advice = "±z¥i¥H :\n - °õ¦æ ³Ìªñ¤@¦¸Àx¦s¼v¹³ ©R¥O¦Ü /p1 ¨Ã¨Ï¨ä»P¼v¹³µ²ªG¬ÛÃö. \n - ©Î­«·s¶}±Ò¦¹ÀÉ®×.\n - ©Î¦b /p1 ©R¥OÄæ¤¤¨Ï¥Î ²¾°£¼v¹³µ²ªG ©R¥O.";
+
+DELETE_VIDEO_RESULT_NoOperation = "¼v¹³µ²ªG²¾°£¤¤. \n ¥¼¿ï¾Ü°Ê§@";
+DELETE_VIDEO_RESULT_ProgramEmpty = "¼v¹³µ²ªG²¾°£¤¤. \n ©Ò¿ïµ{¦¡¬OªÅªº";
+DELETE_VIDEO_RESULT_Error = "¼v¹³µ²ªG²¾°£¤¤. 
+¬°°Ê§@ /p1 ²¾°£¼v¹³µ²ªG®Éµo¥Í¿ù»~.
+½Ð¦AÀ|¸Õ©ÎÁpµ¸°â°Ó";
+DELETE_VIDEO_RESULT_Success = "¼v¹³µ²ªG²¾°£¤¤. \n ²¾°£¼v¹³µ²ªG¦¨¥\";
+
+//                                        
+PHOTO_VIDEO_INCORRECT_TOOL.Request = " /p1 Â_­±µL®Ä.";
+PHOTO_VIDEO_INCORRECT_TOOL.Diagnostic = "¥i¯àµLªk¥¿½T¼ÒÀÀª÷ÄÝ²¾°£.";
+PHOTO_VIDEO_INCORRECT_TOOL.Advice     = "¦pªG /p1 ¬O¤@­Ó¨Ï¥ÎªÌªí²{¤è¦¡, ½Ð°Ñ¦Ò¦b¨Ï¥ÎªÌ¤å¥ó¤¤ªº¥~§Î¦³®Ä©Ê.
+¦pªG /p1 ¬° NC ¸ê·½¤u¨ã©Î²Õ¥ß, ½ÐÀË¬d°Ñ¼Æ. 
+¦p°ÝÃD¨ÌµM¦s¦b, ½Ð³sµ¸°â°Ó.";
+
+//                                        
+PHOTO_INCORRECT_TOOL.Request    = "/p1 ¤£¾A¥Î©ó¹Ï¹³¼ÒÀÀ.";
+PHOTO_INCORRECT_TOOL.Diagnostic = "µLªk¥¿½T¼ÒÀÀª÷ÄÝ²¾°£.";
+PHOTO_INCORRECT_TOOL.Advice     = "±z¥i¨Ï¥Î¼v¹³¼Ò¦¡.";
+
+PHOTO_INCORRECT_TOOL_CORE_DIAMETER.Request    = "/p1 is not suitable for Photo mode.";
+PHOTO_INCORRECT_TOOL_CORE_DIAMETER.Diagnostic = "Non cutting diameter (Dnc) is not taken into account,\nso the material removal will not be correctly simulated.";
+PHOTO_INCORRECT_TOOL_CORE_DIAMETER.Advice     = "You can use Video mode with this type of cutter.";
+
+DELETE_IPM_RESULT_NoOperation = "²M°£§÷®Æ­pºâ¸ê®Æ. \n ¥¼¿ï¾Ü°Ê§@";
+DELETE_IPM_RESULT_ProgramEmpty = "²M°£§÷®Æ­pºâ¸ê®Æ. \n ©Ò¿ïµ{¦¡¬OªÅªº";
+DELETE_IPM_RESULT_Success = "²M°£§÷®Æ­pºâ¸ê®Æ¦¨¥\.";
+DELETE_IPM_RESULT_Error   = "²M°£§÷®Æ­pºâ¸ê®Æ¥¢±Ñ.";
+
+UPDATE_IPM_STATUS_RESULT_NoOperation = "§ó·s§÷®Æ­pºâ±¡§Î. \n ¥¼¿ï¾Ü°Ê§@";
+UPDATE_IPM_STATUS_RESULT_ProgramEmpty = "§ó·s§÷®Æ­pºâ±¡§Î. \n ©Ò¿ïµ{¦¡¬OªÅªº";
+UPDATE_IPM_STATUS_RESULT_Error = "§ó·s§÷®Æ­pºâ±¡§Î. 
+¹ï°Ê§@ /p1 §ó·s§÷®Æ­pºâ±¡§Î®É¥¢±Ñ.
+½Ð¦A¸Õ¤@¦¸. §_«h½Ð³sÄò°â°Ó";
+UPDATE_IPM_STATUS_RESULT_Success = "§ó·s§÷®Æ­pºâ±¡§Î¦¨¥\.";
+
+VIDEO_RESULT_FILE_SAVE_INTERNAL_ERROR_1.Request    = "Àx¦s¼v¹³µ²ªGÀÉ®×®Éµo¥Í¤º³¡¿ù»~";
+VIDEO_RESULT_FILE_SAVE_INTERNAL_ERROR_1.Diagnostic = "\n Àx¦s¼v¹³µ²ªGÀÉ®×®Éµo¥Í¤º³¡¿ù»~";
+VIDEO_RESULT_FILE_SAVE_INTERNAL_ERROR_1.Advice     = "\n ½Ð³sÄò°â°Ó";
+
+VIDEO_RESULT_FILE_SAVE_INTERNAL_ERROR_2.Request    = "Àx¦s¼v¹³µ²ªGÀÉ®×®Éµo¥Í¤º³¡¿ù»~";
+VIDEO_RESULT_FILE_SAVE_INTERNAL_ERROR_2.Diagnostic = "\n ²¾°£«e¤@¼v¹³µ²ªGÀÉ®×®Éµo¥Í¤º³¡¿ù»~";
+VIDEO_RESULT_FILE_SAVE_INTERNAL_ERROR_2.Advice     = "\n ½Ð³sÄò°â°Ó";
+
+VIDEO_RESULT_FILE_SAVE_WRONG_PATH.Request          = "Àx¦s¼v¹³µ²ªGÀÉ®×®Éµo¥Í¤º³¡¿ù»~";
+VIDEO_RESULT_FILE_SAVE_WRONG_PATH.Diagnostic       = "\n Àx¦s¼v¹³µ²ªGÀÉ®×ªº¸ô®|¤£¥¿½T.";
+VIDEO_RESULT_FILE_SAVE_WRONG_PATH.Advice           = "\n ½ÐÀË¬dÀx¦s¼v¹³µ²ªGÀÉ®×ªº¸ô®|.";
+
+VIDEO_RESULT_FILE_SAVE_NO_WRITE_ACCESS.Request     = "Àx¦s¼v¹³µ²ªGÀÉ®×®Éµo¥Í¤º³¡¿ù»~";
+VIDEO_RESULT_FILE_SAVE_NO_WRITE_ACCESS.Diagnostic  = "\n ¨S¦³¦s¨úÅv.";
+VIDEO_RESULT_FILE_SAVE_NO_WRITE_ACCESS.Advice      = "\n ½ÐÀË¬dÀÉ®×¦s¨úÅv.";
+
+VIDEO_RESULT_FILE_SAVE_OK.Request                  = "¤wÀx¦s¼v¹³µ²ªGÀÉ®×.";
+
+//====================================================================================================
+// erreurs compute actual stock for lathe
+//====================================================================================================
+
+ACTUAL_STOCK_NoTurnContext.Diagnostic = "µL¤W¤@¦¸¤Á«d°Ê§@. \n ©Ò¥H¤£»Ý­n­pºâ¿é¤J§÷®Æ.";
+
+ACTUAL_STOCK_NoLatheMachine.Diagnostic = "­pºâ¨®§É¥[¤u§÷®Æ»Ý­n¨®§É¾÷¨ã.";
+ACTUAL_STOCK_NoLatheMachine.Advice     = "\n ½Ð¦bµ{¦¡¼h¤¤¥ý¿ï¾Ü¨®§É¥[¤u¾÷¨ã.";
+
+ACTUAL_STOCK_NoSimulationStock.Diagnostic = "­pºâ¨®§É¥[¤u§÷®Æ»Ý­nªì©l§÷®Æ.";
+ACTUAL_STOCK_NoSimulationStock.Advice     = "\n ½Ð¦bµ{¦¡¼h¤¤¥ý©w¸q§÷®Æ.";
+
+ACTUAL_STOCK_NoIPM_output.Diagnostic = "¥Ø«eªº­pºâµLµ²ªG.¤W¦¸ªº¨®«dµ²ªGµLªk­pºâ.";
+ACTUAL_STOCK_NoIPM_output.Advice     = "\n ½ÐÀË¬d¬O§_¥i­pºâ¤W¦¸ªº¨®«dµ²ªG. \n ¦p»Ý­n§¹¦¨©ÎÃö³¬µL®Ä°Ê§@.";
+
+ACTUAL_STOCK_NO_PRODUCT.Diagnostic =  "The computation of the turning stock gives no result, as one of the Part operation is not linked to a CATProduct.";
+ACTUAL_STOCK_NO_PRODUCT.Advice =  "\nThe result of turning stock computation is created in a new Part \n that must be aggrageted in the CATProduct linked to the Part operation. \n Check if all the Part Operation are linked to a CATProduct.";
+
+
+ACTUAL_STOCK_RESULT_Error = "­pºâ¿é¤J¨®«d§÷®Æ­pºâ®É¥Í¿ù»~.
+½Ð¦A°õ¦æ¤@¦¸,¦p°ÝÃD¤´¦s¦b½Ð³sµ¸°â°Ó.";
+
+ACTUAL_STOCK_RESULT_Success = "­pºâ¿é¤J¨®«d§÷®Æ­pºâ¦¨¥\.
+\n ¤w«Ø¥ß¯ó¹ÏÂ_­±.
+¥þ³¡©Î³¡¥÷¯ó¹Ï¥i·í°µ¥Ø«e°Ê§@ªº¿é¤J§÷®Æ.";
+
+ACTUAL_STOCK_MISSING_PRIMITIVE.Diagnostic = "Turning stock computation. \nThe removed material for /p1. \n/p2 can not be computed.";
+ACTUAL_STOCK_MISSING_PRIMITIVE.Advice     = "\nCheck if previous operations are complete and computable. \n If needed complete or deactivate the invalid operations.";
+
+//====================================================================================================
+// erreurs Time based replay
+//====================================================================================================
+
+TBR_Title="Time based replay";
+TBR_NOTHING_TO_REPLAY= "There is no activity to simulate.\nPlease select a Part Operation or a Program or an Activity.";
+TBR_MACHINING_PROCESS= "The Machining Process can not be simulated.\nPlease select a Part Operation or a Program or an Activity.";
+TBR_LMT_MACHINE= "The Time based replay requires a Multi Turret machine.\nPlease define a Multi Turret machine on your Part Operation.";
+
+// 
+//************************************************************
+// Vieux format de message : a eviter maintenant et merci de les migrer (utiliser ERR_XXXX)
+//************************************************************
+//
+//
+// Messages generaux
+//
+InfoTitle      = "¥[¤u¸ê°T";
+WarningTitle   = "¥[¤uÄµ§i";
+ErrorTitle     = "¥[¤u¿ù»~";
+GeneralErrorTitle  = "¿ù»~";
+PanelTitle     = "¥[¤u¿ù»~";
+UpdateError    = "§ó·s®É¤º³¡µo¥Í¿ù»~";
+InternalError  = "¥[¤u³nÅé¿ù»~. \n ¿ù»~¬° : /p1";
+InitError      = "ªì©l¤Æ®É¥¢±Ñ";
+ErrorNotSpecified = "¥¼«ü¥X¿ù»~. \n ½Ð³sµ¸±zªº¤ä´©°â°Ó";
+DesignNotFound = "³]­p²£«~¥¼¯à¨ú±o";
+ResourceNotFound  = "¸ê·½¥¼¯à¨ú±o";
+StrategyParameterNotFound = "¤è¦¡°Ñ¼Æ \n /p1 ¥¼§ä¨ì. \n ¥i¯àªº¿ù»~µo¥Í¦b TXT ÀÉ®× /p2\n ¸ê°T: ªí¦C©Ò¦³¥i¯àªº¦³¥Î°Ñ¼Æ: \n/p3\n\n ªí¦C©Ò¦³¥i¯àªº¦³¥Î°Ñ¼Æ¦b :/p4";
+StrategyParameterNameNotFound = "¤è¦¡°Ñ¼Æ \n /p1 ¥¼§ä¨ì. \n ¤è¦¡°Ñ¼Æ \n /p1 ¥i¯à¬O /p2.\n ¥i¯àªº¿ù»~µo¥Í¦b TXT ÀÉ®×  /p3\n\n ¸ê°T: ªí¦C©Ò¦³¥i¯àªº¦³¥Î°Ñ¼Æ :\n/p4\n\n ªí¦C©Ò¦³¥i¯àªº¦³¥Î°Ñ¼Æ¦b°Ñ¼Æ :/p5";
+TxtFileFormatError = "¦b TXT ÀÉ®×: /p1 \n ½u : /p2 \n ¥¼¨ã©Ò»Ý­nªº°Ñ¼Æ®æ¦¡ : <¦WºÙ> <x­È> <y­È>";
+TxtFileNotReadable= "TXT ÀÉ®× : /p1 ¤w§ä¨ì , ¦ý¬O¤£¥iÅª¨ú";
+IconNotAssigned= "µLªk§ä¨ì¥ô¦ó¦³®Äªº /p1 ¹Ï¥ÜÀÉ®×";
+WrongBitmapFileFormat= "BMP ÀÉ®× : /p1 ¥i¯à¨ã¦³¿ù»~ªº Bitmap ÀÉ®×®æ¦¡\n ¤w¸g¥´¶}©ÎÅª©~¦ýµLªk¿ì§OÀÉ®×¤º®e";
+XYchangesNotAllowed= "X ©M Y ¤£¥i§ó§ï \n ÂÂ¼Æ­È : X /p1 Y /p2\n ·s¼Æ­È: X /p3 Y /p4";
+NoBitmapFilePath= "¨S¦³ Bitmap ªºÀÉ®×¸ô®|";
+BitmapNotReadable = "BMP ÀÉ®× : /p1 ¤w§ä¨ì¦ýµLªkÅª¨ú";
+GetComponentLinksError= "«Ø¥ß¤À¥óÃìµ²®Éµo¥Í¿ù»~";
+ToolPathComputationError = "­pºâ¤M¨ã¸ô®|®Éµo¥Í¿ù»~";
+ViewerNotGenerated = "¦b /p1 ¨S¦³2DÀËµø¾¹²£¥Í";
+WrongDriveElement = "¿ù»~ÅX°Ê¤¸¯À";
+ExactOneOfthe3ParametersHasToBeDefined = "½T©w°Ñ¼Æ /p1 , /p2 ©M /p3 ¥²¶·³Q©w¸q";
+Breakthrough_But_No_OperationLength = "¬ï¹L¦ý¥¼©w¸q¾Þ§@ªø«×";
+CalculatingLiftAngleNotYesImplemented = "­pºâ¤É°_¨¤«×¥¼°õ¦æ";
+IllegalCombinationOfLiftParameters = "µL®Äªº¤É°_°Ñ¼Æ²Õ¦X";
+NotPossibleElseFound = "µLªkµo²{¨ä¥¦ªº";
+ToolPathNotCalculated = "¤M¨ã¸ô®|¥¼­pºâ";
+CuttingLengthNotFound = "¥¼µo²{¤Á«dªø«×";
+DirectionNotFound = "¥¼µo²{¤è¦V";
+HoleNotFound = "¥¼µo²{¤Õ";
+NoActivityFound = "¥¼µo²{±Ò°Ê";
+NoIntersectionFound = "¥¼µo²{¤M¨ãª½®|¬Û¥æ¦b /p1";
+NoToolAssociated = "¥¼µo²{¬ÛÃö¤M¨ã";
+IntersectionsOnArcsNotDupported = "©·¤W¬Û¥æ¥¼¤ä´©¦b CATMfgToolPathGeneratorBase::±qª½®|­pºâ¤M¦y";
+NoToolGeomFound = "¥¼µo²{¤M¨ã´X¦ó";
+OriginNotFound = "¥¼µo²{­ìÂI";
+NeededParameterNotFound = "¥²¶·°Ñ¼Æ /p1 ¥¼§ä¨ì";
+OneOfTheFollowingParameterNotFound = "°Ñ¼Æ /p1 ©Î /p2 ¥¼§ä¨ì";
+OnlyBothParameterShouldBeDefined = "°Ñ¼Æ /p1 ©Î /p2 ¥²¶·­n¤@¦P©w¸q©Î¦P®É¤£©w¸q";
+OnlyOneParameterMayBeDefined = "¥u¦³¤@­Ó°Ñ¼Æ /p1 ©Î /p2 »Ý­n©w¸q, ¤£¥i¦P®É";
+Should_be_greater_than = "­pºâZ¶b®y¼Ð®Éµo¥Í¿ù»~: \n °Ñ¼Æ /p1 = /p2 »Ý¤ñ /p3 ¬°¤j";
+Should_be_smaller_than = "­pºâZ¶b®y¼Ð®Éµo¥Í¿ù»~: \n °Ñ¼Æ /p1 = /p2 »Ý¤ñ /p3 ¬°¤p";
+Parameter_greaterthan_Diameter = "°Ñ¼Æ /p1 ¤j©ó /p2 ªº°Ñ¼Æ /p3";
+ParameterNotFound_ExistingParameters = "°Ñ¼Æ \n /p1 ¥¼§ä¨ì. \n ªí¦C©Ò¦³°Ñ¼Æ: \n/p2";
+ToolParameterNoFound = "¤M¨ã°Ñ¼Æ /p1 ¥¼§ä¨ì";
+WrongToolCuttingAngle = "¿ù»~ªº¤M¨ã¤Á«d¨¤«× /p1";
+WrongToolTipZCoordinateCalculated = "¹ï¤M¨ãª½®| /p1 ¤@­Ó¿ù»~ªº¤M¦yZ¶b /p2 ³Q­pºâ";
+WrongToolTipLengthCalculated = "¿ù»~ªº¤M¦yªø«× /p1 ³Q­pºâ";
+NoFeatureFound = "¬ÛÃö¯S¼x¥¼§ä¨ì";
+InternalPocketingError = "¤º³¡´î­«¼Ñ¿ù»~";
+WrongDrivesElement = "¿ù»~ÅX°Ê¤¸¯À";
+WrongIslandsElement = "¿ù»~®q¤¸¯À";
+WrongPartElement = "¿ù»~¹s¥ó¤¸¯À";
+GeometryNotAccessible = "´X¦ó¤£¯à¦s¨ú. ¥i¯à¤w³Q§R°£";
+NoToolPathFactoryFound = "¥¼µo²{¤M¨ã¸ô®|°Ê§@";
+NoFeedrateParametersFound = "¥¼µo²{³t²v°Ê§@";
+ThisToolTypeHasNoToolTipLength = "¤M¨ã§Î¦¡ /p1 ¥¼§ä¨ì¤M¦yªø«×";
+Breakthrough_And_DepthDistance_Defined = "¬ï¶V¥B©w¸q²`«×¶ZÂ÷ ";
+OXOZColinearDirections = "OX ©M OZ ¨ã¦³¦P½u¤è¦V"; 
+PossibleCause = "¥i¯à­ì¦]:";
+
+//=======================================================================
+//=======================================================================
+//                        ======== 2D RA 2D MA ========            
+//                         Plage ERR_7000 a 7100 
+//=======================================================================
+//=======================================================================
+ERR_7000.Request    = "­pºâ­«¥[¤u°Ï°ì."; 
+ERR_7000.Diagnostic = "­pºâ¥¢±Ñ.";
+ERR_7000.Advice     = "½ÐÀË¬d°Ñ¼Æ.";
+
+ERR_7001.Request    = "­pºâ­«¥[¤u°Ï°ì."; 
+ERR_7001.Diagnostic = "¥¼µo²{­«¥[¤u°Ï°ì.";
+
+ERR_7002 = "­pºâ­«¥[¤u°Ï°ì. \n µL®Ä´X¦ó²ÕºA.";
+
+ERR_7003.Request    = "¸ü¤J½ü¹ø¥~§Î°Ê§@."; 
+ERR_7003.Diagnostic = "°Ê§@¤¤§t¦³¤@­Ó¥H¤Wªº¾É¤Þ¤¸¯À.";
+ERR_7003.Advice     = "¿ï¾Ü©Ò»Ýªº¾É¤Þ¤¸¯À.";
+
+ERR_7004.Request    = "±q¥[¤u°Ê§@¤¤¸ü¤J."; 
+ERR_7004.Diagnostic = "¸ü¤J¥¢±Ñ.";
+ERR_7004.Advice     = "¤â°Ê³]©w­«¥[¤u°Ñ¼Æ.";
+
+ERR_7005.Request    = "±q½ü¹ø¥~§Î°Ê§@¤¤¸ü¤J."; 
+ERR_7005.Diagnostic = "µLªk¸ü¤J: ¾Þ§@¼Ò¦¡¥²¶·¬°¥­­±¶¡.";
+ERR_7005.Advice     = "¤â°Ê³]©w­«¥[¤u°Ñ¼Æ.";
+
+ERR_7006.Request    = "±q½ü¹ø¥~§Î°Ê§@¤¤¸ü¤J."; 
+ERR_7006.Diagnostic = "µLªk¸ü¤J: ¤M¨ã¦ì¸m¦b¾É¤Þ¤W.";
+ERR_7006.Advice     = "¤â°Ê³]©w­«¥[¤u°Ñ¼Æ.";
+
+ERR_7007.Request    = "­pºâ­«¥[¤u°Ï°ì."; 
+ERR_7007.Diagnostic = "µLªk­pºâ: ³nÃä¬É¥²¶·¬°«Ê³¬¦±½u¥B¤è¦V¦V¤º.";
+ERR_7007.Advice     = "ÀË¬d±zªº°Ñ¼Æ.";
+
+ERR_7008.Request    = "­pºâ­«¥[¤u°Ï°ì."; 
+ERR_7008.Diagnostic = "µLªk­pºâ: ¥²¶·¬O«Ê³¬¥~§Îªº®q.";
+ERR_7008.Advice     = "ÀË¬d±zªº°Ñ¼Æ.";
+
+ERR_7009.Request    = "­pºâ­«¥[¤u°Ï°ì."; 
+ERR_7009.Diagnostic = "µLªk­pºâ: ¥~§Î¤£³sÄò.";
+ERR_7009.Advice     = "¦b¤£³sÄò¤¤¶ñº¡.";
+
+ERR_7010.Request    = "¥H¨â¶b¥b¥[¤u°Ï°ì«Ø¥ß°Ê§@."; 
+ERR_7010.Diagnostic = "¥Ø«e¥[¤u°Ï°ì»P°Ê§@¤£¤@­P.";
+ERR_7010.Advice     = "¥[¤u°Ï°ì¤£¬ÛÃö, ±N«Ø¥ß·s¯S¼x";
+
+ERR_7011.Request    = "­pºâ­«¥[¤u°Ï°ì¤¤."; 
+ERR_7011.Diagnostic = "µLªk­pºâ: °»´ú¨ì¤@­Ó¥H¤W¥~§Î";
+ERR_7011.Advice     = "¥u¥i°õ¦æ¤@­Ó¥~§Î";
+
+ERR_7012.Request    = "¥~§ÎµÑ¨ú."; 
+ERR_7012.Diagnostic = "µLªkµÑ¨ú: ¶}±Ò­×°Å­±Àô±a°»´ú \n ­×°Å­±¶¡³s±µµLªk¨M©w¥~§Î  ";
+ERR_7012.Advice     = "½Ð¿ï¾Ü¨ä¥¦¥~§Î©Î¨Ï¥Î¨ä¥¦¿ï¾Ü¼Ò¦¡ (Ãä½u..) ";
+
+ERR_7013.Request    = "¥~§ÎµÑ¨ú."; 
+ERR_7013.Diagnostic = "µLªkµÑ¨ú: µLªk¨M©w¥~§Î  ";
+ERR_7013.Advice     = "½Ð¿ï¾Ü¨ä¥¦¥~§Î©Î¨Ï¥Î¨ä¥¦¿ï¾Ü¼Ò¦¡ (Ãä½u..) ";
+
+
+ERR_7014.Request    = "Operation creation with associated feature."; 
+ERR_7014.Diagnostic = "Current feature is not compatible with operation.";
+ERR_7014.Advice     = "feature not associated";
+
+//************************************************************
+// Plage ERR_8001 a ERR_8029 : Manufacturing Gantt
+//************************************************************
+//
+// Incorrect Selection
+//
+ERR_8001.Request    = "The object you selected is not under a Part Operation."; 
+ERR_8001.Advice     = "\nPlease select a Part Operation or an activity under a Part Operation.";
+//
+// Machine has a single turret
+//
+ERR_8002.Request    = "This functionality is not available with single turret machine."; 
+ERR_8002.Advice     = "Add turrets on the machine, assign a turret to each program and define operations under the appropriate program.";
+//
+// Machine is not a Multi-turret one
+//
+ERR_8003.Request    = "This functionality is accessible only with a multi-turrets machine."; 
+ERR_8003.Advice     = "\nChange the machine, assign a turret to programs and move operations under the appropriate program.";
+//
+// There a concurrent turret on a spindle, without set of master
+//
+ERR_8004.Request    = "Several turrets work concurrently on the same spindle, without definition of master."; 
+ERR_8004.Diagnostic = "Time computations and machine code may not be correct.";
+ERR_8004.Advice     = "\nChange assignation of spindle or turrets or\n create synchronization choosing a master at the begining of the Part Operation.";
+//
+// Desactivating a synchronised activity
+//
+ERR_8005.Request    = "You are desactivating a synchronized activity."; 
+ERR_8005.Diagnostic = "Computations will be done as if those synchronizations do not exist, in Gantt Chart or NC Code.";
+//
+//************************************************************
+// Plage ERR_8030 a ERR_8069 : Synchronisation
+//************************************************************
+//
+// Activities from different part operations
+//
+ERR_8030.Request    = "Activities must be in the same Part Operation to be synchronized."; 
+ERR_8030.Diagnostic = "Synchronization has not been created.";
+ERR_8030.Advice     = "\nPlease select activities from the same Part Operation.";
+//
+// Activities using same turret
+//
+ERR_8031.Request    = "Activities must use different turrets to be synchronized."; 
+ERR_8031.Diagnostic = "The selected activities use the same turret or are under the same program, which is not associated to any turret.";
+ERR_8031.Advice     = "\nPlease Check the activities you want to synchronize use different turrets.";
+//
+// One of the activity works at turning spindle when the other not and their start are synchronized
+//
+ERR_8032.Request    = "One of the synchronized activity works with a turning spindle when the other do not."; 
+ERR_8032.Diagnostic = "Synchronization happens before turrets work, which could endanger the part, the tools or the machine.";
+ERR_8032.Advice     = "\nModifiy the position of the synchronization on one of the operation or assign different spindles to operations.";
+//
+// Existing synchronisations unable the creation of this particular synchronisation
+//
+ERR_8033.Request    = "Channels are already synchronized in such a way that the creation of the synchronization is not pertinent."; 
+ERR_8033.Advice     = "Cancel other synchronizations to enable the creation of this synchronization.";
+//
+// Activities are already synchronised
+//
+ERR_8035.Request    = "Synchronization has not been created."; 
+ERR_8035.Diagnostic = "Selected activities are already synchronized.";
+ERR_8035.Advice     = "\nUse the Gantt Chart View to check existing synchronizations and select 2 other activities.";
+//
+// Associativity of synchronisation
+//
+ERR_8036.Request    = "Synchronizing /p1 /p2 is not possible."; 
+ERR_8036.Diagnostic = "Macro might be cancelled or desactivated.";
+ERR_8036.Advice     = "\nIf the specification has changed, edit the synchronization to update it.\nFor now, it'll behave as if the synchronization were set at the /p1";
+//
+//************************************************************
+// ReverseMachiningConditions
+//************************************************************
+MSG_ReverseMachiningConditions= "Reversing conditions on /p1 selected elements :\n \t /p2 operations treated.\n \t /p3 operations updated.";
+
+//************************************************************
+// ReverseMacros
+//************************************************************
+MSG_ReverseMacros= "Reversing Macros on /p1 selected elements :\n \t /p2 operations treated.\n \t /p3 operations updated.";
+//
+// Transition Elements Errors
+//
+ERR_9000.Request    = "Invalid selected plane."; 
+ERR_9000.Diagnostic = "Selected plane does not belong to setup traverse box definition";
+ERR_9000.Advice     = "\nSelect another plane or re-define traverse box.";
+
+//**********
+//
+// Init of Turret Machining Axis System
+//
+CheckMachiningAxisSystemTurret_USEPAS.Request    = "Turning tool axis system cannot be initialized."; 
+CheckMachiningAxisSystemTurret_USEXDIR.Request    = "Turning tool axis system cannot be initialized."; 
+CheckMachiningAxisSystemTurret_USEXDIRUSEZDIR.Request    = "Turning tool axis system cannot be initialized."; 
+CheckMachiningAxisSystemTurret_USEZDIR.Request    = "Turning tool axis system cannot be initialized."; 
+CheckMachiningAxisSystemTurret_USEPAS.Diagnostic = "Turning tool axis system definition is constrained by selected part axis system.";
+CheckMachiningAxisSystemTurret_USEXDIR.Diagnostic = "X direction is constrained by selected geometry.";
+CheckMachiningAxisSystemTurret_USEXDIRUSEZDIR.Diagnostic = "X and Z directions are is constrained by selected geometry.";
+CheckMachiningAxisSystemTurret_USEZDIR.Diagnostic = "Z direction is constrained by selected geometry.";
+CheckMachiningAxisSystemTurret_USEPAS.Advice     = "To initialize turning tool axis system remove current geometry selection.";
+CheckMachiningAxisSystemTurret_USEXDIR.Advice     = "To allow turning tool axis system initialisation, set direction in 'Manual' mode in 'Direction X' editor";
+CheckMachiningAxisSystemTurret_USEXDIRUSEZDIR.Advice     = "To allow turning tool axis system initialisation, set directions in 'Manual' mode in 'Direction X' and 'Direction Z' editors.";
+CheckMachiningAxisSystemTurret_USEZDIR.Advice     = "To allow turning tool axis system initialisation, set direction in 'Manual' mode in 'Direction Z' editor";
+
+CheckMachiningAxisSystemTurret_TURRET_ORIGIN_ALONG_MAIN_SPINDLE_AXIAL_AXIS.Diagnostic = "To incline turret plane (axial and radial axes of turning tool axis system), turret origin cannot be along main spindle axial axis.";
+CheckMachiningAxisSystemTurret_TURRET_ORIGIN_ALONG_MAIN_SPINDLE_AXIAL_AXIS.Advice = "First, define a radial shift of the origin of the turret. Then, apply the angle incline.";
+
+//
+
+//**********
+//CO-Axial Holes
+
+HOLE_SELECTED_FROM_PATTERNS.Request		= "Please Select Hole's  \n which are not Part of Pattern.";
+HOLE_SELECTED_FROM_PATTERNS.Diagnostic	= "Selected Hole should not in \n part of pattern.";
+HOLE_SELECTED_FROM_PATTERNS.Advice		= "Select Another Hole which is not from Pattern.";
+
+//**********
+
+//**********
+//Machine Instruction
+MachineInstruction_NoResource.Diagnostic = "No machine assigned to the part operation.";
+MachineInstruction_NoResource.Advice = "To create machine instruction activity, assign a machine to the part operation.";
+
+
+MachineInstruction_NoLicense.Diagnostic = "Licensing problem.";
+MachineInstruction_NoLicense.Advice     = "A MPS license is required.";
+//**********

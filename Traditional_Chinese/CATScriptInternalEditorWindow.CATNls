@@ -1,0 +1,125 @@
+
+// COPYRIGHT DASSAULT SYSTEMES 2000
+
+//
+// NLS Message for the CATScriptInternalEditorWindow dialog
+//
+ 
+Editor.Title                     	= "巨集編輯器";
+
+// Menu Management
+
+MacroEditorBarMenu.File.Title = "檔案";
+MacroEditorBarMenu.File.New.Title = "開新檔案";
+MacroEditorBarMenu.File.Open.Title = "開啟舊檔...";
+MacroEditorBarMenu.File.Save.Title = "存檔";
+MacroEditorBarMenu.File.SaveAs.Title = "另存新檔...";
+MacroEditorBarMenu.File.Exit.Title = "結束";
+
+MacroEditorBarMenu.View.Title = "視圖";
+MacroEditorBarMenu.View.ObjBrowser.Title = "物件瀏覽器 ...";
+MacroEditorBarMenu.View.TlbBrowser.Title = "類形瀏覽器 ...";
+MacroEditorBarMenu.View.TlbDependencies.Title = "類形相依圖形...";
+
+MacroEditorBarMenu.Edit.Title = "編輯";
+MacroEditorBarMenu.Edit.GoToLine.Title = "到行...";
+MacroEditorBarMenu.Edit.Find.Title = "尋找...";
+MacroEditorBarMenu.Edit.Resolution.Title = "插入物件分辨率...";
+
+MacroEditorBarMenu.Help.Title = "說明";
+MacroEditorBarMenu.Help.Help.Title = " V5 自動說明...";
+
+// Status Bar
+
+StatusBar.Line							= "行 : ";
+StatusBar.Column						= "欄 : ";
+
+// Tool Bar
+
+MacroEditorToolBar.Title					= "巨集編輯器";
+MacroEditorToolBar.New.Title			= "開新檔案";
+MacroEditorToolBar.New.ShortHelp	= "開新檔案";
+MacroEditorToolBar.Open.Title			= "開啟舊檔";
+MacroEditorToolBar.Open.ShortHelp	= "開啟舊檔";
+MacroEditorToolBar.Save.Title			= 存檔";
+MacroEditorToolBar.Save.ShortHelp	= "存檔";
+MacroEditorToolBar.GoToLine.ShortHelp		= "跳至行...";
+MacroEditorToolBar.Find.ShortHelp				= "尋找...";
+MacroEditorToolBar.Resolution.ShortHelp	= "插入物件分辨率...";
+MacroEditorToolBar.Resolution.LongHelp	= "插入使手者交談式選擇的已提供存取的片斷編碼.";
+MacroEditorToolBar.ObjBrowser.ShortHelp	= "檢視物件瀏覽器...";
+
+// Browser
+
+OpenDlgFile.Title						= "開啟舊檔";
+SaveAsDlgFile.Title					= "另存新檔";
+
+TypeDescription.catvbs			= "MS VBScript Files (*.catvbs)";
+TypeDescription.CATScript		= "基本程序檔 (*.CATScript)";
+TypeDescription.java				= "java 檔案 (*.java)";
+TypeDescription.AllFiles		= "所有檔案 (*)";
+
+// Prompt For Save
+
+PromptForSave.Title					= "巨集編輯器";
+PromptForSave.Text					= "在 /p1 中的文字已經更改. \n 您要儲存修改嗎 ?";
+
+// Prompt For Create
+
+PromptForCreate.Title					= "巨集編輯器";
+PromptForCreate.Text					= "檔案 /p1 不存在. 您要建立它嗎 ?";
+
+// Prompt For Replace
+
+PromptForReplace.Title				= "巨集編輯器";
+PromptForReplace.Text					= "檔案 /p1 存在. 您要覆寫它嗎 ?";
+// Go To Line Input
+
+GoToLineInputDlg.Title										= "跳至線";
+GoToLineInputDlg.InputLineLabel.Title			=	"線號碼 : ";
+GoToLineInputDlg.InputLineLabel.LongHelp	= "提供輸入您要跳至線行號碼的空間.";
+GoToLineInputDlg.InputLineEditor.LongHelp	= "提供輸入您要跳至線行號碼的空間.";
+
+// Find Input
+
+FindInputDlg.Title																			= 	"尋找";
+FindInputDlg.BOK.Title																	= 	"尋找下一個";
+FindInputDlg.BCancel.Title															= 	"關閉";
+FindInputDlg.FindLabel.Title														= 	"尋找什麼 : ";
+FindInputDlg.FindLabel.LongHelp													= 	"提供輸入您要尋找文字的空間.";
+FindInputDlg.FindEditor.LongHelp												= 	"提供輸入您要尋找文字的空間.";
+FindInputDlg.GroupRadioButtons.Title										= 	"方向";
+FindInputDlg.GroupRadioButtons.LongHelp									= 	
+"指定文件中游標起始的尋找方向. 
+ . 選擇上來往後尋找, 直到文件的起始.
+ . 選擇下來往前尋找, 直到文件的最後..";
+FindInputDlg.GroupRadioButtons.UpRadioButton.Title			= 	"上";
+FindInputDlg.GroupRadioButtons.DownRadioButton.Title		= 	"下";
+
+// FindErrorWindow
+
+FindErrorWindow.Title						= 	"巨集編輯器";
+FindErrorWindow.Text						= 	"無法找到字串 \"/p1\".";
+
+// File Error Management
+
+ErrorWindow.Title 					= "/p1 中的錯誤";
+
+FileError.TooManyOpenFiles	= "太多開啟檔案.";
+FileError.FileExists				= "檔案 \"/p1\" 已存在.";
+FileError.AccessDenied			= "對檔案 \"/p1\" 您沒有存取權.";
+FileError.InvalidName				= "無效的 \"/p1\" 檔案名稱.";
+FileError.FileNotFound			= "檔案 \"/p1\" 未找到.";
+FileError.DiskFull					= "磁碟已滿.";
+FileError.InvalidParameter	= "無效參數.";
+FileError.InvalidHandle			= "檔案 \"/p1\" 無效處理.";
+FileError.OperationAborted	= "動作中止.";
+FileError.UnknownError			= "未知錯誤.";
+
+Untitled = "未命名";
+
+vbaResolutionMenuItemCaption = "物件辯識率...";
+vbaResolutionMenuItemDescription = "插入使手者交談式選擇的已提供存取的片斷編碼.";
+vbaResolutionMenuItemToolTip = "插入使手者交談式選擇的已提供存取的片斷編碼.";
+vbResolutionTxt = "\n'---- 開始物件的辨析程序 : /p1\n\n/p2'---- 結束辨析程序 \n\n";
+javaResolutionTxt = "\n    //---- 開始物件的辨析程序 : /p1\n\n/p2    //---- 結束辨析程序 \n\n";

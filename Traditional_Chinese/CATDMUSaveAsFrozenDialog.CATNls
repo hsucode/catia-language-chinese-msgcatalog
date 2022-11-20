@@ -1,0 +1,184 @@
+SaveAsFrozen.Title="儲存凍結";
+DMUExport.Title="DMU 輸出";
+DMUImport.Title="DMU 輸入";
+
+FrameDir.Title="目錄";
+FrameDir.DirectoryToLabel.Title="儲存於 :";
+FrameDir.DirectoryFromLabel.Title="搜尋於 :";
+FrameDir.DirectoryEditor.Title="編輯器";
+FrameDir.DirectoryEditor.LongHelp="讓您輸入目錄";
+FrameDir.DirectoryBrowse.Title="瀏覽...";
+FrameDir.DirectoryBrowse.LongHelp="讓您選擇目錄";
+
+FrameName.Title="字首";
+FrameName.NameLabel.Title="以字首 :";
+FrameName.NameEditor.Title="編輯器";
+FrameName.NameEditor.LongHelp="讓您輸入產品的名稱";
+
+FrameDesign.DesignCheck.Title="複製設計";
+FrameDesign.CacheCheck.Title="複製暫存器";
+
+FrameDesign.Mode.SaveProduct="儲存產品組";
+FrameDesign.Mode.SaveData="儲存產品組和資料";
+FrameDesign.Mode.SaveCache="儲存產品組和暫存器";
+FrameDesign.Mode.SaveDataAndCache="儲存產品組, 資料和暫存器";
+FrameDesign.Mode.SaveProductOnCgr="儲存與暫存器鏈結的產品組";
+FrameDesign.Mode.SaveAsOnlyOneProduct="存成只有單一產品";
+
+//--------------------------
+// PANEL REPLACE
+//--------------------------
+
+
+// CATDlgDialog ConfirmFileReplace
+ConfirmFileReplace.Title = "確認檔案替換";
+
+// CATDlgLabel label02
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.label02.Title = "目標檔案已存在一個檔案.";
+
+// CATDlgLabel label03
+str1 = "命名";
+
+date = "修改於";
+
+// CATDlgLabel label05
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.label05.Title = "您要更換已存在檔案";
+
+// CATDlgLabel label11
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.label11.Title  = "以這一個?";
+
+// CATDlgPushButton RYes
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.frameButtons.RYes.Title = "是";
+
+// CATDlgPushButton RNo
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.frameButtons.RNo.Title = "否";
+
+// CATDlgPushButton RYesToAll
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.frameButtons.RYesToAll.Title = "如全部是請按 是";
+
+// CATDlgPushButton RNoToAll
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.frameButtons.RNoToAll.Title = "如全部不是請按 不是";
+
+// CATDlgPushButton RCancel
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.frameButtons.RCancel.Title = "取消";
+
+// Panel ERROR
+error_nls=   "無法變更文件名稱";
+problem_nls= "錯誤"; 
+
+
+//--------------------------
+// PANEL ERRORCOPY
+//--------------------------
+
+// CATDlgDialog ErrorCopy
+ErrorCopy.Title = "複製錯誤";
+
+// CATDlgLabel errorLabel1
+errorLabel1 = " 複製檔案 '/p1' 錯誤";
+
+// CATDlgLabel errorLabel2
+errorLabel2 = "在目錄 '/p1' ";
+
+// CATDlgPushButton ESkip
+ErrorCopy.framePrincipal.frameDroite.frameButtons.ESkip.Title = "跳過檔案";
+
+// CATDlgPushButton ECancel
+ErrorCopy.framePrincipal.frameDroite.frameButtons.ECancel.Title = "取消";
+
+
+//-----------------------------------------------
+// PANEL D'AFFICHAGE D'ERREUR LORS DE LA COPIE
+//-----------------------------------------------
+
+
+// CONFLICT WITH SEARCH ORDER
+
+str2 = "有些文件會被複製至搜尋次序目錄. \n 確認嗎?";
+title2 = "與搜尋次序相衝突";
+
+
+
+// Cache error
+
+CacheActivation.Title = "暫存器啟動";
+CacheActivation.Text  = "命令不允許 \n 執行命令前請先納入暫存器.";
+
+
+// PANEL DE DEMANDE DE CONFIRMATION LORS DE LA CREATION DE REPERTOIRE
+
+// CATDlgNotify CreateDirectory
+CreateDirectory.Title = "CATIA";
+CreateDirectory.Text  = "目錄 '/p1' 未存在. \n 您要建立它嗎?";
+
+
+
+// PANEL D'AFFICHAGE DE CREATION IMPOSSIBLE DE REPERTOIRE
+
+// CATDlgNotify ImpossibleCreation
+ImpossibleCreation.Title = "CATIA";
+ImpossibleCreation.Text = "建立目錄 '/p1'時發生錯誤";
+
+
+// PANEL D'AFFICHAGE DE directory inexistante pour l'import
+
+// CATDlgNotify ImportDirectory
+ImportDirectory.Title = "輸入 DMU ";
+ImportDirectory.Text = "目錄 '/p1' 不存在";
+
+
+
+// PANEL PREVENANT D'UN CONFLIT AVEC LE SEARCHORDER
+
+// CATDlgNotify SEARCHORDER
+
+
+// PANEL RENAME
+
+// Title Panel Rename
+titre_nls = "更名";
+
+// CATDlgLabel
+NewLabel_Nls = "新的目標名稱:                  ";
+
+
+// PANEL PREVENANT D'UNE ERREUR LORS DU SENDMAIL
+
+// CATDlgNotify ErrorMail
+MailError.Title = "傳送至";
+MailError.Text  = "內部錯誤 \n 命令中止";
+
+
+// ----------------------------------------
+// PANEL DE REPORT
+// ----------------------------------------
+
+// CATDlgDialog PReport
+PReport.Title = "複製檔案 ";
+
+// CATDlgLabel SummaryLabel
+SummaryLabel.Title = "全部 /p2 個中的 /p1 個已複製.";
+
+// CATDlgLabel TypeLabel
+TypeLabel = "/p1 (of /p2) /p3 文件";
+
+// CATDlgLabel SizeLabel
+SizeLabel.Title = "全部大小 : ";
+
+
+// ---------------------------------------
+// LABEL BARRE DE PROGRESSION
+// ---------------------------------------
+
+TextInUserFrame.Texte = "複製檔案";
+
+//-----------------------------------------
+// NLS DES SERVICES
+//-----------------------------------------
+
+Unit1_nls = " 位元組";
+Unit2_nls = " KB";
+Unit3_nls = " MB";
+Unit4_nls = " GB";
+Unit5_nls = " TB";
+Unit6_nls = " ??";

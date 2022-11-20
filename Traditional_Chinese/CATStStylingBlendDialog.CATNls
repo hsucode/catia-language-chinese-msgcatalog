@@ -1,0 +1,97 @@
+//=============================================================================
+// COPYRIGHT DASSAULT SYSTEMES  1998
+//=============================================================================
+//
+// CATStStylingBlendDialog: Resource file for NLS purpose related to
+//                            the styling fillet
+//
+//=============================================================================
+//
+// Implementation Notes:
+//
+//=============================================================================
+// Dec 98						Thierry Caro
+//=============================================================================
+
+Title  = "圓角選擇";
+
+FilletTypeFrame.Title = "圓角形式";
+FilletTypeFrame.LongHelp = "定義圓角形式";
+
+FilletTypeFrame.Combo.LongHelp = "定義圓角形式";
+
+FilletTypeFrame.ComboBasic.Title = "基本的";
+FilletTypeFrame.ComboBasic.LongHelp = "基本模式: minimizes the resulting fillet surface degree";
+
+FilletTypeFrame.ComboAdvanced.Title = "進階的";
+FilletTypeFrame.ComboAdvanced.LongHelp = "進階模式: creates a fillet surface of higher degree";
+
+
+TransitionTypeFrame.ComboCrossTg.Title = "十字相切";
+TransitionTypeFrame.ComboCrossTg.LongHelp = "Cross tangent continuity:
+Insures that the normal continuity is met
+when a tangent continuity is chosen";
+
+TransitionTypeFrame.ComboProportionalTg.Title = "部份相切";
+TransitionTypeFrame.ComboProportionalTg.LongHelp = "Proportional tangent continuity:
+this option does not guarantee the normal continuity
+when a tangent continuity is chosen";
+
+RadiusFrame.RadiusLabel.Title = "半徑: ";
+RadiusFrame.RadiusLabel.LongHelp = "Defines the fillet radius";
+
+RadiusFrame.More.Title = "更多...";
+RadiusFrame.More.LongHelp = "Shows the options to be displayed";
+RadiusFrame.Less.Title = "更少...";
+RadiusFrame.Less.LongHelp = "Hides the options to be displayed";
+
+DisplayFrame.Title = "顯示";
+DisplayFrame.LongHelp = "Defines the options to be displayed";
+
+DisplayFrame.ContinuityTypeChkB.Title = "連續連接";
+DisplayFrame.ContinuityTypeChkB.LongHelp = "Displays the continuity types
+and enables to edit them";
+
+DisplayFrame.CouplingPtsChkB.Title = "連結點";
+DisplayFrame.CouplingPtsChkB.LongHelp = "Displays relimitation point manipulators";
+
+SurfaceSetsFrame.KeepOldChkB.Title = "保持";
+SurfaceSetsFrame.KeepOldChkB.LongHelp = "Keeps the initial surfaces";
+
+DisplayFrame.NormalsChkB.Title = "垂直";
+DisplayFrame.NormalsChkB.LongHelp = "Displays the direction of the initial surfaces";
+
+DisplayFrame.InfoChkB.Title = "資訊";
+DisplayFrame.InfoChkB.LongHelp = "Displays information about the resulting 
+styling fillet surface: mode and number of patches";
+
+SurfaceSetsFrame.Title = "最初曲面";
+SurfaceSetsFrame.LongHelp = "Gives the number of surfaces in each set";
+
+SurfaceSetsFrame.Set1.Title = "Set 1: ";
+SurfaceSetsFrame.Set1.LongHelp = "Number of surfaces in first set";
+
+SurfaceSetsFrame.Set2.Title = "Set 2: ";
+SurfaceSetsFrame.Set2.LongHelp = "Number of surfaces in second set";
+
+SurfaceSetsFrame.Surface.Title = " 曲面";
+
+SurfaceSetsFrame.Surfaces.Title = " 曲面組";
+
+
+// ========================================================================================
+// ========================================================================================
+
+
+ErrorComputeDialog.Title = "圓角計算錯誤";
+ErrorComputeDialog.Message = "
+The Fillet surface could not be
+computed correctly.
+Please try and modify the continuities,
+the orientations and/or the Fillet
+radius and re-start the computation.";
+
+
+
+
+

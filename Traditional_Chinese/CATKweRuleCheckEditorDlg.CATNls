@@ -1,0 +1,52 @@
+//Pour l'editeur de Rule et de Check
+//-------------------------------------------------
+RuleEditorDlg.Active.Title = "規則編輯器 : /P1 啟動";
+RuleEditorDlg.Inactive.Title = "規則編輯器 : /P1 未啟動";
+CheckEditorDlg.Active.Title = "檢查編輯器 : /P1 啟動";
+CheckEditorDlg.Inactive.Title = "檢查編輯器  : /P1 未啟動";
+LawEditorDlg.Active.Title = "Law 編輯器 : /P1 啟動";
+LawEditorDlg.Inactive.Title = "Law 編輯器 : /P1 未啟動";
+
+frSeverity.check_severity_label.Title = "檢查形式 : ";
+
+RuleEditorDlg.text_editor.LongHelp = "此欄位為規則編輯器. \n\n",
+                                                       "規則使參數在那種情形下可被修改. \n\n",
+													   "應使用以下語法: \n",
+													   "if (LENGTH.1 == 20 公厘)\n",
+													   "    MATERIAL.1 = \"鋁\"\n",
+													   "else if (LENGTH.1>20 公厘)\n",
+													   "    {\n",
+													   "      MATERIAL.1 = \" 鋼 \"\n",
+													   "      Real.5 = 12 公厘\n",
+													   "     }\n",
+													   "其它的 \n",
+													   "    MATERIAL.1 = \" 黃銅 \"\n\n",
+													   "寫入檔案名稱可直接輸入, \n",
+													   "使用以下所附的編輯字典, 或 \n",
+													   "選擇參數的 3D 相關限制. \n",
+													   "可在 3D 的視窗或歷程樹中選擇特徵, 
+                                   來顯示 3D 限制. \n";
+RuleEditorDlg.text_editor.Help = "輸入本體的規則";
+
+CheckEditorDlg.text_editor.LongHelp = "此欄位是檢查編輯器. \n\n",
+                                                          "檢查是否合適. \n",
+														  "如果不合適, 您會依據檢查形式被通知. \n",
+														  "例如, 非寂靜模式, 會通知使用者以下的檢查 \n",
+														  "當 PAD.1 有兩個極限是不同的 :\n\n",
+														  "PartBody\Pad.1\FirstLimit\Length == PartBody\Pad.1\SecondLimit\Length\n\n",
+													      "寫入參數名稱您可直接輸入名稱, \n",
+														  "使用以下的字典編輯器\n",
+														  "或選擇參數相關的 3D 限制. \n",
+													      "可在 3D 的視窗或歷程樹中選擇特徵, 
+                                   來顯示 3D 限制. \n";
+CheckEditorDlg.text_editor.Help = "輸入本體的檢查"; 
+
+frSeverity.message_label.Title = "訊息 : ";
+frSeverity.message_editor.LongHelp = "當檢查無效時, 您可在此欄位輸入想要的訊息."; 
+frSeverity.message_editor.Help = "輸入訊息";
+frSeverity.message_editor.default = "/P1 是無效的";
+frSeverity.check_severity_combo.LongHelp = "選擇目前選擇形式 :\n",
+                                                    ". 寂靜模式 : 檢查情形會只以圖式形式顯示在歷程樹中.\n",
+													". 資訊 : 訊會顯示在對話框中.\n",
+													". 警告 : 警告訊會顯示在對話框中.\n";
+RuleCheckEditorDlg.Apply = "應用修改";

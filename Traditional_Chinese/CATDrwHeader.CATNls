@@ -1,0 +1,1721 @@
+//=============================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1997 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATDrwHeader
+// LOCATION    :    DraftingUI/CNext/resources/msgcatalog
+// AUTHOR      :    jmt
+// DATE        :    Oct. 06 1997
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Drafting WorkShop
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION	user  date      purpose
+//   HISTORY	----  ----      -------
+//         01       smr	  FEV.98    Integration des ressources pour 
+//                                  l'interactive drafting
+//         02       fgx   23.07.98  Resources for DSA Commands Chamfer, GDT, Text and TextWithLeader
+//         03	    fgx   09.11.98  Ajout de Find & Replace pour DSA
+//	   04	    fgx	  23.11.98  Modif nom des headers 
+//         05	    fgx   03.12.98  Ajout Create/Delete/Query Positional Link pour DSA
+//	   06	    fgx   12.01.98  Temporaire : headers constraints du sketcher chez nous !!
+//	   07	    fgx   12.01.98  Ajout NLS commande DatumLocator de DSA
+//	   08	    fgx	  28.01.99  Ajout de gendim analysis
+//	   09	    fgx	  09.02.99  Ajout des constr lines
+//	   10	    fgx	  23.03.99  Nettoyage
+//	   11	    lhz	  23.03.99  complement sur constr lines
+//	   12	    fgx	  29.03.99  Layers And Filters + LineUp
+//	   13	    lhz	  23.07.99  Sheet de details et dittos
+//	   14	    jec	  26.08.99  Ajout de Welding symbols and Geometrical
+//	   15	    fgx	  30.09.99  Ajout de Import File
+//	   16	    fgx	  17.11.99  Ajout de Catalog Browser
+//	   17	    fgx	  22.11.99  Ajout de Restore Value Position
+//         18       ere   10.12.99  Ajout de Isolate 
+//         19       fgx   20.12.99  Ajout de Positioning
+//         20       ere   21.02.00  Ajout de DrwResteGenitemProperties
+//	   21       bty   24.02.00  Ajout de Generative Bill of Material
+//	   22       tbe	  24.02.00  Ajout edition des callouts
+//	   23       dcf   14.06.00  Ajout de Text Replicate
+//	   24       bty   06.07.00  Ajout de UnBreakout et ApplyBreakoutTo
+//         21       fgx   04.10.00  Ajout des commandes de cote specialisees
+//         22       flr   19.10.00  Ajout de la commande de modif de text dans l'instance
+//         23       flr   14.01.02  Ajout de swap to Diameter/Radius
+//	   24 	    lgk   26.06.02  Revision
+//	   25 	    lgk   15.10.02  Revision new NLS
+//	 26 	    lgk   16.12.02  Revision new NLS
+//------------------------------------------------------------------------------
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Dimensions
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//------------------------------------------------------------------------------
+// Dimensions Creation Command (Classical mode)
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDim.Title="尺寸";
+CATDrwHeader.DrwDim.ShortHelp= "尺寸";
+CATDrwHeader.DrwDim.Help="建立尺寸";
+CATDrwHeader.DrwDim.LongHelp =
+"建立尺寸
+建立尺寸.";
+
+//------------------------------------------------------------------------------
+// Dimensions Creation Command (cumulate mode)
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwDimChainHdr.Title="鏈結尺寸";
+CATDrwHeader.CATDrwDimChainHdr.ShortHelp="鏈結尺寸";
+CATDrwHeader.CATDrwDimChainHdr.Help="建立鏈結尺寸";
+CATDrwHeader.CATDrwDimChainHdr.LongHelp =
+"鏈結尺寸
+建立鏈結尺寸";
+
+//------------------------------------------------------------------------------
+// Dimensions Creation Command (stacked mode)
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDimStack.Title="基線式尺寸";
+CATDrwHeader.DrwDimStack.ShortHelp= "基線式尺寸";
+CATDrwHeader.DrwDimStack.Help="建立基線式尺寸";
+CATDrwHeader.DrwDimStack.LongHelp =
+"基線式尺寸
+建立基線式尺寸.";
+
+//------------------------------------------------------------------------------
+// Dimensions Creation Command (cumulate mode)
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDimCumul.Title="連續式尺寸";
+CATDrwHeader.DrwDimCumul.ShortHelp= "連續式尺寸";
+CATDrwHeader.DrwDimCumul.Help="建立連續式尺寸";
+CATDrwHeader.DrwDimCumul.LongHelp =
+"連續式尺寸
+建立連續式尺寸.";
+
+//------------------------------------------------------------------------------
+// Dimensions Creation Command (length/distance mode)
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDimLengthDist.Title="長度或距離尺寸";
+CATDrwHeader.DrwDimLengthDist.ShortHelp= "長度或距離尺寸";
+CATDrwHeader.DrwDimLengthDist.Help="建立長度或距離尺寸";
+CATDrwHeader.DrwDimLengthDist.LongHelp =
+"建立長度或距離尺寸
+只建立長度或距離尺寸.";
+
+//------------------------------------------------------------------------------
+// Dimensions Creation Command (angle mode)
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDimAngle.Title="角度尺寸";
+CATDrwHeader.DrwDimAngle.ShortHelp= "角度尺寸";
+CATDrwHeader.DrwDimAngle.Help="建立角度尺寸";
+CATDrwHeader.DrwDimAngle.LongHelp =
+"建立角度尺寸
+只建立角度尺寸.";
+
+//------------------------------------------------------------------------------
+// Dimensions Creation Command (radius mode)
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDimRadius.Title="半徑尺寸";
+CATDrwHeader.DrwDimRadius.ShortHelp= "半徑尺寸";
+CATDrwHeader.DrwDimRadius.Help="建立半徑尺寸";
+CATDrwHeader.DrwDimRadius.LongHelp =
+"半徑尺寸
+只建立半徑尺寸.";
+
+//------------------------------------------------------------------------------
+// Dimensions Creation Command (diameter mode)
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDimDiameter.Title="直徑尺寸";
+CATDrwHeader.DrwDimDiameter.ShortHelp= "直徑尺寸";
+CATDrwHeader.DrwDimDiameter.Help="建立直徑尺寸";
+CATDrwHeader.DrwDimDiameter.LongHelp =
+"直徑尺寸
+只建立直徑尺寸.";
+
+//------------------------------------------------------------------------------
+// Dimensions Creation Command (half dim mode)
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDimHalf.Title="一半尺寸";
+CATDrwHeader.DrwDimHalf.ShortHelp= "一半尺寸";
+CATDrwHeader.DrwDimHalf.Help="建立一半尺寸";
+CATDrwHeader.DrwDimHalf.LongHelp =
+"一半尺寸
+建立一半尺寸.";
+
+//------------------------------------------------------------------------------
+// Dimensions Creation Command (chamfer mode)
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDimChamf.Title="倒角尺寸";
+CATDrwHeader.DrwDimChamf.ShortHelp= "倒角尺寸";
+CATDrwHeader.DrwDimChamf.Help="建立倒角尺寸";
+CATDrwHeader.DrwDimChamf.LongHelp =
+"倒角尺寸
+建立倒角尺寸.";
+
+//------------------------------------------------------------------------------
+// Cote de thread
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwDimThreadHdr.Title="螺紋尺寸";
+CATDrwHeader.CATDrwDimThreadHdr.ShortHelp= "螺紋尺寸";
+CATDrwHeader.CATDrwDimThreadHdr.Help="在上或側視圖建立螺紋尺寸";
+CATDrwHeader.CATDrwDimThreadHdr.LongHelp =
+"螺紋尺寸
+建立螺蚊尺寸 :
+- 直徑尺寸在上視圖;
+- 直徑和深度尺寸在側視圖.";
+
+//------------------------------------------------------------------------------
+// Table of hole dim
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwHoleDimTableHdr.Title="孔尺寸表";
+CATDrwHeader.CATDrwHoleDimTableHdr.ShortHelp= "孔尺寸表";
+CATDrwHeader.CATDrwHoleDimTableHdr.Help="建立孔尺寸表";
+CATDrwHeader.CATDrwHoleDimTableHdr.LongHelp =
+"孔尺寸表
+建立孔尺寸表.";
+
+//------------------------------------------------------------------------------
+// Table of coord dim
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwCoordDimTable.Title="座標尺寸表";
+CATDrwHeader.DrwCoordDimTable.ShortHelp="座標尺寸表";
+CATDrwHeader.DrwCoordDimTable.Help="建立座標尺寸表";
+CATDrwHeader.DrwCoordDimTable.LongHelp =
+"座標尺寸表
+建立座標尺寸表";
+
+//------------------------------------------------------------------------------
+// Dimensions Creation Command (Diameter cone dimensions)
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDimCone.Title="直徑錐尺寸";
+CATDrwHeader.DrwDimCone.ShortHelp= "直徑錐尺寸";
+CATDrwHeader.DrwDimCone.Help="建立直徑錐尺寸";
+CATDrwHeader.DiamCone.LongHelp =
+"直徑錐尺寸
+建立直徑錐尺寸.";
+
+//------------------------------------------------------------------------------
+// Dimensions Creation Command (Coordinate dimensions)
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDimCoord.Title="座標尺寸";
+CATDrwHeader.DrwDimCoord.ShortHelp= "座標尺寸";
+CATDrwHeader.DrwDimCoord.Help="建立座標尺寸";
+CATDrwHeader.DrwDimCoord.LongHelp =
+"座標尺寸
+建立座標尺寸.";
+
+//------------------------------------------------------------------------------
+// Slope Dimension Creation Command (half dim mode)
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDimSlope.Title="斜度尺寸";
+CATDrwHeader.DrwDimSlope.ShortHelp= "斜度尺寸";
+CATDrwHeader.DrwDimSlope.Help="建立斜度尺寸";
+CATDrwHeader.DrwDimSlope.LongHelp =
+"斜度尺寸
+建立斜度尺寸.";
+
+//------------------------------------------------------------------------------
+// Swap to Diameter Command 
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwDimSwapToDiaHdr.Title="轉換至直徑";
+CATDrwHeader.CATDrwDimSwapToDiaHdr.ShortHelp="轉換至直徑";
+CATDrwHeader.CATDrwDimSwapToDiaHdr.Help="從半徑轉換至直徑";
+CATDrwHeader.CATDrwDimSwapToDiaHdr.LongHelp =
+"轉換至直徑
+將尺寸從半徑轉換至直徑";
+
+//------------------------------------------------------------------------------
+// Swap to Radius Command 
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwDimSwapToRadHdr.Title="轉換至半徑";
+CATDrwHeader.CATDrwDimSwapToRadHdr.ShortHelp="轉換至半徑";
+CATDrwHeader.CATDrwDimSwapToRadHdr.Help="從直徑轉換至半徑";
+CATDrwHeader.CATDrwDimSwapToRadHdr.LongHelp =
+"轉換至半徑
+將尺寸從直徑轉換至半徑.";
+
+//------------------------------------------------------------------------------
+// Dimension Feature
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwFeatDimHdr.Title="技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimHdr.ShortHelp="技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimHdr.Help="建立技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimHdr.LongHelp =
+"技術特徵尺寸
+建立技術特徵尺寸";
+
+CATDrwHeader.CATDrwFeatDimMultiHdr.Title="多重內部技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimMultiHdr.ShortHelp="多重內部技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimMultiHdr.Help="建立多重內部技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimMultiHdr.LongHelp =
+"多重內部技術特徵尺寸
+建立多重內部技術特徵尺寸";
+
+CATDrwHeader.CATDrwFeatDimChainHdr.Title="鏈式技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimChainHdr.ShortHelp="鏈式技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimChainHdr.Help="建立鏈式技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimChainHdr.LongHelp =
+"鏈式技術特徵尺寸
+建立鏈式技術特徵尺寸";
+
+CATDrwHeader.CATDrwFeatDimCumulHdr.Title="累積技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimCumulHdr.ShortHelp="累積技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimCumulHdr.Help="建立累積技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimCumulHdr.LongHelp =
+"累積技術特徵尺寸
+建立累積技術特徵尺寸";
+
+CATDrwHeader.CATDrwFeatDimStackHdr.Title="層疊技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimStackHdr.ShortHelp="層疊技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimStackHdr.Help="建立層疊技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimStackHdr.LongHelp =
+"層疊技術特徵尺寸
+建立層疊技術特徵尺寸";
+
+CATDrwHeader.CATDrwFeatDimLengthDistHdr.Title="長度技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimLengthDistHdr.ShortHelp="長度技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimLengthDistHdr.Help="建立長度技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimLengthDistHdr.LongHelp =
+"長度技術特徵尺寸
+建立長度技術特徵尺寸";
+
+CATDrwHeader.CATDrwFeatDimAngleHdr.Title="角度技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimAngleHdr.ShortHelp="角度技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimAngleHdr.Help="建立角度技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimAngleHdr.LongHelp =
+"角度技術特徵尺寸
+建立角度技術特徵尺寸";
+
+CATDrwHeader.CATDrwFeatDimRadiusHdr.Title="半徑技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimRadiusHdr.ShortHelp="半徑技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimRadiusHdr.Help="建立半徑技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimRadiusHdr.LongHelp =
+"半徑技術特徵尺寸
+建立半徑技術特徵尺寸";
+
+CATDrwHeader.CATDrwFeatDimDiameterHdr.Title="直徑技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimDiameterHdr.ShortHelp="直徑技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimDiameterHdr.Help="建立直徑技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimDiameterHdr.LongHelp =
+"直徑技術特徵尺寸
+建立直徑技術特徵尺寸";
+
+CATDrwHeader.CATDrwFeatDimCurvLengthHdr.Title="曲線長度技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimCurvLengthHdr.ShortHelp="曲線長度技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimCurvLengthHdr.Help="建立曲線長度技術特徵尺寸";
+CATDrwHeader.CATDrwFeatDimCurvLengthHdr.LongHelp =
+"曲線長度技術特徵尺寸
+建立曲線長度技術特徵尺寸.";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Constraints
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//------------------------------------------------------------------------------
+// Constraint Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwConstraint.Title="幾何拘束";
+CATDrwHeader.DrwConstraint.ShortHelp="幾何拘束";
+CATDrwHeader.DrwConstraint.Help="建立兩幾何元素間幾何拘束";
+CATDrwHeader.DrwConstraint.LongHelp =
+"幾何拘束
+建立兩幾何元素間幾何拘束";
+
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Annotations
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//------------------------------------------------------------------------------
+// Table Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwTableHdr.Title="表";
+CATDrwHeader.CATDrwTableHdr.ShortHelp="表";
+CATDrwHeader.CATDrwTableHdr.Help="建立表";
+CATDrwHeader.CATDrwTableHdr.LongHelp =
+"表
+建立表";
+
+//------------------------------------------------------------------------------
+// Table from CSV Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwTableFromCSVHdr.Title="CSV 表";
+CATDrwHeader.CATDrwTableFromCSVHdr.ShortHelp="CSV 表";
+CATDrwHeader.CATDrwTableFromCSVHdr.Help="建立 CSV 檔案表";
+CATDrwHeader.CATDrwTableFromCSVHdr.LongHelp =
+"CSV 表
+建立 CSV 檔案表";
+
+
+//------------------------------------------------------------------------------
+// Text Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwText.Title="文字";
+CATDrwHeader.DrwText.ShortHelp="文字";
+CATDrwHeader.DrwText.Help="建立文字";
+CATDrwHeader.DrwText.LongHelp =
+"文字
+建立文字.";
+
+//------------------------------------------------------------------------------
+// Text Leader Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwTextLeader.Title="文字含箭頭";
+CATDrwHeader.DrwTextLeader.ShortHelp="文字含箭頭";
+CATDrwHeader.DrwTextLeader.Help="建立含箭頭的一個文字";
+CATDrwHeader.DrwTextLeader.LongHelp =
+"箭頭
+建立文字含箭頭.";
+
+//------------------------------------------------------------------------------
+// Text Replicate Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwTextReplicate.Title="文字複製";
+CATDrwHeader.DrwTextReplicate.ShortHelp="文字複製";
+CATDrwHeader.DrwTextReplicate.Help="複製連接屬性文字";
+CATDrwHeader.DrwTextReplicate.LongHelp =
+"文字複製
+複製連接屬性文字.";
+
+//------------------------------------------------------------------------------
+// Add Leader Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwLeaderAdd.Title="增加導引";
+CATDrwHeader.DrwLeaderAdd.ShortHelp="增加導引";
+CATDrwHeader.DrwLeaderAdd.Help="增加導引";
+CATDrwHeader.DrwLeaderAdd.LongHelp =
+"導引
+增加導引.";
+
+//------------------------------------------------------------------------------
+// Roughness Symbol Creation Command (half dim mode)
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwRoughness.Title="粗糙度符號";
+CATDrwHeader.DrwRoughness.ShortHelp= "粗糙度符號";
+CATDrwHeader.DrwRoughness.Help="建立粗糙度符號";
+CATDrwHeader.DrwRoughness.LongHelp =
+"粗糙度符號
+建立粗糙度符號.";
+
+
+//------------------------------------------------------------------------------
+// Management of Arrow Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwArrow.Title="箭頭";
+CATDrwHeader.DrwArrow.ShortHelp="箭頭";
+CATDrwHeader.DrwArrow.Help="建立箭頭";
+CATDrwHeader.DrwArrow.LongHelp =
+"箭頭
+建立箭頭.";
+
+//------------------------------------------------------------------------------
+// GDT Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwGeoTol.Title="幾何容差";
+CATDrwHeader.DrwGeoTol.ShortHelp="幾何容差";
+CATDrwHeader.DrwGeoTol.Help="建立幾何容差";
+CATDrwHeader.DrwGeoTol.LongHelp =
+"幾何容差
+建立幾何容差.";
+
+//------------------------------------------------------------------------------
+// Datum Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDatumFeat.Title="基準特徵";
+CATDrwHeader.DrwDatumFeat.ShortHelp="基準特徵";
+CATDrwHeader.DrwDatumFeat.Help="建立基準特徵";
+CATDrwHeader.DrwDatumFeat.LongHelp =
+"基準特徵
+建立基準特徵.";
+
+//------------------------------------------------------------------------------
+// Datum Target Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDatumTarg.Title="基準目標";
+CATDrwHeader.DrwDatumTarg.ShortHelp="基準目標";
+CATDrwHeader.DrwDatumTarg.Help="建立基準目標";
+CATDrwHeader.DrwDatumTarg.LongHelp =
+"基準目標
+建立基準目標.";
+
+//------------------------------------------------------------------------------
+// Balloon Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwBalloon.Title="球狀標示";
+CATDrwHeader.DrwBalloon.ShortHelp="球狀標示";
+CATDrwHeader.DrwBalloon.Help="建立球狀標示";
+CATDrwHeader.DrwBalloon.LongHelp =
+"球狀標示
+建立球狀標示.";
+
+//------------------------------------------------------------------------------
+// Welding Symbol
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwWeldingSymbol.Title="銲接符號";
+CATDrwHeader.DrwWeldingSymbol.ShortHelp="銲接符號";
+CATDrwHeader.DrwWeldingSymbol.Help="建立銲接符號";
+CATDrwHeader.DrwWeldingSymbol.LongHelp =
+"銲接符號
+建立銲接符號.";
+
+//------------------------------------------------------------------------------
+// Geometrical Weld
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwWeldingGeom.Title="銲接";
+CATDrwHeader.DrwWeldingGeom.ShortHelp="銲接";
+CATDrwHeader.DrwWeldingGeom.Help="建立銲接";
+CATDrwHeader.DrwWeldingGeom.LongHelp =
+"銲接
+建立銲接.";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Dressup
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//------------------------------------------------------------------------------
+// Area Fill Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwAreaFill.Title="區域塗滿";
+CATDrwHeader.DrwAreaFill.ShortHelp="區域塗滿";
+CATDrwHeader.DrwAreaFill.Help="建立區域塗滿";
+CATDrwHeader.DrwAreaFill.LongHelp =
+"區域塗滿
+建立區域塗滿.";
+
+CATDrwHeader.CATDrwAreaFillCreatHdr.Title="建立區域塗滿";
+CATDrwHeader.CATDrwAreaFillCreatHdr.ShortHelp="建立區域塗滿";
+CATDrwHeader.CATDrwAreaFillCreatHdr.Help="建立區域塗滿";
+CATDrwHeader.CATDrwAreaFillCreatHdr.LongHelp =
+"建立區域塗滿
+建立區域塗滿.";
+
+CATDrwHeader.CATDrwAreaFillModHdr.Title="修改區域塗滿";
+CATDrwHeader.CATDrwAreaFillModHdr.ShortHelp="修改區域塗滿";
+CATDrwHeader.CATDrwAreaFillModHdr.Help="修改區域塗滿";
+CATDrwHeader.CATDrwAreaFillModHdr.LongHelp =
+"修改區域塗滿
+修改區域塗滿.";
+
+//------------------------------------------------------------------------------
+// Thread Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwThread.Title="螺紋";
+CATDrwHeader.DrwThread.ShortHelp="螺紋";
+CATDrwHeader.DrwThread.Help="建立螺紋";
+CATDrwHeader.DrwThread.LongHelp =
+"螺紋
+建立螺紋.";
+
+//------------------------------------------------------------------------------
+// Thread with Reference Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwThreadRef.Title="參考螺紋";
+CATDrwHeader.DrwThreadRef.ShortHelp="參考螺紋";
+CATDrwHeader.DrwThreadRef.Help="建立參考螺紋";
+CATDrwHeader.DrwThreadRef.LongHelp =
+"螺紋
+建立參考螺紋.";
+
+//------------------------------------------------------------------------------
+// Center Line Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwCenterLine.Title="中心線";
+CATDrwHeader.DrwCenterLine.ShortHelp="中心線";
+CATDrwHeader.DrwCenterLine.Help="建立中心線";
+CATDrwHeader.DrwCenterLine.LongHelp =
+"中心線
+建立中心線.";
+
+//------------------------------------------------------------------------------
+// Center Line with Reference Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwCenterLineRef.Title="參考中心線";
+CATDrwHeader.DrwCenterLineRef.ShortHelp="參考中心線";
+CATDrwHeader.DrwCenterLineRef.Help="建立參考中心線";
+CATDrwHeader.DrwCenterLineRef.LongHelp =
+"參考中心線
+建立參考中心線.";
+
+//------------------------------------------------------------------------------
+// Axis Line Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwAxisLine.Title="軸線";
+CATDrwHeader.DrwAxisLine.ShortHelp="軸線";
+CATDrwHeader.DrwAxisLine.Help=
+"建立軸線";
+CATDrwHeader.DrwAxisLine.LongHelp =
+"軸線
+建立軸線.";
+
+//------------------------------------------------------------------------------
+// Axis-Center Line Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwAxisCenter.Title="軸線和中心線";
+CATDrwHeader.DrwAxisCenter.ShortHelp="軸線和中心線";
+CATDrwHeader.DrwAxisCenter.Help=
+"在圓的外廓建立軸線和中心線";
+CATDrwHeader.DrwAxisCenter.LongHelp =
+"軸線和中心線
+在圓的外廓建立軸線和中心線.";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Sheet
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//------------------------------------------------------------------------------
+// Sheet Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwCreateSheet.Title="新圖紙";
+CATDrwHeader.DrwCreateSheet.ShortHelp="新圖紙";
+CATDrwHeader.DrwCreateSheet.Help="建立新圖紙";
+CATDrwHeader.DrwCreateSheet.LongHelp =
+"新圖紙
+建立新圖紙.";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Detail Sheet 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//------------------------------------------------------------------------------
+// Sheet Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwCreateSheetOfDetail.Title="新細部圖";
+CATDrwHeader.DrwCreateSheetOfDetail.ShortHelp="新細部圖";
+CATDrwHeader.DrwCreateSheetOfDetail.Help="建立新細部圖";
+CATDrwHeader.DrwCreateSheetOfDetail.LongHelp =
+"新細部圖
+建立新細部圖.";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Ditto 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//------------------------------------------------------------------------------
+// Ditto Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDitto.Title="新建 2D 分件";
+CATDrwHeader.DrwDitto.ShortHelp="新建 2D 分件";
+CATDrwHeader.DrwDitto.Help="新建 2D 分件";
+CATDrwHeader.DrwDitto.LongHelp =
+"新建 2D 分件
+新建 2D 分件.";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Views
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//------------------------------------------------------------------------------
+// Projection View Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwProjView.Title="投影";
+CATDrwHeader.DrwProjView.ShortHelp="投影視圖";
+CATDrwHeader.DrwProjView.Help="建立投影視圖" ;
+CATDrwHeader.DrwProjView.LongHelp ="建立投影視圖" ;
+
+//------------------------------------------------------------------------------
+// Auxiliary View Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwAuxView.Title="輔助";
+CATDrwHeader.DrwAuxView.ShortHelp="輔助視圖";
+CATDrwHeader.DrwAuxView.Help="建立輔助視圖";
+CATDrwHeader.DrwAuxView.LongHelp ="建立輔助視圖";
+
+//------------------------------------------------------------------------------
+// Section View Commands
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwSectView.Title="偏移剖面視圖";
+CATDrwHeader.DrwSectView.ShortHelp="偏移剖面視圖";
+CATDrwHeader.DrwSectView.Help="建立偏移剖面視圖";
+CATDrwHeader.DrwSectView.LongHelp ="建立偏移剖面視圖";
+
+CATDrwHeader.DrwAlignedSectView.Title="對齊剖面視圖";
+CATDrwHeader.DrwAlignedSectView.ShortHelp="對齊剖面視圖";
+CATDrwHeader.DrwAlignedSectView.Help="建立對齊剖面視圖";
+CATDrwHeader.DrwAlignedSectView.LongHelp ="建立對齊剖面視圖";
+
+CATDrwHeader.DrwSectCutView.Title="偏移切面";
+CATDrwHeader.DrwSectCutView.ShortHelp="偏移切面";
+CATDrwHeader.DrwSectCutView.Help="建立偏移切面";
+CATDrwHeader.DrwSectCutView.LongHelp ="建立偏移切面";
+
+CATDrwHeader.DrwAlignedSectCutView.Title="對齊切面";
+CATDrwHeader.DrwAlignedSectCutView.ShortHelp="對齊切面";
+CATDrwHeader.DrwAlignedSectCutView.Help="建立對齊切面";
+CATDrwHeader.DrwAlignedSectCutView.LongHelp ="建立對齊切面";
+
+//------------------------------------------------------------------------------
+// Detail View Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwCircleDetailView.Title="詳細視圖";
+CATDrwHeader.DrwCircleDetailView.ShortHelp="詳細視圖";
+CATDrwHeader.DrwCircleDetailView.Help="以圈繞的詳細視圖";
+CATDrwHeader.DrwCircleDetailView.LongHelp =
+"詳細視圖
+以圈繞的詳細視圖";
+
+CATDrwHeader.DrwContourDetailView.Title="手繪詳細斷面";
+CATDrwHeader.DrwContourDetailView.ShortHelp="手繪詳細斷面";
+CATDrwHeader.DrwContourDetailView.Help="以手繪的圍圈表現詳細斷面";
+CATDrwHeader.DrwContourDetailView.LongHelp =
+"手繪詳細斷面 
+以手繪的圍圈表現詳細斷面";
+
+//------------------------------------------------------------------------------
+// Quick Detail View Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwCircleQuickDetailView.Title="快速詳圖";
+CATDrwHeader.DrwCircleQuickDetailView.ShortHelp="快速詳圖";
+CATDrwHeader.DrwCircleQuickDetailView.Help="以圍圈建立快速詳圖";
+CATDrwHeader.DrwCircleQuickDetailView.LongHelp =
+"快速詳圖
+以圍圈建立快速詳圖";
+
+CATDrwHeader.DrwContourQuickDetailView.Title="快速手繪詳細斷面";
+CATDrwHeader.DrwContourQuickDetailView.ShortHelp="快速手繪詳細斷面";
+CATDrwHeader.DrwContourQuickDetailView.Help="以手繪的圍圈表現快速詳細斷面";
+CATDrwHeader.DrwContourQuickDetailView.LongHelp =
+"快速手繪詳細斷面
+以手繪的圍圈表現快速詳細斷面";
+
+
+//------------------------------------------------------------------------------
+// Clipping View Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwCircleClippingView.Title="剪下";
+CATDrwHeader.DrwCircleClippingView.ShortHelp="剪下視圖";
+CATDrwHeader.DrwCircleClippingView.Help="以圍圈建立剪下視圖";
+CATDrwHeader.DrwCircleClippingView.LongHelp =
+"剪下視圖
+以圍圈建立剪下視圖";
+
+CATDrwHeader.DrwContourClippingView.Title="手繪剪下斷面";
+CATDrwHeader.DrwContourClippingView.ShortHelp="剪下視圖斷面";
+CATDrwHeader.DrwContourClippingView.Help="以手繪的圍圈表現剪下視圖斷面";
+CATDrwHeader.DrwContourClippingView.LongHelp =
+"剪下視圖斷面
+以手繪的圍圈表現剪下視圖斷面";
+
+
+//------------------------------------------------------------------------------
+// Broken View Command
+//------------------------------------------------------------------------------
+
+CATDrwHeader.DrwBrokenView.Title = "打斷視圖";
+CATDrwHeader.DrwBrokenView.ShortHelp = "打斷視圖";
+CATDrwHeader.DrwBrokenView.Help = "移除幾何長度";
+CATDrwHeader.DrwBrokenView.LongHelp = "打斷視圖
+移除幾何長度.";
+
+
+//------------------------------------------------------------------------------
+// Breakout View Command
+//------------------------------------------------------------------------------
+
+CATDrwHeader.DrwBreakoutViewDlg.Title = "穿透視圖";
+CATDrwHeader.DrwBreakoutViewDlg.ShortHelp = "穿透視圖";
+CATDrwHeader.DrwBreakoutViewDlg.Help = "從 3D 中移除材料來透視內部零件";
+CATDrwHeader.DrwBreakoutViewDlg.LongHelp = "執行穿透
+從 3D 中移除材料來透視內部零件";
+
+//------------------------------------------------------------------------------
+// Clipping Box Add
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwClipBoxCurViewHdr.Title="新增裁剪盒";
+CATDrwHeader.CATDrwClipBoxCurViewHdr.ShortHelp="新增裁剪盒";
+CATDrwHeader.CATDrwClipBoxCurViewHdr.Help="新增裁剪盒";
+CATDrwHeader.CATDrwClipBoxCurViewHdr.LongHelp ="新增裁剪盒 \n 在目前自發視圖中新增裁剪盒.";
+
+//------------------------------------------------------------------------------
+// Clipping Box Add or Modify
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwClipBoxSelViewHdr.Title="新增或修改裁剪盒";
+CATDrwHeader.CATDrwClipBoxSelViewHdr.ShortHelp="新增或修改裁剪盒";
+CATDrwHeader.CATDrwClipBoxSelViewHdr.Help="新增或修改裁剪盒";
+CATDrwHeader.CATDrwClipBoxSelViewHdr.LongHelp ="新增或修改裁剪盒 \n 在目前自發視圖中新增或修改裁剪盒.";
+
+//------------------------------------------------------------------------------
+// Clipping Box Delete
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwClippingBoxDelHdr.Title="移除裁剪盒";
+CATDrwHeader.CATDrwClippingBoxDelHdr.ShortHelp="移除裁剪盒";
+CATDrwHeader.CATDrwClippingBoxDelHdr.Help="在所選視圖中移除裁剪盒";
+CATDrwHeader.CATDrwClippingBoxDelHdr.LongHelp ="移除裁剪盒 \n 在所選視圖中移除裁剪盒";
+
+//------------------------------------------------------------------------------
+// Apply Clipping Box To
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwApplyClipBoxToHdr.Title="應用裁剪盒至";
+CATDrwHeader.CATDrwApplyClipBoxToHdr.SCATDrwHeader.CATDrwClippingBoxDelHdr.hortHelp="應用裁剪盒至";
+CATDrwHeader.CATDrwApplyClipBoxToHdr.Help="應用裁剪盒至";
+CATDrwHeader.CATDrwApplyClipBoxToHdr.LongHelp ="應用裁剪盒至所選視圖.";
+
+//------------------------------------------------------------------------------
+// Generation of Dimensions Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwGenDim.Title="產生尺寸";
+CATDrwHeader.DrwGenDim.ShortHelp="產生尺寸";
+CATDrwHeader.DrwGenDim.Help="從3D 視圖中產生所有尺寸";
+CATDrwHeader.DrwGenDim.LongHelp =
+"從3D 視圖中產生所有尺寸";
+
+
+//------------------------------------------------------------------------------
+// Generation of Dimensions Params Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwGenDimParams.Title="過濾器...";
+CATDrwHeader.DrwGenDimParams.ShortHelp="尺寸產生過濾器";
+CATDrwHeader.DrwGenDimParams.Help="從3D 視圖中產生尺寸時的過濾器";
+CATDrwHeader.DrwGenDimParams.LongHelp =
+"尺寸產生過濾器
+從3D 視圖中產生尺寸時的過濾器";
+
+
+//------------------------------------------------------------------------------
+// Generation of Dimensions Step by Step Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwGenDimStep.Title="一步一步產生尺寸";
+CATDrwHeader.DrwGenDimStep.ShortHelp="一步一步產生尺寸";
+CATDrwHeader.DrwGenDimStep.Help="從3D 視圖中一步一步產生所有尺寸";
+CATDrwHeader.DrwGenDimStep.LongHelp ="從3D 視圖中一步一步產生所有尺寸,
+顯示對話框來一步一步產生所有尺寸 
+(i.e. Dimension by Dimension)";
+
+//------------------------------------------------------------------------------
+// DrwFrontView Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwFrontView.Title="前視圖";
+CATDrwHeader.DrwFrontView.ShortHelp="前視圖";
+CATDrwHeader.DrwFrontView.Help="建立前視圖";
+CATDrwHeader.DrwFrontView.LongHelp =
+"前視圖
+建立前視圖.";
+
+//------------------------------------------------------------------------------
+// DrwFrontView Advanced
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwFrontViewAdvHdr.Title="進階前視圖";
+CATDrwHeader.CATDrwFrontViewAdvHdr.ShortHelp="進階前視圖";
+CATDrwHeader.CATDrwFrontViewAdvHdr.Help="建立前視圖";
+CATDrwHeader.CATDrwFrontViewAdvHdr.LongHelp =
+"進階前視圖
+建立前視圖";
+
+//------------------------------------------------------------------------------
+// DrwUnfoldedView Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwUnfoldedView.Title="視圖展開";
+CATDrwHeader.DrwUnfoldedView.ShortHelp="視圖展開";
+CATDrwHeader.DrwUnfoldedView.Help="建立視圖展開";
+CATDrwHeader.DrwUnfoldedView.LongHelp =
+"視圖展開
+建立視圖展開.";
+
+//------------------------------------------------------------------------------
+// DrwTPSView Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwTPSView.Title="從 3D建立視圖";
+CATDrwHeader.DrwTPSView.ShortHelp="從 3D建立視圖";
+CATDrwHeader.DrwTPSView.Help="從 3D建立視圖";
+CATDrwHeader.DrwTPSView.LongHelp =
+"從 3D建立視圖
+從 3D建立視圖.";
+
+//------------------------------------------------------------------------------
+// Isometric View Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwIsometricView.Title="等角圖";
+CATDrwHeader.DrwIsometricView.ShortHelp="等角圖";
+CATDrwHeader.DrwIsometricView.Help="建立等角圖";
+CATDrwHeader.DrwIsometricView.LongHelp =
+"等角圖
+建立等角圖.";
+
+//------------------------------------------------------------------------------
+// View Creation Wizard Commands
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwWizard.Title="精靈";
+CATDrwHeader.DrwWizard.Title="精靈";
+CATDrwHeader.DrwPredef1Wizard.Title="第一種組合";
+CATDrwHeader.DrwPredef3Wizard.Title="第二種組合";
+CATDrwHeader.DrwPredef5Wizard.Title="第三種組合";
+
+CATDrwHeader.DrwWizard.ShortHelp="視圖精靈";
+CATDrwHeader.DrwPredef1Wizard.ShortHelp="前,上,左";
+CATDrwHeader.DrwPredef3Wizard.ShortHelp="前,下,右";
+CATDrwHeader.DrwPredef5Wizard.ShortHelp="所有視圖";
+CATDrwHeader.DrwWizard.Help="建立視圖精靈";
+CATDrwHeader.DrwPredef1Wizard.Help="以目前的投影標準來建立前,上,左的視圖組合";
+CATDrwHeader.DrwPredef3Wizard.Help="以目前的投影標準來建立前,後,右的視圖組合";
+CATDrwHeader.DrwPredef5Wizard.Help="以目前的投影標準來建立視圖組合";
+CATDrwHeader.DrwWizard.LongHelp =
+"視圖建立精靈
+定義視圖建立精靈.";
+CATDrwHeader.DrwPredef1Wizard.LongHelp =
+"前,上,右
+以目前的投影標準來建立前,上,右的視圖組合.";
+CATDrwHeader.DrwPredef3Wizard.LongHelp =
+"前,下,左
+以目前的投影標準來建立前,下,左的視圖組合.";
+CATDrwHeader.DrwPredef5Wizard.LongHelp =
+"所有視圖
+以目前的投影標準來建立所有視圖的組合.";
+
+//------------------------------------------------------------------------------
+// View Creation Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwCreateView.Title="新視圖";
+CATDrwHeader.DrwCreateView.ShortHelp="新視圖";
+CATDrwHeader.DrwCreateView.Help="建立新視圖";
+CATDrwHeader.DrwCreateView.LongHelp =
+"新視圖
+建立新視圖.";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Toolbar Positioning
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//------------------------------------------------------------------------------
+// Positioning 
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwPositioning.Title="元素定位";
+CATDrwHeader.DrwPositioning.ShortHelp= "元素定位";
+CATDrwHeader.DrwPositioning.Help="校正,空間,移動註解或視圖";
+CATDrwHeader.DrwPositioning.LongHelp =
+"註解或視圖定位
+校正,空間,移動註解或視圖.";
+
+//------------------------------------------------------------------------------
+// Positionement automatique des Cotes
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDimAutoPos.Title="定位尺寸...";
+CATDrwHeader.DrwDimAutoPos.ShortHelp="定位尺寸";
+CATDrwHeader.DrwDimAutoPos.Help="重新定位尺寸";
+CATDrwHeader.DrwDimAutoPos.LongHelp="在目前視圖中來重新定位尺寸.";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Toolbar Analyze
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//------------------------------------------------------------------------------
+// Analyze 2D3D 
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwAnalyze2D3D.Title="顯示所有視點的幾何";
+CATDrwHeader.DrwAnalyze2D3D.ShortHelp= "顯示所有視點的幾何";
+CATDrwHeader.DrwAnalyze2D3D.Help="顯示所有視圖可能的2D和3D幾何";
+CATDrwHeader.DrwAnalyze2D3D.LongHelp =
+"顯示所有視點的幾何
+顯示所有視圖可能的2D和3D幾何.";
+
+
+//------------------------------------------------------------------------------
+// Analyse positionement des cotes
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDimPosAnal.Title="尺寸分析...";
+CATDrwHeader.DrwDimPosAnal.ShortHelp="尺寸分析";
+CATDrwHeader.DrwDimPosAnal.Help="分析尺寸位置";
+CATDrwHeader.DrwDimPosAnal.LongHelp="分析目前視圖中的尺寸位置.";
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Toolbar MultiView
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//------------------------------------------------------------------------------
+// Combi View 
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwCombiView.Title="多重視圖投影";
+CATDrwHeader.DrwCombiView.ShortHelp="多重視圖投影";
+CATDrwHeader.DrwCombiView.Help="以其他二個視圖在目前視圖建立投影幾何";
+CATDrwHeader.DrwCombiView.LongHelp =
+"多重視圖投影
+以其他二個視圖在目前視圖建立投影幾何.";
+
+//------------------------------------------------------------------------------
+// View Plane Position 
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwViewPosition.Title="視圖平面定義" ;
+CATDrwHeader.DrwViewPosition.ShortHelp="視圖平面定義";
+CATDrwHeader.DrwViewPosition.Help="修改視圖平面的3D定義" ;
+CATDrwHeader.DrwViewPosition.LongHelp =
+"視圖平面定義
+修改視圖平面的3D定義.";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Catalog Browser
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//------------------------------------------------------------------------------
+// Catalog Browser
+//------------------------------------------------------------------------------
+CATDrwHeader.CatalogBrowser.Title="目錄瀏覽器";
+CATDrwHeader.CatalogBrowser.ShortHelp="目錄瀏覽器";
+CATDrwHeader.CatalogBrowser.Help="瀏覽分析目錄";
+CATDrwHeader.CatalogBrowser.LongHelp =
+"目錄瀏覽器
+允許您瀏覽目錄 (.catalog 檔案) 
+和複製分件.";
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Menu File
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//------------------------------------------------------------------------------
+// Drafting' Page Setup Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwPageSetup.Title="頁面設定...";
+CATDrwHeader.DrwPageSetup.ShortHelp="頁面設定";
+CATDrwHeader.DrwPageSetup.Help="建立頁面設定";
+CATDrwHeader.DrwPageSetup.LongHelp =
+"頁面設定
+建立頁面設定.";
+
+//------------------------------------------------------------------------------
+// Drafting' Preview Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwPreview.Title="預覽列印...";
+CATDrwHeader.DrwPreview.ShortHelp="預覽列印";
+CATDrwHeader.DrwPreview.Help="預覽列印";
+CATDrwHeader.DrwPreview.LongHelp =
+"預覽列印 (檔案命令列)
+顯示預覽列印... 對話框.";
+
+//------------------------------------------------------------------------------
+// Drafting' Print Command
+//------------------------------------------------------------------------------
+CATDrwHeader.Print.Title="列印...";
+CATDrwHeader.Print.ShortHelp="列印";
+CATDrwHeader.Print.Help="列印作動文件(目前圖紙)";
+CATDrwHeader.Print.LongHelp =
+"列印 (檔案命令列)
+列印所選元素或檔案.
+若要選擇印表機選擇,
+在檔案命令列選一下印表機選擇.";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Menu Edit
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//------------------------------------------------------------------------------
+// Drafting' Update Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwViewUpdate.Title="更新目前圖紙" ;
+CATDrwHeader.DrwViewUpdate.ShortHelp="更新目前圖紙";
+CATDrwHeader.DrwViewUpdate.Help="目前圖紙上更新視圖" ;
+CATDrwHeader.DrwViewUpdate.LongHelp=
+"在目前圖紙上更新視圖.";
+
+//------------------------------------------------------------------------------
+// Drafting' Update Command
+//------------------------------------------------------------------------------
+CATDrwHeader.ForceUpdate.Title="強制更新" ;
+CATDrwHeader.ForceUpdate.ShortHelp="強制更新";
+CATDrwHeader.ForceUpdate.Help="強制更新目前圖紙的視圖" ;
+CATDrwHeader.ForceUpdate.LongHelp=
+"即使視圖已更新過,仍強制更新目前圖紙的視圖.";
+
+//------------------------------------------------------------------------------
+// Swap into Background' Workshop Command
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwEditFrame.Title="圖紙背景" ;
+CATDrwHeader.CATDrwEditFrame.ShortHelp="圖紙背景";
+CATDrwHeader.CATDrwEditFrame.Help="轉換至圖框及標題編輯器" ;
+CATDrwHeader.CATDrwEditFrame.LongHelp=
+"圖紙背景
+轉換至圖框及標題編輯器.";
+
+//------------------------------------------------------------------------------
+// Edit Frame And Title Block
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwEditFrameTB.Title="外框和標題方塊" ;
+CATDrwHeader.DrwEditFrameTB.ShortHelp="外框和標題方塊";
+CATDrwHeader.DrwEditFrameTB.Help="編輯圖框及標題參數" ;
+CATDrwHeader.DrwEditFrameTB.LongHelp=
+"外框和標題方塊
+編輯圖框及標題參數.";
+
+//------------------------------------------------------------------------------
+// Swap into Working Views' Workshop Command
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwEditSheet.Title="工作視圖" ;
+CATDrwHeader.CATDrwEditSheet.ShortHelp="工作視圖";
+CATDrwHeader.CATDrwEditSheet.Help="轉換至工作視圖" ;
+CATDrwHeader.CATDrwEditSheet.LongHelp=
+"工作視圖
+轉換至工作視圖編輯器.";
+
+//------------------------------------------------------------------------------
+// Find Command for Complex Texts
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDSAFind.Title="尋找..." ;
+CATDrwHeader.DrwDSAFind.ShortHelp="尋找";
+CATDrwHeader.DrwDSAFind.Help="尋找文字內含字串" ;
+CATDrwHeader.DrwDSAFind.LongHelp=
+"尋找字串
+尋找文字內含字串.";
+CATDrwHeader.DrwDSAFind.Mnemonic="F";
+
+//------------------------------------------------------------------------------
+// Replace Command for Complex Texts
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDSAReplace.Title="更換..." ;
+CATDrwHeader.DrwDSAReplace.ShortHelp="更換文字";
+CATDrwHeader.DrwDSAReplace.Help="更換文字內含字串" ;
+CATDrwHeader.DrwDSAReplace.LongHelp=
+"更換字串
+更換文字內含字串.";
+CATDrwHeader.DrwDSAReplace.Mnemonic="e";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Menu Tool
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//------------------------------------------------------------------------------
+// GenDim Analysis Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwGenDimAnal.Title="分析...";
+CATDrwHeader.DrwGenDimAnal.ShortHelp="產生尺寸分析";
+CATDrwHeader.DrwGenDimAnal.Help="分析一般尺寸";
+CATDrwHeader.DrwGenDimAnal.LongHelp="產生尺寸分析
+分析一般尺寸.";
+
+//------------------------------------------------------------------------------
+// Drafting' Standard Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwStandards.Title="標準 ..." ;
+CATDrwHeader.DrwStandards.ShortHelp="標準";
+CATDrwHeader.DrwStandards.Help="建立繪圖標準" ;
+CATDrwHeader.DrwStandards.LongHelp =
+"標準
+建立繪圖標準.";
+
+//------------------------------------------------------------------------------
+// Drafting' Layers And Filters Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwLayersAndFilters.Title="圖層和過濾器..." ;
+CATDrwHeader.DrwLayersAndFilters.ShortHelp="圖層和過濾器";
+CATDrwHeader.DrwLayersAndFilters.Help="處理圖層和過濾器" ;
+CATDrwHeader.DrwLayersAndFilters.LongHelp =
+"圖層和過濾器
+處理圖層和過濾器.";
+
+//------------------------------------------------------------------------------
+// Drafting' Analyser Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwRetrieve.Title="文件分析器..." ;
+CATDrwHeader.DrwRetrieve.ShortHelp="文件分析器";
+CATDrwHeader.DrwRetrieve.Help="尋找相關文件" ;
+CATDrwHeader.DrwRetrieve.LongHelp =
+"文件分析器
+尋找相關文件.";
+
+//------------------------------------------------------------------------------
+// Drafting' Line-Up Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwLineUp.Title="對齊" ;
+CATDrwHeader.DrwLineUp.ShortHelp="對齊";
+CATDrwHeader.DrwLineUp.Help="與尺寸線或尺寸對齊" ;
+CATDrwHeader.DrwLineUp.LongHelp =
+"對齊
+與尺寸線或尺寸對齊.";
+
+//------------------------------------------------------------------------------
+// Drafting' Align into system Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwAlignIntoSystem.Title="與系統對正" ;
+CATDrwHeader.DrwAlignIntoSystem.ShortHelp="與系統對正";
+CATDrwHeader.DrwAlignIntoSystem.Help="尺寸與系統對正" ;
+CATDrwHeader.DrwAlignIntoSystem.LongHelp =
+"與系統對正
+尺寸與系統對正" ;
+
+//------------------------------------------------------------------------------
+// Drafting' Import Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwImport.Title="插入檔案..." ;
+CATDrwHeader.DrwImport.ShortHelp="插入檔案";
+CATDrwHeader.DrwImport.Help="於目前視圖插入檔案" ;
+CATDrwHeader.DrwImport.LongHelp =
+"插入檔案
+於目前視圖插入檔案.";
+
+
+//------------------------------------------------------------------------------
+// Drafting' Import Picture Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwImportPicture.Title="相片..." ;
+CATDrwHeader.DrwImportPicture.ShortHelp="相片";
+CATDrwHeader.DrwImportPicture.Help="從檔案建立相片" ;
+CATDrwHeader.DrwImportPicture.LongHelp =
+"相片
+從檔案建立相片" ;
+
+//------------------------------------------------------------------------------
+// Drafting' Insert BOM
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwBOMCmd.Title="材料表" ;
+CATDrwHeader.DrwBOMCmd.ShortHelp="插入材料表";
+CATDrwHeader.DrwBOMCmd.Help="從目前產品視圖中插入材料表" ;
+CATDrwHeader.DrwBOMCmd.LongHelp =
+"插入材料表
+從目前產品視圖中插入材料表";
+
+//------------------------------------------------------------------------------
+// Reset All Defaults
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwResetDefaults.Title="重設所有預設值" ;
+CATDrwHeader.DrwResetDefaults.ShortHelp="重設所有預設值";
+CATDrwHeader.DrwResetDefaults.Help="重設所有預設值" ;
+CATDrwHeader.DrwResetDefaults.LongHelp =
+"重設所有預設值
+重設所有已存預設值.";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Background Workshop.
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//------------------------------------------------------------------------------
+// Frame Title Block Command
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwCreateFrameAndTitleBlock.Title="外框和標題方塊";
+CATDrwHeader.DrwCreateFrameAndTitleBlock.ShortHelp= "外框和標題方塊";
+CATDrwHeader.DrwCreateFrameAndTitleBlock.Help="建立圖紙的外框和標題方塊";
+CATDrwHeader.DrwCreateFrameAndTitleBlock.LongHelp =
+"建立外框
+建立圖紙的外框和標題方塊.";
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Contextual Menu
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+//------------------------------------------------------------------------------
+// Positional Link Create...
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwPosLinkCreate.Title="建立";
+CATDrwHeader.DrwPosLinkCreate.ShortHelp= "位置的連接建立";
+CATDrwHeader.DrwPosLinkCreate.Help="建立文字和元素的位置連接";
+CATDrwHeader.DrwPosLinkCreate.LongHelp ="位置的連接建立
+建立文字和元素的位置連接.";
+
+//------------------------------------------------------------------------------
+// Positional Link Delete
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwPosLinkDelete.Title="刪除";
+CATDrwHeader.DrwPosLinkDelete.UndoTitle="刪除";
+CATDrwHeader.DrwPosLinkDelete.ShortHelp= "位置的連接刪除";
+CATDrwHeader.DrwPosLinkDelete.Help="刪除文字和元素的位置的連接";
+CATDrwHeader.DrwPosLinkDelete.LongHelp ="位置的連接刪除
+刪除文字和元素的位置連接.";
+
+//------------------------------------------------------------------------------
+// Orientation Link Create...
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwTextOrientCreate.Title="建立";
+CATDrwHeader.DrwTextOrientCreate.ShortHelp= "建立方向鏈結";
+CATDrwHeader.DrwTextOrientCreate.Help="建立文字方向與其它元素的鏈結";
+CATDrwHeader.DrwTextOrientCreate.LongHelp ="建立方向鏈結
+建立文字方向與其它元素的鏈結.";
+
+//------------------------------------------------------------------------------
+// Orientation Link Delete
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwTextOrientDelete.Title="刪除";
+CATDrwHeader.DrwTextOrientDelete.ShortHelp= "刪除方向鏈結";
+CATDrwHeader.DrwTextOrientDelete.Help="刪除文字方向與其它元素的鏈結";
+CATDrwHeader.DrwTextOrientDelete.LongHelp ="刪除方向鏈結
+刪除文字方向與其它元素的鏈結.";
+
+//------------------------------------------------------------------------------
+// Positional Link Query...
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwPosLinkQuery.Title="詢問...";
+CATDrwHeader.DrwPosLinkQuery.ShortHelp= "位置的連接詢問";
+CATDrwHeader.DrwPosLinkQuery.Help="詢問文字和元素的位置的連接";
+CATDrwHeader.DrwPosLinkQuery.LongHelp ="位置的連接詢問
+詢問文字和元素的位置的連接.";
+
+//------------------------------------------------------------------------------
+// Query Object Links...
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwTextQryLink.Title="詢問鏈結物件...";
+CATDrwHeader.DrwTextQryLink.ShortHelp="詢問鏈結物件...";
+CATDrwHeader.DrwTextQryLink.Help="詢問鏈結物件的屬性";
+CATDrwHeader.DrwTextQryLink.LongHelp =
+"詢問鏈結物件...
+詢問鏈結物件的屬性.";
+
+//------------------------------------------------------------------------------
+// Isolate Text
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwTextIsolAttrLink.Title="獨立";
+CATDrwHeader.DrwTextIsolAttrLink.ShortHelp="獨立文字和表格";
+CATDrwHeader.DrwTextIsolAttrLink.Help="由屬性鏈結獨立文字和表格";
+CATDrwHeader.DrwTextIsolAttrLink.LongHelp =
+"獨立
+由所有屬性鏈結獨立文字和表格";
+
+//------------------------------------------------------------------------------
+// Datum Locator Contextual Command - DSA
+//------------------------------------------------------------------------------
+CATDrwHeader.DatumLocator.Title="基準定位器...";
+CATDrwHeader.DatumLocator.ShortHelp= "基準定位器";
+CATDrwHeader.DatumLocator.Help="定位GD&T 參考的位置特徵";
+CATDrwHeader.DatumLocator.LongHelp =
+"基準定位器
+定位GD&T 參考的位置特徵.";
+
+//------------------------------------------------------------------------------
+// Show Construction Lines
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwConstrLines.Title="顯示建構線";
+CATDrwHeader.DrwConstrLines.Help="顯示建構線";
+
+//------------------------------------------------------------------------------
+// Hide Construction Lines
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwRmConstrLines.Title="隱藏建構線";
+CATDrwHeader.DrwRmConstrLines.Help="隱藏建構線";
+
+//------------------------------------------------------------------------------
+// Hide All Construction Lines
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwRmAllConstrLines.Title="隱藏所有建構線";
+CATDrwHeader.DrwRmAllConstrLines.Help="隱藏所有建構線";
+
+//------------------------------------------------------------------------------
+// Add View Name
+//------------------------------------------------------------------------------
+CATDrwHeader.AddViewName.Title="增加視窗名稱";
+CATDrwHeader.AddViewName.Help="增加視窗名稱";
+
+//------------------------------------------------------------------------------
+// Relative Position
+//------------------------------------------------------------------------------
+CATDrwHeader.RelativePosition.Title="設定相對位置";
+CATDrwHeader.RelativePosition.ShortHelp="設定相對位置";
+CATDrwHeader.RelativePosition.Help="設定點,線或視圖的相對位置";
+CATDrwHeader.RelativePosition.LongHelp=
+"設定點,線或視圖的相對位置.";
+
+
+//------------------------------------------------------------------------------
+// UnBreak
+//------------------------------------------------------------------------------
+CATDrwHeader.UnBreak.Title="不中斷";
+CATDrwHeader.UnBreak.ShortHelp="不中斷";
+CATDrwHeader.UnBreak.Help="不中斷視圖";
+CATDrwHeader.UnBreak.LongHelp=
+"不中斷
+不中斷視圖.";
+
+//------------------------------------------------------------------------------
+// UnBreakout
+//------------------------------------------------------------------------------
+CATDrwHeader.UnBreakout.Title="移除中斷";
+CATDrwHeader.UnBreakout.ShortHelp="移除中斷";
+CATDrwHeader.UnBreakout.Help="移除視圖中斷";
+CATDrwHeader.UnBreakout.LongHelp=
+"移除中斷
+移除視圖中斷.";
+
+//------------------------------------------------------------------------------
+// ApplyBreakoutTo
+//------------------------------------------------------------------------------
+CATDrwHeader.ApplyBreakoutTo.Title="應用中斷至";
+CATDrwHeader.ApplyBreakoutTo.ShortHelp="應用中斷至";
+CATDrwHeader.ApplyBreakoutTo.Help="應用中斷至另一視圖";
+CATDrwHeader.ApplyBreakoutTo.LongHelp=
+"應用中斷至
+應用中斷至另一視圖.";
+
+//------------------------------------------------------------------------------
+// UnClip
+//------------------------------------------------------------------------------
+CATDrwHeader.UnClip.Title="未剪下";
+CATDrwHeader.UnClip.ShortHelp="未剪下";
+CATDrwHeader.UnClip.Help="未剪下視圖";
+CATDrwHeader.UnClip.LongHelp=
+"未剪下
+未剪下視圖.";
+
+//------------------------------------------------------------------------------
+// Painter
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwPainter.Title="複製物件格式";
+CATDrwHeader.DrwPainter.ShortHelp= "複製物件格式";
+CATDrwHeader.DrwPainter.Help="複製物件格式";
+CATDrwHeader.DrwPainter.LongHelp =
+"複製物件格式
+複製所選的物件格式.";
+
+//------------------------------------------------------------------------------
+// Restore Value Position
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwRestoreValuePosition.Title="重叫數值位置";
+CATDrwHeader.DrwRestoreValuePosition.ShortHelp= "重叫數值位置";
+CATDrwHeader.DrwRestoreValuePosition.Help="重叫尺寸值的標準位置";
+CATDrwHeader.DrwRestoreValuePosition.LongHelp =
+"重叫數值位置
+重叫尺寸值的標準位置.";
+
+//------------------------------------------------------------------------------
+// Isolate 
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwIsolate.Title="獨立";
+CATDrwHeader.DrwIsolate.ShortHelp= "獨立";
+CATDrwHeader.DrwIsolate.Help="與2D幾何不相關";
+CATDrwHeader.DrwIsolate.LongHelp =
+"獨立
+所產生元素與交互幾何沒有關聯.";
+
+//------------------------------------------------------------------------------
+// Force Pick 
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwForcePick.Title="強制選取模式";
+CATDrwHeader.DrwForcePick.ShortHelp= "強制選取模式";
+CATDrwHeader.DrwForcePick.Help="強制元素和次元素至選取模式";
+CATDrwHeader.DrwForcePick.LongHelp =
+"獨立
+強制元素和次元素至選取模式.";
+
+//------------------------------------------------------------------------------
+// ResetProperties 
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwResetGenProperties.Title="回覆刪除元素";
+CATDrwHeader.DrwResetGenProperties.ShortHelp= "回覆刪除元素";
+CATDrwHeader.DrwResetGenProperties.Help="在下一次更新時回覆刪除元素";
+CATDrwHeader.DrwResetGenProperties.LongHelp =
+"回覆刪除元素
+在下一次更新時回覆刪除元素.";
+
+//------------------------------------------------------------------------------
+// Edit callout
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwCalloutEndEdition.Title="結束斷面編輯";
+CATDrwHeader.CATDrwCalloutEndEdition.ShortHelp= "結束斷面編輯";
+CATDrwHeader.CATDrwCalloutEndEdition.Help="結束斷面編輯";
+CATDrwHeader.CATDrwCalloutEndEdition.LongHelp =
+"結束斷面編輯
+結束斷面編輯.";
+
+//------------------------------------------------------------------------------
+// Modify callout
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwCalloutModification.Title="斷面交換";
+CATDrwHeader.CATDrwCalloutModification.ShortHelp= "斷面交換";
+CATDrwHeader.CATDrwCalloutModification.Help="斷面交換";
+CATDrwHeader.CATDrwCalloutModification.LongHelp =
+"斷面交換
+交換裁剪或框起來的斷面.";
+
+//------------------------------------------------------------------------------
+// Invert callout
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwCalloutInvert.Title="逆轉斷面方向";
+CATDrwHeader.CATDrwCalloutInvert.ShortHelp= "逆轉斷面方向";
+CATDrwHeader.CATDrwCalloutInvert.Help="逆轉斷面方向";
+CATDrwHeader.CATDrwCalloutInvert.LongHelp =
+"逆轉斷面方向
+逆轉斷面方向.";
+
+//------------------------------------------------------------------------------
+// Explode Ditto
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDittoExplode.Title="炸開 2D 分件";
+CATDrwHeader.DrwDittoExplode.ShortHelp= "炸開 2D 分件";
+CATDrwHeader.DrwDittoExplode.Help="炸開 2D 分件";
+CATDrwHeader.DrwDittoExplode.LongHelp =
+"炸開 2D 分件
+它會被幾何及飾物來取代.";
+
+//------------------------------------------------------------------------------
+// GenBalloon
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwGenBalloon.Title="產生球狀符號";
+CATDrwHeader.DrwGenBalloon.ShortHelp= "產生球狀符號";
+CATDrwHeader.DrwGenBalloon.Help="在目前視圖中產生球狀符號";
+CATDrwHeader.DrwGenBalloon.LongHelp =
+"在顯示的零件目前視圖中產生含數字的球狀符號.";
+
+
+//------------------------------------------------------------------------------
+// Expose Detail
+//------------------------------------------------------------------------------
+CATDrwHeader.DrwDetailExpose.Title="暴露 2D 分件";
+CATDrwHeader.DrwDetailExpose.ShortHelp= "暴露 2D 分件";
+CATDrwHeader.DrwDetailExpose.Help="暴露 2D 分件";
+CATDrwHeader.DrwDetailExpose.LongHelp =
+"暴露 2D 分件
+參考 2D 分件將會在詳細圖紙中建立.";
+
+
+//------------------------------------------------------------------------------
+// Go To Detail
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwGoToDetailHdr.Title="編輯參考分件";
+CATDrwHeader.CATDrwGoToDetailHdr.ShortHelp= "編輯參考分件";
+CATDrwHeader.CATDrwGoToDetailHdr.Help="編輯 2D 參考分件";
+CATDrwHeader.CATDrwGoToDetailHdr.LongHelp =
+"編輯 2D 參考分件
+2D 參考分件必須在此文件中建立.";
+
+
+
+//------------------------------------------------------------------------------
+// Refresh Detail Ditto
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwDetailRefreshVisuHdr.Title="更新元件";
+CATDrwHeader.CATDrwDetailRefreshVisuHdr.ShortHelp="更新元件";
+CATDrwHeader.CATDrwDetailRefreshVisuHdr.Help="更新元件";
+CATDrwHeader.CATDrwDetailRefreshVisuHdr.LongHelp =
+"更新元件";
+
+//------------------------------------------------------------------------------
+// CATDrw2DTo3DStabilizerHdr
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrw2DTo3DStabilizerHdr.Title="過多(Overload) 性質";
+CATDrwHeader.CATDrw2DTo3DStabilizerHdr.ShortHelp="過多(Overload) 性質";
+CATDrwHeader.CATDrw2DTo3DStabilizerHdr.Help="過多(Overload) 性質";
+CATDrwHeader.CATDrw2DTo3DStabilizerHdr.LongHelp =
+"在組立中定義過多(Overload) 繪圖性質";
+
+//------------------------------------------------------------------------------
+// Duplicate Geometry
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwDupGenItemHdr.Title="重覆幾何";
+CATDrwHeader.CATDrwDupGenItemHdr.ShortHelp= "重覆幾何";
+CATDrwHeader.CATDrwDupGenItemHdr.Help="重覆幾何";
+CATDrwHeader.CATDrwDupGenItemHdr.LongHelp =
+"在自發性視圖中複製幾何
+自發性視圖必須啟動.";
+
+//------------------------------------------------------------------------------
+// Modifiable in instance
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwBecomeModifiable.Title="新文字可修改";
+CATDrwHeader.CATDrwBecomeModifiable.ShortHelp="新文字可修改";
+CATDrwHeader.CATDrwBecomeModifiable.Help="新文字可修改";
+CATDrwHeader.CATDrwBecomeModifiable.LongHelp =
+"允許新文字可修改";
+
+//------------------------------------------------------------------------------
+// Modifiable in instance
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwATSPlaceHdr.Title="文字樣板置放";
+CATDrwHeader.CATDrwATSPlaceHdr.ShortHelp="文字樣板置放";
+CATDrwHeader.CATDrwATSPlaceHdr.Help="指出文字樣板置放放置";
+CATDrwHeader.CATDrwATSPlaceHdr.LongHelp =
+"指出文字樣板置放放置";
+
+//------------------------------------------------------------------------------
+// Modifiable in instance
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwUpdateSelectionHdr.Title="更新選擇";
+CATDrwHeader.CATDrwUpdateSelectionHdr.ShortHelp="更新選擇";
+CATDrwHeader.CATDrwUpdateSelectionHdr.Help="更新選擇";
+CATDrwHeader.CATDrwUpdateSelectionHdr.LongHelp ="更新選擇.
+更新繪圖, 圖紙或視圖中所選的.";
+
+//------------------------------------------------------------------------------
+// Replace Detail
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwReplaceDetailHdr.Title="替換參考";
+CATDrwHeader.CATDrwReplaceDetailHdr.ShortHelp="替換參考";
+CATDrwHeader.CATDrwReplaceDetailHdr.Help="替換 2D 分件參考";
+CATDrwHeader.CATDrwReplaceDetailHdr.LongHelp =
+"以另一個來替換 2D 分件參考.
+此新建元素的 2D 分件參考將被所選的來更換.";
+
+//------------------------------------------------------------------------------
+// Export Detail
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwExportDittoHdr.Title="輸出 2D 分件結構";
+CATDrwHeader.CATDrwExportDittoHdr.ShortHelp="輸出 2D 分件結構";
+CATDrwHeader.CATDrwExportDittoHdr.Help="輸出 2D 分件結構";
+CATDrwHeader.CATDrwExportDittoHdr.LongHelp =
+"輸出 2D 分件結構
+在另一視圖以相同分件結構複製 2D 分件.";
+
+//------------------------------------------------------------------------------
+// Split Table
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwSplitTableHdr.Title="分割表格";
+CATDrwHeader.CATDrwSplitTableHdr.ShortHelp= "分割表格";
+CATDrwHeader.CATDrwSplitTableHdr.Help="分割表格";
+CATDrwHeader.CATDrwSplitTableHdr.LongHelp =
+"分割表格
+分割表格成為數個.";
+
+//------------------------------------------------------------------------------
+// Reroot Dim
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwRerootDimHdr.Title="重新執行尺寸";
+CATDrwHeader.CATDrwRerootDimHdr.ShortHelp="重新執行尺寸";
+CATDrwHeader.CATDrwRerootDimHdr.Help="重新執行所選尺寸";
+CATDrwHeader.CATDrwRerootDimHdr.LongHelp =
+"重新執行所選尺寸至另一元素";
+
+//------------------------------------------------------------------------------
+// AreaFillOnPoint Commande pour ODT
+// LGK Comment: Leave as is
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwArealFillOnPointHdr.Title="在點上填滿區域";
+CATDrwHeader.CATDrwArealFillOnPointHdr.ShortHelp="在點上填滿區域";
+CATDrwHeader.CATDrwArealFillOnPointHdr.Help="在點上填滿區域";
+CATDrwHeader.CATDrwArealFillOnPointHdr.LongHelp =
+"在點上填滿區域";
+
+//------------------------------------------------------------------------------
+// Alias commande pour ODT
+// LGK Comment: Leave as is
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwAliasHdr.Title="dfualias";
+CATDrwHeader.CATDrwAliasHdr.ShortHelp= "dfualias";
+CATDrwHeader.CATDrwAliasHdr.Help="dfualias";
+CATDrwHeader.CATDrwAliasHdr.LongHelp ="dfualias.";
+
+//------------------------------------------------------------------------------
+// SuperposeOnCmd
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwSuperposeOnHdr.Title="疊置";
+CATDrwHeader.CATDrwSuperposeOnHdr.ShortHelp="疊置";
+CATDrwHeader.CATDrwSuperposeOnHdr.Help="將視圖的原點與另一視圖疊置";
+CATDrwHeader.CATDrwSuperposeOnHdr.LongHelp ="疊置
+將視圖的原點與另一視圖疊置";
+
+//------------------------------------------------------------------------------
+// Align Views using element
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwAlignViewsEltHdr.Title="以元素對齊視圖";
+CATDrwHeader.CATDrwAlignViewsEltHdr.ShortHelp="以元素對齊視圖";
+CATDrwHeader.CATDrwAlignViewsEltHdr.Help="以線,圓或點對齊視圖.";
+CATDrwHeader.CATDrwAlignViewsEltHdr.LongHelp ="以元素對齊視圖
+以線,圓或點對齊視圖.";
+
+//------------------------------------------------------------------------------
+// Interrupt Add Command 
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwInterruptDimAddHdr.Title="建立中斷";
+CATDrwHeader.CATDrwInterruptDimAddHdr.ShortHelp="建立中斷";
+CATDrwHeader.CATDrwInterruptDimAddHdr.Help="在最接近的尺寸線或每一個延伸線建立中斷";
+CATDrwHeader.CATDrwInterruptDimAddHdr.LongHelp =
+"建立中斷
+使用工具列的更換鈕或右鍵內容
+在最接近的尺寸線或每一個延伸線建立中斷.";
+
+//------------------------------------------------------------------------------
+// Interrupt Remove Command 
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwInterruptDimRemHdr.Title="移除中斷";
+CATDrwHeader.CATDrwInterruptDimRemHdr.ShortHelp="移除中斷";
+CATDrwHeader.CATDrwInterruptDimRemHdr.Help="在最接近的尺寸線或每一個延伸線移除中斷";
+CATDrwHeader.CATDrwInterruptDimRemHdr.LongHelp =
+"移除中斷
+使用工具列的更換鈕或右鍵內容
+在最接近的尺寸線或每一個延伸線移除中斷.";
+
+//------------------------------------------------------------------------------
+// GVS Apply On
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwGVSApplyOnHdr.Title="應用視圖型式至";
+CATDrwHeader.CATDrwGVSApplyOnHdr.ShortHelp="應用視圖型式至";
+CATDrwHeader.CATDrwGVSApplyOnHdr.Help="應用視圖型式至";
+CATDrwHeader.CATDrwGVSApplyOnHdr.LongHelp ="應用視圖型式至";
+
+//------------------------------------------------------------------------------
+// GVS ChangeStyle
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwChangeStyleHdr.Title="設定視圖形式";
+CATDrwHeader.CATDrwChangeStyleHdr.ShortHelp="設定視圖形式";
+CATDrwHeader.CATDrwChangeStyleHdr.Help="設定視圖形式";
+CATDrwHeader.CATDrwChangeStyleHdr.LongHelp ="設定視圖形式";
+
+//------------------------------------------------------------------------------
+// from Callout reframe on section view
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwCalloutReframeHdr.Title="定位結果視圖";
+CATDrwHeader.CATDrwCalloutReframeHdr.ShortHelp="定位結果視圖";
+CATDrwHeader.CATDrwCalloutReframeHdr.Help="定位結果視圖";
+CATDrwHeader.CATDrwCalloutReframeHdr.LongHelp ="定位結果視圖, (切面, 投影, 細部)
+以此定義指出.";
+
+//------------------------------------------------------------------------------
+// from section view reframe on callout
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwViewReframeHdr.Title="定位參考視圖";
+CATDrwHeader.CATDrwViewReframeHdr.ShortHelp="定位參考視圖";
+CATDrwHeader.CATDrwViewReframeHdr.Help="定位參考視圖";
+CATDrwHeader.CATDrwViewReframeHdr.LongHelp ="定位參考視圖, (切面, 投影, 細部)
+以此定義指出.";
+
+//------------------------------------------------------------------------------
+// LoadPDMContext
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwLoadPDMContextHdr.Title="載入 PDM 內容";
+CATDrwHeader.CATDrwLoadPDMContextHdr.ShortHelp="載入 PDM 內容";
+CATDrwHeader.CATDrwLoadPDMContextHdr.Help="載入 PDM 內容";
+CATDrwHeader.CATDrwLoadPDMContextHdr.LongHelp ="載入 PDM 內容";
+
+//------------------------------------------------------------------------------
+// Force GVS Style
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwForceGVSStyleHdr.Title="輸入視圖形式...";
+CATDrwHeader.CATDrwForceGVSStyleHdr.ShortHelp="輸入視圖形式...";
+CATDrwHeader.CATDrwForceGVSStyleHdr.Help="輸入視圖形式...";
+CATDrwHeader.CATDrwForceGVSStyleHdr.LongHelp ="輸入視圖形式...";
+
+//------------------------------------------------------------------------------
+// Print area
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwVisualizePrintAreaHdr.Title="顯示列印區域";
+CATDrwHeader.CATDrwVisualizePrintAreaHdr.ShortHelp="顯示圖紙列印區域";
+CATDrwHeader.CATDrwVisualizePrintAreaHdr.Help="顯示圖紙列印區域";
+CATDrwHeader.CATDrwVisualizePrintAreaHdr.LongHelp ="顯示圖紙列印區域";
+
+//------------------------------------------------------------------------------
+// Update Report
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwUpdateReportHdr.Title="更新報告";
+CATDrwHeader.CATDrwUpdateReportHdr.ShortHelp="更新報告";
+CATDrwHeader.CATDrwUpdateReportHdr.Help="載入更新報告";
+CATDrwHeader.CATDrwUpdateReportHdr.LongHelp ="載入更新時發生錯誤的報告";
+
+//------------------------------------------------------------------------------
+// Modify links
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwModifyLinksHdr.Title="修改鏈結";
+CATDrwHeader.CATDrwModifyLinksHdr.ShortHelp="修改鏈結";
+CATDrwHeader.CATDrwModifyLinksHdr.Help="由視圖中新增或移除鏈結";
+CATDrwHeader.CATDrwModifyLinksHdr.LongHelp ="修改鏈結
+由視圖中新增或移除鏈結";
+
+//------------------------------------------------------------------------------
+// Apply links to
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwApplyLinksToHdr.Title="應用鏈結至";
+CATDrwHeader.CATDrwApplyLinksToHdr.ShortHelp="應用鏈結至";
+CATDrwHeader.CATDrwApplyLinksToHdr.Help="應用視圖鏈結至另一視圖";
+CATDrwHeader.CATDrwApplyLinksToHdr.LongHelp ="應用鏈結至
+應用視圖鏈結至另一視圖";
+
+//------------------------------------------------------------------------------
+// Modify Projection Plane
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwModifProjPlaneHdr.Title="修改投影平面";
+CATDrwHeader.CATDrwModifProjPlaneHdr.ShortHelp="修改投影平面";
+CATDrwHeader.CATDrwModifProjPlaneHdr.Help="修改投影平面";
+CATDrwHeader.CATDrwModifProjPlaneHdr.LongHelp ="修改所選視圖的投影平面";
+
+//------------------------------------------------------------------------------
+// Export design view
+//------------------------------------------------------------------------------
+CATDrwHeader.CAT2DTo3DViewCreationHdr.Title="輸出佈圖視圖";
+CATDrwHeader.CAT2DTo3DViewCreationHdr.ShortHelp="輸出佈圖視圖";
+CATDrwHeader.CAT2DTo3DViewCreationHdr.Help="輸出繪圖至佈圖視圖";
+CATDrwHeader.CAT2DTo3DViewCreationHdr.LongHelp ="輸出佈圖視圖 \n 輸出繪圖至佈圖視圖";
+
+//------------------------------------------------------------------------------
+// Display view frame
+//------------------------------------------------------------------------------
+CATDrwHeader.CATDrwDisplayViewFrameHdr.Title="顯示每個視圖所設定的框架";
+CATDrwHeader.CATDrwDisplayViewFrameHdr.ShortHelp="顯示每個視圖所設定的框架";
+CATDrwHeader.CATDrwDisplayViewFrameHdr.Help="顯示每個視圖所設定的框架";
+CATDrwHeader.CATDrwDisplayViewFrameHdr.LongHelp ="顯示每個視圖所設定的框架";

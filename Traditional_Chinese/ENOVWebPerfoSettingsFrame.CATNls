@@ -1,0 +1,68 @@
+Title = "Performances";
+
+LODFrame.HeaderFrame.Global.Title = "Level of detail";
+LODFrame.IconAndOptionsFrame.OptionsFrame.StaticLODLabel.Title = "Static";
+LODFrame.IconAndOptionsFrame.OptionsFrame.StaticLODLabel.ShortHelp = 
+"Defines display quality for static objects.
+Low value = show all the details.";
+LODFrame.IconAndOptionsFrame.OptionsFrame.StaticLODSlider.LongHelp = 
+"Adds or removes display quality for static objects.
+Even if you do not want to move geometry, it is often 
+useful to remove details you do not need to see. 
+Set a low value if you want to see all the details, 
+or a high value to remove details.";
+LODFrame.IconAndOptionsFrame.OptionsFrame.StaticLODSlider.ShortHelp = "0.0 - 40.0";
+LODFrame.IconAndOptionsFrame.OptionsFrame.DynamicLODLabel.Title = "While Moving";
+LODFrame.IconAndOptionsFrame.OptionsFrame.DynamicLODLabel.ShortHelp = 
+"Defines display quality when moving objects.
+High value = moving large parts more quickly.";
+LODFrame.IconAndOptionsFrame.OptionsFrame.DynamicLODSlider.LongHelp = 
+"Adds or removes display quality when moving objects.
+You will be able to move large parts more quickly if 
+you set While Moving to a high value. When you release 
+the mouse after moving the part, the normal level of 
+detail will be redisplayed.";
+LODFrame.IconAndOptionsFrame.OptionsFrame.DynamicLODSlider.ShortHelp = "0.0 - 40.0";
+
+CullFrame.HeaderFrame.Global.Title = "Pixel Culling";
+CullFrame.IconAndOptionsFrame.OptionsFrame.StaticCullLabel.Title = "Static";
+CullFrame.IconAndOptionsFrame.OptionsFrame.StaticCullLabel.ShortHelp = 
+"Defines minimum pixel's size to display an object.";
+CullFrame.IconAndOptionsFrame.OptionsFrame.StaticCullSlider.LongHelp = 
+"Adds or removes display quality for static objects.
+Even if you do not want to move geometry, it is often 
+useful to remove details you do not need to see. 
+Set a low value if you want to see all the details, 
+or a high value to remove details.";
+CullFrame.IconAndOptionsFrame.OptionsFrame.StaticCullSlider.ShortHelp = "0 - 40";
+CullFrame.IconAndOptionsFrame.OptionsFrame.DynamicCullLabel.Title = "While Moving";
+CullFrame.IconAndOptionsFrame.OptionsFrame.DynamicCullLabel.ShortHelp = 
+"Defines minimum pixel's size to display an object when moving.
+High value = moving large parts more quickly.";
+CullFrame.IconAndOptionsFrame.OptionsFrame.DynamicCullSlider.LongHelp = 
+"Adds or removes display quality when moving objects.
+You will be able to move large parts more quickly if 
+you set While Moving to a high value. When you release 
+the mouse after moving the part, the static size will be redisplayed.";
+CullFrame.IconAndOptionsFrame.OptionsFrame.DynamicCullSlider.ShortHelp = "0 - 40";
+
+MiscFrame.HeaderFrame.Global.Title = "Miscellaneous";
+MiscFrame.IconAndOptionsFrame.OptionsFrame.TwoSideLighting.Title = "Enable two side lighting for faces and surfaces only";
+MiscFrame.IconAndOptionsFrame.OptionsFrame.TwoSideLighting.ShortHelp = "Enable two side lighting for faces and surfaces only";
+MiscFrame.IconAndOptionsFrame.OptionsFrame.TwoSideLighting.LongHelp = 
+"Enables or disables the visualize of the two sides
+(i.e. front side and back side) of a face or 
+surface by lighting them.";
+MiscFrame.IconAndOptionsFrame.OptionsFrame.BackFaceTitleLbl.Title = "Enable back face culling:";
+MiscFrame.IconAndOptionsFrame.OptionsFrame.BackFaceCulling.Title = "For stand-alone faces";
+MiscFrame.IconAndOptionsFrame.OptionsFrame.BackFaceCulling.ShortHelp = "Enable back face culling for stand-alone faces";
+MiscFrame.IconAndOptionsFrame.OptionsFrame.BackFaceCulling.LongHelp = 
+"Enables or disables back face culling for stand-alone faces.
+You will be able to render hidden stand-alone faces";
+MiscFrame.IconAndOptionsFrame.OptionsFrame.BackFaceCullingOnSolids.Title = "For faces belonging to solids";
+MiscFrame.IconAndOptionsFrame.OptionsFrame.BackFaceCullingOnSolids.ShortHelp = "Enable back face culling for faces belonging to solids";
+MiscFrame.IconAndOptionsFrame.OptionsFrame.BackFaceCullingOnSolids.LongHelp = 
+"Enables or disables back face culling for faces belonging to solids.
+You will be able to render hidden faces belonging to solids";
+
+

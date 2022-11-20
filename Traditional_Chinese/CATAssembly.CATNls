@@ -1,0 +1,530 @@
+// CATAssembly.CATNls
+
+// English Version
+// tbu avril 1999
+
+// Error Message
+
+CATAssembly.ERRShort0="沒有錯誤.";
+CATAssembly.ERRLong0="沒有錯誤.";
+CATAssembly.ERRSev0="0";
+
+CATAssembly.ERRShort1="此物件無效.";
+CATAssembly.ERRLong1="您無法應用命令 %% 在所選的物件上.";
+CATAssembly.ERRSev1="2";
+
+CATAssembly.ERRShort2="無效副檔名.";
+CATAssembly.ERRLong2="您無法使用具有 \"%%\" 副檔名的檔案. \n 有效的副檔名為: %%.";
+CATAssembly.ERRSev2="2";
+
+CATAssembly.ERRShort3="檔案不存在.";
+CATAssembly.ERRLong3="檔案名稱: \n\"%%\"\n 不存在. \n 請選擇已存的檔案.";
+CATAssembly.ERRSev3="2";
+
+CATAssembly.ERRShort4="內部計算錯誤.";
+CATAssembly.ERRLong4="內部計算之一錯誤. 請嚐試再執行此命令.";
+CATAssembly.ERRSev4="2";
+
+CATAssembly.ERRShort5="檔案無法顯示.";
+CATAssembly.ERRLong5="檔案名稱: \n\"%%\"\n 無法以3D檢視器來顯示. \n 請選擇其他檔案.";
+CATAssembly.ERRSev5="2";
+
+// CONSTRAINT Palette
+
+CATAssembly.CreateFix.Title="固定";
+CATAssembly.CreateFix.ShortHelp="固定分件";
+CATAssembly.CreateFix.Help="在作動的分件上固定分件位置";
+CATAssembly.CreateFix.LongHelp="固定分件 \n 在作動分件上固定分件位置.";
+
+CATAssembly.CreateCoincid.Title="一致...";
+CATAssembly.CreateCoincid.Help="一致拘束";
+CATAssembly.CreateCoincid.ShortHelp="一致拘束";
+CATAssembly.CreateCoincid.LongHelp="一致拘束 \n 在作動分件上於兩分件間建立一致拘束.";
+
+CATAssembly.CreateContact.Title="接觸...";
+CATAssembly.CreateContact.Help="建立接觸拘束";
+CATAssembly.CreateContact.ShortHelp="接觸拘束";
+CATAssembly.CreateContact.LongHelp="接觸拘束 \n 在作動分件上於兩分件間建立接觸拘束.";
+
+CATAssembly.CreateOffset.Title="偏移...";
+CATAssembly.CreateOffset.Help="建立偏移拘束";
+CATAssembly.CreateOffset.ShortHelp="偏移拘束";
+CATAssembly.CreateOffset.LongHelp="偏移拘束 \n 在作動分件上於兩分件間建立偏移拘束.";
+
+CATAssembly.CreateAngle.Title="角度...";
+CATAssembly.CreateAngle.Help="建立角度.平行和垂直拘束";
+CATAssembly.CreateAngle.ShortHelp="角度拘束";
+CATAssembly.CreateAngle.LongHelp="角度拘束 \n 在作動分件上於兩分件間建立建立角度.平行和垂直拘束.";
+
+CATAssembly.CreateFixT.Title="固定一起...";
+CATAssembly.CreateFixT.Help="建立固定一起關係";
+CATAssembly.CreateFixT.ShortHelp="固定一起";
+CATAssembly.CreateFixT.LongHelp="固定一起 \n 建立分件間固定一起關係.";
+
+// DOF Generation
+CATAssembly.CreateDOF.Title="分件的自由度";
+CATAssembly.CreateDOF.Help="顯示分件的可能自由度.";
+CATAssembly.CreateDOF.ShortHelp="分件的自由度";
+CATAssembly.CreateDOF.LongHelp="分件的自由度 \n 顯示分件的可能自由度.";
+// Fin DOF Generation
+
+CATAssembly.InactivateCst.Title="啟動或不啟動 拘束";
+CATAssembly.InactivateCst.Help="啟動或不啟動 拘束";
+CATAssembly.InactivateCst.ShortHelp="啟動或不啟動 拘束";
+CATAssembly.InactivateCst.LongHelp="啟動或不啟動 拘束 \n 啟動或不啟動所選拘束.";
+
+// == Flexibilite and Co ==
+
+CATAssembly.AsmExploseBlock.Title="彈性或剛性的次組合";
+CATAssembly.AsmExploseBlock.Help="允許重覆負載子分件位置";
+CATAssembly.AsmExploseBlock.ShortHelp="彈性或剛性的次組合";
+CATAssembly.AsmExploseBlock.LongHelp="彈性或剛性的次組合 \n 允許重覆負載子分件位置.";
+
+CATAssembly.AsmPropagPosition.Title="增加參考的位置";
+CATAssembly.AsmPropagPosition.Help="在組立參考中提供參考位置";
+CATAssembly.AsmPropagPosition.ShortHelp="增加參考的位置";
+CATAssembly.AsmPropagPosition.LongHelp="增加參考的位置. \n 在組立參考中提供參考位置";
+
+// == Inactivation de composant ==
+
+CATAssembly.AsmInactivation.Title="啟動或不啟動分件";
+CATAssembly.AsmInactivation.Help="啟動或不啟動分件";
+CATAssembly.AsmInactivation.ShortHelp="啟動或不啟動分件";
+CATAssembly.AsmInactivation.LongHelp="啟動或不啟動分件";
+
+CATAssembly.ChangeCst.Title="更改拘束...";
+CATAssembly.ChangeCst.Help="更改所選拘束的形式";
+CATAssembly.ChangeCst.ShortHelp="更改拘束";
+CATAssembly.ChangeCst.LongHelp="更改拘束 \n 更改所選拘束的形式";
+
+CATAssembly.RefreshCst.Title="更新拘束";
+CATAssembly.RefreshCst.Help="更新所選拘束";
+CATAssembly.RefreshCst.ShortHelp="更新拘束";
+CATAssembly.RefreshCst.LongHelp="更新拘束 \n 更新所選拘束";
+
+CATAssembly.ChangeCstNoLeader.Title="以不具箭頭來顯示";
+CATAssembly.ChangeCstNoLeader.Help="不啟動所選拘束的箭頭";
+CATAssembly.ChangeCstNoLeader.ShortHelp="不啟動所選拘束的箭頭";
+CATAssembly.ChangeCstNoLeadery.LongHelp="不啟動所選拘束的箭頭";
+
+CATAssembly.ChangeCstWithLeader.Title="顯示箭頭";
+CATAssembly.ChangeCstWithLeader.Help="啟動所選拘束的箭頭";
+CATAssembly.ChangeCstWithLeader.ShortHelp="啟動所選拘束的箭頭";
+CATAssembly.ChangeCstWithLeader.LongHelp="啟動所選拘束的箭頭";
+
+CATAssembly.Value_Name_Formula_Display.Title="名稱 / 數值 / 公式 顯示";
+CATAssembly.Value_Name_Formula_Display.Help="更改所選拘束的名稱 = 數值 - 公式";
+CATAssembly.Value_Name_Formula_Display.ShortHelp="更改所選拘束的顯示";
+CATAssembly.Value_Name_Formula_Displayt.LongHelp="更改拘束 \n 更改所選拘束的名稱 = 數值 - 公式";
+
+CATAssembly.Value_Name_Display.Title="名稱 / 數值顯示";
+CATAssembly.Value_Name_Display.Help="更改所選拘束的名稱 = 數值";
+CATAssembly.Value_Name_Display.ShortHelp="更改所選拘束的顯示";
+CATAssembly.Value_Name_Display.LongHelp="更改拘束 \n 更改所選拘束的名稱 = 數值";
+
+CATAssembly.Value_Display.Title="數值顯示";
+CATAssembly.Value_Display.Help="更改所選拘束至數值";
+CATAssembly.Value_Display.ShortHelp="更改所選拘束的顯示";
+CATAssembly.Value_Display.LongHelp="更改拘束 \n 更改所選拘束至數值";
+
+CATAssembly.Name_Display.Title="名稱顯示";
+CATAssembly.Name_Display.Help="更改所選拘束顯示至 '名稱'";
+CATAssembly.Name_Display.ShortHelp="更改拘束顯示";
+CATAssembly.Name_Display.LongHelp="更改拘束 \n 更改所選拘束顯示至 '名稱'";
+
+CATAssembly.CreateWizard.Title="快速拘束";
+CATAssembly.CreateWizard.Help="將所選分件自動加拘束";
+CATAssembly.CreateWizard.ShortHelp="快速拘束";
+CATAssembly.CreateWizard.LongHelp="快速拘束 \n 將所選分件自動加拘束.";
+// PrtSwapActive
+
+CATAssembly.PrtSwapActive.Title="啟動或不啟動";
+CATAssembly.PrtSwapActive.Help="啟動或不啟動所選物件";
+CATAssembly.PrtSwapActive.ShortHelp="啟動或不啟動";
+CATAssembly.PrtSwapActive.LongHelp="啟動或不啟動所選物件";
+
+// Active
+
+CATAssembly.PrtActive.Title="啟動";
+CATAssembly.PrtActive.Help="啟動所選物件";
+CATAssembly.PrtActive.ShortHelp="啟動";
+CATAssembly.PrtActive.LongHelp="啟動所選物件";
+
+// Inactive
+
+CATAssembly.PrtInactive.Title="不啟動";
+CATAssembly.PrtInactive.Help="不啟動所選物件";
+CATAssembly.PrtInactive.ShortHelp="不啟動";
+CATAssembly.PrtInactive.LongHelp="不啟動所選物件";
+
+// MOVE Palette
+
+CATAssembly.SimulationExplodeAsm.Title="爆炸";
+CATAssembly.SimulationExplodeAsm.Help="編輯一群您想要爆炸的物件";
+CATAssembly.SimulationExplodeAsm.ShortHelp="爆炸";
+CATAssembly.SimulationExplodeAsm.LongHelp="編輯一群您想要爆炸的物件";
+
+CATAssembly.TranslationRotation.Title="移動或旋轉...";
+CATAssembly.TranslationRotation.Help="移動或旋轉分件";
+CATAssembly.TranslationRotation.ShortHelp="移動或旋轉";
+CATAssembly.TranslationRotation.LongHelp="移動或旋轉 \n 以定義值來移動或旋轉分件.";
+
+CATAssembly.DirectManipulation.Title="搬移...";
+CATAssembly.DirectManipulation.Help="任意平移或旋轉分件";
+CATAssembly.DirectManipulation.ShortHelp="搬移";
+CATAssembly.DirectManipulation.LongHelp="搬移 \n 任意平移或旋轉分件.";
+
+CATAssembly.Snap.Title="快速定位";
+CATAssembly.Snap.Help="以快速定位方式移動分件";
+CATAssembly.Snap.ShortHelp="快速定位";
+CATAssembly.Snap.LongHelp="快速定位 \n 以快速定位方式移動分件至另一分件.";
+
+CATAssembly.SmartMove.Title="智慧移動";
+CATAssembly.SmartMove.Help="以拖放方式移動分件";
+CATAssembly.SmartMove.ShortHelp="智慧移動";
+CATAssembly.SmartMove.LongHelp="智慧移動 \n 以拖放方式移動分件, \n 以建立自動拘束方式的可能性.";
+
+CATAssembly.StopOnCollision.Title="干涉時停止";
+CATAssembly.StopOnCollision.Help="啟動或不啟動干涉時停止處理";
+CATAssembly.StopOnCollision.ShortHelp="干涉時停止動作";
+CATAssembly.StopOnCollision.LongHelp="啟動或不啟動干涉時停止處理";
+// EDIT Menu
+
+CATAssembly.Delete.Title="刪除...";
+CATAssembly.Delete.Help="刪除所選擇目";
+CATAssembly.Delete.ShortHelp="刪除";
+CATAssembly.Delete.LongHelp="刪除 \n 刪除所選擇目";
+
+CATAssembly.UpdateHeaderAsm.Title="更新";
+CATAssembly.UpdateHeaderAsm.Help="更新拘束";
+CATAssembly.UpdateHeaderAsm.ShortHelp="更新";
+CATAssembly.UpdateHeaderAsm.LongHelp="更新 \n 在移除及增加一或多個拘束時更新拘束.";
+
+CATAssembly.AsmWeldEdition.Title="焊接平面";
+CATAssembly.AsmWeldEdition.Help="建立焊接平面";
+CATAssembly.AsmWeldEdition.ShortHelp="焊接平面";
+CATAssembly.AsmWeldEdition.LongHelp="建立焊接平面";
+
+CATAssembly.FromProductToCst.Title="拘束元件";
+CATAssembly.FromProductToCst.Help="在作動文件上選擇所有拘束鏈結所選分件";
+CATAssembly.FromProductToCst.ShortHelp="拘束元件";
+CATAssembly.FromProductToCst.LongHelp="拘束元件 \n 在作動文件上選擇所有拘束鏈結所選分件.";
+
+// INSERT Menu
+
+CATAssembly.AsmCstSolve.Title="更新";
+CATAssembly.AsmCstSolve.Help="在作動文件上更新所選拘束";
+CATAssembly.AsmCstSolve.ShortHelp="更新所選拘束";
+CATAssembly.AsmCstSolve.LongHelp="在作動文件上更新所選拘束.";
+
+// TOOLS Menu
+
+CATAssembly.AsmManageProducts.Title="產品管理...";
+CATAssembly.AsmManageProducts.ShortHelp="產品管理";
+CATAssembly.AsmManageProducts.Help="管理組件的產品";
+
+// ANALYZE Menu
+
+CATAssembly.UpdtState.Title="更新...";
+CATAssembly.UpdtState.Help="顯示更新情形";
+CATAssembly.UpdtState.ShortHelp="更新情形";
+
+CATAssembly.PowerUpdt.Title="漸進更新輔助...";
+CATAssembly.PowerUpdt.Help="執行漸進更新輔助";
+CATAssembly.PowerUpdt.ShortHelp="漸進更新輔助";
+
+CATAssembly.AutoPowerUpdt.Title="自動更新進行中...";
+CATAssembly.AutoPowerUpdt.Help="執行自動更新進行中";
+CATAssembly.AutoPowerUpdt.ShortHelp="自動更新進行中";
+
+CATAssembly.CstAnalysis.Title="拘束...";
+CATAssembly.CstAnalysis.Help="顯示拘束的集合並列表";
+CATAssembly.CstAnalysis.ShortHelp="拘束清單";
+
+CATAssembly.DofAnalysis.Title="自由度...";
+CATAssembly.DofAnalysis.Help="分析作動的產品自由度";
+CATAssembly.DofAnalysis.ShortHelp="自由度";
+
+CATAssembly.ClashCommand.Title="干涉計算...";
+CATAssembly.ClashCommand.Help="計算組立物件的干涉";
+CATAssembly.ClashCommand.ShortHelp="干涉計算";
+
+CATAssembly.SectionCommand.Title="切面計算...";
+CATAssembly.SectionCommand.Help="計算組立物件的切面";
+CATAssembly.SectionCommand.ShortHelp="切面計算";
+
+CATAssembly.FindPos.Title="幾何解碼...";
+CATAssembly.FindPos.Help="組立文件中的幾何解碼";
+CATAssembly.FindPos.ShortHelp="幾何解碼";
+
+//CATAssembly.BillOfMaterial.Title="材料表...";
+//CATAssembly.BillOfMaterial.Help="建立作動文件中的材料表";
+//CATAssembly.BillOfMaterial.ShortHelp="材料表";
+
+// Les ressources "Measure Between" et "Measure Edge" sont copiees depuis
+// "Navigator4DUI/CNext/resources/msgcatalog/CATNavigation4DHeader.CATNls"
+//dve: maj des resources et icones / a Navigator4DUI
+CATAssembly.AsmSpaceMeasureBetween.Title="距離量測...";
+CATAssembly.AsmSpaceMeasureBetween.Help="量測兩個項目中的距離和角度";
+CATAssembly.AsmSpaceMeasureBetween.ShortHelp="距離量測";
+CATAssembly.AsmSpaceMeasureBetween.LongHelp="量測兩個項目中的距離和角度";
+
+CATAssembly.AsmSpaceMeasureEdge.Title="項次分析...";
+CATAssembly.AsmSpaceMeasureEdge.Help="分析所選擇目的內容";
+CATAssembly.AsmSpaceMeasureEdge.ShortHelp="項次分析";
+CATAssembly.AsmSpaceMeasureEdge.LongHelp="分析所選擇目的內容";
+
+// Les ressources "Measure Iniertia" sont copiees depuis
+// "SimulationLab/CNext/resources/msgcatalog/CATDMUCommandHeader.CATxxx"
+CATAssembly.AsmSpaceMeasureInertia.Title="慣性量測...";
+CATAssembly.AsmSpaceMeasureInertia.Help="量測所選體積的慣性性質";
+CATAssembly.AsmSpaceMeasureInertia.ShortHelp="慣性量測";
+CATAssembly.AsmSpaceMeasureInertia.LongHelp="量測所選體積的慣性性質";
+
+// Les resources "Distance, Sectionning et Clash" sont copiees depuis
+// "Navigator4DUI/CNext/resources/msgcatalog/CATNavigation4DHeader.CATNls"
+CATAssembly.AsmSpaceClash.Title="干涉...";
+CATAssembly.AsmSpaceClash.Help="分析產品間的干涉";
+CATAssembly.AsmSpaceClash.ShortHelp="干涉";
+CATAssembly.AsmSpaceClash.LongHelp="分析產品間的干涉";
+
+CATAssembly.AsmSpaceSection.Title="切面...";
+CATAssembly.AsmSpaceSection.Help="處理產品的切面和切層";
+CATAssembly.AsmSpaceSection.ShortHelp="切面";
+CATAssembly.AsmSpaceSection.LongHelp="處理產品的切面和切層";
+
+// Les resources "Distance and Band Analysis" (license SpA) sont copiees depuis
+// "Navigator4DUI/CNext/resources/msgcatalog/CATNavigation4DHeader.CATNls"
+CATAssembly.AsmSpaceMeasure.Title="距離和寬帶分析";
+CATAssembly.AsmSpaceMeasure.Help="量測所選產品間執行寬帶分析的距離";
+CATAssembly.AsmSpaceMeasure.ShortHelp="距離和寬帶分析";
+CATAssembly.AsmSpaceMeasure.LongHelp="量測所選產品間執行寬帶分析的距離";
+
+CATAssembly.AsmSpaceMeasureWithoutBand.Title="距離...";
+CATAssembly.AsmSpaceMeasureWithoutBand.Help="量測所選產品間的距離";
+CATAssembly.AsmSpaceMeasureWithoutBand.ShortHelp="距離";
+CATAssembly.AsmSpaceMeasureWithoutBand.LongHelp="量測所選產品間的距離";
+
+// Les ressources "Apply material" sont copiees depuis
+// "CATNavigation4D/CNext/resources/msgcatalog/CATNavigation4DHeaders.CATxxx"
+CATAssembly.ApplyASMMaterial.Title="應用材料";
+CATAssembly.ApplyASMMaterial.Help="應用材料在幾何上";
+CATAssembly.ApplyASMMaterial.ShortHelp="應用材料";
+CATAssembly.ApplyASMMaterial.LongHelp="應用材料在幾何上.";
+
+CATAssembly.Dependancy.Title="依賴性...";
+CATAssembly.Dependancy.Help="分件和拘束間的相互關係...";
+CATAssembly.Dependancy.ShortHelp="依賴性";
+CATAssembly.Dependancy.LongHelp="分件和拘束間的相互關係...";
+
+// State Command messages
+
+CATAssembly.TstSelValidity.Message = "選擇是否有效 ? ";
+CATAssembly.SelPartAddProduct.Message="選擇分件來新增分件至";
+CATAssembly.SelPartImpComp.Message = "選擇分件來新增已存分件";
+CATAssembly.SelCompFile.Message = "選擇分件檔案";
+CATAssembly.RepPreview.Message = "確認或取消形狀表現選擇";
+CATAssembly.SelPartAddRep.Message="選擇分件來相關形狀表現";
+CATAssembly.SelRepFile.Message = "選擇形狀表現檔案";
+CATAssembly.SelPartActRep.Message="選擇分件來啟動形狀表現";
+CATAssembly.SelPartDesactRep.Message="選擇分件來不啟動形狀表現";
+CATAssembly.SelPartRemRep.Message="選擇分件來移除形狀表現";
+CATAssembly.SelPartRepRep.Message="選擇分件來更換形狀表現";
+
+CATAssembly.SelShapeRem.Message = "選擇主要或交替的形狀來移除";
+CATAssembly.SelShapeAdd.Message = "選擇主要或交替的形狀來增加";
+CATAssembly.SelShapeAct.Message = "選擇主要或交替的形狀來啟動";
+CATAssembly.SelShapeRep.Message = "選擇主要或交替的形狀來更換";
+CATAssembly.FindPosInitState.Message = "選擇第一個分件";
+CATAssembly.FindPosFirstState.Message = "選擇第二個分件";
+CATAssembly.FindPosSecondState.Message = "再選擇第二個分件或再次計算...";
+CATAssembly.DeleteAsmInitState.Message = "選擇元件或產品來刪除...";
+CATAssembly.SelectRootProduct.Message = "選擇根基產品";
+CATAssembly.CmdCstSolve.Message = "選擇作動產品的拘束來計算";
+
+
+
+// Instanciation on Pattern
+
+CATAssembly.InstOnPattern.Title="重覆自訂陣列...";
+CATAssembly.InstOnPattern.Help="分件的重覆自訂陣列";
+CATAssembly.InstOnPattern.ShortHelp="重覆自訂陣列";
+CATAssembly.InstOnPattern.LongHelp="分件的重覆自訂陣列";
+
+// Multi Instanciation 
+
+CATAssembly.MultiInstFast.Title="快速多重複本";
+CATAssembly.MultiInstFast.Help="快速多重複本元素";
+CATAssembly.MultiInstFast.ShortHelp="快速多重複本";
+CATAssembly.MultiInstFast.LongHelp="快速多重複本元素";
+
+CATAssembly.MultiInstDef.Title="定義多重複本...";
+CATAssembly.MultiInstDef.Help="定義多重複本元素";
+CATAssembly.MultiInstDef.ShortHelp="定義多重複本元素";
+CATAssembly.MultiInstDef.LongHelp="定義多重複本元素";
+
+// Component Catalog V5R4
+CATAssembly.ComponentCatalog.Title="目錄瀏覽器";
+CATAssembly.ComponentCatalog.Help="從目錄輸入分件";
+CATAssembly.ComponentCatalog.ShortHelp="目錄瀏覽器";
+CATAssembly.ComponentCatalog.LongHelp="從目錄輸入分件.";
+
+CATAssembly.EnMechPartCatalog.Title="EN 目錄";
+CATAssembly.EnMechPartCatalog.Help="從 EN 目錄輸入分件";
+CATAssembly.EnMechPartCatalog.ShortHelp="EN 目錄";
+CATAssembly.EnMechPartCatalog.LongHelp="從 EN 標準機構零件目錄輸入分件.";
+
+CATAssembly.IsoMechPartCatalog.Title="ISO 目錄";
+CATAssembly.IsoMechPartCatalog.Help="從 ISO 目錄輸入分件";
+CATAssembly.IsoMechPartCatalog.ShortHelp="ISO 目錄";
+CATAssembly.IsoMechPartCatalog.LongHelp="從 ISO 標準機構零件目錄輸入分件.";
+
+CATAssembly.JisMechPartCatalog.Title="JIS 目錄";
+CATAssembly.JisMechPartCatalog.Help="從 JIS 目錄輸入分件";
+CATAssembly.JisMechPartCatalog.ShortHelp="JIS 目錄";
+CATAssembly.JisMechPartCatalog.LongHelp="從 JIS 標準機構零件目錄輸入分件.";
+
+CATAssembly.UsMechPartCatalog.Title="ASME, ANSI 公制目錄組";
+CATAssembly.UsMechPartCatalog.Help="從 ASME, ANSI 公制目錄組輸入分件";
+CATAssembly.UsMechPartCatalog.ShortHelp="ASME, ANSI 公制目錄組";
+CATAssembly.UsMechPartCatalog.LongHelp="從 ASME, ANSI 公制標準機械零件庫輸入分件";
+
+CATAssembly.UsImpMechPartCatalog.Title="ASME, ANSI 英制目錄組";
+CATAssembly.UsImpMechPartCatalog.Help="從 ASME, ANSI 英制目錄組輸入分件";
+CATAssembly.UsImpMechPartCatalog.ShortHelp="ASME, ANSI 英制目錄組";
+CATAssembly.UsImpMechPartCatalog.LongHelp="從 ASME, ANSI 英制標準機械零件庫輸入分件";
+
+
+CATAssembly.DefaultMultiCst.Title="預設模式";
+CATAssembly.DefaultMultiCst.Help="在重覆模式下建立獨立拘束";
+CATAssembly.DefaultMultiCst.ShortHelp="預設模式";
+CATAssembly.ChainMultiCst.Title="鏈結模式";
+CATAssembly.DefaultMultiCst.LongHelp="預設模式 \n 在重覆模式下建立獨立拘束.";
+CATAssembly.ChainMultiCst.Help="在鏈結模式下建立拘束";
+CATAssembly.ChainMultiCst.ShortHelp="鏈結模式";
+CATAssembly.ChainMultiCst.LongHelp="鏈結模式 \n 建立最後所選元素鏈結拘束 \n 是最後所建拘束下一個拘束的第一個元素, \n 只在重覆模式.";
+CATAssembly.RadialMultiCst.Title="堆疊模式";
+CATAssembly.RadialMultiCst.Help="在重覆堆疊模式下建立拘束";
+CATAssembly.RadialMultiCst.ShortHelp="堆疊模式";
+CATAssembly.RadialMultiCst.LongHelp="堆疊模式 \n 建立第一個拘束的第一個所選元素堆疊模式是所有下一個拘束的第一個元素, \n 只在重覆模式.";
+
+
+//-----------------------------------------------------------------------------
+// Add Leader Creation Command
+//-----------------------------------------------------------------------------
+CATAssembly.WPAddLeader.Title="增加導引";
+CATAssembly.WPAddLeader.ShortHelp="增加導引";
+CATAssembly.WPAddLeader.Help="增加導引";
+CATAssembly.WPAddLeader.LongHelp =
+"導引
+增加導引.";
+//-----------------------------------------------------------------------------
+// Transfer To View Command
+//-----------------------------------------------------------------------------
+CATAssembly.WPTransferToView.Title="轉移至視圖或註解平面";
+CATAssembly.WPTransferToView.ShortHelp="轉移至視圖或註解平面";
+CATAssembly.WPTransferToView.Help="轉移註解至目的視圖或註解平面";
+CATAssembly.WPTransferToViewLongHelp =
+"轉移至視圖或註解平面
+轉移註解至目的視圖或註解平面.";
+
+
+
+
+// Assembly Feature V5R5 
+CATAssembly.AssySplit.Title="分割";
+CATAssembly.AssySplit.Help="建立分割";
+CATAssembly.AssySplit.ShortHelp="分割";
+CATAssembly.AssySplit.LongHelp="建立分割 \n 分割延伸至所選元件.";
+CATAssembly.AssyHole.Title="孔";
+CATAssembly.AssyHole.Help="建立孔";
+CATAssembly.AssyHole.ShortHelp="孔";
+CATAssembly.AssyHole.LongHelp="建立孔 \n 孔延伸至所選元件.";
+CATAssembly.AssyPocket.Title="槽";
+CATAssembly.AssyPocket.Help="建立槽";
+CATAssembly.AssyPocket.ShortHelp="槽";
+CATAssembly.AssyPocket.LongHelp="建立槽 \n 槽延伸至所選元件.";
+CATAssembly.AssyAdd.Title="增加";
+CATAssembly.AssyAdd.Help="建立增加";
+CATAssembly.AssyAdd.ShortHelp="增加";
+CATAssembly.AssyAdd.LongHelp="建立增加 \n 增加延伸至所選元件.";
+CATAssembly.AssyRemove.Title="移除";
+CATAssembly.AssyRemove.Help="建立移除";
+CATAssembly.AssyRemove.ShortHelp="移除";
+CATAssembly.AssyRemove.LongHelp="建立移除 \n 移除延伸至所選元件.";
+CATAssembly.AsmRerouteFeature.Title="重新連接";
+CATAssembly.AsmRerouteFeature.Help="由組立特徵重新連接特徵結果";
+CATAssembly.AsmRerouteFeature.ShortHelp="重新連接特徵";
+CATAssembly.AsmRerouteFeature.LongHelp="由組立特徵重新連接特徵結果";
+
+CATAssembly.SoftAnalGraph.Title="機械結構 ...";
+CATAssembly.SoftAnalGraph.Help="分析機械結構";
+CATAssembly.SoftAnalGraph.ShortHelp="機械結構 ";
+CATAssembly.SoftAnalGraph.LongHelp="分析機械結構 \n 顯示產品結構不具軟性產品.";
+
+
+// == Publication ==
+CATAssembly.AsmMMUIPublication.Title            = "發行...";
+CATAssembly.AsmMMUIPublication.Help             = "發行一個元素";
+CATAssembly.AsmMMUIPublication.ShortHelp        = "發行";
+CATAssembly.AsmMMUIPublication.LongHelp         = "發行一個元素.";
+
+// Les ressources "Scenes" sont copiees depuis "Navigator4DUI/CNext/resources/msgcatalog/CATNavigation4DHeader.CATNls"
+CATAssembly.AsmScenes.Title="建立進階視景";
+CATAssembly.AsmScenes.Help="建立一個進階視景";
+CATAssembly.AsmScenes.ShortHelp="進階視景";
+CATAssembly.AsmScenes.LongHelp="建立一個進階視景";
+CATAssembly.AsmOldScenes.Title="建立視景";
+CATAssembly.AsmOldScenes.Help="建立新視景";
+CATAssembly.AsmOldScenes.ShortHelp="建立視景";
+CATAssembly.AsmOldScenes.LongHelp="由預設值建立新視景";
+CATAssembly.SceneApply.Title="在組立上應用視景";
+CATAssembly.SceneApply.Help="在組立上應用視景";
+CATAssembly.SceneApply.ShortHelp="在組立上應用視景";
+CATAssembly.SceneApply.LongHelp="在組立上應用視景";
+CATAssembly.AsmNewScenesBrowser.Title="視景瀏覽...";  
+CATAssembly.AsmNewScenesBrowser.Help="瀏覽現存視景";
+CATAssembly.AsmNewScenesBrowser.ShortHelp="視景瀏覽";
+CATAssembly.AsmNewScenesBrowser.LongHelp="瀏覽現存視景";
+
+CATAssembly.AssySym.Title="對稱";
+CATAssembly.AssySym.Help="建立子分件的對稱";
+CATAssembly.AssySym.ShortHelp="對稱";
+CATAssembly.AssySym.LongHelp="建立相對於子分件的對稱";
+
+CATAssembly.AssyFeatLocalUpdt.Title="部份更新";
+CATAssembly.AssyFeatLocalUpdt.Help="更新所選元素";
+
+// Set de contraintes
+CATAssembly.AsmCstSetAddSet.Title="新增一組";
+CATAssembly.AsmCstSetAddSet.ShortHelp="新增一組";
+CATAssembly.AsmCstSetAddSet.Help="新增一組拘束";
+CATAssembly.AsmCstSetRemSet.Title="移除一組";
+CATAssembly.AsmCstSetRemSet.ShortHelp="移除一組";
+CATAssembly.AsmCstSetRemSet.Help="移除所選一組拘束";
+CATAssembly.AsmCstSetReorder.Title="移動一組在下列之後";
+CATAssembly.AsmCstSetReorder.ShortHelp="移動一組在下列之後";
+CATAssembly.AsmCstSetReorder.Help="移動一組在另一列之後";
+CATAssembly.AsmCstSetMoveIn.Title="在內部移動一組";
+CATAssembly.AsmCstSetMoveIn.ShortHelp="在內部移動一組";
+CATAssembly.AsmCstSetMoveIn.Help="在另一列內部移動一組";
+CATAssembly.AsmCstReorder.Title="重新排序拘束";
+CATAssembly.AsmCstReorder.ShortHelp="重新排序拘束";
+CATAssembly.AsmCstReorder.Help="移動拘束在另一組拘束之後";
+CATAssembly.AsmCstSetGroup.Title="歸類成新的一組";
+CATAssembly.AsmCstSetGroup.ShortHelp="歸類成新的一組";
+CATAssembly.AsmCstSetGroup.Help="歸類一組拘束或新建一組";
+
+// == Product Conversion == added V5R10 SP5 under JDP's control
+CATAssembly.CATProductToPartCmdHeader.Title     = "由產品建立 CATPart";
+CATAssembly.CATProductToPartCmdHeader.ShortHelp = "由產品建立 CATPart";
+CATAssembly.CATProductToPartCmdHeader.Help      = "由產品建立 CATPart";
+CATAssembly.CATProductToPartCmdHeader.LongHelp  = "由產品建立 CATPart";
+
+// Insert Existing Component With Positioning V5R12
+CATAssembly.ImpCompWithPos.Title     = "含有位置的已存分件...";
+CATAssembly.ImpCompWithPos.ShortHelp      = "含有位置的已存分件";
+CATAssembly.ImpCompWithPos.Help = "插入含有位置的已存分件";
+CATAssembly.ImpCompWithPos.LongHelp  = "插入含有位置的已存分件 \n 在所選位置插入已存分件並載入命令來定位它.";
+
+

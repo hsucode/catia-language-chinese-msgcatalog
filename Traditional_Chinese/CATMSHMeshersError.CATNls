@@ -1,0 +1,607 @@
+// Exemple de message :
+//
+// ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// ERR_2000.Diagnostic = "Un des parametres est negatif";
+// ERR_2000.Advice     = "Utilisez des parametres positifs";
+
+
+ERR_0001.Request    = "無法連接網格零件:
+/P01";
+ERR_0001.Diagnostic = "/P01 上沒有定義網格零件.";
+ERR_0001.Advice     = "1. 超過組立分析 : 您必須先在幾何上定義網格零件再使用它. \n 2.在組立分析上 :\n - check assembly analysis structure points at activated CATAnalysis representations (use analysis assembly toolbar)\n - create Mesh Parts on geometries before connecting them\n3. Dimension consistency : 2D(3D) Geometries must be linked to 2D(3D) Mesh Parts";
+
+ERR_0002.Request    = "無法連接網格零件:
+/P01";
+ERR_0002.Diagnostic = "幾何依附曲面上未發現相關網格:
+/P01";
+ERR_0002.Advice     = "檢查環繞幾何的網格是否太粗糙.";
+
+ERR_0003.Diagnostic = "網格化失敗, 網格零件沒有相關元素: 
+/P01";
+
+ERR_0004.Request    = "未發現依附曲面幾何 (刪除它 ?).";
+ERR_0004.Diagnostic = "無法為網格零件發現幾何:
+/P01";
+ERR_0004.Advice     = "更新網格依附曲面或刪除它.";
+
+ERR_0005.Request    = "幾何依附曲面不適當大小:
+/P01";
+ERR_0005.Diagnostic = "網格零件無效幾何依附曲面:
+/P01";
+ERR_0005.Advice     = "更新網格零件依附或刪除它.";
+
+ERR_0006.Request    = "無效幾何依附曲面 (空的或不是最新的):
+/P01";
+ERR_0006.Diagnostic = "為網格零件:
+/P01";
+ERR_0006.Advice     = "更新網格零件依附或刪除它.";
+
+ERR_0007.Request    = "應用碼遺失.";
+ERR_0007.Diagnostic = "無法更新網格零件.
+名稱 : /P01
+型式 : /P02";
+ERR_0007.Advice     = "請檢查所有預先需要的應用程式均已安裝.";
+
+ERR_0008.Request    = "連接修剪面必須為平面形式.";
+ERR_0008.Diagnostic = "網格零件無效的幾何依附:
+/P01";
+ERR_0008.Advice     = "更新網格零件依附或壓制它.";
+
+ERR_0009.Request    = "Connected faces must be identical up to a rigid displacement.";
+ERR_0009.Diagnostic = "網格零件無效的幾何依附: /P01";
+ERR_0009.Advice     = "Possible causes :\n1.Shape of faces to connect are not the same\n2.No element found on at least one face\n3.Can't define rigid displacement with geometric information.";
+
+ERR_0010.Request    = "沒有預先所需軟體許可權.";
+ERR_0010.Diagnostic = "無法更新網格零件:
+/P01";
+ERR_0010.Advice     = "您必須擁有所需軟體許可權.";
+
+ERR_0011.Request    = "無法網格化虛擬化零件:
+/P01";
+ERR_0011.Diagnostic = "所選依附不屬於相同幾何.";
+ERR_0011.Advice     = "所有依附 (修剪面, 邊線) 應為相同幾何的部份.";
+
+ERR_0012.Request    = "無法找到焊接幾何.";
+ERR_0012.Diagnostic = "網格零件的無效焊接定義:
+/P01";
+ERR_0012.Advice     = "請檢查焊接定義:
+如在 Automotive BIW Fastening 工作檯中定義焊接定義
+  請檢查連接接觸區域是否已選";
+
+ERR_0013.Request    = " /P01 網格零件失敗";
+
+ERR_0014.Request    = "缺少應用碼.";
+ERR_0014.Diagnostic = "無法更新動作.
+名稱: /P01
+型式: /P02";
+ERR_0014.Advice     = "請檢查是否所有必須先安裝的軟體均已安裝.";
+
+Mesh1DERR_0001.Request    = "無法設定分配.";
+Mesh1DERR_0001.Diagnostic = "部份引數無效.";
+
+Mesh1DERR_0002.Request    = "無法網格化.";
+Mesh1DERR_0002.Diagnostic = "部份參數無效.";
+Mesh1DERR_0002.Advice     = "請修改網格化參數.";
+
+Mesh1DERR_0003.Request    = "/P01 網格化失敗.";
+Mesh1DERR_0003.Diagnostic = "部份曲線未網格化.";
+
+SmartSurfERR_0001.Request    = "無法建立網格.";
+SmartSurfERR_0001.Diagnostic = "網格方式無效定義.";
+
+SmartSurfERR_0002.Request    = "無法回復前一資料.";
+SmartSurfERR_0002.Diagnostic = "網格幾何已更改, 拓墣無法回復.";
+
+SmartSurfERR_0003.Request    = "網格 /P01 失敗.";
+SmartSurfERR_0003.Diagnostic = "部份定義區域沒有網格化.";
+
+SmartSurfERR_0004.Request    = "無法回復前一網格.";
+SmartSurfERR_0004.Diagnostic = "無法對映網格, 只可回復拓墣.";
+
+SmartSurfERR_0005.Request    = "無法回復前一拓墣.";
+SmartSurfERR_0005.Diagnostic = "無法回復前一拓墣.";
+
+SmartSurfERR_0006.Request    = "無法網格化零件";
+SmartSurfERR_0006.Advice     = "請嚐試不同的元素大小, 或
+如有偏移網格時, 減少偏移值.";
+
+SmartSurfERR_0100.Request    = "無法縫補按鈕孔.";
+SmartSurfERR_0200.Request    = "無法忽略修剪面.";
+SmartSurfERR_0300.Request    = "無法縫補裂痕.";
+SmartSurfERR_0400.Request    = "無法限制邊線.";
+SmartSurfERR_0500.Request    = "無法限制頂點.";
+SmartSurfERR_0600.Request    = "無法投影曲線.";
+SmartSurfERR_0700.Request    = "無法投影點.";
+SmartSurfERR_0800.Request    = "無法設定分配.";
+SmartSurfERR_0900.Request    = "無法鎖定.";
+SmartSurfERR_1000.Request    = "無法設定分配.";
+
+MappedERR_0001.Request    = "無法建立網格.";
+MappedERR_0001.Diagnostic = "無法發現四個角落.";
+MappedERR_0001.Advice     = "建立頂點來定義四個角落.";
+
+MappedERR_0002.Request    = "無法建立網格.";
+MappedERR_0002.Diagnostic = "部份強制節點已被忽略.";
+MappedERR_0002.Advice     = "請修改網格大小.";
+
+MappedERR_0003.Request    = "Impossible to mesh.";
+MappedERR_0003.Diagnostic = "Different number of nodes on opposite sides.";
+MappedERR_0003.Advice     = "Modify the mesh specication parameters.";
+
+PatBeadERR_0001.Request    = "無法建立網格.";
+PatBeadERR_0001.Diagnostic = "無法發現連接時必須的兩特性點.";
+PatBeadERR_0001.Advice     = "建立連接時需要的頂點.";
+
+BoltERR_0001.Request    = "無法建立網格.";
+BoltERR_0001.Diagnostic = "無法找到適當的節點數目.";
+BoltERR_0001.Advice     = "建立適當的節點數目.";
+
+ProjectERR_0001.Request    = "無法投影.";
+ProjectERR_0001.Diagnostic = "邊界不良.";
+ProjectERR_0002.Request    = "無法投影.";
+ProjectERR_0002.Diagnostic = "不支援封閉拓墣.";
+ProjectERR_0003.Request    = "無法投影.";
+ProjectERR_0003.Diagnostic = "不佳的邊界節點.";
+ProjectERR_0004.Request    = "無法投影.";
+ProjectERR_0004.Diagnostic = "邊界網格具有不同數目的節點.";
+ProjectERR_0005.Request    = "無法投影.";
+ProjectERR_0005.Diagnostic = "邊界數目不同";
+ProjectERR_0006.Request    = "無法投影.";
+ProjectERR_0006.Diagnostic = "無法找到邊界.";
+ProjectERR_0007.Request    = "無法投影.";
+ProjectERR_0007.Diagnostic = "產生無效網格.";
+
+ImportERR_0001.Request    = "無法開啟檔案.";
+ImportERR_0001.Diagnostic = "網格零件的網格 :/P01 開啟檔案 /P02 失敗";
+ImportERR_0001.Advice     = "請檢查檔案不是定位在外部模式或未刪除.";
+
+
+ImportERR_0002.Request    = "無效的線";
+ImportERR_0002.Diagnostic = "網格零件的網格 :/P01 在線: /P02 失敗";
+ImportERR_0002.Advice     = "請檢查格式";
+
+
+DomainMesherERR_0001.Request = "網格大小必須是正數.";
+
+DomainMesherERR_0002.Request    = "Invalid domain.";
+DomainMesherERR_0002.Diagnostic = "The domain is not valid for this mesh method.";
+DomainMesherERR_0002.Advice     = "Modify the domain.";
+
+DomainMesherERR_0003.Request    = "無法網格化.";
+DomainMesherERR_0003.Diagnostic = "不支援輸入節點.";
+DomainMesherERR_0003.Advice     = "移除強制節點.";
+
+DomainMesherERR_0004.Request    = "Invalid domain.";
+DomainMesherERR_0004.Diagnostic = "Less vertices ( /P01 ) than expected corners ( /P02 ).";
+DomainMesherERR_0004.Advice     = "Modify the domain.";
+
+
+// Erreur Connection Mesher (Fastened and Periodicity) : algo
+
+ConnAlgERR_0001.Request     = "無法網格化連接網格零件 : /P01";
+ConnAlgERR_0001.Diagnostic     = "Projection is impossible.";
+ConnAlgERR_0001.Advice         = "Possible causes:\n1. Connection is designed to link 2 close geometries/meshes.\n - projection tolerance = /P01 as result of internal computation based on meshes to connect.\n - Reduce distance between geometries/meshes to get a connection mesh\n2. Projection sources are projection targets\n3. No source to project.";
+
+ConnAlgERR_0002.Request        = "部份網格化.";
+ConnAlgERR_0002.Diagnostic     = "部份節點縮減, 網格未產生.";
+ConnAlgERR_0002.Advice         = "可能的原因為 :\n 1. 網格節點已被其它網格使用 \n 2. 依附的連接分析一致";
+
+ConnAlgERR_0003.Request        = "Impossible to mesh connection Mesh Part : /P01";
+ConnAlgERR_0003.Diagnostic     = "More than one node are associated to one geometric point.";
+ConnAlgERR_0003.Advice         = "Possible causes :\n  1. creation of a transformation mesh with one of the mesh to connect.\n  2. condensation of nodes";
+
+ConnAlgERR_0004.Request        = "Impossible to mesh connection Mesh Part : /P01";
+ConnAlgERR_0004.Diagnostic     = "Face to face connection : impossible to get any face on both sides to connect.";
+ConnAlgERR_0004.Advice         = "Modify Analysis Connection definition.";
+
+ConnAlgERR_0005.Request        = "Impossible to mesh connection Mesh Part : /P01";
+ConnAlgERR_0005.Diagnostic     = "Start of the connection property : node(s) retrieved does not enable to mesh.";
+ConnAlgERR_0005.Advice         = "Modify Analysis Connection definition.";
+
+ConnAlgERR_0006.Request        = "Impossible to mesh connection Mesh Part : /P01";
+ConnAlgERR_0006.Diagnostic     = "End of the connection property : node(s) retrieved does not enable to mesh.";
+ConnAlgERR_0006.Advice         = "Modify Analysis Connection definition.";
+
+ConnAlgERR_0007.Request        = "Impossible to mesh connection Mesh Part : /P01";
+ConnAlgERR_0007.Diagnostic     = "Invalid bolt configuration : can't define revolution axis.";
+ConnAlgERR_0007.Advice         = "Modify Analysis Connection definition.";
+
+ConnAlgERR_0008.Request        = "Impossible to mesh connection Mesh Part : /P01";
+ConnAlgERR_0008.Diagnostic     = "Invalid configuration.";
+ConnAlgERR_0008.Advice         = "Modify Analysis Connection definition.";
+
+ConnAlgERR_0009.Request        = "Impossible to mesh connection Mesh Part : /P01";
+ConnAlgERR_0009.Diagnostic     = "Invalid bolt configuration : revolution axis of sides to connect are not parallel.";
+ConnAlgERR_0009.Advice         = "Modify Analysis Connection definition.";
+// Erreur Weld : commande
+
+WeldCmdERR_0001.Request        = "未建立網格.";
+WeldCmdERR_0001.Diagnostic     = "All selected connections are already meshed.";
+
+// Erreur Weld : algo
+
+WeldAlgERR_0001.Request        = "無法投影焊點.";
+WeldAlgERR_0001.Diagnostic     = "最大間隔太小或焊點無法投影至所有依附上.";
+WeldAlgERR_0001.Advice         = "2 個可能的原因為: 增加最大間隔或修改幾何元素來投影.";
+
+WeldAlgERR_0002.Request        = "Invalid hemming case.";
+WeldAlgERR_0002.Diagnostic     = "The support can not be hemmed.";
+WeldAlgERR_0002.Advice         = "If you use a Body In White Fastening Joint : remove hemming option (if useless) or change the support.\nIf you use an Analysis Connection : change the support.";
+
+WeldAlgERR_0003.Request        = "無法網格化.";
+WeldAlgERR_0003.Diagnostic     = "需要投影至少在兩個依附上.";
+WeldAlgERR_0003.Advice         = "修改幾何元素.";
+
+WeldAlgERR_0004.Request        = "無法網格化.";
+WeldAlgERR_0004.Diagnostic     = "焊點元素所投影的元素無效.";
+WeldAlgERR_0004.Advice         = "修改被投影元素.";
+
+WeldAlgERR_0005.Request        = "部份網格化.";
+WeldAlgERR_0005.Diagnostic     = "不允許產生品質不佳網格 (negative jacobian) .";
+WeldAlgERR_0005.Advice         = "Possible causes:\n1. Supports are maybe crossing each other\n2. Faces to connect are the same";
+
+WeldAlgERR_0006.Request        = "Impossible to mesh connection Mesh Part : /P01.";
+WeldAlgERR_0006.Diagnostic     = "Invalid parameters.";
+WeldAlgERR_0006.Advice         = "Check all parameters are set to non null values.";
+
+WeldAlgERR_0007.Request        = "Impossible to mesh connection Mesh Part : /P01.";
+WeldAlgERR_0007.Diagnostic     = "One support to connect appears two times in the Analysis Connection.";
+WeldAlgERR_0007.Advice         = "Check supports and meshes.";
+// Erreur Spot Weld: algo
+
+SpotWeldAlgERR_0001.Request    = "無法網格化.";
+SpotWeldAlgERR_0001.Diagnostic = "Point Analysis Connection must be projected on each support to weld.";
+SpotWeldAlgERR_0001.Advice     = "Check that the Point Analysis Connection has been projected on each support.\nCheck that the projection(s) HAS(HAVE) SUCCEEDED.";
+
+SpotWeldAlgERR_0002.Request    = "無法網格化.";
+SpotWeldAlgERR_0002.Diagnostic = "The spot projection on all supports must be located on a quadrangle.";
+SpotWeldAlgERR_0002.Advice     = "Modify support meshes to get quadrangles above and below the spot.";
+
+SpotWeldAlgERR_0003.Request    = "無法網格化.";
+SpotWeldAlgERR_0003.Diagnostic = "Compatible meshes of Point Analysis Connection Within One Part is not supported.";
+SpotWeldAlgERR_0003.Advice     = "Use the non compatible mesh option.";
+
+SpotWeldAlgERR_0004.Request    = "無法網格化.";
+SpotWeldAlgERR_0004.Diagnostic = "Nodes of supports to weld are condensed.";
+SpotWeldAlgERR_0004.Advice     = "Modify support meshes.";
+
+// Erreur Seam Weld: algo
+
+SeamWeldAlgERR_0001.Request    = "無法網格化.";
+SeamWeldAlgERR_0001.Diagnostic = "Non manifold Line Analysis Connection are not supported.";
+SeamWeldAlgERR_0001.Advice     = "Modify edges of Line Analysis Connection.";
+
+SeamWeldAlgERR_0002.Request    = "無法網格化.";
+SeamWeldAlgERR_0002.Diagnostic = "Line Analysis Connection made of disjoined edges are not supported.";
+SeamWeldAlgERR_0002.Advice     = "Modify edges of Line Analysis Connection.";
+
+SeamWeldAlgERR_0003.Request    = "無法網格化.";
+SeamWeldAlgERR_0003.Diagnostic = "Welding only allowed between 2 supports or within one part.";
+SeamWeldAlgERR_0003.Advice     = "Suppress support(s) from the Joint Body.";
+
+SeamWeldAlgERR_0004.Request    = "無法網格化.";
+SeamWeldAlgERR_0004.Diagnostic = "Compatible Seam Weld Connection Mesh is supported only between 2 different supports.";
+SeamWeldAlgERR_0004.Advice     = "Modify the Joint Body.";
+
+SeamWeldAlgERR_0005.Request    = "無法網格化.";
+SeamWeldAlgERR_0005.Diagnostic = "Line Analysis Connection must be projected on each support to weld.";
+SeamWeldAlgERR_0005.Advice     = "Check that the Line Analysis Connection has been projected (add curve constraint in surface mesher) on each support.\nCheck that the projections HAVE SUCCEEDED.";
+
+SeamWeldAlgERR_0006.Request    = "無法網格化.";
+SeamWeldAlgERR_0006.Diagnostic = "The number of nodes describing the seam weld projection must be the same on each support to weld.";
+SeamWeldAlgERR_0006.Advice     = "Use Capture Mesh Edges option when adding curve constraint for the second support.\nCheck that the curve projection AND the nodes capture HAVE SUCCEEDED.";
+
+SeamWeldAlgERR_0007.Request    = "無法網格化.";
+SeamWeldAlgERR_0007.Diagnostic = "Nodes of supports to weld are condensed.";
+SeamWeldAlgERR_0007.Advice     = "Modify support meshes.";
+
+SeamWeldAlgERR_0008.Request    = "無法網格化.";
+SeamWeldAlgERR_0008.Diagnostic = "Curves extremities must face each other.";
+SeamWeldAlgERR_0008.Advice     = "Modify edges of Line Analysis Connection.";
+
+SeamWeldAlgERR_0009.Request    = "Impossible to map master (longest) seam on slave seam.";
+SeamWeldAlgERR_0009.Diagnostic = "Slave seam direction is different from master seam direction.";
+SeamWeldAlgERR_0009.Advice     = "Modify edges of Line Analysis Connection.";
+
+SeamWeldAlgERR_0010.Request    = "無法網格化.";
+SeamWeldAlgERR_0010.Diagnostic = "Compatible meshes of 2 Guides Line Analysis Connection are not supported.";
+SeamWeldAlgERR_0010.Advice     = "Use the non compatible mesh option.";
+
+SeamWeldAlgERR_0011.Request    = "Line Analysis Connection discretisation is too coarse.";
+SeamWeldAlgERR_0011.Diagnostic = "Closed Line Analysis Connection must be discretised by at least 3 edges.";
+SeamWeldAlgERR_0011.Advice     = "Decrease mesh step.";
+
+SeamWeldAlgERR_0012.Request    = "無法網格化.";
+SeamWeldAlgERR_0012.Diagnostic = "2 Guides Line Analysis Connection made of closed edges are not supported.";
+SeamWeldAlgERR_0012.Advice     = "Modify the edges of 2 Guides Line Analysis Connection.";
+
+// Erreur Surf Weld: algo
+
+
+SurfWeldAlgERR_0001.Request    = "Impossible to mesh connection Mesh Part : /P01.";
+SurfWeldAlgERR_0001.Diagnostic = "The support of the surface is invalid.";
+SurfWeldAlgERR_0001.Advice     = "Modify the surface pointed by the Surface Analysis Connection.";
+
+SurfWeldAlgERR_0002.Request    = "Impossible to mesh connection Mesh Part : /P01.";
+SurfWeldAlgERR_0002.Diagnostic = "Impossible to mesh the surface.";
+SurfWeldAlgERR_0002.Advice     = "Modify the surface pointed by the Surface Analysis Connection.";
+
+// Erreur Point Point : algo
+
+PointPointAlgERR_0001.Request    = "Impossible to mesh.";
+PointPointAlgERR_0001.Diagnostic = "Problem on component /P01 of the connection : no node associated to the point.";
+PointPointAlgERR_0001.Advice     = "Associate the point to one node (use Move Node or Point Constraint or Half Point).";
+
+PointPointAlgERR_0002.Request    = "Impossible to mesh.";
+PointPointAlgERR_0002.Diagnostic = "Problem on component /P01 of the connection : more than one node are associated to the point.";
+PointPointAlgERR_0002.Advice     = "Put the meshpart that contains the node you want to connect in the Nodes To Nodes Connection meshparts filter.";
+
+PointPointAlgERR_0003.Request    = "Impossible to mesh connection Mesh Part : /P01.";
+PointPointAlgERR_0003.Diagnostic = "Not the same number of points.";
+PointPointAlgERR_0003.Advice     = "Modify the Analysis Connection definition.";
+
+PointPointAlgERR_0004.Request    = "Impossible to mesh connection Mesh Part : /P01.";
+PointPointAlgERR_0004.Diagnostic = "No point.";
+PointPointAlgERR_0004.Advice     = "Modify the Analysis Connection definition.";
+
+PointPointAlgERR_0005.Request    = "Impossible to mesh.";
+PointPointAlgERR_0005.Diagnostic = "Several nodes in the tolerance.";
+PointPointAlgERR_0005.Advice     = "Possible causes:\n 1. tolerance is too big\n 2. one node from one side is equidistant from two nodes of the other side";
+
+PointPointAlgERR_0006.Request    = "Impossible to mesh.";
+PointPointAlgERR_0006.Diagnostic = "No node in the tolerance.";
+PointPointAlgERR_0006.Advice     = "Increase the tolerance.";
+
+PointPointAlgERR_0007.Request    = "Impossible to mesh.";
+PointPointAlgERR_0007.Diagnostic = "Points are associated to the same node. Can't create 1D element with only one node.";
+PointPointAlgERR_0007.Advice     = "Modify the Analysis Connection definition.";
+
+// Erreur Half Point : algo
+
+HalfPointAlgERR_0001.Request    = "Impossible to mesh connection Mesh Part : /P01.";
+HalfPointAlgERR_0001.Diagnostic = "No point.";
+HalfPointAlgERR_0001.Advice     = "Modify the Analysis Connection definition.";
+
+HalfPointAlgERR_0002.Request    = "Impossible to mesh.";
+HalfPointAlgERR_0002.Diagnostic = "Several nodes OR several points in the tolerance.";
+HalfPointAlgERR_0002.Advice     = "Possible causes:\n 1. tolerance is too big (one point associated to several nodes)\n 2. some points are too close from each other (one node associated to several points)";
+
+HalfPointAlgERR_0003.Request    = "Impossible to mesh.";
+HalfPointAlgERR_0003.Diagnostic = "No node in the tolerance.";
+HalfPointAlgERR_0003.Advice     = "Increase the tolerance.";
+
+HalfPointAlgERR_0004.Request    = "Impossible to mesh.";
+HalfPointAlgERR_0004.Diagnostic = "Can't create 1D element with twice the same node.";
+HalfPointAlgERR_0004.Advice     = "Check Analysis Connection and/or associativity links and/or meshes to connect.";
+
+//
+// Erreur MoveNodeOperator
+//
+MoveNodeOperatorERR_0001.Request    = "Impossible to move the node";
+MoveNodeOperatorERR_0001.Diagnostic = "No node in the tolerance.";
+
+MoveNodeOperatorERR_0002.Request    = "Impossible to move the node";
+MoveNodeOperatorERR_0002.Diagnostic = "More than one node in tolerance.";
+//
+// Erreurs de la Topology
+//
+TopoERR_0001.Request = "定位失敗"; 
+TopoERR_0002.Request = "為上一個操作子強制 E_FAIL :";
+TopoERR_0002.Diagnostic = "/P01";
+TopoERR_0003.Request = "拓墣動作未產生錯誤訊息 :";
+TopoERR_0003.Diagnostic = "/P01"; 
+TopoERR_0020.Request = "無法關閉頂點動作"; 
+TopoERR_0021.Request = "建立外形時錯誤 : 本體中含有無效自由邊線外形"; 
+TopoERR_0022.Request = "無法關閉邊線"; 
+TopoERR_0023.Request = "無法啟動邊線"; 
+TopoERR_0024.Request = "無法關閉修剪面"; 
+TopoERR_0025.Request = "無法啟動修剪面"; 
+
+TopoERR_0030.Request = "無法建立所有外部曲線";
+TopoERR_0031.Request = "無法刪除所有外部曲線";
+
+TopoERR_0040.Request = "無法明確分配";
+TopoERR_0041.Request = "無法找到分配來刪除";
+TopoERR_0042.Request = "分配中的邊線拓樸無效";
+//
+TopoERR_0050.Request = "環境無效或未初始化";
+TopoERR_0100.Request = "無效幾何依附";
+TopoERR_0101.Request = "幾何物件未在目前本體";
+TopoERR_0102.Request = "計算拓樸後無效呼叫";
+TopoERR_0103.Request = "計算拓樸前無效呼叫";
+
+TopoERR_0104.Request = "無法由 CATEdge 找到 TopEdge";
+TopoERR_0105.Request = "無法由 CATVertex 找到 TopVertex";
+
+TopoERR_0106.Request = "無效拓樸物件";
+TopoERR_0107.Request = "無效拓樸狀態";
+
+TopoERR_0108.Request = "無法拘束 CATVertex";
+TopoERR_0109.Request = "無法拘束 CATEdge";
+TopoERR_0110.Request = "無法取消拘束 CATVertex";
+TopoERR_0111.Request = "無法取消拘束 CATEdge";
+
+TopoERR_0112.Request = "無法啟動 TopEdge";
+TopoERR_0113.Request = "無法啟動 TopVertex";
+TopoERR_0114.Request = "無法關閉 TopEdge";
+TopoERR_0115.Request = "無法關閉 TopVertex";
+
+TopoERR_0116.Request = "無效迴圈數目"; 
+TopoERR_0117.Request = "定義域中沒有作動迴圈"; 
+
+TopoERR_0120.Request = "無效檔案尺寸"; 
+TopoERR_0121.Request = "無效檔案"; 
+
+TopoERR_0122.Request = "無效的切割精度"; 
+TopoERR_0123.Request = "無效的邊線長度"; 
+TopoERR_0124.Request = "無法切割邊線"; 
+TopoERR_0125.Request = "無法在定義域中建立邊線"; 
+TopoERR_0126.Request = "無法找到範圍"; 
+TopoERR_0127.Request = "無法找到產品"; 
+TopoERR_0128.Request = "頂點必須不一樣"; 
+
+TopoERR_0130.Request = "所選修剪面無效"; 
+
+TopoERR_0129.Request = "輸入頂點未找到標籤";
+TopoERR_0131.Request = "輸入區域未找到標籤";
+TopoERR_0132.Request = "輸入標籤為負的";
+TopoERR_0133.Request = "輸入標籤未找到頂點";
+TopoERR_0134.Request = "輸入標籤未找到邊線";
+TopoERR_0135.Request = "輸入標籤未找到定義域";
+TopoERR_0136.Request = "輸入邊線未找到標籤";
+TopoERR_0137.Request = "Impossible to execute Orthogonal projection";
+
+TopoERR_0140.Request = "Spec already exist for this faces selection"; 
+
+TopoERR_0150.Request = "Mesh size should be positive"; 
+TopoERR_0151.Request = "Min size should be positive"; 
+TopoERR_0152.Request = "Constraint sag should be positive"; 
+
+//
+// basic mesher error
+//
+TopoBasicERR_0001.Request = "Failed to activate/inactivate hole(s)";
+TopoBasicERR_0002.Request = "Impossible to activate the hole";
+TopoBasicERR_0003.Request = "Impossible to inactivate the hole";
+
+TopoBasicERR_0004.Request = "Failed to activate/inactivate edge(s)";
+TopoBasicERR_0005.Request = "Impossible to activate edge";
+TopoBasicERR_0006.Request = "Impossible to inactivate edge";
+
+TopoBasicERR_0007.Request = "Failed to activate/inactivate vertex(s)";
+TopoBasicERR_0008.Request = "Impossible to activate vertex";
+TopoBasicERR_0009.Request = "Impossible to inactivate vertex";
+
+TopoBasicERR_0010.Request = "Failed to project/unproject external curve(s)";
+TopoBasicERR_0011.Request = "Impossible to project curve";
+TopoBasicERR_0012.Request = "Impossible to unproject curve";
+
+TopoBasicERR_0013.Request = "Failed to project/unproject external point(s)";
+TopoBasicERR_0014.Request = "Impossible to project point";
+TopoBasicERR_0015.Request = "Impossible to unproject point";
+
+TopoBasicERR_0016.Request = "This specification may not be recovered after geometry modifications";
+TopoBasicERR_0016.Diagnostic = "One of the selected supports is a BRep internal geometry";
+
+TopoBasicERR_0017.Request = "This specification may not be recovered after geometry modifications";
+TopoBasicERR_0017.Diagnostic = "the BRep of one of the selected supports is pointing several geometries";
+
+//
+// Erreurs de selection de mesh domain
+//
+
+MeshFilterERR_0001.Request    = "無效選擇.";
+MeshFilterERR_0001.Diagnostic = "所選網格定義不是曲面或是空的.";
+MeshFilterERR_0002.Request    = "無效選擇.";
+MeshFilterERR_0002.Diagnostic = "所選網格定義未連接.";
+
+TransfoERR_0001.Request    = "無法網格化已轉移網格零件:
+/P01";
+TransfoERR_0001.Diagnostic = "由於精度太高可能導致不可預料結果.";
+TransfoERR_0001.Advice     = "請減小精度.
+必須小於最小元素邊線 (拋物線元素的一半邊線).";
+
+
+ExtrudeERR_0001.Request    = "Impossible to mesh extrusion along spine Mesh Part:
+/P01";
+ExtrudeERR_0001.Diagnostic = "Length of extrusion exceeds spine curve length, which produces degenerated elements.";
+ExtrudeERR_0001.Advice     = "Reduce length of extrusion.";
+
+//
+// Erreurs de propagation de distribution
+//
+
+MeshAroundHoleERR_0001.Request    = "Impossible to mesh around hole.";
+MeshAroundHoleERR_0001.Diagnostic = "Mesh around hole geometric support \n intersects a constrained edge.";
+
+MeshAroundHoleERR_0002.Request    = "Impossible to mesh around hole.";
+MeshAroundHoleERR_0002.Diagnostic = "Mesh around hole is not allowed with: \n /P01.";
+
+MeshAroundHoleERR_0003.Request    = "Impossible to mesh domain specification.";
+MeshAroundHoleERR_0003.Diagnostic = "Mesh domain specification is not allowed with: \n /P01.";
+//
+// Erreurs de propagation de distribution
+//
+
+Mapping1dERR_0001.Request    = "Invalid data for the propagation.";
+Mapping1dERR_0001.Advice     = "Modify the data of the propagation.";
+Mapping1dERR_0002.Request    = "Failed to compute the propagation.";
+Mapping1dERR_0002.Advice     = "Modify the data of the propagation.";
+
+Mapping1dERR_0010.Request    = "Invalid sources for the propagation.";
+Mapping1dERR_0010.Advice     = "Modify the sources of the propagation.";
+
+Mapping1dERR_0011.Request    = "Invalid supports for the propagation.";
+Mapping1dERR_0011.Advice     = "Modify the supports of the propagation.";
+
+//
+// Erreurs de specs studio
+//
+
+StudioSpecERR_0001.Request    = "Mesh specification is not valid.";
+StudioSpecERR_0001.Diagnostic = "Possible causes :\n 1. - invalid parameters \n 2. - invalid geometric support(s)";
+StudioSpecERR_0001.Advice     = "Modify the parameters or the geometric support(s).";
+
+//
+// Erreur sur le sweep
+//
+
+Sweep3DERR_0001.Request    = "Captured Bottom mesh failed.";
+Sweep3DERR_0001.Diagnostic = "No mesh is captured on geometry: /P01.";
+Sweep3DERR_0001.Advice     = "Check the capture meshpart filter \n and the capture tolerance.";
+
+Sweep3DERR_0002.Request    = "Captured Bottom mesh failed.";
+Sweep3DERR_0002.Diagnostic = "Partial mesh is captured on geometry: /P01.";
+Sweep3DERR_0002.Advice     = "Check the capture meshpart filter \n and the capture tolerance.";
+
+Sweep3DERR_0003.Request    = "Captured Bottom mesh failed.";
+Sweep3DERR_0003.Diagnostic = "Too many mesh is captured on geometry: /P01.";
+Sweep3DERR_0003.Advice     = "Check the capture meshpart filter \n and the capture tolerance.";
+
+// Nls du GeomError 
+
+Sweep3DERR_0031.Request    = "Captured Bottom mesh failed.";
+Sweep3DERR_0031.Diagnostic = "No mesh is captured on geometry: /P31.";
+Sweep3DERR_0031.Advice     = "Check the capture meshpart filter \n and the capture tolerance.";
+
+Sweep3DERR_0032.Request    = "Captured Bottom mesh failed.";
+Sweep3DERR_0032.Diagnostic = "Partial mesh is captured on geometry: /P31.";
+Sweep3DERR_0032.Advice     = "Check the capture meshpart filter \n and the capture tolerance.";
+
+Sweep3DERR_0033.Request    = "Captured Bottom mesh failed.";
+Sweep3DERR_0033.Diagnostic = "Too many mesh is captured on geometry: /P31.";
+Sweep3DERR_0033.Advice     = "Check the capture meshpart filter \n and the capture tolerance.";
+
+Sweep3DERR_0004.Request    = "No guides computed.";
+Sweep3DERR_0004.Diagnostic = "The guides computation failed.";
+Sweep3DERR_0004.Advice     = "Modify the Top and/or Bottom faces.";
+
+Sweep3DERR_0005.Request    = "No guides computed.";
+Sweep3DERR_0005.Diagnostic = "The guides computation failed.";
+Sweep3DERR_0005.Advice     = "Modify the angle.";
+
+Sweep3D_vertex  = "vertex";
+Sweep3D_edge    = "edge";
+Sweep3D_face    = "face";
+
+// Erreur ds la Capture
+
+CaptureERR_0001.Request    = "Mesh Capture failed.";
+CaptureERR_0001.Diagnostic = "The meshpart: /P01 is not up to date.";
+CaptureERR_0001.Advice     = "Update the meshpart or remove it from the capture meshpart filter.";
+
+// Erreur dans le studio
+
+StudioERR_0001.Request    = "Invalid mesh configuration detected at location (/P01 /P02 /P03 ).";
+StudioERR_0001.Diagnostic = "Different mid-nodes are sharing the same edge.";
+
+StudioERR_0002.Request    = "Invalid mesh configuration detected.";
+StudioERR_0002.Diagnostic = "Expected mid-nodes are missing.";
+
+StudioERR_0003.Request    = "Invalid mesh configuration detected at location (/P01 /P02 /P03 ).";
+StudioERR_0003.Diagnostic = "The node is used both as main node and intermediate node.";
+
+StudioERR_0004.Request    = "Invalid mesh configuration detected at location (/P01 /P02 /P03 ).";
+StudioERR_0004.Diagnostic = "Mid-node use by differents elements which don't share mesh edge on this node.";
+StudioERR_0004.Advice     = "Possible causes :\n 1. Bad mesh capture on this area\n 2. Mesh is imported with this configuration";
+

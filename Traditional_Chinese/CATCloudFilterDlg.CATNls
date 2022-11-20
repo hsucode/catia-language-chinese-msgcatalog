@@ -1,0 +1,48 @@
+//=============================================================================================
+// COPYRIGHT DASSAULT SYSTEMES PROVENCE 1998
+//==============================================================================================
+// 18-Nov-2004 - JLH - Corrections.
+// 20-Mar-2003 - JLH - Ajout de la contrainte max. distance dans le filtrage adaptatif.
+// ??-Mar-2000 - FPP - Modification
+// ??-Dec-1999 - FPP - Modification
+// ??-Oct-1998 - FPP - Creation
+//==============================================================================================
+
+Title="過濾";
+
+ResetBtn.Title    = "重設";
+ResetBtn.LongHelp = "不過濾所有點.";
+
+FilterTypeFrm.Title = "過濾類型";
+FilterTypeFrm.LongHelp="定義過濾類型.";
+
+FilterTypeFrm.SphericalBtn.Title = "齊次";
+FilterTypeFrm.SphericalBtn.LongHelp="在所有元件上過濾是相同的";
+FilterTypeFrm.AdaptativeBtn.Title = "適應";
+FilterTypeFrm.AdaptativeBtn.LongHelp="在元件的平面上過濾是較強的";
+FilterTypeFrm.LengthBtn.Title        = "最大距離" ;
+FilterTypeFrm.LengthBtn.LongHelp     = "保持兩點間的最大距離" ;
+
+InfoFrm.Title = "統計";
+InfoFrm.LongHelp="給與保留點數目
+和他們的從初始狀態定義的百分比.";
+
+MWarningText="沒有足夠的記憶體來完成這個操作.
+請為過濾球體選擇一個較大的半徑.";
+MWarningTitle="不足夠的記憶體.";
+
+RWarningText="如果你選擇重設按鈕或零作為半徑值,
+你將不會過濾每一個點,甚至於那些在前一個
+ 過濾程序中過濾的.
+你想要取消每個過濾 ?";
+RWarningTitle="取消過濾";
+
+CWarningText="你已經選擇實際上刪除這些過濾的點,
+ 這個選擇可最佳化記憶體, 但是, 不能夠取消. 
+你想要保留這個選擇 ?";
+CWarningTitle="實際點刪除";
+
+RemoveFrm.Title="輸出";
+RemoveFrm.LongHelp="這些過濾的點將從磁碟中實際上移除
+ (僅有當退出過濾命令時)";
+RemoveFrm.RemoveBtn.Title="實際刪除";

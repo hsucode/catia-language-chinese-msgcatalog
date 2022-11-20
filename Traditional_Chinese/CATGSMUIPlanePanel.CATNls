@@ -1,0 +1,129 @@
+//---------------------------------------------------------------
+// Resource file for CATGSMUIPlanePanel class
+// US
+//---------------------------------------------------------------
+
+Title="平面定義";
+
+PlaneTypeEq="方程式";
+PlaneType3Pts="經過三點";
+PlaneType2Pts="經過二線";
+PlaneType1Pt1Ln="經過一點和一線";
+PlaneType1Crv="經過平面曲線";
+PlaneTypeTgt="與曲面相切";
+PlaneTypeNrm="垂直曲線";
+PlaneTypeOff="偏移平面";
+PlaneTypeOffPt="通過點平行";
+PlaneTypeAng="角度或垂直平面";
+PlaneTypeMean="點平均距離";
+PlaneTypeExpl="明確的";
+
+frame1.LabList.Title="平面形式: ";
+frame1.CmbList.LongHelp="列出建立平面可用的方式.";
+
+
+EqFrame.LabelEqTitle.Title=" Ax+By+Cz = D";
+EqFrame.FraGeo.LabelEqA.Title="A: ";
+EqFrame.FraGeo.LabelEqB.Title="B: ";
+EqFrame.FraGeo.LabelEqC.Title="C: ";
+EqFrame.FraGeo.LabelEqD.Title="D: ";
+EqFrame.FraGeo.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.Title="A";
+EqFrame.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.Title="B";
+EqFrame.FraGeo.FraLengTang3.EnglobingFrame.IntermediateFrame.Spinner.Title="C";
+EqFrame.FraGeo.FraLengTang4.EnglobingFrame.IntermediateFrame.Spinner.Title="D";
+EqFrame.FraGeo.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可用內容視窗指定公式";
+EqFrame.FraGeo.FraLengTang2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可用內容視窗指定公式";
+EqFrame.FraGeo.FraLengTang3.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可用內容視窗指定公式";
+EqFrame.FraGeo.FraLengTang4.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可用內容視窗指定公式";
+EqFrame.FraGeo.FraElem1.LongHelp="指定平面將會通過的點. ";
+EqFrame.FraGeo.LabelEqPt.Title="點: ";
+// added code 3dplm for Axis System
+EqFrame.FraGeo.LabelAxis.Title="軸系: ";
+EqFrame.FraGeo.FraAxis.LongHelp="指定座標值逆轉的局部參考座標系. \n 如未指定將以絕對座標軸為預設軸系.";
+//EqFrame.ChkAxis.Title="於絕對軸系內協調";
+//EqFrame.ChkAxis.LongHelp="允許在絕對軸系內檢視及修改座標.";
+EqFrame.PushCompass.Title="垂直羅盤";
+EqFrame.PushCompass.LongHelp="定位在與羅盤方向垂直平面.";
+EqFrame.PushScreen.Title="平行螢幕";
+EqFrame.PushScreen.LongHelp="定位在與目前螢幕視圖平行.";
+
+
+P3PtsFrame.Label3PtsPt1.Title="點 1: ";
+P3PtsFrame.Label3PtsPt2.Title="點 2: ";
+P3PtsFrame.Label3PtsPt3.Title="點 3: ";
+P3PtsFrame.FraElem1.LongHelp="指出平面經過的第一點.";
+P3PtsFrame.FraElem2.LongHelp="指出平面經過的第二點.";
+P3PtsFrame.FraElem3.LongHelp="指出平面經過的第三點.";
+
+
+P2LnFrame.Label2LnLn1.Title="線1: ";
+P2LnFrame.Label2LnLn2.Title="線2: ";
+P2LnFrame.FraElem1.LongHelp="指出平面經過的第一條線.";
+P2LnFrame.FraElem2.LongHelp="指出平面經過的第二條線,如果線不在同平面,則第二線會被用來當做平面的第二方向.";
+P2LnFrame.ChkCop.Title="不允許非平面的線";
+P2LnFrame.ChkCop.LongHelp="指定線必須在同平面";
+
+PtLnFrame.LabelPtLnPt.Title="點: ";
+PtLnFrame.LabelPtLnLn.Title="線: ";
+PtLnFrame.FraElem1.LongHelp="指出平面經過的點.";
+PtLnFrame.FraElem2.LongHelp="指出平面經過的線.";
+
+
+CrvFrame.LabelCrvCurve.Title="曲線: ";
+CrvFrame.FraElem1.LongHelp="指出平面經過的曲線.";
+
+TgtFrame.LabelTgtSurf.Title="曲面: ";
+TgtFrame.LabelTgtPoint.Title="點: ";
+TgtFrame.FraElem1.LongHelp="指出定義平面的參考曲面切線.";
+TgtFrame.FraElem2.LongHelp="指出位於參考曲面上的點,且其切線可用來定義平面.";
+
+NrmFrame.LabelNrmCurve.Title="曲線: ";
+NrmFrame.LabelNrmPoint.Title="點: ";
+NrmFrame.FraElem1.LongHelp="指出定義平面的垂直參考曲線.";
+NrmFrame.FraElem2.LongHelp="指出位於參考曲線上的點,且其垂直可用來定義平面.";
+
+OffFrame.FraGeo.LabelOffRef.Title="參考: ";
+OffFrame.FraGeo.LabelOffValue.Title="偏移: ";
+OffFrame.FraGeo.FraElem1.LongHelp="指出將被偏移的參考面.";
+OffFrame.FraGeo.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可用內容視窗指定公式";
+OffFrame.FraGeo.FraLengTang.EnglobingFrame.IntermediateFrame.Spinner.Title="偏移";
+OffFrame.PushRev.Title="逆轉方向";
+OffFrame.PushRev.LongHelp="顯示參考平面另一側的偏移面.";
+
+OffPtFrame.LabelOffPtRef.Title="參考: ";
+OffPtFrame.LabelOffPt.Title="點: ";
+OffPtFrame.FraElem1.LongHelp="指出定義面會平行的參考面.";
+OffPtFrame.FraElem2.LongHelp="指出平行面會經過的點.";
+
+
+AngFrame.FraGeo.LabelAngRef.Title="參考: ";
+AngFrame.FraGeo.LabelAngDir.Title="旋轉軸: ";
+AngFrame.FraGeo.LabelAngValue.Title="角度: ";
+AngFrame.FraGeo.FraElem1.LongHelp="指出將被旋轉的參考面.";
+AngFrame.FraGeo.FraElem2.LongHelp="指出旋轉參考面的軸線.";
+AngFrame.FraGeo.FraAngTang.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="您也可用內容視窗指定公式";
+AngFrame.FraGeo.FraAngTang.EnglobingFrame.IntermediateFrame.Spinner.Title="角度";
+AngFrame.PushNrm.Title="與平面垂直";
+AngFrame.PushNrm.LongHelp="允許您指定90度來定義新平面.";
+AngFrame.AxisProject.Title="投影旋轉軸至參考平面上";
+
+MeanFrame.LabelMeanPoints.Title="點: ";
+//MeanFrame.FraList.LongHelp="列出定義平均面的點.";
+
+ExpFrame.FrameExpNrm.Title="垂直: ";
+ExpFrame.FrameExpNrm.LabelExpNrmX.Title="X: ";
+ExpFrame.FrameExpNrm.LabelExpNrmY.Title="Y: ";
+ExpFrame.FrameExpNrm.LabelExpNrmZ.Title="Z: ";
+ExpFrame.FrameExpNrm.UxValue.LongHelp="指出垂直平面的 X分量.";
+ExpFrame.FrameExpNrm.UyValue.LongHelp="指出垂直平面的 Y分量.";
+ExpFrame.FrameExpNrm.UzValue.LongHelp="指出垂直平面的 Z分量.";
+
+PlaneManipulator="移動";
+// start code 3dplm
+//Combo lock help
+PlaneLockShort="按一下啟動自動型式變更.";
+PlaneUnlockShort="按一下關閉自動型式變更.";
+PlaneLockLong="按一下啟動自動型式變更.";
+PlaneUnlockLong="按一下關閉自動型式變更.";
+// end code 3dplm
+

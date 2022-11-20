@@ -1,0 +1,86 @@
+//=============================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1998 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATDfuDlgFractionalEditors.CATNls
+// LOCATION    :    DraftingUI/CNext/resources/msgcatalog
+// AUTHOR      :    OGK
+// DATE        :    15.11.2000
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Scale Editor
+//                  used From V5R5 SP3
+//------------------------------------------------------------------------------
+// COMMENTS    :	ENGLISH VERSION
+//------------------------------------------------------------------------------
+//MODIFICATIONS     user  date      purpose
+//   HISTORY        ----  ----      -------
+//------------------------------------------------------------------------------
+
+
+
+// Messages utilises par le label de titre et le champ numerateur :
+// ----------------------------------------------------------------
+
+scaleLabel.Title="縮放:";
+scaleLabel.ShortHelp="縮放編輯器";
+scaleLabel.Help="以分數顯示縮放值";
+scaleLabel.LongHelp="縮放編輯器
+以分數顯示縮放值;
+數值必須輸入到可編輯的區域裡; 然後它將被轉換成分數值
+在這個區域確認後;
+然後將在這個相同的區域顯示結果.
+輸入值的句法也許是以下的其中一個 :
+\"x\", or \"x.y\" or \"x/y\" or \"x:y\" where \"x\" and \"y\" are integers.";
+
+
+// Messages utilises par l'editeur du le champ numerateur :
+// --------------------------------------------------------
+scaleLeftEdt.ShortHelp="分數顯示";
+scaleLeftEdt.Help="以分數顯示縮放值";
+scaleLeftEdt.LongHelp="分數顯示
+縮放值必須輸入到這個區域裡. 然後它將被轉換成分數值
+在這個區域確認後;
+然後將在這個相同的區域顯示結果.
+輸入值的句法也許是以下的其中一個:
+\"x\", or \"x.y\" or \"x/y\" or \"x:y\" where \"x\" and \"y\" are integers.";
+
+
+
+// Messages utilises par l'editeur read-only decimal :
+// ---------------------------------------------------
+scaleAsDecimalEdt.ShortHelp="小數值";
+scaleAsDecimalEdt.Help="顯示相對於分數的小數值";
+scaleAsDecimalEdt.LongHelp="小數值
+顯示相對於分數的小數值.
+這個區域是唯讀的.";
+	
+// Messages utilises par le label separateur :
+// -------------------------------------------
+scaleSepLabel.Title=" : ";
+
+
+// Messages utilises par le label de droite :
+// ------------------------------------------
+
+//rightLabel.Title="小數顯示:";
+rightLabel.Title=" = ";
+rightLabelShortHelp="小數顯示";
+rightLabel.Help="顯示相對於分數的縮放小數值";
+rightLabel.LongHelp="小數顯示
+顯示相對於分數的縮放小數值.
+這個區域是唯讀的.";
+
+
+// Messages pour les boites de dialogue
+// -------------------------------------
+InvalidInputTitle="無效輸入";
+InvalidScaleText="所輸入比例超過範圍 [10e-5 .. 10e+4].\n 因此, 此數值無法使用.";
+InvalidFormatText="使用語法錯誤.
+使用方式如下 :
+\"x\", 或 \"x.y\" 或 \"x/y\" 或 \"x:y\" 其中 \"x\" and \"y\" 為整數.
+因此, 仍使用前一數值.";
+
+
+
+
+

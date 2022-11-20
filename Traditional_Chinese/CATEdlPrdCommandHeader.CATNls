@@ -1,0 +1,176 @@
+// --- Object creation toolbar
+
+CATEdlPrdCommandHeader.EdlDefineWire.Title            = "Define Wire";
+CATEdlPrdCommandHeader.EdlDefineWire.Help             = "Defines a reference of wire";
+CATEdlPrdCommandHeader.EdlDefineWire.LongHelp         = "Defines wire\nCreates a reference of wire.\nNote: There is only one reference of wire in a document.";
+CATEdlPrdCommandHeader.EdlDefineWire.ShortHelp        = "Define Wire";
+
+CATEdlPrdCommandHeader.EdlDefineWireGroup.Title            = "Define Wire Group";
+CATEdlPrdCommandHeader.EdlDefineWireGroup.Help             = "Defines a reference of wire Group";
+CATEdlPrdCommandHeader.EdlDefineWireGroup.LongHelp         = "Defines wire group\nCreates a reference of wire group.\nNote: There is only one reference of wire group in a document.";
+CATEdlPrdCommandHeader.EdlDefineWireGroup.ShortHelp        = "Define Wire Group";
+
+CATEdlPrdCommandHeader.EdlCreateConnexion.Title       = "Connect Electrical Devices";
+CATEdlPrdCommandHeader.EdlCreateConnexion.Help        = "Connects two electrical devices";
+CATEdlPrdCommandHeader.EdlCreateConnexion.LongHelp    = "Connects electrical devices\nCreates an electrical connection (and associated mechanical constraints, if possible) between two electrical devices.";
+CATEdlPrdCommandHeader.EdlCreateConnexion.ShortHelp   = "Connect Electrical Devices";
+
+CATEdlPrdCommandHeader.EdlDisconnect.Title			      = "Disconnect Electrical Devices";
+CATEdlPrdCommandHeader.EdlDisconnect.Help			        = "Disconnects two electrical devices";
+CATEdlPrdCommandHeader.EdlDisconnect.LongHelp		      = "Disconnects electrical devices\nRemoves the electrical connection linking the two selected devices (and associated mechanical constraints, if any).";
+CATEdlPrdCommandHeader.EdlDisconnect.ShortHelp        = "Disconnect Electrical Devices";
+
+
+CATEdlPrdCommandHeader.EdlDefineConnector.Title       = "Define Connector";
+CATEdlPrdCommandHeader.EdlDefineConnector.Help        = "Defines a connector i.e. its type and the number of terminations";
+CATEdlPrdCommandHeader.EdlDefineConnector.LongHelp    = "Defines connector\nAdds an electrical behavior of connector type to the selected part or product.";
+CATEdlPrdCommandHeader.EdlDefineConnector.ShortHelp   = "Define Connector";
+
+
+CATEdlPrdCommandHeader.EdlDefineTermination.Title       = "Define Termination";
+CATEdlPrdCommandHeader.EdlDefineTermination.Help        = "Defines a termination";
+CATEdlPrdCommandHeader.EdlDefineTermination.LongHelp    = "Defines termination\nAdds or edits a termination i.e. defines:\n     - its id number\n     - optionally its graphical representation.";
+CATEdlPrdCommandHeader.EdlDefineTermination.ShortHelp   = "Define Termination";
+
+CATEdlPrdCommandHeader.EdlDefineCavity.Title                    = "Define Cavity";
+CATEdlPrdCommandHeader.EdlDefineCavity.Help                     = "Defines a cavity";
+CATEdlPrdCommandHeader.EdlDefineCavity.LongHelp                 = "Defines cavity\nAdds or edits a cavity i.e. it defines:\n     - its id number\n     - its graphical representation\n     - optionally its placement constraints (contact, coincidence, orientation)";
+CATEdlPrdCommandHeader.EdlDefineCavity.ShortHelp                = "Define Cavity";
+
+CATEdlPrdCommandHeader.EdlDefineConnectorCnxPt.Title            = "Define Connector Connection Point";
+CATEdlPrdCommandHeader.EdlDefineConnectorCnxPt.Help             = "Defines a connector connection point";
+CATEdlPrdCommandHeader.EdlDefineConnectorCnxPt.LongHelp         = "Defines connector connection point\nAdds or edits a connector connection point i.e. it defines:\n     - its name\n     - its graphical representation\n     - optionally its placement constraints (contact, coincidence, orientation)";
+CATEdlPrdCommandHeader.EdlDefineConnectorCnxPt.ShortHelp        = "Define Connector Connection Point";
+
+CATEdlPrdCommandHeader.EdlDefineBundleCnxPt.Title               = "Define Bundle Connection Point";
+CATEdlPrdCommandHeader.EdlDefineBundleCnxPt.Help                = "Defines a bundle connection point";
+CATEdlPrdCommandHeader.EdlDefineBundleCnxPt.LongHelp            = "Defines bundle connection point\nAdds or edits a bundle connection point i.e. it defines:\n     - its name\n     - its graphical representation\n     - a point (corresponding to the positionning of an extremity of a bundle segment)\n     - an initial condition (orientating the bundle segment).";
+CATEdlPrdCommandHeader.EdlDefineBundleCnxPt.ShortHelp           = "Define Bundle Connection Point";
+
+CATEdlPrdCommandHeader.EdlDefineCavityCnxPt.Title               = "Define Cavity Connection Point";
+CATEdlPrdCommandHeader.EdlDefineCavityCnxPt.Help                = "Defines a cavity connection point";
+CATEdlPrdCommandHeader.EdlDefineCavityCnxPt.LongHelp            = "Defines cavity connection point\nAdds or edits a cavity connection point i.e. it defines:\n     - its name\n     - its geometrical representation\n     - optionally its placement constraints (contact, coincidence, orientation)";
+CATEdlPrdCommandHeader.EdlDefineCavityCnxPt.ShortHelp           = "Define Cavity Connection Point";
+
+CATEdlPrdCommandHeader.EdlDefineBackShellCnxPt.Title            = "Define Back Shell Connection Point";
+CATEdlPrdCommandHeader.EdlDefineBackShellCnxPt.Help             = "Defines a back shell connection point";
+CATEdlPrdCommandHeader.EdlDefineBackShellCnxPt.LongHelp         = "Defines back shell connection point\nAdds or edits a back shell connection point i.e. it defines:\n     - its name\n     - its geometrical representation\n     - optionally its placement constraints (contact, coincidence, orientation)";
+CATEdlPrdCommandHeader.EdlDefineBackShellCnxPt.ShortHelp        = "Define Back Shell Connection Point";
+
+CATEdlPrdCommandHeader.EdlDefineShellCnxPt.Title                = "Define Shell Connection Point";
+CATEdlPrdCommandHeader.EdlDefineShellCnxPt.Help                 = "Defines a shell connection point";
+CATEdlPrdCommandHeader.EdlDefineShellCnxPt.LongHelp             = "Defines shell connection point\nAdds or edits a shell connection point i.e. it defines:\n     - its name\n     - its geometrical representation\n     - optionally its placement constraints (contact, coincidence, orientation)";
+CATEdlPrdCommandHeader.EdlDefineShellCnxPt.ShortHelp            = "Define Shell Connection Point";
+
+CATEdlPrdCommandHeader.EdlDefineEquipment.Title       = "Define Equipment";
+CATEdlPrdCommandHeader.EdlDefineEquipment.Help        = "Adds an electrical behavior of equipment type";
+CATEdlPrdCommandHeader.EdlDefineEquipment.LongHelp    = "Defines equipment\nAdds an electrical behavior of equipment type to the selected part or product.";
+CATEdlPrdCommandHeader.EdlDefineEquipment.ShortHelp   = "Define Equipment";
+
+CATEdlPrdCommandHeader.EdlDefineMountingEqt.Title       = "Define Mounting Equipment";
+CATEdlPrdCommandHeader.EdlDefineMountingEqt.Help        = "Adds an electrical behavior of mounting equipment type";
+CATEdlPrdCommandHeader.EdlDefineMountingEqt.LongHelp    = "Defines mounting equipment\nAdds an electrical behavior of mounting equipment type to the selected part or product.";
+CATEdlPrdCommandHeader.EdlDefineMountingEqt.ShortHelp   = "Define Mounting Equipment";
+
+CATEdlPrdCommandHeader.EdlDefineShell.Title       = "Define Shell";
+CATEdlPrdCommandHeader.EdlDefineShell.Help        = "Adds an electrical behavior of shell type";
+CATEdlPrdCommandHeader.EdlDefineShell.LongHelp    = "Defines shell\nAdds an electrical behavior of shell type to the selected part or product.";
+CATEdlPrdCommandHeader.EdlDefineShell.ShortHelp   = "Define Shell";
+
+CATEdlPrdCommandHeader.EdlDefineBackShell.Title       = "Define Back Shell";
+CATEdlPrdCommandHeader.EdlDefineBackShell.Help        = "Adds an electrical behavior of back shell type";
+CATEdlPrdCommandHeader.EdlDefineBackShell.LongHelp    = "Defines back shell\nAdds an electrical behavior of back shell type to the selected part or product.";
+CATEdlPrdCommandHeader.EdlDefineBackShell.ShortHelp   = "Define Back Shell";
+
+
+CATEdlPrdCommandHeader.EdlStoreDevice.Title       = "Store Device";
+CATEdlPrdCommandHeader.EdlStoreDevice.Help        = "Stores a device in a catalog";
+CATEdlPrdCommandHeader.EdlStoreDevice.LongHelp    = "Stores device\nStores a device (electrical or not) in a catalog.\nIf this is an electrical device, catalog \ electrical objects mapping can be used.";
+CATEdlPrdCommandHeader.EdlStoreDevice.ShortHelp   = "Store Device";
+
+CATEdlPrdCommandHeader.EdlDefineContact.Title       = "Define Contact";
+CATEdlPrdCommandHeader.EdlDefineContact.Help        = "Adds an electrical behavior of contact type";
+CATEdlPrdCommandHeader.EdlDefineContact.LongHelp    = "Defines contact\nAdds an electrical behavior of contact type to the selected part or product.";
+CATEdlPrdCommandHeader.EdlDefineContact.ShortHelp   = "Define Contact";
+
+CATEdlPrdCommandHeader.EdlDefineFillerPlug.Title       = "Define Filler Plug";
+CATEdlPrdCommandHeader.EdlDefineFillerPlug.Help        = "Adds an electrical behavior of filler plug type";
+CATEdlPrdCommandHeader.EdlDefineFillerPlug.LongHelp    = "Defines filler plug\nAdds an electrical behavior of filler plug type to the selected part or product.";
+CATEdlPrdCommandHeader.EdlDefineFillerPlug.ShortHelp   = "Define Filler Plug";
+
+// Analyse electrical links
+CATEdlPrdCommandHeader.ElecAnalyseLinks.Title = "Related Objects";
+CATEdlPrdCommandHeader.ElecAnalyseLinks.Help = "Shows the objects linked to the selected object";
+CATEdlPrdCommandHeader.ElecAnalyseLinks.ShortHelp = "Related Objects";
+CATEdlPrdCommandHeader.ElecAnalyseLinks.LongHelp = "Shows the objects linked to the selected object";
+
+
+
+// Les ressources "Measure Between" et "Measure Edge" sont copiees depuis
+// "Navigator4DUI/CNext/resources/msgcatalog/CATNavigation4DHeader.CATNls"
+CATEdlPrdCommandHeader.EdlPrdSpaceMeasureBetween.Title      = "Measure Between...";
+CATEdlPrdCommandHeader.EdlPrdSpaceMeasureBetween.Help       = "Measures the distance and angle between two items";
+CATEdlPrdCommandHeader.EdlPrdSpaceMeasureBetween.ShortHelp  = "Measure Between";
+CATEdlPrdCommandHeader.EdlPrdSpaceMeasureBetween.LongHelp   = "Measures the distance and angle between two items";
+
+CATEdlPrdCommandHeader.EdlPrdSpaceMeasureEdge.Title         = "Measure Item...";
+CATEdlPrdCommandHeader.EdlPrdSpaceMeasureEdge.Help          = "Measures properties associated to a selected item";
+CATEdlPrdCommandHeader.EdlPrdSpaceMeasureEdge.ShortHelp     = "Measure Item";
+CATEdlPrdCommandHeader.EdlPrdSpaceMeasureEdge.LongHelp      = "Measures properties associated to a selected item";
+
+// Les ressources "Measure Iniertia" sont copiees depuis
+// "SimulationLab/CNext/resources/msgcatalog/CATDMUCommandHeader.CATxxx"
+CATEdlPrdCommandHeader.EdlPrdSpaceMeasureInertia.Title      = "Measure Inertia...";
+CATEdlPrdCommandHeader.EdlPrdSpaceMeasureInertia.Help       = "Measures Inertial properties associated to a selected volume";
+CATEdlPrdCommandHeader.EdlPrdSpaceMeasureInertia.ShortHelp  = "Measure Inertia";
+CATEdlPrdCommandHeader.EdlPrdSpaceMeasureInertia.LongHelp   = "Measures Inertial properties associated to a selected volume";
+
+// Les ressources "Apply material" sont copiees depuis
+// "CATNavigation4D/CNext/resources/msgcatalog/CATNavigation4DHeaders.CATxxx"
+CATEdlPrdCommandHeader.EdlPrdApplyMaterial.Title      = "Apply Material";
+CATEdlPrdCommandHeader.EdlPrdApplyMaterial.Help       = "Applies material on geometry";
+CATEdlPrdCommandHeader.EdlPrdApplyMaterial.ShortHelp  = "Apply Material";
+CATEdlPrdCommandHeader.EdlPrdApplyMaterial.LongHelp   = "Applies material on geometry.";
+
+// Component Catalog V5R4
+CATEdlPrdCommandHeader.EdlPrdComponentCatalog.Title     = "Catalog Browser";
+CATEdlPrdCommandHeader.EdlPrdComponentCatalog.Help      = "Imports components from catalog";
+CATEdlPrdCommandHeader.EdlPrdComponentCatalog.ShortHelp = "Catalog Browser";
+CATEdlPrdCommandHeader.EdlPrdComponentCatalog.LongHelp  = "Imports components from catalog.";
+
+CATEdlPrdCommandHeader.EdlPrdSmartPlacement.Title       = "Smart Place";
+CATEdlPrdCommandHeader.EdlPrdSmartPlacement.Help        = "Place with a compass from a catalog";
+CATEdlPrdCommandHeader.EdlPrdSmartPlacement.ShortHelp   = "Smart Place";
+CATEdlPrdCommandHeader.EdlPrdSmartPlacement.LongHelp    = "Place with a compass from a catalog";
+
+
+CATEdlPrdCommandHeader.EdlPrdSmartMove.Title       = "Smart Move";
+CATEdlPrdCommandHeader.EdlPrdSmartMove.Help        = "Move with a compass";
+CATEdlPrdCommandHeader.EdlPrdSmartMove.ShortHelp   = "Smart Move";
+CATEdlPrdCommandHeader.EdlPrdSmartMove.LongHelp    = "Move with a compass";
+
+
+CATEdlPrdCommandHeader.EdlAddFunctionalLink.Title         = "Add Link";
+CATEdlPrdCommandHeader.EdlAddFunctionalLink.Help          = "Adds link";
+CATEdlPrdCommandHeader.EdlAddFunctionalLink.ShortHelp     = "Add Link";
+CATEdlPrdCommandHeader.EdlAddFunctionalLink.LongHelp      = "Adds link \nAdds a realization link between a physical and a functional device or a device coming from external application";
+
+CATEdlPrdCommandHeader.EdlRemoveFunctionalLink.Title      = "Remove Functional Link";
+CATEdlPrdCommandHeader.EdlRemoveFunctionalLink.Help       = "Removes functional link";
+CATEdlPrdCommandHeader.EdlRemoveFunctionalLink.ShortHelp  = "Remove Functional Link";
+CATEdlPrdCommandHeader.EdlRemoveFunctionalLink.LongHelp   = "Removes functional link \nRemoves a realization link between a physical and a functional device";
+
+CATEdlPrdCommandHeader.EdlPlaceFunctionalLink.Title       = "Place Physical Device";
+CATEdlPrdCommandHeader.EdlPlaceFunctionalLink.Help        = "Places physical device";
+CATEdlPrdCommandHeader.EdlPlaceFunctionalLink.ShortHelp   = "Place Physical Device";
+CATEdlPrdCommandHeader.EdlPlaceFunctionalLink.LongHelp    = "Places physical device\nPlaces a physical device in digital mock-up \nfrom a catalog and select functional device specifications";
+
+CATEdlPrdCommandHeader.EdlPrdSystemsSelection.Title       = "Select External Systems";
+CATEdlPrdCommandHeader.EdlPrdSystemsSelection.Help        = "Selects external systems";
+CATEdlPrdCommandHeader.EdlPrdSystemsSelection.ShortHelp   = "Select External Systems";
+CATEdlPrdCommandHeader.EdlPrdSystemsSelection.LongHelp    = "Select External Systems\nAllows you to choose the external systems on which the user will work";
+
+CATEdlPrdCommandHeader.EdlExternalReconcile.Title		    = "Manage Links";
+CATEdlPrdCommandHeader.EdlExternalReconcile.Help        = "Manages links between devices and external elements";
+CATEdlPrdCommandHeader.EdlExternalReconcile.ShortHelp   = "Manage Links";
+CATEdlPrdCommandHeader.EdlExternalReconcile.LongHelp    = "Manages links between devices and external elements\nAllows the user to link, place or replace 3D electrical elements from external data";

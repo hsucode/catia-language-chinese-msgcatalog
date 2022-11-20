@@ -1,0 +1,50 @@
+CATEdlDefineConnexionPointCmd.InitialState.Message          = "Select an electrical device";
+
+CATEdlDefineConnexionPointCmd.CavityState.Message           = "Select a mounting equipment/ equipment/ shell/ backshell/ single connector/ ground stud/ terminal strip/ terminal block/ cavity.";
+CATEdlDefineConnexionPointCmd.CavityCnctPtState.Message     = "Select a mounting equipment, an equipment, a contact, a filler plug, a connector (except internal and external splice), a shell or a cavity connection point";
+
+CATEdlDefineConnexionPointCmd.CavityState2.Message           = "Select an equipment, a single connector or a cavity";
+CATEdlDefineConnexionPointCmd.CavityCnctPtState2.Message     = "Select an equipment, a connector or a cavity connection point";
+
+
+CATEdlDefineConnexionPointCmd.ConnectorCnctPtState.Message  = "Select a single connector, a multi connector or a connector connection point";
+CATEdlDefineConnexionPointCmd.BackShellCnctPtState.Message  = "Select a single connector, a shell, a back shell or a back shell connection point";
+CATEdlDefineConnexionPointCmd.ShellCnctPtState.Message      = "Select a shell or a shell connection point";
+
+CATEdlDefineConnexionPointCmd.AssociatedGeoState.Message    = "Select its representation";
+CATEdlDefineConnexionPointCmd.FirstConstraintState.Message  = "Select a surface or a point";
+CATEdlDefineConnexionPointCmd.SecondConstraintState.Message = "Select a surface, a line or an axis";
+CATEdlDefineConnexionPointCmd.ThirdConstraintState.Message  = "Select a surface, a line or an axis";
+
+SameIdNumber.Title = "Cavity Definition";
+SameIdNumber.Text  = "This Id Number already exists.";
+
+NotCreatableCavity.Title = "Cavity Definition";
+NotCreatableCavity.Text  = "You cannot create a cavity on this electrical device.\n\nA cavity can only be created on the following devices:\n     - mounting equipment\n     - equipment\n     - shell\n     - backshell\n     - single connector\n     - terminal strip\n     - terminal block\n     - ground stud.\nMoreover, the cavity must be created on the electrical device reference.";
+
+ConnectorCnctPt.Title = "Connector Connection Point Definition";
+ConnectorCnctPt.Text  = "A connector connection point has already been defined.\nA single connector can only have one connector connection point.";
+
+NotCreatableConnectorCnctPt.Title = "Connector Connection Point Definition";
+NotCreatableConnectorCnctPt.Text  = "You cannot create a connector connection point on this electrical device.\n\nA connector connection point can only be created on a single insert connector or a multi insert connector.";
+
+NotCreatableCavityCnctPt.Title = "Cavity Connection Point Definition";
+NotCreatableCavityCnctPt.Text  = "You cannot create a cavity connection point on this electrical device.\n\nA cavity connection point can only be created on the following devices:\n     - mounting equipment\n     - equipment\n     - shell\n     - single connector\n     - multi connector\n     - terminal strip\n     - terminal block\n     - contact\n     - filler plug.";
+
+CavityCnctPt.Title = "Cavity Connection Point Definition";
+CavityCnctPt.Text  = "A cavity connection point has already been defined.\nThe selected element can only have one cavity connection point.";
+
+BackShellCnctPt.Title = "Back Shell Connection Point Definition";
+BackShellCnctPt.Text  = "You cannot create a back shell connection point on this electrical device.\n\nA back shell connection point can only be created on the following devices:\n     - single connector\n     - connector shell\n     - back shell.";
+
+BackShellCnctPtExisting.Title = "Back Shell Connection Point Definition";
+BackShellCnctPtExisting.Text  = "A back shell connection point has already been defined.\nThe selected element can only have one back shell connection point.";
+
+ShellCnctPt.Title = "Shell Connection Point Definition";
+ShellCnctPt.Text  = "You cannot create a shell connection point on this electrical device.\n\nA shell connection point can only be created on a shell.";
+
+ShellCnctPtExisting.Title = "Shell Connection Point Definition";
+ShellCnctPtExisting.Text  = "A shell connection point has already been defined.\nThe selected element can only have one shell connection point.";
+
+SamePublicationName.Title = "Connection Point Definition";
+SamePublicationName.Text  = "The specified connection point name cannot be used because a publication with the same name already exists.\nPlease change the name of the connection point.";

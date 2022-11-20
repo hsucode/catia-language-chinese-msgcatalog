@@ -1,0 +1,10 @@
+Usage = "不正確的用法 \n
+用法 : CATJoystickDriver -f[frequency] -bh[BrokerHostName] -m[calibration matrix]\n
+where:\n
+        -fxxx      : 指定驅動程式的頻率 Hz (ex -f30) 預設值 : -f20 (20 Hz)
+        -bhxxxx    : 指定中斷主機名稱 (ex:-bhoslo) 預設值 : -bhlocalhost
+        -m[x,x...] : 指定調整搖桿的行列值. 行列值以行讀入.
+                     預設值 : 名稱 (-m[1,0,0,0,1,0,0,0,1])
+
+
+例子 :\n\n          CATJoystickDriver -f20 -m[0,1,0,1,0,0,0,0,-1] -bhoslo\n";

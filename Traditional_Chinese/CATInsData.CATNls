@@ -1,0 +1,62 @@
+// ERRORS DURING INITIALIZATION
+Data.ErrCATInstallPath = "CATInstallPath 未設定";
+Data.ErrCATInstallPathNoPresent = "CATInstallPath 設定不正確 : 在搜尋路徑中未找到檔案 \n";
+Data.ErrPresent        = "/p1 錯誤";
+Data.ErrOpenPresent    = "無法開啟 /p1\n";
+// ERRORS DURING COMMIT
+Commit.ErrOpenSPK      ="軟體更新錯誤 - 無法開啟檔案 /p1 : /p2 ";
+Commit.ErrNoControl    ="軟體更新錯誤 - 檔案 /p1 未找到 ";
+Commit.ErrOpenControl  ="軟體更新錯誤 - 無法開啟檔案  /p1 : /p2";
+// ERRORS DURING ROLLBACK
+Rollback.ErrOpenSPK    ="軟體回復錯誤 - 無法開啟檔案 /p1 : /p2 ";
+Rollback.ErrNoControl  ="軟體回復錯誤 - 檔案 /p1 未找到 ";
+Rollback.ErrOpenControl ="軟體回復錯誤 - 無法開啟檔案 /p1 : /p2";
+Rollback.ErrUpdatePresent="軟體回復錯誤 - 無法更新檔案 /p1 : /p2";
+// ERRORS CHECK INTEGRITY
+CheckIntegrity.ErrReinstallSPK="有些安裝的分件不是正確的版本. \n 您必須重新安裝 Service Pack /p1.";
+CheckIntegrityCAA2="無效的 CAA2 建立版本 :/p1 - 正確的建立版本應是 :/p2\n";
+NeedInstallCAASPKn="Code Service Pack level /p1 已安裝. 所以您須要安裝 CAA Service Pack Level /p2\n";
+NeedCommitRollbackCAASPKn="安裝 CAA Service Pack /p1 前, 您須要 commit 或回復 CAA Service Pack /p2\n";
+NeedInstallCommitCAASPKn="Code Service Pack Level /p1 已安裝且 committed, 所以您須要安裝且 commit CAA Service Pack Level /p2\n";
+NeedCommitCAASPKn="Code Service Pack Level /p1 已安裝且 committed, 所以您須要安裝且 commit CAA Service Pack Level /p2\n"; 
+NeedRollbackCAASPKn="沒有 Code Service Pack 可安裝, 所以您需回復  CAA Service Pack Level /p1\n"; 
+Need2RollbackCAASPKn="您必須回復 CAA Service Pack Level /p1\n"; 
+CommitInterditCAASPKn="Code Service Pack level /p1 已安裝但未 committed,所以您無法 commit  CAA Service Pack /p2\n";
+// ERRORS CHECKPREREQS
+CheckPrereqs.PrereqKONT ="Windows NT 4.0 具 Service Pack 4, 或 Windows 2000  才可執行 \n";
+CheckPrereqs.PrereqKOWIN ="Windows 95,OEM Service Release 2 或較新版的 Windows 95 才可執行 \n";
+CheckPrereqsOS_OK="檢查系統版本 : OK \n";
+CheckPrereqsOS_KO="檢查系統版本 : KO \n";
+CheckProcessor_OK="檢查處理器 : OK \n";
+CheckProcessor_KO="檢查處理器 : KO \n 處理器 =/p1 需要處理器 =/p2\n";
+CheckProcessorKO_Registry="檢查處理器  :  KO (無法讀取部份登錄資料, 可能權限不足)\n";
+CheckMemory_OK="檢查記憶體 : OK \n";
+CheckMemory_KO="檢查記憶體 : KO \n 可用的記憶體 = /p1 bytes 所需記憶體 = /p2 bytes";
+CheckNetworkAdapter_OK ="檢查網路卡 : OK\n"; 
+CheckNetworkAdapter_KO ="檢查網路卡 : KO\n";
+CheckNetworkAdapter_1="未找到網路卡 \n";
+CheckNetworkAdapter_2="網路無法存取 \n";
+CheckNetworkAdapter_3="網路無法辨識 \n";
+CheckNetworkAdapter_254= "網路卡為 Ethernet \n";
+CheckNetworkAdapter_255="網路卡為 TokenRing \n";
+CheckNetworkAdapter_unknown="網路卡為未知的 \n";
+CheckNetworkAdapter_problem="網路錯誤 = /p1\n";
+CheckNetworkAdapter_Address="網路位置是 /p1\n";
+CheckOpenGL_OK =" OpenGL檢查 : OK\n"; 
+CheckOpenGL_KO ="OpenGL檢查 : KO\n";
+CheckOpenGLVersion = "OpenGL 版本 : /p1./p2\n";
+CheckOpenGLWrongVersion ="錯誤的 OpenGL 版本: /p1./p2\n";
+CheckOpenGLRequiredVersion = "必須的 OpenGL 版本 : /p1./p2\n";
+CheckOpenGLNotfound= "資料庫 OpenGL32.dll 未找到 \n";
+CheckOpenGLProbleme= "無法起動圖形環境 \n";
+CheckOpenGLdefault= "OpenGL 結果錯誤 = /p1\n";
+CheckDLLs_OK=" DLLs 檢查 : OK \n";
+CheckDLLs_KO=" DLLs 檢查: KO \n";
+CheckDLLs_probleme="DLL /p1 版本 =/p2 需要 =/p3";
+CheckDLLs_Correct="DLL /p1  正確版本 =/p2 \n";
+GetLanguages.French="法文";
+GetLanguages.German="德文";
+GetLanguages.Italian="義大利文";
+GetLanguages.Japanese="日文";
+GetLanguages.Chinese="簡體中文";
+GetLanguages.Korean="韓文";

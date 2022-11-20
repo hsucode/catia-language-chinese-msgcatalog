@@ -1,0 +1,148 @@
+
+ERRO0001.Request="記憶體無法定位";
+ERRO0001.Diagnostic ="記憶體無法為網格化定位";
+ERRO0001.Advice     = "請加大網格大小或弧差值.";
+
+ERRO0002.Request="內部錯誤";
+ERRO0002.Diagnostic="參數: /P01
+/P02";
+ERRO0002.Advice		= "請連絡售商.";
+
+ERRO0003.Request	  = "取消執行.";
+ERRO0003.Diagnostic = "取消按鈕按下.";
+ERRO0003.Advice     = "檢查參數.";
+
+
+ERRO0032.Request	= "網格尺寸太小.";
+ERRO0032.Diagnostic	= " /P11  網格大小必須至少為 /P12 ";
+ERRO0032.Advice		= "增加網格大小.";
+ 
+WARN0037.Request	="/P01 邊無法被切割.";
+WARN0037.Diagnostic = "不可能以切割局部條件切割亮度顯示的幾何上的 /P01 邊 ";
+WARN0037.Advice 	= "檢查局部組態.";
+
+ERRO0103.Request	= "面的細部壓制失敗.";
+ERRO0103.Diagnostic = "修剪面外形 /P01 : /P21
+只包含一個長度比相同曲線容差設定大的邊界曲線.";
+ERRO0103.Advice		= "修改面的輪廓或者標準容差設定, 以便不是零就是至少二個長度
+大於這個輪廓容差的曲線.";
+
+ERRO0104.Request    = "強制點 /P01 失敗";
+ERRO0104.Diagnostic = "強制點的位置 (/P01 /P02 /P03 ) 己超過網格幾何.";
+ERRO0104.Advice     = "幾何上移動點或刪除強制點.";
+
+ERRO0105.Request	= "強制加點失敗.";
+ERRO0105.Diagnostic = "無法強制加點在 :
+/P21
+依附  : /P22";
+ERRO0105.Advice		= "請檢查點是否太靠近依附的邊界
+或嚐試用更細的網格來處理.";
+
+ERRO0106.Request	= "無效強制點.";
+ERRO0106.Diagnostic	= "無法在點上強制節點 :
+/P21
+它的輸入: /P22 含有強制網格 (分配)";
+ERRO0106.Advice		= "刪除其中之一.";
+
+ERRO0108.Request	= "曲面網格連接失敗.";
+ERRO0108.Diagnostic = "在曲線強制網格和修剪面的曲面網格連接失敗 :
+曲線 : /P21
+修剪面  : /P22";
+ERRO0108.Advice		= "修改高亮度幾何定義或嘗試用些微不同的參數重新網格化";
+
+ERRO0109.Request	= "體積網格連接失敗.";
+ERRO0109.Diagnostic = "修剪面和體積網格的連接失敗 :
+修剪面 : /P21";
+ERRO0109.Advice		= "修改高亮度幾何定義或嘗試用些微不同的參數重新網格化";
+ 
+ERRO0110.Request	= "在面或曲線上無效的加入網格.";
+ERRO0110.Diagnostic = "強行加入網格在 : /P21
+與現存網格相交 : /P22";
+ERRO0110.Advice		= "修改在亮度顯示幾何上加入的網格";
+ 
+ERRO0111.Request	= "在面上無效的加入網格.";
+ERRO0111.Diagnostic	= "加入的網格是自我相交在 : /P21 上";
+ERRO0111.Advice	= "修改亮度顯示幾何上加入的網格.";
+ 
+ERRO0112.Request	= "修剪面網格化未完成.";
+ERRO0112.Diagnostic	= "網格必須完全覆蓋在修剪面 : /P21";
+ERRO0112.Advice	= "修改亮度顯示幾何上加入的網格.";
+
+ERRO0114.Request	= "封閉曲線無法網格化 : /P21";
+ERRO0114.Diagnostic	= "封閉曲線無法連接網格 :
+/P21";
+ERRO0114.Advice		= "可能變通方式 :
+- 打斷曲線並重新網格化.";
+
+ERRO0117.Request	= "不可能的網格連接在 1D 幾何.";
+ERRO0117.Diagnostic	= "不可能連接在幾何上加入的網格 :
+/P21";
+ERRO0117.Advice		= "檢查圓形周圍的網格 :
+- 網格較幾何尺寸大太多'.
+- 修剪面邊界不佳.";
+ 
+WARN0127.Request	= "壞的網格連續性.";
+WARN0127.Diagnostic	= "壞的角度連續性 :
+最大的角度 = /P11 度
+幾何  = /P21";
+WARN0127.Advice		= "可能變通方式 :
+- 修改整體的尺寸"; 
+
+WARN0128.Request	= "未根據拘束弧差.";
+WARN0128.Diagnostic	= "整體零件中未根據拘束弧差:
+- 包含不良弧差的網格邊線數目 = /P01 或 /P11 % 總體邊線";
+WARN0128.Advice		= "可修改為 :
+- 更改弧差設定的最小尺寸."; 
+
+ERRO1003.Request	= "無效的拓墣.";
+ERRO1003.Diagnostic	= "無效的拓墣
+未連結的幾何元素拓墣處於接觸中 :
+/P21
+/P22";
+ERRO1003.Advice		= "修改亮度顯示的幾何或
+嘗試用些微不同的整體尺寸重新網格化.";
+ 
+ERRO1004.Request	= "發現干涉或相切.";
+ERRO1004.Diagnostic	= "在下面的幾何元素中間發現干涉或相切:
+/P21
+/P22";
+ERRO1004.Advice		= "修改亮度顯示的幾何或
+嘗試用些微不同的整體尺寸重新網格化";
+ 
+ERRO1005.Request	= "不可能網格化.";
+ERRO1005.Diagnostic	= "不可能網格化
+以下要網格化的幾何元素處於接觸中:
+/P21 ON /P23
+/P22 ON /P24";
+ERRO1005.Advice		= "修改亮度顯示的幾何或單獨修改網格";
+ 
+ERRO1008.Request	= "未完全相交.";
+ERRO1008.Diagnostic	= "幾何未完全相交 :
+/P21";
+ERRO1008.Advice		= "嘗試以其它的整體尺寸設定網格化.";
+ 
+ERRO1012.Request	= "不可能網格化.";
+ERRO1012.Diagnostic	= "不可能將紅色圓形區域內的幾何網格化.";
+ERRO1012.Advice		= "檢查和修改圓形周圍的幾何或
+嘗試用些微不同的整體尺寸重新網格化";
+ 
+ERRO1013.Request	= "不可能在幾何上網格化.";
+ERRO1013.Diagnostic	= "不可能將紅色圓形周圍的幾何網格化
+/P21";
+ERRO1013.Advice		= "檢查和修改圓形周圍的幾何或
+嘗試用些微不同的整體尺寸重新網格化";
+
+ERRO1016.Request	= "幾何本質上發生的問題.";
+ERRO1016.Diagnostic	= "發生的問題 :
+/P21";
+ERRO1016.Advice		= "嘗試用些微不同的整體尺寸重新網格化";
+ 
+ERRO1018.Request	= "不可能連接.";
+ERRO1018.Diagnostic	= "不可能連接在紅色圓形區域內的網格.";
+ERRO1018.Advice		= "檢查和修改圓形周圍加入的網格或
+嘗試用些微不同的整體尺寸重新網格化";
+
+ERRO1100.Request	= "太多錯誤 !";
+ERRO1100.Diagnostic = "發現太多錯誤...";
+ERRO1100.Advice		= "檢查幾何定義或嘗試用些微不同的參數重新網格化";
+ 

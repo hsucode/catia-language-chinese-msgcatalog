@@ -1,0 +1,63 @@
+// COPYRIGHT DASSAULT SYSTEMES 2003
+//===========================================================================
+//
+// CATCamera
+//
+//===========================================================================
+
+CameraTree = "照像機組";
+CameraName = "照像機";
+
+//--------------------------------------
+// NewCamera
+//--------------------------------------
+CATCamera.NewCamera.UndoTitle = "(建立照像機)";
+CATCamera.NewCamera.RedoTitle = "(建立照像機)";
+
+//--------------------------------------
+// Camera Representation
+//--------------------------------------
+CATCamera.HideShowCameraRepresentation.UndoTitle = "(隱藏或顯示表現方式)";
+CATCamera.HideShowCameraRepresentation.RedoTitle = "(隱藏或顯示表現方式)";
+
+//--------------------------------------
+// Camera view
+//--------------------------------------
+CATCamera.UpdateCameraFromView.UndoTitle = "(由視圖更新)";
+CATCamera.UpdateCameraFromView.RedoTitle  = "(由視圖更新)";
+
+//--------------------------------------
+// Camera Window
+//--------------------------------------
+CATCamera.ActivateCameraWindow.UndoTitle = "(像機視窗)";
+CATCamera.ActivateCameraWindow.RedoTitle = "(像機視窗)";
+CATCamera.DeactivateCameraWindow.UndoTitle = "(像機視窗)";
+CATCamera.DeactivateCameraWindow.RedoTitle = "(像機視窗)";
+
+//--------------------------------------
+// Camera view
+//--------------------------------------
+CATCamera.ActivateCameraAutoUpdate.UndoTitle = "(由視圖更新)";
+CATCamera.ActivateCameraAutoUpdate.RedoTitle = "(由視圖更新)";
+CATCamera.DeactivateCameraAutoUpdate.UndoTitle = "(由視圖更新)";
+CATCamera.DeactivateCameraAutoUpdate.RedoTitle = "(由視圖更新)";
+
+//--------------------------------------
+// Focal Manipulation
+//--------------------------------------
+CATCamera.CameraFocal.UndoTitle = "(修改的焦點)";
+CATCamera.CameraFocal.RedoTitle = "(修改的焦點)";
+//---------------------------------------
+// Camera SafeSave Warning
+//----------------------------------------
+WarningStr = "警告";
+ENOVIASaveWarning = "警告: 所建像機將不會儲存在 ENOVIA/VPM";
+
+
+//---------------------------------------
+// Assymetrical Camera Warning
+//----------------------------------------
+AssymCamWarning.Title = "警告";
+AssymCamWarning.Text = "警告, 當執行 MPK 或視點追溯執行時無法應用平行像機!";
+
+

@@ -1,0 +1,284 @@
+NCOutputBatch = "以批次方式產生 NC 碼";
+
+NCOutputInteractive = "以互動方式產生 NC 碼";
+
+InOut = "輸入和輸出";
+
+Options = "選項";
+
+ToolMotions ="刀具動作";
+
+Formatting = "格式設定";
+
+ISO = "NC 碼";
+
+CGR = "處理中模型 (CGR)";
+
+CATProduct = "處理中模型 (CATProduct)";	 
+
+Cloud = "處理中模型 (雲形點)";
+
+Yes = "是";
+
+No  = "否";
+
+Syntax = "使用語法:";
+
+Input = "以加工方式來處理";
+
+Selection = "選擇";
+
+Programs = "程式";
+
+PartOperation = "零件步序";
+
+CurrentDocument = "目前文件";
+
+CATProcess ="輸入 CATProcess :";
+
+ProcessingLevel = "零件步序處理中";
+
+SplitFile = "以步序分割檔案";
+
+DocumentName = "文件";
+
+ProgramName = "程式:";
+
+NCDataOutput = "NC 碼結果";
+
+OutputType = "NC 資料形式:";
+
+OutputName = "輸出檔案:";
+
+ReplaceFile = "更換相似檔名檔案";
+
+OutputDocument = "處理後文件(選擇)";
+
+WriteDocument = "儲存輸入 CATProcess :";
+
+OutputDocumentName = "文件";
+
+ReplaceDocument = "更換類似名稱 CATProcess";
+
+AssociateDocument = "將輸出的 NC 檔案與程式相關";
+
+LockedMOs = "鎖定動作";
+
+Execute = "執行";
+
+NCDataOutputOptions = "NC 資料選擇";
+
+CircularType = "圓弧內插:";
+
+MaxMinRadius = "圓弧半徑限制:";
+
+RadiusValue = "數值";
+
+MaxRadius = "最大半徑:";
+
+MinRadius = "最小半徑:";
+
+RecordType = "圓弧記錄形式:";
+
+ToolMotion = "刀具運動陳述:";
+
+Auto = "由機具";
+
+AutomaticValue = "自動數值";
+
+Value = "數值";
+
+None = "無";
+
+ZAxis = "Z-軸 圓弧";
+
+AnyAxis = "任意軸 圓弧";
+
+Point = "點 (X,Y,Z)";
+
+Axis = "軸 (I,J,K)";
+
+Info = "資訊陳述:";
+
+Rapid = "快速進給:";
+
+RapidValue = "快速進給數值:";
+
+RemoveMotionToolChange = "換刀時的 GOTO :";
+
+CopyTracutProcessing = "Copy 或 Tracut 處理中:";
+
+StartFeedrateType = "開始時的快速進給 :";
+
+StoreAstheSame = "存在 CATProcess 所在位置";
+
+Onefile = "單一檔案...";
+
+ForAll = "為所有選擇方式";
+
+ByPgrm = "以程式";
+
+ByMO = "以加工工法";
+
+HomePoint = "原點方式 :";
+NoHomePoint = "無";
+YesHomePoint = "由機具";
+
+NotSpecified = "未指定";
+// Options
+
+NCBatch.Options.LongHelp = "指出處理所選程式使用的選擇.
+如果選擇 由機具 選擇, 會使用零件加工機具所指定的值.";
+
+NCBatch.ToolMotions.InterpolCirc.HeaderFrame.Global.Title = "圓弧插補";
+NCBatch.Formatting.Statements.HeaderFrame.Global.Title = "附註";
+NCBatch.ToolMotions.Feedrates.HeaderFrame.Global.Title = "進給";
+NCBatch.ToolMotions.ToolMotions.HeaderFrame.Global.Title = "刀具動作";
+NCBatch.Formatting.Digits.HeaderFrame.Global.Title = "點座標格式 (X,Y,Z)";
+NCBatch.Formatting.DigitsIJK.HeaderFrame.Global.Title = "軸分量格式 (I,J,K)";
+
+NCBatch.ToolMotions.InterpolCirc.IconAndOptionsFrame.OptionsFrame.CircularType.LongHelp = "如果需要圓弧插補, 指定將使用的圓弧形式.";
+
+NCBatch.ToolMotions.InterpolCirc.IconAndOptionsFrame.OptionsFrame.CmbCir.LongHelp = "如果需要圓弧插補, 指定將使用的圓弧形式:
+ - 由機具: 使用零件加工機具所指定的值
+ - 無: 不需要圓弧插補
+ - Z-軸 圓弧: 只有平行於 Z 軸的圓弧
+ - 任何軸 圓弧: 所有圓弧均會處理.";
+
+
+NCBatch.ToolMotions.InterpolCirc.IconAndOptionsFrame.OptionsFrame.MaxMinRadius.LongHelp = "如果需要圓弧插補, 指定將如何使用圓弧形式:
+ - 由機具: 使用零件加工機具所指定的值
+ - 數值: 使用使用者定義值.";
+NCBatch.ToolMotions.InterpolCirc.IconAndOptionsFrame.OptionsFrame.CmbRad.LongHelp = "如果需要圓弧插補, 指定將如何使用圓弧形式:
+ - 由機具: 使用零件加工機具所指定的值
+ - 數值: 使用使用者定義值.";
+
+NCBatch.ToolMotions.InterpolCirc.IconAndOptionsFrame.OptionsFrame.MinRadius.LongHelp = "指定圓弧插補所使用的最小半徑值.
+如果選擇 由機具 選擇, 將使用零件加工機具所指定的半徑值.";
+
+NCBatch.ToolMotions.InterpolCirc.IconAndOptionsFrame.OptionsFrame.MinRadiusValue.LongHelp = "指定圓弧插補所使用的最小半徑限制值.
+如果選擇 由機具 選擇, 將使用零件加工機具所指定的半徑值.";
+
+NCBatch.ToolMotions.InterpolCirc.IconAndOptionsFrame.OptionsFrame.MaxRadius.LongHelp = "指定圓弧插補所使用的最大半徑限制值.
+如果選擇 由機具 選擇, 將使用零件加工機具所指定的半徑值.";
+
+NCBatch.ToolMotions.InterpolCirc.IconAndOptionsFrame.OptionsFrame.MaxRadiusValue.LongHelp = "指定圓弧插補所使用的最大半徑限制值.
+如果選擇 由機具 選擇, 將使用零件加工機具所指定的半徑值.";
+
+NCBatch.ToolMotions.InterpolCirc.IconAndOptionsFrame.OptionsFrame.RecordType.LongHelp = "指定使用圓弧插補時, 所產生刀具檔的輸出形式 :
+ - 3000 和 5000
+ - 15000.";
+NCBatch.ToolMotions.InterpolCirc.IconAndOptionsFrame.OptionsFrame.CmbRec.LongHelp = "指定使用圓弧插補時, 所產生刀具檔的輸出形式 :
+ - 3000 和 5000
+ - 15000.";
+
+NCBatch.Formatting.Statements.IconAndOptionsFrame.OptionsFrame.ToolMotion.LongHelp = "定義輸出的數控程式所描繪的刀具路徑格式:
+ - 由機具: 使用加工機具的定義.
+ - 點: 以座標點 (x,y,z) 輸出. 
+   APT 輸出檔案會以刀具軸向定義來起始.
+   固定軸向 clfile 記錄 9000 定義來起始.
+ - 軸向: 以座標點和刀軸分量 (x,y,z,i,j,k) 來輸出.
+   會以 MULTAX 定義來起始 APT 檔案.
+   MULTAX clfile 記錄 9000 定義來起始.";
+
+
+NCBatch.Formatting.Digits.IconAndOptionsFrame.OptionsFrame.ResetXYZ.Title = "重設";
+NCBatch.Formatting.Digits.IconAndOptionsFrame.OptionsFrame.ResetXYZ.LongHelp = "重設至預設數值 (11.5)";
+NCBatch.Formatting.DigitsIJK.IconAndOptionsFrame.OptionsFrame.ResetIJK.Title = "重設";
+NCBatch.Formatting.DigitsIJK.IconAndOptionsFrame.OptionsFrame.ResetIJK.LongHelp = "重設至預設數值 (9.6)";
+
+NCBatch.ToolMotions.ToolMotions.IconAndOptionsFrame.OptionsFrame.HomePointLbl.LongHelp = "定義是否要在 APT 資料內產生原點方式資訊
+	- 無: 不輸出原點方式資訊.
+	- 由機具: 在零件加工機具輸出 GOTO 或 FROM 資訊.";
+
+NCBatch.ToolMotions.ToolMotions.IconAndOptionsFrame.OptionsFrame.HomePointLblCmb.LongHelp = "定義是否要在 APT 資料內產生原點方式資訊
+	- 無: 不輸出原點方式資訊.
+	- 由機具: 在零件加工機具輸出 GOTO 或 FROM 資訊.";
+
+// Input 
+NCBatch.InOut.Input.HeaderFrame.Global.Title = "輸入";
+NCBatch.InOut.Input.LongHelp = "指定要處理的加工程式.";
+
+NCBatch.InOut.Input.IconAndOptionsFrame.OptionsFrame.CATProcess.LongHelp = "定義使用的 CATProcess.";
+NCBatch.InOut.Input.IconAndOptionsFrame.OptionsFrame.ProcessName.LongHelp = "定義使用的 CATProcess.";
+
+NCBatch.InOut.Input.IconAndOptionsFrame.OptionsFrame.DocumentNameEdt.LongHelp = "顯示可用做輸入的文件.";
+NCBatch.InOut.Input.IconAndOptionsFrame.OptionsFrame.DocumentName.LongHelp = "顯示可用做輸入的文件.";
+
+NCBatch.InOut.Input.IconAndOptionsFrame.OptionsFrame.Selection.LongHelp = "定義輸入的選擇模式.";
+NCBatch.InOut.Input.IconAndOptionsFrame.OptionsFrame.Programs.LongHelp = "定義輸入的選擇模式.";
+NCBatch.InOut.Input.IconAndOptionsFrame.OptionsFrame.PartOperation.LongHelp = "定義輸入的選擇模式.";
+
+NCBatch.InOut.Input.IconAndOptionsFrame.OptionsFrame.ProgramName.LongHelp = "顯示文件中可用的製造程式.";
+NCBatch.InOut.Input.IconAndOptionsFrame.OptionsFrame.CmbPgm.LongHelp = "顯示文件中可用的製造程式.";
+
+// NC data output
+NCBatch.InOut.NCDataOutput.HeaderFrame.Global.Title = " NC 資料結果";
+NCBatch.InOut.NCDataOutput.LongHelp = "允許您選擇數控程式的資料格式和要儲存的位置";
+
+NCBatch.InOut.NCDataOutput.IconAndOptionsFrame.OptionsFrame.OutputType.LongHelp = "允許您選擇輸出數控程式的資料格式:
+APT 或 clfile.";
+NCBatch.InOut.NCDataOutput.IconAndOptionsFrame.OptionsFrame.CmbTyp.LongHelp = "允許您選擇輸出數控程式的資料格式:
+APT 或 clfile.";
+
+NCBatch.InOut.NCDataOutput.IconAndOptionsFrame.OptionsFrame.OutputNameEdt.LongHelp = "指定您要儲存 NC 檔案的位置.";
+NCBatch.InOut.NCDataOutput.IconAndOptionsFrame.OptionsFrame.OutputName.LongHelp = "指定您要儲存 NC 檔案的位置.";
+
+NCBatch.InOut.NCDataOutput.IconAndOptionsFrame.OptionsFrame.ReplaceFile.LongHelp = "允許您更換相似 NC 檔案的名稱.";
+NCBatch.InOut.NCDataOutput.IconAndOptionsFrame.OptionsFrame.StoreAstheSame.LongHelp = "儲存在和 CATProcess 相同位置";
+
+NCBatch.InOut.NCDataOutput.IconAndOptionsFrame.OptionsFrame.Onefile.LongHelp = "定義輸出檔案的 granularity  .";
+NCBatch.InOut.NCDataOutput.IconAndOptionsFrame.OptionsFrame.ForAll.LongHelp = "定義輸出檔案的 granularity  .";
+NCBatch.InOut.NCDataOutput.IconAndOptionsFrame.OptionsFrame.ByPgrm.LongHelp = "定義輸出檔案的 granularity  .";
+NCBatch.InOut.NCDataOutput.IconAndOptionsFrame.OptionsFrame.ByMO.LongHelp = "定義輸出檔案的 granularity  .";
+
+// Doc output
+NCBatch.InOut.OutputDocument.HeaderFrame.Global.Title = "產生 NC 檔案後的 CATProcess";
+NCBatch.InOut.OutputDocument.LongHelp = "允許您處理後儲存 CATProcess.";
+
+NCBatch.InOut.OutputDocument.IconAndOptionsFrame.OptionsFrame.WriteDocument.LongHelp = "允許您處理後儲存 CATProcess.";
+
+NCBatch.InOut.OutputDocument.IconAndOptionsFrame.OptionsFrame.OutputDocumentName.LongHelp = "如您處理後要儲存 CATProcess,
+請指定您要儲存的位置.";
+NCBatch.InOut.OutputDocument.IconAndOptionsFrame.OptionsFrame.OutputDocumentNameEdt.LongHelp = "如您處理後要儲存 CATProcess,
+請指定您要儲存的位置.";
+
+NCBatch.InOut.OutputDocument.IconAndOptionsFrame.OptionsFrame.ReplaceDocument.LongHelp = "允許您更換相似名稱的 CATProcess.";
+
+NCBatch.InOut.OutputDocument.IconAndOptionsFrame.OptionsFrame.AssociateDocument.LongHelp = "將 NC 輸出檔案與 CATProcess 關聯.";
+NCBatch.InOut.OutputDocument.IconAndOptionsFrame.OptionsFrame.LockedMOs.LongHelp = "處理後鎖定 CATProcess 的加工工法.";
+
+
+// Execute
+
+Execute.LongHelp = "以所選的格式來批次執行產生數控程式.";
+
+
+// ISO
+
+NCBatch.ISO.PPPARLabel.LongHelp = " 選取後處理器檔案.";
+NCBatch.ISO.PPPARLabel.Help = " 選取後處理器檔案.";
+NCBatch.ISO.PPPARLabel.ShortHelp = " 選取後處理器檔案.";
+NCBatch.ISO.PPPARLabel.Title   = " Cenit 後處理器檔案";
+
+NCBatch.ISO.IMSPARLabel.LongHelp = " 選取後處理器檔案.";
+NCBatch.ISO.IMSPARLabel.Help = " 選取後處理器檔案.";
+NCBatch.ISO.IMSPARLabel.ShortHelp = " 選取後處理器檔案.";
+NCBatch.ISO.IMSPARLabel.Title   = " IMS 後處理器檔案";
+
+NCBatch.ISO.OtherPPLabel.LongHelp = " 選擇後處理器檔案.";
+NCBatch.ISO.OtherPPLabel.Help = " 選擇後處理器檔案.";
+NCBatch.ISO.OtherPPLabel.ShortHelp = " 選擇後處理器檔案.";
+NCBatch.ISO.OtherPPLabel.Title   = " 後處理器檔案 ";
+
+NCBatch.ISO.ICAMPARLabel.LongHelp = " 選擇後處理器檔案.";
+NCBatch.ISO.ICAMPARLabel.Help = " 選擇後處理器檔案.";
+NCBatch.ISO.ICAMPARLabel.ShortHelp = " 選擇後處理器檔案.";
+NCBatch.ISO.ICAMPARLabel.Title   = " ICAM 處理器檔案 ";
+
+// No PP selected 
+
+NCBatch.ISO.NonePARLabel.LongHelp = " 未選擇後處理器. 請使用工具  > 選項 > 加工 > 輸出至選擇 .";
+NCBatch.ISO.NonePARLabel.Help = " 未選擇後處理器. 請使用工具  > 選項 > 加工 > 輸出至選擇 .";
+NCBatch.ISO.NonePARLabel.ShortHelp = " 未選擇後處理器. 請使用工具  > 選項 > 加工 > 輸出至選擇 .";
+NCBatch.ISO.NonePARLabel.Title   = " 未選擇後處理器. 請使用工具  > 選項 > 加工 > 輸出至選擇 . ";

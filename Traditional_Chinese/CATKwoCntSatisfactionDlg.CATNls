@@ -1,0 +1,130 @@
+// COPYRIGHT DASSAULT SYSTEMES 2000
+//===================================================================
+//
+// Catalog for CATKweSetOfEquationsEditorDlg class
+//
+//===================================================================
+//
+// Usage notes:
+//
+//===================================================================
+Active.Title = "方程式設定編輯器 :啟動 /P1 ";
+Inactive.Title = "方程式設定編輯器 :停止 /P1 ";
+
+text_editor.Help = "輸入方程式設定本體";
+text_editor.LongHelp = "此欄位為方程式設定編輯器. \n\n",
+                       "設定方程式允許在拘束下修改參數.\n\n",
+                       "須使用下列文法 :\n",
+                       "PartBody\Pad.1\FirstLimit\Length * Real.5 == PartBody\Pad.1\SecondLimit\Length\n",
+					   "和 \n",
+					   "PartBody\Pad.1\FirstLimit\Length * Real.5 + PartBody\Pad.1\SecondLimit\Length == 12mm\n\n",
+                       "要寫入參數名稱您可直接輸入名稱, \n",
+                       "請使用以下提供的編輯目錄 \n",
+                       "選擇與參數相關 3D 拘束. \n",
+                       "要顯示 3D 拘束只要在 \n",
+                       "3D 視窗或歷程樹中直接選擇特徵 \n";
+                       
+
+InputsLabel.Title = "常數";
+OutputsLabel.Title = "未知參數";
+
+SetInputsButton.Title="設定參數";
+SetInputsButton.Help="為設定方程式設定輸入參數";
+SetInputsButton.ShortHelp="設定輸入參數";
+SetInputsButton.LongHelp="設定方程式設定輸入參數. \n 特殊對話框允許您將參數分成兩個部份: 輸入 (常數) 和輸出(變數)";
+
+ButtonFrame.MoveToInputsPushButton.Help = "在輸入參數中移動所選參數 (常數).";
+ButtonFrame.MoveToInputsPushButton.LongHelp = "在輸入參數中移動所選參數. 當解出設定參數時, 輸入參數視為常數.";
+ButtonFrame.MoveToOutputsPushButton.Help = "在輸出參數中移動所選參數 (未知).";
+ButtonFrame.MoveToOutputsPushButton.LongHelp = "在輸出參數中移動所選參數. 當解出設定參數時, 輸出參數視為未知.";
+
+
+InputsSelectorList.Help = "輸入參數清單 (常數).";
+InputsSelectorList.LongHelp = "此清單顯示設定方程式的所選輸入參數 \n 當解出設定方程式時,輸出參數數值為常數.";
+InputsSelectorList.ColumnTitle1 = "名稱";
+InputsSelectorList.ColumnTitle2 = "數值";
+
+OutputsSelectorList.Help = "輸出參數清單 (未知的)";
+OutputsSelectorList.LongHelp = "此清單顯示所選輸出參數. \n 當解出設定方程式時,輸出參數數值將更改.";
+OutputsSelectorList.ColumnTitle1 = "名稱";
+OutputsSelectorList.ColumnTitle2 = "數值";
+
+TabOptions.SolverOptionsFrame.Title = "演算法";
+TabOptions.StopOptionsFrame.Title   = "結束標準";
+TabOptions.BBAlgorithmsFrame.Title  = "黑盒演算法";
+TabOptions.BBOptionsFrame.Title     = "黑盒參數";
+
+TabOptions.EpsBaseText.Title = "精度";
+TabOptions.EpsBaseValue.Help = "輸入計算精度範圍 [1e-10, 0.1]";
+TabOptions.EpsBaseValue.ShortHelp="輸入計算精度";
+TabOptions.EpsBaseValue.LongHelp = "設定方程式的精度. \n",
+                       "參數值會影響計算的精度. \n",
+                       "可能的參數值範圍必須在範圍 [1e-10, 0.1].";
+
+TabOptions.GaussText.Title = "使用線性方程式的高斯方式";
+TabOptions.GaussValue.Title = "";
+
+TabOptions.StopText.Title = "顯示 停止 對話框  ";
+
+TabOptions.TimeText.Title = "最大計算時間 (秒)  ";
+TabOptions.TimeValue.Help = "輸入最大計算時間";
+TabOptions.TimeValue.ShortHelp="輸入最大計算時間";
+TabOptions.TimeValue.LongHelp = "最大計算時間. \n",
+                       "此參數用來限制最大計算時間. \n",
+                       "如設定方程式計算時超過此時間, \n",
+                       "計算將終止. \n",
+                       "如設為 0, 將不限制計算時間.";
+
+TabOptions.SetDefault.Title = "重新載入預設值";
+TabOptions.Empty1.Title = "    ";
+
+TabOptions.BBGradient.Title  = "梯度";
+TabOptions.BBQuadratic.Title = "二次近似";
+
+TabOptions.BBEpsText.Title = "精度 (黑盒)";
+TabOptions.BBEpsText.LongHelp = "計算黑盒的精確度. \n",
+                       "參數值會影響計算的適當性和精確度. \n",
+                       "此參數值須較精度值為小.";
+TabOptions.BBCallsText.Title = "最大黑盒呼叫次數";
+TabOptions.BBCallsText.LongHelp = "最大黑盒呼叫次數. \n",
+                       "此參數用來限制最大計算時間. \n",
+                       "如設定方程式計算時超過最大黑盒呼叫次數, \n",
+                       "計算將終止. \n",
+                       "如設為 0, 將不限制計算時間.";
+TabOptions.BBAttemptsText.Title    = "嚐試次數";
+TabOptions.BBAttemptsText.LongHelp = "開始多次元演算的初始點數目. \n",
+                       "修改此參數會增加解法的適當性 \n",
+					   "和所有多次元黑盒的計算時間.";
+TabOptions.BBUseUnimodal.Title     = "使用單一模式間隔";
+TabOptions.BBUnimodalText.Title    = "         寬度";
+TabOptions.BBUnimodalText.LongHelp = "單次元的單一模式間隔寬度. \n",
+                       "參數將影響所有單次元黑盒解法的資料適當性.";
+TabOptions.BBExact.Title    = "最小黑盒呼叫次數";
+TabOptions.BBExact.LongHelp = "如勾選此項, 搜尋所使解法的內部黑盒方式 \n",
+                              "呼叫黑盒次數將大量減少, 但計算時間將增加.";
+TabOptions.BBCacheSizeText.Title    = "暫存器大小";
+TabOptions.BBCacheSizeText.LongHelp = "黑盒暫存器大小";
+
+TabOptions.BBNHeuristicText.Title = "N- 次元 Heuristic";
+TabOptions.BBNHeuristicText.LongHelp = "N- 次元 Heuristic.\n",
+                       "此參數選擇計算黑盒功能的演算法. \n",
+                       "有下列二演算法 :\n",
+                       " - N 間隔梯度. 多次元梯度演算法. 設定方程式用來解出實際解法.\n",
+                       " - 'N 梯度'. 多次元梯度演算法. 設定方程式有可能解出實際解法.\n",
+TabOptions.BB1HeuristicText.Title = "1- 次元 Heuristic";
+TabOptions.BB1HeuristicText.LongHelp = "1- 次元 Heuristic.\n",
+                       "此參數選擇計算黑盒功能的演算法. \n",
+                       "有下列四個演算法 :\n",
+                       " - N 間隔梯度. 多次元梯度演算法. \n",
+                       " - N 間隔. 多次元梯度演算法. 設定方程式有可能解出實際解法.\n",
+                       " - 1 梯度. 單次元梯度演算法. \n",
+                       " - 1 梯度. 單次元二次梯度演算法.";
+
+
+TabOptions.ErrorsText.Title = "產生展開錯誤說明";
+TabOptions.ErrorsValue.Title = "";
+
+TabOptions.WarnLvlText.Title    = "顯示附加警告";
+TabOptions.WarnLvlText.Help     = "顯示附加警告";
+TabOptions.WarnLvlText.LongHelp = "顯示附加警告";
+

@@ -1,0 +1,31 @@
+// COPYRIGHT DASSAULT SYSTEMES 2002
+//=============================================================================
+// Creation le 29/07/2003 par JB. RAUD
+//
+HeaderFrame.Global.Title = "Bundle Segment Computation";
+
+IconAndOptionsFrame.OptionsFrame.SeparationLabel.Title     = "       ";
+
+IconAndOptionsFrame.OptionsFrame.AccuracyFrame.AccuracyLabel.Title     = "     Balance between performance (P) and accuracy (A)     ";
+IconAndOptionsFrame.OptionsFrame.AccuracyFrame.AccuracyLabelLow.Title     = " P                           A";
+//IconAndOptionsFrame.OptionsFrame.AccuracyFrame.AccuracyLabelHigh.Title     = ""; 
+
+IconAndOptionsFrame.OptionsFrame.AccuracyFrame.AccuracySlider.Title  = "";
+IconAndOptionsFrame.OptionsFrame.AccuracyFrame.AccuracySlider.ShortHelp  = "Defines the accuracy/performance ratio of the bundle segment shape";
+IconAndOptionsFrame.OptionsFrame.AccuracyFrame.AccuracySlider.LongHelp  = "Select the accuracy.\nThe higher the accuracy is the \nlower the performance and vice-versa";
+
+
+IconAndOptionsFrame.OptionsFrame.AccuracyFrame.RadioButtonAlgoV4.Title  = "Standard algorithm";
+IconAndOptionsFrame.OptionsFrame.AccuracyFrame.RadioButtonAlgoV4.ShortHelp  = "Select this check button \nto use the formal algorithm";
+IconAndOptionsFrame.OptionsFrame.AccuracyFrame.RadioButtonAlgoV4.LongHelp  = "Chooses the formal algorithm";
+
+
+IconAndOptionsFrame.OptionsFrame.AccuracyFrame.RadioButtonNewAlgo.Title  = "FLEX algorithm";
+IconAndOptionsFrame.OptionsFrame.AccuracyFrame.RadioButtonNewAlgo.ShortHelp  = "Select this check button \nto use the new FLEX algorithm";
+IconAndOptionsFrame.OptionsFrame.AccuracyFrame.RadioButtonNewAlgo.LongHelp  = "Chooses the FLEX algorithm";
+
+IconAndOptionsFrame.OptionsFrame.AccuracyFrame.ToleranceRatioCLModeLabel1.Title= "          ";
+IconAndOptionsFrame.OptionsFrame.AccuracyFrame.ToleranceRatioCLModeLabel2.Title= "     Tolerance (%) in Constrained Length mode:";
+//IconAndOptionsFrame.OptionsFrame.AccuracyFrame.ToleranceRatioCLModeLabel3.Title= "     for Constrained Length mode. ";
+IconAndOptionsFrame.OptionsFrame.AccuracyFrame.ToleranceRatioCLModeSpinner.ShortHelp="Enter the percentage value for the tolerance";
+IconAndOptionsFrame.OptionsFrame.AccuracyFrame.ToleranceRatioCLModeSpinner.LongHelp="Specifies the percent difference permitted between the initial and final bundle segment length \nin Constrained Length mode.";

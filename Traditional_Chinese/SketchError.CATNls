@@ -1,0 +1,144 @@
+//
+//
+//  COPYRIGHT DASSAULT SYSTEMES 2000
+//  NLS Of UpdateError for SketcherModeler
+//
+// LGK 24/07/02 Revision
+// LGK 15/10/02 -
+
+
+SpecError =" 你的規格無法計算,請修改草圖";
+
+DatumError ="複製錯誤. 您可獨立或關閉此元素";
+
+DatumError1 ="無法處理複製. 您需重建草圖.";
+
+DatumError2 ="無法處理複製. 參考草圖沒有結果.";
+
+DatumWarning ="參考特徵不再是草圖. 請確定此新參考仍在草圖中定義.";
+
+OverCstError ="草圖可能過多拘束或不一致. 編輯此草圖之前. 您可使用工具 -> 草圖分析 -> 偵錯 來知道那一個草圖元素有問題.";
+
+GeomError1 ="在 /p1 和草圖平面之間沒有投影";
+
+GeomError2 ="在 /p1 和草圖平面之間沒有相交";
+
+GeomError3 ="和 /p1沒有幾何關係設定";
+
+GeomError4 ="從 /p1 衍生而來的數個幾何圖形無法被處理";
+
+GeomError5 ="用來建立 使用邊界的 3D 元素已被刪除.";
+
+GeomError6 ="產生的幾何圖形與前一個不同";
+
+GeomError7 ="/p2 的 /p1 與草圖面沒有相交.";
+
+GeomError8 ="草圖面的 /p1 偏移幾何無法計算.";
+
+GeomError9 ="草圖面的 /p2 的 /p1 偏移幾何無法計算.";
+
+GeomError10 ="無法計算含 /p2 增生參考的草圖平面上的偏移幾何元素 /p1.";
+
+GeomError11 ="無法計算含 /p2 的 /p1 增生參考的草圖平面上的偏移幾何元素 /p3.";
+
+GeomError12 ="無法計算含 /p3 的 /p2 增生參考的草圖平面上的偏移幾何元素 /p1.";
+
+GeomError13 ="無法計算含 /p4 的 /p3 增生參考的草圖平面上的偏移幾何元素 /p2 的 /p1 .";
+
+GeomDefault ="您可刪除, 獨立或不啟動此元素, 或您可選擇新的參考元素.";
+
+GeomPropag ="您可刪除, 獨立或不啟動此元素, 或您可選擇非混淆增生參考或新的元素.";
+
+IncompCstError ="一個或以上的拘束與結果幾何元素不一致.";
+
+IntersectDefault ="移動草圖面或更改相交特徵.";
+
+SupportError ="無效或空的輸入元素. \n 在草圖的右鍵命令中, 選擇更換草圖依附.";
+
+SupportErrorExternalReference ="所選做為目前草圖依附的元素不在目前零件中. 請在草圖的右鍵命令中, 選擇更換草圖依附.";
+
+SupportErrorGeneral ="因元素無效導致動作失敗. 請在草圖的右鍵命令中, 選擇更換草圖依附.";
+
+SupportErrorTwoLinesIntersected =" /p1 和 /p2 間沒有相交, 兩線必須是同平面的.";
+
+SupportErrorTwoLines ="/p1 和 /p2 是平行的. 請在草圖的右鍵命令中, 選擇更換草圖依附.";
+
+OriginErrorIntersectionOfTwoLines = "原點原定義為兩線相交點, 但在 /p1 和 /p2 間目前沒有相交. 請在草圖的右鍵命令中, 選擇更換草圖依附.";
+
+OriginErrorIntersectionCurveSupport = "原點原定義為依附面與曲線相交, 但在 /p1 和 依附面間目前沒有相交. 請在草圖的右鍵命令中, 選擇更換草圖依附.";
+
+OriginErrorExternalReference ="定義原點的元素不屬於目前零件. 請在草圖的右鍵命令中, 選擇更換草圖依附.";
+
+OriginErrorUndefined ="原點定義發生內錯誤. 請在草圖的右鍵命令中, 選擇更換草圖依附.";
+
+OrientationErrorProjectionIsNotALine="在依附平面上的投影不是一條線, 造成無法定義方向. 請在草圖的右鍵命令中, 選擇更換草圖依附.";
+
+OrientationErrorThroughAPoint =" /p1 的投影與依附平面混淆, 造成無法定義方向. 請在草圖的右鍵命令中, 選擇更換草圖依附.";
+
+OrientationErrorParallelToIntersectionWithPlane = "但在 /p1 和 依附面間目前沒有相交, 造成無法定義方向. 請在草圖的右鍵命令中, 選擇更換草圖依附.";
+
+OrientationErrorExternalReference ="定義方向的元素不屬於目前零件. 請在草圖的右鍵命令中, 選擇更換草圖依附.";
+
+NotConsistentCst ="此拘束不一致. 修改造成錯誤的元素 (幾何或拘束).";
+
+OverDefinedCst ="此元素有過多拘束. 刪除不需要的拘束.";
+
+Unknown ="沒有錯誤資訊."; 
+
+GeomData = "幾何資料已遺失. 您必須刪除此幾何元素.";
+
+EditSketch = "您必須編輯此草圖來解決此問題.";
+
+AbsoluteAxisError = "您必須修改絕對軸定義來解決此問題.";
+
+NotConsistentConnect ="無法計算曲線. 您必須編輯草圖並修正元素的一致性.";
+
+OutputDegeneratedGeometry = "參考幾何扭曲. 您必須編輯此草圖來解決此問題.";
+
+OutputDeletedGeometry = "參考幾何己刪除. 您必須編輯此草圖來解決此問題.";
+
+BrokenCstError = "拘束含有錯誤的定義且無法被草圖處理. 您必須清理零件資料並刪除拘束.";
+
+NotAllowedOperation = "未授權動作.";
+
+ProfileCopy = "編輯草圖時無法執行此動作. 請退出草圖編輯來複製斷面特徵.";
+
+ProfileDelete = "編輯草圖時方可執行此動作. 請編輯草圖來刪除斷面特徵.";
+
+ProfileNoResult = "斷面無法計算. 您必須至草圖來檢查斷面.";
+
+ProfileConnexity = "斷面不如需求般為連續的. 請至草圖來檢查斷面或關閉點連續性檢查 (連接性).";
+
+ProfileManifold = "斷面不如需求般為 manifold. 請至草圖檢查斷面來獲得 manifold 結果.";
+
+ProfileTangency = "斷面切線不連續. 請至草圖來檢查斷面或關閉切線連續性檢查.";
+
+ProfileCurvature = "斷面曲率不連續. 請至草圖來檢查斷面或關閉曲率連續性檢查.";
+
+ProfileNotHomogeneous = "斷面不一致: 內含點和線. 請編輯草圖並修改斷面定義來使得斷面只含點或線.";
+
+ProfileDomainsNbChange = "斷面的點或線的數目已更改. 請編輯草圖並修改斷面以接受更改或修正定義.";
+
+ProfileIntersection = "線間或線內偵測到自我相交. 請編輯草圖修正定義.";
+
+ProfileGeomRemoved = "更新斷面未含先前使用的幾何元素. 請檢查修改的斷面.";
+
+UnderdefinedGeometries = "草圖未完整拘束. 可能是設定必需的拘束 (按一下編輯) 或 \n 取消選擇 <<草圖在拘束時產生更新錯誤>> 可使用 工具 > 選項 > 草圖 來避免應用時產生草圖更新錯誤.";
+
+Instability = "此動作可能造成不穩定.";
+
+InstabilityUpdate = "請檢查可能的幾何元素逆轉位置.";
+
+InstabilityCreate = "請重新考慮您的設計.";
+
+Plane2DLUpdateError = "無法評估平面. 在佈置視圖中未發現線定義. 您必須獨立此平面來解決更問題.";
+
+Profile2DLNoSubset = "無法評估斷面. 在佈置視圖中未發現斷面定義. 您必須獨立此斷面來解決更問題.";
+
+Profile2DLNonParallelPlane = "無法評估斷面. 依附平面必須平行佈圖視圖.";
+
+ExternalLinkValuateError1 = "斷面沒有外部鏈結.";
+
+ExternalLinkValuateError2 = "無法由斷面特徵更換鏈結.";
+
+ExternalLinkValuateError3 = "無法以此文件更換鏈結.";

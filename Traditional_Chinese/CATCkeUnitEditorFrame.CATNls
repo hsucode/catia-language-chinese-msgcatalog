@@ -1,0 +1,43 @@
+// COPYRIGHT DASSAULT SYSTEMES  1997
+//=============================================================================
+//
+// Catalog for CATCkeUnitEditor class
+//
+//=============================================================================
+// 10/22/97   Creation                                   A. Anquetil
+// 08/04/99   LongHelp									ppg.
+// 30/08/02   nouvelle nomenclature                      TDV
+//============================================================================
+
+NewUnitFrame.HeaderFrame.Global.Title = "單位";
+NewDimensionFrame.HeaderFrame.Global.Title="顯示尺寸";
+
+NewDimensionFrame.IconAndOptionsFrame.OptionsFrame.MagnitudeDisplayFrame.SameDisplayCheckButton.Title="讀寫和唯讀數目的相同顯示";
+NewDimensionFrame.IconAndOptionsFrame.OptionsFrame.MagnitudeDisplayFrame.SameDisplayCheckButton.ShortHelp ="勾選此選項時, 唯讀數目將會和使用者輸入的形式具有相同的小數";
+NewDimensionFrame.IconAndOptionsFrame.OptionsFrame.MagnitudeDisplayFrame.NumberDisplayLabel.Title="可讀寫數目的小數位置 ";
+NewDimensionFrame.IconAndOptionsFrame.OptionsFrame.MagnitudeDisplayFrame.NumberDisplayEditor.ShortHelp ="輸入此數值將顯示的小數數目";
+NewDimensionFrame.IconAndOptionsFrame.OptionsFrame.MagnitudeDisplayFrame.CalcNumberDisplayLabel.Title="唯讀數目的小數位置 ";
+NewDimensionFrame.IconAndOptionsFrame.OptionsFrame.MagnitudeDisplayFrame.CalcNumberDisplayEditor.ShortHelp ="輸入此數值將顯示的小數數目";
+
+NewDimensionFrame.IconAndOptionsFrame.OptionsFrame.TrailingZerosCheckButton.Title="顯示尾數 0";
+NewDimensionFrame.IconAndOptionsFrame.OptionsFrame.TrailingZerosCheckButton.ShortHelp ="勾選此選項時, 系統將會自動在實數值後增加 0 以達到所要求的數目";
+
+NewDimensionFrame.IconAndOptionsFrame.OptionsFrame.MagnitudeDisplayFrame.Title="顯示數值 /P1";
+NewDimensionFrame.IconAndOptionsFrame.OptionsFrame.ExponentialLabel1.Title="大於 10e+ 的指數標記法";
+NewDimensionFrame.IconAndOptionsFrame.OptionsFrame.ExponentialLabel1.ShortHelp ="輸入 exposant 將表示法由標準轉換至指數標記法";
+NewDimensionFrame.IconAndOptionsFrame.OptionsFrame.ExponentialLabel2.Title="小於 10e- 的指數標記法";
+NewDimensionFrame.IconAndOptionsFrame.OptionsFrame.ExponentialLabel2.ShortHelp ="輸入 exposant 將表示法由標準轉換至指數標記法";
+
+NewUnitFrame.IconAndOptionsFrame.OptionsFrame.Selection.ShortHelp = "預設單位選擇: 選擇參數將會使用的預設單位. \n";
+NewUnitFrame.IconAndOptionsFrame.OptionsFrame.UnitList.ShortHelp = "預設單位選擇: 選擇參數將會使用的預設單位. \n";
+NewUnitFrame.IconAndOptionsFrame.OptionsFrame.MagnitudeSel.ShortHelp = "預設單位選擇: 選擇參數將會使用的預設單位. \n";
+
+//Objet graphic
+Magnitudes = "數值";
+Units = "單位";
+Symbols = "符號";
+
+ExpoTooSmall="此數值太小無法使用指數標記";
+
+BadDisplay="小數位置必須大於 0 並小於 9";
+BadDisplayHd="禁止值";

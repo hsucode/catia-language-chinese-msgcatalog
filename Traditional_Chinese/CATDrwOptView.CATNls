@@ -1,0 +1,84 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 2000 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwOptManip
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    
+// DATE        :    30.10.2000
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    Tools/Option du Drafting
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//	01			lgk		17.12.02	Revision
+//=====================================================================================
+
+Title="視圖";
+
+
+frameGenElem.HeaderFrame.Global.Title="幾何產生/修飾";
+frameGenElem.HeaderFrame.Global.LongHelp=
+"產生幾何元素
+定義要產生的幾何元素.";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenAxis.Title="產生軸";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenCenter.Title="產生中心線";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenThread.Title="產生螺紋線";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameButtonGenFil._checkGenFil.Title="產生圓角";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameButtonGenFil.pushGenFil.Title="組態";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenHiddenLines.Title="產生隱藏線";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGen3DColors.Title="承襲 3D 顏色";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frmWireFrame.checkGenWireFrame.Title="投影 3D 線架構";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frmWireFrame.pushGenWireFrameMod.Title="組態";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.checkGenApplyUncut.Title="應用3D 規則";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameButtonLinetype.labelLinetype.Title="視圖線型";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameButtonLinetype.linetypePushButton.Title="組態";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameProject3DPts.checkProject3DPts.Title="投影 3D 點";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameProject3DPts.checkProject3DPts.LongHelp="投影 3D 點";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameProject3DPts.project3DPtsPushButton.Title="組態";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameProject3DPts.project3DPtsPushButton.LongHelp="組態 3D 點投影";
+
+frameGenView.HeaderFrame.Global.Title="視圖產生";
+frameGenView.HeaderFrame.Global.LongHelp="定義使用在視圖產生的參數.";        
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.lbl.Title="視圖產生模式";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.lbl.LongHelp="定義如何產生視圖";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.combViewMod.LongHelp="定義如何產生視圖";
+ExactView="精確視圖";
+CGRView="CGR";
+PictureView="光柵";
+HRV="近似";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.pushRasterOptions.Title="組態";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.pushRasterOptions.LongHelp="組立 raster 選項";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.frmPict.chkAutoLOD.Title="自動細部層級";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.frmPict.chkAutoLOD.LongHelp="自動設定顯示和列印的 DPI ";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.frmPict.lbl1.Title="顯示的 DPI ";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.frmPict.lbl2.Title="列印的 DPI ";
+frameGenView.IconAndOptionsFrame.OptionsFrame.chkExactPreview.Title="產生視圖的精確預覽";
+frameGenView.IconAndOptionsFrame.OptionsFrame.chkExactPreview.LongHelp="即使您在顯示模式
+仍讓您檢視設計模式的視圖.
+如只要顯示 3D 文件的嵌入預覽
+請勿勾選此選項.";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmGenBox.checkGenBox.Title="只產生零件大於";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmGenBox.checkGenBox.LongHelp="只產生大於指定的零件大小";
+frameGenView.IconAndOptionsFrame.OptionsFrame.chkOcclusionCulling.Title="啟動 occlusion culling";
+frameGenView.IconAndOptionsFrame.OptionsFrame.chkOcclusionCulling.LongHelp="啟動或關閉 occlusion culling. 
+Occlusion culling improves display performance by avoiding redisplay of hidden elements,
+particularly useful when viewing highly compartmented scenes such as plants and buildings.";
+frameGenView.IconAndOptionsFrame.OptionsFrame.chkSelBodyInAss.Title="在組立中選擇本體";
+frameGenView.IconAndOptionsFrame.OptionsFrame.chkSelBodyInAss.LongHelp="啟動或關閉組立中的選擇本體.";
+
+
+frameClipping.HeaderFrame.Global.Title="Clipping 視圖";
+frameClipping.HeaderFrame.Global.LongHelp="定義在 clipping 視圖中使用的參數.";        
+frameClipping.IconAndOptionsFrame.OptionsFrame.chkDimClipNoShow.Title="置放不顯示尺寸在不可見幾何中";
+frameClipping.IconAndOptionsFrame.OptionsFrame.chkDimClipNoShow.LongHelp="置放不顯示尺寸和相關位置上標註在不可見幾何中";
+
+frameView3D.HeaderFrame.Global.Title="由 3D 而來的視圖";
+frameView3D.HeaderFrame.Global.LongHelp="定義由 3D 萃取而來的視圖參數.";        
+frameView3D.IconAndOptionsFrame.OptionsFrame.chkFTAAnnotLay.Title="保留 2D 萃取標註的置放和修飾";
+frameView3D.IconAndOptionsFrame.OptionsFrame.chkFTAAnnotLay.LongHelp="保留 2D 萃取標註的置放和修飾";
+frameView3D.IconAndOptionsFrame.OptionsFrame.chkGeomOf2DLView.Title="產生 2D 幾何元素";
+frameView3D.IconAndOptionsFrame.OptionsFrame.chkGeomOf2DLView.LongHelp="由佈圖視圖產生 2D 幾何元素";

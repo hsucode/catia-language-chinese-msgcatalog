@@ -1,0 +1,108 @@
+// COPYRIGHT DASSAULT SYSTEMES 2000
+//===================================================================
+//
+// Catalog for CATKweSetOfEquationsEditorDlg class
+//
+//===================================================================
+//
+// Usage notes:
+//
+//===================================================================
+//
+//  Mar 2000  Creation:           Dmitri Ouchakov, LEDAS Ltd. (vtn1)
+//  Jul 2000  Modification (adding SetInputsButton, etc.)
+//                                Dmitri Ouchakov, LEDAS Ltd. (vtn1)
+//  Sep 2000  Correction of mistakes: D. Ouchakov, LEDAS Ltd. (vtn1)
+//  Feb 2002  Add TabOptions            W.Sidorov, LEDAS Ltd. (vtn3)
+//  Nov 2002  Add ParsePushButton and SwitchPushButton
+//                                   A.Leshchenko, LEDAS Ltd. (anz)
+//  Jun 2003
+//===================================================================
+Active.Title = "方程式編輯器集 : /P1 啟動";
+Inactive.Title = "方程式編輯器集 : /P1 未啟動";
+
+text_editor.Help = "輸入本體的方程式編輯器集 ";
+text_editor.LongHelp = "此欄位為方程式設定編輯器. \n\n",
+                       "一組方程式讓您可在拘束下修改參數.\n\n",
+                       "須使用下列語 :\n",
+                       "PartBody\Pad.1\FirstLimit\Length * Real.5 == PartBody\Pad.1\SecondLimit\Length\n",
+					   "and\n",
+					   "PartBody\Pad.1\FirstLimit\Length * Real.5 + PartBody\Pad.1\SecondLimit\Length == 12mm\n\n",
+                       "您可直接輸入參數名稱,\n",
+                       "使用以下提供的編輯字典, 或 \n",
+                       "選擇相關參數的 3D 拘束.\n",
+                       "要顯示 3D 拘束, 您只要簡單在 \n",
+                       "3D 視窗或歷程樹中按一下即可.\n";
+
+
+InputsLabel.Title = "常數參數";
+OutputsLabel.Title = "未知參數";
+
+SetInputsButton.Title="設定輸入";
+SetInputsButton.Help="為方程式集設定輸入參數";
+SetInputsButton.ShortHelp="設定輸入參數";
+SetInputsButton.LongHelp="為方程式集設定輸入參數. \n 一個特別的對話框允許您將參數分成輸入(常數)和輸出(變數)兩個組合";
+
+ButtonFrame.MoveToInputsPushButton.ShortHelp = "Move  to input.";
+ButtonFrame.MoveToInputsPushButton.Help = "在輸入參數 (常數)中移動所選參數.";
+ButtonFrame.MoveToInputsPushButton.LongHelp = "在輸入參數中移動所選參數. 當解出方程式時, 輸入參數將被視為常數.";
+ButtonFrame.MoveToOutputsPushButton.ShortHelp = "Move  to output.";
+ButtonFrame.MoveToOutputsPushButton.Help = "在輸出參數 (未知)中移動所選參數.";
+ButtonFrame.MoveToOutputsPushButton.LongHelp = "在輸出參數中移動所選參數. 當解出方程式時, 輸出參數將被視為未知.";
+ButtonFrame.ParsePushButton.ShortHelp = "語法分析.";
+ButtonFrame.ParsePushButton.Help = "Parses the body of Set of Equations.";
+ButtonFrame.ParsePushButton.LongHelp = "Parses the body of Set of Equations.\nIdentifies variables and set them as unknown parameters.";
+ButtonFrame.SwitchPushButton.ShortHelp = "交換 輸入 <-> 輸出.";
+ButtonFrame.SwitchPushButton.Help = "交換輸入和輸出的參數.";
+ButtonFrame.SwitchPushButton.LongHelp = "交換輸入和輸出的參數. \n 所有輸入的參數變成為輸出等等.";
+
+
+InputsSelectorList.Help = "表列輸入參數 (常數).";
+InputsSelectorList.LongHelp = "清單顯示方程式中所選的輸入參數 \n 當解出方程式時, 輸出參數視為常數.";
+InputsSelectorList.ColumnTitle1 = "名稱";
+InputsSelectorList.ColumnTitle2 = "數值";
+
+OutputsSelectorList.Help = "表列輸出參數 (未知).";
+OutputsSelectorList.LongHelp = "清單顯示方程式中所選的輸出參數. \n 當解出方程式時, 輸出參數值將更改.";
+OutputsSelectorList.ColumnTitle1 = "名稱";
+OutputsSelectorList.ColumnTitle2 = "數值";
+
+
+TabOptions.EpsBaseText.Title = "精確";
+TabOptions.EpsBaseValue.Help = "輸入計算所需的精度值 [1e-10, 0.1]";
+TabOptions.EpsBaseValue.ShortHelp="輸入計算精度值";
+TabOptions.EpsBaseValue.LongHelp = "方程式精度值. \n
+                       參數將影響解法的精確度. \n
+                       可能的數值必須在 [1e-10, 0.1] 間.";
+
+TabOptions.GaussText.Title = "為高斯方法使的線性方程式";
+TabOptions.GaussValue.Title = "";
+
+TabOptions.StopText.Title = "顯示 停止 對話框";
+TabOptions.StopValue.Title = "";
+TabOptions.TimeText.Title = "最大計算時間 (秒)";
+TabOptions.TimeValue.Help = "輸入最大計算時間";
+TabOptions.TimeValue.ShortHelp="輸入最大計算時間";
+TabOptions.TimeValue.LongHelp = "最大計算時間. \n
+                       此參數為拘束計算時間.\n
+                       如果方程式計算時超過設定時間,\n
+                       "計算將停止.\n
+                       如果計算為 0, 計算時間將不拘束.";
+
+TabOptions.SetDefault.Title = "存回預設值";
+TabOptions.Empty1.Title = "    ";
+ParseWarning = "首次應用無法解出.";
+ParseWarning.Title = "首次應用警告";
+
+TabOptions.ErrorsText.Title = "產生展開錯誤說明";
+TabOptions.ErrorsValue.Title = "";
+
+TabOptions.SolverOptionsFrame.Title = "規則";
+TabOptions.StopOptionsFrame.Title   = "終止標準";
+
+Solve.Title = "解法";
+Solve.Help  = "尋找解法";
+Solve.LongHelp = "在模型中執行計算.";
+
+
+

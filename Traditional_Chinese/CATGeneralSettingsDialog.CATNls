@@ -1,0 +1,138 @@
+NotifyMode.Title = "警告";
+NotifyMode.Basic.Text = "重開 /P1 來使改變生效.";
+NotifyMode.NoAvailable.Text = "/P1 方式不具有軟體授權.";
+
+SaveNotify.Title = "警告";
+SaveNotify.IntervalChange.Text = "新的儲存間隔時間將會啟動於下一次儲存後.";
+SaveNotify.TypeChange.Text = "重開應用程式來使改變生效.";
+
+// The previous /P1 are replaced by the application name, and by the 
+// following resource if no application name is found.
+Notification.DefaultName = "您的應用系統";
+// -----------------------------------
+// Nouvelle interface utilisateur - R5
+// -----------------------------------
+UIFrame.HeaderFrame.Global.Title = "使用者介面形式";
+
+UIFrame.IconAndOptionsFrame.OptionsFrame.UIClassic.Title = "CATIA - P1";
+UIFrame.IconAndOptionsFrame.OptionsFrame.UIClassic.ShortHelp = 
+"典型產品組合的使用者界面.";
+UIFrame.IconAndOptionsFrame.OptionsFrame.UIClassic.LongHelp = 
+"啟動典型 P1 產品組合的使用者界面.";
+
+UIFrame.IconAndOptionsFrame.OptionsFrame.UIPower.Title = "CATIA - P2";
+UIFrame.IconAndOptionsFrame.OptionsFrame.UIPower.ShortHelp = 
+" P2 使用者界面 .";
+UIFrame.IconAndOptionsFrame.OptionsFrame.UIPower.LongHelp = 
+"啟動下列 P2 使用者界面 (只有在您使用 P2產品組合時 ): 大量輸入, 3D 圖示形式, 
+進階樹狀表現形式.";
+
+UIFrame.IconAndOptionsFrame.OptionsFrame.UIP3.Title = "CATIA - P3";
+UIFrame.IconAndOptionsFrame.OptionsFrame.UIP3.ShortHelp = 
+"P3 溶入使用者特徵.";
+UIFrame.IconAndOptionsFrame.OptionsFrame.UIP3.LongHelp = 
+"啟動 P3 溶入使用者特徵 (只有在您使用 P3產品組合時 ).";
+
+
+AutoSaveFrame.HeaderFrame.Global.Title = "儲存資料";
+AutoSaveFrame.IconAndOptionsFrame.OptionsFrame.NoSaveRadio.Title = "無自動備份";
+AutoSaveFrame.IconAndOptionsFrame.OptionsFrame.NoSaveRadio.ShortHelp = "無資料自動備份";
+AutoSaveFrame.IconAndOptionsFrame.OptionsFrame.NoSaveRadio.LongHelp = 
+"關閉自動資料備份.
+如果應用程式不正常結束,
+資料將不會在下一次開啟時載入.";
+
+AutoSaveFrame.IconAndOptionsFrame.OptionsFrame.SaveCheck.Title = "單位時間自動備份";
+AutoSaveFrame.IconAndOptionsFrame.OptionsFrame.SaveCheck.ShortHelp = 
+"單位時間自動備份. 
+適用於所有工作檯.";
+AutoSaveFrame.IconAndOptionsFrame.OptionsFrame.SaveCheck.LongHelp = 
+"如果您要固定時間儲存資料, 
+請設定目前文件的自動儲存時間.";
+AutoSaveFrame.IconAndOptionsFrame.OptionsFrame.SaveUnit.Title = "分鐘";
+AutoSaveFrame.IconAndOptionsFrame.OptionsFrame.SaveUnit.LongHelp = 
+"設定目前文件儲存後的每儲存間隔分鐘.";
+AutoSaveFrame.IconAndOptionsFrame.OptionsFrame.SaveHelp1.Title =
+"兩次自動儲存的間隔時間已被系統計入";
+AutoSaveFrame.IconAndOptionsFrame.OptionsFrame.SaveHelp2.Title = "從下一次儲存開始.";
+AutoSaveFrame.IconAndOptionsFrame.OptionsFrame.IncrSaveRadio.Title = "增量備份";
+AutoSaveFrame.IconAndOptionsFrame.OptionsFrame.IncrSaveRadio.ShortHelp = 
+"啟動回復上一次資料功能
+不適用於所有工作檯.";
+AutoSaveFrame.IconAndOptionsFrame.OptionsFrame.IncrSaveRadio.LongHelp = 
+"如果應用程式不正常結束,
+資料將會在下一次開啟時載入.";
+
+AutoLogoffFrame.HeaderFrame.Global.Title = "中斷";
+AutoLogoffFrame.IconAndOptionsFrame.OptionsFrame.LogoffCheck.Title = "之後自動中斷";
+AutoLogoffFrame.IconAndOptionsFrame.OptionsFrame.LogoffCheck.ShortHelp = "在使用者定義的時段自動中斷.
+不需要為此原因重開程序.";
+AutoLogoffFrame.IconAndOptionsFrame.OptionsFrame.LogoffCheck.LongHelp = "啟動在使用者定義的時段自動中斷.";
+AutoLogoffFrame.IconAndOptionsFrame.OptionsFrame.LogoffUnit.Title = "分鐘.";
+AutoLogoffFrame.IconAndOptionsFrame.OptionsFrame.LogoffUnit.ShortHelp = "在自動中斷時不啟動時間流失.";
+AutoLogoffFrame.IconAndOptionsFrame.OptionsFrame.LogoffUnit.LongHelp = "提供時間分鐘數來自動中斷時不啟動時間流失.";
+
+// -----------------------------------
+// Memory Warning
+// -----------------------------------
+MemWarningFrame.HeaderFrame.Global.Title = "記憶體警告";
+MemWarningFrame.IconAndOptionsFrame.OptionsFrame.MemWrnCheck.Title = "啟動記憶體警告在";
+MemWarningFrame.IconAndOptionsFrame.OptionsFrame.MemWrnCheck.ShortHelp = "當應用程式偵測到記憶體不足時啟動警告.";
+MemWarningFrame.IconAndOptionsFrame.OptionsFrame.MemWrnCheck.LongHelp = "當應用程式偵測到記憶體超過設定時啟動警告
+納入此功能毋須重新開啟工作.";
+MemWarningFrame.IconAndOptionsFrame.OptionsFrame.MemWrnUnit.Title = " % 記憶體使用率.";
+MemWarningFrame.IconAndOptionsFrame.OptionsFrame.MemWrnUnit.LongHelp = "設定記憶體使用超過設定值時啟動警告. ";
+MemWarningFrame.IconAndOptionsFrame.OptionsFrame.MemWrnUnit.ShortHelp = "記憶體使用超過設定值時啟動警告. ";
+// -----------------------------------
+
+UpdateFrame.HeaderFrame.Global.Title = "更新";
+UpdateFrame.IconAndOptionsFrame.OptionsFrame.AutoUpdate.Title = "自動地";
+UpdateFrame.IconAndOptionsFrame.OptionsFrame.AutoUpdate.ShortHelp = 
+"自動更新最上層特徵.";
+UpdateFrame.IconAndOptionsFrame.OptionsFrame.AutoUpdate.LongHelp = 
+"當沒有更新時自動更新最上層特徵.";
+
+UpdateFrame.IconAndOptionsFrame.OptionsFrame.ManualUpdate.Title = "手動地";
+UpdateFrame.IconAndOptionsFrame.OptionsFrame.ManualUpdate.ShortHelp =
+"當有修改時自動更新.";
+UpdateFrame.IconAndOptionsFrame.OptionsFrame.ManualUpdate.LongHelp =
+"當修改時自動更新特徵.最上層不會被更新.";
+UpdateFrame.IconAndOptionsFrame.OptionsFrame.CheckStop.Title = "碰到第一個錯誤時即停止"; 
+UpdateFrame.IconAndOptionsFrame.OptionsFrame.CheckStop.ShortHelp =
+"偵測到零件組有錯誤時停止更新.";
+UpdateFrame.IconAndOptionsFrame.OptionsFrame.CheckStop.LongHelp =
+"偵測到零件組有錯誤時停止更新程序."; 
+
+LinksFrame.HeaderFrame.Global.Title = "參考文件";
+LinksFrame.IconAndOptionsFrame.OptionsFrame.Link.Title = "載入參考文件";
+LinksFrame.IconAndOptionsFrame.OptionsFrame.Link.ShortHelp =
+"當載入複合文件時載入參考文件.";
+LinksFrame.IconAndOptionsFrame.OptionsFrame.Link.LongHelp =
+"當載入複合文件時載入參考文件.";
+
+LinksFrame.IconAndOptionsFrame.OptionsFrame.UUIDLink.Title = "使用檔名來解決鏈結方式";
+LinksFrame.IconAndOptionsFrame.OptionsFrame.UUIDLink.ShortHelp =
+"解決鏈結方式的檔名.";
+LinksFrame.IconAndOptionsFrame.OptionsFrame.UUIDLink.LongHelp =
+"選擇在複合文件中用來解決鏈結的檔案名稱.";
+
+ConfFrame.HeaderFrame.Global.Title="討論";
+ConfFrame.IconAndOptionsFrame.OptionsFrame.ConfDrvLabel.Title="討論驅動器";
+ConfFrame.IconAndOptionsFrame.OptionsFrame.ConfDrvLabel.LongHelp =
+"討論會的驅動器是由如何設定討論會來決定 (使用工具組 / 討論會 / 主機或客制選單項目).";
+ConfFrame.IconAndOptionsFrame.OptionsFrame.ConfNMDriver.Title="Microsoft? Windows? NetMeeting?";
+ConfFrame.IconAndOptionsFrame.OptionsFrame.ConfNMDriver.LongHelp =
+"此需要安裝 Microsoft Windows NetMeeting 3.01.";
+ConfFrame.IconAndOptionsFrame.OptionsFrame.ConfBBDriver.Title="基礎";
+ConfFrame.IconAndOptionsFrame.OptionsFrame.ConfBBDriver.LongHelp =
+"此需要設定主幹定義,
+且必須設定 CATBBDomainManager 環境變數至
+真實主幹管理節點名稱.
+主幹是唯一與 UNIX 機器會員討論的方式.";
+
+DnDFrame.HeaderFrame.Global.Title="拖放";
+DnDFrame.IconAndOptionsFrame.OptionsFrame.DragAndDrop.Title = "為了剪下 / 複製 / 貼上而啟動拖放.";
+DnDFrame.IconAndOptionsFrame.OptionsFrame.DragAndDrop.ShortHelp = 
+"為了剪下 / 複製 / 貼上而啟動拖放."; 
+DnDFrame.IconAndOptionsFrame.OptionsFrame.DragAndDrop.LongHelp = 
+"為了剪下 / 複製 / 貼上而啟動拖放."; 

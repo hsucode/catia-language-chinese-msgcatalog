@@ -1,0 +1,93 @@
+//--------------------------------------------
+// Resource file for CATGSMUIExtractMultiPanel class
+// En_US
+//--------------------------------------------
+
+PanelTitre="多重萃取定義";
+ElementsFrame.ElementsSelector.Title="所選元素清單";
+ElementsFrame.ElementsSelector.LongHelp="管理萃取元素清單";
+
+ExtractCombo0="點連續";
+ExtractCombo1="切線連續";
+ExtractCombo2="曲率連續";
+ExtractCombo3="未增生";
+ComboTitre="增生型式:";
+
+
+// number of the selected elements
+NumberColumnTitle="號碼";
+
+ElementsColumn="元素";
+PropagColumn="增生";
+PointThresholdColumn="距離門檻";
+TangentThresholdColumn="角度門檻";
+CurvatureThresholdColumn="曲率門檻";
+
+
+FraTolerance.Type.LongHelp="定義增生型式.
+您可以只建立已選元素 (BRep 物件),
+或依據相切狀態增生建立 [切線連續]
+或點連續 (萃取元素將不會顯示任何孔).";
+
+FraTolerance.CmbList.LongHelp="定義增生型式.
+您可以只建立已選元素 (BRep 物件),
+或依據相切狀態增生建立 [切線連續]
+或點連續 (萃取元素將不會顯示任何孔).";
+
+FraTolerance.ComplementaryMode.Title="互補模式";
+FraTolerance.ComplementaryMode.LongHelp="此選項可取消選擇之前被選的元素,
+然後選擇之前未選的元素.";
+
+FraTolerance.Federation.Title="進給";
+FraTolerance.Federation.LongHelp="勾選此此選項
+將會在選擇一個次元素後,
+建立一組被偵測到同一類的萃取結果.";
+
+FraTolerance.PointThreshold.Title="距離門檻";
+FraTolerance.FraTolerancePtCke.EnglobingFrame.IntermediateFrame.Spinner.Title="距離門檻";
+FraTolerance.PointThreshold.LongHelp="設定可以產生萃取的不連續距離.";
+
+FraTolerance.TangentThreshold.Title="角度門檻";
+FraTolerance.FraToleranceTgtCke.EnglobingFrame.IntermediateFrame.Spinner.Title="角度門檻";
+FraTolerance.TangentThreshold.LongHelp="設定可以產生萃取的不連續相切.";
+
+FraTolerance.CurvatureThreshold.Title="曲率門檻";
+FraTolerance.FraToleranceCurCke.EnglobingFrame.IntermediateFrame.Spinner.Title="曲率門檻";
+FraTolerance.CurvatureThreshold.LongHelp="設定可以產生萃取的以上曲率,
+r=1 關聯至連續曲率.
+較大的不連續將會計入的是較小的 r .";
+
+SeparFrame.LabelSepar.Title="要萃取的元素";
+LabelSeparType.Title="型式";
+
+ElementsFrame.ButtonFrame.ReplaceButton.Title="更換";
+ElementsFrame.ButtonFrame.ReplaceButton.LongHelp="允許您以其它元素更換所選元素.";
+ElementsFrame.ButtonFrame.RemoveButton.LongHelp="允許您從清單中移除所選元素.";
+ElementsFrame.ButtonFrame.RemoveButton.Title="移除";
+ElementsFrame.ButtonFrame.AddButton.Title="新增";
+ElementsFrame.ButtonFrame.AddButton.LongHelp="允許您在清單中新增元素.";
+
+
+DeleteLineTitre.Title="刪除次元素";
+DeleteLineTitre.LongHelp="用來取消使用者所選次元素的萃取";
+
+
+ObjetSel="已選物件";
+ObjetPropag="增生型式";
+ObjetPropagType1="點增生";
+
+ObjetSel.LongHelp="已選物件";
+ObjetPropag.LongHelp="增生型式";
+ObjetPropagType1.LongHelp="已選型式";
+
+CATGuiExtractMultiReRoute="Brep 已刪除. 請更換錯誤元素";
+CATGuiExtractMultiMauvaisePart="您無法在此增生型式從另一零件選擇一元素 \n. 更改成不增生";
+
+MoreInfo="顯示參數 >>";
+LessInfo="隱藏參數 <<";
+FraTolerance.MoreInfoBt.ShortHelp="隱藏或顯示延伸資訊";
+
+//CATGuiExtractMultiBesoinSupport="此內部邊界的增生型式需要有依附 \n 請選擇與此內部邊界鏈結的依附";
+CATGuiExtractMultiBesoinSupport="此內部邊界的增生型式需要有依附 \n 請選擇依附";
+
+CATGuiExtractMultiDimension2="所選物件尺寸不正確. 預期尺寸為: 2   所選擇的是: ";

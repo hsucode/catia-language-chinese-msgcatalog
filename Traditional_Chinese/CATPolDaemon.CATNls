@@ -1,0 +1,17 @@
+Usage = "Incorrect usage\nUsage: PolExecDaemon brokerHost [SerialPort] ConfigFilePath\nwhere:
+        \nbrokerHost is the name of the machine where the device broker runs
+        \nSerialPort is the port where the Polhemus is connected (ex: COM1,COM2,COM3 ou COM4)
+        \nConfigFilePath is the complete path inculding the configuration file name
+\n SerialPort is optional since it has to be set in the configuration file. 
+ If given, it has priority over the value of the configuration file.";
+
+ParseErr = "\n Parsing Error within the configuration file. \n";
+Hmd = "There cannot be several screens if one HMDSCREEN is present. \n";
+
+Detect = "追綜器";
+Responding = "回應中 \n";
+NotResponding = "未回應 \n";
+
+TrackErr = "錯誤接收. 重新訂定追綜器 ....\n";
+PortErr = "無法設定序列埠. 退出...\n";
+

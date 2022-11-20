@@ -1,0 +1,132 @@
+ERR_OSM_0001 =
+"/p1 : 無法開啟檔案 : /p2";
+
+ERR_OSM_0002 =
+"/p1 : 無法開啟檔案 : 檔案由未支援版本所撰寫 ; /p2";
+
+ERR_OSM_0003 =
+"/p1 : 無法開啟檔案 : 檔案毀損, 無效 OSM 資料 ; /p2";
+
+ERR_OSM_0004 =
+"/p1 : 發生內部錯誤, 檔案讀取失敗 ; /p2";
+
+ERR_OSM_0005 =
+"/p1 : 讀取無效檔案中 ; /p2";
+
+ERR_OSM_0011 =
+"/p1 : 無法儲存檔案 : /p2";
+
+ERR_OSM_0013 =
+"/p1 : 無法儲存檔案 : 檔案毀損, 無效 OSM 資料 ; /p2";
+
+ERR_OSM_0014 =
+"/p1 : 發生內部錯誤, 檔案儲存失敗 ; /p2";
+
+ERR_OSM_0015 =
+"/p1 : 無法儲存檔案 : 檔案毀損, 檔案儲存失敗 ; /p2";
+
+ERR_OSM_ABORT =
+"/p1 : 中止程序中 ; /p2";
+
+ERR_OSM_UPGRADE_OUTSIDE =
+"雖然文件 /p1 已開啟, 但仍偵測到資料儲存的警告. \n 要修正它, 請在文件 /p1 以外執行 CATDUAV5 指令.";
+
+ERR_OSM_UPGRADE_LITERAL=
+"OSM_RE002 : 開啟文件時部份物件已執行更新動作.\n";
+
+ERR_OSM_SELSETS =
+"/p1 : 為文件 /p2 所選擇物件因資料不一致導致無法載入 .\n";
+
+ERR_OSM_SANI =
+"/p1 : 載入儲存器 /p2 /p3.\n";
+
+ERR_OSM_CATBACK1 =
+"/p1 : 無法執行由 /p2 下至 /p3 的向下相容動作, 因為內含器 /p4 含有不一致資料.\n";
+
+ERR_OSM_CATBACK2 =
+"偵測到 /p1 錯誤: /p2\n";
+
+ERR_0029 = 
+"'/p'
+儲存運算失敗 : 寫入檔案時錯誤";
+
+ERR_0030 = 
+"'/p'
+開啟失敗 : 未識別錯誤";
+
+ERR_0031 = 
+"'/p'
+開啟失敗 : 檔案以較新的版本建立";
+
+ERR_0032 = 
+"'/p'
+開啟失敗 : 檔案毀損或無法讀取檔案";
+
+ERR_OSM_TRANSAC_00 =
+"登錄修改失敗. 可能導致檔案毀損. 程序中斷.";
+
+ERR_OSM_CLIPBOARD_244 =
+"OSM_S244 : 因為 /p1 指向剪貼簿導致無法執行儲存.";
+
+MES_OSM_1101 =
+"寫入時發生磁碟錯誤.";
+
+MES_OSM_1102 =
+"沒有足夠的磁碟空間可儲存.";
+
+MES_OSM_1103 =
+"沒有足夠的記憶體空間可處理.";
+
+MES_OSM_1100 =
+"寫入時發生不明原因.";      
+
+ERR_OSM_0000 =
+"/p1 : /p2 error(s), warning(s) or information(s) happened /p3 while opening;\n List of Errors : /p4 \n List of Warnings : /p5 \n List of Informations : /p6 \n";
+
+ERR_OSM_0010 =
+"/p1 : /p2 error(s), warning(s) or information(s) happened /p3 while saving;\n List of Errors : /p4 \n List of Warnings : /p5 \n List of Informations : /p6 \n";
+
+//Saving
+ERR_OSM_VE01 =
+"/p1 : Cannot save document due to data storage versionning. /p2";
+ERR_OSM_GE01 =
+"/p1 : Cannot save document due to data storage initialization. /p2";
+ERR_OSM_ME01 =
+"/p1 : Cannot save document due to insufficient memory for Save Operation. /p2";
+ERR_OSM_AL01 =
+"/p1 : Cannot save document due to internal error. /p2";
+ERR_OSM_DA01 =
+"/p1 : Cannot save document due to invalid OSM data. /p2";
+ERR_OSM_VI01 =
+"/p1 : Cannot save document due to incompatible OSM data. /p2";
+ERR_OSM_CA01 =
+"/p1 : Cannot save document due to Downward Compatibility restriction. /p2";
+ERR_OSM_IO01 =
+"/p1 : Cannot save document due to incompatible OSM data with storage properties. /p2";
+ERR_OSM_LI01 =
+"/p1 : Cannot save document due to forbidden operation on data during Save Operation. /p2";
+ERR_OSM_UN01 =
+"/p1 : Cannot save document due to unknown error during Save Operation. /p2";
+//Loading
+ERR_OSM_VE11 =
+"/p1 : Cannot open document due to data storage versionning. /p2";
+ERR_OSM_GE11 =
+"/p1 : Cannot open document due to data storage initialization. /p2";
+ERR_OSM_ME11 =
+"/p1 : Cannot open document due to insufficient memory for Open Operation. /p2";
+ERR_OSM_AL11 =
+"/p1 : Cannot open document due to internal error. /p2";
+ERR_OSM_DA11 =
+"/p1 : Cannot open document due to invalid OSM data. /p2";
+ERR_OSM_VI11 =
+"/p1 : Cannot open document due to incompatible OSM data. /p2";
+ERR_OSM_CA11 =
+"/p1 : Cannot open document due to Downward Compatibility restriction. /p2";
+ERR_OSM_IO11 =
+"/p1 : Cannot open document due to incompatible OSM data with Software Release. /p2";
+ERR_OSM_LI11 =
+"/p1 : Cannot open document due to forbidden operation on data during Open Operation. /p2";
+ERR_OSM_UN11 =
+"/p1 : Cannot open document due to unknown error during Open Operation. /p2";
+
+

@@ -1,0 +1,37 @@
+MfgCollisionCheckingFrame		= "過切檢查選項";
+
+MfgCollisionPartTabPage			= "部位";
+MfgCollisionDriveTabPage		= "驅動";
+MfgCollisionFixtureTabPage		= "檢查";
+MfgCollisionGuideTabPage        = "Guides";
+
+MfgActivePart				= "刀具切削部位      ";
+MfgFullAssembly				= "刀具組合件";
+
+MfgCollisionPart				= "啟動";
+
+MfgCollisionDrive				= "啟動";
+MfgCollisionDrive.LongHelp		= "避免與導引元素干涉.
+如不勾選, 副程式刀具路徑和導引元素間將不會檢查.";
+
+MfgCollisionThkPart			= "最大允許過切";
+MfgCollisionThkDrive			= "最大允許過切";
+MfgCollisionThkCheck			= "最大允許過切";
+MfgCollisionThkPart.LongHelp		= "指定副程式動作時, 刀具與零件間的允許干涉.";
+MfgCollisionThkDrive.LongHelp		= "指定副程式動作時, 刀具與零件間的允許干涉.";
+MfgCollisionThkCheck.LongHelp		= "指定副程式動作時, 刀具與零件間的允許干涉.";
+
+MfgCollisionTolPart			= "精確度";
+MfgCollisionTolDrive			= "精確度";
+MfgCollisionTolCheck			= "精確度";
+MfgCollisionTolPart.LongHelp		= "指定相關零件裕度的最大可接受精確度誤差.";
+MfgCollisionTolDrive.LongHelp		= "指定相關零件裕度的最大可接受精確度誤差.";
+MfgCollisionTolCheck.LongHelp		= "指定相關零件裕度的最大可接受精確度誤差.";
+
+MfgCollisionCoveringCheck = "逆轉模式";
+MfgCollisionCoveringCheck.LongHelp = "以限制檢查曲面的空削來減少加工時間";
+
+// Long Helps
+CollisionFrame.CollisionCheckingModeFrame.LongHelp = "Lets you perform the collision checking on the cutting part or on the complete tool assembly.";
+GlobalPartCollisionFrame.ManualFrame.LongHelp = "Activates the collision checking on the part.";
+GlobalDriveCollisionFrame.ManualFrame.LongHelp = "Activates the collision checking on the driving elements (if any).";

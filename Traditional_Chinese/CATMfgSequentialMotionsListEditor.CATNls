@@ -1,0 +1,125 @@
+// General
+//--------------------
+SeqMotionRank          = "等級";
+pMenuEditSeqMotion     = "性質";
+pMenuDeleteSeqMotion   = "刪除";
+pMenuResetSeqMotion    = "重設";
+MfgSeqMotionName	   = "名稱";
+MfgSeqMotionStatus     = "情形";
+
+_pEditButton.ShortHelp     = "載入所選元素編輯器.";
+_pDeleteButton.ShortHelp   = "刪除所選元素.";
+_pResetButton.ShortHelp    = "重設所選元素.";
+_pMoveUpButton.ShortHelp   = "移動所選記錄至清單之前.";
+_pMoveDownButton.ShortHelp = "移動所選記錄至清單之後.";
+
+pMenuCutSeqMotion          = "剪下";
+pMenuCopySeqMotion         = "複製";
+pMenuPasteSeqMotion        = "貼上";
+pMenuEditParameter        = "編輯 : ";
+
+// LMG
+//--------------------
+
+MfgLatheSequentialStatus       = "情形";
+MfgLatheSeqOperationNotComplete = "未完成";
+MfgLatheSeqNotComplete         = "(!)";
+MfgLatheSeqNotComputable        = "(NC)";
+
+MfgSeqMotionType			 = "形式";
+MfgLatheEOFeedrateMode         = "進給";
+
+MfgLatheEOLocalSpindleMode     = "刀具速度";
+
+MfgLatheEOAxialCheckOffset     = "軸向檢查預留";
+MfgLatheEORadialCheckOffset    = "徑向檢查預留";
+MfgLatheEOGlobalCheckThickness = "檢查預留";
+MfgLatheEOAxialDriveOffset     = "軸向第二檢查預留";
+MfgLatheEORadialDriveOffset    = "徑向第二檢查預留";
+MfgLatheEOGlobalDriveThickness = "第二檢查預留";
+MfgLatheEOLeftClearAngle       = "左側間隙角度";
+MfgLatheEORightClearAngle      = "右側間隙角度";
+MfgLatheEOValueAngle           = "角度值";
+MfgLatheEOValueDistance        = "距離值";
+MfgLatheEOGuidingPoint         = "導引點";
+MfgLatheToolCompensation       = "刀具補償";
+MfgLatheEODeltaCheckMode       = "檢查模式";
+MfgLatheEODriveElemType        = "驅動形式";
+MfgLatheEODriveDir	           = "驅動方向";
+
+I_MfgLatheGoStd.ShortHelp    = "標準 Go 或 Go Go";
+I_MfgLatheGoStd.LongHelp     = "在清單所選元素後插入標準 Go 或 Go Go";
+I_MfgLatheGoDelta.ShortHelp  = "Go 增量";
+I_MfgLatheGoDelta.LongHelp   = "在清單所選元素後插入標準 Go 增量";
+I_MfgLatheInDirV.ShortHelp   = "方向";
+I_MfgLatheInDirV.LongHelp    = "在清單所選元素後插入標準 Go 方向";
+I_MfgLatheFollow.ShortHelp   = "沿著";
+I_MfgLatheFollow.LongHelp    = "在清單所選元素後插入標準 Go 沿著";
+I_MfgPPInstruction.ShortHelp = "PP 字元";
+I_MfgPPInstruction.LongHelp  = "在清單所選元素後插入 PP 字元";
+
+PPInstruction	       = "PP";
+
+SequentialLatheHelp = "第一個點必須要是 GO 至一個點上以定義初始位置.
+按一下行的表頭以獲得說明. \n 選擇線來顯示刀具位置. \n 雙按來編輯一線. \n 雙按右鍵來自訂清單";
+
+MfgSeqMotionStatus.Help = "行狀況說明 : (!) = 未完成. (NC) = 無法計算.
+紅色的標籤頁表示至少有一行是 (!) 或 (NC).";
+
+MfgSeqMotionType.Help               = "動作型式 : Go-Go, Go 標準, 增量, 沿著, 方向, PPWord,...";
+MfgSeqMotionName.Help               = "動作名稱";
+MfgLatheToolCompensation.Help       = "顯示刀具補償型式.
+情形 未找到: 目前的刀具未定義所選的補償型式.";
+MfgLatheEOFeedrateMode.Help         = "使用進給的參考或局部進給數值";
+MfgLatheEOLocalSpindleMode.Help     = "如有定義的局部轉速";	
+MfgLatheEOAxialCheckOffset.Help     = "軸向預留數值";
+MfgLatheEORadialCheckOffset.Help    = "徑向預留數值";
+MfgLatheEOGlobalCheckThickness.Help = "預留數值";
+MfgLatheEOAxialDriveOffset.Help     = "在驅動面或第二檢查面的軸向預留";
+MfgLatheEORadialDriveOffset.Help    = "在驅動面或第二檢查面的徑向預留";
+MfgLatheEOGlobalDriveThickness.Help = "在驅動面或第二檢查面的預留預留";
+MfgLatheEOLeftClearAngle.Help       = "左側間隙角度值";
+MfgLatheEORightClearAngle.Help      = "右側間隙角度值";
+MfgLatheEOValueAngle.Help           = "角度值";
+MfgLatheEOValueDistance.Help        = "距離值";
+MfgLatheEOGuidingPoint.Help         = "導引點,右或左 (只適用在環糟刀具).";
+MfgLatheEODeltaCheckMode.Help       = "增量動作型式 : 軸向和徑向, 線和距離, 線和角度和點間的距離.";
+MfgLatheEODriveElemType.Help        = "向量動作的線或角度";
+MfgLatheEODriveDir.Help             = "相同或逆轉 (只適用在向量動作和沿著)";
+// AMG
+//--------------------
+
+MfgLocalToolAxisStrategy       = "導引";
+Mfg5Axis4XNormalConstraintFlag = "啟動四軸";
+MfgLocalDriveThicknessToAdd    = "在驅動上增加預留";
+Mfg5AxisLocalStoppingCondition		= "停止情形";
+Mfg5AxisLocalReStartingDirection	= "重新開始方向";
+Mfg5AxisLocalSwapSideOnDS			= "驅動上的刀具側";
+
+// PMG
+//--------------------
+PtToPtNotComplete       = "(!)";
+PtToPtMotionName        = "動作";
+PtToPtMotionType        = "形式";
+PtToPtLocalFeedrates    = "局部進給";
+MfgPtDeltaMode          = "增量模式";
+MfgPtDeltaX             = "DX";
+MfgPtDeltaY             = "DY";
+MfgPtDeltaZ             = "DZ";
+MfgPtDeltaDistance      = "距離";
+MfgPtDeltaAngle		= "角度";
+MfgGlobalPartThickness  = "零件預留";
+MfgGlobalDriveThickness = "驅動預留";
+MFG_PT_DRIVE_POS        = "驅動上位置";
+MfgOffsetRelim1         = "檢查預留";
+MfgCheckStopMode        = "檢查上位置";
+
+I_MfgPtToPtEditSeqGoto.ShortHelp = "至點";
+I_MfgPtToPtEditSeqGoto.LongHelp  = "在清單所選元素後插入至點動作";
+I_MfgPtToPtEditSeqGoDelta.ShortHelp = "增量";
+I_MfgPtToPtEditSeqGoDelta.LongHelp  = "在所選元素後插入新的增量動作";
+I_MfgPtToPtEditSeqPDC.ShortHelp  = "至位置";
+I_MfgPtToPtEditSeqPDC.LongHelp   = "在清單所選元素後插入至位置動作";
+
+
+

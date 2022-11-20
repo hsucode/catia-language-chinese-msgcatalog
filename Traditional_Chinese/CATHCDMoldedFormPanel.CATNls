@@ -1,0 +1,39 @@
+Title = "Molded Form Definition";
+ 
+// Type
+// =================================================================================
+
+Frame1.FrameType.LabList.Title = "形式: ";
+
+// Selecteur du plan de reference
+// =================================================================================
+Frame1.RefPlaneFrame.RefPlaneLabel.Title = "參改元素: ";
+Frame1.RefPlaneFrame.RefPlaneLabel.LongHelp = "指定用來定義模子型狀的參考平面.";
+Frame1.RefPlaneFrame.LabelOffValue.Title = "偏移: ";
+// Bouton de choix de l'orientation
+// =================================================================================
+Frame2.ButtonInvert.Title = "另一側";
+Frame2.ButtonInvert.LongHelp = "延伸預視中另一側的模子形式.";
+
+// Bouton d'activation de l'orientation management
+// =================================================================================
+Frame2.CheckOri.Title = "模子形式方位";
+Frame2.CheckOri.LongHelp = "讓您檢查和定義正確的方位組合.";
+
+// Liste du naming des orientations
+// =================================================================================
+FraManagement.FraNameOri.LabListNameOri.Title = "方位組合名稱: ";
+FraManagement.FraNameOri.LabListNameOri.LongHelp = "讓您選擇正確的方位組合.";
+FraManagement.PushSwitchNameOri.Title = "更換方位名稱";
+FraManagement.PushSwitchNameOri.LongHelp = "逆轉命名方位.";
+
+
+// Bouton d'activation du sketch management
+// =================================================================================
+Frame1.CheckProfiles.Title = "模子形式外形";
+Frame1.CheckProfiles.LongHelp = "讓您編輯模子形式外形. \n 模子形式由兩依附草圖定義.";
+
+FraSketcher.FraProfile.LabProfile.Title = "外形:";
+FraSketcher.FraProfile.LabProfile.LongHelp = "以船的橫切面定義模子型狀.";
+FraSketcher.FraGuide.LabGuide.Title = "導引:";
+FraSketcher.FraGuide.LabGuide.LongHelp = "以船的縱切面定義模子型狀.";

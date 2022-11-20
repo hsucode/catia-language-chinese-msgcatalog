@@ -1,0 +1,36 @@
+// Reviewed by LGK Jan 04, 2005
+
+//******************************************************************************
+// Command
+//******************************************************************************
+CAT2DLLayoutViewFiltersCmd.UndoTitle="佈圖視圖過濾器";
+
+Title="佈圖視圖過濾器";
+
+_pFrameList._pMultiListFilters.ColumnTitle1 = "名稱";
+//Display filter
+_pFrameList._pFrameButton._pPushButtonDisplay.Title = "顯示過濾器...";
+_pFrameList._pFrameButton._pPushButtonDisplay.Help = "建立新的顯示過濾器";
+_pFrameList._pFrameButton._pPushButtonDisplay.LongHelp = "建立新的顯示過濾器.";
+//Mask filter
+_pFrameList._pFrameButton._pPushButtonMask.Title = "遮覆過濾器...";
+_pFrameList._pFrameButton._pPushButtonMask.Help = "建立新的遮覆過濾器";
+_pFrameList._pFrameButton._pPushButtonMask.LongHelp = "建立新的遮覆過濾器.";
+//Long help for multilist
+_pFrameList._pMultiListFilters.LongHelp = "表列已存過濾器. \n\n- 連按兩次過濾器來更名 \n\n- 選擇一個或以上來刪除它 \n\n- 選擇一個過濾器來更名";
+
+_pFrameList._pFrameButton._pPushButtonNewFrom.Title = "新的由...";
+_pFrameList._pFrameButton._pPushButtonNewFrom.Help = "建立新的過濾器";
+_pFrameList._pFrameButton._pPushButtonNewFrom.LongHelp = "由所選過濾器來建立新的過濾器";
+_pFrameList._pFrameButton._pPushButtonDelete.Title = "刪除";
+_pFrameList._pFrameButton._pPushButtonDelete.Help = "刪除目前過濾器";
+_pFrameList._pFrameButton._pPushButtonDelete.LongHelp = "刪除所選過濾器";
+_pFrameList._pFrameButton._pPushButtonEdit.Title = "編輯...";
+_pFrameList._pFrameButton._pPushButtonEdit.Help = "編輯目前過濾器";
+_pFrameList._pFrameButton._pPushButtonEdit.LongHelp = "編輯所選過濾器";
+
+NoFilter = "(無過濾器)";
+
+
+
+

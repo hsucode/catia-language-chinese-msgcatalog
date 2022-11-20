@@ -1,0 +1,87 @@
+// Continuity
+Frame0.Continuity.Title                   = "連續性";
+Frame0.Continuity.LongHelp                = "對齊和參考物件間的階數連續性";
+Frame0.Continuity.ContText.Title          = "曲面";
+Frame0.Continuity.ContText.LongHelp       = "1. 選擇對齊物件 - 2. 選擇參考物件";
+Frame0.Continuity.ContCombo.LongHelp      = "階數連續性 - 曲面或曲線";
+Frame0.Continuity.SwitchEdgeCont.Title    = "邊線";
+Frame0.Continuity.SwitchEdgeCont.LongHelp = "無法同時與兩者作動";
+Frame0.Continuity.EdgeCombo.LongHelp      = "沿共邊附近邊線的階數連續性";
+
+// Projection
+Frame0.ProjectFrame.Title                 = "投影";
+Frame0.ProjectFrame.LongHelp              = "投影 - 參考說明";
+Frame0.ProjectFrame.ProjectCombo.LongHelp = "選擇- 投影方向";
+Project.Normal                            = "垂直";
+Project.Planar                            = "平面形式";
+Frame0.ProjectFrame.AdaptCompass.Title    = "適應羅盤";
+Frame0.ProjectFrame.AdaptCompass.LongHelp = "投影方向設成羅盤的 Z 方向";
+
+// Deviation
+Frame0.FrameDiag.Title                       = "變異";
+Frame0.FrameDiag.LongHelp                    = "變異的最大值";
+Frame0.FrameDiag.PositionDeviation.LongHelp  = "G0: 距離 - 絕對";
+Frame0.FrameDiag.NormalDeviation.LongHelp    = "G1: 切線間或垂直間的夾角 - 絕對";
+Frame0.FrameDiag.CurvatureDeviation.LongHelp = "G2: 半徑錯誤 - 相對";
+Frame0.FrameDiag.G3Deviation.LongHelp        = "G3: 角度 (Envelope of curvature hedgehog) - 絕對";
+
+// Both
+Frame0.SpecialOptions.ReferenceFrame.Title                                    = "兩者";
+Frame0.SpecialOptions.ReferenceFrame.LongHelp                                 = "修改對齊和參考物件";
+Frame0.SpecialOptions.ReferenceFrame.BothOptionFrame.BothSwitch.Title         = "兩者";
+Frame0.SpecialOptions.ReferenceFrame.BothOptionFrame.BothSwitch.LongHelp      = "關閉: 只修改對齊件 - 開啟: 兩物件同時修改";
+Frame0.SpecialOptions.ReferenceFrame.BothOptionFrame.ExtensionSwitch.Title    = "延伸";
+Frame0.SpecialOptions.ReferenceFrame.BothOptionFrame.ExtensionSwitch.LongHelp = "兩物件在延伸處相交, 以代替平均點. 對曲線不適用.";
+Frame0.SpecialOptions.ReferenceFrame.BothOptionFrame.ModifyEdgeOnly.Title     = "邊線";
+Frame0.SpecialOptions.ReferenceFrame.BothOptionFrame.ModifyEdgeOnly.LongHelp  = "G1, G2: 只有共邊才修改. G3: 詳見說明";
+
+//Advanced
+Frame0.SpecialOptions.AdvancedFrame.Title              = "進階";
+Frame0.SpecialOptions.AdvancedFrame.LongHelp           = "G1, G2, G3 連續性並無 G0 連續性";
+Frame0.SpecialOptions.AdvancedFrame.GapSwitch.Title    = "間隙";
+Frame0.SpecialOptions.AdvancedFrame.GapSwitch.LongHelp = "對應間隙無法同時與兩者作動";
+Gap.GapExtrapol                                        = "延伸";
+Gap.GapParallel                                        = "平行";
+Gap.GapOffFix                                          = "偏移固定";
+Gap.GapOffNormal                                       = "偏移垂直";
+Frame0.SpecialOptions.AdvancedFrame.GapCombo.LongHelp  = "選擇 - 間隙形式";
+Frame0.SpecialOptions.AdvancedFrame.G2Fix.Title        = "G3 含固定曲率";
+Frame0.SpecialOptions.AdvancedFrame.G2Fix.LongHelp     = "G3 連續, 如需要 G3 無 G2 連續";
+Frame0.SpecialOptions.AdvancedFrame.G3Fix.Title        = "G3 含 3 排";
+Frame0.SpecialOptions.AdvancedFrame.G3Fix.LongHelp     = "G3 連續, 不修改第四排控制點";
+
+// Exact
+Frame0.ExactFrame.Title                = "精確";
+Frame0.ExactFrame.LongHelp             = "較滿足需求但不保留參數. 檢查變異";
+Frame0.ExactFrame.ExactSwitch.Title    = " ";
+Frame0.ExactFrame.ExactSwitch.LongHelp = "精確對應無法保持參數";
+Frame0.ExactFrame.ExactCombo.LongHelp  = "為精確對應尋求階數連續";
+
+// ChangeReference
+Frame0.ChangeReferenceButton.Title    = "更改參考";
+Frame0.ChangeReferenceButton.LongHelp = "更改對齊和參考物件";
+
+// Options
+Frame0.Options.Title               = "選項";
+Frame0.Options.LongHelp            = "對應結果的變化";
+Frame0.Options.Iter.Title          = "反覆";
+Frame0.Options.Iter.LongHelp       = "精進. 觀察變異";
+Frame0.Options.Partly.Title        = "部份";
+Frame0.Options.Partly.LongHelp     = "對應曲面只有部份對應到參考曲面";
+Frame0.Options.Diffus.Title        = "擴散";
+Frame0.Options.Diffus.LongHelp     = "修改最多排的控制點";
+Frame0.Options.Inside.Title        = "內側";
+Frame0.Options.Inside.LongHelp     = "對齊曲面的邊線投影至考曲面上";
+Frame0.Options.BasicPatch.Title    = "基本區面";
+Frame0.Options.BasicPatch.LongHelp = "對齊依附曲面, 不考慮裁剪邊界";
+
+// Associative
+Frame0.AssociativityFrame.Title                       = "相關";
+Frame0.AssociativityFrame.LongHelp                    = "相關模式";
+Frame0.AssociativityFrame.Associativity.Title         = " ";
+Frame0.AssociativityFrame.Associativity.LongHelp      = "相關模式";
+Frame0.AssociativityFrame.AssociativityCombo.LongHelp = "相關模式";
+Associativity.Tick                                    = "Tick";
+Associativity.Tock                                    = "Tock";
+Frame0.AssociativityFrame.TolCheck.Title              = "精確度";
+Frame0.AssociativityFrame.TolCheck.LongHelp           = "Works only with Tick - 不考慮精確度";

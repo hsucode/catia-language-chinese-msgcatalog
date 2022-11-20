@@ -1,0 +1,85 @@
+//---------------------------------------
+// Resource file for CATSheUserStampPanel class
+// En_US
+//---------------------------------------
+// Revue LGK le 27/01/04
+
+FrameGeneral.Frame038.StampingElementsFrame.DieFrame.DieLabel.Title = "模 : ";
+FrameGeneral.Frame038.StampingElementsFrame.DieFrame.LongHelp=
+"指定模來計算印記.";
+
+FrameGeneral.Frame038.PositionFrame.Frame016.Label018.Title = "在牆上定位";
+FrameGeneral.Frame038.PositionFrame.LongHelp =
+"Specifies the stamp position on the wall :
+reference element for rotation, rotation angle
+and origin point.";
+
+FrameGeneral.Frame038.PositionFrame.Frame017.RotationRefLabel.Title = "旋轉基準 : ";
+FrameGeneral.Frame038.PositionFrame.Frame017.RefRotationSelector.LongHelp = 
+"Specifies reference element for stamp rotation on the wall.";
+
+FrameGeneral.Frame038.PositionFrame.Frame017.AngleLabel.Title = "旋轉角度 : ";
+FrameGeneral.Frame038.PositionFrame.Frame017.AngleLabel.LongHelp = 
+"Specifies the stamp rotation angle on the wall.";
+
+FrameGeneral.Frame038.PositionFrame.Frame017.OriginLabel.Title = "原點: ";
+FrameGeneral.Frame038.PositionFrame.Frame017.OriginSelector.LongHelp = 
+"Specifies the stamp origin point on the wall.";
+
+FrameGeneral.Frame038.FilletFrame.Frame025.Label026.Title = "圓角";
+FrameGeneral.Frame038.FilletFrame.Frame031.RadiusLabel.Title = "R1 半徑 : ";
+FrameGeneral.Frame038.FilletFrame.Frame031.LongHelp = 
+"Specifies the fillet radius, if fillet creation is requested.";
+
+FrameGeneral.Frame038.FilletFrame.Frame029.NoFilletCheckButton.Title = "無圓角";
+FrameGeneral.Frame038.FilletFrame.Frame029.NoFilletCheckButton.LongHelp = 
+"Specifies that no fillet should be created.";
+
+FrameGeneral.Frame038.FacesFrame.CutOutLabel.Title = "要切除的修剪面 (C) : ";
+FrameGeneral.Frame038.FacesFrame.CutOutLabel.LongHelp = 
+"Specifies cutouts on the wall. 
+Select the punch faces that cutout the wall.";
+
+FrameGeneral.Frame038.StampingElementsFrame.FacesFrame.OpenLabel.Title = "要開啟的修剪面 (O) : ";
+FrameGeneral.Frame038.StampingElementsFrame.FacesFrame.OpenLabel.LongHelp = 
+"Specifies opening on the wall. The user must select 
+the punch faces that open the wall.";
+
+FrameGeneral.Frame038.StampingElementsFrame.PunchFrame.PunchLabel.Title = "壓模 : ";
+FrameGeneral.Frame038.StampingElementsFrame.PunchFrame.LongHelp = 
+"Specifies the punch to compute the stamp.";
+
+FrameGeneral.Frame038.TypeFrame.DieType.ShortHelp = "含模具";
+
+FrameGeneral.Frame038.TypeFrame.FacesType.ShortHelp = "以開啟";
+
+FrameGeneral.Frame038.TypeFrame.TypeLabel.Title = "型式 : ";
+FrameGeneral.Frame038.TypeFrame.LongHelp = 
+"Specifies the user stamp type: 
+- With die: the stamp is computed with the punch and
+the die, you can select a die.
+- With opening: the punch can open the wall. 
+You must select the punch faces that open the wall.
+You must select at least one punch face, otherwise you must
+choose the With die user stamp type.";
+
+FrameGeneral.Frame038.DirectionFrame.DirectionPushButton.Title = "逆轉方向";
+FrameGeneral.Frame038.DirectionFrame.DirectionPushButton.Help = 
+"Invert the stamping direction.";
+
+FrameGeneral.Frame038.OnContextFrame.OnContextCheckButton.Title = "定位在 context 上";
+FrameGeneral.Frame038.OnContextFrame.OnContextCheckButton.Help = 
+"The user stamp is created on context if the option is checked.";
+
+FrameGeneral.Frame038.StampingElementsFrame.OpenCatalogButton.Help =
+"Load an existing stamping feature from a catalog.";
+FrameGeneral.Frame038.StampingElementsFrame.OpenCatalogButton.ShortHelp = "開啟目錄";
+
+//
+WindowTitle= "使用者定義印記定義";
+OneFaceTitle= "修剪面";
+SeveralFacesTitle= "修剪面";
+OriginTitle= "點在";
+HAxisTitle= "H 軸";
+DefaultTitle= "預設";
+

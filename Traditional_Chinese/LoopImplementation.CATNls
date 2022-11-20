@@ -1,0 +1,45 @@
+
+// Loop implementation
+IncoherentListSize.Request.Expert="設計錯誤";
+IncoherentListSize.Diagnostic.Expert="The size of the output list (/p1) is not equal with the value of step (/p2).";
+IncoherentListSize.Advice.Expert="Check that an object is added to the list at each loop.";
+
+IncoherentListSize.Request.User="設計錯誤";
+IncoherentListSize.Diagnostic.User="The size of the output list (/p1) is not equal with the value of step (/p2).";
+IncoherentListSize.Advice.User= "連絡專家.";
+
+
+NoComponentListWithType.Request.Expert="執行錯誤";
+NoComponentListWithType.Diagnostic.Expert="No component list with type /p1 exist on the technological object /p2.";
+NoComponentListWithType.Advice.Expert="檢查 CATFct.";
+
+NoComponentListWithType.Request.User="設計錯誤";
+NoComponentListWithType.Diagnostic.User="No component list with type /p1 exist on the technological object /p2.";
+NoComponentListWithType.Advice.User= "連絡專家.";
+
+NotAgregatedInCATIA.Request.Expert="執行錯誤";
+NotAgregatedInCATIA.Diagnostic.Expert="Cannot add /p1 into the component list /p2 of /p3. /p4 is not agregated under /p5.";
+NotAgregatedInCATIA.Advice.Expert="檢查在 CATIA 中的設計.";
+
+NotAgregatedInCATIA.Request.User="設計錯誤";
+NotAgregatedInCATIA.Diagnostic.User="Cannot add /p1 into the component list /p2 of /p3. /p4 is not agregated under /p5.";
+NotAgregatedInCATIA.Advice.User= "連絡專家.";
+
+
+InternalError.Request.Expert="內部錯誤";
+InternalError.Diagnostic.Expert="/p1";
+InternalError.Advice.Expert="/p1";
+
+InternalError.Request.User="設計錯誤";
+InternalError.Diagnostic.User="/p1";
+InternalError.Advice.User="/p1";
+
+
+ChildCreationError.Request="A /p1 behavior cannot be created under /p2.";
+ChildCreationError.Diagnostic="";
+ChildCreationError.Advice="";
+
+NbOutOfRange.Request="/p1 is out of the range /p2 and /p3.";
+NbOutOfRange.Diagnostic="";
+NbOutOfRange.Advice="";
+

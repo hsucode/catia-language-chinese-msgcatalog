@@ -1,0 +1,78 @@
+
+TPSFrameDimension.HeaderFrame.Global.Title="尺寸建立 ";
+TPSFrameDimension.HeaderFrame.Global.LongHelp="Defines the way to position and to line-up
+a dimension during its creation process.";
+
+TPSFrameDimension.IconAndOptionsFrame.OptionsFrame.TPSFrame.TPSCheckDimSketch.Title="游標後尺寸 (CTRL toggles)";
+TPSFrameDimension.IconAndOptionsFrame.OptionsFrame.TPSFrame.TPSCheckDimSketch.LongHelp="Dimension follows the mouse cursor. 
+Pressing the \"CTRL\" key lets you 
+temporarily activate or deactivate this mode.";
+
+TPSFrameDimension.IconAndOptionsFrame.OptionsFrame.TPSFrame.TPSCheckDimLinePosRelative.Title="尺寸線和幾何元素間的等量偏移";
+TPSFrameDimension.IconAndOptionsFrame.OptionsFrame.TPSFrame.TPSCheckDimLinePosRelative.LongHelp="Lets the dimension line remain at a defined distance 
+of the geometry when the geometry is moving.";
+
+TPSFrameDimension.IconAndOptionsFrame.OptionsFrame.FrameLinePosValue.TPSLabelDimLinePosValue.Title="預設尺寸線或幾何元素距離: ";
+TPSFrameDimension.IconAndOptionsFrame.OptionsFrame.FrameLinePosValue.TPSLabelDimLinePosValue.LongHelp="Defines the default distance between dimension line and geometry
+at creation and/or when moving the geometry.";
+
+TPSFrameDimension.IconAndOptionsFrame.OptionsFrame.TPSFrameDimCircle.lblFTADimCircle.Title="在圓或圓柱或旋轉上建立尺寸";
+
+TPSFrameDimension.IconAndOptionsFrame.OptionsFrame.TPSFrameDimCircle.TPSFrameDimCircleRadio.radFTADimCenter.Title="中心或軸";
+TPSFrameDimension.IconAndOptionsFrame.OptionsFrame.TPSFrameDimCircle.TPSFrameDimCircleRadio.radFTADimCenter.LongHelp="By default, creates dimensions on circle's or cylinder's
+or revolute's center or axis.";
+
+TPSFrameDimension.IconAndOptionsFrame.OptionsFrame.TPSFrameDimCircle.TPSFrameDimCircleRadio.radFTADimEdge.Title="邊線";
+TPSFrameDimension.IconAndOptionsFrame.OptionsFrame.TPSFrameDimCircle.TPSFrameDimCircleRadio.radFTADimEdge.LongHelp="By default, creates dimensions on circle's or cylinder's
+or revolute's edge.";
+
+TPSFrameMove.HeaderFrame.Global.Title="移動";
+TPSFrameMove.HeaderFrame.Global.LongHelp="Defines the way a dimension is moved.
+See also the \"Manipulators\" tab.";
+
+TPSFrameMove.IconAndOptionsFrame.OptionsFrame.TPSCheckDimSnap.Title="啟動抓取 (SHIFT toggles) ";
+TPSFrameMove.IconAndOptionsFrame.OptionsFrame.TPSCheckDimSnap.LongHelp="Activates snapping when moving dimensions.
+Use the \"Configure\" button to customize 
+the way the dimension snaps.
+Pressing the \"Shift\" key lets you 
+temporarily activate or deactivate this mode.";
+TPSFrameMove.IconAndOptionsFrame.OptionsFrame.TPSPushDimSnap.Title="自訂...";
+TPSFrameMove.IconAndOptionsFrame.OptionsFrame.TPSPushDimSnap.LongHelp="Configures the way dimension snaps
+its position on the grid or its value between symbols";
+TPSFrameMove.IconAndOptionsFrame.OptionsFrame.TPSCheckDimMoveSubPart.Title="只移動所選次零件 ";
+TPSFrameMove.IconAndOptionsFrame.OptionsFrame.TPSCheckDimMoveSubPart.LongHelp="Allows to move only the selected sub-part of the dimension
+(dimension line, value, or dimension line secondary).";
+
+
+TPSFrameLineUp.HeaderFrame.Global.Title="對齊";
+TPSFrameLineUp.HeaderFrame.Global.LongHelp="Defines default parameters used to line-up a dimension,
+at creation or in the Line-Up command. You can identify systems or ignore them.";
+
+TPSFrameLineUp.IconAndOptionsFrame.OptionsFrame.TPSFrameSpinner.TPSLabelLineUpBaseOffset.Title="  相對參考的預設偏移:";
+TPSFrameLineUp.IconAndOptionsFrame.OptionsFrame.TPSFrameSpinner.TPSLabelLineUpBaseOffset.LongHelp="Defines the default value for the offset to the reference,
+for length/distance/angle dimensions and for radius/diameter dimensions.";
+TPSFrameLineUp.IconAndOptionsFrame.OptionsFrame.TPSFrameSpinner.TPSLineUpBaseOffsetLength.LongHelp="Defines the default value for the offset to the reference,
+for length/distance/angle dimensions.";
+TPSFrameLineUp.IconAndOptionsFrame.OptionsFrame.TPSFrameSpinner.TPSLineUpBaseOffsetAngle.LongHelp="Defines the default value for the offset to the reference,
+for radius/diameter dimensions.";
+
+TPSFrameLineUp.IconAndOptionsFrame.OptionsFrame.TPSFrameSpinner.TPSLabelLineUpOffset.Title="  尺寸間的預設偏移:";
+TPSFrameLineUp.IconAndOptionsFrame.OptionsFrame.TPSFrameSpinner.TPSLabelLineUpOffset.LongHelp="Defines the dDefault value for the offset between dimensions,
+for length/distance/angle dimensions
+and for radius/diameter dimensions.";
+TPSFrameLineUp.IconAndOptionsFrame.OptionsFrame.TPSFrameSpinner.TPSLineUpOffsetLength.LongHelp="Default value for the offset between dimensions,
+for length/distance/angle dimensions.";
+TPSFrameLineUp.IconAndOptionsFrame.OptionsFrame.TPSFrameSpinner.TPSLineUpOffsetAngle.LongHelp="Defines the default value for the offset between dimensions,
+for radius/diameter dimensions.";
+
+TPSFrameLineUp.IconAndOptionsFrame.OptionsFrame.TPSFrameCheck.TPSCheckLineUpStackVal.Title="對齊疊層尺寸數值";
+TPSFrameLineUp.IconAndOptionsFrame.OptionsFrame.TPSFrameCheck.TPSCheckLineUpStackVal.LongHelp="Aligns all the values of a group of stacked dimensions
+on the value of the smallest dimension of the group.";
+TPSFrameLineUp.IconAndOptionsFrame.OptionsFrame.TPSFrameCheck.TPSCheckLineUpCumulVal.Title="對齊累積尺寸數值";
+TPSFrameLineUp.IconAndOptionsFrame.OptionsFrame.TPSFrameCheck.TPSCheckLineUpCumulVal.LongHelp="Aligns all the values of a group of cumulated dimensions
+on the value of the smallest dimension of the group.";
+
+TPSFrameLineUp.IconAndOptionsFrame.OptionsFrame.TPSFrameCheck.TPSLineUpAutoFunnel.Title="自動新增折彎";
+TPSFrameLineUp.IconAndOptionsFrame.OptionsFrame.TPSFrameCheck.TPSLineUpAutoFunnel.LongHelp="Automatically adds a funnel
+whenever the value of the dimension
+cannot be displayed correctly without it.";

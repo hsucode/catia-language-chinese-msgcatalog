@@ -1,0 +1,31 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+Title = "ENOVIA 傳送至";
+ InputMultiList.ColumnTitle1 = "文件名稱";
+ InputMultiList.ColumnTitle2 = "文件型式";
+ OutputMultiList.ColumnTitle1 = "文件名稱";
+ OutputMultiList.ColumnTitle2 = "文件型式";
+ OutputMultiList.ColumnTitle3 = "目標名稱";
+Frame046.SelectAll.Title = "選擇全部";
+Frame046.SelectOne.Title = "選擇一個";
+Frame046.UnSelectAll.Title = "取消選擇全部";
+Frame046.UnSelectOne.Title = "取消選擇一個";
+Frame052.Browse.Title = "瀏覽...";
+Frame052.RenameTarget.Title = "目標更名";
+// END WIZARD REPLACEMENT ZONE
+
+WarningRenameTarget.MsgNoSel="應用更改目標名稱前必須先在輸出多重清單中選擇一文件.";
+WarningRenameTarget.MsgMultiSel="您在多重清單中選擇多份文件, 只可選擇一份文件.";
+WarningRenameTarget.MsgTitle="目標更名警告";
+
+ErrorSelection.MsgBody ="所選不是文件或可能無法使用.";
+ErrorSelection.MsgTitle="錯誤";
+
+WarningFileAlreadyExist.MsgTitle="警告檔案已存在";
+WarningFileAlreadyExist.Msg="下一個檔案已存在所選目錄:\n/P1";
+
+WarningAlreadyInSession.MsgTitle="警告";
+WarningAlreadyInSession.Msg="下一個檔案已存在程序中: \n/P1\n 您要繼續萃取或先儲存它 ?";
+
+NotExistingDir="警告, 所選目錄不存在";
+NotWritableDir="警告, 所選目錄寫入保護";
+NotDir="目錄不良";

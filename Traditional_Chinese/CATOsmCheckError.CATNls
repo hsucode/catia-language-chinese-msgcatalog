@@ -1,0 +1,230 @@
+MESS_FIXED = 
+"         --> 能夠固定.";
+
+MESS_UNFIXED =
+"         --> 不能夠固定.";
+
+MESS_BEGCHECK =
+"###### 檢查程序報告 #####";
+
+MESS_ENDCHECK =
+"###### 檢查程序報告結束 #####";
+
+MESS_BEGCLEAN =
+"###### 清理程序報告 #####";
+
+MESS_ENDCLEAN =
+"###### 清理程序報告結束 #####";
+
+MESS_SEVERITY =
+"嚴謹水準";
+
+MESS_CANBECORR =
+"能夠改正錯誤: ";
+
+MESS_ERRCORR =
+"改正錯誤: ";
+
+MESS_NOERR =
+"沒有錯誤發現";
+
+ERR_UNFIXED = 
+"破壞的資料不能夠固定.";
+
+ERR_DOC0 =
+"文件 '/p' 沒有根源容器, 以致無法載入.";
+
+ERR_DOC0_SHORT =
+"文件不能讀取.";
+
+ERR_DOC2 =
+"文件 '/p' 與自己本身相鏈結.";
+
+ERR_DOC2_SHORT =
+"文件發生鏈結問題 (無效鏈結).";
+
+ERR_DOC4 =
+"不一致的輪廓在指向的文件上 '/p'.";
+
+ERR_DOC8 =
+"無效的計數器在指向的文件上 '/p'.";
+
+ERR_DOC5 =
+"破壞連結到指向的文件上 '/p'.";
+
+ERR_DOC3_SHORT =
+"文件上的連結問題 (缺少鏈結).";
+
+ERR_DOC4_SHORT =
+"文件上的連結問題 (缺少鏈結).";
+
+ERR_DOC5_SHORT =
+"破壞的連結在文件上 (無效鏈結).";
+
+ERR_DOC8_SHORT = 
+"文件上的連結問題 (無效的計數器導致無效率鏈結).";
+
+ERR_DOC4_CLEAN =
+"連結的輪廓放在文件上.";
+
+ERR_DOC5_CLEAN =
+"鏈結已被萃取.";
+
+ERR_AGG1 = 
+"這個物件 '/p1' (tag='/p2') 類型 '/p3' 不知道它的分件 '/p4' (tag='/p5').";
+
+ERR_AGG1_SHORT = 
+"在所有者和它的分件之一之間打破了聚集連結.";
+
+ERR_REMOVE =
+"這個物件 '/p' 被移除.";
+
+ERR_AGG2 = 
+"這個物件 '/p1' (tag='/p2') 類型 '/p3' 不知道它的所有者 '/p4' (tag='/p5').";
+
+ERR_AGG2_SHORT = 
+"在一個分件和它的所有者之間打破了聚集連結.";
+
+ERR_BRO1 = 
+"這個物件 '/p1' (tag='/p2') 類型 '/p3' 不知道它的複本 '/p4' ('/p5').";
+
+ERR_BRO1_SHORT = 
+"在一個參考和它的複本之一之間打破了連結.";
+
+ERR_CAT0 = 
+"CatalogManager 名為 '/p1' (tag='/p2') 有連結和 '/p3' 非有效的目錄(s).";
+
+ERR_CAT0_SHORT = 
+"一個 CatalogManager 物件上的問題.";
+
+ERR_CAT0_CLEAN =
+"移除非有效的連結在 CatalogManager '/p' 上面.";
+
+ERR_HIE1 = 
+"錯配了階層在複本 '/p1' (tag='/p2') 類型 '/p3' 和它的參考 '/p4' (tag='/p5') 類型 '/p6' 之間.";
+
+ERR_HIE1_SHORT = 
+"在一個複本和它的參考之間錯配了階層.";
+
+ERR_HIE1_CLEAN =
+"物件的起始(Startup) '/p' 設定成它的參考的起始(startup)  .";
+
+ERR_HIE2_SHORT = 
+"在一個複本和它的起始(startup)之間錯配了階層.";
+
+ERR_HIE2 = 
+" metaobjects 的錯配類型在一個複本 '/p1' (tag='/p2') 類型 '/p3' 和它的起始(startup) '/p4' (tag='/p5') 類型 '/p6'之間.";
+ERR_LOSTO_SHORT = 
+"一個以上應用檔案內容未含資料.";
+
+
+ERR_HIE3_SHORT = 
+"新建複本間階層不對, 它參考擁有的.";
+
+ERR_HIE3 =
+"類型 '/p3' 的參考物件 '/p1' (tag='/p2') 擁有者不是參考的擁有者.";
+
+ERR_HIE5 = 
+"無法找到型式  '/p3' 的專用分件 '/p1' (tag='/p2') 的參考.";
+
+ERR_HIE5_SHORT = 
+"無法找到專用分件的參考.";
+
+ERR_HIE5_CLEAN =
+"專用分件 '/p' 的參考設成起始.";
+
+ERR_DOC6_SHORT = 
+"一個以上應用檔案內容未含資料.在 VPM 中為高優先度.";
+
+ERR_DOC61 = 
+"文件 '/p' 內含器為空的, 可能會造成 VPM 的錯誤:";
+
+ERR_DOC62 = 
+"\n                     '/p' 應用檔案內容未儲存檔案.";
+
+ERR_DOC6_CLEAN =
+"儲存在空的應用文件內含器.";
+ERR_VAL0 = 
+"物件 '/p1' (tag='/p2') 至少有一個屬性有錯誤的品質.";
+
+ERR_VAL0_SHORT =
+"屬性的不良品質.";
+
+ERR_DOC1_SHORT = 
+"文件發生鏈結問題.";
+
+ERR_DOC1 = 
+"鏈結遺漏指向文件型式.";
+
+ERR_DOC1_CLEAN =
+"指向文件型式設定在鏈結上.";
+
+ERR_URL1_SHORT = 
+"文件的知識應用發生鏈結問題.";
+
+ERR_URL1 = 
+"文件知識應用發生文件指向型式問題.";
+
+ERR_URL1_CLEAN =
+"未使用的知識應用鏈結已刪除.";
+
+ERR_LIF11 = 
+"物件 '/p1' (tag='/p2') 未使用且沒有相關延伸.";
+
+ERR_LIF11_SHORT = 
+"應用內含器中的未使用內部物件.";
+
+ERR_EXT0 = 
+"因沒有相關基礎特徵, 導致物件 '/p1' (tag='/p2') 無法到達.";
+
+ERR_EXT0_SHORT = 
+"在應用內含器中的無法到達物件.";
+
+LINKS_RETREIVED = "可萃取鏈鏈結";
+
+LINKS_CANNOT_RETREIVED = "因為無固定值導致不可萃取鏈結. 最大為";
+
+LINKS_CANNOT_RETREIVED2 = " 不可萃取鏈結." ;
+
+ERR_DOC10_SHORT = "The document has several containers with the same user Id.";
+
+ERR_DOC101 = 
+"The document '/p1' has several containers '/p2'.";
+
+ERR_DOC10_CLEAN = "Wrongly stored applicative data has been cleaned.";
+
+ERR_DOC10_NOTCLEAN = "Configuration of applicative data is not cleanable. Some applicative data are not correctly stored, they may not be displayed correctly.";
+
+ERR_EXT1 = 
+"Object '/p1' (tag='/p2') has many extension features of the same type.";
+
+ERR_EXT1_SHORT = 
+"Problem with extension features on an object.";
+
+ERR_EXT1_CLEAN =
+"Extensions structure of object '/p' has been upgraded.";
+
+ERR_EXT2 = 
+"Object '/p1' (tag='/p2') has a mismatched structure.";
+
+ERR_EXT2_SHORT = 
+"Extension structure mismatched in an applicative container.";
+
+ERR_EXT2_CLEAN =
+"Structure of object '/p' has been repaired.";
+
+ERR_UPD0 = 
+"Object '/p1' (tag='/p2') has a cyclical dependency upon itself.";
+
+ERR_UPD0_SHORT = 
+"Object '/p1' (tag='/p2') has a cyclical dependency upon itself.";
+
+ERR_UPD0_CLEAN =
+"Cyclic input on object '/p1' has been unset.";
+
+
+
+
+
+
+

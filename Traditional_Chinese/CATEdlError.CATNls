@@ -1,0 +1,27 @@
+NullPointerError.Request    = "試圖使用指示器";
+NullPointerError.Diagnostic = "無效指示器除外";
+NullPointerError.Advice     = "接觸 DS";
+
+NullHandlerError.Request    = "試圖使用處理者(handler)";
+NullHandlerError.Diagnostic = "無效指示器除外";
+NullHandlerError.Advice     = "接觸  DS";
+
+FunctionalEntityNotRealized.Request    = "要求: 不一致的功能性裝置";
+FunctionalEntityNotRealized.Diagnostic = "偵錯: 功能性裝置未與實體裝置鏈結";
+
+PhysicalEntityNotRealized.Request    = "要求: 不一致的實體裝置";
+PhysicalEntityNotRealized.Diagnostic = "偵錯: 實體裝置未與功能性裝置鏈結";
+
+ParentNotRealized.Request    = "要求: 增加功能性鏈結";
+ParentNotRealized.Diagnostic = "偵錯: 實體裝置與功能性裝置間未建立鏈結 \n 因為實體裝置的上層不是真實的";
+ParentNotRealized.Advice     = "建議: 增加功能性鏈結至實體裝置上層裝置";
+
+NotCurrentCatalogue.Request    = "要求: 置放實體裝置";
+NotCurrentCatalogue.Diagnostic = "偵錯: 目前目錄未定義";
+NotCurrentCatalogue.Advice     = "建議: 使用目錄瀏覽器命令來初始化目前目錄";
+
+SetElectricalBehaviorFailure.Request    = "嚐試增加電子行為:";
+SetElectricalBehaviorFailure.Diagnostic = "增加電子行為失敗";
+
+ProtectionUpdateError.Title = "更新錯誤";
+ProtectionUpdateError.Text = "One protective covering parameter has an odd value\nwith respect to the protective covering geometry.";

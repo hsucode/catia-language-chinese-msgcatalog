@@ -1,0 +1,28 @@
+Help.text = "用法: 
+chcatenv   -e environment_name           指定環境名稱  
+           -a user|global                指定環境特性  
+           -var   variable=value         設定或更新變數值
+           [-new]                        建立以 -var 建立的變數選擇
+           [-com]                        為新變數增加說明. 
+           [-del]                        刪除在 -var 選項中所指定的變數. 只有新的變數可刪除
+           [-d storage_directory_name]   指定環境儲存目錄" ;
+MustBeSystemAdmin.Text                       = "修改整體環境設定需具有管理者權限."; 
+NoCommentOnOfficialVar.Text                  = "只可加說明於新變數.";
+BadFormatedVariable.Text                     = "在 -var 選項中所指定的數值無效.";
+UnableToWriteFile.Text                       = "無法儲存修改過的環境檔案.";
+NoReadAccessInDir.Text                       = "在 -d 選項中指定的目錄不具讀取權限";
+NoWriteAccessInDir.Text                      = "在 -d 選項中指定的目錄不具寫入權限";
+DirDoesntExist.Text                          = "在 -d 選項中指定的目錄無法存取";
+EnvFileDoesntExist.Text                      = "未找到指定環境.";
+UnableToReadEnvFile.Text                     = "chcatenv 無法讀取環境檔案.";
+InvalidEnvNameOption.Text                    = "環境名稱必須以 \"-e\" 選項指定.";
+VariableNotFound.Text                        = "環境檔案內未找到變數. ";
+CannotDelOfficalVar.Text                     = "無法刪除變數. 只可刪除新的變數.";  
+NoVarSpecified.Text                          = "必須指定 \"-var\" 選項.";
+NoDirModeOption.Text                         = " \"-a\" 選項必須設定成 使用者 或 總體 或由 \"-d\" 選項指定儲存目錄.";
+InvalidEnvModeOption.Text                    = " \"-a\" 選項必須設定成 使用者 或 總體 .";
+GeneralFailure.Text                          = "初始化 chcatenv 時發生錯誤."; 
+NoNewOfficialVariable.Text                   = "/P1 己存在, 請選擇其它變數名稱.";
+
+
+

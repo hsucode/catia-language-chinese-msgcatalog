@@ -1,0 +1,38 @@
+// =============================================================================
+// =============================================================================
+// COPYRIGHT DASSAULT SYSTEMES PROVENCE 2001
+// =============================================================================
+// CATCloudCtrRepositCmd : Resource file for NLS purpose related to Constrained Reposit
+// =============================================================================
+// Implementation Notes:
+// =============================================================================
+// 01-Jun-2001 LJL/RBD: Creation
+// 02-Mar-2003 RBD: Ajouts messages pour les Statistiques
+// 25-Feb-2004 JLH: Nettoyage de la messagerie : suppression des messages non a traduire.
+// 14-Jun-2005 YSN: Use uniformed terms (Cloud to Align, Reference, Constraint Element etc.)
+// =============================================================================
+
+CATCloudCtrRepositCmd.state1.Message ="選擇要對齊的雲形點";
+CATCloudCtrRepositCmd.state3.Message ="選擇新增來新增拘束後再按應用來更新";
+CATCloudCtrRepositCmd.state4.Message ="選擇雲形點中的第一個拘束元素來對齊";
+CATCloudCtrRepositCmd.state5.Message ="在參考中選擇第二個拘束元素";
+Warning.Title = "對齊拘束資訊" ;
+Warning.Text1 = "未找到解. 請檢查輸入拘束和優先度間的一致性.";
+Warning.Text3 = "結果更新時錯誤.";
+Warning.Text4 = "內部錯誤.";
+Warning.Text5 = "此元素已在雲形點中被當做拘束元素. 無法同時在參考中再當做拘束元素.";
+Warning.Text6 = "此元素已在參考中被當做拘束元素. 無法同時在雲形點中被當做拘束元素來對齊.";
+Warning.Text7 = "至少有一個固定未符合. 請檢查輸入拘束和優先度間的一致性, 並請確定順序未顛倒 (雲形點中的對齊元素/參考中的元素).";
+Warning.Text8 = "雲形點中的相同對齊拘束在參考中已存在. 請在參考中選擇另一拘束元素.";
+Warning.Text9 = "至少有一個拘束狀態未符合. 詳細請查看統計視窗. 檢查輸入拘束的一致性, 尤其是輸入的順序 (雲形點中的對齊元素/參考中的元素). 釋放部份拘束再試著重新對齊.";
+NumRecal	= "對齊 #";
+NumCtr		= "拘束 #";
+Type		= ", 型式 : ";
+Point		= "點";
+Line		= "線";		
+Plane		= "平面";
+Dist		= "  距離.="; 
+Angl		= "  角度.="; 
+TolLin		= "線性精度 = ";
+TolAng		= "角度精度 = ";
+NotCalculated = " 未計算";

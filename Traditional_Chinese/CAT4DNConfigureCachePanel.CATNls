@@ -1,0 +1,36 @@
+Title="組態";
+
+AccessibleDirFrame.AccessibleDirLabel.Title="可用目錄";
+AccessibleDirFrame.AccessibleDirSelectorList.LongHelp=
+"可用目錄為可被使用者使用的目錄.
+此目錄由系統管理員定義且不可被修改.";
+
+AddRemoveFrame.AddToCurrentPushB.ShortHelp="新增至目前目錄";
+
+AddRemoveFrame.DeletePushB.ShortHelp="從目前目錄移除";
+
+CurrentDirFrame.CurrentDirLabel.Title="目前目錄";
+
+CurrentDirFrame.CurrentDirSelectorList.LongHelp=
+"It's a read-only cache which is not necessarily located on the machine.
+Several directories can be defined for the releases cache. If the simplified
+file cannot be found in the local cache, the released directories are browsed
+in the order listed to check whether it is located in one of them. If it is still
+not found, the component is tesselated and saved in the local cache";
+
+CurrentDirFrame.OrderFrame.BrowsePushB.ShortHelp="選擇路徑";
+
+CurrentDirFrame.OrderFrame.MoveUpPushB.ShortHelp="上";
+CurrentDirFrame.OrderFrame.MoveUpPushB.LongHelp="上.
+修改瀏覽已發行目錄的次序.";
+
+CurrentDirFrame.OrderFrame.MoveDownPushB.ShortHelp="下";
+CurrentDirFrame.OrderFrame.MoveDownPushB.LongHelp="下.
+修改瀏覽已發行目錄的次序.";
+
+DirectoryReleaseBrowser.Title="至發行暫存器的路徑";
+ErrorMessage0="未定義";
+ErrorMessage1="環境變數 AVAILABLE_CACHE_DIR_PATH 未設定.";
+ErrorMessage2a="此檔案 ";
+ErrorMessage2b=" 無法開啟.";
+ErrorMessage2c="由 AVAILABLE_CACHE_DIR_PATH 指向";

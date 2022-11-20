@@ -1,0 +1,75 @@
+//Pour l'editeur de base
+//-------------------------------
+frMode.rbmode_select.Title="選擇特徵";
+frMode.rbmode_select.ShortHelp = "在 3D 或歷程樹中選擇, 將編輯文字區域";
+frMode.rbmode_select.Help = "在 3D 或歷程樹中選擇, 將編輯文字區域";
+frMode.rbmode_select.LongHelp = "在 3D 或歷程樹中選擇, 將編輯文字區域";
+
+frMode.rbmode_filter.Title = "過濾器";
+frMode.rbmode_filter.ShortHelp = "在 3D 或歷程樹中選擇, 將會過濾參數清單";
+frMode.rbmode_filter.Help = "在 3D 或歷程樹中選擇, 將會過濾參數清單";
+frMode.rbmode_filter.LongHelp = "在 3D 或歷程樹中選擇, 將會過濾參數清單";
+
+frMode.cbincremental.ShortHelp = "勾選可在最佳化模式工作 (增量參數表列含選擇建購)";
+frMode.cbincremental.LongHelp = "在此編輯器中, 您可在或不在最佳化模式工作 (增量模式).\n",
+												 "增量意思為您必須選擇漸進特徵 \n",
+												 "來存取它們的參數. 它是執行模式. \n",
+												 "非增量意思為所有應用參數在開始時就已知.";
+
+frMode.AutoformatButton.ShortHelp="勾選可自動決定文字格式";
+frMode.ErrorButton.ShortHelp="勾選可有自動顯示文法錯誤";	
+frMode.ButtonsFrame.ShowLineButton.ShortHelp="亮度顯示文法錯誤行並提供顯示文法錯誤";
+frMode.ButtonsFrame.TypeWizardButton.ShortHelp="顯示語言瀏覽器對話框";
+
+frEditor.text_editor.Help = "編輯文字";
+
+frMode.pbclear.Title = "清除";
+frMode.pbclear.Help = "清除文字區域";
+frMode.pbclear.LongHelp = "清除文字區域.";
+frMode.pbclear.ShortHelp = "清除文字區域.";
+
+pbwizard.Title = "精靈";
+pbwizard.Help = "開啟編輯器精靈";
+pbwizard.LongHelp = "從過濾器編輯器表列中開啟內含編輯器字典的精靈 ,\n",
+						      "您將可存取參數, 數學方程式, 字串命令, 單位 ...\n",
+							  "按一下結果項目表列您將可編輯方程式或命令.";
+
+//Pour l'editeur de formules
+//-------------------------------------
+FormulaEditorDlg.Title = "公式編輯器 : /P1";
+FormulaEditorDlg.LongHelp = "在此編輯器中, 您可更改參名稱和編輯方程式或命令. \n\n",
+                                    		"要編輯文字, 您可以 :\n\n",
+											"  - 使用鍵盤 ,\n",	
+											"  或 \n",
+											"  - 在模型中選擇尺寸 (顯示所選尺寸 \n",
+											"    在樹狀視圖或模型中的特徵) ,\n",
+											"  或 \n",
+											"  - 開啟精靈和從結果表列中選取項目. \n\n",
+											"一旦您開啟精靈, 它仍舊 .\n";
+param_editor.LongHelp = "您可在欄位中鍵入新名稱來更改方程式的參數名稱.";
+FormulaEditorDlg.text_editor.LongHelp = " 此欄位為公式編輯器 .\n\n",
+                                  " 什麼是公式 ? : \n",
+								  " 公式是組合功能, 操作子, 常數, 或其它參數來定義參數值 \n\n",
+								  " 此組合結果必須對應參數形式 .\n",
+								  " 如, 用來計算長度的參數, \n",
+								  " 參數計算結果就必須是長度. \n\n" ,
+								  " 您可在公式中輸入 :\n",
+								  "  - sin (x * PI) * 3 + 12\n",
+								  "  - max (x,y)\n",
+								  "  - etc.... \n\n",
+								  " 我們建議您指定確定的使用常數單位, 否則 \n",
+								  " 預設值為國際系統單位. \n",
+								  " (Ex: 10->10mm or MyRealParameter->MyRealParameter*1mm)\n\n",
+								  " 編輯公式, 您可使鍵盤, 在模型中或使用精靈來選擇尺寸. \n",
+								  " 顯示尺寸, 您可在模型或歷程樹中選擇需要的特徵 \n";
+param_name.error.Title = "錯誤";
+param_name.error.Text = "另一個參數已經有此名稱";
+
+SyncQuestion="此參數已經鏈結至無參數特徵, 所以您輸入的時侯不為被更新. \n 當更新全部時, 您要更新此關係嗎 ? \n (您可使用關係性質來更改此行為)";
+SyncQuestionHd="自動更新 ?";
+
+ValSyncQuestion="當輸入更新時,此關聯因為非同步參數以致不會被更新. \n 總體更新時要更新此關聯嗎? \n (您可在關聯內容中修改此性質)";
+ValSyncQuestionHd="自動更新 ?";
+
+ErrorQuestion="\n 您確定要回到編輯器中嗎 (否則關聯將會中斷)\n";
+RestoreButton="顯示對話框";	

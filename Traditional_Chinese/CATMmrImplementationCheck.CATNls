@@ -1,0 +1,81 @@
+//======================================================================
+//   Errors messages relative to adhesion
+//======================================================================
+
+NoOverloadedAdhesion="\"/p1\" startup isn't extended for \"/p2\" (default is \"/p3\"), whereas it's a 3D geometrical element or adheres to CATI3DGeometricalElement.";
+MissingAdhesion="\"/p1\" startup isn't extended for \"/p2\", whereas it's a 3D geometrical element or adheres to CATI3DGeometricalElement.";
+UnrelevantAdhesion="\"/p1\" startup adheres to \"/p2\" interface, whereas it's not a 3D geometrical element and doesn't adhere to CATI3DGeometricalElement.";
+AdaptatorNotUsed="\"/p1\" startup implementation of \"/p2\" doesn't derive from \"/p3\".";
+
+
+//======================================================================
+//   Errors messages relative to CATIInputDescription implementation
+//======================================================================
+
+UnsetSuccessfullGetFeatureType="\"/p\" has unset feature type.";
+ValuedFeatureTypeFailedGetFeatureType="\"/p\" has valued feature type but method GetFeatureType fails.";
+CreationFeatureWithModifiedFeaturesNotReturningEFail="\"/p\" is a creation feature and GetListOfModifiedFeatures does not return E_FAIL.";
+CreationFeatureWithNotVoidListOfModifiedFeatures="\"/p\" is a creation feature and GetListOfModifiedFeatures does not return a void list.";
+CreationFeatureWithGetMainInputNotReturningEFail="\"/p\" is a creation feature and GetMainInput does not return E_FAIL.";
+ContextualCreationFeatureWithModifiedFeaturesNotReturningEFail="\"/p\" is a contextual creation feature and GetListOfModifiedFeatures does not return E_FAIL.";
+ContextualCreationFeatureWithNotVoidListOfModifiedFeatures="\"/p\" is a contextual creation feature and GetListOfModifiedFeatures does not return a void list.";
+ContextualCreationFeatureWithGetMainInputReturningEFail="\"/p\" is a contextual creation feature and GetMainInput returns E_FAIL.";
+ContextualCreationFeatureWithGetMainInputReturningNul="\"/p\" is a contextual creation feature and GetMainInput returns a nul feature.";
+ModificationFeatureWithModifiedFeaturesReturningEFail="\"/p\" is a modification feature and GetListOfModifiedFeatures returns E_FAIL.";
+ModificationFeatureWithVoidListOfModifiedFeatures="\"/p\" is a modification feature and GetListOfModifiedFeatures returns a void list.";
+ModificationFeatureWithGetMainInputReturningEFail="\"/p\" is a modification feature and GetMainInput returns E_FAIL.";
+ModificationFeatureWithGetMainInputReturningNul="\"/p\" is a modification feature and GetMainInput returns a nul feature.";
+ModificationFeatureWithGetMainInputNotReturningModifiedFeature="\"/p\" is a modification feature and GetMainInput does not return a modified feature.";
+ModificationFeatureShapeWithInvalidTypeOfModifiedFeature="\"/p1\" is a shape modification feature and modified feature \"/p2\" is not a shape.";
+ModificationFeatureSolidWithInvalidTypeOfModifiedFeature="\"/p1\" is a solid modification feature and modified feature \"/p2\" is not a solid.";
+ModificationFeatureVolumeWithInvalidTypeOfModifiedFeature="\"/p1\" is a volume modification feature and modified feature \"/p2\" is not a volume.";
+ModificationFeatureNotShapeWithInvalidTypeOfModifiedFeature="\"/p1\" is not a shape modification feature and modified feature \"/p2\" is a shape.";
+ModificationFeatureNotSolidWithInvalidTypeOfModifiedFeature="\"/p1\" is not a solid modification feature and modified feature \"/p2\" is a solid.";
+ModificationFeatureNotVolumeWithInvalidTypeOfModifiedFeature="\"/p1\" is not a volume modification feature and modified feature \"/p2\" is a volume.";
+GetAbsorbingsFailed="The method to retrieve aborbing feature \"/p1\" from the absorbed feature \"/p2\" fails.";
+FeatureNotReturnedByGetAbsorbings="Feature \"/p1\" isn't retrieved from the absorbed feature \"/p2\".";
+SolidResultINNotAbsorbed="Solid feature \"/p1\" doesn't absorb its ResultIN \"/p2\".";
+SolidResultINNotAbsorbedBecauseOfDeactivation="Solid feature \"/p1\" doesn't absorb its ResultIN \"/p2\" since it's main input is deactivated \"old way\".";
+
+//===================================================================================
+//   Errors messages relative to CATIMf3DBehavior/CATIMf3DBehavior2 implementation
+//===================================================================================
+
+WrongReturnValueForIsAShape="CATIMf3DBehavior::IsAShape method invoked on \"/p\" returns wrong HRESULT.";
+WrongReturnValueForIsASolid="CATIMf3DBehavior::IsASolid method invoked on \"/p\" returns wrong HRESULT.";
+WrongReturnValueForIsADatum="CATIMf3DBehavior::IsADatum method invoked on \"/p\" returns wrong HRESULT.";
+WrongReturnValueForIsAVolume="CATIMf3DBehavior::IsAVolume method invoked on \"/p\" returns wrong HRESULT.";
+BothIsASolidAndIsAShape="\"/p\" is a the same time a solid and a shape.";
+NeitherIsASolidAndIsAShape="\"/p\" is a neither a solid nor a shape.";
+IsAVolumeButNotAShape="\"/p\" is a volume but not a shape.";
+IsADatumWithInAttr="\"/p1\" is a datum feature but has \"/p2\" sp_IN attribute.";
+IsADatumWithOutAttr="\"/p1\" is a datum feature but has \"/p2\" sp_OUT attribute.";
+
+
+//===================================================================================
+//   Errors messages relative to CATIMechanicalTool implementation
+//===================================================================================
+
+AdhesionButNotMR="\"/p\" adheres to CATIMechanicalTool but doesn't derive from MechanicalRoot.";
+AdhesionButNotBasicTool="\"/p\" adheres to CATIMechanicalTool but not to CATIBasicTool.";
+ZeroGetVisuStatusNotMT="GetVisuStatus on \"/p\" returns 0 whereas it isn't a MechanicalTool.";
+ZeroGetVisuStatusNotAggregatedUnderMP="GetVisuStatus on \"/p\" returns 0 whereas it isn't aggregated under the Mechanical Part.";
+ZeroGetVisuStatusNotOperated="GetVisuStatus on \"/p\" returns 0 whereas it isn't operated by any mechanical feature.";
+ZeroGetVisuStatusOperatedInsideOrderedSet="GetVisuStatus on \"/p\" returns 0 whereas it is operated by a feature inside an ordered set.";
+InvalidGetVisuStatus="GetVisuStatus on \"/p\" returns an invalid value, only 0 and 1 are valids.";
+InvalidNullGetBooleanOperationForMT="GetBooleanOperation on \"/p1\" returns NULL_var whereas it's operated by \"/p2\".";
+InvalidValuatedGetBooleanOperationForMT="GetBooleanOperation on \"/p1\" returns \"/p2\" whereas it isn't operated by any mechanical feature.";
+InvalidNulGetBooleanOperationForHB="GetBooleanOperation on \"/p1\" is null whereas it is operated by its father \"/p2\".";
+InvalidValuatedGetBooleanOperationFather="GetBooleanOperation on \"/p1\" returns \"/p2\" and not its father, \"/p3\".";
+InvalidValuatedGetBooleanOperationOperating="GetBooleanOperation on \"/p1\" returns \"/p2\" but should be nul because it isn't operated.";
+CyclicBooleanOperation="The boolean operation \"/p1\" referencing the set \"/p2\" generates a cycle.";
+
+//===================================================================================
+//   Errors messages relative to CATISpecVisible implementation
+//===================================================================================
+PublicNotInSpecTree="\"/p\" public element in the sense of CATISpecVisible does not appear in the specification tree.";
+PrivateInSpecTree="\"/p\" private element in the sense of CATISpecVisible appears in the specification tree.";
+PrivateChildInSpecTree="\"/p1\" private element of \"/p2\" is abnormally declared private by CATISpecVisibleChild implementation when visible in the specification tree.";
+ParmNotAdhereCATISpecVisible="\"/p\" does not adhere to CATISpecVisible";
+PublicParmNotVisible="\"/p\" parameter exposed to Knowledge is abnormally declared private by CATISpecVisibleChild implementation.";
+

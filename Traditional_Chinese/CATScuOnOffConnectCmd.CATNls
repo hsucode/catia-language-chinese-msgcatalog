@@ -1,0 +1,46 @@
+//=============================================================================
+//                                     CNEXT - CXR6
+//                          COPYRIGHT DASSAULT SYSTEMES 2000 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATScuOnOffConnectCmd.CATNls
+// FRAMEWORK   :    CATSchPlatformUI
+// AUTHOR      :    pbr
+// DATE        :    November 2000
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Schematic Platform Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//------------------------------------------------------------------------------
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// DialogEngine state prompts 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATScuOnOffConnectCmd.DefineFirstOnOffSheetObjState.Message="選擇開或關薄件物件以連結";
+CATScuOnOffConnectCmd.DefineSecondOnOffSheetObjState.Message="選擇連結到的開或關薄件物件";
+
+OnOffShtLinkErrorPanelTitle="開或關薄件物件連結錯誤";
+OnOffShtLinkErrorPanelText=
+  "這個開或關薄件物件不能被連結."; 
+InvalidXDocObjectPanelTitle="開或關薄件穿過文件物件連結錯誤";
+InvalidXDocObjectPanelText=
+  "Routes must be of the same type."; 
+ObjectConnectedPanelTitle="開或關薄件物件連結錯誤";
+ObjectConnectedPanelText=
+  "選擇的開或關薄件物件已經連結."; 
+
+DiffLineIDErrorPanelText ="Routes must belong to the same logical line";
+DiffLineIDErrorPanelTitle="On / Off Sheet Across Document Object Link Error";
+DiffPartNumErrorPanelText = "The 'From' cable' and the 'To' cable have to have the same part number";
+DiffPartNumErrorPanelTitle ="On / Off Sheet Across Document Object Link Error";
+DiffAttrValueErrorPanelText = "Attribute values must be the same between the 2 routes";
+DiffAttrValueErrorPanelTitle = "On / Off Sheet Across Document Object Link Error";
+InputCntrIsLinkedPanelText = "Connector you connect to is already linked,please select unlinked connector";
+InputCntrIsLinkedPanelPanel ="On / Off Sheet Across Document Object Link Error";
+MasterDocNotPublishedErrorPanelText = "Master document is not published,please publish document";
+MasterDocNotPublishedErrorPanelTitle = "On / Off Sheet Across Document Object Link Error";

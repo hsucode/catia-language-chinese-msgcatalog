@@ -1,0 +1,56 @@
+//=============================================================================
+//                                     CNEXT - CXR5
+//                          COPYRIGHT DASSAULT SYSTEMES 2000 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATPspAttrQueryPanel.CATNls
+// FRAMEWORK   :    CATPspPlatformUI
+// AUTHOR      :    jcz
+// DATE        :    April 2000
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Schematic Platform Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//------------------------------------------------------------------------------
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// DialogEngine state prompts 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Title = "線屬性過濾器";
+
+CombosAndButtonsFrame.ButtonsFrame.AndButton.Title = "和";
+CombosAndButtonsFrame.ButtonsFrame.OrButton.Title = "或";
+CombosAndButtonsFrame.ButtonsFrame.ExceptButton.Title = "除外";
+CombosAndButtonsFrame.ButtonsFrame.AndButton.ShortHelp =
+"Adds the And operator (&) between queries";
+CombosAndButtonsFrame.ButtonsFrame.OrButton.ShortHelp = 
+"Adds the Or operator (+) between queries";
+CombosAndButtonsFrame.ButtonsFrame.ExceptButton.ShortHelp = 
+"Adds the Except operator (-) between queries";
+
+CombosAndButtonsFrame.CombosFrame.ComposeButton.Title = "新增";
+
+CombosAndButtonsFrame.CombosFrame.AttrLabel.Title = "屬性";
+CombosAndButtonsFrame.CombosFrame.OperatorLabel.Title = "動作";
+CombosAndButtonsFrame.CombosFrame.ValueLabel.Title = "數值";
+
+CompositionEditorFrame.EditorLabel.Title  = "Composed 詢問";
+CompositionEditorFrame.EditorButton.ShortHelp = "Erases the composed query";
+CompositionEditorFrame.EditorButton.LongHelp = "Erases the whole composed query";
+CompositionEditorFrame.Editor.ShortHelp    = 
+"Compose your query here using
+the +, -, & operators,...";
+CompositionEditorFrame.Editor.LongHelp    = 
+"Compose your query in this space.
+You may only use the +, -, & operators as well as parenthesis.";
+
+combosAndButtonsFrame.CombosFrame.ComposeButton.Title = "Compose";
+OptionsFrame.SearchStringLabel.Title = "過濾字串:";
+ScopeFrame.ScopeLabel.Title = "範圍:";
+ScopeFrame.pDlgAll.Title = "全部";
+ScopeFrame.pDlgLocal.Title = "局部";

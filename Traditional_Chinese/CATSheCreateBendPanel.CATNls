@@ -1,0 +1,224 @@
+Title = "順接曲面定義";
+
+More = "詳細 >>";
+Less = "<< 基本";
+Warning = "警告";
+Error = "錯誤";
+
+_DefinitionFrame._WallsFrame._Wall1Label.Title    = "牆 1 :";
+_DefinitionFrame._WallsFrame._Wall1Label.LongHelp = "第一個牆";
+
+_DefinitionFrame._WallsFrame._Wall1Editor.ShortHelp = "第一個牆識別";
+_DefinitionFrame._WallsFrame._Wall1Editor.LongHelp  = "顯示第一個牆識別";
+_DefinitionFrame._WallsFrame._Wall1Editor.Help      = "第一個牆識別";
+
+_DefinitionFrame._WallsFrame._Wall2Label.Title    = "牆 2 :";
+_DefinitionFrame._WallsFrame._Wall2Label.LongHelp = "第二個牆";
+
+_DefinitionFrame._WallsFrame._Wall2Editor.ShortHelp = "第二個牆識別";
+_DefinitionFrame._WallsFrame._Wall2Editor.LongHelp  = "顯示第二個牆識別";
+_DefinitionFrame._WallsFrame._Wall2Editor.Help      = "第二個牆識別";
+
+_DefinitionFrame._ValuesFrame._RadiusLabel.Title    = "半徑 : ";
+_DefinitionFrame._ValuesFrame._RadiusLabel.LongHelp = "順接曲面的內部半徑";
+
+_DefinitionFrame._ValuesFrame._AngleLabel.Title    = "角度 : ";
+_DefinitionFrame._ValuesFrame._AngleLabel.LongHelp = "牆之間的角度";
+
+_DefinitionFrame._ValuesFrame._AngleEditor.ShortHelp = "牆之間的角度";
+_DefinitionFrame._ValuesFrame._AngleEditor.LongHelp  = "顯示牆之間的角度";
+_DefinitionFrame._ValuesFrame._AngleEditor.Help      = "牆之間的角度";
+
+_MoreFrame._ExtremitiesFrame.Title    = "端點";
+_MoreFrame._ExtremitiesFrame.LongHelp = "輸入順接曲面端點的特性";
+_MoreFrame._ExtremitiesFrame.Help     = "端點的特性";
+
+_MoreFrame._ExtremitiesFrame._ExtremitiesCombo.ShortHelp = "選擇端點";
+_MoreFrame._ExtremitiesFrame._ExtremitiesCombo.LongHelp  = "選擇端點以修改";
+_MoreFrame._ExtremitiesFrame._ExtremitiesCombo.Help      = "目前的端點";
+
+_MoreFrame._ExtremitiesFrame._ExtremityIcons.ShortHelp = "選擇端點型式";
+_MoreFrame._ExtremitiesFrame._ExtremityIcons.LongHelp  = "選擇順接曲面端點型式";
+_MoreFrame._ExtremitiesFrame._ExtremityIcons.Help      = "選擇端點型式";
+
+_MoreFrame._ExtremitiesFrame._ExtremityIcons._MiniNoReliefButton.ShortHelp     = "沒有清除的最小值";
+_MoreFrame._ExtremitiesFrame._ExtremityIcons._MiniSquareReliefButton.ShortHelp = "方形清除的最小值";
+_MoreFrame._ExtremitiesFrame._ExtremityIcons._MiniRoundReliefButton.ShortHelp  = "圓形清除的最小值";
+_MoreFrame._ExtremitiesFrame._ExtremityIcons._LimitedLinearButton.ShortHelp    = "線性的形狀";
+_MoreFrame._ExtremitiesFrame._ExtremityIcons._LimitedCurvedButton.ShortHelp    = "曲線的形狀";
+_MoreFrame._ExtremitiesFrame._ExtremityIcons._MaxiButton.ShortHelp             = "最大的順接曲面";
+
+_MoreFrame._ExtremitiesFrame._StandardButton.Title     = "標準";
+_MoreFrame._ExtremitiesFrame._StandardButton.ShortHelp = "重設標準順接曲面端點類型";
+_MoreFrame._ExtremitiesFrame._StandardButton.LongHelp  = "設定順接曲面端點類型到板金件標準類型";
+_MoreFrame._ExtremitiesFrame._StandardButton.Help      = "重設標準順接曲面端點類型";
+
+_MoreFrame._ExtremitiesFrame._LengthFrame.LongHelp = "清除長度";
+_MoreFrame._ExtremitiesFrame._LengthFrame.Help     = "清除長度";
+
+_MoreFrame._ExtremitiesFrame._LengthFrame._L1Label.Title    = "L1 : ";
+_MoreFrame._ExtremitiesFrame._LengthFrame._L1Label.LongHelp = "清除第一個長度";
+
+_MoreFrame._ExtremitiesFrame._LengthFrame._L2Label.Title    = "L2 : ";
+_MoreFrame._ExtremitiesFrame._LengthFrame._L2Label.LongHelp = "清除第二個長度";
+
+_MoreFrame._AllowanceFrame.Title    = "容差";
+_MoreFrame._AllowanceFrame.LongHelp = "輸入順接曲面容差的參數";
+_MoreFrame._AllowanceFrame.Help     = "容差";
+
+_MoreFrame._AllowanceFrame._FrameKFactor._KFactorLabel.Title     = "K 因子 : ";
+_MoreFrame._AllowanceFrame._FrameKFactor._KFactorLabel.LongHelp  = "K 因子";
+
+_MoreFrame._AllowanceFrame._DINNormaPushButton.Title     = "DIN Norma";
+_MoreFrame._AllowanceFrame._DINNormaPushButton.ShortHelp = "DIN Norma";
+_MoreFrame._AllowanceFrame._DINNormaPushButton.LongHelp  = "K 因子 是使用 DIN Norma 計算";
+
+_MoreFrame._AllowanceFrame._FrameAllowance._AllowanceLabel.Title     = "容差 : ";
+_MoreFrame._AllowanceFrame._FrameAllowance._AllowanceLabel.LongHelp  = "容差";
+
+_MoreFrame._AllowanceFrame._FromKFactorPushButton.Title     = "從 K 因子";
+_MoreFrame._AllowanceFrame._FromKFactorPushButton.ShortHelp = "從 K 因子";
+_MoreFrame._AllowanceFrame._FromKFactorPushButton.LongHelp  = "容差是使用 K 因子計算";
+
+_MoreFrame._BendCornerRelievesFrame.Title    = "圓角清除";
+_MoreFrame._BendCornerRelievesFrame.LongHelp = "選擇圓角清除的預設類型";
+_MoreFrame._BendCornerRelievesFrame.Help     = "圓角清除特性";
+
+_MoreFrame._BendCornerRelievesFrame._CornerReliefCheckButton.Title     = "圓角清除";
+_MoreFrame._BendCornerRelievesFrame._CornerReliefCheckButton.LongHelp  = "圓角清除的建立的作動";
+_MoreFrame._BendCornerRelievesFrame._CornerReliefCheckButton.ShortHelp = "圓角清除的建立";
+_MoreFrame._BendCornerRelievesFrame._CornerReliefCheckButton.Help      = "圓角清除的建立的作動";
+
+_MoreFrame._BendCornerRelievesFrame._CornerReliefTypeFrame._CornerRelievesIconBox._TriangularPushButton.Title  = "三角形圓角清除";
+_MoreFrame._BendCornerRelievesFrame._CornerReliefTypeFrame._CornerRelievesIconBox._CircularPushButton.Title    = "圓形標準";
+_MoreFrame._BendCornerRelievesFrame._CornerReliefTypeFrame._CornerRelievesIconBox._RectangularPushButton.Title = "矩形圓角清除";
+
+_MoreFrame._BendCornerRelievesFrame._CornerReliefTypeFrame._StandardCornerReliefButton.Title     = "標準";
+_MoreFrame._BendCornerRelievesFrame._CornerReliefTypeFrame._StandardCornerReliefButton.ShortHelp = "重設標準圓角清除類型";
+_MoreFrame._BendCornerRelievesFrame._CornerReliefTypeFrame._StandardCornerReliefButton.LongHelp  = "設定圓角清除類型到板金件標準類型";
+_MoreFrame._BendCornerRelievesFrame._CornerReliefTypeFrame._StandardCornerReliefButton.Help      = "重設標準圓角清除類型";
+
+_MoreFrame._BendCornerRelievesFrame._CornerReliefTypeFrame._CornerReliefRadiusFrame._CornerReliefRadiusLabel.Title    = "半徑 : ";
+_MoreFrame._BendCornerRelievesFrame._CornerReliefTypeFrame._CornerReliefRadiusFrame._CornerReliefRadiusLabel.LongHelp = "圓形圓角清除的半徑";
+
+// Extremities...
+_MoreContainer._BendExtremitiesTabPage.Title    = "彎曲端點";
+_MoreContainer._BendExtremitiesTabPage.LongHelp = "選擇預設彎曲端點形式";
+
+
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._ExtremityIcons.ShortHelp = "選擇端點形式";
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._ExtremityIcons.LongHelp  = "選擇彎曲端點形式";
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._ExtremityIcons.Help      = "選擇端點形式";
+
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._ExtremityIcons._MiniNoReliefButton.ShortHelp     = "未移除最小";
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._ExtremityIcons._MiniSquareReliefButton.ShortHelp = "方形未移除最小";
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._ExtremityIcons._MiniRoundReliefButton.ShortHelp  = "圓形未移除最小";
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._ExtremityIcons._LimitedLinearButton.ShortHelp    = "線性外形";
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._ExtremityIcons._LimitedCurvedButton.ShortHelp    = "曲線外形";
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._ExtremityIcons._MaxiButton.ShortHelp             = "最大彎曲";
+
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._StandardButton.Title     = "標準";
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._StandardButton.ShortHelp = "重設標準彎曲端點形式";
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._StandardButton.LongHelp  = "設定彎曲端點形式至板金零件標準形式";
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._StandardButton.Help      = "重設標準彎曲端點形式";
+
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._LengthFrame.LongHelp = "移除長度";
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._LengthFrame.Help     = "移除長度";
+
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._LengthFrame._L1Label.Title    = "L1 : ";
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._LengthFrame._L1Label.LongHelp = "移除第一長度";
+
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._LengthFrame._L2Label.Title    = "L2 : ";
+_MoreContainer._BendExtremitiesTabPage._ExtremitiesFrame._LengthFrame._L2Label.LongHelp = "移除第二長度";
+
+// Left Extremity...
+_MoreContainer.LeftExtremity.Title    = "左側端點";
+_MoreContainer.LeftExtremity.LongHelp = "選擇左側端點的預設形式";
+
+_MoreContainer.LeftExtremity._ExtremitiesFrame._ExtremityIcons.ShortHelp = "選擇端點形式";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._ExtremityIcons.LongHelp  = "選擇端點形式";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._ExtremityIcons.Help      = "選擇端點形式";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._ExtremityIcons._MiniNoReliefButton.ShortHelp     = "未移除最小";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._ExtremityIcons._MiniSquareReliefButton.ShortHelp = "方形移除最小";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._ExtremityIcons._MiniRoundReliefButton.ShortHelp  = "圓形移除最小";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._ExtremityIcons._LimitedLinearButton.ShortHelp    = "線性外形";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._ExtremityIcons._LimitedCurvedButton.ShortHelp    = "曲線外形";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._ExtremityIcons._MaxiButton.ShortHelp             = "最大彎曲";
+
+_MoreContainer.LeftExtremity._ExtremitiesFrame._StandardButton.Title     = "標準";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._StandardButton.ShortHelp = "重設標準左側端點";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._StandardButton.LongHelp  = "設定左側標準形式至板金件標準形式";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._StandardButton.Help      = "重設標準左側端點";
+
+_MoreContainer.LeftExtremity._ExtremitiesFrame._LengthFrame.LongHelp = "移除長度";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._LengthFrame.Help     = "移除長度";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._LengthFrame._L1Label.Title    = "L1 : ";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._LengthFrame._L1Label.LongHelp = "移除第一長度";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._LengthFrame._L2Label.Title    = "L2 : ";
+_MoreContainer.LeftExtremity._ExtremitiesFrame._LengthFrame._L2Label.LongHelp = "移除第二長度";
+
+// Right Extremity...
+_MoreContainer.RightExtremity.Title    = "右側端點";
+_MoreContainer.RightExtremity.LongHelp = "選擇右側端點的預設形式";
+
+_MoreContainer.RightExtremity._ExtremitiesFrame._ExtremityIcons.ShortHelp = "選擇端點形式";
+_MoreContainer.RightExtremity._ExtremitiesFrame._ExtremityIcons.LongHelp  = "選擇端點形式";
+_MoreContainer.RightExtremity._ExtremitiesFrame._ExtremityIcons.Help      = "選擇端點形式";
+_MoreContainer.RightExtremity._ExtremitiesFrame._ExtremityIcons._MiniNoReliefButton.ShortHelp     = "未移除最小";
+_MoreContainer.RightExtremity._ExtremitiesFrame._ExtremityIcons._MiniSquareReliefButton.ShortHelp = "方形移除最小";
+_MoreContainer.RightExtremity._ExtremitiesFrame._ExtremityIcons._MiniRoundReliefButton.ShortHelp  = "圓形移除最小";
+_MoreContainer.RightExtremity._ExtremitiesFrame._ExtremityIcons._LimitedLinearButton.ShortHelp    = "線性外形";
+_MoreContainer.RightExtremity._ExtremitiesFrame._ExtremityIcons._LimitedCurvedButton.ShortHelp    = "曲線外形";
+_MoreContainer.RightExtremity._ExtremitiesFrame._ExtremityIcons._MaxiButton.ShortHelp             = "最大彎曲";
+
+_MoreContainer.RightExtremity._ExtremitiesFrame._StandardButton.Title     = "標準";
+_MoreContainer.RightExtremity._ExtremitiesFrame._StandardButton.ShortHelp = "重設標準左側端點";
+_MoreContainer.RightExtremity._ExtremitiesFrame._StandardButton.LongHelp  = "設定右側標準形式至板金件標準形式";
+_MoreContainer.RightExtremity._ExtremitiesFrame._StandardButton.Help      = "重設標準左側端點";
+
+_MoreContainer.RightExtremity._ExtremitiesFrame._LengthFrame.LongHelp = "移除長度";
+_MoreContainer.RightExtremity._ExtremitiesFrame._LengthFrame.Help     = "移除長度";
+_MoreContainer.RightExtremity._ExtremitiesFrame._LengthFrame._L1Label.Title    = "L1 : ";
+_MoreContainer.RightExtremity._ExtremitiesFrame._LengthFrame._L1Label.LongHelp = "移除第一長度";
+_MoreContainer.RightExtremity._ExtremitiesFrame._LengthFrame._L2Label.Title    = "L2 : ";
+_MoreContainer.RightExtremity._ExtremitiesFrame._LengthFrame._L2Label.LongHelp = "移除第二長度";
+
+_MoreContainer._BendCornerRelievesTabPage.Title    = "移除彎曲圓角";
+_MoreContainer._BendCornerRelievesTabPage.LongHelp = "為彎曲端點選擇預設形式";
+_MoreContainer._BendCornerRelievesTabPage.Help     = "圓角移除特性";
+
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame.Title = "圓角移除";
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame.LongHelp = "選擇圓角移除的預設形式";
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame.Help     = "圓角移除特性";
+
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame._CornerReliefCheckButton.Title     = "自動圓角移除";
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame._CornerReliefCheckButton.LongHelp  = "啟動自動圓角移除";
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame._CornerReliefCheckButton.ShortHelp = "建立圓角移除";
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame._CornerReliefCheckButton.Help      = "啟動自動圓角移除";
+
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame._CornerReliefTypeFrame._CornerRelievesIconBox._TriangularPushButton.Title  = "三角形圓角移除";
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame._CornerReliefTypeFrame._CornerRelievesIconBox._CircularPushButton.Title    = "圓形圓角移除";
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame._CornerReliefTypeFrame._CornerRelievesIconBox._RectangularPushButton.Title = "方形圓角移除";
+
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame._CornerReliefTypeFrame._StandardCornerReliefButton.Title     = "標準";
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame._CornerReliefTypeFrame._StandardCornerReliefButton.ShortHelp = "重設標準圓角移除形式";
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame._CornerReliefTypeFrame._StandardCornerReliefButton.LongHelp  = "設定彎曲端點形式至板金零件標準形式";
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame._CornerReliefTypeFrame._StandardCornerReliefButton.Help      = "重設標準圓角移除形式";
+
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame._CornerReliefTypeFrame._CornerReliefRadiusFrame._CornerReliefRadiusLabel.Title    = "半徑 : ";
+_MoreContainer._BendCornerRelievesTabPage._BendCornerRelievesFrame._CornerReliefTypeFrame._CornerReliefRadiusFrame._CornerReliefRadiusLabel.LongHelp = "圓角移除的半徑";
+
+
+_MoreContainer._BendAllowanceTabPage.Title = "彎曲容差";
+_MoreContainer._BendAllowanceTabPage.LongHelp = "輸入彎曲容差特性";
+_MoreContainer._BendAllowanceTabPage.Help     = "彎曲容差";
+
+_MoreContainer._BendAllowanceTabPage._KFactorFrame._KFactorLabel.Title    = "K 因子 :";
+_MoreContainer._BendAllowanceTabPage._KFactorFrame._KFactorLabel.LongHelp = "K 因子";
+
+_MoreContainer._BendAllowanceTabPage._DINNormaPushButton.Title     = "DIN Norma";
+_MoreContainer._BendAllowanceTabPage._DINNormaPushButton.ShortHelp = "DIN Norma";
+_MoreContainer._BendAllowanceTabPage._DINNormaPushButton.LongHelp  = "因子 K 是由 DIN Norma 標準來計算";
+
+Left="左側";
+Right="右側";

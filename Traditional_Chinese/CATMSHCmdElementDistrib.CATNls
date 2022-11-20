@@ -1,0 +1,87 @@
+//
+// -----------------------------
+// Maillauto : Edit Node distribution
+// -----------------------------
+//
+
+CATMSHCmdElementDistrib.InitialState.Message  ="Select parameters to edit the distribution";
+CATMSHCmdElementDistrib.DistribEditDlg.Title  ="Edit Elements Distribution";
+CATMSHCmdElementDistrib.DistribEditDlg.Help  ="Select parameters to edit the distribution";
+
+CATMSHCmdElementDistrib.DistribEditDlg.IsoFrame.NumberRadio.Title="Nb Elements";
+CATMSHCmdElementDistrib.DistribEditDlg.IsoFrame.NumberRadio.Help="Check to specify number of elements";
+CATMSHCmdElementDistrib.DistribEditDlg.IsoFrame.NumberRadio.LongHelp="Check to specify number of elements.";
+
+CATMSHCmdElementDistrib.DistribEditDlg.IsoFrame.SizeRadio.Title="Size";
+CATMSHCmdElementDistrib.DistribEditDlg.IsoFrame.SizeRadio.Help="Check to specify size";
+CATMSHCmdElementDistrib.DistribEditDlg.IsoFrame.SizeRadio.LongHelp="Check to specify size.";
+
+CATMSHCmdElementDistrib.DistribEditDlg.IsoFrame.IsoSizeLbl.Title="Size";
+
+CATMSHCmdElementDistrib.DistribEditDlg.ProFrame.NumberCheck.Title="Number of edges";
+CATMSHCmdElementDistrib.DistribEditDlg.ProFrame.NumberCheck.Help="Check to specify number of edges";
+CATMSHCmdElementDistrib.DistribEditDlg.ProFrame.NumberCheck.LongHelp="Check to specify number of edges";
+
+CATMSHCmdElementDistrib.DistribEditDlg.ProFrame.Ratio21Check.Title="Size 2 / Size 1";
+CATMSHCmdElementDistrib.DistribEditDlg.ProFrame.Ratio21Check.Help="Check to specify sizes ratio";
+CATMSHCmdElementDistrib.DistribEditDlg.ProFrame.Ratio21Check.LongHelp="Check to specify sizes ratio";
+
+CATMSHCmdElementDistrib.DistribEditDlg.ProFrame.Size1Check.Title="Size at node 1";
+CATMSHCmdElementDistrib.DistribEditDlg.ProFrame.Size1Check.Help="Check to specify size at node 1";
+CATMSHCmdElementDistrib.DistribEditDlg.ProFrame.Size1Check.LongHelp="Check to specify size at node 1";
+
+CATMSHCmdElementDistrib.DistribEditDlg.ProFrame.Size2Check.Title="Size at node 2";
+CATMSHCmdElementDistrib.DistribEditDlg.ProFrame.Size2Check.Help="Check to specify size at node 2";
+CATMSHCmdElementDistrib.DistribEditDlg.ProFrame.Size2Check.LongHelp="Check to specify size at node 2";
+
+CATMSHCmdElementDistrib.DistribEditDlg.ProFrame.ProSize1Lbl.Title="Size at node 1";
+CATMSHCmdElementDistrib.DistribEditDlg.ProFrame.ProSize2Lbl.Title="Size at node 2";
+
+CATMSHCmdElementDistrib.DistribEditDlg.ProFrame.SymmetricLbl.Title="Symmetric";
+
+CATMSHCmdElementDistrib.DistribEditDlg.LawFrame.LawLbl.Title="Law ";
+CATMSHCmdElementDistrib.DistribEditDlg.LawFrame.NumberLbl.Title="Number of edges ";
+CATMSHCmdElementDistrib.DistribEditDlg.LawFrame.ReverseButton.Title="Reverse direction";
+CATMSHCmdElementDistrib.DistribEditDlg.LawFrame.ReverseButton.LongHelp="Reverse the direction of the distribution.";
+
+CATMSHCmdElementDistrib.DistribEditDlg.ListFrame.RemoveFrame.RemoveButton.Title="Remove";
+CATMSHCmdElementDistrib.DistribEditDlg.ListFrame.RemoveFrame.RemoveButton.LongHelp="Remove the selected edge.";
+CATMSHCmdElementDistrib.DistribEditDlg.ListFrame.RemoveFrame.RemoveAllButton.Title="Remove All";
+CATMSHCmdElementDistrib.DistribEditDlg.ListFrame.RemoveFrame.RemoveAllButton.LongHelp="Remove all edges.";
+
+CATMSHCmdElementDistrib.DistribEditDlg.ListFrame.Support.Title ="Support";
+CATMSHCmdElementDistrib.DistribEditDlg.ListFrame.Support.LongHelp="Show selected support";
+
+CATMSHCmdElementDistrib.DistribEditDlg.ListFrame.TypeLabel.Title ="Type";
+CATMSHCmdElementDistrib.DistribEditDlg.ListFrame.TypeLabel.LongHelp="Show selected type";
+
+CATMSHCmdElementDistrib.DistribEditDlg.IsoDistribution = "Uniform";
+CATMSHCmdElementDistrib.DistribEditDlg.AriDistribution = "Arithmetic";
+CATMSHCmdElementDistrib.DistribEditDlg.GeoDistribution = "Geometric";
+CATMSHCmdElementDistrib.DistribEditDlg.LawDistribution = "User law";
+
+CATMSHCmdElementDistrib.DistribEditDlg.Nodes ="nodes";
+CATMSHCmdElementDistrib.DistribEditDlg.Edge  ="edge";
+
+CATMSHCmdElementDistrib.DistribEditDlg.Column0 ="N°";
+CATMSHCmdElementDistrib.DistribEditDlg.Column1 ="Geometry";
+
+CATMSHCmdElementDistrib.DistribEditDlg.NoSelection="No selection";
+
+// NLS concernant l'affichage du nombre d'edges present dans la liste
+
+nbedges = "/P1 edges";
+oneedge = "/P1 edge";
+noedges = "No Selection";
+
+//
+// Error Panel
+//
+CATMSHCmdElementDistrib.ErrorCoherence1.Title="Error";
+CATMSHCmdElementDistrib.ErrorCoherence1.Text="This number should be positive.";
+CATMSHCmdElementDistrib.ErrorCoherence2.Title="Error";
+CATMSHCmdElementDistrib.ErrorCoherence2.Text="This number should be smaller.";
+CATMSHCmdElementDistrib.ErrorCoherence3.Title="Error";
+CATMSHCmdElementDistrib.ErrorCoherence3.Text="This number should be greater or equal to 2.";
+CATMSHCmdElementDistrib.ErrorCoherence4.Title="Error";
+CATMSHCmdElementDistrib.ErrorCoherence4.Text="Size should be smaller.";

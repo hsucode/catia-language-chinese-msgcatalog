@@ -1,0 +1,39 @@
+GRAPH.ErrorStart = "===============!!! 錯誤 !!!==================";
+GRAPH.ErrorEnd =   "===============! 結束錯誤 !==================";
+GRAPH.Address = "地址";
+GRAPH.Id = "id";
+GRAPH.Number = "數字";
+GRAPH.GraphEnd = "命令圖形結束";
+GRAPH.Result = "結果";
+
+GRAPH.NoState = "命令未含任何狀態. 
+請使用以下方式
+CATICmdStateCommand::AddState(CATICmdState *iState) 
+來鏈結狀態至命令";
+
+GRAPH.NoInitialState = "命令未含任何初始狀態. 
+請使用以下方式
+CATICmdStateCommand::SetInitialState(CATICmdState *iState) 
+來定義命令初始狀態";
+
+GRAPH.NoTransition = "命令未含任何移轉.
+請使用以下方式 
+CATICmdStateCommand::AddTransition(CATICmdTransition *iTrans) 
+來鏈結移轉至命令";
+
+GRAPH.NoSourceState = "移轉未鏈結至原始狀態.
+請使用以下方式 
+CATICmdStateTransition::AddSourceState(CATICmdState *iState) 
+來宣告移轉原始情形";
+
+GRAPH.UnlinkedState = "狀態未鏈結至移轉以致無法使用, 除非它是初狀態
+請使用以下方式 
+CATICmdStateTransition::AddSourceState(CATICmdState *iState)
+或  
+CATICmdStateTransition::AddTargerState(CATICmdState *iState)
+來鏈結移轉狀態";
+
+GRAPH.UnknownState = "命令無法辦識此種情形. 
+請使用以下方式 
+CATICmdStateCommand::AddState(CATICmdState *iState) 
+來鏈結狀態至命令";

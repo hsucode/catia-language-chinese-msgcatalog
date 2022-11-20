@@ -1,0 +1,40 @@
+// COPYRIGHT DASSAULT SYSTEMES 2002
+//
+// GSD Sheet for the Tools Options
+// 
+
+//Frame Tolerant Modeling
+TM.HeaderFrame.Global.Title = "模型精度 (建立時的預設精度)";
+TM.IconAndOptionsFrame.OptionsFrame.Sepa1.TitleLabel.Title="輸入參數 ";
+TM.IconAndOptionsFrame.OptionsFrame.LabMergingDistance.Title="溶合距離: ";
+TM.IconAndOptionsFrame.OptionsFrame.TolerantLayDownCheckButton.Title ="精度置放";
+TM.IconAndOptionsFrame.OptionsFrame.Sepa2.TitleLabel.Title="輸出參數 ";
+TM.IconAndOptionsFrame.OptionsFrame.NoneButton.Title="無";
+TM.IconAndOptionsFrame.OptionsFrame.G1Button.Title="切線";
+TM.IconAndOptionsFrame.OptionsFrame.G2Button.Title="曲率";
+TM.IconAndOptionsFrame.OptionsFrame.LabSmoothingType.Title="連續型式 : ";
+TM.IconAndOptionsFrame.OptionsFrame.LabDeviation.Title="最大變異 : ";
+TM.IconAndOptionsFrame.OptionsFrame.LabelNotAvailable.Title=" 無可用選項";
+
+TM.IconAndOptionsFrame.OptionsFrame.NoneButton.LongHelp=
+"停止平順結果.";
+TM.IconAndOptionsFrame.OptionsFrame.G1Button.LongHelp=
+"啟動 G1 平順: 強化目前的連續性為相切連續.";
+TM.IconAndOptionsFrame.OptionsFrame.G2Button.LongHelp=
+"啟動 G2 平順: 強化目前的連續性為曲率連續.";
+TM.IconAndOptionsFrame.OptionsFrame.LabDeviation.LongHelp=
+"設定平順時最大允許變異 : 依據輸入曲線的管狀容差範圍內.";
+
+AxisLine.HeaderFrame.Global.Title = "軸顯示";
+AxisLine.IconAndOptionsFrame.OptionsFrame.AxisLineCheckButton.Title="輸入圍繞盒限制軸顯示";
+
+Groups.HeaderFrame.Global.Title = "群組";
+Groups.IconAndOptionsFrame.OptionsFrame.GroupInputCheckButton.Title="整合建立特徵為群組輸入";
+
+TemporaryAnalysis.HeaderFrame.Global.Title = "堆疊分析";
+TemporaryAnalysis.IconAndOptionsFrame.OptionsFrame.TempAnalysisDefaultCheckButton.Title="堆疊分析的預設性質設為暫時";
+//Section Frame
+SectionsFrame.HeaderFrame.Global.Title = "切面名稱清單";
+SectionsFrame.IconAndOptionsFrame.OptionsFrame.AdminLabel.Title="管理者清單 :";
+SectionsFrame.IconAndOptionsFrame.OptionsFrame.UserLabel.Title="使用者清單 :";
+

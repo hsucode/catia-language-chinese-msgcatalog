@@ -1,0 +1,157 @@
+/////////////////////////////////////////////////////////////////////////
+// NLS For tools option node cutomisation
+//
+// opn
+/////////////////////////////////////////////
+
+
+//Title="自訂節點";
+
+Help="定義自訂節點工具組選擇";
+
+/////////////////////////////////////
+// Diplay
+///////////////////
+NodeSetCont.FrameNode.Title = "顯示節點";
+
+
+NodeSetCont.FrameNode.frameType.DefButton.Title = "預設顯示";
+NodeSetCont.FrameNode.frameType.DefButton.Help = "選擇預設顯示";
+NodeSetCont.FrameNode.frameType.DefButton.ShortHelp = "預設顯示";
+NodeSetCont.FrameNode.frameType.DefButton.LongHelp = "預設顯示 \n 選擇預設顯示";
+
+NodeSetCont.FrameNode.frameType.CustoButton.Title = "自訂顯示";
+NodeSetCont.FrameNode.frameType.CustoButton.Help = "選擇自訂顯示";
+NodeSetCont.FrameNode.frameType.CustoButton.ShortHelp = "自訂顯示";
+NodeSetCont.FrameNode.frameType.CustoButton.LongHelp = "自訂顯示 \n 定義自訂顯示";
+
+NodeSetCont.FrameNode.frameFormat.Title ="格式顯示";
+NodeSetCont.FrameNode.frameNodeComponent.labelNodeComponent.Title ="分件";
+NodeSetCont.FrameNode.frameNodeProduct.labelNodeProduct.Title ="產品";
+NodeSetCont.FrameNode.frameNodeShape.labelNodeShape.Title ="外形";
+
+NodeSetCont.FrameNode.frameFormat.editorFormat.Help = "輸入顯示格式";
+NodeSetCont.FrameNode.frameFormat.editorFormat.LongHelp = "顯示格式 \n 定義顯示格式";
+
+NodeSetCont.FrameNode.frameBt1.CheckPN.Title ="零件號碼(#PN#)";
+NodeSetCont.FrameNode.frameBt1.CheckPN.Help = "插入產品零件號碼";
+
+NodeSetCont.FrameNode.frameBt1.CheckRevision.Title="版期 (#RE#)";
+NodeSetCont.FrameNode.frameBt1.CheckRevision.Help="插入產品版期 ";
+
+NodeSetCont.FrameNode.frameBt1.CheckDef.Title= "定義 (#DF#)";
+NodeSetCont.FrameNode.frameBt1.CheckDef.Help= "插入產品定義";
+
+NodeSetCont.FrameNode.frameBt1.CheckNomen.Title = "名稱 (#NO#)";
+NodeSetCont.FrameNode.frameBt1.CheckNomen.Help = "插入產品名稱";
+
+NodeSetCont.FrameNode.frameBt1.CheckSource.Title = "來源 (#SO#)";
+NodeSetCont.FrameNode.frameBt1.CheckSource.Help = "插入產品來源";
+
+NodeSetCont.FrameNode.frameBt1.CheckDescRef.Title = "說明 (#DR#)";
+NodeSetCont.FrameNode.frameBt1.CheckDescRef.Help = "插入產品說明";
+
+NodeSetCont.FrameNode.frameBt2.CheckInstanceName.Title ="複製名稱 (#IN#)";
+NodeSetCont.FrameNode.frameBt2.CheckInstanceName.Help ="插入分件複製名稱" ;
+
+NodeSetCont.FrameNode.frameBt2.CheckDescInst.Title="說明 (#DI#)";
+NodeSetCont.FrameNode.frameBt2.CheckDescInst.Help="插入分件說明 ";
+
+NodeSetCont.FrameNode.frameBt3.CheckShapeName.Title ="外形名稱 (#SN#)";
+NodeSetCont.FrameNode.frameBt3.CheckShapeName.Help ="插入外形名稱" ;
+
+NodeSetCont.FrameNode.frameBt3.CheckShapeId.Title="說明 (#SD#)";
+NodeSetCont.FrameNode.frameBt3.CheckShapeId.Help="插入外形說明";
+
+NodeSetCont.FrameNode.frameBt3.CheckEnvironment.Title="環境 (#EN#)";
+NodeSetCont.FrameNode.frameBt3.CheckEnvironment.Help="插入環境名稱";
+
+NodeSetCont.FrameNode.frameBt3.CheckShapeSource.Title="來源 (#SC#)";
+NodeSetCont.FrameNode.frameBt3.CheckShapeSource.Help="插入外形來源";
+
+// Modif CHK migration CATDlgToolsOptionsFrame
+
+FrameNode.HeaderFrame.Global.Title = "節點顯示";
+FrameNode.IconAndOptionsFrame.OptionsFrame.DefButton.Title="預設顯示";
+FrameNode.IconAndOptionsFrame.OptionsFrame.DefButton.ShortHelp="預設顯示";
+FrameNode.IconAndOptionsFrame.OptionsFrame.DefButton.LongHelp="預設顯示 \n 選擇預設顯示";
+FrameNode.IconAndOptionsFrame.OptionsFrame.CustoButton.Title="自訂顯示";
+FrameNode.IconAndOptionsFrame.OptionsFrame.CustoButton.ShortHelp="自訂顯示";
+FrameNode.IconAndOptionsFrame.OptionsFrame.CustoButton.LongHelp="自訂顯示 \n 定義自訂顯示";
+
+
+frameNodeProduct.HeaderFrame.Global.Title = "產品";
+frameNodeProduct.IconAndOptionsFrame.OptionsFrame.CheckPN.Title="零件號碼 (#PN#)";
+frameNodeProduct.IconAndOptionsFrame.OptionsFrame.CheckPN.ShortHelp="插入產品零件號碼";
+frameNodeProduct.IconAndOptionsFrame.OptionsFrame.CheckRevision.Title="更新版期 (#RE#)";
+frameNodeProduct.IconAndOptionsFrame.OptionsFrame.CheckRevision.ShortHelp="插入產品更新版期";
+frameNodeProduct.IconAndOptionsFrame.OptionsFrame.CheckDef.Title="定義 (#DF#)";
+frameNodeProduct.IconAndOptionsFrame.OptionsFrame.CheckDef.ShortHelp="插入產品定義";
+frameNodeProduct.IconAndOptionsFrame.OptionsFrame.CheckNomen.Title="名稱 (#NO#)";
+frameNodeProduct.IconAndOptionsFrame.OptionsFrame.CheckNomen.ShortHelp="插入產品名稱";
+frameNodeProduct.IconAndOptionsFrame.OptionsFrame.CheckSource.Title="原始資料 (#SO#)";
+frameNodeProduct.IconAndOptionsFrame.OptionsFrame.CheckSource.ShortHelp="插入產品原始資料";
+frameNodeProduct.IconAndOptionsFrame.OptionsFrame.CheckDescRef.Title="說明 (#DR#)";
+frameNodeProduct.IconAndOptionsFrame.OptionsFrame.CheckDescRef.ShortHelp="插入產品說明";
+
+frameNodeLinkToReference.HeaderFrame.Global.Title = "鏈結至參考";
+frameNodeLinkToReference.IconAndOptionsFrame.OptionsFrame.CheckShortReferencePath.Title="短參考路徑 (#SRP#)";
+frameNodeLinkToReference.IconAndOptionsFrame.OptionsFrame.CheckShortReferencePath.ShortHelp="插入參考路徑";
+
+
+frameNodeComponent.HeaderFrame.Global.Title = "分件";
+frameNodeComponent.IconAndOptionsFrame.OptionsFrame.CheckInstanceName.Title="新元件名稱 (#IN#)";
+frameNodeComponent.IconAndOptionsFrame.OptionsFrame.CheckInstanceName.ShortHelp="插入分件新元件名稱";
+frameNodeComponent.IconAndOptionsFrame.OptionsFrame.CheckDescInst.Title="說明 (#DI#)";
+frameNodeComponent.IconAndOptionsFrame.OptionsFrame.CheckDescInst.ShortHelp="插入分件說明";
+
+
+frameNodeShape.HeaderFrame.Global.Title = "形狀";
+frameNodeShape.IconAndOptionsFrame.OptionsFrame.CheckShapeName.Title="形狀名稱 (#SN#)";
+frameNodeShape.IconAndOptionsFrame.OptionsFrame.CheckShapeName.ShortHelp="插入形狀名稱";
+frameNodeShape.IconAndOptionsFrame.OptionsFrame.CheckShapeId.Title="說明 (#SD#)";
+frameNodeShape.IconAndOptionsFrame.OptionsFrame.CheckShapeId.ShortHelp="插入形狀說明";
+frameNodeShape.IconAndOptionsFrame.OptionsFrame.CheckEnvironment.Title="環境 (#EN#)";
+frameNodeShape.IconAndOptionsFrame.OptionsFrame.CheckEnvironment.ShortHelp="插入環境名稱";
+frameNodeShape.IconAndOptionsFrame.OptionsFrame.CheckShapeSource.Title="原始資料 (#SC#)";
+frameNodeShape.IconAndOptionsFrame.OptionsFrame.CheckShapeSource.ShortHelp="插入原始資料";
+frameNodeShape.IconAndOptionsFrame.OptionsFrame.CheckShortDescR9.Title="簡單說明 (#SD#)";
+frameNodeShape.IconAndOptionsFrame.OptionsFrame.CheckShortDescR9.ShortHelp="插入簡單外形說明";
+
+
+frameFormat.HeaderFrame.Global.Title = "顯示格式";
+frameFormat.IconAndOptionsFrame.OptionsFrame.editorFormat.ShortHelp="輸入顯示格式";
+frameFormat.IconAndOptionsFrame.OptionsFrame.editorFormat.LongHelp="顯示格式 \n 定義顯示格式";
+
+
+
+// ----------------------------------------------------------------------------------------------
+// New Node Custo
+// ----------------------------------------------------------------------------------------------
+
+framePrdRef.HeaderFrame.Global.Title = "參考產品";
+framePrdRef.IconAndOptionsFrame.OptionsFrame.CheckCustoPrdRef.Title="自訂顯示";
+framePrdRef.IconAndOptionsFrame.OptionsFrame.CheckCustoPrdRef.ShortHelp="自訂顯示";
+framePrdRef.IconAndOptionsFrame.OptionsFrame.CheckCustoPrdRef.LongHelp="自訂顯示 \n 定義自訂顯示";
+
+framePrdRef.IconAndOptionsFrame.OptionsFrame.ConfigButton.Title="自訂...";
+
+frameInstRefLoad.HeaderFrame.Global.Title = "產品複件, 參考已載入";
+frameInstRefLoad.IconAndOptionsFrame.OptionsFrame.CheckCustoInstRefLoad.Title="自訂顯示";
+frameInstRefLoad.IconAndOptionsFrame.OptionsFrame.CheckCustoInstRefLoad.ShortHelp="自訂顯示";
+frameInstRefLoad.IconAndOptionsFrame.OptionsFrame.CheckCustoInstRefLoad.LongHelp="自訂顯示 \n 定義自訂顯示";
+
+frameInstRefLoad.IconAndOptionsFrame.OptionsFrame.ConfigButton.Title="自訂...";
+
+frameInstRefUnload.HeaderFrame.Global.Title = "產品複件, 參考已載入";
+frameInstRefUnload.IconAndOptionsFrame.OptionsFrame.CheckCustoInstRefUnload.Title="自訂顯示";
+frameInstRefUnload.IconAndOptionsFrame.OptionsFrame.CheckCustoInstRefUnload.ShortHelp="自訂顯示";
+frameInstRefUnload.IconAndOptionsFrame.OptionsFrame.CheckCustoInstRefUnload.LongHelp="自訂顯示 \n 定義自訂顯示";
+
+frameInstRefUnload.IconAndOptionsFrame.OptionsFrame.ConfigButton.Title="自訂...";
+
+ConfigPanel.Title ="自訂自訂顯示";
+
+
+
+

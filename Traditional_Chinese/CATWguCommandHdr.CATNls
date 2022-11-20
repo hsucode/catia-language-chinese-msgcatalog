@@ -1,0 +1,423 @@
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Schematic Commands 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+CATWguCommandHdr.CATWguBuildComponentHdr.Title="建立分件";
+CATWguCommandHdr.CATWguBuildComponentHdr.Help="建立一個分件.";
+CATWguCommandHdr.CATWguBuildComponentHdr.ShortHelp="建立一個分件.";
+CATWguCommandHdr.CATWguBuildComponentHdr.LongHelp="建立一個分件.";
+
+CATWguCommandHdr.CATWguBuildGraphicHdr.Title="建立圖形";
+CATWguCommandHdr.CATWguBuildGraphicHdr.Help="建立一個圖形陳述";
+CATWguCommandHdr.CATWguBuildGraphicHdr.ShortHelp="建立圖形";
+CATWguCommandHdr.CATWguBuildGraphicHdr.LongHelp="建立一個圖形陳述";
+
+CATWguCommandHdr.CATWguBuildConnectorHdr.Title="建立連接器";
+CATWguCommandHdr.CATWguBuildConnectorHdr.Help="建立一個連接器.";
+CATWguCommandHdr.CATWguBuildConnectorHdr.ShortHelp="建立一個連接器.";
+CATWguCommandHdr.CATWguBuildConnectorHdr.LongHelp="建立一個連接器.";
+
+CATWguCommandHdr.CATWguBuildFlowHdr.Title="建立內部流動";
+CATWguCommandHdr.CATWguBuildFlowHdr.Help="建立內部流動";
+CATWguCommandHdr.CATWguBuildFlowHdr.ShortHelp="建立內部流動";
+CATWguCommandHdr.CATWguBuildFlowHdr.LongHelp="建立內部流動";
+
+CATWguCommandHdr.CATWguBuildCompGrpHdr.Title="建立分件群組";
+CATWguCommandHdr.CATWguBuildCompGrpHdr.Help="建立分件群組";
+CATWguCommandHdr.CATWguBuildCompGrpHdr.ShortHelp="建立分件群組";
+CATWguCommandHdr.CATWguBuildCompGrpHdr.LongHelp="建立分件群組";
+
+CATWguCommandHdr.CATWguBuildCompGrpFlowHdr.Title="建立分件群組內部流動";
+CATWguCommandHdr.CATWguBuildCompGrpFlowHdr.Help="建立分件群組內部流動";
+CATWguCommandHdr.CATWguBuildCompGrpFlowHdr.ShortHelp="建立分件群組內部流動";
+CATWguCommandHdr.CATWguBuildCompGrpFlowHdr.LongHelp="建立分件群組內部流動";
+
+CATWguCommandHdr.CATWguPlaceComponentHdr.Title="置放分件";
+CATWguCommandHdr.CATWguPlaceComponentHdr.Help="置放分件";
+CATWguCommandHdr.CATWguPlaceComponentHdr.ShortHelp="置放分件";
+CATWguCommandHdr.CATWguPlaceComponentHdr.LongHelp="置放分件";
+
+CATWguCommandHdr.CATWguImageComponentHdr.Title="輸入分件圖像";
+CATWguCommandHdr.CATWguImageComponentHdr.Help="輸入分件圖像";
+CATWguCommandHdr.CATWguImageComponentHdr.ShortHelp="輸入分件圖像";
+CATWguCommandHdr.CATWguImageComponentHdr.LongHelp="由另一圖形輸入分件圖像至目前圖形";
+
+CATWguCommandHdr.CATWguFrameInfoHdr.Title="框架資訊";
+CATWguCommandHdr.CATWguFrameInfoHdr.Help="定義框架資訊";
+CATWguCommandHdr.CATWguFrameInfoHdr.ShortHelp="定義框架資訊";
+CATWguCommandHdr.CATWguFrameInfoHdr.LongHelp="定義框架資訊";
+
+CATWguCommandHdr.CATWguOnOffSheetHdr.Title="置放開或關的圖紙連接器";
+CATWguCommandHdr.CATWguOnOffSheetHdr.Help="置放開或關的圖紙連接器";
+CATWguCommandHdr.CATWguOnOffSheetHdr.ShortHelp="置放開或關的圖紙連接器";
+CATWguCommandHdr.CATWguOnOffSheetHdr.LongHelp="置放開或關的圖紙連接器";
+
+CATWguCommandHdr.CATWguOnOffQueryHdr.Title="詢問開或關圖紙連接器";
+CATWguCommandHdr.CATWguOnOffQueryHdr.Help="詢問開或關圖紙連接器";
+CATWguCommandHdr.CATWguOnOffQueryHdr.ShortHelp="詢問開或關圖紙連接器";
+CATWguCommandHdr.CATWguOnOffQueryHdr.LongHelp="詢問開或關圖紙連接器";
+
+CATWguCommandHdr.CATWguOnOffLinkHdr.Title="鏈結開或關圖紙連接器";
+CATWguCommandHdr.CATWguOnOffLinkHdr.Help="鏈結開或關圖紙連接器";
+CATWguCommandHdr.CATWguOnOffLinkHdr.ShortHelp="鏈結開或關圖紙連接器";
+CATWguCommandHdr.CATWguOnOffLinkHdr.LongHelp="鏈結開或關圖紙連接器";
+
+CATWguCommandHdr.CATWguOnOffUnlinkHdr.Title="中斷開或關圖紙連接器";
+CATWguCommandHdr.CATWguOnOffUnlinkHdr.Help="中斷開或關圖紙連接器";
+CATWguCommandHdr.CATWguOnOffUnlinkHdr.ShortHelp="中斷開或關圖紙連接器";
+CATWguCommandHdr.CATWguOnOffUnlinkHdr.LongHelp="中斷開或關圖紙連接器";
+
+CATWguCommandHdr.CATWguRouteWaveguideLineHdr.Title="Route 波導引線";
+CATWguCommandHdr.CATWguRouteWaveguideLineHdr.Help="Route 波導引線";
+CATWguCommandHdr.CATWguRouteWaveguideLineHdr.ShortHelp="Route 波導引線";
+CATWguCommandHdr.CATWguRouteWaveguideLineHdr.LongHelp="Route 波導引線";
+
+CATWguCommandHdr.CATWguCreateLogLineHdr.Title="建立線 ID";
+CATWguCommandHdr.CATWguCreateLogLineHdr.Help="建立線 ID";
+CATWguCommandHdr.CATWguCreateLogLineHdr.ShortHelp="建立線 ID";
+CATWguCommandHdr.CATWguCreateLogLineHdr.LongHelp="建立線 ID";
+
+CATWguCommandHdr.CATWguSelQryLogLineHdr.Title="選擇或詢問線 ID";
+CATWguCommandHdr.CATWguSelQryLogLineHdr.Help="選擇或詢問線 ID";
+CATWguCommandHdr.CATWguSelQryLogLineHdr.ShortHelp="選擇或詢問線 ID";
+CATWguCommandHdr.CATWguSelQryLogLineHdr.LongHelp="選擇或詢問線 ID";
+
+CATWguCommandHdr.CATWguTransferLogLineHdr.Title="轉換線 ID";
+CATWguCommandHdr.CATWguTransferLogLineHdr.Help="轉換線 ID";
+CATWguCommandHdr.CATWguTransferLogLineHdr.ShortHelp="轉換線 ID";
+CATWguCommandHdr.CATWguTransferLogLineHdr.LongHelp="轉換線 ID";
+
+CATWguCommandHdr.CATWguMergeLogLineHdr.Title="溶合線 ID";
+CATWguCommandHdr.CATWguMergeLogLineHdr.Help="溶合線 ID";
+CATWguCommandHdr.CATWguMergeLogLineHdr.ShortHelp="溶合線 ID";
+CATWguCommandHdr.CATWguMergeLogLineHdr.LongHelp="溶合線 ID";
+
+CATWguCommandHdr.CATWguRenameLogLineHdr.Title="更名線 ID";
+CATWguCommandHdr.CATWguRenameLogLineHdr.Help="更名線 ID";
+CATWguCommandHdr.CATWguRenameLogLineHdr.ShortHelp="更名線 ID";
+CATWguCommandHdr.CATWguRenameLogLineHdr.LongHelp="更名線 ID";
+
+CATWguCommandHdr.CATWguDeleteLogLineHdr.Title="刪除線 ID";
+CATWguCommandHdr.CATWguDeleteLogLineHdr.Help="刪除線 ID";
+CATWguCommandHdr.CATWguDeleteLogLineHdr.ShortHelp="刪除線 ID";
+CATWguCommandHdr.CATWguDeleteLogLineHdr.LongHelp="刪除線 ID";
+
+CATWguCommandHdr.CATWguLineIDImportHdr.Title="輸入或更新線 ID";
+CATWguCommandHdr.CATWguLineIDImportHdr.Help="由 XML 檔案輸入或更新線 ID";
+CATWguCommandHdr.CATWguLineIDImportHdr.ShortHelp="輸入或更新線 ID";
+CATWguCommandHdr.CATWguLineIDImportHdr.LongHelp="由 XML 檔案輸入或更新線 ID";
+
+CATWguCommandHdr.CATWguCreateZoneHdr.Title="建立區域";
+CATWguCommandHdr.CATWguCreateZoneHdr.Help="建立區域";
+CATWguCommandHdr.CATWguCreateZoneHdr.ShortHelp="建立區域";
+CATWguCommandHdr.CATWguCreateZoneHdr.LongHelp="建立區域";
+
+CATWguCommandHdr.CATWguSelectZoneHdr.Title="選擇或詢問區域";
+CATWguCommandHdr.CATWguSelectZoneHdr.Help="選擇或詢問區域";
+CATWguCommandHdr.CATWguSelectZoneHdr.ShortHelp="選擇或詢問區域";
+CATWguCommandHdr.CATWguSelectZoneHdr.LongHelp="選擇或詢問區域";
+
+CATWguCommandHdr.CATWguRenameZoneHdr.Title="更名區域";
+CATWguCommandHdr.CATWguRenameZoneHdr.Help="更名區域";
+CATWguCommandHdr.CATWguRenameZoneHdr.ShortHelp="更名區域";
+CATWguCommandHdr.CATWguRenameZoneHdr.LongHelp="更名區域";
+
+CATWguCommandHdr.CATWguDeleteZoneHdr.Title="刪除區域";
+CATWguCommandHdr.CATWguDeleteZoneHdr.Help="從文件中刪除局部區域";
+CATWguCommandHdr.CATWguDeleteZoneHdr.ShortHelp="刪除區域";
+CATWguCommandHdr.CATWguDeleteZoneHdr.LongHelp="從文件中刪除局部區域";
+
+CATWguCommandHdr.CATWguDefZoneBdryHdr.Title="定義區域邊界";
+CATWguCommandHdr.CATWguDefZoneBdryHdr.Help="定義或更新區域邊界";
+CATWguCommandHdr.CATWguDefZoneBdryHdr.ShortHelp="定義區域邊界";
+CATWguCommandHdr.CATWguDefZoneBdryHdr.LongHelp="定義或更新區域邊界";
+
+CATWguCommandHdr.CATWguUpdateZoneHdr.Title="更新區域";
+CATWguCommandHdr.CATWguUpdateZoneHdr.Help="更新所有區域";
+CATWguCommandHdr.CATWguUpdateZoneHdr.ShortHelp="更新區域";
+CATWguCommandHdr.CATWguUpdateZoneHdr.LongHelp="更新所有區域";
+
+CATWguCommandHdr.CATWguRotateCompLeftHdr.Title="左旋";
+CATWguCommandHdr.CATWguRotateCompLeftHdr.Help="左旋90度";
+CATWguCommandHdr.CATWguRotateCompLeftHdr.ShortHelp="左旋";
+CATWguCommandHdr.CATWguRotateCompLeftHdr.LongHelp="左旋90度";
+
+CATWguCommandHdr.CATWguRotateCompRightHdr.Title="右旋";
+CATWguCommandHdr.CATWguRotateCompRightHdr.Help="右旋90度";
+CATWguCommandHdr.CATWguRotateCompRightHdr.ShortHelp="右旋";
+CATWguCommandHdr.CATWguRotateCompRightHdr.LongHelp="右旋90度";
+
+CATWguCommandHdr.CATWguFlipCompHorizHdr.Title="水平翻轉";
+CATWguCommandHdr.CATWguFlipCompHorizHdr.Help="水平翻轉分件";
+CATWguCommandHdr.CATWguFlipCompHorizHdr.ShortHelp="水平翻轉";
+CATWguCommandHdr.CATWguFlipCompHorizHdr.LongHelp="水平翻轉分件";
+
+CATWguCommandHdr.CATWguFlipCompVertHdr.Title="垂直翻轉";
+CATWguCommandHdr.CATWguFlipCompVertHdr.Help="垂直翻轉分件";
+CATWguCommandHdr.CATWguFlipCompVertHdr.ShortHelp="垂直翻轉";
+CATWguCommandHdr.CATWguFlipCompVertHdr.LongHelp="垂直翻轉分件";
+
+CATWguCommandHdr.CATWguFlipCompInLineHdr.Title="插入線翻轉";
+CATWguCommandHdr.CATWguFlipCompInLineHdr.Help="分件插入線翻轉";
+CATWguCommandHdr.CATWguFlipCompInLineHdr.ShortHelp="插入線翻轉";
+CATWguCommandHdr.CATWguFlipCompInLineHdr.LongHelp="分件插入線翻轉";
+
+CATWguCommandHdr.CATWguFlipCompConnectionsHdr.Title="翻轉連結";
+CATWguCommandHdr.CATWguFlipCompConnectionsHdr.Help="在分件插入翻轉連結";
+CATWguCommandHdr.CATWguFlipCompConnectionsHdr.ShortHelp="翻轉連結";
+CATWguCommandHdr.CATWguFlipCompConnectionsHdr.LongHelp="在分件插入翻轉連結";
+
+CATWguCommandHdr.CATWguScaleCompHdr.Title="縮放";
+CATWguCommandHdr.CATWguScaleCompHdr.Help="縮放分件";
+CATWguCommandHdr.CATWguScaleCompHdr.ShortHelp="縮放分件";
+CATWguCommandHdr.CATWguScaleCompHdr.LongHelp="縮放分件";
+
+CATWguCommandHdr.CATWguReplaceCompHdr.Title="更換";
+CATWguCommandHdr.CATWguReplaceCompHdr.Help="以另一分件更換此分件";
+CATWguCommandHdr.CATWguReplaceCompHdr.ShortHelp="更換分件";
+CATWguCommandHdr.CATWguReplaceCompHdr.LongHelp="以另一分件更換此分件";
+
+CATWguCommandHdr.CATWguAlignCompHorizHdr.Title="水平對齊";
+CATWguCommandHdr.CATWguAlignCompHorizHdr.Help="水平對齊分件";
+CATWguCommandHdr.CATWguAlignCompHorizHdr.ShortHelp="水平對齊";
+CATWguCommandHdr.CATWguAlignCompHorizHdr.LongHelp="水平對齊分件";
+
+CATWguCommandHdr.CATWguAlignCompVertHdr.Title="垂直對齊";
+CATWguCommandHdr.CATWguAlignCompVertHdr.Help="垂直對齊分件";
+CATWguCommandHdr.CATWguAlignCompVertHdr.ShortHelp="垂直對齊";
+CATWguCommandHdr.CATWguAlignCompVertHdr.LongHelp="垂直對齊分件";
+
+CATWguCommandHdr.CATWguSwapGraphicCompHdr.Title="圖形交換";
+CATWguCommandHdr.CATWguSwapGraphicCompHdr.Help="交換分件圖形";
+CATWguCommandHdr.CATWguSwapGraphicCompHdr.ShortHelp="交換分件圖形";
+CATWguCommandHdr.CATWguSwapGraphicCompHdr.LongHelp="交換分件圖形";
+
+CATWguCommandHdr.CATWguOnOffQueryConnection.Title="詢問連結";
+CATWguCommandHdr.CATWguOnOffQueryConnection.Help="詢問開或關圖紙連結";
+CATWguCommandHdr.CATWguOnOffQueryConnection.ShortHelp="詢問開或關圖紙連結";
+CATWguCommandHdr.CATWguOnOffQueryConnection.LongHelp="詢問開或關圖紙連結";
+
+CATWguCommandHdr.CATWguOnOffConnect.Title="連結";
+CATWguCommandHdr.CATWguOnOffConnect.Help="連結開或關圖紙物件";
+CATWguCommandHdr.CATWguOnOffConnect.ShortHelp="連結開或關圖紙物件";
+CATWguCommandHdr.CATWguOnOffConnect.LongHelp="連結開或關圖紙物件至另一個";
+
+CATWguCommandHdr.CATWguOnOffDisconnect.Title="分開";
+CATWguCommandHdr.CATWguOnOffDisconnect.Help="分開開或關圖紙物件";
+CATWguCommandHdr.CATWguOnOffDisconnect.ShortHelp="分開開或關圖紙物件";
+CATWguCommandHdr.CATWguOnOffDisconnect.LongHelp="分開開或關圖紙物件";
+
+CATWguCommandHdr.CATWguActivateView.Title="作動視圖";
+CATWguCommandHdr.CATWguActivateView.Help="作動視圖";
+CATWguCommandHdr.CATWguActivateView.ShortHelp="設定所選視圖為作動視圖";
+CATWguCommandHdr.CATWguActivateView.LongHelp="設定所選視圖為作動視圖";
+
+CATWguCommandHdr.CATWguTranslateHdr.Title="語法平移";
+CATWguCommandHdr.CATWguTranslateHdr.Help="平移多重語法和繪圖物件";
+CATWguCommandHdr.CATWguTranslateHdr.ShortHelp="語法平移";
+CATWguCommandHdr.CATWguTranslateHdr.LongHelp="平移多重語法和繪圖物件 (且更新語法連接).";
+
+CATWguCommandHdr.CATWguConnectHdr.Title="連結";
+CATWguCommandHdr.CATWguConnectHdr.Help="連結分件或 route 至另一分件或 route";
+CATWguCommandHdr.CATWguConnectHdr.ShortHelp="連結";
+CATWguCommandHdr.CATWguConnectHdr.LongHelp="連結分件或 route 至另一分件或 route";
+
+CATWguCommandHdr.CATWguDisconnectHdr.Title="分開";
+CATWguCommandHdr.CATWguDisconnectHdr.Help="分開分件或 route 至另一分件或 route";
+CATWguCommandHdr.CATWguDisconnectHdr.ShortHelp="分開";
+CATWguCommandHdr.CATWguDisconnectHdr.LongHelp="分開分件或 route 至另一分件或 route";
+
+CATWguCommandHdr.CATWguBreakRouteHdr.Title="打斷 Route";
+CATWguCommandHdr.CATWguBreakRouteHdr.Help="打斷 route 成為兩個 routes";
+CATWguCommandHdr.CATWguBreakRouteHdr.ShortHelp="打斷 Route";
+CATWguCommandHdr.CATWguBreakRouteHdr.LongHelp="打斷 route 成為兩個 routes";
+
+CATWguCommandHdr.CATWguCloseRouteHdr.Title="組合 Route";
+CATWguCommandHdr.CATWguCloseRouteHdr.Help="組合兩打斷 routes 成為一個";
+CATWguCommandHdr.CATWguCloseRouteHdr.ShortHelp="組合 Route";
+CATWguCommandHdr.CATWguCloseRouteHdr.LongHelp="組合兩打斷 routes 成為一個";
+
+CATWguCommandHdr.CATWguFlowShowHdr.Title="顯示流動";
+CATWguCommandHdr.CATWguFlowShowHdr.Help="顯示或不顯示 route 或 線 ID 的流動方向";
+CATWguCommandHdr.CATWguFlowShowHdr.ShortHelp="顯示流動";
+CATWguCommandHdr.CATWguFlowShowHdr.LongHelp="顯示或不顯示 route 或 線 ID 的流動方向";
+
+CATWguCommandHdr.CATWguFlowDirectionHdr.Title="流動方向";
+CATWguCommandHdr.CATWguFlowDirectionHdr.Help="逆轉 route 或 線 ID 的流動方向";
+CATWguCommandHdr.CATWguFlowDirectionHdr.ShortHelp="流動方向";
+CATWguCommandHdr.CATWguFlowDirectionHdr.LongHelp="逆轉 route 或 線 ID 的流動方向";
+
+CATWguCommandHdr.CATWguFlowShowAllHdr.Title="顯示所有流動";
+CATWguCommandHdr.CATWguFlowShowAllHdr.Help="顯示所有 route 或 線 ID 的流動方向";
+CATWguCommandHdr.CATWguFlowShowAllHdr.ShortHelp="顯示所有流動";
+CATWguCommandHdr.CATWguFlowShowAllHdr.LongHelp="顯示所有 route 或 線 ID 的流動方向";
+
+CATWguCommandHdr.CATWguFlowNoShowAllHdr.Title="不顯示所有流動";
+CATWguCommandHdr.CATWguFlowNoShowAllHdr.Help="不顯示所有 route 或 線 ID 的流動方向";
+CATWguCommandHdr.CATWguFlowNoShowAllHdr.ShortHelp="不顯示所有流動";
+CATWguCommandHdr.CATWguFlowNoShowAllHdr.LongHelp="不顯示所有 route 或 線 ID 的流動方向";
+
+CATWguCommandHdr.CATWguGapShowAllHdr.Title="顯示所有間隙";
+CATWguCommandHdr.CATWguGapShowAllHdr.Help="顯示所有 route 相交上的間隙";
+CATWguCommandHdr.CATWguGapShowAllHdr.ShortHelp="顯示間隙";
+CATWguCommandHdr.CATWguGapShowAllHdr.LongHelp="顯示所有 route 相交上的間隙";
+
+CATWguCommandHdr.CATWguGapNoShowAllHdr.Title="不顯示所有間隙";
+CATWguCommandHdr.CATWguGapNoShowAllHdr.Help="不顯示所有 route 相交上的間隙";
+CATWguCommandHdr.CATWguGapNoShowAllHdr.ShortHelp="不顯示間隙";
+CATWguCommandHdr.CATWguGapNoShowAllHdr.LongHelp="不顯示所有 route 相交上的間隙";
+
+CATWguCommandHdr.CATWguRenameIDHdr.Title="更名 ID";
+CATWguCommandHdr.CATWguRenameIDHdr.Help="更改圖形物件 ID";
+CATWguCommandHdr.CATWguRenameIDHdr.ShortHelp="更名 ID";
+CATWguCommandHdr.CATWguRenameIDHdr.LongHelp="更改圖形物件 ID";
+
+CATWguCommandHdr.CATWguManageLogicalPubHdr.Title="管理邏輯發行...";
+CATWguCommandHdr.CATWguManageLogicalPubHdr.Help="管理開啟或關閉連接器的邏輯發行";
+CATWguCommandHdr.CATWguManageLogicalPubHdr.ShortHelp="管理邏輯發行";
+CATWguCommandHdr.CATWguManageLogicalPubHdr.LongHelp="管理開啟或關閉連接器的邏輯發行";
+
+CATWguCommandHdr.CATWguManageDocLinksHdr.Title="管理文件鏈結...";
+CATWguCommandHdr.CATWguManageDocLinksHdr.Help="管理目前文件鏈結";
+CATWguCommandHdr.CATWguManageDocLinksHdr.ShortHelp="管理文件鏈結";
+CATWguCommandHdr.CATWguManageDocLinksHdr.LongHelp="管理目前文件鏈結";
+
+CATWguCommandHdr.CATWguPartSelectionHdr.Title="零件選擇";
+CATWguCommandHdr.CATWguPartSelectionHdr.Help="選擇零件號碼與圖形物件相關";
+CATWguCommandHdr.CATWguPartSelectionHdr.ShortHelp="零件選擇";
+CATWguCommandHdr.CATWguPartSelectionHdr.LongHelp="選擇零件號碼與圖形物件相關";
+
+CATWguCommandHdr.CATWguNetworkAnalHdr.Title="網路";
+CATWguCommandHdr.CATWguNetworkAnalHdr.Help="連結物件的網路或路徑";
+CATWguCommandHdr.CATWguNetworkAnalHdr.ShortHelp="網路";
+CATWguCommandHdr.CATWguNetworkAnalHdr.LongHelp="連結物件的網路或路徑";
+
+CATWguCommandHdr.CATWguRelatedObjectsHdr.Title="相關物件";
+CATWguCommandHdr.CATWguRelatedObjectsHdr.Help="顯示所選物件的相關物件";
+CATWguCommandHdr.CATWguRelatedObjectsHdr.ShortHelp="相關物件";
+CATWguCommandHdr.CATWguRelatedObjectsHdr.LongHelp="顯示所選物件的相關物件";
+
+CATWguCommandHdr.CATWguReportDefHdr.Title="報告定義";
+CATWguCommandHdr.CATWguReportDefHdr.Help="定義報告格式";
+CATWguCommandHdr.CATWguReportDefHdr.ShortHelp="報告定義";
+CATWguCommandHdr.CATWguReportDefHdr.LongHelp="定義報告格式";
+
+CATWguCommandHdr.CATWguReportGenHdr.Title="產生報告";
+CATWguCommandHdr.CATWguReportGenHdr.Help="產生報告格式";
+CATWguCommandHdr.CATWguReportGenHdr.ShortHelp="產生報告";
+CATWguCommandHdr.CATWguReportGenHdr.LongHelp="產生報告格式";
+
+CATWguCommandHdr.CATWguExportQueryHdr.Title="輸出詢問...";
+CATWguCommandHdr.CATWguExportQueryHdr.Help="輸出詢問至檔案";
+CATWguCommandHdr.CATWguExportQueryHdr.ShortHelp="輸出詢問";
+CATWguCommandHdr.CATWguExportQueryHdr.LongHelp="輸出詢問至檔案.";
+
+CATWguCommandHdr.CATWguDataExportHdr.Title="輸出資料...";
+CATWguCommandHdr.CATWguDataExportHdr.Help="輸出圖形資料";
+CATWguCommandHdr.CATWguDataExportHdr.ShortHelp="輸出資料";
+CATWguCommandHdr.CATWguDataExportHdr.LongHelp="輸出包含物件, 屬性和關係的圖形資料";
+
+CATWguCommandHdr.CATWguPrjMngtHdr.Title="選擇或瀏覽...";
+CATWguCommandHdr.CATWguPrjMngtHdr.Help="管理資源計劃";
+CATWguCommandHdr.CATWguPrjMngtHdr.ShortHelp="計劃管理";
+CATWguCommandHdr.CATWguPrjMngtHdr.LongHelp="管理資源計劃";
+
+CATWguCommandHdr.CATWguPRMCheckerHdr.Title="有效化...";
+CATWguCommandHdr.CATWguPRMCheckerHdr.Help="在計劃資源 XML 中有效化資源";
+CATWguCommandHdr.CATWguPRMCheckerHdr.ShortHelp="計劃管理有效化";
+CATWguCommandHdr.CATWguPRMCheckerHdr.LongHelp="在計劃資源 XML 中有效化資源";
+
+CATWguCommandHdr.CATWguATSTextPlaceHdr.Title="置放文字樣板";
+CATWguCommandHdr.CATWguATSTextPlaceHdr.Help="在物件上置放文字樣板";
+CATWguCommandHdr.CATWguATSTextPlaceHdr.ShortHelp="置放文字樣板";
+CATWguCommandHdr.CATWguATSTextPlaceHdr.LongHelp="在物件上置放文字樣板";
+
+CATWguCommandHdr.CATWguInsertViewHdr.Title="已存視圖";
+CATWguCommandHdr.CATWguInsertViewHdr.Help="在圖形中插入已存視圖.";
+CATWguCommandHdr.CATWguInsertViewHdr.ShortHelp="插入已存視圖";
+CATWguCommandHdr.CATWguInsertViewHdr.LongHelp="在圖形中插入已存視圖.";
+
+CATWguCommandHdr.CATWguMeasureHdr.Title="量測工具";
+CATWguCommandHdr.CATWguMeasureHdr.Help="在圖形物件間量測";
+CATWguCommandHdr.CATWguMeasureHdr.ShortHelp="量測工具";
+CATWguCommandHdr.CATWguMeasureHdr.LongHelp="在圖形物件間量測";
+
+CATWguCommandHdr.CATWguQueryCntrInfoHdr.Title="詢問連接器資訊";
+CATWguCommandHdr.CATWguQueryCntrInfoHdr.Help="詢問連接器資訊";
+CATWguCommandHdr.CATWguQueryCntrInfoHdr.ShortHelp="詢問連接器資訊";
+CATWguCommandHdr.CATWguQueryCntrInfoHdr.LongHelp="詢問連接器資訊";
+
+//------------------------------------------------------------------------------
+// Annotation Editor Contextual Menu Command
+//------------------------------------------------------------------------------
+CATWguCommandHdr.CATWguEditAnnotHdr.Title="標註編輯器...";
+CATWguCommandHdr.CATWguEditAnnotHdr.ShortHelp="標註編輯器...";
+CATWguCommandHdr.CATWguEditAnnotHdr.Help="編輯標註";
+CATWguCommandHdr.CATWguEditAnnotHdr.LongHelp="標註編輯器";
+
+
+CATWguCommandHdr.CATWguURLInsertCmdHdr.Title="新增超鏈結";
+CATWguCommandHdr.CATWguURLInsertCmdHdr.Help="新增超鏈結";
+CATWguCommandHdr.CATWguURLInsertCmdHdr.ShortHelp="新增超鏈結";
+CATWguCommandHdr.CATWguURLInsertCmdHdr.LongHelp="新增超鏈結";
+
+CATWguCommandHdr.CATWguURLOpenCmdHdr.Title="跳至超鏈結";
+CATWguCommandHdr.CATWguURLOpenCmdHdr.Help="跳至超鏈結";
+CATWguCommandHdr.CATWguURLOpenCmdHdr.ShortHelp="跳至超鏈結";
+CATWguCommandHdr.CATWguURLOpenCmdHdr.LongHelp="跳至超鏈結目的地";
+
+//------------------------------------------------------------------------------
+// Drafting Text Update Command
+//------------------------------------------------------------------------------
+CATWguCommandHdr.CATWguTextUpdateHdr.Title="文字更新" ;
+CATWguCommandHdr.CATWguTextUpdateHdr.ShortHelp="文字更新";
+CATWguCommandHdr.CATWguTextUpdateHdr.Help="強制更新在目前圖紙的主要視圖文字";
+CATWguCommandHdr.CATWguTextUpdateHdr.LongHelp=
+"強制更新在目前圖紙的主要視圖文字";
+
+//------------------------------------------------------------------------------
+// Schematic Update Selection Command
+//------------------------------------------------------------------------------
+CATWguCommandHdr.CATWguSelectiveUpdateHdr.Title="更新選擇";
+CATWguCommandHdr.CATWguSelectiveUpdateHdr.ShortHelp="更新選擇";
+CATWguCommandHdr.CATWguSelectiveUpdateHdr.Help="更新選擇";
+CATWguCommandHdr.CATWguSelectiveUpdateHdr.LongHelp =
+"更新選擇
+在繪圖, 圖紙或視圖中更新選擇.";
+
+//------------------------------------------------------------------------------
+// Route Fix Command
+//------------------------------------------------------------------------------
+CATWguCommandHdr.CATWguRouteFixHdr.Title="鎖定外形";
+CATWguCommandHdr.CATWguRouteFixHdr.ShortHelp="鎖定 route 的基本形狀";
+CATWguCommandHdr.CATWguRouteFixHdr.Help="Maintains the basic shape of the route so that only the segment closest to the route extremity can be reshaped";
+CATWguCommandHdr.CATWguRouteFixHdr.LongHelp =
+"Maintains the basic shape of the route so that only the segment closest to the route extremity can be reshaped.";
+
+//------------------------------------------------------------------------------
+// Route Unfix Command
+//------------------------------------------------------------------------------
+CATWguCommandHdr.CATWguRouteUnfixHdr.Title="釋放外形";
+CATWguCommandHdr.CATWguRouteUnfixHdr.ShortHelp="釋放 route 的基本形狀";
+CATWguCommandHdr.CATWguRouteUnfixHdr.Help="Unlocks the route shape so that there is no restriction on how the route is reshaped";
+CATWguCommandHdr.CATWguRouteUnfixHdr.LongHelp =
+"Unlocks the route shape so that there is no restriction on how the route is reshaped.";
+
+CATWguCommandHdr.CATWguUpdateImageHdr.Title="更新或詢問圖像";
+CATWguCommandHdr.CATWguUpdateImageHdr.Help="Updating a schematic diagram image object from its master";
+CATWguCommandHdr.CATWguUpdateImageHdr.ShortHelp="更新或詢問圖像";
+CATWguCommandHdr.CATWguUpdateImageHdr.LongHelp="Updating a schematic diagram image object from its master.";
+
+CATWguCommandHdr.CATWguCatalogBrowserHdr.Title="目錄瀏覽器";
+CATWguCommandHdr.CATWguCatalogBrowserHdr.Help="目錄瀏覽器";
+CATWguCommandHdr.CATWguCatalogBrowserHdr.ShortHelp="目錄瀏覽器";
+CATWguCommandHdr.CATWguCatalogBrowserHdr.LongHelp="目錄瀏覽器";
+
+//========================================================================
+//Reset Color
+//========================================================================
+CATWguCommandHdr.CATWguResetColorHdr.Title="重設顏色";
+CATWguCommandHdr.CATWguResetColorHdr.Help="重設圖形物件顏色";
+CATWguCommandHdr.CATWguResetColorHdr.ShortHelp="重設顏色";
+CATWguCommandHdr.CATWguResetColorHdr.LongHelp="重設圖形物件顏色";
+

@@ -1,0 +1,55 @@
+PPRHubLoadError_ConflictPrdNames.Request="檔案 '/p2' 中的名稱 '/p1' 與現存的分件衝突";
+PPRHubLoadError_ConflictPrdNames.Diagnostic="與已載入檔案 '/p1' 中的分件衝突";
+PPRHubLoadError_ConflictPrdNames.Advice="請將此分件更名";
+
+PPRHubLoadWarning_RenamedPrdNames="分件 '/p1' 中的名稱因為相衝突已更名";
+
+PPRHubSaveError_ECBCreation.Request="為資源建立 ErgoCompBase 失敗";
+PPRHubSaveError_ECBCreation.Diagnostic="內部錯誤 May be a invalid child plantype to that of parent";
+PPRHubSaveError_ECBCreation.Advice="請連絡系統管理員";
+
+PPRHubSaveError_PlanTypeRight.Request="使用者沒有建立平面形式 '/p1' 的權限";
+PPRHubSaveError_PlanTypeRight.Diagnostic="請檢查權限";
+PPRHubSaveError_PlanTypeRight.Advice="請連絡系統管理員";
+
+PPRHubSaveError_SCICreation.Request="為資源建立 SubCompItem 失敗";
+PPRHubSaveError_SCICreation.Diagnostic="Internal error";
+PPRHubSaveError_SCICreation.Advice="請連絡系統管理員";
+
+PPRHubSaveError_GetECB.Request="Unable to get the resource from IPD for '/p'.";
+PPRHubSaveError_GetECB.Diagnostic="內部錯誤";
+PPRHubSaveError_GetECB.Advice="請連絡系統管理員";
+
+PPRHubSaveError_NoWriteLock.Request="使用者無法修改資源 '/p'.";
+PPRHubSaveError_NoWriteLock.Diagnostic="使用者沒有寫入權限.";
+PPRHubSaveError_NoWriteLock.Advice="重新載入資源可以獲取寫入權限";
+
+PPRHubSaveError_NoAddChild.Request="使用者無法增加下層元件至資源";
+PPRHubSaveError_NoAddChild.Diagnostic="使用者沒有新增子層元件至資源的權限.";
+PPRHubSaveError_NoAddChild.Advice="請連絡系統管理員";
+
+PPRHubSaveError_DeleteObjFailed.Request="刪除物件";
+PPRHubSaveError_DeleteObjFailed.Diagnostic="刪除物件失敗, 請檢查刪除權限";
+PPRHubSaveError_DeleteObjFailed.Advice="請連絡系統管理員";
+
+PPRHubSaveError_NotWorkingState.Request="無法在資料庫中儲存部份 '/p' 的修改";
+PPRHubSaveError_NotWorkingState.Diagnostic="物件不在工作狀態. 只會儲存在發行和整合中的修改.";
+PPRHubSaveError_NotWorkingState.Advice="請連絡系統管理員";
+
+PPRHubSaveError_DeleteObject_NotWorkingState.Request="因為物件在規劃狀態以致無法刪除物件.";
+PPRHubSaveError_DeleteObject_NotWorkingState.Diagnostic="物件和父族可能為發行或整合狀態.";
+PPRHubSaveError_DeleteObject_NotWorkingState.Advice="請連絡系統管理員";
+
+PPRHubSaveError_CreateObject_NotWorkingState.Request="因為物件在規劃狀態以致無法在資料庫中建立物件.";
+PPRHubSaveError_CreateObject_NotWorkingState.Diagnostic="父族物件可能為發行或整合狀態.";
+PPRHubSaveError_CreateObject_NotWorkingState.Advice="請連絡系統管理員";
+
+PPRHubSaveError_ObjectLockedByOthers="無法刪除資料庫中的物件. 因另一使用者鎖定此物件導致刪除失敗.";
+PPRHubSaveError_NoDeleteRight="無法刪除資料庫中的物件. 目前使用者沒有刪除權.";
+PPRHubSaveError_ObjectNotLocked="無法刪除資料庫中的物件. 物件未鎖定.";
+
+PPRHubSaveError_InValidCategory.Request="Invalid Category '/p' specified for the resource";
+PPRHubSaveError_InValidCategory.Diagnostic="The created resource will not be saved to the database";
+PPRHubSaveError_InValidCategory.Advice="Please contact the administrator";
+
+

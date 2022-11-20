@@ -1,0 +1,66 @@
+// COPYRIGHT DASSAULT SYSTEMES 2004
+
+// --- Resources for ENOVIA Reconciliator model infrastructure
+// ---  *  Name of supported environment
+
+Environment.VPM1    = "ENOVIA VPM V4"    ;
+Environment.File    = "檔案環境" ;
+Environment.ENOVIA5 = "ENOVIA V5 VPM"    ;
+Environment.TeamPDM = "SmarTeam"    	 ;
+
+// ---  *  Cover Session management
+
+WRN_RecEmptyRecObjList            = "空的 Reconciliation 物件清單. \n 產生 Reconciliation 物件時發生錯誤." ;
+WRN_RecExeNotAuthorised           = "因一個或以上的 reconciliation 文件資料不完整以致無法執行." ;
+WRN_RecMemoryAllocation           = "記憶體定址錯誤." ; 
+WRN_RecObjNoEnv                   = "物件之一環境未被適當定義. \n 請嚐試重新設定環境.";
+WRN_RecInvalidDoc                 = "執行 Reconciliation 動作時無法萃取 CATIA 文件資訊.";
+WRN_RecInvalidDocEnv              = "執行時無法萃取 CATIDocEnvironment 界面.";
+WRN_RecFetchPDMReconcileIntfPb    = "無法由 CATIDoc 界面萃取 CATIPDMReconcileScm 界面.";
+WRN_RecReconcileNotAuthorized     = "Reconciliation 功能未授權. \n 請檢查軟體授權設定.";
+WRN_RecDesignModePb               = "警告: 部份資訊開啟在顯示模式.\n Reconciliator 將會完全載入在設計模式.";
+WRN_RecNoPartFound                = "無法在 /p1 文件找到產品或零件 \n" ;
+WRN_MultipleAssembly              = "Reconciliator does not able to manage multiple assembly in the same session\n We have at least 2 assembly structures: /p1 and /p2\n 
+                                     It could happen in the following two cases:\n
+									   1- Inserting a contextual part in a product structure that was not its original context.\n
+									   2- Decativating a unique instance of a product from a product structure.\n" ;
+WRN_EmptyAssembly                 = "Not able to manage an empty assembly structure.\n" ;
+WRN_RecInvalidAccessToPart        = "無效存取零件 /p1 的 CATIA 資訊 \n" ;
+WRN_RecObjectNotFound             = "無法在組立架構零件 /p1 中找到. \n" ;
+WRN_RecEnvNotFound                = "無法存取環境 /p1.";
+
+// ---  *  Generic messages used by VPDM adapters
+
+WRN_RecNoRootAsmDefined           = "未完整定義根組立 \n 內部錯誤 \n" ;
+WRN_RecPDMObjectAccess            = "無法找到 /p2 文件中 /p1 的 reconciliation 的 VPDM 資訊 \n" ;
+WRN_RecVPDMCompareFailed          = "在 CATIA 和 VPDM 視圖間的比較失敗 \n" ;
+WRN_RecErrorVPMExpand             = "無法在 VPDM 儲存器中存取產品架構定義 :\n   /p1" ;
+WRN_RecRelationNotFound           = "零件 /p1 在 VPDM 組立架構視圖中不一致 \n" ;
+WRN_RecInvalidPDMDefinition       = "無法在 /p1 中找到 VPDM 資訊. \n" ;
+WRN_RecVpmNoConnection            = "未連接至 /p1 系統. \n 請手動連接至 /p1 後再重新執行此動作.";
+WRN_RecVpmNoRootClassForNewPRC    = "沒有產品分級名稱無法在 ENOVIA VPM V5 中建立新的 PRC. \n Please, Valuate it using the R/T variable CV5_REC_EV5_ProductClassName" ; 
+
+// ---    Coming from V5R10
+
+WRN_RecInvalidCriteriaInput       = "找到的標準清單無效. \n 請重新載入 Reconciliation.";
+WRN_RecInvalidCharacteristicInput = "找到的字元清單無效. \n 請重新載入 Reconciliation.";
+WRN_RecObjIncomplete              = "一或以上的 Reconciliation 文件不完整.";
+WRN_RecNewEnvListPb               = "無法建立新的環境清單. \n 新定位失敗.";
+WRN_RecResetPDMDocPb              = "執行 reconcile 重設 PDM 文件時發生問題.";
+WRN_RecNoDocumentAccess           = "無法存取 /p1 文件資訊. \n" ;
+WRN_RecInvalidRule                = " /p1 文件的 /p2 名稱選擇到未授權規則 \n" ;
+
+// ---> Coming from CATRecVPM1Msg in CDMA Interoperability
+
+WRN_RecVpmInvalidRule             = "規則對此物件無效. \n 為上物件所選擇的 reconciliation 規則 /p1 與此物件的型式 /p2 不一致";
+WRN_RecVpmCharacDBAccessKO        = "存取至資料庫的字元無效. \n 沒有可比較的字元.";
+WRN_RecVpmCharacCV5AccessKO       = "工作中存取字元失敗. \n 沒有可比較的字元.";
+WRN_RecVpmReloadDiffUuids         = "不允許重新載入不同文件.\n 如被 PDM 文件中含有相同原點的被更換文件在工作中,則不允許重新載入動作 (相同的內部 UUIDs).";
+WRN_RecVpmReloadForceDiffUuids    = "The by-pass option forcing the ability to do a reload with inconsistent documents (different internal uuids) is activated in your Catia job. \nCurrently, the document /p1 \nwith a different internal UUID than the old one in session has beeing loaded from the PDM. \nAS A CONSEQUENCE, SOME LINKS WHICH IMPLIED THE RELOADED DOCUMENT HAVE PROBABLY BEEING LOST ! \nRecreate them and review in detail your session content before saving any data in the PDM. ";     
+WRN_RecVpmReloadDocEditorToClose  = "Reload(s) could not remove from session replaced document(s). \nThese document(s) with prefix RecPrepareReloadDocToClose_ in File-Desk are held by editors and must be closed manually. \nThis is to be done prior to save your session in ENOVIA VPM. "; 
+WRN_RecVpmInternalError           = "內部錯誤. \n"; 
+WRN_RecVpmSimpleQueryInvalid      = "此元件型式無法執行標準. "; 
+WRN_RecVpmNotDocumentSupported    = "所選的文件 reconciliation (/p1) 不支援	."; 
+WRN_RecVpmCriteriaNotEnoughArg    = "所選的標準需要 /p1 引數." ;
+WRN_RecVpmCommandAborted          = "存取至 ENOVIA VPM 失敗 (/p1 命令中止).\n請檢查您的 VPM 應用程式或 VPM 伺服器仍在執行."; 
+WRN_RecVpmDecodeXML               = "內部錯誤. \n 無法為 VPM 的需求 /p1 執行 XML 編碼." ;

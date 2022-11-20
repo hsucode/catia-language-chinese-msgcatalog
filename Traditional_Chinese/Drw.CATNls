@@ -1,0 +1,188 @@
+//=====================================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1998 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    Drw
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    Workbench Drafting 
+// DATE        :    17.11.1998
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//      00           fgx   ??.05.98    Creation
+//      01           fgx   23.11.98    Nouvelle version CXR2
+//      02           fgx   13.01.99    Sous-menu de gendim
+//      03           fgx   28.01.99    Ajout du container de gendim dans tools
+//      04           fgx   26.02.99    Ajout tb de style
+//      05           fgx   29.03.99    Nouvelles commandes sketcher
+//      06           fgx   04.08.99    Nouveaux workbenches
+//      07           fgx   17.11.99    Ajout des tb measure et browser
+//      08           fgx   09.12.99    Ajout de tb analyze + container lines
+//	  09	         lgk   26.06.02	   Revision
+//	  10	         lgk   15.10.02	   -
+//=====================================================================================
+
+// Configuration
+// -------------
+Drw.Title="繪圖";
+Drw.ShortHelp="繪圖";
+Drw.Help="繪圖工作檯";
+Drw.LongHelp="此工作檯是用來建立機械繪圖.";
+
+// Toolbars
+// --------
+// Right
+contTbSelect.Title="選取";
+contTbDrawing.Title="繪圖";
+contTbViews.Title="視圖";
+contTbDimensioning.Title="定義尺寸";
+contTbGeneration.Title="產生";
+contTbAnnotations.Title="註解";
+contTbDressup.Title="裝飾";
+contTbGeometryCreation.Title="幾何建立";
+contTbGeometryEdition.Title="幾何編輯";
+// Top
+contTbStyle.Title="形式";
+contTbTextProperties.Title="文字特性";
+contTbDimensionProperties.Title="尺寸特性";
+contTbGraphicProperties.Title="圖素特性";
+
+// Bottom
+contTbUpdate.Title="更新";
+contTbTools.Title="工具組";
+contTbMeasure.Title="量測";
+contTbBrowser.Title="目錄瀏覽器";
+// UnDock
+contTbOrientation.Title="位置及方向";
+contTbPosition.Title="定位";
+contTbAnalyze.Title="解析";
+contTbMultiView.Title="多重視圖 (2.5 D) ";
+CATDrwAreaFillIcb.Title="面積填滿";
+
+// Sub-Toolbars
+// ------------
+contSheets.Title="圖紙";
+contProjections.Title="投影";
+contSections.Title="剖面";
+contDetails.Title="細部";
+contClippings.Title="剪下";
+contBroken.Title="打斷視圖";
+contViewWizard.Title="精靈 ";
+contDimensions.Title="尺寸";
+CATDrwFeatDimIcb.Title="技術特徵尺寸";
+CATDrwContInterruptTlb.Title="尺寸版期";
+contTolerancing.Title="容差";
+contGenDim.Title="產生尺寸";
+contTexts.Title="文字";
+contSymbols.Title="符號";
+CATDrwContTableIcb.Title="表";
+contAxis.Title="中心和螺紋線";
+contPoint.Title="點";
+contLine.Title="線";
+contCircle.Title="正圓及橢圓形";
+contProfiles.Title="外形";
+contCurves.Title="曲線";
+contRelimit.Title="修剪";
+contTransfor.Title="轉換";
+contCst.Title="拘束";
+
+// Sub-Menus
+// ---------
+// First level
+contMenuViews.Title="視圖";
+contMenuViews.Mnemonic="V";
+contMenuDrawing.Title="繪圖";
+contMenuDrawing.Mnemonic="r";
+contMenuDimensioning.Title="定義尺寸";
+contMenuDimensioning.Mnemonic="D";
+contMenuGeneration.Title="產生";
+contMenuGeneration.Mnemonic="n";
+contMenuAnnotations.Title="註解";
+contMenuAnnotations.Mnemonic="A";
+contMenuDressup.Title="修飾";
+contMenuDressup.Mnemonic="u";
+contMenuGeometryCreation.Title="建立幾何";
+contMenuGeometryCreation.Mnemonic="G";
+contMenuGeometryEdition.Title="修改幾何";
+contMenuGeometryEdition.Mnemonic="m";
+contMenuDrwGenDimTools.Title="建立尺寸";
+contMenuDrwGenDimTools.Mnemonic="g";
+contMenuDrwPositioning.Title="定位";
+contMenuDrwPositioning.Mnemonic="P";
+contMenuDrwAnalyze.Title="解析";
+contMenuDrwAnalyze.Mnemonic="A";
+contMenuDrwMultiView.Title="多重視圖 (2.5 D) ";
+contMenuDrwMultiView.Mnemonic="i";
+contMenuCst.Title="拘束";
+contMenuCst.Mnemonic="C";
+
+// Second level
+contMenuProjections.Title="投影";
+contMenuProjections.Mnemonic="P";
+contMenuSections.Title="剖面";
+contMenuSections.Mnemonic="S";
+contMenuDetails.Title="細部";
+contMenuDetails.Mnemonic="D";
+contMenuClippings.Title="截取";
+contMenuClippings.Mnemonic="C";
+contMenuBroken.Title="打斷視圖";
+contMenuBroken.Mnemonic="C";
+contMenuViewWizard.Title="精靈";
+contMenuViewWizard.Mnemonic="W";
+// ---
+contMenuSheets.Title="圖紙";
+contMenuSheets.Mnemonic="S";
+// ---
+contMenuDimensions.Title="尺寸";
+contMenuDimensions.Mnemonic="D";
+CATDrwFeatDimSnu.Title="技術特徵尺寸";
+CATDrwFeatDimSnu.Mnemonic="F";
+contMenuTolerancing.Title="容差";
+contMenuTolerancing.Mnemonic="T";
+// ---
+contMenuTexts.Title="文字";
+contMenuTexts.Mnemonic="T";
+contMenuSymbols.Title="符號";
+contMenuSymbols.Mnemonic="S";
+CATDrwContTableMenuSnu.Title="表";
+CATDrwContTableMenuSnu.Mnemonic="a";
+CATDrwAreaFillSnu.Title="面積填滿";
+// ---
+contMenuAxis.Title="軸線和螺紋線";
+contMenuAxis.Mnemonic="A";
+// ---
+contMenuPoint.Title="點";
+contMenuPoint.Mnemonic="P";
+contMenuLine.Title="線";
+contMenuLine.Mnemonic="L";
+contMenuCircle.Title="正圓及橢圓";
+contMenuCircle.Mnemonic="C";
+contMenuProfiles.Title="斷面";
+contMenuProfiles.Mnemonic="f";
+contMenuCurves.Title="曲線";
+contMenuCurves.Mnemonic="u";
+// ---
+contMenuRelimit.Title="修剪";
+contMenuRelimit.Mnemonic="R";
+contMenuTransfor.Title="轉換";
+contMenuTransfor.Mnemonic="T";
+
+// Third level
+contMenuInterrupt.Title="尺寸版期";
+contMenuInterrupt.Mnemonic="E";
+// Contextual Sub-Menus
+// --------------------
+DrwPositionalLink.Title="位置的鏈結";
+DrwOrientationLink.Title="方向性鏈結";
+DrwViewPositioning.Title="視圖定位";
+DrwDimInterruptSubMenu.Title="中斷";
+CATDrwViewPositioningTlb.Title="視圖定位中";
+CATDrwGVSSnu.Title="自發性視圖形式";
+CATDrwDimensionRepresentation.Title="尺寸表現方式";
+CATDrwAngleSector.Title="角度部份";
+CATDrwClipBoxSnu.Title="剪下盒";

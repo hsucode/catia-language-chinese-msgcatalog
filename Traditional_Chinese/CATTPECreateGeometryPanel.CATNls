@@ -1,0 +1,39 @@
+// -------------------------------------------------------------------------------------------
+// Geometry creation
+// -------------------------------------------------------------------------------------------
+Title="幾何元素建立";
+
+OKTitle="應用";
+CANCELTitle="關閉";
+NoSelection="未選擇";
+
+TPECGFrameDestination.TPECGLabelDestination.Title="目的地 : ";
+TPECGFrameDestination.TPECGEdtDestination.LongHelp="指定幾何元素儲存位置.";
+
+TPECGSelectionFrame.Title = "選擇";
+TPECGSelectionFrame.TPECGFirstPoint.ShortHelp="第一點";
+TPECGSelectionFrame.TPECGFirstPoint.LongHelp="選擇刀具路徑的第一點.";
+TPECGSelectionFrame.TPECGLastPoint.ShortHelp="最後一點";
+TPECGSelectionFrame.TPECGLastPoint.LongHelp="選擇刀具路徑的最後一點";
+TPECGSelectionFrame.TPECGFromStart.ShortHelp="起始點";
+TPECGSelectionFrame.TPECGFromStart.LongHelp="選擇刀具路徑的第一點和所選點之間的點.";
+TPECGSelectionFrame.TPECGToEnd.ShortHelp="結束點";
+TPECGSelectionFrame.TPECGToEnd.LongHelp="選擇刀具路徑的所選點和最後一點之間的點.";
+TPECGSelectionFrame.TPECGTwoPoints.ShortHelp="兩點間";
+TPECGSelectionFrame.TPECGTwoPoints.LongHelp="選擇刀具路徑兩點間的點.";
+TPECGSelectionFrame.TPECGAllPoints.ShortHelp="整體刀具路徑";
+TPECGSelectionFrame.TPECGAllPoints.LongHelp="選擇刀具路徑的所有點.";
+
+TPECGDisplay.Title = "顯示";
+TPECGDisplay.TPECGPreVisu.Title = "預覽";
+TPECGDisplay.TPECGPreVisu.LongHelp = "顯示選擇.";
+
+TPECGGeometries.Title = "型式";
+TPECGGeometries.TPECGPoint.Title = "點";
+TPECGGeometries.TPECGPoint.LongHelp = "建立明確點";
+TPECGGeometries.TPECGTraject.Title = "區域";
+TPECGGeometries.TPECGTraject.LongHelp = "以所選刀具路徑建立連接線 \n 只有在選了數個點及點型式被啟動時.";
+TPECGGeometries.TPECGAxis.Title = "軸";
+TPECGGeometries.TPECGAxis.LongHelp = "由所選刀具方向建立線";
+TPECGGeometries.TPECGTool.Title = "刀具組";
+TPECGGeometries.TPECGTool.LongHelp = "由所選刀具位置建立軸";

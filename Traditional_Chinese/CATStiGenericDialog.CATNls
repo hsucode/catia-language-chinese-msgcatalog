@@ -1,0 +1,111 @@
+// COPYRIGHT DASSAULT SYSTEMES 2004
+// ---------------------------------------------------------------------------
+// Author: VKF - April 2004
+//---------------------------------------------------------------------------
+// 28/04/2004 	VKF Creation
+// 30/07/2004	VKF	Modified the title for the ReportLabel and ErrorLabel 
+//					from empty string to single space.
+// 29/10/2004	VKF Modified the State, Status and Error String,
+//----------------------------------------------------------------------------
+//
+
+Title.BeforeRefresh = "整體更新 (建議對話框)";
+Title.AfterRefresh = "整體更新 (結果對話框)";
+//
+// Report Frame title
+//
+FrameReport.Title = "更新訊息";
+FrameReport.Help = "更新訊息";
+FrameReport.ShortHelp = "更新訊息";
+FrameReport.LongHelp = "更新訊息";
+//
+// Report Base frame
+//
+FrameReport.FrameBase.Title = "";
+FrameReport.FrameBase.Help = "更新訊息";
+FrameReport.FrameBase.ShortHelp = "更新訊息";
+FrameReport.FrameBase.LongHelp = "更新訊息";
+//
+// Report Label title
+//
+FrameReport.FrameBase.LabelReport.Title = " ";
+FrameReport.FrameBase.LabelReport.Help = "更新訊息";
+FrameReport.FrameBase.LabelReport.ShortHelp = "更新訊息";
+FrameReport.FrameBase.LabelReport.LongHelp = "更新訊息";
+
+//
+// Item Report list column names
+//
+FrameReport.FrameBase.MultilistReport.Column1 = "";
+FrameReport.FrameBase.MultilistReport.Column2 = "動作";
+FrameReport.FrameBase.MultilistReport.Column3 = "文件 ID";
+FrameReport.FrameBase.MultilistReport.Column4 = "檔案型式";
+FrameReport.FrameBase.MultilistReport.Column5 = "狀態";
+FrameReport.FrameBase.MultilistReport.Column6 = "工作中更新版期";
+FrameReport.FrameBase.MultilistReport.Column7 = "資料庫中更新版期";
+FrameReport.FrameBase.MultilistReport.Column8 = "更新情形";
+
+FrameReport.FrameBase.MultilistReport.Help = "程序中項目清單";
+FrameReport.FrameBase.MultilistReport.ShortHelp = "程序中項目清單";
+FrameReport.FrameBase.MultilistReport.LongHelp = "程序中項目清單";
+
+//
+// Error Frame title
+//
+FrameErrors.Title = "狀況報告";
+FrameErrors.Help = "狀況報告";
+FrameErrors.ShortHelp = "狀況報告";
+FrameErrors.LongHelp = "狀況報告";
+
+//
+// Error label text
+//
+FrameErrors.LabelErrors.Title = " ";
+FrameErrors.LabelErrors.Help = "狀況報告";
+FrameErrors.LabelErrors.ShortHelp = "狀況報告";
+FrameErrors.LabelErrors.LongHelp = "狀況報告";
+
+//
+// Error list column names
+//
+FrameErrors.MultilistErrors.Column1 = "";
+FrameErrors.MultilistErrors.Column2 = "訊息型式";
+FrameErrors.MultilistErrors.Column3 = "說明";
+
+FrameErrors.MultilistErrors.Help = "錯誤, 警告, 訊息清單";
+FrameErrors.MultilistErrors.ShortHelp = "錯誤, 警告, 訊息清單";
+FrameErrors.MultilistErrors.LongHelp = "錯誤, 警告, 訊息清單";
+//
+// More-Less Button titles
+//
+ButtonMore = "詳細 >>";
+ButtonLess = "基本 >>";
+FrameReport.PushButtonMore.Help ="展開或收合對話框";
+FrameReport.PushButtonMore.ShortHelp ="展開或收合對話框";
+FrameReport.PushButtonMore.LongHelp ="展開或收合對話框";
+
+//
+// OK button title
+//
+OK.Title = "更新";
+OK.Help ="更新工作";
+OK.ShortHelp ="更新工作";
+OK.LongHelp ="更新工作";
+
+//
+// States in the State Column
+//
+State_1 = "不在資料庫內";
+State0 = "新的";
+State1 = "登入";
+State2 = "登出";
+State3 = "發行";
+State4 = "無效";
+
+
+// Error Info
+
+GRError1 = "錯誤";
+GRError2 = "錯誤";
+GRError3 = "警告";
+GRError4 = "訊息";

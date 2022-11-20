@@ -1,0 +1,47 @@
+//==============================================================================================
+// October	1999   Creation  (english)						   			FPP
+//==============================================================================================
+// December 1999   Modification                           FPP
+// October  2001   Modification                           TTD          
+//==============================================================================================
+Title="從掃描得到曲線";
+
+ModeFrame.Title="建立模式";
+
+ModeFrame.LissRadioB.Title="平順";
+ModeFrame.LissRadioB.LongHelp="透過使掃描的點平順以建立這條曲線.";
+
+ModeFrame.InteRadioB.Title="內插";
+ModeFrame.InteRadioB.LongHelp="透過內插掃描的點以建立這條曲線.";
+
+ParametersFrame.Title="參數";
+ParametersFrame.LongHelp="設定曲線建立的精確度.";
+
+ParametersFrame.ToleranceLabel.Title="精度";
+ParametersFrame.ToleranceLabel.LongHelp="設定精度.";
+
+ParametersFrame.OrderLabel.Title="最大階數";
+ParametersFrame.OrderLabel.LongHelp="設定曲線的最大階數";
+ParametersFrame.OrderSpinner.LongHelp="設定曲線的最大階數";
+
+ParametersFrame.NbMaxArcsLabel.Title="最大弧段";
+ParametersFrame.NbMaxArcsLabel.LongHelp="設定曲線的最大弧段數目.";
+ParametersFrame.NbMaxArcsSpinner.LongHelp="設定曲線的最大弧段數目.";
+
+SplitFrame.SplitAngleLabel.Title="分割角度";
+SplitFrame.SplitAngleLabel.LongHelp="在二個掃描的連續弧中間設置角度限制. 
+如果不管限制, 將使用目前的點來把這個隨之而來的曲線切成二部分.";
+SplitFrame.SplitAngleSpinner.LongHelp="在二個掃描的連續弧中間設置角度限制. 
+如果不管限制, 將使用目前的點來把這個隨之而來的曲線切成二部分.";
+
+VisuFrame.CurvatureAnalysisCheckB.Title="曲率分析";
+VisuFrame.CurvatureAnalysisCheckB.ShortHelp="分析結果曲線的曲率.";
+VisuFrame.CurvatureAnalysisCheckB.LongHelp="分析結果曲線的曲率.";
+
+VisuFrame.DevMaxCheckB.Title="最大變異";
+VisuFrame.DevMaxCheckB.ShortHelp="顯示最大變異";
+VisuFrame.DevMaxCheckB.LongHelp="顯示最大變異";
+
+VisuFrame.SegmentationCheckB.Title="弧段";
+VisuFrame.SegmentationCheckB.ShortHelp="顯示弧段的階數和數目.";
+VisuFrame.SegmentationCheckB.LongHelp="顯示弧段的階數和數目.";

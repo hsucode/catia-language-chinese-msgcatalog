@@ -1,0 +1,204 @@
+// COPYRIGHT DASSAULT SYSTEMES 2000
+//
+// Fichier d'erreur pour EHI.
+//
+// Le 13/09/2000, auteur Guillaume LEREY.
+//
+//.Request    = "Request: ";
+//.Diagnostic = "Diagnostic: ";
+//.Advice     = "Advice: ";
+//
+//====================================================================
+
+FLEXNotSuppported.Activate.Request    = "Request: Try to use FLEX with regular bundle segments.";
+FLEXNotSuppported.Activate.Diagnostic = "Diagnostic: Regular Bundle Segment does not support FLEX.";
+FLEXNotSuppported.Activate.Advice     = "Advice: To use FLEX, use Multi-Branchable documents or disable FLEX setting to use Bundle Segment document";
+
+NotAProduct.Activate.Request    = "Request: Activate another product.";
+NotAProduct.Activate.Diagnostic = "Diagnostic: Cannot create a bundle segment into the active product.";
+NotAProduct.Activate.Advice     = "Advice: Activate another product
+- a Geometrical Bundle if the mandatory geometrical bundle option is activated
+- which is not an electrical object
+- which does not result from the New Part command
+- which does not result from the New Component command.";
+
+NotAProtection.Activate.Request    = "Request: Activate another product.";
+NotAProtection.Activate.Diagnostic = "Diagnostic: Cannot edit the selected product. It is not a protective covering.";
+NotAProtection.Activate.Advice     = "Advice: Activate another product.";
+
+NotABundleSegment.Activate.Request    = "Request: Edit the active bundle segment.";
+NotABundleSegment.Activate.Diagnostic = "Diagnostic: The active part is not a bundle segment.";
+NotABundleSegment.Activate.Advice     = "Advice: Activate a part of bundle segment type.";
+
+NotAValidCurve.Activate.Request    = "Request: Edit the bundle segment.";
+NotAValidCurve.Activate.Diagnostic = "Diagnostic: The bundle segment does not contain an editable curve.";
+NotAValidCurve.Activate.Advice     = "Advice: Select another type of curve (Spline,Helix,Line...).";
+
+ErrorNotElecCurve.Request    = "Request: Edit the bundle segment.";
+ErrorNotElecCurve.Diagnostic = "Diagnostic: The bundle segment does not contain an electrical curve.";
+ErrorNotElecCurve.Advice     = "Advice: Delete and rebuild the bundle segment.";
+
+NotElecCurve.Title    = "Impossible to Edit Bundle Segment ";
+NotElecCurve.Text = "The bundle segment does not contain an electrical curve.\nDelete and rebuild the bundle segment.";
+
+ErrorElecSpline.Request    = "Request: Route definition";
+ErrorElecSpline.Diagnostic = "Diagnostic: Error in spline definition";
+ErrorElecSpline.Advice     = "Advice: Make sure your installation is correct.";
+
+WarningExternalReference.Title    = "Activate Keep Link for External References Option";
+WarningExternalReference.Text = "If you create data using references to other parts, the associativity will be lost.\n
+Activate the Keep link with selected objects option in the External References tab\n
+in the Tools+Options+Infrastructure & Part Infrastructure+General";
+
+WarningBNSDiameter.Title    = "Impossible Instantiation";
+WarningBNSDiameter.Text = "The protective covering inner diameter is less than the select bundle segment diameter.";
+
+WarningElementNotPublished.Title = "External Selection Not Published";
+WarningElementNotPublished.Text  = "The option 'Only use published elements for external selection' in Tools+Options+Electrical Harness Installation is activated.\n And the external feature you are trying to use for the creation of a bundle segment is not published.\n Then, no bundle segment will be created.";
+
+BPPNotFoundWarning.Title = "Extremity Not Found";
+BPPNotFoundWarning.Text  = "The expected extremity was not found.\nPlease verify if a geometrical point associated to an extremity has not been cleared.\n
+For instance, in the case of a branch point not found,\ngo to the Publication Tool and check if the publication associated to the branch point is not broken.";
+
+PointOnBCNotFoundWarning.Title = "Warning";
+PointOnBCNotFoundWarning.Text  = "The geometrical point associated to the bundle connection point\n
+on the selected device was not found.";
+
+InitialComputeError.Title = "Warning";
+InitialComputeError.Text  = "The spline of the edited bundle segment is a regular spline.\nIn order to switch it back to an electrical curve,\nyou may change one or more parameters value (bend radius ...).\n
+NB : The computation failed between the two highlighted points.";
+
+ComputeError.Title = "Computation Error";
+ComputeError.Text  = "An error occurred during the bundle segment's update.\nThe computation failed between the two highlighted points.\n
+The electrical curve will be switched to regular spline.";
+
+ComputeOk.Title = "Computation successfull";
+ComputeOk.Text  = "The curve computation is now OK.\n\nThe regular spline will be switched back to an electrical curve.";
+
+LengthTooSmall.Title = "Length too small";
+LengthTooSmall.Text  = "The input length of the current bundle segment is too small.\n
+The minimum length is /P1.";
+
+RibComputationFailed.Title = "Body computation failure";
+RibComputationFailed.Text  = "The computation of the body of the current bundle segment leads to an unstable configuration.\n Please modify one of its parameters among the diameter and the bend radius.";
+
+BrokenExternalReference.Title = "Broken External Reference";
+BrokenExternalReference.Text  = "The Autolink cannot be performed.\nOne of the bundle segment extremities based on an external reference is broken.\nThere is no way to retrieve the reference document.\nPlease check with command Edit/Links that no document is missing or in Visu Mode in the current session.";
+
+CreateBundleSegmentFailed.Request    = "Request: Create a bundle segment"; 
+CreateBundleSegmentFailed.Diagnostic = "Diagnostic: Error during the creation of a bundle segment.";
+
+LinkedBCPDlg.Title  = "Impossible Connection";
+LinkedBCPDlg.Text  = "This bundle segment extremity is already connected to this bundle connection point.";
+
+LinkedBPPDlg.Title  = "Impossible Connection";
+LinkedBPPDlg.Text  = "Both bundle segment extremities are already connected to each other.";
+
+ImpossibleLinkDlg.Title  = "Impossible Connection";
+ImpossibleLinkDlg.Text  = "The first bundle segment extremity is already connected\nbut not geometrically linked to the second selection!\nThe connection is then impossible.";
+
+NotLinkedDlg.Title  = "Impossible Disconnection";
+NotLinkedDlg.Text  = "This Bundle segment extremity is not connected.";
+
+BNSSurfWarning.Title = "Impossible Connection";
+BNSSurfWarning.Text  = "The first selected bundle segment is constrained on a surface\nand not geometrically linked to the second selection!\nThe connection is then impossible.";
+
+BNSOnCurveWarning.Title = "Impossible Connection";
+BNSOnCurveWarning.Text  = "The first selected bundle segment is constrained on an external curve and not geometrically linked to the second selection.\nThe connection is then impossible.";
+BNSOnCurveWarning2.Text  = "The selected bundle segment is constrained on an external curve.\nAdding a support is then impossible.";
+
+ListConnectedExtremitiesFAILED.Diagnostic = "Diagnostic: Error when getting a list of extremities on a bundle segment extremity.";
+
+GetConnectedDevicePointFAILED.Diagnostic = "Diagnostic: Error when getting a bundle connection point on a bundle segment extremity.";
+
+ConnectFAILED.Diagnostic = "Diagnostic: Error when connecting a bundle segment extremity to another or a bundle connection point.";
+
+DisconnectFAILED.Diagnostic = "Diagnostic: Error when disconnecting a bundle segment extremity.";
+
+BundlesansBCP.Text = "The selected connector does not have any bundle connection point.";
+BundlesansBCP.Title="Invalid Selection";
+
+NoEnoughPoint.Title = "Warning";
+NoEnoughPoint.Text = "The curve of the bundle segment contains only 2 points so it can not be reduced.";
+
+RefDesNotFound_001 = "The Reference Designator of Object /P1 has no value.";
+XMLParsingFailed_001 = "Failed to load the XML file: Its content is inconsistent.";
+
+OneMBNSInGBNOptionSelected.Title = "Warning";
+OneMBNSInGBNOptionSelected.Text = "Option 'Only one multi-branchable bundle segment...' is checked.\nPlease select a destination geometrical bundle different from the original one.";
+
+AllBranchablesSelected.Title = "Warning";
+AllBranchablesSelected.Text = "All branchables of the same multibranchable have been selected for transfer operation.\n
+Please remove at least one branchable in the list in order to be able to transfer.";
+
+//bkz 04:06:03
+ExternalCurveErrorTitle= "ExternalCurveError";
+ExternalCurveErrorText= "The external curve selected either has multiple domains or it intersects with itself or is a closed curve. These are invalid selections.";
+
+BundleSegmentNamingWarning.Title = "Warning";
+BundleSegmentNamingWarning.Text = "The bundle segment name /P1 is in conflict with the naming rules as defined\nin Tools-Options \ Part Infrastructure \ Display tabpage.\n\n The new given name will be: /P1";
+RenamedSuffix = ".Renamed";
+
+//DJH 04:09:10
+ExternalCurveError.Title = "Error";
+ExternalCurveError.Text  = "The selected axis is normal to the plane of the sketch Or the selected axis is not a line. \n  Please select a linear element which is not normal to the sketch plane.";
+
+//BKZ 04:09:24
+AdjustSupportSelectionWarning.Title = "InvalidSupport";
+//BKZ 05:05:11
+AdjustSupportSelectionWarning.Text = "This support is not a valid selection.\n\nPlease set FixingPortionThickness attribute on it.\nPlease note 'FixingPortionThickness' is a case sensitive attribute.";
+
+//djh 04:10:06
+RouteDefinitionError.Title = "Error";
+RouteDefinitionError.Text  = "No Rotation can be defined for the profile\n since the representation does not exist.";
+
+//djh 04:10:29
+NoProfileError.Title = "Error";
+NoProfileError.Text  = "No Profile exists. Please make sure that the profile exists.";
+
+//axc 04:11:15
+ErrorCLMode.Title="Error In Constrained length mode";
+ErrorCLMode.Text="Bundle Segment is in Constraint Length Mode, modification impossible";
+
+//bkz 04:12:09 
+//TO Fix RI A0473737
+ProfileDeletionWarning.Title="Profile Deletion Warning";
+ProfileDeletionWarning.Text="The reference point you have selected is a Route Definition Point. A profile is already set on it. This profile will be deleted after this branch point creation.";
+
+ProfileCanNotBeCreated.Title= "Profile Can Not Be Created";
+ProfileCanNotBeCreated.Text = " This Route Definition Point is used as reference point with zero ratio/distance to create a Branch Point.Since a profile is already set on Branch Point ,a new overlapping profile cannot be created at this point.";
+
+
+// start mpq 05:04:15
+PlaceSegmentsExtCrv.Title= "Segment based on External Curve";
+PlaceSegmentsExtCrv.Text = "One or more segments are based on the external curve and will be ignored by the place segments command. ";
+
+PlaceSegmentsNoSegments.Title= "No segment found.";
+PlaceSegmentsNoSegments.Text = "No bundle segment passing through the given support was found.";
+
+PlaceSegmentsNoSupports.Title= "No common support found.";
+PlaceSegmentsNoSupports.Text = "No common support other than the selected reference support found.";
+
+PlaceSegmentsNoSegmentsSelected.Title = "No segment is selected";
+PlaceSegmentsNoSegmentsSelected.Text = "No segment is selected in the list of segments";
+
+PlaceSegmentsInvalidSupport.Title = "Invalid Support";
+PlaceSegmentsInvalidSupport.Text = "The selected support is invalid support. Please select the valid support.";
+
+PlaceSegmentsPositioningFailed.Title = "Positioning Failed";
+PlaceSegmentsPositioningFailed.Text = "Unable to get / set the position of the one of the bundle segment(s).";
+// end mpq 05:04:15
+
+//myy 05:03:14
+AddBranchPointAtZeroError.Title= "Branch Point Can Not Be Created";
+AddBranchPointAtZeroError.Text = "Branch Point cannot be added at the extremities of a Bundle Segment.";
+
+//cvv 05:04:21
+RemoveBranchPointReference.Title="Dependency Found";
+RemoveBranchPointReference.Text="There are some features referring to the branch point. Hence it will not be deleted.";
+//cvv 05:04:21
+
+//ekl 05:08:16
+ChangeLength.Title = "Warning";
+ChangeLength.Text  = "\nLength of Branchable created after Split is less than its Minimum Length. \nComputing new Branchable Length as ";
+//ekl 05:08:16

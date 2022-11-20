@@ -1,0 +1,43 @@
+Title = "加工";
+
+M3xMultiPocketsSweepingMode = "刀具路徑形式";
+M3xPocketProgressionMode = "螺旋移動";
+M3xStayOnBottom = "永遠停留在底部";
+
+MachiningTolerance = "加工精度";
+M3xHardMachiningMode = "加工模式:";
+M3xHardCuttingMode = "切削模式";
+
+
+M3xMultiPocketsSweepingMode.LongHelp = "Specifies the tool movements. The tool path style can be:
+- Helical: the tool path is composed of successive inward or outward parallels,
+- Concentric.";
+
+M3xPocketProgressionMode.LongHelp = "Specifies the way the tool moves in a pocket or an external zone.
+It can be :
+- Inward: the tool starts from a point inside the zone and 
+follows inward paths parallel to the boundary. 
+- Outward: the tool starts from a point inside the zone and 
+follows outward paths parallel to the boundary.
+- Both: for pockets, the tool starts from a point inside the pocket and 
+follows outward paths parallel to the boundary;
+for external zones, the tool starts from a point on the rough stock boundary and 
+follows inward paths parallel to the boundary.";
+
+M3xStayOnBottom.LongHelp = "Forces the tool to remain in contact with the 
+pocket bottom when moving from one domain to another.";
+
+MachiningTolerance.LongHelp = "Specifies the maximum allowed distance 
+between the theoretical and computed tool path.";
+
+M3xHardMachiningMode.LongHelp = "Specifies the type of area to be machined 
+and can be:  
+- By plane; the whole part is machined plane by plane, 
+- Outer part only; only the outside of the part is machined, 
+- Pockets only; only pockets on the part are machined, 
+- Outer part&pockets; the whole part is machined external area 
+  by external area and pocket by pocket.";
+
+
+M3xHardCuttingMode.LongHelp = "Specifies the position of the tool regarding 
+the surface to be machined. It can be climb or conventional";

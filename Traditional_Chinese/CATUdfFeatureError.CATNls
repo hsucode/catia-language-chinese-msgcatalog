@@ -1,0 +1,96 @@
+//---------------------------------------------------------------
+// Resource file for CATUdfFeatureError class
+// Us
+//---------------------------------------------------------------
+
+ErrorNoOutputs               = "- 無法計算預設輸出. \n    請在 輸出 標籤定義.\n";
+ErrorBRepKO                  = "- 新建複本時部份所選特徵的次元素無法更新 \n 請嚐試包含所有的依附元素來避免此問題. \n";
+WarningBRepKO                = "- 部份所選特徵的次元素在新建複本時須要重新排列. \n";
+ErrorBRep0                   = " 從 ";
+ErrorBRep1                   = " 需要 ";
+ErrorBRep2                   = " 需計算.";
+WarningBRep1       = " 將會在錯誤中";
+ErrorReplaceKO   = "- 一些元素不能取代在展示期間 \n 包括他們在 進階複製 或 UDF 中以避免這個問題. \n";
+ErrorReplace1    = " 不能執行取代為 ";
+ErrorInstantiate = "不能完成例示";
+ErrorCopy        = "不能例示這個元素";
+ErrorNeedToBeSaved = "首先存檔你目前的文件.";
+ErrorNoPowerCopy   = "這個文件中的沒有 進階複製, 使用者特徵和文件樣板.";
+ErrorNoDescObject  = "沒有聯繫的物件, 使用目錄編輯器以再次連接它.";
+ErrorExternalLink  = "- 一個已鏈結至其它文件的元素已包含 \n 請移除以避免發生問題. \n";
+ErrorChapterNotAllowed       = "分件目錄章節無法貼在產品上!";
+ErrorNoDocumentToInstantiate = "沒有文件可複製! \n 請使用目錄編輯器來檢查文件鏈結.";
+ErrorRemove        = " 需要被移除";
+ErrorDatumKO   = "有些已包含的元素是基準元素. \n";
+ErrorDatum     = "請移除元素或以計算中的來更換.";
+ErrorRelationKO   = "部份輸入為所包括公式的輸出. \n";
+ErrorRelation     = "新增此元素.";
+ErrorEmpty     = "使用者特徵是空的.";
+ErrorInvalidInput = "無效使用者特徵輸入.";
+ErrorNoGeometry = "在使用者特徵中沒有相關幾何.";
+WarningMultiNaming = "有一個以上的分件必須重命名 ; 無法應用使用者名稱 : /p1.";
+WarningNaming                = "下列名稱分件已存在 : /p1. 將會使用預設名稱.";
+ErrorInternalImport          = " 為含鏈結的內部複製和未在進階複製內的參考";
+ErrorExternalImport          = " 為外部參考.";
+ErrorImportLink              = "- 一個含鏈結至外部分件至進階複製的元素已包含 \n 請移除或獨立此元素來避免此問題. \n";
+ErrorPartSelectionOrCreationImpossible = "無法選擇或建立零件成為使用者特徵元件目的地";
+ErrorPartNumber              = "兩文件含有相同零件號碼";
+ErrorMaterial1               = "進階複製不支援材料";
+ErrorMaterial2               = "含有材料";
+ErrorCopyUdfNode             = " /p1 節點不允許複製或剪下";
+ErrorInsertionFailed         = "複製錯誤: 動作無法執行: \n 順序規則中斷或無法重算幾何.\n 命令取消.";
+LinearityError               = "所選用來建立進階複製的元素打斷了順序規則.\n";
+LinearityAdvise              = "建立進階複製前您必須先重新排列所選特徵.";
+AlreadyLoadedWarning         = "參考文件 /p1
+已載入且顯示在工作中.
+如在進階複製後被修改,
+右側比較視窗中的內容
+可能和左側視窗中的複製特徵不同.";
+
+CleanerInputType0      = "使用者特徵 /p1 含有錯誤的輸入宣告 (型式 0).";
+CleanerInputType1      = "使用者特徵 /p1 含有錯誤的輸入宣告 (型式 1).";
+CleanerInputType2      = "使用者特徵 /p1 含有錯誤的輸入宣告 (型式 2).";
+CleanerInputType2.Help = "\n /p1 輸入已毀損.";
+CleanerInputType3      = "使用者特徵 /p1 含有錯誤的輸入宣告 (型式 3).";
+CleanerInputType4      = "使用者特徵 /p1 含有錯誤的輸入宣告 (型式 4).";
+CleanerInputType5      = "使用者特徵 /p1 含有錯誤的輸入宣告 (型式 5).";
+CleanerInputType5.Help = "\n 輸入參考了兩次.";
+CleanerInputType6      = "使用者特徵 /p1 含有錯誤的輸入宣告 (型式 6).";
+CleanerInputType6.Help = "\n /p1 輸入無效.";
+CleanerInputCLeaned    = "使用者特徵 /p1 已被正確清理.";
+CleanerType            = "使用者特徵 /p1 含有錯誤的輸入宣告型式.";
+
+Warning = "警告";
+Information = "資訊";
+Error = "錯誤";
+FatalError = "嚴重錯誤";
+
+WarningSpecAlreadySelected = "此元素已選為輸入. \n 請選擇其它的.\n";
+
+EditMappingResult		= "UserFeature has been edited and some previous information could not be retrieved.\n";
+EditRetrieveInputRole		= "Can not retrieve Input(s) reference for role(s) :\n"; 
+EditRetrieveOutputs		= "Can not retrieve Reference for Output(s) :\n"; 
+EditAddOutputs			= "Can not add Output(s) :\n"; 
+EditRetrieveOutputRole		= "Can not retrieve Output(s) for role(s) :\n"; 
+EditRetrieveParameterRole	= "Can not retrieve published Parmeter(s) :\n"; 
+EditWarning			= "Warning";
+PCInsertionFailed      = "The destination /p1 is not valid with the position /p2 for the instantiation of this template reference.
+The template contains the feature /p3 which can not be inserted at this position because of ordering rules.
+The destination will be unset. Please select another one.";
+PCInsertionWarning     = "The destination /p1 can be chosen as destiantion of insertion of this template reference .
+However these following elements will be inserted directly under another location:";
+UdfInsertionFailed      = "The destination /p1 is not valid with the position /p2 for the instantiation of the template reference /p3.
+The feature /p3 can not be inserted at this position because of ordering rules.
+The destination will be unset. Please select another one.";
+
+ErrorListAttributes = "Some components of this Power Copy handle their inputs within a list which can cause trouble.
+To avoid any problem you may instantiate this Power Copy in 'One Step' or 'Part Comparison' mode.
+If you keep the 'Step by Step' mode you will need to valuate again the inputs of the following components:";
+
+ErrorNoDuplicatedParam = "複製下列參數時發生錯誤: /p1.
+請連絡系統管理員.";
+
+WarningBRepColorAttKO = "Some colors or attributs on sub-elements of the selected features will be lost during the instantiation.\n";
+ErrorNoGeometricFtr   = "No geometrical feature has been selected.\nPush the 'Change/Update Components' button to modify the definition of the UserFeature and add a geometrical feature or a set with a geometrical feature inside.";
+
+

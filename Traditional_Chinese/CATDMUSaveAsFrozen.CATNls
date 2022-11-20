@@ -1,0 +1,75 @@
+INFO_HELP="
+CATDMUSaveAsFrozen 允許處理 DMU 相關文件 (產品, 幾何和暫存器資料).\n
+用法: \n
+   獲得說明資料:
+      CATDMUSaveAsFrozen -h\n
+   在目錄中儲存產品相關文件:
+      CATDMUSaveAsFrozen -save directory -product productpath
+                         [-prefix prefix][-data][-cache] 
+                         [-user user -spwd cryppwd -server srv]\n
+   在目錄中輸出產品相關文件:
+      CATDMUSaveAsFrozen -export directory -product productpath
+                         [-prefix prefix][-data]
+                         [-user user -spwd cryppwd -server srv]
+                         [-s char][-list listfile]\n
+   輸入暫存器中目錄的內容:
+      CATDMUSaveAsFrozen -import directory
+                         [-s char][-list listfile]\n
+Windows 例子:\n
+   CATDMUSaveAsFrozen -h
+   CATDMUSaveAsFrozen -import c:\u\input\n
+Unix 例子:\n
+   CATDMUSaveAsFrozen -h
+   CATDMUSaveAsFrozen -export /u/export1 -product /u/sample.CATProduct
+   CATDMUSaveAsFrozen -save /u/save2 -product /u/sample.CATProduct\n
+引數:\n
+   -h                   : 說明.
+   -save directory      : 在目錄中儲存產品相關文件.
+                          此目錄為由 CATDLN 處理的 DLName.
+   -export directory    : 在目錄中輸出產品相關文件.
+                          此目錄為由 CATDLN 處理的 DLName.
+   -import directory    : 輸入暫存器中目錄的內容.
+                          此目錄為由 CATDLN 處理的 DLName.
+   -product productpath : 定義要處理的產品.
+                          此目錄為由 CATDLN 處理的 DLName.
+   -prefix prefix       : 在產品名稱前加入字首儲存所有產品.
+   -data                : 儲存幾何.
+   -cache               : 儲存暫存器資料.
+   -user user           : 定義 VPM 使用者.
+   -spwd cryppwd        : 定義 VPM 使用者密碼.
+                          使用前解碼.
+   -server srv          : 定義 VPM 伺服器.
+   -s char              : 定義輸出檔案中使用的分隔字元.
+   -list listfile       : 輸出內含複製文件表列的檔案. 
+                          每一行均含有原始檔案的路徑和複本路徑, 並以分隔符號分開
+                          (請參考 -s 選項).\n
+   NB: 如文件參考 VPM 則必須有使用者, 密碼和伺服器參數.\n
+檢查:\n
+   可能的退出情形數值為:\n
+      0   成功完成.\n
+      1   因為下列情形失敗:
+          - 沒有軟體許可權
+          - 停止暫存器管理
+          - 缺少引數
+          - 無效參數
+          - 選項後遺失參數
+          - 缺少輸入檔案
+          - 無法找到檔案
+          - 無法開啟輸入檔案
+          - 文件型式錯誤 \n
+      2   處理錯誤.\n
+      3   部份處理.\n
+偵錯:\n
+   退出情形 = 1:
+      使用在標準錯誤檔案內的資訊來修改命令行或環境.\n
+   退出情形 = 2:
+      請連絡售商.\n
+   退出情形 = 3:
+      修改產生問題的檔案: 檔案名稱在標準錯誤檔案內. 
+      交互使用檔案可能會提供錯誤資訊.
+";
+ERR_PROCESSING="錯誤: CATDMUCacheManager 處理失敗.";
+ERR_TREATMENT="錯誤: 下列文件或目錄可能無法處理:";
+OK_TREATMENT="完成: 下列文件或目錄已處理:";
+START_BATCH="CATDMUSaveAsFrozen 開始在 :";
+STOP_BATCH="CATDMUSaveAsFrozen 經過下列時間後停止 :";

@@ -1,0 +1,61 @@
+//------------------------------------------------------------
+// Fichier de ressource utilise par la classe CATGSMUI2DViewInsertSection
+// En_US
+//------------------------------------------------------------
+
+CATGuiInsert2DViewSection.State0.Message = "選擇顯示平面";
+CATGuiInsert2DViewSection.State1.Message = "選擇 3D 相交的切面";
+CATGuiInsert2DViewSection.State2.Message = "選擇要被切割的 3D 元素";
+CATGuiInsert2DViewSection.State3.Message = "選擇定義成工作物件的元素";
+
+//Undo title for command
+CATGuiInsert2DViewSection.UndoTitle = "2D-視圖切面定義";
+
+// Undo title for dialog agents
+CATGuiInsert2DViewSection._ProjectionTargetAgent.UndoTitle = "顯示平面選擇";
+CATGuiInsert2DViewSection._CuttingPlaneAgent.UndoTitle = "切割平面選擇";
+CATGuiInsert2DViewSection._CutElementsAgent.UndoTitle = "切割平面選擇";
+CATGuiInsert2DViewSection._IndSectionColor.UndoTitle = "切面顏色選擇";
+CATGuiInsert2DViewSection._IndSectionViewPlane.UndoTitle = "顯示平面欄位啟動";
+CATGuiInsert2DViewSection._IndSectionCuttingPlane.UndoTitle = "切面欄位啟動";
+CATGuiInsert2DViewSection._IndSectionCutElementSelection.UndoTitle = "切割元素表啟動";
+CATGuiInsert2DViewSection._IndSectionStoreName.UndoTitle = "名稱欄位啟動";
+CATGuiInsert2DViewSection.IndSectionNameChange.UndoTitle = "名稱更改";
+CATGuiInsert2DViewSection._IndComputeCorners.UndoTitle = "轉角計算";
+CATGuiInsert2DViewSection._IndComputeThickness.UndoTitle = "厚度啟動或關閉";
+CATGuiInsert2DViewSection._IndSectionCutElementRemove.UndoTitle = "切割元素移除";
+CATGuiInsert2DViewSection._IndComboSelectGroup.UndoTitle = "群組選擇";
+CATGuiInsert2DViewSection._IndSectionCutElementMove.UndoTitle = "切割元素移動";
+CATGuiInsert2DViewSection._IndViewModeRadio.UndoTitle = "檢視模式更改";
+CATGuiInsert2DViewSection._IndTransfer2Delt.UndoTitle = "元素轉換";
+CATGuiInsert2DViewSection._IndUndoTransfer2DElt.UndoTitle = "元素轉換";
+CATGuiInsert2DViewSection._IndInvertThickness.UndoTitle = "厚度逆轉";
+CATGuiInsert2DViewSection._IndAutoCorners.UndoTitle = "圓角計算模式更改";
+CATGuiInsert2DViewSection._IndAdd2DeltToGroup.UndoTitle = "2D 在群組內新增";
+CATGuiInsert2DViewSection._IndUpdateGroup.UndoTitle = "群組更新";
+CATGuiInsert2DViewSection._IndChgGrpComboSelect.UndoTitle = "群組組合更改";
+CATGuiInsert2DViewSection._Ind2DEltSelect.UndoTitle = "2D 元素選擇";
+CATGuiInsert2DViewSection._IndRemoveCorners.UndoTitle = "圓角移除";
+CATGuiInsert2DViewSection.ToolSelectionAgent.UndoTitle = "特徵設成目前t";
+CATGuiInsert2DViewSection.NeedForToolAgent.UndoTitle = "需要另一目前特徵";
+CATGuiInsert2DViewSection.Ok.UndoTitle = "2D-視圖切面有效";
+CATGuiInsert2DViewSection._pManipulatorAgent.UndoTitle = "選擇切面區域";
+
+// Warning messages
+WarningSectionNameMsg = "輸入名稱和所定義的命名規則衝突 \n 在 工具-選項 \ 零件架構 \ 顯示標籤.\n\n 請為切面選擇其它名稱.";
+WarningDefineAssociatedGS = "定義在工作物件中的切面無法執行動作. \n 請選擇其它元素為插入點.";
+WarningNonLinearOGS = "此元素所使用的順序幾何組無法對應線性規則.";
+WarningReplugAfterReorderFailed = "為目前群組更換鏈結至切面連結時發生錯誤.";
+WarningReorderFailed = "目前群組的連結無法重新排序來對應線性關係.";
+//WarningNonConnexOrForkGroup = "此元素導引至未連接群組或相交幾何元素. \n 此群組無法計算圓角和厚度.";
+WarningNonConnexOrForkGroup = "此元素導引至未連接群組或相交幾何元素.";
+WarningEltAlreadyInGroup = "此元素已在目前群組.";
+WarningIntersect = "此元素未與切面相交.";
+WarningMultiIntersect = "部份選擇元素未與切面相交.";
+
+// 3D manipulators
+CATGuiInsert2DViewSection.ThicknessInvertorText = "逆轉厚度方向";
+Absolute2DViewSectionManipulatorLabel = "手動 2D 視圖";
+
+CATGuiInsert2DViewSection.ContextualResetTitle = "重設至預設位置";
+CATGuiInsert2DViewSection.CuttingAreaText="切面區域";

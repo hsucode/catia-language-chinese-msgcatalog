@@ -1,0 +1,297 @@
+//------------------------------------------------------
+// Resource file for input geometric operators errors 
+// En_EN
+//================================================================
+//                           INPUT
+//================================================================
+//----------------------------------Null or invalid input
+//
+GeoObInInvalidPointer =
+     " /p1指標是空的.";
+//
+GeoObInInvalidInput =
+     "/p1是負的.";
+//
+GeoObInInvalidSupport =
+     " CATPCurve 不支援 /p1 形式.";
+//
+GeoObInInvalidInputValueSmallerThan =
+     " /p1 的值需比 /p2 小.";
+//
+GeoObInInvalidInputValueGreaterThan =
+     "/p1 的值需比 /p2 大.";
+//
+GeoObInInvalidInputValueBetween =
+     "/p1 的值需比 /p2 大,且比 /p3 小.";
+//
+GeoObInInvalidInputType =
+     "/p1 物件不是允許的形式.";
+//
+GeoObInNotInInfiniteBox =
+     "/p1 比極大值還大.";
+//
+GeoObInTypeNotSupported =
+     "/p1 一定是一個 /p2.";
+//
+GeoObInEmpty =
+     "/p1物件不含任何 /p2 物件.";
+//
+GeoObInInvalidCoordinates =
+     "輸入的座標值(/p1, /p2, /p3) 和之前的 (/p4, /p5, /p6)不同.";
+//
+GeoObInNotOnSurface =
+     "輸入的點 (/p1, /p2, /p3) 不夠接近曲面.";
+//
+GeoObInInvalidMacroElement =
+     "輸入的複合式組合物件包含好幾個立體元件.";
+//
+GeoObInImpossibleMerge =
+     "無法溶合曲線. 它們沒有足夠的相同區域.";
+//
+GeoObInInvalidSurface =
+     "曲面含有雜亂的垂直方向是不被充許的.";
+//
+GeoObInCannotBeReferredTo =
+     "輸入的物件一定要屬於CGM 物件且須與參考的CGM物件同一族.";
+//
+GeoObInOpenEquation =
+     "當方程式開啟時無法修改物件.
+      請關閉方程式後再使用此物件.";
+//
+GeoObInInvalidOrientation =
+     "方向值一定要是1 或 -1.";
+//
+GeoObInSeveralObjects =
+     "輸入/p1是不被允許的, /p2 已經屬於 /p3";
+//
+GeoObInNotBelongToEdgeCurve =
+     "指明的CATCurve 一定要屬於CATEdgeCurve.
+       請以下一種方式檢查 CATEdgeCurve 的內容.";
+//
+GeoObInSeveralInEdgeCurve =
+     " 輸入的CATCurve 已經是CATEdgeCurve
+       CATCurve不可重覆屬於CATEdgeCurve.
+       在新增曲線之前請以下一種方式先檢查 CATEdgeCurve.";
+//
+GeoObInCloudOfPointsNotDefined =
+     "對沒有定義向量的CloudOfPoints 做不合理的向量值設定.";
+//
+//GeoObInSelfIntersectingSurface =
+//    "曲面自我相交. /p1 曲面無法含有 /p2 /p3.";
+//
+GeoObInPointNotOnSurface =
+     "點 (/p1,/p2,/p3) 不依附在 /p4 上.";
+//
+GeoObInBadOrder =
+     "將引數置於錯誤的次序. /p1 須置 /p2 後.";
+//
+GeoObInInvalidPeriodicConflict =
+     "內部長度 /p1 與 /p2 曲間不匹配.";
+//================================================================
+//                           INTernal
+//================================================================
+// 
+GeoObIntUnavailableMethod =
+     "方法 /p1 對 /p2 物件尚未可用.";
+//
+GeoObIntBindingFailed =
+     " /p1 與 /p2 合成失敗.
+      請檢查字典.";
+//
+GeoObIntObjectCreationFailed =
+     "物件等級 /p1 無法建立.";
+//
+GeoObIntMethodCallOrder =
+     "無效的呼叫次序方法. 方法 /p1 應在 /p2 後呼叫.";
+//
+GeoObIntInvalidParameterValue =
+     "參數數值在有效範圍外.";
+//
+GeoObIntObjectClass =
+     "物件形式值 /p1 沒有級數相對.";
+//
+GeoObIntShouldBeA =
+     "無效物件形式, /p1 應是一個 /p2.";
+//
+GeoObIntMethodCall =
+     "方法 /p1 不應該用來呼叫 /p2 物件.";
+//
+GeoObIntNotValuableParameter =
+     "曲線 (CATCrvParam) 或曲面 (CATSurParam) 上參數與幾何物件不相關.";
+//
+GeoObIntGetLimitsOnEmptyBox =
+     "方法 /p1 假定 /p2 不是空的. 
+      使用方法 IsEmpty 去確認 /p2 不是空的";
+//
+GeoObIntSurfaceProjectionFailed =
+     "點 ( /p1 , /p2 , /p3 ) 無法投影至曲面.";
+//
+GeoObIntUnavailableResult =
+     "多重評估的無效結果.
+      多重評估的 /p1 無效結果所要求的 /p2 因子未被 SetCommand 方法預先排序.";
+//
+GeoObIntUnsetObject =
+     " /p1 尚未設定. 請先初始此物件";
+//
+GeoObIntBadGeometry =
+       "內部錯誤 /p1 導致不合理的幾何組合.";
+//
+GeoObIntMath =
+       "錯誤 /p1 產生於數學理論.";
+//
+GeoObIntCurveToSmall =
+       "曲線太小.";
+//
+GeoObIntArcOfCurveToSmall = 
+       "曲線弧的數量 /p1 太少.";
+//
+GeoObIntCurveNotC2 =
+       "曲線的起始弧 /p1 不是 C2 級.";
+//
+GeoObIntNullTangentCurve =
+       "曲線在總括參數 w= /p1 具有太小的相切.";
+//
+GeoObIntBadParametrization =
+       "曲線的參數化離曲線參數形式太遠.";
+//
+GeoObIntCurvatureTooLarge =
+       "曲線的曲率對總體參數 w= /p1 太大.";
+//
+GeoObIntCanonicalCurveDefTooFar =
+       "曲線的定義點超過幾何模型的外部限制.";
+//
+GeoObIntCanonicalCurveDegenerated =
+       "標準曲線具有退化形式.";
+//
+GeoObIntControlPointsTooClose =
+       "有些控制點太接近.";
+//
+GeoObIntGapTooLarge= "邊界曲線偵測到太大間隙.";
+//
+//------------------- New
+//
+//  1000-1099- general
+//  1100-1149- cone
+//  1150-1199- torus
+//  1200-1249- Cl[ou]d entities
+//  1900-1999- Internal Error (general)
+//
+GeoObInParameterOutsideLimits_ERR_1000.Request ="參數評估:";
+GeoObInParameterOutsideLimits_ERR_1000.Diagnostic ="輸入參數超過曲線或曲面的外部限制.";
+GeoObInParameterOutsideLimits_ERR_1000.Advice ="- 選擇在限制內部的參數.";
+//
+GeoObInDegeneratedSurface_ERR_1001 ="輸入曲面是褪化的: \n
+它可能是扭曲或長度比旋轉因子小. \n
+請為不合理情形參考 encyclopedia. ";
+//
+GeoObInIncompatibleLimitAngles_ERR_1002.Request ="建立圓:";
+GeoObInIncompatibleLimitAngles_ERR_1002.Diagnostic ="起始角度值大於結束角度值.";
+GeoObInIncompatibleLimitAngles_ERR_1002.Advice="請選擇起始角度值小於結束角度值.";
+
+//
+GeoObInNotSimilitude_ERR_1003.Request ="移動幾何:";
+GeoObInNotSimilitude_ERR_1003.Diagnostic ="輸入的幾何移動不相似.";
+GeoObInNotSimilitude_ERR_1003.Advice="請選擇相似的幾何移動.";
+//
+GeoObInCurveTooSmall_ERR_1004.Request ="曲線的使用:";
+GeoObInCurveTooSmall_ERR_1004.Diagnostic ="輸入曲線長度較幾何預設解析度為小.";
+GeoObInCurveTooSmall_ERR_1004.Advice ="- 請選擇曲線長度較幾何預設解析度為大的曲線.";
+//
+GeoObInSurfaceTooSmall_ERR_1005.Request ="曲面的使用:";
+GeoObInSurfaceTooSmall_ERR_1005.Diagnostic ="輸入曲面的尺寸較幾何預設解析度為小.";
+GeoObInSurfaceTooSmall_ERR_1005.Advice ="- 請選擇曲面尺寸較幾何預設解析度為大的曲面.";
+//
+GeoObInIncompatibleFactoryModelSize_ERR_1006.Request ="幾何模型大小不相符 :";
+GeoObInIncompatibleFactoryModelSize_ERR_1006.Diagnostic = "此文件含有不相符的幾何模型大小 /P1 和 /P2.";
+GeoObInIncompatibleFactoryModelSize_ERR_1006.Advice ="- 請不要在幾何模型大小不相符時執行剪貼動作.";
+//
+GeoObInIncompatibleFactoryInfinite_ERR_1007.Request ="幾何臨界值不相配:";
+GeoObInIncompatibleFactoryInfinite_ERR_1007.Diagnostic = "此文件含有不相符的幾何臨界值 /P1 和 /P2.";
+GeoObInIncompatibleFactoryInfinite_ERR_1007.Advice ="- 請不要在幾何臨界值不相符時執行剪貼動作.";
+//
+GeoObInIncompatibleFactoryTolerances_ERR_1008.Request ="幾何容差不相配:";
+GeoObInIncompatibleFactoryTolerances_ERR_1008.Diagnostic =
+"兩文件的幾何容差不相配.\n
+公尺單位比較值為 /P1 和 /P2 .\n
+單位連續解析度為 /P3 和 /P4 .\n
+徑度量相切解析度為 /P5 和 /P6 .\n
+單位曲率解析度為 /P7 和 /P8 .\n";
+GeoObInIncompatibleFactoryTolerances_ERR_1008.Advice ="- 請在相同幾何容差文件中工作.";
+//
+//
+GeoObInDownwardStreamImpossible_ERR_1009.Request ="無法向下相容:";
+GeoObInDownwardStreamImpossible_ERR_1009.Diagnostic =
+"目前版本 /P1 的文件無法在沒有損傷情形下存成舊版 /P2 .";
+GeoObInDownwardStreamImpossible_ERR_1009.Advice ="- 請在目前版本文件工作.";
+//
+//
+GeoObInDegeneratedCurve_ERR_1010 ="輸入曲線無效 :\n
+有可能是扭曲或長度太短.\n
+請查閱相關說明. ";
+//
+//
+GeoObInIncompatibleModelSize_ERR_1011.Request ="與新因子不一致的輸入幾何大小 :";
+GeoObInIncompatibleModelSize_ERR_1011.Diagnostic = "輸入幾何大小 /P1 超過模型大小 /P2.";
+GeoObInIncompatibleModelSize_ERR_1011.Advice ="- 當超過文件模型大小時, 請不要嚐試複製貼上幾何.";
+//
+//
+GeoObInIncompatibleModelSize_ERR_1012.Request ="無法複製此種型式無限大的幾何元素";
+GeoObInIncompatibleModelSize_ERR_1012.Diagnostic = "此種型式無限大的幾何元素無法在不同模型大小或無限空間之間轉換";
+GeoObInIncompatibleModelSize_ERR_1012.Advice ="- 當因子不符時, 請不要嚐試複製貼上此種型式無限大的幾何.";
+//
+//
+GeoObInIncompatibleModelSize_ERR_1013.Request ="以新的模型大小沒有相交";
+GeoObInIncompatibleModelSize_ERR_1013.Diagnostic = "無限幾何和新的模型大小 /P1 沒有相交";
+GeoObInIncompatibleModelSize_ERR_1013.Advice ="- 當與新的模型大小沒有相交時, 請不要嚐試複製貼上此種型式無限大的幾何.";
+//
+//
+//
+//
+GeoObInConeSelfIntersecting_ERR_1100.Request ="建立圓錐:";
+GeoObInConeSelfIntersecting_ERR_1100.Diagnostic ="參數定義成自動相交曲面.";
+GeoObInConeSelfIntersecting_ERR_1100.Advice ="- 減少圓錐角度或建構長度.";
+//
+//1150-torus
+GeoObInTorusSelfIntersecting_ERR_1150.Request ="建立甜甜圓:";
+GeoObInTorusSelfIntersecting_ERR_1150.Diagnostic ="參數定義成自動相交曲面.";
+GeoObInTorusSelfIntersecting_ERR_1150.Advice =
+"- 增加主要半徑值; \n
+- 減少次要角度值; \n
+- 在最小圓修改修剪角度定義.";
+//
+//1200- Cl[ou]d entities
+GeoObInCldScanNotPlanar_ERR_1200.Request ="搜尋平面獲得:";
+GeoObInCldScanNotPlanar_ERR_1200.Diagnostic ="搜尋不是平面.";
+GeoObInCldScanNotPlanar_ERR_1200.Advice ="使用平面搜尋.";
+GeoObInCldGridNoProbeAxis_ERR_1201.Request ="格狀探頭軸獲得:";
+GeoObInCldGridNoProbeAxis_ERR_1201.Diagnostic ="格子有探頭軸.";
+GeoObInCldGridNoProbeAxis_ERR_1201.Advice ="使用探頭軸格子.";
+GeoObInCldGridAddPoints_ERR_1202.Request ="在格子中增加點:";
+GeoObInCldGridAddPoints_ERR_1202.Diagnostic ="點數目與最初不同.";
+GeoObInCldGridAddPoints_ERR_1202.Advice ="定義相同點數目.";
+// 
+// 1900-1999- Internal Error (general)
+//-----------------------------------------
+//
+GeoObIntValidObject_InvalidAddress_ERR_1920.Request ="無效幾何指標:";
+GeoObIntValidObject_InvalidAddress_ERR_1920.Diagnostic ="幾何物件 /P1 的位置指向無效的記憶區域.";
+GeoObIntValidObject_InvalidAddress_ERR_1920.Advice ="請指出情形並產生 維護改正需求.";
+//
+GeoObIntValidObject_NotV5Modelisation_ERR_1921.Request ="不是 CATIA V5 幾何:";
+GeoObIntValidObject_NotV5Modelisation_ERR_1921.Diagnostic ="限制為 CATIA V5 的幾何, /P1 不允許.";
+GeoObIntValidObject_NotV5Modelisation_ERR_1921.Advice ="請使用 CATIA V5 可執行的幾何.";
+//
+GeoObIntValidObject_UnexpectedType_ERR_1922.Request ="未預期的幾何型式:";
+GeoObIntValidObject_UnexpectedType_ERR_1922.Diagnostic ="幾何物件 /P1 不是預期的型式 /P2.";
+GeoObIntValidObject_UnexpectedType_ERR_1922.Advice ="請使用適當的型式.";
+//
+GeoObIntValidObject_RemovedObject_ERR_1923.Request ="移除物件:";
+GeoObIntValidObject_RemovedObject_ERR_1923.Diagnostic ="幾何物件 /P1 已不可使用.";
+GeoObIntValidObject_RemovedObject_ERR_1923.Advice ="請使用適當的物件.";
+//
+GeoObIntValidObject_IncompatibleContainer_ERR_1924.Request ="不相容的內含器:";
+GeoObIntValidObject_IncompatibleContainer_ERR_1924.Diagnostic ="幾何物件 /P1 和 /P2 不屬於相同的內含器.";
+GeoObIntValidObject_IncompatibleContainer_ERR_1924.Advice ="請使用相同的幾何特性.";
+//
+GeoObIntFrozen_ERR_1966="/P1 不可修改,但 /P2 因子嚐試去修改定義.";
+//

@@ -1,0 +1,244 @@
+// NLS file for CATDACmdToBeSent
+//-------------------------
+// English Version
+//-------------------------
+
+
+//-------------------------
+// PANEL PRINCIPAL
+//-------------------------
+
+Titre_general_dir="傳送至目錄";
+Titre_general_Mail="郵寄";
+
+// CATDlgMultiList frmMultiListA
+frmInfos.frmCandidates.Title = "可以複製";
+frmInfos.frmMultilistA.ColonneA1 = "檔名";
+frmInfos.frmMultilistA.ColonneA2 = "檔案型式";
+frmInfos.frmMultilistA.ColonneA3 = "位置";
+frmInfos.frmMultilistA.ColonneA4 = "找出";
+
+frmInfos.frmCandidates.frmMultiListA.ShortHelp = "列出不會被複製的檔案";
+frmInfos.frmCandidates.frmMultiListA.LongHelp = "此清單顯示將不會被複製的所有文件,
+包含了您未選的文件
+或找不到的文件.";
+
+// CATDlgLabel SelectionLabel
+frmInfos.SelectionLabel.Title = "郵寄";
+
+// CATDlgPushButton CopyAll
+frmInfos.frmButton.CopyAll.ShortHelp = "複製所有檔案";
+
+// CATDlgPushButton CopySelected
+frmInfos.frmButton.CopySelected.ShortHelp = "複製所選檔案";
+
+// CATDlgPushButton ResetAll
+frmInfos.frmButton.ResetAll.ShortHelp = "重設所有檔案";
+
+// CATDlgPushButton ResetSelected
+frmInfos.frmButton.ResetSelected.ShortHelp = "重設所選檔案";
+
+// CATDlgCheckButton Preserve
+frmInfos.Preserve.Title = "保持目錄結構";
+frmInfos.Preserve.LongHelp = "此選項複製目標目錄內的
+目錄樹架構.
+只適用在有一般根目錄時使用.";
+
+// CATDlgLabel Commonroot
+Common = "( 一般根目錄 : /p1)";
+
+// CATDlgMultiList frmMultiListV
+frmInfos.frmElected.Title = "可以複製";
+frmInfos.frmMultilistV.ColonneB1 = "檔名";
+frmInfos.frmMultilistV.ColonneB2 = "檔案型式";
+frmInfos.frmMultilistV.ColonneB3 = "位置";
+frmInfos.frmMultilistV.ColonneB4 = "問題";
+frmInfos.frmMultilistV.ColonneB5 = "目標名稱";
+
+frmInfos.frmElected.frmMultiListV.ShortHelp = "列出會被複製的檔案";
+frmInfos.frmElected.frmMultiListV.LongHelp = "將複製的檔案清單.
+此清單也顯示檔案名稱相同的問題.";
+
+Found_nls ="找到";
+NotFound_nls ="找不到";
+
+Duplicate_nls="名稱相同";
+
+// CATDlgPushButton NewNameForTarget
+frmInfos.NewNameForTarget.Title ="更改目標名稱";
+frmInfos.NewNameForTarget.ShortHelp ="更改目標名稱";
+frmInfos.NewNameForTarget.LongHelp ="更改目標檔案名稱";
+
+// CATDlgLabel SizeLabel
+frmInfos.SizeLabel.Title = "大小: ";
+TitreByt ="位元組";
+
+// CATDlgLabel SizeEditor
+frmInfos.SizeEditor.LongHelp = "複製檔案的總體大小";
+
+// CATDlgLabel CopyLabel
+frmInfos.CopyLabel.Title = "複製至:";
+
+// CATDlgCombo CopyCombo
+frmInfos.CopyCombo.LongHelp = "目標根目錄";
+
+// CATDlgPushButton Browse
+TitleBrows = "目錄瀏覽";
+frmInfos.Browse.Title = "瀏覽...";
+frmInfos.Browse.ShortHelp = "選擇目標目錄";
+frmInfos.Browse.LongHelp = "此按鈕允許您選擇目標目錄";
+
+
+//--------------------------
+// PANEL REPLACE
+//--------------------------
+
+
+// CATDlgDialog ConfirmFileReplace
+ConfirmFileReplace.Title = "檔案更換確定";
+
+// CATDlgLabel label02
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.label02.Title = "目標檔案夾已存有檔案夾.";
+
+// CATDlgLabel label03
+str1 = "被通知 ";
+
+// CATDlgLabel label05
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.label05.Title = "您要更替已存的檔案嗎?";
+
+// CATDlgLabel label11
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.label11.Title  = "以這一個?";
+
+// CATDlgPushButton RYes
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.frameButtons.RYes.Title = "是";
+
+// CATDlgPushButton RNo
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.frameButtons.RNo.Title = "否";
+
+// CATDlgPushButton RYesToAll
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.frameButtons.RYesToAll.Title = "全部都是";
+
+// CATDlgPushButton RNoToAll
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.frameButtons.RNoToAll.Title = "全部都不是";
+
+// CATDlgPushButton RCancel
+ConfirmFileReplace.framePrincipal.frameObjet.frameTexte.frameButtons.RCancel.Title = "取消";
+
+// Panel ERROR
+error_nls=   "無法將文件更名";
+problem_nls= "錯誤"; 
+
+//--------------------------
+// PANEL ERRORCOPY
+//--------------------------
+
+// CATDlgDialog ErrorCopy
+ErrorCopy.Title = "複製錯誤";
+
+// CATDlgLabel errorLabel1
+errorLabel1 = "/p1複製錯誤";
+
+// CATDlgLabel errorLabel2
+errorLabel2 = "/p1目錄內";
+
+// CATDlgPushButton ESkip
+ErrorCopy.framePrincipal.frameDroite.frameButtons.ESkip.Title = "忽略檔案";
+
+// CATDlgPushButton ECancel
+ErrorCopy.framePrincipal.frameDroite.frameButtons.ECancel.Title = "取消";
+
+
+//-----------------------------------------------
+// PANEL D'AFFICHAGE D'ERREUR LORS DE LA COPIE
+//-----------------------------------------------
+
+
+// CONFLICT WITH SEARCH ORDER
+
+str2 = "在尋找排序目錄中的有些文件會被複製.\n 確定嗎?";
+title2 = "尋找排序中產生衝突";
+
+
+
+// PANEL DE DEMANDE DE CONFIRMATION LORS DE LA CREATION DE REPERTOIRE
+
+// CATDlgNotify CreateDirectory
+CreateDirectory.Title = "CATIA";
+CreateDirectory.Text  = "目錄'/p1' 並不存在.\您要建立它嗎?";
+
+
+
+// PANEL D'AFFICHAGE DE CREATION IMPOSSIBLE DE REPERTOIRE
+
+// CATDlgNotify ImpossibleCreation
+ImpossibleCreation.Title = "CATIA";
+ImpossibleCreation.Text = "建立'/p1'目錄錯誤!";
+
+
+
+// PANEL PREVENANT D'UN CONFLIT AVEC LE SEARCHORDER
+
+// CATDlgNotify SEARCHORDER
+
+
+// PANEL RENAME
+
+// Title Panel Rename
+titre_nls = "更名 ";
+
+// CATDlgLabel
+NewLabel_Nls = "新目標名稱:                  ";
+
+
+// PANEL PREVENANT D'UNE ERREUR LORS DU SENDMAIL
+
+// CATDlgNotify ErrorMail
+MailError.Title = "傳送至";
+MailError.Text  = "內部錯誤\n命令取消";
+
+
+// ----------------------------------------
+// PANEL DE REPORT
+// ----------------------------------------
+
+// CATDlgDialog PReport
+PReport.Title = "檔案已複製";
+
+// CATDlgLabel SummaryLabel
+SummaryLabel.Title = "/p2 中所選的檔案/p1已被複製.";
+
+// CATDlgLabel TypeLabel
+TypeLabel = "/p1 (of /p2) /p3 文件";
+
+// CATDlgLabel SizeLabel
+SizeLabel.Title = "全部大小: ";
+
+
+// ---------------------------------------
+// LABEL BARRE DE PROGRESSION
+// ---------------------------------------
+
+TextInUserFrame.Texte = "複製檔案 ";
+
+
+//-----------------------------------------
+// NLS DES SERVICES CATDACmdToBeSent
+//-----------------------------------------
+
+Unit1_nls = " 位元";
+Unit2_nls = " KB";
+Unit3_nls = " MB";
+Unit4_nls = " GB";
+Unit5_nls = " TB";
+Unit6_nls = " ??";
+
+date_nls = "更改於";
+
+point_nls = "...";
+
+// PANEL TO PROHIBIT SEND TO to THE SAME DIRECTORY WITH SAME NAME IR 482827
+
+// CATDlgNotify EPanel
+Prohibited.Title = "CATIA";
+Prohibited.Text  = "無法執行傳送至. \n 目標目錄內已存在一個或以上的相同檔名檔案.";
+

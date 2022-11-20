@@ -1,0 +1,225 @@
+// *--------------------------------------------*//
+// *               Exemple de message           *//
+// *  En_US                                     *//
+// *------------------------------------------- *//
+// ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// ERR_2000.Diagnostic = "Un des parametres est negatif";
+// ERR_2000.Advice     = "Utilisez des parametres positifs";
+           
+//ShfInp1 = "您必須指出拉伸方向.";
+//ShfInp2 = "所指定的草圖內含超過一個以上的斷面或建構幾何."; 
+//ShfInp3 = "所指定的草圖對您要建立的特徵是無效的.";
+//ShfInp4 = "本體的第一個特徵須使用封閉斷面.";
+//ShfInp5 = "其中一項特性無法納入.";
+
+// sketch invalide pour Extrusion
+CATShfInputError_20005.Request    = "拉伸草圖已被修改.";
+CATShfInputError_20005.Diagnostic = "有些它的分件已被修改 (線).";
+CATShfInputError_20005.Advice     = "請修改草圖一致性.";
+
+// vue invalide pour pattern
+CATShfInputError_20006.Request    = "特徵只能在定義視圖被複製圖樣.";
+CATShfInputError_20006.Diagnostic = "所選特徵未在目前視圖定義..";
+CATShfInputError_20006.Advice     = "修改目前視圖來建立複製圖樣.";
+
+// feature invalide pour pattern
+CATShfInputError_20007.Request    = "請選擇板金件來複製圖樣.";
+CATShfInputError_20007.Diagnostic = "所選特徵與板金件界面不相關.";
+CATShfInputError_20007.Advice     = "以零件設工作檯來建立圖樣 \n 或選擇板金件特徵.";
+
+// sketch invalide pour Extrusion
+CATShfInputError_20008.Request    = "拉伸草圖形式已被修改.";
+CATShfInputError_20008.Diagnostic = "原有或新的草圖形式是單一弧.";
+CATShfInputError_20008.Advice     = "請不要嚐試從其它的草圖建立單一弧, 反之亦然.";
+
+// pas de face recognize pour pocket
+CATShfInputError_20009.Request    = "可辨認的減重槽在更新時發生問題.";
+CATShfInputError_20009.Diagnostic = "產生的側邊修剪面已經遺失.";
+CATShfInputError_20009.Advice     = "";
+
+// walls invalides pour AutoBend
+CATShfInputError_20010.Request    = "";
+CATShfInputError_20010.Diagnostic = "自動彎角計算時發生不良的壁拓墣錯誤.";
+CATShfInputError_20010.Advice     = "";
+
+// walls invalides pour creation de pli conique
+CATShfInputError_20011.Request    = "選擇相交壁拓墣來建立圓錐彎曲.";
+CATShfInputError_20011.Diagnostic = "選擇不具相同內部邊的壁.";
+CATShfInputError_20011.Advice     = "修改壁的斷面或選擇另一壁.";
+
+// path de RadiusTable incorrect
+CATShfInputError_20012.Request    = "在厚度表中的半徑表路徑無效.";
+CATShfInputError_20012.Diagnostic = "此路徑不存在或不可存取 : /p1";
+CATShfInputError_20012.Advice     = "請檢查路徑或表列內容.";
+
+// path de BendTable incorrect
+CATShfInputError_20013.Request    = "所指定彎曲表路徑無效.";
+CATShfInputError_20013.Diagnostic = "此路徑不存在或不可存取 : /p1";
+CATShfInputError_20013.Advice     = "請檢查路徑或表列內容.";
+
+// path de ConicRadiusTable incorrect
+CATShfInputError_20014.Request    = "所指定圓錐半徑表路徑無效.";
+CATShfInputError_20014.Diagnostic = "此路徑不存在或不可存取 : /p1";
+CATShfInputError_20014.Advice     = "請檢查路徑或表列內容.";
+
+// feature invalide pour pattern (pattern de stamp)
+CATShfInputError_20015.Request    = "請選擇另一板金件特徵來複製圖樣.";
+CATShfInputError_20015.Diagnostic = "圖樣不支援.";
+
+// Bend from flat non terminal
+CATShfInputError_20016.Request    = "彎曲軸無效";
+CATShfInputError_20016.Diagnostic = "以線來彎曲的壁不可依附在彎曲或肋上.";
+CATShfInputError_20016.Advice     = "請修改軸的幾何或彎曲的記錄次序";
+
+// Bend from flat non coupant
+CATShfInputError_20017.Request    = "從平坦定義的彎曲無效";
+CATShfInputError_20017.Diagnostic = "零件從平坦參數定義的彎曲無法回復.";
+CATShfInputError_20017.Advice     = "請修改軸長或起動直到模式";
+
+// Tangent Wall 
+CATShfInputError_20019.Request    = "";
+CATShfInputError_20019.Diagnostic = "相切情形無法使用";
+CATShfInputError_20019.Advice     = "請修改壁草圖";
+
+//Tangent Wall sur support non depliable
+CATShfInputError_20020.Request    = "";
+CATShfInputError_20020.Diagnostic = "壁可接受相切選擇. 特徵必須是平坦的. ";
+CATShfInputError_20020.Advice     = "請連接參考壁的依附";
+
+// Bend from flat a orienter
+CATShfInputError_20018.Request    = "從平坦定義的彎曲必須先定方向";
+CATShfInputError_20018.Diagnostic = "因為已經修改, 從平坦定義的彎曲無法定方向.";
+CATShfInputError_20018.Advice     = "請修改特徵來定義方向";
+
+// Bend from flat non coupant
+CATShfInputError_20021.Request    = "未相交";
+CATShfInputError_20021.Diagnostic = "彎曲軸未與零件相交.";
+CATShfInputError_20021.Advice     = "請修改軸的幾何";
+
+// No Bends created in AutoBend
+CATShfInputError_20022.Request    = "無法建立圓角.";
+CATShfInputError_20022.Diagnostic = "兩牆間沒有相同邊線.";
+CATShfInputError_20022.Advice     = "請修改幾何或嚐試手動定義圓角";
+
+// sketch invalide pour extrude avec Bend
+CATShfInputError_20023.Request    = "草圖拉伸無效.";
+CATShfInputError_20023.Diagnostic = "最後和連續的圓角不支援.";
+CATShfInputError_20023.Advice     = "請修改圓角來在兩線間產生圓弧.";
+
+// pb dans Curvemapping
+CATShfInputError_20024.Request    = "合併　/　展開 計算時發生問題.";
+CATShfInputError_20024.Diagnostic = "對應的曲線未依附.";
+CATShfInputError_20024.Advice     = "請修改輸入.";
+
+// AutoB end ambiguity
+CATShfInputError_20025.Request    = "/p1 倒圓角未建立 (因壁相交).";
+CATShfInputError_20025.Diagnostic = "兩壁間未建立圓角.";
+CATShfInputError_20025.Advice     = "壁相交時須以手動方式定義圓角.";
+
+// Wall On Edge
+CATShfInputError_20026.Request    = "依附邊線無效.";
+CATShfInputError_20026.Diagnostic = "";
+CATShfInputError_20026.Advice     = "請選擇其它邊線.";
+
+// sketch incorrect pour Extrusion
+CATShfInputError_20027.Request    = "拉伸草圖不正確.";
+CATShfInputError_20027.Diagnostic = "草圖是封閉外形.";
+CATShfInputError_20027.Advice     = "請修改它來獲取未封閉外形.";
+
+// sketch incorrect pour Extrusion
+CATShfInputError_20028.Request    = "拉伸草圖不正確.";
+CATShfInputError_20028.Diagnostic = "草圖中有未連接元素.";
+CATShfInputError_20028.Advice     = "請檢查草圖的連續性.";
+
+// sketch incorrect pour Extrusion
+CATShfInputError_20029.Request    = "拉伸草圖不正確.";
+CATShfInputError_20029.Diagnostic = "草圖中未有直線.";
+CATShfInputError_20029.Advice     = "請至少定義一直線.";
+
+// sketch incorrect pour Extrusion
+CATShfInputError_20030.Request    = "拉伸草圖不正確.";
+CATShfInputError_20030.Diagnostic = "久的角度接近 179.9 度.";
+CATShfInputError_20030.Advice     = "請檢查角度值.";
+
+// sketch incorrect pour Extrusion
+CATShfInputError_20031.Request    = "拉伸草圖不正確.";
+CATShfInputError_20031.Diagnostic = "草圖中相切不連續.";
+CATShfInputError_20031.Advice     = "請檢查線和弧或弧和弧間的相切連續性.";
+
+// sketch incorrect pour Extrusion
+CATShfInputError_20032.Request    = "拉伸草圖不正確.";
+CATShfInputError_20032.Diagnostic = "拉伸中不允許圓角設計.";
+CATShfInputError_20032.Advice     = "請不要以圓弧設計.";
+
+// sketch incorrect pour Extrusion
+CATShfInputError_20033.Request    = "拉伸草圖不正確.";
+CATShfInputError_20033.Diagnostic = "草圖中沒有元素或元素無效.";
+CATShfInputError_20033.Advice     = "請重新考慮草圖.";
+
+// Sketch incorrect pour Hopper
+CATShfInputError_20034.Request    = "所選草圖不正確.";
+CATShfInputError_20034.Diagnostic = "草圖含有不連接元素.";
+CATShfInputError_20034.Advice     = "請檢查草圖的連續性.";
+
+// Sketch incorrect pour Hopper
+CATShfInputError_20035.Request    = "所選草圖不正確.";
+CATShfInputError_20035.Diagnostic = "草圖中相切不連續.";
+CATShfInputError_20035.Advice     = "請檢查線之間和線跟弧或弧跟弧間的相切性.";
+
+// Sketch incorrect pour Hopper
+CATShfInputError_20036.Request    = "所選草圖不正確.";
+CATShfInputError_20036.Diagnostic = "弧的角度超過 179.9 度.";
+CATShfInputError_20036.Advice     = "請檢查角度值.";
+
+// Sketch incorrect pour Hopper
+CATShfInputError_20037.Request    = "所選草圖不正確.";
+CATShfInputError_20037.Diagnostic = "草圖不可自我相交.";
+CATShfInputError_20037.Advice     = "請重新設計草圖.";
+
+// Sketch incorrect pour Hopper
+CATShfInputError_20038.Request    = "所選草圖不正確.";
+CATShfInputError_20038.Diagnostic = "草圖必須是弧線的連續連接.";
+CATShfInputError_20038.Advice     = "請重新設計草圖.";
+
+// Sketches incompatibles pour Hopper
+CATShfInputError_20039.Request    = "所選草圖不相容.";
+CATShfInputError_20039.Diagnostic = "草圖必須有相同的弧和線.";
+CATShfInputError_20039.Advice     = "請重新設計草圖.";
+
+// Sketches incompatibles pour Hopper
+CATShfInputError_20040.Request    = "所選草圖不相容.";
+CATShfInputError_20040.Diagnostic = "草圖必須是同時封閉或開放.";
+CATShfInputError_20040.Advice     = "請重新設計草圖.";
+
+// Sketches incompatibles pour Hopper
+CATShfInputError_20041.Request    = "所選草圖不相容.";
+CATShfInputError_20041.Diagnostic = "草圖依附元素必須平行.";
+CATShfInputError_20041.Advice     = "請修改草圖依附.";
+
+// Sketches incompatibles pour Hopper
+CATShfInputError_20042.Request    = "所選草圖含有相同依附.";
+CATShfInputError_20042.Diagnostic = "草圖依附元素必須不同.";
+CATShfInputError_20042.Advice     = "請分別建立不同草圖依附.";
+
+// Sketches incompatibles pour Hopper
+CATShfInputError_20043.Request    = "所選草圖不相容.";
+CATShfInputError_20043.Diagnostic = "相關線必須同平面.";
+CATShfInputError_20043.Advice     = "請修改草圖.";
+
+// Sketches incompatibles pour Hopper
+CATShfInputError_20044.Request    = "所選草圖不相容.";
+CATShfInputError_20044.Diagnostic = "相關圓的投影必須同心.";
+CATShfInputError_20044.Advice     = "請修改草圖.";
+
+// Bend from flat Erreur Extrapolation BTLs
+CATShfInputError_20045.Request    = "The bend limits of the feature bend from flat could not be created.";
+CATShfInputError_20045.Diagnostic = "If a cutout edge is confused with one of the bend limits, create the cutout after the feature bend from flat.";
+CATShfInputError_20045.Advice     = "Modify the geometry or the bend from flat specifications.";
+
+// CornerRelief
+CATShfInputError_20046.Request    = "The corner relief can not be created.";
+CATShfInputError_20046.Diagnostic = "The corner relief geometry computation could not succeed.";
+CATShfInputError_20046.Advice     = "Modify the extremities of the involded bends or the corner relief shape.";
+
+
+

@@ -1,0 +1,66 @@
+// CATVRButtonFrame
+//-------------------------
+Title = "自訂按鈕";
+LongHelp = "自訂按鈕對話框. 使用者可自行拖拉任何可用命令來程式化任何裝置按鈕. \n 拖拉任何工具列圖示至按鈕置放區域. \n 選擇和拖拉任何自訂對話框至按鈕置放區域.";
+
+// Driver Frame
+DriverFrame.Title = "裝置";
+DriverFrame.DriverCombo.LongHelp = "選擇裝置來更改按鈕對應.";
+
+// NavigateFrame
+ConfigFrame.Title = "按鈕組態";
+ConfigFrame.ConfigCombo.LongHelp = "選擇目前的按鈕組態.";
+ConfigFrame.ConfigCombo.ConfigMenu.RenameItem.Title = "更名...";
+ConfigFrame.NewConfigButton.Title = "新的";
+ConfigFrame.NewConfigButton.LongHelp = "新增按鈕組態.";
+ConfigFrame.DeleteConfigButton.Title = "刪除";
+ConfigFrame.DeleteConfigButton.LongHelp = "刪除目前的按鈕組態.";
+
+// NavigateFrame
+NavigateFrame.PageBackButton.LongHelp = "跳至前一按鈕頁.";
+NavigateFrame.PageNextButton.LongHelp = "跳至下一按鈕頁.";
+NavigateFrame.PageLabel.LongHelp = "顯示目前和總體頁面數.";
+
+// ButtonFrame
+ButtonFrame.Button.LongHelp = "顯示按鈕對應資訊: 裝置按鈕名稱, 命令檔頭和圖示 (如用到).";
+
+// HelpFrame/Restore button
+HelpFrame.RestoreButton.Title = "回復...";
+HelpFrame.RestoreButton.LongHelp = "開啟回復的對應對話框.";
+HelpFrame.CustomizeButton.Title = "自訂...";
+HelpFrame.CustomizeButton.LongHelp = "開啟自訂對話框來存取所有可用命令.";
+
+// RestoreDialog
+RestoreDialog.Title = "回復對應";
+RestoreDialog.LongHelp = "使用對話盒來回復至原始預設值.";
+
+RestoreDialog.RestoreFrame.RestoreLabel.Title = "回復對應至原始預設值:";
+RestoreDialog.RestoreFrame.OneRadioButton.Title = "目前裝置";
+RestoreDialog.RestoreFrame.OneRadioButton.LongHelp = "選此選項來來回復對應按鈕至目前裝置.";
+RestoreDialog.RestoreFrame.AllRadioButton.Title = "所有裝置";
+RestoreDialog.RestoreFrame.AllRadioButton.LongHelp = "選此選項來來回復對應按鈕至所有裝置.";
+
+// List of driver functions for 3Dconnexion devices
+DriverFunctionsListDlg.Title = "3Dx 命令清單";
+DriverFunctionsListDlg.ListOfFunctions.LongHelp = " 3Dx 命令清單對話框.\n The user can select any command available\nin the 3Dx device driver to program any device button.";
+
+// RenameDialog
+RenameDialog.Title = "組態更名";
+RenameDialog.LongHelp = "Use this dialog box to rename the title of the current button configuration.";
+RenameDialog.RenameLabel.Title = "新表頭:";
+
+// Misc
+ButtonText = "按鈕";
+QuickTapText = "快速標籤";
+PageLabelText = "頁面 /P2 之 /P1 ";
+UnavailableText = "無法使用";
+NoDriversFoundText = "[未找到裝置]";
+DriverText = "3Dx 驅動器";
+DriverAssignedText = "驅動器指定至";
+ConfigurationText = "組態";
+
+// Pop-up menu items
+DeleteMenuItemTitle = "刪除";
+DefaultMenuItemTitle = "預設";
+GetCmdMenuItemTitle = "取得命令...";
+DriverFctMenuItemTitle = "取得驅動器命令...";

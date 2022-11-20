@@ -1,0 +1,15 @@
+HeaderFrame.Global.Title = "Bundle Segment 更新"; 
+
+IconAndOptionsFrame.OptionsFrame.CheckUpdate.Title = "直徑和彎曲半徑至它的內容";
+IconAndOptionsFrame.OptionsFrame.CheckUpdate.LongHelp="If checked, bundle segments diameter and bend radius will be computed from its content (wires and wire groups).";
+IconAndOptionsFrame.OptionsFrame.CheckUpdate.ShortHelp = "Bundle segments diameter and bend radius will be computed from its content (wires and wire groups)";
+
+IconAndOptionsFrame.OptionsFrame.LabelUpdate.Title = "依據線的彎曲半徑: ";
+IconAndOptionsFrame.OptionsFrame.ComboUpdate.LongHelp="Always: the greatest bend radius of the wires routed in the bundle segment determines the segment bend radius to be applied.\nNever: no update of the bundle segment minimum bend radius is performed.\n Conditional: the wire bend radius is only taken into account for update if it is greater than the bundle segment bend radius.";
+IconAndOptionsFrame.OptionsFrame.ComboUpdate.ShortHelp = " 依據線束彎曲半徑更新";
+
+
+ComboUpdate.Always = "永遠";
+ComboUpdate.Never = "絕不";
+ComboUpdate.Conditional = "依狀況";
+

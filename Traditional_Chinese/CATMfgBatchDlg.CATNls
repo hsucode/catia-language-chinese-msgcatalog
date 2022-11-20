@@ -1,0 +1,106 @@
+// COPYRIGHT DASSAULT SYSTEMES 2001
+
+Title = "NC 批次作業管理";
+
+//Titre des chapitres de la multiliste
+JobProcess = "程序";
+JobSelection = "選擇";
+JobStatus = "情形";
+JobComment = "說明";
+JobDescription = "說明";
+
+JobActionFrame.EditJob.Title = "編輯" ;
+JobActionFrame.EditJob.ShortHelp = "編輯目前工作.";
+JobActionFrame.EditJob.LongHelp  = "允許修改所選工作的性質.";
+
+
+JobActionFrame.DeleteJob.Title = "刪除" ;
+JobActionFrame.DeleteJob.ShortHelp = "刪除目前工作.";
+JobActionFrame.DeleteJob.LongHelp  = "從工作表列中移除所選工作.";
+
+JobActionFrame.NewJob.Title = "新的" ;
+JobActionFrame.NewJob.ShortHelp = "新的工作.";
+JobActionFrame.NewJob.LongHelp  = "建立新的工作並附加在工作表列中.";
+
+JobActionFrame.JobUp.Title = "向上" ;
+JobActionFrame.JobUp.ShortHelp = "向上移動.";
+JobActionFrame.JobUp.LongHelp  = "將所選工作向上移動.";
+
+JobActionFrame.JobDown.Title = "向下移動.";
+JobActionFrame.JobDown.ShortHelp = "向下移動.";
+JobActionFrame.JobDown.LongHelp  = "將所選工作向下移動.";
+
+JobActionFrame.InitBatch.Title = "初始化" ;
+JobActionFrame.InitBatch.ShortHelp = "重設全部.";
+JobActionFrame.InitBatch.LongHelp  = "從表列中移除所有工作.";
+
+JobActionFrame.SynchroJob.Title = "同步化" ;
+JobActionFrame.SynchroJob.ShortHelp = "同步化計算工作.";
+JobActionFrame.SynchroJob.LongHelp  = "在加工程序中取得批次路徑計算.";
+
+BatchLogFileFrame.ViewBatchLog.Title = "記錄" ;
+BatchLogFileFrame.ViewBatchLog.ShortHelp = "編輯記錄";
+BatchLogFileFrame.ViewBatchLog.LongHelp  = "編輯批次偵錯檔案.";
+
+BatchModeFrame.BatchModeInfFrame.ActivateBatch.Title = "啟動" ;
+BatchModeFrame.BatchModeInfFrame.ActivateBatch.ShortHelp = "執行";
+BatchModeFrame.BatchModeInfFrame.ActivateBatch.LongHelp  = "開始批次執行.";
+
+BatchModeFrame.BatchModeInfFrame.StopBatch.Title = "停止" ;
+BatchModeFrame.BatchModeInfFrame.StopBatch.ShortHelp = "停止";
+BatchModeFrame.BatchModeInfFrame.StopBatch.LongHelp  = "停止開始批次執行.";
+
+BatchModeFrame.Title     = "批次模式" ;
+
+BatchModeFrame.BatchModeRBFrame.BatchModeLabel.Title = "批次模式" ;
+BatchModeFrame.BatchModeRBFrame.BatchModeDeferred.Title = "延擱";
+BatchModeFrame.BatchModeRBFrame.BatchModeNow.Title = "即刻";
+
+
+BatchModeFrame.BatchModeSupFrame.BatchModeLabel.Title = "批次模式" ;
+BatchModeFrame.BatchModeSupFrame.BatchModeRBFrame.BatchModeDeferred.Title = "延擱";
+BatchModeFrame.BatchModeSupFrame.BatchModeRBFrame.BatchModeNow.Title = "即刻";
+
+BatchModeFrame.BatchModeInfFrame.BatchTimeEditionFrame.DayFrame.BatchStartDay.Title = "開始" ;
+BatchModeFrame.BatchModeInfFrame.BatchTimeEditionFrame.TimeFrame.BatchStartTime.Title = "在" ;
+BatchModeFrame.BatchModeInfFrame.BatchTimeEditionFrame.TimeFrame.TimeEditorHours.Title = "h" ;
+
+BatchLogFileFrame.BatchLogFile.Title = "記錄檔案 : " ;
+BatchLogFileFrame.BatchLogFileSelect.Title = "..." ;
+BatchLogFileFrame.BatchLogFileSelect.ShortHelp = "瀏覽...";
+BatchLogFileFrame.BatchLogFileSelect.LongHelp  = "選擇批次偵錯檔案.";
+
+StartMfgBatchOK = "開始加工批次作業 : Ok!";
+StartMfgBatchKO = "加工批次作業未開始!";
+StartMfgBatchOK.Title = "開始加工批次作業 : Ok!";
+StartMfgBatchKO.Title = "加工批次作業未開始!";
+
+InitYesOrNo = "從批次作業中移除所有佇列 ?";
+ActivateYesOrNo = "開始執行批次佇列 ?";
+StopYesOrNo = "取消執行批次佇列 ?";
+
+JobWaiting = "等待中" ;
+JobStarted = "已開始" ;
+JobTerminated = "已計算" ;
+JobCanceled = "已取消" ;
+JobSynchronized = "同步化" ;
+
+StopMfgBatchOK = "加工循環批次計算已停止!" ;
+StopMfgBatchKO1 = "MfgBatchCompute 未停止, \n 請使用工作管理員來停止程序" ;
+
+ErrorCreatingBatch = "加工批次計算錯誤!" ;
+ErrorCreatingBatch2 = "加工批次計算錯誤! \n 請檢查目錄的存取權 : \n " ;
+
+LogFileEditor = "記錄檔 : " ;
+
+BatchLocationFrame.BatchLocationRBFrame.BatchLocationLabel.Title = "執行模式" ;
+BatchLocationFrame.BatchLocationRBFrame.BatchLocationLocal.Title = "本地端" ;
+BatchLocationFrame.BatchLocationRBFrame.BatchLocationRemote.Title = "遠端" ;
+
+BatchLocationFrame.BatchRemoteMachineLabel.Title = "位置 :" ;
+BatchLocationFrame.BatchRemoteUserLabel.Title = "使用者 :" ;
+
+
+SynchronizeCurrentJob = "取得批次計算刀具路徑?" ;
+
+

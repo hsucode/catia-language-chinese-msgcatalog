@@ -1,0 +1,108 @@
+//
+// ---------------------------
+// generic command
+// ---------------------------
+//
+CATMSHCmdMoveNode.OperInitialState.Message="選擇網格零件來移動節點.";
+CATMSHCmdMoveNode.UndoTitle="移動節點";
+
+CATMSHCmdMoveNode.OperMPSel.Message="選擇網格零件";
+CATMSHCmdMoveNode.OperMPSel.UndoTitle="選擇網格零件";
+
+CATMSHCmdMoveNode.OperOK.Message="執行移動節點動作";
+CATMSHCmdMoveNode.OperOK.UndoTitle="移動節點";
+
+CATMSHCmdMoveNode.OperCANCEL.Message="取消移動節點";
+CATMSHCmdMoveNode.OperCANCEL.UndoTitle="移動節點";
+
+CATMSHCmdMoveNode.OperContState.Message="繼續";
+CATMSHCmdMoveNode.OperContState.UndoTitle="繼續";
+
+//
+// ---------------------------
+// move node command
+// ---------------------------
+//
+CATMSHCmdMoveNode.SelPoints.Message="選擇幾何點或一組點";
+CATMSHCmdMoveNode.SelPoints.UndoTitle="移除幾何點或一組點";
+//
+// move node panel 
+//
+CATMSHCmdMoveNode.MoveNodeDlg.Title="移動節點";
+CATMSHCmdMoveNode.MoveNodeDlg.ToleranceLbl.Title="精度: ";
+CATMSHCmdMoveNode.MoveNodeDlg.ToleranceLbl.LongHelp="設定抓取精度.";
+
+//--- NLS pour MSHTolValue
+// Gestion de la Multilist
+
+CATMSHCmdMoveNode.MoveNodeDlg.PointSelector.Column0="己選幾何元素";
+CATMSHCmdMoveNode.MoveNodeDlg.PointSelector.Column0.LongHelp="所選點或幾何組的清單";
+
+CATMSHCmdMoveNode.MoveNodeDlg.PointSelector.RemoveGEOBtn.Title="移除";
+CATMSHCmdMoveNode.MoveNodeDlg.PointSelector.RemoveGEOBtn.LongHelp="移除所選幾何元素";
+CATMSHCmdMoveNode.MoveNodeDlg.PointSelector.RemoveAllGEOBtn.Title="移除全部";
+CATMSHCmdMoveNode.MoveNodeDlg.PointSelector.RemoveAllGEOBtn.LongHelp="移除全部幾何元素";
+
+CATMSHCmdMoveNode.MoveNodeDlg.RemoveGEOBtn.Title    ="移除";
+CATMSHCmdMoveNode.MoveNodeDlg.RemoveGEOBtn.LongHelp ="移除點設定.";
+CATMSHCmdMoveNode.MoveNodeDlg.RemoveAllGEOBtn.Title    ="移除全部";
+CATMSHCmdMoveNode.MoveNodeDlg.RemoveAllGEOBtn.LongHelp ="移除全部點設定.";
+
+CATMSHCmdMoveNode.MoveNodeDlg.GeomLabel.Title="依附";
+CATMSHCmdMoveNode.GeometrySelDlg.Title="幾何選擇器";
+
+// Gestion de la Multilist
+// du groupe
+
+CATMSHCmdMoveNode.MoveNodeDlg.GroupSelector.Column0="所選群組";
+CATMSHCmdMoveNode.MoveNodeDlg.GroupSelector.Column0.LongHelp="所選群組清單";
+
+CATMSHCmdMoveNode.MoveNodeDlg.GroupSelector.RemoveGEOBtn.Title="移除";
+CATMSHCmdMoveNode.MoveNodeDlg.GroupSelector.RemoveGEOBtn.LongHelp="移除所選群組";
+CATMSHCmdMoveNode.MoveNodeDlg.GroupSelector.RemoveAllGEOBtn.Title="移除全部";
+CATMSHCmdMoveNode.MoveNodeDlg.GroupSelector.RemoveAllGEOBtn.LongHelp="移除全部群組";
+
+CATMSHCmdMoveNode.MoveNodeDlg.RemoveGEOBtn.Title    ="移除";
+CATMSHCmdMoveNode.MoveNodeDlg.RemoveGEOBtn.LongHelp ="移除點設定.";
+CATMSHCmdMoveNode.MoveNodeDlg.RemoveAllGEOBtn.Title    ="移除全部";
+CATMSHCmdMoveNode.MoveNodeDlg.RemoveAllGEOBtn.LongHelp ="移除全部點設定.";
+
+CATMSHCmdMoveNode.MoveNodeDlg.GeomLabel1.Title="群組";
+CATMSHCmdMoveNode.MoveNodeDlg.PointCheck.Title="不含群組節點";
+
+CATMSHCmdMoveNode.GeometrySelDlg1.Title="群組選擇器";
+
+//CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.LimitsFrame.Title="掃掠限制";
+//CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.LimitsFrame.BottomLbl.Title="底: ";
+//CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.LimitsFrame.TopLbl.Title="頂: ";
+
+
+
+
+
+Geometries0D  = "/P1 頂點";
+Geometry0D    = "/P1 頂點";
+Set           = "/P1 幾何組";
+Sets          = "/P1 幾何組";
+Feature       = "/P1 特徵";
+Features      = "/P1 特徵"; 
+Group         = "/P1 群組";
+Groups        = "/P1 群組"; 
+NoSelection = "未選擇";
+
+// Warning window
+//
+
+CATMSHCmdMoveNode.WarningOK.Message="網格零件不是最新的 : 是否移除節點?";
+CATMSHCmdMoveNode.WarningCANCEL.UndoTitle="取消移動模式";
+
+CATMSHCmdMoveNode.ShowWindow.Message="網格零件不是最新的.";
+CATMSHCmdMoveNode.ConfirmOperMPUpToDateDlg.Title="警告";
+CATMSHCmdMoveNode.ConfirmOperMPUpToDateDlg.IconLbl.Title="圖示";
+CATMSHCmdMoveNode.ConfirmOperMPUpToDateDlg.Text1Lbl.Title="網格零件不是最新的.";
+CATMSHCmdMoveNode.ConfirmOperMPUpToDateDlg.Text2Lbl.Title="您確定要執行動作嗎 ?";
+CATMSHCmdMoveNode.ConfirmOperMPUpToDateDlg.SettingCheck.Title="將來不再顯示.";
+CATMSHCmdMoveNode.ConfirmOperMPUpToDateDlg.SettingCheck.LongHelp="如勾選將不顯示警告";
+CATMSHCmdMoveNode.ConfirmOperMPUpToDateDlg.BCancel="否";
+CATMSHCmdMoveNode.ConfirmOperMPUpToDateDlg.BOK="是";
+

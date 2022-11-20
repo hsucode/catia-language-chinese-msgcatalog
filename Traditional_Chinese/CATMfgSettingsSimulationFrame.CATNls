@@ -1,0 +1,110 @@
+// Noms des block d options:
+// =========================
+
+Level.HeaderFrame.Global.Title = "模擬在";
+Collision.HeaderFrame.Global.Title = "影像";
+Photo.HeaderFrame.Global.Title = "影像";
+Performance.HeaderFrame.Global.Title = "表現";
+Color.HeaderFrame.Global.Title = "顏色";
+ContainerFacet.HeaderFrame.Global.Title = "";
+PositioningMove.HeaderFrame.Global.Title = "定位移動";
+
+
+M3xToolName = "刀具";
+
+// * Level *
+// --------------------
+Level.IconAndOptionsFrame.OptionsFrame.IdProgram.Title = "程式層級";
+Level.IconAndOptionsFrame.OptionsFrame.IdProgram.LongHelp = "只在目前程式中模擬動作.";
+Level.IconAndOptionsFrame.OptionsFrame.IdPartOp.Title = "工法層級";
+Level.IconAndOptionsFrame.OptionsFrame.IdPartOp.LongHelp = "在目前和以前的程式模擬工法動作.";
+
+// * Video *
+// --------------------
+Collision.IconAndOptionsFrame.OptionsFrame.StopAtToolChangeModeId.StopAtToolChange.Title = "換刀時停止";
+Collision.IconAndOptionsFrame.OptionsFrame.StopAtToolChangeModeId.StopAtToolChange.LongHelp = "每個換刀時停止影像模擬";
+Collision.IconAndOptionsFrame.OptionsFrame.CollisionModeId.LabCollisionVideo.Title = "干涉偵測 : ";
+Collision.IconAndOptionsFrame.OptionsFrame.CollisionModeId.LabCollisionVideo.LongHelp = "在影像中啟動干涉偵測.";
+Collision.IconAndOptionsFrame.OptionsFrame.CollisionModeId.IdIgnore.Title = "忽略";
+Collision.IconAndOptionsFrame.OptionsFrame.CollisionModeId.IdIgnore.LongHelp = "忽略由影像模擬偵測到的任何干涉.";
+Collision.IconAndOptionsFrame.OptionsFrame.CollisionModeId.IdStop.Title = "停止";
+Collision.IconAndOptionsFrame.OptionsFrame.CollisionModeId.IdStop.LongHelp = "停止由影像模擬偵測到的任何干涉.";
+Collision.IconAndOptionsFrame.OptionsFrame.CollisionModeId.IdContinue.Title = "繼續";
+Collision.IconAndOptionsFrame.OptionsFrame.CollisionModeId.IdContinue.LongHelp = "偵測到模擬時繼續模擬和提供最後錯誤的所有報告.";
+Collision.IconAndOptionsFrame.OptionsFrame.TouchCollisionModeId.TouchIsCollision.Title = "接觸為移動";
+Collision.IconAndOptionsFrame.OptionsFrame.TouchCollisionModeId.TouchIsCollision.LongHelp = "偵測接觸為移動";
+Collision.IconAndOptionsFrame.OptionsFrame.MultipleVideoResultId.MultipleVideoResult.Title = "程式上的多重影像結果";
+Collision.IconAndOptionsFrame.OptionsFrame.MultipleVideoResultId.MultipleVideoResult.LongHelp = "允許程式上的多重影像結果";
+
+// * Photo *
+// --------------------
+Photo.IconAndOptionsFrame.OptionsFrame.FramePhoto11.LabBoxType.Title = "錯誤盒:";
+Photo.IconAndOptionsFrame.OptionsFrame.FramePhoto11.LabBoxType.LongHelp = "設定過切區域錯誤盒的顯示模式.";
+Photo.IconAndOptionsFrame.OptionsFrame.FramePhoto11.IdWireFrame.Title = "線架構";
+Photo.IconAndOptionsFrame.OptionsFrame.FramePhoto11.IdWireFrame.LongHelp = "顯示過切區域錯誤盒的線架構.";
+Photo.IconAndOptionsFrame.OptionsFrame.FramePhoto11.IdTransparent.Title = "透明";
+Photo.IconAndOptionsFrame.OptionsFrame.FramePhoto11.IdTransparent.LongHelp = "透明顯示過切區域錯誤盒.";
+Photo.IconAndOptionsFrame.OptionsFrame.FramePhoto11.IdNone.Title = "無";
+Photo.IconAndOptionsFrame.OptionsFrame.FramePhoto11.IdNone.LongHelp = "不顯示過切區域錯誤盒.";
+Photo.IconAndOptionsFrame.OptionsFrame.FramePhoto12.ComputeAllInformationAtPickedPoint.Title = "在選取點計算所有資訊";
+Photo.IconAndOptionsFrame.OptionsFrame.FramePhoto12.ComputeAllInformationAtPickedPoint.LongHelp = "在選取點計算所有資訊";
+
+// Performance:
+
+// * Facet Type *
+// --------------
+Performance.IconAndOptionsFrame.OptionsFrame.LabelFacetTyp.Title = "刀具和面型";
+Performance.IconAndOptionsFrame.OptionsFrame.LabelFacetTyp.LongHelp = "顯示如何計算刀具的面型表現方式.";
+Performance.IconAndOptionsFrame.OptionsFrame.ContainerFacetId.IdInside.Title = "較小的";
+Performance.IconAndOptionsFrame.OptionsFrame.ContainerFacetId.IdInside.LongHelp = "計算真實刀具內的刀具表現方式.";
+Performance.IconAndOptionsFrame.OptionsFrame.ContainerFacetId.IdOutside.Title = "較大的";
+Performance.IconAndOptionsFrame.OptionsFrame.ContainerFacetId.IdOutside.LongHelp = "計算刀具表現方式內的真實刀具.";
+Performance.IconAndOptionsFrame.OptionsFrame.ContainerFacetId.IdMixed.Title = "標準";
+Performance.IconAndOptionsFrame.OptionsFrame.ContainerFacetId.IdMixed.LongHelp = "計算好的預設解法 .";
+
+
+// * Resolution *
+// --------------
+Performance.IconAndOptionsFrame.OptionsFrame.LabelResolution.Title = "相片解析度";
+Performance.IconAndOptionsFrame.OptionsFrame.LabelResolution.LongHelp = "定義相片解析度.";
+Performance.IconAndOptionsFrame.OptionsFrame.IdResolution.Title = "解析度";
+Performance.IconAndOptionsFrame.OptionsFrame.IdResolution.LongHelp = "定義相片解析度.";
+
+// * InterpolAngle *
+// -----------------
+Performance.IconAndOptionsFrame.OptionsFrame.LabelInterpolAngle.Title = "刀軸內插角度 (只適用5軸)";
+Performance.IconAndOptionsFrame.OptionsFrame.LabelInterpolAngle.LongHelp = "提供兩點間刀軸的最大變化角度.";
+Performance.IconAndOptionsFrame.OptionsFrame.InterpoAngl.Title = "內插角度";
+Performance.IconAndOptionsFrame.OptionsFrame.InterpoAngl.LongHelp = "提供兩點間刀軸的最大變化角度.";
+
+// * Optimized Video *
+// -----------------
+Performance.IconAndOptionsFrame.OptionsFrame.OptimizedVideo.Title = "影像的最佳化塗彩";
+Performance.IconAndOptionsFrame.OptionsFrame.OptimizedVideo.LongHelp = "如設定此選項, 將提供影像表現方向的最佳化塗彩.
+否則, 將會以速度較慢但影像更真實的顏色來表現.";
+
+
+// * Color *
+// --------------
+Color.IconAndOptionsFrame.OptionsFrame.LabToolColor.Title = "刀具和加工區域:";
+Color.IconAndOptionsFrame.OptionsFrame.ContainerFacetId.IdAllSame.Title = "相同";
+Color.IconAndOptionsFrame.OptionsFrame.ContainerFacetId.IdAllSame.LongHelp = "顯示所有刀具顏色如同第一把.";
+Color.IconAndOptionsFrame.OptionsFrame.ContainerFacetId.IdLastDifferent.Title = "上一把不同刀具";
+Color.IconAndOptionsFrame.OptionsFrame.ContainerFacetId.IdLastDifferent.LongHelp = "顯示上一把刀具和所有其它顏色不同.";
+Color.IconAndOptionsFrame.OptionsFrame.ContainerFacetId.IdAllDifferent.Title = "全部不一樣";
+Color.IconAndOptionsFrame.OptionsFrame.ContainerFacetId.IdAllDifferent.LongHelp = "所有刀具以不同顏色顯示";
+Color.IconAndOptionsFrame.OptionsFrame.LabToolHolderColor.Title = "刀把";
+Color.IconAndOptionsFrame.OptionsFrame.LabToolHolderColor.LongHelp = "刀把顏色定義 (勾選最佳化影像).";
+Color.IconAndOptionsFrame.OptionsFrame.LabVideoPartColor.Title = "零件";
+Color.IconAndOptionsFrame.OptionsFrame.LabVideoPartColor.LongHelp = "零件顏色定義.";
+Color.IconAndOptionsFrame.OptionsFrame.LabVideoFixturesColor.Title = "夾具";
+Color.IconAndOptionsFrame.OptionsFrame.LabVideoFixturesColor.LongHelp = "夾具顏色定義 (勾選最佳化影像).";
+
+
+
+// * Transition Max Angle *
+// ------------------------
+PositioningMove.IconAndOptionsFrame.OptionsFrame.LabelTransitionMaxAngle.Title = "最大刀軸變化量";
+PositioningMove.IconAndOptionsFrame.OptionsFrame.LabelTransitionMaxAngle.LongHelp = "指定兩動作間在變換路徑間的最大允許刀軸變化量.";
+PositioningMove.IconAndOptionsFrame.OptionsFrame.TransitionMaxAngl.Title = "最大刀軸變化量";
+PositioningMove.IconAndOptionsFrame.OptionsFrame.TransitionMaxAngl.LongHelp = "指定兩動作間在變換路徑間的最大允許刀軸變化量.";

@@ -1,0 +1,166 @@
+// ==============================================================================================
+// Frame Globale messages automatiques
+// ==============================================================================================
+// Supprimer avec le monocodage #ifdef CATIAV5R11
+_GlobalToolsFrameBeforeR11.HeaderFrame.Global.Title =
+"Not available in this version. Press Cancel...";
+///////////////////////////////////////////////////////////////
+_GlobalToolsFrame.HeaderFrame.Global.Title =
+"定義批次作業參數 : ";
+_GlobalToolsFrame.IconAndOptionsFrame.OptionsFrame._LblTargetDir.Title =
+"輸出目錄 : ";
+_GlobalToolsFrame.IconAndOptionsFrame.OptionsFrame._BtnBrowseTargetDir.Title =
+"...";
+_GlobalToolsFrame.IconAndOptionsFrame.OptionsFrame._BrowseDir.Title=
+"選擇輸出目錄 :";
+_GlobalToolsFrame.IconAndOptionsFrame.OptionsFrame.notif1.Title=
+"目錄中有問題";
+_GlobalToolsFrame.IconAndOptionsFrame.OptionsFrame._LblExtOutput.Title=
+"輸出檔案型式 :";
+_GlobalToolsFrame.IconAndOptionsFrame.OptionsFrame._LblMultiList.Title=
+"表列要轉換的檔案 :";
+_GlobalToolsFrame.IconAndOptionsFrame.OptionsFrame._BtnAddFile.Title=
+"新增檔案...";
+_GlobalToolsFrame.IconAndOptionsFrame.OptionsFrame._BtnRemoveFile.Title=
+"刪除檔案";
+_GlobalToolsFrame.IconAndOptionsFrame.OptionsFrame.notif2.Title=
+"沒有輸出目錄";
+
+_GlobalToolsFrame.IconAndOptionsFrame.OptionsFrame._LblOptionsDir.Title =
+"CATSettings 目錄 (轉換選項) : ";
+
+_GlobalToolsFrame.IconAndOptionsFrame.OptionsFrame._BtnBrowseOptionsDir.Title =
+"...";
+
+_GlobalToolsFrame.IconAndOptionsFrame.OptionsFrame._BrowseOptionsDir.Title=
+"選擇選項目錄 :";
+
+_GlobalToolsFrame.IconAndOptionsFrame.OptionsFrame.notif3.Title=
+"沒有選項目錄";
+
+FrameButtons.Options.Title=
+"選項...";
+
+
+// ==============================================================================================
+// Frame Globale messages non automatiques
+// ==============================================================================================
+GlobalFrame.NotADirectory=
+"不是目錄";
+GlobalFrame.NoWritePermission=
+"沒有寫入權限";
+GlobalFrame.Inexistant=
+"未存在的目錄";
+
+GlobalFrame.MultList.Name=
+"檔案名稱";
+GlobalFrame.MultList.Input=
+"輸入目錄";
+GlobalFrame.MultList.Output=
+"輸出目錄";
+GlobalFrame.MultList.Ext=
+"輸出檔案型式";
+GlobalFrame.NoOutputDir=
+"請選擇輸出目錄";
+
+GlobalFrame.NotifR11=
+"此版本尚未可用. \n 請在批次資料交換視窗中按取消...";
+
+GlobalFrame.NotifOptionsDir=
+"請為您的 CATSettings 檔案選擇目錄...";
+
+
+// ==============================================================================================
+// Pour le descripteur du Batch (BatchDataExchange.xml)
+// ==============================================================================================
+
+BatchDataExchange.XML.Description=
+" CATIA 和 DXF, IGES(2D & 3D) 或 STEP 間的批次資料交換";
+
+
+
+// ==============================================================================================
+// Pour le bilan de l'ex嶰ution du Batch
+// ==============================================================================================
+
+BatchFunctions.Separ.Double=
+"o=================================o";
+
+BatchFunctions.Separ.Simple=
+"o---------------------------------o";
+
+BatchFunctions.Info.Start=
+" *** 批次 DXF-IGES-STEP *** 
+ ";
+
+BatchFunctions.Info.StartXML=
+"
+ *** Parsing XML 檔案 *** 
+ ";
+
+BatchFunctions.Error.CreateSession=
+"!! 嚴重錯誤 : 無法建立新的 CATIA 工作";
+
+BatchFunctions.Error.InvalidXmlFile=
+"!! 嚴重錯誤 : .xml 批次參數檔案不正確. 無法執行 DXF-IGES-STEP 批次作業 ";
+
+BatchFunctions.Info.TransferNumber=
+" *** 轉換號碼 :  ";
+
+BatchFunctions.Info.InputFile=
+"   - 輸入檔案名稱 : " ;
+
+BatchFunctions.Info.InputPath=
+"   - 輸入檔案路徑 : " ;
+
+BatchFunctions.Info.InputType=
+"   - 輸入檔案型式 : " ;
+
+BatchFunctions.Info.OutputType=
+"   - 輸出檔案型式 -----> " ;
+
+BatchFunctions.Info.TransfertOK=
+"   === 轉換完成 - 建立檔案 : ";
+
+BatchFunctions.Error.SaveAs=
+"!! 無法建立檔案 : ";
+
+BatchFunctions.Info.MultiSheetTransfertOK=
+"   === 轉換完成 ===";
+
+BatchFunctions.Error.MultiSheetSaveAs=
+"!! 無法建立輸出檔案";
+
+BatchFunctions.Error.Open=
+"!! 無法開啟檔案 : ";
+
+BatchFunctions.Error.NbErrors=
+"!! 批次作業時發生錯誤的數目 : ";
+
+BatchFunctions.Info.NbOK=
+"   轉換的檔案數目 : ";
+
+BatchFunctions.Info.BatchOK=
+"=== 批次作業成功 - 所有檔案轉換完成 ! ===";
+
+BatchFunctions.Error.License=
+"!! 錯誤 : 沒有軟體許可權 - 無法轉換";
+
+BatchFunctions.Error.UnknownTypes=
+"!! 錯誤 : 輸入或輸出檔案型式發生問題";
+
+BatchFunctions.Error.InputFileOrPath=
+"!! 錯誤 : 無法存取輸入檔案 : ";
+
+BatchFunctions.Error.OutputDirectory=
+"!! 錯誤 : 無法存取輸出目錄 : ";
+
+BatchFunctions.Warning.OutputDirectory=
+"!  警告 : 至少有一輸出檔案為唯讀. 
+   您的檔案有可能存在 BATCH_HOME 目錄中: 請查看以下詳細報告...";
+
+
+
+
+
+

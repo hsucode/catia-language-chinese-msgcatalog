@@ -1,0 +1,34 @@
+//=============================================================================
+//                                     CNEXT - CXR11
+//                          COPYRIGHT DASSAULT SYSTEMES 2003 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATCauIntersectWallSystemCmd.CATNls
+// FRAMEWORK   :    CATCompAccessUI
+// AUTHOR      :    ehh
+// DATE        :    February 2003
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  C&A Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//------------------------------------------------------------------------------
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// DialogEngine state prompts 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATCauIntersectWallSystemCmd.SelectWallSystemState.Message="選擇牆系草圖";
+CATCauIntersectWallSystemCmd.SelectPublishedSurfState.Message="選擇發行曲面或含有發行曲面的物件來相交";
+CATCauIntersectWallSystemCmd.SelectMultiSurfState.Message="選擇此物件的發行曲面之一";
+
+WrappingSurfWithOneSurfWarningTitle="含有一發行曲面的捲曲曲面";
+WrappingSurfWithOneSurfWarningText=
+"The wrapping surface selected has only one published surface.  This implies the intersection may form a closed loop.  In this
+case, attempting to extract wall system geometry or related compartments may yield ambiguous situations and the operation
+could fail.  It is strongly recommended that you divide the wrapping surface into multiple published surfaces.  
+
+Hit OK to intersect, Cancel to cancel the intersection.";     

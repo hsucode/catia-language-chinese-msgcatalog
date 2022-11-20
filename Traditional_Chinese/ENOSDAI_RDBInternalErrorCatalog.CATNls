@@ -1,0 +1,49 @@
+// 0   -1000: database error 
+// 1000-2000: mapping  error
+// 2000-3000: lock     error
+// 3000-4000: multisite error
+
+ENOSDAI_RDBInternalERR_1000.Request = "request the column name for [/p1] for an aggregate column, a simple value column or an reference OID";
+ENOSDAI_RDBInternalERR_1000.Diagnostic = "not found";
+ENOSDAI_RDBInternalERR_1000.Advice = "check if [/p1] exist in the column ATTRIBUTENAME of the RDBATTRMAPPING table";
+ENOSDAI_RDBInternalERR_1001.Request = "request aggregate table name for [/p1] ";
+ENOSDAI_RDBInternalERR_1001.Diagnostic = "not found";
+ENOSDAI_RDBInternalERR_1001.Advice = "check if [/p1] exist in the column ATTRIBUTENAME of the RDBATTRMAPPING table";
+ENOSDAI_RDBInternalERR_1002.Request = "request the column type for [/p1]";
+ENOSDAI_RDBInternalERR_1002.Diagnostic = "not found";
+ENOSDAI_RDBInternalERR_1002.Advice = "check if [/p1] exist in the column ATTRIBUTENAME of the RDBATTRMAPPING table";
+ENOSDAI_RDBInternalERR_1003.Request = "request the column datadomain for [/p1]";
+ENOSDAI_RDBInternalERR_1003.Diagnostic = "not found";
+ENOSDAI_RDBInternalERR_1003.Advice = "check if [/p1] exist in the column ATTRIBUTENAME of the RDBATTRMAPPING table";
+
+ENOSDAI_RDBInternalERR_2000.Request = "trying to modify an instance of type [/p1]";
+ENOSDAI_RDBInternalERR_2000.Diagnostic = "instance locked by [/p1]";
+
+ENOSDAI_RDBInternalERR_3000.Request = "trying to unset the attribute [/p3] of an instance of type [/p1]. Oid : [/p2]\nUnique attributes of the object are :/p4";
+ENOSDAI_RDBInternalERR_3000.Diagnostic = "the object does not belong to your site. object belongs to the site of Id [/p1] and name [/p2]";
+
+ENOSDAI_RDBInternalERR_3001.Request = "trying to modify the attribute [/p3] of an instance of type [/p1]. Oid : [/p2]\nUnique attributes of the object are :/p4";
+ENOSDAI_RDBInternalERR_3001.Diagnostic = "the object does not belong to your site. object belongs to the site of Id [/p1] and name [/p2]";
+
+ENOSDAI_RDBInternalERR_3002.Request = "trying to modify the  aggregate [/p3] of an instance of type [/p1]. Oid : [/p2]\nUnique attributes of the object are :/p4";
+ENOSDAI_RDBInternalERR_3002.Diagnostic = "the object does not belong to your site. object belongs to the site of Id [/p1] and name [/p2]";
+
+ENOSDAI_RDBInternalERR_3003.Request = "trying to delete an instance of type [/p1]. Oid : [/p2]\nUnique attributes of the object are :/p3";
+ENOSDAI_RDBInternalERR_3003.Diagnostic = "the object does not belong to your site. object belongs to the site of Id [/p1] and name [/p2]";
+
+ENOSDAI_RDBInternalERR_3004.Request = "trying to lock an instance of type [/p1]. Oid : [/p2]\nUnique attributes of the object are :/p3";
+ENOSDAI_RDBInternalERR_3004.Diagnostic = "the object does not belong to your site. object belongs to the site of Id [/p1] and name [/p2]";
+
+ENOSDAI_RDBInternalERR_3005.Request = "trying to unlock an instance of type [/p1]. Oid : [/p2]\nUnique attributes of the object are :/p3";
+ENOSDAI_RDBInternalERR_3005.Diagnostic = "the object does not belong to your site. object belongs to the site of Id [/p1] and name [/p2]";
+
+ENOSDAI_RDBInternalERR_3006.Request = "trying to change the site ID of an instance of type [/p1]. Oid : [/p2]\nUnique attributes of the object are :/p3";
+ENOSDAI_RDBInternalERR_3006.Diagnostic = "the object does not belong to your site. object belongs to the site of Id [/p1] and name [/p2]";
+
+ENOSDAI_RDBInternalERR_3007.Request = "trying to commit data";
+ENOSDAI_RDBInternalERR_3007.Diagnostic = "Replication is in progress";
+ENOSDAI_RDBInternalERR_3007.Advice = "Please wait till replication completion";
+
+ENOSDAI_RDBInternalERR_3008.Request = "trying to commit data";
+ENOSDAI_RDBInternalERR_3008.Diagnostic = "a database error has been detected : /p1";
+ENOSDAI_RDBInternalERR_3008.Advice = "";

@@ -1,0 +1,27 @@
+// Error messages : ERR_, WRN_ or INF_ + identifier, /p1, /p2.. for parameters.
+
+Msg_HelpLine1				= " CATPDMExtractEV4Batch [-part Env.PART_LIST.PartListName[.Version]] [-adddoc Env.DocTable.DocName.DocType[.Revision]]";
+Msg_HelpLine2				= "           -out ouputpath [-delete] [-epexml outputXmlFile] [-report xmlReportFile]";
+Msg_HelpLine3				= "          [-connect xxx] [-role xxx] [-user xxx] [-pwd xxx]";
+Msg_HelpLine4				= "\n CATPDMExtractEV4Batch -help";
+
+Help_CommandLine = 
+"     -part         Environment and PartList's name of the root of the assembly to extract. 
+                   The version to keep can be spcifified.
+     -adddoc       Environment, document's table, document's name and type of document to load if not attached in an assembly.
+                   Can be used also to extract standalone documents.
+                   Several adddoc statements are possible. 
+                   The revision can be specified.
+     -out          Folder path where the session will be saved to.
+     -delete       Force deletion of files already existing in output folder before extraction.
+     -epexml       To generate an XML template file that can be used by reconciliation batch.
+     -report       To generate an XML report listing documents extracted.";
+     
+Help_AdditionalCommandLineV5 = 
+"     -connect      Server name
+     -role         Role used for ENOVIA connection
+     -user         User for ENOVIA connection
+     -pwd          User password for database connection.";
+
+Help_AdditionalHelp                   = 
+"     -help         Describe command syntax";

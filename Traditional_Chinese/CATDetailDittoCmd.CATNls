@@ -1,0 +1,93 @@
+//=============================================================================
+//                                     CNEXT - CXR3 
+//                          COPYRIGHT DASSAULT SYSTEMES 1999
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATDetailDittoCmd
+// LOCATION    :    DraftingIntCommands/CNext/resources/msgcatalog
+// AUTHOR      :    lhz
+// DATE        :    June 20 1999
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Drafting Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//   modif 01      LHZ   20/02/00  changement de l'origine du detail
+//   modif 02      LGK   17/12/02  revision
+//------------------------------------------------------------------------------
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// Interactive Dimension Cmd : Dialog  purpose ...
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATDetailDittoCmd.validDetailState.Message="";
+CATDetailDittoCmd.SelDetail.Message="選擇分件.";
+CATDetailDittoCmd.GetPosition.Message="按一下來定位分件.";
+CATDetailDittoCmd.ChangeDetailOrigin.Message="按一下來更改分件原點.";
+CATDetailDittoCmd.ChangeDetailAngle.Message="";
+CATDetailDittoCmd.SixState.Message="";
+CATDetailDittoCmd.Help="建立分件樣式.";
+
+CATDetailDittoCmd.CATDetailDittoCmd_selection.UndoTitle="選擇分件";
+// Gestion mini toolbar de saisie de coordonnees
+CATDetailDittoCmd.Position.Name.Title = "點: ";
+CATDetailDittoCmd.Position.Name.ShortHelp = "分件位置.";
+CATDetailDittoCmd.Position.ULabel.Title = "H: ";
+CATDetailDittoCmd.Position.ULabel.ShortHelp = "輸入分件原點的第一個座標.";
+CATDetailDittoCmd.Position.VLabel.Title = "V: ";
+CATDetailDittoCmd.Position.VLabel.ShortHelp = "輸入分件原點的第二個座標.";
+CATDetailDittoCmd.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "角度: ";
+CATDetailDittoCmd.Angle.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "輸入分件的角度";
+CATDetailDittoCmd.Scale.Dimension.EnglobingFrame.IntermediateFrame.Label.Title = "比例: ";
+CATDetailDittoCmd.Scale.Dimension.EnglobingFrame.IntermediateFrame.Label.ShortHelp = "輸入分件的比例";
+CATDetailDittoCmd.SelDetail.UndoTitle = "取消分件選擇";
+CATDetailDittoCmd.SelDetail.RedoTitle = "再做分件選擇";
+CATDetailDittoCmd.UndoTitle = "建立分件元件";
+
+// gestion de l'origine du detail
+CATDetailDittoCmd.DetailOrigin.InitialState.Message="按一下來建立分件新位置.";
+CATDetailDittoCmd.DetailOrigin.Position.Name.Title = "點: ";
+CATDetailDittoCmd.DetailOrigin.Position.Name.ShortHelp = "分件原點.";
+CATDetailDittoCmd.DetailOrigin.Position.ULabel.Title = "H: ";
+CATDetailDittoCmd.DetailOrigin.Position.ULabel.ShortHelp = "輸入分件原點的第一個座標.";
+CATDetailDittoCmd.DetailOrigin.Position.VLabel.Title = "V: ";
+CATDetailDittoCmd.DetailOrigin.Position.VLabel.ShortHelp = "輸入分件原點的第二個座標.";
+
+// gestion de l'angle du detail
+CATDetailDittoCmd.DetailAngle.InitialState.Message="按一下定義角度.";
+CATDetailDittoCmd.DetailAngle.Position.Name.Title = "結束點: ";
+CATDetailDittoCmd.DetailAngle.Position.Name.ShortHelp = "分件角度.";
+CATDetailDittoCmd.DetailAngle.Position.ULabel.Title = "H: ";
+CATDetailDittoCmd.DetailAngle.Position.ULabel.ShortHelp = "輸入結束點的第一個座標.";
+CATDetailDittoCmd.DetailAngle.Position.VLabel.Title = "V: ";
+CATDetailDittoCmd.DetailAngle.Position.VLabel.ShortHelp = "輸入結束點的第二個座標.";
+CATDetailDittoCmd.DetailAngle.Position.Length_Label.Title = "長度: ";
+CATDetailDittoCmd.DetailAngle.Position.Length_Label.ShortHelp = "輸入長度.";
+CATDetailDittoCmd.DetailAngle.Position.Angle_Label.Title = "角度: ";
+CATDetailDittoCmd.DetailAngle.Position.Angle_Label.ShortHelp = "輸入分件角度.";
+
+
+// changement de l'origine du detail et du FlipX,FlipY
+CATDetailDittoCmd.PositionPanel.Title="位置";
+CATDetailDittoCmd.PositionPanel.OriginButton.Title="更改分件原點";
+CATDetailDittoCmd.PositionPanel.OriginButton.ShortHelp="更改分件原點";
+CATDetailDittoCmd.PositionPanel.OriginButton.LongHelp="更改分件原點";
+CATDetailDittoCmd.PositionPanel.AngleButton.Title="更改分件角度";
+CATDetailDittoCmd.PositionPanel.AngleButton.ShortHelp="更改分件角度";
+CATDetailDittoCmd.PositionPanel.AngleButton.LongHelp="更改分件角度";
+CATDetailDittoCmd.PositionPanel.FlipXButton.Title="水平翻轉分件";
+CATDetailDittoCmd.PositionPanel.FlipXButton.ShortHelp="水平翻轉分件";
+CATDetailDittoCmd.PositionPanel.FlipXButton.LongHelp="沿 Y 軸翻轉分件";
+CATDetailDittoCmd.PositionPanel.FlipYButton.Title="垂直翻轉分件";
+CATDetailDittoCmd.PositionPanel.FlipYButton.ShortHelp="垂直翻轉分件";
+CATDetailDittoCmd.PositionPanel.FlipYButton.LongHelp="沿 X 軸翻轉分件";
+
+// messages d'erreurs
+CATDetailDittoCmd.CreationFailed.Message="無法建立 2D 分件元素";
+CATDetailDittoCmd.IncompatibleGeomModel1.Message="無法建立 2D 分件元素 :\n 幾何元素由模型而來: ";
+CATDetailDittoCmd.IncompatibleGeomModel2.Message="無法輸入目前模型. \n 幾何資料內容器不一致. \n 兩者模型必須是在 標準縮放(預設)或大縮放 模式";
+
+

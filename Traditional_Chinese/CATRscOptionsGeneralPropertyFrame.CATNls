@@ -1,0 +1,91 @@
+// COPYRIGHT DASSAULT SYSTEMES 2003
+//===========================================================================
+//
+// CATRscOptionsGeneralPropertyFrame
+//
+//===========================================================================
+
+
+//--------------------------------------
+// Light creation options
+//--------------------------------------
+creationLightFrame.HeaderFrame.Global.Title = "新燈光位置";
+
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationRadio1.Title = "預設模式";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationRadio1.Help = "光線向下.";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationRadio1.ShortHelp = "預設光線方向";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationRadio1.LongHelp =
+"以此模式, 光線方向與目前視點方向垂直並向下.";
+
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationRadio2.Title = "如視點";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationRadio2.Help = "光線定位如目前視點";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationRadio2.ShortHelp = "光線定位如目前視點";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationRadio2.LongHelp =
+"以此模式, 光線方向與目前視點方向漫射. 
+光線原點與使用者眼睛位置相同.";
+
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationRadio3.Title = "重力的";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationRadio3.Help = "光線平行於所選絕對軸";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationRadio3.ShortHelp = "平行於所選絕對軸";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationRadio3.LongHelp =
+"以此模式, 光線方向平行於 X, Y 或 Z 絕對軸,
+並向下.";
+
+
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.axisLightFrame.lightCreationAxis1.Title = "X";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationAxis1.Help = "絕對 X 軸";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationAxis1.ShortHelp = "絕對 X 軸";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationAxis1.LongHelp =
+"光線方向將平行絕對 X 軸";
+
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.axisLightFrame.lightCreationAxis2.Title = "Y";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationAxis2.Help = "絕對 Y 軸";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationAxis2.ShortHelp = "絕對 Y 軸";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationAxis2.LongHelp =
+"光線方向將平行絕對 Y 軸";
+
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.axisLightFrame.lightCreationAxis3.Title = "Z";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationAxis3.Help = "絕對 Z 軸";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationAxis3.ShortHelp = "絕對 Z 軸";
+creationLightFrame.IconAndOptionsFrame.OptionsFrame.lightCreationAxis3.LongHelp =
+"光線方向將平行絕對 Z 軸";
+
+//-----------------------------------------------------
+// Viewpoint Setting Option
+//-----------------------------------------------------
+viewPointFrame.HeaderFrame.Global.Title = "檢視模式";
+
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewPointRadio1.Title = "平行";
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewPointRadio1.Help = "設定視點為平行模式";
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewPointRadio1.ShortHelp = "設定視點為平行模式";
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewPointRadio1.LongHelp =
+"當開啟工作檯時設定視點為平行模式";
+
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewpointModeCheck.Title = "啟動";
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewpointModeCheck.Help = "啟動或關閉視點說明";
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewpointModeCheck.ShortHelp = "啟動或關閉視點說明";
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewpointModeCheck.LongHelp =
+"當開啟工作檯時啟動或關閉視點說明";
+
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewPointRadio2.Title = "透視";
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewPointRadio2.Help = "設定視點為透視模式";
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewPointRadio2.ShortHelp = "設定視點為透視模式";
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewPointRadio2.LongHelp =
+"當開啟工作檯時設定視點為透視模式";
+
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewPointRadio3.Title = "最近儲存";
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewPointRadio3.Help = "設定視點為最近儲存模式";
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewPointRadio3.ShortHelp = "設定視點為最近儲存模式";
+viewPointFrame.IconAndOptionsFrame.OptionsFrame.viewPointRadio3.LongHelp =
+"當開啟工作檯時設定視點為最近儲存模式";
+
+//-----------------------------------------------------
+// Material View Setting Option
+//-----------------------------------------------------
+materialViewFrame.HeaderFrame.Global.Title = "材料顯示";
+
+materialViewFrame.IconAndOptionsFrame.OptionsFrame.materialViewModeCheck.Title = "檢視材料";
+materialViewFrame.IconAndOptionsFrame.OptionsFrame.materialViewModeCheck.Help = "檢視材料";
+materialViewFrame.IconAndOptionsFrame.OptionsFrame.materialViewModeCheck.ShortHelp = "檢視材料";
+materialViewFrame.IconAndOptionsFrame.OptionsFrame.materialViewModeCheck.LongHelp =
+"當開啟工作檯時啟動或關閉材料檢視.";

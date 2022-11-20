@@ -1,0 +1,59 @@
+//-------------------------------------------------------------------------
+// Resource file for CATPrinterConfigureDialog
+// fbq - Oct 97
+//-------------------------------------------------------------------------
+
+Title = "印表機設定";
+
+Printer.Title = "印表機";
+Printer.LongHelp = "印表機名稱.
+'檔案' 為儲存印表機性質的檔案名稱.
+'名稱' 為印表機名稱.
+'驅動器' 讓您可選擇印表機驅動器或語言.
+依據所選驅動器
+按一下 '進階設定...' 進入詳細參數.";
+Printer.File.Title = "檔案";
+Printer.Description.Title = "名稱";
+Printer.Driver.Title = "驅動程式";
+Printer.Language.AdvancedConfiguration.Title = "進階組態...";
+
+PaperFormat.Title = "頁面格式";
+PaperFormat.LongHelp = "設定印表機頁面性質.
+'預設' 設定印表機預設頁面性質.
+'最大' 設定印表機可支援的最大紙張.
+'直式' 和 '橫式' 設定預設圖紙的方向.
+按一下 '預設邊界' 設定圖紙的預設邊界.";
+PaperFormat.DefaultFormat.Title = "預設";
+PaperFormat.Maximum.Title = "最大";
+PaperFormat.Orientation.Portrait.Title = "直印";
+PaperFormat.Orientation.Portrait.LongHelp = "直印";
+PaperFormat.Orientation.Landscape.Title = "橫印";
+PaperFormat.Orientation.Landscape.LongHelp = "順時針旋轉90度.";
+PaperFormat.DefaultMargins.Title = "預設留邊...";
+
+Scripts.Title = "列印程式";
+Scripts.LongHelp ="設定列印輸出預設檔案路徑
+和排序名稱或要執行的列印命令.
+'宣告' 設定列印輸出檔案的路徑名稱 ($HOME/catout.out)
+或您要自訂的 CATOUT 環境變數名稱.
+'執行' 設定列印排序, 如您已選擇 '預設' 和排序名稱,
+或可自訂執行程式, 當您選取 '自訂' 時.";
+Scripts.Declaration.Title = "宣告";
+Scripts.OutputFileName.Title = "輸出檔名";
+Scripts.Scripts1.RunTimeDefault.Title = "預設";
+Scripts.Scripts1.RunTimeCustom.Title = "自訂";
+Scripts.RunTimeEdit.Title = "編輯程式...";
+Scripts.Execution.Title = "執行";
+Scripts.Scripts2.ExecutionDefault.Title = "預設";
+Scripts.Scripts2.ExecutionCustom.Title = "自訂";
+Scripts.ExecutionEdit.Title = "編輯程式...";
+Scripts.Queue.Title = "詢問名稱";
+
+DefaultMargins.Title = "預設區域";
+RunTimeEditor.Title = "執行程式";
+ExecutionEditor.Title = "執行程式";
+
+NoGenerator.Title = "進階組態";
+NoGenerator.PText = "無法載入 /p1 驅動程式";
+
+TitleLock.PText = "印表機性質     無法更改參數";

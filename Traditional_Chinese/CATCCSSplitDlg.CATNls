@@ -1,0 +1,79 @@
+//----------------------------------------------
+// Resource file for CATCCSSplitDlg class
+// En_US
+//----------------------------------------------
+ Title	= "分割模具區域";
+
+ SplitNoSelection	= "未選擇";
+
+ Elements=" 元素";
+
+ // Type de propagation
+ PropagationC0		=	"點連續";
+ PropagationC1		=	"相切連續";
+ PropagationNone	=	"不連續";
+
+ FrmRoot.FrameToCut.FrmPropagation.LbPropagation.Title = "連續形式  ";
+ 
+ // Titres des colonnes de la multi liste
+ ElementColumnTitle		= "元素";
+ DestinationColumnTitle	= "目的地";
+	
+ // Elements to cut
+ FrmRoot.FrameToCut.Title = "被裁剪元素 ";
+ FrmRoot.FrameToCut.FrmCutList.LbToCut.Title = "要分割的修剪面";
+
+ // Contextual menu ToCut
+ ListeDisplayItem	= "表列顯示";
+ ListeResetItem		= "重設表列";
+ 
+ // Cutting elements
+ FrmRoot.FrameCutting.Title = "裁切元素";
+ 
+ //  Elements destination
+ FrmRoot.FrameDestination.Title									= "元素目的地";
+ FrmRoot.FrameDestination.FrameModDest.ChangeDestination.Title	= " 更改目的地 ";
+ FrmRoot.FrameDestination.FrameModDest.SwitchDestination.Title	= " 更換目的地 ";
+ FrmRoot.FrameDestination.FrmDstCurrent.LbDestination.Title		= " 目的地  ";
+ 
+ // Contextual menu Destination
+ DestinationReframeItem	= "圖形置中";
+ DestinationReplaceItem = "更換目的地";
+ DestinationCavityItem	= "-> 模穴";
+ DestinationCoreItem	= "-> 模仁";
+ DestinationSliderItem	= "-> 滑塊";
+ DestinationOtherItem	= "-> 其它";
+
+
+ // Help
+ FrmRoot.FrameToCut.FrmPropagation.LbPropagation.LongHelp = 
+	"No propagation: select the faces to cut one by one.
+For point continuity and tangent continuity, select a reference face. 
+All the faces contiguous to the reference face are cutted";
+
+ FrmRoot.FrameToCut.FrmCutList.LbToCut.LongHelp = 
+	"Gives the list of faces to split.";
+ FrmRoot.FrameToCut.FrmCutList.EditorToCut.LongHelp = 
+	"Displays the name of the face selected or the number of faces selected. 
+Use the contextual menu to display the whole list of faces selected or to reset the list.";
+  FrmRoot.FrameToCut.FrmCutList.PshBtnDisplayList.LongHelp = 
+	"Displays the whole list of faces selected."; 
+
+ FrmRoot.FrameCutting.LongHelp = 
+	"Displays the name of the cutting element selected";
+ 
+ FrmRoot.FrameDestination.LongHelp	= 
+	"Lists the split elements (after Apply) and proposes a destination area for each.
+When you select an element in the list, it is highlighted in the graphic area.
+Use the contextual menu or the Destination list below to select a destination and eventually apply the transfer.";
+
+ FrmRoot.FrameDestination.FrameModDest.ChangeDestination.LongHelp	= 
+	"Applies the transfer to the split selected.";
+
+ FrmRoot.FrameDestination.FrameModDest.SwitchDestination.LongHelp	= 
+	"Switches the destination areas of the split elements.";
+
+ FrmRoot.FrameDestination.FrmDstCurrent.LbDestination.LongHelp		= 
+	"Defines the destination area.";
+ FrmRoot.FrameDestination.FrmDstCurrent.EditDestination.LongHelp		= 
+	"Lists the possible destination areas.";

@@ -1,0 +1,140 @@
+PSSaveEnoviaLCATitle = "儲存在 ENOVIA LCA";
+PSSaveErrorConnect = "因為 ENOVIA LCA 連接未建立導致儲存取消."; 
+PSSaveErrorNomad   = "目前文件屬於 Nomad session.\n 所以無法儲存在 ENOVIA LCA.\n 請在儲存前先轉換至目標的 PDM 環境."; 
+PSSaveErrorPing = "因為 ENOVIA LCA 伺服器沒有反應,導致儲存取消."; 
+PSSaveErrorProductSpec = "無法儲存 : 儲存前須先關閉產品歷程樹";
+ERR_PSSaveNoPersist = "Document /p1 has no PDM persistency. Please use SetPDMProperties functionality before saving.";
+ERR_SaveErrorBBProdToExp = "Document /p1 has a PDM Persistency set to Document kept in Vault Publications Exposed and is pointing a Document whose persistency is Document Not Kept in Vault Structure Exposed. This is not allowed. Please change Persistency.";
+
+
+// Error messages :ERR_, WRN_ or INF_ + identifier, /p1, /p2.. for parameters.
+
+WRN_PSVpmCsteLost               = "組立拘束 /p1 無法儲存在 ENOVIA LCA 因它指向未確定資料.";
+WRN_PSVpmInvalidDoc				      = "無法在新元素關聯第二文件 /p1.\n 動作忽略.";
+WRN_PSVpmInvalidDocUp			      = "無法相關文件 /p1 \n 在 CATPart 的子節點. \n 動作忽略.";
+WRN_PSVpmInvalidDocUnder		    = "無法相關文件 /p1 \n 在 CATPart 的父節點. \n 動作忽略.";
+WRN_PSVpmInvalidMapping			    = "在 CATPart 下無法輸入新元件和文件. \n 動作忽略.";
+WRN_PSVpmAsmOutOfContext        = "Cannot import assembly node /p1 out of context.";
+WRN_PSVpmCannotRetrieveDocument = "無法從 EOVIA VAULT 獲取 /p1 相關文件. \n 動作忽略. 將建立新分件.";
+WRN_PSVpmInvalidOper			      = "無法輸入與 /p1 相關文件. \n 請卸載所有元素後再試一次.";
+WRN_PSPointedNotSaved			      = "無法儲存 ENOVIA 修改記錄在 /p1 組立拘束上, 因為無法將所有的新元素存在 ENOVIA 中.";
+WRN_PSVpmDocRenamed				      = "在 ENOVIA LCA 資料庫中已存在 /P1 文件. \n 此文件已使用新的名字自動儲存.";
+WRN_PSVpmRefNameTruncated		    = "參考名稱必須小於 40 個字元. \n /p1 \n 已依 ENOVIA LCA 需求, 自動截斷.";
+WRN_PSVpmRefNameTruncatedTo     = "參考名稱必須小於 /p1 個字元. \n /p1 \n 已依 ENOVIA LCA 需求, 自動截斷.";
+WRN_PSVpmProductRenamed         = "產品 /p1 已存在 ENOVIA LCA 資料庫中.\n 此產品已被自動存成 /p2";
+WRN_PSVpmProductPub				      = "無法在 ENOVIA 中儲存組立行 \n 此發行必須被移除, 或在細部零件中重新宣告";
+WRN_PSVpmInputLostPub			      = "背景零件使用未支援的發行. \n 此資料無法儲存在 Enovia 中 (儲存會失敗).";
+WRN_PSVpmInputWrongCtx			= "零件 /p1 屬於次組合 /p2 (ENOVIA 不支援).\n 請使用背景命令在 PRC 層級來定義背景關係.";
+WRN_PSVpmPointingFromBB         = "The part /p1 is contextual to the sub assembly /p2 (not supported in ENOVIA).\nNext time you open this sub assembly, you will have to run the Define Contextual Links command to restore the context.";
+WRN_PSVpmInvalidRefMapping		= "無法輸入參考 /p1 \n 因為已輸入附加的 CATPart. 此 CATPart 與甚它參考相關.\n 動作忽略.";
+INF_PSVpmSaveReconciliate       = "檔案文件 /p1 是由 ENOVIA LCA 萃取而來. \n 它的內容已被此版資料庫重新整理";
+INF_PSVpmSaveCreateNew          = "檔案文件 /p1 是由 ENOVIA LCA 萃取而來. \n 新資料庫為它所含元素新建立元件";
+INF_PSVpmDocWBRenamed           = "文件 /p1 已存在 ENOVIA 資料庫. \n 它將會自動存成 /p2";
+INF_PSVpmDocWBTruncated         = "文件 /p1 的名稱超過 40 個字元. \n 它將會自動存成 /p2";
+INF_PSVpmDocWBTruncatedTo       = "文件 /p1 的名稱超過 /p2 個字元. \n 它將會自動存成 /p3";
+INF_PSVpmDocWBInvalidChar       = "文件 /p1 的名稱含有無效字元. \n 它將會被自動更名";
+WRN_PSVpmNoRightsToDelete_Lock       = "不允許刪除 /p1 .\n 元件被其它元素鎖定";
+WRN_PSVpmNoRightsToDelete_UserRole   = "不允許刪除 /p1 .\n 使用者沒有授權";
+WRN_PSVpmInvalidInitLog         = "文件 /p1 無法儲存在 Enovia 中.";
+WRN_PSVpmInputLost1             = "零件 /p1 的內容無法存至 ENOVIA LCA 中 \n 因它指向未載入的資料";
+WRN_PSVpmInputLost2              = "使用 /P2 的零件 /p1 的內容無法存至 ENOVIA LCA 中 \n 因它指向未載入的資料";
+WRN_PSVpmExtensionError	        = "無法在 ENOVIA LCA 應用延伸中建立 /p1.\n 請檢查資料庫是否被正確安裝.";
+WRN_PSVpmConfig        	        = "A configured ENOVIA reference /p1 cannot be instanciated under a non configurable ENOVIA reference /p2.\n Operation ignored.\n Modify the ENOVIA settings and try again.";
+WRN_PSAttrMapFileParseErr       = "Error while parsing /p1 \nLine: /p2 Column: /p3 Message: /p4.\nSave to Enovia will not work after this.\nPlease modify the xml file and relaunch your session.";
+WRN_PSUserAttributeMappingKORef = "Some error occured while saving the attributes associated with reference of a part /p1";
+WRN_PSUserAttributeMappingKOIns = "Some error occured while saving the attributes associated with instance of a part /p1";
+INF_ImportOK                        = "輸入完成";
+WRN_VERSIONNING_NOT_DONE        = "The versioning of at least one element could not be done";
+WRN_PSVpmOpenDocumentwithoutPV =  "Document /p1 is not associated to a Part Version.\n If you save it, a new part will be created";
+
+INF_PSVpmOpenInBGNotAvailable   = "/p1 無法在背景中開啟. \n 沒有文件與目前選擇相關.";
+INF_PSVpmOpenInBGAlreadyDone    = "/p1 已在背景中開啟. \n 文件已在背景中相同位置開啟.";
+INF_PSVpmOpenInBGWrongEditor    = "以所選編輯器無法在背景中開啟. \n 相關文件必須是 CATPart 或 CATProduct 文件.";
+INF_PSVpmOpenInBGActiveDoc      = "文件以所選編輯器開啟後無法在背景中再開啟.";
+
+ERR_SaveErrorPrcPrc    = "The current document /p1 cannot be saved in ENOVIA\nbecause it contains an Enovia Product(PRC) which it is not the root product"; 
+
+WRN_PSVpmLoadByNameFailed       = "Fail to load /p1 of name /p2 from LCA";
+WRN_PSVpmSameRefInTwoPRCs           = "The component /p1 is already displayed in a CATIA Product. It can not be instanciated in another product";
+
+//Messages for ProductSpec
+WRN_PSProductSpecNotGranted     = "You are not Granted to Load ProductSpec into CATIA";
+WRN_PSProductSpecContextuality  = "Contextuality has been made using ProductSpec Assembly.It is not allowed and could not be saved back to ENOVIA LCA.";
+WRN_PSProductSpecConnection     = "Constraint /p1 has been /p2 under ProductSpec. It is not allowed and could not be saved back to ENOVIA LCA.";
+WRN_PSProductSpecEntity         = "Entity /p1 under ProductSpec has been /p2. It is not allowed and could not be saved back to ENOVIA LCA.";
+WRN_PSProductSpecMoveOnly       = "Modification of the content of ProductSpec is not allowed except Move operations";
+WRN_PSProductSpecConsSavedBroken= "Constraint /p1 will remain broken in EV5 because pointing an entity under a ProductSpec";
+WRN_PSPRCofProdSpecInSession    = "ProductSpec /p1 could not be loaded while its RootProduct /p2 is also in CATIA";
+WRN_PSProdSpecofPRCInSession    = "RootProduct /p1 could not be loaded while one of its ProductSpec is also in CATIA";
+WRN_PSProductSpecDirtyDoc       = "Document use by ProductSpec Assembly has been modified. It is not allowed and could not be saved back to ENOVIA LCA.";
+WRN_PSProductSpecDirtyDocWithCtx= "Document use by ProductSpec Assembly has been modified while containing some contextuality. It is not allowed and could not be saved back to ENOVIA LCA.";
+
+
+WRN_PSGetDomainFail = "Failure when trying to get the ENOVIA customized domain where the part or document should be stored";
+ERR_PSInsNameTooLong = "Instance name /p1 is too long(>40 characters). Please rename it as Instance name have impacts on Multi Models Links.";
+WRN_PSPROtherVersionInSession    = "Cannot load /p1 : another version is already loaded in CATIA.\nPlease synchronise the links on the desired version before proceeding.";
+
+// SDM/07-Aug-03
+// Error messages related to business rules checking (security, lifecycle, etc...)
+
+WRN_PSBRNoPrivelege             = "Operation not granted for object /p1.";
+WRN_PSBRNotLocked               = "Operation not authorized! /p1 is not locked.";
+WRN_PSBRLockedByAnother         = "Operation not authorized! /p1 is locked by another user.";
+WRN_PSBRStatusNoUpdate          = "Operation not authorized! Current status of /p1 is not updateable.";
+WRN_PSBRStatusReleased          = "Operation not authorized! Object /p1 has reached a final status.";
+WRN_PSBRParentNotLocked         = "Operation not authorized! Parent of /p1 is not locked.";
+WRN_PSBRParentLockedByAnother   = "Operation not authorized! Parent of /p1 is locked by another user.";
+WRN_PSBRParentStatusNoUpdate    = "Operation not authorized! Parent of /p1 has status not updateable.";
+WRN_PSBRParentStatusReleased    = "Operation not authorized! Parent of /p1 has reached a final status.";
+WRN_PSBRStatusNoDelete          = "Operation not authorized! Current status of /p1 is not deleteable.";
+WRN_PSBRParentNotConfigured     = "Operation not authorized! Parent of /p1 is not configured.";
+WRN_PSBRChildLockedByAnother	= "Operation not authorized! Children of object /p1 are not locked by the current user.";
+WRN_PSBRDelKOIIPointedByAction	= "Real delete not authorized! Instance /p1 is pointed by at least one Action.";
+WRN_PSBRUnknownError            = "Operation not authorized on /p1 and for unknown reason!";
+
+//Message for UnloadBranch
+WRN_PSVpmUnloadFileEntity       = "Entity /p1 has to be previously saved to Enovia before Unload";
+WRN_PSVpmUnloadNotSavedEntity   = "Cannot unload /p1 because modifications are not saved back to Enovia.";
+WRN_PSVpmCanNotUnloadUnderBB    = "Cannot unload /p1 because this entity is kept under a persistent document in the vault.";
+WRN_PSVpmCanNotUnloadUnloaded   = "Cannot unload /p1 because this entity is already unloaded.";
+WRN_PSVpmCanNotUnloadNothing    = "Branch of /p1 has no entity to unload";
+WRN_PSNoUnloadIfRefInEdition    = "Entity /p1 can not be unloaded because it is opened in edition elsewhere";
+
+//message fo TechPack
+ERR_TECHPACK_ClusterLoadingOperationFailure                 = "TechPack /p1 /p2 /p3 /p4 Loading operation failed. /p5 /p6 /p7"; 
+ERR_TECHPACK_NotLocked                                      = "The TechPack is not Locked. Save aborted."; 
+ERR_TECHPACK_LockByAnotherUser                              = "The TechPack is Locked by another user. Save aborted."; 
+ERR_TECHPACK_BelongsToNotPersistantObject                   = "The TechPack belongs to a non persistent Object. Save aborted."; 
+ERR_TECHPACK_VaultAccessDenied                              = "Failure when accessing the vault. Save aborted.";
+WRN_TECHPACK_PointedDocumentNotInEnovia_ExpositionFailed    = "The Link is pointing to a non PDM Document( /p1 ). This Link is saved but not exposed.";
+ERR_TECHPACK_ExternalLinkNotSupported                       = "This External Link( /p1 ) is not supported.";
+
+PartialSave.Title="Partial Save Operation";
+PartialSave.Text="For lock, access right or life cycle considerations,\nonly a subset of modified data have been saved.\nSee the error panel for more details.";
+
+WRN_VERSINON_CREATION_FAILED   = "Could not create new version because version date is not included in the current effectivity";
+
+WRN_OldPartNotSupported1		= "The Part was created before V5.R5 level, save is not supported.";
+WRN_OldPartNotSupported2		= "Create a new Part and Copy - Paste the geometry.";
+
+WRN_PublicationNotIntrinsic         = "Publication: /p1 has not been saved since its owner product /p2 is in structure exposed mode.";
+WRN_PublicationNotSavedInVisuMode   = "The publication: /p1 has not been saved in Enovia because it points unloaded data";
+
+//xpn
+ERR_NotConnectedToChoosePRC = " To set persistency of /p1 to Structure Exposed, You must be connected to ENOVIA.";
+
+//CUO BZQ - 05.24.2005 - HL R16 Product Freeze
+WRN_PSBRFrozen		         = "Operation not authorized! /p1 is already delivered/installed.";
+WRN_PSBRParentFrozen         = "Operation not authorized! Parent of /p1 is already delivered/installed.";
+//BZQ - 07.27.2005 - IR A0505252
+WRN_PSBRFrozenOverride       = "/p1 is already delivered/installed. User has override access to modify it.";
+WRN_PSBRParentFrozenOverride = "Parent of /p1 is already delivered/installed. User has override access to modify it.";
+
+WRN_PSBRUnsolvedOperations	= "Operation not authorized! Cannot Delete /p1 with unsolved operations.";
+
+WRN_PSBRReleased = "Operation not authorized! Status of object: /p1 is Released.";
+
+ERR_SaveErrorR4SP1doc    = "The current document /p1 cannot be saved in ENOVIA\nbecause it is a document generated before R4SP1.\nOnly Post R4SP1 document can be saved in ENOVIA."; 
+
+//RID IR 416546 .. Rolledback 05:09:15
+//WRN_PSNoCharacterSupportForNameDBCS = "The entity name /p1 contains unsupported DBCS character(s) /p2. Please rename before proceeding to save in ENOVIA.";

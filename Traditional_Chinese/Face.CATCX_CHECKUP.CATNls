@@ -1,0 +1,94 @@
+//------------------------------------------------------
+// Resource file for internal Topological Check-Up 
+// En_EN
+//----------------------------------------------------------------------
+// CAUTION : each index is of maximum length of seventy-two characters !
+//-----------------------------------------------------------------------
+//
+ActiveBody.NoEdgeGiveItBack =
+"is part of Active /P2, but not a Edge gives it back.";
+//
+ActiveBody.NoShell =
+"is part of Active /P2, with no shell";
+//
+ActiveBody.InactiveShell =
+"is part of Active /P2, with /P3 inactive";
+//
+ContainingShell.NoFace =
+"is part of Body /P2, points /P3 which does not contain this face";
+//
+//    *******************************************************************
+//    *  FACE : made of at least one Loop
+//    *******************************************************************
+//
+Loop.Empty=
+"is empty, no Loop has been found.";
+//
+Loop.NoSurface=
+"support /P2 is not a valid Surface.";
+//
+Loop.InvalidLoop=
+"the /P3-th boundary-domain /P2 is not a valid Loop.";
+//
+GetAllCells.throw=
+"can not be analyzed (internal service GetAllCells generate a throw).";
+//
+PCurveOnSurface =
+"all /P4 PCurve(s) of the /P3 Loop(s) belong to /P2.";
+//
+PCurveOnSurface.Failed =
+"/P5 of /P4 PCurve(s) of the /P3 Loop(s) do not belong to /P2.";
+//
+Loop.FirstOuter=
+"is bouned with /P2 as first domain which is not correctly located Outer.";
+//
+Loop.IfNotFirstInner=
+"/P3-th Loop /P2 is not correctly located Inner.";
+//
+BoundingFace.BooleanData=
+"remaining temporary data for Boolean Operation (_Shared evaluated).";
+//
+BoundingFace.BooleanDataDimContents=
+"remaining temporary data for Boolean Operation (Iso/LowerDimContents).";
+//
+BoundingFace.BooleanDataConfused=
+"remaining _ConfusedFace.";
+//
+BoundingFace.AutoIntersection=
+"auto-intersection detected.";
+//
+//    *******************************************************************
+//    *  FACE : continuity of Vertices along Matter Side
+//    *******************************************************************
+//
+LoopEdgeVertex=
+"is bounded by [/P3,/P4] with Matter at [/P6,/P7] sharing /P5 (inside /P2).";
+//
+LoopEdgeVertex.NoMatterSide=
+"is bounded by /P3 with undefined MatterSide inside /P2.";
+//
+LoopEdgeVertex.Disjoint=
+"bounded by [/P3,/P4] (inside /P2) Matter [/P9,/P10] mismatching Vertex [/P5,/P6],[/P7,/P8].";
+//
+InternalLoop.Outer =
+"contains an internal /P2 is located outside external /P3.";
+//
+InternalLoop.InInternal =
+"contains  an internal /P2 contains an internal /P3.";
+//
+Surface.Aborted =
+"CheckUp of /P2 has been aborted.";
+//
+LoopLoop.Aborted =
+"unable to Position /P3 from /P2 (aborted).";
+//
+//    *******************************************************************************************
+//    *  Cell rule : for a given orientation, at most one owning domain in a given Body
+//    *******************************************************************************************
+//
+Topology.Touched =
+"is a touched topology (temporary attribute for boolean operation or smartduplication).";
+//
+BoundedDomainSameOrientation.many =
+"is /P8 /P6-th of /P2  and  /P9 /P7-th of /P3 for same /P4 inside /P5.";
+//

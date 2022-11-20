@@ -1,0 +1,269 @@
+// English Translation of the CATIA V5 Automotive BiW Fastening Application Attributes Names and Settings
+// *******************************************************************************
+//
+//
+// SECTION A: CATIA V5 BiW Fastener Application General Attributes
+// *******************************************************************************
+// 
+// Attributes Names
+// -------------------------------------------------------------------------------
+PCATS             = "程序目錄";
+PTYPS             = "程序型式"; 
+//
+// SECTION B:  CATIA V5 BiW Joint and BiW Joint Body Attributes 
+// *******************************************************************************
+// 
+// Attributes Names
+// -------------------------------------------------------------------------------
+FELS  = "預測元素數目"; 
+//
+// Assembly Type Attributes Names
+// -------------------------------------------------------------------------------
+NTH  = "厚度數目";
+STY  = "堆疊";
+ZNAM = "區域 ID";
+ZSUP = "依附";
+ZHEM = "Hem";
+ZMATNAM = "材料";
+ZTH  = "厚度";
+ZORN = "方向";
+ZCO1 = "披覆1";
+ZCO2 = "披覆2";
+CO1TH = "厚度1";
+CO2TH = "厚度2";
+//
+// Edit/Search criteria
+// -------------------------------------------------------------------------------
+JPN   = "連接分件名稱"; 
+JCN   = "連接分件數目"; 
+JID   = "BiW 連接名稱"; 
+JBID  = "BiW 連接本體名稱"; 
+SDF_ES  = "外形定義 ";
+
+//
+// SECTION C: CATIA V5 BiW Fastener Attributes
+// *******************************************************************************
+//
+// SECTION C-1- CATIA V5 BiW Fastener Life Cycle Attributes 
+// ***********  ===================================================================
+// 
+// Attributes Names
+// -------------------------------------------------------------------------------
+JEID           = "ID";
+STD            = "標準";
+U              = "未指定";
+//
+//
+// SECTION C-2- CATIA V5 BiW Fastener Type  Attributes 
+// ***********  ====================================================================
+//
+// Attributes Names
+// -------------------------------------------------------------------------------
+PCA  = "程序目錄";
+PTY  = "程序型式";
+
+TC1  = "投影分件";
+TPN1 = "投影零件號碼";
+TZ1  = "投影區域"; 
+
+//
+//  程序目錄 Attribute Code Values 
+// -------------------------------------------------------------------------------
+PCA_WLD  = "焊接";
+PCA_ADH  = "黏接";
+PCA_SEA  = "縫補";
+PCA_BWM  = "BiW 機構";
+PCA_U = "未指定";
+PTY_U = "未指定";
+//
+//
+// 程序型式 Attribute Code Values 
+// -------------------------------------------------------------------------------
+// For Welding (ISO Code Values):
+// ------------------------------
+PTY_13   = "MIG (13)";
+PTY_131  = "MIG (131)";
+PTY_14   = "TIG (14)";
+PTY_141  = "TIG (141)";
+PTY_21   = "Resistance (21)";
+PTY_22   = "Roll Seam (22)";
+PTY_23   = "Projection Resistance (23)";   
+PTY_24   = "Flash Butt (24)";
+PTY_25   = "Resistance Butt (25)";
+PTY_52   = "Laser (52)";
+PTY_91   = "Brazing (91)";
+PTY_94   = "Soldering (94)";
+//
+PTY_UNSW = "未指定焊接";
+PTY_UPRJ = "未指定投影";
+//
+// For Welding (ANSI Code Values):
+// ------------------------------
+PTY_SMAWNC = "SMAWC";
+PTY_TIG    = "TIG";
+PTY_RSW    = "Resistance";
+PTY_L      = "Laser";
+
+//  For 黏接:
+// --------------
+PTY_STR   = "結構黏接";
+PTY_NSTR  = "無結構黏接";
+PTY_UNSA  = "未指定 黏接";
+
+//  For Sealant:
+// -------------
+PTY_ROS   = "Robot Sealed";
+PTY_MAS   = "Sealed By Hand";
+PTY_UNSS  = "未指定 Sealant";
+
+// For BiW Mechanical:
+// -------------------
+PTY_CLI1  = "Clinching Point 1";
+PTY_CLI2  = "Clinching Point 2";
+PTY_R     = "Rivet";
+PTY_PR    = "Punch Rivet";
+PTY_BR    = "Blind Rivet";
+PTY_UNSM  = "未指定 BiW Mechanical";
+//
+//
+// For 未指定 程序型式:
+// -----------------------------
+PTY_U1 = "未指定 1";
+PTY_U2 = "未指定 2";
+//
+//
+// Assembly Type Code Values
+// -------------------------------------------------------------------------------
+STY_LAP  = "Lap Joint";
+STY_HEM  = "Hemmed Joint";
+STY_UNSP = "未指定";
+//
+// SECTION C-3- CATIA V5 BiW Fastener Function  Attributes 
+// ***********  ====================================================================
+//
+// Design & Engineering Attributes Names
+// -------------------------------------------------------------------------------
+//
+ROB = "Robustness";
+REG = "Regulation";
+FIN = "完成";
+//
+// Manufacturing Attributes Names
+// -------------------------------------------------------------------------------
+GFL  = "Geometry Flag";
+IFL  = "Inspection Flag";
+MID  = "Manufacturing Code";
+DISM = "Discretization Method";
+DISV = "Discretization Parameter";
+//
+// Design & Engineering  Function Attributes Code Values 
+// -------------------------------------------------------------------------------
+// For an attribute XXX, each NLS code value MUST BE BUILT BY CONCATENATION (UNDERSCORE SEPARATOR)
+// of the ATTRIBUTE NAME CODE and the Matching  User Code values as specified  in the GbfDSStd.xls File.
+// For example , the "Engineering Type" Attribute Code Name is "ENG", its possible values are:A,B,C,U as
+// specified  in the CATIA Default GbfDefaultISOStd.xls File.
+// By concatenation of "ENG" and "A" with _ separator we get The NLS Code string for value "A" is  "ENG_A"
+//   
+//
+//
+// ROB (Robustness) attribute Values
+// ----------------------------------------
+ROB_A = "Ordinary";
+ROB_B = "Critical";
+ROB_C = "Safety";
+ROB_D = "Manufacturing";
+ROB_U = "未指定";
+//
+// REG (Regulation) attribute Values
+// ----------------------------------------
+REG_A = "Norm A";
+REG_B = "Norm B";
+REG_C = "None";
+REG_U = "未指定";
+//
+// FIN (Finish) attribute Values
+// ----------------------------------------
+FIN_A = "Class A";
+FIN_B = "Class B";
+FIN_C = "Class C";
+FIN_D = "Class D";
+FIN_U = "未指定";
+//
+// DISM (Discretization method) attributes values:
+// --------------------------------------------------------------------------------
+DISM_U    = "未指定";
+DISM_SAG  = "Sag";
+DISM_STEP = "Step";
+//
+//
+/// SECTION C-4-CATIA V5 BiW Fastener Shape Attributes 
+// ************ ==================================================================
+//
+// Attributes Names
+// --------------------------------------------------------------------------------
+DIA = "Diameter";
+OFS = "Shank Base Offset";
+LEN = "Shank Length";
+DIH = "Head Diameter";
+LEH = "Head Length";
+DIF = "Foot Diameter";
+LEF = "Foot Length";
+MAT = "Material";
+SDF = "Definition";
+SRP = "Representation";
+BAS = "Base";
+HEIGHT = "Height";
+STH1 = "Thickness1";
+STH2 = "Thickness2";
+//
+// MAT (Material) attributes Values:
+// --------------------------------------------------------------------------------
+MAT_WLDA = "Weld material 1";
+MAT_WLDB = "Weld material 2";
+MAT_ADHA = "Glue 1";
+MAT_ADHB = "Glue 2";
+MAT_SEAA = "Sealant material 1";
+MAT_SEAB = "Sealant material 2";
+MAT_U    = "未指定";
+//
+
+// SDF (Definition) attributes Values:
+// --------------------------------------------------------------------------------
+SDF_PT3 = "3D Point";
+SDF_HSP = "Hemisphere";
+SDF_SH  = "Shank";
+SDF_SHH = "Shank with Head";
+SDF_SHF = "Shank with Head & Foot";
+
+SDF_CPH = "Curve Path";
+SDF_CYL = "Cylinder Pipe";
+SDF_HCY = "Half Cylinder Pipe";
+SDF_DMD = "Diamond Pipe";
+SDF_HDM = "Half Diamond Pipe";
+SDF_REC = "Rectangle Pipe";
+SDF_HRE = "Half Rectangle Pipe";
+
+SDF_THS = "Thin Surface";
+
+// SRP (Representation) attributes Values:
+// --------------------------------------------------------------------------------
+SRP_SYM = "符號";
+SRP_WIR = "線架構";
+SRP_SUR = "曲面";
+SRP_SOL = "DMU";
+//
+// Location Method and Support Spec
+// --------------------------------------------------------------------------------
+LOC     = "位置";
+SUP     = "依附";
+
+// Parameters for BiW Fastener Functional Annotations 
+USR      = "User Value";
+FN       = "[Number of Fasteners]";
+J        = "BiW Joint";
+JB       = "BiW Joint Body";
+JP       = "Joined Parts";
+LENGTH   = "Length";
+JPIN      = "Joined Part Instance Names";
+JZN      = "Joined Zone Names";
+JZTHKMAT = "Joined Zone Material/Thickness"; 

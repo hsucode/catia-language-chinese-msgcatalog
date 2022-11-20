@@ -1,0 +1,76 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//===========================================================================
+//
+// CATRscShootingAnimationFrame
+//
+//===========================================================================
+
+noAnimationLabel = "無";
+noSimulateLabel = "無";
+
+//--------------------------------------
+// Time frame
+//--------------------------------------
+timeFrame.HeaderFrame.Global.Title = "模擬";
+
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.animationLabel.Title = "模擬:";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.animationCombo.Help = "Selects the simulation to render";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.animationCombo.ShortHelp = "Rendered Simulation";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.animationCombo.LongHelp =
+"Defines the simulation to render.";
+
+timeFrame.IconAndOptionsFrame.OptionsFrame.simulateFrame.simulateLabel.Title = "模擬物件";
+timeFrame.IconAndOptionsFrame.OptionsFrame.simulateFrame.simulateList.Help = "Lists the animated objects";
+timeFrame.IconAndOptionsFrame.OptionsFrame.simulateFrame.simulateList.ShortHelp = "Animated Objects";
+timeFrame.IconAndOptionsFrame.OptionsFrame.simulateFrame.simulateList.LongHelp =
+"Lists the animated objects.";
+
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.durationLabel.Title = "歷時: ";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.durationSpinner.Help = "Defines animation duration";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.durationSpinner.ShortHelp = "Animation Duration";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.durationSpinner.LongHelp =
+"Duration of complete animation, in seconds.";
+
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.durationUnitLabel.Title = "秒";
+
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.frequencyLabel.Title = "頻率: ";
+
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.frequencySpinner.Help = "Defines frame frequency";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.frequencySpinner.ShortHelp = "Frame Frequency";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.frequencySpinner.LongHelp =
+"Animation frame frequency, in frames per second.";
+
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.frequencyUnitLabel.Title = "框架 /s";
+
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.imagesCountLabel.Title = "框架數目:";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.imagesCountSpinner.Help = "Defines frame count";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.imagesCountSpinner.ShortHelp = "Frame Count";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.imagesCountSpinner.LongHelp =
+"Number of frames replayed for complete animation.";
+
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeLabel.Title = "計算:";
+
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeFrame.computeAllRadio.Title = "所有框架";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeFrame.computeCustomRadio.Title = "由框架";
+
+
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeFrame.computeStartSpinner.Help = "Defines start frame";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeFrame.computeStartSpinner.ShortHelp = "Start Frame";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeFrame.computeStartSpinner.LongHelp =
+"Index of first frame to compute.";
+
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeFrame.computeEndLabel.Title = "至 ";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeFrame.computeEndSpinner.Help = "Defines end frame";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeFrame.computeEndSpinner.ShortHelp = "End Frame";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeFrame.computeEndSpinner.LongHelp =
+"Index of last frame to compute.";
+
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeFrame.computeStepLabel.Title = "每一個 ";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeFrame.computeStepSpinner.Help = "Defines step between frames";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeFrame.computeStepSpinner.ShortHelp = "Step Between Frames";
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeFrame.computeStepSpinner.LongHelp =
+"Step between two computed frames.";
+
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeFrame.computeStepUnitLabel.Title = "框架";
+
+timeFrame.IconAndOptionsFrame.OptionsFrame.timeParametersFrame.computeFrame.imagesComputedLabel.Title = "計算框架: ";

@@ -1,0 +1,52 @@
+ParsingMessage="設計表格檔案語法分析時發生一個錯誤. \n 檔案的格式可能不好";
+ParsingHeader="/P1:Sheet 語法分析錯誤";
+ColumnsUnicityMessage="欄位名稱必須惟一. \n 你必須編輯設計表格以改正此問題.";
+ColumnsUnicityHeader="/P1:欄位名稱不惟一";
+AssociationReplacementQuestion="相關聯的欄位 /P1 消失. \n 你要它關聯性轉移到欄位 /P2 ?";
+AssociationReplacementHeader="/P1:一個關聯性的取代";
+TypeCompliancyMessage="欄位型式 /P1 不再順從於它的關聯的型式 \n 參數. 關聯性已經被移除.";
+TypeCompliancyHeader="/P1:一個關聯性已經被移除.";
+ConfigDisappearedMessage="組態列消失. 你必須選擇另一個.";
+ConfigDisappearedHeader="/P1:選擇另一個組態列";
+ConfigChangedMessage="組態列的值已經被改變";
+ConfigChangedHeader="/P1";
+ConflictsQuestion="設計表格與其它關聯式之間有衝突. \n 你可以移除衝突關聯性  (Yes) 或不作動衝突 \n 關聯式 (No) 或不作動設計表格 (Cancel).";
+ConflictsHeader="有衝突必須解決";
+NoSheetMessage="未發現設計表格 /P1 的資料來源";
+NoSheetHeader="未發現資料來源";
+SynchroMessage="自上一次文件存檔後,設計表格檔 /P1 被修改. \n 設計表格將被同步";
+SynchroHeader="設計表格同步";
+UpdateMessage="設計表格 /P1 的內容不符合語法. 設計表格在中斷的狀態";
+UpdateHeader="語法分析錯誤";
+CyclesMessage="設計表格的作動產生循環. 它將不會被作動.";
+CyclesHeader="設計表格不能被作動";
+UnixExcelMessage="依附在 Excel 的設計表格 /P1 是不可用的在此系統中. \n 設計表格在中斷的狀態";
+UnixExcelHeader="Excel 不可用";
+UnixLotusMessage="依附在 Lotus 1-2-3 的設計表格 /P1 是不可用的在此系統中. \n 設計表格在中斷的狀態";
+UnixLotusHeader="Lotus 1-2-3 不可用";
+NotFoundMessage="設計表格的來源檔案 /P1 未發現. \n 設計表格處於損壞的狀態,當檔案未發現 (你可以使用性質來改變來源檔案)";
+NotFoundHeader="檔案 /P1 不存在";
+Configuration="組態";
+AssociationRemoved="在設計表格中 /P1 的一或數個關聯性已經被移除 \n",
+"因為設計表格檔案自上一次存檔後被修改,而且\n",
+"欄位名稱已經改變, 或因為一些參數消失. \n";
+AssociationRemovedHd="關聯性被移除";
+SynchroMes2="設計表格檔案 /P1 已經被修改. \n 設計表格將與此檔案同步";
+SynchroHd2="設計表格同步";
+SynchroQuestion="設計表格檔案 /P1 已經被修改.  \n 你要設計表格與此檔案同步嗎?";
+OneAssociationRemoved="剛被刪除的參數 (/P1) 是連相關聯於設計表格欄位 /P2. \n 關聯性已經被移除";
+OneAssociationRemovedHd="關聯性已移除";
+AssocRemoved=" /P1 欄消失. 與參數相關性已消除";
+ColumnNamesNotUnique="行名 /P1 重覆. 無法建立設計表";
+ColumnNamesNotUniqueHd="行名重覆.";
+
+OutOfRange="參數 /P1 已更改成 /P2 以便反應它的範圍";
+OutOfRangeHd="參數超過範圍";
+ReplacementFailed="更換設計表的原始檔案失敗";
+AddRowFailed="因為沒有修改權限導致此動作無效";
+EvaluateMessage="設計表格 /P1 在中斷的狀態, 以致無法計算, 可能會有較不良的數值";
+EvaluateHeader="設計表格計算錯誤";
+
+SynchroLastFailed="與原始檔案的最新版期同步化失敗";
+ProjectionFailed="與原始檔案的最新版期同步化失敗";
+LCANoRight="設計表原始檔案已由 Enovia LCA 管理. 您無權修改. \n 此檔案已存成 /P1 且以已存內容回復";

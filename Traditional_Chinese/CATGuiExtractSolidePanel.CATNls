@@ -1,0 +1,74 @@
+//--------------------------------------------
+// Resource file for CATGuiextractPanel class
+// En_FR
+//--------------------------------------------
+
+PanelTitre="萃取定義";
+BodyTitre="將萃取 :";
+CATGuiExtractSolideReRoute="Brep 刪除. 請更換錯誤元素";
+CATGuiExtractSolideMauvaisePart="以此增生模式除了目前零件外, 您無法在其它零件選擇元素";
+//CATGuiExtractSolideBesoinSupport="此內部邊線增生需要有依附 \n 請選擇與此內部邊線相關的依附";
+CATGuiExtractSolideBesoinSupport="在此類內部邊線延伸時需要依附元素, 請先選擇依附元素";
+
+ExtractCombo0="點連續";
+ExtractCombo1="相切連續";
+ExtractCombo2="曲率連續";
+ExtractCombo3="不延伸";
+ComboTitre="延伸形式 :";
+
+Type.LongHelp="定義延伸形式.
+您只能建立所選元素 (BRep 物件),
+或依相切情形來建立延伸 [相切連續]
+或點連續 (所萃取元素未表現任何孔).";
+
+CmbList.LongHelp="定義延伸形式.
+您只能建立所選元素 (BRep 物件),
+或依相切情形來建立延伸 [相切連續]
+或點連續 (所萃取元素未表現任何孔).";
+
+FraBody.LongHelp="指出將萃取的元素.";
+
+Body.LongHelp="指出將萃取的元素.";
+
+SupportTitre="依附 :";
+
+FraSupport.LongHelp="定義依附元素.
+因為不確定性,(邊線超過一個以上依附)
+您必須選擇依附元素
+以便計算邊線的延伸 (內部之一).";
+
+Support.LongHelp="定義依附元素.
+因為不確定性,(邊線超過一個以上依附)
+您必須選擇依附元素
+以便計算邊線的延伸 (內部之一).";
+
+FraTolerance.ComplementaryMode.Title="互補模式";
+FraTolerance.ComplementaryMode.LongHelp="此選項將會取消之前已選擇的元素
+但將原先未選擇的納為己選組合.";
+
+FraTolerance.Federation.Title="進給";
+FraTolerance.Federation.LongHelp="勾選此選項將會將
+指向的次元素所相關的萃取組合成一群.";
+
+FraTolerance.PointThreshold.Title="距離門檻";
+FraTolerance.FraTolerancePtCke.EnglobingFrame.IntermediateFrame.Spinner.Title="距離門檻";
+FraTolerance.PointThreshold.LongHelp="設定小於此距離門檻的元素均萃取.";
+
+FraTolerance.TangentThreshold.Title="角度門檻";
+FraTolerance.FraToleranceTgtCke.EnglobingFrame.IntermediateFrame.Spinner.Title="角度門檻";
+FraTolerance.TangentThreshold.LongHelp="設定小於此角度門檻的元素均萃取.";
+
+FraTolerance.CurvatureThreshold.Title="曲率門檻";
+raTolerance.CurvatureThreshold.LongHelp="設定小於此曲率門檻的元素均萃取.
+r=1 代表連續曲率.
+較大的不連續需要設為較小的 r 來計入.";
+FraTolerance.FraToleranceCurCke.EnglobingFrame.IntermediateFrame.Spinner.Title="曲率門檻";
+
+ElementsListTitle="要萃取的元素";
+
+MoreInfo="顯示參數 >>";
+LessInfo="隱藏參數 <<";
+FraTolerance.MoreInfoBt.ShortHelp="隱藏或顯示延伸參數";
+
+CATGuiExtractSolideDimension2="所選物件尺寸不正確. 預期尺寸: 2   但已選為: ";
+

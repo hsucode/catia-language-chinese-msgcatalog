@@ -1,0 +1,111 @@
+//=============================================================================
+//                                     CNEXT - CXR2
+//                          COPYRIGHT DASSAULT SYSTEMES 1998
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATTPSWndFilter
+// AUTHOR      :    gbt
+// DATE        :    05/06/1998
+//-----------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Filter Window
+//                  
+//-----------------------------------------------------------------------------
+// COMMENTS    :
+//-----------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//			lgk 21.05.03 Revision NLS
+//-----------------------------------------------------------------------------
+
+Title = "過濾器";
+
+_FrameGlobal._FrameDefinition.Title = "定義";
+_FrameGlobal._FrameDefinition.LongHelp = "過濾器定義";
+_FrameGlobal._FrameDefinition._EditorCurrentFilter.LongHelp = "解釋目前過濾器內含";
+_FrameGlobal._FrameDefinition._ComboFilterChoice.LongHelp = "選擇過濾器內含.
+以特徵選擇: - 幾何的元素 - 標註平面 \n - 標註組合 -3D 標註";
+_FrameGlobal._FrameDefinition._ComboFilterDetail.LongHelp = "精確過濾器內含";
+_FrameGlobal._FrameDefinition._EditorValeur.LongHelp = "選擇過濾器數值";
+
+_FrameGlobal._FrameResults.Title = "結果";
+_FrameGlobal._FrameResults.LongHelp = "內含過濾器結果";
+_FrameGlobal._FrameResults._EditorNombreTotal.LongHelp = "文件中內含所有公差的數目";
+_FrameGlobal._FrameResults._EditorNombreSelec.LongHelp = "所選公差的所有數目";
+
+_FrameGlobal._FrameDefinition._LabelCurrentFilter.Title = "目前過濾器";
+
+_FrameGlobal._FrameDefinition._LabelFilterChoice.Title = "過濾器選擇";
+
+_FrameGlobal._FrameResults._LabelNombreTotal.Title = "文件的公差:";
+_FrameGlobal._FrameResults._LabelNombreTotal.LongHelp = "文件中內含所有公差的數目";
+
+_FrameGlobal._FrameResults._LabelNombreSelec.Title = "所選公差的數目 :";
+_FrameGlobal._FrameResults._LabelNombreSelec.LongHelp = "所選公差的所有數目";
+
+_FrameGlobal._FrameResults._FrameDefaultTPSSelected._LabelNbDefaultTPSSelected.Title = "與";
+_FrameGlobal._FrameResults._FrameDefaultTPSSelected._LabelNbDefaultTPSSelected2.Title = "預設公差";
+
+_FrameGlobal._FrameResults._FrameDefaultTPS._LabelNbDefaultTPS.Title = "與";
+_FrameGlobal._FrameResults._FrameDefaultTPS._LabelNbDefaultTPS2.Title = "預設公差";
+
+_FrameGlobal._FrameDefinition._CBRefine.Title = "細緻過濾器";
+
+_FrameGlobal._FrameDefinition.TPSFilterGroup.Title = "顯示幾何元素附加";
+
+//DES CLEFS EXPLICITES
+//LES PREMIERES UTILISEES PAR LA COMMANDE
+//LA DERNIERE POUR REMPLIR UN COMBO
+
+_FrameGlobal._FrameDefinition._EditorCurrentFilter.Tous = "全部";
+
+_FrameGlobal._FrameDefinition._EditorCurrentFilter.Aucun = "無";
+
+_FrameGlobal._FrameDefinition._EditorCurrentFilter.Type = "次型式 :";
+
+_FrameGlobal._FrameDefinition._EditorCurrentFilter.Supertype = "型式 :";
+
+_FrameGlobal._FrameDefinition._EditorCurrentFilter.Valeur = "數值 :";
+
+_FrameGlobal._FrameDefinition._EditorCurrentFilter.DTole = "預設公差 ";
+
+_FrameGlobal._FrameDefinition._ComboFilterChoice.Liste = "全部,無,以次型式,以型式,以數值,以預設公差,以特徵,以 V4 視圖,以鎖定";
+
+//CLEF EXPLICITE POUR LE CONTENU DES FILTRES
+
+TypeAll = "全部";
+TypeNone = "無";
+TypeType = "以次型式";
+TypeSType = "以型式";
+TypeValue = "以數值";
+TypeDefTole = "以預設公差";
+TypeFeat = "以 V4 視圖";
+TypeView = "以視圖";
+TypeCapture = "以鎖定";
+
+//CLEF EXPLICITE DANS LE CAS OU PAS DE TOLERANCES DANS LE PRODUCT
+//CLEF EXPLICITE DANS LE CAS OU MULTISELECTION
+//CLEF EXPLICITE DANS LE CAS OU RIEN DE DISPONIBLE DANS LE COMBO DETAIL
+//CLEF EXPLICITE DANS LE CAS OU PAS DE FILTRE COURANT
+
+NoTolerance = "沒有公差";
+
+MultiSelection = "多重選擇";
+
+NoCurrentFilter = "沒有目前過濾器";
+
+//CLEF EXPLICITE DANS LE CAS OU 
+
+_FrameGlobal._FrameDefinition._ComboFilterDetail.NotAvailable = "無效的";
+
+_FrameGlobal.TPSFrameColors.Title = "著色以公差的幾何參考";
+
+_FrameGlobal.TPSFrameColors.TPSCheckColor.Title = "顏色 : ";
+
+_FrameGlobal.TPSFrameColors.TPSRelatedColor.ShortHelp = "選擇顏色";
+_FrameGlobal.TPSFrameColors.TPSRelatedColor.LongHelp = "選擇顏色";
+
+TPSFrameSelect.Title  = "找到標註 ";
+FeatureName           = "名稱";
+Path                  = "路徑";
+
+TPSFrameSelect.TPSMultiList.TPSContextualMenu.TPSReframeOnItem.Title    = "重新顯示";
+TPSFrameSelect.TPSMultiList.TPSContextualMenu.TPSCenterGraphItem.Title  = "圖形置中";

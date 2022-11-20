@@ -1,0 +1,284 @@
+//
+// ------------------------------------------------------------
+// |
+// |  NLS Message Catalog
+// |  Framework: CATIAApplicationFrame
+// |  Module : Search.m
+// |
+// ------------------------------------------------------------
+//
+
+// ------------------------------------------------------------
+// | Special characters for Keyboard Input                  
+// ------------------------------------------------------------
+//
+//  character to surround special characters
+Quote                  = "'";
+
+
+// ------------------------------------------------------------
+// | Special names for Keyboard Input                  
+// ------------------------------------------------------------
+// For the following translations, the names of the commands, as well as the name for 
+// the shortcuts MUST BE distinctive from each other. 
+//
+// In case of a clash, choose the name of the shortcut the shortest possible to be 
+// differentiable
+// Priority rule: The shortcut for Command has the highest priority level:
+//   command -> c
+//   color   -> col
+// Priority rule: The shortcut for Search is independant from others:
+//   search -> s
+//   set    -> s
+//
+// Example: If 2 commands' names are plane and planification
+//          choose plane and plani for the 2 associate shortcuts
+
+//  no default prefix
+None                  = "無";
+//  last entered prefix
+Last                  = "上次輸入";
+
+//  name to launch a command
+Command               = "命令";
+//  shortcut for this name
+CommandShortcut       = "c";
+
+//  name to launch a search through a favorite query
+Favorite              = "偏好";
+//  shortcut for this name
+FavoriteShortcut      = "f";
+
+//  string to characterize the name of an object 
+Name                  = "名稱";
+//  shortcut for this string
+NameShortcut          = "n";
+
+//  string to characterize the name of an object as shown in the specification tree (graph)
+NameInGraph           = "圖形中的名稱";
+//  shortcut for this string
+NameInGraphShortcut   = "g";
+
+//  string to characterize the type of an object 
+Type                  = "形式";
+//  shortcut for this string
+TypeShortcut         = "t";
+
+//  string to characterize the selection set of an object 
+Set              = "設定";
+//  shortcut for this string
+SetShortcut      = "s";
+
+//  string to characterize the color of an object 
+Color              = "顏色";
+//  shortcut for this string
+ColorShortcut      = "顏色";
+//
+ProblemInColorQuery = "數值 </P1> 為顏色屬性是不正確.";
+
+//  string to characterize the layer of an object 
+Layer              = "圖層";
+//  shortcut for this string
+LayerShortcut      = "l";
+
+//  string to characterize the dashed type of an object (line)
+Dashed              = "虛線";
+//  shortcut for this string
+DashedShortcut      = "d";
+//
+ProblemInDashedQuery = "數值 </P1> 為虛線屬性是不正確.";
+
+//  string to characterize the thickness of an object (line)
+Weight              = "寬度";
+//  shortcut for this string
+WeightShortcut      = "w";
+//
+ProblemInWeightQuery = "數值 </P1> 為寬度屬性是不正確.";
+
+//  string to characterize the symbol type of an object (point)
+Symbol              = "符號";
+//  shortcut for this string
+SymbolShortcut      = "符號";
+//
+ProblemInWeightQuery = "數值 </P1> 為寬度屬性是不正確.";
+
+// string to characterize the visibility of an object
+Visibility             = "可視性";
+//  shortcut for this string
+VisibilityShortcut     = "可視性";
+
+// Note for translation:
+// The following couple of values is related to the visibility attribute of an object (from a data point of view).
+// An object which has the "Visible" attribute may be visible but will not if one of its "parents" object is not visible.
+// In other terms, Visible means "visualizable" and Hidden means "not visualizable",
+// but users can have recorded theses values in favorite queries so one cannot change them.
+Visible                = "可見的";
+Hidden                 = "隱藏的";
+
+// Note for translation:
+// The following couple of values is related to the visibility of an object (from the display point of view).
+// An object is told "Shown" if it is shown on the screen: the object as well as each of its parents have the "Visible" attribute.
+// An object is told "Invisible" if it is not shown on the screen: the object or any of its parents have the "Hidden" attribute.
+Shown                  = "顯現";
+Invisible              = "不可見";
+//
+ProblemInVisibilityQuery = "數值 </P1> 為可視屬性是不正確.";
+
+
+// ------------------------------------------------------------
+// | Special names for the definition of the context,
+// | for a Search carried out from the Keyboard Input                  
+// ------------------------------------------------------------
+// Rules: They are the same as previously, but the shortcuts can be a little longer
+// ------   (ie, bot for to bottom)
+
+//  string to characterize a Search context being everywhere 
+Everywhere              = "全部";
+//  shortcut for this Search context - Everywhere
+EverywhereShortcut      = "全部";
+
+//  string to characterize a Search context in the element 
+InElement               = "在 /P1";
+DefaultInElement        = "元素中";
+//  shortcut for this Search context - In the element
+InElementShortcut       = "其中";
+
+//  string to characterize a Search context from the element to the bottom
+FromElement             = "從 /P1 至底部";
+DefaultFromElement      = "從元素至底部";
+//  shortcut for this Search context - From Element
+FromElementShortcut     = "從";
+
+//  string to characterize a Search context being from the selection 
+FromSelection           = "從目前選擇";
+//  shortcut for this Search context - From Selection
+FromSelectionShortcut   = "選擇";
+
+//  string to characterize a Search context from the screen 
+VisibleOnScreen         = "螢幕可見";
+//  shortcut for this Search context - Visible on screen
+VisibleOnScreenShortcut = "scr";
+
+//  string to characterize a Search context in the elements already found
+InList             = "從搜尋結果";
+
+
+// ------------------------------------------------------------
+// | Special names for context options,
+// | for a Search carried out from the Keyboard Input                  
+// ------------------------------------------------------------
+
+//  string to characterize the "Include Topology" context option 
+TopologyShortcut      = "topo";
+//  string to characterize the "Published elements only" context option 
+PublicationsShortcut  = "pub";
+//  string to characterize the "Deep Search" context option 
+DeepSearchShortcut    = "deep";
+
+
+// --------------------------------------------------------------------
+// | Names of boolean for a Search carried out from the Keyboard Input                  
+// --------------------------------------------------------------------
+True  = "真實";
+False = "虛假";
+
+//
+// ------------------------------------------------------------
+// |  Error Messages for  Power Input and Search command
+// ------------------------------------------------------------
+//
+UnknownCommand     = "未知命令: ";
+//
+UnknownWorkbench   = "未知工作檯: ";
+//
+UnknownType        = "未知形式: ";
+//
+UnknownAttribute   = "未知屬性: ";
+//
+UnknownColor       = "未知顏色: ";
+//
+WrongColorNumber   = "錯誤顏色號碼: ";
+//
+WrongLayerNumber   = "錯誤圖層號碼: ";
+//
+SyntaxError        = "文法錯誤";
+//
+OddNumberOf        = "奇數號碼:";
+//
+MissingClosingParenthesis = "少了一或多個括弧.";
+//
+MissingOpeningParenthesis = "少了一或多個括弧.";
+//
+BeforeOpeningParenthesis = "在 ( 之後, 只可以是:\n\t\ta (, 或 \n\t\tan 操作子.";
+//
+AfterOpeningParenthesis = "在 ( 之後, 不可以是:\n\t\tany ), 或 \n\t\tany 操作子.";
+//
+BeforeClosingParenthesis = "在 ), 不可以有任何的 (. \n 在 ) 之前, 不可有任何的操作子.";
+//
+AfterClosingParenthesis = "在 ) 之後, 只可以是:\n\t\ta ), 或 \n\t\ta 無操作子, 或 \n\t\ta 分隔."; 
+//
+OperatorsPosition = "運算子不可在字串的最前或最後.";
+//
+DoubleOperator = "兩運算子不可在一起.";
+//
+MissingOperator = "此詢問必須內含運算子.";
+//
+RefPRT = "參考元素必須在機械零件中.";
+//
+RefPBD = "參考元素必須在零件本體或混合設計本體中.";
+//
+RefGST = "參考元素必須在幾何組中.";
+//
+RefOGS = "參考元素必須在循序幾何組中.";
+
+//
+// Error Panel Title
+PowerInputMessage  = "大量輸入訊息";
+//
+NoAttributeOnType = "形式 </P1> 不具有任何特殊選擇.";
+//
+NoSuchAttributeOnType = " </P1> 屬性不存在 </P2> 形式物件.";
+//
+ErrorIn = "下列字串不正確: </P1>";
+//
+IntegerAttribute = 
+"屬性為整數形式. 在 </P1> 中移除任何單位或小數點字串.";
+//
+RealAttribute = 
+"屬性為實數形式. 在 </P1> 中移除任何單位字串.";
+//
+BooleanAttribute = 
+"屬性為布林形式. 
+允許的數值為 : /P1, /P2, /P3, /P4.";
+//
+DimensionedAttribute = 
+"屬性為尺寸形式. 
+必須指定單位.";
+//
+WrongToleranceRange = 
+"容差範圍不精確. 
+第一個值必須比第二個值小.";
+//
+WrongToleranceOperator = 
+"當以容差搜尋時, 操作子只能使用 = 和 !=.";
+//
+CharacterString = "字元字串";
+BooleanType     = "布林運算";
+EnumerationType = "計數";
+WrongOperatorForAttribute = 
+" </P1> 屬性是 /P2 形式, \n 可用的運算子 = 和 !=.";
+//
+UserAttributeWarning = 
+"除了 </P1> 屬性是使用者定義屬性, 
+詢問不正確.";
+//
+NoListOfPossibleValuesForEnumeration = "無法獲取計數形式屬性的可能數值 </P1> 表列.";
+InvalidValueForEnumeration = "為計數形式屬性 </P2> 所輸入的 </P1> 數值無效.";
+
+
+// ------------------------------------------------------------
+// | Special names for Tools/Options,
+// ------------------------------------------------------------
+
+//  example : "c: as command:"
+As                    = "as";

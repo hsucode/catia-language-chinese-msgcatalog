@@ -1,0 +1,130 @@
+ERR_0005 = 
+"無法開啟檔案  
+/p: 
+拒絕存取";
+
+ERR_0006 = 
+"/p 
+上述的檔案名稱無效.";
+
+ERR_0007 = 
+"/p 
+已經從另一個目錄中載入 
+執行新格式前先關閉此文件.";
+
+ERR_0008 = 
+"無法開啟檔案  
+:/p. 無法讀取相關鏈結.";
+
+ERR_0009 = 
+"無法由檔案 /p 讀取資料.";
+
+ERR_0010 = 
+"無法執行儲存動作: 資料遺失.
+檔案 /p 無法存取.";
+
+ERR_1155 = 
+"無法開啟檔案  
+/p1: 
+未知的型式 '/p2'.";
+
+ERR_0070 = 
+"無法開啟檔案  : 
+設備中沒有留下足夠空間.";
+
+NoSaveAsNewInDocEnv2 = "儲存
+/p1 (環境 /p2)
+因文件輸入了新環境導致以新文件是不可能的:
+/p3 (環境 /p4).";
+
+ERR_0051 = "儲存 /p1 (以新文件) 失敗.";
+
+ERR_0052 = "無法開啟 /p1 : 禁止分享";
+
+ERR_0053 = "無法開啟 /p1 : 禁止鎖定";
+
+ERR_0054 = "無法開啟 /p1 : 檔案可能已損毀";
+
+SaveFailedUnknownReason = "儲存 /p1 失敗.";
+
+
+ERR_0056 = "計劃檔案 /p1 儲存失敗";
+
+ERR_0057 = "無法執行儲存動作: 存取 stream 時發生錯誤";
+
+ERR_0058 = "無法執行開啟動作: 無效資料結構.";
+
+
+ERR_0100 = "/p
+下列目的地無法儲存文件";
+
+ERR_0101 = "/p
+上列來源無法用來萃取文件資訊";
+
+ERR_0102 = "/p
+上列文件為組合型式. 您必須使用 PX1CAA 工具列來執行開啟或儲存動作.";
+
+ERR_0012 = 
+"部份 ABF 資料未正確儲存在文件 /p, 可能無法正確處理. 請使用 CATDUA 工具來清理此模型.";
+
+// ---------- Session persistency manager
+
+PLMPersistType = "PLM";
+BLOBPersistType = "BLOB";
+
+RegOpNotSameTargetEnv = "/p1
+The target persistency mode belongs to /p2 environment but the target Id \"/p3\" belongs to /p4 environment.";
+
+RegOpUnitTargetNotSameEnv = "/p1
+The \"/p2\" document belongs to /p3 environment but the target Id \"/p4\" belongs to /p5 environment.";
+
+RegOpNotMasterUnit = "/p1
+The \"/p2\" is not a master unit for this operation.";
+
+RegKOLockedUnit1 = "/p1
+Any operation is prohibited with the \"/p2\" document.";
+
+RegKOLockedUnit2 = "/p1
+The operation concerns the \"/p2\" document too, and any operation with it is prohibited.";
+
+RegKOExistingOp1 = "/p1
+An operation is already registered with this document: /p2.";
+
+RegKOExistingOp2 = "/p1
+The operation concerns the \"/p2\" document too, and an operation is already registered with it: /p3.";
+
+ValidKOAlreadyInvalid = "/p1
+The operation is already invalid.";
+
+ValidKOMissingIdentifier = "/p1
+Needed identifier has not been provided.";
+
+ValidKOInvalidIdType = "/p1
+Provided identifier is invalid: Type '/p2' is not acceptable.";
+
+ValidKOUnchangedId = "/p1
+Provided identifier is invalid: It must be different from the original file's identifier.";
+
+ValidKOIdExistsInSession = "/p1
+Provided identifier is invalid: it is already used in session.";
+
+ValidKOIdAlreadyUsedByValidOp = "/p1
+Provided identifier is invalid: it is already used by a validated operation.";
+
+ValidKOIdAlreadyUsedByRegOp = "/p1
+Provided identifier is invalid: you can't register two operations with the same identifier.";
+
+RegisterOpFailed = "/p1
+The registration failed.";
+
+SaveOp = "Saving \"/p1\"";
+
+RegKOReadOnlyInSessionUnit = "/p1
+The \"/p2\" document is set as read-only in the session.";
+
+SaveWithNewIdOp = "Saving \"/p1\" with a new identifier";
+
+SetPersistModeOp = "Changing \"/p1\"'s persistency type";
+
+SaveWithPersistModeOp = "Saving \"/p1\" with new persistency type";
+

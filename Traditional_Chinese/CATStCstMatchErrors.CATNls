@@ -1,0 +1,34 @@
+InvertConstraintError.TargetIsPlane.Message = "The constraint cannot be inverted because the target element is a plane";
+
+InvertConstraintError.TargetIsNotModifiable.Message=
+"The constraint cannot be inverted because the target element cannot be modified
+Try to copy the target element into a datum and do the operation";
+
+InvertConstraintError.ElementOfDifferentDimension.Message=
+"The constraint cannot be inverted because the target element is one dimension less 
+than the source element";
+
+Selection.NotSurfaceBorder.Message = 
+"The selected edge is not a surface border,
+check the Basic Surface option to allow this type of selection";
+
+Selection.SourceNotModifiable.Message = 
+"The surface cannot be modified because it is a feature,
+convert the source element into a datum and do the operation again";
+
+Selection.TargetIsAPlane.Message = 
+"Plane are not allowed as target element.
+To make a mirror match, select the mirror match option, and select a plane as second element";
+
+Selection.PartOfMultiCellElement.Message = 
+"The source is part of a multi-cell element.
+Convert the select sub element into an isolated datum to be able to select it";
+
+Selection.NoPCurveAsSource.Message = 
+"2D Curve are not allowed as source.
+Convert it into a datum 3D Curve and select this converted curve";
+
+Selection.ElementIsNotANupbs.Message = 
+"The selected element is not a NUPBS.
+Convert it into a NUPBS and select it again"; 
+

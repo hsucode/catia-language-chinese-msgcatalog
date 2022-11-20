@@ -1,0 +1,478 @@
+//NLS-ENGLISH VERSION
+//=======================================================================
+// MODULE :  IgesDataExchange
+//=======================================================================
+
+// JRX 2002-08-09 : Ajout de messages d'erreur pour CATIgesConicArc
+// KVL 2002-06-04 : Creation de CATIgesImport.CATNls et refonte des anciens CATNls Iges.
+// DFB 2001-11-15 : Ajout de messages d'erreur pour la detection de trous 3D 
+//				   (CATIgesCurveOnParametricSurface et CATIgesBoundary)
+// DFB 2001-11-22 : Ajout de Bad_GetEndPPoints, Hole2DLoop et OrientPCurves
+// DFB 2001-12-11 : Ajout de Bad_ControlPoints2D
+// JRX 2001-10-24 : Ajout de messages d'erreur pour le Parsing (fsbDataTreatment)
+// MEF 2003-03-14 : Ajout de message d'erreur dans le traitement de la global data
+// mef 2004-02-05 : Ajout d'un warning si probleme de licence sur l'insert
+// CNY 2004-05-19 : Ajout d'un message info "mode CGR" pour CATIgesExportTypeManager
+
+
+// Numeros utilises : (import Iges : de [1001] a [1999]
+// [1000] a [1099] : fsb*
+// [1100] a [1149] : CATIgesCurveOnParametricSurface et CATIgesBoundary
+// [1150] a [1199] : CATIgesTrimmedParametricSurface
+// [1200] a [1299] : CATIgesElement (Actuellement utilises : 1200 a 1202) 
+// [1300] a [1399] : fileIges*
+// [1500] a [1549] : CATIgesBSplineSurface
+// [1550] a [1599] : CATIgesBSplineCurve
+// [1600] a [1649] : CATIgesCompositeCurve
+// [1650] a [1699] : CATIgesParametricSplineCurve
+// [1701] a [1750] : CATIgesConicArc
+// [1751] a [1770] : CATEIgesShapeFileSelection
+// [1800] a [1820] : CATIgesExportTypeManager
+// [1850] a [1860] : CATIgesExportTypeManager
+ 
+
+
+//--------------------------------------
+//  Messages from CATIgesExchangeDocu (CATIgesInterface.cpp)
+//--------------------------------------
+
+
+CATIgesExchangeDocu.Error.IGES = 
+"   <E> [1850] IGES 檔案有問題.
+!! 語法檢查不正常結束.";
+
+CATIgesExchangeDocu.Error.IGSS = 
+"   <E> [1851] 起始部份發生問題.
+!! 語法檢查不正常結束.";
+
+CATIgesExchangeDocu.Error.IGGS = 
+"   <E> [1852] 總體部份發生問題.
+!! 語法檢查不正常結束.";
+
+CATIgesExchangeDocu.Error.IGSPD =
+"   <E> [1853] DE 或 PD 部份發生問題.
+!! 語法檢查不正常結束.";
+
+
+
+//--------------------------------------
+//  Messages from CATIgesInterface
+//--------------------------------------
+
+CATIgesInterface.Error.TitreMsg =
+"\n o=====================================================o";
+
+
+
+//-----------------------------------------------
+//  Messages from CATIgesCurveOnParametricSurface
+//  Messages from CATIgesBoundary
+//-----------------------------------------------
+
+// Warning : Trou dans la loop 143 ou 144 3D du fichier iges - dfb
+CATIgesCurveOnParametricSurface.Warning.HoledLoop3D=
+"   <W> [1100] [T=/p2] [/p1] 從 IGES 檔案內讀取的 3D 循環表示成孔 : /p4 /p3"; 
+
+// Warning : Trou dans la loop 143 ou 144 2D du fichier iges - dfb
+CATIgesCurveOnParametricSurface.Warning.HoledLoop2D =
+"   <W> [1101] [T=/p2] [/p1] 從 IGES 檔案內讀取的 2D 循環表示成孔 : /p4 /p3"; 
+
+// Warning : Si la methode GetEndPPoints n'est pas implementee, on ne peut reorienter la loop 2D - dfb
+CATIgesCurveOnParametricSurface.Warning.Bad_GetEndPPoints =
+"   <W> [1102] [T=/p2] [/p1] 因為無法計算結束點 /p4, 導致 2D 循環無法重新定位"; 
+
+// Warning : Mauvaise orientation des PCurves 2D  - dfb
+CATIgesCurveOnParametricSurface.Warning.OrientPCurves =
+"   <W> [1103] [T=/p2] [/p1] 循環含有逆轉的參數曲線.  /p3"; 
+
+
+//-----------------------------------------------
+//  Messages from CATIgesTrimmedParametricSurface
+// [1150] a [1199]
+//-----------------------------------------------
+
+// Erreur : Pas de Surface pour cette face
+CATIgesTrimmedParametricSurface.Error.NoSurface=
+"   <E> [1150] 此修剪面沒有曲面. 請檢查 IGES 檔案的完整性 /p3"; 
+
+
+//--------------------------------------
+//  Messages from CATIgesElement
+//--------------------------------------
+
+CATIgesElement.Msg.Name_406 = 
+"   <I> [1200] [T=/p2] [/p1] 元件名稱必須由 406 形式 15 元件來指定 : /p3";
+
+CATIgesElement.Msg.Name_DE = 
+"   <I> [1201] [T=/p2] [/p1] 元件名稱必須由第 18 和第 19 個 DE 的欄位來指定: /p3";
+
+CATIgesElement.Msg.Name_Undef = 
+"   <I> [1202] [T=/p2] [/p1] 沒有為此元件指定名稱.";
+
+
+
+//--------------------------
+//  Messages from fileIges* 
+//--------------------------
+
+fileIGEStool.Error.IGES =
+"   <E> [1317] 讀取 IGES 檔案 /p1 時發生問題";
+
+fileIGEStool.Error.IGBAD =
+"   <E> [1318] 使用了錯誤選項開啟 /p1";
+
+fileIGEStool.Error.IGST =
+"   <E> [1319] 警告! 缺少結束指令, 或是在 IGES 檔案 /p1 結束後仍有資料";
+
+fileIGEStool.Error.IGGS =
+"   <E> [1320] IGES 檔案 /p1 的總體部份發生問題";
+
+fileIGEStool.Error.IGSPD =
+"   <E> [1321] IGES 檔案 /p1 的 PD 部份發生問題";
+fileIGEStool.Error.EOF = 
+"   <E> [1301] 在讀取檔案 /p1 的 PD 記錄 #/p2 時發生過早結束的問題";
+
+fileIGEStool.Error.IncBloc = 
+"   <E> [1302] 在讀取檔案 /p1 的 PD 記錄 #/p2 時發生不完全區塊的問題";
+
+fileIGES.Error.IGFILE = "未找到 IGES 檔案 /p1 或不具存取權限";
+
+fileIGES.Error.IGESF =
+"   <E> [1323] 檔案 /p1 不是 .igs 檔案";
+
+fileIGES.Error.IGESO =
+"   <E> [1322] 無法開啟 IGES 檔案 /p1";
+
+fileIGES.Error.IGESC = "無法關閉 IGES 檔案 /p1";
+
+fileIGES.Msg.IGESS =
+"   <W> [1324] 警告! 必須至少有一個開始記錄."; 
+
+fileIGES.Msg.IGProdIdSend =
+"   <W> [1325] 傳送者的產品名稱有問題";
+
+fileIGES.Msg.IGFileN =
+"   <W> [1326] 檔案名稱有問題";
+
+fileIGES.Msg.IGSysId =
+"   <W> [1327] 系統名稱 ID 有問題";
+
+fileIGES.Msg.IGPrepVers =
+"   <W> [1328] 前處理版本有問題";
+
+fileIGES.Msg.IGIntRep =
+"   <W> [1329] 整數表現方式有問題";
+
+fileIGES.Msg.IGSingPrecMag =
+"   <W> [1330] 單一精度大小有問題";
+
+fileIGES.Msg.IGSingPrecSig =
+"   <W> [1331] 單一精度重要性有問題";
+
+fileIGES.Msg.IGDbPrecMag =
+"   <W> [1332] 雙精度大小有問題";
+
+fileIGES.Msg.IGDbPrecSig =
+"   <W> [1333] 雙精度重要性有問題";
+
+fileIGES.Msg.IGProdIdRec =
+"   <W> [1312] 接收者的產品名稱有問題";
+
+fileIGES.Msg.IGSca =
+"   <W> [1334] 模型空間比例有問題";
+
+fileIGES.Msg.IGUnitFlg =
+"   <W> [1335] 單位有問題";
+
+fileIGES.Msg.IGUnitNam =
+"   <W> [1336] 單位有問題";
+
+fileIGES.Msg.IGMaxLinGrad =
+"   <W> [1337] 最大線配重級數有問題";
+
+fileIGES.Msg.IGMaxLinUnit =
+"   <W> [1338] 最寬線配重級數有問題";
+
+fileIGES.Msg.IGDateGen =
+"   <W> [1339] 交換的日期與時間發生問題";
+
+fileIGES.Msg.IGMinUserRes =
+"   <W> [1340] 使用者宣告的最小解析度有問題";
+
+fileIGES.Msg.IGAppMaxCoord =
+"   <W> [1341] 近似的最大座標值有問題";
+
+fileIGES.Msg.IGNamAut =
+"   <W> [1342] 作者名稱有問題";
+
+fileIGES.Msg.IGAutOrg =
+"   <W> [1343] 作者組織有問題";
+
+fileIGES.Msg.IGVersNum =
+"   <W> [1344] 版期有問題";
+
+fileIGES.Msg.IGDraftStd =
+"   <W> [1345] 繪圖標準碼有問題";
+
+fileIGES.Msg.IGDateMod =
+"   <W> [1346] 檔案建立或修改的日期或時間有問題";
+
+fileIGES.Msg.IGMilSpec =
+"   <W> [1347] 軍規標準有問題";
+
+fileIGES.Msg.defaultParameter =
+"   <W> [1348] 警告 ! 參數為預設數值";
+
+fileIGES.Msg.InvalidParameter =
+"   <W> [1349] 警告 ! 下一個參數數值無效";
+
+fileIGES.Error.IGES =
+"   <W> [1313] 讀取 IGES　檔案 /p1　時發生問題";
+
+fileIGES.Error.IGMissPD =
+"   <W> [1314] IGES 檔案 /p1　缺少 PD 部份";
+
+fileIGESelement.Msg.IGPar =
+"   <W> [1315] PD 部份含有無效的參數行 /p1";
+//erb
+fileIGESelement.Msg.InvalidePD=
+"   <W> [1316] 型式 /p1 的元件 DE:/p2 含有無效或遺失的 PD 部份";
+
+
+fileIGESelement.Msg.InvNurbsConv =  " /p1 轉換至 NURBS 曲面無效";
+
+
+fileIGESelement.Msg.UnavailableMethod = "物件 /p2 的方法 /P1 尚未可用.";
+
+
+fileIGESelement.Msg.ObjCreationKO = "建立物件失敗. 無法建立 /p1 等級物件.";
+
+
+fileIGESelement.Msg.PbInMethod =
+"  <W> [1303] 等級物件 /p2 的方法 /P1 發生問題.";
+
+
+fileIGES.Error.IGWrite = "寫入 IGES 檔案 /p1 發生問題";
+
+
+fileIGESelement.Msg.Knot="/p1 : 未支援 Bspline 曲線的多重 KNOT 向量";
+
+//Example of utilization of this message:
+//The entity DE=1269 of type 104 form 2 is not supported.
+fileIGESelement.Msg.MyForme=" 型式 ";
+
+fileIGESopenElement.Reading.Entity =
+"   <I> [1300] [T=/p2] [/p1] Parser; 讀取的元件 (/p3) <S>";
+
+
+fileIGESopenElement.error.Ptr3DCurve= "元件形式 142 未指向 3D 曲線的 DE";
+
+fileIGESopenElement.Error.Traitement =
+"\n 不支援型式 /P2 的元件 DE=/p1 ";
+
+fileIGESopenElement.Error.dimention2 =
+"\n 告: 檔案含有 2D 幾何.  \n";
+
+
+fileIGEStool.Error.IgsControlChars = "檔案 /p1 不相容 : 讀取時不允許 /p2 特性; 嚐試清理完成 .";
+
+fileIGESopenElement.Warning.Copiousdata=
+"   <W> [1304] !! 因為記憶體不足導致 Copious 資料未轉換";
+
+fileIGEStool.Warning.PtrDE =
+"!! <W> [1305] [T=/p2] [#/p1] 在元件參數資料有無效的指標 (/p3) . 數值強迫為 0 (zero).";
+
+fileIGESopenElement.Warning.EntNonSup =
+"!! <W> [1306] [T=/p2] [#/p1] 此元件型式目前未支援.";
+
+fileIGESopenElement.Warning.FormNonSup =
+"!! <W> [1307] [T=/p2] [#/p1] 元件型式 (/p3) 目前未支援.";
+
+fileIGESopenElement.Error.MidDE =
+"!! <E> [1308] [T=/p2] [#/p1] 參數資料指標未指向元件參數位元的第一筆資料.";
+
+fileIGESopenElement.Warning.ConicBadForm=
+"   <W> [1309] [T=/p2] [#/p1] IGES 檔案內的無效資料 : 此元件型式不正確. 已被更換成型式 0.";
+
+fileIGESelement.Msg.InterruptConversion=
+"   <W> [1310] 已執行轉換中斷鍵 : 停止轉換";
+
+fileIGES.Error.GlobalDataDefault =
+"****************************
+!! <E> [1311] Invalid data: Impossible to read the Global section in the IGES file! Default values are taken into account...
+****************************";
+
+
+//---------------------
+//  Messages from fsb*
+//---------------------
+
+fsb.Msg.GlobaleSection  =
+"\n ***** IGES 檔案資訊 : 總體部份 *****";
+
+fsb.Msg.IdentificationSender =
+"\n 傳送者的產品名稱               : ";
+
+fsb.Msg.FileName =
+"\n 檔案名稱                                        : ";
+
+fsb.Msg.SystemID =
+"\n 系統 I.D.                                     : ";
+
+fsb.Msg.Preprocessor =
+"\n 前處理版本                             : ";
+
+fsb.Msg.NbBinary =
+"\n 整數字元的數目 : ";
+
+fsb.Msg.SingleMagnitude =
+"\n 單向精度大小                       : ";
+
+fsb.Msg.SingleSignifiance =
+"\n 單向精度重要性                    : ";
+
+fsb.Msg.DoubleMagnitude =
+"\n 雙向精度大小                       : ";
+
+fsb.Msg.DoubleSignifiance =
+"\n 雙向精度重要性                    : ";
+
+fsb.Msg.IdentificationReceiver =
+"\n 接送者的產品名稱          : ";
+
+fsb.Msg.SpaceScale =
+"\n 模型空間比例                                : ";
+
+fsb.Msg.Flag =
+"\n 單位旗標                                        : ";
+
+fsb.Msg.Units =
+"\n 單位                                            : ";
+
+fsb.Msg.Gradations =
+"\n 最大線配重級數數目         : ";
+
+fsb.Msg.WidthUnits =
+"\n 最大線配重寬度            : ";
+
+fsb.Msg.DateTimeExchange =
+"\n 檔案交換日期與時間          : ";
+
+fsb.Msg.Resolution =
+"\n 最小使用者解析度                 : ";
+
+fsb.Msg.Coordinate =
+"\n 近似最大座標值             : ";
+
+fsb.Msg.Author =
+"\n 作者名稱                                   : ";
+
+fsb.Msg.Organization =
+"\n 作者組織                            : ";
+
+fsb.Msg.Version =
+"\n 版期號碼                                   : ";
+
+fsb.Msg.Code =
+"\n 繪圖標準碼                           : ";
+
+fsb.Msg.DateTimeModif =
+"\n 模型建立或修改的日期或時間           : ";
+
+fsb.Msg.Specification =
+"\n 軍規 ( 規格 W.E.I.Y.I. )        : ";
+
+fsb.Msg.StartSection =
+"\n\n\n ***** IGES 檔案資訊 : 開始部份  *****\n";
+
+fsb.Msg.Info =
+"沒有資訊";
+
+fsbDataTreatment.Warning.ThereIsInvalidData =
+"\n *****  警告  *****\n   <W> [1000] 檔案內含無效資料 :/p3\n";
+
+fsbDataTreatment.Warning.No3DCrvInLoop =
+"   <W> [1001] 部份循環沒有 3D 曲線 /p3";
+
+fsbDataTreatment.Warning.No2DCrvInLoop =
+"   <W> [1002] 部份循環沒有參數曲線 /p3";
+
+fsbDataTreatement.Processtopo.Storing =
+"   <I> [1003] [T=/p2] [/p1] Parser; 儲存元件 (/p3) <D> 中";
+
+fsbDataTreatement.Processtopo.514Invalid =
+"   <E> [1004] [T=/p2] [/p1] Parser; 無效薄殼 : 使用的修剪面小於 1";
+
+fsbDataTreatement.Processtopo.186Invalid =
+"   <E> [1005] [T=/p2] [/p1] Parser; Manifold Solid B-REP 物件無效 : 無法獲取外部薄殼 DE";
+
+fsbDataTreatment.Warning.3DCrvWithFlag2D =
+"   <W> [1006] [T=/p2] [/p1] 使用旗標 (2D) 的元件無效. 將不會計入 ";
+
+
+//----------------------------------------------
+//  Messages from CATIgesBSplineSurface
+//---------------------------------------------
+
+CATIgesBSplineSurface.Warning.BSplSurfMLK=
+"   <W> [1500] [T=/p2] [/p1] MLK /p3";
+
+CATIgesBSplineSurface.Warning.CopyElemTabError=
+"   <W> [1501] [T=/p2] [/p1] 矩陣定位超過範圍  /p3";
+
+
+
+//-----------------------------------------------
+//  Messages from CATIgesBSplineCurve
+//-----------------------------------------------
+ 
+CATIgesBSplineCurve.Warning.ActiveSplitKO=
+"   <W> [1550] [T=/p2] [/p1] 3d 曲線分割處理 /p3 偵測到例外情形";
+
+CATIgesBSplineCurve.Warning.GetLimitsOnCvKO=
+"   <W> [1551] [T=/p2] [/p1] 參數曲線分割處理 /p3 偵測到例外情形";
+
+
+
+//---------------------------------------------
+//  Messages from CATIgesParametricSplineCurve
+//---------------------------------------------
+
+// Warning : Probleme sur les points de controle de la loop 2D - dfb
+CATIgesParametricSplineCurve.Warning.Bad_ControlPoints2D = 
+"   <W> [1650] [T=/p2] [/p1] 參數雲形線的控制點說明不正確. 使用模型空間 /p4 取代"; 
+
+CATIgesParametricSplineCurve.Error.Bad_Data= 
+"   <W> [1651] [T=/p2] [/p1] 檔案含有無效資料 /p3"; 
+
+//----------------------------------------------
+//  Messages from CATIgesConicArc
+//---------------------------------------------
+
+CATIgesConicArc.Error.IncorrectEllipse=
+"   <W> [1701] 無效或不支援的資料 : 由圓椎弧的形式 /p4 未被偵測成橢圓 /p3";
+
+CATIgesConicArc.Error.IncorrectHyperbola=
+"   <W> [1702] 無效資料 : 圓椎弧的形式 2 未被偵測成雙曲線 /p3";
+
+CATIgesConicArc.Error.IncorrectParabola=
+"   <W> [1703] 無效資料 : 圓椎弧的形式 3 未被偵測成拋物線 /p3";
+
+//--------------------------------------
+//  Messages from CATEIgesShapeFileSelection 
+//--------------------------------------
+
+GlobalFrame.NoLicense=
+"要存取此種檔案, 必須擁有多重 CAD　的軟體授權";
+
+
+//------------------------------------------
+//  Messages from CATIgesExportTypeManager 
+//------------------------------------------
+
+// Info : Import en mode CGR
+CATIgesExportTypeManager.Info.CGRMode=
+"   <I> [1800] 開始在 CGR 模式輸入"; 
+
+
+

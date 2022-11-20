@@ -1,0 +1,98 @@
+// Cree par Denis Hoarau, Février 00
+// Ajout du bouton Triangles :   Juillet 2000 : DHU
+// Ajout du bouton Spline Trap : Fevrier 2001 : DHU
+
+
+//Title="¿ï¾ÜÂI";
+
+SelectAllPushB="¿ï¾Ü¥þ³¡";
+SelectAllPushBLongHelp="¿ï¾Ü©Ò¦³§@°ÊÂI.";
+
+ActivateAllPushB="°_°Ê¥þ³¡";
+ActivateAllPushBLongHelp="°_°Ê¶³§ÎÂIªº¥þ³¡ÂI.";
+
+GlobalFrame.FrmGlobal.InvertPushB.Title="¥æ´«";
+GlobalFrame.FrmGlobal.InvertPushB.LongHelp=
+"¥æ´«§@°Ê©M«D§@°ÊÂI.";
+
+GlobalFrame.FrameSelectAndTrapType.FrmTrapType.Title="®Ø¿ï§Î¦¡";
+GlobalFrame.FrameSelectAndTrapType.FrmTrapType.LongHelp="©w¸q®Ø¿ï§Î¦¡";
+GlobalFrame.FrmGlobal.Title="Á`Åé";
+
+GlobalFrame.FrameSelectAndTrapType.FrmTrapType.RectTrapRadB.Title="¯x§Î";
+GlobalFrame.FrameSelectAndTrapType.FrmTrapType.RectTrapRadB.LongHelp="¹º¤@­Ó¯x§Î³ò°é.";
+
+GlobalFrame.FrameSelectAndTrapType.FrmTrapType.PolyTrapRadB.Title="¦hÃä§Î";
+GlobalFrame.FrameSelectAndTrapType.FrmTrapType.PolyTrapRadB.LongHelp="¹º¤@­Ó¦hÃä§Î³ò°é.";
+
+GlobalFrame.FrameSelectAndTrapType.FrmTrapType.SplineTrapRadB.Title="¶³§Î½u";
+GlobalFrame.FrameSelectAndTrapType.FrmTrapType.SplineTrapRadB.LongHelp="¹º¤@­Ó¶³§Î½u³ò°é.";
+
+GlobalFrame.FrameSelectAndTrapType.FrmSelect.Title="¿ï¾Ü¼Ò¦¡";
+
+GlobalFrame.FrameSelectAndTrapType.FrmSelect.PickRadB.Title="¿ï¨ú";
+GlobalFrame.FrameSelectAndTrapType.FrmSelect.PickRadB.LongHelp="¥H¿ï¾Ü¿ï¨ú¤¸¯À.";
+
+GlobalFrame.FrameSelectAndTrapType.FrmSelect.TrapRadB.Title="³ò°é";
+GlobalFrame.FrameSelectAndTrapType.FrmSelect.TrapRadB.LongHelp="¥H³ò°é¿ï¨ú¤¸¯À.";
+
+GlobalFrame.FrameActivAndLevel.FrmLevel.Title="¼h¯Å";
+
+GlobalFrame.FrameActivAndLevel.FrmLevel.PointRadB.Title="ÂI";
+GlobalFrame.FrameActivAndLevel.FrmLevel.PointRadB.LongHelp="¿ï¾ÜÂI.";
+
+GlobalFrame.FrameActivAndLevel.FrmLevel.TriangRadB.Title="¤T¨¤§Î";
+GlobalFrame.FrameActivAndLevel.FrmLevel.TriangRadB.LongHelp="¿ï¾Ü¤T¨¤§Î";
+
+GlobalFrame.FrameActivAndLevel.FrmLevel.ScanRadB.Title="±½´y©Î®æ½u";
+GlobalFrame.FrameActivAndLevel.FrmLevel.ScanRadB.LongHelp="¿ï¾Ü±½´y©Î®æ½u";
+
+GlobalFrame.FrameActivAndLevel.FrmLevel.DigitRadB.Title="³æ¤¸";
+GlobalFrame.FrameActivAndLevel.FrmLevel.DigitRadB.LongHelp="¿ï¾Ü³æ¤¸";
+
+GlobalFrame.FrameActivAndLevel.FrmLevel.CloudRadB.Title="¶³§ÎÂI";
+GlobalFrame.FrameActivAndLevel.FrmLevel.CloudRadB.LongHelp="¿ï¾Ü¶³§ÎÂI";
+
+
+GlobalFrame.FrameActivAndLevel.FrmActiv.Title="¤w¿ï¹s¥ó";
+
+GlobalFrame.FrameActivAndLevel.FrmActiv.InnerRadB.Title="³ò°é¥~";
+GlobalFrame.FrameActivAndLevel.FrmActiv.InnerRadB.LongHelp=
+"¥u¦³³ò°é¥~ÂI¨ÌµM§@°Ê.";
+
+
+GlobalFrame.FrameActivAndLevel.FrmActiv.OuterRadB.Title="³ò°é¤º";
+GlobalFrame.FrameActivAndLevel.FrmActiv.OuterRadB.LongHelp=
+"¥u¦³³ò°é¤ºÂI¨ÌµM§@°Ê.";
+
+MSG_InitOrNot = "±z­n¦b¶}©lºD©Ê¹ï»ô«e¥ý¹ï»ôºD©Ê¶b¶Ü ?" ;
+MSG_MoveOrCopy = "±z­n«O¯d­ì©l¶³§ÎÂI¶Ü ?" ;
+MSG_ConfirmMove = "±z±µ¨ü©Ò´£Ä³ªº¹ï»ô¶Ü ?" ;
+
+// ce commentaire est volontaire, car pour pouvoir changer le Title du PushButton par
+// SetTitle il ne faut pas que le string "ValidTrapPushB" suivant associé au boutton existe.
+// GlobalFrame.FrameActivAndLevel.ValidTrapPushB.Title="Valid Trap";
+GlobalFrame.FrameActivAndLevel.ValidTrapPushB.LongHelp="¦³®Ä¤Æ¥Ø«e¿ï¾Ü.";
+ValidTrapPushB="¦³®Ä¤Æ³ò°é";
+ValidSurfPushB="¦³®Ä¤Æ´X¦ó¤¸¯À";
+
+GlobalFrame.FrmErase.Title="¿ï¾ÜÅã¥Ü";
+GlobalFrame.FrmErase.LongHelp="Hides or shows the input cloud.";
+
+GlobalFrame.FrmRadius.Title="²y¥b®|";
+GlobalFrame.FrmRadius.LongHelp="Sets the radius of the sphere.";
+
+GlobalFrame.FrmRadius.SpinRadius.Title="²y¥b®|";
+GlobalFrame.FrmRadius.SpinRadius.LongHelp="Sets the radius of the sphere.";
+
+GlobalFrame.FrmRadius.ImposedBut.Title="©ë§ô";
+GlobalFrame.FrmRadius.ImposedBut.LongHelp="Imposes the radius of the sphere.";
+
+//GlobalFrame.OptionFrame.MorePushB.Title=" ¸Ô²Ó >> ";
+GlobalFrame.OptionFrame.MorePushB.LongHelp="Åã¥Ü¿é¥X²Î­p";
+FrameStats.Title = "²Î­p";
+FrameStats.LongHelp = "Åã¥Ü²Î­p";
+MoreString    = " ¸Ô²Ó >> ";
+LessString    = " << °ò¥» ";
+
+

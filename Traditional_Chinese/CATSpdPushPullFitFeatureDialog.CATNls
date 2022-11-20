@@ -1,0 +1,88 @@
+// COPYRIGHT ImpactXoft 2003
+//===================================================================
+
+MainFrameId.ToolFrameId.ToolBodySelectionLabelId.Title = "刀具本體:  ";
+
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.Title = "控制";
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.BlankLabel001Id.Title = "  ";
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.ClearanceFrameId.DistanceLabelId.Title = "間隙: ";
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.OpeningsFrameId.Title = "未封閉";
+
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.Title = "進階";
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.Title = "其它間隙修剪面";
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedDistanceLabelId.Title =      "距離: ";
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedDistanceFacesLabelId.Title = "修剪面:     ";
+
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedDistanceFacesComboId.AdvancedDistanceFacesCtxMenuId.AdvancedDistanceFacesCtxMenuClearAllPushItemId.Title = "清除選擇";
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedApplyDistanceToAllCheckButtonId.Title = "應用距離至所有選擇修剪面";
+
+MainFrameId.PropFrameId.PullProtectedVolumeCheckButtonId.Title = "保護體積";
+
+MainFrameId.WallFrameId.Title = "牆";
+
+MainFrameId.TypeMiscFrameId.PushExtendCheckButtonId.Title = "延伸超過移除修剪面";
+MainFrameId.TypeMiscFrameId.BlankLineLabel002Id.Title = "  ";
+
+NoSelectionId = "未選擇";
+
+PushFeatureId    = "推";
+PullFeatureId    = "拉";
+FittingFeatureId = "配合";
+
+RemovedFacesLabelId = "移除修剪面: ";
+
+//===================================================================
+// Helping picture
+//===================================================================
+ToolBodyTextID = "刀具本體";
+ClearanceTextID = "間隙";
+OpeningTextID = "未封閉";
+//===================================================================
+// LongHelp
+//===================================================================
+
+PushToolBodyLongHelpId =
+"Specifies the pushed volume body.";
+
+PullToolBodyLongHelpId =
+"Specifies the pulled volume body.";
+
+FittingToolBodyLongHelpId =
+"Specifies the fitting volume body.";
+
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.ClearanceFrameId.DistanceLabelId.LongHelp =
+"Specifies the clearance distance (separation
+between tool body and target body) to be
+applied to all faces of the tool body.";
+
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.LongHelp =
+"Parameters for other clearance faces.";
+
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedDistanceLabelId.LongHelp =
+"Specifies the clearance distance for selected face.";
+
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedDistanceFacesLabelId.LongHelp =
+"Specifies faces on tool body which have
+their own clearance distance value set.";
+
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedDistanceFacesComboId.LongHelp =
+"Specifies faces on tool body which have
+their own clearance distance value set.";
+
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedApplyDistanceToAllCheckButtonId.LongHelp =
+"Indicates that the current clearance 
+distance value is to be applied to all
+selected faces.";
+
+MainFrameId.WallFrameId.LongHelp =
+"Wall parameters.";
+
+MainFrameId.PropFrameId.PullProtectedVolumeCheckButtonId.LongHelp =
+"Indicates that the tool body volume is to
+be processed as a protected volume. Non
+protected Pull features can have a Grill
+feature applied.";
+
+MainFrameId.TypeMiscFrameId.PushExtendCheckButtonId.LongHelp =
+"Indicates that pushed volume will be extended
+across any intersections with removed faces.";

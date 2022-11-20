@@ -1,0 +1,138 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//===========================================================================
+//
+// CATRscOptionsDisplayPropertyFrame
+//
+//===========================================================================
+
+//--------------------------------------
+// Light options
+//--------------------------------------
+lightFrame.HeaderFrame.Global.Title = "啟動光源";
+
+lightFrame.IconAndOptionsFrame.OptionsFrame.activeLightDisplayRadio1.Title = "顯示線架構";
+lightFrame.IconAndOptionsFrame.OptionsFrame.activeLightDisplayRadio1.Help = "開啟啟動光源的線架構顯示";
+lightFrame.IconAndOptionsFrame.OptionsFrame.activeLightDisplayRadio1.ShortHelp = "顯示線架構";
+lightFrame.IconAndOptionsFrame.OptionsFrame.activeLightDisplayRadio1.LongHelp =
+"開啟啟動光源的線架構顯示";
+
+lightFrame.IconAndOptionsFrame.OptionsFrame.activeLightDisplayRadio2.Title = "著色顯示";
+lightFrame.IconAndOptionsFrame.OptionsFrame.activeLightDisplayRadio2.Help = "開啟啟動光源的著色顯示";
+lightFrame.IconAndOptionsFrame.OptionsFrame.activeLightDisplayRadio2.ShortHelp = "著色顯示";
+lightFrame.IconAndOptionsFrame.OptionsFrame.activeLightDisplayRadio2.LongHelp =
+"開啟啟動光源的著色顯示";
+
+lightFrame2.HeaderFrame.Global.Title = "關閉光源";
+
+lightFrame2.IconAndOptionsFrame.OptionsFrame.inactiveLightDisplayRadio1.Title = "不顯示";
+lightFrame2.IconAndOptionsFrame.OptionsFrame.inactiveLightDisplayRadio1.Help = "關閉不顯示光源顯示";
+lightFrame2.IconAndOptionsFrame.OptionsFrame.inactiveLightDisplayRadio1.ShortHelp = "關閉顯示";
+lightFrame2.IconAndOptionsFrame.OptionsFrame.inactiveLightDisplayRadio1.LongHelp =
+"未啟動光源不顯示.";
+
+lightFrame2.IconAndOptionsFrame.OptionsFrame.inactiveLightDisplayRadio2.Title = "完整顯示";
+lightFrame2.IconAndOptionsFrame.OptionsFrame.inactiveLightDisplayRadio2.Help = "開啟不顯示光源顯示";
+lightFrame2.IconAndOptionsFrame.OptionsFrame.inactiveLightDisplayRadio2.ShortHelp = "開啟顯示";
+lightFrame2.IconAndOptionsFrame.OptionsFrame.inactiveLightDisplayRadio2.LongHelp =
+"顯示未啟動光源.";
+
+//--------------------------------------
+// Environment options
+//--------------------------------------
+environmentFrame.HeaderFrame.Global.Title = "不起作用的環境";
+
+environmentFrame.IconAndOptionsFrame.OptionsFrame.environmentDisplayRadio1.Title = "沒有顯示";
+environmentFrame.IconAndOptionsFrame.OptionsFrame.environmentDisplayRadio1.Help = "關閉不起作用環境的顯示";
+environmentFrame.IconAndOptionsFrame.OptionsFrame.environmentDisplayRadio1.ShortHelp = "關閉顯示";
+environmentFrame.IconAndOptionsFrame.OptionsFrame.environmentDisplayRadio1.LongHelp =
+"不起作用環境沒有顯示.";
+
+environmentFrame.IconAndOptionsFrame.OptionsFrame.environmentDisplayRadio2.Title = "簡化顯示";
+environmentFrame.IconAndOptionsFrame.OptionsFrame.environmentDisplayRadio2.Help = "設定不起作用環境的簡化顯示";
+environmentFrame.IconAndOptionsFrame.OptionsFrame.environmentDisplayRadio2.ShortHelp = "簡化顯示";
+environmentFrame.IconAndOptionsFrame.OptionsFrame.environmentDisplayRadio2.LongHelp =
+"不起作用環境是用簡化的陳述顯示的.";
+
+environmentFrame.IconAndOptionsFrame.OptionsFrame.environmentDisplayRadio3.Title = "全部顯示";
+environmentFrame.IconAndOptionsFrame.OptionsFrame.environmentDisplayRadio3.Help = "打開不起作用環境的顯示";
+environmentFrame.IconAndOptionsFrame.OptionsFrame.environmentDisplayRadio3.ShortHelp = "打開顯示";
+environmentFrame.IconAndOptionsFrame.OptionsFrame.environmentDisplayRadio3.LongHelp =
+"顯示不起作用的環境.";
+
+//--------------------------------------
+// Light manip options
+//--------------------------------------
+manipFrame.HeaderFrame.Global.Title = "光線調整";
+
+manipFrame.IconAndOptionsFrame.OptionsFrame.manipCheck.Title = "顯示垂直";
+manipFrame.IconAndOptionsFrame.OptionsFrame.manipCheck.Help = "定位光線時顯示曲面垂直";
+manipFrame.IconAndOptionsFrame.OptionsFrame.manipCheck.ShortHelp = "顯示曲面垂直";
+manipFrame.IconAndOptionsFrame.OptionsFrame.manipCheck.LongHelp =
+"定位光線時顯示曲面垂直";
+
+//--------------------------------------
+// Environment reflections options
+//--------------------------------------
+reflectionFrame.HeaderFrame.Global.Title = "環境反射";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionModeCheck.Title = "啟動";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionModeCheck.Help = "啟動環境反射";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionModeCheck.ShortHelp = "啟動環境反射";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionModeCheck.LongHelp =
+"從作動環境上的反射物件起動反射";
+
+Lowest = "最低 (128 x 128 圖素)";
+Low = "低 (256 x 256 圖素)";
+Medium = "中等 (512 x 512 圖素)";
+High = "高 (1024 x 1024 圖素)";
+Highest = "最高 (2048 x 2048 圖素)";
+
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionStaticSizeLabel.Title = "品質: ";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionStaticSizeLabel.Help = "反射品質";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionStaticSizeLabel.ShortHelp = "反射品質";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionStaticSizeLabel.LongHelp =
+"視點不移動時的反射品質.";
+
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionStaticSizeCombo.Help = "反射品質";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionStaticSizeCombo.ShortHelp = "反射品質";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionStaticSizeCombo.LongHelp =
+"視點不移動時的反射品質.";
+
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionDynamicModeCheck.Title = "視點修改時更新反射";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionDynamicModeCheck.Help = "啟動動態反射更新";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionDynamicModeCheck.ShortHelp = "啟動動態反射更新";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionDynamicModeCheck.LongHelp =
+"視點修改時啟動動態反射更新.";
+
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionDynamicSizeLabel.Title = "移動時品質: ";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionDynamicSizeLabel.Help = "移動視點時反射品質";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionDynamicSizeLabel.ShortHelp = "移動視點時反射品質";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionDynamicSizeLabel.LongHelp =
+"移動視點時反射品質";
+
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionDynamicSizeCombo.Help = "移動視點時反射品質";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionDynamicSizeCombo.ShortHelp = "移動視點時反射品質";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionDynamicSizeCombo.LongHelp =
+"移動視點時反射品質";
+
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionAngleLabel.Title = "更新門檻 : ";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionAngleLabel.Help = "反射更新門檻 : ";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionAngleLabel.ShortHelp = "反射更新門檻 : ";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionAngleLabel.LongHelp =
+"視點旋轉超過門檻時更新反射.";
+
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionAngleSpinner.Help = "反射更新門檻 ";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionAngleSpinner.ShortHelp = "反射更新門檻 ";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionAngleSpinner.LongHelp =
+"視點旋轉超過門檻時更新反射.";
+
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionPassesLabel.Title = "計算次數: ";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionPassesLabel.Help = "反射計算次數";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionPassesLabel.ShortHelp = "反射計算次數";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionPassesLabel.LongHelp =
+"指定反射計算中斷次數.";
+
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionPassesSpinner.Help = "反射計算次數";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionPassesSpinner.ShortHelp = "反射計算次數";
+reflectionFrame.IconAndOptionsFrame.OptionsFrame.reflectionPassesSpinner.LongHelp =
+"指定反射計算中斷次數.";
+

@@ -1,0 +1,116 @@
+//  Messages for CATIA V5 Compatibility
+//   MODULE :  CATDucxxx
+//   US Version
+//=====================================================================
+Title="CATIA V5 轉換批次作業";
+BatchMonitor.Title="資料生命周期管理";
+// User Interfaces resources ==========================================
+// Selected documents =================================================
+CATDuc.LblSelectedDoc.Title="已選文件";
+CATDuc.BtnSelectedDocDirectory.Title="...";
+CATDuc.ListSelFiles.Name="名稱";
+CATDuc.BtnRemoveDoc.Title="移除";
+CATDuc.BtnRemoveDoc.Help="由清單中移除所選文件";
+CATDuc.BtnReplaceDoc.Title="更換";
+CATDuc.BtnReplaceDoc.Help="在指定儲存處更換已存文件";
+CATDuc.BtnMML.Title="指向文件";
+CATDuc.BtnMML.Help="選擇指向文件";
+CATDuc.LblDocTyp.Title="文件位置";
+CATDuc.BtnDocOption.Help="文件選擇選項";
+CATDuc.BrowseDirBox.Title="瀏覽目錄盒";
+
+CATDuc.BTNOpenHtmlResult.Title="開啟 html 報告";
+
+// Cherckers selection ================================================
+CATDuc.LblCheckerList.Title="已選動作";
+CATDuc.ComboDomain.Title="區域";
+CATDuc.AllDomain.Title="所有區域";
+CATDuc.CheckerList.Title="檢查者";
+CATDuc.CheckerList.Name="名稱";
+CATDuc.CheckerList.Abstract="萃取";
+CATDuc.Frame.Output.Title="輸出";
+
+CATDuc.LblTargetDirectory.Title="目的地目錄";
+CATDuc.BtnTargetDirectory.Title="...";
+
+// VB Macro Selection =================================================
+CATDuc.BtnMacroDirectory.Title="...";
+CATDuc.LblMacroFile.Title="VB 巨集";
+MacroSelectionKo1="檔案 \"/p1\" 不是一個 VB 巨集
+中止選擇";
+// XML File ===========================================================
+XmlFileSelectionKo1="檔案 \"/p1\" 不是一個 XML 檔案
+中止選擇";
+CATDuc.LblReadXmlFile.Title="由參數檔案讀取輸入中...";
+CATDuc.BtnReadXmlFile.Title="...";
+CATDuc.BoxReadXmlFile="讀取輸入參數 檔案盒";
+CATDuc.LblSaveXmlFile.Title="儲存輸入至參數檔案中...";
+CATDuc.BtnSaveXmlFile.Title="...";
+CATDuc.BoxSaveXmlFile="儲存成輸入參數 檔案盒";
+
+CATDuc.BtnExecute.Title="執行";
+CATDuc.BtnClose.Title="關閉";
+
+
+
+CATDuc.LblUpdate.Title="更新模式";
+Combo.Action.ForceUpdate="強制更新";
+Combo.Action.StepByStep="一步一步";
+
+CATDuc.LblProgressBar.Title="未啟動";
+CATDuc.LBLMainReport.Title="報告名稱";
+CATDuc.LBLAddDocReport.Title="附加字串至文件報告";
+//=====================================================================
+// Errors messages 
+//=====================================================================
+InvalidParameter.Information="您必須更改無效參數並重新執行動作.";
+Error.Title="錯誤";
+Warning.Title="警告";
+ErrorDummy="內部錯誤 - 返回碼=";
+Error.ClashRptName="總體報告名稱和文件報告名稱不可一樣";
+Error.IllegalRptName="空白和下列字元不可應用在報告名稱內 \n\ / : * ? \" < > |";
+Warning.NoValidDocExtension="下列文件不支援所需動作, 且不會被執行:\n";
+Warning.ClickOk.Ignore="按一下 確認 來取消選擇 \n";
+Warning.ClickCancel.Abort="按一下 取消 來取消動作 \n";
+//=====================================================================
+// Report messages
+//=====================================================================
+ReportBatchAborted1="批次中止 - 返回碼=";
+ReportBatchAborted2="未執行文件";
+ReportBatchPartial="批次作業執行部份 - 返回碼=";
+ReportBatchSuccess="成功執行批次作業 - 返回碼=";
+ReportBegin="報告";
+ReportDocumentTitle="處理的文件";
+ReportDocumentKO="未處理的文件";
+ReportDocumentOK="成功被處理的文件";
+ReportEnd="報告結束";
+ReportBatchReturnCode="返回碼=/p1";
+
+Report.Action="更新模式 /p1" ;	  
+ReportAction.Unknown="警告 : 動作 \"/p1\" 未知,
+\t  支持的動作為 :" ;	  
+Report.Action.Undef="錯誤             : 未定義動作
+\t  需要宣告 <強制更新> 或 <一步一步>";
+Report.DocTyp="文件位置 /p1 ";	  
+Report.MacroVB="已選的巨集 VB /p1";	  
+Report.TargetDirectory="目的地目錄  /p1";	  
+Report.SaveXmlFile="輸入資料儲存在 /p1";	  
+Report.ReplaceMode="更換模式 /p1";	  
+Report.NotFound="位置中未找到報告";
+Ready="備便";
+Ended="結束";
+OnProgress="進行中";
+Process="進行";
+ExecuteChecker="執行檢查者:";
+
+WNG.BatchV4ToV5Limit="在 /p1 位置無法執行 V4toV5 批次作業"; 
+
+//=====================================================================
+// Report messages
+//=====================================================================
+
+HelpMsg="用法: 
+    CATDuc -xml xml_path.xml  -report reportFile.txt
+
+       -xml	 : XML 檔案的路徑 (必要參數)
+       -report   : 報告檔案名稱     (參數選項) "; 

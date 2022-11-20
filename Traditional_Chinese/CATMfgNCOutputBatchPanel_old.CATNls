@@ -1,0 +1,315 @@
+NCOutputBatch = "以批次模式產生 NC 輸出";
+
+NCOutputInteractive = "交互式產生 NC 輸出";
+
+InOut = "輸入和輸出";
+
+Options = "選項";
+
+ISO = "NC 碼";
+
+CGR = "在處理模型 (CGR)";	 
+
+Cloud = "在處理模型 (Cloud)";
+
+Yes = "是";
+
+No  = "否";
+
+Syntax = "使用語法:";
+
+Input = "要處理的加工程式";
+
+Selection = "選擇";
+
+Programs = "程式";
+
+PartOperation = "零件工法";
+
+CurrentDocument = "目前文件";
+
+ProcessingLevel = "零件工法處理中";
+
+SplitFile = "以工法分割檔案";
+
+DocumentName = "文件";
+
+ProgramName = "程式:";
+
+NCDataOutput = "結果 NC 資料";
+
+OutputType = "NC 資料型式:";
+
+OutputName = "輸出檔案";
+
+ReplaceFile = "更換相似名稱檔案";
+
+OutputDocument = "處理後的文件 (選項)";
+
+WriteDocument = "儲存文件";
+
+OutputDocumentName = "文件";
+
+ReplaceDocument = "更換相似名稱文件";
+
+AssociateDocument = "相關文件";
+
+LockedMOs = "鎖定工法";
+
+Execute = "執行";
+
+NCDataOutputOptions = "NC 資料選項";
+
+CircularType = "圓弧內插:";
+
+MaxMinRadius = "圓弧半徑限制:";
+
+RadiusValue = "數值";
+
+MaxRadius = "最大半徑:";
+
+MinRadius = "最小半徑:";
+
+RecordType = "圓弧記錄型式:";
+
+ToolMotion = "刀具動作說明:";
+
+Auto = "自動";
+
+AutomaticValue = "自動數值";
+
+Value = "數值";
+
+None = "無";
+
+ZAxis = "Z-軸 圓弧";
+
+AnyAxis = "任意軸圓弧";
+
+Point = "點";
+
+Axis = "軸";
+
+Info = "資料說明:";
+
+Rapid = "快速進給:";
+
+RapidValue = "快速進給值:";
+
+RemoveMotionToolChange = "GOTO 刀具更換:";
+
+CopyTracutProcessing = "複製或移動刀具路徑:";
+
+StartFeedrateType = "每個步序皆以快速定位:";
+
+StoreAstheSame = "儲存在與 CATProcess 相同位置";
+
+Onefile = "單一檔案...";
+
+ForAll = "以全部";
+
+ByPgrm = "以程式";
+
+ByMO = "以工法";
+
+HomePoint = "Home 點方式:";
+NoHomePoint = "無";
+YesHomePoint = "自動";
+
+NotSpecified = "未指定";
+
+// Options
+
+NCBatch.Options.LongHelp = "Specifies the options to be used for processing the selected program.
+If Automatic options are selected, the values specified 
+in the part operation's machine will be used.";
+
+
+NCBatch.Options.NCDataOutputOptions.CircularType.LongHelp = "Specifies the type of circles to be processed if circular interpolation is required.";
+
+NCBatch.Options.NCDataOutputOptions.CmbCir.LongHelp = "Specifies the type of circles to be processed if circular interpolation is required:
+ - Automatic: uses the values specified by the part operation's machine
+ - None: circular interpolation is not required
+ - Z-axis circle: only circles whose axis is parallel to the z-axis of the machining axis system are processed
+ - Any axis circle: all circle types are processed.";
+
+NCBatch.Options.NCDataOutputOptions.MaxMinRadius.LongHelp = "Specifies how circles are to be processed for circular interpolation:
+ - Automatic: uses the values specified by the part operation's machine
+ - Value: uses user-defined values.";
+NCBatch.Options.NCDataOutputOptions.CmbRad.LongHelp = "Specifies how circles are to be processed for circular interpolation:
+ - Automatic: uses the values specified by the part operation's machine
+ - Value: uses user-defined values.";
+
+NCBatch.Options.NCDataOutputOptions.MinRadius.LongHelp = "Specifies the value to be used for the minimum radius constraint for circular interpolation.
+If the Automatic option is selected, the minimum radius value of the part operation's machine is used.";
+
+NCBatch.Options.NCDataOutputOptions.MinRadiusValue.LongHelp = "Specifies the value to be used for the minimum radius constraint for circular interpolation.
+If the Automatic option is selected, the minimum radius value of the part operation's machine is used.";
+
+NCBatch.Options.NCDataOutputOptions.MaxRadius.LongHelp = "Specifies the value to be used for the maximum radius constraint for circular interpolation.
+If the Automatic option was selected, the maximum radius value of the part operation's machine is used.";
+
+NCBatch.Options.NCDataOutputOptions.MaxRadiusValue.LongHelp = "Specifies the value to be used for the maximum radius constraint for circular interpolation.
+If the Automatic option was selected, the maximum radius value of the part operation's machine is used.";
+
+NCBatch.Options.NCDataOutputOptions.RecordType.LongHelp = "Specifies the type of record to be generated on the clfile if circular interpolation is requested:
+ - 3000 and 5000
+ - 15000.";
+NCBatch.Options.NCDataOutputOptions.CmbRec.LongHelp = "Specifies the type of record to be generated on the clfile if circular interpolation is requested:
+ - 3000 and 5000
+ - 15000.";
+
+NCBatch.Options.NCDataOutputOptions.ToolMotion.LongHelp = "Defines the format describing tool motion statements on the NC data output:";
+
+NCBatch.Options.NCDataOutputOptions.CmbMotion.LongHelp = "Defines the format describing tool motion statements on the NC data output:
+ - Automatic: the output format defined the part operation's machine is used.
+ - Point: tool point coordinates (x,y,z) are output. 
+   A TLAXIS statement is given at the start of the generated APT source.
+   A fixed-axis clfile record 9000 is given at the start of the generated clfile.
+ - Axis: tool point coordinates and tool axis components (x,y,z,i,j,k) are output.
+   A MULTAX statement is given at the start of the generated APT source.
+   A MULTAX clfile record 9000 is given at the start of the generated clfile.";
+
+
+NCBatch.Options.NCDataOutputOptions.CmbInfo.LongHelp = "Defines how information such as tool names and operation sequence numbers will be generated.
+ - PPRINT: generated with the PPRINT word
+ - None: not generated
+ - $$: generated as a comment (available for APT only).";
+
+NCBatch.Options.NCDataOutputOptions.Info.LongHelp = "Defines how information such as tool names and operation sequence numbers will be generated.";
+
+NCBatch.Options.NCDataOutputOptions.Rapid.LongHelp = "Defines the formatting of the rapid motions.";
+
+NCBatch.Options.NCDataOutputOptions.CmbRapid.LongHelp = "Defines the formatting of the rapid motions.
+If Automatic value is chosen, the rapid motions will be preceded by a FEEDRATE syntax whose value is that specified on the machine, if not they will be preceded by a RAPID syntax.";
+
+NCBatch.Options.NCDataOutputOptions.RapidValue.LongHelp = "Defines the feedrate value in RAPID mode.";
+
+NCBatch.Options.NCDataOutputOptions.StFeedrateTypeLbl.LongHelp = "Specifies RAPID mode at start of operations if no Clearance macro is defined.";
+
+NCBatch.Options.NCDataOutputOptions.StFeedrateTypeCmb.LongHelp = "Specifies RAPID mode at start of operations if no Clearance macro is defined.";
+
+NCBatch.Options.NCDataOutputOptions.SyntaxUsedLbl.LongHelp = "Defines for axial machining operations whether the CYCLE/ syntax is to be generated. Otherwise, the GOTO/ syntax is obatained in the NC data output.";
+
+NCBatch.Options.NCDataOutputOptions.SyntaxUsedCmb.LongHelp = "Defines for axial machining operations whether the CYCLE/ syntax is to be generated. Otherwise, the GOTO/ syntax is obtained in the NC data output.";
+
+NCBatch.Options.NCDataOutputOptions.RmMotionToolChLbl.LongHelp = "Specifies GOTO/ syntax for each tool change.";
+
+NCBatch.Options.NCDataOutputOptions.RmMotionToolChCmb.LongHelp = "Specifies GOTO/ syntax for each tool change.";
+
+NCBatch.Options.NCDataOutputOptions.HomePointLbl.LongHelp = "Defines whether or not Home Point strategy information is to be included in the APT source. 
+	- None: no Home Point strategy information is output.
+	- Automatic: GOTO or FROM information defined on the part operation's machine is output.";
+
+NCBatch.Options.NCDataOutputOptions.HomePointLblCmb.LongHelp = "Defines whether or not Home Point strategy information is to be included in the APT source. 
+	- None: no Home Point strategy information is output.
+	- Automatic: GOTO or FROM information defined on the part operation's machine is output.";
+
+NCBatch.Options.NCDataOutputOptions.CopyTracutLbl.LongHelp = "Specifies wether Copy or Tracut instructions should be processed.
+ - YES : Copy and/or tracut instructions will be processed.
+         In this case there will be no Copy or Tracut statement in the generated APT source.
+ - NO  : Copy and/or tracut instructions will not be processed.
+         In this case there will be Copy or Tracut statement in the generated APT source.";
+
+NCBatch.Options.NCDataOutputOptions.CopyTracutCmb.LongHelp = "Specifies wether Copy or Tracut instructions should be processed.
+ - YES : Copy and/or tracut instructions will be processed.
+         In this case there will be no Copy or Tracut statement in the generated APT source.
+ - NO  : Copy and/or tracut instructions will not be processed.
+         In this case there will be Copy or Tracut statement in the generated APT source.";
+
+// Input 
+
+NCBatch.InOut.Input.LongHelp = "Specifies the manufacturing program to process.";
+
+NCBatch.InOut.Input.CATProcess.LongHelp = "Defines the CATProcess used.";
+NCBatch.InOut.Input.ProcessName.LongHelp = "Defines the CATProcess used.";
+
+NCBatch.InOut.Input.DocumentNameEdt.LongHelp = "Displays the list of available documents
+that can be selected as input document.";
+NCBatch.InOut.Input.DocumentName.LongHelp = "Displays the list of available documents
+that can be selected as input document.";
+
+NCBatch.InOut.Input.Selection.LongHelp = "Defines the selection mode of the input.";
+NCBatch.InOut.Input.Programs.LongHelp = "Defines the selection mode of the input.";
+NCBatch.InOut.Input.PartOperation.LongHelp = "Defines the selection mode of the input.";
+
+NCBatch.InOut.Input.ProgramName.LongHelp = "Displays the list of available programs in the selected document.";
+NCBatch.InOut.Input.CmbPgm.LongHelp = "Displays the list of available programs in the selected document.";
+
+// NC data output
+
+NCBatch.InOut.NCDataOutput.LongHelp = "Allows you to select the NC data format 
+and where you want to save it";
+
+NCBatch.InOut.NCDataOutput.OutputType.LongHelp = "Allows you to select the desired type of NC data output:
+APT source or clfile.";
+NCBatch.InOut.NCDataOutput.CmbTyp.LongHelp = "Allows you to select the desired type of NC data output:
+APT source or clfile.";
+
+NCBatch.InOut.NCDataOutput.OutputNameEdt.LongHelp = "Specifies where you want to write the NC file.";
+NCBatch.InOut.NCDataOutput.OutputName.LongHelp = "Specifies where you want to write the NC data file.";
+
+NCBatch.InOut.NCDataOutput.ReplaceFile.LongHelp = "Authorizes replacing a like-named NC data file.";
+NCBatch.InOut.NCDataOutput.StoreAstheSame.LongHelp = "Store at the same location as the CATProcess";
+
+NCBatch.InOut.NCDataOutput.Onefile.LongHelp = "Defines the granularity of the output files .";
+NCBatch.InOut.NCDataOutput.ForAll.LongHelp = "Defines the granularity of the output files .";
+NCBatch.InOut.NCDataOutput.ByPgrm.LongHelp = "Defines the granularity of the output files .";
+NCBatch.InOut.NCDataOutput.ByMO.LongHelp = "Defines the granularity of the output files .";
+
+// Doc output
+
+NCBatch.InOut.OutputDocument.LongHelp = "Allows you to save the document after processing.";
+
+NCBatch.InOut.OutputDocument.WriteDocument.LongHelp = "Authorizes saving the document after processing.";
+
+NCBatch.InOut.OutputDocument.OutputDocumentName.LongHelp = "If you want to save the document after processing,
+specifies where you want to write the document.";
+NCBatch.InOut.OutputDocument.OutputDocumentNameEdt.LongHelp = "If you want to save the document after processing,
+specifies where you want to write the document.";
+
+NCBatch.InOut.OutputDocument.ReplaceDocument.LongHelp = "Authorizes replacing a like-named document.";
+
+NCBatch.InOut.OutputDocument.AssociateDocument.LongHelp = "Associates the NC ouput file with the CATProcess.";
+NCBatch.InOut.OutputDocument.LockedMOs.LongHelp = "Locks the machining operations of the CATProcess after processing.";
+
+// Execute
+
+Execute.LongHelp = "Runs the batch program for generating NC data in the selected format.";
+
+
+// ISO 
+
+NCBatch.ISO.PPPARLabel.LongHelp = " Selection of the post-processor file.";
+NCBatch.ISO.PPPARLabel.Help = " Selection of the post-processor file.";
+NCBatch.ISO.PPPARLabel.ShortHelp = " Selection of the post-processor file.";
+NCBatch.ISO.PPPARLabel.Title   = " Cenit Post-processor file ";
+
+NCBatch.ISO.IMSPARLabel.LongHelp = " Selection of the post-processor file.";
+NCBatch.ISO.IMSPARLabel.Help = " Selection of the post-processor file.";
+NCBatch.ISO.IMSPARLabel.ShortHelp = " Selection of the post-processor file.";
+NCBatch.ISO.IMSPARLabel.Title   = " IMS Post-processor file ";
+
+NCBatch.ISO.OtherPPLabel.LongHelp = " Selection of the post-processor file.";
+NCBatch.ISO.OtherPPLabel.Help = " Selection of the post-processor file.";
+NCBatch.ISO.OtherPPLabel.ShortHelp = " Selection of the post-processor file.";
+NCBatch.ISO.OtherPPLabel.Title   = " Post-processor file ";
+
+NCBatch.ISO.ICAMPARLabel.LongHelp = " Selection of the post-processor file.";
+NCBatch.ISO.ICAMPARLabel.Help = " Selection of the post-processor file.";
+NCBatch.ISO.ICAMPARLabel.ShortHelp = " Selection of the post-processor file.";
+NCBatch.ISO.ICAMPARLabel.Title   = " ICAM Post-processor file ";
+
+
+// No PP selected 
+
+NCBatch.ISO.NonePARLabel.LongHelp = "No Post-processor selected.
+Use Tools > Options > NC Manufacturing > Output to select one.";
+NCBatch.ISO.NonePARLabel.Help = "No Post-processor selected.
+Use Tools > Options > NC Manufacturing > Output to select one.";
+NCBatch.ISO.NonePARLabel.ShortHelp = "No Post-processor selected.
+Use Tools > Options > NC Manufacturing > Output to select one.";
+NCBatch.ISO.NonePARLabel.Title   = "Use Tools>Options>NC Manufacturing>Output to select a PP.";
+
+
+

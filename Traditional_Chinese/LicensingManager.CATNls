@@ -1,0 +1,92 @@
+Popup.AdmTitle = "管理模式" ;
+Popup.AdminModeOK = "執行管理模式" ;
+Popup.AdminModeKO =
+"管理模式需求失敗.
+CATReferenceSettingPath = /P01
+請檢查環境中 CATReferenceSettingPath 的變數設定
+和目錄存取權." ;
+// CXR3
+Popup.Title = " 軟體使用權管理" ;
+// CXR3
+// CXR4
+Popup.Title4 = " 軟體使用權管理" ;
+Popup.RSPNotDefined =
+"管理模式需求失敗
+
+
+CATReferenceSettingPath 的變數在環境 (/P01) 中未設定
+
+請在環境中設定 CATReferenceSettingPath 變數.";
+Popup.RSPBadConcatenationAsAdmin   = 
+"管理模式需求失敗
+
+
+CATReferenceSettingPath 的變數在環境中設定不正確.
+            環境 = /P01
+CATReferenceSettingPath = /P02
+最後目錄不具備寫入權限.
+
+請檢查環境中的 CATReferenceSettingPath 參數設定.";
+Popup.RSPBadConcatenation          =
+CATReferenceSettingPath 的變數在環境中設定不正確.
+            環境 = /P01
+CATReferenceSettingPath = /P02
+最後目錄不具備讀取權限.
+
+請檢查環境中的 CATReferenceSettingPath 參數設定.";
+Popup.USPBadDirectory              =
+"CATUserSettingPath 的變數在環境中設定不正確..
+       環境  = /P01
+CATUserSettingPath = /P02
+目錄不具備寫入權限.
+
+請檢查環境中的 CATUserSettingPath 參數設定.";
+// CXR4
+Popup.EnvironnementNotSet =
+"環境  /P01 未設定或不正確.
+
+請用 setcatenv 命令來設定環境." ;
+Popup.EnvironmentBad =
+"環境 /P01 不正確.
+
+請用 setcatenv 命令來設定可用環境." ;
+Popup.NoProduct =
+"沒有軟體組合或產品使用權可用.
+
+CATIA 環境變數 CATICPath 所需顯示的軟體組合或
+產品使用權路徑設定不正確或不完全.
+
+請用 setcatenv 命令來設定可用環境,
+或連絡您的系統管理員." ;
+Popup.NoProductRequested =
+"您未要求軟體組合或產品使用權.
+
+請按一下 確定 或使用軟體管理對話框來
+至少選一組軟體使用權." ;
+Popup.NoConfigRequested =
+"您已選了一個或一組軟體使用權
+但未組合軟體使用權.
+
+請按一下 確定 或使用軟體管理對話框來
+至少選一組軟體使用權." ;
+Popup.NoConfigAvailable =
+"沒有需求的軟體使用權可用.
+
+請按一下 確定 或使用軟體管理對話框來
+至少選一組軟體使用權." ;
+Popup.NotAllLicenseAvailable = 
+"不是所有需求的軟體可使用
+
+請連絡您的系統管理員." ;
+Popup.DemoModeKO = "展示模式不可用" ;
+Popup.DemoModeOK = "執行展示模式" ;
+Popup.SetupForNextStart = "下次執行時修改才會納入";
+
+Popup.UserSettingsTitle = "使用者設定" ;
+Popup.UserSettingsKO = 
+"無法寫入使用者設定.
+CATUserSettingPath = /P01 
+請檢查環境中的 CATUserSettingPath 參數設定
+和目錄存取權." ;
+
+ResetButton.Title = "重設" ;

@@ -1,0 +1,44 @@
+//=============================================================================
+//                                     CNEXT - CXR9
+//                          COPYRIGHT DASSAULT SYSTEMES 2002 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATMessageForViewUpdate
+// LOCATION    :    DraftingGenModeler/CNext/resources/msgcatalog
+// AUTHOR      :    cna
+// DATE        :    fevrier 2002
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :    Il s'agit de la definition des messages courts figurant
+//                  dans la progress barre d'update de vue.
+//------------------------------------------------------------------------------
+//MODIFICATIONS     user  date      purpose
+//   HISTORY        ----  ----      -------
+//     01           cna   14/02/02  creation
+//     02           emk   16/10/03  ajout des messages d'erreurs pouvant survenir durant l'update des vues
+//------------------------------------------------------------------------------
+
+Geo3D="步驟 1/5";
+PrePro="步驟 2/5";
+HLR="步驟 3/5";
+PostPro="步驟 4/5";
+Dressup="步驟 5/5";
+
+ViewName = "視圖: ";
+SheetName = "圖紙: ";
+Message = "說明: ";
+
+UnspecifiedViewError = "產生視圖失敗.";
+BooleanPartViewError = "零件 '/p1' 的 '/p2' 本體相交計算失敗";
+BooleanModelViewError = "模型 '/p1' 相交計算失敗";
+BooleanSectionCutViewError = "零件 '/p1' 的 '/p2' 本體切面計算失敗";
+RasterViewError = "此視圖在 raster 模式, 圖像大小 (/p1 x /p2) 超過記憶體容量. \n 請嚐試減小視圖大小 或視圖性質的詳細等級.";
+RasterBuildImageViewError = "圖像無法建立. \n 請嚐試減小視圖大小 或視圖性質的詳細等級.";
+QuickDetailViewError = "無法產生快速細部視圖.";
+NoGeometryViewError = "視圖未含任何幾何元素.";
+BrokenViewError = "無法產生中斷視圖.";
+MemoryViewError = "記憶體定位失敗. \n 處理的資料超過或產生的視圖超過記憶體限制. \n 您必須儲存後再重新啟動 CATIA.";
+AIXApproximateViewError = "近似視圖產生模式無法使用在 AIX 系統上.";
+BreakoutApproximateError = "至少有一項打斷元件與近似視圖不合. \n 在近似視圖, 打斷方向必須平行視圖垂直平面且為相反方向. \n 移除此中斷來產生視圖.";
+BreakoutSectionApproximateError = "至少有一項打斷元件與近似切面視圖不合.\n 在近似視圖, 打斷後平面必須在遠端切面之後. \n 移除此中斷來產生視圖.";

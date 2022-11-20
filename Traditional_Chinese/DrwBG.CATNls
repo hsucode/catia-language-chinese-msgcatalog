@@ -1,0 +1,179 @@
+//=====================================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1998 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    DrwBG
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    Workbench Drafting Background
+// DATE        :    17.11.1998
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//      00           fgx   ??.05.98    Creation
+//      01           fgx   23.11.98    Nouvelle version CXR2
+//      02           fgx   10.12.98    Changement de nom des toolbars background pour les records
+//      03           fgx   26.02.99    Ajout tb de style
+//      04           fgx   29.03.99    Nouvelles commandes sketcher
+//      05           fgx   04.08.99    Nouveaux workbenches
+//      06           fgx   17.11.99    Ajout des tb measure et browser
+//      07           fgx   09.12.99    Ajout de tb analyze + container lines
+//	  08	         lgk   15.10.02	   Revision
+//=====================================================================================
+
+// Configuration
+// -------------
+DrwBG.Title="繪圖";
+DrwBG.Help = "工作視圖的背景繪圖工作檯";
+DrwBG.ShortHelp = "繪圖";
+
+// Toolbars
+// --------
+// Right
+contTbSelectBG.Title="選擇";
+contTbDrawingBG.Title="繪圖";
+contTbViewsBG.Title="視圖";
+contTbDimensioningBG.Title="定義尺寸";
+contTbGenerationBG.Title="產生";
+contTbAnnotationsBG.Title="註解";
+contTbDressupBG.Title="修飾";
+contTbGeometryCreationBG.Title="建立幾何";
+contTbGeometryEditionBG.Title="編輯幾何";
+// Top
+contTbStyleBG.Title="形式";
+contTbTextPropertiesBG.Title="文字性質";
+contTbDimensionPropertiesBG.Title="尺寸特性";
+contTbGraphicPropertiesBG.Title="圖像特性";
+// Bottom
+contTbUpdateBG.Title="更新";
+contTbToolsBG.Title="工具組";
+contTbMeasureBG.Title="量測";
+contTbBrowserBG.Title="目錄瀏覽器";
+// UnDock
+contTbOrientationBG.Title="位置和方向";
+contTbPositionBG.Title="定位";
+contTbAnalyzeBG.Title="解析";
+
+// Sub-Toolbars
+// ------------
+contSheets.Title="圖紙";
+contProjections.Title="投影";
+contSections.Title="剖面";
+contDetails.Title="細部";
+contClippings.Title="剪下";
+contBroken.Title="Break view";
+contViewWizard.Title="精靈";
+contDimensions.Title="尺寸";
+CATDrwFeatDimIcb.Title="技術特徵尺寸";
+CATDrwContInterruptTlb.Title="尺寸版期";
+contTolerancing.Title="容差";
+contGenDim.Title="產生尺寸";
+contTexts.Title="文字";
+contSymbols.Title="符號";
+CATDrwContTableIcb.Title="表";
+contAxis.Title="軸線和螺紋線";
+contPoint.Title="點";
+contLine.Title="線";
+contCircle.Title="正圓及橢圓";
+contProfiles.Title="外形";
+contCurves.Title="曲線";
+contRelimit.Title="修剪";
+contTransfor.Title="變形";
+contCst.Title="拘束";
+CATDrwAreaFillIcb.Title="面積填滿";
+
+// Sub-Menus
+// ---------
+// First level
+contMenuViews.Title="視圖";
+contMenuViews.Mnemonic="V";
+contMenuDrawing.Title="繪圖";
+contMenuDrawing.Mnemonic="r";
+contMenuDimensioning.Title="定義尺寸";
+contMenuDimensioning.Mnemonic="D";
+contMenuGeneration.Title="產生";
+contMenuGeneration.Mnemonic="n";
+contMenuAnnotations.Title="註解";
+contMenuAnnotations.Mnemonic="A";
+contMenuDressup.Title="修飾";
+contMenuDressup.Mnemonic="u";
+contMenuGeometryCreation.Title="建立幾何";
+contMenuGeometryCreation.Mnemonic="G";
+contMenuGeometryEdition.Title="編輯幾何";
+contMenuGeometryEdition.Mnemonic="e";
+contMenuDrwGenDimTools.Title="建立尺寸";
+contMenuDrwGenDimTools.Mnemonic="t";
+contMenuDrwPositioning.Title="定位";
+contMenuDrwPositioning.Mnemonic="P";
+contMenuDrwAnalyze.Title="解析";
+contMenuDrwAnalyze.Mnemonic="A";
+contMenuCst.Title="拘束";
+contMenuCst.Mnemonic="C";
+
+// Second level
+contMenuProjections.Title="投影";
+contMenuProjections.Mnemonic="P";
+contMenuSections.Title="剖面";
+contMenuSections.Mnemonic="S";
+contMenuDetails.Title="細部";
+contMenuDetails.Mnemonic="D";
+contMenuClippings.Title="剪下";
+contMenuClippings.Mnemonic="C";
+contMenuViewWizard.Title="精靈";
+contMenuViewWizard.Mnemonic="W";
+// ---
+contMenuSheets.Title="圖紙";
+contMenuSheets.Mnemonic="S";
+// ---
+contMenuDimensions.Title="尺寸";
+contMenuDimensions.Mnemonic="D";
+CATDrwFeatDimSnu.Title="技術特徵尺寸";
+CATDrwFeatDimSnu.Mnemonic="F";
+contMenuTolerancing.Title="容差";
+contMenuTolerancing.Mnemonic="T";
+// ---
+contMenuTexts.Title="文字(T)";
+contMenuTexts.Mnemonic="T";
+contMenuSymbols.Title="符號";
+contMenuSymbols.Mnemonic="S";
+CATDrwContTableMenuSnu.Title="表";
+CATDrwContTableMenuSnu.Mnemonic="a";
+CATDrwAreaFillSnu.Title="面積填滿";
+// ---
+contMenuAxis.Title="軸線和螺紋線";
+contMenuAxis.Mnemonic="A";
+// ---
+contMenuPoint.Title="點";
+contMenuPoint.Mnemonic="P";
+contMenuLine.Title="線";
+contMenuLine.Mnemonic="L";
+contMenuCircle.Title="正圓及橢圓";
+contMenuCircle.Mnemonic="C";
+contMenuProfiles.Title="外形";
+contMenuProfiles.Mnemonic="f";
+contMenuCurves.Title="曲線";
+contMenuCurves.Mnemonic="u";
+// ---
+contMenuRelimit.Title="修剪";
+contMenuRelimit.Mnemonic="R";
+contMenuTransfor.Title="變形";
+contMenuTransfor.Mnemonic="T";
+
+// Third level
+contMenuInterrupt.Title="尺寸版期";
+contMenuInterrupt.Mnemonic="E";
+// Contextual Sub-Menus
+// --------------------
+DrwPositionalLink.Title="位置的鏈結";
+DrwOrientationLink.Title="方向的鏈結";
+DrwViewPositioning.Title="視圖定位";
+DrwDimInterruptSubMenu.Title="中斷";
+CATDrwViewPositioningTlb.Title="視圖定位";
+CATDrwGVSSnu.Title="自發視圖形式";
+CATDrwDimensionRepresentation.Title="尺寸表現方式";
+CATDrwAngleSector.Title="角度部份";
+CATDrwClipBoxSnu.Title="剪下盒";

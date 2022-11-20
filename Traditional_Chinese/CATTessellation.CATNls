@@ -1,0 +1,66 @@
+//------------------------------------------------------
+// Resource file for input tesselation errors 
+// En_EN
+//================================================================
+//                           INPUT
+//================================================================
+//----------------------------------hlr
+//
+TessInHLROutOfRange =
+     "提給型式 /p2 的物件的方法 /p1 的索引, 它的值是 /p3, 超出範圍.
+      它應該已經介於 /p4 和 /p5 之間.";
+//
+TessInHLRNoSuchBody =
+     "沒有本體和給與的 CATHLRBodyId 一致, 或本體是無效的 (未包括邊界).";
+//
+TessInHLRInvalidObject  =
+     "提給 HLR 的型式 CATBaseUnknown的物件是不認可的. 
+      實行的真實類型是 /p1.";
+//
+TessInHLREmptyObject  =
+     "提給 HLR的物件沒包括有效的資料: 
+      沒有邊, 並非認可的V4 物件, 例如";
+//
+//----------------------------------tessellation
+//
+TessInTooLargeLength   =
+     "提給方法 /p1::/p2 的長度太大. 
+      它的值應該小於 /p3.";
+//
+TessInTooSmallLength   =
+     "提給方法 /p1::/p2 的長度太小. 
+      它的值應該大於 /p3.";
+//
+TessInInvalidSag  =
+     "弧差值 /p1 太小. 它應該大於 /p2.";
+//
+TessInInvalidStep  =
+     "步進值 /p1 太小. 它應該大於 /p2.";
+//
+TessInInvalidAngle   =
+     "最大角度 /p1 不正確.它應該在 [ /p2, /p3 ] 範圍內.";
+//================================================================
+//                           INternal
+//================================================================
+//----------------------------------Null or invalid input
+//
+TessIntHLRImpossibleProjection  =
+     "曲線的投影是不可能的或退化.";
+//
+TessIntHLRComputationError  =
+     "錯誤發生在隱藏線計算時.";
+//
+TessIntHLRNoProjectionData  =
+     "你嘗試投影一個沒有提供投影資料的曲線.";
+//
+TessIntHLRNoSeledtedDataResult  =
+     "沒有 /p1 被選擇.
+      在讀取結果前, 你應該選擇一個 /p2.";
+//
+//----------------------------------tessellation
+//
+TessInUnableToAllocate =
+     " 無法定位 ";
+//
+TessInInternalError =
+     " 貼圖時發生內部錯誤 ";

@@ -1,0 +1,49 @@
+//=====================================================================================
+//                          COPYRIGHT DASSAULT SYSTEMES 2001
+//                          CHECK AND CLEAN RULES FOR PARTDESIGN FEATURES
+//=====================================================================================
+
+Draft_0.ShortMessage	= "繪圖 0 的基本規則";
+Draft_0.ErrorMessage	= " 繪圖的 RSurs 特徵必須承襲在零件本體中.";
+Draft_0.CleanMessage	= " 繪圖的 RSurs 特徵已承襲在零件本體中.";
+
+Draft_1.ShortMessage	= "繪圖 1 的基本規則";
+Draft_1.ErrorMessage	= "預設拉伸方向的資料毀損.";
+Draft_1.CleanMessage	= "清理拉伸方向的資料.";
+
+Thread_0.ShortMessage	= "螺紋 0 的基本規則";
+Thread_0.ErrorMessage	= "應打斷螺紋標準參考檔案鏈結.";
+Thread_0.CleanMessage	= "應打斷螺紋標準參考檔案鏈結.";
+
+Mirror_0.ShortMessage	= "鏡向 0 的基本規則";
+Mirror_0.ErrorMessage	= "缺少一個或以上的參考元素.";
+Mirror_0.CleanMessage	= "已建立參考元素.";
+
+DefaultValuesBag_0.ShortMessage	= "零件預設數值 Bag 0 上的基本規則";
+DefaultValuesBag_0.ErrorMessage	= "將移除螺紋標準設計表.";
+DefaultValuesBag_0.CleanMessage	= "已移除螺紋標準設計表.";
+
+CleanPRTFeature_0.ShortMessage	= " CleanPRTFeature 0 上的基本規則";
+CleanPRTFeature_0.ErrorMessage	= "Unreferenced Brep element '/p1' found in feature '/p2'.";
+CleanPRTFeature_0.CleanMessage	= "Cleaned the Unreferenced Brep elements in Feature.";
+
+EdgeFillet_0.ShortMessage	= "倒圓角 0 的基本規則";
+EdgeFillet_0.ErrorMessage	= "部份圓角物件 (PointOnEdge) 設成錯誤的圓角環帶.";
+EdgeFillet_0.CleanMessage	= "圓角物件已設成正確錯誤的圓角環帶.";
+
+Boolean_0.ShortMessage = "布林 0 上的基本規則";
+Boolean_0.ErrorMessage = "Boolean operation between solid body (old) and hybrid body (new).
+Operand body is displayed under Boolean operation which leads to visualisation problems.
+To correct this problem, operand body will be moved under the part.";
+Boolean_0.CleanMessage = "Operand body is now moved under the part";
+
+Pattern_0.ShortMessage	= "陣列 0 上的基本規則";
+Pattern_0.ErrorMessage	= "There are redundant elements in GenerTool of User Pattern.";
+Pattern_0.CleanMessage	= "Cleaned Redundant elements in GenerTool of User Pattern.";
+
+Boolean_1.ShortMessage = "布林 1 上的基本規則";
+Boolean_1.ErrorMessage = "Boolean operation between two hybrid (new) bodies with operand body 
+not aggregated to the boolean feature however displayed under it leads to visualisation problems.
+To correct this problem, operand body will be moved under the part.";
+Boolean_1.CleanMessage = "操作本體現在己移至零件下";
+

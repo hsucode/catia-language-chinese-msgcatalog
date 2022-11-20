@@ -1,0 +1,81 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//===========================================================================
+//
+// CATRdgOptionsSatellitePropertyFrame
+//
+//===========================================================================
+
+
+//--------------------------------------
+// Satellite options
+//--------------------------------------
+satelliteFrame.HeaderFrame.Global.Title = "分配著色";
+
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.satelliteModeCheck.Title = "啟動";
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.satelliteModeCheck.Help = "啟動分配著色";
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.satelliteModeCheck.ShortHelp = "啟動分配著色";
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.satelliteModeCheck.LongHelp =
+"在網路上至多 8 個CPU 啟動或關閉分配著色.";
+
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.satelliteUseLocalCheck.Title = "使用局部主機";
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.satelliteUseLocalCheck.Help = "計算時使用局部主機";
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.satelliteUseLocalCheck.ShortHelp = "計算時使用局部主機";
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.satelliteUseLocalCheck.LongHelp =
+"Uses the local host as a server for
+rendering computations. If you want to 
+keep the local load low, you should
+uncheck this option.";
+
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.hostList.Help = "衛星表列";
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.hostList.ShortHelp = "衛星表列";
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.hostList.LongHelp =
+"List of satellites used for distributed
+rendering.";
+
+title1 = "名稱";
+title2 = "OS";
+title3 = "CPUs";
+title4 = "說明";
+
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.hostAddButton.Title = "新增";
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.hostAddButton.Help = "新增衛星至表列";
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.hostAddButton.ShortHelp = "新增衛星";
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.hostAddButton.LongHelp =
+"新增衛星至表列";
+
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.hostRemoveButton.Title = "移除";
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.hostRemoveButton.Help = "由表列移除衛星";
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.hostRemoveButton.ShortHelp = "移除衛星";
+satelliteFrame.IconAndOptionsFrame.OptionsFrame.hostRemoveButton.LongHelp =
+"由表列移除衛星";
+
+addHostDialog.Title = "新增衛星";
+addHostDialog.Help = "新增衛星至表列";
+addHostDialog.ShortHelp = "新增衛星";
+addHostDialog.LongHelp =
+"新增衛星至表列";
+
+addHostDialog.hostNameLabel.Title = "名稱";
+addHostDialog.hostNameLabel.Help = "衛星名稱";
+addHostDialog.hostNameLabel.ShortHelp = "衛星名稱";
+addHostDialog.hostNameLabel.LongHelp =
+"在衛星上輸入名稱.";
+
+addHostDialog.hostNameEditor.Help = "衛星名稱";
+addHostDialog.hostNameEditor.ShortHelp = "衛星名稱";
+addHostDialog.hostNameEditor.LongHelp =
+"在衛星上輸入名稱.";
+
+addHostDialog.hostCommentLabel.Title = "說明";
+addHostDialog.hostCommentLabel.Help = "選項說明";
+addHostDialog.hostCommentLabel.ShortHelp = "選項說明";
+addHostDialog.hostCommentLabel.LongHelp =
+"在衛星上輸入選項說明";
+
+addHostDialog.hostCommentEditor.Help = "選項說明";
+addHostDialog.hostCommentEditor.ShortHelp = "選項說明";
+addHostDialog.hostCommentEditor.LongHelp =
+"在衛星上增加選項說明";
+
+addHostError = "無法增加主機";
+satMaxWarning = "已達到 CPU 限制 \n 將只使用 /p1 cpus";

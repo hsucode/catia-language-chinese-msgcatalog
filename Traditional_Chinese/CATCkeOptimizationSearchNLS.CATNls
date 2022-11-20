@@ -1,0 +1,88 @@
+OptFeature = "分件最佳化";
+
+OptOptimizationSet					= "分件最佳化組合";
+OptOptimizationSet.Optimizations	= "表列最佳化分件";
+
+OptConstraint				= "拘束最佳化";
+OptConstraint.Satisfaction	= "滿足";
+OptConstraint.Precision		= "精確";
+OptConstraint.Distance		= "距離";
+OptConstraint.Priority		= "優先度";
+
+OptGoal				= "最佳化目標";
+OptGoal.Type		= "型式";
+OptGoal.TargetValue	= "目標數值";
+OptGoal.Precision	= "精確";
+OptGoal.Priority	= "優先度";
+OptGoal.Parameter	= "參數";
+OptGoal.Comment		= "目標說明";
+
+OptProblem				= "最佳化問題";
+OptProblem.Goals		= "目標表列";
+OptProblem.Constraints	= "拘束表列";
+OptProblem.Comment		= "問題說明";
+
+OptFreeParameter			= "自由參數最佳化";
+OptFreeParameter.Value		= "數值";
+OptFreeParameter.Parm		= "參數";
+OptFreeParameter.InfRange	= "下部邊界";
+OptFreeParameter.SupRange	= "上部邊界";
+OptFreeParameter.Step		= "間隔";
+OptFreeParameter.HasRangeStep = "範圍和或間隔";
+
+// PEO Algorithm generic Type
+OptGenericAlgorithm						= "PEO 演算法";
+OptGenericAlgorithm.NbUpdatesMax		= "更新的最大數目";
+OptGenericAlgorithm.MaxTime				= "最久時間";
+OptGenericAlgorithm.MaxWoImprovement	= "無精進的更新最大次數";
+OptGenericAlgorithm.StoppingCriterion	= "停止標準";
+
+OptGenericAlgorithm.StopRelativeObjectiveChange = "相對物件更改";
+OptGenericAlgorithm.StopAbsoluteObjectiveChange = "絕對物件更改";
+OptGenericAlgorithm.StopAbsoluteVariableChange = "絕對變數更改";
+OptGenericAlgorithm.StopAbsoluteConstraintChange = "絕對拘束更改";
+OptGenericAlgorithm.StopRelativeConstraintChange = "相對拘束更改";
+OptGenericAlgorithm.StopWindowChange = "停止視窗更改";
+
+// one generic type for Optimization and one generic type for DoE
+OptGenericOptimAlgorithm				= "演算法最佳化";
+OptGenericDoeAlgorithm					= "DOE 演算法";
+
+// sub types of Optimization generic type
+OptGradientAlgorithm		= "不含拘束的梯度演算法";
+OptGradientAlgorithm.ConvergenceSpeed = "收歛速度";
+
+OptApproximationGradientAlgorithm = "含拘束的梯度演算法";
+OptApproximationGradientAlgorithm.ConvergenceSpeed = "收歛速度";
+
+OptSimAnnealingAlgorithm	= "模擬 Annealing 演算法";
+OptSimAnnealingAlgorithm.ConvergenceSpeed = "收歛速度";
+
+// sub type of DoE generic type
+FullDoeAlgorithm			= "試品的完整設計";
+FullDoeAlgorithm.ListOfLevels			= "參數階層表列";
+FullDoeAlgorithm.LastDoneExperimentNb	= "最後完成實驗索引";
+
+OptOptimization					= "最佳化";
+OptOptimization.Problem			= "問題";
+OptOptimization.FreeParameters	= "自由參數表列";
+OptOptimization.Algorithm		= "演算法";
+OptOptimization.UpdateVisualization = "更新顯示標誌";
+OptOptimization.OptimizationLog	= "最佳化記錄";
+
+//SOC - 08/10/02
+OptimizationLog							= "最佳化記錄";
+OptimizationLog.DesignTable				= "計算管理";
+OptimizationLog.IndexOfBestSolInDT		= "特殊結果記錄索引";
+OptimizationLog.BestParm				= "最佳計算結果參數";
+OptimizationLog.NbEvalParm				= "目前計算號碼參數";
+
+//SOC - 15/11/02 : les attributs du type suivant sont ceux de Set of Equations (Package Advisor)
+//				   => on les trouve dans CATKnowledgeAdvisorSearch
+OptConstraintSatisfaction	= "符合拘束";
+
+// sub types of Optimization generic type
+OptApproximationAlgorithm		= "拘束和優先度的概略演算法";
+OptLocalWithPrioritiesAlgorithm		= "拘束和優先度的局部演算法";
+OptCstGradAlgorithm		= "拘束和變異的演算法提供者";
+

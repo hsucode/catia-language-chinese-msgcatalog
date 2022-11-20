@@ -1,0 +1,91 @@
+//-----------------------------------------------
+// Resource file for CATGuiCurveSmoothPanel class
+// En_US
+//-----------------------------------------------
+
+Title="曲線平順定義";
+
+CurveFrame.LabelCurve.Title="要平順的曲線 : ";
+CurveFrame.LabelCurve.LongHelp="指定要平順的曲線.";
+CurveFrame.SelCurve.LongHelp="指定要平順的曲線.";
+
+ListeOnglets.OngletParam.Title="參數";
+
+ListeOnglets.OngletParam.FrameParam.LabelLittTangence.Title="相切門檻: ";
+ListeOnglets.OngletParam.FrameParam.LabelLittTangence.LongHelp="指定在使這條曲線平順之下相切的不連續性.";
+ListeOnglets.OngletParam.FrameParam.FraLittTangence.LongHelp="指定在使這條曲線平順之下相切的不連續性.";
+ListeOnglets.OngletParam.FrameParam.FraLittTangence.EnglobingFrame.IntermediateFrame.Spinner.Title="相切";
+
+ListeOnglets.OngletParam.FrameParam.SelCourbure.Title="曲率門檻: ";
+ListeOnglets.OngletParam.FrameParam.SelCourbure.LongHelp="指定在使這條曲線平順之上曲率的不連續性.";
+ListeOnglets.OngletParam.FrameParam.FraLittCourbure.LongHelp="指定在使這條曲線平順之上曲率的不連續性.";
+ListeOnglets.OngletParam.FrameParam.FraLittCourbure.EnglobingFrame.IntermediateFrame.Spinner.Title="曲率";
+
+ListeOnglets.OngletParam.FrameParam.SelDeviation.Title="最大偏差: ";
+ListeOnglets.OngletParam.FrameParam.SelDeviation.LongHelp="指定結果必須被包含的管子半徑.";
+ListeOnglets.OngletParam.FrameParam.FraLittDeviation.LongHelp="指定結果必須被包含的管子半徑.";
+ListeOnglets.OngletParam.FrameParam.FraLittDeviation.EnglobingFrame.IntermediateFrame.Spinner.Title="偏差";
+
+ListeOnglets.OngletParam.FrameContinuity.LabelContinuity.Title="連續性: ";
+ListeOnglets.OngletParam.FrameContinuity.LabelContinuity.LongHelp="";
+ListeOnglets.OngletParam.FrameContinuity.ThresholdRB.Title="門檻";
+ListeOnglets.OngletParam.FrameContinuity.ThresholdRB.LongHelp="";
+ListeOnglets.OngletParam.FrameContinuity.PointRB.Title="點";
+ListeOnglets.OngletParam.FrameContinuity.PointRB.LongHelp="";
+ListeOnglets.OngletParam.FrameContinuity.TangentRB.Title="相切";
+ListeOnglets.OngletParam.FrameContinuity.TangentRB.LongHelp="";
+ListeOnglets.OngletParam.FrameContinuity.CurvatureRB.Title="曲率";
+ListeOnglets.OngletParam.FrameContinuity.CurvatureRB.LongHelp="";
+
+ListeOnglets.OngletFrozen.Title="凍結";
+ListeOnglets.OngletFrozen.FraList.LongHelp="指定執行平順動作時, 要保留不變的曲線次元素 (頂點或邊線).";
+
+
+ListeOnglets.OngletExtrem.Title="端點";
+ListeOnglets.OngletExtrem.StartExtremLabel.Title="開始: ";
+ListeOnglets.OngletExtrem.StartExtremLabel.LongHelp="允許指定起始點的連續情形:
+輸入曲線的相同曲率, 相切或點.";
+ListeOnglets.OngletExtrem.StartExtremCombo.LongHelp="允許指定起始點的連續情形:
+輸入曲線的相同曲率, 相切或點.";
+ListeOnglets.OngletExtrem.EndExtremLabel.Title="結束: ";
+ListeOnglets.OngletExtrem.EndExtremLabel.LongHelp="允許指定結束點的連續情形:
+輸入曲線的相同曲率, 相切或點.";
+ListeOnglets.OngletExtrem.EndExtremCombo.LongHelp="允許指定結束點的連續情形:
+輸入曲線的相同曲率, 相切或點.";
+CurvatureKey="曲率";
+TangencyKey="相切";
+PointKey="點";
+
+ListeOnglets.OngletVisu.Title="顯示";
+
+ListeOnglets.OngletVisu.LabelVisuRadio.Title="顯示解法: ";
+ListeOnglets.OngletVisu.LabelVisuRadio.LongHelp="";
+ListeOnglets.OngletVisu.VisuRadioFrame.SelVisuAll.Title="全部";
+ListeOnglets.OngletVisu.VisuRadioFrame.SelVisuAll.LongHelp="";
+ListeOnglets.OngletVisu.VisuRadioFrame.SelVisuNotCorrected.Title="不正確";
+ListeOnglets.OngletVisu.VisuRadioFrame.SelVisuNotCorrected.LongHelp="";
+ListeOnglets.OngletVisu.VisuRadioFrame.SelVisuNone.Title="無";
+ListeOnglets.OngletVisu.VisuRadioFrame.SelVisuNone.LongHelp="";
+
+ListeOnglets.OngletVisu.SelVisuInteractive.Title="交正式顯示資訊";
+ListeOnglets.OngletVisu.SelVisuInteractive.LongHelp="";
+
+ListeOnglets.OngletVisu.SelVisuSequential.Title="順序式顯示資訊";
+ListeOnglets.OngletVisu.SelVisuSequential.LongHelp="";
+
+SupportFrame.LabelSupport.Title="依附曲面: ";
+SupportFrame.LabelSupport.LongHelp="指定平順曲線時, 曲線所依附的曲面.";
+SupportFrame.SelSupport.LongHelp="指定平順曲線時, 曲線所依附的曲面.";
+
+SelSimplif.Title="拓墣簡化";
+SelSimplif.LongHelp="允許以消除連續點來簡化輸出拓墣.";
+
+
+// Gestion de l'ancienne mise en forme
+IntituleShowParam="顯示參數 >>";
+IntituleHideParam="隱藏參數 <<";
+
+OptionFrame.LabelLittTangence.Title="相切門檻: ";
+OptionFrame.LabelLittTangence.LongHelp="指定平順曲線的相切不連續情形.";
+OptionFrame.FraLittTangence.EnglobingFrame.IntermediateFrame.Spinner.Title="相切";
+

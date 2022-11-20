@@ -1,0 +1,73 @@
+//-----------------------------------------------------------------------------
+// COPYRIGHT DASSAULT SYSTEMES 2003
+//-----------------------------------------------------------------------------
+//
+//                    InsertSection Panel Resources
+//
+//-----------------------------------------------------------------------------
+
+Title="2D-視圖切面定義";
+
+PartDefault="預設 (";
+
+Separator1.TitleLabel.Title = "特徵性質 ";
+
+frame1.LabName.Title = "名稱: ";
+frame1.LabName.LongHelp = "指定 2D 視圖切面名稱.";
+frame1.ColorLabel.Title = "顏色: ";
+frame1.ColorLabel.LongHelp = "指定 2D 視圖切面顏色.";
+frame1.ChkSettingStorage.Title = "儲存名稱";
+frame1.ChkSettingStorage.LongHelp = "當勾選時, 儲存指定名稱至使用者清單.";
+ 
+frame2.LabSectionPlane.Title = "顯示平面: ";
+frame2.LabSectionPlane.LongHelp = "指定2D視圖將顯示的平面.";
+
+Separator3.TitleLabel.Title= "相交 ";
+
+frame3.LabCuttingPlane.Title = "切面: ";
+frame3.LabCuttingPlane.LongHelp = "指定與 3D 相交的平面或平面型式特徵.";
+
+frame3.ListeOnglets.OngletElements.Title = "切面";
+frame3.ListeOnglets.OngletTransfer.Title = "轉換";
+
+frame3.ListeOnglets.OngletElements.LabGroup.Title = "包含: ";
+frame3.ListeOnglets.OngletElements.LabChangeGroup.Title = "移至";
+frame3.ListeOnglets.OngletElements.LabChangeGroup.LongHelp = "允許移動選擇至指定群組.";
+
+Panel2DViewSectionNewGroup = "新群組";
+Panel2DViewSectionGroup = "群組";
+
+frame3.ListeOnglets.OngletElements.Separator4.TitleLabel.Title= "參數 ";
+
+frame3.ListeOnglets.OngletElements.frameParam.LabCorner.Title = "預設圓角半徑: ";
+frame3.ListeOnglets.OngletElements.frameParam.LabCorner.LongHelp = "指定將應用至銳邊的圓角半徑值
+按下 計算 圓角時也使用此值.";
+frame3.ListeOnglets.OngletElements.frameParam.ChkAutoCorners.Title = "自動計算未定義圓角";
+frame3.ListeOnglets.OngletElements.frameParam.ChkAutoCorners.LongHelp = "When checked, default corner radius is used on sharp vertices
+which remain after stored and displayed corners are applied.";
+frame3.ListeOnglets.OngletElements.frameParam.ChkComputeThick.Title = "厚度: ";
+frame3.ListeOnglets.OngletElements.frameParam.ChkComputeThick.LongHelp = "When checked, specifies the offset value of the applied parallel curve.";
+frame3.ListeOnglets.OngletElements.frameParam.InvertOrientButton.Title = "逆轉增厚方向";
+frame3.ListeOnglets.OngletElements.frameParam.InvertOrientButton.LongHelp = "Allows to invert applied parallel curve orientation.";
+frame3.ListeOnglets.OngletElements.frameParam.ComputeCornersButton.Title = "計算圓角";
+frame3.ListeOnglets.OngletElements.frameParam.ComputeCornersButton.LongHelp = "Searches for sharp vertices and
+creates a corner of default corner radius value for each of them.";
+frame3.ListeOnglets.OngletElements.frameParam.RemoveCornersButton.Title = "移除圓角";
+frame3.ListeOnglets.OngletElements.frameParam.RemoveCornersButton.LongHelp = "Allows to remove all created and displayed corners with 'Compute corners' button.";
+
+frame3.ListeOnglets.OngletTransfer.Lab2DTransferred.Title = "轉換";
+frame3.ListeOnglets.OngletTransfer.Lab2DTransferred.LongHelp = "Specifies the list of transfered elements from 2D view to 3D.";
+frame3.ListeOnglets.OngletTransfer.LabNot2DTransferred.Title = "未轉換";
+frame3.ListeOnglets.OngletTransfer.Lab2DTransferred.LongHelp = "Specifies the list of transferable elements from 2D view to 3D.";
+frame3.ListeOnglets.OngletTransfer.ButAdd2DEltToGroup.Title = "新增至";
+frame3.ListeOnglets.OngletTransfer.ButAdd2DEltToGroup.LongHelp = "Allows to add any element to a group for corners and thickness operations.";
+
+Separator5.TitleLabel.Title= "建立模式 ";
+Separator5.TitleLabel.LongHelp= "Specifies the 2D-view section functional mode.";
+
+frame4.Radio2D.Title = "只有 2D";
+frame4.Radio2D.LongHelp = "3D intersections are created but hidden, and 2D view is created and shown.";
+frame4.Radio3D.Title = "只有 3D";
+frame4.Radio3D.LongHelp = "3D intersections are created and shown, and 2D view is not created.";
+frame4.Radio2D3D.Title = "2D 和 3D";
+frame4.Radio2D3D.LongHelp = "Both 3D intersections and 2D view are created and shown.";

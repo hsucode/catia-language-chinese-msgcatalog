@@ -1,0 +1,403 @@
+//
+//  04/09/2002 Claude Guinamard :
+//          Supression de la "frame Export : Precision" (RI 331407)
+//  05/12/2003 Claude Guinamard :
+//          Ajout "toggle" Mode Part / ProductStructure
+//
+
+// ==============================================================================================
+// Nouvelle boite de dialogue
+// ==============================================================================================
+
+
+// ==============================================================================================
+// G幯廨al 
+// ==============================================================================================
+
+_ToolsGeneral.HeaderFrame.Global.Title =
+"一般 ";
+
+
+// ----------------------------------------------------------------------------------------------
+// G幯廨al : show de la boite de fin de transfert
+// ----------------------------------------------------------------------------------------------
+
+_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._FrameShowBox._LblShowBox.Title=
+"- 顯示或不顯示對話盒:  ";
+
+_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._FrameShowBox._ShowBox.Title =
+"顯示完成對話盒";
+
+//_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._FrameShowBox._ShowBox.ShortHelp =
+//"顯示完成對話盒";
+
+_ToolsGeneral.IconAndOptionsFrame.OptionsFrame._FrameShowBox._ShowBox.LongHelp = 
+"轉換完成時顯示完成對話盒";
+
+
+// ==============================================================================================
+// Export 
+// ==============================================================================================
+
+_ToolsExport.HeaderFrame.Global.Title =
+"輸出 ";
+
+
+// ----------------------------------------------------------------------------------------------
+// Export : B Spline
+// ----------------------------------------------------------------------------------------------
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameCourbe._LblExportBS.Title=
+"- 曲線和曲面形式:  ";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameCourbe.CourbeStd.Title =
+"標準";
+
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameCourbe.CourbeStd.ShortHelp =
+//"輸出元件至近似 IGES 型式";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameCourbe.CourbeStd.LongHelp = 
+"輸出元件至相當的 IGES 型式(不必然是 B-Spline型式)";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameCourbe.CourbeBSpl.Title =
+"B-Spline";
+
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameCourbe.CourbeBSpl.ShortHelp =
+//"輸出元件為 B-Spline";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameCourbe.CourbeBSpl.LongHelp = 
+"輸出修剪面和曲面為 B-Spline 曲面 (entity 128),
+ 線和建構線為 B-Spline 曲線 (entity 126).";
+
+
+// ----------------------------------------------------------------------------------------------
+// Export : Representation Surf / Wireframe
+// ----------------------------------------------------------------------------------------------
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameRepres._LblRepresSurf.Title=
+"- 表現模式:   ";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameRepres.RepresSurf.Title =
+"曲面 ";
+
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameRepres.RepresSurf.ShortHelp =
+//"Export of faces as IGES faces";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameRepres.RepresSurf.LongHelp = 
+"輸出修剪面為 IGES 修剪面 (參數型式) 修剪面元件 (元件 144).";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameRepres.RepresFil.Title =
+"線架構 ";
+
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameRepres.RepresFil.ShortHelp =
+//"輸出修剪面為一組邊線";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameRepres.RepresFil.LongHelp = 
+"輸出修剪面為一組邊線";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameRepres._ExpMSBO.Title =
+"實體 - 薄殼 " ;
+
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameRepres._ExpMSBO.ShortHelp =
+//"輸出所有實體, 薄殼和修剪面為相關 IGES 新元件 " ;
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameRepres._ExpMSBO.LongHelp =
+"輸出實體, 薄殼和修剪面為相關 IGES 新元件:
+- 實體將輸出為 Manifold Solid B-Rep Objects (type 186, form 0).
+- 薄殼將輸出為開放或封閉薄殼元件 (type 514, form 2 or 1).
+- 修剪面將輸出為修剪面元件 (type 510, form 1).
+! 以此選項修剪面將不會輸出為修剪修剪面 (type 144)." ;
+
+// ----------------------------------------------------------------------------------------------
+// Export : Show/No Show
+// ----------------------------------------------------------------------------------------------
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameSaveOnlyShow.SaveOnlyShow.Title =
+"只儲存顯示元件 ";
+
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameSaveOnlyShow.SaveOnlyShow.ShortHelp =
+//"只儲存顯示元件 ";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameSaveOnlyShow.SaveOnlyShow.LongHelp = 
+"只儲存顯示模式元件 ";
+
+
+// ----------------------------------------------------------------------------------------------
+// Export : Nom et organisation de l'auteur
+// ----------------------------------------------------------------------------------------------
+// JRX - 2002-10-31
+
+_ToolsExport.HeaderFrame._FrameAuthorInfos.Global.Title=
+"- 作者名字和組織";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameAuthorInfos._LblAuthorName.Title=
+"- 作者名字:";
+
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameAuthorInfos._LblAuthorName.ShortHelp=
+//"寫入作者名字至 IGES 檔案";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameAuthorInfos._LblAuthorName.LongHelp=
+"寫入作者名字至 IGES 檔案總體區段中.";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameAuthorInfos._LblAuthorOrganization.Title=
+"- 作者組織:";
+
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameAuthorInfos._LblAuthorOrganization.ShortHelp=
+//"寫入作者組織至 IGES 檔案";
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameAuthorInfos._LblAuthorOrganization.LongHelp=
+"寫入作者組織至 IGES 檔案總體區段中.";
+
+
+
+// ==============================================================================================
+// Import 
+// ==============================================================================================
+
+_ToolsImport.HeaderFrame.Global.Title =
+"輸入 ";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameImport._LblBlank.Title=
+"  ";
+
+
+// ----------------------------------------------------------------------------------------------
+// Import : Mode Part or ProductStructure
+// ----------------------------------------------------------------------------------------------
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FramePartProdMode._LblPartProdMode.Title=
+"- 輸入模式:  ";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FramePartProdMode._ModePart.Title =
+"產生一個 CATPart";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FramePartProdMode._ModeProdStruct.Title =
+"對應 308/408 IGES 元件至產品架構";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FramePartProdMode._LblPartProdMode.LongHelp=
+"輸入 IGES 檔案為 CATPart 或參考至 CATProduct(s) 的 CATPart(s).";
+
+
+// ----------------------------------------------------------------------------------------------
+// Import : Join
+// ----------------------------------------------------------------------------------------------
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameJoin._LblJoin.Title=
+"- 連結:  ";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameJoin.ApplyJoin.Title =
+"連結模型中曲面";
+
+_FrameJoin.SpinnerLabel.Title =
+"精度: ";
+
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameJoin.ApplyJoin.ShortHelp =
+//"連結模型中曲面";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameJoin.ApplyJoin.LongHelp = 
+"輸入多重零件 IGES 模型至連接.";
+
+
+
+
+
+// ----------------------------------------------------------------------------------------------
+// Nouvelle frame Import Curves & Surfaces Optimization
+// ----------------------------------------------------------------------------------------------
+// DFB 2003-01-07
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2New._LblOptBlank.Title=
+"    ";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2New._LblOptimize.Title=
+"- 連續曲線和曲面最佳化:  ";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2New._ModeNoOptC2New.Title =
+"未最佳化";
+
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2New._ModeNoOptC2New.ShortHelp =
+//"在不連續點裁剪曲線和曲面";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2New._ModeNoOptC2New.LongHelp = 
+"在不連續點裁剪元素來修整它.";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2New._ModeOptC2New.Title =
+"自動最佳化";
+
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2New._ModeOptC2New.ShortHelp =
+//"自動幾何變形最佳化";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2New._ModeOptC2New.LongHelp = 
+"自動幾何變形來修整它.";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2New._ModeAdvancedOptC2New.Title =
+"進階最佳化";
+
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2New._ModeAdvancedOptC2New.ShortHelp =
+//"以使用者參數設定幾何變形來最佳化";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2New._ModeAdvancedOptC2New.LongHelp = 
+"以使用者參數設定幾何變形來修整它.";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptC2New._ParameterPushButton.Title =
+"參數...";
+
+
+// ----------------------------------------------------------------------------------------------
+// Nouvelle frame Import Detection d'invalidite geom
+// ----------------------------------------------------------------------------------------------
+// DFB 2002-10
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptInvalidGeom._LblInvBlank.Title=
+"    ";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptInvalidGeom._LblInvalidGeom.Title=
+"- 偵測無效的輸入幾何:  ";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptInvalidGeom._ModeZeroInvalidGeom.Title =
+"未偵測";
+
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptInvalidGeom._ModeZeroInvalidGeom.ShortHelp =
+//"未偵測";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptInvalidGeom._ModeZeroInvalidGeom.LongHelp = 
+"相對 IGES 檔案中的幾何說明.";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptInvalidGeom._ModeManuInvalidGeom.Title =
+"偵測";
+
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptInvalidGeom._ModeManuInvalidGeom.ShortHelp =
+//"偵測修剪面中的無效幾何 (以公厘)";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptInvalidGeom._ModeManuInvalidGeom.LongHelp = 
+"允許偵測修剪面中的無效幾何 : 未封閉循環或循環精度上的較遠曲面.";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptInvalidGeom._LabelTolInvalidGeom.Title =
+"精度 :";
+
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptInvalidGeom._LabelTolInvalidGeom.ShortHelp =
+//"最大允許精度";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptInvalidGeom._LabelTolInvalidGeom.LongHelp =
+"定義循環內允許的最大孔 或循環和曲面間的最大距離 (以公厘)." ;
+
+
+// ----------------------------------------------------------------------------------------------
+// Nouvelle frame Import Loop Mode 3D
+// ----------------------------------------------------------------------------------------------
+// JRX 2002-05-31
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptMode3D._Lbl3DBlank.Title=
+"    ";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptMode3D._LblMode3D.Title=
+"- 修剪面邊界表現方式:  " ;
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptMode3D._ModeLoopPrefFichier.Title =
+"保留檔案預設" ;
+
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptMode3D._ModeLoopPrefFichier.ShortHelp =
+//"保留檔案預設表現方式" ;
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptMode3D._ModeLoopPrefFichier.LongHelp =
+"保留修剪面邊界的模型表現方式 (2D 或 3D). 若無預設, 參數表現方式 (2D) 將優先 ; 2D 將優先處理." ;
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptMode3D._ModeLoop3D.Title =
+"強迫 3D 表現方式" ;
+
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptMode3D._ModeLoop3D.ShortHelp =
+//"強迫 3D 修剪面邊界表現方式" ;
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameOptMode3D._ModeLoop3D.LongHelp =
+"只允許修剪面邊界的模型表現方式 (3D), 不論預設為何." ;
+
+
+// ----------------------------------------------------------------------------------------------
+// Unit廥
+// ----------------------------------------------------------------------------------------------
+// JRX 2003-07-15
+
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameUnit._LabelUnit.Title =
+"- 輸出單位為 : " ;
+
+//_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameUnit._LabelUnit.ShortHelp =
+//"強迫 IGES 中輸出單位為" ;
+
+_ToolsExport.IconAndOptionsFrame.OptionsFrame._FrameUnit._LabelUnit.LongHelp =
+"強迫 IGES 中輸出單位.
+預設數值 (保持使用者單位) 為單位標籤中使用者所設,
+或, 未被 IGES 標準所支援的公厘 (mm)." ;
+
+
+// Combo
+
+_FrameUnit._ExportUnitCombo.Default =
+" 保持使用者單位 " ;
+
+_FrameUnit._ExportUnitCombo.Inches =
+"英寸 (in)" ;
+
+_FrameUnit._ExportUnitCombo.Millimeters =
+"公厘 (mm)" ;
+
+_FrameUnit._ExportUnitCombo.Feet =
+"呎 (ft)" ;
+
+_FrameUnit._ExportUnitCombo.Miles =
+"英里 (mi)" ;
+    
+_FrameUnit._ExportUnitCombo.Meters =
+"公尺 (m)" ;
+
+_FrameUnit._ExportUnitCombo.Kilometers =
+"公里 (km)" ;
+
+_FrameUnit._ExportUnitCombo.Mils =
+"Mil - i.e. 0.001 英寸 (mil)" ;
+    
+_FrameUnit._ExportUnitCombo.Microns =
+"Micron (um)" ;
+    
+_FrameUnit._ExportUnitCombo.Centimeters =
+"公分 (cm)" ;
+    
+_FrameUnit._ExportUnitCombo.Microninches =
+"Microinch (uin)" ;
+
+
+
+// ==============================================================================================
+// Import : Insert Existing Component mise a jour Manuelle du fichier 
+// ==============================================================================================
+
+//_ToolsManualUpdate.HeaderFrame.Global.Title =
+//"Insert Existing Component : Update resulting file on demand";
+
+//_ToolsManualUpdate.IconAndOptionsFrame.OptionsFrame._ManualUpdate.Title =
+//"Manual Update";
+
+//_ToolsManualUpdate.IconAndOptionsFrame.OptionsFrame._ManualUpdate.ShortHelp =
+//"Manual Update of file";
+
+//_ToolsManualUpdate.IconAndOptionsFrame.OptionsFrame._ManualUpdate.LongHelp =
+//"Update file on demand";
+
+// ==============================================================================================
+// Import : Groupes transf廨廥 comme Selection Sets
+// ==============================================================================================
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameImportGroupAsSelSet._LabelImportGroupAsSelSet.Title =
+" - 輸入群組:  ";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameImportGroupAsSelSet._ImportGroupAsSelSet.Title =
+"如同選擇組轉換至 IGES 群組";
+
+//_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameImportGroupAsSelSet._ImportGroupAsSelSet.ShortHelp =
+//"For each IGES Group, a Selection Set will be created";
+
+_ToolsImport.IconAndOptionsFrame.OptionsFrame._FrameImportGroupAsSelSet._ImportGroupAsSelSet.LongHelp =
+"啟動群組處理, IGES 群組正與選擇組對應中:
+對每一個群組 IGES 檔案 (元件型式 402, 型式 1-7-14-15),
+選擇組, 將建立所有邏輯相關的元素群組";
+

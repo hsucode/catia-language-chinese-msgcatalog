@@ -1,0 +1,315 @@
+// COPYRIGHT ImpactXoft 2003
+//===================================================================
+SpdInternalError = "發生未預期錯誤.";
+
+SpdProfileInp1 = "必須指定斷面.";
+SpdProfileInp2 = "此特徵須有相關斷面來封閉.";
+SpdProfileInp3 = "此斷面含有一個以上外形.";
+SpdProfileInp4 = "此特徵須有相關草圖來啟動.";
+SpdProfileInp5 = "掃掠斷面必須是平面形式.";
+SpdProfileInp6 = "所選草圖含有定義為標準幾何元素的點. \n 您必須轉換這些點為建構元素.";
+SpdProfileInp7 = "由封閉線的薄殼動作 : \n 警告 : 輸入線自我相交. \n 請修改輸入線.";
+SpdProfileInp8 = "The volume formed by the shellable features does not pass completely through the prism. \nTry moving geometry, enlarging the shellable volume, or reducing the profile.";
+SpdProfileInp9 = "At least one offset value must be non-zero.";
+SpdProfileInp10 = "The interaction between the prism and the volume formed by the shellable features is too complex. \nThe most likely cause is that the feature's profile is only partially inside the shellable volume.";
+SpdProfileInp11 = "The interaction between the prism and the limit selections is too complex. \nThe most likely cause is that the extruded sketch is not completely trimmed by the limit surface.";
+SpdProfileInp12 = "The To-Shell option requires the presence of shellable features.";
+
+SpdDraftTypeInvalid   = "依據掃掠特徵只支援角度脫模.";
+SpdDraftTypeInvalid2  = "如尺寸限制為穿過或薄殼則只支援角度脫模.";
+SpdDraftLimit1Invalid = "如尺寸限制為穿過或薄殼則中界面不能為第一限制面.";
+SpdDraftLimit2Invalid = "如第二限制尺寸為穿過或薄殼則中界面不能為第二限制面.";
+SpdDraftAngleInvalid  = "脫模角度必須在 -85.0 和 85 之間.";
+SpdDraftDoubleFillet  = "雙重脫模角時無法定義側向圓角.";
+SpdDraftSketchHasNoPlane = "因草圖依附無效導致無法決定脫模中界面.";
+SpdDraftPropsMissing     = "遺失脫模性質.";
+SpdDraftNeutralMissing   = "遺失脫模中界元素.";
+SpdDraftNeutralInvalid   = "所選脫模中界元素無效.";
+SpdDraftPartingUnresolved = "無法解出脫模脫模元素.";
+SpdDraftPartingMissing   = "當使用脫模元素為中界元素時, 必須先選擇脫模元素";
+SpdDraftBadPull			 = "脫模拉伸方向與中界元素平行.";
+SpdDraftBadPartingPull   = "脫模拉伸方向與脫模元素平行.";
+SpdDraftFacesFailed		 = "脫模拉伸方向與脫模修剪面之一平行.";
+SpdDraftFailed			 = "脫模動作失敗. \nTry changing some of the draft parameters or the geometry.";
+SpdDraftFailedKindly     = "脫模動作失敗 - 局部拓墣幾何太複雜.";
+
+SpdReferencedPoint = "有一頂點無法辨識.";
+SpdReferencedAxis  = "有一軸無法辨識.";
+SpdReferencedLine  = "有一邊線無法辨識.";
+SpdReferencedFace  = "有一修剪面無法辨識.";
+SpdReferencedCuttingFace = "一切割修剪面無法辨識.";
+SpdReferencedPartingFace = "一切割修剪面無法辨識.";
+
+SpdEvalDataPath          = "必須指定斷面.";
+SpdEvalDataPathActive             = "必須指定路徑.";
+SpdEvalDataDirection        = "長度和必須大於 0.";
+SpdEvalDataPathInvalid		= "未支援拉伸方向.";
+SpdEvalDataPathSupport      = "The path and the profile use the same sketch support.";
+SpdEvalDataPathParallel     = "The path and profile supports are parallel.";
+
+SpdEvalDataFillet             = "不支援圓角負值.";
+SpdEvalDataThickFillet        = "厚度特徵時, 每個圓角半徑必須小於或等於總體厚度的一半.";
+SpdEvalDataThickShell	      = "薄殼特徵厚度必須大於薄殼厚度二倍以上.";
+
+SpdEvalDataFillet1Sides       = "對特徵的側向修剪面而言,第一圓角半徑太大";
+SpdEvalDataFillet2Sides       = "對特徵的側向修剪面而言,第二圓角半徑太大";
+SpdEvalDataFillet12Sides      = "對特徵的側向修剪面而言,第一和第二圓角的組合半徑太大";
+SpdEvalDataFillet1End		  = "對特徵的第一限制面而言,第一圓角半徑太大";
+SpdEvalDataFillet2End		  = "對特徵的第二限制面而言,第二圓角半徑太大";
+SpdFilletFailure              = "無法起始圓角動作.";
+
+SpdReinforcementFillet		  = "對特徵的側向修剪面而言,側向圓角半徑太大";
+SpdEvalDraftFillets           = "此特徵型式不支援脫模圓角選項";
+
+SpdEvalDataWall             = "無效牆厚度.";
+SpdEvalDataWallHeight       = "特徵的長度必須大於牆厚度.";
+SpdEvalDataVolume           = "不使用厚度時, 未封閉斷面無法建立實體.";
+SpdEvalDataThin             = "所輸入厚度值將造成體積為 0.";
+
+SpdEvalDataSplitDraft	   = "為分割脫模而言, 不支援厚度大於高度限制.";
+
+SpdAxis  = "必須指定旋轉軸.";
+SpdAngle = "兩角度將造成體積為 0.";
+
+SpdBoundaryInside   = "邊界斷面平面位置或方向無效. \n 平面不可在薄殼內且 \n 方向必須朝向薄殼內部.";
+SpdBoundaryTooLarge = "邊斷面太大且將會錯過薄殼.";
+SpdBoundaryTooLoopy = "不允許多重薄殼迴圈.";
+SpdBoundarySketch = "必須指定邊界斷面.";
+SpdBoundaryActive = "邊界草圖必須啟動.";
+SpdBoundaryEmpty  = "邊界草圖不可是空的.";
+SpdBoundaryClosed = "邊界斷面必須封閉.";
+SpdBoundaryPoints = "所選草圖含有定義為標準幾何元素的點. \n 您必須轉換這些點為建構元素.";
+SpdHeight         = "高度必須為正值.";
+SpdWidth          = "寬度必須為正值.";
+SpdSpikeHeight    = "刺針高度必須為正值.";
+SpdSpikeWidth     = "刺針寬度必須為正值.";
+SpdIslandSketch   = "島斷面必須封閉.";
+SpdSpikeMustExist = "所選脫模中界元素需要刺針幾何元素.";
+SpdRibMustExist   = "所選脫模中界元素需要肋幾何元素.";
+
+SpdSpikePositionRib = "刺針不可較肋低.";
+SpdSpikePositionBdy = "刺針必須比邊界低.";
+SpdSpikeOffsets     = "刺針偏移不可含有刺針.";
+SpdRibHeight		= "肋的高度必須為正值.";
+SpdRibWidth			= "肋的寬度必須為正值.";
+
+SpdThicknessClosed = "厚度為 0 時斷面必須封閉.";
+SpdNoCuttingFaces  = "未選擇切修剪面.";
+SpdMultipleTargets = "特徵不支援多重目標";
+
+SpdNoThickenSrf    = "未存在原來作為厚度的曲面.";
+SpdUnboundedSrf    = "Surface selected to thicken is unbounded.";
+
+SpdUnresolvedDirectionId	= "參考方向無法使用. \n CATIA 將選擇預設方向.";
+SpdUnresolvedPathControlId	= "無法使用路徑控制參考. \n CATIA 將選擇預設路徑方向.";
+SpdUnresolvedPathLimitsId	= "無法使用用來限制路徑的參考點. \n CATIA 將選擇預設路徑方向.";
+SpdUnresolvedFaceId			= "修剪面無法解出. \n 將移除設定.";
+SpdUnresolvedFacesId		= "/p1 修剪面無法解出. \n 將移除設定.";
+SpdUnresolvedRevolveAxesId	= "無法使用參考軸. \n 將移除設定.";
+SpdUnresolvedCuttingFaceId     = "無法解出切割修剪面. \n 將移除設定.";
+SpdUnresolvedCuttingFacesId    = "/p1 無法解出切割修剪面. \n 將移除設定.";
+SpdUnresolvedPartingFaceId     = "無法解出分模修剪面. \n 將移除設定.";
+SpdUnresolvedPullingDirection  = "無法解出拉伸方向. \n 將移除設定.";
+SpdUnresolvedLimitsId          = "無法解出限制修剪面.";
+SpdUnresolvedPathEdgeId        = "無法解出路徑邊線. \n 將移除設定.";
+SpdUnresolvedPathEdgesId       = "無法解出 /p1 路徑邊線. \n 將移除設定.";
+SpdUnresolvedDraftProperties   = "無法解出脫模性質. \n 脫模動作將會重設為無且特徵將不會有脫模動作.";
+SpdUnresolvedDraftPartingFace  = "無法解出分模元素修剪面 (由脫模性質) .";
+SpdUnresolvedDraftPullingDir   = "無法解出拉伸方向 (由脫模性質) .";
+SpdUnresolvedDraftNeutralElement = "無法解出中界兀素. \n 將移除設定.";
+SpdUnresolvedLipPullingDirection  = "無法解出拉伸方向. \n 將使用分隔元素的垂直方向.";
+SpdUnresolvedPatternDir1       = "無法解出陣列的第一方向. \n 將移除設定.";
+SpdUnresolvedPatternDir2       = "無法解出陣列的第二方向. \n 將移除設定.";
+SpdUnresolvedMirrorElement     = "無法解出鏡射元素. \n 將移除設定.";
+SpdUnresolvedSymmetryRef	   = "無法解出對稱元素參改方向. \n 將移除設定.";
+SpdUnresolvedScalingRef        = "無法解出縮放元素參改方向. \n 將移除設定.";
+SpdUnresolvedStartPt           = "無法解出轉換起始點. \n 將移除設定.";
+SpdUnresolvedEndPt             = "無法解出轉換結束點. \n 將移除設定.";
+SpdUnresolvedAxisOrigin        = "Transformation axis origin cannot be resolved. \n The specification will be removed.";
+SpdUnresolvedXYPlane           = "Transformation axis XY plane cannot be resolved. \n The specification will be removed.";
+SpdUnresolvedXAxis             = "Transformation X axis cannot be resolved. \n The specification will be removed.";
+SpdUnresolvedRefAxis           = "Transformation reference axis system cannot be resolved. \n The specification will be removed.";
+SpdUnresolvedTgtAxis           = "Transformation target axis system cannot be resolved. \n The specification will be removed.";
+SpdUnresolvedElementId         = "A profile element cannot be resolved. \nThe specification will be removed.";
+SpdUnresolvedElementsId        = "/p1 profile elements cannot be resolved. \nTheir specifications will be removed.";
+
+SpdWallInterference = "厚度值必須大於或等於本體厚度, 否則平台的下限將會過切.";
+
+SpdInvalidThickness = "厚度值不允許為負值.";
+
+SpdBadDirection = "所選方向平行於草圖平面.";
+SpdBadRevolveAxis = "您必須指定依附在斷面平面的軸.";
+SpdBadPath = "所選路徑平行於草圖平面.";
+
+SpdPathLimitPtsAndMulti  = "Path limit points are not allowed on a path with multiple contours.";
+SpdPathMoveToNeeded      = "If the path has multiple contours, you must use the Move profile to path option.";
+SpdMissingLimitSurface = "Limit plane or surface is missing.";
+SpdLimitSketchBadNormal  = "The limit sketch plane normal can't be parallel to the extrude direction.";
+
+SpdShellDeleteErr = "您無法刪除此元素, 因為它的設定為功能本體的部份設定.";
+SpdShellCopyErr = "您無法複製此元素, 因為它的設定為功能本體的部份設定.";
+SpdShellNoOutput  = "Shell Properties feature: all the body's faces have been selected as faces to remove.\nResult will be empty. This may be due to automatic tangency propagation.";
+
+SpdFeatureCopyErr = "You can't copy this element.";
+
+SpdBodyRefNoBody  = "Could not retrieve the result for the referenced body.";
+SpdCloseOpError   = "An unexpected error from the close operator.";
+
+SpdTwistError     = "Selected profile and center curve lead to a twist configuration. \nUse a center curve with a smaller curvature.";
+
+SpdPatNYI            = "Pattern functionality not yet implemented.";
+SpdPatKey1           = "Position of reference in first direction must be greater than zero.";
+SpdPatKey2           = "When using <Spacing&Length> option, length must be at greater than or equal to spacing.";
+SpdPatSpaceTotalAng  = "When using <Angular spacing&Total angle> option, Total angle must be at greater than or equal to Angular spacing.";
+SpdPatSpaceTotalLen  = "When using <Spacing&Length> option, Length must be at greater than or equal to Spacing.";
+SpdPatCountNeg       = "Instance count must be greater than zero.";
+SpdPatCountTooBig    = "Instance count must be less than or equal to 10000.";
+SpdPatSpaceLen       = "Spacing can't be zero.";
+SpdPatTotalLen       = "Length can't be zero.";
+SpdPatSpaceAng       = "Angular spacing can't be zero.";
+SpdPatTotalAng       = "Total angle can't be zero.";
+SpdPatTotalAng360    = "Total angle must less than 360 degress, use <Complete crown> option if required.";
+SpdPatKeySuppress    = "Referenced object of pattern can not be suppressed.";
+SpdPatUnresolvedDir1 = "The Pattern 1st Direction cannot be resolved.";
+SpdPatUnresolvedDir2 = "The Pattern 2nd Direction cannot be resolved.";
+SpdPatNoAxes         = "Pattern requires at least one direction.";
+SpdPatParallelAxes   = "The Pattern's 1st and 2nd directions cannot be parallel.";
+SpdPatNoSketch       = "User define pattern requires a sketch.";
+SpdPatSketchEmpty    = "Sketch for user define pattern must contain non-construction point(s).";
+SpdPatKeepSpec       = "Keep specification option no allowed when patterned feature is a modifier.";
+
+SpdJoinSketchEmpty   = "Sketch for join must contain non-construction point(s).";
+SpdJoinProfilePosition = "Failed to produce a valid join with the specified profile position.";
+SpdJoinGuideHeight   = "The guide height must be greater than or equal to zero.";
+SpdJoinDraftAngle    = "All join draft angles must be greater than or equal to zero.";
+SpdJoinClearance     = "Except for the thread clearance, all join clearances must be \ngreater than or equal to zero.";
+SpdScrewHeight       = "Screw height must be greater than or equal to zero.";
+SpdScrewHeight2      = "Screw heights must be greater than zero.";
+SpdScrewDiameter     = "All screw diameters must be greater than or equal to zero.";
+SpdThreadDiameter    = "A valid screw is not defined.\nThe thread diameter must be greater than zero.";
+SpdThreadHeight      = "A valid screw is not defined.\nThe thread height must be greater than zero.";
+SpdJoinNoEVT         = "Can not produce a valid join. The Join feature uses the geometry of the\n bodies that it is placed in to determine its own geometry.";
+SpdJoinLump0         = "Screw positions located inside the material of the part.";
+SpdJoinLump1         = "Screw positions or head/thread parameter values cause the join body to go outside the part material.";
+SpdThreadWall        = "Thread wall will intersect with the clamp guide. To resolve the \nproblem either increase the clamp draft angle, clamp side clearance, or \nclamp height clearance; or decrease the thread outer draft angle.";
+SpdJoinSiblingAbsent = "Sketch replacement not possible at this time since the sibling Join is not accessable.";
+SpdUnderCutShank     = "Parameter combination would result in shank area being undercut from both directions.";
+SpdShankDraftLarge   = "The head is undercut because the shank draft angle is too large.";
+SpdHeadOuterDraft    = "The clamp guide is cut away because the head outer draft angle or clamp inner draft angle \nis too large.";
+SpdThreadTooLarge    = "The thread will not fit in the clamp guide. Either remove the guide or decrease the thread \nwall, thread diameter, thread side clearance, or clamp side clearance.";
+SpdInvalidScrewDia   = "Invalid screw diameter dimensions were given.";
+SpdInvalidHeadDraft  = "The head outer draft angle must be greater than or equal to the head inner draft angle.";
+SpdMissingTrim       = "The positive volumes that are used to trim partially outside screw positions are unobtainable.";
+SpdJoinSSCTooSmall   = "The shank radius plus the shank side clearance is smaller than the thread radius.";
+SpdNoOSVDCC          = "The Join feature creates structures that are designed to connect two walled bodies.\n If a body is solid, a Hole should be used instead.";
+
+SpdJoinGussetTopOffset   = "Gusset top offset can't be negative.";
+SpdJoinGussetHeadWidth   = "Unable to create head gusset, try increasing shoulder width.";
+SpdJoinGussetThreadWidth = "Unable to create thread gusset, try increasing shoulder width.";
+SpdJoinGussetThickness   = "Gusset wall thickness can't be negative.";
+SpdJoinGussetFilletRad1  = "Gusset fillet radius can't be negative.";
+SpdJoinGussetFilletRad2  = "Gusset fillet radius too large for requested thickness.";
+SpdJoinGussetBlendRad    = "Gusset blend radius can't be negative.";
+SpdJoinGussetLimit1      = "Could not create gusset. Most likely cause is that parameters would result in gusset crossing a shell properties removed face."; 
+SpdScrewDescNoRead   = "Failed to read the screw descriptions from the catalog.";
+
+SpdDivideCutFailure  = "Failed to produce a valid divide with the dividing element as a cutter.";
+SpdCutCutFailure     = "Failed to produce a valid cut with the cutting element.";
+SpdCutTooSmall       = "The cutting element does not pass completely through the selected features. Try extending the cutting surface.";
+
+SpdDraftPropsPartingFaceId     = "The parting element face is missing.";
+SpdDraftPropsPullingDirection  = "The Pulling Direction is missing.";
+
+SpdPPFClearance1  = "Clearance distance must be greater than or equal to zero.";
+SpdPPFClearance2  = "Clearance distance or other clearance faces must be greater than zero.";
+
+SpdLipSimpleAllLimitation = "Loops for simple all lip could not be extracted due to current limitations.";
+SpdLipSimpleHeight        = "Lip height must be a positive value.";
+SpdLipSimpleThickness     = "Lip thickness must be a positive value.";
+SpdLipSimpleAngle         = "Lip angle must be between -85 and 85 degress.";
+SpdLipSimpleInnerAngle    = "Lip inner angle must be between -85 and 85 degrees.";
+SpdLipSimpleClearance     = "Lip clearance must be positive or zero.";
+SpdLipPullParallel        = "Lip Pulling Direction must not be parallel to the path.";
+SpdLipProfilePerp         = "Lip Pulling Direction must not lie in the profile plane.";
+SpdLipSimpleSweep         = "The Lip conditions are too complex. \nTry a simpler path, a smaller Thickness, or a smaller Height.";
+SpdLipPullingDirectionUnr = "The Pulling Direction cannot be resolved.";
+SpdLipProfileClosed       = "The profile must be open and planar.";
+SpdLipUpperProfileClosed  = "The upper profile must be open and planar.";
+SpdLipLowerProfileClosed  = "The lower profile must be open and planar.";
+SpdLipCutWithDivElemFail  = "Face-Face intersection failed.\nCheck for a Lip profile curve nearly tangent to the dividing element.";
+SpdLipIntxWithDivBodyFail = "Face-Face intersection failed.\nCheck for a Lip profile curve nearly tangent to the divided body.";
+SpdLipMultiContourProfile = "Lip profile can not contain multiple contours.";
+SpdLipNoContourProfile	  = "Lip profile contains no contours.";
+
+SpdMirrorElementRequired  = "Mirroring element required.";
+SpdMirrorElementInActive  = "Mirroring element must be active.";
+
+SpdAffinityOrigin		  = "The Affinity axis origin must be a point.";
+SpdAffinityOriginSolve    = "The selected Affinity axis origin is not solvable.";
+SpdAffinityMissingSelec   = "Since an X axis, origin or XY plane was selected for the Affinity axis system, all must be selected.";
+SpdAffinityPlane		  = "The Affinity axis XY plane must be a plane.";
+SpdAffinityPlaneSolve     = "The selected Affinity axis XY plane is not solvable.";
+SpdAffinityXScale         = "The Affinity X axis ratio must be greater than zero.";
+SpdAffinityYScale         = "The Affinity Y axis ratio must be greater than zero.";
+SpdAffinityZScale         = "The Affinity Z axis ratio must be greater than zero.";
+SpdAffinityXAxis          = "The Affinity X axis must be a line.";
+SpdAffinityXAxisSolve     = "The selected Affinity X axis is not solvable.";
+SpdAffinityXAxisInvalid   = "The selected X axis projects to a point onto the selected XY plane.";
+SpdSweepPullParallel      = "Pulling Direction must not be parallel to the path.";
+
+SpdExtractBadVolType      = "Invalid volume type set, only added and protected supported.";
+SpdExtractNoSource        = "Source body is required.";
+SpdExtractOldGrill        = "The selected grill feature was created in an early version of the software and can not be extracted.";
+SpdExtractMissingGrill    = "A grill feature must be selected.";
+SpdExtractMissingFeatures = "One or more features must be selected.";
+
+SpdExtBehaviorOverrideConflict = "The target feature does not allow it's behavior to be changed.";
+SpdExtBehaviorInvalidTarget    = "The target feature can not be extracted. The following features cant have their behavior extracted: \n   Property features \n   Multi-body features \n   Feature modifier with more than one target";
+
+SpdPocketBadWallVersion     = "Pockets created before version 13, don't support clearance wall.";
+SpdPocketOOnlyNoCWall       = "The clearance wall value on a outside only pockets must be zero.";
+SpdPocketCWallRequiresPWall = "A clearance wall requires a pocket wall.";
+
+SpdImportWallDirMismatch    = "Mismatch between the Shell's Wall Direction and the Wall Direction of an Import feature.";
+
+SpdFlangeTargetNeeded    = "Flange can only be create on a part with a divide.";
+SpdFlangeTargetData1     = "Flange's divide is missing data.";
+SpdFlangeTargetData2     = "Flange's divide result will not support a flange.";
+SpdFlangeTargetData3     = "Projection of divide edges along pull direction did not produce valid result. \nNote that the divide surface must be large enough to hold the flange.";
+SpdFlangeTargetData4     = "Due to a current limitation the projection of divide edges could not be calculated.";
+SpdFlangeTargetData5     = "Divided part results in no flangable edges. \nMost likely cause is that the outer boundary of the part is defined with a protected volume.";
+SpdFlangeWidth           = "Flange width must be greater than zero.";
+SpdFlangeThickness       = "Flange thickness must be greater than zero.";
+SpdFlangeTopRadius       = "Flange top radius must be a positive value.";
+SpdFlangeTopRadius2Big   = "Flange top radius is too large.";
+SpdFlangeBotRadius       = "Flange bottom radius must be a positive value.";
+SpdFlangeBotRadius2Big   = "Flange bottom radius is too large.";
+SpdFlangeSidRadius       = "Flange lateral radius must be a positive value.";
+SpdFlangeBothRadius2Big  = "Flange top radius combined with bottom radius is too large.";
+SpdFlangePullDirUnr      = "Flange pull direction cannot be resolved.";
+SpdFlangeBoundaryProblem = "The divide boundary loop(s) could not be extended the requested witdh. \nTry setting a smaller width.";
+SpdFlangePullBad         = "\nTry changing the flange pull direction so that the edge loops from the divide can be cleanly projected.";
+
+SpdSnapLockBadLength     = "Snap Lock lengths must be greater than zero.";
+SpdSnapLockRetAngle      = "Retention Angle must be greater than 0 and less than 180 degrees.";
+SpdSnapLockRetAngle2     = "Retention Angle must be greater than 0 and less than or equal to 90 degrees.";
+SpdSnapLockInsertAngle   = "Insertion Angle must be greater than or equal to 0 and less than 90 degrees.";
+SpdSnapLockInsertAngle2  = "Insertion Angle must be greater than 0 and less than or equal to 90 degrees.";
+SpdSnapLockWidth         = "Width at the wall must be greater than or equal to the width at the retention.";
+SpdSnapLockThick         = "Thickness at the wall must be greater than or equal to the thickness at the retention.";
+SpdSnapLockRetLength     = "Retention length must be greater than or equal to the hook tip length.";
+SpdSnapLockTolerance     = "Tolerances must be greater than or equal to zero.";
+SpdSnapLockWidth2        = "(Width - Side1 Thickness - Side2 Thickness) must be greater than zero.";
+SpdSnapLockBadLength2    = "(Length - Top Thickness - Loop Width) must be greater than zero.";
+SpdSnapLockWidth3        = "The portion of the catch that is in the retention hole must be less than or equal to the loop width.";
+SpdSnapLockWidth4        = "(Width - Side1 Thickness - Side2 Thickness - (2*Catch Width Tolerance)) must be greater than zero.";
+SpdSnapLockBadLength3    = "The specified angles and hook tip length cause the retention length to exceed the specified maximum. \n Try increasing the angles or retention length, or decreasing the hook top length.";
+SpdSnapLockBadHeight1    = "The specified angles cause the produced retention curves to self-intersect. \nTry increasing the angles.";
+SpdSnapLockBadAngle      = "The specified angles cause the length of the catch base to become less than zero.\n Try changing the angles or increasing the catch length and offset.";
+SpdSnapLockNoPos         = "No clip positions selected.";
+SpdSnapLockNoEngage      = "The catch offset is greater than or equal to the catch height so the catch\n will not engage the loop.";
+
+SpdCFSBooleanNVStar      = "An error occurred during the removal of the internal volumes from the core volumes.\n";
+SpdCFSBooleanSVC         = "An error occurred during the removal of the core volumes from the body.\n";
+SpdCFSBooleanFNV         = "An error occurred during the removal of the protected volumes from the body.\n";
+

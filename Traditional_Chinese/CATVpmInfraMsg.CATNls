@@ -1,0 +1,90 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//=============================================================================
+//
+// CATVpmInfraMsg:
+//	Infrastructure NLS Info Messages
+//
+// English version
+//
+//=============================================================================
+// Usage Notes:
+//=============================================================================
+// Jun 98   Creation                                   A.Hamonic
+//=============================================================================
+// NLS errors Infrastructure!
+InfEmptyAttr       = " No attributes for (/P01) entity" ;
+InfDomainKo        = " Domain (/P01) is not installed on this VPM site " ;
+InfNoInterface     = " QueryInterface doesnt work " ;
+InfArgKO           = " Invalid Argument (/P01)  ";
+InfNoRealObject    = " Real Object doesnt exist ";
+InfRefreshKO       = " A problem occurs during Refresh Process  ";
+InfAttrNoValuated  = " Attribute (/P01) is not valuated  ";
+InfAttrUnknown     = " Attribute (/P01) is Unknown  ";
+InfAttrNoDefined   = " Attribute (/P01) is undefined  ";
+InfAttrInverseWW   = " Attribute (/P01) is inverse , Write mode not allowed ";
+InfAttrAggrWW      = " Attribute (/P01) is aggregat, Method not allowed ";
+InfAttrUndefValues = " Attribute (/P01) is aggregat of undefined values";
+InfNoLateType      = " Late Type for (/P01) entity is undefined ";
+InfNoEntity        = " Entity for (/P01) LateType is undefined ";
+InfNoGraph         = " Graph Rules is undefined ";
+InfObjectUnknown   = " The VpmObject is Unknown ";
+InfInitStatusKO    = " Assignment of initial status failed ";
+InfProcessKO       = " A problem occurs during Process ";
+InfStatusListKO    = " Assignment of status List failed ";
+InfTerminalListKO  = " Assignment of terminal List failed ";
+InfReadStatusKO    = " Get the current status failed ";
+InfStepForwardKO   = " StepForward on the Graph is failed";
+InfSimulateKO      = " Simulate on the Graph is failed";
+InfNewStatusKO     = " Assignment of a new Status failed ";
+InfLockExist       = " The object is already  locked";
+InfLockNoExist     = " The object is not locked";
+InfLateTreeKO      = " The late tree is undefined ";
+InfVPMCAKO         = " VPMCA for (/P01) is undefined ";
+InfCONNKO          = " Connexion failed for the domain (/P01) ";
+InfInstanceKO      = " Instance not found ";
+InfFileNotFound	   = " /P01 doesn't exist!";
+InfSaveNotAutho    = "Save is not authorized for the moment.\n Test later.";
+InfRunTransitionKO = "Invalid transition number /P01!";
+InfObjNotOwnedKO   = "The object belongs to the site /P01. You are not allowed to perform that operation.";
+
+// SDAI / NLS errors mapping !
+sdaiESESSINIT   = "Session already opened";
+sdaiENOSDAI	= "SDAI not available";
+sdaiENOSESS	= "Session not initiated";
+sdaiENOREP	= "Repository does not exist";
+sdaiENOREPACC	= "Repository access denied";
+sdaiEREPOPEN	= "Repository already opened";
+sdaiEREPCLOSE	= "Repository not open";
+sdaiEREPACERR	= "Repository access mode conflict";
+sdaiEREPNOTRO	= "Repository is not in read-only access mode";
+sdaiEREPNOTRW	= "Repository is not in read-write access mode";
+sdaiEUNREPACC	= "Repository in undefined access mode";
+sdaiENOMODEL	= "Model does not exist";
+sdaiENOMODACT	= "Model is not active";
+sdaiEMODACCERR	= "Model access mode conflicts";
+sdaiEMODNOTRO	= "Model not read-only access mode";
+sdaiEMODNOTRW	= "Model not read-write access mode";
+sdaiEUNMODACC	= "Model in undefined access mode";
+sdaiEDUPMODNM	= "Model name not unique";
+sdaiEUNKEDEF	= "Entity definition unknown in model";
+sdaiEUNKTYPE	= "Type unknown";
+sdaiEBADTYPE	= "Types not in same schema";
+sdaiENORULE	= "Rule does not exist";
+sdaiENOOPER	= "Operation not implemented";
+sdaiENOOBJ	= "Object does not exist";
+sdaiEUNKATTR	= "Attribute name unknown";
+sdaiENODERIVE	= "No access to derived attribute";
+sdaiEVALTYPER	= "Value not of correct type";
+sdaiEVALNOASN	= "Value not assigned";
+sdaiENOAGGR	= "Aggregate not exist";
+sdaiENOITER	= "Iterator does not exist";
+sdaiEEMPTAGGR	= "Aggregate empty";
+sdaiENOCURMBR	= "Current member not defined";
+sdaiENOOPAGGR	= "Invalid operation for aggregate type";
+sdaiEDUPVALUE	= "Value already in aggregate";
+sdaiEUNDEFRES	= "Result returned as undefined";
+sdaiEINDEXBND	= "Index out of bounds";
+sdaiENOTS	= "Transaction does not exist";
+sdaiESYSERROR	= "Underlying system error";
+sdaiUNKNOWN	= "Unknown error (/P01)";
+

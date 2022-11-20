@@ -1,0 +1,416 @@
+//--------------------------------------------------------
+// NODES
+
+Nodes_Text                       =  "節點文字";
+
+//--------------------------------------------------------
+// ELEMENTS
+
+Elements_Text                    =  "元素文字";
+
+//--------------------------------------------------------
+// USER_NUMBER
+
+UserNodesNumber_Text             =  "使用者節點文字";
+UserElementsNumber_Text          =  "使用者元素文字";
+
+//--------------------------------------------------------
+// PHYSICAL_TYPE
+
+PhysicalType_Text                =  "實體形式文字";
+PhysicalType_Fringe              =  "實體形式 fringe";
+
+//--------------------------------------------------------
+// MATERIALS
+
+Material_Text                    =  "材料文字";
+Material_Fringe                  =  "材料修飾";
+
+//--------------------------------------------------------
+// THICKNESS
+
+Thickness_Text                   =  "厚度文字";
+Thickness_Fringe                 =  "厚度修飾";
+
+//--------------------------------------------------------
+// CROSS SECTION
+
+CrossSectionalArea_Symbol        =  "相交切面區域符號";
+CrossSectionalArea_Text          =  "相交切面區域文字";
+CrossSectionalArea_Fringe        =  "相交切面區域文字修飾";
+
+//--------------------------------------------------------
+// STRESS
+
+Stress_Iso_VonMises              =  "Stress Von Mises 應力 (節點數值)";
+Stress_Iso_VonMises_Disc         =  "Stress Von Mises 應力 (元素的節點數值)";
+Stress_Text_VonMises             =  "Stress Von Mises 應力文字";
+StressVonMises_Fringe            =  "Stress Von Mises 應力 (元素中心數值)";
+
+Stress_Iso_PpalValue             =  "應力的主要張力分量 (節點數值)";
+Stress_Iso_PpalValue_Abs         =  "應力的主要張力分量 (節點絕對數值)";
+Stress_Iso_PpalValue_Disc_Abs    =  "應力的主要張力分量 (元素的節點絕對數值)";
+Stress_Text_PpalTensor           =  "應力的主要張力文字";
+Stress_Text_PpalTensor_Abs       =  "應力的主要張力文字 (絕對)";
+
+Stress_Iso_Tensor_Component      =  "應力的全部張力分量 (節點數值)";
+Stress_Iso_Tensor_Component_Disc =  "應力的全部張力分量 (元素節點數值)";
+Stress_Text_SymTensor            =  "應力的全部張力文字";
+
+Stress_Iso_PpalShearing          =  "最大剪力的張力 (節點數值)";
+Stress_Text_PpalShearing         =  "最大剪力的張力文字";
+
+Surface_Stress_Symbol_PpalTensor =  "曲面應力主要張力符號";
+Surface_Stress_Iso_PpalValue_Disc					=	"曲面應力主要張力分量 (元素節點數值)";
+Surface_Stress_Iso_PpalValue							=	"曲面應力主要張力分量 (節點數值)";
+Surface_Stress_Text_PpalTensor						=	"曲面應力主要張力文字";
+Surface_Stress_Iso_Tensor_Component				=	"曲面應力全部張力分量 (節點數值)";
+Surface_Stress_Iso_Tensor_Component_Disc	=	"曲面應力全部張力分量 (元素節點數值)";
+Surface_Stress_Text_SymTensor							=	"曲面應力全部張力文字";
+
+ShearStress_Disc                 =  "剪力框應力 (元素節點數值)";
+ShearStress_Text                 =  "剪力框應力文字";
+
+//--------------------------------------------------------
+// STRAIN
+
+Strain_Iso_PpalValue             =  "應變的主要張力分量 (節點數值)";
+Strain_Symbol_PpalTensor         =  "應變的主要張力符號";
+Strain_Text_PpalTensor           =  "應變的主要張力文字";
+Strain_Iso_Tensor_Component      =  "應變的主要張力分量 (節點數值)";
+Strain_Text_SymTensor            =  "應變的主要張力文字";
+
+//--------------------------------------------------------
+// 3D NODAL DISPLACEMENTS
+
+Disp_Text                        =  "平移的位移文字";
+
+//--------------------------------------------------------
+// 3D NODAL ROTATIONS
+
+Rotation_Iso                     =  "旋轉的位移量";
+Rotation_Iso_Component           =  "旋轉的位移分量";
+Rotation_Symbol                  =  "旋轉的位移向量";
+Rotation_text                    =  "旋轉的位移文字";
+
+//--------------------------------------------------------
+// TRANSLATION SubType=SNG
+
+Local_Singularity_In_Translation =  "平移時局部單一性";
+
+//--------------------------------------------------------
+// ROTATION SubType=SNG
+
+Local_Singularity_In_Rotation    =  "旋轉時局部單一性";
+
+//--------------------------------------------------------
+// NODAL FORCES
+
+Force_Iso                        =  "點的力量";
+Force_Iso_Component              =  "點的力分量";
+Force_Symbol                     =  "點的力向量";
+Force_Text                       =  "點的力文字";
+
+//--------------------------------------------------------
+// LINE FORCES
+
+Lineic_Force_Symbol              =  "線力向量";
+Lineic_Force_Text                =  "線力文字";
+
+//--------------------------------------------------------
+// SURFACE FORCES
+
+Surfacic_Force_Symbol            =  "曲面的力向量";
+Surfacic_Force_Text              =  "曲面的力文字";
+Surfacic_Force_Fringe            =  "曲面的力修飾";
+
+//--------------------------------------------------------
+// VOLUME FORCES
+
+Volumic_Force_Symbol             =  "體積的力向量";
+Volumic_Force_Text               =  "體積的力文字";
+Volumic_Force_Iso                =  "體積的力";
+Volumic_Force_Fringe             =  "體積的力修飾";
+
+//--------------------------------------------------------
+// ANGULAR ACCELERATION
+
+AngularAcc_Symbol                =  "角加速度向量";
+AngularAcc_Text                  =  "角加速度文字";
+AngularAcc_Fringe                =  "角加速度修飾";
+
+//--------------------------------------------------------
+// ANGULAR VELOCITY
+
+AngularVelocity_Symbol           =  "角速度向量";
+AngularVelocity_Text             =  "角速度文字";
+AngularVelocity_Fringe           =  "角速度修飾";
+
+//--------------------------------------------------------
+// ROTATIONAL_ACCELERATION
+
+Rotational_Acceleration_Symbol   =  "旋轉加速向量";
+Rotational_Acceleration_Text     =  "旋轉加速文字";
+Rotational_Acceleration_Iso      =  "旋轉加速 iso";
+
+//--------------------------------------------------------
+// ROTATIONAL_VELOCITY
+
+Rotational_Velocity_Symbol       =  "旋轉速度向量";
+Rotational_Velocity_Text         =  "旋轉速度文字";
+Rotational_Velocity_Iso          =  "旋轉速度 iso";
+
+//--------------------------------------------------------
+// ACCELERATION
+
+Acceleration_Symbol              =  "加速度向量";
+Acceleration_Text                =  "加速度文字";
+Acceleration_Iso                 =  "加速度";
+Acceleration_Fringe              =  "加速度修飾";
+Relative_Acceleration_Symbol     =  "相對加速度向量";
+
+//--------------------------------------------------------
+// VELOCITY
+
+Velocity_Symbol                  =  "速度向量";
+Velocity_Text                    =  "速度文字";
+Velocity_Iso                     =  "速度";
+Relative_Velocity_Symbol         =  "相對速度向量";
+
+//--------------------------------------------------------
+// MASS
+
+Point_Mass_Symbol                =  "點量符號";
+Point_Mass_Text                  =  "點量文字";
+Point_Mass_Iso                   =  "點量";
+
+Lineic_Mass_Symbol               =  "線量符號";
+Lineic_Mass_Text                 =  "線量文字";
+
+Surfacic_Mass_Symbol             =  "曲面量符號";
+Surfacic_Mass_Text               =  "曲面量文字";
+Surfacic_Mass_Fringe             =  "曲面量修飾";
+
+Volumic_Mass_Symbol              =  "體積量符號";
+Volumic_Mass_Text                =  "體積量文字";
+Volumic_Mass_Iso                 =  "體積量";
+Volumic_Mass_Fringe              =  "體積量修飾";
+
+//--------------------------------------------------------
+// PRESSURE
+
+Pressure_Symbol                  =  "壓力向量";
+Pressure_Text                    =  "壓力文字";
+Pressure_Fringe                  =  "壓力修飾";
+Pressure_Iso                     =  "壓力 (節點數值)";
+
+//--------------------------------------------------------
+// MOMENT
+
+Moment_Symbol                    =  "點力矩向量";
+Moment_Text                      =  "點力矩文字";
+Moment_Iso                       =  "點力矩量";
+Moment_Iso_Component             =  "點力矩分量";
+
+//--------------------------------------------------------
+// VON MISES
+
+StressVonMises_Iso_Disc          =  "Von Mises 應力 (元素的節點數值)";
+StressVonMises_Text              =  "Von Mises 應力文字";
+StressVonMises_Symbol            =  "Von Mises 應力 (符號)";
+
+//--------------------------------------------------------
+// STRAIN ENERGY
+
+ElasticEnergy_Text               =  "局部應變能量文字";
+ElasticEnergy_Fringe             =  "局部應變能量";
+ElasticEnergy_Symbol             =  "局部應變能量符號";
+
+ElasticEnergyDensity_Text        =  "局部應變能量密度文字";
+ElasticEnergyDensity_Fringe      =  "局部應變能量密度";
+ElasticEnergyDensity_Symbol      =  "局部應變能量密度符號";
+
+//--------------------------------------------------------
+// ERROR
+
+EstimatedError_Text              =  "估計局部錯誤文字";
+EstimatedError_Symbol            =  "估計局部錯誤符號";
+
+//--------------------------------------------------------
+// DEGREES_OF_FREEDOM
+
+Restraint                        =  "自由度符號";
+
+//--------------------------------------------------------
+// LOCAL AXIS
+
+LocalAxis                        =  "局部軸符號";
+
+//--------------------------------------------------------
+// CLEARANCE
+
+Display_clearance_symbol         =  "預留符號";
+Display_clearance_text           =  "預留文字";
+Display_clearance_iso            =  "預留 iso";
+
+//--------------------------------------------------------
+// TEMPERATURE
+
+Temperature_Field_Symbol         =  "溫度範圍符號";
+
+//--------------------------------------------------------
+// MASS_INERTIA
+
+MassInertia_Text                 =  "重量慣性 (文字)";
+
+//--------------------------------------------------------
+// MASS_MOMENT_OF_INERTIA
+
+MassMomentOfInertia_Text         =  "重量慣性力矩 (文字)";
+
+//--------------------------------------------------------
+// AREA_MOMENT_OF_INERTIA
+
+AreaMomentOfInertia_Text         =  "面積慣性力矩 (文字)";
+
+//--------------------------------------------------------
+// AREA_SHEAR_RATIO_XY
+
+AreaShearRatioInXYPlane_Text     =  "在 XY 平面的面積剪力比例 (文字)";
+
+//--------------------------------------------------------
+// AREA_SHEAR_RATIO_XZ
+
+AreaShearRatioInXZPlane_Text     =  "在 XZ 平面的面積剪力比例 (文字)";
+
+//--------------------------------------------------------
+// SHEAR_CENTER
+
+ShearCenter_Text                 =  "剪力中心 (文字)";
+
+//--------------------------------------------------------
+// TRANSLATIONAL_STIFFNESS
+
+Translational_Stiffness_Symbol   =  "平移 stiffness (符號)";
+Translational_Stiffness_Text     =  "平移 stiffness (文字)";
+
+//--------------------------------------------------------
+// ROTATIONAL_STIFFNESS
+
+Rotational_Stiffness_Symbol      =  "旋轉 stiffness (符號)";
+Rotational_Stiffness_Text        =  "旋轉 stiffness (文字)";
+
+//--------------------------------------------------------
+// ORIENTATION_VECTOR
+
+Orientation_Vector_Symbol        =  "方向性向量 (符號)";
+Orientation_Vector_Text          =  "方向性向量 (文字)";
+
+//--------------------------------------------------------
+// FRICTION_RATIO
+
+Display_FrictionRatio_Symbol     =  "摩擦力比例符號";
+Display_FrictionRatio_Text       =  "摩擦力比例 (文字)";
+Display_FrictionRatio_Iso        =  "摩擦力比例 iso";
+
+//--------------------------------------------------------
+// 3D_COORDINATES
+
+Coordinates_Symbol               =  "節點座標符號";
+Coordinates_Text                 =  "節點座標文字";
+
+//--------------------------------------------------------
+// CURVATURE
+
+Curvature_Text                   =  "曲率文字";
+
+//--------------------------------------------------------
+// TRANSVERSE_SHEAR_STRAIN
+
+Transverse_Shear_Strain_Text     =  "橫向剪力應變文字";
+Transverse_Shear_Strain_Iso      =  "橫向剪力應變 iso";
+
+//--------------------------------------------------------
+// TRANSVERSE_SHEAR_STRESS
+
+Transverse_Shear_Stress_Text     =  "橫向剪力應力文字";
+Transverse_Shear_Stress_Iso      =  "橫向剪力應力 iso";
+
+//--------------------------------------------------------
+// FORCE_FLOW
+
+Force_Flow_Text                  =  "力流文字";
+
+//--------------------------------------------------------
+// MOMENT_FLOW
+
+Moment_Flow_Text                 =  "力矩流文字";
+
+//--------------------------------------------------------
+// NB_LAMINATES
+
+Nb_laminates                     =  "Laminate number 文字";
+Nb_laminates_Fringe              =  "Laminate number fringe";
+
+//--------------------------------------------------------
+// PLY_ID
+
+Ply_id                           =  "Ply id 文字";
+Ply_id_Fringe                    =  "Ply id fringe";
+
+//--------------------------------------------------------
+// ANGLE
+
+Composite_Angle                  =  "組合角度符號";
+
+//--------------------------------------------------------
+// OFFSET
+
+Offset_Symbol                    =  "偏移 (符號)";
+Offset_Text                      =  "偏移 (文字)";
+
+//--------------------------------------------------------
+// ENVELOP
+
+Values_Symbol					 =  "數值符號";
+Values_Text                      =  "數值文字";
+Values_Average_Iso               =  "數值平均 iso";
+Values_Discontinuous_Iso         =  "數值不連續 iso";
+Values_Fringe                    =  "數值 fringe";
+Criticals_Symbol                 =  "Critical sets symbol";
+Criticals_Text                   =  "Critical sets text";
+Criticals_Average_Iso            =  "Critical sets average iso";
+Criticals_Discontinuous_Iso      =  "Critical sets discontinuous iso";
+Criticals_Fringe                 =  "Critical sets fringe";
+
+//
+//--------------------------------------------------------
+// Criteria names used in SPM xml file
+
+SCALAR              = "Scalar";
+PRINCIPAL_SHEARING  = "Principal shearing";
+PRINCIPAL_VALUE     = "Principal value";
+NORMALIZE           = "Norm";
+VECTOR              = "Vector";
+VECTOR_COMPONENT    = "Vector component";
+VON_MISES           = "Von Mises";
+ABS_PRINCIPAL_VALUE = "Principal value (absolute value)";
+TENSOR_COMPONENT    = "Tensor component";
+SYMMETRICAL_TENSOR  = "Symmetrical tensor";
+MASS                = "Mass";
+COMPONENTS          = "Components";
+Envelop             = "Envelop";
+
+
+//
+//--------------------------------------------------------
+// SubTypes names used in GPS xml file
+
+RELATIVE            = "Relative";
+SURFACE             = "Surface";
+SHEAR               = "Shear";
+ENVELOP_VALUES		= "Envelop values";
+ENVELOP_CRITICALS   = "Envelop criticals";
+SNG					= "Singularity";
+
+

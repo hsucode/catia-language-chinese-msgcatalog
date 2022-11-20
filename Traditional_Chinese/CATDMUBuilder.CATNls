@@ -1,0 +1,93 @@
+INFO_HELP="
+CATDMUBuilder 建立相關表列文件的產品並提供暫存器相關資料.\n
+用法 : \n
+   顯示說明資訊:
+      CATDMUBuilder -h\n
+   建立產品組合和提供暫存器資料:
+      CATDMUBuilder inputlocation
+                    [-db dbx -user user -spwd cryppwd -role role -server srv]
+                    [-static][-selins]
+                    -product dirprod [-prefix prefix]
+                    [-replacebycgr dircgr][-activate|-deactivate][-onlyone]
+                    [-nocache][-force][-copycache]\n
+   填滿暫存器資料:
+      CATDMUBuilder inputlocation
+                    [-db dbx -user user -spwd cryppwd -role role -server srv]
+                    [-static][-selins]\n
+Windows 例子 :\n
+   CATDMUBuilder -h
+   CATDMUBuilder c:\u\input.txt -product c:\proddir\n
+Unix Examples:\n
+   CATDMUBuilder -h
+   CATDMUBuilder /u/input1
+   CATDMUBuilder /u/input2 -user user1 -spwd user1pwd -role user1role -server server2\n
+引數 :\n
+   -h                   : 說明.
+   inputlocation        : 定義處理的文件表列.
+                          路徑可以是:
+                          - 內含文件表列的檔案.
+                            每行中必須含有一個檔案.
+                          - 含有文件的目錄.
+                            此目錄中所有文件均被處理.
+                          將處理三種文件: CATProduct, CATVpm 或 psn.
+   -db dbx              : 定義資料庫 (VPM, VPMServer 或 ENOVIAV5).
+   -user user           : 定義使用者.
+   -pwd  pwd            : 定義使用者密碼 (不可和 -spwd 一同使用).
+   -spwd cryppwd        : 定義使用者密碼.
+                          使用前先解碼.
+   -role role           : 定義使用者角色.
+   -server srv          : 定義伺服器.
+   -serverid id         : 連結已存伺服器 (只適用與 ENOVIAV5).
+   -host hostid         : 定義伺服機器 (只適用與 VPMServer).
+   -static              : 以統計選擇開啟 psn 檔案 (只適用 psn).
+                          預設以動態選擇開啟.
+   -selins              : 以所選新元件開啟 psn 檔案 (只適用 psn).
+                          預設開啟所有新元件.
+   -product dirprod     : 儲存產品在目錄中.
+                          此目錄可以是經由 'CATDLN 處理的 DLName ://'.
+  -prefix prefix        : 以加上字首儲存所有產品.
+   -replacebycgr dircgr : 以在目錄 dircgr 中相關的 cgr 更換所有的分件.
+                          此目錄可以是經由 'CATDLN 處理的 DLName ://'.
+   -activate            : 啟動所有外形和儲存作動狀態.
+   -deactivate          : 不啟動所有外形和儲存作動狀態.
+    -onlyone            : 在根產品整合所有分件.
+   -nocache             : 避免暫存器步驟.
+   -force               : 強迫計算暫存器資料.
+   -copycache           : 複製本機暫存器目錄所有資料.
+   -noreplace           : 複製時避免檔案被置換.
+   -mp                  : 起動多重程序.
+   -listcomp dircomp    : 表列每個產品的所有分件, 目錄將會對每個產品 (相同名稱)
+                          含有一個文字檔案. 每個檔案的每一行均代表一個分件.
+   -outputformat xx yy  : 輸出產品架構如同表列規格
+                          (xx, yy). 此選項需要 -product 選項. 每個檔案
+                          輸出在產品目錄.
+   -savedata            : 在相同目錄儲存鏈結資料至產品架構. \n
+   NB: 如文件參考 VPM, 則需要所有伺服器資料 user, spwd, role. \n
+偵錯情形:\n
+   可能的處理返回碼為: \n
+      0   成功完成.\n
+      1   因下列原因失敗:
+          - 沒有軟體授權
+          - 未啟動暫存器管理
+          - 缺少引數
+          - 無效參數
+          - 選項後缺少參數
+          - 缺少輸入檔案
+          - 無法找到檔案
+          - 無法開啟輸入檔案
+          - 文件型式不對 \n
+      2   處理中發生錯誤.\n
+      3   部份完成.\n
+偵錯:\n
+   退出情形 = 1:
+      利用錯誤報告檔案內的資訊修改命令或環境. \n
+   退出情形 = 2:
+      聯絡售商.\n
+   退出情形 = 3:
+      修改造成錯誤的檔案: 檔案名稱存在錯誤報告內. 交互使用檔案可能會提供問題資訊.
+";
+ERR_PROCESSING="錯誤: 無法執行 CATDMUBuilder.";
+ERR_TREATMENT="錯誤: 無法處理下列文件或目錄:";
+OK_TREATMENT="OK: 下列文件或目錄已處理:";
+START_BATCH="CATDMUBuilder 開始在 :";
+STOP_BATCH="CATDMUBuilder 經過下列時間停止 :";

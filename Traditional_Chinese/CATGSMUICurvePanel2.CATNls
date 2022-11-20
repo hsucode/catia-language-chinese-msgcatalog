@@ -1,0 +1,88 @@
+//---------------------------------------------------------------
+// Resource file for CATGSMUICurvePanel2 class
+// US
+//---------------------------------------------------------------
+
+Title="雲形線定義";
+//colonne de la multilist PtMultiList.
+
+PtMultiList.LongHelp="列出雲形線將經過的點.";
+
+PostionFrame.AfterRadio.Title="點增加於後";
+PostionFrame.AfterRadio.LongHelp=
+"於表列顯示點後增加一點.";
+PostionFrame.BeforeRadio.Title="點增加於前";
+PostionFrame.BeforeRadio.LongHelp=
+"於表列顯示點前增加一點.";
+PostionFrame.ReplaceRadio.Title="更換點";
+PostionFrame.ReplaceRadio.LongHelp="更換表列顯示點.";
+PostionFrame.AfterRadio.ShortHelp="選擇點後";
+PostionFrame.BeforeRadio.ShortHelp="選擇點前";
+PostionFrame.ReplaceRadio.ShortHelp="更換選擇點";
+
+Col1="點";
+Col2="相切方向.";
+Col3="張力";
+Col4="曲線方向.";
+Col5="曲線半徑";
+
+
+WilsonFrame.WilsonBt.Title="Wilson-Fowler 形式";
+WilsonFrame.WilsonBt.LongHelp="啟動 Wilson-Fowler 形式";
+
+OnSupportFrame.OnSupportBt.Title="依附幾何";
+OnSupportFrame.OnSupportBt.ShortHelp="投影雲形線至依附曲面上.";
+OnSupportFrame.SuppoSelect.LongHelp="允許投影雲形線至依附曲面上.";
+OnSupportFrame.SplineClose.Title="關閉雲形線";
+OnSupportFrame.SplineClose.LongHelp="如果幾何匹配則關閉雲形線.";
+
+
+PtSpecFrame.ExplicitCstFrame.TgtDirLabel.Title="切線方向.";
+PtSpecFrame.ExplicitCstFrame.TgtDirLabel.ShortHelp="所選點的切線方向";
+PtSpecFrame.ExplicitCstFrame.TgtDirLabel.LongHelp="定義所選點的切線方向.";
+PtSpecFrame.ExplicitCstFrame1.RcDirectionLabel.Title="曲率方向.";
+PtSpecFrame.ExplicitCstFrame1.RcDirectionLabel.ShortHelp="所選點的曲率半徑";
+PtSpecFrame.ExplicitCstFrame1.RcDirectionLabel.LongHelp="定義所選點的曲率半徑方向.";
+
+PtSpecFrame.ExplicitCstFrame.TgtNormeLabel.Title="相切張力";
+PtSpecFrame.ExplicitCstFrame.TgtNormeLabel.ShortHelp="垂直切線";
+PtSpecFrame.ExplicitCstFrame.TgtNormeLabel.LongHelp="定義垂直切線, 數值為 0 時表示沒有限制.";
+PtSpecFrame.ExplicitCstFrame1.RCValueLabel.Title="曲率半徑";
+PtSpecFrame.ExplicitCstFrame1.RCValueLabel.ShortHelp="為所選點量測曲率半徑";
+PtSpecFrame.ExplicitCstFrame1.RCValueLabel.LongHelp="定義為所選點量測的曲率半徑, 數值為 0 時表示沒有限制.";
+
+PtSpecFrame.ExplicitCstFrame.TgtNormeFrame.EnglobingFrame.IntermediateFrame.Spinner.Title="相切張力";
+PtSpecFrame.ExplicitCstFrame.RcValFrame.EnglobingFrame.IntermediateFrame.Spinner.Title="曲率半徑";
+
+PtSpecFrame.CstTypeFrame.CstTypeLabel.Title="拘束形式: ";
+PtSpecFrame.CstTypeFrame.CstTypeLabel.LongHelp="在提供位置的拘束形式: 明確的或由曲線參考 ";
+PtSpecFrame.CstTypeFrame.CstTypeCombo.LongHelp="在提供位置的拘束形式: 明確的或由曲線參考 ";
+
+PtSpecFrame.CstTypeFrame.TgtNormeCstFrame.EnglobingFrame.IntermediateFrame.Spinner.Title="相切張力";
+
+PtSpecFrame.FromEltCstFrame.CstEltLabel.Title="元素: ";
+PtSpecFrame.FromEltCstFrame.CstEltLabel.LongHelp="雲形線上指定位置上曲線元素的相切或曲率拘束.";
+PtSpecFrame.FromEltCstFrame.CstEltFra.LongHelp="雲形線上指定位置上曲線元素的相切或曲率拘束.";
+PtSpecFrame.FromEltCstFrame.CstTensionLabel.Title="相切張力";
+PtSpecFrame.FromEltCstFrame.CstTensionLabel.LongHelp="垂直切線";
+
+PtSpecFrame.FromEltCstFrame.CstContinuityLabel.Title="連續性: ";
+PtSpecFrame.FromEltCstFrame.CstContinuityLabel.LongHelp="雲形線上指定位置的連續形式拘束: 相切或曲率";
+PtSpecFrame.FromEltCstFrame.CstContinuityCombo.LongHelp="雲形線上指定位置的連續形式拘束: 相切或曲率";
+
+ContinuityTypeTangency = "相切";
+ContinuityTypeCurvature = "曲率";
+
+CstTypeExplicit = "明確";
+CstTypeFromElement = "從曲線";
+
+
+BtFrame.RemovePoint.Title="移除點";
+BtFrame.RemoveTgt.Title="移除相切.";
+BtFrame.RemoveRc.Title="移除曲率.";
+BtFrame.InvertTgtDir.Title="逆轉相切.";
+BtFrame.InvertTgtDir.ShortHelp="逆轉相切方向";
+
+MoreInfo="顯示參數 >>";
+LessInfo="隱藏參數 <<";
+MoreInfoBt.ShortHelp="隱藏或顥示延伸資訊";

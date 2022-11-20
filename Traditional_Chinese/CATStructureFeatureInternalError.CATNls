@@ -1,0 +1,32 @@
+// *--------------------------------------------*//
+// *               Message example              *//
+// *                                            *//
+// *------------------------------------------- *//
+// STRFEATINTERNAL_ERR_2000.Request    = "Operation failed";
+// STRFEATINTERNAL_ERR_2000.Diagnostic = "Curve support /p1 is invalid";
+// STRFEATINTERNAL_ERR_2000.Advice     = "Choose a smoother curve";
+
+STRFEATINTERNAL_ERR_2001.Request    = "Bending Curve Calculation failed";
+STRFEATINTERNAL_ERR_2001.Diagnostic = "Structural member is NOT bent";
+STRFEATINTERNAL_ERR_2001.Advice     = "Choose a bent profile";
+
+STRFEATINTERNAL_ERR_2002.Request    = "Bending Curve Calculation failed";
+STRFEATINTERNAL_ERR_2002.Diagnostic = "Y value at ends is too big";
+STRFEATINTERNAL_ERR_2002.Advice     = "Y value at ends must be less than or equal to the web width";
+
+STRFEATINTERNAL_ERR_2003.Request    = "Bending Curve Calculation failed";
+STRFEATINTERNAL_ERR_2003.Diagnostic = "Y value at ends is too small";
+STRFEATINTERNAL_ERR_2003.Advice     = "Y value at ends must be greater than 0.0";
+
+STRFEATINTERNAL_ERR_2004.Request    = "Bending Curve Calculation failed";
+STRFEATINTERNAL_ERR_2004.Diagnostic = "Step value is too small";
+STRFEATINTERNAL_ERR_2004.Advice     = "Increase size of step value";
+
+STRFEATINTERNAL_ERR_2005.Request    = "Bending Curve Calculation failed";
+STRFEATINTERNAL_ERR_2005.Diagnostic = "Step value is too large";
+STRFEATINTERNAL_ERR_2005.Advice     = "Decrease size of step value, need at least 4 steps";
+
+STRFEATINTERNAL_ERR_2006.Request    = "Bending Curve Calculation failed";
+STRFEATINTERNAL_ERR_2006.Diagnostic = "Marking clearance is too large";
+STRFEATINTERNAL_ERR_2006.Advice     = "Decrease size of marking clearance";
+

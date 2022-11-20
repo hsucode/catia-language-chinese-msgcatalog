@@ -1,0 +1,980 @@
+
+// *--------------------------------------------*//
+// *               Exemple de message           *//
+// *  En_US                                     *//
+// *------------------------------------------- *//
+// ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// ERR_2000.Diagnostic = "Un des parametres est negatif";
+// ERR_2000.Advice     = "Utilisez des parametres positifs";
+           
+And=" 和 ";
+
+//Licencing 
+GSMMODELINPUT_ERR_000.Request    = "軟體授權錯誤";
+GSMMODELINPUT_ERR_000.Diagnostic = "建立 /p1 物件需要 /p2 產品軟體授權.";
+GSMMODELINPUT_ERR_000.Advice     = "請檢查軟體授權.";
+//JetonNull
+GSMMODELINPUT_ERR_100.Request    = "輸入標記無效";
+GSMMODELINPUT_ERR_100.Diagnostic = " ";
+GSMMODELINPUT_ERR_100.Advice     = " ";
+
+GSMMODELINPUT_ERR_101.Request    = "無效方向";
+GSMMODELINPUT_ERR_101.Diagnostic = " ";
+GSMMODELINPUT_ERR_101.Advice     = "選擇另一方向.";
+
+GSMMODELINPUT_ERR_110.Request    = "空的特性";
+GSMMODELINPUT_ERR_110.Diagnostic = "特性 /p1 是空的.";
+GSMMODELINPUT_ERR_110.Advice     = "請選擇另一個或更換它.";
+
+GSMMODELINPUT_ERR_120.Request    = "不佳的尺寸特性";
+GSMMODELINPUT_ERR_120.Diagnostic = "特性 /p1 不是好的特性.";
+GSMMODELINPUT_ERR_120.Advice     = "請選擇另一個或更換它.";
+
+GSMMODELINPUT_ERR_130.Request    = "不一致特性";
+GSMMODELINPUT_ERR_130.Diagnostic = "特性 /p1 不一致.";
+GSMMODELINPUT_ERR_130.Advice     = "請選擇另一個或更換它.";
+
+GSMMODELINPUT_ERR_140.Request    = "未連接特性";
+GSMMODELINPUT_ERR_140.Diagnostic = "特性 /p1 未連接.";
+GSMMODELINPUT_ERR_140.Advice     = "請選擇另一個或更換它.";
+
+GSMMODELINPUT_ERR_150.Request    = "動作失敗";
+GSMMODELINPUT_ERR_150.Diagnostic = "動作 /p1 失敗";
+GSMMODELINPUT_ERR_150.Advice     = "修改特性.";
+
+GSMMODELINPUT_ERR_160.Request    = "空的結果";
+GSMMODELINPUT_ERR_160.Diagnostic = "結果 /p1 是空的.";
+GSMMODELINPUT_ERR_160.Advice     = "修改特性.";
+
+GSMMODELINPUT_ERR_170.Request    = "不一致結果";
+GSMMODELINPUT_ERR_170.Diagnostic = "結果 /p1 不一致.";
+GSMMODELINPUT_ERR_170.Advice     = "修改特性.";
+
+// BoundGap       
+GSMMODELINPUT_ERR_200.Request    = " ";
+GSMMODELINPUT_ERR_200.Diagnostic = "無效的邊界 : 邊界 /p2 和邊界 /p3 間有  /p1 的間隙.";
+GSMMODELINPUT_ERR_200.Advice     = " ";
+
+// Dimension
+GSMMODELINPUT_ERR_250.Request    = "輸入尺寸不良";
+GSMMODELINPUT_ERR_250.Diagnostic = "指定的尺寸不良.";
+GSMMODELINPUT_ERR_250.Advice     = "請選擇另一個來替換它.";
+// NonHomogeneIn  
+GSMMODELINPUT_ERR_300.Request    = " ";
+GSMMODELINPUT_ERR_300.Diagnostic = "非同質性輸入 : 輸入不具相同大小.";
+GSMMODELINPUT_ERR_300.Advice     = " ";
+
+// NonHomogeneOut 
+GSMMODELINPUT_ERR_400.Request    = " ";
+GSMMODELINPUT_ERR_400.Diagnostic = "非同質性結果 : 結果元素不具相同大小.";
+GSMMODELINPUT_ERR_400.Advice     = " ";
+
+// NonManifoldIn  
+GSMMODELINPUT_ERR_500.Request    = " ";
+GSMMODELINPUT_ERR_500.Diagnostic = "無多種類輸入.";
+GSMMODELINPUT_ERR_500.Advice     = " ";
+
+// NonManifoldOut 
+GSMMODELINPUT_ERR_600.Request    = " ";
+GSMMODELINPUT_ERR_600.Diagnostic = "無多種類輸入.";
+GSMMODELINPUT_ERR_600.Advice     = " ";
+
+// Non Manifold & Overlaping
+GSMMODELINPUT_ERR_610.Request    = "動作失敗.";
+GSMMODELINPUT_ERR_610.Diagnostic = "元素 /p1 間與它們自己本身重疊.";
+GSMMODELINPUT_ERR_610.Advice     = "更改高亮度顯示元素或起始次元素.";
+
+// NonConnexeIn   
+GSMMODELINPUT_ERR_700.Request    = " ";
+GSMMODELINPUT_ERR_700.Diagnostic = "輸入 /p1 不是相連接元素.";
+GSMMODELINPUT_ERR_700.Advice     = " ";
+
+// NonConnexeIn dans point on curve
+GSMMODELINPUT_ERR_710.Request    = "輸入的 /p1 不是相連接元素, 並且沒有參考點.";
+GSMMODELINPUT_ERR_710.Diagnostic = "要建立曲線上的點, 它必須是連接的, 或 \n 必須有一參考點.";
+GSMMODELINPUT_ERR_710.Advice     = "使用連接曲線或增加參考點.";
+
+// NonConnexeOut  
+GSMMODELINPUT_ERR_800.Request    = " ";
+GSMMODELINPUT_ERR_800.Diagnostic = "無相連接元素結果";
+GSMMODELINPUT_ERR_800.Advice     = " ";
+
+// NonConnexeOut  
+GSMMODELINPUT_ERR_810.Request    = "沒有連接結果.";
+GSMMODELINPUT_ERR_810.Diagnostic = "結果有 /p1 定義.";
+GSMMODELINPUT_ERR_810.Advice     = " ";
+
+// Boundary intersection KO
+GSMMODELINPUT_ERR_900.Request    = " ";
+GSMMODELINPUT_ERR_900.Diagnostic = "從限制和邊界間沒有相交. 請修改此些元素.";
+GSMMODELINPUT_ERR_900.Advice     = " ";
+
+// Boundary intersection KO
+GSMMODELINPUT_ERR_1000.Request    = " ";
+GSMMODELINPUT_ERR_1000.Diagnostic = "至限制和邊界間沒有相交. 請修改此些元素.";
+GSMMODELINPUT_ERR_1000.Advice     = " ";
+
+//  Direction not handled
+GSMMODELINPUT_ERR_1100.Request    = " ";
+GSMMODELINPUT_ERR_1100.Diagnostic = "方向無法處理 : X = /p1 , Y = /p2 , Z = /p3.";
+GSMMODELINPUT_ERR_1100.Advice     = "請選擇 X或 Y或 Z的方向 (X = 1 或 Y = 1 或 Z = 1).";
+
+// closing point
+GSMMODELINPUT_ERR_1200.Request    = "/p1 是切面 /p2 的新封閉點.";
+GSMMODELINPUT_ERR_1200.Diagnostic = "/p1 未依附在 /p2 上.";
+GSMMODELINPUT_ERR_1200.Advice     = "請以依附在 /p2 上的點來更換 /p1.";
+
+// closing point
+GSMMODELINPUT_ERR_1201.Request    = "/p1 是切面 /p2 的新封閉點.";
+GSMMODELINPUT_ERR_1201.Diagnostic = "/p1 不是封閉的曲線.";
+GSMMODELINPUT_ERR_1201.Advice     = "請使用封閉的曲線來更換 /p1 或是移除 /p2 封閉點.";
+
+// coupling mode 
+GSMMODELINPUT_ERR_1202.Request    = "";
+GSMMODELINPUT_ERR_1202.Diagnostic = "相交連續複合模式無法應用.";
+GSMMODELINPUT_ERR_1202.Advice     = "請修改複合模式至比率.";
+
+// coupling mode 
+GSMMODELINPUT_ERR_1203.Request    = "";
+GSMMODELINPUT_ERR_1203.Diagnostic = "曲辦複合模式無法應用";
+GSMMODELINPUT_ERR_1203.Advice     = "請修改複合模式至比率.";
+
+// coupling points
+GSMMODELINPUT_ERR_1204.Request    = "複合模式 /p1 具有 /p2 個複合點.";
+GSMMODELINPUT_ERR_1204.Diagnostic =
+"複合點數目必須與曲線數目 /p1 相等.";
+GSMMODELINPUT_ERR_1204.Advice     = "新增或移除複合點.";
+
+// coupling points
+GSMMODELINPUT_ERR_1205.Request    = 
+"複合數目 /p1 的複合點數目 /p2 是空的.";
+GSMMODELINPUT_ERR_1205.Diagnostic =
+"複合點必須是點形式的特徵.";
+GSMMODELINPUT_ERR_1205.Advice     =
+"移除複合點數目 /p1 以 /p2 點.";
+
+// coupling points
+GSMMODELINPUT_ERR_1206.Request    = "/p1 是曲線 /p2 的新複合點.";
+GSMMODELINPUT_ERR_1206.Diagnostic = "/p1 未依附在 /p2 上.";
+GSMMODELINPUT_ERR_1206.Advice     = "請以依附在 /p2 上的點來更換 /p1.";
+
+// coupling points
+GSMMODELINPUT_ERR_1207.Request    = "";
+GSMMODELINPUT_ERR_1207.Diagnostic = "目前複合模式無法應用.";
+GSMMODELINPUT_ERR_1207.Advice     = 
+"修改複合模式至比率或
+增加或移除導引或增加或移除複合.";
+
+// Loft
+// Part design Loft can not be close with faces
+GSMMODELINPUT_ERR_1220.Request    = "";
+GSMMODELINPUT_ERR_1220.Diagnostic = "無法以修剪面 /p1 封閉多重切面實體.";
+GSMMODELINPUT_ERR_1220.Advice     = "";
+
+GSMMODELINPUT_ERR_1221.Request    = "";
+GSMMODELINPUT_ERR_1221.Diagnostic = "無法以修剪面 /p1 及修剪面 /p2 封閉多重切面實體.";
+GSMMODELINPUT_ERR_1221.Advice     = "";
+
+// GSO Wrap Curve
+GSMMODELINPUT_ERR_1250.Request    = "您提供參考投影方向至 /p1.";
+GSMMODELINPUT_ERR_1250.Diagnostic = 
+"參考脊椎線 /p1 不是線性的.
+參考投影方向必須是線性的參考脊椎線.";
+GSMMODELINPUT_ERR_1250.Advice     = 
+"請使用計算過的參考方向投影
+或使用線性參考脊椎線.";
+
+// GSO Wrap Curve
+GSMMODELINPUT_ERR_1251.Request    = "您提供參考投影方向至 /p1.";
+GSMMODELINPUT_ERR_1251.Diagnostic = 
+"參考脊椎線 /p1 不是線性的. 且彎曲曲線
+且有參考方向投影.
+參考投影方向必須是線性的參考脊椎線.";
+GSMMODELINPUT_ERR_1251.Advice     = 
+"請使用計算過的參考方向投影
+或使用線性參考脊椎線.";
+
+// Revolution surface
+GSMMODELINPUT_ERR_1300.Request    = " ";
+GSMMODELINPUT_ERR_1300.Diagnostic = "/p1 不是旋轉曲面.";
+GSMMODELINPUT_ERR_1300.Advice     = "請以旋轉曲面來更換它.";
+
+// Planar curve
+GSMMODELINPUT_ERR_1350.Request    = "需要平面的曲線或外形.";
+GSMMODELINPUT_ERR_1350.Diagnostic = "/p1 不是平面的曲線或外形.";
+GSMMODELINPUT_ERR_1350.Advice     = "請以平面的曲線或外形來更換它.";
+
+// Input des boundary
+GSMMODELINPUT_ERR_1400.Request    = " ";
+GSMMODELINPUT_ERR_1400.Diagnostic = "無效的輸入邊界 : Brep /p1 依附 /p2";
+GSMMODELINPUT_ERR_1400.Advice     = "請選擇其它的輸入元素來更換它.";
+
+GSMMODELINPUT_ERR_1410.Request    = " ";
+GSMMODELINPUT_ERR_1410.Diagnostic = "輸入的 /p1 邊界切線不連續";
+GSMMODELINPUT_ERR_1410.Advice     = "請選擇其它輸入元素來更換它.";
+
+GSMMODELINPUT_ERR_1420.Request    = " ";
+GSMMODELINPUT_ERR_1420.Diagnostic = "輸入邊界 /p1 為封閉曲線";
+GSMMODELINPUT_ERR_1420.Advice     = "請選擇另一輸入元素來更換它.";
+
+GSMMODELINPUT_ERR_1430.Request    = " ";
+GSMMODELINPUT_ERR_1430.Diagnostic = "無效輸入元素: /p1 不是邊界";
+GSMMODELINPUT_ERR_1430.Advice     = "請選擇其它輸入元素來更換它.";
+
+// Input des extracts
+GSMMODELINPUT_ERR_1450.Request    = " ";
+GSMMODELINPUT_ERR_1450.Diagnostic = "萃取輸入 /p1 切線不連續";
+GSMMODELINPUT_ERR_1450.Advice     = "請選擇其它輸入元素來更換它.";
+
+GSMMODELINPUT_ERR_1460.Request    = " /p1 無效.";
+GSMMODELINPUT_ERR_1460.Diagnostic = "結果元素為互補模式 \n 將不會含有任何幾何元素.";
+GSMMODELINPUT_ERR_1460.Advice     = "請關閉互補模式 \n 或修改增長型式.";
+
+//////////////////////////////
+GSMMODELINPUT_ERR_1500.Request    = " ";
+GSMMODELINPUT_ERR_1500.Diagnostic = "無效的輸入";
+GSMMODELINPUT_ERR_1500.Advice     = "請選擇其它的輸入元素來更換它.";
+
+GSMMODELINPUT_ERR_1600.Request    = " ";
+GSMMODELINPUT_ERR_1600.Diagnostic = "極限點無法投影至邊界上.";
+GSMMODELINPUT_ERR_1600.Advice     = "請選擇其它點.";
+
+GSMMODELINPUT_ERR_1700.Request    = " ";
+GSMMODELINPUT_ERR_1700.Diagnostic = "邊界上的極限點投影不是點.";
+GSMMODELINPUT_ERR_1700.Advice     = "請選擇其它點.";
+
+GSMMODELINPUT_ERR_1800.Request    = " ";
+GSMMODELINPUT_ERR_1800.Diagnostic = "極限線和邊界有太多的交點.";
+GSMMODELINPUT_ERR_1800.Advice     = "請更換它.";
+
+GSMMODELINPUT_ERR_1900.Request    = " ";
+GSMMODELINPUT_ERR_1900.Diagnostic = "極限線和邊界相交不是點.";
+GSMMODELINPUT_ERR_1900.Advice     = "請更換它.";
+
+GSMMODELINPUT_ERR_2000.Request    = " ";
+GSMMODELINPUT_ERR_2000.Diagnostic = "邊界無法以極限來分離.";
+GSMMODELINPUT_ERR_2000.Advice     = "請更換極限曲線.";
+
+GSMMODELINPUT_ERR_2100.Request    = " ";
+GSMMODELINPUT_ERR_2100.Diagnostic = "元素 /p1 無相關幾何.";
+GSMMODELINPUT_ERR_2100.Advice     = "請重建幾何.";
+
+// Equidistant reference for near  
+GSMMODELINPUT_ERR_2300.Request    = "數個等距離元素.";
+GSMMODELINPUT_ERR_2300.Diagnostic = "參考元素與多個元素距離相等";
+GSMMODELINPUT_ERR_2300.Advice     = "系統不允許計算此結果.";
+
+//Equidistant reference for project
+GSMMODELINPUT_ERR_2310.Request    = "數個等分元素.";
+GSMMODELINPUT_ERR_2310.Diagnostic = "投影的元素有好幾個等分的投影.";
+GSMMODELINPUT_ERR_2310.Advice     = "無法計算單一解. 計算所有解和使用 接近(NEAR) 操作.";
+
+// Sweep errors
+GSMMODELINPUT_ERR_2350.Request    = " ";
+GSMMODELINPUT_ERR_2350.Diagnostic = "斷面 /p1 或依附的平面(與脊椎線垂直) \n 圴未與導引線線相交.";
+GSMMODELINPUT_ERR_2350.Advice     = "請正確的定位斷面 (可能在掃掠曲面定義對話框內).";
+
+GSMMODELINPUT_ERR_2351.Request    = " ";
+GSMMODELINPUT_ERR_2351.Diagnostic = "所提供的長度值引導至無效曲面.";
+GSMMODELINPUT_ERR_2351.Advice     = "請更改長度值.";
+
+GSMMODELINPUT_ERR_2352.Request    = " ";
+GSMMODELINPUT_ERR_2352.Diagnostic = "所提供的圓錐參數不介於 0 和 1 之間.";
+GSMMODELINPUT_ERR_2352.Advice     = "請修改參數值.";
+
+GSMMODELINPUT_ERR_2353.Request    = " ";
+GSMMODELINPUT_ERR_2353.Diagnostic = "使用角度定義時, 導引曲線 /p1 \n 必須是連續相切.";
+GSMMODELINPUT_ERR_2353.Advice     = " ";
+
+GSMMODELINPUT_ERR_2354.Request    = " ";
+GSMMODELINPUT_ERR_2354.Diagnostic = "推拔線性掃掠曲面: 圓椎計算模式
+與整體可變定義角度 LAW 不一致.";
+GSMMODELINPUT_ERR_2354.Advice     = " ";
+
+//  Helix curve: Negative Pitch or Height
+GSMMODELINPUT_ERR_2400.Request    = " ";
+GSMMODELINPUT_ERR_2400.Diagnostic = "不允許負的高度.";
+GSMMODELINPUT_ERR_2400.Advice     = "請輸入正值.";
+
+//  Helix curve: Axis does not lie on Profile plane
+GSMMODELINPUT_ERR_2410.Request    = " ";
+GSMMODELINPUT_ERR_2410.Diagnostic = "軸未依附在斷面平面上.";
+GSMMODELINPUT_ERR_2410.Advice     = "請投影軸在斷面平面上.";
+
+//  Helix curve: Starting angle and Height are incompatible
+GSMMODELINPUT_ERR_2500.Request    = " ";
+GSMMODELINPUT_ERR_2500.Diagnostic = "提供的起始角度和高度不相容.";
+GSMMODELINPUT_ERR_2500.Advice     = "請減少起始角度或增加高度.";
+
+// Conic Curves error messages 
+GSMMODELINPUT_ERR_2600.Request    = "圓錐曲線的起始和終點切線必須設定.";
+GSMMODELINPUT_ERR_2600.Diagnostic = "圓錐曲線的起始和終點切線未設定.";
+GSMMODELINPUT_ERR_2600.Advice     = "請設定圓錐曲線的起始和終點切線.";
+
+GSMMODELINPUT_ERR_2700.Request    = "圓錐曲線的起始和終點切線必須設定.";
+GSMMODELINPUT_ERR_2700.Diagnostic = "起始未設定.";
+GSMMODELINPUT_ERR_2700.Advice     = "請設定起始切線.";
+
+GSMMODELINPUT_ERR_2800.Request    = "圓錐曲線的起始和終點切線必須設定.";
+GSMMODELINPUT_ERR_2800.Diagnostic = "終點未設定.";
+GSMMODELINPUT_ERR_2800.Advice     = "請設定終點切線.";
+
+GSMMODELINPUT_ERR_2900.Request    = "圓錐曲線的限制數目不可超過 5.";
+GSMMODELINPUT_ERR_2900.Diagnostic = "圓錐曲線的限制數目超過 5.";
+GSMMODELINPUT_ERR_2900.Advice     = "請取消取一個限制.";
+
+GSMMODELINPUT_ERR_3000.Request    = "相切限制組態目前不支援.";
+GSMMODELINPUT_ERR_3000.Diagnostic = "除了終點相切外,另外還有一個中間的相切.";
+GSMMODELINPUT_ERR_3000.Advice     = "請取消取一個相切限制.";
+
+GSMMODELINPUT_ERR_3100.Request    = "起點和終點間至少需要一個中間點.";
+GSMMODELINPUT_ERR_3100.Diagnostic = "缺少第一個中間點.";
+GSMMODELINPUT_ERR_3100.Advice     = "請設定第一個中間點.";
+
+GSMMODELINPUT_ERR_3200.Request    = "指定參數需要最終切線相交.";
+GSMMODELINPUT_ERR_3200.Diagnostic = "圓錐曲線的起始和最終切線平行.";
+GSMMODELINPUT_ERR_3200.Advice     = "請修改切線方向使其相交.";
+
+GSMMODELINPUT_ERR_3300.Request    = "所指定的點必須不與起點和終點共線.";
+GSMMODELINPUT_ERR_3300.Diagnostic = "經過點 /p1 與起點和終點共線.";
+GSMMODELINPUT_ERR_3300.Advice     = "請移動此點朝向切線相交點.";
+
+GSMMODELINPUT_ERR_3400.Request    = "圓錐曲線在切線方向的任一點必須依附在平面上.";
+GSMMODELINPUT_ERR_3400.Diagnostic = "圓錐曲線在切線方向的點未依附在平面上.";
+GSMMODELINPUT_ERR_3400.Advice     = "請投影此點至依附的平面.";
+
+GSMMODELINPUT_ERR_3500.Request    = "圓錐曲線上的所有點必須共面.";
+GSMMODELINPUT_ERR_3500.Diagnostic = "起始點未依附在平面上.";
+GSMMODELINPUT_ERR_3500.Advice     = "請投影此點至依附的平面.";
+
+GSMMODELINPUT_ERR_3600.Request    = "圓錐曲線上的所有點必須共面.";
+GSMMODELINPUT_ERR_3600.Diagnostic = "終點未依附在平面上.";
+GSMMODELINPUT_ERR_3600.Advice     = "請投影此點至依附的平面.";
+
+GSMMODELINPUT_ERR_3700.Request    = "圓錐曲線上的所有點必須共面.";
+GSMMODELINPUT_ERR_3700.Diagnostic = "經過點 /p1 未依附在平面上.";
+GSMMODELINPUT_ERR_3700.Advice     = "請投影此點至依附的平面.";
+
+// pour l'assemble
+GSMMODELINPUT_ERR_3800.Request    = "無效的溶入元素距離數值.";
+GSMMODELINPUT_ERR_3800.Diagnostic = "數值必須大於 0 ";
+GSMMODELINPUT_ERR_3800.Advice     = "且小於等於 0.1 . ";
+
+GSMMODELINPUT_ERR_3810.Request    = "無效的元素加入動作終止.";
+GSMMODELINPUT_ERR_3810.Diagnostic = "至少有一個輸入的修剪面 /p1 是無效的.";
+GSMMODELINPUT_ERR_3810.Advice     = "修改輸入或用來產生它的元素.";
+
+GSMMODELINPUT_ERR_3820.Request    = "無效的元素加入動作終止.";
+GSMMODELINPUT_ERR_3820.Diagnostic = "輸入的元素 /p1 是無效的.";
+GSMMODELINPUT_ERR_3820.Advice     = "修改輸入或用來產生它的元素.";
+
+GSMMODELINPUT_ERR_3830.Request    = "因無效的元素導致連接動作中止.";
+GSMMODELINPUT_ERR_3830.Diagnostic = "至少有一個輸入的修剪面 /p1 邊線有自我相交.";
+GSMMODELINPUT_ERR_3830.Advice     = "請修改輸入元素.";
+
+GSMMODELINPUT_ERR_3840.Request    = "因無效的元素導致連接動作中止.";
+GSMMODELINPUT_ERR_3840.Diagnostic = "輸入的修剪面有數個邊線自我相交.";
+GSMMODELINPUT_ERR_3840.Advice     = "請修改輸入元素.";
+
+GSMMODELINPUT_ERR_3850.Request    = "因無效元素而中斷連接動作.";
+GSMMODELINPUT_ERR_3850.Diagnostic = " /p1 間的角度大於限制角度 .";
+GSMMODELINPUT_ERR_3850.Advice     = "請修改限制角度或輸入元素.";
+
+GSMMODELINPUT_ERR_3851.Request    = "因無效元素導致連接動作中止.";
+GSMMODELINPUT_ERR_3851.Diagnostic = "角度大於角度精度限制 .";
+GSMMODELINPUT_ERR_3851.Advice     = "請修改角度限制或輸入元素.";
+
+GSMMODELINPUT_ERR_3860.Request    = "連接動作中止.";
+GSMMODELINPUT_ERR_3860.Diagnostic = "要連接的元素或要移除的次元素不相容.";
+GSMMODELINPUT_ERR_3860.Advice     = "請修改容差或輸入的元素.";
+
+// pour le Healing
+GSMMODELINPUT_ERR_3900.Request    = "所選的元素不是物件的內部元素.";
+GSMMODELINPUT_ERR_3900.Diagnostic = "元素 /p1 不在要修補的特性內.";
+GSMMODELINPUT_ERR_3900.Advice     = "請選擇其它物件.";
+
+// pour les coniques a nouveau car cet .... de jean-max m'a pique mes numeros 3800 et 3900 
+GSMMODELINPUT_ERR_4000.Request    = "切線相交點必須不與起點和終點共線.";
+GSMMODELINPUT_ERR_4000.Diagnostic = "切線相交點與起點和終點共線.";
+GSMMODELINPUT_ERR_4000.Advice     = "請增加切線相交點的高度 t.";
+
+GSMMODELINPUT_ERR_4100.Request    = "圓錐參數必須大於圓錐參數的精確度.";
+GSMMODELINPUT_ERR_4100.Diagnostic = "圓錐參數小於圓錐參數的精確度 = /p1.";
+GSMMODELINPUT_ERR_4100.Advice     = "請增加圓錐參數的數值.";
+
+GSMMODELINPUT_ERR_4200.Request    = "圓錐參數的數值必須小於圓錐參數的精確度一分.";
+GSMMODELINPUT_ERR_4200.Diagnostic = "圓錐參數大於  /p1.";
+GSMMODELINPUT_ERR_4200.Advice     = "請減少圓錐參數的數值";
+
+GSMMODELINPUT_ERR_4300.Request    = "起點和終點的方向必須與圓錐曲線的方向一致.";
+GSMMODELINPUT_ERR_4300.Diagnostic = "起點和終點的方向與圓錐曲線的方向不一致.";
+GSMMODELINPUT_ERR_4300.Advice     = "請逆轉方向.";
+
+GSMMODELINPUT_ERR_4400.Request    = "建立圓錐曲線需要五個一致性的條件.";
+GSMMODELINPUT_ERR_4400.Diagnostic = "一或多個條件不一致.";
+GSMMODELINPUT_ERR_4400.Advice     = "請檢查每個條件的一致性.";
+
+GSMMODELINPUT_ERR_4500.Request    = "起點和終點的方向必須與圓錐曲線的方向一致.";
+GSMMODELINPUT_ERR_4500.Diagnostic = "終點的切線方向與圓錐曲線的方向不一致.";
+GSMMODELINPUT_ERR_4500.Advice     = "請逆轉終點的切線方向.";
+
+GSMMODELINPUT_ERR_4600.Request    = "起點和終點的方向必須與圓錐曲線的方向一致.";
+GSMMODELINPUT_ERR_4600.Diagnostic = "起點和終點的切線方向與圓錐曲線的方向不一致.";
+GSMMODELINPUT_ERR_4600.Advice     = "請逆轉起點和終點的切線方向.";
+
+GSMMODELINPUT_ERR_4700.Request    = "封閉曲線必須具有可用的角.";
+GSMMODELINPUT_ERR_4700.Diagnostic = "使用的元素 /p1 是一個沒有可用角的封閉曲線.";
+GSMMODELINPUT_ERR_4700.Advice     = "請選擇明確的參考點.";
+
+GSMMODELINPUT_ERR_4750.Request    = "缺少參考點.";
+GSMMODELINPUT_ERR_4750.Diagnostic = "您必須指定參考點來建立垂直封閉曲線的平面.\n 預設的中間點不可使用.";
+GSMMODELINPUT_ERR_4750.Advice     = "請選擇參考點.";
+
+GSMMODELINPUT_ERR_4800.Request    = "一個邊無法辨識.";
+GSMMODELINPUT_ERR_4800.Diagnostic = "請以新的來更換綠色邊.";
+GSMMODELINPUT_ERR_4800.Advice     = " ";
+
+// Offset monosurface pour config P1
+GSMMODELINPUT_ERR_5000.Request    = "元素不允許偏移.";
+GSMMODELINPUT_ERR_5000.Diagnostic = "元素 /p1 不是一個單一曲面.";
+GSMMODELINPUT_ERR_5000.Advice     = "此組態中, 您只可偏移單一曲面. ";
+
+// Offset distance invalide
+GSMMODELINPUT_ERR_5010.Request    = "";
+GSMMODELINPUT_ERR_5010.Diagnostic = "無效偏移距離.";
+GSMMODELINPUT_ERR_5010.Advice     = "請修改輸入.";
+
+// Offset deviation invalide
+GSMMODELINPUT_ERR_5020.Request    = "偏移和變異值無效.";
+GSMMODELINPUT_ERR_5020.Diagnostic = "偏移值必須大於變異值.";
+GSMMODELINPUT_ERR_5020.Advice     = "變異值必須大於 0.001mm. ";
+
+// Angle nul pour le ReflectLine
+GSMMODELINPUT_ERR_5100.Request    = "無效角度或不允許 180 度.";
+GSMMODELINPUT_ERR_5100.Diagnostic = " /p1 和 /p2 間的角度是無效的或等於 180 度.";
+GSMMODELINPUT_ERR_5100.Advice     = "修改角度值.";
+
+// Angle nul pour le ReflectLine option plan tangent
+GSMMODELINPUT_ERR_5101.Request    = " 若未勾選垂直選項, 則不允許 -90 或 90 度角.";
+GSMMODELINPUT_ERR_5101.Diagnostic = " /p1 和 /p2 間的角度等於 -90 度或 90 度角.";
+GSMMODELINPUT_ERR_5101.Advice     = "修改角度值.";
+
+// Une line si sketch pour le combine
+GSMMODELINPUT_ERR_5200.Request    = "無解.";
+GSMMODELINPUT_ERR_5200.Diagnostic = "以一般組合形式它是不可能 \n 來找到垂直方向至 /p1.";
+GSMMODELINPUT_ERR_5200.Advice     = 
+"請以平面形式曲線或外形 (以草圖平面) /n 或選取沿拉伸的方向.";
+
+// la spec n'est pas monoelement
+GSMMODELINPUT_ERR_5250.Request    = "";
+GSMMODELINPUT_ERR_5250.Diagnostic = 
+"元素 /p1 不是單一邊的曲線.
+只允許單一邊的曲線.";
+GSMMODELINPUT_ERR_5250.Advice     = 
+"以單一邊曲線來替換.";
+
+GSMMODELINPUT_ERR_5251.Request    = "";
+GSMMODELINPUT_ERR_5251.Diagnostic = 
+"元素 /p1 不是單一曲面.
+只允許單一曲面.";
+GSMMODELINPUT_ERR_5251.Advice     = 
+"以單一曲面來替換.";
+
+// line bisecting
+GSMMODELINPUT_ERR_5300.Request    = "無效輸入元素組.";
+GSMMODELINPUT_ERR_5300.Diagnostic = "至少有一個 /p1 和 /p2 元素不是線直線.";
+GSMMODELINPUT_ERR_5300.Advice     = "您可以選擇線性元素或, \n 選擇依附曲面.";
+
+GSMMODELINPUT_ERR_5310.Request    = "沒有相交或為同一條線.";
+GSMMODELINPUT_ERR_5310.Diagnostic = "輸入線沒有相交或為同一條線.";
+GSMMODELINPUT_ERR_5310.Advice     = "使用兩條相交的線或選擇參考點.";
+
+GSMMODELINPUT_ERR_5320.Request    = "沒有相交或多重相交.";
+GSMMODELINPUT_ERR_5320.Diagnostic = "輸入曲線沒有相交或多點相交.";
+GSMMODELINPUT_ERR_5320.Advice     = "請使用兩條單一相交的曲線.";
+
+// line 
+GSMMODELINPUT_ERR_5400.Request    = "依附無效.";
+GSMMODELINPUT_ERR_5400.Diagnostic = "依附 /p1 不是平面.";
+GSMMODELINPUT_ERR_5400.Advice     = "請以平面來更換它.";
+
+// Error if line does not lie on support
+GSMMODELINPUT_ERR_5401.Request    = "無效曲線.";
+GSMMODELINPUT_ERR_5401.Diagnostic = "曲線未在依附上.";
+GSMMODELINPUT_ERR_5401.Advice     = "請選擇在依附上的曲線.";
+
+// Rolling Offset
+GSMMODELINPUT_ERR_6000.Request    = "偏移值不允許.";
+GSMMODELINPUT_ERR_6000.Diagnostic = "偏移值大於 0.";
+GSMMODELINPUT_ERR_6000.Advice     = " ";
+
+// Split
+GSMMODELINPUT_ERR_6100.Request    = "";
+GSMMODELINPUT_ERR_6100.Diagnostic = "當以線修剪或分割另一封閉線時, 依附必須指定.";
+GSMMODELINPUT_ERR_6100.Advice     = "";
+
+GSMMODELINPUT_ERR_6200.Request    = "";
+GSMMODELINPUT_ERR_6200.Diagnostic = "當修剪曲線時, 切斷元素必須是點,曲線或曲面. \n 當修剪曲面時, 切斷元素必須是曲線或曲面.";
+GSMMODELINPUT_ERR_6200.Advice     = "";
+
+// Splitting volumes using curve with volume as result type not allowed.
+GSMMODELINPUT_ERR_6201.Request    = "";
+GSMMODELINPUT_ERR_6201.Diagnostic = "當分割體積且結果為體積時, 切斷元素必須是曲面或平面.";
+GSMMODELINPUT_ERR_6201.Advice     = "更改切割元素為曲面或平面或選擇結果為曲面形式.";
+GSMMODELINPUT_ERR_6300.Request    = "";
+GSMMODELINPUT_ERR_6300.Diagnostic = "當依附未指定時, 切割或被切割元素必須是線.";
+GSMMODELINPUT_ERR_6300.Advice     = "";
+
+// Split plane/plane forbidden.
+GSMMODELINPUT_ERR_6301.Request    = "切割元素無效.";
+GSMMODELINPUT_ERR_6301.Diagnostic = "無限平面只能以封閉線切割.";
+GSMMODELINPUT_ERR_6301.Advice     = "薄殼只能以另一薄殼或平面切割: 點無效.";
+// Trim 
+GSMMODELINPUT_ERR_6400.Request    = "";
+GSMMODELINPUT_ERR_6400.Diagnostic = "當指定依附時, 兩個元素必須都是線.";
+GSMMODELINPUT_ERR_6400.Advice     = "";
+
+GSMMODELINPUT_ERR_6500.Request    = "";
+GSMMODELINPUT_ERR_6500.Diagnostic = "您必須以另一曲線來截斷曲線或以另一曲面來截斷曲面.";
+GSMMODELINPUT_ERR_6500.Advice     = "";
+
+// Sweep variationnel
+GSMMODELINPUT_ERR_6900.Request    = "所選草圖為 \"/p1\"";
+GSMMODELINPUT_ERR_6900.Diagnostic = 
+" \" 使用者切面的軸 \" (複製的 \"/p1\") 已被移動至與掃掠定位傾向一致. 
+下列限制 \"/p2\" 可能與此移動不相容.
+此情況可能導致不可測結果.";
+GSMMODELINPUT_ERR_6900.Advice     = 
+"要避免此結果, 請以此命令依據掃掠形式來建立草圖, 或修改最初草圖限制, 使用掃掠參考幾何來代替草圖軸系.";
+
+GSMMODELINPUT_ERR_6901.Request    = "所選草圖是 \"/p1\"";
+GSMMODELINPUT_ERR_6901.Diagnostic = 
+"它所包含沿著導引曲線的 3D 參考元素投影有可能是無意義的, 且會造成不可測結果或草圖無效.";
+GSMMODELINPUT_ERR_6901.Advice     = 
+"如果所使用的邊線未遵照您的指定, 您可嚐試以 3D 參考元素的相交來取代它們.";
+
+GSMMODELINPUT_ERR_6902.Request    = "所選草圖是 \"/p1\".";
+GSMMODELINPUT_ERR_6902.Diagnostic = 
+"它們未連接, 且不被目前的動作支援.";
+GSMMODELINPUT_ERR_6902.Advice     = 
+"您可考慮將部分草圖轉入 \" 建構元件 \", 來確定連接性.
+或建立並選取草圖輸出斷面特徵.";
+
+GSMMODELINPUT_ERR_6903.Request    = "所選草圖是 \"/p1\".";
+GSMMODELINPUT_ERR_6903.Diagnostic = "它是空的.";
+GSMMODELINPUT_ERR_6903.Advice     = "不可使用空的草圖.";
+
+GSMMODELINPUT_ERR_6904.Request    = "所選草圖是 \"/p1\".";
+GSMMODELINPUT_ERR_6904.Diagnostic = 
+"它包含有多重曲面或薄殼, 掃掠曲面並不支援";
+GSMMODELINPUT_ERR_6904.Advice     = "您可修改草圖來使用這些曲面分割結果掃掠曲面.";
+
+// Impossibilite de dupliquer un sketch
+GSMMODELINPUT_ERR_6905.Request    = " ";
+GSMMODELINPUT_ERR_6905.Diagnostic = "切面建立失敗或草圖 /p1 與脊椎線不垂直";
+GSMMODELINPUT_ERR_6905.Advice     = "請檢查草圖限制的連續性, 或使用其它的脊椎線";
+
+// Pas d'intersection avec la spine
+GSMMODELINPUT_ERR_6906.Request    = " ";
+GSMMODELINPUT_ERR_6906.Diagnostic = "脊椎線未與草圖平面相交 /p1";
+GSMMODELINPUT_ERR_6906.Advice     = "請更改支援草圖或修改脊椎線";
+
+// Erreur interne bizarre 
+GSMMODELINPUT_ERR_6907.Request    = " ";
+GSMMODELINPUT_ERR_6907.Diagnostic = "切面更新時發生錯誤";
+GSMMODELINPUT_ERR_6907.Advice     = " ";
+
+// Erreur interne bizarre 
+GSMMODELINPUT_ERR_6908.Request    = "無法計算掃掠.";
+GSMMODELINPUT_ERR_6908.Diagnostic = "裁剪選項不適用在封閉掃掠.";
+GSMMODELINPUT_ERR_6908.Advice     = "請更改裁剪選項.";
+
+// Check sections and places coherency
+GSMMODELINPUT_ERR_6908.Request    = " ";
+GSMMODELINPUT_ERR_6908.Diagnostic = "切面數目小於所需的切面數目.";
+GSMMODELINPUT_ERR_6908.Advice     = "請重新建立適應掃掠.";
+
+// Check input Sketch
+GSMMODELINPUT_ERR_6909.Request    = " ";
+GSMMODELINPUT_ERR_6909.Diagnostic = "輸入草圖不是草圖.";
+GSMMODELINPUT_ERR_6909.Advice     = "請編輯適應掃掠並選擇草圖來輸入.";
+
+// Check input Sketch
+GSMMODELINPUT_ERR_6910.Request    = " ";
+GSMMODELINPUT_ERR_6910.Diagnostic = "所輸入的不草圖.";
+GSMMODELINPUT_ERR_6910.Advice     = "請編輯適應掃掠並選取草圖來輸入.";
+
+
+GSMMODELINPUT_ERR_6911.Request    = "所選輸出是 \"/p1\".";
+GSMMODELINPUT_ERR_6911.Diagnostic = "未連接, 且目前動作不支援.";
+GSMMODELINPUT_ERR_6911.Advice     = "請選擇連接的輸出.";
+
+GSMMODELINPUT_ERR_6912.Request    = "所選草圖是 \"/p1\".";
+GSMMODELINPUT_ERR_6912.Diagnostic = "它應該是空的且含有輸出特徵.";
+GSMMODELINPUT_ERR_6912.Advice     = "請選擇輸出特徵.";
+
+GSMMODELINPUT_ERR_6913.Request    = "所選草圖是 \"/p1\".";
+GSMMODELINPUT_ERR_6913.Diagnostic = "它應該是基準草圖.";
+GSMMODELINPUT_ERR_6913.Advice     = "適應草圖無法處理基準草圖.";
+// Junction
+GSMMODELINPUT_ERR_7000.Request    = "/p1 是封閉曲線.";
+GSMMODELINPUT_ERR_7000.Diagnostic = "封閉曲線無法建立連接.";
+GSMMODELINPUT_ERR_7000.Advice     = "請使用未封閉曲線.";
+
+GSMMODELINPUT_ERR_7001.Request    = "/p1 是未連接元素.";
+GSMMODELINPUT_ERR_7001.Diagnostic = "用來建立連接的組合元素必須是連接的.";
+GSMMODELINPUT_ERR_7001.Advice     = "請使用另一元素, 或使用萃取動作來取得連接元素.";
+
+GSMMODELINPUT_ERR_7002.Request    = "/p1 並不完全依附在 /p2 元素上.";
+GSMMODELINPUT_ERR_7002.Diagnostic = "建立連接的組成曲線必須完全依附在曲面上.";
+GSMMODELINPUT_ERR_7002.Advice     = "請使用 /p1 曲線完全依附的曲面.";
+
+GSMMODELINPUT_ERR_7003.Request    = "無法建立曲面連接.";
+GSMMODELINPUT_ERR_7003.Diagnostic = "還需要一條以上曲線來建立連接曲面.";
+GSMMODELINPUT_ERR_7003.Advice     = "請增加組成曲線.";
+
+GSMMODELINPUT_ERR_7004.Request    = "/p1 是無效的使用者複合曲線.";
+GSMMODELINPUT_ERR_7004.Diagnostic = "/p1 未依附在兩切面.";
+GSMMODELINPUT_ERR_7004.Advice     = "使用者複合曲線必須依附在兩切面上.";
+
+GSMMODELINPUT_ERR_7005.Request    = "/p1 是無效的使用者複合曲線.";
+GSMMODELINPUT_ERR_7005.Diagnostic = "/p1 未結束在切面上.";
+GSMMODELINPUT_ERR_7005.Advice     = "請先裁剪使用者複合曲線使其結束在切面上.";
+
+GSMMODELINPUT_ERR_7006.Request    = "相交的複合曲線.";
+GSMMODELINPUT_ERR_7006.Diagnostic = "/p1 複合曲線與另一個相交.";
+GSMMODELINPUT_ERR_7006.Advice     = "請移除 /p1 使用者複合曲線.";
+
+GSMMODELINPUT_ERR_7007.Request    = "複合曲線與複合點在同一位置.";
+GSMMODELINPUT_ERR_7007.Diagnostic = "/p1 複合點與 /p2 複合曲線依附在切面並未在同一點.";
+GSMMODELINPUT_ERR_7007.Advice     = "請移除一個.";
+
+// Seat Diabolo
+GSMMODELINPUT_ERR_7100.Request    = "相同元素.";
+GSMMODELINPUT_ERR_7100.Diagnostic = "/p1 無法同時使用設置和基本曲面.";
+GSMMODELINPUT_ERR_7100.Advice     = "請使用兩個不同元素.";
+
+GSMMODELINPUT_ERR_7101.Request    = "/p1 為不連接的元素.";
+GSMMODELINPUT_ERR_7101.Diagnostic = "設定曲面必須是連接的.";
+GSMMODELINPUT_ERR_7101.Advice     = "請使用其它元素, 或使用 萃取 動作來萃取連接本體.";
+
+GSMMODELINPUT_ERR_7102.Request    = "/p1 是無限大的元素.";
+GSMMODELINPUT_ERR_7102.Diagnostic = "座落曲面必須是限制元素.";
+GSMMODELINPUT_ERR_7102.Advice     = "請使用其它元素.";
+
+GSMMODELINPUT_ERR_7103.Request    = "脫模方向和座落曲面不相容.";
+GSMMODELINPUT_ERR_7103.Diagnostic = "脫模方向不可設置在平面形式曲面 /p1 上.";
+GSMMODELINPUT_ERR_7103.Advice     = "請使用其它脫模方向或座落曲面.";
+
+GSMMODELINPUT_ERR_7104.Request    = "數個相交.";
+GSMMODELINPUT_ERR_7104.Diagnostic = "座落曲面與基本曲面有數個相交.";
+GSMMODELINPUT_ERR_7104.Advice     = "請使用其它座落曲面.";
+
+GSMMODELINPUT_ERR_7105.Request    = "/p1 為非相連元素.";
+GSMMODELINPUT_ERR_7105.Diagnostic = "陀螺的基本曲面必須是相連的.";
+GSMMODELINPUT_ERR_7105.Advice     = "請使用其它基本曲面, 或使用萃取動作來萃取連接元件.";
+
+GSMMODELINPUT_ERR_7106.Request    = "/p1 為多重邊界曲面.";
+GSMMODELINPUT_ERR_7106.Diagnostic = "座落曲面必須只有一個邊界.";
+GSMMODELINPUT_ERR_7106.Advice     = "請使用其它座落曲面.";
+
+//Axis line
+GSMMODELINPUT_ERR_7500.Request    = "無效元素.";
+GSMMODELINPUT_ERR_7500.Diagnostic = " ";
+GSMMODELINPUT_ERR_7500.Advice     = "元素必須是圓, 橢圓, 矩形, 旋轉曲面或球體.";
+
+GSMMODELINPUT_ERR_7501.Request    = "無效方向.";
+GSMMODELINPUT_ERR_7501.Diagnostic = " ";
+GSMMODELINPUT_ERR_7501.Advice     = "方向必須沿著平面元素或平行它.";
+
+GSMMODELINPUT_ERR_7502.Request    = "無效方向.";
+GSMMODELINPUT_ERR_7502.Diagnostic = " ";
+GSMMODELINPUT_ERR_7502.Advice     = "方向必須沿著平面元素或平行它.";
+
+//extrude
+GSMMODELINPUT_ERR_8000.Request    = "無效拉伸方向.";
+GSMMODELINPUT_ERR_8000.Diagnostic = " ";
+GSMMODELINPUT_ERR_8000.Advice     = "請使用正確的方向.";
+
+GSMMODELINPUT_ERR_8100.Request    = "無效斷面.";
+GSMMODELINPUT_ERR_8100.Diagnostic = "所選斷面為無限長元素";
+GSMMODELINPUT_ERR_8100.Advice     = "請使用有限長元素.";
+
+GSMMODELINPUT_ERR_8010.Request    = "無效拉伸方向.";
+GSMMODELINPUT_ERR_8010.Diagnostic = "無法由草圖萃取垂直方向.";
+GSMMODELINPUT_ERR_8010.Advice     = "請定義方向.";
+
+// --- Volume Extrude  and Revol - MPQ
+
+GSMMODELINPUT_ERR_8101.Request    = "無效斷面.";
+GSMMODELINPUT_ERR_8101.Diagnostic = "所選斷面非平面形式且未封閉或自我相交";
+GSMMODELINPUT_ERR_8101.Advice     = "請選擇未自我相交且封閉的平面形式斷面或曲面.";
+
+GSMMODELINPUT_ERR_8102.Request    = "無效斷面.";
+GSMMODELINPUT_ERR_8102.Diagnostic = "所選斷面不是曲線或曲面."; 
+GSMMODELINPUT_ERR_8102.Advice     = "請選擇未自我相交且封閉的平面形式斷面或曲面.";
+
+GSMMODELINPUT_ERR_8103.Request    = "無效斷面.";
+GSMMODELINPUT_ERR_8103.Diagnostic = "所選方向依附在斷面的平面上或與它平行."; 
+GSMMODELINPUT_ERR_8103.Advice     = "請選擇不在斷面平面上的方向.";
+ 
+// --- Volume Revol - MPQ
+
+GSMMODELINPUT_ERR_8104.Request    = "無效斷面.";
+GSMMODELINPUT_ERR_8104.Diagnostic = "所選斷面非平面形式且未封閉或自我相交或是沒有軸的草圖";
+GSMMODELINPUT_ERR_8104.Advice     = "請選擇未自我相交且封閉的平面形式斷面或曲面或含軸的草圖.(開放草圖的起始和結束頂點必須依附在草圖軸上)";
+  
+GSMMODELINPUT_ERR_8105.Request    = "無效軸.";
+GSMMODELINPUT_ERR_8105.Diagnostic = "所選軸與斷面所在平面垂直.";
+GSMMODELINPUT_ERR_8105.Advice     = "請選擇不與斷面所在平面垂直的軸.";
+
+GSMMODELINPUT_ERR_8110.Request    = "無效旋轉軸.";
+GSMMODELINPUT_ERR_8110.Diagnostic = "無法由草圖萃取旋轉軸.";
+GSMMODELINPUT_ERR_8110.Advice     = "請定義旋轉軸.";
+
+// --- End Volume Extrude and Revol - MPQ
+//extremum
+GSMMODELINPUT_ERR_8500.Request    = "無效方向.";
+GSMMODELINPUT_ERR_8500.Diagnostic = "所選元素為無限元素";
+GSMMODELINPUT_ERR_8500.Advice     = "請使用有限元素.";
+//corner 3D trim
+GSMMODELINPUT_ERR_9000.Request    = "圓角修剪錯誤.";
+GSMMODELINPUT_ERR_9000.Diagnostic = "此動作有數個解出方式, 且無法裁剪線";
+GSMMODELINPUT_ERR_9000.Advice     = "請在未修剪模式使用此動作, 然後再手動修剪線.";
+
+//corner on vertex
+GSMMODELINPUT_ERR_9001.Request    = "圓角或頂點無法計算";
+GSMMODELINPUT_ERR_9001.Diagnostic = "/p1 必須是由曲線上萃取的頂點";
+GSMMODELINPUT_ERR_9001.Advice     = "請選擇其它元素或停止在頂點模式的圓角.";
+
+GSMMODELINPUT_ERR_9002.Request    = "圓角或頂點無法計算";
+GSMMODELINPUT_ERR_9002.Diagnostic = "/p1 是曲線 /p2 的端點";
+GSMMODELINPUT_ERR_9002.Advice     = "請選擇其它元素或停止在頂點模式的圓角.";
+
+//corner
+GSMMODELINPUT_ERR_9010.Request    = "無效輸入元素.";
+GSMMODELINPUT_ERR_9010.Diagnostic = "輸入元素不是平面形式.";
+GSMMODELINPUT_ERR_9010.Advice     = "請選擇平面形式元素,或選擇依附此曲面的元素";
+
+GSMMODELINPUT_ERR_9020.Request    = "無效輸入元素.";
+GSMMODELINPUT_ERR_9020.Diagnostic = "輸入元素不是平面形式.";
+GSMMODELINPUT_ERR_9020.Advice     = "請選擇平面形式元素.";
+
+//connect
+GSMMODELINPUT_ERR_9500.Request    = "無效基礎曲線.";
+GSMMODELINPUT_ERR_9500.Diagnostic = "基礎曲線 /p1 無法成為封閉曲線";
+GSMMODELINPUT_ERR_9500.Advice     = "請使用其它元素";
+
+GSMMODELINPUT_ERR_9501.Request    = "無效點.";
+GSMMODELINPUT_ERR_9501.Diagnostic = "點 /p1 不在基礎曲線或依附曲線上";
+GSMMODELINPUT_ERR_9501.Advice     = "請使用其它元素";
+
+GSMMODELINPUT_ERR_9502.Request    = "修剪連接錯誤.";
+GSMMODELINPUT_ERR_9502.Diagnostic = "無法裁剪線動作";
+GSMMODELINPUT_ERR_9502.Advice     = "請在未修剪模式時操作, 然後再手動修剪它.";
+
+GSMMODELINPUT_ERR_9503.Request    = "無效點.";
+GSMMODELINPUT_ERR_9503.Diagnostic = "輸入點 /p1 未依附在依附曲線上.";
+GSMMODELINPUT_ERR_9503.Advice     = "請投影在依附上, 並使用投影元素";
+
+// Continuite en tangence du resultat.
+GSMMODELINPUT_ERR_9600.Request    = "相切連續 ";
+GSMMODELINPUT_ERR_9600.Diagnostic = "結果切線不連續";
+GSMMODELINPUT_ERR_9600.Advice     = "請修改動作設定.";
+
+// Messages d'erreur pour l'edition d'un feature multisel
+GSMMODELINPUT_ERR_9700.Request    = "多重選擇 coherency ";
+GSMMODELINPUT_ERR_9700.Diagnostic = "聚集特徵不是多重選擇結果";
+GSMMODELINPUT_ERR_9700.Advice     = "請修改多重特徵的下層元素";
+
+//features ayant la meme entree ds un multioutput
+GSMMODELINPUT_ERR_9710.Request    = "";
+GSMMODELINPUT_ERR_9710.Diagnostic = "/p1 和 /p2 有相同輸入.";
+GSMMODELINPUT_ERR_9710.Advice     = "/p1 將會以 /p2 更換.";
+
+//features ayant une entree null ds un multioutput
+GSMMODELINPUT_ERR_9720.Request    = "/p1 沒有輸入.";
+GSMMODELINPUT_ERR_9720.Diagnostic = "您要移除 /p1 嗎 ?";
+GSMMODELINPUT_ERR_9720.Advice     = "問題";
+
+//Pour l'extrapol
+GSMMODELINPUT_ERR_9800.Request    = "輸入尺寸偵測到錯誤 ";
+GSMMODELINPUT_ERR_9800.Diagnostic = "/p1 或 /p2 尺寸不是所需的";
+GSMMODELINPUT_ERR_9800.Advice     = "請重新考慮您的選擇";
+
+//Pour le Curve Par
+GSMMODELINPUT_ERR_9900.Request    = "所經過的點 ";
+GSMMODELINPUT_ERR_9900.Diagnostic = "所經過的點無法投影至參考曲線";
+GSMMODELINPUT_ERR_9900.Advice     = "請重新考慮您的選擇";
+
+//pour le fillet & combine
+GSMMODELINPUT_ERR_10000.Request    = "偵測到輸入錯誤";
+GSMMODELINPUT_ERR_10000.Diagnostic = "部份所選元素相同";
+GSMMODELINPUT_ERR_10000.Advice     = "請選擇不同元素";
+
+GSMMODELINPUT_ERR_10010.Request    = "偵測到輸入錯誤";
+GSMMODELINPUT_ERR_10010.Diagnostic = "所選元素為無限曲面";
+GSMMODELINPUT_ERR_10010.Advice     = "請至少選取一個長度在限制內的元素";
+
+// Naming Ambiguity
+GSMMODELINPUT_ERR_11000.Request    = "未連接";
+GSMMODELINPUT_ERR_11000.Diagnostic = " BRep 變成為未連接.";
+GSMMODELINPUT_ERR_11000.Advice     = "請編輯在更新錯誤內的相關萃取, 
+and redefine the specification.";
+
+// Fill G2
+GSMFill.G2Incompability="G2 拘束未納入計算 (拘束間不相容).";
+
+// Unfold
+GSMMODELINPUT_ERR_12000.Request    = "展開的曲線或邊界無效";
+GSMMODELINPUT_ERR_12000.Diagnostic = "外形無法展開.";
+GSMMODELINPUT_ERR_12000.Advice     = "要解決此問題, 您可以選擇曲線或邊界來打開.";
+
+GSMMODELINPUT_ERR_12100.Request    = "展開的曲線或邊界無效";
+GSMMODELINPUT_ERR_12100.Diagnostic = "展開的曲線或邊界無效或 
+為不適當的展開.";
+GSMMODELINPUT_ERR_12100.Advice     = "要解決此問題, 您可以選擇適當的曲線或邊界來打開.";
+
+GSMMODELINPUT_ERR_12200.Request    = "邊界必須要打開";
+GSMMODELINPUT_ERR_12200.Diagnostic = "計算決定邊界必須要打開.";
+GSMMODELINPUT_ERR_12200.Advice     = "";
+
+GSMMODELINPUT_ERR_12450.Request    = "要展開的曲線不在曲面上";
+GSMMODELINPUT_ERR_12450.Diagnostic = "要展開的曲線不在曲面上";
+GSMMODELINPUT_ERR_12450.Advice     = "請選擇另一曲線.";
+
+GSMMODELINPUT_ERR_12500.Request    = "無效曲面";
+GSMMODELINPUT_ERR_12500.Diagnostic = "展開的曲面必須為規則曲面.";
+GSMMODELINPUT_ERR_12500.Advice     = "請選擇另一曲面.";
+
+GSMMODELINPUT_ERR_12510.Request    = "參考的原點和方向";
+GSMMODELINPUT_ERR_12510.Diagnostic = "未定義參考的原點和方向.";
+GSMMODELINPUT_ERR_12510.Advice     = "請選擇原點和方向.";
+
+GSMMODELINPUT_ERR_12511.Request    = "參考的原點";
+GSMMODELINPUT_ERR_12511.Diagnostic = "參考的原點無效.";
+GSMMODELINPUT_ERR_12511.Advice     = "請選擇另一原點.";
+
+GSMMODELINPUT_ERR_12520.Request    = "參考的方向";
+GSMMODELINPUT_ERR_12520.Diagnostic = "未定義參考的方向";
+GSMMODELINPUT_ERR_12520.Advice     = "請選擇方向";
+
+GSMMODELINPUT_ERR_12521.Request    = "參考的方向";
+GSMMODELINPUT_ERR_12521.Diagnostic = "參考的方向無效.";
+GSMMODELINPUT_ERR_12521.Advice     = "請選擇另一方向.";
+
+GSMMODELINPUT_ERR_12530.Request    = "未確定位置.";
+GSMMODELINPUT_ERR_12530.Diagnostic = "因參數不確定,導致預設結果位置無法計算.";
+GSMMODELINPUT_ERR_12530.Advice     = "請選擇明確的目標平面.";
+
+GSMMODELINPUT_ERR_12570.Request    = "不良的目標方向";
+GSMMODELINPUT_ERR_12570.Diagnostic = "目標方向必須在目標平面上.";
+GSMMODELINPUT_ERR_12570.Advice     = "請修改目標方向";
+
+GSMMODELINPUT_ERR_12580.Request    = "不良的目標原點";
+GSMMODELINPUT_ERR_12580.Diagnostic = "目標原點必須在目標平面上.";
+GSMMODELINPUT_ERR_12580.Advice     = "請修改目標原點";
+
+GSMMODELINPUT_ERR_12581.Request    = "轉換的點或曲線";
+GSMMODELINPUT_ERR_12581.Diagnostic = "轉換的點或曲線 /p1 未依附在展開或收合曲面上.";
+GSMMODELINPUT_ERR_12581.Advice     = "更改轉換的點或曲線";
+
+GSMMODELINPUT_ERR_12582.Request    = "轉換的點或曲線";
+GSMMODELINPUT_ERR_12582.Diagnostic = "轉換的點或曲線 /p1 無法展開或收合.";
+GSMMODELINPUT_ERR_12582.Advice     = "更改轉換的點或曲線";
+
+GSMMODELINPUT_ERR_12583.Request    = "轉換的點或曲線";
+GSMMODELINPUT_ERR_12583.Diagnostic = "轉換的點或曲線無法展開或收合.";
+GSMMODELINPUT_ERR_12583.Advice     = "更改更新中錯誤的設定.";
+
+GSMMODELINPUT_ERR_12584.Request    = "未定義展開曲面";
+GSMMODELINPUT_ERR_12584.Diagnostic = "未定義展開曲面";
+GSMMODELINPUT_ERR_12584.Advice     = "定義展開曲面";
+
+//Revol
+GSMMODELINPUT_ERR_12600.Request    = "不良的旋轉軸.";
+GSMMODELINPUT_ERR_12600.Diagnostic = "旋轉軸不是直線.";
+GSMMODELINPUT_ERR_12600.Advice     = "請選擇直線旋轉軸.";
+
+GSMMODELINPUT_ERR_12601.Request    = "無效角度.";
+GSMMODELINPUT_ERR_12601.Diagnostic = "兩角度之和必須大於 0 並小於 360 度.";
+GSMMODELINPUT_ERR_12601.Advice     = "請修改其中之一或兩者的角度.";
+
+//Circle Center-Axis
+GSMMODELINPUT_ERR_12650.Request    = "無效軸.";
+GSMMODELINPUT_ERR_12650.Diagnostic = "所選元素不是線或軸.";
+GSMMODELINPUT_ERR_12650.Advice     = "請選擇軸或線.";
+
+GSMMODELINPUT_ERR_12651.Request    = "無效圓限制.";
+GSMMODELINPUT_ERR_12651.Diagnostic = "當輸入點在軸上時, 部份弧限制無效.";
+GSMMODELINPUT_ERR_12651.Advice     = "請更改弧限制至全部.";
+
+//Point Sphere Center.
+GSMMODELINPUT_ERR_12700.Request    = "無效元素.";
+GSMMODELINPUT_ERR_12700.Diagnostic = "所選元素不是圓, 橢圓或球面.";
+GSMMODELINPUT_ERR_12700.Advice     = "請選擇圓, 橢圓或球面元素.";
+
+// Volume Sweep
+// Equivalent UI ERROR - GSMUIINPUT_ERR_3903
+GSMMODELINPUT_ERR_12800.Request    = "無效斷面.";
+GSMMODELINPUT_ERR_12800.Diagnostic = "所選斷面非平面型式或未封閉或自我相交或含有多個定義區域.";
+GSMMODELINPUT_ERR_12800.Advice     = "請選擇非自我相交且封閉的平面形式單一定義區域斷面";
+
+// pour l'offset flou
+GSMMODELINPUT_ERR_12900.Request    = "無效元素.";
+GSMMODELINPUT_ERR_12900.Diagnostic = "粗略偏移不可使用平面和封閉曲面.";
+GSMMODELINPUT_ERR_12900.Advice     = "選擇其它物件. ";
+
+GSMMODELINPUT_ERR_12910.Request    = "不允許的偏移和變異數值.";
+GSMMODELINPUT_ERR_12910.Diagnostic = "偏移數值必須大於變異數值.";
+GSMMODELINPUT_ERR_12910.Advice     = "變異數值必須大於 1 mm. ";
+
+// pour l'offset variable
+GSMMODELINPUT_ERR_13000.Request    = "舊版的可變偏移.";
+GSMMODELINPUT_ERR_13000.Diagnostic = "此版本無效.";
+GSMMODELINPUT_ERR_13000.Advice     = "重新建立可變偏移.";
+
+// Symmetry
+GSMMODELINPUT_ERR_13100.Request    = "需要平面形式參考曲面.";
+GSMMODELINPUT_ERR_13100.Diagnostic = "/p1 不是平面形式參考曲面.";
+GSMMODELINPUT_ERR_13100.Advice     = "請更換平面形式參考曲面.";
+
+//circle error messages
+GSMMODELINPUT_ERR_14000.Request    = "兩向量在同線";
+GSMMODELINPUT_ERR_14000.Diagnostic = "依附和向量方向相同";
+GSMMODELINPUT_ERR_14000.Advice     = "選擇其它依附或任一點 ";
+
+GSMMODELINPUT_ERR_14100.Request    = "無效方向";
+GSMMODELINPUT_ERR_14100.Diagnostic = "選取依附方向無效";
+GSMMODELINPUT_ERR_14100.Advice     = "選擇其它依附";
+
+GSMMODELINPUT_ERR_14200.Request    = "無效點";
+GSMMODELINPUT_ERR_14200.Diagnostic = "所選點無效";
+GSMMODELINPUT_ERR_14200.Advice     = "選擇有效點";
+
+GSMMODELINPUT_ERR_14300.Request    = "相同輸入點";
+GSMMODELINPUT_ERR_14300.Diagnostic = "己選點相同";
+GSMMODELINPUT_ERR_14300.Advice     = "選擇不同點";
+
+//plane angle error message
+GSMMODELINPUT_ERR_14400.Request    = "旋轉軸與參考軸垂直";
+GSMMODELINPUT_ERR_14400.Diagnostic = "旋轉軸與參考軸不可垂直";
+GSMMODELINPUT_ERR_14400.Advice     = "選擇另一參考平面或旋轉軸 ";
+
+GSMMODELINPUT_ERR_14500.Request    = "旋轉軸不可投影至參考平面";
+GSMMODELINPUT_ERR_14500.Diagnostic = "投影長度太小";
+GSMMODELINPUT_ERR_14500.Advice     = "更改旋轉軸或減少長度";
+
+// added for volume draft sweep
+GSMMODELINPUT_ERR_14600.Request    = "無效導引.";
+GSMMODELINPUT_ERR_14600.Diagnostic = "所選導引未封閉或含孔或自我相交或內含多重定義區.";
+GSMMODELINPUT_ERR_14600.Advice     = "請選擇非自我相交的封閉平面型式導引曲線或開啟單一定義域的無孔曲面";
+
+// Warning Optional attribute removed
+GSMMODELINPUT_WARNING_001="己移除輸入選項 /p2. 己影響結果 /p1 , 編輯 /p1 來解決或確定新結果.";
+
+// Warning for 0 tension value in spline
+GSMMODELINPUT_ERR_14700.Request    = " ";
+GSMMODELINPUT_ERR_14700.Diagnostic = "此動作不允許無效的張力值. 結果已由所選張力值計算.";
+GSMMODELINPUT_ERR_14700.Advice     = " ";
+

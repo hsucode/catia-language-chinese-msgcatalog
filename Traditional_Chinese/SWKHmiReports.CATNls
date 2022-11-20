@@ -1,0 +1,167 @@
+// ==========================================================================
+// ==========================================================================
+// SWKHmiReports English Message File
+// ==========================================================================
+// ==========================================================================
+
+EditReportUndoTitle = "編輯報告";
+AddReportUndoTitle = "新增報告";
+
+SWKHmiReports.SelectManikinState.UndoTitle = "選擇人體模型";
+SWKHmiReports.SelectManikinState.RedoTitle = "人體模型選擇";
+SWKHmiReports.SelectManikinState.Message = "選擇人體模型...";
+
+SWKHmiReports.ModifyPropState.Message = "修改報告內容...";
+
+ReportLogTitle = "報告檢視 (/p1)";
+ReportLogDate = "日期";
+ReportLogID = "ID";
+ReportLogType = "分析型式";
+ReportLogAna = "分析";
+ReportLogRes1 = "結果 1";
+ReportLogRes2 = "結果 2";
+ReportLogMan = "Manikin 名稱";
+ReportLogItem = "附加資訊";
+ReportLogRep = "報告名稱";
+ReportLogSTime = "模擬時間";
+ReportLogETime = "歷時";
+
+ReportTitle = "報告定義";
+Main.Name.Title = "名稱:     ";
+DefaultName = "報告 /p1";
+Main.LabelManikin.Title = "人體模型:";
+TypeFrame.Title = "分析型式:";
+TypeFrame.AvailableLabel.Title = "可用";
+TypeFrame.SelectedLabel.Title = "已選";
+LabelOutput.Title = "輸出檔案:";
+PushButtonFile.Title = "檔案...";
+TxtFilesOnly = "只有 .txt 或 .html 檔案有效";
+
+TypeAnalysis1 = "Push-Pull";
+TypeAnalysis2 = "Carry";
+TypeAnalysis3 = "RULA";
+TypeAnalysis4 = "RULA - Detailed";
+TypeAnalysis5 = "Biomechanic - Summary";
+TypeAnalysis6 = "Biomechanic - Spine Limit";
+TypeAnalysis7 = "Biomechanic - Joint Moment";
+TypeAnalysis8 = "Biomechanic - Reaction Forces and Moments";
+TypeAnalysis9 = "Biomechanic - Segment Angle";
+TypeAnalysis10 = "Postural Score - All DOF Result";
+TypeAnalysis11 = "Postural Score - All DOF Detailed";
+TypeAnalysis12 = "Postural Score - DOF1";
+TypeAnalysis13 = "Postural Score - DOF2";
+TypeAnalysis14 = "Postural Score - DOF3";
+TypeAnalysis15 = "Constraints Results";
+TypeAnalysis16 = "Vision Analysis";
+TypeAnalysis17 = "Walk Distance - Single Walk";
+TypeAnalysis18 = "Walk Distance - Cumulative";
+
+SimulationTimeLabel     = "Simulation time: ";
+SimulationDurationLabel = "Duration: ";
+
+TreeReportLabelSingular = "/p1 (/p2 Analysis)";
+TreeReportLabelPlural   = "/p1 (/p2 Analyses)";
+
+ErrorReportName = "您必須指定報告名稱";
+ErrorReportType = "您必須指定要報告分析";
+ErrorReportLogSize = "File not loaded completely.";
+ErrorOutputInvalid = "您必須指定有效輸出檔案";
+
+PushPullReportName = "推-拉";
+PushPullMaxInitPush = "Max. initial force for push (/p1)";
+PushPullMaxInitPull = "Max. initial force for pull (/p1)";
+PushPullMaxSusPush = "Max. sustained force for push (/p1)";
+PushPullMaxSusPull = "Max. sustained force for pull (/p1)";
+
+CarryReportName = "Carry";
+CarryMaximumWeight = "Maximum acceptable weight (/p1)";
+
+RULAReportName = "RULA";
+RULADetailsReportName = "RULA Details";
+RULAGlobalScore = "Global Score";
+RULAUpperArmScore = "Upper Arm Score";
+RULAForeArmScore = "ForeArm Score";
+RULAWristScore = "Wrist Score";
+RULAWristTwistScore = "Wrist Twist Score";
+RULAPostureAScore = "Posture A Score";
+RULAMuscleScore = "Muscle Score";
+RULAForceLoadScore = "Force Load Score";
+RULAWristArmScore = "Wrist And Arm Score";
+RULANeckScore = "Neck Score";
+RULATrunkScore = "Trunk Score";
+RULALegScore = "Leg Score";
+RULAPostureBScore = "Posture B Score";
+RULANeckTrunkLegScore = "Neck Trunk And Leg Score";
+
+BiomechSummaryReportName = "Bio. Summary";
+BiomechL4L5M = "L4-L5 Moment (/p1)";
+BiomechL4L5C = "L4-L5 Compression (/p1)";
+BiomechBodyLoadComp = "Body Load Compression (/p1)";
+BiomechAxialTwistComp = "Axial Twist Compression (/p1)";
+BiomechFlexExtComp = "Flex/Ext Compression (/p1)";
+BiomechL4L5JointShear = "L4-L5 Joint Shear (/p1)";
+BiomechAbdoForce = "Abdominal Force (/p1)";
+BiomechAbdoPressure = "Abdominal Pressure (/p1)";
+BiomechGroundReactTotX = "Ground Reaction Total (X) (/p1)";
+BiomechGroundReactTotY = "Ground Reaction Total (Y) (/p1)";
+BiomechGroundReactTotZ = "Ground Reaction Total (Z) (/p1)";
+BiomechGroundReactLeftFootX = "Ground Reaction Left Foot (X) (/p1)";
+BiomechGroundReactLeftFootY = "Ground Reaction Left Foot (Y) (/p1)";
+BiomechGroundReactLeftFootZ = "Ground Reaction Left Foot (Z) (/p1)";
+BiomechGroundReactRightFootX = "Ground Reaction Right Foot (X) (/p1)";
+BiomechGroundReactRightFootY = "Ground Reaction Right Foot (Y) (/p1)";
+BiomechGroundReactRightFootZ = "Ground Reaction Right Foot (Z) (/p1)";
+
+BiomechSpineLimitReportName = "Bio. L4-L5 Spine Limit";
+BiomechCompLim = "Compression Limits (/p1)";
+BiomechJointShearLim = "Joint Shear limits (/p1)";
+
+BiomechJointMomStrengthReportName = "Bio. Joint Moment Strength";
+BiomechRightElbowFlexExt = "Right Elbow Flex-Ext (%) (/p1)";
+BiomechRightElbowSupPro = "Right Elbow Sup-Pro (%) (/p1)";
+BiomechLeftElbowFlexExt = "Left Elbow Flex-Ext (%) (/p1)";
+BiomechLeftElbowSupPro = "Left Elbow Sup-Pro (%) (/p1)";
+BiomechRightShoulderflexExt = "Right Shoulder Flex-Ext (%) (/p1)";
+BiomechRightShoulderAbdAdd = "Right Shoulder Abd-Add (%) (/p1)";
+BiomechRightShoulderInterExtRot = "Right Shoulder Inter-Ext Rot. (%) (/p1)";
+BiomechLeftShoulderFlexExt = "Left Shoulder Flex-Ext (%) (/p1)";
+BiomechLeftShoulderAbdAdd = "Left Shoulder Abd-Add (%) (/p1)";
+BiomechLeftShoulderInterExtRot = "Left Shoulder Inter-Ext Rot. (%) (/p1)";
+BiomechLumberFlexExt = "Lumbar Flex-Ext (%) (/p1)";
+BiomechLumbarRLLatBend = "Lumbar Right-Left Lat. Bend (%) (/p1)";
+BiomechLumbarRLTwist = "Lumbar Right-Left Twist (%) (/p1)";
+
+BiomechXLabel = " X (/p1) (/p2)";
+BiomechYLabel = " Y (/p1) (/p2)";
+BiomechZLabel = " Z (/p1) (/p2)";
+BiomechForceMomReportName = "Bio. Forces and Moments (Distal)";
+
+BiomechSegLabel = "(/p1) (/p2) (/p3)";
+BiomechSegAngle = "Bio Segment Angle";
+BiomechSegCoord = "(/p1, /p2, /p3)";
+
+PosturalScoreReportName = "Postural Score";
+PosturalScoreAllDOFResult = "All DOF Result (%)";
+
+PosturalScoreDetailsReportName = "Postural Score Details";
+PosturalScoreDetailsDOF1ReportName = "Postural Score DOF1";
+PosturalScoreDetailsDOF2ReportName = "Postural Score DOF2";
+PosturalScoreDetailsDOF3ReportName = "Postural Score DOF3";
+PosturalScoreCurrentDOFResult = "Current DOF Result (%)";
+
+WholeLeftHand = "Whole Left Hand (%)";
+WholeRightHand = "Whole Right Hand (%)";
+ScoreData = " (Score)";
+
+CstReportName = "Constraint";
+CstAngle = "Angle (/p1)";
+CstDistance = "Distance (/p1)";
+CstSuccess = "Success";
+CstFail = "Failed";
+
+VisionReportName = "Vision Analysis";
+FocalPointDistance = "Focal Distance (/p1)";
+
+WalkDistanceReportName = "Process Simulation";
+WalkDistanceEach = "Walk Distance (/p1)";
+WalkDistanceCumulative = "Cumulative Walk Distance (/p1)";

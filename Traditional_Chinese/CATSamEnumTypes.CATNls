@@ -1,0 +1,251 @@
+// CATSamValue
+Value_CHARACTER = "字元" ; // 0
+Value_SHORT = "短整數" ; // 1
+Value_INTEGER = "整數" ; // 2
+Value_REAL = "實數" ; // 3
+Value_DOUBLE = "倍精準度實數" ; // 4
+Value_COMPLEX = "複數" ; // 5
+Value_COMPLEX_DOUBLE = "倍精準度複數" ; // 6
+Value_POINTER = "指標" ; // 7
+Value_NODE = "節點" ; // 8
+Value_ELEMENT = "元素" ; // 9
+Value_MATERIAL = "材料" ; // 10
+Value_AXIS = "軸系" ; // 11
+Value_PROPERTY = "性質" ; // 12
+Value_RESTRAINT = "管制" ; // 13
+Value_LOAD = "負載" ; // 14
+Value_MASS = "質量" ; // 15
+Value_SET = "組" ; // 16
+Value_GROUP = "群組" ; // 17
+Value_IEXPRESSION = "IExpression" ; // 18
+alue_VIRTUAL_NODE = "虛擬節點" ; // 19
+Value_VIRTUAL_ELEMENT = "虛擬元素" ; // 20
+Value_BOUNDARY_CONDITION = "邊界條件" ; // 21
+Value_INVALID_VALUE = "無效的數值型式" ; // 22
+
+// CATSamMathType
+MathType_SCALAR = "數量" ; // 0
+MathType_VECTOR = "向量" ; // 1
+MathType_SYMMETRICAL_TENSOR = "對稱的張量" ; // 2
+MathType_TENSOR = "張量" ; // 3
+MathType_EIGEN_VALUES = "特徵值" ; // 4
+MathType_BIT_ARRAY = "Bit 矩陣" ; // 5
+MathType_INVALID_MATH_TYPE = "無效的數學型式" ; // 6
+
+// CATSamListType
+ListType_CHILDREN = "子" ; // 0
+ListType_PARENT = "父" ; // 1
+ListType_APPLY_TO = "應用到" ; // 2
+ListType_APPLY_BY = "應用" ; // 3
+ListType_MEMBERS = "物理型式的成員" ; // 4
+ListType_USER = "使用者" ; // 5
+ListType_INVALID_LIST_TYPE = "無效的清單型式" ; // 6
+
+// CATSamPosition
+Position_NODE = "節點" ; // 0
+Position_ELEMENT = "元素" ; // 1
+Position_CENTER = "元素中心" ; // 2
+Position_DOF = "自由度" ; // 3
+Position_NODE_OF_ELEMENT = "元素節點" ; // 4
+Position_EDGE = "元素的邊" ; // 5
+Position_FACE = "元素的片" ; // 6
+Position_GAUSS = "元素的高斯點" ; // 7
+Position_VIRTUAL_NODE = "虛擬節點" ; // 8
+Position_VIRTUAL_ELEMENT = "虛擬元素" ; // 9
+Position_USER_DEFINED = "User Defined" ; // 10
+Position_GROUP = "Group" ; // 11
+Position_SET = "Set" ; // 12
+Position_INVALID_POSITION_TYPE = "無效的位置型式" ; // 13
+
+
+// CATSamDof
+Dof_NONE = "無" ; // 0
+Dof_TRANSLATION_X = "X 平移" ; // 1
+Dof_TRANSLATION_Y = "Y 平移" ; // 2
+Dof_TRANSLATION_Z = "Z 平移" ; // 4
+Dof_ROTATION_X = "X 旋轉" ; // 8
+Dof_ROTATION_Y = "Y 旋轉" ; // 16
+Dof_ROTATION_Z = "Z 旋轉" ; // 32
+Dof_TRANSLATION_R = "R 平移" ; // 64
+Dof_ROTATION_RZ = "RZ 旋轉" ; // 128
+Dof_TEMPERATURE = "溫度" ; // 256
+Dof_PRESSURE = "壓力" ; // 512
+Dof_ELECTRIC_POTENTIAL = "電力指標" ; // 1024
+Dof_DENSITY = "密度" ; // 2048
+Dof_VELOCITY_X = "X 速度" ; // 4096
+Dof_VELOCITY_Y = "Y 速度" ; // 8192
+Dof_VELOCITY_Z = "Z 速度" ; // 16384
+Dof_BALL_JOIN = "球狀接頭" ; // 7
+Dof_PINNED = "針狀(Pinned)接頭" ; // 56
+Dof_CLAMP = "夾持" ; // 63
+Dof_PIVOT = "樞軸(pivot)" ; // 31
+Dof_SLIDING_PIVOT = "滑動的樞軸" ; // 27
+Dof_SURFACE_SLIDER = "曲面滑動" ; // 60
+Dof_SLIDER = "滑動" ; // 59
+Dof_FLUID = "液體" ; // 31488
+Dof_INVALID_DOF = "無效的自由度" ; // 3276
+
+// CATSamDataType
+DataType_SET = "組" ; // 0
+DataType_ENTITY = "本質" ; // 1
+DataType_CHARACTERISTIC = "特性的" ; // 2
+DataType_LIST = "清單" ; // 3
+DataType_MATHEMATICAL = "數學的" ; // 4
+DataType_APPLY = "Apply" ; // 5
+DataType_INVALID_DATA_TYPE = "無效的資料型式" ; // 6
+
+// CATSamStatus
+Status_NONE = "無" ; // 0
+Status_DISPLAYED = "顯示" ; // 1
+Status_EXT_POINTER = "外部指標" ; // 2
+Status_DELETED = "刪除" ; // 4
+Status_DEAD = "中止" ; // 8
+Status_ISOLATED = "獨立" ; // 16
+Status_CHECKING = "檢查" ; // 32
+Status_DESACTIVATED = "未啟動" ; // 64
+Status_EXTERNAL_LINKED = "鏈結至另一模型" ; // 128
+Status_CONDENSED_MESH = "濃縮網格元件" ; // 256
+Status_INVALID_STATUS = "無效的狀態" ; // 512
+
+// CATSamCompareType
+CompareType_POINTER = "指標" ; // 0
+CompareType_TAG = "標籤" ; // 1
+CompareType_CATEGORY = "目錄" ; // 2
+CompareType_USER_NUMBER = "使用者數量" ; // 3
+CompareType_PHYSICAL_TYPE = "物理型式" ; // 4
+CompareType_SOLVER_NAME = "解決者名稱" ; // 5
+CompareType_USER_NAME = "使用者名稱" ; // 6
+CompareType_EXTERNAL_POINTER = "外部指標" ; // 7
+CompareType_SEQUENTIAL_NUMBER = "序列數" ; // 8
+CompareType_DATA_TYPE = "資料型式" ; // 9
+CompareType_EXTERNAL_TAG = "外部標籤" ; // 10
+CompareType_INVALID_COMPARE_TYPE = "無效的比對型式" ; // 11
+
+// CATSamCheckType
+CheckType_POINTER = "指標" ; // 1
+CheckType_CHILD = "下層關聯" ; // 2
+CheckType_APPLY_TO = "應用至" ; // 4
+CheckType_RECURSE = "Recurse" ; // 8
+CheckType_VALID = "有效" ; // 16
+CheckType_INVALID_CHECK_TYPE = "無效的檢查形式" ; // 32
+
+// CATSamRefFrame
+RefFrame_LOCAL = "區域" ; // 0
+RefFrame_GLOBAL = "總體的" ; // 1
+RefFrame_NONE = "無" ; // 2
+RefFrame_INVALID_REF_FRAME = "無效的參考架構" ; // 3
+
+// CATSamRefFrameType
+RefFrameType_RECTANGULAR = "矩形" ; // 0
+RefFrameType_CYLINDRICAL = "圓柱的" ; // 1
+RefFrameType_CYLINDRICAL_INWARD = "向內的圓柱" ; // 2
+RefFrameType_SPHERICAL = "球面" ; // 3
+RefFrameType_SPHERICAL_INWARD = "向內的球面" ; // 4
+RefFrameType_INVALID_REF_FRAME_TYPE = "無效的參考架構型式" ; // 5
+
+// CATSamApplyQualifier
+ApplyQualifier_UPPER = "上部" ; // 0
+ApplyQualifier_MIDDLE = "中間" ; // 1
+ApplyQualifier_LOWER = "下部" ; // 2
+ApplyQualifier_MASTER = "主要的" ; // 3
+ApplyQualifier_SLAVE = "依附的" ; // 4
+ApplyQualifier_NODE_OF_ELEMENT = "元素節點" ; // 5
+ApplyQualifier_NONE = "無" ; // 6
+ApplyQualifier_INVALID_APPLY_QUALIFIER = "無效的應用因子" ; // 7
+
+// CATSamSpace1DType
+Space1DType_VECTOR = "向量" ; // 0
+Space1DType_CONTINUOUS = "連續的" ; // 1
+Space1DType_SPARSE = "稀少的" ; // 2
+Space1DType_INVALID_1DSPACE_TYPE = "無效的 1D 空間型式" ; // 3
+
+// CATSamSpace2DType
+Space2DType_MATRIX = "矩陣" ; // 0
+Space2DType_CONTINUOUS = "連續的" ; // 1
+Space2DType_SPARSE = "稀少的" ; // 2
+Space2DType_SYMMETRIC = "對稱" ; // 3
+Space2DType_INVALID_2DSPACE_TYPE = "無效的 2D 空間型式" ; // 4
+
+// CATSamSpace3DType
+Space3DType_TENSOR = "Tensor" ; // 0
+Space3DType_CONTINUOUS = "連續" ; // 1
+Space3DType_SPARSE = "稀少的" ; // 2
+Space3DType_INVALID_3DSPACE_TYPE = "無效 3D 空間型式" ; // 3
+
+// CATSamSpaceVectorType
+SpaceVectorType_NOMINAL = "名詞的(Nominal)" ; // 0
+SpaceVectorType_ORDINAL = " 順序" ; // 1
+SpaceVectorType_INTERVAL = "間隔" ; // 2
+SpaceVectorType_RATIO = "比例" ; // 3
+SpaceVectorType_CONTINUOUS = "連續的" ; // 4
+SpaceVectorType_INVALID_SPACEVECTOR_TYPE = "無效的向量型式" ; // 5
+// CATSamAggregationMode
+AggregationMode_ADD = "新增" ; // 0
+AggregationMode_REPLACE = "更換" ; // 1
+AggregationMode_MULTIPLY = "多重" ; // 2
+AggregationMode_SUPPRESS = "壓制" ; // 3
+AggregationMode_JUXTAPOSE = "並列" ; // 4
+AggregationMode_INVALID_AGGREGATION_MODE = "無效的集中模式" ; // 5
+
+// CATSamMeshType
+MeshType_PHYSICAL = "實體的" ; // 1
+MeshType_VIRTUAL = "虛擬的" ; // 2
+MeshType_INVALID_MESH_TYPE = "無效網格型式" ; // 4
+
+// CATSamSubType
+SubType_NOMINAL = "名義上的" ; // 0
+SubType_LOGARITHMIC = "對數的" ; // 1
+SubType_ELASTIC = "彈性的" ; // 2
+SubType_INELASTIC = "無彈性的" ; // 3
+SubType_THERMAL = "熱量" ; // 4
+SubType_PLASTIC = "塑膠" ; // 5
+SubType_INVALID_SUBTYPE = "無效次形式" ; // 6
+
+// CATSamComponent
+Component_NONE = "無" ; // 0
+Component_C11 = "C11" ; // 1
+Component_C12 = "C12" ; // 2
+Component_C13 = "C13" ; // 4
+Component_C21 = "C21" ; // 8
+Component_C22 = "C22" ; // 16
+Component_C23 = "C23" ; // 32
+Component_C31 = "C31" ; // 64
+Component_C32 = "C32" ; // 128
+Component_C33 = "C33" ; // 256
+Component_C1 = "C1" ; // 1
+Component_C2 = "C2" ; // 16
+Component_C3 = "C3" ; // 256
+Component_All = "全部" ; // 511
+Component_INVALID_COMPONENT = "無效分件" ; // 512
+
+// CATSamBendingType
+BendingType_CENTER_OF_CURVATURE = "曲率中心" ; // 0
+BendingType_TANGENCY = "切線" ; // 1
+BendingType_BEND_RADIUS = "彎曲半徑" ; // 2
+BendingType_ARC_ANGLE = "弧角度" ; // 3
+BendingType_INVALID_BENDING_TYPE = "無效彎曲型式" ; // 4
+
+// CATSamWallType
+WallType_INFINITE_PLANE = "無限平面" ; // 0
+WallType_LIMITED_PLANE = "限制平面" ; // 1
+WallType_CYLINDRICAL = "圓柱" ; // 2
+WallType_SPHERICAL = "球狀" ; // 3
+WallType_INVALID_WALL_TYPE = "無效牆型式" ; // 4
+
+// CATSamEntityType
+EntityType_NODE = "節點" ; // 0
+EntityType_ELEMENT = "元素" ; // 1
+EntityType_GEOMETRY = "幾何元素" ; // 2
+EntityType_PREPROCESSOR_ENTITY = "前處理元件" ; // 3
+EntityType_SET = "組" ; // 4
+EntityType_INVALID_ENTITY_TYPE = "無效元件型式" ; // 5
+
+// CATSamEvalType
+EvalType_VALIDITY = "有效性" ; // 0
+EvalType_COMBINABILITY = "組合性" ; // 1
+EvalType_INVALID_EVAL_TYPE = "無效標準" ; // 2
+
+// CATSamPositionData
+PositionData_MAIN_NODES = "主要節點" ; // 0
+PositionData_ALL_NODES = "全部節點" ; // 1
+

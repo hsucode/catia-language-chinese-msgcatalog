@@ -1,0 +1,254 @@
+//---------------------------------------------------------------------------
+//  DIALOGUE COMMON TO ALL WINDOWS
+//---------------------------------------------------------------------------
+BOK = "< 退回" ;
+BCancel = "下一步 >" ;
+BApply = "取消" ;
+
+CATInsErrWindow.Title = "錯誤";
+
+//---------------------------------------------------------------------------
+//  SETUP WINDOW 
+//---------------------------------------------------------------------------
+Setup.Title = "/p1 安裝";
+
+//---------------------------------------------------------------------------
+//  WELCOME 
+//---------------------------------------------------------------------------
+WndWelcome.Title     = "歡迎";
+Welcome.Label1.Title = "歡迎使用 /p1 設定程式." ;
+Welcome.Label2.Title = "此程式將安裝 /p1 在您的";
+Welcome.Label3.Title = "電腦上.";
+Welcome.Label4.Title = "按一下取消來退出安裝程式. 按一下下一步來繼續.\n";
+Welcome.Label5.Title = "\n";
+Welcome.Label6.Title = "/p1(r) 第五版. (c) 達梭系統公司 /p2. 版權所有.";
+Welcome.Label7.Title = "此軟體部份版權屬於第三者";
+Welcome.Label8.Title = "(請見文件中的 '特別注意'). /p1 已註冊";
+Welcome.Label9.Title = "達梭系統公司商標.";
+Welcome.Label10.Title = "\n";
+Welcome.Label11.Title = "警告: 此軟體由智慧財產權保護法所保護";
+Welcome.Label12.Title = "交易(經商)祕密和國際的條約。陳述, 分發, 這個軟體,"; 
+Welcome.Label13.Title = "或以任何其它形式部分或者全部的再製";
+Welcome.Label14.Title = "均需要達梭系統公司或者它的代表人 ";
+Welcome.Label15.Title = "的預先同意. ";
+Welcome.Label16.Title = "任何未經許可的行為，均有可能構成侵權行為！";
+Welcome.Label17.Title = "\n";
+
+//---------------------------------------------------------------------------
+//  CODE INSTALLATION DIRECTORY
+//---------------------------------------------------------------------------
+WndCodePath.Title           = "程式安裝目錄";
+CodePath.Label1.Title       = "如 /p1 已安裝, 請選擇安裝目錄.                ";
+CodePath.CBCodeNotInstalled.Title = "/p1 未安裝";
+CodePath.CBCodeInstalled.Title    = "/p1 已安裝";
+CodePath.FolderFrame.Title  = "/p1 安裝目錄";
+CodePath.FolderBrowse.Title = " 瀏覽... ";
+CodePath.ChooseFolder.Title = "選擇安裝目錄";
+
+//---------------------------------------------------------------------------
+//  DESTINATION DIRECTORY
+//---------------------------------------------------------------------------
+WndDestination.Title           = "選擇目的位置";
+Destination.Label1.Title       = "安裝程式會安裝 /p1 在下列目錄";
+Destination.Label2.Title       = "目錄如下.";
+Destination.Label3.Title       = "要安裝在此目錄 , 請按 下一步. 要按裝在不同目錄, 請按一下";
+Destination.Label4.Title       = "瀏覽和選擇其它目錄.";
+Destination.Label5.Title       = "您也可選擇不安裝 /p1,";
+Destination.Label6.Title       = "以按一下取消或退出設定.";
+Destination.Label7.Title       = "\n";
+Destination.Frame.Title        = "目的目錄 "; 
+Destination.Browse.Title       = " 瀏覽... ";
+Destination.ChooseFolder.Title = "選擇檔案夾";
+QtnWndCreateDirectory.Title    = "設定";
+QtnWndCreateDirectory.Text     = "\n 目錄:\n\n'/p1'\n\n 不存在. 您要建立此目錄嗎? \n";
+
+//---------------------------------------------------------------------------
+//  ERROR MESSAGES: DESTINATION DIRECTORY  
+//---------------------------------------------------------------------------
+ErrWndCreateDir.Title = "錯誤";
+ErrWndCreateDir.Text = "建立目錄錯誤: \n/p1\n/p2\n";
+ErrWndBadDir.Title   = "錯誤";
+ErrWndBadDir.Text    = "不正確的安裝目錄 \n";
+ErrWndEmptyDir.Title = "錯誤";
+ErrWndEmptyDir.Text = "/p1 必須是空的 \n";
+ErrWndPresentButNotDoc.Title = "錯誤";
+ErrWndPresentButNotDoc.Text  = "\n/p1 已安裝在目錄 \n/p2 中. \n 您無法安裝文件在此目錄中. \n 請選擇其它目錄.\n";
+ErrWndFileAlreadyExist.Title = "錯誤";
+ErrWndFileAlreadyExist.Text = "無法建立目錄 /p1\n. 名稱已存在. \n";
+ErrWndSyntaxDir.Title = "錯誤";
+ErrWndSyntaxDir.Text = "目錄語法錯誤. \n 空白和 tab 鍵是不允許的. \n";
+ErrWndAvailSpace.Title = "錯誤";
+ErrWndAvailSpace.Text = "計算可用空間錯誤: \n/p1\n/p2\n";
+ErrWndGALevel.Title = "錯誤";
+ErrWndGALevel.Text = "您無法安裝 /p1 級資料至 /p2 級安裝. \n";
+ErrWndSP.Title = "錯誤";
+ErrWndSP.Text = "\n 安裝達梭系統公司 /p1 /p2 文件 /p3 /p4 前, 您必須先移除 /p5.\n";
+ErrWndOS.Title = "錯誤";
+ErrWndOS.Text = "您無法安裝 /p1 操作系統至 /p2 操作系統. \n";
+ErrWndOpenExistingFile.Title = "錯誤";
+ErrWndOpenExistingFile.Text = "無法開啟 %s 檔案.\n%s\n";
+ErrWndDocUnderCode.Title = "錯誤";
+ErrWndDocUnderCode.Text = "\n 此軟體已安裝在目錄 /p1.\n 您無法安裝文件說明在目錄 /p2.\n 請選擇其它目錄.\n";
+
+//---------------------------------------------------------------------------
+//  CHOOSE SETUP TYPE
+//---------------------------------------------------------------------------
+//WndSetupType.Title             = "設定型式";
+//SetupType.LMsg.Title  = "按一下您偏好的設定型式, 然後按下一步.";
+//SetupType.RBComplete.Title     = "完成";
+//SetupType.RBCustom.Title       = "自訂";
+//SetupType.RBCompleteText.Title = "將會安裝所有文件.";
+//SetupType.RBCustomText.Title   = "您也可選擇要安裝的文件.";
+
+//---------------------------------------------------------------------------
+//  INSTALLED DOCUMENTATIONS
+//---------------------------------------------------------------------------
+WndInstallProduct.Title     = "已安裝產品文件";
+InstallProduct.Label1.Title = "表列的產品文件已安裝";
+InstallProduct.Label2.Title = "在檔案夾 /p1.";
+InstallProduct.Label3.Title = "您所選擇的產品文件已安裝";
+InstallProduct.Label4.Title = "在相同檔案夾.";
+InstallProduct.Label5.Title = "\n" ;
+InstallProduct.InstallProductLabel.Title = "目前設定:";
+
+//---------------------------------------------------------------------------
+//   ERROR MESSAGES: INSTALLED DOCUMENTATIONS
+//---------------------------------------------------------------------------
+ErrWndProductAllInstalled.Title = "資訊";
+ErrWndProductAllInstalled.Text  = "\n 所有可用文件均已安裝.\n";
+
+//---------------------------------------------------------------------------
+//  SELECT DOC
+//---------------------------------------------------------------------------
+WndMediaProduct.Title     = "選擇文件產品";
+MediaProduct.Label1.Title = "選擇您要安裝在此目錄的產品文件";
+MediaProduct.Label2.Title = "/p1.";
+MediaProduct.Label3.Title = "表列內含為 /p1 預選的產品文件";
+MediaProduct.Label4.Title = "/p1 您已安裝的產品如要修改它, 請按一下重設來重新獲得.";
+MediaProduct.Label5.Title = "您也可按一下 全部或無 來安裝所有文件.";
+MediaProduct.Label6.Title = "\n";
+MediaProduct.ChooseLabel.Title = "選擇從:" ;
+MediaProduct.Frame.AvailableSizeLabel.Title = "可用空間:\t\t" ;
+MediaProduct.Frame.RequiredSizeLabel.Title = "所需空間:\t\t" ;
+MediaProduct.Frame.AvailableSizeValue.Title = " KB";
+MediaProduct.Frame.RequiredSizeValue.Title = " KB";
+MediaProduct.Frame.PreselectButton.Title = " 重設 ";
+MediaProduct.Frame.SelectAllButton.Title = " 全部 / 無 ";
+MediaProduct.ChooseFolder.Title = "擇 /p1 安裝檔案夾";
+
+//---------------------------------------------------------------------------
+//   ERROR MESSAGES: SELECT DOC
+//---------------------------------------------------------------------------
+ErrWndProductNotSelect.Title  = "錯誤";
+ErrWndProductNotSelect.Text   = "\n 未選擇文件.\n";
+ErrWndSizeToUnload.Title      = "錯誤";
+ErrWndSizeToUnload.Text       = "\n 在 /p3 中沒有足夠的空間來安裝所選所有文件. \n\n 可用的\t : /p1 KB\n 需要 \t\t : /p2 KB\n";
+ErrWndEmptyMediaToc.Title     = "錯誤";
+ErrWndEmptyMediaToc.Text      = "\n CD 中表列文件產品是空的.\n";
+ErrWndFileNotFound.Title      = "錯誤";
+ErrWndFileNotFound.Text       = "\n/p1 不是 /p2 的安裝檔案夾.\n\n 請選擇其它檔案夾.\n";
+ErrWndPresentButNotCode.Title = "錯誤";
+ErrWndPresentButNotCode.Text  = "\n/p1 是 /p2 的安裝檔案夾, \n 不是 /p3 的安裝檔案夾. \n\n 請選擇其它檔案夾. \n";
+ErrWndCodeGALevel.Title       = "錯誤";
+ErrWndCodeGALevel.Text        = "\n 您無法安裝 /p1 版本文件產品至 /p2 版本安裝. \n\n 請選擇其它檔案夾. \n";
+ErrWndNothingToPreselect.Title = "資訊";
+ErrWndNothingToPreselect.Text = "\n 請選擇上一步並選擇 /p1 的安裝路徑.\n";
+
+//---------------------------------------------------------------------------
+//  RECAP
+//---------------------------------------------------------------------------
+WndResume.Title              = "開始複製檔案";
+Resume.Label1.Title          = "設定程式已收集足夠資訊,來開始複製檔案.";
+Resume.Label2.Title          = "\n";
+Resume.Label3.Title          = "如果您要重新檢視或修改任何設定請按 上一步.";
+Resume.Label4.Title          = "如您滿意目前的設定請按 下一步 來開始複製檔案.";
+Resume.Label5.Title          = "\n";
+Resume.SettingLabel.Title    = "目前的設定";
+Resume.DocName.Title     = "/p1";
+Resume.DestinationName.Title = "目的地目錄";
+Resume.SpaceUsed.Title       = "所需空間 : /p1 KB";
+Resume.SelectedDoc.Title     = "選擇文件檔案夾";
+Resume.RequiredDoc.Title     = "依據所選文件的需要文件";
+WndResume.BCancel                = "安裝";
+
+//---------------------------------------------------------------------------
+// COPY FILES 
+//---------------------------------------------------------------------------
+Transfer.Title         = "設定";
+Transfer.Label1.Title  = "安裝文件中...";
+Transfer.Label2.Title  = "\n";
+Transfer.BCancel       = "取消" ;
+Transfer.CopyCAF.Title = "文件 CAF /p1 / /p2, /p3, 已成功.\n";
+
+//---------------------------------------------------------------------------
+//   ERROR MESSAGES
+//---------------------------------------------------------------------------
+ErrWndDestination.Title = "錯誤";
+ErrorWindow.Title = "錯誤";
+ErrWndTransfer.Title = "錯誤";
+ErrWndTransfer.Text  = "複製檔案錯誤. \n 請聯絡系統管理員. \n";
+ErrWndCheckCATIAIntegrity.Title = "錯誤";
+ErrWndCheckCATIAIntegrity.Text = "完整性檢查失敗. \n 若需更多資訊, 請聯絡 /p1\n";
+ErrWndCheckIntegrity.Log = "完整性檢查失敗. \n";
+AloneFramework           = "沿框架工作";
+ErrWndEnvPathName.Title = "錯誤";
+ErrWndEnvPathName.Text = "開啟 /p1 檔案失敗 \n";
+ErrWndServicePack.Title = "警告";
+ErrWndServicePack.Text = "有些您剛安裝的軟體是不正確的. \n 您必須重新安裝 Service Pack /p1\n";
+ErrWndNothingToUnload.Title = "錯誤";
+ErrWndNothingToUnload.Text = "沒有文件可複製...?\n";
+ErrWndInterruptButton.Title = "錯誤";
+ErrWndInterruptButton.Text = "";
+InformationWindow.ErrWndInterruptButton.Title = "中斷程序...\n";
+
+//---------------------------------------------------------------------------
+//  LOG FILE ERROR 
+//---------------------------------------------------------------------------
+QtnWndViewLogErrorPostInstall.Title = "問題 ?";
+QtnWndViewLogErrorPostInstall.Text  = "安裝時發生一些問題. \n 所有錯誤記錄在檔案 /p1 中. \n 您要讀取錯誤記錄檔嗎 ?";
+WndLogError.Title           ="記錄檔錯誤";
+ErrWndOpenLogFileError.Title = "錯誤";
+ErrWndOpenLogFileError.Text = "開啟錯誤記錄檔 /p1 失敗 \n/p2";
+
+//---------------------------------------------------------------------------
+// CHANGECDROM 
+//---------------------------------------------------------------------------
+NotifyChangeCD.Title="請輸入下一片 CD-ROM";
+NotifyChangeCD.MsgChange=" 請移除目前的 CD-ROM  且插入 CD-ROM 號碼 /p1\n";
+NotifyChangeCD.Error="CD-ROM 更換錯誤";
+NotifyChangeCD.ErrorChange="您沒有插入正確的 CD-ROM\n";
+
+//---------------------------------------------------------------------------
+//  FINISH 
+//---------------------------------------------------------------------------
+WndFinish.Title        = "安裝完成";
+Finish.LabelInterrupt1.Title = "安裝被中斷.";
+Finish.LabelInterrupt2.Title = "\n";
+Finish.LabelInterrupt3.Title = "更多資訊請參閱記錄檔 /p1";
+Finish.LabelInterrupt4.Title = "\n";
+Finish.LabelInterrupt5.Title = "\n";
+Finish.LabelTransferKO1.Title = "設定轉移已失敗.";
+Finish.LabelTransferKO2.Title = "\n";
+Finish.LabelTransferKO3.Title = "更多資訊請參閱記錄檔 /p1";
+Finish.LabelTransferKO4.Title = "\n";
+Finish.LabelTransferKO5.Title = "\n";
+Finish.LabelOKStart1.Title = "設定程式已成功安裝 /p1";
+Finish.LabelOKStart2.Title = "在您的電腦上.";
+Finish.LabelOKStart3.Title = "\n";
+Finish.LabelOKStart4.Title = "文件的 Home Page 為:/p1";
+Finish.LabelOKStart5.Title = "/p1";
+WndFinish.BCancel = "完成";
+
+//---------------------------------------------------------------------------
+//  EXIT 
+//---------------------------------------------------------------------------
+Exit.Title        = "退出設定程式";
+Exit.Label1.Title = "\n";
+Exit.Label2.Title = "設定未完成. 如您現在退出設定程式,";
+Exit.Label3.Title = "程式不會被安裝.";
+Exit.Label4.Title = "\n";
+Exit.Label5.Title = "您確定要退出安裝程式嗎 ?";
+Exit.Label6.Title = "\n";
+Exit.BCancel      = "是";
+Exit.BOK          = "否";
+

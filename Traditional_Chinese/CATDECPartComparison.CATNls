@@ -1,0 +1,113 @@
+//Comparison for JohnnyPart
+ComparisonWindow.Title = "比較 /P1 和 /P2";
+ComparisonWindow.DefaultTitle1 = "目前的";
+ComparisonWindow.DefaultTitle2 = "參考";
+
+
+//FileChooserDialog
+FileChooserDialog.Title = " /P1 的參考零件";
+FileChooserDialog.DefaultTitle = "參考零件";
+
+FileChooserDialog.DirectoryFrame.FileListLabel.Title = "參考文件";
+FileChooserDialog.DirectoryFrame.FileDeletePushButton.ShortHelp = "刪除暫存";
+FileChooserDialog.FileEditorFrame.FileEditor.LongHelp = 
+"參考零件文件.
+可輸入完整路徑.";
+FileChooserDialog.FileEditorFrame.FilePushButton.ShortHelp = "選擇檔案";
+FileChooserDialog.LayoutFrame.LayoutChooserLabel.Title = "視窗佈置";
+FileChooserDialog.LayoutFrame.VerticalLayout.ShortHelp = "垂直佈置";
+FileChooserDialog.LayoutFrame.VerticalLayout.LongHelp = 
+"二視窗將會並列顯示.";
+FileChooserDialog.LayoutFrame.HorizontalLayout.ShortHelp = "水平佈置";
+FileChooserDialog.LayoutFrame.HorizontalLayout.LongHelp = 
+"二視窗將會上下顯示.";
+
+ErrorPanel.Title = "開啟時發生錯誤";
+ErrorPanel.Title1 = "警告";
+
+NotACATPart = "所選文件不是 .CATPart 文件.";
+DocumentAlreadyLoaded = 
+"所選檔案已開啟. 
+請關閉它再重新執行.";
+
+NeedSameDocument = 
+"需要類似文件的版期.
+意思為要比較的文件必須是由 
+ \"存成...\" 動作產生的文件.";
+
+ImpossibleToOpen = "無法開啟所選文件.";
+ComparingSameDocument = "文件無法自我比較.";
+
+DuplicateFaces = "輸入文件含有複製修剪面. 比較時將會忽略它們";
+
+//TemporaryDirectory = "Temporary directory";
+ReferencePart = "參考零件文件";
+
+PartComparisonChooser.Title = "參考零件選擇";
+
+//Resources for all the Dialog windows of the temporary save creation
+//FileSaveDialog
+
+FileSaveDialog.Title = "建立暫存檔案";
+FileSaveDialog.SaveNameLabel.Title = "暫存檔案名稱";
+FileSaveDialog.SaveNameEditor.ShortHelp = "暫存檔案名稱";
+//SaveNoNameNotify
+SaveNoNameNotify.Title = "缺乏名稱";
+SaveNoNameNotify.Text  = "未輸入儲存名稱.";
+//SaveNameConflictNotify
+SaveNameConflictNotify.Title = "衝突"; 
+SaveNameConflictNotify.Text  = 
+"輸入名稱與暫存檔案一致 
+您要覆寫嗎?";
+//SaveNameOKNotify
+SaveNameOKNotify.Title = "儲存建立";
+SaveNameOKNotify.Text  = "儲存檔案已建立.";
+//SaveNameKONotify
+SaveNameKONotify.Title = "儲存時發生問題";
+SaveNameKONotify.Text  = 
+"不明原因造成儲存中斷.
+請再試一次.";
+
+//Ressources avant R13SP2
+//Items from the synchronization tool bar
+SynchronizationStateToolBar.Title  = "同步化";
+SynchronizeViewButton.ShortHelp    = "同步化視圖";
+SynchronizeViewButton.LongHelp     = "視點變更時同步化視圖
+也適用於置中命令等";
+SynchronizeCommandButton.ShortHelp = "同步化命令";
+SynchronizeCommandButton.LongHelp  = 
+"同步化命令, 可同時應用在兩側.
+只有可同時應用在兩側的命令可適用此選項.
+如建立命令, 則不相關.";
+
+
+// Barre de progression :
+ProgressTaskUI.Title = "幾何元素比較...";
+Annalyse.Title = "分析模型 : ";
+Compare.Title = "幾何元素比較中...  : ";
+
+
+// Ressouces des Etats du dialogue de comparaison.
+CATDECPartComparison.SelectCATPart.Message = "選擇參考 CATPart";
+CATDECPartComparison.ReadData.Message = "按下確認鍵繼續或取消來中止命令";
+CATDECPartComparison.CheckData.Message = "按下確認鍵繼續比較或取消來中止命令";
+CATDECPartComparison.GetParameter.Message = "選擇選項和按一下應用來比較";
+CATDECPartComparison.DisplayCompare.Message = "修改選項並按下溶合";
+CATDECPartComparison.MergeAction.Message = "選擇選項 ";
+CATDECPartComparison.CreateDocument.Message = "溶合文件完成";
+
+CATDECPartComparison.UndoTitle="幾何元素比較";
+CATDECPartComparison.AgentFileOK.UndoTitle="檔案選擇";
+CATDECPartComparison.AgentFileCANCEL.UndoTitle="檔案選擇";
+CATDECPartComparison.AgentFileDupliqueOK.UndoTitle="檢查檔案";
+CATDECPartComparison.AgentFileDupliqueKO.UndoTitle="檢查檔案";
+CATDECPartComparison.AgentFileDupliqueDetected.UndoTitle="檢查檔案";
+CATDECPartComparison.ParamApply.UndoTitle="執行比較";
+CATDECPartComparison.ParamCancel.UndoTitle="執行比較";
+CATDECPartComparison.ParamMerge.UndoTitle="執行溶合";
+CATDECPartComparison.TrfApply.UndoTitle="溶合";
+
+CATDECPartComparison.DocTitle= "溶合結果";
+
+// Pas de donnees dans la part
+CATDECPartComparison.NoSpec= "文件中無法找到資料 : /P1. 請檢查您的資料.";

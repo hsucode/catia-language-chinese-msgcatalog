@@ -1,0 +1,75 @@
+//-------------------------------------------------------------------------
+// Resource file for CATVideoConfigureDialog
+// Oct 99
+//-------------------------------------------------------------------------
+Title = "錄影特性";
+
+Video.VideoDefine.VideoType.Format.Title     = "格式 :";
+Video.VideoDefine.VideoType.Format.LongHelp   = "識別電影的格式";
+
+Video.VideoDefine.videoIdent.videoPath.Pathname.Title      = "目錄 :";
+
+Video.VideoDefine.videoIdent.videoPath.Name.Title      = "名稱 :";
+Video.VideoDefine.videoIdent.videoPath.Editor.LongHelp   = "可能透過輸入你比較喜歡的檔名來變更. 
+此檔名可被磁碟和目錄(資料夾)名稱先處理,換言之:\Videos\movie.avi. 
+你也可以點選瀏覽鍵以選擇資料夾和檔名.";
+
+Video.VideoDefine.videoIdent.videoPath.FileName.Title= "瀏覽";
+Video.VideoDefine.videoIdent.videoPath.FileName.LongHelp   = "選擇檔案或路徑以儲存電影輸出.";
+
+Video.VideoDefine.videoIdent.videoSeq.SeqNumberMode.Title= "自動檔案名稱";
+Video.VideoDefine.videoIdent.videoSeq.SeqNumberMode.LongHelp   = "每次號碼將自動地附加到檔名後面 
+你按下這個記錄鈕, 所以將記錄一系列檔案,
+ i.e., movie0000.avi, movie0001.avi, movie0002.avi, etc. ";
+
+TabContainer.Movie.Title      = "電影設定";
+TabContainer.Movie.LongHelp  = "這些選擇讓你選擇數個你記錄的電影檔案參數.";
+
+TabContainer.Movie.MovieSetup.Rate.Title      = "每秒畫面速率";
+TabContainer.Movie.MovieSetup.Rate.LongHelp   = "讓你指定每秒播放多少個電影畫面";
+
+TabContainer.Movie.MovieSetup.CompressorSetup.Title      = "壓縮設定...";
+TabContainer.Movie.MovieSetup.CompressorSetup.LongHelp   = "允許你選擇 CODEC, 那是一個可壓縮你的圖片且
+讓電影檔變小的程式.";
+
+TabContainer.Movie.MovieSetup.PostCompressionMode.Title      = "Post Compression Mode";
+TabContainer.Movie.MovieSetup.PostCompressionMode.LongHelp   = "Allow to compress the video after you stop the recording and not during the recording.";
+
+TabContainer.Capture.Title      = "抓取";
+TabContainer.Capture.LongHelp  = "此選項可讓您在錄製影像時在區域上選擇數個參數.";
+
+TabContainer.Capture.Frame1.Options.TimerEvent.Title = "計時器";
+TabContainer.Capture.Frame1.Options.TimerEvent.LongHelp = "計時鎖定圖像 (每 x 微秒). 除非基於重繪檢視器.";
+TabContainer.Capture.Frame1.Options.TimerSpinner.Title    = "計時器";
+TabContainer.Capture.Frame1.Options.TimerSpinner.LongHelp = "計時鎖定圖像 (每 x 微秒). 除非基於重繪檢視器.";
+
+TabContainer.Capture.Frame1.Options.IncludeCursor.Title = "包含指標";
+TabContainer.Capture.Frame1.Options.IncludeCursor.LongHelp = "鎖定圖像包含指標.";
+
+TabContainer.Capture.Frame1.Region.Viewer.Title = "文件視窗";
+TabContainer.Capture.Frame1.Region.Viewer.ShortHelp  = "目前應用檢視器是影像截取器 ";
+TabContainer.Capture.Frame1.Region.Viewer.Help  = "目前應用檢視器是影像截取器 ";
+TabContainer.Capture.Frame1.Region.Viewer.LongHelp  = "目前應用檢視器是影像截取器 ";
+TabContainer.Capture.Frame1.Region.Window.Title = "視窗";
+TabContainer.Capture.Frame1.Region.Window.ShortHelp = "目前應用檢視器是影像截取器, 請使用選擇鍵來更替視窗";
+TabContainer.Capture.Frame1.Region.Window.Help = "目前應用檢視器是影像截取器, 請使用選擇鍵來更替視窗";
+TabContainer.Capture.Frame1.Region.Window.LongHelp = "目前應用檢視器是影像截取器, 請使用選擇鍵來更替視窗";
+TabContainer.Capture.Frame1.Region.Area.Title   = "面積";
+TabContainer.Capture.Frame1.Region.Area.ShortHelp   = "目前應用檢視器是影像截取器, 請使用選擇鍵來定義新區域";
+TabContainer.Capture.Frame1.Region.Area.Help   = "目前應用檢視器是影像截取器, 請使用選擇鍵來定義新區域";
+TabContainer.Capture.Frame1.Region.Area.LongHelp   = "目前應用檢視器是影像截取器, 請使用選擇鍵來定義新區域";
+TabContainer.Capture.Frame1.Region.FullScreen.Title = "全螢幕";
+TabContainer.Capture.Frame1.Region.FullScreen.ShortHelp = "全螢幕均是鎖定範圍.";
+TabContainer.Capture.Frame1.Region.FullScreen.Help = "全螢幕均是鎖定範圍.";
+TabContainer.Capture.Frame1.Region.FullScreen.LongHelp = "全螢幕均是鎖定範圍.";
+TabContainer.Capture.Frame1.Region.FixedArea.Title = "固定區域";
+TabContainer.Capture.Frame1.Region.FixedArea.ShortHelp = "目前應用區域為影像抓取區域. 使用選擇鍵來定義區域的新位置.";
+TabContainer.Capture.Frame1.Region.FixedArea.Help = "目前應用區域為影像抓取區域. 使用選擇鍵來定義區域的新位置.";
+TabContainer.Capture.Frame1.Region.FixedArea.LongHelp = "目前應用區域為影像抓取區域. 使用選擇鍵來定義區域的新位置.";
+//TabContainer.Capture.Frame1.Region.FixedAreaButton.Title = "區域大小";
+TabContainer.Capture.Frame1.Region.Select.Title = "選擇區域";
+TabContainer.Capture.Frame1.Region.Select.ShortHelp = "選擇按鈕. ";
+TabContainer.Capture.Frame1.Region.Select.Help = "選擇按鈕來定義新區域或新區域位置. ";
+TabContainer.Capture.Frame1.Region.Select.LongHelp = "選擇按鈕來定義新區域或新區域位置. ";
+
+FileDialog.Title = "另存新檔...";

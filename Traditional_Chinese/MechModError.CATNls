@@ -1,0 +1,214 @@
+// Error Messages catalog, english version.
+//----------------------------------------------------------------------------
+//
+//  Catalogue des erreurs NLS MechanicalModeler
+//
+//----------------------------------------------------------------------------
+
+//--- Messages generaux erreurs NLS MecahnicalModeler -------------------
+
+MfError = "錯誤發生在機構模型的架構中.";
+
+MfErrAssertFailed = "斷言失敗.";
+
+MfErrCCP = "貼上是禁止的.";
+
+MfErrImpossibleOperation = "此步序不允許.";
+
+MfErrInternalError = "內部錯誤在機構模型.";
+
+MfErrUnresolveBRep = "面,邊, 或頂點不再認可.";
+
+MfErrInvalidBRepFeature = "BRep 特徵是無效的.";
+
+MfErrInvalidBRepSupportKO = "面,邊, 或頂點不再認可: 刪除解決上下文的特徵.";
+
+MfErrInvalidBRepLabelKO = "面,邊, 或頂點不再認可.";
+
+MfErrInvalidBRepObject = "選擇的物件無效.";
+
+MfErrInvalidElement = "元素無效.";
+
+MfErrInvalidFeature = "特徵無效.";
+
+MfErrInvalidName = "變數是不許的名稱.";
+
+MfErrInvalidType = "變數是不許的類型.";
+
+MfErrNotYetImplemented = "尚未實行.";
+
+MfErrNullPointerAccess = "指標無效.";
+
+MfErrOutOfRange = "變數超出範圍.";
+
+MfErrUpdate = "更新錯誤.";
+
+MfErrBRepUpdate = "BRep 更新錯誤.";
+
+MfErrUpdateFailed = "更新失敗.";
+
+MfErrCstConfig = "不一致的幾何或太多拘束條件.";
+
+MfErrUpdateCycle = "特徵包含在更新循環中.";
+
+MfErrInOutCycle = "在特徵架構中發現 In-Out 循環.";
+
+MfErrSelfDescendingImport = "無法建立外部參考 : 偵測到循環.";
+
+MfErrSelfExternalizeImport = "不可能建立一個自我根據的外部參考.";
+
+MfErrSynchroMissingReference = "不可能同步: 元素, 從外部參考 /p1 已建立, 是找不到的.";
+
+MfErrSynchroInconsistent = "不可能同步 : /p1 與外部參考 /p2 不一致";
+
+MfErrSynchroNonUpdatableReference = "不可能同步: /p1, 從外部參考 /p2 已建立,是不可更新的.";
+
+MfErrImportCreation = "無法建立一個外部參考 :\n/p1";
+
+MfErrAssociativeImportCreation = "不可能建立一個聯合的外部參考.";
+
+MfErrImportCATShape = "從 CATShape :無法為邊線, 修剪面, 頂點建立外部參考 : 使用萃取特徵.";
+
+MfErrUnpublishedImport = "無法由未發行的元素建立外部參考";
+
+MfErrUnpublishedImportButCellPublished = "特徵未發行, 只有單一個. \n 更改 使用者過濾選項 來強制 幾何元素過濾器 或修改發行模式.";
+
+MfErrUnpublishedImportButFeaturePublished = "次元素未發行, only its federating feature is.\nChange \"User Filter Selection\" to impose \"Feature Element Filter\" or modifiy publication mode.";
+
+MfErrUnsavedInDatabase = "無法建立外部參考 : 元素未儲存在資料庫中";
+
+MfErrMultiContext = "無法建立外部參考 : 因 /p2 定義在背景 /p1 中, 以致無法在 /P3 中選擇";
+
+MfErrSeveralDimensions = "無法建立外部參考 : 請萃取不同尺寸的次元素 ";
+
+MfErrDocumentNotFound = "文件不在工作中";
+
+MfErrSubProductMoved = "次產品移動至組立.";
+
+MfErrReplaceLinkOnContextualImport = "從背景輸入的無法更換鏈結";
+
+MfErrReplaceLinkOnDifferentDocument = "無法以此文件更換鏈結 (只可使用 儲存成)";
+
+MfErrInvalidDestination = "目標無效.";
+
+MfErrCheckKO = "此元素機構模型檢查不良";
+
+MfErrCheckJournalTopoKO = "機構模型檢查不良 : 此特徵的無效的拓撲日誌.";
+
+MfErrCheckScopeBodyKO = "機構模型檢查不良 : 此特徵的拓撲本體與一般名字主題不一致.";
+
+MfErrRelaunchUpdate ="重新載入更新需求.";
+
+MfErrCutPaste = "此情形無法執行剪下貼上. \n 除了點線平面以外的基特徵, 刪除原始複製物件前必須先執行複製和貼上. \n 如在同一文件中, 以 如設定 格式時, 您可更改幾何元素組或重新排序.";
+
+MfErrMissingRefPlane = "在 CATPart 中需有三個參考面.";
+
+MfErrDestPrivateTool = "在個人工具中不可使用貼上";
+
+MfErrDestShapeBody = "在造形本體中不允許以設定貼上此元素";
+
+MfErrPasteLGSUnderGS = "無法在幾何組下貼上循序幾何組.";
+
+MfErrPasteGSUnderLGS = "無法在循序幾何組下貼上幾何組.";
+
+MfErrPasteGSUnderHybrid = "無法在此本體下貼上幾何組.";
+
+MfErrPasteLGSUnderBody = "無法在機械本體下貼上循序幾何組.";
+
+MfErrPasteInExternalRef = "無法貼在外部參考本體上.";
+
+MfErrPasteHybridUnderGS = "無法在幾何組下貼上循序本體.";
+
+MfErrPasteHybridUnderBody = "無法在機械本體下貼上循序本體.";
+
+MfErrPasteBodyUnderBody = "無法在機械本體下貼上機械本體.";
+
+MfErrPasteBodyUnderGS = "無法在幾何組下貼上機械本體.";
+
+MfErrPasteBodyUnderLGS = "無法在循序幾何組下貼上機械本體.";
+
+MfErrPasteBodyUnderHybrid = "無法在循序本體下貼上機械本體.";
+
+MfErrPasteBody="無法在此位置貼上機械本體.";
+
+MfErrPasteMultiSelUnderBody = "無法在機械本體下貼上多重輸出.";
+
+MfErrPasteMultiSelUnderPart = "無法在零件下貼上多重輸出.";
+
+MfErrExternalReference = "有一個元素是另一文件的特徵.";
+
+MfErrExternalReference1 = "/p1 或它的分件 \n 是另一文件的特徵.";
+
+MfErrAxisSystemNoSelection = "未選原點或軸. \n 請編輯軸系或重做選擇.";
+
+MfErrFromSolidToShape = "所複製的特徵是由機構本體而來且不能貼在曲面本體上.";
+
+MfErrPasteSHMTool = "含有白鐵件特徵的本體無法成為第二個本體. \n 所有白鐵件特徵必須在 PartBody 中.";
+
+MfErrSelFutureGeometry = "因為位置在特徵 /p1 後, 以致無法選擇 ( 請參考在 \" 工具 / 選項 \" 中的 \" 零件架構 / 一般 \" 標籤)";
+
+MfErrSelNotDrawnGeometry = "因已被特徵 /p1 選用, 以致無法選擇 ( 請參考在 \" 工具 / 選項 \" 中的 \" 零件架構 / 一般 \" 標籤)";
+
+MfErrSelPotentialAbsorbedFeature = "因已被特徵 /p1 選用, 以致無法選擇.";
+
+MfErrSelAggreagatedFeature = "因為它是一個 contextual 特徵, 以致無法選擇 (查看在 工具 選項 中的 零件基本架構 一般 標籤";
+
+MfErrNonConsecutive = "特徵不連續或不屬於本體.";
+
+MfErrParentBelowChild = "/p1 屬於下層元素 /p2.";
+
+MfErrMultipleModifChildren = "含有一個以上的 /p1 下層元素.";
+
+MfErrReplaceSubElem = "以 /p2 更換 /p1 失敗.";
+
+MfNoSuitableReplug = "沒有線性影響, 以致新特徵無法貼在所需位置上.";
+
+MfErrCCPConsecutive = "所選特徵在複製步驟上不連續.";
+
+MfReplaceFailureAtCCP ="貼上取消 : 部份元素無法更換.";
+
+MfErrMultiSelV4V5="無法在此位置貼在相關於 V4 的特徵.";
+
+MfNoImportChildBeforeRef ="參考沒有線性影響前, 內部輸入無法貼上.";
+
+MfNoImportChildAfterRefAbsorbed="內部輸入無法貼在 \"/p1\" 後, which is absorbing its reference.\nIt would affect linearity.";
+
+MfErrDestOGS = "此元素除了幾何組外無法執行貼上";
+
+MfErrCCPGenericNaming="複製 /p1 時發生問題";
+
+MfErrInterPartCopyValidContext="內部零件複製 : /p1";
+
+MfErrInterPartCopyOtherError="內部零件複製 : /p1";
+
+MfErrPasteGeomUnderPart="無法在零件下貼上幾何特徵.";
+
+MfErrAggregation="\n    /p1 無法包含 /p2.\n    /p2 or its direct father breaks inclusion rules.";
+
+MfErrVolumeInHybridBody="無法在本體上直接貼上體積";
+
+MfErrExternalLink="動作可能造成錯誤: \nIt's not advised to instantiate a Power Copy that contains an external link \nin the Part that contains the reference of the external link.";
+
+//--- Messages NLS specifiques pour UpdateError ----------------------------
+
+
+// Messages generated in source MF0CST.m/src/CATFCallBackSolver.cpp
+// case of overconstrained or not consistent geometry
+
+StrError1 = "過多拘束或組態不一致 : 有些拘束被忽略";
+
+StrError2 = "拘束已解出但是仍有過多拘束或組態不一致";
+
+StrError3 = "忽略拘束 : 系統有過多拘束或組態不一致";
+
+StrError4 = "幾何學部分地解決了";
+
+StrError5 = "幾何和拘束條件間的無效循環";
+
+//----------------------------------------------------------------------------
+
+SickFeatures = "Sick 特徵: ";
+IndefiniteFeature = "未確定特徵";
+Comma = ", ";
+None = "無";
+Message = ". 訊息: ";

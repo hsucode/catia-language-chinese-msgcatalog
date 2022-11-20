@@ -1,0 +1,190 @@
+// ==============================================================================================
+// ErrorMessages STEP
+// 
+// 12/13/2002: AIY: Creation
+// ==============================================================================================
+
+ErrorMsg.Header =
+"+++DETAILS:";
+
+ErrorMsg.InstanceNo =
+"\nInstance Number:\t";
+
+ErrorMsg.EntityName=
+"\nName of the Entity:\t";
+
+ErrorMsg.End =
+"\n------\n";
+
+ErrorMsg.OPEN_FILE_MSG.Diagnostic =
+"\n 偵錯: \t 無法開啟 STEP21 檔案";
+
+ErrorMsg.INVALID_SCHEMA_MSG.Diagnostic =
+"\n 偵錯: \t 模型的圖示和 STEP21 檔案的檔示 : 名稱不符";
+
+ErrorMsg.INVALID_SCHEMA_VERSION_MSG.Diagnostic =
+"\n 偵錯: \t 模型的圖示和 STEP 檔案的檔示 : 版本不符";
+
+ErrorMsg.INVALID_ENTITY_MSG.Diagnostic =
+"\n 偵錯: \t 目前圖示中的本體未定義";
+
+ErrorMsg.INVALID_ENTITY_MSG.Name =
+"\n 本體名稱:\t";
+
+ErrorMsg.INVALID_DIESELE_MSG.Diagnostic =
+"\n 偵錯: \t 無效新建複本數目";
+
+ErrorMsg.UNKNOWN_AGGR_MSG.Diagnostic =
+"\n 偵錯: \t 遇到累積的未知型式";
+
+ErrorMsg.UNKNOWN_AGGR_MSG.Message =
+"\n 無法建立累積:\t";
+
+ErrorMsg.NOT_IMPLEMENTED_MSG.Diagnostic =
+"\n 偵錯: \t 尚未可用";
+
+ErrorMsg.UNKNOWN_TYPE_MSG.Diagnostic =
+"\n 偵錯: \t 未知的 SDAI 型式";
+
+ErrorMsg.UNKNOWN_ATTR_MSG.Diagnostic =
+"\n 偵錯: \t 目前新建元件的未知屬性";
+
+ErrorMsg.INVALID_FORMAT.Diagnostic =
+"\n 偵錯: \t 無效的 STEP21 檔案格式";
+
+ErrorMsg.UNDEF_ENTITY_REF.Diagnostic =
+"\n 偵錯: \t 參考本體未存在 \t";
+
+ErrorMsg.UNDEF_ENTITY_REF.ElemNo =
+"\n 被參考的元素數目:\t";
+
+ErrorMsg.UNDEF_ENTITY_REF.Message =
+"\n 此新建元件將會被忽略\t";
+
+ErrorMsg.EXTD_SCHEMA_MSG.Name = 
+"\n 延伸 Schema:\t";
+
+ErrorMsg.EXTD_SCHEMA_MSG.Warning = 
+"\n 警告!! 'CCD_CLA_GVP_AST_ASD' 將會被當做檔案 schema\n";
+
+ErrorMsg.RequiredArg=
+"\n 需要屬性數目:\t";
+ErrorMsg.GivenArg=
+"\n 供應的屬性數目 :\t";
+ErrorMsg.WRONG_NUM_ARG.Name=
+"\n 複件定義中的屬性數目錯誤. 將建立未完整複件 \n";
+
+ErrorMsg.AttributeIndex=
+"\n 在屬性清單中定位屬性 :\t";
+ErrorMsg.AttributeName=
+"\n 屬性名稱 :\t";
+ErrorMsg.RequiredArgType=
+"\n 需要屬性型式 :\t";
+ErrorMsg.GivenArgType=
+"\n 供應屬性型式 :\t";
+ErrorMsg.INVALID_ARG_TYP.Name=
+"\n 屬性型式不正確. \n";
+
+//--------------------------------------------------------------------------------------
+//				SDAI ERROR MESSAGES....
+//--------------------------------------------------------------------------------------
+ ErrorMsg.sdaiESESSINIT.Msg = "\n 偵錯: \t 程序已開啟\t";                                     
+
+ ErrorMsg.sdaiENOSDAI.Msg = "\n 偵錯: \tSDAI 未可用 \t";                                     
+
+ ErrorMsg.sdaiENOSESS.Msg = "\n 偵錯: \t 未起始程序 \t";                                     
+
+ ErrorMsg.sdaiENOREP.Msg = "\n 偵錯: \t Repository 不存在 \t";                                     
+
+ ErrorMsg.sdaiENOREPACC.Msg = "\n 偵錯: \t Repository 無法存取 \t";                                     
+
+ ErrorMsg.sdaiEREPOPEN.Msg = "\n 偵錯: \tRepository 已開啟 \t";                                     
+
+ ErrorMsg.sdaiEREPCLOSE.Msg = "\n 偵錯: \t Repository 未開啟 \t";                                     
+
+ ErrorMsg.sdaiEREPACERR.Msg = "\n 偵錯: \t Repository 存取模式衝突 \t";                                     
+
+ ErrorMsg.sdaiEREPNOTRO.Msg = "\n 偵錯: \t Repository 不是唯讀模式 \t";                                     
+
+ ErrorMsg.sdaiEREPNOTRW.Msg = "\n 偵錯: \t Repository 不是可寫入模式 \t";                                     
+
+ ErrorMsg.sdaiEUNREPACC.Msg = "\n 偵錯: \t Repository 未定義存取模式 \t";                                     
+
+ ErrorMsg.sdaiENOMODEL.Msg = "\n 偵錯: \t 模形不存在 \t";                                     
+
+ ErrorMsg.sdaiENOMODACT.Msg = "\n 偵錯: \t 模型未作動 \t";                                     
+
+ ErrorMsg.sdaiEMODACCERR.Msg = "\n 偵錯: \t 模型存取模式衝突 \t";                                     
+
+ ErrorMsg.sdaiEMODNOTRO.Msg = "\n 偵錯: \t 模型不是唯讀模式 \t";                                     
+
+ ErrorMsg.sdaiEMODNOTRW.Msg = "\n 偵錯: \t 模型不是可寫入模式 \t";                                    
+
+ ErrorMsg.sdaiEUNMODACC.Msg = "\n 偵錯: \t 模型未定義存取模式 \t";                                   
+
+ ErrorMsg.sdaiEDUPMODNM.Msg = "\n 偵錯: \t 模型名稱不唯一 \t";                                     
+
+ ErrorMsg.sdaiEUNKEDEF.Msg = "\n 偵錯: \t 模型中元件定義未知 \t";                                     
+
+ ErrorMsg.sdaiEUNKTYPE.Msg = "\n 偵錯: \t 未知型式 \t";                                     
+
+ ErrorMsg.sdaiEBADTYPE.Msg = "\n 偵錯: \t 型式未在相同圖示 \t";                                     
+
+ ErrorMsg.sdaiENORULE.Msg = "\n 偵錯: \t 規則不存在 \t";                                     
+
+ ErrorMsg.sdaiENOOPER.Msg = "\n 偵錯: \t 動作尚未可用 \t";                                     
+
+ ErrorMsg.sdaiENOOBJ.Msg = "\n 偵錯: \t 物件不存在 \t";                                     
+
+ ErrorMsg.sdaiEUNKATTR.Msg = "\n 偵錯: \t 屬性名稱未知 \t";                                     
+
+ ErrorMsg.sdaiENODERIVE.Msg = "\n 偵錯: \t 不可存取至 derived 屬性 \t";                                     
+
+ ErrorMsg.sdaiEVALTYPER.Msg = "\n 偵錯: \t 數值不是正確型式 \t";                                     
+
+ ErrorMsg.sdaiEVALNOASN.Msg = "\n 偵錯: \t 未指定數值 \t";                                     
+
+ ErrorMsg.sdaiENOAGGR.Msg = "\n 偵錯: \t 聚集不存在 \t";                                     
+
+ ErrorMsg.sdaiENOITER.Msg = "\n 偵錯: \t 疊帶不存在 \t";                                     
+
+ ErrorMsg.sdaiEEMPTAGGR.Msg = "\n 偵錯: \t 空的聚集 \t";                                     
+
+ ErrorMsg.sdaiENOCURMBR.Msg = "\n 偵錯: \t 未定義目前元件 \t";                                     
+
+ ErrorMsg.sdaiENOOPAGGR.Msg = "\n 偵錯: \t 聚集型式無效動作 \t";                                     
+
+ ErrorMsg.sdaiEDUPVALUE.Msg = "\n 偵錯: \t 數值已存在聚集 \t";                                     
+
+ ErrorMsg.sdaiEUNDEFRES.Msg = "\n 偵錯: \t 結果為未定義 \t";                                     
+
+ ErrorMsg.sdaiEINDEXBND.Msg = "\n 偵錯: \t 索引超過範圍 \t";                                     
+
+ ErrorMsg.sdaiENOTS.Msg = "\n 偵錯: \t 動作不存在 \t";                                     
+
+ ErrorMsg.sdaiESYSERROR.Msg = "\n 偵錯: \t Underlying 系統錯誤 \t";                                     
+
+ ErrorMsg.sdaiEITERATOR.Msg = "\n 偵錯: \t 不一致動作: 如疊帶中的物件已刪除 (this can h
+ntext too!)\t";                                       
+
+ ErrorMsg.sdaiECONTEXT.Msg = "\n 偵錯: \t 內容執行超出錯誤, 意思為當多重相同模型時您執行了未支援的動作. \t";                                       
+
+ ErrorMsg.sdaiEISOLATION.Msg = "\n 偵錯: \t 執試修改模型但違反 in-group 獨立. \t";                                      
+
+ ErrorMsg.sdaiENOCOW.Msg = "\n 偵錯: \t";                                     
+
+ ErrorMsg.sdaiESTORE.Msg = "\n 偵錯: \t 儲存回復內容時發生錯誤 \t"; 
+
+ ErrorMsg.sdaiLOWMEM.Msg = "\n 偵錯: \t 系統沒有足夠的記憶體可執行 \t";
+
+ ErrorMsg.sdaiDEFAULT.Msg = "\n 偵錯: \t 發生部份 SDAI 錯誤."; 
+
+
+
+
+
+
+
+
+
+

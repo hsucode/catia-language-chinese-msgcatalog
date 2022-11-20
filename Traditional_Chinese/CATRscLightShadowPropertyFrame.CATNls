@@ -1,0 +1,134 @@
+// COPYRIGHT DASSAULT SYSTEMES 1998
+//===========================================================================
+//
+// CATRscLightShadowPropertyFrame
+//
+//===========================================================================
+
+EnvironmentCreationWarning = "目前沒有啟動陰影的環境. \n 您要建立一個新的透明嗎 ?";
+LightObjectShadowWarning = "只有一個光源可支援物件陰影. 其它的將被關閉. \n 您要執行嗎 ?";
+
+small  = "小";
+medium = "中";
+large  = "大"; 
+
+quality1 = "標準";
+quality2 = "好";
+
+nearPlaneMode1 = "自動";
+nearPlaneMode2 = "手動";
+
+shadowPHSSepFrame.shadowPHSSepLabel.Title = "射線軌跡";
+shadowPHSSepFrame.shadowPHSSepLabel.Help = "啟動射線軌跡陰影";
+shadowPHSSepFrame.shadowPHSSepLabel.ShortHelp = "啟動射線軌跡陰影";
+shadowPHSSepFrame.shadowPHSSepLabel.LongHelp =
+"以此光源啟動或關閉射線軌跡陰影.";
+
+shadowCheck.Title = "啟動";
+shadowCheck.Help = "啟動射線軌跡陰影";
+shadowCheck.ShortHelp = "啟動射線軌跡陰影";
+shadowCheck.LongHelp =
+"以此光源啟動或關閉射線軌跡陰影.";
+
+shadowRTRSepFrame.shadowRTRSepLabel.Title = "即時";
+shadowRTRSepFrame.shadowRTRSepLabel.Help = "啟動即時陰影";
+shadowRTRSepFrame.shadowRTRSepLabel.ShortHelp = "啟動即時陰影";
+shadowRTRSepFrame.shadowRTRSepLabel.LongHelp =
+"以此光源啟動或關閉即時陰影.";
+
+hardwareShadowCheck.Title = "環境上";
+hardwareShadowCheck.Help = "在環境上啟動即時陰影";
+hardwareShadowCheck.ShortHelp = "在環境上啟動即時陰影";
+hardwareShadowCheck.LongHelp =
+"在環境上啟動或關閉即時陰影.";
+
+objectsShadowCheck.Title = "物件上";
+objectsShadowCheck.Help = "在物件上啟動即時陰影";
+objectsShadowCheck.ShortHelp = "在物件上啟動即時陰影";
+objectsShadowCheck.LongHelp =
+"在物件上啟動或關閉即時陰影.";
+
+shadowSmoothingLabel.Title = "平順";
+shadowSmoothingLabel.Help = "定義陰影限制的平順";
+shadowSmoothingLabel.ShortHelp = "陰影平順";
+shadowSmoothingLabel.LongHelp =
+"定義陰影限制的平順";
+
+shadowSmoothingSlider.Title = "";
+shadowSmoothingSlider.Help = "定義陰影限制的平順";
+shadowSmoothingSlider.ShortHelp = "陰影平順";
+shadowSmoothingSlider.LongHelp =
+"定義陰影限制的平順";
+
+shadowColorLabel.Title = "顏色";
+shadowColorLabel.Help = "設定陰影顏色";
+shadowColorLabel.ShortHelp = "陰影顏色";
+shadowColorLabel.LongHelp =
+"更改陰影顏色";
+
+shadowColorSlider.Title = "";
+shadowColorSlider.Help = "設定陰影顏色";
+shadowColorSlider.ShortHelp = "陰影顏色";
+shadowColorSlider.LongHelp =
+"更改陰影顏色";
+
+shadowTransparencyLabel.Title = "透明度";
+shadowTransparencyLabel.Help = "設定陰影透明度";
+shadowTransparencyLabel.ShortHelp = "陰影透明度";
+shadowTransparencyLabel.LongHelp =
+"更改陰影透明度";
+
+shadowTransparencySlider.Title = "";
+shadowTransparencySlider.Help = "設定陰影透明度";
+shadowTransparencySlider.ShortHelp = "陰影透明度";
+shadowTransparencySlider.LongHelp =
+"更改陰影透明度";
+
+imageShadowSizeLabel.Title = "對映精度 ";
+imageShadowSizeLabel.Help  = "定義陰影對映精度";
+imageShadowSizeLabel.ShortHelp = "陰影對映精度";
+imageShadowSizeLabel.LongHelp =
+"定義陰影對映大小. 
+尺寸愈大陰影將更精確.";
+
+imageShadowSizeCombo.Title = "對映精度 ";
+imageShadowSizeCombo.Help  = "定義陰影對映精度";
+imageShadowSizeCombo.ShortHelp = "陰影對映精度";
+imageShadowSizeCombo.LongHelp =
+"定義陰影對映大小. 
+尺寸愈大陰影將更精確.";
+
+shadowFittingModeLabel.Title = "品質 ";
+shadowFittingModeLabel.Help  = "定義陰影品質模式";
+shadowFittingModeLabel.ShortHelp = "陰影品質模式";
+shadowFittingModeLabel.LongHelp =
+"定義陰影品質模式. 
+如品質模式較佳, 
+陰影會更精確,但效能會較差.";
+
+shadowFittingModeCombo.Title = "品質 ";
+shadowFittingModeCombo.Help  = "定義陰影品質模式";
+shadowFittingModeCombo.ShortHelp = "陰影品質模式";
+shadowFittingModeCombo.LongHelp =
+"定義陰影品質模式. 
+如品質模式較佳, 
+陰影會更精確,但效能會較差.";
+
+nearPlaneModeLabel.Title = "近接平面 ";
+nearPlaneModeLabel.Help  = "定義陰影品質模式";
+nearPlaneModeLabel.ShortHelp = "陰影品質模式";
+nearPlaneModeLabel.LongHelp =
+"定義陰影品質模式. 
+如果品質模式較佳, 
+陰影將較佳
+但效能會較慢.";
+
+nearPlaneModeCombo.Title = "近接平面 ";
+nearPlaneModeCombo.Help  = "定義陰影品質模式";
+nearPlaneModeCombo.ShortHelp = "陰影品質模式";
+nearPlaneModeCombo.LongHelp =
+"定義陰影品質模式. 
+如果品質模式較佳, 
+陰影將較佳
+但效能會較慢.";
+

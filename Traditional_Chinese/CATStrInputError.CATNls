@@ -1,0 +1,129 @@
+// *--------------------------------------------*//
+// *               Message example              *//
+// *                                            *//
+// *------------------------------------------- *//
+// STRINPUT_ERR_2000.Request    = "Operation failed";
+// STRINPUT_ERR_2000.Diagnostic = "Curve support /p1 is invalid";
+// STRINPUT_ERR_2000.Advice     = "Choose a smoother curve";
+
+// Cutback
+STRINPUT_ERR_1000.Request    = "/p1 join impossible between /p2 and /p3 structures.";
+STRINPUT_ERR_1000.Diagnostic = "/p1 structure is already impacted by a join.";
+STRINPUT_ERR_1000.Advice     = "Erase the existing one if you want to create another one.";
+
+STRINPUT_ERR_1001.Request    = "/p1 join impossible between /p2 and /p3 structures.";
+STRINPUT_ERR_1001.Diagnostic = "Impossible to determine what extremity to take into account.";
+STRINPUT_ERR_1001.Advice     = "";
+
+STRINPUT_ERR_1002.Request    = "/p1 join impossible between /p2 and /p3 structures.";
+STRINPUT_ERR_1002.Diagnostic = "The join involves an update cycle.";
+STRINPUT_ERR_1002.Advice     = "Invert member to trim /p1 and trimming member /p2.";
+
+
+///////////////////////////////////////////////////////////////////////////
+//                          TOPOLOGICAL ANALYZES                         //
+///////////////////////////////////////////////////////////////////////////
+
+// No body associated
+STRINPUT_ERR_1003.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1003.Diagnostic = "/p1 does not have any body.";
+STRINPUT_ERR_1003.Advice     = "Try to improve your geometry or build again this feature.";
+
+// Mono-domain wanted
+STRINPUT_ERR_1004.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1004.Diagnostic = "The number of domains of /p1 is /p2.";
+STRINPUT_ERR_1004.Advice     = "The number of domains must be /p1.";
+
+// Dimension error
+STRINPUT_ERR_1005.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1005.Diagnostic = "Dimension of /p1 is /p2.";
+STRINPUT_ERR_1005.Advice     = "It must be /p1.";
+
+// Opened wire
+STRINPUT_ERR_1006.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1006.Diagnostic = "/p1 is an opened wire.";
+STRINPUT_ERR_1006.Advice     = "Try to improve your geometry.";
+
+// Loss of topological rep
+STRINPUT_ERR_1007.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1007.Diagnostic = "Topology of /p1 is no longer recognized.";
+STRINPUT_ERR_1007.Advice     = "";
+
+// Parallel directions
+STRINPUT_ERR_1008.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1008.Diagnostic = "The given direction is parallel to /p1.";
+STRINPUT_ERR_1008.Advice     = "";
+
+// Tangency discontinuities
+STRINPUT_ERR_1009.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1009.Diagnostic = "/p1 has tangency discontinuities.";
+STRINPUT_ERR_1009.Advice     = "Make it a smoother.";
+
+// Infinite plane
+STRINPUT_ERR_1010.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1010.Diagnostic = "/p1 is not infinite.";
+STRINPUT_ERR_1010.Advice     = "Give an infinite plane.";
+
+// Infinite geometry forbidden
+STRINPUT_ERR_1012.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1012.Diagnostic = "/p1 is infinite.";
+STRINPUT_ERR_1012.Advice     = "Give an finite geometry.";
+
+// Multi-intersections
+STRINPUT_ERR_1014.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1014.Diagnostic = "/p1 leads to a multi-intersections result.";
+STRINPUT_ERR_1014.Advice     = "Try to improve your geometry.";
+
+// Multi-domains
+STRINPUT_ERR_1015.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1015.Diagnostic = "Multi-domains result forbidden.";
+STRINPUT_ERR_1015.Advice     = "Try to improve your geometry.";
+
+// Useless limit
+STRINPUT_ERR_1016.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1016.Diagnostic = "The limit /p1 is useless.";
+STRINPUT_ERR_1016.Advice     = "Remove this unecessary data.";
+
+// Offset forbidden on non-planar element
+STRINPUT_ERR_1017.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1017.Diagnostic = "Offset forbidden on non-planar element.";
+STRINPUT_ERR_1017.Advice     = "Reset offset or change geometry.";
+
+// limit of trace
+STRINPUT_ERR_1019.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1019.Diagnostic = "The limit can not be used as defined.";
+STRINPUT_ERR_1019.Advice     = "Change the offset or the orientation of the limit.";
+
+// limit of trace
+STRINPUT_ERR_1020.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1020.Diagnostic = "The limit /p1 intersects twice the trace.";
+STRINPUT_ERR_1020.Advice     = "Select twice this limit or add another one.";
+
+
+///////////////////////////////////////////////////////////////////////////
+//                         MATHEMATICAL ANALYZES                         //
+///////////////////////////////////////////////////////////////////////////
+
+// Ratio
+STRINPUT_ERR_1011.Request    = "Sick feature /p1.";
+STRINPUT_ERR_1011.Diagnostic = "Ratio offset must be between 0. and 1. .";
+STRINPUT_ERR_1011.Advice     = "Modify your value.";
+
+///////////////////////////////////////////////////////////////////////////
+//                                  CCP                                  //
+///////////////////////////////////////////////////////////////////////////
+
+// Paste destination invalid
+STRINPUT_ERR_1013.Request    = "Cannot paste /p1.";
+STRINPUT_ERR_1013.Diagnostic = "";
+STRINPUT_ERR_1013.Advice     = "Change your destination.";
+
+
+///////////////////////////////////////////////////////////////////////////
+//                                  Projection                           //
+///////////////////////////////////////////////////////////////////////////
+
+STRINPUT_ERR_1018.Request    = "Ambigous case of projection";
+STRINPUT_ERR_1018.Diagnostic = "";
+STRINPUT_ERR_1018.Advice     = "The 3D curve must be laid down on the 3D support surface";
+ 

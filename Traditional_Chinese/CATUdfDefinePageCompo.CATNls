@@ -1,0 +1,63 @@
+//---------------------------------------------------------------
+// Resource file for CATUdfDefinePageCompo class
+// Us
+//---------------------------------------------------------------
+Title          = "定義";
+StateTitle     = "選擇要包括的元素";
+
+NameFrame.LabName.Title    = "名稱: ";
+NameFrame.LabName.LongHelp = "指定進階複製的名稱.";
+NameFrame.EdtName.LongHelp = "指定進階複製的名稱.";
+
+ErrorPanel     = "定義錯誤 :";
+ErrorNoObject  = "沒有建立的物件, 檢查你的環境";
+NoModification = "在分件清單中沒有可用的修改";
+
+ToolSelected = "如果您要設定此本體為您的使用者設定特徵,
+請組立它且為定義選取來建立組立";
+
+DifferentFather = "您無法選擇此特徵為所選分件
+因為它屬於另一形狀本體而不屬於包含的所屬已選分件.
+請嚐試線性化歷程樹架構或選擇其它特徵.";
+
+SamePartSelection = "您無法選擇此特徵為所選分件
+因為它屬於另一文件.
+請選擇目前文件的其它特徵.";
+
+//LabMain.Title    = "分件";
+LabMain.LongHelp = "要建立的分件";
+
+LabEntries.Title    = "輸入分件";
+LabEntries.LongHelp = "輸入分件";
+
+AddAllParents  = "新增所有父族";
+
+SelectedComponents = "所選的分件";
+InternalComponents = "內部分件";
+
+ErrorAggregatedUnderGeom1 = " 在幾何元素下承襲 ";
+ErrorAggregatedUnderGeom2 = "\n 您無法選擇此特徵為分件";
+ErrorAggregatedUnderGeom = "因為 /p1 承襲至 /p2, 以致您無法選擇它
+為輸入元素來建立進階複製.";
+
+Warning = "警告";
+Message = "請注意. 您無法選擇目前軸系當做 UDF 的輸入.
+您可從 UDF 移除軸系, 或保持它. 在最近的情形,
+軸系將不會在 UDF 內.";
+
+
+PowerCopyComponentsForbidden = 
+"不允許選擇進階複製來定義使用者特徵, 
+因為它含有不被允許的元素.
+不允許 /p1 ,是因為下列原因:\n";
+
+ErrorReferecingBooleanOperation="此特徵無法當做分件,因為它參考至布林動作.";
+EditAsk = "如更改是在建立使用者特徵後來參考物件 (刪除, 修改,...), 則將計入修改. \n\n 您要繼續嗎?";
+EditNotAllowed = "不允許編輯";
+EditFailed = "無法回復使用者特徵來編輯";
+Edit = "使用者特徵來編輯";
+EditWarning = "UDF 編輯警告";
+EditResult = "使用者特徵編輯失敗. \n\n 無法萃取下列分件:\n";
+EditResultTitle = "UDF 回復";
+EditAskOldVersion = "目前的使用者特徵是由前一版的 CATIA 所建立. 如您繼續, 將遺失發行參數且有些參考分件必須再重新選擇). \n\n 您要繼續嗎?";
+EditButtonTitle="修改或更新分件";

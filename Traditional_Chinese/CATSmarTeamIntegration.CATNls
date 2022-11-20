@@ -1,0 +1,397 @@
+DocLocST.Name = "SmarTeam 資料庫";
+
+ConnectionError_NoSMARTEAM.Title = "不正確的 SMARTEAM 安裝";
+ConnectionError_NoSMARTEAM.Text  = "SMARTEAM 未安裝.
+連接前請先安裝 SMARTEAM ";
+
+ConnectionError_NoDefaultWorkFolder.Title = "不正確的 SMARTEAM 安裝";
+ConnectionError_NoDefaultWorkFolder.Text  = "未定義 SMARTEAM 預設工作目錄.
+請與 SMARTEAM 管理者連絡";
+
+NoCATIAIntegration.Title = "CATIA 尚未整合";
+NoCATIAIntegration.Text  = "目前資料庫無 CATIA 整合定義.
+請使用整合工具來定義 CATIA 整合";
+
+InitializeCATIAIntegrationKO.Title = "無法起動 CATIA 整合";
+InitializeCATIAIntegrationKO.Text = "目前資料庫無法起動 CATIA 整合.
+請使用整合工具來修正 CATIA 整合";
+
+NoAdditionalIdentifier.Title = "未完成的 CATIA 整合";
+NoAdditionalIdentifier.Text = "須先將目前的資料庫更新才可使用 CATIA 版本.
+'新增的命名' 本體未定義.
+請使用整合工具來 :
+- 定義特殊的屬性映對群組形式
+- 然後再定義特殊的屬性映對群組
+- 然後再定義新增的命名對應性質
+- 最後定義相關對應性質的屬性";
+
+NoAdditionalIdentifierForCATProduct.Title = "CATIA 尚未整合";
+NoAdditionalIdentifierForCATProduct.Text = "CATIA 尚未整合完成, 須先將目前的資料庫更新才可使用 CATIA 版本.
+一屬性已被設定相關於整合工具的 '新增的命名' 工具
+至少有一個層級可用來儲存一個不含此屬性的 CATProduct 文件";
+
+NoAdditionalIdentifierForCATDrawing.Title = "未完成的 CATIA 整合";
+NoAdditionalIdentifierForCATDrawing.Text = "CATIA 尚未整合完成, 須先將目前的資料庫更新才可使用 CATIA 版本.
+一屬性已被設定相關於整合工具的 '新增的命名' 工具
+至少有一個層級可用來儲存一個不含此屬性的  CATDrawing 文件.";
+WarnIntegration.Title = "SmarTeam";
+WarnIntegration.Text = "CATIA 在目前資料庫的組合性可能未定義或完整. \n 請使用整合工具來修正 CATIA 整合.";
+
+WarningNewFrom.Title = "SmarTeam";
+WarningNewFrom.Text = "沒有為計劃等級定義 CN_TEMPLATE_PROJECT. \n 以下的指令不可使用 :\n- 新的從...,\n- 目前的樣本計劃.";
+FullNewFrom.Title = "New From";
+InsertWarning.Title = "SmarTeam";
+InsertWarning.Text = "您無法在目前的選擇憑用 插入零件或產品....";
+InsertPNConfictWarning.Title = "SmarTeam 警告";
+InsertPNConfictWarning.Text = "偵測到零件號碼衝突! CATIA 程序中已有一分件與插入的分件零件名稱相同. 請修改分件的零件號碼.";
+SessionUpdateProblem.Title = "生命週期動作部分完成";
+SessionUpdateProblem.Text  = "有些文件未被正確處理. \n 此文件仍在工作程序中.";
+NewFromNoDoc.Title = "群組 PDM: 新的從";
+NewFromNoDoc.Text = "所選計劃中不含文件."; 
+NewFromNoProject.Title = "群組 PDM: 新的從";
+NewFromNoProject.Text = "此命令未有目前的樣本. \n 請使用目前的樣本計劃命令."; 
+NoDefaultProject.Title = "群組 PDM: 目前預設計劃";
+NoDefaultProject.Text = "目前資料庫未含計劃. \n 要執行此命令您必須在目前資料庫中少建立一個計劃.";
+NewFromDocCanBeOpenInCATIA.Title = "群組 PDM: 新的從";
+NewFromDocCanBeOpenInCATIA.Text = "此文件無法開啟.";
+ViewTitleNewFrom.Title = "新的從- ";
+ViewTitleTemplateProject.Title = "目前樣本計劃";
+BulkLoading.Title = "Bulk 載入";
+BulkLoadingProgressTaskOK.Text = "載入成功";
+BulkLoadingProgressTaskKO.Text = "部分載入";
+BulkLoadingOK.Title = "Bulk 載入中";
+BulkLoadingOK.Text = "載入成功.";
+// Messages prompt
+CATSmarTeamIntegration.stDBItem.Message = "從將被插入的文件中選取分件.";
+// Save Message
+InsertWrongValue.Title = "儲存";
+InsertWrongValue.Text = "檔案和目錄名稱不可更改.";
+
+NoScript.Title = "無執行程序";
+NoScript.Text  = "此命令不具執行程序
+請使用 工具 / 選擇 命令項目然後再選擇 SmarTeam 執行程序 tab 此命令相關執行程序";
+
+UserNotConnected.Title = "使用者未連接";
+UserNotConnected.Text  = "使用者未連接
+執行命令前請使用 SmarTeam / 連接 項目";
+
+NotConnectedThenNoScript.Title = "無執行程序";
+NotConnectedThenNoScript.Text = "使用者未連接
+連接至 SmarTeam 資料庫來存取可用的執行程序";
+
+ScriptRemoved.Title = "執行程序不可用";
+ScriptRemoved.Text = "其中之一執行程序不可用
+相關欄位已清除";
+
+ViewTitleAllRevisions.Title = "以所選的版期來更新";
+
+NotSavedForMapTextValue.Title = "文件不在資料庫中";
+NotSavedForMapTextValue.Text = "文件未儲存在資料庫中. \n 請在載入命令前先儲存.";
+
+MissingPropertyGroupType.Title = "缺少內容群組型式";
+MissingPropertyGroupType.Text = "\"/p1\" 內容群組型式不存在. \n 請在命令載入前先使用 \" 整合工具設定 \" 來建立內容群組型式";
+
+ReplaceComponentDoc.Title = "更新分件";
+ReplaceComponentDoc.Text = "要執行此命令, 您必須選擇產品或零件的品, \n 並以其它的產品或零件來更換.";
+
+ReplaceComponentConflict.Title = "更新分件";
+ReplaceComponentConflict.Text = "命令無法執行. \n 請檢查目標產品和輸入產品間沒有迴路或零件號碼衝突.";
+
+ReplaceComponentError.Title = "更新分件";
+ReplaceComponentError.Text = "此產品對 更新分件... 命令無效. \n 您無法應用 更新分件... 至所選的分件.";
+
+CheckBeforeSave.Title = "儲存";
+CheckBeforeSave.Text = "此文件已被修改但是它是在唯讀模式: 
+/p1
+建議在儲存組立前先修正此問題. \n 您仍然要繼續嗎 ?";
+
+CheckOutAborted.Title = "退出動作中止";
+CheckOutAborted.Text = "您無法退出此文件因為程序已被修改.";
+
+CheckOutWarning.Title = "退出動作";
+CheckOutWarning.Text = "此文件的退出動作將會導致組立未清理的情形,
+建議您先在下列文件執行退出動作 :
+/p1
+不論如何先執行退出動作 ?";
+
+NewReleaseAborted.Title = "新版本動作中止";
+NewReleaseAborted.Text = "您無法執行此文件新版本, 因為程序已被修改.";
+
+NewReleaseWarning.Title = "新版本動作";
+NewReleaseWarning.Text = "此文件的新版本動作將會導致組立未清理的情形,
+建議您先在下列文件執行新版本動作 :
+/p1
+不論如何先執行新版本動作 ?";
+ReplaceComponentMultiOccurrences.Title = "分件更換";
+ReplaceComponentMultiOccurrences.Text = "在此文件中, 有好幾個可以更替. \n 您要全部更換它們嗎?";
+
+InsertComponentConflict.Title = "插入分件";
+InsertComponentConflict.Text = "此命令未成功. \n 請確定在組立中沒有循環或零件號碼衝突.";
+
+InsertComponentError.Title = "插入分件";
+InsertComponentError.Text = "此文件不允許 插入分件 ... 命令. \n 您法使用 插入分件... 命令來選擇分件.";
+
+NoDocForQuery.Title = "尋找文件";
+NoDocForQuery.Text = "在所選等級中未發現文件";
+
+ViewTitleForQuery.Title = "找到文件";
+
+CheckOutOTF.Title = "即時退出";
+CheckOutOTFOld.Text = "文件 /p1 無法修改, 您要退出嗎 ?";
+CheckOutOTF.Text = "在下列的唯讀 Smarteam 文件中發現修改 :\n/p1 (登入).\n\n 您要執行登出嗎?";
+
+CheckOutOTFDBDirty.Title = "即時登出 (文件鏈結分析)";
+CheckOutOTFDBDirty.Text = "Links are not synchronized between the CATIA session and SMARTEAM for the following document:\n/p1 (Checked In).\nChecking out the document enables you to update the link with SMARTEAM.\n\nDo you want to perform the Check Out on the Fly?";
+
+
+// xpn +
+
+// These NLS manage the panel wich asking check Out And New release during a Global Refresh operation
+CheckOutNewReleaseGlobal.Title = "即時登出";
+CheckOutGlobal.Title = "全部登出";
+NewReleaseGlobal.Title = "全部新發行";
+
+Pres.Text = "A modification has been detected on the following Read Only Smarteam documents :\n\n";
+
+// Released MessageoperOTFText
+MultiDBLinkDirtyReleasedPb.Text = "Links are not synchronized between the CATIA Session and SMARTEAM for the following documents :\n";
+AfterDBLinkDirty.Text = "Checking out these documents enables you to update the links with SMARTEAM.\n";
+
+//MultiDBDirtyReleasedPb.Text = "Following documents are Read Only and modified : \n";
+
+
+
+SingleDBLinkDirtyReleasedPb.Text = "is not synchronized with Database and Released\n";
+SingleDBDirtyReleasedPb.Text = "is Dirty and Released\n";
+
+// Checked In Message
+MultiDBLinkDirtyCheckedInPb.Text = "are not synchronized with Database and CheckedIn\n\n";
+MultiDBDirtyCheckedInPb.Text = "are Dirty and CheckedIn\n\n";
+SingleDBLinkDirtyCheckedInPb.Text = "is not synchronized with Database and CheckedIn\n\n";
+SingleDBDirtyCheckedInPb.Text = "is Dirty and CheckedIn\n\n";
+
+FinalMessageCONR.Text = "Do you want to perform the Check Out on the Fly on some of these documents ?";
+FinalMessageCO.Text = "Do you want to perform a Check Out on one of these doc?";
+FinalMessageNR.Text = "Do you want to perform a New Release on one of these doc?";
+
+// xpn -
+
+NewReleaseOTF.Title = "即時登出";
+NewReleaseOTFOld.Text = "The document /p1 can not be modified. Do you want to perform a new release?";
+NewReleaseOTF.Text = "A modification has been detected on the following Read Only Smarteam document :\n/p1 (Released).\n\nDo you want to perform the Check Out on the Fly?";
+
+NewReleaseOTFDBLinkDirty.Title = "即時登出 (文件鏈結分析)";
+NewReleaseOTFDBLinkDirty.Text = "Links are not synchronized between the CATIA session and SMARTEAM for the following document:\n/p1 (Released).\nChecking out the document enables you to update the link with SMARTEAM.\n\nDo you want to perform the Check Out on the Fly?";
+
+
+CheckOutNotLatestRev.Title = "退出動作中止";
+CheckOutNotLatestRev.Text = "因為此文件不是最新版本以致您無法退出此文件. \n 請先使用 更換所選版期 命令.";
+
+UndoCheckOutError.Title = "返回退出 命令中止";
+UndoCheckOutError.Text = "此命令未動作. \n 在文件上執行 返回退出 命令前, 建議先儲存此文件 :
+/p1";
+
+ReplaceSelectedRevisionError.Title = "更換分件... 命令中止";
+ReplaceSelectedRevisionError.Text = "此命令未動作. \n 在文件上執行 返回退出 命令前, 建議先儲存此文件 :
+/p1";
+
+ConnectionEnvVariableError.Title = 連接命令中止";
+ConnectionEnvVariableError.Text = "因偵測到無效環境變素導致連接失敗: CATIA_TEAM_PDM_UUID.\n 連接 SmarTeam 前, 請移除無效環境變數.";
+
+NoCATIASmarTeamLicense.Title = "沒有軟體許可權";
+NoCATIASmarTeamLicense.Text  = "沒有 SmarTeam 整合 軟體許可權可用";
+
+SmarTeamLocate.Title = "尋找文件";
+SmarTeamLocate.Text = "文件 /p 未在資料庫中.";
+
+//==================================
+// Generic Load error/warning message
+//==================================
+DirtyLoadedDocuments.Title = "警告相關開啟文件";
+ERR_0001 = 
+"在 SmarTeam 屬性對應時文件 /p 被修改. 文件中的部份屬性已被 SmarTeam 修改.";
+
+
+//==================================
+// Generic Save error/warning message
+//==================================
+ERR_0010 = 
+"唯讀文件 /p 已被修改. 除非退出文件並重新儲存它,修改將會遺失.";
+
+ERR_0011 = 
+"文件 /p 已被修改.";
+
+ERR_0012 = 
+"儲存文件 /p 失敗";
+
+ERR_0013 = 
+"儲存: 載入文件屬性失敗";
+
+ERR_0014 = 
+"鏈結更新失敗";
+
+ERR_0015 = 
+"儲存在 SmarTeam 失敗";
+
+ERR_0016 = 
+"產生預覽失敗";
+
+ERR_0017 = 
+"文件或存取權在編輯器外被更改";
+
+ERR_0018 = 
+"更換文件失敗";
+
+ERR_0019 = 
+"文件 /p 未鏈結. 請檢查線形.";
+
+ERR_0020 = 
+"Failed in Updating the link (/p1) 
+From: /p2 
+To:   /p3";
+//"The document /p1 hasn't been linked. see below:
+//Object integration behavior in SmarTeam is: /p2, 
+//Object link behavior in SmarTeam is: /p3.";
+
+ERR_0020Bis =
+"There is no Unlinked document in the session for this document";
+
+ERR_0021 = 
+"無法在 SmarTeam 暫存檔案夾中儲存文件";
+
+ERR_0022 = 
+"更新版本在簽出或新的狀態,導致此動作無法選擇";
+
+ERR_0023 = 
+"SmarTeam Exception Caught: the function /p failed";
+
+// Generate a message for a successful Check In when editor is not closed
+FailedClosureEditor.Title = "Closed Editor Reporter";
+ERR_0024 = 
+"Can't closed the Editor after the Check In";
+
+ERR_0025 = 
+"Document /p can't be unloaded. it's possible that the session isn't updated. You should close your assembly editor and reopen it!";
+
+
+//==================================
+// Dirty Document Report
+//==================================
+DirtyDocumentReport.Title = "修改文件報告";
+EmptyDirtyDocumentReport.Text = " 程式中未有修改文件. ";
+
+UndoCheckout.Title = "返回退出";
+UndoCheckout.Text = "強烈建議在 返回退出 動作時刪除此檔案. \n 當問到是否需刪除此檔案時, 請確認它. \n 如您仍要保留它時, 請在執行 返回退出 動作前執行 SmartTeam 儲存動作.";
+
+//==================================
+// New Open Dialog
+//==================================
+CATStiDocumentSelector.Title     = "SmarTeam";
+CATStiDocumentSelector.ShortHelp = "在 SmarTeam 資料庫中尋找文件";
+CATStiDocumentSelector.LongHelp  = "在 SmarTeam 資料庫中尋找文件";
+如連接至 SmarTeam 資料庫, 允許使用下列搜尋方式尋找文件:
+- 以屬性
+- 在計劃 / 檔案夾 歷程樹中尋找";
+
+//==================================
+// New Query Dialog
+//==================================
+CATStiDocumentSelectorFind.Title     = "SmarTeam 詢問";
+CATStiDocumentSelectorFind.ShortHelp = "在 SmarTeam 資料庫經由預設詢問來尋找文件";
+CATStiDocumentSelectorFind.LongHelp  = "在 SmarTeam 資料庫經由預設詢問來尋找文件
+如連結至 SmarTeam 資料庫, 允許由 SmarTeam 中預設的尋找界面來萃取文件";
+
+ProgressTaskUI.Title="SmarTeam 儲存";
+
+
+//===================================
+// Wrong Setting in Document Localization
+//===================================
+DocumentLocalizationKO.Title = "定位文件時發生錯誤";
+DocumentLocalizationKO.Text = "啟動 \"SmarTeam\" 鏈結定位文件,以 \" 工具 \"/\" 選項 \" 命令
+- \" 一般 \" 選項
+- \" 文件 \" 標籤";
+
+DocumentLocalizationWarning.Title = "警告: 定位文件時可能發生錯誤";
+DocumentLocalizationWarning.Text = "啟動 \"SmarTeam\" 鏈結定位文件,以 \" 工具 \"/\" 選項 \" 命令
+- \" 一般 \" 選項
+- \" 文件 \" 標籤";
+
+//===================================
+// Error During Save operation
+//===================================
+SaveInterrupted.Title = "SmarTeam 儲存中斷";
+SaveInterrupted.Text = "執行時發生錯誤";
+
+//===================================
+// Error During Save operation
+//===================================
+SaveAsInterrupted.Title = "SmarTeam 儲存成 中斷";
+SaveAsInterrupted.Text = "執行時發生錯誤";
+
+//===================================
+// Error During BulkLoading operation
+//===================================
+BulkLoadingInterrupted.Title = "SmarTeam Bulk 載入時中斷";
+BulkLoadingInterrupted.Text = " Bulk 載入時發生錯誤";
+
+//==========================================================
+// Message for generate XML Report operation
+//==========================================================
+
+NotSavedBeforeXMLReport.Title = "XML 報告訊息";
+NotSavedBeforeXMLReport.Text = "請在產生 XML 報告前先儲存文件";
+
+NoItemSelectedXMLReport.Title = "XML 報告訊息";
+NoItemSelectedXMLReport.Text = "請選擇一個物件";
+
+XMLReportRes.Title = "XML 報告訊息";
+XMLReportResFail.Text = "產生 XML 報告時發生錯誤 !";
+XMLReportResOK.Text = "XML 報告已建立!";
+
+//==========================================================
+// Impact Analysis (Dependence View) NLS Support
+//==========================================================
+DepViewCtlNotInstalled.Title = "載入分件失敗";
+DepViewCtlNotInstalled.Text = "無法找到影響分析分件的登錄資訊!";
+
+NoItemSelectedDepView.Title = "影響分析訊息"; 
+NoItemSelectedDepView.Text = "請選擇物件";
+
+CloseNotifDepView.Title = "影響分析訊息"; 
+CloseNotifDepView.Text = "請按在更新按鈕上的退出按鈕來退出";
+
+DependenceView.Title = "影響分析";
+DependenceView.Parent = "父族";
+DependenceView.Internal_Component = "內部分件";
+DependenceView.Downstream_Application = "下層應用鏈結 (反逆)";
+DependenceView.Design_Link = "設計鏈結 (反逆)";
+DependenceView.Contextual_Link = "Contextual 鏈結 (反逆)";
+DependenceView.Reference_Link = "CATIA 參考鏈結 (反逆)";
+DependenceView.RuleBase_Link = "CATIA 規則基本鏈結 (反逆)";
+DependenceView.Result_Link = "CATIA 結果鏈結 (反逆)";
+DependenceView.IsComposedOf = "CATIA 組成的 (反逆)";
+DependenceView.Product_Link = "產品鏈結 (反逆)";
+
+//==========================================================
+// Check In report
+//==========================================================
+CheckInReport.Title = "登入報告";
+CheckInReport.Text = "Check In operation succeeded"; 
+
+//=======================================================================
+// unload critical error: A doc can't be unloaded, but a new version of this doc is written on disc.
+//=======================================================================
+CheckAtUnload.Title = "嚴重情形";
+
+CheckAtUnload1.Text = "Following documents in CATIA session are not in compliance with documents on disc:\n\n";
+CheckAtUnload2.Text = "Your session may not be up to date.\n You should close editors of CATIA session and reopen them manually!";
+
+//=======================================================================
+// reroute critical error: docs can't be rerouted,CATIA session is not updated.
+//=======================================================================
+
+ErrorReroute.Title = "嚴重情形";
+ErrorReroute.Text = "Critical error occured! You must close editor in CATIA session and reopen them manually!\n";
+
+

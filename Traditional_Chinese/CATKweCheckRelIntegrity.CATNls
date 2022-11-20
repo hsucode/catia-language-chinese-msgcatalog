@@ -1,0 +1,19 @@
+Error1Message="關聯 /P1 含有錯誤的活動參數";
+ShortError1Message="關聯含有錯誤的活動參數";
+Error1Cleaned="關聯 /P1 已提供正確的的活動參數";
+
+Error2Message="The object /P1 was created in a container different from the container of the publisher under which it is aggregated => it has to be moved to the right container.";
+ShortError2Message="An object is in a wrong container";
+Error2WarningMessage="The object /P1 was created in a container different from the container of the publisher under which it is aggregated\nBUT IT CAN NOT BE MOVED TO THE RIGHT CONTAINER, because one of its children (at least) is pointed by another object\n=> Remove briefly the pointing link, relaunch the clean and then, restore the pointing link";
+ShortError2WarningMessage="An object is in a wrong container but CAN NOT BE FIXED";
+Error2Cleaned="The object /P1 has been moved to the right container";
+
+Error21Message="The relation /P1 has 2 problems :\n- it was created in a container different from the container of the publisher under which it is aggregated\n - it has a wrong activity parameter";
+ShortError21Message="A relation is in a wrong container and has a wrong activity parameter";
+Error21Cleaned="The relation /P1 has been given a correct activity parameter and has been moved to the right container";
+
+Error1CleanedError2NotCleaned = "Clean partially failed : The relation /P1 has been given a correct activity parameter, but it has not been moved to the right container because one of its children (at least) is pointed by another object";
+Error1NotCleanedError2NotCleaned = "Clean failed : the relation /P1 has not been given a correct activity parameter, and it has not been moved to the right container because one of its children (at least) is pointed by another object";	
+Error1NotCleanedError2Cleaned = "Clean partially failed : the relation /P1 has been moved to the right container, but it has not been given a correct activity parameter";	
+Error2NotCleaned = "Clean failed : The object /P1 has not been moved to the right container because one of its children (at least) is pointed by another object";
+Error1NotCleaned = "Clean failed : the relation /P1 has not been given a correct activity parameter";	

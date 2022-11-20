@@ -1,0 +1,105 @@
+// NLS Resource
+//-------------------------
+// CATCstIdentityFrame
+//-------------------------
+// English Version
+//-------------------------
+// tbu, 20 avril 1998, pii
+
+Title="";
+
+// ==============================================================================================
+
+IDC_FRM_HEADER.IDC_LB_NAMETITLE.Title   = "名字   :";
+
+IDC_FRM_HEADER.IDD_ED_NAME.Title   = "名字   :";
+
+IDC_FRM_HEADER.IDC_LB_NAMETITLE.Help="定義拘束名稱";
+
+IDC_FRM_HEADER.IDD_ED_NAME.Help="定義拘束名稱";
+
+IDC_FRM_HEADER.IDC_LB_NAMETITLE.LongHelp="定義拘束名稱.";
+
+IDC_FRM_HEADER.IDD_ED_NAME.LongHelp="定義拘束名稱.";
+
+// ==============================================================================================
+
+IDC_FRM_CONNECTORS.Title = "依附元素";
+
+IDC_FRM_CONNECTORS.Help="顯示拘束依附元素";
+
+IDC_FRM_CONNECTORS.LongHelp="依附元素 \n 顯示拘束依附元素.";
+
+// ==============================================================================================
+
+IDC_FRM_HEADER.IDC_ICONTYPE.LongHelp="顯示拘束形式.";
+
+IDC_FRM_HEADER.IDC_FRM_ANALYSIS.IDC_CSTSTATUS.LongHelp="顯示拘束情形: \n- 綠色, 拘束為有效 \n- 黃色, 拘束未更新 \n- 紅色,拘束為幾何上不可能 \n- 空白, 拘束為斷空..";
+
+IDC_FRM_CONNECTORS.IDC_FRM_CtorLst.LongHelp="顯示拘束幾何元素.";
+
+IDC_FRM_CONNECTORS.IDC_FRM_CtorStus.LongHelp="顯示拘束幾何元素情形.";
+
+// ==============================================================================================
+// Geometric elements
+// ==============================================================================================
+// Be careful! the length of IDS_Part and IDS_Type set
+// the width of the parents (connectors) list of CATIdentityEditor
+
+IDS_Type="型式    ";
+
+CATPoint="點";
+
+CATLine="線";
+
+CATPlane="面";
+
+CATSphere="球";
+
+CATCylinder="柱";
+
+CATSurface="曲面";
+
+CATCurve="曲線";
+
+CATTabulatedCylinder="拉伸";
+
+CATCircle="圓";
+
+CATCone="錐";
+
+CATCoordinateSystem="軸系";
+
+CATIBloc="塊";
+
+IDS_Part="元件         ";
+
+IDS_NoName="無名字";
+
+IDS_CtorStatus="情形";
+
+// ==============================================================================================
+// Reconnect
+// ==============================================================================================
+
+IDS_CtorDisconnected="未連接";
+
+IDS_CtorConnected="連接";
+
+IDS_CtorToBeConnected="再連接";
+
+IDS_CtorUnloaded="卸載";
+
+IDC_FRM_CONNECTORS.IDC_FRM_CtorStus.IDC_PB_RECONNECT.Title="再連接...";
+
+IDC_FRM_CONNECTORS.IDC_FRM_CtorStus.IDC_PB_RECONNECT.Help="再連接拘束";
+
+IDC_FRM_CONNECTORS.IDC_FRM_CtorStus.IDC_PB_RECONNECT.LongHelp="以新元素再連接拘束.";
+
+// ==============================================================================================
+
+CATUnknown="未知的";
+
+CxtReframeOn="重新顯現";
+CxtCenterGraph="圖形置中";
+

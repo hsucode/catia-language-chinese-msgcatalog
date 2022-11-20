@@ -1,0 +1,134 @@
+// ==========================================================================
+// ==========================================================================
+// SWKHmiCreateManikinDlg English Message File
+// ==========================================================================
+// ==========================================================================
+ManikinCreationFailed = "建立人體模型失敗.";
+NoSelection = "未選擇";
+InternalError = "內部錯誤.";
+UnknownError = "未知的錯誤.";
+
+SWManikinLicenseNotFound = "無法建立人體模型. 授權未發現.";
+FatherProductNotSelected = "你必須選擇上層產品.";
+CannotUpdateAnthropometry = "無法更新人體測量學.";
+CannotCreateManikinUnderManikin = "無法建立新人體模型在一個現有的之下.";
+CannotCreateManikinUnderSegment = "在線段下無法建立新人體模型.";
+
+Title = "新人體模型";
+
+SWKHmiCreateManikinMainTabPage.Title = "人體模型";
+SWKHmiCreateManikinOptionalTabPage.Title = "選項";
+
+SWKHmiCreateManikinTabCntr.MainTabPage.MainFrame.LabelFatherProduct.Title = "上層產品: ";
+
+SWKHmiCreateManikinTabCntr.MainTabPage.MainFrame.EditorFatherProduct.ShortHelp =
+"上層產品是指在產品歷程樹中人體模型所附屬的.
+
+它可能是跟產品或任何其它在根部之下
+的產品, 但是上層產品不能是一個人體
+模型   .";
+
+SWKHmiCreateManikinTabCntr.MainTabPage.MainFrame.EditorFatherProduct.LongHelp =
+"上層產品是指在產品歷程樹中人體模型所附屬的.
+
+它可能是跟產品或任何其它在根部之下
+的產品, 但是上層產品不能是一個人體
+模型   .";
+
+
+SWKHmiCreateManikinTabCntr.MainTabPage.MainFrame.LabelManikinName.Title = "人體模型名稱:";
+
+SWKHmiCreateManikinTabCntr.MainTabPage.MainFrame.EditorManikinName.ShortHelp =
+"這個名字將給與新人體模型.
+這個名字經常由使用者典型地用來確定文件
+之內的人體模型,但是, 它允許幾個人體模型
+有這個相同的名字.";
+
+SWKHmiCreateManikinTabCntr.MainTabPage.MainFrame.EditorManikinName.LongHelp =
+"這個名字將給與新人體模型.
+這個名字經常由使用者典型地用來確定文件
+之內的人體模型,但是, 它允許幾個人體模型
+有這個相同的名字.";
+
+SWKHmiCreateManikinTabCntr.MainTabPage.MainFrame.LabelSex.Title = "性別: ";
+
+
+Gender.Male = "男人";
+Gender.Female = "女人";
+
+SWKHmiCreateManikinTabCntr.MainTabPage.MainFrame.LabelSpinnerPerc.Title = "百分比:";
+
+SWKHmiCreateManikinTabCntr.MainTabPage.MainFrame.SpinnerPerc.SpinnerPerc.ShortHelp =
+"人體模型的百分比 (Percentile).
+指出新人體模型在有次序的統計
+人種中 (依據它的高度和重量) , 
+將屬於那個群組.";
+
+
+SWKHmiCreateManikinTabCntr.MainTabPage.MainFrame.SpinnerPerc.SpinnerPerc.LongHelp =
+"人體模型的百分比 (Percentile).
+指出新人體模型在有次序的統計
+人種中 (依據它的高度和重量) , 
+將屬於那個群組.";
+
+SWKHmiCreateManikinTabCntr.MainTabPage.MainFrame.SpinnerPerc.ComboPerc.ShortHelp =
+"人體模型的百分比 (Percentile).
+指出新人體模型在有次序的統計
+人種中 (依據它的高度和重量) , 
+將屬於那個群組.";
+
+SWKHmiCreateManikinTabCntr.MainTabPage.MainFrame.SpinnerPerc.ComboPerc.LongHelp =
+"人體模型的百分比 (Percentile).
+指出新人體模型在有次序的統計
+人種中 (依據它的高度和重量) , 
+將屬於那個群組.";
+
+SWKHmiCreateManikinTabCntr.OptionalTabPage.OptionalFrame1.LabelPopulation.Title = "人種: ";
+
+SWKHmiCreateManikinTabCntr.OptionalTabPage.OptionalFrame1.ComboPopulation.ShortHelp =
+"人種.
+此選項可讓您選擇人體模型的初始國家.";
+
+SWKHmiCreateManikinTabCntr.OptionalTabPage.OptionalFrame1.ComboPopulation.LongHelp =
+"人種.
+此選項可讓您選擇人體模型的初始國家.";
+
+SWKHmiCreateManikinTabCntr.OptionalTabPage.OptionalFrame1.ComboModel.ShortHelp =
+"將建立的模型.
+整體 建立完整的模型;
+右前臂 只建立右前臂;
+左前臂 只建立左前臂.";
+
+SWKHmiCreateManikinTabCntr.OptionalTabPage.OptionalFrame1.ComboModel.LongHelp =
+"要建立的模型.
+整體 建立完整的模型;
+右前臂 只建立右前臂;
+左前臂 只建立左前臂.";
+
+SWKHmiCreateManikinTabCntr.OptionalTabPage.OptionalFrame1.LabelModel.Title = "模型: ";
+
+Model.WholeBody = "整體";
+Model.RightForearm = "右前臂";
+Model.LeftForearm = "左前臂"; 
+
+SWKHmiCreateManikinTabCntr.OptionalTabPage.OptionalFrame1.LabelReferential.Title = "參考: ";
+
+SWKHmiCreateManikinTabCntr.OptionalTabPage.OptionalFrame1.ComboReferential.ShortHelp = 
+"人體模型參考.
+此選項允許您選擇人體模型的起始點.";
+
+SWKHmiCreateManikinTabCntr.OptionalTabPage.OptionalFrame1.ComboReferential.LongHelp = 
+"人體模型參考.
+此選項允許您選擇人體模型的起始點.";
+
+SWKHmiCreateManikinTabCntr.OptionalTabPage.OptionalFrame2.CheckButtonCompass.Title = "設定參考至羅盤參考位置";
+
+SWKHmiCreateManikinTabCntr.OptionalTabPage.OptionalFrame2.CheckButtonCompass.ShortHelp = 
+"設定參考至羅盤參考位置.
+此選項允許您置放人體模型至目前羅盤位置.";
+
+SWKHmiCreateManikinTabCntr.OptionalTabPage.OptionalFrame2.CheckButtonCompass.LongHelp = 
+"設定參考至羅盤參考位置.
+此選項允許您置放人體模型至目前羅盤位置.";
+
+ManikinName = "人體模型";

@@ -1,0 +1,365 @@
+//------------------------------------------------------
+// Resource file for input geometric operators errors 
+// En_EN
+//------------------------------------------------------
+// NLD 10/07/03 GeoOpInSweepC0Point_ERR_3028
+//              GeoOpInSweepC0MeridianCurve_ERR_3029
+// NLD 03/11/03 Modification des messages 3008 et 3009
+// CCK 12/12/03 GeoOpInSpineInvalidInput_ERR_3030
+// NLD 23/12/03 GeoOpInSweepEdgeCurveCreation_ERR_3031
+// NLD 23/12/03 GeoOpInSweepDegenerateCurve_ERR_3032
+// NLD 20/02/04 GeoOpInLoftTangencyIncompatibleWithGuide_ERR_3033
+// NLD 28/04/04 GeoOpInSweepInvalidDraftAngle_ERR_3034
+// NLD 29/07/04 GeoOpInSegmentSweepImpossibleLimitation_ERR_3036
+//              GeoOpInSegmentSweepNullLength_ERR_3037
+//              GeoOpInSweepImplicitProfileDegenerated_ERR_3038
+// JSX 27/07/04 GeoOpInSweepTooComplexSurface_ERR_3039
+// NLD 22/10/04 GeoOpInInternalError_ERR_3040
+// NLD 26/07/05 GeoOpInSweepImplicitProfileEvaluation_ERR_3041
+// JSX 28/08/05 GeoOpInSweepSurfaceConstructionPatchMin_WAR_3042
+//================================================================
+//                           INPUT
+//================================================================
+//----------------------------------Null or invalid input
+//
+GeoOpInCreation =
+     "無法建立操作動作 /p1 . 
+      請檢查字典.";
+// 
+GeoOpInIncompatibleArgument =
+     "輸入無效 : 輸入的兩種 /p1 形式必須依附在同樣的 /p2 上.";
+// 
+GeoOpInInvalidArgument =
+     "輸入無效 : /p1 必須是建立 /p2 的其中之一
+      (/p3 方式 )";
+// 
+GeoOpInInvalidDomain =
+     " /p1 CATSurLimits 必須內含在 /p2 曲面";
+// 
+GeoOpInMethodCallOrder =
+     "無效的呼叫次序. 方式 /p1 必須在 /p2 之後.";
+// 
+GeoOpInInvalidIndicationPoint =
+     " /p1 不是一個有效的指定點.";
+// 
+GeoOpInInvalidImplementation =
+     " 無法使用 /p2 操作動作執行 /p1.";
+// 
+GeoOpInInvalidObject =
+     " 無法修改幾何操作動作.
+       只有以 /p3 操作動作的定義, 以 /p2 的方式更換 /p1 .
+       建立新的操作動作或修改輸入物件";
+// 
+GeoOpInInvalidSupport =
+     " /p1 具有無效的幾何依附:
+       它應該依附在 /p2 上而由 /p3 操作子使用.";
+// 
+GeoOpInNonPositive =
+     " /p1 必須是正數.";
+// 
+GeoOpInNullPointer =
+     " 無法以無效的 /p2 建立 /p1.";
+// 
+GeoOpInSameArgument =
+     " /p2 操作動作無法以 /p1 自己本身來運作.";
+// 
+GeoOpInUnavailableMethod =
+     " /p1 方式無法以 /p2 呼叫.";
+//================================================================
+//                           interne
+//================================================================
+//
+GeoOpIntImpossibleParameter =
+     "無法提供 /p1 物件的參數值.";
+// 
+GeoOpIntImpossiblePCurve =
+     " /p1 曲面的 CATPCurve 無法提供.";
+// 
+GeoOpIntMarchingStop =
+     "數字上的問題, 停止了相交計算上的問題 : /p1.";
+// 
+GeoOpIntSignatureError =
+     "單一性導致 /p1 操作動作停止.";
+// 
+GeoOpIntUnavailableImplementation =
+     "/p1 尚未有效.";
+//
+GeoOpIntBadGeometry =
+       "內部錯誤 /p1 導致幾何組態不佳.";
+//
+GeoOpIntMath =
+       "數學錯誤 /P1 .";
+//
+//  3001-3049     sweep and loft
+//  3050-3099     connect
+//  3100-3149     blend 
+//  3150-3199     evaluator
+//
+GeoOpInSweepInvalidSpine_ERR_3001.Request="幾何掃掠或進階動作 :";
+GeoOpInSweepInvalidSpine_ERR_3001.Diagnostic="無效的脊椎線連續性.";
+GeoOpInSweepInvalidSpine_ERR_3001.Advice="脊椎線必須至少有 G1 (相切) 連續性.";
+//
+GeoOpInSweepNoIntersectionWithGuides_ERR_3002.Request ="幾何掃掠或進階動作:"; 
+GeoOpInSweepNoIntersectionWithGuides_ERR_3002.Diagnostic = "移動面 (垂直脊椎面) 和導引線未經常相交.";
+GeoOpInSweepNoIntersectionWithGuides_ERR_3002.Advice ="可能原因為 : \n
+- 導引線相對脊椎線太短 \n
+- 導引線平行於移動面 \n
+- 脊椎線曲率太大.";
+
+//
+GeoOpInLoftInvalidTangency_ERR_3003.Request ="幾何斷面混成曲面動作:";
+GeoOpInLoftInvalidTangency_ERR_3003.Diagnostic = "由第一和最後斷面定義的脊椎線和相切情形不相容.";
+GeoOpInLoftInvalidTangency_ERR_3003.Advice = "第一和最後斷面定義的相切必須垂直脊椎線."; 
+//
+GeoOpInLoftCoplanarSection_ERR_3004.Request ="具有隱性脊椎線的幾何動作 :";
+GeoOpInLoftCoplanarSection_ERR_3004.Diagnostic ="因切面同平面, 無法自動計算隱性脊椎線.";
+GeoOpInLoftCoplanarSection_ERR_3004.Advice ="在兩切面間增加導引或強制相切.";
+//
+GeoOpInLoftLinearProfile_ERR_3005.Request ="幾何動作具有隱性脊椎線 :";
+GeoOpInLoftLinearProfile_ERR_3005.Diagnostic ="斷面為線性.";
+GeoOpInLoftLinearProfile_ERR_3005.Advice ="選擇導引線.";
+//
+GeoOpInSweepClosedProfile_ERR_3006.Request ="幾何掃掠雙重操作 :";
+GeoOpInSweepClosedProfile_ERR_3006.Diagnostic ="斷面是封閉的, 
+所以動作無法調整斷面從導引線的起始至最後.";
+GeoOpInSweepClosedProfile_ERR_3006.Advice ="請選擇未封閉斷面.";
+//
+GeoOpInSweepInvalidRadius_ERR_3007.Request ="圓弧掃掠動作或圓角動作:";
+GeoOpInSweepInvalidRadius_ERR_3007.Diagnostic ="半徑值太小.";
+GeoOpInSweepInvalidRadius_ERR_3007.Advice ="請輸入較大半徑值.";
+//
+GeoOpInLoftNoIntersection_ERR_3008.Request ="幾何斷面混成曲面動作 :";
+GeoOpInLoftNoIntersection_ERR_3008.Diagnostic ="導引線未與其中之一斷面或切面相交. 
+有可能是脊錐線的定義問題 : 
+在導引線被垂直脊錐線的平面截斷後, 導引線未與斷面或切面相交.";
+GeoOpInLoftNoIntersection_ERR_3008.Advice ="請選擇與每一個斷面或切面相交的導引線, 或修改脊錐線.";
+//
+GeoOpInLoftIdenticalGuides_ERR_3009.Request ="幾何掃掠或斷面混成曲面動作 :";
+GeoOpInLoftIdenticalGuides_ERR_3009.Diagnostic ="有些斷面或導引線是相同的.";
+GeoOpInLoftIdenticalGuides_ERR_3009.Advice="請分別選擇導引和斷面.";
+//
+GeoOpInSweepClosedProfile_ERR_3010.Request="掃掠雙重動作 :";
+GeoOpInSweepClosedProfile_ERR_3010.Diagnostic="如果有一個封閉斷面,
+此斷面必須與兩導引線相交."; 
+GeoOpInSweepClosedProfile_ERR_3010.Advice="修改斷面或導引線來避免上述情形.";
+//
+GeoOpInLoftNoCoplanarIntersect_ERR_3011.Request ="幾何斷面混成曲面動作 :";
+GeoOpInLoftNoCoplanarIntersect_ERR_3011.Diagnostic ="導引線和最少一個斷面相交的點不在同平面上.";
+GeoOpInLoftNoCoplanarIntersect_ERR_3011.Advice ="請選擇同一平面斷面.";
+//
+GeoOpInLoftClosedProfile_ERR_3012.Request ="進何斷面混成曲面動作 :";
+GeoOpInLoftClosedProfile_ERR_3012.Diagnostic ="斷面為封閉且兩導引線和斷面相交 :\n
+動作無法定義出斷面混成曲面軸系.";
+GeoOpInLoftClosedProfile_ERR_3012.Advice ="請增加導引線來定義斷面混成曲面軸系.";
+//
+GeoOpInSweepAlignedPoints_ERR_3013.Request ="圓弧掃掠動作 :";
+GeoOpInSweepAlignedPoints_ERR_3013.Diagnostic ="導引線和移動面相交的三個點成一直線 :
+圓弧切面無法計算.";
+GeoOpInSweepAlignedPoints_ERR_3013.Advice ="修改導引線.";
+//
+GeoOpInSweepDegeneratedSurface_ERR_3014.Request ="幾何掃掠或斷面混成曲面動作 :";
+GeoOpInSweepDegeneratedSurface_ERR_3014.Diagnostic ="斷面 (或切面) 與導引線相交. \n
+曲面在相交點扭曲. ";
+GeoOpInSweepDegeneratedSurface_ERR_3014.Advice ="修改斷面 (或切面).";
+//
+GeoOpInSweepReferenceSurface_ERR_3015.Request ="幾何掃掠或斷面混成曲面動作 :";
+GeoOpInSweepReferenceSurface_ERR_3015.Diagnostic ="參考曲面的垂直方向和移動面在同一線上. ";
+GeoOpInSweepReferenceSurface_ERR_3015.Advice ="請修改參考曲面.";
+//
+GeoOpInLoftNonTangentSection_ERR_3016.Request ="幾何斷面混成曲面動作 :";
+GeoOpInLoftNonTangentSection_ERR_3016.Diagnostic ="在導引線和切面間相交點的切面與導引不相交. ";
+GeoOpInLoftNonTangentSection_ERR_3016.Advice ="修改切面滿足上述情形.";
+//
+GeoOpInLoftSamePoints_ERR_3017.Request ="具有隱性脊椎線的幾何動作 :";
+GeoOpInLoftSamePoints_ERR_3017.Diagnostic ="兩強制點為同一個.";
+GeoOpInLoftSamePoints_ERR_3017.Advice ="這些點是隱含計算的,  \n
+- 請修改或強制脊錐線的起始點 \n
+- 請修改強制斷面和平面.";
+//
+GeoOpInConicSweepInvalidTangent_ERR_3018.Request ="幾何掃掠圓錐切面 :";
+GeoOpInConicSweepInvalidTangent_ERR_3018.Diagnostic ="導引線和移動面的相交點與相切共線.";
+GeoOpInConicSweepInvalidTangent_ERR_3018.Advice ="請修改導引線或 \n
+修改參考曲面.";
+//
+GeoOpInConicSweepNullTangent_ERR_3019.Request ="幾何掃掠圓錐切面 :";
+GeoOpInConicSweepNullTangent_ERR_3019.Diagnostic ="相切無效.";
+GeoOpInConicSweepNullTangent_ERR_3019.Advice ="修改參考曲面.";
+//
+GeoOpInConicSweepInvalidPoints_ERR_3020.Request ="幾何掃掠圓錐切面 :";
+GeoOpInConicSweepInvalidPoints_ERR_3020.Diagnostic ="點不在相交或兩相切構成的平面同一邊 \n.";
+GeoOpInConicSweepInvalidPoints_ERR_3020.Advice ="修改導引線.";
+//
+GeoOpInConicSweepIdenticalPoints_ERR_3021.Request ="幾何掃掠圓錐切面 :";
+GeoOpInConicSweepIdenticalPoints_ERR_3021.Diagnostic ="導引線和移動面的相交點是同一點.";
+GeoOpInConicSweepIdenticalPoints_ERR_3021.Advice ="請選擇導引線彼此不相交.";
+//
+GeoOpInConicSweepInvalidParameter_ERR_3022.Request ="幾何掃掠圓錐切面:";
+GeoOpInConicSweepInvalidParameter_ERR_3022.Diagnostic ="圓錐參數無效.";
+GeoOpInConicSweepInvalidParameter_ERR_3022.Advice ="請輸入正值.";
+//
+GeoOpInConicSweepColinearTangent_ERR_3023.Request ="幾何掃掠圓錐切面:";
+GeoOpInConicSweepColinearTangent_ERR_3023.Diagnostic ="兩相切共線.";
+GeoOpInConicSweepColinearTangent_ERR_3023.Advice ="修改導引線或 \n
+修改參考曲面.";
+//
+GeoOpInSweepSmoothData_ERR_3024.Request ="以平順選擇的幾何掃掠曲面:";
+GeoOpInSweepSmoothData_ERR_3024.Diagnostic ="脊椎線或參考曲面無法平順.\n
+可能是下列的原因之一 : \n
+- 角度門檻太小
+- 輸入未清理. \n";
+GeoOpInSweepSmoothData_ERR_3024.Advice ="- 請修改脊椎線的連續性, 或 \n
+- 修改參考曲面的連續性
+- 清理輸入或
+- 增加角度門檻.";
+//
+GeoOpInSweepCouplingTwist_ERR_3025.Request ="掃掠或疊層動作:";
+GeoOpInSweepCouplingTwist_ERR_3025.Diagnostic ="導引和移動框架平面間含有一個以上交點: 無法計算脊椎線和導引參數.";
+GeoOpInSweepCouplingTwist_ERR_3025.Advice ="選擇導引和移動框架平面間只有一個交點的元素, 或更改脊椎線.";
+//
+GeoOpInSweepSpineTwist_ERR_3026.Request ="掃掠或疊層或任意脊椎線動作:";
+GeoOpInSweepSpineTwist_ERR_3026.Diagnostic ="脊椎線扭曲.";
+GeoOpInSweepSpineTwist_ERR_3026.Advice ="請更改第一平面的方向.";
+//
+GeoOpInSweepMarching_ERR_3027.Request ="掃掠, 疊層或順接動作:";
+GeoOpInSweepMarching_ERR_3027.Diagnostic ="結果少至含有一個無效曲面.";
+GeoOpInSweepMarching_ERR_3027.Advice ="請檢查方向和 laws.";
+//
+GeoOpInSweepC0Point_ERR_3028.Request ="掃掠或疊層 :";
+GeoOpInSweepC0Point_ERR_3028.Diagnostic ="無法在相切不連續點計算相交邊界.";
+GeoOpInSweepC0Point_ERR_3028.Advice ="請檢查脊椎線連續性.";
+//
+GeoOpInSweepC0MeridianCurve_ERR_3029.Request ="掃掠或疊層 :";
+GeoOpInSweepC0MeridianCurve_ERR_3029.Diagnostic ="無法在相切不連續點計算曲面相交的頂點曲線.";
+GeoOpInSweepC0MeridianCurve_ERR_3029.Advice ="請檢查脊椎線連續性.";
+//
+eoOpInSpineInvalidInput_ERR_3030.Request ="脊椎線動作:";
+GeoOpInSpineInvalidInput_ERR_3030.Diagnostic ="無法計算脊椎線.";
+GeoOpInSpineInvalidInput_ERR_3030.Advice ="請修改輸入 \n
+或選擇開始點.";
+//
+GeoOpInSweepEdgeCurveCreation_ERR_3031.Request ="擠出或掃掠或疊層或順接動作:";
+GeoOpInSweepEdgeCurveCreation_ERR_3031.Diagnostic ="無法計算兩曲面間相連邊線.";
+GeoOpInSweepEdgeCurveCreation_ERR_3031.Advice ="請修改輸入.";
+//
+GeoOpInSweepDegeneratedCurve_ERR_3032.Request ="擠出或掃掠或疊層或順接動作:";
+GeoOpInSweepDegeneratedCurve_ERR_3032.Diagnostic ="有一條邊界曲線反曲.";
+GeoOpInSweepDegeneratedCurve_ERR_3032.Advice ="請修改輸入.";
+//
+GeoOpInLoftTangencyIncompatibleWithGuide_ERR_3033.Request ="幾何疊層動作:";
+GeoOpInLoftTangencyIncompatibleWithGuide_ERR_3033.Diagnostic = "由第一和最後切面所定義的
+導引方向和相切情形不一致.";
+GeoOpInLoftTangencyIncompatibleWithGuide_ERR_3033.Advice = "第一和最後切面的相切情形
+必須於導引和切面間的相交點間平行導引."; 
+//
+GeoOpInSweepInvalidDraftAngle_ERR_3034.Request ="幾何疊層動作:";
+GeoOpInSweepInvalidDraftAngle_ERR_3034.Diagnostic = "推拔角度與脊椎切線和推拔方向不一致.";
+GeoOpInSweepInvalidDraftAngle_ERR_3034.Advice = "請更改輸入."; 
+//
+GeoOpInLoftInvalidNbOfGuideForAreaOption_ERR_3035.Request ="幾何疊層動作:";
+GeoOpInLoftInvalidNbOfGuideForAreaOption_ERR_3035.Diagnostic = "導引的數目與面積拘束不一致.";
+GeoOpInLoftInvalidNbOfGuideForAreaOption_ERR_3035.Advice = "選擇無,一或二導引."; 
+//
+GeoOpInSegmentSweepImpossibleLimitation_ERR_3036.Request ="含線性切面的幾何掃掠:";
+GeoOpInSegmentSweepImpossibleLimitation_ERR_3036.Diagnostic ="線性切面與限制平面平行
+且無法裁剪.";
+GeoOpInSegmentSweepImpossibleLimitation_ERR_3036.Advice ="請修改您的輸入.";
+//
+GeoOpInSegmentSweepNullLength_ERR_3037.Request ="含線性切面的幾何掃掠:";
+GeoOpInSegmentSweepNullLength_ERR_3037.Diagnostic ="切面含有無效長度.";
+GeoOpInSegmentSweepNullLength_ERR_3037.Advice ="請修改您的輸入.";
+//
+GeoOpInSweepImplicitProfileDegenerated_ERR_3038.Request ="含任意切面的幾何掃掠:";
+GeoOpInSweepImplicitProfileDegenerated_ERR_3038.Diagnostic ="切面反曲.";
+GeoOpInSweepImplicitProfileDegenerated_ERR_3038.Advice ="請修改您的輸入.";
+//
+GeoOpInSweepTooComplexSurface_ERR_3039.Request ="擠出或掃掠或疊層或順接動作:";
+GeoOpInSweepTooComplexSurface_ERR_3039.Diagnostic = "脊椎線太長或幾何太複雜.";
+GeoOpInSweepTooComplexSurface_ERR_3039.Advice ="請修改您的輸入, 且分割脊椎線.";
+//
+GeoOpInInternalError_ERR_3040.Request="幾何動作: 內部錯誤.";
+GeoOpInInternalError_ERR_3040.Diagnostic="動作無法執行.";
+GeoOpInInternalError_ERR_3040.Advice="請更改輸入.";
+//
+GeoOpInSweepImplicitProfileEvaluation_ERR_3041.Request ="含有未明確定義切面的幾何掃掠:";
+GeoOpInSweepImplicitProfileEvaluation_ERR_3041.Diagnostic ="切面無法計算.";
+GeoOpInSweepImplicitProfileEvaluation_ERR_3041.Advice ="請更改輸入.";
+//
+GeoOpInSweepSurfaceConstructionPatchMin_WAR_3042.Request ="掃掠, 層疊或順接幾何:";
+GeoOpInSweepSurfaceConstructionPatchMin_WAR_3042.Diagnostic ="太複雜或導引太長. 曲面可能未依設定建立.";
+GeoOpInSweepSurfaceConstructionPatchMin_WAR_3042.Advice ="請更改輸入或減少長度";
+//
+//    ----- 3050-3099connect input error
+// 
+GeoOpInConnectTooLargeOffset_ERR_3050.Request ="平行動作 :";
+GeoOpInConnectTooLargeOffset_ERR_3050.Diagnostic ="平行動作偏移值大於曲率半徑.";
+GeoOpInConnectTooLargeOffset_ERR_3050.Advice ="請減少偏移值.";
+//
+//    ----- 3100-3149 blend input error
+// 
+GeoOpInBlendIntersectingCurves_ERR_3100.Request ="順接動作 :";
+GeoOpInBlendIntersectingCurves_ERR_3100.Diagnostic ="順接的依附曲線自我相交.";
+GeoOpInBlendIntersectingCurves_ERR_3100.Advice ="請選擇不自我相交的曲線.";
+//
+GeoOpInBlendTwist_ERR_3101.Request ="順接動作:";
+GeoOpInBlendTwist_ERR_3101.Diagnostic ="結果至少含有一扭曲面.";
+GeoOpInBlendTwist_ERR_3101.Advice ="請減少張力或逆轉線方向.";
+//
+//    ----- 3150-3199 evaluator
+// 
+GeoOpInParameterFromLength_ERR_3150.Request ="由長度計算參數 :";
+GeoOpInParameterFromLength_ERR_3150.Diagnostic ="輸入參數導致產生的曲線和曲面超過極限.";
+GeoOpInParameterFromLength_ERR_3150.Advice ="減少長度值.";
+//
+GeoOpInToNurbsConversion_ERR_3151.Request ="曲線轉變成 NURBS :";
+GeoOpInToNurbsConversion_ERR_3151.Diagnostic ="輸入曲線無法計算成曲面上的 NURBS ,\n 
+因為曲線不在曲面上.";
+GeoOpInToNurbsConversion_ERR_3151.Advice ="請選擇依附在曲面上的曲線, 
+或直接存取 3 D 曲線.";
+//
+GeoOpInToNurbsConversion_ERR_3152.Request ="曲線轉變成 NURBS :";
+GeoOpInToNurbsConversion_ERR_3152.Diagnostic ="曲線無法轉變成 3D NURBS 曲線 
+或曲面上的曲線. 可能的原因是 :\n
+- 依附的曲面 CATPNurbs 不是一個平面 \n
+- 3D 曲線未依附在曲面上, 因此未能計算成 CATPNurbs\n
+- NURBS 上的限制未滿足 \n
+- 曲線不相容.";
+GeoOpInToNurbsConversion_ERR_3152.Advice ="修改限制或欲計算的曲線.";
+//
+GeoOpInInvalidLimits_ERR_3153="目前的限制超過最大限制值 (請定義在限制值內)";
+//
+GeoOpIntNonEvaluableLaw_ERR_3154="內部錯誤 : LAW 無法計算.";
+//
+//  3200-3249.....spiral
+//
+GeoOpInSpiralPitchTooSmall_ERR_3200.Request ="渦旋線運算子:";
+GeoOpInSpiralPitchTooSmall_ERR_3200.Diagnostic ="渦旋線節距太小.";
+GeoOpInSpiralPitchTooSmall_ERR_3200.Advice ="請選擇大於幾何解析度的渦旋線節距.";
+//
+GeoOpInSpiralLengthTooSmall_ERR_3201.Request ="渦旋線運算子:";
+GeoOpInSpiralLengthTooSmall_ERR_3201.Diagnostic ="新生曲線小於幾何解析度.";
+GeoOpInSpiralLengthTooSmall_ERR_3201.Advice ="請增加節距, 終止角度或半徑或減少開始半徑.";
+//
+//    ----- sweep internal error
+// 
+GeoOpIntSweepInvalidError_ERR_3500=
+"幾何掃掠動作 : 內部錯誤 /p.";
+// 
+GeoOpIntLoftInvalidError_ERR_3501=
+"幾何斷面混成曲面動作 : 內部錯誤 /p.";
+// 
+GeoOpIntDistanceMin_ERR_3502=
+"計算最小距離 : 未發現解.";
+//
+GeoOpIntLoftInvalidError_ERR_3502.Request="幾何斷面混成曲面動作 :";
+GeoOpIntLoftInvalidError_ERR_3502.Diagnostic="斷面選擇次序不對.";
+GeoOpIntLoftInvalidError_ERR_3502.Advice="請重排次序.";
+// 
+GeoOpIntNurbsConversion_ERR_3503="轉換 NURBS 軟體內部錯誤.";
+
+// 
+GeoOpInNoProjectionForGlobalDeformation_ERR_3600.Request ="總體變形運算子:";
+GeoOpInNoProjectionForGlobalDeformation_ERR_3600.Diagnostic ="無法投影至參考或導引曲面上.";
+GeoOpInNoProjectionForGlobalDeformation_ERR_3600.Advice ="延伸參考或導引曲面.";
+//
+
+

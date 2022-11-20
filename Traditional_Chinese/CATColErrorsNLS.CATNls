@@ -1,0 +1,118 @@
+// COPYRIGHT Dassault Systemes 2003
+//===================================================================
+
+
+// Collab design errors
+INTERNAL_ERROR.Title = "內部錯誤";
+INTERNAL_ERROR.Request = "An internal error has occurred.";
+
+// --------------------------------------------
+// -- Errors during writing of the briefcase --
+// --------------------------------------------
+CREATE_MERGE_BRIEFCASE_ERROR.Title = "溶合錯誤";
+CREATE_MERGE_BRIEFCASE_ERROR.Request = "An error has occurred during the briefcase creation.";
+CREATE_MERGE_BRIEFCASE_ERROR.Diagnostic = "The briefcase factory failed to create a new briefcase.";
+
+NO_GEOMETRY_ASSOCIATED.Title = "分享錯誤";
+NO_GEOMETRY_ASSOCIATED.Request = "An error has occurred during the share of /p1.";
+NO_GEOMETRY_ASSOCIATED.Diagnostic = "No geometry is associated. The feature should be removed.";
+
+TABLE_PROCESSING.Title = "分享錯誤";
+TABLE_PROCESSING.Request = "An error has occurred while processing /p1.";
+TABLE_PROCESSING.Diagnostic = "/p1";
+
+// --------------------------------------------
+// -- Errors during reading of the briefcase --
+// --------------------------------------------
+READ_META_ERROR.Title = "溶合錯誤";
+READ_META_ERROR.Request = "An error has occurred during the merge.";
+READ_META_ERROR.Diagnostic = "The Merge engine failed to read the briefcase metadata.";
+
+READ_VERSION_ERROR.Title = "溶合錯誤";
+READ_VERSION_ERROR.Request = "Collaborative engine cannot load briefcase.";
+READ_VERSION_ERROR.Diagnostic = "The briefcase's version is not compatible with the current version.";
+
+READ_V5_FEATURES_ERROR.Title = "溶合錯誤";
+READ_V5_FEATURES_ERROR.Request = "An error has occurred during the merge.";
+READ_V5_FEATURES_ERROR.Diagnostic = "The merge engine failed to read the briefcase content.";
+
+READ_DELETED_FEATURES_ERROR.Title = "溶合錯誤";
+READ_DELETED_FEATURES_ERROR.Request = "An error has occurred during the merge.";
+READ_DELETED_FEATURES_ERROR.Diagnostic = "Merge engine failed to read the briefcase content.";
+
+READ_CAMERA_ERROR.Title = "溶合錯誤";
+READ_CAMERA_ERROR.Request = "An error has occurred during the merge.";
+READ_CAMERA_ERROR.Diagnostic = "Merge engine failed to read the viewpoint info.";
+
+// ----------------------------------------------
+// -- Errors during merging of the briefcase   --
+// ----------------------------------------------
+NO_DOCUMENT_ERROR.Title = "溶合錯誤";
+NO_DOCUMENT_ERROR.Request = "An error has occurred during the merge.";
+NO_DOCUMENT_ERROR.Diagnostic = "No CATPart document is active inside the current session.";
+NO_DOCUMENT_ERROR.Advice = "Open a valid CATPart document.";
+
+STEP_BEFORE_MERGE_ERROR.Title = "溶合錯誤";
+STEP_BEFORE_MERGE_ERROR.Request = "An error has occurred before the merge of /p1.";
+STEP_BEFORE_MERGE_ERROR.Diagnostic = "/p1";
+
+STEP_MERGE_ERROR.Title = "溶合錯誤";
+STEP_MERGE_ERROR.Request = "An error has occurred during the merge of /p1.";
+STEP_MERGE_ERROR.Diagnostic = "/p1";
+
+STEP_AFTER_MERGE_ERROR.Title = "溶合錯誤";
+STEP_AFTER_MERGE_ERROR.Request = "An error has occurred after the merge of /p1.";
+STEP_AFTER_MERGE_ERROR.Diagnostic = "/p1";
+
+STEP_DELETION_ERROR.Title = "溶合錯誤";
+STEP_DELETION_ERROR.Request = "An error has occurred during the deletion of /p1.";
+STEP_DELETION_ERROR.Diagnostic = "/p1";
+
+// --------------------------------------------
+// -- Errors during writing of the briefcase --
+// --------------------------------------------
+WRITE_CAMERA_ERROR.Title = "分享錯誤";
+WRITE_CAMERA_ERROR.Request = "An error has occurred during the briefcase creation.";
+WRITE_CAMERA_ERROR.Diagnostic = "The share engine failed to write the viewpoint info.";
+WRITE_CAMERA_ERROR.Advice = "If the tree is UI activated, please deactivate it.";
+
+
+// ----------------------------------------------
+// -- Applicative Errors to be moved in app fw --
+// ----------------------------------------------
+DEPRECATED_TOOL_ERROR.Title = "溶合錯誤";
+DEPRECATED_TOOL_ERROR.Request = "An error has occurred during the merge.";
+DEPRECATED_TOOL_ERROR.Diagnostic = "The merge engine tried to create a body with a deprecated type.";
+DEPRECATED_TOOL_ERROR.Advice = "Insert the body into the briefcase or create a new valid body.";
+
+TOOL_IN_USE_ERROR.Title = "溶合錯誤";
+TOOL_IN_USE_ERROR.Request = "An error has occurred during the merge.";
+TOOL_IN_USE_ERROR.Diagnostic = "The body used by the functional body contained in the briefcase is already used by another functional body.";
+TOOL_IN_USE_ERROR.Advice = "Associate this functional body with another body.";
+
+MML_DETECTED.Title = "分享錯誤";
+MML_DETECTED.Request = "One of the selected object cannot be shared.";
+MML_DETECTED.Diagnostic = "A link to an external document has been detected.";
+MML_DETECTED.Advice = "Isolate this object if you want to share it.";
+
+INVALID_CONTEXT.Title = "Context 錯誤";
+INVALID_CONTEXT.Request = "No valid document found for collaboration.";
+INVALID_CONTEXT.Advice = "Activate the part component you want to collaborate with.";
+
+
+// Client server errors
+WEB_SERVICES_ERROR_ID.Title      = "錯誤";
+WEB_SERVICES_ERROR_ID.Request    = "Error during collaboration request.";
+WEB_SERVICES_ERROR_ID.Diagnostic = "You are not allowed to or the collaboration server is not enable to /p1";
+
+ListWS_ID        ="list workspaces.";
+StoreWS_ID       ="store workspace.";
+GetWS_ID         ="get workspace.";
+RemoveWS_ID      ="remove workspace.";
+
+ListBF_ID        ="表列公事包.";
+CreateBF_ID      ="儲存公事包.";
+GetBF_ID         ="獲取公事包.";
+RemoveBF_ID      ="移除公事包.";
+UpdateBFState_ID ="更新公事包情形.";
+LoadBF_ID        ="載入公事包.";

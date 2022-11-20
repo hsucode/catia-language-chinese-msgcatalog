@@ -1,0 +1,103 @@
+//
+// ---------------------------
+// Sweep 3D command
+// ---------------------------
+//
+CATMSHCmdSweep3D.UndoTitle="掃掠 3D";
+CATMSHCmdSweep3D.Sweep3DDlg.Title="掃掠 3D";
+
+CATMSHCmdSweep3D.Sweep3DDlg.BClose="取消";
+
+CATMSHCmdSweep3D.SelectVolume.Message="選擇要網格化的體積.";
+CATMSHCmdSweep3D.SelectGeometry.Message="選擇體積的掃掠限制.";
+
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.Title="幾何";
+
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.LimitsFrame.Title="掃掠限制";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.LimitsFrame.BottomLbl.Title="底部: ";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.LimitsFrame.TopLbl.Title="頂部: ";
+
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.GuidesFrame.Title="導引參數";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.GuidesFrame.AngleEditorLbl.Title="角度: ";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.GuidesFrame.GuidesLbl.Title="導引: ";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.GuidesFrame.ComputeGuides.Title="計算導引";
+
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.Title="網格";
+
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.CaptureFrame.Title="抓圖";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.CaptureFrame.CaptureLbl.Title="精度: ";
+
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.CaptureFrame.CondensationCheck.Title="精簡";
+
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.DistribFrame.Title="分配";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.DistribFrame.DistribLbl.Title="型式: ";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.DistribFrame.NbLayersLbl.Title="圖層號碼: ";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.DistribFrame.RatioLbl.Title="大小比值: ";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.DistribFrame.SymmetryCheck.Title="對稱";
+
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.ElementFrame.Title="元素型式;
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.ElementFrame.RBLinear.Title="線性";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.ElementFrame.RBParabolic.Title="橢圓";
+
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.SmoothFrame.Title="平順";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.SmoothFrame.SmoothCheck.Title="內和上網格";
+
+CATMSHCmdSweep3D.Sweep3DDlg.NoSelection="未選擇修剪面";
+CATMSHCmdSweep3D.Sweep3DDlg.NoGuides="未計算導引";
+
+CATMSHCmdSweep3D.Sweep3DDlg.Uniform="一致";
+CATMSHCmdSweep3D.Sweep3DDlg.Arithmetic="算術";
+CATMSHCmdSweep3D.Sweep3DDlg.Geometric="幾何";
+
+CATMSHCmdSweep3D.Sweep3DDlg.ErrorCoherence1.Title="警告";
+CATMSHCmdSweep3D.Sweep3DDlg.ErrorCoherence1.Text="切層數目必須是正值.";
+
+CATMSHCmdSweep3D.Sweep3DDlg.ErrorCoherence2.Title="警告";
+CATMSHCmdSweep3D.Sweep3DDlg.ErrorCoherence2.Text="大小比例必須是正值.";
+
+CATMSHCmdSweep3D.Geometry.UndoTitle="選擇幾何";
+CATMSHCmdSweep3D.BottomSel.UndoTitle="選擇掃掠限制 ( 底部 )";
+CATMSHCmdSweep3D.TopSel.UndoTitle="選擇掃掠限制 ( 頂部 )";
+
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.GuidesFrame.Remove.Title="移除";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.GuidesFrame.Remove.Help="移除已計算導引.";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.GuidesFrame.Remove.LongHelp="移除已計算導引.";
+
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.GuidesFrame.Compute.Title="計算";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.GuidesFrame.Compute.Help="計算導引.";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.GuidesFrame.Compute.LongHelp="計算導引.";
+
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.CaptureFrame.Check.Title="檢查";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.CaptureFrame.Check.Help="檢查抓取.";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.CaptureFrame.Check.LongHelp="檢查抓取.";
+
+nbfaces = "/P1 修剪面組";
+oneface = "/P1 修剪面";
+
+nbguides = "/P1 導引";
+oneguide = "/P1 導引";
+
+
+Geometries2D  = "/P1 修剪面";
+Geometry2D    = "/P1 修剪面";
+Feature       = "/P1 特徵";
+Features      = "/P1 特徵";
+Set           = "/P1 幾何組";
+Sets          = "/P1 幾何組";
+NoSelection = "未選擇";
+
+CaptureCountTitle	="警告";
+CaptureNoCount		="未找到網格抓取.";
+CaptureManyCount	="找到一個以上的網格抓取: \n /P1.";
+
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.LimitsFrame.GeomLabel.Title="底";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.GeometryTab.GeometryFrame.LimitsFrame.GeomLabel1.Title="上";
+CATMSHCmdSweep3D.GeometrySelDlg.Title="修剪面選擇器";
+
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.DistribFrame.Count.Title="抓取相當";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.DistribFrame.Count.Help="設定至抓取邊線數目.";
+CATMSHCmdSweep3D.Sweep3DDlg.SweepContainer.MeshTab.MeshFrame.DistribFrame.Count.LongHelp="設定至抓取邊線數目.";
+
+
+
+

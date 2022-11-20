@@ -1,0 +1,256 @@
+// COPYRIGHT DASSAULT SYSTEMES 2001
+//===========================================================================
+//
+// CATRmaClearCoatGeneratorDlg (English)
+//
+//===========================================================================
+// 
+//
+Title = "ClearCoat 360 材質產生器";
+
+small  = "小  ( 128 x 128 圖素 )";
+medium = "中 ( 256 x 256 圖素 )";
+large  = "大  ( 512 x 512 圖素 )";
+
+sphere         = "球";
+roundplatelet  = "小圓片";
+squareplatelet = "小四方片";
+
+paint   = "多層塗層";
+mirror  = "鏡向";
+normal  = "球形鏡向";
+phong   = "Phong 效應";
+
+one = "1";
+two = "2";
+four = "4";
+eight = "8";
+
+upPicture    = "upEng.bmp";
+downPicture  = "downEng.bmp";
+frontPicture = "frontEng.bmp";
+backPicture  = "backEng.bmp";
+leftPicture  = "leftEng.bmp";
+rightPicture = "rightEng.bmp";
+
+frameOption.fileLabel.Title = "存成 ";
+
+framePicture.frontViewer.Help = "按一下我來修正前置圖像";
+framePicture.frontViewer.ShortHelp = "按一下我來修正前置圖像";
+framePicture.frontViewer.LongHelp = "按一下我來修正前置圖像";
+
+framePicture.backViewer.Help = "按一下我來修正後置圖像";
+framePicture.backViewer.ShortHelp = "按一下我來修正後置圖像";
+framePicture.backViewer.LongHelp = "按一下我來修正後置圖像";
+
+framePicture.leftViewer.Help = "按一下我來修正左側圖像";
+framePicture.leftViewer.ShortHelp = "按一下我來修正左側圖像";
+framePicture.leftViewer.LongHelp = "按一下我來修正左側圖像";
+
+framePicture.rightViewer.Help = "按一下我來修正右側圖像";
+framePicture.rightViewer.ShortHelp = "按一下我來修正右側圖像";
+framePicture.rightViewer.LongHelp = "按一下我來修正右側圖像";
+
+framePicture.upViewer.Help = "按一下我來修正上部圖像";
+framePicture.upViewer.ShortHelp = "按一下我來修正上部圖像";
+framePicture.upViewer.LongHelp = "按一下我來修正上部圖像";
+
+framePicture.downViewer.Help = "按一下我來修正下部圖像";
+framePicture.downViewer.ShortHelp = "按一下我來修正下部圖像";
+framePicture.downViewer.LongHelp = "按一下我來修正下部圖像";
+
+frameOption.fileButton.Help = "瀏覽目錄";
+frameOption.fileButton.ShortHelp = "瀏覽目錄";
+frameOption.fileButton.LongHelp =
+"以瀏覽目錄
+來定義要儲存的檔案名稱.";
+
+// Tabs
+tabContainer.qualityTabPage.Title = "品質";
+tabContainer.layer0TabPage.Title = "ClearCoat 圖層";
+tabContainer.layer1TabPage.Title = "Substrate 圖層";
+tabContainer.phongTabPage.Title = "Phong 參數";
+
+// Type
+frameType.typeLabel.Title = "材質型式 ";
+
+// Quality
+tabContainer.qualityTabPage.qualityFrame.qualitySepFrame.qualitySepLabel.Title = "輸出品質";
+
+tabContainer.qualityTabPage.qualityFrame.samplingLabel.Title = "Super Sampling ";
+tabContainer.qualityTabPage.qualityFrame.samplingCombo.Help = "Super Sampling";
+tabContainer.qualityTabPage.qualityFrame.samplingCombo.ShortHelp = "Super Sampling";
+tabContainer.qualityTabPage.qualityFrame.samplingCombo.LongHelp =
+"Modulates the super sampling.";
+
+tabContainer.qualityTabPage.qualityFrame.nbRaysLabel.Title = "射線數目 ";
+tabContainer.qualityTabPage.qualityFrame.nbRaysSpinner.Help = "射線數目 ";
+tabContainer.qualityTabPage.qualityFrame.nbRaysSpinner.ShortHelp = "射線數目 ";
+tabContainer.qualityTabPage.qualityFrame.nbRaysSpinner.LongHelp =
+"Defines the maximum depth of the recursive ray tree.";
+
+tabContainer.qualityTabPage.qualityFrame.accuracySepFrame.accuracySepLabel.Title = "視點精度";
+
+tabContainer.qualityTabPage.qualityFrame.accTopLabel.Title = "上 ";
+tabContainer.qualityTabPage.qualityFrame.accTopSpinner.Help = "上視點精度";
+tabContainer.qualityTabPage.qualityFrame.accTopSpinner.ShortHelp = "上視點精度";
+tabContainer.qualityTabPage.qualityFrame.accTopSpinner.LongHelp =
+"調整上視點精度";
+
+tabContainer.qualityTabPage.qualityFrame.accMiddleLabel.Title = "中間 ";
+tabContainer.qualityTabPage.qualityFrame.accMiddleSpinner.Help = "中間視點精度";
+tabContainer.qualityTabPage.qualityFrame.accMiddleSpinner.ShortHelp = "中間視點精度";
+tabContainer.qualityTabPage.qualityFrame.accMiddleSpinner.LongHelp =
+"調整中間視點精度";
+
+tabContainer.qualityTabPage.qualityFrame.accBottomLabel.Title = "底部 ";
+tabContainer.qualityTabPage.qualityFrame.accBottomSpinner.Help = "底部視點精度";
+tabContainer.qualityTabPage.qualityFrame.accBottomSpinner.ShortHelp = "底部視點精度";
+tabContainer.qualityTabPage.qualityFrame.accBottomSpinner.LongHelp =
+"調整底部視點精度";
+
+tabContainer.qualityTabPage.qualityFrame.labelImageSize.Title = "圖像大小 ";
+
+// Layer0
+tabContainer.layer0TabPage.layer0Frame.layer0ShapeLabel.Title = "顆粒外形 ";
+tabContainer.layer0TabPage.layer0Frame.layer0ShapeCombo.Help = "顆粒外形 ";
+tabContainer.layer0TabPage.layer0Frame.layer0ShapeCombo.ShortHelp = "顆粒外形 ";
+tabContainer.layer0TabPage.layer0Frame.layer0ShapeCombo.LongHelp =
+"定義顆粒外形 ";
+
+tabContainer.layer0TabPage.layer0Frame.layer0SizeLabel.Title = "顆粒大小 ";
+tabContainer.layer0TabPage.layer0Frame.layer0SizeSpinner.Help = "顆粒大小 ";
+tabContainer.layer0TabPage.layer0Frame.layer0SizeSpinner.ShortHelp = "顆粒大小 ";
+tabContainer.layer0TabPage.layer0Frame.layer0SizeSpinner.LongHelp =
+"調整顆粒大小 ";
+
+tabContainer.layer0TabPage.layer0Frame.layer0DensityLabel.Title = "顆粒密度 ";
+tabContainer.layer0TabPage.layer0Frame.layer0DensitySpinner.Help = "顆粒密度 ";
+tabContainer.layer0TabPage.layer0Frame.layer0DensitySpinner.ShortHelp = "顆粒密度 ";
+tabContainer.layer0TabPage.layer0Frame.layer0DensitySpinner.LongHelp =
+"調整顆粒密度 ";
+
+tabContainer.layer0TabPage.layer0Frame.layer0DepthLabel.Title = "圖層深度 ";
+tabContainer.layer0TabPage.layer0Frame.layer0DepthSpinner.Help = "圖層深度 ";
+tabContainer.layer0TabPage.layer0Frame.layer0DepthSpinner.ShortHelp = "圖層深度 ";
+tabContainer.layer0TabPage.layer0Frame.layer0DepthSpinner.LongHelp =
+"調整圖層深度 ";
+
+tabContainer.layer0TabPage.layer0Frame.layer0ColorLabel.Title = "顆粒顏色 ";
+tabContainer.layer0TabPage.layer0Frame.layer0ColorSpinner.Help = "顆粒顏色 ";
+tabContainer.layer0TabPage.layer0Frame.layer0ColorSpinner.ShortHelp = "顆粒顏色 ";
+tabContainer.layer0TabPage.layer0Frame.layer0ColorSpinner.LongHelp =
+"調整顆粒顏色.";
+
+tabContainer.layer0TabPage.layer0Frame.layer0RefractionLabel.Title = "顆粒折射 ";
+tabContainer.layer0TabPage.layer0Frame.layer0RefractionSpinner.Help = "顆粒折射 ";
+tabContainer.layer0TabPage.layer0Frame.layer0RefractionSpinner.ShortHelp = "顆粒折射 ";
+tabContainer.layer0TabPage.layer0Frame.layer0RefractionSpinner.LongHelp =
+"調整顆粒折射 ";
+
+tabContainer.layer0TabPage.layer0Frame.layer0Refraction2Label.Title = "圖層折射 ";
+tabContainer.layer0TabPage.layer0Frame.layer0Refraction2Spinner.Help = "圖層折射 ";
+tabContainer.layer0TabPage.layer0Frame.layer0Refraction2Spinner.ShortHelp = "圖層折射 ";
+tabContainer.layer0TabPage.layer0Frame.layer0Refraction2Spinner.LongHelp =
+"調整圖層折射 ";
+
+//Layer1
+tabContainer.layer1TabPage.layer1Frame.layer1ShapeLabel.Title = "顆粒形狀 ";
+tabContainer.layer1TabPage.layer1Frame.layer1ShapeCombo.Help = "顆粒形狀 ";
+tabContainer.layer1TabPage.layer1Frame.layer1ShapeCombo.ShortHelp = "顆粒形狀 ";
+tabContainer.layer1TabPage.layer1Frame.layer1ShapeCombo.LongHelp =
+"定義顆粒形狀 ";
+
+tabContainer.layer1TabPage.layer1Frame.layer1SizeLabel.Title = "顆粒大小 ";
+tabContainer.layer1TabPage.layer1Frame.layer1SizeSpinner.Help = "顆粒大小 ";
+tabContainer.layer1TabPage.layer1Frame.layer1SizeSpinner.ShortHelp = "顆粒大小 ";
+tabContainer.layer1TabPage.layer1Frame.layer1SizeSpinner.LongHelp =
+"調整顆粒大小 ";
+
+tabContainer.layer1TabPage.layer1Frame.layer1DensityLabel.Title = "顆粒密度 ";
+tabContainer.layer1TabPage.layer1Frame.layer1DensitySpinner.Help = "顆粒密度 ";
+tabContainer.layer1TabPage.layer1Frame.layer1DensitySpinner.ShortHelp = "顆粒密度 ";
+tabContainer.layer1TabPage.layer1Frame.layer1DensitySpinner.LongHelp =
+"調整顆粒密度 ";
+
+tabContainer.layer1TabPage.layer1Frame.layer1DepthLabel.Title = "圖層深度 ";
+tabContainer.layer1TabPage.layer1Frame.layer1DepthSpinner.Help = "圖層深度 ";
+tabContainer.layer1TabPage.layer1Frame.layer1DepthSpinner.ShortHelp = "圖層深度 ";
+tabContainer.layer1TabPage.layer1Frame.layer1DepthSpinner.LongHelp =
+"調整圖層深度 ";
+
+tabContainer.layer1TabPage.layer1Frame.layer1ColorLabel.Title = "顆粒顏色 ";
+tabContainer.layer1TabPage.layer1Frame.layer1ColorSpinner.Help = "顆粒顏色 ";
+tabContainer.layer1TabPage.layer1Frame.layer1ColorSpinner.ShortHelp = "顆粒顏色 ";
+tabContainer.layer1TabPage.layer1Frame.layer1ColorSpinner.LongHelp =
+"調整顆粒顏色 ";
+
+tabContainer.layer1TabPage.layer1Frame.layer1RefractionLabel.Title = "顆粒折射 ";
+tabContainer.layer1TabPage.layer1Frame.layer1RefractionSpinner.Help = "顆粒折射 ";
+tabContainer.layer1TabPage.layer1Frame.layer1RefractionSpinner.ShortHelp = "顆粒折射 ";
+tabContainer.layer1TabPage.layer1Frame.layer1RefractionSpinner.LongHelp =
+"調整顆粒折射 ";
+
+tabContainer.layer1TabPage.layer1Frame.layer1Refraction2Label.Title = "圖層折射 ";
+tabContainer.layer1TabPage.layer1Frame.layer1Refraction2Spinner.Help = "圖層折射 ";
+tabContainer.layer1TabPage.layer1Frame.layer1Refraction2Spinner.ShortHelp = "圖層折射 ";
+tabContainer.layer1TabPage.layer1Frame.layer1Refraction2Spinner.LongHelp =
+"調整圖層折射 ";
+
+//Phong
+tabContainer.phongTabPage.phongFrame.phongPLabel.Title = "粗度 ";
+tabContainer.phongTabPage.phongFrame.phongPSlider.Help = "粗度 ";
+tabContainer.phongTabPage.phongFrame.phongPSlider.ShortHelp = "調整光線大小";
+tabContainer.phongTabPage.phongFrame.phongPSlider.LongHelp =
+"調整材料的明亮區域大小.";
+
+tabContainer.phongTabPage.phongFrame.phongRefractionLabel.Title = "折射 ";
+tabContainer.phongTabPage.phongFrame.phongRefractionSlider.Help = "折射";
+tabContainer.phongTabPage.phongFrame.phongRefractionSlider.ShortHelp = "折射";
+tabContainer.phongTabPage.phongFrame.phongRefractionSlider.LongHelp =
+"調整折射.";
+
+tabContainer.phongTabPage.phongFrame.phongLLabel.Title = "光線方向 ";
+
+tabContainer.phongTabPage.phongFrame.phongLXLabel.Title = " X ";
+tabContainer.phongTabPage.phongFrame.phongLXSpinner.Help = "X 座標";
+tabContainer.phongTabPage.phongFrame.phongLXSpinner.ShortHelp = "X 座標";
+tabContainer.phongTabPage.phongFrame.phongLXSpinner.LongHelp =
+"修改沿 X　軸光的方向.";
+
+tabContainer.phongTabPage.phongFrame.phongLYLabel.Title = " Y ";
+tabContainer.phongTabPage.phongFrame.phongLYSpinner.Help = "Y 座標";
+tabContainer.phongTabPage.phongFrame.phongLYSpinner.ShortHelp = "Y 座標";
+tabContainer.phongTabPage.phongFrame.phongLYSpinner.LongHelp =
+"修改沿 Y 軸光的方向.";
+
+tabContainer.phongTabPage.phongFrame.phongLZLabel.Title = " Z ";
+tabContainer.phongTabPage.phongFrame.phongLZSpinner.Help = "Z 座標";
+tabContainer.phongTabPage.phongFrame.phongLZSpinner.ShortHelp = "Z 座標";
+tabContainer.phongTabPage.phongFrame.phongLZSpinner.LongHelp =
+"修改沿 Z 軸光的方向.";
+
+tabContainer.phongTabPage.phongFrame.phongKALabel.Title = "周圍光線 ";
+tabContainer.phongTabPage.phongFrame.phongKASlider.Help = "周圍光線 ";
+tabContainer.phongTabPage.phongFrame.phongKASlider.ShortHelp = "周圍光線 ";
+tabContainer.phongTabPage.phongFrame.phongKASlider.LongHelp =
+"調整周圍光線 ";
+
+tabContainer.phongTabPage.phongFrame.phongKDLabel.Title = "散射 ";
+tabContainer.phongTabPage.phongFrame.phongKDSlider.Help = "散射顏色";
+tabContainer.phongTabPage.phongFrame.phongKDSlider.ShortHelp = "散射";
+tabContainer.phongTabPage.phongFrame.phongKDSlider.LongHelp =
+"調整散射顏色.";
+
+tabContainer.phongTabPage.phongFrame.phongKSLabel.Title = "反射 ";
+tabContainer.phongTabPage.phongFrame.phongKSSlider.Help = "反射顏色";
+tabContainer.phongTabPage.phongFrame.phongKSSlider.ShortHelp = "反射";
+tabContainer.phongTabPage.phongFrame.phongKSSlider.LongHelp =
+"調整反射顏色";
+
+tabContainer.phongTabPage.phongFrame.phongColorLabel.Title = "光顏色 ";
+tabContainer.phongTabPage.phongFrame.phongColorSlider.Help = "光顏色 ";
+tabContainer.phongTabPage.phongFrame.phongColorSlider.ShortHelp = "光顏色 ";
+tabContainer.phongTabPage.phongFrame.phongColorSlider.LongHelp =
+"調整光顏色 ";
+

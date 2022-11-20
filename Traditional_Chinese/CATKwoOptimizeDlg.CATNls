@@ -1,0 +1,318 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+Title = "最佳化";
+Empty1.Title = " ";
+Empty3.Title = " ";
+Empty4.Title = " ";
+Empty2.Title = " ";
+Empty5.Title = " ";
+Empty7.Title = " ";
+Empty8.Title = " ";
+
+RunButton.Title = "執行最佳化";
+LightRunCheckButton.Title = "Run optimization without filling the Undo log";
+LightRunCheckButton.Help = "Check this option if you encountered memory consumption problem during the classical run.";
+LightRunCheckButton.ShortHelp = "When this option is unchecked, the Undo log can be filled with much data, which can lead to memory saturations.\nCheck this option to avoid this problem.\nWARNING: after running the methods in this mode, you won't be able to undo all the actions done before the run.";
+LightRunCheckButton.LongHelp = "Run Optimization without filling the Undo log\nWhen this option is unchecked, the Undo log is filled with much data so that it may lead\n to memory saturation. Checking this option avoids this problem.\nWARNING: after running the Optimization in this mode, you will not be able to undo all the actions performed before the run.";
+
+TabContainer.ProblemTabPage.Title = "問題";
+TabContainer.ProblemTabPage.OptimizationType.Title = "最佳化形式: ";
+TabContainer.ProblemTabPage.OptimizationTypeFrame.Title = "最佳化參數";
+TabContainer.ProblemTabPage.OptimizationTypeFrame.ParameterFrame.ChooseParameterButton.Title = "選擇...";
+TabContainer.ProblemTabPage.OptimizationTypeFrame.OneMoreFrame.ObjectiveValueLabel.Title = "目標數值:";
+TabContainer.ProblemTabPage.AlgorithmFrame.Title = "演算法";
+TabContainer.ProblemTabPage.OptimizationType.ShortHelp = "Notes: \n - The only algorithm supporting 'constraints only' is 'Simulated Annealing'. \n - The only algorithm supporting goals with derivatives is 'Algorithm for Constraints & Derivatives Providers' ";
+TabContainer.ProblemTabPage.OptimizationType.LongHelp = "Notes: \n - The only algorithm supporting 'constraints only' is 'Simulated Annealing'. \n - The only algorithm supporting goals with derivatives is 'Algorithm for Constraints & Derivatives Providers' ";
+TabContainer.ProblemTabPage.OptimizationTypeFrame.ParameterFrame.ChooseParameterButton.ShortHelp =  "Notes: \n - The only algorithm supporting 'constraints only' is 'Simulated Annealing'. \n - The only algorithm supporting goals with derivatives is 'Algorithm for Constraints & Derivatives Providers' ";
+TabContainer.ProblemTabPage.OptimizationTypeFrame.ParameterFrame.ChooseParameterButton.LongHelp =  "Notes: \n - The only algorithm supporting 'constraints only' is 'Simulated Annealing'. \n - The only algorithm supporting goals with derivatives is 'Algorithm for Constraints & Derivatives Providers' ";
+
+TabContainer.ProblemTabPage.ShortHelp = "An optimization problem usually consists in finding the values of some variables (Free Parameters) that Minimize/Maximize \n or acheive a target value for an objective function (Optimized Parameter).";
+TabContainer.ProblemTabPage.LongHelp = "An optimization problem usually consists in finding the values of some variables (Free Parameters) that Minimize/Maximize \n or acheive a target value for an objective function (Optimized Parameter).";
+
+TabContainer.ProblemTabPage.AlgorithmSettingsFrame.Title = "選擇的演算法設定";
+
+///TabContainer.ProblemTabPage.AlgorithmFrame.SAButton.Title = "模擬測試 - 收歛速度: ";
+///TabContainer.ProblemTabPage.AlgorithmFrame.SAButton.Help = "啟動模擬測試演算";
+///TabContainer.ProblemTabPage.AlgorithmFrame.SAButton.ShortHelp = "啟動模擬測試演算";
+///TabContainer.ProblemTabPage.AlgorithmFrame.SAButton.LongHelp = "啟動總體搜尋演算. \n This algorithm is a stochastic global optimization algorithm (it uses random numbers generation, and can avoid local optima).\nYou can use it to find a good region of the parameters space, and then run a local search to improve your solution";
+
+///TabContainer.ProblemTabPage.AlgorithmFrame.SAButton.Title2 = "總體搜尋 - 收歛速度: ";
+///TabContainer.ProblemTabPage.AlgorithmFrame.SAButton.Help2 = "啟動總體搜尋演算";
+///TabContainer.ProblemTabPage.AlgorithmFrame.SAButton.ShortHelp2 = "啟動總體搜尋演算";
+///TabContainer.ProblemTabPage.AlgorithmFrame.SAButton.LongHelp2 = "Activates the simulated annealing algorithm.\nThis algorithm is a stochastic global optimization algorithm (it uses random numbers generation, and can avoid local optima).\nYou can use it to find a good region of the parameters space, and then run a gradient to improve your solution";
+
+///TabContainer.ProblemTabPage.AlgorithmFrame.GradientButton.Title = "梯度";
+///TabContainer.ProblemTabPage.AlgorithmFrame.GradientButton.Help = "起動連接梯度演算";
+///TabContainer.ProblemTabPage.AlgorithmFrame.GradientButton.ShortHelp = "起動連接梯度演算";
+///TabContainer.ProblemTabPage.AlgorithmFrame.GradientButton.LongHelp = "Activates the conjugate gradient algorithm.\nThis algorithm is a local optimization algorithm (it uses local derivatives calculated with micro-updates).\nThis algorithm can get stuck in local optima but it is very efficient for uniform functions.\nYou can use it to improve the simulated annealing solutions";
+
+///TabContainer.ProblemTabPage.AlgorithmFrame.GradientButton.Title2 = "局部搜尋";
+///TabContainer.ProblemTabPage.AlgorithmFrame.GradientButton.Help2 = "啟動局部搜尋演算";
+///TabContainer.ProblemTabPage.AlgorithmFrame.GradientButton.ShortHelp2 = "啟動局部搜尋演算";
+///TabContainer.ProblemTabPage.AlgorithmFrame.GradientButton.LongHelp2 = "啟動局部搜尋演算. \n This algorithm is a local optimization algorithm (it uses local derivatives calculated with micro-updates).\nThis algorithm can get stuck in local optima but it is very efficient for uniform functions.\nYou can use it to improve the global search solutions";
+
+
+TabContainer.ProblemTabPage.AlgorithmFrame.ConvergenceCombo.Help = "定義不良解法的接受層級";
+TabContainer.ProblemTabPage.AlgorithmFrame.ConvergenceCombo.ShortHelp = "Defines the level of acceptation of bad solutions.\nThe lower the convergence speed is, the higher the probability not to get stuck in local optima is";
+TabContainer.ProblemTabPage.AlgorithmFrame.ConvergenceCombo.LongHelp = "Defines the level of acceptation of bad solutions.\nIf you think your problems have a lot of local optima, you should use the lowest speed.\nIf you think that your problem has no local optima, you should choose infinite speed";
+
+TabContainer.ProblemTabPage.TerminationFrame.Title = "結束標準";
+TabContainer.ProblemTabPage.TerminationFrame.NoImprovementButton.Title = "無精進的連續更新";
+TabContainer.ProblemTabPage.TerminationFrame.NoImprovementButton.Help = "If this option is checked, the algorithm will terminate if the best solution doesn't improve after a given number of iterations";
+TabContainer.ProblemTabPage.TerminationFrame.NoImprovementButton.ShortHelp = "Check this option if you want the algorithm to terminate if the best solution\ndoesn't improve after a given number of iterations";
+TabContainer.ProblemTabPage.TerminationFrame.NoImprovementButton.LongHelp = "Check this option if you want the algorithm to terminate if the best solution\ndoesn't improve after a given number of iterations";
+
+TabContainer.ProblemTabPage.TerminationFrame.TimeCheckButton.Title = "最大時間 (分鐘)";
+TabContainer.ProblemTabPage.TerminationFrame.TimeCheckButton.Help = "勾選此選擇來限制最佳化最大時間";
+TabContainer.ProblemTabPage.TerminationFrame.TimeCheckButton.ShortHelp = "勾選此選擇來限制最佳化最大時間";
+TabContainer.ProblemTabPage.TerminationFrame.TimeCheckButton.LongHelp = "勾選此選擇來限制最佳化最大時間. \n When the duration will be reached, the algorithm will finish the current iteration and end";
+
+TabContainer.ProblemTabPage.TerminationFrame.MaxNbEvaluations.Title = "最大更新數目";
+TabContainer.ProblemTabPage.TerminationFrame.LongHelp = "Termination is based on time of the run and number of update without improvement for all the algorithms.\n Additional criteria are available for the algorithm using derivatives.\n Each of this criterion is evaluated on a number of updates specified by the Window criterion at the botton of the list.\n 0 for any value means that the corresponding criterion is not taken into account.\n 0 for the window means that no criterion based on the objective/constraints/variables evolutions is taken into account.";
+TabContainer.ProblemTabPage.TerminationFrame.ShortHelp = "Termination is based on time of the run and number of update without improvement for all the algorithms.\n Additional criteria are available for the algorithm using derivatives.\n Each of this criterion is evaluated on a number of updates specified by the Window criterion at the botton of the list.\n 0 for any value means that the corresponding criterion is not taken into account.\n 0 for the window means that no criterion based on the objective/constraints/variables evolutions is taken into account.";
+TabContainer.ProblemTabPage.InputParametersFrame.Title = "自由參數";
+
+TabContainer.ProblemTabPage.InputParametersFrame.ParametersMultilist.Help = "This lists shows free parameters, their ranges and the mean step to use to modify a parameter";
+TabContainer.ProblemTabPage.InputParametersFrame.ParametersMultilist.ShortHelp = "This lists shows free parameters, their ranges and the mean step to use to modify a parameter";
+TabContainer.ProblemTabPage.InputParametersFrame.ParametersMultilist.LongHelp = "This lists shows free parameters, their ranges and the mean step to use to modify a parameter.\nThis step is used by optimization algorithms as a parameter sensitivity.\nIf the parameter to optimize changes a lot for small changes of a free parameter, the step has to be small.\nIf the step is automatic, it is deduced from ranges if they are given, and from its magnitude if not";
+TabContainer.ProblemTabPage.InputParametersFrame.ParametersMultilist.ColumnTitle1 = "";
+
+TabContainer.ProblemTabPage.InputParametersFrame.AddButton.Title = "編輯清單...";
+TabContainer.ProblemTabPage.InputParametersFrame.EditRangesButton.Title = "編輯範圍和階數...";
+
+TabContainer.ProblemTabPage.OutputFrame.Title = "最佳化資料";
+TabContainer.ProblemTabPage.OutputFrame.SaveDataCheckButton.Title = "儲存最佳化資料";
+TabContainer.ProblemTabPage.OutputFrame.SaveDataCheckButton.Help = "If checked, allows you to save the data generated by optimization in a design table like format";
+TabContainer.ProblemTabPage.OutputFrame.SaveDataCheckButton.ShortHelp = "If this option is checked, allows you to save the data generated\nby optimization in a design table like format";
+TabContainer.ProblemTabPage.OutputFrame.SaveDataCheckButton.LongHelp = "If this option is checked, allows you to save the data generated\nby optimization in a design table like format.\nThis will enable the Show Curve button after the optimization";
+TabContainer.ProblemTabPage.OutputFrame.BrowseButton.Title = "...";
+TabContainer.ProblemTabPage.OutputFrame.ShowCurveButton.Title = "顯示曲線...";
+TabContainer.ProblemTabPage.OutputFrame.ShowCurveButton.Help = "Shows the evolution of parameters and goal during the optimization";
+TabContainer.ProblemTabPage.OutputFrame.ShowCurveButton.ShortHelp = "Shows the evolution of parameters and goal during the optimization";
+TabContainer.ProblemTabPage.OutputFrame.ShowCurveButton.LongHelp = "Shows the evolution of parameters and goal during the optimization.\nYou have to save optimization data to use it";
+TabContainer.ProblemTabPage.OutputFrame.Empty6.Title = "                                                                             ";
+
+TabContainer.ConstraintsTabPage.Title = "拘束";
+TabContainer.ConstraintsTabPage.ConstraintsMultilist.Help = "最佳化拘束";
+TabContainer.ConstraintsTabPage.ConstraintsMultilist.ShortHelp = "最佳化拘束";
+TabContainer.ConstraintsTabPage.ConstraintsMultilist.LongHelp = "最佳化拘束";
+TabContainer.ConstraintsTabPage.ConstraintsMultilist.ColumnTitle1 = "";
+TabContainer.ConstraintsTabPage.ConstraintFrame.Title = "拘束定義";
+TabContainer.ConstraintsTabPage.ConstraintFrame.ConstraintsEmpty.Title = "   ";
+TabContainer.ConstraintsTabPage.ConstraintFrame.ConstraintActivityFrame.EmptyC1.Title = "  ";
+TabContainer.ConstraintsTabPage.ConstraintFrame.ConstraintActivityFrame.ConstraintActivityFrame2.ActivityLabel.Title = "活動 : ";
+TabContainer.ConstraintsTabPage.ConstraintFrame.ConstraintActivityFrame.ConstraintSatisfiedFrame.SatisfiedLabel.Title = "滿意 : ";
+TabContainer.ConstraintsTabPage.ConstraintFrame.ConstraintActivityFrame.ConstraintSatisfiedFrame.Label002.Title = " ";
+TabContainer.ConstraintsTabPage.ConstraintFrame.ConstraintActivityFrame.ConstraintSatisfiedFrame.Label003.Title = " ";
+TabContainer.ConstraintsTabPage.ConstraintFrame.ConstraintActivityFrame.ConstraintSatisfiedFrame.SatisfiedIcon.Title = "     ";
+TabContainer.ConstraintsTabPage.ConstraintFrame.ConstraintActivityFrame.ConstraintWeightFrame.ConstraintWeightLabel.Title = "標題 : ";
+TabContainer.ConstraintsTabPage.ConstraintFrame.EmptyC3.Title = " ";
+TabContainer.ConstraintsTabPage.ConstraintFrame.ConstraintBodyFrame.EditBodyFrame.ConstraintBodyLabel.Title = "本體 : ";
+TabContainer.ConstraintsTabPage.ConstraintFrame.ConstraintBodyFrame.EditBodyFrame.EditConstraintButton.Title = "編輯...";
+TabContainer.ConstraintsTabPage.ConstraintFrame.ConstraintNameFrame.ConstraintNameLabel.Title = "名稱 : ";
+TabContainer.ConstraintsTabPage.ConstraintFrame.ConstraintNameFrame.ConstraintCommentLabel.Title = "說明 : ";
+TabContainer.ConstraintsTabPage.ConstraintFrame.ConstraintPrecisionFrame.ConstraintPrecisionLabel.Title = "精確 : ";
+TabContainer.ConstraintsTabPage.ButtonsFrame.NewConstraintButton.Title = "新的...";
+TabContainer.ConstraintsTabPage.ButtonsFrame.DeleteConstraintButton.Title = "刪除";
+TabContainer.ConstraintsTabPage.ButtonsFrame.EmptyC2.Title = "  ";
+
+TabContainer.ResultsTabPage.Title = "計算結果";
+TabContainer.ResultsTabPage.PriorityFrame.Title = "結果搜尋的拘束優先度排序";
+TabContainer.ResultsTabPage.PriorityFrame.PriorityMultilist.Help = "Gives the constraints priorities used for the lexicographic sort. By editing cells, you can modify them and see the impact on the lexicographic sort.";
+TabContainer.ResultsTabPage.PriorityFrame.PriorityMultilist.ShortHelp = "Gives the constraints priorities used for the lexicographic sort. By editing cells, you can modify them and see the impact on the lexicographic sort. Note that :\n- a priority equal to 0 makes the constraint not taken in account during the lexicographic sort.\n- these priorities don't affect the algorithm behaviour (whereas the weights given in the Constraints tab page do).\n- priorities are integer values.";
+TabContainer.ResultsTabPage.PriorityFrame.PriorityMultilist.LongHelp = "Gives the constraints priorities used for the lexicographic sort. By editing cells, you can modify them and see the impact on the lexicographic sort.";
+TabContainer.ResultsTabPage.SortSettingsFrame.Title = "設定結果搜尋";
+TabContainer.ResultsTabPage.SortSettingsFrame.CompleteSortFiltersFrame.HistoricClassifButton.Title = "歷史搜尋 : 顯示計算次序的結果";
+TabContainer.ResultsTabPage.SortSettingsFrame.CompleteSortFiltersFrame.HistoricClassifButton.Help = "List the results in the computation order.";
+TabContainer.ResultsTabPage.SortSettingsFrame.CompleteSortFiltersFrame.HistoricClassifButton.ShortHelp = "List the results in the computation order.";
+TabContainer.ResultsTabPage.SortSettingsFrame.CompleteSortFiltersFrame.HistoricClassifButton.LongHelp = "List the results in the computation order.";
+TabContainer.ResultsTabPage.SortSettingsFrame.CompleteSortFiltersFrame.LexicographicClassifButton.Title = "詞彙搜尋 : 顯示由最好到最壞的結果";
+TabContainer.ResultsTabPage.SortSettingsFrame.CompleteSortFiltersFrame.LexicographicClassifButton.Help = "Sort the results from the best to the worst, by taking in account the constraints priorities.";
+TabContainer.ResultsTabPage.SortSettingsFrame.CompleteSortFiltersFrame.LexicographicClassifButton.ShortHelp = "Sort the results from the best to the worst, by taking in account the constraints priorities.";
+TabContainer.ResultsTabPage.SortSettingsFrame.CompleteSortFiltersFrame.LexicographicClassifButton.LongHelp = "Sort the results from the best to the worst, by taking in account the constraints priorities.\nResults are regrouped by class (see the column `#Class`), so that 1 is the best class of solutions to the optimization problem.\nInside a class, solutions are considered to be equivalent.";
+TabContainer.ResultsTabPage.SortSettingsFrame.RestrictedSortFiltersFrame.RestrictedSortFiltersLbl.Title = "顯示結果 : ";
+TabContainer.ResultsTabPage.SortSettingsFrame.RestrictedSortFiltersFrame.RestrictedSortFiltersCombo.Help = "Restriction filters that can be applied on the complete sorted list.";
+TabContainer.ResultsTabPage.SortSettingsFrame.RestrictedSortFiltersFrame.RestrictedSortFiltersCombo.ShortHelp = "Restriction filters that can be applied on the complete sorted list.";
+TabContainer.ResultsTabPage.SortSettingsFrame.RestrictedSortFiltersFrame.RestrictedSortFiltersCombo.LongHelp = "Restriction filters that can be applied on the complete sorted list.";
+AllResults = "全部";
+AllConstraintsSatisfied = "只有全部拘束符合";
+UserDefined = "使用者定義";
+OptimLogFilterDlg.OptimLogFilterFrame.ParmsMultilist.Help = "Modify the inf. and/or the sup. bound of one or more parameters to filter the corresponding results among the optimization log.";
+OptimLogFilterDlg.OptimLogFilterFrame.ParmsMultilist.ShortHelp = "Modify parameter(s) bound(s) to filter the corresponding results among the optimization log.";
+OptimLogFilterDlg.OptimLogFilterFrame.ParmsMultilist.LongHelp = "This multilist allow you to filter some results among the optimization log : modify the inf. and/or the sup. bound of one or more parameters and you will obtain a set of results satisfying all the given criteria.";
+TabContainer.ResultsTabPage.ResultsFrame.Title = "搜尋結果";
+TabContainer.ResultsTabPage.ResultsFrame.ResultsMultilist.Help = "Display the results of the optimization log according to the given sort and filter.";
+TabContainer.ResultsTabPage.ResultsFrame.ResultsMultilist.ShortHelp = "Display the results of the optimization log according to the given sort and filter.";
+TabContainer.ResultsTabPage.ResultsFrame.ResultsMultilist.LongHelp = "Display the results of the optimization log according to the given sort and filter.";
+TabContainer.ResultsTabPage.ResultsFrame.ApplyValuesButton.Title = "應用此數值至參數";
+TabContainer.ResultsTabPage.CurvesFrame.Title = "曲線";
+TabContainer.ResultsTabPage.CurvesFrame.CurvesSettingsButton.Title = "選擇顯示參數...";
+TabContainer.ResultsTabPage.CurvesFrame.CurvesSettingsButton.Help = "To select the parameters whose curve has to be displayed.";
+TabContainer.ResultsTabPage.CurvesFrame.CurvesSettingsButton.ShortHelp = "To select the parameters, among the ones which appear in the optimization file, whose evolution curve has to be displayed in the graph.";
+TabContainer.ResultsTabPage.CurvesFrame.CurvesSettingsButton.LongHelp = "To select the parameters, among the ones which appear in the optimization file, whose evolution curve has to be displayed in the graph.";
+TabContainer.ResultsTabPage.CurvesFrame.ShowCurvesButton.Title = "顯示曲線...";
+TabContainer.ResultsTabPage.CurvesFrame.ShowCurvesButton.Help = "Shows the evolution of all (or a restriction of) the parameters which appear in the results file during the optimization. The points number of each curve depends on the number of results displayed in the list above.";
+TabContainer.ResultsTabPage.CurvesFrame.ShowCurvesButton.ShortHelp = "Shows the evolution of all (or a restriction of) the parameters which appear in the results file during the optimization";
+TabContainer.ResultsTabPage.CurvesFrame.ShowCurvesButton.LongHelp = "Shows the evolution of all (or a restriction of) the parameters which appear in the results file during the optimization.\nThe points number of each curve depends on the number of results displayed in the list above.\nYou have to save optimization data to use it";
+UserFilterDlgTitle = "Give the restriction filter criteria";
+
+WithUpdateRadioButton.Title = "含更新顯示";
+WithoutUpdateRadioButton.Title = "無更新顯示";
+T
+// END WIZARD REPLACEMENT ZONE
+ConvergenceSlow="慢";
+ConvergenceMedium="中等";
+ConvergenceFast="快";
+ConvergenceInf="無限上升";
+
+Minimization="最小";
+Maximization="最大";
+ObjectiveValue="目標值";
+OnlyConstraints="只有拘束";
+
+Minimum="最小";
+Maximum="最大";
+
+Parameter="名稱";
+Value="數值";
+MinRange="下層範圍";
+MaxRange="上層範圍";
+TypicalStep="階段";
+StepAuto="自動.";
+
+ChooseDlgTitle="為最佳化演算選擇浮動參數";
+ParametersTitle="參數";
+InsertedTitle="為最佳化的浮動參數";
+
+CriteriaMsg="您必須選擇終止標準";
+CriteriaHd="終止標準 ?";
+
+OptimumFound="最佳化演算找到一組 ";
+Elapsed="計算時間 : ";
+
+Minutes=" 分";
+Secondes=" 秒";
+
+NbEvaluations="模型更新次數 : ";
+NbErrors="模型更新失敗次數 : ";
+
+GradientIteration="局部重覆搜尋";
+
+RangeDlgTitle="修改參數的梯度和範圍";
+
+EvaluationNb="估算 Nb.";
+FileDlgTitle="選擇最佳化記錄檔";
+
+UpdateError="發生更新錯誤";
+Error="錯誤";
+Warning="警告";
+
+BadFile="檔案 /P1 無法用來顯示曲線";
+BadFileHd="不好的檔案";
+
+RunContinue="此動作可能會持續較久的時間. 請檢查您的選擇. \n 您要繼續嗎 ?";
+RunContinueHd="繼續?";
+SummaryHd="最佳化結果";
+
+OutOfBounds="您剛修改的自由參數已超過界限. \n 如果它較小, 將會被靠近下限來計算, 若否, 則靠近上限. \n 為了要最佳化來重新計算參數必須執行更新.";
+OutOfBoundsHd="參數超過界限";
+
+FileCreation="沒有檔案與最佳化相關. \n 新選擇新的, 如您不取消此命令, 您勿須再選擇一個. \n (此檔案會被用來儲存自由參數值和在設計表類似格式中計算數值).";
+FileCreationHd="無相關檔案";
+FileFailed="檔案建立失敗";
+
+Name="名稱";
+Body="本體";
+Activity="啟動";
+Weight="標題";
+Satisfied="滿意度";
+DistanceToSatisfaction="至滿意的距離";
+Precision="精確度";
+
+Yes="是";
+No="否";
+
+HardConstraint="高";
+MeanConstraint="平均值";
+LowConstraint="低";
+
+
+CstConstraintsNotSatisfied = "此演算法使用時拘束必須滿足"; 
+RightNumerical="在拘束最佳化時, 正確的成員必須是數值且必須依據左邊成員給予的正確量大小 \n 舉例 : 長度.1 - 長度.2 == 0 公厘";
+RightNumericalHd="不正確算式";
+
+EqualityConstraintsMessage="語法選擇並未計入相等拘束.";
+EqualityConstraintsTitle=" PEO 警告";
+
+OpeningDlgWg = "The target value is driven by a formula so that you wont be able to valuate it. Notice that :\n- the target is supposed to be constant during the run even if its value changes with free parameters modifications.\n  => Only the value while starting to run is taken in account\n- the formula will be deleted if it becomes incompatible with the goal parameter type.";
+OpeningDlgWgHd = "最佳化問題定義 ...";
+
+FileCreationFailed1 = "建立檔案 ";
+FileCreationFailed2 = " failed because you may not be allowed to write in the specified location.\nPlease, try with an other file path.";
+FileCreationFailedHd = "建立輸出檔案失敗";
+
+NotPositivIntegerWg = "The given value must be an integer greater than 0. The editor will keep :\n- the value it had at the last click on OK.\n- the default value if you've never clicked on OK.";
+NotPositivIntegerWgHd = "使用者進入點錯誤";
+
+PbToDisplayCurvesHd = "無法顯示曲線";
+OptimLogNotFound = "Optimization log not found.\nIf you want to see the curves, select the 'Save optimization data' option and (re)run the optimization";
+OutputFileNotFound = "The output file containing the optimization data needed to display the curves can not be found (it may have been moved or deleted).";
+OutputFileEmpty = "The output file containing the optimization data does not contain enougth information to display curves.";
+
+OverwriteQuestion1 = "檔案名稱 ";
+OverwriteQuestion2 = " already exists in this location. Do you want to overwrite it ?\n- Yes : the output file will be overwritten\n- No : you will be asked for a new output file path\n- Cancel : the optimization run will be aborted";
+OverwriteQuestionHd = "已存輸出檔案";
+
+FileOverwriteFailed1 = "覆寫檔案 ";
+FileOverwriteFailed2 = " failed because this file may be in use (file opened or remaining Excel process).\nPlease, close the file or try with an other path.";
+FileOverwriteFailedHd = "檔案覆寫失敗";
+
+ValueTypeIsNotCompliant = "The type of the given value is not compliant with the corresponding parameter";
+ValueTypeIsNotCompliantHd = "數值型式不一致";
+
+AlgosComboLbl = "演算形式 : ";
+ChooseDisplayedParmDlgTiTle = "選擇將會顯示曲線的參數";
+
+SimultaneousValuationError = "The selected parameters don't have the same type, so that you can't valuate their range(s) and/or steps simultaneously";
+SimultaneousValuationErrorHd = "禁止同時評估";
+
+ConstraintNamingErrorHd = "Constraints names must be unique";
+ConstraintNamingError = "An other constraint has the name you want to give, please choose an other name.";
+
+ConstraintsNamesNotUnique = "The file can not be created because two constraints (at least) have the same name.";
+ConstraintsNamesNotUniqueHd = "File Creation Problem";
+
+TabContainer.ProblemTabPage.AlgorithmFrame.AlgosCombo.Help = "Activates the choosen global or local search algorithm.";
+//TabContainer.ProblemTabPage.AlgorithmFrame.AlgosCombo.ShortHelp = "Select a Global or a Local Search algorithm:\n- Simulated Annealing : stochastic global optimization algorithm (it uses random numbers generation, and can avoid local optima).\n=> You can use it to find a good region of the parameters space, and then run a local search algorithm to improve your solution.\n- Gradient : local optimization algorithm (it uses local derivatives calculated with micro-updates).\n=> It can get stuck in local optima but it is very efficient for uniform functions. You can use it to improve the global search algorithm solutions. \n- Algorithm for Constraints and derivatives providers:\n=> Can be used with specialized goals and derivatives such as Analysis Sensors that are able to provide their own derivatives.";
+TabContainer.ProblemTabPage.AlgorithmFrame.AlgosCombo.LongHelp = "Select the Global or Local Search algorithm:\n- Simulated Annealing : stochastic global optimization algorithm (it uses random numbers generation, and can avoid local optima).\n=> You can use it to find a good region of the parameters space, and then run a local search algorithm to improve your solution.\n- Gradient : local optimization algorithm (it uses local derivatives calculated with micro-updates).\n=> It can get stuck in local optima but it is very efficient for uniform functions. You can use it to improve the global search algorithm solutions. \n- Algorithm for Constraints and derivatives providers:\n=> Can be used with specialized goals and derivatives such as Analysis Sensors that are able to provide their own derivatives.";
+
+InvalidPriorityValueMsg = "A constraint priority must be an integer >= 0";
+InvalidPriorityValueHd = "Invalid Constraint Priority";
+
+ConstraintsWithDerivativesButton = "New Cst With Derivatives";
+
+TabContainer.ResultsTabPage.PriorityFrame.AdjustPrioritiesFromWeightsButton.Title=" Adjust Priorities From Weights";
+TabContainer.ResultsTabPage.PriorityFrame.ResetAllPrioritiesToButton.Title="Reset All Priorities To ";
+
+InputNotFound = "One (at least) of the free parameters can not be found, so that it has been temporarily removed from the Optimization definition that you will see :\n=> In the Optimization panel, click OK to remove the missing free parameter(s) definitively, or CANCEL to keep it/them.\nNotice that the missing causes are :\n- You are 'working with the cache system' (CATIA Option) on a model which has been created before Selective Loading integration and/or on a model which points publication(s) belonging to not loaded document(s) (load the impacted document(s) to retrieve your free parameter(s)).\n- The referenced parameter has been deleted.";
+InputNotFoundHd = "Optimization free parameter(s) not found";
+
+IncompatibleInputSelection = "You have selected at least one couple of type = (publication / its publicated parameter). Since publication and publicated parameter values are always equal, the algorithm will not be able to make them vary independently, so that you can not select both at the same time.\n=> For each couple, only the publication is kept as selected, the publicated parameter has been removed from the set of selected parameters.";
+IncompatibleInputSelectionHd = "Incompatible Input Selection";
+
+DrivenParameterHd = "Value modification forbidden";
+DrivenStep = "The step value can not be modified in edition context because the step parameter is driven by a relation:\n=> Edit ranges/step to remove the relation and change the value.";
+DrivenRange = "The range value can not be modified in edition context because the range parameter is driven by a relation:\n=> Edit ranges/step to remove the relation and change the value.";
+
+
+
+
+
+
+
+
+
+
+
+
+
+

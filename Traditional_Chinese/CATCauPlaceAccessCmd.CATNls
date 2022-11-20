@@ -1,0 +1,37 @@
+//=============================================================================
+//                                     CNEXT - CXR5
+//                          COPYRIGHT DASSAULT SYSTEMES 2000 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATCauPlaceAccessCmd.CATNls
+// FRAMEWORK   :    CATSacUI
+// AUTHOR      :    ehh
+// DATE        :    August 2001
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Plant Ship Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//------------------------------------------------------------------------------
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// DialogEngine state prompts 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATCauPlaceAccessCmd.SelectFromCatalogState.Message="由目錄選擇";
+CATCauPlaceAccessCmd.PlaceObjectState.Message="選擇置放邊界";
+CATCauPlaceAccessCmd.SelectOrientationState.Message="選擇方位邊界";
+CATCauPlaceAccessCmd.DefineOffsetState.Message="定義偏移";
+CATCauPlaceAccessCmd.CheckCSOState.Message="檢查有效 CSO";
+CATCauPlaceAccessCmd.SelectInstanceState.Message="選擇存取零件至連接";
+
+NotifyTitle="P置放存取零件";
+// No Face Connector in Part Reference Error Message
+NoFaceCntrText="No face connector defined in the selected catalog part.  Please choose another."; 
+// Non-PRM Catalog Selected Error Message
+NonPRMCatalogText="This command only supports the project management defined Compartment and Access catalog.\nDialog will be reset back to this catalog."; 
+// place Parts Warning Message
+PlacePartsWarningText="Please change PRM to point to different directory or modify definition in PRM file"; 

@@ -1,0 +1,29 @@
+////////////////////////////////////////////////////////////////////////
+// 
+//   EdgeCurve of null length (resolution)
+//
+//   EdgeCurve with big holes (iTolXYZ = 100 * resolution)
+//
+//**********************************************************************
+//
+RefCurveDefinition.MaxGapError =
+"the RefCurve /P2 has MaxGapCalcule /P3 different MaxGapStocke /P4.";
+//
+RefCurveDefinition.InvalidLength =
+"the RefCurve /P2 has degenerated length /P3 < resolution /P4.";
+//
+CompCurveDefinition.InvalidLength =
+"the /P3 th Component Curve /P2 has degenerated length /P3 < resolution /P4.";
+//
+Mapping.GapXYZ =
+"GapXYZ /P5 > /P6  when mapping /P4 th Curve /P3 on RefCurve /P2 (CrvParan /P7 and /P8).";
+//
+//
+Evaluation.OutsideModelSize =
+"/P5 CrvParam on Curve /P2 gives Point (/P6,/P7,/P8) far beyong Model Size /P3 (distance /P4).";
+//
+//
+//
+IsDefined.Aborted =
+"Check analysis Aborted, unexpected exception thrown.";
+//

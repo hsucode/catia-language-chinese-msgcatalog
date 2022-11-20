@@ -1,0 +1,127 @@
+//=====================================================================================
+//                                     CNEXT - CXR1
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwOptGal
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    
+// DATE        :    06.01.1999
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    Tools/Option du Drafting - Onglet General
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//      00           fgx   06.01.1999  Creation 	
+//      01           fgx   08.01.1999  Passage sur CATDrwOptTitle et CATDrwOptIcon
+//      02           fgx   14.01.1999  Ajout du check rotation snap auto
+//      03           fgx   20.01.1999  Deplacement des options de la grid de geo a gal
+//	    04		     ogk   16.06.1999  Ajout pour le coloring
+//	    05		     ogk   29.10.1999  Ajout repere de vue
+//=====================================================================================
+
+Title="一般";
+
+frameRuler.HeaderFrame.Global.Title="尺規";
+frameRuler.HeaderFrame.Global.LongHelp=
+"尺規
+定義是否要在圖框外圍顯示尺規.";
+frameRuler.IconAndOptionsFrame.OptionsFrame.checkRuler.Title="顯示尺規";
+frameRuler.IconAndOptionsFrame.OptionsFrame.checkRuler.LongHelp=
+"顯示或隱藏尺規.";
+
+frameGrid.HeaderFrame.Global.Title="網格";
+frameGrid.HeaderFrame.Global.LongHelp=
+"格狀 
+定義網格來幫助您畫圖及對正視圖.";
+frameGrid.IconAndOptionsFrame.OptionsFrame.checkGrid.Title="顯示 ";
+frameGrid.IconAndOptionsFrame.OptionsFrame.checkGrid.LongHelp=
+"定義您將顯示網格.";
+frameGrid.IconAndOptionsFrame.OptionsFrame.checkSnap.Title="鎖定至點";
+frameGrid.IconAndOptionsFrame.OptionsFrame.checkSnap.LongHelp=
+"幫助您在固定位置建立點.";
+frameGrid.IconAndOptionsFrame.OptionsFrame.labelGridSpacing.Title="主要網格尺寸: ";
+frameGrid.IconAndOptionsFrame.OptionsFrame.labelGridSpacing.LongHelp=
+"定義網格的主要間隔.";
+frameGrid.IconAndOptionsFrame.OptionsFrame.labelGridGraduation.Title="等分: ";
+frameGrid.IconAndOptionsFrame.OptionsFrame.labelGridGraduation.LongHelp=
+"主要網格間的等分.";
+
+frameGrid.IconAndOptionsFrame.OptionsFrame.checkAllowDistortions.Title="允許變形";
+frameGrid.IconAndOptionsFrame.OptionsFrame.checkAllowDistortions.LongHelp="允許變形 \n 允許在水平和垂直間有不同的網格比例.";
+frameGrid.IconAndOptionsFrame.OptionsFrame.labelH.Title="H:";
+frameGrid.IconAndOptionsFrame.OptionsFrame.labelV.Title="V:";
+
+frameColor.HeaderFrame.Global.Title="顏色組(為 V5R14 之前的繪圖)";
+frameColor.HeaderFrame.Global.LongHelp=
+"顏色組
+定義主要和次要圖紙的背景顏色.";
+frameColor.IconAndOptionsFrame.OptionsFrame.labelBackgroundColor.Title="圖紙背景 :";
+frameColor.IconAndOptionsFrame.OptionsFrame.labelBackgroundColor.LongHelp=
+"圖紙背景 
+定義圖紙的背景顏色.";
+frameColor.IconAndOptionsFrame.OptionsFrame.checkGraduatedColor.Title="漸變顏色";
+frameColor.IconAndOptionsFrame.OptionsFrame.checkGraduatedColor.LongHelp=
+"漸變顏色
+定義圖紙的背景顏色是漸變的.";
+frameColor.IconAndOptionsFrame.OptionsFrame.labelBackgroundColorDD.Title="細部圖紙背景 :";
+frameColor.IconAndOptionsFrame.OptionsFrame.labelBackgroundColorDD.LongHelp=
+"細部圖紙背景 
+定義細部圖紙的背景顏色.";
+frameColor.IconAndOptionsFrame.OptionsFrame.checkGraduatedColorDD.Title="漸變顏色";
+frameColor.IconAndOptionsFrame.OptionsFrame.checkGraduatedColorDD.LongHelp=
+"漸變顏色
+定義主要和次要圖紙的背景顏色.";
+//frameColor.IconAndOptionsFrame.OptionsFrame.frameViewer.viewer.Title="預視 :";
+//frameColor.IconAndOptionsFrame.OptionsFrame.frameViewer.viewer.LongHelp=
+//"Preview
+//Gives the feedback of the user selections.";
+//frameColor.IconAndOptionsFrame.OptionsFrame.frameViewerDD.viewerDD.Title="預視 :";
+//frameColor.IconAndOptionsFrame.OptionsFrame.frameViewerDD.viewerDD.LongHelp=
+//"Preview
+//Gives the feedback of the user selections.";
+
+frameTreeVisu.HeaderFrame.Global.Title="樹狀";
+frameTreeVisu.HeaderFrame.Global.LongHelp="樹狀顯示選擇";
+frameTreeVisu.IconAndOptionsFrame.OptionsFrame._checkTreeParameters.Title="顯示參數";
+frameTreeVisu.IconAndOptionsFrame.OptionsFrame._checkTreeParameters.LongHelp=
+"顯示參數
+定義在樹狀架構中顯示參數.";
+frameTreeVisu.IconAndOptionsFrame.OptionsFrame._checkTreeFormulas.Title="顯示關係";
+frameTreeVisu.IconAndOptionsFrame.OptionsFrame._checkTreeFormulas.LongHelp=
+"顯示關係
+定義在樹狀架構中顯示關係.";
+
+frameViewReferential.HeaderFrame.Global.Title="視圖軸";
+frameViewReferential.IconAndOptionsFrame.OptionsFrame.checkViewReferential.Title="在目前視圖顯示";
+frameViewReferential.IconAndOptionsFrame.OptionsFrame.checkViewReferential.LongHelp="在目前視圖顯示軸.";
+frameViewReferential.IconAndOptionsFrame.OptionsFrame.checkViewRefZoom.Title="可縮放的";
+frameViewReferential.IconAndOptionsFrame.OptionsFrame.checkViewRefZoom.LongHelp="定義視圖軸是否可像幾何元素般縮放.";
+frameViewReferential.IconAndOptionsFrame.OptionsFrame.labelViewAxisSize.Title="參改大小:";
+frameViewReferential.IconAndOptionsFrame.OptionsFrame.labelViewAxisSize.LongHelp="顯示軸系的參考大小.";
+frameViewReferential.IconAndOptionsFrame.OptionsFrame.spinnerViewAxisSize.LongHelp="顯示軸系的參考大小.";
+
+
+frameAreaFill.HeaderFrame.Global.Title="區域填滿";
+frameAreaFill.IconAndOptionsFrame.OptionsFrame.labelAreaFillTol.Title="開啟斷面容差";
+frameAreaFill.IconAndOptionsFrame.OptionsFrame.labelAreaFillTol.LongHelp="斷面填滿的開啟容差";
+frameAreaFill.IconAndOptionsFrame.OptionsFrame.spinnerAreaFillTol.Title="開啟斷面容差";
+frameAreaFill.IconAndOptionsFrame.OptionsFrame.spinnerAreaFillTol.LongHelp="斷面填滿的開啟容差";
+
+frmHideStartWkb.HeaderFrame.Global.Title="開啟工作檯";
+frmHideStartWkb.IconAndOptionsFrame.OptionsFrame.chkHideStartWkb.Title="開啟工作檯時隱藏對話框";
+frmHideStartWkb.IconAndOptionsFrame.OptionsFrame.chkHideStartWkb.LongHelp="開啟工作檯時隱藏對話框";
+
+frameRotation.HeaderFrame.Global.Title = "旋轉";
+frameRotation.HeaderFrame.Global.LongHelp=
+"旋轉
+定義當使用選擇-旋轉命令時
+旋轉元素時將定義參數計入.";
+frameRotation.IconAndOptionsFrame.OptionsFrame.checkRotSnapAuto.Title="自動鎖定";
+frameRotation.IconAndOptionsFrame.OptionsFrame.labelRotSnapAngle.Title="旋轉鎖定角度: ";
+frameRotation.IconAndOptionsFrame.OptionsFrame.labelRotSnapAngle.LongHelp="旋轉鎖定角度
+定義當使用選擇-旋轉命令時
+所使用的鎖定數值.";
+

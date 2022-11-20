@@ -1,0 +1,17 @@
+CATPenCreateCutoutCmd.SelectSurface.Message  = "選擇要置放貼圖的曲面邊";
+
+NoSelection                              = "未選擇";
+ErrTooFewHighLightedObjects              = "Could not get two or more clashing objects in the Penetration. \nCheck your Penetration data.";
+ErrCannotSetCatalogPath                  = "Could not set catalog path.  Please check Tools -> Options -> Equipment & Systems -> Design Criteria.  \nCatalog = ";
+ErrNoCATIPenPenetrationObject            = "Penetrating object does not adhere to CATIPenPenetrationObject  ... unable to use clearance rules.";
+ErrCouldNotDetermineShape                = "Could not determine shape of penetrating object ... unable to use clearance rules.";
+ErrCouldNotDetermineCutoutShape          = "Could not determine cutout shape.  \nCheck Project Management File for Resource Name= /p1 ,Shape= /p2";
+ErrCouldNotGetOpeningsPath               = "Could not get the path for the openings catalog defined by the resource name = ";
+ErrCouldNotFindCutoutShape               = "Could not find cutout shape in Penetration Cutout Shape catalog.  \nCheck Project Management File for Resource Name= /p1 ,Shape= /p2";
+WrnCouldNotFindCutoutRule                = "No penetration cutout rule for the objects of the penetration. \nCheck the rules in Project Management File for Resource Name= /p1 \nfor objects /p2.";
+ErrCouldNotFindStructureObject           = "Unable to use rules to determine clearance. \nCannot find a structure object with an attribute ";
+ErrCouldNotGetClearance                  = "Unable to use rules to determine clearance. Using 'Tightness' attribute, \ncould not match a row in clearance rule using PenetrationType = ";
+WrnNoClash                               = "No clashes detected.  Cutout cannot be created without any clashing objects.";
+WrnNoCutoutSelected                      = "No cutout part selected.  A cutout part must be selected from the openings catalog \nbefore it can be placed.";
+WrnCouldNotDeterminePenetrationObject    = "Could not determine penetrating object, will place cutout at the level of active product. \nOnly piping and HVAC elements are recognized";
+ErrCouldNotGetCutoutRulesCATProduct      = "Could not read the rules in the Penetration Cutout Rules file. \nCheck Project Management File for Resource Name= /p1";

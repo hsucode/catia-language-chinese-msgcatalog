@@ -1,0 +1,838 @@
+// === Connection Design
+
+//Generic Design Connection
+CATGPSCommandHeader.GPSHeaderGeneConnDesign.Title="一般分析連接";
+CATGPSCommandHeader.GPSHeaderGeneConnDesign.Help="建立新的一般分析連接";
+CATGPSCommandHeader.GPSHeaderGeneConnDesign.ShortHelp="一般分析連接";
+CATGPSCommandHeader.GPSHeaderGeneConnDesign.LongHelp="建立新的一般分析連接";
+
+//Point Design Connection
+CATGPSCommandHeader.GPSHeaderPointConnDesign.Title="點分析連接";
+CATGPSCommandHeader.GPSHeaderPointConnDesign.Help="建立點分析連接";
+CATGPSCommandHeader.GPSHeaderPointConnDesign.ShortHelp="點分析連接";
+CATGPSCommandHeader.GPSHeaderPointConnDesign.LongHelp="建立點分析連接";
+
+//Point Design Connection Within One Part
+CATGPSCommandHeader.GPSHeaderPointConnDesignWOP.Title="單一零件內的點分析連接";
+CATGPSCommandHeader.GPSHeaderPointConnDesignWOP.Help="建立單一零件內的點分析連接";
+CATGPSCommandHeader.GPSHeaderPointConnDesignWOP.ShortHelp="單一零件內的點分析連接";
+CATGPSCommandHeader.GPSHeaderPointConnDesignWOP.LongHelp="建立單一零件內的點分析連接";
+
+//Line Design Connection
+CATGPSCommandHeader.GPSHeaderLineConnDesign.Title="線分析連接";
+CATGPSCommandHeader.GPSHeaderLineConnDesign.Help="建立線分析連接";
+CATGPSCommandHeader.GPSHeaderLineConnDesign.ShortHelp="線分析連接";
+CATGPSCommandHeader.GPSHeaderLineConnDesign.LongHelp="建立線分析連接";
+
+//Line Design Connection Within One Part
+CATGPSCommandHeader.GPSHeaderLineConnDesignWOP.Title="單一零件內的線分析連接";
+CATGPSCommandHeader.GPSHeaderLineConnDesignWOP.Help="建立單一零件內的線分析連接";
+CATGPSCommandHeader.GPSHeaderLineConnDesignWOP.ShortHelp="單一零件內的線分析連接";
+CATGPSCommandHeader.GPSHeaderLineConnDesignWOP.LongHelp="建立單一零件內的線分析連接";
+
+
+//Surf Design Connection
+CATGPSCommandHeader.GPSHeaderSurfConnDesign.Title="曲面分析連接";
+CATGPSCommandHeader.GPSHeaderSurfConnDesign.Help="建立曲面分析連接";
+CATGPSCommandHeader.GPSHeaderSurfConnDesign.ShortHelp="曲面分析連接";
+CATGPSCommandHeader.GPSHeaderSurfConnDesign.LongHelp="建立曲面分析連接";
+
+//Surf Design Connection Within One Part
+CATGPSCommandHeader.GPSHeaderSurfConnDesignWOP.Title="單一零件內曲面分析連接";
+CATGPSCommandHeader.GPSHeaderSurfConnDesignWOP.Help="建立單一零件內曲面分析連接";
+CATGPSCommandHeader.GPSHeaderSurfConnDesignWOP.ShortHelp="單一零件內曲面分析連接";
+CATGPSCommandHeader.GPSHeaderSurfConnDesignWOP.LongHelp="建立單一零件內曲面分析連接";
+
+//Point Analysis Interface
+CATGPSCommandHeader.GPSHeaderPointHalfConnDesign.Title="點分析界面";
+CATGPSCommandHeader.GPSHeaderPointHalfConnDesign.Help="建立點分析界面";
+CATGPSCommandHeader.GPSHeaderPointHalfConnDesign.ShortHelp="點分析界面";
+CATGPSCommandHeader.GPSHeaderPointHalfConnDesign.LongHelp="建立點分析界面";
+
+//Points to points connection
+CATGPSCommandHeader.GPSHeaderPointPointConnDesign.Title="點至點分析連接";
+CATGPSCommandHeader.GPSHeaderPointPointConnDesign.Help="建立新的點至點分析連接";
+CATGPSCommandHeader.GPSHeaderPointPointConnDesign.ShortHelp="點至點分析連接";
+CATGPSCommandHeader.GPSHeaderPointPointConnDesign.LongHelp="建立新的點至點分析連接";
+// === Connection
+
+// SliderConnection
+CATGPSCommandHeader.GPSHeaderSliderConnection.Title="滑動連接";
+CATGPSCommandHeader.GPSHeaderSliderConnection.Help="建立新的滑動連接";
+CATGPSCommandHeader.GPSHeaderSliderConnection.ShortHelp="滑動連接";
+CATGPSCommandHeader.GPSHeaderSliderConnection.LongHelp="建立新的滑動連接";
+
+// ContactConnection
+CATGPSCommandHeader.GPSHeaderContactConnection.Title="接觸連接";
+CATGPSCommandHeader.GPSHeaderContactConnection.Help="建立新的接觸連接";
+CATGPSCommandHeader.GPSHeaderContactConnection.ShortHelp="接觸連接";
+CATGPSCommandHeader.GPSHeaderContactConnection.LongHelp="建立新的接觸連接";
+
+// FastenedConnection
+CATGPSCommandHeader.GPSHeaderFastenedConnection.Title="繫緊連接";
+CATGPSCommandHeader.GPSHeaderFastenedConnection.Help="建立新的繫緊連接";
+CATGPSCommandHeader.GPSHeaderFastenedConnection.ShortHelp="繫緊連接";
+CATGPSCommandHeader.GPSHeaderFastenedConnection.LongHelp="建立新的繫緊連接";
+
+// FastenedConnection
+CATGPSCommandHeader.GPSHeaderFastenedSpringConnection.Title="繫緊彈簧連接";
+CATGPSCommandHeader.GPSHeaderFastenedSpringConnection.Help="建立新的繫緊彈簧連接";
+CATGPSCommandHeader.GPSHeaderFastenedSpringConnection.ShortHelp="繫緊彈簧連接";
+CATGPSCommandHeader.GPSHeaderFastenedSpringConnection.LongHelp="建立新的繫緊彈簧連接";
+// RigidConnection
+CATGPSCommandHeader.GPSHeaderRigidConnection.Title="剛性連接";
+CATGPSCommandHeader.GPSHeaderRigidConnection.Help="建立新的剛性連接";
+CATGPSCommandHeader.GPSHeaderRigidConnection.ShortHelp="剛性連接";
+CATGPSCommandHeader.GPSHeaderRigidConnection.LongHelp="建立新的剛性連接";
+
+// SmoothConnection
+CATGPSCommandHeader.GPSHeaderSmoothConnection.Title="平順的連接";
+CATGPSCommandHeader.GPSHeaderSmoothConnection.Help="建立新的平順的連接";
+CATGPSCommandHeader.GPSHeaderSmoothConnection.ShortHelp="平順的連接";
+CATGPSCommandHeader.GPSHeaderSmoothConnection.LongHelp="建立新的平順的連接";
+
+// GenericDistantConnection
+CATGPSCommandHeader.GPSHeaderGenericDistant.Title="使用者自訂距離連接";
+CATGPSCommandHeader.GPSHeaderGenericDistant.Help="建立新的使用者自訂距離連接";
+CATGPSCommandHeader.GPSHeaderGenericDistant.ShortHelp="使用者自訂距離連接";
+CATGPSCommandHeader.GPSHeaderGenericDistant.LongHelp="建立新的使用者自訂距離連接";
+
+// PressureFitting
+CATGPSCommandHeader.GPSHeaderPressureFitting.Title="壓配連接";
+CATGPSCommandHeader.GPSHeaderPressureFitting.Help="建立新的壓配連接";
+CATGPSCommandHeader.GPSHeaderPressureFitting.ShortHelp="壓配連接";
+CATGPSCommandHeader.GPSHeaderPressureFitting.LongHelp="建立新的壓配連接";
+
+// BoltTightening
+CATGPSCommandHeader.GPSHeaderBoltTightening.Title="螺栓鎖緊連接";
+CATGPSCommandHeader.GPSHeaderBoltTightening.Help="建立新的螺栓鎖緊連接";
+CATGPSCommandHeader.GPSHeaderBoltTightening.ShortHelp="螺栓鎖緊連接";
+CATGPSCommandHeader.GPSHeaderBoltTightening.LongHelp="建立新的螺栓鎖緊連接";
+
+// VirtualBoltTightening
+CATGPSCommandHeader.GPSHeaderVirtBoltTightening.Title="虛擬螺栓鎖緊連接";
+CATGPSCommandHeader.GPSHeaderVirtBoltTightening.Help="建立新的虛擬螺栓鎖緊連接";
+CATGPSCommandHeader.GPSHeaderVirtBoltTightening.ShortHelp="虛擬螺栓鎖緊連接";
+CATGPSCommandHeader.GPSHeaderVirtBoltTightening.LongHelp="建立新的虛擬螺栓鎖緊連接";
+
+// VirtualSpringBoltTightening
+CATGPSCommandHeader.CATCagVirtSpringBoltTighHdr.Title="虛擬彈簧螺栓鎖緊連接";
+CATGPSCommandHeader.CATCagVirtSpringBoltTighHdr.Help="建立新的虛擬彈簧螺栓鎖緊連接";
+CATGPSCommandHeader.CATCagVirtSpringBoltTighHdr.ShortHelp="虛擬彈簧螺栓鎖緊連接";
+CATGPSCommandHeader.CATCagVirtSpringBoltTighHdr.LongHelp="建立新的虛擬彈簧螺栓鎖緊連接";
+
+// SpotWeldingConnection
+CATGPSCommandHeader.CATCagSpotWeldingConnectionHdr.Title="點焊連接";
+CATGPSCommandHeader.CATCagSpotWeldingConnectionHdr.Help="建立新的點焊連接";
+CATGPSCommandHeader.CATCagSpotWeldingConnectionHdr.ShortHelp="點焊連接";
+CATGPSCommandHeader.CATCagSpotWeldingConnectionHdr.LongHelp="建立新的點焊連接";
+
+// SeamWeldConnection
+CATGPSCommandHeader.GPSHeaderSeamWeld.Title="縫焊連接";
+CATGPSCommandHeader.GPSHeaderSeamWeld.Help="建立新的縫焊連接";
+CATGPSCommandHeader.GPSHeaderSeamWeld.ShortHelp="縫焊連接";
+CATGPSCommandHeader.GPSHeaderSeamWeld.LongHelp="建立新的縫焊連接";
+
+// SurfWeldConnection
+CATGPSCommandHeader.GPSHeaderSurfWeld.Title="曲面焊接連接性質";
+CATGPSCommandHeader.GPSHeaderSurfWeld.Help="建立新的曲面焊接連接性質";
+CATGPSCommandHeader.GPSHeaderSurfWeld.ShortHelp="曲面焊接連接性質";
+CATGPSCommandHeader.GPSHeaderSurfWeld.LongHelp="建立新的曲面焊接連接性質";
+
+// GPSHeaderPointPointProp
+CATGPSCommandHeader.GPSHeaderPointPointProp.Title="節點至節點連接性質";
+CATGPSCommandHeader.GPSHeaderPointPointProp.Help="建立新的節點至節點連接性質";
+CATGPSCommandHeader.GPSHeaderPointPointProp.ShortHelp="節點至節點連接性質";
+CATGPSCommandHeader.GPSHeaderPointPointProp.LongHelp="建立新的節點至節點連接性質";
+
+// GPSHeaderHalfPointProp
+CATGPSCommandHeader.GPSHeaderHalfPointProp.Title="節點界面性質";
+CATGPSCommandHeader.GPSHeaderHalfPointProp.Help="建立新的節點界面性質";
+CATGPSCommandHeader.GPSHeaderHalfPointProp.ShortHelp="節點界面性質";
+CATGPSCommandHeader.GPSHeaderHalfPointProp.LongHelp="建立新的節點界面性質";
+
+// GenericWeldConnection
+//CATGPSCommandHeader.GPSHeaderGenericWeld.Title="自訂焊接連接";
+//CATGPSCommandHeader.GPSHeaderGenericWeld.Help="建立新的自訂焊接連接";
+//CATGPSCommandHeader.GPSHeaderGenericWeld.ShortHelp="自訂焊接連接";
+//CATGPSCommandHeader.GPSHeaderGenericWeld.LongHelp="建立新的自訂焊接連接";
+
+// VirPartSmooth
+CATGPSCommandHeader.GPSHeaderVirPartSmooth.Title="平順的虛擬元件";
+CATGPSCommandHeader.GPSHeaderVirPartSmooth.Help="建立新的平順的虛擬元件";
+CATGPSCommandHeader.GPSHeaderVirPartSmooth.ShortHelp="平順的虛擬元件";
+CATGPSCommandHeader.GPSHeaderVirPartSmooth.LongHelp="建立新的平順的虛擬元件";
+
+// VirPartContact
+CATGPSCommandHeader.GPSHeaderVirPartContact.Title="接觸的虛擬元件";
+CATGPSCommandHeader.GPSHeaderVirPartContact.Help="建立新的接觸的虛擬元件";
+CATGPSCommandHeader.GPSHeaderVirPartContact.ShortHelp="接觸的虛擬元件";
+CATGPSCommandHeader.GPSHeaderVirPartContact.LongHelp="建立新的接觸的虛擬元件";
+
+// VirPartRigid
+CATGPSCommandHeader.GPSHeaderVirPartRigid.Title="剛性虛擬元件";
+CATGPSCommandHeader.GPSHeaderVirPartRigid.Help="建立新的剛性虛擬元件";
+CATGPSCommandHeader.GPSHeaderVirPartRigid.ShortHelp="剛性虛擬元件";
+CATGPSCommandHeader.GPSHeaderVirPartRigid.LongHelp="建立新的剛性虛擬元件";
+
+// VirPartSpring
+CATGPSCommandHeader.GPSHeaderVirPartSpring.Title="剛性彈簧虛擬元件";
+CATGPSCommandHeader.GPSHeaderVirPartSpring.Help="建立新的剛性彈簧虛擬元件";
+CATGPSCommandHeader.GPSHeaderVirPartSpring.ShortHelp="剛性彈簧虛擬元件";
+CATGPSCommandHeader.GPSHeaderVirPartSpring.LongHelp="建立新的剛性彈簧虛擬元件";
+
+// VirPartSmoSpri
+CATGPSCommandHeader.GPSHeaderVirPartSmoSpri.Title="平順彈簧虛擬元件";
+CATGPSCommandHeader.GPSHeaderVirPartSmoSpri.Help="建立新的平順彈簧虛擬元件";
+CATGPSCommandHeader.GPSHeaderVirPartSmoSpri.ShortHelp="平順彈簧虛擬元件";
+CATGPSCommandHeader.GPSHeaderVirPartSmoSpri.LongHelp="建立新的平順彈簧虛擬元件";
+
+// SAMPeriodicConnection
+CATGPSCommandHeader.GPSHeaderPeriodic.Title="週期性情形";
+CATGPSCommandHeader.GPSHeaderPeriodic.Help="建立新的週期性情形";
+CATGPSCommandHeader.GPSHeaderPeriodic.ShortHelp="週期性情形";
+CATGPSCommandHeader.GPSHeaderPeriodic.LongHelp="建立新的週期性情形";
+
+// SAMVertexGroup
+CATGPSCommandHeader.GPSHeaderVertexGroup.Title="點群組";
+CATGPSCommandHeader.GPSHeaderVertexGroup.Help="建立新的點群組";
+CATGPSCommandHeader.GPSHeaderVertexGroup.ShortHelp="點群組";
+CATGPSCommandHeader.GPSHeaderVertexGroup.LongHelp="建立新的點群組";
+
+// SAMEdgeGroup
+CATGPSCommandHeader.GPSHeaderEdgeGroup.Title="線群組";
+CATGPSCommandHeader.GPSHeaderEdgeGroup.Help="建立新的線群組";
+CATGPSCommandHeader.GPSHeaderEdgeGroup.ShortHelp="線群組";
+CATGPSCommandHeader.GPSHeaderEdgeGroup.LongHelp="建立新的線群組";
+
+// SAMSurfaceGroup
+CATGPSCommandHeader.GPSHeaderSurfaceGroup.Title="曲面群組";
+CATGPSCommandHeader.GPSHeaderSurfaceGroup.Help="建立新的曲面群組";
+CATGPSCommandHeader.GPSHeaderSurfaceGroup.ShortHelp="曲面群組";
+CATGPSCommandHeader.GPSHeaderSurfaceGroup.LongHelp="建立新的曲面群組";
+
+// SAMBodyGroup
+CATGPSCommandHeader.GPSHeaderBodyGroup.Title="本體群組";
+CATGPSCommandHeader.GPSHeaderBodyGroup.Help="建立新的本體群組";
+CATGPSCommandHeader.GPSHeaderBodyGroup.ShortHelp="本體群組";
+CATGPSCommandHeader.GPSHeaderBodyGroup.LongHelp="建立新的本體群組";
+
+// SAMBoxFEGroup
+CATGPSCommandHeader.GPSHeaderBoxGroup.Title="盒狀群組";
+CATGPSCommandHeader.GPSHeaderBoxGroup.Help="建立新盒狀群組";
+CATGPSCommandHeader.GPSHeaderBoxGroup.ShortHelp="盒狀群組";
+CATGPSCommandHeader.GPSHeaderBoxGroup.LongHelp="建立新盒狀群組.";
+
+// SAMSphereFEGroup
+CATGPSCommandHeader.GPSHeaderSphereGroup.Title="球形群組";
+CATGPSCommandHeader.GPSHeaderSphereGroup.Help="建立新球形群組";
+CATGPSCommandHeader.GPSHeaderSphereGroup.ShortHelp="球形群組";
+CATGPSCommandHeader.GPSHeaderSphereGroup.LongHelp="建立新球形群組.";
+
+// SAMVertexByProxi
+CATGPSCommandHeader.GPSHeaderVertexByProxi.Title="以鄰近的點群組";
+CATGPSCommandHeader.GPSHeaderVertexByProxi.Help="建立新的以鄰近的點群組";
+CATGPSCommandHeader.GPSHeaderVertexByProxi.ShortHelp="以鄰近的點群組";
+CATGPSCommandHeader.GPSHeaderVertexByProxi.LongHelp="建立新的以鄰近的點群組";
+
+// SAMLineByProxi
+CATGPSCommandHeader.GPSHeaderLineByProxi.Title="以鄰近的線群組";
+CATGPSCommandHeader.GPSHeaderLineByProxi.Help="建立新的以鄰近的線群組";
+CATGPSCommandHeader.GPSHeaderLineByProxi.ShortHelp="以鄰近的線群組";
+CATGPSCommandHeader.GPSHeaderLineByProxi.LongHelp="建立新的以鄰近的線群組";
+
+// SAMSurfaceByProxi
+CATGPSCommandHeader.GPSHeaderSurfByProxi.Title="以鄰近的曲面群組";
+CATGPSCommandHeader.GPSHeaderSurfByProxi.Help="建立新的以鄰近的曲面群組";
+CATGPSCommandHeader.GPSHeaderSurfByProxi.ShortHelp="以鄰近的曲面群組";
+CATGPSCommandHeader.GPSHeaderSurfByProxi.LongHelp="建立新的以鄰近的曲面群組";
+
+
+// SAMLineByProxi
+CATGPSCommandHeader.GPSHeaderLineBoundaryGroup.Title="以邊界的線群組";
+CATGPSCommandHeader.GPSHeaderLineBoundaryGroup.Help="建立新的以邊界的線群組";
+CATGPSCommandHeader.GPSHeaderLineBoundaryGroup.ShortHelp="以邊界的線群組";
+CATGPSCommandHeader.GPSHeaderLineBoundaryGroup.LongHelp="建立新的以邊界的線群組";
+
+// SAMSurfaceByProxi
+CATGPSCommandHeader.GPSHeaderSurfBoundaryGroup.Title="以邊界的曲面群組";
+CATGPSCommandHeader.GPSHeaderSurfBoundaryGroup.Help="建立新的以邊界的曲面群組";
+CATGPSCommandHeader.GPSHeaderSurfBoundaryGroup.ShortHelp="以邊界的曲面群組";
+CATGPSCommandHeader.GPSHeaderSurfBoundaryGroup.LongHelp="建立新的以邊界的曲面群組";
+
+// === Mesh Spec
+
+// LocalMeshSize
+CATGPSCommandHeader.GPSHeaderLocalMeshSize.Title="局部網格尺寸";
+CATGPSCommandHeader.GPSHeaderLocalMeshSize.Help="應用局部網格尺寸";
+CATGPSCommandHeader.GPSHeaderLocalMeshSize.ShortHelp="局部網格尺寸";
+CATGPSCommandHeader.GPSHeaderLocalMeshSize.LongHelp="應用局部網格尺寸在幾何上";
+
+// LocalMeshSag
+CATGPSCommandHeader.GPSHeaderLocalMeshSag.Title="局部網格弧差值 (Sag)";
+CATGPSCommandHeader.GPSHeaderLocalMeshSag.Help="應用局部網格弧差值 (Sag)";
+CATGPSCommandHeader.GPSHeaderLocalMeshSag.ShortHelp="局部網格弧差值 (Sag)";
+CATGPSCommandHeader.GPSHeaderLocalMeshSag.LongHelp="應用局部網格弧差值 (Sag)在幾何上";
+
+// ElementType
+CATGPSCommandHeader.GPSHeaderElementType.Title="元素形式";
+CATGPSCommandHeader.GPSHeaderElementType.Help="修改元素形式";
+CATGPSCommandHeader.GPSHeaderElementType.ShortHelp="元素形式";
+CATGPSCommandHeader.GPSHeaderElementType.LongHelp="修改 Octree 網格元素形式";
+
+// === Masse
+
+// LineicMass
+CATGPSCommandHeader.GPSHeaderLineicMass.Title="線質量密度";
+CATGPSCommandHeader.GPSHeaderLineicMass.Help="應用線質量密度";
+CATGPSCommandHeader.GPSHeaderLineicMass.ShortHelp="線質量密度";
+CATGPSCommandHeader.GPSHeaderLineicMass.LongHelp="應用線質量密度在線性幾何上";
+
+// SurfacicMass
+CATGPSCommandHeader.GPSHeaderSurfacicMass.Title="曲面質量密度";
+CATGPSCommandHeader.GPSHeaderSurfacicMass.Help="應用曲面質量密度";
+CATGPSCommandHeader.GPSHeaderSurfacicMass.ShortHelp="曲面質量密度";
+CATGPSCommandHeader.GPSHeaderSurfacicMass.LongHelp="應用曲面質量密度在曲面幾何上";
+
+// InertiaMass
+CATGPSCommandHeader.GPSHeaderInertiaMass.Title="分配重量和慣性";
+CATGPSCommandHeader.GPSHeaderInertiaMass.Help="在所選依附上分配重量和慣性";
+CATGPSCommandHeader.GPSHeaderInertiaMass.ShortHelp="分配重量和慣性";
+CATGPSCommandHeader.GPSHeaderInertiaMass.LongHelp="在所選依附上分配重量和慣性";
+
+// DistributedMass
+CATGPSCommandHeader.GPSHeaderDistributedMass.Title="分配重量";
+CATGPSCommandHeader.GPSHeaderDistributedMass.Help="應用分配重量";
+CATGPSCommandHeader.GPSHeaderDistributedMass.ShortHelp="分配重量";
+CATGPSCommandHeader.GPSHeaderDistributedMass.LongHelp="在幾何上應用分配重量";
+
+// CombineMass
+CATGPSCommandHeader.GPSHeaderCombineMass.Title="組合重量";
+CATGPSCommandHeader.GPSHeaderCombineMass.Help="建立組合重量";
+CATGPSCommandHeader.GPSHeaderCombineMass.ShortHelp="組合重量";
+CATGPSCommandHeader.GPSHeaderCombineMass.LongHelp="建立定義在目前模型上的組合重量.";
+
+// CombineLoad
+CATGPSCommandHeader.GPSHeaderCombineLoad.Title="組合負載";
+CATGPSCommandHeader.GPSHeaderCombineLoad.Help="建立組合負載";
+CATGPSCommandHeader.GPSHeaderCombineLoad.ShortHelp="組合負載";
+CATGPSCommandHeader.GPSHeaderCombineLoad.LongHelp="建立定義在目前模型上的組合負載";
+
+// Model Checker
+CATGPSCommandHeader.CATGPSModelCheckHdr.Title="檢查";
+CATGPSCommandHeader.CATGPSModelCheckHdr.Help="檢查模型";
+CATGPSCommandHeader.CATGPSModelCheckHdr.ShortHelp="檢查模型";
+CATGPSCommandHeader.CATGPSModelCheckHdr.LongHelp="請檢查目前模型的同質性";
+
+// Masses set
+CATGPSCommandHeader.GPSHeaderCmdCreateMassSet.Title="重量";
+CATGPSCommandHeader.GPSHeaderCmdCreateMassSet.Help="建立新的重量組";
+CATGPSCommandHeader.GPSHeaderCmdCreateMassSet.ShortHelp="重量組";
+CATGPSCommandHeader.GPSHeaderCmdCreateMassSet.LongHelp="在目前組合內建立新的重量組";
+
+// Properties 3D
+CATGPSCommandHeader.CATGPSProp3DHdr.Title="3D 性質";
+CATGPSCommandHeader.CATGPSProp3DHdr.Help="建立新的3D 性質";
+CATGPSCommandHeader.CATGPSProp3DHdr.ShortHelp="3D 性質";
+CATGPSCommandHeader.CATGPSProp3DHdr.LongHelp="為所選 3D 本體建立新的性質";
+
+// Properties 2D
+CATGPSCommandHeader.CATGPSProp2DHdr.Title=" 2D 性質";
+CATGPSCommandHeader.CATGPSProp2DHdr.Help="建立新的2D 性質";
+CATGPSCommandHeader.CATGPSProp2DHdr.ShortHelp="2D 性質";
+CATGPSCommandHeader.CATGPSProp2DHdr.LongHelp="為所選 2D 本體建立新的性質";
+
+// Mapping
+CATGPSCommandHeader.CATGPSMappedPropertyHdr.Title="對應性質";
+CATGPSCommandHeader.CATGPSMappedPropertyHdr.Help="建立新的對應性質";
+CATGPSCommandHeader.CATGPSMappedPropertyHdr.ShortHelp="對應性質";
+CATGPSCommandHeader.CATGPSMappedPropertyHdr.LongHelp="為所選零件建立新的對應性質";
+
+// Property Composite
+CATGPSCommandHeader.CATGPSDesCompositeHdr.Title="輸入組合性質";
+CATGPSCommandHeader.CATGPSDesCompositeHdr.Help="建立新的輸入組合性質";
+CATGPSCommandHeader.CATGPSDesCompositeHdr.ShortHelp="輸入組合性質";
+CATGPSCommandHeader.CATGPSDesCompositeHdr.LongHelp="為所選的 2D 或 3D 性質建立新的輸入組合性質. \n 如選擇 3D 本體, 相關的網格零件應該是 2D 網格零件.";
+
+// Property 2D Local
+CATGPSCommandHeader.GPSHeaderShellLocal.Title="建立新的局部 2D 性質";
+CATGPSCommandHeader.GPSHeaderShellLocal.Help="建立新的局部 2D 性質";
+//CATGPSCommandHeader.GPSHeaderShellLocal.ShortHelp="局部 2D 性質";
+//CATGPSCommandHeader.GPSHeaderShellLocal.LongHelp="建立新的局部 2D 性質";
+
+// Properties 1D
+CATGPSCommandHeader.CATGPSProp1DHdr.Title="1D 性質 ";
+CATGPSCommandHeader.CATGPSProp1DHdr.Help="建立新的 1D 性質 ";
+CATGPSCommandHeader.CATGPSProp1DHdr.ShortHelp="1D 性質 ";
+CATGPSCommandHeader.CATGPSProp1DHdr.LongHelp="為所選的 1D 本體建立新的樑性質 ";
+
+// Imported Properties 1D
+CATGPSCommandHeader.CATGPSImpProp1DHdr.Title="輸入的樑性質 ";
+CATGPSCommandHeader.CATGPSImpProp1DHdr.Help="建立新的輸入樑性質 ";
+CATGPSCommandHeader.CATGPSImpProp1DHdr.ShortHelp="輸入的樑性質";
+CATGPSCommandHeader.CATGPSImpProp1DHdr.LongHelp="建立新的輸入樑性質.";
+
+// Property 1D Local
+CATGPSCommandHeader.GPSHeaderBeamLocal.Title="建立新的局部 1D 性質 ";
+CATGPSCommandHeader.GPSHeaderBeamLocal.Help="建立新的局部 1D 性質 ";
+//CATGPSCommandHeader.GPSHeaderBeamLocal.ShortHelp="局部 1D 性質 ";
+//CATGPSCommandHeader.GPSHeaderBeamLocal.LongHelp="建立新的局部 1D 性質 ";
+
+// Material with no sup
+CATGPSCommandHeader.GPSHeaderMaterialWithNoSupport.Title="等向材料";
+CATGPSCommandHeader.GPSHeaderMaterialWithNoSupport.Help="建立新的等向材料";
+CATGPSCommandHeader.GPSHeaderMaterialWithNoSupport.ShortHelp="等向材料";
+CATGPSCommandHeader.GPSHeaderMaterialWithNoSupport.LongHelp="建立新的等向材料";
+CATGPSCommandHeader.GPSHeaderMaterialWithNoSupport2.Title="使用者材料";
+CATGPSCommandHeader.GPSHeaderMaterialWithNoSupport2.Help="建立新的使用者材料";
+CATGPSCommandHeader.GPSHeaderMaterialWithNoSupport2.ShortHelp="使用者材料";
+CATGPSCommandHeader.GPSHeaderMaterialWithNoSupport2.LongHelp="建立新的使用者材料";
+
+// === Restraints
+
+// Clamp
+CATGPSCommandHeader.GPSHeaderClamp.Title="夾持";
+CATGPSCommandHeader.GPSHeaderClamp.Help="應用夾持";
+CATGPSCommandHeader.GPSHeaderClamp.ShortHelp="夾持";
+CATGPSCommandHeader.GPSHeaderClamp.LongHelp="應用夾持在幾何上";
+
+// BallJoin
+CATGPSCommandHeader.GPSHeaderBallJoin.Title="球形接頭";
+CATGPSCommandHeader.GPSHeaderBallJoin.Help="應用球形接頭";
+CATGPSCommandHeader.GPSHeaderBallJoin.ShortHelp="球形接頭";
+CATGPSCommandHeader.GPSHeaderBallJoin.LongHelp="應用球形接頭在幾何上";
+
+// Pivot
+CATGPSCommandHeader.GPSHeaderPivot.Title="旋轉點";
+CATGPSCommandHeader.GPSHeaderPivot.Help="應用旋轉點";
+CATGPSCommandHeader.GPSHeaderPivot.ShortHelp="旋轉點";
+CATGPSCommandHeader.GPSHeaderPivot.LongHelp="應用旋轉點在幾何上";
+
+// Slider
+CATGPSCommandHeader.GPSHeaderSlider.Title="滑動面";
+CATGPSCommandHeader.GPSHeaderSlider.Help="應用滑動面";
+CATGPSCommandHeader.GPSHeaderSlider.ShortHelp="滑動面";
+CATGPSCommandHeader.GPSHeaderSlider.LongHelp="應用滑動面在幾何上";
+
+// SlidingPivot
+CATGPSCommandHeader.GPSHeaderSlidingPivot.Title="滑動旋轉點";
+CATGPSCommandHeader.GPSHeaderSlidingPivot.Help="應用滑動旋轉點";
+CATGPSCommandHeader.GPSHeaderSlidingPivot.ShortHelp="滑動旋轉點";
+CATGPSCommandHeader.GPSHeaderSlidingPivot.LongHelp="應用滑動旋轉點在幾何上";
+
+// PlanPlan
+CATGPSCommandHeader.GPSHeaderPlanPlan.Title="滑動曲面";
+CATGPSCommandHeader.GPSHeaderPlanPlan.Help="應用滑動曲面";
+CATGPSCommandHeader.GPSHeaderPlanPlan.ShortHelp="滑動曲面";
+CATGPSCommandHeader.GPSHeaderPlanPlan.LongHelp="應用滑動曲面在幾何上";
+
+// Restraint
+CATGPSCommandHeader.GPSHeaderRestraint.Title="使用者定義限制";
+CATGPSCommandHeader.GPSHeaderRestraint.Help="建立新的使用者定義限制";
+CATGPSCommandHeader.GPSHeaderRestraint.ShortHelp="使用者定義限制";
+CATGPSCommandHeader.GPSHeaderRestraint.LongHelp="在幾何元素上建立新的使用者定義限制";
+
+// Isostatic
+CATGPSCommandHeader.GPSHeaderIsostatic.Title="均勻的約束條件";
+CATGPSCommandHeader.GPSHeaderIsostatic.Help="應用均勻的約束條件";
+CATGPSCommandHeader.GPSHeaderIsostatic.ShortHelp="均勻的約束條件";
+CATGPSCommandHeader.GPSHeaderIsostatic.LongHelp="應用均勻的約束條件模型上";
+
+// Restraint set
+CATGPSCommandHeader.GPSHeaderCmdCreateRestraintSet.Title="限制";
+CATGPSCommandHeader.GPSHeaderCmdCreateRestraintSet.Help="建立新的限制條件";
+CATGPSCommandHeader.GPSHeaderCmdCreateRestraintSet.ShortHelp="限制條件";
+CATGPSCommandHeader.GPSHeaderCmdCreateRestraintSet.LongHelp="在目前組合上建立新的限制條件";
+
+// === Loads 
+
+// Pressure
+CATGPSCommandHeader.GPSHeaderPressure.Title="壓力";
+CATGPSCommandHeader.GPSHeaderPressure.Help="應用壓力";
+CATGPSCommandHeader.GPSHeaderPressure.ShortHelp="壓力";
+CATGPSCommandHeader.GPSHeaderPressure.LongHelp="應用壓力在幾何上";
+
+// DistributedForce
+CATGPSCommandHeader.GPSHeaderDistributedForce.Title="均佈力";
+CATGPSCommandHeader.GPSHeaderDistributedForce.Help="應用均佈力";
+CATGPSCommandHeader.GPSHeaderDistributedForce.ShortHelp=" 均佈力";
+CATGPSCommandHeader.GPSHeaderDistributedForce.LongHelp="應用均佈力";
+
+// Moment
+CATGPSCommandHeader.GPSHeaderMoment.Title="力距";
+CATGPSCommandHeader.GPSHeaderMoment.Help="應用力距";
+CATGPSCommandHeader.GPSHeaderMoment.ShortHelp="力距";
+CATGPSCommandHeader.GPSHeaderMoment.LongHelp="應用力距在幾何上";
+
+// Bearing Load
+CATGPSCommandHeader.GPSHeaderBearingLoad.Title="軸承負荷";
+CATGPSCommandHeader.GPSHeaderBearingLoad.Help="應用軸承負荷";
+CATGPSCommandHeader.GPSHeaderBearingLoad.ShortHelp="軸承負荷";
+CATGPSCommandHeader.GPSHeaderBearingLoad.LongHelp="在幾何上應用軸承負荷";
+
+// Acceleration
+CATGPSCommandHeader.GPSHeaderAcceleration.Title="加速度";
+CATGPSCommandHeader.GPSHeaderAcceleration.Help="應用加速度";
+CATGPSCommandHeader.GPSHeaderAcceleration.ShortHelp="加速度";
+CATGPSCommandHeader.GPSHeaderAcceleration.LongHelp="應用加速度在幾何上";
+
+// Rotation Force
+CATGPSCommandHeader.GPSHeaderRotation.Title="旋轉";
+CATGPSCommandHeader.GPSHeaderRotation.Help="應用旋轉";
+CATGPSCommandHeader.GPSHeaderRotation.ShortHelp="旋轉";
+CATGPSCommandHeader.GPSHeaderRotation.LongHelp="應用旋轉在幾何上";
+
+// LineicForce
+CATGPSCommandHeader.GPSHeaderLineicForce.Title="線應力密度";
+CATGPSCommandHeader.GPSHeaderLineicForce.Help="應用線應力密度";
+CATGPSCommandHeader.GPSHeaderLineicForce.ShortHelp="線應力密度";
+CATGPSCommandHeader.GPSHeaderLineicForce.LongHelp="應用線應力密度在幾何上";
+
+// SurfacicForce
+CATGPSCommandHeader.GPSHeaderSurfacicForce.Title="曲面應力密度";
+CATGPSCommandHeader.GPSHeaderSurfacicForce.Help="應用曲面應力密度";
+CATGPSCommandHeader.GPSHeaderSurfacicForce.ShortHelp="曲面應力密度";
+CATGPSCommandHeader.GPSHeaderSurfacicForce.LongHelp="應用曲面應力密度在幾何上";
+
+// BodyForce
+CATGPSCommandHeader.GPSHeaderBodyForce.Title="本體力量";
+CATGPSCommandHeader.GPSHeaderBodyForce.Help="應用本體力量";
+CATGPSCommandHeader.GPSHeaderBodyForce.ShortHelp="本體力量";
+CATGPSCommandHeader.GPSHeaderBodyForce.LongHelp="在幾何上應用本體力量";
+
+// ForceDensity
+CATGPSCommandHeader.GPSHeaderForceDensity.Title="力密度";
+CATGPSCommandHeader.GPSHeaderForceDensity.Help="以力向量建立新的力密度";
+CATGPSCommandHeader.GPSHeaderForceDensity.ShortHelp="力密度";
+CATGPSCommandHeader.GPSHeaderForceDensity.LongHelp="以力向量建立新的力密度";
+
+// Enforced Displacement
+CATGPSCommandHeader.GPSHeaderEnforcedDisp.Title="強行置換";
+CATGPSCommandHeader.GPSHeaderEnforcedDisp.Help="結合強行置換";
+CATGPSCommandHeader.GPSHeaderEnforcedDisp.ShortHelp="強行置換";
+CATGPSCommandHeader.GPSHeaderEnforcedDisp.LongHelp="結合強行置換到約束條件";
+
+// Temperature Field
+CATGPSCommandHeader.CATGPSTemperatureFieldHdr.Title="溫度欄位";
+CATGPSCommandHeader.CATGPSTemperatureFieldHdr.Help="應用溫度欄位";
+CATGPSCommandHeader.CATGPSTemperatureFieldHdr.ShortHelp="溫度欄位";
+CATGPSCommandHeader.CATGPSTemperatureFieldHdr.LongHelp="在本體上應用溫度欄位";
+
+// Temperature Field From Thermal Solution
+CATGPSCommandHeader.CATGPSTemperatureFieldFromThermalSolutionHdr.Title="由熱解法的溫度範圍";
+CATGPSCommandHeader.CATGPSTemperatureFieldFromThermalSolutionHdr.Help="由熱解法建立新的溫度範圍";
+CATGPSCommandHeader.CATGPSTemperatureFieldFromThermalSolutionHdr.ShortHelp="由熱解法的溫度範圍";
+CATGPSCommandHeader.CATGPSTemperatureFieldFromThermalSolutionHdr.LongHelp="本體上由熱解法建立新的溫度範圍";
+
+// Imported Force
+CATGPSCommandHeader.CATGPSImportedForceHdr.Title="輸入力量";
+CATGPSCommandHeader.CATGPSImportedForceHdr.Help="從檔案輸入力量";
+CATGPSCommandHeader.CATGPSImportedForceHdr.ShortHelp="輸入力量";
+CATGPSCommandHeader.CATGPSImportedForceHdr.LongHelp="在本體上應用輸入力量";
+
+// Imported Moment
+CATGPSCommandHeader.CATGPSImportedMomentHdr.Title="輸入力矩";
+CATGPSCommandHeader.CATGPSImportedMomentHdr.Help="從檔案輸入力矩";
+CATGPSCommandHeader.CATGPSImportedMomentHdr.ShortHelp="輸入力矩";
+CATGPSCommandHeader.CATGPSImportedMomentHdr.LongHelp="在本體上應用輸入力矩";
+
+// Load set
+CATGPSCommandHeader.GPSHeaderCmdCreateLoadSet.Title="負載";
+CATGPSCommandHeader.GPSHeaderCmdCreateLoadSet.Help="建立新的負載組";
+CATGPSCommandHeader.GPSHeaderCmdCreateLoadSet.ShortHelp="負載組";
+CATGPSCommandHeader.GPSHeaderCmdCreateLoadSet.LongHelp="在目前組合上建立新的負載組";
+
+// === Compute
+
+// Compute
+CATGPSCommandHeader.GPSHeaderCompute.Title="計算";
+CATGPSCommandHeader.GPSHeaderCompute.Help="網格和計算";
+CATGPSCommandHeader.GPSHeaderCompute.ShortHelp="計算";
+CATGPSCommandHeader.GPSHeaderCompute.LongHelp="網格, 計算和產生解答";
+
+// AdaptivityOnBox
+CATGPSCommandHeader.GPSHeaderAdaptivityOnBox.Title="轉接盒";
+CATGPSCommandHeader.GPSHeaderAdaptivityOnBox.Help="轉接盒";
+CATGPSCommandHeader.GPSHeaderAdaptivityOnBox.ShortHelp="轉接盒";
+CATGPSCommandHeader.GPSHeaderAdaptivityOnBox.LongHelp="建立新的轉接盒";
+
+CATGPSCommandHeader.GPSHeaderAdaptivityEntity.Title="適應本體";
+CATGPSCommandHeader.GPSHeaderAdaptivityEntity.Help="建立新的適應本體";
+CATGPSCommandHeader.GPSHeaderAdaptivityEntity.ShortHelp="新的適應本體";
+CATGPSCommandHeader.GPSHeaderAdaptivityEntity.LongHelp="建立新的適應本體";
+
+CATGPSCommandHeader.GPSHeaderAdaptLocal.Title="局部適應";
+CATGPSCommandHeader.GPSHeaderAdaptLocal.Help="建立局部適應特性";
+CATGPSCommandHeader.GPSHeaderAdaptLocal.ShortHelp="局部適應本體";
+CATGPSCommandHeader.GPSHeaderAdaptLocal.LongHelp="建立局部適應特性";
+
+// Adapt
+CATGPSCommandHeader.GPSHeaderAdapt.Title="計算適應";
+CATGPSCommandHeader.GPSHeaderAdapt.Help="計算適應程序納入系統";
+CATGPSCommandHeader.GPSHeaderAdapt.ShortHelp="計算適應";
+CATGPSCommandHeader.GPSHeaderAdapt.LongHelp="計算適應程序納入系統";
+
+CATGPSCommandHeader.GPSHeaderComputeAdapt.Title="計算適應";
+CATGPSCommandHeader.GPSHeaderComputeAdapt.Help="計算適應程序納入系統";
+CATGPSCommandHeader.GPSHeaderComputeAdapt.ShortHelp="計算適應";
+CATGPSCommandHeader.GPSHeaderComputeAdapt.LongHelp="計算適應程序納入系統";
+
+// GraphResult
+CATGPSCommandHeader.GPSHeaderGraphResult.Title="計算的歷程";
+CATGPSCommandHeader.GPSHeaderGraphResult.Help="展示結果圖表";
+CATGPSCommandHeader.GPSHeaderGraphResult.ShortHelp="計算的歷程";
+CATGPSCommandHeader.GPSHeaderGraphResult.LongHelp="展示結果圖表";
+
+// StaticCase
+CATGPSCommandHeader.GPSHeaderStaticCase.Title="靜力事件";
+CATGPSCommandHeader.GPSHeaderStaticCase.Help="建立新的靜力分析事件";
+//CATGPSCommandHeader.GPSHeaderStaticCase.ShortHelp="靜力事件";
+//CATGPSCommandHeader.GPSHeaderStaticCase.LongHelp="建立新的靜力分析事件";
+
+// FrequencyCase
+CATGPSCommandHeader.GPSHeaderFrequencyCase.Title="頻率事件";
+CATGPSCommandHeader.GPSHeaderFrequencyCase.Help="建立新的頻率分析事件";
+//CATGPSCommandHeader.GPSHeaderFrequencyCase.ShortHelp="頻率事件";
+//CATGPSCommandHeader.GPSHeaderFrequencyCase.LongHelp="建立新的頻率分析事件";
+
+// BucklingCase
+CATGPSCommandHeader.GPSHeaderBucklingCase.Title="挫曲事件";
+CATGPSCommandHeader.GPSHeaderBucklingCase.Help="建立新的挫曲分析事件";
+//CATGPSCommandHeader.GPSHeaderBucklingCase.ShortHelp="挫曲事件";
+//CATGPSCommandHeader.GPSHeaderBucklingCase.LongHelp="建立新的挫曲分析事件";
+
+// CombinedStaticCase
+CATGPSCommandHeader.GPSHeaderCombinedStaticCase.Title="混合事件";
+CATGPSCommandHeader.GPSHeaderCombinedStaticCase.Help="建立新的混合分析事件";
+//CATGPSCommandHeader.GPSHeaderCombinedStaticCase.ShortHelp="混合事件";
+//CATGPSCommandHeader.GPSHeaderCombinedStaticCase.LongHelp="建立新的混合分析事件";
+
+// StaticConstrainedModeCase
+CATGPSCommandHeader.GPSHeaderStaticConstrainedModeCase.Title="靜態拘束事件";
+CATGPSCommandHeader.GPSHeaderStaticConstrainedModeCase.Help="建立新的靜態拘束事件, 執行 Craig-Bampton 方式的第一步驟";
+
+// Dynamic Response Case
+//CATGPSCommandHeader.CATDynRespCaseHeader.Title="動態回應事件";
+//CATGPSCommandHeader.CATDynRespCaseHeader.Help="建立新的動態回應事件";
+//CATGPSCommandHeader.CATDynRespCaseHeader.ShortHelp="動態回應事件";
+//CATGPSCommandHeader.CATDynRespCaseHeader.LongHelp="建立新的動態回應事件";
+
+// PreprocessingCase
+CATGPSCommandHeader.GPSHeaderCreatePreprocessingCase.Title="預先處理事件";
+CATGPSCommandHeader.GPSHeaderCreatePreprocessingCase.Help="建立新的預先處理事件";
+CATGPSCommandHeader.GPSHeaderCreatePreprocessingCase.ShortHelp="預先處理事件";
+CATGPSCommandHeader.GPSHeaderCreatePreprocessingCase.LongHelp="建立新的預先處理事件";
+
+// SolutionCase
+CATGPSCommandHeader.GPSHeaderCreateSolutionCase.Title="解法事件";
+CATGPSCommandHeader.GPSHeaderCreateSolutionCase.Help="建立新的解法事件";
+CATGPSCommandHeader.GPSHeaderCreateSolutionCase.ShortHelp="解法事件";
+CATGPSCommandHeader.GPSHeaderCreateSolutionCase.LongHelp="建立新的解法事件";
+
+// === Tools
+
+// AnalysisUpdate
+//CATGPSCommandHeader.GPSHeaderAnalysisUpdate.Title="分析更新";
+//CATGPSCommandHeader.GPSHeaderAnalysisUpdate.Help="分析更新";
+//CATGPSCommandHeader.GPSHeaderAnalysisUpdate.ShortHelp="分析更新";
+//CATGPSCommandHeader.GPSHeaderAnalysisUpdate.LongHelp="分析更新";
+
+// ExternalStorage
+//CATGPSCommandHeader.GPSHeaderExternalStorage.Title="外部儲存";
+//CATGPSCommandHeader.GPSHeaderExternalStorage.Help="外部儲存";
+//CATGPSCommandHeader.GPSHeaderExternalStorage.ShortHelp="外部儲存";
+//CATGPSCommandHeader.GPSHeaderExternalStorage.LongHelp="定義外部儲存來分析計算";
+
+CATGPSCommandHeader.GPSHeaderExternalStorage.Title="外部儲存";
+CATGPSCommandHeader.GPSHeaderExternalStorage.Help="修改分析文件的外部儲存";
+CATGPSCommandHeader.GPSHeaderExternalStorage.ShortHelp="外部儲存";
+CATGPSCommandHeader.GPSHeaderExternalStorage.LongHelp="修改分析文件的外部儲存";
+
+// ElfiniListing
+//CATGPSCommandHeader.GPSHeaderElfiniListing.Title="清單";
+//CATGPSCommandHeader.GPSHeaderElfiniListing.Help="清單";
+//CATGPSCommandHeader.GPSHeaderElfiniListing.ShortHelp="清單";
+//CATGPSCommandHeader.GPSHeaderElfiniListing.LongHelp="顯示解答者清單";
+//CATGPSCommandHeader.GPSHeaderElfiniListing.Title="Elfini 清單";
+//CATGPSCommandHeader.GPSHeaderElfiniListing.Help="修改 Elfini 檔案夾清單";
+//CATGPSCommandHeader.GPSHeaderElfiniListing.ShortHelp="Elfini 清單";
+//CATGPSCommandHeader.GPSHeaderElfiniListing.LongHelp="修改 Elfini 檔案夾清單";
+CATGPSCommandHeader.GPSHeaderElfiniListing.Title="Elfini 解法記錄";
+CATGPSCommandHeader.GPSHeaderElfiniListing.Help="修改 Elfini 解法記錄檔案夾";
+CATGPSCommandHeader.GPSHeaderElfiniListing.ShortHelp="Elfini 解法記錄";
+CATGPSCommandHeader.GPSHeaderElfiniListing.LongHelp="修改 Elfini 解法記錄檔案夾";
+
+// Scratch
+//CATGPSCommandHeader.GPSHeaderLocateScratch.Title="資料暫存目錄";
+//CATGPSCommandHeader.GPSHeaderLocateScratch.Help="資料暫存目錄";
+//CATGPSCommandHeader.GPSHeaderLocateScratch.ShortHelp="資料暫存目錄";
+//CATGPSCommandHeader.GPSHeaderLocateScratch.LongHelp="關閉資料暫存目錄";
+
+CATGPSCommandHeader.GPSHeaderLocateScratch.Title="暫存外部儲存";
+CATGPSCommandHeader.GPSHeaderLocateScratch.Help="修改分析文件的暫存外部儲存";
+CATGPSCommandHeader.GPSHeaderLocateScratch.ShortHelp="暫存外部儲存";
+CATGPSCommandHeader.GPSHeaderLocateScratch.LongHelp="修改分析文件的暫存外部儲存文件";
+
+// ClearSolverData (anciennement "Keep Results Only")
+//CATGPSCommandHeader.GPSHeaderClearSelectedSolution.Title = "清除儲存解法";
+//CATGPSCommandHeader.GPSHeaderClearSelectedSolution.Help = "清除所選的儲存解法";
+CATGPSCommandHeader.GPSHeaderClearSelectedSolution.Title = "清除暫存儲存解法";
+CATGPSCommandHeader.GPSHeaderClearSelectedSolution.Help = "清除暫存儲存解法";
+//CATGPSCommandHeader.GPSHeaderClearSelectedSolution.ShortHelp = "除所選的儲存解法";
+//CATGPSCommandHeader.GPSHeaderClearSelectedSolution.LongHelp = "除所選的儲存解法";
+
+//CATGPSCommandHeader.GPSHeaderClearAllSolutions.Title = "清除儲存";
+//CATGPSCommandHeader.GPSHeaderClearAllSolutions.Help = "清除所選的儲存解法";
+//CATGPSCommandHeader.GPSHeaderClearAllSolutions.ShortHelp = "清除儲存";
+//CATGPSCommandHeader.GPSHeaderClearAllSolutions.LongHelp = "清除所選的儲存解法";
+
+CATGPSCommandHeader.GPSHeaderClearAllSolutions.Title = "清除外部暫存";
+CATGPSCommandHeader.GPSHeaderClearAllSolutions.Help = "清除所有解法的外部暫存";
+CATGPSCommandHeader.GPSHeaderClearAllSolutions.ShortHelp = "清除外部暫存";
+CATGPSCommandHeader.GPSHeaderClearAllSolutions.LongHelp = "清除所有解法的外部暫存";
+
+
+// ==== Reactions
+// At restraints
+//CATGPSCommandHeader.GPSHeaderReaction.Title="張量反應";
+//CATGPSCommandHeader.GPSHeaderReaction.Help="張量反應";
+//CATGPSCommandHeader.GPSHeaderReaction.ShortHelp="張量反應";
+//CATGPSCommandHeader.GPSHeaderReaction.LongHelp="張量反應";
+
+// At connections
+//CATGPSCommandHeader.GPSHeaderConnectReaction.Title="反應張量";
+//CATGPSCommandHeader.GPSHeaderConnectReaction.Help="反應張量";
+//CATGPSCommandHeader.GPSHeaderConnectReaction.ShortHelp="反應張量";
+//CATGPSCommandHeader.GPSHeaderConnectReaction.LongHelp="反應張量";
+
+
+//CATGPSCommandHeader.GPSHeaderVariablePressure.Title="變化壓力";
+//CATGPSCommandHeader.GPSHeaderVariablePressure.Help="建立新的變化壓力";
+//CATGPSCommandHeader.GPSHeaderVariablePressure.ShortHelp="變化壓力";
+//CATGPSCommandHeader.GPSHeaderVariablePressure.LongHelp="在幾何上建立新的變化壓力";
+
+
+// === AnalysisBatch
+//CATGPSCommandHeader.CATCagAnalysisBatchHdr.Title="批次分析";
+//CATGPSCommandHeader.CATCagAnalysisBatchHdr.Help="批次分析";
+//CATGPSCommandHeader.CATCagAnalysisBatchHdr.ShortHelp="批次分析";
+//CATGPSCommandHeader.CATCagAnalysisBatchHdr.LongHelp="批次分析";
+
+// Header Proto Sensor
+//CATGPSCommandHeader.GPSHeaderNewSensor.Title="建立偵測器";
+//CATGPSCommandHeader.GPSHeaderNewSensor.Help="建立新的偵測器";
+//CATGPSCommandHeader.GPSHeaderNewSensor.ShortHelp="建立新的偵測器";
+//CATGPSCommandHeader.GPSHeaderNewSensor.LongHelp="建立新的偵測器";
+
+CATGPSCommandHeader.GPSHeaderNewGlobalSensor.Title="建立總體偵測器";
+CATGPSCommandHeader.GPSHeaderNewGlobalSensor.Help="建立總體偵測器";
+CATGPSCommandHeader.GPSHeaderNewGlobalSensor.ShortHelp="建立總體偵測器";
+CATGPSCommandHeader.GPSHeaderNewGlobalSensor.LongHelp="建立總體偵測器";
+
+CATGPSCommandHeader.GPSHeaderNewLocalSensor.Title="建立局部偵測器";
+CATGPSCommandHeader.GPSHeaderNewLocalSensor.Help="建立局部偵測器";
+CATGPSCommandHeader.GPSHeaderNewLocalSensor.ShortHelp="建立局部偵測器";
+CATGPSCommandHeader.GPSHeaderNewLocalSensor.LongHelp="建立局部偵測器";
+
+CATGPSCommandHeader.GPSHeaderLoadPreproSensor.Title="負載偵測器";
+CATGPSCommandHeader.GPSHeaderLoadPreproSensor.Help="建立負載偵測器";
+CATGPSCommandHeader.GPSHeaderLoadPreproSensor.ShortHelp="建立負載偵測器";
+CATGPSCommandHeader.GPSHeaderLoadPreproSensor.LongHelp="建立負載偵測器";
+
+CATGPSCommandHeader.GPSHeaderMassPreproSensor.Title="慣性偵測器";
+CATGPSCommandHeader.GPSHeaderMassPreproSensor.Help="建立慣性偵測器";
+CATGPSCommandHeader.GPSHeaderMassPreproSensor.ShortHelp="建立慣性偵測器";
+CATGPSCommandHeader.GPSHeaderMassPreproSensor.LongHelp="建立慣性偵測器";
+
+CATGPSCommandHeader.GPSHeaderMultiLoadPreproSensor.Title="多重負載偵測器";
+CATGPSCommandHeader.GPSHeaderMultiLoadPreproSensor.Help="建立多重負載偵測器";
+CATGPSCommandHeader.GPSHeaderMultiLoadPreproSensor.ShortHelp="建立多重負載偵測器";
+CATGPSCommandHeader.GPSHeaderMultiLoadPreproSensor.LongHelp="建立多重負載偵測器";
+
+CATGPSCommandHeader.GPSHeaderReactionSensor.Title="反應偵測器";
+CATGPSCommandHeader.GPSHeaderReactionSensor.Help="建立反應偵測器";
+CATGPSCommandHeader.GPSHeaderReactionSensor.ShortHelp="建立反應偵測器";
+CATGPSCommandHeader.GPSHeaderReactionSensor.LongHelp="建立反應偵測器";
+
+CATGPSCommandHeader.GPSHeaderReaction.Title="反應偵測器";
+CATGPSCommandHeader.GPSHeaderReaction.Help="建立反應偵測器";
+CATGPSCommandHeader.GPSHeaderReaction.ShortHelp="建立反應偵測器";
+CATGPSCommandHeader.GPSHeaderReaction.LongHelp="建立反應偵測器";
+
+CATGPSCommandHeader.GPSHeaderCreateSensorParam.Title="產生參數";
+CATGPSCommandHeader.GPSHeaderCreateSensorParam.Help="產生偵測器輸出成為知識庫參數";
+CATGPSCommandHeader.GPSHeaderCreateSensorParam.LongHelp="產生偵測器輸出成為知識庫參數";
+
+CATGPSCommandHeader.GPSNewFunctionDisplay.Title="產生 2D 顯示";
+CATGPSCommandHeader.GPSNewFunctionDisplay.Help="產生 2D 顯示";
+CATGPSCommandHeader.GPSNewFunctionDisplay.ShortHelp="產生 2D 顯示";
+CATGPSCommandHeader.GPSNewFunctionDisplay.LongHelp="產生 2D 顯示 \n 產生 2D 顯示.";
+
+CATGPSCommandHeader.GPSHeaderReactionSensorUpgrade.Title="更新偵測器";
+CATGPSCommandHeader.GPSHeaderReactionSensorUpgrade.Help="更新反應偵測器";
+CATGPSCommandHeader.GPSHeaderReactionSensorUpgrade.ShortHelp="更新偵測器";
+CATGPSCommandHeader.GPSHeaderReactionSensorUpgrade.LongHelp="更新反應偵測器";
+
+//materiau
+CATGPSCommandHeader.ApplyMaterialHdr.Title="分析連接上的材料";
+CATGPSCommandHeader.ApplyMaterialHdr.Help="應用材料在分析連接上";
+CATGPSCommandHeader.ApplyMaterialHdr.ShortHelp="材料在分析連接上";
+CATGPSCommandHeader.ApplyMaterialHdr.LongHelp="應用材料在分析連接上";
+
+//mesh
+CATGPSCommandHeader.GPSHeaderModify2DMPType.Title="更改型式";
+CATGPSCommandHeader.GPSHeaderModify2DMPType.Help="更改 2D 網格組型式";
+CATGPSCommandHeader.GPSHeaderModify2DMPType.ShortHelp="更改型式";
+CATGPSCommandHeader.GPSHeaderModify2DMPType.LongHelp="更改型式";
+
+CATGPSCommandHeader.GPSHeaderModify1DMPType.Title="更改型式";
+CATGPSCommandHeader.GPSHeaderModify1DMPType.Help="更改 2D 網格組型式";
+CATGPSCommandHeader.GPSHeaderModify1DMPType.ShortHelp="更改型式";
+CATGPSCommandHeader.GPSHeaderModify1DMPType.LongHelp="更改型式";
+
+
+// Mesurage
+
+CATGPSCommandHeader.GPSMeasureBetweenHdr.Title="之間量測";
+CATGPSCommandHeader.GPSMeasureBetweenHdr.Help="兩元素間量測";
+CATGPSCommandHeader.GPSMeasureBetweenHdr.ShortHelp="之間量測";
+CATGPSCommandHeader.GPSMeasureBetweenHdr.LongHelp="之間量測";
+
+CATGPSCommandHeader.GPSMeasureItemHdr.Title="量測項目";
+CATGPSCommandHeader.GPSMeasureItemHdr.Help="量測一個元素";
+CATGPSCommandHeader.GPSMeasureItemHdr.ShortHelp="量測項目";
+CATGPSCommandHeader.GPSMeasureItemHdr.LongHelp="量測項目";
+
+
+CATGPSCommandHeader.GPSHeaderGenMappingFile.Title="產生對應檔案";
+CATGPSCommandHeader.GPSHeaderGenMappingFile.Help="產生性質對應 xml 檔案";
+CATGPSCommandHeader.GPSHeaderGenMappingFile.ShortHelp="產生性質對應 xml 檔案";
+CATGPSCommandHeader.GPSHeaderGenMappingFile.LongHelp="產生性質對應 xml 檔案";
+
+// LoadAssembly
+CATGPSCommandHeader.GPSHeaderLoadAssembly.Title="組立負載";
+CATGPSCommandHeader.GPSHeaderLoadAssembly.Help="建立組立負載";
+CATGPSCommandHeader.GPSHeaderLoadAssembly.ShortHelp="組立負載";
+CATGPSCommandHeader.GPSHeaderLoadAssembly.LongHelp="建立定義在次分析的組立負載";
+
+CATGPSCommandHeader.GPSHeaderMassAssembly.Title="組立重量";
+CATGPSCommandHeader.GPSHeaderMassAssembly.Help="建立組立重量";
+CATGPSCommandHeader.GPSHeaderMassAssembly.ShortHelp="組立重量";
+CATGPSCommandHeader.GPSHeaderMassAssembly.LongHelp="建立定義在次分析的組立重量";
+
+// Import forces
+CATGPSCommandHeader.GPSHeaderCmdImportForces.Title="輸入力";
+CATGPSCommandHeader.GPSHeaderCmdImportForces.Help="由 CATAnalysisExport 檔案的輸入力";
+CATGPSCommandHeader.GPSHeaderCmdImportForces.ShortHelp="輸入力";
+CATGPSCommandHeader.GPSHeaderCmdImportForces.LongHelp="由 CATAnalysisExport 檔案的輸入力";
+
+// Import displacements
+//CATGPSCommandHeader.GPSHeaderCmdImportDisp.Title="輸入解法";
+//CATGPSCommandHeader.GPSHeaderCmdImportDisp.Help="由 CATAnalysisExport 檔案的輸入解法";
+//CATGPSCommandHeader.GPSHeaderCmdImportDisp.ShortHelp="輸入解法";
+//CATGPSCommandHeader.GPSHeaderCmdImportDisp.LongHelp="由 CATAnalysisExport 檔案的輸入解法";
+
+
+
+
+

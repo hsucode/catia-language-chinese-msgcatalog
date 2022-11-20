@@ -1,0 +1,32 @@
+// Dialog Component
+// Command Split
+
+//-------------------------------------------------------------------------------------------
+//State title
+//-------------------------------------------------------------------------------------------
+CATSddSplitCmd.State01.Split.Message="選擇要分割的物件";
+CATSddSplitCmd.State01.Merge.Message="選擇要溶合的物件";
+
+CATSddSplitCmd.State02.Split.Message="選擇分割物件";
+CATSddSplitCmd.State02.Merge.Message="選擇要溶合的物件";
+
+CATSddSplitCmd.State04.Message="等待關閉錯誤框";
+
+//-------------------------------------------------------------------------------------------
+//Error messages
+//-------------------------------------------------------------------------------------------
+SplitErrorFailed               ="無法分割物件.";
+MergeErrorFailed               ="無法溶合.\n 可能是物件不在一起, 或不是在同一依附";
+MergeErrorDissimilarObjects    ="溶合必須是相同型式物件.";
+MergeErrorDissimilarSection    ="溶合必須是相同切面的形狀.";
+MergeErrorDissimilarMaterial   ="溶合必須是相同材料物件.";
+MergeErrorDissimilarAnchorPt   ="溶合必須是相同定位點的形狀.";
+MergeErrorDissimilarOrientation="溶合必須是相同方位的形狀.";
+MergeErrorDissimilarFlip       ="溶合必須是相同翻轉的形狀.";
+MergeErrorDissimilarSupport    ="溶合必須是相同依附物件.";
+MergeErrorDissimilarThickness  ="溶合必須是相同厚度平板.";
+MergeErrorDissimilarOffset     ="溶合必須是相同偏移平板.";
+MergeErrorDissimilarDirection  ="溶合必須是相同方向平板.";
+MergeErrorNonAdjacent          ="溶合必須是鄰近物件.";
+RemovedFeaturesDlg             ="移除特徵";
+RemovedFeaturesTitle           ="要移除的特徵";

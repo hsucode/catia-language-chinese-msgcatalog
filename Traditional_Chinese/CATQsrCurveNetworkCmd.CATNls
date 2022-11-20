@@ -1,0 +1,43 @@
+CATQsrCurveNetworkCmd.InitialState.Message="選擇網格和依附網格的邊線和曲線";
+CATQsrCurveNetworkCmd.CstState.Message="在這些曲線中選取或取消選取新增或移除非變形限制的曲線";
+CATQsrCurveNetworkCmd.DelState.Message="確認刪除線或由選取自由邊線或自由邊線的兩邊線來選擇另一線";
+
+CurveNetwork="曲線網格";
+WarningNoIntersection="曲線網格資訊";
+WNoInter="這些曲線間沒有相交
+請考慮最大距離間隙參數.";
+WNoInterDistMin="這些曲線間沒有相交.
+最大距離參數可能是錯誤的.
+
+偵測到最大距離為 /P01 /P02";
+WarningNetworkNotComputed="建立曲線網格時發生的錯誤";
+WNetNotComputed="無法建立曲線網格";
+WNetPbMaille="建立線時發生錯誤";
+WNetPbNode="建立節點時發生錯誤";
+WarningNetworkNotAdjusted="曲線網格資訊";
+WNetNotAdjusted="曲線網格無法調整";
+WNetNotComputedTooSmall = "無法建立曲線網格:
+/P01 相對節點精度太小.
+使用最小長度來忽略小曲線或
+修改節點精度值或
+移除曲線.";
+WarningNetworkCst="曲線網格資訊";
+WNetCstConflict="偵測到限制間衝突";
+WarningNodeTolerance="參數資訊";
+WNodeTolerance="節點精度必須大於或等於最小距離參數";
+WarningMeshDelete="曲線網格資訊";
+WNetMeshDelete="您將建立封閉網格. 仍要繼續嗎 ?";
+WarningNetworkNotComputable="曲線網格資訊";
+WNetNotComputable="因限制間衝突, 導致無法計算曲線網格. 
+計算網格間必須先刪除衝突";
+WNetOverlap="因有兩個以曲線重疊, 導致無法計算網格曲面.";
+WNetBadEdge="因指定的點上, 有部份邊線的切線方向逆向, 導致無法計算網格曲面.";
+
+CrvCrvStat.Title = "曲線-曲線 變形 :";
+CrvPlgStat.Title = "曲線-多邊線 變形 :";
+CurvatStat.Title = "曲率 :";
+MaxDeviation.Title = "最大變異 = ";
+MeanDeviation.Title = "平均變異 = ";
+MaxCurvature.Title = "最大曲率 = ";
+MeanCurvature.Title = "平均曲率 = ";
+PercentStr.Title = " % 點 < " ;

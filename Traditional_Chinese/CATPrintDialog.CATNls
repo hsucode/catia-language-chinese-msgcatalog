@@ -1,0 +1,85 @@
+//-------------------------------------------------------------------------
+// Resource file for CATPrintDialog
+// fbq - Oct 97
+//-------------------------------------------------------------------------
+
+Title = "列印";
+TabContainer.Layout.Title = "佈置";
+TabContainer.Selection.Title = "多重文件";
+
+TabContainer.Layout.PositionAndSize.Title = "位置和大小";
+
+TabContainer.Layout.LongHelp = "指定頁面的方向
+及在圖面上的位置, 和圖面大小.
+及它的紙張格式.";
+
+TabContainer.Selection.LongHelp = "選擇要列印的圖像.";
+
+General.PrintArea.Title = "列印區域";
+General.PrintArea.LongHelp = "指定列印區域.
+'整份文件' 列印整份文件.
+'顯示' 列印螢幕上可見的圖像.
+'選擇' 列印以按鍵選取的區域
+如在繪圖文件中定義列印區域, 將啟動 文件區域 選項.
+ 文件區域 列印圖紙中列印區域.";
+ 
+General.PrintArea.Area.Title       = "選擇模式";
+General.PrintArea.Area.ShortHelp   = "選擇模式";
+General.PrintArea.Area.Help        = "在目前視圖中選擇區域";
+General.PrintArea.Area.LongHelp    = "在目前視圖中選擇區域";
+
+General.Tiling.Title = "分割圖";
+General.Tiling.ShortHelp = "允許列印圖像至數張圖紙選項.";
+General.Tiling.Help = "如選此選項, 圖像將被切割成數個圖紙印出.";
+General.Tiling.LongHelp = "如選此選項, 圖像將被切割成數個圖紙印出.";
+
+General.TilingDialog.Title = "定義... ";
+General.TilingDialog.ShortHelp = "設定分割選項, 如分割張數, 分割大小或分割位置.";
+General.TilingDialog.Help = "設定分割選項, 如分割張數, 分割大小或分割位置.";
+General.TilingDialog.LongHelp = "設定分割選項, 如分割張數, 分割大小或分割位置.";
+
+
+General.Buttons.PageSetup.Title = "頁面設定...";
+General.Buttons.PageSetup.LongHelp = "頁面設定.
+設定紙張格式及留邊.";
+
+General.Buttons.Options.Title = "選項...";
+General.Buttons.Options.LongHelp = "選項
+設定列印選項, 如是否彩色,
+灰階或單色, 增加說明, 或設定品質參數.";
+
+General.Buttons.Preview.Title = "預覽...";
+General.Buttons.Preview.LongHelp = "預覽.
+顯示目前選擇的預覽.";
+
+General.CopiesFrame.Copies.Title = "複製:";
+General.CopiesFrame.LongHelp = "指定要複製的數目.";
+
+CannotPrintToFile.Title = "列印至檔案";
+PreviewFrame.LongHelp ="
+顯示和修改圖像位置和大小.
+'原點使圖像和紙張左下角相合, 也就是 '左' 和'下'均設為 0.
+'中心' 使圖像和圖紙中心相合.";
+
+RangeFailed.PText = "無效列印範圍.";
+CannotPrintToFile.PText = "無法列印至檔案 /p1";
+PrintFailed.Title = "列印";
+PrintFailed.Text = "無法列印圖形檔.";
+NoPrinter.Title = "警告";
+NoPrinter.Text = "未定義印表機, 不允許列印. 請用 設定印表機 來新增印表機.";
+MarginsError.Title = "錯誤";
+MarginsError.Text1 = "留邊數值不可是負的.";
+MarginsError.Text2 = "水平邊超過寬度限制.";
+MarginsError.Text3 = "垂直邊超過高度限制.";
+
+FormSizeWarning.Title = "警告";
+FormSizeWarning.PText = "圖紙不可超過印表機限制 /p1.";
+
+UseImageFormatWarning.Title = "使用圖像格式警告";
+UseImageFormatWarning.PText = "因為改變印表機, 導致無法使用 \" 使用圖像格式 \" 選項.";
+
+PrintToOneFileWarning.Title = "警告";
+PrintToOneFileWarning.PText = "目前驅動程式不支援將數個圖像列印至單一檔案中.";
+
+
+

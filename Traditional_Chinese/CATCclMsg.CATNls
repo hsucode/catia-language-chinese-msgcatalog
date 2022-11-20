@@ -1,0 +1,63 @@
+//NLS-ENGLISH VERSION
+//=======================================================================
+// Resource file for Component Catalogs Model
+//=======================================================================
+SeveralDT.ErrorMessage="錯誤 : 零件只可含有一個設計表.";
+InternalError="內部錯誤";
+LoadPartDocument.ErrorMessage="載入文件 /p1 導致錯誤.";
+NamingConvention.ErrorMessage="參數名稱如 'xxx.1' 禁止使用. \n 更改在 /p2 中的參數名稱 /p1 .\n";
+DocumentType.ErrorMessage="/p1 不是零件文件.";
+InvalidCatalogDocument.ErrorMessage="/P1 不是目錄文件.";
+ChapterFactory.ErrorMessage="沒有章節因子.";
+DesignTableFound.ErrorMessage="未發現設計表.";
+DTWithoutPartNumber.ErrorMessage="未發現有零件號碼的設計表.";
+ChapterCreation.ErrorMessage="建立章節時發生錯誤.";
+PartNumberColumnInDTFound.ErrorMessage="錯誤 : 設計表必須有一行叫做 \" 零件號碼 \".";
+PartNumberColumnWrongType.ErrorMessage="設計表的 ' 零件號碼 ' 行必須是文字或整數形式.";
+KwdCreation.ErrorMessage="建立 /p2 形式的 /p1 關鍵字發生錯誤.";
+ColumnType.ErrorMessage="設計表的 /p1 形式行發生錯誤.";
+SheetDTFound.ErrorMessage="存取設計表的部份元素發生問題.";
+DocContainingDTFound.ErrorMessage="存取含有設計表的文件發生問題.";
+LinkWithDTCreation.ErrorMessage="建立設計表和章節的鏈結時發生問題.";
+SUMouleFound.ErrorMessage="目錄內部錯誤.";
+ObjectToCopy.ErrorMessage="未複製物件: 說明未鏈結至分件.\n";
+CopyAvailability.ErrorMessage="所選分件無法複製.\n";
+PasteAvailability.ErrorMessage="在所選目標無法貼上所選分件.\n";
+TargetSelection.ErrorMessage="起始分件時選擇錯誤的目標.\n";
+NoDocument.ErrorMessage="未起始文件: 說明未鏈結分件.\n";
+ReferenceLoaded.ErrorMessage="無法起始分件, 參考分件已在工作中. \n 請先關閉您的參考.";
+NotDynamicSolve1.ErrorMessage="無法起始分件, 目錄中未解析 \n 您未具修改目錄權限";
+NotDynamicSolve2.ErrorMessage="無法起始分件, 目錄中未解析 \n 您無法產生新的目錄";
+BadSyntax.ErrorMessage="語法錯誤 \n /P1 ";
+NewFromFailed.ErrorMessage="起始新的錯誤 \n /P1 ";
+InconsistentDescription = "說明不一致.";
+NoPointedObject = "說明 /p1\n 沒有指向物件.";
+PointedObjectNotHandled = "說明 /p1\n 無法處理指向物件.";
+UnableToPrepareNewDoc = "說明 /p1\n 無法準備新文件.";
+NoDTWithPartNumber = "說明 /p1\n 無法以 零件號碼 欄位尋找設計表.";
+PartNumberNotFoundInDT = "說明 /p1\n 無法在設計表中的 零件號碼 欄位尋找 \"/p2\" .";
+WrongStorageName = "說明 /p1\n 無法建立名稱為 \"/p2\" 的文件.";
+NbOfKeywordsKO = "偵測到不一致. 請清理目錄 (使用 CATDUAV5).";
+RemoveKeywordKO = "內部錯誤. 移除關鍵字失敗.";
+// Knowledge
+CATCatalogChapter.Type = "目錄章節";
+CatalogDocument = "標準";
+//Suffixe pour generer un nouveau nom de document lors de l'instantiation 
+NewPartSuffixe="新的";
+// Edit-Links integration
+Links.Component="分件";
+Links.File="檔案分件";
+Links.Feature="特徵分件";
+Links.Descr="說明分件";
+Links.Subchapter="次目錄";
+
+// Re-Synchronization
+ReSynchronization.EndOfReset.message="成功重設程序...";
+ReSynchronization.EndOfReset.title="資訊";
+ReSynchronization.EndOfResolve.message="成功解析程序...";
+ReSynchronization.EndOfResolve.title="資訊";
+
+// External link for external preview
+ExtPreviewExtLinkType = "預覽";
+
+

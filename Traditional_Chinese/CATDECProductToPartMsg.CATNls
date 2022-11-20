@@ -1,0 +1,65 @@
+Usage1 =  "用法: CATDECGenerateCATPart [InputPartOrProduct|-L PartsList] -o [OutputFile|OutputDirectory] [-h]";
+Usage10 =  "用法: CATDECGenerateCATParFromCATProduct [InputProduct|-L ProductList] -o OutputFile [-h -trace [TraceFile] -color -merge]";
+Usage2 =  " where:";
+Usage3 = " -L 檢查零件清單 (listed with the PartPath\\PartName.CATPart format).";
+Usage30 = " -L 檢查產品清單 (listed with the ProductPath\\ProductName.CATProduct format).";
+Usage4 = " -o 宣告輸出檔案 (a CATPart with full path).";
+Usage5 = " -trace 輸出結果的記錄檔案.";
+Usage6 = " 附加選項: ";
+Usage7 = " -prop  : 保留零件性質 (只適用輸入零件).";
+Usage8 = " -color : 在次元素保留顏色和屬性 (只適用輸入零件).";
+Usage80 = " -color : 在次元素保留顏色和屬性.";
+Usage9 = " -merge : 溶合每個 CATPart 本體成為一個 (只適用輸入產品).";
+Usage90 = " -merge : 溶合每個 CATPart 本體成為一個.";
+Usage10 = " ";
+Usage11 = " : ";
+
+Mess_1 = " 開始處理...:";
+Mess_2 = " - 零件: ";
+Mess_22 = " - 產品: ";
+Mess_3 = "    => 目的檔案 :";
+Mess_4 = " 結束處理. ";
+Mess_5 = "  ";
+
+Error_1 = "      -----> 開啟失敗 (檔案不存在): ";
+Error_2 = "  錯誤 輸入路徑無效";
+Error_3 = "  錯誤 目的地無效:";
+Error_4 = "  錯誤 轉換失敗:";
+Error_5 = "  錯誤 無效軌跡檔案路徑";
+Error_6 = "ODT 錯誤 code 45, 檔案文件無效 ";
+Error_7 = "  錯誤 無效輸入型式 ";
+Error_8 = "  錯誤 開啟失敗 (不存在或不是 CATIA 檔案) ";
+
+Usage1PrtPrt  = "用法: CATDECGenerateCATPartFromCATPArt [InputPart|-L PartsList] -o OutputFile [-h -trace [TraceFile] -prop -color -selectionset - layer -pub -annot]";
+Usage2PrtPrt  = " where:";
+Usage33PrtPrt = " -L 檢查零件清單 (listed with the PartPath\\PartName.CATPart format).";
+Usage3PrtPrt  = " -o            : 宣告輸出檔案 (a CATPart with full path).";
+Usage4PrtPrt  = " 附加選項: ";
+Usage5PrtPrt  = " -trace        : 輸出結果的記錄檔案.";
+Usage6PrtPrt  = " -prop         : 保留零件性質.";
+Usage7PrtPrt  = " -color        : 在次元素保留顏色和屬性.";
+Usage8PrtPrt  = " -selectionset : 保留選擇組.";
+Usage9PrtPrt  = " -layer        : 保留圖層和過濾器定義.";
+Usage10PrtPrt = " -pub          : 保留發行.";
+Usage11PrtPrt = " -annot        : 保留標註.";
+Usage12PrtPrt = " ";
+
+Usage1PrdPrd = "用法: CATDECGenerateCATProductFromCATProduct InputProductt -o OutputFile [-h -trace [TraceFile] -prop -color -selectionset - layer -pub -annot -suffix SuffixToAdd]";     
+Usage2PrdPrd = " where:";
+Usage34PrdPrd = " -L 檢查產品清單 (listed with the ProductPath\\ProducttName.CATProductt format).";
+Usage3PrdPrd = " -o            : 宣告輸出檔案 (a CATProduct with full path).";
+Usage4PrdPrd = " 附加選項: ";
+Usage5PrdPrd = " -trace        : 輸出結果的記錄檔案.";
+Usage6PrdPrd = " -prop         : 保留零件性質.";
+Usage7PrdPrd = " -color        : 在次元素保留顏色和屬性.";
+Usage8PrdPrd = " -selectionset : 保留選擇組.";
+Usage9PrdPrd = " -layer        : 保留圖層和過濾器定義.";
+Usage10PrdPrd= " -pub          : 保留發行.";
+Usage11PrdPrd= " -annot        : 保留標註.";
+Usage12PrdPrd= " -suffix       : 宣告附加在零件號碼和顯示名稱後的字尾.";
+Usage13PrtPrt="  ";
+Usage14PrtPrt="  -V4           : 保留 V4 模型.";
+Usage15PrtPrt="  -hideInstance : 產品架構下保留隱藏分件.";
+
+
+SupportPlane = "\ 依附平面" ;

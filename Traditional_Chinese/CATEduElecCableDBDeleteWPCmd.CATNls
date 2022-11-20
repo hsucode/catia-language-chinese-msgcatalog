@@ -1,0 +1,55 @@
+//=============================================================================
+//                                     CNEXT - CXR5
+//                          COPYRIGHT DASSAULT SYSTEMES 2004 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATEduElecCableDBDeleteWPCmd.CATNls
+// FRAMEWORK   :    CATEduUI
+// AUTHOR      :    ehh
+// DATE        :    September 2004
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Plant Ship Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//------------------------------------------------------------------------------
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// DialogEngine state prompts 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATEduElecCableDBDeleteWPCmd.SelectWPToDeleteState.Message = "Select work packages to delete from the electrical cable database";
+CATEduElecCableDBDeleteWPCmd.DisplayDeleteResultsState.Message = "Select CLOSE or View report";
+CATEduElecCableDBDeleteWPCmd.ViewReportState.Message = "Select CLOSE or Save As when finished viewing report";
+CATEduElecCableDBDeleteWPCmd.SaveReportState.Message = "Select directory to save report to";
+
+NoDeleteableWPText="No deleteable work packages were found.
+(Electrical cable database work packages must be found under the current VPM Navigator 
+specification tree and be exported to the database to be considered deleteable).";
+CommandTitle="Electrical Cable Database Delete Work Package"; 
+NoWpSelectedText="Please select one or more work packages to delete";
+SimpleOKToDeleteText="OK to delete work packages from electrical database?";
+WPWithCableOKToDeleteText1="The following work packages selected for delete have routed cables associated with them:";
+WPWithCableOKToDeleteText2="In order to delete these work packages, you must first delete the associated cable route";
+WPWithCableOKToDeleteText3="objects using the Electrical Cableway Routing 'Manage cables from database' command.";
+WPWithCableOKToDeleteText4="(Hit the 'Delete Non-cable' button to delete only work packages with no"; 
+WPWithCableOKToDeleteText5="associated routed cables, or the 'Cancel' button to cancel this operation).";
+WPWithCableOKToDeleteText6="(Hit the 'Cancel' button to cancel this operation).";
+
+DeleteResultsTitle = "Delete Results Summary";
+DeleteResultsText = "/P1 of /P2 work packages successfully deleted.";
+
+DeleteReportTitle = "Electrical Cable Database Delete Report";
+DeleteReportDate = "Date:  /P1";
+DeleteReportTime = "Time:  /P1";
+DeleteReportBodyTitle = "Work Packages Processed";
+DeleteReportSuccessfulWP = "'/P1'  Delete SUCCESSFUL";
+DeleteReportFailedWP = "'/P1'  Delete FAILED";
+DeleteReportObjectLevelError = "Processing error for object '/P1': /P2";
+DeleteReportWPLevelError = "Work package processing error: /P1";
+DeleteReportWPLevelWarning = "Work package processing warning: /P1";
+DeleteReportInternalError = "Internal error: /P1";
+

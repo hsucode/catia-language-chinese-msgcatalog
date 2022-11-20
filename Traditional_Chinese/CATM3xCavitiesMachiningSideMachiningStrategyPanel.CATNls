@@ -1,0 +1,18 @@
+Title = "加工中";
+
+M3xSideBottomThickness = "底部精加工裕留";
+M3xSideBottomThickness.LongHelp = "Specifies the thickness used for bottom finishing.";
+
+// * Compensation  * 
+MfgOutputStyle = "補償輸出";
+MfgOutputStyle.LongHelp = "Specifies how cutter compensation instructions are 
+to be generated on the NC data output:  
+
+None
+No compensation is computed
+
+2D radial tip
+Compensation is computed in a plane normal to the tool axis, 
+and activated with regard to a cutter side (left or right). 
+The radius that is compensated is the cutter radius.
+Output is the tool tip point (XT YT ZT). ";

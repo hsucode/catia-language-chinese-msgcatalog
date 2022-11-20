@@ -1,0 +1,53 @@
+INFO_HELP="
+CATDMUCacheManager 管理暫存器資料.\n
+用法: \n
+   取得說明資料:
+      CATDMUCacheManager -h\n
+   取得暫存器目錄內容:
+      CATDMUCacheManager -content file [-g cachedir] [-s char] [-t type]\n
+   Purge a cache directory:
+      CATDMUCacheManager -purge value\n
+Windows 例子:\n
+   CATDMUCacheManager -h
+   CATDMUCacheManager -content c:\u\output.txt
+   CATDMUCacheManager -content c:\u\output.txt -t 3dmap
+   CATDMUCacheManager -purge 10\n
+Unix 例子:\n
+   CATDMUCacheManager -h
+   CATDMUCacheManager -content /u/output
+   CATDMUCacheManager -content /u/output -t 3dmap
+   CATDMUCacheManager -purge 10\n
+引數:\n
+   -h            : 說明.
+   -content file : 輸出檔案會內含暫存器表列.
+                   每一行將含有暫存器檔案的名稱, 分隔符號
+                   , 原始檔案名稱, 分隔符號
+                   和使用 YYYY-mm-dd-HH.MM.SS 格式的時間記號.
+   -g cachedir   : 掃描的暫存器目錄.
+   -s char       : 定義輸入和輸出檔案內的分隔符號.
+                   預設為空白字元.
+   -t type       : 定義暫存器型式 (cgr, 3dmap, ...).
+                   預設使用 cgr .
+   -purge value  : 將暫存器由舊檔案清除並使用新的數值.
+                   數值單位為 MegaBytes (Mo).\n
+檢查:\n
+   可能的退出情形數值為:\n
+      0   成功完成.\n
+      1   因為下列情形失敗:
+          - 沒有軟體許可權
+          - 停止暫存器管理
+          - 缺少引數
+          - 無效參數
+          - 選項後遺失參數
+          - 無法開啟輸出檔案 \n
+      2   處理錯誤.\n
+偵錯:\n
+   退出情形 = 1:
+      使用在標準錯誤檔案內的資訊來修改命令行或環境.\n
+   退出情形 = 2:
+      請連絡售商.
+";
+ERR_PROCESSING="錯誤: CATDMUCacheManager 處理失敗.";
+ERR_CACHE_ACCESS="錯誤: CATDMUCacheManager 無法存取下列暫存器目錄:";
+START_BATCH="CATDMUCacheManager 開始在 :";
+STOP_BATCH="CATDMUCacheManager 經下列時間後停止 :";

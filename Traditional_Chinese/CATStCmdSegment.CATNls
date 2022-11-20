@@ -1,0 +1,29 @@
+//=============================================================================
+// COPYRIGHT DASSAULT SYSTEMES  1999
+//=============================================================================
+//
+// CATStCmdSegment : Resource file for NLS purpose related to Segmentation command
+//
+//=============================================================================
+//
+// Implementation Notes:
+//
+//=============================================================================
+// Jan 99   Creation                                    M-D TRUONG (mtg)
+//=============================================================================
+
+
+CATStCmdSegment.State1Msg1.Message = "選擇曲線或曲面以分割或轉換到 NUPBS";
+CATStCmdSegment.Deviation.Message  = "d:"; // d 代表偏差 
+CATStCmdSegment.Order.Message      = "o:"; // o 代表階數
+CATStCmdSegment.Segment.Message    = "s:"; // s 代表弧段
+CATStCmdSegment.Approximation.Message  = "App :"; // App  代表近似  
+CATStCmdSegment.ApproximRequested.Message    = "NUPBS (非Non Uniform Polynomial B-spline) 近似要求"; 
+CATStCmdSegment.MonoDomainRequested.Message  = "請選擇單一區域(mono-domain)元素"; 
+CATStCmdSegment.MonoCellRequested.Message    = "請選擇單一個體(mono-cell)元素"; 
+CATStCmdSegment.NoPlanarGeometry.Message     = "平面的幾何不允許"; 
+CATStCmdSegment.NotTrimmedElementRequested.Message ="修剪元素不允許";
+CATStCmdSegment.Curve3DRequested.Message           ="2D (參數) 曲線不允許";
+CATStCmdSegment.NoSolidGeometry.Message            = "不允許實體幾何"; 
+CATStCmdSegment.CannotExceedModelSize.Message      = "元素超過模型大小"; 
+CATStCmdSegment.MoreThan4Edges.Message              = "因為原始元素超過四個邊且無法修改,故需建立新元素";

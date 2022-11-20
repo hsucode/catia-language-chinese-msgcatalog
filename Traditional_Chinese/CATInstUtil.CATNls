@@ -1,0 +1,244 @@
+//---------------------------------------------------------------------------
+// MESSAGES FROM CXINSTUTIL LIBRARY
+//---------------------------------------------------------------------------- 
+// Messages form CATInsDirectory.cpp
+ErrWndSyntaxDir ="路徑名稱 /p1 不正確 \n"; 
+
+
+// Messages from CATInsGetUnloadDir
+CodeNotInstalled = "你需要安裝代碼層次 /p1 在安裝服務組件前 \n";
+
+// Messages from CATInsCheckMedia
+ErrEmptyMediaToc = "CD-ROM上套組和 / 或產品的清單是空的. \n";
+
+// Messages from  CATInsCheckInstall 
+ErrWndProductAllInstalled = "CD-ROM 上所有套組和產品已經安裝. \n"; 
+
+// Messages from  CATInsCheckInstallCAA
+ErrWndProductCodeNotInstalled = "如果您要安裝其它 CAA 組立和產品,\n 您須要安裝其它組立或產品.\n";  
+
+// Messages from  CATInsCheckInstallSPK 
+ErrWndFSPAllInstalled = "CD-ROM 上每一個固定的套組和產品已經安裝 \n";
+
+// Messages from  CATInsCheckInstallCode 
+ErrorCannotGetCodeDir="設定程式無法萃取安裝目錄 \n CAA 安裝在 /p1\n"; 
+ErrNoPRESENTForAnyOS ="你需要安裝代碼層次 /p1 在 /p2 中在安裝 CAA 前 \n" ;
+ErrorMustReinstallSPKCode="您必須重新為系統 /p2 安裝 Service Pack level /p1\n";
+
+
+// Messages from  CATInsCheckInstallSPKCommitted
+MsgCheckInstallSPKNotCommitted ="/p1 is not a valid installation path to install /p2 SP/p3 CAA CDROM because code SP is not committed\n";
+MsgCheckBadInstalledSPK ="/p1 is not a valid installation path to install /p2 SP/p3 CAA CDROM because cInstalled SPK level is /p4\n";
+// Messages from CATInsCheckIntegrityGA
+ErrCheckCATIAIntegrity =  "檢查完整性失敗 \n";
+ErrIntegrityServicePack = "你剛剛安裝的一些分件並不是正確的層次. \n 你一定要再次安裝服務組件 /p1 \n";
+ErrIntegrityServicePackCAA = "Some components you have just installed are not at the correct level.\nYou must re-install CAA Service Pack /p1\n";
+CheckIntegrityOK ="檢查完整性成功的結束 \n"; 
+
+// Messages form CATInsCheckLevelCode
+ErrWndNoPresent = "檔案 /p1 未發現 - /p2 沒含有任何代碼安裝 \n";
+ErrWndGALevelCode ="你不能夠安裝 /p1 層次 CAA 檔案在 /p2 中, 在哪裡 / p3 層次代碼是為安裝 /p4 的 \n";
+ErrWndNoDir="/p1 不存在 - 你必須安裝代碼, 在安裝 CAA 檔案前  \n";
+
+// Messages from CATInsCheckMediaSPK
+ErrorNoSPK ="在這個媒體上沒有服務組件可安裝 \n";
+
+// Messages from CATInsCheckMediaHFX
+ErrorNoHFX ="此媒體上沒有暫時修正檔 \n";
+// Messages from CheckV5RunPortValue
+ErrWndV5RunPortNotFree = "埠 /p1 忙碌中. \n 你必須指定自由的埠. \n 你能夠使用埠 /p2 \n";
+ErrWndV5RunPort= "Invalid port number:/p1. Port number must be greater than or equal to /p2\n";
+ErrWndV5RunPortMax="Invalid port number:/p1. Port number must be less than or equal to /p2\n";
+ErrWndV5Run2PortEqual="You cannot enter the same port number for the backbone process:/p1,\nand for the starting backbone process: /p2.\n"; 
+ErrWndV5Run3PortEqual="Port number values for the backbone process:/p1,\nthe starting backbone process:/p2,\n and the peripheral device broker:/p3 must be different from each other."; 
+
+// Messages from UpdatePorts
+ErrWndOpenServicesFile = "安裝不能更新 /p1. \n 檔案不能打開 :/p2. \n";
+OKWriteServicesFile =  "成功更新 /p1 \n";
+ErrWndWriteServicesFile = "安裝不能更新 /p1. \n 寫入失敗:/p2. \n";
+ErrWndRenameServicesFile = "安裝不能更新 /p1. \n 重新命名失敗:/p2. \n";
+ErrWndAllocServicesFile =  "安裝不能更新 /p1. \n 不能讀取記憶體中的檔案 :  /p2 位元組的配置失效. \n";
+
+// Messages from  CATInsCheckOrbixValue
+ErrWndOrbixPort = "埠的數目一定更大或者等於 /p1 \n";
+ErrWndOrbixPortNotFree =  "埠 /p1 忙碌中. \n 你必須指定自由的埠. \n 你能夠使用埠 /p2 \n";
+ErrWndOrbixServerBase = "開始的埠號碼 \p1 必須大於 Orbix daemon 埠號碼 \p2";
+ErrWndOrbixServerRange =  "daemon 的範圍 - 執行伺服器必須大於 50 \n";
+ErrBadOrbixPort1   = "Bad value for Orbix daemon port : /p1. Value must be greater than /p2\n";
+ErrBadOrbixPort2   = "Bad value for Orbix daemon port : /p1. Value must be less than /p2\n";
+ErrBadServerBase1  = "Bad value for starting port number for daemon-run servers : /p1. Value must be greater than /p2\n";
+ErrBadServerBase2  = "Bad value for starting port number for daemon-run servers : /p1. Value must be less than /p2\n";
+ErrBadServerRange1 ="Bad value for Orbix server range : /p1. Value must be greater than /p2\n";
+ErrBadServerRange2 ="Bad value for Orbix server range : /p1. Value must be less than /p2\n";
+
+// Messages from GetFreePort
+ErrValuePortTooBig ="Value /p1 is incorrect.Value for port number must be less than /p2\n";
+ErrCreateSocket = "安裝不能檢查埠 / p1 是否自由 , 因為插座 (socket) 的建立失敗 - /p2 \n";
+Errgetsockname  =  "安裝不能檢查埠 / p1 是否自由, 因為 getsockname 失敗 - /p2 \n";
+ErrSearchFreePort ="Setup cannot find a free port between /p1 and /p2\n";
+// specifique NT
+ErrWsock32 =  "Wsock32.dll 未發現 \n"; 
+ErrRequestedWsock32 = "必須的 Wsock32.dll 未發現 \n";
+ErrCreateSocketFailed ="插座 (socket) 的建立失敗 \n"; 
+
+// Messages from CATInsComputeAvailSpace
+ErrWndBadDir = "不正確的安裝目錄: /p1 \n";
+ErrWndAvailSpace ="可用的空間計算錯誤在 /p1 \n /p2 \n";
+ErrWndDiskInfo = "不能取得磁碟資訊在 /p1 \n /p2 \n";
+
+// Messages from CATInsCheckPrereqGA
+ErrWndOS = "你不能安裝 /p1 作業系統資料到 /p2 作業系統中.\n";
+ErrWndGALevel ="你不能安裝 /p1 層次資料到 /p2 層次安裝中.\n";
+// Messages from CATInsCheckPrereqGASP
+ErrWndGASPLevel1 = "你不能安裝含 Service Pack /p2 的 GA /p1  至含 Service Pack /p4 的 GA /p3 .\n";
+ErrWndGASPLevel2 = "你不能安裝含 Service Pack /p2 的 GA /p1 至 GA /p3\n";
+
+//  Messages from CATInsCheckEmptyDir
+ErrWndNoWriteDir =" 目錄  /p1 沒有沒寫入允許. 增加寫入允許或者變更目錄 \n";
+ErrWndFileAlreadyExist = "不能建立目錄 /p1 \n.  名稱已經存在. \n";
+ErrWndEmptyDir ="/p1 一定是空的 \n";
+ErrBadOS3264= "It is forbidden to install /p1-bit media onto /p2-bit installation\n";
+
+// Messages from ExportV4
+ErrWndV4IsNotaDir = "目錄 /p1 不存在  \n"; 
+
+// Messages from ExportTCK
+ErrWndTCKPortNotFree =  "埠 /p1 忙碌中. \n 你必須指定自由的埠. \n 你能夠使用埠 /p2 \n";
+ErrWndTCKServerName =  "您必須輸入伺服器名稱 \n";
+
+// Messages from ExportServersTimeout 
+ErrWndTimeout = "終止時間不正確 : /p1. 終止時間必須從 2 至 35700 分鐘 \n";
+
+// Messages from ExportSDAM
+ErrWndSDAMPortNotFree =  "Port /p1 is busy.\nYou must specify a free port.\nYou can use the port /p2\n";
+ErrWndSDAMServerBase = "Starting port number /p1  must be greater than the port number for SDAM daemon /p2\n";
+ErrWndSDAMServerRange =  "Range for SDAM internal communication must be greater than 99\n";
+ErrBadSDAMPort1   = "Bad value for SDAM daemon port : /p1. Value must be greater than /p2\n";
+ErrBadSDAMPort2   = "Bad value for SDAM daemon port : /p1. Value must be less than /p2\n";
+ErrWndSDAMServerBase_Range = "Value for SDAM daemon port plus range value : /p1 must be less than /p2\n";
+
+// Messages from ExportVaultClient
+ErrAliasNotSet="您必須輸入 alias 名稱 \n";
+ErrHostnameNotSet="您必須輸入主機名稱 \n";
+ErrPortNotSet="您必須為埠輸入整數且大於 0 的值 \n";
+ErrServiceNotSet="您必須為服務名稱輸入值 \n" ;
+// Messages from InitMediaToc
+ErrorInitMediaToc ="不能讀取檔案 /p1 從媒體  - /p2 \n"; 
+ErrorInitNoToc="媒體上未找到檔案 /p1 \n";
+
+// Messages from InitInstallToc
+ErrorInitToc ="不能讀取檔案 /p1 - /p2 \n";
+
+// Messages frorm CATInsExistDir
+DirNoWrite="目錄 /p1 不存在 \n";
+DirNotExist ="目錄 /p1 沒有寫入權限 \n";
+DirNoWriteNT=" 資料夾 /p1 不存在 \n";
+DirNotExistNT ="資料夾 /p1 惟讀 \n";
+
+
+// Messages from CATInsCheckSPKLevel
+ErrWndNoCommit ="你必需 commit 或者 roll back 服務組件層次 /p1 在安裝服務組件層次 /p2 \n Run /p3 以前 \n";
+ErrWndErrorCD  ="服務組件層次 /p1 已經安裝在 /p2 中. \n 你不能安裝服務組件層次 /p3 \n";
+ 
+// Messages from CATInsCheckSPKLevel
+ErrorNoFile="檔案 /p1 不存在 \n";
+ErrWndOpenControlFile = "不能打開控制檔案 /p1 : /p2\n";
+ErrorBadMedia_1="你必需安裝服務組件層次 /p1 為代碼 /p2, 在安裝服務組件層次 /p3 for caa 以前 \n";
+ErrorBadMedia_2="代碼服務組件層次/p1 為 /p2 已經安裝. 你必需安裝相同的服務組件層次為 CAA \n";
+
+// Messages from CATInsServicesbeforeFinish
+ErrCmdFailed="命令 [/p1] 失敗 \n";
+ErrCmdFailed2="Command [/p1] failed - rc = /p2\n";
+CmdSuccessful="命令 [/p1] 成功 \n";
+ErrFileNotExist="檔案 /p1 未發現 \n";
+CreateFile_OK="檔案 /p1 已成功建立 \n";
+CreateFile_KO="檔案 /p1 無法建立 \n";
+EnoviaSetupRC_0="ENOVIA 資料庫設定成功完成 \n";
+EnoviaSetupRC_1="成功修正 ENOVIA 資料庫設定錯誤後. \n 載入下列命令 : /p1\n";
+EnoviaSetupRC_2="您已停止 ENOVIA 資料庫設定. \n 如果您要再執行, \n 載入下列命令 : /p1\n";
+EnoviaSetupDefault="ENOVIA 資料庫設定失敗 - 返回碼 = /p1\n";
+UpdateOpenInputFailed="無法為讀取開啟檔案 /p1 \n";
+UpdateOpenAppendFailed="無法為讀取寫入檔案 /p1 \n";
+InstallCopy="檔案 /p1 已被建立 \n";
+InstallUpdate="檔案 /p1 已被更新 \n";
+
+// Messages from  CATInsJavaHome
+ErrWndjreNotFound="無效 Java Home 路徑.在路徑 /p1 中未找到程式 java \n";
+ErrWndJavaHomeNULL="Java_Home 的目錄無效 \n";
+ErrGetVersionCommand="執行 : /p1 命令時發生錯誤\n";
+ErrBadVersion="/p1 未支援 \n";
+ErrBadJavaVersionWINDOWS64_64="64-bit Java version 1.5.0 or higher is required\n";
+ErrBadJavaVersionAIX64_64="64-bit Java version 1.3.1 or higher is required\n";
+ErrBadJavaVersionWINDOWS32_64="32-bit Java version 1.5.0_02 or higher is required\n";
+ErrBadJavaVersionWINDOWS32_32="Java version 1.3.1 or higher is required\n";
+ErrBadJavaVersionUNIX32_32="Java version 1.3.1 or higher is required\n";
+ErrGetJavaVersion ="Cannot get java version. Command /p1 failed\n";
+
+// Messages from CATInsServiceNT
+ServiceWasStopped="服務 /p1 已成功停止 \n";
+ServiceWasNotStopped="服務 /p1 無法停止: /p2\n";
+ControlServiceFailed="控制服務失敗 /p1\n 服務 /p2 未停止 \n";
+ServiceWasStarted="服務 /p1 已開始 \n";
+ServiceWasNotStarted="服務 /p1 無法開始 /p2\n";
+ServiceWasNotCreated="服務 /p1 無法建立 /p2\n";
+ServiceWasDeleted="服務 /p1 已刪除 \n";
+ServiceWasNotDeleted="服務 /p1 無法刪除 /p2\n";
+
+// Messages from CATInstallVBA
+ErrVBANotEnoughSpace ="在 /p1 中沒有足夠的空間可安裝 VBA 檔案 \n 所需空間 = /p2 Kb - 可用空間 = /p3 Kb\n";
+ErrVBANotEnoughSpaceSystem ="在 /p1 中沒有足夠的空間可安裝 VBA 系統檔案 \n 所需空間 = /p2 Kb - 可用空間 = /p3 Kb\n";
+ErrVBANotEnoughSpaceShared ="在 /p1 中沒有足夠的空間可安裝 VBA 分享檔案 \n 所需空間 = /p2 Kb - 可用空間 = /p3 Kb\n";
+InstallVBAOK="成功安裝 VBA \n";
+InstallVBAReboot="安裝 VBA 需要重新開機 \n";
+InstallVBAKO ="安裝 VBA 失敗 rc = /p1\n";
+InstallVBAKOInternal = "安裝  VBA 失敗 - GetProcAdress 失敗 \n";
+ErrorLoadVBA="安裝 VBA 失敗 - 無法載入程式庫 /p1 - rc = /p2\n";
+//
+ErrorAlloc="/p1 : 定位 /p2 失敗 \n";
+
+// Messages from CATInsPrereq
+ErrorPrereq="需要含 Service Pack 2 的 Windows XP 或 Windows 2000 來執行安裝 \n" ;
+ErrorPrereq2000="需要含 Service Pack 4 的 Windows 2000 來執行安裝 \n" ;
+ErrorPrereqddraw="需要 DirectX 8.1 . 您可從下列網站安裝 URL:\n http://www.microsoft.com/downloads/details.aspx?FamilyID=7f54ebd3-00d1-47bc-81db-3157fba4c3a7\n";
+// Messages from CATInsCheckHFXLevel
+ErrHFXLevelSPK="以 Service Pack /p3 無法安裝暫時修正檔 /p1 在 /p2 上 \n";
+ErrHFXAlreadyInstalled="暫時修正檔 /p1 已安裝 \n";
+ErrHFXCommitSPK="安裝暫時修正檔 /p2 前, 您必須先確認 Service Pack level /p1 \n";
+ErrHFXLevelold="安裝 /p2 之前, 您必須先移除暫時修正檔 /p2 \n";
+ErrHFXneedreinstallSPK="安裝 /p2 之前, 您必須重新安裝 Service Pack /p1 \n";
+ErrWndFunctionFailed ="Function /p1 failed: rc= /p2n";
+
+// Messages from CATInsValidIdent
+EmptyIdent ="You must enter a value for ident";
+BadTooLongIdent="Ident /p1 is too long: Ident must not exceed 20 characters"; 
+BadAlphaNumIdent="Bad ident /p1: The ident must contain only uppercases letters or digits";
+
+// Messages from CATInsSaveFilesBeforeInstall
+ErrWndExtractCab.Text = "Cannot extract file /p1 from cabinet file /p2\n";
+ErrWndExtractTar.Text = "Cannot extract file /p1 from tar file /p2\n";
+CheckTmpDir = "Check if /p1 is not full\n";
+ErrWndOpenControlFile.Text = "Cannot open control file /p1 : /p2\n";
+ErrWndRenameFile.Text = "Cannot rename file /p1 to /p2";
+
+// Messages from CATInsTransferCAF
+ErrExtractCabinet = "Error extracting cabinet file /p1\n";
+ErrCommandInterrupted ="Command /p1 was interrupted\n"; 
+
+// Messages from CATCabExtract
+ErrCreateDir = "Error creating folder /p1\n";
+ErrInputCab = "cannot open file /p1\n";
+ErrNotACab = "/p1 is not a cabinet file\n";
+ErrCopyFailed ="FDICopy failed:\n";
+FDI_Noerror="No error\n";
+FDI_CabNotFound ="Cabinet not found\n";
+FDI_NotACab="Not a cabinet\n";
+FDI_UnknownCabinetVersion="Unknown cabinet version\n";
+FDI_CabCorrupted="Corrupted cabinet\n";
+FDI_AllocFailed="Memory allocation failed\n";
+FDI_BadComprType="Unknown compression type\n";
+FDI_MDIFailed="Failure decompressing data\n";
+FDI_ErrorTargetFile="Failure writing to target file\n";
+FDI_ReserveMismatch="Cabinets in set have different RESERVE sizes\n";
+FDI_WrongCabinet="Cabinet returned on fdintNEXT_CABINET is incorrect\n";
+FDI_UserAbort="User aborted\n";
+FDI_default="Unknown error\n";

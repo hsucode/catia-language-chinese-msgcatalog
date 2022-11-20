@@ -1,0 +1,349 @@
+//
+// ------------------------------------------------------------
+// |  NLS Message Catalog
+// |  Frame work: CATIAApplicationFrame
+// |  Module : Search.m
+
+// ------------------------------------------------------------
+//
+// ------------------------------------------------------------
+// | Query Panel                  
+// ------------------------------------------------------------
+
+// --------------------
+//  Window and Tab Pages titles 
+// --------------------
+Title    = "尋找"; 
+ContainerFrm.TabContainer.FavoriteFrame.Title   = "喜好";
+ContainerFrm.TabContainer.GeneralFrame.Title    = "一般";
+ContainerFrm.TabContainer.AdvancedFrame.Title   = "進階";
+
+// --------------------
+// BOTTOM FRAME
+// --------------------
+// Context Combo 
+ContextAndHistoryFrm.ContextLabel.Title = "搜尋:";
+ContextAndHistoryFrm.ContextLabel.LongHelp = 
+"依據下列範圍, 執行搜尋:
+全部: 搜尋全部文件.
+
+在 元素: 只搜尋在目前工作檯可建立的物件元素.
+
+從 元素 至底部: 搜尋 元素 從頭到尾.
+
+螢幕可見: 由作動視窗中目前可見物件開始搜尋.
+
+從目前選擇: 搜尋物件從頭到尾.
+
+從搜尋結果: 從已找到的物件中搜尋.";
+
+ContextAndHistoryFrm.ContextCombo.LongHelp = 
+"依據下列範圍, 執行搜尋:
+全部: 搜尋全部文件.
+
+在 元素: 只搜尋在目前工作檯可建立的物件元素.
+
+從 元素 至底部: 搜尋 元素 從頭到尾.
+
+從目前選擇: 搜尋物件從頭到尾.
+
+從搜尋結果: 從已找到的物件中搜尋.";
+
+// Query Combo 
+ContextAndHistoryFrm.QueryLabel.Title = "詢問:"; 
+ContextAndHistoryFrm.QueryLabel.LongHelp =
+"表列目前搜尋程序產生的詢問.
+選擇詢問將會自動載入搜尋.";
+ContextAndHistoryFrm.QueryCombo.LongHelp =
+"表列目前搜尋程序產生的詢問.
+選擇詢問將會自動載入搜尋.";
+
+// List of selected objects 
+ListMainFrame.ListFrm.ObjectFound   = "/P1 物件找著";
+ListMainFrame.ListFrm.ObjectsFound  = "/P1 物件找著";
+ListMainFrame.ListFrm.LabelsFrame.AlphabeticalButton.Title    = "字母搜尋";
+ListMainFrame.ListFrm.LabelsFrame.AlphabeticalButton.ShortHelp = 
+"字母搜尋";
+ListMainFrame.ListFrm.Title1 = "名稱";
+ListMainFrame.ListFrm.Title2 = "路徑";
+ListMainFrame.ListFrm.LongHelp = 
+"表列搜尋到的物件.
+所有物件會以預設選取.
+以按一下來選取或取消選取件. 
+按一下確認來選擇確認搜尋結果.";
+
+// Buttons
+SearchDialog.APPLYButton.Title  = "選擇";
+SearchDialog.CANCELButton.Title = "關閉";
+
+// include topology button 
+BottomPart.ContextAndHistoryFrm.OptionsFrm.TopologyButton.Title = "包含拓墣";
+BottomPart.ContextAndHistoryFrm.TopologyButton.LongHelp = 
+"搜尋結果包含拓墣元素.";
+BottomPart.ContextAndHistoryFrm.OptionsFrm.TopologyButton.LongHelp = 
+"Usually, topological elements can be found only when searching for them specifically
+through a query like \"Topology.*/Face/Edge/Vertex\".
+Using this option allows you to find topological elements in any query, as any other element";
+
+// published elements only button 
+BottomPart.ContextAndHistoryFrm.OptionsFrm.PublicationsButton.Title = "只有發行元素";
+BottomPart.ContextAndHistoryFrm.OptionsFrm.PublicationsButton.ShortHelp = 
+"只搜尋發行元素";
+BottomPart.ContextAndHistoryFrm.OptionsFrm.PublicationsButton.LongHelp = 
+"只搜尋發行元素";
+
+// deep search button 
+BottomPart.ContextAndHistoryFrm.OptionsFrm.DeepSearchButton.Title = "深度搜尋";
+BottomPart.ContextAndHistoryFrm.OptionsFrm.DeepSearchButton.ShortHelp = 
+"也搜尋顯示模式內文件";
+BottomPart.ContextAndHistoryFrm.OptionsFrm.DeepSearchButton.LongHelp = 
+"This option is available only if the \"Work with the cache system\" option is set.
+This option is active by default if the \"Automatic switch to design mode\" option is set.
+Using this option allows you to find elements in documents in visu mode.";
+
+// search button 
+BottomPart.ContextAndHistoryFrm.SearchButton.ShortHelp = "搜尋";
+BottomPart.ContextAndHistoryFrm.SearchButton.LongHelp = 
+"按一下搜尋鈕來取得您要尋找的物件.";
+BottomPart.ContextAndHistoryFrm.FavoritesButton.ShortHelp = "增加偏好 ...";
+
+// search and select button 
+BottomPart.ContextAndHistoryFrm.SearchAndSelectButton.ShortHelp = "搜尋和選擇";
+BottomPart.ContextAndHistoryFrm.SearchAndSelectButton.LongHelp = 
+"Click the Search and Select button to get and select the list of objects you are searching for,
+and close the Search dialog box.";
+// favorites button 
+BottomPart.ContextAndHistoryFrm.FavoritesButton.LongHelp = 
+"增加搜尋需求至偏好設定中.";
+
+// --------------------
+// FAVORITES FRAME
+// --------------------
+LabelAndButtonsFrame.FavoriteLabel.Title = "偏愛清單";
+LabelAndButtonsFrame.ButtonsFrame.UpButton.ShortHelp = 
+"提昇所選詢問.";
+LabelAndButtonsFrame.ButtonsFrame.DownButton.ShortHelp = 
+"降低所選詢問.";
+LabelAndButtonsFrame.ButtonsFrame.DeleteButton.ShortHelp = 
+"刪除所選詢問.";
+FavoriteMultiList.ShortHelp = 
+"要載入詢問, 請雙按此線.
+此欄位可藉由分別按兩次來編輯.";
+EditionDialog.Title = "建立偏好詢問...";
+EditionDialog.EditionFrame.NameLabel.Title = "名稱";
+EditionDialog.EditionFrame.ContentLabel.Title = "詢問";
+FavoriteFrame.EditionDialog.ConfirmationWindow.Title = "確認";
+ConfirmationWindow.Overwriting = "前一個相同名稱的詢問將會被覆蓋";
+ConfirmationWindow.Deletion = "您確定要刪除所選詢問嗎 ?";
+FavoriteFrame.Name  = "名稱";
+FavoriteFrame.Query = "詢問";
+FavoriteFrame.Warning.Title = "警告";
+FavoriteFrame.Warning.NoSelection.Text  = "按此鈕前請選擇偏好詢問";
+FavoriteFrame.Warning.SeveralSelections.Text  = "按此鈕前請只選擇一個偏好詢問";
+
+// --------------------
+// GENERAL FRAME
+// --------------------
+// query on Name 
+SimpleFrame.NameLabel.Title = "名稱:";
+SimpleFrame.NameEditor.ShortHelp = 
+"輸入您要選擇的物件名稱";
+SimpleFrame.NameEditor.LongHelp = 
+"Use the character * to replace 0 to several characters.
+If this criterion is meaningless, leave the default '*'.";
+
+SimpleFrame.AsDisplayedInGraphButton.Title = "如同圖形中顯示";
+SimpleFrame.AsDisplayedInGraphButton.ShortHelp =
+"當尋找如同歷程樹中所顯示的名稱一樣時按一下";
+SimpleFrame.AsDisplayedInGraphButton.LongHelp =
+"當尋找如同歷程樹中所顯示的名稱一樣時按一下";
+
+SimpleFrame.CaseSensitivityCheckButton.Title = "大小寫相異";
+SimpleFrame.CaseSensitivityCheckButton.ShortHelp = 
+"如果大小寫不同時, 請按一下 大小寫相異";
+SimpleFrame.CaseSensitivityCheckButton.LongHelp = 
+"如果大小寫不同時, 請按一下 大小寫相異";
+
+// query on Type
+SimpleFrame.AllWorkbenches = "*";
+SimpleFrame.IntroductionLabel.Title = "形式:";
+SimpleFrame.WorkbenchTitle.Title = "工作檯";
+SimpleFrame.WorkbenchCombo.ShortHelp =
+"選擇或輸入您要執行搜尋的工作檯";
+SimpleFrame.WorkbenchCombo.LongHelp = 
+"The displayed types depend on the working context. 
+Choose a context or select '*' to get all the loaded types."; 
+
+SimpleFrame.TypeTitle.Title = "形式";
+SimpleFrame.TypeCombo.ShortHelp =
+"選擇或輸入您要執行搜尋的物件型式";
+
+SimpleFrame.TypeCombo.LongHelp = 
+"使用字元 * 來替換 0 到數個不等字元.
+大小寫無關. 如為無意義形式, 請選擇 *.";
+
+
+SimpleFrame.LoadTypesButton.Title = "載入所有型式";
+SimpleFrame.LoadTypesButton.ShortHelp = 
+"載入所有工作檯的可用型式";
+SimpleFrame.LoadTypesButton.LongHelp = 
+"Types corresponding to a workbench are loaded when this
+workbench is selected. Click this button to make all the types available.";
+
+// query on Graphic Properties
+SimpleFrame.ColorLabel.Title = "顏色:";
+SimpleFrame.ColorCombo.ComboColor.LongHelp = 
+"如果顏色無意義, 請選擇 '*'.";
+
+SimpleFrame.MoreButton.Title    = "更多...";
+SimpleFrame.MoreButton.LongHelp = 
+"顯示更多圖形性質.";
+SimpleFrame.LessButton.Title    = "較少...";
+SimpleFrame.LessButton.LongHelp = 
+"顯示較少圖形性質.";
+
+SimpleFrame.IntroLabel.Title = "圖形:";
+SimpleFrame.GeneralLabel.Title = "一般特性";
+SimpleFrame.SpecialLabel.Title = "線特性";
+SimpleFrame.PointLabel.Title = "點特性";
+
+SimpleFrame.LayerLabel.Title = "圖層";
+SimpleFrame.LayerCombo.ShortHelp = 
+"選擇您要搜尋的物件圖層.";
+
+SimpleFrame.LayerCombo.LongHelp = 
+"選擇您要搜尋的物件圖層.
+如果此標準無意義, 請選擇 '*'.";
+
+SimpleFrame.VisibilityLabel.Title = "可視性";
+SimpleFrame.VisibilityCombo.ShortHelp = 
+"選擇您要搜尋的物件可視性.";
+
+SimpleFrame.VisibilityCombo.LongHelp = 
+"選擇您要搜尋的物件可視性.
+The 'Visible' and 'Hidden' values are relative to the visibility attribute of an object (from a data point of view).
+The 'Shown' and 'Invisible' values are relative to the real visibility of an object (from the display point of view).
+An object is said to be 'Shown' if it is shown on the screen: the object as well as each of its parents have the \"Visible\" attribute.
+An object is said to be 'Invisible' if it is not shown on the screen: the object or any of its parents have the \"Hidden\" attribute.
+如果此標準無意義, 請選擇 '*'.";
+
+SimpleFrame.DashedLabel.Title = "虛線";
+SimpleFrame.DashedCombo.ShortHelp = 
+"選擇您要搜尋物件的線形.";
+SimpleFrame.DashedCombo.LongHelp = 
+"選擇您要搜尋物件的線形.
+如果此標準無意義, 請選擇 '*'.";
+
+SimpleFrame.WeightLabel.Title = "重量";
+SimpleFrame.WeightCombo.ShortHelp = 
+"選擇您要搜尋物件的線厚度.";
+
+SimpleFrame.WeightCombo.LongHelp = 
+"選擇您要搜尋物件的線厚度.
+如果此標準無意義, 請選擇 '*'.";
+
+
+SimpleFrame.SymbolLabel.Title = "符號";
+SimpleFrame.SymbolCombo.ShortHelp = 
+"選擇您要搜尋的點物件型式";
+SimpleFrame.SymbolCombo.LongHelp = 
+"Choose the point symbol for the objects to be searched.
+If this criterion is meaningless, leave the default '*'.";
+
+// --------------------
+// ADVANCED FRAME
+// --------------------
+CombosAndButtonsFrame.CombosFrame.WorkbenchLabel.Title = "工作檯";
+CombosAndButtonsFrame.CombosFrame.TypeLabel.Title      = "形式";
+CombosAndButtonsFrame.CombosFrame.AttributeLabel.Title = "屬性";
+
+CombosAndButtonsFrame.CombosFrame.WorkbenchCombo.ShortHelp = 
+"選擇或輸入您要搜尋的含有型式或屬性的工作檯名稱.";
+
+CombosAndButtonsFrame.CombosFrame.WorkbenchCombo.LongHelp = 
+"選擇或輸入要尋找的內含形式或屬性的工作檯名稱.";
+
+
+CombosAndButtonsFrame.CombosFrame.TypeCombo.ShortHelp = 
+"選擇或輸入要尋找的形式名稱.";
+CombosAndButtonsFrame.CombosFrame.TypeCombo.LongHelp = 
+"選擇或輸入要尋找的形式名稱.";
+
+CombosAndButtonsFrame.CombosFrame.AttributeCombo.ShortHelp = 
+"選擇或輸入要尋找的屬性名稱.";
+CombosAndButtonsFrame.CombosFrame.AttributeCombo.LongHelp = 
+"選擇或輸入要尋找的屬性名稱.";
+
+CombosAndButtonsFrame.CombosFrame.LoadTypesButton.Title = "載入所有型式";
+CombosAndButtonsFrame.CombosFrame.LoadTypesButton.ShortHelp = 
+"全部工作檯的載入型式";
+CombosAndButtonsFrame.CombosFrame.LoadTypesButton.LongHelp = 
+"Types corresponding to a workbench are loaded when this
+workbench is selected. Click this button to make all the types
+available.";
+
+CombosAndButtonsFrame.ButtonsFrame.AndButton.Title = "和";
+CombosAndButtonsFrame.ButtonsFrame.OrButton.Title = "或";
+CombosAndButtonsFrame.ButtonsFrame.ExceptButton.Title = "除了";
+CombosAndButtonsFrame.ButtonsFrame.AndButton.ShortHelp =
+"在詢問間增加 和 (&) 操作子";
+CombosAndButtonsFrame.ButtonsFrame.OrButton.ShortHelp = 
+"在詢問間增加 或 (+) 操作子";
+CombosAndButtonsFrame.ButtonsFrame.ExceptButton.ShortHelp = 
+"在詢問間增加 例外 (-) 操作子";
+
+CompositionEditorFrame.EditorLabel.Title  = "複合式詢問";
+CompositionEditorFrame.EditorButton.ShortHelp = "刪除複合式詢問";
+CompositionEditorFrame.EditorButton.LongHelp = "刪除全部複合式詢問";
+CompositionEditorFrame.Editor.ShortHelp    = 
+"使用 +, -, & 操作子來組合您的詢問,...";
+CompositionEditorFrame.Editor.LongHelp    = 
+"在此組合您的詢問.
+您只可使用 +, -, & 和括號.";
+
+AttributeDialog.Title = "屬性標準";
+
+AdvancedFrame.NotificationClash.Title = "干涉";
+AdvancedFrame.NotificationClashWk.Text = 
+"資訊:
+所選形式屬於一個以上工作檯 :\n"; 
+AdvancedFrame.NotificationClashTp.Text = 
+"警告:
+所選屬性屬於一個以上形式 :\n";
+AdvancedFrame.NotificationClashWkTp.Text = 
+"警告:
+所選屬性屬於一個以上工作檯 / 複合形式:\n";
+AdvancedFrame.NotificationMistake.Title = "錯誤"; 
+AdvancedFrame.NotificationMistake.Text = 
+"輸入字串錯誤:
+多或少了括號, 符號, 等.";
+AdvancedFrame.NotificationTypeProblem.Text.Title = "輸入錯誤";
+AdvancedFrame.NotificationTypeProblem.Text = 
+"所選形式未定義在工作檯中.";
+
+//Messages if the query is not correct and no criterium can be generated
+ForNLSQuery = "如詢問為 NLS, 此為下列的錯誤:";
+ForTFQuery =  "如詢問為 trans-format, 此為下列的錯誤:";
+
+//Messages to kill the acquisition agent
+SelectionAgent.Disabling.Title = "停止萃取";
+SelectionAgent.Disabling.Text1  = "起動萃取代理.";
+SelectionAgent.Disabling.Text2  = "按一下關閉返回至";
+SelectionAgent.Disabling.Text3  = "搜尋對話框不具萃取.";
+SelectionAgent.Disabling.Text2bis  = "按下關閉來停止獲取.";
+
+// V4Model Types
+V4Model.Workshop = "CATIA V4"; 
+
+// Topology Types
+Topology.Workshop = "拓墣";
+CGMFace          = "修剪面";
+CGMEdge          = "邊線";
+CGMVertex        = "頂點";
+CGMTopology      = "拓墣";
+
+// --------------------
+// ATTRIBUTE FRAME
+// --------------------
+AttributeFrame.DimensionReminder.Title = 
+"尺寸型式屬性. 須指定單位.";

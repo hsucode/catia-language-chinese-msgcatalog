@@ -1,0 +1,83 @@
+//------------------------------------------------------
+// Resource file for input mathematicss errors 
+// En_EN
+//================================================================
+//                           INPUT
+//================================================================
+//----------------------------------Null or invalid input
+//
+MathInNullDeterminant =
+     "無效的,矩陣不能反轉";
+//
+MathInBadTransformationType =
+     "此轉換有一個錯誤的型式";
+//
+MathInColinearDirections =
+     "共線方向 : 不能建立平面或軸線";
+//
+MathInNullValue =
+     "值不可為零";
+//
+MathInSingularPoint =
+     "在單數點上,此功能無法被評估";
+//
+MathInInvalidDimension =
+     "在 /p3方法中, /p1的尺寸必需為 /p2";
+//
+MathInInvalidIndex =
+     "在 /p2間隔中有索引時, /p1方法應該被呼叫";
+//
+MathInInvalidGetUse =
+     "在呼叫 /p2方法前, /p1 方法應該先被測試";
+//
+MathInInvalidFunctionCall =
+     "無效的函數或方法呼叫, /p1 應該被呼叫成 /p2";
+//
+MathInBadConditionnedSystem =
+     "系統情況很糟";
+//
+MathInIdenticalPoints =
+     "兩點相同,相切無法計算";
+//================================================================
+//                           INTERNAL
+//================================================================
+MathIntGetLimitEmptyBox =
+     "空盒子沒有界限, 不要在空的 /p2上呼叫方法 /p1 ";
+//
+CGMMutexInternalError = 
+     "發生一個多方穿透的內部錯誤";
+//
+MathIntNullPointer_ERR_100="內部錯誤 : 動作無法執行.";
+//
+MathInReadStreamInvalidData_ERR_101=" 資料流無法讀取 : 無效的資料格式";
+//
+MathInReadStreamImpossibleAccess_ERR_102="資料流無法讀取 : 不可能的檔案存取";
+//
+MathIntVersioning_ERR_103.Resquest="軟體版本的定義.";
+MathIntVersioning_ERR_103.Diagnostic="版本不一致.";
+MathIntVersioning_ERR_103.Advice="請檢查軟體的組態.";
+//
+MathInReadOnlyStreamInvalidWrite_ERR_104="資料為唯讀, 無法寫入.";
+//
+MathInWriteOnlyStreamInvalidRead_ERR_105="資料為唯寫, 無法讀入.";
+//
+MathInNoMoreMemory_ERR_106.Request    = "資料置放錯誤 (/P1 bytes).";
+MathInNoMoreMemory_ERR_106.Diagnostic = "資料置放 /P1 bytes 失敗.";
+MathInNoMoreMemory_ERR_106.Advice     = "關閉沒有用的開啟文件, 儲存您的工作, 重開 CATIA.";
+//
+MathInIndexOutOfRange_ERR_107.Request    = "索引超過範圍.";
+MathInIndexOutOfRange_ERR_107.Diagnostic = "索引 /P1 超過 [ /P2 , /P3 [. 範圍 ";
+MathInIndexOutOfRange_ERR_107.Advice     = "確定索引在範圍內.";
+//
+MathInStreamFileAccessRead_ERR_108.Request    = "存取檔案失敗.";
+MathInStreamFileAccessRead_ERR_108.Diagnostic = "存取 /P1 檔案失敗.";
+MathInStreamFileAccessRead_ERR_108.Advice     = "請檢查所指定的檔案 (或 binary/ascii ftp 規則).";
+//
+MathInStreamFileAccessWrite_ERR_109.Request    = "存取檔案失敗.";
+MathInStreamFileAccessWrite_ERR_109.Diagnostic = "存取 /P1 檔案失敗.";
+MathInStreamFileAccessWrite_ERR_109.Advice     = "請檢查存取權, 及磁碟機容量.";
+//
+MathInterruptedOperator_ERR_110.Request    = "中斷運算子.";
+MathInterruptedOperator_ERR_110.Diagnostic = "中斷運算子.";
+MathInterruptedOperator_ERR_110.Advice     = "使用者中斷運算.";
+//

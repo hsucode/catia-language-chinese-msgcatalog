@@ -1,0 +1,103 @@
+Feed = "進給  =";
+
+ToolPathEdition = "刀具路徑播放";
+
+ToolAnimation = "刀具模擬";
+
+More = "更多 >>";
+
+AnimationSpeed = "模擬速度";
+
+AllToolPathDisplayed = "顯示所有刀具路徑";
+
+BeginningOfToolPath = "開始刀具路徑";
+
+ToolAnimation.FirstPoint.ShortHelp = "跳至刀具路徑開始處或前一個動作";
+ToolAnimation.FirstPoint.LongHelp = "如果目前動作的刀具路徑開始處已達到, 則允許跳至前一個動作 \n 否則只跳至目前動作的刀具路徑開始處";
+
+ToolAnimation.LastPoint.ShortHelp = "顯示完整的刀具路徑或跳至下一個動作";
+ToolAnimation.LastPoint.LongHelp = "如果目前動作的完整刀具路徑已顯示, 則允許跳至下一個動作 \n 否則只顯示目前動作的完整刀具路徑";
+
+ToolAnimation.ReplayForward.ShortHelp = "往前播放";
+ToolAnimation.ReplayForward.LongHelp = "依顯示模式往前播放刀具路徑"; 
+
+ToolAnimation.ReplayBackward.ShortHelp = "往後播放";
+ToolAnimation.ReplayBackward.LongHelp = "依顯示模式往後播放刀具路徑"; 
+
+ToolAnimation.StopToolAnimation.ShortHelp = "停止模擬";
+ToolAnimation.StopToolAnimation.LongHelp = "停止刀具模擬";
+
+ToolAnimation.Speed.ShortHelp = "以點數顯示刀具模擬速度";
+ToolAnimation.Speed.LongHelp = "在刀具模擬時允許修改點數來顯示刀具模擬";
+
+ToolAnimation.NumberOfPoints.ShortHelp = "播放點數";
+ToolAnimation.NumberOfPoints.LongHelp = "在點對點模擬時允許修改點數來顯示刀具模擬";
+
+ReplayPhotoFrame.ReplayModeIconBox.ShortHelp = "顯示模式";
+ReplayPhotoFrame.ReplayModeIconBox.LongHelp = "允許選擇 連續, 以平面, 以進給或以點的播放模式";
+
+ReplayPhotoFrame.ReplayModeIconBox.ContinuReplayMode.ShortHelp = "刀具路徑的連續播放模式";
+
+ReplayPhotoFrame.ReplayModeIconBox.ByPlaneReplayMode.ShortHelp = "以平面模式播放刀具路徑";
+
+ReplayPhotoFrame.ReplayModeIconBox.ByFeedrateReplayMode.ShortHelp = "以進給模式播放刀具路徑";
+
+ReplayPhotoFrame.ReplayModeIconBox.BySyntaxReplayMode.ShortHelp = "以含後處理指令 Stop 來播放刀具路徑";
+
+ReplayPhotoFrame.ReplayModeIconBox.BySectionReplayMode.ShortHelp = "刀具的切面路徑";
+
+ReplayPhotoFrame.ReplayModeIconBox.ByStepReplayMode.ShortHelp = "以點模式播放刀具路徑";
+
+ReplayPhotoFrame.VisuModeIconBox.ShortHelp = "顯示模式";
+ReplayPhotoFrame.VisuModeIconBox.LongHelp = "允許從最後位置顯示,所有軸向顯示和所有刀具顯示";
+
+ReplayPhotoFrame.VisuModeIconBox.NothingVisuMode.ShortHelp = "只顯示最後刀具位置";
+
+ReplayPhotoFrame.VisuModeIconBox.AxisVisuMode.ShortHelp = "顯示所有軸向";
+
+ReplayPhotoFrame.VisuModeIconBox.ToolsVisuMode.ShortHelp = "顯示所有刀具";
+
+ReplayPhotoFrame.VisuModeIconBox.SectionAeraVisuMode.ShortHelp = "顯示加工曲面 \n(只適用在切面顯示模式)";
+
+ReplayPhotoFrame.VisuModeIconBox.SectionAeraToolAxisVisuMode.ShortHelp = "顯示加工曲面和全部刀軸 \n (只適用在切面顯示模式)";
+
+ReplayPhotoFrame.TrajectColorIconBox.ShortHelp = "顏色模式";
+ReplayPhotoFrame.TrajectColorIconBox.LongHelp = "允許您為所有刀具路徑使用一種顏色 (較快), 或不同進給使用不同顏色";
+
+ReplayPhotoFrame.TrajectColorIconBox.ColorOff.ShortHelp = "相同顏色";
+
+ReplayPhotoFrame.TrajectColorIconBox.ColorOn.ShortHelp = "不同顏色";
+
+ReplayPhotoFrame.PointTypeIconBox.ShortHelp = "點顯示模式";
+ReplayPhotoFrame.PointTypeIconBox.LongHelp = "允許選擇在軌跡中顯示的點: 刀尖,中心點及 \ 或接觸點 (如果已儲存)";
+
+ReplayPhotoFrame.PointTypeIconBox.TipOnly.ShortHelp  = "顯示刀尖或中心點";
+
+ReplayPhotoFrame.PointTypeIconBox.ContactOnly.ShortHelp = "只顯示路徑的接觸點";
+
+ReplayPhotoFrame.PointTypeIconBox.TipAndContact.ShortHelp = "顯示路徑的接觸點(如果已儲存), 否則顯示刀尖或中心點";
+
+ReplayPhotoFrame.PointTypeIconBox.TipOrContact.ShortHelp = "顯示刀尖,中心點或接觸點 (如果已儲存).";
+
+ReplayPhotoFrame.TracutModeIconBox.ShortHelp = "TRACUT 顯示模式";
+ReplayPhotoFrame.TracutModeIconBox.LongHelp = "顯示或不顯示 TRACUT 指令刀具路徑";
+
+ReplayPhotoFrame.TracutModeIconBox.TracutOFF.ShortHelp  = "不顯示 TRACUT 指令刀具路徑";
+
+ReplayPhotoFrame.TracutModeIconBox.TracutON.ShortHelp = "顯示 TRACUT 指令刀具路徑";
+
+ReplayPhotoFrame.ResetVisu.ShortHelp = "顯示更新";
+ReplayPhotoFrame.ResetVisu.LongHelp  = "顯示更新"; 
+
+MaxDistEditor.Value.ShortHelp = "軸和刀具間最大距離";
+MaxDistEditor.Value.LongHelp  = "需計算指定最大距離時可增加軸和刀具的顯示.";
+
+MaxDistEditor.Label = "最大距離";
+
+TotalTime = "全部時間";
+
+MachiningTime = "加工時間";
+
+
+
+

@@ -1,0 +1,98 @@
+CATCkeNullPtrAccess="無效的指標存取";
+CATCkeAssertFailed="堅持無效";
+CATCkeInvalidType="無效形式";
+CATCkeInvalidName=" 名字:  /P1";
+CATCkeNotYetImplemented="抱歉, 尚未能執行";
+CATCkeBoundError="/P1 超出邊界, 邊界為 /P2.. /P3";
+CATCkeConstObject="Const 物件";
+CATCkeUnderlyingError="模型之下錯誤";
+CATCkeWrongFormat="錯誤格式";
+
+CATCkeInvalidArg="無效變數: /P1";
+CATCkeUnsetParameter="未設定參數: /P1";
+
+CATCkeNotEvaluable="不可評估: /P1";
+CATCkeNotApplyable="不可應用: /P1";
+CATCkeUnrecognisedUnit="不可辨認的單位在: /P1";
+CATCkeBadUnit="不好的單位: /P1";
+CATCkeNotYetEvaluated="尚未評估";
+CATCkeWrongNumberArg="錯誤的變數數目";
+CATCkeWrongTypesArg="錯誤的變數形式";
+CATCkeNoCurrentParmFactory="無現有的參數產生: 請使用 CATCkeCreateParmFactory";
+CATCkeValueOutOfRangeGT="/P1 的值低於界限: 應較 /P2 大 /n 如您確定要輸入此值請編輯範圍";
+CATCkeValueOutOfRangeLW="/P1 的值大於界限: 應較 /P2 小 /n 如您確定要輸入此值請編輯範圍";
+CATCkeValueNotInEnum="/P1 的值未在可允許的範圍";
+CATCkeValueNotAuthorized=" /P1的值不可使用 ";
+
+ParseErrorTitle="文法錯誤";
+ParseError="文法錯誤行 /P2 :\n /P1";
+ParseWarningTitle="文法,警告";
+ParseWarning="文法,警告: \n  /P1";
+CATCkeNotParsable=" 無效結構: /P1 ";
+NearToken=" /P1 (near token : < /P2 >)";
+ActionOrPredicate="啟動或預測";
+PredicateOrConstraint="預測或拘束";
+Predicate="預測";
+Block="單節";
+FunctionalExpression="方程式表現";
+CATCkeNonExistingType=" 無效形式名稱: /P1 ";
+CATCkeNonExistingUnit=" 無效單位名稱: /P1";
+CATCkeTypeConflict=" 型態衝突 /P1 不是 /P2 的種類";
+CATCkeInvalidExpression=" 無效的表現種類 : 應該是  /P1";
+CATCkeNonExistingVariable=" 參數 /P1 不能使用在右鍵內容中.";
+CATCkeNonExistingMethod=" 無效的 /P1 使用 : /P2";
+CATCkeStringNotFinished=" 字串 /P1 須與一個 \" 來結束";
+CATCkeNameNotFinished=" 參數名稱 /P1須以 ` 來結束";
+CATCkeCommentNotFinished=" 說明須與 */ 來結束"; 
+CATCkeNonExistingAttribute=" 無效的屬性使用 : /P1";
+CATCkeBadNbArg1=" 在 /P1 的不佳因子數目: /P2 /P3 代替 /P4";
+CATCkeBadNbArg2="在 /P1 的不佳因子數目 : /P2";
+CATCkeBadKindOfArg1=" 在 /P1 的不佳因子數目 在 /P2 /P3 \n",
+                    " (should be /P4 instead of /P5)";
+CATCkeBadKindOfArg2=" 在 /P1 的不佳因子數目 在 /P2 /P3 ";
+CATCkeConstantModified=" /P1 的因子數目 在 /P2 /P3 被修改! \n",
+                    " (它不能是常數)";
+
+CATCkeAssignMKS="單位不一致 (/P1 進入 /P2).\n",
+                "建議您為常數指定精確單位, 否則 \n",
+				"將使用公制標準單位. \n",
+				"(如 : 10->10mm or MyRealParameter->MyRealParameter*1mm)\n";
+
+
+
+CATCkeAssignFctMKS="功能內單位不一致 /P3 (/P1 進入 /P2).\n",
+                "建議您使用常數單位, 否則 \n",
+				"將使用公制標準單位.\n",
+				"(Ex: 10->10mm or MyRealParameter->MyRealParameter*1mm)\n";
+
+CATCkeCompareMKS="單位不一致 (操作子 /P1 在 /P2 和 /P3 間).\n",
+                 "建議您使用常數單位, 否則 \n",
+				"將使用公制標準單位.\n",
+				 "(Ex: 10->10mm or MyRealParameter->MyRealParameter*1mm)\n";
+CATCkePowerMKS="嚐試使用操作子 ^ /P1 在相同數值至 /P2";
+
+CATKWELifInParamWarning="您正在刪除輸入相關特徵 /P1.\n",
+						"將會建立一個複製.";
+CATKWELifInParamWarningHd="參數刪除影響";
+CATKWELifInParamDeleteFailed="參數刪除失敗";
+
+CATKWELifInFeatWarning="您正在刪除輸入相關特徵 /P1.\n",
+					   "關係已不存在.";
+
+CATCkeMeasureInProduct="如特徵不在相同的包含器中, 則在產品層它無法使用相關特徵.";
+
+
+CATCkeBadLawNbFormal="一個 law 必須使用一個也是唯一的正式參數來輸入.";
+
+CATCkeNotFormalLawOutput="一個 law 必須使用一個也是唯一的正式參數來輸入.";
+CATCkeTypeNeeded2="定義物件形式功能 /P1 的第一個引數必須是一個文字字串.";
+CATCkeTypeNeeded="/P2 在功能 /P1 中的 /P2 必須是一個已存的件形式.";
+
+CATCkeLawBadFormalName="正式參數 /P1 與已存參數同名, 請重新命名它.";
+
+CATCkeBoundErrorSimpleMessage=" /P1 參數超過範圍.";
+
+PublicationType="知識庫";
+
+CATCkeMultipleValueErrorSimpleMessage="參數 /P1 數值可能不滿足表列多重數值.";
+CATCkeLexOverflow="請檢查關聯中有無過長的說明並嚐試減短它的長度.";

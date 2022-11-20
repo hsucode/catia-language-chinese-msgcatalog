@@ -1,0 +1,34 @@
+//fichier   CATStCmdAdvFill 
+CATStCmdFillSpec.Title = "自由曲面填滿";
+
+//Message au changement d'etat
+CATStCmdFillSpec.SelectFillLimitsState.Message="選擇連續邊線來定義封閉外形";
+CATStCmdFillSpec.NextEdgeSelection.Message="選擇下一個連續邊線";
+CATStCmdFillSpec.BadSelection.Message="不正確選擇: 無效或太遠. 選擇近一點的連續邊線.";
+CATStCmdFillSpec.NotIntersectingSelection.Message="所選邊線間有很小的間隙. 請選擇確實相交的邊線.";
+CATStCmdFillSpec.ChooseFillConfig.Message="兩種可能因素可定義填滿: 按一下應用以新增缺少邊線, 或手動來封閉微小間隙 ";
+//CATStCmdAdvFill.ModifyFillSurfaces.Message="當所有點為連續時,更改填滿外形修改邊界連續性或張力";
+CATStCmdFillSpec.ModifyFillSurfaces.Message="修改填滿外形更改邊界連續性或填滿中心點位置";
+
+//texts des continuites
+CATStCmdFillSpec.PointContinuity.MenuTitle="點連續";
+CATStCmdFillSpec.TangentContinuity.MenuTitle="切線連續";
+CATStCmdFillSpec.CurvatureContinuity.MenuTitle="曲率連續";
+
+
+//text vu dans 3D
+CATStCmdFillSpec.PointContinuity.DisplayedTitle="點";
+CATStCmdFillSpec.TangentContinuity.DisplayedTitle="切線";
+CATStCmdFillSpec.CurvatureContinuity.DisplayedTitle="曲率";
+CATStCmdFillSpec.GapText.DisplayedTitle="間隙 = ";
+
+//text du panel d'avertissement
+CATStCmdFillSpec.InvalidConfig.Title="無效圓角選擇";
+CATStCmdFillSpec.InvalidConfig.Message=
+"無效填滿組態 !
+無法只以兩曲線執行填滿命令.
+請新選擇元素或結束命令.";
+
+// Message d'erreur
+CATStCmdFillSpec.errorWndTitle.Message="填滿錯誤";
+CATStCmdFillSpec.error.Message="填滿時發生錯誤";

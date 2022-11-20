@@ -1,0 +1,90 @@
+//=====================================================================================
+//                                     CNEXT - CXRn
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-------------------------------------------------------------------------------------
+// FILENAME    :    CATDrwDimensionFrame
+// LOCATION    :    DraftingUI
+// AUTHOR      :    fgx
+// BUT         :    
+// DATE        :    26.11.1999
+//-------------------------------------------------------------------------------------
+// DESCRIPTION :    Tools/Option du Drafting
+//-------------------------------------------------------------------------------------
+// COMMENTS    :    
+//-------------------------------------------------------------------------------------
+// MODIFICATIONS     user  date        purpose
+//    HISTORY        ----  ----        -------
+//   01		  lgk	  25.06.02  Revision
+//   02		  lgk	  14.10.02  Revision2
+//   03		  lgk	  17.12.02  Revision3
+//=====================================================================================
+
+
+frameAnnotCreation.HeaderFrame.Global.Title="建立註解";
+frameAnnotCreation.HeaderFrame.Global.LongHelp="定義建立註解的特性.";
+
+frameAnnotCreation.IconAndOptionsFrame.OptionsFrame.labelSnappingOn.Title="建立與參考垂直的垂直導引";
+frameAnnotCreation.IconAndOptionsFrame.OptionsFrame.labelSnappingOn.LongHelp="建立與參考垂直的垂直導引";
+
+frameAnnotCreation.IconAndOptionsFrame.OptionsFrame.TextSnappingOn.Title="沿參考建立文字";
+frameAnnotCreation.IconAndOptionsFrame.OptionsFrame.TextSnappingOn.LongHelp="沿參考建立文字";
+
+frameAnnotCreation.IconAndOptionsFrame.OptionsFrame.TextLeadSnappingOn.Title="文字";
+frameAnnotCreation.IconAndOptionsFrame.OptionsFrame.TextLeadSnappingOn.LongHelp="文字";
+
+frameAnnotCreation.IconAndOptionsFrame.OptionsFrame.GDTSnappingOn.Title="幾何容差";
+frameAnnotCreation.IconAndOptionsFrame.OptionsFrame.GDTSnappingOn.LongHelp="幾何容差";
+
+frameAnnotMove.HeaderFrame.Global.Title="移動";
+frameAnnotMove.HeaderFrame.Global.LongHelp="移動
+定義註解移動的方式.";
+
+frameAnnotMove.IconAndOptionsFrame.OptionsFrame.AnnotActivSnap.Title="以預設擷取(同時按下 shift 鍵)";
+frameAnnotMove.IconAndOptionsFrame.OptionsFrame.AnnotActivSnap.LongHelp="啟動 Snap
+當移動註解時啟動鎖定.
+按一下 自訂擷取 指定註解是否要依據方向鎖定在格線上,
+或同時按下 SHIFT 鍵暫時啟動或不啟動此選項.";
+
+frameAnnotMove.IconAndOptionsFrame.OptionsFrame.frmConfigSnap.pushAnnotActiveSnap.Title="自訂擷取中...";
+frameAnnotMove.IconAndOptionsFrame.OptionsFrame.frmConfigSnap.pushAnnotActiveSnap.LongHelp="設定註解在格點或定位方向上的
+位置的擷取方法.";
+
+frameDittoInv.HeaderFrame.Global.Title=" 2D 分件";
+frameDittoInv.HeaderFrame.Global.LongHelp="定義建立 2D 分件時所使用的選項.";
+frameDittoInv.IconAndOptionsFrame.OptionsFrame.DittoInvViewScale.Title="以相同大小建立 2D 分件";
+frameDittoInv.IconAndOptionsFrame.OptionsFrame.DittoInvViewScale.LongHelp="以相同大小建立 2D 分件,
+不論視圖比例為何.";
+
+frameDittoInv.IconAndOptionsFrame.OptionsFrame.DittoDrag.Title="避免直接操作";
+frameDittoInv.IconAndOptionsFrame.OptionsFrame.DittoDrag.LongHelp="避免以滑鼠直接移動 2D 分件.";
+frameDittoInv.IconAndOptionsFrame.OptionsFrame.DittoScale.Title="避免直接縮放";
+frameDittoInv.IconAndOptionsFrame.OptionsFrame.DittoScale.LongHelp="避免以滑鼠直接縮放 2D 分件.";
+
+frmBalloon.HeaderFrame.Global.Title="建立球形標註";
+frmBalloon.HeaderFrame.Global.LongHelp="定義建立球形標註的選項.";
+frmBalloon.IconAndOptionsFrame.OptionsFrame.chkBalAssoc.Title="3D 相關性";
+frmBalloon.IconAndOptionsFrame.OptionsFrame.chkBalAssoc.LongHelp="使用在空間中定義的參數來建立球形標註";
+Number="數字化";
+Instance="元件名稱";
+Part="零件號碼";
+
+frmTable.HeaderFrame.Global.Title="表格";
+frmTable.HeaderFrame.Global.LongHelp="定義表格上使用的選項.";
+frmTable.IconAndOptionsFrame.OptionsFrame.chkTableResize.Title="編輯 cell 時重新計算表格";
+frmTable.IconAndOptionsFrame.OptionsFrame.chkTableResize.LongHelp="編輯 cell 時重新計算表格";
+frmTable.IconAndOptionsFrame.OptionsFrame.chkTableAutoSplit.Title="不可分割表格至數個活頁";
+frmTable.IconAndOptionsFrame.OptionsFrame.chkTableAutoSplit.LongHelp="分割只適用於材料清單, 報告和由CSV 檔案而來的表格.";
+frmTable.IconAndOptionsFrame.OptionsFrame.tmpFrame.lblTableSplitMargin.Title="區域:";
+frmTable.IconAndOptionsFrame.OptionsFrame.tmpFrame.lblTableSplitMargin.LongHelp="計算分割時以活頁的底部開始計算區域.";
+
+annotSnap.Title="標註鎖定";
+annotSnap.frameAnnotActivSnap.HeaderFrame.Global.Title="標註鎖定";
+annotSnap.frameAnnotActivSnap.HeaderFrame.Global.LongHelp="標註鎖定";
+annotSnap.frameAnnotActivSnap.IconAndOptionsFrame.OptionsFrame.frameRadioAnnotActivSnap.frameRadioAnnotActivSnaplocked.radioAnnotSnapOnGrid.Title="格線上";
+annotSnap.frameAnnotActivSnap.IconAndOptionsFrame.OptionsFrame.frameRadioAnnotActivSnap.frameRadioAnnotActivSnaplocked.radioAnnotSnapOnGrid.LongHelp="鎖定標註在格線上.";
+annotSnap.frameAnnotActivSnap.IconAndOptionsFrame.OptionsFrame.frameRadioAnnotActivSnap.frameRadioAnnotActivSnaplocked.radioAnnotSnapOnOrient.Title="依據導引方向";
+annotSnap.frameAnnotActivSnap.IconAndOptionsFrame.OptionsFrame.frameRadioAnnotActivSnap.frameRadioAnnotActivSnaplocked.radioAnnotSnapOnOrient.LongHelp="依據導引方向";
+annotSnap.frameAnnotActivSnap.IconAndOptionsFrame.OptionsFrame.frameRadioAnnotActivSnap.frameRadioAnnotActivSnaplocked.radioAnnotSnapBoth.Title="兩者";
+annotSnap.frameAnnotActivSnap.IconAndOptionsFrame.OptionsFrame.frameRadioAnnotActivSnap.frameRadioAnnotActivSnaplocked.radioAnnotSnapBoth.LongHelp="兩者";
+
+

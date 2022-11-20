@@ -1,0 +1,315 @@
+//---------------------------------------------------------------------------
+//  DIALOGUE COMMON TO ALL WINDOWS
+//---------------------------------------------------------------------------
+
+BOK = "< 上一步" ;
+BCancel = "下一步 >" ;
+BApply = "取消" ;
+
+CATInsErrWindow.Title = "錯誤";
+
+//---------------------------------------------------------------------------
+//  SETUP WINDOW 
+//---------------------------------------------------------------------------
+
+Setup.Title = "分配塗彩設定";
+ErrorWindow.Title = "錯誤";
+
+//---------------------------------------------------------------------------
+// ERRORS INIT
+//--------------------------------------------------------------------------
+ErrorSRCDIR = "錯誤: SRCDIR 未設定 \n";
+ErrorSTARTDIR = "錯誤: STARTDIR 未設定 \n";
+ErrHOME="錯誤: 原點未設定 \n";
+NotRoot =  "您必須以 super-user(root) 權限來安裝 \n\ 請以 super-user 來執行下列指令 :\nsu - root \nor  login root\nThen rerun /p1\/start \n";
+NotAdministratorBatch="需要管理者權限來安裝程式.";
+ErrProductLine ="錯誤: PRODUCT_LINE 未設定 \n";
+ErrMarketingVersion = "錯誤: MARKETING_VERSION 未設定 \n";
+ErrOpenLog ="警告: 無法開啟記錄檔案 /p1 \n";
+ErrWndErrorWriteLog="警告: 無法寫入檔案 /p1\n";
+ErrNoSpaceRootHome=" /p1 沒有足夠的空間 - 至少需要 /p2 Kb\n";	  
+
+//---------------------------------------------------------------------------
+//  WELCOME 
+//---------------------------------------------------------------------------
+
+WndWelcome.Title     = "歡迎";
+Welcome.Label1.Title = "歡迎至 /p1 /p2 安裝程式. 此程式" ;
+Welcome.Label2.Title = "將會安裝 /p1 /p2 至您的電腦." ;
+Welcome.Label3.Title = "\n";
+Welcome.Label4.Title = "按一下取消退出安裝程式. 按一下下一步來繼續.";
+Welcome.Label5.Title = "\n";
+
+
+//---------------------------------------------------------------------------
+//  DESTINATION DIRECTORY
+//---------------------------------------------------------------------------
+
+WndDestination.Title       = "選擇安裝位置";
+Destination.Label1.Title   = "將會安裝 /p1 /p2 至下列目錄:";
+Destination.Label1GASP.Title   = "將會安裝 /p1 /p2 with Service Pack Level /p3 至下列目錄:";
+Destination.Label2.Title   = "要安裝至下列目錄, 按一下下一步.";
+Destination.Label3.Title   = "\n";
+Destination.Label4.Title   = "\n";
+Destination.Label5.Title   = "\n";
+Destination.Label6.Title   = "您可按一下取消,退出安裝 /p1 /p2 程式.";
+Destination.Label6GASP.Title   = "您可按一下取消,退出安裝 /p1 /p2 with Service Pack level /p3 程式.";
+Destination.Label7.Title   = "\n";
+Destination.Frame.Title    = "安裝目錄"; 
+Destination.Frame.BrowsePushButton.Title="瀏覽...";
+QtnWndCreateDirectory.Title = "確認建立目錄";
+QtnWndCreateDirectory.Text = "目錄 \n/p1\n 不存在.\n 您要建立目錄嗎? \n";
+
+//---------------------------------------------------------------------------
+//  ERROR MESSAGES: DESTINATION DIRECTORY  
+//---------------------------------------------------------------------------
+ErrWndCreateDir.Title = "錯誤";
+ErrWndCreateDir.Text = "建立目錄錯誤 :\n/p1\n/p2\n";
+ErrWndBadDir.Title   = "錯誤";
+ErrWndBadDir.Text    = "安裝目錄不正確 \n";
+ErrWndEmptyDir.Title = "錯誤";
+ErrWndEmptyDir.Text = "/p1 必須是空的 \n";
+ErrWndFileAlreadyExist.Title = "錯誤";
+ErrWndFileAlreadyExist.Text = "無法建立目錄 /p1\n. The name already exists.\n";
+ErrWndSyntaxDir.Title = "錯誤";
+ErrWndSyntaxDir.Text = "目錄文法不正確. \n 不允許空白字元和 tab .\n";
+ErrWndStatFile.Title = "錯誤";
+ErrWndStatFile.Text = "目錄存取錯誤: \n/p1\n\n/p2\n";
+ErrWndAvailSpace.Title = "錯誤";
+ErrWndAvailSpace.Text = "可用空間計算:\n/p1\n/p2\n";
+ErrWndRequiredSpace.Title = "錯誤";
+ErrWndRequiredSpace.Text = "可用空間計算:\n/p1\n/p2\n";
+ErrWndGALevel.Title = "錯誤";
+ErrWndGALevel.Text = "您無法安裝 /p1 版本資料至/p2 版本.\n";
+ErrWndOS.Title = "錯誤";
+ErrWndOS.Text = "您無法安裝 /p1 作業系統資料至 /p2 作業系統. \n";
+ErrWndOpenExistingFile.Title = "錯誤";
+ErrWndOpenExistingFile.Text = "無法開啟 %s 檔案.\n%s\n";
+
+
+//---------------------------------------------------------------------------
+//  INSTALLED SAMPLES 
+//---------------------------------------------------------------------------
+
+WndInstallSamples.Title     = "安裝例子";
+InstallSamples.Label1.Title = "下列例子檔案已安裝 "; 
+InstallSamples.Label2.Title = "在下列目錄 /p1\n.";
+InstallSamples.Label3.Title = "要安裝 /p1 /p2 例子, 按一下下一步." ;
+InstallSamples.Label4.Title = "要安裝至不同目錄, 請按上一步." ;
+InstallSamples.Label5.Title = "您可按取消安裝來取消安裝 /p1 /p2 ." ;
+InstallSamples.InstallSamplesLabel.Title = "安裝例子:";
+
+//---------------------------------------------------------------------------
+//  CHOOSE SETUP TYPE
+//---------------------------------------------------------------------------
+
+WndSetup_Type.Title     = "設定型式";
+Setup_Type.Label1.Title = "\n";
+Setup_Type.Label2.Title = "選擇您想要的設定型式, 再按一下下一步";
+Setup_Type.Label3.Title = "\n";
+Setup_Type.Label4.Title = "\n";
+//Setup_type.FrameSetupType.Title  = "";
+Setup_Type.FrameSetupType.RBComplete.Title = "完成 - 將安裝所有例子";
+Setup_Type.FrameSetupType.RBCustom.Title =   "自訂   - 您可選擇要安裝的例子";
+
+
+//---------------------------------------------------------------------------
+//  SELECT SOFTWARE
+//---------------------------------------------------------------------------
+
+WndMediaSamples.Title     = "選擇例子";
+MediaSamples.Label1.Title = "按一下選擇您要安裝的例子";
+MediaSamples.Label2.Title = "在目錄y /p1.";
+MediaSamples.Label3.Title = "您可按取消安裝來取消安裝 /p1 /p2 ." ;
+MediaSamples.Label4.Title = "\n";
+MediaSamples.ListLabel.Title = "選擇例子:";
+MediaSamples.Frame.AvailableSizeLabel.Title = "可用空間  " ;
+MediaSamples.Frame.RequiredSizeLabel.Title = "所需空間  " ;
+MediaSamples.Frame.AvailableSizeValue.Title = "\t KB";
+MediaSamples.Frame.RequiredSizeValue.Title = "\t KB";
+
+//---------------------------------------------------------------------------
+//   ERROR MESSAGES: SELECT SOFTWARE
+//---------------------------------------------------------------------------
+
+ErrWndProductNotSelect.Title = "錯誤";
+ErrWndProductNotSelect.Text  = "至少需選擇一產品或組態.\n";
+ErrWndSizeToUnload.Title     = "錯誤";
+ErrWndSizeToUnload.Text      = " /p3 中沒有足夠的空間可安裝 \n 所有的檔案 \n\n 可用 \t : /p1 KB\n 所需 \t\t : /p2 KB\n";
+ErrWndEmptyMediaToc.Title    = "錯誤";
+ErrWndEmptyMediaToc.Text     = " CD-ROM 中的產品和組態清單是空的.\n";
+
+
+//---------------------------------------------------------------------------
+//  RECAP
+//---------------------------------------------------------------------------
+
+WndResume.Title              = "開始複製檔案";
+Resume.Label1.Title          = "安裝程式已有足夠資訊可開始安裝程式.";
+Resume.Label2.Title          = "\n";
+Resume.Label3.Title          = "如您要修改任何設定請按 上一步.";
+Resume.Label4.Title          = "如果要繼續, 請按下一步開始安裝程式.";
+Resume.Label5.Title          = "\n";
+Resume.SettingLabel.Title    = "目前設定";
+Resume.ProductName.Title     = "/p1 /p2";
+Resume.DestinationName.Title = "安裝目錄";
+
+Resume.SpaceUsed.Title       = "所需空間  : /p1 KB";
+Resume.SpaceAvail.Title      = "可用空間 : /p1 KB";
+
+WndResume.BCancel                = "安裝;
+
+//---------------------------------------------------------------------------
+// COPY FILES 
+//---------------------------------------------------------------------------
+
+Transfer.Title         = "安裝";
+Transfer.Label1.Title  = "開始複製檔案 ...";
+Transfer.Label2.Title  = "\n";
+Transfer.Label3.Title  = "\n";
+Transfer.BCancel       = "取消" ;
+
+//---------------------------------------------------------------------------
+//   ERROR MESSAGES: COPY FILES  
+//---------------------------------------------------------------------------
+
+ErrWndTransfer.Title = "錯誤";
+ErrWndTransfer.Text  = "複製檔案錯誤. \n 請連絡系統管理員. \n";
+ErrWndCustomize.Title = "錯誤";
+ErrWndCustomize.Text  = "設定 /p1 /p2 環境變數錯誤.";
+ErrWndCheckCATIAIntegrity.Title = "錯誤";
+ErrWndCheckCATIAIntegrity.Text = "請檢查完整性. \n 詳細資料請參考 /p1\n";
+ErrWndCheckIntegrity.Log = "檢查完整性失敗.\n";
+ErrWndEnvName.Title = "錯誤";
+ErrWndEnvName.Text = "檔案 /p1 尚未存在 \n";
+ErrWndEnvPathName.Title = "錯誤";
+ErrWndEnvPathName.Text = "開啟 /p1 檔案失敗 \n";
+ErrWndServicePack.Title = "警告";
+ErrWndServicePack.Text = "部份您剛安裝的檔案不是正確版本. \n 您必須重新安裝 Service Pack /p1\n";
+ErrWndNothingToUnload.Title = "錯誤";
+ErrWndNothingToUnload.Text = "沒有檔案可複製...?\n";
+ErrWndInterruptButton.Title = "錯誤";
+ErrWndInterruptButton.Text = "";
+InformationWindow.ErrWndInterruptButton.Title = "中斷進行中 ...\n";
+ErrWndAccessToc.Title = "錯誤";
+ErrWndAccessToc.Text = "/p1 未安裝 \n";
+ErrWndOpenPresent.Title = "錯誤";
+ErrWndOpenPresent.Text = "無法開啟 /p1 : /p2";
+ErrWndOpenToc.Title = "錯誤";
+ErrWndOpenToc.Text = "無法開啟 /p1 : /p2";
+
+
+WndLogError.Title           ="記錄檔案錯誤";
+ErrWndOpenLogFileError.Title = "錯誤";
+ErrWndOpenLogFileError.Text = "開啟錯誤記錄檔案 /p1 失敗 \n/p2";
+
+//---------------------------------------------------------------------------
+// CHANGECDROM 
+//---------------------------------------------------------------------------
+NotifyChangeCD.Title="插入下一片 CD-ROM";
+NotifyChangeCD.MsgChange=" 請移除目前 CD-ROM  並插入下一片 CD-ROM 號碼 /p1\n";
+NotifyChangeCD.Error="更換 CD-ROM 錯誤";
+NotifyChangeCD.ErrorChange="您未插入正確 CD-ROM\n";
+
+//---------------------------------------------------------------------------
+//  FINISH 
+//---------------------------------------------------------------------------
+WndFinish.Title        = "安裝完成";
+Finish.LabelInterrupt1.Title = "設定已中斷.";
+Finish.LabelInterrupt2.Title = "\n";
+Finish.LabelInterrupt3.Title = "詳細資料請參考 /p1";
+Finish.LabelInterrupt4.Title = "\n";
+Finish.LabelInterrupt5.Title = "\n";
+Finish.LabelTransferKO1.Title = "安裝轉換失敗.";
+Finish.LabelTransferKO2.Title = "\n";
+Finish.LabelTransferKO3.Title = "詳細資料請參考 /p1";
+Finish.LabelTransferKO4.Title = "\n";
+Finish.LabelTransferKO5.Title = "\n";
+Finish.LabelOKStart1.Title = "已安裝 /p1 /p2 至您的電腦.";
+Finish.LabelOKStart2.Title = "\n";
+Finish.LabelOKStart3.Title = "\n";
+Finish.LabelOKStart4.Title = "\n";
+Finish.LabelOKStart5.Title = "\n";
+
+WndFinish.BCancel = "完成";
+
+
+
+//---------------------------------------------------------------------------
+//  EXIT 
+//---------------------------------------------------------------------------
+
+Exit.Title        = "退出安裝程式";
+Exit.Label1.Title = "安裝程式未完成. 如您現在退出安裝程式";
+Exit.Label2.Title = "將不會安裝程式.";
+Exit.Label3.Title = "您可以待會再安裝";
+Exit.Label4.Title = "程式.";
+Exit.Label5.Title = "\n";
+Exit.Label6.Title = "要繼續安裝程式, 請按回復.";
+Exit.Label7.Title = "\n";
+Exit.Label8.Title = "退出安裝程式, 請按退出安裝.";
+Exit.BCancel      = "退出安裝.";
+Exit.BOK          = "回復.";
+
+//-----------
+// ERRORS
+//-----------
+ErrInterrupt="命令由訊號 /p1 中斷 \n";
+
+
+
+//---------------------------------------------------------------------------
+// BATCH
+//---------------------------------------------------------------------------
+
+ErrWndDestination.Title = "錯誤";
+ErrorBatchDirUnloadNotExist.Text = "目錄 /p1 不存在. 您必須建立或使用 -newdir 選項 \n";
+ErrorBatchReferenceNotExistHelp.Text ="要表列所有 CD-ROM 上的產品和組態清單, 使用 -list 選項 \n 要指定產品和組態清單, 使用 -l \"list_to_unload\" option\nExample : -l \"XXX.smp YYY.smp\"\n";
+ErrorBatchReferenceAlreadyUnload.Text = "警告 : 參考 /p1 已安裝 \n";
+ErrorBatchReferenceNotExist.Text = "錯誤 : 參考 /p1 在 CD-ROM 上未知 \n";
+ErrorBatchIncompatibleOption.Text = "選項 /p1 和 /p2 無法同時使用 \n";
+ErrorBatchNotValidOption1.Text ="/p1 不是可用的選項 \n";
+ErrorBatchNotValidOption2.Text ="/p1 /p2 不是可用的選項 \n";
+ErrorBatchNotValidOption3.Text ="/p1 /p2 /p3 不是可用的選項 \n";
+ErrorBatchBadOptions.Text = "不是可用的選項 :\n";
+ErrorBatchMissOption.Text = "至少須選擇一個產品或組態. 使用 -l 或 -all 選項選擇您要安裝的產品或組態 \n";
+ErrorBatchOptionAndDir.Text = "選項 /p1 後須指定完整的路徑 \n";
+ErrorBatchNoWriteEnvDir.Text = "選項 [-D /p1] 不正確. \n 安裝程式無法寫入 /p2\n";
+ErrorBatchNoWriteDir = "選項 [/p1 /p2] 不正確. \n 安裝程式無法寫入 /p3\n";
+ErrorBatchNothingToUnload.Text = "錯誤 : 所有以 -l 選項指定的產品和組態均已安裝 \n";
+ErrorBatchTransferKO1.Text = "轉換 KO - 返回碼 = /p1\n";
+ErrorBatchTransferKO2.Text = "轉換 KO - 未找到檔案 /p1 \n";
+ErrorBatchUpdatePRESENT.Text = "無法更新目前檔案 \n/p1\n";
+ErrorBatchOptionUseless.Text="警告 : 選項 /p1 忽略 \n";
+MsgSamples = "# 例子 /p1 /p2\n#==========================================\n";
+MsgUnloadSamples="(/p1 of /p2) 安裝 /p3";
+ErrCmdFailed =" 命令 /p1 失敗. \n";	
+MsgUpdateFile = "更新檔案 /p1\n";
+ErrUpdateFile = "安裝程式無法更新檔案 /p1\n";
+ErrCreateDir =" 無法建立目錄 /p1 失敗 : /p2\n";
+MsgInitial ="\n\n 初始化 /p1 安裝 \n"; 
+MsgAdditional ="\n\n 附加例子 /p1 安裝 \n"; 
+MsgUnload = "\n 下列例子將安裝 :\n"; 
+MsgListe = "例子數量 /p1\n 例子清單 :/p2 \n";
+ErrWindow = "更換對話框 :\n 對話框型式內部錯誤 :/p1\n ";
+ErrLabels = "建立標籤 :\n 內部錯誤: /p1 > /p2\n";
+ErrMaxWindow ="內部錯誤 : NBMAXERRORWINDOW 必須增加. \n 視窗無法顯示此錯誤 :";
+ErrWndBadCopy="在批次模式, 您必須複製 CD-ROMs 在相同目錄 \n";
+ErrCommandFailed="命令 /p1 失敗 \n";
+ErrCommandInterrupted ="命令 /p1 中斷 \n"; 
+UpdatePRESENTLogInfo="更新目前檔案 \n";
+BatchFailed="批次作業失敗 : 請查看 /p1\n";
+FileUpdateOK="檔案 /p1 已成功更新";
+ErrorNewdirIgnored="警告: -newdir 選項忽略, 因為目錄 /p1 已存在 \n";
+//----------------------
+// HELP
+//---------------------
+Help.Usage       = "用法 :\n";
+Help.CommandLine = "startsmp [-u unload_dir] [-newdir] [-l list_to_unload |-all | -list ] [-v] [-h]\n";
+Help.Unload      ="-u unload_dir        : 指定安裝目錄.\n";
+HelpNewDir       ="-newdir              : 如不存在, 則建立安裝目錄. \n";
+HelpList         ="-list                : 表列 CD-ROM 上清單. \n";
+HelpAll          ="-all                 : 表列所有 CD-ROM 上例子清單.\n";
+HelpL       ="-l list_to_unload    : 指定載入例子清單.\n";
+Help.v           ="-v                   : 說明模式.\n";
+Help.Help        ="-h                   : 顯示說明.\n";

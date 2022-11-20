@@ -1,0 +1,284 @@
+// =====================================================================
+// NLS for Tool Selection Panel
+// =====================================================================
+Fr.Frloc.LabType.Title = "型式: ";
+Fr.Frloc.pFrLoc.LabLoc.Title  = "搜尋: ";
+
+Fr.Frloc.IconToolListFrame.ToolListMode.Title = "TL";
+Fr.Frloc.IconToolListFrame.ToolListMode.ShortHelp = "Tool Lists mode access";
+Fr.Frloc.IconToolListFrame.ToolListMode.LongHelp  = "Allow Tool List selection in TDM";
+
+Fr.FrTab.TabCont.TabPageSimple.Title   = "單純";
+Fr.FrTab.TabCont.TabPageSimple.FrTabSimple.NameDiamFrame.LabEdt.Title = "名稱: ";
+Fr.FrTab.TabCont.TabPageSimple.FrTabSimple.NameDiamFrame.ExecuteBtn.Title = "執行";
+Fr.FrTab.TabCont.TabPageSimple.FrTabSimple.NameDiamFrame.FrName.LabEdt.Title = "名稱: ";
+Fr.FrTab.TabCont.TabPageSimple.FrTabSimple.NameDiamFrame.FrName.ExecuteBtn.Title = "執行";
+Fr.FrTab.TabCont.TabPageSimple.FrTabSimple.NameDiamFrame.FrMatMach.LblMachine.Title = "機具: ";
+Fr.FrTab.TabCont.TabPageSimple.FrTabSimple.NameDiamFrame.FrMatMach.LblMaterial.Title = "材料: ";
+
+Fr.FrTab.TabCont.TabPageSimple.FrTabSimple.ToolListIDFrame.FrName.LabToolListID.Title = "刀具清單 ID: ";
+Fr.FrTab.TabCont.TabPageSimple.FrTabSimple.ToolListIDFrame.FrName.EditorToolListID.ShortHelp = "Enter a Tool List ID";
+Fr.FrTab.TabCont.TabPageSimple.FrTabSimple.ToolListIDFrame.FrName.EditorToolListID.LongHelp = "Enter a Tool List ID\nor a substring \nto launch Tool List selection dialog.";
+Fr.FrTab.TabCont.TabPageSimple.FrTabSimple.ToolListIDFrame.FrName.PushBtnToolListSel.Title = "...";
+Fr.FrTab.TabCont.TabPageSimple.FrTabSimple.ToolListIDFrame.FrName.PushBtnToolListSel.ShortHelp = "Tool List selection";
+Fr.FrTab.TabCont.TabPageSimple.FrTabSimple.ToolListIDFrame.FrName.PushBtnToolListSel.LongHelp  = "Select a Tool List in TDM";
+Fr.FrTab.TabCont.TabPageSimple.FrTabSimple.ToolListIDFrame.FrName.ExecuteBtn.Title = "執行";
+Fr.FrTab.TabCont.TabPageSimple.FrTabSimple.ToolListIDFrame.FrMatMach.LblMachine.Title = "機具: ";
+Fr.FrTab.TabCont.TabPageSimple.FrTabSimple.ToolListIDFrame.FrMatMach.LblMaterial.Title = "材料: ";
+
+Fr.FrTab.TabCont.TabPageAdvanced.Title = "進階";
+Fr.FrTab.TabCont.TabPageAdvanced.LabSearch.Title = "以標準搜尋: ";
+Fr.FrTab.TabCont.TabPageAdvanced.FrBtnCri.LabAtt.Title = "屬性:";
+Fr.FrTab.TabCont.TabPageAdvanced.FrBtnCri.LabCon.Title = "狀態:";
+Fr.FrTab.TabCont.TabPageAdvanced.FrBtnCri.LabVal.Title = "數值:";
+
+Fr.FrTab.TabCont.TabPageAdvanced.FrBtnSup.SupBtn.Title = "刪除";
+Fr.FrTab.TabCont.TabPageAdvanced.FrBtnSup.ResetBtn.Title = "清除全部";
+
+Fr.FrTab.TabCont.TabPageAdvanced.FrCst.ExecuteBtn.Title = "執行";
+
+ToolFSSelectionPanel.Title = "由 TDM 萃取進給和速度";
+
+UserRep = "使用者表現方式";
+
+Tool.Title = "刀具";
+PanelQueryTool.Title = "搜尋刀具";
+NoTool.Title = "未找到刀具";
+OneTool.Title = "找到 1 把刀具";
+ResultTool.Title = " 找到刀具";
+
+Insert.Title = "刀片";
+PanelQueryInsert.Title = "搜尋刀片";
+NoInsert.Title = "未找到刀片";
+OneInsert.Title = "找到 1 片刀片";
+ResultInsert.Title = " 找到刀片";
+
+
+ToolAssembly.Title = "刀具組立";
+PanelQueryToolAssembly.Title = "搜尋刀具組立";
+NoToolAssembly.Title = "未找到刀具組立";
+OneToolAssembly.Title = "找到 1 把刀具組立";
+ResultToolAssembly.Title = " 找到刀具組立";
+
+// =====================================================================
+// Operators
+// =====================================================================
+like            = "包含";
+egalString      = "是";
+egal            = "=";
+plusGrand       = ">";
+plusGrandOuEgal = ">=";
+plusPetit       = "<";
+plusPetitOuEgal = "<=";
+
+// =====================================================================
+// Result label
+// =====================================================================
+Result.Title         = " 找到刀具";
+
+// =====================================================================
+// Tool Types Helps
+// =====================================================================
+
+MfgDrillTool.ShortHelp = "鑽頭";
+MfgDrillTool.LongHelp  = "Select Drill Tool";
+
+MfgTapTool.ShortHelp = "絲攻";
+MfgTapTool.LongHelp  = "Select Tap Tool";
+
+MfgReamerTool.ShortHelp = "鉸刀";
+MfgReamerTool.LongHelp  = "Select Reamer Tool";
+
+MfgCountersinkTool.ShortHelp = "沉孔刀";
+MfgCountersinkTool.LongHelp = "Select Countersink Tool";
+
+MfgSpotDrillTool.ShortHelp  = "點鑽";
+MfgSpotDrillTool.LongHelp   = "Select Spot Drill Tool";
+
+MfgCounterboreMillTool.ShortHelp  = "魚眼銑刀";
+MfgCounterboreMillTool.LongHelp   = "Select Counterbore Mill Tool";
+
+MfgEndMillTool.ShortHelp  = "端銑刀";
+MfgEndMillTool.LongHelp   = "Select End Mill Tool";
+
+MfgThreadMillTool.ShortHelp  = "牙刀";
+MfgThreadMillTool.LongHelp   = "Select Thread Mill Tool"; // LBP le 13/11/2000
+
+MfgFaceMillTool.ShortHelp  = "面銑刀";
+MfgFaceMillTool.LongHelp   = "Select Face Mill Tool";
+
+MfgMultiDiamDrillTool.ShortHelp  = "多階直徑鑽頭";
+MfgMultiDiamDrillTool.LongHelp   = "Select Multi Diameter Drill Tool";
+
+MfgTwoSidesChamferingTool.ShortHelp = "兩側倒角刀";
+MfgTwoSidesChamferingTool.LongHelp  = "Select Two Sides Chamfering Tool";
+
+MfgBoringAndChamferingTool.ShortHelp = "搪刀和倒角刀";
+MfgBoringAndChamferingTool.LongHelp = "Select Boring and Chamfering Tool";
+
+MfgConicalMillTool.ShortHelp  = "圓錐銑刀";
+MfgConicalMillTool.LongHelp   = "Select Conical Mill Tool";
+
+MfgCenterDrillTool.ShortHelp  = "中心鑽";
+MfgCenterDrillTool.LongHelp   = "Select Center Drill Tool";
+
+MfgBoringBarTool.ShortHelp  = "搪刀桿";
+MfgBoringBarTool.LongHelp  = "Select Boring Bar Tool";
+
+MfgTSlotterTool.ShortHelp = "T-槽刀";
+MfgTSlotterTool.LongHelp  = "Select T-Slotter Tool";
+
+CATEMfgDrillTool.ShortHelp = "鑽頭";
+CATEMfgDrillTool.LongHelp  = "Select Drill Tool";
+
+CATEMfgTapTool.ShortHelp = "絲攻";
+CATEMfgTapTool.LongHelp  = "Select Tap Tool";
+
+CATEMfgReamerTool.ShortHelp = "鉸刀";
+CATEMfgReamerTool.LongHelp  = "Select Reamer Tool";
+
+CATEMfgCountersinkTool.ShortHelp = "沉頭刀";
+CATEMfgCountersinkTool.LongHelp = "Select Countersink Tool";
+
+CATEMfgSpotDrillTool.ShortHelp  = "點鑽";
+CATEMfgSpotDrillTool.LongHelp   = "Select Spot Drill Tool";
+
+CATEMfgCounterboreMillTool.ShortHelp  = "沉頭銑刀";
+CATEMfgCounterboreMillTool.LongHelp   = "Select Counterbore Mill Tool";
+
+CATEMfgEndMillTool.ShortHelp  = "端銑刀";
+CATEMfgEndMillTool.LongHelp   = "Select End Mill Tool";
+
+CATEMfgThreadMillTool.ShortHelp  = "牙刀";
+CATEMfgThreadMillTool.LongHelp   = "Select Thread Mill Tool"; // LBP le 13/11/2000
+
+CATEMfgFaceMillTool.ShortHelp  = "面銑刀";
+CATEMfgFaceMillTool.LongHelp   = "Select Face Mill Tool";
+
+CATEMfgMultiDiamDrillTool.ShortHelp  = "Multi Diameter Drill";
+CATEMfgMultiDiamDrillTool.LongHelp   = "Select Multi Diameter Drill Tool";
+
+CATEMfgTwoSidesChamferingTool.ShortHelp = "Two Sides Chamfering";
+CATEMfgTwoSidesChamferingTool.LongHelp  = "Select Two Sides Chamfering Tool";
+
+CATEMfgBoringAndChamferingTool.ShortHelp = "Boring and Chamfering";
+CATEMfgBoringAndChamferingTool.LongHelp = "Select Boring and Chamfering Tool";
+
+CATEMfgConicalMillTool.ShortHelp  = "Conical Mill";
+CATEMfgConicalMillTool.LongHelp   = "Select Conical Mill Tool";
+
+CATEMfgCenterDrillTool.ShortHelp  = "Center Drill";
+CATEMfgCenterDrillTool.LongHelp   = "Select Center Drill Tool";
+
+CATEMfgBoringBarTool.ShortHelp  = "Boring Bar";
+CATEMfgBoringBarTool.LongHelp  = "Select Boring Bar Tool";
+
+CATEMfgTSlotterTool.ShortHelp = "T-Slotter";
+CATEMfgTSlotterTool.LongHelp  = "Select T-Slotter Tool";
+
+// outils de tournage
+//----------------------------------------------
+MfgExternalTool.ShortHelp = "External Insert-Holder";
+MfgExternalTool.LongHelp  = "Select External Insert-Holder";
+
+MfgInternalTool.ShortHelp = "Internal Insert-Holder";
+MfgInternalTool.LongHelp  = "Select Internal Insert-Holder";
+
+MfgGrooveExternalTool.ShortHelp = "Groove External Insert-Holder";
+MfgGrooveExternalTool.LongHelp  = "Select Groove External Insert-Holder";
+
+MfgGrooveInternalTool.ShortHelp = "Groove Internal Insert-Holder";
+MfgGrooveInternalTool.LongHelp  = "Select Groove Internal Insert-Holder";
+
+MfgGrooveFrontalTool.ShortHelp = "Groove Frontal Insert-Holder";
+MfgGrooveFrontalTool.LongHelp  = "Select Groove Frontal Insert-Holder";
+
+MfgThreadExternalTool.ShortHelp = "Thread External Insert-Holder";
+MfgThreadExternalTool.LongHelp  = "Select Thread External Insert-Holder";
+
+MfgThreadInternalTool.ShortHelp = "Thread Internal Insert-Holder";
+MfgThreadInternalTool.LongHelp  = "Select Thread Internal Insert-Holder";
+
+CATEMfgExternalTool.ShortHelp = "External Insert-Holder";
+CATEMfgExternalTool.LongHelp  = "Select External Insert-Holder";
+
+CATEMfgInternalTool.ShortHelp = "Internal Insert-Holder";
+CATEMfgInternalTool.LongHelp  = "Select Internal Insert-Holder";
+
+CATEMfgGrooveExternalTool.ShortHelp = "Groove External Insert-Holder";
+CATEMfgGrooveExternalTool.LongHelp  = "Select Groove External Insert-Holder";
+
+CATEMfgGrooveInternalTool.ShortHelp = "Groove Internal Insert-Holder";
+CATEMfgGrooveInternalTool.LongHelp  = "Select Groove Internal Insert-Holder";
+
+CATEMfgGrooveFrontalTool.ShortHelp = "Groove Frontal Insert-Holder";
+CATEMfgGrooveFrontalTool.LongHelp  = "Select Groove Frontal Insert-Holder";
+
+CATEMfgThreadExternalTool.ShortHelp = "Thread External Insert-Holder";
+CATEMfgThreadExternalTool.LongHelp  = "Select Thread External Insert-Holder";
+
+CATEMfgThreadInternalTool.ShortHelp = "Thread Internal Insert-Holder";
+CATEMfgThreadInternalTool.LongHelp  = "Select Thread Internal Insert-Holder";
+
+//----------------------------------------------
+// Aides sur les icones plaquettes
+//----------------------------------------------
+MfgDiamondInsert.ShortHelp = "Diamond Insert";
+MfgDiamondInsert.LongHelp  = "Access Diamond Insert";
+
+MfgRoundInsert.ShortHelp = "Round Insert";
+MfgRoundInsert.LongHelp  = "Access Round Insert";
+
+MfgSquareInsert.ShortHelp = "Square Insert";
+MfgSquareInsert.LongHelp  = "Access Square Insert";
+
+MfgTrigonInsert.ShortHelp = "Trigon Insert";
+MfgTrigonInsert.LongHelp  = "Access Trigon Insert";
+
+MfgTriangularInsert.ShortHelp = "Triangular Insert";
+MfgTriangularInsert.LongHelp  = "Access Triangular Insert";
+
+MfgGrooveInsert.ShortHelp = "Groove Insert";
+MfgGrooveInsert.LongHelp  = "Access Groove Insert";
+
+MfgThreadInsert.ShortHelp = "Thread Insert";
+MfgThreadInsert.LongHelp  = "Access Thread Insert";
+
+CATEMfgDiamondInsert.ShortHelp = "Diamond Insert";
+CATEMfgDiamondInsert.LongHelp  = "Access Diamond Insert";
+
+CATEMfgRoundInsert.ShortHelp = "Round Insert";
+CATEMfgRoundInsert.LongHelp  = "Access Round Insert";
+
+CATEMfgSquareInsert.ShortHelp = "Square Insert";
+CATEMfgSquareInsert.LongHelp  = "Access Square Insert";
+
+CATEMfgTrigonInsert.ShortHelp = "Trigon Insert";
+CATEMfgTrigonInsert.LongHelp  = "Access Trigon Insert";
+
+CATEMfgTriangularInsert.ShortHelp = "Triangular Insert";
+CATEMfgTriangularInsert.LongHelp  = "Access Triangular Insert";
+
+CATEMfgGrooveInsert.ShortHelp = "Groove Insert";
+CATEMfgGrooveInsert.LongHelp  = "Access Groove Insert";
+
+CATEMfgThreadInsert.ShortHelp = "Thread Insert";
+CATEMfgThreadInsert.LongHelp  = "Access Thread Insert";
+
+//----------------------------------------------
+// Attributes coming from TDM
+//----------------------------------------------
+MFG_CADID = "CAD 號碼.";
+MFG_CADPATH = "CAD 路徑";
+MFG_FAM = "等級技術資料.";
+MFG_FS_APPLICATION = "應用範圍";
+MFG_FS_DIAMETER = "工件直徑";
+MFG_FS_NOTE = "附註";
+MFG_FS_REVOLUTIONS = "旋轉";
+MFG_FS_TECHNOCLASS = "技術資料.";
+MFG_FS_WARNLIFE = "警告時間";
+MFG_MACHINE = "機具";
+MFG_ADAPTER = "Adapter";
+MFG_TA_COMMENT = "刀具組立說明";
+
+ToolSelection = "刀具選擇 ";

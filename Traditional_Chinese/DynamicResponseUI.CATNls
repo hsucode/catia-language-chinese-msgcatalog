@@ -1,0 +1,107 @@
+//*---------------------------------------------------------------------------------*//
+DYNModalFrequencyResponseSet.Create_DYNModalFrequencyResponseSet_CasePanel.Title="簡諧動態回應情形";
+DYNModalFrequencyResponseSet.Create_DYNModalFrequencyResponseSet_CasePanel.DefineSetsFrame.FrequencySet_CheckSet.Title="顏率情形解法";
+DYNModalFrequencyResponseSet.Create_DYNModalFrequencyResponseSet_CasePanel.DefineSetsFrame.DYNRestraintExcitationSet_CheckSet.Title="限制刺激";
+DYNModalFrequencyResponseSet.Create_DYNModalFrequencyResponseSet_CasePanel.DefineSetsFrame.DYNLoadExcitationSet_CheckSet.Title="載入刺激";
+DYNModalFrequencyResponseSet.Create_DYNModalFrequencyResponseSet_CasePanel.DefineSetsFrame.DYNDampingSet_CheckSet.Title="阻尼設定";
+
+DYNModalTimeResponseSet.Create_DYNModalTimeResponseSet_CasePanel.Title="瞬間動態回應情形";
+DYNModalTimeResponseSet.Create_DYNModalTimeResponseSet_CasePanel.DefineSetsFrame.FrequencySet_CheckSet.Title="頻率情形解法";
+DYNModalTimeResponseSet.Create_DYNModalTimeResponseSet_CasePanel.DefineSetsFrame.DYNTimeRestraintExcitationSet_CheckSet.Title="限制刺激";
+DYNModalTimeResponseSet.Create_DYNModalTimeResponseSet_CasePanel.DefineSetsFrame.DYNTimeLoadExcitationSet_CheckSet.Title="載入刺激";
+DYNModalTimeResponseSet.Create_DYNModalTimeResponseSet_CasePanel.DefineSetsFrame.DYNDampingSet_CheckSet.Title="阻尼設定";
+
+// Freq Modulation
+DYNExcelModulation.Window.Title="頻率調整";
+EXCEL.1.BrowseButton.Title="瀏覽";
+EXCEL.1.EditButton.Title="編輯";
+DYNWhiteNoise.Window.Title="White 噪音調整";
+
+// Time Modulation
+DYNTimeExcelModulation.Window.Title="時間調整";
+DYNTimeModTabPtr.1.BrowseButton.Title="瀏覽";
+DYNTimeModTabPtr.1.EditButton.Title="編輯";
+
+// Excitation
+DYNLoadExcitationSet.Window.Title="載入刺激設定";
+DYNLoadSetPtr.EntityPtrLabel.Title="所選載入:";
+DYNModulationEntityPtr.EntityPtrLabel.Title="所選調整:";
+DYNExcitationManager_Real.Label.Title="所選因子:";
+DYNExcitationManager_ANGLE.Label.Title="所選相:";
+DYNExcitationManager_Title0.Label.Title="索引";
+DYNExcitationManager_Title1.Label.Title="載入";
+DYNExcitationManager_Title2.Label.Title="調整";
+DYNExcitationManager_Title3.Label.Title="因子";
+DYNExcitationManager_Title4.Label.Title="相";
+DYNExcitationManager.Title="選擇";
+//DYNExcitationManager_Default0.Label.Title="索引";
+DYNExcitationManager_Default1.Label.Title="未選擇";
+DYNExcitationManager_Default2.Label.Title="未選擇";
+DYNExcitationManager_Default3.Label.Title="1";
+DYNExcitationManager_Default4.Label.Title="0";
+
+// RestraintExcitation
+DYNRestraintExcitationSet.Window.Title="限制刺激設定";
+DYNRestraintExcitationManager_ACCELRTN.Label.Title="所選加速:";
+DYNRestraintExcitationManager_ANGACCELRTN.Label.Title="所選加速:";
+DYNRestraintExcitationManager_ANGLE.Label.Title="所選相:";
+DYNRestraintExcitationManager_Title0.Label.Title="角度";
+DYNRestraintExcitationManager_Title1.Label.Title="調整";
+DYNRestraintExcitationManager_Title2.Label.Title="加速";
+DYNRestraintExcitationManager_Title3.Label.Title="相";
+DYNRestraintExcitationManager.Title="Selection";
+DYNRestraintExcitationManager_Default1.Label.Title="未選擇";
+DYNRestraintExcitationManager_Default2.Label.Title="1";
+DYNRestraintExcitationManager_Default3.Label.Title="0";
+
+// Time Load Excitation
+DYNTimeLoadExcitationSet.Window.Title="載入刺激設定";
+DYNTimeModulationEntityPtr.EntityPtrLabel.Title="所選調整:";
+DYNTimeLoadExcitationManager_Real.Label.Title="所選因子:";
+DYNTimeLoadExcitationManager_Title0.Label.Title="索引";
+DYNTimeLoadExcitationManager_Title1.Label.Title="載入";
+DYNTimeLoadExcitationManager_Title2.Label.Title="調整";
+DYNTimeLoadExcitationManager_Title3.Label.Title="因子";
+DYNTimeLoadExcitationManager.Title="選擇";
+DYNTimeLoadExcitationManager_Default1.Label.Title="未選擇";
+DYNTimeLoadExcitationManager_Default2.Label.Title="未選擇";
+DYNTimeLoadExcitationManager_Default3.Label.Title="1";
+
+// Time RestraintExcitation
+DYNTimeRestraintExcitationSet.Window.Title="拘束刺激設定";
+DYNTimeRestraintExcitationManager_ACCELRTN.Label.Title="所選加速度:";
+DYNTimeRestraintExcitationManager_ANGACCELRTN.Label.Title="所選加速度:";
+DYNTimeRestraintExcitationManager_Title0.Label.Title="角度";
+DYNTimeRestraintExcitationManager_Title1.Label.Title="調整";
+DYNTimeRestraintExcitationManager_Title2.Label.Title="加速";
+DYNTimeRestraintExcitationManager.Title="Selection";
+DYNTimeRestraintExcitationManager_Default1.Label.Title="未選擇";
+DYNTimeRestraintExcitationManager_Default2.Label.Title="1";
+
+// Amortissement
+DYNDampingSet.Window.Title="阻尼選擇";
+DYNDampingDef.Window.Title="阻尼定義";
+DYNDampingList.Label.Title="阻尼型式:";
+DYNDampingList.Combo.Modal="Modal 阻尼";
+DYNDampingList.Combo.Rayleigh="Rayleigh 阻尼";
+
+// amortissement modal
+DYNDampingGlobalModal="極端阻尼比例(%)";
+DYNDampingGlobalModal_DYNCoefficient.Label.Title="總體比例(%)";
+DYNDampingModalList.Label.Title="極端阻尼比例";
+
+// amortissement de type Rayleigh
+DYNDampingGlobalRayleigh="總體比例:";
+DYNDampingGlobalRayleigh_DYNAlpha.Label.Title="Alpha (重量比例)(%)";
+DYNDampingGlobalRayleigh_DYNBeta.Label.Title="Beta (強度比例)(%)";
+
+DYNDampingRayleighList.Label.Title="比例清單";
+
+// Solution
+DYNSampleMinimum.Label.Title="最小抽樣:";
+DYNSampleMaximum.Label.Title="最大抽樣:";
+DYNSampleNbStep.Label.Title="間隔數目:";
+
+
+DYNModalFrequencyResponseSet.Window.Title="合諧動態回應設定";
+DYNModalTimeResponseSet.Window.Title="瞬間動態回應設定";

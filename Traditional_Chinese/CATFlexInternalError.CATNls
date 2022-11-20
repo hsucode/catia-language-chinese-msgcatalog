@@ -1,0 +1,49 @@
+// *--------------------------------------------*//
+// *               Exemple de message           *//
+// *  En_FR                                     *//
+// *------------------------------------------- *//
+// ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// ERR_2000.Diagnostic = "Un des parametres est negatif";
+// ERR_2000.Advice     = "Utilisez des parametres positifs";
+
+// input error    
+FLXMODELINTERNAL_ERR_101.Request    = "";
+FLXMODELINTERNAL_ERR_101.Diagnostic = " 輸入錯誤 : 未找到解決辦法 ";
+FLXMODELINTERNAL_ERR_101.Advice     = " ";
+// length to small     
+FLXMODELINTERNAL_ERR_102.Request    = "長度模式的 Routing ";
+FLXMODELINTERNAL_ERR_102.Diagnostic = "輸入長度較最小長度小 ";
+FLXMODELINTERNAL_ERR_102.Advice     = "以 BEND 選項重新計算來獲取最小長度";
+// NoSolution    
+FLXMODELINTERNAL_ERR_201.Request    = "";
+FLXMODELINTERNAL_ERR_201.Diagnostic = "曲線計算失敗 ";
+FLXMODELINTERNAL_ERR_201.Advice     = "修改幾何定義 ";
+// NoSolution    
+FLXMODELINTERNAL_ERR_202.Request    = "";
+FLXMODELINTERNAL_ERR_202.Diagnostic = "曲線計算失敗 : 無法彎曲半徑 ";
+FLXMODELINTERNAL_ERR_202.Advice     = "修改幾何定義或彎曲半徑 ";
+
+//AXC COMPUTE in mode Constrained Length failed
+FLXMODELINTERNAL_ERR_CONSTRAINED_LENGTH.Request    ="";
+FLXMODELINTERNAL_ERR_CONSTRAINED_LENGTH.Diagnostic ="新的 FLEX 演算法無法找到解. 因為您目前在拘束長度模式 標準 EHI 演算法無法載入 ";
+FLXMODELINTERNAL_ERR_CONSTRAINED_LENGTH.Advice	   ="增加精度或修改輸入 ";
+
+//AXC Compute in mode Constrained Length found some stretched segment(s)
+FLXMODELINTERNAL_ERR_CONSTRAINED_LENGTH_STRETCHED.Request    ="";
+//FLXMODELINTERNAL_ERR_CONSTRAINED_LENGTH_STRETCHED.Diagnostic ="長度太小.";
+//FLXMODELINTERNAL_ERR_CONSTRAINED_LENGTH_STRETCHED.Advice	   ="增加長度或 / 修改輸入 / 減少伸長";
+FLXMODELINTERNAL_ERR_CONSTRAINED_LENGTH_STRETCHED.Diagnostic = "修改的強制拘束太過 /p1. 修改長度超過精度.";
+FLXMODELINTERNAL_ERR_CONSTRAINED_LENGTH_STRETCHED.Advice	   ="";
+
+//FLXMODELINTERNAL_ERR_CONSTRAINED_LENGTH_STRETCHED_SEVERAL.Request    ="";
+//FLXMODELINTERNAL_ERR_CONSTRAINED_LENGTH_STRETCHED_SEVERAL.Diagnostic = "拘束太緊.\n 因此長度與下列內部次元素精度比例不相稱 : /p1";
+//FLXMODELINTERNAL_ERR_CONSTRAINED_LENGTH_STRETCHED_SEVERAL.Advice	   ="增加次元素的長度或減少伸長";
+
+
+
+//AXC try to use Constrained Length mode with ALGOV4
+FLXMODELINTERNAL_ERR_CONSTRAINED_LENGTH_ALGOV4.Request    ="";
+FLXMODELINTERNAL_ERR_CONSTRAINED_LENGTH_ALGOV4.Diagnostic ="The Constrained Length Mode is not compatible with the Standard EHI Algorithm.";
+FLXMODELINTERNAL_ERR_CONSTRAINED_LENGTH_ALGOV4.Advice	   ="Please Modify mode or switch to FLEX algorithm";
+
+//FIN AXC

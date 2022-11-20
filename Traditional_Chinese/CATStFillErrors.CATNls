@@ -1,0 +1,91 @@
+//==============================================================================
+// COPYRIGHT DASSAULT SYSTEMES  1999
+//==============================================================================
+//
+// CATStFillErrors: Resource file for fill errors 
+//
+//==============================================================================
+//
+// Implementation Notes:
+//
+//==============================================================================
+// Sept 02   Creation                        Tatiana DMITRIEVA
+//==============================================================================
+
+SupportsRecupError.Message="The fill boundary and supports cannot be retrieved.";
+SupportIncoherentError.Message="The fill boundary and supporting faces are incompatible.";
+FillTypeRecupError.Message="The fill creation type cannot be retrieved.";
+ContinuityRecupError.Message="The continuity along fill boundary cannot be retrieved.";
+RelimitCreationError.Message="An error occured while creating the wire relimitation operator.";
+
+ConnexionRunError1.Message="Invalide topology detected in the selected fill contour.";
+ConnexionRunError2.Message="There is at least one multi-domain wire in the selected fill contour.";
+ConnexionRunError3.Message="One of contour intersections creation failed.";
+ConnexionRunError4.Message="Some diconnected wires generated during intersection operation.";
+ConnexionRunError5.Message="Mutliple intersections detected between two consecutive wires in fill contour.";
+ConnexionRunError6.Message="A possible auto-intersection for one of selected wires was detected.";
+
+SelfIntersLayError.Message ="Curve /p1 lie with self-intersection on surface /p2.";
+NoLayingBodyError.Message ="Curve /p1 does not lie on surface /p2.";
+FillOperCreationError.Message = "An error occured while creating the fill operator.";
+AllocationError.Message = "An allocation for new fill operator failed.";
+TopoFillNullBody.Message = 
+"The resulting fill body is NULL, 
+tolology creation failed";
+TopoFillRunError.Message = 
+"A error occured when running fill operator";
+NotPlaneInitSurf.Message = 
+"Fill creation failed,because option 
+powerplane and initial surface not plane";
+NoInitSurfFound.Message = 
+"Fill creation failed, impossible to find 
+an initial surface because as the set of normals 
+defined by the tangency constraints is too scattered";
+G2ConstrFailedNormals.Message = 
+"G2 constraints are not loaded because the set of normals 
+defined by the tangency constraints is too scattered";
+G2ConstraintsFailedG1.Message = 
+"G2 constraints are not loaded because 
+of G0G0 G0G1 or G1G1 incompatibilities";
+
+ConnexionRunError_ERR_1001="Invalide topology detected in the selected fill contour.";
+ConnexionRunError_ERR_1001.Request="Invalide topology detected in the selected fill contour.";
+ConnexionRunError_ERR_1001.Diagnostic = "Invalide topology detected in the selected fill contour.";
+ConnexionRunError_ERR_1001.Advice     = "";
+
+ConnexionRunError_ERR_1002="There is at least one multi-domain wire in the selected fill contour.";
+ConnexionRunError_ERR_1002.Request="There is at least one multi-domain wire in the selected fill contour.";
+ConnexionRunError_ERR_1002.Diagnostic = "";
+ConnexionRunError_ERR_1002.Advice     = "";
+
+ConnexionRunError_ERR_1003="One of contour intersections creation failed.";
+ConnexionRunError_ERR_1003.Request="One of contour intersections creation failed.";
+ConnexionRunError_ERR_1003.Diagnostic = "";
+ConnexionRunError_ERR_1003.Advice     = "";
+
+ConnexionRunError_ERR_1004="Some diconnected wires generated during intersection operation.";
+ConnexionRunError_ERR_1004.Request="Some diconnected wires generated during intersection operation.";
+ConnexionRunError_ERR_1004.Diagnostic = "";
+ConnexionRunError_ERR_1004.Advice     = "";
+
+ConnexionRunError_ERR_1005="Mutliple intersections detected between two consecutive wires in fill contour.";
+ConnexionRunError_ERR_1005.Request="Mutliple intersections detected between two consecutive wires in fill contour.";
+ConnexionRunError_ERR_1005.Diagnostic = "";
+ConnexionRunError_ERR_1005.Advice     = "";
+
+ConnexionRunError_ERR_1006="A possible auto-intersection for one of selected wires was detected.";
+ConnexionRunError_ERR_1006.Request="A possible auto-intersection for one of selected wires was detected.";
+ConnexionRunError_ERR_1006.Diagnostic = "";
+ConnexionRunError_ERR_1006.Advice     = "";
+
+ConnexionRunError_ERR_1007="An unknown topological error occurs creating closed fill contour.";
+ConnexionRunError_ERR_1007.Request="An unknown topological error occurs creating closed fill contour.";
+ConnexionRunError_ERR_1007.Diagnostic = "";
+ConnexionRunError_ERR_1007.Advice     = "";
+
+ConnexionRunError_ERR_1008.Message    ="The modified wires don't intersect any more.";
+ConnexionRunError_ERR_1008.Request    ="The modified wires don't intersect any more.";
+ConnexionRunError_ERR_1008.Diagnostic = "The modified wires don't intersect any more.";
+ConnexionRunError_ERR_1008.Advice     = "The maximum distance between wires should not exceed 0.1 mm";
+
+ 

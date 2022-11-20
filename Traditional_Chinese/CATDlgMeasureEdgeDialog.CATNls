@@ -1,0 +1,217 @@
+CommandModeDialogTitle = "量測項目";
+EditModeDialogTitle = "量測項目(編輯)";
+
+IndicateEdgeMsg = "指出量測項目";
+AxisSystemMsg   = "選擇軸系";
+
+CancelButton="關閉";
+//ApplyButton="Apply";
+
+//
+// Input selection types
+//
+MeasInputTypeAnyGeometry = "任何幾何元素";
+MeasInputTypeAnyGeometryInfinite = "任何幾何元素, 無限";
+MeasInputTypePointOnly = "只有點";
+MeasInputTypeEdgeOnly = "只有邊線";
+MeasInputTypeSurfaceOnly = "只有曲面";
+MeasInputTypeProductOnly = "只有產品";
+MeasInputTypeThickness = "厚度";
+MeasInputTypeAngle3Pts = "三點的角度";
+//MeasInputTypePointOnGeometry = "Point on geometry";
+//MeasInputTypeIntersection = "Intersection";
+//MeasInputTypeEdgelimits = "Edge limits";
+//MeasInputTypeArcCenter = "Arc center";
+//MeasInputTypeCoordinate = "Coordinate";
+//MeasInputTypeThickness = "Thickness";
+
+//
+// Mode of calculation types
+//
+MeasModeOfCalcExactThenApprox = "精確其它的近似";
+MeasModeOfCalcExact           = "精確";
+MeasModeOfCalcApprox          = "近似";
+MeasModeOfCalcUnknown         = "未知";
+
+// Example usage:
+//    "Point on Product.1"
+//    "Line in Product.2"
+OnLabel = " 上 ";
+InLabel = " 內 ";
+
+//
+// Item labels
+//
+DefinitionFrame.Title = "定義";
+DefinitionFrame.SubDefinitionFrame1.ComboFrame.MeasBtwnTypeLabel.Title = "量測型式:";
+DefinitionFrame.SubDefinitionFrame1.ComboFrame.ReferenceLabel.Title = "選擇 1 模式:";
+DefinitionFrame.SubDefinitionFrame1.ComboFrame.TargetLabel.Title = "選擇 2 模式:";
+DefinitionFrame.SubDefinitionFrame2.ModeOfCalcLabel.Title = "計算模式:";
+DefinitionFrame.SubDefinitionFrame2.OtherAxisCheckBut.Title = "其它軸:";
+
+DefinitionFrame.GlobalAxisCheckBut.Title = "主要軸";
+DefinitionFrame.OtherAxisCheckBut.Title = "其它軸 :";
+
+
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnPushButton.Title           = "之間量測";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnPushButton.ShortHelp       = "之間量測";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnPushButton.Help            = "兩選擇之間量測";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnPushButton.LongHelp        = "兩選擇之間量測";
+
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnChainPushButton.Title           = "量測連續模式";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnChainPushButton.ShortHelp       = "量測連續模式";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnChainPushButton.Help            = "兩選擇之間量測連續模式";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnChainPushButton.LongHelp        = "兩選擇之間量測連續模式";
+
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnFanPushButton.Title           = "量測 FAN 模式";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnFanPushButton.ShortHelp       = "之間量測 FAN 模式";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnFanPushButton.Help            = "兩選擇之間量測 FAN 模式";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasBtwnFanPushButton.LongHelp        = "兩選擇之間量測 FAN 模式";
+
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemPushButton.Title           = "量測項目";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemPushButton.ShortHelp       = "量測項目";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemPushButton.Help            = "提供項目特性";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemPushButton.LongHelp        = "提供項目特性";
+
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemThickPushButton.Title           = "量測厚度";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemThickPushButton.ShortHelp       = "量測厚度";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemThickPushButton.Help            = "在曲面上所選的點上沿著垂直方向來量測厚度.";
+DefinitionFrame.SubDefinitionFrame1.ButtonFrame.MeasItemThickPushButton.LongHelp        = "在曲面上所選的點上沿著垂直方向來量測厚度.";
+
+
+
+ResultsFrame.Title = "結果";
+ResultsFrame.LabelFrame.ModeOfCalcRes.Title        = "計算模式:";
+//ResultsFrame.LabelFrame.SpacerModeOfCalc.Title     = "   ";
+ResultsFrame.LabelFrame.EdgeTypeLabel.Title        = "選擇:          ";
+ResultsFrame.LabelFrame.LengthLabel.Title          = "長度:             ";
+ResultsFrame.LabelFrame.AngleLabel.Title           = "角度:              ";
+ResultsFrame.LabelFrame.EndLabel.Title             = "點 2:          ";
+ResultsFrame.LabelFrame.Point3Label.Title          = "點 3:            ";
+ResultsFrame.LabelFrame.DirectionLabel.Title       = "方向向量:   ";
+
+ResultsFrame.LabelFrame.CenterLabel.Title          = "中心點 :       ";
+ResultsFrame.LabelFrame.VolumeLabel.Title          = "體積 :             ";
+ResultsFrame.LabelFrame.AreaLabel.Title            = "表面積 :       ";
+ResultsFrame.LabelFrame.PerimeterLabel.Title       = "周:          ";
+ResultsFrame.LabelFrame.CenterOfGravityLabel.Title = "重心 :";
+ResultsFrame.LabelFrame.XInertiaLabel.Title        = "慣性 :            ";
+ResultsFrame.LabelFrame.YInertiaLabel.Title        = "                    ";
+ResultsFrame.LabelFrame.ZInertiaLabel.Title        = "                    ";
+Point1Label                                        = "點 1:            ";
+Point2Label                                        = "點 2:            ";
+Point3Label                                        = "點 3:            ";
+PointOnlyLabel                                = "點 :              ";
+
+ResultsFrame.LabelFrame.PlaneLabel.Title           = "平面 :         ";   
+
+
+// SpacerLabel enables offset equivalent to X or Y or Z
+SpacerLabel = "   ";
+
+
+PointLabel   = "點";
+LineLabel    = "線";
+ArcLabel     = "弧";
+CurveLabel   = "曲線";
+SurfaceLabel = "曲面";
+PlaneLabel   = "平面";
+CylinderLabel = "圓柱";
+SphereLabel   = "球";
+VolumeLabel  = "體積";
+
+EllipseLabel   = "橢圓";
+ParabolaLabel  = "拋物線";
+HyperbolaLabel = "雙曲線";
+
+ThicknessLabel = "厚度";
+
+Radius       = "半徑:";
+Diameter     = "直徑:";
+MultiSelOfPoints = "多重選擇點";
+ResultsFrame.DataFrame.StartPt.XLabel.Title = "X";
+ResultsFrame.DataFrame.StartPt.YLabel.Title = "Y";
+ResultsFrame.DataFrame.StartPt.ZLabel.Title = "Z";
+
+ResultsFrame.DataFrame.EndPt.XLabel.Title = "X";
+ResultsFrame.DataFrame.EndPt.YLabel.Title = "Y";
+ResultsFrame.DataFrame.EndPt.ZLabel.Title = "Z";
+
+ResultsFrame.DataFrame.Point3.XLabel.Title = "X";
+ResultsFrame.DataFrame.Point3.YLabel.Title = "Y";
+ResultsFrame.DataFrame.Point3.ZLabel.Title = "Z";
+ResultsFrame.DataFrame.DirectionPt.XLabel.Title = "X";
+ResultsFrame.DataFrame.DirectionPt.YLabel.Title = "Y";
+ResultsFrame.DataFrame.DirectionPt.ZLabel.Title = "Z";
+
+ResultsFrame.DataFrame.CenterPt.XLabel.Title = "X";
+ResultsFrame.DataFrame.CenterPt.YLabel.Title = "Y";
+ResultsFrame.DataFrame.CenterPt.ZLabel.Title = "Z";
+
+ResultsFrame.DataFrame.CenterOfGravityPt.XLabel.Title = "X";
+ResultsFrame.DataFrame.CenterOfGravityPt.YLabel.Title = "Y";
+ResultsFrame.DataFrame.CenterOfGravityPt.ZLabel.Title = "Z";
+
+ResultsFrame.DataFrame.IXXLabel.Title = "Ixx";
+ResultsFrame.DataFrame.IXYLabel.Title = "Ixy";
+ResultsFrame.DataFrame.IXZLabel.Title = "Ixz";
+ResultsFrame.DataFrame.IYXLabel.Title = "Iyx";
+ResultsFrame.DataFrame.IYYLabel.Title = "Iyy";
+ResultsFrame.DataFrame.IYZLabel.Title = "Iyz";
+ResultsFrame.DataFrame.IZXLabel.Title = "Izx";
+ResultsFrame.DataFrame.IZYLabel.Title = "Izy";
+ResultsFrame.DataFrame.IZZLabel.Title = "Izz";
+
+
+ResultsFrame.DataFrame.PlaneALabel.Title = "A";
+ResultsFrame.DataFrame.PlaneBLabel.Title = "B";
+ResultsFrame.DataFrame.PlaneCLabel.Title = "C";
+ResultsFrame.DataFrame.PlaneDLabel.Title = "D";
+
+ResultsFrame.MeasItemInvertButton.Title = "逆轉數值";
+
+
+CustomiseFrame.CreateGeometry.Title = "建立幾何";
+CustomiseFrame.Export.Title = "輸出...";
+CustomiseFrame.Customise.Title = "自訂...";
+CustomiseFrame.KeepState.Title = "保持量測";
+
+CylinderVisu = "圓柱";
+SphereVisu   = "球";
+PlaneVisu    = "平面";
+AreaVisu     = "面積 =";
+RadiusVisu   = "半徑 =";
+AngleVisu    = "角度 =";
+
+// Commande de Notify
+
+Information = "資訊";
+MeasureItemDelete = "因所選元素不存在, 量測項目已刪除.";
+MeasureNotExact = "量測無法使用精確模式.";
+MeasureEditDifferentType = "選擇與量測型式不同. \n 請重作選擇";
+NoMeasureWysiwyg = "當使用所見即是模式時,無法使用此命令.";
+
+AxisNoSelection = "沒有選擇";
+AxisUnknown = "v4 軸系";
+
+MeasureUpdateError = "因無效的子族導致無法更新.";
+MeasureUpdateCycleError = "量測特徵造成循環. 動作取消.";
+
+MaxDistanceNotPossible = "計算最大距離未成功.";
+
+ParamNonAssociativeMeasure = "量測不相關. \n 結果複製成數值.";
+
+
+//Factory
+
+MeasureVolume    = "量測體積";
+MeasureSurface   = "量測曲面";
+MeasureEdge      = "量測邊線";
+MeasurePoint     = "量測點";
+MeasureThickness = "量測厚度";
+MeasureItem      = "量測項目";
+
+MeasureBetween   = "量測之間";
+
+MeasureArcs      = "量測弧";
+

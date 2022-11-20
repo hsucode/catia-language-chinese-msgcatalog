@@ -1,0 +1,122 @@
+//NLS-ENGLISH VERSION
+//=======================================================================
+// MODULE :  IgesDataExchange
+//=======================================================================
+
+
+// KVL 2002-06-04 : Creation de CATIgesExport.CATNls et refonte des anciens CATNls Iges.
+// DFB 2002-03-07 : Ajout de CircleReparam 
+// KVL 2002-04-15 : CATIgesCompositeCurve  
+// KVL 2002-05-30 : CATIgesInit : info sur le choix des options BSpline ou Standard à l'export 
+// KVL 2002-06-07 : CATIgesInit : info sur le choix de l'export des entités en NoShow et des options wireframe ou Surfacic
+// KVL 2002-06-19 : CATIgesVirtualBody et CATIgesElement : Info sur chaque élément crée (Type, Show, Layer, Name, Color)
+// KVL 2002-07-03 : CATIgesCurveOnParametricSurface : échec de création des PCurve.
+
+// Numeros utilises : (export Iges : de [6001] a [6999]
+// [6001] a [6049] : CATIgesBSplineCurve
+// [6050] a [6099] : CATIgesCompositeCurve
+// [6100] a [6149] : CATIgesInit
+// [6150] a [6199] : CATIgesVirtualBody
+// [6200] a [6249] : CATIgesElement
+// [6250] a [6299] : CATIgesCurveOnParametricSurface
+// [6300] a [6349] : CATIgesTrimmedParametricSurface
+
+
+//----------------------------------------------
+//  Messages from CATIgesBSplineCurve
+//---------------------------------------------
+
+CATIgesBSplineCurve.Info.CircleReparam=
+"   <I> [6001] [T=/p2] [/p1]  ¿é¤J¶ê©·¤w­«·s°Ñ¼Æ¤Æ¬° /p3";
+
+CATIgesBSplineCurve.Info.ParamInverse=
+"   <I> [6002] [T=/p2] [/p1] BSpline °Ñ¼Æ¬°°fÂà /p3";
+
+CATIgesBSplineCurve.Info.BSplineFermee=
+"   <I> [6003] [T=/p2] [/p1] BSpline ¬°«Ê³¬ªº /p3";
+
+//-----------------------------------------------
+//  Messages from CATIgesCompositeCurve
+//-----------------------------------------------
+
+CATIgesCompositeCurve.Info.hierar=
+"   <I> [6050] [T=/p2] [#/p4]  ©Ò¦³¨Ìªþ¦¹¤¸¥óªº¤¸¯À¥ó±N·|Ä~©Ó¥¦ªºÄÝ©Ê /p3";
+ 
+
+//-----------------------------------------------
+//  Messages from CATIgesInit
+//-----------------------------------------------
+
+CATIgesInit.Info.optionBSpline=
+"   <I> [6100] ±z¤w¿ï¾Ü BSpline ¿é¥X¿ï¶µ /p3 \n"; 
+
+CATIgesInit.Info.optionStandard=
+"   <I> [6101] ±z¤w¿ï¾Ü¼Ð·Ç¿é¥X¿ï¶µ /p3 \n";
+
+CATIgesInit.Info.optionNoShowRef=
+"   <I> [6102] ±z¤w¿ï¾Ü¤£¿é¥XÁôÂÃ¤¸¥ó /p3 \n"; 
+
+CATIgesInit.Info.optionNoShowAcc=
+"   <I> [6103] ±z¤w¿ï¾Ü­n¿é¥XÁôÂÃ¤¸¥ó /p3 \n";
+
+CATIgesInit.Info.optionWireframe=
+"   <I> [6104] ±z¤w¿ï¾Ü½u¬[ºc¿é¥X¿ï¶µ /p3 \n";
+
+CATIgesInit.Info.optionSurfacic=
+"   <I> [6105] ±z¤w¿ï¾Ü¦±­±¿é¥X¿ï¶µ /p3 \n";
+
+CATIgesInit.Info.optionMSBO=
+"   <I> [6106] ±z¤w¿ï¾Ü MSBO ¿é¥X¿ï¶µ (¬°¹êÅé,Á¡´ß©M­×°Å­±) /p3 \n";
+
+
+//-----------------------------------------------
+//  Messages from CATIgesVirtualBody (messages utilises parfois dans CATIgesCldBody)
+//-----------------------------------------------
+
+CATIgesVirtualBody.Info.ProcessingBody=
+"\n*** ¥»Åé³B²z¤¤ ";
+
+CATIgesVirtualBody.Info.ProcessingElement=
+"\n ** ¤¸¯À³B²z¤¤ [T=/p2] [/p1]";
+
+CATIgesVirtualBody.Info.Name=
+"   <I> [6150] [T=/p2] [#/p1]  ¤¸¥ó CATPart ¦WºÙ¬° /p3";
+
+CATIgesVirtualBody.Info.NoName=
+"   <I> [6151] [T=/p2] [#/p1] ¦¹¤¸¥ó¥¼«ü©w¦WºÙ.";
+
+CATIgesVirtualBody.Info.NbElem=
+"   <I> [6152] ¥»Åé¥]§t /p2 /p1 /p3";
+
+CATIgesVirtualBody.Info.Wire=
+"   <I> [6153] [T=/p2] [#/p1] ½u¬°«Ê³¬ªº";
+
+//-----------------------------------------------
+//  Messages from CATIgesElement
+//-----------------------------------------------
+
+CATIgesElement.Info.NoShow=
+"   <I> [6200] [T=/p2] [#/p1]  ÁôÂÃ¤¸¥ó";
+
+CATIgesElement.Info.Layer=
+"   <I> [6201] [T=/p2] [#/p1]  ¹Ï¼h¬° /p3";
+
+CATIgesElement.Info.Color=
+"   <I> [6202] [T=/p2] [#/p1]  ¥»ÅéÃC¦â¬°  R ¬O /p3 G ¬O /p4 B ¬O /p5";
+
+CATIgesElement.Warning.IgsControlName=
+"   <W> [6203] ¥»Åé¦WºÙµL®Ä : /p1 ¦r¤¸¤£¤¹³\¼g¤J. À|¸Õ²M²z§¹¦¨";
+
+//-----------------------------------------------
+//  Messages from CATIgesCurveOnParametricSurface
+//-----------------------------------------------
+CATIgesCurveOnParametricSurface.Warning.PCurveNotCreated=
+"   <W> [6250] [T=/p2] [#/p1]  PCurve IGES ¥¼«Ø¥ß /p3";
+
+
+//-----------------------------------------------
+//  Messages from CATIgesTrimmedParametricSurface
+//-----------------------------------------------
+CATIgesTrimmedParametricSurface.Warning.PCurveNotExported=
+"   <W> [6300] [T=/p2] [#/p1] PCurve IGES ¥¼¿é¥X /p3";
+

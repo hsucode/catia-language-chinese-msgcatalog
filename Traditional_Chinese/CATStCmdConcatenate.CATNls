@@ -1,0 +1,37 @@
+//=============================================================================
+// COPYRIGHT DASSAULT SYSTEMES  2000
+//=============================================================================
+//
+// CATStCmdConcatenate: Resource file for NLS purpose related to Concatenate command
+//
+//=============================================================================
+//
+// Implementation Notes:
+//
+//=============================================================================
+// July 2000   Creation                                    M-D TRUONG (mtg)
+//=============================================================================
+
+
+CATStCmdConcatenate.State1Msg0.Message = "請選擇多重元素或第一個要連接的元素";
+CATStCmdConcatenate.State1Msg1.Message = "請選擇多重元素或第一個要連接的元素 (以 CTRL 鍵來新增)";
+CATStCmdConcatenate.State1Msg2.Message = "選擇下一個連接曲線或其它的元素 (CTRL鍵以增加)";
+CATStCmdConcatenate.State1Msg3.Message = "選擇一條曲線或第一個曲面的個體";
+CATStCmdConcatenate.State1Msg4.Message = "選擇下一個曲面的個體";
+CATStCmdConcatenate.MonoDomainRequested.Message    = "請選擇單一區域元素.";
+CATStCmdConcatenate.MultiCellsRequested.Message    = "請選擇多重元素或下一個連接的元素來結合.";
+CATStCmdConcatenate.SameBodyCellsRequested.Message = "選擇不屬於相同的本體的個體.";
+CATStCmdConcatenate.NoResult.Message               = "沒有結果 . 嘗試增加容差值. (最大值定義在 工具組 / 選擇 / 造形 / 自由曲面'.)";
+CATStCmdConcatenate.NoResult2.Message              = "沒有結果 . 無法執行連結.";
+CATStCmdConcatenate.NoResult3.Message              = "沒有結果 . 無法執行連結. 請嚐試對應曲面.";
+CATStCmdConcatenate.PartialResultMsg.Message       = "部份結果 . 嘗試增加容差值.";
+CATStCmdConcatenate.3DCurveRequested.Message       = "請選擇 3D 曲線.";
+CATStCmdConcatenate.NUPBSRequestedMsg.Message      = "請選擇 NUPBS  元素 ( 請使用轉換精靈轉換至 NUPBS) ";
+CATStCmdConcatenate.OneCellNotNUPBSMsg.Message     = "部份單元不是 3D NUPBS 元素 ( 請使用轉換精靈轉換至 NUPBS) ";
+CATStCmdConcatenate.SameTypeRequestedMsg.Message            = "不允許結合不同空間元素."                ;
+CATStCmdConcatenate.ShellWithMoreThan2Cells.Message            = "超過兩單元不允許做薄殼."                             ;
+CATStCmdConcatenate.BothFacesAreLyingOnTheSameSurface.Message  = "兩修剪面依附在相同曲面."                               ;
+CATStCmdConcatenate.NoTrimmedElement.Message                   = "不允許修剪元素."                                            ;
+CATStCmdConcatenate.BothFacesNotCorrectlyLinked.Message        = "部份修剪面不正確的連結, 需要單一相同邊."                   ;
+CATStCmdConcatenate.InvalidSelection.Message                   = "無效選擇 , 請選擇連接曲線或曲面元素.";
+

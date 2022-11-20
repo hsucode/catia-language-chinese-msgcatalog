@@ -1,0 +1,58 @@
+
+// Messages for Message Window
+Error.NoResource="錯誤: 不能模擬 /P01. 沒有資源分發給活動.";
+Error.NotAMechanism="錯誤: 不能模擬 /P01. 資源分發,  /P02,  不是一個機械裝置.";
+Error.NoGrabbingDevice="錯誤: 不能模擬鎖定活動 /P01. 沒有鎖定的裝置被分發.";
+Error.NoGrabbedDevice="錯誤: 不能模擬鎖定活動 /P01. 沒有鎖定的裝置被分發.";
+Error.NoTag="錯誤: 不能模擬 /P01. 不分發任何標簽.";
+Error.NotARobot="錯誤: 不能模擬 /P01. 分發的資源一定是機器人.";
+Error.UnableToSimulate="錯誤: 無法模擬 /P01.";
+Error.InvalidHomeName="錯誤: 無法模擬 /P01, 無效的定名 /P02.";
+
+Error.CantReachTag="錯誤: 不能到達標簽位置";
+
+Warning.DOFState="裝置 </P1> 的自由度與已存 </P2> 的資訊不對應";
+Advice.DOFState="請編輯 </P1> 命令來修正此問題";
+Warning.ToolChange="警告: 在 /P2 的工具將被更改至 /P1";
+Warning.DisLocation="警告: /P2 機械手目標與 /P1 的連接位置不同";
+
+// CATDlgNotify messages
+MoveActivityFactoryError.Title = "不能到達架構";
+MoveActivityFactoryError.Message = "內部錯誤: 不能重新得到移動活動架構.";
+
+UnableToCreateTagError.Title = "不能建立標簽";
+UnableToCreateTagError.Message = "內部錯誤: 不能建立 TagActivity 物件.";
+
+SPPChildManagementError.Title = "不能得到 CATISPPChildManagement";
+SPPChildManagementError.Message = "內部錯誤: 不能重新得到 CATISPPChildManagement 界面.";
+
+NotAMech.Title = "選擇錯誤";
+NotAMech.Message = "選擇的物件不是一個機械裝置.";
+
+UnreachableTag.Title = "不能到達的標簽";
+UnreachableTag.Message = "標簽選擇是不能達成的";
+
+NotATagOrPath.Title = "選擇錯誤";
+NotATagOrPath.Message = "內部錯誤: 選擇的物件既不是路徑也不是節點物件.";
+
+NoActionCreated.Title = "根部過程選擇 ";
+NoActionCreated.Message = "錯誤 : 不能為根部過程建立行為, 至少建立路徑";
+
+AddActionFailed.Title = "不能建立行為";
+AddActionFailed.Message = "錯誤 : 新增行為失敗, 不能建立自動行為或預先定義的移動";
+
+NoActionAdded.Title = "不能新增行為";
+NoActionAdded.Message = "錯誤 : 行為建立已經存在, 請更改名稱";
+
+NoResourceAssigned.Title = "沒有資源";
+NoResourceAssigned.Message = "無效或者沒有資源分發給活動.";
+
+NoDefinedHomePositions.Title = "沒有原點位置";
+NoDefinedHomePositions.Message = "此機構沒有預先定義原點位置.";
+
+ToolChangeAction.Title = "更改工具";
+ToolChangeAction.Message = "警告: 工具更改至 </P1>";
+
+CannotLinkToSameDevice.Title = "不正確資源";
+CannotLinkToSameDevice.Message = "動作不能含有相同的資源和上層元素.";
+

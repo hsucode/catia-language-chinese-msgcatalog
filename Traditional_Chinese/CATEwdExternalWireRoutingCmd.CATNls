@@ -1,0 +1,43 @@
+CATEwdExternalWireRoutingCmd.SelectionState.Message = "Select the wires / wire groups you want to route";
+CATEwdExternalWireRoutingCmd.ReportState.Message    = "Report of the routing algorithm";
+
+NoRoutingOnVisuMode.Title = "Automatic Wire / Wire group Routing";
+NoRoutingOnVisuMode.Text = "The wire or wire group routing does not work in pure visualization mode.\nPlease update your assembly (by clicking on the 'Update' command) in order to load the publications.";
+
+NoWiresToRoute.Title = "Automatic Wire / Wire group Routing";
+NoWiresToRoute.Text  = "There are no wires or wire groups to route. Please check if you have selected one or several systems to work on.";
+NoWGforP1.Title = "Automatic Wire Routing";
+NoWGforP1.Text  = "This XML contains wire group. The capability to route wire group is not available in P1 product. So, no wire can be routed from this XML.";
+
+Name                = "Name";
+Type				= "Type";
+Routed              = "Routed";
+Extremities         = "Extremities";
+Yes                 = "Yes";
+No                  = "No";
+Missing             = "Missing";
+MissingButRoutable  = "Missing but the wire can be routed";
+OK                  = "Found";
+Changed             = "Changed";
+Identifier          = "Identifier";
+Wire				= "Wire";
+WireGroup			= "WireGroup";
+Unset				= "Unset";
+
+
+RoutingStatus.MissingExtremity                            = "One or several extremities of this wire are missing in the 3D mockup";
+RoutingStatus.MissingWireGroupExtremity                   = "One or several extremities of wires in this wire group are missing in the 3D mockup";
+RoutingStatus.NoCorrectBundleToCreateWire                 = "There is no harness where you can create the wire or the wire extremities belong to different harnesses";
+RoutingStatus.NoCorrectBundleToCreateWireGroup            = "There is no harness where you can create the wire group or its wires extremities belong to different harnesses";
+RoutingStatus.WireCanNotBeCreated                         = "Unable to create the wire";
+RoutingStatus.WireGroupCanNotBeCreated                    = "Unable to create the wire group";
+RoutingStatus.NoRouteFound                                = "No route has been found for this wire";
+RoutingStatus.NoRouteforWireGroupFound                    = "No route has been found for this wire group";
+RoutingStatus.NoRouteFoundBecauseOfSepCode                = "No route has been found for this wire when taking into account the defined rules";
+RoutingStatus.NoRouteforWireGroupFoundBecauseOfSepCode    = "No route has been found for this wire group when taking into account the defined rules";
+RoutingStatus.SuccessfullyRouted                          = "Successfully routed";
+RoutingStatus.TheWireGroupInCatalogIsNotConsistent        = "The wire group in catalog and wire group in the imported data are not consistent";
+RoutingStatus.TheWireGroupInstantiatedIsNotConsistent     = "The wire group already instantiated and wire group in the imported data are not consistent";
+//bkz 05:06:17 Fix for IR - 493353.
+RoutingStatus.DeviceIsContact                             = "Unable to route the wire because at least one of the wire extremities is a contact";
+

@@ -1,0 +1,34 @@
+Title = "加工中";
+
+
+MachiningTolerance = "加工精度";
+
+M3xReverseTP = "逆轉刀具路徑";
+
+
+MachiningTolerance.LongHelp = "指定刀具路徑的理論和實際計算值間的最大允許距離.";
+
+M3xCuttingMode	= "切削模式"; 
+M3xUpDownMode	= "軸向";
+M3xDeltaZ		= "最小更改長度";
+M3xLengthMin	= "最小更改長度";
+
+M3xAxialStrategy="軸向方式";
+
+M3xRadialStrategy="徑向方式";
+
+
+
+
+M3xCuttingMode.LongHelp	= "Specifies the position of the tool regarding 
+the surface to be machined. It can be climb, conventional or either. For
+this last possibility it means the the Axial Direction will be 
+taken into account first.";
+
+M3xUpDownMode.LongHelp	= "Specifies the tool cutting preferred direction.";
+
+M3xDeltaZ.LongHelp		= "Specifies the minimum distance for a change of axial direction. If this parameter
+is used, some portion of the toolpath will not follow the given Axial direction.";
+
+M3xLengthMin.LongHelp	= "Specifies the minimum distance for a change of cutting mode. If this parameter
+is used, some portion of the toolpath will not follow the given cutting mode.";

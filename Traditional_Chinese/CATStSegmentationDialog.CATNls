@@ -1,0 +1,64 @@
+//=============================================================================
+// COPYRIGHT DASSAULT SYSTEMES  1999
+//=============================================================================
+//
+// CATStSegmentationDialog: Resource file for NLS purpose related to Segmentation/Approximation command
+//
+//=============================================================================
+//
+// Implementation Notes:
+//
+//=============================================================================
+// Jan 99   Creation                                    M-D TRUONG (mtg)
+//=============================================================================
+
+Title  = "分割 - 近似";
+BOK.Title="確認";
+BApplyMore.Title="更多...";
+BApplyLess.Title="更少...";
+BCancel.Title="取消";
+MainFrame.GlobalTypeFrame.Type.Title              = "型式"; 
+MainFrame.GlobalTypeFrame.Type.LongHelp           = "以 NURBS 進行分割或近似 (Non Uniform Polynomial B-Spline), 複製與否."; 
+
+MainFrame.GlobalTypeFrame.Approxim.Title          = "近似"; 
+MainFrame.GlobalTypeFrame.Approxim.LongHelp       = "以 NURBS (Non Uniform Polynomial B-spline) 模式進行近似"; 
+MainFrame.GlobalTypeFrame.Segmentation.Title      = "分割"; 
+MainFrame.GlobalTypeFrame.Segmentation.LongHelp   = "分割模式"; 
+MainFrame.GlobalTypeFrame.DuplicateCheck.Title    = "保留"; 
+MainFrame.GlobalTypeFrame.DuplicateCheck.LongHelp = "保留最初的元素在分割或近似之後"; 
+
+MainFrame.ModeFrame.SegmentationMode.Title        = "模式";
+MainFrame.ModeFrame.SegmentationMode.LongHelp     = "設定分割模式"; 
+MainFrame.ModeFrame.Number.Title                  = "分割";
+MainFrame.ModeFrame.Number.LongHelp               = "依據指定的弧段數量進行分割"; 
+MainFrame.ModeFrame.Tolerance.Title               = "容差";
+MainFrame.ModeFrame.Tolerance.LongHelp            = "依據指定的容差進行分割或近似"; 
+MainFrame.ModeFrame.FirstSpinner.LongHelp         = "弧段的數量或容差."; 
+
+MainFrame.OptionsFrame.Options.Title              = "模式";
+MainFrame.OptionsFrame.PreviewCheck.Title         = "預覽"; 
+MainFrame.OptionsFrame.PreviewCheck.LongHelp      = "結果的動態預覽."; 
+MainFrame.OptionsFrame.BreakCheck.Title           = "打斷點";
+MainFrame.OptionsFrame.BreakCheck.LongHelp        = "新增打斷點在曲線的分割模式中."; 
+
+MoreFrame.DisplayFrame.Display.Title              = "顯示";
+MoreFrame.DisplayFrame.InformationCheck.Title     = "資訊";
+MoreFrame.DisplayFrame.ControlPointsCheck.Title   = "控制點" ;
+MoreFrame.DisplayFrame.InformationCheck.LongHelp  = "顯示資訊";
+MoreFrame.DisplayFrame.ControlPointsCheck.LongHelp= "顯示控制點";
+
+MoreFrame.OrderFrame.Orders.Title                 = "最大的階數";
+MoreFrame.OrderFrame.OrderULabel.Title            = "增量 U ";
+MoreFrame.OrderFrame.OrderVLabel.Title            = "增量 V ";
+MoreFrame.OrderFrame.Orders.LongHelp              = "設定最大 U 和 V 階數
+of the resulting surface(s)
+in relation to the initial element(s) 
+and the specified U, V deltas"; 
+MoreFrame.OrderFrame.OrderUSpinner.LongHelp       = "
+Delta U order (U order of the segmented element
+is smaller than or equal to the initial U order
+plus the specified Delta U order, maximum is 15)";
+MoreFrame.OrderFrame.OrderVSpinner.LongHelp       = "
+Delta V order (V order of the segmented element
+is smaller than or equal to the initial V order
+plus the specified Delta V order, maximum is 15)";

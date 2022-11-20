@@ -1,0 +1,179 @@
+//------------------------------------------------------
+// Resource file for internal Topological Check-Up 
+// En_EN
+//----------------------------------------------------------------------
+// CAUTION : each index is of maximum length of seventy-two characters !
+//-----------------------------------------------------------------------
+//
+//
+LyingOn.Corrupted = 
+"contains /P2 incoherent Boolean occurence(s) (may be due to LyingOn LifeCycle).";
+//
+//
+//  redondance des liens Pose-Sur
+//
+LyingOn.AmbiguousSameDomainSameGeometry = 
+"contains ambiguous lyingOn links on /P2 with same support /P5 on context of /P3.";
+//
+LyingOn.AmbiguousSameDomainDistinctGeometry = 
+"contains ambiguous lyingOn links on /P2 with support /P5 and /P6 on context of /P3.";
+//
+LyingOn.AmbiguousDistinctDomain = 
+"contains ambiguous lyingOn links on /P2 with support /P5 and /P6 on context of /P3 and /P4.";
+//
+//
+LyingOn.SignWithoutInter = 
+"contains damaged LyingOn Link (Sign defined without _Inter) on /P2 with support /P4 on context of /P3.";
+//
+//
+BooleanCutting.Found = 
+"remaining /P2 SubdOccurence (Temporary CATSubdOccurence of Boolean Modeler).";
+//
+//    *******************************************************************
+//    *  VERTEX : UV geometry validity
+//    *******************************************************************
+//
+EvalU.MaxLimits =
+"U= /P7 Outside [ /P8 ; /P9 ] U-MaxLimits of /P6 (GapXYZ /P10 on /P2) and (/P3, /P4 /P5)).";
+//
+EvalV.MaxLimits =
+"V= /P7 Outside [ /P8 ; /P9 ] V-MaxLimits of /P6 (GapXYZ /P10 on /P2) and (/P3, /P4 /P5)).";
+//
+EvalU_MaxLimits =
+"U= /P7 Inside [ /P8 ; /P9 ] U-MaxLimits of /P6 (GapXYZ /P10 on /P2) and (/P3, /P4 /P5)).";
+//
+EvalV_MaxLimits =
+"V= /P7 Inside [ /P8 ; /P9 ] V-MaxLimits of /P6 (GapXYZ /P10 on /P2) and (/P3, /P4 /P5)).";
+//
+//
+//
+EvalU.LoopBoundingBox =
+"U= /P7 Outside[ /P8 ; /P9 ] U-BoundingBox of /P2 (GapXYZ /P10 on /P6) and (/P3, /P4 /P5)).";
+//
+EvalV.LoopBoundingBox =
+"V= /P7 Outside [ /P8 ; /P9 ] V-BoundingBox of /P2 (GapXYZ /P10 on /P6) and (/P3, /P4 /P5)).";
+//
+EvalU_LoopBoundingBox =
+"U= /P7 Inside [ /P8 ; /P9 ] U-BoundingBox of /P2 (GapXYZ /P10 on /P6) and (/P3, /P4 /P5)).";
+//
+EvalV_LoopBoundingBox =
+"V= /P7 Inside [ /P8 ; /P9 ] V-BoundingBox of /P2 (GapXYZ /P10 on /P6) and (/P3, /P4 /P5)).";
+//
+//
+//
+EvalU.FaceBoundingBox =
+"U= /P7 Outside [ /P8 ; /P9 ] U-BoundingBox of /P6 (GapXYZ /P10 on /P2) and (/P3, /P4 /P5)).";
+//
+EvalV.FaceBoundingBox =
+"V= /P7 Outside [ /P8 ; /P9 ] V-BoundingBox of /P6 (GapXYZ /P10 on /P2) and (/P3, /P4 /P5)).";
+//
+EvalU_FaceBoundingBox =
+"U= /P7 Inside [ /P8 ; /P9 ] U-BoundingBox of /P6 (GapXYZ /P10 on /P2) and (/P3, /P4 /P5)).";
+//
+EvalV_FaceBoundingBox =
+"V= /P7 Inside [ /P8 ; /P9 ] V-BoundingBox of /P6 (GapXYZ /P10 on /P2) and (/P3, /P4 /P5)).";
+//
+//
+//    *******************************************************************
+//    *  VERTEX basic rule 
+//    *******************************************************************
+//
+Basics.NoMacroPoint =
+"has /P2 as invalid MacroPoint.";
+//
+PoecMacroPoint =
+":  /P2 (/P3 POEC, /P4 POS, other /P5) bounds /P6 Loop, /P7 Wire.";
+//
+PoecMacroPointNotBounding =
+"/P3 of /P2 is not incident to Vertex.";
+//
+PoecMacroPoint.NotInMacroPoint =
+"is bounded by /P3 (in context of /P4) which does not belong to /P2.";
+//
+PoecMacroPoint.SubdNotInMacroPoint =
+"is bounded by /P3 (Boolean temporary bounding edge) which does not belong to /P2.";
+//
+ActiveBody.GiveOutsideEdge =
+"gives back /P2 which does not belong to Active /P3.";
+//
+ActiveBody.SetGeometryOnSupport =
+"gives back intermediate /P2 (SetGeometryOnSupport) outside active /P3.";
+//
+ActiveBody.BoundingVertex =
+"does not gives back /P2 belonging to Active /P3.";
+//
+SubdVertex.NumberOfKO =
+"has /P2 internal Boolean occurence (CATSubdVertex) with severe anomalies.";
+//
+SubdVertex.wrongClass =
+"has internal Boolean occurence (/P3) whose _Class is another one /P2.";
+//
+SubdVertex.wrongPOEC =
+"has internal Boolean occurence (/P3) whose support /P2 is not valid.";
+//
+SubdVertex.PoecNotInMacroPoint =
+"has internal Boolean occurence (/P4) whose support /P2 does not belong to its /P3.";
+//
+SubdVertex.EdgeCurveWithoutEdgeDomain =
+"has internal Boolean occurence bounded by CATSubdEdgeCurve without EdgeDomain (SetGeometryOnSupport ?) on /P2.";
+//
+//    *******************************************************************
+//    *  in LOOP rule : continuity of geometry
+//    *******************************************************************
+//
+LoopContinuity =
+"distance /P9 in /P2 (between (/P3,/P5,/P7) and (/P4,/P6,/P8)) < Resolution /P10.";
+//
+LoopContinuity.GapUVPoec =
+"Gap in (U,V) : (/P9,/P10) (/P11,/P12) in  /P2 between (/P3,/P5,/P7) and(/P4,/P6,/P8).";
+//
+LoopContinuity.GapXYZPoec =
+"distance /P9 in /P2 (between (/P3,/P5,/P7) and (/P4,/P6,/P8)) > Resolution /P10.";
+//
+//    *******************************************************************
+//    *  VERTEX rule : coherence of bounding vertex
+//    *******************************************************************
+//
+BoundingVertex =
+"is bounded by /P2 with support /P3 inside /P4.";
+//
+BoundingVertex.InvalidVertex = 
+"bounding /P1 not a Vertex.";
+//
+BoundingVertex.InvalidEdge =
+"is bounded by /P2 which is not a valid Edge (with support /P3).";
+//
+BoundingVertex.NoPOEC =
+"is bounded by /P2 without expected geometry (POEC).";
+//
+BoundingVertex.InvertOrientation =
+"bounding /P2 with /P3 but contradictory BooleanData (start-end  OriVsEdge).";
+//
+BoundingVertex.BadOrientation =
+"bounding /P2 with POEC /P3 but incoherent BooleanData (/P4,/P5).";
+//
+BoundingVertex.UnsetOrientation =
+"is bounded by /P2 with unset relative Edge orientation (/P3).";
+//
+BoundingVertex.NonSmart =
+"is dirtly (Not Smart) bounded by /P2 with support /P3.";
+//
+BoundingVertex.BooleanData =
+"remaining temporary data for Boolean Operation (/P2, /P3, status /P4).";
+//
+BooleanVertex.IntersectionVertex =
+"remaining temporary vertex for Boolean Operation (/P2, /P3).";
+//
+BooleanVertex.TwinData =
+"remaining Twin Data for Boolean Operation (/P2, /P3).";
+//
+//    *******************************************************************************************
+//    *  Cell rule : for a given orientation, at most one owning domain in a given Body
+//    *******************************************************************************************
+//
+Topology.Touched =
+"is a touched topology (temporary attribute for boolean operation or smartduplication).";
+//
+BoundedDomainSameOrientation.many =
+"is /P8 /P6-th of /P2  and  /P9 /P7-th of /P3 for same /P4 inside /P5.";
+//

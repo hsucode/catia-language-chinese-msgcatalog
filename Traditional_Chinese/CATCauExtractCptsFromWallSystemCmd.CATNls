@@ -1,0 +1,55 @@
+//=============================================================================
+//                                     CNEXT - CXR10
+//                          COPYRIGHT DASSAULT SYSTEMES 2002 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATCauExtractCptsFromWallSystemCmd.CATNls
+// FRAMEWORK   :    CATCompAccessUI
+// AUTHOR      :    ehh
+// DATE        :    August 2002
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  C&A Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//------------------------------------------------------------------------------
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// DialogEngine state prompts 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATCauExtractCptsFromWallSystemCmd.SelectSketchState.Message="Select wall system sketch or wall system (for all sketches)";
+CATCauExtractCptsFromWallSystemCmd.SelectLowerLimitState.Message="Select wall system lower limit";
+CATCauExtractCptsFromWallSystemCmd.SelectUpperLimitState.Message="Select wall system upper limit";
+CATCauExtractCptsFromWallSystemCmd.ExtractCptsState.Message="OK to extract compartments";
+CATCauExtractCptsFromWallSystemCmd.FinalStatsState.Message="Display final statistics from extracting the compartments";
+
+AllDevelopedSketches="All developed sketches without extracted compartments";
+
+CptExtractionProgressBar.Title="萃取隔間";
+ExtractCptInfoTitle="萃取隔間統計";
+ExtractCptInfoText="/P1 out of /P2 隔間成功萃取";
+UpdateWallSystemWarningTitle="牆系修改警告";
+UpdateWallSystemWarningText="Wall system will be updated with sketch changes prior to compartment extraction";
+OldWallSystemErrorTitle="舊牆系警告";
+OldWallSystemErrorText="This wall system has old modeling.  Please update it using the 'Update Wall System' command before extracting compartments.";
+OutOfDateWallSystemErrorTitle="有效牆系超過日期警告";
+OutOfDateWallSystemErrorText="This wall system is out of date.  Please update it using the 'Update Wall System' command before extracting compartments.";
+NoCptOutlineErrorTitle="無隔間輪廓錯誤";
+NoCptOutlineErrorText="This wall system contains no available compartment outlines to extract compartments from. 
+Please select another wall system.";
+  
+CATCauExtractCptsFromWallSystemCmd.InvalidActiveProdText ="Active product is incorrect. Please activate root product";
+CATCauExtractCptsFromWallSystemCmd.InvalidActiveProdTitle ="Extract Compartment Error";
+CATCauExtractCptsFromWallSystemCmd.WallSystemIsInWorkPackageText = "Potientail contexual link problem will occur since the wall system is in workpackage";
+CATCauExtractCptsFromWallSystemCmd.RootContexIsSetOffText = "Check button root context in assemebly on tool option page";
+
+
+     
+
+
+
+

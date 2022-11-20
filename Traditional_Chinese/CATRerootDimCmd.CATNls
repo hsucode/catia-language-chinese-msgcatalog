@@ -1,0 +1,40 @@
+//=============================================================================
+//                                     CNEXT - CXR2
+//                          COPYRIGHT DASSAULT SYSTEMES 1999 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATRerootDimCmd
+// LOCATION    :    DraftingIntCommands/CNext/resources/msgcatalog
+// AUTHOR      :    HBH
+// DATE        :    18 june 2002
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Drafting Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date          purpose
+//   HISTORY       
+//      02           LGK   22/06/2002  Revision
+//      03           LGK   30/07/2002  Revision
+//      04           HBH   27/08/2003  RI.A0405363 : Ajout de l'UndoTitle
+//------------------------------------------------------------------------------
+
+CATRerootDimCmd.waitForDimState.Message="選擇尺寸來重新整理.";
+CATRerootDimCmd.waitForFirstEdgeState.Message="選擇要重新整理尺寸的第一個元素.";
+CATRerootDimCmd.waitForSecondEdgeState.Message="選擇要重新整理尺寸的第二個元素.";
+CATRerootDimCmd.waitForThirdEdgeState.Message="選擇要重新整理尺寸的第三個元素.";
+
+CATRerootDimCmd.UndoTitle = "重新排序尺寸";
+CATRerootDimCmd._agentDimSelSet.UndoTitle = "所選尺寸";
+CATRerootDimCmd._agentDimSelSet.RedoTitle = "所選尺寸";
+CATRerootDimCmd.AgentEdgeSelSet.UndoTitle = "所選尺寸";
+CATRerootDimCmd.AgentEdgeSelSet.RedoTitle = "所選尺寸";
+
+DimDistance="距離尺寸";
+DimLength="長度尺寸";
+DimAngle="角度尺寸";
+DimRadius="半徑尺寸";
+DimDiameter="直徑尺寸";
+DimChamfer="倒角尺寸";
+DrwDimFillet="圓角尺寸";

@@ -1,0 +1,100 @@
+// *--------------------------------------------*//
+// *               Exemple de message           *//
+// *  En_US                                     *//
+// *------------------------------------------- *//
+// ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// ERR_2000.Diagnostic = "Un des parametres est negatif";
+// ERR_2000.Advice     = "Utilisez des parametres positifs";
+
+CATGuiInternalError.Title = "錯誤";
+CATGuiInternalError.TitleInCommand= "/p1 發生錯誤";
+CATGuiInternalError.Message = "命令中發生錯誤.";
+// GuiFlag...
+TopologicalError="拓墣錯誤.";
+TangencyError="相切錯誤";
+ConnexityError="連接錯誤";
+ManifoldError="完整性錯誤";
+Context="拓墣錯誤.";
+Location="元素錯誤.";
+
+// ErrInconnue
+GSMUIINTERNAL_ERR_100.Request    = " ";
+GSMUIINTERNAL_ERR_100.Diagnostic = "在一個未知的例行程序中發生未知的內部錯誤.";
+GSMUIINTERNAL_ERR_100.Advice     = " ";
+
+// NoSolution
+GSMUIINTERNAL_ERR_200.Request    = " ";
+GSMUIINTERNAL_ERR_200.Diagnostic = "此運算無解.";
+GSMUIINTERNAL_ERR_200.Advice     = " ";
+
+// LayingDownError
+GSMUIINTERNAL_ERR_300.Request    = " ";
+GSMUIINTERNAL_ERR_300.Diagnostic = "/p1 不位於 /p2 上面.";
+GSMUIINTERNAL_ERR_300.Advice     = "請核對這些元素.";
+
+// InvalidInput
+GSMUIINTERNAL_ERR_400.Request    = " ";
+GSMUIINTERNAL_ERR_400.Diagnostic = "元素 /p1 是無效的或空的. 此運算無解.";
+GSMUIINTERNAL_ERR_400.Advice     = " ";
+
+// Type de boundary incorrect
+GSMUIINTERNAL_ERR_500.Request    = " ";
+GSMUIINTERNAL_ERR_500.Diagnostic = "未知的邊界型式. 不正常的錯誤.";
+GSMUIINTERNAL_ERR_500.Advice     = " ";
+
+// Impossibilite (anormale?) de dupliquer un sketch
+GSMUIINTERNAL_ERR_600.Request    = " ";
+GSMUIINTERNAL_ERR_600.Diagnostic = "剖面建立失敗.";
+GSMUIINTERNAL_ERR_600.Advice     = "請檢查草圖拘束的連續性";
+
+// warning dans les transfo de part
+GSMUIINTERNAL_ERR_700.Request    = "您要保留移轉設定嗎 ?";
+GSMUIINTERNAL_ERR_700.Diagnostic = "如否, 請使用羅盤或 3D 拘束來移動幾何元素.";
+GSMUIINTERNAL_ERR_700.Advice     = "問題";
+
+// warning dans le sweep draft pour les golios
+GSMUIINTERNAL_ERR_800.Request    = "您正在計算以標準長度定義的脫模曲面.";
+GSMUIINTERNAL_ERR_800.Diagnostic = "此長度將在每一個掃掠平面計算且與任意曲線均不相關.";
+GSMUIINTERNAL_ERR_800.Advice     = "";
+
+// Gestion d'erreur du multioutput
+GSMUIINTERNAL_ERR_900.Request    = " ";
+GSMUIINTERNAL_ERR_900.Diagnostic = "您在清單中選擇了數個特徵.";
+GSMUIINTERNAL_ERR_900.Advice     = "請一個一個選擇特徵.";
+
+// Command not autorized
+GSMUIINTERNAL_ERR_1100.Request    = "未授權命令";
+GSMUIINTERNAL_ERR_1100.Diagnostic = "不允許在幾何組下建立體積特徵.";
+GSMUIINTERNAL_ERR_1100.Advice     = "";
+
+// Transformations of imports
+GSMUIINTERNAL_ERR_1200.Request    = "除了直接轉換輸入外, 建議您應用新增位置右鍵命令至實體中, 若已執行時, \n 則應用所需的轉換至定位的輸入.";
+GSMUIINTERNAL_ERR_1200.Diagnostic = "您確定要斷續執行嗎 (按是) 或遵循系統的建議 (按否) ?";
+GSMUIINTERNAL_ERR_1200.Advice     = "問題";
+
+//adaptative sweep
+GSMUIINTERNAL_ERR_1300.Request    = "切面 /p1 更新錯誤.";
+GSMUIINTERNAL_ERR_1300.Diagnostic = " /p1 ";
+GSMUIINTERNAL_ERR_1300.Advice     = "請移除切面或修改草圖.";
+
+GSMUIINTERNAL_ERR_1301.Request    = "偵測到 /p1 關聯與草圖參數鏈結.";
+GSMUIINTERNAL_ERR_1301.Diagnostic = "掃掠計算時關聯必須與草圖有關係.";
+GSMUIINTERNAL_ERR_1301.Advice     = "您要將關聯移至草圖關係下嗎 ?";
+
+GSMUIINTERNAL_ERR_1302.Request    = "內部錯誤.";
+GSMUIINTERNAL_ERR_1302.Diagnostic = "無法計算草圖軸.";
+GSMUIINTERNAL_ERR_1302.Advice     = "請檢查您的輸入.";
+
+GSMUIINTERNAL_ERR_1303.Request    = "拘束 /p1 與絕對軸系原點鏈結.";
+GSMUIINTERNAL_ERR_1303.Diagnostic = "無法自動計算拘束與原點的鏈結.";
+GSMUIINTERNAL_ERR_1303.Advice     = "您必須手動修改草圖.";
+
+GSMUIINTERNAL_ERR_1400.Request    = "操作發生更新錯誤.";
+GSMUIINTERNAL_ERR_1400.Diagnostic = " /p1 ";
+GSMUIINTERNAL_ERR_1400.Advice     = " ";
+
+// Warning at upgrade
+
+WarningUpgradeDeactivatedFeat	= "未啟動特徵已成功升級, 但啟動特徵未完整升級.
+此些特徵必須在重新啟動後再升級.";
+WarningUpgradeFeatTitle			= "升級警告";

@@ -1,0 +1,948 @@
+//fichier CATStCLADefaultCommandHeader
+
+// BREAK
+CATStCLADefaultCommandHeader.BreakGeomHead.Title = "打斷";
+CATStCLADefaultCommandHeader.BreakGeomHead.ShortHelp = "打斷曲面或曲線";
+CATStCLADefaultCommandHeader.BreakGeomHead.Help = "移除綴面或打斷曲面至兩曲面";
+CATStCLADefaultCommandHeader.BreakGeomHead.LongHelp =
+"打斷曲面或曲線
+移除綴面或打斷曲面至兩曲面.";
+
+// AFFIX
+CATStCLADefaultCommandHeader.AffixGeomHead.Title = "未修剪";
+CATStCLADefaultCommandHeader.AffixGeomHead.ShortHelp = "未修剪曲面或曲線";
+CATStCLADefaultCommandHeader.AffixGeomHead.Help = "未修剪之前曲面或曲線";
+CATStCLADefaultCommandHeader.AffixGeomHead.LongHelp =
+"未修剪曲面或曲線
+未修剪之前曲面或曲線.";
+
+// PLANAR PATCH
+CATStCLADefaultCommandHeader.PlanePatchHead.Title = "平面綴面";
+CATStCLADefaultCommandHeader.PlanePatchHead.ShortHelp = "平面綴面";
+CATStCLADefaultCommandHeader.PlanePatchHead.Help = "建立平面綴面";
+CATStCLADefaultCommandHeader.PlanePatchHead.LongHelp =
+"平面綴面
+在您首先按的地方建立平面綴面.";
+
+// 3-POINT PATCH
+CATStCLADefaultCommandHeader.3PointsPatchHead.Title = "3 點綴面";
+CATStCLADefaultCommandHeader.3PointsPatchHead.ShortHelp = "3 點綴面";
+CATStCLADefaultCommandHeader.3PointsPatchHead.Help = "建立3 點綴面";
+CATStCLADefaultCommandHeader.3PointsPatchHead.LongHelp =
+"3 點綴面
+以首兩點定義的邊所構成的平面形式基本區面."; 
+
+// 4-POINT PATCH
+CATStCLADefaultCommandHeader.4PointsPatchHead.Title = "4點綴面";
+CATStCLADefaultCommandHeader.4PointsPatchHead.ShortHelp = "4點綴面";
+CATStCLADefaultCommandHeader.4PointsPatchHead.Help = "建立4點綴面";
+CATStCLADefaultCommandHeader.4PointsPatchHead.LongHelp =
+"4點綴面
+建立4點綴面, 其中三點必須依附在已有幾何上.";
+
+
+// EXTRUDE SURFACE
+CATStCLADefaultCommandHeader.ExtrudeSurfaceHead.Title = "拉伸曲面";
+CATStCLADefaultCommandHeader.ExtrudeSurfaceHead.ShortHelp = "拉伸曲面";
+CATStCLADefaultCommandHeader.ExtrudeSurfaceHead.Help = "由曲線建立拉伸曲面";
+CATStCLADefaultCommandHeader.ExtrudeSurfaceHead.LongHelp =
+"拉伸曲面
+將曲線沿著指定方向
+建立對稱或不對稱的規則曲面.";	
+
+// new control points (test command from the test toolbar)
+CATStCLADefaultCommandHeader.CPHead.Title = "新控制點";
+CATStCLADefaultCommandHeader.CPHead.ShortHelp = "新控制點";
+CATStCLADefaultCommandHeader.CPHead.Help = "新控制點";
+CATStCLADefaultCommandHeader.CPHead.LongHelp =
+"新控制點.";
+
+// SEGMENTATION  (CONVERTER WIZARD)
+CATStCLADefaultCommandHeader.SegmentationHead.Title = "轉換精靈";
+CATStCLADefaultCommandHeader.SegmentationHead.ShortHelp = "轉換精靈";
+CATStCLADefaultCommandHeader.SegmentationHead.Help = "轉換現有曲線或曲面";
+CATStCLADefaultCommandHeader.SegmentationHead.LongHelp = 
+"轉換精靈
+由指定的階數或最大數目的弧段數, 
+依據容差來轉換曲線或曲面至.";
+
+// MESHING
+CATStCLADefaultCommandHeader.MeshingHead.Title = "網格化";
+CATStCLADefaultCommandHeader.MeshingHead.ShortHelp = "網格化";
+CATStCLADefaultCommandHeader.MeshingHead.Help = "定義疊層網格化步序";
+CATStCLADefaultCommandHeader.MeshingHead.LongHelp = 
+"網格化
+調整弧段和網格曲線的複合參數.";
+
+
+// CURVE ON PLANE
+CATStCLADefaultCommandHeader.CurveOnPlaneHead.Title = "平面上的曲線";
+CATStCLADefaultCommandHeader.CurveOnPlaneHead.ShortHelp = "平面上的曲線";
+CATStCLADefaultCommandHeader.CurveOnPlaneHead.Help = "在虛擬平面上建立曲線";
+CATStCLADefaultCommandHeader.CurveOnPlaneHead.LongHelp = 
+"平面上的曲線
+依據羅盤位置,
+在虛擬平面上建立曲線.";
+
+// CURVE ON SURFACE
+CATStCLADefaultCommandHeader.CurveOnSurfaceHead.Title = "曲面上的曲線";
+CATStCLADefaultCommandHeader.CurveOnSurfaceHead.ShortHelp = "曲面上的曲線";
+CATStCLADefaultCommandHeader.CurveOnSurfaceHead.Help = "建立曲面上的曲線";
+CATStCLADefaultCommandHeader.CurveOnSurfaceHead.LongHelp = 
+"曲面上的曲線
+在曲面或沿著曲面上任意的同位曲線
+來建立曲線.
+在曲面上任意按一下來建立中間點.";
+
+// CURVE ON GEOMETRY
+CATStCLADefaultCommandHeader.CurveOnGeometryHead.Title = "空間中的曲線";
+CATStCLADefaultCommandHeader.CurveOnGeometryHead.ShortHelp = "空間中的曲線";
+CATStCLADefaultCommandHeader.CurveOnGeometryHead.Help = "在已存的幾何 (點, 雲點, 曲線, 曲面)上任意按一下來建立空間中的曲線";
+CATStCLADefaultCommandHeader.CurveOnGeometryHead.LongHelp =
+"空間中的曲線
+在已存的幾何 (點, 雲點, 曲線, 曲面)上任意按一下來建立空間中的曲線.";
+
+// GAUSSIAN CURVATURE
+CATStCLADefaultCommandHeader.GaussCurvatureHead.Title = "高斯曲率";
+CATStCLADefaultCommandHeader.GaussCurvatureHead.ShortHelp = "高斯曲率";
+CATStCLADefaultCommandHeader.GaussCurvatureHead.Help = "於造型上分析高斯曲率";
+CATStCLADefaultCommandHeader.GaussCurvatureHead.LongHelp = 
+"高斯曲率
+依據曲面上的每一點
+來做顏色的對映分析.";
+
+// SURFACIC CURVATURE ANALYSIS
+CATStCLADefaultCommandHeader.SpecSurfCurvatHead.Title = "曲面曲率分析";
+CATStCLADefaultCommandHeader.SpecSurfCurvatHead.ShortHelp = "曲面曲率分析";
+CATStCLADefaultCommandHeader.SpecSurfCurvatHead.Help = "於造型上分析高斯曲率";
+CATStCLADefaultCommandHeader.SpecSurfCurvatHead.LongHelp = 
+"高斯曲率
+依據曲面上的每一點
+來做顏色的對映分析.";
+
+// ENVIRONNEMENT MAPPING
+CATStCLADefaultCommandHeader.EnvMappingHead.Title = "舊環境對映";
+CATStCLADefaultCommandHeader.EnvMappingHead.ShortHelp = "舊環境對映";
+CATStCLADefaultCommandHeader.EnvMappingHead.Help = "增加反射對映於所有物件";
+CATStCLADefaultCommandHeader.EnvMappingHead.LongHelp =
+"環境對映
+增加反射對映於所有物件.";
+
+// ISOPHOTES ANALYSIS
+CATStCLADefaultCommandHeader.IsophotesHead.Title = "同相顏色分析";
+CATStCLADefaultCommandHeader.IsophotesHead.ShortHelp = "同相顏色分析";
+CATStCLADefaultCommandHeader.IsophotesHead.Help = "在整體物體上對映黑色線條";
+CATStCLADefaultCommandHeader.IsophotesHead.LongHelp =
+"同相顏色分析
+依據方向在整體物體上對映黑色線條.";
+
+// CTRL POINTS + REFL LINES
+CATStCLADefaultCommandHeader.RefLinesControlHead.Title = "映射線控制";
+CATStCLADefaultCommandHeader.RefLinesControlHead.ShortHelp = "映射線控制";
+CATStCLADefaultCommandHeader.RefLinesControlHead.Help = "使用映射線修改曲面";
+CATStCLADefaultCommandHeader.RefLinesControlHead.LongHelp =
+"映射線控制
+以相關映射線來修改曲面.";
+
+// OFFSET GEOMETRY
+CATStCLADefaultCommandHeader.OffsetGeomHead.Title = "偏移";
+CATStCLADefaultCommandHeader.OffsetGeomHead.ShortHelp = "偏移";
+CATStCLADefaultCommandHeader.OffsetGeomHead.Help = "曲面偏移";
+CATStCLADefaultCommandHeader.OffsetGeomHead.LongHelp =
+"偏移
+以距離偏移曲面.";
+
+// EXTRAPOL GEOMETRY
+CATStCLADefaultCommandHeader.ExtendGeomHead.Title = "造形延伸";
+CATStCLADefaultCommandHeader.ExtendGeomHead.ShortHelp = "造形延伸";
+CATStCLADefaultCommandHeader.ExtendGeomHead.Help = "延伸曲線或曲面長度";
+CATStCLADefaultCommandHeader.ExtendGeomHead.LongHelp =
+"造形延伸
+延伸曲線或曲面長度.";
+
+// EXTEND GEOMETRY    R11                                                 
+CATStCLADefaultCommandHeader.ParamXtendHead.Title = "延伸";
+CATStCLADefaultCommandHeader.ParamXtendHead.ShortHelp = "延伸";
+CATStCLADefaultCommandHeader.ParamXtendHead.Help = "延伸曲線或曲面在指定長度";
+CATStCLADefaultCommandHeader.ParamXtendHead.LongHelp =
+"延伸
+延伸曲線或曲面在指定長度";
+
+// EXTEND GEOMETRY                                                     
+CATStCLADefaultCommandHeader.ParamExtendHead.Title = "伸長";
+CATStCLADefaultCommandHeader.ParamExtendHead.ShortHelp = "伸長";
+CATStCLADefaultCommandHeader.ParamExtendHead.Help = "以百分比來伸長曲線或曲面";
+CATStCLADefaultCommandHeader.ParamExtendHead.LongHelp =
+"伸長
+以百分比或長度值來伸長曲線或曲面.";
+
+// PROJECT CURVE
+CATStCLADefaultCommandHeader.ProjectCurveHead.Title = "投影曲線";
+CATStCLADefaultCommandHeader.ProjectCurveHead.ShortHelp = "投影曲線";
+CATStCLADefaultCommandHeader.ProjectCurveHead.Help = "投影曲線至曲面";
+CATStCLADefaultCommandHeader.ProjectCurveHead.LongHelp =
+"投影曲線
+投影曲線至曲面來建立 2D 或 3D 曲線.";
+
+// ADVANCED FILL
+CATStCLADefaultCommandHeader.OpenFillHead.Title = "填滿";
+CATStCLADefaultCommandHeader.OpenFillHead.ShortHelp = "填滿";
+CATStCLADefaultCommandHeader.OpenFillHead.Help = "曲面間填滿";
+CATStCLADefaultCommandHeader.OpenFillHead.LongHelp =
+"填滿
+將幾何元素間的封閉幾何中
+建立填滿曲面.";
+
+// GEOMETRY EXTRACTION
+CATStCLADefaultCommandHeader.PatchOnPatchHead.Title = "幾何萃出";
+CATStCLADefaultCommandHeader.PatchOnPatchHead.ShortHelp = "幾何萃出";
+CATStCLADefaultCommandHeader.PatchOnPatchHead.Help = "萃出部份幾何 : 曲面或曲線";
+CATStCLADefaultCommandHeader.PatchOnPatchHead.LongHelp = 
+"幾何萃出
+以萃出或近似簡化來建立原始零件的曲面或曲線.";
+
+// MIRROR SYMMETRY
+CATStCLADefaultCommandHeader.MirrorSymmetryHead.Title = "鏡射對稱";
+CATStCLADefaultCommandHeader.MirrorSymmetryHead.ShortHelp = "鏡射對稱";
+CATStCLADefaultCommandHeader.MirrorSymmetryHead.Help= "以相關的平面鏡射來建立幾何元素";
+CATStCLADefaultCommandHeader.MirrorSymmetryHead.LongHelp=
+"鏡射對稱
+以相關的平面或元素來建立鏡射幾何元素.";
+
+// CONNECT CHECKER
+CATStCLADefaultCommandHeader.ConnectCheckerHead.Title = "相連檢查";
+CATStCLADefaultCommandHeader.ConnectCheckerHead.ShortHelp = "相連檢查";
+CATStCLADefaultCommandHeader.ConnectCheckerHead.Help = "曲面相連檢查";
+CATStCLADefaultCommandHeader.ConnectCheckerHead.LongHelp =
+"相連檢查
+執行曲面間的連接分析 : 
+包括距離, 角度或曲率分析.";
+
+// NEW CONNECT CHECKER
+CATStCLADefaultCommandHeader.CCKAnalysisHead.Title = "連接檢查分析";
+CATStCLADefaultCommandHeader.CCKAnalysisHead.ShortHelp = "連接檢查分析";
+CATStCLADefaultCommandHeader.CCKAnalysisHead.Help = "檢查曲線或曲面連接";
+CATStCLADefaultCommandHeader.CCKAnalysisHead.LongHelp =
+"連接檢查
+執行兩曲線或
+曲面間連接分析
+: 距離,角度,
+或曲率分析.";
+
+// PORCUPINE ANALYSIS
+CATStCLADefaultCommandHeader.CurvaAnalysisHead.Title = "針狀分析";
+CATStCLADefaultCommandHeader.CurvaAnalysisHead.ShortHelp = "針狀分析";
+CATStCLADefaultCommandHeader.CurvaAnalysisHead.Help = "執行曲線的針狀曲率分析";
+CATStCLADefaultCommandHeader.CurvaAnalysisHead.LongHelp =
+"針狀曲率分析
+以針狀線段的表現方式.";
+
+// PORCUPINE CURVATURE
+CATStCLADefaultCommandHeader.PorcupineCurvatureHead.Title = "針狀曲率分析";
+CATStCLADefaultCommandHeader.PorcupineCurvatureHead.ShortHelp = "針狀曲率分析";
+CATStCLADefaultCommandHeader.PorcupineCurvatureHead.Help = "在任意曲線上的針狀曲率分析";
+CATStCLADefaultCommandHeader.PorcupineCurvatureHead.LongHelp =
+"針狀曲率分析
+以針狀線段的表現方式
+分析一組曲線的曲率.";
+
+// REFLECTION LINES
+CATStCLADefaultCommandHeader.ReflectLinesHead.Title = "反射線";
+CATStCLADefaultCommandHeader.ReflectLinesHead.ShortHelp =  "反射線";
+CATStCLADefaultCommandHeader.ReflectLinesHead.Help =  "以反射線分析一組曲面";
+CATStCLADefaultCommandHeader.ReflectLinesHead.LongHelp =
+"反射線
+以點的視圖在一組曲面上
+動態計算真實反射線.";
+
+// INFLECTION LINES
+CATStCLADefaultCommandHeader.InflectLinesHead.Title     = "轉折線";
+CATStCLADefaultCommandHeader.InflectLinesHead.ShortHelp = "轉折線";
+CATStCLADefaultCommandHeader.InflectLinesHead.Help      = "以轉折線來分析一組曲面";
+CATStCLADefaultCommandHeader.InflectLinesHead.LongHelp  =
+"轉折線
+動態計算
+轉折線
+(0 曲率點)
+在一組曲面.";
+
+//ISOPARAMETRIC CURVE ANALYSIS : BTO - 3DPLM
+CATStCLADefaultCommandHeader.IsoparamAnalysisHead.Title = "等參數曲線分析";
+CATStCLADefaultCommandHeader.IsoparamAnalysisHead.ShortHelp = "等參數曲線分析";
+CATStCLADefaultCommandHeader.IsoparamAnalysisHead.Help = "以等參數曲線來分析一組曲面";
+CATStCLADefaultCommandHeader.IsoparamAnalysisHead.LongHelp = 
+"等參數曲線分析
+ 以一組曲線及方向
+ 來分析一組曲面";
+
+// CUTTING PLANE
+CATStCLADefaultCommandHeader.CuttingPlaneHead.Title = "切面";
+CATStCLADefaultCommandHeader.CuttingPlaneHead.ShortHelp = "切面";
+CATStCLADefaultCommandHeader.CuttingPlaneHead.Help =  "以平面切面分析一組曲面";
+CATStCLADefaultCommandHeader.CuttingPlaneHead.LongHelp =
+"切面
+以平面相切面
+分析一組曲面";
+
+// CUTTING PLANE
+CATStCLADefaultCommandHeader.CuttingPlnHead.Title = "切面";
+CATStCLADefaultCommandHeader.CuttingPlnHead.ShortHelp =  "切面";
+CATStCLADefaultCommandHeader.CuttingPlnHead.Help =  "以切面分析一組曲面";
+CATStCLADefaultCommandHeader.CuttingPlnHead.LongHelp =
+"切面
+基於平面相交來分析一組曲面.";
+
+// DISTANCE ANALYSIS
+CATStCLADefaultCommandHeader.DynDistanceHead.Title = "距離分析";
+CATStCLADefaultCommandHeader.DynDistanceHead.ShortHelp = "距離分析";
+CATStCLADefaultCommandHeader.DynDistanceHead.Help = "兩組元素間的距離分析";
+CATStCLADefaultCommandHeader.DynDistanceHead.LongHelp =
+"距離分析
+在一組曲線和曲面或一組幾何元素間來分析距離.";
+
+// CURVE BLEND
+CATStCLADefaultCommandHeader.CurveConnectHead.Title = "順接曲線";
+CATStCLADefaultCommandHeader.CurveConnectHead.ShortHelp = "順接曲線";
+CATStCLADefaultCommandHeader.CurveConnectHead.Help = "建立兩曲線間的連接曲線";
+CATStCLADefaultCommandHeader.CurveConnectHead.LongHelp =
+"自由造形順接曲線
+在兩曲線或曲線上的點
+來建立順接曲線.";
+
+// SURFACE BLEND
+CATStCLADefaultCommandHeader.SurfaceBlendHead.Title = "順接曲面";
+CATStCLADefaultCommandHeader.SurfaceBlendHead.ShortHelp = "順接曲面";
+CATStCLADefaultCommandHeader.SurfaceBlendHead.Help = "建立兩曲面間的連接曲面";
+CATStCLADefaultCommandHeader.SurfaceBlendHead.LongHelp =
+"自由造形順接曲面
+在任兩依附間, 以極限連續, 張力和其它以後可更改的參數
+來建立順接曲面.";
+
+// CURVE MATCH
+CATStCLADefaultCommandHeader.CurveMatchHead.Title = "對應曲線";
+CATStCLADefaultCommandHeader.CurveMatchHead.ShortHelp = "對應曲線";
+CATStCLADefaultCommandHeader.CurveMatchHead.Help = "修整曲線來對應曲線或曲面的邊界";
+CATStCLADefaultCommandHeader.CurveMatchHead.LongHelp =
+"對應曲線
+修整曲線來對應另一元素 : 點或曲線.";
+
+// SURFACE MATCH
+CATStCLADefaultCommandHeader.SurfaceMatchHead.Title = "對應曲面";
+CATStCLADefaultCommandHeader.SurfaceMatchHead.ShortHelp = "對應曲面";
+CATStCLADefaultCommandHeader.SurfaceMatchHead.Help="修整曲面來對應曲線";
+CATStCLADefaultCommandHeader.SurfaceMatchHead.LongHelp=
+"對應曲面
+變形曲面的邊界使邊界可對應曲線. 
+提供處理曲面連續的能力.";
+
+// FIT TO GEOMETRY
+CATStCLADefaultCommandHeader.FitToGeometryHead.Title = "填滿幾何";
+CATStCLADefaultCommandHeader.FitToGeometryHead.ShortHelp = "填滿幾何";
+CATStCLADefaultCommandHeader.FitToGeometryHead.Help = "調整幾何元素的形狀至另一個元素";
+CATStCLADefaultCommandHeader.FitToGeometryHead.LongHelp =
+"填滿幾何
+以所提供的方向和限制, 
+調整幾何元素的形狀至另一個元素.";
+
+// New FIT
+CATStCLADefaultCommandHeader.NewFitHead.Title = "填滿幾何";
+CATStCLADefaultCommandHeader.NewFitHead.ShortHelp = "填滿幾何";
+CATStCLADefaultCommandHeader.NewFitHead.Help = "調整幾何元素的形狀至另一個元素";
+CATStCLADefaultCommandHeader.NewFitHead.LongHelp =
+"填滿幾何
+調整幾何元素的形狀至另一個元素.";
+
+// Old CONTROL POINTS version (old from R15, modif NLS R16 => + 'Old')
+CATStCLADefaultCommandHeader.ControlPointsHead.Title = "舊控制點";
+CATStCLADefaultCommandHeader.ControlPointsHead.ShortHelp = "舊控制點";
+CATStCLADefaultCommandHeader.ControlPointsHead.Help="以控制點來修整曲面或曲線";
+CATStCLADefaultCommandHeader.ControlPointsHead.LongHelp=
+"控制點
+以移動控制點來修整曲面或曲線. 
+處理平滑和階數
+允許顯示數個曲面的網格.";
+
+// GLOBAL DEFORMATION
+CATStCLADefaultCommandHeader.GlobalDeformHead.Title = "整體變形";
+CATStCLADefaultCommandHeader.GlobalDeformHead.ShortHelp = "整體變形";
+CATStCLADefaultCommandHeader.GlobalDeformHead.Help = "整體變形一組曲面";
+CATStCLADefaultCommandHeader.GlobalDeformHead.LongHelp =
+"整體變形
+以中間綴面或操作子
+來整體變形一組曲面.";
+
+// STRETCH VIEW
+CATStCLADefaultCommandHeader.StretchViewHead.Title = "伸長視圖";
+CATStCLADefaultCommandHeader.StretchViewHead.ShortHelp = "伸長視圖";
+CATStCLADefaultCommandHeader.StretchViewHead.Help = "定義限制的區域來應用特殊的零件顯示";
+CATStCLADefaultCommandHeader.StretchViewHead.LongHelp = 
+"伸長視圖
+在目前視圖上指定四方形區域伸長最大可見大小.
+可定義縮放因子.";
+
+// AUTODETECTION
+CATStCLADefaultCommandHeader.AutodetectionHead.Title = "自動偵測";
+CATStCLADefaultCommandHeader.AutodetectionHead.ShortHelp = "自動偵測";
+CATStCLADefaultCommandHeader.AutodetectionHead.Help = "自動偵測";
+CATStCLADefaultCommandHeader.AutodetectionHead.LongHelp = 
+"自動偵測
+啟動自動偵測模式並定義它的特性.";
+
+// Quick switch
+CATStCLADefaultCommandHeader.QuickSwitchHead.Title = "快速切換";
+CATStCLADefaultCommandHeader.QuickSwitchHead.ShortHelp = "快速切換";
+CATStCLADefaultCommandHeader.QuickSwitchHead.Help = "快速切換";
+CATStCLADefaultCommandHeader.QuickSwitchHead.LongHelp = 
+"快速切換
+從一個特徵切換至另一個特徵.";
+
+// Highlight lines
+CATStCLADefaultCommandHeader.HighlightLinesHead.Title = "亮度顯示線";
+CATStCLADefaultCommandHeader.HighlightLinesHead.ShortHelp = "亮度顯示線分析";
+CATStCLADefaultCommandHeader.HighlightLinesHead.Help = "使用亮度顯示線分析曲面";
+CATStCLADefaultCommandHeader.HighlightLinesHead.LongHelp = 
+"亮度顯示線
+動態計算亮度顯示線
+(參數線或參數切線)
+在一組曲面上.";
+
+// Environment Mapping
+CATStCLADefaultCommandHeader.EnvMappingAnalysisHead.Title = "環境對映";
+CATStCLADefaultCommandHeader.EnvMappingAnalysisHead.ShortHelp = "環境對映分析";
+CATStCLADefaultCommandHeader.EnvMappingAnalysisHead.Help = "使用環境對映分析曲面";
+CATStCLADefaultCommandHeader.EnvMappingAnalysisHead.LongHelp = 
+"環境對映
+在一組曲面上
+動態應用貼圖.";
+
+// Isophotes Mapping
+CATStCLADefaultCommandHeader.IsoMappingAnalysisHead.Title = "參數圖像對映";
+CATStCLADefaultCommandHeader.IsoMappingAnalysisHead.ShortHelp = "參數化圖像對映分析";
+CATStCLADefaultCommandHeader.IsoMappingAnalysisHead.Help = "使用參數化圖像對映分析曲面";
+CATStCLADefaultCommandHeader.IsoMappingAnalysisHead.LongHelp = 
+"參數化圖像對映
+在一組曲面上
+動態應用貼圖.";
+
+// Single Light Band
+CATStCLADefaultCommandHeader.StSingleLightBandHead.Title = "單光源頻帶對映";
+CATStCLADefaultCommandHeader.StSingleLightBandHead.ShortHelp = "單光源頻帶對映分析";
+CATStCLADefaultCommandHeader.StSingleLightBandHead.Help = "使用單光源頻帶對映分析曲面";
+CATStCLADefaultCommandHeader.StSingleLightBandHead.LongHelp = 
+"動態應用貼圖
+在一組曲面上
+以單光源頻帶對映.";
+
+// Matching Constraint
+CATStCLADefaultCommandHeader.ConstraintMatchHead.Title = "對應拘束";
+CATStCLADefaultCommandHeader.ConstraintMatchHead.ShortHelp = "對應拘束";
+CATStCLADefaultCommandHeader.ConstraintMatchHead.Help = "使用 V5 拘束機制對映曲面和曲線";
+CATStCLADefaultCommandHeader.ConstraintMatchHead.LongHelp = "使用 V5 拘束機制對映曲面和曲線";
+
+// DIRECT DEFORMATION
+CATStCLADefaultCommandHeader.DirectDeformHead.Title = "直接變形";
+CATStCLADefaultCommandHeader.DirectDeformHead.ShortHelp = "直接變形";
+CATStCLADefaultCommandHeader.DirectDeformHead.Help = "直接變形曲線或曲面";
+CATStCLADefaultCommandHeader.DirectDeformHead.LongHelp = 
+"直接變形
+允許手動調整幾何上的點
+來直接變形曲線或曲面.";
+
+// BODY DISASSEMBLE
+CATStCLADefaultCommandHeader.BodyDisassembleHead.Title = "分解";
+CATStCLADefaultCommandHeader.BodyDisassembleHead.ShortHelp = "分解";
+CATStCLADefaultCommandHeader.BodyDisassembleHead.Help = "分解多重物件至單一物件";
+CATStCLADefaultCommandHeader.BodyDisassembleHead.LongHelp = 
+"分解
+分解多重物件至單一物件.";
+
+// BODY EXPLODE
+CATStCLADefaultCommandHeader.BodyExplodeHead.Title = "拆散";
+CATStCLADefaultCommandHeader.BodyExplodeHead.ShortHelp = "拆散";
+CATStCLADefaultCommandHeader.BodyExplodeHead.Help = "拆散多重曲面至數個曲面";
+CATStCLADefaultCommandHeader.BodyExplodeHead.LongHelp = 
+"分解
+分解多重曲面至數個曲面.";
+
+// DRAFT ANALYSIS - SPEC V5R9
+CATStCLADefaultCommandHeader.SpecDraftAnaHead.Title = "脫模分析";
+CATStCLADefaultCommandHeader.SpecDraftAnaHead.ShortHelp = "脫模分析";
+CATStCLADefaultCommandHeader.SpecDraftAnaHead.Help = "分析在所選曲面上的脫模方向";
+CATStCLADefaultCommandHeader.SpecDraftAnaHead.LongHelp = 
+"特徵脫模分析
+依據在曲面上的每一點間垂直和脫模方向間
+的角度差值來映對曲面的圖像";
+
+
+// DRAFT ANALYSIS
+CATStCLADefaultCommandHeader.DraftAnalysisHead.Title = "舊脫模分析";
+CATStCLADefaultCommandHeader.DraftAnalysisHead.ShortHelp = "舊脫模分析";
+CATStCLADefaultCommandHeader.DraftAnalysisHead.Help = "分析所選曲面的脫模方向";
+CATStCLADefaultCommandHeader.DraftAnalysisHead.LongHelp = 
+"拔模分析
+在曲面上的每一個點
+依據垂直向量和角度差值
+來對映曲面的顏色.";
+
+// LOFT FMC
+CATStCLADefaultCommandHeader.GenLoftHead.Title = "網狀曲面";
+CATStCLADefaultCommandHeader.GenLoftHead.ShortHelp = "網狀曲面";
+CATStCLADefaultCommandHeader.GenLoftHead.Help = "以網狀曲線來建立曲面";
+CATStCLADefaultCommandHeader.GenLoftHead.LongHelp =
+"網狀曲面
+以導引和斷面的網狀曲線來建立曲面.";
+
+// QUICKCOMPASS ORIENTATION
+CATStCLADefaultCommandHeader.QuickCompassOrientationHead.Title = "羅盤管理";
+CATStCLADefaultCommandHeader.QuickCompassOrientationHead.ShortHelp = "快速羅盤定位";
+CATStCLADefaultCommandHeader.QuickCompassOrientationHead.Help = "啟動快速羅盤定位";
+CATStCLADefaultCommandHeader.QuickCompassOrientationHead.LongHelp = 
+"快速羅盤定位
+使用特殊的工具列
+來啟動快速羅盤定位.";
+
+// FLIP COMPASS
+CATStCLADefaultCommandHeader.FlipCompassBaseHead.Title = "倒置羅盤";
+CATStCLADefaultCommandHeader.FlipCompassBaseHead.ShortHelp = "倒置羅盤";
+CATStCLADefaultCommandHeader.FlipCompassBaseHead.Help = "倒置羅盤";
+CATStCLADefaultCommandHeader.FlipCompassBaseHead.LongHelp = 
+"倒置羅盤基面
+在羅盤的三個主要平面上
+來倒置羅盤.";
+
+// RESET COMPASS
+CATStCLADefaultCommandHeader.ResetCompassHead.Title = "重設羅盤至 XYZ";
+CATStCLADefaultCommandHeader.ResetCompassHead.ShortHelp = "重設羅盤至 XYZ";
+CATStCLADefaultCommandHeader.ResetCompassHead.Help = "重設羅盤至 XYZ";
+CATStCLADefaultCommandHeader.ResetCompassHead.LongHelp = 
+"重設羅盤至 XYZ
+重設羅盤至 XYZ 讓它可平行模型 (XYZ) 軸.";
+
+// SET ORIENTATION
+CATStCLADefaultCommandHeader.SetCompassHead.Title = "設定羅盤方向";
+CATStCLADefaultCommandHeader.SetCompassHead.ShortHelp = "設定羅盤方向";
+CATStCLADefaultCommandHeader.SetCompassHead.Help = "設定羅盤方向";
+CATStCLADefaultCommandHeader.SetCompassHead.LongHelp = 
+"以選擇來設定羅盤方向
+以選擇幾何元素
+來起動羅盤基面方向.";
+
+// DROP COMPASS
+CATStCLADefaultCommandHeader.DropCompassPlaneHead.Title = "以羅盤平面";
+CATStCLADefaultCommandHeader.DropCompassPlaneHead.ShortHelp = "以羅盤建平面";
+CATStCLADefaultCommandHeader.DropCompassPlaneHead.Help = "以羅盤基礎建平面";
+CATStCLADefaultCommandHeader.DropCompassPlaneHead.LongHelp = 
+"以羅盤基礎建立平面
+以相關羅盤基礎來建立平面.";
+
+// FREE STYLE VISU SHOW
+CATStCLADefaultCommandHeader.FSVisuShowHead.Title = "應用修飾";
+CATStCLADefaultCommandHeader.FSVisuShowHead.ShortHelp = "應用修飾";
+CATStCLADefaultCommandHeader.FSVisuShowHead.Help = "在目前選擇顯上應用修飾";
+CATStCLADefaultCommandHeader.FSVisuShowHead.LongHelp = 
+"應用修飾
+在目前的所選元素上
+應用預設的應用修飾選項.";
+
+// FREE STYLE VISU HIDE
+CATStCLADefaultCommandHeader.FSVisuHideHead.Title = "移除修飾";
+CATStCLADefaultCommandHeader.FSVisuHideHead.ShortHelp = "移除修飾";
+CATStCLADefaultCommandHeader.FSVisuHideHead.Help = "在目前選擇上移除修飾";
+CATStCLADefaultCommandHeader.FSVisuHideHead.LongHelp = 
+"移除修飾
+在目前的所選元素上
+應用預設的應用修飾選項.";
+
+// FREE STYLE VISU OPTIONS
+CATStCLADefaultCommandHeader.FSVisuOptionsHead.Title = "顯示選項";
+CATStCLADefaultCommandHeader.FSVisuOptionsHead.ShortHelp = "顯示選項";
+CATStCLADefaultCommandHeader.FSVisuOptionsHead.Help = "允許在目前選擇上自訂顯示選項";
+CATStCLADefaultCommandHeader.FSVisuOptionsHead.LongHelp = 
+"顯示選項
+在目前的所選元素上
+允許自訂顯示選項.";
+
+// MULTISURFACE's MATCH
+CATStCLADefaultCommandHeader.NSideMatchHead.Title = "多重邊對應曲面";
+CATStCLADefaultCommandHeader.NSideMatchHead.ShortHelp = "多重邊對應曲面";
+CATStCLADefaultCommandHeader.NSideMatchHead.Help= "修整曲面來對應另一個";
+CATStCLADefaultCommandHeader.NSideMatchHead.LongHelp =
+"多重邊對應曲面
+修整曲面的一至四個邊界, 讓它可對映曲面.
+提供處理連接曲面的管理能力.";
+
+// SWEEP SURFACE
+CATStCLADefaultCommandHeader.SweepHead.Title = "掃掠造型面";
+CATStCLADefaultCommandHeader.SweepHead.ShortHelp = "掃掠造型面";
+CATStCLADefaultCommandHeader.SweepHead.Help= "建立掃掠造型面";
+CATStCLADefaultCommandHeader.SweepHead.LongHelp =
+"造型掃掠
+依據依附在脊椎和導引曲線的斷面
+並參考平同的移動框架 LAWS
+來建立曲面.";
+
+// ROTATION Y-AXIS
+CATStCLADefaultCommandHeader.LacetRotateViewHead.Title = "繞螢幕 Z 軸旋轉";
+CATStCLADefaultCommandHeader.LacetRotateViewHead.ShortHelp = "繞螢幕 Z 軸旋轉";
+CATStCLADefaultCommandHeader.LacetRotateViewHead.Help= "繞螢幕 Z 軸旋轉";
+CATStCLADefaultCommandHeader.LacetRotateViewHead.LongHelp =
+"繞螢幕 Z 軸旋轉
+凍結所選元素繞螢幕 Z 軸旋轉.";
+
+// ROTATION X-AXIS
+CATStCLADefaultCommandHeader.PetchRotateViewHead.Title = "繞螢幕 X 軸旋轉";
+CATStCLADefaultCommandHeader.PetchRotateViewHead.ShortHelp = "繞螢幕 X 軸旋轉";
+CATStCLADefaultCommandHeader.PetchRotateViewHead.Help= "繞螢幕 X 軸旋轉";
+CATStCLADefaultCommandHeader.PetchRotateViewHead.LongHelp =
+"繞螢幕 X 軸旋轉
+凍結所選元素繞螢幕 X 軸旋轉.";
+
+// ROTATION Z-AXIS
+CATStCLADefaultCommandHeader.RollRotateViewHead.Title = "繞螢幕 Y 軸旋轉";
+CATStCLADefaultCommandHeader.RollRotateViewHead.ShortHelp = "繞螢幕 Y 軸旋轉";
+CATStCLADefaultCommandHeader.RollRotateViewHead.Help= "繞螢幕 Y 軸旋轉";
+CATStCLADefaultCommandHeader.RollRotateViewHead.LongHelp =
+"螢幕 Y 軸旋轉
+凍結所選元素繞螢幕 Y 軸旋轉.";
+
+// TRANSLATION & ZOOM
+CATStCLADefaultCommandHeader.ZoomAndTranslateHead.Title = "放大和平移";
+CATStCLADefaultCommandHeader.ZoomAndTranslateHead.ShortHelp = "放大和平移";
+CATStCLADefaultCommandHeader.ZoomAndTranslateHead.Help= "放大和平移";
+CATStCLADefaultCommandHeader.ZoomAndTranslateHead.LongHelp =
+"放大和平移
+凍結操作能力至只可放大和平移物件.";
+
+// STANDARD VIEW MANIPULATION
+CATStCLADefaultCommandHeader.DefaultViewManipHead.Title = "標準視圖操作";
+CATStCLADefaultCommandHeader.DefaultViewManipHead.ShortHelp = "標準視圖操作";
+CATStCLADefaultCommandHeader.DefaultViewManipHead.Help= "重設視圖操作";
+CATStCLADefaultCommandHeader.DefaultViewManipHead.LongHelp =
+"標準視圖操作
+重設視圖操作至標準操作.";
+
+// View Point definition
+CATStCLADefaultCommandHeader.CompassViewHead.Title = "視點定義";
+CATStCLADefaultCommandHeader.CompassViewHead.ShortHelp = "視點定義操作";
+CATStCLADefaultCommandHeader.CompassViewHead.Help= "設定視點至羅盤原點";
+CATStCLADefaultCommandHeader.CompassViewHead.LongHelp =
+"互動視點定義
+設定視點至羅盤原點.";
+
+// Inverse Sight
+CATStCLADefaultCommandHeader.InverseSightHead.Title = "逆轉視點";
+CATStCLADefaultCommandHeader.InverseSightHead.ShortHelp = "逆轉視點";
+CATStCLADefaultCommandHeader.InverseSightHead.Help= "逆轉目前視圖視點";
+CATStCLADefaultCommandHeader.InverseSightHead.LongHelp =
+"逆轉視點
+從目前視圖器中逆轉視點,
+也可從羅盤原點或預設視圖.";
+
+// PREVIOUS VIEW
+CATStCLADefaultCommandHeader.PreviousViewHead.Title = "前一視圖";
+CATStCLADefaultCommandHeader.PreviousViewHead.ShortHelp = "前一視圖";
+CATStCLADefaultCommandHeader.PreviousViewHead.Help= "顯示前一視圖";
+CATStCLADefaultCommandHeader.PreviousViewHead.LongHelp =
+"前一視圖
+顯示前一視圖.";
+
+// NEXT VIEW
+CATStCLADefaultCommandHeader.NextViewHead.Title = "下一視圖";
+CATStCLADefaultCommandHeader.NextViewHead.ShortHelp = "下一視圖";
+CATStCLADefaultCommandHeader.NextViewHead.Help= "顯示下一視圖";
+CATStCLADefaultCommandHeader.NextViewHead.LongHelp =
+"下一視圖
+顯示下一視圖.";
+
+// CURVE CONNECT CHECKER
+CATStCLADefaultCommandHeader.CurveCCKHead.Title = "曲線連接檢查";
+CATStCLADefaultCommandHeader.CurveCCKHead.ShortHelp = "曲線連接檢查";
+CATStCLADefaultCommandHeader.CurveCCKHead.Help= "曲線連接檢查";
+CATStCLADefaultCommandHeader.CurveCCKHead.LongHelp = 
+"曲線連接檢查
+執行曲線間的連接分析 : 距離,
+角度, 或曲率分析.";
+
+// SPLIT
+CATStCLADefaultCommandHeader.SplitGeomHead.Title = "自由切割";
+CATStCLADefaultCommandHeader.SplitGeomHead.ShortHelp = "自由切割曲面或曲線";
+CATStCLADefaultCommandHeader.SplitGeomHead.Help = "移除曲面的單一綴面或打斷兩綴面曲面為二";
+CATStCLADefaultCommandHeader.SplitGeomHead.LongHelp =
+"自由切割
+移除曲面的單一綴面或打斷兩綴面曲面為二.";
+
+// CHECK CLASS A
+CATStCLADefaultCommandHeader.CAATestHead.Title     = "CAA 測試命令";
+CATStCLADefaultCommandHeader.CAATestHead.ShortHelp = "檢查 CAA APIs";
+CATStCLADefaultCommandHeader.CAATestHead.Help      = "檢查 CAA APIs";
+CATStCLADefaultCommandHeader.CAATestHead.LongHelp =
+"檢查 CAA APIs
+檢查 CAA APIs 並提供
+用法的例子.";
+
+// NewDB
+CATStCLADefaultCommandHeader.DBViewHead.Title     = "新數碼表命令";
+CATStCLADefaultCommandHeader.DBViewHead.ShortHelp = "顯示新數碼對話盒";
+CATStCLADefaultCommandHeader.DBViewHead.Help      = "顯示新數碼對話盒";
+CATStCLADefaultCommandHeader.DBViewHead.LongHelp =
+"顯示新數碼對話盒
+顯示新數碼對話盒並
+載入相關未定義命令.";
+
+//  VISUAL SYMMETRY
+CATStCLADefaultCommandHeader.VisuSymHead.Title = "對稱顯示";
+CATStCLADefaultCommandHeader.VisuSymHead.ShortHelp = "對稱顯示";
+CATStCLADefaultCommandHeader.VisuSymHead.Help = "對所選零件建構對稱顯示";
+CATStCLADefaultCommandHeader.VisuSymHead.LongHelp= 
+"對稱顯示
+在產品歷程樹中對所選零件顯示建構對稱";
+
+// Geometric Information
+CATStCLADefaultCommandHeader.GeomInfoHead.Title = "幾何資訊";
+CATStCLADefaultCommandHeader.GeomInfoHead.ShortHelp = "幾何資訊";
+CATStCLADefaultCommandHeader.GeomInfoHead.Help = "對所選的修剪面或邊線提供幾何的資訊";
+CATStCLADefaultCommandHeader.GeomInfoHead.LongHelp= 
+"幾何的資訊
+對所選的修剪面或邊線提供幾何的資訊";
+
+// Concatenate
+CATStCLADefaultCommandHeader.ConcatenHead.Title = "連接";
+CATStCLADefaultCommandHeader.ConcatenHead.ShortHelp = "連接";
+CATStCLADefaultCommandHeader.ConcatenHead.Help = "連接";
+CATStCLADefaultCommandHeader.ConcatenHead.LongHelp= 
+"連接
+以提供的精度來連接曲線";
+
+// 3D CURVE
+CATStCLADefaultCommandHeader.3DCurveHead.Title = "3D 曲線";
+CATStCLADefaultCommandHeader.3DCurveHead.ShortHelp = "3D 曲線";
+CATStCLADefaultCommandHeader.3DCurveHead.Help = "在已存的幾何 (點, 雲點, 曲線, 曲面) 上任意按一下來建立空間中的曲線";
+CATStCLADefaultCommandHeader.3DCurveHead.LongHelp =
+"3D 曲線
+在已存的幾何 (點, 雲點, 曲線, 曲面)上任意按一下來建立空間中的曲線.";
+
+// CURVE FILLET
+CATStCLADefaultCommandHeader.CurveFilletHead.Title = "造形圓角";
+CATStCLADefaultCommandHeader.CurveFilletHead.ShortHelp = "造形圓角";
+CATStCLADefaultCommandHeader.CurveFilletHead.Help = "在兩曲線間依所給的最小半徑來建立連接曲線";
+CATStCLADefaultCommandHeader.CurveFilletHead.LongHelp =
+"造形圓角
+在兩曲線間依所給的最小半徑來建立連接曲線.";
+
+// QUICKPLANE ORIENTATION P1
+CATStCLADefaultCommandHeader.QuickPlaneOrientationHead.Title = "平面方向";
+CATStCLADefaultCommandHeader.QuickPlaneOrientationHead.ShortHelp = "目前平面方向";
+CATStCLADefaultCommandHeader.QuickPlaneOrientationHead.Help = "啟動快速平面定位";
+CATStCLADefaultCommandHeader.QuickPlaneOrientationHead.LongHelp = 
+"目前平面方向
+使用特定工具列
+啟動快速平面定位.";
+
+// DASHBOARD VIEW 
+CATStCLADefaultCommandHeader.ViewDashboardHead.Title = "顯示或隱藏修整對話框";
+CATStCLADefaultCommandHeader.ViewDashboardHead.ShortHelp = "顯示或隱藏修整對話框";
+CATStCLADefaultCommandHeader.ViewDashboardHead.Help = "顯示或隱藏造形修整對話框";
+CATStCLADefaultCommandHeader.ViewDashboardHead.LongHelp =
+"顯示或隱藏修整對話框
+顯示或隱藏造形修整對話框.";
+
+// SURFACE FILLET ACA
+CATStCLADefaultCommandHeader.ACAFillet.Title = "ACA 圓角";
+CATStCLADefaultCommandHeader.ACAFillet.ShortHelp = "ACA 圓角";
+CATStCLADefaultCommandHeader.ACAFillet.Help = "ACA 圓角";
+CATStCLADefaultCommandHeader.ACAFillet.LongHelp =
+"ACA 圓角";
+
+
+// ISOPHOTES PARALLELES ACA
+CATStCLADefaultCommandHeader.ACAHighlight.Title     = "ACA 亮度顯示";
+CATStCLADefaultCommandHeader.ACAHighlight.ShortHelp = "ACA 亮度顯示";
+CATStCLADefaultCommandHeader.ACAHighlight.Help      = "ACA 亮度顯示";
+CATStCLADefaultCommandHeader.ACAHighlight.LongHelp  = "ACA 亮度顯示";
+
+// CONTINUITY CONSTRAINT
+CATStCLADefaultCommandHeader.ContinuityCstHead.Title     = "連續性拘束";
+CATStCLADefaultCommandHeader.ContinuityCstHead.ShortHelp = "連續性拘束";
+CATStCLADefaultCommandHeader.ContinuityCstHead.Help      = "在兩素間建立連續性拘束";
+CATStCLADefaultCommandHeader.ContinuityCstHead.LongHelp  = 
+"連續性拘束
+在兩素間建立連續性拘束";
+
+// == GSD Point == 
+CATStCLADefaultCommandHeader.FromGSDPoint.Title                 = "點...";
+CATStCLADefaultCommandHeader.FromGSDPoint.Help                  = "建立一或多個點";
+CATStCLADefaultCommandHeader.FromGSDPoint.ShortHelp             = "點";
+CATStCLADefaultCommandHeader.FromGSDPoint.LongHelp              = 
+"點
+建立一或多個點";
+
+// == GSD Line == 
+CATStCLADefaultCommandHeader.FromGSDLine.Title                  = "線...";
+CATStCLADefaultCommandHeader.FromGSDLine.Help                   = "建立一條線";
+CATStCLADefaultCommandHeader.FromGSDLine.ShortHelp              = "線";
+CATStCLADefaultCommandHeader.FromGSDLine.LongHelp               = 
+"線
+建立一條線";
+
+// == GSD Plane == 
+CATStCLADefaultCommandHeader.FromGSDPlane.Title                 = "平面...";
+CATStCLADefaultCommandHeader.FromGSDPlane.Help                  = "建立一個平面";
+CATStCLADefaultCommandHeader.FromGSDPlane.ShortHelp             = "平面";
+CATStCLADefaultCommandHeader.FromGSDPlane.LongHelp              = 
+"平面
+建立一個平面";
+
+// == GSD Circle ==
+CATStCLADefaultCommandHeader.FromGSDCircle.Title                = "圓...";
+CATStCLADefaultCommandHeader.FromGSDCircle.Help                 = "建立圓或圓弧";
+CATStCLADefaultCommandHeader.FromGSDCircle.ShortHelp            = "圓";
+CATStCLADefaultCommandHeader.FromGSDCircle.LongHelp             = 
+"圓
+建立圓或圓弧";
+
+// == GSD Revol ==
+CATStCLADefaultCommandHeader.FromGSDRevol.Title                 = "旋轉...";
+CATStCLADefaultCommandHeader.FromGSDRevol.Help                  = "建立由斷面繞一軸所建立的曲面";
+CATStCLADefaultCommandHeader.FromGSDRevol.ShortHelp             = "旋轉";
+CATStCLADefaultCommandHeader.FromGSDRevol.LongHelp              = 
+"旋轉
+建立由斷面繞一軸所建立的曲面";
+
+// == GSD Symmetry == 
+CATStCLADefaultCommandHeader.FromGSDSymmetry.Title              = "對稱...";
+CATStCLADefaultCommandHeader.FromGSDSymmetry.Help               = "以對稱轉移元素";
+CATStCLADefaultCommandHeader.FromGSDSymmetry.ShortHelp          = "對稱";
+CATStCLADefaultCommandHeader.FromGSDSymmetry.LongHelp           = 
+"對稱
+以相對元素
+的對稱轉移元素";
+
+// FILL SPEC
+CATStCLADefaultCommandHeader.FillSpecHead.Title = "自由造形填滿";
+CATStCLADefaultCommandHeader.FillSpecHead.ShortHelp = "自由造形填滿";
+CATStCLADefaultCommandHeader.FillSpecHead.Help = "建立曲面間間隙的自由填滿曲面";
+CATStCLADefaultCommandHeader.FillSpecHead.LongHelp =
+"自由造形填滿
+建立曲面間間隙的自由填滿曲面";
+
+// == OnSupport 3D ==
+CATStCLADefaultCommandHeader.FromGSD3DGrid.Title                      = "在依附 3D 上工作";
+CATStCLADefaultCommandHeader.FromGSD3DGrid.Help                       = "允許在依附 3D 上工作";
+CATStCLADefaultCommandHeader.FromGSD3DGrid.ShortHelp                  = "在依附 3D 上工作";
+CATStCLADefaultCommandHeader.FromGSD3DGrid.LongHelp                   = 
+"在依附 3D 上工作
+允許在一組三個平面上工作.";
+
+// == Copy Geom Params ==
+CATStCLADefaultCommandHeader.GeomParamCopyHead.Title                      = "複製幾何參數";
+CATStCLADefaultCommandHeader.GeomParamCopyHead.Help                       = "複製幾何參數";
+CATStCLADefaultCommandHeader.GeomParamCopyHead.ShortHelp                  = "複製幾何參數";
+CATStCLADefaultCommandHeader.GeomParamCopyHead.LongHelp                   = 
+"複製幾何參數
+己樣板曲線參數
+修改一組曲線";
+
+// == FROM GSMBody Insert == 
+CATStCLADefaultCommandHeader.FromMecModBodyInsert.Title            = "開啟未封閉本體...";
+CATStCLADefaultCommandHeader.FromMecModBodyInsert.Help             = "建立未封閉本體";
+CATStCLADefaultCommandHeader.FromMecModBodyInsert.ShortHelp        = "未封閉本體";
+CATStCLADefaultCommandHeader.FromMecModBodyInsert.LongHelp         = "建立未封閉本體";
+
+// Light Source Manipulation
+CATStCLADefaultCommandHeader.StLightSourceManipulationHead.Title            = "光源管理";
+CATStCLADefaultCommandHeader.StLightSourceManipulationHead.Help             = "管理標準光源檔";
+CATStCLADefaultCommandHeader.StLightSourceManipulationHead.ShortHelp        = "光源管理";
+CATStCLADefaultCommandHeader.StLightSourceManipulationHead.LongHelp         =
+"以浸入使用者界面管理標準光源";
+
+// MIRROR ANALYSIS
+CATStCLADefaultCommandHeader.VisuMirrorHead.Title = "鏡向對稱分析";
+CATStCLADefaultCommandHeader.VisuMirrorHead.ShortHelp = "鏡向分析";
+CATStCLADefaultCommandHeader.VisuMirrorHead.Help = "以對稱顯示來分析所選物件";
+CATStCLADefaultCommandHeader.VisuMirrorHead.LongHelp= 
+"鏡向對稱分析
+以對稱顯示
+來分析所選物件";
+
+// ISOPARAMETRIC CURVE 
+CATStCLADefaultCommandHeader.IsoparamCrvHead.Title = "等參數曲線";
+CATStCLADefaultCommandHeader.IsoparamCrvHead.ShortHelp = "等參數曲線";
+CATStCLADefaultCommandHeader.IsoparamCrvHead.Help = "在依附上建立等參數曲線";
+CATStCLADefaultCommandHeader.IsoparamCrvHead.LongHelp =
+"等參數曲線
+在依附上建立等參數曲線";
+
+// Start 3dplm GMF - 05:09:28 - vnb - changed to IntersezctHead from StIntersectHead
+// INTERSECT
+CATStCLADefaultCommandHeader.IntersectHead.Title = "相交";
+CATStCLADefaultCommandHeader.IntersectHead.ShortHelp = "相交";
+CATStCLADefaultCommandHeader.IntersectHead.Help = "尋找兩本體間相交";
+CATStCLADefaultCommandHeader.IntersectHead.LongHelp= 
+"相交
+尋找兩本體間相交";
+
+// End 3dplm GMF
+
+// start RKJ 05:08:23 FSS Topo Fillet
+CATStCLADefaultCommandHeader.TopoFilletHead.Title = "拓墣圓角";
+CATStCLADefaultCommandHeader.TopoFilletHead.ShortHelp = "拓墣圓角";
+CATStCLADefaultCommandHeader.TopoFilletHead.Help = "建立兩曲面間圓角";
+CATStCLADefaultCommandHeader.TopoFilletHead.LongHelp =
+"拓墣圓角
+建立兩曲面間圓角";
+// start RKJ 05:08:23 FSS Topo Fillet
+
+// == CreateMask ==
+CATStCLADefaultCommandHeader.FromGSDMask.Title              = "遮覆...";
+CATStCLADefaultCommandHeader.FromGSDMask.Help               = "建立遮覆";
+CATStCLADefaultCommandHeader.FromGSDMask.ShortHelp          = "遮覆";
+CATStCLADefaultCommandHeader.FromGSDMask.LongHelp           = 
+"遮覆
+建立遮覆";
+
+// CONTROL POINTS from R15 level (modif of NLS in R16 => - 'New')
+CATStCLADefaultCommandHeader.FSControlPointsHead.Title = "新控制點";
+CATStCLADefaultCommandHeader.FSControlPointsHead.ShortHelp = "新控制點";
+CATStCLADefaultCommandHeader.FSControlPointsHead.Help="以控制點變形曲面或曲線";
+CATStCLADefaultCommandHeader.FSControlPointsHead.LongHelp=
+"控制點
+以控制點變形曲面或曲.";
+
+
+// NOT TO BE TRANSLATED - START
+// Commandes - test
+// MULTI FEATURE ACCESS
+CATStCLADefaultCommandHeader.ShapOptHead.Title = "多重編輯";
+CATStCLADefaultCommandHeader.ShapOptHead.ShortHelp = "多重特徵存取";
+CATStCLADefaultCommandHeader.ShapOptHead.Help = "特徵編輯器最佳化";
+CATStCLADefaultCommandHeader.ShapOptHead.LongHelp = "特徵編輯器最佳化";
+
+CATStCLADefaultCommandHeader.StAutoDetectAgentHead.Title     = "新自動偵測";
+CATStCLADefaultCommandHeader.StAutoDetectAgentHead.ShortHelp = "新自動偵測";
+CATStCLADefaultCommandHeader.StAutoDetectAgentHead.Help      = "新自動偵測";
+CATStCLADefaultCommandHeader.StAutoDetectAgentHead.LongHelp  = "新自動偵測";
+
+CATStCLADefaultCommandHeader.StWireAndSupportAgentHead.Title     = "線和依附代理";
+CATStCLADefaultCommandHeader.StWireAndSupportAgentHead.ShortHelp = "線和依附代理";
+CATStCLADefaultCommandHeader.StWireAndSupportAgentHead.Help      = "線和依附代理";
+CATStCLADefaultCommandHeader.StWireAndSupportAgentHead.LongHelp  = "線和依附代理";
+
+CATStCLADefaultCommandHeader.StFilletHead.Title     = "新造形圓角";
+CATStCLADefaultCommandHeader.StFilletHead.ShortHelp = "新造形圓角";
+CATStCLADefaultCommandHeader.StFilletHead.Help      = "新造形圓角";
+CATStCLADefaultCommandHeader.StFilletHead.LongHelp  = "新造形圓角";
+
+CATStCLADefaultCommandHeader.TestDiagram2D.Title     = "新 2D 圖表";
+CATStCLADefaultCommandHeader.TestDiagram2D.ShortHelp = "新 2D 圖表";
+CATStCLADefaultCommandHeader.TestDiagram2D.Help      = "新 2D 圖表";
+CATStCLADefaultCommandHeader.TestDiagram2D.LongHelp  = "新 2D 圖表";
+
+CATStCLADefaultCommandHeader.TestTest.Title     = "測試命令";
+CATStCLADefaultCommandHeader.TestTest.ShortHelp = "測試命令";
+CATStCLADefaultCommandHeader.TestTest.Help      = "測試命令";
+CATStCLADefaultCommandHeader.TestTest.LongHelp  = "測試命令";
+
+// NOT TO BE TRANSLATED - END
+
+
+

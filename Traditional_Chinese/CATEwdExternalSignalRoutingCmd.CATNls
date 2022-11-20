@@ -1,0 +1,26 @@
+CATEwdExternalSignalRoutingCmd.SelectionState.Message = "Select the equipotentials you wish to route";
+CATEwdExternalSignalRoutingCmd.ReportState.Message    = "Report of the routing algorithm";
+
+NoRoutingOnVisuMode.Title = "Automatic Equipotentials Routing";
+NoRoutingOnVisuMode.Text = "The equipotential routing does not work in pure visualization mode.\nPlease update your assembly (by clicking on the 'Update' command) in order to load the publications.";
+
+NoSignalsToRoute.Title = "Automatic Equipotentials Routing";
+NoSignalsToRoute.Text  = "There are no equipotentials to route. Please check if you have selected one or several systems to work on.";
+
+Name        = "名稱";
+Routed      = "Routed";
+Extremities = "Extremities";
+Yes         = "是";
+No          = "否";
+Missing     = "缺少";
+OK          = "確定";
+Changed     = "更改";
+
+
+RoutingStatus.MissingExtremity              = "One or several extremities of this equipotential are missing in the 3D mockup";
+RoutingStatus.NoCorrectBundleToCreateWire   = "There is no harness into create the equipotential or the extremities of this equipotential are belonging to different harnesses";
+RoutingStatus.WireCanNotBeCreated           = "Unable to create the equipotential";
+RoutingStatus.NoRouteFound                  = "No route has been found for this equipotential";
+RoutingStatus.NoRouteFoundBecauseOfSepCode  = "No route has been found for this equipotential taking into account the defined rules";
+RoutingStatus.SuccessfullyRouted            = "Successfully routed";
+RoutingStatus.NotConnexNetwork              = "The signal devices extremities are not connected to the bundle segements network";

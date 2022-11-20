@@ -1,0 +1,38 @@
+CATSiFiShuttleDialog.CATSiFiShuttleCommand.state1.Message = "選擇參考";
+
+Window = "來回編輯";
+ShuttleGenericName = "來回";
+
+Def.Title = "定義";
+Def.lmove.Title = "移動:";
+Def.fmove.Shuttle.Title    = "來回";
+Def.fmove.Shuttle.LongHelp = "Moves the shuttle content and its axis.";
+Def.fmove.Axis.Title       = "軸";
+Def.fmove.Axis.LongHelp    = "Moves the shuttle axis only.\nIf referenced by a Test and Try, this option is not available.";
+Def.LReference.Title   = "參考:";
+Def.Reference.NoRef    = "無參考";
+Def.Reference.LongHelp = "Defines the reference coordinate system for\nthe movement of the shuttle";
+Validation.Title = "確認";
+
+CrossNotification.Title = "錯誤";
+CrossNotification.NoCross = "不允許相交或循環參考";
+CrossNotification.LinkSon = "是其下層元素";
+CrossNotification.LinkFather = "是其上層元素";
+CrossNotification.Selection = "(由選擇) 拘束多餘項目 \n ; 以致無法新增";
+
+CrossNotification.Pre = "所選物件 ";
+CrossNotification.PostType3 = " is an invalid selection for the shuttle because it has internal circular connects.";
+CrossNotification.PostType4 = " is an invalid selection for the shuttle because it is the father or child of an object already selected by the shuttle.";
+CrossNotification.PostType5 = " is an invalid selection for the shuttle because it is the father or child of an object already being added to the shuttle by this action.";
+CrossNotification.PostType6 = " is an invalid selection for the shuttle because it is already connected to the shuttle.";
+CrossNotification.PostType7 = " is an invalid selection for the shuttle because this type of object can not be related to a shuttle.";
+
+ShuttlePropertyDialog.WarnDlg.Title="性質";
+ShuttlePropertyDialog.WarnDlg.WarnMsg1="所修改的性質尚未應用.";
+ShuttlePropertyDialog.WarnDlg.WarnMsg2="現在要應用嗎 ?";
+ShuttlePropertyDialog.CloseButton="關閉";
+ShuttlePropertyDialog.YesButton= "是";
+ShuttlePropertyDialog.NoButton="否";
+ShuttlePropertyDialog.CancelButton="取消";
+
+

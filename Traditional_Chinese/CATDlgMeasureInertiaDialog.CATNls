@@ -1,0 +1,548 @@
+CommandModeDialogTitle    = "慣性量測";
+EditModeDialogTitle       = "慣性量測 (編輯)";
+
+IndicateInertiaMsg        = "按一下項目來量測";
+
+IndicateAxisMsg           = "按一下軸來選擇";
+
+IndicatePtMsg             = "按一下點來選擇";
+
+IndicateAxisSystemMsg     = "按一下軸系來選擇";
+
+
+CancelButton              = "關閉";
+
+// Example usage:
+//    "Point on Product.1"
+//    "Line in Product.2"
+
+OnLabel = " 上 ";
+InLabel = " 內 ";
+
+// Definition
+
+DefFrame.SeparatorDefFrame.LabelDef.Title = "定義 ";
+//MainFrame.DefFrame.SeparatorDefFrame.LabelDef.Title = "定義 ";
+
+// Selection
+
+DefFrame.SubDefFrame.SelectionFrame.LabelSelection.Title = "選擇 :";
+//MainFrame.DefFrame.SubDefFrame.SelectionFrame.LabelSelection.Title = "選擇 :";
+NoSelection = "未選擇";
+
+// Button
+
+DefFrame.SubDefFrame.RadioButtonFrame.RadioButton3D.Title     = "量測慣性 3D";
+DefFrame.SubDefFrame.RadioButtonFrame.RadioButton3D.ShortHelp = "量測慣性 3D";
+DefFrame.SubDefFrame.RadioButtonFrame.RadioButton3D.Help      = "量測曲面或體積的慣性";
+DefFrame.SubDefFrame.RadioButtonFrame.RadioButton3D.LongHelp  = "量測曲面或體積的慣性";
+
+DefFrame.SubDefFrame.RadioButtonFrame.RadioButton2D.Title     = "量測慣性 2D";
+DefFrame.SubDefFrame.RadioButtonFrame.RadioButton2D.ShortHelp = "量測慣性 2D";
+DefFrame.SubDefFrame.RadioButtonFrame.RadioButton2D.Help      = "量測平面慣性";
+DefFrame.SubDefFrame.RadioButtonFrame.RadioButton2D.LongHelp  = "量測平面慣性";
+
+
+// Result
+
+MainFrame.ResultFrame.SeparatorResultFrame.LabelResult.Title = "結果 ";
+
+
+MainFrame.ResultFrame.DescriptionFrame.CalculationModeFrame.InertiaCalculationMode.Title = "計算模式 :  ";
+MainFrame.ResultFrame.DescriptionFrame.TypeItemFrame.TypeItemLabel.Title = "型式 :  ";
+
+MainFrame.ResultFrame.CharacAndCoFGFrame.CharacFrame.Title    = "特性";
+MainFrame.ResultFrame.CharacAndCoFGFrame.CharacFrame.LongHelp = "提供所選項目的面積, 體積, 密度和重量"; 
+
+MainFrame.ResultFrame.CharacAndCoFGFrame.CharacFrame.AreaFrame_L.AreaLabel.Title         = "面積";
+//MainFrame.ResultFrame.CharacAndCoFGFrame.CharacFrame.AreaFrame_L.AreaLabel.LongHelp    = "面積";
+
+MainFrame.ResultFrame.CharacAndCoFGFrame.CharacFrame.VolumeFrame_L.VolumeLabel.Title       = "體積";
+//MainFrame.ResultFrame.CharacAndCoFGFrame.CharacFrame.VolumeFrame_L.VolumeLabel.LongHelp  = "體積";
+
+MainFrame.ResultFrame.CharacAndCoFGFrame.CharacFrame.DensityFrame_L.DensityLabel.Title    = "密度";
+MainFrame.ResultFrame.CharacAndCoFGFrame.CharacFrame.DensityFrame_L.DensityLabel.LongHelp = "提供密度或所選項目的曲面重量. 密度是根據應用在零件的材料. \n 預設值: 體積為 1000 公斤每立方米和 曲面為 10 公斤平方米. \n 不一致: 次產品含有不同的密度.";
+
+MainFrame.ResultFrame.CharacAndCoFGFrame.CharacFrame.MassFrame_L.MassLabel.Title         = "重量";
+//MainFrame.ResultFrame.CharacAndCoFGFrame.CharacFrame.MassFrame_L.MassLabel.LongHelp    = "重量";
+
+MainFrame.ResultFrame.CharacAndCoFGFrame.CenterOfGravityFrame.Title                   = "重心 (G)";
+MainFrame.ResultFrame.CharacAndCoFGFrame.CenterOfGravityFrame.LongHelp                = "提供重心的座標";
+
+
+MainFrame.ResultFrame.CharacAndCoFGFrame.CenterOfGravityFrame.CoFGxFrame_L.GXLabel.Title = "Gx";
+MainFrame.ResultFrame.CharacAndCoFGFrame.CenterOfGravityFrame.CoFGyFrame_L.GYLabel.Title = "Gy";
+MainFrame.ResultFrame.CharacAndCoFGFrame.CenterOfGravityFrame.CoFGzFrame_L.GZLabel.Title = "Gz";
+// CalculationMode
+
+IdCalculationMode                       = "計算模式 :  ";
+IdCalculationModeResultExactThenApprox  = "確實其它近似";
+IdCalculationModeResultExact            = "確實";
+IdCalculationModeResultApprox           = "近似";
+// type
+
+SurfaceType = "曲面";
+VolumeType  = "體積";
+
+// density
+
+SurfacicMass = "曲面重量";
+VolumicMass  = "密度";
+
+
+//
+// Item labels
+// Enforce same length temporarily
+//
+Results.Title                                        = "結果";
+
+Results.IdentifierFrame.Title                        = "說明";
+Results.IdentifierFrame.LongHelp                     = "量測項目命名且指出它是體積或曲面";
+
+Results.EquivalentFrame.Title                        = "平衡性";
+Results.EquivalentFrame.LongHelp                     = "指出慣性平衡是否需計入 (使用者經由 CATIA 資料庫 輸入參數). \n0: 量測作用在選擇, 幾何或組立. \n1 或更多: 1 或多個慣性平衡已納入";
+
+Results.CharacCoFGFrame.CharacFrame.Title                            = "性質"; 
+Results.CharacCoFGFrame.CharacFrame.LongHelp                         = "給與所選擇目的面積, 體積, 密度和重量"; 
+
+Results.CharacCoFGFrame.CharacFrame.AreaLabel_F.AreaLabel.Title       = "面積";
+//Results.CharacCoFGFrame.CharacFrame.AreaLabel_F.AreaLabel.LongHelp    = "面積";
+
+Results.CharacCoFGFrame.CharacFrame.VolumeLabel_F.VolumeLabel.Title     = "體積";
+//Results.CharacCoFGFrame.CharacFrame.VolumeLabel_F.VolumeLabel.LongHelp  = "體積";
+
+Results.CharacCoFGFrame.CharacFrame.DensityLabel_F.DensityLabel.Title    = "密度";
+Results.CharacCoFGFrame.CharacFrame.DensityLabel_F.DensityLabel.LongHelp = "給與所選擇目的密度或曲面密度. 密度是應用在零件上的材料. \n 預設值: 體積為 1000 kg/m3 和 曲面積為 10 kg/m2 .\n 不一致 : 次產品具有不同密度.";
+
+Results.CharacCoFGFrame.CharacFrame.MassLabel_F.MassLabel.Title       = "重量";
+//Results.CharacCoFGFrame.CharacFrame.MassLabel_F.MassLabel.LongHelp    = "重量";
+
+      
+Results.CharacCoFGFrame.CenterOfGravityFrame.Title                   = "重心 (G)";
+Results.CharacCoFGFrame.CenterOfGravityFrame.LongHelp                = "提供重心的座標";
+
+Results.MomentsFrame.Title                           = "主要慣性 / G";
+Results.MomentsFrame.LongHelp                        = "提供相對重心的主要慣性矩 G";
+
+Results.AxesFrame.Title        	                     = "主要軸系";
+Results.AxesFrame.LongHelp     	                     = "提供慣性計算的主要軸系";
+
+Results.InertiaFrame.Title                           = "慣性矩陣  / G";
+Results.InertiaFrame.LongHelp                        = "提供相對重心的慣性矩陣 G";
+
+Results.AxisFrame.Title                              = "慣性 / 軸系"; 
+Results.AxisFrame.LongHelp                           = "提供所選軸的方程式 O 和所選軸的方向向量 D 如同相對軸的慣性力矩和旋轉 R 的半徑";
+ 
+Results.Inertia_O_Frame.Title                        = "慣性矩陣 / O";
+Results.Inertia_O_Frame.LongHelp                     = "提供相對文件原點 O 的計算慣性矩陣";
+
+Results.Inertia_P_Frame.Title                        = "慣性矩陣 / P";
+Results.Inertia_P_Frame.LongHelp                     = "提供相對座標點 P 的計算慣性矩陣";
+
+Results.Inertia_AS_Frame.Title                       = "慣性矩陣 / 軸系 A";
+Results.Inertia_AS_Frame.LongHelp                    = "提供相對所選座標系 A 的慣性矩陣和原點 O 和軸系向量 (U, V, W)";
+
+
+
+// SpacerLabel enables offset equivalent to X or Y or Z
+SpacerLabel   = "   ";
+
+
+AreaLabel     =  "面積";
+VolumeLabel   =  "體積";
+DensityLabel  =  "密度";
+MassLabel     =  "重量";
+
+DensityInfoLabel       =  "  預設值";
+DensityInfoLabelEmpty  =  "               ";
+
+MaterialLabel          =  "材料";
+MaterialLabelDefault   =  "預設";
+
+
+// ----------- Inertia Center
+
+Results.CharacCoFGFrame.CenterOfGravityFrame.DataFrame.GXLabel.Title = "Gx";
+Results.CharacCoFGFrame.CenterOfGravityFrame.DataFrame.GYLabel.Title = "Gy";
+Results.CharacCoFGFrame.CenterOfGravityFrame.DataFrame.GZLabel.Title = "Gz";
+
+GXLabel = "Gx";
+GYLabel = "Gy";
+GZLabel = "Gz";
+
+
+// ----------- Principal Moments
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalMomentG.Title    = "主力矩 / G";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalMomentG.LongHelp = "提供相對重心的慣性主力矩 M ";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalMomentG.M1_F.M1Label.Title = "M1";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalMomentG.M2_F.M2Label.Title = "M2";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalMomentG.M3_F.M3Label.Title = "M3";
+Results.MomentsFrame.DataFrame.M1Label.Title = "M1";
+Results.MomentsFrame.DataFrame.M2Label.Title = "M2";
+Results.MomentsFrame.DataFrame.M3Label.Title = "M3";
+
+
+M1Label = "M1";
+M2Label = "M2";
+M3Label = "M3";
+
+// ----------- Principals Axes
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalAxisG.Title    = "主要軸";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalAxisG.LongHelp = "提供計算慣性的主要軸 A ";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalAxisG.A1X_F.A1XLabel.Title = "A1x";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalAxisG.A1Y_F.A1YLabel.Title = "A1y";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalAxisG.A1Z_F.A1ZLabel.Title = "A1z";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalAxisG.A2X_F.A2XLabel.Title = "A2x";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalAxisG.A2Y_F.A2YLabel.Title = "A2y";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalAxisG.A2Z_F.A2ZLabel.Title = "A2z";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalAxisG.A3X_F.A3XLabel.Title = "A3x";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalAxisG.A3Y_F.A3YLabel.Title = "A3y";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.PrincipalAxisG.A3Z_F.A3ZLabel.Title = "A3z";
+
+Results.AxesFrame.DataFrame.A1XLabel.Title = "A1x";
+Results.AxesFrame.DataFrame.A1YLabel.Title = "A1y";
+Results.AxesFrame.DataFrame.A1ZLabel.Title = "A1z";
+
+Results.AxesFrame.DataFrame.A2XLabel.Title = "A2x";
+Results.AxesFrame.DataFrame.A2YLabel.Title = "A2y";
+Results.AxesFrame.DataFrame.A2ZLabel.Title = "A2z";
+
+Results.AxesFrame.DataFrame.A3XLabel.Title = "A3x";
+Results.AxesFrame.DataFrame.A3YLabel.Title = "A3y";
+Results.AxesFrame.DataFrame.A3ZLabel.Title = "A3z";
+
+A1XLabel = "A1x";
+A1YLabel = "A1y";
+A1ZLabel = "A1z";
+
+A2XLabel = "A2x";
+A2YLabel = "A2y";
+A2ZLabel = "A2z";
+
+A3XLabel = "A3x";
+A3YLabel = "A3y";
+A3ZLabel = "A3z";
+
+// ----------- Inertia Matrix
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.Title = "慣性 / G";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.LongHelp = "提供相對重心 G 計算的慣性矩 I ";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.InertiaMatrixG.Title    = "慣性矩陣 / G";
+
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.InertiaMatrixG.IXX_F.IXXLabel.Title = "IoxG";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.InertiaMatrixG.IYY_F.IYYLabel.Title = "IoyG";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.InertiaMatrixG.IZZ_F.IZZLabel.Title = "IozG";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.InertiaMatrixG.IXY_F.IXYLabel.Title = "IxyG";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.InertiaMatrixG.IXZ_F.IXZLabel.Title = "IxzG";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaG.FrameInertiaG.InertiaMatrixG.IYZ_F.IYZLabel.Title = "IyzG";
+Results.InertiaFrame.DataFrame.IXXLabel.Title = "IoxG";
+Results.InertiaFrame.DataFrame.IXYLabel.Title = "IxyG";
+Results.InertiaFrame.DataFrame.IXZLabel.Title = "IxzG";
+Results.InertiaFrame.DataFrame.IYXLabel.Title = "IyxG";
+Results.InertiaFrame.DataFrame.IYYLabel.Title = "IoyG";
+Results.InertiaFrame.DataFrame.IYZLabel.Title = "IyzG";
+Results.InertiaFrame.DataFrame.IZXLabel.Title = "IzxG";
+Results.InertiaFrame.DataFrame.IZYLabel.Title = "IzyG";
+Results.InertiaFrame.DataFrame.IZZLabel.Title = "IozG";
+
+IXXLabel = "IoxG";
+IYYLabel = "IoyG";
+IZZLabel = "IozG";
+IXYLabel = "IxyG";
+IXZLabel = "IxzG";
+IYZLabel = "IyzG";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaO.Title = "慣性 / O";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaO.LongHelp = "提供相對文件原點 O 所計算的慣性矩陣 I ";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaO.FrameInertiaO.InertiaMatrixO.Title    = "慣性力矩 / O";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaO.FrameInertiaO.InertiaMatrixO.IXX_O_F.IXXLabel.Title = "IoxO";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaO.FrameInertiaO.InertiaMatrixO.IYY_O_F.IYYLabel.Title = "IoyO";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaO.FrameInertiaO.InertiaMatrixO.IZZ_O_F.IZZLabel.Title = "IozO";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaO.FrameInertiaO.InertiaMatrixO.IXY_O_F.IXYLabel.Title = "IxyO";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaO.FrameInertiaO.InertiaMatrixO.IXZ_O_F.IXZLabel.Title = "IxzO";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaO.FrameInertiaO.InertiaMatrixO.IYZ_O_F.IYZLabel.Title = "IyzO";
+Results.Inertia_O_Frame.DataFrame.IXXLabel.Title = "IoxO";
+Results.Inertia_O_Frame.DataFrame.IXYLabel.Title = "IxyO";
+Results.Inertia_O_Frame.DataFrame.IXZLabel.Title = "IxzO";
+Results.Inertia_O_Frame.DataFrame.IYXLabel.Title = "IyxO";
+Results.Inertia_O_Frame.DataFrame.IYYLabel.Title = "IoyO";
+Results.Inertia_O_Frame.DataFrame.IYZLabel.Title = "IyzO";
+Results.Inertia_O_Frame.DataFrame.IZXLabel.Title = "IzxO";
+Results.Inertia_O_Frame.DataFrame.IZYLabel.Title = "IzyO";
+Results.Inertia_O_Frame.DataFrame.IZZLabel.Title = "IozO";
+
+IOXXLabel = "IoxO";
+IOYYLabel = "IoyO";
+IOZZLabel = "IozO";
+IOXYLabel = "IxyO";
+IOXZLabel = "IxzO";
+IOYZLabel = "IyzO";
+
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaP.Title = "慣性 / P";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaP.LongHelp = "提供相對所選點 P 的慣性矩陣 I ";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaP.FrameInertiaP.InertiaMatrixP.Title    = "慣性矩陣 / P";
+
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaP.FrameInertiaP.InertiaMatrixP.IXX_P_F.IXXLabel.Title = "IoxP";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaP.FrameInertiaP.InertiaMatrixP.IYY_P_F.IYYLabel.Title = "IoyP";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaP.FrameInertiaP.InertiaMatrixP.IZZ_P_F.IZZLabel.Title = "IozP";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaP.FrameInertiaP.InertiaMatrixP.IXY_P_F.IXYLabel.Title = "IxyP";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaP.FrameInertiaP.InertiaMatrixP.IXZ_P_F.IXZLabel.Title = "IxzP";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaP.FrameInertiaP.InertiaMatrixP.IYZ_P_F.IYZLabel.Title = "IyzP";
+Results.Inertia_P_Frame.P_I1_Editor_F.IXXLabel.Title = "IoxP";
+Results.Inertia_P_Frame.P_I1_Editor_F.IYYLabel.Title = "IoyP";
+Results.Inertia_P_Frame.P_I1_Editor_F.IZZLabel.Title = "IozP";
+
+Results.Inertia_P_Frame.P_I2_Editor_F.IXYLabel.Title = "IxyP";
+Results.Inertia_P_Frame.P_I2_Editor_F.IXZLabel.Title = "IxzP";
+Results.Inertia_P_Frame.P_I2_Editor_F.IYZLabel.Title = "IyzP";
+
+
+IPXXLabel = "IoxP";
+IPYYLabel = "IoyP";
+IPZZLabel = "IozP";
+IPXYLabel = "IxyP";
+IPXZLabel = "IxzP";
+IPYZLabel = "IyzP";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.Title = "慣性 / 軸系";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.LongHelp = "提供相對軸系 A 的慣性力矩 I ";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.InertiaMatrixAS.Title    = "慣性矩陣 / 軸系 A";
+
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.InertiaMatrixAS.IXX_AS_F.IXXLabel.Title = "IoxA";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.InertiaMatrixAS.IYY_AS_F.IYYLabel.Title = "IoyA";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.InertiaMatrixAS.IZZ_AS_F.IZZLabel.Title = "IozA";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.InertiaMatrixAS.IXY_AS_F.IXYLabel.Title = "IxyA";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.InertiaMatrixAS.IXZ_AS_F.IXZLabel.Title = "IxzA";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.InertiaMatrixAS.IYZ_AS_F.IYZLabel.Title = "IyzA";
+Results.Inertia_AS_Frame.AS_I1_Editor_F.IXXLabel.Title = "IoxA";
+Results.Inertia_AS_Frame.AS_I1_Editor_F.IYYLabel.Title = "IoyA";
+Results.Inertia_AS_Frame.AS_I1_Editor_F.IZZLabel.Title = "IozA";
+
+Results.Inertia_AS_Frame.AS_I2_Editor_F.IXYLabel.Title = "IxyA";
+Results.Inertia_AS_Frame.AS_I2_Editor_F.IXZLabel.Title = "IxzA";
+Results.Inertia_AS_Frame.AS_I2_Editor_F.IYZLabel.Title = "IyzA";
+
+
+IAXXLabel = "IoxA";
+IAYYLabel = "IoyA";
+IAZZLabel = "IozA";
+IAXYLabel = "IxyA";
+IAXZLabel = "IxzA";
+IAYZLabel = "IyzA";
+
+
+// ----------- Axis System
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.AxisSytemAS.Title = "軸系";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.AxisSytemAS.OX_AS_F.OX_AS_Label.Title = "OxA";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.AxisSytemAS.OY_AS_F.OY_AS_Label.Title = "OyA";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.AxisSytemAS.OZ_AS_F.OZ_AS_Label.Title = "OzA";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.AxisSytemAS.UX_AS_F.UX_AS_Label.Title = "UxA";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.AxisSytemAS.UY_AS_F.UY_AS_Label.Title = "UyA";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.AxisSytemAS.UZ_AS_F.UZ_AS_Label.Title = "UzA";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.AxisSytemAS.VX_AS_F.VX_AS_Label.Title = "VxA";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.AxisSytemAS.VY_AS_F.VY_AS_Label.Title = "VyA";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.AxisSytemAS.VZ_AS_F.VZ_AS_Label.Title = "VzA";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.AxisSytemAS.WX_AS_F.WX_AS_Label.Title = "WxA";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.AxisSytemAS.WY_AS_F.WY_AS_Label.Title = "WyA";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.AxisSytemAS.WZ_AS_F.WZ_AS_Label.Title = "WzA";
+
+Results.Inertia_AS_Frame.AS_O_Editor_F.OX_AS_Label.Title = "OxA";
+Results.Inertia_AS_Frame.AS_O_Editor_F.OY_AS_Label.Title = "OyA";
+Results.Inertia_AS_Frame.AS_O_Editor_F.OZ_AS_Label.Title = "OzA";
+
+OX_AS_Label = "OxA";
+OY_AS_Label = "OyA";
+OZ_AS_Label = "OzA";
+
+Results.Inertia_AS_Frame.AS_U_Editor_F.UX_AS_Label.Title = "UxA";
+Results.Inertia_AS_Frame.AS_U_Editor_F.UY_AS_Label.Title = "UyA";
+Results.Inertia_AS_Frame.AS_U_Editor_F.UZ_AS_Label.Title = "UzA";
+
+UX_AS_Label = "UxA";
+UY_AS_Label = "UyA";
+UZ_AS_Label = "UzA";
+
+Results.Inertia_AS_Frame.AS_V_Editor_F.VX_AS_Label.Title = "VxA";
+Results.Inertia_AS_Frame.AS_V_Editor_F.VY_AS_Label.Title = "VyA";
+Results.Inertia_AS_Frame.AS_V_Editor_F.VZ_AS_Label.Title = "VzA";
+
+VX_AS_Label = "VxA";
+VY_AS_Label = "VyA";
+VZ_AS_Label = "VzA";
+
+Results.Inertia_AS_Frame.AS_W_Editor_F.WX_AS_Label.Title = "WxA";
+Results.Inertia_AS_Frame.AS_W_Editor_F.WY_AS_Label.Title = "WyA";
+Results.Inertia_AS_Frame.AS_W_Editor_F.WZ_AS_Label.Title = "WzA";
+
+WX_AS_Label = "WxA";
+WY_AS_Label = "WyA";
+WZ_AS_Label = "WzA";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.SelectAxisSytemAS.AxisSystem.Title    = "選擇軸系";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaAS.FrameInertiaAS.SelectAxisSytemAS.AxisSystem.LongHelp = "按一下這裏然後再在零件歷程樹中選擇軸系. \n 接下來相對同樣軸系的計算將被完成. \n 要更改軸系,  按一下檢查盒再選另一軸系";
+
+Results.Inertia_AS_Frame.AS_Button_F.AxisSystem.Title    = "請選擇軸系";
+Results.Inertia_AS_Frame.AS_Button_F.AxisSystem.LongHelp = "按一下這裏然後再在零件歷程樹中選擇軸系. \n 接下來相對同樣軸系的計算將被完成. \n 要更改軸系,  按一下檢查盒再選另一軸系";
+
+AxisSystem = "請選擇軸系";
+AxisSystemNoSelection = "未選擇";
+AxisSystemUnknown     = "V4 軸系";
+
+AxisSystemDeleted     = "刪除或未設定";
+
+AxisSystemNotValidSelection     = "此選擇無效, 因此軸系不在作動零件上";
+
+// ----------- Axis
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaA.FrameInertiaA.AxisA.OX_A_F.OXAxisLabel.Title = "Ox";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaA.FrameInertiaA.AxisA.OY_A_F.OYAxisLabel.Title = "Oy";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaA.FrameInertiaA.AxisA.OZ_A_F.OZAxisLabel.Title = "Oz";
+Results.AxisFrame.A_O_Editor_F.OXAxisLabel.Title = "Ox";
+Results.AxisFrame.A_O_Editor_F.OYAxisLabel.Title = "Oy";
+Results.AxisFrame.A_O_Editor_F.OZAxisLabel.Title = "Oz";
+
+OXAxisLabel = "Ox";
+OYAxisLabel = "Oy";
+OZAxisLabel = "Oz";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaA.FrameInertiaA.AxisA.DX_A_F.DXAxisLabel.Title = "Dx";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaA.FrameInertiaA.AxisA.DY_A_F.DYAxisLabel.Title = "Dy";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaA.FrameInertiaA.AxisA.DZ_A_F.DZAxisLabel.Title = "Dz";
+Results.AxisFrame.A_D_Editor_F.DXAxisLabel.Title = "Dx";
+Results.AxisFrame.A_D_Editor_F.DYAxisLabel.Title = "Dy";
+Results.AxisFrame.A_D_Editor_F.DZAxisLabel.Title = "Dz";
+
+DXAxisLabel = "Dx";
+DYAxisLabel = "Dy";
+DZAxisLabel = "Dz";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaA.FrameInertiaA.SelectAxisA.ButtonAxisA.Title    = "請選擇軸系";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaA.FrameInertiaA.SelectAxisA.ButtonAxisA.LongHelp = "按一下這裏然後再在零件歷程樹中選擇軸系. \n 接下來相對同樣軸系的計算將被完成. \n 要更改軸系,  按一下檢查盒再選另一軸系";
+
+Results.AxisFrame.A_Button_F.Axis.Title    = "請選擇軸系";
+Results.AxisFrame.A_Button_F.Axis.LongHelp = "按一下這裏然後再在零件歷程樹中選擇軸系. \n 接下來相對同樣軸系的計算將被完成. \n 要更改軸系,  按一下檢查盒再選另一軸系";
+Axis = "請選擇軸系";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaA.Title    = "慣性 / 軸";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaA.LongHelp = "提供相對所選軸的方程式 O 和方向向量 D 和旋轉 R";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaA.FrameInertiaA.InertiaMomentA.Title = "力矩 / 軸";
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaA.FrameInertiaA.InertiaMomentA.MomentAFrame_L.MomentALabel.Title = "Ma ";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaA.FrameInertiaA.InertiaMomentA.RadiusMomentAFrame_L.RadiusMomentALabel.Title = "半徑 ";
+
+Results.AxisFrame.A_A_Editor_F.AxisMomentLabel.Title = "Ma ";
+AxisMomentLabel = "Ma ";
+
+Results.AxisFrame.A_A_Editor_F.RadiusMomentLabel.Title = "半徑 ";
+RadiusMomentLabel = "半徑 ";
+
+// ----------- Bounding Box
+
+BBOXLabel = "BBOx";
+BBOYLabel = "BBOy";
+BBOZLabel = "BBOz";
+
+BBLXLabel = "BBLx";
+BBLYLabel = "BBLy";
+BBLZLabel = "BBLz";
+
+// -------------
+MainFrame.ButtonFrame.CreateGeometry.Title = "建立幾何";
+MainFrame.ButtonFrame.Customise.Title = "自訂...";
+MainFrame.ButtonFrame.KeepState.Title = "保持量測";
+MainFrame.ButtonFrame.ExportButton.Title = "輸出";
+
+
+Results.CustomiseFrame.CreateGeometry.Title = "建立幾何";
+Results.CustomiseFrame.Customise.Title = "自訂...";
+
+Results.CustomiseFrame.KeepState.Title = "保持量測";
+
+Results.CustomiseFrame.ExportButton.Title = "輸出";
+
+// ------------- Point
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaP.FrameInertiaP.PointP.OXPt_F.OXPtLabel.Title = "Px";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaP.FrameInertiaP.PointP.OYPt_F.OYPtLabel.Title = "Py";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaP.FrameInertiaP.PointP.OZPt_F.OZPtLabel.Title = "Pz";
+
+Results.Inertia_P_Frame.P_P_Editor_F.OXPtLabel.Title = "Px";
+Results.Inertia_P_Frame.P_P_Editor_F.OYPtLabel.Title = "Py";
+Results.Inertia_P_Frame.P_P_Editor_F.OZPtLabel.Title = "Pz";
+
+OXPtLabel = "Px";
+OYPtLabel = "Py";
+OZPtLabel = "Pz";
+
+
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaP.FrameInertiaP.SelectPointP.ButtonPointP.Title    = "選擇點";
+MainFrame.TabResultFrame.TabResultCont.TabPageInertiaP.FrameInertiaP.SelectPointP.ButtonPointP.LongHelp = "按一下這裏然後再在零件歷程樹中選擇點. \n 接下來相對同樣點的計算將被完成. \n 要更改點,  按一下檢查盒再選另一點";
+
+Results.Inertia_P_Frame.P_Button_F.Pt.Title    = "選擇點";
+Results.Inertia_P_Frame.P_Button_F.Pt.LongHelp = "按一下這裏然後再在零件歷程樹中選擇點. \n 接下來相對同樣點的計算將被完成. \n 要更改點,  按一下檢查盒再選另一點";
+Pt = "選擇點";
+
+// ---------------- Equivalent
+
+MainFrame.ResultFrame.EquivalentFrame.EquivalentFrame_L.EquivalentLabel.Title = "相等";
+Results.EquivalentFrame.DataFrame.EQUIVLabel.Title = "        ";
+
+Equivalent = "平衡性";
+
+
+// --------------- Error
+
+PtNotify          = "錯誤";
+AxisNotify        = "錯誤";
+AxisSysNotify     = "錯誤";
+
+SelectionNotValid = "所選擇無效,請選擇另一分件";
+
+
+Warning           = "警告";
+
+NotSelectionAxis        = "所選不是軸";
+NotSelectionPt          = "所選不是點";
+NotSelectionAxisSystem  = "所選不是軸系";
+
+NotValidSelectionNotify = "所選擇無效";
+
+
+
+DensityNotValid   = "密度無效, 請輸入另一數值";
+DensityTooSmall   = "密度太小! 必須大於 ";
+
+Information = "資訊";
+MeasureInertiaDelete = "因量測項目不存在，導致慣性量測資料無效.";
+MeasureUpdateNotPossible = "因量測不相關導致無法更新.";
+
+//Factory
+
+InertiaVolume    = "慣性體積";
+InertiaSurface   = "慣性曲面";
+Inertia2DSurface = "慣性2D曲面";
