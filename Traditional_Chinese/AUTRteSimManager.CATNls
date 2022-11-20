@@ -1,0 +1,34 @@
+
+ScenarioSyntaxError =	"文件 '/P1' 行數 '/P2' 文法錯誤\n 行 : /P3" ;
+ScenarioFileError = "文件 '/P1' 文件不存在或無法存取" ;
+ScenarioIncludeCycleError = "文件上包含 '/P1' 循環錯誤" ;
+ScenarioRecordFileError = "播放和錄制檔含有相同名稱 : '/P1'." ;
+
+UnknownTypeError = "形式 '/P1' 未知" ;
+
+LoadStateOk = "已載入狀態文件 '/P1' " ;
+LoadStateFailed = "載入狀態文件 '/P1' 失敗" ;
+SaveStateOk = "狀態文件 '/P1' 已儲存" ;
+SaveStateFailed = "儲存狀態文件 '/P1' 失敗" ;
+
+AssertOk = "Assert 成功" ;
+Exec = "執行命令 : '/P1'" ;
+
+ScenarioPrintEmitted = "(執行)" ;
+ScenarioPrintNotEmitted = "(未執行)" ;
+ScenarioAssertError = "宣告失敗" ;
+ScenarioMaxTimeError = "最大時間錯誤" ;
+SeparatorMessage = "-========================-" ;
+StartSimulationMessage = "開始" ;
+ResetSimulationMessage = "復位" ;
+EndSimulationMessage = "終止" ;
+
+ControllerErrorDefaultMessage = "控制器錯誤" ;
+InputErrorDefaultMessage = "輸入錯誤" ;
+OuputErrorDefaultMessage = "輸出錯誤" ;
+
+AUTRteDataMapInitFailure =
+	"初始化失敗! Runtime 引擎 \"/P1\" 擁有部分無方向埠.\n",
+	"請編輯 \"/P1\", 設定所有方向并開始模擬.\n",
+	"/P2";
+

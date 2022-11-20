@@ -1,0 +1,94 @@
+// 3951 校正官方漢化 ------- Miscelleanous Messages --------
+
+// 3951 校正官方漢化 SEVERE ERROR -> Open must be canceled
+// 3951 校正官方漢化 An error has occurred during switch and it is not possible to revert to PLM_Mode. 
+ErrorInAbort.Diagnostic="無法將展示切換到其最小加載模式。";
+ErrorInAbort.Advice="取消您的操作。\n關閉包含此展示的編輯器。";
+
+// 3951 校正官方漢化 WARNING ERROR
+// 3951 校正官方漢化 This message can only be thrown when switch engine is not in batch mode. This mode is only available for debug. 
+NoObjectToSwitch.Diagnostic="此切換操作沒有要切換的對象。";
+NoObjectToSwitch.Advice="此展示現已在其最小模式下加載。\n您現在可以再次啟動操作。";
+
+// 3951 校正官方漢化 SEVERE ERROR
+AppliError.Diagnostic="僅 DevelopmentStage：應用代碼產生錯誤：/p1";
+AppliError.Advice="1. 將 OMB_XML_TRACE 環境變量設置為現有目錄 \n2. 重放您的方案 \n3. 執行 OmbFinalizeTraces.bat \n4. 在 Firefox/IE F_ErrorTrace.html 中打開 \n5. BSF 目錄中的 OMB_XML_TRACE.pdf 中提供更多文檔 ";
+
+
+
+// 3951 校正官方漢化 ------- Validate a switch operation ------
+
+// 3951 校正官方漢化 WARNING ERROR
+AnotherSwitchPending.Diagnostic="正在為此展示運行其他加載模式轉換操作。";
+AnotherSwitchPending.Advice="等待當前切換完成，并再次運行您的命令。";
+
+// 3951 校正官方漢化 SEVERE ERROR -> Factory can decide to use a different loading mode 
+CannotAccessTargetMode.Diagnostic="無法達到所需的加載模式。";
+CannotAccessTargetMode.Advice="檢查您的展示的關聯數據。某些流描述符可能缺失";
+
+// 3951 校正官方漢化 SEVERE ERROR -> One cannot create additional SDs on the RepRef
+CannotGenerateSecondarySSDs.Diagnostic="無法創建其他次級流描述符。";
+CannotGenerateSecondarySSDs.Advice="檢查您的展示的關聯數據。某些流描述符可能缺失";
+
+
+
+// 3951 校正官方漢化 ------- Message d'erreur BATCH_StartTransition ------
+
+// 3951 校正官方漢化 SEVERE ERROR -> Factory can decide to use a different loading mode 
+// 3951 校正官方漢化 Target Loading mode is not accessible. 
+InvalidTargetMode.Diagnostic="所需的加載模式不存在。";
+InvalidTargetMode.Advice="此展示現已在其最小模式下加載。\n您現在可以再次啟動操作。";
+
+// 3951 校正官方漢化 SEVERE ERROR -> unknown case -> better to cancel and to analyze the problem
+// 3951 校正官方漢化 Unknown error while performing the start transition step. 
+ErrorStartTransition.Diagnostic="為實現所需的加載模式而對操作進行初始化的過程中出錯。";
+ErrorStartTransition.Advice="此展示現已在其最小模式下加載。\n您現在可以再次啟動操作。";
+
+// 3951 校正官方漢化 WARNING ERROR
+// 3951 校正官方漢化 Initialisation cuteIO 
+ErrorCuteIOAddInformation.Diagnostic="無法確定必須用于此展示的數據高速緩存。";
+ErrorCuteIOAddInformation.Advice="此展示現已在其最小模式下加載。\n您現在可以再次啟動操作。";
+
+// 3951 校正官方漢化 SEVERE ERROR -> Something went wrong in the message decoding (we cannot have a SD with no URL)
+// 3951 校正官方漢化 Unable to retrieve the url on the SD
+ErrorNoURLOnSd.Diagnostic="無法查看所需數據的位置";
+ErrorNoURLOnSd.Advice="此展示現已在其最小模式下加載。\n您現在可以再次啟動操作。";
+
+// 3951 校正官方漢化 SEVERE ERROR -> Something went wrong in the message decoding (we cannot have a SD with no ws)
+// 3951 校正官方漢化 Unable to retrieve the watermark stamp on the SD. 
+ErrorInvalidWsOnSd.Diagnostic="尚未為要加載的數據檢索到有效的水印戳";
+ErrorInvalidWsOnSd.Advice="此展示現已在其最小模式下加載。\n您現在可以再次啟動操作。";
+
+// 3951 校正官方漢化 WARNING ERROR (This problem only arises when switching from a mode1 to a mode2
+// 3951 校正官方漢化 The Sd in the Vault are more recent than the one retrieved in the session
+NotSynchronousSDBetweenServerAndSession.Diagnostic="已在此會話之外修改展示。";
+NotSynchronousSDBetweenServerAndSession.Advice="請關閉并重新打開此展示";
+
+// 3951 校正官方漢化 WARNING ERROR
+CuteIOExecutionError.Diagnostic="無法將必要數據放入高速緩存中";
+CuteIOExecutionError.Advice="此展示現已在其最小模式下加載。\n您現在可以再次啟動操作。";
+
+
+// 3951 校正官方漢化 ------- Message d'erreur BATCH_Unload 
+
+// 3951 校正官方漢化 WARNING ERROR
+ErrorInUnload.Diagnostic="卸載未使用的數據時出錯。";
+ErrorInUnload.Advice="此展示現已在其最小模式下加載。\n您現在可以再次啟動操作。";
+
+// 3951 校正官方漢化 WARNING ERROR
+ErrorInStreamingRepRefForUnload.Diagnostic="將展示分流到高速緩存中時出錯";
+ErrorInStreamingRepRefForUnload.Advice="此展示現已在其最小模式下加載。\n您現在可以再次啟動操作。";
+
+// 3951 校正官方漢化 ------- Message d'erreur BATCH_Load 
+
+// 3951 校正官方漢化 WARNING ERROR
+ErrorInLoad.Diagnostic="加載實現目標加載模式所需的數據時出錯。";
+ErrorInLoad.Advice="此展示現已在其最小模式下加載。\n您現在可以再次啟動操作。";
+
+
+// 3951 校正官方漢化 ------- Message d'erreur BATCH_Close 
+// 3951 校正官方漢化 WARNING ERROR
+ErrorInClosingTransition.Diagnostic="完成達到目標加載模式所需的操作時出錯。";
+ErrorInClosingTransition.Advice="此展示現已在其最小模式下加載。\n您現在可以再次啟動操作。";
+
+

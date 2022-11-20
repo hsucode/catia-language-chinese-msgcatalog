@@ -1,0 +1,8 @@
+FixedAndMobileNonZero.Diagnostic="錯誤：非零對象框架輪廓 /p1 被固定 TCP 動作（/p3 中的 /p2）和移動 TCP 動作（/p5 中的 /p4）使用。";
+FixedAndMobileNonZero.Advice="只應從固定 TCP 或移動 TCP 動作中參考對象框架輪廓，而不應同時從二者中參考。\n由于對象框架不為零，無法轉換任務，因為某些位置將不會\n處在正確的位置上。  您需要為移動或固定 TCP 動作\n創建新的對象框架輪廓。";
+
+FixedAndMobileZero.Diagnostic="警告：全零對象框架輪廓 /p1 被固定 TCP 動作（/p3 中的 /p2）和移動 TCP 動作（/p5 中的 /p4）使用。";
+FixedAndMobileZero.Advice="只應從固定 TCP 或移動 TCP 動作中參考對象框架輪廓，而不應同時從二者中參考。\n由于對象框架為零，轉換將繼續。  如果轉換器需要轉換這些坐標，\n則某些位置可能不會處在正確的位置上，但這種機率很小。\n您應該為移動或固定 TCP 動作創建新的對象框架輪廓。";
+
+UnknownMotion="未知活動";
+UnknownTask="未知任務";

@@ -1,0 +1,60 @@
+
+CreateResource.Message = " 信息: For Sensor Resource
+1. Identify一個Parent Resource 
+2. Click OK for no Parent
+3. Click Cancel to exit ";
+
+ParentResource.Message = " 信息: Modify Parent Resource   
+1. Identify different resource from Tree或 viewer 
+2. Click OK to continue with Selected Parent Resource
+3. Check No parent Resource to be in ResourceList directly
+4. Click Cancel to exit";
+
+ResourceLocation.Message = " 信息: Place the Resource
+1. Use Layout tools place the Sensor 
+2. Click Cancel to exit";
+
+Parameters.Message = " 信息: Parameters
+1. Set Sensor Paramters (name, type, range etc)  
+2. Use Layout tools to identify the Sensing Location 
+3. Identify type of Parts(Products) to sense  
+FOR SENSOR RESOURCE ONLY:   
+Set Signal Values for each type sensed ";
+
+FilterColumn_1.Title = "零件s To Sense";
+FilterColumn_2.Title = "信號值";
+
+RemoveFilter.ShortHelp = "移動";
+RemoveFilter.Help = "移除選擇 Filter";
+
+FileSelection.ShortHelp = "Change Shape Representation";
+FileSelection.Help = "選擇a different cgr for Resource Shape Representation";
+
+SelectedOnly.Help = "所有 the Selected Products are considered for sensing";
+SelectedOnly.ShortHelp = "Consider all Selected產品";
+
+Except選擇Help = "選擇all the products in the cell EXCEPT for selected in detection";
+Except選擇ShortHelp = "Except for  selected";
+
+AllInstances.ShortHelp = "所有 Instances of Selected Filters";
+AllInstances.Help = "所有 Instances of Selected Filters are considered for Sensor Detection";
+
+InvalidSignalValue.Title = "非法 Signal 值";
+InvalidSignalValue.Message = "非法 Signal Value for the Signal Type
+VALID VALUES ARE:
+For Boolean Type: true|false
+For Integer Type: Any possible integer";
+
+
+DOFSensorWaitCondition.ShortHelp = "創建DOF 傳感器 Condition";
+DOFSensorSetCondition.ShortHelp = "創建DOF 傳感器 Post Condition effect";
+
+DOFSensorWaitCondition.Information = "DOF 傳感器 Condition";
+DOFSensorSetCondition.Information = "DOF 傳感器 Post Condition effect";
+
+
+Sensors = "仿真 Sensors 列表";
+
+
+UniqueSensorName.Title = "Unique sensor 名稱";
+UniqueSensorName.ErrorMsg = "The sensor name already exist. Previous name\Unique name will be applied";

@@ -1,0 +1,771 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES  2005
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 CATCoModelInputError.CATNls :
+// 3951 校正官方漢化 En_US                                 
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 Goal             : Input Error Catalog used for composites Model
+// 3951 校正官方漢化 Owner            : sye
+// 3951 校正官方漢化 Creation date    : 11/10/2005
+// 3951 校正官方漢化 Usage notes      : This error is dedicated to end user input 
+// 3951 校正官方漢化 
+// 3951 校正官方漢化 Message example : 
+// 3951 校正官方漢化 CATCoModelInputError_ERR_2000.Request    = "The selected elements /p1 and /p2 cannot be relimited.";
+// 3951 校正官方漢化 CATCoModelInputError_ERR_2000.Diagnostic = "Lengthed elements cannot be relimited.";
+// 3951 校正官方漢化 CATCoModelInputError_ERR_2000.Advice     = "To relimit, do not select lengthed elements";         
+// 3951 校正官方漢化=============================================================================
+
+// 3951 校正官方漢化 general error 1-100
+CATCoModelInputError_ERR_0001.Request="";
+CATCoModelInputError_ERR_0001.Diagnostic="與特征 /p1 關聯的幾何體為空。";
+CATCoModelInputError_ERR_0001.Advice="";
+
+CATCoModelInputError_ERR_0002.Request="";
+CATCoModelInputError_ERR_0002.Diagnostic="未檢索到零件容器。";
+CATCoModelInputError_ERR_0002.Advice="";
+
+CATCoModelInputError_ERR_0003.Request="";
+CATCoModelInputError_ERR_0003.Diagnostic="結果輪廓未閉合。";
+CATCoModelInputError_ERR_0003.Advice="";
+
+CATCoModelInputError_ERR_0004.Request="";
+CATCoModelInputError_ERR_0004.Diagnostic="結果輪廓不同類。";
+CATCoModelInputError_ERR_0004.Advice="";
+
+CATCoModelInputError_ERR_0005.Request="";
+CATCoModelInputError_ERR_0005.Diagnostic="結果輪廓局部非流形。";
+CATCoModelInputError_ERR_0005.Advice="";
+
+CATCoModelInputError_ERR_0006.Request="";
+CATCoModelInputError_ERR_0006.Diagnostic="結果輪廓自相交。";
+CATCoModelInputError_ERR_0006.Advice="";
+
+CATCoModelInputError_ERR_0007.Request="";
+CATCoModelInputError_ERR_0007.Diagnostic="點 /p1 不在曲面 /p2 上";
+CATCoModelInputError_ERR_0007.Advice="";
+
+CATCoModelInputError_ERR_0008.Request="";
+CATCoModelInputError_ERR_0008.Diagnostic="無輸入曲線特征";
+CATCoModelInputError_ERR_0008.Advice="";
+
+CATCoModelInputError_ERR_0009.Request="";
+CATCoModelInputError_ERR_0009.Diagnostic="與特征 /p1 關聯的幾何體不同類。";
+CATCoModelInputError_ERR_0009.Advice="";
+
+CATCoModelInputError_ERR_0010.Request="";
+CATCoModelInputError_ERR_0010.Diagnostic="與特征 /p1 關聯的幾何體局部非流形。";
+CATCoModelInputError_ERR_0010.Advice="";
+
+CATCoModelInputError_ERR_0011.Request="";
+CATCoModelInputError_ERR_0011.Diagnostic="結果輪廓為空。";
+CATCoModelInputError_ERR_0011.Advice="";
+
+CATCoModelInputError_ERR_0012.Request="";
+CATCoModelInputError_ERR_0012.Diagnostic="結果輪廓無域。";
+CATCoModelInputError_ERR_0012.Advice="";
+
+CATCoModelInputError_ERR_0013.Request="";
+CATCoModelInputError_ERR_0013.Diagnostic="輪廓無輸入曲線。";
+CATCoModelInputError_ERR_0013.Advice="";
+
+CATCoModelInputError_ERR_0014.Request="";
+CATCoModelInputError_ERR_0014.Diagnostic="/p，此輪廓的輸入，沒有輸入曲線。";
+CATCoModelInputError_ERR_0014.Advice="";
+
+CATCoModelInputError_ERR_0015.Request="";
+CATCoModelInputError_ERR_0015.Diagnostic="輪廓特征無支持曲面。";
+CATCoModelInputError_ERR_0015.Advice="";
+
+CATCoModelInputError_ERR_0016.Request="";
+CATCoModelInputError_ERR_0016.Diagnostic="一個或多個輸入曲線存在更新錯誤。";
+CATCoModelInputError_ERR_0016.Advice="請修改輸入曲線。";
+
+CATCoModelInputError_ERR_0017.Request="";
+CATCoModelInputError_ERR_0017.Diagnostic="一條或多條輸入曲線不在支持曲面上。";
+CATCoModelInputError_ERR_0017.Advice="請修改輸入曲線。";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 reserved error 101-200 for Mirror
+// 3951 校正官方漢化
+CATCoModelInputError_ERR_0101.Request="平面參考曲面是必需的。";
+CATCoModelInputError_ERR_0101.Diagnostic="/p1 不是平面曲面。";
+CATCoModelInputError_ERR_0101.Advice="用平面曲面替換它。";
+
+// 3951 校正官方漢化 link type
+CATCoModelInputError_ERR_0102="鏡像";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 reserved error 201-300 for IML
+// 3951 校正官方漢化
+CATCoModelInputError_ERR_0201.Request="已運行 IML 曲面運算符。";
+CATCoModelInputError_ERR_0201.Diagnostic="/p 紙層的幾何圖形相同。
+但零件幾何圖形的邊線與這些紙層幾何圖形不同。";
+CATCoModelInputError_ERR_0201.Advice="選擇幾何圖形與這些紙層幾何圖形相同的零件的邊線。";
+
+CATCoModelInputError_ERR_0202.Request="已運行 IML 曲面運算符。";
+CATCoModelInputError_ERR_0202.Diagnostic="紙層無效。
+所有紙層均與 /p 零件邊線混淆。";
+CATCoModelInputError_ERR_0202.Advice="IML 曲面無法在紙層輪廓外生成。
+嘗試反轉零件邊線的邊界方向。";
+
+CATCoModelInputError_ERR_0203.Request="已運行 IML 曲面運算符。";
+CATCoModelInputError_ERR_0203.Diagnostic="無法計算 /p 輪廓的平行曲線。
+可能材料過剩寬度過大或者
+輪廓過于接近參考曲面邊界。";
+CATCoModelInputError_ERR_0203.Advice="請嘗試縮短材料過剩寬度。";
+
+CATCoModelInputError_ERR_0204.Request="已運行 IML 曲面運算符。";
+CATCoModelInputError_ERR_0204.Diagnostic="結果錯誤。";
+CATCoModelInputError_ERR_0204.Advice="";
+
+CATCoModelInputError_ERR_0205.Request="無法運行 IML 曲面運算符";
+CATCoModelInputError_ERR_0205.Diagnostic="紙層 /p1 沒有相同的鋪層方向，或者不與紙層組共享相同的支持曲面。";
+CATCoModelInputError_ERR_0205.Advice="修改紙層支持曲面或鋪層方向以與父級組相符。";
+
+CATCoModelInputError_ERR_0206.Request="無法運行 IML 曲面運算符";
+CATCoModelInputError_ERR_0206.Diagnostic="/p1 參考曲面與 /p2 參考曲面不同。";
+CATCoModelInputError_ERR_0206.Advice="要運行 IML 曲面運算符，EOP 支持曲面必須與紙層組支持曲面相同。";
+
+CATCoModelInputError_ERR_0207.Request="已運行 IML 曲面運算符。";
+CATCoModelInputError_ERR_0207.Diagnostic="/p 紙層的某些邊線存在大于所要求公差的間隙。";
+CATCoModelInputError_ERR_0207.Advice="";
+
+CATCoModelInputError_ERR_0208.Request="已運行 IML 曲面運算符。";
+CATCoModelInputError_ERR_0208.Diagnostic="/p 紙層的總厚度大于初始蒙皮曲率。";
+CATCoModelInputError_ERR_0208.Advice="請減少這些位置的紙層數量。";
+
+CATCoModelInputError_ERR_0209.Request="已運行 IML 曲面運算符。";
+CATCoModelInputError_ERR_0209.Diagnostic="在斷開 /p 紙層的運算時發生錯誤。";
+CATCoModelInputError_ERR_0209.Advice="驗證相對于曲面的紙層位置。";
+
+CATCoModelInputError_ERR_0210.Request="已運行 IML 曲面運算符。";
+CATCoModelInputError_ERR_0210.Diagnostic="結果包含帶自相交的域。
+無法修剪自相交。
+已創建自相交幾何體。";
+CATCoModelInputError_ERR_0210.Advice="請減少這些位置的紙層數量。";
+
+CATCoModelInputError_ERR_0211.Request="已運行 IML 曲面運算符。";
+CATCoModelInputError_ERR_0211.Diagnostic="參考曲面在 EOP 邊界內存在切線不連續。";
+CATCoModelInputError_ERR_0211.Advice="";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Reserved error 301-400 for Top Surface operator
+// 3951 校正官方漢化
+// 3951 校正官方漢化CATCoModelInputError_ERR_0301.Request    = "Top Surface operator";
+// 3951 校正官方漢化 Reserved error 301-400 for TopSurface/Solid operator
+// 3951 校正官方漢化
+CATCoModelInputError_ERR_0301.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0301.Diagnostic="此運算無解。";
+CATCoModelInputError_ERR_0301.Advice="";
+
+CATCoModelInputError_ERR_0302.Request="來自區域運算符的實體";
+// 3951 校正官方漢化CATCoModelInputError_ERR_0301.Advice     = "Try with no extrapolation mode.";
+
+// 3951 校正官方漢化CATCoModelInputError_ERR_0302.Request    = "Top Surface operator";
+CATCoModelInputError_ERR_0302.Diagnostic="缺少某個必需的輸入元素或該元素無效、未填。";
+CATCoModelInputError_ERR_0302.Advice="此運算無解。";
+
+CATCoModelInputError_ERR_0303.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0303.Diagnostic="無法為此區域計算上表面或實體。";
+// 3951 校正官方漢化CATCoModelInputError_ERR_0302.Advice     = "There is no solution for this operation. Try with no extrapolation mode.";
+
+// 3951 校正官方漢化CATCoModelInputError_ERR_0303.Request    = "Top Surface operator";
+// 3951 校正官方漢化CATCoModelInputError_ERR_0303.Diagnostic = "Top Surface cannot be computed for this Zone area.";
+CATCoModelInputError_ERR_0303.Advice="局部修改區域幾何圖形";
+
+CATCoModelInputError_ERR_0304.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0304.Diagnostic="無法為此過渡區域計算上表面或實體。";
+// 3951 校正官方漢化CATCoModelInputError_ERR_0304.Request    = "Top Surface operator";
+// 3951 校正官方漢化CATCoModelInputError_ERR_0304.Diagnostic = "Top Surface cannot be computed for this Transition Zone area.";
+CATCoModelInputError_ERR_0304.Advice="局部修改過渡區域幾何圖形";
+
+CATCoModelInputError_ERR_0305.Request="來自區域運算符的實體";
+// 3951 校正官方漢化CATCoModelInputError_ERR_0305.Request    = "Top Surface operator";
+CATCoModelInputError_ERR_0305.Diagnostic="必須在過渡區域之間強加固定應變。";
+CATCoModelInputError_ERR_0305.Advice="請在此邊線的端點創建或修改有些 ITP。";
+
+CATCoModelInputError_ERR_0306.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0306.Diagnostic="有若干固定應變引起上表面或實體撕裂。";
+// 3951 校正官方漢化CATCoModelInputError_ERR_0306.Request    = "Top Surface operator";
+// 3951 校正官方漢化CATCoModelInputError_ERR_0306.Diagnostic = "There are several constant strains causing a tearing of the top surface.";
+CATCoModelInputError_ERR_0306.Advice="請修改區域定義或此點的 ITP。";
+
+CATCoModelInputError_ERR_0307.Request="來自區域運算符的實體";
+// 3951 校正官方漢化CATCoModelInputError_ERR_0307.Request    = "Top Surface operator";
+CATCoModelInputError_ERR_0307.Diagnostic="未使用現有區域。";
+CATCoModelInputError_ERR_0307.Advice="請檢查該固定區域是否有用。";
+
+CATCoModelInputError_ERR_0308.Request="來自區域運算符的實體";
+// 3951 校正官方漢化CATCoModelInputError_ERR_0308.Request    = "Top Surface operator";
+CATCoModelInputError_ERR_0308.Diagnostic="有些區域或過渡區域與其他區域重疊。";
+CATCoModelInputError_ERR_0308.Advice="修改其形位輪廓以避免重疊區域。";
+
+CATCoModelInputError_ERR_0309.Request="來自區域運算符的實體";
+// 3951 校正官方漢化CATCoModelInputError_ERR_0309.Request    = "Top Surface operator";
+CATCoModelInputError_ERR_0309.Diagnostic="局部光順邊線用常量厚度分隔有些區域。";
+CATCoModelInputError_ERR_0309.Advice="添加過渡區域或修改其形位輪廓。";
+
+CATCoModelInputError_ERR_0310.Request="來自區域運算符的實體";
+// 3951 校正官方漢化CATCoModelInputError_ERR_0310.Request    = "Top Surface operator";
+CATCoModelInputError_ERR_0310.Diagnostic="此 ITP 位置錯誤。";
+CATCoModelInputError_ERR_0310.Advice="移除此 ITP 或修改其在過渡區域邊界上的位置。";
+
+CATCoModelInputError_ERR_0311.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0311.Diagnostic="無效 ITP 值，無法為空。";
+CATCoModelInputError_ERR_0311.Advice="修改此 ITP 值或嘗試生成上表面。";
+
+CATCoModelInputError_ERR_0312.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0312.Diagnostic="無法生成實體，因為上蒙皮部分地與參考曲面混淆。";
+CATCoModelInputError_ERR_0312.Advice="請嘗試生成上表面。";
+
+CATCoModelInputError_ERR_0313.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0313.Diagnostic="當前區域組不存在區域定義。";
+CATCoModelInputError_ERR_0313.Advice="請定義您的區域設計。";
+
+CATCoModelInputError_ERR_0314.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0314.Diagnostic="有些區域沒有定義壓層。";
+CATCoModelInputError_ERR_0314.Advice="檢查區域定義或材料目錄。";
+
+CATCoModelInputError_ERR_0315.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0315.Diagnostic="上蒙皮部分地與參考曲面混淆。生成實體不可用。";
+CATCoModelInputError_ERR_0315.Advice="";
+
+CATCoModelInputError_ERR_0316.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0316.Diagnostic="已計算隱式 ITP。";
+CATCoModelInputError_ERR_0316.Advice="";
+
+CATCoModelInputError_ERR_0317.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0317.Diagnostic="此 ITP 不位于過渡區域輪廓相交上。";
+CATCoModelInputError_ERR_0317.Advice="移除此 ITP 或檢查其值。";
+
+CATCoModelInputError_ERR_0318.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0318.Diagnostic="區域 /p1 內無約束區域。";
+CATCoModelInputError_ERR_0318.Advice="添加有常量厚度的區域或者使用帶有符合設計的“僅創建區域實體”選項。";
+
+CATCoModelInputError_ERR_0319.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0319.Diagnostic="此 ITP 位于為壓層定義了多個材料的區域。";
+CATCoModelInputError_ERR_0319.Advice="請修改壓層定義或使用“ ITP高度”功能。";
+
+CATCoModelInputError_ERR_0320.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0320.Diagnostic="此 ITP 位于固定區域且為無用約束。";
+CATCoModelInputError_ERR_0320.Advice="移除此 ITP。";
+
+CATCoModelInputError_ERR_0350.Request="上表面運算符";
+CATCoModelInputError_ERR_0350.Diagnostic="此運算無解。";
+CATCoModelInputError_ERR_0350.Advice="";
+
+CATCoModelInputError_ERR_0351.Request="上表面運算符";
+CATCoModelInputError_ERR_0351.Diagnostic="所有的紙層組沒有相同的參考曲面或鋪層方向。";
+CATCoModelInputError_ERR_0351.Advice="修改紙層組定義。";
+
+CATCoModelInputError_ERR_0352.Request="上表面運算符";
+CATCoModelInputError_ERR_0352.Diagnostic="紙層 /p1 沒有相同的鋪層方向，或者不與紙層組共享相同的支持曲面。";
+CATCoModelInputError_ERR_0352.Advice="修改紙層支持曲面或鋪層方向以與父級組相符。";
+
+CATCoModelInputError_ERR_0353.Request="上表面運算符失敗";
+CATCoModelInputError_ERR_0353.Diagnostic="紙層組缺失或沒有定義參考曲面";
+CATCoModelInputError_ERR_0353.Advice="檢查紙層是否在紙層組下并且紙層組定義了參考曲面";
+
+CATCoModelInputError_ERR_0354.Request="來自區域運算符的實體或上表面";
+CATCoModelInputError_ERR_0354.Diagnostic="此頂點將生成無流形邊線。";
+CATCoModelInputError_ERR_0354.Advice="";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Reserved error 400-449 for Slicing operator
+// 3951 校正官方漢化
+CATCoModelInputError_ERR_0401.Request="分割運算符";
+CATCoModelInputError_ERR_0401.Diagnostic="分割運算符無法使用有些輸入實體面。";
+CATCoModelInputError_ERR_0401.Advice="更改分割曲線度或厚度法則參數。";
+
+CATCoModelInputError_ERR_0402.Request="分割運算符";
+CATCoModelInputError_ERR_0402.Diagnostic="輸入實體有兩個盒體。";
+CATCoModelInputError_ERR_0402.Advice="尚不受支持。";
+
+CATCoModelInputError_ERR_0403.Request="分割運算符";
+CATCoModelInputError_ERR_0403.Diagnostic="輸入實體和參考盒體不相交。";
+CATCoModelInputError_ERR_0403.Advice="更改參考盒體對實體的方向或位置。";
+
+CATCoModelInputError_ERR_0404.Request="分割運算符";
+CATCoModelInputError_ERR_0404.Diagnostic="要分割的幾何體邊線離散不夠精確，無法執行分割。";
+CATCoModelInputError_ERR_0404.Advice="如果通過分割創建的紙層提供開放紙層，可以嘗試減小弦高值或鑲嵌步長值。";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Reserved error 450 - 499 for Slicing Build
+// 3951 校正官方漢化
+CATCoModelInputError_ERR_0450.Request="構建分割";
+CATCoModelInputError_ERR_0450.Diagnostic="分割組不再指向區域組或實體。";
+CATCoModelInputError_ERR_0450.Advice="";
+
+CATCoModelInputError_ERR_0451.Request="";
+CATCoModelInputError_ERR_0451.Diagnostic="此分割組是用 CATIA Composites 軟件的測試版本創建的。
+無法對其進行編輯。";
+CATCoModelInputError_ERR_0451.Advice="";
+
+// 3951 校正官方漢化
+CATCoModelInputError_ERR_0500.Request="無效目標";
+CATCoModelInputError_ERR_0500.Diagnostic="網格斜坡支持面無法粘貼在當前目標。";
+CATCoModelInputError_ERR_0500.Advice="請選擇與結構元素兼容的目標。";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Reserved error 501-600 for Iso Thickness Areas
+// 3951 校正官方漢化
+CATCoModelInputError_ERR_0501.Request="等厚度區域運算符";
+CATCoModelInputError_ERR_0501.Diagnostic="此運算無解。";
+CATCoModelInputError_ERR_0501.Advice="";
+
+CATCoModelInputError_ERR_0502.Request="等厚度區域運算符";
+CATCoModelInputError_ERR_0502.Diagnostic="缺少某個必需的輸入元素或該元素無效、未填。";
+CATCoModelInputError_ERR_0502.Advice="此運算無解。";
+
+CATCoModelInputError_ERR_0503.Request="等厚度區域運算符";
+CATCoModelInputError_ERR_0503.Diagnostic="有些紙層沒有定義的材料或厚度為空。";
+CATCoModelInputError_ERR_0503.Advice="檢查紙層定義或材料目錄。";
+
+CATCoModelInputError_ERR_0504.Request="等厚度區域運算符";
+CATCoModelInputError_ERR_0504.Diagnostic="紙層 /p1 與參考紙層組 /p2 的鋪層方向不同，或者不共享相同的支持曲面：紙層組支持為: /p3，鋪層方向等于在 /p4 處的法線。";
+CATCoModelInputError_ERR_0504.Advice="修改紙層支持曲面或鋪層方向以便與 /p 紙層組相符。";
+
+CATCoModelInputError_ERR_0505.Request="等厚度盒體運算符";
+CATCoModelInputError_ERR_0505.Diagnostic="選擇不連接面失敗。";
+CATCoModelInputError_ERR_0505.Advice="請檢查輸入點不在紙層輪廓上。";
+
+CATCoModelInputError_ERR_0506.Request="等厚度盒體運算符";
+CATCoModelInputError_ERR_0506.Diagnostic="選擇區域位置失敗。";
+CATCoModelInputError_ERR_0506.Advice="請檢查輸入點不在復合零件之外。";
+
+CATCoModelInputError_ERR_0507.Request="等厚度區域運算符";
+CATCoModelInputError_ERR_0507.Diagnostic="紙層 /p1 與參考紙層組 /p2 的鋪層方向不同，或者不共享相同的支持曲面：紙層組支持為：/p3，鋪層方向與 /p4 處的法線相反。";
+CATCoModelInputError_ERR_0507.Advice="修改紙層支持曲面或鋪層方向以便與 /p 紙層組相符。";
+
+CATCoModelInputError_ERR_0508.Request="";
+CATCoModelInputError_ERR_0508.Diagnostic="在斜坡上通過下一條曲線重新限定此等厚度盒體導致無結果：\n/p1。";
+CATCoModelInputError_ERR_0508.Advice="請手動執行此操作。";
+
+CATCoModelInputError_ERR_0509.Request="";
+CATCoModelInputError_ERR_0509.Diagnostic="通過底部斜坡曲線進行重新限定失敗。在紙層輪廓中不允許存在網格斜坡支持面的底部斜坡曲線。";
+CATCoModelInputError_ERR_0509.Advice="修改 /p1 （在 /p2中，避免使用 /p4 ），或在 /p3 中添加另一條曲線成為新底部斜坡曲線。";
+
+CATCoModelInputError_ERR_0551.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0551.Diagnostic="此運算無解。";
+CATCoModelInputError_ERR_0551.Advice="";
+
+CATCoModelInputError_ERR_0552.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0552.Diagnostic="缺少某個必需的輸入元素或該元素無效、未填。";
+CATCoModelInputError_ERR_0552.Advice="此運算無解。";
+
+CATCoModelInputError_ERR_0553.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0553.Diagnostic="必須在斜坡輪廓之間強加固定約束。";
+CATCoModelInputError_ERR_0553.Advice="請創建或修改在此邊線端點上強加的厚度點。";
+
+CATCoModelInputError_ERR_0554.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0554.Diagnostic="有若干固定應變引起上表面或實體撕裂。";
+CATCoModelInputError_ERR_0554.Advice="請修改等厚度區域的定義或在此位置強加的厚度點。";
+
+CATCoModelInputError_ERR_0555.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0555.Diagnostic="尚未使用現有的等厚度區域。";
+CATCoModelInputError_ERR_0555.Advice="檢查此厚度區域是否有用。";
+
+CATCoModelInputError_ERR_0556.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0556.Diagnostic="某些等厚度區域或斜坡輪廓相互重疊。";
+CATCoModelInputError_ERR_0556.Advice="修改其形位輪廓以避免重疊區域。";
+
+CATCoModelInputError_ERR_0557.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0557.Diagnostic="此強加的厚度點位置錯誤。";
+CATCoModelInputError_ERR_0557.Advice="移除此強加的厚度點或修改其在斜坡輪廓端點上的位置。";
+
+CATCoModelInputError_ERR_0558.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0558.Diagnostic="無法計算有些斜坡輪廓區域。";
+CATCoModelInputError_ERR_0558.Advice="請檢查并修改斜坡輪廓定義。";
+
+CATCoModelInputError_ERR_0559.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0559.Diagnostic="有些強加的厚度點不在參考曲面上。";
+CATCoModelInputError_ERR_0559.Advice="請修改強加的厚度點位置。";
+
+CATCoModelInputError_ERR_0560.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0560.Diagnostic="有些斜坡輪廓無效。";
+CATCoModelInputError_ERR_0560.Advice="請修改斜坡輪廓曲線或外插延伸參數值，以獲取有效的封閉輪廓。";
+
+CATCoModelInputError_ERR_0561.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0561.Diagnostic="有些斜坡輪廓沒有有效的參考曲面。";
+CATCoModelInputError_ERR_0561.Advice="請使用帶有等厚度區域特征的兼容曲面替代斜坡輪廓參考曲面。";
+
+CATCoModelInputError_ERR_0562.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0562.Diagnostic="無法生成實體，因為上蒙皮部分地與參考曲面混淆。";
+CATCoModelInputError_ERR_0562.Advice="請嘗試生成上表面。";
+
+CATCoModelInputError_ERR_0563.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0563.Diagnostic="有些連接線端點不在有效的幾何圖形上。";
+CATCoModelInputError_ERR_0563.Advice="移除這些連接線或修改其定義。";
+
+CATCoModelInputError_ERR_0564.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0564.Diagnostic="有些連接線無效：運算符不管理封閉曲線或多域曲線。";
+CATCoModelInputError_ERR_0564.Advice="請修改連接線定義。";
+
+CATCoModelInputError_ERR_0565.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0565.Diagnostic="等厚度盒體形位曲面的最小曲率半徑對于當前偏移值過小。";
+CATCoModelInputError_ERR_0565.Advice="檢查結果蒙皮的間隔或重疊區域并清潔等厚度盒體的形位曲面曲率。";
+
+CATCoModelInputError_ERR_0566.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0566.Diagnostic="斜坡形位曲面的最小曲率半徑對于當前偏移值過小。";
+CATCoModelInputError_ERR_0566.Advice="檢查結果蒙皮的間隔或重疊區域并清潔斜坡形位曲面曲率。";
+
+CATCoModelInputError_ERR_0567.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0567.Diagnostic="支持曲面上的曲率不連續在結果蒙皮上生成銳化邊線。";
+CATCoModelInputError_ERR_0567.Advice="對結果蒙皮局部返工或用修復運算符光順結果蒙皮。";
+
+CATCoModelInputError_ERR_0568.Request="可生產性錯誤";
+CATCoModelInputError_ERR_0568.Diagnostic="內存分配失敗";
+CATCoModelInputError_ERR_0568.Advice="增加經向、緯向值";
+
+CATCoModelInputError_ERR_0569.Request="創建纖維邊界節點錯誤";
+CATCoModelInputError_ERR_0569.Diagnostic="超出纖維邊界節點的最大數量 - 內存分配失敗";
+CATCoModelInputError_ERR_0569.Advice="增加經向、緯向值";
+
+CATCoModelInputError_ERR_0570.Request="來自區域運算符的實體";
+CATCoModelInputError_ERR_0570.Diagnostic="/p1 和 /p2 相同。";
+CATCoModelInputError_ERR_0570.Advice="移除其中的一個等厚度區域結果盒體。";
+
+CATCoModelInputError_ERR_0571.Request="來自區域運算符的實體或上表面";
+CATCoModelInputError_ERR_0571.Diagnostic="此頂點將生成無流形邊線。";
+CATCoModelInputError_ERR_0571.Advice="";
+
+
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Reserved error 601-700 for Manufacturing material addition
+// 3951 校正官方漢化
+CATCoModelInputError_ERR_0601.Request="添加材料：無解。";
+CATCoModelInputError_ERR_0601.Diagnostic="此運算無解。";
+CATCoModelInputError_ERR_0601.Advice="";
+
+CATCoModelInputError_ERR_0602.Request="添加材料；頂點 KO。";
+CATCoModelInputError_ERR_0602.Diagnostic="添加材料外形的輸入頂點不再可用。";
+CATCoModelInputError_ERR_0602.Advice="刪除現有的添加材料";
+
+CATCoModelInputError_ERR_0603.Request="添加材料：與輪廓不相交。";
+CATCoModelInputError_ERR_0603.Diagnostic="外形與現有輪廓不相交";
+CATCoModelInputError_ERR_0603.Advice="更改鋪層角度、外形角度或側面";
+
+CATCoModelInputError_ERR_0604.Request="添加材料：限制外形角度。";
+CATCoModelInputError_ERR_0604.Diagnostic="用限制角度創建的添加材料外形";
+CATCoModelInputError_ERR_0604.Advice="";
+
+CATCoModelInputError_ERR_0605.Request="添加材料：雙相交。";
+CATCoModelInputError_ERR_0605.Diagnostic="紙層輪廓雙相交以符合最小長度約束";
+CATCoModelInputError_ERR_0605.Advice="";
+
+CATCoModelInputError_ERR_0606.Request="添加材料：鋪層曲線 KO。";
+CATCoModelInputError_ERR_0606.Diagnostic="沿纖維邊界鋪層曲線創建材料添加邊線失敗。";
+CATCoModelInputError_ERR_0606.Advice="外插延伸曲線或縮短最小長度";
+
+CATCoModelInputError_ERR_0607.Request="添加材料：負的最小長度。";
+CATCoModelInputError_ERR_0607.Diagnostic="負的或空的最小長度輸入";
+CATCoModelInputError_ERR_0607.Advice="增加最小長度值";
+
+CATCoModelInputError_ERR_0608.Request="添加材料：負交錯。";
+CATCoModelInputError_ERR_0608.Diagnostic="負橫向交錯";
+CATCoModelInputError_ERR_0608.Advice="增加橫向交錯值";
+
+CATCoModelInputError_ERR_0609.Request="添加材料；頂點 KO。";
+CATCoModelInputError_ERR_0609.Diagnostic="初始頂點不依賴添加的外形";
+CATCoModelInputError_ERR_0609.Advice="驗證結果輪廓并修改已添加的材料的幾何圖形或參數。";
+
+CATCoModelInputError_ERR_0610.Request="添加材料：最小長度 KO。";
+CATCoModelInputError_ERR_0610.Diagnostic="無法用期望的最小長度生成邊線。";
+CATCoModelInputError_ERR_0610.Advice="驗證最小長度參數和/或紙層輪廓距離曲面邊界足夠遠";
+
+CATCoModelInputError_ERR_0620.Request="添加材料：無效輪廓。";
+CATCoModelInputError_ERR_0620.Diagnostic="結果輪廓無效（自相交、非流形...）";
+CATCoModelInputError_ERR_0620.Advice="";
+
+CATCoModelInputError_ERR_0621.Request="添加材料：最小長度 KO。";
+CATCoModelInputError_ERR_0621.Diagnostic="無法用要求的橫向交錯滿足最小長度。";
+CATCoModelInputError_ERR_0621.Advice="檢查橫向交錯或重新排列頂點列表。";
+
+CATCoModelInputError_ERR_0622.Request="添加材料：最小長度 KO。";
+CATCoModelInputError_ERR_0622.Diagnostic="無法用要求的橫向交錯滿足最小長度。";
+CATCoModelInputError_ERR_0622.Advice="重新排列頂點列表。";
+
+CATCoModelInputError_ERR_0623.Request="添加材料：最小長度 KO。";
+CATCoModelInputError_ERR_0623.Diagnostic="無法用要求的橫向交錯滿足最小長度。";
+CATCoModelInputError_ERR_0623.Advice="增加橫向交錯（> /p1）。";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Reserved error 701-800 for stagger origin
+// 3951 校正官方漢化
+
+CATCoModelInputError_ERR_0701.Request="交錯索引運算符";
+CATCoModelInputError_ERR_0701.Diagnostic="無分析內容";
+CATCoModelInputError_ERR_0701.Advice="";
+
+CATCoModelInputError_ERR_0702.Request="交錯索引運算符";
+CATCoModelInputError_ERR_0702.Diagnostic="無法斷開曲面盒體幾何體";
+CATCoModelInputError_ERR_0702.Advice="";
+
+CATCoModelInputError_ERR_0703.Request="交錯索引運算符";
+CATCoModelInputError_ERR_0703.Diagnostic="無法投影紙層中心點，在參考點將其投影到垂直于參考曲線失敗。";
+CATCoModelInputError_ERR_0703.Advice="嘗試選擇備用參考點";
+
+CATCoModelInputError_ERR_0704.Request="交錯索引運算符";
+CATCoModelInputError_ERR_0704.Diagnostic="無法投影紙層中心點，創建與參考曲線平行的曲線失敗。";
+CATCoModelInputError_ERR_0704.Advice="嘗試選擇備用參考點";
+
+CATCoModelInputError_ERR_0705.Request="交錯索引運算符";
+CATCoModelInputError_ERR_0705.Diagnostic="無法用在紙層邊界內相距參考點的有效距離計算垂直于參考曲線的任何點";
+CATCoModelInputError_ERR_0705.Advice="嘗試選擇備用參考點";
+
+CATCoModelInputError_ERR_0706.Request="交錯索引運算符";
+CATCoModelInputError_ERR_0706.Diagnostic="計算紙層間的重疊連接失敗";
+CATCoModelInputError_ERR_0706.Advice="檢查紙層輪廓（微邊）質量和/或曲面（微面）質量";
+
+CATCoModelInputError_ERR_0707.Request="交錯索引運算符";
+CATCoModelInputError_ERR_0707.Diagnostic="初始化交錯原點計算失敗";
+CATCoModelInputError_ERR_0707.Advice="檢查診斷列表中的引發問題的紙層";
+
+CATCoModelInputError_ERR_0708.Request="交錯索引運算符";
+CATCoModelInputError_ERR_0708.Diagnostic="未定義原點";
+CATCoModelInputError_ERR_0708.Advice="";
+
+CATCoModelInputError_ERR_0709.Request="交錯索引運算符";
+CATCoModelInputError_ERR_0709.Diagnostic="初始化交錯原點計算失敗";
+CATCoModelInputError_ERR_0709.Advice="檢查診斷列表中是否出現插入";
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Reserved error 801  for Material excess
+// 3951 校正官方漢化
+CATCoModelInputError_ERR_0801.Request="材料過剩運算符";
+CATCoModelInputError_ERR_0801.Diagnostic="紙層和 EOP 線的切線設置不一致";
+CATCoModelInputError_ERR_0801.Advice="可能需要重定義";
+
+CATCoModelInputError_ERR_0802.Request="材料過剩運算符";
+CATCoModelInputError_ERR_0802.Diagnostic="紙層輪廓和 EEOP 之間的公共邊線由多個形位域組成";
+CATCoModelInputError_ERR_0802.Advice="可能需要重定義";
+
+CATCoModelInputError_ERR_0803.Request="材料過剩運算符";
+CATCoModelInputError_ERR_0803.Diagnostic="紙層和 EEOP 在不同曲面上定義。";
+CATCoModelInputError_ERR_0803.Advice="可能需要重定義";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 reserved error 901-1000 for Skin Swapping
+// 3951 校正官方漢化
+CATCoModelInputError_ERR_0901.Request="";
+CATCoModelInputError_ERR_0901.Diagnostic="尚未檢索 CATICoSkinInterface。";
+CATCoModelInputError_ERR_0901.Advice="";
+
+CATCoModelInputError_ERR_0902.Request="";
+CATCoModelInputError_ERR_0902.Diagnostic="蒙皮包裹特征 /p 沒有支持曲面。";
+CATCoModelInputError_ERR_0902.Advice="";
+
+CATCoModelInputError_ERR_0903.Request="";
+CATCoModelInputError_ERR_0903.Diagnostic="蒙皮包裹特征 /p 沒有輸入輪廓。";
+CATCoModelInputError_ERR_0903.Advice="";
+
+CATCoModelInputError_ERR_0904.Request="";
+CATCoModelInputError_ERR_0904.Diagnostic="輸入曲面 /p1 和 /p2 之間的對應關系錯誤。
+展開曲面不是要展開曲面的計算數據或者其尚未用“所有”曲面類型計算。";
+CATCoModelInputError_ERR_0904.Advice="";
+
+CATCoModelInputError_ERR_0905.Request="已經運行蒙皮包裹運算符。";
+CATCoModelInputError_ERR_0905.Diagnostic="運算符計算結果失敗。";
+CATCoModelInputError_ERR_0905.Advice="檢查包裹曲面。";
+
+CATCoModelInputError_ERR_0906.Request="蒙皮包裹運算符已經用包裹曲線模式運行";
+CATCoModelInputError_ERR_0906.Diagnostic="參考曲線數與目標曲線數相同。";
+CATCoModelInputError_ERR_0906.Advice="檢查參考曲線和目標曲線。";
+
+CATCoModelInputError_ERR_0907.Request="蒙皮包裹運算符已經用包裹曲線模式運行";
+CATCoModelInputError_ERR_0907.Diagnostic="參考曲線數為空。";
+CATCoModelInputError_ERR_0907.Advice="檢查參考曲線。";
+
+CATCoModelInputError_ERR_0908.Request="蒙皮包裹運算符已經用包裹曲線模式運行";
+CATCoModelInputError_ERR_0908.Diagnostic="脊線類型設置為用戶定義，但脊線為空。";
+CATCoModelInputError_ERR_0908.Advice="檢查脊線。";
+
+CATCoModelInputError_ERR_0909.Request="蒙皮包裹運算符已經用包裹曲線模式運行";
+CATCoModelInputError_ERR_0909.Diagnostic="無法計算紙層盒體。";
+CATCoModelInputError_ERR_0909.Advice="檢查紙層輪廓。";
+
+CATCoModelInputError_ERR_0910.Request="蒙皮包裹運算符已經用包裹曲線模式運行。
+您為 /p1 提供了一個參考方向投影。";
+CATCoModelInputError_ERR_0910.Diagnostic="參考脊線 /p1 不是線性的。
+參考方向投影僅可用于
+線性參考脊線。";
+CATCoModelInputError_ERR_0910.Advice="使用計算過的參考方向投影
+或使用線性參考脊線。";
+
+CATCoModelInputError_ERR_0911.Request="蒙皮包裹運算符已經用包裹曲線模式運行。";
+CATCoModelInputError_ERR_0911.Diagnostic="投影方向為空。";
+CATCoModelInputError_ERR_0911.Advice="檢查投影方向。";
+
+CATCoModelInputError_ERR_0912.Request="蒙皮包裹運算符已經用包裹曲線模式運行。";
+CATCoModelInputError_ERR_0912.Diagnostic="無法計算參考脊線方向。";
+CATCoModelInputError_ERR_0912.Advice="";
+
+CATCoModelInputError_ERR_0913.Request="您給出了對 /p1 的參考脊線。";
+CATCoModelInputError_ERR_0913.Diagnostic="參考脊線 /p1 不是線性的
+且包裹曲線有參考方向投影。
+參考方向投影僅可用于
+線性參考脊線。";
+CATCoModelInputError_ERR_0913.Advice="使用計算過的參考方向投影
+或使用線性參考脊線。";
+
+// 3951 校正官方漢化 ElementNonConnexe
+CATCoModelInputError_ERR_0914.Request="所選元素是非連通元素。";
+CATCoModelInputError_ERR_0914.Diagnostic="輸入元素 /p1 必須是連通的。";
+CATCoModelInputError_ERR_0914.Advice="使用另一個元素或使用 NEAR 運算符提取連通實體。";
+
+// 3951 校正官方漢化 ElemNotContInTgt 
+CATCoModelInputError_ERR_0915.Request="您已選擇 /p1";
+CATCoModelInputError_ERR_0915.Diagnostic="所選元素 /p1 相切不連續。此輸入必須是相切連續的。";
+CATCoModelInputError_ERR_0915.Advice="請選擇相切連續的元素。";
+
+// 3951 校正官方漢化 ZoneGrpForSolid
+CATCoModelInputError_ERR_0916.Request="區域組不允許過渡區域在區域外";
+CATCoModelInputError_ERR_0916.Diagnostic="選定的單元必須是區域的一部分。";
+CATCoModelInputError_ERR_0916.Advice="要在區域外創建過渡區域，退出命令， \n 編輯區域組并檢查“僅用于來自區域的實體創建”";
+
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Reserved error 1001-1100 for Section operator
+// 3951 校正官方漢化
+
+CATCoModelInputError_ERR_1001.Advice="插入截面失敗。\n 不支持此類配置。\n 無可用結果。";
+
+CATCoModelInputError_ERR_1002.Advice="有些插入存在凹面。\n 不支持此類配置。\n 無可用結果。";
+
+CATCoModelInputError_ERR_1003.Advice="部分結果可用。\n 有些插入的截面不是用銳化選項生成的。\n 嘗試圓形選項以獲得較好效果。";
+
+CATCoModelInputError_ERR_1004.Advice="內部錯誤。\n 插入截面失敗。";
+
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 reserved error 1101-1200 for Corner Contour
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+CATCoModelInputError_ERR_1101.Request="";
+CATCoModelInputError_ERR_1101.Diagnostic="尚未檢索 CATICoRoundedCornercontrour。";
+CATCoModelInputError_ERR_1101.Advice="";
+
+CATCoModelInputError_ERR_1102.Request="";
+CATCoModelInputError_ERR_1102.Diagnostic="圓角輪廓特征 /p 沒有支持曲面。";
+CATCoModelInputError_ERR_1102.Advice="";
+
+CATCoModelInputError_ERR_1103.Request="";
+CATCoModelInputError_ERR_1103.Diagnostic="圓角輪廓特征 /p 沒有輸入輪廓。";
+CATCoModelInputError_ERR_1103.Advice="";
+// 3951 校正官方漢化 NoSolution    
+CATCoModelInputError_ERR_1104.Request="無解";
+CATCoModelInputError_ERR_1104.Diagnostic="此運算無解";
+CATCoModelInputError_ERR_1104.Advice=" ";
+
+// 3951 校正官方漢化 ElementNonConnexe
+CATCoModelInputError_ERR_1105.Request="所選元素是非連通元素。";
+CATCoModelInputError_ERR_1105.Diagnostic="輸入元素 /p1 必須是連通的。";
+CATCoModelInputError_ERR_1105.Advice="使用另一個元素或使用 NEAR 運算符提取連通實體。";
+
+// 3951 校正官方漢化 InvalidInput    
+CATCoModelInputError_ERR_1106.Request="缺少輸入元素或該元素無效、未填。";
+CATCoModelInputError_ERR_1106.Diagnostic="缺少某個必需的輸入元素或該元素無效、未填。";
+CATCoModelInputError_ERR_1106.Advice="此運算無解。";
+
+// 3951 校正官方漢化 InvalidInput    
+CATCoModelInputError_ERR_1107.Request="";
+CATCoModelInputError_ERR_1107.Diagnostic="/p";
+CATCoModelInputError_ERR_1107.Advice="";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 PEY 10:02:18 
+// 3951 校正官方漢化 reserved error 1201-1300 for Solid from grid 
+// 3951 校正官方漢化
+
+CATCoModelInputError_ERR_1201.Request="";
+CATCoModelInputError_ERR_1201.Diagnostic="創建或更新來自網格的實體特征錯誤。";
+CATCoModelInputError_ERR_1201.Advice="";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 EHR 10:08:17 
+// 3951 校正官方漢化 reserved error 1301-1400 for Grid Ref Elem 
+// 3951 校正官方漢化
+
+CATCoModelInputError_ERR_1301.Request="網格參考元素為空或缺失幾何圖形。";
+CATCoModelInputError_ERR_1301.Diagnostic="網格參考元素為空或缺失幾何圖形。";
+CATCoModelInputError_ERR_1301.Advice="網格參考元素為空或缺失幾何圖形。";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 reserved error 1401-1500 for Variable Core
+// 3951 校正官方漢化
+
+CATCoModelInputError_ERR_1401.Request="";
+CATCoModelInputError_ERR_1401.Diagnostic="添加可變核心 /p 失敗";
+CATCoModelInputError_ERR_1401.Advice="";
+
+CATCoModelInputError_ERR_1402.Request="";
+CATCoModelInputError_ERR_1402.Diagnostic="添加可變核心 /p1 失敗，錯誤為 /p2";
+CATCoModelInputError_ERR_1402.Advice="";
+
+CATCoModelInputError_ERR_1403.Request="可變核心";
+CATCoModelInputError_ERR_1403.Diagnostic="輸入輪廓和參考曲面定義的殼體零件非相切連續。
+無法計算可變核心上表面。
+可變核心必須位于相切連續的參考曲面零件上。";
+CATCoModelInputError_ERR_1403.Advice="";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 reserved error 1501-1600 for Top surface creation or solid creation
+// 3951 校正官方漢化
+
+CATCoModelInputError_ERR_1502.Request="上表面運算符";
+CATCoModelInputError_ERR_1502.Diagnostic="缺少某個必需的輸入元素或該元素無效、未填。";
+CATCoModelInputError_ERR_1502.Advice="此運算沒有任何解法。";
+
+CATCoModelInputError_ERR_1503.Request="上表面運算符";
+CATCoModelInputError_ERR_1503.Diagnostic="無法計算此區域的上表面。";
+CATCoModelInputError_ERR_1503.Advice="局部修改幾何圖形";
+
+CATCoModelInputError_ERR_1505.Request="上表面運算符";
+CATCoModelInputError_ERR_1505.Diagnostic="必須在過渡區域之間強加固定應變。";
+CATCoModelInputError_ERR_1505.Advice="請在此邊線的端點創建或修改有些 ITP。";
+
+CATCoModelInputError_ERR_1506.Request="上表面運算符";
+CATCoModelInputError_ERR_1506.Diagnostic="有若干固定應變引起上表面撕裂。";
+CATCoModelInputError_ERR_1506.Advice="請修改區域定義或此點的 ITP。";
+
+CATCoModelInputError_ERR_1507.Request="上表面運算符";
+CATCoModelInputError_ERR_1507.Diagnostic="未使用現有區域。";
+CATCoModelInputError_ERR_1507.Advice="請檢查該常量區域是否有用。";
+
+CATCoModelInputError_ERR_1508.Request="上表面運算符";
+CATCoModelInputError_ERR_1508.Diagnostic="有些區域或過渡區域與其他區域重疊。";
+CATCoModelInputError_ERR_1508.Advice="修改其幾何輪廓以避免重疊區域。";
+
+CATCoModelInputError_ERR_1509.Request="上表面運算符";
+CATCoModelInputError_ERR_1509.Diagnostic="局部光順邊線用常量厚度分隔某些區域。";
+CATCoModelInputError_ERR_1509.Advice="修改其幾何輪廓。";
+
+CATCoModelInputError_ERR_1510.Request="上表面運算符";
+CATCoModelInputError_ERR_1510.Diagnostic="此 ITP 位置錯誤。";
+CATCoModelInputError_ERR_1510.Advice="移除此 ITP 或修改其在過渡區域邊界上的位置。";
+
+CATCoModelInputError_ERR_1516.Request="上表面運算符";
+CATCoModelInputError_ERR_1516.Diagnostic="已計算隱式 ITP。";
+CATCoModelInputError_ERR_1516.Advice="";
+
+CATCoModelInputError_ERR_1517.Request="上表面運算符";
+CATCoModelInputError_ERR_1517.Diagnostic="此 ITP 不位于過渡區域輪廓相交上。";
+CATCoModelInputError_ERR_1517.Advice="移除此 ITP 或檢查其值。";
+
+CATCoModelInputError_ERR_1520.Request="上表面運算符";
+CATCoModelInputError_ERR_1520.Diagnostic="此 ITP 位于固定區域且為無用約束。";
+CATCoModelInputError_ERR_1520.Advice="移除此 ITP。";
+
+CATCoModelInputError_ERR_1554.Request="上表面運算符";
+CATCoModelInputError_ERR_1554.Diagnostic="此頂點將生成無流形邊線。";
+CATCoModelInputError_ERR_1554.Advice="";
+
+CATCoModelInputError_ERR_1563.Request="上表面或實體運算符";
+CATCoModelInputError_ERR_1563.Diagnostic="有些連接線端點不在有效的幾何圖形上。";
+CATCoModelInputError_ERR_1563.Advice="移除這些連接線或修改其定義。";
+
+CATCoModelInputError_ERR_1564.Request="上表面或實體運算符";
+CATCoModelInputError_ERR_1564.Diagnostic="有些連接線無效：運算符不管理封閉曲線或多域曲線。";
+CATCoModelInputError_ERR_1564.Advice="請修改連接線定義。";
+

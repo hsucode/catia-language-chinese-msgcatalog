@@ -1,0 +1,87 @@
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化                                     CNEXT - V6R208
+// 3951 校正官方漢化                          COPYRIGHT DASSAULT SYSTEMES 2009 
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 FILENAME    :    CATEhfLiveManipulatorCmd.CATNls
+// 3951 校正官方漢化 FRAMEWORK   :    ElectricalFormboardDesign
+// 3951 校正官方漢化 AUTHOR      :    XIW
+// 3951 校正官方漢化 DATE        :    Mar 2009
+// 3951 校正官方漢化------------------------------------------------------------------------------
+// 3951 校正官方漢化 DESCRIPTION :    Resources File for NLS purpose related to Interactive
+// 3951 校正官方漢化                  Formboard Commands.
+// 3951 校正官方漢化                  
+// 3951 校正官方漢化------------------------------------------------------------------------------
+// 3951 校正官方漢化 COMMENTS    :
+// 3951 校正官方漢化------------------------------------------------------------------------------
+// 3951 校正官方漢化MODIFICATION     user  date      purpose
+// 3951 校正官方漢化   HISTORY       ----  ----      -------
+// 3951 校正官方漢化------------------------------------------------------------------------------
+
+// 3951 校正官方漢化%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// 3951 校正官方漢化 DialogEngine state prompts 
+// 3951 校正官方漢化%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+CATEhfLiveManipulatorCmd.SelectBundleSegmentOrDeviceForManipulation.Message="選擇一個段或連接到單個段的設備來操作該段";
+CATEhfLiveManipulatorCmd.ManipulateUsingLiveManipulators.Message="使用實時操縱桿操作并單擊背景來應用修改。";
+MultiBranchableInVisuMode="電氣分支幾何圖形處于可視化模式下";
+
+// 3951 校正官方漢化Keep Shape
+KeepShapeBranch="包含展平狀態的屬性組的分支禁止選擇實時操縱桿操作";
+
+// 3951 校正官方漢化LT present on selected portion
+LTPresentSelectPortion="在所選部分上使用長度公差進行彎曲。無法在此部分上應用彎曲";
+
+// 3951 校正官方漢化Arrange Junction
+BusinessRuleToolTip="段之間的角度不符合業務規則給定的最小角度或默認最小角度 ";
+ToolTipArrangeJunDefault="轉動以排列交接點處的段 ";
+
+CATEhfLiveManipulatorCmd.PunctualArrgJuncUmb.Message="“精確 -> 排列交接點 -> 傘”已啟用。單擊背景以應用操作。";
+CATEhfLiveManipulatorCmd.PunctualArrgJuncEq.Message="“精確 -> 排列交接點 -> 等角度”已啟用。單擊背景以應用操作。";
+CATEhfLiveManipulatorCmd.PunctualArrgJuncBR.Message="“精確 -> 排列交接點 -> 業務規則”已啟用。單擊背景以應用操作。";
+CATEhfLiveManipulatorCmd.PunctualArrgJuncUIP.Message="“精確 -> 排列交接點 -> UIP”已啟用。單擊背景以應用操作。";
+CATEhfLiveManipulatorCmd.LocalArrgJuncUmb.Message="“本地 -> 排列交接點 -> 傘”已啟用。單擊背景以應用操作。";
+CATEhfLiveManipulatorCmd.LocalArrgJuncEq.Message="“本地 -> 排列交接點 -> 等角度”已啟用。單擊背景以應用操作。";
+CATEhfLiveManipulatorCmd.LocalArrgJuncBR.Message="“本地 -> 排列交接點 -> 業務規則”已啟用。單擊背景以應用操作。";
+CATEhfLiveManipulatorCmd.LocalArrgJuncUIP.Message="“本地 -> 排列交接點 -> UIP”已啟用。單擊背景以應用操作。";
+
+// 3951 校正官方漢化Roll
+BnsOnExtrCurve="彎曲命令不適用于外部曲線上的段";
+ToolTipBusinessRuleBendRad=" 彎曲折彎半徑不符合業務規則給定的最小彎曲折彎半徑或默認最小彎曲折彎半徑 ";
+ToolTipRollRadError=" 已達到彎曲半徑操作的限制，請進行平移以更改彎曲半徑 ";
+ToolTipRollStartPtError=" 已達到彎曲起點操作的限制，請進行平移以更改彎曲起點位置 ";
+ToolTipRollAngleError=" 已達到彎曲角度操作的限制，請進行旋轉以更改彎曲角度 ";
+ToolTipRollAngleDefault=" 旋轉以更改彎曲角度 ";
+ToolTipRollStartPtDefault=" 平移以更改彎曲起點位置 ";
+ToolTipRollRadDefault=" 平移以更改彎曲半徑 ";
+ToolTipBuildLimitError=" 當前用于構建分支的彎曲參數過小，請嘗試增加彎曲角度或彎曲半徑 ";
+
+CATEhfLiveManipulatorCmd.PunctualRoll.Message="“精確 -> 彎曲”已啟用。單擊背景以應用操作。";
+CATEhfLiveManipulatorCmd.LocalRoll.Message="“本地 -> 彎曲”已啟用。單擊背景以應用操作。";
+CATEhfLiveManipulatorCmd.RollBendSense.Message="單擊分支部分來結束彎曲感應。";
+
+// 3951 校正官方漢化Rotate
+AngleInvalidAccToBusinessRule.Title=" 旋轉 ";
+AngleInvalidAccToBusinessRule.Text=" 正在旋轉樞軸上相對于一個或多個其他段進行旋轉的段的角度不符合 5 度的最小角度要求，或者與業務規則計算的角度不符。無法應用旋轉操作！ ";
+BusinessRuleToolTip=" 段之間的角度不符合業務規則給定的最小角度或默認最小角度 ";
+ToolTipRotateDefault=" 轉動以旋轉交接點處的段 ";
+ToolTipForPIN=" 單擊引腳以對齊 ";
+
+CATEhfLiveManipulatorCmd.PunctualRotate.Message="“精細 -> 旋轉”已啟用。在非突出顯示的段上懸停鼠標以進行對齊，或單擊背景以應用操作。";
+CATEhfLiveManipulatorCmd.LocalRotate.Message="“本地 -> 旋轉”已啟用。在非突出顯示的段上懸停鼠標以進行對齊，或單擊背景以應用操作。";
+CATEhfLiveManipulatorCmd.GlobalRotate.Message="“全局 -> 旋轉”已啟用。單擊背景以應用操作。";
+
+// 3951 校正官方漢化Scale
+ToolTipScaleLengthDefault=" 平移以更改分支的幾何長度。 ";
+FakeLengthRangeNotification="假長度值只能介于實際長度值的 5% 到 10000% 之間";
+RulerTrueLengthLabel="實長";
+
+CATEhfLiveManipulatorCmd.LocalScale.Message="“本地 -> 縮放”已啟用。單擊“實長”恢復實際長度并單擊背景以應用操作。";
+
+// 3951 校正官方漢化Straight
+ToolTipStraightDefault=" 平移以確定直線的移動點。 ";
+
+CATEhfLiveManipulatorCmd.PunctualStraight.Message="“精細 -> 拉直”已啟用。移動機器人以拉直分支部分。單擊背景以應用操作。";
+CATEhfLiveManipulatorCmd.LocalStraight.Message="“本地 -> 拉直”已啟用。單擊背景以應用操作。";
+
+
+

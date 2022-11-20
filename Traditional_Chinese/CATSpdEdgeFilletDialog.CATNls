@@ -1,0 +1,88 @@
+// 3951 校正官方漢化 'Title' entry removed for setting feature name as Dialog title & DefaultTitleId entry added.
+// 3951 校正官方漢化Title = "Edge Fillet";
+
+DefaultTitleId="倒圓角";
+
+// 3951 校正官方漢化MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.BasicSelectionModeLabelId.Title = " Selection Mode : ";
+MainFrameId.SelectionFrameId.FilletDefinitionLabelId.Title="圓角定義: ";
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.BasicRadiusLabelId.Title=" 半徑: ";
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.BasicBlankLineLabel003Id.Title="  ";
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.Title=" 基礎 ";
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.Title=" 高級 ";
+MainFrameId.TrimRibbonsFrameId.TrimRibbonsCheckButtonId.Title="修剪帶";
+MainFrameId.ConicFrameId.ConicButtonId.Title="二次曲線參數";
+
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.BasicObjectsToFilletLabelId.Title="要圓角化的對象: ";
+SelectionMode1ComboMsgId="邊線/面";
+SelectionMode2ComboMsgId="與選定特征相交";
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.BasicSelectedFeaturesSelectorMultiLabelId.Title="第二個操作數: ";
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.BasicFirstOperandsLabelId.Title="第一個操作數: ";
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.BlankLabelId=" ";
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.BlankLabelId=" ";
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedEdgeToKeepLabelId.Title="要保留的邊線: ";
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedLimitingElementLabelId.Title="限制元素: ";
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedPartingElementLabelId.Title="分離元素: ";
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.BasicPropagationLabelId.Title="拓展: ";
+PropagationMode1ComboMsgId="最小";
+PropagationMode2ComboMsgId="相切";
+
+// 3951 校正官方漢化===================================================================
+// 3951 校正官方漢化 LongHelp
+// 3951 校正官方漢化===================================================================
+
+MainFrameId.SelectionFrameId.IntersectionFilletRadioButtonId.LongHelp="在多個特征的相交處創建圓角。";
+MainFrameId.SelectionFrameId.FEdgeFaceFilletRadioButtonId.LongHelp="在完整邊線上創建圓角。";
+MainFrameId.SelectionFrameId.REdgeFaceFilletRadioButtonId.LongHelp="在重新限定的邊線上創建圓角。";
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.BasicRadiusLabelId.LongHelp="指定半徑值。\n 半徑值必須大于 \n 0 (不包括 0)。";
+
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.BasicPropagationLabelId.LongHelp="指定進行圓角化時要考慮的邊線。
+有兩種拓展方式: 
+
+相切: CATIA 會持續
+在選定邊線之外執行圓角化，直到遇到一條
+相切不連續的邊線為止。
+  
+最小: 幾何圖形將一直拓展到
+第一自然重新限定。";
+
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.BasicPropagationComboId.LongHelp="指定進行圓角化時要考慮的邊線。
+有兩種拓展方式: 
+
+相切: CATIA 會持續
+在選定邊線之外執行圓角化，直到遇到一條
+相切不連續的邊線為止。
+  
+最小: 幾何圖形將一直拓展到
+第一自然重新限定。";
+
+MainFrameId.TrimRibbonsFrameId.TrimRibbonsCheckButtonId.LongHelp="修剪支持面并將它裝配到圓角。";
+
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.BasicObjectsToFilletLabelId.LongHelp="指定將應用圓角化的對象。";
+MainFrameId.PropFrameId.PropTabContainerId.BasicPropTabPageId.BasicFrameId.BasicObjectsToFilletSelectorMultiId.LongHelp="指定將應用圓角化的對象。";
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedEdgeToKeepLabelId.LongHelp="指定邊線，對所選對象進行圓角化時不可修改該邊線。";
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedEdgeToKeepSelectorMultiId.LongHelp="指定邊線，對所選對象進行圓角化時不可修改該邊線。";
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedLimitingElementLabelId.LongHelp="選擇一個或多個限制元素。";
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedLimitingElementSelectorMultiId.LongHelp="選擇一個或多個限制元素。";
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedPartingElementLabelId.LongHelp="選擇分離元素。";
+MainFrameId.PropFrameId.PropTabContainerId.AdvancedPropTabPageId.AdvancedFrameId.AdvancedPartingElementSelectorId.LongHelp="選擇分離元素。";
+
+// 3951 校正官方漢化===================================================================
+// 3951 校正官方漢化 ShortHelp
+// 3951 校正官方漢化===================================================================
+
+MainFrameId.SelectionFrameId.IntersectionFilletRadioButtonId.ShortHelp="在多個特征的相交處創建圓角。";
+MainFrameId.SelectionFrameId.FEdgeFaceFilletRadioButtonId.ShortHelp="在完整邊線上創建圓角。";
+MainFrameId.SelectionFrameId.REdgeFaceFilletRadioButtonId.ShortHelp="在重新限定的邊線上創建圓角。";
+
+// 3951 校正官方漢化===================================================================
+// 3951 校正官方漢化 Help
+// 3951 校正官方漢化===================================================================
+MainFrameId.SelectionFrameId.IntersectionFilletRadioButtonId.Help="在多個特征的相交處創建圓角。";
+MainFrameId.SelectionFrameId.FEdgeFaceFilletRadioButtonId.Help="在完整邊線上創建圓角。";
+MainFrameId.SelectionFrameId.REdgeFaceFilletRadioButtonId.Help="在重新限定的邊線上創建圓角。";
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Panels GSD liste des edges
+FilletObjectId="圓角對象";
+FilletElem2Id="第二個操作數";
+Edge2KeepId="要保留的邊線";
+LimitingEltsId="限制元素";

@@ -1,0 +1,173 @@
+// 3951 校正官方漢化-----------------------------------------------------
+// 3951 校正官方漢化 Resource file for CATCCSShapeMorphingDlg class
+// 3951 校正官方漢化 En_US
+// 3951 校正官方漢化-----------------------------------------------------
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES PROVENCE 2010
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化   Resource file for NLS purpose. 
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Implementation Notes :
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 10/10/10 : jcb; creation
+// 3951 校正官方漢化=============================================================================
+
+Title="矢量字段過濾器";
+
+DSMFilterName="DSM 過濾器";
+
+NoSelection="無選擇";
+File=" 文件";
+DevAnalysis=" 偏差分析";
+Elements=" 元素";
+
+ColorMap="顏色映射 ";
+None="無";
+Magnitude="數值";
+Distortion="變形";
+SmoothError="光順";
+Distance="形距離";
+
+MenuItem1="清除選擇";
+
+FrmRoot.FrmElement.LbElement.Title=" 要變形的元素 ";
+FrmRoot.FrmElement.LbInput.Title=" 位移 ";
+
+FrmRoot.Onglets.ongletDeformation.Title="過濾器";
+
+FrmRoot.Onglets.ongletDeformation.FrmOptions.Title="條件";
+
+FrmRoot.Onglets.ongletDeformation.FrmOptions.ChkBtnPrmMinLength.Title=" 最小長度 ";
+FrmRoot.Onglets.ongletDeformation.FrmOptions.ChkBtnPrmMinLength.LongHelp="忽略長度小于該值的矢量。";
+
+FrmRoot.Onglets.ongletDeformation.FrmOptions.ChkBtnPrmMaxLength.Title=" 最大長度 ";
+FrmRoot.Onglets.ongletDeformation.FrmOptions.ChkBtnPrmMaxLength.LongHelp="忽略長度大于該值的矢量。";
+
+FrmRoot.Onglets.ongletDeformation.FrmOptions.ChkBtnPrmDistortion.Title=" 變形 ";
+FrmRoot.Onglets.ongletDeformation.FrmOptions.ChkBtnPrmDistortion.LongHelp="移除變形大于該值的矢量對。";
+
+FrmRoot.Onglets.ongletDeformation.FrmOptions.ChkBtnPrmSmoothError.Title=" 光順 ";
+FrmRoot.Onglets.ongletDeformation.FrmOptions.ChkBtnPrmSmoothError.LongHelp="使用鄰域內所有矢量的平均位移矢量，計算各矢量之間的差異。";
+
+FrmRoot.Onglets.ongletDeformation.FrmOptions.ChkBtnPrmDistance.Title=" 形距離 ";
+FrmRoot.Onglets.ongletDeformation.FrmOptions.ChkBtnPrmDistance.LongHelp="計算矢量原點和形之間的距離。
+忽略距離超過該值的矢量。";
+
+
+FrmRoot.Onglets.ongletArea.Title="轉換區域";
+
+FrmRoot.Onglets.ongletArea.FrmArea.LbLimitCurve.Title="限制曲線 ";
+FrmRoot.Onglets.ongletArea.FrmArea.LbLimitCurve.LongHelp="選擇限制曲線。";
+
+FrmRoot.Onglets.ongletArea.FrmArea.LimitCurveEdt.LongHelp="顯示選定的限制曲線的名稱。";
+
+
+FrmRoot.Onglets.ongletArea.FrmArea.LbTransitionCurve.Title="字段限制 ";
+FrmRoot.Onglets.ongletArea.FrmArea.LbTransitionCurve.LongHelp="選擇字段限制曲線。";
+
+FrmRoot.Onglets.ongletArea.FrmArea.Curve2.LongHelp="顯示選定的字段限制的名稱。";
+
+
+FrmRoot.Onglets.ongletArea.FrmArea.pushOtherSide2.Title="另一側";
+FrmRoot.Onglets.ongletArea.FrmArea.pushOtherSide2.LongHelp="處理位于字段限制曲線另一側的區域。";
+
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.Title="矢量字段";
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.LbField.Title="字段";
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.LbField.LongHelp="顯示字段矢量數。";
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.FieldValue.LongHelp="顯示字段矢量數。";
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.ShowDisplacement.ShortHelp="顯示字段 ";
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.ShowDisplacement.LongHelp="顯示字段 
+顯示字段矢量。";
+
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.LbFiltered.Title="已過濾";
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.LbFiltered.LongHelp="顯示已過濾的矢量數。";
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.FilteredValue.LongHelp="顯示已過濾的矢量數。";
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.ShowFiltered.ShortHelp="顯示已過濾 ";
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.ShowFiltered.LongHelp="顯示已過濾 
+顯示已過濾的矢量。";
+
+
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.LbRedundant.Title="冗余";
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.LbRedundant.LongHelp="顯示冗余矢量數。";
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.RedundantValue.LongHelp="顯示冗余矢量數。";
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.ShowRedundant.ShortHelp="顯示冗余 ";
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.ShowRedundant.LongHelp="顯示冗余 
+顯示冗余矢量。";
+
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.LbScale.Title="顯示縮放 ";
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.LbScale.LongHelp="對矢量應用一個系數以增加或減少其顯示長度。";
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos1.SpinScale.LongHelp="對矢量應用一個系數以增加或減少其顯示長度。";
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos2.Title="顏色映射";
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos2.ColorMap.ShortHelp="顏色映射 ";
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos2.ColorMap.LongHelp="顏色映射 
+顯示顏色映射，該顏色映射基于在列表中選定的條件。";
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos2.ComboColorMap.LongHelp="顯示能夠選定以顯示顏色映射的條件列表。";
+
+
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos3.Title="顯示網格";
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos3.ShowMesh.ShortHelp="顯示網格 ";
+FrmRoot.Onglets.ongletDeformation.FrmInfos.frmInfos3.ShowMesh.LongHelp="顯示網格
+顯示基于矢量目標點的網格。";
+
+
+// 3951 校正官方漢化 Help
+// 3951 校正官方漢化 Shape to deform
+FrmRoot.FrmElement.LbElement.LongHelp="選擇要變形的形。";
+
+FrmRoot.FrmElement.ElementsList.LongHelp="顯示作為要變形的元素被選定的形的名稱。";
+
+FrmRoot.FrmElement.DisplayEltList.ShortHelp="形列表 ";
+FrmRoot.FrmElement.DisplayEltList.LongHelp="形列表
+顯示選定的形列表。";
+
+// 3951 校正官方漢化 Displacement
+FrmRoot.FrmElement.LbInput.LongHelp="選擇要過濾的矢量字段。";
+
+FrmRoot.FrmElement.InputDisplacement.LongHelp="顯示位移文件的名稱，該文件包含要過濾的矢量字段。";
+
+FrmRoot.FrmElement.DisplayFileList.ShortHelp="矢量字段 ";
+FrmRoot.FrmElement.DisplayFileList.LongHelp="矢量字段
+顯示要過濾的矢量字段列表。";
+
+FrmRoot.FrmElement.PushFileOpen.ShortHelp="打開文件 ";
+FrmRoot.FrmElement.PushFileOpen.LongHelp="打開文件
+打開位移文件。";
+
+// 3951 校正官方漢化 Coefficients
+FrmRoot.Onglets.ongletDeformation.FrmOptions.frmUnion.radBtnUnion.ShortHelp="并集過濾器 ";
+FrmRoot.Onglets.ongletDeformation.FrmOptions.frmUnion.radBtnUnion.LongHelp="并集過濾器 
+應用一個過濾器，它是選定條件的并集。";
+
+FrmRoot.Onglets.ongletDeformation.FrmOptions.frmUnion.radBtnIntersection.ShortHelp="交集過濾器 ";
+FrmRoot.Onglets.ongletDeformation.FrmOptions.frmUnion.radBtnIntersection.LongHelp="交集過濾器 
+應用一個過濾器，它是選定條件的交集。";
+
+
+// 3951 校正官方漢化 Transition area
+FrmRoot.Onglets.ongletArea.ShortHelp="轉換區域";
+FrmRoot.Onglets.ongletArea.LongHelp="轉換區域
+選擇限制曲線和/或字段限制曲線。";
+
+
+
+
+

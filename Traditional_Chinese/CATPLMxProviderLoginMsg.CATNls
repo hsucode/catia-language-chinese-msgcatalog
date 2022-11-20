@@ -1,0 +1,100 @@
+CATPLMx_MsgKey_CATComSidlError.Request="嘗試與在 \"/P1\" 上運行的應用程序服務器聯系";
+CATPLMx_MsgKey_CATComSidlError.Diagnostic="通信失敗";
+CATPLMx_MsgKey_CATComSidlError.Advice="檢查您的服務器是否處于活動狀態，并且網絡是否正常";
+
+CATPLMx_MsgKey_AuthenticationError.Request="嘗試使用根 URI \"/P2\" 登錄到 ENOVIA V6 服務器 \"/P1\" 時認證失敗";
+CATPLMx_MsgKey_AuthenticationError.Diagnostic="\n服務器原因：\n /P1";
+CATPLMx_MsgKey_AuthenticationError.Advice=" ";
+
+CATPLMx_MsgKey_AuthenticationError_BadPwd.Request="嘗試使用根 URI \"/P2\" 登錄到 ENOVIA V6 服務器 \"/P1\" 時認證失敗";
+CATPLMx_MsgKey_AuthenticationError_BadPwd.Diagnostic="\n您為用戶提供的密碼：\"/P1\" 不正確";
+CATPLMx_MsgKey_AuthenticationError_BadPwd.Advice="請輸入有效的用戶和密碼，或與管理員聯系";
+
+CATPLMx_MsgKey_AuthenticationError_PwdExpired.Request="您的密碼已過期";
+CATPLMx_MsgKey_AuthenticationError_PwdExpired.Advice="- 登錄 ENOVIA V6 Web 客戶端來更改您的密碼";
+
+CATPLMx_MsgKey_AuthenticationError_BadUsr.Request="嘗試使用根 URI \"/P2\" 登錄到 ENOVIA V6 服務器 \"/P1\" 時認證失敗";
+CATPLMx_MsgKey_AuthenticationError_BadUsr.Diagnostic="\n用戶名：\"/P1\" 不存在";
+CATPLMx_MsgKey_AuthenticationError_BadUsr.Advice="請輸入有效的用戶和密碼，或與管理員聯系";
+
+
+CATPLMx_MsgKey_PLMSecurityError.Request="嘗試使用安全性上下文 \"/P1\" 登錄";
+CATPLMx_MsgKey_PLMSecurityError.Diagnostic="/P1";
+CATPLMx_MsgKey_PLMSecurityError.Advice="使用其他安全性上下文，或與管理員聯系";
+
+CATPLMx_MsgKey_ReadStatus_021.Request="嘗試讀取整數狀態代碼";
+CATPLMx_MsgKey_ReadStatus_021.Diagnostic="無法讀取整數狀態代碼";
+CATPLMx_MsgKey_ReadStatus_021.Advice="檢查您的 Web 服務器是否正在運行。檢查您的認證憑證。";
+
+CATPLMx_MsgKey_EmptyValue_030.Request="嘗試讀取 \"/P1\" 的值";
+CATPLMx_MsgKey_EmptyValue_030.Diagnostic="為 \"/P1\" 返回了空值";
+CATPLMx_MsgKey_EmptyValue_030.Advice="檢查您的網絡并與支持人員聯系";
+
+CATPLMx_MsgKey_ListLengthMismatch_031.Request="從服務器上讀取兩個列表";
+CATPLMx_MsgKey_ListLengthMismatch_031.Diagnostic="列表長度不匹配。";
+CATPLMx_MsgKey_ListLengthMismatch_031.Advice="與支持人員聯系";
+
+CATPLMx_MsgKey_ReadValue_041.Request="嘗試從輸入流中讀取 /P1 值";
+CATPLMx_MsgKey_ReadValue_041.Diagnostic="無法從輸入流中讀取 /P1 值";
+CATPLMx_MsgKey_ReadValue_041.Advice="與支持人員聯系";
+
+
+CATPLMx_MsgKey_AuthenticationError_UnknownOperation.Request="嘗試使用根 URI \"/P2\" 登錄到 ENOVIA V6 服務器 \"/P1\" 時認證失敗";
+CATPLMx_MsgKey_AuthenticationError_UnknownOperation.Diagnostic="\n登錄請求中指定的登錄質詢未知";
+CATPLMx_MsgKey_AuthenticationError_UnknownOperation.Advice="請輸入有效的質詢，或與管理員聯系";
+
+CATPLMx_MsgKey_AuthenticationError_DecryptPwdError.Request="嘗試使用根 URI \"/P2\" 登錄到 ENOVIA V6 服務器 \"/P1\" 時認證失敗";
+CATPLMx_MsgKey_AuthenticationError_DecryptPwdError.Diagnostic="\n您為用戶提供的密碼：無法解密 \"/P1\"";
+CATPLMx_MsgKey_AuthenticationError_DecryptPwdError.Advice="請輸入有效的密碼，或與管理員聯系";
+
+
+
+CATPLMx_MsgKey_EndStreamAnswer_007="結束應答流失敗";
+
+CATPLMx_MsgKey_TubeCreationFailed_001="創建管道失敗";
+CATPLMx_MsgKey_ApplicativeWriteFailed_0011="應用寫入失敗";
+CATPLMx_MsgKey_GetQueryStreamFailed_002="獲取請求流失敗";
+CATPLMx_MsgKey_GetAnswerStream_003="獲取響應流失敗";
+CATPLMx_MsgKey_BeginStreamQuery_004="開始請求流失敗";
+CATPLMx_MsgKey_BeginStreamAnswer_005="開始響應流失敗";
+CATPLMx_MsgKey_EndStreamQuery_006="結束請求流失敗";
+CATPLMx_MsgKey_EndStreamAnswer_007="結束響應流失敗";
+
+CATPLMx_MsgKey_WriteStringUser_011="寫入用戶字符串失敗";
+CATPLMx_MsgKey_WriteStringPwd_012="寫入密碼字符串失敗";
+CATPLMx_MsgKey_WriteStringVault_013="寫入資源庫字符串失敗";
+
+CATPLMx_MsgKey_ApplicativeReadFailed_0131="應用讀取失敗";
+
+CATPLMx_MsgKey_ReadInt_ListOfRole_Element_014="讀取整數";
+CATPLMx_MsgKey_ReadInt_ListOfRole_Element_015="讀取整數";
+CATPLMx_MsgKey_ReadInt_Authenticate_RC_016="讀取整數以進行認證";
+CATPLMx_MsgKey_ReadString_SecurityToken_017="讀取安全令牌字符串";
+
+CATPLMx_MsgKey_WriteString_SecurityContext_018="寫入字符串安全性上下文";
+CATPLMx_MsgKey_WriteStringCMDTypeLogon_019="寫入命令類型字符串";
+CATPLMx_MsgKey_WriteStringCMDPLMQL_020="寫入 PLMQL 字符串";
+
+CATPLMx_loadSecurityEnv_ApplyContext.Request="登錄期間，無法應用令牌為 \"/P1\" 的安全性上下文";
+CATPLMx_loadSecurityEnv_ApplyContext.Diagnostic="- 出現異常 [/P1]：\"/P2\"";
+CATPLMx_loadSecurityEnv_ApplyContext.Advice="- 請與您的管理員聯系";
+
+CATPLMx_loadSecurityEnv_Interruption.Request="登錄過程中斷";
+CATPLMx_loadSecurityEnv_Interruption.Diagnostic="- 出現異常 [/P1]：\"/P2\"";
+CATPLMx_loadSecurityEnv_Interruption.Advice="- 請與您的管理員聯系以檢查服務器日志";
+
+CATPLMx_ClientSession_Unexpected.Request="當前會話的 [/P1] 操作期間出現意外異常";
+CATPLMx_ClientSession_Unexpected.Diagnostic="- 出現異常 [/P1]：\"/P2\"";
+CATPLMx_ClientSession_Unexpected.Advice="- 請與您的管理員聯系以檢查服務器日志";
+
+CATPLMx_ClientSession_Register.Request="用戶 '/P1' 已登錄到機器 \"/P2\"";
+CATPLMx_ClientSession_Register.Advice="您可以：\n",
+"- 在以下會話超時期限后重試：/P1，\n",
+"- 在從其他機器注銷后重試，\n",
+"- 或繼續在其他機器上工作\n";
+
+CATPLMx_ClientSession_AlreadyLogged.Request="用戶 '/P1' 現已登錄到客戶端 \"/P2\"";
+CATPLMx_ClientSession_AlreadyLogged.Advice="您可以：\n",
+"- 在會話超時期限后重試，\n",
+"- 在從其他機器注銷后重試，\n",
+"- 或繼續在其他機器上工作\n";

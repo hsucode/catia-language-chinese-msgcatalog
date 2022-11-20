@@ -1,0 +1,47 @@
+// 3951 校正官方漢化Motion Basis
+DNBEHumanTaskTimeEditor.Title               = "Motion Basis";
+
+HumanTaskTimeFrame.Title                    = "任務 Motion Basis屬性";
+HumanTaskTimeFrame.Default.Title            = "默認";
+HumanTaskTimeFrame.Speed.Title              = "Speed ";
+HumanTaskTimeFrame.UserSpeed.Title          = "用戶Speed ";
+HumanTaskTimeFrame.Time.Title               = "時間 ";
+HumanTaskTimeFrame.UserTime.Title           = "用戶Time ";
+HumanTaskTimeFrame.CheckButtonSpeed.Title   = "Override child動作";
+HumanTaskTimeFrame.CheckButtonTime.Title    = "Override child動作";
+
+HumanTaskTimeFrame.MotionBasis.TimeWthOverrding  = "使用rTimeWithOverride";
+HumanTaskTimeFrame.MotionBasis.Time         = "使用rTime";
+HumanTaskTimeFrame.MotionBasis.SpeedWthOverriding = "使用rSpeedWithOverride";
+HumanTaskTimeFrame.MotionBasis.Speed        = "使用rSpeed";
+HumanTaskTimeFrame.MotionBasis.Default      = "任務MotionBasisDefault";
+
+RatingCombo.VeryFast    = "很快";
+RatingCombo.Fast        = "快";
+RatingCombo.Normal      = "法向";
+RatingCombo.Slow        = "慢";
+RatingCombo.VerySlow    = "很慢";
+
+Warning.ActivityModified.Title              = "警告 - Activity Modified";
+Warning.ActivityModified.Time.Message       = "Motion Basis of all underlying child activities will be set to時間";
+Warning.ActivityModifiedTime.Title          = "警告 - Activity Modified";
+Warning.ActivityModifiedTime.Time.Message   = "Overriding of Simulation Time is不possible with the current Task configuration";
+Warning.ActivityModifiedSpeed.Title         = "警告 - Activity Modified";
+Warning.ActivityModifiedSpeed.Speed.Message = "Overriding of Joint Speed is不possible with the current Task configuration";
+Warning.ActivityModified.Speed.Message      = "Motion Basis of all underlying child activities will be set to速度";
+
+Error.UpdateCycleCmd.Title                  = "錯誤 - Simulation Time Overriding";
+Error.UpdateCycleCmd.Message                = "更新Cycle Cmd must be run before overriding the simulation time或所有 child activities \n 
+under the selected HumanTask/Human Activity Group have一個calculated 周期 of zero seconds";
+Error.SpecifiedTime.Title                   = "錯誤 - Specified時間";
+Error.SpecifiedTime.Message                 = "Overriding of Simulation Time is不possible with the current Task configuration\n
+Specified Time should be more than the time taken by activities which are already Time based(including Delay and Operate with MoveDevice). \n";
+Error.DiffMotionBasis.Title                 = "錯誤 - Motion Basis";
+Error.DiffMotionBasis.Message               = "The motion basis for task and all its children activities must be same (either Speed或 Time based),\n
+else the motion basis for task should be set as DEFAULT ";
+
+
+
+
+
+

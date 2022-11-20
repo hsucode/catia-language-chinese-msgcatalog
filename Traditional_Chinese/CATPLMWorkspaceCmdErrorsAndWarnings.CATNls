@@ -1,0 +1,178 @@
+
+// WS creation:
+
+CreatingWorkspace = "Creating new Designer Workspace...";
+WorkspaceCreated = "Designer Workspace creation succeeded";
+
+FailedToCreateWS_SelectionNotSupported    = "Selection is not valid";
+FailedToCreateWS_SelectionTypeNotSupported    = "Selection is not valid. The  data you have selected cannot be attached to a Designer Workspace";
+FailedToCreateWS_SelectionNotContainingFilter = "Selection is not valid, no filter is defined for the selected structure";
+FailedToCreateWS_SelectedObjectIsInAWS        = "Selection is not valid, selected structure is belonging to a Designer Workspace\n";
+FailedToCreateWS_SelectedObjectIsInAFinalWS   = "Selection is not valid, selected structure is belonging to a not extendable Designer Workspace\n";
+
+FailedToCreateWS = "Designer Workspace creation failed";
+
+FailedToCreateWS_NoMainEnterpriseWorkspace    = "Designer Workspace creation failed, no Root Designer Workspace found";
+
+FailedToCreateWS_StdRootError.Diagnostic  = "Designer Workspace creation failed - Cannot create Designer Workspace. Impossible to attach a structure declared as shared with Reference.";
+FailedToCreateWS_StdRootError.Advice = "";
+
+FailedToCreateWS_CreationError.Diagnostic = "Designer Workspace creation failed";
+FailedToCreateWS_CreationError.Advice = "";
+
+FailedToCreateWS_FailedToComputeCloneRequest = "Designer Workspace creation failed - Error detected in business rule associated to your data.";
+
+FailedToCreateWS_DuplicationError.Diagnostic = "Designer Workspace creation failed - Failed to attach reference structure in workspace";
+FailedToCreateWS_DuplicationError.Advice = "";
+
+FailedToCreateWS_AuthoringWndIsOpened = "Designer Workspace creation failed\nAll authoring windows should be closed";
+
+FailedToCreateWS_ExpandWithoutRepresentations = "Designer Workspace creation failed\nExpand without representations command should be disabled";
+
+// WS Edit Definition:
+
+WsEditDefinition_NotConnectedToWS = "You are not connected to any Designer Workspace";
+WsEditDefinition_NoFilterFound = "Filter on which the current Designer Workspace was created is not accessible";
+
+// WS compare:
+
+ComputingWorkspaceComparisonWithReference = "Comparing Designer Workspace /P1 with reference";
+ComputingWorkspaceComparison = "Comparing Designer Workspace /P1 with /P2";
+WorkspaceComparisonComputed  = "Designer Workspace /P1 comparison result:";
+FailedToCumputeWSComparison  = "Designer Workspace /P1 comparison failed";
+CloseAuthoringWindowsNeededForComparison = "Designer Workspace /P1 comparison failed\nAll authoring windows should be closed";
+CommandExpandWithoutRepresentationsForComparison = "Designer Workspace /P1 comparison failed\nExpand without representations command should be disabled";
+
+FailedToCompareWS_StdRootError.Diagnostic  = ""; //to do
+FailedToCompareWS_StdRootError.Advice = "";
+
+// WS synchro:
+
+PreparingWorkspaceSynchronizationWithReference = "Computing comparison between Designer Workspace /P1 and reference";
+PreparingWorkspaceSynchronization = "Computing comparison between Designer Workspace /P1 and /P2";
+
+FailedToPrepareWSForSynchronization = "Failed to compute synchronization operations";
+FailedToExecuteWSSynchronization    = "Failed to execute synchronization operations";
+
+CommandExpandWithoutRepresentationsForSynchronization = "Failed to execute synchronization operations on /P1\nExpand without representations command should be disabled";
+CloseAuthoringWindowsNeededForSynchronization = "Failed to execute synchronization operations on /P1\nAll authoring windows should be closed";
+FailedToSynchronizeWS_ConcurrentEngineering   = "Failed to execute synchronization operations on /P1\nAnother user is currently using this Designer Workspace\nPlease wait the end of this operation";
+FailedToSynchronizeWS_ConcurrentEngineeringWithLockOwner = "Failed to execute synchronization operations on /P1\nUser /P2 is currently using this Designer Workspace\nPlease wait the end of this operation";
+
+FailedToExecuteWSSynchronization_NothingToSynchronize.Diagnostic = "Failed to execute synchronization operations, nothing to synchronize";
+FailedToExecuteWSSynchronization_NotAllObjectsAttachedInParent.Diagnostic = "Failed to execute synchronization operations, some object to attach in Designer workspace are not attached in parent Designer workspace";
+
+// WS deliver:
+
+PreparingWorkspacePromotionWithReference = "Computing objects to be delivered from Designer Workspace /P1 to reference";
+PreparingWorkspacePromotion = "Computing objects to be delivered from Designer Workspace /P1 to /P2";
+
+FailedToPrepareWSForPromotion_NotSynchronized = "Failed to prepare delivery operations. Please synchronize your Designer Workspace before delivering it.";
+FailedToPrepareWSForPromotion = "Failed to compute delivery operations";
+FailedToExecuteWSPromotion    = "Failed to execute delivery operations";
+FailedToExecuteWSPromotion_NothingToDeliver.Diagnostic = "Nothing to deliver";
+
+CommandExpandWithoutRepresentationsForPromotion = "Failed to execute delivery operations on /P1\nExpand without representations command should be disabled";
+CloseAuthoringWindowsNeededForPromotion = "Failed to execute delivery operations on /P1\nAll authoring windows should be closed";
+FailedToPromoteWS_ConcurrentEngineering = "Failed to execute delivery operations on /P1\nAnother user is currently using this workspace\nPlease wait the end of this operation";
+FailedToPromoteWS_ConcurrentEngineeringWithLockOwner = "Failed to execute delivery operations on /P1\nUser /P2 is currently using this workspace\nPlease wait the end of this operation";
+FailedToPromoteWS_SaveLogIsModified     = "Failed to execute delivery operations on /P1\nAnother user modified the Designer Workspace\nPlease relaunch the delivery commande";
+
+// WS Delete:
+
+CATPLMWorkspaceCmdErrorsAndWarnings.DeleteWorkspace.Title     = "Delete Designer Workspace";
+CATPLMWorkspaceCmdErrorsAndWarnings.DeleteWorkspace.Help      = "Delete Designer Workspace";
+CATPLMWorkspaceCmdErrorsAndWarnings.DeleteWorkspace.ShortHelp = "Delete Designer Workspace";
+CATPLMWorkspaceCmdErrorsAndWarnings.DeleteWorkspace.LongHelp  = "Delete Designer Workspace";
+
+FailedToDeleteWS.Title = "Delete Designer Workspace";
+FailedToDeleteWS.Msg = "Designer Workspace deletion failed";
+
+FailedToDeleteWS_CloseAuthoringWindows = "Designer Workspace delete cannot be done\nAll authoring windows should be closed";
+
+DeleteWorkspaceSucceeded = "Designer Workspace delete succeeded";
+
+CATPLMWorkspaceCmdErrorsAndWarnings.PLMWorkspaceCmdDelete.ConfirmDelete.Message  = "Confirm removal";
+
+ConfirmDeleteDesignWspAndRef.Title        = "Remove Designer Workspace and/or References";
+ConfirmDeleteDesignWorkspaceObject.Msg    = "Selected Designer Workspace will be deleted, references will no longer be attached.";
+
+ConfirmDeleteDesignWorkspace.Title        = "Delete Designer Workspace Confirmation";
+ConfirmDeleteDesignWorkspace.Msg          = "Selected Designer Workspace will be deleted.";
+
+ConfirmDeleteRef.Title                    = "Remove Reference Confirmation";
+ConfirmDeleteReference.Msg                = "References will no longer be attached.";
+
+ConfirmDelete.Title                       = "Remove Designer Workspace and/or References";
+ConfirmDelete.Msg                         = "That operation cannot be undone.\nDo you want to continue?";
+
+ConfirmDeleteNotPromotedWorkspace.Title   = "Delete Designer Workspace Confirmation";
+ConfirmDeleteNotPromotedWorkspace.Text    = "Selected Designer Workspace contains local modifications not delivered.\nDo you want to continue?";
+
+RootDeleteNotAllowedInWindow.Title = "Designer Workspace Root Delete - Report";
+RootDeleteNotAllowedInWindow.Msg   = "Delete of Root Designer Workspace is not possible in that window.\nYou can delete it from Search Result window.";
+
+// WS New Version
+
+FailedWsNewVersion01 = "New version fails: Last version object /P1 in the version family of the reference should be available in current Designer Workspace";
+FailedWsNewVersion02 = "New version fails: Designer Workspace object /P1 corresponding to last version object in the version family of the reference can̿ be locked";
+FailedWsNewVersion03 = "New version fails: Last version object /P1 in the version family of the reference can̿ be locked";
+FailedWsNewVersion04 = "New version fails: Last version object /P1 in the version family of the reference should be available in parent Designer Workspace";
+FailedWsNewVersion05 = "New version fails: Last version object /P1 in the version family of the parent Designer Workspace should be available in current Designer Workspace";
+FailedWsNewVersion06 = "New version fails: last version object /P1 in current Designer Workspace is deleted in reference";
+FailedWsNewVersion07 = "New version fails: last version object /P1 in current Designer Workspace has been detached in parent Designer Workspace";
+
+// WS other error management
+WsEditDefinition_NoFilterFound.Diagnostic = "Filter on which the current Designer Workspace was created is not accessible";
+WsEditDefinition_NoFilterFound.Advice = "";
+
+// License not available
+DWS_LicenseNotAvailable = "License to perform this operation is not available";
+
+// Structure attachment
+DWS_AttachingStructure = "Attaching new structure...";
+DWS_StructureAttached = "Structure is succesfully attached";
+DWS_AttachStructureError = "Failed to attach the selected structure";
+DWSAttachFailed_CloseAuthoringWindowsNeeded = "Failed to attach the selected structure\nAll authoring windows should be closed";
+DWSAttachFailed_CommandExpandWithoutRepresentations = "Failed to attach the selected structure\nExpand without representations command should be disabled";
+
+FailedToAttachStructureInWS_StdRootError.Diagnostic  = "Failed to attach the selected structure. Impossible to attach a structure declared as shared with Reference.";
+FailedToAttachStructureInWS_StdRootError.Advice = "";
+
+FailedToAttachStructureInWS_DuplicationError.Diagnostic = "Failed to attach the selected structure. Failed to attach reference structure in workspace";
+FailedToAttachStructureInWS_DuplicationError.Advice = "";
+
+// Structure detachment
+DWS_DetachingStructure = "Detaching the selected structure...";
+DWS_StructureDetached = "Structure is succesfully detached";
+DWS_DetachStructureError = "Failed to detach the selected structure";
+DWSDetachFailed_CloseAuthoringWindowsNeeded = "Failed to detach the selected structure\nAll authoring windows should be closed";
+DWSDetachFailed_CommandExpandWithoutRepresentations = "Failed to detach the selected structure\nExpand without representations command should be disabled";
+
+// Structure to detach is the last one
+DWS_DetachLastStructureError = "Structure cannot be detached.\nDesigner workspace should contain at least one structure.";
+DWS_DetachLastStructureError.Diagnostic = "Structure cannot be detached.";
+DWS_DetachLastStructureError.Advice = "Designer workspace should contain at least one structure.";
+
+// Strucuture does not belong to reference or parent workspace
+DWS_AttachStructureNotInReferenceError = "Structure cannot be attached to Design Workspace.\nIt does not belong to reference or parent Designer Workspace.";
+DWS_AttachStructureNotInReferenceError.Diagnostic = "Structure cannot be attached to Design Workspace.";
+DWS_AttachStructureNotInReferenceError.Advice = "Structure does not belong to reference or parent Design Workspace.";
+
+// Structure has been already attached
+DWS_AttachStructureAlreadyClonedError = "Structure cannot be attached to Designer Workspace.\nIt has been already attached.";
+DWS_AttachStructureAlreadyClonedError.Diagnostic = "Structure cannot be attached to Designer Workspace.";
+DWS_AttachStructureAlreadyClonedError.Advice = "Structure has been already attached.";
+
+// Object to attach is not allowed is DWS
+InvalidWSObject.Request		= "You cannot process this operation.";
+InvalidWSObject.Diagnostic	= "You cannot process this operation. Object is not compatible with Designer Workspace.";
+InvalidWSObject.Advice		= "Object is not compatible with Designer Workspace.";
+
+
+
+
+
+
+
+

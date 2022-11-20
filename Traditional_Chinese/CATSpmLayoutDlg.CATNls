@@ -1,0 +1,30 @@
+// Copyright DASSAULT SYSTEMES 1999
+// --------------------------------------------------------------------------------------
+//	RESPONSABLE : Christophe DAGRON (amm)
+//	FUNCTION    : Ressource File (NLS)
+//	USE         : AnalysisVisualization Object CATSPMLayoutDialog
+// --------------------------------------------------------------------------------------
+
+// *************************************************************************
+//	Message to the translaters in German and Japenese :
+//  Thanks to keep as many blank spaces as set in the different characters chains.
+//  This is important as it modifies the location of the text in the windows...
+// *************************************************************************
+
+// * Title Dialog Box *
+Title="Image Layout";
+
+TileFrame.Tile_RadioButton.Title       = "Explode";
+TileFrame.Tile_RadioButton.LongHelp    = "Arranges the active images along a direction or in a plane.";
+
+TileFrame.ExplodeOptionsFrame.Direction_Label.Title        = "Along: ";
+TileFrame.ExplodeOptionsFrame.Direction_Combo.LongHelp     = "Selects a direction or a plane for the image layout.";
+
+TileFrame.ExplodeOptionsFrame.Distance_Label.Title         = "Distance: ";
+TileFrame.ExplodeOptionsFrame.Distance_Editor.LongHelp     = "Sets the distance between two images.";
+
+TileFrame.ExplodeOptionsFrame.DefaultDistance_PB.Title     = "Default";
+TileFrame.ExplodeOptionsFrame.DefaultDistance_PB.LongHelp  = "Returns to a default distance between two images.";
+
+TileFrame.Untile_RadioButton.Title     = "Superimpose";
+TileFrame.Untile_RadioButton.LongHelp  = "Superimposes all the images (default image position).";

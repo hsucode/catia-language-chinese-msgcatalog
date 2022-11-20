@@ -1,0 +1,127 @@
+
+
+InputErrorD5RootPathId="\t\t!!!ERROR : -p argument invalid or missing";
+InputErrorV5RootPathId="\t\t!!!ERROR : -t argument invalid or missing";
+InputErrorManufId="\t\t!!!ERROR : -manuf argument invalid or missing";
+InputErrorManufListId="\t\t!!!ERROR : -lmanuf argument invalid or missing";
+InputErrorRootCatalogId="\t\t!!!ERROR : -rootcatalog argument invalid or missing";
+InputErrorFileNameId="\t\t！！！錯誤：-file 參數無效或缺失";
+InputErrorIncompatibilityId="\\t\\t！！！錯誤：-lmanuf 和 -manuf 之間不兼容";
+InputErrorNbArgumentsId="\t\t!!!ERROR : too many arguments";
+InputErrorD5PathId="\t\t!!!ERROR : The path for the D5 Device library is incorrect";
+InputErrorD5LibId="\t\t!!!ERROR : The path for the D5 Device library is uncorrect. Please provide the path to a library(example : D:\\Robotlib on Windows or /usr/Weldgunlib, ...). It is case sensitive.";
+InputErrorSessionCreationId="\t\t！！！錯誤：不能創建會話。開始另一殼體";
+InputErrorFileLocationId="\t\t!!!ERROR : The file specified /p1 can not be located at defined location /p2";
+InputErrorGetV5ProductId="\t\t！！！錯誤：未能獲取 V5 CATProduct 文檔：/p1";
+InputErrorCatalogCreationId="\t\t!!!ERROR : Failed in creation of V5 catalogs : /p1";
+InputErrorWriteId="\t\t！！！錯誤：/p1 的寫許可權被否決";
+InputErrorOpenId="\t\t!!!ERROR : Can not open /p1";
+InputErrorSaveId="\t\t!!!ERROR : Can not save /p1";
+InputErrorCreateId="\t\t!!!ERROR : Can not create /p1";
+InputErrorDeleteId="\t\t!!!ERROR : Can not delete /p1";
+InputNbErrorId="\t\tNumber of errors : /p1";
+
+
+InputDocumentCreationId="\t\t\tCreation of /p1";
+InputDocumentFoundId="\t\t\tDocument found at /p1";
+InputDocumentSavedId="\t\t\tDocument saved at /p1";
+InputDocumentSavingId="\t\t\t正在保存文檔...：/p1";
+InputD5ConversionId="\t\t\tConverting D5 Data ...";
+InputNbD5DeviceFoundId="\t\t\tNumber of D5 Devices found : /p1";
+InputCatalogSavedId="\tCatalog saved at /p1";
+InputCatalogSavingId="\tCatalog saving at /p1";
+InputCatalogDeletionId="\tDeleting old /p1 at /p2...";
+InputCatalogDeletedId="\t/p1 deleted";
+InputEndingId="\tEnding program ... ";
+
+
+
+FinalReportId="
+\n\n-----------------------------------------------------------------------\n
+版權所有 DASSAULT SYSTEMES 2002 : DELMIA Corp。
+\t 最終報告：
+\t 制造商數：/p1 
+\t 找到的目錄數：/p2 
+\t 創建的目錄數：/p3 
+\t 更新的目錄數：/p4 
+\t 找到的 D5 設備數：/p5 
+\t 現有的 V5 產品數：/p6 
+\t 創建的 V5 產品數：/p7 
+\t 更新的 V5 產品數：/p8 \n";
+
+
+LongHelpId="\
+\t-h                ：顯示簡短幫助
+\t-help            ：顯示詳細幫助
+\t-p                ：D5 設備根庫的路徑。
+\t                    默認情況下是當前目錄。
+\t-t                ：V5 目錄和產品的目標路徑。
+\t                    默認情況下，與 D5 設備根庫的路徑相同。
+\t  警告：不要使用此選項，除非您想要創建
+\t            V5 目錄和 V5 CATProduct 文檔的單獨副本。將不會復制 D5 數據。
+\t            它意味著 V5 CATProduct 文檔仍參考 D5 數據。
+\t-manuf            ：按制造商（或類別）生成/更新。
+\t                    提供要將其 D5 設備轉換的制造商（類別）的名稱。
+\t-lmanuf           ：提供包含將轉換其 D5 設備的制造商（類別）列表
+\t                    的文本文件路徑。
+\t-updateproducts   ：從 D5 設備更新現有的 V5 CATProduct 文檔。                                   \t                    默認情況下，不會更新現有的 V5 CATProduct 文檔。
+\t-rootcatalog      ：創建/更新收集所有子目錄的根目錄。
+\t                    該參數用于定義根目錄的名稱
+\t                    默認情況下，它被設置為 D5 根庫目錄的名稱。
+\t-file             ：創建/更新與文件名關聯的 V5 CATProduct 和 CGR。
+\t                    用于將單個 D5 文件帶入 V5 目錄的選項。
+\t-lfile             ：文本文件。創建/更新與 D5 設備文件關聯的 V5 CATProduct 和 CGR。
+\t                    用于將多個 D5 文件帶入 V5 目錄的選項。
+\t-newcatalog       ：破壞先前的目錄以生成新目錄。n\
+\t-debug            ：查看所有軌跡。n\
+\t\n
+\t 警告：所有路徑都是絕對路徑：沒有相對路徑。
+\t
+\t 要使用批處理，您需要初始化 mkmk 刀具環境。
+\t 完成后，請在命令行管理程序中鍵入以下命令：
+\t\tNT (DOS) ：  mkrun -c cmd    
+\t\tUNIX     ：  mkrun -c ksh    
+\t
+\t  示例： 
+\t\n
+\t\t 1 - 從位于 D:Robotlib 上的 D5 庫創建 V5 目錄，例如：
+\t\t      -> DNBGenerCatalog -p D:\Robotlib 
+\t\t    該程序將為整個庫創建所有 V5 目錄。如果想指定要創建哪些 V5 目錄，\t\t請使用選項 -manuf（僅創建一個目錄）或 -lmanuf <文本文件的路徑>。文本文件\t\t（例如 D:\MyTextFile.txt）包含以下行：
+\t\t\t\tCOMAU       
+\t\t\t\tMOTOMAN     
+\t\t\t\tFANUC       
+\t\t  執行此操作后，將會創建 COMAU.catalog、MOTOMAN.catalog 和 FANUC.catalog。
+\t\t\n
+\t\t 2 - 從 D5 庫更新/重新生成 V5 目錄。           \t\t      -> DNBGenerCatalog -p D:\Robotlib 
+\t\t    此命令與 1 中的相同。 程序將檢查 V5 目錄是否存在并在必要時創建 
+\t\t 它們。它還會從 D5 設備中創建尚不存在的任意 V5 產品。但是，對于 
+\t\t 現有的 CATProduct 文檔，除非在選項 -updateproducts 中提及， 
+\t\t 否則將不會進行更新。執行該操作后，將更新所有的現有 V5 CATProduct 文檔。\n
+\t\t\t 警告：    如果現有 V5 產品曾用于不同發行級別的其他文檔中，
+\t\t                則對它們的更新將導致其無法使用！！！
+\t\t\n
+\t\t 3 - 在 V5 目錄中添加 D5 設備：
+\t\t      -> DELMIACreateCatalog -p D:\Robotlib -file D:\Robotlib\DEVICES\SAMPLES\DELMIARobot
+\t\t    該程序將基于 D:\Robotlib\DEVICES\SAMPLES\DELMIARobot 設備文件 
+\t\t 更新/創建 V5 CATProduct （如不存在）并將其插入相應的目錄。
+\t\t\n
+\t\t 4 - 在 V5 目錄中添加多個 D5 設備：
+\t\t      -> DELMIACreateCatalog -p D:\Robotlib -lfile D:\MyFile.txt
+\t\t    該程序將會從 D:\MyFile.txt 中的 D5 設備路徑中創建 V5 CATProduct 文檔（如不存在）。
+\t\t 內容文本文件如下所示：
+\t\t\t -> 設備文件的完整路徑：
+\t\t\t 示例： 
+\t\t\t\tD:\Robotlib\DEVICES\ABB\IRB_1400
+\t\t\t\tD:\Robotlib\DEVICES\MOTOMAN\ERC\K100S
+\t\t\t\tD:\Robotlib\DEVICES\NACHI\AW\SF133
+\t\t\t -> 主設備目錄的相對路徑（如 D:\Robotlib\DEVICES）
+\t\t\t 示例： 
+\t\t\t\tABB\IRB_1400
+\t\t\t\tMOTOMAN\ERC\K100S
+\t\t\t\tNACHI\AW\SF133
+\n\n\t有關更多信息，請與我們聯系，網址為：www.delmia.com。";
+
+
+ShortHelpId="DELMIACreateCatalog -p <D5 庫的路徑> [-t <目標路徑>] [-h|-help] \
+[-manuf <制造商名稱>|-lmanuf <文本文件中的制造商列表>] [-file <文件完整路徑> | -lfile <文本文件中的路徑列表>] [-newcatalog] [-updateproducts] [-rootcatalog <根目錄名稱>] [-debug]";
+

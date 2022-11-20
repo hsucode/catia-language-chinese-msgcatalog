@@ -1,0 +1,1068 @@
+WallThicknessAnalysisTitle="墻體厚度分析";
+APPLYTitle="運行";
+
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化/    New UI R19GA   // 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化
+
+FrmRoot.FrmMain.TabContainer.PageInputs.Title="輸入";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmOptions.LabBody.Title="選擇：";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmOptions.LabBody.Help="選擇要分析的幾何體或包絡體特征";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmOptions.LabBody.LongHelp="在幾何區域
+或結構樹中選擇感興趣的幾何體或包絡體特征";
+
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmOptions.BodySelector.Help="選擇要分析的幾何體或包絡體特征";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmOptions.BodySelector.LongHelp="在幾何區域或結構樹中選擇感興趣的幾何體或包絡體特征";
+
+
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmOptions.LabType.Title="類型：";
+
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmOptions.LabMode.Title="方法：";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmOptions.LabMode.Help="選擇分析計算方法：球面或射線";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmOptions.LabMode.LongHelp="可以選擇任一分析方法：
+
+- 球面：將給定點處零件的厚度定義為
+該點零件可包含的最大球面的
+直徑。
+
+- 射線：將給定點處零件的厚度定義為
+以給定點為起點，垂直于實體邊界
+并指向材料內部的
+射線的長度。";
+
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmOptions.ModeCombo.Help="選擇分析計算方法：球面或射線";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmOptions.ModeCombo.LongHelp="可以選擇任一分析方法：
+
+- 球面：將給定點處零件的厚度定義為
+該點零件可包含的最大球面的
+直徑。
+
+- 射線：將給定點處零件的厚度定義為
+以給定點為起點，垂直于實體邊界
+并指向材料內部的
+射線的長度。";
+
+Mode1a="圓";
+Mode1b="球面";
+Mode2="射線";
+
+FrmRoot.FrmMain.TabContainer.PageSections.Title="截面";
+
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.Title="截面列表";
+
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.pSectionsList.Title="截面列表";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.pSectionsList.ShortHelp="截面列表";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.pSectionsList.Help="儲存截面的列表";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.pSectionsList.LongHelp="儲存截面的列表：
+單擊截面進行可視化（必須選中截面分割）。
+雙擊某個截面，對其進行編輯。";
+
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushAddSection.Title="添加截面";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushAddSection.ShortHelp="添加截面";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushAddSection.Help="向列表添加截面";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushAddSection.LongHelp="將當前的 3D 截面添加到儲存截面的列表中。
+必須選中截面分割。";
+
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushRemoveSection.Title="移除截面";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushRemoveSection.ShortHelp="移除截面";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushRemoveSection.Help="從列表中移除選定截面";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushRemoveSection.LongHelp="從儲存截面的列表中移除當前選定的截面。";
+
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushReframeSection.Title="使截面居中";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushReframeSection.ShortHelp="使截面居中";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushReframeSection.Help="重新構造與選定截面垂直的視圖";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushReframeSection.LongHelp="設置與選定截面垂直的視點。";
+
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushSeeAllSections.Title="顯示可拾取的截面";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushSeeAllSections.ShortHelp="顯示可拾取的截面";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushSeeAllSections.Help="永久顯示界面并使其可拾取（僅當選定“選擇”選項卡后）";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectionsList.FrmSections.pPushSeeAllSections.LongHelp="永久顯示 3D 截面并使其可拾取。 
+若未選中此選項，則會動態檢測到截面且截面不可拾取。
+
+僅當選定“選擇”選項卡時，這兩個操作才有效。";
+
+SectionsColumnSeverity="嚴重性";
+SectionsColumnName="名稱";
+SectionsColumnStatus="狀態";
+SectionsColumnMode="模式";
+SectionsColumnThickness="厚度";
+
+ToBeReviewed="待審查";
+Refused="已拒絕";
+Validated="已驗證";
+None="無";
+Unresolved="未解析";
+
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmOptions.LabDirection.Title="方向：";
+NoSelectionText1="曲面的法線";
+NoSelectionText2="曲線的法線";
+
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmOptions.Title="輸入";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.Title="精度";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.Title="選項";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Title="焦點";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmSectioning.Title="動態切割";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmSectioning.SectionCut.ShortHelp="截面分割";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmSectioning.SectionCut.Help="按截面剪切零件";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmSectioning.SectionCut.LongHelp="選中此選項可創建剪切零件的可操作 3D 截面。
+激活“透明度”或取消選中“填充截面分割”可查看零件內部和通過零件查看";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmSectioning.ChkSection.Title="填充截面分割";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmSectioning.ChkSection.Help="填充零件截面";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmSectioning.ChkSection.LongHelp="通過該選項可查看零件截面或零件內部。
+該選項僅當取消選擇“透明度”時有效。";
+
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectioning.Title="動態切割";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectioning.SectionCut.ShortHelp="截面分割";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectioning.SectionCut.Help="按截面剪切零件";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectioning.SectionCut.LongHelp="選中此選項可創建剪切零件的可操作 3D 截面。
+激活“透明度”或取消選中“填充截面分割”可查看零件內部和通過零件查看";
+
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectioning.ChkSection.Title="填充截面分割";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectioning.ChkSection.Help="填充零件截面";
+FrmRoot.FrmMain.TabContainer.PageSections.FrmSectioning.ChkSection.LongHelp="通過該選項可查看零件截面或零件內部。
+該選項僅當取消選擇“透明度”時有效。";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmThicknessDisplay.Title="厚度顯示";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmThicknessDisplay.AccurateOnTheFly.Title="離散";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmThicknessDisplay.AccurateOnTheFly.ShortHelp="動態離散";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmThicknessDisplay.AccurateOnTheFly.Help="實施動態離散并將其限制為計算值";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmThicknessDisplay.AccurateOnTheFly.LongHelp="光標捕捉至網格頂點：僅提供計算值，
+并未實施內插操作。";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmThicknessDisplay.SmoothOnTheFly.Title="光順";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmThicknessDisplay.SmoothOnTheFly.ShortHelp="動態光順";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmThicknessDisplay.SmoothOnTheFly.Help="實施動態光順并進行內插";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmThicknessDisplay.SmoothOnTheFly.LongHelp="無論光標的位置如何，都將顯示內插值。
+而插值可能會導致數據不準確。";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmResetPreferences.Title="首選項";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmResetPreferences.PushResetPreferences.Title="重置可視屬性";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmResetPreferences.PushResetPreferences.ShortHelp="重置可視屬性";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmResetPreferences.PushResetPreferences.Help="重置可視屬性和關聯的首選項";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmResetPreferences.PushResetPreferences.LongHelp="重新初始化所有可視屬性并覆蓋 
+相關參數的首選項";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Quick_thin.Title="薄區域";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Quick_thin.ShortHelp="薄區域";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Quick_thin.Help="僅顯示薄區域";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Quick_thin.LongHelp="單擊該按鈕可限制為在第一色標范圍內，
+僅顯示最大閾值
+（在右側值字段中自動或手動定義）。
+因此，我們僅顯示一些顏色的最薄厚度。
+
+不能同時使用這兩個選項（薄區域和厚區域）。";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Quick_thick.Title="厚區域";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Quick_thick.ShortHelp="厚區域";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Quick_thick.Help="僅顯示厚區域";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Quick_thick.LongHelp="單擊該按鈕可限制為在最后的色標范圍內，
+僅顯示最大閾值
+（在右側值字段中自動或手動定義）。
+因此，我們僅顯示一些顏色的最厚厚度。
+
+不能同時使用這兩個選項（薄區域和厚區域）。";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Auto_min.Title="<";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Auto_min.Help="設置最小閾值，使其可編輯或通過系統進行計算";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Auto_min.ShortHelp="手動/自動編輯閾值";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Auto_min.LongHelp="選中該復選框后，可編輯最小閾值。 
+若取消選擇該復選框，則系統將計算該值。";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Auto_max.Title=">";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Auto_max.ShortHelp="手動/自動編輯閾值";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Auto_max.Help="設置最大閾值，使其可編輯或通過系統進行計算";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.Auto_max.LongHelp="選中該復選框后，可編輯最大閾值。 
+若取消選擇該復選框，則系統將計算閾值。";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.QDMin.EnglobingFrame.IntermediateFrame.Spinner.Title="最小值";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.QDMin.EnglobingFrame.IntermediateFrame.Spinner.Help="最小閾值";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.QDMin.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="設置“薄區域”模式的最小閾值。
+（更多信息，請參閱“薄區域”詳細幫助）";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.QDMax.EnglobingFrame.IntermediateFrame.Spinner.Title="最大值";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.QDMax.EnglobingFrame.IntermediateFrame.Spinner.Help="最大閾值";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmQuickDisplay.QDMax.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="設置“厚區域”模式的最大閾值。
+（更多信息，請參閱“厚區域”詳細幫助）";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.Title="圖形";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.NSE.EnglobingFrame.IntermediateFrame.Spinner.Title="沒有銳邊值";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.NSE.EnglobingFrame.IntermediateFrame.Spinner.Help="沒有銳邊值";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.NSE.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="如果某區域靠近一條邊線且厚度小于該值， 
+則該區域將被忽略并以灰色顯示（僅當選中“沒有銳邊”時）。";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.ChkNoSharpEdge.Title="沒有銳邊";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.ChkNoSharpEdge.Help="忽略沿銳邊的區域";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.ChkNoSharpEdge.LongHelp="選擇“球面”計算方法后，“沒有銳邊”可用。
+
+“沒有銳邊”可過濾出靠近邊線且 
+厚度小于相應值字段中設置值的區域。";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.ChkAutoQuickNoSharpEdge.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.ChkAutoQuickNoSharpEdge.Help="設置“沒有銳邊”的值，使其可編輯或通過系統進行計算（僅在“焦點”模式下）";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.ChkAutoQuickNoSharpEdge.ShortHelp="手動/自動編輯“沒有銳邊”值（僅在“焦點”模式下）";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.ChkAutoQuickNoSharpEdge.LongHelp="選中該復選框后，可在“焦點”模式下手動/自動編輯“沒有銳邊”值。 
+若取消選擇該復選框，則系統將計算該值。";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmThicknessDisplay.ChkFly.Title="運行中";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmThicknessDisplay.ChkFly.Help="顯示光標下的厚度";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmThicknessDisplay.ChkFly.LongHelp="將以毫米為單位顯示零件上
+光標所在位置的厚度值。";
+
+DisplayRayIndicatorTitle="顯示射線";
+DisplaySphereIndicatorTitle="顯示球面";
+DisplaySphereIndicatorHelp="顯示光標下的球面";
+DisplayRayIndicatorHelp="顯示光標下的射線";
+DisplaySphereIndicatorLongHelp="選擇該選項后， 
+可顯示光標下 
+零件內可包含的最大球面。";
+DisplayRayIndicatorLongHelp="選擇該選項后，可顯示光標下零件可包含的 
+垂直于曲面的最長射線。";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.ChkTransparence.Title="透明度";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.ChkTransparence.Help="啟用透明度";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.ChkTransparence.LongHelp="該選項可用于使分析可視結果透明。
+還可以檢測零件內隱藏的厚度。
+可通過相應的滑塊設置零件的透明度。";
+
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.OpacSlider.Help="逐步設置透明度";
+FrmRoot.FrmMain.TabContainer.PageOptions.FrmResults.FrmVisuOptions.OpacSlider.LongHelp="選擇“透明度”后，
+可通過該滑塊設置透明度。";
+
+FrmRoot.FrmMain.TabContainer.PageColors.Title="顏色";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorOpt.ChkAutoscale.Title="自動縮放";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorOpt.ChkAutoscale.Help="自動縮放范圍值";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorOpt.ChkAutoscale.LongHelp="“自動縮放”可提供動態范圍縮放。
+若選擇該選擇，則范圍值字段不可編輯。
+
+若要手動設置范圍值，則取消選擇“自動縮放”即可。";
+
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.SagLabel.Title="弦高：";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.SagLabel.Help="弦高：曲線上的網格公差";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.SagLabel.LongHelp="弦高：與網格元素的最大大小
+之間的最大距離
+相對應的網格參數。
+
+增加或減少弦高值可以更改
+三角形到曲面的距離。
+若弦高值太小，則生成的三角形靠近曲面，
+網格錯誤隨之減少，但曲線曲面上的三角形
+數目會增加。
+這會提高厚度值的準確性， 
+但同時延長了計算時間。";
+
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.Sag.EnglobingFrame.IntermediateFrame.Spinner.Title="弦高";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.Sag.EnglobingFrame.IntermediateFrame.Spinner.Help="弦高：曲線上的網格公差";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.Sag.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="弦高：與網格及其相鄰真實幾何圖形之間的 
+最大距離相對應的網格參數。
+
+增加或減少弦高值可以更改
+三角形到曲面的距離。
+若弦高值太小，則生成的三角形靠近曲面，
+網格錯誤隨之減少，但曲線曲面上的三角形
+數目會增加。
+這會提高厚度值的準確性， 
+但同時延長了計算時間。";
+
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.StepLabel.Title="步幅：";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.StepLabel.Help="步幅：網格元素大小";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.StepLabel.LongHelp="步幅：與網格元素的最大大小
+相對應的網格參數。
+
+增加或減少步幅值可以更改三角形的大小。
+步幅值越小，三角形越小。 
+因此，增加三角形和頂點的數目
+可以提高厚度分析的準確性，但同時也會延長分析時間。";
+
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.Step.EnglobingFrame.IntermediateFrame.Spinner.Title="步幅";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.Step.EnglobingFrame.IntermediateFrame.Spinner.Help="步幅：網格元素大小";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.Step.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="步幅：與網格元素的最大大小
+相對應的網格參數。
+
+增加或減少步幅值可以更改三角形的大小。
+步幅值越小，三角形越小。 
+因此，增加三角形和頂點的數目
+可以提高厚度分析的準確性，但同時也會延長分析時間。";
+
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.TolLabel.Title="公差：";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.TolLabel.Help="輸入計算厚度的期望公差";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.TolLabel.LongHelp="分析產生的計算厚度
+應在特定的公差值范圍之內。
+
+例如：若將某點下的公差設置為 0.1mm， 
+將分析計算值設置為 8mm，則 
+準確的厚度值應在 7.9mm 和 8.1mm 之間。
+
+但是，需要注意的是計算厚度的公差值只是
+幫助設置網格參數，而不能確保設置的準確性。";
+
+
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.Tolerance.EnglobingFrame.IntermediateFrame.Spinner.Title="公差";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.Tolerance.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入計算厚度的期望公差";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.Tolerance.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="分析產生的計算厚度
+應在特定的公差值范圍之內。
+
+例如：若將某點下的公差設置為 0.1mm， 
+將分析計算值設置為 8mm，則 
+準確的厚度值應在 7.9mm 和 8.1mm 之間。
+
+但是，需要注意的是計算厚度的公差值只是
+幫助設置網格參數，而不能確保設置的準確性。";
+
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.StdRadioBtn.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.StdRadioBtn.ShortHelp="標準模式";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.StdRadioBtn.Help="標準模式";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.StdRadioBtn.LongHelp="將公差保留為定義期望計算精度的參數。
+弦高和步幅參數都是自動設置的。";
+
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.AdvRadioBtn.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.AdvRadioBtn.ShortHelp="高級模式";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.AdvRadioBtn.Help="高級模式";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.FrmAccOptions.AdvRadioBtn.LongHelp="直接設置網格參數（弦高和步幅）， 
+以定義分析精度。";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.LabNbValue.Title="編號：";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.LabNbValue.Help="值編號";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.LabNbValue.LongHelp="可以設置值的編號，以定義色標（從 2 到 10）。
+假設有 n 個值，則有 n+1 個范圍。";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.NbValues.EnglobingFrame.IntermediateFrame.Spinner.Title="Nb 值";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.NbValues.EnglobingFrame.IntermediateFrame.Spinner.Help="值編號";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.NbValues.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可以設置值的編號，以定義色標（從 2 到 10）。
+假設有 n 個值，則有 n+1 個范圍。";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay1.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay1.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay1.Help="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay1.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay2.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay2.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay2.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay2.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay3.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay3.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay3.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay3.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay4.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay4.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay4.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay4.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay5.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay5.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay5.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay5.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay6.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay6.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay6.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay6.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay7.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay7.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay7.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay7.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay8.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay8.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay8.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay8.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay9.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay9.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay9.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay9.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay10.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay10.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay10.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay10.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay11.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay11.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay11.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay11.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay12.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay12.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay12.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay12.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay13.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay13.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay13.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay13.Help="顯示/隱藏 3D 范圍";
+
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay14.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay14.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay14.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay14.Help="顯示/隱藏 3D 范圍";
+
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay15.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay15.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay15.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay15.Help="顯示/隱藏 3D 范圍";
+
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay16.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay16.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay16.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay16.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay17.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay17.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay17.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay17.Help="顯示/隱藏 3D 范圍";
+
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay18.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay18.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay18.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay18.Help="顯示/隱藏 3D 范圍";
+
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay19.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay19.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay19.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay19.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay20.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay20.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay20.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay20.Help="顯示/隱藏 3D 范圍";
+
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay21.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay21.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay21.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay21.Help="顯示/隱藏 3D 范圍";
+
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay22.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay22.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay22.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay22.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay23.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay23.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay23.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay23.Help="顯示/隱藏 3D 范圍";
+
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay24.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay24.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay24.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay24.Help="顯示/隱藏 3D 范圍";
+
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay25.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay25.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay25.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay25.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay26.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay26.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay26.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay26.Help="顯示/隱藏 3D 范圍";
+
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay27.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay27.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay27.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay27.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay28.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay28.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay28.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay28.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay29.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay29.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay29.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay29.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay30.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay30.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay30.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay30.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay31.Title=" ";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay31.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay31.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.ChkDisplay31.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value1.EnglobingFrame.IntermediateFrame.Spinner.Title="值 1";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value1.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value1.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中設置范圍值";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value2.EnglobingFrame.IntermediateFrame.Spinner.Title="值 2";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value2.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value3.EnglobingFrame.IntermediateFrame.Spinner.Title="值 3";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value3.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value3.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value4.EnglobingFrame.IntermediateFrame.Spinner.Title="值 4";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value4.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value4.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value5.EnglobingFrame.IntermediateFrame.Spinner.Title="值 5";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value5.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value5.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value6.EnglobingFrame.IntermediateFrame.Spinner.Title="值 6";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value6.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value6.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value7.EnglobingFrame.IntermediateFrame.Spinner.Title="值 7";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value7.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value7.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value8.EnglobingFrame.IntermediateFrame.Spinner.Title="值 8";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value8.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value8.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value9.EnglobingFrame.IntermediateFrame.Spinner.Title="值 9";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value9.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value9.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value10.EnglobingFrame.IntermediateFrame.Spinner.Title="值 10";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value10.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.Value10.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.FrmContainer.Container.PageOptions.ChkMinMax.Title="最小和最大";
+MinMax2D="2D 最小和最大";
+MinMax3D="3D 最小和最大";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.LabMinValueResult.Title="最小值：";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.LabMinValueResult.Help="最小計算厚度";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.LabMinValueResult.LongHelp="指零件分析計算出的最小厚度。";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.MinValueResult.EnglobingFrame.IntermediateFrame.Value.Help="最小計算厚度";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.MinValueResult.EnglobingFrame.IntermediateFrame.Value.LongHelp="指零件分析計算出的最小厚度。";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.MaxValueResult.EnglobingFrame.IntermediateFrame.Value.Help="最大計算厚度";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.MaxValueResult.EnglobingFrame.IntermediateFrame.Value.LongHelp="指零件分析計算出的最大厚度。";
+
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.LabMaxValueResult.Title="最大值：";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.LabMaxValueResult.Help="最大計算厚度";
+FrmRoot.FrmMain.TabContainer.PageColors.FrmColors.FrmColorRanges.LabMaxValueResult.LongHelp="指零件分析計算出的最大厚度。";
+
+
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化/    Old UI R18LA   // 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化
+
+// 3951 校正官方漢化 XEN 01/04/2008
+// 3951 校正官方漢化 OBSOLETE - DO NOT TRANLATE EVERYTHING BELOW // 3951 校正官方漢化
+
+FrmRoot.FrmMain.FrmInputs.Title="分析";
+
+FrmRoot.FrmMain.FrmInputs.FrmOptions.LabBody.Title="選擇：";
+FrmRoot.FrmMain.FrmInputs.FrmOptions.LabBody.Help="選擇要分析的幾何體";
+FrmRoot.FrmMain.FrmInputs.FrmOptions.LabBody.LongHelp="在幾何區域或
+選擇感興趣的幾何體或包括體特征。";
+
+FrmRoot.FrmMain.FrmInputs.FrmOptions.BodySelector.Help="選擇要分析的幾何體";
+FrmRoot.FrmMain.FrmInputs.FrmOptions.BodySelector.LongHelp="在幾何區域或
+選擇感興趣的幾何體或包括體特征。";
+
+
+FrmRoot.FrmMain.FrmInputs.FrmOptions.LabType.Title="類型：";
+
+FrmRoot.FrmMain.FrmInputs.FrmOptions.LabMode.Title="方法：";
+FrmRoot.FrmMain.FrmInputs.FrmOptions.LabMode.Help="選擇分析計算模式：球面或射線";
+FrmRoot.FrmMain.FrmInputs.FrmOptions.LabMode.LongHelp="可以選擇任一分析方法：
+
+- 球面：將給定點處零件的厚度定義為
+該點零件可包含的最大球面的
+直徑。
+
+- 射線：將給定點處零件的厚度定義為
+以給定點為起點，垂直于實體邊界
+并指向材料內部的
+射線的長度。";
+
+FrmRoot.FrmMain.FrmInputs.FrmOptions.ModeCombo.Help="選擇分析計算模式：球面或射線";
+FrmRoot.FrmMain.FrmInputs.FrmOptions.ModeCombo.LongHelp="可以選擇任一分析方法：
+
+- 球面：將給定點處零件的厚度定義為
+該點零件可包含的最大球面的
+直徑。
+
+- 射線：將給定點處零件的厚度定義為
+以給定點為起點，垂直于實體邊界
+并指向材料內部的
+射線的長度。";
+
+Mode1a="圓";
+Mode1b="球面";
+Mode2="射線";
+
+FrmRoot.FrmMain.FrmInputs.FrmOptions.LabDirection.Title="方向：";
+NoSelectionText1="曲面的法線";
+NoSelectionText2="曲線的法線";
+
+FrmRoot.FrmMain.FrmInputs.FrmOptions.Title="輸入";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.Title="精度";
+
+FrmRoot.FrmMain.FrmResults.Title="設置";
+
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.Title="焦點";
+
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.SectionCut.ShortHelp="截面分割";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.SectionCut.Help="按截面剪切零件";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.SectionCut.LongHelp="選中此選項可創建剪切零件的可操作 3D 截面。
+選擇“透明度”或取消選中填充框可查看零件內部和通過零件查看";
+
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.Quick_thin.Title="薄區域";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.Quick_thin.Help="僅顯示薄區域";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.Quick_thin.LongHelp="單擊該按鈕可限制為在第一色標范圍內，
+僅顯示最大閾值
+（在右側值字段中自動或手動定義）。
+因此，我們僅顯示一些顏色的最薄厚度。
+
+不能同時使用這兩個選項（薄區域和厚區域）。";
+
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.Quick_thick.Title="厚區域";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.Quick_thick.Help="僅顯示厚區域";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.Quick_thick.LongHelp="單擊該按鈕可限制為在最后的色標范圍內，
+僅顯示最大閾值
+（在右側值字段中自動或手動定義）。
+因此，我們僅顯示一些顏色的最厚厚度。
+
+不能同時使用這兩個選項（薄區域和厚區域）。";
+
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.Auto_min.Title="<";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.Auto_min.Help="設置最小閾值，使其可編輯或通過系統進行計算";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.Auto_min.ShortHelp="手動/自動編輯閾值";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.Auto_min.LongHelp="選中該復選框后，可編輯最小閾值。 
+若取消選擇該復選框，則系統將計算該值。";
+
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.Auto_max.Title=">";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.Auto_max.ShortHelp="手動/自動編輯閾值";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.Auto_max.Help="設置最大閾值，使其可編輯或通過系統進行計算";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.Auto_max.LongHelp="選中該復選框后，可編輯最大閾值。 
+若取消選擇該復選框，則系統將計算閾值。";
+
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.QDMin.EnglobingFrame.IntermediateFrame.Spinner.Title="最小值";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.QDMin.EnglobingFrame.IntermediateFrame.Spinner.Help="最小閾值";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.QDMin.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="設置“薄區域”模式的最小閾值。
+（更多信息，請參閱“薄區域”詳細幫助）";
+
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.QDMax.EnglobingFrame.IntermediateFrame.Spinner.Title="最大值";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.QDMax.EnglobingFrame.IntermediateFrame.Spinner.Help="最大閾值";
+FrmRoot.FrmMain.FrmResults.FrmQuickDisplay.QDMax.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="設置“厚區域”模式的最大閾值。
+（更多信息，請參閱“厚區域”詳細幫助）";
+
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.Title="圖形";
+
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.NSE.EnglobingFrame.IntermediateFrame.Spinner.Title="沒有銳邊值";
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.NSE.EnglobingFrame.IntermediateFrame.Spinner.Help="沒有銳邊值";
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.NSE.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="如果某區域靠近一條邊線且厚度小于該值，
+則該區域將被忽略并以灰色顯示
+（僅當選中“沒有銳邊”時）。";
+
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkNoSharpEdge.Title="沒有銳邊";
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkNoSharpEdge.Help="忽略沿銳邊的區域";
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkNoSharpEdge.LongHelp="選擇“球面”計算方法后，“沒有銳邊”可用。
+
+“沒有銳邊”可過濾出靠近邊線且 
+厚度小于相應值字段中設置值的區域。";
+
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkAutoQuickNoSharpEdge.Title=" ";
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkAutoQuickNoSharpEdge.Help="設置“沒有銳邊”的值，使其可編輯或通過系統進行計算（僅在“焦點”模式下）";
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkAutoQuickNoSharpEdge.ShortHelp="手動/自動編輯“沒有銳邊”值（僅在“焦點”模式下）";
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkAutoQuickNoSharpEdge.LongHelp="選中該復選框后，可在“焦點”模式下手動/自動編輯“沒有銳邊”值。 
+若取消選擇該復選框，則系統將計算該值。";
+
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkFly.Title="運行中";
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkFly.Help="顯示光標下的厚度";
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkFly.LongHelp="將以毫米為單位顯示零件上
+光標所在位置的厚度值。";
+
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkSection.Title="填充截面分割";
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkSection.Help="填充零件截面";
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkSection.LongHelp="通過該選項可查看零件截面或零件內部。
+該選項僅當取消選擇“透明度”時有效。";
+
+
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkTransparence.Title="透明度";
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkTransparence.Help="啟用透明度";
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.ChkTransparence.LongHelp="該選項可用于使分析可視結果透明。
+同時，它還可用于檢測零件內隱藏的厚度，
+以及那些被已分析零件的外部遮擋
+而無法檢測到的部分。
+可通過相應的滑塊設置零件的透明度。";
+
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.OpacSlider.Help="設置不透明性";
+FrmRoot.FrmMain.FrmResults.FrmVisuOptions.OpacSlider.LongHelp="若選擇了“透明度”，
+則可使用該滑塊設置不透明度：
+
+- 向左：透明度變小
+
+- 向右：透明度變大";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.Title="顏色";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorOpt.ChkAutoscale.Title="自動縮放";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorOpt.ChkAutoscale.Help="自動縮放范圍值";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorOpt.ChkAutoscale.LongHelp="“自動縮放”提供了不同值的動態范圍縮放。
+若選擇了該選項，
+則無法手動定義不同的值。 
+默認情況下，已選擇“自動縮放”。
+如果希望定義不同的厚度值，只需取消選擇該選項
+即可。取消選擇該選項，即可使值字段可編輯。";
+
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.SagLabel.Title="弦高：";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.SagLabel.Help="弦高：曲線上的網格公差";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.SagLabel.LongHelp="弦高：與網格及其相鄰真實幾何圖形之間的 
+最大距離相對應的網格參數。
+
+增加或減少弦高值可以更改
+三角形到曲面的距離。
+若弦高值太小，則生成的三角形靠近曲面，
+網格錯誤隨之減少，但曲線曲面上的三角形
+數目會增加。
+這會提高厚度值的準確性， 
+但同時延長了計算時間。";
+
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.Sag.EnglobingFrame.IntermediateFrame.Spinner.Title="弦高";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.Sag.EnglobingFrame.IntermediateFrame.Spinner.Help="弦高：曲線上的網格公差";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.Sag.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="弦高：與網格元素的最大大小
+之間的最大距離
+相對應的網格參數。
+
+增加或減少弦高值可以更改
+三角形到曲面的距離。
+若弦高值太小，則生成的三角形靠近曲面，
+網格錯誤隨之減少，但曲線曲面上的三角形
+數目會增加。
+這會提高厚度值的準確性， 
+但同時延長了計算時間。";
+
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.StepLabel.Title="步幅：";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.StepLabel.Help="步幅：網格元素大小";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.StepLabel.LongHelp="步幅：與網格元素的最大大小
+相對應的網格參數。
+
+增加或減少步幅值可以更改三角形的大小。
+步幅值越小，三角形越小。 
+因此，增加三角形和頂點的數目
+可以提高厚度分析的準確性，但同時也會延長分析時間。";
+
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.Step.EnglobingFrame.IntermediateFrame.Spinner.Title="步幅";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.Step.EnglobingFrame.IntermediateFrame.Spinner.Help="步幅：網格元素大小";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.Step.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="步幅：與網格元素的最大大小
+相對應的網格參數。
+
+增加或減少步幅值可以更改三角形的大小。
+步幅值越小，三角形越小。 
+因此，增加三角形和頂點的數目
+可以提高厚度分析的準確性，但同時也會延長分析時間。";
+
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.TolLabel.Title="公差：";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.TolLabel.Help="輸入計算厚度的期望公差";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.TolLabel.LongHelp="分析產生的計算厚度
+應在特定的公差值范圍之內。
+
+例如：若將某點下的公差設置為 0.1mm， 
+將分析計算值設置為 8mm，則 
+準確的厚度值應在 7.9mm 和 8.1mm 之間。
+
+但是，需要注意的是計算厚度的公差值只是
+幫助設置網格參數，而不能確保設置的準確性。";
+
+
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.Tolerance.EnglobingFrame.IntermediateFrame.Spinner.Title="公差";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.Tolerance.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入計算厚度的期望公差";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.Tolerance.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="分析產生的計算厚度
+應在特定的公差值范圍之內。
+
+例如：若將某點下的公差設置為 0.1mm， 
+將分析計算值設置為 8mm，則 
+準確的厚度值應在 7.9mm 和 8.1mm 之間。
+
+但是，需要注意的是計算厚度的公差值只是
+幫助設置網格參數，而不能確保設置的準確性。";
+
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.StdRadioBtn.Title=" ";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.StdRadioBtn.ShortHelp="標準";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.StdRadioBtn.Help="標準";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.StdRadioBtn.LongHelp="將公差保留為定義期望計算精度的參數。
+
+弦高和步幅參數都是自動設置的";
+
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.AdvRadioBtn.Title=" ";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.AdvRadioBtn.ShortHelp="高級";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.AdvRadioBtn.Help="高級";
+FrmRoot.FrmMain.FrmInputs.FrmAccOptions.AdvRadioBtn.LongHelp="直接設置網格參數（弦高和步幅）， 
+以定義分析精度";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.LabNbValue.Title="值編號：";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.LabNbValue.Help="值編號：";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.LabNbValue.LongHelp="可以設置值的編號，以定義色標（從 2 到 10）。
+假設有 n 個值，則有 n+1 個范圍。";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.NbValues.EnglobingFrame.IntermediateFrame.Spinner.Title="Nb 值";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.NbValues.EnglobingFrame.IntermediateFrame.Spinner.Help="值編號：";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.NbValues.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可以設置值的編號，以定義色標（從 2 到 10）。
+假設有 n 個值，則有 n+1 個范圍。";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay1.Title=" ";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay1.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay1.Help="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay1.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay2.Title=" ";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay2.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay2.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay2.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay3.Title=" ";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay3.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay3.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay3.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay4.Title=" ";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay4.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay4.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay4.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay5.Title=" ";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay5.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay5.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay5.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay6.Title=" ";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay6.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay6.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay6.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay7.Title=" ";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay7.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay7.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay7.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay8.Title=" ";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay8.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay8.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay8.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay9.Title=" ";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay9.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay9.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay9.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay10.Title=" ";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay10.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay10.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay10.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay11.Title=" ";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay11.ShortHelp="顯示/隱藏 3D 范圍";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay11.LongHelp="如果僅需要部分厚度，
+因此要忽略零件的部分區域， 
+那么只需取消選擇不希望在零件上顯示的顏色即可。
+系統會隨之更新顯示。";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.ChkDisplay11.Help="顯示/隱藏 3D 范圍";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value1.EnglobingFrame.IntermediateFrame.Spinner.Title="值 1";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value1.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value1.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value2.EnglobingFrame.IntermediateFrame.Spinner.Title="值 2";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value2.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value2.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value3.EnglobingFrame.IntermediateFrame.Spinner.Title="值 3";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value3.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value3.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value4.EnglobingFrame.IntermediateFrame.Spinner.Title="值 4";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value4.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value4.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value5.EnglobingFrame.IntermediateFrame.Spinner.Title="值 5";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value5.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value5.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value6.EnglobingFrame.IntermediateFrame.Spinner.Title="值 6";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value6.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value6.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value7.EnglobingFrame.IntermediateFrame.Spinner.Title="值 7";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value7.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value7.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value8.EnglobingFrame.IntermediateFrame.Spinner.Title="值 8";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value8.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value8.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value9.EnglobingFrame.IntermediateFrame.Spinner.Title="值 9";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value9.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value9.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value10.EnglobingFrame.IntermediateFrame.Spinner.Title="值 10";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value10.EnglobingFrame.IntermediateFrame.Spinner.Help="輸入范圍值";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.Value10.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="可在該字段中編輯范圍值";
+
+FrmRoot.FrmMain.FrmContainer.Container.PageResults.ChkMinMax.Title="最小和最大";
+MinMax2D="2D 最小和最大";
+MinMax3D="3D 最小和最大";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.LabMinValueResult.Title="最小厚度：";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.LabMinValueResult.Help="最小計算厚度";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.LabMinValueResult.LongHelp="指零件分析計算出的最小厚度。";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.MinValueResult.EnglobingFrame.IntermediateFrame.Value.Help="最小計算厚度";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.MinValueResult.EnglobingFrame.IntermediateFrame.Value.LongHelp="指零件分析計算出的最小厚度。";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.MaxValueResult.EnglobingFrame.IntermediateFrame.Value.Help="最大計算厚度";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.MaxValueResult.EnglobingFrame.IntermediateFrame.Value.LongHelp="指零件分析計算出的最大厚度。";
+
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.LabMaxValueResult.Title="最大厚度：";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.LabMaxValueResult.Help="最大計算厚度";
+FrmRoot.FrmMain.FrmResults.FrmColors.FrmColorRanges.LabMaxValueResult.LongHelp="指零件分析計算出的最大厚度。";
+
+
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.InputThread.Title="外螺紋/內螺紋";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.InputThread.CheckThread.Title="包括外螺紋/內螺紋分析";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.InputThread.CheckThread.ShortHelp="考慮外螺紋/內螺紋";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.InputThread.CheckThread.Help="考慮外螺紋/內螺紋";
+FrmRoot.FrmMain.TabContainer.PageInputs.FrmInputs.InputThread.CheckThread.LongHelp="墻體厚度分析的計算過程中考慮外螺紋/內螺紋";
+

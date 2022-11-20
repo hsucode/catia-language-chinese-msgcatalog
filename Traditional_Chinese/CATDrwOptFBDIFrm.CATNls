@@ -1,0 +1,49 @@
+// 3951 校正官方漢化=====================================================================================
+// 3951 校正官方漢化                                     CNEXT - CXR206
+// 3951 校正官方漢化                          COPYRIGHT DASSAULT SYSTEMES 2008
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 FILENAME    :    CATDrwOptFBDI
+// 3951 校正官方漢化 LOCATION    :    DraftingSettings
+// 3951 校正官方漢化 AUTHOR      :    npq
+// 3951 校正官方漢化 BUT         :    
+// 3951 校正官方漢化 DATE        :    04.02.2008
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 DESCRIPTION :    Tools/Option for FBDI - Drafting
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 COMMENTS    :    
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 MODIFICATIONS     user  date        purpose
+// 3951 校正官方漢化    HISTORY        ----  ----        -------
+
+// 3951 校正官方漢化=====================================================================================
+
+Title="工程制圖";
+
+frameShowNOShow.HeaderFrame.Global.Title="工程圖視圖上的產品結構屬性映射";
+
+frameShowNOShow.IconAndOptionsFrame.OptionsFrame.chkMapShowNoShow.Title="顯示/不顯示";
+frameShowNOShow.IconAndOptionsFrame.OptionsFrame.chkMapShowNoShow.LongHelp="導入裝配件工程圖時，實例上不顯示的屬性會在工程圖視圖中被捕獲為“過載屬性”。";
+
+frameShowNOShow.IconAndOptionsFrame.OptionsFrame.chkMapNoCutInSectionViews.Title="請勿在剖視圖中切除";
+frameShowNOShow.IconAndOptionsFrame.OptionsFrame.chkMapNoCutInSectionViews.LongHelp="導入裝配件工程圖時，實例上未切除的屬性會在工程圖視圖中被捕獲為“過載屬性”。";
+
+frameShowNOShow.IconAndOptionsFrame.OptionsFrame.chkMapNoProjection.Title="請勿在投影時使用";
+frameShowNOShow.IconAndOptionsFrame.OptionsFrame.chkMapNoProjection.LongHelp="導入裝配件工程圖時，實例上未使用的屬性會在工程圖視圖中被捕獲為“過載屬性”。";
+
+frameShowNOShow.IconAndOptionsFrame.OptionsFrame.chkMapHiddenLines.Title="以隱藏線表示";
+frameShowNOShow.IconAndOptionsFrame.OptionsFrame.chkMapHiddenLines.LongHelp="導入裝配件工程圖時，實例上的隱藏線屬性會在工程圖視圖中被捕獲為“過載屬性”。";
+
+
+toImportBodies.HeaderFrame.Global.Title="導入鏈接到幾何體（包含在不同 CAT 零件文檔中）的視圖";
+toImportBodies.HeaderFrame.Global.LongHelp="導入視圖（使用激活的“在裝配件中選擇幾何體”選項創建并鏈接到產品的不同 CAT 零件文檔中的幾何體上）。";
+
+toImportBodies.IconAndOptionsFrame.OptionsFrame.chkImportMultiBodies.Title="自動創建新的產品參考來保持視圖關聯性";
+toImportBodies.IconAndOptionsFrame.OptionsFrame.chkImportMultiBodies.LongHelp="導入鏈接到幾何體（包含在不同 CAT 零件文檔中）的視圖時，
+會創建新的產品參考來在零件上啟用視圖的關聯性
+（如果沒有選擇此選項，視圖關聯性將被禁用）。";
+
+toDrawingAggregation.HeaderFrame.Global.Title="工程圖展示位置";
+toDrawingAggregation.HeaderFrame.Global.LongHelp="定義導入的工程圖的存儲位置。";
+
+toDrawingAggregation.IconAndOptionsFrame.OptionsFrame.chkDrawingAggregation.Title="自動將工程圖插入到關聯產品下";
+toDrawingAggregation.IconAndOptionsFrame.OptionsFrame.chkDrawingAggregation.LongHelp="導入工程圖（其視圖全部鏈接到同一產品參考上）時，得到的 V6 工程圖會被自動插入到導入的產品中。";

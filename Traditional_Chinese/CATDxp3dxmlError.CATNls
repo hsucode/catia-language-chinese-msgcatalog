@@ -1,0 +1,154 @@
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 February 2006 - creation pir
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 3DXML InOutputer Erors
+// 3951 校正官方漢化=============================================================================
+
+ERR_NO_CORETYPE.Request="對象的核心類型";
+ERR_NO_CORETYPE.Diagnostic="未找到核心類型。";
+ERR_NO_CORETYPE.Advice="檢查對象的核心類型";
+
+ERR_NO_STREAMDATA.Request="對象的核心類型";
+ERR_NO_STREAMDATA.Diagnostic="未找到流數據。";
+ERR_NO_STREAMDATA.Advice="檢查流";
+
+ERR_PARSE.Request="無法加載選定的 3DXML";
+ERR_PARSE.Diagnostic="由于格式不兼容，或 ";
+ERR_PARSE.Advice="由于訪問權限受限";
+
+ERR_3DXMLMAPPING.Request="未找到值";
+ERR_3DXMLMAPPING.Diagnostic="未在 OSM 中定義屬性。";
+ERR_3DXMLMAPPING.Advice="檢查 OSM 文件的內容";
+
+ERR_3DXMLMODMAPPING.Request="不支持建模器或核心類型";
+ERR_3DXMLMODMAPPING.Diagnostic="尚不支持建模器或核心類型，將不會保存數據";
+ERR_3DXMLMODMAPPING.Advice="檢查是否支持您嘗試保存的數據類型";
+
+ERR_3DXMLMULTISTREAM.Request="3DXML 不支持多流";
+ERR_3DXMLMULTISTREAM.Diagnostic="3DXML 不支持多流。將僅導出第一個流";
+ERR_3DXMLMULTISTREAM.Advice="";
+
+ERR_3DXMLSPECIFICEXTENSION.Request="";
+ERR_3DXMLSPECIFICEXTENSION.Diagnostic="已檢測到舊的特定行業數據，請從 V5R17SP5 中重新生成該數據。";
+ERR_3DXMLSPECIFICEXTENSION.Advice="無法加載特定行業數據。如果您保存此 3DXML，將會升級版本并刪除舊的特定行業。";
+
+ERR_3DXMLUNKNOWNGEOMFORMAT.Request="";
+ERR_3DXMLUNKNOWNGEOMFORMAT.Diagnostic="已檢測到未知的幾何格式，請確保 3dxml 符合 xsd 格式。";
+ERR_3DXMLUNKNOWNGEOMFORMAT.Advice="將不會加載相應展示。";
+
+ERR_3DXMLSTREAMFORMAT.Request="";
+ERR_3DXMLSTREAMFORMAT.Diagnostic="已檢測到不支持的幾何數據，將不會加載相應展示。";
+ERR_3DXMLSTREAMFORMAT.Advice="";
+
+ERR_3DXMLMISSINGSTREAM.Request="";
+ERR_3DXMLMISSINGSTREAM.Diagnostic="缺少幾何數據，將不會加載相應展示。";
+ERR_3DXMLMISSINGSTREAM.Advice="";
+
+ERR_3DXMLARCHIVEWITHDIR.Request="請在不使用子目錄信息的情況下對其進行重新構建。";
+ERR_3DXMLARCHIVEWITHDIR.Diagnostic="已使用子目錄信息構建歸檔。";
+ERR_3DXMLARCHIVEWITHDIR.Advice="";
+
+
+ERR_3DXMLISOMETRICMATRIX.Request="";
+ERR_3DXMLISOMETRICMATRIX.Diagnostic="某些相關矩陣不是等軸測。可視化可能不正確。";
+ERR_3DXMLISOMETRICMATRIX.Advice="";
+
+ERR_3DXMLVERSIONSUPPORTED.Request="不支持 3DXML 版本。";
+ERR_3DXMLVERSIONSUPPORTED.Diagnostic="不支持 3DXML 版本。";
+ERR_3DXMLVERSIONSUPPORTED.Advice="不支持 3DXML 版本。";
+
+ERR_CONNECTION_REFUSED.Request="檢查遠程系統訪問權限";
+ERR_CONNECTION_REFUSED.Diagnostic="遠程系統拒絕網絡連接";
+ERR_CONNECTION_REFUSED.Advice="檢查遠程系統訪問權限";
+
+ERR_3DXMLINTEGRITYCERTIFICAT.Request="完整性證書錯誤。";
+ERR_3DXMLINTEGRITYCERTIFICAT.Diagnostic="此歸檔不滿足完整性要求。";
+ERR_3DXMLINTEGRITYCERTIFICAT.Advice="必須已修改產品結構，某些鏈接可能會中斷。";
+
+ERR_3DXMLMISSINGSCHEMAVERSION.Request="";
+ERR_3DXMLMISSINGSCHEMAVERSION.Diagnostic="文件錯誤，缺少 3DXML 的版本。";
+ERR_3DXMLMISSINGSCHEMAVERSION.Advice="";
+
+ERR_3DXMLTOORECENTSCHEMAVERSION.Request="";
+ERR_3DXMLTOORECENTSCHEMAVERSION.Diagnostic="此 3D XML 文件的次要版本比當前的次要版本更新。將無法打開某些數據。";
+ERR_3DXMLTOORECENTSCHEMAVERSION.Advice="";
+
+ERR_DRM_3DXML_SAVE.Request="DRM 錯誤。";
+ERR_DRM_3DXML_SAVE.Diagnostic="您正嘗試保存的 3DXML 文件受 DRM 保護。";
+ERR_DRM_3DXML_SAVE.Advice="不允許您保存此文件。";
+
+ERR_DRM_3DXML_READ.Request="DRM 錯誤。";
+ERR_DRM_3DXML_READ.Diagnostic="您正嘗試打開的 3DXML 文件受 DRM 保護。";
+ERR_DRM_3DXML_READ.Advice="不允許您打開此文件。";
+
+WAR_CHANGE_VERSION.Request="保存已升級 3DXML 的版本。已刪除舊的特定行業數據";
+WAR_CHANGE_VERSION.Diagnostic="保存已升級 3DXML 的版本。已刪除舊的特定行業數據";
+WAR_CHANGE_VERSION.Advice="";
+
+// 3951 校正官方漢化 Internal error that should not occurs at customer site
+InternalError.Request="3dxmlInOutputer 內部錯誤";
+InternalError.Diagnostic="/P1";
+InternalError.Advice="向支持中心報告此錯誤。";
+
+
+ERR_PARSE_XSD_CHECK.Request="選擇另一個 3DXML 作為輸入文件";
+ERR_PARSE_XSD_CHECK.Diagnostic="3dxml 文件 (/p1) 與 xsd 文件（版本 /p2）不符。";
+ERR_PARSE_XSD_CHECK.Advice="檢查輸入 3DXML 文件的完整性";
+
+ERR_SAVESTREAMFORMAT.Request="";
+ERR_SAVESTREAMFORMAT.Diagnostic="保存期間發生流格式錯誤，將不會保存 3DXML 文件";
+ERR_SAVESTREAMFORMAT.Advice="";
+
+ERR_MISSING_MANIFEST.Request="";
+ERR_MISSING_MANIFEST.Diagnostic="歸檔中缺少 Manifest.xml 文件";
+ERR_MISSING_MANIFEST.Advice="";
+
+ERR_PRIVATEVERSION_SUPPORTED.Request="";
+ERR_PRIVATEVERSION_SUPPORTED.Diagnostic="不支持 3DXML 中的 UVR 版本。";
+ERR_PRIVATEVERSION_SUPPORTED.Advice="可能無法讀取某些幾何數據。";
+
+ERR_3DXMLAUTHORINGONLY.Request="3D XML 復核不可用。";
+ERR_3DXMLAUTHORINGONLY.Diagnostic="3D XML 不包含復核數據。";
+ERR_3DXMLAUTHORINGONLY.Advice="";
+
+ERR_SAVE_VERSION.Request="檢查是否授權更新文件版本";
+ERR_SAVE_VERSION.Diagnostic="由于保存了不支持的版本，已取消操作。";
+ERR_SAVE_VERSION.Advice="禁止不支持的數據";
+
+ERR_STREAM_UNSAVE.Request="檢查提供程序是否支持這些流。";
+ERR_STREAM_UNSAVE.Diagnostic="3D XML 包含無法升級的幾何圖形（TESSELLATION、EXACT），未授權保存。";
+ERR_STREAM_UNSAVE.Advice="至少使用壓縮網格生成 3D XML v4.0 或 3D XML v3.0。";
+
+ERR_SAVE_IN_READONLY_FILE.Request="非寫入保護的文件路徑";
+ERR_SAVE_IN_READONLY_FILE.Diagnostic="文件受寫入保護";
+ERR_SAVE_IN_READONLY_FILE.Advice="連接至非保護文件以執行保存";
+
+ERR_SAVE_IN_READONLY_DIR.Request="非寫入保護的文件路徑";
+ERR_SAVE_IN_READONLY_DIR.Diagnostic="目錄受寫入保護";
+ERR_SAVE_IN_READONLY_DIR.Advice="連接至非保護目錄以執行保存";
+
+ERR_3DXML_NO_UV.Request="無法采用動態網格導出。";
+ERR_3DXML_NO_UV.Diagnostic="已采用靜態網格導出幾何圖形。";
+ERR_3DXML_NO_UV.Advice="在采用 3D XML 格式導出之前，嘗試在源檔案庫中生成動態網格。";
+
+ERR_SAVEZIPCONCURRENTACCESS.Request="并發訪問權限錯誤。";
+ERR_SAVEZIPCONCURRENTACCESS.Diagnostic="并發訪問權限錯誤。";
+ERR_SAVEZIPCONCURRENTACCESS.Advice="請關閉使用 3Dxml 的其他所有應用程序，或者檢查是否無其他用戶連接到 3Dxml。";
+
+WAR_3DXML_READONLYCOPYCONNECT.Request="并發訪問權限警告。";
+WAR_3DXML_READONLYCOPYCONNECT.Diagnostic="3DXML 已被另一用戶鎖定進行編輯，將打開“只讀”拷貝。";
+WAR_3DXML_READONLYCOPYCONNECT.Advice="";
+
+WAR_3DXML_READONLYCOPY.Request="并發訪問權限錯誤。";
+WAR_3DXML_READONLYCOPY.Diagnostic="3DXML 已被另一用戶鎖定進行編輯，您正在使用“只讀”拷貝。";
+WAR_3DXML_READONLYCOPY.Advice="";
+
+ERR_DRM_OLDFORMAT.Request="此文件受 DRM 保護。";
+ERR_DRM_OLDFORMAT.Diagnostic="無法讀取此文件的 DRM 版本。";
+ERR_DRM_OLDFORMAT.Advice="請參考程序目錄以獲取說明。";
+
+ERR_3DXMLEMPTYSTREAM.Request="文件版本低于 4.0，且包含準確的幾何圖形格式。將不顯示任何幾何圖形。";
+ERR_3DXMLEMPTYSTREAM.Diagnostic="文件版本低于 4.0，且包含準確的幾何圖形格式。將不顯示任何幾何圖形。";
+ERR_3DXMLEMPTYSTREAM.Advice="請將文件更新至 4.3 版本。";

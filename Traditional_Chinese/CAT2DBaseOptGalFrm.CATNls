@@ -1,0 +1,71 @@
+// 3951 校正官方漢化=====================================================================================
+// 3951 校正官方漢化                                     CNEXT - CXR1
+// 3951 校正官方漢化                          COPYRIGHT DASSAULT SYSTEMES 1999 
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 FILENAME    :    CATDrwOptGal
+// 3951 校正官方漢化 LOCATION    :    DraftingUI
+// 3951 校正官方漢化 AUTHOR      :    fgx
+// 3951 校正官方漢化 BUT         :    
+// 3951 校正官方漢化 DATE        :    06.01.1999
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 DESCRIPTION :    Tools/Option du Drafting - Onglet General
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 COMMENTS    :    
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 MODIFICATIONS     user  date        purpose
+// 3951 校正官方漢化    HISTORY        ----  ----        -------
+// 3951 校正官方漢化      00           fgx   06.01.1999  Creation 	
+// 3951 校正官方漢化      01           fgx   08.01.1999  Passage sur CATDrwOptTitle et CATDrwOptIcon
+// 3951 校正官方漢化      02           fgx   14.01.1999  Ajout du check rotation snap auto
+// 3951 校正官方漢化      03           fgx   20.01.1999  Deplacement des options de la grid de geo a gal
+// 3951 校正官方漢化	    04		     ogk   16.06.1999  Ajout pour le coloring
+// 3951 校正官方漢化	    05		     ogk   29.10.1999  Ajout repere de vue
+// 3951 校正官方漢化=====================================================================================
+
+Title="常規";
+
+
+frameView.HeaderFrame.Global.Title="創建視圖... ";
+frameView.HeaderFrame.Global.LongHelp="創建視圖 
+定義要創建視圖的構成元素。";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewFrame.Title="顯示視圖框架";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewFrame.LongHelp="顯示表示“視圖擴展”的框架。";
+
+frameViewReferential.HeaderFrame.Global.Title="視圖軸顯示";
+frameViewReferential.IconAndOptionsFrame.OptionsFrame.checkViewReferential.Title="在當前視圖中顯示";
+frameViewReferential.IconAndOptionsFrame.OptionsFrame.checkViewReferential.LongHelp="顯示或不顯示當前視圖的軸。";
+frameViewReferential.IconAndOptionsFrame.OptionsFrame.checkViewRefZoom.Title="可縮放";
+frameViewReferential.IconAndOptionsFrame.OptionsFrame.checkViewRefZoom.LongHelp="可縮放
+定義視圖軸是否可以像幾何圖形一樣進行縮放。";
+frameViewReferential.IconAndOptionsFrame.OptionsFrame.labelViewAxisSize.Title="參考大小：";
+frameViewReferential.IconAndOptionsFrame.OptionsFrame.labelViewAxisSize.LongHelp="參考大小
+指定用來顯示視圖軸的參考大小。";
+frameViewReferential.IconAndOptionsFrame.OptionsFrame.spinnerViewAxisSize.LongHelp="參考大小
+指定用來顯示視圖軸的參考大小。";
+
+frameSheet.HeaderFrame.Global.Title="創建圖紙";
+frameSheet.HeaderFrame.Global.LongHelp="定義創建新圖紙的參數。";
+frameSheet.IconAndOptionsFrame.OptionsFrame.chkCopyFirstSheetBckg.Title="從第一張圖紙中復制圖紙背景";
+frameSheet.IconAndOptionsFrame.OptionsFrame.chkCopyFirstSheetBckg.LongHelp="定義是否將背景視圖復制到新圖紙中。";
+
+frameTitleBlock.HeaderFrame.Global.Title="框架和標題塊目錄";
+frameTitleBlock.HeaderFrame.Global.LongHelp="框架和標題塊目錄";
+frameTitleBlock.IconAndOptionsFrame.OptionsFrame.FrameAndTitleBlockPath.LongHelp="包含框架和標題塊腳本的目錄路徑。
+沒有值被指定時，會使用基于安裝路徑的路徑連接；
+\\VBScript\\FrameTitleBlock 被添加到安裝路徑的每個目錄。";
+
+
+frameAreaFill.HeaderFrame.Global.Title="區域填充";
+frameAreaFill.IconAndOptionsFrame.OptionsFrame.labelAreaFillTol.Title="打開輪廓公差";
+frameAreaFill.IconAndOptionsFrame.OptionsFrame.labelAreaFillTol.LongHelp="打開要填充的輪廓的公差。";
+frameAreaFill.IconAndOptionsFrame.OptionsFrame.spinnerAreaFillTol.Title="打開輪廓公差";
+frameAreaFill.IconAndOptionsFrame.OptionsFrame.spinnerAreaFillTol.LongHelp="打開要填充的輪廓的公差。";
+
+frmDrwUnits.HeaderFrame.Global.Title="紙張單元";
+frmDrwUnits.IconAndOptionsFrame.OptionsFrame.lblPaperLengthUnit.Title="長度";
+frmDrwUnits.IconAndOptionsFrame.OptionsFrame.lblPaperLengthUnit.LongHelp="長度。";
+frmDrwUnits.IconAndOptionsFrame.OptionsFrame.cmbPaperLengthUnit.Title="長度";
+frmDrwUnits.IconAndOptionsFrame.OptionsFrame.cmbPaperLengthUnit.LongHelp="長度。";
+mmUnit="毫米 (mm)";
+cmUnit="厘米 (cm)";
+inUnit="英寸 (in)";

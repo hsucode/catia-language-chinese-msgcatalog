@@ -1,0 +1,107 @@
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Framework 'DNBDptIPMTolerance' errors
+// 3951 校正官方漢化 =================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Deux manieres de formater vos messages :
+// 3951 校正官方漢化 Two ways to format error message 
+// 3951 校正官方漢化
+// 3951 校正官方漢化 a- Specify by separating with '\n' :
+// 3951 校正官方漢化       Request      (What's you wanted to do)
+// 3951 校正官方漢化       Diagnostic   (What's realy append)
+// 3951 校正官方漢化       Advice       (...What you should do)
+// 3951 校正官方漢化
+// 3951 校正官方漢化     Sample :
+// 3951 校正官方漢化       ERR_3000 = "Initializing '/p1' attribute in '/p2'.\nAttribute does不exist.\nContact your local support.";  
+// 3951 校正官方漢化       
+// 3951 校正官方漢化               NOTE : for Parametering  use SetNLSParameter
+// 3951 校正官方漢化
+// 3951 校正官方漢化或
+// 3951 校正官方漢化
+// 3951 校正官方漢化 b- Specify messages with keyword and NLS facettes Request/Diagnostic/Advice
+// 3951 校正官方漢化
+// 3951 校正官方漢化     Sample :
+// 3951 校正官方漢化       ERR_3000.Request    "Initializing '/p1' attribute in '/p2'." 
+// 3951 校正官方漢化       ERR_3000.Diagnostic "屬性 does不exist."
+// 3951 校正官方漢化       ERR_3000.Advice     "\nContact your local support."
+// 3951 校正官方漢化 
+// 3951 校正官方漢化               NOTE : for Parametering  use :
+// 3951 校正官方漢化                         Request    : SetNLSRequestParams
+// 3951 校正官方漢化                         Diagnostic : SetNLSDiagnosticParams
+// 3951 校正官方漢化                         Advice     : SetNLSAdviceParams
+// 3951 校正官方漢化
+// 3951 校正官方漢化 =====================================================================
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Messages generaux
+// 3951 校正官方漢化
+InfoTitle      	= "Machining Tolerancing Assistant 信息";
+WarningTitle   	= "Machining Tolerancing Assistant Warning";
+ErrorTitle     	= "Machining Tolerancing Assistant 錯誤";
+GeneralErrorTitle = "錯誤";
+ErrorNotSpecified = "Error不specified.\nContact your local support";
+
+// 3951 校正官方漢化************************************************************
+// 3951 校正官方漢化 Plage messages generiques ERR_2000一個ERR_2999
+// 3951 校正官方漢化************************************************************
+ERR_2000.Diagnostic = "A malfunction has occurred.";
+ERR_2000.Advice     = "Please try again. Otherwise, contact your local support.";
+
+ERR_2001 = "A malfunction has occurred.\nError is: /p1\nPlease try again. Otherwise, contact your local support.";
+
+ERR_2002 = "Reading data.\nMachining Tolerancing Assistant software : Access to一個NULL handler.\nContact your local support.";
+
+
+// 3951 校正官方漢化************************************************************
+// 3951 校正官方漢化 Impact Command messages Errors ERR_4000一個ERR_4999
+// 3951 校正官方漢化************************************************************
+ERR_4000.Diagnostic = "No tolerance is impacted";
+ERR_4000.Advice     = "Please select another tolerance.";
+
+ERR_4050.Diagnostic = "選擇 tolerance is不part of In-Process model或 Design model";
+ERR_4050.Advice     = "Please select another tolerance.";
+
+
+// 3951 校正官方漢化************************************************************
+// 3951 校正官方漢化 Process Condition Command messages Errors ERR_5000一個ERR_5999
+// 3951 校正官方漢化************************************************************
+ERR_5000.Request = "In-Process condition creation命令";
+ERR_5000.Diagnostic = "選擇 faces are不parallel";
+ERR_5000.Advice     = "Please select other faces.";
+
+
+// 3951 校正官方漢化************************************************************
+// 3951 校正官方漢化 Analysis Command messages Errors ERR_6000一個ERR_6999
+// 3951 校正官方漢化************************************************************
+ERR_6000.Request = "分析Command";
+ERR_6000.Diagnostic = "A malfunction has occurred.";
+ERR_6000.Advice     = "Please try again. Otherwise, contact your local support.";
+
+ERR_6050.Diagnostic = "No annotation set in Design Part或 in In-Process Model";
+ERR_6050.Advice     = "Please create annotation set and restart Analysis命令";
+
+ERR_6100.Request = "分析Command";
+ERR_6100.Diagnostic = "No analysis computation has been performed或 analysis is不uptodate ";
+ERR_6100.Advice     = "Please start analysis computation by clicking on the Compute push button.";
+
+ERR_6150.Request = "分析Command";
+ERR_6150.Diagnostic = "Command interrupt!";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 1998
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 CATMatApplyGenCmd (English)
+// 3951 校正官方漢化
+// 3951 校正官方漢化===========================================================================
+
+ApplyCore="應用實心材料";
+ApplyCovering="應用覆蓋材料";
+MaterialChooser="PLM 材料選擇器";
+Error="內部錯誤";
+TypeError="材料類型錯誤";
+Warning_replace="警告替換";
+
+
+CATMatApplyGenCmd.StateInit.Message="初始狀態：定義支持面和材料";
+
+CATMatApplyGenCmd.StateOK.Message="正常狀態";
+
+CATMatApplyGenCmd.StateWarning.Message="警告或錯誤狀態";
+
+CATMatApplyGenCmd.StateNoPreferences.Message="無首選項";
+
+CATMatApplyGenCmd.StatePreferencesOK.Message="首選項正確";
+
+CATMatApplyGenCmd.StateEmptyDialog.Message="空對話框";
+
+CATMatApplyGenCmd.StatePLMChooser.Message="PLM 選擇器";
+
+CATMatApplyGenCmd.StateSupportFilled.Message="已填充的支持面";
+
+CATMatApplyGenCmd.StateMaterialFilled.Message="已填充的材料";
+
+CATMatApplyGenCmd.StateSupportAndMaterialFilled.Message="已填充的支持面和材料";
+
+Max_number_of_core_materials_applied_on_this_support_reached="已應用實心材料。新材料將替代現有材料";
+
+Max_number_of_covering_materials_applied_on_this_support_reached="已應用三個覆蓋材料。新材料將取代上一個材料";
+
+Material_Applied_Type_is_Undefined_Core_Or_Covering_Are_Available_Please_Check_Your_Command="未定義應用材料的類型（實心類型或覆蓋類型可用），請檢查您的命令";
+
+Cannot_create_material_There_is_no_selected_environment="無法分派材料。
+存在以下任意情況：
+ - 沒有定義任何環境。
+在此種情況下，請運行“PLM 訪問/創建參考...”并選擇環境。\n
+ - 或已定義環境，但禁止創建材料。 
+在此種情況下，請運行“PLM 訪問/創建參考...”并選擇其他環境。";
+
+Error_while_applying_material="應用材料時出錯";
+
+Applying_material_replace_another_core="此支持面上存在實心材料";
+
+Applying_material_replace_another_covering="此支持面上存在 3 個覆蓋材料";
+
+Material_subtype_error_core="選定材料的類型不是“實心材料”。\n不能用于“應用實心材料”命令。\n命令已取消。";
+
+Material_subtype_error_covering="選定材料的類型不是“覆蓋材料”。\n不能用于“應用覆蓋材料”命令。\n命令已取消。";
+
+Missing_licence="應用材料所需的許可證未授權。";
+

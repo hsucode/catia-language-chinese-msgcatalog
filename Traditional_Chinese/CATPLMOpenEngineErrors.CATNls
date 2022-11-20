@@ -1,0 +1,52 @@
+
+// 3951 校正官方漢化 FACTORIZATION ERROR DECLARATION :
+// 3951 校正官方漢化 XXXXX_F_n  : _F indicated that this client PLM error is a factorization error
+// 3951 校正官方漢化 XXXXX_F_n.Advice & XXXXX_F_n.Request : common to all the concerned component
+
+// 3951 校正官方漢化 Case 0 : XXXXX_F_0:  Factorization error without parameter  
+// 3951 校正官方漢化 XXXXX_F_0.Diagnostic = "\p PLM< components cannot ....."
+// 3951 校正官方漢化 where \p is not given at the error posting to the reporter :
+// 3951 校正官方漢化 \p is computed by the reporter just before sending the error to the listener
+// 3951 校正官方漢化 \p value : the number of PLM concerned by the error.
+
+// 3951 校正官方漢化 Case 1 : XXXXX_F_1 : Factorization error with 1 parameter : 
+// 3951 校正官方漢化 This parameter is the list of paramters coresponding to each PLM component 
+// 3951 校正官方漢化 This parameter has to be documented
+
+
+
+AnotherMinorInSession.Diagnostic="/p：會話中存在來自同一主要系列的其他次要對象，從而阻止打開";
+AnotherMinorInSession.Advice="卸載次要對象以實現打開";
+
+AnotherMinorInInput.Diagnostic="/p：存在作為輸入元素的來自同一主要系列的其他次要對象，從而阻止打開";
+AnotherMinorInInput.Advice="請與本地 ENOVIA/CATIA 管理員聯系";
+
+NoElement.Diagnostic="未將任何元素發送到開放引擎";
+NoElement.Advice="檢查數據庫中數據的可用性";
+
+NoEltToOpen.Diagnostic="會話中已包含列出供打開的所有 PLM 對象。未從數據庫執行任何刷新";
+NoEltToOpen.Advice="如果要加載最新更新，必須先關閉當前的創作會話";
+
+// 3951 校正官方漢化 a faire disparaitre ainsi que toutes ses emission apres migration sur session builder.
+// 3951 校正官方漢化 Remplacer par "ServerSystemPb" ?
+AdapterCom.Diagnostic="嘗試檢索服務器上的信息時發生問題";
+AdapterCom="將會斷開與數據庫服務器之間的連接過程";
+
+// 3951 校正官方漢化 a faire disparaitre ainsi que toutes ses emission apres migration sur session builder.
+// 3951 校正官方漢化 (correspond a une err systeme, donc a un abend)
+Internal.Diagnostic="內部開放引擎錯誤";
+Internal.Advice="請與本地 ENOVIA/CATIA 管理員聯系";
+
+// 3951 校正官方漢化 a faire disparaitre ainsi que toutes ses emission apres migration sur session builder.
+// 3951 校正官方漢化 Remplacer par "ServerSystemPb" ?
+MessageStructure.Diagnostic="在服務器上檢索的數據不一致";
+MessageStructure.Advice="描述部件的數據可能不完整";
+
+AlreadyOpened_F_0.Diagnostic="會話中已包含列出供打開的 /p PLM 對象。未從數據庫執行任何刷新";
+AlreadyOpened_F_0.Advice="如果要加載最新更新，必須先關閉當前的創作會話";
+
+UnstreamPb.Diagnostic="至少有一個流無法加載";
+UnstreamPb.Advice="請檢查資源庫的狀態";
+
+FactoryNotFound.Diagnostic="由于缺少工廠而無法在會話中創建類型為 /p 的部件。";
+FactoryNotFound.Advice="請與管理員聯系：您可能缺少類型 /p 的一些包或許可證。";

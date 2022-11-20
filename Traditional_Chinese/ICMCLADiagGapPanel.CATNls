@@ -1,0 +1,114 @@
+DialogBoxTitle="間隔分析";
+
+LabelSource.Title="源： ";
+LabelSource.LongHelp="選擇原始元素以進行間隔測量。可使用上下文菜單。可使用選擇窗口。";
+LabelSource.ShortHelp="選擇元素";
+LabelTarget.Title="目標： ";
+LabelTarget.LongHelp="選擇目標元素以進行間隔測量。可使用上下文菜單。可使用選擇窗口。";
+LabelTarget.ShortHelp="選擇元素";
+LabelCurve.Title="曲線： ";
+LabelCurve.LongHelp="選擇用作驅動曲線的曲線，將沿此曲線計算實際截面。可使用上下文菜單。可使用選擇窗口。";
+LabelCurve.ShortHelp="選擇曲線";
+
+FrameOptions.Title="選項";
+FrameParameters.Title="參數";
+FrameParameters.LongHelp="為間隔分析定義參數。";
+LabelStart.Title="開始";
+LabelStart.LongHelp="確定起點。";
+LabelEnd.Title="結束";
+LabelEnd.LongHelp="確定終點。";
+CheckButtonRange.Title="范圍";
+CheckButtonRange.LongHelp="指定最佳間隔的值范圍。僅考慮在定義范圍之外的值。";
+CheckButtonRange.ShortHelp="定義值范圍";
+CheckButtonOptimalGap.Title="最佳間隔";
+CheckButtonOptimalGap.LongHelp="指定最佳間隔的特定值。在源處，將顯示最佳值，以及與最佳值之間的最小和/或最大偏差。如果相應的偏差值小于最佳偏差，它將顯示為帶負號的值。如果該值大于最佳值，它將顯示為帶正號的值。";
+CheckButtonOptimalGap.ShortHelp="指定最佳間隔";
+CheckButtonDelta.Title="增量";
+CheckButtonDelta.LongHelp="可為最佳間隔指定增量值。它們定義值范圍，其作用與范圍相同。
+- 最佳間隔 - 最小增量 = 下限。
+- 最佳間隔 + 最大增量 = 上限。";
+CheckButtonDelta.ShortHelp="指定增量值";
+
+FrameSystem.Title="系統";
+FrameSystem.LongHelp="指定測量間隔的方向。";
+RadioButtonDirectionX.Title="X";
+RadioButtonDirectionX.LongHelp="在 X 方向測量距離。";
+RadioButtonDirectionX.ShortHelp="X-距離";
+RadioButtonDirectionY.Title="Y";
+RadioButtonDirectionY.LongHelp="在 Y 方向測量距離。";
+RadioButtonDirectionY.ShortHelp="Y-距離";
+RadioButtonDirectionZ.Title="Z";
+RadioButtonDirectionZ.LongHelp="在 Z 方向測量距離。";
+RadioButtonDirectionZ.ShortHelp="Z-距離";
+RadioButtonDirection3D.Title="3D";
+RadioButtonDirection3D.LongHelp="在 3D 中測量距離。";
+RadioButtonDirection3D.ShortHelp="3D-距離";
+
+ComboAttached.Title="已附加";
+ComboAttached.LongHelp="指定測量間隔的方向。
+- 模型（未執行投影）
+- 平面（通過選擇字段選擇平面以定義坐標系）
+- 用戶定義（將顯示 3D 操作器，可以用該操作器定義用戶定義的坐標系。可使用兩個按鈕：視圖和指南針。）";
+Attached.Model="模型";
+Attached.Plane="平面";
+Attached.UserDefined="用戶定義";
+
+LabelPlane.Title="平面： ";
+LabelPlane.LongHelp="通過選擇字段選擇平面以定義坐標系。";
+
+PushButtonView.Title="視圖";
+PushButtonView.LongHelp="坐標系與當前視圖平面對齊。";
+PushButtonCompass.Title="指南針";
+PushButtonCompass.LongHelp="坐標系與當前指南針平面對齊。";
+
+FrameDisplay.Title="顯示";
+FrameDisplay.LongHelp="指定密度、縮放、點數和曲線限制。";
+LabelDensity.Title="密度： ";
+LabelDensity.LongHelp="沿選定曲線計算的實際截面數量。";
+LabelDensity.ShortHelp="顯示實際截面數量。";
+SliderDensity.Title="密度： ";
+SliderDensity.LongHelp="確定密度。增加/減小值。";
+SliderDensity.ShortHelp="定義密度";
+LabelScale.Title="縮放： ";
+LabelScale.LongHelp="顯示的距離值的縮放系數。";
+LabelScale.ShortHelp="顯示縮放系數。";
+SliderScale.Title="縮放： ";
+SliderScale.LongHelp="確定縮放。增加/減小值。";
+SliderScale.ShortHelp="定義縮放";
+LabelPoints.Title="點： ";
+LabelPoints.LongHelp="通常在源曲面生成的每條相交線上分布的點數。";
+LabelPoints.ShortHelp="顯示點數。";
+SliderPoints.Title="點： ";
+SliderPoints.LongHelp="確定點數。增加/減小值。";
+SliderPoints.ShortHelp="定義點數";
+LabelTolerance.Title="公差： ";
+LabelTolerance.LongHelp="確定公差。";
+CheckButtonCurveLimits.Title="曲線限制： ";
+CheckButtonCurveLimits.LongHelp="可以僅使用選定曲線的一部分進行計算。";
+CheckButtonCurveLimits.ShortHelp="僅選擇曲線的一部分";
+
+FrameOptions.LongHelp="指定最小值/最大值、梳、包絡、著色和動態。";
+CheckButtonDisplayOptionsMin.Title="最小值";
+CheckButtonDisplayOptionsMin.LongHelp="對于所有距離值，均可計算最小值并用數字表示。";
+CheckButtonDisplayOptionsMax.Title="最大值";
+CheckButtonDisplayOptionsMax.LongHelp="對于所有距離值，均可計算最大值并用數字表示。";
+FrameOptionsComb.Title="梳： ";
+FrameOptionsComb.LongHelp="將分析結果作為欄信息輸出。";
+ColorButtonComb.Title="梳： ";
+ColorButtonComb.LongHelp="可在顏色框中定義線顏色。";
+DisplayType.Comb="梳";
+DisplayType.Shaded="著色";
+CheckButtonEnvelope.Title="包絡 ";
+CheckButtonEnvelope.LongHelp="使用選項梳作為欄信息輸出的分析結果也可用包絡顯示。";
+CheckButtonEnvelope.ShortHelp="用包絡顯示";
+ColorButtonEnvelope.Title="包絡： ";
+ColorButtonEnvelope.LongHelp="可在顏色框中定義包絡顏色。";
+
+CheckButtonDynamic.Title="動態";
+CheckButtonDynamic.LongHelp="執行動態間隔分析。在引導曲線處顯示表示當前截面平面的軸系。";
+CheckButtonDynamic.ShortHelp="開啟：執行動態間隔分析";
+
+FrameResults.Title="結果";
+LabelMinDistance.Title="最小距離： ";
+LabelMaxDistance.Title="最大距離： ";
+

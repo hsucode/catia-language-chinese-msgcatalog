@@ -1,0 +1,165 @@
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+InvalidEventType_ERR1000.Request="正在為發射器參考無效的事件類型";
+InvalidEventType_ERR1000.Diagnostic="'/p1' 不屬于事件類型的候選列表";
+InvalidEventType_ERR1000.Advice="參閱發射器可以發送的事件類型";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+StillListenersForEventType_ERR1001.Request="嘗試為發射器提供不合格的事件類型";
+StillListenersForEventType_ERR1001.Diagnostic="至少有一個要回應該事件的偵聽器";
+StillListenersForEventType_ERR1001.Advice="詢問合格性之前，請移除該事件的偵聽器回調";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+ListenerAlreadyRegisteredForEventType_ERR1002.Request="嘗試針對事件類型為偵聽器創建回調";
+ListenerAlreadyRegisteredForEventType_ERR1002.Diagnostic="事件發射器已感知到偵聽器";
+ListenerAlreadyRegisteredForEventType_ERR1002.Advice="編輯現有偵聽器的操作";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+ListenerNotRegisteredForEventType_ERR1003.Request="嘗試在修改/移除針對事件類型的偵聽器回調";
+ListenerNotRegisteredForEventType_ERR1003.Diagnostic="事件發射器不能感知到偵聽器";
+ListenerNotRegisteredForEventType_ERR1003.Advice="檢查是否存在針對該事件發射器的偵聽器回調";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+ActionDoesNotBelongToListener_ERR1004.Request="嘗試創建/修改針對事件類型的偵聽器回調";
+ActionDoesNotBelongToListener_ERR1004.Diagnostic="該操作不屬于偵聽器";
+ActionDoesNotBelongToListener_ERR1004.Advice="檢查是否存在由事件發射器觸發的偵聽器操作";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+ListenerMustBeParentOfEmitter_ERR1005.Request="嘗試針對事件類型為偵聽器創建回調";
+ListenerMustBeParentOfEmitter_ERR1005.Diagnostic="提供的偵聽器不在事件發射器父級中";
+ListenerMustBeParentOfEmitter_ERR1005.Advice="事件發射器必須能夠到達偵聽器";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+VariableOfSameNameWithDifferencesExistERR_1006.Request="嘗試在對話框定義中創建變量";
+VariableOfSameNameWithDifferencesExistERR_1006.Diagnostic="定義 '/p2' 中已存在具有相同名稱 '/p1' 但特性不同的變量";
+VariableOfSameNameWithDifferencesExistERR_1006.Advice="選擇其他名稱";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+VariableAlreadyExistERR_1007.Request="嘗試在對話框定義中創建變量";
+VariableAlreadyExistERR_1007.Diagnostic="定義 '/p2' 中已存在名稱為 '/p1' 且特性相同的變量";
+VariableAlreadyExistERR_1007.Advice="該操作沒有必要";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+VariableDoNotExistERR_1008.Request="嘗試刪除對話框定義中的變量";
+VariableDoNotExistERR_1008.Diagnostic="在定義 '/p2' 中未找到名稱為 '/p1' 的變量";
+VariableDoNotExistERR_1008.Advice="該操作沒有必要";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+VariableWithDifferentQualityNotDeletedERR_1009.Request="嘗試刪除對話框定義中的變量";
+VariableWithDifferentQualityNotDeletedERR_1009.Diagnostic="已在定義 '/p2' 中找到名稱為 '/p1' 但質量不為 '/p3' 的變量";
+VariableWithDifferentQualityNotDeletedERR_1009.Advice="未正確指定該操作";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+VariableCannotBeDeletedERR_1010.Request="嘗試刪除對話框定義中的變量";
+VariableCannotBeDeletedERR_1010.Diagnostic="已在定義 '/p2' 中找到名稱為 '/p1' 的變量，但該變量是固有變量，不能刪除";
+VariableCannotBeDeletedERR_1010.Advice="無法執行該操作";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+DuplicateDefinitionWithinScopeERR_1011.Request="嘗試在局部范圍內新建對話框定義";
+DuplicateDefinitionWithinScopeERR_1011.Diagnostic="位置 '/p2' 已存在對話框定義 '/p1'，因此看不到新對話框定義";
+DuplicateDefinitionWithinScopeERR_1011.Advice="請勿嘗試在相同位置復制對話框定義";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+HidePreviouslyLoadedDefinitionERR_1012.Request="嘗試注冊對話框定義 '/p1'";
+HidePreviouslyLoadedDefinitionERR_1012.Diagnostic="'/p2' 中剛加載的對話框定義 '/p1' 將接替之前加載且名稱相同的定義（位于 '/p3' 中）";
+HidePreviouslyLoadedDefinitionERR_1012.Advice="在從會話中卸載 '/p2' 之前，'/p1' 中的之前定義將不用于執行";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+ListHasAnIncompatibleTypeOfElementsERR_1013.Request="嘗試設置 '/p1' 對話框的 ProposedItems 列表";
+ListHasAnIncompatibleTypeOfElementsERR_1013.Diagnostic="候選列表使用 '/p1' 作為其元素的類型，需要的是一種 '/p2'";
+ListHasAnIncompatibleTypeOfElementsERR_1013.Advice="符合所需的類型";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+IncorrectTypeERR_1014.Request="嘗試設置 '/p2' 邊欄工具的 '/p1' 參數";
+IncorrectTypeERR_1014.Diagnostic="候選類型 '/p1' 并非 '/p2' 類型（它是所需的基本類型）";
+IncorrectTypeERR_1014.Advice="符合所需的類型";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+UnknownTypeNameERR_1015.Request="嘗試設置 '/p2' 邊欄工具的 '/p1' 參數";
+UnknownTypeNameERR_1015.Diagnostic="候選類型名稱 '/p1' 與已識別的類型不匹配";
+UnknownTypeNameERR_1015.Advice="選擇有效的類型";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+IncorrectCandidateTypeFilterForChooserERR_1016.Request="嘗試通過其 ProposedItems 參數為 '/p1' 邊欄工具提供一個列表";
+IncorrectCandidateTypeFilterForChooserERR_1016.Diagnostic="列表的元素類型名稱 '/p1' 與已識別的類型不匹配";
+IncorrectCandidateTypeFilterForChooserERR_1016.Advice="選擇有效的類型";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+AlreadyDeployedWorkbenchERR_1017.Request="嘗試部署工作臺 '/p1'";
+AlreadyDeployedWorkbenchERR_1017.Diagnostic="已存在部署過的 '/p1' 工作臺（可能已通過其他應用程序部署）";
+AlreadyDeployedWorkbenchERR_1017.Advice="為您的工作臺選擇唯一標識";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+CannotDeployWorkbenchOfNotLoadedWorkshopERR_1018.Request="嘗試部署工作臺 '/p1'";
+CannotDeployWorkbenchOfNotLoadedWorkshopERR_1018.Diagnostic="未加載應托管工作臺進行部署的工作間 '/p1'";
+CannotDeployWorkbenchOfNotLoadedWorkshopERR_1018.Advice="部署之前，請輸入該工作間要加載的其中一個工作臺";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+DialogDefinitionNotFoundERR_1019.Request="嘗試查找對話框定義 '/p1'";
+DialogDefinitionNotFoundERR_1019.Diagnostic="對話框定義 '/p1' 在會話加載的數據和詞典索引中均不可訪問";
+DialogDefinitionNotFoundERR_1019.Advice="重新生成知識工程索引，或加載具有對話框定義的實體（要繞過）";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+SupersedeIndexDefinitionERR_1020.Request="嘗試注冊對話框定義 '/p1'";
+SupersedeIndexDefinitionERR_1020.Diagnostic="'/p2' 中剛加載的對話框定義 /p1' 將接替詞典索引中指示的定義（位于 '/p3' 中）";
+SupersedeIndexDefinitionERR_1020.Advice="在從會話中卸載 '/p2' 之前，詞典索引定義  '/p1' 將不用于執行";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+UnaccessibleDefinitionERR_1021.Request="嘗試定位應用定義 '/p1'";
+UnaccessibleDefinitionERR_1021.Diagnostic="值為 '/p2' 的本地化信息 '/p1' 不允許檢索所需的位置";
+UnaccessibleDefinitionERR_1021.Advice="重新生成應用定義高速緩存/索引";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+WorkbenchDefinitionNotSavedERR_1022.Request="嘗試部署工作臺 '/p1'";
+WorkbenchDefinitionNotSavedERR_1022.Diagnostic="未保存工作臺 '/p1' 的定義";
+WorkbenchDefinitionNotSavedERR_1022.Advice="保存具有定義的應用部件";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+ApplicativeDefinitionsNotSavedERR_1023.Request="嘗試更新部署高速緩存";
+ApplicativeDefinitionsNotSavedERR_1023.Diagnostic="未保存要在高速緩存中描述的應用定義";
+ApplicativeDefinitionsNotSavedERR_1023.Advice="保存具有定義的應用部件";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+WorkshopHostingTheWorkbenchNotSpecifiedERR_1024.Request="嘗試部署工作臺 '/p1'";
+WorkshopHostingTheWorkbenchNotSpecifiedERR_1024.Diagnostic="未指定將托管工作臺 '/p1' 的工作間";
+WorkshopHostingTheWorkbenchNotSpecifiedERR_1024.Advice="完成工作臺定義";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+UnsupportedWidgetTypeERR_1025.Request="嘗試創建類型為 '/p1' 的邊欄工具";
+UnsupportedWidgetTypeERR_1025.Diagnostic="邊欄工具類型無效";
+UnsupportedWidgetTypeERR_1025.Advice="僅使用 Kwd 類型";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+NoLayoutEditorAvailableERR="無布局編輯工具";
+NoLayoutEditorAvailableERR_1026.Request="嘗試編輯邊欄工具";
+NoLayoutEditorAvailableERR_1026.Diagnostic="布局編輯工具不可用（無法訪問 DSxDevDialogEditorWrap.dll）";
+NoLayoutEditorAvailableERR_1026.Advice="dll 及其依賴關系在機器本地，\n如果在網絡上，則必須采用 .Net 安全策略。\n（請參閱文檔：CATIA > 知識工程模塊 > 自動設計過程 > 創建知識工程對話框 > 先決條件）";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+ForbiddenWorkbenchIdERR_1027="禁止的工作臺標識符";
+ForbiddenWorkbenchIdERR_1027.Request="嘗試將工作臺標識為 '/p1'";
+ForbiddenWorkbenchIdERR_1027.Diagnostic="建議的標識符與其中一個 DS 標識符相匹配";
+ForbiddenWorkbenchIdERR_1027.Advice="選擇與保留的 DS 標識符不沖突的標識符";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+CannotSeeDeployedWorkbenchWithImproperEnvironmentERR_1027.Request="嘗試部署工作臺 '/p1'";
+CannotSeeDeployedWorkbenchWithImproperEnvironmentERR_1027.Diagnostic="已在應用程序的高速緩存（不屬于您的 CATIA 環境）中部署工作臺";
+CannotSeeDeployedWorkbenchWithImproperEnvironmentERR_1027.Advice="利用合適的 CATIA 環境 '/p1'（包括應用程序的高速緩存）重新啟動";
+// 3951 校正官方漢化
+// 3951 校正官方漢化DuplicateDialogDefinition ="Applicative components '/p1' and '/p2' have both a dialog definition named '/p3' (of same type)";
+DuplicateDialogDefinition="有沖突的應用部件中已存在名為 '/p1' 的對話框";
+// 3951 校正官方漢化
+// 3951 校正官方漢化DuplicateWorkbenchDefinition ="Applicative components '/p1' and '/p2' have both a workbench definition named '/p3'";
+DuplicateWorkbenchDefinition="有沖突的應用部件中已存在名為 '/p1' 的工作臺";
+// 3951 校正官方漢化
+IncompleteCommandStarterDefinition="命令啟動器 '/p1' 不完整：它參考了不可訪問（即使使用先決條件）且名為 '/p2' 的對話框";
+IncompleteCommandStarterDefinitionBis="命令啟動器 '/p1' 不完整：它未參考對話框";
+// 3951 校正官方漢化
+IncompleteBehavCommandStarterDefinition="命令啟動器 '/p1' 不完整：它參考了不可訪問（即使使用先決條件）且類型為 '/p2' 的操作 '/p3'";
+IncompleteBehavCommandStarterDefinitionBis="命令啟動器 '/p1' 不完整：它未參考操作（類型和/或操作名稱不正確）";
+
+IncompleteBehavCommandStarterDefinitionMsg.Request="嘗試使用命令啟動器 '/p1' ";
+IncompleteBehavCommandStarterDefinitionMsg.Diagnostic="命令啟動器 '/p1' 不完整：它參考了不可訪問且類型為 '/p2' 的操作 /p3'";
+IncompleteBehavCommandStarterDefinitionMsg.Advice="檢查您的命令啟動器定義";
+
+InvalidUserCommandStarterDefinition="命令啟動器 /p1 無效：它參考了不可訪問的用戶命令 /p2。請檢查其在 PRM 中的定義。";

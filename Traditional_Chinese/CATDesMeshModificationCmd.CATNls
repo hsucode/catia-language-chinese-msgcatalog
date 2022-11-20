@@ -1,0 +1,68 @@
+CATDesMeshModificationCmd.SelectionState.Message="選擇曲面。";
+CATDesMeshModificationCmd.SelectionState.UndoTitle="選擇曲面";
+CATDesMeshModificationCmd.PaletteState.Message="按照所選的選項選擇面、邊線或頂點";
+CATDesMeshModificationCmd.PaletteState.UndoTitle="修改選項";
+CATDesMeshModificationCmd.PickState.Message="選擇切除平面。";
+CATDesMeshModificationCmd.PickState.UndoTitle="選擇切除平面";
+
+TitleAddMsg="添加面";
+TitleMoveMsg="移動頂點";
+TitleCutMsg="切除面";
+TitleCutPlaneMsg="用平面切除";
+TitleMergeFaceMsg="合并面頂點";
+TitleMergeEdgeMsg="合并邊線頂點";
+TitleMergeVertexMsg="合并頂點";
+TitleFillFaceMsg="規則化面";
+TitleEraseFaceMsg="擦除面";
+TitleEraseEdgeMsg="擦除邊線";
+TitleEraseVertexMsg="擦除頂點";
+
+SelectInitialMsg="選擇曲面。";
+SelectEdgeAddMsg="選擇一條邊線進行拉伸";
+SelectVertexAddMsg="選擇四個點定義一個面";
+SelectMoveMsg="移動最近的頂點";
+SelectCutPlaneMsg="選擇并定義切除平面";
+SelectStartCutMsg="選擇邊線上的一個點開始切除";
+SelectStartNewCutMsg="選擇邊線上的一個點開始另一個切除";
+SelectEndCutMsg="選擇邊線上的一個點結束切除";
+SelectFaceMergeMsg="選擇要合并其頂點的面";
+SelectEdgeMergeMsg="選擇要合并其頂點的邊線";
+SelectStartVertexMergeMsg="選擇要合并的頂點";
+SelectEndVertexMergeMsg="選擇目標頂點";
+SelectFaceFillMsg="選擇要規則化的面";
+SelectFaceEraseMsg="選擇要擦除的面";
+SelectEdgeEraseMsg="選擇要擦除的邊線";
+SelectVertexEraseMsg="選擇要擦除的頂點";
+
+CtrlAddMsg="Ctrl 鍵：選擇頂點";
+CtrlAddFillMsg="Ctrl 鍵：盡量填充圓角";
+CtrlMoveMsg="Ctrl 鍵：沿最近邊線移動";
+CtrlCutMsg="Ctrl 鍵：切除最近的頂點";
+
+PickMoveAddMsg="拾取和移動：移動到添加的面定義的方向";
+PickMoveMergeMsg="拾取和移動：移動目標頂點 ";
+PickMoveStartCutMsg="拾取和移動：在選定邊線上移動起始切除";
+PickMoveEndCutMsg="拾取和移動：在選定邊線上移動終止切除";
+
+PickPlaneMsg="選擇平面";
+PickCutPlaneMsg="選擇切除平面";
+
+ErrorPreviewMsg="錯誤 - 操作不可用。";
+ErrTriQuadMsg="錯誤 - N Gones 網格無法求解。";
+ErrMergeSameEdgeMsg="目標頂點必須在同一條邊線上";
+ErrMergeSameVertexMsg="目標頂點必須與合并頂點不同。";
+ErrMergeLastFaceMsg="禁止合并擦除最后一個面。";
+ErrCutSameEdgeMsg="終止切除不能與起始切除在同一條邊線上。";
+ErrCutSameFaceMsg="終止切除必須與起始切除在同一條邊線上。";
+ErrEraseOnSideMsg="擦除邊不可用。";
+ErrEraseLastFaceMsg="無法擦除最后一個面。";
+ErrEraseConnexityMsg="此面沒有松動連接，不可擦除。";
+ErrConvertNGoneMsg="操作錯誤。";
+ErrOperatorMsg="操作錯誤。";
+ErrNotImplementedMsg="操作未實現。";
+ErrConnexityMsg="禁止操作 - 連接丟失。";
+ErrLenghtMinMsg="禁止操作 - 創建空邊線。";
+ErrValenceTwoMsg="禁止操作 - 出現價數為 2 的頂點。";
+ErrValenceBigMsg="禁止操作 - 出現價數過大的頂點。";
+ErrMeshStateMsg="不保存撤銷操作 - 內部網格錯誤。";
+ErrValenceMeshStateMsg="不保存撤銷操作 - 內部網格價數過大。";

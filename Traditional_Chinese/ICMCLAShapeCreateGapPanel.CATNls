@@ -1,0 +1,221 @@
+DialogBoxTitle="創建間隙";
+
+FrameGapType.Title="間隔類型";
+FrameGapType.LongHelp="將在曲面內沿引導線創建間隙。
+在間隔側，可有卷曲或凸緣。
+零間隔創建兩個凸緣。凸緣為圓角凸緣。
+可由凸緣擴展為卷曲。";
+ComboGapType.LongHelp="將在曲面內沿引導線創建間隙。
+在間隔側，可有卷曲或凸緣。
+零間隔創建兩個凸緣。凸緣為圓角凸緣。
+可由凸緣擴展為卷曲。";
+ComboGapType.ShortHelp="間隔類型";
+Combo.CrimpCrimp="卷曲 - 卷曲";
+Combo.CrimpFlange="卷曲 - 凸緣";
+Combo.ZeroGap="零間隔";
+Combo.FlangeFlange="凸緣 - 凸緣";
+Combo.FlangeBottom="凸緣 - 底部";
+
+FrameGuide.Title="引導線";
+FrameGuide.LongHelp="將在曲面內沿引導線創建間隙。
+引導線為曲面上的曲線。
+如果選定的曲線不在曲面上，它將被投影到曲面上。 ";
+LabelGuide.Title="元素： ";
+LabelGuide.LongHelp="引導線為曲面上的曲線。
+如果選定的曲線不在曲面上，它將被投影到曲面上。";
+LabelGuide.ShortHelp="選擇引導線";
+
+FrameSupport.Title="支持面";
+FrameSupport.LongHelp="支持面是在其上創建間隙的曲面。
+如果選定兩個曲面，則引導線將被投影到曲面 1";
+LabelSupport1.Title="曲面 1： ";
+LabelSupport1.LongHelp="將始終選擇曲面 1。
+卷曲或凸緣可與曲面 1 對齊。";
+LabelSupport1.ShortHelp="選擇要創建間隙的曲面";
+CheckButtonTrim1.LongHelp="已創建修剪的曲面，原始曲面轉為隱藏模式";
+CheckButtonTrim1.ShortHelp="修剪曲面 1";
+LabelSupport2.Title="曲面 2： ";
+LabelSupport2.LongHelp="可選擇曲面 2。
+曲面 2 無需與曲面 1 連接";
+LabelSupport2.ShortHelp="可選擇曲面 2";
+CheckButtonTrim2.LongHelp="已創建修剪的曲面，原始曲面轉為隱藏模式";
+CheckButtonTrim2.ShortHelp="修剪曲面 2";
+
+TabPageOption.Title="選項";
+
+FrameGapParameter.Title="間隔參數";
+FrameGapParameter.LongHelp="對齊：卷曲或凸緣可在法線方向上與曲面 1 對齊，或者您可以定義一個方向";
+LabelAlignment.Title="對齊： ";
+LabelAlignment.LongHelp="基礎方向是角度為 0 時的操作器方向。
+曲面 1 的法線：這是基礎方向。
+方向激活字段方向，并可定義方向";
+LabelAlignment.ShortHelp="法線或用戶定義";
+ComboAlignment.LongHelp="基礎方向是角度為 0 時的操作器方向。
+曲面 1 的法線：這是基礎方向。
+方向激活字段方向，并可使用上下文菜單定義方向。";
+ComboAlignment.ShortHelp="法線或用戶定義";
+Combo.NormalToSurface1="曲面 1 的法線";
+Combo.Direction="方向";
+LabelSelectDirection.Title="方向： ";
+LabelSelectDirection.LongHelp="用戶可使用上下文菜單方向定義方向";
+LabelSelectDirection.ShortHelp="上下文菜單方向";
+LabelDistance.Title="距離： ";
+LabelDistance.LongHelp="如何測量間隔距離取決于間隔類型。位于對話框左上顯示有 G 的圖標說明對于活動的間隔類型，如何測量距離。";
+LabelDistance.ShortHelp="間隔距離";
+CheckButtonDistanceIndividual.LongHelp="可為每個操作器單獨定義間隔距離。
+可通過在引導線的中間移動接觸點創建新操作器。";
+CheckButtonDistanceIndividual.ShortHelp="每個操作器單獨的距離";
+SpinnerDistance.LongHelp="如何測量間隔距離取決于間隔類型。位于對話框左上顯示有 G 的圖標說明對于活動的間隔類型，如何測量距離。
+可使用上下文菜單。";
+SpinnerDistance.ShortHelp="間隔寬度";
+LabelPosition.Title="位置： ";
+LabelPosition.LongHelp="可定義與引導線相關的間隔位置。
+中心線：引導線位于間隔中心。
+側邊：引導線位于間隔的側邊 1 或側邊 2。";
+LabelPosition.ShortHelp="間隔位置";
+Combo.CenterLine="中心線";
+Combo.Side1="側邊 1：";
+Combo.Side2="側邊 2：";
+
+FrameSideParameter.Title="參數";
+FrameSideParameter.LongHelp="間隔參數";
+LabelSide1.Title="側邊 1";
+LabelSide1.LongHelp="間隔側邊 1 的參數";
+LabelSide1.ShortHelp="參數側邊 1";
+LabelSide2.Title="側邊 2";
+LabelSide2.LongHelp="間隔側邊 2 的參數";
+LabelSide2.ShortHelp="參數側邊 2";
+
+LabelVariant.Title="變體： ";
+LabelVariant.LongHelp="僅當選擇間隔類型卷曲時，才會激活變體。
+您可以決定卷曲和凸緣所在側。
+您可以決定卷曲是否帶凸緣。";
+LabelVariant.ShortHelp="為此間隔類型選擇變體";
+ComboVariant1.LongHelp="在側邊 1 為此間隔類型選擇變體。
+可由凸緣擴展為卷曲。
+如果間隔類型為卷曲 - 凸緣，您可在另一側將卷曲切換為凸緣。";
+ComboVariant1.ShortHelp="側邊 1 變體";
+ComboVariant2.LongHelp="在側邊 2 為此間隔類型選擇變體。
+可由凸緣擴展為卷曲。
+如果間隔類型為卷曲 - 凸緣，您可在另一側將卷曲切換為凸緣。";
+ComboVariant2.ShortHelp="側邊 2 變體";
+Combo.Crimp="卷曲";
+Combo.CrimpAndFlange="卷曲 + 凸緣";
+Combo.Flange="凸緣";
+
+LabelContinuity.Title="連續： ";
+LabelContinuity.LongHelp="連續可用于凸緣，但不可用于卷曲。
+可在凸緣圓角和此側的曲面之間創建連續。";
+LabelContinuity.ShortHelp="凸緣到曲面之間的連續";
+Continuity_Fillet1.Button_G0.LongHelp="G0-從凸緣圓角到側邊 1 上的曲面之間的連續";
+Continuity_Fillet1.Button_G0.ShortHelp="G0 - 凸緣到側邊 1";
+Continuity_Fillet1.Button_G1.LongHelp="G1-從凸緣圓角到側邊 1 上的曲面之間的連續";
+Continuity_Fillet1.Button_G1.ShortHelp="G1 - 凸緣到側邊 1";
+Continuity_Fillet1.Button_G2.LongHelp="G2-從凸緣圓角到側邊 1 上的曲面之間的連續";
+Continuity_Fillet1.Button_G2.ShortHelp="G2 - 凸緣到側邊 1";
+Continuity_Fillet2.Button_G0.LongHelp="G0-從凸緣圓角到側邊 2 上的曲面之間的連續";
+Continuity_Fillet2.Button_G0.ShortHelp="G0 - 凸緣到側邊 2";
+Continuity_Fillet2.Button_G1.LongHelp="G1-從凸緣圓角到側邊 2 上的曲面之間的連續";
+Continuity_Fillet2.Button_G1.ShortHelp="G1 - 凸緣到側邊 2";
+Continuity_Fillet2.Button_G2.LongHelp="G2-從凸緣圓角到側邊 2 上的曲面之間的連續";
+Continuity_Fillet2.Button_G2.ShortHelp="G2 - 凸緣到側邊 2";
+
+LabelRadius.Title="半徑： ";
+LabelRadius.LongHelp="卷曲和凸緣的半徑值。
+對于凸緣，僅當連續為 G1、弦設為關閉、最小半徑設為關閉時，此值才作為半徑。";
+LabelRadius.ShortHelp="卷曲和凸緣的半徑值";
+CheckButtonChordal1.LongHelp="弦僅用于凸緣。
+此半徑值即為側邊 1 上的圓角的弦距離。";
+CheckButtonChordal1.ShortHelp="凸緣弦 - 側邊 1";
+CheckButtonChordal2.LongHelp="弦僅用于凸緣。
+此半徑值即為側邊 2 上的圓角的弦距離。";
+CheckButtonChordal2.ShortHelp="凸緣弦 - 側邊 2";
+CheckButtonTrueMinRadius1.LongHelp="最小實際半徑 - 側邊 1";
+CheckButtonTrueMinRadius1.ShortHelp="最小實際半徑 - 側邊 1";
+CheckButtonTrueMinRadius2.LongHelp="最小實際半徑 - 側邊 2";
+CheckButtonTrueMinRadius2.ShortHelp="最小實際半徑 - 側邊 2";
+
+LabelMinRadius.Title="最小半徑： ";
+LabelMinRadius.LongHelp="最小半徑僅用于凸緣和連續 G2。最小半徑是圓角中間的半徑。最小半徑的值可大于或小于半徑的值。";
+LabelMinRadius.ShortHelp="圓角中間的半徑";
+CheckButtonMinRadius1.Title=" ";
+CheckButtonMinRadius1.LongHelp="僅用于凸緣和 G2。
+側邊 1 上的圓角曲面中間的半徑值。";
+CheckButtonMinRadius1.ShortHelp="側邊 1 中間半徑";
+CheckButtonMinRadius2.Title=" ";
+CheckButtonMinRadius2.LongHelp="僅用于凸緣和 G2。
+側邊 2 上的圓角曲面中間的半徑值。";
+CheckButtonMinRadius2.ShortHelp="側邊 2 中間半徑";
+
+LabelCrimpAngle.Title="卷曲角度： ";
+LabelCrimpAngle.LongHelp="卷曲角度";
+LabelCrimpAngle.ShortHelp="卷曲角度";
+
+LabelLength.Title="長度： ";
+LabelLength.LongHelp="定義操作器方向的凸緣長度。";
+LabelLength.ShortHelp="凸緣長度";
+
+LabelAngle.Title="角度： ";
+LabelAngle.LongHelp="定義凸緣角度";
+LabelAngle.ShortHelp="凸緣角度";
+
+LabelDraftDirection.Title="拔模方向： ";
+LabelDraftDirection.LongHelp="對于兩側，僅用于變體凸緣 + 凸緣。對于變體卷曲 + 凸緣和零間隔，只可為一側指定拔模方向。";
+LabelDraftDirection.ShortHelp="拔模方向";
+CheckButtonDraftDirection1.Title="";
+CheckButtonDraftDirection1.LongHelp="側邊 1 上的拔模方向";
+CheckButtonDraftDirection1.ShortHelp="側邊 1 上的拔模方向";
+CheckButtonDraftDirection2.Title=" ";
+CheckButtonDraftDirection2.LongHelp="側邊 2 上的拔模方向";
+CheckButtonDraftDirection2.ShortHelp="側邊 2 上的拔模方向";
+SelectionLabelDraftDirection1="拔模方向 1";
+SelectionLabelDraftDirection2="拔模方向 2";
+
+LabelExtrapolation.Title="外插延伸： ";
+LabelExtrapolation.LongHelp="如果卷曲曲面的范圍比支持面小，可在起始和/或結束曲線處將其外插延伸到支持面的邊線。";
+LabelExtrapolation.ShortHelp="外插延伸";
+CheckButtonExtrapolation1Begin.Title="開始";
+CheckButtonExtrapolation1Begin.LongHelp="如果卷曲曲面的范圍比支持面小，可在起始曲線處將其外插延伸到支持面的邊線。";
+CheckButtonExtrapolation1Begin.ShortHelp="在側邊 1 起始處外插延伸";
+CheckButtonExtrapolation1End.Title="結束";
+CheckButtonExtrapolation1End.LongHelp="如果卷曲曲面的范圍比支持面小，可在結束曲線處將其外插延伸到支持面的邊線。";
+CheckButtonExtrapolation1End.ShortHelp="在側邊 1 結束處外插延伸";
+CheckButtonExtrapolation2Begin.Title="開始";
+CheckButtonExtrapolation2Begin.LongHelp="如果卷曲曲面的范圍比支持面小，可在起始曲線處將其外插延伸到支持面的邊線。";
+CheckButtonExtrapolation2Begin.ShortHelp="在側邊 2 起始處外插延伸";
+CheckButtonExtrapolation2End.Title="結束";
+CheckButtonExtrapolation2End.LongHelp="如果卷曲曲面的范圍比支持面小，可在結束曲線處將其外插延伸到支持面的邊線。";
+CheckButtonExtrapolation2End.ShortHelp="在側邊 2 結束處外插延伸";
+
+
+TabPageApproximation.Title="近似值";
+// .. Approximation1
+FrameApproximationSide2.Title="側邊 2";
+// .. Approximation2
+FrameApproximationSide1.Title="側邊 1";
+// .. Approximation Gap
+FrameToleranceGap.Title="間隔距離";
+FrameToleranceGap.LongHelp="定義間隔距離。";
+CheckButtonToleranceGap.LongHelp="按給定公差計算每個圓角之間的間隔。";
+CheckButtonToleranceGap.ShortHelp="定義公差";
+CheckButtonToleranceGap.Title="公差： ";
+// .. Shape Type
+FrameShapeType.Title="形狀";
+FrameShapeType.LongHelp="僅當距離、半徑、最小半徑、卷曲角度、角度或長度的單獨值設為開啟時，此選項才可用。
+僅當至少有三個具備不同值的操作器時才能看到此效果。
+形影響間隔邊線操作器的效果。
+- 線性形：從操作器到操作器，間隔邊線呈線性運行，并可在操作器處產生一個尖端。
+- 局部形： 
+- 光順形：
+- 全局形： ";
+Combo.Linear="線性形狀";
+Combo.Local="局部形狀";
+Combo.Smooth="光順形狀";
+Combo.Global="全局形狀";
+
+// . Output
+TabPageOutput.Title="輸出";
+CheckButtonMulti.Title="多結果輸出";
+
+DomainMode.Title="域模式已更改為強制單域。
+不再支持域模式的使用首個域。";

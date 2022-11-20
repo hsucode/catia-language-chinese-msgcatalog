@@ -1,0 +1,136 @@
+DialogBoxTitle						= "掃掠";
+
+TabOptions.Title					= "選項";
+TabOptions.LongHelp					= "可選項為:截面線位置,截面線限制,形狀.";
+TabOptions.ShortHelp					= "掃掠選項";
+
+LabelSweepType.Title					= "類型：";
+LabelSweepType.LongHelp					= "每種類型的輸入參數不同.
+多截面:只需要截面線,不需要引導線.
+引導線+截面線:截面線和引導線都需要.
+滑動面:需要附加的滑動面.";
+LabelSweepType.ShortHelp				= "掃掠類型 ";
+Combo.MultiSection					= "多截面";
+Combo.GuideAndProfile					= "引導線+ 截面線";
+Combo.Sliding						= "滑動面";
+ComboSweepType.LongHelp					= "選擇類型: 多截面,引導線+截面線,滑動面";
+ComboSweepType.ShortHelp				= "選擇掃掠類型";
+
+LabelGuide.Title					= "引導線: ";
+LabelGuide.LongHelp					= "選擇圖元截面曲線沿著這些圖元掃略.";
+LabelGuide.ShortHelp					= "指定引導線";
+
+LabelProfile.Title					= "截面線:";
+LabelProfile.LongHelp					= "指定截面線.";
+LabelProfile.ShortHelp					= "指定截面線";
+
+LabelGuide2.Title					= "引導線2:";
+LabelGuide2.LongHelp					= "指定掃略曲面的引導線2,這個引導線2用來限制截面線";
+LabelGuide2.ShortHelp					= "用來限制的引導線";
+
+LabelAdjust.Title					= "調整到:";
+LabelAdjust.LongHelp					= "調整到截面線:如果引導線和截面線有一個間隙,曲面被調整到截面線
+調整到引導線: 如果引導線和截面線有一個間隙,曲面被調到到引導線
+平面截面線: 截面線從截面線平面移動到坐標系的XY平面";
+LabelAdjust.ShortHelp					= "調整引導線,截面線或平面截面線";
+ComboAdjust.LongHelp					= "掃略曲面可以調整到引導線,截面線和平面截面線";
+ComboAdjust.ShortHelp					= "調整引導線,截面線或平面截面線";
+
+FrameAttach.Title					= "截面位置";
+FrameAttach.LongHelp					= "掃略曲面可以附著于曲面.點和方向";
+
+FrameSlidingSurface.Title				= "曲面:";
+FrameSlidingSurface.LongHelp				= "截面線可以定位在一個滑動曲面上,作為掃略的引導線.";
+FrameSlidingSurface.ShortHelp				= "指定滑動面";
+
+CheckButtonPointOnGuide.Title				= "點";
+CheckButtonPointOnGuide.LongHelp			= "截面線可以通過選擇截面線上的點
+沿著引導線或滑動面定位";
+CheckButtonPointOnGuide.ShortHelp			= "指定引導線上的點";
+
+
+Combo.Auto						= "自動 ";
+Combo.Segments						= "段數";
+Combo.Cells						= "單元";
+Combo.Bends						= "彎曲";
+ContinuityProfileCoupling.Button_G0.ShortHelp		= "G0 - 參數映像";
+ContinuityProfileCoupling.Button_G1.ShortHelp		= "G1 - 參數映像";
+ContinuityProfileCoupling.Button_G2.ShortHelp		= "G2 - 參數映像";
+
+TabContainer.TabMovingFrame.Title			= "動態";
+TabContainer.TabMovingFrame.LongHelp			= "TabContainer.TabMovingFrame.LongHelp";
+
+TabApproximation.Title					= "逼近法";
+TabApproximation.LongHelp				= "TabApproximation.LongHelp";
+TabApproximation.ShortHelp				= "TabApproximation.ShortHelp";
+
+FrameSpineSegmentation.Title				= "引導線細分";
+FrameSpineSegmentation.LongHelp				= "選擇細分脊線, 細分脊線和引導線, 細分脊線和引導線 2 和所有.";
+ComboSpineSegmentation.ShortHelp			= "引導線細分類型";
+Combo.Spine						= "細分脊線";
+Combo.SpineGuide					= "細分脊線和引導線";
+Combo.SpineGuide2					= "細分脊線和引導線2";
+
+FrameProfileSegmentation.Title				= "截面線細分";
+FrameProfileSegmentation.LongHelp			= "選擇細分類型第一,截面線, 截面線最大值
+ 段數和所有輪廓線.";
+ComboProfileSegmentation.ShortHelp			= "截面線細分類型";
+Combo.First						= "第一";
+Combo.Max						= "最大";
+Combo.All						= "所有";
+FrameProfileCoupling.Title				= "截面線耦合";
+FrameProfileCoupling.LongHelp				= "選擇耦合類型:
+自動, 段數, 單元和彎曲.";
+ComboProfileCoupling.ShortHelp				= "截面線耦合類型";
+
+Combo.AdjustToGuide					= "調整到引導線";
+Combo.AdjustToProfile					= "調整到截面線";
+Combo.ProfilesWithPlane					= "平面截面線";
+
+// Approximation Short resp. Long Help Entities have to be inserted here
+ComboSpineSegmentation.LongHelp				= "-細分脊線- 
+采用指定的數目細分脊線.
+-細分脊線和引導線- 
+采用指定的數目細分脊線和引導線.
+-細分脊線和引導線2 - 
+采用指定的數目細分脊線和引導線2.
+-所有- 
+采用指定的數目細分脊線, 引導線, 和引導線 2.";
+
+ComboProfileSegmentation.LongHelp			=
+"第一: 
+細分數目由第一個選擇的輪廓線定義
+最大:
+細分數目由選擇的輪廓線的最大段數值決定.
+所有
+細分數目的定義由所有輪廓線決定";
+
+
+
+//??????????????????????????????????????????????????
+TabContainer.TabMovingFrame.Title.LongHelp							= "動態定義一個局部坐標系沿著脊線移動，通過指定向量
+對齊坐標系的一個軸，通過設置優化選項定義坐標系的
+第二個軸。";
+
+TabContainer.TabMovingFrame.MovingFrame.FrameMvFPriority.FrameMvFDirection.ComboMvFDirection.LongHelp = "自動：在脊線的德最佳位置確定一個平面，這個平面和脊線的距離
+最小.局部坐標系的Y軸為脊線的法向.
+直線：通過方向窗口指定方向 .";
+TabContainer.TabMovingFrame.MovingFrame.FrameMvFPriority.FrameMvFDirection.LabelMvFLine.LongHelp = "指定方向.";
+
+TabContainer.TabMovingFrame.MovingFrame.FrameMvFType.LabelMvFPlane.LongHelp			= "指定平面.";
+TabContainer.TabMovingFrame.MovingFrame.FrameMvFType.LabelMvFCurve.LongHelp			= "指定一個第二條曲線.";
+TabContainer.TabMovingFrame.MovingFrame.FrameMvFType.LabelMvFSurface.LongHelp			= "指定一個對齊曲面";
+TabContainer.TabMovingFrame.MovingFrame.FrameMvFPriority.ComboMvFPriority.LongHelp		= "可以使用動態坐標確定局部坐標系的每個軸";
+
+// Moving Frame Short resp. Long Help Entities have to be inserted here
+TabContainer.TabMovingFrame.MovingFrame.FrameMvFType.ComboMvfType.LongHelp			= "平行于平面：局部坐標系的移動平行于指定的工作平面.
+脊線徑向：脊線的切向為局部坐標系的Z軸，指定的向量為坐標系的Y軸
+第二條曲線 :設置局部坐標系的X軸沿著第二條曲線拖動
+垂直于曲面：曲面垂直于脊線可以脫離
+.";
+
+DomainMode.Title					= "主體模式轉換為強制單主體,使用第一主體模式不再支持.";
+
+
+TabContainer.TabMovingFrame.Title			= "動態";
+TabPage_MovingFrame.Title				= "動態";

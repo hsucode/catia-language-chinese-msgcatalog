@@ -1,0 +1,442 @@
+// 3951 校正官方漢化*****************************************************************************
+// 3951 校正官方漢化  DNBIgpCreateArcTrajectoryCmd
+// 3951 校正官方漢化*****************************************************************************
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Geometry selection dialog field entries
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+NoneSelectionTxt="無選擇";
+SomeSelectionTxt=" 選定元素";
+DfltSelectionTxt="站臺基底平面";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Label titles
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+RollAngleLabel="橫搖角";
+PitchAngleLabel="焊接角度";
+YawAngleLabel="傾角";
+ApproachLabel="進刀";
+DepartLabel="退刀";
+GlobalContext="GLOBAL";
+LocalContext="局部";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Manipulator text
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+WireStartLabel="  開始 ";
+WireEndLabel="  停止 ";
+ContourLabel="Contour";
+AngleUnit="deg";
+
+FlareStartAngleLabel="擴口起始角";
+FlareEndAngleLabel="擴口終止角度";
+FlareStartPointLabel="擴口起始角";
+FlareEndPointLabel="擴口終點";
+
+BaseSurfaceOffsetLabel="基底偏移";
+BaseSurfaceNormalLabel="基底法線";
+WallSurfaceOffsetLabel="墻壁偏移";
+WallSurfaceNormalLabel="墻壁法線";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Main dialog title
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+MainDialogTitle.Create="創建 ";
+MainDialogTitle.Modify="修改 ";
+MainDialogTitle.Target="圓弧軌跡";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Tool dialog title
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+AnglesDialog.Title="局部焊槍角度";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Undo titles
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+DNBIgpCreateArcTrajectoryCmd.GeomAddAgent.UndoTitle="添加輪廓";
+DNBIgpCreateArcTrajectoryCmd.ContDelAgent.UndoTitle="刪除輪廓";
+DNBIgpCreateArcTrajectoryCmd.ContUpAgent.UndoTitle="上移輪廓";
+DNBIgpCreateArcTrajectoryCmd.ContDnAgent.UndoTitle="下移輪廓";
+DNBIgpCreateArcTrajectoryCmd.SampleAgent.UndoTitle="更改取樣參數";
+DNBIgpCreateArcTrajectoryCmd.WireOffsetAgent.UndoTitle="更改開始/停止偏移";
+DNBIgpCreateArcTrajectoryCmd.WireDirAgent.UndoTitle="更改開始/停止方向";
+DNBIgpCreateArcTrajectoryCmd.WallOffsetAgent.UndoTitle="更改曲面偏移";
+DNBIgpCreateArcTrajectoryCmd.AngleRefAgent.UndoTitle="更改角度參考";
+DNBIgpCreateArcTrajectoryCmd.AngleValAgent.UndoTitle="更改角度值";
+DNBIgpCreateArcTrajectoryCmd.TagInsertAgent.UndoTitle="插入標記";
+DNBIgpCreateArcTrajectoryCmd.TagDeleteAgent.UndoTitle="刪除標記";
+DNBIgpCreateArcTrajectoryCmd.TagMoveAgent.UndoTitle="移動標記";
+DNBIgpCreateArcTrajectoryCmd.TagConvertAgent.UndoTitle="轉換標記";
+DNBIgpCreateArcTrajectoryCmd.TagLockAgent.UndoTitle="鎖定/解鎖標記";
+DNBIgpCreateArcTrajectoryCmd.SafePathValAgent.UndoTitle="更改進刀/退刀";
+DNBIgpCreateArcTrajectoryCmd.FlareValAgent.UndoTitle="更改外飄參數";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Miscellaneous
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+DNBIgpArcCmdUtils.CustomFastenerName="客戶緊固件名稱";
+DNBARWToolPreviewManager.Snapshot.Prefix="快照";
+DNBARWToolPreviewManager.ToolPreview.Name="刀具預覽";
+DNBARWToolPreviewManager.DisplaySnapshot.Name="顯示快照";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Error messages
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+FindMinExtrapolationError.Title="Error";
+FindMinExtrapolationError.Msg="找不到合理的最小外推距離。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+TrajectoryUpdateError.Title="Error";
+TrajectoryUpdateError.Res.Msg="更新過程中出現意外錯誤。
+您可以編輯軌跡來解決問題。";
+TrajectoryUpdateError.Sys.Msg="更新過程中出現意外錯誤。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+TrajectorySaveError.Title="Error";
+TrajectorySaveError.Msg="保存過程中出現意外錯誤。
+建議您取消此操作并關閉文檔但不保存，
+以避免數據損壞。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+TrajectoryLoadError.Title="Error";
+TrajectoryLoadError.Msg="加載過程中出現意外錯誤。
+建議您取消此操作并關閉文檔但不保存，
+以避免數據損壞。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+SurfaceIntersectionError.Title="Error";
+SurfaceIntersectionError.Msg="要焊接的元素必須相互接觸或相交";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+PossibleTaskCorruption.Title="Warning";
+PossibleTaskCorruption.Msg="標記數在編輯會話的這一過程中已更改。
+
+如果保存此軌跡，則當前參考此軌跡的所有任務均將變為無效。  
+
+是否要保存？";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+InvalidTrajectoryName.Title="Error";
+InvalidTrajectoryName.Msg="軌跡名稱無效。
+請移除非法字符，并以字母開始此名稱。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+CommonTrajectoryName.Title="Error";
+CommonTrajectoryName.Msg="該軌跡名稱已在使用中。
+請使用其他名稱。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+DuplicatedElement.Title="Error";
+DuplicatedElement.Msg="該元素已是
+其他曲面字段的成員。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+ToolSelectionError.Title="Error";
+ToolSelectionError.Msg="該選定刀具不能在此上下文中使用。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+CurveSelectionError.Title="Error";
+CurveSelectionError.Msg="該選定曲線不能在此上下文中使用。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+TagsContourEditError.Title="Information";
+TagsContourEditError.Msg="無法編輯此輪廓。
+只能將其刪除并重新創建。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+ToolNotFound.Title="Warning";
+ToolNotFound.Msg="沒有為此機器人/站臺找到有效焊槍。  
+刀具方向預覽將不可用。
+
+建議：
+1) 檢查機器人上的默認刀具輪廓，或者
+2) 選擇刀具來替代機器人";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+TCPNotFound.Title="Warning";
+TCPNotFound.Msg="沒有為附加的焊槍找到 TCP。  
+刀具方向預覽將不可用。
+
+建議：
+檢查刀具設備的機械端口。
+需要“工具點”端口并且它應參考 3D 軸系。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+EmptyTagGroup.Title="Error";
+EmptyTagGroup.Msg="此輪廓為空";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+TrajectoryGaps.Title="Warning";
+TrajectoryGapsPre.Msg="以下輪廓之間的間隙大于 /P1：
+";
+TrajectoryGapsPost.Msg="
+是否要保存此軌跡以及間隙？
+
+是 -> 保存單個軌跡以及間隙
+否 -> 保存多個軌跡，但不保存間隙
+取消 -> 繼續編輯
+
+您可以在已斷開連接的輪廓之間插入至少一個通過點來避免此警告。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+TaskDependency.Title="Warning";
+TaskDependency.Msg="軌跡中的標記數已更改。 
+如果保存此軌跡， 
+則將需要更新這些任務：
+";
+TaskDependency.Post="
+是否要保存此軌跡？
+
+確定 -> 保存軌跡
+取消 -> 繼續編輯";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+FastenerFound.Title="Information";
+FastenerFound.Msg="已成功在曲線操作下創建圓弧軌跡。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+FastenerNotFound.Title="Error";
+FastenerNotFound.Msg="無法從緊固件中發現
+用于此曲線操作的參考曲線。
+該應用程序無法繼續。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+SystemTrajectoryNoEdit.Title="Error";
+SystemTrajectoryNoEdit.Msg="此軌跡不可編輯。
+如果要詳述此軌跡，
+請在資源中創建一個新軌跡，
+并將此軌跡設置為其參考。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+ImportTrajectoryDisabled.Title="Error";
+ImportTrajectoryDisabled.Msg="可能只能為空軌跡設置參考軌跡。
+
+
+移除所有現有輪廓并重試。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+UpdateSuccess.Title="Information";
+UpdateSuccess.Msg="已成功更新該軌跡。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+ToolSnapFailed.Title="Warning";
+ToolSnapFailed.Msg="機器人無法到達當前位置。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+TorchCloudReduced.Title="警告";
+TorchCloudReduced.Msg="由于性能的原因，快照被限制在 100 個實例以內。使用 Live Simulation 外側的'產品'快照查看所有實例。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Tag name prefixes
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+ApproachTagPrefix="A";
+WeldTagPrefix="W";
+DepartTagPrefix="D";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Status bar text
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+GeometrySelectionMode0.Edit="選擇機器人、焊槍、站臺或曲線操作來新建軌跡，或選擇現有軌跡進行編輯。";
+GeometrySelectionMode0.Update="選擇現有軌跡進行更新。";
+
+TrajectoryEditMode.Status="編輯軌跡設置或單擊 '+' 開始幾何圖形選擇。";
+LocalTagEditMode.Status="編輯標記設置或關閉氣泡條以返回到軌跡編輯。";
+
+GeometrySelectionModeInactive.Status1="選擇幾何圖形選項卡中的 '+' 按鈕開始幾何圖形選擇。";
+GeometrySelectionModeInactive.Status2="選擇幾何圖形選項卡中的 '+' 按鈕開始幾何圖形選擇。";
+GeometrySelectionModeInactive.Status3="選擇幾何圖形選項卡中的 '+' 按鈕開始幾何圖形選擇。";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Geometry selection dialog text
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+GeometrySelectionMode1.Title="選擇標記";
+
+GeometrySelectionMode1.Field1=" 標記組 ";
+GeometrySelectionMode1.Status1="選擇標記組";
+GeometrySelectionMode1.ShortHelp1="輪廓的選定標記組";
+GeometrySelectionMode1.LongHelp1="標記組：
+單擊此字段以激活標記組選擇/移除。
+單擊某一標記組以設置字段內容。
+再次單擊同一標記組以將其移除。";
+
+GeometrySelectionMode1.Field2=" 基曲面 ";
+GeometrySelectionMode1.Status2="選擇基底的曲面";
+GeometrySelectionMode1.ShortHelp2="基底的選定曲面";
+GeometrySelectionMode1.LongHelp2="選定基曲面：
+單擊此字段以激活為此集合添加/移除曲面。
+單擊某個曲面一次以將其添加到集合中。
+再次單擊同一項目以將其移除。";
+
+GeometrySelectionMode1.Field3=" 壁面 ";
+GeometrySelectionMode1.Status3="選擇壁面";
+GeometrySelectionMode1.ShortHelp3="選定壁面";
+GeometrySelectionMode1.LongHelp3="選定壁面：
+單擊此字段以激活為此集合添加/移除曲面。
+單擊某個曲面一次以將其添加到集合中。
+再次單擊同一項目以將其移除。";
+
+GeometrySelectionMode2.Title="Select Curves";
+
+GeometrySelectionMode2.Field1=" 曲線  ";
+GeometrySelectionMode2.Status1="選擇邊線或曲線";
+GeometrySelectionMode2.ShortHelp1="選定邊線/曲線";
+GeometrySelectionMode2.LongHelp1="選定曲線：
+單擊此字段以激活為此集合添加/移除曲線。
+單擊某個曲線一次以將其添加到集合中。
+再次單擊同一項目以將其移除。";
+
+GeometrySelectionMode2.Field2=" 基曲面 ";
+GeometrySelectionMode2.Status2="選擇基底的曲面";
+GeometrySelectionMode2.ShortHelp2="基底的選定曲面";
+GeometrySelectionMode2.LongHelp2="選定基曲面：
+單擊此字段以激活為此集合添加/移除曲面。
+單擊某個曲面一次以將其添加到集合中。
+再次單擊同一項目以將其移除。";
+
+GeometrySelectionMode2.Field3=" 壁面 ";
+GeometrySelectionMode2.Status3="選擇壁面";
+GeometrySelectionMode2.ShortHelp3="選定壁面";
+GeometrySelectionMode2.LongHelp3="選定壁面：
+單擊此字段以激活為此集合添加/移除曲面。
+單擊某個曲面一次以將其添加到集合中。
+再次單擊同一項目以將其移除。";
+
+GeometrySelectionMode3.Title="Select Surfaces";
+
+GeometrySelectionMode3.Field2=" 基曲面 ";
+GeometrySelectionMode3.Status2="選擇基底的曲面";
+GeometrySelectionMode3.ShortHelp2="基底的選定曲面";
+GeometrySelectionMode3.LongHelp2="選定基曲面：
+單擊此字段以激活為此集合添加/移除曲面。
+單擊某個曲面一次以將其添加到集合中。
+再次單擊同一項目以將其移除。";
+
+GeometrySelectionMode3.Status3="選擇壁面";
+GeometrySelectionMode3.Field3=" 壁面 ";
+GeometrySelectionMode3.ShortHelp3="選定壁面";
+GeometrySelectionMode3.LongHelp3="選定壁面：
+單擊此字段以激活為此集合添加/移除曲面。
+單擊某個曲面一次以將其添加到集合中。
+再次單擊同一項目以將其移除。";
+GeometrySelectionMode3.Aux=" 相交外插曲面：";
+
+GeometrySelectionMode4.Title="Select Parts";
+
+GeometrySelectionMode4.Field2=" 基底零件  ";
+GeometrySelectionMode4.Status2="選擇基底零件";
+GeometrySelectionMode4.ShortHelp2="選定的基底零件";
+GeometrySelectionMode4.LongHelp2="選定的基底零件：
+單擊此字段以激活為基底選擇零件。
+單擊某個零件一次以設置字段內容。
+再次單擊同一零件以將其移除。";
+
+GeometrySelectionMode4.Field3=" 墻壁零件  ";
+GeometrySelectionMode4.Status3="選擇墻壁零件";
+GeometrySelectionMode4.ShortHelp3="選定的墻壁零件";
+GeometrySelectionMode4.LongHelp3="選定的墻壁零件：
+單擊此字段以激活為墻壁選擇零件。
+單擊某個零件一次以設置字段內容。
+再次單擊同一零件以將其移除。";
+
+// 3951 校正官方漢化GeometrySelectionMode5.Title   = "Select Reference Surfaces for Tag Group (optional)";
+
+GeometrySelectionMode5.Title="選擇軌跡";
+
+GeometrySelectionMode5.Field1=" 軌跡 ";
+GeometrySelectionMode5.Status1="選擇曲線操作中的圓弧軌跡";
+GeometrySelectionMode5.ShortHelp1="參考的選定軌跡";
+GeometrySelectionMode5.LongHelp1="軌跡：
+單擊系統節點的曲線操作中的圓弧軌跡以設置字段內容。
+再次單擊同一軌跡以將其移除。";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Manipulator rep sizes
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+WirePointArrowHeight="7";
+WirePointArrowLength="12";
+NormalArrowHeight="6";
+NormalArrowLength="15";
+FlarePointArrowHeight="6";
+FlarePointArrowLength="12";
+ApproachArrowHeight="7";
+ApproachArrowLength="20";
+PathAxisLength="10";
+PathAnnotationSize="25";
+PathMinGapSize="1";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Progress bar text
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+SaveProgress.Title="更新進度";
+SaveProgress.Label1="Contours";
+SaveProgress.Label2="圓弧標記";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Bubble bar text
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+DNBIgpArcInsertWeldTagBefore.Bubble.ShortHelp="之前插入焊接標記";
+DNBIgpArcInsertWeldTagBefore.Bubble.Help="在當前位置之前插入焊接標記";
+DNBIgpArcInsertWeldTagBefore.Bubble.LongHelp="在當前位置之前插入焊接標記。
+將會在上一標記和當前標記之間插入參數。";
+
+DNBIgpArcInsertWeldTagAfter.Bubble.ShortHelp="之后插入焊接標記";
+DNBIgpArcInsertWeldTagAfter.Bubble.Help="在當前位置之后插入焊接標記";
+DNBIgpArcInsertWeldTagAfter.Bubble.LongHelp="在當前位置之后插入焊接標記。
+將會在當前標記和下一標記之間插入參數。";
+
+DNBIgpArcCloneWeldToWeldTag.Bubble.ShortHelp="插入焊接標記";
+DNBIgpArcCloneWeldToWeldTag.Bubble.Help="在當前位置處插入焊接標記";
+DNBIgpArcCloneWeldToWeldTag.Bubble.LongHelp="在當前位置處插入焊接標記。
+將會從當前標記中獲取參數。";
+
+DNBIgpArcCloneWeldToViaTag.Bubble.ShortHelp="插入通過標記";
+DNBIgpArcCloneWeldToViaTag.Bubble.Help="在當前位置處插入通過標記";
+DNBIgpArcCloneWeldToViaTag.Bubble.LongHelp="在當前位置處插入通過標記。
+將會從當前標記中獲取參數。";
+
+DNBIgpArcInsertViaTagBefore.Bubble.ShortHelp="之前插入通過標記";
+DNBIgpArcInsertViaTagBefore.Bubble.Help="在當前位置之前插入通過標記";
+DNBIgpArcInsertViaTagBefore.Bubble.LongHelp="在當前位置之前插入通過標記。
+將會在上一標記和當前標記之間插入參數。";
+
+DNBIgpArcInsertViaTagAfter.Bubble.ShortHelp="之后插入通過標記";
+DNBIgpArcInsertViaTagAfter.Bubble.Help="在當前位置之后插入通過標記";
+DNBIgpArcInsertViaTagAfter.Bubble.LongHelp="在當前位置之后插入通過標記。
+將會在當前標記和下一標記之間插入參數。";
+
+DNBIgpArcConvertWeldToViaTag.Bubble.ShortHelp="轉換為通過標記";
+DNBIgpArcConvertWeldToViaTag.Bubble.Help="將焊接標記轉換為通過標記";
+DNBIgpArcConvertWeldToViaTag.Bubble.LongHelp="將焊接標記轉換為通過標記。
+可以移除焊縫的標記。";
+
+DNBIgpArcConvertViaToWeldTag.Bubble.ShortHelp="轉換為焊接標記";
+DNBIgpArcConvertViaToWeldTag.Bubble.Help="將通過標記轉換為焊接標記";
+DNBIgpArcConvertViaToWeldTag.Bubble.LongHelp="將通過標記轉換為焊接標記。
+將會把標記投影到焊縫上。";
+
+DNBIgpArcResetTagOrientation.Bubble.ShortHelp="將鎖定的焊接標記方向重置為共用角";
+DNBIgpArcResetTagOrientation.Bubble.Help="對該鎖定標記應用全局橫搖角/焊接角/傾角";
+DNBIgpArcResetTagOrientation.Bubble.LongHelp="對該鎖定標記應用全局橫搖角/焊接角/傾角";
+
+DNBIgpArcLockTagPosition.Bubble.ShortHelp="鎖定焊接標記的位置和方向";
+DNBIgpArcLockTagPosition.Bubble.Help="禁止全局更新，以防更改此標記";
+DNBIgpArcLockTagPosition.Bubble.LongHelp="禁止全局更新，以防更改此標記";
+
+DNBIgpArcUnlockTagPosition.Bubble.ShortHelp="解鎖焊接標記的位置和方向";
+DNBIgpArcUnlockTagPosition.Bubble.Help="允許全局更新以更改此標記";
+DNBIgpArcUnlockTagPosition.Bubble.LongHelp="允許全局更新以更改此標記";
+
+DNBIgpArcSuppressWeldTag.Bubble.ShortHelp="停用焊接標記";
+DNBIgpArcSuppressWeldTag.Bubble.Help="停用焊接標記";
+DNBIgpArcSuppressWeldTag.Bubble.LongHelp="停用焊接標記。
+自動更新將會跳過此位置。";
+
+DNBIgpArcUnsuppressWeldTag.Bubble.ShortHelp="激活焊接標記";
+DNBIgpArcUnsuppressWeldTag.Bubble.Help="激活焊接標記";
+DNBIgpArcUnsuppressWeldTag.Bubble.LongHelp="激活焊接標記。
+自動更新可能會將標記放在此位置。";
+
+DNBIgpArcDeleteWeldTag.Bubble.ShortHelp="刪除標記";
+DNBIgpArcDeleteWeldTag.Bubble.Help="刪除標記";
+DNBIgpArcDeleteWeldTag.Bubble.LongHelp="刪除標記。
+自動更新可能會將新標記放在此位置。";
+
+DNBIgpArcDeleteViaTag.Bubble.ShortHelp="刪除標記";
+DNBIgpArcDeleteViaTag.Bubble.Help="刪除標記";
+DNBIgpArcDeleteViaTag.Bubble.LongHelp="刪除標記";
+
+DNBIgpArcSwitchToAWC.Bubble.ShortHelp="切換到圓弧焊接指南針";
+DNBIgpArcSwitchToAWC.Bubble.Help="切換到圓弧焊接指南針以允許修改刀具角度";
+DNBIgpArcSwitchToAWC.Bubble.LongHelp="切換到圓弧焊接指南針以允許修改刀具角度";
+
+DNBIgpArcSwitchTo3DC.Bubble.ShortHelp="切換到 3D 指南針";
+DNBIgpArcSwitchTo3DC.Bubble.Help="切換到 3D 指南針以允許修改位置";
+DNBIgpArcSwitchTo3DC.Bubble.LongHelp="切換到 3D 指南針以允許修改位置";
+
+DNBIgpArcCloseWeldBar.Bubble.ShortHelp="關閉圓弧焊接指南針";
+DNBIgpArcCloseWeldBar.Bubble.Help="關閉圓弧焊接指南針并返回到軌跡編輯";
+DNBIgpArcCloseWeldBar.Bubble.LongHelp="關閉圓弧焊接指南針并返回到軌跡編輯";
+
+DNBIgpArcCloseViaBar.Bubble.ShortHelp="關閉 3D 指南針";
+DNBIgpArcCloseViaBar.Bubble.Help="關閉 3D 指南針并返回到軌跡編輯";
+DNBIgpArcCloseViaBar.Bubble.LongHelp="關閉 3D 指南針并返回到軌跡編輯";
+

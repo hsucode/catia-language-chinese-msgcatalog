@@ -1,0 +1,41 @@
+// 3951 校正官方漢化 Junction
+GSMINPUT_ERR_10.Request="/p1 是封閉曲線。";
+GSMINPUT_ERR_10.Diagnostic="封閉元素上不允許創建交接。";
+GSMINPUT_ERR_10.Advice="請使用開放曲線。";
+
+GSMINPUT_ERR_11.Request="/p1 是非連通的元素。";
+GSMINPUT_ERR_11.Diagnostic="用于創建交接或橋接曲面圓角的截面元素必須連通。";
+GSMINPUT_ERR_11.Advice="使用另一個元素或使用 EXTRACT 運算符提取連通的實體。";
+
+GSMINPUT_ERR_12.Request="/p1 并不完全位于元素 /p2 上。";
+GSMINPUT_ERR_12.Diagnostic="為創建交接或橋接曲面圓角，截面曲線必須完全位于相應的支持曲面上。";
+GSMINPUT_ERR_12.Advice="使用 /p1 曲線所在的另一曲面。";
+
+GSMINPUT_ERR_13.Request="無法創建交接或橋接曲面圓角曲面。";
+GSMINPUT_ERR_13.Diagnostic="必需有多個截面才能創建交接或橋接曲面圓角曲面。";
+GSMINPUT_ERR_13.Advice="添加截面曲線。";
+
+GSMINPUT_ERR_14.Request="/p1 是無效的用戶耦合曲線。";
+GSMINPUT_ERR_14.Diagnostic="/p1 不在兩個截面上。";
+GSMINPUT_ERR_14.Advice="用戶耦合曲線必須位于兩個截面上。";
+
+GSMINPUT_ERR_15.Request="/p1 是無效的用戶耦合曲線。";
+GSMINPUT_ERR_15.Diagnostic="/p1 不在截面上結束。";
+GSMINPUT_ERR_15.Advice="請重新限定用戶耦合曲線使其在截面上結束。";
+
+GSMINPUT_ERR_16.Request="交叉耦合曲線。";
+GSMINPUT_ERR_16.Diagnostic="/p1 耦合曲線與其他曲線相交。";
+GSMINPUT_ERR_16.Advice="請移除 /p1 用戶耦合曲線。";
+
+GSMINPUT_ERR_17.Request="耦合曲線和耦合點位于同一位置。";
+GSMINPUT_ERR_17.Diagnostic="/p1 耦合點和 /p2 耦合曲線位于同一位置的截面上。";
+GSMINPUT_ERR_17.Advice="請移除其中一個。";
+
+GSMINPUT_ERR_18.Request="無法創建過渡曲面。";
+GSMINPUT_ERR_18.Diagnostic="截面必須由點定義。";
+GSMINPUT_ERR_18.Advice="添加截面點。";
+
+GSMINPUT_ERR_19.Request="無法創建交接或橋接曲面圓角曲面。";
+GSMINPUT_ERR_19.Diagnostic="截面必須由曲線定義。";
+GSMINPUT_ERR_19.Advice="添加截面曲線。";
+

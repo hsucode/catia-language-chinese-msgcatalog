@@ -1,0 +1,48 @@
+Title="ENOVIAvpm 服務器文件管理";
+BOK="轉到";
+BCancel="取消";
+
+frmExistingMap.Title="現有映射管理";
+frmExistingMap.frmClean.Title="映射文件管理";
+frmExistingMap.frmClean.cleanAdminFile.Title="刪除當前角色在 ENOVIAvpm 服務器上的映射文件";
+frmExistingMap.frmClean.cleanCacheFiles.Title="刪除當前角色在 NOVIAvpm 服務器上的高速緩存文件";
+frmExistingMap.frmClean.cleanResourceFiles.Title="刪除當前映射在 V6 客戶端上的源文件";
+
+frmExistingMap.frmMig.Title="映射遷移管理";
+frmExistingMap.frmMig.migAdminFile.Title="將現有映射遷移至當前級別";
+frmExistingMap.frmMig.labMigSource.Title="源映射";
+frmExistingMap.frmMig.labSourceLevel.Title="級別：";
+frmExistingMap.frmMig.labSourceRole.Title="角色：";
+frmExistingMap.frmMig.labMigTarget.Title="目標映射";
+frmExistingMap.frmMig.labTargetRole.Title="角色：";
+
+frmGen.Title="VPMENV 的文件生成";
+frmGen.generateMap.Title="為 VPMENV 生成映射樣本";
+frmGen.labV4MetadataGen.Title="自定義生成的元數據的名稱";
+frmGen.generateBL.Title="為共存生成業務邏輯樣本";
+frmGen.labV6MetadataGen.Title="V6 目標元數據的名稱";
+
+Report.Title="預設選項操作的狀態：\n";
+
+Report.DeleteFileOnServer.Title="  - 映射文件管理操作：\n";
+Report.MappingMigration.Title="\n  - 映射遷移操作：\n";
+Report.MappingMigration.Info="          源映射：級別 /p1 | ENOVIAvpm 角色 /p2\n     目標映射角色 /p3\n";
+Report.GenerateMapping.Title="\n  - 映射生成操作：\n";
+Report.CheckGeneration.Title="\n  - 檢查生成的映射：\n";
+Report.GenerateBL.Title="\n  - 業務邏輯生成操作：\n";
+
+Report.CommentNls.OP_DEL_Resources="     > 源文件的刪除：\n";
+Report.CommentNls.OP_DEL_Cache="     > ENOVIAvpm 服務器高速緩存文件的刪除：\n";
+Report.CommentNls.OP_DEL_Cache.Files="文件/目錄 /p1 | 狀態 [/p2]\n";
+Report.CommentNls.OP_DEL_Admin="     > ENOVIAvpm 服務器映射文件的刪除：\n";
+Report.CommentNls.OP_DEL_Admin.Files="/p1 文件 /p2 | 狀態 [/p3]\n";
+
+Report.ErrorNls.OP_GLOBALER="出現常規錯誤 [/p1]\n";
+
+Report.WarningNls.OP_GLOBALWARN="出現常規警告 [/p1]\n";
+
+V6R2011="V6R2011";
+V6R2011x="V6R2011x";
+V6R2012="V6R2012";
+V6R2012x="V6R2012x";
+V6R2013="V6R2013";

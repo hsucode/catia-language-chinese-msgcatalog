@@ -1,0 +1,36 @@
+CATTPSUpgradeUdf="升級報告";
+UpgradeUdf_CreationSuccessful="用戶特征參考幾何圖形已成功升級。\n編輯用戶特征并啟動“更改/更新部件”以更新其內部部件。\n需要保存 CATPart 文檔";
+UpgradeUdf_UpdateSuccessful="用戶特征參考幾何圖形已成功升級。\n編輯用戶特征并啟動“更改/更新部件”以更新其內部部件。\n需要保存 CATPart 文檔";
+UpgradeUdf_NothingToDo="已升級用戶特征";
+UpgradeUdf_InvalidSelection="所選元素已經過時，與用戶特征不匹配";
+UpgradeUdf_InternalError="內部錯誤";
+UpgradeUdf_UpdatePartial="用戶特征參考幾何圖形已部分升級。\n所有用戶特征型面可能在此上下文中不可見";
+UpgradeUdf_UncompleteWarning="\n\n無法升級突出顯示的面，因為特征：涉及\n選擇對象定義的 /P 不屬于用戶特征內部。\n如果該面不用于尺寸標注，請修改用戶特征，以便\n/P belongs to user feature internals.";
+UpgradeUdf_uptoyou="\n\n如果以后不使用相關面，則可忽略該（這些）問題。\n在此情況下，編輯用戶特征并啟動“更改/更新部件”以更新其內部部件。";
+
+CreateSchemaReport="創建公差模式失敗";
+CreateSchema_EmptySet="標注集為空\n";
+CreateSchema_Rule2="某些特征具有無效狀態\n";
+CreateSchema_Rule3="移除自動選擇默認標注\n";
+CreateSchema_Rule4="某些抓圖顯示幾何圖形集或幾何體\n";
+CreateSchema_Rule5="只有一個“基準參考系”可能鏈接至用戶特征\n";
+CreateSchema_Rule6="某些“基準參考系”部分鏈接至用戶特征\n";
+CreateSchema_Rule7="以下特征未鏈接至用戶特征\n（對于視圖，隔離視圖支持面以解決問題）：\n";
+CreateSchema_InternalError="內部錯誤\n";
+CreateSchema_RGELinkOutOfBRep="某些特征鏈接至線框元素\n";
+CreateSchema_BRepHasNotCompleteApplAttr="用戶特征未完全升級\n";
+CreateSchema_Created="已成功創建模式\n";
+CreateSchema_Updated="已更新創建的模式\n";
+CreateSchema_Unchanged="未更改已創建的模式\n";
+CreateSchema_ToAddInCatalog="單擊“確定”將此模式添加至目錄：\n";
+CreateSchema_AlreadyInCatalog="目錄中已定義了模式：\n";
+CreateSchema_NoCatalog="無法打開或找到目錄。\n請檢查目錄路徑是否已在“公差”選項中正確設置，如果需要，請創建此目錄";
+CreateSchema_Title="創建公差模式";
+
+SchemaSuffix="_Tolerancing Schema";
+
+InstanciateSchemaReport="無效公差模式";
+InstanciateSchemaNoSchema="目錄中找不到模式 ";
+InstanciateSchemaNoCompatibleStd="選定的公差模式標準和當前標準不兼容\n";
+InstanciateSchemaNoUpToDate="“公差模式”已經過時，因此不能使用。\n請與本地管理員聯系\n";
+InstanciateSchemaNoDRFForReroot="當前文檔中沒有“基準參考系”來重新連接形位公差，因此不可使用“公差模式”\n";

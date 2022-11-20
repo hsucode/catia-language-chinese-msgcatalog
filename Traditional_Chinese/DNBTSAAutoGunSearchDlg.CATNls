@@ -1,0 +1,84 @@
+// 3951 校正官方漢化 DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+Title="焊槍搜索";
+NoWeldguns="未選擇焊槍";
+// 3951 校正官方漢化BrowserFrame
+FrameGunsWelds.GunsFrame.Title="選定焊槍";
+FrameGunsWelds.GunsFrame.GunsBrowseRemoveFrame.CatalogBrowser.Title=" Browse ";
+FrameGunsWelds.GunsFrame.GunsBrowseRemoveFrame.CatalogBrowser.Help="Browse Catalog";
+FrameGunsWelds.GunsFrame.GunsBrowseRemoveFrame.CatalogBrowser.ShortHelp="瀏覽目錄選擇焊槍";
+FrameGunsWelds.GunsFrame.GunsBrowseRemoveFrame.CatalogBrowser.LongHelp="瀏覽目錄選擇焊槍";
+
+FrameGunsWelds.GunsFrame.GunsBrowseRemoveFrame.Title=" 查詢焊槍 ";
+FrameGunsWelds.GunsFrame.GunsBrowseRemoveFrame.BrowseButton.Title=" 查詢焊槍 ";
+FrameGunsWelds.GunsFrame.GunsBrowseRemoveFrame.BrowseButton.Help=" 查詢焊槍 ";
+FrameGunsWelds.GunsFrame.GunsBrowseRemoveFrame.BrowseButton.ShortHelp=" 查詢現有焊槍 ";
+FrameGunsWelds.GunsFrame.GunsBrowseRemoveFrame.BrowseButton.LongHelp=" 使用 PLM 對象選擇器查詢現有焊槍";
+
+
+// 3951 校正官方漢化Trajectory Frame
+TrajectoryFrame.Title="點焊軌跡";
+TrajectoryFrame.TrajectoryName.Title=" 軌跡名稱 ";
+TrajectoryFrame.TrajectoryName.Help="軌跡名稱";
+TrajectoryFrame.TrajectoryName.ShortHelp="點軌跡名稱的名稱";
+TrajectoryFrame.TrajectoryName.LongHelp="點軌跡名稱的名稱";
+TrajectoryFrame.TrajectoryDummyLabel1.Title="           ";
+TrajectoryFrame.TrajectoryDummyLabel2.Title="           ";
+
+
+
+FrameGunsWelds.GunsFrame.GunsBrowseRemoveFrame.Title="選定焊槍";
+FrameGunsWelds.GunsFrame.GunsBrowseRemoveFrame.Remove.Title="移除";
+FrameGunsWelds.GunsFrame.GunsBrowseRemoveFrame.Remove.Help="移除焊槍";
+FrameGunsWelds.GunsFrame.GunsBrowseRemoveFrame.Remove.ShortHelp="移除選定焊槍";
+FrameGunsWelds.GunsFrame.GunsBrowseRemoveFrame.Remove.LongHelp="移除選定焊槍";
+FrameGunsWelds.WeldsFrame.Title="選定焊接";
+FrameGunsWelds.WeldsFrame.WeldsRemoveFrame.Remove.Title="移除";
+FrameGunsWelds.WeldsFrame.WeldsRemoveFrame.Remove.Help="移除焊接";
+FrameGunsWelds.WeldsFrame.WeldsRemoveFrame.Remove.ShortHelp="移除選定焊接";
+FrameGunsWelds.WeldsFrame.WeldsRemoveFrame.Remove.LongHelp="移除選定焊接";
+
+// 3951 校正官方漢化Optionss Frame
+OptionsFrame.Title=" Options ";
+OptionsFrame.SettingsFrame.DummyFrame1.AngularStep.Title=" 角度步長 ";
+OptionsFrame.SettingsFrame.DummyFrame1.AngularStep.Help="步進角";
+OptionsFrame.SettingsFrame.DummyFrame1.AngularStep.ShortHelp="焊槍搜索步進角";
+OptionsFrame.SettingsFrame.DummyFrame1.AngularStep.LongHelp="焊槍搜索步進角";
+OptionsFrame.SettingsFrame.DummyFrame1.StepEditor.Help="步進角";
+OptionsFrame.SettingsFrame.DummyFrame1.StepEditor.ShortHelp="焊槍搜索步進角";
+OptionsFrame.SettingsFrame.DummyFrame1.StepEditor.LongHelp="焊槍搜索步進角";
+OptionsFrame.SettingsFrame.CollisionTolerance.Title="沖突公差";
+OptionsFrame.SettingsFrame.CollisionToleranceEditor.Help="沖突公差";
+OptionsFrame.SettingsFrame.CollisionToleranceEditor.ShortHelp="沖突公差";
+OptionsFrame.SettingsFrame.CollisionToleranceEditor.LongHelp="沖突公差";
+
+OptionsFrame.SettingsFrame.DummyFrame2.CheckFlip.Title=" 檢查翻轉 ";
+OptionsFrame.SettingsFrame.DummyFrame2.CheckFlip.Help="檢查翻轉";
+OptionsFrame.SettingsFrame.DummyFrame2.CheckFlip.ShortHelp="將焊槍翻轉 180 度并檢查";
+OptionsFrame.SettingsFrame.DummyFrame2.CheckFlip.LongHelp="將焊槍翻轉 180 度并檢查";
+OptionsFrame.SettingsFrame.DummyFrame2.AnalyzeAll.Title="全面分析";
+OptionsFrame.SettingsFrame.DummyFrame2.AnalyzeAll.Help="選擇以對餅圖進行 360 度全方位計算";
+OptionsFrame.SettingsFrame.DummyFrame2.AnalyzeAll.ShortHelp="選擇以對餅圖進行 360 度全方位計算";
+OptionsFrame.SettingsFrame.DummyFrame2.AnalyzeAll.LongHelp="選擇以對餅圖進行 360 度全方位計算";
+
+// 3951 校正官方漢化OptionsFrame.SettingsFrame.DummyFrame2.CheckFlipButton.Title = " ";
+// 3951 校正官方漢化OptionsFrame.SettingsFrame.DummyFrame2.AnalyzeAllButton.Title = " ";
+
+OptionsFrame.SettingsFrame.AllowFail.Title=" 允許故障 ";
+OptionsFrame.SettingsFrame.AllowFail.Help="允許故障";
+OptionsFrame.SettingsFrame.AllowFail.ShortHelp="如果（不可訪問的焊接數/總焊接數）超過允許的故障，\n則不要檢查其他焊接";
+OptionsFrame.SettingsFrame.AllowFail.LongHelp="允許的故障是一種接受條件，即使計算尚未完成，它仍支持快速排除焊槍。\n通過比率（無法訪問的焊接數/總焊接數）來定義故障。\n在計算過程中，如果此故障超出允許的故障，則計算將在當前的焊槍處停止。\n允許的故障 = 0% 表示無法訪問焊槍，將排除所有焊接。";
+OptionsFrame.SettingsFrame.AllowFailEditor.Help="允許故障";
+OptionsFrame.SettingsFrame.AllowFailEditor.ShortHelp="如果（不可訪問的焊接數/總焊接數）超過允許的故障，\n則不要檢查其他焊接";
+OptionsFrame.SettingsFrame.AllowFailEditor.LongHelp="允許的故障是一種接受條件，即使計算尚未完成，它仍支持快速排除焊槍。\n通過比率（無法訪問的焊接數/總焊接數）來定義故障。\n在計算過程中，如果此故障超出允許的故障，則計算將在當前的焊槍處停止。\n允許的故障 = 0% 表示無法訪問焊槍，將排除所有焊接。";
+
+OptionsFrame.CollisionobjectsFrame.Title="沖突零件";
+OptionsFrame.CollisionobjectsFrame.AddRemoveButton.Title="Add/Remove";
+CollisionParts="沖突零件";
+
+DuplicateGun="方案中已包括以下焊槍： ";
+
+GunNotFound=" 焊槍不存在";
+BestMatchGun1="使用 ";
+BestMatchGun2=" 相同類型的";
+
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE

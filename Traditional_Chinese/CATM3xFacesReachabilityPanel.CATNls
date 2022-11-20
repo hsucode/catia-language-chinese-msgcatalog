@@ -1,0 +1,78 @@
+Title = "Check Reachability Wizard";
+
+CheckFacesWizardStep.Title="Wizard's step";
+
+CheckFacesFrame1.CheckFacesLabelPartBody.Title = "Part body: ";
+CheckFacesFrame1.CheckFacesLabelPartBody.LongHelp="Specifies the支持面body.";
+
+M3xDefineMP="Insertion Level";
+M3xNone="沒有";
+
+LabelDest.Title="Destination";
+EditDest.Title="Insertion Level";
+
+LabelDest="Destination";
+EditDest="Insertion Level";
+
+CheckFacesInsertionPointFrame.LabelDest.Title="Destination";
+CheckFacesInsertionPointFrame.EditDest.Title="Insertion Level";
+
+CheckFacesInsertionPointFrame.LabelDest="Destination";
+CheckFacesInsertionPointFrame.EditDest="Insertion Level";
+CheckFacesInsertionPointFrame.EditDest.LongHelp = "Lets you select an insertion level in the specification tree.";
+
+Axis = "Axis";
+Face = "Face";
+Color = "Color";
+Operation = "操作";
+
+All="All";
+NonReachable="Unreachable";
+Reachable="Reachable";
+
+Roughing="Roughing";
+Finishing="Finishing";
+
+FiltersFrame.SelectTA.LongHelp="Import an assembly from a catalog in order to resolve unreachable faces.";
+
+CheckFacesFrame3.MfgAddToolAxis.Title = "Add a tool axis";
+CheckFacesFrame3.MfgAddToolAxis..LongHelp = "Specifies a new tool axis for the wizzard";
+CheckFacesFrame3.MfgAddFaces.Title = "Add a face for the current tool axis";
+CheckFacesFrame3.MfgAddFaces.LongHelp = "Specifies a new set of faces for the current tool axis";
+NEXT = "NEXT";
+
+RemoveInCompute="Remove from computation";
+AddInCompute="Add in computation";
+
+
+WizardStep.11="選擇 a part to machine";
+WizardStep.12="If needed, you can now add a tool assembly from a catalog";
+WizardStep.21="Choose a tool axis";
+WizardStep.22="Choose a set of faces to machine with the current tool axis";
+WizardStep.23="Run the computation of reachability (NEXT)";
+WizardStep.24="Exclude faces from the wizard";
+WizardStep.31="Processing ...";
+WizardStep.41="Processing of non-reachable faces : You can either select another tool assembly in a catalog";
+WizardStep.42="(a computation will be done) or exclude faces from the wizard";
+WizardStep.51="Creation of roughing operations : Choose the preferred tool assembly for each face";
+WizardStep.61="Creation of roughing operations";
+WizardStep.71="Creation of finishing operations : Choose the preferred tool assembly for each face";
+WizardStep.81="Creation of finishing operations";
+WizardStep.91="Next or Close to finish the command";
+GeometricFilterMsg="Use the filter to select horizontal or vertical set of faces";
+nextMessage="---> NEXT to continue";
+
+Message1="For tool axis number : ";
+Message2=" All faces are reachable";
+Message3=" faces are unreachable";
+Message4=" Assembly : ";
+
+SwitchStatus="Switch status";
+On="On";
+Off="Off";
+MenuItem2="Set as preferred assembly";
+
+NoRoughingOperationsForH="No horizontal faces. No creation of roughing operations";
+NoFinishingOperationsForH="No horizontal faces. No creation of finishing operations";
+NoRoughingOperationsForV="No vertical faces. No creation of roughing operations";
+NoFinishingOperationsForV="No vertical faces. No creation of finishing operations";

@@ -1,0 +1,91 @@
+DialogBoxTitle="階數";
+
+FrameSelection.LongHelp="               選擇
+命令階數的輸入可為曲線和曲面的混合集";
+LabelElements.Title="元素： ";
+LabelElements.LongHelp="可選擇曲線和曲面。
+可使用選擇窗口進行多選擇操作。
+可使用上下文菜單。";
+LabelElements.ShortHelp="選擇曲線和曲面";
+
+FrameOrderU.Title="U";
+FrameOrderU.LongHelp="此為結果的階數。
+階數 U 是曲線的階數和曲面的 u-階數。";
+
+FrameOrderV.Title="V";
+FrameOrderV.LongHelp="此為結果的階數。
+階數 V 是曲面的 v-階數。
+曲線沒有 v-階數。";
+
+LabelLocalOrder.Title="本地階數： ";
+LabelLocalOrder.LongHelp="當僅選擇一個元素時，本地階數才可用。
+當僅選擇一個元素時，所有其他選項均被禁用。
+當選擇另一元素后，本地階數將被禁用。";
+LabelLocalOrder.ShortHelp="確認是否僅選擇了一個元素";
+SpinnerLocalOrderU.LongHelp="本地階數的 U 值是曲線階數或曲面的 u-階數。
+當選擇另一元素后，本地階數將被禁用。";
+SpinnerLocalOrderU.ShortHelp="確認是否僅選擇了一個元素";
+SpinnerLocalOrderV.LongHelp="本地階數的 V 值是輸出曲面的 v-階數。當選擇曲線，本地 V 將被禁用。當選擇另一元素后，本地階數將被禁用。";
+SpinnerLocalOrderV.ShortHelp="確認是否僅選擇了一個曲面";
+
+RadioGlobalOrder.Title="全局階數： ";
+RadioGlobalOrder.LongHelp="用全局階數可以將所有輸出元素的階數固定為指定值";
+RadioGlobalOrder.ShortHelp="固定階數值";
+SpinnerGlobalOrderU.LongHelp="用全局階數 U 可以將所有輸出元素的 u-階數固定為指定值";
+SpinnerGlobalOrderU.ShortHelp="固定 u-階數";
+SpinnerGlobalOrderV.LongHelp="用全局階數 V 可以將所有選定元素的 v-階數固定為指定值";
+SpinnerGlobalOrderV.ShortHelp="固定 v-階數";
+
+RadioMinOrder.Title="最小階數： ";
+RadioMinOrder.LongHelp="用最小階數可將所有輸出元素的最小階數設為指定值";
+RadioMinOrder.ShortHelp="最小階數";
+SpinnerMinOrderU.LongHelp="用最小階數 U 可將所有輸出元素的最小 u-階數設為指定值";
+SpinnerMinOrderU.ShortHelp="最小 u-階數";
+SpinnerMinOrderV.LongHelp="用最小階數 V 可將所有輸出元素的最小 v-階數設為指定值";
+SpinnerMinOrderV.ShortHelp="最小 v-階數";
+
+RadioMaxOrder.Title="最大階數： ";
+RadioMaxOrder.LongHelp="用最大階數可將所有輸出元素的最大階數設為指定值";
+RadioMaxOrder.ShortHelp="最大階數";
+SpinnerMaxOrderU.LongHelp="用最大階數 U 可將所有輸出元素的最大 u-階數設為指定值";
+SpinnerMaxOrderU.ShortHelp="最大 u-階數";
+SpinnerMaxOrderV.LongHelp="用最大階數 V 可將所有輸出元素的最大 v-階數設為指定值";
+SpinnerMaxOrderV.ShortHelp="最大 v-階數";
+
+CheckLinkOrder.Title=" ";
+LinkButtonHLinkOrder.LongHelp="V 已被禁用，所有 V 值等于 U 值";
+LinkButtonHLinkOrder.ShortHelp="V 等于 u";
+
+FrameAnalyse.Title="分析階數";
+FrameAnalyse.LongHelp="所有選定元素的階數信息：
+最小 U：所有元素的最小 u-階數。
+最大 U：所有元素的最大 u-階數。
+最小 V：所有元素的最小 v-階數。
+最大 V：所有元素的最大 v-階數。";
+ButtonAnalyse.Title="分析";
+ButtonAnalyse.ShortHelp="輸入元素的階數";
+ButtonAnalyse.LongHelp="將顯示所有輸入元素的最小和最大 u 和 v 階數";
+CheckDisplaySymbols.Title="符號";
+CheckDisplaySymbols.LongHelp="將在圖形窗口顯示所有元素的方向（箭頭）和階數（值）";
+CheckDisplaySymbols.ShortHelp="顯示方向和階數";
+LabelMinU.Title="最小 U： ";
+LabelMinU.LongHelp="將在此處顯示所有選定元素的最小 u-階數";
+LabelMinU.ShortHelp="所有元素的最小 u-階數";
+LabelMaxU.Title="最大 U： ";
+LabelMaxU.LongHelp="將在此處顯示所有選定元素的最大 u-階數";
+LabelMaxU.ShortHelp="所有元素的最大 u-階數";
+LabelMinV.Title="最小 V： ";
+LabelMinV.LongHelp="將在此處顯示所有選定元素的最小 v-階數。
+曲線沒有 v-階數。";
+LabelMinV.ShortHelp="所有元素的最小 v-階數";
+LabelMaxV.Title="最大 V： ";
+LabelMaxV.LongHelp="將在此處顯示所有選定元素的最大 v-階數。
+曲線沒有 v-階數。";
+LabelMaxV.ShortHelp="所有元素的最大 v-階數";
+
+FrameDeviation.Title="偏差";
+FrameDeviation.LongHelp="將顯示輸入元素與結果之間的最大偏差值。這是所有元素上的最大全局偏差。將在圖形窗口顯示每個元素的最大偏差。";
+///////////////////////////////??????????????????????????????
+LabelMaxDeviation.Title="最大： ";
+LabelMaxDeviation.LongHelp="顯示輸入元素與結果之間的最大偏差值。";
+LabelMaxDeviation.ShortHelp="輸入與結果之間的最大偏差";

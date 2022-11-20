@@ -1,0 +1,131 @@
+// 3951 校正官方漢化=====================================================================================
+// 3951 校正官方漢化                                     CNEXT - CXRn
+// 3951 校正官方漢化                          COPYRIGHT DASSAULT SYSTEMES 1999 
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 FILENAME    :    CATDrwFrameManipulator
+// 3951 校正官方漢化 LOCATION    :    DraftingUI
+// 3951 校正官方漢化 AUTHOR      :    fgx
+// 3951 校正官方漢化 BUT         :    
+// 3951 校正官方漢化 DATE        :    26.11.1999
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 DESCRIPTION :    Tools/Option du Drafting
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 COMMENTS    :    
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 MODIFICATIONS     user  date        purpose
+// 3951 校正官方漢化    HISTORY        ----  ----        -------
+// 3951 校正官方漢化=====================================================================================
+
+frameManip.HeaderFrame.Global.Title="操作器 ";
+frameManip.HeaderFrame.Global.LongHelp="定義用來顯示操作器的
+默認參數。";
+
+frameManip.IconAndOptionsFrame.OptionsFrame.labelManipTransparency.Title="操作器透明度：";
+frameManip.IconAndOptionsFrame.OptionsFrame.labelManipTransparency.LongHelp="定義光標未在操作器上時操作器展示的透明度。";
+frameManip.IconAndOptionsFrame.OptionsFrame.editorManipTransparency.LongHelp="定義光標未在操作器上時操作器展示的透明度。";
+
+frameManip.IconAndOptionsFrame.OptionsFrame.labelManipRefSize.Title="參考大小：";
+frameManip.IconAndOptionsFrame.OptionsFrame.labelManipRefSize.LongHelp="定義用于顯示操作器
+的參考大小。";
+frameManip.IconAndOptionsFrame.OptionsFrame.editorManipRefSize.LongHelp="定義用于顯示操作器
+的參考大小。";
+
+frameManip.IconAndOptionsFrame.OptionsFrame.checkManipZoom.Title="可縮放 ";
+frameManip.IconAndOptionsFrame.OptionsFrame.checkManipZoom.LongHelp="定義操作器是否像幾何圖形那樣可縮放。";
+
+
+frameRotation.HeaderFrame.Global.Title="旋轉";
+frameRotation.HeaderFrame.Global.LongHelp="旋轉
+定義使用“選擇”-“旋轉”命令旋轉元素時
+要考慮的參數。";
+frameRotation.IconAndOptionsFrame.OptionsFrame.checkRotSnapAuto.Title="默認捕捉（SHIFT 切換）";
+frameRotation.IconAndOptionsFrame.OptionsFrame.checkRotSnapAuto.LongHelp="旋轉時激活捕捉。
+按 \"SHIFT\" 鍵來臨時激活/取消激活此選項。";
+frameRotation.IconAndOptionsFrame.OptionsFrame.labelRotSnapAngle.Title="旋轉捕捉角度：";
+frameRotation.IconAndOptionsFrame.OptionsFrame.labelRotSnapAngle.LongHelp="旋轉捕捉角度
+定義使用“選擇”-“旋轉”命令旋轉元素時
+要考慮的捕捉值。";
+
+
+frameDim.HeaderFrame.Global.Title="尺寸操作器";
+frameDim.HeaderFrame.Global.LongHelp="定義在創建和/或修改尺寸時
+要顯示的默認操作器。";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimCreation.Title="創建";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimCreation.LongHelp="定義在創建尺寸時
+要顯示的操作器。";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimModification.Title="修改";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimModification.LongHelp="定義在修改尺寸時
+要顯示的操作器。";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimORun.Title="修改超限： ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimORun.LongHelp="通過修改超限操作器，您可以交互地修改
+每條尺寸界線的超限。";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimBlank.Title="修改消隱： ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimBlank.LongHelp="通過修改消隱操作器，您可以交互地修改
+每條尺寸界線的消隱。";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimBefore.Title="在此之前插入文本： ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimBefore.LongHelp="通過在操作器之前插入文本，您可以輕松地
+在尺寸主值之前插入文本。";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimAfter.Title="在此之后插入文本： ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimAfter.LongHelp="通過在操作器之后插入文本，您可以輕松地
+在尺寸主值之后插入文本。";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimMoveValue.Title="移動值： ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimMoveValue.LongHelp="通過移動值操作器，您可以輕松地
+移動尺寸值（且只限此值）。";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimMoveDimLine.Title="移動尺寸線： ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimMoveDimLine.LongHelp="通過移動尺寸線操作器，您可以輕松地
+移動尺寸線（且只限此線）。";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimMove2dPart.Title="移動尺寸線次要零件： ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimMove2dPart.LongHelp="通過移動尺寸線次要零件操縱器，使您可以輕松地
+移動尺寸線的次要零件（且只限此零件）。";
+
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimMoveLeader.Title="移動尺寸引出線： ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimMoveLeader.LongHelp="通過移動尺寸引出線操作器，您可以輕松地
+移動引出線（且只限此零件）。";
+
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimChangeSymbol.Title="修改符號： ";
+frameDim.IconAndOptionsFrame.OptionsFrame._labelDimChangeSymbol.LongHelp="修改符號操作器讓您能夠輕松更改尺寸符號形狀。";
+
+frameAnnotManip.HeaderFrame.Global.Title="注釋操作器";
+frameAnnotManip.HeaderFrame.Global.LongHelp="定義在選擇和/或編輯文本注釋時顯示的默認操作器。";
+
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelAnnotSelection.Title="選擇";
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelAnnotSelection.LongHelp="定義在選擇注釋時
+要顯示的操作器。";
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelAnnotEdition.Title="編輯文本";
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelAnnotEdition.LongHelp="定義在編輯注釋時
+要顯示的操作器。";
+
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipRotateAnnot.Title="旋轉注釋： ";
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipRotateAnnot.LongHelp="旋轉注釋操作器讓您可以旋轉注釋。";
+
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipTranslationAnnot.Title="拉伸文本： ";
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipTranslationAnnot.LongHelp="拉伸文本操作器讓您可以拉伸注釋文本。";
+
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipResizeAnnot.Title="調整文本大小： ";
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipResizeAnnot.LongHelp="調整文本大小操作器讓您可以調整注釋的大小。";
+
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipMoveValueAnnot.Title="滑動文本： ";
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipMoveValueAnnot.LongHelp="滑動文本操作器讓您可以滑動文本（僅文本，而非其引出線）。";
+
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipTranslationLeader.Title="調整引出線連接大小： ";
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipTranslationLeader.LongHelp="調整引出線連接大小操作器讓您可以調整引出線連接大小（僅連接）。";
+
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipMoveLeaderAnchor.Title="移動引出線定位點： ";
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipMoveLeaderAnchor.LongHelp="移動引出線定位點操作器讓您可以移動引出線的定位點（僅定位點）。";
+
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipMoveLeader.Title="移動引出線： ";
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipMoveLeader.LongHelp="移動引出線操作器讓您可以移動引出線端點（僅端點）。";
+
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipMovableDatum.Title="指示可移動的基準 ： ";
+frameAnnotManip.IconAndOptionsFrame.OptionsFrame._labelManipMovableDatum.LongHelp="指示可移動的基準操作器讓您可以指示基準是否可移動（僅適用于基準目標）。";
+
+

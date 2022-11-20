@@ -1,0 +1,27 @@
+Download.Recovery="已跳過該指令。";
+Upload.Recovery="已將該指令創建為自定義活動。";
+
+Download.Language="用于此轉換器";
+Upload.Language="在 DELMIA 表達式中";
+
+// 3951 校正官方漢化 Generic errors 
+// 3951 校正官方漢化 /p1 is for the Download.Recovery or the Upload.Recovery message.
+// 3951 校正官方漢化 /p2 is for the Download.Language or the Upload.Language message.
+Error.ScientificNotation="表達式中的數字格式無效。  /p1  科學記數法不受 /p2 支持。 您應該在不使用科學記數法的情況下重寫表達式 '/p3'。";
+Error.Binary="表達式中的數字格式無效。  /p1  二進制記數法 (0b10111) 不受 /p2 支持。  您應該在不使用二進制記數法的情況下重寫表達式 '/p3'。";
+Error.Hexidecimal="表達式中的數字格式無效。  /p1  十六進制記數法 (0x1AFF) 不受 /p2 支持。  您應該在不使用十六進制記數法的情況下重寫表達式 '/p3'。";
+Error.Parentheses="表達式中的圓括號無效。  /p1  圓括號不受 /p2 支持。  您應該在不使用圓括號的情況下重寫表達式 '/p3'。";
+Error.Function="表達式中的函數調用無效。  /p1  函數調用不受表達式中 /p2 的支持。  您應該在不調用函數 /p4 的情況下重寫表達式 '/p3'。";
+Error.CondExp="表達式中的條件表達式無效。  /p1  條件表達式 (if exp then exp else exp) 不受其他表達式中 /p2 的支持。  您應該在不使用條件表達式的情況下重寫表達式 '/p3'。  或許您應該改用條件指令。 ";
+Error.InvalidOperator="表達式中的運算符無效。  /p1  運算符 /p4 不受 /p2 支持。  您應該在不使用此運算符的情況下重寫表達式 '/p3'。";
+Error.InvalidFunction="表達式中的函數無效。  /p1  函數 /p4 不受 /p2 支持。  您應該在不使用此函數的情況下重寫表達式 '/p3'。";
+Error.EmptyExpression="表達式無效。  /p1 表達式 '/p3' 包含無效句法或為空。";
+Error.UnknownToken="表達式無效。  /p1 表達式 '/p3' 包含未知令牌 '/p4'。";
+
+// 3951 校正官方漢化 Download specific messages
+Download.Notice.Constants="使用值替換了常量。  不支持將常量用于此轉換器，因此將 /p1 替換為其文本值 /p2。";
+Download.Warning.VariableNotFound="未找到變量聲明。  已跳過該指令。  表達式中使用的變量 /p1 不存在。  您應該修復該表達式或創建該變量。";
+
+// 3951 校正官方漢化 Upload specific messages
+Upload.Warning.VariableNotFound="未找到變量聲明。  表達式中使用的變量 /p1 不存在。  已將變量創建為未知類型的全局變量。由于機器人程序未聲明該變量，因此該錯誤可能已發生。  或者如果這是全局變量，則此錯誤可能表示沒有在與機器人程序相同的目錄下找到全局變量聲明文件。  解決方法是在上載之前手動創建缺少的變量。";
+

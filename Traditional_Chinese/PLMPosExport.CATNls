@@ -1,0 +1,81 @@
+// 3951 校正官方漢化 PLMPosExport help messages
+PLMPosExport_Help_Short.Msg="PLM P&O 和安全性導出管理工具\n",
+"\n",
+"用法：PLMPosExport [-h]\n",
+"                    [-provider providername] -server hostname:portnumber\n",
+"                    -user userid -password password [-context contextid]\n",
+"                    [-plmenv environmentid]\n",
+"                    -object objecttype:objectid...\n",
+"                    -file exportfile";
+PLMPosExport_Help_Extended.Msg="\n",
+"幫助選項\n",
+"-h    打印此幫助\n",
+"\n",
+"連接性選項\n",
+"-provider providername\n",
+"      連接到指定 PLM 提供程序；默認行為是連接到\n",
+"      提供程序 EV5。\n",
+"-server hostname:portnumber\n",
+"      PLM 提供程序的主機名和端口號。\n",
+"-user userid\n",
+"      使用指定的 P&O 用戶 ID 連接。\n",
+"-password password\n",
+"      使用指定的密碼連接。\n",
+"-context contextid\n",
+"      使用指定的 P&O 上下文連接；默認行為是使用\n",
+"      上下文 PLMPOSADMIN.ADMIN.DEFAULT。\n",
+"-plmenv environmentid\n",
+"      加載指定的 PLM 環境，例如，可以指定 \"Engineering_Hub\; \"all\"",
+"      以強制加載所有環境；默認行為是\n",
+"      加載環境 \"VPMPeople\"。\n",
+"\n",
+"導出選項\n",
+"-file exportfile\n",
+"      設置輸入導出文件。\n",
+"-object objecttype:objectid\n",
+"      設置要導出的對象，此對象按其類型和標識符屬性進行標識；\n",
+"      一次可以指定多個對象。\n",
+"      可用的對象類型如下：\n",
+"          協議\n",
+"          好友列表\n",
+"          條件\n",
+"          context\n",
+"          函數\n",
+"          函數 ACI\n",
+"          函數組\n",
+"          函數組 ACI\n",
+"          掩碼\n",
+"          組織\n",
+"          人員\n",
+"          項目\n",
+"          角色\n",
+"          安全級別";
+
+// 3951 校正官方漢化 PLMPosExport global status messages
+PLMPosExport_Status_Error.Msg="錯誤";
+PLMPosExport_Status_Info.Msg="信息";
+PLMPosExport_Status_OK.Msg="確定";
+PLMPosExport_Status_Warning.Msg="警告";
+
+// 3951 校正官方漢化 PLMPosExport global error/warning messages
+PLMPosExport_Error_Connect.Msg="連接到 PLM 提供程序時發生錯誤。";
+PLMPosExport_Error_Context.Msg="錯誤：登錄上下文 /P01 無效。";
+PLMPosExport_Error_CreateSession.Msg="創建用戶會話時發生錯誤。";
+PLMPosExport_Error_ExportFile.Msg="執行導出時發生錯誤。";
+PLMPosExport_Error_Initialize.Msg="初始化導出引擎時發生錯誤。";
+PLMPosExport_Error_MissingOrInvalidArgument.Msg="錯誤：選項缺失或無效。";
+PLMPosExport_Error_SetEnvironment.Msg="設置 PLM 環境時發生錯誤";
+PLMPosExport_Warning_DeleteSession.Msg="刪除用戶會話時發生錯誤。";
+PLMPosExport_Warning_Disconnect.Msg="斷開與 PLM 提供程序的連接時發生錯誤。";
+
+// 3951 校正官方漢化 PLMPosExport execution status messages
+PLMPosExport_Error_CloseFile.Msg="無法關閉導出文件。";
+PLMPosExport_Error_ExecutePreload.Msg="無法執行對象預加載。";
+PLMPosExport_Error_GetObject.Msg="無法獲取對象 /P01 的內容和/或層次結構。";
+PLMPosExport_Error_GetObjects.Msg="無法獲取以下類型的對象：/P01。";
+PLMPosExport_Error_Initialize.Msg="無法初始化導出引擎。";
+PLMPosExport_Error_ObjectNotFound.Msg="找不到對象 /P01。";
+PLMPosExport_Error_PreloadObject.Msg="無法預加載對象 /P01。";
+PLMPosExport_Error_SetFile.Msg="無法設置導出文件。";
+PLMPosExport_Error_Unexpected.Msg="無法執行導出 - 意外錯誤。";
+PLMPosExport_Error_WriteExportFile.Msg="無法寫入到導出文件。";

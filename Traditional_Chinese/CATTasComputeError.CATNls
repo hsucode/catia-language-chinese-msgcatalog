@@ -1,0 +1,202 @@
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化COPYRIGHT DASSAULT SYSTEMES 1999
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化=============================================================================
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化FILENAME: CATTasExplicitError.CATNls
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化=============================================================================
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 Sep. 2000  Creation                                                E. Sellem
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化=============================================================================
+Title.Error = "錯誤";
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化Compute
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+InternalError.Request    = "內部錯誤";
+InternalError.Diagnostic = "";
+InternalError.Advice     = "";
+
+ErrorComputing.WrongAnalysisDocument.Request    = "Computing Tolerance Analysis";
+ErrorComputing.WrongAnalysisDocument.Diagnostic = "An error has been detected on /P01";
+ErrorComputing.WrongAnalysisDocument.Advice     = "Replace the analysis document shape of this product";
+
+ErrorComputing.FEM.Phir.Request    = "Error computing rigid body運動";
+ErrorComputing.FEM.Phir.Diagnostic = "";
+ErrorComputing.FEM.Phir.Advice     = "";
+
+ErrorComputing.FEM.TempoJoint.Request    = "Calculation of /P01 compliance";
+ErrorComputing.FEM.TempoJoint.Diagnostic = "Impossible to generate /P01 (ASMProduct) restraint";
+ErrorComputing.FEM.TempoJoint.Advice     = "Clear out unused specifications to relieve component";
+
+ErrorComputing.FEM.MSA.Request = "Error computing unit load case";
+ErrorComputing.FEM.MSA.Diagnostic = "";
+ErrorComputing.FEM.MSA.Advice     = "";
+
+ErrorComputing.StiffnessMatrix.Request    = "Stiffness Matrix Computation";
+ErrorComputing.StiffnessMatrix.Diagnostic = "At least one analysis parameters of /P01 is不valid";
+ErrorComputing.StiffnessMatrix.Advice     = "檢查 analysis parameters或 replace the CATAnalysis";
+
+ErrorComputing.Mode.Read.Request    = "內部error in mode read operation";
+ErrorComputing.Mode.Read.Diagnostic = "A mode has不been computed";
+ErrorComputing.Mode.Read.Advice     = "Computation relaunch may bypass this problem";
+
+ErrorComputing.Operator.MeshPartNotFound.Request    = "Computing operation /P01";
+ErrorComputing.Operator.MeshPartNotFound.Diagnostic = "The component /P01 is referenced but不involved in the operation";
+ErrorComputing.Operator.MeshPartNotFound.Advice     = "檢查 the positioning system of this operation";
+
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 Product
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+
+ErrorComputing.OperatorProduct.Request   = "Error computing solution for product /P01";
+ErrorComputing.OperatorProduct.Diagnostic = "";
+ErrorComputing.OperatorProduct.Advice     = "";
+
+ErrorComputing.OperatorProduct.RigidBodyMode.Request   = "Solving product /P01 : factorized matrix computation.";
+ErrorComputing.OperatorProduct.RigidBodyMode.Diagnostic= "A rigid body motion has been detected : the product should be positionned at least isostatically";
+ErrorComputing.OperatorProduct.RigidBodyMode.Advice    = "檢查 the positioning system of the product.";
+
+ErrorComputing.OperatorProduct.LocallyOverConstrained.Request   = "Solving product /P01 : constraints analysis";
+ErrorComputing.OperatorProduct.LocallyOverConstrained.Diagnostic= "A redundant constraint has been detected : every constraint should be independant";
+ErrorComputing.OperatorProduct.LocallyOverConstrained.Advice    = "檢查 the positioning system of the product.";
+
+ErrorComputing.OperatorProduct.InfiniteLocalStiffness.Request   = "Solving product /P01 : local compliance computation";
+ErrorComputing.OperatorProduct.InfiniteLocalStiffness.Diagnostic= "A local infinite stiffness has been detected";
+ErrorComputing.OperatorProduct.InfiniteLocalStiffness.Advice    = "檢查 the positioning system of the product.";
+
+ErrorComputing.OperatorProduct.Restitution.Request    = "Restitution computation";
+ErrorComputing.OperatorProduct.Restitution.Diagnostic = "The restitution for product /P01 失敗 ";
+ErrorComputing.OperatorProduct.Restitution.Advice     = "檢查 this product.";
+
+ErrorComputing.OperatorProduct.Restitution.Singularity.Request    = "Restitution computation";
+ErrorComputing.OperatorProduct.Restitution.Singularity.Diagnostic = "The singular restitution for this product is impossible ";
+ErrorComputing.OperatorProduct.Restitution.Singularity.Advice     = "檢查 the singularity of the computed solution";
+
+ErrorComputing.OperatorProduct.Restitution.Classical.Request    = "Restitution computation";
+ErrorComputing.OperatorProduct.Restitution.Classical.Diagnostic = "The computed solution for this product is singular ";
+ErrorComputing.OperatorProduct.Restitution.Classical.Advice     = "Ask a 'singularity' restitution for the product";
+
+ErrorComputing.OperatorProduct.VariatedResource.Request    = "Solving product /P01: deviated positioning system detected";
+ErrorComputing.OperatorProduct.VariatedResource.Diagnostic = "A deviated支持面of /P01 is used to define the product /P02 variation";
+ErrorComputing.OperatorProduct.VariatedResource.Advice     = "檢查 the positioning system of this product";
+
+ErrorComputing.OperatorLoading.NoPositioning.Request    = "Solving product /P01: gravity computation";
+ErrorComputing.OperatorLoading.NoPositioning.Diagnostic = "No positioning constraint could be retrieved";
+ErrorComputing.OperatorLoading.NoPositioning.Advice     = "創建a null 偏差  with apropriate positioning system if needed";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 Activity
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+ErrorComputing.OperatorActivity.Request  = "Error computing solution for activity /P01";
+ErrorComputing.OperatorActivity.Diagnostic = "";
+ErrorComputing.OperatorActivity.Advice     = "";
+
+ErrorComputing.OperatorActivity.RigidBodyMode.Request   = "Solving activity /P01 : factorized matrix computation.";
+ErrorComputing.OperatorActivity.RigidBodyMode.Diagnostic= "A rigid body motion has been detected : every part should be positionned at least isostatically";
+ErrorComputing.OperatorActivity.RigidBodyMode.Advice    = "檢查 the constraints (positioning systems, fastenings, ...) of this activity.";
+
+ErrorComputing.OperatorActivity.LocallyOverConstrained.Request   = "Solving activity /P01 : constraints analysis";
+ErrorComputing.OperatorActivity.LocallyOverConstrained.Diagnostic= "A redundant constraint has been detected : every constraint should be independant";
+ErrorComputing.OperatorActivity.LocallyOverConstrained.Advice    = "檢查 the constraints (positioning systems, fastenings, ...) of this activity.";
+
+ErrorComputing.OperatorActivity.InfiniteLocalStiffness.Request   = "Solving activity /P01 : local compliance computation";
+ErrorComputing.OperatorActivity.InfiniteLocalStiffness.Diagnostic= "A local infinite stiffness has been detected";
+ErrorComputing.OperatorActivity.InfiniteLocalStiffness.Advice    = "檢查 the constraints (positioning systems, fastenings, ...) of this activity.";
+
+ErrorComputing.OperatorActivity.ConstraintInfinitelyStiff.Request   = "Solving activity /P01 : constraints analysis";
+ErrorComputing.OperatorActivity.ConstraintInfinitelyStiff.Diagnostic= "An invalid constraint has been detected";
+ErrorComputing.OperatorActivity.ConstraintInfinitelyStiff.Advice    = "檢查 the constraints (positioning systems, fastenings, ...) of this activity.";
+
+ErrorComputing.OperatorActivity.Restitution.Request    = "Restitution computation";
+ErrorComputing.OperatorActivity.Restitution.Diagnostic = "The restitution for activity /P01 失敗 ";
+ErrorComputing.OperatorActivity.Restitution.Advice     = "檢查 this activity";
+
+ErrorComputing.OperatorActivity.Restitution.Singularity.Request    = "Restitution computation";
+ErrorComputing.OperatorActivity.Restitution.Singularity.Diagnostic = "The singular restitution for this activity 失敗 ";
+ErrorComputing.OperatorActivity.Restitution.Singularity.Advice     = "檢查 the singularity of the computed solution";
+
+ErrorComputing.OperatorActivity.Restitution.Classical.Request    = "Restitution computation";
+ErrorComputing.OperatorActivity.Restitution.Classical.Diagnostic = "The computed solution of this activity is singular ";
+ErrorComputing.OperatorActivity.Restitution.Classical.Advice     = "Ask the 'Singularity' restitution of the acivity";
+
+ErrorComputing.OperatorActivity.MeshPartNotFound.Request    = "Activity check before computing";
+ErrorComputing.OperatorActivity.MeshPartNotFound.Diagnostic = "The product /P01 is不involved in the activity /P02";
+ErrorComputing.OperatorActivity.MeshPartNotFound.Advice     = "檢查 the released mechanical joints of this activity";
+
+ErrorComputing.OperatorActivity.ProductRedundant.Request    = "Solving activity /P01 : product redundancy detected in previous activities";
+ErrorComputing.OperatorActivity.ProductRedundant.Diagnostic = "The product /P01 is present in at least two previous parallel activities";
+ErrorComputing.OperatorActivity.ProductRedundant.Advice     = "檢查 the assignments of the previous activities";
+
+ErrorComputing.OperatorActivity.ProductMissing.Request    = "Solving activity /P01 : a product is no longer assigned";
+ErrorComputing.OperatorActivity.ProductMissing.Diagnostic = "The product /P01 is present in at least one previous activity but is不assigned to /P02";
+ErrorComputing.OperatorActivity.ProductMissing.Advice     = "檢查 the assignments of the current activity";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 Joint Creation
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+CreateSpiders.ComputeFailed.Request    = "Mesh Joint Element Creation";
+CreateSpiders.ComputeFailed.Diagnostic = "The following data are to far from mesh /P01: /P02";
+CreateSpiders.ComputeFailed.Advice     = "Modify the constraints或 change the option distance between geometry and point ";
+
+CreateSpiders.Mesher.Request    = "Meshing /P01 connection in /P02";
+CreateSpiders.Mesher.Diagnostic = "Could不generate interpolation elements for /P01";
+CreateSpiders.Mesher.Advice     = "檢查 the location of the points或 modify the maximal distance between geometry and point in tools-option";
+
+CreateSpiders.AutoWild.Request    = "Could不generate interpolation elements for /P01";
+CreateSpiders.AutoWild.Diagnostic = "Could不generate interpolation elements for /P01";
+CreateSpiders.AutoWild.Advice     = " ";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 Meshing
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+ErrorComputing.Meshing.Request    = "Meshing";
+ErrorComputing.Meshing.Diagnostic = "Error while meshing product /P01";
+ErrorComputing.Meshing.Advice     = "";
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 GetClosestNode
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+GetClosestNode.EmptyMesh.Request    = "Looking for the nearest node of the mesh";
+GetClosestNode.EmptyMesh.Diagnostic = "The mesh is empty";
+GetClosestNode.EmptyMesh.Advice     = "檢查 the mesh";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 NormalEvaluatedAtNode
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+ErrorComputing.NormalEvaluatedAtNode.Request    = "Computing Normal Evaluated At 節點";
+ErrorComputing.NormalEvaluatedAtNode.Diagnostic = "The normal cannot be computed on an isolated mono-dimensional圖元";
+ErrorComputing.NormalEvaluatedAtNode.Advice     = "檢查 the mesh";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------------------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 TolerancingTranslation
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------------------
+ErrorComputing.TolerancingTranslation.Request    = "Annotation Translation";
+ErrorComputing.TolerancingTranslation.Diagnostic = "Annotation Translation Failed";
+ErrorComputing.TolerancingTranslation.Advice     = "";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------------------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 Sample MV Build
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------------------
+ErrorUpdating.SampleMVBuild.Request    = "Updating Correlated偏差";
+ErrorUpdating.SampleMVBuild.Diagnostic = "The measurement file of /P01 (/P02) is不correct";
+ErrorUpdating.SampleMVBuild.Advice     = "Modify the Measuremnt file";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------------------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 Updating Feature
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------------------
+ErrorUpdating.Feature.Request    = "Updating Feature";
+ErrorUpdating.Feature.Diagnostic = "An error occurs updating /P01";
+ErrorUpdating.Feature.Advice     = "檢查 this Feature";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------------------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 Explicitation
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------------------
+ErrorComputing.Explicitation.Datum.Request    = "Datum translation";
+ErrorComputing.Explicitation.Datum.Diagnostic = "Datum translation /P01 failed";
+ErrorComputing.Explicitation.Datum.Advice     = "檢查 the pointed geometry";
+
+ErrorComputing.Explicitation.Target.Request    = "目標 translation";
+ErrorComputing.Explicitation.Target.Diagnostic = "目標 translation /P01 failed";
+ErrorComputing.Explicitation.Target.Advice     = "檢查 the pointed geometry";
+
+ErrorComputing.Explicitation.Deviation.Request    = "Deviation explicitation";
+ErrorComputing.Explicitation.Deviation.Diagnostic = "Deviation /P01 explicitation failed";
+ErrorComputing.Explicitation.Deviation.Advice     = "檢查 the deviation或 delete and recreate it";

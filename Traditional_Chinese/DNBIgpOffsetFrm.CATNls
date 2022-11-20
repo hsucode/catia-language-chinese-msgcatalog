@@ -1,0 +1,66 @@
+// 3951 校正官方漢化*****************************************************************************
+// 3951 校正官方漢化  OFFSET FRAME
+// 3951 校正官方漢化*****************************************************************************
+Title="Offsets";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Labels/Captions
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+lblStartOffset.Title="開始長度";
+lblStopOffset.Title="終止長度";
+lblBaseOffset.Title="基底偏移";
+lblWallOffset.Title="墻壁偏移";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Short Help
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+pStartOffsetFrame.ShortHelp="輸入/修改開始長度";
+pStopOffsetFrame.ShortHelp="輸入/修改停止長度";
+
+lblStartOffset.ShortHelp="從曲線起點到焊接起點的曲線長度";
+lblStopOffset.ShortHelp="從曲線起點到焊接終點的曲線長度";
+
+pBaseOffsetFrame.ShortHelp="輸入/修改基底偏移";
+pWallOffsetFrame.ShortHelp="輸入/修改墻壁偏移";
+
+lblBaseOffset.ShortHelp="自基曲面的線性偏移";
+lblWallOffset.ShortHelp="自壁面的線性偏移";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Long Help
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+lblStartOffset.LongHelp="從曲線起點到焊接起點的曲線長度。
+第一個標記將是按給定距離劃分的自幾何曲線起點的偏移。";
+
+lblStopOffset.LongHelp="從曲線起點到焊接終點的曲線長度。
+最終標記將位于沿幾何曲線的此長度處。";
+
+lblBaseOffset.LongHelp="自基曲面的線性偏移。
+每個標記都將是法線方向上按給定距離劃分的自基曲面的偏移。";
+
+lblWallOffset.LongHelp="自壁面的線性偏移。
+每個標記都將是法線方向上按給定距離劃分的自壁面的偏移。";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Parameter 默認值
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+StartOffsetMinimum="-1000";
+StartOffsetMaximum="1000";
+StartOffsetDefault="0";
+StartOffsetStep="1";
+
+StopOffsetMinimum="-1000";
+StopOffsetMaximum="10000";
+StopOffsetDefault="0";
+StopOffsetStep="1";
+
+BaseOffsetMinimum="-1000";
+BaseOffsetMaximum="1000";
+BaseOffsetDefault="0";
+BaseOffsetStep="1";
+
+WallOffsetMinimum="-1000";
+WallOffsetMaximum="1000";
+WallOffsetDefault="0";
+WallOffsetStep="1";
+

@@ -1,0 +1,318 @@
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化 CCE kinematic NLS-File Number range x16000..x16999
+// 3951 校正官方漢化
+// 3951 校正官方漢化 $Revision: 1.40 $
+// 3951 校正官方漢化 $Date: 2010/04/16 10:23:57MESZ $
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Syntax:
+// 3951 校正官方漢化   <ModuleId>_<MsgId>.<Key> = "Text";
+// 3951 校正官方漢化   where 
+// 3951 校正官方漢化     ModuleId: Text   - for classification (internally not used yet)
+// 3951 校正官方漢化     MsgId   : Number - Messagenumber (first digit is severity)
+// 3951 校正官方漢化     Key     : Text   - "iSev" -> Severity
+// 3951 校正官方漢化                        "sMsg" -> Short Message Text (not used yet)
+// 3951 校正官方漢化                        "lMsg" -> Long Message Text
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Limitations:
+// 3951 校正官方漢化    # max. nb. of parameters supported: /P1 .. /P25
+// 3951 校正官方漢化    # max. nb. of lMsg-lines: 10
+// 3951 校正官方漢化    # Key iSev has to be before lMsg 
+// 3951 校正官方漢化
+// 3951 校正官方漢化 =====================================================================
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Information messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化CCE_IM116000.iSev = "1";
+// 3951 校正官方漢化CCE_IM116000.sMsg = "Info";
+// 3951 校正官方漢化CCE_IM116000.lMsg = "Application Information - Param: /P1";
+
+CCE_IM116001.iSev="1";
+CCE_IM116001.sMsg="Info";
+CCE_IM116001.lMsg="對于所有軸計算 (/P1)，將使用“直線 + 旋轉 - 軸”計算方式。";
+
+CCE_IM116002.iSev="1";
+CCE_IM116002.sMsg="Info";
+CCE_IM116002.lMsg="當前刀具 '/P1' 具有多個刀具 /P2 補償。";
+
+CCE_IM116003.iSev="1";
+CCE_IM116003.sMsg="Info";
+CCE_IM116003.lMsg="已選定補償 Id '/P1'。";
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Warning messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化CCE_WM316000.iSev = "3";
+// 3951 校正官方漢化CCE_WM316000.sMsg = "Warn";
+// 3951 校正官方漢化CCE_WM316000.lMsg = "Application Warning - Param: /P1";
+
+CCE_EM316001.iSev="3";
+CCE_EM316001.sMsg="Warning";
+CCE_EM316001.lMsg="設置值 '/P1' 超出軸 '/P4' 的范圍 [/P2 ... /P3]。";
+
+CCE_EM316002.iSev="4";
+CCE_EM316002.sMsg="Warning";
+CCE_EM316002.lMsg="通過讀取機床描述文件找到多個 '/P1' 元素。將接受第一個元素。";
+
+CCE_EM316003.iSev="4";
+CCE_EM316003.sMsg="Warning";
+CCE_EM316003.lMsg="找不到當前刀具 '/P2' 的任何刀具 /P1 補償。";
+
+CCE_EM316004.iSev="4";
+CCE_EM316004.sMsg="Warning";
+CCE_EM316004.lMsg="在 '/P3' 優化期間，設置值 /P1 = /P2。";
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Error messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化CCE_EM416000.iSev = "4";
+// 3951 校正官方漢化CCE_EM416000.sMsg = "Err";
+// 3951 校正官方漢化CCE_EM416000.lMsg = "Application Error - Param1: /P1";
+
+CCE_EM416001.iSev="4";
+CCE_EM416001.sMsg="Err";
+CCE_EM416001.lMsg="類型為 '/P1' 的鏈式項目未知。請檢查機床描述。";
+
+CCE_EM416002.iSev="4";
+CCE_EM416002.sMsg="Err";
+CCE_EM416002.lMsg="無法通過讀取機床描述文件找到類型為 '/P2' 的“項目”元素的 '/P1' 屬性。";
+
+CCE_EM416003.iSev="4";
+CCE_EM416003.sMsg="Err";
+CCE_EM416003.lMsg="無法通過讀取機床描述文件讀取類型為 '/P2' 的“項目”元素的 '/P1' 屬性。";
+
+CCE_EM416004.iSev="4";
+CCE_EM416004.sMsg="Err";
+CCE_EM416004.lMsg="無法通過讀取機床描述文件找到類型為 '/P2' 的“項目”元素的 '/P1' 元素。";
+
+CCE_EM416005.iSev="4";
+CCE_EM416005.sMsg="Err";
+CCE_EM416005.lMsg="類型為 '/P1' 的鏈條接合點未知。請檢查機床描述。";
+
+CCE_EM416006.iSev="4";
+CCE_EM416006.sMsg="Err";
+CCE_EM416006.lMsg="'/P1' 項目的下一個接合點編號小于 2。請檢查機床描述。";
+
+CCE_EM416007.iSev="4";
+CCE_EM416007.sMsg="Err";
+CCE_EM416007.lMsg="惰性項目的下一個接合點 '/P1' 為 NULL。請檢查機床描述。";
+
+CCE_EM416008.iSev="4";
+CCE_EM416008.sMsg="Err";
+CCE_EM416008.lMsg="'/P1' 的上一個接合點不為 NULL。請檢查機床描述。";
+
+CCE_EM416009.iSev="4";
+CCE_EM416009.sMsg="Err";
+CCE_EM416009.lMsg="'/P1' 的下一個接合點編號非 0。請檢查機床描述。";
+
+CCE_EM416010.iSev="4";
+CCE_EM416010.sMsg="Err";
+CCE_EM416010.lMsg="'/P1' 項目的下一個接合點 '/P2' 不為 NULL。請檢查機床描述。";
+
+CCE_EM416011.iSev="4";
+CCE_EM416011.sMsg="Err";
+CCE_EM416011.lMsg="'/P1' 的上一個接合點為 NULL。請檢查機床描述。";
+
+CCE_EM416012.iSev="4";
+CCE_EM416012.sMsg="Err";
+CCE_EM416012.lMsg="'/P1' 項目的下一個接合點編號為 0。請檢查機床描述。";
+
+CCE_EM416013.iSev="4";
+CCE_EM416013.sMsg="Err";
+CCE_EM416013.lMsg="“實體”項目的下一個接合點 '/P1' 為 NULL。請檢查機床描述。";
+
+CCE_EM416014.iSev="4";
+CCE_EM416014.sMsg="Err";
+CCE_EM416014.lMsg="'/P1' 項目的上一個接合點 '/P1' 為 NULL，請檢查機床描述。";
+
+CCE_EM416015.iSev="4";
+CCE_EM416015.sMsg="Err";
+CCE_EM416015.lMsg="接合點之前的部分項目為 NULL。請檢查機床描述。";
+
+CCE_EM416016.iSev="4";
+CCE_EM416016.sMsg="Err";
+CCE_EM416016.lMsg="接合點的部分后續項目為 NULL。請檢查機床描述。";
+
+CCE_EM416017.iSev="4";
+CCE_EM416017.sMsg="Err";
+CCE_EM416017.lMsg="無法通過讀取機床描述文件/P1 '/P3' 元素的 '/P2' 屬性。";
+
+CCE_EM416018.iSev="4";
+CCE_EM416018.sMsg="Err";
+CCE_EM416018.lMsg="無法通過讀取機床描述文件/P1 '/P3' 元素的子級元素 '/P2'。";
+
+CCE_EM416019.iSev="4";
+CCE_EM416019.sMsg="Err";
+CCE_EM416019.lMsg="無法通過讀取機床描述文件找到 '/P1' 元素的任何子級元素。";
+
+CCE_EM416020.iSev="4";
+CCE_EM416020.sMsg="Err";
+CCE_EM416020.lMsg="無法通過讀取機床描述文件找到類型為 '/P2' 的“接合點”元素的 '/P1' 屬性。";
+
+CCE_EM416021.iSev="4";
+CCE_EM416021.sMsg="Err";
+CCE_EM416021.lMsg="無法通過讀取機床描述文件讀取類型為 '/P2' 的“接合點”元素的 '/P1' 屬性。";
+
+CCE_EM416022.iSev="4";
+CCE_EM416022.sMsg="Err";
+CCE_EM416022.lMsg="無法通過讀取機床描述文件找到接合點的 '/P2' 元素的 '/P1' 屬性。";
+
+CCE_EM416023.iSev="4";
+CCE_EM416023.sMsg="Err";
+CCE_EM416023.lMsg="無法通過讀取機床描述文件找到類型為 '/P2' 的 '/P1' 元素。";
+
+CCE_EM416024.iSev="4";
+CCE_EM416024.sMsg="Err";
+CCE_EM416024.lMsg="無法通過讀取機床描述文件找到 '/P3'-'/P4' 的 '/P2' 元素的 '/P1' 屬性。";
+
+CCE_EM416025.iSev="4";
+CCE_EM416025.sMsg="Err";
+CCE_EM416025.lMsg="無法通過讀取機床描述文件讀取 '/P3'-'/P4' 的 '/P2' 元素的 '/P1' 屬性。";
+
+CCE_EM416026.iSev="4";
+CCE_EM416026.sMsg="Err";
+CCE_EM416026.lMsg="無法通過讀取機床描述文件找到名稱為 '/P3' 的 '/P2' 元素的 '/P1' 屬性。";
+
+CCE_EM416027.iSev="4";
+CCE_EM416027.sMsg="Err";
+CCE_EM416027.lMsg="無法通過讀取機床描述文件找到 '/P2'-'/P3' 的 '/P1' 元素。";
+
+CCE_EM416028.iSev="4";
+CCE_EM416028.sMsg="Err";
+CCE_EM416028.lMsg="無法通過讀取機床描述文件找到名稱為 '/P3' 的 '/P2' 元素的 '/P1' 元素。";
+
+CCE_EM416030.iSev="4";
+CCE_EM416030.sMsg="Err";
+CCE_EM416030.lMsg="機床描述不正確。名稱為 '/P1' 的實體框架與名稱為 '/P2' 的上一個實體框架（或其他鏈式項目）不相同。";
+
+CCE_EM416031.iSev="4";
+CCE_EM416031.sMsg="Err";
+CCE_EM416031.lMsg="無法為刀具 '/P2' 找到 ID = /P1 的刀具長度補償。";
+
+CCE_EM416032.iSev="4";
+CCE_EM416032.sMsg="Err";
+CCE_EM416032.lMsg="無法為刀具 '/P2' 找到 ID = /P1 的刀具半徑補償。";
+
+CCE_EM416033.iSev="4";
+CCE_EM416033.sMsg="Err";
+CCE_EM416033.lMsg="'???PosList' 元素中的“軸”元素編號不正確（N = /P1，必須為 /P2）。";
+
+CCE_EM416034.iSev="4";
+CCE_EM416034.sMsg="Err";
+CCE_EM416034.lMsg="無法通過讀取機床描述文件找到類型為 '/P2' 的“原點列表”元素的 '/P1' 元素。";
+
+CCE_EM416035.iSev="4";
+CCE_EM416035.sMsg="Err";
+CCE_EM416035.lMsg="在刀具列表中找不到名稱為 '/P1' 的刀具。/P2";
+
+CCE_EM416036.iSev="4";
+CCE_EM416036.sMsg="Err";
+CCE_EM416036.lMsg="在原點列表中找不到名稱為 '/P1' 組 ID = /P2 的原點。";
+
+CCE_EM416037.iSev="4";
+CCE_EM416037.sMsg="Err";
+CCE_EM416037.lMsg="無法通過讀取機床描述文件讀取其中一個項目的 '/P1'。";
+
+CCE_EM416038.iSev="4";
+CCE_EM416038.sMsg="Err";
+CCE_EM416038.lMsg="無法通過讀取機床描述文件找到 '/P4' 的 '/P2'-'/P3' 的 '/P1' 元素。";
+
+CCE_EM416039.iSev="4";
+CCE_EM416039.sMsg="Err";
+CCE_EM416039.lMsg="找不到 id = /P1 的鏈條接合點。請檢查機床描述文件。";
+
+CCE_EM416040.iSev="4";
+CCE_EM416040.sMsg="Err";
+CCE_EM416040.lMsg="驗證問題：“軸數據”實例中的元素數 (n=/P1) 不正確（“元素順序”n=/P2 中的元素數）。";
+
+CCE_EM416041.iSev="4";
+CCE_EM416041.sMsg="Err";
+CCE_EM416041.lMsg="無法定義 id = '/P2' 的鏈條接合點（類型為 '/P1'）的“自由軸”。它應是 'X'、'Y' 或 'Z'。";
+
+CCE_EM416042.iSev="4";
+CCE_EM416042.sMsg="Err";
+CCE_EM416042.lMsg="無法為 '/P3' 優化處理設置值 /P1 = /P2。允許的間隔：/P4.../P5。";
+
+CCE_EM416043.iSev="4";
+CCE_EM416043.sMsg="Err";
+CCE_EM416043.lMsg="無法通過讀取機床描述文件驗證軸 '/P1'（最小值 =/P2，最大值 =/P3）的限制值。";
+
+CCE_EM416044.iSev="4";
+CCE_EM416044.sMsg="Err";
+CCE_EM416044.lMsg="無法更改鎖定軸 'P1' 的值。";
+
+CCE_EM416045.iSev="4";
+CCE_EM416045.sMsg="Err";
+CCE_EM416045.lMsg="無法獲取 id = /P1 的 kin. 參數。";
+
+CCE_EM416046.iSev="4";
+CCE_EM416046.sMsg="Err";
+CCE_EM416046.lMsg="id = /P1 的檢索 kin.參數不是 /P2。";
+
+CCE_EM416047.iSev="4";
+CCE_EM416047.sMsg="Err";
+CCE_EM416047.lMsg="id = /P1 的檢索 kin.參數不是 '/P2' 類型。";
+
+CCE_EM416048.iSev="4";
+CCE_EM416048.sMsg="Err";
+CCE_EM416048.lMsg="在當前單元中找不到軸 '/P1'。";
+
+CCE_EM416049.iSev="4";
+CCE_EM416049.sMsg="Err";
+CCE_EM416049.lMsg="不允許對軸 '/P2' 同時使用參數/P1。";
+
+CCE_EM416050.iSev="4";
+CCE_EM416050.sMsg="Err";
+CCE_EM416050.lMsg="無法檢索刀具信息。尚未設置活動的刀具。";
+
+CCE_EM416051.iSev="4";
+CCE_EM416051.sMsg="Err";
+CCE_EM416051.lMsg="第一個和第二個旋轉軸被標記為“對 SEQ 參數啟用”。請檢查 PP 的 'MCE_SECTION'。";
+
+CCE_EM416052.iSev="4";
+CCE_EM416052.sMsg="Err";
+CCE_EM416052.lMsg="無法通過參數 '/P2' 找到軸 '/P1' 的解法。請檢查 SEQ 參數或軸限制。";
+
+CCE_EM416053.iSev="4";
+CCE_EM416053.sMsg="Err";
+CCE_EM416053.lMsg="軸 '/P1' 的兩個解法均為 '/P2'，不適用，因為設置參數為 '/P3'。";
+
+CCE_EM416054.iSev="4";
+CCE_EM416054.sMsg="Err";
+CCE_EM416054.lMsg="無法通過特殊軸 '/P2' = /P3 的當前狀態達到機床的刀具向量 /P1 的所需狀態。";
+
+CCE_EM416055.iSev="4";
+CCE_EM416055.sMsg="Err";
+CCE_EM416055.lMsg="無法達到機床的刀具向量 /P1 的所需狀態。";
+
+CCE_EM416056.iSev="4";
+CCE_EM416056.sMsg="Err";
+CCE_EM416056.lMsg="在機床描述中，自由移動向量 /P1 和軸 /P3 的方向法向量 /P2 不屬于正交關系。";
+
+CCE_EM416057.iSev="4";
+CCE_EM416057.sMsg="Err";
+CCE_EM416057.lMsg="在機床描述中，方向軸 '/P1' 的自由移動軸不是 'Z' 軸。這不受支持。";
+
+CCE_EM416058.iSev="4";
+CCE_EM416058.sMsg="Err";
+CCE_EM416058.lMsg="刀具編號為 /P1 的刀具和 /P2 注冊號 /P3 已存在刀具列表中。這將會在 ISO 模擬中產生不可預測的結果。請更改刀具編號或刪除未使用的資源。";
+
+CCE_EM416059.iSev="4";
+CCE_EM416059.sMsg="Err";
+CCE_EM416059.lMsg="無法替換刀具 /P1 補償值：所有補償注冊均未處于活動狀態";
+
+
+
+
+// 3951 校正官方漢化CCE_EM516000.iSev = "5";
+// 3951 校正官方漢化CCE_EM516000.sMsg = "Err";
+// 3951 校正官方漢化CCE_EM516000.lMsg = "Application Error - Param1: /P1";
+
+
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化 End of CCE utility NLS-File
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化

@@ -1,0 +1,86 @@
+// 3951 校正官方漢化 COPYRIGHT Dassault Systemes 2008
+// 3951 校正官方漢化===================================================================
+
+BlankLineLabel030Id.Title="  ";
+BlankLineLabel031Id.Title="  ";
+BlankLineLabel032Id.Title="  ";
+DraftBehaviorFrameId.DraftBehaviorLabelId.Title="拔模操作:  ";
+
+DraftFirstLimitFrameId.DraftFirstLimitLabelId.Title="角度:                ";
+DraftFirstLimitFrameId.DraftFirstLimitReverseAnglePushButtonId.Title="反轉";
+
+DraftClearanceFrameId.DraftClearanceLabelId.Title="包絡體間隙角度:";
+DraftClearanceFrameId.DraftClearanceReverseAnglePushButtonId.Title="反轉";
+
+DraftApplyFromFrameId.Title="中性元素: ";
+DraftApplyFromFrameId.DraftApplyFromSelectionFrameId.DraftApplyFromSelectionLabelId.Title="選擇:  ";
+DraftApplyFromLabelId.Title="中性元素:";
+FacesToDraftFrameId.Title="要拔模的面";
+
+DraftMiscOptionsFrameId.DraftBothSidesCheckButtonId.Title="雙側拔模";
+DraftMiscOptionsFrameId.DraftProfileEndsCheckButtonId.Title="拔模輪廓端";
+DraftMiscOptionsFrameId.DraftFilletSurfacesCheckButtonId.Title="拔模圓角";
+DraftMiscOptionsFrameId.PartingEqualNeutralCheckButtonId.Title="分離 = 中性";
+
+DraftBehaviorNoneId="無";
+DraftBehaviorIntrinsicId="固有特征";
+
+DraftApplyFromProfilePlaneId="輪廓平面";
+DraftApplyFromRibsTopSurfId="肋頂部曲面";
+DraftApplyFromRibsBottomSurfId="肋底部曲面";
+DraftApplyFromSpikesTopSurfId="尖峰頂部曲面";
+DraftApplyFromSpikesBottomSurfId="尖峰底部曲面";
+DraftApplyFromPartingElementId="使用分離元素";
+
+FaceToDraftAllLateralId="所有側面";
+FaceToDraftByPullDirId="按拔模方向選擇";
+FaceToDraftSelectId="選擇輪廓曲線";
+
+NoSelectionId="無選擇";
+
+FacesToDraftCurvesSelectionLabelId="曲線:     ";
+
+NeutralElement3DLabelId="中性元素";
+
+// 3951 校正官方漢化===================================================================
+// 3951 校正官方漢化 LongHelp
+// 3951 校正官方漢化===================================================================
+
+DraftBehaviorFrameId.LongHelp="指定是否拔模特征；若拔模，指定在何處定義拔模參數。";
+
+DraftFirstLimitFrameId.DraftFirstLimitLabelId.LongHelp="指定拔模斜度值。該值
+必須介于 -85 度到 85 度之間(包括)。";
+
+DraftFirstLimitFrameId.DraftFirstLimitReverseAnglePushButtonId.LongHelp="反轉藍色圓錐體指示的拔模斜度。";
+
+DraftClearanceFrameId.DraftClearanceLabelId.LongHelp="指定拔模間隙斜度值。該值
+必須介于 -85 度到 85 度之間(包括)。";
+
+DraftClearanceFrameId.DraftClearanceReverseAnglePushButtonId.LongHelp="反轉紅色圓錐體指示的拔模間隙斜度。";
+
+DraftApplyFromFrameId.LongHelp="中性元素參數。";
+
+DraftApplyFromFrameId.DraftApplyFromComboId.LongHelp="指定拔模中性元素的位置。";
+
+DraftApplyFromFrameId.DraftApplyFromSelectionFrameId.LongHelp="指定中性元素平面或曲面。";
+
+FacesToDraftFrameId.LongHelp="要拔模的面的參數。";
+
+FacesToDraftFrameId.FacesToDraftComboId.LongHelp="指定用于確定特征的哪些面要拔模的方法。
+“所有側面”表示除了限值封蓋面之外的所有面。
+“按拔模方向選擇”表示垂直于拔模方向的所有面。";
+
+FacesToDraftFrameId.FacesToDraftSelectionFrameId.LongHelp="通過選擇輪廓曲線指定要拔模的面。由選定曲線生成的側面將被拔模。";
+
+FacesToDraftFrameId.FacesToDraftOptionsFrameId.DraftFirstLimitFaceCheckButtonId.LongHelp="指示限值處的封蓋面將被拔模。";
+
+FacesToDraftFrameId.FacesToDraftOptionsFrameId.DraftSecondLimitFaceCheckButtonId.LongHelp="指示限值處的封蓋面將被拔模。";
+
+DraftMiscOptionsFrameId.PartingEqualNeutralCheckButtonId.LongHelp="表示分離元素等于中性元素。其可用性取決于拔模操作和中性元素樣式。";
+
+DraftMiscOptionsFrameId.DraftBothSidesCheckButtonId.LongHelp="表示面將從分離元素沿兩個方向被拔模。
+僅當“分離 = 中性”開關設為“開啟”時可用。";
+
+DraftMiscOptionsFrameId.DraftProfileEndsCheckButtonId.LongHelp="表示開放輪廓的端部將被拔模。";
+
+DraftMiscOptionsFrameId.DraftFilletSurfacesCheckButtonId.LongHelp="指示在創建圓角曲面之后，將應用拔模。";

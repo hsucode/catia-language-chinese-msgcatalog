@@ -1,0 +1,147 @@
+// 3951 校正官方漢化************************************************************
+// 3951 校正官方漢化 Resource team shared Errors
+// 3951 校正官方漢化************************************************************
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Please fullfill following fields for each error: 
+// 3951 校正官方漢化
+// 3951 校正官方漢化       ERR_xxx.Request	= "What you tried to do." 
+// 3951 校正官方漢化       ERR_xxx.Diagnostic 	= "What happened."
+// 3951 校正官方漢化       ERR_xxx.Advice     	= "What has to be achieved by end-user or API caller."
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Only ERR_xxx.Diagnostic is Mandatory	
+// 3951 校正官方漢化               NOTE : Le parametrage de chaque facette se fait par :
+// 3951 校正官方漢化                         Request    : SetNLSRequestParams
+// 3951 校正官方漢化                         Diagnostic : SetNLSDiagnosticParams
+// 3951 校正官方漢化                         Advice     : SetNLSAdviceParams
+// 3951 校正官方漢化
+// 3951 校正官方漢化************************************************************
+
+ModelerError.Title="資源建模器錯誤";
+
+// 3951 校正官方漢化************************************************************
+// 3951 校正官方漢化 Generic Errors (From 0 to 999)
+// 3951 校正官方漢化************************************************************
+ERR_0.Request="基礎建模器錯誤。";
+ERR_0.Diagnostic="出現故障。\n 錯誤為：/p1。";
+ERR_0.Advice="請重試。如果問題仍然存在，請聯系您的本地支持。";
+
+ERR_1.Request="正在創建“/P1”類型的 PLM 對象：";
+ERR_1.Diagnostic="無法創建 PLM 對象。";
+ERR_1.Advice="請在“PLM 訪問 > 創建首選項”中定義一個環境，或確定對象名稱'/p1'沒有被使用。";
+
+ERR_2.Request="正在創建“/P1”類型的 PLM 對象：";
+ERR_2.Diagnostic="創建失敗，因為：/p1";
+ERR_2.Advice="/p1";
+
+
+// 3951 校正官方漢化************************************************************
+// 3951 校正官方漢化 Resource specific errors (From 1000 to 4999)
+// 3951 校正官方漢化************************************************************
+ERR_1000.Diagnostic="資源建模器錯誤。";
+ERR_1000.Advice="請重試。如果問題仍然存在，請聯系您的本地支持。";
+
+ERR_1001.Request="正在使用要鏈接的對象創建“/P1”類型的 PLM 對象：";
+ERR_1001.Diagnostic="無法創建 PLM 對象。";
+ERR_1001.Advice="請對比“/p1”，檢查要鏈接的對象處于適當的位置。";
+
+ERR_1002.Request="獲取 PLMId";
+ERR_1002.Diagnostic="未定義環境。";
+ERR_1002.Advice="請在“PLM 訪問 > 創建首選項”中定義一個環境。";
+
+
+ERR_1003.Request="創建實施鏈接";
+ERR_1003.Diagnostic="同一上下文中已存在名為“/p1”的實施鏈接。";
+ERR_1003.Advice="請移除現有鏈接或更改名稱。";
+
+ERR_1004.Request="創建實施鏈接";
+ERR_1004.Diagnostic="同一上下文中已存在此資源和此流程之間的實施鏈接。";
+ERR_1004.Advice="請查看影響命令，如有必要，請移除現有鏈接。";
+
+ERR_1005.Request="創建信號";
+ERR_1005.Diagnostic="這兩個端口之間已存在信號。";
+
+ERR_1006.Request="創建信號";
+ERR_1006.Diagnostic="選定的控制端口擁有不同的根。";
+ERR_1006.Advice="請在同一結構樹中選擇 2 個控制端口。";
+
+ERR_1007.Request="創建信號";
+ERR_1007.Diagnostic="創建信號失敗。";
+ERR_1007.Advice="請驗證選定對象的有效性。";
+
+ERR_1008.Request="生成資源";
+ERR_1008.Diagnostic="選定產品已經是資源。";
+
+ERR_1009.title="生成資源";
+ERR_1009.Diagnostic="創建資源失敗";
+ERR_1009.Advice="請驗證選定對象的有效性。";
+
+ERR_1015.title="創建實施鏈接";
+ERR_1015.Diagnostic="當前資源必須為邏輯形式";
+ERR_1015.Advice="請選擇另一個資源。";
+
+ERR_1016.title="創建實施鏈接";
+ERR_1016.Diagnostic="無法實施的無效對象";
+ERR_1016.Advice="請驗證選定對象的有效性。";
+
+ERR_1017.title="創建實施鏈接";
+ERR_1017.Diagnostic="需要范圍鏈接";
+ERR_1017.Advice="請創建范圍鏈接。";
+
+ERR_1018.title="創建實施鏈接";
+ERR_1018.Diagnostic="無效對象";
+ERR_1018.Advice="請驗證選定對象的有效性。";
+
+ERR_1019.title="創建實施鏈接";
+ERR_1019.Diagnostic="實施對象無效";
+ERR_1019.Advice="請驗證選定對象的有效性。";
+
+ERR_1020.title="創建實施鏈接";
+ERR_1020.Diagnostic="無法創建范圍鏈接";
+ERR_1020.Advice="請驗證選定對象的有效性。";
+
+ERR_1021.title="創建實施鏈接";
+ERR_1021.Diagnostic="無法移除此范圍鏈接";
+ERR_1021.Advice="請驗證選定對象的有效性。";
+
+// 3951 校正官方漢化************************************************************
+// 3951 校正官方漢化 CREATE ATTACHMENT COMMANDE
+// 3951 校正官方漢化************************************************************
+ERR_1010.title="創建附件";
+ERR_1010.Diagnostic="創建附件失敗";
+ERR_1010.Advice="請驗證選定對象的有效性。";
+
+ERR_1011.title="創建附件";
+ERR_1011.Diagnostic="從屬對象的根與主對象不同";
+ERR_1011.Advice="修改選擇";
+
+ERR_1012.title="創建附件";
+ERR_1012.Diagnostic="主對象上的產品根為不可編輯：無法創建附加。";
+ERR_1012.Advice="擁有權限的用戶可實現此操作或使用可編輯的根。";
+
+ERR_1013.title="創建附件";
+ERR_1013.Diagnostic="上下文不是資源";
+ERR_1013.Advice="變換資源中的從屬和主對象的產品根 ";
+
+ERR_1014.title="創建附件";
+ERR_1014.Diagnostic="定義的所有者與選定的主和從屬對象不一致";
+ERR_1014.Advice="選擇其他從屬和\或主";
+
+ERR_1022.title="生成資源";
+ERR_1022.Diagnostic="生成資源失敗：父項既不是資源也不是 PPR";
+ERR_1022.Advice="請驗證選定對象的有效性。";
+
+ERR_1023.title="選中以轉換為資源";
+ERR_1023.Diagnostic="選定產品的父資源無法聚集選定類型的資源";
+ERR_1023.Advice="請驗證選定對象的有效性。";
+
+ERR_1024.title="生成資源";
+ERR_1024.Diagnostic="生成資源失敗：選定產品的父資源無法聚集任何資源";
+ERR_1024.Advice="請驗證選定對象的有效性。";
+
+// 3951 校正官方漢化************************************************************
+// 3951 校正官方漢化 Behavior specific errors (From 5000 to 9999)
+// 3951 校正官方漢化 BEHAVIOR HAS ITS OWN CATALOGUE PLEASE USE IT
+// 3951 校正官方漢化************************************************************
+ERR_5000.Diagnostic="行為建模器錯誤.";
+ERR_5000.Advice="請重試。如果問題仍然存在，請聯系您的本地支持。";
+

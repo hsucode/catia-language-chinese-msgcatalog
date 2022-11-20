@@ -1,0 +1,63 @@
+CATImmCaptureCmd.SelectCaptureObject.Message="捕獲上下文";
+
+INF_PRC_ONLY="所選捕獲僅包含產品。";
+INF_PRC_ONLY.Generic="捕獲內容僅限于產品";
+INF_PRC_ONLY.Detail="過濾器應該不會選擇此捕獲產品下面的任何實例。";
+INF_PRC_ONLY.Suggestion="請加載捕獲，編輯關聯過濾器。";
+
+INF_OPEN_PVR_AS_PVS="所選捕獲不是 PVS。";
+INF_OPEN_PVR_AS_PVS.Generic="此捕獲不是過濾器捕獲 (PVS)";
+INF_OPEN_PVR_AS_PVS.Detail="所選捕獲不是 PVS，所以當前功能不適用。";
+INF_OPEN_PVR_AS_PVS.Suggestion="請使用該命令的“過濾捕獲”。";
+
+Capture_Exist.title="現有捕獲";
+Capture_Exist.text="已經存在同名的捕獲上下文。";
+
+Capture_Empty_Id.title="錯誤";
+Capture_Empty_Id.text="沒有捕獲 ID，無法創建捕獲上下文。";
+
+Capture_WithoutFilter.title="錯誤";
+Capture_WithoutFilter.text="只能為已過濾的產品創建捕獲上下文。";
+
+Capture_Del_Fail.title="刪除捕獲失敗";
+// 3951 校正官方漢化Capture_Del_Fail.text="The capture could not be deleted, due to insufficient privileges.";
+
+// 3951 校正官方漢化 VPW  IR 620641
+Capture_Del_Fail.text="授權失敗，無法刪除捕獲。\n請檢查權限和（或）站點所有權。";
+
+
+Capture_Empty_Filter.title="創建錯誤";
+Capture_Empty_Filter.text="無法在未過濾的產品根類上創建捕獲。";
+
+Capture_Exceed_40Char.title="錯誤";
+Capture_Exceed_40Char.text="無法保存超過 40 個字符的捕獲 ID。";
+
+Capture_Exists_Filter.title="創建捕獲警告";
+Capture_Exists_Filter.text="您即將覆蓋已有捕獲</P>。\n想要覆蓋嗎？";
+
+Capture_ExistOve.title="現有捕獲";
+Capture_ExistOve.text="已經存在同名的捕獲上下文。\n要覆蓋嗎？";
+
+Capture_Empty_Query.title="創建錯誤";
+Capture_Empty_Query.text="因為未找到搜索條件，不能創建查詢捕獲。";
+
+IGDeletePVS.title="成功刪除";
+IGDeletePVS.text="捕獲刪除成功。\n推薦先刷新，然后再執行其他操作。";
+
+No_part_instances.title="創建警告";
+No_part_instances.text="未找到零件實例";
+
+Not_saved.title="創建警告";
+Not_saved.text="數據庫中至少有一個零件實例沒有保存。\n應當先保存數據，然后再創建捕獲。";
+
+Max_part_instances.title="創建警告";
+Max_part_instances.text="零件實例太多。\n已超出最大限制設置。";
+
+No_PRC.title="創建警告";
+No_PRC.text="當前窗口中沒有產品。";
+
+MultiDomainInstances.title="創建警告";
+MultiDomainInstances.text="無法使用屬于多個域的實例創建捕獲。\n僅支持單個域實例。";
+
+Capture_Creation_Warning.title="創建警告";
+Capture_Creation_Warning.text="已卸載結構上的創建捕獲可能在執行和打開捕獲時產生問題。\n還要創建一個捕獲嗎？";

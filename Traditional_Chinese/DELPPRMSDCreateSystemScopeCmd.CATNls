@@ -1,0 +1,23 @@
+DELPPRMSDCreateSystemScopeCmd.initialState.Message="選擇系統";
+DELPPRMSDCreateSystemScopeCmd.SystemSelection.Message="選擇系統";
+DELPPRMSDCreateSystemScopeCmd.ProcessSelection.Message="選擇創建裝配體流程";
+
+SystemName="系統";
+
+StatusTitle="系統-流程范圍創建狀態";
+InfoCreateSuccess="已在 /p1 和 /p2 之間成功創建系統-流程范圍。";
+InfoCreateFailure="在 /P1 和 /P2 之間創建系統-流程范圍時發生錯誤。";
+
+ScopeAlreadyDefined="系統上已定義了一個范圍。";
+
+CrossingRightMessage="交叉范圍。\n“/P2”的子級系統“/P1”的范圍“/P4”是“/P3”的父級。";
+CrossingLeftMessage="交叉范圍。\n“/P2”的子級系統“/P1”的范圍“/P4”是“/P3”的父級。";
+ScopeFatherMessage="范圍創建失敗。\n 系統“/P1”是“/P2”的子級并且它的范圍為“/P4”。\n 要在“/P2”上創建范圍，您必須選擇“/P4”的子級。";
+
+InformationMsgRerouted="此處的流程指派之后將會在新范圍的上下文中重設：\n";
+InformationMsgUnassigned="范圍的創建將會取消指派所有不再存在于新范圍中的流程：\n";
+ConfirmationMsg="\n 確定要創建范圍嗎？";
+
+Title="信息";
+AchievedMsg=" 由...實現 ";
+HeldMsg=" 由...保留 ";

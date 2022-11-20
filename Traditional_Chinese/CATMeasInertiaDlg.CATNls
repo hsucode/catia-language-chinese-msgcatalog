@@ -1,0 +1,173 @@
+Title="測量慣量";
+
+SelectElementMsg="指示要測量的項";
+SelectPointMsg="指示要選擇的點";
+SelectAxisMsg="指示要選擇的軸";
+SelectAxisSystemMsg="指示要選擇的軸系";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+// 3951 校正官方漢化 Spec TabPage
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+TabContainer.SpecTabPage.Title="規格";
+TabContainer.SpecTabPage.SpecFrame.SelectionFrameL.SelectionL.Title="選擇";
+TabContainer.SpecTabPage.SpecFrame.EditDensityFL.EditDensityL.Title="密度";
+TabContainer.SpecTabPage.SpecFrame.MessageDensityFrame.DensityL.Title="未對所有選定元素應用材料";
+TabContainer.SpecTabPage.SpecFrame.MessageDensityFrame.DensityI.Title="(信息: 在無材料的情況下，元素的默認密度為 1000kg/m3)";
+TabContainer.SpecTabPage.SpecFrame.MessageThicknessFrame.ThicknessL.Title="未對所有選定曲面應用厚度";
+TabContainer.SpecTabPage.SpecFrame.MessageThicknessFrame.ThicknessW.Title="(警告: 計算將不會考慮無厚度的曲面)";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+// 3951 校正官方漢化 Customize TabPage
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+TabContainer.CustmTabPage.Title="自定義";
+
+wetAreaLabelCusto="濕區域                     ";
+volumeLabelCusto="體積                       ";
+areaLabelCusto="面積                         ";
+massLabelCusto="質量                         ";
+thicknessLabelCusto="厚度                    ";
+centerOfGravityLabelCusto="重心 (G)        ";
+princMomentsLabelCusto="重心主慣量矩        ";
+princAxisLabelCusto="主軸               ";
+inertiaMatGLabelCusto="重心慣量矩陣           ";
+inertiaMatOLabelCusto="原點慣量矩陣           ";
+inertiaMatPLabelCusto="點慣量矩陣           ";
+momentAxisLabelCusto="軸矩                ";
+inertiaMatAxisSysLabelCusto="軸系慣量矩陣 ";
+buttonLabelCusto="";
+
+// 3951 校正官方漢化 SpacerLabel enables offset equivalent to X or Y or Z
+SpacerLabel="      ";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+// 3951 校正官方漢化 Result TabPage
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+TabContainer.ResultTabPage.Title="結果";
+
+TabContainer.ResultTabPage.ResultContainer.ResultFrame.CTFrame.CalcTypeFL.CalcTypeL.Title="計算類型:    ";
+TabContainer.ResultTabPage.ResultContainer.ResultFrame.CharactFrame.Title="特征";
+TabContainer.ResultTabPage.ResultContainer.ResultFrame.CharactFrame.WetAreaFL.WetAreaL.Title=" 面積           ";
+TabContainer.ResultTabPage.ResultContainer.ResultFrame.CharactFrame.VolumeFL.VolumeL.Title=" 體積         ";
+TabContainer.ResultTabPage.ResultContainer.ResultFrame.CharactFrame.ThicknessFL.ThicknessL.Title=" 厚度      ";
+TabContainer.ResultTabPage.ResultContainer.ResultFrame.CharactFrame.MassFL.MassL.Title=" 質量           ";
+TabContainer.ResultTabPage.ResultContainer.ResultFrame.COfGFrame.Title="重心 (G)";
+TabContainer.ResultTabPage.ResultContainer.ResultFrame.COfGFrame.XFL.XL.Title="Gx";
+TabContainer.ResultTabPage.ResultContainer.ResultFrame.COfGFrame.YFL.YL.Title="Gy";
+TabContainer.ResultTabPage.ResultContainer.ResultFrame.COfGFrame.ZFL.ZL.Title="Gz";
+
+NotUniformLabel="不統一:";
+NALabel="不可用";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+// 3951 校正官方漢化 InertiaG TabPage
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+TabContainer.InertiaGTabPage.Title="重心慣量";
+TabContainer.InertiaGTabPage.InertiaGFrame.MatrixGFrame.Title="重心慣量矩陣";
+TabContainer.InertiaGTabPage.InertiaGFrame.MatrixGFrame.IXXFL.IXXL.Title=" IoxG";
+TabContainer.InertiaGTabPage.InertiaGFrame.MatrixGFrame.IYYFL.IYYL.Title=" IoyG";
+TabContainer.InertiaGTabPage.InertiaGFrame.MatrixGFrame.IZZFL.IZZL.Title=" IozG";
+TabContainer.InertiaGTabPage.InertiaGFrame.MatrixGFrame.IXYFL.IXYL.Title=" IxyG";
+TabContainer.InertiaGTabPage.InertiaGFrame.MatrixGFrame.IXZFL.IXZL.Title=" IxzG";
+TabContainer.InertiaGTabPage.InertiaGFrame.MatrixGFrame.IYZFL.IYZL.Title=" IyzG";
+TabContainer.InertiaGTabPage.InertiaGFrame.MomentGFrame.Title="重心主慣量矩";
+TabContainer.InertiaGTabPage.InertiaGFrame.MomentGFrame.M1FL.M1L.Title="  M1 ";
+TabContainer.InertiaGTabPage.InertiaGFrame.MomentGFrame.M2FL.M2L.Title="  M2 ";
+TabContainer.InertiaGTabPage.InertiaGFrame.MomentGFrame.M3FL.M3L.Title="  M3 ";
+TabContainer.InertiaGTabPage.InertiaGFrame.AxisGFrame.Title="主軸";
+TabContainer.InertiaGTabPage.InertiaGFrame.AxisGFrame.A1XFL.A1XL.Title=" A1X ";
+TabContainer.InertiaGTabPage.InertiaGFrame.AxisGFrame.A1YFL.A1YL.Title=" A1Y ";
+TabContainer.InertiaGTabPage.InertiaGFrame.AxisGFrame.A1ZFL.A1ZL.Title=" A1Z ";
+TabContainer.InertiaGTabPage.InertiaGFrame.AxisGFrame.A2XFL.A2XL.Title=" A2X ";
+TabContainer.InertiaGTabPage.InertiaGFrame.AxisGFrame.A2YFL.A2YL.Title=" A2Y ";
+TabContainer.InertiaGTabPage.InertiaGFrame.AxisGFrame.A2ZFL.A2ZL.Title=" A2Z ";
+TabContainer.InertiaGTabPage.InertiaGFrame.AxisGFrame.A3XFL.A3XL.Title=" A3X ";
+TabContainer.InertiaGTabPage.InertiaGFrame.AxisGFrame.A3YFL.A3YL.Title=" A3Y ";
+TabContainer.InertiaGTabPage.InertiaGFrame.AxisGFrame.A3ZFL.A3ZL.Title=" A3Z ";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+// 3951 校正官方漢化 InertiaO TabPage
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+TabContainer.InertiaOTabPage.Title="原點慣量";
+TabContainer.InertiaOTabPage.InertiaOFrame.MatrixOFrame.Title="原點慣量矩陣";
+TabContainer.InertiaOTabPage.InertiaOFrame.MatrixOFrame.IXXOFL.IXXOL.Title="IoxO";
+TabContainer.InertiaOTabPage.InertiaOFrame.MatrixOFrame.IYYOFL.IYYOL.Title="IoyO";
+TabContainer.InertiaOTabPage.InertiaOFrame.MatrixOFrame.IZZOFL.IZZOL.Title="IozO";
+TabContainer.InertiaOTabPage.InertiaOFrame.MatrixOFrame.IXYOFL.IXYOL.Title="IxyO";
+TabContainer.InertiaOTabPage.InertiaOFrame.MatrixOFrame.IXZOFL.IXZOL.Title="IxzO";
+TabContainer.InertiaOTabPage.InertiaOFrame.MatrixOFrame.IYZOFL.IYZOL.Title="IyzO";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+// 3951 校正官方漢化 InertiaPTabPage
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+TabContainer.InertiaPTabPage.Title="點慣量";
+TabContainer.InertiaPTabPage.InertiaPFrame.SelectPointP.ButtonPointP.Title="選擇點";
+TabContainer.InertiaPTabPage.InertiaPFrame.PointP.OXPtFL.OXPtL.Title="Px";
+TabContainer.InertiaPTabPage.InertiaPFrame.PointP.OYPtFL.OYPtL.Title="Py";
+TabContainer.InertiaPTabPage.InertiaPFrame.PointP.OZPtFL.OZPtL.Title="Pz";
+TabContainer.InertiaPTabPage.InertiaPFrame.MatrixPFrame.Title="點慣量矩陣";
+TabContainer.InertiaPTabPage.InertiaPFrame.MatrixPFrame.IXXPFL.IXXPL.Title="IoxP";
+TabContainer.InertiaPTabPage.InertiaPFrame.MatrixPFrame.IYYPFL.IYYPL.Title="IoyP";
+TabContainer.InertiaPTabPage.InertiaPFrame.MatrixPFrame.IZZPFL.IZZPL.Title="IozP";
+TabContainer.InertiaPTabPage.InertiaPFrame.MatrixPFrame.IXYPFL.IXYPL.Title="IxyP";
+TabContainer.InertiaPTabPage.InertiaPFrame.MatrixPFrame.IXZPFL.IXZPL.Title="IxzP";
+TabContainer.InertiaPTabPage.InertiaPFrame.MatrixPFrame.IYZPFL.IYZPL.Title="IyzP";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+// 3951 校正官方漢化 InertiaATabPage
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+TabContainer.InertiaATabPage.Title="軸慣量";
+TabContainer.InertiaATabPage.InertiaAFrame.SelectAxisA.ButtonAxisA.Title="選擇軸";
+TabContainer.InertiaATabPage.InertiaAFrame.OriginA.AxisOXFL.AxisOXL.Title="Ox";
+TabContainer.InertiaATabPage.InertiaAFrame.OriginA.AxisOYFL.AxisOYL.Title="Oy";
+TabContainer.InertiaATabPage.InertiaAFrame.OriginA.AxisOZFL.AxisOZL.Title="Oz";
+TabContainer.InertiaATabPage.InertiaAFrame.DirectionA.AxisDXFL.AxisDXL.Title="Dx";
+TabContainer.InertiaATabPage.InertiaAFrame.DirectionA.AxisDYFL.AxisDYL.Title="Dy";
+TabContainer.InertiaATabPage.InertiaAFrame.DirectionA.AxisDZFL.AxisDZL.Title="Dz";
+TabContainer.InertiaATabPage.InertiaAFrame.MatrixAFrame.Title="軸矩";
+TabContainer.InertiaATabPage.InertiaAFrame.MatrixAFrame.MomentAFL.MomentAL.Title="慣量矩  ";
+TabContainer.InertiaATabPage.InertiaAFrame.MatrixAFrame.RadiusMomentAFL.RadiusMomentAL.Title="半徑  ";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+// 3951 校正官方漢化 InertiaASTabPage
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------
+TabContainer.InertiaASTabPage.Title="軸系慣量";
+TabContainer.InertiaASTabPage.InertiaASFrame.SelectAxisSystemAS.ButtonAxisSystemAS.Title="選擇軸系";
+TabContainer.InertiaASTabPage.InertiaASFrame.OriginAS.AxisSysOXFL.AxisSysOXL.Title="OxA ";
+TabContainer.InertiaASTabPage.InertiaASFrame.OriginAS.AxisSysOYFL.AxisSysOYL.Title="OyA ";
+TabContainer.InertiaASTabPage.InertiaASFrame.OriginAS.AxisSysOZFL.AxisSysOZL.Title="OzA ";
+TabContainer.InertiaASTabPage.InertiaASFrame.UVectorAS.AxisSysUXFL.AxisSysUXL.Title="UxA ";
+TabContainer.InertiaASTabPage.InertiaASFrame.UVectorAS.AxisSysUYFL.AxisSysUYL.Title="UyA ";
+TabContainer.InertiaASTabPage.InertiaASFrame.UVectorAS.AxisSysUZFL.AxisSysUZL.Title="UzA ";
+TabContainer.InertiaASTabPage.InertiaASFrame.VVectorAS.AxisSysVXFL.AxisSysVXL.Title="VxA ";
+TabContainer.InertiaASTabPage.InertiaASFrame.VVectorAS.AxisSysVYFL.AxisSysVYL.Title="VyA ";
+TabContainer.InertiaASTabPage.InertiaASFrame.VVectorAS.AxisSysVZFL.AxisSysVZL.Title="VzA ";
+TabContainer.InertiaASTabPage.InertiaASFrame.WVectorAS.AxisSysWXFL.AxisSysWXL.Title="WxA";
+TabContainer.InertiaASTabPage.InertiaASFrame.WVectorAS.AxisSysWYFL.AxisSysWYL.Title="WyA";
+TabContainer.InertiaASTabPage.InertiaASFrame.WVectorAS.AxisSysWZFL.AxisSysWZL.Title="WzA";
+TabContainer.InertiaASTabPage.InertiaASFrame.MatrixASFrame.Title="軸系 (A) 的慣量矩陣";
+TabContainer.InertiaASTabPage.InertiaASFrame.MatrixASFrame.IXXASFL.IXXASL.Title="IoxA";
+TabContainer.InertiaASTabPage.InertiaASFrame.MatrixASFrame.IYYASFL.IYYASL.Title="IoyA";
+TabContainer.InertiaASTabPage.InertiaASFrame.MatrixASFrame.IZZASFL.IZZASL.Title="IozA";
+TabContainer.InertiaASTabPage.InertiaASFrame.MatrixASFrame.IXYASFL.IXYASL.Title="IxyA";
+TabContainer.InertiaASTabPage.InertiaASFrame.MatrixASFrame.IXZASFL.IXZASL.Title="IxzA";
+TabContainer.InertiaASTabPage.InertiaASFrame.MatrixASFrame.IYZASFL.IYZASL.Title="IyzA";
+AxisSystemNoSelection="無選擇";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------  
+// 3951 校正官方漢化  Problem  during  computation  
+// 3951 校正官方漢化-----------------------------------------------------------------------------------------------------  
+MeasureErrorTitle="測量計算錯誤";
+ThicknessFailed="未對當前展示應用厚度。";
+MeasureComputationFailed="此測量計算無解。";
+
+DensityWarningTitle="測量密度警告";
+DifferentsDensities="密度與初始計算不同";
+
+CreateGeometryContextTitle="創建幾何圖形錯誤";
+CreateGeometryContextFailed="沒有在驗證上下文中創建幾何圖形";
+
+MeasureNoAssocTitle="測量慣量的相關信息";
+MeasureNoAssocText="請注意，慣量測量將不會被鏈接到其選擇";
+
+pushBtnCreaGeom.Title="創建幾何圖形";
+pushBtnCreaGeom.Help="在零件內創建幾何圖形點(重心)";

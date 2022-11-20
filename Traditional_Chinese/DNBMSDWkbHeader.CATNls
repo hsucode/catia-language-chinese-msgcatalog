@@ -1,0 +1,114 @@
+// 3951 校正官方漢化 COPYRIGHT Dassault Systemes 2005
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 DNBMSDWkbHeader.CATNls
+// 3951 校正官方漢化 MSD workbench commands
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化  cre  maw  05:07:29 或iginal Implementation
+// 3951 校正官方漢化  mod  maw  05:10:12  Changed 'Instantiate System' into 'Insert Existing System'
+// 3951 校正官方漢化  mod  maw  05:11:30  Three commands moved from PRP to MSD: Reparent, Replace, Copy Resource
+// 3951 校正官方漢化=============================================================================
+
+// 3951 校正官方漢化 Format
+// 3951 校正官方漢化 DNBMSDWkbHeader.<CommandHeaderID>.Title="<Title>";           (Power input, Menu)
+// 3951 校正官方漢化 DNBMSDWkbHeader.<CommandHeaderID>.ShortHelp="<ShortHelp>";   (Tooltip)
+// 3951 校正官方漢化 DNBMSDWkbHeader.<CommandHeaderID>.Help="<Help>";             (Message on bottom area)
+// 3951 校正官方漢化 DNBMSDWkbHeader.<CommandHeaderID>.LongHelp="<LongHelp>";     (Help for SHIFT+F1 'What's this')
+
+// 3951 校正官方漢化 Authoring Systems
+DNBMSDWkbHeader.DNBMSDReparentResourceHdr.Title="父 資源";
+DNBMSDWkbHeader.DNBMSDReparentResourceHdr.ShortHelp="父 資源";
+DNBMSDWkbHeader.DNBMSDReparentResourceHdr.Help="移動一個Resource to一個other parent";
+DNBMSDWkbHeader.DNBMSDReparentResourceHdr.LongHelp="移動s one或 more resources and all children
+to一個other parent resource.";
+
+DNBMSDWkbHeader.DNBMSDCopyResourceHdr.Title="復制資源";
+DNBMSDWkbHeader.DNBMSDCopyResourceHdr.ShortHelp="復制資源";
+DNBMSDWkbHeader.DNBMSDCopyResourceHdr.Help="Make一個copy of一個資源";
+DNBMSDWkbHeader.DNBMSDCopyResourceHdr.LongHelp="復制a resource and all children
+to一個other parent resource.
+The resource can be copied across document windows.";
+
+DNBMSDWkbHeader.DNBMSDReplaceResourceHdr.Title="替換 資源";
+DNBMSDWkbHeader.DNBMSDReplaceResourceHdr.ShortHelp="替換 資源";
+DNBMSDWkbHeader.DNBMSDReplaceResourceHdr.Help="替換一個Resource by一個other one";
+DNBMSDWkbHeader.DNBMSDReplaceResourceHdr.LongHelp="替換s一個resource by一個other one.
+The other resource needn't to be in the current session.";
+
+DNBMSDWkbHeader.DNBMSDGenerateConceptHdr.Title="生成 Resource Concept";
+DNBMSDWkbHeader.DNBMSDGenerateConceptHdr.ShortHelp="生成 Resource Concept";
+DNBMSDWkbHeader.DNBMSDGenerateConceptHdr.Help="生成 Resource Concept from Manufacturing Assemblies";
+DNBMSDWkbHeader.DNBMSDGenerateConceptHdr.LongHelp="創建一個resource structure from一個assembly specification.
+One或 more manufacturing assemblies must be selected from the assembly spec tree (AST)
+and at last the parent resource for the new resource structure.";
+
+DNBMSDWkbHeader.DNBDpmDeleteResourceCmdHdr.Title="刪除資源";
+DNBMSDWkbHeader.DNBDpmDeleteResourceCmdHdr.ShortHelp="刪除資源";
+DNBMSDWkbHeader.DNBDpmDeleteResourceCmdHdr.Help="刪除Resource under Resource Context";
+DNBMSDWkbHeader.DNBDpmDeleteResourceCmdHdr.LongHelp="刪除Resource.Using Contextual Menu一個Selected Resource can be Deleted";
+
+DNBMSDWkbHeader.DNBMSDAssignMAHdr.Title="指派 Output Manufacturing裝配";
+DNBMSDWkbHeader.DNBMSDAssignMAHdr.ShortHelp="指派 Output Manufacturing裝配";
+DNBMSDWkbHeader.DNBMSDAssignMAHdr.Help="指派一個Output Manufacturing Assembly to一個資源";
+DNBMSDWkbHeader.DNBMSDAssignMAHdr.LongHelp="指派一個output manufacturing assembly to一個resource.
+A manufacturing assembly must be selected from the assembly spec tree (AST).
+Also the resource that builds the assembly must be 選擇";
+
+DNBMSDWkbHeader.DNBMSDUnassignMAHdr.Title="Unassign Output Manufacturing裝配";
+DNBMSDWkbHeader.DNBMSDUnassignMAHdr.ShortHelp="Unassign Output Manufacturing裝配";
+DNBMSDWkbHeader.DNBMSDUnassignMAHdr.Help="Unassign一個Output Manufacturing Assembly from一個資源";
+DNBMSDWkbHeader.DNBMSDUnassignMAHdr.LongHelp="Unassign一個output manufacturing assembly from一個resource.
+The manufacturing assembly must be selected from the assembly spec tree (AST)";
+
+DNBMSDWkbHeader.DNBMSDCreateFlowHdr.Title="創建Connection";
+DNBMSDWkbHeader.DNBMSDCreateFlowHdr.ShortHelp="創建Connection";
+DNBMSDWkbHeader.DNBMSDCreateFlowHdr.Help="創建Connection between資源";
+DNBMSDWkbHeader.DNBMSDCreateFlowHdr.LongHelp="創建一個connection between two resources.
+Both resources must have一個behavior.
+One pair of resources can have only one connection.";
+
+DNBMSDWkbHeader.DNBMSDRemoveFlowHdr.Title="移除 Connection";
+DNBMSDWkbHeader.DNBMSDRemoveFlowHdr.ShortHelp="移除 Connection";
+DNBMSDWkbHeader.DNBMSDRemoveFlowHdr.Help="移除 the Connection between資源";
+DNBMSDWkbHeader.DNBMSDRemoveFlowHdr.LongHelp="移除s the connection between two resources.
+Therefore the resources must be selected one by one.";
+
+// 3951 校正官方漢化 System Tools
+DNBMSDWkbHeader.DNBMSDSystemEditorHdr.Title="System編輯器";
+DNBMSDWkbHeader.DNBMSDSystemEditorHdr.ShortHelp="System編輯器";
+DNBMSDWkbHeader.DNBMSDSystemEditorHdr.Help="打開 the System編輯器";
+DNBMSDWkbHeader.DNBMSDSystemEditorHdr.LongHelp="打開s the system editor, which is一個2D tool
+for viewing and editing the resource hierarchy and connections.";
+
+DNBMSDWkbHeader.DNBMSDUtilizationGanttHdr.Title="資源Utilization Gantt";
+DNBMSDWkbHeader.DNBMSDUtilizationGanttHdr.ShortHelp="資源Utilization Gantt";
+DNBMSDWkbHeader.DNBMSDUtilizationGanttHdr.Help="打開 the Resource Utilization Gantt";
+DNBMSDWkbHeader.DNBMSDUtilizationGanttHdr.LongHelp="打開s the resource utilization gantt,
+which is一個2D tool for viewing and editing the utilization
+of physical resources in一個system.
+Multiple resources can be selected before starting the command.";
+
+DNBMSDWkbHeader.DNBMSDSystemGanttHdr.Title="Manufacturing System Gantt";
+DNBMSDWkbHeader.DNBMSDSystemGanttHdr.ShortHelp="Manufacturing System Gantt";
+DNBMSDWkbHeader.DNBMSDSystemGanttHdr.Help="打開 the Manufacturing System Gantt";
+DNBMSDWkbHeader.DNBMSDSystemGanttHdr.LongHelp="打開s the manufacturing system gantt,
+which is一個2D tool for viewing and editing the process
+schedule of manufacturing systems.
+Multiple systems can be selected before starting the command.";
+
+DNBMSDWkbHeader.DNBMSDFittingResourceHdr.Title="Find Fitting 資源";
+DNBMSDWkbHeader.DNBMSDFittingResourceHdr.ShortHelp="Find一個Fitting 資源";
+DNBMSDWkbHeader.DNBMSDFittingResourceHdr.Help="Find一個Resource that fits for一個過程";
+DNBMSDWkbHeader.DNBMSDFittingResourceHdr.LongHelp="This command helps to find一個Resource that
+has enough free time for working on一個Process.";
+
+DNBMSDWkbHeader.DELMAssignmentAssistantHdr.Title="Launch Assignment Assistant for資源";
+DNBMSDWkbHeader.DELMAssignmentAssistantHdr.Help="Launch Assignment Assistant for資源";
+DNBMSDWkbHeader.DELMAssignmentAssistantHdr.LongHelp="Launch Assignment Assistant for資源";
+DNBMSDWkbHeader.DELMAssignmentAssistantHdr.ShortHelp="Launch Assignment Assistant for資源";
+
+DNBMSDWkbHeader.DNBMSDResourceAttrEditorHdr.Title="編輯 Resource Attributes";
+DNBMSDWkbHeader.DNBMSDResourceAttrEditorHdr.ShortHelp="編輯 Resource Attributes";
+DNBMSDWkbHeader.DNBMSDResourceAttrEditorHdr.Help="編輯 Resource Attributes Specific To MSD";
+DNBMSDWkbHeader.DNBMSDResourceAttrEditorHdr.LongHelp="編輯 Resource Attributes for Line/Station/Resource/Workers利用MSD Commands";

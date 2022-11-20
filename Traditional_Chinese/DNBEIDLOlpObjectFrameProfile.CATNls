@@ -1,0 +1,11 @@
+FixedAndMobileNonZero.Diagnostic="非零對象框架輪廓 /p1 被固定 TCP 動作（/p3 中的 /p2）和移動 TCP 動作（/p5 中的 /p4）使用。";
+FixedAndMobileNonZero.Advice="只應從固定 TCP 或移動 TCP 動作中參考對象框架輪廓，而不應同時從二者中參考。 由于對象框架不為零，某些位置將不會處在正確的位置上。  您需要為移動或固定 TCP 動作創建新的對象框架輪廓。";
+
+FixedAndMobileZero.Diagnostic="全零對象框架輪廓 /p1 被固定 TCP 動作（/p3 中的 /p2）和移動 TCP 動作（/p5 中的 /p4）使用。";
+FixedAndMobileZero.Advice="只應從固定 TCP 或移動 TCP 動作中參考對象框架輪廓，而不應同時從二者中參考。 由于對象框架為零，轉換將繼續。  如果轉換器需要轉換這些坐標，則某些位置可能不會處在正確的位置上，但這種機率很小。 您應該為移動或固定 TCP 動作創建新的對象框架輪廓。";
+
+UnknownMotion="未知活動";
+UnknownTask="未知任務";
+
+InconsistantCoordinates="對象框架輪廓坐標不一致。  轉換器并不總是將同一坐標系原點用于此對象框架輪廓。  每次必須使用同一原點。 轉換器為給定對象框架輪廓調用了 GetTransform 和 SetTransform，并且在使用對象輪廓的任何機器人動作上調用 GetTransform 或 SetTransform 時，必須使用該相同坐標系。  必須修改該轉換器。";
+InvalidCoordinatesRobotBase="機器人基底坐標的使用無效：對象框架不為零。  要使用機器人基底原點，對象框架應為零。  否則，計算的位置可能不正確。";

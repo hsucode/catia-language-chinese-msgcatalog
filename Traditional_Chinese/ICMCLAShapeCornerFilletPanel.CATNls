@@ -1,0 +1,166 @@
+DialogBoxTitle="圓角";
+
+//Selection area
+
+FrameType.LongHelp="選擇圓角類型：球形或橋接。";
+FrameType.Title="圓角類型： ";
+
+ComboType.Ball="球形狀";
+ComboType.Blend="橋接";
+ComboType.LongHelp="- 球形 -
+在圓角內有一個指定半徑的球形。
+相鄰圓角被修剪。球形和圓角之間的連接曲面形成球形圓角，因此確保將最小半徑直接應用到球形曲面上。
+- 橋接 -
+圓角由四條邊線構成。其中三條為修剪的圓角，第四條邊線與基礎曲面相連。";
+ComboType.ShortHelp="選擇圓角類型";
+
+LabelFillet1.Title="圓角 1： ";
+LabelFillet1.LongHelp="作為支持曲面，必須選擇由高級圓角命令創建的三個圓角曲面。
+不接受其他的輸入類型作為有效輸入，
+即，樣式圓角或三切線圓角特征。
+僅可選擇一個現有的高級圓角特征。";
+LabelFillet1.ShortHelp="選擇圓角 1";
+LabelFillet2.Title="圓角 2： ";
+LabelFillet2.LongHelp="作為支持曲面，必須選擇由高級圓角命令創建的三個圓角曲面。
+不接受其他的輸入類型作為有效輸入，
+即，樣式圓角或三切線圓角特征。
+僅可選擇一個現有的高級圓角特征。";
+LabelFillet2.ShortHelp="選擇圓角 2";
+LabelFillet3.Title="圓角 3： ";
+LabelFillet3.LongHelp="作為支持曲面，必須選擇由高級圓角命令創建的三個圓角曲面。
+不接受其他的輸入類型作為有效輸入，
+即，樣式圓角或三切線圓角特征。
+僅可選擇一個現有的高級圓角特征。";
+LabelFillet3.ShortHelp="選擇圓角 3";
+
+
+CheckButtonTrim1.Title="修剪圓角 1";
+CheckButtonTrim1.LongHelp="在圓角的相應側邊修剪圓角 1。";
+CheckButtonTrim1.ShortHelp="修剪圓角 1";
+CheckButtonTrim2.Title="修剪圓角 2";
+CheckButtonTrim2.LongHelp="在圓角的相應側邊修剪圓角 2。";
+CheckButtonTrim2.ShortHelp="修剪圓角 2";
+CheckButtonTrim3.Title="修剪圓角 3";
+CheckButtonTrim3.LongHelp="在圓角的相應側邊修剪圓角 3。";
+CheckButtonTrim3.ShortHelp="修剪圓角 3";
+
+//Ball tab
+
+TabPageBall.Title="球形狀";
+FrameBallContinuity.Title="球形參數";
+FrameBallContinuity.LongHelp="定義球形圓角和圓角支持面之間單獨的連續條件。";
+
+LabelBallFillet1.Title="圓角 1： ";
+LabelBallFillet1.LongHelp="創建的球形圓角和支持圓角 1 之間的連續。";
+LabelBallFillet1.ShortHelp="到圓角 1 的連續";
+LabelBallFillet2.Title="圓角 2： ";
+LabelBallFillet2.LongHelp="創建的球形圓角和支持圓角 2 之間的連續。";
+LabelBallFillet2.ShortHelp="到圓角 2 的連續";
+LabelBallFillet3.Title="圓角 3： ";
+LabelBallFillet3.LongHelp="創建的球形圓角和支持圓角 3 之間的連續。";
+LabelBallFillet3.ShortHelp="到圓角 3 的連續";
+
+ContinuityBallFillet1.Button_G0.ShortHelp="到圓角 1 的 G0 連續";
+ContinuityBallFillet1.Button_G1.ShortHelp="到圓角 1 的 G1 連續";
+ContinuityBallFillet1.Button_G2.ShortHelp="到圓角 1 的 G2 連續";
+ContinuityBallFillet1.Button_G3.ShortHelp="到圓角 1 的 G3 連續";
+
+ContinuityBallFillet2.Button_G0.ShortHelp="到圓角 2 的 G0 連續";
+ContinuityBallFillet2.Button_G1.ShortHelp="到圓角 2 的 G1 連續";
+ContinuityBallFillet2.Button_G2.ShortHelp="到圓角 2 的 G2 連續";
+ContinuityBallFillet2.Button_G3.ShortHelp="到圓角 2 的 G3 連續";
+
+ContinuityBallFillet3.Button_G0.ShortHelp="到圓角 3 的 G0 連續";
+ContinuityBallFillet3.Button_G1.ShortHelp="到圓角 3 的 G1 連續";
+ContinuityBallFillet3.Button_G2.ShortHelp="到圓角 3 的 G2 連續";
+ContinuityBallFillet3.Button_G3.ShortHelp="到圓角 3 的 G3 連續";
+
+LabelBallRadius.Title="球形半徑： ";
+LabelBallRadius.LongHelp="定義接觸所有三個選定支持面圓角的球形的理論尺寸。
+值越小，球形圓角越銳化；值越大，球形圓角越光順。";
+LabelBallRadius.ShortHelp="選擇球形半徑";
+
+
+//Blend tab
+
+TabPageBlend.Title="橋接";
+FrameBlendParameter.Title="橋接參數";
+FrameBlendParameter.LongHelp="定義橋接曲線參數";
+
+LabelCurve1.Title="曲線 1： ";
+LabelCurve1.LongHelp="用作支持面的兩個圓角曲面之間的橋接邊線。
+默認情況下，與圓角 2 相對的圓角 1 和 3 之間的邊線被定義為曲線 1。";
+LabelCurve1.ShortHelp="兩個支持圓角曲面之間的橋接邊線。";
+
+PushButtonOtherSupport.Title="其他支持面";
+PushButtonOtherSupport.LongHelp="允許選擇與選定的圓角 1 和 3 相切的預構建曲線。";
+PushButtonOtherSupport.ShortHelp="其他支持面";
+
+LabelLength1.Title="長度 1： ";
+LabelLength1.LongHelp="長度派生自橋接圓角和相鄰圓角曲面的支持面引導線和公共圓角點（= 曲線 1 終點）的相交點之間的距離。";
+LabelLength1.ShortHelp="定義側邊 1 的橋接邊線長度。";
+
+LabelLength2.Title="長度 2： ";
+LabelLength2.LongHelp="長度派生自橋接圓角和相鄰圓角曲面的支持面引導線和公共圓角點（= 曲線 1 終點）的相交點之間的距離。";
+LabelLength2.ShortHelp="定義側邊 2 的橋接邊線長度。";
+
+LinkButtonLengthCurve1.Title="曲線 1 長度： ";
+LinkButtonLengthCurve1.LongHelp="曲線 1 側邊 2 的長度等于側邊 1 的長度";
+LinkButtonLengthCurve1.ShortHelp="曲線 1 側邊 2 的長度等于側邊 1 的長度";
+
+LabelContinuity11.Title="連續 1： ";
+LabelContinuity11.LongHelp="橋接曲線和側邊 1 上的圓角支持面邊線之間的連續。";
+LabelContinuity11.ShortHelp="橋接曲線/側邊 1 上支持面邊線之間的連續";
+LabelContinuity12.Title="連續 2： ";
+LabelContinuity12.LongHelp="橋接曲線和側邊 2 上的圓角支持面邊線之間的連續。";
+LabelContinuity12.ShortHelp="橋接曲線/側邊 2 上支持面邊線之間的連續";
+LabelContinuity21.Title="連續 1： ";
+LabelContinuity21.LongHelp="橋接曲線和側邊 1 上的圓角支持面邊線之間的連續。";
+LabelContinuity21.ShortHelp="橋接曲線/側邊 1 上支持面邊線之間的連續";
+LabelContinuity22.Title="連續 2： ";
+LabelContinuity22.LongHelp="橋接曲線和側邊 2 上的圓角支持面邊線之間的連續。";
+LabelContinuity22.ShortHelp="橋接曲線/側邊 2 上支持面邊線之間的連續";
+
+ContinuityCurve11.Button_G0.ShortHelp="G0 連續曲線 1 側邊 1";
+ContinuityCurve11.Button_G1.ShortHelp="G1 連續曲線 1 側邊 1";
+ContinuityCurve11.Button_G2.ShortHelp="G2 連續曲線 1 側邊 1";
+ContinuityCurve11.Button_G3.ShortHelp="G3 連續曲線 1 側邊 1";
+ContinuityCurve12.Button_G0.ShortHelp="G0 連續曲線 1 側邊 2";
+ContinuityCurve12.Button_G1.ShortHelp="G1 連續曲線 1 側邊 2";
+ContinuityCurve12.Button_G2.ShortHelp="G2 連續曲線 1 側邊 2";
+ContinuityCurve12.Button_G3.ShortHelp="G3 連續曲線 1 側邊 2";
+
+LabelCurve2.Title="曲線 2： ";
+LabelCurve2.LongHelp="曲線 2 是與橋接圓角的曲線 1 相對的橋接邊線。";
+LabelCurve2.ShortHelp="與曲線 1 相對的橋接邊線";
+
+ContinuityCurve21.Button_G0.ShortHelp="G0 連續曲線 2 側邊 1";
+ContinuityCurve21.Button_G1.ShortHelp="G1 連續曲線 2 側邊 1";
+ContinuityCurve21.Button_G2.ShortHelp="G2 連續曲線 2 側邊 1";
+ContinuityCurve21.Button_G3.ShortHelp="G3 連續曲線 2 側邊 1";
+ContinuityCurve22.Button_G0.ShortHelp="G0 連續曲線 2 側邊 2";
+ContinuityCurve22.Button_G1.ShortHelp="G1 連續曲線 2 側邊 2";
+ContinuityCurve22.Button_G2.ShortHelp="G2 連續曲線 2 側邊 2";
+ContinuityCurve22.Button_G3.ShortHelp="G3 連續曲線 2 側邊 2";
+
+LinkButtonContinuityCurve1.Title="曲線 1 連續： ";
+LinkButtonContinuityCurve1.LongHelp="曲線 1 側邊 2 的連續等于側邊 1 的連續";
+LinkButtonContinuityCurve1.ShortHelp="曲線 1 側邊 2 的連續等于側邊 1 的連續";
+
+LinkButtonContinuityCurve2.Title="曲線 2 連續： ";
+LinkButtonContinuityCurve2.LongHelp="曲線 2 側邊 2 的連續等于側邊 1 的連續";
+LinkButtonContinuityCurve2.ShortHelp="曲線 2 側邊 2 的連續等于側邊 1 的連續";
+
+
+FrameRelimitation.Title="重新限定";
+FrameRelimitation.LongHelp="可將圓角曲面修剪為面或曲面（無面）。";
+
+RadioButtonFace.Title="面： ";
+RadioButtonFace.LongHelp="修剪面：保留原始元素的控制點。
+結果為面。";
+RadioButtonFace.ShortHelp="修剪面";
+
+RadioButtonTrim.Title="修剪： ";
+RadioButtonTrim.LongHelp="修剪曲面：控制點網格變化。
+結果不是面。";
+RadioButtonTrim.ShortHelp="修剪曲面";

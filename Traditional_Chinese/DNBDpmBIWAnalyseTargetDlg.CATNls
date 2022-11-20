@@ -1,0 +1,223 @@
+Title = "分析目標方位";
+BOK = "確定";
+BCancel = "放棄";
+
+RobotKey = "機器人 ";
+ToolPositionKey = " 工具位置 ";
+ActivitiesKey = " 行為 ";
+StatusKey = " 狀態 ";
+WeldKey = "焊接";
+CurrentRobotKey = " 當前機器人 ";
+RobotsOKKey = "機器人確認 ";
+YesKey = "是";
+NoKey = "否";
+
+ResourceKey = "資源 ";
+ProfileKey = "工具輪廓";
+ConfigKey = "設置";
+TargetKey = "目標 ";
+NoFlipKey = "非碰撞";
+FlipKey   = "翻轉";
+ReassignKey = "重新指定";
+
+ToolProfile = "工具輪廓";
+ToolName = "工具";
+ToolPosition = "工具位置";
+ToolType = "工具類型";
+NoFeasibleWelds.Msg = "非可行焊接非碰撞模式";
+NoWeldsReassigned.Msg = "沒有可分配焊接不能創建一個動作";
+SaveGeometry.Msg = "再保存幾何前使用顯示餅形命令";
+
+TabPageContainer.PathAndTargetTab.Title = "路徑和目標";
+
+TabPageContainer.PathAndTargetTab.RobotFrame.Title = "機器人 ";
+TabPageContainer.PathAndTargetTab.RobotFrame.RobotNameFrame.RobotLabel.Title = "機器人: ";
+TabPageContainer.PathAndTargetTab.RobotFrame.ToolProfileFrame.ToolProfileAvailFrame.ToolProfileAvailLabel.Title = "可用工具輪廓: ";
+TabPageContainer.PathAndTargetTab.RobotFrame.ToolProfileFrame.ToolProfileSelectFrame.ToolProfileSelectLabel.Title = "選擇工具輪廓: ";
+TabPageContainer.PathAndTargetTab.RobotFrame.ConfigFrame.Title = " Available Configs ";
+TabPageContainer.PathAndTargetTab.RobotFrame.WeldsFrame.Title = "焊接";
+TabPageContainer.PathAndTargetTab.RobotFrame.WeldsFrame.TargetRemove.Title = " 移除";
+TabPageContainer.PathAndTargetTab.RobotFrame.WeldsFrame.TargetRemove.Help = " 移除";
+TabPageContainer.PathAndTargetTab.RobotFrame.WeldsFrame.TargetRemove.ShortHelp = " 從列表中移除焊接 ";
+TabPageContainer.PathAndTargetTab.RobotFrame.WeldsFrame.TargetRemove.LongHelp = " 移除移除指定給機器人焊接 ";
+
+TabPageContainer.AnalysisTab.Title = "分析參數 ";
+
+TabPageContainer.AnalysisTab.FeasibilityFrame.Title = " 可行性 ";
+
+TabPageContainer.AnalysisTab.FeasibilityFrame.CheckClash.Title = "碰撞檢查";
+TabPageContainer.AnalysisTab.FeasibilityFrame.CheckClash.Help = "碰撞檢查";
+TabPageContainer.AnalysisTab.FeasibilityFrame.GraphicUpdate.Title = "顯示圖形更新";
+TabPageContainer.AnalysisTab.FeasibilityFrame.GraphicUpdate.Help = "顯示圖形更新";
+TabPageContainer.AnalysisTab.FeasibilityFrame.CheckClash.ShortHelp = "執行碰撞檢查";
+TabPageContainer.AnalysisTab.FeasibilityFrame.CheckClash.LongHelp = "執行碰撞檢查";
+
+TabPageContainer.AnalysisTab.FeasibilityFrame.CheckAll.Title = "分析全部";
+TabPageContainer.AnalysisTab.FeasibilityFrame.CheckAll.Help = "分析全部";
+TabPageContainer.AnalysisTab.FeasibilityFrame.CheckAll.ShortHelp = " 分析從開始角度到終止角度所有值 ";
+TabPageContainer.AnalysisTab.FeasibilityFrame.CheckAll.LongHelp = " 分析從開始角度到終止角度所有值 ";
+
+TabPageContainer.AnalysisTab.ClashParametersFrame.Title = " 參數 ";
+
+TabPageContainer.AnalysisTab.ClashParametersFrame.AnalRobotFrame.AnalRobotLabel.Title = "機器人s                  ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.AnalRobotFrame.AddRobotPartsButton.Title = "...";
+ 
+TabPageContainer.AnalysisTab.ClashParametersFrame.CollisionObjectsFrame.Title = " 碰撞對象         ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.CollisionObjectsFrame.TolFrame.RotateTool.Title = "角度步長  ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.CollisionObjectsFrame.TolFrame.RotateTool.Help = " 通過角度步長旋轉工具 ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.CollisionObjectsFrame.TolFrame.RotateTool.ShortHelp = " 按照工具選項旋轉步進 (Y/Z)  ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.CollisionObjectsFrame.TolFrame.RotateTool.LongHelp = " 按照工具選項旋轉步進 (Y/Z)  ";
+
+
+TabPageContainer.AnalysisTab.ClashParametersFrame.CollisionObjectsFrame.ClashRemove.Title = " 移除";
+TabPageContainer.AnalysisTab.ClashParametersFrame.CollisionObjectsFrame.ClashRemove.Help = " 移除沖突對象";
+TabPageContainer.AnalysisTab.ClashParametersFrame.CollisionObjectsFrame.ClashRemove.ShortHelp = " 從選擇機器人中移除沖突對象 ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.CollisionObjectsFrame.ClashRemove.LongHelp = " 從選擇機器人中移除沖突對象 ";
+
+
+TabPageContainer.AnalysisTab.ClashParametersFrame.CollisionObjectsFrame.TolFrame.Tolerance.Title = " 碰撞公差 ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.CollisionObjectsFrame.TolFrame.Tolerance.Help = " 碰撞公差 ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.CollisionObjectsFrame.TolFrame.Tolerance.ShortHelp = " 碰撞公差 ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.CollisionObjectsFrame.TolFrame.Tolerance.LongHelp = " 碰撞公差 ";
+
+TabPageContainer.AnalysisTab.ClashParametersFrame.WeldDataFrame.Title = " 檢查范圍 ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.WeldDataFrame.StartEndFrame.StartAngle.Title = " 開始角度 ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.WeldDataFrame.StartEndFrame.StartAngle.Help = " 開始角度 ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.WeldDataFrame.StartEndFrame.StartAngle.ShortHelp = " 指定分析開始角度 ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.WeldDataFrame.StartEndFrame.StartAngle.LongHelp = " 指定分析開始角度 ";
+
+TabPageContainer.AnalysisTab.ClashParametersFrame.WeldDataFrame.StartEndFrame.EndAngle.Title = " 終止角度 ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.WeldDataFrame.StartEndFrame.EndAngle.Help = " 終止角度 ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.WeldDataFrame.StartEndFrame.EndAngle.ShortHelp = " 指定分析終止角度 ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.WeldDataFrame.StartEndFrame.EndAngle.LongHelp = " 指定分析終止角度 ";
+
+TabPageContainer.AnalysisTab.ClashParametersFrame.WeldDataFrame.StartEndFrame.DoFlip.Title = " 翻轉 ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.WeldDataFrame.StartEndFrame.DoFlip.Help = " 翻轉 ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.WeldDataFrame.StartEndFrame.DoFlip.ShortHelp = " 翻轉 ";
+TabPageContainer.AnalysisTab.ClashParametersFrame.WeldDataFrame.StartEndFrame.DoFlip.LongHelp = " 目標翻轉180度后分析 ";
+
+
+TabPageContainer.ResultTab.Title="結果";
+
+TabPageContainer.ResultTab.TargetReportFrame.Title = "目標報告 ";
+
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.NotComputed.Title = "NC :不計算";
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.NotComputed.Help = "不計算";
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.NotComputed.ShortHelp = "不計算";
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.NotComputed.LongHelp = "不計算";
+
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.NotReachable.Title = "NR :不可到達";
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.NotReachable.Help = "焊接不可到達";
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.NotReachable.ShortHelp = "焊接不可到達";
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.NotReachable.LongHelp = "焊接不可到達";
+
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.NotFeasible.Title = "NF :不可行";
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.NotFeasible.Help = "焊接不可行 ( 碰撞 )";
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.NotFeasible.ShortHelp = "焊接不可行 ( 碰撞 )";
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.NotFeasible.LongHelp = "焊接不可行 ( 碰撞 )";
+
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.Feasible.Title = "OK :可行";
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.Feasible.Help = "焊接可行";
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.Feasible.ShortHelp = "焊接可行";
+TabPageContainer.ResultTab.TargetReportFrame.ResultReportFrame.Feasible.LongHelp = "焊接可行";
+
+TabPageContainer.ResultTab.TargetReportFrame.Sort.Title = " 排序 ";
+
+TabPageContainer.ResultTab.TargetReportFrame.Sort.SortRobot.Title = " 按機器人 ";
+TabPageContainer.ResultTab.TargetReportFrame.Sort.SortRobot.Help = " 按機器人排序 ";
+TabPageContainer.ResultTab.TargetReportFrame.Sort.SortRobot.ShortHelp = " 按機器人排序 ";
+TabPageContainer.ResultTab.TargetReportFrame.Sort.SortRobot.LongHelp = " 按機器人，焊接，狀態排序 ";
+
+TabPageContainer.ResultTab.TargetReportFrame.Sort.SortWeld.Title = "  按焊接 ";
+TabPageContainer.ResultTab.TargetReportFrame.Sort.SortWeld.Help = " 按焊接排序 ";
+TabPageContainer.ResultTab.TargetReportFrame.Sort.SortWeld.ShortHelp = " 按焊接排序 ";
+TabPageContainer.ResultTab.TargetReportFrame.Sort.SortWeld.LongHelp = " 按焊接，指定機器人，按焊接排序, OK 機器人排序 ";
+
+TabPageContainer.ResultTab.DisplayPieFrame.Title = " 餅形報告和目標操作";
+TabPageContainer.ResultTab.DisplayPieFrame.DisplayPie.Title = "顯示餅形報告      ";
+TabPageContainer.ResultTab.DisplayPieFrame.DisplayPie.Help = "顯示餅形報告 ";
+TabPageContainer.ResultTab.DisplayPieFrame.DisplayPie.ShortHelp = "顯示餅形報告 ";
+TabPageContainer.ResultTab.DisplayPieFrame.DisplayPie.LongHelp = "顯示餅形報告 ";
+TabPageContainer.ResultTab.DisplayPieFrame.PieRobotLabel.Title = "機器人: ";
+TabPageContainer.ResultTab.DisplayPieFrame.PieProfileLabel.Title = " 工具輪廓路徑: ";
+TabPageContainer.ResultTab.DisplayPieFrame.PieConfigLabel.Title = " 設置: ";
+TabPageContainer.ResultTab.DisplayPieFrame.PieApply.Title = "顯示餅形 ";
+TabPageContainer.ResultTab.DisplayPieFrame.PieApply.Help = "顯示餅形";
+TabPageContainer.ResultTab.DisplayPieFrame.PieApply.ShortHelp = " 顯示餅形報告 ";
+TabPageContainer.ResultTab.DisplayPieFrame.PieApply.LongHelp = " 顯示餅形報告 ";
+
+TabPageContainer.ResultTab.DisplayPieFrame.WeldPosManipLabel.Title = " 目標位置操作: ";
+
+TabPageContainer.ResultTab.DisplayPieFrame.RotateNearest.Title = "旋轉 X( 最近 )";
+TabPageContainer.ResultTab.DisplayPieFrame.RotateNearest.Help = "旋轉 X( 最近 )";
+TabPageContainer.ResultTab.DisplayPieFrame.RotateNearest.ShortHelp = "繞Ｘ軸旋轉最近可行區域 ";
+TabPageContainer.ResultTab.DisplayPieFrame.RotateNearest.LongHelp = "繞Ｘ軸旋轉最近可行區域 ";
+
+TabPageContainer.ResultTab.DisplayPieFrame.RotateBiggest.Title = "旋轉 X( 最遠 )";
+TabPageContainer.ResultTab.DisplayPieFrame.RotateBiggest.Help = "旋轉 X( 最遠 )";
+TabPageContainer.ResultTab.DisplayPieFrame.RotateBiggest.ShortHelp = " 繞Ｘ軸旋轉最遠可行區域 ";
+TabPageContainer.ResultTab.DisplayPieFrame.RotateBiggest.LongHelp = " 繞Ｘ軸旋轉最遠可行區域 ";
+
+TabPageContainer.ResultTab.DisplayPieFrame.RotateXforNFWelds.Title = "旋轉X來 NF 焊接 ";
+TabPageContainer.ResultTab.DisplayPieFrame.RotateXforNFWelds.Help = " 允許旋轉X來 NF 焊接  ";
+TabPageContainer.ResultTab.DisplayPieFrame.RotateXforNFWelds.ShortHelp = " 允許旋轉X 來進行可到達但不可行NF 焊接 ";
+TabPageContainer.ResultTab.DisplayPieFrame.RotateXforNFWelds.LongHelp = " 允許旋轉X 來進行可到達但不可行NF 焊接";
+
+TabPageContainer.ResultTab.SaveFrame.Title = " 保存 ";
+
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.Remove.Title = " 移除";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.Remove.Help = " 移除報告";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.Remove.ShortHelp = " 移除報告";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.Remove.LongHelp = " 移除報告";
+
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.Save.Title = " 保存 ";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.Save.Help = " 保存報告 ";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.Save.ShortHelp = " 保存報告到文件 ";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.Save.LongHelp = " 保存報告到文件為  xml 格式 ";
+
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.Import.Title = " 導入 ";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.Import.Help = " 導入結果";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.Import.ShortHelp = " 導入結果";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.Import.LongHelp = " 從XML 文件導入結果 ";
+
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.SaveGeometry.Title = " 保存幾何  ";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.SaveGeometry.Help = " 存儲餅形幾何";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.SaveGeometry.ShortHelp = " 存儲餅形焊接分析表示";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.SaveGeometry.LongHelp = " 存儲餅形焊接分析表示到一個CGR(.cgr) 文件 ";
+
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.SaveAllPie.Title = "  保存所有餅形表示  ";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.SaveAllPie.Help = " 保存所有餅形表示 ";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.SaveAllPie.ShortHelp = " 保存所有餅形表示到一個 CGR文件 ";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame1.SaveAllPie.LongHelp = " 保存所有餅形表示到一個 CGR文件 ";
+
+TabPageContainer.ResultTab.SaveFrame.SaveFrame3.CheckKO.Title = "檢查 KO             ";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame3.CheckKO.Help = "檢查其它機器人 KO 焊接";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame3.CheckKO.ShortHelp = "檢查其它機器人 KO 焊接";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame3.CheckKO.LongHelp = "指派KO 焊接到其它機器人 ";
+
+TabPageContainer.ResultTab.SaveFrame.SaveFrame3.ReassignWelds.Title = "再分配焊接   ";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame3.ReassignWelds.Help = "再分配焊接到其它相應機器人";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame3.ReassignWelds.ShortHelp = "再分配焊接到其它相應機器人";
+TabPageContainer.ResultTab.SaveFrame.SaveFrame3.ReassignWelds.LongHelp = "再分配焊接到其它相應機器人";
+
+TabPageContainer.ResultTab.Analyse.Title = " 分析 ";
+
+TabPageContainer.ResultTab.Analyse.Compute.Title = " 計算 ";
+TabPageContainer.ResultTab.Analyse.Compute.Help = "計算";
+TabPageContainer.ResultTab.Analyse.Compute.ShortHelp = " 開始首次焊接計算";
+TabPageContainer.ResultTab.Analyse.Compute.LongHelp = " 開始首次焊接計算";
+
+TabPageContainer.ResultTab.Analyse.Resume.Title = " 重新開始  ";
+TabPageContainer.ResultTab.Analyse.Resume.Help = " 重新開始  ";
+TabPageContainer.ResultTab.Analyse.Resume.ShortHelp = " 停止后重新開始計算 ";
+TabPageContainer.ResultTab.Analyse.Resume.LongHelp = " 停止后重新開始計算 ";
+
+TabPageContainer.ResultTab.Analyse.Stop.Title = " 停止 ";
+TabPageContainer.ResultTab.Analyse.Stop.Help = " 停止 ";
+TabPageContainer.ResultTab.Analyse.Stop.ShortHelp = " 停止計算 ";
+TabPageContainer.ResultTab.Analyse.Stop.LongHelp = " 停止計算 ";
+
+TabPageContainer.ResultTab.CreateTaskFrame.CreateRobotTask.Title = "創建機器人任務";
+TabPageContainer.ResultTab.CreateTaskFrame.CreateRobotTask.Help = " 創建機器人任務 ";
+TabPageContainer.ResultTab.CreateTaskFrame.CreateRobotTask.ShortHelp = "創建無碰撞機器人任務 ";
+TabPageContainer.ResultTab.CreateTaskFrame.CreateRobotTask.LongHelp = "創建無碰撞機器人任務 ";

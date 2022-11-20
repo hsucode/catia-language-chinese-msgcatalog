@@ -1,0 +1,220 @@
+// 3951 校正官方漢化 *--------------------------------------------*// 3951 校正官方漢化
+// 3951 校正官方漢化 *               Exemple de message           *// 3951 校正官方漢化
+// 3951 校正官方漢化 *  En_US                                     *// 3951 校正官方漢化
+// 3951 校正官方漢化 *------------------------------------------- *// 3951 校正官方漢化
+// 3951 校正官方漢化 ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// 3951 校正官方漢化 ERR_2000.Diagnostic = "Un des parametres est negatif";
+// 3951 校正官方漢化 ERR_2000.Advice     = "Utilisez des parametres positifs";
+
+// 3951 校正官方漢化1xx Checking name
+// 3951 校正官方漢化Name is not legal
+SBM_INPUT_ERR_100.Request="檢查 modelica 標識符 /p1";
+SBM_INPUT_ERR_100.Diagnostic="非法標識符";
+SBM_INPUT_ERR_100.Advice="標識符必須以字母開頭，并且只能包含字母和數字";
+
+// 3951 校正官方漢化Spaces at start and/or end
+SBM_INPUT_ERR_101.Request="檢查 modelica 標識符 /p1";
+SBM_INPUT_ERR_101.Diagnostic="標識符前后包含空格";
+SBM_INPUT_ERR_101.Advice="移除前后空格";
+
+// 3951 校正官方漢化Empty name
+SBM_INPUT_ERR_102.Request="檢查 modelica 標識符 /p1";
+SBM_INPUT_ERR_102.Diagnostic="標識符為空";
+SBM_INPUT_ERR_102.Advice="輸入非空標識符";
+
+// 3951 校正官方漢化Name does not start with a letter
+SBM_INPUT_ERR_103.Request="檢查 modelica 標識符 /p1";
+SBM_INPUT_ERR_103.Diagnostic="標識符不是以字母開頭";
+SBM_INPUT_ERR_103.Advice="輸入以字母開頭的標識符";
+
+// 3951 校正官方漢化Name contains non alphanum characters
+SBM_INPUT_ERR_104.Request="檢查 modelica 標識符 /p1";
+SBM_INPUT_ERR_104.Diagnostic="標識符包含非字母數字字符";
+SBM_INPUT_ERR_104.Advice="輸入只包含字母數字字符的標識符";
+
+// 3951 校正官方漢化Reserved name
+SBM_INPUT_ERR_105.Request="檢查 modelica 標識符 /p1";
+SBM_INPUT_ERR_105.Diagnostic="名稱 /p1 是一個預留名稱";
+SBM_INPUT_ERR_105.Advice="選擇不是預留名稱的標識符";
+
+// 3951 校正官方漢化2xx Model parametrization
+SBM_INPUT_ERR_201.Request="設置類 /p1 的 modelica 屬性";
+SBM_INPUT_ERR_201.Diagnostic="這些屬性是不合法的頂級類";
+SBM_INPUT_ERR_201.Advice="頂級類不能設置為特殊動態類型、可替換、重新聲明或保護";
+
+SBM_INPUT_ERR_202.Request="設置類名稱";
+SBM_INPUT_ERR_202.Diagnostic="該類是頂級類且無法重名稱";
+SBM_INPUT_ERR_202.Advice="僅非頂級類可重命名";
+
+// 3951 校正官方漢化3xx Import
+SBM_INPUT_ERR_301.Request="導入 Modelica 文件 /p1";
+SBM_INPUT_ERR_301.Diagnostic="導入庫 /p1（版本 /p2）失敗。\n無法配置 PLM 展示。";
+SBM_INPUT_ERR_301.Advice="確保此庫不存在。";
+
+SBM_INPUT_ERR_302.Request="導入 Modelica 文件 /p1";
+SBM_INPUT_ERR_302.Diagnostic="導入庫失敗。無法加載內容。";
+SBM_INPUT_ERR_302.Advice="確保未加載具有相同名稱的庫。";
+
+SBM_INPUT_ERR_303.Request="導入 Modelica 文件 /p1";
+SBM_INPUT_ERR_303.Diagnostic="無法導入文件";
+SBM_INPUT_ERR_303.Advice="檢查此文件。";
+
+SBM_INPUT_ERR_304.Request="檢查 Modelica 文件 /p1 所使用的庫";
+SBM_INPUT_ERR_304.Diagnostic="找不到所需的庫 /p1 /p2";
+SBM_INPUT_ERR_304.Advice="檢查庫是否存在或 Modelica 使用語句";
+
+SBM_INPUT_ERR_305.Request="檢查 Modelica 文件 /p1 所使用的庫";
+SBM_INPUT_ERR_305.Diagnostic="找到了所需庫 /p1 /p2 的數個版本";
+SBM_INPUT_ERR_305.Advice="檢查是否僅存在一個庫或在會話中加載所需的庫，然后導入";
+
+SBM_INPUT_ERR_306.Request="檢查要替換或設置版本的庫 /p1 /p2。";
+SBM_INPUT_ERR_306.Diagnostic="該庫分割在數據庫的數個展示中。";
+SBM_INPUT_ERR_306.Advice="選擇其他庫（如果存在）\n或重新創建庫并將模型僅保存在一個展示中。";
+
+SBM_INPUT_ERR_307.Request="檢查要替換的庫 /p1 /p2。";
+SBM_INPUT_ERR_307.Diagnostic="該庫無法編輯。";
+SBM_INPUT_ERR_307.Advice="檢查是否有任何其他用戶正在使用它或是否已加密。";
+
+SBM_INPUT_ERR_308.Request="導入新版本的庫 /p1 /p2。";
+SBM_INPUT_ERR_308.Diagnostic="該庫已加密。";
+SBM_INPUT_ERR_308.Advice="不允許加密庫的新版本；\n 如果存在，選擇其他庫來設置版本。";
+
+SBM_INPUT_ERR_309.Request="導入 Modelica 文件 /p1";
+SBM_INPUT_ERR_309.Diagnostic="導入庫資源失敗。";
+SBM_INPUT_ERR_309.Advice="確保該庫有正確的結構。";
+
+SBM_INPUT_ERR_310.Request="導入 Modelica 文件 /p1";
+SBM_INPUT_ERR_310.Diagnostic="導入庫 /p1（版本 /p2）失敗。\n無法配置 PLM 展示。";
+SBM_INPUT_ERR_310.Advice="確保該庫不存在與其他版本中。";
+
+SBM_INPUT_ERR_311.Request="導入 Modelica 文件 /p1";
+SBM_INPUT_ERR_311.Diagnostic="導入庫失敗，因為其中一個要替換的庫無法編輯。";
+SBM_INPUT_ERR_311.Advice="確保其他用戶未使用該庫";
+
+
+// 3951 校正官方漢化4xx Matching with Knowledge Parameters
+SBM_INPUT_ERR_401.Request="不允許修改 “/p1”的值。";
+SBM_INPUT_ERR_401.Diagnostic="知識工程模塊中的匹配參數無法編輯。";
+SBM_INPUT_ERR_401.Advice="移除知識工程模塊中的公式或斷開參數間的鏈接。";
+
+SBM_INPUT_ERR_402.Request="不允許創建知識工程參數 /p1。";
+SBM_INPUT_ERR_402.Diagnostic="無法評估 Modelica 參數的值，因此無法創建相對應的知識工程參數。";
+SBM_INPUT_ERR_402.Advice="設置 Modelica 參數的數值，或允許的枚舉參數文字，然后將其顯示在知識工程模塊中。";
+
+SBM_INPUT_ERR_403.Request="不允許修改變量 /p1 的可變性。";
+SBM_INPUT_ERR_403.Diagnostic="顯示在知識工程模塊中的變量必須保持為“參數” ";
+SBM_INPUT_ERR_403.Advice="在知識工程模塊中取消顯示變量。";
+
+SBM_INPUT_ERR_404.Request="不允許修改參數 /p1。";
+SBM_INPUT_ERR_404.Diagnostic="無法評估 Modelica 參數值，因此不允許拓展為相對應的知識工程參數。";
+SBM_INPUT_ERR_404.Advice="設置 Modelica 參數的數值。";
+
+SBM_INPUT_ERR_405.Request="不允許刪除知識工程參數 /p1。";
+SBM_INPUT_ERR_405.Diagnostic="知識工程模塊中的匹配參數無法編輯。";
+SBM_INPUT_ERR_405.Advice="移除知識工程模塊中的公式";
+
+SBM_INPUT_ERR_406.Request="不允許修改參數 /p2 的屬性 /p1。";
+SBM_INPUT_ERR_406.Diagnostic="無法評估 Modelica 參數的屬性值，因此不允許拓展為相對應的知識工程參數。";
+SBM_INPUT_ERR_406.Advice="設置屬性的數值。";
+
+SBM_INPUT_ERR_407.Request="不允許刪除參數 /p1。";
+SBM_INPUT_ERR_407.Diagnostic="知識工程中拓展的其中一個值具有一個公式且無法移除。";
+SBM_INPUT_ERR_407.Advice="移除公式，然后刪除參數。";
+
+SBM_INPUT_ERR_408.Request="不允許修改參數“/p1”的類型。";
+SBM_INPUT_ERR_408.Diagnostic="值或“開始”屬性顯示在知識工程中，或其他屬性可能為只讀。";
+SBM_INPUT_ERR_408.Advice="移除參數，并使用新類型重新創建它。";
+
+SBM_INPUT_ERR_409.Request="屬性 /p1 的顯示不支持參數 /p2";
+SBM_INPUT_ERR_409.Diagnostic="此類型的參數不支持屬性 /p1，因此知識工程模塊中沒有拓展。";
+SBM_INPUT_ERR_409.Advice="請勿顯示此屬性。";
+
+SBM_INPUT_ERR_410.Request="修改參數 /p1 的文字。";
+SBM_INPUT_ERR_410.Diagnostic="不允許用戶更改列表文字";
+SBM_INPUT_ERR_410.Advice="請勿在知識工程中修改它";
+
+SBM_INPUT_ERR_411.Request="不允許修改 /p1.min 或// 3951 校正官方漢化和 /p1.max 的值。";
+SBM_INPUT_ERR_411.Diagnostic="知識工程模塊中的匹配參數無法編輯。";
+SBM_INPUT_ERR_411.Advice="移除知識工程模塊中的公式或斷開參數間的鏈接。";
+
+SBM_INPUT_ERR_412.Request="修改參數";
+SBM_INPUT_ERR_412.Diagnostic="刪除下列知識工程參數：/P1。";
+// 3951 校正官方漢化SBM_INPUT_ERR_412.Advice		= "Remove the formula in Knowledgware, or break the link between the parameters.";
+
+// 3951 校正官方漢化5xx Export
+SBM_INPUT_ERR_501.Request="導出為類 /P1 的 modelica 文件";
+SBM_INPUT_ERR_501.Diagnostic="導出類 /P1 失敗。\n此類已加密。";
+SBM_INPUT_ERR_501.Advice="嘗試將 /P1 導出為加密的 modelica 文件 (*.moe)。";
+
+// 3951 校正官方漢化6xx ChangeText
+SBM_INPUT_ERR_601.Request="更改 /p1 類的 Modelica 文本";
+SBM_INPUT_ERR_601.Diagnostic="成功更改文本";
+
+// 3951 校正官方漢化Class doesn't exists
+SBM_INPUT_ERR_602.Request="正在檢查 modelica 類";
+SBM_INPUT_ERR_602.Diagnostic="類不存在";
+SBM_INPUT_ERR_602.Advice="提供有效的類以更改其文本";
+
+// 3951 校正官方漢化Checking consistency
+SBM_INPUT_ERR_603.Request="正在檢查 /p1 類的一致性";
+SBM_INPUT_ERR_603.Diagnostic="您正在嘗試保存非法的說明，如在類中創建新的包\n或更改類名稱或版本。";
+SBM_INPUT_ERR_603.Advice="使用適當的命令來修改特殊屬性，如版本、名稱和使用。";
+
+// 3951 校正官方漢化Checking uses
+SBM_INPUT_ERR_604.Request="正在檢查 /p1 類的使用";
+SBM_INPUT_ERR_604.Diagnostic="不允許修改使用語句。修改內容無法提交。";
+SBM_INPUT_ERR_604.Advice="使用適當的命令。";
+
+// 3951 校正官方漢化Checking if all the modifications are complete
+SBM_INPUT_ERR_605.Request="正在檢查 /p1 類的內容";
+SBM_INPUT_ERR_605.Diagnostic="一些語句未正常完成。Modelica 文本無法提交。";
+SBM_INPUT_ERR_605.Advice="完成它（它可能是被遺忘的參數，如行尾的分號）或恢復到以前的文字";
+
+SBM_INPUT_ERR_606.Request="正在檢查 /p1 類的版本";
+SBM_INPUT_ERR_606.Diagnostic="不建議更改非頂級類的版本";
+SBM_INPUT_ERR_606.Advice="激活頂級類以更改其版本。";
+
+SBM_INPUT_ERR_607.Request="正在檢查 /p1 類的版本";
+SBM_INPUT_ERR_607.Diagnostic="不允許更改邏輯類的版本";
+SBM_INPUT_ERR_607.Advice="使用標準的 PLM 版本機械裝置。";
+
+SBM_INPUT_ERR_608.Request="正在檢查 /p1 類";
+SBM_INPUT_ERR_608.Diagnostic="無法設置鏈接";
+SBM_INPUT_ERR_608.Advice="檢查類";
+
+// 3951 校正官方漢化7xx Unit management in settings
+SBM_INPUT_ERR_701.Request="添加單位 /p1";
+SBM_INPUT_ERR_701.Diagnostic="單位已定義";
+SBM_INPUT_ERR_701.Advice="無法再次進行定義";
+
+SBM_INPUT_ERR_702.Request="添加單位";
+SBM_INPUT_ERR_702.Diagnostic="空單位";
+SBM_INPUT_ERR_702.Advice="";
+
+SBM_INPUT_ERR_703.Request="添加顯示單位 /p1";
+SBM_INPUT_ERR_703.Diagnostic="空顯示單位";
+SBM_INPUT_ERR_703.Advice="";
+
+
+SBM_INPUT_ERR_704.Request="添加顯示單位 /p1";
+SBM_INPUT_ERR_704.Diagnostic="已經為單位“/p2”定義了顯示單位“/p1”";
+SBM_INPUT_ERR_704.Advice="無法再次進行定義";
+
+SBM_INPUT_ERR_705.Request="添加顯示單位 /p1";
+SBM_INPUT_ERR_705.Diagnostic="轉換系數無法計算為數值或計算為零：“/p1”";
+SBM_INPUT_ERR_705.Advice="更改轉換系數";
+
+SBM_INPUT_ERR_706.Request="添加顯示單位 /p1";
+SBM_INPUT_ERR_706.Diagnostic="轉換偏移無法計算為數值：“/p1”";
+SBM_INPUT_ERR_706.Advice="更改轉換偏移";
+
+// 3951 校正官方漢化9xx divers
+SBM_INPUT_ERR_901.Request="檢查 modelica 路徑";
+SBM_INPUT_ERR_901.Diagnostic="此 Modelica 路徑不存在或無效。請驗證您輸入的路徑。";
+SBM_INPUT_ERR_901.Advice="您可以通過上下文菜單在該路徑上進行搜索。";
+
+SBM_INPUT_ERR_902.Request="檢查 modelica 路徑";
+SBM_INPUT_ERR_902.Diagnostic="此 Modelica 類的類型未授權。";
+
+SBM_INPUT_ERR_903.Request="空搜索查詢";
+SBM_INPUT_ERR_903.Diagnostic="無法使用空請求進行搜索。";

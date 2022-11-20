@@ -1,0 +1,260 @@
+// 3951 校正官方漢化 COPYRIGHT DELMIA CORP. 2000
+// 3951 校正官方漢化===================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 DNBIgripSimCmdHeader.CATNls
+// 3951 校正官方漢化
+// 3951 校正官方漢化===================================================================
+// 3951 校正官方漢化  Sep 2000  Creation:                                        XYO
+// 3951 校正官方漢化===================================================================
+// 3951 校正官方漢化  Sep 2000  Added Clamp Move Command							JAM
+// 3951 校正官方漢化  Oct 2002  IO Import/Export command details					SRA
+// 3951 校正官方漢化  Nov 2002  Add Auto Task Collision analysis cmd details      SRA
+// 3951 校正官方漢化  Sep 2004  Add RRS Set裝置屬性 cmd details         AKP
+// 3951 校正官方漢化  Mar 2005  Add RRS 使 VRC 一致 command               AKP
+// 3951 校正官方漢化  Apr 2005  Add RRS-II Free Play command                      AKP
+// 3951 校正官方漢化  Jan 2008 支持面RRS events                                AKP 
+// 3951 校正官方漢化===================================================================
+
+DNBIgripSimCmdHeader.DNBIgripSimDelay.Title = "機器人延遲動作";
+DNBIgripSimCmdHeader.DNBIgripSimDelay.Help = "創建機器人延遲動作";
+DNBIgripSimCmdHeader.DNBIgripSimDelay.ShortHelp = "創建機器人延遲動作" ;
+DNBIgripSimCmdHeader.DNBIgripSimDelay.LongHelp = "創建機器人延遲動作" ;
+
+DNBIgripSimCmdHeader.DNBIgripSimMove.Title = "機器人移動動作";
+DNBIgripSimCmdHeader.DNBIgripSimMove.Help = "創建機器人移動動作";
+DNBIgripSimCmdHeader.DNBIgripSimMove.ShortHelp = "創建機器人移動動作" ;
+DNBIgripSimCmdHeader.DNBIgripSimMove.LongHelp = "創建機器人移動動作" ;
+
+DNBIgripSimCmdHeader.DNBIgpPredefinedMove.Title = "預先確定移動動作";
+DNBIgripSimCmdHeader.DNBIgpPredefinedMove.Help = "創建一個預先確定移動動作";
+DNBIgripSimCmdHeader.DNBIgpPredefinedMove.ShortHelp = "創建一個預先確定移動動作" ;
+DNBIgripSimCmdHeader.DNBIgpPredefinedMove.LongHelp = "創建一個預先確定移動動作" ;
+
+DNBIgripSimCmdHeader.DNBIgpAddOperationCmd.Title = "增加一個操作";
+DNBIgripSimCmdHeader.DNBIgpAddOperationCmd.Help = "創建并設置操作";
+DNBIgripSimCmdHeader.DNBIgpAddOperationCmd.ShortHelp = "創建并設置操作" ;
+DNBIgripSimCmdHeader.DNBIgpAddOperationCmd.LongHelp = "為機器人行為和動作創建并設置操作" ;
+
+DNBIgripSimCmdHeader.DNBIgripSimUtoolSetup.Title = "設置工具點動作";
+DNBIgripSimCmdHeader.DNBIgripSimUtoolSetup.Help = "創建一個設置工具點動作";
+DNBIgripSimCmdHeader.DNBIgripSimUtoolSetup.ShortHelp = "創建一個工具點動作" ;
+DNBIgripSimCmdHeader.DNBIgripSimUtoolSetup.LongHelp = "創建一個設置工具點來定義機器人工具點偏置" ;
+
+DNBIgripSimCmdHeader.DNBIgripSimViewpoint.Title = "視點動作";
+DNBIgripSimCmdHeader.DNBIgripSimViewpoint.Help = "創建一個動作改變3D 數據視點";
+DNBIgripSimCmdHeader.DNBIgripSimViewpoint.ShortHelp = "創建視點動作";
+DNBIgripSimCmdHeader.DNBIgripSimViewpoint.LongHelp = "創建一個動作改變3D 數據視點";
+
+DNBIgripSimCmdHeader.DNBIgripSimVisibility.Title = "Visibility 動作";
+DNBIgripSimCmdHeader.DNBIgripSimVisibility.Help = "創建一個process activity to alter the visibility of一個產品";
+DNBIgripSimCmdHeader.DNBIgripSimVisibility.ShortHelp = "創建Visibility 動作";
+DNBIgripSimCmdHeader.DNBIgripSimVisibility.LongHelp = "創建一個process activity which alters the visibility of一個product during the run of一個仿真";
+
+DNBIgripSimCmdHeader.DNBIgripSimTextMessage.Title = "文本消息動作";
+DNBIgripSimCmdHeader.DNBIgripSimTextMessage.Help = "創建一個process activity to display一個文本消息 in一個dialog box";
+DNBIgripSimCmdHeader.DNBIgripSimTextMessage.ShortHelp = "創建文本消息 動作";
+DNBIgripSimCmdHeader.DNBIgripSimTextMessage.LongHelp = "創建一個process activity which displays一個文本消息 in一個dialog box during the run of一個仿真";
+
+DNBIgripSimCmdHeader.DNBIgripSimProcessVerification.Title = "過程驗證";
+DNBIgripSimCmdHeader.DNBIgripSimProcessVerification.Help = "DELMIA Process 驗證";
+DNBIgripSimCmdHeader.DNBIgripSimProcessVerification.ShortHelp = "過程驗證";
+DNBIgripSimCmdHeader.DNBIgripSimProcessVerification.LongHelp = "過程驗證";
+
+DNBIgripSimCmdHeader.DNBIgpCreateData.Title = "離線編程";
+DNBIgripSimCmdHeader.DNBIgpCreateData.Help = "生成機器人離線程序";
+DNBIgripSimCmdHeader.DNBIgpCreateData.ShortHelp = "離線編程";
+DNBIgripSimCmdHeader.DNBIgpCreateData.LongHelp = "生成機器人離線程序";
+
+DNBIgripSimCmdHeader.DNBIgpOlpImport.Title = "載入機器人程序";
+DNBIgripSimCmdHeader.DNBIgpOlpImport.Help = "載入機器人離線程序";
+DNBIgripSimCmdHeader.DNBIgpOlpImport.ShortHelp = "載入機器人程序";
+DNBIgripSimCmdHeader.DNBIgpOlpImport.LongHelp = "載入機器人離線程序";
+
+DNBIgripSimCmdHeader.DNBIgpOlpCalibLSqCmd.Title = "校準工件";
+DNBIgripSimCmdHeader.DNBIgpOlpCalibLSqCmd.Help = "校準工件";
+DNBIgripSimCmdHeader.DNBIgpOlpCalibLSqCmd.ShortHelp = "校準工件";
+DNBIgripSimCmdHeader.DNBIgpOlpCalibLSqCmd.LongHelp = "校準工件";
+
+DNBIgripSimCmdHeader.DNBIgpOlpCalibToolPtCmd.Title = "校準工具點";
+DNBIgripSimCmdHeader.DNBIgpOlpCalibToolPtCmd.Help = "校準工具點";
+DNBIgripSimCmdHeader.DNBIgpOlpCalibToolPtCmd.ShortHelp = "校準工具點";
+DNBIgripSimCmdHeader.DNBIgpOlpCalibToolPtCmd.LongHelp = "校準工具點";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化  Added by JOD on April 23, 2001.
+// 3951 校正官方漢化
+DNBIgripSimCmdHeader.DNBIgripSimRRSConnect.Title        = "RRS 連接";
+DNBIgripSimCmdHeader.DNBIgripSimRRSConnect.Help         = "連接/斷開 RRS 服務器";
+DNBIgripSimCmdHeader.DNBIgripSimRRSConnect.ShortHelp    = "RRS 連接";
+DNBIgripSimCmdHeader.DNBIgripSimRRSConnect.LongHelp     = "Connect/Disconnect機器人to一個RRS Server";
+
+DNBIgripSimCmdHeader.DNBIgripSimRRSOperations.Title     = "RRS 操作";
+DNBIgripSimCmdHeader.DNBIgripSimRRSOperations.Help      = "執行 RRS操作";
+DNBIgripSimCmdHeader.DNBIgripSimRRSOperations.ShortHelp = "RRS 操作";
+DNBIgripSimCmdHeader.DNBIgripSimRRSOperations.LongHelp  = "執行一個RRS操作";
+
+DNBIgripSimCmdHeader.DNBIgripSimRRSStatus.Title         = "RRS狀態";
+DNBIgripSimCmdHeader.DNBIgripSimRRSStatus.Help          = "顯示RRS 連接狀態";
+DNBIgripSimCmdHeader.DNBIgripSimRRSStatus.ShortHelp     = "RRS狀態";
+DNBIgripSimCmdHeader.DNBIgripSimRRSStatus.LongHelp      = "顯示RRS 連接狀態";
+
+DNBIgripSimCmdHeader.DNBIgripSimRRSSetDevAttrib.Title     = "設置 RRS裝置屬性";
+DNBIgripSimCmdHeader.DNBIgripSimRRSSetDevAttrib.Help      = "設置連續 RRS裝置屬性";
+DNBIgripSimCmdHeader.DNBIgripSimRRSSetDevAttrib.ShortHelp = "設置 RRS裝置屬性";
+DNBIgripSimCmdHeader.DNBIgripSimRRSSetDevAttrib.LongHelp  = "設置連續 RRS裝置屬性";
+
+DNBIgripSimCmdHeader.DNBIgripSimRRSDefineEvent.Title     = "定義RRS 事件";
+DNBIgripSimCmdHeader.DNBIgripSimRRSDefineEvent.Help      = "定義an RRS 事件";
+DNBIgripSimCmdHeader.DNBIgripSimRRSDefineEvent.ShortHelp = "定義RRS 事件";
+DNBIgripSimCmdHeader.DNBIgripSimRRSDefineEvent.LongHelp  = "定義an RRS 事件";
+
+DNBIgripSimCmdHeader.DNBIgripSimRRSDisplayEvent.Title     = "顯示/放棄活動 RRS 事件";
+DNBIgripSimCmdHeader.DNBIgripSimRRSDisplayEvent.Help      = "顯示/放棄活動 RRS 事件";
+DNBIgripSimCmdHeader.DNBIgripSimRRSDisplayEvent.ShortHelp = "顯示/放棄活動 RRS 事件";
+DNBIgripSimCmdHeader.DNBIgripSimRRSDisplayEvent.LongHelp  = "顯示/放棄活動 RRS 事件";
+
+DNBIgripSimCmdHeader.DNBIgripSimRRS2MakeVRCConsistent.Title     = "使 VRC 一致";
+DNBIgripSimCmdHeader.DNBIgripSimRRS2MakeVRCConsistent.Help      = "使 VRC 程序/仿真數據一致";
+DNBIgripSimCmdHeader.DNBIgripSimRRS2MakeVRCConsistent.ShortHelp = "使 VRC 一致";
+DNBIgripSimCmdHeader.DNBIgripSimRRS2MakeVRCConsistent.LongHelp  = "使 VRC 程序/仿真數據一致";
+
+DNBIgripSimCmdHeader.DNBIgripSimRRS2FreePlay.Title     = "RRS-II 自由播放";
+DNBIgripSimCmdHeader.DNBIgripSimRRS2FreePlay.Help      = "RRS-II 在VRC控制下機器人自由運行";
+DNBIgripSimCmdHeader.DNBIgripSimRRS2FreePlay.ShortHelp = "RRS-II 自由播放";
+DNBIgripSimCmdHeader.DNBIgripSimRRS2FreePlay.LongHelp  = "RRS-II 在VRC控制下機器人自由運行";
+
+DNBIgripSimCmdHeader.CreateGenericToolProfile.Title         = "新建工具輪廓";
+DNBIgripSimCmdHeader.CreateGenericToolProfile.Help          = "創建一個新工具輪廓";
+DNBIgripSimCmdHeader.CreateGenericToolProfile.ShortHelp     = "工具輪廓";
+DNBIgripSimCmdHeader.CreateGenericToolProfile.LongHelp      = "創建一個新工具輪廓　為一個機器人.";
+
+DNBIgripSimCmdHeader.CreateGenericMotionProfile.Title       = "新建運動輪廓";
+DNBIgripSimCmdHeader.CreateGenericMotionProfile.Help        = "創建一個新運動輪廓";
+DNBIgripSimCmdHeader.CreateGenericMotionProfile.ShortHelp   = "運動輪廓";
+DNBIgripSimCmdHeader.CreateGenericMotionProfile.LongHelp    = "創建一個新運動輪廓 　為一個機器人.";
+
+DNBIgripSimCmdHeader.CreateGenericAccuracyProfile.Title     = "新建精度輪廓";
+DNBIgripSimCmdHeader.CreateGenericAccuracyProfile.Help      = "創建一個新精度輪廓";
+DNBIgripSimCmdHeader.CreateGenericAccuracyProfile.ShortHelp = "精度輪廓";
+DNBIgripSimCmdHeader.CreateGenericAccuracyProfile.LongHelp  = "創建一個新精度輪廓 　為一個機器人.";
+
+DNBIgripSimCmdHeader.CreateGenericObjFrameProfile.Title     = "新建對象輪廓";
+DNBIgripSimCmdHeader.CreateGenericObjFrameProfile.Help      = "創建一個新對象輪廓";
+DNBIgripSimCmdHeader.CreateGenericObjFrameProfile.ShortHelp = "對象輪廓";
+DNBIgripSimCmdHeader.CreateGenericObjFrameProfile.LongHelp  = "為機器人創建一個對象輪廓.";
+
+DNBIgripSimCmdHeader.DRUIgpDefineAuxDevicesHdr.Title     = "定義輔助裝置";
+DNBIgripSimCmdHeader.DRUIgpDefineAuxDevicesHdr.Help      = "定義輔助裝置";
+DNBIgripSimCmdHeader.DRUIgpDefineAuxDevicesHdr.ShortHelp = "定義輔助裝置";
+DNBIgripSimCmdHeader.DRUIgpDefineAuxDevicesHdr.LongHelp  = "定義 輔助Device for the Robot.";
+
+DNBIgripSimCmdHeader.DELMDruSetCurrentProfileHdr.Title     = "設置為當前";
+DNBIgripSimCmdHeader.DELMDruSetCurrentProfileHdr.Help      = "設置為當前 對象輪廓";
+DNBIgripSimCmdHeader.DELMDruSetCurrentProfileHdr.ShortHelp = "設置為當前";
+DNBIgripSimCmdHeader.DELMDruSetCurrentProfileHdr.LongHelp  = "設置為當前對象輪廓";
+
+DNBIgripSimCmdHeader.DNBWSQIOMgtCmd.Title      =  "管理 IO Database";
+DNBIgripSimCmdHeader.DNBWSQIOMgtCmd.ShortHelp      =  "管理 IOs";
+DNBIgripSimCmdHeader.DNBWSQIOMgtCmd.Help     = "創建/Modify/Delete IOs";
+DNBIgripSimCmdHeader.DNBWSQIOMgtCmd.LongHelp     = "創建/Modify/Delete IOs";
+
+DNBIgripSimCmdHeader.DNBWSQSetIOStateCmd.Title      = "創建Set IO狀態";
+DNBIgripSimCmdHeader.DNBWSQSetIOStateCmd.ShortHelp      = "創建Set IO狀態";
+DNBIgripSimCmdHeader.DNBWSQSetIOStateCmd.Help     = "創建Set IO 狀態for the Selected 資源";
+DNBIgripSimCmdHeader.DNBWSQSetIOStateCmd.LongHelp     = "創建Set IO 狀態for the Selected 資源";
+
+DNBIgripSimCmdHeader.DNBWSQWaitIOStateCmd.Title      = "創建Wait IO狀態";
+DNBIgripSimCmdHeader.DNBWSQWaitIOStateCmd.ShortHelp      = "創建Wait IO狀態";
+DNBIgripSimCmdHeader.DNBWSQWaitIOStateCmd.Help     = "創建Wait IO 狀態for一個selected 資源";
+DNBIgripSimCmdHeader.DNBWSQWaitIOStateCmd.LongHelp     = "創建Wait IO 狀態for一個selected 資源";
+
+DNBIgripSimCmdHeader.DNBWSQCreateIZCmd.Title      = "管理 Interference區域";
+DNBIgripSimCmdHeader.DNBWSQCreateIZCmd.ShortHelp      = "管理 Interference Zone ";
+DNBIgripSimCmdHeader.DNBWSQCreateIZCmd.Help     = "管理 Interference Zone for一個set of資源";
+DNBIgripSimCmdHeader.DNBWSQCreateIZCmd.LongHelp     = "管理(Create/Modify/Delete) Interference Zone for一個set of資源";
+
+DNBIgripSimCmdHeader.DNBWSQCreateClearZoneCmd.Title      = "創建Clear區域";
+DNBIgripSimCmdHeader.DNBWSQCreateClearZoneCmd.ShortHelp      = "創建Clear Zone ";
+DNBIgripSimCmdHeader.DNBWSQCreateClearZoneCmd.Help     = "創建Clear Zone 動作";
+DNBIgripSimCmdHeader.DNBWSQCreateClearZoneCmd.LongHelp     = "創建Clear Zone 動作";
+
+DNBIgripSimCmdHeader.DNBWSQCreateEnterZoneCmd.Title      = "創建Enter區域";
+DNBIgripSimCmdHeader.DNBWSQCreateEnterZoneCmd.ShortHelp      = "創建Enter Zone ";
+DNBIgripSimCmdHeader.DNBWSQCreateEnterZoneCmd.Help     = "創建Enter Zone 動作";
+DNBIgripSimCmdHeader.DNBWSQCreateEnterZoneCmd.LongHelp     = "創建Enter Zone 動作";
+
+DNBIgripSimCmdHeader.DNBResourceSetActiveTaskCmd.Title      = "設置一個Active 任務";
+DNBIgripSimCmdHeader.DNBResourceSetActiveTaskCmd.ShortHelp     = "設置一個Active 任務 ";
+DNBIgripSimCmdHeader.DNBResourceSetActiveTaskCmd.Help     = "設置一個Active Task for the Resource Associated to 動作";
+DNBIgripSimCmdHeader.DNBResourceSetActiveTaskCmd.LongHelp     = "設置一個Active Task for the Resource Associated to 動作";
+
+DNBIgripSimCmdHeader.DNBResourceTaskCmd.Title      = "創建任務";
+DNBIgripSimCmdHeader.DNBResourceTaskCmd.ShortHelp      = "創建任務 ";
+DNBIgripSimCmdHeader.DNBResourceTaskCmd.Help     = "創建Task for Selected 資源";
+DNBIgripSimCmdHeader.DNBResourceTaskCmd.LongHelp     = "創建Task for Selected 資源";
+
+
+// 3951 校正官方漢化Import,Export Info
+DNBIgripSimCmdHeader.DNBWSQExportIOMapCmd.Title      = "導出 IO 信息";
+DNBIgripSimCmdHeader.DNBWSQExportIOMapCmd.ShortHelp      = "導出 IO Info ";
+DNBIgripSimCmdHeader.DNBWSQExportIOMapCmd.Help     = "導出 IO Details and IO Map for Selected資源";
+DNBIgripSimCmdHeader.DNBWSQExportIOMapCmd.LongHelp     = "導出 IO Details and IO Map for Selected或 所有資源 in CAT過程";
+
+DNBIgripSimCmdHeader.DNBWSQImportIOMapCmd.Title      = "導入 IO 信息";
+DNBIgripSimCmdHeader.DNBWSQImportIOMapCmd.ShortHelp      = "導入 IO Info ";
+DNBIgripSimCmdHeader.DNBWSQImportIOMapCmd.Help     = "導入 IO Details and IO Map as defined in the文件";
+DNBIgripSimCmdHeader.DNBWSQImportIOMapCmd.LongHelp     = "導入 IO Details and IO Map as defined in the txt ot xls file to CAT過程";
+
+
+DNBIgripSimCmdHeader.DNBWSQTaskCollisionCmd.Title      = "自動 Task Collision分析";
+DNBIgripSimCmdHeader.DNBWSQTaskCollisionCmd.ShortHelp      = "自動 Task Collision分析";
+DNBIgripSimCmdHeader.DNBWSQTaskCollisionCmd.Help     = "自動 Task Collision Analysis & Interference Zone creation";
+DNBIgripSimCmdHeader.DNBWSQTaskCollisionCmd.LongHelp     = "自動 Task Collision Analysis & Interference Zone或 Set/Wait Activities creation";
+
+
+DNBIgripSimCmdHeader.DNBWSQIOMapCmd.Title      = "IO Map And Monitoring";
+DNBIgripSimCmdHeader.DNBWSQIOMapCmd.ShortHelp      = "IO Map And Monitoring";
+DNBIgripSimCmdHeader.DNBWSQIOMapCmd.Help     = "IO Map, IO Manipulation and Dynamic IO Monitoring";
+DNBIgripSimCmdHeader.DNBWSQIOMapCmd.LongHelp     = "IO Map, IO Manipulation and Dynamic IO Monitoring";
+
+DNBIgripSimCmdHeader.DNBWSQMultiResourceSimCmd.Title = "Multi Resource 仿真";
+DNBIgripSimCmdHeader.DNBWSQMultiResourceSimCmd.ShortHelp = "Multi Resource 仿真";
+DNBIgripSimCmdHeader.DNBWSQMultiResourceSimCmd.Help = "Multiple Resource 仿真";
+DNBIgripSimCmdHeader.DNBWSQMultiResourceSimCmd.LongHelp = "Multi Resource 仿真";
+
+DNBIgripSimCmdHeader.DNBCreateSensorCmd.Title = "創建傳感器";
+DNBIgripSimCmdHeader.DNBCreateSensorCmd.ShortHelp = "創建傳感器";
+DNBIgripSimCmdHeader.DNBCreateSensorCmd.Help = "創建只有傳感器仿真";
+DNBIgripSimCmdHeader.DNBCreateSensorCmd.LongHelp = "創建創建只有傳感器仿真一個資源";
+
+DNBIgripSimCmdHeader.DNBCreateSensorResourceCmd.Title = "創建傳感器資源";
+DNBIgripSimCmdHeader.DNBCreateSensorResourceCmd.ShortHelp = "創建傳感器資源";
+DNBIgripSimCmdHeader.DNBCreateSensorResourceCmd.Help = "創建傳感器資源";
+DNBIgripSimCmdHeader.DNBCreateSensorResourceCmd.LongHelp = "創建傳感器資源t";
+
+DNBIgripSimCmdHeader.DNBCreateDOFSensorCmd.Title = "創建DOF 傳感器";
+DNBIgripSimCmdHeader.DNBCreateDOFSensorCmd.ShortHelp = "創建DOF 傳感器";
+DNBIgripSimCmdHeader.DNBCreateDOFSensorCmd.Help = "創建DOF 傳感器用于資源和邏輯使用";
+DNBIgripSimCmdHeader.DNBCreateDOFSensorCmd.LongHelp = "創建DOF 傳感器用于資源和邏輯使用";
+
+DNBIgripSimCmdHeader.DNBWSQTaskSimParamCmd.Title = "任務仿真分析";
+DNBIgripSimCmdHeader.DNBWSQTaskSimParamCmd.ShortHelp = "任務仿真分析";
+DNBIgripSimCmdHeader.DNBWSQTaskSimParamCmd.Help = "任務仿真分析參數定義";
+DNBIgripSimCmdHeader.DNBWSQTaskSimParamCmd.LongHelp = "任務仿真分析參數定義";
+
+DNBIgripSimCmdHeader.DNBWSQIOLinkCmd.Title = "鏈接信號/場地";
+DNBIgripSimCmdHeader.DNBWSQIOLinkCmd.ShortHelp = "鏈接信號/場地";
+DNBIgripSimCmdHeader.DNBWSQIOLinkCmd.Help = "鏈接兩資源信號/場地";
+DNBIgripSimCmdHeader.DNBWSQIOLinkCmd.LongHelp = "鏈接兩資源信號/場地";
+
+DNBIgripSimCmdHeader.DNBWSQSensorStatsCmd.Title = "傳感器數據";
+DNBIgripSimCmdHeader.DNBWSQSensorStatsCmd.ShortHelp = "傳感器數據";
+DNBIgripSimCmdHeader.DNBWSQSensorStatsCmd.Help = "傳感器數據";
+DNBIgripSimCmdHeader.DNBWSQSensorStatsCmd.LongHelp = "傳感器數據";
+
+DNBIgripSimCmdHeader.DNBResourceSeqTaskCmdHdr.Title = "機械人/裝置序列任務";
+DNBIgripSimCmdHeader.DNBResourceSeqTaskCmdHdr.Help = "機械人/裝置序列任務";
+DNBIgripSimCmdHeader.DNBResourceSeqTaskCmdHdr.ShortHelp = "機械人/裝置序列任務" ;
+DNBIgripSimCmdHeader.DNBResourceSeqTaskCmdHdr.LongHelp = "機械人/裝置序列任務" ;
+
+

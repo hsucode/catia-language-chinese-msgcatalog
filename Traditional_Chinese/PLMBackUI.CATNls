@@ -1,0 +1,167 @@
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Do not change the name of this file ...
+// 3951 校正官方漢化 must be synchronized with UI resource name.
+// 3951 校正官方漢化 NEEDED FOR AVOIDED DIALOG TRACE WHEN RUNNING WITH CATDEVELOPMENTSTAGE
+// 3951 校正官方漢化
+// 3951 校正官方漢化  Messages for CATIA DownwardCompatibility batch application
+// 3951 校正官方漢化  MODULE :  DownwardCompatibility
+// 3951 校正官方漢化  US Version
+// 3951 校正官方漢化====================================================================
+CATBack.Main.Title="Downward Compatibility";
+CATBack.Main.Abstr="在最近發行版的向下兼容性低至 V5R15";
+
+// 3951 校正官方漢化 User Interfaces resources
+CATBack.comboVersion.Title="CATIA Level";
+CATBack.comboAction.Convert="Convert";
+
+CATBack.CheckBox.KeepFile.Title="保留 XML 轉換映射文件";
+CATBack.labelXLblConversionDirectory.Title="將轉換的文檔保存在： ";
+CATBack.BrowseDirBox.Title="Browse Directory Box";
+CATBack.PushButton.TargetDirectory.ShortHelp="選擇位置";
+CATBack.PushButton.AdvancedOptions.Title="高級選項 ...";
+CATBack.CheckBox.AssociativeMode.Title="激活關聯模式";
+
+CATBack.CheckBox.MultiPDM.Title="多 PDM 調節";
+// 3951 校正官方漢化 copy of FBDIFrame.CATNls:ExecutionModeFrame.UseMTCheckButton.Title.
+CATBack.CheckBox.UseMappingTable.Title="使用映射表";
+CATBack.CheckBox.UseMappingTable.WngMsg="針轉換的文檔用于 '/p1' 時，\n停用“使用映射表”選項可能導致數據丟失";
+CATBack.CheckBox.UseMappingTable.WNG.title="Warning";
+CATBack.RadioBox.ConversionFile.Title="轉換為文件";
+CATBack.RadioBox.ConversionDb.Title="轉換為數據庫";
+CATBack.CheckBox.AssociativeMode.WngMsg="在關聯模式下，DownwardCompatibility 無法將對象轉換為 '/p1'。\n在關聯模式下，目標版本已設置為較低的受支持 CATIA 版本：CATIAV5R18。";
+CATBack.CoexCtx.Notfound="無法檢索 /p1 上下文的數據。";
+CATBack.CoexCtx.Incompatible="無法將 /p1 上下文用于 \"/p2\" 轉換，因為它已用于 \"/p3\" 轉換。";
+CATBack.ReportName="DownwardCompatibility_GlobalReport";
+// 3951 校正官方漢化============================================================
+// 3951 校正官方漢化 Warning messages for Direcory Selection
+// 3951 校正官方漢化============================================================
+CATBack.DirSelWarning.Title="Warning";
+CATBack.DirSelWarning.NoAuthorizeSelection="選定的“轉換”目錄 \"/p1\" 沒有讀/寫訪問權限。\n對此類目錄運行 DownwardCompatibility 應用程序可能導致不一致的結果。\n更改訪問權限或選擇具有讀/寫訪問權限的其他目錄。";
+CATBack.DirSelWarning.InconsistentResult="對 \"/p1\" 目錄運行 DownwardCompatibility 應用程序可能導致不一致的結果。";
+// 3951 校正官方漢化============================================================
+// 3951 校正官方漢化 Report messages
+// 3951 校正官方漢化============================================================
+ReportAction.Convert="轉換 \"/p1\"";
+ReportAction.Convert.Partial="已部分處理 \"/p1\" 的轉換";
+
+Report.Convert.TargetedVersion="目標版本：\"/p1\"";
+CATDWC.Report.ConvertObject="將 /p3 上下文中的 /p1 對象 \"/p2\" 轉換為 /p4 版本";
+CATDWC.Report.ConvertObject.NoContext="將 /p1 對象 \"/p2\" 轉換為 /p3 版本";
+CATDWC.Report.ObjectType="對象類型：/p1";
+CATDWC.Report.ContextName="上下文：/p1";
+
+CATDWC.GlobalReport.ConvertInfoDb="將 /p1 上下文中的對象轉換為 /p2 版本并存入 /p3 數據庫中";
+CATDWC.GlobalReport.ConvertInfoFileMapping="將 /p1 上下文中的對象轉換為 /p2 版本并存入 /p3 目錄中";
+CATDWC.GlobalReport.ConvertInfoFileNoMapping="將沒有映射的對象轉換為 /p1 版本并存入 /p2 目錄中";
+
+Report.AssociativeConvertKO="輸入 xml 中包含一組無效選項。\n在關聯模式下，無法將 DownwardCompatibility 應用程序運行至 '/p1' 版本。\n更改輸入 XML 文件并重新啟動該操作。";
+// 3951 校正官方漢化============================================================
+// 3951 校正官方漢化 Specific messages "Convert" action : Convertxxx
+// 3951 校正官方漢化============================================================
+Convert.Needed="   對象需要轉換";
+Convert.NotNeeded="   對象不需要轉換";
+Downward.Compatibility="Downward Compatibility";
+Convert.CheckerAborted=" DownwardCompatibility 轉換流程已中止 ";
+Convert.CheckerSuccessful=" DownwardCompatibility 轉換流程處理成功 ";
+
+Convert.LoadKO="在處理 /p1 時無法加載任何對象。";
+Convert.ContainerKO="無法轉換容器 /p1";
+Convert.RepProcessKO="展示的轉換流程失敗";
+Convert.RepReport.GeneratedKO="未為對象生成展示轉換報告：/p1";
+Convert.RepReport.GeneratedOK="已為對象生成展示轉換報告： ";
+Convert.modelV4="CATIA V4 文檔不需要轉換";
+Convert.cgrV5="CATIA V5 文檔不需要轉換";
+Convert.TimeStampV5.Warning="警告：已在范圍外修改從屬對象 - 本地修改可能被覆蓋";
+// 3951 校正官方漢化============================================================
+// 3951 校正官方漢化 Specific messages "Synchronization"
+// 3951 校正官方漢化============================================================
+Sync.Needed="   對象需要同步";
+
+// 3951 校正官方漢化============================================================
+// 3951 校正官方漢化 Errors messages 
+// 3951 校正官方漢化============================================================
+BackPath.String.Ref="數據庫參考，其 PLM 外部 ID 為";
+BackPath.String.Rep="數據庫展示，其 PLM 外部 ID 為";
+
+// 3951 校正官方漢化============================================================
+// 3951 校正官方漢化 Client Security Check Errors messages 
+// 3951 校正官方漢化============================================================
+ClientSecurityCheck.Error="當前配置不支持 DownwardCompatibility 操作。";
+
+// 3951 校正官方漢化============================================================
+// 3951 校正官方漢化 XML file mapping creation message 
+// 3951 校正官方漢化============================================================
+XMLMappingFile.Created="已在 /p1 中成功生成 XML 映射文件";
+XMLMappingFile.CreationFailed="無法在 /p1 中成功生成 XML 映射文件";
+
+CATBack.XMLMappingFile.XmlOption="在 XML 文件中定義的選項 /p1 不支持 XML 映射文件定義。";
+CATBack.TargetedVersion.XmlOption="在 XML 文件中定義的選項 /p1 不是受支持的目標版本。";
+CATBack.TargetedAction.XmlOption="在 XML 文件中定義的選項 /p1 不是受支持的操作。";
+
+
+// 3951 校正官方漢化============================================================
+// 3951 校正官方漢化 HTM report message 
+// 3951 校正官方漢化 Following messages are reported in the HTM reports and contains HTM tags.
+// 3951 校正官方漢化============================================================
+CATDWC.Report.ResultOK="Ok";
+CATDWC.Report.ResultKO="KO";
+CATDWC.Report.ResultWG="Warning";
+CATDWC.Report.NoReport="報告 /p1 不可用";
+CATDWC.Report.ObjectTitle="處理的對象";
+CATDWC.Report.ObjectResult="展示轉換結果";
+CATDWC.Report.MetaDataResult="元數據轉換結果";
+
+CATDWC.Report.V5Master.Convert.NotNeeded="V5Master 圖像對象不需要轉換。";
+CATDWC.Report.V5Master.V5Ref="可在  中找到 V5Master 原始文件";
+CATDWC.Report.Object.Non.Modified="對象不需要轉換：自從上次轉換 /p1 后，未修改對象";
+
+
+CATDWC.Report.PLMCoreRepReference.Options="PLMCoreRepReference 轉換選項： ";
+CATDWC.Report.PartNumber.OkDefinition="<DD>應用的 PartNumber 定義為：/p1";
+CATDWC.Report.PartNumber.NoDefinition="<DD>未定義 PartNumber 定義 ";
+CATDWC.Report.PartNumber.KoDefinition="<DD>警告：用于 PartNumber 定義的有些屬性在當前配置中未知： ";
+
+CATDWC.Report.PartNumber.BLDefined="<DD>已通過業務邏輯定義零件編號。 ";
+
+
+CATDWC.Report.Attribut.Display="<KBD>/p1</KBD>";
+CATDWC.Report.Document.Display="<KBD>/p1</KBD>";
+CATDWC.Report.PartNumber.Display="<KBD>/p1</KBD>";
+
+CATDWC.Report.PartNumber.ValueOk="報告的 /p1 文檔的 PartNumber 為 /p2 ";
+CATDWC.Report.PartNumber.ValueKo="無法報告 /p2 文檔的 /p1 PartNumber";
+
+CATDWC.Report.MultiRep.NoCriteria="<DD>未定義多展示標準。";
+CATDWC.Report.MultiRep.Criteria="<DD>已定義多展示標準，屬性 /p1=/p2";
+CATDWC.Report.MultiRep.Criteria.BL="<DD>已通過業務邏輯定義多展示標準。";
+CATDWC.Report.MultiRep.Criteria.BL.NoMainRepFound=" 尚未找到匹配的 MainRep。";
+
+CATDWC.Report.Attribute.Title="在文檔的文檔屬性中報告的屬性為： ";
+CATDWC.Report.Attribute.Name="Name";
+CATDWC.Report.Attribute.Value="Value";
+CATDWC.Report.Attribute.Status="Migration status";
+CATDWC.Report.Attribute.StatusOk="successful";
+CATDWC.Report.Attribute.StatusKo="已中止";
+
+// 3951 校正官方漢化============================================================
+// 3951 校正官方漢化 V5V6 coexistence mappingTable
+// 3951 校正官方漢化============================================================
+V5V6Mpg.CreationFailed="/p1 共存映射表創建中止";
+V5V6Mpg.InstantiateFailed="/p1 共存映射表實例化中止";
+V5V6Mpg.SaveFailed="/p1 共存映射表保存中止";
+V5V6Mpg.CloseFailed="/p1 共存映射表關閉中止";
+
+// 3951 校正官方漢化============================================================
+// 3951 校正官方漢化 Design Workspace warnings
+// 3951 校正官方漢化============================================================
+// 3951 校正官方漢化 Interactive
+CATDWCUI.DWS.DWSObjSelectedAndUIDisabled="選定對象 \"/p1\" 屬于 \"/p2\"。\nDesign Workspace 中的對象無法轉換為任何 V5 數據庫。\n已強制使用 ConvertToFile 選項。";
+
+// 3951 校正官方漢化 batch mode
+CATDWC.DWS.DWSObjSelectedAndConvToDB="選定對象 \"/p1\" 屬于 \"/p2\"。\nDesign Workspace 中的對象無法轉換為任何 V5 數據庫。 ";
+CATDWC.DWS.ConnectionToDWSFailure="要轉換的對象 \"/p1\" 屬于無法連接的 \"/p2\" Design Workspace。\n 檢查 Design Workspace 的可用性或轉換為“非共存”模式。\n ";
+CATDWC.DWS.ConnectionToDWSFailure_MultipleConn="無法在單個 DownwardCompatibility 流程中連接到多個 Design Workspace。\n拆分要在不同流程中進行轉換的數據，以實現“單 Design Workspace”轉換。\n ";
+CATDWC.DWS.LinkOnNonConvRef="屬于 \"/p2\" Design Workspace 的要轉換的對象 \"/p1\" 已鏈接至非轉換參考對象 \"/p3\"。\n無法在單個 DownwardCompatibility 流程中轉換 Design Workspace 中的對象和參考中的非轉換對象。\n 轉換參考中的第一個數據。\n";
+CATDWC.DWS.LinkOnDiffDWS="屬于 \"/p2\" Design Workspace 的要轉換的對象 \"/p1\" 已鏈接至屬于 \"/p4\" Design Workspace 的對象 \"/p3\"。\n無法在一個 DownwardCompatibility 流程中轉換 Design Workspace 中已與另一個 Design Workspace 鏈接的對象。\n運行 DownwardCompatibility 之前，先切斷兩個對象之間的鏈接。\n ";
+CATDWC.DWS.LinkOnNonUptodateRef="屬于 \"/p2\" Design Workspace 的要轉換的對象 \"/p1\" 已鏈接到參考中的已轉換對象 \"/p3\"。\n\"/p3\" 對象并不是最新狀態，自上次轉換后已更改。\n無法在單個 DownwardCompatibility 流程中轉換 Design Workspace 中的對象和參考中的對象。\n更新參考中的第一個數據。\n";
+

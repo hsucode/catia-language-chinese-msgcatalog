@@ -1,0 +1,545 @@
+// 3951 校正官方漢化 PLMPosImport help messages
+PLMPosImport_Help_Short.Msg="PLM P&O 和安全性導入管理工具\n",
+"\n",
+"用法：PLMPosImport [-h [-syntax]]\n",
+"                    [-provider providername] -server hostname:portnumber\n",
+"                    -user userid -password password [-context contextid]\n",
+"                    [-plmenv environmentid]\n",
+"                    [-no-abort-on-error] [-report reportfile]\n",
+"                    -file importfile";
+PLMPosImport_Help_Extended.Msg="\n",
+"幫助選項\n",
+"-h    打印此幫助\n",
+"-syntax\n",
+"      基于 P&O 和安全性導入文件語法打印幫助\n",
+"\n",
+"連接性選項\n",
+"-provider providername\n",
+"      連接到指定的 PLM 提供程序；默認行為是連接到\n",
+"      提供程序 EV5。\n",
+"-server hostname:portnumber\n",
+"      PLM 提供程序的主機名和端口號。\n",
+"-user userid\n",
+"      使用指定的 P&O 用戶 ID 連接。\n",
+"-password password\n",
+"      使用指定的密碼連接。\n",
+"-context contextid\n",
+"      使用指定的 P&O 上下文連接；默認行為是使用\n",
+"      上下文 PLMPOSADMIN.ADMIN.DEFAULT。\n",
+"-plmenv environmentid\n",
+"      加載指定的 PLM 環境，例如，可以指定 \"Engineering_Hub\; \"all\"",
+"      以強制加載所有環境；默認行為是\n",
+"      加載環境 \"VPMPeople\"。\n",
+"\n",
+"導入選項\n",
+"-file importfile\n",
+"      設置輸入導入文件；使用選項 -syntax 獲取有關導入語法\n",
+"      的更多信息。\n",
+"-no-abort-on-error\n",
+"      即使遇到錯誤，仍繼續執行；默認行為是\n",
+"      在發生錯誤時停止執行。\n",
+"-report reportfile\n",
+"      設置輸出報告文件，其中寫入導入命令的\n",
+"      執行狀態。";
+PLMPosImport_Help_Syntax.Msg="\n",
+"導入語法\n",
+"*VERSION number\n",
+"      設置導入文件的版本號。\n",
+"*SEPARATOR character\n",
+"      設置屬性分隔字符；默認值為 ';'。\n",
+"*NULL character\n",
+"      設置 \"unset\" 屬性展示字符串；默認值為 '$'。\n",
+"*PRJ id;[parentid];[description];[security level]\n",
+"      創建/更新項目。\n",
+"*ORG id;[parent id];[name];[description];[address];[distinguishedname];\n",
+"  [securitylevel]\n",
+"      創建/更新組織。\n",
+"*PERSON id;parentid;[firstname];[lastname];[phonenumber];[address];[email];\n",
+"  [distinguishedname];[photographurl];[securitylevel]\n",
+"      創建/更新人員。\n",
+"+MANAGER organizationid\n",
+"      聲明上一個人員作為某組織的管理員。\n",
+"+CTX contextid\n",
+"      為上一個人員分派某個上下文。\n",
+"-CTX contextid\n",
+"      從上一個人員處取消分派某個上下文。\n",
+"+PROPERTY name;[position];value\n",
+"      設置人員特性值。\n",
+"-PROPERTY name;[position];value\n",
+"      取消設置人員特性值。\n",
+"*ROLE id;[parentid];[description];[securitylevel]\n",
+"      創建/更新角色。\n",
+"*LEVEL id;[parentid];[description]\n",
+"      創建/更新安全級別。\n",
+"*CTX id;role id;organizationid;projectid;[usage];[description]\n",
+"      創建/更新上下文。\n",
+"-ALL\n",
+"      從上一個上下文中移除所有人員。\n",
+"+PERSON personid\n",
+"      將某個人員添加到上一個上下文。\n",
+"-PERSON personid\n",
+"      從上一個上下文中移除某個人員。\n",
+"*BUDDIES id;ownerid;[roleid];[description]\n",
+"      創建/更新好友列表。\n",
+"+BUDDY buddyid\n",
+"      將某個好友添加到上一個好友列表。\n",
+"-BUDDY buddyid\n",
+"      從上一個好友列表中移除某個好友。\n",
+"*AGREEMENT id;purchaser;organizationid;projectid;[description]\n",
+"      創建/更新協議。\n",
+"+COUNTRY countryid\n",
+"     將某個國家/地區添加到上一個協議。\n",
+"-COUNTRY countryid\n",
+"      從上一個協議中移除某個國家/地區。\n",
+"*FUNC entity;name;[accessright={Read|Write|Delete|Neutral}];\n",
+"  [isconditionrequired={Y|N}];[isuserfunction={Y|N}]\n",
+"      創建/更新受保護的功能。\n",
+"*FGROUP id;[description]\n",
+"      創建/更新受保護的功能組。\n",
+"+FUNC entity;function\n",
+"      將功能添加到上一個受保護的功能組。\n",
+"-FUNC entity;function\n",
+"      從上一個受保護的功能組中移除功能。\n",
+"*COND id;contents;[ispre-defined={Y|N}];[description]\n",
+"      創建/更新安全條件。\n",
+"*ACI id;expand;entityname;Expand;conditionid;conditiontype={postfilter};[description]\n",
+"      創建/更新展開訪問控制項。\n",
+"*ACI id;global;{entityname|Global|Group};functionname;[conditionid];$;[description]\n",
+"      創建/更新全局訪問控制項。\n",
+"*ACI id;group;{$|Group};functiongroupid;conditionid;$;[description]\n",
+"      創建/更新功能組訪問控制項。\n",
+"*ACI id;object;entityname;functionname;conditionid;$;[description]\n",
+"      創建/更新對象訪問控制項。\n",
+"*ACI id;query;entityname;Query;conditionid;conditiontype={prefilter};\n",
+"  [description]\n",
+"      創建/更新查詢訪問控制項。\n",
+"+GRANT granteetype={person|org|role|prj|ctx};granteeid\n",
+"      授權上一個展開、全局、組或對象 ACI。\n",
+"+REVOKE revokeetype;revokeeid\n",
+"      撤銷上一個展開、全局、組或 ACI。\n",
+"*MASK id;[description]\n",
+"      創建/更新掩碼。\n",
+"+ASSIGN assigneetype={ctx};assigneeid\n",
+"      分派上一個查詢 ACI 或掩碼。\n",
+"-ASSIGN assigneetype={ctx};assigneeid\n",
+"      取消分派上一個查詢 ACI 或掩碼。\n",
+"+PUBLIC\n",
+"      為公共分派上一個 ACI 或掩碼。\n",
+"-PUBLIC\n",
+"      從公共中取消分派上一個 ACI 或掩碼。";
+
+// 3951 校正官方漢化 PLMPosImport objects messages
+PLMPosImport_Object_ACI.Msg="ACI";
+PLMPosImport_Object_Agreement.Msg="協議";
+PLMPosImport_Object_BuddyList.Msg="好友列表";
+PLMPosImport_Object_Condition.Msg="條件";
+PLMPosImport_Object_Context.Msg="上下文";
+PLMPosImport_Object_Function.Msg="功能";
+PLMPosImport_Object_FunctionGroup.Msg="功能組";
+PLMPosImport_Object_Mask.Msg="掩碼";
+PLMPosImport_Object_Mode.Msg="模式";
+PLMPosImport_Object_Null.Msg="null";
+PLMPosImport_Object_Organization.Msg="組織";
+PLMPosImport_Object_Person.Msg="人員";
+PLMPosImport_Object_Project.Msg="項目";
+PLMPosImport_Object_Role.Msg="角色";
+PLMPosImport_Object_SecurityLevel.Msg="安全級別";
+PLMPosImport_Object_Separator.Msg="分隔符";
+PLMPosImport_Object_Version.Msg="版本";
+PLMPosImport_Object_Workgroup.Msg="工作組";
+// 3951 校正官方漢化
+PLMPosImport_Object_ACIAssignment.Msg="分派";
+PLMPosImport_Object_ACIGrantee.Msg="被授權者";
+PLMPosImport_Object_ACIPublicAssignment.Msg="公共分派";
+PLMPosImport_Object_ACIRevokee.Msg="被撤銷者";
+PLMPosImport_Object_AgreementCountry.Msg="國家/地區";
+PLMPosImport_Object_BuddyListBuddy.Msg="好友";
+PLMPosImport_Object_ContextAllPersons.Msg="所有人員";
+PLMPosImport_Object_ContextPerson.Msg="人員";
+PLMPosImport_Object_FunctionGroupFunction.Msg="功能";
+PLMPosImport_Object_MaskACI.Msg="ACI";
+PLMPosImport_Object_MaskAssignment.Msg="分派";
+PLMPosImport_Object_MaskPublicAssignment.Msg="公共分派";
+PLMPosImport_Object_OrganizationManager.Msg="管理員";
+PLMPosImport_Object_PersonAllContexts.Msg="所有上下文";
+PLMPosImport_Object_PersonContext.Msg="上下文";
+PLMPosImport_Object_PersonManager.Msg="管理員";
+PLMPosImport_Object_PersonProperty.Msg="特性";
+PLMPosImport_Object_WorkgroupManager.Msg="管理員";
+
+// 3951 校正官方漢化 PLMPosImport object attributes messages
+PLMPosImport_Attribute_ACI_Condition.Msg="條件";
+PLMPosImport_Attribute_ACI_ConditionType.Msg="條件類型";
+PLMPosImport_Attribute_ACI_Description.Msg="描述";
+PLMPosImport_Attribute_ACI_Entity.Msg="實體";
+PLMPosImport_Attribute_ACI_Function.Msg="功能";
+PLMPosImport_Attribute_ACI_Id.Msg="ID";
+PLMPosImport_Attribute_ACI_Type.Msg="類型";
+PLMPosImport_Attribute_Agreement_Description.Msg="描述";
+PLMPosImport_Attribute_Agreement_Id.Msg="ID";
+PLMPosImport_Attribute_Agreement_Organization.Msg="組織";
+PLMPosImport_Attribute_Agreement_Purchaser.Msg="購買者";
+PLMPosImport_Attribute_Agreement_Project.Msg="項目";
+PLMPosImport_Attribute_Assignment_Id.Msg="ID";
+PLMPosImport_Attribute_Assignment_Type.Msg="類型";
+PLMPosImport_Attribute_BuddyList_Description.Msg="描述";
+PLMPosImport_Attribute_BuddyList_Id.Msg="ID";
+PLMPosImport_Attribute_BuddyList_Owner.Msg="所有者";
+PLMPosImport_Attribute_BuddyList_Role.Msg="角色";
+PLMPosImport_Attribute_Condition_Contents.Msg="內容";
+PLMPosImport_Attribute_Condition_Id.Msg="ID";
+PLMPosImport_Attribute_Condition_Description.Msg="描述";
+PLMPosImport_Attribute_Condition_Predefined.Msg="預定義的";
+PLMPosImport_Attribute_Context_Description.Msg="描述";
+PLMPosImport_Attribute_Context_Id.Msg="ID";
+PLMPosImport_Attribute_Context_Organization.Msg="組織";
+PLMPosImport_Attribute_Context_Project.Msg="項目";
+PLMPosImport_Attribute_Context_Role.Msg="角色";
+PLMPosImport_Attribute_Context_Usage.Msg="使用";
+PLMPosImport_Attribute_Country_Id.Msg="ID";
+PLMPosImport_Attribute_FunctionGroup_Id.Msg="ID";
+PLMPosImport_Attribute_FunctionGroup_Description.Msg="描述";
+PLMPosImport_Attribute_Function_AccessRight.Msg="訪問權限";
+PLMPosImport_Attribute_Function_Entity.Msg="實體";
+PLMPosImport_Attribute_Function_ConditionRequired.Msg="必需條件";
+PLMPosImport_Attribute_Function_Name.Msg="名稱";
+PLMPosImport_Attribute_Function_UserFunction.Msg="用戶函數";
+PLMPosImport_Attribute_Grantee_Id.Msg="ID";
+PLMPosImport_Attribute_Grantee_Type.Msg="類型";
+PLMPosImport_Attribute_Mask_Description.Msg="描述";
+PLMPosImport_Attribute_Mask_Id.Msg="ID";
+PLMPosImport_Attribute_Mode_Value.Msg="值";
+PLMPosImport_Attribute_Null_Value.Msg="值";
+PLMPosImport_Attribute_Organization_Address.Msg="地址";
+PLMPosImport_Attribute_Organization_Description.Msg="描述";
+PLMPosImport_Attribute_Organization_DistinguishedName.Msg="專有名稱";
+PLMPosImport_Attribute_Organization_Id.Msg="ID";
+PLMPosImport_Attribute_Organization_Name.Msg="名稱";
+PLMPosImport_Attribute_Organization_Parent.Msg="父級";
+PLMPosImport_Attribute_Organization_SecurityLevel.Msg="安全級別";
+PLMPosImport_Attribute_Person_Address.Msg="地址";
+PLMPosImport_Attribute_Person_DistinguishedName.Msg="專有名稱";
+PLMPosImport_Attribute_Person_Email.Msg="電子郵件";
+PLMPosImport_Attribute_Person_FirstName.Msg="名字";
+PLMPosImport_Attribute_Person_Id.Msg="ID";
+PLMPosImport_Attribute_Person_LastName.Msg="姓氏";
+PLMPosImport_Attribute_Person_Parent.Msg="父級";
+PLMPosImport_Attribute_Person_PhoneNumber.Msg="電話號碼";
+PLMPosImport_Attribute_Person_Photograph.Msg="照片";
+PLMPosImport_Attribute_Person_SecurityLevel.Msg="安全級別";
+PLMPosImport_Attribute_PersonContext_Id.Msg="ID";
+PLMPosImport_Attribute_Project_Description.Msg="描述";
+PLMPosImport_Attribute_Project_Id.Msg="ID";
+PLMPosImport_Attribute_Project_Parent.Msg="父級";
+PLMPosImport_Attribute_Project_SecurityLevel.Msg="安全級別";
+PLMPosImport_Attribute_Revokee_Id.Msg="ID";
+PLMPosImport_Attribute_Revokee_Type.Msg="類型";
+PLMPosImport_Attribute_Role_Description.Msg="描述";
+PLMPosImport_Attribute_Role_Id.Msg="ID";
+PLMPosImport_Attribute_Role_Parent.Msg="父級";
+PLMPosImport_Attribute_Role_SecurityLevel.Msg="安全級別";
+PLMPosImport_Attribute_SecurityLevel_Description.Msg="描述";
+PLMPosImport_Attribute_SecurityLevel_Id.Msg="ID";
+PLMPosImport_Attribute_SecurityLevel_Parent.Msg="父級";
+PLMPosImport_Attribute_Separator_Value.Msg="值";
+PLMPosImport_Attribute_Value_Value.Msg="值";
+PLMPosImport_Attribute_Version_Value.Msg="值";
+PLMPosImport_Attribute_Workgroup_Description.Msg="描述";
+PLMPosImport_Attribute_Workgroup_Id.Msg="ID";
+PLMPosImport_Attribute_Workgroup_Parent.Msg="父級";
+PLMPosImport_Attribute_Workgroup_SecurityLevel.Msg="安全級別";
+// 3951 校正官方漢化
+PLMPosImport_Attribute_ACIGrantee_Id.Msg="ID";
+PLMPosImport_Attribute_ACIGrantee_Type.Msg="類型";
+PLMPosImport_Attribute_ACIRevokee_Id.Msg="ID";
+PLMPosImport_Attribute_ACIRevokee_Type.Msg="類型";
+PLMPosImport_Attribute_ACIAssignment_Id.Msg="ID";
+PLMPosImport_Attribute_ACIAssignment_Type.Msg="類型";
+PLMPosImport_Attribute_AgreementCountry_Id.Msg="ID";
+PLMPosImport_Attribute_BuddyListBuddy_Id.Msg="ID";
+PLMPosImport_Attribute_ContextPerson_Id.Msg="ID";
+PLMPosImport_Attribute_FunctionGroupFunction_Entity.Msg="實體";
+PLMPosImport_Attribute_FunctionGroupFunction_Name.Msg="名稱";
+PLMPosImport_Attribute_MaskACI_Id.Msg="ID";
+PLMPosImport_Attribute_MaskAssignment_Id.Msg="ID";
+PLMPosImport_Attribute_MaskAssignment_Type.Msg="類型";
+PLMPosImport_Attribute_OrganizationManager_Id.Msg="ID";
+PLMPosImport_Attribute_PersonManager_Id.Msg="ID";
+PLMPosImport_Attribute_PersonProperty_Position.Msg="位置";
+PLMPosImport_Attribute_PersonProperty_Name.Msg="名稱";
+PLMPosImport_Attribute_PersonProperty_Value.Msg="值";
+PLMPosImport_Attribute_WorkgroupManager_Id.Msg="ID";
+
+// 3951 校正官方漢化 PLMPosImport phase 1 objects messages
+PLMPosImport_Object_Phase1ACI.Msg="ACI";
+PLMPosImport_Object_Phase1All.Msg="所有";
+PLMPosImport_Object_Phase1Attribute.Msg="屬性";
+PLMPosImport_Object_Phase1Buddy.Msg="好友";
+PLMPosImport_Object_Phase1BuddyList.Msg="好友列表";
+PLMPosImport_Object_Phase1Context.Msg="上下文";
+PLMPosImport_Object_Phase1Data.Msg="數據";
+PLMPosImport_Object_Phase1DDL.Msg="ddl";
+PLMPosImport_Object_Phase1Entity.Msg="實體";
+PLMPosImport_Object_Phase1EntityFilter.Msg="過濾器";
+PLMPosImport_Object_Phase1Mask.Msg="掩碼";
+PLMPosImport_Object_Phase1Manager.Msg="管理員";
+PLMPosImport_Object_Phase1Mode.Msg="模式";
+PLMPosImport_Object_Phase1Organization.Msg="組織";
+PLMPosImport_Object_Phase1Person.Msg="人員";
+PLMPosImport_Object_Phase1Privilege.Msg="權限";
+PLMPosImport_Object_Phase1ProcessGroup.Msg="流程組";
+PLMPosImport_Object_Phase1Process.Msg="流程";
+PLMPosImport_Object_Phase1Project.Msg="項目";
+PLMPosImport_Object_Phase1Role.Msg="角色";
+PLMPosImport_Object_Phase1SecurityLevel.Msg="級別";
+PLMPosImport_Object_Phase1Skill.Msg="技能";
+PLMPosImport_Object_Phase1Value.Msg="值";
+// 3951 校正官方漢化
+PLMPosImport_Object_Phase1AttributeACI.Msg="ACI";
+PLMPosImport_Object_Phase1AttributeValue.Msg="值";
+PLMPosImport_Object_Phase1BuddyListBuddy.Msg="好友";
+PLMPosImport_Object_Phase1ContextPerson.Msg="人員";
+PLMPosImport_Object_Phase1ContextAllPersons.Msg="所有";
+PLMPosImport_Object_Phase1ContextMask.Msg="掩碼";
+PLMPosImport_Object_Phase1ContextSkill.Msg="技能";
+PLMPosImport_Object_Phase1OrganizationSkill.Msg="技能";
+PLMPosImport_Object_Phase1PersonManager.Msg="管理員";
+PLMPosImport_Object_Phase1PersonSkill.Msg="技能";
+PLMPosImport_Object_Phase1ProcessGroupProcess.Msg="流程";
+PLMPosImport_Object_Phase1ProjectSkill.Msg="技能";
+PLMPosImport_Object_Phase1RoleAllPersons.Msg="所有";
+PLMPosImport_Object_Phase1RoleMask.Msg="掩碼";
+PLMPosImport_Object_Phase1RolePerson.Msg="人員";
+PLMPosImport_Object_Phase1RoleSkill.Msg="技能";
+
+// 3951 校正官方漢化 PLMPosImport phase 1 objects attributes messages
+PLMPosImport_Attribute_Phase1Attribute_Alias.Msg="別名";
+PLMPosImport_Attribute_Phase1Attribute_AuthorizedRequired.Msg="已授權的必需";
+PLMPosImport_Attribute_Phase1Attribute_DefaultValue.Msg="默認值";
+PLMPosImport_Attribute_Phase1Attribute_Entity.Msg="實體";
+PLMPosImport_Attribute_Phase1Attribute_Group.Msg="組";
+PLMPosImport_Attribute_Phase1Attribute_Mandatory.Msg="必需";
+PLMPosImport_Attribute_Phase1Attribute_Name.Msg="名稱";
+PLMPosImport_Attribute_Phase1Attribute_Order.Msg="順序";
+PLMPosImport_Attribute_Phase1Attribute_Sensitive.Msg="敏感";
+PLMPosImport_Attribute_Phase1BuddyList_Description.Msg="描述";
+PLMPosImport_Attribute_Phase1BuddyList_Id.Msg="ID";
+PLMPosImport_Attribute_Phase1BuddyList_Parent.Msg="父級";
+PLMPosImport_Attribute_Phase1Context_Id.Msg="ID";
+PLMPosImport_Attribute_Phase1Context_Organization.Msg="項目";
+PLMPosImport_Attribute_Phase1Context_Project.Msg="組織";
+PLMPosImport_Attribute_Phase1Context_Role.Msg="角色";
+PLMPosImport_Attribute_Phase1Data_Name.Msg="名稱";
+PLMPosImport_Attribute_Phase1Data_Type.Msg="類型";
+PLMPosImport_Attribute_Phase1Data_Description.Msg="描述";
+PLMPosImport_Attribute_Phase1Data_Usage.Msg="使用";
+PLMPosImport_Attribute_Phase1DDL_Value.Msg="值";
+PLMPosImport_Attribute_Phase1Entity_Name.Msg="名稱";
+PLMPosImport_Attribute_Phase1Entity_Mask.Msg="掩碼";
+PLMPosImport_Attribute_Phase1Entity_Alias.Msg="別名";
+PLMPosImport_Attribute_Phase1Mask_Name.Msg="名稱";
+PLMPosImport_Attribute_Phase1Mask_Context.Msg="上下文";
+PLMPosImport_Attribute_Phase1Mask_Description.Msg="描述";
+PLMPosImport_Attribute_Phase1Mode_Value.Msg="值";
+PLMPosImport_Attribute_Phase1Organization_Address.Msg="地址";
+PLMPosImport_Attribute_Phase1Organization_Description.Msg="描述";
+PLMPosImport_Attribute_Phase1Organization_Id.Msg="ID";
+PLMPosImport_Attribute_Phase1Organization_Name.Msg="名稱";
+PLMPosImport_Attribute_Phase1Organization_Parent.Msg="父級";
+PLMPosImport_Attribute_Phase1Person_FirstName.Msg="名字";
+PLMPosImport_Attribute_Phase1Person_Id.Msg="ID";
+PLMPosImport_Attribute_Phase1Person_LastName.Msg="姓氏";
+PLMPosImport_Attribute_Phase1Person_Parent.Msg="父級";
+PLMPosImport_Attribute_Phase1Person_PhoneNumber.Msg="電話號碼";
+PLMPosImport_Attribute_Phase1Person_Address.Msg="地址";
+PLMPosImport_Attribute_Phase1Person_Email.Msg="電子郵件";
+PLMPosImport_Attribute_Phase1Person_SecurityLevel.Msg="安全級別";
+PLMPosImport_Attribute_Phase1Privilege_Authorization.Msg="授權";
+PLMPosImport_Attribute_Phase1Privilege_Grantee.Msg="被授權者";
+PLMPosImport_Attribute_Phase1Privilege_Process.Msg="流程";
+PLMPosImport_Attribute_Phase1Privilege_DataGroup.Msg="數據組";
+PLMPosImport_Attribute_Phase1Privilege_DataGroupType.Msg="數據組類型";
+PLMPosImport_Attribute_Phase1Process_Application.Msg="應用程序";
+PLMPosImport_Attribute_Phase1Process_Function.Msg="功能";
+PLMPosImport_Attribute_Phase1Process_Command.Msg="命令";
+PLMPosImport_Attribute_Phase1Process_DataGroupRequired.Msg="必需數據組";
+PLMPosImport_Attribute_Phase1ProcessGroup_Name.Msg="名稱";
+PLMPosImport_Attribute_Phase1ProcessGroup_Description.Msg="描述";
+PLMPosImport_Attribute_Phase1Project_Description.Msg="描述";
+PLMPosImport_Attribute_Phase1Project_Id.Msg="ID";
+PLMPosImport_Attribute_Phase1Project_Parent.Msg="父級";
+PLMPosImport_Attribute_Phase1Role_Description.Msg="描述";
+PLMPosImport_Attribute_Phase1Role_Id.Msg="ID";
+PLMPosImport_Attribute_Phase1Role_ParentOrganization.Msg="父組織";
+PLMPosImport_Attribute_Phase1Role_Parent.Msg="父級";
+PLMPosImport_Attribute_Phase1SecurityLevel_Id.Msg="ID";
+PLMPosImport_Attribute_Phase1SecurityLevel_Parent.Msg="父級";
+PLMPosImport_Attribute_Phase1SecurityLevel_Description.Msg="描述";
+PLMPosImport_Attribute_Phase1Skill_Description.Msg="描述";
+PLMPosImport_Attribute_Phase1Skill_ExpirationDate.Msg="到期日期";
+PLMPosImport_Attribute_Phase1Skill_Id.Msg="ID";
+PLMPosImport_Attribute_Phase1Skill_Parent.Msg="父級";
+// 3951 校正官方漢化
+PLMPosImport_Attribute_Phase1AttributeACI_Operation.Msg="操作";
+PLMPosImport_Attribute_Phase1AttributeACI_Modifiable.Msg="可修改";
+PLMPosImport_Attribute_Phase1AttributeValue_Value.Msg="值";
+PLMPosImport_Attribute_Phase1BuddyListBuddy_Id.Msg="ID";
+PLMPosImport_Attribute_Phase1ContextPerson_Id.Msg="ID";
+PLMPosImport_Attribute_Phase1ContextMask_Name.Msg="名稱";
+PLMPosImport_Attribute_Phase1ContextSkill_Id.Msg="技能";
+PLMPosImport_Attribute_Phase1EntityFilter_Operation.Msg="操作";
+PLMPosImport_Attribute_Phase1EntityFilter_DataGroup.Msg="數據組";
+PLMPosImport_Attribute_Phase1OrganizationSkill_Id.Msg="ID";
+PLMPosImport_Attribute_Phase1PersonManager_Id.Msg="ID";
+PLMPosImport_Attribute_Phase1PersonSkill_Id.Msg="ID";
+PLMPosImport_Attribute_Phase1ProcessGroupProcess_Application.Msg="應用程序";
+PLMPosImport_Attribute_Phase1ProcessGroupProcess_Function.Msg="功能";
+PLMPosImport_Attribute_Phase1ProcessGroupProcess_Command.Msg="命令";
+PLMPosImport_Attribute_Phase1ProjectSkill_Id.Msg="ID";
+PLMPosImport_Attribute_Phase1RoleMask_Name.Msg="名稱";
+PLMPosImport_Attribute_Phase1RolePerson_Id.Msg="ID";
+PLMPosImport_Attribute_Phase1RoleSkill_Id.Msg="ID";
+
+// 3951 校正官方漢化 PLMPosImport global status messages
+PLMPosImport_Status_Error.Msg="*錯誤*";
+PLMPosImport_Status_Info.Msg=" 信息  ";
+PLMPosImport_Status_OK.Msg="  確定   ";
+PLMPosImport_Status_Warning.Msg="警告";
+
+// 3951 校正官方漢化 PLMPosImport global error/warning messages
+PLMPosImport_Error_Connect.Msg="連接到 PLM 提供程序時發生錯誤。";
+PLMPosImport_Error_Context.Msg="錯誤：登錄上下文 /P01 無效。";
+PLMPosImport_Error_CreateSession.Msg="創建用戶會話時發生錯誤。";
+PLMPosImport_Error_ImportFile.Msg="執行導入時發生錯誤；請檢查報告跟蹤或文件（如果有），",
+"以獲取其他信息。";
+PLMPosImport_Error_Initialize.Msg="初始化導入引擎時發生錯誤。";
+PLMPosImport_Error_MissingOrInvalidArgument.Msg="錯誤：選項缺失或無效。";
+PLMPosImport_Error_SetEnvironment.Msg="設置 PLM 環境時發生錯誤";
+PLMPosImport_Warning_DeleteSession.Msg="刪除用戶會話時發生錯誤。";
+PLMPosImport_Warning_Disconnect.Msg="斷開與 PLM 提供程序的連接時發生錯誤。";
+
+// 3951 校正官方漢化 PLMPosImport execution status messages
+PLMPosImport_Info_SaveNotRequired.Msg="無需保存 - 未執行任何更改";
+PLMPosImport_Info_Unchanged.Msg="未更改";
+PLMPosImport_Info_ValueAlreadyAdded.Msg="未更改 - 已添加值";
+PLMPosImport_Info_ValueNotFound.Msg="未更改 - 未找到值";
+PLMPosImport_OK_Create.Msg="已創建";
+PLMPosImport_OK_Set.Msg="設置";
+PLMPosImport_OK_Update.Msg="已更新";
+PLMPosImport_Warning_CloseFile.Msg="無法關閉導入文件";
+PLMPosImport_Warning_CommandDeprecated.Msg="命令已不用";
+PLMPosImport_Warning_CommandNotImplemented.Msg="未實施命令";
+PLMPosImport_Warning_ExtraValue.Msg="額外值 #/P01：/P02";
+PLMPosImport_Error_Create.Msg="無法創建";
+PLMPosImport_Error_GetValue.Msg="無法解析命令 - 無法獲取屬性 /P01 的值";
+PLMPosImport_Error_InvalidKeyword.Msg="無法處理命令 - 關鍵字 /P01 無效";
+PLMPosImport_Error_InvalidParent.Msg="無法處理命令 - 父對象無效，應該是：/P01";
+PLMPosImport_Error_InvalidValue.Msg="無法處理命令 - 屬性 /P02 的值 \"/P01\" 無效";
+PLMPosImport_Error_MissingValue.Msg="無法解析命令 - 缺少屬性 /P01 的值";
+PLMPosImport_Error_NoCurrentCommand.Msg="無法處理命令 - 無當前命令";
+PLMPosImport_Error_NonNullValue.Msg="無法處理命令 - 意外的非 null 值";
+PLMPosImport_Error_NullValue.Msg="無法處理命令 - 意外的 null 值";
+PLMPosImport_Error_OpenFile.Msg="無法打開導入文件";
+PLMPosImport_Error_ReadFile.Msg="無法讀取導入文件";
+PLMPosImport_Error_Save.Msg="無法保存更改";
+PLMPosImport_Error_Set.Msg="無法設置";
+PLMPosImport_Error_Unset.Msg="無法取消設置";
+PLMPosImport_Error_Update.Msg="無法更新";
+PLMPosImport_Error_UpdateReadOnlyAttribute.Msg="無法更新只讀屬性 /P01";
+PLMPosImport_Error_UnauthorizedValue.Msg="無法處理命令 - 屬性 /P02 的值 \"/P01\" 未授權";
+PLMPosImport_Error_Unexpected.Msg="無法處理命令 - 意外錯誤";
+PLMPosImport_Error_UnexpectedValueCount.Msg="無法處理命令 - 意外的值數";
+PLMPosImport_Error_UnexistingObject.Msg="無法處理命令 - \"/P01\" 不存在";
+PLMPosImport_Error_UnknownKeyword.Msg="無法處理命令 - 關鍵字 /P01 未知或位置錯誤";
+PLMPosImport_Error_UnmanagedOperation.Msg="無法處理命令 - 不受管理的操作 /P01";
+PLMPosImport_Error_UnsupportedFeature.Msg="無法處理命令 - 不支持的特征";
+// 3951 校正官方漢化
+PLMPosImport_Info_AssigneeAlreadyAdded.Msg="未更改 - 已添加被分派者";
+PLMPosImport_Info_AssigneeNotFound.Msg="未更改 - 未找到被分派者";
+PLMPosImport_Info_AttributeAlreadyAdded.Msg="未更改 - 已添加屬性";
+PLMPosImport_Info_AttributeNotFound.Msg="未更改 - 未找到屬性";
+PLMPosImport_Info_BuddyAlreadyAdded.Msg="未更改 - 已添加好友";
+PLMPosImport_Info_BuddyNotFound.Msg="未更改 - 未找到好友";
+PLMPosImport_Info_CountryAlreadyAdded.Msg="未更改 - 已添加國家/地區";
+PLMPosImport_Info_CountryNotFound.Msg="未更改 - 未找到國家/地區";
+PLMPosImport_Info_GranteeAlreadyAdded.Msg="未更改 - 已添加被授權者";
+PLMPosImport_Info_GranteeNotFound.Msg="未更改 - 未找到被授權者";
+PLMPosImport_Info_ManagerAlreadySet.Msg="未更改 - 已將人員設置為管理員";
+PLMPosImport_Info_ContextAlreadyAssigned.Msg="未更改 - 已將上下文分派給人員";
+PLMPosImport_Info_ContextNotAssigned.Msg="未更改 - 未將上下文分派給人員";
+PLMPosImport_Info_FunctionAlreadyAttached.Msg="未更改 - 已將功能附加到功能組";
+PLMPosImport_Info_FunctionNotAttached.Msg="未更改 - 未將功能附加到功能組";
+PLMPosImport_Info_NoContextAssigned.Msg="未更改 - 未將上下文分派給人員";
+PLMPosImport_Info_NoPersonAssigned.Msg="未更改 - 未向人員分派上下文";
+PLMPosImport_Info_PropertyAlreadySet.Msg="未更改 - 已設置特性";
+PLMPosImport_Info_PropertyAlreadyUnset.Msg="未更改 - 已取消設置特性";
+PLMPosImport_Info_PublicAssignmentAlreadySet.Msg="未更改 - 已設置公共分派";
+PLMPosImport_Info_PublicAssignmentNotSet.Msg="未更改 - 未設置公共分派";
+PLMPosImport_Info_RevokeeAlreadyAdded.Msg="未更改 - 已添加被撤銷者";
+PLMPosImport_Info_RevokeeNotFound.Msg="未更改 - 未找到被撤銷者";
+PLMPosImport_OK_AddAssignment.Msg="已添加被分派者";
+PLMPosImport_OK_AddAttribute.Msg="已添加屬性";
+PLMPosImport_OK_AddBuddy.Msg="已添加好友";
+PLMPosImport_OK_AddContext.Msg="已添加上下文";
+PLMPosImport_OK_AddCountry.Msg="已添加國家/地區";
+PLMPosImport_OK_AddFunction.Msg="已添加功能";
+PLMPosImport_OK_AddGrantee.Msg="已添加被授權者";
+PLMPosImport_OK_AddPerson.Msg="已添加人員";
+PLMPosImport_OK_AddPublicAssignment.Msg="設置公共分派";
+PLMPosImport_OK_AddRevokee.Msg="已添加被撤銷者";
+PLMPosImport_OK_AddValue.Msg="已添加值";
+PLMPosImport_OK_RemoveAllContexts.Msg="已移除所有上下文";
+PLMPosImport_OK_RemoveAllPersons.Msg="已移除所有人員";
+PLMPosImport_OK_RemoveAssignment.Msg="已移除被分派者";
+PLMPosImport_OK_RemoveAttribute.Msg="已移除屬性";
+PLMPosImport_OK_RemoveBuddy.Msg="已移除好友";
+PLMPosImport_OK_RemoveContext.Msg="已移除上下文";
+PLMPosImport_OK_RemoveCountry.Msg="已移除國家/地區";
+PLMPosImport_OK_RemoveFunction.Msg="已移除功能";
+PLMPosImport_OK_RemoveGrantee.Msg="已移除被授權人";
+PLMPosImport_OK_RemovePerson.Msg="已移除人員";
+PLMPosImport_OK_RemoveRevokee.Msg="已移除被撤銷者";
+PLMPosImport_OK_RemovePublicAssignment.Msg="取消設置公共分派";
+PLMPosImport_OK_RemoveValue.Msg="已移除值";
+PLMPosImport_OK_Save.Msg="已保存更改";
+PLMPosImport_OK_SetManager.Msg="管理員設置";
+PLMPosImport_OK_SetProperty.Msg="設置特性";
+PLMPosImport_OK_UnsetProperty.Msg="取消設置特性";
+PLMPosImport_Error_AddAssignment.Msg="無法添加被分派者";
+PLMPosImport_Error_AddAttribute.Msg="無法添加屬性";
+PLMPosImport_Error_AddAttribute_InvalidACIType.Msg="無法添加屬性 - ACI 類型無效";
+PLMPosImport_Error_AddBuddy.Msg="無法添加好友";
+PLMPosImport_Error_AddContext.Msg="無法添加上下文";
+PLMPosImport_Error_AddCountry.Msg="無法添加國家/地區";
+PLMPosImport_Error_AddFunction.Msg="無法添加功能";
+PLMPosImport_Error_AddGrantee.Msg="無法添加被授權者";
+PLMPosImport_Error_AddPerson.Msg="無法添加人員";
+PLMPosImport_Error_AddPublicAssignment.Msg="無法設置公共分派";
+PLMPosImport_Error_AddRevokee.Msg="無法添加被撤銷者";
+PLMPosImport_Error_AddValue.Msg="無法添加值";
+PLMPosImport_Error_InvalidACIEntity.Msg="無法處理命令 - ACI 類型 \"/P02\" 的實體 \"/P01\" 無效";
+PLMPosImport_Error_InvalidACIFunction.Msg="無法處理命令 - ACI 類型 \"/P02\" 的功能 \"/P01\" 無效";
+PLMPosImport_Error_InvalidACIType.Msg="無法處理命令 - 無效的 ACI 類型：\"/P01\"";
+PLMPosImport_Error_InvalidCondition.Msg="無法處理命令 - ACI 類型 \"/P02\" 的條件 \"/P01\" 無效";
+PLMPosImport_Error_InvalidConditionType.Msg="無法處理命令 - 無效的條件類型：\"/P01\"";
+PLMPosImport_Error_InvalidEditable.Msg="無法處理命令 - 無效的可編輯值：\"/P01\"";
+PLMPosImport_Error_InvalidOrder.Msg="無法處理命令 - 無效的順序值：\"/P01\"";
+PLMPosImport_Error_InvalidRootOrganizationIdentifier.Msg="無法處理命令 - 無效的根組織標識符：\"/P01\"";
+PLMPosImport_Error_InvalidSomeoneType.Msg="無法處理命令 - 無效的某人類型：\"/P01\"";
+PLMPosImport_Error_RemoveAssignment.Msg="無法移除被分派者";
+PLMPosImport_Error_RemoveAllContexts.Msg="無法從人員中移除所有上下文";
+PLMPosImport_Error_RemoveAllPersons.Msg="無法從上下文中移除所有人員";
+PLMPosImport_Error_RemoveAttribute.Msg="無法移除屬性";
+PLMPosImport_Error_RemoveAttribute_InvalidACIType.Msg="無法移除屬性 - ACI 類型無效";
+PLMPosImport_Error_RemoveContext.Msg="無法移除上下文";
+PLMPosImport_Error_RemoveCountry.Msg="無法移除國家/地區";
+PLMPosImport_Error_RemoveFunction.Msg="無法移除功能";
+PLMPosImport_Error_RemoveGrantee.Msg="無法移除被授權者";
+PLMPosImport_Error_RemovePerson.Msg="無法移除人員";
+PLMPosImport_Error_RemovePublicAssignment.Msg="無法取消設置公共分派";
+PLMPosImport_Error_RemoveRevokee.Msg="無法移除被撤銷者";
+PLMPosImport_Error_RemoveValue.Msg="無法移除值";
+PLMPosImport_Error_SetManager.Msg="無法設置管理員";
+PLMPosImport_Error_SetProperty.Msg="無法設置特性";
+PLMPosImport_Error_UnexpectedACIType.Msg="無法處理命令 - 意外的 ACI 類型";
+PLMPosImport_Error_UnsetProperty.Msg="無法取消設置特性";

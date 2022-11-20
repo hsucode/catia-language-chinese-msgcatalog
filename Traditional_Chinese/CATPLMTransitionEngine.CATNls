@@ -1,0 +1,256 @@
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 June 2006 - creation - EBD
+// 3951 校正官方漢化 Feb  2011 - Modification - OML
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 Transition Engine Errors
+// 3951 校正官方漢化=============================================================================
+
+ERR_QUERY="查詢為“失敗”";
+
+NO_QUERY_RESULT="查詢未返回任何結果";
+
+ERR_EXPAND="展開為“失敗”";
+
+ERR_OPEN="打開為“失敗”";
+
+ERR_SAVE="交易保存為“失敗”";
+
+ERR_IMPORT="交易導入為“失敗”";
+
+ERR_COMMIT="提交為“失敗”";
+
+ERR_COPY_STREAM="流傳輸為“失敗”";
+
+ERR_ROLLBACK="回滾為“失敗”";
+
+MSG_ROLLBACK="回滾交易，檢查錯誤";
+
+ERR_INTERNAL="轉換引擎內部錯誤";
+
+ERR_PROVIDER_SOURCE="源提供程序引起的錯誤";
+ERR_PROVIDER_SOURCE.Diagnostic="無法連接到數據源";
+ERR_PROVIDER_SOURCE.Advice="檢查報告以獲取更多詳細信息";
+ERR_PROVIDER_SOURCE.Request="請與管理員聯系";
+
+ERR_PROVIDER_DEST="目標提供程序引起的錯誤";
+ERR_PROVIDER_DEST.Diagnostic="無法連接到目標檔案庫";
+ERR_PROVIDER_DEST.Advice="檢查報告以獲取更多詳細信息";
+ERR_PROVIDER_DEST.Request="請與管理員聯系";
+
+ERR_INPUT_COMPLETEGRAPH="輸入完整圖為 NULL 或空";
+
+MSG_ERR_BUSINESS_LOGIC="傳輸已完成，但帶有警告。無法執行業務邏輯，應檢查 BL 腳本。數據庫中可能不存在某些對象或者可能未正確設置某些屬性。";
+ERR_BUSINESS_LOGIC="/p1 \n /p2";
+ERR_AUTONAMING="使用“自動命名”服務保留名稱失敗。";
+
+MSG_ERR_BL_CUSTO_MAPPING="錯誤：執行 PLMCustoTypeMapping 業務邏輯時出現內部問題。";
+MSG_ERR_BL_ATTR_MAPPING="錯誤：執行 PLMAttributesMapping 業務邏輯時出現內部問題。";
+MSG_ERR_IDENT_INIT="錯誤：執行 PLMIdentificationInitialization 業務邏輯時出現內部問題。";
+MSG_ERR_BL_PUID_VALUATION="錯誤：執行 PublicUIDAttributesValuation 業務邏輯時出現內部問題。";
+MSG_ERR_BL_PUID_ATTR_EMPTY="錯誤：在多 PDM 傳輸框架中，屬性 /p1 參與到 PUID，因此其值不應為空。
+\n 傳輸已中斷。
+\n通過   PublicUIDAttributesValuation 業務邏輯為 /p1 賦值之后，重新啟動該屬性。";
+MSG_ERR_PUID_ALREADY_EXISTS=" 在使用同一公共 UID 的當前交易中傳輸元素：\n";
+MSG_ERR_PUID_ATTR_NAMES_LIST_DIVERGES=" PUID 屬性列表是從用于同一類型元素的先前 PUID 屬性列表中分離出來的。\n當前 PUID 屬性為：\n";
+MSG_WARNG_NO_PUID="PublicUIDAttributesValuation 業務邏輯未返回此元素的任何 PUID，因此將不會過濾該元素。";
+
+MSG_WARNG_BUSINESS_LOGIC="傳輸已完成，但帶有警告。未找到用于執行業務邏輯的腳本。數據庫中可能不存在某些對象或者可能未正確設置某些屬性。";
+MSG_WARNG_BL_CUSTO_MAPPING=" 找不到 PLMCustoTypeMapping BusinessLogic 執行的腳本。";
+MSG_WARNG_BL_ATTR_MAPPING=" 找不到 PLMAttributesMapping BusinessLogic 執行的腳本。";
+MSG_WARNG_IDENT_INIT="警告：未找到用于執行 PLMIdentificationInitialization 業務邏輯的腳本。";
+MSG_WARNG_BL_PUID_VALUATION="警告：未找到用于執行 PublicUIDAttributesValuation 業務邏輯的腳本。";
+MULTIPDM_FILTER_TYPE="多 PDM 過濾器";
+MSG_WARNG_PUID_FILTER=" 警告：未傳輸此元素，因為多 PDM 過濾器已將其移除。\n實際上，目標 PDM 中已存在使用同一公共 UID 的元素：\n";
+MSG_WARNG_REP_INST_FILTER=" 警告：未傳輸此展示實例，因為已過濾相應展示。\n實際上，目標 PDM 中已存在使用與展示實例相同的公共 UID 的元素：\n";
+MSG_WARNG_NO_PUID_QUERY_LAUNCHED="警告：尚未為此元素聲明任何 PUID 屬性，未過濾該元素。";
+MSG_WARNG_CESTAMP_UPDATE_FILTER=" 警告：已過濾此元素，因為它是目標中的主元素，或者將不會更新該元素。";
+MSG_WARNG_OBJECT_FILTER="已過濾此元素。";
+MASTER_FILTER_TYPE="主過濾器";
+MSG_WARNG_MASTER_FILTER=" 警告：此對象是目標中的主對象，禁止更新該對象。";
+
+CESTAMP_FILTER_TYPE="更新過濾器";
+MSG_WARNG_REP_INST_CESTAMP_UPDATE_FILTER=" 警告：未傳輸此展示實例，因為已過濾相應展示。\n實際上，即將更新該展示\n";
+
+FILTER_MODE_2="“從屬呈示”過濾器";
+MSG_WARNG_FILTER_2="此元素嵌入在文檔 CATProduct（黑盒）中，將由文檔進行處理。";
+
+FILTER_MODE_3="“導航展示”過濾器";
+MSG_WARNG_FILTER_3="此元素為“導航展示”。未傳輸該元素。";
+
+FILTER_MODE_4="“僅反向可視化”過濾器";
+MSG_WARNG_FILTER_4="無法以“僅反向可視化”模式傳輸此元素。\n此情況適用于不包含設計數據的元素實例。";
+
+FILTER_MODE_5="不更新";
+MSG_WARNG_FILTER_5="先前已傳輸此元素。將不會更新該元素，\n因為自上次傳輸以來，尚未在源數據庫中對其進行修改。";
+
+FILTER_MODE_6="“不在遷移方案中更新”過濾器";
+MSG_WARNG_FILTER_6="先前已傳輸此元素。將不會更新該元素，\n因為當前傳輸模式為“遷移”。";
+
+FILTER_MODE_7="主過濾器";
+MSG_WARNG_FILTER_7="此對象是目標中的主對象，禁止更新該對象。";
+
+FILTER_MODE_8="“認證后導航”過濾器";
+MSG_WARNG_FILTER_8="已傳輸且已升級展示。為保留目標中的設計，將不會以“僅可視化”模式傳輸展示。";
+
+FILTER_MODE_10="“BRep 后導航”過濾器";
+MSG_WARNG_FILTER_10="展示已在 V5 本地 BRep 模式下轉換。為了保留 V5 本地數據的上下文中的設計，該展示將不會在“僅可視化”模式下轉換。";
+
+FILTER_MODE_11="“認證后 BRep”過濾器";
+MSG_WARNG_FILTER_11="已傳輸且已升級展示。為保留目標中的設計，將不會以 V5 本地模式傳輸展示";
+
+FILTER_MODE_12="“按規格”過濾后的“僅可視化”";
+MSG_WARNG_FILTER_12="已以“按規格”模式傳輸展示。為保留目標中的設計，將不會以“僅可視化”模式傳輸展示。";
+
+FILTER_MODE_13="“按結果”過濾后的“僅可視化”";
+MSG_WARNG_FILTER_13="已以“按結果”模式傳輸展示。為保留目標中的設計，將不會以“僅可視化”模式傳輸展示。";
+
+
+FILTER_MODE_AS_REP=" 此元素因其對應展示而被過濾。";
+
+
+MULTIPDM_FILTER_TYPE="多 PDM 過濾器";
+
+ERR_INTEGRITY_CHECK="完整性檢查為“失敗”";
+
+ERR_IDENTIFICATION_INIT="初始化標識符失敗。無法繼續進程。";
+
+ERR_QUERYROOT_MULTIPLE_RESULTS="根查詢返回多個結果";
+
+ERR_CONVERT_STREAM="流轉換為“失敗”";
+
+ERR_STREAM_NAV="處理流以進行導航遷移時出錯";
+ERR_STREAM_NAV_REP="當前展示沒有可用于導航遷移的可用流";
+
+ERR_REP_STREAM_COPY="轉換以下流期間發生錯誤：";
+
+ERR_PARSING_TRANSITION_PROFILE="解析轉換概要文件時發生錯誤";
+
+ERR_COEXBATCH="CoexistenceBatch 已失敗。未啟動數據傳輸";
+
+ERR_MISSING_OBJECTS="已刪除數據庫中的某些對象，將無法進行更新";
+
+MSG_DELETE_TRANSAC="對象上發生錯誤，請檢查交易以獲取詳細信息（因此未啟動刪除交易）";
+
+MSG_ERR_NOT_ALL_BSF="一些要轉換的對象的版本不是迄今為止最好的版本，因此轉換已中止。";
+
+
+
+// 3951 校正官方漢化 =============================================================================
+// 3951 校正官方漢化 Error Management
+// 3951 校正官方漢化 =============================================================================
+
+ERR_NO_OBJECTS.Diagnostic="沒有可供傳輸的對象";
+ERR_NO_OBJECTS.Advice="檢查輸入源中是否存在對象";
+ERR_NO_OBJECTS.Request="請選擇要傳輸的對象";
+
+ERR_OPEN.Diagnostic="無法從源檢索數據";
+ERR_OPEN.Advice="檢查報告以獲取更多詳細信息";
+ERR_OPEN.Request="請聯系管理員";
+
+ERR_SAVE.Diagnostic="無法將數據保存到目標檔案庫";
+ERR_SAVE.Advice="檢查報告以獲取更多詳細信息";
+ERR_SAVE.Request="請聯系管理員";
+
+ERR_COMMIT.Diagnostic="無法將數據寫入到目標檔案庫";
+ERR_COMMIT.Advice="檢查報告以獲取更多詳細信息";
+ERR_COMMIT.Request="請聯系管理員";
+
+ERR_ROLLBACK.Diagnostic="由于發生不可恢復的錯誤而取消了交易";
+ERR_ROLLBACK.Advice="檢查報告以獲取更多詳細信息";
+ERR_ROLLBACK.Request="請聯系管理員";
+
+MSG_ROLLBACK.Diagnostic="進程已引發一個錯誤：已取消傳輸";
+MSG_ROLLBACK.Advice="檢查傳輸報告中是否存在錯誤";
+MSG_ROLLBACK.Request="";
+
+ERR_COPY_STREAM_MSG.Diagnostic="復制流時發生錯誤";
+ERR_COPY_STREAM_MSG.Advice="";
+ERR_COPY_STREAM_MSG.Request="";
+
+ERR_CONVERT_STREAM_MSG.Diagnostic="轉換流時發生錯誤";
+ERR_CONVERT_STREAM_MSG.Advice="";
+ERR_CONVERT_STREAM_MSG.Request="";
+
+ERR_STREAM_NAV.Diagnostic="用于導航遷移的某些流不正確";
+ERR_STREAM_NAV.Advice="展示應包含 CGR 流";
+ERR_STREAM_NAV.Request="";
+
+ERR_PARSING_TRANSITION_PROFILE.Diagnostic="轉換概要文件的格式不正確。";
+ERR_PARSING_TRANSITION_PROFILE.Advice="檢查轉換概要文件的完整性。";
+ERR_PARSING_TRANSITION_PROFILE.Request="請與管理員聯系。";
+
+ERR_UNKNOWN_ENV="目標環境未知。請與管理員聯系。";
+ERR_UNKNOWN_ENV.Diagnostic="目標環境未知。";
+ERR_UNKNOWN_ENV.Advice="請檢查目標環境是否正確。";
+ERR_UNKNOWN_ENV.Request="請與管理員聯系。";
+
+ERR_EXP_SOURCE="警告。展開來源失敗。將不會處理實例刪除機制。";
+ERR_EXP_DESTINATION="警告。展開目標失敗。將不會處理實例刪除機制。";
+
+ERR_PROFILEVERSION_UNSUPPORTED.Request="請與管理員聯系。";
+ERR_PROFILEVERSION_UNSUPPORTED.Diagnostic="不支持概要文件版本。";
+ERR_PROFILEVERSION_UNSUPPORTED.Advice="";
+
+ERR_PROFILEVERSIONRECENT.Request="可能未激活某些行為。";
+ERR_PROFILEVERSIONRECENT.Diagnostic="輸入概要文件的次要版本高于期待的次要版本。";
+ERR_PROFILEVERSIONRECENT.Advice="";
+
+ERR_PROFILEVERSIONPREVIOUS.Request="某些行為可能已過時。";
+ERR_PROFILEVERSIONPREVIOUS.Diagnostic="輸入概要文件的次要版本不是最新版本。";
+ERR_PROFILEVERSIONPREVIOUS.Advice="";
+
+ERR_UNSUPPORTEDPROFILEVERSION_DOWNGRADE.Request="請與管理員聯系，以了解有關概要文件降級的信息。";
+ERR_UNSUPPORTEDPROFILEVERSION_DOWNGRADE.Diagnostic="不支持概要文件的主要版本。";
+ERR_UNSUPPORTEDPROFILEVERSION_DOWNGRADE.Advice="";
+
+ERR_UNSUPPORTEDPROFILEVERSION_UPGRADE.Request="請與管理員聯系，以了解有關概要文件升級的信息。";
+ERR_UNSUPPORTEDPROFILEVERSION_UPGRADE.Diagnostic="不支持概要文件的主要版本。";
+ERR_UNSUPPORTEDPROFILEVERSION_UPGRADE.Advice="";
+
+ERR_XSD_NOTFOUND.Request="請與管理員聯系。";
+ERR_XSD_NOTFOUND.Diagnostic="未找到 XML 架構。";
+ERR_XSD_NOTFOUND.Advice="";
+
+ERR_MISSING_OBJECTS.Diagnostic="已刪除數據庫中的某些對象，將無法進行更新";
+ERR_MISSING_OBJECTS.Advice="請在報告目錄中查閱要刪除的過時映射對象的日志文件轉儲";
+ERR_MISSING_OBJECTS.Request="";
+
+ERR_UNSUPPORTED_CONTEXT="不受支持的上下文。使用受支持的上下文，或在受支持的上下文列表中定義上下文。";
+ERR_UNSUPPORTED_CONTEXT.Diagnostic="使用受支持的上下文，或在受支持的上下文列表中定義上下文。";
+ERR_UNSUPPORTED_CONTEXT.Diagnostic="不支持用于傳輸的上下文。";
+ERR_UNSUPPORTED_CONTEXT.Advice="";
+
+ERR_DELETE_MOTHER.Diagnostic="無法處理刪除的交易 - 缺少某些參考";
+ERR_DELETE_MOTHER.Advice="檢查報告以獲取更多詳細信息";
+ERR_DELETE_MOTHER.Request="";
+
+MSG_ERR_DWS="已刪除屬于 Design Workspace 的對象。尚不支持導入此類數據。";
+MSG_ERR_OBJ_DWS="此對象屬于 Design Workspace。尚不支持導出此類數據。";
+
+ERR_POSTPROCESS_AUTHOAFTERVISU="AuthAfterVisu 后處理僅在當前流模式為 VisualizationOnly 時可用";
+ERR_UNSUPPORTED_POSTPROCESS.Diagnostic="不會生成對應的 XML 文件";
+ERR_UNSUPPORTED_POSTPROCESS.Advice="";
+
+// 3951 校正官方漢化 ======================================================================================
+// 3951 校正官方漢化 Transfer progression step messages
+// 3951 校正官方漢化 ======================================================================================
+
+STEP_MESSAGE_PREPARE_TRANSFER="正在準備傳輸";
+
+STEP_MESSAGE_OPEN="正在處理打開";
+
+STEP_MESSAGE_CONNECT_TARGET="正在連接到目標";
+
+STEP_MESSAGE_TRANSFER="正在處理傳輸";
+
+STEP_MESSAGE_SAVE="正在處理保存";
+
+STEP_MESSAGE_FINALIZE_TRANSFER="正在完成傳輸";
+
+WAR_GETDELETEINST="未啟動“刪除”步驟，因為在構建要刪除的對象的范圍時遇到問題";
+
+WAR_DELETE="未正確執行“刪除”步驟";
+
+WAR_OPENDEST_FAILED="此對象已成功保存，但是檢測到 P&O 不一致。這可能會影響展示遷移的結果。";

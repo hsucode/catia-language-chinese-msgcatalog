@@ -1,0 +1,133 @@
+DialogBoxTitle="調平分析";
+
+//Element Selection
+LabelSource.Title="源： ";
+LabelSource.LongHelp="選擇原始元素以進行調平測量，且無源擴展。";
+LabelSource.ShortHelp="選擇源元素";
+LabelTarget.Title="目標： ";
+LabelTarget.LongHelp="選擇目標元素以進行調平測量，且無目標擴展。";
+LabelTarget.ShortHelp="選擇目標元素";
+LabelEdge.Title="邊線： ";
+LabelEdge.LongHelp="選擇原始邊線以進行調平測量，且有源和目標擴展邊線及邊線最大化。";
+LabelEdge.ShortHelp="選擇邊線";
+LabelSupport.Title="支持面： ";
+LabelSupport.LongHelp="通過邊線選擇的曲線或邊線需要額外選擇支持曲面。";
+LabelSupport.ShortHelp="選擇支持面";
+LabelTangential.Title="切線： ";
+LabelTangential.LongHelp="為目標擴展切線選擇目標曲面。";
+LabelTangential.ShortHelp="選擇曲面";
+
+//Analysis options
+FrameOptions.Title="選項";
+FrameSourceExtension.Title="源擴展";
+FrameSourceExtension.LongHelp="可用以下方法擴展源：
+- 無（不會擴展源）
+- 邊線最大化（將最大限度地移動邊線） 
+- 邊線（移動邊線以使切線形成 90 度角？。";
+Extension.None="無";
+Extension.EdgeMax="邊線最大化";
+Extension.Edge="邊線";
+Extension.Tangential="切線";
+FrameTargetExtension.Title="切線擴展";
+FrameTargetExtension.LongHelp="可用以下方法擴展目標：
+- 無（不會擴展目標）
+- 邊線最大化（將最大限度地移動邊線） 
+- 邊線（移動邊線以使切線形成 90 度角？
+- 切線（選作目標的曲面邊線將以相切的方式擴展）。";
+
+//Parameter
+FrameParameters.Title="參數";
+FrameParameters.LongHelp="參數設置";
+LabelStart.Title="起點";
+LabelStart.LongHelp="值范圍起點";
+LabelEnd.Title="終點";
+LabelEnd.LongHelp="值范圍終點";
+CheckButtonRange.Title="范圍";
+CheckButtonRange.LongHelp="定義值范圍以獲得最佳偏差。
+數字顯示器顯示最小和/或最大偏差值，而與定義的范圍無關。";
+CheckButtonRange.ShortHelp="值范圍以獲得最佳偏差";
+
+//System
+FrameSystem.Title="系統";
+FrameSystem.LongHelp="選擇部件以計算和顯示最小和最大偏差，以及所使用的坐標系。";
+RadioButtonDirectionX.Title="X";
+RadioButtonDirectionX.LongHelp="在 X 方向測量距離。";
+RadioButtonDirectionX.ShortHelp="x-距離";
+RadioButtonDirectionY.Title="Y";
+RadioButtonDirectionY.LongHelp="在 Y 方向測量距離。";
+RadioButtonDirectionY.ShortHelp="y-距離";
+RadioButtonDirectionZ.Title="Z";
+RadioButtonDirectionZ.LongHelp="在 Z 方向測量距離。";
+RadioButtonDirectionZ.ShortHelp="z-距離";
+RadioButtonDirection3D.Title="3D";
+RadioButtonDirection3D.LongHelp="在 3D 方向測量距離。";
+RadioButtonDirection3D.ShortHelp="3D-距離";
+System.Model="模型";
+System.Plane="平面";
+System.UserDefined="用戶定義";
+PushButtonView.Title="視圖";
+PushButtonView.LongHelp="將坐標系與當前視圖平面對齊。";
+PushButtonCompass.Title="指南針";
+PushButtonCompass.LongHelp="沿指南針 XY 平面測量方向。";
+LabelPlane.Title="平面： ";
+LabelPlane.LongHelp="通過在選擇字段內選擇平面來定義坐標系。";
+ComboSystemType.Title="模型、平面、用戶定義";
+ComboSystemType.LongHelp="- 模型 -
+使用模型坐標系。
+在空間內計算 3D 偏差（無投影）。
+- 平面 -
+使用選定平面的坐標系。
+3D 偏差被投影到指定平面上
+- 用戶定義 - 
+使用用戶定義的坐標系。
+3D 偏差被投影到指定平面上。";
+
+//Display
+FrameDisplay.Title="顯示";
+FrameDisplay.LongHelp="顯示設置";
+SliderDensity.Title="密度： ";
+SliderDensity.LongHelp="確定密度。增加/減小值。";
+SliderDensity.ShortHelp="定義密度";
+SliderScale.Title="縮放： ";
+SliderScale.LongHelp="確定縮放。增加/減小值。";
+SliderScale.ShortHelp="定義縮放";
+LabelDensity.Title="密度： ";
+LabelDensity.LongHelp="規律地分布在源上(在補面和面的 U 和 V 方向)并投影到目標的點數。";
+LabelScale.Title="縮放： ";
+LabelScale.LongHelp="用于顯示偏差值的縮放系數。";
+
+
+//Display options
+FrameOptions.LongHelp="其他選項設置";
+CheckButtonDisplayOptionsMin.Title="最小值";
+CheckButtonDisplayOptionsMin.LongHelp="計算最小值并用數字表示。";
+CheckButtonDisplayOptionsMin.ShortHelp="最小值";
+CheckButtonDisplayOptionsMax.Title="最大值";
+CheckButtonDisplayOptionsMax.LongHelp="計算最大值并用數字表示。";
+CheckButtonDisplayOptionsMax.ShortHelp="最大值";
+DisplayType.Comb="梳";
+DisplayType.Shaded="著色";
+CheckButtonEnvelope.Title="包絡 ";
+CheckButtonEnvelope.LongHelp="使用選項梳作為欄信息輸出的分析結果也可用包絡顯示。";
+CheckButtonEnvelope.ShortHelp="用包絡顯示梳";
+ColorButtonComb.Title="梳";
+ColorButtonComb.LongHelp="選擇梳顏色。";
+ColorButtonEnvelope.Title="包絡";
+ColorButtonEnvelope.LongHelp="選擇包絡顏色。";
+ComboDisplayType.Title="梳、著色";
+ComboDisplayType.LongHelp="- 梳 -
+選擇分析結果作為欄信息顯示的顏色。
+顯示的線與單個 3D 偏差值關聯。
+- 著色 -
+將分析結果作為彩色信息輸出。
+因此，顏色分布在 3D 欄框架上。
+與參考的法線方向一致的偏差顯示為紅色，
+相反方向的偏差則顯示為綠色。";
+
+//Results
+FrameResults.Title="結果";
+LabelMinDistance.Title="最小距離： ";
+LabelMinDistance.LongHelp="顯示計算結果的最小偏差。";
+LabelMaxDistance.Title="最大距離： ";
+LabelMaxDistance.LongHelp="顯示計算結果的最大偏差。";
+

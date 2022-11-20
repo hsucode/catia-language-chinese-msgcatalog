@@ -1,0 +1,38 @@
+
+// 3951 校正官方漢化 Exemple de message :
+// 3951 校正官方漢化
+// 3951 校正官方漢化 ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// 3951 校正官方漢化 ERR_2000.Diagnostic = "Un des parametres est negatif";
+// 3951 校正官方漢化 ERR_2000.Advice     = "Utilisez des parametres positifs";
+
+ERR_0001.Request="應用程序代碼已缺失。";
+ERR_0001.Diagnostic="無法更新網格零件。名稱：/P01
+類型：/P02";
+ERR_0001.Advice="驗證是否已安裝所有先決條件應用程序。";
+
+ERR_0002.Request="網格零件處于編輯狀態。";
+ERR_0002.Diagnostic="無法更新網格零件 /P01。";
+ERR_0002.Advice="請在更新網格零件之前完成編輯。";
+
+ERR_0003.Diagnostic="網格器失敗。沒有為網格零件
+/P01 創建任何元素";
+
+ERR_0004.Request="無法更新網格零件 /P01";
+ERR_0004.Diagnostic="原因：";
+ERR_0004.Advice="/P01";
+
+UpdateBatchServant_0001="無法提交輔助可執行文件";
+UpdateBatchServant_0002="對于輔助可執行文件，未找到任何參數或找到的參數太多";
+UpdateBatchServant_0003="- 未找到輸入參數或輸入參數不是現有文件夾名稱";
+
+ERR_0005.Request="FEM 展示裝配體定義無效：";
+ERR_0005.Diagnostic="它指向的 FEM 展示已刪除";
+ERR_0005.Advice="";
+
+ERR_0006.Request="無法對網格零件
+/P01 進行網格連接";
+ERR_0006.Diagnostic="/P01 上沒有定義的網格零件。";
+ERR_0006.Advice="1. 超出裝配體上下文：您必須在幾何圖形上創建網格零件，然后再連接它們。\n2. 在 FEM 裝配體上下文中：\n - 檢查 FEM 展示中的裝配體結構點\n - 在幾何圖形上創建網格零件，然后再連接它們\n3. 尺寸一致性：必須將 2D(3D) 幾何圖形鏈接到 2D(3D) 網格零件";
+
+// 3951 校正官方漢化 Do not tranlate this message !!!
+BATCH_SUBMITTED.Diagnostic="BATCH_SUBMITTED";

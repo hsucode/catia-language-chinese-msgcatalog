@@ -1,0 +1,126 @@
+// 3951 校正官方漢化=====================================================================================
+// 3951 校正官方漢化                                     CNEXT - CXRn
+// 3951 校正官方漢化                          COPYRIGHT DASSAULT SYSTEMES 2000 
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 FILENAME    :    CATDrwOptManip
+// 3951 校正官方漢化 LOCATION    :    DraftingUI
+// 3951 校正官方漢化 AUTHOR      :    fgx
+// 3951 校正官方漢化 BUT         :    
+// 3951 校正官方漢化 DATE        :    30.10.2000
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 DESCRIPTION :    Tools/Option du Drafting
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 COMMENTS    :    
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 MODIFICATIONS     user  date        purpose
+// 3951 校正官方漢化    HISTORY        ----  ----        -------
+// 3951 校正官方漢化 	01		lgk	17.12.02 Revision
+// 3951 校正官方漢化=====================================================================================
+
+Title="管理";
+
+toolDrwMng.HeaderFrame.Global.Title="工程圖";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkOnlyFileNewFrom.Title="避免使用“文件”>“新建”";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkOnlyFileNewFrom.LongHelp="您僅可以通過“文件”/“新建自...”命令創建工程圖。";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkOnlyUserDefault.Title="鎖定“僅用戶默認值”樣式";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkOnlyUserDefault.LongHelp="您僅可以通過“用戶默認值屬性”創建元素。";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkAllowUserDefault.Title="防止“設置為默認”和“重置所有默認值” ";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkAllowUserDefault.LongHelp="防止您創建和重新初始化“用戶默認值屬性”。";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkSwitchStandard.Title="禁止切換標準";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkSwitchStandard.LongHelp="禁止您切換標準。";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkUpdateStandard.Title="禁止更新標準";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkUpdateStandard.LongHelp="禁止您更新標準。";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkBackgroundView.Title="禁止訪問背景視圖";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.checkBackgroundView.LongHelp="禁止您訪問背景視圖";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.chkPreventViewUpgrade.Title="禁止升級視圖";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.chkPreventViewUpgrade.LongHelp="禁止升級視圖及其子元素";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.chkPrevViewGeomUpgrade.Title="禁止升級視圖幾何圖形";
+toolDrwMng.IconAndOptionsFrame.OptionsFrame.chkPrevViewGeomUpgrade.LongHelp="禁止您升級視圖幾何圖形。";
+
+toolDrwStyle.HeaderFrame.Global.Title="樣式";
+toolDrwStyle.HeaderFrame.Global.LongHelp="定義樣式管理";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.chkStyleCreation.Title="使用樣式值創建新對象";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.chkStyleCreation.LongHelp="樣式值被用于創建新對象，屬性工具欄值除外。";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.frmPropTbBehavior.lblPropTbBehaviorBtn.Title="屬性工具欄的默認行為 ";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.frmPropTbBehavior.lblPropTbBehaviorBtn.LongHelp="定義屬性工具欄如何在啟動命令或切換樣式時升級。";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.frmPropTbBehavior.pushPropTbBehavior.Title="配置...";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.lblPre.Title="對于 V5R11 之前的工程圖：";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.lblPre.LongHelp="以下選項適用于 V5R11 之前的工程圖";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.checkOnlyUserDefault.Title="鎖定“用戶默認值”樣式";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.checkOnlyUserDefault.LongHelp="您僅可以通過“用戶默認值屬性”創建元素。";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.checkAllowUserDefault.Title="防止“設置為默認”和“重置所有默認值” ";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.checkAllowUserDefault.LongHelp="防止您創建和重置“用戶默認值屬性”。";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.chkReset.Title="顯示對話框中的“重置”按鈕";
+toolDrwStyle.IconAndOptionsFrame.OptionsFrame.chkReset.LongHelp="顯示支持此特征的對話框中的“重置”按鈕。";
+
+toolGVS.HeaderFrame.Global.Title="創成式視圖樣式";
+toolGVS.HeaderFrame.Global.LongHelp="定義創成式視圖樣式";
+toolGVS.IconAndOptionsFrame.OptionsFrame.chkPreventGVS.Title="禁止使用創成式視圖樣式";
+toolGVS.IconAndOptionsFrame.OptionsFrame.chkPreventGVS.LongHelp="禁止您使用創成式視圖樣式。";
+
+
+toolDress.HeaderFrame.Global.Title="修飾";
+toolDress.IconAndOptionsFrame.OptionsFrame.checkDimDriving3D.Title="避免使用尺寸驅動 3D 約束";
+toolDress.IconAndOptionsFrame.OptionsFrame.checkDimDriving3D.LongHelp="防止您通過尺寸驅動 3D 約束。";
+toolDress.IconAndOptionsFrame.OptionsFrame.chkPrevTrueDim.Title="避免在非等軸測視圖中創建真實尺寸";
+toolDress.IconAndOptionsFrame.OptionsFrame.chkPrevTrueDim.LongHelp="防止您在非等軸測視圖中創建真實尺寸。";
+
+dlgPropTbBehavior.Title="屬性工具欄的默認行為";
+dlgPropTbBehavior.LongHelp="定義如何更新屬性工具欄，除非正在創建或已選擇了某些元素。
+固定值：在樣式工具欄中更改了當前樣式時，屬性值的修改會被保留。
+基于元素類型的值：在樣式工具欄中更改了當前樣式時，屬性值的修改會按照元素類型進行保存。
+基于樣式的值：每當在樣式工具欄中設置了與新元素類型對應的樣式時，屬性值會被重置為樣式值。
+基于樣式的值（無過載）：每當在樣式工具欄中設置了與新元素類型對應的樣式時，屬性值會被重置為樣式值。\n它們不能被修改，除非剛創建或選擇了某些元素。";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.HeaderFrame.Global.Title="屬性工具欄的默認行為";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.HeaderFrame.Global.LongHelp="定義在啟動命令或切換樣式時如何更新屬性工具欄。
+固定值：在樣式工具欄中更改了當前樣式時，屬性值的修改會被保留。
+基于元素類型的值：在樣式工具欄中更改了當前樣式時，屬性值的修改會按照元素類型進行保存。
+基于樣式的值：在樣式工具欄中設置了與新元素類型對應的樣式時，屬性值會被重置為樣式值。
+基于樣式的值（無過載）：每當在樣式工具欄中設置了與新元素類型對應的樣式時，屬性值會被重置為樣式值。\n它們不能被修改，除非剛創建或選擇了某些元素。";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblPropertyName.Title="屬性名稱";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblPropertyBehavior.Title="行為";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbFontName.Title="字體名稱";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbFontSize.Title="字體大小";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbBold.Title="粗體";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbItalic.Title="斜體";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbUnderOverLine.Title="加下劃線/加上劃線";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbStrikeThrough.Title="刪除線";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbJustification.Title="對齊";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbAnchorPoint.Title="定位點";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbFrame.Title="框架";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbSymbol.Title="符號";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbDimensionLine.Title="尺寸線";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbTolerances.Title="公差屬性";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbNumDispDesc.Title="數字顯示描述";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbPrecision.Title="精度";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbColor.Title="顏色";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbThickness.Title="線寬";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbLineType.Title="線型";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbPointType.Title="點類型";
+dlgPropTbBehavior.dlgContainer.framePropTbBehavior.IconAndOptionsFrame.OptionsFrame.lblDrwTbPattern.Title="陣列";
+fix="固定值";
+elemtype="基于元素類型的值";
+style="基于樣式的值";
+nooverload="基于樣式的值（無過載）";
+
+toolAssemblyMgmt.HeaderFrame.Global.Title="裝配體上下文";
+toolAssemblyMgmt.HeaderFrame.Global.LongHelp="根據裝配體級別為元素選擇指定選項。";
+
+toolAssemblyMgmt.IconAndOptionsFrame.OptionsFrame.LblAllowSelectionOf.Title="允許選擇元素：";
+toolAssemblyMgmt.IconAndOptionsFrame.OptionsFrame.LblAllowSelectionOf.LongHelp="定義可以在其上添加鏈接的裝配體級別。
+       - 它可以是當前裝配體，以確保其一致的重新實例化。
+       - 它可以是收藏上下文，以確保在打開進行復核時不會缺少相關數據。
+       - 它可以是任何相關級別的裝配體，具體取決于要創建的鏈接類型。";
+
+toolAssemblyMgmt.IconAndOptionsFrame.OptionsFrame.frmSelectionOnCurrentAssembly.frmSelectionOnCurrentAssemblylocked.radElemUnderCurAssemblyRoot.Title="僅在活動產品中";
+toolAssemblyMgmt.IconAndOptionsFrame.OptionsFrame.frmSelectionOnCurrentAssembly.frmSelectionOnCurrentAssemblylocked.radElemUnderCurFavContextRoot.Title="僅在收藏上下文中";
+toolAssemblyMgmt.IconAndOptionsFrame.OptionsFrame.frmSelectionOnCurrentAssembly.frmSelectionOnCurrentAssemblylocked.radAnyRelevantElement.Title="在可能的情況下";
+
+toolAssemblyMgmt.IconAndOptionsFrame.OptionsFrame.lblShowWarning.Title="為外圍選擇顯示警告消息：";
+toolAssemblyMgmt.IconAndOptionsFrame.OptionsFrame.lblShowWarning.LongHelp="根據選擇元素的裝配體級別顯示警告消息。
+        應先允許選擇此級別的裝配體。
+        如果未定義收藏上下文，則考慮當前裝配體。
+        顯示此警告的對話框中提供了這些選項的快捷方式";
+
+toolAssemblyMgmt.IconAndOptionsFrame.OptionsFrame.chkShowWarningSelectionOutAssembly.Title="活動產品";
+toolAssemblyMgmt.IconAndOptionsFrame.OptionsFrame.chkShowWarningSelectionOutFavoriteContext.Title="收藏上下文";

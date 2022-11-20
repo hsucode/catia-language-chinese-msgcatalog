@@ -1,0 +1,53 @@
+// 3951 校正官方漢化=====================================================================================
+// 3951 校正官方漢化                                     CNEXT - CXRn
+// 3951 校正官方漢化                          COPYRIGHT DASSAULT SYSTEMES 2001
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 FILENAME    :    CATRuleDrwAreaFill00
+// 3951 校正官方漢化 LOCATION    :    DraftingFeature
+// 3951 校正官方漢化 AUTHOR      :    hbh
+// 3951 校正官方漢化 BUT         :    
+// 3951 校正官方漢化 DATE        :    ??.??.2001
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 DESCRIPTION :    Regles pour le cleaner
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 COMMENTS    :    
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 MODIFICATIONS     user  date        purpose
+// 3951 校正官方漢化    HISTORY        ----  ----        -------
+// 3951 校正官方漢化=====================================================================================
+
+DrwAreaFill_0.ShortMessage="區域填充沒有輪廓";
+DrwAreaFill_0.ErrorMessage="區域填充沒有定義其輪廓的幾何元素";
+
+DrwAreaFill_1.ShortMessage="未聚集區域填充";
+DrwAreaFill_1.ErrorMessage="區域填充并非由有效的模型元素聚集且沒有實例";
+
+DrwAreaFill_2.ShortMessage="區域填充缺少曲線";
+DrwAreaFill_2.ErrorMessage="區域填充的輪廓不完整；其中的一條曲線丟失";
+
+DrwAreaFill_3.ShortMessage="區域填充沒有模式";
+DrwAreaFill_3.ErrorMessage="區域填充沒有任何已定義的模式，可視化的區域填充無效";
+DrwAreaFill_3.CleanMessage="已為區域填充設置模式。";
+
+DrwAreaFill_4.ShortMessage="區域填充帶有外部鏈接";
+DrwAreaFill_4.ErrorMessage="區域填充帶有到其他文檔的鏈接";
+
+DrwAreaFillDestroy.CleanMessage="區域填充已被移除。";
+
+DrwPicture_0.ShortMessage="無用數據";
+DrwPicture_0.ErrorMessage="此文檔包含無用數據。清理將會移除此數據并降低文檔大小。";
+DrwPicture_0.CleanMessage="已移除無用數據。";
+
+DrwPicture_1.ShortMessage="無效位置";
+DrwPicture_1.ErrorMessage="圖片位置無效，無法正確可視化。清除操作會將圖片位置設置為 (0;0)，并將其切換到不顯示空間。";
+DrwPicture_1.CleanMessage="圖片位置設為 (0;0)，且圖片被切換到不顯示空間。";
+
+DrwDressUp_0.ShortMessage="輔助元素中有無用鏈接";
+DrwDressUp_0.ErrorMessage="輔助元素中的無用鏈接會導致錯誤鏈接。清除操作將移除此鏈接";
+DrwDressUp_0.CleanMessage="已移除無效鏈接";
+
+UselessData.ShortMessage="無用數據";
+UselessData.ErrorMessage="此文檔包含無用數據。清理將會移除此數據并降低文檔大小。";
+UselessData.CleanMessage="已移除無用數據。";
+
+DrwSeparator=" : ";

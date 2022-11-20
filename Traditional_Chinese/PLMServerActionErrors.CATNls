@@ -1,0 +1,590 @@
+
+// 3951 校正官方漢化=================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2005
+// 3951 校正官方漢化=================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Usage Notes:               This is a PLM ERRORS Catalog
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+// 3951 校正官方漢化 In this catalog can be declared ONLY PLM ERRORS.
+// 3951 校正官方漢化 Please refer to the PES PLM Error Managment for the definition of a PLM error.
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Any error of this catalog must be described with :
+// 3951 校正官方漢化
+// 3951 校正官方漢化 - a Definition   :    \\ DEFINTION_WITTEN_WITH_CAPITAL_LETTERS
+// 3951 校正官方漢化 - the Mode of Treatment of this error : to be interpreted by ... / to be converted   (comment form)
+// 3951 校正官方漢化 - an Error Key & associated description :   MyErrKey.Diagnostic = "........";
+// 3951 校正官方漢化                                             MyErrKey.Advice     = "........";
+// 3951 校正官方漢化                                             MyErrKey.Request    = "........";
+// 3951 校正官方漢化 - Diagnostic,Advice,Request's nls parameters documentation :   
+// 3951 校正官方漢化                               Example:      In Diagnostic's /p :  content,  ...
+// 3951 校正官方漢化
+// 3951 校正官方漢化   Diagnostic : what exactly happens
+// 3951 校正官方漢化   Advice     : what to do to solve the error or understand it better
+// 3951 校正官方漢化   Request    : for "by action" error only, expresses what is requested on the PLM component to prevent this error. 
+// 3951 校正官方漢化                This field can be empty.
+// 3951 校正官方漢化   Diagnostic,Advice,Request's nls parameters : 
+// 3951 校正官方漢化
+// 3951 校正官方漢化   This fields are to write in understandable terms for the end user (no debug messages!)
+// 3951 校正官方漢化
+// 3951 校正官方漢化   These fields may be empty : if the error is not understandable in end user terms 
+// 3951 校正官方漢化   (no more possible explanation than "the action failed") these fields may be empty
+// 3951 校正官方漢化   This means that the PLM error is only dedicated to interpretration use. 
+// 3951 校正官方漢化
+// 3951 校正官方漢化   NLS parameters :
+// 3951 校正官方漢化   - have to be understandable by the end user
+// 3951 校正官方漢化   - NEVER indicate which PLM component is concerned by the error.
+// 3951 校正官方漢化     The PLM component concerned by the error is indicated with the CATComponentId associated to the error.
+// 3951 校正官方漢化
+// 3951 校正官方漢化=================================================================
+
+
+
+// 3951 校正官方漢化 **************   FURTHER SERVER ERRORS TO PLM ERRORS : MAPPING   **************
+// 3951 校正官方漢化
+// 3951 校正官方漢化 FROM ENOVPLMPSFactoryErrors.CATNls    :
+// 3951 校正官方漢化
+// 3951 校正官方漢化 EPM_E_MODIFICATION_Reference_IDSetAttributes  --->  PLM_NotFirstVersionNotModifiable
+// 3951 校正官方漢化 EPM_E_BASE_ObjFromID                          --->  PLM_NotRetrievedComponent
+// 3951 校正官方漢化 EPM_E_ENTITY_Remove                           --->  PLM_DeletionFailed      ! To SUPPRESS FROM THE LIST as soon as possible
+// 3951 校正官方漢化 EPM_E_ENTITY_MODIFY_NOT_EDITABLE              --->  PLM_NotEditableBecauseOfMaturity
+// 3951 校正官方漢化 EPM_E_ENTITY_MODIFY_AGGR_NOT_EDITABLE         --->  PLM_BecauseOfOwnerMaturity_M  
+// 3951 校正官方漢化 EPM_E_PLM_SECURITYDENIED                      --->  PLM_SecurityDenied
+// 3951 校正官方漢化
+// 3951 校正官方漢化 FROM ENOVPLMIntegrationErrors.CATNls :
+// 3951 校正官方漢化 EntityLocked         --->  PLM_LockedComponent
+// 3951 校正官方漢化 SemanticBindFailed   --->  PLM_LinkedWithNotFoundComp
+// 3951 校正官方漢化 CanNotBind			--->  PLM_NotRetrievedComponent
+// 3951 校正官方漢化 EntityNotEditable    --->  PLM_NotEditableBecauseOfMaturity
+// 3951 校正官方漢化 BookingFailed		--->  PLM_IdentifiersAlreadyUsed
+// 3951 校正官方漢化
+// 3951 校正官方漢化 old ENOVPLMModel.CATNls : 
+// 3951 校正官方漢化 PLM_E_OBJECT_IS_LOCKED				--->	PLM_LockedByAnotherUser
+// 3951 校正官方漢化 PLM_E_OBJECT_IS_LOCKED_REFERENCE		--->	PLM_LockedByAnotherUser ??
+
+// 3951 校正官方漢化 old ENOVPLMIntegrationErrors.CATNls :
+// 3951 校正官方漢化 CanNotBind					        --->	PLM_NotRetrievedComponent in catalog PLMServerActionErrors
+// 3951 校正官方漢化 LockedByCurrentUser					--->	PLM_LockedByCurrentUser
+// 3951 校正官方漢化 LockedByAnotherUser					--->	PLM_LockedByAnotherUser
+// 3951 校正官方漢化 LOCK_NotLockable						--->	PLM_NotLockable
+// 3951 校正官方漢化 LOCK_NeedRefresh						--->	PLM_NoUnlockWithoutRefresh
+
+// 3951 校正官方漢化 *********************************************************************************
+
+
+
+
+// 3951 校正官方漢化=================   DURING SAVE/OPEN/NEW VERSION PROCESS  ===========================================
+
+// 3951 校正官方漢化 CONCURENT INGENIERING 1 - ENTITY NO MORE PRESENT IN DB
+// 3951 校正官方漢化 open/save : To be interpreted by the client factories to indicates in an undertandable way the component on which appear the error.
+// 3951 校正官方漢化 new version :To be interpreted by the client new version engine -  factorisation case.
+PLM_NotRetrievedComponent.Request="";
+PLM_NotRetrievedComponent.Diagnostic="不能從數據庫查詢部件。";
+PLM_NotRetrievedComponent.Advice="部件可能不再存在，或其安全策略阻止您讀取它。";
+
+// 3951 校正官方漢化 NO ACCESS RIGHTS FOR THE OPERATION
+// 3951 校正官方漢化 To be interpreted by the client engine -  factorisation case
+PLM_SecurityDenied.Request="";
+PLM_SecurityDenied.Diagnostic="安全信息：對于對象當前的成熟狀態，您沒有繼續執行此操作的訪問權限。";
+PLM_SecurityDenied.Advice="請聯系您的安全管理員，了解您對當前成熟狀態的此對象訪問權限受限的原因。";
+
+PLM_SiteOwnershipDenied.Request="";
+PLM_SiteOwnershipDenied.Diagnostic="您不能處理該操作。對象不屬于您的本地站點";
+PLM_SiteOwnershipDenied.Advice="";
+
+
+// 3951 校正官方漢化=================   DURING SAVE PROCESS  ( creation, modification, or delete) ===========================================
+
+// 3951 校正官方漢化 CONCURENT INGENIERING 2 - ENTITY NOT SAVED BECAUSE POINTING DELETED OBJECT
+// 3951 校正官方漢化 To be interpreted by the client save engine - factorisation case
+PLM_LinkedWithNotFoundComp.Request="";
+PLM_LinkedWithNotFoundComp.Diagnostic="此部件不可傳播，因為它指向了在數據庫中檢索不到的對象。";
+PLM_LinkedWithNotFoundComp.Advice="請檢查您的會話是否已與數據庫同步。";
+
+// 3951 校正官方漢化 ENTITY NOT SAVED BECAUSE LOCKED BY ANOTHER USER
+// 3951 校正官方漢化 To be interpreted by the client save engine - factorisation case
+// 3951 校正官方漢化 In Diagnostic's /p1 :  the login of the user trying to perform the action
+PLM_LockedComponent.Request="";
+PLM_LockedComponent.Diagnostic="您不能修改或刪除該部件，因為它已被 /p1 鎖定。";
+PLM_LockedComponent.Advice="請聯系鎖的所有者。";
+
+// 3951 校正官方漢化 NOT POSSIBLE DELETION -- Error To SUPPRESS FROM THE LIST as soon as possible
+// 3951 校正官方漢化 Temporary usefull : the main interest of this error is to inform about the external id of the object the deletion is asked on.
+// 3951 校正官方漢化 Later, we will be able to retrieve the external id in client session (with tombstone). This error will become needless.
+// 3951 校正官方漢化 To be interpreted by the save engine - factorisation case
+// 3951 校正官方漢化 In Diagnostic's /p1 :  the indication, in terme of PLM_ExternalId, of the session deleted object that cannot be deleted in database.
+PLM_DeletionFailed.Request="";
+PLM_DeletionFailed.Diagnostic="不能移除數據庫中的 /p1 部件。";
+PLM_DeletionFailed.Advice="請檢查庫中存在的部件是否有效且可移除。如果是，請聯系支持中心";
+
+// 3951 校正官方漢化 ????????????? LE DELETE DE REF EST_IL DESORMAIS POSSIBLE AU SAVE ?!!!!!!! Indirectement ?
+// 3951 校正官方漢化 REFERENCE DELETION & REMAINIG USAGE
+// 3951 校正官方漢化 To be interpreted by the client engine -  factorisation case
+PLM_ReferenceStillInUse.Request="";
+PLM_ReferenceStillInUse.Diagnostic="不能刪除該參考，因為它仍在使用中。";
+PLM_ReferenceStillInUse.Advice="刪除與此參考鏈接的所有對象。";
+
+// 3951 校正官方漢化 MODIFY OF NOT FIRST VERSION
+// 3951 校正官方漢化 To be interpreted by the save engine - factorisation case
+PLM_NotFirstVersionNotModifiable.Request="";
+PLM_NotFirstVersionNotModifiable.Diagnostic="不能修改該參考上的標識符集，因為已控制其版本";
+PLM_NotFirstVersionNotModifiable.Advice="僅當未控制參考的版本時，才可修改標識符集。";
+
+// 3951 校正官方漢化 NO MODIFY BECAUSE OF MATURITY
+// 3951 校正官方漢化 To be interpreted by the save engine - factorisation case
+PLM_NotEditableBecauseOfMaturity.Request="";
+PLM_NotEditableBecauseOfMaturity.Diagnostic="此部件因其成熟狀態而不可修改。";
+PLM_NotEditableBecauseOfMaturity.Advice="";
+
+// 3951 校正官方漢化 NO CREATION OR MODIF (cannot always discriminate the 2 cases) BECAUSE OF NO IDENTIFIER SET UNICITY
+// 3951 校正官方漢化 To be interpreted by the client save engine -  factorisation case
+// 3951 校正官方漢化 (interpretation by the client factory with att value suggestion : no perfo interest)
+PLM_IdentifiersAlreadyUsed.Request="";
+PLM_IdentifiersAlreadyUsed.Diagnostic="對象的標識符集已用于其他部件。";
+PLM_IdentifiersAlreadyUsed.Advice="選擇其他標識符集。";
+
+// 3951 校正官方漢化 NO MODIFICATION BECAUSE OF NO IDENTIFIER SET UNICITY
+PLM_Modify_IdentifiersAlreadyUsed.Request="";
+PLM_Modify_IdentifiersAlreadyUsed.Diagnostic="不能修改部件，因為其標識符集已用于其他部件。";
+PLM_Modify_IdentifiersAlreadyUsed.Advice="選擇其他標識符集。";
+
+// 3951 校正官方漢化 TOO LONG END USER EDITABLE ATTRIBUTE
+// 3951 校正官方漢化 !! Emission : only on end user editable attribute (other case: system error)
+// 3951 校正官方漢化 To be interpreted by the client save engine -  factorisation case
+// 3951 校正官方漢化 In Diagnostic's /p1 :  the most expressive name (for the end user) of the concerned attribute, that the server is able to give.
+// 3951 校正官方漢化 In Diagnostic's /p1 :  The maximal size possible for the attribute value (number of characters)
+PLM_MaxArgumentLength.Request="";
+PLM_MaxArgumentLength.Diagnostic="\"/p1\" 屬性值比最大長度（/p2 個字符）長。";
+PLM_MaxArgumentLength.Advice="請更改該值";
+
+PLM_MaxArgumentLengthForIdSet.Request="";
+PLM_MaxArgumentLengthForIdSet.Diagnostic="對象的標識符集比最大長度（/p2 個字節）長。";
+PLM_MaxArgumentLengthForIdSet.Advice="請更改該值";
+
+
+// 3951 校正官方漢化 BAD VALUE OF A USER EDITABLE ATTRIBUTE
+// 3951 校正官方漢化 !! Emission : only on end user editable attribute (other case: system error)
+// 3951 校正官方漢化 To be interpreted by the client save engine -  factorisation case
+// 3951 校正官方漢化 In Diagnostic's /p1 :  the most expressive name (for the end user) of the concerned attribute, that the server is able to give.
+// 3951 校正官方漢化 In Diagnostic's /p1 :  The maximal size possible for the attribute value (number of characters)
+PLM_BadAttributeValue.Request="";
+PLM_BadAttributeValue.Diagnostic="不接受為 \"/p1\" 屬性指定的值。";
+PLM_BadAttributeValue.Advice="請更改該值";
+
+// 3951 校正官方漢化 Missing Value For mandatory attribute
+PLM_MissingMandAttrValue.Request="";
+PLM_MissingMandAttrValue.Diagnostic="缺少必需屬性 \"/p1\" 的值。";
+PLM_MissingMandAttrValue.Advice="請填寫值";
+
+// 3951 校正官方漢化 Missing Value For mandatory attribute
+PLM_CannotInitLifeCycleWithoutAttr.Request="";
+PLM_CannotInitLifeCycleWithoutAttr.Diagnostic="至少缺失一個必需屬性：\"/p1\"。";
+PLM_CannotInitLifeCycleWithoutAttr.Advice="請填寫值并檢查 PO 規則";
+
+
+// 3951 校正官方漢化 DELETION & NOT LAST VERSION
+// 3951 校正官方漢化 To be interpreted by the client save engine - factorisation case
+PLM_NotFirstVersionNotDeletable.Request="";
+PLM_NotFirstVersionNotDeletable.Diagnostic="不允許刪除，因為它是
+參考的最新版本。";
+PLM_NotFirstVersionNotDeletable.Advice="刪除它之前，請刪除
+參考的舊版本。";
+
+// 3951 校正官方漢化 COMPONENT MODIFY & OWNER MATURITY
+// 3951 校正官方漢化 To be interpreted by the client save engine - factorisation case
+PLM_BecauseOfOwnerMaturity_M.Request="";
+PLM_BecauseOfOwnerMaturity_M.Diagnostic="不能修改該部件，因為其父級不可編輯。";
+PLM_BecauseOfOwnerMaturity_M.Advice="更改父級部件的成熟狀態。";
+
+
+// 3951 校正官方漢化 IMPORT OF INVALID VERSION
+// 3951 校正官方漢化 The version order asked is not defined 
+PLM_VersionNotInPolicy.Request="";
+PLM_VersionNotInPolicy.Diagnostic="策略中未定義使用的版本順序";
+PLM_VersionNotInPolicy.Advice="請檢查版本順序是否在策略中定義的范圍內，或者是否正確定義了修訂子句。";
+
+// 3951 校正官方漢化 The version order asked already exists 
+PLM_VersionOrderAlreadyExists.Request="";
+PLM_VersionOrderAlreadyExists.Diagnostic="使用的版本順序已存在";
+PLM_VersionOrderAlreadyExists.Advice="數據庫中已存在具有相同順序的版本。";
+
+
+
+// 3951 校正官方漢化 The object name is empty (all idset attributes are empty!!) 
+PLM_ImportEmptyName.Request="";
+PLM_ImportEmptyName.Diagnostic="導入對象為空時的名稱。";
+PLM_ImportEmptyName.Advice="請聯系您的管理員。標識設置已映射到潛在的空值。";
+
+
+// 3951 校正官方漢化=================   DURING  NEW VERSION PROCESS  ===========================================
+
+
+// 3951 校正官方漢化 VERSIONNING FORBIDDEN DUE TO MATURITY
+// 3951 校正官方漢化 To be interpreted by the client new version engine -  factorisation case
+PLM_NotVersionnableBecauseOfMaturity.Request="";
+PLM_NotVersionnableBecauseOfMaturity.Diagnostic="此部件因其成熟度而無法控制版本。";
+PLM_NotVersionnableBecauseOfMaturity.Advice="更改成熟狀態。";
+
+PLM_NotVersionnableBecauseOfNotVPLMControlled.Request="";
+PLM_NotVersionnableBecauseOfNotVPLMControlled.Diagnostic="在 VPM 客戶端會話中無法控制實體的版本。";
+PLM_NotVersionnableBecauseOfNotVPLMControlled.Advice="創建此實體的新版本（客戶端會話與創建實體時使用的相同）";
+
+
+// 3951 校正官方漢化 COMPONENT CREATION & OWNER MATURITY
+// 3951 校正官方漢化 To be interpreted by the client save engine -  factorisation case
+PLM_BecauseOfOwnerMaturity_C.Request="";
+PLM_BecauseOfOwnerMaturity_C.Diagnostic="無法創建該部件，因為其父級部件不可編輯";
+PLM_BecauseOfOwnerMaturity_C.Advice="更改父級部件的成熟狀態。";
+
+
+// 3951 校正官方漢化 OBJECT CREATION FAILURE      New, usefull for the advice only
+// 3951 校正官方漢化 To be interpreted by the client engine -  factorisation case
+PLM_CreationPb.Diagnostic="無法創建該部件。";
+PLM_CreationPb.Advice="請聯系您的數據庫管理員，檢查數據庫狀態。";
+PLM_CreationPb.Request="";
+
+
+// 3951 校正官方漢化 VERSIONING FORBIDDEN BECAUSE OBJECT TO BE VERSIONED IS NOT LAST
+// 3951 校正官方漢化 To be interpreted by the client new version engine -  factorisation case
+PLM_NotVersionableBecauseNotLast.Request="";
+PLM_NotVersionableBecauseNotLast.Diagnostic="無法控制該部件的版本，因為它不是系列中的最新版本。您還可以嘗試為同一系列中的兩個零件控制版本。";
+PLM_NotVersionableBecauseNotLast.Advice="從上一版本執行版本控制，并確保您未在為同一個系列的兩個零件控制版本。";
+
+// 3951 校正官方漢化=================   DURING LOCK or UNLOCK PROCESS  ===========================================
+
+// 3951 校正官方漢化 LOCK NOT DONE : ENTITY ALREADY LOCKED BY THE CURRENT USER
+// 3951 校正官方漢化 May be interpreted by the client engine - factorisation case
+PLM_LockedByCurrentUser.Request="";
+PLM_LockedByCurrentUser.Diagnostic="您已鎖定對象。";
+PLM_LockedByCurrentUser.Advice="";
+
+// 3951 校正官方漢化 LOCK NOT DONE : ENTITY NOT LOCKED BECAUSE ALREADY LOCKED BY THE ANOTHER USER
+// 3951 校正官方漢化 May be interpreted by the client engine - factorisation case
+// 3951 校正官方漢化 In Diagnostic's /p1 :  the login of the user trying to perform the action
+PLM_LockedByAnotherUser.Request="";
+PLM_LockedByAnotherUser.Diagnostic="您不能處理該操作。用戶 /p1 已鎖定 PLM 部件";
+PLM_LockedByAnotherUser.Advice="請聯系鎖的所有者";
+
+// 3951 校正官方漢化 LOCK NOT DONE : ENTITY NOT LOCKED BECAUSE NOT LOCKABLE
+// 3951 校正官方漢化 May be interpreted by the client engine - factorisation case
+PLM_NotLockable.Request="";
+PLM_NotLockable.Diagnostic="對象不可鎖定。";
+PLM_NotLockable.Advice="";
+
+// 3951 校正官方漢化 LOCK NOT DONE : ENTITY NOT LOCKED BECAUSE OF REPO PRIVILEGE
+// 3951 校正官方漢化 May be interpreted by the client engine - factorisation case
+PLM_NotLockableBecauseOfRepoPrivilege.Request="";
+PLM_NotLockableBecauseOfRepoPrivilege.Diagnostic="對象不可鎖定，因為編輯權限屬于其他站點。";
+PLM_NotLockableBecauseOfRepoPrivilege.Advice="";
+
+
+// 3951 校正官方漢化 UNLOCK NOT DONE : ENTITY NOT UNLOCKED BECAUSE OLDER THAN THE DB OBJECT
+// 3951 校正官方漢化 May be interpreted by the client engine - factorisation case
+PLM_NoUnlockWithoutRefresh.Request="";
+PLM_NoUnlockWithoutRefresh.Diagnostic="會話中的部件比數據庫中的部件舊。";
+PLM_NoUnlockWithoutRefresh.Advice="請檢查您的會話是否已與數據庫同步。";
+
+// 3951 校正官方漢化 VERSIONING FAILED : REFERENCE IS NOT THE MOST RECENT VERSION
+// 3951 校正官方漢化 To be interpreted by the save engine - factorisation case
+
+PLM_NotRemovableBecauseNotLast.Request="";
+PLM_NotRemovableBecauseNotLast.Diagnostic="會話中的參考不是最新版本。";
+PLM_NotRemovableBecauseNotLast.Advice="請從最新版本執行版本控制。";
+
+// 3951 校正官方漢化 UNLOCK NOT DONE : ENTITY NOT UNLOCKED BECAUSE NOT LOCKED
+PLM_NotLockedObject.Request="";
+PLM_NotLockedObject.Diagnostic="未鎖定對象。解鎖請求被忽略";
+PLM_NotLockedObject.Advice="";
+
+
+PLM_LastVersionNotDeletable.Request="";
+PLM_LastVersionNotDeletable.Diagnostic="參考 /p1 不可刪除，因為它是最新版本。";
+PLM_LastVersionNotDeletable.Advice="";
+
+PLM_LastVersionNotOnSite.Request="";
+PLM_LastVersionNotOnSite.Diagnostic="無法控制參考的版本，因為其系列的最新版本不在您的站點上。";
+PLM_LastVersionNotOnSite.Advice="導入最新版本。";
+
+
+PLM_InvalidValue.Request="";
+PLM_InvalidValue.Diagnostic="字段 /p1 存在“XML 中值無效”消息";
+PLM_InvalidValue.Advice="";
+
+
+PLM_OneBeforeLastNotEditableOnThisSite.Request="";
+PLM_OneBeforeLastNotEditableOnThisSite.Diagnostic="參考 /p1 不可刪除，因為它是最新版本，而且前一個版本在此站點上不可編輯。";
+PLM_OneBeforeLastNotEditableOnThisSite.Advice="";
+
+PLM_OneBeforeLastObjectNotReachable.Request="";
+PLM_OneBeforeLastObjectNotReachable.Diagnostic="參考 /p1 不可刪除，因為它是最新版本，而且無法得到前一個版本。";
+PLM_OneBeforeLastObjectNotReachable.Advice="";
+
+
+// 3951 校正官方漢化=================   DURING CHECK EDIT PROCESS  ===========================================
+
+// 3951 校正官方漢化 NO MODIFY BECAUSE NOT LAST VERSION
+// 3951 校正官方漢化 To be interpreted by the check edit - factorisation case
+
+PLM_ChkEdit_NotEditableBecauseNotLast.Request="";
+PLM_ChkEdit_NotEditableBecauseNotLast.Diagnostic="您不能編輯該部件，因為它不是最新版本。";
+PLM_ChkEdit_NotEditableBecauseNotLast.Advice="請從最新版本執行版本控制。";
+
+
+// 3951 校正官方漢化 NO MODIFY BECAUSE LOCKED BY ANOTHER USER
+// 3951 校正官方漢化 To be interpreted by the check edit - factorisation case
+// 3951 校正官方漢化 In Diagnostic's /p1 :  the login of the user which has locked the component
+
+PLM_ChkEdit_NotEditableBecauseOfLockedComponent.Request="";
+PLM_ChkEdit_NotEditableBecauseOfLockedComponent.Diagnostic="您不能編輯該部件，因為它已被 /p1 鎖定。";
+PLM_ChkEdit_NotEditableBecauseOfLockedComponent.Advice="請聯系鎖的所有者。";
+
+
+// 3951 校正官方漢化 NO MODIFY BECAUSE OF MATURITY
+// 3951 校正官方漢化 To be interpreted by the check edit - factorisation case
+
+PLM_ChkEdit_NotEditableBecauseOfMaturity.Request="";
+PLM_ChkEdit_NotEditableBecauseOfMaturity.Diagnostic="此部件因其成熟狀態而不可修改。";
+PLM_ChkEdit_NotEditableBecauseOfMaturity.Advice="將部件的狀態更改為可編輯狀態";
+
+// 3951 校正官方漢化 NO MODIFY BECAUSE OF REPO PRIVILEGE
+// 3951 校正官方漢化 To be interpreted by the check edit - factorisation case
+
+PLM_ChkEdit_NotEditableBecauseOfRepoPrivilege.Request="";
+PLM_ChkEdit_NotEditableBecauseOfRepoPrivilege.Diagnostic="不能修改該部件，因為編輯權限屬于其他站點。";
+PLM_ChkEdit_NotEditableBecauseOfRepoPrivilege.Advice="";
+
+// 3951 校正官方漢化 Concurrence stamps pbs
+MissingCEStamp.Request="傳播操作";
+MissingCEStamp.Diagnostic="該操作會覆蓋由其他用戶執行的修改，因為 XML 消息記錄缺少并行時間戳";
+MissingCEStamp.Advice="";
+
+MistmatchedCEStamp.Request="傳播操作";
+MistmatchedCEStamp.Diagnostic="您打開對象后，其他用戶已將其修改";
+MistmatchedCEStamp.Advice="";
+
+OperationError.Request="";
+OperationError.Diagnostic="出現操作錯誤：/p1";
+OperationError.Advice="檢查其詳細信息";
+
+
+PLM_E_VERSION_NOT_ONCEINST_REP.Request="正在控制參考的版本。";
+PLM_E_VERSION_NOT_ONCEINST_REP.Diagnostic="版本控制失敗，因為不能控制不包含父級參考的可一次性實例化展示的版本。";
+PLM_E_VERSION_NOT_ONCEINST_REP.Advice="控制帶有其父級參考的展示的版本。";
+
+PLM_NOT_REP_OR_REPREF.Request="";
+PLM_NOT_REP_OR_REPREF.Diagnostic="客戶端請求無效。";
+PLM_NOT_REP_OR_REPREF.Advice="只能處理該操作的參考和展示。";
+
+PLM_CLONE_PERSON.Request="";
+PLM_CLONE_PERSON.Diagnostic="客戶端請求無效。";
+PLM_CLONE_PERSON.Advice="不能處理該操作的對象類型。";
+
+PLM_Detach_NotDetachableBecauseOfRepoPrivilege.Request="分離 PLM 部件";
+PLM_Detach_NotDetachableBecauseOfRepoPrivilege.Diagnostic="該部件屬于本地站點，因此不可分離";
+PLM_Detach_NotDetachableBecauseOfRepoPrivilege.Advice="只能分離較遠的 PLM 部件";
+
+PLM_Detach_MultipleComponentDetachError.Request="分離 PLM 部件";
+PLM_Detach_MultipleComponentDetachError.Diagnostic="分離該部件意味著分離其他被禁止的部件";
+PLM_Detach_MultipleComponentDetachError.Advice="一次只能分離一個 PLM 部件";
+
+PLM_InvalidVersionName.Request="傳播操作";
+PLM_InvalidVersionName.Diagnostic="根據服務器策略，PLM 部件的版本名稱無效";
+PLM_InvalidVersionName.Advice="從列表選擇名稱：/p1";
+
+// 3951 校正官方漢化=================   DURING DELETE REFERENCE  ===========================================
+
+// 3951 校正官方漢化 NO DELETION BECAUSE LOCKED BY ANOTHER USER
+// 3951 校正官方漢化 To be interpreted by the delete ref - factorisation case
+// 3951 校正官方漢化 In Diagnostic's /p1 :  the login of the user which has locked the component
+
+PLM_DeleteRef_NotDeletableBecauseOfLockedComponent.Request="";
+PLM_DeleteRef_NotDeletableBecauseOfLockedComponent.Diagnostic="您不能刪除該部件，因為它已被 /p1 鎖定。";
+PLM_DeleteRef_NotDeletableBecauseOfLockedComponent.Advice="請聯系鎖的所有者。";
+
+// 3951 校正官方漢化 NO DELETION BECAUSE OF MATURITY
+// 3951 校正官方漢化 To be interpreted by the delete ref - factorisation case
+
+PLM_DeleteRef_NotDeletableBecauseOfMaturity.Request="";
+PLM_DeleteRef_NotDeletableBecauseOfMaturity.Diagnostic="此部件因其成熟狀態而不可移除。";
+PLM_DeleteRef_NotDeletableBecauseOfMaturity.Advice="更改部件狀態";
+
+// 3951 校正官方漢化 NO DELETION BECAUSE OF REPO PRIVILEGE
+// 3951 校正官方漢化 To be interpreted by the delete ref - factorisation case
+
+PLM_DeleteRef_NotDeletableBecauseOfRepoPrivilege.Request="";
+PLM_DeleteRef_NotDeletableBecauseOfRepoPrivilege.Diagnostic="不能移除該部件，因為刪除權限屬于其他站點。";
+PLM_DeleteRef_NotDeletableBecauseOfRepoPrivilege.Advice="";
+
+// 3951 校正官方漢化 NO DELETION BECAUSE OF VPLM CONTROL
+// 3951 校正官方漢化 To be interpreted by the delete ref - factorisation case
+
+PLM_DeleteRef_NotDeletableBecauseOfNotVPLMControlled.Request="";
+PLM_DeleteRef_NotDeletableBecauseOfNotVPLMControlled.Diagnostic="在 VPM 客戶端會話中無法刪除實體。";
+PLM_DeleteRef_NotDeletableBecauseOfNotVPLMControlled.Advice="刪除此實體（客戶端會話與創建實體時使用的相同）";
+
+PLM_InvalidPLMType.Request="";
+PLM_InvalidPLMType.Diagnostic="這不是有效的 PLM 類型。";
+PLM_InvalidPLMType.Advice="";
+
+PLM_InvalidExtension.Request="";
+PLM_InvalidExtension.Diagnostic="/p1 不是該對象的有效擴展名。";
+PLM_InvalidExtension.Advice="";
+
+PLM_InvalidUser.Request="";
+PLM_InvalidUser.Diagnostic="這不是有效的用戶。";
+PLM_InvalidUser.Advice="";
+
+PLM_IncompleteOwnership.Request="";
+PLM_IncompleteOwnership.Diagnostic="所有權不完整。";
+PLM_IncompleteOwnership.Advice="您需要設置組織和項目。";
+
+PLM_InvalidMaturity.Request="";
+PLM_InvalidMaturity.Diagnostic="這不是有效的成熟度。";
+PLM_InvalidMaturity.Advice="請檢查您用于此環境的成熟度規則。";
+
+ReadOnlyAttribute.Request="";
+ReadOnlyAttribute.Diagnostic="/p1：該屬性為只讀。提供的值被忽略";
+ReadOnlyAttribute.Advice="";
+
+// 3951 校正官方漢化091214 NLL IR-010948 Changed "Action" by "ECA" as requested by EEA.
+PLM_MissingAction.Request="";
+PLM_MissingAction.Diagnostic="該對象受更改控制支配。";
+PLM_MissingAction.Advice="請選擇 ECA。";
+
+PLM_NotRetrievedECA.Request="";
+PLM_NotRetrievedECA.Diagnostic="找不到工作所參考的 ECA。";
+PLM_NotRetrievedECA.Advice="ECA 可能不再存在，或其安全策略阻止您操作它。";
+
+PLM_SecurityDeniedECA.Request="";
+PLM_SecurityDeniedECA.Diagnostic="安全信息：對于當前處于成熟狀態的授權上下文 ECA，您沒有訪問權限來繼續執行此操作。";
+PLM_SecurityDeniedECA.Advice="請與您的安全管理員聯系，了解對于當前處于成熟狀態的此 ECA，您的訪問權限受到限制的原因，或將授權上下文切換為可用狀態。";
+
+VPMExpandLimitReached.Request="";
+VPMExpandLimitReached.Diagnostic="展開操作超過了管理員指定的深度限制。";
+VPMExpandLimitReached.Advice="在多個步驟中執行展開或聯系您的管理員。";
+
+
+// 3951 校正官方漢化=================   DURING WORKSPACE OPERATION   ===========================================
+
+Rule_AggregatedObjects.Request="";
+Rule_AggregatedObjects.Diagnostic="無法對該對象執行此操作，因為其所有者不在同一交易中。";
+Rule_AggregatedObjects.Advice="請添加缺失的對象。";
+
+Rule_IsLastVersion.Request="";
+Rule_IsLastVersion.Diagnostic="因標記 IsLastVersion 而無法對該對象執行此操作。";
+Rule_IsLastVersion.Advice="請添加缺失的對象。";
+
+Rule_LogicalId.Request="";
+Rule_LogicalId.Diagnostic="不能執行此操作，因為參考和 Designer Workspace 中的對象沒有相同的邏輯標識。";
+Rule_LogicalId.Advice="請檢驗對象是否共享同一個邏輯標識。";
+
+Rule_OnceInstantiable.Request="";
+Rule_OnceInstantiable.Diagnostic="因 OnceInstantiable 標記而無法對該對象執行此操作。RepReference 及其 RepInstance 必須在同一個事務中。";
+Rule_OnceInstantiable.Advice="請添加缺失的對象。";
+
+Rule_OwnerObjects.Request="";
+Rule_OwnerObjects.Diagnostic="不能對該對象上執行此操作，因為所有聚集對象未在同一個事務（實例、RepInstance、端口和連接）中。";
+Rule_OwnerObjects.Advice="請添加缺失的對象。";
+
+Rule_UpdateLastVersion.Request="";
+Rule_UpdateLastVersion.Diagnostic="因標記 IsLastVersion 而無法對該對象執行此操作。";
+Rule_UpdateLastVersion.Advice="請添加缺失的對象。";
+
+Rule_WorkspaceDownlink.Request="";
+Rule_WorkspaceDownlink.Diagnostic="不能對該對象執行此操作，因為它不能指向子級 Designer Workspace 中的對象。";
+Rule_WorkspaceDownlink.Advice="請添加缺失的對象。";
+
+
+PLM_ObjectNotInCurrentWorkspace.Request="";
+PLM_ObjectNotInCurrentWorkspace.Diagnostic="無法修改對象。它屬于您未連接的 Designer Workspace。";
+PLM_ObjectNotInCurrentWorkspace.Advice="執行此操作前，請先連接到此工作區。";
+
+PLM_OwnerNotInCurrentWorkspace.Request="";
+PLM_OwnerNotInCurrentWorkspace.Diagnostic="無法在此對象下添加對象。它屬于您未連接的 Designer Workspace。";
+PLM_OwnerNotInCurrentWorkspace.Advice="執行此操作前，請先連接到此工作區。";
+
+PLM_ObjectInstanciatedNotInCurrentWorkspace.Request="";
+PLM_ObjectInstanciatedNotInCurrentWorkspace.Diagnostic="屬于 Designer Workspace 的對象不能在參考或其他 Designer Workspace 中進行實例化。";
+PLM_ObjectInstanciatedNotInCurrentWorkspace.Advice="";
+
+PLM_ReferenceObjectNotFound.Request="";
+PLM_ReferenceObjectNotFound.Diagnostic="不能執行該操作，因為參考中的對象不存在。";
+PLM_ReferenceObjectNotFound.Advice="";
+
+PLM_DesignerWorkspaceObjectNotFound.Request="";
+PLM_DesignerWorkspaceObjectNotFound.Diagnostic="不能執行該操作，因為 Designer Workspace 中的對象不存在。";
+PLM_DesignerWorkspaceObjectNotFound.Advice="";
+
+PLM_ObjectInstanciatedNotInCurrentOrParentWorkspace.Request="";
+PLM_ObjectInstanciatedNotInCurrentOrParentWorkspace.Diagnostic="您不能實例化屬于其他 Designer Workspace 的對象。";
+PLM_ObjectInstanciatedNotInCurrentOrParentWorkspace.Advice="";
+
+DWS_WorkspaceInUseByAnotherUser.Request="";
+DWS_WorkspaceInUseByAnotherUser.Diagnostic="無法執行操作。Designer Workspace 上存在正在進行的操作。";
+DWS_WorkspaceInUseByAnotherUser.Advice="請等待操作結束，或與鎖定 Designer Workspace 的相關人員聯系。";
+
+DWS_ParentWorkspaceInUseByAnotherUser.Request="";
+DWS_ParentWorkspaceInUseByAnotherUser.Diagnostic="無法執行操作。父級 Designer Workspace 上存在正在進行的操作。";
+DWS_ParentWorkspaceInUseByAnotherUser.Advice="請等待操作結束，或與鎖定父級 Designer Workspace 的相關人員聯系。";
+
+
+// 3951 校正官方漢化=================== During refresh operation ===============================================
+
+Refresh_NotSameType.Request="";
+Refresh_NotSameType.Diagnostic="不能刷新類型不同的兩個對象";
+Refresh_NotSameType.Advice="檢查您的已解析模型是否與常規模型一致";
+
+Refresh_NotSameFamilly.Request="";
+Refresh_NotSameFamilly.Diagnostic="您的常規模型和已解析模型不屬于同一系列";
+Refresh_NotSameFamilly.Advice="檢查您的已解析模型是否與常規模型一致";
+
+
+
+// 3951 校正官方漢化=================== During EKL execution ===============================================
+
+PLM_RuleValidationFailed.Request="";
+PLM_RuleValidationFailed.Diagnostic="未驗證規則。";
+PLM_RuleValidationFailed.Advice="檢查您的驗證規則。";
+
+PLM_RuleExecutionFailed.Request="";
+PLM_RuleExecutionFailed.Diagnostic="無法執行驗證規則。";
+PLM_RuleExecutionFailed.Advice="檢查您的驗證規則。";
+
+PLM_ActionRuleExecutionFailed.Request="";
+PLM_ActionRuleExecutionFailed.Diagnostic="無法執行操作規則。";
+PLM_ActionRuleExecutionFailed.Advice="檢查您的操作規則。";
+
+// 3951 校正官方漢化==================== During correction operations ======================================
+PLM_SnapshotCreationFailed.Request="";
+PLM_SnapshotCreationFailed.Diagnostic="無法創建對象快照。";
+PLM_SnapshotCreationFailed.Advice="與您的管理員核實您是否可以執行此命令";
+
+PLM_CorrectionWrongType.Request="";
+PLM_CorrectionWrongType.Diagnostic="無法創建對象修正。";
+PLM_CorrectionWrongType.Advice="您不能對此類對象執行該命令";
+
+PLM_CorrectionInvalidAction.Request="";
+PLM_CorrectionInvalidAction.Diagnostic="對象不在 ECA 中。";
+PLM_CorrectionInvalidAction.Advice="您需要執行有效的操作來更正此對象。";
+
+// 3951 校正官方漢化=================   DURING MATURITY OPERATION   ===========================================
+
+PLM_MaturityUnknownSignature.Request="";
+PLM_MaturityUnknownSignature.Diagnostic="不能執行該操作，因為對象無特征符 '\p1'";
+PLM_MaturityUnknownSignature.Advice="檢查對象的特征符";
+
+PLM_MaturityFinalState.Request="";
+PLM_MaturityFinalState.Diagnostic="不能執行該操作，因為對象處于最終狀態";
+PLM_MaturityFinalState.Advice="";
+
+
+// 3951 校正官方漢化==================== During global operations ======================================
+
+OnlyClassSupported.Request="";
+OnlyClassSupported.Diagnostic="您不能對此對象執行該命令";
+OnlyClassSupported.Advice="僅允許類對象";
+
+OnlyRelationClassSupported.Request="";
+OnlyRelationClassSupported.Diagnostic="您不能對此對象執行該命令";
+OnlyRelationClassSupported.Advice="僅允許關系類對象";

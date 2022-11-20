@@ -1,0 +1,168 @@
+// 3951 校正官方漢化 ---------------------------------------------------------------------------
+// 3951 校正官方漢化 NOTE:  Only the *.HeaderFrame.Global.Title resource key names are
+// 3951 校正官方漢化 "標準", and therefore processed automatically.
+// 3951 校正官方漢化
+// 3951 校正官方漢化 All other resource key names are "custom", and therefore must be processed
+// 3951 校正官方漢化 explicitly using GetResourceValueFromKey() and SetTitle() (for example).
+// 3951 校正官方漢化 ---------------------------------------------------------------------------
+
+// 3951 校正官方漢化 NOTE:  55-60 chars. is a practical limit for line lengths
+// 3951 校正官方漢化 (otherwise tooltip box gets too long and/or text gets truncated).
+
+// 3951 校正官方漢化 NOTE:  Long strings may be continued on subsequent lines
+// 3951 校正官方漢化 (and line breaks within a quoted string are respected for LongHelp,
+// 3951 校正官方漢化 so a newline char. is not needed, though it's also respected).
+
+// 3951 校正官方漢化 ---------------------------------------------------------------------------
+
+TOFrameForJobSubmission.HeaderFrame.Global.Title="模擬執行"; // 3951 校正官方漢化 implicit/default = "Global".
+
+// 3951 校正官方漢化0 for dev. testing only:  FrameForBatchExecution.Title = "sub-Frame for BatchExecution";
+
+RadioButtonForBatchExecution0.Title="前景執行";
+RadioButtonForBatchExecution0.LongHelp="模擬在您當前的會話中運行；模擬完成之后，您才能繼續工作。";
+
+RadioButtonForBatchExecution1.Title="背景執行";
+RadioButtonForBatchExecution1.LongHelp="模擬在后臺會話中運行；模擬在運行時您可以繼續工作。";
+
+RadioButtonForBatchExecution2.Title="提示";
+RadioButtonForBatchExecution2.LongHelp="執行每個模擬之前，請先指定執行方法。";
+
+FrameForValet.Title="執行控制器主機"; // 3951 校正官方漢化 NOTE:  See also SolveAction.BadValetHostName.Error.Message in SMAFeaSimMethod.CATNls.
+
+RadioButtonForValetMode0.Title="此計算機";
+RadioButtonForValetMode0.LongHelp="本地計算機將作為執行控制器。
+\n 在本地計算機上運行的進程將完成執行控制器活動。";
+
+RadioButtonForValetMode1.Title="其他： ";
+RadioButtonForValetMode1.LongHelp="將遠程計算機指定為執行控制器。輸入遠程計算機的主機名。
+\n 執行控制器活動可在遠程計算機上執行，以利用附加的計算資源。遠程執行控制器主機必須完全安裝設計視域，且配置為可接受與此計算機的遠程連接。";
+
+// 3951 校正官方漢化FrameForServant.Title    = "Execution Hosts";   // 3951 校正官方漢化 NOTE:  See also SolveAction.BadSubmissionHostName.Error.Message in SMAFeaSimMethod.CATNls.
+// 3951 校正官方漢化RadioButtonForJobSubmissionMode0.Title    = "Same as execution controller host";
+// 3951 校正官方漢化RadioButtonForJobSubmissionMode0.LongHelp = "The simulation will be executed on the same computer
+// 3951 校正官方漢化as the execution controller host.
+// 3951 校正官方漢化\nExecuting a simulation directly on the execution
+// 3951 校正官方漢化controller host computer does not require any additional
+// 3951 校正官方漢化configuration or licenses.";
+// 3951 校正官方漢化RadioButtonForJobSubmissionMode1.Title    = "Submission host : ";
+// 3951 校正官方漢化RadioButtonForJobSubmissionMode1.LongHelp = "Submit the simulation to a remote computer for execution.
+// 3951 校正官方漢化Enter the hostname of the remote computer.
+// 3951 校正官方漢化\nThe submission host manages the distribution of simulation
+// 3951 校正官方漢化computations across multiple hosts and CPUs.  The submission
+// 3951 校正官方漢化host must be configured to accept the remote connection
+// 3951 校正官方漢化from the execution controller host computer.";
+
+FrameForServant.Title="執行設置"; // 3951 校正官方漢化 NOTE:  See also SolveAction.BadSubmissionHostName.Error.Message in SMAFeaSimMethod.CATNls.
+
+// 3951 校正官方漢化 ---------------------------------------------------------------------------
+
+CheckButtonForUseGpuForExecution.Title="將圖形處理器用于計算";
+CheckButtonForUseGpuForExecution.LongHelp="執行期間啟用/禁用將圖形處理器用于計算。
+\n 如果圖形處理器缺少此功能，將忽略此設置。";
+
+// 3951 校正官方漢化 ---------------------------------------------------------------------------
+
+RadioButtonForJobSubmissionMode0.Title="本地運行";
+RadioButtonForJobSubmissionMode0.LongHelp="將在本地計算機上執行模擬。
+\n直接在本地計算機上執行模擬不需要任何附加配置或許可證。";
+
+RadioButtonForJobSubmissionMode1.Title="使用提交主機遠程運行： ";
+RadioButtonForJobSubmissionMode1.LongHelp="向遠程計算機提交要執行的模擬。輸入遠程計算機的主機名。
+\n 提交主機將跨多個主機和 CPU 管理模擬計算的分布。提交主機必須配置為可接受與執行控制器主機計算機的遠程連接。";
+
+FrameForRemoteServant.Title="遠程主機設置"; // 3951 校正官方漢化 NOTE:  See also SolveAction.BadServantHostList.Error.Message in SMAFeaSimMethod.CATNls.
+
+RadioButtonForRemoteServantsMode0.Title="使用隊列（必須在提交主機上定義）";
+RadioButtonForRemoteServantsMode0.LongHelp="使用預定義隊列執行模擬。\n 隊列允許提交主機選擇在其上執行了模擬的一組最有效的計算機。必須在提交主機上定義隊列配置文件。";
+
+RadioButtonForRemoteServantsMode1.Title="使用以下指定的主機";
+RadioButtonForRemoteServantsMode1.LongHelp="使用自定義列表指示遠程執行主機計算機。在表中輸入每臺計算機的主機名和 CPU 數量。
+\n 通過直接指定主機，您可以確定用于執行模擬的計算機。必須仍通過提交主機提交模擬，并且每臺指定的主機必須配置為可執行設計視域模擬。";
+
+// 3951 校正官方漢化 -------------------------------------------------------------------------
+// 3951 校正官方漢化 NOTE:  For MultiList, tried to set Title and "messages" (Help, LongHelp)
+// 3951 校正官方漢化 but was unable to find a way to get it to work.
+// 3951 校正官方漢化 (Unique, but not necessarily a problem.)
+// 3951 校正官方漢化 -------------------------------------------------------------------------
+
+// 3951 校正官方漢化 NOTE:  There are no "標準" resource key names for the Columns of a MultiList.
+MultiListForServantHosts.ColumnForHostNames.Title="遠程主機名";
+MultiListForServantHosts.ColumnForHostCpuQtys.Title="CPU 數量";
+
+MultiListForServantHosts.Warning.BadInputData="輸入數據無效";
+
+MultiListForServantHosts.Warning.BadCpuQty="警告：第 /p2 行中的“CPU 數量”一列中條目 \"/p1\" 無效。 ",
+"\n\n“CPU 數量”中的每個值必須為非負整數。",
+"\n（例如，0、1、2 等）",
+"\n\n 狀態：使用 \"/p4\" 代替 \"/p3\"。";
+
+MultiListForServantHosts.Warning.BadSumCpuQtys="警告：“CPU 數量”總和必須是 1 或更多。";
+
+MultiListForServantHosts.Warning.InconsistentCpuQtys="警告：為模擬請求的“CPU 總數”",
+"\n 必須小于或等于 ",
+"\n 主機表中指定的“CPU 數量”總值。",
+"\n\n 當前已為“CPU 總數”指定 /p1，但",
+"\n/p2 是主機表中指定的“CPU 數量”總值。";
+
+LabelForEditorForTotalCpuQty.Title="CPU 總數（本地運行最多 4 個）： ";
+LabelForEditorForTotalCpuQty.LongHelp="執行模擬的處理器總數。
+\n 對于遠程執行，此數值必須小于或等于預定義隊列或自定義主機列表中的 CPU 總數。";
+
+
+Editor.Warning.BadInputData="輸入數據無效";
+Editor.Warning.EmptyString="警告：檢測到 \"/p1\" 的字符串為空。",
+"\n\n 您必須輸入值。";
+
+// 3951 校正官方漢化 ---------------------------------------------------------------------------
+
+LabelForComboForExplicitPrecision.Title="浮點數字精度： ";
+LabelForComboForExplicitPrecision.LongHelp="僅在動態分析中指定浮點數字的精度。
+\n 要提高執行速度，單精度較佳，但有些模型可能需要雙精度。";
+
+// 3951 校正官方漢化 NOTE:  There are no "標準" resource key names for the Lines of a Combo.
+ComboForExplicitPrecision.Line0="單精度（7 位數）";
+ComboForExplicitPrecision.Line1="雙精度（16 位數）";
+
+
+// 3951 校正官方漢化 ---------------------------------------------------------------------------
+
+TOFrameForMeshAdaptivity.HeaderFrame.Global.Title="模擬精確度"; // 3951 校正官方漢化 implicit/default = "Global".
+
+// 3951 校正官方漢化0 for dev. testing only:  FrameForMeshAdaptivity.Title = "sub-Frame for MeshAdaptivity";
+
+RadioButtonForMeshAdaptivity0.Title="良好";
+RadioButtonForMeshAdaptivity0.LongHelp="模擬運行速度快，并可提交準確度合理的結果。";
+
+RadioButtonForMeshAdaptivity1.Title="更佳";
+RadioButtonForMeshAdaptivity1.LongHelp="模擬速度和精確度之間的平衡。";
+
+RadioButtonForMeshAdaptivity2.Title="最佳";
+RadioButtonForMeshAdaptivity2.LongHelp="模擬運行速度較慢，但可獲更精確的結果。";
+
+// 3951 校正官方漢化 ---------------------------------------------------------------------------
+
+TOFrameForStoppingCriteria.HeaderFrame.Global.Title="模擬停止條件（高級）"; // 3951 校正官方漢化 implicit/default = "Global".
+
+// 3951 校正官方漢化0 for dev. testing only:  FrameForStoppingCriteria.Title = "sub-Frame for StoppingCriteria";
+
+CheckButtonForStopExecPerPEEQ.Title="使用塑性應變 (PEEQ) 限制";
+CheckButtonForStopExecPerPEEQ.LongHelp="啟用/禁用基于塑性應變的停止條件。
+\n 啟用此選型后，當零件遇到大得難以接受的變形時，將自動停止模擬。如果未完成模擬，并且已超過指定的塑性應變限制（以下字段中所示），模擬將結束，同時僅應用部分負載；模擬結果指示部分負載下的零件響應。";
+
+LabelForEditorForPEEQLimitFactor.Title="允許的塑性應變百分比 (PEEQ)： ";
+LabelForEditorForPEEQLimitFactor.LongHelp="停止模擬之前允許的塑性應變百分比。
+\n 塑性應變是變形零件的永久拉伸或收縮，可視為零件原始尺寸的變形百分比。指示代表典型零件中不可接受的損壞或變形的值。";
+
+// 3951 校正官方漢化 ---------------------------------------------------------------------------
+
+// 3951 校正官方漢化0 TOFrameForVarious.HeaderFrame.Global.Title = "Various";   // 3951 校正官方漢化 implicit/default = "Global".
+
+// 3951 校正官方漢化 ---------------------------------------------------------------------------
+
+
+// 3951 校正官方漢化 Host Name (Referenced in SMAFeaDPSettings class)
+Settings.Submission.Hostname="主機名";
+Settings.Valet.Hostname="主機名";
+Settings.Servant.Hostname="主機名";
+

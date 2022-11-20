@@ -1,0 +1,73 @@
+MethodIndex.DP.Title="設計視域標準";
+MethodIndex.Exs.Title="ExSight";
+TestMethodIndex.Title="測試方法";
+
+Method.Frequency.Title="頻率模擬";
+Method.Frequency.Description="基本頻率分析。";
+
+Method.Stress.Title="靜應力模擬";
+Method.Stress.Description="基本靜應力分析。";
+
+Method.Thermal.Title="熱模擬";
+Method.Thermal.Description="針對單個零件的基本穩態熱傳導分析。";
+
+Method.AdvancedStress.Title="高級應力模擬";
+Method.AdvancedStress.Description="高級靜應力分析。";
+
+Method.GPA.Title="通用應用程序";
+Method.GPA.Description="提供對所有 FEA 功能的訪問權限。";
+
+Method.Studio.Title="Exsight Studio";
+Method.Studio.Description="創建 ExSight 要加載的方法文件。";
+
+
+// 3951 校正官方漢化 Action errors
+Action.Error.Title="錯誤";
+Action.Warning.Title="警告";
+Action.ViewResults.Unavailable.Message="求解完成之后才能查看結果。";
+Action.ViewResults.Locked.Message="文檔為只讀時不能查看結果。";
+Action.ViewResults.OutOfDate.Message="相關模擬的結果已過期。\n請重新求解模擬，以更新結果。";
+Action.ViewResults.ReportOutOfDate.Message="報告已過期，此時不能查看該報告。\n請更新報告。";
+Action.ViewResults.ReportOutOfDate.Title="報告已過期";
+
+Action.Solve.RemainingActions.Message="并非所有先決條件均已完成。";
+Action.Solve.General.Message="模擬期間出現錯誤。";
+Action.Solve.Locked.Message="當文檔處于鎖定狀態時無法執行模擬。";
+Action.Solve.BadValetHostName.Message="“執行控制器主機”名稱無效。\n\n提示：修改“執行控制器主機”（位于\n“工具” ->“選項”->“模擬”->“設計視域”下）";
+Action.Solve.BadServantHostList.Message="遠程主機名列表和 CPU 數量無效。\n\n提示：修改“遠程主機設置”（位于\n“工具”->“選項”->“模擬”->“設計視域”下)";
+Action.Solve.BadSubmissionHostName.Message="“提交主機”名稱無效。\n\n提示：修改“執行主機”（位于\n“工具”-> “選項”->“模擬”->“設計視域”下)";
+
+Action.Solve.BadSolveMode.Message="\"/P1\" 求解操作的“求解模式”值無效。\n\n提示：修改 \"/P3\" 方法定義中的 \"/P2\"\n列表。";
+Action.Solve.BadDefaultSolveMode.Message="\"/P1\" 求解操作的“默認求解模式”值無效。\n\n提示：修改“默認求解模式”和 \n\"/P3\" 方法定義中的\"/P2\"列表。";
+Action.Solve.ExecutionErrors.Message="執行期間出現錯誤。";
+Action.Solve.UnexpectedMonitoringPhase.Message="執行期間報告意外監視階段。";
+
+Action.Solve.ClosingWorkbench.Warning.Message="為在后臺模式下運行，模擬將自動保存。\n\n應關閉當前窗口以及引用產品 /P1 的任何文檔窗口，直至模擬完成。\n您可在搜索結果窗口中，使用指南針的南象限跟蹤模擬進度.";
+Action.Solve.ClosingWorkbench.Message="為了在后臺模式中運行，模擬將自動保存";
+Action.Solve.SaveError.Message="保存模擬失敗。請執行手動保存，并重新嘗試。";
+Action.Solve.DetachedExecution.Message="無法啟動主機名 \"/P1\" 的后臺執行。\n\n提示：修改“執行控制器主機”（位于\n“工具”->“選項”->“模擬”->“執行”下面）";
+Action.Solve.RunDetachedCancelled.Message="用戶已取消撤離的運行。模擬文檔尚未保存。";
+Action.Solve.AllowableSolveModes.None.Message="對于 \"/P1\" 求解操作，\n未定義允許的求解模式。（最小值必須等于 1）\n\n提示：修改 \"/P3\" 方法定義中的 \"/P2\"\n列表。";
+Action.Solve.AllowableSolveModes.TooMany.Message="對于 \"/P1\" 求解操作，\n定義的允許求解模式太多。（最大值必須等于 1）\n\n提示：修改 \"/P3\" 方法定義中的 \"/P2\"\n列表。";
+
+// 3951 校正官方漢化 Action Invalid feature(s)
+Action.InvalidFeatures.Message="檢測到 /P1 無效特征。";
+Action.InvalidFeatures.Prompt="單擊“確定”刪除無效項。";
+Action.InvalidFeatures.Title="無效特征";
+
+Action.InvalidFeature.InvalidSupport.Message="/P1 包含一個不能再解析的支持面。\n是否要移除未求解的支持面？";
+Action.InvalidFeature.InvalidSupport.Prompt="單擊“確定”移除未求解的支持面。";
+Action.InvalidFeature.InvalidSupport.Title="無效特征";
+
+SMAFeaSimMethod.Review.Title="審查 /P1";
+SMAFeaSimMethod.Review.DefaultTitle="審查";
+SMAFeaSimMethod.EditorPanel.Title="編輯 /P1";
+SMAFeaSimMethod.EditorPanel.DefaultTitle="編輯器";
+SMAFeaSimMethod.ActionPalette.Title="/P1";
+SMAFeaSimMethod.ActionPalette.DefaultTitle="工具";
+
+SMAFeaSimMethod.FeatureNumber1.Title="(/p1 / /p2)";
+SMAFeaSimMethod.FeatureNumber2.Title="/P1 (/P2\/P3)";
+
+SMAFeaSimMethod.FeaturePropagation.Title="特征傳播";
+

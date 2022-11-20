@@ -1,0 +1,91 @@
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2007 - CATIA V5R204
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化 March, 6th 2007 - Creation: YWE
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化 CoexistenceBatch implementation
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化 This msgcatalog is used to define the CoexistenceBatch messages used in
+// 3951 校正官方漢化   both CoexistenceBatch & CoexistenceBatchUI modules and objects
+// 3951 校正官方漢化      - CoexistenceBatch: Integration in BatchMonitor (CATBatchStarter)
+// 3951 校正官方漢化      - CoexistenceBatchBM: Integration in BatchMonitor (CATUTIL)
+// 3951 校正官方漢化      - CoexistenceBatchPLM: Adhesion to CATIBatchAppl
+// 3951 校正官方漢化      - CoexistenceBatchUI: CoexistenceBatchUI specific user interface
+// 3951 校正官方漢化
+// 3951 校正官方漢化 US Version
+// 3951 校正官方漢化===========================================================================
+
+CoexistenceBatch.Title="V5 到 V6 的數據遷移";
+CoexistenceBatch.Err.Licence="CoexistenceBatch 應用程序在當前配置中不可用。";
+CoexistenceBatch.BatchOK="執行成功。";
+CoexistenceBatch.BatchKO="遷移失敗 - [/p1]";
+CoexistenceBatch.BatchKO.TgtConnection="無法設置目標連接信息";
+CoexistenceBatch.BatchKO.Identifiers="無法從提供程序標識符中檢索 PLMID";
+CoexistenceBatch.BatchKO.CG="CompleteGraph 完成失敗";
+CoexistenceBatch.Err.ProfileDowngrade="不支持配置文件主版本。\n請與管理員聯系以使配置文件降級";
+CoexistenceBatch.Err.ProfileUpgrade="不支持配置文件主版本。\n請與管理員聯系以使配置文件升級";
+CoexistenceBatch.Err.ParseError="轉換配置文件無效。請與您的管理員聯系。";
+CoexistenceBatch.Err.XSDNotFound="未找到 XML 架構。\n請與管理員聯系";
+CoexistenceBatch.Err.UnsupportedContext="不支持用于傳輸的上下文。\n使用支持的上下文或在支持的上下文列表中定義上下文";
+
+
+ProfileFrm.Title="共存配置文件：    ";
+ComboProfile.Title="選擇用于傳輸的方案.....";
+ProfileFrm_btnAdvOptions.Title="高級選項...";
+
+edtScenariodetails.Scenario="方案：";
+edtScenariodetails.description="描述：";
+ScenarioEditBox.Title="未選定任何傳輸配置文件";
+
+CoexAdvOptions_chkLightMode.Title="展示遷移簡單模式";
+CoexAdvOptions.Title="高級選項";
+
+lblApplyToOp.Title="將操作應用到選定參考 ";
+ApplyToOpFrame_radCompSelection.Title="使用從數據庫展開的子級";
+lblExpandlvl.Title="      傳播深度 ";
+chkExpandAll.Title="傳播到所有子代";
+
+// 3951 校正官方漢化 User Interface
+ScenarioFrm.Title="方案 ";
+ScenarioFrm_radIncremental.Title="作為新增量 ";
+ScenarioFrm_radCoex.Title="共存 ";
+ScenarioFrm_radAsNew.Title="作為新項 ";
+ScenarioFrm_radMigration.Title="遷移 ";
+ScenarioFrm.Tooltip="必須選擇對象以訪問方案選擇";
+
+ProcessFrm.Title="處理行為 ";
+ProcessFrm_lblCtx.Title="上下文名稱 ";
+ProcessFrm_lblEnv.Title="選擇目標環境 ";
+ProcessFrm_lblSR.Title="StopRestart ";
+ProcessFrm_lblMigReport.Title="遷移報告位置 ";
+ProcessFrm_btnMigReport.Title="更改目錄 ";
+ProcessFrm_selectDir.Title="遷移報告目錄 ";
+
+DataBehaviorsFrm.Title="數據行為 ";
+DataFrm_chkIdentification.Title="使用標識初始化規則";
+DataFrm_chkVersioning.Title="版本控制信息";
+DataFrm_chkCusto.Title="自定義屬性";
+DataFrm_streamFrm.Title="流管理 ";
+DataFrm_radNav.Title="僅虛擬化 ";
+DataFrm_radAuth.Title="升級到 V6 ";
+DataFrm_chkMaturity.Title="處理成熟度信息";
+DataFrm_chkPandO.Title="處理人員和組織信息";
+DataFrm_chkMultiPDM.Title="使用多 PDM 模式";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

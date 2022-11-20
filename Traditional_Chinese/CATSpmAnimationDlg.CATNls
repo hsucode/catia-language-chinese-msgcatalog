@@ -1,0 +1,76 @@
+// * Title Dialog Box *
+Title="Animate Images";
+
+leftFrame.framePlay.LongHelp = 
+"Lets you control how the animation is played";
+leftFrame.framePlay.frameTimeSlider.sliderTime.ShortHelp = "Access Current Step";
+leftFrame.framePlay.frameTimeSlider.sliderTime.LongHelp = 
+"Lets you randomly access any point of the Simulation";
+leftFrame.framePlay.frameScan.buttonGoStart.ShortHelp = "Jump to Start";
+leftFrame.framePlay.frameScan.buttonGoStart.LongHelp = "Jumps to start.";
+leftFrame.framePlay.frameScan.buttonGoBackward.ShortHelp = "Play Backward";
+leftFrame.framePlay.frameScan.buttonGoBackward.LongHelp = "Plays backward.";
+leftFrame.framePlay.frameScan.buttonStepBackward.ShortHelp = "Step Backward";
+leftFrame.framePlay.frameScan.buttonStepBackward.LongHelp = "Moves to previous step.";
+leftFrame.framePlay.frameScan.buttonPause.ShortHelp = "Pause";
+leftFrame.framePlay.frameScan.buttonPause.LongHelp = "Pauses.";
+leftFrame.framePlay.frameScan.buttonStepForward.ShortHelp = "Step Forward";
+leftFrame.framePlay.frameScan.buttonStepForward.LongHelp = "Moves to next step.";
+leftFrame.framePlay.frameScan.buttonGoForward.ShortHelp = "Play Forward";
+leftFrame.framePlay.frameScan.buttonGoForward.LongHelp = "Plays forward.";
+leftFrame.framePlay.frameScan.buttonGoEnd.ShortHelp = "Jump to End";
+leftFrame.framePlay.frameScan.buttonGoEnd.LongHelp = "Jumps to end.";
+leftFrame.framePlay.frameTime.buttonLoop.ShortHelp = "Change Loop Mode";
+leftFrame.framePlay.frameTime.buttonLoop.LongHelp = 
+"Lets you change the play loop mode:
+   - Play once in one shot
+   - Repeat play nonstop
+   - Repeat play and reverse nonstop";
+   
+leftFrame.framePlay.frameTime.labelTimeQuantum.Title = "Step number: ";
+leftFrame.framePlay.frameTime.comboTimeQuantum.LongHelp = "Sets the desired interpolation steps.";
+
+leftFrame.framePlay.frameSpeedSlider.labelSpeed.Title = "Speed: ";
+leftFrame.framePlay.frameSpeedSlider.labelSpeed.LongHelp = "Modifies the animation speed.";
+
+leftFrame.framePlay.frameTime.comboTimeQuantum2.LongHelp = 
+"Speeds up animation by playing\n
+one shot every N";
+
+// Options frame
+
+OptionsFrame.FrameInterpolate.CheckInterpolateValues.Title = "Animate colors";
+OptionsFrame.FrameInterpolate.CheckInterpolateValues.LongHelp = "Animates colors.";
+
+OptionsFrame.FrameInterpolate.CheckInterpolateDisp.Title = "Animate deformation";
+OptionsFrame.FrameInterpolate.CheckInterpolateDisp.LongHelp = "Animates deformation.";
+
+OptionsFrame.FrameAnimateOn.Title = "Animate On";
+OptionsFrame.FrameAnimateOn.MultiOccRB.Title = "All occurrences";
+OptionsFrame.FrameAnimateOn.MultiOccRB.LongHelp = "Animates all occurrences.";
+OptionsFrame.FrameAnimateOn.CheckBufferize.Title = "Memorize frames";
+OptionsFrame.FrameAnimateOn.CheckBufferize.LongHelp = "Computes all the frames before animating occurrences. \nThis action can be time and memory consumming.";
+OptionsFrame.FrameAnimateOn.OneOccRB.Title = "One occurrence";
+OptionsFrame.FrameAnimateOn.OneOccRB.LongHelp = "Animates only one occurrence.";
+
+OptionsFrame.FrameAnimateOn.FrameOccurrence.PushButtonOccurrence.Title = "...";
+OptionsFrame.FrameAnimateOn.FrameOccurrence.PushButtonOccurrence.ShortHelp = "Change Current Occurrence";
+OptionsFrame.FrameAnimateOn.FrameOccurrence.PushButtonOccurrence.LongHelp = "Changes the current animated occurrence.";
+
+OptionsFrame.FrameAnimateOn.FrameOccurrence.PushButtonPreviousOccurrence.Title = "<";
+OptionsFrame.FrameAnimateOn.FrameOccurrence.PushButtonPreviousOccurrence.ShortHelp = "Moves to previous occurrence.";
+
+OptionsFrame.FrameAnimateOn.FrameOccurrence.PushButtonNextOccurrence.Title = ">";
+OptionsFrame.FrameAnimateOn.FrameOccurrence.PushButtonNextOccurrence.ShortHelp = "Moves to next occurrence.";
+
+OptionsFrame.FrameAnimateOn.FrameOccurrence.EditorOccurrence.LongHelp = "Shows the current animated occurrence.";
+
+OptionsFrame.ButtonSymetric.ShortHelp = "Animation Mode";
+OptionsFrame.ButtonSymetric.LongHelp = "Switches to symetric or non-symetric animation.";
+
+// * Caption *
+Simple="<<Less";
+
+// * Caption *
+Advanced="More>>";
+

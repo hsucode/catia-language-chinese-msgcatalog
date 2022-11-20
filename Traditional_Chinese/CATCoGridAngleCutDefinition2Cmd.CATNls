@@ -1,0 +1,44 @@
+
+CATCoGridAngleCutDefinition2Cmd.Title="鋪層尖角定義";
+
+CATCoGridAngleCutDefinition2Cmd.SelPliVertexState.Message="從鋪層選擇頂點";
+CATCoGridAngleCutDefinition2Cmd.SelDirectionState.Message="從鋪層曲線選擇一條曲線";
+CATCoGridAngleCutDefinition2Cmd.EditState.Message="修改規格，然后單擊“確定”或“取消”";
+
+MessagesTitle="鋪層尖角定義";
+SelectionRefused="選擇被拒絕。";
+HelpSelection="必須選擇由兩個斜坡支持面發出的頂點。";
+VertexFromStdContourNeeded.Error.Message="必須選擇來自鋪層輪廓的頂點（而您選擇了來自 /p1 的頂點）。";
+CannotHaveTwoVertexFromSameContour.Error.Message="您選擇了來自 /p1 的頂點。\n不能選擇此輪廓的另一個頂點。";
+MovedRampSupport.Info.Message="已移動現有的 /P1 以滿足最小長度約束。";
+MovedRampSupport.Error.Message="必須移動現有的 /p1 以滿足最小長度約束，但更新已失敗。";
+CreationACAborted.Error.Message="已經放棄鋪層尖角創建";
+
+AC_Info="信息";
+AC_Warning="警告";
+AC_Error="錯誤";
+
+Error_RampSupportConsistency="鋪層尖角初始方向與相鄰的斜坡支持面不一致。\n這可能導致失敗的結果。";
+Error_Mapping="無法執行鋪層尖角端點與相應斜坡支持面之間的映射。\n這可能導致失敗的結果。";
+Error_GetPosDirection="無法檢索正面方向。\n這可能導致失敗的結果。";
+Error_GenerRampSupport="生成的斜坡支持面沒有正確的曲線數。\n已取消在鋪層中替換。";
+Error_UpdateContour="鋪層復合幾何圖形發生更新錯誤。";
+Error_ContourInvalid="輪廓未封閉或自相交。";
+Warning_MiniLenghtNotRespected="無法滿足鋪層 /p3（/p1 < /p2）的最小長度。請調整倒角區域中的斜度值。";
+Info_ModifiedACIMinimumLength="/p1 中使用的長度已經增加到 /p2（而不是 /p3） ，以使所有邊線具有所請求的最小長度。";
+Info_ModifiedExtrapolLength1="/p1 中使用的外插延伸長度 1 已經增加到 /p2（而不是 /p3），以便能夠重設所有受到影響的鋪層";
+Info_ModifiedExtrapolLength2="/p1 中使用的外插延伸長度 2 已經增加到 /p2（而不是  /p3），以便能夠重設所有受到影響的鋪層";
+
+// 3951 校正官方漢化 ProgressTaskUI 
+ProgressTaskUI.Title="生成鋪層尖角和相關聯的斜坡支持面";
+ProgressTaskUI.ObjectName="生成斜坡支持面";
+ProgressTaskUI.Comment="進度";
+
+// 3951 校正官方漢化 默認值 when no GUI setting saved yet
+SlopeRate="2"; // 3951 校正官方漢化 integer
+SlopeStep_mm="1";
+SlopeAngle_degrees="10";
+SlopeMaterialThickness_mm="1";
+
+// 3951 校正官方漢化 Parameters used in computation
+SafetyOverlengthForExtrapol_mm="5"; // 3951 校正官方漢化 Overlength for requested extrapol length due to non-planar surface

@@ -1,0 +1,79 @@
+//===========================================================================
+// COPYRIGHT DASSAULT SYSTEMES 2007 - CATIA V5R204
+//===========================================================================
+// March, 6th 2007 - Creation: YWE
+//===========================================================================
+// CATFmtBatch implementation
+//===========================================================================
+// This msgcatalog is used to define the CATFmtBatch messages used in
+//   both CATFmtBatch & CATFmtBatchUI modules and objects
+//      - CATFmtBatch: Integration in BatchMonitor (CATBatchStarter)
+//      - CATFmtBatchBM: Integration in BatchMonitor (CATUTIL)
+//      - CATFmtBatchPLM: Adhesion to CATIBatchAppl
+//      - CATFmtBatchUI: CATFmtBatchUI specific user interface
+//
+// US Version
+//===========================================================================
+ 
+CATFmtBatchFEMExecution.Title="Simulation Batch Meshing";
+CATFmtBatchFEMExecution.Description="Generate meshes on complex product structures";
+CATFmtBatchFEMExecution.Err.Licence="Simulation Batch Meshing application is not available in the current configuration.";
+CATFmtBatchFEMExecution.BatchOK="Execution successful.";
+CATFmtBatchFEMExecution.BatchKO="Execution aborted.";
+
+ReportTitle="Simulation Batch Meshing results";
+GlobalSuffix="_GlobalReport";
+ObjectSuffix="_Report";
+ExecutionEnd="Simulation Batch Meshing ended";
+ObjectExecution="Simulation Batch Meshing on ";
+ObjectResult="Simulation Batch Meshing result:";
+ObjectFailed="Simulation Batch Meshing failed";
+ObjectSucceeded="Simulation Batch Meshing succeeded";
+
+ERRO0001.Request    = "No assembly FEM representation to process";
+ERRO0001.Diagnostic = "";
+ERRO0001.Advice     = "";
+
+ERRO0002.Request    = "Fail to find the assembly FEM representation to process";
+ERRO0002.Diagnostic = "";
+ERRO0002.Advice     = "";
+
+ERRO0003.Request    = "Assembly FEM to process is invalid";
+ERRO0003.Diagnostic = "";
+ERRO0003.Advice     = "";
+
+ERRO0004.Request    = "Error while updating at least one of the assembled FEM representations";
+ERRO0004.Diagnostic = "";
+ERRO0004.Advice     = "";
+
+ERRO0005.Request    = "Fail to set execution report parameters";
+ERRO0005.Diagnostic = "";
+ERRO0005.Advice     = "";
+
+ERRO0006.Request    = "Fail to fill XML parameter file";
+ERRO0006.Diagnostic = "";
+ERRO0006.Advice     = "";
+
+ERRO0007.Request    = "Fail to start unitary batch";
+ERRO0007.Diagnostic = "";
+ERRO0007.Advice     = "";
+
+ERRO0008.Request    = "Fail to open FEM representation to update";
+ERRO0008.Diagnostic = "";
+ERRO0008.Advice     = "";
+
+ERRO0009.Request    = "Error while updating FEM representation";
+ERRO0009.Diagnostic = "";
+ERRO0009.Advice     = "";
+
+ERRO0010.Request    = "Fail to save FEM representation";
+ERRO0010.Diagnostic = "";
+ERRO0010.Advice     = "";
+
+ERRO0011.Request    = "Fail to remove FEM representation from session";
+ERRO0011.Diagnostic = "";
+ERRO0011.Advice     = "";
+
+ERRO0012.Request    = "AMS license is missing";
+ERRO0012.Diagnostic = "";
+ERRO0012.Advice     = "";

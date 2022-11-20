@@ -1,0 +1,30 @@
+// 3951 校正官方漢化 States
+CATCoGridReroutePlyContourCmd.WaitingForReferencePly.Message="選擇參考鋪層";
+CATCoGridReroutePlyContourCmd.WaitingForStartVertex.Message="選擇開始頂點";
+CATCoGridReroutePlyContourCmd.WaitingForEndVertex.Message="選擇結束頂點";
+CATCoGridReroutePlyContourCmd.WaitingForCurve.Message="選擇要用于重設的曲線";
+CATCoGridReroutePlyContourCmd.WaitingForSimilarPlies.Message="選擇要重設的類似鋪層";
+
+// 3951 校正官方漢化 Error & Warning messages
+SeverityUpdateFailed="錯誤";
+MessagesTitle="重設鋪層輪廓";
+StartEndPointConfused.Message="結束頂點不能與開始頂點混淆。\n請選擇另一頂點。";
+StartPointNeeded.Message="定義要重設輪廓的零件需要一個開始頂點。";
+StartEndPointNotOnSameContour.Message="結束頂點必須在與開始頂點相同的輪廓上。";
+SimilarPlyCannotBeRefPly.Message="類似鋪層不能是參考鋪層。";
+SimilarPlyInvalidForRefPly.Message="所選類似鋪層對于參考鋪層無效。";
+SimilarPlyRerouteImpossible.Message="不能重設類似鋪層：在斜坡支持面上沒有足夠的曲線";
+SimilarPlyNewContourNotClosed.Message="不能重設類似鋪層：結果輪廓不封閉";
+BottomSlopeCurveInvalid.Message="所選底部斜率曲線對于重設無效。";
+// 3951 校正官方漢化CurveInvalid.Message="Selected curve must be either a ramp support curve, a structural element or a limit panel curve.";
+CurveInvalid.Message="所選曲線必須是斜坡支持曲線或結構化元素。";
+StartPointInvalid.Message="選定的開始點無效。";
+
+OverlapZoneDetected.Warning.Title="";
+OverlapZoneDetected.Warning.Message="檢測到帶有 /p1 的重疊區域";
+
+CATCoGridReroutePlyContourCmd.RerouteNoRoomErr.Request="缺少斜坡支持曲線";
+CATCoGridReroutePlyContourCmd.RerouteNoRoomErr.Diagnostic="缺少 /p1 斜坡支持曲線";
+
+StartVertex="開始頂點";
+EndVertex="結束頂點";

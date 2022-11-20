@@ -1,0 +1,154 @@
+TabPageApprox.Title="近似值";
+CheckButtonApproximation.Title="近似值";
+
+//Automatic
+CheckButtonAutomatic.Title="自動";
+CheckButtonAutomatic.ShortHelp="自動設置光順、階數和分段";
+CheckButtonAutomatic.LongHelp="開啟：
+已取消激活光順、階數和分段。
+僅可指定公差和參數化。
+對于階數和分段，將使用預設的默認值。
+關閉：
+所有選項均可用并可修改。";
+
+//Tolerance
+FrameTolerance.Title="公差";
+FrameTolerance.LongHelp="定義創建輸出幾何圖形的精確度。
+公差值過小將導致計算耗時。";
+CheckButtonTolerance.Title="G0： ";
+CheckButtonTolerance.ShortHelp="G0 公差";
+CheckButtonTolerance.LongHelp="開啟：
+a) 對于階數和分段，只要指定的最大和最小值允許增加階數，則這些值將迭代增加，直到輸入幾何圖形（或理論結果）與近似值結果之間的偏差超過 G0 公差的值。
+b) G0 公差的值也可用于創建理論結果的計算。
+關閉：
+G0 公差的值也可用于創建理論結果的計算，即，可在文本字段編輯公差值，從而影響結果。";
+CheckButtonAngle.Title="G1： ";
+CheckButtonAngle.ShortHelp="G1 公差";
+CheckButtonAngle.LongHelp="已指定最終結果和理論結果之間的最大角度偏差。這將確保最終結果和選定支持之間的角度不會超過 G0 公差的值。";
+
+//Parameterization
+FrameParametrization.Title="參數化";
+FrameParametrization.LongHelp="- 標準 -
+  未對結果執行重新參數化。
+  近似值的參數流與輸入曲線的相同。
+- 調整 -
+  如果選定的輸入曲線是空間曲線，則與標準類似。
+  如果選定的輸入曲線是曲面曲線，則參數流將調整為曲面曲線的基礎曲面 u 或 v 方向的參數化。
+- 弧長 -
+  已用根據參數等距曲線點之間的弧長計算的參數化重新近似曲線。  
+ （每對等距參數（近似值）之間的曲線弧長值相同。）";
+ComboParametrization.Title=" ";
+ComboParametrizationText.Adapt="調整";
+ComboParametrizationText.ArcLength="弧長";
+ComboParametrizationText.Iterative="迭代";
+ComboParametrizationText.Standard="標準";
+
+//Smoothing
+FrameSmoothing.Title="光順";
+FrameSmoothing.LongHelp="可光順結果。";
+CheckButtonSmoothing.Title="光順： ";
+//old
+CheckButtonSmoothing.ShortHelp="可光順結果。";
+CheckButtonSmoothing.LongHelp="允許在精確的近似值和非常光順的曲線之間相互調節。
+此功能嘗試平均分布結果幾何圖形的控制點。";
+
+//new
+CheckButtonSmoothing2.ShortHelp="可光順結果。";
+CheckButtonSmoothing2.LongHelp="允許在精確的近似值和非常光順的曲線之間相互調節。
+通過使用此選項，此功能將嘗試平均分布結果幾何圖形的控制點。";
+SpinnerSmoothing.ShortHelp="光順系數";
+SpinnerSmoothing.LongHelp="光順系數";
+
+//Order
+FrameOrder.Title="階數";
+FrameOrder.LongHelp="定義結果的最大、最小或固定階數。";
+ComboOrderU.ShortHelp="U 階數";
+ComboOrderU.LongHelp="- 最小 -
+  如果選定幾何圖形 U 方向的階數小于該值，則將增加階數直至達到該值。對于近似值，階數可增加到最大值 7。
+- 最大 -
+  如果選定幾何圖形 U 方向的階數大于該值，則將減少階數直至達到該值。對于近似值，階數不能超過該值。
+- 固定 -
+  增加和/或減少所有選定元素 U 方向的階數，直至其精確地等于此處指定的階數。對于近似值，階數只能為指定值。";
+ComboOrderV.ShortHelp="V 階數";
+ComboOrderV.LongHelp="- 最小 -
+  如果選定幾何圖形 V 方向的階數小于該值，則將增加階數直至達到該值。對于近似值，階數可增加到最大值 7。
+- 最大 -
+  如果選定幾何圖形 V 方向的階數大于該值，則將減少階數直至達到該值。對于近似值，階數不能超過該值。
+- 固定 -
+  增加和/或減少所有選定元素 V 方向的階數，直至其精確地等于此處指定的階數。對于近似值，階數只能為指定值。";
+LabelOrderU.Title="  U： ";
+LabelOrderU.ShortHelp="U 階數";
+LabelOrderU.LongHelp="定義結果 U 方向的最大、最小或固定階數。";
+LabelOrderV.Title="  V： ";
+LabelOrderV.ShortHelp="V 階數";
+LabelOrderV.LongHelp="定義結果 V 方向的最大、最小或固定階數。";
+SpinnerOrderU.LongHelp="定義 U 方向上的最大/最小/固定階數。";
+SpinnerOrderU.ShortHelp="U 階數";
+SpinnerOrderV.LongHelp="定義 V 方向上的最大/最小/固定階數。";
+SpinnerOrderV.ShortHelp="V 階數";
+LinkOrder.LongHelp="V 值等于 U 值。
+V 選項已禁用。";
+LinkOrder.ShortHelp="V 等于 U";
+
+//Segmentation
+FrameSegments.Title="分段";
+FrameSegments.LongHelp="定義結果的最大、最小或固定段數。";
+ComboSegmentsU.ShortHelp="U 分段";
+ComboSegmentsU.LongHelp="- 最小 -
+  如果選定幾何圖形 U 方向的段數小于該值，則將增加段數直至達到該值。對于近似值，段數可隨意增加。
+- 最大 -
+  如果選定幾何圖形 U 方向的段數大于該值，則將減少段數直至達到該值。對于近似值，段數不能超過該值。
+- 固定 -
+  增加和/或減少所有選定元素 U 方向的段數，直至其精確地等于此處指定的段數。對于近似值，段數只能為指定值。";
+ComboSegmentsV.ShortHelp="V 分段";
+ComboSegmentsV.LongHelp="- 最小 -
+  如果選定幾何圖形 V 方向的段數小于該值，則將增加段數直至達到該值。對于近似值，段數可隨意增加。
+- 最大 -
+  如果選定幾何圖形 V 方向的段數大于該值，則將減少段數直至達到該值。對于近似值，段數不能超過該值。
+- 固定 -
+  增加和/或減少所有選定元素 V 方向的段數，直至其精確地等于此處指定的段數。對于近似值，段數只能為指定值。";
+LabelSegmentsU.Title="  U： ";
+LabelSegmentsU.ShortHelp="U 段";
+LabelSegmentsU.LongHelp="U 方向上的段數";
+LabelSegmentsV.Title="  V： ";
+LabelSegmentsV.ShortHelp="V 段";
+LabelSegmentsV.LongHelp="V 方向上的段數";
+SpinnerSegmentsU.ShortHelp="U 段";
+SpinnerSegmentsU.LongHelp="定義 U 方向上的最大/最小/固定段數。";
+SpinnerSegmentsV.ShortHelp="V 段";
+SpinnerSegmentsV.LongHelp="定義 V 方向上的最大/最小/固定段數。";
+
+ComboText.Fix="固定";
+ComboText.Input="輸入";
+ComboText.Max="最大值";
+ComboText.Min="最小值";
+
+//old
+ComboTypeText.Exact="精確值";
+ComboTypeText.Manual="手動";
+ComboTypeText.Order="階數";
+ComboTypeText.Segmentation="分段";
+FrameType.LongHelp="階數、分段和光順
+- 精確 -
+  階數和段數為最小值。
+  最大階數為 7。
+  增加段數以保持公差。    
+- 光順 -
+  和精確類似，但曲線更光順，偏差值更大。
+- 階數 -
+  由用戶定義階數。
+- 分段 - 
+  由用戶定義段數。
+- 手動 
+  由用戶定義階數和段數。";
+FrameType.Title="類型";
+ParmToleranceSpinner.LongHelp="公差值過小將導致計算耗時。
+開始時請設置較大的值，然后再逐漸減小。";
+ParmToleranceSpinner.ShortHelp="公差值";
+
+//Internal control: body type of fused cells
+ICMApproximationPanel.BodyTypeOfFusedCellsResetMessage="為了確保正確處理在此命令的近似值選項卡內設置的段數，必須修改單元合并操作。因此，近似值結果的單元結構可能與之前的結果不同。";
+ICMApproximationPanel.BodyTypeOfFusedCellsResetTitle="信息";
+ICMApproximationPanel.InputOrderResetMessage="已在較新的環境中創建此特征。
+將忽略輸入階數。";
+ICMApproximationPanel.InputOrderResetTitle="信息";

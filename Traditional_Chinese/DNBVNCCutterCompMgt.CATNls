@@ -1,0 +1,72 @@
+// 3951 校正官方漢化-------------------- Panel ------------------------------// 3951 校正官方漢化
+
+Title="模擬的刀具補償管理";
+
+Help="定義用于模擬的刀具半徑和刀具長度。";
+
+ShortHelp="定義用于模擬的刀具半徑和刀具長度";
+
+LongHelp="專用于管理 G41、G42 ISO 代碼（徑向補償）和 G43 ISO 代碼
+（2 和 3 軸長度補償）的面板。
+
+將顯示資源列表的所有刀具和所有校正器。
+
+可更改“用戶半徑”和“用戶長度”列的值，以修改用于 ISO 模擬的半徑（位于校正器點上）和長度。";
+
+
+// 3951 校正官方漢化-------------------- MultiList ------------------------------// 3951 校正官方漢化
+
+MultiList.Help="定義用于模擬的刀具半徑和刀具長度。";
+
+MultiList.ShortHelp="定義用于模擬的刀具半徑和刀具長度";
+
+MultiList.LongHelp="專用于管理 G41、G42 ISO 代碼（徑向補償）和 G43 ISO 代碼
+（2 和 3 軸長度補償）的面板。
+
+將顯示資源列表的所有刀具和所有校正器。
+
+可更改“用戶半徑”和“用戶長度”列的值，以修改用于 ISO 模擬的半徑（位于校正器點上）和長度。";
+
+TabContainer.Turning="車刀";
+TabContainer.Milling="銑刀";
+
+MultiList.ColumnTitle1="刀具名稱";
+MultiList.ColumnTitle2="刀具編號";
+MultiList.ColumnTitle3="校正器 ID";
+MultiList.ColumnTitle4="Length";
+MultiList.ColumnTitle5="用戶長度 ";
+MultiList.ColumnTitle6="Radius";
+MultiList.ColumnTitle7="用戶半徑";
+
+MultiListForTurning.ColumnTitle1="刀具名稱";
+MultiListForTurning.ColumnTitle2="刀具編號";
+MultiListForTurning.ColumnTitle3="校正器 ID";
+MultiListForTurning.ColumnTitle4="長度 (X)";
+MultiListForTurning.ColumnTitle5="用戶長度 (X)";
+MultiListForTurning.ColumnTitle6="長度 (Z)";
+MultiListForTurning.ColumnTitle7="用戶長度 (Z)";
+MultiListForTurning.ColumnTitle8="Radius";
+MultiListForTurning.ColumnTitle9="用戶半徑";
+
+
+// 3951 校正官方漢化-------------------- Buttons ------------------------------// 3951 校正官方漢化
+
+RadiusRelativeMode.Title="相對用戶半徑";
+RadiusRelativeMode.Help="如果選中該選項，會在模擬期間將用戶半徑添加到標稱半徑。
+否則，用戶半徑將在模擬期間替換標稱半徑";
+RadiusRelativeMode.ShortHelp="用戶半徑定義：相對于標稱半徑或絕對半徑";
+RadiusRelativeMode.LongHelp="如果選中該選項，會在模擬期間將用戶半徑添加到標稱半徑。
+否則，用戶半徑將在模擬期間替換標稱半徑";
+
+LengthRelativeMode.Title="相對用戶長度";
+LengthRelativeMode.Help="如果選中該選項，會在模擬期間將用戶長度添加到標稱長度。
+否則，用戶長度將在模擬期間替換標稱長度";
+LengthRelativeMode.ShortHelp="用戶長度定義：相對于標稱長度或絕對長度";
+LengthRelativeMode.LongHelp="如果選中該選項，會在模擬期間將用戶長度添加到標稱長度。
+否則，用戶長度將在模擬期間替換標稱長度";
+
+AbsoluteToolCompensationMode="徑向輪廓";
+RelativeToolCompensationMode="徑向頂端";
+
+
+

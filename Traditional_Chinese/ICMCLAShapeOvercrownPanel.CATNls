@@ -1,0 +1,92 @@
+DialogBoxTitle="擠壓";
+
+FrameSelection.LongHelp="               選擇
+可選擇一組曲面。
+這些曲面無需連接。";
+LabelElement.Title="元素： ";
+LabelElement.LongHelp="可選擇一組曲面。
+這些曲面無需連接。";
+LabelElement.ShortHelp="指定要擠壓的元素。";
+TabPageOptions.Title="選項";
+
+FrameReference.Title="參考";
+FrameReference.LongHelp="當選擇一個參考，擠壓功能的所有參數都將應用到此曲面，而非內部計算的曲面。";
+
+CheckAuto.Title="自動： ";
+CheckAuto.LongHelp="可自動計算或由用戶定義參考。自動創建的參考將盡可能小。
+用戶定義的參考的尺寸取決于選定的元素。
+擠壓的結果各不相同，取決于參考。";
+CheckAuto.ShortHelp="自動創建參考 ";
+
+FrameCrowning.Title="凸起";
+FrameCrowning.LongHelp="由擠壓向量的位置和其距離定義擠壓";
+LabelPosition.Title="位置： ";
+LabelPosition.LongHelp="定義的點是擠壓向量的位置。
+該點必須位于元素上，即要擠壓的曲面上。";
+LabelPosition.ShortHelp="擠壓向量的位置";
+LabelDistance.Title="距離： ";
+LabelDistance.LongHelp="指定擠壓距離。
+位于擠壓位置的向量長度等于此值乘以縮放值。
+距離是活動擠壓向量上的擠壓距離。
+一個擠壓向量為活動向量。";
+LabelDistance.ShortHelp="活動擠壓向量上的擠壓距離";
+
+FrameDisplay.Title="顯示";
+FrameDisplay.LongHelp="顯示的參數為 
+- 擠壓向量的縮放值 
+- 參考顯示（如自動創建）";
+CheckScaling.Title="縮放： ";
+CheckScaling.LongHelp="可縮放擠壓向量以更好地處理。
+縮放值不會影響擠壓結果。";
+CheckScaling.ShortHelp="向量顯示系數";
+CheckPreview.Title="預覽";
+CheckPreview.LongHelp="顯示參考（如自動創建）。
+非自動創建的參考可選擇隱藏/顯示。";
+CheckPreview.ShortHelp="顯示自動創建的參考";
+
+TabPageAdvanced.Title="高級";
+LabelEdge.Title="邊線： ";
+LabelEdge.LongHelp="此值將元素區域分為內部和外部區域。0.1 即 10%，表示內外限制距元素邊線 10%。10% 元素大小。
+外部區域內的擠壓不保持 G0 連續。
+內部區域內的擠壓保持邊線連續。";
+LabelEdge.ShortHelp="邊線連續距離";
+SpinnerEdge.LongHelp="此值將元素區域分為內部和外部區域。0.1 即 10%，表示內外限制距元素邊線 10%。10% 元素大小。
+外部區域內的擠壓不保持 G0 連續。
+內部區域內的擠壓保持邊線連續。";
+SpinnerEdge.ShortHelp="邊線連續距離";
+LabelEdgeContinuity.Title="邊線連續： ";
+LabelEdgeContinuity.LongHelp="可設置到參考的所需邊線連續。
+如果參考超出輸入數據，連續將保持到輸出結果的虛構擴展。
+僅對具備內部擠壓修改的邊線保持連續。";
+LabelEdgeContinuity.ShortHelp="對具備內部擠壓修改的邊線保持連續";
+EdgeContinuity.Button_G0.LongHelp="對具備內部擠壓修改的邊線保持到參考的 G0 連續。
+如果參考超出輸入數據，連續將保持到輸出結果的虛構擴展。";
+EdgeContinuity.Button_G0.ShortHelp="到參考的 G0";
+EdgeContinuity.Button_G1.LongHelp="對具備內部擠壓修改的邊線保持到參考的 G1 連續。
+如果參考超出輸入數據，連續將保持到輸出結果的虛構擴展。";
+EdgeContinuity.Button_G1.ShortHelp="到參考的 G1";
+EdgeContinuity.Button_G2.LongHelp="對具備內部擠壓修改的邊線保持到參考的 G2 連續。
+如果參考超出輸入數據，連續將保持到輸出結果的虛構擴展。";
+EdgeContinuity.Button_G2.ShortHelp="到參考的 G2";
+
+LabelMinOrder.Title="最小階數： ";
+LabelMinOrder.LongHelp="結果元素的最小階數";
+LabelMinOrder.ShortHelp="結果元素的最小階數";
+SpinnerMinOrder.LongHelp="結果元素的最小階數";
+SpinnerMinOrder.ShortHelp="結果元素的最小階數";
+
+FrameShape.Title="形狀";
+FrameShape.LongHelp="隨后可修改凸起形。
+較小值將產生局部修改，較大值將產生全局修改。
+在此修改過程中，凸起值保持為常量。
+用此值可實現最優控制點分布。";
+SliderShape.LongHelp="較小值將產生局部修改，較大值將產生全局修改";
+SliderShape.ShortHelp="形值";
+SpinnerShape.LongHelp="較小值將產生局部修改，較大值將產生全局修改";
+SpinnerShape.ShortHelp="形值";
+
+
+//???????????????????????????????????????????
+Position="位置";
+Tangent="切線";
+Curvature="曲率";

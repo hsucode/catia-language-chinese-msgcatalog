@@ -1,0 +1,86 @@
+// 3951 校正官方漢化
+// 3951 校正官方漢化 ---------------------------
+// 3951 校正官方漢化 Octree Panel
+// 3951 校正官方漢化 ---------------------------
+// 3951 校正官方漢化
+
+CATFmtOctree2DMesher.Title="八叉樹三角形網格";
+CATFmtOctree3DMesher.Title="八叉樹四面體網格";
+
+CATFmtOctreeMesherCmd.InitialState.Message="設置全局參數和本地規格。";
+
+CATFmtOctreeMesherCmd.Parameters.BClose="取消";
+
+CATFmtOctreeMesherCmd.Parameters.SupportFrame.GeomLabel.Title="支持面： ";
+CATFmtOctreeMesherCmd.Parameters.SupportFrame.GeomLabel.LongHelp="指定網格的支持面。";
+
+CATFmtOctreeMesherCmd.Parameters.SupportFrame.GeomSelector.SelectorCtxMenu.ReframeOn.Title="重新構造";
+CATFmtOctreeMesherCmd.Parameters.SupportFrame.GeomSelector.SelectorCtxMenu.CenterGraph.Title="使圖居中";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.Title="全局參數";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.ElementFrame.ElementLabel.Title="元素類型： ";
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.ElementFrame.ElementLabel.LongHelp="指定所有元素的類型。";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.ElementFrame.ElementOrder.ElementOrderBtn0.Title="線性";
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.ElementFrame.ElementOrder.ElementOrderBtn0.ShortHelp="線性";
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.ElementFrame.ElementOrder.ElementOrderBtn0.LongHelp="將所有元素指定為線性";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.ElementFrame.ElementOrder.ElementOrderBtn1.Title="拋物線";
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.ElementFrame.ElementOrder.ElementOrderBtn1.ShortHelp="拋物線";
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.ElementFrame.ElementOrder.ElementOrderBtn1.LongHelp="將所有元素指定為拋物線";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.MainTab.Title="基本";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.MainTab.SizLitLbl.Title="大小： ";
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.MainTab.SizLitLbl.LongHelp="指定全局網格大小。";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.MainTab.IntSize.IntSizeBtn.Title="全局內部大小： ";
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.MainTab.IntSize.IntSizeBtn.LongHelp="指定網格的最大內部大小。";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.MainTab.InitFromBoxSize.Title="從幾何圖形初始化";
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.MainTab.InitFromBoxSize.LongHelp="使用幾何圖形框大小比率初始化網格大小和絕對弦高值。";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.AdvancedTab.Title="高級";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.AdvancedTab.CriteriaLitLbl.Title="光順條件： ";
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.AdvancedTab.CriteriaLitLbl.LongHelp="指定網格的質量光順條件。";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.AdvancedTab.MinJacobianLitLbl.Title="最小雅可比： ";
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.AdvancedTab.MinJacobianLitLbl.LongHelp="指定最小雅可比值，對于此值，中間節點在幾何圖形上。";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.AdvancedTab.MaxWarpAngleLitLbl.Title="最大經向： ";
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.AdvancedTab.MaxWarpAngleLitLbl.LongHelp="指定最大經向值，對于此值，中間節點在幾何圖形上。";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.AdvancedTab.CleanEdge.CleanEdgeBtn.Title="網格邊線移除條件： ";
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.AdvancedTab.CleanEdge.CleanEdgeBtn.LongHelp="指定較小的網格邊線抑制限制。";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.AdvancedTab.CleanGeomEdtLbl.Title="忽略小于以下值的邊線： ";
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.AdvancedTab.CleanGeomEdtLbl.LongHelp="指定將考慮的最小邊線大小。";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.AdvancedTab.Split.SplitBtn.Title="確保兩層元素";
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.AdvancedTab.Split.SplitBtn.LongHelp="指定至少包含兩層元素的網格。";
+
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.AdvancedTab.MidNodes.MidNodesBtn.Title="幾何圖形上的中間節點";
+CATFmtOctreeMesherCmd.Parameters.GlobalParameters.OctreeContainer.AdvancedTab.MidNodes.MidNodesBtn.LongHelp="為幾何圖形上的中間節點指定條件。";
+
+CATFmtOctreeMesherCmd.Parameters.LocalSpecifications.Title="本地規格";
+
+CATFmtOctreeMesherCmd.Parameters.LocalSpecifications.LocalMeshSize.ShortHelp="局部網格大小";
+CATFmtOctreeMesherCmd.Parameters.LocalSpecifications.LocalSize.LongHelp="通過在選定幾何圖形上應用局部網格大小來創建本地規格。";
+
+CATFmtOctreeMesherCmd.Parameters.LocalSpecifications.LocalDistribution.ShortHelp="邊線分布";
+CATFmtOctreeMesherCmd.Parameters.LocalSpecifications.LocalDistribution.LongHelp="通過在選定幾何圖形上應用邊線分布來創建本地規格。";
+
+CATFmtOctreeMesherCmd.Parameters.LocalSpecifications.LocalPoints.ShortHelp="強加的點";
+CATFmtOctreeMesherCmd.Parameters.LocalSpecifications.LocalPoints.LongHelp="通過應用強加點來創建本地規格。";
+
+CATFmtOctreeMesherCmd.Parameters.LocalSpecifications.PreserveGeometries.ShortHelp="保留邊界";
+CATFmtOctreeMesherCmd.Parameters.LocalSpecifications.PreserveGeometries.LongHelp="通過應用保留的幾何圖形來創建本地規格。";
+
+CATFmtOctreeMesherCmd.Parameters.Shape="形狀";
+CATFmtOctreeMesherCmd.Parameters.Skweness="偏斜度";
+CATFmtOctreeMesherCmd.Parameters.Stretch="拉伸";
+
+CATFmtOctreeMesherCmd.UndoTitle="八叉樹網格";
+CATFmtOctreeMesherCmd.CmdOctreeAPPLY.UndoTitle="網格幾何圖形";

@@ -1,0 +1,78 @@
+DialogBoxTitle="扁平區域分析";
+
+//Selection
+
+Label_Elements.Title="元素： ";
+Label_Elements.LongHelp="顯示用于扁平區域分析的選定元素數量。可使用上下文菜單。
+可使用選擇窗口。";
+Label_Elements.ShortHelp="受支持的元素包括：曲面、面、接合。";
+Label_Discs.Title="點： ";
+Label_Discs.LongHelp="為隨后的偏差分析選擇點";
+Label_Discs.ShortHelp="選擇點";
+
+//Tessellation frame
+
+Frame_Tessellation.Title="網格";
+Frame_Tessellation.LongHelp="此分析基于三角數據。
+這表示在檢查曲面之前，已將它們轉換為多面體模型。";
+
+CheckButton_Length.Title="多面體長度： ";
+CheckButton_Length.LongHelp="為多面體定義最大長度，與曲面曲率無關。 
+多面體長度值越小，計算越精確，但計算更耗時。";
+CheckButton_Length.ShortHelp="最大多面體長度";
+
+Label_Tolerance.Title="公差： ";
+Label_Tolerance.LongHelp="為基于曲率的網格顯示多面體模型與曲面的最大偏差。";
+Label_Tolerance.ShortHelp="與曲面的最大偏差";
+
+//Options frame
+
+Frame_Options.Title="選項";
+Frame_Options.LongHelp="以下選項可用：
+類型、顯示、長度、距離、半徑、旋轉角度。";
+
+//Type subframe
+Frame_Type.Title="類型";
+Frame_Type.LongHelp="有兩種分析方法可用：直尺/圓盤方法（弦）和局部方法（局部）。";
+RadioButton_Chord.Title="弦";
+RadioButton_Chord.LongHelp="直尺/圓盤方法（弦）。
+此方法能得出非常精確的結果。";
+RadioButton_Chord.ShortHelp="直尺/圓盤方法（弦）";
+RadioButton_Local.Title="局部";
+RadioButton_Local.LongHelp="局部方法（局部）是默認設置。
+此方法比弦得出結果的速度更快。";
+RadioButton_Local.ShortHelp="局部方法（局部）";
+
+//Display subframe
+Frame_Display.Title="顯示";
+Frame_Display.LongHelp="分析結果的顯示模式：
+- 顯示曲面
+- 僅顯示圓盤。";
+RadioButton_Both.Title="兩者";
+RadioButton_Both.LongHelp="顯示曲面和圓盤";
+RadioButton_Both.ShortHelp="顯示曲面和圓盤";
+RadioButton_DiscsOnly.Title="僅圓盤";
+RadioButton_DiscsOnly.LongHelp="僅顯示圓盤";
+RadioButton_DiscsOnly.ShortHelp="僅顯示圓盤";
+
+
+Label_Length.Title="長度： ";
+Label_Length.LongHelp="定義虛擬直尺的長度。";
+
+Label_Distance.Title="距離： ";
+Label_Distance.LongHelp="直尺和幾何圖形之間的最小距離。";
+
+Label_CurvatureRadius.Title="半徑： ";
+Label_CurvatureRadius.LongHelp="局部模式下最小的曲率半徑。";
+
+Label_RotationAngle.Title="旋轉角度： ";
+Label_RotationAngle.LongHelp="確定平面度的類型。系統將在旋轉角度定義的扇形內檢查是否保持最小曲率。";
+
+Slider_RotationAngle.Title="旋轉角度： ";
+Slider_RotationAngle.LongHelp="確定平面度的類型";
+Slider_RotationAngle.ShortHelp="確定平面度的類型";
+
+
+
+ManipulatorWarning.Title="警告： ";
+ManipulatorWarning.Message="圓盤僅在單個輸入盒體上受支持。請檢查輸入。<<<";

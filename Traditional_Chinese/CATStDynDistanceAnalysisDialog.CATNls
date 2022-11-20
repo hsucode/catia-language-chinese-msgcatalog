@@ -1,0 +1,229 @@
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2008
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Distance Analysis Command :
+// 3951 校正官方漢化   Resource file for NLS purpose. 
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Implementation Notes :
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 Fev. 08   Creation                                          Minh-Duc TRUONG
+// 3951 校正官方漢化=============================================================================
+
+Title="距離分析"; // 3951 校正官方漢化 title of distance analysis dialog box
+
+// 3951 校正官方漢化 1A) Selection 
+
+
+MainFrmDistanceAnalysis.InputElementsFrame.Title="元素";
+MainFrmDistanceAnalysis.InputElementsFrame.SourceSetLabel.Title="源 "; // 3951 校正官方漢化 discretized element(s) 
+MainFrmDistanceAnalysis.InputElementsFrame.TargetSetLabel.Title="目標 ";
+
+
+MainFrmDistanceAnalysis.InputElementsFrame.SourceSetLabel.ShortHelp="源元素組。";
+MainFrmDistanceAnalysis.InputElementsFrame.SourceSetLabel.LongHelp="源元素組（離散元素）。";
+
+MainFrmDistanceAnalysis.InputElementsFrame.TargetSetLabel.ShortHelp="目標元素組。";
+MainFrmDistanceAnalysis.InputElementsFrame.TargetSetLabel.LongHelp="目標元素組";
+
+
+
+// 3951 校正官方漢化 For MultiSelector 
+
+SourceSelectorList.ShortHelp="源元素組。";
+SourceSelectorList.LongHelp="源元素組（離散元素）。";
+
+TargetSelectorList.ShortHelp="目標元素組。";
+TargetSelectorList.LongHelp="目標元素組（非離散元素）。";
+
+SourceSetListTitle.Message="源組";
+
+TargetSetListTitle.Message="目標組";
+
+
+
+
+
+// 3951 校正官方漢化 1B) Invert Analysis 
+MainFrmDistanceAnalysis.InputElementsFrame.InvertAnalysisPush.Title="反轉分析";
+MainFrmDistanceAnalysis.InputElementsFrame.InvertAnalysisPush.ShortHelp="反轉分析計算。";
+MainFrmDistanceAnalysis.InputElementsFrame.InvertAnalysisPush.LongHelp="反轉源組和目標組。";
+
+
+
+
+
+
+
+
+// 3951 校正官方漢化 2)≒rojection Space
+MainFrmDistanceAnalysis.FrmProjectionSpace.Title="投影空間";
+
+MainFrmDistanceAnalysis.FrmProjectionSpace.Radio3D.ShortHelp="無元素投影";
+MainFrmDistanceAnalysis.FrmProjectionSpace.Radio3D.LongHelp="無元素投影";
+
+MainFrmDistanceAnalysis.FrmProjectionSpace.RadioX.ShortHelp="X 方向投影";
+MainFrmDistanceAnalysis.FrmProjectionSpace.RadioX.LongHelp="計算沿 X 方向的元素投影之間的距離。";
+
+MainFrmDistanceAnalysis.FrmProjectionSpace.RadioY.ShortHelp="Y 方向投影";
+MainFrmDistanceAnalysis.FrmProjectionSpace.RadioY.LongHelp="計算沿 Y 方向的元素投影之間的距離。";
+
+MainFrmDistanceAnalysis.FrmProjectionSpace.RadioZ.ShortHelp="Z 方向投影";
+MainFrmDistanceAnalysis.FrmProjectionSpace.RadioZ.LongHelp="計算沿 Z 方向的元素投影之間的距離。";
+
+MainFrmDistanceAnalysis.FrmProjectionSpace.RadioCompass.ShortHelp="機器人方向投影";
+MainFrmDistanceAnalysis.FrmProjectionSpace.RadioCompass.LongHelp="計算沿機器人方向的元素投影之間的距離。";
+
+MainFrmDistanceAnalysis.FrmProjectionSpace.PlanarDistRadio.ShortHelp="平面距離";
+MainFrmDistanceAnalysis.FrmProjectionSpace.PlanarDistRadio.LongHelp="計算一維元素與包含
+此元素和其他元素的平面
+的相交之間的距離";
+
+
+
+// 3951 校正官方漢化 3) Measurement Direction
+MainFrmDistanceAnalysis.FrmMeasurementDirection.Title="測量方向";
+
+MainFrmDistanceAnalysis.FrmMeasurementDirection.FrmMeasurementDirectionIcons.NormalRadio.ShortHelp="法線距離";
+MainFrmDistanceAnalysis.FrmMeasurementDirection.FrmMeasurementDirectionIcons.NormalRadio.LongHelp="計算最小法線距離。";
+
+MainFrmDistanceAnalysis.FrmMeasurementDirection.FrmMeasurementDirectionIcons.RadioXMeasureDir.ShortHelp="X 方向距離";
+MainFrmDistanceAnalysis.FrmMeasurementDirection.FrmMeasurementDirectionIcons.RadioXMeasureDir.LongHelp="計算沿 X 方向的距離。";
+
+MainFrmDistanceAnalysis.FrmMeasurementDirection.FrmMeasurementDirectionIcons.RadioYMeasureDir.ShortHelp="Y 方向距離";
+MainFrmDistanceAnalysis.FrmMeasurementDirection.FrmMeasurementDirectionIcons.RadioYMeasureDir.LongHelp="計算沿 Y 方向的距離。";
+
+MainFrmDistanceAnalysis.FrmMeasurementDirection.FrmMeasurementDirectionIcons.RadioZMeasureDir.ShortHelp="Z 方向距離";
+MainFrmDistanceAnalysis.FrmMeasurementDirection.FrmMeasurementDirectionIcons.RadioZMeasureDir.LongHelp="計算沿 Z 方向的距離。";
+
+MainFrmDistanceAnalysis.FrmMeasurementDirection.FrmMeasurementDirectionIcons.RadioCompassMeasureDir.ShortHelp="機器人方向距離";
+MainFrmDistanceAnalysis.FrmMeasurementDirection.FrmMeasurementDirectionIcons.RadioCompassMeasureDir.LongHelp="計算沿機器人方向的距離。";
+
+
+// 3951 校正官方漢化 4) Relimitation options 
+FrmRelimitation.Title="重新限定";
+
+
+
+// 3951 校正官方漢化 Light Mode only
+FrmRelimitation.TitleLight="選項";
+MainFrmDistanceAnalysis.FrmRelimitation.QuickColorScaleChk.ShortHelp="有限顏色范圍";
+MainFrmDistanceAnalysis.FrmRelimitation.QuickColorScaleChk.LongHelp="以有限的顏色范圍
+			顯示分析，以便進行快速診斷。";
+
+
+
+MainFrmDistanceAnalysis.FrmRelimitation.MaxDistChk.ShortHelp="用戶最大距離";
+MainFrmDistanceAnalysis.FrmRelimitation.MaxDistChk.LongHelp="修改用戶最大距離
+（無大于該距離的計算值）";
+
+
+MainFrmDistanceAnalysis.FrmRelimitation.AutoTrapChk.Title="自動封閉曲線";
+MainFrmDistanceAnalysis.FrmRelimitation.AutoTrapChk.ShortHelp="自動消除離散點";
+MainFrmDistanceAnalysis.FrmRelimitation.AutoTrapChk.LongHelp="授權自動消除
+目標曲面的不相關的
+離散點。";
+
+MainFrmDistanceAnalysis.FrmRelimitation.LimitsPoints.Title="曲線限制";
+MainFrmDistanceAnalysis.FrmRelimitation.LimitsPoints.ShortHelp="重新限定離散曲線。";
+MainFrmDistanceAnalysis.FrmRelimitation.LimitsPoints.LongHelp="重新限定離散曲線。";
+
+MainFrmDistanceAnalysis.FrmRelimitation.LimitsPoints2.Title="曲線限制";
+MainFrmDistanceAnalysis.FrmRelimitation.LimitsPoints2.ShortHelp="重新限定非離散曲線。";
+MainFrmDistanceAnalysis.FrmRelimitation.LimitsPoints2.LongHelp="重新限定非離散曲線。";
+
+MainFrmDistanceAnalysis.FrmRelimitation.SignedValue.Title="含符號值";
+MainFrmDistanceAnalysis.FrmRelimitation.SignedValue.ShortHelp="含符號值距離模式。";
+MainFrmDistanceAnalysis.FrmRelimitation.SignedValue.LongHelp="含符號值距離模式
+（適用時）。";
+
+
+
+
+
+
+
+
+
+// 3951 校正官方漢化 5) Discretization
+MainFrmDistanceAnalysis.FrmDiscretisation.Title="離散化";
+MainFrmDistanceAnalysis.FrmDiscretisation.DiscretSlider.ShortHelp="離散值";
+MainFrmDistanceAnalysis.FrmDiscretisation.DiscretSlider.LongHelp="修改
+離散值
+（不適用結構
+映射模式）";
+
+
+
+
+// 3951 校正官方漢化 6) Display Options 
+MainFrmDistanceAnalysis.FrmDisplayOptions.Title="顯示選項";
+
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons.QuickColorScaleChk.ShortHelp="有限顏色范圍";
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons.QuickColorScaleChk.LongHelp="以有限的顏色范圍
+顯示分析，以便進行快速診斷。";
+
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons.FullColorScaleChk.ShortHelp="完整顏色范圍";
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons.FullColorScaleChk.LongHelp="以完整顏色范圍顯示分析。";
+
+
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons.DisplayCombPointsChk.ShortHelp="顯示帶顏色的點。";
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons.DisplayCombPointsChk.LongHelp="顯示帶顏色的點。";
+
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons.TextureMappingModeChk.ShortHelp="結構映射模式。";
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons.TextureMappingModeChk.LongHelp="結構映射模式。";
+
+// 3951 校正官方漢化 7) Display Option part 2 
+
+
+
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons2.2DDiagramChk.ShortHelp="2D 圖表";
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons2.2DDiagramChk.LongHelp="顯示 2D 圖表
+（僅用于一維單一單元元素）。";
+
+
+
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons2.ColorScaleStatChk.ShortHelp="顯示統計信息";
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons2.ColorScaleStatChk.LongHelp="在色標范圍內顯示統計信息。";
+
+
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons2.DisplayMinChk.ShortHelp="最小值";
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons2.DisplayMinChk.LongHelp="顯示最小值的位置。";
+
+
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons2.DisplayMaxChk.ShortHelp="最大值";
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons2.DisplayMaxChk.LongHelp="顯示最大值的位置。";
+
+
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons2.RunningPointChk.ShortHelp="啟用可變點";
+MainFrmDistanceAnalysis.FrmDisplayOptions.FrmDispIcons2.RunningPointChk.LongHelp="啟用計算鼠標下的點
+和目標元素之間
+距離的計算。";
+
+
+
+// 3951 校正官方漢化 7) Comb options
+MainFrmDistanceAnalysis.FrmDisplayCombOptions.Title="梳選項 ";
+
+
+MainFrmDistanceAnalysis.FrmDisplayCombOptions.FrmCombScale.CombChk.ShortHelp="顯示梳。";
+MainFrmDistanceAnalysis.FrmDisplayCombOptions.FrmCombScale.CombChk.LongHelp="顯示梳。";
+
+
+
+
+MainFrmDistanceAnalysis.FrmDisplayCombOptions.FrmCombOptionsIcons.CombAutoScaleChk.Title="自動縮放";
+MainFrmDistanceAnalysis.FrmDisplayCombOptions.FrmCombOptionsIcons.CombAutoScaleChk.ShortHelp="與縮放無關的長度。";
+MainFrmDistanceAnalysis.FrmDisplayCombOptions.FrmCombOptionsIcons.CombAutoScaleChk.LongHelp="顯示長度與縮放無關的梳狀尖峰。";
+
+MainFrmDistanceAnalysis.FrmDisplayCombOptions.FrmCombOptionsIcons.InvertCombChk.Title="已反轉";
+MainFrmDistanceAnalysis.FrmDisplayCombOptions.FrmCombOptionsIcons.InvertCombChk.ShortHelp="反轉尖峰。";
+MainFrmDistanceAnalysis.FrmDisplayCombOptions.FrmCombOptionsIcons.InvertCombChk.LongHelp="反轉尖峰。";
+
+MainFrmDistanceAnalysis.FrmDisplayCombOptions.FrmCombOptionsIcons.CombEnvelopChk.Title="包絡";
+MainFrmDistanceAnalysis.FrmDisplayCombOptions.FrmCombOptionsIcons.CombEnvelopChk.ShortHelp="顯示包絡。";
+MainFrmDistanceAnalysis.FrmDisplayCombOptions.FrmCombOptionsIcons.CombEnvelopChk.LongHelp="顯示與梳狀尖峰的尖端接合的折線。";
+

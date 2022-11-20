@@ -1,0 +1,109 @@
+DialogBoxTitle="分割曲線";
+
+LabelElements.Title="元素： ";
+LabelElements.LongHelp="選擇一組曲面以為其創建分割曲線。
+可使用多選擇和上下文菜單。";
+LabelElements.ShortHelp="選擇曲面";
+
+TabPageOptions.Title="選項";
+
+LabelDraftAngle.Title="拔模角度： ";
+LabelDraftAngle.LongHelp="當曲面在某點處的切線平面與方向向量之間的角度等于拔模角度時，曲面的該點將落在分割曲線上。
+-90 度 <= 拔模角度 <= 90 度。";
+LabelDraftAngle.ShortHelp="方向和切線平面之間的角度";
+SliderDraftAngle.LongHelp="當曲面在某點處的切線平面與方向向量之間的角度等于拔模角度時，曲面的該點將落在分割曲線上。
+-90 度 <= 拔模角度 <= 90 度。";
+SliderDraftAngle.ShortHelp="方向和切線平面之間的角度";
+
+//Direction Frame
+
+FrameDirection.Title="方向";
+FrameDirection.LongHelp="可通過以下方式定義方向
+- 上下文菜單，
+- 軸按鈕 X、Y 和 Z
+- 編輯方向窗口。
+可反轉定義的方向。";
+
+CheckButtonSelection.LongHelp="開啟：
+通過選擇字段定義關聯的方向。
+為此，可選擇一個元素或從上下文菜單選擇一個特定選項以定義方向。
+選項 X、Y、Z、編輯和反轉不可用。
+關閉：
+使用選項 X、Y、Z 或編輯定義固定（靜態）方向（默認）。
+光源操作器將出現在圖形區域。";
+CheckButtonSelection.ShortHelp="關聯（開啟）或靜態（關閉）方向";
+
+InvisibleFrameSelection.LongHelp="僅當復選按鈕開啟時可用。
+定義關聯方向。
+可選擇一個元素或從上下文菜單選擇一個特定選項。
+選項 X、Y、Z、編輯和反轉不可用。";
+InvisibleFrameSelection.ShortHelp="通過上下文菜單選擇方向。";
+
+PushButtonDirectionX.Title="X";
+PushButtonDirectionX.LongHelp="方向為模型坐標系的 x 軸。";
+PushButtonDirectionX.ShortHelp="x 方向";
+PushButtonDirectionY.Title="Y";
+PushButtonDirectionY.LongHelp="方向為模型坐標系的 y 軸。";
+PushButtonDirectionY.ShortHelp="y 方向";
+PushButtonDirectionZ.Title="Z";
+PushButtonDirectionZ.LongHelp="方向為模型坐標系的 z 軸。";
+PushButtonDirectionZ.ShortHelp="z 方向";
+PushButtonEditDirection.Title="編輯";
+PushButtonEditDirection.LongHelp="在編輯方向對話框可通過方向向量部件定義方向。";
+PushButtonEditDirection.ShortHelp="打開編輯方向對話框。";
+PushButtonDirectionInvert.LongHelp="反轉分割曲線的方向。
+單擊應用以查看更改。";
+PushButtonDirectionInvert.ShortHelp="反轉方向";
+
+
+//Options Frame
+
+FrameOptions.Title="選項";
+FrameOptions.LongHelp="分割曲線的方向";
+CheckButtonBasicSurface.Title="基礎曲面";
+CheckButtonBasicSurface.LongHelp="用于包含面的選定元素。
+關閉：
+僅在面上創建分割曲線。
+開啟：
+將在面的基礎曲面上創建分割曲線。當創建的曲線比面長時，可使用此設置。";
+CheckButtonBasicSurface.ShortHelp="基礎曲面上的分割曲線";
+
+CheckButtonApproximation.Title="近似值";
+CheckButtonApproximation.LongHelp="允許開啟或關閉近似功能。
+關閉：
+近似選項卡不可用。結果為 2D 曲線。
+開啟：
+近似的所有選項均可用。
+將根據參數集，從曲面曲線或多邊形近似 3D 曲線。";
+CheckButtonApproximation.ShortHelp="近似開啟/關閉";
+
+CheckButtonDisplayNormals.Title="法線";
+CheckButtonDisplayNormals.LongHelp="將調整法線以為任何拔模角度創建連續分割曲線。";
+CheckButtonDisplayNormals.ShortHelp="顯示法線";
+
+
+
+
+
+
+
+//???????????????? Where is this label used??????????????????? 
+InvisibleFrameApproximation.LongHelp="允許開啟或關閉近似功能。
+關閉：
+近似選項卡不可用。結果為 2D 曲線。
+開啟：
+近似的所有選項均可用。
+將根據參數集，從曲面曲線或多邊形近似 3D 曲線。";
+FrameAlignment.Title="對齊";
+LabelDeviationMax.Title="最大： ";
+CheckButtonMultiResultOutput.Title="多結果輸出";
+FrameDeviation.LongHelp="FrameDeviation.LongHelp";
+CheckButtonDeviationMax.LongHelp="顯示實際結果與計算的數學結果之間的最大偏差。";
+CheckButtonDeviationMax.ShortHelp="CheckButtonDeviationMax.ShortHelp";
+DeviationMax.LongHelp="DeviationMax.LongHelp";
+DeviationMax.ShortHelp="DeviationMax.ShortHelp";
+CheckButtonDisplayDeviation.LongHelp="CheckButtonDisplayDeviation.LongHelp";
+CheckButtonDisplayDeviation.ShortHelp="CheckButtonDisplayDeviation.ShortHelp";
+CheckButtonDisplayDeviation.Title="顯示 ";
+FrameDeviation.Title="偏差";
+

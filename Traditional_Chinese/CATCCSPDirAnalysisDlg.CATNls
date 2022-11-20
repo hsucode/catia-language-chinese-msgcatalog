@@ -1,0 +1,220 @@
+// 3951 校正官方漢化-----------------------------------------------------
+// 3951 校正官方漢化 Resource file for CATCCSOrientationDlg class
+// 3951 校正官方漢化 En_US
+// 3951 校正官方漢化-----------------------------------------------------
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES PROVENCE 2003
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化   Resource file for NLS purpose. 
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Implementation Notes :
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 09/12/03 : jcb; creation
+// 3951 校正官方漢化=============================================================================
+
+Title="拔模方向分析 ";
+
+NoSelection="無選擇";
+
+FrmRoot.CATVidCtlButton.pSelectObjet.Title.Off="無選擇";
+FrmRoot.CATVidCtlButton.pSelectObjet.Title.On="選擇一個形...";
+FrmRoot.CATVidCtlButton.pSelectObjet.Tooltip="顯示要分析的形的名稱。";
+FrmRoot.CATVidCtlButton.pSelectObjet.TooltipAdd="\n 當前對象： ";
+FrmRoot.CATVidCtlButton.pSelectDir.Title.Off="Z 部件 ";
+FrmRoot.CATVidCtlButton.pSelectDir.Title.On="定義方向...";
+FrmRoot.CATVidCtlButton.pSelectDir.Tooltip="拔模方向
+使用坐標或指南針，或選擇 3D 區域內的軸或平面，以定義拔模方向。
+若選定一個平面，將會考慮它的法線方向。";
+
+FrmRoot.CATVidCtlButton.pSelectDir.TooltipAdd="\n 當前方向： ";
+FrmRoot.CATVidCtlButton.pOppositeDir.Tooltip="反轉
+反轉拔模方向";
+
+FrmRoot.CATVidCtlButton.pButtonFly.Tooltip="飛行分析
+當您在曲面上移動鼠標指針時，將會顯示面的法線。";
+
+
+FrmRoot.CATVidCtlButton.pLockDir.Tooltip="鎖定
+鎖定方向以避免意外修改。";
+
+FrmRoot.CATVidCtlButton.pButtonColor.Tooltip="間隔顏色
+通過顏色編輯器指定包含在此間隔內的面的顏色。";
+
+
+FrmRoot.CATVidCtlButton.pColorExpander.Title="參數";
+FrmRoot.CATVidCtlButton.pColorExpander.From="從 ";
+FrmRoot.CATVidCtlButton.pColorExpander.To=" 至 ";
+FrmRoot.CATVidCtlButton.pColorExpander.Desactivate=" 已取消激活 ";
+FrmRoot.CATVidCtlButton.pColorExpander.At="于";
+FrmRoot.CATVidCtlButton.pColorExpander.AtLast="于并直到 90?";
+FrmRoot.CATVidCtlButton.pColorExpander.Del="刪除顏色";
+FrmRoot.CATVidCtlButton.pColorExpander.Add="添加顏色";
+
+FrmRoot.CATVidCtlButton.pColorExpander.Smooth="光順顏色";
+FrmRoot.CATVidCtlButton.pColorExpander.Smooth.Tooltip="在所分析的形上將每個間隔顯示為漸進色。";
+
+FrmRoot.CATVidCtlButton.pColorShowButton.Off="更多 >>";
+FrmRoot.CATVidCtlButton.pColorShowButton.Off.Tooltip="展開對話框";
+FrmRoot.CATVidCtlButton.pColorShowButton.On="更少 <<";
+FrmRoot.CATVidCtlButton.pColorShowButton.On.Tooltip="減少對話框";
+
+ParmAreaName="模型投影區域";
+
+MenuItemLine="創建直線";
+MenuItemPlane="創建平面";
+MenuItemSystem="創建軸系";
+MenuItemEdit="編輯坐標";
+MenuItemXAxis="X 軸";
+MenuItemYAxis="Y 軸";
+MenuItemZAxis="Z 軸";
+MenuItemCompass="機器人方向";
+
+FrmRoot.FrmPullingDirection.Title="拔模方向";
+FrmRoot.FrmPullingDirection.FrmDirection.LbDirEmpty0.Title="  ";
+FrmRoot.FrmPullingDirection.FrmDirection.LbDirEmpty1.Title="  ";
+FrmRoot.FrmPullingDirection.FrmDirection.LbDirEmpty2.Title="  ";
+FrmRoot.FrmPullingDirection.FrmDirection.LbDirEmpty3.Title="  ";
+
+FrmRoot.FrmPullingDirection.FrmDirection.Title="方向";
+FrmRoot.FrmPullingDirection.FrmDirection.LabDirection.Title=" 方向： ";
+FrmRoot.FrmPullingDirection.FrmCoordinates.Title="坐標";
+FrmRoot.FrmPullingDirection.FrmCoordinates.DirXFrame.XDirLabel.Title=" DX = ";
+FrmRoot.FrmPullingDirection.FrmCoordinates.DirYFrame.YDirLabel.Title=" DY = ";
+FrmRoot.FrmPullingDirection.FrmCoordinates.DirZFrame.ZDirLabel.Title=" DZ = ";
+FrmRoot.FrmPullingDirection.FrmCoordinates.InverseFrame.LbDirEmpty4.Title="      ";
+
+FrmRoot.FrameModel.Title=" 模型  ";
+FrmRoot.FrameModel.LabelElement.Title=" 圖元： ";
+FrmRoot.FrameModel.LabelArea.Title=" 投影區域： ";
+
+FrmRoot.FrmEditDirection.Title="參考方向";
+FrmRoot.FrmEditDirection.LabelDirX.Title="         DX        ";
+FrmRoot.FrmEditDirection.LabelDirY.Title="         DY        ";
+FrmRoot.FrmEditDirection.LabelDirZ.Title="         DZ        ";
+FrmRoot.FrmEditDirection.DirOffset.Title="              ";
+FrmRoot.FrmEditDirection.FrameReset.PushButtonReset.Title="重置";
+
+FrmRoot.FrmEditAngle.Title="拔模斜度范圍";
+
+FrmRoot.FrmEditAngle.CheckButtonSimulate.Title="   相反方向   ";
+FrmRoot.FrmEditAngle.CheckButton1.Title="   0 至         ";
+FrmRoot.FrmEditAngle.CheckButton2.Title="   至       ";
+FrmRoot.FrmEditAngle.CheckButton3.Title="   至       ";
+FrmRoot.FrmEditAngle.CheckButton4.Title="   至       ";
+FrmRoot.FrmEditAngle.CheckButton5.Title="   至       ";
+FrmRoot.FrmEditAngle.CheckButton6.Title="   至 90";
+FrmRoot.FrmEditAngle.CheckButtonFly.Title="   飛行分析";
+
+FrmRoot.FrmEditAngle.LabelEspace.Title="         ";
+
+
+// 3951 校正官方漢化 Help
+// 3951 校正官方漢化 Draft Direction management 
+FrmRoot.FrmEditDirection.ShortHelp="方向";
+FrmRoot.FrmEditDirection.LongHelp="參照方向
+定義參照方向以分析一個曲面。";
+
+// 3951 校正官方漢化 Color ranges
+FrmRoot.FrmEditAngle.ShortHelp="拔模斜度范圍";
+FrmRoot.FrmEditAngle.LongHelp="拔模斜度范圍
+定義拔模斜度范圍和關聯顏色。";
+
+// 3951 校正官方漢化 On the fly
+FrmRoot.FrmEditAngle.CheckButtonFly.ShortHelp="飛行分析";
+FrmRoot.FrmEditAngle.CheckButtonFly.LongHelp="飛行分析
+在當前點顯示拔模方向。";
+
+// 3951 校正官方漢化 Radio buttons
+FrmRoot.FrmPullingDirection.FrmDirection.Radio3D.ShortHelp="3D 選擇";
+FrmRoot.FrmPullingDirection.FrmDirection.Radio3D.LongHelp="3D 選擇
+選擇一條直線或一個平面以定義拔模方向。";
+
+FrmRoot.FrmPullingDirection.FrmDirection.RadioX.ShortHelp="X 方向";
+FrmRoot.FrmPullingDirection.FrmDirection.RadioX.LongHelp="X 方向
+當前軸系的 X 軸定義了拔模方向。";
+
+FrmRoot.FrmPullingDirection.FrmDirection.RadioY.ShortHelp="Y 方向";
+FrmRoot.FrmPullingDirection.FrmDirection.RadioY.LongHelp="Y 方向
+當前軸系的 Y 軸定義了拔模方向。";
+
+FrmRoot.FrmPullingDirection.FrmDirection.RadioZ.ShortHelp="Z 方向";
+FrmRoot.FrmPullingDirection.FrmDirection.RadioZ.LongHelp="Z 方向
+當前軸系的 Z 軸定義了拔模方向。";
+
+FrmRoot.FrmPullingDirection.FrmDirection.RadioCompass.ShortHelp="機器人方向";
+FrmRoot.FrmPullingDirection.FrmDirection.RadioCompass.LongHelp="機器人方向
+機器人方向定義了拔模方向。";
+
+
+FrmRoot.FrmPullingDirection.FrmDirection.RadioFly.ShortHelp="飛行分析";
+FrmRoot.FrmPullingDirection.FrmDirection.RadioFly.RadioFly.LongHelp="飛行分析
+在當前點顯示拔模方向。";
+
+FrmRoot.FrmPullingDirection.FrmDirection.RadioLine.ShortHelp="直線";
+FrmRoot.FrmPullingDirection.FrmDirection.RadioLine.LongHelp="直線
+創建直線。";
+
+FrmRoot.FrmPullingDirection.FrmDirection.RadioPlane.ShortHelp="平面";
+FrmRoot.FrmPullingDirection.FrmDirection.RadioPlane.LongHelp="平面
+創建平面。";
+
+FrmRoot.FrmPullingDirection.FrmDirection.RadioEditComponents.ShortHelp="坐標";
+FrmRoot.FrmPullingDirection.FrmDirection.RadioEditComponents.LongHelp="坐標
+修改拔模方向的坐標。";
+
+// 3951 校正官方漢化 Coordinates
+FrmRoot.FrmPullingDirection.FrmCoordinates.ShortHelp="坐標";
+FrmRoot.FrmPullingDirection.FrmCoordinates.LongHelp="坐標
+顯示拔模方向的坐標。";
+
+FrmRoot.FrmPullingDirection.FrmCoordinates.InverseFrame.PushButtonInverse.ShortHelp="反轉方向";
+FrmRoot.FrmPullingDirection.FrmCoordinates.InverseFrame.PushButtonInverse.LongHelp="反轉方向
+反轉拔模方向。";
+
+// 3951 校正官方漢化 Model 
+FrmRoot.FrameModel.ShapeList.ShortHelp=" 形";
+FrmRoot.FrameModel.ShapeList.LongHelp="形
+選擇形進行分析。";
+FrmRoot.FrameModel.LabelElement.ShortHelp=" 形";
+FrmRoot.FrameModel.LabelElement.LongHelp="形
+選擇形進行分析。";
+
+FrmRoot.FrameModel.LabelArea.ShortHelp=" 投影區域 ";
+FrmRoot.FrameModel.LabelArea.LongHelp="投影區域 
+顯示投影區域的值。";
+FrmRoot.FrameModel.LabelArea.ShortHelp=" 投影區域 ";
+FrmRoot.FrameModel.LabelArea.LongHelp="投影區域 
+顯示投影區域的值。";
+
+// 3951 校正官方漢化 Ranges and color editors
+FrmRoot.FrmEditAngle.CheckButtonSimulate.ShortHelp="相反方向";
+FrmRoot.FrmEditAngle.CheckButtonSimulate.LongHelp="相反方向
+可視化相反方向上應未建模的區域。";
+
+FrmRoot.FrmEditAngle.ColorViewer0.ShortHelp="顏色編輯器";
+FrmRoot.FrmEditAngle.ColorViewer0.LongHelp="顏色編輯器
+雙擊相反方向的顏色以通過顏色編輯器進行更改。";
+
+FrmRoot.FrmEditAngle.ColorViewer1.ShortHelp="顏色編輯器";
+FrmRoot.FrmEditAngle.ColorViewer1.LongHelp="顏色編輯器
+雙擊顏色以通過顏色編輯器進行更改。";
+FrmRoot.FrmEditAngle.ColorViewer2.ShortHelp="顏色編輯器";
+FrmRoot.FrmEditAngle.ColorViewer2.LongHelp="顏色編輯器
+雙擊顏色以通過顏色編輯器進行更改。";
+FrmRoot.FrmEditAngle.ColorViewer3.ShortHelp="顏色編輯器";
+FrmRoot.FrmEditAngle.ColorViewer3.LongHelp="顏色編輯器
+雙擊顏色以通過顏色編輯器進行更改。";
+FrmRoot.FrmEditAngle.ColorViewer4.ShortHelp="顏色編輯器";
+FrmRoot.FrmEditAngle.ColorViewer4.LongHelp="顏色編輯器
+雙擊顏色以通過顏色編輯器進行更改。";
+FrmRoot.FrmEditAngle.ColorViewer5.ShortHelp="顏色編輯器";
+FrmRoot.FrmEditAngle.ColorViewer5.LongHelp="顏色編輯器
+雙擊顏色以通過顏色編輯器進行更改。";
+FrmRoot.FrmEditAngle.ColorViewer6.ShortHelp="顏色編輯器";
+FrmRoot.FrmEditAngle.ColorViewer6.LongHelp="顏色編輯器
+雙擊顏色以通過顏色編輯器進行更改。";
+

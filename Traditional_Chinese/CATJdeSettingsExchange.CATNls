@@ -1,0 +1,89 @@
+// 3951 校正官方漢化---------------------------------------------------------------------------
+// 3951 校正官方漢化  WebTop Settings exchange command resources
+// 3951 校正官方漢化---------------------------------------------------------------------------
+
+// 3951 校正官方漢化---------------------------------------------------------------------------
+// 3951 校正官方漢化  English Version
+// 3951 校正官方漢化---------------------------------------------------------------------------
+
+// 3951 校正官方漢化---------------------------------------------------------------------------
+// 3951 校正官方漢化  Usage Message
+// 3951 校正官方漢化---------------------------------------------------------------------------
+Usage = "用法：/P1 –db <dbURL> <dbUser> <dbPasswd> -t <dir> ",
+        "-cp <classpath> [-exportall|-importall] [-h|-help]\n",
+		"可以把 WebTop 設置換成 WinTop (.CATSettings) 格式的設置。\n",
+		"<dbURL>  :設置連接數據庫的 URL。根據數據庫的類型：\n",
+        "           - 對于 DB2：URL 具有以下形式：\n",
+        "                jdbc:db2:// 3951 校正官方漢化<dbhost>:<dbport>/<dbname>\n",
+        "           - 對于 ORACLE，URL 具有以下形式：\n",
+        "                jdbc:oracle:thin:@<dbhost>:<dbport>:<dbname>\n",
+        "            其中：\n",
+        "                <dbhost>:是數據庫主機名\n",
+        "                <dbport>:是數據庫端口\n",
+        "                <dbname>:是數據庫名\n",
+        "<dbUser>  :連接數據庫的用戶。\n",
+        "<dbPasswd>:數據庫連接密碼。\n",
+        "  -t <dir>:.CATSettings 格式 WebTop 設置的基準目錄。\n",
+        "            在 -exportall 的情況下，如果這個目錄已經存在，\n",
+        "            則該目錄必須為空（否則命令將不會執行并且\n",
+        "            打印出錯誤消息）。如果目錄不存在，\n",
+        "            將創建一個目錄。\n",
+        "  -cp <classpath> :可以在 CLASSPATH 中找到所需的 JDBC 驅動程序。\n",
+        "            - 對于 DB2，CLASSPATH 必須是下列形式：\n",
+        "                   <path>/db2jcc.jar\n",
+        "              （db2jcc_license_cu.jar 和 db2jcc_license_cisuz.jar 文件必須\n",
+        "              在 <path> 目錄中）\n",
+        "            - 對于 ORACLE，CLASSPATH 必須是下列形式：\n",
+        "                   <path>/ojdbc6.jar\n",
+        "  -exportall:將所有 WebTop 設置導出到由 -t <dir> 指定的目錄中\n",
+        "  -importall:將所有 .CATSettings 從由 -t <dir> 指定的目錄中導入到 WebTop\n",
+        "  -h|-help            ：顯示此幫助消息\n";	
+
+// 3951 校正官方漢化---------------------------------------------------------------------------
+// 3951 校正官方漢化  Error Messages on arguments
+// 3951 校正官方漢化---------------------------------------------------------------------------
+ArgMissingAfterT = "錯誤：“-t”參數后缺少目錄。";
+ArgMissingAfterCp = "錯誤：“-cp”參數后缺少類路徑。";
+ArgMissingDBURL = "錯誤：“-db”參數后缺少數據庫 URL 名稱。";
+ArgMissingDBUser = "錯誤：“-db <dbURL>”參數后缺少數據庫用戶名。";
+ArgMissingDBPasswd = "錯誤：“-db <dbURL> <dbUser>”參數后缺少數據庫密碼。";
+ArgUnknown = "錯誤：不可識別的參數：/P1 ";
+
+ArgMissingTargetDir = "錯誤：缺少“-t <dir>”參數。";
+ArgMissingClasspath = "錯誤：缺少“-cp <classpath>”參數。";
+ArgMissingDBArgs = "錯誤：缺少“-db <dbURL> <dbUser> <dbPasswd>”參數。";
+ArgMissingCommand = "錯誤：缺少“-exportall”或“-importall”參數。";
+
+// 3951 校正官方漢化---------------------------------------------------------------------------
+// 3951 校正官方漢化  Information Messages
+// 3951 校正官方漢化---------------------------------------------------------------------------
+ExportStarting = "信息：開始將 WebTop 設置導出到目錄 /P1，",
+	        	 " 其中帶有類路徑“/P2”和下列數據庫參數：/P3\n";
+ExportDone = "信息：導出 WebTop 設置完成\n";
+
+ImportStarting = "信息：開始從目錄 /P1 導入 WebTop 設置，",
+	        	 " 其中帶有類路徑“/P2”和下列數據庫參數：/P3\n";
+ImportDone = "信息：導入 WebTop 設置完成\n";
+		   
+// 3951 校正官方漢化---------------------------------------------------------------------------
+// 3951 校正官方漢化  Error/Info Messages on target directory
+// 3951 校正官方漢化---------------------------------------------------------------------------
+TargetDirNotADir = "錯誤：目錄 /P1 不是目錄";
+TargetDirNotEmpty = "錯誤：目標目錄 /P1 不為空";
+DirCantCreate = "錯誤：無法創建目錄 /P1";
+CreatedDir = "信息：創建目錄 /P1";
+
+		   
+// 3951 校正官方漢化---------------------------------------------------------------------------
+// 3951 校正官方漢化  Error/Info Messages on the Java sub-program
+// 3951 校正官方漢化---------------------------------------------------------------------------
+MissingJAVAHOME = "錯誤：未設置所需的環境變量 JAVA_HOME\n";
+MissingCATInstallPath = "錯誤：未設置所需的環境變量 CATInstallPath\n";
+MissingV5JarStarter = "錯誤：未在連接中找到文件 /P1\n";
+ExportXMLStart = "信息：開始將設置導出為 .CATSettings 格式。\n";
+ExportXMLSpawn = "信息：開始運行下列命令：\n";
+FailedExportXML = "錯誤：未能用下列命令將設置導出為 .CATSettings 格式：/P1\n";
+
+
+
+

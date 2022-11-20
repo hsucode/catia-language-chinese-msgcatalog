@@ -1,0 +1,150 @@
+// 3951 校正官方漢化 Exemple de message :
+// 3951 校正官方漢化
+// 3951 校正官方漢化 ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// 3951 校正官方漢化 ERR_2000.Diagnostic = "Un des parametres est negatif";
+// 3951 校正官方漢化 ERR_2000.Advice     = "Utilisez des parametres positifs";
+
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Erreurs de spec de maillage autour des trous
+// 3951 校正官方漢化
+
+MeshAroundHoleERR_0001.Request="無法在孔周圍執行網格化。";
+MeshAroundHoleERR_0001.Diagnostic="孔周圍的網格幾何支持面 \n 與約束邊線相交。";
+
+MeshAroundHoleERR_0002.Request="無法在孔周圍執行網格化。";
+MeshAroundHoleERR_0002.Diagnostic="孔周圍的網格不能包含：\n /P01。";
+
+MeshAroundHoleERR_0003.Request="無法網格化域規格。";
+MeshAroundHoleERR_0003.Diagnostic="網格域規格不能包含：\n /P01。";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Erreurs de spec de pattern
+// 3951 校正官方漢化
+
+MappedERR_0001.Request="無法網格化。";
+MappedERR_0001.Diagnostic="找不到 4 個角。";
+MappedERR_0001.Advice="放置頂點，以定義 4 個角。";
+
+MappedERR_0002.Request="無法網格化。";
+MappedERR_0002.Diagnostic="已忽略部分強加的點。";
+MappedERR_0002.Advice="修改網格大小。";
+
+MappedERR_0003.Request="無法網格化。";
+MappedERR_0003.Diagnostic="相反側上的節點數不同。";
+MappedERR_0003.Advice="修改網格規格參數。";
+
+PatBeadERR_0001.Request="無法網格化。";
+PatBeadERR_0001.Diagnostic="找不到凸圓的 2 個特性點。";
+PatBeadERR_0001.Advice="將頂點放置在凸圓端點處。";
+
+BoltERR_0001.Request="無法網格化。";
+BoltERR_0001.Diagnostic="找不到螺栓的正確節點數。";
+BoltERR_0001.Advice="創建合適的節點數。";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Erreurs de spec de projection
+// 3951 校正官方漢化
+
+ProjectERR_0001.Request="無法投影。";
+ProjectERR_0001.Diagnostic="邊界標識錯誤。";
+ProjectERR_0002.Request="無法投影。";
+ProjectERR_0002.Diagnostic="不支持關閉的拓撲。";
+ProjectERR_0003.Request="無法投影。";
+ProjectERR_0003.Diagnostic="邊界節點標識錯誤。";
+ProjectERR_0004.Request="無法投影。";
+ProjectERR_0004.Diagnostic="使用不同數量的節點網格化的邊界。";
+ProjectERR_0005.Request="無法投影。";
+ProjectERR_0005.Diagnostic="不同數量的邊界";
+ProjectERR_0006.Request="無法投影。";
+ProjectERR_0006.Diagnostic="找不到邊線";
+ProjectERR_0007.Request="無法投影。";
+ProjectERR_0007.Diagnostic="生成的網格無效。";
+
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Erreurs de propagation de distribution
+// 3951 校正官方漢化
+
+Mapping1dERR_0001.Request="拓展數據無效。";
+Mapping1dERR_0001.Advice="修改拓展數據。";
+
+Mapping1dERR_0002.Request="無法計算拓展。";
+Mapping1dERR_0002.Advice="修改拓展數據。";
+
+Mapping1dERR_0010.Request="拓展源無效。";
+Mapping1dERR_0010.Advice="修改拓展源。";
+
+Mapping1dERR_0011.Request="拓展支持面無效。";
+Mapping1dERR_0011.Advice="修改拓展支持面。";
+
+
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Erreurs de specs studio
+// 3951 校正官方漢化
+
+StudioSpecERR_0001.Request="網格規格無效。";
+StudioSpecERR_0001.Diagnostic="可能的原因：\n 1. - 參數無效\n 2. - 幾何支持面無效";
+StudioSpecERR_0001.Advice="修改參數或幾何支持面。";
+
+StudioSpecERR_0002.Request="無法網格化本地規格：\n /P01";
+
+SmartSurfERR_0001.Request="無法網格化。";
+SmartSurfERR_0001.Diagnostic="網格化方法的域無效。";
+
+// 3951 校正官方漢化 Erreurs internes studio
+
+StudioERR_0001.Request="在位置 (/P01 /P02 /P03 ) 處檢測到無效的網格配置。";
+StudioERR_0001.Diagnostic="不同的中間節點共用同一條邊線。";
+
+StudioERR_0002.Request="檢測到無效的網格配置。";
+StudioERR_0002.Diagnostic="缺少期望的中間節點。";
+
+StudioERR_0003.Request="在位置 (/P01 /P02 /P03 ) 處檢測到無效的網格配置。";
+StudioERR_0003.Diagnostic="節點同時用作主節點和中間節點。";
+
+StudioERR_0004.Request="在位置 (/P01 /P02 /P03 ) 處檢測到無效的網格配置。";
+StudioERR_0004.Diagnostic="沒有共享此節點上網格邊線的不同元素所使用的中間節點。";
+StudioERR_0004.Advice="可能的原因：\n 1. 此區域上的網格捕獲不正確\n 2. 已使用此配置導入網格";
+
+StudioERR_0005.Request="無法分配內存。";
+StudioERR_0005.Diagnostic="系統無法提供足夠的內存。";
+StudioERR_0005.Advice="可能的原因：\n 1. 檢查網格參數 \n 2. 打開的窗口太多";
+
+
+DomainMesherERR_0001.Request="網格大小應為正值。";
+
+DomainMesherERR_0002.Request="域無效。";
+DomainMesherERR_0002.Diagnostic="域對于此網格化方法無效。";
+DomainMesherERR_0002.Advice="修改域。";
+
+DomainMesherERR_0003.Request="無法網格化。";
+DomainMesherERR_0003.Diagnostic="不支持強加的節點。";
+DomainMesherERR_0003.Advice="移除強加的節點。";
+
+DomainMesherERR_0004.Request="域無效。";
+DomainMesherERR_0004.Diagnostic="頂點數 ( /P01 ) 比預期的角數 ( /P02 ) 少。";
+DomainMesherERR_0004.Advice="修改域。";
+
+DomainMesherERR_0005.Request="找不到邊界。";
+DomainMesherERR_0005.Diagnostic="找不到邊界：非多樣性域。";
+
+// 3951 校正官方漢化 Erreur ds la Capture
+
+CaptureERR_0001.Request="網格捕獲失敗。";
+CaptureERR_0001.Diagnostic="網格零件 /P01 不是最新的。";
+CaptureERR_0001.Advice="更新網格零件，或從捕獲網格零件過濾器中將其移除。";
+
+// 3951 校正官方漢化 SizeMap
+
+SizeMapERR_0001.Request="無法網格化，內存不足。";
+SizeMapERR_0001.Diagnostic="網格零件 /P01 的最小大小太小：/P02。";
+SizeMapERR_0001.Advice="增大最小大小。";
+
+
+BoundaryLayerERR_0001.Request="無法在曲線周圍執行網格化。";
+BoundaryLayerERR_0001.Diagnostic="僅允許使用方形顯性網格在曲線周圍執行網格化。";
+
+BoundaryLayerERR_0002.Request="無法在曲線周圍執行網格化。";
+BoundaryLayerERR_0002.Diagnostic="曲線周圍的網格不能包含：\n /P01。";

@@ -1,0 +1,88 @@
+// 3951 校正官方漢化 CATCoManufMaterialAdditionGlobalDlg.CATNls
+
+Title="材料添加向導";
+
+UpFrame.PlyGroupLabel.Title="鋪層組";
+UpFrame.MinimumLengthLabel.Title="最小長度";
+UpFrame.TowWidthLabel.Title="拖繩寬度";
+UpFrame.LateralStaggeringLabel.Title="橫向交錯";
+// 3951 校正官方漢化UpFrame.PlyGroupSelector.FraEdt.Lab.Title = "Ply group ";
+// 3951 校正官方漢化UpFrame.MinimumLengthParmFrame.EnglobingFrame.IntermediateFrame.Label.Title      ="Minimum length ";
+// 3951 校正官方漢化UpFrame.TowWidthParmFrame.EnglobingFrame.IntermediateFrame.Label.Title           ="Tow width ";
+// 3951 校正官方漢化UpFrame.LateralStaggeringParmFrame.EnglobingFrame.IntermediateFrame.Label.Title="Lateral staggering ";
+
+AnalysisFrame.Title="分析";
+
+AnalysisFrame.AnalysisCommonFrame.FilterOrientationLabel.Title=" 方向 ";
+AnalysisFrame.AnalysisCommonFrame.FilterOrientationCombo.Help="應用于鋪層方向的過濾器";
+AnalysisFrame.AnalysisCommonFrame.FilterOrientationCombo.ShortHelp="應用于鋪層方向的過濾器";
+AnalysisFrame.AnalysisCommonFrame.FilterOrientationCombo.LongHelp="應用于鋪層方向的過濾器";
+
+More="更多...";
+Less="更少...";
+
+AnalysisFrame.MoreAnalysisFrame.VertexSelectionCriteriaFrame.Title="過濾器：";
+AnalysisFrame.MoreAnalysisFrame.VertexSelectionCriteriaFrame.MaxAngleBetweenTangentsParmFrame.EnglobingFrame.IntermediateFrame.Label.Title="兩條切線間的最小角度 ";
+AnalysisFrame.MoreAnalysisFrame.VertexSelectionCriteriaFrame.MinAngleOrientationTgtParmFrame.EnglobingFrame.IntermediateFrame.Label.Title="切線和鋪層方向間所需的角度";
+
+AnalysisFrame.MoreAnalysisFrame.GroupingCriteriaFrame.Title="組標準";
+AnalysisFrame.MoreAnalysisFrame.GroupingCriteriaFrame.AbsoluteDistanceMaxParmFrame.EnglobingFrame.IntermediateFrame.Label.Title="距第一個頂點的最大距離 ";
+AnalysisFrame.MoreAnalysisFrame.GroupingCriteriaFrame.ShortDistanceMaxParmFrame.EnglobingFrame.IntermediateFrame.Label.Title="與最近頂點的最大距離 ";
+AnalysisFrame.MoreAnalysisFrame.GroupingCriteriaFrame.AngleBisMaxParmFrame.EnglobingFrame.IntermediateFrame.Label.Title="角平分線間的最大角度 ";
+AnalysisFrame.MoreAnalysisFrame.GroupingCriteriaFrame.DiffAngleTgtsMaxParmFrame.EnglobingFrame.IntermediateFrame.Label.Title="切線間的最大角度差 ";
+
+AnalysisFrame.MoreAnalysisFrame.ConsiderDefaultFrame.Title="默認情況下視為：";
+AnalysisFrame.MoreAnalysisFrame.ConsiderDefaultFrame.ConsiderDefaultAllRB.Title="所有頂點";
+
+AnalysisFrame.MoreAnalysisFrame.ConsiderDefaultFrame.ConsiderDefaultAllRB.Help="默認情況下考慮所有頂點";
+AnalysisFrame.MoreAnalysisFrame.ConsiderDefaultFrame.ConsiderDefaultAllRB.ShortHelp="默認情況下考慮所有頂點";
+AnalysisFrame.MoreAnalysisFrame.ConsiderDefaultFrame.ConsiderDefaultAllRB.LongHelp="默認情況下考慮所有頂點";
+
+AnalysisFrame.MoreAnalysisFrame.ConsiderDefaultFrame.ConsiderDefaultInnerVerticesOnlyRB.Help="生成階段僅考慮內部頂點";
+AnalysisFrame.MoreAnalysisFrame.ConsiderDefaultFrame.ConsiderDefaultInnerVerticesOnlyRB.ShortHelp="生成階段僅考慮內部頂點";
+AnalysisFrame.MoreAnalysisFrame.ConsiderDefaultFrame.ConsiderDefaultInnerVerticesOnlyRB.LongHelp="生成階段僅考慮內部頂點，而那些在整個鋪層邊界上的頂點將被忽略";
+
+AnalysisFrame.MoreAnalysisFrame.ConsiderDefaultFrame.ConsiderDefaultBoudaryVerticesOnlyRB.Help="生成階段僅考慮邊界頂點";
+AnalysisFrame.MoreAnalysisFrame.ConsiderDefaultFrame.ConsiderDefaultBoudaryVerticesOnlyRB.ShortHelp="生成階段僅考慮邊界頂點";
+AnalysisFrame.MoreAnalysisFrame.ConsiderDefaultFrame.ConsiderDefaultBoudaryVerticesOnlyRB.LongHelp="生成階段僅考慮整個鋪層邊界上的頂點，內部頂點將被忽略";
+
+ConsiderDefaultInnerVerticesOnlyRB.Title="僅內部頂點";
+ConsiderDefaultBoudaryVerticesOnlyRB.Title="僅邊界頂點";
+ConsiderDefaultInnerVerticesOnlyRB_withPlyName.Title="僅內部頂點（嚴格限于 /p1 中）";
+ConsiderDefaultBoudaryVerticesOnlyRB_withPlyName.Title="僅邊界頂點（嚴格限于 /p1 中）";
+
+AnalysisFrame.AnalysePB.Title="分析";
+AnalysisFrame.AnalysePB.Help="分析新制造材料添加組的候選";
+AnalysisFrame.AnalysePB.ShortHelp="分析新制造材料添加組的候選";
+GenerationFrame.AnalysePB.LongHelp="分析新制造材料添加組的候選";
+
+AnalysisFrame.RelaunchRegroupingOnlyPB.Title="僅重新啟動重新分組";
+AnalysisFrame.RelaunchRegroupingOnlyPB.Help="重新啟動頂點的重新分組";
+AnalysisFrame.RelaunchRegroupingOnlyPB.ShortHelp="重新啟動頂點的重新分組";
+AnalysisFrame.RelaunchRegroupingOnlyPB.LongHelp="重新啟動頂點的重新分組";
+
+GenerationFrame.Title="生成";
+
+GenerationFrame.ShapeTypeFrame.Title="默認普通形狀";
+
+GenerationFrame.ShapeTypeFrame.UsualShapeRB1.IconName="I_MaterialAdditionShape1";
+GenerationFrame.ShapeTypeFrame.UsualShapeRB1.Help="外形角度 = 90 度 對所有頂點的中間定位（矩形）";
+GenerationFrame.ShapeTypeFrame.UsualShapeRB1.ShortHelp="添加矩形形狀到鋪層";
+GenerationFrame.ShapeTypeFrame.UsualShapeRB1.LongHelp="外形角度 = 90 度 對所有頂點的中間定位（矩形）";
+
+GenerationFrame.ShapeTypeFrame.UsualShapeRB2.IconName="I_MaterialAdditionShape2";
+GenerationFrame.ShapeTypeFrame.UsualShapeRB2.Help="外形角度 = 90 度 對所有頂點的第一次定位（三角形）";
+GenerationFrame.ShapeTypeFrame.UsualShapeRB2.ShortHelp="添加三角形形狀到鋪層";
+GenerationFrame.ShapeTypeFrame.UsualShapeRB2.LongHelp="外形角度 = 90 度 對所有頂點的第一次定位（三角形）";
+
+GenerationFrame.ShapeTypeFrame.UsualShapeRB3.IconName="I_MaterialAdditionShape3";
+GenerationFrame.ShapeTypeFrame.UsualShapeRB3.Help="調整外形角度以獲得常規邊線，對所有頂點進行第一次定位（三角形）";
+GenerationFrame.ShapeTypeFrame.UsualShapeRB3.ShortHelp="以輪廓的常規邊線返回值添加三角形形狀到鋪層";
+GenerationFrame.ShapeTypeFrame.UsualShapeRB3.LongHelp="調整外形角度以獲得常規邊線，對所有頂點進行第一次定位（三角形）";
+
+GenerationFrame.GeneratePB.Title="生成";
+GenerationFrame.GeneratePB.Help="基于分析生成制造材料添加組";
+GenerationFrame.GeneratePB.ShortHelp="基于分析生成制造材料添加組";
+GenerationFrame.GeneratePB.LongHelp="基于分析生成制造材料添加組";
+
+RecallConsideredDefaultLabel=" （當前默認考慮：/p1）";

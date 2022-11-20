@@ -1,0 +1,70 @@
+DialogBoxTitle = "曲面偏置";
+TabOptions.Title = "選項";
+
+// 3951 校正官方漢化 Type
+LabelType.Title     =  "類型:";
+ComboType.LongHelp  =
+"常量: 用常數定義偏置距離
+變量: 定義輸入曲面四個頂點的偏置距離
+      不允許多個選擇.   
+通過點: 偏置距離由通過點定義.";
+ComboType.ShortHelp = "偏置類型";
+Offset.Constant     = "常量";
+Offset.Variable     = "變量";
+Offset.ThroughPoint = "通過點";
+LabelType.LongHelp  =
+"常量: 用常數定義偏置距離
+變量: 定義輸入曲面四個頂點的偏置距離
+      不允許多個選擇.   
+通過點: 偏置距離由通過點定義.";
+LabelType.ShortHelp = "偏置類型";
+// 3951 校正官方漢化 Element
+LabelElement.Title     = "圖元: ";
+LabelElement.LongHelp  =
+"選擇要偏置的曲面.
+右鍵菜單可用.
+可以使用選擇窗口進行多選.";
+LabelElement.ShortHelp = "要進行偏置的曲面";
+// 3951 校正官方漢化 Point
+LabelPoint.Title     = "點: ";
+LabelPoint.LongHelp  =
+"可以通過一個點來定義偏置距離.
+偏置距離為點到曲面的距離";
+LabelPoint.ShortHelp = "偏置曲面通過的點";
+// 3951 校正官方漢化 Frame Distance
+FrameDistance.Title           = "距離";
+FrameDistance.LongHelp        =
+"只有偏置類型為常量的時候有效";
+
+PushButtonInvert.Title        = "反向";
+PushButtonInvert.LongHelp     =
+"反轉偏置曲面方向";
+PushButtonInvert.ShortHelp    = "反向";
+
+// 3951 校正官方漢化 Frame Parameter
+FrameParameter.Title                  = "參數";
+FrameParameter.LongHelp               =
+"類型為常量或通過點:
+  每一個曲面用法向來表示
+  偏置方向.
+類型為變量:
+  選擇曲面有四個法向.
+  每一個頂點有一個偏置方向.";
+CheckButtonDisplayNormals.Title     = "法向";
+CheckButtonDisplayNormals.LongHelp  =
+"類型為常量或通過點:
+  每一個曲面用法向來表示
+  偏置方向.
+類型為變量:
+  選擇曲面有四個法向.
+  每一個頂點有一個偏置方向.";
+
+CheckButtonDisplayNormals.ShortHelp = "顯示法向";
+CheckButtonScaling.Title            = "比例: ";
+CheckButtonScaling.LongHelp         =
+"用恰當的比例顯示法向.
+這個對偏置距離較小的情況下相當有用.";
+
+CheckButtonScaling.ShortHelp        = "比例方向: ";
+SpinnerScaling.LongHelp             = "法向比例";
+SpinnerScaling.ShortHelp            = "比例方向 ";

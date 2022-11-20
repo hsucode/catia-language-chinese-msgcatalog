@@ -1,0 +1,119 @@
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化 CCE core NLS-File Number range x23000..x23999
+// 3951 校正官方漢化
+// 3951 校正官方漢化 $Revision: 1.9 $
+// 3951 校正官方漢化 $Date: 2010/08/05 10:01:36MESZ $
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Syntax:
+// 3951 校正官方漢化   <ModuleId>_<MsgId>.<Key> = "Text";
+// 3951 校正官方漢化   where 
+// 3951 校正官方漢化     ModuleId: Text   - for classification (internally not used yet)
+// 3951 校正官方漢化     MsgId   : Number - Messagenumber (first digit is severity)
+// 3951 校正官方漢化     Key     : Text   - "iSev" -> Severity
+// 3951 校正官方漢化                        "sMsg" -> Short Message Text (not used yet)
+// 3951 校正官方漢化                        "lMsg" -> Long Message Text
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Limitations:
+// 3951 校正官方漢化    # max. nb. of parameters supported: /P1 .. /P25
+// 3951 校正官方漢化    # max. nb. of lMsg-lines: 10
+// 3951 校正官方漢化    # Key iSev has to be before lMsg 
+// 3951 校正官方漢化
+// 3951 校正官方漢化 =====================================================================
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Information messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化CCE_IM123000.iSev = "1";
+// 3951 校正官方漢化CCE_IM123000.sMsg = "Info";
+// 3951 校正官方漢化CCE_IM123000.lMsg = "Application Information - Param: /P1";
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Warning messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化CCE_WM323000.iSev = "3";
+// 3951 校正官方漢化CCE_WM323000.sMsg = "Warn";
+// 3951 校正官方漢化CCE_WM323000.lMsg = "Application Warning - Param: /P1";
+
+CCE_WM323001.iSev="3";
+CCE_WM323001.sMsg="Warn";
+CCE_WM323001.lMsg="/P2 文件中存在多個 '/P1' 元素 。第一個元素處于活動狀態。";
+
+CCE_WM323002.iSev="3";
+CCE_WM323002.sMsg="Warn";
+CCE_WM323002.lMsg="缺少 '/P2' 元素的 '/P1' 屬性。";
+
+CCE_WM323003.iSev="3";
+CCE_WM323003.sMsg="警告";
+CCE_WM323003.lMsg="缺少 '/P2' 元素（id = /P3）的 '/P1' 屬性。";
+
+// 3951 校正官方漢化 Warning: 
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Error messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化CCE_EM423000.iSev = "4";
+// 3951 校正官方漢化CCE_EM423000.sMsg = "Err";
+// 3951 校正官方漢化CCE_EM423000.lMsg = "Application Error - Param1: /P1";
+
+CCE_EM423001.iSev="4";
+CCE_EM423001.sMsg="Err";
+CCE_EM423001.lMsg="找不到 /P1 文件：'/P2'。";
+
+CCE_EM423002.iSev="4";
+CCE_EM423002.sMsg="Err";
+CCE_EM423002.lMsg="無法讀取 /P1 文件：'/P2'。";
+
+CCE_EM423003.iSev="4";
+CCE_EM423003.sMsg="Err";
+CCE_EM423003.lMsg="在 /P2 文件中找不到任何 '/P1' 元素。";
+
+CCE_EM423004.iSev="4";
+CCE_EM423004.sMsg="Err";
+CCE_EM423004.lMsg="在 /P2 文件中找不到 '/P1' 元素。";
+
+CCE_EM423005.iSev="4";
+CCE_EM423005.sMsg="Err";
+CCE_EM423005.lMsg="/P1 文件已損壞。無法訪問 '/P2' 節點，或節點不是元素節點。";
+
+CCE_EM423006.iSev="4";
+CCE_EM423006.sMsg="Err";
+CCE_EM423006.lMsg="無法通過讀取 /P3 文件找到 '/P2' 元素的 '/P1' 屬性。";
+
+CCE_EM423007.iSev="4";
+CCE_EM423007.sMsg="Err";
+CCE_EM423007.lMsg="在機床描述文件中，找不到 id = /P2 的單元的任何 '/P1' 元素。";
+
+CCE_EM423008.iSev="4";
+CCE_EM423008.sMsg="Err";
+CCE_EM423008.lMsg="在機床描述文件中，找不到 id = /P2 的設備的任何 '/P1' 元素。";
+
+CCE_EM423009.iSev="4";
+CCE_EM423009.sMsg="Err";
+CCE_EM423009.lMsg="檢測到無限遞歸。將不調用當前宏。調用堆棧：\n/P1";
+
+CCE_EM423010.iSev="4";
+CCE_EM423010.sMsg="Err";
+CCE_EM423010.lMsg="找不到 id = /P1 的設備。";
+
+CCE_EM423011.iSev="4";
+CCE_EM423011.sMsg="Err";
+CCE_EM423011.lMsg="找不到 id = /P1 的鏈式項目。";
+
+CCE_EM423012.iSev="4";
+CCE_EM423012.sMsg="Err";
+CCE_EM423012.lMsg="不支持版本低于 V2.0 的機床描述。";
+
+
+
+
+// 3951 校正官方漢化CCE_EM523000.iSev = "5";
+// 3951 校正官方漢化CCE_EM523000.sMsg = "Err";
+// 3951 校正官方漢化CCE_EM523000.lMsg = "Application Error - Param1: /P1";
+
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化 End of CCE utility NLS-File
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化

@@ -1,0 +1,108 @@
+WritingOperationFailure="寫入操作失敗。\n",
+"診斷：/p1";
+
+ReadingOperationFailure="讀取操作失敗。\n",
+"診斷：/p1";
+
+ConnectionFailure="與 Applicom 設備的連接失敗。\n",
+"診斷：/p1";
+
+ApplicomStatus1="錯誤 '/P1'：未知函數。不支持請求的函數。\n請檢查是否為工業以太網通信正確配置 Applicom 設備。\n";
+
+ApplicomStatus2="錯誤 '/P1'：您的某個端口地址不正確。標記地址超出分隔符范圍。\n",
+"請先重新定義地址，然后再進行模擬。";
+
+ApplicomStatus3="錯誤 '/P1'：\n幀內容不一致：",
+"\n返回的字節數不等于等待數量。\n請與您的支持團隊聯系。";
+
+ApplicomStatus4="錯誤 '/P1'：數據不可訪問。\n",
+"物理地址不存在“QVZ 錯誤”（例如：PLC 中不存在輸入或輸出卡）。";
+
+ApplicomStatus32="錯誤 '/P1'：傳遞到函數的參數錯誤。\n",
+"請與您的支持團隊聯系。";
+
+ApplicomStatus33="錯誤 '/P1'：超時故障。\n",
+"\t- 設備已配置，但未通過網絡連接。布線問題、CPU 不運行通信塊、未在 CPU 中聲明連接或聲明錯誤。",
+"\n\t- 設備或網關的 IP 地址錯誤。";
+
+ApplicomStatus35="錯誤 '/P1'：數據不可用于循環讀取。\n",
+"嘗試先使用循環模式傳輸數據，然后再讀取設備中的數據。\n請與支持團隊聯系。";
+
+ApplicomStatus36="錯誤 '/P1'：未配置設備。\n",
+"使用控制臺（MS-Windows 控制臺）定義設備配置，并重新初始化 Applicom 產品。";
+
+ApplicomStatus40="錯誤 '/P1'：達到可同時使用延緩模式的任務的最大數量時，任務會延緩讀取或寫入嘗試。\n";
+
+ApplicomStatus41="錯誤 '/P1'：延遲的請求注冊已滿。";
+
+ApplicomStatus42="錯誤 '/P1'：延遲的請求注冊為空。\n";
+
+ApplicomStatus45="錯誤 '/P1'：通信程序未駐留。\n",
+"請先初始化 Applicom 接口，然后再使用它。\n如果您在 windows 環境下工作，則可使用命令 'pcinit'。";
+
+ApplicomStatus46="錯誤 '/P1'：未配置板號，或者 Applicom 主/客戶端功能瞄準了已配置為從屬/服務器的通道，反之亦然。\n";
+
+ApplicomStatus47="錯誤 '/P1'：無 Applicom 接口。\n";
+
+ApplicomStatus49="錯誤 '/P1'：隊列超時故障。\n",
+"由于缺少資源（無可用通信通道），無法發送請求。\n",
+"此時間對應于正在處理的請求超時值的 4 倍。\n",
+"增加“正在處理的請求的超時”的值。\n",
+"增加在目標設備上同時進行的最大請求數。";
+
+ApplicomStatus51="錯誤 '/P1'：驅動程序發生系統問題。\n";
+
+ApplicomStatus53="錯誤 '/P1'：出現通信故障后，正在創建事務。\n",
+"Logix5000 控制器的標記列表不再相同。請重新加載控制器。\n";
+
+ApplicomStatus55="錯誤 '/P1'：超時超出“正在處理的請求的超時”的值，已建立連接，問題已確認，但無響應。";
+
+ApplicomStatus56="錯誤 '/P1'：設備發出否定應答。\n",
+"目標（或中間）設備已收到消息，但由于資源不足，無法處理。\n";
+
+ApplicomStatus59="錯誤 '/P1'：Applicom 接口上缺少保護鍵。\n";
+
+ApplicomStatus65="錯誤 '/P1'：連接被拒絕。\n",
+"無法建立 EPIC 會話。\n";
+
+ApplicomStatus66="錯誤 '/P1'：Applicom 接口內存不足。\n";
+
+ApplicomStatus70="錯誤 '/P1'：出現連接問題后，連接已中止。\n",
+"由于通信問題，通信已中止。\n",
+"布線問題、CPU 停止、CPU 不運行通信 FB、未在 CPU 中聲明連接或聲明錯誤、設備或網關 IP 地址錯誤、遠程站已關閉。";
+
+ApplicomStatus79="錯誤 '/P1'：輪廓不兼容。設備不是 Logix5000 控制器。\n";
+
+ApplicomStatus93="錯誤 '/P1'：無法檢測 Applicom 卡。\n",
+"請檢查是否在機床上正確設置設備。";
+
+ApplicomStatusDefault="錯誤 '/P1'：未知錯誤。\n",
+"請與您的支持團隊聯系。";
+
+AUTDcnAppEthIPRteUnsupportedType="具有關聯地址 '/p1apos 的端口具有不支持的類型。",
+"\n請先重新定義此類型，然后再進行模擬。\n";
+
+AUTDcnAppEthIPRteError="錯誤：\n\n/p1\n";
+
+AUTDcnAppEthIPRteWrArrayLimit="由于 '/P1' 上存在越行陣列，寫入操作失敗。";
+
+AUTDcnAppEthIPRteRdArrayLimit="由于 '/P1' 上存在越行陣列，讀取操作失敗。";
+
+AUTDcnAppEthIPRteWrBitPos="由于分解地址 '/P1' 時出錯，寫入操作失敗。";
+
+AUTDcnAppEthIPRteUnsupportedTag="具有關聯地址 '/P1' 的端口具有不支持的標記地址。",
+"\n請先重新定義此標記，然后再進行模擬。\n";
+
+AUTDcnAppEthIPRteInternalError="內部錯誤：\n\n/P1\n請與您的支持團隊聯系。\n";
+
+AUTDcnAppEthIPRteMemBlkErr="內部錯誤：在內部內存塊和地址 '/P1' 之間未找到對應鏈接。";
+
+AUTDcnAppEthIPRteRdBitPos="由于分解地址 '/P1' 時出錯，讀取操作失敗。";
+
+AUTDcnAppEthIPRteErrorType32bits="名為 '/P1' 的端口具有不兼容的類型。它必須與 32 位類型關聯。\n請先重新定義它，然后再進行模擬；";
+
+AUTDcnAppEthIPRteErrorType8bits="名為 '/P1' 的端口具有不兼容的類型。它必須與 8 位類型關聯。\n請先重新定義它，然后再進行模擬；";
+
+AUTDcnAppEthIPRteErrorType16bits="名為 '/P1' 的端口具有不兼容的類型。它必須與 16 位類型關聯。\n請先重新定義它，然后再進行模擬；";
+
+AUTDcnAppEthIPRteErrorTypeBool="名為 '/P1' 的端口具有不兼容的類型。它必須與布爾型關聯。\n請先重新定義它，然后再進行模擬；";

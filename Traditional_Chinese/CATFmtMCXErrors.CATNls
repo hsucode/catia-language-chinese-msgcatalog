@@ -1,0 +1,37 @@
+ERR_Title="錯誤";
+WNG_Title="警告";
+INF_Title="信息";
+
+ERR_001.Request="/p1 更新失敗";
+ERR_001.Diagnostic="/p1";
+ERR_001.Advice="";
+
+ERR_002.Request="已移除 /p1 連接網格零件。";
+ERR_002.Diagnostic="之前已刪除對應的連接屬性。";
+ERR_002.Advice="";
+
+ERR_003.Request="無法更新連接屬性。";
+ERR_003.Diagnostic="至少已刪除一個幾何支持面。";
+ERR_003.Advice="";
+
+ERR_PropertyConnection2.Request="消息來自：/P01";
+ERR_PropertyConnection2.Diagnostic="無法在線或點上執行法線連接計算。";
+ERR_PropertyConnection2.Advice="檢查 MCX 的物理鏈接。";
+
+ERR_PropertyConnection4.Request="消息來自：/P01";
+ERR_PropertyConnection4.Diagnostic="不允許使用螺栓。";
+ERR_PropertyConnection4.Advice="連接的幾何圖形都沒有旋轉軸。";
+
+ERR_PropertyConnection6.Request="消息來自：/P01";
+ERR_PropertyConnection6.Diagnostic="關聯的網格必須至少有一個面作為幾何支持面。";
+ERR_PropertyConnection6.Advice="至少在連接的一側選擇面。";
+
+ERR_VirtualPart01.Request="消息來自：/P01";
+ERR_VirtualPart01.Diagnostic="多個網格零件上的虛擬零件未授權。";
+ERR_VirtualPart01.Advice="確保虛擬零件支持面僅獲得一個網格零件。";
+
+ERR_UnitPLMUpdate_PropertyCheck.Request="/P01 類型與其父級工程連接不一致";
+
+ERR_UnitPLMUpdate_MaterialCheck.Request="消息來自：/P01";
+ERR_UnitPLMUpdate_MaterialCheck.Diagnostic="尚未定義材料。";
+ERR_UnitPLMUpdate_MaterialCheck.Advice="在屬性上應用材料。";

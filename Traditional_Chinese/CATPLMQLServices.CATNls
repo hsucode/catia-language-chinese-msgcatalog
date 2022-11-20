@@ -1,0 +1,77 @@
+INVALID_SELECT_DEFAULT_PLMTYPE="語義錯誤：選擇條件屬性 '%s' 的 PLMType 不明確";
+INVALID_SELECT_DEFAULT_PLMTYPE_ERR_ADV="驗證 SELECT 屬性的 PLMType 別名";
+
+INVALID_SELECT_MISSING_PLMTYPE="語義錯誤：用于 SELECT 條件屬性的 PLMType 別名 '%s' 不明確，FROM 條件中缺少 PLMType 別名";
+INVALID_SELECT_MISSING_PLMTYPE_ERR_ADV="在 FROM 條件中添加上述 PLMType";
+
+INVALID_WHERE_MISSING_PLMTYPE="語義錯誤：用于 WHERE 條件屬性的 PLMType 別名 '%s' 不明確，FROM 條件中缺少 PLMType 別名";
+INVALID_WHERE_MISSING_PLMTYPE_ERR_ADV="在 FROM 條件中添加上述 PLMType";
+
+INVALID_FROM_PLMTYPE="語義錯誤：在 FROM 條件中，用于 PLMType '%s' 的包/類標識符無效";
+INVALID_FROM_PLMTYPE_ERR_ADV="驗證用于上述 PLMType 的包/類是否具有正確值";
+
+NVALID_FROM_PLMTYPEID="語義錯誤：在 FROM 條件中，用于 PLMType 的 '%s' 標識符無效 ";
+INVALID_FROM_PLMTYPEID_ERR_ADV="驗證用于上述 PLMType 的包/類是否具有正確值";
+
+INVALID_FROM_MULTIPLMTYPE="語義錯誤：在 From 條件中，多次使用 PLMType 別名 '%s'";
+INVALID_FROM_MULTIPLMTYPE="驗證 FROM 條件的 PLMType 別名";
+
+INVALID_SELECT_ATTRIBUTE="語義錯誤：在 SELECT 條件中，與 PLMType 別名 '%s' 一起使用的屬性 '%s' 無效";
+INVALID_SELECT_ATTRIBUTE_ERR_ADV="驗證受給定 PLMType 支持的屬性是否有效";
+
+INVALID_WHERE_ATTRIBUTE="語義錯誤：在條件中，與 PLMType 別名 '%s' 一起使用的屬性 '%s' 無效";
+INVALID_WHERE_ATTRIBUTE_ERR_ADV="驗證受給定 PLMType 支持的屬性是否有效";
+
+INVALID_CREATE_RELATION="語義錯誤：在 CREATE 語句中，使用的關系 '%s' 無效";
+INVALID_CREATE_RELATION_ERR_ADV="驗證關系是否受給定 PLMType 支持";
+
+INVALID_CREATE_ATTRIBUTE="語義錯誤：在 CREATE 語句中，與 PLMType 一起使用的屬性 '%s' 無效";
+INVALID_CREATE_ATTRIBUTE_ERR_ADV="驗證受給定 PLMType 支持的屬性是否有效";
+
+INVALID_CREATE_PLMTYPE="語義錯誤：在 CREATE 語句中，用于 PLMType '%s' 的包/類標識符無效 ";
+INVALID_CREATE_PLMTYPE_ERR_ADV="驗證用于上述 PLMType 的包/類是否具有正確值";
+
+UNMATCHED_ATTR_AND_ATTRVALUES=" 屬性列表大小和屬性的值列表大小不匹配";
+UNMATCHED_ATTR_AND_ATTRVALUES_ERR_ADV="驗證屬性列表大小和屬性的值列表大小";
+
+ERROR_PLMQL_INTERFACE="PLMQLError：無法查詢界面 CATIPLMQLbnfStatement";
+ERROR_PLMQL_INTERFACE_ERR_ADV="";
+
+ERROR_PLMQL_INVALID_STATEMENT="PLMQLError：PLMQL 語句無效，句法/語法中存在錯誤";
+ERROR_PLMQL_INTERFACE_ERR_ADV="驗證語句的句法和語法";
+
+ERROR_PLMQL_MULTIPLE_STATEMENTS="PLMQLError：混合了 CRUD、NV、CLONE、QUEOP 和 MATURITY";
+ERROR_PLMQL_MULTIPLE_STATEMENTS_ERR_ADV="確保多語句中不含多運算。";
+
+INVALID_EXT_ATTRIBUTE="語義錯誤：在 SELECT 條件中，與 PLMType 別名 '%s' 一起使用的擴展名屬性 '%s' 無效";
+INVALID_EXT_ATTRIBUTE_ERR_ADV="驗證受給定擴展名 PLMType 支持的屬性是否有效";
+
+INVALID_EXT_PLMTYPE="語義錯誤：在 SELECT 條件中，用于 EXT PLMType '%s' 的 [Custo]/Modeler/CoreType 標識符無效";
+INVALID_EXT_PLMTYPE_ERR_ADV="驗證用于上述擴展名 PLMType 的 [Custo]/Modeler/CoreType 是否具有正確值";
+
+INVALID_PLMTYPE_USED="在元數據中找不到 PLMTYPE";
+INVALID_PLMTYPE_USED_ERR_REQ="在元數據中找不到 PLMTYPE";
+
+INVALID_PLMID_USED="用于連接的提供程序的 PLMID/資源庫名稱無效";
+INVALID_PLMID_USED_ERR_REQ="用于連接的提供程序的 PLMID/資源庫名稱無效";
+
+
+INVALID_SELECT_LIST_ERR_REQ="";
+INVALID_SELECT_LIST_ERR_DIAG="";
+INVALID_SELECT_LIST_ERR_ADV="";
+INVALID_SELECT_LIST_BQ="BuildQuery 中的 SELECT 屬性列表無效";
+
+Err_PLMQL_STMT="輸入語句中存在錯誤，某些參數錯誤";
+Err_PLMQL_STMT_ERR_REQ="輸入語句中存在錯誤";
+Err_PLMQL_STMT_ERR_DIAG="輸入語句中存在錯誤";
+Err_PLMQL_STMT_ERR_ADV="請參閱語言參考";
+
+INVALID_SELECT_LIST_SIZE_ZERO="列表大小為零的 SELECT 屬性列表無效";
+
+APPLY_EVENT_ADAPTER_ERROR="輸入標識符不表示屬于與交易關聯的 PDM 的某個對象。";
+APPLY_EVENT_ADAPTER_ERROR_ERR_REQ="輸入標識符不表示屬于與交易關聯的 PDM 的某個對象。";
+APPLY_EVENT_ADAPTER_ERROR_ERR_ADV="請檢查輸入語句中的 PLMID。";
+
+COMMIT_STREAMS_ERROR="提交要存儲的流時出現一些問題。";
+COMMIT_STREAMS_ERROR_ERR_REQ="無法將流從源傳輸到目標";
+COMMIT_STREAMS_ERROR_ERR_ADV="請檢查流的適當設置或句法";

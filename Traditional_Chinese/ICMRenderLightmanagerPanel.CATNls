@@ -1,0 +1,180 @@
+DialogBoxTitle="光源管理器";
+
+FrameLights.Title="光源";
+FrameLights.LongHelp="此處列出了所有光源及其名稱和選項。
+可將一個光源設為激活光源 - 藍色背景。
+可通過單擊適當的按鈕來更改光源選項。單擊名稱以更改名稱。";
+MultiList.ColumnTitle1="名稱";
+MultiList.ColumnTitle2="開啟/關閉";
+MultiList.ColumnTitle3="類型";
+MultiList.ColumnTitle4="已附加";
+
+FrameType.Title="類型";
+FrameType.LongHelp="有三種光源類型。
+其中一種光源類型為激活光源。  
+此處及圖形窗口顯示的光源符號取決于其類型。
+可更改激活光源的類型。
+新創建的光源將采用激活光源類型。";
+RadioButtonSpotLight.LongHelp="激活的光源類型為聚光。
+激活光源類型更改為聚光。
+新創建的光源類型為聚光";
+RadioButtonSpotLight.ShortHelp="激活的光源類型 - 聚光";
+RadioButtonPointLight.LongHelp="激活的光源類型為點。
+激活光源類型更改為點。
+新創建的光源類型為點。";
+RadioButtonPointLight.ShortHelp="激活的光源類型 - 點";
+RadioButtonDirectionLight.LongHelp="激活的光源類型為方向。
+激活光源類型更改為方向。
+新創建的光源類型為方向。";
+RadioButtonDirectionLight.ShortHelp="激活的光源類型 - 方向";
+
+FrameLightOptions.Title="光源選項";
+FrameLightOptions.LongHelp="可更改激活光源選項。";
+PushButtonLightNew.LongHelp="已創建新光源。
+其類型為激活類型。";
+PushButtonLightNew.ShortHelp="創建光源";
+PushButtonLightDelete.LongHelp="已刪除激活光源。
+如果沒有激活光源，此按鈕將被禁用。";
+PushButtonLightDelete.ShortHelp="刪除光源";
+CheckButtonLightOnOff.LongHelp="激活光源已開啟或關閉。
+如果沒有激活光源，此按鈕將被禁用。";
+CheckButtonLightOnOff.ShortHelp="開啟/關閉光源";
+
+FrameAttached.Title="已附加";
+FrameAttached.LongHelp="可將光源附加到視圖或模型。
+當您操縱視圖時，附加到視圖的光源不會更改其位置或方向。
+附加到模型的光源會隨視圖操縱而變化。";
+RadioButtonView.Title="視圖";
+RadioButtonView.LongHelp="將激活光源附加到視圖。
+新創建的光源將被附加到視圖。
+當您操縱視圖時，附加到視圖的光源不會更改其位置或方向。";
+RadioButtonView.ShortHelp="附加到視圖的光源";
+RadioButtonModel.Title="模型";
+RadioButtonModel.LongHelp="將激活光源附加到模型。
+新創建的光源將被附加到模型。
+附加到模型的光源會隨視圖操縱而變化。";
+RadioButtonModel.ShortHelp="附加到模型的光源";
+
+FrameLightOptionsGlobal.Title="全局";
+FrameLightOptionsGlobal.LongHelp="可開啟或關閉圖形窗口內顯示的光源符號。
+圖形窗口內顯示的零件照明不會更改。";
+CheckButtonLightSymbol.LongHelp="可開啟或關閉圖形窗口內顯示的光源符號";
+CheckButtonLightSymbol.ShortHelp="開啟/關閉光源符號";
+
+TabPagePosition.Title="位置";
+FramePosition.Title="位置";
+FramePosition.LongHelp="可更改激活光源的位置。
+僅當光源類型聚光或點為激活類型時，位置按鈕才可用。
+無法更改類型為方向的光源的位置。
+可更改 x、y、z 坐標值或選擇點以定義位置。";
+
+TabContainerBottom.TabPagePosition.FramePosition.InvisibleFramePosition.LabelX.Title="X： ";
+TabContainerBottom.TabPagePosition.FramePosition.InvisibleFramePosition.LabelX.LongHelp="位置的 X 坐標";
+TabContainerBottom.TabPagePosition.FramePosition.InvisibleFramePosition.LabelX.ShortHelp="X 坐標";
+TabContainerBottom.TabPagePosition.FramePosition.InvisibleFramePosition.LabelY.Title="Y： ";
+TabContainerBottom.TabPagePosition.FramePosition.InvisibleFramePosition.LabelY.LongHelp="位置的 Y 坐標";
+TabContainerBottom.TabPagePosition.FramePosition.InvisibleFramePosition.LabelY.ShortHelp="Y 坐標";
+TabContainerBottom.TabPagePosition.FramePosition.InvisibleFramePosition.LabelZ.Title="Z： ";
+TabContainerBottom.TabPagePosition.FramePosition.InvisibleFramePosition.LabelZ.LongHelp="位置的 Z 坐標";
+TabContainerBottom.TabPagePosition.FramePosition.InvisibleFramePosition.LabelZ.ShortHelp="Z 坐標";
+
+CheckButtonPosition.Title="位置";
+CheckButtonPosition.LongHelp="可通過選擇點來定義類型為聚光或點的光源的位置";
+CheckButtonPosition.ShortHelp="光源的點";
+FrameDirection.Title="方向";
+FrameDirection.LongHelp="可更改激活光源的方向。
+僅當光源類型聚光或方向為激活類型時，方向按鈕才可用。
+方向軸取決于激活光源的附加類型。可為視圖或模型。
+類型為點的光源沒有方向。
+可通過值更改方向向量的 x、y、z 部件，或從上下文菜單選擇方向。";
+
+TabContainerBottom.TabPagePosition.FrameDirection.InvisibleFrameDirection.LabelX.Title="X： ";
+TabContainerBottom.TabPagePosition.FrameDirection.InvisibleFrameDirection.LabelX.LongHelp="方向向量的 X 部件。
+范圍：-1 <= 值 <= 1";
+TabContainerBottom.TabPagePosition.FrameDirection.InvisibleFrameDirection.LabelX.ShortHelp="X 部件";
+TabContainerBottom.TabPagePosition.FrameDirection.InvisibleFrameDirection.LabelY.Title="Y： ";
+TabContainerBottom.TabPagePosition.FrameDirection.InvisibleFrameDirection.LabelY.LongHelp="方向向量的 Y 部件。
+范圍：-1 <= 值 <= 1";
+TabContainerBottom.TabPagePosition.FrameDirection.InvisibleFrameDirection.LabelY.ShortHelp="Y 部件";
+TabContainerBottom.TabPagePosition.FrameDirection.InvisibleFrameDirection.LabelZ.Title="Z： ";
+TabContainerBottom.TabPagePosition.FrameDirection.InvisibleFrameDirection.LabelZ.LongHelp="方向向量的 Z 部件。
+范圍：-1 <= 值 <= 1";
+TabContainerBottom.TabPagePosition.FrameDirection.InvisibleFrameDirection.LabelZ.ShortHelp="Z 部件";
+
+PushButtonDirectionX.Title="X";
+PushButtonDirectionX.LongHelp="光源方向更改為視圖的 X 方向或模型坐標系的 X 方向";
+PushButtonDirectionX.ShortHelp="光源為 X 方向";
+PushButtonDirectionY.Title="Y";
+PushButtonDirectionY.LongHelp="光源方向更改為視圖的 Y 方向或模型坐標系的 Y 方向";
+PushButtonDirectionY.ShortHelp="光源為 Y 方向";
+PushButtonDirectionZ.Title="Z";
+PushButtonDirectionZ.LongHelp="光源方向更改為視圖的 Z 方向或模型坐標系的 Z 方向。";
+PushButtonDirectionZ.ShortHelp="光源為 Z 方向";
+PushButtonDirectionInvert.Title="反轉";
+PushButtonDirectionInvert.LongHelp="將反轉激活光源的方向";
+PushButtonDirectionInvert.ShortHelp="反轉方向";
+
+TabPageParameter.Title="參數";
+RadioButtonColorWhite.Title="白色";
+RadioButtonColorWhite.LongHelp="光源發出白光";
+RadioButtonColorWhite.ShortHelp="白光";
+RadioButtonColor.Title="顏色";
+RadioButtonColor.LongHelp="光源發出彩色光";
+RadioButtonColor.ShortHelp="彩色光";
+ColorButtonParameter.LongHelp="指定發出的光的顏色。
+如果亮度設為最大值，則光的顏色為白色。";
+LabelIntensity.Title="強度： ";
+LabelIntensity.LongHelp="此滑塊定義強度，即光源的功率。強度取決于光源的類型。 ";
+LabelIntensity.ShortHelp="光源強度";
+
+SliderIntensity.LongHelp="此滑塊定義強度，即光源的功率。強度取決于光源的類型。";
+SliderIntensity.ShortHelp="光源強度";
+SpinnerIntensity.LongHelp="定義強度，即光源的功率。強度取決于光源的類型。";
+SpinnerIntensity.ShortHelp="光源強度";
+LabelAmbient.Title="環境： ";
+LabelAmbient.LongHelp="此滑塊定義環境光源的功率。
+環境光源是一個環境的整體照明，而非定向光源。環境光源從所有方向以相同的強度照射模型。";
+LabelAmbient.ShortHelp="環境光源的功率";
+SliderAmbient.LongHelp="此滑塊定義環境光源的功率。
+環境光源是一個環境的整體照明，而非定向光源。環境光源從所有方向以相同的強度照射模型。";
+SliderAmbient.ShortHelp="環境光源的功率";
+SpinnerAmbient.LongHelp="定義環境光源的功率。
+環境光源是一個環境的整體照明，而非定向光源。環境光源從所有方向以相同的強度照射模型。";
+SpinnerAmbient.ShortHelp="環境光源的功率";
+LabelDiffuse.Title="散射： ";
+LabelDiffuse.LongHelp="此滑塊定義對象的散射。
+散射是由對象反射的非定向光源。散射 0 無反射，且光源無效果。";
+LabelDiffuse.ShortHelp="對象的散射";
+SliderDiffuse.LongHelp="此滑塊定義對象的散射。
+散射是由對象反射的非定向光源。散射 0 無反射，且光源無效果。";
+SliderDiffuse.ShortHelp="對象的散射";
+SpinnerDiffuse.LongHelp="定義對象的散射。
+散射是由對象反射的非定向光源。散射 0 無反射，且光源無效果。";
+SpinnerDiffuse.ShortHelp="對象的散射";
+LabelSpecular.Title="鏡面： ";
+LabelSpecular.LongHelp="此滑塊定義對象的鏡面反射。鏡面反射是由對象反射的定向的、類似鏡子反射的光源。
+鏡面 1 即鏡像。";
+LabelSpecular.ShortHelp="對象的鏡面";
+SliderSpecular.LongHelp="此滑塊定義對象的鏡面反射。鏡面反射是由對象反射的定向的、類似鏡子反射的光源。
+鏡面 1 即鏡像。";
+SliderSpecular.ShortHelp="對象的鏡面";
+SpinnerSpecular.LongHelp="定義對象的鏡面反射。鏡面反射是由對象反射的定向的、類似鏡子反射的光源。
+鏡面 1 即鏡像。";
+SpinnerSpecular.ShortHelp="對象的鏡面";
+TabPageSpotParameter.Title="聚光參數";
+LabelAngle.Title="角度： ";
+LabelAngle.LongHelp="已定義光錐的角度。
+常見錯誤是角度過小。
+開始時請設置較大的角度，然后再逐漸減小。";
+LabelAngle.ShortHelp="光錐的角度";
+SliderAngle.LongHelp="已定義光錐的角度。
+常見錯誤是角度過小。
+開始時請設置較大的角度，然后再逐漸減小。";
+SliderAngle.ShortHelp="光錐的角度";
+LabelSharpness.Title="銳度： ";
+LabelSharpness.LongHelp="增大值會使光源強度更向光錐的中間集中";
+LabelSharpness.ShortHelp="光錐的銳度";
+SliderSharpness.LongHelp="增大值會使光源強度更向光錐的中間集中";
+SliderSharpness.ShortHelp="光錐的銳度";
+SpinnerSharpness.LongHelp="增大值會使光源強度更向光錐的中間集中";
+SpinnerSharpness.ShortHelp="光錐的銳度";

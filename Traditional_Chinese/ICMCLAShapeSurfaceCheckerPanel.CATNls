@@ -1,0 +1,157 @@
+DialogBoxTitle="曲面檢查器";
+
+//Selection
+
+LabelElements.Title="元素： ";
+LabelElements.LongHelp="選擇要檢查的曲面幾何圖形。
+可使用多選擇和上下文菜單。";
+LabelElements.ShortHelp="定義元素";
+
+//Topology tab
+
+TabPageTopology.Title="拓撲";
+
+FrameOptions.Title="選項";
+FrameOptions.LongHelp="確定以下選項：
+- 最小邊線
+- 最大階數
+- 最大段數
+- 重復元素
+- 最小對象
+- 翻轉法線。";
+
+LabelSearchDistance.Title="搜索距離： ";
+LabelSearchDistance.LongHelp="以下選項可用：
+- 粗略（搜索距離預設為 0,1mm）
+- 精細（搜索距離預設為 0,001mm）
+- 用戶（用戶可指定值）";
+LabelSearchDistance.ShortHelp="確定搜索距離";
+
+ComboSearchDistance.Regular="粗略";
+ComboSearchDistance.Quick="精細";
+ComboSearchDistance.User="用戶";
+ComboSearchDistance.LongHelp="以下選項可用：
+- 粗略（搜索距離預設為 0.1 mm）
+- 精細（搜索距離預設為 0.001 mm）
+- 用戶（用戶可指定值）";
+ComboSearchDistance.ShortHelp="粗略、精細、用戶";
+
+CheckButtonDisplayTopB.Title="顯示拓撲邊界";
+CheckButtonDisplayTopB.ShortHelp="顯示拓撲邊界";
+ColorButtonTopB.Title="ColorButtonTopB";
+ColorButtonTopB.LongHelp="可在顏色框中定義拓撲邊界的顏色。";
+
+CheckButtonG0.Title="G0";
+CheckButtonG0.LongHelp="將檢查搜索距離內的曲面邊線的 G0 連續。";
+CheckButtonG0.ShortHelp="檢查 G0 連續";
+CheckButtonG1.Title="G1";
+CheckButtonG1.LongHelp="將檢查搜索距離內的曲面邊線的 G1 連續。";
+CheckButtonG1.ShortHelp="檢查 G1 連續";
+CheckButtonG2.Title="G2";
+CheckButtonG2.LongHelp="將檢查搜索距離內的曲面邊線的 G2 連續。";
+CheckButtonG2.ShortHelp="檢查 G2 連續";
+
+FrameMin.Title="最小值";
+FrameMin.LongHelp="指定最小值";
+FrameMax.Title="最大值";
+FrameMax.LongHelp="指定最大值";
+
+ColorButtonG0.Title="G0";
+ColorButtonG0.LongHelp="指定拓撲條件的顏色。";
+ColorButtonG1.Title="G1";
+ColorButtonG1.LongHelp="指定拓撲條件的顏色。";
+ColorButtonG2.Title="G2";
+ColorButtonG2.LongHelp="指定拓撲條件的顏色。";
+
+FrameResult.Title="結果";
+FrameResult.LongHelp="顯示拓撲連接數";
+
+LabelDensity.Title="密度： ";
+LabelDensity.LongHelp="用戶定義的值確定點數，將在這些點處檢查 G0、G1、G2 連續。可通過滑塊條增加/減小值。";
+SliderDensity.Title="密度： ";
+LabelDensity.ShortHelp="定義密度";
+SliderDensity.LongHelp="確定密度。增加/減小值。";
+SliderDensity.ShortHelp="密度值";
+
+CheckButtonT.Title="T";
+CheckButtonT.LongHelp="當圓角點之間的失準位于指定的公差范圍內時，將標記曲面群集內的所有 T 連接。";
+CheckButtonT.ShortHelp="檢查 T 連接";
+
+FrameMin2.Title="最小值";
+FrameMin2.LongHelp="指定最小值";
+FrameMax2.Title="最大值";
+FrameMax2.LongHelp="指定最大值";
+
+ColorButtonT.Title="T";
+ColorButtonT.LongHelp="指定拓撲條件的顏色。";
+
+FrameResult2.Title="結果";
+FrameResult2.LongHelp="顯示拓撲連接數";
+
+PushButtonCreateDisplaySet.Title="創建顯示集";
+
+//Geometry tab
+
+TabPageGeometry.Title="幾何圖形狀";
+
+CheckButtonMiniEdges.Title="最小邊線： ";
+CheckButtonMiniEdges.LongHelp="確定所有具備更短長度的邊線。";
+ColorButtonMiniEdges.Title="最小邊線： ";
+ColorButtonMiniEdges.LongHelp="可在顏色框中定義最小邊線的顏色。";
+
+CheckButtonMaxOrder.Title="最大階數： ";
+CheckButtonMaxOrder.LongHelp="確定所有具備更高階數的元素。";
+ColorButtonMaxOrder.Title="最大階數： ";
+ColorButtonMaxOrder.LongHelp="可在顏色框中定義最大階數的顏色。";
+
+CheckButtonMaxSegments.Title="最大段數： ";
+CheckButtonMaxSegments.LongHelp="確定所有具備大量段的對象。";
+ColorButtonMaxSegments.Title="最大段數： ";
+ColorButtonMaxSegments.LongHelp="可在顏色框中定義最大段數的顏色。";
+
+CheckButtonDupElements.Title="重復元素： ";
+CheckButtonDupElements.LongHelp="確定所有重復對象。";
+ColorButtonDupElements.Title="重復元素： ";
+ColorButtonDupElements.LongHelp="可在顏色框中定義重復元素的顏色。";
+
+CheckButtonMiniObjects.Title="最小對象： ";
+CheckButtonMiniObjects.LongHelp="確定所有具備更小曲面區域的對象。";
+ColorButtonMiniObjects.Title="最小對象： ";
+ColorButtonMiniObjects.LongHelp="可在顏色框中定義最小對象的顏色。";
+
+CheckButtonNormalTurnDown.Title="翻轉法線";
+CheckButtonNormalTurnDown.LongHelp="確定法線不規則。 ";
+ColorButtonNormalTurnDown.Title="翻轉法線： ";
+ColorButtonNormalTurnDown.LongHelp="可在顏色框中定義翻轉法線的顏色。";
+
+//Toplolgy AMM (alternative measurement methods) tab
+
+TabPageTopolgyAMM.Title="G1/G2 測試";
+
+FrameTopolgyAMMOptions.Title="選項";
+FrameTopolgyAMMOptions.LongHelp="確定以下選項測量標度/G1/G2。";
+
+LabelMeasureScale.Title="測量標度： ";
+LabelMeasureScale.LongHelp="需要指定標度以使測量適應某種應用。";
+LabelMeasureScale.ShortHelp="確定測量標度";
+
+CheckButtonG1AMM.Title="G1";
+CheckButtonG1AMM.LongHelp="將檢查搜索距離內的曲面邊線的 G1 連續。";
+CheckButtonG1AMM.ShortHelp="檢查 G1 連續";
+CheckButtonG2AMM.Title="G2";
+CheckButtonG2AMM.LongHelp="將檢查搜索距離內的曲面邊線的 G2 連續。";
+CheckButtonG2AMM.ShortHelp="檢查 G2 連續";
+
+FrameMinAMM.Title="最小值";
+FrameMinAMM.LongHelp="指定最小值";
+FrameMaxAMM.Title="最大值";
+FrameMaxAMM.LongHelp="指定最大值";
+
+ColorButtonG1AMM.Title="G1";
+ColorButtonG1AMM.LongHelp="指定 G1 條件的顏色。";
+ColorButtonG2AMM.Title="G2";
+ColorButtonG2AMM.LongHelp="指定 G2 條件的顏色。";
+
+FrameResultAMM.Title="結果";
+FrameResultAMM.LongHelp="顯示拓撲失敗連接數。";
+

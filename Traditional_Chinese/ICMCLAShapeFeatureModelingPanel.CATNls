@@ -1,0 +1,107 @@
+DialogBoxTitle="特征建模";
+
+LabelFeature.Title="特征： ";
+LabelFeature.LongHelp="選擇要修改的特征。
+注意： - 僅可選擇一個特征元素。
+- 僅可選擇一個單個單元的特征元素。";
+LabelFeature.ShortHelp="選擇特征";
+
+TabModification.Title="修改";
+
+TabOptions.Title="選項";
+
+PushButtonReset.Title="重置";
+PushButtonReset.LongHelp="已恢復已修改特征元素的原始形。";
+PushButtonReset.ShortHelp="恢復到原始形狀";
+
+CheckButtonDisplay.Title="顯示輸入特征";
+CheckButtonDisplay.LongHelp="可以使輸入特征為空或非空。";
+CheckButtonDisplay.ShortHelp="顯示輸入特征關閉/開啟";
+
+CheckButtonUseSpecifiedOrder.Title="使用指定的階數";
+CheckButtonUseSpecifiedOrder.LongHelp="始終使用階數操作器指定的階數。";
+CheckButtonUseSpecifiedOrder.ShortHelp="使用指定的階數關閉/開啟";
+
+FrameConstraints.Title="約束";
+FrameConstraints.LongHelp="可通過指定以下約束修改輸入幾何圖形：
+- 無約束
+- 固有約束
+- 指定的約束。";
+ComboConstraints.Title="無約束";
+ComboConstraints.LongHelp="無約束：
+除具備 G0 連續的控制點之外的所有控制點均可被修改。為原始特征定義的約束被覆蓋。
+固有約束：
+根據輸入特征的約束，限制控制點操作。
+指定的約束：
+可使用選項 U/V 最小和 U/V 最大手動設置約束。";
+ComboConstraints.NoConstraints="無約束";
+ComboConstraints.IntrinsicConstraints="固有約束";
+ComboConstraints.SpecifiedConstraints="指定的約束";
+
+FrameContinuity.Title="連續";
+FrameContinuity.LongHelp="手動設置結果的連續條件。
+如果選定曲線，有效選項只有 U 最小和 U 最大。
+如果選定曲面，所有條件均有效。
+注意：僅當約束設為“指定的約束”時，選項才可用。";
+LabelUMin.Title="U 最小： ";
+LabelUMin.LongHelp="參數 U=0 時的邊界";
+LabelUMin.ShortHelp="U=0";
+LabelUMax.Title="U 最大： ";
+LabelUMax.LongHelp="參數 U=1 時的邊界";
+LabelUMax.ShortHelp="U=1";
+LabelVMin.Title="V 最小： ";
+LabelVMin.LongHelp="參數 V=0 時的邊界";
+LabelVMin.ShortHelp="V=0";
+LabelVMax.Title="V 最大： ";
+LabelVMax.LongHelp="參數 V=1 時的邊界";
+LabelVMax.ShortHelp="V=1";
+ContinuityUMin.Button_G0.LongHelp="對于單個曲面：
+參數 U=0 時，邊界將保留 G0-連續。";
+ContinuityUMin.Button_G0.ShortHelp="U=0 時為 G0";
+ContinuityUMin.Button_G1.LongHelp="對于單個曲面：
+參數 U=0 時，邊界將保留 G1-連續。";
+ContinuityUMin.Button_G1.ShortHelp="U=0 時為 G1";
+ContinuityUMin.Button_G2.LongHelp="對于單個曲面：
+參數 U=0 時，邊界將保留 G2-連續。";
+ContinuityUMin.Button_G2.ShortHelp="U=0 時為 G2";
+ContinuityUMin.Button_G3.LongHelp="對于單個曲面：
+參數 U=0 時，邊界將保留 G3-連續。";
+ContinuityUMin.Button_G3.ShortHelp="U=0 時為 G3";
+ContinuityUMax.Button_G0.LongHelp="對于單個曲面：
+參數 U=1 時，邊界將保留 G0-連續。";
+ContinuityUMax.Button_G0.ShortHelp="U=1 時為 G0";
+ContinuityUMax.Button_G1.LongHelp="對于單個曲面：
+參數 U=1 時，邊界將保留 G1-連續。";
+ContinuityUMax.Button_G1.ShortHelp="U=1 時為 G1";
+ContinuityUMax.Button_G2.LongHelp="對于單個曲面：
+參數 U=1 時，邊界將保留 G2-連續。";
+ContinuityUMax.Button_G2.ShortHelp="U=1 時為 G2";
+ContinuityUMax.Button_G3.LongHelp="對于單個曲面：
+參數 U=1 時，邊界將保留 G3-連續。";
+ContinuityUMax.Button_G3.ShortHelp="U=1 時為 G3";
+ContinuityVMin.Button_G0.LongHelp="對于單個曲面：
+參數 V=0 時，邊界將保留 G0-連續。";
+ContinuityVMin.Button_G0.ShortHelp="V=0 時為 G0";
+ContinuityVMin.Button_G1.LongHelp="對于單個曲面：
+參數 V=0 時，邊界將保留 G1-連續。";
+ContinuityVMin.Button_G1.ShortHelp="V=0 時為 G1";
+ContinuityVMin.Button_G2.LongHelp="對于單個曲面：
+參數 V=0 時，邊界將保留 G2-連續。";
+ContinuityVMin.Button_G2.ShortHelp="V=0 時為 G2";
+ContinuityVMin.Button_G3.LongHelp="對于單個曲面：
+參數 V=0 時，邊界將保留 G3-連續。";
+ContinuityVMin.Button_G3.ShortHelp="V=0 時為 G3";
+ContinuityVMax.Button_G0.LongHelp="對于單個曲面：
+參數 V=1 時，邊界將保留 G0-連續。";
+ContinuityVMax.Button_G0.ShortHelp="V=1 時為 G0";
+ContinuityVMax.Button_G1.LongHelp="對于單個曲面：
+參數 V=1 時，邊界將保留 G1-連續。";
+ContinuityVMax.Button_G1.ShortHelp="V=1 時為 G1";
+ContinuityVMax.Button_G2.LongHelp="對于單個曲面：
+參數 V=1 時，邊界將保留 G2-連續。";
+ContinuityVMax.Button_G2.ShortHelp="V=1 時為 G2";
+ContinuityVMax.Button_G3.LongHelp="對于單個曲面：
+參數 V=1 時，邊界將保留 G3-連續。";
+ContinuityVMax.Button_G3.ShortHelp="V=1 時為 G3";
+
+

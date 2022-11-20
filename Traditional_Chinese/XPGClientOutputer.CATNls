@@ -1,0 +1,157 @@
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2010
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化 January, 12th 2010 - Creation: KPU   
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 XPG InOutputer Erors
+// 3951 校正官方漢化=============================================================================
+
+ERR_NO_FAILINFO.Request="未提供輸出 XPG 文件";
+ERR_NO_FAILINFO.Diagnostic="連接參數中未設置 XPG 輸出文件名";
+ERR_NO_FAILINFO.Advice="提供正確的 XPG 文件路徑";
+
+ERR_NO_CONNECTIONINFO.Request="未提供連接信息";
+ERR_NO_CONNECTIONINFO.Diagnostic="連接參數中未設置連接信息";
+ERR_NO_CONNECTIONINFO.Advice="提供正確的連接信息";
+
+ERR_NO_CORETYPE.Request="對象的芯類型";
+ERR_NO_CORETYPE.Diagnostic="未找到芯類型。";
+ERR_NO_CORETYPE.Advice="檢查對象的芯類型";
+
+ERR_NO_STREAMDATA.Request="對象的芯類型";
+ERR_NO_STREAMDATA.Diagnostic="未找到流數據。";
+ERR_NO_STREAMDATA.Advice="檢查流。";
+
+ERR_PARSE.Request="選擇另一個 XPG 作為輸入文件";
+ERR_PARSE.Diagnostic="XPG 文件已損壞";
+ERR_PARSE.Advice="檢查輸入 XPG 文件的完整性";
+
+ERR_XPGMAPPING.Request="未找到值";
+ERR_XPGMAPPING.Diagnostic="未在 OSM 中定義屬性。";
+ERR_XPGMAPPING.Advice="檢查 OSM 文件的內容";
+
+ERR_XPGMODMAPPING.Request="建模器或芯類型不受支持";
+ERR_XPGMODMAPPING.Diagnostic="尚不支持建模器或芯類型，將不保存數據";
+ERR_XPGMODMAPPING.Advice="檢查您嘗試保存的數據類型是否受支持";
+
+ERR_XPGMULTISTREAM.Request="XPG 不支持多流";
+ERR_XPGMULTISTREAM.Diagnostic="XPG 不支持多流。將只導出第一個流";
+ERR_XPGMULTISTREAM.Advice="";
+
+ERR_XPGSPECIFICEXTENSION.Request="";
+ERR_XPGSPECIFICEXTENSION.Diagnostic="檢測到舊的特定工業數據，請從 V5R17SP5 中重新生成該數據。";
+ERR_XPGSPECIFICEXTENSION.Advice="無法加載特定的工業數據。如果保存此 XPG，將升級版本并刪除舊的特定工業數據。";
+
+ERR_XPGUNKNOWNGEOMFORMAT.Request="";
+ERR_XPGUNKNOWNGEOMFORMAT.Diagnostic="檢測到未知的幾何格式，請確保 XPG 與 xsd 兼容。";
+ERR_XPGUNKNOWNGEOMFORMAT.Advice="將不加載相應的展示。";
+
+ERR_XPGSTREAMFORMAT.Request="";
+ERR_XPGSTREAMFORMAT.Diagnostic="檢測到不支持的幾何數據，將不加載相應的展示。";
+ERR_XPGSTREAMFORMAT.Advice="";
+
+ERR_XPGMISSINGSTREAM.Request="";
+ERR_XPGMISSINGSTREAM.Diagnostic="幾何數據缺失，將不加載相應的展示。";
+ERR_XPGMISSINGSTREAM.Advice="";
+
+ERR_XPGARCHIVEWITHDIR.Request="請重新構建它，不要包含子目錄信息。";
+ERR_XPGARCHIVEWITHDIR.Diagnostic="已構建包含子目錄信息的存檔。";
+ERR_XPGARCHIVEWITHDIR.Advice="";
+
+
+ERR_XPGISOMETRICMATRIX.Request="";
+ERR_XPGISOMETRICMATRIX.Diagnostic="有些相對矩陣并不等距。可視化可能不正確。";
+ERR_XPGISOMETRICMATRIX.Advice="";
+
+ERR_XPGVERSIONSUPPORTED.Request="不支持 XPG 版本。";
+ERR_XPGVERSIONSUPPORTED.Diagnostic="不支持 XPG 版本。";
+ERR_XPGVERSIONSUPPORTED.Advice="不支持 XPG 版本。";
+
+ERR_CONNECTION_REFUSED.Request="檢查遠程系統訪問權限";
+ERR_CONNECTION_REFUSED.Diagnostic="遠程系統拒絕網絡連接";
+ERR_CONNECTION_REFUSED.Advice="檢查遠程系統訪問權限";
+
+ERR_XPGINTEGRITYCERTIFICAT.Request="完整性認證錯誤。";
+ERR_XPGINTEGRITYCERTIFICAT.Diagnostic="此存檔文件不滿足完整性要求。";
+ERR_XPGINTEGRITYCERTIFICAT.Advice="產品結構肯定已被修改，而且有些鏈接可能已中斷。";
+
+ERR_XPGMISSINGSCHEMAVERSION.Request="";
+ERR_XPGMISSINGSCHEMAVERSION.Diagnostic="文件錯誤，XPG 版本缺失。";
+ERR_XPGMISSINGSCHEMAVERSION.Advice="";
+
+ERR_XPGTOORECENTSCHEMAVERSION.Request="";
+ERR_XPGTOORECENTSCHEMAVERSION.Diagnostic="該 XPG 文件的次版本比當前次版本新。有些數據將無法打開。";
+ERR_XPGTOORECENTSCHEMAVERSION.Advice="";
+
+ERR_DRM_XPG_SAVE.Request="DRM 錯誤。";
+ERR_DRM_XPG_SAVE.Diagnostic="您嘗試保存的 XPG 文件受 DRM 保護。";
+ERR_DRM_XPG_SAVE.Advice="不允許您保存此文件。";
+
+ERR_DRM_XPG_READ.Request="DRM 錯誤。";
+ERR_DRM_XPG_READ.Diagnostic="您嘗試打開的 XPG 文件受 DRM 保護。";
+ERR_DRM_XPG_READ.Advice="不允許您打開此文件。";
+
+WAR_CHANGE_VERSION.Request="保存已升級 XPG 的版本。舊的特定工業數據已刪除";
+WAR_CHANGE_VERSION.Diagnostic="保存已升級 XPG 的版本。舊的特定工業數據已刪除";
+WAR_CHANGE_VERSION.Advice="";
+
+// 3951 校正官方漢化 Internal error that should not occurs at customer site
+InternalError.Request="XPGInOutputer 內部錯誤";
+InternalError.Diagnostic="/p1";
+InternalError.Advice="向支持人員報告此錯誤。";
+
+
+ERR_PARSE_XSD_CHECK.Request="選擇另一個 XPG 作為輸入文件";
+ERR_PARSE_XSD_CHECK.Diagnostic="XPG 文件 (/p1) 與 xsd 文件（版本 /p2）不兼容";
+ERR_PARSE_XSD_CHECK.Advice="檢查輸入 XPG 文件的完整性";
+
+ERR_SAVESTREAMFORMAT.Request="";
+ERR_SAVESTREAMFORMAT.Diagnostic="保存時出現流格式錯誤，將不保存 XPG 文件";
+ERR_SAVESTREAMFORMAT.Advice="";
+
+ERR_MISSING_MANIFEST.Request="";
+ERR_MISSING_MANIFEST.Diagnostic="文件 Manifest.xml 在存檔中缺失";
+ERR_MISSING_MANIFEST.Advice="";
+
+ERR_PRIVATEVERSION_SUPPORTED.Request="";
+ERR_PRIVATEVERSION_SUPPORTED.Diagnostic="不支持 XPG 中的 UVR 版本。";
+ERR_PRIVATEVERSION_SUPPORTED.Advice="有些幾何圖形數據可能無法讀取。";
+
+ERR_XPGAUTHORINGONLY.Request="XPG 復核不可用。";
+ERR_XPGAUTHORINGONLY.Diagnostic="XPG 不包含復核數據。";
+ERR_XPGAUTHORINGONLY.Advice="";
+
+ERR_SAVE_VERSION.Request="檢查文件版本是否經過更新授權";
+ERR_SAVE_VERSION.Diagnostic="由于不支持保存此版本，操作已取消。";
+ERR_SAVE_VERSION.Advice="禁止不受支持的數據";
+
+ERR_STREAM_UNSAVE.Request="檢查提供程序是否支持流。";
+ERR_STREAM_UNSAVE.Diagnostic="XPG 包括無法升級（網格、精確）的幾何圖形，保存未經授權。";
+ERR_STREAM_UNSAVE.Advice="至少使用動態網格生成 XPG v4.0 或 XPG v3.0。";
+
+ERR_SAVE_IN_READONLY_FILE.Request="不可寫保護文件路徑";
+ERR_SAVE_IN_READONLY_FILE.Diagnostic="該文件受寫入保護";
+ERR_SAVE_IN_READONLY_FILE.Advice="連接到不受保護的文件以執行“保存”";
+
+ERR_SAVE_IN_READONLY_DIR.Request="不可寫保護文件路徑";
+ERR_SAVE_IN_READONLY_DIR.Diagnostic="該目錄受寫入保護";
+ERR_SAVE_IN_READONLY_DIR.Advice="連接到不受保護的目錄以執行“保存”";
+
+ERR_XPG_NO_UV.Request="無法以動態網格導出。";
+ERR_XPG_NO_UV.Diagnostic="已以靜態網格導出幾何圖形。";
+ERR_XPG_NO_UV.Advice="在以 XPG 導出前，嘗試在源資源庫中生成動態網格。";
+
+ERR_SAVEZIPCONCURRENTACCESS.Request="并發訪問錯誤。";
+ERR_SAVEZIPCONCURRENTACCESS.Diagnostic="并發訪問錯誤。";
+ERR_SAVEZIPCONCURRENTACCESS.Advice="請使用 XPG 關閉所有其他應用程序或檢查是否有其他用戶連接到 XPG。";
+
+WAR_XPG_READONLYCOPYCONNECT.Request="并發訪問警告。";
+WAR_XPG_READONLYCOPYCONNECT.Diagnostic="XPG 已鎖定，其他用戶不可編輯，將只打開只讀副本。";
+WAR_XPG_READONLYCOPYCONNECT.Advice="";
+
+WAR_XPG_READONLYCOPY.Request="并發訪問錯誤。";
+WAR_XPG_READONLYCOPY.Diagnostic="XPG 已鎖定，其他用戶不可編輯，您正使用只讀副本。";
+WAR_XPG_READONLYCOPY.Advice="";
+

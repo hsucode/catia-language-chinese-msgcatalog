@@ -1,0 +1,616 @@
+CATFemPropertyBCMaterialPtr.LabelSupport.Title="Material: ";
+
+// Volumic property
+
+CATFemPropertyVolumic.Window.Title="3D Property";
+CATFemPropertyVolumic.Window.Help="Modifies the 3D property characteristics";
+CATFemPropertyVolumic.Window.LongHelp="Modifies the 3D property characteristics.";
+CATFemPropertyVolumic.Window.ShortHelp="3D property characteristics";
+CATFemPropertyVolumic.NOFrame="1";
+CATFemPropertySolidBCOrientMatList.Window.Title = "Material Orientation";
+CATFemPropertySolidOrientMatType.Label.Title = "Material orientation: ";
+CATFemPropertySolidOrientMatType.Label.LongHelp = "Choose the material orientation type";
+CATFemPropertySolidOrientMatType.Label.Label.Help = "Choose the material orientation type";
+CATFemPropertySolidOrientMatType.Label.Label.ShortHelp = "Material orientation type";
+CATFemPropertySolidOrientMatType.Combo.None      = "沒有";
+CATFemPropertySolidOrientMatType.Combo.ByAxis    = "By axis";
+CATFemPropertySolidOrientMatType.Combo.BySurface = "By surface";
+
+CATFemPropertyBCOrientMatWithSurfacePtr.LabelSupport.Title="Surface: ";
+CATFemPropertyBCOrientMatWithEdgePtr.LabelSupport.Title="Edge: ";
+
+// Surfacic property
+
+CATFemPropertySurfacicRelationName = "Thickness of";
+CATFemPropertySurfacic.Window.Title="2D Property";
+CATFemPropertySurfacic.Window.Help="Modifies the 2D property characteristics";
+CATFemPropertySurfacic.Window.LongHelp="Modifies the 2D property characteristics.";
+CATFemPropertySurfacic.Window.ShortHelp="2D property characteristics";
+CATFemPropertySurfacic.NOFrame="1";
+
+CATFemPropertyBCSurfacicType.Type.Title="Type: ";
+CATFemPropertyBCSurfacicType.Type.LongHelp = "Chooses the type";
+CATFemPropertyBCSurfacicType.Type.Help = "Chooses the type";
+
+CATFemPropertyBCSurfacicProfile.Thickness.Title="Thickness: ";
+CATFemPropertyBCSurfacicProfile.Thickness.LongHelp = "Chooses the thickness";
+CATFemPropertyBCSurfacicProfile.Thickness.Help = "Chooses the thickness";
+
+CATFemPropertyBCSurfacicOffset.Offset.Title="Offset: ";
+CATFemPropertyBCSurfacicOffset.Offset.LongHelp = "Choose the offset";
+CATFemPropertyBCSurfacicOffset.Offset.Help = "Choose the offset";
+
+// Beam property
+
+CATFemPropertyBeam.Window.Title="1D Property";
+CATFemPropertyBeam.Window.Help="Modifies the 1D property characteristics";
+CATFemPropertyBeam.Window.LongHelp="Modifies the 1D property characteristics.";
+CATFemPropertyBeam.Window.ShortHelp="1D property characteristics";
+CATFemPropertyBeam.NOFrame="1";
+
+CATFemPropertyBeamBCProfileList.Window.Title = "Beam Definition";
+CATFemPropertyBeamProfileType.Label.Title = "Type: ";
+CATFemPropertyBeamProfileType.Label.LongHelp = "Chooses the property type";
+CATFemPropertyBeamProfileType.Label.Label.Help = "Chooses the property type";
+CATFemPropertyBeamProfileType.Combo.Rod             = "Rod";
+CATFemPropertyBeamProfileType.Combo.CircularBeam    = "Circular beam";
+CATFemPropertyBeamProfileType.Combo.TubularBeam     = "Tubular beam";
+CATFemPropertyBeamProfileType.Combo.RectangularBeam = "Rectangular beam";
+CATFemPropertyBeamProfileType.Combo.ThinBoxBeam     = "Thin box beam";
+CATFemPropertyBeamProfileType.Combo.ThinUBeam       = "Thin U beam";
+CATFemPropertyBeamProfileType.Combo.ThinIBeam       = "Thin I beam";
+CATFemPropertyBeamProfileType.Combo.ThinTBeam       = "Thin T beam";
+CATFemPropertyBeamProfileType.Combo.ThinXBeam       = "Thin X beam";
+CATFemPropertyBeamProfileType.Combo.UserDefBeam     = "User-defined beam";
+CATFemPropertyBeamProfileType.Combo.BeamFromSurf    = "Beam from surface";
+
+CATFemPropertyBCOrientationGeom.LabelSupport.Title="Orientation geometry: ";
+CATFemPropertyBCOrientationGeom.LabelSupport.LongHelp="Orientation geometry is useless for rod and optional for circular and tubular beam";
+
+CATFemPropertyBCBeamFromSurfacePtr.LabelSupport.Title="Surface: ";
+
+CATFemPropertyBeamBCOffset.Window.Title       = "Offset Definition";
+CATFemPropertyBeamOffsetType.Label.Title      = "Offset: ";
+CATFemPropertyBeamOffsetType.Label.LongHelp   = "Define offset";
+CATFemPropertyBeamOffsetType.Label.Label.Help = "Define offset";
+CATFemPropertyBeamOffsetType.Combo.None       = "沒有";
+CATFemPropertyBeamOffsetType.Combo.Customized = "Customized";
+
+CATFemPropertyBeamBCDOF.Window.Title       = "DOF Release Definition";
+CATFemPropertyBeamDOFType.Label.Title      = "DOF released: ";
+CATFemPropertyBeamDOFType.Label.LongHelp   = "Define DOF Release";
+CATFemPropertyBeamDOFType.Label.Label.Help = "Define DOF Release";
+CATFemPropertyBeamDOFType.Combo.None       = "沒有";
+CATFemPropertyBeamDOFType.Combo.Customized = "Customized";
+
+CATFemPropertyBCOffsetCoordStart.Title="Start";
+CATFemPropertyBCOffsetCoordStart_ValuesNorme.Label.Title = "Norm: ";
+CATFemPropertyBCOffsetCoordStart_Values_1.Label.Title = "X: ";
+CATFemPropertyBCOffsetCoordStart_Values_2.Label.Title = "Y: ";
+CATFemPropertyBCOffsetCoordStart_Values_3.Label.Title = "Z: ";
+
+CATFemPropertyBCOffsetCoordEnd.Title="End";
+CATFemPropertyBCOffsetCoordEnd_ValuesNorme.Label.Title = "Norm: ";
+CATFemPropertyBCOffsetCoordEnd_Values_1.Label.Title = "X: ";
+CATFemPropertyBCOffsetCoordEnd_Values_2.Label.Title = "Y: ";
+CATFemPropertyBCOffsetCoordEnd_Values_3.Label.Title = "Z: ";
+
+CATFemPropertyBCDOFStart.Title = "Start";
+CATFemPropertyBCDOFStart.T1.Title = "Translation 1: ";
+CATFemPropertyBCDOFStart.T2.Title = "Translation 2: ";
+CATFemPropertyBCDOFStart.T3.Title = "Translation 3: ";
+CATFemPropertyBCDOFStart.R1.Title = "Rotation 1: ";
+CATFemPropertyBCDOFStart.R2.Title = "Rotation 2: ";
+CATFemPropertyBCDOFStart.R3.Title = "Rotation 3: ";
+
+CATFemPropertyBCDOFEnd.Title = "End";
+CATFemPropertyBCDOFEnd.T1.Title = "Translation 1: ";
+CATFemPropertyBCDOFEnd.T2.Title = "Translation 2: ";
+CATFemPropertyBCDOFEnd.T3.Title = "Translation 3: ";
+CATFemPropertyBCDOFEnd.R1.Title = "Rotation 1: ";
+CATFemPropertyBCDOFEnd.R2.Title = "Rotation 2: ";
+CATFemPropertyBCDOFEnd.R3.Title = "Rotation 3: ";
+
+// Local property
+
+CATFemLocalPropertyBeam="Local 1D Property";
+CATFemLocalPropertySurfacic="Local 2D Property";
+CATFemLocalPropertyVolumic="Local 3D Property";
+
+CATFemLocalPropertyBeam.Window.Title="Local 1D Property";
+CATFemLocalPropertySurfacic.Window.Title="Local 2D Property";
+
+CATFemCnxLocalPropertyBeam="1D Property";
+CATFemCnxLocalPropertySurfacic="2D Property";
+CATFemCnxLocalPropertyVolumic="3D Property";
+
+// Connection
+
+CATFemDistantConnection.Window.Title="Distant Connection Property";
+CATFemDistantConnection.Window.Help="Modifies the Distant Connection Property";
+CATFemDistantConnection.Window.LongHelp="Modifies the Distant Connection Property.";
+CATFemDistantConnection.Window.ShortHelp="Distant Connection Property";
+
+CATFemFaceFaceConnection.Window.Title="Face Face Connection Property";
+CATFemFaceFaceConnection.Window.Help="Modifies the Face Face Connection Property";
+CATFemFaceFaceConnection.Window.LongHelp="Modifies the Face Face Connection Property.";
+CATFemFaceFaceConnection.Window.ShortHelp="Face Face Connection Property";
+
+CATFemFastenedConnection.Window.Title="Fastened Connection Property";
+CATFemFastenedConnection.Window.Help="Modifies the Fastened Connection Property";
+CATFemFastenedConnection.Window.LongHelp="Modifies the Fastened Connection Property.";
+CATFemFastenedConnection.Window.ShortHelp="Fastened Connection Property";
+
+CATFemBoltConnection.Window.Title="Bolt Tightening Connection Property";
+CATFemBoltConnection.Window.Help="Modifies Bolt Tightening Connection Property";
+CATFemBoltConnection.Window.LongHelp="Modifies the Bolt Tightening Connection Property.";
+CATFemBoltConnection.Window.ShortHelp="Bolt Tightening Connection Property";
+
+CATFemBoltConnectionPropertyType.Tightening_Force.Title="Tightening Force:";
+CATFemBoltConnectionPropertyType.Tightening_Force.Help="Modifies the tightening force magnitude.";
+CATFemBoltConnectionPropertyType.Tightening_Force.LongHelp="Modifies the tightening force magnitude";
+CATFemBoltConnectionPropertyType.Tightening_Force.ShortHelp="Tightening Force Magnitude";
+
+CATFemBoltConnectionPropertyType.Orientation.Title="Orientation:";
+CATFemBoltConnectionPropertyType.Orientation.Help="Modifies the bolt tightening orientation.";
+CATFemBoltConnectionPropertyType.Orientation.LongHelp="Modifies the bolt tightening orientation.";
+CATFemBoltConnectionPropertyType.Orientation.ShortHelp="Bolt Tightening Orientation";
+CATFemSpotWeldConnection.Window.Title="Spot Welding Connection Property";
+CATFemSpotWeldConnection.Window.Help="Modifies the Spot Welding Connection Property";
+CATFemSpotWeldConnection.Window.LongHelp="Modifies the Spot Welding Connection Property.";
+CATFemSpotWeldConnection.Window.ShortHelp="Spot Welding Connection Property";
+
+CATFemSeamWeldConnection.Window.Title="Seam Welding Connection Property";
+CATFemSeamWeldConnection.Window.Help="Modifies the Seam Welding Connection Property";
+CATFemSeamWeldConnection.Window.LongHelp="Modifies the Seam Welding Connection Property.";
+CATFemSeamWeldConnection.Window.ShortHelp="Seam Welding Connection Property";
+
+CATFemCurveCurveWeldConnection.Window.Title="Curve-curve Welding Connection Property";
+CATFemCurveCurveWeldConnection.Window.Help="Modifies the curve-curve Welding Connection Property";
+CATFemCurveCurveWeldConnection.Window.LongHelp="Modifies the curve-curve Welding Connection Property.";
+CATFemCurveCurveWeldConnection.Window.ShortHelp="Curve-curve Welding Connection Property";
+
+CATFemSurfaceWeldConnection.Window.Title="Surface Welding Connection Property";
+CATFemSurfaceWeldConnection.Window.Help="Modifies the Surface Welding Connection Property";
+CATFemSurfaceWeldConnection.Window.LongHelp="Modifies the Surface Welding Connection Property.";
+CATFemSurfaceWeldConnection.Window.ShortHelp="Surface Welding Connection Property";
+
+CATFemDistantConnectionPropertyType.Type.Title="Type: ";
+CATFemDistantConnectionPropertyType.Type.LongHelp = "Choose the property type";
+CATFemDistantConnectionPropertyType.Type.Help = "Choose the property type";
+CATFemDistantConnectionPropertyType.Type.ShortHelp = "Choose the property type";
+
+// Virtual Part
+CATFemMainVirtualPart.Window.Title="Virtual Part";
+CATFemMainVirtualPart.Window.Help="Modifies the Virtual Part";
+CATFemMainVirtualPart.Window.LongHelp="Modifies the Virtual Part.";
+CATFemMainVirtualPart.Window.ShortHelp="Virtual Part";
+
+CATFemMainVirtualPartType.Type.Title="Type: ";
+CATFemMainVirtualPartType.Type.LongHelp = "Choose the Virtual Part type";
+CATFemMainVirtualPartType.Type.Help = "Choose the Virtual Part type";
+CATFemMainVirtualPartType.Type.ShortHelp = "Choose the Virtual Part type";
+CATFemMainVirtualPart.MessageSupport = "Select an edge,a face or a group";
+
+CATFemHandlerPoint.LabelSupport.Title="Handler";
+CATFemHandlerPoint.LabelSupport.LongHelp="Defines a handler for the entity.";
+CATFemHandlerPoint.LabelSupport.Help="Defines a handler for the entity";
+CATFemHandlerPoint.LabelSupport.ShortHelp="Handler Selection";
+CATFemHandlerPoint.RemoveAllSupportsContxt.RemoveAllSupports.Title="Remove All Supports";
+
+// Contact Virtual Part
+CATFemContactVirtualPart.Window.Title="Contact Virtual Part";
+CATFemContactVirtualPart.Window.Help="Modifies the Contact Virtual Part";
+CATFemContactVirtualPart.Window.LongHelp="Modifies the Contact Virtual Part.";
+CATFemContactVirtualPart.Window.ShortHelp="Contact Virtual Part";
+
+// List Manager Virtual Part
+// ****************************************************************************
+
+CATFemVirtualType_CATFemVirtualPartClearance.Label.Title="Clearance";
+CATFemVirtualType_CATFemVirtualPartClearance.Label.LongHelp = "Modifies the clearance value.";
+CATFemVirtualType_CATFemVirtualPartClearance.Label.Help = "Modifies the clearance value";
+CATFemVirtualType_CATFemVirtualPartClearance.Label.ShortHelp = "Clearance Value";
+
+CATFemVirtualType.Window.Title = "Virtual Part Definition";
+CATFemVirtualType.Title = "Property type";
+
+CATFemVirtualType.EditButton.Help =  "Property definition";
+CATFemVirtualType.EditButton.ShortHelp =  "Property definition";
+CATFemVirtualType.EditButton.LongHelp =  "Click to set the property definition";
+
+CATFemDistVirtualPartType.Label.Title = "Type: ";
+CATFemDistVirtualPartType.Label.LongHelp = "Choose the property type";
+CATFemDistVirtualPartType.Label.Label.Help = "Choose the property type";
+CATFemDistVirtualPartType.Label.Label.ShortHelp = "Property type";
+
+CATFemDistVirtualPartType.Combo.LongHelp = "Choose the property type";
+CATFemDistVirtualPartType.Combo.Help = "Choose the property type";
+CATFemDistVirtualPartType.Combo.ShortHelp = "Property type";
+CATFemDistVirtualPartType.Combo.Contact = "Contact";
+CATFemDistVirtualPartType.Combo.Rigid = "Rigid";
+CATFemDistVirtualPartType.Combo.Smooth = "Smooth";
+CATFemDistVirtualPartType.Combo.SmoothSpring = "Smooth-Spring";
+CATFemDistVirtualPartType.Combo.RigidSpring = "Rigid-Spring";
+
+// Periodicity Condition
+CATFemPeriodicityCondition.Window.Title="Periodicity Condition";
+CATFemPeriodicityCondition.Window.Help="Modifies the periodicity condition";
+CATFemPeriodicityCondition.Window.LongHelp="Modifies the periodicity condition.";
+CATFemPeriodicityCondition.Window.ShortHelp="Periodicity Condition";
+
+// List Manager Connection Fastened
+// ****************************************************************************
+
+CATFemConnFastenedType.Window.Title = "Spring Definition";
+CATFemConnFastenedType.Title = "Property type";
+
+CATFemConnFastenedType.EditButton.Help =  "Property definition";
+CATFemConnFastenedType.EditButton.ShortHelp =  "Property definition";
+CATFemConnFastenedType.EditButton.LongHelp =  "Click to set the property definition";
+
+CATFemFastenedConnType.Label.Title = "Type: ";
+CATFemFastenedConnType.Label.LongHelp = "Choose the property type";
+CATFemFastenedConnType.Label.Label.Help = "Choose the property type";
+CATFemFastenedConnType.Label.Label.ShortHelp = "Property type";
+
+CATFemFastenedConnType.Combo.LongHelp = "Choose the property type";
+CATFemFastenedConnType.Combo.Help = "Choose the property type";
+CATFemFastenedConnType.Combo.ShortHelp = "Property type";
+CATFemFastenedConnType.Combo.Fastened = "Fastened";
+CATFemFastenedConnType.Combo.FastenedSpring = "Fastened-Spring";
+
+// List Manager Connection FaceFace
+// ****************************************************************************
+CATFemConnFaceFaceType.Window.Title = "Contact Definition";
+CATFemConnFaceFaceType.Title = "Property type";
+
+CATFemConnFaceFaceType.Help = "Property type";
+CATFemConnFaceFaceType.ShortHelp = "Property type";
+CATFemConnFaceFaceType.LongHelp = "Choose the property type.";
+CATFemConnFaceFaceType.Label.Help = "Property type";
+CATFemConnFaceFaceType.Label.ShortHelp = "Property type";
+
+CATFemConnFaceFaceType.EditButton.Help =  "Contact definition";
+CATFemConnFaceFaceType.EditButton.ShortHelp =  "Contact definition";
+CATFemConnFaceFaceType.EditButton.LongHelp =  "Click to set the contact definition";
+
+CATFemFaceFaceConnectionType.Label.Title = "Type: ";
+CATFemFaceFaceConnectionType.Label.LongHelp = "Choose the property type";
+CATFemFaceFaceConnectionType.Label.Label.Help = "Choose the property type";
+CATFemFaceFaceConnectionType.Label.Label.ShortHelp = "Property type";
+
+CATFemConnFaceFaceType.Combo.Title = "Property type";
+CATFemFaceFaceConnectionType.Combo.LongHelp = "Choose the property type";
+CATFemFaceFaceConnectionType.Combo.Help = "Choose the property type";
+CATFemFaceFaceConnectionType.Combo.ShortHelp = "Property type";
+CATFemFaceFaceConnectionType.Combo.Contact = "Contact";
+CATFemFaceFaceConnectionType.Combo.Slider = "Slider";
+
+// List Manager Connection Spot Weld
+// ****************************************************************************
+CATFemConnSpotWeldType.Window.Title = "Property Definition";
+CATFemConnSpotWeldType.Title = "Property type";
+
+CATFemConnSpotWeldType.Help = "Property type";
+CATFemConnSpotWeldType.ShortHelp = "Property type";
+CATFemConnSpotWeldType.LongHelp = "Choose the property type.";
+CATFemConnSpotWeldType.Label.Help = "Property type";
+CATFemConnSpotWeldType.Label.ShortHelp = "Property type";
+
+CATFemConnSpotWeldType.EditButton.Help =  "Property Definition";
+CATFemConnSpotWeldType.EditButton.ShortHelp =  "Property Definition";
+CATFemConnSpotWeldType.EditButton.LongHelp =  "Click to set the Property Definition";
+
+CATFemSpotWeldConnectionType.Label.Title = "Type: ";
+CATFemSpotWeldConnectionType.Label.LongHelp = "Choose the property type";
+CATFemSpotWeldConnectionType.Label.Label.Help = "Choose the property type";
+CATFemSpotWeldConnectionType.Label.Label.ShortHelp = "Property type";
+
+CATFemConnSpotWeldType.Combo.Title = "Property type";
+CATFemSpotWeldConnectionType.Combo.LongHelp = "Choose the property type";
+CATFemSpotWeldConnectionType.Combo.Help = "Choose the property type";
+CATFemSpotWeldConnectionType.Combo.ShortHelp = "Property type";
+CATFemSpotWeldConnectionType.Combo.Rigid = "Rigid";
+CATFemSpotWeldConnectionType.Combo.SpringRigidSpring = "Spring-Rigid-Spring";
+CATFemSpotWeldConnectionType.Combo.RigidSpringRigid = "Rigid-Spring-Rigid";
+CATFemSpotWeldConnectionType.Combo.Beam = "Beam";
+CATFemSpotWeldConnectionType.Combo.Hexahedron = "Hexahedron";
+
+// List Manager Connection Seam Weld and Curve-curve
+// ****************************************************************************
+CATFemConnSeamWeldType.Window.Title = "Property Definition";
+CATFemConnSeamWeldType.Title = "Property type";
+
+CATFemConnSeamWeldType.Help = "Property type";
+CATFemConnSeamWeldType.ShortHelp = "Property type";
+CATFemConnSeamWeldType.LongHelp = "Choose the property type.";
+CATFemConnSeamWeldType.Label.Help = "Property type";
+CATFemConnSeamWeldType.Label.ShortHelp = "Property type";
+
+CATFemConnSeamWeldType.EditButton.Help =  "Property Definition";
+CATFemConnSeamWeldType.EditButton.ShortHelp =  "Property Definition";
+CATFemConnSeamWeldType.EditButton.LongHelp =  "Click to set the Property Definition";
+
+CATFemConnCurveCurveWeldType.Window.Title = "Property Definition";
+CATFemConnCurveCurveWeldType.Title = "Property type";
+
+CATFemConnCurveCurveWeldType.Help = "Property type";
+CATFemConnCurveCurveWeldType.ShortHelp = "Property type";
+CATFemConnCurveCurveWeldType.LongHelp = "Choose the property type.";
+CATFemConnCurveCurveWeldType.Label.Help = "Property type";
+CATFemConnCurveCurveWeldType.Label.ShortHelp = "Property type";
+
+CATFemConnCurveCurveWeldType.EditButton.Help =  "Property Definition";
+CATFemConnCurveCurveWeldType.EditButton.ShortHelp =  "Property Definition";
+CATFemConnCurveCurveWeldType.EditButton.LongHelp =  "Click to set the Property Definition";
+
+CATFemSeamWeldConnectionType.Label.Title = "Type: ";
+CATFemSeamWeldConnectionType.Label.LongHelp = "Choose the property type";
+CATFemSeamWeldConnectionType.Label.Label.Help = "Choose the property type";
+CATFemSeamWeldConnectionType.Label.Label.ShortHelp = "Property type";
+
+CATFemConnSeamWeldType.Combo.Title = "Property type";
+CATFemConnCurveCurveWeldType.Combo.Title = "Property type";
+CATFemSeamWeldConnectionType.Combo.LongHelp = "Choose the property type";
+CATFemSeamWeldConnectionType.Combo.Help = "Choose the property type";
+CATFemSeamWeldConnectionType.Combo.ShortHelp = "Property type";
+CATFemSeamWeldConnectionType.Combo.Shell = "Shell";
+CATFemSeamWeldConnectionType.Combo.Rigid = "Rigid";
+CATFemSeamWeldConnectionType.Combo.SpringRigidSpring = "Spring-Rigid-Spring";
+CATFemSeamWeldConnectionType.Combo.RigidSpringRigid = "Rigid-Spring-Rigid";
+CATFemSeamWeldConnectionType.Combo.Beam = "Beam";
+CATFemSeamWeldConnectionType.Combo.Hexahedron = "Hexahedron";
+
+// List Manager Connection Surface Weld
+// ****************************************************************************
+CATFemConnSurfaceWeldType.Window.Title = "Property Definition";
+CATFemConnSurfaceWeldType.Title = "Property type";
+
+CATFemConnSurfaceWeldType.Help = "Property type";
+CATFemConnSurfaceWeldType.ShortHelp = "Property type";
+CATFemConnSurfaceWeldType.LongHelp = "Choose the property type.";
+CATFemConnSurfaceWeldType.Label.Help = "Property type";
+CATFemConnSurfaceWeldType.Label.ShortHelp = "Property type";
+
+CATFemConnSurfaceWeldType.EditButton.Help =  "Property Definition";
+CATFemConnSurfaceWeldType.EditButton.ShortHelp =  "Property Definition";
+CATFemConnSurfaceWeldType.EditButton.LongHelp =  "Click to set the Property Definition";
+
+CATFemSurfaceWeldConnectionType.Label.Title = "Type: ";
+CATFemSurfaceWeldConnectionType.Label.LongHelp = "Choose the property type";
+CATFemSurfaceWeldConnectionType.Label.Label.Help = "Choose the property type";
+CATFemSurfaceWeldConnectionType.Label.Label.ShortHelp = "Property type";
+
+CATFemConnSurfaceWeldType.Combo.Title = "Property type";
+CATFemSurfaceWeldConnectionType.Combo.LongHelp = "Choose the property type";
+CATFemSurfaceWeldConnectionType.Combo.Help = "Choose the property type";
+CATFemSurfaceWeldConnectionType.Combo.ShortHelp = "Property type";
+CATFemSurfaceWeldConnectionType.Combo.Hexahedron = "Hexahedron";
+
+// List Manager Connection User-Defined
+// ****************************************************************************
+
+// ********** START ***************
+CATFemConnUserStartType.Window.Title = "Start connection";
+CATFemConnUserStartType.Title = "Start";
+
+CATFemConnUserStartType.Help = "Start";
+CATFemConnUserStartType.ShortHelp = "Start";
+CATFemConnUserStartType.LongHelp = "Choose the Start element type.";
+CATFemConnUserStartType.Label.Help = "Start";
+CATFemConnUserStartType.Label.ShortHelp = "Start";
+
+CATFemConnUserStartType.EditButton.Help =  "Start connection";
+CATFemConnUserStartType.EditButton.ShortHelp =  "Start connection";
+CATFemConnUserStartType.EditButton.LongHelp =  "Click to define the start connection";
+
+CATFemConnUserStartType_CATFemUserDefClearance.Label.Title="Clearance";
+CATFemConnUserStartType_CATFemUserDefClearance.Label.LongHelp = "Modifies the clearance value.";
+CATFemConnUserStartType_CATFemUserDefClearance.Label.Help = "Modifies the clearance value";
+CATFemConnUserStartType_CATFemUserDefClearance.Label.ShortHelp = "Clearance Value";
+
+CATFemUserConnStartType.Label.Title = "Start: ";
+CATFemUserConnStartType.Label.LongHelp = "Choose the Start element type";
+CATFemUserConnStartType.Label.Label.Help = "Choose the Start element type";
+CATFemUserConnStartType.Label.Label.ShortHelp = "Start";
+
+CATFemUserConnStartType.Combo.Title = "Start";
+CATFemUserConnStartType.Combo.LongHelp = "Choose the start element type.";
+CATFemUserConnStartType.Combo.Help = "Start";
+CATFemUserConnStartType.Combo.ShortHelp = "Start";
+CATFemUserConnStartType.Combo.Rigid = "Rigid";
+CATFemUserConnStartType.Combo.Smooth = "Smooth";
+CATFemUserConnStartType.Combo.SpringSmooth = "Spring-Smooth";
+CATFemUserConnStartType.Combo.SpringRigid = "Spring-Rigid";
+CATFemUserConnStartType.Combo.ContactRigid = "Contact-Rigid";
+
+// ********** Middle ***************
+CATFemConnUserMiddleType.Window.Title = "Middle connection";
+CATFemConnUserMiddleType.Title = "Middle";
+
+CATFemConnUserMiddleType.Help = "Middle";
+CATFemConnUserMiddleType.ShortHelp = "Middle";
+CATFemConnUserMiddleType.LongHelp = "Choose the Middle element type.";
+CATFemConnUserMiddleType.Label.Help = "Middle";
+CATFemConnUserMiddleType.Label.ShortHelp = "Middle";
+
+CATFemConnUserMiddleType.EditButton.Help =  "Middle connection";
+CATFemConnUserMiddleType.EditButton.ShortHelp =  "Middle connection";
+CATFemConnUserMiddleType.EditButton.LongHelp =  "Click to define the Middle connection";
+
+CATFemConnUserMiddleType_CATFemUserDefBolt.Label.Title="Force";
+CATFemConnUserMiddleType_CATFemUserDefBolt.Label.LongHelp = "Modifies the force value.";
+CATFemConnUserMiddleType_CATFemUserDefBolt.Label.Help = "Modifies the force value";
+CATFemConnUserMiddleType_CATFemUserDefBolt.Label.ShortHelp = "force Value";
+
+CATFemUserConnMiddleType.Label.Title = "Middle: ";
+CATFemUserConnMiddleType.Label.LongHelp = "Choose the Middle type";
+CATFemUserConnMiddleType.Label.Label.Help = "Choose the Middle element type";
+CATFemUserConnMiddleType.Label.Label.ShortHelp = "Middle";
+
+CATFemUserConnMiddleType.Combo.Title = "Middle";
+CATFemUserConnMiddleType.Combo.LongHelp = "Choose the Middle element type.";
+CATFemUserConnMiddleType.Combo.Help = "Middle";
+CATFemUserConnMiddleType.Combo.ShortHelp = "Middle";
+CATFemUserConnMiddleType.Combo.Rigid = "Rigid";
+CATFemUserConnMiddleType.Combo.SpringRigidSpring = "Spring-Rigid-Spring";
+CATFemUserConnMiddleType.Combo.RigidSpringRigid = "Rigid-Spring-Rigid";
+CATFemUserConnMiddleType.Combo.SpringRigid = "Spring-Rigid";
+CATFemUserConnMiddleType.Combo.RigidSpring = "Rigid-Spring";
+CATFemUserConnMiddleType.Combo.Beam = "Beam";
+CATFemUserConnMiddleType.Combo.SpringBeamSpring = "Spring-Beam-Spring";
+CATFemUserConnMiddleType.Combo.BeamSpringBeam = "Beam-Spring-Beam";
+CATFemUserConnMiddleType.Combo.SpringBeam = "Spring-Beam";
+CATFemUserConnMiddleType.Combo.BeamSpring = "Beam-Spring";
+CATFemUserConnMiddleType.Combo.BoltRigid = "Bolt-Rigid";
+CATFemUserConnMiddleType.Combo.RigidBolt = "Rigid-Bolt";
+CATFemUserConnMiddleType.Combo.BoltBeam = "Bolt-Beam";
+CATFemUserConnMiddleType.Combo.BeamBolt = "Beam-Bolt";
+CATFemUserConnMiddleType.Combo.BoltRigidSpring = "Bolt-Rigid-Spring";
+CATFemUserConnMiddleType.Combo.SpringRigidBolt = "Spring-Rigid-Bolt";
+
+// ********** End ***************
+CATFemConnUserEndType.Window.Title = "End connection";
+CATFemConnUserEndType.Title = "End";
+
+CATFemConnUserEndType.Help = "End";
+CATFemConnUserEndType.ShortHelp = "End";
+CATFemConnUserEndType.LongHelp = "Choose the End element type.";
+CATFemConnUserEndType.Label.Help = "End";
+CATFemConnUserEndType.Label.ShortHelp = "End";
+
+CATFemConnUserEndType.EditButton.Help =  "End connection";
+CATFemConnUserEndType.EditButton.ShortHelp =  "End connection";
+CATFemConnUserEndType.EditButton.LongHelp =  "Click to define the End connection";
+
+CATFemConnUserEndType_CATFemUserDefClearance.Label.Title="Clearance";
+CATFemConnUserEndType_CATFemUserDefClearance.Label.LongHelp = "Modifies the clearance value.";
+CATFemConnUserEndType_CATFemUserDefClearance.Label.Help = "Modifies the clearance value";
+CATFemConnUserEndType_CATFemUserDefClearance.Label.ShortHelp = "Clearance Value";
+
+CATFemUserConnEndType.Label.Title = "End: ";
+CATFemUserConnEndType.Label.LongHelp = "Choose the End element type";
+CATFemUserConnEndType.Label.Label.Help = "Choose the End element type";
+CATFemUserConnEndType.Label.Label.ShortHelp = "End";
+
+CATFemUserConnEndType.Combo.Title = "End";
+CATFemUserConnEndType.Combo.LongHelp = "Choose the End element type.";
+CATFemUserConnEndType.Combo.Help = "End";
+CATFemUserConnEndType.Combo.ShortHelp = "End";
+CATFemUserConnEndType.Combo.Rigid = "Rigid";
+CATFemUserConnEndType.Combo.Smooth = "Smooth";
+CATFemUserConnEndType.Combo.SmoothSpring = "Smooth-Spring";
+CATFemUserConnEndType.Combo.RigidSpring = "Rigid-Spring";
+CATFemUserConnEndType.Combo.RigidContact = "Rigid-Contact";
+
+
+// NEW BC BEB
+// ****************************************************************************
+//CATFemConnPropertyBC_CATFemContactClearance.Label.Title="Clearance";
+CATFemConnPropertyBC_CATFemContactClearance.Label.LongHelp = "Modifies the clearance value.";
+CATFemConnPropertyBC_CATFemContactClearance.Label.Help = "Modifies the clearance value";
+CATFemConnPropertyBC_CATFemContactClearance.Label.ShortHelp = "Clearance Value";
+
+//CATFemConnPropertyBC_CATFemContactFrictionRatio.Label.Title="Friction ratio";
+CATFemConnPropertyBC_CATFemContactFrictionRatio.Label.LongHelp = "Modifies the Friction ratio.";
+CATFemConnPropertyBC_CATFemContactFrictionRatio.Label.Help = "Modifies the Friction ratio";
+CATFemConnPropertyBC_CATFemContactFrictionRatio.Label.ShortHelp = "Friction ratio";
+// ****************************************************************************
+
+CATFemVirtPartStifAxis.Label.Title="System";
+
+CATFemStifRotation.R1.Title="Rotation stiffness 1: ";
+CATFemStifRotation.R1.LongHelp = "Modifies the rotation stiffness in the first direction of the chosen axis.";
+CATFemStifRotation.R1.Help = "Modifies the rotation stiffness in the first direction of the chosen axis";
+CATFemStifRotation.R1.ShortHelp = "Rotation stiffness in the first direction";
+
+CATFemStifRotation.R2.Title="Rotation stiffness 2: ";
+CATFemStifRotation.R2.LongHelp = "Modifies the rotation stiffness in the second direction of the chosen axis.";
+CATFemStifRotation.R2.Help = "Modifies the rotation stiffness in the second direction of the chosen axis";
+CATFemStifRotation.R2.ShortHelp = "Rotation stiffness in the second direction";
+
+CATFemStifRotation.R3.Title="Rotation stiffness 3: ";
+CATFemStifRotation.R3.LongHelp = "Modifies the rotation stiffness in the third direction of the chosen axis.";
+CATFemStifRotation.R3.Help = "Modifies the rotation stiffness in the third direction of the chosen axis";
+CATFemStifRotation.R3.ShortHelp = "Rotation stiffness in the third direction";
+
+CATFemStifTranslation.T1.Title="Translation stiffness 1: ";
+CATFemStifTranslation.T1.LongHelp = "Modifies the translation stiffness in the first direction of the chosen axis.";
+CATFemStifTranslation.T1.Help = "Modifies the translation stiffness in the first direction of the chosen axis";
+CATFemStifTranslation.T1.ShortHelp = "Translation stiffness in the first direction";
+
+CATFemStifTranslation.T2.Title="Translation stiffness 2: ";
+CATFemStifTranslation.T2.LongHelp = "Modifies the translation stiffness in the second direction of the chosen axis.";
+CATFemStifTranslation.T2.Help = "Modifies the translation stiffness in the second direction of the chosen axis";
+CATFemStifTranslation.T2.ShortHelp = "Translation Stiffness in the second direction";
+
+CATFemStifTranslation.T3.Title="Translation stiffness 3: ";
+CATFemStifTranslation.T3.LongHelp = "Modifies the translation stiffness in the third direction of the chosen axis.";
+CATFemStifTranslation.T3.Help = "Modifies the translation stiffness in the third direction of the chosen axis";
+CATFemStifTranslation.T3.ShortHelp = "Translation stiffness in the third direction";
+
+// Composite Property
+
+CATFemPropertyImportedComposite.Window.Title="Imported Composite Property";
+CATFemPropertyImportedComposite.Window.LongHelp="Modifies the imported composite property characteristics.";
+CATFemPropertyImportedComposite.Window.Help="Modifies the imported composite property characteristics";
+CATFemPropertyImportedComposite.Window.ShortHelp="Imported Composite Property Characteristics";
+
+CATFemImportedCompositeType.Window.Title = "Filter Definition";
+CATFemImportedCompositeType.Label.Title = "Analysis: ";
+CATFemImportedCompositeType.Label.LongHelp = "Choose the analysis type";
+CATFemImportedCompositeType.Label.Label.Help = "Choose the analysis type";
+CATFemImportedCompositeType.Label.Label.ShortHelp = "Analysis type";
+
+CATFemImportedCompositeList.Combo.ByPly = "By ply";
+CATFemImportedCompositeList.Combo.ByZone = "By zone";
+
+CATFemImportedCoreSampling_Title_1.Label ="Core sampling depth";
+CATFemImportedCoreSampling.LongHelp="Choose the core sampling depth to exclude, if wanted, plies or zones.";
+CATFemImportedCoreSampling.Help="Choose the core sampling depth to exclude, if wanted, plies or zones";
+CATFemImportedCoreSampling.ShortHelp="Core sampling depth";
+
+CATFemZonePtr.LabelSupport.Title= "Zone selection: ";
+CATFemZonePtr.RemoveAllSupportsContxt.RemoveAllSupports.Title="Remove All Supports";
+
+CATFemPlyPtr.LabelSupport.Title= "Ply selection: ";
+CATFemPlyPtr.RemoveAllSupportsContxt.RemoveAllSupports.Title="Remove All Supports";
+
+CATFemProducibility.CheckButton = "Transfer producibility";
+CATFemProducibility.LongHelp = "Transfer producibility.";
+
+CATFemCompositeSymmetrical.CheckButton = "Symmetrical";
+CATFemCompositeSymmetrical.LongHelp = "Choose Symmetrical option";
+
+
+SIMZoneGroupNLS = "Zone Group";
+SIMZoneGroupNLS_s = "Zone Groups";  
+SIMPlyNLS = "Ply"; 
+SIMPlyNLS_s = "Plies"; 
+SIMPlyGroupNLS = "Ply Group";
+SIMPlyGroupNLS_s = "Ply Groups";  
+SIMCoreNLS = "Insert";
+SIMCoreNLS_s = "Inserts";
+
+// Mapping Property
+CATFemPropertyMapping.Window.Title = "Mapping Property";
+CATFemPropertyMapping.Window.LongHelp="Modifies the mapping property characteristics";
+CATFemPropertyMapping.Window.Help="Modifies the mapping property characteristics";
+CATFemPropertyMapping.Window.ShortHelp="Mapping Property Characteristics";
+
+// Thickness Mapping
+CATFeaBCPLMDocLoads.Title ="Data Mapping";
+
+
+// Mapping Property
+CATFemBCPLMDoc.LabelDocName.Title="File: ";
+CATFemBCPLMDoc.PushBDocChooser.Title= "Browse";
+CATFemBCPLMDoc.PushBDocChooser.Help="Displays the browser";
+CATFemBCPLMDoc.PushBDocChooser.LongHelp="Displays the browser.";
+CATFemBCPLMDoc.PushBDocChooser.ShortHelp="Browse Folders";
+CATFemBCPLMDoc.PushBDocViewer.Title= "View...";
+CATFemBCPLMDoc.PushBDocViewer.Help="View selected file";
+CATFemBCPLMDoc.PushBDocViewer.LongHelp="View selected file";
+CATFemBCPLMDoc.PushBDocViewer.ShortHelp="View selected file";
+CATFemBCPLMDoc.DocumentChooserDlg.Title="File Selection";

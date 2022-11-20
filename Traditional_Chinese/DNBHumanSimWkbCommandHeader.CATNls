@@ -1,0 +1,200 @@
+// 3951 校正官方漢化 COPYRIGHT DELMIA CORP. 2000
+// 3951 校正官方漢化===================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 DNBHumanSimWkbCommandHeader.CATNls
+// 3951 校正官方漢化
+// 3951 校正官方漢化===================================================================
+// 3951 校正官方漢化  Sep 2000  Creation:                                        RSQ
+// 3951 校正官方漢化  Dec 2001  Added entries for DNBHTSDelay,					   VGL
+// 3951 校正官方漢化			  Viewpoint,Visibility and TextMessage activity
+// 3951 校正官方漢化
+// 3951 校正官方漢化  Dec 2001  Added entries for all other commands on PAR request JVT
+// 3951 校正官方漢化  Dec 2001  Commented out parts relating to DNBSimHeaders's commands 
+// 3951 校正官方漢化            to solve one missing icon problem     -  YMS
+// 3951 校正官方漢化  Feb 2002  Added entry for HTSUpdateWorld				   VGL
+// 3951 校正官方漢化  Apr 2003  Added entry for climbing activities               LFS
+// 3951 校正官方漢化  Apr 2003  Added entry for line tracking cmd                 ATJ
+// 3951 校正官方漢化  Jun 25 2003 - Added messages for r12 Task Energy Expenditure - JVT
+// 3951 校正官方漢化  Nov 12 2003 - Removed entry for HTSUpdateWorld              VGL
+
+// 3951 校正官方漢化===================================================================
+// 3951 校正官方漢化 Reset Posture command
+// 3951 校正官方漢化 ---------------------
+DNBHumanSimWkbCommandHeader.DELMHmuResetPostureHdr.Title="Reset";
+DNBHumanSimWkbCommandHeader.DELMHmuResetPostureHdr.Help="重置姿勢";
+DNBHumanSimWkbCommandHeader.DELMHmuResetPostureHdr.ShortHelp="重置姿勢";
+DNBHumanSimWkbCommandHeader.DELMHmuResetPostureHdr.LongHelp="此命令對選定人體模型應用默認（直立）姿勢。";
+
+
+// 3951 校正官方漢化 Mirror Copy Posture command
+// 3951 校正官方漢化 ---------------------------
+DNBHumanSimWkbCommandHeader.DELMHmuMirrorCopyPostureHdr.Title="鏡像復制";
+DNBHumanSimWkbCommandHeader.DELMHmuMirrorCopyPostureHdr.Help="鏡像復制";
+DNBHumanSimWkbCommandHeader.DELMHmuMirrorCopyPostureHdr.ShortHelp="鏡像復制";
+DNBHumanSimWkbCommandHeader.DELMHmuMirrorCopyPostureHdr.LongHelp="此命令從人體模型的一端向另一端應用全局或本地姿勢。";
+
+// 3951 校正官方漢化 Swap Posture command
+// 3951 校正官方漢化 --------------------
+DNBHumanSimWkbCommandHeader.DELMHmuSwapPostureHdr.Title="Swap";
+DNBHumanSimWkbCommandHeader.DELMHmuSwapPostureHdr.Help="交換姿勢";
+DNBHumanSimWkbCommandHeader.DELMHmuSwapPostureHdr.ShortHelp="交換姿勢";
+DNBHumanSimWkbCommandHeader.DELMHmuSwapPostureHdr.LongHelp="此命令從一端向另一端交換人體模型的姿勢。";
+
+// 3951 校正官方漢化Messages for HTS Reach and IK Mode Commands...
+// 3951 校正官方漢化 Reach Mode (2 directions)
+// 3951 校正官方漢化 ------------------------
+DNBHumanSimWkbCommandHeader.DELMHTSReachModeDirectionHdr.Title="到達模式（2 個方向）";
+DNBHumanSimWkbCommandHeader.DELMHTSReachModeDirectionHdr.Help="到達模式（2 個方向）";
+DNBHumanSimWkbCommandHeader.DELMHTSReachModeDirectionHdr.ShortHelp="到達模式（2 個方向）";
+DNBHumanSimWkbCommandHeader.DELMHTSReachModeDirectionHdr.LongHelp="此命令利用逆運動學讓 
+人體模型到達指定位置（使用 2 個方向）";
+
+// 3951 校正官方漢化 Reach Mode (3 directions)
+// 3951 校正官方漢化 -------------------------
+DNBHumanSimWkbCommandHeader.DELMHTSReachModeFrameHdr.Title="到達模式（3 個方向）";
+DNBHumanSimWkbCommandHeader.DELMHTSReachModeFrameHdr.Help="到達模式（3 個方向）";
+DNBHumanSimWkbCommandHeader.DELMHTSReachModeFrameHdr.ShortHelp="到達模式（3 個方向）";
+DNBHumanSimWkbCommandHeader.DELMHTSReachModeFrameHdr.LongHelp="此命令利用逆運動學讓 
+人體模型到達指定位置（使用 3 個方向）";
+
+// 3951 校正官方漢化 IK Worker Frame Mode command
+// 3951 校正官方漢化 ----------------------------
+DNBHumanSimWkbCommandHeader.DELMHTSIKModeWorkerFrmHdr.Title="IK 員工框架模式";
+DNBHumanSimWkbCommandHeader.DELMHTSIKModeWorkerFrmHdr.Help="逆運動學員工框架模式";
+DNBHumanSimWkbCommandHeader.DELMHTSIKModeWorkerFrmHdr.ShortHelp="逆運動學員工框架模式";
+DNBHumanSimWkbCommandHeader.DELMHTSIKModeWorkerFrmHdr.LongHelp="此命令自動在選定片段上捕捉指南針，
+并激活 IK 以將指南針保留在員工框架中。";
+
+// 3951 校正官方漢化 IK Segment Frame Mode command
+// 3951 校正官方漢化 -----------------------------
+DNBHumanSimWkbCommandHeader.DELMHTSIKModeSegFrmHdr.Title="IK 片段框架模式";
+DNBHumanSimWkbCommandHeader.DELMHTSIKModeSegFrmHdr.Help="逆運動學片段框架模式";
+DNBHumanSimWkbCommandHeader.DELMHTSIKModeSegFrmHdr.ShortHelp="逆運動學片段框架模式";
+DNBHumanSimWkbCommandHeader.DELMHTSIKModeSegFrmHdr.LongHelp="此命令自動在選定片段上捕捉指南針，
+并激活 IK 以將指南針保留在片段框架中。";
+
+DNBHumanSimWkbCommandHeader.GETWorkElement.Title="創建 GET";
+DNBHumanSimWkbCommandHeader.GETWorkElement.Help="創建 GET";
+DNBHumanSimWkbCommandHeader.GETWorkElement.ShortHelp="創建 GET";
+// 3951 校正官方漢化DNBHumanSimWkbCommandHeader.GETWorkElement.LongHelp = "Create Work Element: GET" ;
+
+DNBHumanSimWkbCommandHeader.REACHWorkElement.Title="創建 REACH";
+DNBHumanSimWkbCommandHeader.REACHWorkElement.Help="創建 REACH";
+DNBHumanSimWkbCommandHeader.REACHWorkElement.ShortHelp="創建 REACH";
+// 3951 校正官方漢化DNBHumanSimWkbCommandHeader.REACHWorkElement.LongHelp = "Create Work Element: REACH" ;
+
+DNBHumanSimWkbCommandHeader.PUTWorkElement.Title="創建 PUT";
+DNBHumanSimWkbCommandHeader.PUTWorkElement.Help="創建 PUT";
+DNBHumanSimWkbCommandHeader.PUTWorkElement.ShortHelp="創建 PUT";
+// 3951 校正官方漢化DNBHumanSimWkbCommandHeader.PUTWorkElement.LongHelp = "Create Work Element: PUT" ;
+
+DNBHumanSimWkbCommandHeader.USETOOLWorkElement.Title="創建 USETOOL";
+DNBHumanSimWkbCommandHeader.USETOOLWorkElement.Help="創建 USETOOL";
+DNBHumanSimWkbCommandHeader.USETOOLWorkElement.ShortHelp="創建 USETOOL";
+// 3951 校正官方漢化DNBHumanSimWkbCommandHeader.USETOOLWorkElement.LongHelp = "Create Work Element: USETOOL" ;
+
+DNBHumanSimWkbCommandHeader.GOTOWorkElement.Title="創建 GOTO";
+DNBHumanSimWkbCommandHeader.GOTOWorkElement.Help="創建 GOTO";
+DNBHumanSimWkbCommandHeader.GOTOWorkElement.ShortHelp="創建 GOTO";
+// 3951 校正官方漢化DNBHumanSimWkbCommandHeader.GOTOWorkElement.LongHelp = "Create GOTO" ;
+
+
+DNBHumanSimWkbCommandHeader.GESTUREWorkElement.Title="創建 GESTURES";
+DNBHumanSimWkbCommandHeader.GESTUREWorkElement.Help="創建 GESTURES";
+DNBHumanSimWkbCommandHeader.GESTUREWorkElement.ShortHelp="創建 GESTURES";
+// 3951 校正官方漢化DNBHumanSimWkbCommandHeader.GESTUREWorkElement.LongHelp = "Create GESTURES" ;
+
+DNBHumanSimWkbCommandHeader.BasicSkill.Title="創建基本技能";
+DNBHumanSimWkbCommandHeader.BasicSkill.Help="在庫報告中創建基本技能";
+DNBHumanSimWkbCommandHeader.BasicSkill.ShortHelp="在庫報告中創建基本技能";
+
+DNBHumanSimWkbCommandHeader.EditBasicSkill.Title="編輯基本技能";
+DNBHumanSimWkbCommandHeader.EditBasicSkill.Help="編輯庫報告中存在的基本技能";
+DNBHumanSimWkbCommandHeader.EditBasicSkill.ShortHelp="編輯庫報告中存在的基本技能";
+
+DNBHumanSimWkbCommandHeader.SaveToSkillLibrary.Title="保存到技能庫";
+DNBHumanSimWkbCommandHeader.SaveToSkillLibrary.Help="保存到技能庫";
+DNBHumanSimWkbCommandHeader.SaveToSkillLibrary.ShortHelp="保存到技能庫";
+
+DNBHumanSimWkbCommandHeader.DELHtdSaveToTemplateHdr.Title="保存到庫";
+DNBHumanSimWkbCommandHeader.DELHtdSaveToTemplateHdr.Help="保存到庫";
+DNBHumanSimWkbCommandHeader.DELHtdSaveToTemplateHdr.ShortHelp="保存到庫";
+
+DNBHumanSimWkbCommandHeader.DELHtdInsertFromTemplateHdr.Title="從庫中插入";
+DNBHumanSimWkbCommandHeader.DELHtdInsertFromTemplateHdr.Help="從行為庫中插入";
+DNBHumanSimWkbCommandHeader.DELHtdInsertFromTemplateHdr.ShortHelp="從庫中插入";
+
+
+DNBHumanSimWkbCommandHeader.OperateWorkElement.Title="創建 OPERATE";
+DNBHumanSimWkbCommandHeader.OperateWorkElement.Help="創建 OPERATE";
+DNBHumanSimWkbCommandHeader.OperateWorkElement.ShortHelp="創建 OPERATE";
+
+DNBHumanSimWkbCommandHeader.HumanLocationElement.Title="創建人體位置";
+DNBHumanSimWkbCommandHeader.HumanLocationElement.Help="創建人體位置";
+DNBHumanSimWkbCommandHeader.HumanLocationElement.ShortHelp="創建人體位置";
+
+DNBHumanSimWkbCommandHeader.DELMPostureSeqEditorSubMnu.PostureSeqEditor.Title="我的編輯器";
+DNBHumanSimWkbCommandHeader.DELMPostureSeqEditorSubMnu.PostureSeqEditor.Help="我的編輯器";
+DNBHumanSimWkbCommandHeader.DELMPostureSeqEditorSubMnu.PostureSeqEditor.ShortHelp="我的編輯器";
+DNBHumanSimWkbCommandHeader.DELMPostureSeqEditorSubMnu.PostureSeqEditor.LongHelp="我的編輯器";
+
+DNBHumanSimWkbCommandHeader.HumanTask.Title="創建人工任務";
+DNBHumanSimWkbCommandHeader.HumanTask.Help="創建人工任務";
+DNBHumanSimWkbCommandHeader.HumanTask.ShortHelp="創建人工任務";
+DNBHumanSimWkbCommandHeader.HumanTask.LongHelp="創建人工任務";
+
+DNBHumanSimWkbCommandHeader.HumanTaskFromSQE.Title="創建人工任務";
+DNBHumanSimWkbCommandHeader.HumanTaskFromSQE.Help="創建人工任務";
+DNBHumanSimWkbCommandHeader.HumanTaskFromSQE.ShortHelp="創建人工任務";
+DNBHumanSimWkbCommandHeader.HumanTaskFromSQE.LongHelp="創建人工任務";
+
+DNBHumanSimWkbCommandHeader.DELHtdPasteCmdHdr.Title="使用新鏈接粘貼";
+DNBHumanSimWkbCommandHeader.DELHtdPasteCmdHdr.Help="使用新鏈接粘貼";
+DNBHumanSimWkbCommandHeader.DELHtdPasteCmdHdr.ShortHelp="使用新鏈接粘貼";
+DNBHumanSimWkbCommandHeader.DELHtdPasteCmdHdr.LongHelp="使用新鏈接粘貼";
+
+
+DNBHumanSimWkbCommandHeader.HTDSimulateTask.Title="模擬人工任務";
+DNBHumanSimWkbCommandHeader.HTDSimulateTask.Help="模擬人工任務";
+DNBHumanSimWkbCommandHeader.HTDSimulateTask.ShortHelp="模擬人工任務";
+DNBHumanSimWkbCommandHeader.HTDSimulateTask.LongHelp="模擬人工任務";
+
+DNBHumanSimWkbCommandHeader.HTDODT.Title="驗證位置";
+DNBHumanSimWkbCommandHeader.HTDODT.Help="驗證位置";
+DNBHumanSimWkbCommandHeader.HTDODT.ShortHelp="驗證位置";
+DNBHumanSimWkbCommandHeader.HTDODT.LongHelp="驗證位置";
+
+
+DNBHumanSimWkbCommandHeader.HTDTestGrabbedProducts.Title="測試抓取的對象";
+DNBHumanSimWkbCommandHeader.HTDTestGrabbedProducts.Help="測試抓取的對象";
+DNBHumanSimWkbCommandHeader.HTDTestGrabbedProducts.ShortHelp="測試抓取的對象";
+DNBHumanSimWkbCommandHeader.HTDTestGrabbedProducts.LongHelp="測試抓取的對象";
+
+DNBHumanSimWkbCommandHeader.HTDCAA.Title="使用 CAA 接口創建的測試活動";
+DNBHumanSimWkbCommandHeader.HTDCAA.Help="使用 CAA 接口創建的測試活動";
+DNBHumanSimWkbCommandHeader.HTDCAA.ShortHelp="使用 CAA 接口創建的測試活動";
+DNBHumanSimWkbCommandHeader.HTDCAA.LongHelp="使用 CAA 接口創建的測試活動";
+
+// 3951 校正官方漢化 ODT Validation command
+DNBHumanSimWkbCommandHeader.DNBHtdTestVals.Title="驗證 ODT";
+DNBHumanSimWkbCommandHeader.DNBHtdTestVals.Help="驗證 ODT 結果";
+DNBHumanSimWkbCommandHeader.DNBHtdTestVals.ShortHelp="驗證 ODT 結果";
+DNBHumanSimWkbCommandHeader.DNBHtdTestVals.LongHelp="驗證 ODT 結果（如自由度和位置） ";
+
+// 3951 校正官方漢化 New ODT validation command
+DNBHumanSimWkbCommandHeader.HTDODT.Title="HTDODT";
+DNBHumanSimWkbCommandHeader.HTDODT.Help="HTDODT";
+DNBHumanSimWkbCommandHeader.HTDODT.ShortHelp="HTDODT";
+DNBHumanSimWkbCommandHeader.HTDODT.LongHelp="驗證 ODT 結果（如自由度和位置） ";
+
+
+// 3951 校正官方漢化 EnergyExpend Command
+DNBHumanSimWkbCommandHeader.DELMEnergyExpendHdr.Title="單個任務的能量消費計算";
+DNBHumanSimWkbCommandHeader.DELMEnergyExpendHdr.ShortHelp="單個任務的能量消費計算";
+DNBHumanSimWkbCommandHeader.DELMEnergyExpendHdr.Help="單個任務的能量消費計算";
+DNBHumanSimWkbCommandHeader.DELMEnergyExpendHdr.LongHelp="單個任務的能量消費計算";
+
+
+DNBHumanSimWkbCommandHeader.DELHtdSqeOpenPropertyCmdHdr.Title="屬性";
+DNBHumanSimWkbCommandHeader.DELHtdSqeOpenPropertyCmdHdr.Help="屬性";
+DNBHumanSimWkbCommandHeader.DELHtdSqeOpenPropertyCmdHdr.ShortHelp="屬性";

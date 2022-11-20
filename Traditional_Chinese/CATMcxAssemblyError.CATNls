@@ -1,0 +1,91 @@
+// 3951 校正官方漢化 CATMcxAssemblyError.CATNls
+
+InputValue_err1="類型參數: 未賦值";
+InputValue_err2="父參數: 未賦值";
+InputValue_err3="父參數: 無效值";
+InputValue_err4="上下文參數: 無效值";
+InputValue_err5="第一元素: 未賦值";
+InputValue_err6="第一元素: 無效值";
+InputValue_err7="第二元素: 無效值";
+InputValue_err8="第三元素: 無效值";
+InputValue_err9="第二元素: 未賦值";
+InputValue_err10="類型參數: 無效值";
+
+InputConsistency_err1="已賦值元素的數目與選定的約束類型不符";
+
+Port_err1="端口元素的父產品不等于目標元素的參考產品";
+
+PLO_err1="在第一元素上創建可鏈接對象時失敗";
+PLO_err2="在第二元素上創建可鏈接對象時失敗";
+PLO_err3="在第三元素上創建可鏈接對象時失敗";
+
+GeometryType_err1="選定的幾何圖形類型與選定的約束類型不符";
+
+Constraint_err1="創建約束失敗";
+Constraint_err2="創建約束類型失敗";
+Constraint_err3="約束特征不執行 /P1 接口的操作";
+Constraint_err4="創建可鏈接對象失敗";
+
+TargetPath_err1="第一元素的產品實例沒有根產品";
+TargetPath_err2="第二元素的產品實例沒有根產品";
+TargetPath_err3="第三元素的產品實例沒有根產品";
+TargetPath_err4="第一元素的產品實例的根產品不是父產品";
+TargetPath_err5="第二元素的產品實例的根產品不是父產品";
+TargetPath_err6="第三元素的產品實例的根產品不是父產品";
+TargetPath_err7="上下文實例不是父產品的一個實例";
+TargetPath_err8="第二元素的實例產品是上下文實例的子級";
+TargetPath_err9="上下文實例和第二元素的實例產品不具備相同的根產品";
+TargetPath_err10="指向父產品的展示元素的元素不是第二元素";
+
+OverConstraint.shortDiagnosis="更新工程連接的網絡失敗。";
+OverConstraint.fullDiagnosis="更新工程連接的網絡失敗。\n檢查是否存在過分約束的情況。";
+
+MCXNotVerifiedBecauseOfOverConstraint.shortDiagnosis="由于過分約束的情況，工程連接未通過驗證。";
+MCXNotVerifiedBecauseOfOverConstraint.fullDiagnosis="由于過分約束的情況，工程連接未通過驗證。";
+
+MCXUpdateFailed.shortDiagnosis="更新工程連接失敗。";
+MCXUpdateFailed.fullDiagnosis="更新工程連接失敗。";
+
+MCXDesactivatedWarning.shortDiagnosis="已忽略停用的工程連接";
+MCXDesactivatedWarning.fullDiagnosis="檢查停用的工程連接的相關性";
+
+UnsolvedRelationErrorPointedNotFoundInDatabase.shortDiagnosis="被指向的元素不在數據庫中。";
+UnsolvedRelationErrorPointedNotFoundInDatabase.fullDiagnosis="被指向的元素不在數據庫中。";
+UnsolvedRelationErrorPointedDeletedInSession.shortDiagnosis="被指向的元素在會話中被刪除。";
+UnsolvedRelationErrorPointedDeletedInSession.fullDiagnosis="被指向的元素在會話中被刪除。";
+UnsolvedRelationErrorUnableToComputeUpdateStatusOfConstraint.shortDiagnosis="無法找到必需輸入。";
+UnsolvedRelationErrorUnableToComputeUpdateStatusOfConstraint.fullDiagnosis="無法計算約束的更新狀態，因為有一個被指向的部件未被加載。";
+DeletedReference.shortDiagnosis="已刪除的參考";
+DeletedReference.fullDiagnosis="已刪除的參考";
+ReferenceInError.shortDiagnosis="發生錯誤的參考";
+ReferenceInError.fullDiagnosis="發生錯誤的參考";
+NotOverloadableReference.shortDiagnosis="不是可過載的參考";
+NotOverloadableReference.fullDiagnosis="不是可過載的參考";
+ReferenceWillBeDeleted.shortDiagnosis="將刪除參考";
+ReferenceWillBeDeleted.fullDiagnosis="將刪除參考";
+ContextualMCXNotOverloadable.shortDiagnosis="此工程連接無法過載";
+ContextualMCXNotOverloadable.fullDiagnosis="此工程連接無法過載，因為它是上下文工程連接。";
+UnsolvedRelationWarningPointedOutOfDate.shortDiagnosis="此工程連接可能不是最新的";
+UnsolvedRelationWarningPointedOutOfDate.fullDiagnosis="此工程連接可能不是最新的。某些所需的數據沒有打開。";
+
+WarningPathTooShort.shortDiagnosis="已更改此工程連接的受影響產品。";
+WarningPathTooShort.fullDiagnosis="已更改此工程連接的受影響產品。\n 這是因為某些產品的柔性已被修改。\n 您應編輯此工程連接以重新連接其受影響產品。";
+ErrorPathTooLong.shortDiagnosis="已更改此工程連接的受影響產品。";
+ErrorPathTooLong.fullDiagnosis="已更改此工程連接的受影響產品。\n 這是因為某些產品的柔性已被修改。\n無法求解此工程連接。\n 您必須編輯此工程連接以重新連接其受影響產品。";
+ErrorPrdBecameRigid.shortDiagnosis="無法求解此工程連接。";
+ErrorPrdBecameRigid.fullDiagnosis="已更改此工程連接的受影響產品。\n 這是因為柔性已被修改。n\無法求解此工程連接，因為受影響產品在同一剛性裝配中。\n 請刪除此工程連接。";
+ErrorPrdBecameFlexible.shortDiagnosis="無法求解此工程連接。";
+ErrorPrdBecameFlexible.fullDiagnosis="無法求解此工程連接，因為它有太多受影響產品。\n 這是由于受影響產品內的柔性已被修改。\n 請編輯此工程連接以分割它。";
+
+UnsolvedRelationErrorUnableToSolveTheNetworkOfConstraints.shortDiagnosis="無法求解約束的網絡。";
+UnsolvedRelationErrorUnableToSolveTheNetworkOfConstraints.fullDiagnosis="無法求解約束的網絡，因為一個或幾個求解所需的展示參照不在會話中。";
+UnsolvedRelationWarningPointedOutOfWorkspace.shortDiagnosis="被指向的元素超出工作空間。";
+UnsolvedRelationWarningPointedOutOfWorkspace.fullDiagnosis="工程連接被忽略，因為有一個被指向的元素不在當前的設計器工作空間內。";
+UnsolvedRelationWarningPointedMinorNotInSession.shortDiagnosis="被指向的元素不是會話中的次要元素。";
+UnsolvedRelationWarningPointedMinorNotInSession.fullDiagnosis="工程連接可能不是最新狀態。被指向的次要項不是會話中的次要項，并且已在此會話之外對其進行修改。";
+UnsolvedRelationErrorPointedMinorNotInSession.shortDiagnosis="已過期，并且被指向的元素不是會話中的次要元素。";
+UnsolvedRelationErrorPointedMinorNotInSession.fullDiagnosis="無法更新約束，因為有一個被指向的部件不是會話中的次要部件。";
+UnsolvedRelationErrorUnableToSolveTheNetworkOfConstraintsMinorIssue.shortDiagnosis="無法求解約束的網絡。";
+UnsolvedRelationErrorUnableToSolveTheNetworkOfConstraintsMinorIssue.fullDiagnosis="無法求解約束的網絡，因為有一個工程連接影響不在會話中的某個次要項。";
+ErrorIncompatibleConfiguration.shortDiagnosis="此工程連接的受影響產品具有不兼容的配置。";
+ErrorIncompatibleConfiguration.fullDiagnosis="此工程連接的受影響產品具有不兼容的配置。\n請取消激活此 MCX 或使用更新向導進行操作。";

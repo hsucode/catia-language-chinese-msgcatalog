@@ -1,0 +1,50 @@
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES  2005
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 CATStCmdOLDTopoFillet: Resource file for NLS purpose related to TopoFillet command
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Implementation Notes:
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 September 05   Creation                                    Ritesh Kanetkar
+// 3951 校正官方漢化=============================================================================
+
+CATStCmdOLDTopoFillet.Title="樣式圓角";
+
+CATStCmdOLDTopoFillet.SelectionState1.Message="選擇第一組曲面，用于圓角操作。";
+CATStCmdOLDTopoFillet.SelectionState2.Message="選擇第二組曲面，用于圓角操作。";
+CATStCmdOLDTopoFillet.SelectionState3.Message="在第一組曲面中，選擇用于圓角操作的曲線。";
+CATStCmdOLDTopoFillet.SelectionState4.Message="在第二組曲面中，選擇用于圓角操作的曲線。";
+CATStCmdOLDTopoFillet.SelectionState5.Message="選擇脊線，用于圓角操作。";
+CATStCmdOLDTopoFillet.SelectionState6.Message="選擇脊線上的點，用于圓角操作。";
+CATStCmdOLDTopoFillet.SelectionState7.Message="圓角操作的操作狀態。";
+
+TopoFilletG0.Message="G0";
+TopoFilletG1.Message="G1";
+TopoFilletG2.Message="G2";
+TopoFilletG3.Message="G3";
+
+TopoRadiEdit.Message="編輯";
+
+GapError1.Message="檢測到組中輸入元素";
+GapError2.Message="之間存在間隔。";
+PtOnSpineError.Message="應在選定的脊線上選擇或創建點。";
+
+TopoRadiusCke.Message="半徑";
+TopoMinRadiusCke.Message="最小半徑";
+TopoSmallSurValCke.Message="簡化";
+TopoVarRadiCke.Message="可變半徑";
+
+EditError.Message="無法編輯特征";
+
+TopoFilletDeviationDisplayError.Message="無法更改“偏差顯示”選項，
+這是因為沒有更新圓角結果。請單擊“應用”或“確定”按鈕更新圓角結果。";
+
+G1ContinuityError.Message="該組要外插延伸的輸入邊線不是 G1 連續的。";
+InvalidEdgesToExtrapolateError.Message="外插延伸之后，這些要外插延伸的邊線組在不同輸入曲面組之間找不到共同的邊線。";
+VariableFillet.Title="可變圓角";
+VariableFilletInputInfo.Message="若要創建具有給定輸入曲面組的可變圓角，請根據需要
+在每個“支持面”組中選擇要外插延伸的邊線。";

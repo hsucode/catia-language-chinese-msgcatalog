@@ -1,0 +1,541 @@
+ERR_Title="錯誤";
+WNG_Title="警告";
+INF_Title="信息";
+
+ERR_License.Request="消息來自：/P01";
+ERR_License.Diagnostic="缺少許可證：您無權使用此功能。";
+ERR_License.Advice="獲取授權您使用此功能的許可證。";
+
+ERR_License_LSA_LoadMapping.Request="消息來自：/P01";
+ERR_License_LSA_LoadMapping.Diagnostic="缺少許可證：您無權使用數據映射功能。";
+ERR_License_LSA_LoadMapping.Advice="獲取授權您使用此功能的許可證。";
+
+ERR_Material_BadDefinition.Request="消息來自：/P01";
+ERR_Material_BadDefinition.Diagnostic="未正確定義材料分析域。";
+ERR_Material_BadDefinition.Advice="檢查材料分析域定義。";
+
+ERR_CreateMoreThanOneScenario.Diagnostic="未授權創建多個方案。";
+
+ERR_CreateScenarioWithOutProduct.Diagnostic="您不能創建方案。\n模擬對象沒有產品\n或產品沒有 FEM 展示。";
+
+ERR_Property_NoApply.Request="消息來自：/P01";
+ERR_Property_NoApply.Diagnostic="未找到關聯的 FE：無法創建屬性。";
+ERR_Property_NoApply.Advice="檢查您的數據：對于本地屬性，FE 必須包含在全局屬性 FE 中。";
+
+ERR_Property_MaterialAnalysisDomainNotFound.Request="消息來自：/P01";
+ERR_Property_MaterialAnalysisDomainNotFound.Diagnostic="未找到材料。";
+ERR_Property_MaterialAnalysisDomainNotFound.Advice="檢查以下項：\n - 會話中是否已加載每個支持面。\n - 屬性或屬性支持面上是否至少已應用一個實心材料。\n - 會話中是否已加載每個材料。\n - 每個材料是否都有 ELFINI 線性彈性域。";
+
+ERR_Property_MaterialIsotropicOnly.Request="消息來自：/P01";
+ERR_Property_MaterialIsotropicOnly.Diagnostic="不允許使用材料類型。";
+ERR_Property_MaterialIsotropicOnly.Advice="僅處理各向同性材料：請更改材料。";
+
+ERR_Property_MaterialMechanicalOnly.Request="消息來自：/P01";
+ERR_Property_MaterialMechanicalOnly.Diagnostic="不允許使用域類型。";
+ERR_Property_MaterialMechanicalOnly.Advice="僅處理 ELFINI 線性彈性材料域：更改域。";
+
+ERR_Property_MaterialNoOrthotropic2D.Request="消息來自：/P01";
+ERR_Property_MaterialNoOrthotropic2D.Diagnostic="不允許使用材料類型。";
+ERR_Property_MaterialNoOrthotropic2D.Advice="不處理正交各向異性 2D 材料：更改材料。";
+
+ERR_Property_BadInOuDimension.Request="消息來自：/P01";
+ERR_Property_BadInOuDimension.Diagnostic="外徑必須大于內徑。";
+ERR_Property_BadInOuDimension.Advice="檢查直徑的一致性。";
+
+ERR_Property_ProfileNotConsistent.Request="消息來自：/P01";
+ERR_Property_ProfileNotConsistent.Diagnostic="對于橫梁輪廓，參數不允許形狀一致。參數已恢復。";
+ERR_Property_ProfileNotConsistent.Advice="檢查參數。";
+
+ERR_Property_OrientationGeometryNotAllowed.Request="消息來自：/P01";
+ERR_Property_OrientationGeometryNotAllowed.Diagnostic="選定的幾何圖形不能是方向幾何圖形。";
+ERR_Property_OrientationGeometryNotAllowed.Advice="方向幾何圖形只能是點、直線或曲面。";
+
+ERR_Property_PointToCloseNotAllowed.Request="消息來自：/P01";
+ERR_Property_PointToCloseNotAllowed.Diagnostic="不允許將選定點作為支持面/P21的方向點。";
+ERR_Property_PointToCloseNotAllowed.Advice="方向點不能位于屬性支持面上。";
+
+ERR_Property_PointAlignedWithSupportNotAllowed.Request="消息來自：/P01";
+ERR_Property_PointAlignedWithSupportNotAllowed.Diagnostic="不允許將選定點作為支持面 /P21 的方向點。";
+ERR_Property_PointAlignedWithSupportNotAllowed.Advice="方向點不能與屬性支持面的任何幾何子零件對齊。";
+
+ERR_Property_ParallelLineNotAllowed.Request="消息來自：/P01";
+ERR_Property_ParallelLineNotAllowed.Diagnostic="不允許將選定行作為支持面/P21的方向幾何圖形。";
+ERR_Property_ParallelLineNotAllowed.Advice="方向直線不能與屬性支持面的任何幾何子零件平行。";
+
+ERR_Property_MaterialOrientation.Request="消息來自：/P01";
+ERR_Property_MaterialOrientation.Diagnostic="必須定向正交各向異性材料。";
+ERR_Property_MaterialOrientation.Advice="使用局部軸線或曲面邊線定向材料。";
+
+ERR_Property_MaterialOrientationBySurf.Request="消息來自：/P01";
+ERR_Property_MaterialOrientationBySurf.Diagnostic="選定邊線必須是直線。";
+ERR_Property_MaterialOrientationBySurf.Advice="選擇直線以定向材料。";
+
+ERR_Property_MaterialOrientationInvalidDirection.Request="消息來自：/P01";
+ERR_Property_MaterialOrientationInvalidDirection.Diagnostic="部分有限元素方向無效：方向幾何圖形導致方向與橫梁支持面平行。";
+ERR_Property_MaterialOrientationInvalidDirection.Advice="更改幾何圖形方向。";
+
+ERR_Property_AllowOnlyConnexMesh.Request="消息來自：/P01";
+ERR_Property_AllowOnlyConnexMesh.Diagnostic="相關聯的網格包含非連通子零件。";
+ERR_Property_AllowOnlyConnexMesh.Advice="只能處理連通網格組件。";
+
+ERR_Property_BeamPropForCnx.Request="消息來自：/P01";
+ERR_Property_BeamPropForCnx.Diagnostic="連接上下文中不允許使用可變橫梁。";
+ERR_Property_BeamPropForCnx.Advice="使用允許的配置。";
+
+ERR_Property_SurfacicPropNoDataMapping.Request="消息來自：/P01。\n不能使用數據映射功能定義 /P01。";
+ERR_Property_SurfacicPropNoDataMapping.Diagnostic="厚度數據映射不能用于本地屬性或連接屬性的定義中。";
+ERR_Property_SurfacicPropNoDataMapping.Advice="厚度數據映射只能與全局屬性結合使用。";
+
+ERR_Property_SurfacicPropForCnxOnlyShell.Request="消息來自：/P01";
+ERR_Property_SurfacicPropForCnxOnlyShell.Diagnostic="連接上下文中只允許使用盒體元素。";
+ERR_Property_SurfacicPropForCnxOnlyShell.Advice="使用允許的配置。";
+
+ERR_Property_RodNoOffset.Request="消息來自：/P01";
+ERR_Property_RodNoOffset.Diagnostic="不能將偏移應用于桿元素。";
+ERR_Property_RodNoOffset.Advice="取消偏移。";
+
+ERR_Property_RodNoDOF.Request="消息來自：/P01";
+ERR_Property_RodNoDOF.Diagnostic="不能將自由度發布應用于桿元素。";
+ERR_Property_RodNoDOF.Advice="取消自由度發布。";
+
+ERR_Property_BadOrient.Request="消息來自：/P01";
+ERR_Property_BadOrient.Diagnostic="方向幾何圖形至少與一個有限元素平行。";
+ERR_Property_BadOrient.Advice="無法定向橫梁輪廓。";
+
+WNG_Property_NullInertia.Request="消息來自：/P01";
+WNG_Property_NullInertia.Diagnostic="使用橫梁 X 軸上的兼容網格旋轉觸發旋轉奇點。";
+WNG_Property_NullInertia.Advice="為避免旋轉奇點，已將橫梁 X 軸上的慣量設置為 0。";
+
+WNG_Property_ShearToMembrane.Request="消息來自：/P01";
+WNG_Property_ShearToMembrane.Diagnostic="只能在 QD4 上應用剪切面板。";
+WNG_Property_ShearToMembrane.Advice="已將薄膜應用于未處理剪切平面的 FE。";
+
+WNG_Property_SurfaceOffsetMembAndShear.Request="消息來自：/P01";
+WNG_Property_SurfaceOffsetMembAndShear.Diagnostic="只能對盒體元素應用曲面偏移。";
+WNG_Property_SurfaceOffsetMembAndShear.Advice="將忽略給定的屬性偏移。";
+
+WNG_LocalProperty_Filter.Request="消息來自：/P01";
+WNG_LocalProperty_Filter.Diagnostic="只能將本地屬性應用于對應全局屬性關聯的 FE 子集。";
+WNG_LocalProperty_Filter.Advice="本地屬性尚未應用于所有 FE。";
+
+ERR_PropertyConnection1.Request="消息來自：/P01";
+ERR_PropertyConnection1.Diagnostic="不允許選定的支持面：/P21。";
+ERR_PropertyConnection1.Advice="可能的原因：未加載與連接相關聯的形狀。";
+
+ERR_PropertyConnection2.Request="消息來自：/P01";
+ERR_PropertyConnection2.Diagnostic="無法在線或點上為接觸和滑塊連接計算法線。";
+ERR_PropertyConnection2.Advice="檢查 MCX  的物理鏈接。";
+
+WNG_PropertyConnection_NoMCX.Diagnostic="未選定任何工程連接。";
+WNG_PropertyConnection_NoMCX.Advice="請先選擇連接然后重試。";
+
+ERR_PropertyConnection_WrongMCX.Request="消息來自：/P01";
+ERR_PropertyConnection_WrongMCX.Diagnostic="不能從工程連接扣除自由度。";
+ERR_PropertyConnection_WrongMCX.Advice="檢查連接是否已停用。";
+
+ERR_PropertyConnection_BadTypeMCX.Request="消息來自：/P01";
+ERR_PropertyConnection_BadTypeMCX.Diagnostic="工程連接包含錯誤的動態屬性類型。";
+ERR_PropertyConnection_BadTypeMCX.Advice="檢查指向的連接。";
+
+ERR_PropertyConnection_Contact.Request="消息來自：/P01";
+ERR_PropertyConnection_Contact.Diagnostic="間隙計算期間出錯。";
+ERR_PropertyConnection_Contact.Advice="檢查連接的幾何鏈接。";
+
+ERR_PropertyConnection3.Request="消息來自：/P01";
+ERR_PropertyConnection3.Diagnostic="摩擦比參數超出范圍。";
+ERR_PropertyConnection3.Advice="將摩擦比設置為 0 到 1 之間。";
+
+ERR_PropertyConnection4.Request="消息來自：/P01";
+ERR_PropertyConnection4.Diagnostic="不允許使用螺栓。連接的所有幾何圖形均沒有旋轉軸。";
+
+ERR_PropertyConnection5.Request="消息來自：/P01";
+ERR_PropertyConnection5.Diagnostic="不允許在屬于 2D 的曲面上接觸。";
+ERR_PropertyConnection5.Advice="更改 MCX 的幾何鏈接。";
+
+ERR_PropertyConnection6.Request="消息來自：/P01";
+ERR_PropertyConnection6.Diagnostic="相關聯的網格需要至少一個面作為幾何支持面。";
+ERR_PropertyConnection6.Advice="至少在連接的一側選擇面。";
+
+ERR_PropertyConnection_BoltNullSize.Request="消息來自：/P01";
+ERR_PropertyConnection_BoltNullSize.Diagnostic="檢測到螺栓固緊元素大小為空，這不是有效配置。";
+ERR_PropertyConnection_BoltNullSize.Advice="檢查連接。";
+
+ERR_PropertyConnection_BeamNullSize.Request="消息來自：/P01";
+ERR_PropertyConnection_BeamNullSize.Diagnostic="檢測到橫梁元素大小為空，這不是有效配置。";
+ERR_PropertyConnection_BeamNullSize.Advice="檢查連接。";
+
+WNG_PropertyConnection_NoMesh.Request="不考慮 /P01";
+WNG_PropertyConnection_NoMesh.Diagnostic="未激活相關聯的網格。";
+
+ERR_GlobalSensor_SizeOfOccurrencesListZero.Request="消息來自：/P01";
+ERR_GlobalSensor_SizeOfOccurrencesListZero.Diagnostic="未找到匹配項。";
+ERR_GlobalSensor_SizeOfOccurrencesListZero.Advice="請檢查解法，它可能是奇點。";
+
+ERR_CATFeaBearingLoad_01.Request="消息來自：/P01";
+ERR_CATFeaBearingLoad_01.Diagnostic="支持面必須共用同一個軸線。";
+ERR_CATFeaBearingLoad_01.Advice="使所有支持面的軸線重合。";
+
+ERR_CATFeaBearingLoad_02.Request="消息來自：/P01";
+ERR_CATFeaBearingLoad_02.Diagnostic="力與支持面旋轉軸線平行，所生成的負載為空。";
+ERR_CATFeaBearingLoad_02.Advice="更改力方向。";
+
+WNG_CATFeaBoltTightening_01.Request="消息來自：/P01";
+WNG_CATFeaBoltTightening_01.Diagnostic="沒有相關聯的網格元素。";
+WNG_CATFeaBoltTightening_01.Advice="更改力方向。";
+
+ERR_CATFeaBoltTightening_02.Request="消息來自：/P01";
+ERR_CATFeaBoltTightening_02.Diagnostic="未找到唯一的螺栓方向。";
+ERR_CATFeaBoltTightening_02.Advice="檢查連接支持面，并確保支持面的軸相重合。";
+ERR_Property_NoMaterialInProperty.Request="消息來自：/P01";
+ERR_Property_NoMaterialInProperty.Diagnostic="屬性定義中沒有相關聯的材料。";
+ERR_Property_NoMaterialInProperty.Advice="檢查為屬性定義的材料。";
+
+ERR_LoadsMapping_InvalidFile.Request="消息來自：/P01";
+ERR_LoadsMapping_InvalidFile.Diagnostic="用于映射的關聯文件無效。";
+ERR_LoadsMapping_InvalidFile.Advice="選擇用于映射的現有文件。";
+
+ERR_LoadsMapping_NoOfCols.Request="消息來自：/P01";
+ERR_LoadsMapping_NoOfCols.Diagnostic="用于數據映射的文件必須包含 4 列。";
+ERR_LoadsMapping_NoOfCols.Advice="選擇用于數據映射的有效文件。";
+
+ERR_LoadsMapping_NoOfRows.Request="消息來自：/P01";
+ERR_LoadsMapping_NoOfRows.Diagnostic="文件中沒有用于映射的數據。";
+ERR_LoadsMapping_NoOfRows.Advice="選擇包含可用于映射的數據的文件。";
+
+ERR_LoadsMapping_CoordinateUnit.Request="消息來自：/P01";
+ERR_LoadsMapping_CoordinateUnit.Diagnostic="文件中用于映射的坐標單位無效。";
+ERR_LoadsMapping_CoordinateUnit.Advice="選擇包含可用于映射的有效坐標單位的文件。";
+
+WNG_LoadsMapping_01.Request="消息來自：/P01";
+WNG_LoadsMapping_01.Diagnostic="支持面的部分網格實體尚未收到值。";
+WNG_LoadsMapping_01.Advice="檢查帶有幾何支持面的數據域的交集。";
+
+ERR_LoadsMapping_02.Request="消息來自：/P01";
+ERR_LoadsMapping_02.Diagnostic="沒有與 /p1 規格的支持面關聯的網格。";
+ERR_LoadsMapping_02.Advice="檢查實體支持面和數據映射參數之間的一致性。";
+
+
+ERR_MappingProperty_NoAssocGroupFE.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n/P21\n此組沒有請求尺寸的任何關聯有限元素。";
+ERR_MappingProperty_MultipleMPNames.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n/P21\nxml 參考不能包含多個具有交集(;)的網格名稱，因為元素不能屬于多個網格。";
+ERR_MappingProperty_PathNotFound.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n/P21\n在樹中未找到路徑。";
+ERR_MappingProperty_NoAssocMPFE.Diagnostic="無法更新實體 /P22。 \n在文件 /P23 中找到錯誤。\n第 /P01 行：\n/P21\n此網格零件沒有請求尺寸的任何關聯有限元素。";
+
+ERR_MappingProperty_Wrong_Default_Axis.Diagnostic="無法更新實體 /P22。在文件 /P23 中找到錯誤。\n第 /P01 行：\n/P21\n已定義的軸線無效。";
+ERR_MappingProperty_Wrong_Default_Axis.Advice="檢查支持面，并給出 CATIA 樹中現有軸線的路徑，或以期望的格式輸入軸線值。";
+
+ERR_MappingProperty_SpatialCoordMissing.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n空間標識不完整。";
+ERR_MappingProperty_SpatialCoordMissing.Advice="請檢查是否已定義 X、Y 和 Z 坐標。";
+
+ERR_MappingProperty_NoEltsToSearch.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n模型中沒有請求尺寸的任何元素。";
+ERR_MappingProperty_NoEltsToSearch.Advice="請檢查您的模型是否與請求的屬性相兼容。";
+
+ERR_MappingProperty_ProhibitedGroupTypeUsed.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01  行：\n/P21\n僅允許將幾何組和邊界組用于關聯的元素標識。";
+ERR_MappingProperty_ProhibitedGroupTypeUsed.Advice="檢查用于 xml 文件中關聯元素標識的組類型。";
+ERR_MappingProperty_NoAssocNode.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n/P21\nxml 參考沒有任何關聯節點。";
+
+ERR_MappingProperty_UnionAndIntersectionSpecified.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n/P21\n。不能同時使用相交 (;) 和聯合 (+)。";
+ERR_MappingProperty_UnionAndIntersectionSpecified.Advice="指定聯合或相交。";
+
+ERR_MappingProperty_Beam_XAndWParallel.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n選擇的方向導致方向與屬于\n/P21 的橫梁元素平行。\n將無法計算橫梁每個元素上的局部軸線。";
+ERR_MappingProperty_Beam_XAndWParallel.Advice="選擇其他方向。";
+
+ERR_MappingProperty_ParallelElementLocation="/P01 網格位于：\n/P02";
+
+ERR_MappingProperty_LineNotStraight.Request="無法更新實體 /P01";
+ERR_MappingProperty_LineNotStraight.Diagnostic="在文件 /P23 中找到錯誤。第 /P01 行：\n/P21 \n指定的方向幾何圖形不是直線。";
+ERR_MappingProperty_LineNotStraight.Advice="為方向選擇直線。";
+
+ERR_MappingProperty_MappingProperty_NoElementsFound="所有元素均未應用屬性。";
+ERR_MappingProperty_MappingProperty_NoElementsFound.Diagnostic="無法更新 /P01。\n以上屬性無法應用于任何元素。";
+ERR_MappingProperty_MappingProperty_NoElementsFound.Advice="請驗證 xml 文件中是否至少指定了一個元素。";
+
+ERR_Mesh_ExplicitProperty2D.Diagnostic="沒有與 /P01 關聯的網格元素。";
+ERR_Mesh_ExplicitProperty2D.Advice="檢查實體的網格支持面。";
+WNG_Mesh_ExplicitProperty2D="沒有與 /P01 關聯的網格元素。";
+
+WNG_MappingProperty_EltNotFound.Request="尚未找到屬性為 /P01 的部分有限元素";
+WNG_MappingProperty_EltNotFound.Diagnostic="元素坐標：X=/P11 Y=/P12 Z=/P13";
+
+WNG_MappingProperty_NoCommonElts.Request="尚未找到屬性為 /P01 的部分有限元素";
+WNG_MappingProperty_NoCommonElts.Diagnostic="第 /P01 行：/P21 /P22 /P23xml 參考沒有任何公共有限元素。";
+
+ERR_MappingProperty_SeveralOrientation.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n方向定義必須唯一。";
+
+ERR_MappingProperty_MissingDof.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n缺少自由度定義。";
+ERR_MappingProperty_MissingDof.Advice="您必須定義自由度特性的起點和終點。";
+
+ERR_MappingProperty_Beam_NoDefinedOrientation.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n未定義任何方向。\n方向定義對于橫梁屬性是必須的。";
+ERR_MappingProperty_Beam_NoDefinedOrientation.Advice="為此橫梁屬性定義方向。";
+
+ERR_MappingProperty_Beam_NullSize.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n在\n /P21\n 中找到的元素的方向規格大小為空，從而導致向量為空。";
+ERR_MappingProperty_Beam_NullSize.Advice="更改網格或方向規格。";
+
+WNG_MappingProperty_EltsApliedMembrane.Request="更新實體/P01 時出現警告";
+WNG_MappingProperty_EltsApliedMembrane.Diagnostic="僅線性四邊形元素上支持剪切面板行為。其他所有元素類型都將被視為薄膜。\n這些內容在文件 /P21 \n/P22 中已指定。";
+WNG_MappingProperty_EltApliedMembraneMeshPart="在/P02 網格的第 /P01行中，位于：";
+
+WRN_MappingProperty_Beam_MultipleDirections_DOFOffset_Mapping.Request="未為第/P02行中/P01定義的自由度發布或偏移分布找到唯一的元素橫梁方向。";
+WRN_MappingProperty_Beam_MultipleDirections_DOFOffset_Mapping.Diagnostic="橫梁方向從編號較低的元素開始至編號較高的元素。";
+
+WRN_MappingProperty_Beam_MultipleDirections_VariableCharac_Mapping.Request="未為第 /P02行中 /P01定義的變量屬性分布找到唯一的元素橫梁方向。";
+WRN_MappingProperty_Beam_MultipleDirections_VariableCharac_Mapping.Diagnostic="橫梁方向從編號較低的元素開始至編號較高的元素。";
+
+ERR_MappingProperty_BeamOffsetDistributionFailed.Request="無法更新實體 /P22";
+ERR_MappingProperty_BeamOffsetDistributionFailed.Diagnostics="在文件 /P23 中找到錯誤。第 /P01  行：偏移分布失敗。";
+ERR_MappingProperty_BeamOffsetDistributionFailed.Advice="偏移分布需要有唯一的起點和終點。請檢查指定的元素中是否具有唯一的起點和終點。";
+
+ERR_MappingProperty_BeamDOFDistributionFailed.Request="無法更新實體 /P22";
+ERR_MappingProperty_BeamDOFDistributionFailed.Diagnostic="在文件 /P23 中找到錯誤。第 /P01 行：自由度發布失敗。";
+ERR_MappingProperty_BeamDOFDistributionFailed.Advice="自由度發布需要有唯一的起點和終點。請檢查指定元素中是否有唯一的起點或終點。";
+
+ERR_MappingProperty_VBeamDistributionFailed.Request="無法更新實體 /P22";
+ERR_MappingProperty_VBeamDistributionFailed.Diagnostic="在文件 /P23 中找到錯誤。第 /P01 行：可變橫梁屬性分布失敗。";
+ERR_MappingProperty_VBeamDistributionFailed.Advice="可變橫梁屬性分布需要有唯一的起點和終點。請檢查指定的元素中是否有唯一的起點和終點。";
+
+ERR_MappingProperty_EltsNotFound="尚未找到屬性為 /P01 的部分有限元素。";
+
+ERR_MappingProperty_notApoint.Request="無法更新實體 /P22";
+ERR_MappingProperty_notApoint.Diagnostic="在文件 /P23 中找到錯誤。第 /P01 行：方向幾何圖形不是一個點。";
+ERR_MappingProperty_notApoint.Advice="請在映射屬性文件中指定方向的有效點。";
+
+ERR_MappingProperty_MaterialNotFound.Request="無法更新實體 /P01";
+ERR_MappingProperty_MaterialNotFound.Diagnostic="檢查映射屬性文件中材料的名稱。\n在文件 /P22 中找到錯誤。\n第 /P01 行：\n未找到或未加載屬性文件中定義的材料 /P21。";
+
+ERR_MappingProperty_MaterialDomainNotFound.Request="無法更新實體 /P01";
+ERR_MappingProperty_MaterialDomainNotFound.Diagnostic="檢查映射屬性文件中的材料名稱和域。在文件 /P22 中找到錯誤。\n第 /P01 行：\n未找到屬性文件中定義的材料（域）/P21 或未指定域。";
+ERR_MappingProperty_MaterialDomainNotFound.Advice="可行的解法：/n- 指定可用的域名。/n- 指定材料本地名稱；屬性 UI 中本地名稱列中的域名。";
+
+INF_MappingProperty_MutlipleSelcetionOfSameMaterial.Request="已添加一個或多個選定的材料（包括默認域）";
+INF_MappingProperty_MutlipleSelcetionOfSameMaterial.Advice=" 嘗試將默認域更改為其他可用域，以使用多個材料域。";
+
+ERR_MappingProperty_MaterialDomainNotSpecified.Request="無法更新實體 /P01";
+ERR_MappingProperty_MaterialDomainNotSpecified.Diagnostic="檢查映射屬性文件中的材料名稱和域。\n在文件 /P22 中找到錯誤。\n第 /P01 行：\n未指定材料（域）/P21 域。";
+
+WNG_MappingProperty_InconsistentLanguage.Request="應用 /P01 需謹慎：";
+WNG_MappingProperty_InconsistentLanguage.Diagnostic="XML 文件的十進制符號與操作系統區域選項不一致。\n已將區域設置切換到 /P22，可正確讀取文件內容。";
+
+ERR_Validation_XMLFile="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n/P21";
+ERR_Validation_XMLFile.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n/P21。";
+ERR_Validation_XMLFile.Advice="修改映射屬性文件，以使其有效。";
+
+ERR_PLMDoc_WrongFileExtn.Diagnostic="選定的文檔不是允許的類型。僅允許 /P21 文檔類型。";
+ERR_PLMDoc_WrongFileExtn.Advice="選擇允許類型的文檔。";
+
+ERR_LoadsMapping_FilePathInvalid.Diagnostic="數據文件路徑無效。";
+ERR_LoadsMapping_FilePathInvalid.Advice="檢查數據文件的路徑。";
+
+ERR_LoadsMapping_FileNotSupported.Diagnostic="不能使用選定的文件格式 (.xlsx)。";
+ERR_LoadsMapping_FileNotSupported.Advice="檢查安裝的 MS Office 版本。";
+
+ERR_LoadsMapping_NumberOfColumns.Diagnostic="文件必須只包含 4 列。";
+ERR_LoadsMapping_NumberOfColumns.Advice="檢查文件是否包含 4 列。";
+
+ERR_LoadsMapping_NoRow.Diagnostic="數據文件不包含任何行。";
+ERR_LoadsMapping_NoRow.Advice="文件必須至少包含一行。";
+
+ERR_LoadsMapping_NoUnitForCoef.Diagnostic="在數據映射文件中，第 4 列應該不包含任何單位。";
+ERR_LoadsMapping_NoUnitForCoef.Advice="移除單位符號。";
+
+ERR_LoadsMapping_NotValidUnit.Diagnostic=" 在數據映射文件中，單位符號 /P21 對于長度數值無效。";
+ERR_LoadsMapping_NotValidUnit.Advice="提供有效的單位符號。";
+
+ERR_LoadsMapping_CellEmpty.Diagnostic="數據映射文件無效。";
+ERR_LoadsMapping_CellEmpty.Advice="確保已為每個單元格定義數值。";
+
+WNG_DistributedMassAndInertia.Request="消息來自：/P01";
+WNG_DistributedMassAndInertia.Diagnostic="分布時檢測到節點空間中的節點太少或重新分區錯誤。";
+
+ERR_HandlerForVirtualPart.Diagnostic="選擇虛擬零件作為支持面時，不允許使用處理程序點。";
+ERR_MultipleSupportWithVirtualPart.Diagnostic="已選定虛擬零件作為支持面時，不允許使用多個支持面。";
+
+WNG_ValidEnforcedDisp.Diagnostic="絕對旋轉值必須小于或等于 /P21 /P22\n，以符合線性計算中較小位移假設。";
+WNG_ExplicitEnforcedDisp.Diagnostic="/P01：絕對旋轉值必須小于或等于 /P02 /P03，以符合線性計算的最小位移假設。";
+ERR_EditionLocalSensor.Diagnostic="未計算方案。要編輯傳感器，請先計算方案。";
+ERR_EditionLocalSensor_PLMUpdate.Diagnostic="未同步方案。要編輯傳感器，請先計算方案。";
+
+ERR_FEM_InternalError.Request="內部錯誤";
+ERR_FEM_InternalError.Diagnostic="檢測到意外內部錯誤。更新失敗。";
+
+ERR_MultipleScenario.Diagnostic="未授權您創建多個方案。";
+
+WNG_CompositeProperty_NoProducibilityOnPly="復合堆棧的鋪層上缺少可生產性定義";
+
+WNG_NodeGroupSupportAllow="不使用后期處理。請選擇點或節點組作為傳感器的支持面。";
+
+ERR_CompositeProperty_NoPlyComposite.Diagnostic="更新 /P22 時，在至少一個元素上核心取樣時未找到任何鋪層。\n請檢測相應鋪層的定義。\n如果鋪層設計中沒有缺陷，手動調整核心取樣深度可能會解決問題。";
+ERR_CompositeProperty_NoZoneComposite.Diagnostic="更新 /P22 時，在至少一個元素上核心取樣時未找到任何區域。請檢查相應區域的定義。\n如果在區域設計中沒有任何缺陷，手動調整核心取樣深度可能會解決問題。";
+ERR_CompositeProperty_ProducibilityPropagation.Diagnostic="更新 /P1 時復合纖維拓展失敗。\n請檢查相關鋪層的定義。";
+
+ERR_CompositeProperty_Composite_Tangent.Diagnostic="對于至少一個元素，插座 Z 軸在元素平面中。\n更改插座方向以獲取一致的角度定義：\n元素平面中壓層方向上的投影失敗。";
+ERR_CompositeProperty_MaterialComposite2.Diagnostic="對于 /P21 中選定的區域，未檢測到任何材料。\n可能的原因：\n- 未加載材料\n- 其中一個區域未定義層。";
+ERR_CompositeProperty_NoCompositeInfo.Diagnostic="用于定義 /P22 的部分材料無復合屬性。\n編輯目錄對應材料的復合選項卡，以創建復合屬性。";
+
+WNG_CompositeProperty_Orientation_Element_rosette.Request="在 /P01 中，對于插座 Z 軸，同一區域至少有兩個元素具有不同的方向。";
+WNG_CompositeProperty_Orientation_Element_rosette.Diagnostic="如果使用非各向同性材料，此錯誤的區域設計可能會影響結果。";
+WNG_CompositeProperty_Orientation_Element_rosette.Advice="考慮分割區域或更改插座 Z 軸的方向，以解決此問題。";
+
+WNG_CompositeProperty_CompositeZoneGroupShell.Request="沒有找到支持面與 /p1 相同的任何區域組";
+WNG_CompositeProperty_CompositeZoneGroupShell.Advice="轉移復合屬性時要考慮的所有區域組。";
+
+WNG_CompositeProperty_ShearToMembrane.Request="更新實體 /P01 時出現警告";
+WNG_CompositeProperty_ShearToMembrane.Diagnostic="僅線性四邊形元素上支持剪切面板行為。其他所有元素類型都將被視為薄膜。";
+ERR_CATFeaEnvelopComputationG.Request="";
+ERR_CATFeaEnvelopComputationG.Diagnostic="無法計算包絡。";
+ERR_CATFeaEnvelopComputationG.Advice="";
+
+ERR_CATFeaEnvelopType_01.Request="創建名稱為 /P01 的包絡類型失敗。";
+ERR_CATFeaEnvelopType_01.Diagnostic="未找到可用位置。";
+ERR_CATFeaEnvelopType_01.Advice="請檢查包絡類型定義！";
+
+WNG_CATFeaEnvelopType_NoValue.Request="消息來自：/P01";
+WNG_CATFeaEnvelopType_NoValue.Diagnostic="未找到值。";
+WNG_CATFeaEnvelopType_NoValue.Advice="請檢查包絡的支持面。";
+
+WNG_CATFeaEnvelopSet_Solutions.Diagnostic="選定的解法不是同類。";
+WNG_CATFeaEnvelopSet_Solutions.Advice="選擇同類解法。";
+
+ERR_CATFeaEnvelopSet_Improper_Solutions.Diagnostic="不支持選定的解法集。";
+ERR_CATFeaEnvelopSet_Improper_Solutions.Advice="請選擇支持的解法集。";
+
+ERR_MultipleStaticScenario.Diagnostic="未授權您創建多個靜態方案。";
+ERR_MultipleFrequencyScenario.Diagnostic="未授權您創建多個頻率方案。";
+ERR_MultipleBucklingScenario.Diagnostic="未授權您創建多個彎曲方案。";
+
+ERR_Sensor_PointAmbiguous.Request="消息來自：/P01";
+ERR_Sensor_PointAmbiguous.Diagnostic="無法定義該點的傳感器輸出。";
+ERR_Sensor_PointAmbiguous.Advice="該點可能屬于尺寸不同的多個支持面。";
+
+ERR_Generative_Sensor_NoEntityInSelection.Request="消息來自：/P01";
+ERR_Generative_Sensor_NoEntityInSelection.Diagnostic="未在該位置的支持面中找到任何元素。";
+ERR_Generative_Sensor_NoEntityInSelection.Advice="更改選定項或位置。";
+
+
+WNG_Envelopcompute.Diagnostic="/P21。";
+WNG_MappingProperty_MeshPartNotInSelectedMeshParts.Request="消息來自：/P01";
+WNG_MappingProperty_MeshPartNotInSelectedMeshParts.Diagnostic="第 /P01 行：指定的網格不是選定網格零件的成員。";
+
+WNG_MappingProperty_GroupNotBelongsToSelectedMeshParts.Request="消息來自：/P01";
+WNG_MappingProperty_GroupNotBelongsToSelectedMeshParts.Diagnostic="第 /P01 行：指定的組不是選定網格的成員。";
+
+WNG_MappingProperty_GeometryNotBelongsToSelectedMeshParts.Request="消息來自：/P01";
+WNG_MappingProperty_GeometryNotBelongsToSelectedMeshParts.Diagnostic="第 /P01 行：選定的網格不屬于指定的幾何圖形。";
+
+WNG_MappingProperty_SpecifiedElementNotBelongsToSelectedMeshParts.Request="消息來自：/P01";
+WNG_MappingProperty_SpecifiedElementNotBelongsToSelectedMeshParts.Diagnostic="第 /P01 行：指定的元素不是選定網格的成員。";
+
+ERR_ReactionSensor_BadRestraintLocation.Request="消息來自：/P01";
+ERR_ReactionSensor_BadRestraintLocation.Diagnostic="選定的限制沒有位于正確的方案中。";
+ERR_ReactionSensor_BadRestraintLocation.Advice="選定的限制必須位于反應傳感器的方案中。";
+
+ERR_ReactionSensor_IsoRestraint.Request="消息來自：/P01";
+ERR_ReactionSensor_IsoRestraint.Diagnostic="反應傳感器不能處理所選的限制類型。";
+ERR_ReactionSensor_IsoRestraint.Advice="選擇其他限制類型。";
+
+ERR_ReactionSensor_WeldConnection.Request="消息來自：/P01";
+ERR_ReactionSensor_WeldConnection.Diagnostic="焊接必須由反應傳感器處理。";
+ERR_ReactionSensor_WeldConnection.Advice="選擇其他連接類型。";
+ERR_NoFeatureComposite.Diagnostic="未定義任何鋪層或區域。";
+ERR_NoFeatureComposite.Advice="為鋪層或區域分析創建鋪層或區域。";
+
+ERR_MappingProperty_NoMaterialLoaded.Request="消息來自：/P01";
+ERR_MappingProperty_NoMaterialLoaded.Diagnostic="未加載材料 /P21。";
+ERR_MappingProperty_NoMaterialLoaded.Advice="嘗試手動加載材料。";
+
+CheckMessage_SupportOK="/P02 的 /P01 上的規格不一致";
+CheckMessage_NoMeshPart="/P02 的 /P01 上定義的網格零件不一致";
+CheckMessage_TooManyMeshParts="/P01 的 /P02 上定義了多個網格零件。 請選擇一個零件并刪除其他零件。";
+CheckMessage_NoProperty="/P02 的 /P01 中定義的屬性不一致。";
+CheckMessage_TooManyProperties="/P02 的 /P01 上定義了多個屬性。選擇一個屬性并刪除其他屬性";
+CheckMessage_NoMaterial="/P02 的 /P01 上未定義任何材料。在設計文檔中將材料應用于此零件。";
+CheckMessage_NoSupportFeature="支持面無效";
+CheckMessage_NoASMProduct="支持面無效。零件已刪除。";
+CheckMessage_SpecInvalid="/P01 無效";
+CheckMessage_MPAndPropTypes="/P02 的 /P01 上網格零件和屬性的類型不一致";
+CheckMessage_StatusUnknown="通過編輯映射屬性特征，可查看鏈接到映射屬性的材料列表。\n同時還可驗證是否所有元素均已接收材料，請生成材料邊緣圖像。";
+CheckMessage_DeactivatedMeshWithProp="停用的網格 (/P03) 包含對求解器無效的屬性 (/P04)。請從此停用的網格中移除屬性或激活此網格。";
+CheckMessage_DeactivatedMeshWOProp="停用的網格 (/P03) 不會主動參與求解，因此對于求解器是有效的。";
+
+ERR_CompositeProperty_MaterialLoading.Request="消息來自：/P01";
+ERR_CompositeProperty_MaterialLoading.Diagnostic="未找到對應的材料。";
+ERR_CompositeProperty_MaterialLoading.Advice="檢查是否已分派和加載屬性中使用的材料。";
+
+ERR_CompositeProperty_MaterialDomainLoading.Request="消息來自：/P01";
+ERR_CompositeProperty_MaterialDomainLoading.Diagnostic="未找到對應的材料域。";
+ERR_CompositeProperty_MaterialDomainLoading.Advice="檢查是否已分派或加載屬性中使用的材料域。";
+
+ERR_MappingProperty_PartNotFound.Request="無法更新實體 /P22";
+ERR_MappingProperty_PartNotFound.Diagnostic="在文件 /P23 中找到錯誤。\n第 /P01 行：/P21。";
+ERR_MappingProperty_PartNotFound.Advice="需要在 3D 形狀中完成分析。";
+
+ERR_MappingProperty_SupportNotFound.Request="無法更新實體 /P22";
+ERR_MappingProperty_SupportNotFound.Diagnostic="在文件 /P23 中找到錯誤。\n第 /P01 行：\n/P21\n這需要選擇支持面。";
+ERR_MappingProperty_SupportNotFound.Advice="請選擇支持面。";
+
+ERR_MappingProperty_NotAttachedRep.Request="無法更新實體 /P22";
+ERR_MappingProperty_NotAttachedRep.Diagnostic="在文件 /P23 中找到錯誤。\n第 /P01 行：\n/P21\n幾何圖形屬于不包含相應有限元素模型展示的 3D 形狀。";
+
+WNG_MappingProperty_AxisNotDirect.Request="用于 /P01";
+WNG_MappingProperty_AxisNotDirect.Diagnostic="在 xml 文件的第 /P02 行中\n軸線定義無效：\n軸線的其中一個組件為空或軸線不直。";
+
+ERR_MappingProperty_nbLamina.Request="無法更新實體 /P22";
+ERR_MappingProperty_nbLamina.Diagnostic="在文件 /P23 中找到錯誤。\n第 /P01 行：\nNB_LAMINA 特性與定義的壓層數不同。";
+ERR_MappingProperty_nbLamina.Advice="修改映射屬性文件，以使其有效。";
+
+INF_CopyStatus.Diagnostic="創建的幾何體屬性數：/P01 \n無法在以下支持面上創建幾何體屬性：/P21。";
+INF_CopyStatus.Advice="故障原因可能如下：\n 請檢查以下各向：\n - 是否至少一個實心材料已應用于正在復制屬性所處的支持面。\n - 會話中是否已加載與支持面相關聯的材料。";
+INF_CopyStatusNoFailedCopy.Diagnostic="創建的幾何體屬性數：/P01。";
+
+WNG_MappingProperty_CompositeTangent="對于 XML 文件中第 /P01 行處的元素，插座 Z 軸在元素平面中。\n更改插座方向以獲取一致的角度定義：\n實際上，元素平面中壓層方向上的投影失敗。";
+
+ERR_MappingProperty_indexLamina.Request="無法更新實體 /P22";
+ERR_MappingProperty_indexLamina.Diagnostic="在文件 /P23 中找到錯誤。\n第 /P01 行：\n為其中一個已定義的壓層指定的位置無效。";
+ERR_MappingProperty_indexLamina.Advice="檢查壓層的位置值。";
+
+ERR_MappingProperty_CompositePosition.Request="無法更新實體 /P21";
+ERR_MappingProperty_CompositePosition.Diagnostic="在文件 /P22 中找到錯誤。\n第 /P01 行： \n無法在同一位置定義多個壓層。";
+ERR_MappingProperty_CompositePosition.Advice="檢查壓層的位置值。";
+
+ERR_MappingProperty_NoAssocNode.Request="無法更新實體 /P22";
+ERR_MappingProperty_NoAssocNode.Diagnostic="在文件 /P23 中找到錯誤。\n第 /P01 行：\n/P21\nxml 參考沒有任何關聯節點。";
+
+WNG_CompositeProperty_ActualFiberComFailed.Request="更新 /P01 時，";
+WNG_CompositeProperty_ActualFiberComFailed.Diagnostic="部分鋪層實際纖維方向計算失敗。";
+WNG_CompositeProperty_ActualFiberComFailed.Advice="因此將在角度計算期間考慮理論纖維方向。";
+
+ERR_MappingProperty_PortNotFound.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n/P21\n在樹中未找到發布。";
+
+ERR_MappingProperty_NoAssocFE.Diagnostic="無法更新實體  /P22。\n在文件  /P23 中找到錯誤。\n第  /P01 行：\n/P21\n此幾何圖形沒有任何請求尺寸的關聯有限元素。";
+
+ERR_MappingProperty_NotBelongToMeshArea.Diagnostic="無法更新實體 /P22。\n在文件 /P23 中找到錯誤。\n第 /P01 行：\n/P21 不屬于網格化區域。";
+
+ERR_MappingProperty_NoElement.Request="消息來自：/P01";
+ERR_MappingProperty_NoElement.Diagnostic="沒有與此屬性的支持面相關聯的任何元素。";
+ERR_MappingProperty_NoElement.Advice="檢查此屬性的支持面。";
+
+INF_MappingProperty_NoMesh.Request="消息來自：/P01";
+INF_MappingProperty_NoMesh.Diagnostic="已找到相關聯的元素，但沒有與此屬性的支持面相關聯的網格。";
+INF_MappingProperty_NoMesh.Advice="檢查此屬性的支持面。";
+
+WNG_MappingProperty_NoLinearElastic_Domain="將僅添加包含 ELFINI 線性彈性域的材料。";
+
+ERR_EstimateComputationResources="在估計計算資源之前更新方案。";
+ERR_ComputationEstimation="計算估計中的內部錯誤";
+
+ERR_MappingSurfaceOffset.Request="消息來自：/P01";
+ERR_MappingSurfaceOffset.Diagnostic="偏移只能用于盒體元素。";
+
+WNG_License_LSA_PropertyOffset.Request="消息來自：/P01";
+WNG_License_LSA_PropertyOffset.Diagnostic="許可證缺失。您無權使用曲面偏移功能";
+WNG_License_LSA_PropertyOffset.Advice="獲取授權您使用此功能的許可證。";
+
+ERR_TransientHarmonicLicenseError.Request="您無權修改瞬時\諧和方案下的特征。";
+ERR_TransientHarmonicLicenseError.Diagnostic="獲取授權您修改的許可證。";
+
+Locale_French="法語";
+Locale_English="英語";
+
+ERR_Generative_SensorUpdate01.Request="無法更新傳感器 /P01。無關聯的結果。";
+ERR_Generative_SensorUpdate01.Diagnostic="檢查支持面，選定的支持面無任何值。";
+
+
+

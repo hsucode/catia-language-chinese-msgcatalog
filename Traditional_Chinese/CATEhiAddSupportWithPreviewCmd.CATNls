@@ -1,0 +1,28 @@
+LinkDlg.Title = "增加upport";
+LinkDlg.Text  = "增加the支持面to the current bundle segment";
+
+Label.Title = "增加upport to Current Bundle Segment";
+
+SeparationLabel.Title = " ";
+
+RoutePoint.Title = "Route 點";
+RoutePoint.LongHelp = "選擇Route Point After/Before which支持面will be added.";
+RoutePoint.ShortHelp = "選擇Route Point After/Before which支持面will be added.";
+
+UnlinkDlg.Title = "移除 Support";
+UnlinkDlg.Text = "移除 the支持面from the current bundle segment?";
+
+CATEhiAddSupportWithPreviewCmd.BundleSelectionState.Message = "選擇 1: Click on一個segment inorder來選擇 nearest route point before/after which the支持面is to be added";
+CATEhiAddSupportWithPreviewCmd.SupportSelectionState.Message = "選擇 2: Select一個support part to add to the selected segment或 Click on Route Point Editor to re-set the route 點";
+CATEhiAddSupportWithPreviewCmd.FinalizeState.Message = "選擇OK或 CANCEL或 PREVIEW Button或 Click on Route Point Editor to re-set the route point & undo last modifications";
+CATEhiAddSupportWithPreviewCmd.RoutePointSelectionState.Message = "單擊 on already selected segment inorder來選擇 nearest route point before/after which the支持面is to be added";
+
+CATEhiAddSupportWithPreviewCmd.State1Unlink.Message = "選擇a bundle segment near its closest linked支持面inorder to remove it from the bundle segment";
+CATEhiAddSupportWithPreviewCmd.State2Unlink.Message = " ";
+
+BundleSegmentLinkNotAuthorizedModeBB.Title = "警告";
+BundleSegmentLinkNotAuthorizedModeBB.Text  = "The bundle segment on which you want to add一個support is contained in一個geometrical bundle saved in ENOVIA V5 VPM in publications mode.\nPlease uncheck the 'Use root context in assembly' option ('Part Infrastructure' category) if you want to add一個support protective covering on this bundle segment.";
+
+SupportAlreadyAddedToRoute = "This支持面is already linked to the selected segment, Please select一個support which is不linked to the segment.";
+SelectPreviouslySelectedBNS = "This Bundle Segment is not一個valid selection,Please select Bundle Segment that was selected during command launch.";
+

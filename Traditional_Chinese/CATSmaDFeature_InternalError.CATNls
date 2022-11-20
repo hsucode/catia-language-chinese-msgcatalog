@@ -1,0 +1,455 @@
+// 3951 校正官方漢化 ===============================================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2001
+// 3951 校正官方漢化 ===============================================================================================
+// 3951 校正官方漢化 Objectif         : Catalogue des erreurs internes des features specifiques SmaDFeature
+// 3951 校正官方漢化 Responsable      : SheetMetal Aero Team
+// 3951 校正官方漢化 date de creation : 07/05/2002
+// 3951 校正官方漢化 Commentaires     : 
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Revue LGK le 09/01/2004
+// 3951 校正官方漢化 ===============================================================================================
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化 flangeSurf_support
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化
+// 3951 校正官方漢化 FD
+// 3951 校正官方漢化
+CATSmaDFeature_InternalError_ERR_0300.Request="";
+CATSmaDFeature_InternalError_ERR_0300.Diagnostic="創建曲面時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0300.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0301.Request="嘗試創建曲面凸緣。";
+CATSmaDFeature_InternalError_ERR_0301.Diagnostic="計算 OML 或計算支持曲面與\n 基準特征之間的重新限定時發生錯誤。";
+CATSmaDFeature_InternalError_ERR_0301.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0302.Request="嘗試使用精確支持面類型創建曲面凸緣。";
+CATSmaDFeature_InternalError_ERR_0302.Diagnostic="無法計算支持曲面的偏移量。";
+CATSmaDFeature_InternalError_ERR_0302.Advice="請檢查支持曲面質量。";
+
+CATSmaDFeature_InternalError_ERR_0303.Request="嘗試使用精確支持面類型創建曲面凸緣。";
+CATSmaDFeature_InternalError_ERR_0303.Diagnostic="支持曲面相切不連續。";
+CATSmaDFeature_InternalError_ERR_0303.Advice="請更改或更正此曲面（例如，使用相切選項進行提取或修復）或使用近似支持面類型。";
+
+CATSmaDFeature_InternalError_ERR_0304.Request="嘗試創建曲面凸緣。";
+CATSmaDFeature_InternalError_ERR_0304.Diagnostic="計算 OML 時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0304.Advice="如果基準特征為曲面折疊網，\n 請檢查支持曲面和折疊網之間的相交是否連通。";
+
+CATSmaDFeature_InternalError_ERR_0310.Request="嘗試使用直紋曲面近似該曲面。";
+CATSmaDFeature_InternalError_ERR_0310.Diagnostic="計算曲面時出現意外錯誤。";
+CATSmaDFeature_InternalError_ERR_0310.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0311.Request="嘗試使用直紋曲面近似該曲面。";
+CATSmaDFeature_InternalError_ERR_0311.Diagnostic="輸入的近似長度太長，無法定義此曲面。";
+CATSmaDFeature_InternalError_ERR_0311.Advice="請減小近似長度值。";
+
+CATSmaDFeature_InternalError_ERR_0312.Request="嘗試使用直紋曲面近似該曲面。";
+CATSmaDFeature_InternalError_ERR_0312.Diagnostic="無法計算得出此曲面的偏移量。";
+CATSmaDFeature_InternalError_ERR_0312.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0320.Request="嘗試使用曲線和角度定義曲面。";
+CATSmaDFeature_InternalError_ERR_0320.Diagnostic="無法計算得出此曲面的偏移量。";
+CATSmaDFeature_InternalError_ERR_0320.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0321.Request="嘗試使用曲線和角度定義曲面。";
+CATSmaDFeature_InternalError_ERR_0321.Diagnostic="計算得出的曲面含有一個尖端。";
+CATSmaDFeature_InternalError_ERR_0321.Advice="請減小曲面的長度。";
+
+CATSmaDFeature_InternalError_ERR_0322.Request="嘗試使用曲線和角度定義曲面。";
+CATSmaDFeature_InternalError_ERR_0322.Diagnostic="計算得出的曲面質量不高，無法使用該曲面。";
+CATSmaDFeature_InternalError_ERR_0322.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0340.Request="嘗試使用精確支持面類型創建曲面凸緣。";
+CATSmaDFeature_InternalError_ERR_0340.Diagnostic="無法計算支持曲面的偏移量。但構建特征曲線時需要該偏移量。";
+CATSmaDFeature_InternalError_ERR_0340.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0341.Request="嘗試使用直紋曲面近似該曲面。";
+CATSmaDFeature_InternalError_ERR_0341.Diagnostic="無法計算支持曲面的偏移量，但構建特征曲線時需要該偏移量。";
+CATSmaDFeature_InternalError_ERR_0341.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0342.Request="嘗試使用曲線和角度定義曲面。";
+CATSmaDFeature_InternalError_ERR_0342.Diagnostic="無法計算支持曲面的偏移量，但構建特征曲線時需要該偏移量。";
+CATSmaDFeature_InternalError_ERR_0342.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0350.Request=".";
+CATSmaDFeature_InternalError_ERR_0350.Diagnostic="折疊凸緣支持面結果不存在";
+CATSmaDFeature_InternalError_ERR_0350.Advice=".";
+
+CATSmaDFeature_InternalError_ERR_0351.Request=".";
+CATSmaDFeature_InternalError_ERR_0351.Diagnostic="折疊凸緣支持面與基準特征結果不相交";
+CATSmaDFeature_InternalError_ERR_0351.Advice=".";
+
+CATSmaDFeature_InternalError_ERR_0352.Request=".";
+CATSmaDFeature_InternalError_ERR_0352.Diagnostic="折疊凸緣結果規格不存在";
+CATSmaDFeature_InternalError_ERR_0352.Advice=".";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 FP
+// 3951 校正官方漢化
+CATSmaDFeature_InternalError_ERR_0380.Request="";
+CATSmaDFeature_InternalError_ERR_0380.Diagnostic="無法創建此支持面的平整陣列。";
+CATSmaDFeature_InternalError_ERR_0380.Advice="";
+
+CATSmaDFeature_InternalError_ERR_0390.Request=".";
+CATSmaDFeature_InternalError_ERR_0390.Diagnostic="平鋪凸緣支持面結果不存在";
+CATSmaDFeature_InternalError_ERR_0390.Advice=".";
+
+CATSmaDFeature_InternalError_ERR_0391.Request=".";
+CATSmaDFeature_InternalError_ERR_0391.Diagnostic="平鋪凸緣結果規格不存在";
+CATSmaDFeature_InternalError_ERR_0391.Advice=".";
+// 3951 校正官方漢化
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化 flangeSurf_EOP_LengthFromOML ou Element
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化
+// 3951 校正官方漢化 FD
+// 3951 校正官方漢化
+CATSmaDFeature_InternalError_ERR_0400.Request="";
+CATSmaDFeature_InternalError_ERR_0400.Diagnostic="計算 EOP 時出現意外錯誤";
+CATSmaDFeature_InternalError_ERR_0400.Advice="";
+
+CATSmaDFeature_InternalError_ERR_0401.Request="正嘗試使用長度定義凸緣的 EOP。";
+CATSmaDFeature_InternalError_ERR_0401.Diagnostic="輸入的長度過長，不能用于定義 EOP。";
+CATSmaDFeature_InternalError_ERR_0401.Advice="請減小長度值。";
+
+CATSmaDFeature_InternalError_ERR_0402.Request="正嘗試用折疊視圖中的某一元素定義凸緣的 EOP。";
+CATSmaDFeature_InternalError_ERR_0402.Diagnostic="計算折疊結果中的 EOP 時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0402.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0403.Request="正嘗試使用平鋪視圖中的某一元素定義凸緣的 EOP。";
+CATSmaDFeature_InternalError_ERR_0403.Diagnostic="計算折疊結果中的 EOP 時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0403.Advice="請修改輸入的參數。";
+// 3951 校正官方漢化
+// 3951 校正官方漢化 FP
+// 3951 校正官方漢化
+CATSmaDFeature_InternalError_ERR_0480.Request="計算平整陣列";
+CATSmaDFeature_InternalError_ERR_0480.Diagnostic="無法創建 EOP 的平整陣列。";
+CATSmaDFeature_InternalError_ERR_0480.Advice="";
+
+CATSmaDFeature_InternalError_ERR_0481.Request="正嘗試用折疊視圖中的某一元素定義凸緣的 EOP。";
+CATSmaDFeature_InternalError_ERR_0481.Diagnostic="計算平鋪結果中的 EOP 時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0481.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0482.Request="正嘗試使用平鋪視圖中的某一元素定義凸緣的 EOP。";
+CATSmaDFeature_InternalError_ERR_0482.Diagnostic="計算平鋪結果中的 EOP 時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0482.Advice="請修改輸入的參數。";
+
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化 flangeSurf_SideStandard ou element
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化
+// 3951 校正官方漢化 FD
+// 3951 校正官方漢化
+CATSmaDFeature_InternalError_ERR_0500.Request="";
+CATSmaDFeature_InternalError_ERR_0500.Diagnostic="計算側面 1 時出現意外錯誤";
+CATSmaDFeature_InternalError_ERR_0500.Advice="";
+
+CATSmaDFeature_InternalError_ERR_0501.Request="正嘗試用標準選項定義凸緣的側面 1。";
+CATSmaDFeature_InternalError_ERR_0501.Diagnostic="但在該幾何圖形中無法定義這樣一個面。";
+CATSmaDFeature_InternalError_ERR_0501.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0502.Request="";
+CATSmaDFeature_InternalError_ERR_0502.Diagnostic="計算側面 2 時出現意外錯誤";
+CATSmaDFeature_InternalError_ERR_0502.Advice="";
+
+CATSmaDFeature_InternalError_ERR_0503.Request="正嘗試用標準選項定義凸緣的側面 2。";
+CATSmaDFeature_InternalError_ERR_0503.Diagnostic="但在該幾何圖形中無法定義這樣一個側面。";
+CATSmaDFeature_InternalError_ERR_0503.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0504.Request="正嘗試用折疊視圖中的某一元素定義凸緣的側面 1。";
+CATSmaDFeature_InternalError_ERR_0504.Diagnostic="計算折疊結果中的側面 1 時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0504.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0505.Request="正嘗試使用平鋪視圖中的某一元素定義凸緣的側面 1。";
+CATSmaDFeature_InternalError_ERR_0505.Diagnostic="計算折疊結果中的側面 1 時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0505.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0506.Request="正嘗試用折疊視圖中的某一元素定義凸緣的側面 2。";
+CATSmaDFeature_InternalError_ERR_0506.Diagnostic="計算折疊結果中的側面 2 時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0506.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0507.Request="正嘗試使用平鋪視圖中的某一元素定義凸緣的側面 2。";
+CATSmaDFeature_InternalError_ERR_0507.Diagnostic="計算折疊結果中的側面 2 時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0507.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0508.Request="正嘗試用拐角止裂槽重新定義凸緣側面。";
+CATSmaDFeature_InternalError_ERR_0508.Diagnostic="計算折疊結果中的新凸緣側面時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0508.Advice="請修改輸入的參數。";
+// 3951 校正官方漢化
+// 3951 校正官方漢化 FP
+// 3951 校正官方漢化
+CATSmaDFeature_InternalError_ERR_0580.Request="";
+CATSmaDFeature_InternalError_ERR_0580.Diagnostic="無法創建側面 1 的平整陣列。";
+CATSmaDFeature_InternalError_ERR_0580.Advice="";
+
+CATSmaDFeature_InternalError_ERR_0581.Request="";
+CATSmaDFeature_InternalError_ERR_0581.Diagnostic="無法創建側面 2 的平整陣列。";
+CATSmaDFeature_InternalError_ERR_0581.Advice="";
+
+CATSmaDFeature_InternalError_ERR_0582.Request="正嘗試用折疊視圖中的某一元素定義凸緣的側面 1。";
+CATSmaDFeature_InternalError_ERR_0582.Diagnostic="計算平鋪結果中的側面 1 時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0582.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0583.Request="正嘗試使用平鋪視圖中的某一元素定義凸緣的側面 1。";
+CATSmaDFeature_InternalError_ERR_0583.Diagnostic="計算平鋪結果中的側面 1 時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0583.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0584.Request="正嘗試用折疊視圖中的某一元素定義凸緣的側面 2。";
+CATSmaDFeature_InternalError_ERR_0584.Diagnostic="計算平鋪結果中的側面 2 時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0584.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0585.Request="正嘗試使用平鋪視圖中的某一元素定義凸緣的側面 2。";
+CATSmaDFeature_InternalError_ERR_0585.Diagnostic="計算平鋪結果中的側面 2 時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0585.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0586.Request="正嘗試用拐角止裂槽重新定義凸緣側面。";
+CATSmaDFeature_InternalError_ERR_0586.Diagnostic="計算平鋪結果中的新凸緣側面時出現錯誤。";
+CATSmaDFeature_InternalError_ERR_0586.Advice="請修改輸入的參數。";
+
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化 flangeSurf_Relimit 
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化
+// 3951 校正官方漢化 FD
+// 3951 校正官方漢化
+CATSmaDFeature_InternalError_ERR_0600.Request="已定義所有凸緣輸入參數。";
+CATSmaDFeature_InternalError_ERR_0600.Diagnostic="輸入的參數不允許重新限定凸緣。";
+CATSmaDFeature_InternalError_ERR_0600.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0610.Request="已定義所有凸緣輸入參數。";
+CATSmaDFeature_InternalError_ERR_0610.Diagnostic="未找到屬于該凸緣的彎曲切線。";
+CATSmaDFeature_InternalError_ERR_0610.Advice="請更新零件，以便解決該問題。";
+// 3951 校正官方漢化
+// 3951 校正官方漢化 FP
+// 3951 校正官方漢化
+CATSmaDFeature_InternalError_ERR_0680.Request="已定義所有凸緣輸入參數。";
+CATSmaDFeature_InternalError_ERR_0680.Diagnostic="這些輸入參數不允許重新限定凸緣。";
+CATSmaDFeature_InternalError_ERR_0680.Advice="請修改輸入的參數。";
+
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化 flangeSurf_Fillet 
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化
+// 3951 校正官方漢化 FD
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Erreur indeterminee
+CATSmaDFeature_InternalError_ERR_0700.Request="";
+CATSmaDFeature_InternalError_ERR_0700.Diagnostic="出現內部錯誤，該錯誤導致無法計算折疊凸緣。";
+CATSmaDFeature_InternalError_ERR_0700.Advice="請修改輸入的參數。";
+// 3951 校正官方漢化 Corner
+CATSmaDFeature_InternalError_ERR_0710.Request="";
+CATSmaDFeature_InternalError_ERR_0710.Diagnostic="無法計算折疊凸緣的各角。";
+CATSmaDFeature_InternalError_ERR_0710.Advice="請修改輸入的參數。";
+CATSmaDFeature_InternalError_ERR_0711.Request="";
+CATSmaDFeature_InternalError_ERR_0711.Diagnostic="無法計算折疊凸緣的角 1。";
+CATSmaDFeature_InternalError_ERR_0711.Advice="請確保可以使用輸入的半徑值（位于折疊視圖上）計算不帶角 1 的折疊凸緣。";
+CATSmaDFeature_InternalError_ERR_0712.Request="";
+CATSmaDFeature_InternalError_ERR_0712.Diagnostic="無法計算折疊凸緣的角 2。";
+CATSmaDFeature_InternalError_ERR_0712.Advice="請確保可以使用輸入的半徑值（位于折疊視圖上）計算不帶角 2 的折疊凸緣。";
+// 3951 校正官方漢化 Fillet
+CATSmaDFeature_InternalError_ERR_0720.Request="";
+CATSmaDFeature_InternalError_ERR_0720.Diagnostic="無法計算折疊凸緣的圓角。";
+CATSmaDFeature_InternalError_ERR_0720.Advice="請修改輸入的參數。";
+// 3951 校正官方漢化
+CATSmaDFeature_InternalError_ERR_0721.Request="";
+CATSmaDFeature_InternalError_ERR_0721.Diagnostic="幾何上下文將導致多筋圓角。";
+CATSmaDFeature_InternalError_ERR_0721.Advice="請修改輸入的參數。";
+// 3951 校正官方漢化
+// 3951 校正官方漢化 FP
+// 3951 校正官方漢化
+CATSmaDFeature_InternalError_ERR_0731.Request="出現內部錯誤";
+CATSmaDFeature_InternalError_ERR_0731.Diagnostic="未能在單元上附加變換。";
+CATSmaDFeature_InternalError_ERR_0731.Advice="請檢查單元編碼";
+
+// 3951 校正官方漢化 Erreur indeterminee
+CATSmaDFeature_InternalError_ERR_0780.Request="";
+CATSmaDFeature_InternalError_ERR_0780.Diagnostic="無法計算平鋪凸緣。";
+CATSmaDFeature_InternalError_ERR_0780.Advice="請修改輸入的參數。";
+
+CATSmaDFeature_InternalError_ERR_0781.Request="";
+CATSmaDFeature_InternalError_ERR_0781.Diagnostic="未能在平鋪凸緣上進行加厚操作。";
+CATSmaDFeature_InternalError_ERR_0781.Advice="請修改輸入的參數。";
+
+
+// 3951 校正官方漢化 Joggle Compensation
+CATSmaDFeature_InternalError_ERR_0783.Request="";
+CATSmaDFeature_InternalError_ERR_0783.Diagnostic="用于定義下陷補償值的表格無效。";
+CATSmaDFeature_InternalError_ERR_0783.Advice="請檢查該表格并進行必要的更正。";
+CATSmaDFeature_InternalError_ERR_0784.Request="";
+CATSmaDFeature_InternalError_ERR_0784.Diagnostic="無法計算下陷補償。";
+CATSmaDFeature_InternalError_ERR_0784.Advice="請修改輸入的參數。";
+// 3951 校正官方漢化 Corner
+CATSmaDFeature_InternalError_ERR_0785.Request="";
+CATSmaDFeature_InternalError_ERR_0785.Diagnostic="無法計算平鋪凸緣的各角。";
+CATSmaDFeature_InternalError_ERR_0785.Advice="請修改輸入的參數。";
+CATSmaDFeature_InternalError_ERR_0786.Request="";
+CATSmaDFeature_InternalError_ERR_0786.Diagnostic="無法計算平鋪凸緣的角 1。";
+CATSmaDFeature_InternalError_ERR_0786.Advice="請修改輸入的參數。";
+CATSmaDFeature_InternalError_ERR_0787.Request="";
+CATSmaDFeature_InternalError_ERR_0787.Diagnostic="無法計算平鋪凸緣的角 2。";
+CATSmaDFeature_InternalError_ERR_0787.Advice="請修改輸入的參數。";
+// 3951 校正官方漢化 Fillet
+CATSmaDFeature_InternalError_ERR_0790.Request="";
+CATSmaDFeature_InternalError_ERR_0790.Diagnostic="無法計算折疊凸緣的圓角。";
+CATSmaDFeature_InternalError_ERR_0790.Advice="請修改輸入的參數。";
+
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化 Erreurs diverses 
+// 3951 校正官方漢化-------------------------------------------------------------------
+
+CATSmaDFeature_InternalError_ERR_0900.Request=".";
+CATSmaDFeature_InternalError_ERR_0900.Diagnostic="出現內部錯誤：無效值。";
+CATSmaDFeature_InternalError_ERR_0900.Advice=".";
+
+CATSmaDFeature_InternalError_ERR_0901.Request=".";
+CATSmaDFeature_InternalError_ERR_0901.Diagnostic="出現內部錯誤：凸緣特征結構無效。";
+CATSmaDFeature_InternalError_ERR_0901.Advice=".";
+
+CATSmaDFeature_InternalError_ERR_0902.Request=".";
+CATSmaDFeature_InternalError_ERR_0902.Diagnostic="計算折疊視圖中的一個凸緣輪廓時出現內部錯誤。";
+CATSmaDFeature_InternalError_ERR_0902.Advice=".";
+
+// 3951 校正官方漢化 ===============================================================================================
+// 3951 校正官方漢化 1000 -> 1299 : Erreurs reservees au Joggle
+// 3951 校正官方漢化 ===============================================================================================
+
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化 Joggle : Specs d'entree incorrectes
+// 3951 校正官方漢化-------------------------------------------------------------------
+CATSmaD_Joggle_Error_ERR_0001.Request="無法啟動創建下陷";
+CATSmaD_Joggle_Error_ERR_0001.Diagnostic="零件規格錯誤。";
+CATSmaD_Joggle_Error_ERR_0001.Advice="請更改零件規格。";
+
+CATSmaD_Joggle_Error_ERR_0002.Request="無法啟動創建下陷";
+CATSmaD_Joggle_Error_ERR_0002.Diagnostic="下陷規格錯誤。";
+CATSmaD_Joggle_Error_ERR_0002.Advice="請更改下陷規格，使其適合此零件。";
+
+CATSmaD_Joggle_Error_ERR_0010.Request="";
+CATSmaD_Joggle_Error_ERR_0010.Diagnostic="未找到厚度或厚度無效。";
+CATSmaD_Joggle_Error_ERR_0010.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0011.Request="";
+CATSmaD_Joggle_Error_ERR_0011.Diagnostic="未找到彎曲半徑或彎曲半徑無效。";
+CATSmaD_Joggle_Error_ERR_0011.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0012.Request="";
+CATSmaD_Joggle_Error_ERR_0012.Diagnostic="未找到基準特征或基準特征無效。";
+CATSmaD_Joggle_Error_ERR_0012.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0013.Request="";
+CATSmaD_Joggle_Error_ERR_0013.Diagnostic="未找到下陷平面或下陷平面無效。";
+CATSmaD_Joggle_Error_ERR_0013.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0014.Request="";
+CATSmaD_Joggle_Error_ERR_0014.Diagnostic="未找到跳動方向或跳動方向無效。";
+CATSmaD_Joggle_Error_ERR_0014.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0015.Request="";
+CATSmaD_Joggle_Error_ERR_0015.Diagnostic="未找到深度方向或深度方向無效。";
+CATSmaD_Joggle_Error_ERR_0015.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0016.Request="";
+CATSmaD_Joggle_Error_ERR_0016.Diagnostic="未找到起始半徑或起始半徑無效。";
+CATSmaD_Joggle_Error_ERR_0016.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0017.Request="";
+CATSmaD_Joggle_Error_ERR_0017.Diagnostic="未找到終止半徑或終止半徑無效。";
+CATSmaD_Joggle_Error_ERR_0017.Advice="請修改輸入的參數。";
+
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化 Joggle : Build FD
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化
+CATSmaD_Joggle_Error_ERR_0100.Request="";
+CATSmaD_Joggle_Error_ERR_0100.Diagnostic="創建折疊下陷時出現錯誤。";
+CATSmaD_Joggle_Error_ERR_0100.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0101.Request="";
+CATSmaD_Joggle_Error_ERR_0101.Diagnostic="無法找到下陷的折疊規格或下陷的折疊規格錯誤。";
+CATSmaD_Joggle_Error_ERR_0101.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0102.Request="";
+CATSmaD_Joggle_Error_ERR_0102.Diagnostic="無法找到下陷的折疊幾何圖形或下陷的折疊幾何圖形錯誤。";
+CATSmaD_Joggle_Error_ERR_0102.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0103.Request="";
+CATSmaD_Joggle_Error_ERR_0103.Diagnostic="計算折疊下陷特征曲線時出現錯誤。";
+CATSmaD_Joggle_Error_ERR_0103.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0104.Request="";
+CATSmaD_Joggle_Error_ERR_0104.Diagnostic="計算特征曲線時出現以下問題：該零件已損壞。";
+CATSmaD_Joggle_Error_ERR_0104.Advice="請嘗試再次啟動創建下陷。";
+
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化 Joggle : Build FP
+// 3951 校正官方漢化-------------------------------------------------------------------
+
+CATSmaD_Joggle_Error_ERR_0200.Request="";
+CATSmaD_Joggle_Error_ERR_0200.Diagnostic="創建平鋪下陷時出現錯誤。";
+CATSmaD_Joggle_Error_ERR_0200.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0201.Request="";
+CATSmaD_Joggle_Error_ERR_0201.Diagnostic="無法找到到下陷的平鋪邊界規格或下陷的平鋪邊界規格錯誤。";
+CATSmaD_Joggle_Error_ERR_0201.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0202.Request="";
+CATSmaD_Joggle_Error_ERR_0202.Diagnostic="無法找到下陷的平鋪邊界幾何圖形或下陷的平鋪邊界幾何圖形錯誤。";
+CATSmaD_Joggle_Error_ERR_0202.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0203.Request="";
+CATSmaD_Joggle_Error_ERR_0203.Diagnostic="計算平鋪下陷特征曲線時出現錯誤。";
+CATSmaD_Joggle_Error_ERR_0203.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0204.Request="";
+CATSmaD_Joggle_Error_ERR_0204.Diagnostic="計算特征曲線時出現以下問題：該零件已損壞";
+CATSmaD_Joggle_Error_ERR_0204.Advice="請嘗試再次啟動創建下陷。";
+
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化 Jogglesupport : Build FD
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化
+CATSmaD_Joggle_Error_ERR_0300.Request="";
+CATSmaD_Joggle_Error_ERR_0300.Diagnostic="創建折疊下陷支持面時出現錯誤。";
+CATSmaD_Joggle_Error_ERR_0300.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0301.Request="";
+CATSmaD_Joggle_Error_ERR_0301.Diagnostic="無法找到下陷支持面的折疊規格或下陷支持面的折疊規格錯誤。";
+CATSmaD_Joggle_Error_ERR_0301.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0302.Request="";
+CATSmaD_Joggle_Error_ERR_0302.Diagnostic="無法找到下陷支持面的折疊幾何圖形或下陷支持面的折疊幾何圖形錯誤。";
+CATSmaD_Joggle_Error_ERR_0302.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0303.Request="";
+CATSmaD_Joggle_Error_ERR_0303.Diagnostic="計算 OML 時出現錯誤。";
+CATSmaD_Joggle_Error_ERR_0303.Advice="如果基準特征為曲面折疊網，\n 請檢查支持曲面和折疊網之間的相交是否連通。";
+
+
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化 Jogglesupport : Build FP
+// 3951 校正官方漢化-------------------------------------------------------------------
+
+CATSmaD_Joggle_Error_ERR_0400.Request="";
+CATSmaD_Joggle_Error_ERR_0400.Diagnostic="創建平鋪下陷支持面時出現錯誤。";
+CATSmaD_Joggle_Error_ERR_0400.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0401.Request="";
+CATSmaD_Joggle_Error_ERR_0401.Diagnostic="無法找到下陷支持面的平鋪規格或下陷支持面的平鋪規格錯誤。";
+CATSmaD_Joggle_Error_ERR_0401.Advice="請修改輸入的參數。";
+
+CATSmaD_Joggle_Error_ERR_0402.Request="";
+CATSmaD_Joggle_Error_ERR_0402.Diagnostic="無法找到下陷支持面的平鋪幾何圖形或下陷支持面的平鋪幾何圖形錯誤。";
+CATSmaD_Joggle_Error_ERR_0402.Advice="請修改輸入的參數。";
+
+// 3951 校正官方漢化-------------------------------------------------------------------
+// 3951 校正官方漢化 AeroFlangeCCs : Build FD
+// 3951 校正官方漢化-------------------------------------------------------------------
+Flange_CCsNotBuilt="無法構建以下特征曲線";
+Folded_View="折疊視圖： ";
+Unfolded_View="展開視圖： ";
+BTLB="BTL 基準特征";
+BTLF="BTL 支持面";
+OML="OML";
+IML="IML";
+OML2="第二個 OML";
+CLB="CLB";
+         

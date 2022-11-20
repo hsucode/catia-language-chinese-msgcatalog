@@ -1,0 +1,45 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2007
+// 3951 校正官方漢化 ---------------------------------------------------------------------------
+// 3951 校正官方漢化 Author: VKF - Jan 2007
+// 3951 校正官方漢化---------------------------------------------------------------------------
+// 3951 校正官方漢化 09/01/2007 	VKF Creation
+// 3951 校正官方漢化 11/09/2007   DNG 597081 Correction Added a warning message
+// 3951 校正官方漢化 10/04/2008   KXI New Error Message added for REPLACE_ACTION_FAILED.
+// 3951 校正官方漢化 18/07/2008   KXI New Error Message added for Attached Doc Modified documents.
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化
+
+// 3951 校正官方漢化 All the values for Action
+ReplaceAction.None = "無";
+ReplaceAction.Refresh = "刷新";
+ReplaceAction.Refresh.AfterRefresh = "已刷新";
+ReplaceAction.Insert = "插入";
+ReplaceAction.Insert.AfterRefresh = "已插入";
+ReplaceAction.Remove = "移除";
+ReplaceAction.Remove.AfterRefresh = "已移除";
+ReplaceAction.Failed.AfterRefresh = "刷新失敗";
+
+// 3951 校正官方漢化 Remarks
+INF_101="將用最新版次的文檔進行刷新";
+WRN_102="CATIA 會話中的修改將丟失。";
+ERR_103="已在 CATIA 會話中修改且無法刷新。";
+
+// 3951 校正官方漢化 CAI002
+// 3951 校正官方漢化 IR 597081 Correction
+WRN_103="文檔不可卸載，但不能按照批量卸載規則刷新。";
+
+WRN_104="已在最新裝配中找到并將導入裝配。";
+WRN_105="無法在最新的裝配中找到";
+ERR_107="已在 CATIA 會話中修改";
+ERR_108="已在會話中刷新。";
+ERR_111 = "已在 CATIA 會話中修改了此文檔附加的一個或多個文檔。因此不能刷新 ";
+
+INF_101.AfterRefresh="將用最新版次的文檔進行刷新";
+WRN_102.AfterRefresh="CATIA 會話中的修改丟失。";
+ERR_103.AfterRefresh="已在 CATIA 會話中修改且無法刷新。";
+WRN_104.AfterRefresh="已導入會話。";
+WRN_105.AfterRefresh="已從會話中移除";
+ERR_110.AfterRefresh="無法刷新此文檔， ";
+ERR_111.AfterRefresh= "已在 CATIA 會話中修改了此文檔附加的一個或多個文檔。因此不能刷新 ";
+
+

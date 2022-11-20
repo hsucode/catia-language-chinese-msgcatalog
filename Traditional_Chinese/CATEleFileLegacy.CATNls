@@ -1,0 +1,44 @@
+MigrationRejected="此容器的某些元素拒絕導入。請參閱此報告了解細節。";
+MigrationNotYetHandled="尚未處理某些電氣元素的導入問題。";
+PublicationSharedBetwenCnctPts="無法導入此設備參考，因為它的一些連接點共享相同的發布。";
+CnctPtCoherency="“/P1”連接點不一致。請：\n - 檢查連接點是否未斷開（不缺少幾何體）。\n - 檢查是否至少已定義接觸的幾何圖形元素。\n - 在設備參考上運行“數據向上助手”(CATDUA)。";
+CnctPtCoherencyDummyCorrection="“/P1”連接點缺少接觸的幾何圖形元素。\n 因此，在原點處創建一個點，并設為新的接觸幾何體。";
+PubSharedBySeveralCnctPts="“/P1”發布在“/P2”連接點和“/P3”連接點之間共享。";
+DeviceCATProductReference="導入尚未解決作為裝配定義的電氣設備。";
+RefDesValuationNotHandled="尚未在設備第一個實例上對“參考指示符”屬性賦值。因此，無法轉移該屬性。";
+ProtectionImport="導入的保護覆蓋層不再可編輯。電氣屬性被保留。";
+CorruptedBns="此段不一致：\n 請在相應的電氣分支幾何體上運行“數據向上助手”(CATDUA)。";
+PlaneLinkMigrationFailure="活動平面的參考已丟失。";
+ComputeBnsRepresentationFailure="計算段展示失敗：\n 請檢查段之間的切線是否由柔性曲線構成，而并非肋的面（段展示）。";
+BranchableHasNoCurve="此分支沒有關聯的曲線：\n 請在相應的電氣分支幾何體上運行“數據向上助手”(CATDUA)。";
+ISInstanceFound="已遷移接頭實例：\n 已遷移內部接頭，并定位于 savec 位置。若位置不正確，請運行“數據向上助手”(CATDUA)。此外，您還需要將它重新連接到一個段。";
+MBNSMigrated="已遷移線束：\n 在您開始用 CATIA V6 工作之前，建議您運行“電氣裝配設計”工作臺的“工具”菜單中的“最終數據導入”命令";
+Postprocess_is_Mandatory_for_EHFdata="已部分遷移平鋪線束：\n 在使用 CATIA 電氣工作臺之前，平鋪線束數據必須在“電氣”工作臺的工具菜單中啟動導入最終化";
+EDL3NotAppliedOnSplice="未定位接頭，分支鏈接可能丟失。\n 為避免此信息，請使用激活 EDL_3 規則的 CATDUA，以啟用內部接頭的導入。";
+MBNSExtraCnxDetected="由于檢測到外部連接，不在同一位置的內部電氣分支幾何體段端點連接可能會丟失";
+SupportNotElectricallyExtended="無法以電氣方式擴展支持。請重新定義支持";
+Representation="展示";
+_FlatteningRepresentation="_平鋪展示";
+_WireRepresentation="_導體展示";
+DeviceMigrated="已遷移設備：\n 在您開始用 CATIA V6 工作之前，建議您運行“電氣裝配設計”工作臺的“工具”菜單中的“最終數據導入”命令";
+BnsCircleMovedToStdGeomSetAndDeactivated="";
+EhfLengthToleranceNotMigrable="在 V6 中導入時，在此平鋪數據中檢測到長度公差特征，所以 FBDI 被停止。\n 解：在繼續 FBDI 之前，在 V5 中重新運行數據（例如，移除長度公差特征）";
+SubTypeMigration="屬性“子類型”的值已在 FBDI 過程中被截斷";
+MatingWithMigration="屬性“配合”的值已在 FBDI 過程中被截斷";
+ColorMigration="屬性“顏色”的值已在 FBDI 過程中被截斷";
+WireGroup_TypeMigration="屬性“線組類型”的值已在 FBDI 過程中被截斷";
+SignalIDMigration="屬性“信號 ID”的值已在 FBDI 過程中被截斷";
+AnnotationMigration="屬性“標注”的值已在 FBDI 過程中被截斷";
+ElecBundleLinkMigrationFail="無法遷移電氣幾何體和電氣物理系統之間的鏈接";
+
+FBDIReplaceModeActivated="無法再次導入此對象。這屬于 V6R2010 限制。";
+CurveShapeChange="線束分支形狀可能發生變化";
+
+V5SupportIdentified="已標識 V5 支持";
+V6SupportTransformationSuccessful="V5 支持已成功變換為 V6 支持";
+
+V5ProtectionNotConvertedToV6Protection="無法將 V5 外部保護轉換為 V6 光保護被覆。";
+
+PostTreatmentForExtremityLinks="將外部參考作為展示的端點后期處理失敗。";
+ReRouteBranchThroughOldSupport="舊支持點（平面上的點）無法轉換為坐標點。";
+RetianerRelationImport="容器關系無法導入到 V6 中。";

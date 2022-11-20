@@ -1,0 +1,39 @@
+CATSbuModelicaGenericEditorCmd.UndoTitle="顯示 Modelica 文檔";
+
+ClassError.Description="您需要在啟動此命令前激活或選擇一個 Modelica 類。";
+
+EditabilityButton.Editable="可編輯";
+EditabilityButton.NotEditable="只讀";
+EditabilityButton.ClassIsEditable="Modelica 類為活動狀態，可編輯。";
+EditabilityButton.ClassIsReadOnly="Modelica 為只讀，無法修改。";
+EditabilityButton.ClassIsNotUIActive="由于 Modelica 類為非活動狀態，所以不可編輯。要激活 Modelica 類，請單擊此按鈕。";
+
+UpdateQuestionDialog.Title="更新";
+UpdateQuestionDialog.ModelicaMessage="Modelica 已在此編輯器之外修改。\n是否要重新加載？\n\n此設置將在面板打開時保存。";
+UpdateQuestionDialog.DocumentationMessage="該文檔已在此編輯器之外修改。\n是否要重新加載？\n\n此設置將在面板打開時保存。";
+
+SaveQuestionDialog.Title="保存";
+SaveQuestionDialog.ModelicaMessage="Modelica 文本已更改。\n是否要保存這些更改？";
+SaveQuestionDialog.DocumentationMessage="文檔已更改。\n是否要保存這些更改？";
+
+FailedMakeEditable.Title="可編輯性";
+FailedMakeEditable.ModelicaMessage="無法將 Modelica 文本變為可編輯狀態。";
+FailedMakeEditable.DocumentationMessage="無法將 Modelica 文檔變為可編輯狀態。";
+
+LinkErrorDialog.Title="鏈接失敗";
+LinkErrorDialog.Message="打開鏈接位置失敗。\n請檢查該鏈接是否有效。";
+
+ModelicaLinkErrorDialog.Title="找不到";
+ModelicaLinkErrorDialog.Message="找不到 Modelica 類。\n請檢查其是否存在。";
+
+SaveError.TypedError="在文本中檢測到錯誤。";
+
+AddressBar.LinksVisited="----- 歷史記錄 -----";
+AddressBar.LocalClasses="----- 子類 -----";
+
+GetTextFailure.ModelicaMessage="無可用的 Modelica 文本。";
+GetTextFailure.ConcealedModelicaMessage="Modelica 文本已加密\n且無法顯示。";
+GetTextFailure.DocumentationMessage="沒有可用的文檔。";
+GetTextFailure.UsedClassesMessage="檢索已使用的類失敗。";
+GetTextFailure.FlatModelicaMessage="生成平面 Modelica 失敗。\n請查看消息窗口獲取詳細信息。";
+GetTextFailure.FlatModelicaMessage2="無法生成平面 Modelica。\n扁面 Modelica 只適用于模型和塊。";

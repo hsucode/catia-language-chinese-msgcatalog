@@ -1,0 +1,160 @@
+DialogBoxTitle="匹配約束";
+
+ElementFrame.Title="元素";
+ElementFrame.FirstElementLbl.Title="光源";
+ElementFrame.SecondElementLbl.Title="目標";
+ElementFrame.InvertChkBtn.ShortHelp="反轉";
+ElementFrame.InvertChkBtn.LongHelp="反轉源和目標";
+
+ElementFrame.FirstLimitSelector.LongHelp="選擇第一限制";
+ElementFrame.SecondLimitSelector.LongHelp="選擇第二限制";
+
+ElementFrame.ElementTxtLbl.Title="元素";
+ElementFrame.LimitsTxtLbl.Title="限制";
+
+ElementFrame.PartlyBtn.ShortHelp="部分";
+ElementFrame.PartlyBtn.LongHelp="匹配曲面僅部分地與參考曲面的邊線相交";
+
+ContinuityFrame.ApproxTextLbl.Title="近似";
+ContinuityFrame.ExactTextLbl.Title="精確";
+ContinuityFrame.SurfaceContLbl.ShortHelp="連續的階次";
+ContinuityFrame.SurfaceContLbl.LongHelp="使用近似運算法則來實現連續。
+已保留變形曲面的參數化";
+ContinuityFrame.EdgeContLbl.ShortHelp="邊線連續";
+ContinuityFrame.EdgeContLbl.LongHelp="邊線連續 - 僅用于曲面匹配";
+ContinuityFrame.SurfG0ChkBtn.ShortHelp="G0";
+ContinuityFrame.SurfG0ChkBtn.LongHelp="G0";
+ContinuityFrame.SurfG1ChkBtn.ShortHelp="G1";
+ContinuityFrame.SurfG2ChkBtn.ShortHelp="G2";
+ContinuityFrame.SurfG3with3rowChkBtn.ShortHelp="具有三行的 G3";
+ContinuityFrame.SurfG3with3rowChkBtn.LongHelp="通過移動控制點的第三行來執行 G3";
+ContinuityFrame.SurfG3with4rowChkBtn.ShortHelp="具有四行的 G3";
+ContinuityFrame.SurfG3with3rowChkBtn.LongHelp="通過移動控制點的第四行來執行 G3";
+
+ContinuityFrame.BeginEdgeG1ChkBtn.ShortHelp="G1";
+ContinuityFrame.BeginEdgeG2ChkBtn.ShortHelp="G2";
+ContinuityFrame.BeginEdgeG3ChkBtn.ShortHelp="G3";
+ContinuityFrame.EndEdgeG1ChkBtn.ShortHelp="G1";
+ContinuityFrame.EndEdgeG2ChkBtn.ShortHelp="G2";
+ContinuityFrame.EndEdgeG3ChkBtn.ShortHelp="G3";
+
+ContinuityFrame.ExactLbl.LongHelp="使用分析運算法則來實現連續。
+較好地實現請求但未保留參數化。檢查偏差";
+ContinuityFrame.ExactG0ChkBtn.ShortHelp="G0";
+ContinuityFrame.ExactG1ChkBtn.ShortHelp="G1";
+ContinuityFrame.ExactG2ChkBtn.ShortHelp="G2";
+ContinuityFrame.ExactG3ChkBtn.ShortHelp="G3";
+
+MatchOptionFrame.Title="選項";
+MatchOptionFrame.LongHelp="匹配結果的變量";
+
+MatchOptionFrame.PartlyBtn.ShortHelp="部分";
+MatchOptionFrame.PartlyBtn.LongHelp="匹配曲面僅部分地與參考曲面的邊線相交";
+
+MatchOptionFrame.DiffusionBtn.ShortHelp="擴散";
+MatchOptionFrame.DiffusionBtn.LongHelp="已修改控制點的最大行數。 
+如果相對的邊線具有約束，
+該約束使用的控制點行將不會移動。";
+
+MatchOptionFrame.InsideChkBtn.ShortHelp="內側";
+MatchOptionFrame.InsideChkBtn.LongHelp="對于曲面，源邊線投影到目標曲面上。
+對于曲線，源頂點投影到目標邊線上";
+
+MatchOptionFrame.LockBoundariesChkBtn.ShortHelp="鎖定邊界";
+MatchOptionFrame.LockBoundariesChkBtn.LongHelp="為使 G0 保持橫向連續，
+鎖定橫向邊界
+可用于小變形匹配";
+
+MatchOptionFrame.BasicSurfaceChkBtn.ShortHelp="基本幾何圖形上";
+MatchOptionFrame.BasicSurfaceChkBtn.LongHelp="與基礎幾何圖形的端點匹配";
+
+MatchOptionFrame.InvertChkBtn.ShortHelp="反轉";
+MatchOptionFrame.InvertChkBtn.LongHelp="在源元素和目標元素之間切換";
+
+MatchOptionFrame.AutoApplyChkBtn.ShortHelp="自動應用";
+MatchOptionFrame.AutoApplyChkBtn.LongHelp="一旦有選項被修改，系統都將更新約束。
+該選項僅在命令中有效。";
+
+MatchOptionFrame.DisplayDeviationChkBtn.ShortHelp="顯示變形距離";
+MatchOptionFrame.DisplayDeviationChkBtn.LongHelp="顯示當前幾何圖形和之前的版本之間的最大距離。";
+
+MatchOptionFrame.AdaptTransDegreePshBtn.ShortHelp="調整";
+MatchOptionFrame.AdaptTransDegreePshBtn.LongHelp="按照目標來調整源的橫向度數，使它們具有相同的橫向度數";
+
+AlignmentFrame.Title="對齊";
+AlignmentFrame.AlignmentChkBtn.ShortHelp="對齊";
+AlignmentFrame.AlignmentChkBtn.LongHelp="橫向行的控制點投影到平面上。
+3 點平面：每行的第一點、第二點和最后的點共同定義了投影平面。
+平均平面：投影平面是橫向行的平均平面";
+
+ModificationRatioFrame.Title="修改比率";
+ModificationRatioFrame.ModificationRatioSlider.ShortHelp="修改比率";
+ModificationRatioFrame.ModificationRatioSlider.LongHelp="修改初始形狀和上次修改之間的來源";
+
+
+InfoContDeviationInfoFrame.Title="偏差";
+InfoContDeviationInfoFrame.G0Lbl.Title="G0： ";
+InfoContDeviationInfoFrame.G1Lbl.Title="G1： ";
+InfoContDeviationInfoFrame.G2Lbl.Title="G2： ";
+InfoContDeviationInfoFrame.G3Lbl.Title="G3： ";
+
+PlaneFrame.Title="鏡像匹配";
+PlaneFrame.PlaneMatchingChkBtn.ShortHelp="鏡像匹配";
+
+BothFrame.Title="兩者";
+BothFrame.LongHelp="修改源和目標";
+BothFrame.MeanChkBtn.ShortHelp="平均";
+BothFrame.MeanChkBtn.LongHelp="兩個新變形對象的公共邊線
+位于兩條原始邊線的中間";
+BothFrame.ExtensionChkBtn.ShortHelp="擴展";
+BothFrame.ExtensionChkBtn.LongHelp="兩個新變形曲面的公共邊線
+位于兩個原始曲面的外插延伸的相交處。
+不適用于曲線";
+BothFrame.CommonEdgeChkBtn.ShortHelp="公共邊線";
+BothFrame.CommonEdgeChkBtn.LongHelp="如果已執行 G0，則適用于 G1
+僅修改公共邊線。兩個曲面的 G1 行均未被修改";
+
+GapMatchingFrame.Title="間隔選項";
+GapMatchingFrame.GapMatchingOptionCombo.LongHelp="間隔形式";
+GapMatchingFrame.TempoOffsetValueFrame.Title="偏移值";
+GapMatchingFrame.OffsetValueFrame.Title="偏移值";
+
+G3OptionFrame.Title="G3 選項";
+G3OptionFrame.G3With3RowsChkBtn.ShortHelp="具有三行的 G3";
+G3OptionFrame.G3With3RowsChkBtn.LongHelp="G3 連續，未修改控制點的第四行";
+G3OptionFrame.G3WithFixCurvatureChkBtn.ShortHelp="具有固定曲率的 G3";
+G3OptionFrame.G3WithFixCurvatureChkBtn.LongHelp="G3 連續，如果需要 G3，則 G2 不連續";
+
+SupportFrame.Title="支持面";
+SupportFrame.LongHelp="支持面 - 投影方向";
+SupportFrame.ProjectionChkBtn.ShortHelp="沿方向";
+SupportFrame.ProjectionChkBtn.LongHelp="控制點沿一個特定方向移動。
+若未選擇該選項，控制點將沿著目標曲面
+的法線移動。";
+ProjectionTypeCombo.AlongCompass="機器人";
+ProjectionTypeCombo.AlongView="沿視圖";
+ProjectionTypeCombo.UserLinePlane="用戶直線// 3951 校正官方漢化平面";
+ProjectionTypeCombo.AlongSource="沿源";
+SupportFrame.ProjectionTypeCombo.LongHelp="機器人：沿機器人的法線
+沿視圖：沿屏幕平面的法線
+用戶直線/平面：沿用戶選擇或創建的直線，或沿用戶選擇或創建的平面的法線
+沿源：沿源的法線";
+
+TabPageContainer.ApproximationPage.Title="近似值";
+
+Gap.GapExtrapol="外插延伸";
+Gap.GapParallel="平行";
+Gap.GapOffFix="偏移固定";
+Gap.GapOffNormal="偏移范數";
+
+Alignment.MeanPlane="平均平面";
+Alignment.ThreePoints="3 點平面";
+
+MainFrame.OptionsFrame.Title="選項";
+MainFrame.OptionsFrame.DiffusionCheck.Title="擴散";
+MainFrame.OptionsFrame.EndPointsCheck.Title="投影終點";
+
+P2Title="連續約束";
+
+
+

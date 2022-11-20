@@ -1,0 +1,134 @@
+// 3951 校正官方漢化-------------------------------------------------------------------------
+// 3951 校正官方漢化 Resource file for CATPrintCaptureSettingDialog
+// 3951 校正官方漢化 pcd - Mar 2005
+// 3951 校正官方漢化-------------------------------------------------------------------------
+Title="捕獲配置";
+
+TabContainer.General.Title="常規";
+
+TabContainer.General.Frame11.Title="捕獲前";
+TabContainer.General.Frame11.AutoHide.Title="自動隱藏捕獲工具欄";
+TabContainer.General.Frame11.AutoHide.LongHelp="捕獲圖像，但不捕獲對話。此選項僅可在屏幕捕獲模式下以及已清除“選擇區域”選項時可用。";
+TabContainer.General.Frame11.Region.Title="選擇區域";
+TabContainer.General.Frame11.Region.LongHelp="僅捕獲圖像的特定部分。";
+
+TabContainer.General.Frame12.Title="捕獲后";
+TabContainer.General.Frame12.Preview.Title="顯示預覽";
+TabContainer.General.Frame12.Preview.LongHelp="如果已清除此選項，則將在一個鏡頭中完成捕獲，而不顯示預覽窗口。";
+
+TabContainer.General.Frame13.Title="熱鍵";
+TabContainer.General.Frame13.LongHelp="定義鍵組合，以啟動捕獲。您必須至少選擇一個鍵或一個字母。除字母外，您還可以選擇兩個或三個鍵（例如 Shift + Alt + C）。捕獲會話期間僅保留一個組合。";
+TabContainer.General.Frame13.Ctrl.Title="Ctrl";
+TabContainer.General.Frame13.Shift.Title="Shift";
+TabContainer.General.Frame13.Alt.Title="Alt";
+
+TabContainer.General.Frame15.Title="選項";
+TabContainer.General.Frame15.ShowBanner.Title="顯示橫幅";
+TabContainer.General.Frame15.ShowBanner.LongHelp="顯示捕獲中的橫幅。
+默認情況下，$NAME、$DATE 和 $TIME 變量將在捕獲底部打印用戶名以及當前日期和時間。您可以刪除顯示的變量并替換為您選擇的文本。
+該選項不能用于屏幕捕獲模式。";
+TabContainer.General.Frame15.CaptureOnlyGeometry.Title="僅捕獲幾何圖形";
+TabContainer.General.Frame15.CaptureOnlyGeometry.LongHelp="捕獲不帶結構樹的幾何圖形。此選項不能用于屏幕捕獲模式。";
+TabContainer.General.Frame15.CaptureWhiteAsBlack.Title="捕獲黑底白影";
+TabContainer.General.Frame15.CaptureWhiteAsBlack.LongHelp="在生成的捕獲中顯示黑底白像素。";
+TabContainer.General.Frame15.Color.Title="顏色模式：";
+TabContainer.General.Frame15.FilterMono.Title="過濾器單色：";
+
+TabContainer.Rendering.Title="渲染";
+
+TabContainer.Rendering.TabContainerRender.ActiveMode.Title="活動模式";
+TabContainer.Rendering.TabContainerRender.ActiveMode.ActiveModeFrame.OnScreen.Title="光柵化";
+TabContainer.Rendering.TabContainerRender.ActiveMode.ActiveModeFrame.OnScreen.LongHelp="將向量表示轉換為像素（即光柵格式）。";
+TabContainer.Rendering.TabContainerRender.ActiveMode.ActiveModeFrame.Wireframe.Title="線框";
+TabContainer.Rendering.TabContainerRender.ActiveMode.ActiveModeFrame.Wireframe.LongHelp="生成其中僅顯示邊線的 2D 圖像。";
+TabContainer.Rendering.TabContainerRender.ActiveMode.ActiveModeFrame.WireframeXScale.Title="線框";
+TabContainer.Rendering.TabContainerRender.ActiveMode.ActiveModeFrame.WireframeXScale.ShortHelp="已在“超大規模”模式中禁用“線框”模式";
+
+TabContainer.Rendering.TabContainerRender.OnScreen.Title="光柵化選項";
+TabContainer.Rendering.TabContainerRender.OnScreen.OnScreenFrame.WhiteBackGround.Title="白色背景";
+TabContainer.Rendering.TabContainerRender.OnScreen.OnScreenFrame.BackgroundColor.Title="背景顏色 ";
+TabContainer.Rendering.TabContainerRender.OnScreen.OnScreenFrame.BackgroundColor.ShortHelp="選擇捕獲的背景顏色。";
+TabContainer.Rendering.TabContainerRender.OnScreen.OnScreenFrame.BackgroundColor.LongHelp="在選定背景顏色中捕獲模型。\n選擇“無顏色”，以捕獲帶原始背景的模型。";
+TabContainer.Rendering.TabContainerRender.OnScreen.OnScreenFrame.AntiAliasing.Title="抗鋸齒";
+TabContainer.Rendering.TabContainerRender.OnScreen.OnScreenFrame.AntiAliasing.LongHelp="修改線條的外形，以使粗糙邊線看起來更加光順。";
+TabContainer.Rendering.TabContainerRender.OnScreen.OnScreenFrame.ConstantSize.Title="恒定大小";
+TabContainer.Rendering.TabContainerRender.OnScreen.OnScreenFrame.ConstantSize.LongHelp="使 dpi 和分辨率隨質量的提高而提高（質量越高，dpi 和分辨率越高），以便捕獲的圖像始終具有相同大小（以毫米為單位）。";
+TabContainer.Rendering.TabContainerRender.OnScreen.OnScreenFrame.Render.Title="質量：";
+TabContainer.Rendering.TabContainerRender.OnScreen.OnScreenFrame.Render.LongHelp="定義輸出的質量：
+“低（屏幕）”可使質量與屏幕分辨率相匹配。
+“中”可設置平均質量。
+“高”可設置高質量。
+“自定義”使您能夠定義您自己的質量。要執行此操作，請單擊“更多...”，然后選擇打印的寬度、高度和分辨率。";
+TabContainer.Rendering.TabContainerRender.OnScreen.OnScreenFrame.More.Title="更多 ...";
+TabContainer.Rendering.TabContainerRender.OnScreen.OnScreenFrame.FilterMono.Title="單色過濾";
+TabContainer.Rendering.TabContainerRender.OnScreen.OnScreenFrame.FilterMono.LongHelp="定義要應用的過濾器類型。
+“高頻振動”是基于 Floyd-Steinberg 算法的默認過濾器，通常用于執行高頻振動以將彩色圖像轉換為黑白圖像。
+“閥值”是基于與圖像內顏色平均值相對應的閥值的簡單算法：如果顏色值超過該閥值，它將轉換為白色，否則將轉換為黑色。該算法有時可避免對線條黑白渲染產生負面影響。
+該選項僅與單色模式相關。";
+
+TabContainer.Rendering.TabContainerRender.Wireframe.Title="線框選項";
+TabContainer.Rendering.TabContainerRender.Wireframe.WireframeFrame.Semantic.Title="語義級別：";
+TabContainer.Rendering.TabContainerRender.Wireframe.WireframeFrame.Semantic.LongHelp="定義要應用的渲染模式。
+“離散”可分布點以填充間隙，并在圖像缺少點時確保線性。";
+TabContainer.Rendering.TabContainerRender.Wireframe.WireframeFrame.CaptureSize.Title="捕獲大小：";
+TabContainer.Rendering.TabContainerRender.Wireframe.WireframeFrame.CaptureSize.LongHelp="定義生成的 2D 圖像的大小（以毫米為單位）：
+“模型大小”表示與模型大小相對應的圖像大小。
+“顯示大小”表示與屏幕上顯示的模型大小相對應的圖像大小。";
+TabContainer.Rendering.TabContainerRender.Wireframe.WireframeFrame.HLRPolyhedric.Title="使用 3D 精確度（在 HLR 模式中）";
+TabContainer.Rendering.TabContainerRender.Wireframe.WireframeFrame.HLRPolyhedric.LongHelp="使用多面 HLR 模式代替精確 HLR 模式可獲取簡化結果（即多面線段），而非精確結果。";
+
+TabContainer.OutputPreferences.Title="輸出首選項";
+
+TabContainer.OutputPreferences.OutputFrame.Title="輸出";
+TabContainer.OutputPreferences.OutputFrame.File.Title="文件";
+TabContainer.OutputPreferences.OutputFrame.File.ShortHelp="文件";
+TabContainer.OutputPreferences.OutputFrame.File.LongHelp="將捕獲的圖像保存在其他格式和/或其他位置中。";
+TabContainer.OutputPreferences.OutputFrame.Print.Title="打印";
+TabContainer.OutputPreferences.OutputFrame.Print.ShortHelp="打印";
+TabContainer.OutputPreferences.OutputFrame.Print.LongHelp="打印捕獲的圖像。這將打開打印對話框，以使您能夠定義打印參數。";
+TabContainer.OutputPreferences.OutputFrame.Clipboard.Title="剪貼板";
+TabContainer.OutputPreferences.OutputFrame.Clipboard.ShortHelp="剪貼板";
+TabContainer.OutputPreferences.OutputFrame.Clipboard.LongHelp="將捕獲的圖像拷貝到剪貼板。";
+TabContainer.OutputPreferences.OutputFrame.Album.Title="相冊";
+TabContainer.OutputPreferences.OutputFrame.Album.ShortHelp="相冊";
+TabContainer.OutputPreferences.OutputFrame.Album.LongHelp="將捕獲的圖像存儲在相冊中。";
+
+TabContainer.OutputPreferences.FileFrame.Title="文件";
+TabContainer.OutputPreferences.FileFrame.LongHelp="使您能夠選擇文件類型以及“線框”模式下每種格式的專用特性。
+此區域還使您能夠通過單擊“查找范圍”并導航至所需位置，將圖像保存到其他位置。";
+TabContainer.OutputPreferences.FileFrame.FileProperties.Title="特性...";
+TabContainer.OutputPreferences.FileFrame.FileProperties.LongHelp="使用“線框渲染”模式時，提供對高級配置選項的訪問權限。";
+TabContainer.OutputPreferences.FileFrame.Type.Title="類型：";
+TabContainer.OutputPreferences.FileFrame.Folder.Title="文件夾：";
+TabContainer.OutputPreferences.FileFrame.FileButton.Title="查找范圍...";
+
+TabContainer.OutputPreferences.AlbumFrame.Title="相冊";
+TabContainer.OutputPreferences.AlbumFrame.LongHelp="使您能夠選擇圖像在相冊中的保存格式。";
+TabContainer.OutputPreferences.AlbumFrame.Type.Title="類型：";
+TabContainer.OutputPreferences.AlbumFrame.AlbumProperties.Title="特性...";
+
+TabContainer.OutputPreferences.PreferenceLabel.Title1="光柵化模式";
+TabContainer.OutputPreferences.PreferenceLabel.Title2="線框模式";
+
+lookInDialog.Title="在文件夾中查找";
+
+Color="顏色";
+Grey="灰度";
+Mono="單色";
+
+Dither="高頻振動";
+Threshold="閾值";
+
+LowResolution="低（屏幕）";
+MediumResolution="中";
+HighestResolution="最高";
+CustomResolution="已自定義";
+
+DiscretizedSemantic="已離散";
+LowSemantic="低";
+PolylineSemantic="折線";
+PolylineConicSemantic="折線和二次曲線";
+PolylineSplineSemantic="折線和樣條線";
+
+ModelSize="模型大小";
+DisplaySize="顯示大小";

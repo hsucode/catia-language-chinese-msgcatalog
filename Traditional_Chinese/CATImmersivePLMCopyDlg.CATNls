@@ -1,0 +1,148 @@
+Title="PLM 拷貝選項";
+
+Help="PLM 拷貝的全局選項";
+LongHelp="PLM 拷貝的全局選項";
+
+TitleDuplicate="正在進行復制...";
+
+ToolbarOptionsTitle="正在進行復制...";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Immersive panel
+// 3951 校正官方漢化 1- Standard Part Option
+TxtStandardOptionTitle="優化重復使用";
+// 3951 校正官方漢化 2- Project Option
+TxtProjectOptionTitle="從其他項目中排除數據。";
+// 3951 校正官方漢化 3- User Identification Cloning String
+TxtCloning="重復字符串：";
+TxtCloningStringDV="";
+// 3951 校正官方漢化Keep ... Options Group Box
+// 3951 校正官方漢化 4-A Keep Ownership Option
+TxtKOSOptionTitle="保持所有者";
+// 3951 校正官方漢化 4-B Keep Lock Option
+TxtLockOptionTitle="保持鎖定";
+// 3951 校正官方漢化 4-C Keep Config Option
+TxtConfigOptionTitle="保持配置";
+// 3951 校正官方漢化 5- Run Clone
+TxtRunPushButton="運行";
+// 3951 校正官方漢化 6- Cancel Clone
+TxtCancelPushButton="取消";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Overview of selected options
+SelectedOptions="高級復制的選定選項";
+StandardOption="已激活“優化重復使用”選項：將共享所有可重復使用的對象。";
+ProjectOption="已激活“項目”選項";
+StandardProjectOption="已激活“重新例化可重復使用的對象”和“項目”選項";
+KOSOption="已激活“保持所有者”選項";
+LockOption="已激活“保持鎖定”選項";
+KOSLockOption="已激活“保持所有者”和“保持鎖定”選項";
+ConfigOption="已激活“保持配置”選項";
+KOSConfigOption="已激活“保持所有者”和“保持配置”選項";
+LockConfigOption="已激活“保持鎖定”和“保持配置”選項";
+KOSLockConfigOption="已激活“保持鎖定”、“保持所有者”和“保持配置”選項";
+DefaultOptions="已激活“優化重復使用”選項：將共享所有可重復使用的對象。";
+NoOption="未選定任何選項";
+
+RunPLMCopyTitle="";
+RunPLMCopy="正在運行高級復制...";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 PLM Copy Balloon Bar
+TextDuplicateTitle="復制您的選擇...";
+TextExcludeTitle="從復制中排除您的選擇...";
+TextReuseTitle="重復使用您的選擇...";
+TextSearchImpactsTitle="搜索影響";
+// 3951 校正官方漢化 Commands available on Balloon
+dupDuplicate="復制您的選擇。";
+dupExclude="從復制中排除您的選擇。";
+dupReuse="重復使用您的選擇。";
+dupSearchImpacts="搜索影響";
+// 3951 校正官方漢化 No action possible on selection from Balloon
+NoCommandOnBalloon="警告！";
+// 3951 校正官方漢化NoCommandOnBalloonMsg="Your selection belongs to branch already reused or excluded from duplication scope." ;
+NoModifAllowed="警告！";
+NoModifAllowedViaBalloon="您的選擇已由重復使用或排除的 /p1 使用。請先更改其復制狀態，然后再更改您的選擇狀態。";
+DuplicationStatusNotAuthorized.Title="警告！";
+NoExclusionAllowedForDocuments="未授權從以下文檔的復制范圍中進行排除：/p1。";
+NoDuplicationAllowedForDocuments="未授權復制以下文檔：/p1。";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 EAP 24/11/2009: TOOLBAR
+Lock.Tooltip="保持原始鎖定。";
+Unlock.Tooltip="重置鎖定。";
+KOS.Tooltip="保持原始所有權。";
+NotKOS.Tooltip="重置原始所有權。";
+Reuse.Tooltip="停用可重復使用的業務邏輯規則：將復制所有可重復使用的對象。";
+NotReuse.Tooltip="激活可重復使用的業務邏輯規則：將與原始數據共享所有可重復使用的對象。";
+DockButton.Tooltip="停靠此沉浸式面板。";
+UndockButton.Tooltip="取消停靠此沉浸式面板。";
+Close.Tooltip="取消高級復制。";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Results
+// 3951 校正官方漢化 PLM Copy Successful
+SuccessfulPLMCopyTitle="已成功執行高級復制。";
+SuccessfulPLMCopy="";
+// 3951 校正官方漢化 PLM Copy failure: only Standard Parts
+OnlyStdPartsPLMCopyTitle="高級復制失敗，因為您的工作區僅包含可重復使用的項目。";
+OnlyStdPartsPLMCopy="";
+// 3951 校正官方漢化 PLM Copy failure
+FailurePLMCopyTitle="高級復制失敗。";
+FailurePLMCopy="";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Error management when launching command
+AdvDupKo="高級復制中斷";
+NoObjectRetreived="無法進行高級復制。展開失敗。請與您的管理員聯系。";
+NoSelectionRetreived="無法進行高級復制。未檢索到任何選擇。請與您的管理員聯系。";
+NotAuthorizedType="您的選擇 /p1 不受高級復制的支持。\n請檢查授權的類型。";
+FolderReferencesExpandOff="高級復制需要激活以下選項：“工具”>>“選項”-“PLM 訪問”>>“文件夾”>>“啟用參考展開”。 \n請將其激活。";
+AdvDupAlreadyOn="您已啟動“高級復制”命令。\n如果您不想再執行此活動命令，請將其取消。";
+WorkingAreaKO="您的工作區尚未創建。請與您的管理員聯系。";
+SimulationKO="無法進行高級復制。原因可能是執行或刪除業務邏輯規則。請與您的管理員聯系。";
+ReusePropagationKO="無法進行復制狀態傳播。請與您的管理員聯系。";
+CompassActivationKO="無法進行羅盤激活。請與您的管理員聯系。";
+UnexpectedError="發生意外錯誤。請與您的管理員聯系。";
+NotAdvDupCtxt="發生意外錯誤。請與您的管理員聯系。";
+OutAdvDupCtxt="高級復制在您當前的工作臺中不可用。";
+NotOriginalWindow="您正嘗試從另一個活動窗口執行高級復制。在當前窗口中啟動其之前，請先取消上一個命令。";
+ExpandWithoutRepKo="不支持“不帶展示展開”模式。\n請在“VPM 導航器”中啟用“帶展示展開”。";
+WorkingAreaKo="根文件夾不是您的工作區。\n未授權高級復制。";
+NoObjectInWorkingArea="未在您的工作區中找到任何對象。";
+NoObjectToDuplicate="您當前的編輯器中沒有要復制的對象。";
+DefaultError="發生意外錯誤。";
+ConnectedToWsp="高級復制不可用，因為某些數據已連接到工作區";
+FlowsAndTypesExpandOff="高級復制需要激活以下選項：“工具”>>“選項”-“基礎結構”>>“RFLP 導航器”>>“使用流和類型”。\n請將其激活。";
+
+// 3951 校正官方漢化 OK
+AdvDupOK="高級復制";
+
+// 3951 校正官方漢化 summary
+CATPLMCopySummaryDlg.Title="總結";
+
+
+// 3951 校正官方漢化 Option check
+ActivatedOption="個已激活";
+ActivatedOption.KO="“保留所有者”， ";
+ActivatedOption.KeepLock="“保持鎖定”， ";
+ActivatedOption.KeepConf="“保持配置”， ";
+ActivatedOption.Optimize="“優化重復使用”， ";
+ActivatedOption.No="否 ";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

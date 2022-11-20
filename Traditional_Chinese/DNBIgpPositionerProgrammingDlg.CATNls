@@ -1,0 +1,91 @@
+//*****************************************************************************
+//  DNBIgpPositionerProgrammingDlg
+//*****************************************************************************
+Title                                                           = "Positioner Programming";
+
+//-----------------------------------------------------------------------------
+// Labels/Captions
+//-----------------------------------------------------------------------------
+frmMainFrame.lblTaskName.Title                                  = "Task ";
+frmMainFrame.lblMotionGroups.Title                              = "Motion Group ";
+frmMainFrame.lblPositionerNames.Title                           = "Positioner ";
+
+frmPositionerFrame.Title                                        = "Positioner ";
+frmPositionerFrame.lblAlignmentType.Title                       = "Tool Alignment ";
+frmPositionerFrame.lblActiveJoints.Title                        = "Active joints ";
+
+frmPositionerValues.Title                                       = "Status";
+
+frmToolsFrame.chkJog.Title                                      = "Jog";
+frmToolsFrame.chkClash.Title                                    = "Clash";
+frmToolsFrame.chkTrackTarget.Title                              = "Track";
+
+//-----------------------------------------------------------------------------
+// Help
+//-----------------------------------------------------------------------------
+frmMainFrame.edtTaskName.Help                                   = "Currently selected task";
+frmMainFrame.cboMotionGroupNames.Help                           = "Select a motion group that contains a positioner to be programmed";
+frmMainFrame.cboPositionerNames.Help                            = "Select a positioner that will be programmed";
+
+frmPositionerFrame.cboAlignmentType.Help                        = "Select tool alignment type";
+frmPositionerFrame.cboActiveJoints.Help                         = "Select joints to be programmed";
+
+frmPositionerValues.lstPositionerValues.Help                    = "Click on operation to move the robot and a positioner.";
+
+frmToolsFrame.chkJog.Help                                       = "Show/Hide Jog panel";
+frmToolsFrame.chkClash.Help                                     = "Enable/distable clash analysis";
+frmToolsFrame.chkTrackTarget.Help                               = "Enable/disable target tracking";
+
+//-----------------------------------------------------------------------------
+// Short Help
+//-----------------------------------------------------------------------------
+frmMainFrame.edtTaskName.ShortHelp                              = "The name of the selected task";
+frmMainFrame.cboMotionGroupNames.ShortHelp                      = "The list of motion groups referenced by the task selected";
+frmMainFrame.cboPositionerNames.ShortHelp                       = "The name of the selected positioner";
+
+frmPositionerFrame.cboAlignmentType.ShortHelp                   = "The list of available tool alignment directions";
+frmPositionerFrame.cboActiveJoints.ShortHelp                    = "The list of positioner joints to be programmed";
+
+frmPositionerValues.lstPositionerValues.ShortHelp               = "The list of task operations and corresponding positioner values";
+
+frmToolsFrame.chkJog.ShortHelp                                  = "Use this button to show/hide Jog panel";
+frmToolsFrame.chkClash.ShortHelp                                = "Use this button to enable/disable clash analysis";
+frmToolsFrame.chkTrackTarget.ShortHelp                          = "Use this button to enable/disable tag target tracking";
+
+//-----------------------------------------------------------------------------
+// Long Help
+//-----------------------------------------------------------------------------
+frmMainFrame.edtTaskName.LongHelp                               = "The selected task will have positioner axis/axes programmed based on the paramters selected in this dialog";
+frmMainFrame.cboMotionGroupNames.LongHelp                       = "The selected motion group contains a positioner whose joints values are to be auto-programmed";
+frmMainFrame.cboPositionerNames.LongHelp                        = "The selected positioner will have its axis/axes programmed based on the parameters selected in this dialog ";
+
+frmPositionerFrame.cboAlignmentType.LongHelp                    = "Select the type of tool alignment to be used in auxiliary axis/axes value calculations";
+frmPositionerFrame.cboActiveJoints.LongHelp                     = "Select joints that will be used in auxiliary axis/axes value calculations";
+frmPositionerFrame.lstPositionerValues.LongHelp                 = "The list displays task operations and their corresponding positioner values. Click on operation to move the robot and a positioner.";
+
+
+frmToolsFrame.chkJog.LongHelp                                   = "Use this button to show/hide Jog panel";
+frmToolsFrame.chkClash.LongHelp                                 = "Use this button to enable/disable clash analysis";
+frmToolsFrame.chkTrackTarget.LongHelp                           = "Use this button to enable/disable tag target tracking";
+
+//-----------------------------------------------------------------------------
+// Parameter Àq»{­È
+//-----------------------------------------------------------------------------
+ToolAlignmentUnset                                              = "<None>";
+ToolAlignmentFlat                                               = "Flat";
+ToolAlignmentHorizontal                                         = "Horizontal";
+ToolAlignmentVertical                                           = "Vertical";
+ToolAlignmentUserDefined                                        = "User-defined";
+
+
+ActiveJointsUnset                                               = "<None>";
+ActiveJointsBoth                                                = "Both joints";
+
+Operation														= "¾Þ§@";
+Status															= "Status";
+
+
+
+
+
+

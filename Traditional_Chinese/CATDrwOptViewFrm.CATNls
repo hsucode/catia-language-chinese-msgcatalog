@@ -1,0 +1,200 @@
+// 3951 校正官方漢化=====================================================================================
+// 3951 校正官方漢化                                     CNEXT - CXRn
+// 3951 校正官方漢化                          COPYRIGHT DASSAULT SYSTEMES 2000 
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 FILENAME    :    CATDrwOptManip
+// 3951 校正官方漢化 LOCATION    :    DraftingUI
+// 3951 校正官方漢化 AUTHOR      :    fgx
+// 3951 校正官方漢化 BUT         :    
+// 3951 校正官方漢化 DATE        :    30.10.2000
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 DESCRIPTION :    Tools/Option du Drafting
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 COMMENTS    :    
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 MODIFICATIONS     user  date        purpose
+// 3951 校正官方漢化    HISTORY        ----  ----        -------
+// 3951 校正官方漢化	01			lgk		17.12.02	Revision
+// 3951 校正官方漢化=====================================================================================
+
+Title="視圖";
+
+
+frameGenElem.HeaderFrame.Global.Title="生成/修飾幾何圖形";
+frameGenElem.HeaderFrame.Global.LongHelp="生成幾何圖形
+定義生成哪些幾何元素。";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenAxis.Title="生成軸";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenAxis.LongHelp="生成軸線";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenPatterns.Title="生成陣列";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenPatterns.LongHelp="生成陣列。";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenSmoothEdges.Title="生成平滑邊線";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenSmoothEdges.LongHelp="定義是否在更新期間在選定視圖上生成平滑邊線。";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenCenter.Title="生成中心線";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenCenter.LongHelp="生成中心線";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenThread.Title="生成螺紋";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenThread.LongHelp="生成螺紋";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenHiddenLines.Title="生成隱藏線";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGenHiddenLines.LongHelp="生成隱藏線";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameButtonGenFil._checkGenFil.Title="生成圓角";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameButtonGenFil._checkGenFil.LongHelp="生成圓角";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameButtonGenFil.pushGenFil.Title="配置";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameButtonGenFil.pushGenFil.LongHelp="配置圓角投影";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGen3DColors.Title="繼承 3D 顏色";
+frameGenElem.IconAndOptionsFrame.OptionsFrame._checkGen3DColors.LongHelp="繼承 3D 顏色";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frmWireFrame.checkGenWireFrame.Title="投影 3D 線框";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frmWireFrame.checkGenWireFrame.LongHelp="投影 3D 線框";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frmWireFrame.pushGenWireFrameMod.Title="配置";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frmWireFrame.pushGenWireFrameMod.LongHelp="配置線框投影";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.checkGenApplyUncut.Title="應用 3D 規格";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.checkGenApplyUncut.LongHelp="應用 3D 規格";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameButtonLinetype.labelLinetype.Title="視圖線型";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameButtonLinetype.labelLinetype.LongHelp="視圖線型";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameButtonLinetype.linetypePushButton.Title="配置";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameButtonLinetype.linetypePushButton.LongHelp="配置線型和線寬";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameProject3DPts.checkProject3DPts.Title="投影 3D 點";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameProject3DPts.checkProject3DPts.LongHelp="投影 3D 點";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameProject3DPts.project3DPtsPushButton.Title="配置";
+frameGenElem.IconAndOptionsFrame.OptionsFrame.frameProject3DPts.project3DPtsPushButton.LongHelp="配置 3D 點投影";
+
+frameGenView.HeaderFrame.Global.Title="生成視圖";
+frameGenView.HeaderFrame.Global.LongHelp="定義用于創建創成式視圖的參數。";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.lbl.Title="視圖生成模式";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.lbl.LongHelp="定義將如何生成視圖";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.combViewMod.LongHelp="定義將如何生成視圖";
+ExactView="精確視圖";
+CGRView="CGR";
+PictureView="光柵";
+HRV="近似";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frm3DExtRep.lbl.Title="3D 提取展示";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frm3DExtRep.lbl.LongHelp="指定在生成視圖時要加以考慮的產品中的 3D 展示集。
+提供了多種 3D 展示過濾模式。";
+AllDesignRep="所有設計展示";
+FirstDesignRep="第一個設計展示";
+AsSession="作為會話";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.pushRasterOptions.Title="配置";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.pushRasterOptions.LongHelp="配置光柵選項";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.frmPict.chkAutoLOD.Title="自動細節級別";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.frmPict.chkAutoLOD.LongHelp="自動適合要可視化和
+打印的 DPI。";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.frmPict.lbl1.Title="要可視化的 DPI";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.frmPict.lbl1.LongHelp="要可視化的 DPI";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.frmPict.lbl2.Title="要打印的 DPI";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmViewMod.frmPict.lbl2.LongHelp="要打印的 DPI";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmGenBox.checkGenBox.Title="僅生成大于...的 3D 形狀";
+frameGenView.IconAndOptionsFrame.OptionsFrame.frmGenBox.checkGenBox.LongHelp="僅生成大于指定大小的 3D 形狀。";
+frameGenView.IconAndOptionsFrame.OptionsFrame.chkOcclusionCulling.Title="啟用遮擋剔除";
+frameGenView.IconAndOptionsFrame.OptionsFrame.chkOcclusionCulling.LongHelp="激活或取消激活遮擋剔除。 
+遮擋剔除通過避免重新顯示隱藏元素來提高顯示性能，
+這在查看諸如廠房和建筑物之類的高度分隔的場景時尤其有用。";
+
+
+frameClipping.HeaderFrame.Global.Title="裁剪視圖";
+frameClipping.HeaderFrame.Global.LongHelp="定義在剪裁視圖中使用的參數。";
+frameClipping.IconAndOptionsFrame.OptionsFrame.chkDimClipNoShow.Title="將不顯示尺寸放到非可視幾何圖形上";
+frameClipping.IconAndOptionsFrame.OptionsFrame.chkDimClipNoShow.LongHelp="將不顯示尺寸放到非可視幾何圖形以及與位置關聯的標注上。";
+
+frameView3D.HeaderFrame.Global.Title="3D 視圖";
+frameView3D.HeaderFrame.Global.LongHelp="定義從 3D 中提取的視圖中使用的參數。";
+frameView3D.IconAndOptionsFrame.OptionsFrame.chkGeomOf2DLView.Title="生成 2D 幾何圖形";
+frameView3D.IconAndOptionsFrame.OptionsFrame.chkGeomOf2DLView.LongHelp="從布局視圖中生成 2D 幾何圖形。";
+
+viewGenFillet.Title="生成圓角";
+viewGenFillet.frameButtonGenFil.HeaderFrame.Global.Title="配置圓角生成";
+viewGenFillet.frameButtonGenFil.HeaderFrame.Global.LongHelp="配置圓角生成
+您可以配置圓角生成。";
+viewGenFillet.frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioBoundaries.Title="邊界";
+viewGenFillet.frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioBoundaries.LongHelp="邊界
+定義是否要在視圖上顯示“圓角邊界”。";
+viewGenFillet.frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioSymbo.Title="符號";
+viewGenFillet.frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioSymbo.LongHelp="符號
+定義是否要在視圖上顯示“符號圓角”。";
+viewGenFillet.frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioProjEd.Title="投影的原始邊線";
+viewGenFillet.frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioProjEd.LongHelp="投影的原始邊線
+定義是否要在視圖上顯示“投影的原始邊線”。";
+viewGenFillet.frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioOrigEd.Title="近似原始邊線";
+viewGenFillet.frameButtonGenFil.IconAndOptionsFrame.OptionsFrame.frameRadioGenFil.frameRadioGenFillocked.radioOrigEd.LongHelp="近似原始邊線
+定義是否要在視圖上顯示“原始邊線”。";
+
+
+viewGenWireFrame.Title="3D 線框投影模式";
+viewGenWireFrame.frmWireFrameMod.HeaderFrame.Global.Title="投影的 3D 線框";
+viewGenWireFrame.frmWireFrameMod.HeaderFrame.Global.LongHelp="投影的 3D 線框\n指示投影的 3D 線框\n可隱藏還是始終可視。";
+viewGenWireFrame.frmWireFrameMod.IconAndOptionsFrame.OptionsFrame.radioFrmWireFrameMod.radioFrmWireFrameModlocked.radioHidden.Title="可隱藏";
+viewGenWireFrame.frmWireFrameMod.IconAndOptionsFrame.OptionsFrame.radioFrmWireFrameMod.radioFrmWireFrameModlocked.radioHidden.LongHelp="可隱藏\n指示投影的 3D 線框可隱藏。";
+viewGenWireFrame.frmWireFrameMod.IconAndOptionsFrame.OptionsFrame.radioFrmWireFrameMod.radioFrmWireFrameModlocked.radioVisible.Title="始終可視";
+viewGenWireFrame.frmWireFrameMod.IconAndOptionsFrame.OptionsFrame.radioFrmWireFrameMod.radioFrmWireFrameModlocked.radioVisible.LongHelp="始終可視\n指示投影的 3D 線框始終可視。";
+
+
+viewGen3DPoints.Title="3D 點投影";
+viewGen3DPoints.frameButtonProject3DPts.HeaderFrame.Global.Title="投影 3D 點";
+viewGen3DPoints.frameButtonProject3DPts.HeaderFrame.Global.LongHelp="投影 3D 點
+指示投影的 3D 點顯示的是繼承自 3D 的符號
+還是顯示選定的符號。";
+viewGen3DPoints.frameButtonProject3DPts.IconAndOptionsFrame.OptionsFrame.frameRadio3DSymbol.frameRadio3DSymbollocked.radioSymbolInherit.Title="3D 符號繼承";
+viewGen3DPoints.frameButtonProject3DPts.IconAndOptionsFrame.OptionsFrame.frameRadio3DSymbol.frameRadio3DSymbollocked.radioSymbolInherit.LongHelp="3D 符號繼承
+顯示繼承自 3D 的符號。";
+viewGen3DPoints.frameButtonProject3DPts.IconAndOptionsFrame.OptionsFrame.frameRadio3DSymbol.frameRadio3DSymbollocked.radioSymbol.Title="符號";
+viewGen3DPoints.frameButtonProject3DPts.IconAndOptionsFrame.OptionsFrame.frameRadio3DSymbol.frameRadio3DSymbollocked.radioSymbol.LongHelp="符號
+顯示選定的符號。";
+viewGen3DPoints.frameButtonProject3DPts.IconAndOptionsFrame.OptionsFrame.frameRadio3DSymbol.frameRadio3DSymbollocked.comboSymbol.Title="符號";
+viewGen3DPoints.frameButtonProject3DPts.IconAndOptionsFrame.OptionsFrame.frameRadio3DSymbol.frameRadio3DSymbollocked.comboSymbol.LongHelp="符號
+顯示選定的符號。";
+
+
+viewLineType.Title="線型和線寬";
+viewLineType.frameButtonLinetype.HeaderFrame.Global.Title="線型和線寬";
+viewLineType.frameButtonLinetype.HeaderFrame.Global.LongHelp="線型和線寬";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.lblSection.Title="剖視圖";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.lblSection.LongHelp="剖視圖";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.lblDetail.Title="詳細視圖";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.lblDetail.LongHelp="詳細視圖";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.lblBroken.Title="局部視圖";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.lblBroken.LongHelp="局部視圖";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.lblBreakout.Title="剖面視圖";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.lblBreakout.LongHelp="剖面視圖";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.lblSkin.Title="蒙皮截面視圖";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.lblSkin.LongHelp="蒙皮截面視圖";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.comboSectionLinetype.LongHelp="選擇線型";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.comboDetailLinetype.LongHelp="選擇線型";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.comboBrokenLinetype.LongHelp="選擇線型";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.comboBreakoutLinetype.LongHelp="選擇線型";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.comboSkinLinetype.LongHelp="選擇線型";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.comboSectionThickness.LongHelp="選擇線寬";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.comboDetailThickness.LongHelp="選擇線寬";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.comboBrokenThickness.LongHelp="選擇線寬";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.comboBreakoutThickness.LongHelp="選擇線寬";
+viewLineType.frameButtonLinetype.IconAndOptionsFrame.OptionsFrame.comboSkinThickness.LongHelp="選擇線寬";
+
+
+viewGenModApproximate.Title="近似模式";
+viewGenModApproximate.frmHRVOptions.HeaderFrame.Global.Title="近似模式選項";
+viewGenModApproximate.frmHRVOptions.HeaderFrame.Global.LongHelp="配置近似模式的選項";
+viewGenModApproximate.frmHRVOptions.IconAndOptionsFrame.OptionsFrame.lblHRVLOD.Title="細節級別：";
+viewGenModApproximate.frmHRVOptions.IconAndOptionsFrame.OptionsFrame.lblHRVLOD.LongHelp="細節級別：";
+XGraph="LOD";
+YGraph="時間";
+
+viewGenModRaster.Title="光柵模式選項";
+viewGenModRaster.frmRasterOptions.HeaderFrame.Global.Title="光柵模式選項";
+viewGenModRaster.frmRasterOptions.HeaderFrame.Global.LongHelp="配置光柵視圖選項";
+viewGenModRaster.frmRasterOptions.IconAndOptionsFrame.OptionsFrame.lblRasterMode.Title="模式";
+viewGenModRaster.frmRasterOptions.IconAndOptionsFrame.OptionsFrame.lblRasterMode.LongHelp="模式";
+viewGenModRaster.frmRasterOptions.IconAndOptionsFrame.OptionsFrame.checkRasterWithTexture.Title="帶紋理";
+viewGenModRaster.frmRasterOptions.IconAndOptionsFrame.OptionsFrame.checkRasterWithTexture.LongHelp="請選擇您是否要展示紋理";
+viewGenModRaster.frmRasterOptions.IconAndOptionsFrame.OptionsFrame.lblLOD.Title="細節級別：";
+viewGenModRaster.frmRasterOptions.IconAndOptionsFrame.OptionsFrame.lblLOD.LongHelp="細節級別：";
+viewGenModRaster.frmRasterOptions.IconAndOptionsFrame.OptionsFrame.lblLODVisu.Title="用于可視化";
+viewGenModRaster.viewGenModRaster.IconAndOptionsFrame.OptionsFrame.lblLODVisu.LongHelp="用于可視化";
+viewGenModRaster.frmRasterOptions.IconAndOptionsFrame.OptionsFrame.lblLODPrint.Title="用于打印";
+viewGenModRaster.frmRasterOptions.IconAndOptionsFrame.OptionsFrame.lblLODPrint.LongHelp="用于打印";
+
+HRD="動態移除隱藏線";
+Shading="著色";
+ShadingWithEdges="含邊線著色";
+ShadingNoLight="著色，無光源";
+ShadingWithEdgesNoLight="含邊線著色，無光源";
+
+LowQualityMode="低質量";
+NormalQualityMode="正常質量";
+HighQualityMode="高質量";
+CustomizeMode="自定義";

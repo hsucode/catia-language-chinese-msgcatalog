@@ -1,0 +1,146 @@
+// 3951 校正官方漢化-----------------------------------------
+// 3951 校正官方漢化 Resource file for classes allowing to create wireframe features
+// 3951 校正官方漢化 Spline
+// 3951 校正官方漢化 En_US
+// 3951 校正官方漢化-----------------------------------------
+
+State0SelectPoint.Message="選擇點";
+State1SelectPoint.Message="選擇點或方向（線或平面）以在該方向上添加新點";
+DragCreate.Message=" 或拖動操縱桿來創建點";
+POF.Message="在曲面上指示以創建點";
+CompassPOF.Message="指示以在機器人 XY 平面上創建點";
+EditProperties.Message="編輯屬性";
+LineID.Message="選擇要作為當前線路 ID 的線路 ID";
+state2.PortMode.Message="選擇一個帶端口的零件";
+state2.SupportMode.Message="選擇支持零件或帶有孔端口的零件";
+CATRouRouteCmd.state3.Message="從表中選擇大小";
+CATRouRouteCmd.state4.Message="從表中選擇折彎半徑大小";
+CATRouRouteCmd.state5.Message="從表中選擇最小直線長度";
+CATRouRouteCmd.state6.Message="編輯節點和折彎半徑（只有坐標點才可編輯）";
+CATRouRouteCmd.state7.Message="選擇分支的主傳遞線路";
+CATRouRouteCmd.DlgStateManipulate.Message="操作段";
+ManipulateSeg.Message="平移或旋轉機器人以操作該段";
+
+// 3951 校正官方漢化UndoTitle for Command
+CATRouRouteCmd.UndoTitle="傳遞線路定義";
+
+// 3951 校正官方漢化UndoTitle for Dialog agents
+CATRouRouteCmd.AtLeastAPoint.UndoTitle="至少一點";
+CATRouRouteCmd.ClickArrow.UndoTitle="單擊箭頭";
+CATRouRouteCmd.ControlAgent.UndoTitle="控制代理程序";
+CATRouRouteCmd.Geodesic.UndoTitle="支持面上的幾何圖形";
+CATRouRouteCmd.Pt.UndoTitle="點選擇";
+CATRouRouteCmd.daCompassIndicate.UndoTitle="機器人 XY 平面上的點";
+CATRouRouteCmd.UndoRedoAgent.UndoTitle="已修改的傳遞線路";
+CATRouRouteCmd.CATCluSelectPortOKNotif.UndoTitle="從端口傳遞";
+CATRouRouteCmd.CATRouEditNodesCmd.UndoTitle="編輯節點";
+
+Title.Message="編輯傳遞線路";
+CannotCreateDirPointInReplaceMode.Message="處于替換點模式下時無法在某個方向上創建點。
+在某個方向上創建點時，起點為當前點。";
+NotASupport.Message="所選產品不是通過
+“定義支持零件”命令創建的支持面。
+所選產品：\t/P1";
+SelectedSameRoute.Message="無法傳遞到產品本身。請選擇其他產品。";
+MissingColumns.Message="表缺少某些所需列，或包含損壞單元。
+列：\t/P1";
+PortModeSupportSelected.Message="當前模式將傳遞到端口，但是所選產品為支持面。
+請使用支持模式來通過支持面進行傳遞。
+所選產品：\t/P1";
+MisMatchNominalSize.Message="無法選擇包含不同額定大小的行。
+傳遞線路額定大小：\t/P1
+表額定大小：\t/P2";
+TableColumnIncorrectType.Message="表列包含的數據不正確。
+請檢查整列來確保類型合適。
+列標題：\t/P1
+顯示的列類型：\t/P2
+列應當為此類型：\t/P3";
+NonPositiveReal.Message="值必須為大于零的正值。
+列：\t/P1
+值：\t/P2";
+MisMatchBendRadius.Message="無法選擇包含不同折彎半徑的行。
+折彎半徑列為可選列，因此如果不存在，該列將不會被選中。
+傳遞線路折彎半徑：\t/P1
+表折彎半徑：\t/P2";
+CannotReadImportFile.Message="無法讀取文件。
+文件：/P1";
+BadImportFileInsufficientRowsCols.Message="行或列數不夠。
+已讀取的列：\t/P1
+已讀取的行：\t/P2
+使用制表符隔開各列的有效示例表：
+節點編號\tX 坐標\tY 坐標\tZ 坐標\t折彎半徑
+1\t\t-220 mm\t40 mm\t0 mm	100 mm
+2\t\t-30 mm\t-15 mm\t0 mm	100 mm
+3\t\t160 mm\t-70 mm\t0 mm	100 mm";
+InvalidLengthValue.Message="無法轉換為長度值 ... 正在中止導入。
+列：\t/P1
+行：\t/P2
+已讀取的單元格：\t/P3";
+MissingColumnHeader.Message="表缺少列標題：/P1。
+使用制表符隔開各列的有效示例表：
+節點編號\tX 坐標\tY 坐標\tZ 坐標\t折彎半徑
+1\t\t-220 mm\t40 mm\t0 mm	100 mm
+2\t\t-30 mm\t-15 mm\t0 mm	100 mm
+3\t\t160 mm\t-70 mm\t0 mm	100 mm";
+MissingStartRow.Message="找不到節點編號 1。
+使用制表符隔開各列的有效示例表：
+節點編號\tX 坐標\tY 坐標\tZ 坐標\t折彎半徑
+1\t\t-220 mm\t40 mm\t0 mm	100 mm
+2\t\t-30 mm\t-15 mm\t0 mm	100 mm
+3\t\t160 mm\t-70 mm\t0 mm	100 mm";
+PortToMiddleOfRoute.Message="不應從傳遞線路中間傳遞到端口。
+選擇第一個或最后一個點作為當前點。";
+MaterialNotFound.Message="向傳遞線路添加材料對象 /P1 失敗。
+找不到所選材料。";
+PipeRefTableMode.Message="工具選項：“強制使用資源表進行傳遞”已打開。
+---------------------------------------------------------------- 
+在啟用“確定”之前必須使用下列表指定所需參數：
+     傳遞線路大小表
+     折彎半徑表
+     最小直線長度表";
+NotCoreMaterial.Message="向傳遞線路添加材料對象 /P1 失敗。
+所選材料不是型芯材料。";
+NoMatchingStandard.Message="設置當前標準 /P1 失敗。
+從選擇中獲取標準的選項已打開，但是該標準
+不屬于傳遞線路的標準列表。";
+BadPartPortSelection.Message="只有端節點才能傳遞到零件端口。";
+BadPartNoPortSelection.Message="在所選零件上找不到端口。
+請選擇一個帶有端口的零件或選擇一個支持面。";
+BadPartNoHolePortSelection.Message="所選零件上找不到孔端口。
+請選擇一個帶有孔端口的零件或選擇一個支持面。";
+WarningTitle.Message="警告";
+ForceLineIDOn.Message="工具選項“設備 -> 設計條件：強制使用線路 ID”已打開。
+此選項會強制將傳遞線路包含到某個線路 ID 中。
+找不到線路 ID。請在傳遞前創建線路 ID。";
+MustSelectLineID.Message="工具選項“設備 -> 設計條件：強制使用線路 ID”已打開。
+必須選擇一個線路 ID。命令將退出。";
+NoStandardFound.Message="找不到 V 標準列。
+該標準以 V6R2010x 開始，在線路大小表中定義，
+而不是使用 PRM 過濾條件定義。";
+RemoveNodeWithInsulationErr="一個或多個絕緣指向此節點，因此無法刪除此節點。\n請在刪除此節點之前將這些絕緣更改為指向其他節點。";
+RoutingTitle="傳遞";
+NOCommonParent="因為沒有公共父項存在，所以不允許選擇 ";
+Point="點";
+ReplaceRepair.Message="\n是否要修復傳遞線路？";
+ReplaceRepairErr.Message="無法修復傳遞線路。";
+RepairStart.Message="\n開始節點：\n";
+RepairEnd.Message="\n結束節點：\n";
+ReplaceRepairInitialErr.Message="由于以下原因，此傳遞線路需要修復：\n";
+RepairWrngOffsetDirection.Message="  - 偏移點和端口點在傳遞線路上的順序不正確。\n";
+RepairMissingOffset.Message="  - 缺少偏移點。\n";
+RepairExtraOffsetPt.Message="  - 存在額外偏移點。\n";
+RepairPortPtMissing.Message="  - 缺少端口點。\n";
+ReplaceRepairWarning.Message="編輯傳遞線路";
+NodeColTitle="節點";
+NodeXColTitle="x";
+NodeYColTitle="y";
+NodeZColTitle="z";
+BendRadiusColTitle="彎曲";
+ParallelRoutingSelectMasterRoute.Message="為平行傳遞選擇主線路";
+ParallelRoutingSelectMasterSegment.Message="選擇主線路段以確定平行傳遞的第一個點";
+ParallelRoutingSelectMasternodes.Message="選擇主線路的下一個節點";
+ParallelRouting.Title="平行傳遞";
+ChangeMasterBR.Text="需要修改一個或多個主線路的彎曲半徑，以滿足常量間隙算法的要求。\n 是否同意更改主節點的彎曲半徑？";
+EditabilityMaster.Text="選定主線路不可編輯。\n因此，為滿足常量間隙算法要求而執行的任何主線路更改均不可行";
+
+

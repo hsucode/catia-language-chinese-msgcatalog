@@ -1,0 +1,29 @@
+ThreeDForSystemsUIBusinessRuleSet.Alias="邏輯 3D 架構資源";
+
+ThreeDForSystemsUIBusinessRuleSet.Description="可根據客戶要求自定義邏輯 3D 架構 UI 命令";
+
+L3m_BR_ValidatePosition.Alias="驗證邏輯設備位置開口";
+L3m_BR_ValidatePosition.Description="驗證邏輯設備的位置";
+L3m_BR_ValidatePosition.RootReference.Description="邏輯上下文參考";
+L3m_BR_ValidatePosition.PositionX.Description="上下文中邏輯形狀的位置 X";
+L3m_BR_ValidatePosition.PositionY.Description="上下文中邏輯形狀的位置 Y";
+L3m_BR_ValidatePosition.PositionZ.Description="上下文中邏輯形狀的位置 Z";
+
+L3m_BR_ValidatePathwayConnect.Alias="驗證通路連接開口";
+L3m_BR_ValidatePathwayConnect.Description="驗證通路段到邏輯設備、其他段或通路連接點的連接";
+L3m_BR_ValidatePathwayConnect.Object1.Description="要連接的對象";
+L3m_BR_ValidatePathwayConnect.Object2.Description="要連接的對象";
+L3m_BR_ValidatePathwayConnect.ConnectType.Description="指示對象將要連接（類型=1）還是斷開連接（類型=2）";
+
+L3m_BR_ComputePathwayAttr.Alias="計算通路屬性開口";
+L3m_BR_ComputePathwayAttr.Description="創建通路時計算通路屬性集";
+L3m_BR_ComputePathwayAttr.PathwaySetName.Description="通路集的名稱";
+L3m_BR_ComputePathwayAttr.SectionType.Description="定義通路截面類型（1=圓形，2=矩形）";
+L3m_BR_ComputePathwayAttr.Dimension1.Description="通路截面的尺寸 1（如為圓，則是其直徑；如為矩形，則是其高）";
+L3m_BR_ComputePathwayAttr.Dimension2.Description="通路截面的尺寸 2（如為圓，則忽略；如為矩形，則是其寬）";
+L3m_BR_ComputePathwayAttr.BendRadiusRatio.Description="通路的折彎半徑比率";
+L3m_BR_ComputePathwayAttr.OffsetMode.Description="通路的偏移模式（1=中心，2=底部）";
+L3m_BR_ComputePathwayAttr.OffsetValue.Description="通路的偏移值";
+L3m_BR_ComputePathwayAttr.Discipline.Description="通路規則";
+L3m_BR_ComputePathwayAttr.Segregation.Description="通路類別";
+

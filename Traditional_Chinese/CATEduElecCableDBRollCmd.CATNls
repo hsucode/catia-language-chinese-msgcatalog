@@ -1,0 +1,69 @@
+
+CATEduElecCableDBRollCmd.initialState.Message="設置搜索/滾動電纜線路的輸入條件";
+
+CommandTitle="滾動電纜"; 
+SaveAsXMLDlgTitle = "另存為 XML";
+
+// 3951 校正官方漢化Error messages...
+PRCNotConfiguredPanelTitle="錯誤";
+PRCNotConfiguredPanelMsg="未配置 PRC";
+NoCblsFoundInSearchPanelTitle="搜索結果";
+NoCblsFoundInSearchPanelMsg="未找到符合給定搜索條件的電纜...";
+NoCblsSelectedForRollPanelMsg="未選擇要滾動的電纜";
+NoSearchResulsFoundPanelTitle="無搜索結果";
+NoSearchResulsFoundPanelMsg="當前無搜索結果可用。\n請輸入有效的搜索條件，再使用搜索命令。";
+InvalidNoOfCblsPerPagePanelTitle="錯誤";
+InvalidNoOfCblsPerPagePanelMsg="每頁電纜數無效...";
+InvalidFromEffWarningMsg="必須填寫“開始生效性”字段。若電纜 \n線路當前無生效性，使用 0";
+InvalidFromEffWarningMsg1="“開始生效性”應在聯合生效性范圍內";
+InvalidToEffWarningMsg="“終止生效性”不能為空";
+InvalidToEffWarningMsg1="“終止生效性”應在聯合生效性范圍內";
+InvalidSearchResultsPanelTitle="錯誤";
+InvalidSearchResultsPanelMsg="未找到電纜搜索結果。請輸入\n 有效的搜索條件，再使用搜索命令";
+InvalidSchematicNameWarningMsg="輸入有效的簡圖名稱（或）*";
+InvalidCblInstNameWarningMsg="輸入有效的電纜名稱（或）*";
+InvalidSearchInputPanelTitle="無效條件";
+InvalidReportDirPathMsg="報告目錄路徑不能為空";
+InvalidReportDirPathMsg1="無效的報告目錄路徑";
+UnConfiguredCableMsg="未配置";
+
+RollResultDiagnosticToken="/P1。診斷";
+RollResultAdviceToken="/P1。建議";
+RollResultRequestToken="/P1。請求";
+
+// 3951 校正官方漢化Roll report generation related
+RollReportFilePathInfo="文件：/P1 ";
+RollSuccessfulStatusInfo="確定：滾動成功";
+RollStatusLegendInfo="滾動狀態圖例";
+OverriddenStatusYes="是";
+OverriddenStatusNo="否";
+ErrorIndexOK="確定";
+
+FromEffInputInfo="開始生效性：/P1 ";
+ToEffInputInfo="開始生效性：/P1 ";
+OverWriteStatusInputInfo="覆蓋：/P1 ";
+WPEffIdenticalStatusInputInfo="若 WP 生效性相同，則復制線路狀態：/P1 ";
+WPEffSimilarStatusInputInfo="若 WP 生效性相同，則復制線路狀態：/P1 ";
+CblRouStatusFilterInputInfo="電纜線路狀態過濾器：/P1 ";
+SchNameInputInfo="簡圖文檔 ID 過濾器 - /P1";
+CblNameInputInfo="電纜實例 ID 過濾器 - /P1";
+
+// 3951 校正官方漢化Cable Route Status
+CableRouteStatus_0="未滾動";                 // 3951 校正官方漢化CATEdsRouteStatus_Undefined = 0
+CableRouteStatus_1="完全傳遞";                // 3951 校正官方漢化CATEdsRouteStatus_Full = 1
+CableRouteStatus_2="部分傳遞";            // 3951 校正官方漢化CATEdsRouteStatus_Partial = 2
+CableRouteStatus_3="需要驗證";                // 3951 校正官方漢化CATEdsRouteStatus_NeedValidate = 3
+CableRouteStatus_4="完成傳遞";              // 3951 校正官方漢化CATEdsRouteStatus_CompletePartial = 4
+CableRouteStatus_5="過期";                 // 3951 校正官方漢化CATEdsRouteStatus_OutOfDate = 5
+CableRouteStatus_6="過期";                 // 3951 校正官方漢化CATEdsRouteStatus_OutOfDate_Partial = 6
+CableRouteStatus_7="生效性不一致";    // 3951 校正官方漢化CATEdsRouteStatus_EffectivityInconsistent = 7
+CableRouteStatus_8="生效性不一致";    // 3951 校正官方漢化CATEdsRouteStatus_EffectivityInconsistent_Partial = 8
+
+// 3951 校正官方漢化Rolling Report headers
+RprtHdrSchematicTitle="簡圖";
+RprtHdrCblNameTitle="電纜名稱";
+RprtHdrRollStatusTitle="滾動狀態";
+RprtHdrCblRouteStatusTitle="電纜線路狀態";
+RprtHdrOverriddenTitle="已忽略";
+
+

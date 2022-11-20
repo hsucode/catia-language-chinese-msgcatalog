@@ -1,0 +1,220 @@
+DialogBoxTitle="圓角凸緣";
+
+//Selection area
+
+FrameSelection.LongHelp="選擇選項";
+
+LabelAlign.Title="對齊： ";
+LabelAlign.LongHelp="基礎凸緣方向對齊
+- 盒體法線 -
+  為選定曲面的引導線上每點法線的方向。
+- 引導線 + Prio. 切線 -
+  由移動框架類型定義，此框架類型由曲線每點的法線平面和定義的方向對齊。
+  每個曲線點處的基礎凸緣方向可以不同。
+- 引導線 + Prio. 方向 -
+  由移動框架定義，此框架僅由定義的方向對齊。
+  每個曲線點處的基礎凸緣方向均相同。
+- 移動框架 -
+  由用戶定義的移動框架類型來定義。";
+LabelAlign.ShortHelp="基礎凸緣方向對齊";
+
+Align.ShellNormal="盒體法線";
+Align.GuidePrioTangent="引導線 + Prio. 切線";
+Align.GuidePrioDirection="引導線 + Prio. 方向";
+Align.MovingFrames="移動框架";
+ComboAlign.LongHelp="基礎凸緣方向對齊
+- 盒體法線 -
+  為選定曲面的引導線上每點法線的方向。
+- 引導線 + Prio. 切線 -
+  由移動框架類型定義，此框架類型由曲線每點的法線平面和定義的方向對齊。
+  每個曲線點處的基礎凸緣方向可以不同。
+- 引導線 + Prio. 方向 -
+  由移動框架定義，此框架僅由定義的方向對齊。
+  每個曲線點處的基礎凸緣方向均相同。
+- 移動框架 -
+  由用戶定義的移動框架類型來定義。";
+ComboAlign.ShortHelp="基礎凸緣方向對齊";
+
+LabelSpine.Title="引導線： ";
+LabelSpine.LongHelp="選擇一條或多條引導線。
+可選擇以下元素：
+- 簡單曲線。允許所有曲線類型。
+- 連接到曲面的曲線。
+- 曲面邊線。";
+LabelSpine.ShortHelp="選擇引導線";
+
+LabelAlignSurface.Title="曲面： ";
+LabelAlignSurface.LongHelp="僅可用于對齊盒體法線。
+選擇一個曲面或平面，其法線指定引導線點的基礎凸緣方向。";
+LabelAlignSurface.ShortHelp="選擇一個或多個曲面或平面。";
+
+CheckButtonTrim.LongHelp="將在圓角邊線處修剪曲面";
+CheckButtonTrim.ShortHelp="修剪曲面";
+
+//Options tab
+
+Options.Title="選項";
+Options.LongHelp="修改凸緣的選項。
+處理凸緣方向的方向。
+圓角參數影響圓角曲面。
+凸緣參數處理凸緣。
+選項為附加附件。";
+Options.ShortHelp="修改凸緣的選項";
+
+//Orientation frame 
+FrameOrientation.Title="方向";
+FrameOrientation.LongHelp="僅用于對齊  
+- 引導線 + Prio. 切線
+- 引導線 + Prio. 方向
+基礎方向是凸緣角度為 0 時的方向";
+
+CheckButtonAuto.Title="自動";
+CheckButtonAuto.LongHelp="基礎凸緣方向垂直于引導線的（平均）平面";
+CheckButtonAuto.ShortHelp="自動定義基礎方向";
+LabelAlignDirection.Title="方向： ";
+LabelAlignDirection.LongHelp="由用戶定義基礎方向。
+可使用上下文菜單。";
+LabelAlignDirection.ShortHelp="定義基礎方向";
+
+//Fillet Parameters frame
+
+FrameFillet.Title="圓角參數";
+FrameFillet.LongHelp="圓角參數控制圓角曲面的形。";
+LabelRadius.Title="半徑： ";
+LabelRadius.LongHelp="僅當滿足下列條件時，半徑即為圓角曲面的半徑：
+中間半徑設為關閉
+形式系數設為關閉
+連續：G1
+類型：弦設為關閉
+半徑定義圓角曲面的邊線";
+LabelRadius.ShortHelp="圓角半徑";
+LabelTrueMinRadius.Title="最小實際半徑： ";
+
+CheckButtonMidRadius.Title="中間半徑： ";
+CheckButtonMidRadius.LongHelp="允許定義圓角中線處的半徑。
+半徑僅定義引入線點。";
+CheckButtonMidRadius.ShortHelp="中間半徑";
+CheckButtonFormFactor.Title="形式系數： ";
+CheckButtonFormFactor.LongHelp="允許定義形式系數以平鋪或提高圓角曲面的形。 
+值越小，圓角曲面越平";
+CheckButtonFormFactor.ShortHelp="平鋪或提高圓角";
+
+//Continuity frame
+
+FrameContinuity.Title="連續";
+FrameContinuity.LongHelp="定義圓角曲面與選定曲面之間的連續";
+Continuity_Fillet.Button_G1.LongHelp="圓角曲面與選定曲面之間的連續為 G1 連續";
+Continuity_Fillet.Button_G1.ShortHelp="G1 到曲面";
+Continuity_Fillet.Button_G2.LongHelp="圓角曲面與選定曲面之間的連續為 G2 連續";
+Continuity_Fillet.Button_G2.ShortHelp="G2 到曲面";
+
+//Type frame
+
+FrameTypeVarChor.Title="類型";
+FrameTypeVarChor.LongHelp="圓角類型";
+
+CheckButtonIndividualRadius.LongHelp="可變半徑開啟：可為每個操作器單獨設置半徑值。
+可變半徑關閉：所有操作器的半徑值相同。";
+CheckButtonIndividualRadius.ShortHelp="可變半徑";
+
+CheckButtonChordalRadius.LongHelp="半徑值是圓角的弦距離";
+CheckButtonChordalRadius.ShortHelp="弦圓角";
+
+CheckButtonTrueMinRadius.LongHelp="已控制最小實際半徑。
+當激活此圖標，將顯示選項“最小實際半徑”，而不顯示“半徑”。";
+CheckButtonTrueMinRadius.ShortHelp="最小實際半徑";
+
+//Flange Parameters frame
+
+FrameFlange.Title="凸緣參數";
+FrameFlange.LongHelp="凸緣參數";
+
+LabelLength.Title="長度： ";
+LabelLength.LongHelp="定義凸緣的主長度。";
+LabelLength.ShortHelp="凸緣長度";
+
+LabelAngle.Title="角度： ";
+LabelAngle.LongHelp="根據選定的對齊選項，定義凸緣角度。";
+LabelAngle.ShortHelp="基礎凸緣方向和操作器之間的角度";
+
+CheckButtonIndividualLength.Title="單獨的";
+CheckButtonIndividualLength.LongHelp="可為每個操作器單獨定義長度。
+可通過在引導線的中間移動接觸點創建新操作器。";
+CheckButtonIndividualLength.ShortHelp="單獨長度";
+
+CheckButtonIndividualAngle.Title="單獨的";
+CheckButtonIndividualAngle.LongHelp="可為每個操作器單獨定義角度。
+可通過在引導線的中間移動接觸點創建新操作器。";
+CheckButtonIndividualAngle.ShortHelp="單獨角度";
+
+//Options frame
+
+FrameFilletOptions.Title="選項";
+FrameFilletOptions.LongHelp="可創建圓角的中心曲線。
+可將圓角凸緣偏移為垂直其基礎方向或偏移到曲面上。";
+
+CheckButtonCenterCurve.Title="中心曲線";
+CheckButtonCenterCurve.LongHelp="創建圓角的中心曲線";
+CheckButtonCenterCurve.ShortHelp="創建中心曲線";
+
+CheckButtonOffset.Title="偏移";
+CheckButtonOffset.LongHelp="創建偏移到選定引導線的凸緣。
+關閉：圓角起始于引導線。
+開啟且偏移值為 0：凸緣的外插延伸與引導線相交
+開啟和值：凸緣有其他偏移值。";
+CheckButtonOffset.ShortHelp="沿曲面偏移";
+
+LabelDeviationMaxG0.Title="G0： ";
+LabelDeviationMaxG0.LongHelp="圓角曲面的邊界和引導線之間的最大距離";
+LabelDeviationMaxG0.ShortHelp="最大距離";
+LabelDeviationMaxG1.Title="G1： ";
+LabelDeviationMaxG1.LongHelp="G1 圓角曲面和輸入曲面之間出錯";
+LabelDeviationMaxG1.ShortHelp="G1 出錯";
+LabelDeviationMaxG2.Title="G2： ";
+LabelDeviationMaxG2.LongHelp="G2 圓角曲面和輸入曲面之間出錯";
+LabelDeviationMaxG2.ShortHelp="G2 出錯";
+
+FrameAdvancedShape.Title="形狀";
+FrameAdvancedShape.LongHelp="僅當長度和/或角度和/或半徑單獨值設為開啟時可用。
+僅當您至少有三個具備不同值的操作器時才能看到此效果。形影響凸緣邊線操作器的效果。";
+
+CheckButtonShape.Title="形狀";
+CheckButtonShape.LongHelp="當凸緣至少有一個內部操作器，且為參數長度或角度單獨賦值時，可影響凸緣形。
+如果形設為關閉，則默認使用光順形。";
+CheckButtonShape.ShortHelp="形影響凸緣邊線";
+Shape.Linear="線性形狀";
+Shape.Local="本地形狀";
+Shape.Smooth="光順形狀";
+Shape.Global="全局形狀";
+
+
+//???????????????????????????????
+FrameInput.Title="輸入";
+LabelReference.Title="參考： ";
+LabelReference.LongHelp="指定目標或連接曲面。";
+FrameOptions.Title="選項";
+FrameExtrapolation.Title="外插延伸";
+LabelBegin.Title="開始";
+LabelEnd.Title="結束";
+TabPageAdvanced.Title="高級";
+LabelType.Title="類型： ";
+
+FrameDeviationContinuity.Title="連續";
+ComboOptions.LongHelp="- 無 - 
+  未定義任何項。
+- 目標 - 
+  當開啟時，從目標開始。目標選項將引導線和角度用作輸入，將結果移動到目標曲面。
+- 連接 - 
+  定義引導線和目標補面之間的凸緣曲面的長度。";
+
+Type.None="無";
+Type.Target="目標";
+Type.Connect="連接";
+
+
+//Comments and error messages
+
+DomainMode.Title="域模式已更改為強制單域。
+不再支持域模式的使用首個域。";
+
+AutoDir.Title="自動方向不再受支持。請選擇一個方向。";

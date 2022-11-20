@@ -1,0 +1,58 @@
+DialogBoxTitle="螺旋";
+
+// Label called LabelSpine with Title Guide:
+LabelSpine.Title="引導線： ";
+LabelSpine.LongHelp="引導線創建螺旋。
+引導線繞軸旋轉并沿軸移動。
+此移動創建螺旋的曲面。
+此軸由方向定義。";
+LabelSpine.ShortHelp="引導線繞軸旋轉并沿軸移動";
+// Label StartingPoint:
+LabelStartingPoint.Title="起點： ";
+LabelStartingPoint.LongHelp="與軸相連的起點為起始角度定義 0 度點";
+LabelStartingPoint.ShortHelp="0 度起始角度方向";
+// Label Direction:
+LabelDirection.Title="方向： ";
+LabelDirection.LongHelp="方向定義螺旋的軸。
+引導線繞軸旋轉并沿軸移動。
+此移動創建螺旋的曲面。";
+LabelDirection.ShortHelp="方向定義軸";
+// TabPage Options:
+TabPageOptions.Title="選項";
+// TabPage Options, Frame Rotation:
+FrameRotation.Title="旋轉";
+FrameRotation.LongHelp="引導線繞軸旋轉有起始角度和結束角度。
+閉合開啟表示：起始角度為 0 度，結束角度為 360 度。";
+LabelStart.Title="起始： ";
+LabelStart.LongHelp="螺旋的 0 度角在從軸到起點的直線上。
+螺旋不一定起始于 0 度角。";
+LabelStart.ShortHelp="螺旋的起始角度";
+CheckButtonRotationClose.Title="閉合";
+CheckButtonRotationClose.LongHelp="閉合開啟表示：起始角度為 0 度，結束角度為 360 度。
+螺旋曲面不一定要閉合。";
+CheckButtonRotationClose.ShortHelp="角度范圍：360 度";
+LabelEnd.Title="結束： ";
+LabelEnd.LongHelp="從 0 度角處測量結束角度。
+螺旋不一定要起始于 0 度。
+螺旋范圍為結束角度減去起始角度。";
+LabelEnd.ShortHelp="螺旋的結束角度";
+// TabPage Options, Frame Pitch:
+FramePitch.Title="螺距";
+FramePitch.LongHelp="螺旋高度由螺距長度或螺距角度和角度范圍來定義。
+螺距長度是 360 度范圍內的螺距高度。
+根據軸的法線平面測量螺距角度。";
+RadioButtonPitchLength.Title="長度： ";
+RadioButtonPitchLength.LongHelp="如果角度為 360 度，螺距長度即為引導線在范圍內沿軸移動的高度。
+如果旋轉閉合設為開啟，引導線按精確的長度值沿軸移動。";
+RadioButtonPitchLength.ShortHelp="螺距長度";
+RadioButtonPitchAngle.Title="角度： ";
+RadioButtonPitchAngle.LongHelp="螺距角度是螺旋角度，即根據軸的法線平面測量的螺旋梯度角度。";
+RadioButtonPitchAngle.ShortHelp="螺距角度";
+// Frame Deviation
+FrameDeviation.Title="偏差";
+CheckButtonFormDeviation.Title="形： ";
+CheckButtonFormDeviation.LongHelp="顯示與螺旋的偏差";
+CheckButtonFormDeviation.ShortHelp="到螺旋的距離";
+CheckButtonGuideDeviation.Title="引導線： ";
+CheckButtonGuideDeviation.LongHelp="顯示與引導曲線近似值的偏差";
+CheckButtonGuideDeviation.ShortHelp="與引導線的偏差";

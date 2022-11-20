@@ -1,0 +1,135 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES  2005
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 CATCompositesUIInputError.CATNls :
+// 3951 校正官方漢化 En_US                                 
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 Goal             : Input Error Catalog used for composites ui
+// 3951 校正官方漢化 Owner            : sye
+// 3951 校正官方漢化 Creation date    : 11/10/2005
+// 3951 校正官方漢化 Usage notes      : This error is dedicated to end user input 
+// 3951 校正官方漢化 
+// 3951 校正官方漢化 Message example : 
+// 3951 校正官方漢化 CATCompositesUIInputError_ERR_2000.Request    = "The selected elements /p1 and /p2 cannot be relimited.";
+// 3951 校正官方漢化 CATCompositesUIInputError_ERR_2000.Diagnostic = "Lengthed elements cannot be relimited.";
+// 3951 校正官方漢化 CATCompositesUIInputError_ERR_2000.Advice     = "To relimit, do not select lengthed elements";         
+// 3951 校正官方漢化=============================================================================
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 reserved error 001-100 for ply book
+// 3951 校正官方漢化
+CATCompositesUIInputError_ERR_0001.Request="鋪層表生成或更新";
+CATCompositesUIInputError_ERR_0001.Diagnostic="輸入鋪層的數量為空。";
+CATCompositesUIInputError_ERR_0001.Advice="";
+
+CATCompositesUIInputError_ERR_0002.Request="鋪層表生成或更新";
+CATCompositesUIInputError_ERR_0002.Diagnostic="/p 無分解的曲面。";
+CATCompositesUIInputError_ERR_0002.Advice="在使用“鋪層表”命令選擇它們之前，對鋪層或切片使用鋪層分解器";
+
+CATCompositesUIInputError_ERR_0003.Request="鋪層表生成或更新";
+CATCompositesUIInputError_ERR_0003.Diagnostic="無輸入參考表。";
+CATCompositesUIInputError_ERR_0003.Advice="請在表示單個復合實體的視圖中創建參考表。";
+
+CATCompositesUIInputError_ERR_0004.Request="鋪層表生成或更新";
+CATCompositesUIInputError_ERR_0004.Diagnostic="無輸入參考試圖。";
+CATCompositesUIInputError_ERR_0004.Advice="請在表示單個復合實體的視圖中創建參考表。";
+
+CATCompositesUIInputError_ERR_0005.Request="鋪層表生成或更新";
+CATCompositesUIInputError_ERR_0005.Diagnostic="一個或多個視圖沒有對復合實體的鏈接。";
+CATCompositesUIInputError_ERR_0005.Advice="檢查是否所有參考視圖都有對復合實體的鏈接。\n",
+"請移除或修改沒有“復合”鏈接的參考視圖。";
+
+CATCompositesUIInputError_ERR_0006.Request="鋪層表生成或更新";
+CATCompositesUIInputError_ERR_0006.Diagnostic="參考視圖 /p 鏈接了多個復合實體";
+CATCompositesUIInputError_ERR_0006.Advice="檢查是否所有 /p 復合鏈接都指向唯一的復合實體。\n",
+"請移除此視圖的無關鏈接。";
+
+CATCompositesUIInputError_ERR_0007.Request="鋪層表生成或更新";
+CATCompositesUIInputError_ERR_0007.Diagnostic="一個或多個視圖未鏈接同一復合實體。";
+CATCompositesUIInputError_ERR_0007.Advice="檢查是否所有視圖復合鏈接都指向唯一的復合實體。\n",
+"請移除或修改沒有復合鏈接的參考視圖。";
+
+CATCompositesUIInputError_ERR_0008.Request="鋪層表生成或更新";
+CATCompositesUIInputError_ERR_0008.Diagnostic="宏文件路徑不存在。";
+CATCompositesUIInputError_ERR_0008.Advice="請提供現有目錄的有效路徑。\n";
+
+
+CATCompositesUIInputError_ERR_0020.Request="鋪層表生成或更新";
+CATCompositesUIInputError_ERR_0020.Diagnostic="出錯。無法生成鋪層表。";
+CATCompositesUIInputError_ERR_0020.Advice="";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 reserved error 101-200 for mirror and synchro mirror
+// 3951 校正官方漢化
+CATCompositesUIInputError_ERR_0101.Request="";
+CATCompositesUIInputError_ERR_0101.Diagnostic="當前展示不是鏡像展示。
+不可以同步。";
+CATCompositesUIInputError_ERR_0101.Advice="";
+
+CATCompositesUIInputError_ERR_0103.Request="";
+CATCompositesUIInputError_ERR_0103.Diagnostic="原始展示處理的第一階段出錯。
+鏡像展示創建/同步失敗。";
+CATCompositesUIInputError_ERR_0103.Advice="";
+
+CATCompositesUIInputError_ERR_0104.Request="";
+CATCompositesUIInputError_ERR_0104.Diagnostic="鏡像展示創建/同步失敗。";
+CATCompositesUIInputError_ERR_0104.Advice="";
+
+CATCompositesUIInputError_ERR_0105.Request="";
+CATCompositesUIInputError_ERR_0105.Diagnostic="同步錯誤：
+為允許在原始和鏡像展示間進行同步，
+需要向原始展示添加某些信息。
+請要求此展示的所有者通過超級輸入對此展示運行“準備同步”并保存，以便您可以繼續進行同步。";
+CATCompositesUIInputError_ERR_0105.Advice="";
+
+CATCompositesUIInputError_ERR_0106.Request="";
+CATCompositesUIInputError_ERR_0106.Diagnostic="同步錯誤：試圖修改只讀的原始展示。
+為允許在原始和鏡像展示間進行同步，
+需要向原始展示加入某些信息。
+而您未被授予對此展示的寫權限。
+請要求此展示的所有者通過超級輸入對此展示運行“準備同步”并保存，以便您可以繼續進行同步。";
+CATCompositesUIInputError_ERR_0106.Advice="";
+
+CATCompositesUIInputError_ERR_0107.Request="";
+CATCompositesUIInputError_ERR_0107.Diagnostic="修改只讀原始展示。
+為允許未來在原始和鏡像展示間進行同步，
+需要在當前（原始）展示中添加一些信息塊。
+而您未被授予對當前展示的寫權限。
+請要求此展示的所有者通過超級輸入
+對此展示運行“準備同步”并保存，以便您可以繼續同步。";
+CATCompositesUIInputError_ERR_0107.Advice="";
+
+CATCompositesUIInputError_ERR_0108.Request="";
+CATCompositesUIInputError_ERR_0108.Diagnostic="信息已添加到原始展示，可允許
+在未來與鏡像展示同步。您現在必須保存原始
+展示，才能啟用此同步過程。";
+CATCompositesUIInputError_ERR_0108.Advice="";
+
+CATCompositesUIInputError_ERR_0109.Request="";
+CATCompositesUIInputError_ERR_0109.Diagnostic="信息已添加到原始展示，可允許
+在未來與鏡像展示同步。您現在必須保存原始
+展示，才能啟用此同步過程。";
+CATCompositesUIInputError_ERR_0109.Advice="";
+
+
+CATCompositesUIInputError_ERR_0110.Request="";
+CATCompositesUIInputError_ERR_0110.Diagnostic="創建制造文檔警告：工程文檔已被修改。為允許未來在工程和制造零件間進行同步，已向當前（工程）零件加入某些信息。請在創建制造零件后保存工程零件。否則，將來將無法進行同步。";
+CATCompositesUIInputError_ERR_0110.Advice="";
+
+CATCompositesUIInputError_ERR_0111.Request="";
+CATCompositesUIInputError_ERR_0111.Diagnostic="同步警告：工程文檔已被修改。為允許未來在工程和制造零件間進行同步，已向工程零件加入某些信息。請在更新制造零件后保存工程零件。否則，將來將無法進行同步。";
+CATCompositesUIInputError_ERR_0111.Advice="";
+
+CATCompositesUIInputError_ERR_0112.Request="";
+CATCompositesUIInputError_ERR_0112.Diagnostic="同步警告：原始文檔已被修改。為允許未來在原始和目標零件間進行同步，已向原始零件加入某些信息。請在更新目標零件后保存原始零件。否則，將來將無法進行同步。";
+CATCompositesUIInputError_ERR_0112.Advice="";
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 reserved error 201-300 for ply creation for slicing
+// 3951 校正官方漢化
+CATCompositesUIInputError_ERR_0201.Request="";
+CATCompositesUIInputError_ERR_0201.Diagnostic="選定的分割曲線作為輸入指向一個曲面特征。
+此分割曲線組必須指向機械工具。";
+CATCompositesUIInputError_ERR_0201.Advice="選擇指向機械工具的分割曲線組。";
+

@@ -1,0 +1,45 @@
+
+Error="錯誤";
+Warning="警告";
+Info="信息";
+
+RampSupport_ERR_01="結構元素缺失。\n 請選擇結構元素。";
+RampSupport_ERR_02="無法在網格面板上檢索參考曲面。";
+RampSupport_ERR_03="斜坡支持類型與結構元素尺寸不兼容。\n 請更改輸入。";
+RampSupport_ERR_04="無法檢索結構元素輸入。";
+RampSupport_ERR_05="第一條曲線穿越點模式與偏移特征不兼容。\n 請更改輸入。";
+RampSupport_ERR_06="結構元素無效。必須選擇： \n-結構元素 \n-開口角度初始化輸出曲線或 \n-另一條斜坡支持曲線。";
+RampSupport_ERR_07="無法檢索間隙幾何圖形輸入";
+RampSupport_ERR_08="斜坡支持類型與間隙幾何圖形尺寸不兼容。\n 請更改輸入。";
+RampSupport_ERR_09="斜坡支持類型與自動分割結構元素不兼容。\n 在這種情況下，只有帶斜坡平行的間隙平行有效。";
+
+RampSupport_WARN_01="特征發生更新錯誤。";
+RampSupport_WARN_02="無法計算正面的方向。將使用默認方向。";
+RampSupport_WARN_03="無法檢索結構元素輸入。";
+RampSupport_WARN_04="此斜坡支持曲線不連通。請分割參考結構元素或更改斜坡支持參數。";
+
+RampSupport_INFO_01="特征已被移除但未被替代。";
+
+PlySynchro_ERR_01="無法計算紙層盒體。\n 此紙層未進行單元覆蓋計算。\n 請在開始同步之前檢查支持有效性。";
+PlySynchro_ERR_02="無法檢索材料。";
+PlySynchro_ERR_03="無法檢索坐標系。";
+PlySynchro_ERR_04="無法檢索來自紙層輪廓的有效信息。";
+PlySynchro_ERR_05="無法正確更新紙層";
+PlySynchro_ERR_06="計算紙層邏輯覆蓋失敗";
+PlySynchro_ERR_07="無法同步 /p1：將有若干虛擬紙層，坐標系不同，順序為 /p2";
+PlySynchro_ERR_08="無法同步 /p1：將有若干虛擬紙層，方位不同，順序為 /p2";
+PlySynchro_ERR_09="無法同步 /p1：將有若干虛擬紙層，材料不同，順序為 /p2";
+
+PlySynchro_WARN_01="無法計算紙層單元覆蓋。\n 將忽略此標準。\n 請手動檢查此紙層的單元覆蓋。";
+PlySynchro_WARN_02="此紙層未覆蓋任何單元。請注意是否同步。";
+
+PlySynchro_WARN_03="此斜坡曲線已重復用于修改支持，且可能造成與其他紙層的重疊。\n 請手動檢查此紙層是否有重疊。";
+
+PlySynchro_WARN_04="已重新生成此斜坡支持面， /p1 mm 的材料厚度被考慮在 /p2 厚度內。";
+
+AngleCutInit_ReferenceCurve="參考曲線";
+AngleCutInit_StartPoint="起點";
+AngleCutInit_EndPoint="終點";
+
+FallbackAlias_Start="（后備 ";
+FallbackAlias_End="）";

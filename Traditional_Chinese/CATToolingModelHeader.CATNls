@@ -1,0 +1,214 @@
+// 3951 校正官方漢化---------------------------------------------------
+// 3951 校正官方漢化 Ressource File for CATToolingModelHeader Class
+// 3951 校正官方漢化 En_US
+// 3951 校正官方漢化  11/07/2006 : fdm; R1.X+1;
+// 3951 校正官方漢化  14/05/2008 : ysn; R207: Add Kinematic Block
+// 3951 校正官方漢化  28/05/2008 : mlh; R207: Add EjectorSet
+// 3951 校正官方漢化  05/09/2008 : ysn; R207: Changer KineBlock en MobileUnit
+// 3951 校正官方漢化  09/06/2009 : ysn; R208: Ajout de Tool Compose
+// 3951 校正官方漢化  16/06/2009 : fdm; R208: Add ToolVisu & ToolCheck 
+// 3951 校正官方漢化  22/07/2009 : lch; R208: Add Delete Impacts 
+// 3951 校正官方漢化  10/08/2009 : juw; R208: Add Impact Me
+// 3951 校正官方漢化	28/08/2009 : mc3; R208: Add Cooling System
+// 3951 校正官方漢化  27/07/2009 : fdm; R208: Modification
+// 3951 校正官方漢化	19/11/2009 : fdm; R209: Remove CATMldTSPEditorHeaderHdr
+// 3951 校正官方漢化	01/02/2010 : fdm; R210: Add CATTlgComponentSmartCreateHeaderHdr
+// 3951 校正官方漢化  04/02/2010 : ysn; R210: Supprimer Tool Compose
+// 3951 校正官方漢化  26/08/2010 : iwa; R210: Remove EjectorSet and Add ToolingSplit
+// 3951 校正官方漢化  04/11/2010 : lch; R211: Add Remove ToolingComponent
+// 3951 校正官方漢化  01/12/2010 : ffj; R211: Help review (VMU)
+// 3951 校正官方漢化  13/01/2011 : fdm; R211 :Add CATMldLiveStructuredComponentCom
+// 3951 校正官方漢化  01/02/2011 : fdm; R212 : Remove CATMldLiveTSPEditorHeaderHdr
+// 3951 校正官方漢化  01/02/2011 : fdm; R212 : Renommage command
+// 3951 校正官方漢化  01/02/2011 : fdm; R212 : Add CATTlgComponentDuplicateHeaderHdr
+// 3951 校正官方漢化  20/05/2011 : fdm; R212: Correction CATnls Vero
+// 3951 校正官方漢化  17/06/2011 : fdm; R212: Correction CATnls Vero pour Coolant
+// 3951 校正官方漢化  10/08/2011 : ysn; R213: Ajouter CATMldToolingResourcesHdr
+// 3951 校正官方漢化  30/08/2011 : lch; R213 : Add Hide/Show ConceptMoldSkeleton, InjectionSide, EjectionSide, EjectorSystem
+// 3951 校正官方漢化  10/10/2011 : iwa; R213 : Add CATMldInsertToolingSystem
+// 3951 校正官方漢化---------------------------------------------------------------------------------------------------
+// 3951 校正官方漢化 =================================================
+// 3951 校正官方漢化 Palette Tooling Standard Part 
+// 3951 校正官方漢化 =================================================
+// 3951 校正官方漢化Evolution du TSP Editor
+CATToolingModelHeader.CATMldLiveTSPEditorHeaderHdr.Title="定義加工部件";
+CATToolingModelHeader.CATMldLiveTSPEditorHeaderHdr.Help="定義一個加工部件";
+CATToolingModelHeader.CATMldLiveTSPEditorHeaderHdr.LongHelp="定義加工部件\n定義一個加工部件。";
+CATToolingModelHeader.CATMldLiveTSPEditorHeaderHdr.ShortHelp="定義加工部件";
+
+// 3951 校正官方漢化 =================================================
+// 3951 校正官方漢化 Palette Tooling Impact
+// 3951 校正官方漢化 =================================================
+// 3951 校正官方漢化 == Tooling Impact == 
+CATToolingModelHeader.CATTlgImpactHeaderHdr.Title="影響";
+CATToolingModelHeader.CATTlgImpactHeaderHdr.Help="創建加工影響";
+CATToolingModelHeader.CATTlgImpactHeaderHdr.LongHelp="影響 \n 創建加工影響。";
+CATToolingModelHeader.CATTlgImpactHeaderHdr.ShortHelp="影響";
+
+// 3951 校正官方漢化 == Tooling Impact Me == 
+CATToolingModelHeader.CATTlgImpactMeHeaderHdr.Title="受部件影響";
+CATToolingModelHeader.CATTlgImpactMeHeaderHdr.Help="在給定展示上創建加工影響";
+CATToolingModelHeader.CATTlgImpactMeHeaderHdr.LongHelp="受部件影響 \n 在給定展示上創建加工影響";
+CATToolingModelHeader.CATTlgImpactMeHeaderHdr.ShortHelp="受部件影響";
+
+// 3951 校正官方漢化 == Delete Impacts == 
+CATToolingModelHeader.CATTlgDeleteImpactHeaderHdr.Title="刪除影響";
+CATToolingModelHeader.CATTlgDeleteImpactHeaderHdr.Help="刪除加工影響";
+CATToolingModelHeader.CATTlgDeleteImpactHeaderHdr.LongHelp="刪除影響 \n 刪除加工影響。";
+CATToolingModelHeader.CATTlgDeleteImpactHeaderHdr.ShortHelp="刪除影響";
+
+// 3951 校正官方漢化 == Remove ToolingComponent and keep associated anchor == 
+CATToolingModelHeader.CATTlgDeleteCmpHeaderHdr.Title="保留關聯的定位";
+CATToolingModelHeader.CATTlgDeleteCmpHeaderHdr.Help="移除加工部件并保留其關聯的定位";
+CATToolingModelHeader.CATTlgDeleteCmpHeaderHdr.LongHelp="保留關聯的定位\n移除加工部件及其影響。\n保留關聯的定位。";
+CATToolingModelHeader.CATTlgDeleteCmpHeaderHdr.ShortHelp="保留關聯的定位";
+
+// 3951 校正官方漢化 == Remove ToolingComponent and associated anchor == 
+CATToolingModelHeader.CATTlgDelCmpAnchorHeaderHdr.Title="移除關聯的定位";
+CATToolingModelHeader.CATTlgDelCmpAnchorHeaderHdr.Help="移除加工部件及其關聯的定位";
+CATToolingModelHeader.CATTlgDelCmpAnchorHeaderHdr.LongHelp="移除關聯的定位\n移除加工部件及其影響和關聯的定位。";
+CATToolingModelHeader.CATTlgDelCmpAnchorHeaderHdr.ShortHelp="移除關聯的定位";
+
+// 3951 校正官方漢化 == Delete Anchor == 
+CATToolingModelHeader.CATMldUIDeleteAnchorsHdr.Title="刪除定位";
+CATToolingModelHeader.CATMldUIDeleteAnchorsHdr.Help="刪除定位或噴射定位陣列";
+CATToolingModelHeader.CATMldUIDeleteAnchorsHdr.LongHelp="刪除定位\n刪除定位或具有相關聯幾何圖形的噴射定位陣列。";
+CATToolingModelHeader.CATMldUIDeleteAnchorsHdr.ShortHelp="刪除定位";
+
+// 3951 校正官方漢化 =================================================
+// 3951 校正官方漢化 Palette User
+// 3951 校正官方漢化 =================================================
+// 3951 校正官方漢化 == UserComponent == 
+CATToolingModelHeader.CATTlgComponentCreationHeaderHdr.Title="插入加工產品";
+CATToolingModelHeader.CATTlgComponentCreationHeaderHdr.Help="插入加工產品";
+CATToolingModelHeader.CATTlgComponentCreationHeaderHdr.LongHelp="插入加工產品 \n 將加工產品添加到工具內。";
+CATToolingModelHeader.CATTlgComponentCreationHeaderHdr.ShortHelp="插入加工產品";
+
+CATToolingModelHeader.CATTlgComponentSmartCreateHeaderHdr.Title="填充工具 ";
+CATToolingModelHeader.CATTlgComponentSmartCreateHeaderHdr.Help="填充工具";
+CATToolingModelHeader.CATTlgComponentSmartCreateHeaderHdr.LongHelp="填充工具 \n 使用加工產品填充工具。";
+CATToolingModelHeader.CATTlgComponentSmartCreateHeaderHdr.ShortHelp="填充工具";
+
+CATToolingModelHeader.CATTlgComponentDuplicateHeaderHdr.Title="復制";
+CATToolingModelHeader.CATTlgComponentDuplicateHeaderHdr.Help="復制";
+CATToolingModelHeader.CATTlgComponentDuplicateHeaderHdr.LongHelp="復制。";
+CATToolingModelHeader.CATTlgComponentDuplicateHeaderHdr.ShortHelp="復制";
+
+CATToolingModelHeader.CATTlgTypedPartHeaderHdr.Title="已歸類零件";
+CATToolingModelHeader.CATTlgTypedPartHeaderHdr.Help="已歸類零件";
+CATToolingModelHeader.CATTlgTypedPartHeaderHdr.LongHelp="已歸類零件：\n創建已歸類零件，例如，加工流、加工部件框架、形式框架、簡單框架或概念塑造框架。";
+CATToolingModelHeader.CATTlgTypedPartHeaderHdr.ShortHelp="已歸類零件";
+
+CATToolingModelHeader.CATTlgStructuredComponentHeaderHdr.Title="結構化部件";
+CATToolingModelHeader.CATTlgStructuredComponentHeaderHdr.Help="創建一個新的結構化部件";
+CATToolingModelHeader.CATTlgStructuredComponentHeaderHdr.LongHelp="結構化部件\n創建一個新的結構化部件。";
+CATToolingModelHeader.CATTlgStructuredComponentHeaderHdr.ShortHelp="結構化部件";
+
+CATToolingModelHeader.CATTlgMobileUnitHeaderHdr.Title="移動單元";
+CATToolingModelHeader.CATTlgMobileUnitHeaderHdr.Help="創建新移動單元";
+CATToolingModelHeader.CATTlgMobileUnitHeaderHdr.LongHelp="移動單元\n創建新移動單元。";
+CATToolingModelHeader.CATTlgMobileUnitHeaderHdr.ShortHelp="移動單元";
+
+CATToolingModelHeader.CATTlgComponentEditHeaderHdr.Title="移動加工產品";
+CATToolingModelHeader.CATTlgComponentEditHeaderHdr.Help="移動一個加工產品";
+CATToolingModelHeader.CATTlgComponentEditHeaderHdr.LongHelp="移動加工產品 \n 編輯加工產品的位置。";
+CATToolingModelHeader.CATTlgComponentEditHeaderHdr.ShortHelp="移動加工產品";
+
+CATToolingModelHeader.CATTlgComponentMultiMoveHeaderHdr.Title="移動加工部件";
+CATToolingModelHeader.CATTlgComponentMultiMoveHeaderHdr.Help="移動加工部件";
+CATToolingModelHeader.CATTlgComponentMultiMoveHeaderHdr.LongHelp="移動加工部件\n編輯多個加工部件的位置。";
+CATToolingModelHeader.CATTlgComponentMultiMoveHeaderHdr.ShortHelp="移動加工部件";
+
+// 3951 校正官方漢化CATToolingModelHeader.CATTlgComponentReplaceHeaderHdr.Title="Modify Tooling Reference";
+// 3951 校正官方漢化CATToolingModelHeader.CATTlgComponentReplaceHeaderHdr.Help="Modifies a tooling reference";
+// 3951 校正官方漢化CATToolingModelHeader.CATTlgComponentReplaceHeaderHdr.LongHelp="Modify Tooling Reference\nReplaces or edits tooling reference.";
+// 3951 校正官方漢化CATToolingModelHeader.CATTlgComponentReplaceHeaderHdr.ShortHelp="Modify Tooling Reference";
+
+CATToolingModelHeader.CATTlgToolingSplitHeaderHdr.Title="剪切加工部件";
+CATToolingModelHeader.CATTlgToolingSplitHeaderHdr.Help="剪切一個加工部件集";
+CATToolingModelHeader.CATTlgToolingSplitHeaderHdr.LongHelp="剪切加工部件。\n剪切一個加工部件集。";
+CATToolingModelHeader.CATTlgToolingSplitHeaderHdr.ShortHelp="剪切加工部件";
+
+// 3951 校正官方漢化CATToolingModelHeader.CATTlgComponentDeleteHeaderHdr.Title="Delete ToolingComponents";
+// 3951 校正官方漢化CATToolingModelHeader.CATTlgComponentDeleteHeaderHdr.Help="Deletes ToolingComponents";
+// 3951 校正官方漢化CATToolingModelHeader.CATTlgComponentDeleteHeaderHdr.LongHelp="Delete ToolingComponents\nDeletes ToolingComponents.";
+// 3951 校正官方漢化CATToolingModelHeader.CATTlgComponentDeleteHeaderHdr.ShortHelp="Delete ToolingComponents";
+
+// 3951 校正官方漢化 == SIDebug Command ==
+CATToolingModelHeader.CATMldSmartInterfacesDefinitionHeaderHdr.Title="SI 調試";
+CATToolingModelHeader.CATMldSmartInterfacesDefinitionHeaderHdr.Help="智能界面調試";
+CATToolingModelHeader.CATMldSmartInterfacesDefinitionHeaderHdr.LongHelp="SI 調試 \n 智能界面調試。";
+CATToolingModelHeader.CATMldSmartInterfacesDefinitionHeaderHdr.ShortHelp="SI 調試";
+
+// 3951 校正官方漢化 == Anchorize Command ==
+CATToolingModelHeader.CATMldAnchorizeHdr.Title="定義定位";
+CATToolingModelHeader.CATMldAnchorizeHdr.Help="從現有軸系定義定位";
+CATToolingModelHeader.CATMldAnchorizeHdr.LongHelp="定義定位 \n 從現有軸系定義定位。";
+CATToolingModelHeader.CATMldAnchorizeHdr.ShortHelp="定義定位";
+
+// 3951 校正官方漢化 == AnchorsCooling Command ==
+CATToolingModelHeader.CATMldAnchorsCoolingHdr.Title="創建冷卻系統的定位";
+CATToolingModelHeader.CATMldAnchorsCoolingHdr.Help="創建冷卻系統的定位";
+CATToolingModelHeader.CATMldAnchorsCoolingHdr.LongHelp="創建冷卻定位\n創建冷卻系統的定位。";
+CATToolingModelHeader.CATMldAnchorsCoolingHdr.ShortHelp="創建冷卻定位";
+
+// 3951 校正官方漢化 == Anchor Edition command ==
+// 3951 校正官方漢化CATToolingModelHeader.CATMldAnchorEditionHdr.Title="Edit Anchors";
+// 3951 校正官方漢化CATToolingModelHeader.CATMldAnchorEditionHdr.Help="Edits Anchors";
+// 3951 校正官方漢化CATToolingModelHeader.CATMldAnchorEditionHdr.LongHelp="Edit Anchors\nEdits anchors";
+// 3951 校正官方漢化CATToolingModelHeader.CATMldAnchorEditionHdr.ShortHelp="Edit Anchors";
+
+// 3951 校正官方漢化 == Anchor Creation / Point or Axis Command ==
+CATToolingModelHeader.CATMldAnchorPointAxisHdr.Title="創建定位(點、軸)";
+CATToolingModelHeader.CATMldAnchorPointAxisHdr.Help="從點或軸系創建定位";
+CATToolingModelHeader.CATMldAnchorPointAxisHdr.LongHelp="創建定位 \n 從點或軸系創建定位。";
+CATToolingModelHeader.CATMldAnchorPointAxisHdr.ShortHelp="創建定位(點、軸)";
+
+// 3951 校正官方漢化 == ToolVisu command == tt // 3951 校正官方漢化
+CATToolingModelHeader.CATMldToolVisuHdr.Title="工具快速可視化";
+CATToolingModelHeader.CATMldToolVisuHdr.Help="提供工具的快速可視化";
+CATToolingModelHeader.CATMldToolVisuHdr.LongHelp="工具快速可視化。\n 提供工具的快速可視化。";
+CATToolingModelHeader.CATMldToolVisuHdr.ShortHelp="工具快速可視化";
+
+// 3951 校正官方漢化 == ToolCheck command ==
+CATToolingModelHeader.CATMldToolCheckHdr.Title="工具檢查助手";
+CATToolingModelHeader.CATMldToolCheckHdr.Help="提供一個助手幫助檢查工具";
+CATToolingModelHeader.CATMldToolCheckHdr.LongHelp="工具檢查助手 \n 提供一個助手幫助檢查工具。";
+CATToolingModelHeader.CATMldToolCheckHdr.ShortHelp="工具檢查助手";
+
+// 3951 校正官方漢化 == Prepare Tooling Resources ==
+CATToolingModelHeader.CATMldToolingResourcesHdr.Title="準備加工資源";
+CATToolingModelHeader.CATMldToolingResourcesHdr.Help="準備加工資源";
+CATToolingModelHeader.CATMldToolingResourcesHdr.LongHelp="準備加工資源\n準備要導入或遷移的加工部件和其他資源。";
+CATToolingModelHeader.CATMldToolingResourcesHdr.ShortHelp="準備加工資源";
+
+// 3951 校正官方漢化 == Hide/Show ConceptMoldSkeleton command ==
+CATToolingModelHeader.CATTlgVisuMngtHdr.Title="隱藏/顯示概念模型框架";
+CATToolingModelHeader.CATTlgVisuMngtHdr.Help="隱藏/顯示概念模具框架類型的加工框架";
+CATToolingModelHeader.CATTlgVisuMngtHdr.LongHelp="顯示/隱藏概念模具框架類型的加工框架。";
+CATToolingModelHeader.CATTlgVisuMngtHdr.ShortHelp="隱藏/顯示概念模型框架";
+
+// 3951 校正官方漢化 == Hide/Show InjectionSide command ==
+CATToolingModelHeader.CATTlgVisuMngtHdr2.Title="隱藏/顯示注入側";
+CATToolingModelHeader.CATTlgVisuMngtHdr2.Help="隱藏/顯示注入側類型的加工移動單元";
+CATToolingModelHeader.CATTlgVisuMngtHdr2.LongHelp="隱藏/顯示注入側類型的加工移動單元。";
+CATToolingModelHeader.CATTlgVisuMngtHdr2.ShortHelp="隱藏/顯示注入側";
+
+// 3951 校正官方漢化 == Hide/Show EjectionSide command ==
+CATToolingModelHeader.CATTlgVisuMngtHdr3.Title="隱藏/顯示噴射側";
+CATToolingModelHeader.CATTlgVisuMngtHdr3.Help="隱藏/顯示噴射側類型的加工移動單元";
+CATToolingModelHeader.CATTlgVisuMngtHdr3.LongHelp="隱藏/顯示噴射側類型的加工移動單元。";
+CATToolingModelHeader.CATTlgVisuMngtHdr3.ShortHelp="隱藏/顯示噴射側";
+
+// 3951 校正官方漢化 == Hide/Show EjectorSystem command ==
+CATToolingModelHeader.CATTlgVisuMngtHdr4.Title="隱藏/顯示噴射器系統";
+CATToolingModelHeader.CATTlgVisuMngtHdr4.Help="隱藏/顯示噴射器系統類型的加工移動單元";
+CATToolingModelHeader.CATTlgVisuMngtHdr4.LongHelp="隱藏/顯示噴射器系統類型的加工移動單元。";
+CATToolingModelHeader.CATTlgVisuMngtHdr4.ShortHelp="隱藏/顯示噴射器系統";
+
+// 3951 校正官方漢化 == InsertToolingSystem command ==
+CATToolingModelHeader.CATTlgInsertToolingSystemHeaderHdr.Title="插入加工系統";
+CATToolingModelHeader.CATTlgInsertToolingSystemHeaderHdr.Help="將加工系統插入工具中";
+CATToolingModelHeader.CATTlgInsertToolingSystemHeaderHdr.LongHelp="插入加工系統\n將加工系統添加到工具中。";
+CATToolingModelHeader.CATTlgInsertToolingSystemHeaderHdr.ShortHelp="插入加工系統";
+

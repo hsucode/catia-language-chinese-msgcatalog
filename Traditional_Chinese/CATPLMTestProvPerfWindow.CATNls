@@ -1,0 +1,111 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2007
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Nls Message for the CATPLMTestProvPerfWindow Application window
+// 3951 校正官方漢化
+
+Title="性能測試實用程序 ";
+
+// 3951 校正官方漢化 Various Status for Elapsed Time Column in Result Multilist :
+BlankStatus="   ";
+RunningStatus="Running";
+FailedStatus="Operation Failed";
+
+// 3951 校正官方漢化 Result Multlist Headers :
+OperationStep="步驟";
+TimeElapsed="時間（毫秒）";
+
+ExitId.Title=" 退出 ";
+
+// 3951 校正官方漢化 Connection parameters frame :
+CnxFrameId.Title=" 連接：  ";
+CnxFrameId.CnxSrvLabelId.Title=" 服務器：  ";
+CnxFrameId.CnxPrtLabelId.Title=" 端口：  ";
+CnxFrameId.CnxUsrLabelId.Title=" 用戶：  ";
+CnxFrameId.CnxPwdLabelId.Title=" 密碼：  ";
+CnxFrameId.CnxRolLabelId.Title=" 角色：  ";
+CnxFrameId.CnxURILabelId.Title=" 根 URI：  ";
+CnxFrameId.CnxSelectRoleButtonId.Title="選擇角色";
+
+// 3951 校正官方漢化 Tests parameters frame :
+TstFrameId.Title=" 測試參數：  ";
+TstFrameId.TstSubFrame1Id.TstBtrRadioButtonId.Title=" B 樹 ";
+TstFrameId.TstSubFrame1Id.TstFtrRadioButtonId.Title=" 平頂樹 ";
+TstFrameId.TstSubFrame1Id.TstDphLabelId.Title=" 深度：         ";
+TstFrameId.TstSubFrame1Id.TstWdhLabelId.Title=" 寬度：         ";
+TstFrameId.TstSubFrame2Id.TstRepTypeLabelId.Title="展示類型：";
+TstFrameId.TstSubFrame2Id.NoRepButtonId.Title=" 無";
+TstFrameId.TstSubFrame2Id.SmallRepButtonId.Title=" 小";
+TstFrameId.TstSubFrame2Id.MediumRepButtonId.Title=" 中";
+TstFrameId.TstSubFrame2Id.LargeRepButtonId.Title=" 大";
+TstFrameId.TstSubFrame2Id.TstRepNoLabelId.Title="展示數：";
+
+NoOfRepRefCombo.Help="選擇展示數";
+NoOfRepRefCombo.ShortHelp="選擇展示數";
+
+NbRepRef.One="1";
+NbRepRef.Two="2";
+NbRepRef.Three="3";
+NbRepRef.Four="4";
+
+// 3951 校正官方漢化 Run Tests frame :
+RunFrameId.Title=" 執行：  ";
+RunFrameId.RunTestButtonId.Title=" 運行測試 ";
+
+// 3951 校正官方漢化 Results frame :
+ResFrameId.Title=" 結果：  ";
+
+// 3951 校正官方漢化 Result Multilist :
+ResFrameId.ResultsTableID.Title=" 結果表 ";
+
+// 3951 校正官方漢化 Popup Message :
+PopupTitle="Error";
+PresentOpFail.Text=" 當前操作失敗 ";
+SelectRoleFailed.Text="無法在服務器上獲取安全上下文的列表。";
+LicenseNotFound.Text="未找到許可證";
+UnrecognizedSecondArgument.Text="應用程序未識別出 <ARG> 參數。\n 正確用法為 <mkrun -c CORRECTARG>";
+InvalidNoOfArguments.Text="參數數量無效\n正確用法為 <mkrun -c CORRECTARG>";
+CorrectArg.Text="PLMSetupPerformanceChecker - 專家";
+NotConnectedToM1.Text="未連接到 ENOVIA V6。\n請連接到 ENOVIA V6 以使用 PLMSetupPerformanceChecker。";
+RunTestError.ZeroDepth="深度值為 0 毫無意義。請輸入某個正值。";
+RunTestError.NegativeDepth="深度值為負。請輸入某個正值。";
+RunTestError.ZeroWidth="寬度值為 0 毫無意義。請輸入某個正值。";
+RunTestError.NegativeWidth="寬度值為負。請輸入某個正值。";
+
+// 3951 校正官方漢化Result Steps
+Results.Connect_Step="Connect";
+Results.GenerateData_Step="生成數據結構";
+Results.SavePS_Step="保存 PLM 服務器上的數據";
+Results.Query_Step="執行“查詢”";
+Results.ExpandAll_Step="執行“全部展開”";
+Results.ExpandLv1_Step="執行“展開級別 1”";
+Results.FirstOpen_Step="執行“打開”（緩存為空）";
+Results.SecondOpen_Step="執行“打開”（緩存已滿）";
+Results.DeletePS_Step="刪除 PLM 服務器上的數據";
+Results.CleanData_Step="移除臨時文件";
+Results.Disconnect_Step="Disconnect";
+
+// 3951 校正官方漢化File save dialog title
+ResultSaveId.Title="選擇位置以保存測試結果";
+
+// 3951 校正官方漢化For displaying the status as "Scenario 2 / 9" etc
+
+Scenarios.Title="方案 ";
+
+// 3951 校正官方漢化THE TOTAL NO. OF SCENARIOS ARE EQUAL TO TOTAL NO. OF <SCENARIOS> NODE IN THE INTEL_A\reffiles\CATPLMTestProviderPerformance\CATPLMTestProviderPerformanceScenarios.xml FILE
+// 3951 校正官方漢化Text for each scenario. This is equal to total no. of scenario counr above
+Scenarios.One=" 1 ";
+Scenarios.Two=" 2 ";
+Scenarios.Three=" 3 ";
+Scenarios.Four=" 4 ";
+Scenarios.Five=" 5 ";
+Scenarios.Six=" 6 ";
+Scenarios.Seven=" 7 ";
+Scenarios.Eight=" 8 ";
+Scenarios.Nine=" 9 ";
+Scenarios.This="Current";
+
+RunTest.Info="Information";
+RunTest.StartMessage="請選擇位置以存儲性能測試結果。";
+RunTest.EndMessage="已完成性能測試。\n測試結果存儲在 <FILEPATH> 中";
+

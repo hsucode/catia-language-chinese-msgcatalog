@@ -1,0 +1,26 @@
+CartesianTargetNA="無法獲取此目標的笛卡爾位置。  此目標是接合點目標或者已在上載過程中設置接合點值。";
+CartesianTargetNotReachable="無法到達笛卡爾位置。\n會將接合點值 0.0 用于此目標。  請驗證刀具和對象框架輪廓是否正確。";
+CartesianOriginInvalid="為笛卡爾位置指定的原點無效。\n對于固定 TCP 動作，原點必須是安裝板。  對于移動 TCP 動作，原點可以是安裝板之外的任何東西。調用 SetTransform 或 GetTransform 時，通過轉換器指定原點。";
+
+JointTargetNA="無法獲取此目標的接合點值。  最有可能的原因是沒有接合點值和原位置，或者尚未為此目標設置笛卡爾位置。";
+
+FixedTCPPartNotGrabbed.Diagnostic="尚未在固定 TCP 標記目標動作之前正確抓取零件 /p1。  無法計算機器人動作的目標位置。";
+FixedTCPPartNotGrabbed.Advice="對于移至標記目標位置的固定 TCP 動作，必須將標記附加到機器人抓取的零件上。該零件必須附加到機器人的安裝板上且在啟動下載/上載之前已被抓取，或者必須已被與固定 TCP 動作相同的任務中的抓取活動抓取。在后一種情況中，必須至少有一個機器人動作是可在抓取活動前到達的。";
+
+MobileTCPPartGrabbed.Diagnostic="已在移動 TCP 標記目標動作之前抓取零件 /p1。  無法計算機器人動作的目標位置。";
+MobileTCPPartGrabbed.Advice="對于移至標記目標位置的移動 TCP 動作，無法將標記附加到機器人抓取的零件上。";
+
+FixedTCPNotTagTargetUpload="為固定 TCP 動作指定的目標類型無效。\n固定 TCP 動作必須使用標記目標。  將會自動創建標記目標。";
+FixedTCPNotTagTargetDownload="固定 TCP 動作的目標類型無效。\n固定 TCP 動作必須使用標記目標。";
+
+TargetNotSet="尚未為此機器人動作設置目標位置。\n轉換器尚未為此機器人動作中的至少一個動作組設置接合點值、笛卡爾位置或原位置。  將會對所有接合點值使用 0。";
+
+RobotBaseObjectFrameNonZero="非零對象框架與機器人基底坐標一起使用。\n使用機器人基底坐標時，對象框架必須為零。  當機器人在鋼軌上時，如果將非零對象框架與機器人基底坐標一起使用，則計算的位置可能無效。";
+
+CoordinateConversionError="無法計算與所需原點有關的坐標。\n原始坐標：/p1 所需坐標：/p2";
+
+SetNameForbidden="不能在 NRL 教導中使用函數 OlpRobotMotionTarget.put_Name。  您必須改用 OlpRobotMotionTarget.Tag 來獲取標記，然后設置該標記的名稱。";
+
+
+
+

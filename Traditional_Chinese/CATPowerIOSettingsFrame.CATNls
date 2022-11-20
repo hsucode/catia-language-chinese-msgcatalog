@@ -1,0 +1,69 @@
+ActivateCacheFrame.HeaderFrame.Global.Title="持續高速緩存激活";
+
+ActivateCacheFrame.IconAndOptionsFrame.OptionsFrame.CacheActivationFrame.CacheActivation.Title="使用持續高速緩存";
+ActivateCacheFrame.IconAndOptionsFrame.OptionsFrame.CacheActivationFrame.CacheActivation.ShortHelp="激活或停用持續高速緩存。";
+ActivateCacheFrame.IconAndOptionsFrame.OptionsFrame.CacheActivationFrame.CacheActivation.LongHelp="激活后，對于數據流生命周期和高速緩存最大大小，此選項可優化本地高速緩存中持續的數據流下載狀況。";
+
+PersistentCacheFrame.HeaderFrame.Global.Title="持續高速緩存資源";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.LocationFrame.CachePathLabel.Title=" 高速緩存位置";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.LocationFrame.CachePathLabel.ShortHelp="為持續高速緩存指定一個位置";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.LocationFrame.CachePathLabel.LongHelp="定義高速緩存目錄的本地路徑";
+
+DirectoryBrowser.Title="高速緩存位置選擇器";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.LocationFrame.CachePathPushB.ShortHelp="為持續高速緩存選擇一個位置";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.LocationFrame.CachePathEditor.ShortHelp="定義高速緩存目錄的本地路徑";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.LocationFrame.CachePathEditor.LongHelp="定義存儲從數據庫資源庫打開的數據流時使用的高速緩存目錄的本地路徑：
+首次從數據庫打開 PLM 部件時，會將其數據流復制到持續高速緩存中，以優化對這些數據的下一次訪問。
+這意味著數據流已在會話中加載，并存儲在持續高速緩存中，同時顯示在編輯窗口內。
+下次需要相同數據時，將直接從持續高速緩存中加載已存儲在高速緩存中的（而非資源庫數據庫中的）相應流。";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.MaxSizeFrame.CacheSizeLabel.Title=" 最大大小（以 MB 為單位） ";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.MaxSizeFrame.CacheSizeEditor.ShortHelp="持續高速緩存所允許的最大大小。";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.MaxSizeFrame.CacheSizeEditor.LongHelp="最大高速緩存大小（以兆字節表示）定義了用戶允許用于持續高速緩存的最大磁盤大小。
+當高速緩存大小超過授權的最大大小時，它將縮減至其最大大小的一半。";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.MemDelFrame.CacheUseLabel.ShortHelp="高速緩存的總大小。";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.MemDelFrame.CacheUseLabel.LongHelp="在高速緩存中下載的流的總大小。";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.MemDelFrame.CacheUseLabel.Title=" 磁盤內存使用";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.MemDelFrame.MemDelFrame.DeleteCachePushB.Title="刪除文件";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.MemDelFrame.MemDelFrame.DeleteCachePushB.ShortHelp="從高速緩存中移除所有可刪除的流。";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.MemDelFrame.MemDelFrame.DeleteCachePushB.LongHelp="從高速緩存中移除未被當前會話或本地保存使用的所有流。";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.CacheCoherencyFrame.CheckCacheCoherency.Title="檢查高速緩存一致性";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.CacheCoherencyFrame.CheckCacheCoherency.ShortHelp="檢查高速緩存的內部一致性。";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.CacheCoherencyFrame.CheckCacheCoherency.LongHelp="首次在當前會話中使用時，檢查高速緩存的內部一致性。";
+
+CacheMonitorFrame.IconAndOptionsFrame.OptionsFrame.DataDownloadLabel.Title="在高速緩存中下載的數據";
+CacheMonitorFrame.IconAndOptionsFrame.OptionsFrame.DataDownloadLabel.ShortHelp="已在高速緩存中下載的流的大小。";
+CacheMonitorFrame.IconAndOptionsFrame.OptionsFrame.DataDownloadLabel.LongHelp="在高速緩存中下載的流的總大小。";
+
+CacheMonitorFrame.IconAndOptionsFrame.OptionsFrame.DataInCacheLabel.Title="在高速緩存中找到的數據";
+CacheMonitorFrame.IconAndOptionsFrame.OptionsFrame.DataInCacheLabel.ShortHelp="從高速緩存中使用的流的累計大小。";
+CacheMonitorFrame.IconAndOptionsFrame.OptionsFrame.DataInCacheLabel.LongHelp="在高速緩存中下載和使用的流的累計總大小。";
+
+CacheMonitorFrame.IconAndOptionsFrame.OptionsFrame.DeletableDataLabel.Title="可刪除的數據";
+CacheMonitorFrame.IconAndOptionsFrame.OptionsFrame.DeletableDataLabel.ShortHelp="可從高速緩存中移除的流的大小。";
+CacheMonitorFrame.IconAndOptionsFrame.OptionsFrame.DeletableDataLabel.LongHelp="可從高速緩存中移除的流（未被當前會話或本地保存使用）的總大小。";
+
+CacheMonitorFrame.HeaderFrame.Global.Title="持續高速緩存監視 ";
+
+PowerIOWarningNotify.Title="警告";
+PowerIOErrorNotify.Title="錯誤";
+WarningCacheActivation="重新啟動應用程序以使高速緩存激活生效。";
+WarningCacheDeactivation="重新啟動應用程序以使高速緩存停用生效。";
+WarningCachePath="重新啟動應用程序以使高速緩存路徑更改生效。";
+WarningCacheSize="重新啟動應用程序以使高速緩存最大大小更改生效。";
+WarningCheckCoherency="重新啟動應用程序以使高速緩存一致性檢查更改生效。";
+
+ErrorMessage0="為持續高速緩存輸入的路徑與有效目錄不對應，或者無法創建此目錄";
+ErrorMessage1="無法創建指定目錄";
+ErrorMessage2="指定路徑與目錄不對應";
+ErrorMessage3="拒絕訪問路徑目錄";
+ErrorMessage4="禁止遠程路徑。持續高速緩存必須位于本地路徑中";
+ErrorMessage5="高速緩存路徑不能是文件路徑，而是目錄路徑";
+ErrorMessage6="高速緩存的最大大小不能小于 10 MB 且不能大于 /P MB";
+ErrorMessage7="所需的高速緩存最大大小 (/P1 MB) 大于可用空間";

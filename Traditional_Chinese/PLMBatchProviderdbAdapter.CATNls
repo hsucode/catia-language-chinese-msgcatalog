@@ -1,0 +1,127 @@
+
+dbAdapterUI.ObjectManagement.Title="對象管理";
+dbAdapterUI.ObjectSearch.Title="對象搜索";
+
+dbAdapterUI.PLMBatchProviderVPM1.NLSName="ENOVIA VPM";
+dbAdapterUI.PLMBatchProvider3DXML.NLSName="3D XML";
+dbAdapterUI.PLMBatchProviderPLM1.NLSName="ENOVIA V6";
+dbAdapterUI.PLMBatchProviderIPD.NLSName="Delmia - 實時 PPR 導航器和連接器";
+dbAdapterUI.PLMBatchProviderVP5.NLSName="ENOVIA VPMV5";
+dbAdapterUI.PLMBatchProviderMX1.NLSName="ENOVIA V6 - 協作業務流程和設計數據管理";
+dbAdapterUI.PLMBatchProviderSMT.NLSName="ENOVIA SmarTeam";
+dbAdapterUI.PLMBatchProviderMHub.NLSName="制造中樞";
+dbAdapterUI.PLMBatchProviderCMO.NLSName="XPDM";
+dbAdapterUI.PLMBatchProviderXPDMXML.NLSName="XPDMXML";
+
+// 3951 校正官方漢化 === Query resources
+dbAdapterUI.Frame.Query.Title="查詢";
+dbAdapterUI.Frame.Query.Help="搜索數據庫中的對象";
+
+dbAdapterUI.Btn.Apply.Title="應用";
+dbAdapterUI.Btn.Apply.Help="應用查詢";
+
+dbAdapterUI.Frame.Output.Title="輸出";
+dbAdapterUI.Frame.Output.Help="輸出";
+
+dbAdapterUI.Rad.ReplaceResults="替換結果";
+dbAdapterUI.Rad.AddResults="添加結果";
+
+
+
+dbAdapterUI.Chk.LockAuto.Title="對非鎖定對象強制執行保存操作";
+dbAdapterUI.Chk.LockAuto.Help="保存時自動鎖定非鎖定對象";
+
+
+dbAdapterUI.Chk.Change.Title="輸出命名的定義";
+dbAdapterUI.Chk.Change.Help="配置文件名定義";
+dbAdapterUI.Btn.Change.Title="配置輸出命名...";
+dbAdapterUI.FileNamingDefChange.Title="配置輸出命名";
+
+dbAdapterUI.ListSelFiles.Nb="Nb";
+
+dbAdapterUI.Chk.NewVersion.Title="新建版本";
+dbAdapterUI.Chk.NewVersion.Help="將已修改對象另存為新版本";
+
+
+// 3951 校正官方漢化 ============== ERROR MESSAGES ======================================
+
+
+INF.DocSaveOK="對象已成功保存在數據庫中";
+
+INF.Version.KO="無法創建新版本！！";
+INF.Version.OK="已在數據庫中成功創建新版本。";
+
+
+
+ERR.NoDocFound="在數據庫中未找到符合搜索標準的對象";
+
+ERR.DocLoadKO="無法加載對象";
+ERR.DocSaveKO="對象無法保存在數據庫中";
+ERR.DocAlreadyLocked="對象已被另一個用戶鎖定，不可修改。";
+ERR.DocCanNotBeLocked="無法鎖定對象";
+WNG.DocSaveForced="用戶未鎖定對象。\n對象已被強制鎖定。";
+ERR.ObjNotLockedAndNoForceOption="\n對象未鎖定，也未選擇“強制鎖定”選項。";
+ERR.DocCanNotBeUnLocked="無法解鎖對象";
+ERR.DocReadLockKO="無法檢索對象的鎖定狀態";
+ERR.WarningBox.Title="錯誤";
+
+ERR.PVSObjRetrievFail="無法處理 PVS 對象";
+
+ERR.NoQueryDone="首先查詢數據庫中的對象";
+WNG.DocNotLocked="/p1 對象未鎖定，將不會在流程結束時保存在數據庫中。\n請選擇對“輸出”框中的非鎖定對象執行“強制保存”操作。";
+WNG.DocNotLocked2="     選擇“強制保存（鎖定）”選項
+或
+     在啟動操作之前手動鎖定 /p1 中的對象。\n";
+WNG.DocLockedOther="/p1 對象已被另一個用戶鎖定，將不會在流程結束時將其保存在數據庫中。";
+
+ERR.QueryLocked="查詢已被提供商 /p1 鎖定，當前提供商無法使用：";
+
+dbAdapterUI.Warning.Help.col1="以下對象路徑不存在\n";
+dbAdapterUI.Warning.Help.col2="安裝對象";
+dbAdapterUI.Warning.Title="警告";
+dbAdapterUI.Warning.NoBrowser="無瀏覽器";
+dbAdapterUI.LockStatus="鎖定狀態";
+dbAdapterUI.ListDoc.ColumnName="名稱";
+
+
+WNG.ObjFromXMLPartial="\n 無法檢索 XML 中定義的 /p1 對象";
+WNG.ObjFromXMLAbort="無法檢索 XML 中定義的 /p1 對象的任何對象\n";
+
+PLMBatchProviderEnov.WNG.LargeNoOfObjects="找到 /p1 對象。是否仍要顯示結果？";
+PLMBatchProviderEnov.WNG.title="警告！";
+PLMBatchProviderEnov.WNG.AttrIncompatible="對象選擇列表中之前選擇的對象\n可能因屬性不兼容而無法正常顯示。";
+dbAdapterUI.Output.CreationPref="無法正確設置“創建”首選項！！";
+PLMBatchProviderEnov.ERR.ProvConnFailure="連接到數據庫失敗！";
+
+WNG.SelectionLost="如果取消面板，選定進行處理的對象將丟失。\n確認要暫掛對象選擇嗎？ ";
+
+// 3951 校正官方漢化 ============== FILTER ERROR MESSAGES ======================================
+ERR.Filter.NotActivated="應用程序不支持持久篩選對象。無法處理篩選對象：/p1 \n";
+ERR.Filter.ProcessingKO="無法處理篩選對象：/p1 \n";
+
+
+// 3951 校正官方漢化============================================================
+// 3951 校正官方漢化 Design Workspace ResourceSelectionPanel
+// 3951 校正官方漢化============================================================
+// 3951 校正官方漢化 Interactive - new UI ::IsPLMBatch_DWSSuppActive
+PLMBatchProviderEnovUI.PLMBatchDWSResourceSelectionPanel.Title="資源選擇面板";
+PLMBatchProviderEnovUI.PLMBatchDWSResourceSelectionPanel.Info1="無法對來自不同源（參考和不同 Design Workspace）的多個元素的啟動批處理。 ";
+PLMBatchProviderEnovUI.PLMBatchDWSResourceSelectionPanel.Info2="從以下資源之一選擇數據，以進行進一步處理： ";
+PLMBatchProviderEnovUI.PLMBatchDWSResourceSelectionPanel.Max5="選定的對象屬于 5 個以上的資源。僅可選擇 5 個資源。 ";
+PLMBatchProviderEnovUI.PLMBatchDWSResourceSelectionPanel.ChkBoxTitle="/p1 中的數據 ";
+PLMBatchProviderEnovUI.PLMBatchDWSResourceSelectionPanel.ReferenceNLS=" 參考 ";
+
+// 3951 校正官方漢化============================================================
+// 3951 校正官方漢化 Design Workspace warnings
+// 3951 校正官方漢化============================================================
+// 3951 校正官方漢化 Interactive - older UI
+PLMBatchProviderEnovUI.WNG.DWS.1DWSConnected="無法對來自不同源（參考和不同 Design Workspace）的多個元素啟動批處理。\n\n 選定對象 \"/p1\" 屬于 \"/p2\"，而 \"/p3\" 屬于參考。\n 無法在相同交易中處理所有對象。\n 只接受從 \"/p2\" Design Workspace 選擇對象。其他對象將被忽略。";
+PLMBatchProviderEnovUI.WNG.DWS.2DWSConnected="無法對來自不同來源（參考和不同的 Design Workspace）的多個元素啟動批處理。\n\n 選定對象 \"/p1\" 屬于 \"/p2\"，而 \"/p3\" 屬于 \"/p4\"。\n 無法在相一事務中處理所有對象。\n 只接受從 \"/p2\" Design Workspace 選擇對象。其他對象將被忽略。";
+
+// 3951 校正官方漢化 batch mode
+PLMBatchProviderEnov.ERR.DWS.1DWSConnected="無法對來自不同來源（參考和不同的 Design Workspace）的多個元素啟動批處理。\n\n 要處理的選定對象 \"/p1\" 屬于 \"/p2\"，而 \"/p3\" 屬于參考。\n 無法在相同事務中處理所有對象。\n 要在不同處理中轉換的分隔數據需要 'mono Design Workspace' 轉換。";
+PLMBatchProviderEnov.ERR.DWS.2DWSConnected="無法對來自不同來源（參考和不同的 Design Workspace）的多個元素啟動批處理。\n 要處理的選定對象 \"/p1\" 和 \"/p3\" 屬于不同的 Design Workspace，分別為 \"/p2\" 和 \"/p4\"。 \n 無法在單個 DownwardCompatibility 流程中轉換多個 Design Workspace。\n 拆分要在不同流程中進行轉換的數據，以實現“單 Design Workspace”轉換。";
+PLMBatchProviderEnov.ERR.DWS.ConnectionToDWSFailure="要轉換的對象 \"/p1\" 屬于無法連接的 \"/p2\" Design Workspace。\n 檢查 Design Workspace 的可用性。\n ";
+PLMBatchProviderEnov.ERR.DWS.ConnectionToDWSFailure_MultipleConn="無法在單個批處理過程中連接到多個 Design Workspace。\n要在不同處理中轉換的分隔數據需要 'mono Design Workspace' 轉換。\n ";
+PLMBatchProviderEnov.ERR.DWS.DISConnectionToDWSFailure="要轉換的對象 \"/p1\" 屬于無法連接的 \"/p2\" Design Workspace。\n 檢查 Design Workspace 的可用性。\n ";
+

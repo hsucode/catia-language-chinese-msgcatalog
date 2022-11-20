@@ -1,0 +1,65 @@
+// 3951 校正官方漢化 DO不EDIT :: THE CAA2 WIZARD WILL REPLACE所有 CODE HERE
+
+Title = "移動 Cable";
+BOK = "復位";
+BApply = "關閉";
+
+DeleteButtonDelete     ="                       Delete                      ";
+DeleteButtonDeactivate ="                     Deactivate                    ";
+DeleteButtonBoth       ="                  Delete/Deactivate                ";
+
+MainFrame.TabSelectFrame.Title = "移動";
+MainFrame.TabSelectFrame.TabContainer.ConnectorClampTabPage.Title		= "Connector/Clamp ";
+MainFrame.TabSelectFrame.TabContainer.ConnectorClampTabPage.CBMRangeCotrolFrame.Title = " Cable Motion Control Range ";
+MainFrame.TabSelectFrame.TabContainer.ConnectorClampTabPage.CBMRangeCotrolFrame.BranchBehaviourFrame.CBMCheckButton.Title = " Branch Follows Main Bundle ";
+MainFrame.TabSelectFrame.TabContainer.ConnectorClampTabPage.ConClamFrame.ConnectorLabel.Title		= "選擇: ";
+MainFrame.TabSelectFrame.TabContainer.ConnectorClampTabPage.ConClamFrame.ConnectorCombo.Help		= "選擇the connector/clamp to move";
+MainFrame.TabSelectFrame.TabContainer.ConnectorClampTabPage.ConClamFrame.ConnectorCombo.ShortHelp	= "選擇the connector/clamp to move";
+MainFrame.TabSelectFrame.TabContainer.ConnectorClampTabPage.ConClamFrame.ConnectorCombo.LongHelp	= "選擇the connector/clamp to move";
+
+MainFrame.TabSelectFrame.TabContainer.ConnectorClampTabPage.CBMRangeCotrolFrame.SelectorListMainFrame.SelectorListLabelFrame.FixedPointLabel.Title		= "                              Fixed In Space";
+MainFrame.TabSelectFrame.TabContainer.ConnectorClampTabPage.CBMRangeCotrolFrame.SelectorListMainFrame.SelectorListLabelFrame.FreePointLabel.Title		= "                                             Free To Move";
+
+MainFrame.TabSelectFrame.TabContainer.PickPointTabPage.Title		= "Control Point ";
+MainFrame.TabSelectFrame.TabContainer.PickPointTabPage.PickPointFrame.NewPushButton.Title = "                          New                        ";
+
+MainFrame.SlackFrame.Title = "Local Slack";
+
+MainFrame.SlackFrame.SlackPushButton.Title	  = "             Manage Local Slack             ";
+MainFrame.SlackFrame.SlackPushButton.Help		  = "管理s Local Slack At Control Points";
+MainFrame.SlackFrame.SlackPushButton.ShortHelp  = "管理s Local Slack At Control Points";
+MainFrame.SlackFrame.SlackPushButton.LongHelp	  = "管理s Local Slack At Control Points";
+
+MainFrame.ECPFrame.Title = "恢復Control Points ";
+MainFrame.ECPFrame.RestoreECPPushButton.Title	  = "  Restore Engineering Control Points  ";
+MainFrame.ECPFrame.RestoreECPPushButton.Help		  = "恢復s Deactivated Engineering Control Points ";
+MainFrame.ECPFrame.RestoreECPPushButton.ShortHelp  =  "恢復s Deactivated Engineering Control Points ";
+MainFrame.ECPFrame.RestoreECPPushButton.LongHelp	  =  "恢復s Deactivated Engineering Control Points ";
+
+
+MainFrame.HomePositionFrame.Title = " Home位置 ";
+MainFrame.HomePositionFrame.HomeLabel.Title = " Home : ";
+MainFrame.HomePositionFrame.Help = "選擇Any Home Position from the Combo 列表";
+
+MainFrame.AnimationFrame.Title = "Animation";
+MainFrame.AnimationFrame.AnimationCheckButton.Title		= " Animation                                       ";
+MainFrame.AnimationFrame.AnimationCheckButton.Help		= " 選擇Option for Animation During Snap ";
+MainFrame.AnimationFrame.AnimationCheckButton.ShortHelp	= " 選擇Option for Animation During Snap ";
+MainFrame.AnimationFrame.AnimationCheckButton.LongHelp	= " 選擇Option for Animation During Snap ";
+
+MainFrame.UpdateMessageFrame.Title		= "更新Message ";
+MainFrame.UpdateMessageFrame.Help		= " Update Status ";
+MainFrame.UpdateMessageFrame.ShortHelp	= " Update Status ";
+MainFrame.UpdateMessageFrame.LongHelp	= " Update Status ";
+
+
+MainFrame.HomePosFrame.Title = " Home位置 ";
+
+SlackChangeNotPossible.Title = "錯誤";
+SlackChangeNotPossible.Message = "Can不Update Local Slack At this control point.\n Bundle is in Length Mode.";
+
+
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE
+
+PointOnACoil.Title   = " 錯誤 : Control 點";
+PointOnACoil.Message = " This control point is at the end/start of一個coil.\n Delete operation不allowed. ";

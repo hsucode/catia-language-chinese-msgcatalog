@@ -1,0 +1,87 @@
+Title = "Bill Of Material";
+
+TitleNUMBER = "Number";
+TitleQUANTITY = "數量";
+TitlePARTNUMBER = "零件Number";
+TitleREFERENCE = "參考";
+TitleMOLDREFERENCE = "Mold參考";
+TitleSUPPLIER = "Supplier";
+TitleMATERIAL = "材料";
+TitleSOURCE = "來源";
+TitleHEATTREAT = "熱處理";
+TitleUNITPRICE = "Unit Price";
+TitlePRICE = "Price";
+
+TitleProfileDescription = "工具ing Profile (*.bom)";
+TitleProfileSelection = "Work Profile選擇";
+TitleRefProfileSelection = "參考Profile選擇";
+
+FrmRoot.LongHelp = "Generation of Bill of Material.";
+
+FrmRoot.FrmNumber.Title = "Numbering  ";
+FrmRoot.FrmNumber.LbProdSel.Title = "選擇 Product:  ";
+FrmRoot.FrmNumber.ProductSelector.LongHelp = "顯示the selected product name of the generated Bill of Material.";
+FrmRoot.FrmNumber.CheckSort.Title = " Sort by Component Type ";
+FrmRoot.FrmNumber.CheckSort.LongHelp = "Sorts the contents of the Bill of Material by tooling component type.";
+FrmRoot.FrmNumber.PushFileOpen.Title = "Work 路徑";
+FrmRoot.FrmNumber.PushFileOpen.LongHelp = "選擇 the Work Profile (*.bom file).";
+FrmRoot.FrmNumber.ReportName.LongHelp = "顯示the selected Work Profile path name.";
+FrmRoot.FrmNumber.PushOpenRefProf.Title = "參考路徑";
+FrmRoot.FrmNumber.PushOpenRefProf.LongHelp = "選擇 the Reference Profile (*.bom file) to copy as Work Profile.";
+FrmRoot.FrmNumber.RefProfName.LongHelp = "顯示the selected Reference Profile path name.";
+
+FrmRoot.FrmNumber.FrmMode.LbMode.Title = "  模式  ";
+FrmRoot.FrmNumber.FrmMode.LongHelp = "定義type of numbering.";
+FrmRoot.FrmNumber.FrmMode.RadioInteger.Title = "Integer";
+FrmRoot.FrmNumber.FrmMode.RadioInteger.LongHelp = "Numbering with integers is taken into account.";
+FrmRoot.FrmNumber.FrmMode.RadioLetter.Title = "Letters";
+FrmRoot.FrmNumber.FrmMode.RadioLetter.LongHelp = "Numbering with letters is taken into account.";
+FrmRoot.FrmNumber.FrmMode.LbIntStart.Title = "開始 Number: ";
+FrmRoot.FrmNumber.FrmMode.StartNumber.LongHelp = "定義start number when numbering with integers is taken into account.";
+FrmRoot.FrmNumber.FrmMode.LbIntIncr.Title = "Increment: ";
+FrmRoot.FrmNumber.FrmMode.IncrNumber.LongHelp = "定義increment number when numbering with integers is taken into account.";
+
+FrmRoot.FrmNumber.FrmExisting.LbExisting.Title = "  Existing Numbers  ";
+FrmRoot.FrmNumber.FrmExisting.LbExisting.LongHelp = "定義 how to consider一個existing numbering when updating the Bill of Material.";
+FrmRoot.FrmNumber.FrmExisting.RadioKeep.Title = "Keep";
+FrmRoot.FrmNumber.FrmExisting.RadioKeep.LongHelp = "Keeps the existing numbering when updating the Bill of Material.";
+FrmRoot.FrmNumber.FrmExisting.RadioReplace.Title = "替換";
+FrmRoot.FrmNumber.FrmExisting.RadioReplace.LongHelp = "替換s the existing numbering when updating the Bill of Material.";
+
+FrmRoot.FrmTop.Title = "Column  ";
+FrmRoot.FrmTop.PushLeft.Title = "移動左側";
+FrmRoot.FrmTop.PushLeft.LongHelp = "移動s left the selected column.";
+FrmRoot.FrmTop.PushRight.Title = "移動右側t";
+FrmRoot.FrmTop.PushRight.LongHelp = "移動s right the selected column.";
+FrmRoot.FrmTop.PushHide.Title = "隱藏";
+FrmRoot.FrmTop.PushHide.LongHelp = "Hides the selected column.";
+FrmRoot.FrmTop.PushDisplay.Title = "顯示";
+FrmRoot.FrmTop.PushDisplay.LongHelp = "顯示the hided column selected in the combo box.";
+FrmRoot.FrmTop.ComboDisplay.LongHelp = "顯示the names of hided columns.";
+FrmRoot.FrmTop.PushAdd.Title = "增加";
+FrmRoot.FrmTop.PushAdd.LongHelp = "增加一個column from一個given name.";
+FrmRoot.FrmTop.CheckEditable.Title = " Editable";
+FrmRoot.FrmTop.CheckEditable.LongHelp = "Makes editable the added column to enter 用戶information.";
+FrmRoot.FrmTop.EditName.Title = "名稱 of Added: ";
+FrmRoot.FrmTop.EditName.LongHelp = "定義name of the column to add.";
+FrmRoot.FrmTop.PushAddUser.Title = "增加from 用戶Property";
+FrmRoot.FrmTop.PushAddUser.LongHelp = "增加一個column from一個given 用戶property.";
+FrmRoot.FrmTop.EditNameUser.LongHelp = "定義name of the 用戶property associated to the column to add.";
+FrmRoot.FrmTop.PushRename.Title = "重命名";
+FrmRoot.FrmTop.PushRename.LongHelp = "重命名s the selected column (only for added column).";
+FrmRoot.FrmTop.EditRename.LongHelp = "定義新名稱 of the selected column.";
+FrmRoot.FrmTop.PushDelete.Title = "刪除";
+FrmRoot.FrmTop.PushDelete.LongHelp =" 刪除the selected column (only for added column).";
+
+FrmRoot.FrmResults.Title = "Bill Of Material  ";
+FrmRoot.FrmResults.ListBOM.LongHelp = "顯示the contents of the Bill of Material.";
+
+FrmRoot.FrmBottom.PushAnalyze.Title = "保存As...";
+FrmRoot.FrmBottom.PushAnalyze.LongHelp = "選擇 the *.csv file to save the Bill of Material.";
+FrmRoot.FrmBottom.LbTotalPrice.Title = "Total Price: ";
+FrmRoot.FrmBottom.EditTotalPrice.LongHelp = "顯示the total price of the Bill of Material when defining unit prices.";
+
+RefProfileTitle="復制Reference 路徑";
+RefProfileCopy="First, select the path name of the Reference Profile to copy as Work Profile.\nSecond, select the path name of the Work Profile.";
+
+

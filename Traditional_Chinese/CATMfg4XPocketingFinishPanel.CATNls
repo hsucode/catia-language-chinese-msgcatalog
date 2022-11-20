@@ -1,0 +1,57 @@
+Title="精銑刀路";
+Title.LongHelp="指定操作中精銑刀路的參數。";
+
+// 3951 校正官方漢化 * MachiningMode *
+SideFinish="模式";
+SideFinish.LongHelp="指示是否要在型腔的側部和底部
+生成精銑刀路。
+可在操作的每層中執行側精銑，
+也可僅在操作的最后一層執行。";
+
+// 3951 校正官方漢化 * SideThickness *
+Thickness="側精銑厚度";
+Thickness.LongHelp="指定側精銑厚度。";
+
+// 3951 校正官方漢化 * BottomThicknessOnSideFinish *
+MfgBottomThicknessOnSideFinish="側精銑的底部厚度";
+MfgBottomThicknessOnSideFinish.LongHelp="指定操作結束時上一個側
+精銑刀路使用的底部厚度。";
+
+// 3951 校正官方漢化 * SideBottomThickness *
+SideBottomThickness="底部的側面厚度";
+SideBottomThickness.LongHelp="指定底部精銑刀路的側面厚度";
+
+// 3951 校正官方漢化 * BottomThickness *
+BottomThickness="底部精銑厚度";
+BottomThickness.LongHelp="指定底部精銑厚度。";
+
+// 3951 校正官方漢化 * SpringPath * 
+SpringPath="跳刀路徑";
+SpringPath.LongHelp="指示是否要在與上一個側精銑刀路相同的情況下
+在側面上生成跳刀路徑。
+跳刀路徑用于補償刀具
+的自然“跳刀”。";
+
+// 3951 校正官方漢化 * Cutter Profile Output  * 
+MfgOutputStyle="補償輸出";
+MfgOutputStyle.LongHelp="指定要如何在 NC 數據輸出中生成刀具補償指令：  
+
+無
+未計算任何補償
+
+2D 徑向頂端
+在與刀軸垂直的平面上計算補償，并在刀具側邊（左側或右側）激活補償。
+補償的半徑是刀具半徑。
+輸出是刀尖點 (XT，YT，ZT)。
+
+2D 徑向輪廓
+在與刀軸垂直的平面上計算補償，
+并在刀具側邊（左側或右側）激活補償。
+補償的半徑是刀具半徑。
+輸出是刀具輪廓點 (XP，YP，ZP)。";
+
+// 3951 校正官方漢化 * Nb Side Finish Path By Level *
+MfgNbSideFinishByLevel="每層的側精銑路徑數";
+MfgNbSideFinishByLevel.LongHelp="定義每層的側精銑路徑數";
+
+

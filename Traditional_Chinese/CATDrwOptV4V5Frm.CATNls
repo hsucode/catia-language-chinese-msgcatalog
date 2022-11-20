@@ -1,0 +1,59 @@
+// 3951 校正官方漢化=====================================================================================
+// 3951 校正官方漢化                                     CNEXT - CXRn
+// 3951 校正官方漢化                          COPYRIGHT DASSAULT SYSTEMES 1999
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 FILENAME    :    CATDrwOptV4V6
+// 3951 校正官方漢化 LOCATION    :    DraftingUI
+// 3951 校正官方漢化 AUTHOR      :    fgx
+// 3951 校正官方漢化 BUT         :    
+// 3951 校正官方漢化 DATE        :    09.09.1999
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 DESCRIPTION :    Tools/Option du Drafting - Onglet V4 -> V6
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 COMMENTS    :    
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 MODIFICATIONS     user  date        purpose
+// 3951 校正官方漢化    HISTORY        ----  ----        -------
+// 3951 校正官方漢化      01           fgx   18.11.1999  Ajout de ConvertDimensionAsGraphic
+// 3951 校正官方漢化		02			 dcf   27.06.2000  Ajout de ExplodeDitto
+// 3951 校正官方漢化=====================================================================================
+
+Title="V4->V6";
+
+frameConvertDimensionAsGraphic.HeaderFrame.Global.Title="尺寸和注釋轉換模式";
+frameConvertDimensionAsGraphic.HeaderFrame.Global.LongHelp="定義 V5 中轉換尺寸的方式。";
+frameConvertDimensionAsGraphic.IconAndOptionsFrame.OptionsFrame.checkConvertDimensionAsGraphic.Title="將尺寸轉換為圖形";
+frameConvertDimensionAsGraphic.IconAndOptionsFrame.OptionsFrame.checkConvertDimensionAsGraphic.LongHelp="將尺寸轉換為圖形
+可將尺寸轉換為簡單的圖形元素。";
+frameConvertDimensionAsGraphic.IconAndOptionsFrame.OptionsFrame.chkConvertBalloonAsGraphic.Title="將零件序號轉換為圖形";
+frameConvertDimensionAsGraphic.IconAndOptionsFrame.OptionsFrame.chkConvertBalloonAsGraphic.LongHelp="可將零件序號轉換為簡單的圖形元素。";
+frameConvertDimensionAsGraphic.IconAndOptionsFrame.OptionsFrame.chkConvertOtherAnnotAsGraphic.Title="將其他注釋轉換為圖形";
+frameConvertDimensionAsGraphic.IconAndOptionsFrame.OptionsFrame.chkConvertOtherAnnotAsGraphic.LongHelp="可將文本、GDT、基準、粗糙度轉換為簡單的圖形元素。";
+
+frameExplode.HeaderFrame.Global.Title="分解模式 ";
+frameExplode.IconAndOptionsFrame.OptionsFrame.chkExplodeDitto.Title="遷移到 V6 元素時分解副本";
+frameExplode.IconAndOptionsFrame.OptionsFrame.chkExplodeSymbolo.Title="遷移到 V6 元素時分解符號";
+
+frameBlinkRed.HeaderFrame.Global.Title="閃爍元素";
+frameBlinkRed.IconAndOptionsFrame.OptionsFrame.checkBlinkRed.Title="將閃爍元素作為紅色遷移";
+
+frameGVSXml.HeaderFrame.Global.Title="創成式視圖樣式";
+frameGVSXml.IconAndOptionsFrame.OptionsFrame.lbl.Title="默認創成式視圖樣式";
+frameGVSXml.IconAndOptionsFrame.OptionsFrame.chkGVSXml.LongHelp="為遷移視圖選擇默認的 xml 文件";
+
+frameGeom.HeaderFrame.Global.Title="導入幾何圖形 ";
+frameGeom.HeaderFrame.Global.LongHelp="2D 幾何圖形導入參數。";
+frameGeom.IconAndOptionsFrame.OptionsFrame._checkCenterEndPoints.Title="創建中心和終點";
+frameGeom.IconAndOptionsFrame.OptionsFrame._checkCenterEndPoints.LongHelp="創建中心和終點
+導入 2D 幾何圖形時，
+創建圓心和曲線終點。";
+
+frmDetailSheet.HeaderFrame.Global.Title="詳圖組織";
+frmDetailSheet.HeaderFrame.Global.LongHelp="詳圖組織";
+frmDetailSheet.IconAndOptionsFrame.OptionsFrame.chkAllDetailOneSheet.Title="遷移一個詳圖中的詳細信息和符號";
+frmDetailSheet.IconAndOptionsFrame.OptionsFrame.chkAllDetailOneSheet.LongHelp="遷移一個詳圖中的詳細信息和符號。";
+
+toolAnnotBold.HeaderFrame.Global.Title="注釋粗體屬性";
+toolAnnotBold.IconAndOptionsFrame.OptionsFrame.lblV4V5_LimitThickBold.Title="粗體屬性限制為 V4 線寬";
+toolAnnotBold.IconAndOptionsFrame.OptionsFrame.spnV4V5_LimitThickBold.LongHelp="超出此 V4 線寬，
+遷移將對注釋應用粗體屬性。";

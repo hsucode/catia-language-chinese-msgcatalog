@@ -1,0 +1,81 @@
+SetupRscAreaFrame.Title="設置數據表";
+
+FilterFrame.Title="顯示過濾器";
+FilterFrame.TableStatusLabel.Title="表狀態： ";
+
+CommandAreaFrame.Add.Title="新建";
+CommandAreaFrame.Add.Help="新建資源表";
+CommandAreaFrame.Add.ShortHelp="新建資源表";
+CommandAreaFrame.Add.LongHelp="新建與選定資源集標識關聯的資源表";
+CommandAreaFrame.Open.Title="打開";
+CommandAreaFrame.Open.Help="打開選定的資源表";
+CommandAreaFrame.Open.ShortHelp="打開選定的資源表";
+CommandAreaFrame.Copy.Title="復制";
+CommandAreaFrame.Copy.Help="復制選定的資源表";
+CommandAreaFrame.Copy.ShortHelp="復制選定的資源表";
+CommandAreaFrame.Delete.Title="刪除";
+CommandAreaFrame.Delete.Help="從數據庫中刪除選定的資源表";
+CommandAreaFrame.Delete.ShortHelp="從數據庫中刪除選定的資源表";
+CommandAreaFrame.Refresh.Title="刷新";
+CommandAreaFrame.Refresh.Help="刷新項目資源管理編輯器";
+CommandAreaFrame.Refresh.ShortHelp="刷新項目資源管理編輯器";
+CommandAreaFrame.Close.Title="關閉";
+CommandAreaFrame.Close.Help="關閉項目資源管理編輯器";
+CommandAreaFrame.Close.ShortHelp="關閉項目資源管理編輯器";
+
+// 3951 校正官方漢化 Filter Table Status combo
+TableStatus_All="<所有狀態>";
+TableStatus_Update="過期";
+TableStatus_Incomplete="未完成";
+TableStatus_Complete="完成";
+
+// 3951 校正官方漢化 Column headers
+Name="資源集標識/表名稱";
+Version="版本";
+Description="描述";
+
+// 3951 校正官方漢化 List View Help
+LVLoadTables="從數據庫中加載資源表";
+LVAddTable="新建資源表";
+LVOpenTable="編輯選定的資源表";
+LVUpgradeTable="升級選定的資源表...";
+LVCopyTable="復制選定的資源表";
+LVDeleteTable="從數據庫中刪除選定的資源表";
+LVEditTableName="重命名資源表";
+LVEditTableDescription="編輯資源表描述";
+LVHelp="有助于 '/p1'";
+
+// 3951 校正官方漢化 Errors
+AppName="資源集標識";
+TableName="表名稱";
+CellReadOnlyErrorMsg="'/p2' 的 '/p1' 為只讀且無法更改。";
+
+// 3951 校正官方漢化 Info
+Project="項目";
+Discipline="規定";
+UnboundResourceSetInfo="選定的 /p1：'/p2'\n\n某些資源集標識沒有綁定到選定 /p1 的表。\n    - 圖標 /p3：沒有綁定到 /p1 的表\n    - 圖標 /p4 ：表已正確綁定到 /p1\n";
+
+// 3951 校正官方漢化 Status Tooltip
+RscTableStatus_New.Message="狀態：新創建的資源表。";
+RscTableStatus_Incomplete.Message="狀態：未完成的表（某些必需項具有未分派的資源）。";
+RscTableStatus_Complete.Message="狀態：完成的表（所有必需項均具有已分派的資源）。";
+RscTableToUpgrade="必須對表進行升級，因為其格式已更改。\n有關更多詳細信息，請使用上下文菜單中的“升級...”命令。";
+
+RscAppId="標識符：/p1\n\n注意：此標識符是內部名稱，\n必須在參考 PRM 資源的 EKL 編寫\n的腳本中使用（例如，和 CreateSheet 函數一起）。";
+RscAppStatus_Empty.Message="狀態：未創建任何資源表。";
+RscAppStatus_Incomplete.Message="狀態：至少有一個表未完成。";
+RscAppStatus_Complete.Message="狀態：所有表均已完成。";
+
+// 3951 校正官方漢化 P&O and RscTable connections table
+POSRscTableDescription="P&O 和資源集設置表";
+CommandAreaFrame.POSRscTable.Title="P&&O <-> 資源集";
+CommandAreaFrame.POSRscTable.Help="P&O <-> 資源集設置";
+CommandAreaFrame.POSRscTable.ShortHelp="P&O 和資源集設置表";
+
+// 3951 校正官方漢化 RscSetRep deletion confirmation
+ConfirmDelete.Title="刪除";
+ConfirmDelete.Message="將刪除選定的 '/p' 表。\n此操作將在數據庫中執行，因此無法撤銷。\n\n是否要繼續？";
+
+EditSetupDataTable="編輯設置數據表";
+UpgradeSetupDataTable="升級設置數據表";
+

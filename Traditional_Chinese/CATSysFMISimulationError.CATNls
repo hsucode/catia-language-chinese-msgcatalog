@@ -1,0 +1,17 @@
+ExternalSimulationCallBack.Request="FMU 模擬模型回調";
+ExternalSimulationCallBack.Diagnotic="/P1";
+ExternalSimulationCallBack.Advice="/P1";
+
+DllNotLoaded.Request="FMU 文件出現錯誤";
+DllNotLoaded.Diagnotic="無法加載 Dll";
+DllNotLoaded.Advice="檢查 dll 一致性（依賴關系、平臺...） ";
+
+DllNotExist.Request="FMU 文件出現錯誤";
+DllNotExist.Diagnotic="在“/P1”平臺上找不到 Dll";
+DllNotExist.Advice="檢查 FMU 是否支持“/P1”平臺";
+
+MethodNotfound.Request="找不到 FMI 方法";
+MethodNotfound.Diagnotic="找不到 FMI 方法“/p1”";
+MethodNotfound.Advice="檢查方法“/P1”是否正常顯示。";
+
+

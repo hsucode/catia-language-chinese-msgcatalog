@@ -1,0 +1,86 @@
+// 3951 校正官方漢化 Error/ Warning messages
+NoPreDefPN="沒有設置預定義零件編號";
+PhysicalRefNotInDB="沒有找到對應預定義零件編號的物理參考";
+ConnectorPortMissing="物理形式上缺少設備連接器相應的端口";
+WirePortMissing="導體端點設備上缺少邏輯引腳相應的端口";
+ConnectorCxnForbidden="電氣規則不允許連接新的物理連接器和物理設備";
+CompatiblePortUsed="物理設備或物理設備連接器的所有兼容端口均已被使用";
+CompatiblePortMissing="在要連接的物理設備上找不到兼容端口";
+RoutableEndCompMissing="邏輯傳遞線路的 /P1 位置缺少邏輯連接器";
+
+// 3951 校正官方漢化 Info messages
+RoutablePortNotFoundWarning="連接不同。在物理連接器/接頭上沒有找到與邏輯端口名稱匹配的引腳。導體/導體組被直接連接到元素。";
+RoutableWrongPinWarning="連接不同。物理導體/導體組端點被連接到錯誤的引腳。在元素上找不到正確的引腳。";
+PhysicalWireRouteDeletedWarning="物理導體傳遞線路已被刪除。";
+ExtraPhysicalElemWarning="元素為物理形式，非邏輯形式。";
+PreDefPNDifferentWarning="物理零件編號不同于預定義的邏輯零件編號。";
+PositionDifferentWarning="物理和邏輯位置不同。";
+IncorrectConnectionErr="連接錯誤。物理元素被連接到錯誤的連接器。未找到正確的連接器。";
+BRDoesNotValidateAttrSync="某些屬性被修改。但是屬性同步驗證的業務規則禁止屬性同步。";
+NewComponentConnection="此部件將連接到 /P1。";
+
+// 3951 校正官方漢化 Error Messages
+RoutableWrongConnectorErr="物理導體/導體組端點被連接到錯誤的連接器。找不到正確的連接器。";
+
+NoPhysicalConnectorPortErr="在與邏輯連接器的名稱匹配的設備上沒有找到物理端口。";
+
+// 3951 校正官方漢化 Conductor routing Errors/ warnings
+LogicalRouteNotFoundErr="傳遞線路失敗：沒有找到邏輯傳遞線路";
+WireRouteNotFoundErr="傳遞線路失敗：未找到與定義的邏輯傳遞線路相符的導體物理傳遞線路";
+RoutingRefusedByBRErr="傳遞線路失敗：業務規則不允許此導體傳遞線路";
+RoutingFailedErr="傳遞線路失敗";
+
+RoutingWarningByBR="業務規則允許此導體傳遞線路，但有警告";
+RoutingSuccessfulWithBR="業務規則允許此導體傳遞線路";
+RoutingSuccessful="成功傳遞導體線路";
+
+// 3951 校正官方漢化 Other messsages
+NewVsOldPN="新零件編號 = /P1；舊零件編號 = /P2；";
+NewVsOldPos="新位置 = \n/P1；舊位置 = \n/P2；";
+NewVsOldInstName="邏輯實例名稱: = /P1；物理實例名稱 = /P2；";
+NewVsOldAttr="/P1 = /P2（舊值 = /P3）；";
+NewVsOldFromComp="源連接器：新 = /P1；\n舊 = /P2；";
+NewVsOldFromPin="源引腳：新 = /P1；舊 = /P2；";
+NewVsOldToComp="目標連接器：新 = /P1；舊 = /P2；";
+NewVsOldToPin="目標引腳：新 = /P1；舊 = /P2；";
+NewPathways="已創建的路徑： ";
+ModifiedPathways="已修改的路徑： ";
+NewPathwaysAnalysis="要創建的路徑： ";
+ModifiedPathwaysAnalysis="要修改的路徑： ";
+FromPathwaySegments=" (邏輯路徑段：/P1)";
+NbBranchPoints="要創建的分支點數： ";
+NewCompPosition="實例化部件的位置： ";
+
+L2P_ComputePathwayAttributes="由業務規則計算的分支屬性(嚴重性 /P1)：松弛 = /P2、彎曲半徑 = /P3、彎曲半徑比率 = /P4、彎曲半徑比率模式 = /P5";
+L2P_ComputePathwaySegmentAttributes="由業務規則計算的段屬性(嚴重性 /P1)：類別 = /P2、直徑 = /P3";
+L2P_ComputeSegmentConnectionPtOfDevice="由業務規則計算的段連接點 /P1(嚴重性 /P2)";
+L2P_ComputeSegmentConnectionPtOfDeviceFAILED="無法通過業務規則計算段連接點(嚴重性 /P2)";
+
+TRUE="真";
+FALSE="假";
+New="新建 ";
+Existing="現有 ";
+
+BRComputedPartNumNotFound="沒有找到用于計算零件編號的業務規則";
+RefComputedPartNumNotFound="在數據庫內沒有找到由業務規則計算的帶零件編號的物理參考";
+EquipmentFatherNotFound="設備所處的物理產品未知。未提供業務規則或計算聚集產品失敗";
+BusinessRuleResultsTitle="業務規則結果：";
+
+ElementSynchronized="該元素已被同步。";
+ForbiddenByBR="業務規則禁止同步該元素。";
+CreateComp="將以物理形式創建 /P1 的新實例。";
+CreateNoPartNum="將以物理形式創建元素，但是未設置預定義零件編號，并無法由業務規則計算。";
+CreateNoRef="將以物理形式創建元素，但是在數據庫中沒有找到預定義零件編號 /P1 相應的物理參考。";
+CreateNoParent="將要創建 /P1 的新實例，但是聚集物理參考未知。";
+CreateNoPartNumAndParent="將要創建元素，但是預定義零件編號和聚集物理參考未知。";
+CreateNoRefAndParent="將要創建元素，但是要實例化的物理參考和聚集物理參考未知。";
+ReplaceNoRef="已修改預定義零件編號，但是在數據庫中沒有找到新的預定義零件編號對應的物理參考。";
+ModifyElem="將使用邏輯信息修改物理元素。";
+UnknownStatus="元素的同步狀態未知。";
+CreateElement="將以物理形式創建類型為 /P1 的元素。";
+GeoHarnessDummElem="物理電氣幾何體鏈接到邏輯 /P1 對應的物理項，并聚集幾何體連接器和電氣分支幾何體。";
+HarnessBundleDummElem="物理電氣分支幾何體聚集分支。";
+CreateNoPort="沒有找到物理形式并具備匹配的名稱 /P 的端口。";
+CreateRouteCompMissing="將要創建物理傳遞線路，但是缺少其中一個端點連接器。";
+DeleteLastBranchNotPossible="該分支沒有任何對應的邏輯路徑段，但是它是電氣分支幾何體的最后一部分，因此無法刪除";
+DeleteBranch="該分支沒有任何對應的邏輯路徑段，因此它將被刪除";

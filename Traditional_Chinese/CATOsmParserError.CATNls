@@ -1,0 +1,159 @@
+
+OSMFEAT_ARGUMENT_ERROR="[E] OSM-CVT：'/p' 選項后需要一個參數。";
+OSMFEAT_SYNTAX_ERROR="[E] OSM-CVT：分析命令行時出現語法錯誤（無效的選項 '/p'）。請使用 '-help' 選項獲取有關命令行語法的詳細信息。";
+OSMFEAT_RIGHTS_ERROR="[E] OSM-CVT：權限不足，拒絕訪問。";
+OSMFEAT_CREATION_ERROR="[E] OSM-CVT：無法創建目錄 '/p'。";
+OSMFEAT_AUTHORIZATION_ERROR="[E] OSM-CVT：未授權訪問目錄 '/p'。";
+OSMFEAT_GENERATION_ERROR="[E] OSM-CVT：無法生成目錄 '/p'。";
+OSMFEAT_CLIENT_ID_ERROR="[E] OSM-CVT：無法為目錄 '/p' 設置客戶端標識。";
+OSMFEAT_SAVE_ERROR="[E] OSM-CVT：無法將目錄 '/p1' 另存為 '/p2'。";
+OSMFEAT_OUTPUTDIR_ACCESS_ERROR="[E] OSM-CVT：無法訪問輸出目錄 '/p'。";
+OSMFEAT_GRAPHICPATH_ERROR="[E] OSM-CVT：目錄 '/p' 已存在于 'CATGraphicPath' 中。";
+OSMFEAT_OUTPUTDIR_CAT_ERROR="[E] OSM-CVT：目錄 '/p1' 已存在于輸出目錄 '/p2' 中。";
+OSMFEAT_OUTPUTDIR_OSM_ERROR="[E] OSM-CVT：OSM 文件 '/p1' 已存在于輸出目錄 '/p2' 中。";
+OSMFEAT_TEMPLATE_NOT_FOUND_ERROR="[E] OSM-CVT：找不到模板文件 '/p.osm'。";
+OSMFEAT_TEMPLATE_OPEN_ERROR="[E] OSM-CVT：無法打開模板文件 '/p'。";
+OSMFEAT_OSM_OPEN_ERROR="[E] OSM-CVT：無法打開 OSM 文件 '/p'。";
+OSMFEAT_NOT_IN_GRAPHICPATH_ERROR="[E] OSM-CVT：'CATGraphicPath' 中找不到目錄 '/p'。";
+OSMFEAT_OSMDIR_ACCESS_ERROR="[E] OSM-CVT：無法訪問 OSM 文件目錄 '/p'。";
+OSMFEAT_OSM_NOT_FOUND_ERROR="[E] OSM-CVT：在目錄 '/p2' 中找不到 OSM 文件 '/p1'。";
+OSMFEAT_OSM_NOT_READABLE_ERROR="[E] OSM-CVT：OSM 文件 '/p' 不可讀取。";
+OSMFEAT_UPGRADE_ERROR="[E] OSM-CVT：無法升級目錄 '/p'。";
+OSMFEAT_UNIDENTIFIED_ERROR="[E] OSM-CVT：發生未能識別的錯誤。";
+OSMFEAT_CLIENT_ID_REQUIRED_ERROR="[E] OSM-CVT：需要客戶端標識符（使用 '-with-client-id' 選項）。";
+OSMFEAT_OLD_SYNTAX_WARNING="[W] OSM-CVT：您正在嘗試使用命令行界面的舊語法。請使用 '-help' 選項獲取有關新語法的詳細信息。";
+
+OSMFEAT_CATALOG_NAME_EXTENSION_ERROR="[E] OSM-CVT：'-catalog-name' 選項后需要有擴展名為 '.feat' 或 '.CATfct' 的文件（'/p' 不是目錄文件）。";
+OSMFEAT_CATALOG_NAME_FILENAME_ERROR="[E] OSM-CVT：'-catalog-name' 選項后需要有文件名（'/p' 是文件路徑，而非文件名）。";
+OSMFEAT_WITH_OSM_EXTENSION_ERROR="[E] OSM-CVT：'-with-osm' 選項后需要有擴展名為 '.osm' 的文件（'/p' 不是 OSM 文件）。";
+OSMFEAT_WITH_OSM_PATH_ERROR="[E] OSM-CVT：'-with-osm' 選項后需要有文件路徑（'/p' 是文件名，而非文件路徑）。";
+OSMFEAT_AS_EXTENSION_ERROR="[E] OSM-CVT：'-as' 選項后需要有擴展名為 '.osm' 的文件（'/p' 不是 OSM 文件）。";
+OSMFEAT_AS_FILENAME_ERROR="[E] OSM-CVT：'-as' 選項后需要有文件名（'/p' 是文件路徑，不是文件名）。";
+
+OSMFEAT_CATALOG_NAME_REQUIRED_ERROR="[E] OSM-CVT：所有操作均需要 '-catalog-name'。";
+OSMFEAT_CATALOG_NOT_READABLE_ERROR="[E] OSM-CVT：目錄 '/p' 不可讀取。";
+
+OSMFEAT_PARSE_ERROR="[E] OSM-CVT：解析 OSM 文件 '/p' 時出現語法錯誤。";
+
+CATFCTEDITORASSISTANT_HELP="\n",
+"用法：\n",
+"\n",
+"CATfctEditorAssistant -create-new-catalog -catalog-name <name_of_catalog> -with-client-id <id> [-author <name>] [-comment <comment>] [-using-template <template>] [-into-directory <output_path>] \n",
+"CATfctEditorAssistant -update-catalog -catalog-name <name_of_catalog> -with-client-id <id> -with-osm <path_of_osm> [-comment <comment>] [-into-directory <output_path>] \n",
+"CATfctEditorAssistant -describe-as-osm -catalog-name <name_of_catalog> -with-client-id <id> [-in-version <level>] -as <name_of_osm> [-into-directory <output_path>] \n",
+"CATfctEditorAssistant -simulate-catalog-update -catalog-name <name_of_catalog> -with-client-id <id> -in-version <level> -with-osm <path_of_osm> [-into-directory <output_path>] \n",
+"CATfctEditorAssistant -help \n",
+"\n",
+"其中 <name_of_xxx> 表示文件名及其擴展名，而非路徑\n",
+" 而 <path_of_xxx> 表示文件路徑。\n",
+"\n",
+"詳細信息：\n",
+"\n",
+"   -create-new-catalog：新建空目錄及其關聯的 osm 文件。\n",
+"\n",
+"     -catalog-name：（必填）指定要創建的新目錄的名稱。\n",
+"     -with-client-id：（必填）設置客戶端標識密鑰。\n",
+"     -author：在歷史記錄中指定作者的名稱。\n",
+"     -comment：將備注添加到歷史記錄中。\n",
+"     -using-template：使用其他模板（默認為標準模板）。\n",
+"     -into-directory：指示在其中存儲輸出文件的輸出目錄。\n",
+"\n",
+"   -update-catalog：使用 osm 文件更新現有目錄。\n",
+"\n",
+"     -catalog-name：（必填）指定要更新的目錄的名稱。\n",
+"     -with-client-id：（必填）提供客戶端標識密鑰。\n",
+"     -with-osm：（必填）指定用于更新的 osm 文件的路徑。\n",
+"     -comment：將備注添加到歷史記錄。\n",
+"     -into-directory：指示在其中存儲輸出目錄的輸出目錄。\n",
+"\n",
+"   -describe-as-osm：通過生成其關聯的 osm 文件來描述目錄。\n",
+"\n",
+"     -catalog-name：（必填）：指定要描述的目錄的名稱。\n",
+"     -with-client-id：（必填）提供客戶端標識密鑰。\n",
+"     -in-version：指示要在其中執行轉儲的版本（V5 或 V6）。\n",
+"     -as：（必填）指示要生成的包含目錄描述的 osm 文件。\n",
+"     -into-directory：指示在其中存儲輸出 osm 文件的輸出目錄。\n",
+"\n",
+"   -simulate-catalog-update：模擬目錄更新。\n",
+"\n",
+"     -catalog-name：（必填）指示要模擬的目錄的名稱。\n",
+"     -with-client-id：（必填）提供客戶端標識密鑰。\n",
+"     -in-version：（必填）指示要在其中執行模擬的版本（V5 或 V6）。\n",
+"     -with-osm：（必填）指定用于模擬的 osm 文件的路徑。\n",
+"     -into-directory：指示在其中存儲輸出 osm 文件（擴展名為 .V#osm）的輸出目錄。\n",
+"\n",
+"注釋：\n",
+"\n",
+" - 目錄的擴展名為 '.CATfct'。\n",
+" - OSM 文件的擴展名為 '.osm'。\n",
+" - 所有輸入目錄必須位于 'CATGraphicPath' 連接中。";
+
+OSMFEAT_HELP="\n",
+"用法：\n",
+"\n",
+"osmfeat -create-new-catalog -catalog-name <name_of_catalog> [-with-client-id <id>] [-author <name>] [-comment <comment>] [-using-template <template>] [-into-directory <output_path>] \n",
+"osmfeat -update-catalog -catalog-name <name_of_catalog> [-with-client-id <id>] -with-osm <path_of_osm> [-comment <comment>] [-into-directory <output_path>] \n",
+"osmfeat -describe-as-osm -catalog-name <name_of_catalog> [-with-client-id <id>] [-in-version <level>] -as <name_of_osm> [-into-directory <output_path>] \n",
+"osmfeat -simulate-catalog-update -catalog-name <name_of_catalog> [-with-client-id <id>] -in-version <level> -with-osm <path_of_osm> [-into-directory <output_path>] \n",
+"osmfeat -help \n",
+"\n",
+"其中 <name_of_xxx> 表示文件名及其擴展名，而非路徑\n",
+" 而<path_of_xxx> 表示文件路徑。\n",
+"\n",
+"詳細信息：\n",
+"\n",
+"   -create-new-catalog：新建空目錄及其關聯的 osm 文件。\n",
+"\n",
+"     -catalog-name：（必填）指定要創建的新目錄的名稱。\n",
+"     -with-client-id：設置客戶端標識密鑰。\n",
+"     -author：在歷史記錄中指定作者的名稱。\n",
+"     -comment：將備注添加到歷史記錄。\n",
+"     -using-template：使用其他模板（默認為標準模板）。\n",
+"     -into-directory：指定在其中存儲輸出文件的輸出目錄。\n",
+"\n",
+"   -update-catalog：使用 osm 文件更新現有目錄。\n",
+"\n",
+"     -catalog-name：（必填）指定要更新的目錄的名稱。\n",
+"     -with-client-id：提供客戶端標識密鑰。\n",
+"     -with-osm：（必填）指定用于更新的 osm 文件的路徑。\n",
+"     -comment：將備注添加到歷史記錄。\n",
+"     -into-directory：指示在其中存儲輸出目錄的輸出目錄。\n",
+"\n",
+"   -describe-as-osm：通過生成其關聯的 osm 文件來生成目錄。\n",
+"\n",
+"     -catalog-name：（必填）指定要描述的目錄的名稱。\n",
+"     -with-client-id：提供客戶端標識密鑰。\n",
+"     -in-version：指示要在其中執行轉儲的版本（V5 或 V6）。\n",
+"     -as：（必填）指示要生成的 osm 文件。\n",
+"     -into-directory：指示在其中存儲輸出 osm 文件的輸出目錄。\n",
+"\n",
+"   -simulate-catalog-update：模擬目錄更新。\n",
+"\n",
+"     -catalog-name：（必填）指定要模擬的目錄的名稱。\n",
+"     -with-client-id：提供客戶端標識密鑰。\n",
+"     -in-version：（必填）指定要在其中執行模擬的版本（V5 或 V6）。\n",
+"     -with-osm：（必填）指定用于模擬的 osm 文件的路徑。\n",
+"     -into-directory            ：指示要在其中存儲輸出 osm 文件（擴展名為 .V#osm）的輸出路徑。\n",
+"\n",
+"注釋：\n",
+"\n",
+" - 目錄的擴展名為 '.feat' (DS) 或 '.CATfct' (CAA)。\n",
+" - OSM 文件的擴展名為 '.osm'。\n",
+" - 所有輸入目錄必須位于 'CATGraphicPath' 連接中。";
+
+OSMFEAT_HELP_ADMIN="\n",
+"osmfeat -admin [-no-history] [-format-ducat] -forge-catalog -catalog-name <name_of_catalog> [-with-client-id <id>] -with-osm <path_of_osm> [-into-directory <output_path>] \n",
+"osmfeat -admin [-no-mlc-version] [-no-history] [-format-ducat] -create-new-catalog ... \n",
+"osmfeat -admin [-no-mlc-version] [-no-history] [-format-ducat] -describe-as-osm ... \n",
+"osmfeat -admin [-no-mlc-version] [-no-history] [-format-ducat] -update-catalog ... \n",
+"osmfeat -admin [-no-mlc-version] [-no-history] [-format-ducat] -simulate-catalog-update ... \n",
+"osmfeat -admin -help \n",
+"\n",
+" -admin：以管理員身份執行操作（僅限認可用戶）。\n",
+"  -no-mlc-version：移除指示多級別兼容性的編號。 \n",
+"  -no-history：生成不帶歷史記錄的 osm 文件。 \n",
+"  -format-ducat：生成包含適用于 DUCAT 進程的更多數據的 osm 文件。 \n",
+"  -forge-catalog：從現有 osm 文件中創建目錄。 \n",
+"\n",
+"所有其他選項（以上提及的 '...'）在管理模式中仍然可用。鍵入 'osmfeat -help' 獲取有關這些選項的詳細信息。";
+

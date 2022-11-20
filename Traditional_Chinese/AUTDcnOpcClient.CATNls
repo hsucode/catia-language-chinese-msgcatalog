@@ -1,0 +1,123 @@
+// 3951 校正官方漢化 DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE
+
+OpcClientError="OPC 客戶端錯誤";
+OPC="OPC";
+
+// 3951 校正官方漢化 OPC type error
+OPCPartialSuccess="部分成功";
+OPCInformation="信息";
+OPCWarning="警告";
+OPCError="錯誤";
+
+// 3951 校正官方漢化 Miscellaneous message
+OPCUnspecifiedError="未指定的錯誤";
+GetProgIdFromCLSIDFailure="無法從 CLSID 檢索 OPC 服務器 ProgID";
+GetProgIdFromCLSIDFailureAdv="檢查注冊表基礎";
+OPCDA2NoCompliancy="沒有任何與 OPC Data Access 2.0 兼容的 OPC 服務器";
+OPCDA2NoCompliancyAdv="請檢查 OPC 服務器是否與 OPC Data Access 2.0 兼容";
+OPCSrvItfFailure="無法檢索所有需要的 OPC 服務器接口";
+OPCSrvItfFailureAdvice="檢查 OPC 核心部件或 OPC 服務器設置";
+OPCInvalidItem="項目 '/p' 無效";
+AddOPCItemFailure="無法將項目添加到 OPC 組";
+OPCInvalidItemAdvice="通過瀏覽 OPC 服務器檢查 OPC 項目標識符：'/p'";
+OPCRemoveGrpFailure="無法移除 OPC 組";
+OPCCreateGrpFailure="無法創建 OPC 組";
+OPCCreateGrpFailureAdv="檢查 OPC 服務器設置";
+RetrieveOPCItfFailure="無法查詢 '/p' 接口";
+RetrieveOPCItfFailureAdv="檢查 OPC 服務器設置";
+OPCRevisedUpdateRate="OPC 服務器提供的最近更新率設置為 /p 毫秒";
+OPCAdviseDCFailureAdv="檢查 OPC 服務器 '/p' 的可用性：軟件設置、許可和用戶訪問權限";
+OPCUnadviseDCFailure="無法取消建議 OPC 數據回調";
+
+// 3951 校正官方漢化 OPC browsing message
+OPCBrowserFailure="無法在 OPC 服務器 '/p' 上瀏覽項目標識符";
+OPCBrowseSrvAddrQueryOrg="無法從 OPC 服務器 '/p' 中獲取地址空間組織";
+OPCBrowseSrvAddrGetItemID="無法為當前字符串獲取項目標識符：'/p'";
+OPCBrowserMoveUpError="無法在當前層次空間中上移";
+OPCBrowserMoveDownError="無法在當前層次空間中下移";
+OPCBrowseItemId="無法從 OPC 服務器地址空間中獲取 OPC 項目標識符";
+IEnumStringNext="無法從 OPC 服務器瀏覽器中獲取下一個字符串";
+IEnumStringReset="無法從 OPC 服務器瀏覽器中重置字符串枚舉";
+
+// 3951 校正官方漢化 OPC Read/Write message
+OPCSyncReadFailure="無法讀取 OPC 標記值";
+OPCSyncWriteFailure="無法寫入 OPC 標記值";
+OPCASyncWriteFailure="無法寫入 OPC 標記值";
+OPCReadItemFailure="針對項目 '/p' 的讀取操作失敗";
+OPCWriteItemFailure="針對項目 '/p' 的寫入操作失敗";
+
+// 3951 校正官方漢化 Formatted message for OPC event
+AUTOPCEventValidateTagMsg="以下 OPC 項無效：/p1";
+AUTOPCEventConcatenateMsg="/p1/p2";
+AUTOPCEventSimualtionMsg="/p1：/p2\n";
+AUTOPCEventtAuthoringMsg="/p1 /p2：/p3：/p4\n";
+AUTOPCEventCnxFailure="OPC 連接失敗！\n/p1";
+AUTOPCEventSrvBrowsingFailure="OPC 服務器瀏覽失敗！\n/p1";
+
+// 3951 校正官方漢化 COM-DCOM Error preventing OPC connection
+OPCHostNotReachable="主機 '/p' 不可用或無法通過網絡訪問";
+OPCHostNotReachableAdv="檢查主機的以太網連接性和可用性";
+OPCServerIsNotLicensedForUse="/p";
+OPCServerIsNotLicensedForUseAdv="檢查 OPC 服務器的許可證";
+OPCBadUserAccesRight="連接到 OPC 服務器的用戶訪問權限不正確";
+OPCBadUserAccesRightAdv="通過 dcomcnfg.exe 修改您的訪問權限";
+OPCUserLoginFailure="/p";
+OPCUserLoginFailureAdv="通過 dcomcnfg.exe 修改您的訪問權限";
+OPCClasNotRegistered="/p";
+OPCClasNotRegisteredAdv="在主機 '/p' 上檢查 OPC 核心部件或 OPC 服務器設置";
+OPCNoInterface="無法從主機 '/p' 中檢索 OPC 服務器接口";
+OPCNoInterfaceAdv="在主機 '/p' 上檢查 OPC 核心部件或 OPC 服務器設置";
+OPCUnknownError="未知 COM/DCOM 錯誤";
+OPCUnknownErrorAdv="請聯系您的支持團隊";
+
+// 3951 校正官方漢化 COM-DCOM rised message in simulation error management
+COM_ERROR.Request="";
+COM_ERROR.Diagnostic="/p1";
+COM_ERROR.Advice="/p1";
+
+// 3951 校正官方漢化 OPC rised message in simulation error management
+OPC_ERROR.Request="";
+OPC_ERROR.Diagnostic="/p1";
+OPC_ERROR.Advice="/p1";
+
+// 3951 校正官方漢化 Server's status message
+OPCServerLocationFailure="無法在主機 '/p2' 上定位 OPC 服務器 '/p1'";
+OPCServerLocationFailureAdv="通過瀏覽命令檢查 OPC 服務器的可用性";
+OPCServerStatusFailure="IOPCServer::GetStatus";
+OPCServerStatus="/p1 — 版本 /p2./p3./p4";
+OPC_STATUS_RUNNING="服務器正在正常運行";
+OPC_STATUS_FAILED="服務器中發生供應商特定致命錯誤。該服務器不再可用";
+OPC_STATUS_NOCONFIG="服務器正在運行，但未加載配置信息，因此無法正常工作";
+OPC_STATUS_SUSPENDED="服務器已通過某些供應商特定方法臨時暫停，并且不會獲取或發送數據";
+OPC_STATUS_TEST="服務器處于測試模式";
+
+// 3951 校正官方漢化 IO description message
+AUTOPCIN="輸入";
+AUTOPCOUT="輸出";
+AUTOPCINOUT="輸入/輸出";
+
+// 3951 校正官方漢化 Local OPC error message
+OPC_E_INVALIDHANDLE="此句柄的值無效";
+OPC_E_BADTYPE="服務器無法在指定格式和/或請求的數據類型與標準數據類型之間轉換數據";
+OPC_E_PUBLIC="無法在公共組上執行請求的操作";
+OPC_E_BADRIGHTS="項目的訪問權限不允許此操作";
+OPC_E_UNKNOWNITEMID="未在服務器地址空間中定義項目 ID 或其不再存在于服務器地址空間中";
+OPC_E_INVALIDITEMID="項目 ID 不符合服務器的語法";
+OPC_E_INVALIDFILTER="過濾字符串無效";
+OPC_E_UNKNOWNPATH="項目的訪問路徑對于服務器未知";
+OPC_E_RANGE="該值超出范圍";
+OPC_E_DUPLICATENAME="不允許重復名稱";
+OPC_S_UNSUPPORTEDRATE="服務器不支持請求的數據速率，但將使用最近的可用速率";
+OPC_S_CLAMP="已接受傳遞到寫入的值，但已規定輸出范圍";
+OPC_S_INUSE="無法執行此操作，因為對象正被參考";
+OPC_E_INVALIDCONFIGFILE="服務器配置文件的格式無效";
+OPC_E_NOTFOUND="未找到請求的對象（例如，公共組）";
+OPC_E_INVALID_PID="指定的特性 ID 對項目無效";
+OPC_E_DEADBANDNOTSET="尚未為此項目設置項目死區";
+OPC_E_DEADBANDNOTSUPPORTED="項目不支持死區";
+OPC_E_NOBUFFERING="服務器不支持緩沖以快于組更新率的速率收集的數據項";
+OPC_E_INVALIDCONTINUATIONPOINT="連續點無效";
+OPC_S_DATAQUEUEOVERFLOW="由于服務器的緩沖區已達到其限制且必須清除最舊的數據，并不會返回所有檢測到的更改";
+OPC_E_RATENOTSET="沒有為指定項設置的取樣率";
+OPC_E_NOTSUPPORTED="服務器不支持寫入質量和/或時間戳";

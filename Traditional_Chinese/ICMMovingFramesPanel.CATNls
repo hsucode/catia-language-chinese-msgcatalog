@@ -1,0 +1,41 @@
+TabPageMovingFrames.Title="移動框架";
+//Type
+FrameType.Title="類型";
+FrameType.LongHelp="確定要沿引導線移動的局部坐標系。";
+ComboType.LongHelp="以下移動框架類型可用：
+與平面平行：局部坐標系與當前工作平面平行移動。
+引導線徑向：引導曲線的切線確定局部 z 軸，局部 y 軸的指定方向。
+第二曲線：用此設置可沿第二曲線拖動局部坐標系的 x 軸。
+曲面法線：需要能夠將引導曲線的垂直線丟放到其上的曲面。";
+//Plane
+FramePlane.Title="平面";
+FramePlane.LongHelp="如果設置了此移動框架類型，則選擇框平面變為激活狀態。 ";
+//Curve
+FrameCurve.Title="對齊曲線";
+FrameCurve.LongHelp="如果設置了此移動框架類型，則選擇框對齊曲線變為激活狀態。";
+//Surface
+FrameSurface.Title="對齊曲面";
+FrameSurface.LongHelp="如果設置了此移動框架類型，則選擇框對齊曲面變為激活狀態。";
+//Spine
+FrameSpine.Title="單獨脊線";
+FrameSpine.LongHelp="可為移動框架定義另一條曲線作為引導曲線：
+單個：選擇任何曲線作為引導曲線。
+引導線：將使用選作引導線的曲線。";
+//Priority
+FramePriority.Title="優先級";
+FramePriority.LongHelp="可精確地確定移動框架要使用局部坐標系（切線或方向）的哪個軸。";
+CheckButtonDirection.Title="方向： ";
+CheckButtonDirection.LongHelp="定義方向。可使用上下文菜單。";
+CheckButtonDirection.ShortHelp="顯示方向關閉/開啟";
+
+Combo.ParallelToPlane="與平面平行";
+Combo.RadialToSpine="引導線徑向";
+Combo.2ndCurve="第二曲線";
+Combo.NormalToSurface="曲面法線";
+Combo.Individual="單個";
+Combo.Guide1="引導線";
+Combo.Guide2="引導線 2";
+Combo.Edge1="邊線 1";
+Combo.Edge2="邊線 2";
+Combo.Tangent="切線";
+Combo.Direction="方向";

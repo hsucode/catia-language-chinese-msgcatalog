@@ -1,0 +1,143 @@
+DialogBoxTitle="樣式圓角";
+
+CheckButtonCurve2.Title="";
+CheckButtonCurve2.LongHelp="關閉：
+僅可選擇曲線 1。
+將在曲線兩端之間創建樣式圓角。
+開啟：
+可選擇曲線 1 和曲線 2。";
+CheckButtonCurve2.ShortHelp="激活選擇兩條曲線。";
+
+LabelCurve1.Title="曲線 1： ";
+LabelCurve1.LongHelp="選擇曲線 1 以創建樣式圓角。";
+LabelCurve1.ShortHelp="選擇曲線 1";
+
+CheckTrimCurve1.LongHelp="將在創建的樣式圓角的相應終點處修剪輸入曲線 1。
+原始輸入曲線被置于不顯示模式。";
+CheckTrimCurve1.ShortHelp="修剪曲線 1";
+
+LabelCurve2.Title="曲線 2： ";
+LabelCurve2.LongHelp="選擇曲線 2 以創建樣式圓角。";
+LabelCurve2.ShortHelp="選擇曲線 2";
+
+CheckTrimCurve2.LongHelp="將在創建的樣式圓角的相應終點處修剪輸入曲線 2。
+原始輸入曲線被置于不顯示模式。";
+CheckTrimCurve2.ShortHelp="修剪曲線 2";
+
+FrameRadius.Title="半徑";
+FrameRadius.LongHelp="由半徑定義樣式圓角到選定曲線的引入點。";
+FrameRadius.ShortHelp="定義樣式圓角的半徑";
+
+FrameOptionsCurve1.Title="曲線 1 選項";
+FrameOptionsCurve1.LongHelp="選擇要在其間創建樣式圓角的曲線。";
+FrameOptionsCurve2.Title="曲線 2 選項";
+FrameOptionsCurve2.LongHelp="選擇要在其間創建樣式圓角的曲線。";
+
+LabelContinuity1.Title="連續： ";
+LabelContinuity1.LongHelp="定義樣式圓角和原始曲線之間的連續。";
+LabelContinuity1.ShortHelp="定義連續";
+
+LabelContinuity2.Title="連續： ";
+LabelContinuity2.LongHelp="定義樣式圓角和原始曲線之間的連續。";
+LabelContinuity2.ShortHelp="定義連續";
+
+FrameCurveType.Title="曲線類型";
+FrameCurveType.LongHelp="樣式圓角的圓角曲線可為 
+- 弧。形的所有參數均被禁用，并且不可修改弧。半徑對整條曲線有效。
+- 引入點處連續為 G1、G2 或 G3 的貝塞爾曲線，
+  對于 G2，可指定引入半徑。
+  樣式圓角具備固定形，因此半徑還定義中心半徑。
+- 引入點處連續為 G1、G2 或 G3 的貝塞爾曲線，
+  對于 G2，可指定引入半徑。
+  樣式圓角具備可通過中心半徑、形式系數或中心點操作器控制的可變形。
+半徑始終定義引入點。";
+
+RadioButtonArc.LongHelp="樣式圓角是具備指定半徑的弧。";
+RadioButtonArc.ShortHelp="弧";
+
+RadioButtonBlend.LongHelp="樣式圓角是具備指定半徑作為中心半徑的橋接。";
+RadioButtonBlend.ShortHelp="橋接";
+
+RadioButtonShapeBlend.LongHelp="樣式圓角是具備指定形的橋接。";
+RadioButtonShapeBlend.ShortHelp="形橋接";
+
+Continuity1.Button_G1.LongHelp="將在引入點創建具備 G1 連續的貝塞爾曲線。
+由半徑定義引入點。可使用中心半徑和形式系數修改樣式圓角。
+更改中心半徑或形式系數時會保留 G1。";
+Continuity1.Button_G1.ShortHelp="貝塞爾曲線 G1";
+
+Continuity1.Button_G2.LongHelp="將在引入點創建具備 G2 連續的貝塞爾曲線。
+由半徑定義引入點。可使用中心半徑和形式系數修改樣式圓角。
+更改中心半徑或形式系數時會保留 G2。丟失 G2 時可修改引入半徑。";
+Continuity1.Button_G2.ShortHelp="貝塞爾曲線 G2";
+
+Continuity1.Button_G3.LongHelp="將在引入點創建具備 G3 連續的貝塞爾曲線。
+由半徑定義引入點。可使用中心半徑和形式系數修改樣式圓角。
+更改中心半徑或形式系數時會保留 G3。";
+Continuity1.Button_G3.ShortHelp="貝塞爾曲線 G3";
+
+Continuity2.Button_G1.LongHelp="將在引入點創建具備 G1 連續的貝塞爾曲線。
+由半徑定義引入點。可使用中心半徑和形式系數修改樣式圓角。
+更改中心半徑或形式系數時會保留 G1。";
+Continuity2.Button_G1.ShortHelp="貝塞爾曲線 G1";
+
+Continuity2.Button_G2.LongHelp="將在引入點創建具備 G2 連續的貝塞爾曲線。
+由半徑定義引入點。可使用中心半徑和形式系數修改樣式圓角。
+更改中心半徑或形式系數時會保留 G2。丟失 G2 時可修改引入半徑。";
+Continuity2.Button_G2.ShortHelp="貝塞爾曲線 G2";
+
+Continuity2.Button_G3.LongHelp="將在引入點創建具備 G3 連續的貝塞爾曲線。
+由半徑定義引入點。可使用中心半徑和形式系數修改樣式圓角。
+更改中心半徑或形式系數時會保留 G3。";
+Continuity2.Button_G3.ShortHelp="貝塞爾曲線 G3";
+
+FrameSupport.Title="支持面";
+FrameSupport.LongHelp="可根據支持元素創建結果。同時可將結果在法線方向上投影到支持面。";
+
+CheckProjection.Title="投影";
+CheckProjection.LongHelp="選作支持面的曲面或平面也可用作投影庫。";
+CheckProjection.ShortHelp="投影";
+
+CheckSupport.Title="支持面： ";
+CheckSupport.LongHelp="可將曲面或平面選作支持面。";
+CheckSupport.ShortHelp="選擇支持面";
+
+LinkButtonHLinkOrder.LongHelp="對于曲線 2，將從曲線 1 采用連續和引入半徑設置。";
+LinkButtonHLinkOrder.ShortHelp="連續和引入半徑設置相等";
+
+FrameOptions.Title="形狀";
+FrameOptions.LongHelp="可用定義的參數修改樣式圓角。";
+
+CheckOptionsAccRadius1.Title="引入半徑： ";
+CheckOptionsAccRadius1.LongHelp="僅可用于類型 G2。
+為具備 G2 連續轉換的累加弧在累加點處定義引入半徑。
+將不保留 G2 連續。";
+CheckOptionsAccRadius1.ShortHelp="在累加點處定義半徑。";
+
+CheckOptionsAccRadius2.Title="引入半徑： ";
+CheckOptionsAccRadius2.LongHelp="僅可用于類型 G2。
+為具備 G2 連續轉換的累加弧在累加點處定義引入半徑。
+將不保留 G2 連續。";
+CheckOptionsAccRadius2.ShortHelp="在累加點處定義半徑。";
+
+RadioButtonCenterRadius.Title="中心半徑： ";
+RadioButtonCenterRadius.LongHelp="僅可用于連續 G1 和更高。
+在樣式圓角的中間定義半徑。
+將保留連續。";
+RadioButtonCenterRadius.ShortHelp="樣式圓角中間的半徑";
+
+RadioButtonFormFactor.Title="形式系數： ";
+RadioButtonFormFactor.LongHelp="僅可用于連續 G1 和更高。
+已修改樣式圓角的切線長度。
+將保留連續。
+形式系數越小，樣式圓角越平。
+形式系數越大，樣式圓角越陡。
+極端形式系數將創建環形。";
+RadioButtonFormFactor.ShortHelp="形式系數影響樣式圓角的高度。";
+
+LinkButtonLinkOrder.LongHelp="中心半徑具備相應的形式系數。
+更改中心半徑也會更改形式系數，反之亦然。";
+LinkButtonLinkOrder.ShortHelp="中心半徑與形式系數鏈接";
+//?????????????????????????????????????????????
+CheckTrimCurve1.Title="修剪曲線 1";
+CheckTrimCurve2.Title="修剪曲線 2";

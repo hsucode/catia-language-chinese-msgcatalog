@@ -1,0 +1,157 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2005
+
+// 3951 校正官方漢化---------------------------------------------
+// 3951 校正官方漢化  Messages for CATPrdFileLegacyReportMessages
+// 3951 校正官方漢化---------------------------------------------
+
+CATPrdFileLegacyReportMessages.BrokenContextOrInput.Source="隔離損壞的上下文導入";
+CATPrdFileLegacyReportMessages.BrokenContextOrInput.Detail="已移除損壞的上下文導入。";
+
+CATPrdFileLegacyReportMessages.BrokenContextAndInput.Detail1="使用“定義上下文鏈接”命令修復和定義新的上下文，或者在導入前隔離此損壞的外部參考。";
+
+CATPrdFileLegacyReportMessages.BrokenContext.Detail1="此損壞的上下文導入的原始數據位于文檔 /p1 中。";
+CATPrdFileLegacyReportMessages.BrokenContext.Detail2="使用“定義上下文鏈接”命令定義新的上下文，或者在導入前隔離此損壞的外部參考。";
+
+CATPrdFileLegacyReportMessages.BrokenInput.Detail1="此損壞的上下文導入的上下文是位于文檔 /p2 中的產品 /p1。";
+CATPrdFileLegacyReportMessages.BrokenInput.Detail2="在導入之前，先修復或隔離此損壞的外部參考。";
+
+CATPrdFileLegacyReportMessages.ForbiddenChar.Source="禁用的字符";
+CATPrdFileLegacyReportMessages.ForbiddenChar.Detail1="零件編號字符串包含 CATIA V6 不支持的字符。";
+CATPrdFileLegacyReportMessages.ForbiddenChar.Detail2="PLM 外部標識符 '/p1' 已替換為 '/p2'。";
+
+CATPrdFileLegacyReportMessages.portNameModified.Source="端口名稱修改";
+CATPrdFileLegacyReportMessages.portNameModified.Detail1="為符合 CATIA V6 命名規則，已使用與發布名稱稍有不同的名稱創建端口。";
+CATPrdFileLegacyReportMessages.portNameModified.Detail2="原始的發布名稱為 '/p1'，而端口名稱為 '/p2'";
+
+CATPrdFileLegacyReportMessages.PubNameChange.Source="未修改發布名稱";
+CATPrdFileLegacyReportMessages.PubNameChange.Detail1="該發布名稱自首次導入以來已在 V5 中發生更改。未修改相應 V6 發布的名稱。";
+CATPrdFileLegacyReportMessages.PubNameChange.Detail2="原始的發布名稱為 '/p1'。發布的新名稱 '/p2' 將不予考慮。";
+CATPrdFileLegacyReportMessages.PubNameChange.Detail3="無法分析 V5 發布名稱。未修改相應 V6 發布的名稱。";
+
+CATPrdFileLegacyReportMessages.PubNotMigrated.Source="已忽略發布";
+CATPrdFileLegacyReportMessages.PubNotMigrated.Detail="基于其名稱，已將發布 '/p1' 標識為無用發布。因此將不會對其進行遷移。";
+
+CATPrdFileLegacyReportMessages.portNameConflict.Source="端口名稱沖突";
+CATPrdFileLegacyReportMessages.portNameConflict.Detail1="創建端口 '/p1' 失敗。";
+CATPrdFileLegacyReportMessages.portNameConflict.Detail2="檢查之前是否未創建具有相同名稱的端口，如果需要，請在原始數據上修改名稱。";
+
+CATPrdFileLegacyReportMessages.pubTypeInvalid.Source="不支持的發布類型";
+CATPrdFileLegacyReportMessages.pubTypeInvalid.Detail1="創建端口 '/p1' 失敗.";
+CATPrdFileLegacyReportMessages.pubTypeInvalid.Detail2="在導入之前，先通過“發布”面板重設相同幾何元素上的原始發布。";
+
+CATPrdFileLegacyReportMessages.pubParamProductPart.Source="不支持的發布類型";
+CATPrdFileLegacyReportMessages.pubParamProductPart.Detail1="不支持位于 CATProduct 文檔中的發布指向位于 CATPart 文檔中的參數。端口 '/p1' 已創建為空。";
+
+CATPrdFileLegacyReportMessages.pubPermissifMode.Declare.Source="無法聲明發布 '/p1'。";
+CATPrdFileLegacyReportMessages.pubPermissifMode.Migrate.Source="無法遷移發布 '/p1'。";
+CATPrdFileLegacyReportMessages.pubPermissifMode.Migrate.PortCreation.SameName="無法遷移發布 '/p1'，因為已遷移具有相同名稱的發布。";
+CATPrdFileLegacyReportMessages.pubPermissifMode.Migrate.PortCreation.ErrorName="由于不支持的發布名稱，發布遷移失敗。";
+CATPrdFileLegacyReportMessages.pubPermissifMode.Migrate.Detail="已跳過實體遷移。";
+CATPrdFileLegacyReportMessages.pubPermissifMode.Migrate.Detail2="實體遷移失敗。";
+CATPrdFileLegacyReportMessages.pubPermissifMode.MigrateLink.Source="無法遷移發布 /p1 的鏈接。";
+CATPrdFileLegacyReportMessages.pubPermissifMode.MigrateLink.Detail="已跳過鏈接遷移。";
+CATPrdFileLegacyReportMessages.pubPermissifMode.MigrateLink.Detail2="鏈接遷移失敗。";
+CATPrdFileLegacyReportMessages.pubPermissifMode.Declare.Detail="實體聲明失敗。";
+
+CATPrdFileLegacyReportMessages.refPermissifMode.Declare.Source="無法聲明產品參考 '/p1'。";
+CATPrdFileLegacyReportMessages.refPermissifMode.Migrate.Source="無法遷移產品參考 '/p1'。";
+CATPrdFileLegacyReportMessages.refPermissifMode.Migrate.Prop="無法遷移產品特性。";
+CATPrdFileLegacyReportMessages.refPermissifMode.Migrate.CreateRepInst="無法遷移展示實例。";
+CATPrdFileLegacyReportMessages.refPermissifMode.Migrate.RetrieveRepRef="無法定位展示參考。";
+
+CATPrdFileLegacyReportMessages.instPermissifMode.Declare.Source="無法聲明產品實例 '/p1'。";
+CATPrdFileLegacyReportMessages.instPermissifMode.MigrateFirst.Activate="無法遷移實例 '/p1' 的激活/停用狀態。";
+CATPrdFileLegacyReportMessages.instPermissifMode.MigrateFirst.Source="無法遷移產品實例 '/p1'。";
+CATPrdFileLegacyReportMessages.instPermissifMode.MigrateFirst.Occurrence.Source="無法遷移產品實例 '/p1' 的事件。";
+CATPrdFileLegacyReportMessages.instPermissifMode.MigrateFirst.GraphicalProp="無法遷移實例 '/p1' 的圖形特性。";
+
+CATPrdFileLegacyReportMessages.instPermissifMode.Migrate.Prop="無法遷移實例 '/p1' 的特性。";
+CATPrdFileLegacyReportMessages.instPermissifMode.Migrate.Occurence.Prop="產品實例 '/p1'：無法遷移某個事件的特性。";
+CATPrdFileLegacyReportMessages.instPermissifMode.Migrate.Occurence.PropPartial="產品實例 '/p1'：可以部分遷移某個事件的特性。";
+CATPrdFileLegacyReportMessages.ctxPermissifMode.Migrate.Source="無法遷移上下文鏈接。已將其移除。";
+
+CATPrdFileLegacyReportMessages.ExtentToSupport.Detected.Source="已檢測到支持 V5";
+
+CATPrdFileLegacyReportMessages.ExtentToSupport.Source="支持 V6 擴展";
+CATPrdFileLegacyReportMessages.ExtentToSupport.Succeeded="已成功將 '/p1' 擴展到支持";
+CATPrdFileLegacyReportMessages.ExtentToSupport.Failed="無法將 '/p1' 擴展到支持。";
+
+CATPrdFileLegacyReportMessages.BadMappingAtribute.Reference="無法評估映射屬性";
+
+CATPrdFileLegacyReportMessages.IsolateCtxInput.Source="上下文導入隔離";
+CATPrdFileLegacyReportMessages.IsolateCtxInput.Detail1="已隔離在上下文 '/p1' 中定義的上下文導入。";
+
+
+CATPrdFileLegacyReportMessages.Isolation.Unknown="未知";
+CATPrdFileLegacyReportMessages.InstRefIsolation.Detail="已移除實例 '/p1'。";
+CATPrdFileLegacyReportMessages.RefRepIsolation.Detail="不再聚集相應展示。";
+
+
+CATPrdFileLegacyReportMessages.MultiRep.Source="不支持多個展示";
+CATPrdFileLegacyReportMessages.MultiRep.Detail1="不支持導入具有多個展示的 CATProduct 或 CATPart。";
+CATPrdFileLegacyReportMessages.MultiRep.Detail2="僅導入默認展示。";
+
+CATPrdFileLegacyReportMessages.ActivateDeactivate="激活狀態導入失敗";
+CATPrdFileLegacyReportMessages.ActivateDeactivate.Detail="檢查是否在您的環境中定義名為 'ActivateDeactivate' 的可變性空間。";
+
+CATPrdFileLegacyReportMessages.GraphicalPropertiesOnReference="參考的圖形特性導入失敗。";
+
+CATPrdFileLegacyReportMessages.PropertiesOnOccurence="事件的靈活性或圖形特性導入失敗。";
+
+CATPrdFileLegacyReportMessages.UnnamedPub.Source="無名稱的發布";
+CATPrdFileLegacyReportMessages.UnnamedPub.Detail1="發布沒有名稱。已使用以下名稱創建相應端口：'/p1'";
+
+CATPrdFileLegacyReportMessages.InvalidInitBL.Source="初始化業務邏輯無效";
+CATPrdFileLegacyReportMessages.InvalidInitBL.Detail="無法解析初始化業務邏輯。";
+
+CATPrdFileLegacyReportMessages.InvalidImportExportBL.Source="導入/導出業務邏輯無效";
+CATPrdFileLegacyReportMessages.InvalidImportExportBL.Detail="無法解析導入/導出業務邏輯。";
+
+CATPrdFileLegacyReportMessages.InvalidBL.Source="業務邏輯無效";
+
+CATPrdFileLegacyReportMessages.PLMCompCreation.Source="PLM 部件創建失敗";
+CATPrdFileLegacyReportMessages.CreateProductReference="創建產品參考失敗。";
+CATPrdFileLegacyReportMessages.Create3DPart="創建 3DPart 失敗。";
+CATPrdFileLegacyReportMessages.CreateProductRepresentationReference="創建展示參考失敗。";
+CATPrdFileLegacyReportMessages.CreateProductRepresentationReferenceFromDocument="創建展示參考失敗。";
+CATPrdFileLegacyReportMessages.CreateMechanicalPartWithoutSD="創建機械零件失敗。";
+CATPrdFileLegacyReportMessages.CreateRepresentationReferenceWithAuthoring="創建帶創作的展示參考失敗。";
+CATPrdFileLegacyReportMessages.CreateTechnologicalRepresentationReference="創建技術展示參考失敗。";
+CATPrdFileLegacyReportMessages.CreateAndAggregateRepresentationReferenceWithAuthoring="創建聚集的展示參考失敗。";
+CATPrdFileLegacyReportMessages.CreateRepresentationReference="創建展示參考失敗。";
+CATPrdFileLegacyReportMessages.CreateRepresentationInstance="創建展示實例失敗。";
+CATPrdFileLegacyReportMessages.CreatePort="創建端口失敗。";
+CATPrdFileLegacyReportMessages.CreateConnection="創建連接失敗。";
+CATPrdFileLegacyReportMessages.PLMCompCreation.DetailPN="提供的名稱： ";
+
+CATPrdFileLegacyReportMessages.IdSetModifiedAttr.Source="已忽略對標識符集屬性的修改";
+CATPrdFileLegacyReportMessages.IdSetModifiedAttr.Detail1="已通過業務邏輯修改類型為 '/p2' 的對象上屬性 '/p1' 的值。";
+CATPrdFileLegacyReportMessages.IdSetModifiedAttr.Detail2="由于此屬性屬于標識符集，已忽略此修改。";
+
+CATPrdFileLegacyReportMessages.NoModifiedAttr.Source="未通過業務邏輯修改任何屬性";
+CATPrdFileLegacyReportMessages.NoModifiedAttr.Detail="沒有為以下類型的對象修改任何屬性：'/p1' ";
+
+CATPrdFileLegacyReportMessages.3DPart="聲明 3DPart 期間發生錯誤";
+
+CATPrdFileLegacyReportMessages.PubIsolation="發布";
+CATPrdFileLegacyReportMessages.PubIsolation.OfPub="發布已命名的發布";
+
+CATPrdFileLegacyReportMessages.TreatmentForCtxLinkGeneric.Source="重定向上下文鏈接期間發生錯誤";
+CATPrdFileLegacyReportMessages.CtxLinkIsolationWarning.Source="已隔離上下文鏈接";
+CATPrdFileLegacyReportMessages.TreatmentForCtxLinkGeneric.Detail1="上下文零件為：/p1";
+CATPrdFileLegacyReportMessages.TreatmentForCtxLinkGeneric.Detail2="元素名稱為：/p1";
+CATPrdFileLegacyReportMessages.TreatmentForCtxLinkGeneric.Detail3="上下文裝配體為：/p1";
+
+CATPrdFileLegacyReportMessages.MonoContext="已在當前的 V5 文檔中找到上下文導入的多個上下文。這是意外情況。";
+CATPrdFileLegacyReportMessages.MonoContextDetail="在再次將文件導入 V6 之前，請先修復 V5 文檔上的問題。";
+
+CATPrdFileLegacyReportMessages.PortRenaming.Source="已重命名發布，以跳過命名沖突";
+CATPrdFileLegacyReportMessages.PortRenaming.Detail1="原始名稱為：/p1";
+CATPrdFileLegacyReportMessages.PortRenaming.Detail2="新名稱為：/p1";
+
+CATPrdFileLegacyReportMessages.PortRenamingFail.Source="無法創建“V6 端口”，即使進行重命名";
+CATPrdFileLegacyReportMessages.PortRenamingFail.Detail1="發布名稱為：/p1";
+
+CATPrdFileLegacyReportMessages.PortCreationKO.Source="無法創建名稱為 /p1 的“端口”";
+CATPrdFileLegacyReportMessages.PortCreationKO.Detail1="檢查之前是否未創建具有相同名稱的端口，如果需要，請在原始數據上修改名稱。";
+

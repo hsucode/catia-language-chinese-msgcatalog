@@ -1,0 +1,97 @@
+// 3951 校正官方漢化
+// 3951 校正官方漢化 ---------------------------
+// 3951 校正官方漢化 Coating 2D commande
+// 3951 校正官方漢化 ---------------------------
+// 3951 校正官方漢化
+
+// 3951 校正官方漢化 Le titre du panel de dialogue associe a la commande
+
+CATFmtCoating2DMesherCmd.CoatingDlg2D.Title="涂層 2D 網格";
+CATFmtCoating2DMesherCmd.UndoTitle="涂層 2D 網格";
+
+// 3951 校正官方漢化Il faut initialiser la liste du dialogue.
+
+CATFmtCoating2DMesherCmd.CoatingDlg2D.GParameters.NoSelection="無選定項";
+
+// 3951 校正官方漢化 Le bouton apply.
+
+CATFmtCoating2DMesherCmd.CoatingApply.UndoTitle="創建網格";
+
+// 3951 校正官方漢化 Le combo de selection du type d'extraction a appliquer.
+
+CATFmtCoating2DMesherCmd.GSpec="提取條件";
+CATFmtCoating2DMesherCmd.GSpec.UndoTitle="提取條件";
+
+// 3951 校正官方漢化 Le bouton de suppression d'un ou de tous les support(s)
+
+CATFmtCoating2DMesherCmd.RemoveMP.UndoTitle="移除一個支持面";
+CATFmtCoating2DMesherCmd.RemoveAllMP.UndoTitle="移除所有支持面";
+
+// 3951 校正官方漢化Le NLS de la liste de mesh parts
+
+GParameters.Column0="網格零件";
+GParameters.RemoveMPBtn.Title="移除";
+GParameters.RemoveMPBtn.LongHelp="移除選定的網格零件。";
+GParameters.GParametersList.GParametersCtxMenu.RemoveMPItm.Title="移除";
+GParameters.RemoveAllMPBtn.Title="全部移除";
+GParameters.RemoveAllMPBtn.LongHelp="移除所有網格零件。";
+GParameters.GParametersList.GParametersCtxMenu.RemoveAllMPItm.Title="全部移除";
+
+// 3951 校正官方漢化Le NLS du titre de la commande locale pour l'undo.
+
+CATFmtCoating2DMesherCmd.LSpec.UndoTitle="本地規格";
+
+// 3951 校正官方漢化Le NLS de la Frame des parametres globaux
+
+CATFmtCoating2DMesherCmd.CoatingDlg2D.GParameters.Title="全局參數";
+CATFmtCoating2DMesherCmd.CoatingDlg2D.GParameters.Help="設置全局參數";
+CATFmtCoating2DMesherCmd.CoatingDlg2D.GParameters.ShortHelp="設置全局參數";
+CATFmtCoating2DMesherCmd.CoatingDlg2D.GParameters.LongHelp="設置全局參數。";
+
+// 3951 校正官方漢化Le NLS de la Frame des parametres locaux
+
+CATFmtCoating2DMesherCmd.CoatingDlg2D.LParameters.Title="本地規格";
+CATFmtCoating2DMesherCmd.CoatingDlg2D.LParameters.Help="設置本地規格";
+CATFmtCoating2DMesherCmd.CoatingDlg2D.LParameters.ShortHelp="設置本地規格";
+CATFmtCoating2DMesherCmd.CoatingDlg2D.LParameters.LongHelp="設置本地規格。";
+
+// 3951 校正官方漢化Le NLS pour le combo des global parameters
+
+CATFmtCoating2DMesherCmd.CoatingDlg2D.GParameters.CriteriaComboLbl.Title=" 提取類型： ";
+CATFmtCoating2DMesherCmd.CoatingDlg2D.GParameters.CriteriaComboLbl.Help="設置提取類型參數";
+CATFmtCoating2DMesherCmd.CoatingDlg2D.GParameters.CriteriaComboLbl.LongHelp="設置提取類型參數。";
+
+// 3951 校正官方漢化Le NLS pour la sous commande: sp閏ification locale
+
+CATFmtCoating2DMesherCmd.CoatingDlg2D.LParameters.ImposedMesh.Help="添加/移除與幾何圖形相關聯的網格";
+CATFmtCoating2DMesherCmd.CoatingDlg2D.LParameters.ImposedMesh.ShortHelp="添加/移除網格";
+CATFmtCoating2DMesherCmd.CoatingDlg2D.LParameters.ImposedMesh.LongHelp="添加/移除與幾何圖形關聯的網格。";
+
+// 3951 校正官方漢化Le NLS du combo correspondant au parametre global
+
+CATFmtCoating2DMesherCmd.CoatingDlg2D.GParameters.CriteriaCombo.Help="在組合框中選擇提取參數";
+CATFmtCoating2DMesherCmd.CoatingDlg2D.GParameters.CriteriaCombo.ShortHelp="選擇參數";
+CATFmtCoating2DMesherCmd.CoatingDlg2D.GParameters.CriteriaCombo.LongHelp="在組合框中選擇提取參數。";
+
+// 3951 校正官方漢化Le NLS concernant l'affichage de la liste deroulante
+
+boundfc="邊界面";
+nonefc="無";
+
+// 3951 校正官方漢化Le NLS correspondant aux differents etats qui regissent le dialogue
+
+CATFmtCoating2DMesherCmd.InitialState.Message="選擇要提取的網格零件";
+
+// 3951 校正官方漢化Le NLS de l'agent de selection de mesh part (sur l'undo)
+
+CATFmtCoating2DMesherCmd.MeshSel.UndoTitle="選擇 3D 網格";
+
+// 3951 校正官方漢化Le NLS de l'agent de selection de spec locales pour le delete (sur l'undo)
+
+CATFmtCoating2DMesherCmd.SpecSelected.UndoTitle="刪除規格";
+CATFmtCoating2DMesherCmd.SpecSelectedEndCtx.UndoTitle="刪除規格";
+
+// 3951 校正官方漢化 Erreurs associees au dialogue
+
+CATFmtCoating2DMesherCmd.CoatingDlg2D.CoatingERR_0007.Title="警告";
+CATFmtCoating2DMesherCmd.CoatingDlg2D.CoatingERR_0007.Text="其中一個選定的支持面無合適的尺寸；選擇其他支持面。";

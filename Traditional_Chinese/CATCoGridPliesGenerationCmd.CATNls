@@ -1,0 +1,15 @@
+CATCoGridPliesGenerationCmd.InitialState.Message="選擇虛擬堆疊";
+CATCoGridPliesGenerationCmd.SecondState.Message="指定鋪層創建選項";
+
+ProgressTaskUI.Title="正在根據堆疊定義計算斜坡支持面和鋪層...";
+ProgressTaskUI.ObjectName="鋪層生成";
+ProgressTaskUI.Comment="進度";
+
+CATCoGridPliesGenerationCmd.IsStaggeringOK.Warning.Title="交錯定義無效";
+CATCoGridPliesGenerationCmd.IsStaggeringOK.Warning.Message="下列參考元素沒有交錯值：\n/p1\n\n您是否仍要繼續？";
+
+CATCoGridPliesGenerationCmd.IsVSSynchImpacted.Warning.Title="虛擬堆疊同步";
+CATCoGridPliesGenerationCmd.IsVSSynchImpacted.Warning.Message="此命令將創建一個并非同步機制自身組成部分的鋪層組。\n您是否仍要繼續？";
+
+MessagesTitle="鋪層生成";
+ClosedRefElement.Message="至少 /p1 是無效的結構元素，因為它是封閉線。\n要允許正確生成鋪層，這些參考元素必須分割成至少三個部分。";

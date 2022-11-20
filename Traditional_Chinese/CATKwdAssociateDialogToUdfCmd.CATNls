@@ -1,0 +1,11 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+InvalidDocument = "(File must be a valid CATIA document)";
+InvalidModelization = "(File must contain Knowledge-based Dialog definitions)";
+NoWindowDefinition = "(File must contain at least one Knowledge-based Window definition)";
+DefinitionsCount = "(/P1 Knowledge-based Window(s) definition(s) in that file)";
+// END WIZARD REPLACEMENT ZONE
+CATKwdAssociateDialogToUdfCmd.StateInitial.Message = "Select a dialog box defined to edit instances of Type(s)";
+CATKwdAssociateDialogToUdfCmd.StateDialogSelected.Message = "Specify which Types instances can be edited with the dialog box";
+TooManyInputArgs = "Choosen dialog box for Type edition must have at most one input argument (if missing, it will be added on the fly)";
+BadTypeForInputArg = "Choosen dialog box for Type edition has one input argument, but whose type (/P1) is not pointer";
+BadPointerTypeForInputArg = "Choosen dialog box for Type edition has one input argument of pointer, but pointed object type (/P1) does not fit the type to edit (/P2)";

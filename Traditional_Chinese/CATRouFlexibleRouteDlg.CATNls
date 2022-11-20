@@ -1,0 +1,145 @@
+Title="定義柔性傳遞線路";
+
+SplineAlgo.Message="樣條線（基礎曲線）";
+StandardAlgo.Message="標準算法（基于數學計算）";
+FLEXAlgo.Message="柔性算法（基于材料屬性）";
+RouteInfo="傳遞線路信息";
+LineID="線路 ID";
+Attribute="屬性";
+Value="值";
+ToolTipRouteInfo="傳遞線路屬性";
+LinearWeight="線性重量";
+LinearWeight.Message="厚度信息";
+Diameter="直徑";
+Spec="規格";
+Standard="標準";
+NomialSize="額定大小";
+UsingCurrentLineID="使用當前線路 ID";
+UsingLineIDFromSelection="使用選擇的線路 ID";
+Usage="使用";
+ToolTipPortInfo.ShortHelp="選定的端口";
+
+SlackMode.Message="松弛";
+BendMode.Message="彎曲";
+LengthMode.Message="長度";
+EndStyle="終端樣式";
+Rating="等級";
+
+MoreMode="更多 >>";
+LessMode="更少 <<";
+
+TabContainer.PropertiesTabPage.pFrame.BuildAlgoLabel.Title="構建算法： ";
+TabContainer.PropertiesTabPage.pFrame.BuildModeLabel.Title="構建模式： ";
+
+TabContainer.PropertiesTabPage.pFrame.StandardLabel.Title="標準： ";
+TabContainer.PropertiesTabPage.pFrame.StandardLabelForLineId.Title="標準（線路 ID）";
+TabContainer.PropertiesTabPage.pFrame.StandardLabelForRouteId.Title="標準（傳遞線路）";
+TabContainer.PropertiesTabPage.pFrame.StandardLabel.ShortHelp="柔性傳遞線路標準";
+TabContainer.PropertiesTabPage.pFrame.StandardLabel.LongHelp="定義柔性傳遞線路標準。";
+
+TabContainer.PropertiesTabPage.pFrame.NominalSizeLabel.Title="標稱大小： ";
+TabContainer.PropertiesTabPage.pFrame.NominalSizeLabelForLineID.Title="標稱大小（線路 ID）";
+TabContainer.PropertiesTabPage.pFrame.NominalSizeLabelForRoute.Title="標稱大小（傳遞線路）";
+TabContainer.PropertiesTabPage.pFrame.NominalSizeLabel.ShortHelp="柔性傳遞線路標稱大小";
+TabContainer.PropertiesTabPage.pFrame.NominalSizeLabel.LongHelp="定義柔性傳遞線路的標稱大小。";
+
+TabContainer.PropertiesTabPage.pFrame.pTotalLengthLabel.Title="總長度： ";
+Totallength.ShortHelp="總長度";
+TabContainer.PropertiesTabPage.pFrame.pTotalLengthLabel.ShortHelp="柔性長度";
+TabContainer.PropertiesTabPage.pFrame.pTotalLengthLabel.LongHelp="柔性總長度。";
+
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXBtn.Title="更多 >>";
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXBtn.ShortHelp="更多選項";
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXBtn.LongHelp="更多選項。";
+
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pSliderLabel.Title="精確度 P<->A： ";
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pSliderLabel.ShortHelp=" 性能 (P) 與精確度 (A) 之間的平衡 ";
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pSliderLabel.LongHelp=" 性能 (P) 與精確度 (A) 之間的平衡 ";
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pAccuracySlider.ShortHelp=" 性能 (P) 與精確度 (A) 之間的平衡 ";
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pAccuracySlider.LongHelp=" 性能 (P) 與精確度 (A) 之間的平衡 ";
+
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pMaterialSliderLabel.Title=" 柔性 S<->F： ";
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pMaterialSliderLabel.ShortHelp=" 默認材料：從剛性 (S) 到柔性 (F) ";
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pMaterialSliderLabel.LongHelp=" 默認材料：若無材料對象附加到柔性，則從剛性 (S) 到柔性 (F) ";
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pMaterialSlider.ShortHelp=" 默認材料：從剛性 (S) 到柔性 (F)  ";
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pMaterialSlider.LongHelp=" 默認材料：若無材料對象附加到柔性，則從剛性 (S) 到柔性 (F) ";
+
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pOptTempLabel.Title="操作溫度： ";
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pOptTempLabel.ShortHelp=" 將用于 FLEX 求解器的操作溫度 ";
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pOptTempLabel.LongHelp=" 將用于 FLEX 求解器的操作溫度 ";
+
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pOptPressLabel.Title=" 操作壓力： ";
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pOptPressLabel.ShortHelp=" 用于 FLEX 求解器的操作壓力 ";
+TabContainer.PropertiesTabPage.pFrame.pMoreFLEXFrame.pOptPressLabel.LongHelp=" 用于 FLEX 求解器的操作壓力 ";
+
+TabContainer.PropertiesTabPage.pFrame.pSlackLabel.Title="松弛 (%)： ";
+TabContainer.PropertiesTabPage.pFrame.pSlackLabel.ShortHelp="松弛百分比";
+TabContainer.PropertiesTabPage.pFrame.pSlackLabel.LongHelp="柔性松弛百分比。";
+
+TabContainer.PropertiesTabPage.pFrame.pBendRadiusLabel.Title="彎曲半徑： ";
+TabContainer.PropertiesTabPage.pFrame.pBendRadiusLabel.ShortHelp="彎曲半徑";
+TabContainer.PropertiesTabPage.pFrame.pBendRadiusLabel.LongHelp="彎曲半徑。";
+
+TabContainer.PropertiesTabPage.pFrame.pTableBtn.Title=" 傳遞線路大小表 ";
+TabContainer.PropertiesTabPage.pFrame.pTableBtn.ShortHelp="傳遞線路大小表";
+TabContainer.PropertiesTabPage.pFrame.pTableBtn.LongHelp="顯示傳遞線路大小表。";
+
+TabContainer.PropertiesTabPage.pFrame.pDiameterLabel.Title="直徑： ";
+TabContainer.PropertiesTabPage.pFrame.pDiameterLabel.ShortHelp="柔性傳遞線路直徑";
+TabContainer.PropertiesTabPage.pFrame.pDiameterLabel.LongHelp="定義柔性傳遞線路直徑。";
+
+TabContainer.PropertiesTabPage.pFrame.pThicknessLabel.Title="厚度： ";
+TabContainer.PropertiesTabPage.pFrame.pThicknessLabel.ShortHelp="柔性傳遞線路厚度";
+TabContainer.PropertiesTabPage.pFrame.pThicknessLabel.LongHelp="定義柔性傳遞線路的厚度。";
+
+TabContainer.PropertiesTabPage.Title="屬性";
+TabContainer.pGraphicTabPage.Title="圖形";
+TabContainer.pGraphicTabPage.pGraphicFrame.pCreationFrame.Title="創建選項";
+TabContainer.pGraphicTabPage.pGraphicFrame.pDisplayFrame.Title="顯示選項";
+
+TabContainer.pGraphicTabPage.pGraphicFrame.pCreationFrame.pShowCurveAtEndBtn.Title=" 在創建后顯示曲線 ";
+TabContainer.pGraphicTabPage.pGraphicFrame.pCreationFrame.pShowCurveAtEndBtn.ShortHelp="在創建后顯示曲線";
+TabContainer.pGraphicTabPage.pGraphicFrame.pCreationFrame.pShowCurveAtEndBtn.LongHelp="如果選中在創建后顯示曲線，如果取消選中則隱藏。";
+
+TabContainer.pGraphicTabPage.pGraphicFrame.pCreationFrame.pShowPointsAtEndBtn.Title=" 在創建后顯示點 ";
+TabContainer.pGraphicTabPage.pGraphicFrame.pCreationFrame.pShowPointsAtEndBtn.ShortHelp="在創建后顯示點";
+TabContainer.pGraphicTabPage.pGraphicFrame.pCreationFrame.pShowPointsAtEndBtn.LongHelp="如果選中在創建后顯示點，如果取消選中則隱藏。";
+
+TabContainer.pGraphicTabPage.pGraphicFrame.pDisplayFrame.pCurveLabel.Title="曲線： ";
+TabContainer.pGraphicTabPage.pGraphicFrame.pDisplayFrame.pShowCurveBtn.Title="顯示曲線 ";
+TabContainer.pGraphicTabPage.pGraphicFrame.pDisplayFrame.pShowCurveBtn.ShortHelp="顯示柔性曲線";
+TabContainer.pGraphicTabPage.pGraphicFrame.pDisplayFrame.pShowCurveBtn.LongHelp="顯示柔性曲線。";
+
+TabContainer.pGraphicTabPage.pGraphicFrame.pDisplayFrame.pHideCurveBtn.Title=" 隱藏曲線 ";
+TabContainer.pGraphicTabPage.pGraphicFrame.pDisplayFrame.pHideCurveBtn.ShortHelp="隱藏柔性曲線";
+TabContainer.pGraphicTabPage.pGraphicFrame.pDisplayFrame.pHideCurveBtn.LongHelp="隱藏柔性曲線。";
+
+TabContainer.pGraphicTabPage.pGraphicFrame.pDisplayFrame.pPointLabel.Title="點： ";
+TabContainer.pGraphicTabPage.pGraphicFrame.pDisplayFrame.pShowPointBtn.Title=" 顯示點";
+TabContainer.pGraphicTabPage.pGraphicFrame.pDisplayFrame.pShowPointBtn.ShortHelp="顯示柔性點";
+TabContainer.pGraphicTabPage.pGraphicFrame.pDisplayFrame.pShowPointBtn.LongHelp="顯示柔性點。";
+
+TabContainer.pGraphicTabPage.pGraphicFrame.pDisplayFrame.pHidePointBtn.Title=" 隱藏點 ";
+TabContainer.pGraphicTabPage.pGraphicFrame.pDisplayFrame.pHidePointBtn.ShortHelp="隱藏柔性點";
+TabContainer.pGraphicTabPage.pGraphicFrame.pDisplayFrame.pHidePointBtn.LongHelp="隱藏柔性點。";
+
+TabContainer.PropertiesTabPage.pFrame.MntDist.MntStraightDistAtEndBtn.Title="保持零件端口中端點的直線長度";
+TabContainer.PropertiesTabPage.pFrame.MntDist.MntStraightDistAtEndBtn.ShortHelp="保持零件端口中柔性傳遞路線端點的直線長度";
+TabContainer.PropertiesTabPage.pFrame.MntDist.MntStraightDistAtEndBtn.LongHelp="保持零件端口中柔性傳遞路線端點的直線長度";
+
+TabContainer.PropertiesTabPage.pFrame.MntDist.StartDistFrame.Title="開始";
+TabContainer.PropertiesTabPage.pFrame.MntDist.EndDistFrame.Title="結束";
+
+TabContainer.PropertiesTabPage.pFrame.MntDist.StartDistFrame.StartLengthLabel.Title=" 開始長度      ";
+TabContainer.PropertiesTabPage.pFrame.MntDist.EndDistFrame.SameAsStartLengthBtn.Title="與開始長度相同";
+TabContainer.PropertiesTabPage.pFrame.MntDist.EndDistFrame.EndLengthLabel.Title=" 結束長度     ";
+
+MustUseLineID="必須按照“工具”選項中的設計條件指定的標準選擇線路 ID\n\n選擇“確定”以定義線路 ID 或“取消”以退出傳遞";
+LineIdForSpec="必須為規格驅動的零件放置選擇線路 ID\n\n選擇“確定”以定義線路 ID 或“取消”以退出傳遞";
+LineIDMember="向線路 ID 添加零件失敗";
+
+LineIDSelection="線路 ID（選擇）";
+LineIDUsage.Title="線路 ID";
+LineIDUsage.ShortHelp="線路 ID 用法";
+LineIDUsage.LongHelp="線路 ID 用法";
+

@@ -1,0 +1,69 @@
+AUTDcnModbusRteEngineName = "Modbus/TCP";
+
+AUTDcnModbusErrTitle = "Modbus/TCP Runtime Engine";
+
+AUTDcnModbusRteConnectionFailure =
+	"不能 connect runtime engine \"/P1\" with the Ethernet\n",
+	"coupler linked to the Schneider TSX37222 CPU unit\n",
+	"/P2";
+
+AUTDcnModbusRteDataTransferFailure =
+	"Communication failure with the Ethernet coupler linked to the PLC\n",
+	"Please, check PLC status and start一個new debug session.\n",
+	"/P1";
+	
+AUTDcnModbusRteBytecodeInconsistency =
+	"The bytecode ran in the PLC doesn't match with the current version of the LCM application block.\n",
+	"Please, rebuild the runtime and download it to the PLC before starting一個new debug session.\n",
+	"/P1";
+	
+AUTDcnModbusRteCycleTimeInconsistency =
+	"The 周期 value利用PLC (/P2 ms) doesn't match with the current value set in\n",
+	"the runtime block \"/P1\" (/P3 ms). Please, rebuild this one and download it into PLC before\n",
+	"restarting一個new debug session或 change the 周期 value in the \"/P1\" block's properties.\n",
+	"/P4";
+
+AUTDcnModbusRteHwAddrMissing = 
+	"The hardware address of IO named \"/P1\" are missing in the runtime block\n",
+	"\"/P2\"!! Please, check your IOs hardware address workspace and start一個new simulation.\n",
+	"/P3";
+	
+AUTDcnModbusRteHwAddrSyntaxError = 
+	"Syntax error on hardware address \"/P1\" of IO named \"/P2\" in the runtime block\n",
+	"\"/P3\"!!. Please, check your IOs hardware address workspace and start一個new simulation.\n",
+	"/P4";
+
+AUTDcnModbusRteInitControllerError = 
+	"Controller initialization failure!\n",
+	"/P1";
+	
+AUTDcnModbusRteCoCreateInstanceFailure =
+	"CoCreateInstance Failure - Acces to PL7Pro control has failed\n",
+	"/P1";
+	
+AUTDcnModbusRteQueryInterfaceFailure = 
+	"QueryInterface Failure - Acces to PL7Pro interface has failed\n",
+	"/P1";
+	
+AUTDcnModbusRteCoInitializeFailure = 
+	"CoInitialize Failure - COM library is already initialized on this thread\n",
+	"/P1";
+		
+AUTDcnModbusRteRunCmdFailure = 
+	"No response或 late response from the runtime when requested for running 1 cycle.\n",
+	"Please, check PLC status (RUN, STOP或 PAUSE) else start一個new debug session.\n",
+	"/P1";
+	
+AUTDcnModbusRteResetCmdFailure =
+	"No response from the runtime when requested for reset.\n",
+	"Please, check PLC status (RUN, STOP或 PAUSE).\n",
+	"/P1";
+
+
+	
+
+
+	
+
+
+

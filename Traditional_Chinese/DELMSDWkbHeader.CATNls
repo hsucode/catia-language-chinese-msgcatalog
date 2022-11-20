@@ -1,0 +1,308 @@
+// 3951 校正官方漢化 COPYRIGHT Dassault Systemes 2005
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 DELMSDWkbHeader.CATNls
+// 3951 校正官方漢化 MSD workbench commands
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化  cre  maw  05:07:29  Original Implementation
+// 3951 校正官方漢化  mod  maw  05:10:12  Changed 'Instantiate System' into 'Insert Existing System'
+// 3951 校正官方漢化  mod  myj  06:03:16  Restructuring of all workbenches
+// 3951 校正官方漢化  mod  arf  07:11:28  gantt toolbar is now a standard toolbar of MSD, it is no longer created dynamically
+// 3951 校正官方漢化  ZUU       09:03:03  RI  A0650403
+// 3951 校正官方漢化  elx       09:11:26  0646678V6R2011 
+// 3951 校正官方漢化	mod	 qqy  11:01:27	Associate Picture
+// 3951 校正官方漢化	qqy		  11:03:08	Inconsistencies
+// 3951 校正官方漢化  elx       11:09:08  Compute System Output Command
+// 3951 校正官方漢化  elx       11:11:16  Automatic Line Balancing
+// 3951 校正官方漢化=============================================================================
+
+// 3951 校正官方漢化 Format
+// 3951 校正官方漢化 DELMSDWkbHeader.<CommandHeaderID>.Title="<Title>";
+// 3951 校正官方漢化 DELMSDWkbHeader.<CommandHeaderID>.Help="<Help>";
+// 3951 校正官方漢化 DELMSDWkbHeader.<CommandHeaderID>.LongHelp="<LongHelp>";
+// 3951 校正官方漢化 DELMSDWkbHeader.<CommandHeaderID>.Help="<HelpX>";
+
+
+DELMSDWkbHeader.DELMSDManufSysGanttHdr.Title="正在制造系統甘特圖";
+DELMSDWkbHeader.DELMSDManufSysGanttHdr.ShortHelp="正在制造系統甘特圖";
+DELMSDWkbHeader.DELMSDManufSysGanttHdr.Help="打開制造系統甘特圖";
+DELMSDWkbHeader.DELMSDManufSysGanttHdr.LongHelp="打開制造系統甘特圖";
+
+DELMSDWkbHeader.DELMSDAssignmentAssistantHdr.Title="系統指派助手";
+DELMSDWkbHeader.DELMSDAssignmentAssistantHdr.ShortHelp="系統指派助手";
+DELMSDWkbHeader.DELMSDAssignmentAssistantHdr.Help="打開編輯器以將零件和緊固件指派給系統中的操作";
+DELMSDWkbHeader.DELMSDAssignmentAssistantHdr.LongHelp="打開編輯器以將零件和緊固件指派給系統中的操作";
+// 3951 校正官方漢化 END SYSTEM TOOLS TOOLBAR
+
+DELMSDWkbHeader.DELMSDRemoveSystemScopeCmdHdr.Title="移除系統流程范圍";
+DELMSDWkbHeader.DELMSDRemoveSystemScopeCmdHdr.ShortHelp="移除系統流程范圍";
+DELMSDWkbHeader.DELMSDRemoveSystemScopeCmdHdr.LongHelp="移除系統和流程之間的范圍";
+DELMSDWkbHeader.DELMSDRemoveSystemScopeCmdHdr.Help="移除系統和流程之間的范圍";
+
+// 3951 校正官方漢化 elx Generate Output Renault 
+DELMSDWkbHeader.DELMSDComputeOperationOutputCmdHdr.Title="計算操作輸出";
+DELMSDWkbHeader.DELMSDComputeOperationOutputCmdHdr.ShortHelp="計算操作輸出";
+DELMSDWkbHeader.DELMSDComputeOperationOutputCmdHdr.LongHelp="計算操作輸出";
+DELMSDWkbHeader.DELMSDComputeOperationOutputCmdHdr.Help="計算操作輸出";
+// 3951 校正官方漢化 end elx Generate Output Renault
+
+
+DELMSDWkbHeader.DELMSDHLResourcesFromOperationHdr.Title="突出顯示關聯資源";
+DELMSDWkbHeader.DELMSDHLResourcesFromOperationHdr.ShortHelp="突出顯示關聯資源";
+DELMSDWkbHeader.DELMSDHLResourcesFromOperationHdr.LongHelp="突出顯示與操作關聯的資源";
+DELMSDWkbHeader.DELMSDHLResourcesFromOperationHdr.Help="突出顯示與操作關聯的資源";
+
+// 3951 校正官方漢化------------------------------- BEGIN SYSTEM MANAGEMENT TOOLBAR --------------------------------------
+
+DELMSDWkbHeader.DELMSDDefineScopeHdr.Title="創建系統流程范圍";
+DELMSDWkbHeader.DELMSDDefineScopeHdr.ShortHelp="創建系統流程范圍";
+DELMSDWkbHeader.DELMSDDefineScopeHdr.Help="創建系統和流程之間的范圍";
+DELMSDWkbHeader.DELMSDDefineScopeHdr.LongHelp="創建系統和流程之間的范圍";
+
+// 3951 校正官方漢化 elx Generate Output Renault 
+DELMSDWkbHeader.DELMSDComputeSystemOutputCmdHdr.Title="計算系統輸出";
+DELMSDWkbHeader.DELMSDComputeSystemOutputCmdHdr.ShortHelp="計算系統輸出";
+DELMSDWkbHeader.DELMSDComputeSystemOutputCmdHdr.Help="計算系統輸出";
+DELMSDWkbHeader.DELMSDComputeSystemOutputCmdHdr.LongHelp="計算系統輸出";
+// 3951 校正官方漢化 end elx Generate Output Renault
+
+// 3951 校正官方漢化 DA VR2011x
+// 3951 校正官方漢化 Reconnect Process System Scope command
+DELMSDWkbHeader.DELMSDReconnectSystemProcessScopeCmdHdr.Title="重新連接系統流程范圍";
+DELMSDWkbHeader.DELMSDReconnectSystemProcessScopeCmdHdr.Help="重新連接系統流程范圍";
+DELMSDWkbHeader.DELMSDReconnectSystemProcessScopeCmdHdr.LongHelp="重新連接系統流程范圍";
+DELMSDWkbHeader.DELMSDReconnectSystemProcessScopeCmdHdr.ShortHelp="重新連接系統流程范圍";
+// 3951 校正官方漢化 end DA VR2011x
+
+DELMSDWkbHeader.DELPPRCandidateResourceLinkCmdHdr.Title="創建候選資源鏈接";
+DELMSDWkbHeader.DELPPRCandidateResourceLinkCmdHdr.ShortHelp="創建候選資源鏈接";
+DELMSDWkbHeader.DELPPRCandidateResourceLinkCmdHdr.Help="創建和管理候選資源鏈接和范圍";
+DELMSDWkbHeader.DELPPRCandidateResourceLinkCmdHdr.LongHelp="創建和管理候選資源鏈接和范圍";
+
+DELMSDWkbHeader.DELPPRCreateCandidateResourceLinkCmdHdr.Title="創建候選資源鏈接";
+DELMSDWkbHeader.DELPPRCreateCandidateResourceLinkCmdHdr.ShortHelp="創建候選資源鏈接";
+DELMSDWkbHeader.DELPPRCreateCandidateResourceLinkCmdHdr.Help="創建候選資源鏈接";
+DELMSDWkbHeader.DELPPRCreateCandidateResourceLinkCmdHdr.LongHelp="創建候選資源鏈接";
+
+DELMSDWkbHeader.DELPPRCreateCandidateResourceScopeCmdHdr.Title="創建候選資源范圍";
+DELMSDWkbHeader.DELPPRCreateCandidateResourceScopeCmdHdr.ShortHelp="創建候選資源范圍";
+DELMSDWkbHeader.DELPPRCreateCandidateResourceScopeCmdHdr.Help="創建候選資源范圍";
+DELMSDWkbHeader.DELPPRCreateCandidateResourceScopeCmdHdr.LongHelp="創建候選資源范圍";
+
+DELMSDWkbHeader.DELPPRRemoveCandidateResourceScopeCmdHdr.Title="移除候選資源范圍";
+DELMSDWkbHeader.DELPPRRemoveCandidateResourceScopeCmdHdr.ShortHelp="移除候選資源范圍";
+DELMSDWkbHeader.DELPPRRemoveCandidateResourceScopeCmdHdr.Help="移除候選資源范圍";
+DELMSDWkbHeader.DELPPRRemoveCandidateResourceScopeCmdHdr.LongHelp="移除候選資源范圍";
+
+DELMSDWkbHeader.DELMSDProductFlowCreationCmdHdr.Title="創建產品流";
+DELMSDWkbHeader.DELMSDProductFlowCreationCmdHdr.ShortHelp="創建產品流";
+DELMSDWkbHeader.DELMSDProductFlowCreationCmdHdr.Help="在兩個系統或操作之間創建產品流";
+DELMSDWkbHeader.DELMSDProductFlowCreationCmdHdr.LongHelp="在兩個系統或操作之間創建產品流";
+
+// 3951 校正官方漢化 Michelin Scrap Yield
+DELMSDWkbHeader.DELMSDInputOutputViewCmdHdr.Title="廢料輸入/輸出";
+DELMSDWkbHeader.DELMSDInputOutputViewCmdHdr.ShortHelp="帶有廢料的輸入/輸出";
+DELMSDWkbHeader.DELMSDInputOutputViewCmdHdr.Help="定義選定系統的輸入/輸出上的廢料";
+DELMSDWkbHeader.DELMSDInputOutputViewCmdHdr.LongHelp="定義選定系統的輸入/輸出上的廢料";
+
+// 3951 校正官方漢化------------------------------- END SYSTEM AUTHORING TOOLBAR ----------------------------------------
+
+
+// 3951 校正官方漢化------------------------------- BEGIN SYSTEM SOURCING TOOLBAR --------------------------------------
+// 3951 校正官方漢化 Michelin Input Output Creation
+DELMSDWkbHeader.DELMSDInputOutputCreationCmdHdr.Title="輸入/輸出創建";
+DELMSDWkbHeader.DELMSDInputOutputCreationCmdHdr.ShortHelp="輸入/輸出創建";
+DELMSDWkbHeader.DELMSDInputOutputCreationCmdHdr.Help="輸入/輸出創建面板";
+DELMSDWkbHeader.DELMSDInputOutputCreationCmdHdr.LongHelp="輸入/輸出創建面板";
+
+// 3951 校正官方漢化 Michelin Sourcing Creation
+DELMSDWkbHeader.DELMSDSourcingCreationCmdHdr.Title="創建采購";
+DELMSDWkbHeader.DELMSDSourcingCreationCmdHdr.ShortHelp="創建采購";
+DELMSDWkbHeader.DELMSDSourcingCreationCmdHdr.Help="采購創建面板";
+DELMSDWkbHeader.DELMSDSourcingCreationCmdHdr.LongHelp="采購創建面板";
+// 3951 校正官方漢化------------------------------- END SYSTEM SOURCING TOOLBAR ----------------------------------------
+
+// 3951 校正官方漢化 Workload Balancing
+DELMSDWkbHeader.DELMSDWorkloadBalancingCmdHdr.Title="工作量平衡";
+DELMSDWkbHeader.DELMSDWorkloadBalancingCmdHdr.ShortHelp="工作量平衡";
+DELMSDWkbHeader.DELMSDWorkloadBalancingCmdHdr.Help="工作量平衡面板";
+DELMSDWkbHeader.DELMSDWorkloadBalancingCmdHdr.LongHelp="工作量平衡面板";
+
+// 3951 校正官方漢化 Automatic Line Balancing
+DELMSDWkbHeader.DELMSDSystemCapacitySolverCmdHdr.Title="自動線平衡";
+DELMSDWkbHeader.DELMSDSystemCapacitySolverCmdHdr.ShortHelp="自動線平衡";
+DELMSDWkbHeader.DELMSDSystemCapacitySolverCmdHdr.Help="將操作從活動的源系統平衡到目標系統";
+DELMSDWkbHeader.DELMSDSystemCapacitySolverCmdHdr.LongHelp="將操作從活動的源系統平衡到目標系統";
+
+// 3951 校正官方漢化 Begin Create operation subtoolbar
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityGeneralHdr.Title="常規操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityGeneralHdr.ShortHelp="創建常規操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityGeneralHdr.Help="創建常規操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityGeneralHdr.LongHelp="創建常規操作";
+
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityPointFasteningHdr.Title="點緊固操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityPointFasteningHdr.ShortHelp="創建點緊固操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityPointFasteningHdr.Help="創建點緊固操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityPointFasteningHdr.LongHelp="創建點緊固操作";
+
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityCurveFasteningHdr.Title="曲線緊固操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityCurveFasteningHdr.ShortHelp="創建曲線緊固操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityCurveFasteningHdr.Help="創建曲線緊固操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityCurveFasteningHdr.LongHelp="創建曲線緊固操作";
+
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityLoadingHdr.Title="加載操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityLoadingHdr.ShortHelp="創建加載操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityLoadingHdr.Help="創建加載操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityLoadingHdr.LongHelp="創建加載操作";
+
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityUnloadingHdr.Title="卸載操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityUnloadingHdr.ShortHelp="創建加載操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityUnloadingHdr.Help="創建加載操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityUnloadingHdr.LongHelp="創建加載操作";
+
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityTransferHdr.Title="傳輸操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityTransferHdr.ShortHelp="創建傳送操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityTransferHdr.Help="創建傳送操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityTransferHdr.LongHelp="創建傳送操作";
+
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityRemovingMaterialHdr.Title="移除材料操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityRemovingMaterialHdr.ShortHelp="創建移除物料操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityRemovingMaterialHdr.Help="創建移除物料操作";
+DELMSDWkbHeader.DELMSDOperationCreationCmdBIWActivityRemovingMaterialHdr.LongHelp="創建移除物料操作";
+// 3951 校正官方漢化End Create operation subtoolbar
+
+// 3951 校正官方漢化 Begin precedence subtoolbar
+DELMSDWkbHeader.DELMSDCreatePrecedenceHdr.Title="創建先行活動鏈接";
+DELMSDWkbHeader.DELMSDCreatePrecedenceHdr.ShortHelp="創建先行活動鏈接";
+DELMSDWkbHeader.DELMSDCreatePrecedenceHdr.Help="在兩個操作之間創建先行活動鏈接";
+DELMSDWkbHeader.DELMSDCreatePrecedenceHdr.LongHelp="在兩個操作之間創建先行活動鏈接";
+
+// 3951 校正官方漢化 WXJ
+// 3951 校正官方漢化DELMSDWkbHeader.DELMSDCreateDataFlowHdr.Title     = "Create Data Flow Link";
+// 3951 校正官方漢化DELMSDWkbHeader.DELMSDCreateDataFlowHdr.ShortHelp = "Create Data Flow link";
+// 3951 校正官方漢化DELMSDWkbHeader.DELMSDCreateDataFlowHdr.Help      = "Creates a data flow link between two operations";
+// 3951 校正官方漢化DELMSDWkbHeader.DELMSDCreateDataFlowHdr.LongHelp  = "Creates a data flow link between two operations";
+
+
+DELMSDWkbHeader.DELMSDCreateStartStartHdr.Title="創建開始-開始鏈接";
+DELMSDWkbHeader.DELMSDCreateStartStartHdr.ShortHelp="創建開始-開始鏈接";
+DELMSDWkbHeader.DELMSDCreateStartStartHdr.Help="在兩個操作之間創建開始-開始鏈接";
+DELMSDWkbHeader.DELMSDCreateStartStartHdr.LongHelp="在兩個操作之間創建開始-開始鏈接";
+
+DELMSDWkbHeader.DELMSDCreateEndEndHdr.Title="創建結束-結束鏈接";
+DELMSDWkbHeader.DELMSDCreateEndEndHdr.ShortHelp="創建結束-結束鏈接";
+DELMSDWkbHeader.DELMSDCreateEndEndHdr.Help="在兩個操作之間創建結束-結束鏈接";
+DELMSDWkbHeader.DELMSDCreateEndEndHdr.LongHelp="在兩個操作之間創建結束-結束鏈接";
+
+DELMSDWkbHeader.DELMSDCreateEndStartHdr.Title="創建結束-開始鏈接";
+DELMSDWkbHeader.DELMSDCreateEndStartHdr.ShortHelp="創建結束-開始鏈接";
+DELMSDWkbHeader.DELMSDCreateEndStartHdr.Help="在兩個操作之間創建結束-開始鏈接";
+DELMSDWkbHeader.DELMSDCreateEndStartHdr.LongHelp="在兩個操作之間創建結束-開始鏈接";
+
+DELMSDWkbHeader.DELMSDCreatePreviousCycleHdr.Title="創建前一周期鏈接";
+DELMSDWkbHeader.DELMSDCreatePreviousCycleHdr.ShortHelp="創建前一周期鏈接";
+DELMSDWkbHeader.DELMSDCreatePreviousCycleHdr.Help="在兩個操作之間創建前一周期鏈接";
+DELMSDWkbHeader.DELMSDCreatePreviousCycleHdr.LongHelp="在兩個操作之間創建前一周期鏈接";
+// 3951 校正官方漢化 End precedence subtoolbar
+
+// 3951 校正官方漢化 END SYTEM AUTHORING TOOLBAR
+
+// 3951 校正官方漢化 BEGIN time analysis management toolbar
+// 3951 校正官方漢化DELMSDWkbHeader.DELTACreateAnalysisCmdHdr.Title="Create Time Analysis";
+// 3951 校正官方漢化DELMSDWkbHeader.DELTACreateAnalysisCmdHdr.Help="Create Time Analysis";
+// 3951 校正官方漢化DELMSDWkbHeader.DELTACreateAnalysisCmdHdr.LongHelp="Creates Time Analysis for an operation";
+// 3951 校正官方漢化DELMSDWkbHeader.DELTACreateAnalysisCmdHdr.ShortHelp="Creates Time Analysis for an operation";
+
+// 3951 校正官方漢化DELMSDWkbHeader.DELSTTAttachExistingAnalysisCmdHdr.Title="Attach Existing Time Analysis";
+// 3951 校正官方漢化DELMSDWkbHeader.DELSTTAttachExistingAnalysisCmdHdr.ShortHelp="Attach Existing Time Analysis";
+// 3951 校正官方漢化DELMSDWkbHeader.DELSTTAttachExistingAnalysisCmdHdr.Help="Attaches an existing Time Analysis to an operation";
+// 3951 校正官方漢化DELMSDWkbHeader.DELSTTAttachExistingAnalysisCmdHdr.LongHelp="Attaches an existing Time Analysis to an operation";
+
+// 3951 校正官方漢化DELMSDWkbHeader.DELTAEditAnalysisCmdHdr.Title="Edit Time Analysis";
+// 3951 校正官方漢化DELMSDWkbHeader.DELTAEditAnalysisCmdHdr.Help="Edit Time Analysis";
+// 3951 校正官方漢化DELMSDWkbHeader.DELTAEditAnalysisCmdHdr.LongHelp="Edits the Time Analysis of an operation";
+// 3951 校正官方漢化DELMSDWkbHeader.DELTAEditAnalysisCmdHdr.ShortHelp="Edits the Time Analysis of an operation";
+
+// 3951 校正官方漢化DELMSDWkbHeader.DELTADeleteAnalysisCmdHdr.Title="Delete Time Analysis";
+// 3951 校正官方漢化DELMSDWkbHeader.DELTADeleteAnalysisCmdHdr.Help="Delete Time Analysis";
+// 3951 校正官方漢化DELMSDWkbHeader.DELTADeleteAnalysisCmdHdr.LongHelp="Deletes the Time Analysis of an operation";
+// 3951 校正官方漢化DELMSDWkbHeader.DELTADeleteAnalysisCmdHdr.ShortHelp="Deletes the Time Analysis of an operation";
+// 3951 校正官方漢化 END time analysis management toolbar
+
+// 3951 校正官方漢化 Configuration split command
+DELMSDWkbHeader.DELPPRConfigSplitCmdHdrSystem.Title="配置分割";
+DELMSDWkbHeader.DELPPRConfigSplitCmdHdrSystem.Help="配置分割";
+DELMSDWkbHeader.DELPPRConfigSplitCmdHdrSystem.LongHelp="配置分割";
+DELMSDWkbHeader.DELPPRConfigSplitCmdHdrSystem.ShortHelp="配置分割";
+
+DELMSDWkbHeader.DELPPRConfigSplitCmdHdrOperation.Title="配置分割";
+DELMSDWkbHeader.DELPPRConfigSplitCmdHdrOperation.Help="配置分割";
+DELMSDWkbHeader.DELPPRConfigSplitCmdHdrOperation.LongHelp="配置分割";
+DELMSDWkbHeader.DELPPRConfigSplitCmdHdrOperation.ShortHelp="配置分割";
+
+
+// 3951 校正官方漢化 BEGIN Update Order Operations in System Tree toolbar
+DELMSDWkbHeader.DELMSDOrderSysOpsBySequenceCmdHdr.Title="按序列排序";
+DELMSDWkbHeader.DELMSDOrderSysOpsBySequenceCmdHdr.ShortHelp="按序列排序";
+DELMSDWkbHeader.DELMSDOrderSysOpsBySequenceCmdHdr.Help="按 PPR 結構樹中的序列為系統/操作排序";
+DELMSDWkbHeader.DELMSDOrderSysOpsBySequenceCmdHdr.LongHelp="按 PPR 結構樹中的序列為系統/操作排序";
+
+DELMSDWkbHeader.DELMSDRestoreDefaultSysOpsOrderCmdHdr.Title="恢復順序";
+DELMSDWkbHeader.DELMSDRestoreDefaultSysOpsOrderCmdHdr.ShortHelp="恢復順序";
+DELMSDWkbHeader.DELMSDRestoreDefaultSysOpsOrderCmdHdr.Help="恢復 PPR 結構樹中系統/操作的默認順序";
+DELMSDWkbHeader.DELMSDRestoreDefaultSysOpsOrderCmdHdr.LongHelp="恢復 PPR 結構樹中系統/操作的默認順序";
+// 3951 校正官方漢化 END Update Order Operations in System Tree toolbar
+
+// 3951 校正官方漢化Define Operations
+DELMSDWkbHeader.DELMSDDefineOperationsCmd.Title="定義操作";
+DELMSDWkbHeader.DELMSDDefineOperationsCmd.ShortHelp="定義操作";
+DELMSDWkbHeader.DELMSDDefineOperationsCmd.Help="定義操作";
+DELMSDWkbHeader.DELMSDDefineOperationsCmd.LongHelp="定義操作";
+
+DELMSDWkbHeader.DELMSDProductFlowCmdHdr.Title="定義詳細產品流";
+DELMSDWkbHeader.DELMSDProductFlowCmdHdr.ShortHelp="定義詳細產品流";
+DELMSDWkbHeader.DELMSDProductFlowCmdHdr.Help="定義詳細產品流";
+DELMSDWkbHeader.DELMSDProductFlowCmdHdr.LongHelp="定義詳細產品流";
+
+DELMSDWkbHeader.DELMSDManageScopeCmdHdr.Title="管理范圍";
+DELMSDWkbHeader.DELMSDManageScopeCmdHdr.Help="管理范圍";
+DELMSDWkbHeader.DELMSDManageScopeCmdHdr.LongHelp="管理范圍";
+DELMSDWkbHeader.DELMSDManageScopeCmdHdr.ShortHelp="管理范圍";
+
+// 3951 校正官方漢化 Premises
+DELMSDWkbHeader.DELPPRPremisesShiftModelCmdHdr.Title="定義轉換模型";
+DELMSDWkbHeader.DELPPRPremisesShiftModelCmdHdr.ShortHelp="定義轉換模型";
+DELMSDWkbHeader.DELPPRPremisesShiftModelCmdHdr.Help="定義轉換模型";
+DELMSDWkbHeader.DELPPRPremisesShiftModelCmdHdr.LongHelp="定義轉換模型";
+
+DELMSDWkbHeader.DELPPRPremisesProductionDemandCmdHdr.Title="定義生產要求";
+DELMSDWkbHeader.DELPPRPremisesProductionDemandCmdHdr.ShortHelp="定義生產要求";
+DELMSDWkbHeader.DELPPRPremisesProductionDemandCmdHdr.Help="定義生產要求";
+DELMSDWkbHeader.DELPPRPremisesProductionDemandCmdHdr.LongHelp="定義生產要求";
+
+
+DELMSDWkbHeader.DELPPRCreateProductionDemandCmdHdr.Title="創建生產要求";
+DELMSDWkbHeader.DELPPRCreateProductionDemandCmdHdr.ShortHelp="創建生產要求";
+DELMSDWkbHeader.DELPPRCreateProductionDemandCmdHdr.Help="創建生產要求";
+DELMSDWkbHeader.DELPPRCreateProductionDemandCmdHdr.LongHelp="創建生產要求";
+
+// 3951 校正官方漢化 Associate Picture to System
+DELMSDWkbHeader.DELMSDAssociatePicturesDefineCmdHdr.Title="定義圖片";
+DELMSDWkbHeader.DELMSDAssociatePicturesDefineCmdHdr.ShortHelp="定義圖片";
+DELMSDWkbHeader.DELMSDAssociatePicturesDefineCmdHdr.Help="定義圖片";
+DELMSDWkbHeader.DELMSDAssociatePicturesDefineCmdHdr.LongHelp="定義圖片";
+
+DELMSDWkbHeader.DELMSDAssociatePicturesRemoveCmdHdr.Title="移除圖片";
+DELMSDWkbHeader.DELMSDAssociatePicturesRemoveCmdHdr.ShortHelp="移除圖片";
+DELMSDWkbHeader.DELMSDAssociatePicturesRemoveCmdHdr.Help="移除圖片";
+DELMSDWkbHeader.DELMSDAssociatePicturesRemoveCmdHdr.LongHelp="移除圖片";
+
+DELMSDWkbHeader.DELPPRPremisesProductionSupplyCmdHdr.Title="定義生產供應";
+DELMSDWkbHeader.DELPPRPremisesProductionSupplyCmdHdr.ShortHelp="定義生產供應";
+DELMSDWkbHeader.DELPPRPremisesProductionSupplyCmdHdr.Help="定義生產供應";
+DELMSDWkbHeader.DELPPRPremisesProductionSupplyCmdHdr.LongHelp="定義生產供應";
+DELMSDWkbHeader.DELMSDOperationPlanningInitCmdHdr.Title="初始化操作計劃";
+DELMSDWkbHeader.DELMSDOperationPlanningInitCmdHdr.ShortHelp="初始化操作計劃";
+DELMSDWkbHeader.DELMSDOperationPlanningInitCmdHdr.Help="初始化操作計劃";
+DELMSDWkbHeader.DELMSDOperationPlanningInitCmdHdr.LongHelp="初始化操作計劃";

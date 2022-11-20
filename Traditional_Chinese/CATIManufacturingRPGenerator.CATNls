@@ -1,0 +1,55 @@
+// 3951 校正官方漢化 -------------------------
+// 3951 校正官方漢化 General NLS Output Format 
+// 3951 校正官方漢化 -------------------------
+// 3951 校正官方漢化 * Comment before each entity is generated *
+// 3951 校正官方漢化 Arguments are: Name 
+// 3951 校正官方漢化CATIAManufacturingGenerateComment_Start = "# Start generation of : %s";    // 3951 校正官方漢化 Arguments are: Name
+CATIManufacturingGenerateComment_Start="# %s"; // 3951 校正官方漢化 Arguments are: Name
+
+// 3951 校正官方漢化 * Comment after each entity has been generated *
+CATIManufacturingGenerateComment_End="# 結束生成 %s"; // 3951 校正官方漢化 Arguments are: Name 
+
+CATIManufacturingGenerateComment_SeparatorLine="# -------------------------------------------------------------------";
+
+// 3951 校正官方漢化 -------------------------
+// 3951 校正官方漢化 Information on the File 
+// 3951 校正官方漢化 -------------------------
+CATIManufacturingDocumentGenerateComment_Date="# 生成于 %s"; // 3951 校正官方漢化 Arguments are: Date
+
+// 3951 校正官方漢化 ---------------------------------------
+// 3951 校正官方漢化 Format of Output Generation
+// 3951 校正官方漢化 ---------------------------------------
+
+// 3951 校正官方漢化Message format like : CATMfgGenerationToolMotion    = "GOTO/ /P6,/P2,/P3";   // 3951 校正官方漢化 Doesn't work   
+
+// 3951 校正官方漢化 * Tool Definition *
+// 3951 校正官方漢化 Arguments are : Name, Cutter diameter, Corner radius, distance, center corner to tool axis, corner radius, 0.0, beta angle, heigt
+MfgToolBase="# 刀具 = %s\nTOOLAPT %10.6f,%10.6f,%10.6f,%10.6f,%10.6f,%10.6f,%10.6f # %s\n";
+
+// 3951 校正官方漢化 * Tool Motion *
+CATMfgGenerationToolMotion="%s \n"; // 3951 校正官方漢化 
+
+// 3951 校正官方漢化 * TableHeadRotation *
+TableHeadRotation="旋轉坯料 %11.5f,%11.5f,%11.5f,%11.5f,%11.5f,%11.5f,%11.5f\n"; // 3951 校正官方漢化 Arguments are :  X, Y, Z, U, V, W, A (center,axis,angle) 
+
+// 3951 校正官方漢化 * MfgToolPathConstantToolAxis *
+MfgToolPathConstantToolAxis="旋轉坯料 %11.5f,%11.5f,%11.5f,%11.5f,%11.5f,%11.5f,%11.5f\n"; // 3951 校正官方漢化 Arguments are :  X, Y, Z, U, V, W, A (center,axis,angle) 
+
+// 3951 校正官方漢化 ---------------------------------------
+// 3951 校正官方漢化 PP Instructions
+// 3951 校正官方漢化 ---------------------------------------
+
+// 3951 校正官方漢化 Warning this doesn't work on each OS
+// 3951 校正官方漢化 * Tool Change : Arguments are : Order in list, Tool changement point.
+ToolChange="%s %d # %s\n";
+ToolChangeLathe="%s %d # %s\n";
+
+
+// 3951 校正官方漢化 ---------------------------------------
+// 3951 校正官方漢化 TURNING Definition
+// 3951 校正官方漢化 ---------------------------------------
+// 3951 校正官方漢化 * Circular motion for lathe : center, angle (+/-)
+CATMfgGenerationCircularMotion="旋轉圓弧    %11.5f,%11.5f,%11.5f,%11.5f\n";
+
+// 3951 校正官方漢化 * Circular motion for lathe : Number of points in Profile, CGR File name, Profile definition
+MfgLatheToolAssembly="%s\n";

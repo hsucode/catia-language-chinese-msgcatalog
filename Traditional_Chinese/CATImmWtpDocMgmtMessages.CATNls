@@ -1,0 +1,377 @@
+
+DocumentPLMChooserTitle="文檔選擇器";
+
+DocumentCreationSuccessful="已成功創建文檔！";
+DocumentCreationFailed="無法創建文檔。\n選定文件擴展名可能不受支持。";
+DocumentCreationDuplicateNameWarning="警告：/P1 已在使用中。已將時間戳添加到 /P2 中以使其唯一。";
+DocumentDuplicateUniqueAttributesFailure="警告：所需屬性的組合不唯一。請修改值以使組合唯一。";
+DocumentCreationNoExtension="文檔創建失敗。不支持無擴展名的文件。";
+DocumentTruncatedAttributeWarning="警告：屬性值 /P1 因太長而被截斷（最大長度：/P2）。按“完成”按鈕之前，請檢查此值以確認其具有足夠的描述性。";
+DocumentTruncatedAttributeFailure="警告：屬性值 /P1 因太長而被截斷（最大長度：/P2）。但仍然無法自動設置此屬性。請手動添加任何必要值。";
+DocumentAttributeSettingFailure="警告：無法自動設置屬性值 /P1。請手動添加任何必要值。";
+DocumentNewCancelled="已取消“文件選擇器”。\n要再次啟動“文件選擇器”，請按“PLM 新建”對話框中的“上一步”按鈕，\n然后再次按“下一步”按鈕。";
+
+DocumentCopyOutSuccessful="已成功下載文檔！";
+DocumentCopyOutFailed="文檔下載失敗！";
+DocumentCopyOutCancelled="已取消文檔下載命令！";
+DocumentCopyOutSuccessfulMultiple="已成功下載所有文檔！";
+DocumentCopyOutSuccessfulPartialMultiple="未成功下載所有文檔！";
+DocumentCopyOutFailedMultiple="無法下載文檔！";
+DocumentCopyOutSuccessfulSkipped="在下載過程中至少已跳過 1 個文檔。";
+DocumentCopyOutSuccessfulButAllSkipped="由于不允許文件覆蓋而已跳過所有文檔的“下載”。";
+DocumentCopyOutSuccessfulPartialMultipleSkipped="未成功下載所有文檔！某些下載失敗，某些被跳過。";
+DocumentCopyOutFailedMultipleSkipped="由于不允許文件覆蓋而無法下載文檔或已跳過這些文檔。";
+
+DocumentCheckInSuccessful="已成功簽入文檔！";
+DocumentCheckInFailed="文檔簽入失敗！";
+DocumentCheckInCancelled="已取消簽入文檔命令！";
+DocumentCheckInOnlyOneAtATime="請一次只選擇一個要簽入的文檔！";
+DocumentCheckInShortCutConfirmation="以下文件是否是您要簽入的文件？\n /P1 ";
+DocumentCheckInFileIsCurrentlyProjected="當前正在另一個應用程序（“自動簽入”模式）中修改此文檔。\n 當前不允許文檔的“手動簽入”。";
+DocumentCheckInFileIsNotPresent="未找到文件！\n請選擇其他文件。";
+DocumentCheckInFileIsCurrentlyBeingModified="當前正在另一個共享訪問權限不同于請求文件的共享訪問權限的應用程序中修改此文檔。\n 當前不允許文檔的“手動簽入”。";
+DocumentCheckInOppositeCheckedOutState="已簽入以下文檔：\n /P1";
+
+DocumentCheckOutSuccessful="文檔簽出成功！";
+DocumentCheckOutFailed="文檔簽出失敗！";
+DocumentCheckOutCancelled="已取消簽出文檔！";
+DocumentCheckOutSuccessfulMultiple="已成功簽出所有文檔！";
+DocumentCheckOutSuccessfulPartialMultiple="未成功簽出所有文檔！";
+DocumentCheckOutFailedMultiple="無法簽出文檔！";
+DocumentCheckOutSuccessfulSkipped="在簽出過程中至少已跳過 1 個文檔。";
+DocumentCheckOutSuccessfulButAllSkipped="由于不允許文件覆蓋而已跳過所有文檔的“簽出”。";
+DocumentCheckOutSuccessfulPartialMultipleSkipped="未成功簽出所有文檔！某些簽出失敗，某些被跳過。";
+DocumentCheckOutFailedMultipleSkipped="由于不允許文件覆蓋而無法簽出文檔或已跳過這些文檔。";
+DocumentCheckOutOppositeCheckedOutState="已簽出以下文檔：\n /P1 \n";
+
+CBPDocFileCheckInSuccessful="已成功簽入文件！";
+CBPDocFileCheckInFailed="文件簽入失敗！";
+CBPDocFileCheckInCancelled="已取消簽入文件！";
+CBPDocFileCheckInSkippedDifferentFile="由于文件不同而已跳過文件的“簽入”。";
+CBPDocFileCheckInNoReviseAccess="文件簽入失敗。\n無法執行此操作";
+CBPDocFileCheckInOnlyOneAtATime="請一次只選擇一個要簽入的文檔。";
+CBPDocFileCheckInNoFileForCheckin="文件 /P1 不存在。\n簽入文件失敗。";
+CBPDocFileCheckInOppositeCheckedOutState="未簽出以下文件：\n /P1 \n";
+CBPDocFileCheckInOtherFileSameName="其他文件具有同一名稱：\n /P1 \n 已取消簽入。";
+
+CBPDocAddUpdateFileFailed="添加更新文件命令失敗！";
+CBPDocAddUpdateFileCancelled="已取消添加更新文件命令！";
+CBPDocAddUpdateFileAddSuccessful="文件添加成功！";
+CBPDocAddUpdateFileNoAddFileAccess="添加更新文件命令失敗！無法執行此操作。";
+CBPDocAddUpdateFileUpdateSuccessful="文件更新成功！";
+CBPDocAddUpdateFileAddFailed="文件添加失敗！";
+CBPDocAddUpdateFileUpdateFailed="文件更新失敗！";
+CBPDocAddUpdateFileUpdateCancelled="已取消更新現有文件！";
+CBPDocAddUpdateFileUpdateNoCheckedOut="文件已存在。\n由于未簽出此文件而無法進行更新。";
+CBPDocAddUpdateFileOnlyOneAtATime="請一次只選擇一個要添加或更新文件的文檔！";
+CBPDocAddUpdateFileNoDocSelected="請選擇一個要添加或更新文件的文檔！";
+CBPDocAddUpdateFileCheckOutFailedNoUpdate="由于簽出失敗而無法更新。";
+CBPDocAddUpdateFileNoCheckOutAccess="簽出時添加更新文件命令失敗。\n無法執行此操作";
+CBPDocAddUpdateFileNoCheckInAccess="簽入時添加更新文件命令失敗。\n無法執行此操作";
+
+CBPDocFileCheckOutSuccessful="已成功簽出文件！";
+CBPDocFileCheckOutFailed="文件簽出失敗！";
+CBPDocFileCheckOutCancelled="已取消簽出文件！";
+CBPDocFileCheckOutSuccessfulMultiple="已成功簽出所有文件！";
+CBPDocFileCheckOutSuccessfulPartialMultiple="未成功簽出所有文件！";
+CBPDocFileCheckOutFailedMultiple="無法簽出文件！";
+CBPDocFileCheckOutSuccessfulSkipped="在簽出過程中至少已跳過 1 個文件。";
+CBPDocFileCheckOutSuccessfulButAllSkipped="由于不允許文件覆蓋而已跳過所有文件的“簽出”。";
+CBPDocFileCheckOutSuccessfulPartialMultipleSkipped="未能成功簽出所有文件！一些文件簽出失敗，一些文件被跳過。";
+CBPDocFileCheckOutFailedMultipleSkipped="由于不允許文件覆蓋，未能簽出文件或已跳過這些文件！";
+CBPDocFileCheckOutOppositeCheckedOutState="下列文件已經簽出：\n /P1\n";
+CBPDocFileCheckOutSuccessfulButDownloadFailed="文件已簽出但下載失敗！";
+CBPDocFileCheckOutAccessDeniedAll="簽出失敗！\n無法簽出所選文件。";
+CBPDocFileCheckOutFailedAccessDeniedAll="簽出失敗！\n無權簽出選定文件。";
+CBPDocFileCheckOutFailedMultipleAccessDeniedAll="簽出失敗！\n無權簽出選定文件。";
+CBPDocFileCheckOutWithAccessDenied="檢出失敗！\n無法檢出以下文件：/P1";
+CBPDocFileCheckOutFailedWithAccessDenied="檢出失敗！\n無法檢出以下文件：/P1";
+CBPDocFileCheckOutSuccessfulPartialMultipleWithAccessDenied="部分文件簽出失敗！\n無法簽出以下文件：/P1";
+CBPDocFileCheckOutFailedMultipleWithAccessDenied="命令失敗，因為無法簽出以下文件: /P1";
+CBPDocFileCheckOutSuccessfulPartialMultipleSkippedWithAccessDenied="未成功簽出全部文件！一些文件簽出失敗，還有一些文件被跳過。\n無法簽出以下文件：/P1";
+CBPDocFileCheckOutFailedMultipleSkippedWithAccessDenied="由于不允許文件覆蓋而無法簽出文件或已跳過這些文件！\n無法簽出以下文件：/P1";
+
+CBPDocFileOpenForEditSuccessful="已成功打開文件！";
+CBPDocFileOpenForEditFailed="文件簽出失敗！";
+CBPDocFileOpenForEditAccessDeniedAll="打開進行編輯失敗！無法簽出所選文件。";
+CBPDocFileOpenForEditFailedAccessDeniedAll="打開以進行編輯失敗！無權簽出選定文件。";
+CBPDocFileOpenForEditFailedMultipleAccessDeniedAll="打開以進行編輯失敗！無權簽出選定文件。";
+CBPDocFileOpenForEditCancelled="已取消簽出文件！";
+CBPDocFileOpenForEditSuccessfulMultiple="已成功打開所有文件！";
+CBPDocFileOpenForEditSuccessfulPartialMultiple="未成功簽出所有文件！";
+CBPDocFileOpenForEditFailedMultiple="無法簽出文件！";
+CBPDocFileOpenForEditSuccessfulSkipped="在簽出過程中至少已跳過 1 個文件。";
+CBPDocFileOpenForEditSuccessfulButAllSkipped="由于不允許文件覆蓋而已跳過所有文件的“簽出”。";
+CBPDocFileOpenForEditSuccessfulPartialMultipleSkipped="未成功簽出所有文件！某些簽出失敗，某些被跳過。";
+CBPDocFileOpenForEditFailedMultipleSkipped="由于不允許文件覆蓋而無法簽出文件或已跳過這些文件！";
+CBPDocFileOpenForEditOppositeCheckedOutState="已簽出以下文件：\n /P1 \n";
+CBPDocFileOpenForEditSuccessfulButDownloadFailed="文件已簽出但下載失敗！";
+CBPDocFileOpenForEditFailedWithAccessDenied="文件簽出失敗！無法簽出以下文件：/P1";
+CBPDocFileOpenForEditWithAccessDenied="打開進行編輯失敗！無法簽出以下文件：/P1";
+CBPDocFileOpenForEditSuccessfulPartialMultipleWithAccessDenied="未成功簽出全部文件！無法簽出以下文件：/P1";
+CBPDocFileOpenForEditFailedMultipleWithAccessDenied="簽出文件失敗！無法簽出以下文件：/P1";
+CBPDocFileOpenForEditSuccessfulSkippedWithAccessDenied="在簽出期間，至少有一個文件被跳過。無法簽出以下文件：/P1";
+CBPDocFileOpenForEditSuccessfulPartialMultipleSkippedWithAccessDenied="未成功簽出全部文件！一些文件簽出失敗，一些文件被跳過。\n無法簽出以下文件：/P1";
+CBPDocFileOpenForEditFailedMultipleSkippedWithAccessDenied="由于不允許文件覆蓋而無法簽出文件或已跳過這些文件！\n無法簽出以下文件：/P1";
+CBPDocFileOpenForEditSuccessfulButDownloadFailedWithAccessDenied="文件已簽出但下載失敗！\n無法簽出以下文件：/P1";
+
+CBPDocCheckOutAllFilesSuccessful="“簽出所有文件”命令成功！";
+CBPDocCheckOutAllFilesFailed="“簽出所有文件”命令失敗！";
+CBPDocCheckOutAllFilesCancelled="已取消“簽出所有文件”命令！";
+CBPDocCheckOutAllFilesOnlyOneAtATime="請一次只選擇一個文檔用于“簽出所有文件”命令！";
+CBPDocCheckOutAllFilesOnlyCBPDoc="請只選擇 CBP 文檔用于“簽出全部文件”命令！";
+CBPDocCheckOutAllFilesSomeFileAlreadyCheckedOut="已簽出此文檔中的某些文件。\n請嘗試通過“實時預覽”簽出其他文件";
+CBPDocCheckOutAllFilesNoFileInDoc="“簽出全部文件”命令失敗！\n所選文檔沒有包含文件。";
+CBPDocCheckOutAllFilesDownloadFailed="至少無法下載文檔中的一個文件。";
+CBPDocCheckOutAllFilesDownloadSuccessfulSkipped="由于不允許文件覆蓋而已跳過文件下載。";
+CBPDocCheckOutAllFilesDirCreationFailure="無法為文件下載創建目錄。";
+CBPDocCheckOutAllFilesOppositeCheckedOutState="已簽出以下文檔：\n /P1 \n";
+CBPDocCheckOutAllFilesSuccessfulSkipped="由于不允許文件覆蓋而已跳過“簽出所有文件”。";
+CBPDocCheckOutAllFilesSuccessfulButAllSkipped="“簽出所有文件”命令成功！\n但是，文件下載被跳過，因為文件覆蓋權限被拒絕。";
+CBPDocCheckOutAllFilesAccessDenied="“簽出所有文件”命令失敗。無法執行此操作！";
+
+CBPDocFileCopyOutSuccessful="已成功下載文檔！";
+CBPDocFileCopyOutFailed="文檔下載失敗！";
+CBPDocFileCopyOutCancelled="已取消文檔下載命令！";
+CBPDocFileCopyOutSuccessfulSkipped="由于不允許文件覆蓋而已跳過文檔下載。";
+
+CATPLMCBPDocFileDeleteSuccessful="已成功刪除文件！";
+CATPLMCBPDocFileDeleteFailed="文件刪除失敗！";
+CATPLMCBPDocFileDeleteErrorInOperation="刪除下列 /P1 個文件出錯：/P2";
+CATPLMCBPDocFileDeleteErrorInOperationAll="刪除所選的 /P1 個文件失敗。\n在刪除操作期間出錯。";
+CATPLMCBPDocFileDeleteNoAccess="刪除以下 /P1 個文件失敗。無法刪除：/P2";
+CATPLMCBPDocFileDeleteNoAccessAll="刪除所選的 /P1 個文件失敗。\n無法刪除其中任何一個文件。";
+CATPLMCBPDocFileDeletePartialSuccess="無法刪除全部文件。僅成功刪除 /P1 個文件。";
+CATPLMCBPDocFileDeleteCouldNotDelete="無法刪除以下 /P1 文件：/P2";
+CATPLMCBPDocFileDeleteCancelled="已取消刪除文件！";
+CATPLMCBPDocDeleteConfirmDialog.Title="文件刪除確認";
+CBPDocFileDeleteWarningLabel.Title="將從文檔中永久地刪除選定的 /P1 文件。\n是否要繼續？";
+
+
+DocumentAttachFail.Title="文檔創建報告";
+DocumentAttachFail.Msg="插入失敗。";
+
+
+CATPLMCBPDocUpdateConfirmDialog.Title="文件更新確認。";
+CBPDocFileNameWarningLabel.Title="文檔中已存在文件 /P1。\n是否要將其更新？";
+CBPDocFileDifferentNameWarningLabel.Title="文件 /P2 與文檔中的 /P1 不同。\n 是否要修訂此文件。";
+
+DocumentViewInEditorSuccessful="已成功打開文檔進行查看！";
+DocumentViewInEditorFailed="無法打開文檔進行查看！";
+DocumentViewInEditorSuccessfulMultiple="已成功打開所有文檔進行查看！";
+DocumentViewInEditorSuccessfulPartialMultiple="未成功打開所有文檔進行查看！";
+DocumentViewInEditorFailedMultiple="無法打開文檔進行查看！";
+DocumentViewInEditorFailedOpen="無法打開文檔進行查看！請驗證您是否具有訪問權限以及此文檔是否仍然存在。";
+
+DocumentOpenForEditSuccessful="已成功打開文檔！";
+DocumentOpenForEditFailed="無法打開文檔！";
+DocumentOpenForEditCancelled="已取消打開文檔！";
+DocumentOpenForEditSuccessfulMultiple="已成功打開所有文檔！";
+DocumentOpenForEditSuccessfulPartialMultiple="未成功打開所有文檔！";
+DocumentOpenForEditFailedMultiple="無法打開文檔！";
+DocumentOpenForEditSuccessfulSkipped="在打開過程中至少已跳過 1 個文檔。";
+DocumentOpenForEditSuccessfulButAllSkipped="由于不允許文件覆蓋而已跳過所有文檔的“打開”。";
+DocumentOpenForEditSuccessfulPartialMultipleSkipped="未成功打開所有文檔！某些打開失敗，某些被跳過。";
+DocumentOpenForEditFailedMultipleSkipped="由于不允許文件覆蓋而無法打開文檔或已跳過這些文檔。";
+DocumentOpenForEditOppositeCheckedOutState="已簽出以下文檔：\n /P1 \n";
+DocumentOLEOpenForEditSuccessful="已成功打開文檔！\n已激活與編輯器的 OLE 通信。";
+DocumentOLEOpenForEditFailed="無法打開文檔！";
+DocumentOLEOpenForEditCloseSaveSuccessful="文檔已關閉，且已成功存回至資源庫！";
+DocumentOLEOpenForEditCloseSaveFailed="文檔無法存回至資源庫。";
+DocumentOLEOpenForEditAwaitingFileAccessToSave="我們正在等待其他程序關閉其對文件 /P1 的訪問\n 是否要繼續等待？";
+DocumentOLEOpenForEditAwaitingFileAccessToSaveYesResponse="能夠保存文件之前，繼續等待其他應用程序關閉文件 /P1。";
+DocumentOLEOpenForEditAwaitingFileAccessToSaveNoResponse="未將修改的文件 /P1 存回至資源庫。\n文檔仍處于“簽出”狀態。\n 關閉仍對其具有訪問權限的應用程序，然后執行手動簽入。";
+DocumentOLEOpenForEditFileProjectionNoLongerActive="從未激活文檔文件投影 /P1，因此不能將更改的文件復制回資源庫。\n 如果需要這些更改，則需要使用“簽入”命令手動將其復制到資源庫。";
+DocumentOLEOpenForEditSkip="/P1 仍處于“簽出”狀態。已跳過此文檔的“取消簽出”。";
+
+
+DocumentWaitForExtractionToComplete="將文件復制到文件系統。";
+DocumentExtractionComplete="已將文件復制到文件系統。";
+DocumentWaitForSaveToComplete="將文件保存到資源庫。";
+DocumentWaitForFileAccess="等待訪問文件。";
+
+DocumentCancelCheckOutSuccessful="取消簽出成功！";
+DocumentCancelCheckOutFailed="取消簽出失敗！";
+DocumentCancelCheckOutCancelled="未取消簽出！";
+DocumentCancelCheckOutAreYouSure="這將取消簽出選定的文檔。是否確定要繼續？";
+DocumentCancelCheckOutAreYouSureMultiple="這將取消簽出所有選定的文檔。是否確定要繼續？";
+DocumentCancelCheckOutAutoCheckInAreYouSure="警告：檢測到 /P1 采用“自動簽入”模式。\n這將取消簽出選定的文檔，并且不能在關閉其編輯器中的文件時將所做的任何更改提交到資源庫。\n是否確定要繼續？";
+DocumentCancelCheckOutSuccessfulMultiple="已成功取消簽出所有文檔。";
+DocumentCancelCheckOutSuccessfulPartialMultiple="未取消簽出所有文檔";
+DocumentCancelCheckOutFailedMultiple="無法取消簽出選定的文檔！";
+DocumentCancelCheckOutOppositeCheckedOutState="未簽出以下文檔：\n /P1";
+DocumentCancelCheckOutFileIsCurrentlyProjected="當前正在其他應用程序（“自動簽入”模式）中修改此文檔。\n 當前不允許文檔的“取消簽出”。";
+DocumentCancelCheckOutFileIsCurrentlyBeingModified="當前正在另一個共享訪問權限不同于請求文件的共享訪問權限的應用程序中修改此文檔。\n 當前不允許文檔的“手動簽入”。";
+DocumentCancelCheckOutSuccessfulSkipped="在執行“取消簽出”命令過程中至少已跳過 1 個文檔。";
+DocumentCancelCheckOutSuccessfulButAllSkipped="已跳過所有文檔的“取消簽出”。";
+DocumentCancelCheckOutSuccessfulPartialMultipleSkipped="未取消所有“文檔簽出”！某些已成功完成，某些被跳過。";
+DocumentCancelCheckOutFailedMultipleSkipped="無法取消文檔的“簽出”或已跳過這些文檔！";
+
+
+DocumentAttributesModifiedSuccessful="已成功修改屬性！";
+DocumentAttributesModifiedFailed="無法修改屬性！";
+
+DocumentChangeStatusSuccessful="更改狀態成功！";
+DocumentChangeStatusFailed="更改狀態失敗！";
+
+DocumentAttachSuccessful="已成功將文檔附加到參考。";
+DocumentAttachFailed="無法將文檔附加到參考！";
+DocumentCreationFailed="創建文檔失敗！";
+DocumentAttachCancelled="已取消將文檔附加到參考！";
+DocumentAttachOnlyOneAtATime="請一次只選擇一個要附加文檔的對象！";
+DocumentAttachSaveNeeded="附加文檔將會保存其他更改。請保存或取消當前會話中的所有修改。";
+DocumentAttachFailedSelection="無法獲取選定的樹元素！";
+DocumentSaveAndAttachFailed="無法保存和附加文檔。";
+
+CATPLMAttachNewDocToRefOnlyOneAtATime="請一次只選擇一個要附加文檔的對象！";
+CATPLMAttachNewDocToRefSaveNeeded="附加此文檔將保存其他更改。請保存或取消當前會話中的所有修改。";
+// 3951 校正官方漢化 Following errors conditions are not expected to happen at all.
+// 3951 校正官方漢化 CATPLMAttachNewDocToRefFailedToGetSelectedObj
+// 3951 校正官方漢化 CATPLMAttachNewDocToRefGotNoSelection
+
+DocumentAttachNoLicense="未授予執行此操作所需的許可證";
+
+DocumentDetachSaveNeeded="拆離文檔將會保存其他更改。請保存或取消當前會話中的所有修改。";
+DocumentDetachSuccessful="已成功從參考中拆離文檔！";
+DocumentDetachFailed="無法從參考中拆離文檔！";
+DocumentDetachCancelled="已取消拆離文檔！";
+DocumentDetachAreYouSure="這將從其父參考中拆離選定的文檔。是否確定要繼續？";
+
+DocumentDetachAreYouSureMultiple="這將從其父參考中拆離選定的文檔。是否確定要繼續？";
+DocumentDetachSuccessfulMultiple="已成功從參考中拆離所有文檔。";
+DocumentDetachSuccessfulPartiallyMultiple="已成功從參考中拆離某些（但不是所有）文檔。";
+DocumentDetachFailedMultiple="至少有 1 個文檔無法從參考中拆離。";
+DocumentDetachCancelledMultiple="已取消從參考中拆離文檔。";
+DocumentDetachSaveFailed="無法在執行文檔拆離之后保存！";
+DocumentDetachMultipleFathers="只拆離同一參考下的文檔！";
+
+DocumentReplaceVersionByLatestSaveNeeded="替換文檔版本將會保存其他更改。請保存或取消當前會話中的所有修改。";
+DocumentReplaceVersionByLatestSuccessful="替換文檔版本成功！";
+DocumentReplaceVersionByLatestFailed="替換版本失敗！";
+DocumentReplaceVersionByLatestCancelled="已取消替換版本！";
+DocumentReplaceVersionByLatestAreYouSure="這將使用最新版本替換文檔的當前版本。\n是否確定要繼續？";
+DocumentReplaceVersionByLatestAreYouSureMultiple="這將使用每個選定文檔的最新版本來替代其當前版本。\n是否確定要繼續？";
+DocumentReplaceVersionByLatestSuccessfulMultiple="已成功替換所有文檔的版本！";
+DocumentReplaceVersionByLatestSuccessfulPartiallyMultiple="已成功替換當前父級下某些（但不是所有）文檔的版本。";
+DocumentReplaceVersionByLatestFailedMultiple="至少無法替換當前父級下 1 個文檔的版本。";
+DocumentReplaceVersionByLatestCancelledMultiple="已取消替換選定文檔的版本。";
+DocumentReplaceVersionByLatestNoNewVersion="無法找到文檔的新版本。因此，當前無法執行版本替換。";
+DocumentReplaceVersionByLatestNoCurrentVersion="無法找到此文檔的當前版本。因此，當前無法執行版本替換。";
+DocumentReplaceVersionByLatestMultipleFathers="選定文檔不在同一父級下。因此，當前無法執行版本替換。";
+DocumentReplaceVersionByLatestSuccessfulPartialMultiple="已成功替換當前父級下某些（但不是所有）文檔的版本。";
+DocumentReplaceVersionByLatestNoNewVersionGeneric="替換版本失敗。找不到新版本的文檔。";
+
+DocumentReplaceVersionByBSFSaveNeeded="替換文檔版本將會保存其他更改。請保存或取消當前會話中的所有修改。";
+DocumentReplaceVersionByBSFSuccessful="替換文檔版本成功！";
+DocumentReplaceVersionByBSFFailed="替換版本失敗！";
+DocumentReplaceVersionByBSFCancelled="已取消替換版本！";
+DocumentReplaceVersionByBSFAreYouSure="這將使用 BSF 版本替換文檔的當前版本。\n是否確定要繼續？";
+DocumentReplaceVersionByBSFAreYouSureMultiple="這將使用每個選定文檔的 BSF 版本來替換其當前版本。\n是否確定要繼續？";
+DocumentReplaceVersionByBSFSuccessfulMultiple="已成功替換所有文檔的版本！";
+DocumentReplaceVersionByBSFSuccessfulPartiallyMultiple="已成功替換當前父級下某些（但不是所有）文檔的版本。";
+DocumentReplaceVersionByBSFFailedMultiple="至少無法替換當前父級下 1 個文檔的版本。";
+DocumentReplaceVersionByBSFCancelledMultiple="已取消替換選定文檔的版本。";
+DocumentReplaceVersionByBSFNoNewVersion="無法找到此文檔的 BSF 版本。當前文檔可能是 BSF 版本。無法替換文檔版本。";
+DocumentReplaceVersionByBSFNoCurrentVersion="無法找到此文檔的當前版本。因此，當前無法執行版本替換。";
+DocumentReplaceVersionByBSFSuccessfulPartialMultiple="已成功替換當前父級下某些（但不是所有）文檔的版本。";
+
+DocumentReplaceVersionFromListSaveNeeded="替換文檔版本將會保存其他更改。請保存或取消當前會話中的所有修改。";
+DocumentReplaceVersionFromListSuccessful="替換文檔版本成功！";
+DocumentReplaceVersionFromListFailed="替換版本失敗！";
+DocumentReplaceVersionFromListCancelled="已取消替換版本！";
+DocumentReplaceVersionFromListAreYouSure="這將使用從列表中選擇的版本來替換文檔的當前版本。\n是否確定要繼續？";
+DocumentReplaceVersionFromListAreYouSureMultiple="這將使用從列表中為每個選定文檔選擇的版本來替換其當前版本。\n是否確定要繼續？";
+DocumentReplaceVersionFromListSuccessfulMultiple="已成功替換所有文檔的版本！";
+DocumentReplaceVersionFromListSuccessfulPartiallyMultiple="已成功替換當前父級下某些（但不是所有）文檔的版本。";
+DocumentReplaceVersionFromListFailedMultiple="至少無法替換當前父級下 1 個文檔的版本。";
+DocumentReplaceVersionFromListCancelledMultiple="已取消替換選定文檔的版本。";
+DocumentReplaceVersionFromListMultipleFathers="選定文檔不在同一父級下。因此，當前無法執行版本替換。";
+DocumentReplaceVersionFromListNoNewVersion="無法找到文檔的新版本。因此，當前無法執行版本替換。";
+DocumentReplaceVersionFromListNoCurrentVersion="無法找到此文檔的當前版本。因此，當前無法執行版本替換。";
+DocumentReplaceVersionFromListSuccessfulPartialMultiple="已成功替換當前父級下某些（但不是所有）文檔的版本。";
+
+DocumentReplaceVersionCurrentAndNewVersionsTheSame="當前版本和選定的新版本相同。已取消替換版本。";
+
+DocumentDetachReplaceVersionByLatestMultipleFathers="只能替換同一父級下文檔的版本！";
+
+DocumentReplaceVersionSaveFailed="無法在執行版本替換之后保存！";
+
+DocumentShowSuccessful="已成功將顯示文檔附加到參考！";
+DocumentShowFailed="無法將顯示文檔附加到參考！";
+DocumentShowNoDocsToDisplay="未檢索任何要顯示的文檔";
+
+DocumentShowDocsTreeExpansionSuccessful="樹擴展成功";
+DocumentShowDocsTreeExpansionFailed="樹擴展失敗";
+
+
+DialogWindowTitleInfo="信息";
+DialogWindowTitleWarning="警告";
+DialogWindowTitleConfirmation="確認";
+DialogWindowTitleError="錯誤";
+
+ChooseFile="選擇文件";
+ChooseDirectory="選擇目錄";
+ChooseFileLocationAndName="選擇文件位置和名稱";
+
+PartAlreadyOpenedInVPMEditor="已打開選定零件進行創作。請在創作窗口中關閉此零件以使用此命令。";
+
+DocumentFileOverwritePermission="警告：/P1 是此目錄中的現有文件！是否要覆蓋此文件（選擇“否”將跳過此文件）？";
+
+DocumentErrorMessages="文檔 ( /P1 ) 的錯誤消息：/P2 ";
+DocumentInvalidDirectory="選定的目錄無效！";
+
+DocumentOpenReferenceProblem="警告：無法在數據庫中訪問 /P1。原因可能是安全訪問權限問題或該對象已被刪除。";
+DocumentOpenReferenceProblem2="警告：無法訪問選定的參考。原因可能是安全訪問權限問題或該對象已被刪除。";
+
+DocumentDeleteFailedDueToReferenceAttachmentSingle="錯誤：無法刪除文檔 /P01，因為仍將其附加到 /P02 參考。";
+DocumentDeleteFailedDueToReferenceAttachmentMultiple="錯誤：無法刪除文檔 /P01，因為仍將其附加到 /P02 參考。";
+DocumentDeleteFailedDueToOldVesionPresent="錯誤：此選擇中仍存在文檔 /P01 的較舊版本。\n繼續刪除此文檔之前，請先刪除其較舊版本。";
+
+DocumentDeleteFailedCommon="無法刪除文檔。";
+
+FileTypeCommonFiles="通用文件 ( /p1 )";
+FileTypeAllFiles="所有文件 ( /p1 )";
+FileTypeMSOffice="MS Office ( /P1 )";
+FileTypeAllValidFiles="所有有效文件 ( /p1 )";
+FileTypeImageFiles="有效圖像文件 ( /p1 )";
+FileTypeIndividualFiles="( /P1 )";
+FileTypeIndividualFileWithDescription="/P1 ( /P2 )";
+
+FailedToAccessAtLeastOneDocumentRead="至少無法訪問一個文檔。\n可能不再向此用戶授予此文檔的訪問權限。";
+
+DocumentNewFailedWrongExtension="錯誤：擴展 /P1 未獲得授權。請選擇其他文件。";
+
+InitialState="初始";
+WaitForExtEditClosureState="WaitForExtEditClosure";
+DocumentNewFailedNeedFile="錯誤：無法創建不包含任何文件的 VPM 文檔。請選擇一個文件。";
+CreateCBPDocWithPLMNewEngineFailed=" 無法新建文檔";
+CreateCBPDocWithNOTypeForTeam="未授權創建文檔。";
+
+FileNameColumnHeaderForOptFrm="文件名";
+CommentsColumnHeaderForOptFrm="注釋";
+
+CBPDocDelegateAttrUIFilesInformation="文件信息";
+Browse.Title="瀏覽...";
+
+DocumentNewFailedNoCreateAccess="沒有在 /P01 下創建文檔的權限";
+NoAttachmentAllow="文檔已附加到章節。每個章節只能有一個支持文檔。";
+
+// 3951 校正官方漢化 ********************************************************************************
+// 3951 校正官方漢化 Error messages for CAA APIs
+// 3951 校正官方漢化 ********************************************************************************
+DD_ATTACH_NOTSUPPORTED="父對象不支持文檔附件。";
+DD_ATTACH_EXIST="指定文檔已附加到父對象。";
+DD_DOESNOT_EXIST="指定文檔不存在。";
+DD_ERROR_CONDITION="操作期間發生錯誤。";
+DD_ATTACH_DOESNOTEXIST="指定文檔未附加到父對象。";
+DD_ATTACH_NODOC="沒有文檔附加到父對象。";
+DD_DOC_NOFILE="沒有文件與當前文檔關聯。";
+DD_DOWNLOAD_FILEPATH="以下下載輸入路徑無效：/P1。\n請檢查權限。";
+DD_CHECKIN_FILEPATH_1="請檢查文件名：/P1。";
+DD_CHECKIN_FILEPATH_2="請檢查文件路徑是否可供訪問。";
+DD_CHECKIN_FILEPATH_3="文檔中已存在文件名 /P1。";
+DD_DOWNLOAD_CHECKEDOUT="/P1 文件已簽出。";
+DD_UPLOAD_FILEPATH_1="請檢查文件路徑是否可供訪問。";
+DD_UPLOAD_FILEPATH_2="請檢查文件名：/P2。";
+
+InvalidCharacters="輸入的文件名包含一個或多個無效字符（例如：', #, $, @, &, %）\n請移除無效的字符。";

@@ -1,0 +1,226 @@
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化 CCE common NLS-File Number range x10000..x11999 
+// 3951 校正官方漢化                                + 900000..999999 (internal errors)
+// 3951 校正官方漢化 $Revision: 1.27 $
+// 3951 校正官方漢化 $Date: 2010/01/20 14:59:56MEZ $
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Syntax:
+// 3951 校正官方漢化   <ModuleId>_<MsgId>.<Key> = "Text";
+// 3951 校正官方漢化   where 
+// 3951 校正官方漢化     ModuleId: Text   - for classification (internally not used yet)
+// 3951 校正官方漢化     MsgId   : Number - Messagenumber (first digit is severity)
+// 3951 校正官方漢化     Key     : Text   - "iSev" -> Severity
+// 3951 校正官方漢化                        "sMsg" -> Short Message Text (not used yet)
+// 3951 校正官方漢化                        "lMsg" -> Long Message Text
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Limitations:
+// 3951 校正官方漢化    # max. nb. of parameters supported: /P1 .. /P25
+// 3951 校正官方漢化    # max. nb. of lMsg-lines: 10
+// 3951 校正官方漢化    # Key iSev has to be before lMsg 
+// 3951 校正官方漢化
+// 3951 校正官方漢化 =====================================================================
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Information messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化CCE_IM110001.iSev = "1";
+// 3951 校正官方漢化CCE_IM110001.sMsg = "Info";
+// 3951 校正官方漢化CCE_IM110001.lMsg = "Application Information: /P1";
+
+CCE_IM110001.iSev="1";
+CCE_IM110001.sMsg="License Error";
+CCE_IM110001.lMsg="無可用許可證：CCE 功能降為 DEMO 模式";
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Warning messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+CCE_WM310001.iSev="3";
+CCE_WM310001.sMsg="Warning";
+CCE_WM310001.lMsg="解析錯誤：ISO 行存在錯誤。ISO 行：'/P1'";
+
+CCE_WM310002.iSev="3";
+CCE_WM310002.sMsg="Warning";
+CCE_WM310002.lMsg="解析錯誤：令牌 '/P1' 存在未知錯誤。";
+
+CCE_WM310003.iSev="3";
+CCE_WM310003.sMsg="Warning";
+CCE_WM310003.lMsg="解析錯誤：未知的令牌 '/P1'。要取消此消息，請將令牌添加到 cPost mce 部分的忽略列表中。";
+
+CCE_WM310004.iSev="3";
+CCE_WM310004.sMsg="Warning";
+CCE_WM310004.lMsg="解析錯誤：無法解析令牌 '/P1' 的表達式。";
+
+CCE_WM310005.iSev="3";
+CCE_WM310005.sMsg="Warning";
+CCE_WM310005.lMsg="解析錯誤：令牌 '/P1' 的格式錯誤。";
+
+CCE_WM310006.iSev="3";
+CCE_WM310006.sMsg="Warning";
+CCE_WM310006.lMsg="解析錯誤：令牌 '/P1' 的上下文錯誤。";
+
+CCE_WM310007.iSev="3";
+CCE_WM310007.sMsg="Warning";
+CCE_WM310007.lMsg="XML 異常：
+在 XML 文件中：'/P1' 
+行 #/P2，字符 #/P3
+消息：'/P4'";
+
+CCE_WM310008.iSev="3";
+CCE_WM310008.sMsg="Warning";
+CCE_WM310008.lMsg="解析錯誤：變量聲明 '/P1' 不正確。";
+
+CCE_WM310009.iSev="3";
+CCE_WM310009.sMsg="Warning";
+CCE_WM310009.lMsg="解析錯誤：表達式 '/P1' 中的變量名稱不正確。";
+
+CCE_WM310010.iSev="3";
+CCE_WM310010.sMsg="Warning";
+CCE_WM310010.lMsg="解析錯誤：令牌 '/P1' 的第一個字符無效。";
+
+CCE_WM310011.iSev="3";
+CCE_WM310011.sMsg="Warning";
+CCE_WM310011.lMsg="解析錯誤：令牌 '/P1' 語義檢查失敗。";
+
+CCE_WM310012.iSev="3";
+CCE_WM310012.sMsg="Warning";
+CCE_WM310012.lMsg="解析錯誤：令牌 '/P1' 的類型不匹配。";
+
+CCE_WM310013.iSev="3";
+CCE_WM310013.sMsg="Warning";
+CCE_WM310013.lMsg="解析錯誤：分派 '/P1' 不正確。";
+
+CCE_WM310014.iSev="3";
+CCE_WM310014.sMsg="Warning";
+CCE_WM310014.lMsg="解析錯誤：發現沖突令牌 /P1。";
+
+CCE_WM310015.iSev="3";
+CCE_WM310015.sMsg="Warning";
+CCE_WM310015.lMsg="解析錯誤：不支持分派 /P1 的類型。";
+
+CCE_WM310016.iSev="3";
+CCE_WM310016.sMsg="Warning";
+CCE_WM310016.lMsg="解析錯誤：令牌 /P1 的表達式太少。";
+
+CCE_WM310017.iSev="3";
+CCE_WM310017.sMsg="Warning";
+CCE_WM310017.lMsg="解析錯誤：令牌 /P1 的自定義循環或自定義宏名稱無效。";
+
+CCE_WM310018.iSev="3";
+CCE_WM310018.sMsg="Warning";
+CCE_WM310018.lMsg="解析錯誤：檢測到嵌套的自定義循環調用（將被忽略）： /P1。";
+
+CCE_WM310019.iSev="3";
+CCE_WM310019.sMsg="Warning";
+CCE_WM310019.lMsg="解析錯誤：在命令行 /P1 中發現實時代碼。";
+
+CCE_WM310020.iSev="3";
+CCE_WM310020.sMsg="Warning";
+CCE_WM310020.lMsg="解析錯誤：不支持功能 /P1。";
+
+CCE_WM310021.iSev="3";
+CCE_WM310021.sMsg="Warning";
+CCE_WM310021.lMsg="解析錯誤：浮點數 /P1 無效。";
+
+CCE_WM310022.iSev="3";
+CCE_WM310022.sMsg="Warning";
+CCE_WM310022.lMsg="解析錯誤：循環定義 /P1 無效。";
+
+CCE_WM310023.iSev="3";
+CCE_WM310023.sMsg="Warning";
+CCE_WM310023.lMsg="解析錯誤：索引無效（或無符號）：/P1。";
+
+CCE_WM310024.iSev="3";
+CCE_WM310024.sMsg="Warning";
+CCE_WM310024.lMsg="解析錯誤：發現矛盾的令牌。將忽略這兩項：/P1。";
+
+CCE_WM310025.iSev="3";
+CCE_WM310025.sMsg="Warning";
+CCE_WM310025.lMsg="解析錯誤：發現令牌 /P1 不完整。";
+
+
+CCE_WM310026.iSev="3";
+CCE_WM310026.sMsg="Warning";
+CCE_WM310026.lMsg="解析錯誤：備注 /P1 錯誤。";
+
+CCE_WM310027.iSev="3";
+CCE_WM310027.sMsg="Warning";
+CCE_WM310027.lMsg="解析錯誤：未知變量 /P1。";
+
+CCE_WM310028.iSev="3";
+CCE_WM310028.sMsg="Warning";
+CCE_WM310028.lMsg="解析錯誤：無法對表達式 /P1 求值。";
+
+CCE_WM310029.iSev="3";
+CCE_WM310029.sMsg="Warning";
+CCE_WM310029.lMsg="解析錯誤：令牌不支持表達式 /P1。";
+
+CCE_WM310030.iSev="3";
+CCE_WM310030.sMsg="Warning";
+CCE_WM310030.lMsg="解析錯誤：不支持的構造 /P1。";
+
+CCE_WM310031.iSev="3";
+CCE_WM310031.sMsg="Warning";
+CCE_WM310031.lMsg="解析錯誤：廢棄的代碼（之前的令牌不支持繼續）：/P1.";
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Error messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+CCE_EM410003.iSev="4";
+CCE_EM410003.sMsg="Error";
+CCE_EM410003.lMsg="XML 異常：
+在 XML 文件中：'/P1' 
+行 #/P2，字符 #/P3
+消息：'/P4'";
+
+CCE_EM410004.iSev="4";
+CCE_EM410004.sMsg="License Error";
+CCE_EM410004.lMsg="錯誤消息：'/P1'
+特征名稱：'/P2' 
+許可證文件：'/P3'
+對 DEMO 限制的 CCE 功能...";
+
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Abend messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+CCE_EM510001.iSev="5";
+CCE_EM510001.sMsg="Error";
+CCE_EM510001.lMsg="對于 /P1 = /P2，值無效。
+正在終止...";
+
+CCE_EM510002.iSev="5";
+CCE_EM510002.sMsg="Error";
+CCE_EM510002.lMsg="解析 ISO 行(/P1) 時出錯：'/P2'
+源：'/P4'
+修改的行：'/P3'";
+
+CCE_EM510003.iSev="5";
+CCE_EM510003.sMsg="Error";
+CCE_EM510003.lMsg="XML 異常：
+在 XML 文件中：'/P1' 
+行 #/P2，字符 #/P3
+消息：'/P4'.
+正在終止...";
+
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Reserved !!!
+// 3951 校正官方漢化 Internal Error messages (!!! DO NOT CHANGE SEVERITY !!!)
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化CCE_EM100000.iSev = "1"; -> Internal Information
+// 3951 校正官方漢化CCE_EM300000.iSev = "3"; -> Internal Warning
+// 3951 校正官方漢化CCE_EM400000.iSev = "4"; -> Internal Error
+// 3951 校正官方漢化CCE_EM500000.iSev = "5"; -> Internal Abend
+// 3951 校正官方漢化CCE_EM900000.iSev = "4"; -> Internal Error (INTERNAL_ERROR_INDEX)
+// 3951 校正官方漢化CCE_EM999997.iSev = "5"; -> Internal Abend (PROGRESS_CANCEL_INDEX)
+// 3951 校正官方漢化CCE_EM999998.iSev = "5"; -> Internal Abend (MALLOC_ABEND_INDEX)
+// 3951 校正官方漢化CCE_EM999999.iSev = "5"; -> Internal Abend (INTERNAL_ABEND_INDEX)
+
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化 End of CCE common NLS-File
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化

@@ -1,0 +1,91 @@
+// 3951 校正官方漢化
+CATPLMTosReversibleTransactionWithInvalidReturnCode_ERR_001.Request="在執行可逆交易期間返回了無效代碼。";
+CATPLMTosReversibleTransactionWithInvalidReturnCode_ERR_001.Diagnostic="/P1 交易在執行期間生成了無效返回代碼。系統將中止交易，并恢復先前會話。";
+CATPLMTosReversibleTransactionWithInvalidReturnCode_ERR_001.Advice="請與支持人員聯系，以獲取 PLM 會話服務 (TOS) 及其完整方案。";
+// 3951 校正官方漢化
+CATPLMTosReversibleTransactionWithRollbackFailure_ERR_002.Request="回滾可逆交易時出現嚴重故障。";
+CATPLMTosReversibleTransactionWithRollbackFailure_ERR_002.Diagnostic="/P1 可逆交易已失敗，并且未完成回滾。系統已中止會話，因為內容不再受控制。";
+CATPLMTosReversibleTransactionWithRollbackFailure_ERR_002.Advice="請與支持人員聯系，以獲取 PLM 會話服務 (TOS) 及其完整方案。";
+// 3951 校正官方漢化
+CATPLMTosReversibleTransactionStrongRelationalProblem_ERR_003.Request="缺少牢固關系。";
+CATPLMTosReversibleTransactionStrongRelationalProblem_ERR_003.Diagnostic="/P1 交易已檢測到缺少所有權或實例參考關系。系統將中止交易，并恢復先前會話。";
+CATPLMTosReversibleTransactionStrongRelationalProblem_ERR_003.Advice="請與支持人員聯系，以獲取 PLM 會話服務 (TOS) 及其完整方案。";
+// 3951 校正官方漢化
+CATPLMTosReversibleTransactionCyclicityProblem_ERR_004.Request="網絡循環性。";
+CATPLMTosReversibleTransactionCyclicityProblem_ERR_004.Diagnostic="/P1 交易已檢測到循環性。系統將中止交易，并恢復先前會話。";
+CATPLMTosReversibleTransactionCyclicityProblem_ERR_004.Advice="請與支持人員聯系，以獲取 PLM 會話服務 (TOS) 及其完整方案。";
+// 3951 校正官方漢化
+CATPLMTosReversibleTransactionShouldBeExclusive_ERR_005.Request="并發導入交易仍在運行。";
+CATPLMTosReversibleTransactionShouldBeExclusive_ERR_005.Diagnostic="/P1 導入交易是互斥的。拒絕并發或互連交易。";
+CATPLMTosReversibleTransactionShouldBeExclusive_ERR_005.Advice="請與支持人員聯系，以獲取 PLM 會話服務 (TOS) 及其完整方案。";
+// 3951 校正官方漢化
+CATPLMTosReversibleTransactionMinorVersionConflict_ERR_006.Request="仍已加載等效次版本。";
+CATPLMTosReversibleTransactionMinorVersionConflict_ERR_006.Diagnostic="/P1 事務檢測到 MajorId 沖突。已中止事務，并已恢復上一個會話。";
+CATPLMTosReversibleTransactionMinorVersionConflict_ERR_006.Advice="針對完整方案的 PLM 會話服務 (TOS)，請聯系支持人員。";
+// 3951 校正官方漢化
+CATPLMTosInvalidContext_ERR_101.Request="發生意外的 PLM 集成情況。";
+CATPLMTosInvalidContext_ERR_101.Diagnostic="內部會話服務消息為：/P1。";
+CATPLMTosInvalidContext_ERR_101.Advice="請與支持人員聯系以獲取 PLM 會話服務 (TOS)。";
+// 3951 校正官方漢化
+CATPLMTosUnavailablePLMType_ERR_102.Request="CATIA /P1 建模器具有關聯的 PLM Type For Save/Engine Persistency。";
+CATPLMTosUnavailablePLMType_ERR_102.Diagnostic="請與 CATIA 建模器 /P1 聯系，以實施 CATIComponent@GetPLMType。";
+CATPLMTosUnavailablePLMType_ERR_102.Advice="請確保已正確定義 CATIAdpEnvironment，并且未應用棄用的 API。";
+// 3951 校正官方漢化
+CATPLMTosConflictingIdentity_ERR_103.Request="同一上下文中標識 /P2 上的所有權沖突。";
+CATPLMTosConflictingIdentity_ERR_103.Diagnostic="/P1 聲明的物理標識與分配給 /P2 的相同。";
+CATPLMTosConflictingIdentity_ERR_103.Advice="請識別沖突上下文，然后與本地 PLM 支持人員聯系。";
+// 3951 校正官方漢化
+CATPLMTosDefaultErrorManagement_ERR_104.Request="默認錯誤管理。";
+CATPLMTosDefaultErrorManagement_ERR_104.Diagnostic="已檢測到意外情況。";
+CATPLMTosDefaultErrorManagement_ERR_104.Advice="請檢查您的最新下載。";
+// 3951 校正官方漢化
+CATPLMUnexpectedExceptionRaised_ERR_105.Request="已引發意外異常（強烈建議您關閉 PLM 會話）。";
+CATPLMUnexpectedExceptionRaised_ERR_105.Diagnostic="已捕獲 /P1，并且再次引發意外異常。";
+CATPLMUnexpectedExceptionRaised_ERR_105.Advice="強烈建議您關閉 PLM 會話且不保存工作，然后重新啟動新會話。";
+// 3951 校正官方漢化
+CATPLMTosNoMoreMemory_ERR_106.Request="分配失敗（/P1 字節）。";
+CATPLMTosNoMoreMemory_ERR_106.Diagnostic="分配 /P1 字節失敗。";
+CATPLMTosNoMoreMemory_ERR_106.Advice="關閉打開的無用文檔、保存工作，然后重新啟動新會話。";
+// 3951 校正官方漢化
+CATPLMTosDataCorruption_ERR_107.Request="數據已損壞。";
+CATPLMTosDataCorruption_ERR_107.Diagnostic="內部檢測已識別出遠程數據損壞。";
+CATPLMTosDataCorruption_ERR_107.Advice="請與支持人員聯系，以獲取 PLM 會話服務 (TOS) 及其完整方案。";
+// 3951 校正官方漢化
+CATPLMTosStreamFileAccessRead_ERR_108.Request="文件訪問/讀取失敗。";
+CATPLMTosStreamFileAccessRead_ERR_108.Diagnostic="訪問/讀取 /P1 失敗。";
+CATPLMTosStreamFileAccessRead_ERR_108.Advice="檢查指定的文件名（或二進制/ASCII FTP 協議）。";
+// 3951 校正官方漢化
+CATPLMTosStreamFileAccessWrite_ERR_109.Request="文件訪問/寫入失敗。";
+CATPLMTosStreamFileAccessWrite_ERR_109.Diagnostic="訪問/寫入 /P1 失敗。";
+CATPLMTosStreamFileAccessWrite_ERR_109.Advice="檢查與指定文件名關聯的訪問控制以及磁盤是否已滿。";
+// 3951 校正官方漢化
+CATPLMTosReadStreamInvalidData_ERR_111="無法讀取流：數據格式無效。";
+// 3951 校正官方漢化
+CATPLMTosReadStreamImpossibleAccess_ERR_112="無法讀取流：無法訪問文件。";
+// 3951 校正官方漢化
+CATPLMTosReadOnlyStreamInvalidWrite_ERR_114="流只讀，不可寫。";
+// 3951 校正官方漢化
+CATPLMTosWriteOnlyStreamInvalidRead_ERR_115="流只寫，不可讀回。";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+CATPLMTosUnavailableHasPLMOwner_ERR_116.Request="CATIA /P1 建模器未實施 HasPLMOwner 行為。";
+CATPLMTosUnavailableHasPLMOwner_ERR_116.Diagnostic="請與 CATIA 建模器 /P1 聯系，以實施 CATIComponent@HasPLMOwner。";
+CATPLMTosUnavailableHasPLMOwner_ERR_116.Advice="請確保當前正在應用迄今最佳或最新的下載。";
+// 3951 校正官方漢化
+CATPLMTosUnavailableIsInstanceOf_ERR_117.Request="CATIA /P1 建模器未實施 IsInstanceOf 行為。";
+CATPLMTosUnavailableIsInstanceOf_ERR_117.Diagnostic="請與 CATIA 建模器 /P1 聯系，以實施 CATIComponent@IsInstanceOf。";
+CATPLMTosUnavailableIsInstanceOf_ERR_117.Advice="請確保當前正在應用迄今最佳或最新的下載。";
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+CATPLMTosConflictingPLMType_ERR_121.Request="PLMType 具有沖突的重定義。";
+CATPLMTosConflictingPLMType_ERR_121.Diagnostic="CATIA /P1 上 /P2 和 /P3 之間存在重定義。";
+CATPLMTosConflictingPLMType_ERR_121.Advice="請與 PLM 支持人員聯系。請確保已正確定義 CATIAdpEnvironment，并且未應用棄用的 API。";
+// 3951 校正官方漢化
+CATPLMTosOverlappingResolutionSpace_ERR_122.Request="嘗試使不同更改/數據集重疊。";
+CATPLMTosOverlappingResolutionSpace_ERR_122.Diagnostic="嘗試在 (/P1,/P2) 和(/P3,/P4) 之間進行交叉參考。";
+CATPLMTosOverlappingResolutionSpace_ERR_122.Advice="請確保使用適當的軟件 API 來實現此目的。";
+
+CATPLMTosInvalidPLMIDForRegistration_ERR_123.Request="無法在 TOS 中注冊部分標識符。";
+CATPLMTosInvalidPLMIDForRegistration_ERR_123.Diagnostic="如果對標識進行部分定義，則無法在 TOS 中注冊代理。當前標識為 (/P1)。";
+CATPLMTosInvalidPLMIDForRegistration_ERR_123.Advice="請與支持人員聯系，以獲取關聯的 PLM 適配器及其完整方案。";
+

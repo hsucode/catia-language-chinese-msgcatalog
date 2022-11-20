@@ -1,0 +1,56 @@
+DialogBoxTitle="顯示集";
+
+FrameOptions.Title="選項";
+
+PushButtonListNew.ShortHelp="新建空顯示集";
+PushButtonListNew.LongHelp="創建一個新顯示集，并且所有元素均設為“隱藏”。
+通過選擇字段元素，您可以選擇要在新集中設為“顯示”的元素。";
+PushButtonListNewAllVisible.ShortHelp="新建帶所有可視元素的顯示集";
+PushButtonListNewAllVisible.LongHelp="在新創建的顯示集中，將從激活的顯示集獲取元素的“隱藏/顯示”狀態。";
+PushButtonListDelete.ShortHelp="刪除顯示集";
+PushButtonListDelete.LongHelp="僅當用戶定義的顯示集處于非激活狀態時，才可刪除它。
+僅當不存在任何其他用戶定義的顯示集時，才可刪除默認顯示集。";
+PushButtonListSave.ShortHelp="保存激活的顯示集";
+PushButtonListSave.LongHelp="已在激活的顯示集中保存元素當前的“隱藏/顯示”狀態。
+激活的集標記有 *。";
+PushButtonListHighlight.ShortHelp="突出顯示集的所有元素";
+//Neu PushButtonListHighlight.LongHelp = "LongHelp";
+PushButtonListTemp.ShortHelp="臨時顯示集";
+PushButtonListTemp.LongHelp="將創建一個臨時集，可通過激活另一個集來刪除它。";
+
+FrameCurrentLists.Title="定義的顯示集";
+FrameCurrentLists.LongHelp="可通過在定義的顯示集列表中雙擊來激活顯示集。激活的顯示集標有 *。
+此處列出的顯示集可按狀態（激活/非激活）或名稱升序和降序排序。
+此外，可重命名用戶定義的顯示集。";
+FrameCurrentLists.ShortHelp="定義的顯示集列表";
+MultiListLists.ColumnTitle1=" ";
+MultiListLists.ColumnTitle2="名稱";
+MultiListLists.ColumnTitle3="尺寸";
+
+RadioButtonListMove.Title="移動 -->";
+RadioButtonListMove.ShortHelp="將選定的元素移到目標集。";
+RadioButtonListMove.LongHelp="在當前集中，選定的元素被設為隱藏；在目標集中，其狀態將設為其在當前集中具備的狀態。";
+RadioButtonListCopy.Title="復制 -->";
+RadioButtonListCopy.ShortHelp="將選定的元素復制到目標集。";
+RadioButtonListCopy.LongHelp="在當前顯示集中選定的元素的“隱藏/顯示”狀態將轉移到目標集。";
+RadioButtonRemove.Title="隱藏";
+RadioButtonRemove.ShortHelp="隱藏";
+RadioButtonRemove.LongHelp="選定的元素的狀態被設為隱藏。";
+
+FrameTargetLists.Title="目標顯示集";
+FrameTargetLists.LongHelp="可將顯示集選作目標對其進行復制或移動操作。";
+FrameTargetLists.ShortHelp="目標顯示集列表";
+
+LabelElements.Title="元素： ";
+LabelElements.ShortHelp="選擇元素";
+LabelElements.LongHelp="為選項復制 -->、移動 --> 或隱藏選擇元素。
+您可以選擇單個元素，或幾何圖形集。
+可使用上下文菜單。
+可使用選擇包。";
+
+LabelApplyImmediately.Title="立即更改顯示集";
+LabelApplyImmediately.LongHelp="開啟：在復制/移動后，目標集即為激活的集。
+關閉：在復制/移動后，目標集不會被自動激活。";
+LabelApplyImmediately.ShortHelp="立即更改顯示集";
+
+

@@ -1,0 +1,171 @@
+Review_On_PRC.Request="不支持保存聚集在一種產品下面的復核對象。";
+Review_On_PRC.Diagnostic="不支持保存聚集在一種產品下面的復核對象.";
+Review_On_PRC.Advice="退出檢查工作臺，而不保存任何復核。";
+
+Global_Error.Request="無法將一個或多個對象保存到 ENOVIA V5 VPM 中。";
+Global_Error.Diagnostic="無法將一個或多個對象保存到 ENOVIA V5 VPM 中。";
+Global_Error.Advice="無法將一個或多個對象保存到 ENOVIA V5 VPM 中。";
+
+NavRep_Multisite.Request="為其生成 NavRep 的對象由其他站點所有。";
+NavRep_Multisite.Diagnostic="為其生成 NavRep 的對象由其他站點所有。";
+NavRep_Multisite.Advice="為其生成 NavRep 的對象由其他站點所有。";
+
+Review_Multisite.Request="為其生成“復核”的對象由其他站點所有。";
+Review_Multisite.Diagnostic="為其生成“復核”的對象由其他站點所有。";
+Review_Multisite.Advice="為其生成“復核”的對象由其他站點所有。";
+
+// 3951 校正官方漢化ZPL Added for IR 028723 & 028729
+// 3951 校正官方漢化ViewFileContentForbidden.Title = "Document download not authorized";
+// 3951 校正官方漢化ViewFileContentForbidden.Request= "One or several document will not be downloaded in later interactions due to missing ViewFileContent privileges to current user in this session.";
+// 3951 校正官方漢化ViewFileContentForbidden.Diagnostic= "One or several document will not be downloaded in later interactions due to missing ViewFileContent privileges to current user in this session.";
+// 3951 校正官方漢化ViewFileContentForbidden.Advice= "Please check ENOVIA_VPMDocumentRevision.ViewFileContents privilege for current user.";
+// 3951 校正官方漢化ZPL: After new behavior for ViewFileContent Error:
+NoViewFileContents.Title="未授權文檔下載";
+NoViewFileContents.Request="由于此會話中的當前用戶缺少 ViewFileContent 權限，將不會在隨后的交互中下載一個或多個文檔。";
+NoViewFileContents.Diagnostic="由于此會話中的當前用戶缺少 ViewFileContent 權限，將不會在隨后的交互中下載一個或多個文檔。";
+NoViewFileContents.Advice="請檢查當前用戶的 ENOVIA_VPMDocumentRevision.ViewFileContents 權限。";
+
+
+// 3951 校正官方漢化ZNO Added for coex V6V5
+
+// 3951 校正官方漢化--------Check before Create or Update ref-----------------------------
+SecurityFailed.Request="";
+SecurityFailed.Diagnostic="安全性檢查失敗";
+SecurityFailed.Advice="";
+
+CreationNotGranted.Request="";
+CreationNotGranted.Diagnostic="未授權進行添加操作";
+CreationNotGranted.Advice="";
+
+ModifyNotGranted.Request="";
+ModifyNotGranted.Diagnostic="未授權進行修改操作";
+ModifyNotGranted.Advice="";
+
+NotLockedIssue.Request="";
+NotLockedIssue.Diagnostic="對象未鎖定或已被其他用戶鎖定";
+NotLockedIssue.Advice="";
+
+NotLockedByMeIssue.Request="";
+NotLockedByMeIssue.Diagnostic="對象已被其他用戶鎖定";
+NotLockedByMeIssue.Advice="";
+
+OverwriteFrozen.Request="";
+OverwriteFrozen.Diagnostic="已設置 OverwriteFrozen";
+OverwriteFrozen.Advice="";
+
+ObjectReleased.Request="";
+ObjectReleased.Diagnostic="對象已發布";
+ObjectReleased.Advice="";
+
+ObjectNotUpdatable.Request="";
+ObjectNotUpdatable.Diagnostic="對象不可更新";
+ObjectNotUpdatable.Advice="";
+
+PVOwnedByOtherSite.Request="";
+PVOwnedByOtherSite.Diagnostic="正在修改的對象不屬于本地站點";
+PVOwnedByOtherSite.Advice="";
+
+// 3951 校正官方漢化---------------ADDChildCommand-------------------
+AddChild_CallPrepare.Diagnostic="無法為擴展 CATIAVPMVDAAddChild 作準備";
+AddChild_CallCleanup.Diagnostic="無法對擴展 CATIAVPMVDAAddChild 執行清除";
+AddChild_Exec.Diagnostic="命令 AddChild 當前不可執行";
+
+AddChild_put_ChildBObject.Diagnostic="無法對命令 AddChild 進行 put_ChildBObject";
+AddChild_put_ChildData.Diagnostic="無法對命令 AddChild 進行 put_ChildData";
+
+AddChild_get_ParentBObject.Diagnostic="無法對命令 AddChild 進行 get_ParentBObject";
+AddChild_get_ChildBObject.Diagnostic="無法對命令 AddChild 進行 get_ChildBObject";
+AddChild_get_ChildData.Diagnostic="無法對命令 AddChild 進行 get_ChildData";
+
+AddChild_UnableToGetReferenceLockStatus.Diagnostic="無法獲取命令 AddChild 的父零件參考鎖定狀態。";
+AddChild_ReferenceIsNotLocked.Diagnostic="父零件參考未鎖定。您可能需要刷新當前的應用程序視圖。";
+AddChild_ReferenceIsLockedByAnotherUser.Diagnostic="父零件參考已被其他用戶鎖定。";
+AddChild_UnableToGetReferenceFromInstance.Diagnostic="無法從選定的零件實例中獲取命令 AddChild 的父零件參考。";
+
+Obj_Exists.Diagnostic="已經存在具有相同標識的對象";
+AddChild_ActionClosed.Diagnostic="無法插入示例，因為無法修改操作";
+CannotPerformOperationOnNotUpdatableAction.Diagnostic="無法執行所需操作，因為無法修改當前操作。";
+AddChild_ParentPartInstanceNotLocked.Diagnostic="無法添加實例，因為未鎖定父零件實例。";
+AddChild_InstanceIsLockedByAnotherUser.Diagnostic="父零件實例已被其他用戶鎖定。";
+AddChild_UnableToGetInstanceLockStatus.Diagnostic="無法獲取命令 AddChild 的父零件實例鎖定狀態。";
+AddChild_FinalState.Diagnostic="命令 AddChild 不可執行，因為父對象已達到其最終狀態。";
+
+// 3951 校正官方漢化-----------------Lock command---------------------------------------
+Lock_CallPrepare.Diagnostic="無法為擴展 CATIAVPMVDALock 作準備";
+Lock_CallCleanup.Diagnostic="無法對擴展 CATIAVPMVDALock 執行清除";
+Lock_Exec.Diagnostic="命令 Lock 當前不可執行";
+LockObjectNotFound.Diagnostic="在 DB 中再也找不到您要嘗試鎖定的對象。\n",
+"請刷新您的產品結構視圖。";
+
+Lock_put_BObject.Diagnostic="無法對命令 Lock 進行 put_BObject";
+Lock_put_forceIfAlreadyLocked.Diagnostic="無法對命令 Lock 進行 put_forceIfAlreadyLocked";
+Lock_put_referenceAlso.Diagnostic="無法對命令 Lock 進行 put_referenceAlso";
+
+Lock_get_BObject.Diagnostic="無法對命令 Lock 進行 get_BObject";
+Lock_get_lockOwner.Diagnostic="無法對命令 Lock 進行 get_lockOwner";
+Lock_get_forceIfAlreadyLocked.Diagnostic="無法對命令 Lock 進行 get_forceIfAlreadyLocked";
+Lock_get_referenceAlso.Diagnostic="無法對命令 Lock 進行 get_referenceAlso";
+Lock_Other_Version_Locked.Diagnostic="已鎖定指定零件的",
+"另一個版本。\n",
+"注意：一次只能鎖定零件的一個版本。";
+
+
+
+// 3951 校正官方漢化-----------------Unlock command-------------------------------------------------
+
+Unlock_CallPrepare.Diagnostic="無法為擴展 CATIAVPMVDAUnlock 作準備";
+Unlock_CallCleanup.Diagnostic="無法對擴展 CATIAVPMVDAUnlock 執行清除";
+Unlock_Exec.Diagnostic="命令 Unlock 當前不可執行";
+
+Unlock_put_BObject.Diagnostic="無法對命令 Unlock 進行 put_BObject";
+Unlock_put_forceIfNotOwner.Diagnostic="無法對命令 Unlock 進行 put_forceIfNotOwner";
+Unlock_put_referenceOnly.Diagnostic="無法對命令 Unlock 進行 put_refernceOnly";
+Partial_Propagation.Diagnostic="傳播過程僅部分成功";
+
+Unlock_get_BObject.Diagnostic="無法對命令 Unlock 進行 get_BObject";
+Unlock_get_forceIfNotOwner.Diagnostic="無法對命令 Unlock 進行 get_forceIfNotOwner";
+Unlock_get_lockOwner.Diagnostic="無法對命令 Unlock 進行 get_lockOwner";
+Unlock_get_refernceOnly.Diagnostic="無法對命令 Unlock 進行 get_refernceOnly";
+
+
+// 3951 校正官方漢化-----------------Move command-------------------------------------------------
+
+Move_CallPrepare.Diagnostic="無法為擴展 CATIAVPMVDAMove 作準備";
+Move_CallCleanup.Diagnostic="無法對擴展 CATIAVPMVDAMove 執行清除";
+Move_Exec.Diagnostic="命令 Move 當前不可執行";
+
+Move_put_InstanceToMove.Diagnostic="無法對命令 Move 進行 put_InstanceToMove";
+
+Move_get_InstanceMoved.Diagnostic="無法對命令 Move 進行 get_InstanceMoved";
+Move_get_InstanceMovedCount.Diagnostic="無法對命令 Move 進行 get_InstanceMovedCount";
+
+// 3951 校正官方漢化-----------------Modify2 command (update attributes)-------------------------------------------------
+
+Modify2LockedByOther.Diagnostic="無法鎖定。它已被其他用戶鎖定。";
+VPM_Product_Freeze_Warning_Msg.Diagnostic="已檢測到產品凍結警告。請查看歷史記錄以獲取更多信息。";
+
+// 3951 校正官方漢化-----------------Exists command (PC/PRC creation)-------------------------------------------------
+Exists_CallPrepare.Diagnostic="無法為擴展 CATIAVPMVDAExists 作準備";
+Exists_CallCleanup.Diagnostic="無法對擴展 CATIAVPMVDAExists 執行清除";
+Exists_Exec.Diagnostic="此對象不存在。";
+
+
+Exists_put_ID.Diagnostic="無法對命令 Exists 進行 put_ID";
+Exists_put_InstanceID.Diagnostic="無法對命令 Exists 進行 put_InstanceID";
+Exists_put_ParentID.Diagnostic="無法對命令 Exists 進行 put_ParentID";
+Exists_put_Type.Diagnostic="無法對命令 Exists 進行 put_Type";
+Exists_put_Version.Diagnostic="無法對命令 Exists 進行 put_Version";
+
+Exists_get_BObject.Diagnostic="無法對命令 Exists 進行 get_BObject";
+Exists_get_BObjectExists.Diagnostic="無法對命令 Exists 進行 get_BObjectExists";
+
+
+// 3951 校正官方漢化-----------------Move command for AR-------------------------------------------------
+Move_CallPrepare.Diagnostic="無法為擴展 CATIAVPMVDAMove 作準備";
+Move_CallCleanup.Diagnostic="無法對擴展 CATIAVPMVDAMove 執行清除";
+Move_Exec.Diagnostic="命令 Move 當前不可執行";
+
+Move_put_InstanceToMove.Diagnostic="無法對命令 Move 進行 put_InstanceToMove";
+
+Move_get_InstanceMoved.Diagnostic="無法對命令 Move 進行 get_InstanceMoved";
+Move_get_InstanceMovedCount.Diagnostic="無法對命令 Move 進行 get_InstanceMovedCount";

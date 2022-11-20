@@ -1,0 +1,40 @@
+// 3951 校正官方漢化-------------------------------------------------
+// 3951 校正官方漢化 Electrical Logical Editor - Define Wire command 
+// 3951 校正官方漢化-------------------------------------------------
+
+CATELEditorDefineWireCmd.WireSelectionState.Message="選擇一個邏輯參考以將其擴展至電線";
+CATELEditorDefineWireCmd.WirePanelState.Message="為導線設置子類型并定義其端點";
+CATELEditorDefineWireCmd.WireGroupSelectionState.Message="選擇一個邏輯參考以將其擴展至電氣電纜";
+CATELEditorDefineWireCmd.WireGroupPanelState.Message="為電纜設置子類型并定義其端點";
+CATELEditorDefineWireCmd.ChangeState.Message="通過選擇新的邏輯端口更改端點";
+
+// 3951 校正官方漢化CATELEditorDefineWireCmd.UndoTitle                       = "Electrical Wire Extension";
+// 3951 校正官方漢化CATELEditorDefineWireCmd.RedoTitle                       = "Electrical Wire Extension";
+
+
+// 3951 校正官方漢化 Panel addins
+
+WireEndsLabel="導線端點";
+WireGroupEndsLabel="電纜端點";
+End1ChangeTooltip="設置第一個新的端點端口";
+End2ChangeTooltip="設置第二個新的端點端口";
+
+
+// 3951 校正官方漢化 Result window
+
+WireCommandSuccessMessage="電線延伸成功";
+WireGroupCommandSuccessMessage="電氣電纜延伸成功";
+TypeMessage="類型： ";
+SubTypeMessage="子類型： ";
+EndPort1Message="第一個端點： ";
+EndPort2Message="第二個端點： ";
+
+
+// 3951 校正官方漢化 Warning window
+
+WrongReferenceSelectedTitle="無效選擇";
+WrongReferenceSelectedMessage="所選參考必須聚集至少兩個不包含任何電氣擴展的邏輯端口。";
+IncompleteWireTitle="不完整的導線";
+IncompleteCableTitle="不完整的電纜";
+IncompleteWireMessage="所選導線不完整。您可以使用該命令來定義其缺少的端點。";
+IncompleteCableMessage="所選電纜不完整。您可以使用該命令來定義其缺少的端點。";

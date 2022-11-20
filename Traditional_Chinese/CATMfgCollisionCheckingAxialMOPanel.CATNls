@@ -1,0 +1,43 @@
+CollisionCheckingTitle = "Collision Checking for Axial MO";
+
+ActivityFrame.Title = "Activity Selection";
+ActivityFrame.SelectedActivityList.Help = "List of selected activities";
+ActivityFrame.SelectedActivityList.ShortHelp = "選擇ed Activities";
+ActivityFrame.SelectedActivityList.LongHelp = "This is the list of selected Activities (Manufacturing Program, Tool Change or Axial MOs with computed toolpath)";
+
+ActivityFrame.SelectedActivityList.MenuOnActivityList.RemoveActivity.Title = "移除";
+ActivityFrame.SelectedActivityList.MenuOnActivityList.RemoveActivity.Help = "Remove the selected Activity";
+ActivityFrame.SelectedActivityList.MenuOnActivityList.RemoveActivity.ShortHelp = "Remove Activity";
+ActivityFrame.SelectedActivityList.MenuOnActivityList.RemoveActivity.LongHelp = "This item removes the selected Activity from the selection";
+
+ActivityFrame.ActivitySelReset.Title = "Reset";
+ActivityFrame.ActivitySelReset.Help = "Reset the current activities selection";
+ActivityFrame.ActivitySelReset.ShortHelp = "Reset";
+ActivityFrame.ActivitySelReset.LongHelp = "This button resets the current activities selection";
+
+DesignPartFrame.Title = "Design Parts";
+DesignPartFrame.SelectedDesignPartList.Help = "List of design parts";
+DesignPartFrame.SelectedDesignPartList.ShortHelp = "List of Design Parts selected in Part Operation";
+DesignPartFrame.SelectedDesignPartList.LongHelp = "This is the list of design parts selected in part operation";
+
+ToolAssemblyFrame.Title = "Tool Assembly";
+ToolAssemblyFrame.SelectedToolAssemblyList.Help = "List of tool assemblies";
+ToolAssemblyFrame.SelectedToolAssemblyList.ShortHelp = "List of Available Tool Assemblies";
+ToolAssemblyFrame.SelectedToolAssemblyList.LongHelp = "This is the list of tool assemblies available in resource list";
+
+NbAxialMO = "/p1 Axial operation(s) are considered for processing.";
+NonReachableHoles = "/p1 Axial operation(s) are considered for processing.\nSome holes in operation(s) /p2 are NOT REACHABLE with given list of tool assemblies"; 
+NoCollHoles = "/p1 Axial operation(s) are considered for processing.\nAll holes in axial operation(s) are reachable with selected tool assemblies";
+
+CollisionERR_1 = "There is no tool assembly available in resource list.";
+CollisionERR_2 = "There is no activity selected\n Please select at least one activity.";
+CollisionERR_3 = "There is no design part selected\n Please select design part in Part Operation.";
+CollisionERR_4 = "There is no axial machining operation in selected activities.";
+CollisionERR_5 = "/p1 Axial operation(s) are considered for processing.\nWarnings generated for /p2.\nTo know the details of the warning please run the command for the operation(s) /p2 individually."; 
+CollisionERR_6 = "/p1 Axial operation(s) are considered for processing.\nWarnings generated for /p2.\nTo know the details of the warning please run the command for the operation(s) /p2 individually.\nSome holes in operation(s) /p3 are NOT REACHABLE with given list of tool assemblies"; 
+
+// 3951 校正官方漢化 String used in progress panel
+Initialization = "Step /p1 / /p2 Preprocessing...";
+CollisionChecking = "Step /p1 / /p2 Checking collision for ";
+MOCreation = "Step /p1 / /p2 Creation of ";
+

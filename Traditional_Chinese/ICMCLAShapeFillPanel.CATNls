@@ -1,0 +1,102 @@
+DialogBoxTitle="填充";
+//Fill Type *****************************
+LabelFillType.Title="填充類型： ";
+LabelFillType.LongHelp="自動：結果為一個補面。
+參考：參考被投影到選定區域。
+    參考定義結果的階數和分段。
+多曲面：結果有多個曲面，可用星點修改結果。
+單個單元：參考被投影到選定的投影庫盒體上。";
+LabelFillType.ShortHelp="填充類型定義填充曲面的元素";
+LabelSpace.Title=" ";
+Combo.Auto="自動";
+Combo.Reference="參考";
+Combo.MultipleSurfaces="多曲面";
+ComboFillType.LongHelp="自動：結果為單個曲面。
+參考：參考被投影到選定區域。
+    參考定義結果的最小階數和最小分段。
+多曲面：結果有多個曲面，可用星點修改結果。
+單個單元：參考被投影到選定的投影庫盒體上。";
+ComboFillType.ShortHelp="選擇結果類型";
+//Curve ********************************
+LabelCurve.Title="曲線： ";
+LabelCurve.LongHelp="使用填充近似選定的曲線。
+最小輸入為一條曲線。
+正常情況下是一個被填充的曲線循環。";
+LabelCurve.ShortHelp="選擇曲線以創建填充";
+
+//Tab Options **************************
+TabPageOptions.Title="選項";
+
+//Frame Single *************************
+FrameSingle.Title="單個";
+FrameSingle.LongHelp="這些選項僅可用于填充類型自動和參考。";
+FrameSingleSelection.LongHelp="這些選項僅可用于填充類型自動和參考。";
+LabelReference.Title="參考： ";
+LabelReference.LongHelp="可將曲面選作參考。
+此參考被近似為選定的曲線。
+參考定義結果的最小階數和最小分段。";
+LabelReference.ShortHelp="使用填充參考";
+CheckButtonTrim.Title=" ";
+CheckButtonTrim.LongHelp="僅可用于填充類型參考。
+可修剪結果。
+當未修剪的結果與輸入曲線交疊時，此功能尤為有用。";
+CheckButtonTrim.ShortHelp="修剪結果";
+LabelProjBase.Title="投影庫： ";
+LabelProjBase.LongHelp="曲面、曲線、邊線或點均可選作投影庫。
+填充將近似選定的元素。";
+LabelProjBase.ShortHelp="已近似投影庫元素";
+
+//Frame Multiple *************************
+FrameMultiple.Title="多";
+FrameMultiple.LongHelp="這些選項僅可用于填充類型多曲面。
+可使用星點并可用鼠標移動。
+結果也相應地更改。
+星點影響結果的所有曲面。";
+//System *********************************
+LabelSystem.Title="系統： ";
+LabelSystem.LongHelp="可移動星點
+視圖：在視圖平面內
+模型：沿模型坐標系的軸
+指南針平面：在指南針平面內
+指南針法線：指南針平面的法線方向
+曲面法線：填充曲面的法線方向";
+LabelSystem.ShortHelp="移動星點的自由度";
+ComboSystem.ShortHelp="移動星點的自由度";
+ComboSystem.LongHelp="可移動星點
+視圖：在視圖平面內
+模型：沿模型坐標系的軸
+指南針平面：在指南針平面內
+指南針法線：指南針平面的法線方向
+曲面法線：填充曲面的法線方向";
+Combo.View="視圖";
+Combo.Model="模型";
+Combo.CompassPlane="指南針平面";
+Combo.CompassNormal="指南針法線";
+Combo.NormalToSurface="曲面法線";
+//Label Order
+LabelOrder.Title="階數： ";
+LabelOrder.LongHelp="填充曲面的最小階數";
+LabelOrder.ShortHelp="階數是填充曲面的最小階數";
+SpinnerOrder.LongHelp="僅可用于填充類型多曲面。
+對于填充類型多曲面，近似選項卡已禁用。
+階數是填充曲面的最小階數。";
+SpinnerOrder.ShortHelp="填充曲面的最小階數";
+//Frame Edge Influence
+FrameEdgeInfluence.Title="邊線影響";
+FrameEdgeInfluence.LongHelp="此選項控制要創建的曲面的交叉切線的影響。
+影響隨值增加。";
+SpinnerEdgeInfluence.LongHelp="此值控制要創建的曲面的交叉切線的影響。
+影響隨值增加。";
+SpinnerEdgeInfluence.ShortHelp="邊界曲線的影響";
+//Frame Flatness
+FrameFlatness.Title="平面度";
+FrameFlatness.LongHelp="填充曲面可以有一個尖端，或它可以為扁平，并近接星點。
+此操作由平面度控制。
+值越大，曲面越平。";
+SpinnerFlatness.LongHelp="填充曲面可以有一個尖端，或它可以為扁平，并近接星點。
+此操作由平面度控制。
+值越大，曲面越平。";
+SpinnerFlatness.ShortHelp="平面度近接星點";
+
+DomainMode.Title="域模式已更改為強制單域。
+不再支持域模式的使用首個域。";

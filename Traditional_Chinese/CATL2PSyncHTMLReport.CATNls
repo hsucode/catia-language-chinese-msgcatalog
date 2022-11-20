@@ -1,0 +1,75 @@
+// 3951 校正官方漢化 Report Table messages
+LogicalElementTitle="邏輯元素";
+PhysicalElementTitle="物理元素";
+SubElementsTitle="子元素";
+InformationTitle="信息";
+StatusTitle="狀態";
+MessageTitle="信息";
+
+// 3951 校正官方漢化 Status titles
+UnknownTitle="未知";
+UnchangedTitle="未更改";
+CreatedTitle="已創建";
+WillBeCreatedTitle="要創建";
+CreatedWithModificationTitle="已創建并修改";
+WillBeCreatedWithModificationTitle="要創建并修改";
+ModifiedTitle="已修改";
+WillBeModifiedTitle="要修改";
+WarningTitle="警告";
+ErrorTitle="錯誤";
+
+// 3951 校正官方漢化 Status Messages
+UnknownStatus="元素的同步狀態未知。";
+UnchangedStatus="元素已被同步。";
+CreatedStatus="已創建與預期的邏輯元素類似的元素。";
+WillBeCreatedStatus="將創建與預期的邏輯元素類似的元素。";
+CreatedWithModificationStatus="已從邏輯創建一個元素，但是它并非完全地如預期。";
+WillBeCreatedWithModificationStatus="將從邏輯創建一個元素，但是它將并非完全地如預期。";
+ModifiedStatus="已使用邏輯信息修改物理元素。";
+WillBeModifiedStatus="將使用邏輯信息修改物理元素。";
+WarningStatus="邏輯和物理元素之間存在差異，但并未嘗試修改。";
+WillBeWarningStatus="邏輯和物理元素之間存在差異，但并不會嘗試修改。";
+ErrorStatus="邏輯和物理元素之間存在差異。已嘗試一個工作指令，但是失敗了，因為缺少信息。";
+WillBeErrorStatus="邏輯和物理元素之間存在差異。已嘗試一個工作指令，但是失敗了，因為缺少信息。";
+L2PSyncForbiddenByBRStatus="元素同步已被業務規則禁止，嚴重性級別為 2";
+
+// 3951 校正官方漢化 Error Messages
+UnknownError="內部錯誤";
+NoPreDefPartNumberErr="未設置預定義的邏輯零件編號。";
+CreateRefNotInDBErr="實例化失敗。根據預定義的邏輯零件編號沒有找到物理參考。";
+ReplaceRefNotInDBErr="替換失敗。根據預定義的邏輯零件編號沒有找到物理參考。";
+PortMissingErr="缺少同步所需的端口。";
+ConnectedComponentUnknown="連接錯誤。要連接的部件并非物理形式，并且未被選中進行同步。";
+NoImplLinkFoundErr="未找到生效的鏈接。";
+
+BRExecuted="執行的業務規則: ";
+Validation="驗證: ";
+ValidationTrue="真";
+ValidationFalse="假";
+Allowed="允許";
+Forbidden="禁止";
+
+BusinessRuleInfo=" (/P1: 嚴重性 - /P2，驗證 - /P3)。";
+
+L2P_ValidateComponentPositionSynchronization="部件 3D 位置同步 /P1，嚴重性級別為 /P2。";
+L2P_ValidateInstanceNameSynchronization="實例名稱同步 /P1，/P2。";
+L2P_ValidatePartNumberSynchronization="零件編號同步 /P1，/P2。";
+L2P_ValidateAttributesSynchronization="屬性同步 /P1，/P2。";
+
+L2P_ComputeSynchronizationValidity="同步元素 /P1；同步子級 /P2；(嚴重性級別為 /P3)。";
+L2P_ComputePartNumber="計算的零件編號 /P1，嚴重性級別為 /P2。";
+L2P_ComputePartNumberFAILED="無法計算零件編號(嚴重性級別為 /P2)。";
+L2P_ComputeCorrespondingLogical="計算的邏輯元素 /P1，嚴重性級別為 /P2。";
+L2P_ComputeCorrespondingLogicalFAILED="無法計算邏輯元素(嚴重性級別為 /P1)。";
+L2P_ComputeCorrespondingPhysical="計算的物理元素 /P1，嚴重性級別為 /P2。";
+L2P_ComputeCorrespondingPhysicalFAILED="無法計算物理元素(嚴重性級別為 /P1)。";
+L2P_ComputeComponent3DPosition="為對應的物理部件 /P1 計算的 3D 位置，嚴重性級別為 /P2。";
+L2P_ComputeComponent3DPositionFAILED="無法計算對應的物理部件的 3D 位置(嚴重性級別為 /P1)。";
+L2P_ComputeFatherForPlacingEquipment="計算的用于放置設備的聚集產品 /P1，嚴重性級別為 /P2";
+L2P_ComputeFatherForPlacingEquipmentFAILED="無法計算用于放置設備的聚集產品(嚴重性級別為 /P1)";
+
+// 3951 校正官方漢化 Notification Titles
+L2P_NotificationTitleAnalysingElements="正在分析元素";
+L2P_NotificationTitleAnalysingConnections="正在分析連接";
+L2P_NotificationTitleSynchronizingElements="正在同步元素";
+L2P_NotificationTitleSynchronizingConnections="正在同步連接";

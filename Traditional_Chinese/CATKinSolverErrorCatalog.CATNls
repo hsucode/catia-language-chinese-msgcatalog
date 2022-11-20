@@ -1,0 +1,44 @@
+CATKinSolverFailure.Request="運動機構求解器未達到目標 /P1。";
+CATKinSolverFailure.Diagnostic="/P1";
+
+CATKinSolverCmdLimit.Request="求解器達到工程連接 /P1 的限制。";
+CATKinSolverCmdLimit.Diagnostic="/P1";
+
+CATKinSolverSingularity.Request="出現分叉奇點區域/P1。";
+CATKinSolverSingularity.Diagnostic="機械裝置已輸入或留下了一個分叉奇點區域。在此區域的交叉點，求解器在多個有效配置中任意選擇了一個配置。";
+
+CATKinCannotSimulate.Request="無法模擬機械裝置/P1。";
+CATKinCannotSimulate.Diagnostic="/P1";
+
+CATKinDisassembledMecForSimu.Request="拆解機械裝置/P1。";
+CATKinDisassembledMecForSimu.Diagnostic="機械裝置的連接不是最新，模擬不可預測。\n建議退出當前命令并進行更新。";
+
+CATKinDisassembledMecForDOF.Request="拆解機械裝置/P1。";
+CATKinDisassembledMecForDOF.Diagnostic="機械裝置的連接不是最新，DOF 值不可計算。\n建議退出當前命令并進行更新。";
+
+CATKinDisassembledReview.Request="未完全定義當前復核。";
+CATKinDisassembledReview.Diagnostic="機械裝置的初始位置和后續動畫可以與預期的不同。";
+
+CATKinSubMechanismReview.Request="使用產品的標稱位置初始化動畫。";
+CATKinSubMechanismReview.Diagnostic="已忽略當前視圖，因為機械裝置是在子產品下定義的。這種情況尚不受支持。";
+
+CATKinDupMCXInstanceReview.Request="使用產品的標稱位置初始化動畫。";
+CATKinDupMCXInstanceReview.Diagnostic="已忽略當前視圖，因為它包含同一個工程連接的多個過載連接。這種情況尚不受支持。";
+
+UpperLimit="已達到 /P3 的 /P1 /P2 上限\n";
+LowerLimit="已達到 /P3 的 /P1 /P2 下限\n";
+SolverInput="求解器的輸入：\n";
+SolverResult="求解器的結果：\n";
+InputCmdTarget="/P1 = /P2 /P3 -> 目標值 = /P4 /P3\n";
+InputCmdFree="/P1 = /P2 /P3，自由。\n";
+ResultCmdOK="/P1 = /P2 /P3，目標值已達到。\n";
+ResultCmdKO="/P1 = /P2 /P3，目標值未達到。";
+ResultCmdfree="/P1 = /P2 /P3，自由。\n";
+AtTime=" 時間 t =/P1 秒";
+Diagnostic="診斷";
+
+
+
+
+
+

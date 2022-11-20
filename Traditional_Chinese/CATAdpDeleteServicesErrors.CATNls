@@ -1,0 +1,30 @@
+
+// 3951 校正官方漢化 FACTORIZATION ERROR DECLARATION :
+// 3951 校正官方漢化 XXXXX_F_n  : _F indicated that this client PLM error is a factorization error
+// 3951 校正官方漢化 XXXXX_F_n.Advice & XXXXX_F_n.Request : common to all the concerned component
+
+// 3951 校正官方漢化 Case 0 : XXXXX_F_0:  Factorization error without parameter  
+// 3951 校正官方漢化 XXXXX_F_0.Diagnostic = "\p PLM< components cannot ....."
+// 3951 校正官方漢化 where \p is not given at the error posting to the reporter :
+// 3951 校正官方漢化 \p is computed by the reporter just before sending the error to the listener
+// 3951 校正官方漢化 \p value : the number of PLM concerned by the error.
+
+// 3951 校正官方漢化 Case 1 : XXXXX_F_1 : Factorization error with 1 parameter : 
+// 3951 校正官方漢化 This parameter is the list of paramters coresponding to each PLM component 
+// 3951 校正官方漢化 This parameter has to be documented
+
+
+UndefinedServerError.Diagnostic="內部服務器錯誤。";
+UndefinedServerError.Advice="請聯系支持中心。";
+
+ERR_01.Diagnostic="組件已在此會話中打開。";
+ERR_01.Advice="請從會話中卸載組件。";
+
+ERR_02.Diagnostic="仍在刪除范圍之外實例化引用。";
+ERR_02.Advice="刪除引用前，您必須移除現有實例。";
+
+ERR_03.Diagnostic="引用不受 VPLM 控制。";
+ERR_03.Advice="您不能夠刪除引用。服務器正在控制其生命周期。";
+
+ERR_04.Diagnostic="引用已鎖定。";
+ERR_04.Advice="刪除引用前，必須先將其解鎖。";

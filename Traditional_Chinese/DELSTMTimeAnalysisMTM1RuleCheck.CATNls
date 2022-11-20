@@ -1,0 +1,59 @@
+// 3951 校正官方漢化 DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+
+// 3951 校正官方漢化 simultaneous motion text
+g_szSimultaneousMotionText1="同步動作";
+g_szSimultaneousMotionText2="是否同時執行第 %d 行和第 %d 行的動作 '%s' 和 '%s'\n？";
+
+// 3951 校正官方漢化 rule check
+g_szRuleCheckText1="規則檢查";
+g_szRuleCheckText2="Warning";
+g_szRuleCheckText3="Error";
+g_szRuleCheckText4="Fatal Error";
+g_szRuleCheckText5="方法技術控制";
+g_szRuleCheckText6="Error Notification";
+g_szRuleCheckText8="第 %d 行的代碼 ' %s '";
+g_szRuleCheckText9=" 第 %d 行的代碼 ' %s '";
+g_szRuleCheckText11="同時移動";
+g_szRuleCheckText12="動作順序";
+g_szRuleCheckText13="左側";
+g_szRuleCheckText14="右側";
+g_szRuleCheckText15="規則檢查 - 組合動作";
+g_szRuleCheckText16="不得在組合動作中同時使用流程時間和時間元素\n！";
+
+// 3951 校正官方漢化 error texts
+g_szErrorTextA1="分析應在發布了至少一只手時結束。\r\n請檢查是否要重新限制分析。";
+g_szErrorTextB1="權重/距離的表示不同。\r\n\r\n更正建議：\r\n使權重/距離一致。";
+g_szErrorTextB2="僅為一只手輸入了移動雙重動作。\r\n\r\n更正建議：\r\n為另一只手添加代碼。";
+g_szErrorTextB3="G3 - 手部動作。\r\n\r\n更正建議：\r\n執行刪除，然后在 G3 后插入動作。";
+g_szErrorTextB4="組合異常。\r\n\r\n更正建議：\r\n在右手或左手側更改代碼。";
+g_szErrorTextB5="僅為一只手輸入了靜態常量。\r\n\r\n更正建議：\r\n為另一只手添加靜態常量。";
+g_szErrorTextC1="移動權重 - 容易位置。\r\n\r\n更正建議：\r\n將容易位置更改為困難位置。";
+g_szErrorTextC2="選取了抓取 - 發布 RL2。\r\n\r\n更正建議：\r\n將 RL2 更改為 RL1。";
+g_szErrorTextC3="聯系了抓取 - 發布 RL1。\r\n\r\n更正建議：\r\n將 RL1 更改為 RL2。";
+g_szErrorTextC4="靜態常量沒有后續移動。\r\n\r\n更正建議：\r\n插入移送或刪除靜態常量。";
+g_szErrorTextC5="靜態常量和移動的作用力不同。\r\n\r\n更正建議：\r\n均衡作用力。";
+g_szErrorTextC6="移動 M-A 或 M-B - 位置。\r\n\r\n更正建議：\r\n將 M-A/M-B 更改為 M-C。";
+g_szErrorTextC7="到達 - 抓取組合無效。\r\n\r\n更正建議：\r\n將到達/抓取更改為有效組合。";
+g_szErrorTextC8="到達 - 手/手指位置。\r\n\r\n更正建議：\r\n將到達更改為 R-D。";
+g_szErrorTextC9="手/手指位置 - 對稱位置 SS/NS。\r\n\r\n更正建議：\r\n將對稱更改為 S。";
+g_szErrorTextC10="抓取 G4 前沒有到達 R-C。\r\n\r\n更正建議：\r\n在抓取前插入到達 R-C。";
+g_szErrorTextC11="SS-C1 后跟 SS-C1/SS-C2。\r\n\r\n更正建議：\r\n將 SS-C1 更改為 SS-C2。";
+g_szErrorTextC12="TBC1 后跟 TBC1/TBC2。\r\n\r\n更正建議：\r\n將 TBC1 更改為 TBC2。";
+g_szErrorTextC13_1="發布 - 對象動作。\r\n\r\n更正建議：\r\n插入到達和抓取。";
+g_szErrorTextC13_2="對象動作 - 抓取。\r\n\r\n更正建議：\r\n插入發布和到達。";
+g_szErrorTextC13_3="發布 - 抓取。\r\n\r\n更正建議：\r\n插入到達。";
+g_szErrorTextC13_4="到達 - 對象動作。\r\n\r\n更正建議：\r\n插入抓取。";
+g_szErrorTextC13_5="對象動作 - 手部動作為空。\r\n\r\n更正建議：\r\n插入發布。\r\n\r\n注意：\r\n如果要采用其他零件，則順序正確。";
+g_szErrorTextC14="在無靜態常量的情況下移動權重。\r\n\r\n更正建議：\r\n在移動前插入靜態常量。";
+g_szErrorTextC15="到達 R-A - 抓取 G1B --> 檢查正確性。\r\n\r\n注意：\r\n在大多數情況下，到達 R-B 或 R-D 在 G1B 前面。\r\n請檢查是否有必要從到達 R-A 更改為 R-B/R-D。";
+g_szErrorTextD1="抓取 G1C3 前沒有到達 R-D。\r\n\r\n更正建議：\r\n在抓取前插入到達 R-D。\r\n\r\n\r\n是否插入動作？";
+
+// 3951 校正官方漢化 D2: Query size on Grasp case G4 with Reach case C in advance
+g_szErrorTextD3="身體轉動后跟無負載行走。\r\n\r\n更正建議：\r\n插入身體轉動 TBC1。\r\n\r\n\r\n是否插入動作？";
+g_szErrorTextD4="身體轉動后跟負載行走。\r\n\r\n更正建議：\r\n插入身體轉動 TBC2 和 TBC1。\r\n\r\n\r\n是否插入動作？";
+
+// 3951 校正官方漢化 D5: Do not limit out Grasp case G2, when distance of Move is smaller than 12 cm
+// 3951 校正官方漢化 D6: Distance of Reach is 10 cm with Side Step in advance
+g_szErrorTextD7="抓取 G4 前沒有到達 R-C。\r\n\r\n更正建議：\r\n在抓取前插入到達 R-C。";
+
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE

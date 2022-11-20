@@ -1,0 +1,39 @@
+// Copyright DASSAULT SYSTEMES 1999
+// --------------------------------------------------------------------------------------
+//	RESPONSABLE : Christophe DAGRON (amm)
+//	FUNCTION    : Ressource File (NLS)
+//	USE         : AnalysisVisualization Object CATSPMImageExtremaDialog
+// --------------------------------------------------------------------------------------
+
+// *************************************************************************
+//	Message to the translaters in German and Japenese :
+//  Thanks to keep as many blank spaces as set in the different characters chains.
+//  This is important as it modifies the location of the text in the windows...
+// *************************************************************************
+
+// * Title Dialog Box *
+Title="Extrema";
+
+// * Global *
+AbsoluteFrame.Show_Absolute.Title = "Global";
+AbsoluteFrame.Show_Absolute.Help="Computes global extrema";
+AbsoluteFrame.Show_Absolute.LongHelp="Computes global extrema.\nAn entity is a global extrema if its value\nis equal to the global minimum or maximum.";
+AbsoluteFrame.Maximum_Label.Title = "Maximum extrema at most: ";
+AbsoluteFrame.Minimum_Label.Title = "Minimum extrema at most: ";
+
+// * Local *
+LocalFrame.Show_Local.Title = "Local";
+LocalFrame.Show_Local.Help="Computes local extrema";
+LocalFrame.Show_Local.LongHelp="Computes local extrema.\nAn entity is a local extrema if its value\nis greater or lower than all its neighbours.";
+LocalFrame.Maximum_Label.Title = "Maximum extrema at most: ";
+LocalFrame.Minimum_Label.Title = "Minimum extrema at most: ";
+
+NumberGlobalMaxCreated = "Number of global maximum created: ";
+NumberGlobalMinCreated = "Number of global minimum created: ";
+NumberLocalMaxCreated = "Number of local maximum created: ";
+NumberLocalMinCreated = "Number of local minimum created: ";
+
+NumberOfFoundStart = "(available: ";
+NumberOfFoundEnd = ")";
+
+ExtremaResultsInfoTitle = "Extrema Results";

@@ -1,0 +1,48 @@
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 state chart messages
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 --- state
+DNBClimbStairCmd.statePickPrevious.Message="選擇Previous 動作";
+DNBClimbStairCmd.initialState.Message="單擊視圖任一位置退出";
+DNBClimbStairCmd.StatePickEdge1.Message="選擇the First Edge";
+DNBClimbStairCmd.StatePickEdge2.Message="選擇the Second Edge";
+DNBClimbStairCmd.StateUserDlg.Message="選擇用戶選項";
+
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 Progress Notification
+// 3951 校正官方漢化----------------------------------------------------------------------------
+ProgressTaskUI.ObjectName="Climb Stair Progress";
+ProgressTaskUI.Comment="";
+Progress.CreatingActivity="Creating 動作";
+Progress.ConstructingPostures="Constructing postures for climbing stairs";
+
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 warning messages
+// 3951 校正官方漢化----------------------------------------------------------------------------
+Warn.Title="Stair Climbing - Warning";
+Warn.NoSolutionFound.Title="IK solution warning";
+Warn.NoSolutionFound.Message="IK solution不converging";
+Warn.RotationMsg.Clockwise="clockwise";
+Warn.RotationMsg.AntiClockwise="anti-clockwise";
+Warn.ManikinNotAligned.Message="人體模型's X axis was不perpendicular來選擇ed edges.
+
+Mankin is aligned by rotating /p1 degrees /p2 about its Z axis.";
+
+Warn.StepDeapthTooLarge.Message="Step Depth is greater than 600mm.So by default 600mm will be taken for creating the One Step Climb";
+Warn.StepHeightMoreThanMaxStepHeightAndLessThanMaxOneStepHeight.Message="Step height is more than 300 mm which might不result into perfect 姿勢";
+
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 error messages
+// 3951 校正官方漢化----------------------------------------------------------------------------
+Error.Title="Stair Climbing - 錯誤";
+Error.SelectedEdgesAreNotParallel.Message="選擇 edges are不parallel";
+Error.StepHeightMoreThanMaxStepHeight.Message="Step height is more than最大允許 height = 300";
+Error.StepHeightLessThanMinStepHeight.Message="Step height is less than minimum allowed height = 50";
+Error.ManikinFarAwayFromStair.Message="人體模型 is away from first step";
+Error.ProblemInFirstStepHeight.Message="Problem in first step height";
+Error.ProblemInCreatingConstraint.Message="Error in creating約束";
+Error.NoConvergenceInSoln.Message="Error in convergence of IK Solution";
+Error.InRemovingConstraints.Message="Error in removing約束";
+Error.StepHeightMoreThanMaxOneStepHeight.Message="Step height is more than最大允許 height(380mm) for single step climb";
+
+

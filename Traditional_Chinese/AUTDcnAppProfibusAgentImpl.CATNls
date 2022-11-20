@@ -1,0 +1,235 @@
+WritingOperationFailure.Request="Applicom 寫入操作失敗";
+WritingOperationFailure.Diagnostic="/p1";
+WritingOperationFailure.Advice="";
+
+ReadingOperationFailure.Request="Applicom 讀取操作失敗";
+ReadingOperationFailure.Diagnostic="/p1";
+ReadingOperationFailure.Advice="";
+
+ConnectionFailure.Request="Applicom 連接失敗";
+ConnectionFailure.Diagnostic="/p1";
+ConnectionFailure.Advice="";
+
+ApplicomStatus1="錯誤 #/p1：未知函數。不支持請求的函數。\n",
+"請檢查是否為 Profibus DP 通信正確配置 Applicom 設備。\n";
+
+ApplicomStatus2="錯誤 #/p1：您的某個端口地址不正確。標記地址超出分隔符范圍。\n",
+"請先重新定義地址，然后再進行模擬。";
+
+ApplicomStatus3="錯誤 #/p1：\n幀內容不一致：",
+"\n返回的字節數不等于等待數量。\n請與您的支持團隊聯系。";
+
+ApplicomStatus4="錯誤 #/p1：數據不可訪問。\n",
+"物理地址不存在“QVZ 錯誤”（例如：PLC 中不存在輸入或輸出卡）。";
+
+ApplicomStatus6="錯誤 #/p1：設備發出第 2 層否定應答 (NACK)。\n",
+"Profibus DP：NO（不正常），遠程設備缺失或有缺陷。";
+
+ApplicomStatus10="錯誤 #/p1：設備發出第 2 層否定應答 (NACK)。\n",
+"Profibus：UE（用戶錯誤），遠程設備中存在錯誤。";
+
+ApplicomStatus11="錯誤 #/p1：設備發出第 2 層否定應答 (NACK)。\n",
+"Profibus：RR（遠程資源），遠程設備中的資源不足，或初始化參數無效。";
+
+ApplicomStatus12="錯誤 #/p1：設備發出第 2 層否定應答 (NACK)。\n",
+"Profibus：RS（遠程服務），未在 SAP 上授權使用的第 2 層服務，或未激活 SAP。";
+
+ApplicomStatus13="錯誤 #/p1：設備發出第 2 層否定應答 (NACK)。\n",
+"Profibus：RDL（FDL/FMA1/2 數據響應低），遠程設備中的資源不足，無法按低優先級答復。";
+
+ApplicomStatus14="錯誤 #/p1：設備發出第 2 層否定應答 (NACK)。\n",
+"Profibus：RDH（FDL/FMA1/2 數據響應高），遠程設備中的資源不足，無法按高優先級答復，或初始化參數無效。";
+
+ApplicomStatus15="錯誤 #/p1：Profibus：\n",
+"LS（本地服務），未激活本地 SAP。";
+
+ApplicomStatus16="錯誤 #/p1：Profibus：\n",
+"NO（不正常），有效位取決于第 2 層服務。";
+
+ApplicomStatus21="錯誤 #/p1：Profibus：\n",
+"IV（請求中的參數無效）\n更多詳細信息：\nTS applicom = adr 設備。\nTS 或 adr 設備高于 HSA";
+
+ApplicomStatus32="錯誤 #/p1：數據不可訪問。\n",
+"變量數不正確。";
+
+ApplicomStatus33="錯誤 #/p1：超時故障。\n",
+"遠程設備不在邏輯環中";
+
+ApplicomStatus34="錯誤 #/p1：接收或控制單詞（CRC16、BCC）中出現奇偶校驗故障。\n",
+"檢查通道和目標設備的配置。檢查布線（RC 過濾器位于 RS485 線路的末端）。";
+
+ApplicomStatus35="錯誤 #/p1：數據不可用于循環讀取。\n",
+"嘗試先使用循環模式傳輸數據，然后再讀取設備中的數據。\n請與支持團隊聯系。";
+
+ApplicomStatus36="錯誤 #/p1：未配置設備。\n",
+"使用控制臺（MS-Windows 控制臺）定義設備配置，并重新初始化 Applicom 產品。\nProfibus：如果對共享設備進行寫入訪問，則會反饋狀態。";
+
+ApplicomStatus40="錯誤 #/p1：達到可同時使用延緩模式的任務的最大數量時，任務會延緩讀取或寫入嘗試。\n";
+
+ApplicomStatus41="錯誤 #/p1：延遲的請求注冊已滿。";
+
+ApplicomStatus42="錯誤 #/p1：延遲的請求注冊為空。\n";
+
+ApplicomStatus45="錯誤 #/p1：通信程序未駐留。\n",
+"請先初始化 Applicom 接口，然后再使用它。\n如果您在 windows 環境下工作，則可使用命令 'pcinit'。";
+
+ApplicomStatus46="錯誤 #/p1：未配置板號，或者 Applicom 主/客戶端功能瞄準了已配置為從屬/服務器的通道，反之亦然。\n";
+
+ApplicomStatus47="錯誤 #/p1：無 Applicom 接口。\n";
+
+ApplicomStatus49="錯誤 #/p1：隊列超時故障。\n",
+"由于缺少資源（無可用通信通道），無法發送請求。\n",
+"此時間對應于正在處理的請求超時值的 4 倍。\n",
+"增加“正在處理的請求的超時”的值。\n",
+"增加在目標設備上同時進行的最大請求數。";
+
+ApplicomStatus51="錯誤 #/p1：驅動程序發生系統問題。\n";
+
+ApplicomStatus54="錯誤 #/p1：Profibus 協議：\n",
+"PROFIBUS Applicom?通道的地址不在邏輯環中。";
+
+ApplicomStatus55="錯誤 #/p1：超時超出“正在處理的請求的超時”的值，已建立連接，問題已確認，但無響應。";
+
+ApplicomStatus59="錯誤 #/p1：Applicom 接口上缺少保護鍵。\n";
+
+ApplicomStatus65="錯誤 #/p1：拒絕連接。\n",
+"布線錯誤。遠程站的配置錯誤。";
+
+ApplicomStatus66="錯誤 #/p1：Applicom 接口內存不足。\n";
+
+ApplicomStatus67="錯誤 /p1：收到的幀錯誤。\n",
+"請與您的支持團隊聯系。";
+
+ApplicomStatus68="錯誤 #/p1：訪問不存在的對象。\n",
+"錯誤類 — 子句 3.16.1.4.4，錯誤類 ACCESS: OBJECT_NON_EXISTENT。";
+
+ApplicomStatus69="錯誤 #/p1：訪問不兼容類型的對象。\n",
+"錯誤類 — 子句 3.16.1.4.4，錯誤類 ACCESS: TYPE_CONFLICT。";
+
+ApplicomStatus70="錯誤 #/p1：出現連接問題后，連接已中止。\n",
+"Profibus：中止 — 子句 3.4.4.2，用戶標識符。\n";
+
+ApplicomStatus71="錯誤 #/p1：通信已終止。\n",
+"Profibus 協議：中止 — 子句 3.4.4.2";
+
+ApplicomStatus72="錯誤 #/p1：通信已終止。\n",
+"Profibus 協議：中止 — 子句 3.4.4.2，LLI 標識符（狀態 80、81 和 82 除外）。";
+
+ApplicomStatus73="錯誤 #/p1：第 2 層通信已終止。\n",
+"中止 — 子句 3.4.4.2，第 2 層標識符。第 2 層發生錯誤后，遠程設備已關閉通信。";
+
+ApplicomStatus74="錯誤 #/p1：已拒絕通信。\n",
+"啟動錯誤 PDU — 子句 3.16.4.2，錯誤代碼 MAX-PDU-SIZE-INSUFFICIENT。\n遠程設備可接收的最大幀長度小于配置的最大長度。\n查看針對配置程序的低（或高）優先級發送的字段最大 PDU。";
+
+ApplicomStatus75="錯誤 #/p1：已拒絕通信。\n",
+"啟動錯誤 PDU — 子句 3.16.4.2，錯誤代碼 FEATURE-NOT-SUPPORTED。設備不支持功能。";
+
+ApplicomStatus76="錯誤 #/p1：已拒絕通信。\n",
+"啟動錯誤 PDU — 子句 3.16.4.2，錯誤代碼 VERSION-OD-INCOMPATIBLE。對象詞典版本不兼容。";
+
+ApplicomStatus77="錯誤 #/p1：已拒絕通信。\n",
+"啟動錯誤 PDU — 子句 3.16.4.2，錯誤代碼 USER-INITIATE-DENIED。通信已被遠程設備的用戶拒絕。";
+
+ApplicomStatus78="錯誤 #/p1：未知錯誤。\n",
+"啟動錯誤 PDU — 子句 3.16.4.2，錯誤代碼 PASSWORD-ERROR。錯誤密碼。";
+
+ApplicomStatus79="錯誤 #/p1：已拒絕通信。\n",
+"啟動錯誤 PDU — 子句 3.16.4.2，錯誤代碼 PROFILE-NUMBER-INCOMPATIBLE。輪廓數不兼容。";
+
+ApplicomStatus80="錯誤 #/p1：已拒絕通信。\n",
+"中止 — 子句 4.7.7.3。LLI 標識符原因代碼 ABT_RC1：否定 LLI-LLI 上下文檢查。\n檢查參數：通信類型（MMAC 或 MSAC）、最大 SCC、最大 RCC、最大 SAC、最大 RAC、超時 ACI。";
+
+ApplicomStatus81="錯誤 #/p1：通信已終止。\n",
+"中止 — 子句 4.7.7.3。LLI 標識符原因代碼 ABT_RC2：\n在連接的建立階段或發行階段中收到不允許的 LLI PDU。\n盡管未建立通信，但收到了幀。";
+
+ApplicomStatus82="錯誤 #/p1：通信已終止。\n",
+"中止 — 子句 4.7.7.3。LLI 標識符原因代碼 ABT_RC3：\n在數據傳輸階段中收到不允許的 LLI PDU。\n已建立通信后，設備嘗試進行連接。";
+
+ApplicomStatus83="錯誤 #/p1：Profibus 協議：\n",
+"錯誤類 — 子句 3.16.1.4.4。錯誤類 VFD-STATE。";
+
+ApplicomStatus84="錯誤 #/p1：Profibus 協議：\n",
+"錯誤類 — 子句 3.16.1.4.4。錯誤類 APPLICATION-REFERENCE。";
+
+ApplicomStatus85="錯誤 #/p1：Profibus 協議：\n",
+"錯誤類 — 子句 3.16.1.4.4。錯誤類 DEFINITION。";
+
+ApplicomStatus86="錯誤 #/p1：Profibus 協議：\n",
+"錯誤類 — 子句 3.16.1.4.4。錯誤類 RESOURCE。";
+
+ApplicomStatus87="錯誤 #/p1：Profibus 協議：\n",
+"錯誤類 — 子句 3.16.1.4.4。錯誤類 SERVICE。";
+
+ApplicomStatus88="錯誤 #/p1：Profibus 協議：\n",
+"錯誤類 — 3.16.1.4.4。錯誤類 ACCESS（狀態 68 和 69 除外）。\n對僅限只讀的對象進行寫入嘗試。";
+
+ApplicomStatus89="錯誤 #/p1：Profibus 協議：\n",
+"錯誤類 — 子句 3.16.1.4.4。錯誤類 OD。";
+
+ApplicomStatus90="錯誤 #/p1：Profibus 協議：\n",
+"錯誤類 — 子句 3.16.1.4.4。錯誤類 OTHER。";
+
+ApplicomStatus91="錯誤 #/p1：遠程設備已拒絕幀。\n",
+"錯誤類 — 子句 3。16。1。4。4。錯誤類 REJECT_PDU。";
+
+ApplicomStatus93="錯誤 #/p1：無法檢測 Applicom 卡。\n",
+"請檢查是否在機床上正確設置設備。";
+
+ApplicomStatusDefault="錯誤 #/p1：未知錯誤。\n",
+"請與您的支持團隊聯系。";
+
+
+AUTDcnAppProfibusAgentInternalError.Request="Applicom Profibus DP 代理程序內部錯誤";
+AUTDcnAppProfibusAgentInternalError.Diagnostic="/p1";
+AUTDcnAppProfibusAgentInternalError.Advice="請與您的支持團隊聯系。";
+
+AUTDcnAppProfibusAgentWrArrayLimit="由于地址 '/p2' 上存在越行陣列，端口 '/p1' 上的寫入操作失敗。";
+
+AUTDcnAppProfibusAgentRdArrayLimit="由于地址 '/p2' 上存在越行陣列，端口 '/p1' 上的讀取操作失敗。";
+
+AUTDcnAppProfibusAgentWrBitPos="由于地址 '/p2' 上的位位置錯誤，端口 '/p1' 上的寫入操作失敗。";
+
+AUTDcnAppProfibusAgentMemBlkErr="在內部內存塊和地址 '/p1' 之間未找到對應鏈接。";
+
+AUTDcnAppProfibusAgentRdBitPos="由于地址 '/p2' 上的位位置錯誤，端口 '/p1' 上的讀取操作失敗。";
+
+
+AUTDcnAppProfibusAgentVarDefError.Request="Profibus DP IO 端口定義錯誤";
+AUTDcnAppProfibusAgentVarDefError.Diagnostic="/p1";
+AUTDcnAppProfibusAgentVarDefError.Advice="";
+
+AUTDcnAppProfibusAgentUnsupportedType="不支持名為 '/p1' 的端口使用的數據類型。",
+"\n請先重新定義它，然后再進行模擬。";
+
+AUTDcnAppProfibusAgentBadSyntax="具有關聯地址 '/p2' 的端口 '/p1' 上的語法錯誤。語法必須與 Ix.y 或 Ox.y 匹配。",
+"\n請先修改地址語法，然后再運行新模擬。";
+
+AUTDcnAppProfibusAgentBitOutOfRange="具有關聯地址 '/p2' 的端口 '/p1' 上的位位置超出范圍。語法必須與 Ix.y 或 Ox.y 匹配。y 的邊界為 0 到 7",
+"\n請先修改地址語法，然后再運行新模擬。";
+
+AUTDcnAppProfibusAgentUnsupportedTag="具有關聯地址 '/p2' 的端口 '/p1' 具有不支持的 Profibus DP 地址。",
+"\n請先分派有效的 Profibus DP 地址，然后再進行模擬。\n";
+
+AUTDcnAppProfibusAgentErrorType32bits="名為 '/p1' 的端口具有與 Profibus DP 地址定義 '/p2' 不兼容的類型。\n",
+"它必須與 32 位類型關聯。請先重新定義它，然后再進行模擬";
+
+AUTDcnAppProfibusAgentErrorType8bits="名為 '/p1' 的端口具有與 Profibus DP 地址定義 '/p2' 不兼容的類型。\n",
+"它必須與 8 位類型關聯。請先重新定義它，然后再進行模擬";
+
+AUTDcnAppProfibusAgentErrorType16bits="名為 '/p1' 的端口具有與 Profibus DP 地址定義 '/p2' 不兼容的類型。\n",
+"它必須與 16 位類型關聯。請先重新定義它，然后再進行模擬";
+
+AUTDcnAppProfibusAgentErrorTypeBool="名為 '/p1' 的端口具有與 Profibus DP 地址定義 '/p2' 不兼容的類型。\n",
+"它必須與布爾類型關聯。請先重新定義它，然后再進行模擬";
+
+AUTDcnAppProfibusAgentInPb="名為 '/p1' 且具有關聯地址 '/p2' 的端口具有與輸出 PLC 地址關聯的輸入方向。",
+"\n請在此端口上重新定義方向，然后再進行模擬。\n";
+
+AUTDcnAppProfibusAgentOutPb="名為 '/p1' 且具有關聯地址 '/p2' 的端口具有與輸入 PLC 地址關聯的輸出方向。",
+"\n請在此端口上重新定義方向，然后再進行模擬。\n";
+
+AppItfNotSupported.Request="Applicom 通信接口未實施";
+AppItfNotSupported.Diagnostic="/p";
+AppItfNotSupported.Advice="請運行 x86 版本的 DELMIA 以使用 Applicom 功能。";
+
+x64Failure="x64 架構中不本地支持 Applicom 軟件。"; 

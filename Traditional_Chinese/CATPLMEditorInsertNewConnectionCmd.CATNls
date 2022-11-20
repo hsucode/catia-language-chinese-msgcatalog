@@ -1,0 +1,84 @@
+CATPLMEditorInsertNewConnectionCmd.StateSelection1.Message="從對象選擇";
+CATPLMEditorInsertNewConnectionCmd.StateSelection2.Message="選擇至對象";
+CATPLMEditorInsertNewConnectionCmd.StateFlow.Message="指定要交換的流";
+CATPLMEditorInsertNewConnectionCmd.StateType.Message="指定交換類型";
+CATPLMEditorInsertNewConnectionCmd.StateLaunchPLMNewCmd.Message="編輯連接的 PLM 屬性";
+
+InvalidSelection.Warning.Title="警告";
+InvalidSelection.Warning.ErrorMessagePort="選擇無效：端口方向與支持的陣列不符";
+InvalidSelection.Warning.ErrorMessageFlow="選擇無效：端口流與支持的陣列不符";
+InvalidSelection.Warning.ErrorMessageType="選擇無效：端口類型與支持的陣列不符";
+InvalidSelection.Warning.ErrorMessageLogicalPort="邏輯輸入端口已連接";
+
+InvalidPattern.DisplayName="無效陣列";
+InvalidPattern.Tooltip.Unhandled="未知錯誤";
+InvalidPattern.Tooltip.Disconnected="連接至少有一個端點已斷開";
+InvalidPattern.Tooltip.Flow="關聯到端點的流不同";
+InvalidPattern.Tooltip.Type="關聯到端點的類型不同";
+InvalidPattern.Tooltip.NoFlow="至少有一個端點沒有關聯流";
+InvalidPattern.Tooltip.Ports="端點方向與支持的陣列不符";
+InvalidPattern.Tooltip.Flow.CompliantByBL="與端點關聯的流符合業務邏輯";
+InvalidPattern.Tooltip.Type.CompliantByBL="與端點關聯的類型符合業務邏輯";
+
+FatherElementNotEditable="該連接的父連接無法自動連接";
+ElementNotEditable="此元素不可編輯";
+ImplementingElementNotEditable="實施元素不可編輯";
+
+ImplementLink.Tooltip.BadTarget="無法創建實施鏈接，包含 ";
+ImplementLink.Tooltip.PleaseSelect="請選擇一個 ";
+ImplementLink.Tooltip.Requirement="要求";
+ImplementLink.Tooltip.Function="功能";
+ImplementLink.Tooltip.Logical="邏輯";
+ImplementLink.Tooltip.Physical="物理";
+ImplementLink.Tooltip.R="F、L 或 P";
+ImplementLink.Tooltip.F="R 或 L";
+ImplementLink.Tooltip.L="R、F 或 P";
+ImplementLink.Tooltip.P="R 或 L";
+ImplementLink.Tooltip.Component=" 部件";
+ImplementLink.Tooltip.Root=" 根";
+ImplementLink.Tooltip.StartMissingRefRef="您的 ";
+ImplementLink.Tooltip.MiddleMissingRefRef=" 根必須實施您的 ";
+ImplementLink.Tooltip.Unexpected="無法創建實施鏈接：意外錯誤";
+ImplementLink.Tooltip.InvalidPattern="無效陣列";
+ImplementLink.Tooltip.Step1="創建實施關系：\n請選擇要連接的實體。";
+ImplementLink.Tooltip.Step2="創建實施關系：\n請選擇要連接的第二個實體。";
+ImplementLink.Tooltip.Step2.RefRef="創建參考至參考實施關系：\n請選擇要連接的第二個實體。";
+ImplementLink.Tooltip.Step2.Context="創建上下文實施關系：\n請選擇要連接的第二個實體。";
+ImplementLink.Tooltip.Step3="創建實施關系：\n請為實施關系屬性賦值。";
+ImplementLink.Tooltip.Step3.RefRef="創建參考至參考實施關系：\n請為實施關系屬性賦值。";
+ImplementLink.Tooltip.Step3.Context="創建上下文實施關系：\n請為實施關系屬性賦值。";
+ImplementLink.Tooltip.Step4.RefRef="創建參考至參考\n實施關系成功。";
+ImplementLink.Tooltip.Step4.Context="創建上下文實施\n關系成功。";
+ImplementLink.Tooltip.Step5="創建實施關系失敗。";
+ImplementLink.Tooltip.Step5.RefRef="創建參考至參考\n實施關系失敗。";
+ImplementLink.Tooltip.Step5.Context="創建上下文實施\n關系失敗。";
+ImplementLink.Tooltip.CannotImplement=" 無法實施 ";
+ImplementLink.Tooltip.AlreadyImplements="這 2 個實體之間已存在相似實施鏈接，禁止創建同樣的實施鏈接。";
+
+Message.EnvironmentComplianceTitle="插入新連接 - 錯誤";
+Message.EnvironmentCompliance="無法插入：\n\n- 當前環境不允許創建端口和/或連接。\n\n請選擇一個合適的創建環境。";
+
+CreateLogicalConnection.Tooltip.FromElement="創建邏輯連接。\n請選擇要連接的實體。";
+CreateLogicalConnection.Tooltip.ToElement="創建邏輯連接。\n請選擇要連接的第 2 個實體。";
+CreateLogicalConnection.Tooltip.DefineType="創建邏輯連接。\n請定義交換類型。";
+CreateLogicalConnection.Tooltip.DefineAttributes="創建邏輯連接。\n請為 PLM 連接的屬性賦值。";
+CreateLogicalConnection.Tooltip.CreationSuccessful="創建邏輯連接命令成功";
+CreateLogicalConnection.Tooltip.CreationFailed="創建邏輯連接命令失敗";
+
+CreateFunctionalConnection.Tooltip.FromElement="創建功能連接。\n請選擇要連接的實體。";
+CreateFunctionalConnection.Tooltip.ToElement="創建功能連接。\n請選擇要連接的第 2 個實體。";
+CreateFunctionalConnection.Tooltip.DefineFlow="創建功能連接來源\n請定義交換流。";
+CreateFunctionalConnection.Tooltip.DefineAttributes="創建功能連接。\n請為 PLM 連接的屬性賦值。";
+CreateFunctionalConnection.Tooltip.CreationSuccessful="創建功能連接命令成功";
+CreateFunctionalConnection.Tooltip.CreationFailed="創建功能連接命令失敗";
+
+Message.EditabilityIssuesTitle="插入新連接 - 可編輯性問題";
+Message.EditabilityIssues="無法插入，因為以下實體不可編輯：\n\n";
+
+Tooltip.NumberOfCreatedCnx="已創建的連接數： ";
+Tooltip.NumberOfCreatedPorts="已創建的端口數： ";
+
+InvalidPattern.Tooltip.BrokenConnection="錯誤 - 至少有一個端點斷開連接。";
+InvalidPattern.Tooltip.PartiallyLoadedConnection="警告 - 至少有一個端點未加載";
+InvalidPattern.Tooltip.UnknownConnection="錯誤 - 至少有一個端點無法檢索。";
+

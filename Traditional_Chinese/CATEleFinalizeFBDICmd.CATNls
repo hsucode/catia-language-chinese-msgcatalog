@@ -1,0 +1,19 @@
+CATEleFinalizeFBDICmd.initialState.Message="單擊查看器中的任意位置退出";
+CATEleFinalizeFBDICmdNotif.Title="后處理警告";
+CATEleSpliceFinalizeNotif.Text="\n\n 無法對以下接頭進行后處理，\n 因為它們似乎與現有的已定位并進行電氣連接的接頭相交疊 \n\n";
+CATEleProtectionFinalizeNotif.Text="\n\n 無法對以下保護進行后處理 \n\n";
+
+CATEleFinalizeFBDIEHFPostProcess.Title="線束平鋪 FBDI 后處理";
+
+CATEleFBDIEHFPostProcessMoreEBNIn3DFError.Text="該裝配包含平鋪參數。\n 該 3D 平鋪線束數據包含多個電氣物理系統。";
+CATEleFBDIEHFPostProcessAlreadyDoneInfo.Text="已對 3D 平鋪線束進行后處理。\n 若平鋪鏈接不是最新的，則使用“更新平鋪鏈接”的命令對其進行更新。";
+CATEleFBDIEHFPostProcessMoreEBNMoreAssError.Text="包含電氣物理系統的多個裝配被加載到會話中。\n 您是否希望“線束平鋪后處理”繼續遷移“V6 數據模型”？";
+CATEleFBDIEHFPostProcessMoreGBNMoreAssError.Text="包含電氣幾何體的多個裝配被加載到會話中。\n 您是否希望“線束平鋪后處理”繼續遷移“V6 數據模型”？";
+CATEleFBDIEHFPostProcessNoHarnessEditorOpenEBNError.Text="沒有至少包含一個電氣物理系統在其內部進行實例化的裝配被加載到會話中。\n 您是否希望“線束平鋪后處理”繼續遷移“V6 數據模型”？";
+CATEleFBDIEHFPostProcessNoHarnessEditorOpenGBNError.Text="沒有至少包含一個電氣幾何體的裝配被加載到會話中。\n 您是否希望“線束平鋪后處理”繼續遷移“V6 數據模型”？";
+CATEleFBDIEHFPostProcess3DHNotOpenError.Text="沒有至少包含一個電氣幾何體或電氣物理系統的裝配被加載到會話中。\n 您是否希望“線束平鋪后處理”繼續遷移“V6 數據模型”？";
+CATEleFBDIEHFPostProcessEBNNotLinkedToGBNIn3DFError.Text="3D 平鋪線束內的電氣物理系統沒有以電氣方式鏈接至任何電氣幾何體。\n 您是否希望“線束平鋪后處理”繼續遷移“V6 數據模型”？";
+CATEleFBDIEHFPostProcessNeedToUpdateFlattenLinksInfo.Text="“線束平鋪后處理”已成功完成“V6 數據模型”的遷移。\n 但平鋪鏈接不是最新的，請使用“更新平鋪鏈接”的命令對其進行更新。";
+CATEleFBDIEHFPostProcessFirstBNSNotMapping.Text="“線束平鋪后處理”已成功完成“V6 數據模型”的遷移。\n 但“更新鏈接處理”無法識別映射段，因此平鋪鏈接不是最新的。\n 請使用“更新平鋪鏈接”的命令對其進行更新。";
+CATEleFBDIEHFPostProcessUpdateLinksFAILED.Text="“線束平鋪后處理”已成功完成“V6 數據模型”的遷移。\n 但“更新鏈接處理”無法更新鏈接。\n 請使用“更新平鋪鏈接”的命令對其進行更新。";
+

@@ -1,0 +1,49 @@
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 state chart messages
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 --- state
+DNBClimbLadderCmd.statePickPrevious.Message="選擇Previous 動作";
+DNBClimbLadderCmd.initialState.Message="單擊視圖任一位置退出";
+DNBClimbLadderCmd.StatePickEdge1.Message="選擇the First Rung";
+DNBClimbLadderCmd.StatePickEdge2.Message="選擇the Second Rung";
+DNBClimbLadderCmd.StateUserDlg.Message="選擇用戶選項";
+
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 Progress Notification
+// 3951 校正官方漢化----------------------------------------------------------------------------
+ProgressTaskUI.ObjectName="Climb Ladder Progress";
+ProgressTaskUI.Comment="";
+Progress.FirstRungPosture="Constructing First Rung 姿勢";
+Progress.ReplayingPosture="姿勢 No: ";
+Progress.CreatingActivity="Creating 動作";
+Progress.ConstructingPostures="Constructing postures for climbing ladder";
+
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 warning/error messages
+// 3951 校正官方漢化----------------------------------------------------------------------------
+Warn.Title="Ladder Climbing - Warning";
+Warn.NoSolutionFound.Title="IK solution warning";
+Warn.NoSolutionFound.Message="IK solution不converging";
+Warn.RotationMsg.Clockwise="clockwise";
+Warn.RotationMsg.AntiClockwise="anti-clockwise";
+Warn.ManikinNotAligned.Message="人體模型's X axis was不perpendicular來選擇ed edges.
+
+Mankin is aligned by rotating /p1 degrees /p2 about its Z axis.";
+
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 error messages
+// 3951 校正官方漢化----------------------------------------------------------------------------
+Error.Title="Ladder Climbing - 錯誤";
+Error.SelectedEdgesAreNotParallel.Message="選擇 edges are不parallel";
+Error.RungHeightMoreThanMaxRungHeight.Message="Rung height is more than最大允許 height = 300";
+Error.RungHeightLessThanMinRungHeight.Message="Rung height is less than minimum allowed height = 50";
+
+Error.ManikinFarAwayFromLadder.Message="人體模型 is away from first Rung";
+Error.ProblemInFirstRungHeight.Message="Problem in first Rung height";
+Error.WrongLadderWidth.Message="Wrong Ladder width";
+
+Error.ProblemInCreatingConstraint.Message="Error in creating約束";
+Error.NoConvergenceInSoln.Message="Error in convergence of IK Solution";
+Error.InRemovingConstraints.Message="Error in removing約束";
+Error.CimbdownWrongFirstRungPosition.Message="Error in climb down ladder - first 錯誤";
+Error.FirstRungPositionWorkerWronglyPlaced.Message="Error in getting first rung 位置";

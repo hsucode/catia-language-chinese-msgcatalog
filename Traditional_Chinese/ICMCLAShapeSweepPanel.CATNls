@@ -1,0 +1,184 @@
+DialogBoxTitle="掃掠";
+
+TabOptions.Title="選項";
+
+LabelSweepType.Title="類型： ";
+LabelSweepType.LongHelp="每種類型需要不同的輸入。
+多截面：
+僅需要輪廓。無需引導線。
+引導線 + 輪廓：
+需要輪廓和引導線。
+滑動：
+還需要滑動曲面。";
+LabelSweepType.ShortHelp="掃掠類型";
+Combo.MultiSection="多截面";
+Combo.GuideAndProfile="引導線 + 輪廓";
+Combo.Sliding="滑動";
+ComboSweepType.LongHelp="選擇類型：
+多截面
+引導線 + 輪廓
+滑動";
+ComboSweepType.ShortHelp="選擇掃掠類型";
+
+LabelGuide.Title="引導線： ";
+LabelGuide.LongHelp="選擇要用于掃掠曲面的元素，輪廓曲線將沿此掃掠曲面掃掠。";
+LabelGuide.ShortHelp="指定引導線";
+
+LabelProfile.Title="輪廓： ";
+LabelProfile.LongHelp="指定輪廓。";
+LabelProfile.ShortHelp="指定輪廓";
+
+LabelGuide2.Title="引導線 2： ";
+LabelGuide2.LongHelp="選擇要附加掃掠的引導線 2 曲線。引導線 2 用于限制輪廓。";
+LabelGuide2.ShortHelp="用于限制的引導線";
+
+LabelAdjust.Title="調整到： ";
+LabelAdjust.LongHelp="-調整到輪廓- 
+如果輪廓和引導線之間有間隔，可創建曲面以調整到輪廓。
+-調整到引導線- 
+如果輪廓和引導線之間有間隔，可創建曲面以調整到引導線。
+-帶平面輪廓-
+輪廓由帶平面輪廓變換為移動框架 xy 平面。";
+LabelAdjust.ShortHelp="調整到引導線或輪廓或帶平面輪廓";
+ComboAdjust.LongHelp="可創建掃掠曲面以調整到以下項之一： 
+調整到引導線
+調整到輪廓
+帶平面輪廓";
+ComboAdjust.ShortHelp="調整到引導線或輪廓或帶平面輪廓";
+
+FrameAttach.Title="輪廓定位";
+FrameAttach.LongHelp="掃掠曲面可附加到
+- 曲面
+- 點
+- 方向";
+
+FrameSlidingSurface.Title="曲面： ";
+FrameSlidingSurface.LongHelp="當輪廓沿引導曲線掃掠時被定位在滑動曲面上。";
+FrameSlidingSurface.ShortHelp="指定滑動曲面";
+
+CheckButtonPointOnGuide.Title="點";
+CheckButtonPointOnGuide.LongHelp="根據在輪廓上選定的點，將輪廓重新定位為沿引導曲線或滑動曲面。";
+CheckButtonPointOnGuide.ShortHelp="指定輪廓上的點";
+
+CheckButtonVectorOnGuide.Title="方向";
+CheckButtonVectorOnGuide.LongHelp="通過定義向量方向，在滑動曲面上對齊輪廓。";
+CheckButtonVectorOnGuide.ShortHelp="指定向量方向";
+
+LabelProfilesPlane.Title="輪廓平面： ";
+LabelProfilesPlane.LongHelp="輪廓平面用于對齊輪廓。";
+LabelProfilesPlane.ShortHelp="指定輪廓平面";
+
+FrameLimitation.Title="輪廓限制";
+FrameLimitation.LongHelp="掃掠曲面可由以下項限制
+- 曲面
+- 點
+- 縮放";
+
+LabelLimitType.Title="類型： ";
+LabelLimitType.LongHelp="- 無限制- 
+- 引導線 2-
+- 曲面切線-
+- 曲面點-";
+LabelLimitType.ShortHelp="限制類型";
+Combo.NoLimitation="無限制";
+Combo.Guide2="引導線 2";
+Combo.SurfaceTangential="曲面切線";
+Combo.SurfacePoint="曲面點";
+
+ComboLimitType.LongHelp="掃掠類型引導線 + 輪廓和滑動可使用此下拉菜單。";
+ComboLimitType.ShortHelp="限制類型";
+FrameGuide2Surface.Title="曲面： ";
+FrameGuide2Surface.LongHelp="將旋轉輪廓直到其接觸到選定的曲面。";
+FrameGuide2Surface.ShortHelp="指定引導線 2 曲面";
+
+CheckButtonPointOnGuide2.Title="點";
+CheckButtonPointOnGuide2.LongHelp="選項點關閉：將旋轉輪廓直到其終點接觸到選定的曲面。
+選項點開啟：將旋轉輪廓直到在選定的點處接觸到曲面。";
+CheckButtonPointOnGuide2.ShortHelp="指定引導線 2 上的點";
+
+CheckButtonScaling.Title="縮放";
+CheckButtonScaling.LongHelp="在引導線和引導曲線 2 之間按比例縮放輪廓。";
+CheckButtonScaling.ShortHelp="縮放輪廓以適應引導線 2";
+
+FrameShape.Title="形狀";
+FrameShape.LongHelp="形定義掃掠曲面在輪廓之間的運行。
+- 線性形：掃掠曲面在輪廓之間以線性方式運行。
+- 局部形：
+- 光順形：
+- 全局形： ";
+ComboShape.ShortHelp="形影響掃掠的運行";
+Combo.Linear="線性形狀";
+Combo.Local="本地形狀";
+Combo.Smooth="光順形狀";
+Combo.Global="全局形狀";
+ComboShape.LongHelp="轉換類型指定曲面的形，即單獨選定輪廓之間的轉換類型。
+-線性形-
+通過計算輪廓之間的線性平均值來得出兩個相鄰輪廓之間的曲面的形。
+-本地形-
+在每個給定輪廓的位置，此輪廓在其環境中保持常量，然后以光順的方式與下一輪廓合并。
+-光順形-
+此外，兩個相鄰輪廓之間的轉換由下一輪廓定義。由此，可避免曲面振蕩。
+-全局形-
+由所有選定的輪廓定義兩個相鄰輪廓之間的曲面的形。";
+Combo.Auto="自動";
+Combo.Segments="段";
+Combo.Cells="單元";
+Combo.Bends="彎曲";
+ContinuityProfileCoupling.Button_G0.ShortHelp="G0 - 參數映射";
+ContinuityProfileCoupling.Button_G1.ShortHelp="G1 - 參數映射";
+ContinuityProfileCoupling.Button_G2.ShortHelp="G2 - 參數映射";
+
+TabContainer.TabMovingFrame.Title="移動框架";
+TabPage_MovingFrame.Title="移動框架";
+
+TabApproximation.Title="近似值";
+
+FrameSpineSegmentation.Title="引導線分段";
+FrameSpineSegmentation.LongHelp="在單獨脊線、單獨脊線和引導線、單獨脊線和引導線 2 以及所有之間選擇。";
+ComboSpineSegmentation.ShortHelp="引導線分段類型";
+Combo.Spine="單獨脊線";
+Combo.SpineGuide="單獨脊線和引導線";
+Combo.SpineGuide2="單獨脊線和引導線 2";
+
+FrameProfileSegmentation.Title="輪廓分段";
+FrameProfileSegmentation.LongHelp="在首條輪廓曲線、具備最多段數的輪廓曲線和所有輪廓曲線之間選擇。";
+ComboProfileSegmentation.ShortHelp="輪廓分段類型";
+Combo.First="首條";
+Combo.Max="最大";
+Combo.All="所有";
+FrameProfileCoupling.Title="輪廓耦合";
+FrameProfileCoupling.LongHelp="在以下耦合類型之間選擇：
+自動、段、單元和彎曲。";
+ComboProfileCoupling.ShortHelp="輪廓耦合類型";
+
+Combo.AdjustToGuide="調整到引導線";
+Combo.AdjustToProfile="調整到輪廓";
+Combo.ProfilesWithPlane="帶平面輪廓";
+
+// Approximation Short resp. Long Help Entities have to be inserted here
+ComboSpineSegmentation.LongHelp="-單獨脊線- 
+由字段單獨脊線中指定的曲線得出段數。
+-單獨脊線和引導線- 
+由字段單獨脊線和引導線中指定的曲線得出段數。
+-單獨脊線和引導線 2- 
+由字段單獨脊線和引導線 2 中指定的曲線得出段數。
+-所有- 
+由字段單獨脊線、引導線和引導線 2 中指定的曲線得出段數。";
+
+ComboProfileSegmentation.LongHelp="首個：
+段數由首個選定的輪廓定義
+最多：
+段數由具備最多段數的輪廓定義。
+所有：
+段數由所有輪廓定義";
+
+
+DomainMode.Title="域模式已更改為強制單域。
+不再支持域模式的使用首個域。";
+
+ProfileCouplingMode.Title="輪廓耦合模式自動已更改為段。
+不再支持輪廓耦合模式自動。";
+
+ProfileInvertDirections.Title="已在更新的環境中創建此特征。
+結果在當前環境中可能會更改。
+建議在更新的環境下使用此特征。";

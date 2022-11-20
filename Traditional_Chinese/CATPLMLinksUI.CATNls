@@ -1,0 +1,152 @@
+// 3951 校正官方漢化*******************************************************************************
+// 3951 校正官方漢化              CATPLMEditLinksWnd
+// 3951 校正官方漢化*******************************************************************************
+CATPLMEditLinksWnd.frame_custo.ViewLabel.Title="視圖: ";
+CATPLMEditLinksWnd.frame_custo.BrowseLabel.Title="瀏覽: ";
+
+// 3951 校正官方漢化 Combo box
+Customize.ViewCombo.Label0="列表";
+Customize.ViewCombo.Label1="詳細列表";
+Customize.ViewCombo.Label2="圖";
+Customize.ViewCombo.Label3="詳圖";
+Customize.ViewCombo.Label4="新列表";
+Customize.ViewCombo.Filter=" (已過濾)";
+
+Customize.BrowseCombo.Label0="選擇";
+Customize.BrowseCombo.Label1="會話";
+Customize.BrowseCombo.Label2="當前編輯器";
+Customize.BrowseCombo.Label3="直接子級";
+Customize.BrowseCombo.Label4="影響";
+
+
+CATPLMEditLinksWnd.main_frame.frame_filter.role_filter.Title="角色: ";
+CATPLMEditLinksWnd.main_frame.frame_filter.status_filter.Title="關系狀態: ";
+CATPLMEditLinksWnd.main_frame.frame_filter.pub_filter.Title="發布: ";
+CATPLMEditLinksWnd.main_frame.frame_filter.pCoreTypeComboLabel.Title="被指向的類型: ";
+
+
+CATPLMEditLinksWnd.Col0="角色";
+CATPLMEditLinksWnd.Col1="指向元素";
+CATPLMEditLinksWnd.Col2="被指向的元素";
+CATPLMEditLinksWnd.Col3="上下文";
+CATPLMEditLinksWnd.Col4="狀態";
+
+CATPLMEditLinksWnd.SRList.Col0="角色";
+CATPLMEditLinksWnd.SRList.Col1="指向部件";
+CATPLMEditLinksWnd.SRList.Col2="狀態";
+CATPLMEditLinksWnd.SRList.Col3="被指向的部件";
+CATPLMEditLinksWnd.SRList.Col4="上下文";
+
+CATPLMEditLinksWnd.TreeList.Relation="部件/關系/鏈接";
+CATPLMEditLinksWnd.TreeList.Status="狀態";
+CATPLMEditLinksWnd.TreeList.Role="角色";
+CATPLMEditLinksWnd.TreeList.PreferredAction="建議的工作指令";
+
+
+// 3951 校正官方漢化 Button
+CATPLMEditLinksWnd.frame_button.SynchronizeButton.Title="同步鏈接";
+CATPLMEditLinksWnd.frame_button.SynchronizeButton.ShortHelp="同步鏈接";
+CATPLMEditLinksWnd.frame_button.BreakButton.Title="隔離鏈接";
+CATPLMEditLinksWnd.frame_button.BreakButton.ShortHelp="隔離鏈接";
+CATPLMEditLinksWnd.frame_button.ReplaceButton.Title="手動重新連接";
+CATPLMEditLinksWnd.frame_button.ReplaceButton.ShortHelp="手動重新連接";
+CATPLMEditLinksWnd.frame_button.OpenButton.Title="打開";
+CATPLMEditLinksWnd.frame_button.OpenButton.ShortHelp="打開被指向的部件";
+CATPLMEditLinksWnd.frame_button.DeleteButton.Title="刪除";
+CATPLMEditLinksWnd.frame_button.DeleteButton.ShortHelp="刪除指向部件";
+CATPLMEditLinksWnd.frame_button.RerouteButton.Title="自動重新連接";
+CATPLMEditLinksWnd.frame_button.RerouteButton.ShortHelp="自動重新連接";
+CATPLMEditLinksWnd.frame_button.CustoButton.Title="過濾器";
+CATPLMEditLinksWnd.frame_button.CustoButton.ShortHelp="關系過濾器";
+CATPLMEditLinksWnd.frame_button.ActionButton.Title="應用工作指令";
+CATPLMEditLinksWnd.frame_button.ActionButton.ShortHelp="應用建議的工作指令";
+
+CATPLMEditLinksWnd.TiltePanel="編輯鏈接和關系";
+CATPLMEditLinksWnd.TiltePanel.filter=" (已過濾)";
+
+CATPLMEditLinksWnd.main_frame.frame_label.source.Title="被指向的部件: ";
+CATPLMEditLinksWnd.main_frame.frame_label.refresh_button.LongHelp="刷新指向文檔斷開的鏈接
+   在執行此命令后，系統將嘗試訪問所有被指向的文檔。
+例如，使用此命令重新嘗試訪問未找到的文檔，而無需在重新建立網絡連接后關閉編輯/鏈接命令";
+
+CATPLMEditLinksWnd.Links=" 鏈接";
+CATPLMEditLinksWnd.TitleElement="鏈接和關系自 ";
+
+// 3951 校正官方漢化*******************************************************************************
+// 3951 校正官方漢化              CATPLMLinksUI
+// 3951 校正官方漢化*******************************************************************************
+CATPLMLinksUI.RelationStatus.OK="確定";
+CATPLMLinksUI.RelationStatus.Broken="斷開";
+CATPLMLinksUI.RelationStatus.BrokenSession="在會話中斷開";
+CATPLMLinksUI.RelationStatus.BrokenRemote="在檔案庫中斷開";
+CATPLMLinksUI.RelationStatus.Neutral="不相關";
+CATPLMLinksUI.RelationStatus.Synchronized="已同步";
+CATPLMLinksUI.RelationStatus.NotSynchronized="不同步";
+CATPLMLinksUI.RelationStatus.ComponentNotLoaded="未加載的部件";
+CATPLMLinksUI.RelationStatus.ComponentNotOpened="未打開的部件";
+
+CATPLMLinksUI.Unknown="找不到";
+CATPLMLinksUI.OutOfWorkspace="不在工作空間內";
+CATPLMLinksUI.MinorNotInSession="文檔不在會話中";
+
+CATPLMLinksUI.PreferredAction.DeleteComponent="刪除部件";
+CATPLMLinksUI.PreferredAction.DeleteFeature="刪除特征";
+CATPLMLinksUI.PreferredAction.IsolateRelation="隔離關系";
+CATPLMLinksUI.PreferredAction.ReconnectLink="重新連接鏈接";
+CATPLMLinksUI.PreferredAction.ReconnectRelation="重新連接關系";
+CATPLMLinksUI.PreferredAction.Reconnect="重新連接";
+CATPLMLinksUI.PreferredAction.Undefined="-";
+CATPLMLinksUI.PreferredAction.ToCompute="要計算的";
+CATPLMLinksUI.PreferredAction.Multiple="多個工作指令";
+CATPLMLinksUI.PreferredAction.Delete="刪除";
+CATPLMLinksUI.PreferredAction.ReconnectToVariant="重新連接到變型模型";
+CATPLMLinksUI.PreferredAction.CloneToVariant="克隆到變型模型";
+CATPLMLinksUI.PreferredAction.CloneAndDelete="克隆到變型模型并刪除";
+
+
+// 3951 校正官方漢化*******************************************************************************
+// 3951 校正官方漢化              
+// 3951 校正官方漢化*******************************************************************************
+CATPLMLinksUI.CATLinksCmd.InitialState.Message="選擇一個元素";
+
+CATPLMLinksUI.WrongSelection="無效選擇";
+
+Warning.Links="鏈接";
+Warning.Element="元素 ";
+
+Warning.NoLinks=" 沒有外部鏈接。";
+
+Title="編輯鏈接和關系";
+// 3951 校正官方漢化YesNo = "\nDo you want to continue?";
+
+ReplaceError="進行替換操作時發生錯誤。";
+RerouteError="進行重設操作時發生錯誤。";
+SelectLinks="沒有選定任何鏈接。請選擇一個或多個鏈接。";
+
+OnlyOneObjectFromPLMChooser="請僅從 PLM 選擇器選擇一個對象，以執行替換操作。";
+
+W_Synchro="同步警告";
+W_Isolate="隔離警告";
+W_Load="打開警告";
+W_Dump="成功轉儲關系圖";
+E_Replace="替換錯誤";
+E_Synchro="同步錯誤";
+E_Load="打開錯誤";
+E_="錯誤";
+W_="警告";
+
+LOAD_ERR_00="打開部件失敗。";
+LOAD_ERR_01="至少有一個部件沒有打開。";
+
+Label.NoRelation="沒有匹配當前過濾器的關系";
+
+REFRAME_ON="居中";
+CENTER_GRAPH="使圖居中";
+
+CATPLMLinksUI.Link=" (鏈接)";
+
+PreferredActionConfirmToDeleteComponent="- 要刪除 /P01 個部件 \n";
+PreferredActionConfirmToDeleteFeature="- 要刪除 /P01 個特征 \n";
+PreferredActionConfirmToIsolateRelation="- 要隔離 /P01 個關系 \n";
+PreferredActionConfirmQuestion="要繼續嗎？";
+PreferredActionConfirmTitle="確認工作指令";

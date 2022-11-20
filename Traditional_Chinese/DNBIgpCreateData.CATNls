@@ -1,0 +1,23 @@
+DNBIgpCreateData.SelectTaskOnWindows.Message ="選擇機器人任務, 裝置任務or LCM workspace/block/module to download";
+DNBIgpCreateData.SelectTask.Message="選擇機器人任務或 裝置任務to download";
+DNBIgpCreateData.SelectTaskAfterLCMSelect.Message = "選擇機器人任務或 裝置任務to download";
+DNBIgpCreateData.DNBIgpSelectDownloadMethod.Message ="選擇reference coordinate system(s), 調用任務Activity output, and type of download";
+DNBIgpCreateData.DataReadout.Message = "選擇additional task that you would like to download,或 OK to continue";
+SaveProgram.Title = "保存Robot/Device 程序 ";
+DNBIgpCreateData.SaveProgram.Title = "保存Robot/Device 程序 ";
+
+TranslationFailed.Header.Part2 = "變換process didn't succeed due to one或 more of the following reasons:\n";
+TranslationFailed.Header.Part3 = "\n1. Check whether Java 2 SDK version 1.4.1或 later is installed on your machine.";
+TranslationFailed.Header.Part4 = "\n2. If Java 1.5或 later is used then xalan-j 2.7.1 must be installed.\n";
+TranslationFailed.Header.Part5 = "\nFrom Tools\\Options... menu entry select Resource Detailing node and Offline Programming tab. Then:\n";
+TranslationFailed.Header.Part1 = "\n1. Check whether java executable (version 1.4.1或 later) is pointed to.";
+TranslationFailed.Header.Part6 = "\n2. Check that the jar file DNBIgpOlpExtension.jar and xalan.jar (for Java 1.5或 later)\n";
+TranslationFailed.Header.Part7 = "    in \"Jar Files\" text box are accounted for and contain full file paths. Use \"復位\" button for defaults.";
+TranslationFailed.Header.Part8 = "\n3. Check whether you selected correct translator directory and translator file. Use \"復位\" button for defaults.\n";
+TranslationFailed.ErrorDetails = "\nIf Java interpretor或 XSLT transformer found any errors, they would be displayed below.\n\n";
+
+ProcessSimulationDialog.Title = "用戶Input Required";
+ProcessSimulationDialog.Message = "To correctly download selected 機器人任務, process simulation may be needed.\n你想 invoke process simulation?";
+
+SimulationDownloadWarningDialog.Title = "警告";
+SimulationDownloadWarningDialog.Message = "仿真 download is不possible.  Reverting to non-simulation download.  You must call SetCommandDefaults before calling DownloadToXML.";

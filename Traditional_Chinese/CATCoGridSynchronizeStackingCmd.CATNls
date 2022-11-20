@@ -1,0 +1,75 @@
+// 3951 校正官方漢化 States
+CATCoGridSynchronizeStackingCmd.WaitingForVirtualStacking.Message="選擇虛擬堆疊";
+CATCoGridSynchronizeStackingCmd.WaitingForPlyGroup.Message="選擇鋪層組";
+CATCoGridSynchronizeStackingCmd.WaitingForAnalysis.Message="啟動分析";
+CATCoGridSynchronizeStackingCmd.WaitingForValidation.Message="必要時可以忽略一些條目并同步堆疊";
+
+// 3951 校正官方漢化 Error & Warning messages
+
+UnexpectedError.Message="意外錯誤";
+NoVirtualPly.Message="虛擬鋪層缺失";
+NoLinkedPly.Message="鏈接鋪層缺失";
+ChangePlyAliases.Message="鋪層名稱不同";
+ChangeSequenceAliases.Message="序列名稱不同";
+ChangeRosette.Message="坐標系不同";
+ChangeMaterial.Message="材料不同";
+ChangeOrientation.Message="方向不同";
+ChangeSequence.Message="序列不同";
+ChangeOrder.Message="順序不同";
+ChangeCellsCovering.Message="覆蓋單元不同： +VP(/p1) +Ply(/p2)";
+
+MessagesTitle="堆疊同步";
+CannotIgnoreSynchronizedItem.Message="此鋪層已與虛擬鋪層同步： \n忽略同步沒有意義";
+RelimitedPliesExist.Message="一些鋪層的輪廓已通過面板重新限定：/p1";
+RelimitedPliesExistConfirm.Message="一些鋪層的輪廓已通過面板重新限定： /p1 \n您仍要繼續嗎？";
+NonStandardContoursExist.Message="一些鋪層具有輪廓修改器（限定輪廓，材料添加，飛鏢，自動對稱...)： /p1";
+NonStandardContoursExistConfirm.Message="一些鋪層具有輪廓修改器（限定輪廓，材料添加，飛鏢，自動對稱...)：/p1 \n對某些鋪層的更新可能失敗。你仍要繼續嗎？";
+SymmetricPliesIgnoredByDefault.Message="一些鋪層與其他鋪層對稱因而默認會被忽略：\n/p1";
+NoAssociatedPlyGroup.Message="沒有與虛擬堆疊“/p1”關聯的鋪層組。\n您需要選擇一個鋪層組";
+RelinkVSandPlyGroup.Message="您是否確定要基于名稱將虛擬堆疊“/p1”與鋪層組“/p2”\n相鏈接（以前的鏈接將會丟失）？";
+RelinkFailed.Message="重新鏈接失敗。請檢查是否某些鋪層與虛擬堆疊共用名稱";
+RelinkSucceeded.Message="已將 /P1 虛擬鋪層成功鏈接至其鋪層對應物";
+NoMatchingNameForRelinkButContinue.Message="沒有任何虛擬鋪層可基于名稱鏈接至現有鋪層。但您仍可繼續";
+SynchronizationNothingLeft.Message="沒有可進行同步的鋪層。";
+
+SynchronizationIncompleteVStoPG.Message="/p1 / /p2 鋪層尚未完全同步。\n";
+SynchronizationIncompletePGtoVS.Message="/p1 / /p2虛擬鋪層尚未完全同步。\n";
+SynchronizationCompleteVStoPGOne.Message="一個鋪層已成功同步。";
+SynchronizationCompletePGtoVSOne.Message="一個虛擬鋪層已成功同步。";
+SynchronizationCompleteVStoPGSeveral.Message="/p1 鋪層已成功同步。";
+SynchronizationCompletePGtoVSSeveral.Message="/p1 虛擬鋪層已成功同步。";
+
+NoCoveringModeSelected.Message="請為這些單元選擇至少一個覆蓋模式（幾何或邏輯）";
+NoGeometricalAnalysisDone.Message="請先以幾何覆蓋模式啟動分析";
+NoLogicalAnalysisDone.Message="請先以邏輯覆蓋模式啟動分析";
+NoGeometricalAnalysisDoneSomePlies.Message="請先以幾何覆蓋模式重新啟動分析或忽略尚未分析的鋪層。\n下列鋪層尚未進行覆蓋分析：\n/p1";
+NoLogicalAnalysisDoneSomePlies.Message="請先以邏輯覆蓋模式重新啟動分析或忽略尚未分析的鋪層。\n下列鋪層尚未進行覆蓋分析：\n/p1";
+
+UserInterrupt.Message="任務已取消";
+
+UnexpectedError.Title="堆疊同步";
+
+// 3951 校正官方漢化 Graphic properties
+HighlightContour.Thickness="7";
+HighlightContour.LineType="1";
+
+ProgressTaskUI.Title="同步堆疊...";
+ProgressTaskUI.ObjectName="分析/同步";
+ProgressTaskUI.Comment="進度";
+ProgressTaskUI.Step1.ObjectName="分析";
+ProgressTaskUI.Step2.ObjectName="同步";
+
+WarningMirrorPlies.Message="此鋪層組的某些鋪層以前尚未進行對稱\n選項 1：單擊“是”繼續更新鋪層并檢查結果\n選項 2：單擊“否”取消更新操作";
+WarningMirrorPlies.Title="某些鋪層已進行對稱";
+
+TangentRefElem.Message="網格面板含有相切的結構元素。在此特定情況下，建議使用幾何覆蓋分析。";
+
+// 3951 校正官方漢化 ShortHelp for GSMUIRep
+CellCoveredByVPNotPlyBothCovering.Help="單元由虛擬鋪層覆蓋，而非\n由用于幾何和邏輯覆蓋的鋪層覆蓋";
+CellCoveredByPlyNotVPBothCovering.Help="單元由鋪層覆蓋，而非\n由用于幾何和邏輯覆蓋的虛擬鋪層覆蓋";
+CellCoveredByPlyNotVPLogical.Help="單元由鋪層覆蓋，而非由用于\n邏輯覆蓋的虛擬鋪層覆蓋";
+CellCoveredByPlyNotVPGeometrical.Help="單元由鋪層覆蓋，而非由用于\n幾何覆蓋的虛擬鋪層覆蓋";
+CellCoveredByVPNotPlyLogical.Help="單元由虛擬鋪層覆蓋，而非由用于\n邏輯覆蓋的鋪層覆蓋";
+CellCoveredByVPNotPlyGeometrical.Help="單元由虛擬鋪層覆蓋，而非由用于\n幾何覆蓋的鋪層覆蓋";
+
+ShowHide3DDisplayInfoPushItem.Title="顯示/隱藏 3D 顯示信息";

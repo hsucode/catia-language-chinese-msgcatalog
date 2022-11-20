@@ -1,0 +1,52 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2000
+// 3951 校正官方漢化===================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Catalog for CACke    CATCkeCDSRootTerm class
+// 3951 校正官方漢化
+// 3951 校正官方漢化===================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Usage notes:
+// 3951 校正官方漢化
+// 3951 校正官方漢化===================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Nov 2007  Creation:            Vitali TELERMAN (vtn)
+// 3951 校正官方漢化===================================================================
+NoInputs="未選定任何輸入參數\n",
+"（可能存在錯誤）";
+NoOutputs="未選定任何輸出參數\n",
+"（可能存在錯誤）";
+NoSolutions="未找到任何解法。";
+ErrorMessage.NoBlackBoxDetected.Title="約束滿足警告";
+ErrorMessage.NoBlackBoxDetected.Text0="約束滿足已檢測到潛在問題。\n",
+"\n",
+"以下表達式（潛在的黑盒）對于未知參數不敏感。\n\n";
+ErrorMessage.NoBlackBoxDetected.Text="\n可能的原因如下：\n",
+"- 這些方程式中不存在任何測量（您可以使用方程集\n",
+"特征，而非此特征。）\n",
+"- 此特征中的測量不依賴可變參數\n",
+"的選擇。\n",
+"- 約束滿足無法確定影響測量的變量\n",
+"（提高黑盒精度選項）。\n\n",
+"但可繼續進行解析\n";
+ErrorMessage.SoEBlackBoxDetected.Title="約束滿足已檢測到潛在問題。\n\n",
+"以下參數：\n\n";
+ErrorMessage.SoEBlackBoxDetected.Text="\n是“方程式集”關系的輸出參數，并作為黑盒進行計算。\n",
+"由于“方程式集”關系是一個模糊函數，相應的黑盒\n",
+"可能會在其計算期間丟失解法。\n\n",
+"要解決此問題，建議執行以下操作：\n",
+"- 將“方程式集”關系的文本復制到當前的約束滿足模型中。\n",
+"- 停用“方程式集”關系。\n";
+
+InformationMessage.SolvingSuccess.Text="\n 已成功解決。\n";
+
+Object="\n 操作： ";
+Line="\n 行：\n";
+
+Contradiction="\n以下位置中發生矛盾：";
+ContradictionOnRanges="\n警告！輸入的范圍不一致或模型不兼容。";
+IncompatibleModel="\n警告！模型不兼容。";
+Interruption="用戶請求已中斷計算";
+InternalError="以下位置中發生內部錯誤：";
+AllSolutionsFound="已找到所有解法。";
+SolvingSuccess="已成功解決。";
+

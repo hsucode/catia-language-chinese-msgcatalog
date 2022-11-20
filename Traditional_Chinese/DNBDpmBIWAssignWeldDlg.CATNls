@@ -1,0 +1,226 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES Delmia 2000 
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 DNBDpmBIWAssignWeldDlg
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 Usages Notes:
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 Nov. 2000  Creation                                                      AWN
+// 3951 校正官方漢化 Apr. 2001  Modifications													                        CTA
+// 3951 校正官方漢化 May  2002  Mod                                                           ssz
+// 3951 校正官方漢化 Aug. 2002  Mod - Replace "Kind" by "過程類型" in Weld-info display   ssz
+// 3951 校正官方漢化 Oct. 2002  Added CheckShowHideWeldId check button                        ssz
+// 3951 校正官方漢化=============================================================================
+
+
+Title = "接合 Assignment";
+
+// 3951 校正官方漢化CTA 04/20/01 : addition of the labels for the buttons
+// 3951 校正官方漢化Buttons titles
+OKTitleId = "接合信息";
+CancelTitleId = "關閉";
+
+// 3951 校正官方漢化ErrorNoActivity.Message = "No fastening 動作";
+// 3951 校正官方漢化ErrorNoWelds.Message = "No焊接";
+// 3951 校正官方漢化ErrorNoProduct.Message = "No 產品";
+
+ErrorNoWeld                    = "No valid fasteners available for assignment.";
+ErrorNoWeldAssigned            = "No fasteners assigned.";
+ErrorAllFilteredWeldsAssigned  = "所有 fasteners in filtered list already assigned.";
+ErrorNoWeldForActivity.Message = "No qualified fasteners for selected activity.";
+
+// 3951 校正官方漢化 for the first tab page
+
+
+TabContainerId.TabPageAssignmentId.Title = "指派ment";
+TabContainerId.TabPageAccountabilityId.Title = "Accountability";
+
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.ShortHelp= "Tab pages for assignment management.";
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.LongHelp = "Tab pages for assignment management.";
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.HelpTabContainerId.TabPageAssignmentId.TabContainerId.TabPageAssignmentId. = "Tab pages for assignment management.";
+
+
+TabContainerId.TabPageAssignmentId.SelectListLeftId.Title= "列出 of fasteners available for assignment.";
+TabContainerId.TabPageAssignmentId.SelectListLeftId.ShortHelp= "顯示列表. of available fasteners for assignment";
+TabContainerId.TabPageAssignmentId.SelectListLeftId.LongHelp = "顯示列表. of available fasteners for assignment under the current selected 產品";
+TabContainerId.TabPageAssignmentId.SelectListLeftId.Help = "顯示列表. of available fasteners for assignment under the current selected 產品";
+
+// 3951 校正官方漢化CTA : 04/24/01 Modify the display; get rid of 'to assign' as the direct assignment is mandatory
+// 3951 校正官方漢化 new
+TabContainerId.TabPageAssignmentId.SelectListRightId.Title= "列出 of fasteners assigned (*).";
+TabContainerId.TabPageAssignmentId.SelectListRightId.ShortHelp= "顯示列表. of fasteners assigned to the選擇動作";
+TabContainerId.TabPageAssignmentId.SelectListRightId.LongHelp = "顯示列表. of fasteners assigned to the選擇動作";
+TabContainerId.TabPageAssignmentId.SelectListRightId.Help = "顯示列表. of fasteners to assign to the current 動作";
+// 3951 校正官方漢化 old
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.SelectListRightId.Title= "列出 of fasteners assigned(*) / selected for assignment.";
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.SelectListRightId.ShortHelp= "顯示列表. of fasteners to assign";
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.SelectListRightId.LongHelp = "顯示列表. of fasteners to assign to the current 動作";
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.SelectListRightId.Help = "顯示列表. of fasteners assigned to the選擇動作";
+
+
+TabContainerId.TabPageAssignmentId.LabelSelectListLeftId.Title= "接合available for assignment:";
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.LabelSelectListLeftId.Title= "列出 of fasteners available for assignment.";
+TabContainerId.TabPageAssignmentId.LabelSelectListLeftId.ShortHelp= "顯示列表. of available fasteners for assignment";
+TabContainerId.TabPageAssignmentId.LabelSelectListLeftId.LongHelp = "顯示列表. of available fasteners for assignment under the current selected 產品";
+TabContainerId.TabPageAssignmentId.LabelSelectListLeftId.Help = "顯示列表. of available fasteners for assignment under the current selected 產品";
+
+// 3951 校正官方漢化 new
+TabContainerId.TabPageAssignmentId.LabelSelectListRightId.Title= "接合assigned來選擇ed activity :";
+TabContainerId.TabPageAssignmentId.LabelSelectListRightId.ShortHelp= "顯示列表. of fasteners assigned來選擇ed activity.";
+TabContainerId.TabPageAssignmentId.LabelSelectListRightId.LongHelp = "顯示列表. of fasteners assigned來選擇ed activity.";
+TabContainerId.TabPageAssignmentId.LabelSelectListRightId.Help = "顯示列表. of fasteners assigned來選擇ed activity.";
+// 3951 校正官方漢化 old
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.LabelSelectListRightId.Title= "列出 of fasteners to assign.";
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.LabelSelectListRightId.ShortHelp= "顯示列表. of fasteners to assign";
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.LabelSelectListRightId.LongHelp = "顯示列表. of fasteners to assign to the current 動作";
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.LabelSelectListRightId.Help = "顯示列表. of fasteners to assign to the current 動作";
+
+
+TabContainerId.TabPageAssignmentId.LabelComboDocumentLeftId.Title= "From document : ";
+TabContainerId.TabPageAssignmentId.LabelComboDocumentLeftId.ShortHelp= "顯示列表. of available documents.";
+TabContainerId.TabPageAssignmentId.LabelComboDocumentLeftId.LongHelp = "顯示列表. of available documents in the session.";
+TabContainerId.TabPageAssignmentId.LabelComboDocumentLeftId.Help = "顯示列表. of available documents in the session.";
+
+TabContainerId.TabPageAssignmentId.LabelComboDocumentRightId.Title= "From document : ";
+TabContainerId.TabPageAssignmentId.LabelComboDocumentRightId.ShortHelp= "顯示列表. of available documents.";
+TabContainerId.TabPageAssignmentId.LabelComboDocumentRightId.LongHelp = "顯示列表. of available documents in the session.";
+TabContainerId.TabPageAssignmentId.LabelComboDocumentRightId.Help = "顯示列表. of available documents in the session.";
+
+
+TabContainerId.TabPageAssignmentId.LabelComboProductId.Title= "列出 of Products with Fasteners: ";
+TabContainerId.TabPageAssignmentId.LabelComboProductId.ShortHelp= "顯示列表. of available products.";
+TabContainerId.TabPageAssignmentId.LabelComboProductId.LongHelp = "顯示列表. of available products in the document.";
+TabContainerId.TabPageAssignmentId.LabelComboProductId.Help = "顯示列表. of available products in the document.";
+
+TabContainerId.TabPageAssignmentId.LabelComboActivityId.Title= "列出 of activities : ";
+TabContainerId.TabPageAssignmentId.LabelComboActivityId.ShortHelp= "顯示列表. of available Activities.";
+TabContainerId.TabPageAssignmentId.LabelComboActivityId.LongHelp = "顯示列表. of available Activities in the document.";
+TabContainerId.TabPageAssignmentId.LabelComboActivityId.Help = "顯示列表. of available Activities in the document.";
+
+
+TabContainerId.TabPageAssignmentId.LabelButtonAssignId.Title= "指派";
+TabContainerId.TabPageAssignmentId.LabelButtonAssignId.ShortHelp= "指派 fasteners to activity.";
+TabContainerId.TabPageAssignmentId.LabelButtonAssignId.LongHelp = "指派 selected fasteners來選擇ed activity.";
+TabContainerId.TabPageAssignmentId.LabelButtonAssignId.Help = "指派 selected fasteners來選擇ed activity.";
+
+TabContainerId.TabPageAssignmentId.LabelButtonUnassignId.Title= "Unassign";
+TabContainerId.TabPageAssignmentId.LabelButtonUnassignId.ShortHelp= "Unassign fasteners from activity.";
+TabContainerId.TabPageAssignmentId.LabelButtonUnassignId.LongHelp = "Unassign selected fasteners from selected activity.";
+TabContainerId.TabPageAssignmentId.LabelButtonUnassignId.Help = "Unassign selected fasteners from selected activity.";
+
+TabContainerId.TabPageAssignmentId.PushButtonAssignId.Title= "指派";
+TabContainerId.TabPageAssignmentId.PushButtonAssignId.ShortHelp= "指派 fasteners to activity.";
+TabContainerId.TabPageAssignmentId.PushButtonAssignId.LongHelp = "指派 selected fasteners來選擇ed activity.";
+TabContainerId.TabPageAssignmentId.PushButtonAssignId.Help = "指派 selected fasteners來選擇ed activity.";
+
+TabContainerId.TabPageAssignmentId.PushButtonUnassignId.Title= "Unassign";
+TabContainerId.TabPageAssignmentId.PushButtonUnassignId.ShortHelp= "Unassign fasteners from activity.";
+TabContainerId.TabPageAssignmentId.PushButtonUnassignId.LongHelp = "Unassign selected fasteners from selected activity.";
+TabContainerId.TabPageAssignmentId.PushButtonUnassignId.Help = "Unassign selected fasteners from selected activity.";
+
+// 3951 校正官方漢化CTA 04/20/01 Direct Assignment is henceforth mandatory
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.CheckDirectActionId.Title= "Direct assignment/unassignment";
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.CheckDirectActionId.ShortHelp= "Direct assignment/unassignment.";
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.CheckDirectActionId.LongHelp = "Activate/Deactivate direct assignment/unassignment.";
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId.CheckDirectActionId.Help = "Activate/Deactivate direct assignment/unassignment.";
+
+
+TabContainerId.TabPageAssignmentId.CheckDuplicateAssignmentId.Title= "所有ow Duplicate Fastener Assignment";
+TabContainerId.TabPageAssignmentId.CheckDuplicateAssignmentId.ShortHelp= "Activate/Deactivate fasteners multi assignment.";
+TabContainerId.TabPageAssignmentId.CheckDuplicateAssignmentId.LongHelp = "Activate/Deactivate fasteners multi assignment.";
+TabContainerId.TabPageAssignmentId.CheckDuplicateAssignmentId.Help = "Activate/Deactivate fasteners multi assignment.";
+
+TabContainerId.TabPageAssignmentId.CheckShowHideWeldIdLeftList.Title= "顯示IDs of fasteners in left 列表";
+TabContainerId.TabPageAssignmentId.CheckShowHideWeldIdRightList.Title= "顯示IDs of fasteners in right 列表";
+
+// 3951 校正官方漢化 XYO:  merge 指派d Assign with Constraint
+TabContainerId.TabPageAssignmentId.checkApplyPartLoadConstraintId.Title= "Apply Part Loading約束";
+TabContainerId.TabPageAssignmentId.checkApplyPartLoadConstraintId.ShortHelp= "Activate/Deactivate Part Loading Constraints.";
+TabContainerId.TabPageAssignmentId.checkApplyPartLoadConstraintId.LongHelp = "Activate/Deactivate Part Loading Constraints.";
+TabContainerId.TabPageAssignmentId.checkApplyPartLoadConstraintId.Help = "Activate/Deactivate Part Loading Constraints.";
+
+
+TabContainerId.TabPageAssignmentId.CheckAllProductId.Title= "選擇所有產品";
+TabContainerId.TabPageAssignmentId.CheckAllProductId.ShortHelp= "選擇所有產品.";
+TabContainerId.TabPageAssignmentId.CheckAllProductId.LongHelp = "選擇所有產品.";
+TabContainerId.TabPageAssignmentId.CheckAllProductId.Help = "選擇所有產品.";
+
+
+TabContainerId.TabPageAssignmentId.LabelLegendId.Title= "Legend : (*) : fastener is assigned";
+TabContainerId.TabPageAssignmentId.LabelLegendId.ShortHelp= "Legend : (*) : fastener is assigned.";
+TabContainerId.TabPageAssignmentId.LabelLegendId.LongHelp = "Legend : (*) : fastener is assigned.";
+TabContainerId.TabPageAssignmentId.LabelLegendId.Help = "Legend : (*) : fastener is assigned.";
+
+// 3951 校正官方漢化 CTA 04/26/01 : get rid of the parenthesis on the s (fasteners instead of fastener(s))
+TabContainerId.TabPageAssignmentId.LabelNumberId.Title= "Number of fasteners available:";
+TabContainerId.TabPageAssignmentId.LabelNumberId.ShortHelp= "Number of fasteners available for assignment.";
+TabContainerId.TabPageAssignmentId.LabelNumberId.LongHelp = "Number of fasteners available for assignment.";
+TabContainerId.TabPageAssignmentId.LabelNumberId.Help = "Number of fasteners available for assignment.";
+
+// 3951 校正官方漢化 CTA 04/24/01 : add一個new counter on assigned welds 
+TabContainerId.TabPageAssignmentId.LabelAssignNumberId.Title= "Number of fasteners assigned :";
+TabContainerId.TabPageAssignmentId.LabelAssignNumberId.ShortHelp= "Number of fasteners assigned來選擇ed activity.";
+TabContainerId.TabPageAssignmentId.LabelAssignNumberId.LongHelp = "Number of fasteners assigned來選擇ed activity..";
+TabContainerId.TabPageAssignmentId.LabelAssignNumberId.Help = "Number of fasteners assigned來選擇ed activity..";
+
+// 3951 校正官方漢化// 3951 校正官方漢化 for the second tab page
+
+// 3951 校正官方漢化TabContainerId.TabPageAssignmentId,Title = "指派ment";
+// 3951 校正官方漢化TabContainerId.ShortHelp= "Tab pages for assignment management.";
+// 3951 校正官方漢化TabContainerId.LongHelp = "Tab pages for assignment management.";
+// 3951 校正官方漢化TabContainerId.Help// 3951 校正官方漢化// 3951 校正官方漢化 = "Tab pages for assignment management.";
+
+
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.RadioOneProductId.Title= "選擇 產品";
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.RadioOneProductId.ShortHelp= "顯示fasteners for the selected product only.";
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.RadioOneProductId.LongHelp = "顯示fasteners for the selected product only.";
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.RadioOneProductId.Help = "顯示fasteners for the selected product only.";
+
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.RadioAllProductId.Title= "所有 product(s)";
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.RadioAllProductId.ShortHelp= "顯示fasteners for all product(s).";
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.RadioAllProductId.LongHelp = "顯示fasteners for all product(s).";
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.RadioAllProductId.Help = "顯示fasteners for all product(s).";
+
+MultiListWeldAccountId.ColumnTitle0 = "索引";
+MultiListWeldAccountId.ColumnTitle1 = "接合 ID";
+MultiListWeldAccountId.ColumnTitle2 = "過程類型";
+MultiListWeldAccountId.ColumnTitle3 = "指派ed Activity(ies)";
+
+ComboOptionId1 = "所有 緊固件";
+ComboOptionId2 = "指派ed 緊固件";
+ComboOptionId3 = "Unassigned 緊固件";
+ComboOptionId4 = "Multi-assigned 緊固件";
+
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.LabelOptionId.Title= "選擇a filter";
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.LabelOptionId.ShortHelp= "單擊 on the combo來選擇一個filter.";
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.LabelOptionId.LongHelp = "單擊 on the combo來選擇一個filter.";
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.LabelOptionId.Help = "單擊 on the combo來選擇一個filter.";
+
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.LabelWeldsAvailableId.Title= "接合available";
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.LabelWeldsAvailableId.ShortHelp= "Number of Fasteners available.";
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.LabelWeldsAvailableId.LongHelp = "Number of Fasteners available.";
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.LabelWeldsAvailableId.Help = "Number of Fasteners available.";
+
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.LabelAssignedId.Title       = "Number of fasteners Assigned: ";
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.LabelNotAssignedId.Title    = "Number of fasteners不assigned: ";
+TabContainerId.TabPageAccountabilityId.FrameAccountabilityId.LabelMultiAssignedId.Title  = "Number of fasteners multi assigned: ";
+
+LabelAssignedId       = "接合Assigned: ";
+LabelNotAssignedId    = "接合s不assigned: ";
+LabelMultiAssignedId  = "接合multi assigned: ";
+
+
+NoneTitleId = "沒有";
+AllProducts = "所有產品";
+// 3951 校正官方漢化AssignTag  = "(*)";
+
+
+TitleNoDoubleAssignmentId    = "警告";
+NoDoubleAssignmentStartId    = "No duplicate Assignment Allowed !!\n";
+NoDoubleAssignmentSingularId = "The following fastener  :\n";
+NoDoubleAssignmentPluralId   = "The following fasteners :\n";
+NoDoubleAssignmentIsId       = "is ";
+NoDoubleAssignmentAreId      = "are ";
+NoDoubleAssignmentEndId      = "already assigned to the selected activity.";

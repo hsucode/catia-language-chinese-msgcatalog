@@ -1,0 +1,54 @@
+// 3951 校正官方漢化Help.text           =   "Usage: PLMBuildMSI -p  InstallationPath (without OS_x)
+// 3951 校正官方漢化                                -o  OutputDirectory
+// 3951 校正官方漢化                                [-var \"var1=value1\"]
+// 3951 校正官方漢化                              [-var \"var2=value2\"]
+// 3951 校正官方漢化                              [-n OrderNumber (between 0 and 9)]
+// 3951 校正官方漢化                              [-t TemporaryDirectory]
+// 3951 校正官方漢化                              [-url URL path of licenses files]
+// 3951 校正官方漢化                                [-h (Help)]";
+
+Help.text="用法：PLMBuildMSI  -m  MSI 項目名稱（例如：3DLive）
+                    -p  安裝路徑（無 OS_x）
+                    -o  輸出目錄
+                    [-var \"var1=value1\"]
+                    [-var \"var2=value2\"]
+                    [-n 順序編號（0 和 9 之間）]
+                    [-t 臨時目錄]
+                    [-h （幫助）]";
+NotAnalyzed="至少有一個計劃參數未進行分析";
+DirectoryNotOpen="無法打開目錄：/p1";
+FileNotDeleted="無法刪除文件：/P1";
+DirectoryNotDeleted="無法刪除目錄：/p1";
+SubDirectoryNotOK="在 /P2 下找不到 /P1。檢查 -p 參數。";
+ArchiveNotDone="無法在 /P1 中歸檔文件";
+NoError="無錯誤";
+OpenFailure="打開失敗的文件將存儲在壓縮包中";
+ReadFailure="讀取失敗的文件將存儲在壓縮包中";
+MemoryFailure="FCI 內存不足";
+TemporayFileFailure="無法創建臨時文件";
+UnknownCompress="未知壓縮類型";
+CreateFailure="無法創建壓縮包文件";
+ClientAbort="客戶端請求中止";
+CompressFailure="壓縮失敗的數據";
+UnknownError="未知錯誤";
+ProjectUnknown="項目名稱未知：/p1";
+ProjectUnknown2="項目名稱應為：/P1 或 /P2";
+MSINotBuilt="未成功構建 MSI";
+MSIBuilt="已成功構建 MSI /P1";
+BuildingMSI="正在構建 /P1，此操作可能會花費幾分鐘時間";
+TooManyFiles="安裝包的文件數量不能超過 32767";
+UpgradeTable="更新表不為空";
+CreateDirectory="無法創建臨時目錄 /P1";
+OrderNumber="順序編號參數范圍必須在 0 和 9 之間";
+NoAvailableSpace="無法在 /P1、/P2 中獲得可用空間";
+NoDirectory="目錄不存在：/P1";
+UnableGetFileInfo="無法在 /P1 中獲得文件信息";
+NotEnoughSpaceInDir="目錄 /P1 中沒有足夠空間";
+MSISettingsRename="無法在 /p2 中重命名設置文件 /p1";
+FileNameNotOK="文件名稱包含無效字符 (< 32 or > 127)，路徑：/P1 (/P2)";
+FileNameNotValid="文件名稱包含無效字符 (< 32, > 127,\\, ?, |, >, <, :, /, *, \")，路徑：/P1 (/P2)";
+VarOptionNotValid="-var 選項包含無效字符 (+) /P1";
+ProjectNameNotOK="找不到 MSI 項目名稱。檢查 -m 參數。";
+InstallDirNotOK="未找到安裝目錄。檢查 -p 參數。";
+OuputDirectoryNotOK="找不到輸出目錄。檢查 -o 參數。";
+ArgNotAnalyzed="未分析以下參數：/P1";

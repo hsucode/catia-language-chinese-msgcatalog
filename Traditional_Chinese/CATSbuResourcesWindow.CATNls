@@ -1,0 +1,119 @@
+Error.NoClass="必須激活類才能啟動此命令";
+MyGrid.AddGrid.AddButton.Title="添加";
+MyGrid.AddGrid.AddResLabel.Title="添加資源";
+MyGrid.AddGrid.AddFileCheck.Title="添加文件";
+MyGrid.AddGrid.AddDirCheck.Title="添加文件夾及其內容";
+MyGrid.AddGrid.AddResInsertLabel.Title="插入：";
+MyGrid.AddGrid.AddResDirLabel.Title="文件夾：";
+
+MyGrid.DelGrid.DelButton.Title="刪除";
+MyGrid.DelGrid.DelResLabel.Title="刪除資源";
+MyGrid.DelGrid.DelResLabel2.Title="要刪除的資源：";
+
+MyGrid.ReplaceGrid.RepButton.Title="替換";
+MyGrid.ReplaceGrid.ReplaceResLabel.Title="替換資源";
+MyGrid.ReplaceGrid.OriginalFileLabel.Title="原始文件：";
+MyGrid.ReplaceGrid.NewFileLabel.Title="新建文件：";
+
+MyGrid.AddPictureTitle="所有圖片";
+MyGrid.AddFileTitle="添加文件";
+MyGrid.ImportPictureTitle="導入圖片";
+MyGrid.ImportFileTitle="導入文件";
+MyGrid.PictureGrid.NewPictureGrid.InsertPictureLabel.Title="插入文件夾";
+MyGrid.ExtistingPictureTitle="使用現有圖片";
+MyGrid.ExtistingFileTitle="使用現有文件";
+MyGrid.PictureGrid.EmbedPictureChkBtn.Title="在 Modelica 文本中嵌入圖片";
+
+
+MyGrid.EmbedPictureChkBtn2.Title="在 Modelica 文本中嵌入圖片";
+
+ResourcesWindow.Title="資源管理";
+BitmapWindow.Title="圖片創建";
+SbuAddResChooser.Title="選擇文件";
+SbuReplaceResChooser.Title="選擇文件";
+SbuAddResDirChooser.Title="選擇文件夾";
+
+MyGrid.FolderGrid.CreateDirLabel.Title="創建文件夾";
+MyGrid.FolderGrid.FatherDirLabel.Title="插入：";
+MyGrid.FolderGrid.NewDirNameLabel.Title="名稱：";
+MyGrid.FolderGrid.AddFolderButton.Title="添加文件夾";
+
+PNG.Text="便攜式網絡圖片 (*.png)";
+JPEG.Text="JPEG 文件 (*.jpg;*.jpeg)";
+BMP.Text="Windows 位圖 (*.bmp)";
+TIFF.Text="標注圖像文件格式（*.tif 和 *.tiff）";
+RGB.Text="RGB 文件 (*.rgb)";
+AllPictureFiles.Text="所有圖片文件 (*.png;*.jpg;*.jpeg;*.bmp;*.tif;*.tiff;*.rgb)";
+AllFiles.Text="所有文件 (*.*)";
+
+SBU_RES_ERR_100.Request="文件 /p1 已經成功添加到庫 /p2";
+SBU_RES_ERR_100.Diagnostic="資源已導入";
+SBU_RES_ERR_100.Advice="";
+
+SBU_RES_ERR_100a.Request="文件夾 /p1 已經成功添加到庫 /p2";
+SBU_RES_ERR_100a.Diagnostic="資源已導入";
+SBU_RES_ERR_100a.Advice="";
+
+SBU_RES_ERR_101.Request="文件 /p1 無法添加到庫 /p2";
+SBU_RES_ERR_101.Diagnostic="資源尚未導入";
+SBU_RES_ERR_101.Advice="";
+
+SBU_RES_ERR_101a.Request="文件夾 /p1 無法添加到庫 /p2";
+SBU_RES_ERR_101a.Diagnostic="文件夾尚未添加";
+SBU_RES_ERR_101a.Advice="";
+
+SBU_RES_ERR_102.Request="文件 /p1 已成功從庫 /p2 中刪除";
+SBU_RES_ERR_102.Diagnostic="資源已刪除";
+SBU_RES_ERR_102.Advice="";
+
+SBU_RES_ERR_102a.Request="文件夾 /p1 及其所有內容已經成功從庫 /p2 中刪除";
+SBU_RES_ERR_102a.Diagnostic="文件夾已刪除";
+SBU_RES_ERR_102a.Advice="";
+
+SBU_RES_ERR_103.Request="文件或文件夾 /p1 無法從庫 /p2 中刪除";
+SBU_RES_ERR_103.Diagnostic="資源尚未刪除";
+SBU_RES_ERR_103.Advice="";
+
+SBU_RES_ERR_103a.Request="無法刪除資源根文件夾 /p1";
+SBU_RES_ERR_103a.Diagnostic="資源尚未刪除";
+SBU_RES_ERR_103a.Advice="";
+
+SBU_RES_ERR_104.Request="文件 /p1 已經成功在庫 /p3 中替換為文件 /p2";
+SBU_RES_ERR_104.Diagnostic="資源已刪除";
+SBU_RES_ERR_104.Advice="";
+
+SBU_RES_ERR_105.Request="文件 /p1 無法在庫 /p3 中替換為文件 /p2";
+SBU_RES_ERR_105.Diagnostic="資源尚未刪除";
+SBU_RES_ERR_105.Advice="";
+
+SBU_RES_ERR_106.Request="無法添加文件 /p1，因為它是 .mo 或 .moe 文件";
+SBU_RES_ERR_106.Diagnostic=".mo 和 .moe 文件是 modelica 文件且不視為資源";
+SBU_RES_ERR_106.Advice="添加其他類型的文件";
+SBU_RES_ERR_106.Title="警告";
+
+SBU_RES_ERR_107.Request="無法替換文件 /p1，因為 /p2 是 .mo 或 .moe 文件";
+SBU_RES_ERR_107.Diagnostic=".mo 和 .moe 文件是 modelica 文件且不視為資源";
+SBU_RES_ERR_107.Advice="選擇其他類型文件來替換 /p2";
+SBU_RES_ERR_107.Title="警告";
+
+SBU_RES_ERR_108.Request="無法在文件夾 /p2 中添加文件 /p1";
+SBU_RES_ERR_108.Diagnostic="文件夾中已存在具有相同名稱的文件";
+SBU_RES_ERR_108.Advice="更改文件名，然后將其導入";
+SBU_RES_ERR_108.Title="警告";
+
+SBU_RES_ERR_108a.Request="無法在文件夾 /p2 中添加文件夾 /p1";
+SBU_RES_ERR_108a.Diagnostic="文件夾中已存在具有相同名稱的文件夾";
+SBU_RES_ERR_108a.Advice="為新文件夾選擇其他名稱";
+SBU_RES_ERR_108a.Title="警告";
+
+SBU_RES_ERR_108b.Request="文件 /p1 無法替換文件 /p2";
+SBU_RES_ERR_108b.Diagnostic="具有相同名稱的文件已經存在";
+SBU_RES_ERR_108b.Advice="更改文件名，然后將其導入";
+SBU_RES_ERR_108b.Title="警告";
+
+SBU_RES_ERR_109.Request="無法添加文件 /p1";
+SBU_RES_ERR_109.Diagnostic="文件名包含非 ASCII 字符";
+SBU_RES_ERR_109.Advice="更改文件名，然后將其導入";
+SBU_RES_ERR_109.Title="錯誤";
+
+

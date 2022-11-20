@@ -1,0 +1,86 @@
+DialogBoxTitle="外形映射";
+
+FrameSelection.LongHelp="               選擇
+已將一組元素映射到目標上。
+元素和參考之間的關系與結果和目標之間的關系幾乎相同。
+元素可為點、曲線和曲面的混合集。";
+LabelElement.Title="元素： ";
+LabelElement.LongHelp="選擇要映射的元素集。
+元素可為點、曲線和曲面的混合集。";
+LabelElement.ShortHelp="選擇要映射的元素";
+LabelReference.Title="參考： ";
+LabelReference.LongHelp="要映射的元素已投影到參考上，然后映射到目標上。
+元素和參考之間的關系與結果和目標之間的關系幾乎相同。";
+LabelReference.ShortHelp="選擇曲面作為參考";
+LabelTarget.Title="目標： ";
+LabelTarget.LongHelp="元素和參考之間的關系與結果和目標之間的關系幾乎相同。";
+LabelTarget.ShortHelp="選擇曲面作為目標";
+
+TabPageOptions.Title="選項";
+
+MultiListRefToTarget.ColumnTitle1=" ";
+MultiListRefToTarget.ColumnTitle2="參考";
+MultiListRefToTarget.ColumnTitle3="目標";
+MultiListRefToTarget.LongHelp="用作參考和目標的元素已列在此處。
+參考和目標必須具備相同的元素數。";
+MultiListRefToTarget.ShortHelp="用作參考和目標的元素";
+
+LabelProjectionType.Title="投影： ";
+LabelProjectionType.LongHelp="用作參考和目標的元素已列在此處。
+參考和目標必須具備相同的元素數。";
+LabelProjectionType.ShortHelp="用作參考和目標的元素";
+
+LabelProjectionDummy.Title=" ";
+ComboProjectionType.LongHelp="指定元素投影到參考的類型。";
+ComboProjectionType.ShortHelp="投影類型";
+Direction.AlongADirection="沿某一方向";
+Direction.Normal="法線";
+LabelDirection.Title="方向： ";
+LabelDirection.LongHelp="指定投影方向。
+可使用上下文菜單。";
+LabelDirection.ShortHelp="上下文菜單 - 方向";
+
+
+TabPageParameter.Title="參數";
+
+CheckButtonTranslation.Title="平移";
+CheckButtonTranslation.LongHelp="參考應覆蓋幾何圖形。
+憑借此選項，您可以確定在修改時應如何操作未被參考覆蓋的幾何圖形區域。
+- 關閉：未覆蓋的區域將被拉伸或壓縮。
+- 開啟：未覆蓋的區域將被平移。";
+CheckButtonTranslation.ShortHelp="對于曲面，開啟平移選項";
+
+
+CheckButtonRotation.Title="旋轉";
+CheckButtonRotation.LongHelp="此選項僅影響曲面。
+您可以確定根據參考在修改時是否要旋轉幾何圖形。
+- 關閉：僅平移幾何圖形。
+- 開啟：幾何圖形也將被旋轉。
+這意味著元素和參考之間的角度與結果和目標之間的角度值相同。";
+CheckButtonRotation.ShortHelp="旋轉曲面以保留角度";
+
+CheckButtonControlPoint.Title="控制點";
+CheckButtonControlPoint.LongHelp="用此選項可以僅修改參考覆蓋的控制點。
+幾何圖形位于參考之外的所有零件將不會被建模。
+此選項不會重新近似幾何圖形。";
+CheckButtonControlPoint.ShortHelp="僅修改參考覆蓋的控制點";
+
+CheckButtonSmoothFactor.Title="光順系數： ";
+CheckButtonSmoothFactor.LongHelp="可為近似開啟或關閉光順選項。
+- 開啟：可指定光順系數。
+- 關閉：為近似使用光順系數 0。
+值越大，結果越光順。
+可能會丟失元素間的連續。";
+CheckButtonSmoothFactor.ShortHelp="請仔細光順結果";
+SpinnerSmoothFactor.LongHelp="無光順 = 0 <= 光順系數 <= 100 = 最大光順
+如果執行光順操作，可能會丟失連續。";
+SpinnerSmoothFactor.ShortHelp="0 <= 光順系數 <= 100
+0 無光順 - 100 最大光順
+單獨的曲面會更光順，但曲面間的連續可能會丟失";
+
+LabelMinOrder.Title="最小階數：  ";
+LabelMinOrder.LongHelp="如果選定曲面的階數小于最小階數，將增加其階數到此值。";
+LabelMinOrder.ShortHelp="結果的最小階數";
+SpinnerMinOrder.LongHelp="2 <= 最小階數 <= 16";
+SpinnerMinOrder.ShortHelp="2 <= 最小階數 <= 16";
+//?????????????????????????????????????????????????

@@ -1,0 +1,227 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 1999
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Resources File for NLS purpose related to TPS types
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 Usage notes:
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 Sep. 1999  Creation                                                  G. Bapt
+// 3951 校正官方漢化=============================================================================
+
+// 3951 校正官方漢化 Attention l ordre des supertypes/types (a modifier a chaque rajout d un 
+// 3951 校正官方漢化 nouveau supertype/type, si on veut le voir dans le filtre) est dans le 
+// 3951 校正官方漢化 fichier CATTPS.Rsc (car pas traduisible).
+
+// 3951 校正官方漢化------------------------------------------------------------- Container Name
+CATTPS.CATTTRSCont="注釋";
+
+// 3951 校正官方漢化------------------------------------------------------------------- Set Name
+CATTPS.f4a2d38f3ddc11d3a929006094b99c4b="注釋集";
+CATTPS.GeneralSet="裝配體注釋集";
+
+// 3951 校正官方漢化-------------------------------------------------------------- Sub Node Name
+CATTPS.SubNode.Captures="捕獲";
+CATTPS.SubNode.Views="視圖";
+
+CATTPS.SubNode.Datums="基準";
+CATTPS.SubNode.ReferenceFrames="參考框架";
+CATTPS.SubNode.GeomTolerances="形位公差";
+CATTPS.SubNode.Dimensions="尺寸";
+CATTPS.SubNode.Roughness="粗糙度";
+CATTPS.SubNode.Welds="焊接";
+CATTPS.SubNode.Notes="注解";
+CATTPS.SubNode.PartialAreas="受限區域";
+
+CATTPS.SubNode.Deviations="偏差";
+CATTPS.SubNode.Distances="距離";
+CATTPS.SubNode.AnalysisVariations="分析變體";
+CATTPS.SubNode.MorphingVariations="變化變體";
+CATTPS.SubNode.Gravities="重心";
+
+CATTPS.SubNode.FunctionnalConditions="功能條件";
+CATTPS.SubNode.FunctionnalLinks="功能鏈接";
+
+CATTPS.SubNode.Geometries="構造幾何圖形";
+
+CATTPS.SubNode.TTRS="幾何特征注釋";
+
+CATTPS.SubNode.MechanicalAttributes="機械屬性";
+CATTPS.SubNode.ElectricalAttributes="電氣屬性";
+CATTPS.SubNode.UserDefinedAttributes="用戶定義的屬性";
+
+// 3951 校正官方漢化-------------------------------------------------------------- Capture Name
+CATTPS.c0074552099b11d6be990003479ec69d="捕獲";
+
+// 3951 校正官方漢化----------------------------------------------------------------- View Name
+CATTPS.83ac740f150011d4949b0004ac96129fProjView="前視圖";
+CATTPS.83ac740f150011d4949b0004ac96129fSectView="剖視圖";
+CATTPS.83ac740f150011d4949b0004ac96129fSCutView="截面分割視圖";
+CATTPS.83ac740f150011d4949b0004ac96129fAxonView="等軸測視圖";
+CATTPS.83ac740f150011d4949b0004ac96129fTopViews="俯視圖";
+CATTPS.83ac740f150011d4949b0004ac96129fLeftView="左視圖";
+CATTPS.83ac740f150011d4949b0004ac96129fRearView="后視圖";
+CATTPS.83ac740f150011d4949b0004ac96129fRighView="右視圖";
+CATTPS.83ac740f150011d4949b0004ac96129fBottView="仰視圖";
+
+// 3951 校正官方漢化----------------------------------------------------------------- Extraction View Name
+CATTPS.0fb2c0f4ef6d481389506a61bc87f795AlignVie="對齊剖視圖";
+CATTPS.0fb2c0f4ef6d481389506a61bc87f795AlignCut="對齊截面分割視圖";
+CATTPS.0fb2c0f4ef6d481389506a61bc87f795OffsetVi="偏移剖視圖";
+CATTPS.0fb2c0f4ef6d481389506a61bc87f795OffsetCu="偏移截面分割視圖";
+
+// 3951 校正官方漢化------------------------------------------------------------------ Supertype
+CATTPSTolerance.0="公差";
+
+CATTPS.75a60f7f400611d3a92c006094b99c4b="基準"; // 3951 校正官方漢化1
+CATTPS.75a60f7a400611d3a92c006094b99c4b="形狀"; // 3951 校正官方漢化2
+CATTPS.75a60f7e400611d3a92c006094b99c4b="大小"; // 3951 校正官方漢化3
+// 3951 校正官方漢化 On est en ASME donc les supertypes  Position orientation and runout
+// 3951 校正官方漢化 sont regroupes sous la meme denomination
+CATTPS.75a60f7c400611d3a92c006094b99c4b="位置方向和跳動度"; // 3951 校正官方漢化4Posi
+CATTPS.75a60f7b400611d3a92c006094b99c4b="位置方向和跳動度"; // 3951 校正官方漢化4Orie
+CATTPS.75a60f7d400611d3a92c006094b99c4b="位置方向和跳動度"; // 3951 校正官方漢化4RunO
+CATTPS.f4a2d3953ddc11d3a929006094b99c4b="非語義"; // 3951 校正官方漢化5
+CATTPS.75a60f9a400611d3a92c006094b99c4b="粗糙度"; // 3951 校正官方漢化6
+
+// 3951 校正官方漢化------------------------------------------------------------------------ Type
+
+// 3951 校正官方漢化----------------------------------------------------------------------- Datum
+// 3951 校正官方漢化 1.1 primary : 1.11 secondary : 1.12 tertiary : 1.13
+CATTPS.75a60f95400611d3a92c006094b99c4b="簡單基準";
+CATTPS.75a60f97400611d3a92c006094b99c4b="基準系統"; // 3951 校正官方漢化1.2
+// 3951 校正官方漢化 primary : 1.111 secondary : 1.112 tertiary : 1.113
+CATTPS.75a60f96400611d3a92c006094b99c4b="基準目標";
+CATTPS.335352e6432a11d3a92d006094b99c4b="基準參考系";
+
+// 3951 校正官方漢化------------------------------------------------------------------------ Form
+CATTPS.75a60f81400611d3a92c006094b99c4b="直線度"; // 3951 校正官方漢化2.1
+CATTPS.7c122933e8b011d586080010a4899d8f="軸直線度"; // 3951 校正官方漢化2.11
+CATTPS.75a60f82400611d3a92c006094b99c4b="平面度"; // 3951 校正官方漢化2.2
+CATTPS.75a60f83400611d3a92c006094b99c4b="圓度"; // 3951 校正官方漢化2.3
+CATTPS.75a60f84400611d3a92c006094b99c4b="圓柱度"; // 3951 校正官方漢化2.4
+CATTPS.75a60f85400611d3a92c006094b99c4b="任意直線的輪廓公差"; // 3951 校正官方漢化2.5
+CATTPS.75a60f86400611d3a92c006094b99c4b="任意曲面的輪廓公差"; // 3951 校正官方漢化2.6
+CATTPS.75a60f87400611d3a92c006094b99c4b="陣列位置"; // 3951 校正官方漢化2.7
+
+// 3951 校正官方漢化------------------------------------------------------------------------ Size
+CATTPS.75a60f90400611d3a92c006094b99c4b="線性尺寸"; // 3951 校正官方漢化3.1
+CATTPS.75a60f91400611d3a92c006094b99c4b="角度大小"; // 3951 校正官方漢化3.2
+CATTPS.75a60f94400611d3a92c006094b99c4b="倒角尺寸"; // 3951 校正官方漢化3.3
+CATTPS.75a60f99400611d3a92c006094b99c4b="基本尺寸"; // 3951 校正官方漢化3.4
+CATTPS.75a60f92400611d3a92c006094b99c4b="第二線性大小"; // 3951 校正官方漢化3.5 Second linear
+CATTPS.17f49a80ec074a8a875dccac19a5cda9="定向線尺寸";
+CATTPS.e41043ae361041eb81dcfff3ce045be4="定向角度尺寸";
+
+// 3951 校正官方漢化-------------------------------------------- Position Orientation and Run-Out
+CATTPS.75a60f88400611d3a92c006094b99c4b="平行"; // 3951 校正官方漢化4.1
+CATTPS.75a60f89400611d3a92c006094b99c4b="垂直"; // 3951 校正官方漢化4.2
+CATTPS.75a60f8a400611d3a92c006094b99c4b="傾斜度"; // 3951 校正官方漢化4.3
+CATTPS.75a60f8b400611d3a92c006094b99c4b="位置"; // 3951 校正官方漢化4.4
+CATTPS.75a60f8c400611d3a92c006094b99c4b="同心度"; // 3951 校正官方漢化4.5
+CATTPS.75a60f8d400611d3a92c006094b99c4b="對稱"; // 3951 校正官方漢化4.6
+CATTPS.10bdbb717a3611d3a93f006094b99c4b="位置線性輪廓"; // 3951 校正官方漢化4.7
+CATTPS.10bdbb707a3611d3a93f006094b99c4b="位置曲面輪廓"; // 3951 校正官方漢化4.8
+CATTPS.75a60f8e400611d3a92c006094b99c4b="全跳動度"; // 3951 校正官方漢化4.9
+CATTPS.75a60f8f400611d3a92c006094b99c4b="圓跳動度"; // 3951 校正官方漢化4.10
+
+// 3951 校正官方漢化----------------------------------------------------------------- NonSemantic
+CATTPS.f4a2d3943ddc11d3a929006094b99c4b="文本"; // 3951 校正官方漢化5.0
+CATTPS.75a60f98400611d3a92c006094b99c4b="標識注解"; // 3951 校正官方漢化5.1
+CATTPS.7011eb2875cd11d59ee400508b13182d="注解對象屬性";
+CATTPS.7cecb0fca0ed11d3a94e006094b99c4b="基準";
+CATTPS.75a60f80400611d3a92c006094b99c4b="形位公差";
+CATTPS.a78a75cb3c8811d494b10004ac96129f="基準目標";
+CATTPS.3dccd85dccb211d394740004ac96129f="焊接符號";
+CATTPS.53ce38e693b911d4907c0004ac96df1d="尺寸";
+CATTPS.ea0e21c47f38456da94cb0c32cd3cead="坐標尺寸";
+
+// 3951 校正官方漢化------------------------------------------------------------------- Roughness
+// 3951 校正官方漢化 Pas besoin deja declare en temps que Super Type
+// 3951 校正官方漢化CATTPS.75a60f9a400611d3a92c006094b99c4b = "Roughness";  // 3951 校正官方漢化6.0
+
+// 3951 校正官方漢化------------------------------------------------------------------- Deviation
+CATTPS.c17f1520a3ef11d3a951006094b99c4b="偏差";
+CATTPS.f13928129f7611d484fa00008656f176="關聯偏差";
+CATTPS.20237ab2083111d5856e00008656f176="點到點的距離";
+CATTPS.b0f4328ec20c11d5ab4900306e0aa2f3="分析幾何圖形變體";
+CATTPS.dff5b5137d6b4cf38e686e7229de5d96="重心注釋";
+CATTPS.bba0626dd7124a5f80a8743d179af7bb="變化變體";
+
+// 3951 校正官方漢化-------------------------------------------------------------- RestrictedArea
+CATTPS.444330305d8f11d6be950002b341dd3a=" 受限區域";
+
+// 3951 校正官方漢化----------------------------------------------------------------- SingleLimit
+SingleLimit.Maximum="最大值";
+SingleLimit.Minimum="最小值";
+SingleLimit.AsInformation="參閱信息";
+
+// 3951 校正官方漢化------------------------------------------------------------- TTRS Class Type
+TTRS.Class.1="球面";
+TTRS.Class.2="平面";
+TTRS.Class.3="圓柱";
+TTRS.Class.4="螺旋面";
+TTRS.Class.5="旋轉";
+TTRS.Class.6="棱柱";
+TTRS.Class.7="復雜";
+
+// 3951 校正官方漢化------------------------------------------------------------------- TTRS Type
+TTRS.Type.1="單";
+TTRS.Type.2="相關";
+TTRS.Type.3="陣列";
+TTRS.Type.4="輪廓";
+
+// 3951 校正官方漢化----------------------------------------------------- Tolerance Visualization
+TolVisu.PerfectForm="在 MMC 下不需要理想形狀";
+
+// 3951 校正官方漢化----------------------------------------------------------------- Common Zone
+TPSCommonZone="公共區域";
+TPSSurface="曲面";
+
+// 3951 校正官方漢化-------------------------------------------------------- Constructed Geometry
+CATTPS.CGFakeProductName="已構造幾何圖形的產品";
+CATTPS.CGFakePartName="已構造幾何圖形的零件";
+CATTPS.CGOpenBodyName="3D 注釋的幾何圖形集";
+
+CATTPS.ConePoint="圓錐頂點";
+CATTPS.IntersectingPoint="相交點";
+CATTPS.CirclePoint="圓中心點";
+CATTPS.SpherePoint="球面中心點";
+CATTPS.TorusPoint="圓環中心點";
+
+CATTPS.CylindricalAxis="圓柱軸";
+CATTPS.ConeAxis="圓錐軸";
+CATTPS.TorusAxis="圓環軸";
+CATTPS.RevolutionAxis="旋轉軸";
+CATTPS.IntersectingAxis="相交軸";
+
+CATTPS.ConePlane="標準度量平面";
+CATTPS.PassingPlane="穿越平面";
+CATTPS.MedianPlane="中心平面";
+CATTPS.AnglePlane="角度平面";
+CATTPS.TorusPlane="圓環中心平面";
+CATTPS.UpperThreadPlane="上部螺紋平面";
+CATTPS.LowerThreadPlane="下部螺紋平面";
+
+CATTPS.ConeCircle="標準度量圓";
+
+CATTPS.CirclingCylinder="環狀柱面";
+CATTPS.RefCirclingCylinder="環狀柱面";
+CATTPS.ThreadCylinder="螺紋柱面";
+
+CATTPS.Curve="曲線";
+
+CATTPS.ElementsThread="螺紋的幾何圖形展示";
+
+// 3951 校正官方漢化------------------------------------------------------------------------ Fake
+CATTPSLight.HideAll="隱藏所有 FTA";
+CATTPSLight.ShowFTA="顯示裝配 FTA";
+CATTPSLight.ShowAllFTA="顯示所有 FTA";
+
+// 3951 校正官方漢化------------------------------------------------------------------------- CCP
+CATTPSLight.ResultCantBeDeletedMessage="無法刪除結果元素";
+CATTPSLight.ResultCantBeCopiedMessage="無法復制結果元素";
+
+// 3951 校正官方漢化---------------------------------------------------- Technological Attributes
+CATTPSLight.TechAttrSetName="注釋集";

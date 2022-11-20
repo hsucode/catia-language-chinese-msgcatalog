@@ -1,0 +1,111 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2010
+
+Title="NC 批處理隊列";
+
+// 3951 校正官方漢化 Multilist column titles
+JobPPR="PPR 上下文";
+JobSelection="選擇";
+JobStatus="狀態";
+JobComment="備注";
+JobDescription="描述";
+
+JobActionFrame.EditJob.ShortHelp="編輯";
+JobActionFrame.EditJob.LongHelp="編輯選定的作業。";
+
+JobActionFrame.DeleteJob.ShortHelp="刪除";
+JobActionFrame.DeleteJob.LongHelp="刪除選定的作業。";
+
+JobActionFrame.NewJob.ShortHelp="創建";
+JobActionFrame.NewJob.LongHelp="新建作業，并將其添加到列表中。";
+
+JobActionFrame.JobUp.ShortHelp="向上";
+JobActionFrame.JobUp.LongHelp="上移選定的作業。";
+
+JobActionFrame.JobDown.ShortHelp="向下";
+JobActionFrame.JobDown.LongHelp="下移選定的作業。";
+
+JobActionFrame.InitBatch.ShortHelp="全部刪除";
+JobActionFrame.InitBatch.LongHelp="刪除所有作業。";
+
+JobActionFrame.SynchroJob.ShortHelp="同步";
+JobActionFrame.SynchroJob.LongHelp="將 PPR 上下文與已執行作業的結果同步。";
+
+AutoSyncFrame.Title="自動同步";
+
+AutoSyncFrame.AutoSyncOff.Title="關閉";
+AutoSyncFrame.AutoSyncOff.LongHelp="將不會發生自動同步。";
+AutoSyncFrame.AutoSyncBatch.Title="在批處理會話中";
+AutoSyncFrame.AutoSyncBatch.LongHelp="在批處理會話中自動同步 PPR 上下文和已執行作業的結果。";
+AutoSyncFrame.AutoSyncInt.Title="在交互會話中";
+AutoSyncFrame.AutoSyncInt.LongHelp="在交互會話中自動同步 PPR 上下文和已執行作業的結果。";
+
+BatchLogFileFrame.ViewBatchLog.Title="日志";
+BatchLogFileFrame.ViewBatchLog.LongHelp="顯示 NC 批處理診斷文件。";
+
+StartStopFrame.ActivateBatch.Title="運行";
+StartStopFrame.ActivateBatch.LongHelp="啟動 NC 批處理隊列執行。";
+
+StartStopFrame.StopBatch.Title="停止";
+StartStopFrame.StopBatch.LongHelp="停止 NC 批處理隊列執行。";
+
+BatchModeFrame.Title="運行模式";
+
+BatchModeFrame.BatchModeRBFrame.BatchModeDeferred.Title="已調度";
+BatchModeFrame.BatchModeRBFrame.BatchModeDeferred.LongHelp="點擊“運行”后，在調度時間中啟動作業。";
+BatchModeFrame.BatchModeRBFrame.BatchModeNow.Title="立刻";
+BatchModeFrame.BatchModeRBFrame.BatchModeNow.LongHelp="點擊“運行”后立即啟動作業。";
+
+BatchModeFrame.BatchTimeDateFrame.TimeFrame.BatchStartTime.Title="時間";
+BatchModeFrame.BatchTimeDateFrame.DateFrame.BatchStartDate.Title="日期";
+BatchModeFrame.BatchTimeDateFrame.DateFrame.BatchCalendar.ShortHelp="日歷";
+BatchModeFrame.BatchTimeDateFrame.DateFrame.BatchCalendar.LongHelp="使您能夠根據日歷安排時間。";
+
+BatchLogFileFrame.BatchLogFile.Title="日志文件： ";
+BatchLogFileFrame.BatchLogFileSelect.Title="...";
+BatchLogFileFrame.BatchLogFileSelect.ShortHelp="瀏覽";
+BatchLogFileFrame.BatchLogFileSelect.LongHelp="打開“文件選擇”對話框，以定義日志文件的路徑。";
+
+BatchLogFileBox="選擇日志文件";
+
+StartMfgBatchTitle="NC 批處理隊列狀態";
+StartMfgBatchOK="NC 批處理作業正在運行";
+StartMfgBatchKO="NC 批處理作業未運行";
+
+InitYesOrNoTitle="重置 NC 批處理隊列";
+InitYesOrNoMsg="從 NC 批處理隊列刪除所有作業？";
+
+ActivateYesOrNoTitle="運行 NC 批處理隊列";
+ActivateYesOrNoAutoSyncMsg="自動同步選定的選項。\n在執行結束之前，
+請勿修改和傳播選定的數據或修改其版本。\n重新打開選定的數據，以查看同步結果。\n\n";
+ActivateYesOrNoMainMsg="運行 NC 批處理隊列？";
+
+StopYesOrNoTitle="取消 NC 批處理";
+StopYesOrNoMsg="取消執行 NC 批處理隊列？";
+
+JobDefined="已定義";
+JobWaiting="正在等待";
+JobStarted="已啟動";
+JobComputed="已計算";
+JobCanceled="已取消";
+JobFailed="失敗";
+JobSynchronized="已同步";
+JobSyncFailed="同步失敗";
+
+StopMfgBatchTitle="NC 批處理隊列狀態";
+StopMfgBatchOK="已停止執行 NC 批處理！";
+StopMfgBatchKO="NC 批處理隊列未停止。\n請使用任務管理器停止 CATBatchStarter 進程。";
+
+ErrorCreatingBatchTitle="NC 批處理隊列";
+ErrorCreatingBatchMsg1="創建 NC 批處理隊列時出錯！";
+ErrorCreatingBatchMsg2="創建批處理隊列時出錯！\n請檢查以下目錄的訪問權限：\n ";
+
+SynchronizeTitle="同步";
+SynchronizeToolPathJob="與批處理計算刀具路徑同步？";
+SynchronizeVideoJob="與批處理計算視頻結果同步？";
+SynchronizeMachSimulJob="與批處理計算機床模擬結果同步？";
+SynchronizeFileGenJob="與批處理計算 NC 文件同步？";
+
+DeferredRunTitle="已調度運行";
+DeferredRunMsg="已超出調度運行的時間/日期設置！\n請選擇有效的時間/日期。";
+
+SynchroNCRepMsg="已更改 NC 文件容器的名稱，因為數據庫中已存在具有相同名稱的其他展示。";

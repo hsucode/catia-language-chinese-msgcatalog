@@ -1,0 +1,86 @@
+// 3951 校正官方漢化--------------------------------------------------
+// 3951 校正官方漢化 Electrical Logical Editor - Export iXF system command 
+// 3951 校正官方漢化--------------------------------------------------
+
+
+// 3951 校正官方漢化 Command states
+CATELEditorIxfExportCmd.RepositoryValidationState.Message="正在檢查設置...";
+CATELEditorIxfExportCmd.SystemSelectionState.Message="選擇要導出的電氣系統";
+CATELEditorIxfExportCmd.FileSelectionState.Message="選擇導出系統的目標文件";
+CATELEditorIxfExportCmd.FileExistingState.Message="正在檢查選定文件...";
+CATELEditorIxfExportCmd.ResultState.Message="命令結果";
+
+CATELEditorIxfExportCmd.UndoTitle="導出電氣系統";
+CATELEditorIxfExportCmd.RedoTitle="導出電氣系統";
+
+// 3951 校正官方漢化 Selection panel
+SelectionWindow.Title="導出為 xml 文件";
+SelectionWindow.FileiXFType="iXF 文件 (*.xml)";
+SelectionWindow.FileElogType="ELOG 文件 (*.xml)";
+
+// 3951 校正官方漢化 Existing file window
+ExistingWindow.Title="已選擇現有文件";
+ExistingWindow.Message="要覆蓋選定的文件嗎？";
+
+// 3951 校正官方漢化 Warning window
+WarningWindow.Title="正在導出系統警告";
+WarningWindow.IntroFrame.IntroTitleLabel.Title="發現以下沖突：";
+WarningWindow.ListFrame.WarningList.Column1="系統";
+WarningWindow.ListFrame.WarningList.Column2="描述";
+WarningWindow.ListFrame.WarningList.Column3="對象";
+WarningWindow.ListFrame.WarningList.Column4="工作指令";
+
+// 3951 校正官方漢化 Error window
+ErrorWindow.Title="導出命令錯誤";
+ErrorGeneral.Message="iXF 導出失敗。";
+ErrorFileAccess.Message="所選文件為只讀，無法訪問。";
+ErrorRepository.Message="未設置默認 iXF 檔案庫。請使用“工具\選項”菜單設置其目錄。";
+ErrorPath.Message="找不到文件";
+ErrorFile.Message="無效文件名";
+ErrorParsing.Message="iXF 文件解析失敗。";
+ErrorElectricalRootReference.Message="此參考不是 iXF 系統。";
+
+// 3951 校正官方漢化 Warning Aliases
+WarningNoEndsFound.Message="未找到兩個有效的端點。";
+
+
+WarningIdUnicity.Message="對象的標識符在 xml 文件中不是唯一的";
+WarningNoWireEndPorts.Message="以下導線實例不包含已連接的端點";
+WarningNoWireExtremities.Message="以下導線實例不包含已創建的端點";
+WarningWireEndPort1NotConnected.Message="以下導線實例的導線端口 1 未連接";
+WarningWireEndPort2NotConnected.Message="以下導線實例的導線端口 2 未連接";
+WarningWireEndPort1UnexpectedConnection.Message="以下導線實例的導線端口 1 遇到意外連接問題";
+WarningWireEndPort2UnexpectedConnection.Message="以下導線實例的導線端口 2 遇到意外連接問題";
+WarningNoNetEndPorts.Message="該網包含的已連接端口數少于兩個";
+WarningNoSubWire.Message="該電纜沒有導線";
+WarningNoSubNet.Message="該網組不包含任何網";
+WarningNoCompatibility.Message="此電氣端口必須正確鏈接到";
+WarningIncompatibleMatingConnector.Message="最終端口必須為單個連接器端口";
+WarningIncompatibleObject.Message="對象無法包含此類型的電氣端口";
+WarningC1NotFound.Message="找不到 C1 單個連接器";
+WarningICNotSupported.Message="不支持此 xml 格式的界面連接器";
+WarningShellNotSupported.Message="不支持此 xml 格式的連接器殼體";
+
+// 3951 校正官方漢化 Action Aliases
+ActionNoExport.Message="對象未導出。";
+ActionNoAction.Message="無工作指令";
+ActionNoImport.Message="嘗試導入當前 iXF 系統將失敗";
+ActionNoImportNoWireConnection.Message="嘗試導入當前 iXF 系統將失敗。請連接導線端點。";
+ActionNoImportNoWireConnectionPort1.Message="嘗試導入當前 iXF 系統將失敗。請連接導線端口 1";
+ActionNoImportNoWireConnectionPort2.Message="嘗試導入當前 iXF 系統將失敗。請連接導線端口 2";
+ActionNoImportCreateAndConnectTwoPorts.Message="嘗試導入當前 iXF 系統將失敗。請創建端點端口并進行連接";
+ActionNoImportNoNetConnection.Message="嘗試導入當前 iXF 系統將失敗。請至少連接兩個端口";
+ActionNoConnectorPortsExported.Message="嘗試導入當前 iXF 系統將失敗。端口子元素將不會導出。其電氣上部對象為";
+ActionPinsShouldBeUnderC1.Message="使用連接器端口鏈接命令在 C1 連接器端口下進行鏈接";
+ActionObjectUnderThisInstance.Message="使用連接器端口鏈接命令";
+ActionObjectUnderThisHierarchy.Message="使用連接器端口鏈接命令";
+ActionNoMatingConnectorInfoHierarchy.Message="此連接未導出";
+ActionNoExportingElectricalPort.Message="此電氣端口未導出";
+ActionChangeClassification.Message="在屬性面板中更改連接器端口分類";
+ActionCreateC1.Message="創建的單個連接器端口的值為";
+
+
+// 3951 校正官方漢化 Result window
+ResultWindow.Title="導出電氣系統成功";
+ResultWindow.Message.Part1="系統";
+ResultWindow.Message.Part2="已成功導出到";

@@ -1,0 +1,67 @@
+DialogBoxTitle="外插延伸（特征）";
+
+//Type
+LabelType.Title="類型： ";
+LabelType.LongHelp="定義外插延伸類型：
+- 標準 -
+  在曲面一側沿兩條相反的邊線進行動態外插延伸。
+- 不等 -
+  單邊線的動態外插延伸。
+- 系數 -
+  幾何圖形按系數進行外插延伸。";
+LabelType.ShortHelp="定義外插延伸類型";
+ComboType.LongHelp="- 標準 -
+  在曲面一側沿兩條相反的邊線進行動態外插延伸。
+- 不等 -
+  單邊線的動態外插延伸。
+- 系數 -
+  幾何圖形按系數進行外插延伸。";
+ComboType.ShortHelp="標準、不等、系數";
+Type.Standard="標準";
+Type.Unequal="不等";
+Type.Factor="系數";
+
+LabelElement.Title="元素： ";
+LabelElement.LongHelp="指定要外插延伸的元素。";
+LabelElement.ShortHelp="外插延伸元素";
+LabelBoundaries.Title="邊界： ";
+LabelBoundaries.LongHelp="指定要外插延伸的元素的邊界。";
+LabelBoundaries.ShortHelp="定義邊界";
+LabelStretchType.Title="拉伸類型： ";
+LabelStretchType.LongHelp="僅可用于外插延伸類型系數。";
+LabelStretchType.ShortHelp="定義拉伸類型";
+ComboStretchType.LongHelp="定義拉伸類型
+- 系數 -
+  通過在文本字段定義值來完成修改。
+- 范圍 -
+  通過滑塊動態完成修改。";
+ComboStretchType.ShortHelp="系數、范圍";
+StretchType.Factor="系數";
+StretchType.Range="范圍";
+
+//Frame Range
+FrameRange.Title="范圍";
+FrameRange.LongHelp="通過滑塊范圍動態完成修改。";
+SliderFactor.LongHelp="定義值";
+SliderFactor.ShortHelp="滑塊范圍";
+
+//Frame Factor
+FrameFactor.Title="系數";
+FrameFactor.LongHelp="通過在文本字段“系數”定義值來完成修改，并通過單擊“應用”按鈕來應用修改。";
+FrameFactor.ShortHelp="定義系數";
+
+//Frame Options
+FrameOptions.Title="選項";
+FrameOptions.LongHelp="其他選項設置";
+CheckButtonBothSides.Title="兩側";
+CheckButtonBothSides.LongHelp="僅可用于外插延伸類型“標準”。將同時外插延伸另一端。";
+CheckButtonBothSides.ShortHelp="兩側";
+
+//Push button Reset
+PushButtonReset.Title="重置";
+PushButtonReset.ShortHelp="重置外插延伸";
+PushButtonReset.LongHelp="重置/撤消目前為止所完成的所有外插延伸步驟。
+恢復元素的原始形狀。";
+
+//Information message
+RepairErrorInSelectionSet.Title="按“應用”以修復選擇集內的錯誤。";

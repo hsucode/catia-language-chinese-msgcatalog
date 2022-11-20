@@ -1,0 +1,68 @@
+
+CannotLoadXMLFile.Request="加載 XML 文件";
+CannotLoadXMLFile.Diagnostic="加載 XML 文件時出現問題：/p";
+CannotLoadXMLFile.Advice="檢查是否已分配資源。";
+
+ParsingXMLFile.Request="解析 XML 文件";
+ParsingXMLFile.Diagnostic="解析 XML 文件時出現問題：/p";
+ParsingXMLFile.Advice="檢查 XML 文件內的名稱是否一致。";
+
+IncorrectUnit.Request="獲取平面偏移單位";
+IncorrectUnit.Diagnostic="從 XML 文件獲取平面偏移單位時出現問題：/p";
+IncorrectUnit.Advice="檢查偏移所用的單位是否受支持（毫米、英寸或米）。";
+
+RetrievingInfo.Request="從 PRM 資源檢索信息";
+RetrievingInfo.Diagnostic="由于數據無效（使用了不正確的偏移單位），檢索信息時出現問題：/p";
+RetrievingInfo.Advice="檢查 PRM 資源內的數據的有效性（正確的單位應為毫米、英寸和米）。";
+
+MoreThanOneSubsystem.Request="同步平面";
+MoreThanOneSubsystem.Diagnostic="由于輸入無效導致出現問題：/p";
+MoreThanOneSubsystem.Advice="存在多個子系統。應只存在一個子系統。";
+
+PlaneNameDuplication.Request="創建項目數據：檢查是否存在重復的平面名稱。";
+PlaneNameDuplication.Diagnostic="存在重復的平面名稱：/p";
+PlaneNameDuplication.Advice="名稱相同的平面沒有被添加到列表。請修復 XML 文件。";
+
+PlaneNameDuplication2.Request="同步平面：檢查是否存在重復的平面名稱。";
+PlaneNameDuplication2.Diagnostic="存在重復的平面名稱：/p";
+PlaneNameDuplication2.Advice="名稱相同的平面不會被添加到列表。沒有同步。請修復 XML 文件。";
+
+DuplicateOffset1.Request="創建項目數據：檢查是否存在重復的平面偏移。";
+DuplicateOffset1.Diagnostic="存在重復的平面偏移：/p";
+DuplicateOffset1.Advice="無法構建此平面系統的網格集。請修復 XML 文件內的偏移。";
+
+DuplicateOffset2.Request="同步平面：檢查是否存在重復的平面偏移。";
+DuplicateOffset2.Diagnostic="存在重復的平面偏移：/p";
+DuplicateOffset2.Advice="無法構建此平面系統的網格集。沒有同步。請修復 XML 文件內的偏移。";
+
+OutOfOrderOffset1.Request="創建項目數據：檢查是否存在有無序偏移的平面。";
+OutOfOrderOffset1.Diagnostic="存在有無序偏移的平面：/p";
+OutOfOrderOffset1.Advice="偏移應以升序排序且無重復。請檢查 XML 文件。";
+
+OutOfOrderOffset2.Request="同步平面：檢查是否存在有無序偏移的平面。";
+OutOfOrderOffset2.Diagnostic="存在有無序偏移的平面：/p";
+OutOfOrderOffset2.Advice="偏移應以升序排序且無重復。沒有同步。請檢查 XML 文件。";
+
+// 3951 校正官方漢化 ReferenceSurface errors.
+RetrieveResource.Request="從 PRM 檢索參考曲面資源。";
+RetrieveResource.Diagnostic="無法從 PRM 檢索參考曲面資源：/p";
+RetrieveResource.Advice="檢查是否已在 PRM 中分配參考曲面資源。";
+
+NameNotSet.Request="從 PRM 檢索參考曲面名稱。";
+NameNotSet.Diagnostic="從 PRM 檢索參考曲面名稱時出現問題：/p";
+NameNotSet.Advice="未在 PRM 內分配參考曲面名稱。";
+
+MismatchedName.Request="比較 PRM 和零件內的參考曲面名稱。";
+MismatchedName.Diagnostic="比較參考曲面名稱時出現問題：/p";
+MismatchedName.Advice="PRM 內的參考曲面名稱與零件內的名稱不匹配。";
+
+WrongFaceOrientKeyWord.Request="平面方向規則：規則關鍵字不正確。";
+WrongFaceOrientKeyWord.Diagnostic="無法識別分配方向規則的關鍵字：/p";
+WrongFaceOrientKeyWord.Advice="請按記錄審查拼寫。默認方向為正。";
+
+
+
+
+
+
+

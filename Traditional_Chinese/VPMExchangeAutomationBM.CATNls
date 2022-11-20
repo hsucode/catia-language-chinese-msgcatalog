@@ -1,0 +1,58 @@
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2007 - CATIA V5R204
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化 March, 6th 2007 - Creation: YWE
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化 VPMExchangeAutomation implementation
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化 This msgcatalog is used to define the VPMExchangeAutomation messages used in
+// 3951 校正官方漢化   both VPMExchangeAutomation & VPMExchangeAutomationUI modules and objects
+// 3951 校正官方漢化      - VPMExchangeAutomation: Integration in BatchMonitor (CATBatchStarter)
+// 3951 校正官方漢化      - VPMExchangeAutomationBM: Integration in BatchMonitor (CATUTIL)
+// 3951 校正官方漢化      - VPMExchangeAutomationPLM: Adhesion to CATIBatchAppl
+// 3951 校正官方漢化      - VPMExchangeAutomationUI: VPMExchangeAutomationUI specific user interface
+// 3951 校正官方漢化
+// 3951 校正官方漢化 US Version
+// 3951 校正官方漢化===========================================================================
+
+VPMExchangeAutomation.Title="共存交換自動化：使用 .psn 或 ENOVIAvpm 特定文件作為共存輸入";
+VPMExchangeAutomation.Err.Licence="VPMExchangeAutomation 應用程序在當前配置下不可用。";
+VPMExchangeAutomation.BatchOK="執行成功。";
+VPMExchangeAutomation.BatchKO="執行中止。";
+
+VPMExchangeAutomation.Frame.Title="ENOVIAvpm 批處理設置";
+VPMExchangeAutomation.Frame.Behaviour="批處理輸入文件類型： ";
+VPMExchangeAutomation.Frame.PSNBeh=".psn 文件";
+VPMExchangeAutomation.Frame.PubSubBeh=".pubsub 文件";
+VPMExchangeAutomation.Frame.TemplatePSNBeh="psn 文件的模板";
+VPMExchangeAutomation.Frame.InputFilePath="輸入文件路徑： ";
+VPMExchangeAutomation.Frame.Scenario="共存方案： ";
+VPMOrchFrame.VPMExchangeAutomationEditorPush.ShortHelp="更改輸入文件路徑";
+
+VPMExchangeAutomation.Report.globalResult="VPMExchangeAutomation 全局結果";
+VPMExchangeAutomation.Report.BatchParameter="批處理參數：";
+VPMExchangeAutomation.Report.FileExt="文件擴展名";
+VPMExchangeAutomation.Report.FileInput="輸入文件路徑";
+VPMExchangeAutomation.Report.ScenarioPath="方案文件路徑";
+VPMExchangeAutomation.Report.ExternalReport="鏈接到外部報告：";
+VPMExchangeAutomation.Report.TEReport="TransitionEngine 報告";
+VPMExchangeAutomation.Report.DBDI="DBDI 報告目錄的路徑";
+VPMExchangeAutomation.Report.VPLM="VPLM 消息目錄的路徑";
+VPMExchangeAutomation.Report.VPMV4="ENOVIAvpm 消息目錄的路徑";
+
+VPMExchangeAutomation.Report.ReadInputFile="讀取輸入文件";
+VPMExchangeAutomation.Report.ProcessFile="處理輸入文件";
+VPMExchangeAutomation.Report.CompleteGraph="構建完整圖形";
+
+VPMExchangeAutomation.Error.ProcessScenario="轉換失敗：檢查 TransitionEngine 報告";
+VPMExchangeAutomation.Error.SetTransferReportInfo="轉換失敗：檢查輸出目錄";
+VPMExchangeAutomation.Error.ReadScenario="轉換失敗：無法讀取方案文件";
+VPMExchangeAutomation.Error.GetTransferEngine="無法實例化 TransitionEngine。請聯系您的管理員";
+VPMExchangeAutomation.Error.GetTargetUserPwd="無法檢索目標用戶的密碼";
+VPMExchangeAutomation.Error.CompleteGraph="無效的完整圖形";
+VPMExchangeAutomation.Error.Openness="無法實例化 ENOVIAvpm 提供程序。請聯系您的管理員";
+VPMExchangeAutomation.Error.ServerLevelInfo="ENOVIAvpm 服務器級別錯誤。對于 PSN 文件，最低級別為 PTF16，對于 pubsub 文件，最低級別為 PTF17。";
+VPMExchangeAutomation.Error.WrongExtension="不支持的文件類型";
+
+
+VPMExchangeAutomation.Success="轉換成功";

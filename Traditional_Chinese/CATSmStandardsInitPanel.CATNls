@@ -1,0 +1,85 @@
+Title="鈑金件標準表初始化";
+
+_MainTableFrame._pMainTableChoiceLabel.Title=" 主標準表 ";
+_ModeFrame.Title="模式：";
+
+_ModeFrame._CreatModifModeRadioBtn.Title="來自文件數據";
+_ModeFrame._CreatModifModeRadioBtn.ShortHelp="單元內容為路徑指向文件。";
+_ModeFrame._CreatModifModeRadioBtn.LongHelp="將檢查對主表單元中參考的文件路徑的訪問權。標識屬性值將從不帶擴展名的文件名中去除。用于沖突管理的搜索模式為“精確”。";
+
+_ModeFrame._PostFBDIModeRadioBtn.Title="來自基本數據";
+_ModeFrame._PostFBDIModeRadioBtn.ShortHelp="單元內容為之前的路徑或基礎區別屬性值。";
+_ModeFrame._PostFBDIModeRadioBtn.LongHelp="標識屬性值將從給定的虛擬路徑中去除或直接使用給定字符串。用于沖突管理的搜索模式為“相似”。";
+
+_MainTableFrame._pMainTablePathEditor.Title=" 主標準表標識";
+_MainTableFrame._pMainTablePathEditor.ShortHelp=" 主標準表 ";
+_MainTableFrame._pMainTablePathEditor.LongHelp=" 顯示要初始化的主表的標識。 ";
+
+_SwitchButtonFrame._pBrowseButton.Title=" 瀏覽 ";
+_SwitchButtonFrame._pBrowseButton.ShortHelp=" 瀏覽主表 ";
+_SwitchButtonFrame._pBrowseButton.LongHelp=" 瀏覽要處理的主表（首次初始化的文件、修改情況下的展示參考）。 ";
+
+_SwitchButtonFrame._pSearchButton.Title=" 搜索 ";
+_SwitchButtonFrame._pSearchButton.ShortHelp=" 搜素主表 ";
+_SwitchButtonFrame._pSearchButton.LongHelp=" 搜索要在數據庫中進行修改處理的主表。";
+
+_pStandardsInitFrame._pSimulateDlgBtn.Title="模擬 / 重置模擬";
+_pStandardsInitFrame._pSimulateDlgBtn.ShortHelp="模擬 / 重置模擬";
+_pStandardsInitFrame._pSimulateDlgBtn.LongHelp=" 啟動模擬或重置上一個模擬。 ";
+
+_pStandardsInitFrame._pSimulateBtn.Title="模擬";
+_pStandardsInitFrame._pSimulateBtn.ShortHelp="模擬";
+_pStandardsInitFrame._pSimulateBtn.LongHelp=" 啟動模擬或重置上一個模擬。 ";
+
+_pStandardsInitFrame._pMultiList.Title=" 模擬結果 ";
+_pStandardsInitFrame._pMultiList.ShortHelp=" 模擬結果 ";
+_pStandardsInitFrame._pMultiList.LongHelp=" 提供模擬結果。 ";
+
+_pStandardsInitFrame._pMultiList._ResultCxtMenu._ProposeNewIdentificationItem.Title="建議新標識";
+_pStandardsInitFrame._pMultiList._ResultCxtMenu._ProposeNewIdentificationItem.LongHelp="如果被去除的標識與電子倉中已經存在的元素對應，啟用建議其他標識。 ";
+
+_pStandardsInitFrame._pMultiList._ResultCxtMenu._UseExistingVersionItem.Title="使用現有版本";
+_pStandardsInitFrame._pMultiList._ResultCxtMenu._UseExistingVersionItem.LongHelp="啟用使用電子倉中存在的 PLM 外部 ID 相同的對象的現有版本。 ";
+
+_pStandardsInitFrame._pMultiList._ResultCxtMenu._UseLatestVersionItem.Title="使用最新版本";
+_pStandardsInitFrame._pMultiList._ResultCxtMenu._UseLatestVersionItem.LongHelp="啟用使用電子倉中存在的 PLM 外部 ID 相同的對象的最新版本。 ";
+
+_pStandardsInitFrame._pMultiList._ResultCxtMenu._pReplacePathByBlank.Title="用空白替換路徑";
+_pStandardsInitFrame._pMultiList._ResultCxtMenu._pReplacePathByBlank.LongHelp="啟用清除電子倉中的對象路徑。 ";
+
+_pStandardsInitFrame._pMultiList._ResultCxtMenu._ResolvePostFBDIAmbiguitiesItem.Title="解決模糊性問題";
+_pStandardsInitFrame._pMultiList._ResultCxtMenu._ResolvePostFBDIAmbiguitiesItem.LongHelp="啟用在可以匹配的對象中選擇正確部件。 ";
+
+
+DTRow="行";
+DTCol="列";
+Path="完整路徑";
+DiffName="區別屬性";
+Version="版本";
+NewExisting="新的/現有";
+Status="狀態";
+
+NewStatus="新的";
+ExistingStatus="現有";
+
+IgnoredStatus="忽略";
+FileNotFoundError="找不到文件";
+IdentificationAlreadyExistingError="電子倉中已存在具有相同標識的數據。";
+ToUpdateStatus="更新";
+AmbiguitiesStatus="導致模糊";
+
+OKStatus="確定";
+KOStatus="失敗";
+OKFormatStatus="格式正確";
+OKForImportStatus="可以導入";
+ImportOKStatus="導入成功";
+ImportKOStatus="導入失敗";
+
+CellContent="單元內容";
+
+UpdateTitle="更新";
+ImportTitle="導入";
+CloseTitle="關閉";
+
+
+

@@ -1,0 +1,35 @@
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化                                     CNEXT - CXR1
+// 3951 校正官方漢化                          COPYRIGHT DASSAULT SYSTEMES 1997 
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+
+// 3951 校正官方漢化******************************************************************************
+// 3951 校正官方漢化 Command
+// 3951 校正官方漢化******************************************************************************
+CATDbcCoordCmd.UndoTitle="創建坐標尺寸";
+
+// 3951 校正官方漢化******************************************************************************
+// 3951 校正官方漢化 States
+// 3951 校正官方漢化******************************************************************************
+CATDbcCoordCmd.selectionState.Message="選擇一個或多個點";
+CATDbcCoordCmd.positionState.Message="指出尺寸位置以結束命令";
+
+// 3951 校正官方漢化******************************************************************************
+// 3951 校正官方漢化 Agents
+// 3951 校正官方漢化******************************************************************************
+CATDbcCoordCmd.SelectionAgentSet.CATDimCoordSelectionAgent.UndoTitle="選擇點";
+
+// 3951 校正官方漢化******************************************************************************
+// 3951 校正官方漢化 Switches
+// 3951 校正官方漢化******************************************************************************
+CATDbcCoordCmd._pSwitchCmdAgent._iType2D.Title="2D 坐標";
+CATDbcCoordCmd._pSwitchCmdAgent._iType2D.ShortHelp="2D 坐標";
+CATDbcCoordCmd._pSwitchCmdAgent._iType2D.Help="在草繪的和/或已生成的點上創建 2D 坐標";
+CATDbcCoordCmd._pSwitchCmdAgent._iType2D.LongHelp="2D 坐標
+為草繪的和/或已生成的點上創建 2D 坐標。";
+
+CATDbcCoordCmd._pSwitchCmdAgent._iType3D.Title="3D 坐標";
+CATDbcCoordCmd._pSwitchCmdAgent._iType3D.ShortHelp="3D 坐標";
+CATDbcCoordCmd._pSwitchCmdAgent._iType3D.Help="僅在已生成的點上創建 3D 坐標";
+CATDbcCoordCmd._pSwitchCmdAgent._iType3D.LongHelp="3D 坐標
+僅為已生成的點創建 3D 坐標。";

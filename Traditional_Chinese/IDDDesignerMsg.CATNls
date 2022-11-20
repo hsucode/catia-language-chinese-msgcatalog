@@ -1,0 +1,112 @@
+//DSxDevIDDDesigner
+CreateWithRestrictedLicense = "This file creation mode isn't allowed with your current license.";
+InvalidLicense = "Invalid licence for the application IDD - Rich Application Presentation Designer. 
+Please check your license and restart the application";
+
+OpenWithRestrictedLicense = "This operation isn't allowed with your current IDD - Rich Application Presentation Designer
+ product installation or licensing.";
+SaveBeforeSimulation = "The selected file wasn't saved.
+If you don't save, the simulated document will be the version currently on disk.
+Would you like to save the file now?";
+
+InvalidImplementDependencies="Some IDD dependencies are invalid.
+Implementation file could not be generated.
+Please set your concatenation to a valid DS Runtime and restart Visual Studio.";
+
+InvalidHeaderDependencies="Some IDD dependencies are invalid.
+Header file could not be generated.
+Please set your concatenation to a valid DS Runtime and restart Visual Studio.";
+
+InternalErrorInitIDD="An internal error has occured in the initialization of IDD.
+Please exit and restart Visual Studio.";
+UnknownToolboxItem= "The toolbox Item <{0}> is not a valid IDD element.
+Please exit and restart Visual Studio.";
+
+DesignOperationNotAllowed= "This operation is not allowed since the loading of CATNls and CATRsc files failed. 
+Please check those files and open the design document again.";
+
+RebuildTestFiles = "The generated NLS Test files seem to be out-of-date. 
+You should rebuild your module in order to update those files.";
+
+//DSxDevIDDDefinitionEditor
+EmptyPropertyName="A property name can't be empty.";
+InvalidConcatenationPath="The concatenation path could not be found. Make sure that you are in a valid workspace environment.";
+InvalidPropName="Invalid property name.
+Name can contain only letters (A-Za-z) or digits (0-9) or '_'.";
+
+InvalidPropNameStart="Invalid property name.
+The name should begin with a letter (A-Za-z) or an '_'.";
+PropertyNameUsed="This property name is already used.";
+ReservedPropName="This name is reserved and can't be used as property name.";
+PromptDeleteDelegate = "Do you really want to delete this delegate definition?";
+PromptDeleteEnum = "Do you really want to delete this enum definition?";
+InvalidTypeName = "Invalid type name.";
+
+//DSxDevIDDModel
+InvalidIconBoxChild="That operation is not supported as only PushButtons and CheckButtons can be added to an IconBox.";
+InvalidVersion="The version of the DSGen file is unknown.
+That file can not be loaded by IDD application.";
+
+NoDefinitionsFound="The current concatenation is incomplete: {0}
+IDD Runtime data could not be found in that concatenation.
+Please set your concatenation to a valid DS Runtime and restart Visual Studio.";
+
+NlsFoundButNotRsc="The CATNls File associated with the current document was found but no CATRsc file was found in the same directory. 
+Please check this file, and reload the current document.";
+
+RscFoundButNotNls="The CATRsc File associated with the current document was found but no CATNls file was found in the same directory. 
+Please check this file, and reload the current document.";
+
+MultipleResourceFound="CATNls and CATRsc resource files were found in multiple resource directory. 
+Those files can be edited by the designer only if there is a single representation of those files.";
+
+ResourcesNotFound="The CATNls and CATRsc resource files were not found in any resource directory. 
+Please check those files, and reload the current document.";
+
+CannotReadResourceFile="The CATNls or CATRsc resource file could not be read. 
+Please restore those files and reload the current document.";
+
+ResourcesFilesCoundNotBeCreated = "The CATNls and CATRsc resource files could not be created in the CNEXT resource directory. 
+Check that you have the proper file access rights and retry the operation.";
+
+ResourcesLocked="This operation is not allowed since the loading of CATNls and CATRsc files failed. 
+Please check those files and open the design document again.";
+
+ResourceConflict="The resources in the CATNls/CATRsc files are in conflict with the data in the dialog model.
+Would you like to export the current model data into the CATNls/CATRsc files?";
+
+InvalidCallbackName = "The callback name {0} is not a valid method name. Check for invalid characters in the target widget name.";
+CallbackNotUsed = "The callback method {0} isn't used anymore. 
+Do you want to delete it?";
+
+DefinitionsNotLoaded = "The following files couldn't be loaded:";
+PromptResourcesCheckOut = "The resources files are read-only. Would you like the designer try
+to check out them automatically?";
+
+ResourcesFileReadOnly = "The CATNls/CATRsc resources files can't be written. Please unlock these files
+and retry the operation.";
+
+ResourceGenOnCreationError = "The CATNls/CATRsc resources files could not be created.
+The new file will be created without resource handling.";
+
+CheckOutFailed = "The resource file {0} could not be checked out. Please unlock the
+file and try to save the document again.";
+
+ResourceFileModified = "The Message Catalog file {0} has been modified by another editor.
+Would you like to reload the file from disk?";
+
+ResourceFileDeleted = "The Message Catalog file {0} has been deleted or renamed.
+Resources edition will be locked until the file is restored.
+Please solve the problem and reload the design document.";
+
+InvalidResourceValue = "Invalid resource value. A resource value can't finish with a '\' character.";
+
+//DSxDevIDDDesignerItf
+InvalidResourceFile="Invalid CATNls/CATRsc resource file. Operations impacting the resources
+files (resources edition, and widget's creation deletion and move) will be blocked
+until the resources files are corrected.";
+
+WorkSpaceInitialisationState = "Workspace not opened or not totally initialized.
+Please open the DSGen file in a workspace or wait a few seconds, the environment is being set up.";
+
+WorkSpaceInitialisationStart = "Please wait a few seconds, the Workspace environment is being set up."; 

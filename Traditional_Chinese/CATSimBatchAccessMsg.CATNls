@@ -1,0 +1,65 @@
+BatchAccess.InternalError="內部錯誤";
+BatchAccess.AlreadyRunning="執行已在此模擬上運行。請等待其結束或將其中止。";
+BatchAccess.SimuHasBeenLocked1="模擬已被鎖定 ";
+BatchAccess.SimuHasBeenLocked2=" 不能修改。";
+BatchAccess.NoAbortRequired="未執行模擬，無需中止。";
+BatchAccess.ErrorLaunchRemote="在遠程機器上不能啟動批處理，請檢查批處理服務器當前是否正在此機器上運行，并且您的機器可與其連接。";
+BatchAccess.AbortFailed="無法連接和終止批處理進程。模擬狀態已設置為“已中止”，批處理將無法保存其修改。如果批處理進程仍存在，請聯系您的管理員將其手動終止。";
+BatchAccess.CannotModifyTheSimulation="無法修改模擬。請確認您有權限修改它。";
+BatchAccess.NoLocalIn3DLive="3DLive 不支持本地執行。請換用遠程執行。";
+BatchAccess.AlreadyMonitored="模擬已被監視。";
+BatchAccess.CannotAbortLocalExecution="已本地啟動模擬，但只能從主機機器中止該模擬。";
+
+BatchMonitor.Notification.Title="模擬通知";
+BatchMonitor.BatchCompleted.Successfull="/P01 已成功在 /P02 上執行。\n\n要從數據庫訪問更新的結果，必須先關閉模擬和引用了正在模擬的產品的任何文檔窗口。重新打開模擬，以查看其結果。";
+BatchMonitor.BatchCompleted.Failed="/P01 已完成在 /P02 上的執行，但出現錯誤。\n\n要從數據庫訪問更新的結果，必須先關閉模擬和引用了正在進行模擬的產品的任何文檔窗口。重新打開模擬，以查看其診斷消息。";
+BatchMonitor.BatchCompleted.Aborted="/P02 上的 /P01 已中止。\n\n未對模擬做出任何更改。";
+BatchMonitor.BatchCompleted.License="由于許可證問題，/P02 上的 /P01 已停止。\n\n模擬狀態將顯示為正在運行，直至您手動中止模擬以重置其狀態。\n請咨詢您的系統管理員，以配置正確的許可證。";
+BatchMonitor.BatchCompleted.EV6Connection="由于不能連接到 ENOVIA VPM 數據庫，/P02 上的 /P01 已停止。\n\n模擬狀態將顯示為正在運行，直至您手動中止模擬以重置其狀態。";
+BatchMonitor.BatchCompleted.Unexpected="由于出現未知錯誤（返回代碼 \"/P03\"），/P02 上的 /P01 已停止。\n\n模擬狀態將顯示為正在運行，直至您手動中止模擬以重置其狀態。";
+BatchMonitor.BatchCompleted.NoReturnCode="由于出現未知錯誤，/P02 上的 /P01 已停止。\n\n模擬狀態將顯示為正在運行，直至您手動中止模擬以重置其狀態。";
+
+CATSimBatchMonitorCmd.Notification.Title="模擬狀態";
+CATSimBatchMonitorCmd.Notification.ProposeToMonitor="是否要監視此模擬？\n批處理結束時，將生成彈出項。";
+CATSimBatchMonitorCmd.Notification.StopMonitor="已監視此模擬。\n\n是否要停止對其監視？\n將不觸發此批處理的任何彈出項。";
+CATSimBatchMonitorCmd.Notification.NothingToMonitor="監視不可用。\n\n此模擬上未運行任何執行。";
+CATSimBatchMonitorCmd.Notification.CannotMonitor="監視不可用。\n\n只能從其執行主機上監視本地執行。";
+
+BatchMonitor.BatchCompleted.Successfull.Short="/P01 已在 /P02 上成功執行。";
+BatchMonitor.BatchCompleted.Successfull.Advice1="要訪問來自數據庫的更新結果，必須先關閉模擬和任何文檔";
+BatchMonitor.BatchCompleted.Successfull.Advice2="引用了正在模擬的產品的窗口。重新打開模擬，以查看其結果。";
+
+
+BatchMonitor.BatchCompleted.Failed.Short="/P01 已完成在 /P02 上的執行，但出現錯誤。";
+BatchMonitor.BatchCompleted.Failed.Advice1="要訪問來自數據庫的更新結果，必須先關閉模擬和任何文檔";
+BatchMonitor.BatchCompleted.Failed.Advice2="引用了正在模擬的產品的窗口。重新打開模擬，以查看其診斷消息。";
+
+BatchMonitor.BatchCompleted.Save.Short="/P01 已完成在 /P02 上的執行，但保存期間出錯。";
+BatchMonitor.BatchCompleted.Save.Advice1="模擬狀態將顯示為正在運行，直至您手動中止模擬以重置其狀態。";
+BatchMonitor.BatchCompleted.Save.Advice2="打開 HTML 報告，以查看保存錯誤。";
+
+
+BatchMonitor.BatchCompleted.Aborted.Short="/P02 上的 /P01 已中止。";
+BatchMonitor.BatchCompleted.Aborted.Advice1="未對模擬做出任何更改。";
+BatchMonitor.BatchCompleted.Aborted.Advice2="";
+
+
+BatchMonitor.BatchCompleted.License.Short="/P02 上的 /P01 已停止，因為出現許可證問題。";
+BatchMonitor.BatchCompleted.License.Advice1="模擬狀態將顯示為正在運行，直至您手動中止模擬以重置其狀態。";
+BatchMonitor.BatchCompleted.License.Advice2="請您的系統管理員配置正確的許可證。";
+
+
+BatchMonitor.BatchCompleted.EV6Connection.Short="// 3951 校正官方漢化P02 上的 /P01 已停止，因為它無法連接到 ENOVIA VPM 數據庫。";
+BatchMonitor.BatchCompleted.EV6Connection.Advice1="模擬狀態將顯示為正在運行，直至您手動中止模擬以重置其狀態。";
+BatchMonitor.BatchCompleted.EV6Connection.Advice2="";
+
+
+BatchMonitor.BatchCompleted.Unexpected.Short="/P02 上的 /P01 已停止，因為遇到未知錯誤。";
+BatchMonitor.BatchCompleted.Unexpected.Advice1="模擬狀態將顯示為正在運行，直至您手動中止模擬以重置其狀態。";
+BatchMonitor.BatchCompleted.Unexpected.Advice2="";
+
+
+
+
+
+

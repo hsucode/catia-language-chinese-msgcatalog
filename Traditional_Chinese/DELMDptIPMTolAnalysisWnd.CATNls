@@ -1,0 +1,71 @@
+
+Analysis = "Analysis";
+DesignNames="Design part : ";
+IPMNames="IPM part : ";
+TPSName = "Design Tolerances";
+TPSDesignValue = "Design 值";
+TPSInProcessValue ="計算d 值";
+TPSStatus = "狀態";
+ComputationMode="模式 :";
+WorstCase="Worst Case";
+StatisticalCase="Statistical";
+Compute = "計算";
+Limit = "Limit : ";
+NoDesignSelection = "No design part selected"; 
+NoIPMSelection = "No IPM part selected"; 
+
+DesignSelection.Help = "選擇a design product for分析";
+DesignSelection.ShortHelp = "Design part for分析";
+DesignSelection.LongHelp = "所有ows access to geometry for selecting the
+design product to be利用tolerance analysis.";
+
+Compute.Help = "計算 the tolerance分析";
+Compute.ShortHelp = "公差analysis計算";
+Compute.LongHelp = "開始s the tolerance analysis computation.";
+
+TPSIPMName = "Machining Tolerances";
+TPSIPMValue = "值";
+
+// 3951 校正官方漢化 Design part helps
+DesignEditor.Help = "Analyzed design part 名稱";
+DesignEditor.ShortHelp = "Design Part 名稱";
+DesignEditor.LongHelp = "Design part name which is利用tolerance analysis.
+Click on Design Selection button來選擇 another design product 
+or use contextual menu to reset Design選擇";
+
+// 3951 校正官方漢化 IPM part helps
+IPMEditor.Help = "Analyzed In-Process Model 名稱";
+IPMEditor.ShortHelp = "In-Process Model 名稱";
+IPMEditor.LongHelp = "In-Process Model name which is利用tolerance analysis.";
+
+// 3951 校正官方漢化 Limit Helps
+Limit.Help = "Limit 值";
+Limit.ShortHelp = "Limit 值";
+Limit.LongHelp = "設置s the limit value as一個percentage of the design 公差值. 
+The limit value determines the boundary between the desired tolerance range (green status) and 公差值s that may be too restrictive (light blue status).";
+
+// 3951 校正官方漢化 Design Multilist helps
+MultiList.Help = "列出 of analyzed design tolerances";
+MultiList.ShortHelp = "Analyzed Design Tolerances";
+MultiList.LongHelp = "顯示列表. of analyzed design tolerances 
+First column : analyzed design tolerance name and status
+Second column : analyzed design 公差值
+Third column : computed 公差值.
+Click on一個line to get the machining tolerance stack. The stack is displayed in the 3D viewer and listed in the machining tolerances list.
+Click anywhere in 列表. areas to display所有 tolerances again.";
+
+// 3951 校正官方漢化 IPM Multilist helps
+IPM.Help = "列出 of analyzed machining tolerances";
+IPM.ShortHelp = "Analyzed Machining Tolerances";
+IPM.LongHelp = "顯示列表. of analyzed machining tolerances
+First column : machining tolerance name
+Second column : machining 公差值
+Click on一個line to get the impacted design tolerances. Impacted design tolerances are displayed in Design viewer and listed in the design tolerances list above.
+Double-click on一個line to編輯公差值.";
+
+
+// 3951 校正官方漢化--Progress Bar Title and Comment 
+ProgressTaskUI.Title = "Computing Tolerance分析";
+ProgressTaskUI.ObjectName = "公差Analysis Computation Progress";
+
+

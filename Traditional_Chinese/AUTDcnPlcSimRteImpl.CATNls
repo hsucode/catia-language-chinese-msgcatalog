@@ -1,0 +1,70 @@
+AUTDcnPlcSimRteEngineName = "S7-PLCSIM";
+
+AUTDcnPlcSimRteErrTitle = "Siemens PlcSim Runtime Engine";
+
+AUTDcnPlcSimRteConnectionFailure =
+	"不能 connect runtime engine \"/P1\" with the Siemens PLC Simulator\n",
+	"Please, launch Siemens PLCSIM application and start一個new debug session.\n",
+	"/P2";
+
+AUTDcnPlcSimRteDataTransferFailure =
+	"Communication failure with the Siemens PLC Simulator\n",
+	"Please, check PLCSIM status and start一個new debug session.\n",
+	"/P1";
+	
+AUTDcnPlcSimRteResetCmdFailure =
+	"No response from the runtime when requested for reset.\n",
+	"Please, check PLCSIM status (RUN, STOP或 PAUSE).\n",
+	"/P1";
+
+AUTDcnPlcSimRteSetStateValueFailure = 
+	"不能 change PLCSIM state value. Please,\n",
+	"檢查 PLCSIM status and start一個new debug session.\n",
+	"/P1";
+
+AUTDcnPlcSimRteHwAddrMissing = 
+	"The hardware address of IO named \"/P1\" are missing in the runtime block\n",
+	"\"/P2\"!! Please, check your IOs hardware address workspace and start一個new simulation.\n",
+	"/P3";
+	
+AUTDcnPlcSimRteHwAddrSyntaxError = 
+	"Syntax error on hardware address \"/P1\" of IO named \"/P2\" in the runtime block\n",
+	"\"/P3\"!!. Please, check your IOs hardware address workspace and start一個new simulation.\n",
+	"/P4";
+
+AUTDcnPlcSimRteRunCmdFailure = 
+	"No response或 late response from the runtime when requested for running 1 cycle.\n",
+	"Please, check PLCSIM status (RUN, STOP或 PAUSE) else start一個new debug session.\n",
+	"/P1";
+	
+AUTDcnPlcSimRteBytecodeInconsistency =
+	"The bytecode ran in the PLC doesn't match with the current version of the LCM application block.\n",
+	"Please, rebuild the runtime and download it to the PLCSIM before starting一個new debug session.\n",
+	"/P1";
+
+AUTDcnPlcSimRteCycleTimeInconsistency =
+	"The 周期 value利用PLCSIM (/P2 ms) doesn't match with the current value set in\n",
+	"the runtime block \"/P1\" (/P3 ms). Please, rebuild this one and download it into PLCSIM before\n",
+	"restarting一個new debug session或 change the 周期 value in the \"/P1\" block's properties.\n",
+	"/P4";
+
+AUTDcnPlcSimRteInitControllerError = 
+	"Controller initialization failure!\n",
+	"/P1";
+	
+AUTDcnPlcSimRteCoCreateInstanceFailure =
+	"CoCreateInstance Failure - Acces to S7ProSim control has failed\n",
+	"/P1";
+
+AUTDcnPlcSimRteQueryInterfaceFailure = 
+	"QueryInterface Failure - Acces to IS7ProSim interface has failed\n",
+	"/P1";
+
+AUTDcnPlcSimRteCoInitializeFailure = 
+	"CoInitialize Failure - COM library is already initialized on this thread\n",
+	"/P1";
+
+AUTDcnPlcSimRteInternalHwAddrFailure = 
+	"構建ing of hardware addresses for application's\n",
+	"內部 variables in PLCSIM has failed\n",
+	"/P1";

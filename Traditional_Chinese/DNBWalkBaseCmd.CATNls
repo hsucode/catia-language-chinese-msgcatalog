@@ -1,0 +1,69 @@
+// 3951 校正官方漢化 Resource File for DNBWalkBaseCmd Class
+// 3951 校正官方漢化 English
+// 3951 校正官方漢化--------History------------------------------------------------------------
+// 3951 校正官方漢化 Author : lfrancis
+// 3951 校正官方漢化 Date : Jan 15 2002
+// 3951 校正官方漢化 Goal : Creation
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 DO不EDIT :: THE CAA2 WIZARD WILL REPLACE所有 CODE HERE
+
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 state diagram messages
+DNBWalkBaseCmd.statePickPrevious.Message = "選擇人體資源或先前任務/動作";
+DNBWalkBaseCmd.statePickWalkPlane.Message = "選擇Walk Plane/Area";
+DNBWalkBaseCmd.stateDisplayStartPointDlg.Message = "人體模型 is不on selected Walk Plane/Area.";
+DNBWalkBaseCmd.statePickStartPoint.Message = "Pick Start 點";
+DNBWalkBaseCmd.statePickNextPoint.Message = "Single-click to add point, Right click to end creation of Walk Path";
+DNBWalkBaseCmd.statePartRel.Message = "零件Relation";
+DNBWalkBaseCmd.stateEditMode.Message="Change Options或 Drag point to change Walk Path";
+DNBWalkBaseCmd.stateDisplayWalkDlg.Message="定義walk options in the dialog (or) Click Generate postures to generate walk (or) Cancel to exit";
+DNBWalkBaseCmd.stateDisplayWalkDlgEditMode.Message="Change options in the dialog (or) Click Generate postures to edit walk (or) Cancel to exit";
+
+
+ZerNotFeasible = " Avg Speed不能為Zero ";
+
+// 3951 校正官方漢化 start point dialog messages
+StartPtDlg.Title="開始 Point位置";
+StartPtDlg.Snap.Title="捕捉 to 平面";
+StartPtDlg.SelectPoint.Title="Pick一個start 點";
+StartPtDlg.Cancel.Title="放棄";
+StartPtDlg.DescLabel.Message="人體模型 is不on Walk Plane.";
+
+NoStartPoint選擇Title="No Start Point Selected";
+NoStartPoint選擇Message="Please pick一個Start Point for Walk"; 
+NoEndPoint選擇Title="No End Point Selected";
+NoEndPoint選擇Message="Please pick一個End Point for Walk"; 
+NoEndPointOrOptionsChanged.Title="No End Point selected或 Options changed";
+NoEndPointOrOptionsChanged.Message="Please pick一個new end point for change options to edit walk";
+
+
+// 3951 校正官方漢化 Warning Message
+NullStates.Title="構建 Graph 錯誤";
+NullStates.Message="Command States created in BuildGraph are NULL";
+NoDestPointPicked.Title = "行走 Activity不created";
+NoDestPointPicked.Message = "Insufficient points to define walk path.\n\n Need min of 2 points to define Walk Path";
+UnableToRetrieveResource.Title = "不能 retrieve 資源";
+UnableToRetrieveResource.Message = "不能 retrieve resource, Walk is不editable";
+UnableToRetrieveAttributes.Title = "不能 retrieve attributes";
+UnableToRetrieveAttributes.Message = "不能 retrieve attributes, for the mentioned walk";
+GetParamFromLengthFailed.Title = "不能 create walk";
+GetParamFromLengthFailed.Message = "不能 construct walk.\n\n內部錯誤: Getting parameter for given length failed";
+CreationOfCurveFailed.Title = "Creation of Curve Failed";
+CreationOfCurveFailed.Message = "Creation of Curve Failed";
+Atleast2PointsNeededToDefineCurve.Title = "警告:";
+Atleast2PointsNeededToDefineCurve.Message = "Atleast 2 Points are needed to define一個曲線";
+
+CollisionFreeCheck.Title= "碰撞錯誤";
+CollisionFreeCheck.Message="The selected point is colliding with物體";
+
+NoSucceedingMTP.Title = " 錯誤 ";
+NoSucceedingMTP.Message = " Does不have Bounding MoveToPosture Activity.\n
+The walk will不be created successfully.";
+
+Warning.NoSucceedingMTP.Title = " Warning ";
+Warning.NoSucceedingMTP.Message = " Does不have bounding MTP.\n
+初始狀態 of 人體模型will be taken as bounding MTP.";
+
+
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE

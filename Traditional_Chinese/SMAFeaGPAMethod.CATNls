@@ -1,0 +1,63 @@
+// Thermal Action
+Action.ApplyTemperature = "Apply Temperatures";
+
+Action.InitialContact = "Initial Contact Clearance";
+
+// initial conditions action
+Action.ApplyInitialConditions = "Apply Initial Conditions";
+
+// contact interference action
+Action.ApplyContactInterference = "Apply Contact Interference";
+
+// amplitude management
+Action.ManageAmplitudes = "Manage Amplitudes";
+
+// Field Output Request
+Action.FieldOutputRequest = "Define Field Output Requests";
+
+// Status
+// Comment out because it is not used.
+// Action.ApplyThermal.Status.ZeroTemperature.Tooltip="At least one temperature is absolute zero";
+
+// Review table generic feature
+ReviewTable.General.Column.Index="#";
+ReviewTable.General.Column.Name="Name";
+ReviewTable.General.Column.Support="Supports";
+ReviewTable.General.Column.Mag="Mag";
+ReviewTable.General.Column.Magnitude="Magnitude";
+ReviewTable.General.Column.Tx="Tx";
+ReviewTable.General.Column.Ty="Ty";
+ReviewTable.General.Column.Tz="Tz";
+ReviewTable.General.Column.Tu="Tu";
+ReviewTable.General.Column.Tv="Tv";
+ReviewTable.General.Column.Tw="Tw";
+ReviewTable.General.Column.Rx="Rx";
+ReviewTable.General.Column.Ry="Ry";
+ReviewTable.General.Column.Rz="Rz";
+ReviewTable.General.Column.Ru="Ru";
+ReviewTable.General.Column.Rv="Rv";
+ReviewTable.General.Column.Rw="Rw";
+ReviewTable.General.Column.Mass="Mass";
+ReviewTable.General.Column.I11="I11";
+ReviewTable.General.Column.I22="I22";
+ReviewTable.General.Column.I33="I33";
+ReviewTable.General.Column.I12="I12";
+ReviewTable.General.Column.I13="I13";
+ReviewTable.General.Column.I23="I23";
+ReviewTable.General.Column.Temperature="Temperature";
+ReviewTable.General.Column.Tied="Tied";
+ReviewTable.General.Column.Prop="Prop";
+ReviewTable.General.Column.Value="Value";
+
+//Select FEM Action 
+//(Cannot rely on defaults because underlying action is DefineMesh)
+Action.SelectFEM = "Select FEM";
+
+Action.SelectFEM.Status.Available.Tooltip="Select a Finite Element Model."; 
+Action.SelectFEM.Status.Unavailable.Tooltip="Select FEM is unavailable.";
+Action.SelectFEM.Status.Complete.Tooltip="Finite Element Model selected successfully"; 
+Action.SelectFEM.Status.Error.Tooltip="Error selecting Finite Element Model.";
+Action.SelectFEM.Status.Incomplete.Tooltip="Finite Element Model has not yet been selected.";
+
+// Initial Clearance
+SMAFeaClearanceField.RealValue.Label = "Clearance:";

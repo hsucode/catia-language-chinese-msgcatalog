@@ -1,0 +1,532 @@
+
+
+// 3951 校正官方漢化 ===========================================================================================
+// 3951 校正官方漢化 ===========================================================================================
+// 3951 校正官方漢化 ===========================================================================================
+
+Title="可生產性多重編輯";
+NoSelection.DisplayedText="";
+
+DlgEntityFrame.StrategyPointFrame.StrategyPointIndRB.Title="點指示 ";
+DlgEntityFrame.StrategyPointFrame.StrategyPointIndRB.Help="使您可以拾取現有的或沒有的點。";
+DlgEntityFrame.StrategyPointFrame.StrategyPointIndRB.ShortHelp="使您可以拾取現有的或沒有的點。";
+DlgEntityFrame.StrategyPointFrame.StrategyPointIndRB.LongHelp="使您可以在選定鋪層的邊界范圍內
+拾取現有的或沒有的點
+（換言之，您可以輕易地在想創建種子點的位置進行拾取）。";
+
+
+DlgEntityFrame.StrategyCurveFrame.StrategyCurveLabel.Title="引導曲線： ";
+DlgEntityFrame.DrapOrderFrame.DrapOrderLabel.Title="鋪層類型： ";
+
+DlgStrategyFrame.UnidirFrame.Title="單向模擬";
+DlgStrategyFrame.UnidirFrame.MaxShearFrame.MaxShearLbl.Title="最大剪切角度：";
+DlgStrategyFrame.UnidirFrame.MaxSpreadFrame.MaxSpreadLbl.Title="最大伸展度：       ";
+
+DlgStrategyFrame.ThckUpdateCB.Title="有厚度更新";
+DlgStrategyFrame.ThckUpdateCB.Help="使您可以使用以下參數更新厚度。";
+DlgStrategyFrame.ThckUpdateCB.ShortHelp="使您可以使用以下參數更新厚度。";
+DlgStrategyFrame.ThckUpdateCB.LongHelp="使您可以使用以下參數更新厚度：
+- 取樣范圍：取樣必需的深度。
+- 完全堆疊：當鋪層組定義于相同參考殼體上時使用此選項。
+- 僅鋪層組：當鋪層組定義于不同殼體時使用此選項，因為每一殼體只考慮定義于一組中的鋪層。";
+
+// 3951 校正官方漢化--------------------------------------------------------------------------------------------------------------
+// 3951 校正官方漢化 Ply Frame 
+// 3951 校正官方漢化--------------------------------------------------------------------------------------------------------------
+PlyFrame.FrmPlySel.PlyLabel.Title="選擇： ";
+PlyFrame.FrmPlySel.PlyLabel.Help="顯示想要分析可生產性的鋪層名或鋪層數。";
+PlyFrame.FrmPlySel.PlyLabel.ShortHelp="顯示想要分析可生產性的鋪層名或鋪層數。";
+PlyFrame.PlyLabel.LongHelp="顯示想要分析可生產性的鋪層名或鋪層數。可多選。";
+
+
+Column0Number="N?;
+Col1SeedPoint   = \"Point";
+Col2SeedCurve="曲線";
+Col3Region="區域";
+Col4PropType="拓展類型";
+Col5Activate="激活";
+
+DefaultValueInField="新扇形";
+DefaultNumberInField="*";
+
+StaggerValueInField="交錯點";
+StaggerNumberInField="*";
+AutomaticPointValueInField="自動點";
+AutomaticPointNumberInField="*";
+
+ClearCellContextualMenu="清除單元";
+ClearSectorContextualMenu="清除扇形";
+
+ActivationContextualMenu="激活";
+DeactivateContextualMenu="取消激活";
+IndicationOfActivation="是";
+IndicationOfDeactivation="否";
+
+DesignFrame.GeomRefFrm.GeomSelFrm.MoveSectorFrame.MoveUpSectorPB.Title="向上";
+DesignFrame.GeomRefFrm.GeomSelFrm.MoveSectorFrame.MoveUpSectorPB.Help="上移扇形。";
+DesignFrame.GeomRefFrm.GeomSelFrm.MoveSectorFrame.MoveUpSectorPB.ShortHelp="上移扇形。";
+DesignFrame.GeomRefFrm.GeomSelFrm.MoveSectorFrame.MoveDownSectorPB.Title="向下";
+DesignFrame.GeomRefFrm.GeomSelFrm.MoveSectorFrame.MoveDownSectorPB.Help="下移扇形。";
+DesignFrame.GeomRefFrm.GeomSelFrm.MoveSectorFrame.MoveDownSectorPB.ShortHelp="下移扇形。";
+
+
+// 3951 校正官方漢化 <test jek 18oct10>
+PlyFrame.Title="鋪層框架";
+PlyFrame.Help="幫助";
+PlyFrame.ShortHelp="簡短幫助";
+PlyFrame.LongHelp="詳細幫助";
+
+// 3951 校正官方漢化PlyFrame.FrmPlySel.PlyLabel.LongHelp="Ply label";
+Activate.LongHelp="鋪層標簽";
+ATT_1.LongHelp="外部1";
+ATT_2.LongHelp="外部2";
+Algo_1.LongHelp="外部點1";
+Algo_2.LongHelp="外部點2";
+
+PlyFrame.FrmMultiEditor.Title="";
+
+PlyFrame.Title="鋪層名稱";
+PlyLabel.Help="鋪層名稱幫助";
+
+CentralPoint.Title="生成點";
+CentralPoint.Help="生成點";
+CentralPoint.ShortHelp="生成點";
+CentralPoint.LongHelp="生成點";
+
+StaggerOrigin.Title="交錯原點";
+StaggerOrigin.Help="交錯原點";
+StaggerOrigin.ShortHelp="交錯原點";
+StaggerOrigin.LongHelp="交錯原點";
+
+OrganizeColumns.Title="組織列";
+ViewsConfigurations.Title="查看配置";
+AddSector.Title="添加扇形";
+DelSector.Title="刪除扇形";
+
+CentralPoint_Frame.Title="中心點";
+StaggerOrigin_Frame.Title="交錯原點";
+
+DisplayMgtFrame.Title="顯示管理器";
+SectorMgtFrame.Title="扇形管理器";
+PointGenerationFrame.Title="點生成";
+EditorTabPage.Title="編輯器";
+FilterTabPage.Title="過濾器";
+ActionTabPage.Title="工作指令";
+
+MaterialName_Frame.Title="材料";
+DirectionName_Frame.Title="方向";
+AutomaticPoint_Frame.Title="自動點";
+PropagationType_Frame.Title="拓展";
+FiberInit_Frame.Title="纖維初始化";
+SectorPropagationType_Frame.Title="扇形拓展";
+SectorFiberInit_Frame.Title="扇形纖維初始化";
+SectorIndex_Frame.Title="扇形索引";
+SectorActivation_Frame.Title="扇形激活";
+SeedPoint_Frame.Title="種子點";
+SeedCurve_Frame.Title="種子曲線";
+Region_Frame.Title="區域";
+Warp_Frame.Title="經向";
+Weft_Frame.Title="緯向";
+External_Frame.Title="合作伙伴";
+PlyName_Frame.Title="鋪層名稱";
+SpecialFilter_Frame.Title="過濾器";
+FrmMultiSel.Title="可生產性";
+Edition_Frame.Title="編輯";
+Filter_Frame.Title="過濾器";
+Action_Frame.Title="操作";
+
+
+
+PlyFrame.FrmMultiEditor.PlyName_Frame.Title="鋪層名稱";
+PlyFrame.FrmMultiEditor.PlyName_Frame.Help="鋪層名稱";
+PlyFrame.FrmMultiEditor.PlyName_Frame.ShortHelp="鋪層名稱";
+PlyFrame.FrmMultiEditor.PlyName_Frame.LongHelp="鋪層名稱";
+
+PlyFrame.FrmMultiEditor.PlyName_Frame.PlyName.Title="鋪層名稱";
+PlyFrame.FrmMultiEditor.PlyName_Frame.PlyName.Help="鋪層名稱";
+PlyFrame.FrmMultiEditor.PlyName_Frame.PlyName.ShortHelp="鋪層名稱";
+PlyFrame.FrmMultiEditor.PlyName_Frame.PlyName.LongHelp="鋪層名稱";
+
+PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.Title="拓展";
+PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.Help="拓展";
+PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.ShortHelp="拓展";
+PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.LongHelp="拓展";
+
+PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.SectorPropagationType.Title="拓展";
+PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.SectorPropagationType.Help="拓展";
+PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.SectorPropagationType.ShortHelp="拓展";
+PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.SectorPropagationType.LongHelp="拓展";
+
+PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.Title="邊界初始化";
+PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.Help="邊界初始化";
+PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.ShortHelp="邊界初始化";
+PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.LongHelp="邊界初始化";
+
+PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.SectorFiberInit.Title="邊界初始化";
+PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.SectorFiberInit.Help="邊界初始化";
+PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.SectorFiberInit.ShortHelp="邊界初始化";
+PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.SectorFiberInit.LongHelp="邊界初始化";
+
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.Title="種子點";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.Help="種子點";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.ShortHelp="種子點";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.LongHelp="種子點";
+
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.Title="種子點";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.Help="種子點";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.ShortHelp="種子點";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.LongHelp="種子點";
+
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.Title="種子點";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.Help="種子點";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.ShortHelp="種子點";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.LongHelp="種子點";
+
+
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.Title="種子曲線";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.Help="種子曲線";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.ShortHelp="種子曲線";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.LongHelp="種子曲線";
+
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.Title="種子曲線";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.Help="種子曲線";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.ShortHelp="種子曲線";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.LongHelp="種子曲線";
+
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.Title="種子曲線";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.Help="種子曲線";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.ShortHelp="種子曲線";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.LongHelp="種子曲線";
+
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.NoSelection="無選擇";
+
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.Edt.Title="種子曲線";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.Edt.Help="種子曲線";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.Edt.ShortHelp="種子曲線";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.Edt.LongHelp="種子曲線";
+
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.PushB.Title="種子曲線";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.PushB.Help="種子曲線";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.PushB.ShortHelp="種子曲線";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.PushB.LongHelp="種子曲線";
+
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.Vertex.Title="種子曲線 V";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.Vertex.Help="種子曲線 V";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.Vertex.ShortHelp="種子曲線 V";
+PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.Vertex.LongHelp="種子曲線 V";
+
+PlyFrame.FrmMultiEditor.Region_Frame.Title="區域";
+PlyFrame.FrmMultiEditor.Region_Frame.Help="區域";
+PlyFrame.FrmMultiEditor.Region_Frame.ShortHelp="區域";
+PlyFrame.FrmMultiEditor.Region_Frame.LongHelp="區域";
+
+PlyFrame.FrmMultiEditor.Region_Frame.Region.Title="區域";
+PlyFrame.FrmMultiEditor.Region_Frame.Region.Help="區域";
+PlyFrame.FrmMultiEditor.Region_Frame.Region.ShortHelp="區域";
+PlyFrame.FrmMultiEditor.Region_Frame.Region.LongHelp="區域";
+
+PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.Title="區域";
+PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.Help="區域";
+PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.ShortHelp="區域";
+PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.LongHelp="區域";
+
+
+PlyFrame.FrmMultiEditor.Region_Frame.Region.NoSelection="無選擇";
+PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.Edt.Title="區域";
+PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.Edt.Help="區域";
+PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.Edt.ShortHelp="區域";
+PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.Edt.LongHelp="區域";
+PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.PushB.Title="區域？";
+
+PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.PushB.Help="區域";
+PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.PushB.ShortHelp="區域";
+PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.PushB.LongHelp="區域";
+
+PlyFrame.FrmMultiEditor.Region_Frame.Region.Vertex="區域頂點";
+PlyFrame.FrmMultiEditor.Region_Frame.Region.Edge="區域邊線";
+PlyFrame.FrmMultiEditor.Region_Frame.Region.Face="區域面";
+
+
+PlyFrame.FrmMultiEditor.Warp_Frame.Title="經向";
+PlyFrame.FrmMultiEditor.Warp_Frame.Help="經向";
+PlyFrame.FrmMultiEditor.Warp_Frame.ShortHelp="經向";
+PlyFrame.FrmMultiEditor.Warp_Frame.LongHelp="經向";
+
+PlyFrame.FrmMultiEditor.Warp_Frame.Warp.Title="經向";
+PlyFrame.FrmMultiEditor.Warp_Frame.Warp.Help="經向";
+PlyFrame.FrmMultiEditor.Warp_Frame.Warp.ShortHelp="經向";
+PlyFrame.FrmMultiEditor.Warp_Frame.Warp.LongHelp="經向";
+
+PlyFrame.FrmMultiEditor.Weft_Frame.Title="緯向";
+PlyFrame.FrmMultiEditor.Weft_Frame.Help="緯向";
+PlyFrame.FrmMultiEditor.Weft_Frame.ShortHelp="緯向";
+PlyFrame.FrmMultiEditor.Weft_Frame.LongHelp="緯向";
+
+
+PlyFrame.FrmMultiEditor.Weft_Frame.Weft.Title="緯向";
+PlyFrame.FrmMultiEditor.Weft_Frame.Weft.Help="緯向";
+PlyFrame.FrmMultiEditor.Weft_Frame.Weft.ShortHelp="緯向";
+PlyFrame.FrmMultiEditor.Weft_Frame.Weft.LongHelp="緯向";
+
+
+PlyFrame.FrmPlySel.Title="鋪層選擇";
+PlyFrame.FrmPlySel.Help="幫助";
+PlyFrame.FrmPlySel.ShortHelp="簡短幫助";
+PlyFrame.FrmPlySel.LongHelp="詳細幫助";
+
+PlyFrame.FrmPlySel.PlySelector.Title="鋪層選擇";
+PlyFrame.FrmPlySel.PlySelector.Help="鋪層選擇";
+PlyFrame.FrmPlySel.PlySelector.ShortHelp="鋪層選擇";
+PlyFrame.FrmPlySel.PlySelector.LongHelp="鋪層選擇";
+
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.NoSelection="無選擇";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.Edt.Title="種子點";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.Edt.Help="種子點";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.Edt.ShortHelp="種子點";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.Edt.LongHelp="種子點";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.PushB.Title="Push_Title";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.PushB.Help="PushB_Fra";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.PushB.ShortHelp="ShortHelp_fra";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.PushB.LongHelp="LongHelp_fra";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.Vertex="Vertex_";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.Edge="Edge_";
+PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.Face="Face_";
+
+
+
+PlyFrame.DisplayFrame.ColumnButton.Title="過濾器列";
+PlyFrame.DisplayFrame.ColumnButton.Help="過濾器列";
+PlyFrame.DisplayFrame.ColumnButton.ShortHelp="過濾器列";
+PlyFrame.DisplayFrame.ColumnButton.LongHelp="過濾器列";
+
+PlyFrame.DisplayFrame.AddSectorButton.Title="添加扇形";
+PlyFrame.DisplayFrame.AddSectorButton.Help="添加扇形";
+PlyFrame.DisplayFrame.AddSectorButton.ShortHelp="添加扇形";
+PlyFrame.DisplayFrame.AddSectorButton.LongHelp="添加扇形";
+
+PlyFrame.DisplayFrame.DelSectorButton.Title="刪除扇形";
+PlyFrame.DisplayFrame.DelSectorButton.Help="刪除扇形";
+PlyFrame.DisplayFrame.DelSectorButton.ShortHelp="刪除扇形";
+PlyFrame.DisplayFrame.DelSectorButton.LongHelp="刪除扇形";
+
+PlyFrame.PointGenerationFrame.Title="生成點";
+PlyFrame.PointGenerationFrame.Help="生成點";
+PlyFrame.PointGenerationFrame.ShortHelp="生成點";
+PlyFrame.PointGenerationFrame.LongHelp="生成點";
+
+PlyFrame.PointGenerationFrame.CentralPoint_Frame.Title="生成點";
+PlyFrame.PointGenerationFrame.CentralPoint_Frame.Help="生成點";
+PlyFrame.PointGenerationFrame.CentralPoint_Frame.ShortHelp="生成點";
+PlyFrame.PointGenerationFrame.CentralPoint_Frame.LongHelp="生成點";
+
+PlyFrame.PointGenerationFrame.CentralPoint_Frame.CentralPoint.Title="生成點";
+PlyFrame.PointGenerationFrame.CentralPoint_Frame.CentralPoint.Help="生成點";
+PlyFrame.PointGenerationFrame.CentralPoint_Frame.CentralPoint.ShortHelp="生成點";
+PlyFrame.PointGenerationFrame.CentralPoint_Frame.CentralPoint.LongHelp="生成點";
+
+PlyFrame.PointGenerationFrame.CentralPointButton.Title="中心點";
+PlyFrame.PointGenerationFrame.CentralPointButton.Help="中心點";
+PlyFrame.PointGenerationFrame.CentralPointButton.ShortHelp="中心點";
+PlyFrame.PointGenerationFrame.CentralPointButton.LongHelp="中心點";
+
+
+PlyFrame.PointGenerationFrame.StaggerOriginButton.Title="交錯原點";
+PlyFrame.PointGenerationFrame.StaggerOriginButton.Help="交錯原點";
+PlyFrame.PointGenerationFrame.StaggerOriginButton.ShortHelp="交錯原點";
+PlyFrame.PointGenerationFrame.StaggerOriginButton.LongHelp="交錯原點";
+
+PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.Title="交錯原點";
+PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.Help="交錯原點";
+PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.ShortHelp="交錯原點";
+PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.LongHelp="交錯原點";
+
+PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.StaggerOrigin.Title="交錯原點";
+PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.StaggerOrigin.Help="交錯原點";
+PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.StaggerOrigin.ShortHelp="交錯原點";
+PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.StaggerOrigin.LongHelp="交錯原點";
+
+
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.BApply="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.BCancel="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.BClose="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.BHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.BOK="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.BPreview="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.Help="測試";
+
+
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_1_Frame.ATT_1.Help ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_1_Frame.ATT_1.LongHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_1_Frame.ATT_1.ShortHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_1_Frame.ATT_1.Title ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_1_Frame.Help ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_1_Frame.LongHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_1_Frame.ShortHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_1_Frame.Title ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_2_Frame.ATT_2.Help ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_2_Frame.ATT_2.LongHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_2_Frame.ATT_2.ShortHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_2_Frame.ATT_2.Title ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_2_Frame.Help ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_2_Frame.LongHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_2_Frame.ShortHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.ATT_2_Frame.Title ="TEST";
+
+
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.PlyName_Frame.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.PlyName_Frame.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.PlyName_Frame.PlyName.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.PlyName_Frame.PlyName.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.PlyName_Frame.PlyName.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.PlyName_Frame.PlyName.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.PlyName_Frame.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.PlyName_Frame.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.SectorFiberInit.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.SectorFiberInit.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.SectorFiberInit.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.SectorFiberInit.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorFiberInit_Frame.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.SectorPropagationType.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.SectorPropagationType.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.SectorPropagationType.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.SectorPropagationType.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SectorPropagationType_Frame.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Region_Frame.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Region_Frame.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Region_Frame.Region.FraEdt.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Region_Frame.Region.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Region_Frame.Region.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Region_Frame.Region.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Region_Frame.Region.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Region_Frame.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Region_Frame.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedCurve_Frame.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedCurve_Frame.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.FraEdt.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedCurve_Frame.SeedCurve.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedCurve_Frame.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedCurve_Frame.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedPoint_Frame.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedPoint_Frame.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.FraEdt.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedPoint_Frame.SeedPoint.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedPoint_Frame.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.SeedPoint_Frame.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Warp_Frame.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Warp_Frame.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Warp_Frame.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Warp_Frame.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Warp_Frame.Warp.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Warp_Frame.Warp.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Warp_Frame.Warp.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Warp_Frame.Warp.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Weft_Frame.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Weft_Frame.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Weft_Frame.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Weft_Frame.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Weft_Frame.Weft.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Weft_Frame.Weft.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Weft_Frame.Weft.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.FrmMultiEditor.Weft_Frame.Weft.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_1_Frame.Algo_1.Help="測試";
+
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_1_Frame.Algo_1.LongHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_1_Frame.Algo_1.ShortHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_1_Frame.Algo_1.Title ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_1_Frame.Help ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_1_Frame.LongHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_1_Frame.ShortHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_1_Frame.Title ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_2_Frame.Algo_2.Help ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_2_Frame.Algo_2.LongHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_2_Frame.Algo_2.ShortHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_2_Frame.Algo_2.Title ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_2_Frame.Help ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_2_Frame.LongHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_2_Frame.ShortHelp ="TEST";
+// 3951 校正官方漢化CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.Algo_2_Frame.Title ="TEST";
+
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.CentralPoint_Frame.CentralPoint.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.CentralPoint_Frame.CentralPoint.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.CentralPoint_Frame.CentralPoint.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.CentralPoint_Frame.CentralPoint.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.CentralPoint_Frame.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.CentralPoint_Frame.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.CentralPoint_Frame.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.CentralPoint_Frame.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.StaggerOrigin.Help="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.StaggerOrigin.LongHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.StaggerOrigin.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.StaggerOrigin.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.PointGenerationFrame.StaggerOrigin_Frame.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.ShortHelp="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.PlyFrame.Title="測試";
+CATFrmEditor1Decorator.ProducibilityMultiEditionDialog.Title="測試";
+
+BOK="確定";
+BApply="應用";
+BCancel="取消";
+BClose="關閉";
+BHelp="幫助";
+BPreview="預覽";
+Help="幫助";
+
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_1_Frame.ATT_1.Help ="TEST";
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_1_Frame.ATT_1.LongHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_1_Frame.ATT_1.ShortHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_1_Frame.ATT_1.Title ="TEST";
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_1_Frame.Help ="TEST";
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_1_Frame.LongHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_1_Frame.ShortHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_1_Frame.Title ="TEST";
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_2_Frame.ATT_2.Help ="TEST";
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_2_Frame.ATT_2.LongHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_2_Frame.ATT_2.ShortHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_2_Frame.ATT_2.Title ="TEST";
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_2_Frame.Help ="TEST";
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_2_Frame.LongHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_2_Frame.ShortHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.FrmMultiEditor.ATT_2_Frame.Title ="TEST";
+
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_1_Frame.Algo_1.Help ="TEST";
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_1_Frame.Algo_1.LongHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_1_Frame.Algo_1.ShortHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_1_Frame.Algo_1.Title="TEST";
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_1_Frame.Help ="TEST";
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_1_Frame.LongHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_1_Frame.ShortHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_1_Frame.Title ="TEST";
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_2_Frame.Algo_2.Help ="TEST";
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_2_Frame.Algo_2.LongHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_2_Frame.Algo_2.ShortHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_2_Frame.Algo_2.Title="TEST";
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_2_Frame.Help ="TEST";
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_2_Frame.LongHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_2_Frame.ShortHelp ="TEST";
+// 3951 校正官方漢化PlyFrame.PointGenerationFrame.Algo_2_Frame.Title ="TEST";

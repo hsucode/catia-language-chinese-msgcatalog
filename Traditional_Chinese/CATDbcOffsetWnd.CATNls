@@ -1,0 +1,69 @@
+// 3951 校正官方漢化 AUTHOR      :    gha
+// 3951 校正官方漢化 DATE        :    		Mar. 20 1998
+// 3951 校正官方漢化------------------------------------------------------------------------------
+// 3951 校正官方漢化 DESCRIPTION :    Resources File for NLS purpose related to LineUp  Window
+// 3951 校正官方漢化                  
+// 3951 校正官方漢化------------------------------------------------------------------------------
+// 3951 校正官方漢化 COMMENTS    :
+// 3951 校正官方漢化------------------------------------------------------------------------------
+// 3951 校正官方漢化MODIFICATIONS     user  date      purpose
+// 3951 校正官方漢化   HISTORY        ----  ----      -------
+// 3951 校正官方漢化     01           fgx   24.06.99  Nouvelle version de la commande
+// 3951 校正官方漢化------------------------------------------------------------------------------
+
+Title="排列";
+Help="為排列尺寸定義參數";
+
+_frameOffset._labelLength.Title="線性偏移： ";
+_frameOffset._editorLength.Help="輸入線性偏移值";
+_frameOffset._editorLength.LongHelp="定義參考和要對齊的尺寸
+之間的線性偏移值。";
+
+_frameOffset._labelAngle.Title="角偏移： ";
+_frameOffset._editorAngle.Help="輸入角偏移值";
+_frameOffset._editorAngle.LongHelp="定義參考和要對齊的尺寸
+之間的角偏移值。";
+
+_frameOptions._systemsOnly.Title="僅組織到系統中";
+_frameOptions._systemsOnly.LongHelp="僅組織到系統中
+僅將尺寸組織到系統中。
+不移動每個系統中的最小尺寸，
+也不移動無法組織到
+系統中的尺寸";
+
+_frameOffset._labelBaseOffset.Title="參考的偏移值： ";
+_frameOffset._labelBaseOffset.LongHelp="相對于參考的偏移值，
+適用于長度/距離/角度尺寸
+和半徑/直徑尺寸。";
+_frameOffset._spinnerBaseLength.LongHelp="相對于參考的偏移值，
+適用于長度/距離/角度尺寸。";
+_frameOffset._spinnerBaseAngle.LongHelp="相對于參考的偏移值，
+適用于半徑/直徑尺寸。";
+
+_frameOffset._labelOffset.Title="尺寸間的偏移： ";
+_frameOffset._labelOffset.LongHelp="尺寸間的偏移值，
+適用于長度/距離/角度尺寸
+和半徑/直徑尺寸。";
+_frameOffset._spinnerLength.LongHelp="尺寸間的偏移值，
+適用于長度/距離/角度尺寸。";
+_frameOffset._spinnerAngle.LongHelp="尺寸間的偏移值，
+適用于半徑/直徑尺寸。";
+
+_frameOptions._checkValStack.Title="對齊堆疊式尺寸值";
+_frameOptions._checkValStack.LongHelp="按組中最小的尺寸值對齊
+該組中所有的累積式尺寸值。";
+_frameOptions._checkValCumul.Title="對齊累積尺寸值";
+_frameOptions._checkValCumul.LongHelp="按組中最小的尺寸值對齊
+該組中所有的累積式尺寸值。";
+
+_systemsOnly.Title="僅將尺寸組織到系統中";
+_systemsOnly.LongHelp="僅將尺寸組織到系統中。
+不移動每個系統中的最小尺寸，
+也不移動無法組織到
+系統中的尺寸。";
+
+_frameOptions._frameFunnel._checkAutoFunnel.Title="自動添加一個尺寸線漏斗";
+_frameOptions._frameFunnel._checkAutoFunnel.LongHelp="在沒有尺寸線漏斗則
+無法正確顯示尺寸值時，
+自動添加一個尺寸線漏斗。";
+

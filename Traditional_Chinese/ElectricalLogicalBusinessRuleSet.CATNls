@@ -1,0 +1,100 @@
+ElectricalLogicalBusinessRuleSet.Alias="電氣邏輯資源";
+
+ElectricalLogicalBusinessRuleSet.Description="可以根據客戶的要求自定義鏈接命令 \ apis";
+
+LogicalPartCatalogs.Alias="收藏邏輯零件目錄";
+LogicalPartCatalogs.Description="允許聲明收藏邏輯部件目錄";
+
+LogicalPartCatalogChapters.Alias="收藏邏輯零件章節";
+LogicalPartCatalogChapters.Description="允許聲明收藏邏輯部件章節";
+
+LogicalSubTypeConnectorComp.Alias="連接器部件邏輯子類型";
+LogicalSubTypeConnectorComp.Description="邏輯子類型的離散字符串類型屬性值";
+LogicalSubTypeConnectorComp.SubTypeFilter.Alias="子類型過濾器";
+LogicalSubTypeConnectorComp.SubTypeFilter.Description="用于篩選子類型列表的值";
+
+LogicalSubTypeConnectorPort.Alias="連接器端口邏輯子類型";
+LogicalSubTypeConnectorPort.Description="邏輯子類型的離散字符串類型屬性值";
+LogicalSubTypeConnectorPort.SubTypeFilter.Alias="子類型過濾器";
+LogicalSubTypeConnectorPort.SubTypeFilter.Description="用于篩選子類型列表的值";
+
+LogicalSubTypePin.Alias="引腳邏輯子類型";
+LogicalSubTypePin.Description="邏輯子類型的離散字符串類型屬性值";
+LogicalSubTypePin.SubTypeFilter.Alias="子類型過濾器";
+LogicalSubTypePin.SubTypeFilter.Description="用于篩選子類型列表的值";
+
+LogicalSubTypeNet.Alias="網邏輯子類型";
+LogicalSubTypeNet.Description="邏輯子類型的離散字符串類型屬性值";
+LogicalSubTypeNet.SubTypeFilter.Alias="子類型過濾器";
+LogicalSubTypeNet.SubTypeFilter.Description="用于篩選子類型列表的值";
+
+LogicalSubTypeNetGroup.Alias="網組邏輯子類型";
+LogicalSubTypeNetGroup.Description="邏輯子類型的離散字符串類型屬性值";
+LogicalSubTypeNetGroup.SubTypeFilter.Alias="子類型過濾器";
+LogicalSubTypeNetGroup.SubTypeFilter.Description="用于篩選子類型列表的值";
+
+LogicalSubTypeWire.Alias="線邏輯子類型";
+LogicalSubTypeWire.Description="邏輯子類型的離散字符串類型屬性值";
+LogicalSubTypeWire.SubTypeFilter.Alias="子類型過濾器";
+LogicalSubTypeWire.SubTypeFilter.Description="用于篩選子類型列表的值";
+
+LogicalSubTypeCable.Alias="電纜邏輯子類型";
+LogicalSubTypeCable.Description="邏輯子類型的離散字符串類型屬性值";
+LogicalSubTypeCable.SubTypeFilter.Alias="子類型過濾器";
+LogicalSubTypeCable.SubTypeFilter.Description="用于篩選子類型列表的值";
+
+LogicalSubTypeHarness.Alias="線束邏輯子類型";
+LogicalSubTypeHarness.Description="邏輯子類型的離散字符串類型屬性值";
+LogicalSubTypeHarness.SubTypeFilter.Alias="子類型過濾器";
+LogicalSubTypeHarness.SubTypeFilter.Description="用于篩選子類型列表的值";
+
+LogicalSubTypeBusBar.Alias="總線邏輯子類型";
+LogicalSubTypeBusBar.Description="邏輯子類型的離散字符串類型屬性值";
+LogicalSubTypeBusBar.SubTypeFilter.Alias="子類型過濾器";
+LogicalSubTypeBusBar.SubTypeFilter.Description="用于篩選子類型列表的值";
+
+LogicalSubTypeCableGroup.Alias="電纜組邏輯子類型";
+LogicalSubTypeCableGroup.Description="邏輯子類型的離散字符串類型屬性值";
+LogicalSubTypeCableGroup.SubTypeFilter.Alias="子類型過濾器";
+LogicalSubTypeCableGroup.SubTypeFilter.Description="用于過濾子類型列表的值";
+
+ELE_ValidateAllocationHarness.Alias="驗證線束內容鏈接";
+ELE_ValidateAllocationHarness.Description="驗證線束到其內容的鏈接";
+ELE_ValidateAllocationHarness.ThisObject.Description="鏈接中的線束部件";
+ELE_ValidateAllocationHarness.Mode.Description="添加或移除模式";
+ELE_ValidateAllocationHarness.Owner.Description="定義鏈接的上下文";
+ELE_ValidateAllocationHarness.ActionList.Description="將要進行鏈接的電氣部件端點";
+ELE_ValidateAllocationHarness.ExistingList.Description="電氣部件端點已鏈接";
+
+ELE_ValidateAllocationNet.Alias="驗證網 \ 網組與線 \ 電纜間的關聯鏈接";
+ELE_ValidateAllocationNet.Description="驗證線 \ 電纜與網 \ 網組的關聯";
+ELE_ValidateAllocationNet.ThisObject.Description="鏈接中的網 \ 網組";
+ELE_ValidateAllocationNet.Mode.Description="添加或移除模式";
+ELE_ValidateAllocationNet.Owner.Description="定義鏈接的上下文";
+ELE_ValidateAllocationNet.ActionList.Description="將要進行鏈接的線 \ 電纜部件端點";
+ELE_ValidateAllocationNet.ExistingList.Description="線 \ 電纜部件端點已鏈接";
+
+ELE_ValidateAllocationPin.Alias="驗證保留引腳的鏈接";
+ELE_ValidateAllocationPin.Description="驗證保留一組引腳的鏈接";
+ELE_ValidateAllocationPin.ThisObject.Description="出現電氣部件定義引腳";
+ELE_ValidateAllocationPin.Mode.Description="添加或移除模式";
+ELE_ValidateAllocationPin.Owner.Description="定義鏈接的上下文";
+ELE_ValidateAllocationPin.ActionList.Description="將要進行鏈接的引腳部件端點";
+ELE_ValidateAllocationPin.ExistingList.Description="引腳部件端點已鏈接";
+
+ELE_ValidateGroupConductor.Alias="驗證電纜 \ 網和電纜 \ 線或網組 \ 網間的鏈接";
+ELE_ValidateGroupConductor.Description="驗證電纜 \ 網和電纜 \ 線或網組 \ 網中的鏈接";
+ELE_ValidateGroupConductor.ThisObject.Description="鏈接中的電纜 \ 網組";
+ELE_ValidateGroupConductor.Mode.Description="添加或移除模式";
+ELE_ValidateGroupConductor.Owner.Description="定義鏈接的上下文";
+ELE_ValidateGroupConductor.ActionList.Description="將要進行鏈接的電纜 \ 線或網組 \ 網部件端點";
+ELE_ValidateGroupConductor.ExistingList.Description="電纜 \ 線或網組 \ 網部件端點已鏈接";
+
+ELE_ValidateGroupConnector.Alias="驗證電氣端口間的鏈接";
+ELE_ValidateGroupConnector.Description="驗證從連接器端口到其他電氣端口的鏈接";
+ELE_ValidateGroupConnector.ThisObject.Description="鏈接中的連接器端口";
+ELE_ValidateGroupConnector.Mode.Description="添加或移除模式";
+ELE_ValidateGroupConnector.Owner.Description="定義鏈接的上下文";
+ELE_ValidateGroupConnector.ActionList.Description="將要進行鏈接的電氣端口";
+ELE_ValidateGroupConnector.ExistingList.Description="電氣端口已鏈接";
+

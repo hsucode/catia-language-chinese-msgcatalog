@@ -1,0 +1,89 @@
+// 3951 校正官方漢化 DO不EDIT :: THE CAA2 WIZARD WILL REPLACE所有 CODE HERE
+Title = "Track Trajectory";
+BOK = "生成姿勢";
+BCancel = "放棄";
+// 3951 校正官方漢化---------------------------------------------------------------------------
+// 3951 校正官方漢化 tabGeneral
+// 3951 校正官方漢化---------------------------------------------------------------------------
+// 3951 校正官方漢化--------------------------------------
+// 3951 校正官方漢化 tabGeneral - col 0
+// 3951 校正官方漢化--------------------------------------
+tabcontMain.tabGeneral.Title="通用";
+tabcontMain.tabGeneral.lblPickObject.Title="Pick對象";
+tabcontMain.tabGeneral.lblPickHand.Title="Picking手";
+tabcontMain.tabGeneral.lblPickObjDist.Title = "Object move distance   ";
+tabcontMain.tabGeneral.lblTrackMode.Title = "模式 of跟蹤        ";
+
+tabcontMain.tabGeneral.comboPickingHand.Help = "Picking手";
+tabcontMain.tabGeneral.comboPickingHand.ShortHelp = "Picking手";
+tabcontMain.tabGeneral.comboPickingHand.LongHelp = "Picking手";
+
+tabcontMain.tabGeneral.comboTrackMode.Help = "模式 of跟蹤";
+tabcontMain.tabGeneral.comboTrackMode.ShortHelp = "模式 of跟蹤";
+tabcontMain.tabGeneral.comboTrackMode.LongHelp = "模式 of跟蹤 - Walking或 Standing";
+
+// 3951 校正官方漢化--------------------------------------
+// 3951 校正官方漢化 tabGeneral - col 1
+// 3951 校正官方漢化--------------------------------------
+// 3951 校正官方漢化 comboPickedObject
+// 3951 校正官方漢化 --- to be filled when 用戶picks the Assembly Move activity
+
+// 3951 校正官方漢化 comboPickingHand
+comboPickingHand.RH="右側手";
+comboPickingHand.LH="左側手";
+comboPickingHand.RH_PRwith_LH="右側 Hand, Constraint with左側";
+comboPickingHand.LH_PRwith_RH="左側 Hand, Constraint with右側t";
+
+// 3951 校正官方漢化 editObjectMoveDistance
+// 3951 校正官方漢化 --- to be filled from _userOp.dObjMoveRes
+
+// 3951 校正官方漢化 comboTrackMode
+comboTrackMode.Standing="Standing";
+comboTrackMode.Walking="行走ing";
+
+
+// 3951 校正官方漢化---------------------------------------------------------------------------
+// 3951 校正官方漢化 tabWalkAttributes
+// 3951 校正官方漢化---------------------------------------------------------------------------
+// 3951 校正官方漢化  --- contents would be active only when "comboTrack模式" is "行走ing"
+// 3951 校正官方漢化--------------------------------------
+// 3951 校正官方漢化 tabWalkAttributes - col 0
+// 3951 校正官方漢化--------------------------------------
+tabcontMain.tabWalkAttributes.Title="行走 Attributes";
+tabcontMain.tabWalkAttributes.lblSplineFitTolerance.Title="Spline Points Separation ";
+tabcontMain.tabWalkAttributes.lblWalkType.Title="行走類型";
+tabcontMain.tabWalkAttributes.lblWalkPlane.Title="行走 平面";
+tabcontMain.tabWalkAttributes.lblSwing.Title = "Swing";
+tabcontMain.tabWalkAttributes.lblStride.Title = "Stride";
+
+// 3951 校正官方漢化--------------------------------------
+// 3951 校正官方漢化 tabWalkAttributes - col 1
+// 3951 校正官方漢化--------------------------------------
+// 3951 校正官方漢化 comboWalkType
+comboWalkType.Forward="Forward";
+comboWalkType.Backward="Backward";
+comboWalkType.SideStep="側邊 Step";
+
+// 3951 校正官方漢化 comboSwing
+// 3951 校正官方漢化 --- taken from WalkDlg.CATNls
+// 3951 校正官方漢化 --- swing to be filled based on "comboPickingHand"
+
+// 3951 校正官方漢化 comboStride
+// 3951 校正官方漢化 --- taken from WalkDlg.CATNls
+
+// 3951 校正官方漢化 editWalkPlane
+tabcontMain.tabWalkAttributes.editWalkPlane.Help = "行走 平面";
+tabcontMain.tabWalkAttributes.editWalkPlane.ShortHelp = "行走 平面";
+tabcontMain.tabWalkAttributes.editWalkPlane.LongHelp = "行走 平面";
+// 3951 校正官方漢化 --- to be filled from 用戶selection
+
+// 3951 校正官方漢化--------------------------------------
+// 3951 校正官方漢化 tabWalkAttributes - col 2
+// 3951 校正官方漢化--------------------------------------
+// 3951 校正官方漢化 buttonPickPlane
+tabcontMain.tabWalkAttributes.buttonPickPlane.Title = "Pick 平面";
+tabcontMain.tabWalkAttributes.buttonPickPlane.Help = "Pick 平面";
+tabcontMain.tabWalkAttributes.buttonPickPlane.ShortHelp = "Pick 平面";
+tabcontMain.tabWalkAttributes.buttonPickPlane.LongHelp = "\nPress this to pick walk 平面";
+
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE

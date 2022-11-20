@@ -1,0 +1,43 @@
+DeclareAliasRelationMissing.Request="錯誤消息，解析錯誤。";
+DeclareAliasRelationMissing.Diagnostic="[RELATIONDECLARATION]  塊中找不到 [NAVIGATES] 塊中使用的 /p1 [/p2,/p3]。";
+DeclareAliasRelationMissing.Advice="請檢查輸入。";
+
+RoleAggregation.Request="錯誤消息，解析錯誤。";
+RoleAggregation.Diagnostic="***錯誤*** 找到角色==聚合的關系 /p1 [/p2,/p3]。這是禁止的。";
+RoleAggregation.Advice="請檢查輸入。";
+
+RoleOwner.Request="錯誤消息，解析錯誤。";
+RoleOwner.Diagnostic="***錯誤*** 找到角色==所有者的關系 /p1 [/p2,/p3]。這是禁止的。";
+RoleOwner.Advice="請檢查輸入。";
+
+RoleInstOf.Request="錯誤消息，解析錯誤。";
+RoleInstOf.Diagnostic="***錯誤*** 找到角色===instOf 的關系 /p1 [/p2,/p3]。這是禁止的。";
+RoleInstOf.Advice="請檢查輸入。";
+
+AliasReDeclared.Request="錯誤消息，解析錯誤。";
+AliasReDeclared.Diagnostic="***錯誤*** [NODEDECLARATION] 塊中使用的名為 /p1 [/p2,/p3] 的別名先前已聲明，請使用另一個名稱。";
+AliasReDeclared.Advice="請檢查輸入。";
+
+SrAliasReDeclared.Request="錯誤消息，解析錯誤。";
+SrAliasReDeclared.Diagnostic="***錯誤*** [RELATIONDECLARATION] 塊中使用的名為“/p1 [/p2,/p3]”的序號別名先前已聲明，請使用另一個名稱。";
+SrAliasReDeclared.Advice="請檢查輸入。";
+
+IdentifierUsedPreviously.Request="錯誤消息，解析錯誤。";
+IdentifierUsedPreviously.Diagnostic="***錯誤*** [NAVIGATES] 塊中使用的標識符 /p1 [/p2,/p3] 先前在瀏覽中已使用。";
+IdentifierUsedPreviously.Advice="請使用另一個標識符。";
+
+IdentifierNeverUserBefore.Request="錯誤消息，解析錯誤。";
+IdentifierNeverUserBefore.Diagnostic="***錯誤*** [NAVIGATES] 塊中使用標識符 /p1 [/p2,/p3] 從未用于前一個瀏覽。";
+IdentifierNeverUserBefore.Advice="第 N (N>1) 個瀏覽的第 1 個標識符應是先前使用的別名。";
+
+SyntaxError.Request="錯誤消息，解析錯誤。";
+SyntaxError.Diagnostic="/p1";
+SyntaxError.Advice="";
+
+NavInGraphOptionsNotRecognized.Request="錯誤消息，解析錯誤。";
+NavInGraphOptionsNotRecognized.Diagnostic="/p1 [/p2,/p3] 應等于 CyclicityDetected 或 CyclicityNotDetected。";
+NavInGraphOptionsNotRecognized.Advice="";
+
+SrLoadingOptionsNotRecognized.Request="錯誤消息，解析錯誤。";
+SrLoadingOptionsNotRecognized.Diagnostic="/p1 [/p2,/p3] 應等于 CATPLMMLStandard 或 CATPLMLIntercalarySr";
+SrLoadingOptionsNotRecognized.Advice="";

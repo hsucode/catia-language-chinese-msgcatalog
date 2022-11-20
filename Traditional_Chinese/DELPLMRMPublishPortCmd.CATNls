@@ -1,0 +1,192 @@
+DELPLMRMPublishPortCmd.SelectElement.Message="選擇要發布的元素";
+DELPLMRMPublishPortCmd.UndoTitle="發布";
+
+Publication="發布";
+ComponentPublication="發布部件";
+Options="選項";
+Name="名稱";
+PortExtension="擴展";
+Status="狀態";
+Element="元素";
+
+// 3951 校正官方漢化 Init Message 
+// 3951 校正官方漢化 -----------------------------------------------------------------------------
+
+WarningEnv="警告。";
+Messages.WarningEnv="未在此窗口中識別任何有效的 ENOVIA 對象。\n 已取消操作";
+
+ErrorEnv="錯誤：創建 PLMObject 而不定義環境。";
+Messages.ErrorEnv="無法在不定義默認環境的情況下創建發布。\n 在使用 PLMObjects 隱式創建之前，先定義默認環境。";
+
+ErrorResourceRefRequired="錯誤：未定義資源。";
+Messages.ErrorResourceRefRequired="創建資源建模器發布需要與 PLM 環境中的展示關聯的資源參考定義。";
+
+// 3951 校正官方漢化 Publish Panel frames 
+// 3951 校正官方漢化 -----------------------------------------------------------------------------
+
+PublishFrame.Buttons.Create.Title="創建";
+PublishFrame.Buttons.Create.ShortHelp="新建發布";
+PublishFrame.Buttons.Create.LongHelp="通過指定用戶輸入名稱新建發布";
+
+PublishFrame.Buttons.Remove.Title="移除";
+PublishFrame.Buttons.Remove.ShortHelp="從列表中移除發布元素";
+PublishFrame.Buttons.Remove.LongHelp="從列表中移除發布元素";
+
+
+PublishFrame.Buttons.EditProperties.Title="編輯屬性";
+PublishFrame.Buttons.EditProperties.ShortHelp="編輯機械或控制端口的屬性";
+PublishFrame.Buttons.EditProperties.LongHelp="編輯機械或控制端口的屬性";
+
+
+PublishFrame.Buttons.Browse.Title="瀏覽...";
+PublishFrame.Buttons.Browse.ShortHelp="選擇由部件發布的元素";
+PublishFrame.Buttons.Browse.LongHelp="選擇由部件發布的元素";
+
+PublishFrame.Buttons.Options.Title="選項...";
+PublishFrame.Buttons.Options.ShortHelp="發布選項";
+PublishFrame.Buttons.Options.LongHelp="發布選項";
+
+PublishFrame.Buttons.Import.Title="導入...";
+PublishFrame.Buttons.Import.ShortHelp="從 .txt ascii 文件中導入發布名稱";
+PublishFrame.Buttons.Import.LongHelp="從 .txt ascii 文件中導入發布名稱";
+
+PublishFrame.Buttons.Export.Title="導出...";
+PublishFrame.Buttons.Export.ShortHelp="從 .txt ascii 文件中導出發布名稱";
+PublishFrame.Buttons.Export.LongHelp="從 .txt ascii 文件中導出發布名稱";
+
+PublishFrame.Buttons.Parameter.Title="參數...";
+PublishFrame.Buttons.Parameter.ShortHelp="發布對象的參數";
+PublishFrame.Buttons.Parameter.LongHelp="發布對象的參數";
+
+
+// 3951 校正官方漢化 Rename 
+// 3951 校正官方漢化 -----------------------------------------------------------------------------
+
+AskFeatRnmMsg="要在 /P2 中重命名 /P1 嗎？";
+AskFeatRnmTtl="重命名元素";
+AskFeatRnmTtl="重命名元素";
+
+// 3951 校正官方漢化 Status Tags 
+// 3951 校正官方漢化 ----------------------------------------------------
+PubOKTag="確定";
+PubNoFinalEltTag="沒有元素";
+PubNamePathBrokenTag="無部件";
+
+
+// 3951 校正官方漢化 Extension Tags 
+// 3951 校正官方漢化 ----------------------------------------------------
+NoRMExtension="";
+ControlPortExtension="控制端口";
+MechanicalPortExtension="機械端口";
+
+// 3951 校正官方漢化 Displayed feedback Messages 
+// 3951 校正官方漢化 ----------------------------------------------------
+PubUnknownNameTag="未知部件：/p";
+PublicationNameTag="/p1：/p2";
+
+PublishRenameReplaceTag="要創建發布，請選擇一個元素。要替換，請選擇一個列表行。不允許重命名。";
+
+RenameReplaceTag="若要替換元素，請選擇新元素。不允許重命名。";
+RenameTag="若要重命名：請選擇名稱單元，然后輸入新的名稱。";
+
+// 3951 校正官方漢化 Messages Pop Up replace 
+// 3951 校正官方漢化 -----------------------------------------------------------------------------
+ReplaceElementTitle="替換元素";
+Messages.ReplaceElementMessage="要用“/P1”替換發布元素嗎？";
+Messages.ReplaceGeometricNotAllowedMessage="禁止使用參數替換來自“/P1”的幾何元素。";
+Messages.ReplaceParameterNotAllowedMessage="禁止使用幾何元素替換來自“/P1”的參數。";
+
+
+EditMechanicalPort="編輯機械端口";
+EditControlPort="編輯控制端口";
+CreatePort="創建端口";
+
+// 3951 校正官方漢化 Dlg Notify Messages 
+// 3951 校正官方漢化 -----------------------------------------------------------------------------
+
+Messages.PublishCSOMessage="要為選定元素創建發布嗎？";
+
+Messages.PublishAlready="元素 /p 已具有關聯發布";
+
+Messages.PublishInvalidMsg="無法在 /p 上創建發布，
+請檢查： 
+- 對象有效性
+- 元素類型。";
+
+Messages.PublishVisuModeMsg="無法使用“重復”可視化類型的元素來創建發布，
+檢查： 
+- 包含此對象的零件的展示模式。";
+
+
+// 3951 校正官方漢化 Dlg Notify Error Messages 
+// 3951 校正官方漢化 -----------------------------------------------------------------------------
+Messages.CreateErrorMessage="嘗試創建元素時發生錯誤，
+無法創建此元素。 
+* 錯誤案例：無環境的情況下創建 PLM 對象：
+無法在沒有定義環境的情況下創建發布。
+在創建 PLM 對象前，請定義至少一個默認環境。
+* 錯誤案例：無效名稱：
+請檢查對象的名稱“/p”，若為以下情況，則非發布可用的有效名稱：
+- 空字符串，
+- 包含字符“！”或“：”或“<”或“>”，
+- 在字符串開頭或結尾擁有空白字符。 
+* 錯誤案例：其他：
+發布上下文，.... ";
+
+
+Messages.PublishErrorMessage="嘗試發布元素時發生錯誤，無法發布此元素。
+*  錯誤案例：創建 PLMObject 而不定義環境：
+無法在不定義環境的情況下創建發布。
+在使用 PLMObject 創建之前，至少定義一個默認環境。
+*  錯誤案例：名稱無效：
+檢查對象的名稱 '/p'，在以下情況可能對發布無效：
+- 為空字符串，
+- 包含以下字符：'!'、':'、'<' 或 '>'，
+- 字符串的開頭或結尾處包含空字符。
+*  錯誤案例：其他：
+發布上下文不正確，指向的對象無效，.... ";
+
+
+Messages.ReplaceErrorMessage="嘗試替換發布元素時發生錯誤
+檢查新指向的對象有效性。";
+
+Messages.ExportErrorMessage="內部錯誤：無法創建導出對話框";
+Messages.ImportErrorMessage="內部錯誤：無法創建導入對話框";
+
+
+// 3951 校正官方漢化 Publkication UI Panel / Information field 
+// 3951 校正官方漢化 -----------------------------------------------------------------------------
+
+// 3951 校正官方漢化Useless
+// 3951 校正官方漢化Messages.DatabaseSaveNotify=" will not be saved in database structure document.\nThis restriction concerns any publication of publication.";
+
+IsValidToPublishTag="可以發布“/p”元素。";
+PublishedByComponentTag="'/p1' 元素已具有通過 '/p2' 部件關聯的發布。";
+CannotBePublishedTag="無法在 '/p' 上創建發布。";
+IsPublishedTag="以名稱“/p2”發布元素“/p1”。";
+IsRemovedTag="已移除“/p”元素。"; // 3951 校正官方漢化Do not use '/p' since it is already done in the code.
+AreRemovedTag="已移除“/p”元素。"; // 3951 校正官方漢化Do not use '/p' since it is already done in the code.
+CreatePortTag="已創建 '/p1' 發布。";
+
+BrowsePublishTag="要創建發布：請選擇部件發布";
+ReplaceCanceled="已取消對“/p”元素的替換操作。";
+BrowseReplaceTag="若要替換元素：請選擇發布部件";
+
+RenameError="名稱“/p”已存在，\n 請輸入其他名稱。";
+
+RenameErrorCharacter="嘗試重命名元素時發生錯誤：
+名稱“/p”無效：
+- 名稱為空字符串；
+- 包含以下字符：'!' ！、：、< 或 >；
+- 字符串的開頭或結尾處包含空字符。";
+
+
+Messages.PublishRenameInVpmSession="警告：重命名發布可能會影響會話中未加載的指定文檔。
+可以使用“發布使用位置”工具來檢查受影響的文檔（如果已連接到數據庫）。";
+
+Messages.PublishRenameInContext="警告：重命名發布可能會影響上下文中未加載的指定文檔。";
+
+Messages.PublishRenameElementParameterExists="警告：已存在同名參數，無法重命名此參數";
+
+
+

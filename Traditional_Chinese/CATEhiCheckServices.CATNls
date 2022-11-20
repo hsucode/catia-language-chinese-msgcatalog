@@ -1,0 +1,39 @@
+// 3951 校正官方漢化 Branch Error Codes :-
+ERR_BR_ELEC_1.Text="分支沒有鏈接到單個段。";
+ERR_BR_ELEC_2.Text="未設置或未正確設置分支的 _EhiBranchableSet 屬性。應始終設置該屬性。若在 ElecCurve 上傳遞分支，則 ElecCurve 的父級和此屬性設置的值應相同。";
+ERR_BR_ELEC_3.Text="沒有將松弛擴展添加到此分支的 ElecCurve。";
+
+ERR_BR_GEO_1.Text="分支沒有鏈接到曲線（甚至外部曲線）";
+ERR_BR_GEO_2.Text="ElecRouteBody（分支集）內的分割數不等于此分支聚集的段數。";
+ERR_BR_GEO_3.Text="分支集內的 PointOnCurve 特征數（分支點）沒有實現該分支聚集的段數。分支點 \s 可能沒有被分支集聚集。";
+ERR_BR_GEO_4.Text="即使當 NoOfSegments == 1 時，也在 ElecRouteBody 中找到分割。";
+
+
+// 3951 校正官方漢化 Segment Error Codes :-
+ERR_SEG_ELEC_1.Text="段沒有鏈接到必須的兩個端點。";
+ERR_SEG_ELEC_2.Text="段端點具有相同展示。";
+ERR_SEG_ELEC_3.Text="沒有將段端點展示設置為段的 _ElecRoute 末端。";
+
+ERR_SEG_GEO_1.Text="沒有設置段的 _ElecRoute 屬性。";
+ERR_SEG_GEO_2.Text="段沒有鏈接到展示。";
+ERR_SEG_GEO_3.Text="將段 Elec_Diameter 與圓形半徑關聯的簡單關系有問題。";
+ERR_SEG_GEO_4.Text="對于分支，若 (noSegments ==1)，則 _ElecRoute 應為樣條線；若 (noSegments > 1)，則 _ElecRoute 應為 GSMSplit。";
+ERR_SEG_GEO_5.Text="段的分割沒有作為要剪切元素的分支展示。";
+ERR_SEG_GEO_6.Text="段分割沒有位于所有者分支的 ElecRouteBody 中。";
+ERR_SEG_GEO_7.Text="段展示的底層曲線沒有設置為其 _ElecRoute。";
+ERR_SEG_GEO_8.Text="沒有正確設置與屬性（ListProfiles、ListAngles、ListAxis）相關的一個或所有多輪廓。";
+ERR_SEG_GEO_9.Text="對于多輪廓，（ListProfiles、ListAngles、ListAxis）的尺寸不同。";
+ERR_SEG_GEO_10.Text="對于多輪廓，輪廓和角度字面值沒有被相應分支集聚集。";
+ERR_SEG_GEO_11.Text="即使設置了段展示，父分支的曲線在其傳遞線路中也少于 2 個點。";
+
+
+// 3951 校正官方漢化 Extremity Error Codes :-
+ERR_EXT_ELEC_1.Text="沒有設置端點的 _ElecRepresentation 屬性。";
+ERR_EXT_ELEC_2.Text="若屬性 _ExplicitLink 為“真”，則 _ElecJunctionLink 應設置為端點或 PLO。";
+ERR_EXT_ELEC_3.Text="即使當 Rep 為外部參考或端點具備顯式鏈接時，仍未設置端點的 _ElecJunctionLink 屬性";
+ERR_EXT_ELEC_4.Text="對于一個分支點處的端點，取消設置 _ExplictLink 或設置為“假”，并取消設置 _ElecJunctionLink。";
+ERR_EXT_ELEC_5.Text="相同分支的端點鏈接已存在。";
+ERR_EXT_ELEC_6.Text="在一個分支點處，有多個相同分支的端點指向該端點。";
+ERR_EXT_ELEC_7.Text="即使當此端點自身明確指向其他端點時，其他端點仍指向此端點。";
+
+ERR_EXT_GEO_1.Text="此端點處的分支點沒有參照傳遞點或相同分支的其他分支點。";

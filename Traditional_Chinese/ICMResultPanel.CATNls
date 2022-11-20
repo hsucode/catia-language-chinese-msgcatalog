@@ -1,0 +1,240 @@
+//Display
+Display.Title="顯示";
+Display.LongHelp="圖形區域中偏差值的切換顯示。";
+Display.ShortHelp="偏差的圖形顯示";
+
+//U+V
+UVDisplay.Title="U+V";
+UVDisplay.LongHelp="顯示曲線與曲面的 UV 向量。";
+UVDisplay.ShortHelp="顯示 UV 向量";
+
+
+//Moving Frame Type
+MFMDisplay.Title="MFT";
+MFMDisplay.LongHelp="顯示移動框架類型的局部坐標系。";
+MFMDisplay.ShortHelp="顯示移動框架類型";
+
+//Corner
+CornerDisplay.Title="圓角";
+CornerDisplay.LongHelp="顯示圓角操作器";
+CornerDisplay.ShortHelp="顯示圓角操作器";
+
+
+//Apply Modes
+FrameApplyModes.Title="應用模式";
+ApplyMode.Dynamic="動態";
+ApplyMode.Static="靜態";
+ApplyMode.None="無";
+ApplyMode.Preview="預覽";
+ApplyModeDisplay.LongHelp="編輯活動特征過程中的更新模式。
+- 動態 -
+  通過對話框中的滑塊移動操作器或編輯參數值時，動態更新特征。
+- 預覽 -
+  特征更新只發生在釋放操作器時。
+  但特征的結果將被動態繪制到屏幕上。
+- 靜態 -
+  特征更新只發生在釋放操作器時。
+- 無 -
+  特征更新只發生選擇“應用”按鈕時。";
+ApplyModeDisplay.ShortHelp="更新活動特征的模式";
+
+//Frame Deviation
+
+FrameDeviation.Title="偏差";
+FrameDeviation.LongHelp="已創建幾何圖形的偏差。";
+
+LabelG0.Title="G0： ";
+LabelG0.ShortHelp="G0 偏差";
+LabelG0.LongHelp="G0 偏差";
+LabelG1.Title="G1： ";
+LabelG1.ShortHelp="G1 偏差";
+LabelG1.LongHelp="G1 偏差";
+LabelG2.Title="G2： ";
+LabelG2.ShortHelp="G2 偏差";
+LabelG2.LongHelp="G2 偏差";
+LabelG3.Title="G3： ";
+LabelG3.ShortHelp="G3 偏差";
+LabelG3.LongHelp="G3 偏差";
+
+CheckButtonMax.Title="最大： ";
+CheckButtonMax.LongHelp="結果與選定元素之間的最大偏差。";
+CheckButtonMax.ShortHelp="最大偏差";
+
+CheckButtonMin.Title="最小： ";
+CheckButtonMin.LongHelp="結果與選定元素之間的最小偏差。";
+CheckButtonMin.ShortHelp="最小偏差";
+
+CheckButtonSide1G0.Title="側 1：G0： ";
+CheckButtonSide1G0.LongHelp="側 1 上計算的數學結果與實際結果的最大 G0 偏差。";
+CheckButtonSide1G0.ShortHelp="側 1 上的最大 G0 偏差";
+
+CheckButtonSide1G1.Title="側 1：G1： ";
+CheckButtonSide1G1.LongHelp="實際結果距側 1 上計算的數學結果的
+最大 G1 偏差。";
+CheckButtonSide1G1.ShortHelp="邊 1 上的最大 G1 偏差";
+
+CheckButtonSide2G0.Title="側 2：G0： ";
+CheckButtonSide2G0.LongHelp="側 2 上計算的數學結果與實際結果的最大 G0 偏差。";
+CheckButtonSide2G0.ShortHelp="邊 2 上的最大 G0 偏差";
+
+CheckButtonSide2G1.Title="側 2：G1： ";
+CheckButtonSide2G1.LongHelp="實際結果距側 2 上計算的數學結果的
+最大 G1 偏差。";
+CheckButtonSide2G1.ShortHelp="側 2 上的最大 G1 偏差";
+
+
+//in: Intersection Curve
+CheckButtonMaxIntersection.Title="最大相交： ";
+CheckButtonMaxIntersection.LongHelp="曲面曲線距非優先曲面的最大偏差。";
+CheckButtonMaxIntersection.ShortHelp="曲面曲線的最大偏差";
+CheckButtonMaxIntersectionApproximation.Title="最大相交和近似值： ";
+CheckButtonMaxIntersectionApproximation.LongHelp="計算曲面曲線和來自非優先曲面的近似 3D 曲線之間的
+最大偏差，顯示較高的偏差。";
+CheckButtonMaxIntersectionApproximation.ShortHelp="曲面曲線和近似 3D 曲線的最大偏差";
+
+
+//in: Patch from Curves
+LabelT1.Title="T1： ";
+LabelT1.LongHelp="如果選擇其他支持面，則顯示
+扭曲的偏差。";
+LabelT1.ShortHelp="扭曲偏差";
+
+
+//in: Fillet commands
+CheckButtonG0Fillet1.Title="圓角 1：G0： ";
+CheckButtonG0Fillet1.LongHelp="來自基礎曲面的圓角 1 的最大偏差。";
+CheckButtonG0Fillet1.ShortHelp="圓角 1 的最大偏差";
+
+CheckButtonG0Fillet2.Title="圓角 2：G0： ";
+CheckButtonG0Fillet2.LongHelp="來自基礎曲面的圓角 2 的最大偏差。";
+CheckButtonG0Fillet2.ShortHelp="圓角 2 的最大偏差";
+
+CheckButtonG0Fillet3.Title="圓角 3：G0： ";
+CheckButtonG0Fillet3.LongHelp="來自基礎曲面的圓角 3 的最大偏差。";
+CheckButtonG0Fillet3.ShortHelp="圓角 3 的最大偏差";
+
+CheckButtonG0Support1.Title="支持面 1：G0： ";
+CheckButtonG0Support1.LongHelp="來自支持面 1 的圓角曲面的最大偏差。";
+CheckButtonG0Support1.ShortHelp="來自支持面 1 的最大偏差";
+
+CheckButtonG0Support2.Title="支持面 2：G0： ";
+CheckButtonG0Support2.LongHelp="來自支持面 2 的圓角曲面的最大偏差。";
+CheckButtonG0Support2.ShortHelp="來自支持面 2 的最大偏差";
+
+CheckButtonG0Support3.Title="支持面 3：G0： ";
+CheckButtonG0Support3.LongHelp="來自支持面 3 的圓角曲面的最大偏差。";
+CheckButtonG0Support3.ShortHelp="來自支持面 3 的最大偏差";
+
+CheckButtonMaxSupport1.Title="最大支持面 1： ";
+CheckButtonMaxSupport1.LongHelp="來自支持面 1 的圓角曲面的最大偏差。";
+CheckButtonMaxSupport1.ShortHelp="來自支持面 1 的最大偏差";
+
+CheckButtonMaxSupport2.Title="最大支持面 2： ";
+CheckButtonMaxSupport2.LongHelp="來自支持面 2 的圓角曲面的最大偏差。";
+CheckButtonMaxSupport2.ShortHelp="來自支持面 2 的最大偏差";
+
+CheckButtonMaxInternal.Title="最大內部： ";
+CheckButtonMaxInternal.LongHelp="圓角曲面單元之間的最大內部偏差。";
+CheckButtonMaxInternal.ShortHelp="最大內部偏差";
+
+CheckButtonMaxLimit.Title="最大限制： ";
+CheckButtonMaxLimit.LongHelp="來自限制的圓角曲面的最大偏差。";
+CheckButtonMaxLimit.ShortHelp="來自限制的最大偏差";
+
+
+//in: Sweep
+Guide.Title="引導線： ";
+Guide.LongHelp="從原始引導線創建的掃瓊曲面的最大偏差。";
+Guide.ShortHelp="來自引導線的最大偏差";
+Guide2.Title="引導線 2： ";
+Guide2.LongHelp="從原始引導線 2 創建的掃瓊曲面的最大偏差。";
+Guide2.ShortHelp="來自引導線 2 的最大偏差";
+Profile.Title="輪廓： ";
+Profile.LongHelp="從原始輪廓創建的掃瓊曲面的最大偏差。";
+Profile.ShortHelp="來自輪廓的最大偏差";
+Surface.Title="曲面： ";
+Surface.LongHelp="來自原始曲面的所創建掃掠曲面的最大偏差。";
+Surface.ShortHelp="來自曲面的最大偏差";
+
+
+//in: Tubing
+Circle.Title="圓： ";
+Circle.LongHelp="來自一個精確圓的近似貝塞爾曲面的偏差。
+可通過分割來影響偏差。";
+Circle.ShortHelp="來精確圓的偏差";
+
+Reference.Title="參考： ";
+Reference.LongHelp="新創建的管道與參考幾何圖形之間的
+最大偏差。";
+Reference.ShortHelp="來自參考幾何圖形的偏差";
+
+
+//in: Create Gap
+GapDistance.Title="間隔距離： ";
+//GapDistance.LongHelp                              = "GapDistance.LongHelp";
+//GapDistance.ShortHelp                             = "GapDistance.ShortHelp";
+
+
+//in: Loft
+Guides.Title="引導線： ";
+Guides.LongHelp="引導曲線距其真實數學位置的最大偏差。";
+Guides.ShortHelp="引導曲線的最大偏差";
+Profiles.Title="輪廓： ";
+Profiles.LongHelp="輪廓曲線距其真實數學位置的最大偏差。";
+Profiles.ShortHelp="輪廓曲線的最大偏差";
+SupportG0.Title="支持面 G0： ";
+SupportG0.LongHelp="結果距曲面限制（由第一條和最后一條引導線和
+輪廓曲線定義的）上的支持曲面的最大 G0 偏差。";
+SupportG0.ShortHelp="來自曲面的最大 G0 偏差";
+SupportG1.Title="支持面 G1： ";
+SupportG1.LongHelp="結果距曲面限制（由第一條和最后一條引導線和
+輪廓曲線定義的）上的支持曲面的最大 G1 偏差。";
+SupportG1.ShortHelp="來自曲面的最大 G1 偏差";
+SupportG2.Title="支持面 G2： ";
+SupportG2.LongHelp="結果距曲面限制（由第一條和最后一條引導線和
+輪廓曲線定義的）上的支持曲面的最大 G2 偏差。";
+SupportG2.ShortHelp="來自曲面的最大 G2 偏差";
+SupportG3.Title="支持面 G3： ";
+SupportG3.LongHelp="結果距曲面限制（由第一條和最后一條引導線和
+輪廓曲線定義的）上的支持曲面的最大 G3 偏差。";
+SupportG3.ShortHelp="來自曲面的最大 G3 偏差";
+
+
+//in: Flat Region
+MaxDistance.Title="最大距離： ";
+MaxDistance.LongHelp="輸入元素與結果輸出幾何圖形之間的最大偏差。";
+MaxDistance.ShortHelp="來自輸出幾何圖形的最大偏差";
+
+
+//Frame Output Result
+FrameOutputResult.Title="輸出結果";
+FrameOutputResult.LongHelp="結果中最大階數和線段及單元數的顯示。";
+
+LabelMaxOrder.Title="最大階數： ";
+LabelMaxOrder.LongHelp="結果在 U 和 V 方向上的最大階數。";
+LabelMaxOrder.ShortHelp="U 和 V 中的最大階數";
+LabelOrdU.Title="U： ";
+LabelOrdU.ShortHelp="U 中的最大階數";
+LabelOrdV.Title="V： ";
+LabelOrdV.ShortHelp="V 中的最大階數";
+
+LabelMaxSegments.Title="每個單元的最大線段數： ";
+LabelMaxSegments.LongHelp="結果在 U 和 V 方向上的最大線段數。";
+LabelMaxSegments.ShortHelp="U 和 V 中的最大線段";
+LabelSegU.Title="U： ";
+LabelSegU.ShortHelp="U 中的最大線段數";
+LabelSegV.Title="V： ";
+LabelSegV.ShortHelp="V 中的最大線段數";
+
+LabelNoOfCells.Title="單元數： ";
+LabelNoOfCells.LongHelp="結果中創建的單元數（補面）。";
+LabelNoOfCells.ShortHelp="結果中的單元數";
+
+
+
+
+//konnte nicht zugeordnet werden
+Boundary.Title="邊界： ";
+CheckbuttonMaxOrder.Title="最大階數： ";
+FrameResult.Title="結果";
+Support.Title="支持面： ";

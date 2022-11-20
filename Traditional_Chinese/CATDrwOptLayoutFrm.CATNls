@@ -1,0 +1,69 @@
+// 3951 校正官方漢化=====================================================================================
+// 3951 校正官方漢化                                     CNEXT - CXR1
+// 3951 校正官方漢化                          COPYRIGHT DASSAULT SYSTEMES 1999 
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 FILENAME    :    CATDrwOptLayout
+// 3951 校正官方漢化 LOCATION    :    DraftingUI
+// 3951 校正官方漢化 AUTHOR      :    fgx
+// 3951 校正官方漢化 BUT         :    
+// 3951 校正官方漢化 DATE        :    06.01.1999
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 DESCRIPTION :    Tools/Option du Drafting - Onglet Layout
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 COMMENTS    :    
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 MODIFICATIONS     user  date        purpose
+// 3951 校正官方漢化    HISTORY        ----  ----        -------
+// 3951 校正官方漢化=====================================================================================
+
+Title="布局";
+
+frameView.HeaderFrame.Global.Title="創建視圖";
+frameView.HeaderFrame.Global.LongHelp=
+"創建視圖
+定義要創建視圖的構成元素。";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewName.Title="視圖名稱";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewName.LongHelp=
+"自動創建“視圖名稱”文本。";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewScale.Title="縮放系數";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewScale.LongHelp=
+"自動創建“縮放系數”文本。";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewFrame.Title="視圖框架";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewFrame.LongHelp=
+"顯示表示“視圖擴展”的框架。";
+frameView.IconAndOptionsFrame.OptionsFrame.checkGenPropa.Title="拓展局部視圖和剖面視圖的規格";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewOrient.Title="根據輪廓確定輔助視圖和剖視圖的方向";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewOrient.LongHelp="輔助視圖和剖視圖的方向
+與輪廓的方向相同。";
+frameView.IconAndOptionsFrame.OptionsFrame.checkStrictPos.Title="基于 3D 軸系的視圖軸系";
+frameView.IconAndOptionsFrame.OptionsFrame.checkStrictPos.LongHelp="將通過投影 3D 軸系定義
+視圖投影平面的坐標系。";
+
+frameSheet.HeaderFrame.Global.Title="新建圖紙";
+frameSheet.HeaderFrame.Global.LongHelp="定義創建新圖紙的參數。";        
+frameSheet.IconAndOptionsFrame.OptionsFrame.backgroundInSheetCBtn.Title="復制背景視圖";
+frameSheet.IconAndOptionsFrame.OptionsFrame.backgroundInSheetCBtn.LongHelp="定義是否將背景視圖復制到新圖紙中。";
+frameSheet.IconAndOptionsFrame.OptionsFrame.lblRefSheet.Title="源圖紙： ";
+frameSheet.IconAndOptionsFrame.OptionsFrame.lblRefSheet.LongHelp="為創建新圖紙定義圖紙模型。";
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameRefSheet._frameRefSheetlocked.firstSheetRBtn.Title="第一張圖紙";
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameRefSheet._frameRefSheetlocked.firstSheetRBtn.LongHelp="使用當前工程圖的第一張圖紙。";
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameRefSheet._frameRefSheetlocked.diskSheetRBtn.Title="其他工程圖";
+frameSheet.IconAndOptionsFrame.OptionsFrame._frameRefSheet._frameRefSheetlocked.diskSheetRBtn.LongHelp="瀏覽目錄，從任一存儲在磁盤上的工程圖獲取圖紙。";
+
+frameTitleBlock.HeaderFrame.Global.Title="背景視圖";
+frameTitleBlock.HeaderFrame.Global.LongHelp="背景視圖。";
+frameTitleBlock.IconAndOptionsFrame.OptionsFrame.FrameAndTitleBlockLabel.Title="框架和標題塊的目錄：";
+frameTitleBlock.IconAndOptionsFrame.OptionsFrame.FrameAndTitleBlockLabel.LongHelp="包含框架和標題塊樣式的目錄路徑";
+frameTitleBlock.IconAndOptionsFrame.OptionsFrame.FrameAndTitleBlockPath.Title="目錄";
+frameTitleBlock.IconAndOptionsFrame.OptionsFrame.FrameAndTitleBlockPath.LongHelp="包含框架和標題塊樣式的目錄路徑";
+frameTitleBlock.IconAndOptionsFrame.OptionsFrame.LockBackgroundView.Title="鎖定背景視圖訪問";
+frameTitleBlock.IconAndOptionsFrame.OptionsFrame.LockBackgroundView.LongHelp="用于鎖定背景視圖訪問";
+
+frameCallout.HeaderFrame.Global.Title="剖視圖/投影視圖標注";
+frameCallout.HeaderFrame.Global.LongHelp="剖視圖和投影視圖的標注創建模式。";
+frameCallout.IconAndOptionsFrame.OptionsFrame.lbl.Title="對于 V5R11 之前的工程圖：";
+frameCallout.IconAndOptionsFrame.OptionsFrame.lbl.LongHelp="以下選項適用于 V5R11 之前的工程圖";
+frameCallout.IconAndOptionsFrame.OptionsFrame.checkIndepSize.Title="大小不取決于視圖標度";
+frameCallout.IconAndOptionsFrame.OptionsFrame.checkIndepSize.LongHelp="標注的可視化大小
+不取決于視圖標度。";
+

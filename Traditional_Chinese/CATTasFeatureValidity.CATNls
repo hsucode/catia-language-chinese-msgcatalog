@@ -1,0 +1,457 @@
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化COPYRIGHT DASSAULT SYSTEMES 1999
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化=============================================================================
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化FILENAME: CATTasExplicitError.CATNls
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化=============================================================================
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 Sep. 2000  Creation                                                E. Sellem
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化=============================================================================
+Title.Error = "錯誤";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化Support
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+Feature.Support.Error.Request    = "Validity Check of Supports";
+Feature.Support.Error.Diagnostic = "Error creating /P01";
+Feature.Support.Error.Advice     = "";
+
+Feature.Support.1.Request    = "Validity Check of Supports";
+Feature.Support.1.Diagnostic = "/P01 is in conflict with /P03: two supports cannot be created on the same 點";
+Feature.Support.1.Advice     = "選擇 another 點";
+
+Feature.Support.11.Request    = "Validity Check of Supports";
+Feature.Support.11.Diagnostic = "The resource product referenced by /P01 has been deleted";
+Feature.Support.11.Advice     = "檢查 the links of your model";
+
+Feature.Support.12.Request    = "Validity Check of Supports";
+Feature.Support.12.Diagnostic = "At least one point referenced by /P01 has been deleted";
+Feature.Support.12.Advice     = "檢查 the links of your model";
+
+Feature.Support.14.Request    = "Validity Check of Supports";
+Feature.Support.14.Diagnostic = "At least one point referenced by a支持面has been deactivated";
+Feature.Support.14.Advice     = "Edit associated OpenBody and re-activate points";
+
+Feature.Support.15.Request    = "Validity Check of Supports";
+Feature.Support.15.Diagnostic = "At least one stiffness of /P01 has an invalid value (non-numeric, null或 negative)";
+Feature.Support.15.Advice     = "Edit this支持面and modify the invalid stiffness values";
+
+Feature.Support.16.Request    = "Validity Check of Supports";
+Feature.Support.16.Diagnostic = "you do不select your points yet";
+Feature.Support.16.Advice     = "rebuild your支持面by selecting a valid 點";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化StaticJoint
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+Feature.StaticJoint.Error.Request    = "Validity Check of Mechanical Joints";
+Feature.StaticJoint.Error.Diagnostic = "Error creating /P01";
+Feature.StaticJoint.Error.Advice     = "";
+
+Feature.StaticJoint.1.Request    = "Validity Check of Mechanical Joints";
+Feature.StaticJoint.1.Diagnostic = "/P01 is in conflict with /P03: two mechanical joints cannot be created on the same 點";
+Feature.StaticJoint.1.Advice     = "選擇 another 點";
+
+Feature.StaticJoint.2.Request    = "Validity Check of Mechanical Joints";
+Feature.StaticJoint.2.Diagnostic = "/P01 is in conflict with /P03: a mechanical joint and a fastener cannot be created on the same 點";
+Feature.StaticJoint.2.Advice     = "選擇 another 點";
+
+Feature.StaticJoint.3.Request =    "Validity Check of Mechanical Joints";
+Feature.StaticJoint.3.Diagnostic = "/P01 is in conflict with /P03: a mechanical joint and a contact cannot be created on the same 點";
+Feature.StaticJoint.3.Advice     = "選擇 another 點";
+
+Feature.StaticJoint.4.Request =    "Validity Check of Mechanical Joints";
+Feature.StaticJoint.4.Diagnostic = "The normal rotation cannot be fixed";
+Feature.StaticJoint.4.Advice     = "";
+
+Feature.StaticJoint.11.Request    = "Validity Check of Mechanical Joints";
+Feature.StaticJoint.11.Diagnostic = "At least one of the two products referenced by /P01 has been deleted";
+Feature.StaticJoint.11.Advice     = "檢查 the links of your model";
+
+Feature.StaticJoint.12.Request =    "Validity Check of Mechanical Joints";
+Feature.StaticJoint.12.Diagnostic = "The point referenced by /P01 has been deleted";
+Feature.StaticJoint.12.Advice     = "檢查 the links of your model";
+
+Feature.StaticJoint.14.Request    = "Validity Check of Mechanical Joints";
+Feature.StaticJoint.14.Diagnostic = "At least one point referenced by a mechanical joint has been deactivated";
+Feature.StaticJoint.14.Advice     = "Edit associated OpenBody and re-activate points";
+
+Feature.StaticJoint.15.Request    = "Validity Check of Mechanical Joints";
+Feature.StaticJoint.15.Diagnostic = "U and W vectors are parallel for /P01 mechanical joint";
+Feature.StaticJoint.15.Advice     = "Edit this mechanical joint and modify its方向";
+
+Feature.StaticJoint.16.Request    = "Validity Check of Mechanical Joints";
+Feature.StaticJoint.16.Diagnostic = "U and W vectors are不orhtogonal for /P01 mechanical joint";
+Feature.StaticJoint.16.Advice     = "Edit this mechanical joint and modify its方向";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化Contact
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+
+Feature.Contact.Error.Request    = "Validity Check of Contacts";
+Feature.Contact.Error.Diagnostic = "Error creating Contact";
+Feature.Contact.Error.Advice     = "";
+
+Feature.Contact.1.Request    = "Validity Check of Contacts";
+Feature.Contact.1.Diagnostic = "Conflict with a mechanical joint: a contact and a mechanical joint cannot be created on the same 點";
+Feature.Contact.1.Advice     = "選擇 another 點";
+
+Feature.Contact.2.Request =    "Validity Check of Contacts";
+Feature.Contact.2.Diagnostic = "Conflict with a fastener: a contact and a fastener cannot be created on the same 點";
+Feature.Contact.2.Advice     = "選擇 another 點";
+
+Feature.Contact.3.Request    = "Validity Check of Contacts";
+Feature.Contact.3.Diagnostic = "Conflict with a contact: two contacts cannot be created on the same 點";
+Feature.Contact.3.Advice     = "選擇 another 點";
+
+Feature.Contact.11.Request    = "Validity Check of Contacts";
+Feature.Contact.11.Diagnostic = "The first product referenced by a contact has been deleted";
+Feature.Contact.11.Advice     = "檢查 the links of your model";
+
+Feature.Contact.12.Request    = "Validity Check of Contacts";
+Feature.Contact.12.Diagnostic = "The second product referenced by a contact has been deleted";
+Feature.Contact.12.Advice     = "檢查 the links of your model";
+
+Feature.Contact.13.Request    = "Validity Check of Contacts";
+Feature.Contact.13.Diagnostic = "At least one point referenced by a contact has been deleted";
+Feature.Contact.13.Advice     = "檢查 the links of your model";
+
+Feature.Contact.14.Request    = "Validity Check of Contacts";
+Feature.Contact.14.Diagnostic = "At least one point referenced by a contact has been deactivated";
+Feature.Contact.14.Advice     = "Edit associated OpenBody and re-activate points";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-------------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化SpotFastening
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-------------
+Feature.SpotFastening.Error.Request    = "Validity Check of Fasteners";
+Feature.SpotFastening.Error.Diagnostic = "Error creating Fastener";
+Feature.SpotFastening.Error.Advice     = "";
+
+Feature.SpotFastening.1.Request =    "Validity Check of Fasteners";
+Feature.SpotFastening.1.Diagnostic = "Conflict with a mechanical joint: a fastener and a mechanical joint cannot be created on the same 點";
+Feature.SpotFastening.1.Advice     = "選擇 another 點";
+
+Feature.SpotFastening.2.Request =    "Validity Check of Fasteners";
+Feature.SpotFastening.2.Diagnostic = "Conflict with a fastener: two fasteners cannot be created on the same 點";
+Feature.SpotFastening.2.Advice     = "選擇 another 點";
+
+Feature.SpotFastening.3.Request =    "Validity Check of Fasteners";
+Feature.SpotFastening.3.Diagnostic = "Conflict with a contact: a fastener and a contact cannot be created on the same 點";
+Feature.SpotFastening.3.Advice     = "選擇 another 點";
+
+Feature.SpotFastening.11.Request =    "Validity Check of Fasteners";
+Feature.SpotFastening.11.Diagnostic = "At least one of the products referenced by a fastener has been deleted";
+Feature.SpotFastening.11.Advice     = "檢查 the links of your model";
+
+Feature.SpotFastening.12.Request =    "Validity Check of Fasteners";
+Feature.SpotFastening.12.Diagnostic = "At least one point referenced by a fastener has been deleted";
+Feature.SpotFastening.12.Advice     = "檢查 the links of your model";
+
+Feature.SpotFastening.14.Request    = "Validity Check of Fasteners";
+Feature.SpotFastening.14.Diagnostic = "At least one point referenced by a fastener has been deactivated";
+Feature.SpotFastening.14.Advice     = "Edit associated OpenBody and re-activate points";
+
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-------------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化PositionSys
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-------------
+Feature.PositionSys.Error.Request    = "Validity Check of Positioning Systems";
+Feature.PositionSys.Error.Diagnostic = "Error creating positioning system /P01";
+Feature.PositionSys.Error.Advice     = "Modify this positioning system";
+
+Feature.PositionSys.1.Request =    "Validity Check of Positioning Systems";
+Feature.PositionSys.1.Diagnostic = "At least two mechanical joints are identical in /P01";
+Feature.PositionSys.1.Advice     = "Modify this positioning system";
+
+Feature.PositionSys.11.Request =    "Validity Check of Positioning Systems";
+Feature.PositionSys.11.Diagnostic = "At least one mechanical joint has been deleted in /P01";
+Feature.PositionSys.11.Advice     = "Modify this positioning system";
+
+Feature.PositionSys.15.Request =    "Validity Check of Positioning Systems";
+Feature.PositionSys.15.Diagnostic = "The tightening value of at least one mechanical joint in /P01 is不valid";
+Feature.PositionSys.15.Advice     = "Modify this value";
+
+Feature.PositionSys.16.Request =    "Validity Check of Positioning Systems";
+Feature.PositionSys.16.Diagnostic = "The release value of at least one mechanical joint in /P01 is不valid";
+Feature.PositionSys.16.Advice     = "Modify this value";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-------------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化LinkFastCont
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-------------
+
+Feature.Link.Error.Request    = "Validity Check of Contact Links";
+Feature.Link.Error.Diagnostic = "Error creating contact link";
+Feature.Link.Error.Advice     = "";
+
+Feature.Link.1.Request =    "Validity Check of Contact Links";
+Feature.Link.1.Diagnostic = "The same contact point is specified twice";
+Feature.Link.1.Advice     = "Modify the Contact Link";
+
+Feature.Link.2.Request =    "Validity Check of Contact Links";
+Feature.Link.2.Diagnostic = "The contact is already used by another contact link";
+Feature.Link.2.Advice     = "Modify the Contact Link";
+
+Feature.Link.11.Request =    "Validity Check of Contact Links";
+Feature.Link.11.Diagnostic = "A contact referenced by a contact link has been deleted";
+Feature.Link.11.Advice     = "";
+
+Feature.Link.12.Request =    "Validity Check of Contact Links";
+Feature.Link.12.Diagnostic = "At least one contact has been deleted";
+Feature.Link.12.Advice     = "Modify the Contact Link";
+
+Feature.Link.13.Request    = "Validity Check of Contact Links";
+Feature.Link.13.Diagnostic = "At least one point referenced by a contact link has been delected";
+Feature.Link.13.Advice     = "檢查 the links of your model";
+
+Feature.Link.14.Request    = "Validity Check of Contact Links";
+Feature.Link.14.Diagnostic = "At least one point referenced by a contact link has been deactivated";
+Feature.Link.14.Advice     = "Edit associated OpenBody and re-activate points";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化TPSDeviation
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-----------
+
+Feature.TPSDeviation.Error.Request    = "Validity Check of 偏差";
+Feature.TPSDeviation.Error.Diagnostic = "Error creating偏差";
+Feature.TPSDeviation.Error.Advice     = "";
+
+Feature.TPSDeviation.1.Request =    "Validity Check of 偏差";
+Feature.TPSDeviation.1.Diagnostic = "Conflict with a Mechanical Joint: a 偏差  and a mechanical joint cannot be created on the same 點";
+Feature.TPSDeviation.1.Advice     = "選擇 another 點";
+
+Feature.TPSDeviation.2.Request =    "Validity Check of 偏差";
+Feature.TPSDeviation.2.Diagnostic = "Conflict with another Deviation: two deviations cannot be created on the same 點";
+Feature.TPSDeviation.2.Advice     = "選擇 another 點";
+
+Feature.TPSDeviation.3.Request =    "Validity Check of 偏差";
+Feature.TPSDeviation.3.Diagnostic = "Conflict with a Correlated Deviation: a 偏差  and a correlated 偏差  cannot be created on the same 點";
+Feature.TPSDeviation.3.Advice     = "選擇 another 點";
+
+Feature.TPSDeviation.4.Request =    "Validity Check of 偏差";
+Feature.TPSDeviation.4.Diagnostic = "The component referenced by a 偏差  is不valid";
+Feature.TPSDeviation.4.Advice     = "";
+
+Feature.TPSDeviation.5.Request =    "Validity Check of 偏差";
+Feature.TPSDeviation.5.Diagnostic = "The mechanical joint of a positioning system referenced by a 偏差  references another product";
+Feature.TPSDeviation.5.Advice     = "Choose another Positioning System";
+
+Feature.TPSDeviation.6.Request =    "Validity Check of 偏差";
+Feature.TPSDeviation.6.Diagnostic = "The positioning system has to be the same for all 偏差";
+Feature.TPSDeviation.6.Advice     = "Choose the same Positioning System";
+
+Feature.TPSDeviation.7.Request =    "Validity Check of 偏差";
+Feature.TPSDeviation.7.Diagnostic = "A position system referenced by a 偏差  is under-constrained";
+Feature.TPSDeviation.7.Advice     = "Modify the referenced position system";
+
+Feature.TPSDeviation.8.Request =    "Validity Check of 偏差";
+Feature.TPSDeviation.8.Diagnostic = "At least one annotation is不a偏差";
+Feature.TPSDeviation.8.Advice     = "";
+
+Feature.TPSDeviation.9.Request =    "Validity Check of 偏差";
+Feature.TPSDeviation.9.Diagnostic = "Two points are identical";
+Feature.TPSDeviation.9.Advice     = "選擇 another 點";
+
+Feature.TPSDeviation.11.Request =    "Validity Check of 偏差";
+Feature.TPSDeviation.11.Diagnostic = "At least one point referenced by a 偏差  has been deleted";
+Feature.TPSDeviation.11.Advice     = "檢查 the links of your model";
+
+Feature.TPSDeviation.12.Request =    "Validity Check of 偏差";
+Feature.TPSDeviation.12.Diagnostic = "At least one positioning system referenced by a 偏差  has been deleted";
+Feature.TPSDeviation.12.Advice     = "";
+
+Feature.TPSDeviation.14.Request    = "Validity Check of 偏差";
+Feature.TPSDeviation.14.Diagnostic = "At least one point referenced by a 偏差  has been deactivated";
+Feature.TPSDeviation.14.Advice     = "Edit associated OpenBody and re-activate points";
+
+Feature.TPSDeviation.15.Request =    "Validity Check of Correlated 偏差";
+Feature.TPSDeviation.15.Diagnostic = "文件 /P02 referenced by correlated 偏差  /P01 does不exist";
+Feature.TPSDeviation.15.Advice     = "檢查 文件路徑";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 -----------------------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 TPSDistancePtPt
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化------------------------
+
+Feature.TPSDistancePtPt.Error.Request    = "Validity Check of Point to Point Distance";
+Feature.TPSDistancePtPt.Error.Diagnostic = "Error creating point to point distance";
+Feature.TPSDistancePtPt.Error.Advice     = "";
+
+Feature.TPSDistancePtPt.1.Request =    "Validity Check of Point to Point Distance";
+Feature.TPSDistancePtPt.1.Diagnostic = "A product referenced by a point to point distance has been deleted";
+Feature.TPSDistancePtPt.1.Advice     = "檢查 the links of your model";
+
+Feature.TPSDistancePtPt.2.Request =    "Validity Check of Point to Point Distance";
+Feature.TPSDistancePtPt.2.Diagnostic = "A positioning system referenced by a point to point distance is不valid";
+Feature.TPSDistancePtPt.2.Advice     = "";
+
+Feature.TPSDistancePtPt.11.Request =    "Validity Check of Point to Point Distance";
+Feature.TPSDistancePtPt.11.Diagnostic = "The first point referenced by a point to point distance has been deleted";
+Feature.TPSDistancePtPt.11.Advice     = "檢查 the links of your model";
+
+Feature.TPSDistancePtPt.12.Request =    "Validity Check of Point to Point Distance";
+Feature.TPSDistancePtPt.12.Diagnostic = "The second point referenced by a point to point distance has been deleted";
+Feature.TPSDistancePtPt.12.Advice     = "檢查 the links of your model";
+
+Feature.TPSDistancePtPt.13.Request =    "Validity Check of Point to Point Distance";
+Feature.TPSDistancePtPt.13.Diagnostic = "A positioning system referenced by a point to point distance has been deleted";
+Feature.TPSDistancePtPt.13.Advice     = "";
+
+Feature.TPSDistancePtPt.14.Request    = "Validity Check of Point to Point Distance";
+Feature.TPSDistancePtPt.14.Diagnostic = "At least one point referenced by a point to point distance has been deactivated";
+Feature.TPSDistancePtPt.14.Advice     = "Edit associated OpenBody and re-activate points";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 -----------------------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 AnaGeomVariations
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化------------------------
+
+Feature.AnaGeomVariations.Error.Request    = "Validity Check of Analysis Geometric Variations";
+Feature.AnaGeomVariations.Error.Diagnostic = "Error creating Analysis Geometric Variations";
+Feature.AnaGeomVariations.Error.Advice     = "";
+
+Feature.AnaGeomVariations.1.Request =    "Validity Check of Analysis Geometric Variations";
+Feature.AnaGeomVariations.1.Diagnostic = "A product referenced by analysis geometric variation /P01 has been deleted";
+Feature.AnaGeomVariations.1.Advice     = "檢查 the links of your model";
+
+Feature.AnaGeomVariations.2.Request =    "Validity Check of Analysis Geometric Variations";
+Feature.AnaGeomVariations.2.Diagnostic = "The solution of analysis geometric variation /P01 is already used by another analysis geometric variation";
+Feature.AnaGeomVariations.2.Advice     = "Chose another solution";
+
+Feature.AnaGeomVariations.11.Request =    "Validity Check of Analysis Geometric Variations";
+Feature.AnaGeomVariations.11.Diagnostic = "A solution referenced by analysis geometric variation /P01 has been deleted";
+Feature.AnaGeomVariations.11.Advice     = "檢查 the links of your model";
+
+Feature.AnaGeomVariations.12.Request =    "Validity Check of Analysis Geometric Variations";
+Feature.AnaGeomVariations.12.Diagnostic = "文件 /P02 referenced by analysis geometric variation /P01 does不exist";
+Feature.AnaGeomVariations.12.Advice     = "Retrieve 文件 and relaunch computation";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 Analysis
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化
+Feature.Analysis.Error.Request    = "";
+Feature.Analysis.Error.Diagnostic = "內部Error";
+Feature.Analysis.Error.Advice     = "";
+
+Feature.Analysis.0.Request =    "Validity Check of Process";
+Feature.Analysis.0.Diagnostic = "內部Error";
+Feature.Analysis.0.Advice     = "";
+
+Feature.Analysis.1.Request =    "Validity Check of Process";
+Feature.Analysis.1.Diagnostic = "The item /P01 of activity /P02 is already used on the same activity";
+Feature.Analysis.1.Advice     = "";
+
+Feature.Analysis.2.Request =    "Validity Check of Process";
+Feature.Analysis.2.Diagnostic = "Process不Closed";
+Feature.Analysis.2.Advice     = "";
+
+Feature.Analysis.3.Request =    "Process to compute cannot be the root process";
+Feature.Analysis.3.Diagnostic = "The root process cannot be selected";
+Feature.Analysis.3.Advice     = "選擇 another activity";
+
+Feature.Analysis.4.Request =    "Validity Check of Items";
+Feature.Analysis.4.Diagnostic = "The item /P01 of activity /P02 is不valid";
+Feature.Analysis.4.Advice     = "";
+
+Feature.Analysis.5.Request =    "Validity Check of Process";
+Feature.Analysis.5.Diagnostic = "Stop activity is deleted";
+Feature.Analysis.5.Advice     = "";
+
+Feature.Analysis.6.Request =    "Validity Check of Process";
+Feature.Analysis.6.Diagnostic = "Start activity is deleted";
+Feature.Analysis.6.Advice     = "";
+
+Feature.Analysis.7.Request =    "Validity Check of Process";
+Feature.Analysis.7.Diagnostic = "/P01 is不valid";
+Feature.Analysis.7.Advice     = "";
+
+Feature.Analysis.8.Request =    "Validity Check of Process";
+Feature.Analysis.8.Diagnostic = "A cyclicity has been detected";
+Feature.Analysis.8.Advice     = "移除 the cyclicity";
+
+Feature.Analysis.9.Request =    "Input Geometric Defects Search";
+Feature.Analysis.9.Diagnostic = "No input geometric defect has been found";
+Feature.Analysis.9.Advice     = "Specify at least one geometric defects";
+
+Feature.Analysis.10.Request =    "Validity Check of Process";
+Feature.Analysis.10.Diagnostic = "/P01 of product /P02 is不valid";
+Feature.Analysis.10.Advice     = "檢查 the specifications of the product";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 -----------------------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 Tolerancing
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化------------------------
+
+Feature.TPSSet.TolerancesNotSupported.Request    = "Validity Check of Tolerances";
+Feature.TPSSet.TolerancesNotSupported.Diagnostic = "The following Tolerances are不supported: /P01";
+Feature.TPSSet.TolerancesNotSupported.Advice     = "Theses Tolerances will不be taken into account in the simulation";
+
+Feature.Tolerancing.Error.Request    = "Validity Check of Tolerances";
+Feature.Tolerancing.Error.Diagnostic = "內部Error checking Tolerances validity";
+Feature.Tolerancing.Error.Advice     = "";
+
+Feature.Tolerancing.1.Request    = "Validity Check of Tolerances";
+Feature.Tolerancing.1.Diagnostic = "The semantic of /P01 of product /P02 is不valid";
+Feature.Tolerancing.1.Advice     = "Analyze the tolerance semantic of the product";
+
+Feature.TolWithRef.Error.Request    = "Validity Check of Tolerances with reference frame";
+Feature.TolWithRef.Error.Diagnostic = "內部Error";
+Feature.TolWithRef.Error.Advice     = "";
+
+Feature.TolWithRef.1.Request    = "Validity Check of Tolerances";
+Feature.TolWithRef.1.Diagnostic = "/P01 has不the same reference frame than /P02";
+Feature.TolWithRef.1.Advice     = "使用the same reference frame";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 ------------------------------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 Creation / Edition of feature
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化-------------------------------
+
+Feature.WrongValueType.Numerical.Request    = "Invalid Value: /P01";
+Feature.WrongValueType.Numerical.Diagnostic = "This is不a numerical value";
+Feature.WrongValueType.Numerical.Advice     = "Edit and modify this value";
+
+Feature.WrongValueType.StrictPositive.Request    = "Invalid Value: /P01";
+Feature.WrongValueType.StrictPositive.Diagnostic = "This is不a positive and non-null value";
+Feature.WrongValueType.StrictPositive.Advice     = "Edit and modify this value";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 Gravity Feature
+Feature.TPSGravityAnnot.2.Request    = "Validity Check of Gravity Annotation";
+Feature.TPSGravityAnnot.2.Diagnostic = "Only one Gravity Annotation can be created in an annotation set";
+Feature.TPSGravityAnnot.2.Advice     = "Delete或 modify the existing one";
+
+Feature.TPSGravityAnnot.12.Request    = "Validity Check of Gravity Annotation";
+Feature.TPSGravityAnnot.12.Diagnostic = "At least one positioning system referenced by a gravity annotation has been deleted";
+Feature.TPSGravityAnnot.12.Advice     = "";
+
+Feature.TPSGravityAnnot.6.Request    = "Validity Check of Gravity Annotation";
+Feature.TPSGravityAnnot.6.Diagnostic = "Input deformation must be defined on this component to use gravity annotation ";
+Feature.TPSGravityAnnot.6.Advice     = "創建deviation或 correlated 偏差  on this component ";
+
+Feature.TPSGravityAnnot.7.Request =    "Validity Check of Gravity Annotation";
+Feature.TPSGravityAnnot.7.Diagnostic = "The positioning system has to be the same for all Annotation";
+Feature.TPSGravityAnnot.7.Advice     = "Choose the same Positioning System";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 -----------------------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 Activity
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化------------------------
+
+Feature.Activity.1.Request    = "Validity Check of Activity";
+Feature.Activity.1.Diagnostic = "The item /P02 assigned to activity /P01 is不valid";
+Feature.Activity.1.Advice     = "檢查 this item";
+
+Feature.Activity.2.Request    = "Validity Check of Activity";
+Feature.Activity.2.Diagnostic = "More than one gravity is defined for activity /P01";
+Feature.Activity.2.Advice     = "Choose the right gravity definition and unassign the others";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 -----------------------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 TPSBag
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化------------------------
+
+Feature.TPSBag.1.Request    = "Validity Check of Annotation Bag";
+Feature.TPSBag.1.Diagnostic = "圖元 /P01 has invalid type and cannot be present in /P02";
+Feature.TPSBag.1.Advice     = "移除 this element from Annotation Bag";
+
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 -----------------------
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化 TPSMorphing
+// 3951 校正官方漢化-3951 　吉林工業職業技術學院關興舉老師漢化　供學習使用 QQ : 57026862   潔凈精微漢化------------------------
+Feature.TPSMorphing.1.Request    = "Validity Check of Morhing Variations";
+Feature.TPSMorphing.1.Diagnostic = "At least one of the Morphing Displacements field file associated to a Digitized Morphing is missing";
+Feature.TPSMorphing.1.Advice     = "檢查 your Digitized Morphing Features, and replace the missing file";
+
+
+
+

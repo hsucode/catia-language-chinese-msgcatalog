@@ -1,0 +1,70 @@
+Initialisation.MappingInitialisation="無法初始化映射對象";
+Initialisation.GetMapEnvList="無法檢索映射環境的列表";
+Initialisation.GetInformation="無法檢索元數據 /p1 的信息";
+Initialisation.GetListOfMapTable="無法檢索環境 /p1 映射表列表";
+Initialisation.ListAvailableV4Env="無法檢索可用環境的列表";
+Initialisation.V4EnvNotFound="未找到環境 /p1";
+Initialisation.V4RepsNotFound="未找到環境 /p1 的展示列表";
+Initialisation.V4TableNotFound="在服務器上未找到表 /p1";
+Initialisation.RetrieveAttribute="無法檢索表 /p1 的屬性";
+Initialisation.RetrieveAttributeParse="無法解析對象 /p1 的屬性";
+
+Check.Version="映射中的版本定義不是最新定義";
+Check.ModelerHash="未在映射中定義建模器";
+Check.Metadata.Core="在目錄中找不到元數據 /p1";
+Check.Metadata.V6Env="在映射中未找到 V6 環境 /p1";
+Check.Metadata.CustoTable="在服務器上找不到對象 /p1。服務器上的映射將被移除";
+Check.Metadata.CustoAlias="找到不同的表別名。/p1 替換為 /p2";
+Check.Metadata.CoreType.V4Attribute="在服務器上未找到 VPMV4 屬性 /p1。此屬性的映射將被移除。";
+
+Migration.NothingToDo="無需遷移";
+Migration.ProviderError="提供程序初始化錯誤";
+Migration.NoFileOnServer="無法檢索服務器上的文件 /p1";
+Migration.NoExistingMapping="未找到現有映射文件 /p1";
+Migration.ExistingMapping="找到現有映射 /p1，已在服務器上創建名為 /p2 的恢復";
+Migration.ExistingMapping.Error="未創建恢復。手動創建或擦除現有的目標映射（文件 /p1）";
+Migration.Openess.Error="無法獲取 ENOVIAvpm 開放對象";
+Migration.MigratedMapping.Error="無法創建遷移的映射文件 /p1";
+Migration.MigratedMapping.Error2="無法檢索遷移的映射 xml";
+Migration.InitialiseMapping="內存中的映射對象已使用遷移的映射文件 /p1 初始化";
+Migration.InitialiseMapping.Error="無法使用遷移的映射初始化內存中的映射對象";
+Migration.WrongSourceMappingVersion.Error="源映射版本錯誤。僅版本 3 及更高版本支持遷移";
+Migration.MigrationResult="遷移的映射文件 /p1 已寫入服務器";
+Migration.RemoveMigrationEnv="移除無用的 V6 環境遷移";
+
+Erase.NoFile="沒有要擦除的文件";
+Erase.Resource="CATNls 文件 /p1 已刪除，狀態為 /p2\n，CATRsc 文件 /p3 已刪除，狀態為 /p4\n";
+Erase.ServerFile="服務器上的 /p3 /p1 已刪除，狀態為 /p2";
+Erase.Version.WrongPTF20="映射文件管理/映射生成：ENOVIAvpm PTF 版本錯誤。需要的最低級別為 VPM1.6PTF20";
+
+Generation.Authoring="元數據 /p2 已在 V6 環境 /p1 中設置為創作";
+Generation.RemoveV6Environment="V6 環境 /p1 已移除";
+Generation.Deletion="元數據 /p1 已移除，返回消息為 [/p2]";
+Generation.DefaultMetadata="默認元數據 /p1 已創建，返回消息為 [/p2]";
+Generation.DefaultCoretype="默認芯類型 /p1 已創建，返回消息為 [/p2]";
+Generation.BL.Path="業務邏輯將在路徑 [/p1] 中創建";
+
+Global.Error.vpmv4properties="無法檢索 ENOVIAvpm 屬性對象";
+Global.Error.vpmv4mapping="無法檢索 ENOVIAvpm 映射對象";
+Global.Error.vpmv4bridge="無法檢索 ENOVIAvpm 橋接對象";
+Global.Error.vpmv4cmd="無法檢索 ENOVIAvpm 命令對象";
+Global.Error.post="發布到服務器失敗";
+Global.Error.postAnswer="服務器響應錯誤";
+
+Error.Version.Title="ENOVIAvpm PTF 版本錯誤";
+Error.Version.WrongPTF20="映射文件管理/映射生成：\nENOVIAvpm PTF 版本錯誤。\n需要的最低級別為 VPM1.6PTF20";
+Error.Version.WrongPTF21="映射遷移：\nENOVIAvpm PTF 版本錯誤。\n需要的最低級別為 VPM1.6PTF21";
+Migration.InvalidLevel="無效的輸入級別：/p1";
+
+Global.GetMappingRsc="無法檢索映射資源對象實例";
+Global.GetMappingTool="無法檢索映射工具對象實例";
+
+ReportXML.EmptyMapping="XML 映射文件為空";
+ReportXML.EmptyOption="未執行任何可選操作";
+ReportXML.BuildBridge="從 XML 構建映射對象";
+ReportXML.BuildMetAndAdm="從映射對象創建元數據文件和管理";
+ReportXML.CacheBridge="將映射 xml 對象發送到 ENOVIAvpm 服務器";
+ReportXML.BuildResources="在目錄 /p1 和 /p2 中創建資源文件（CATNls 和 CATRsc）";
+ReportXML.ResultOK="執行成功，狀態為 [/p1]";
+ReportXML.ResultKO="執行失敗，狀態為 [/p1]";
+

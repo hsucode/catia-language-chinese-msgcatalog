@@ -1,0 +1,142 @@
+// 3951 校正官方漢化 DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+Title="蒙皮切換定義";
+FrameGeneral.FrameSurface.FrameList.MultiList.ColumnTitle1="否";
+FrameGeneral.FrameSurface.FrameList.MultiList.ColumnTitle2="交換";
+FrameGeneral.FrameSurface.FrameList.MultiList.ColumnTitle3="為";
+FrameGeneral.FrameSurface.FrameList.MultiList.ColumnTitle4="反轉法線";
+FrameGeneral.FrameSurface.FrameInvert.PushButtonInvert.Title="反轉";
+FrameGeneralSwap.FrameSwap.FrameSwapMode.Label011.Title="交換模式： ";
+FrameGeneralEnd.Frame010.Label017.Title="光順";
+FrameGeneralEnd.FrameSmooth.FrameSmoothingCont.Label018.Title="連續： ";
+FrameGeneralEnd.FrameSmooth.Frame035.FrameSmoothParam.Label020.Title="相切閥值： ";
+FrameGeneralEnd.FrameSmooth.Frame035.FrameSmoothParam.CheckButtonCurvatureActivity.Title="曲率閾值：";
+FrameGeneralEnd.FrameSmooth.Frame035.FrameSmoothParam.Label024.Title="最大偏差： ";
+FrameGeneralEnd.FrameSmooth.Frame035.FrameSimplif.CheckButtonSimplif.Title="拓撲簡化";
+FrameGeneralEnd.Frame030.CheckButtonInvertStackingOrder.Title="反轉堆疊順序";
+
+FrameGeneral.EntSelFrame.EntityLbl.Title=" 實體  ";
+
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE
+
+
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE
+
+// 3951 校正官方漢化 combo parm frame
+// 3951 校正官方漢化ParameterEditorSwapMode.combo
+// 3951 校正官方漢化 multi list
+YesInvert="是";
+NoInvert="否";
+
+// 3951 校正官方漢化 swap mode
+ProjectionSwappingMode="投影";
+ElevationSwappingMode="高程";
+UnfoldSwappingMode="展開";
+WrapCurveSwappingMode="包裹曲線";
+
+// 3951 校正官方漢化 smoothing
+NoSmoothingContinuity="無光順";
+ThresholdContinuity="閾值";
+PointContinuity="點";
+TangencyContinuity="相切";
+CurvatureContinuity="曲率";
+
+// 3951 校正官方漢化 long Help
+FrameGeneral.FrameSurface.FrameList.MultiList.LongHelp="顯示不同的曲面。";
+
+FrameGeneral.FrameSurface.FrameInvert.PushButtonInvert.LongHelp="反轉鋪層方向，使其與以前定義的方向一致 ";
+
+FrameGeneralSwap.FrameSwap.FrameSwapMode.LongHelp="投影：實施垂直于目標曲面的投影。
+高程：實施垂直于原始曲面的投影。
+展開：";
+
+FrameGeneralEnd.FrameSmooth.FrameSmoothingCont.LongHelp="通過選取以下選項，為光順指定更正模式：
+不光順：不實施光順。
+閾值：考慮切線或曲率閾值選項。
+點：不保留任何點不連續。
+相切：不保留任何相切不連續。
+曲率：不保留任何曲率不連續。";
+
+FrameGeneralEnd.FrameSmooth.Frame035.FrameSmoothParam.Label020.LongHelp="指定當相切不連續低于該值時對曲線進行光順。";
+FrameGeneralEnd.FrameSmooth.Frame035.FrameSmoothParam.ParameterEditorTangency.LongHelp="指定當相切不連續低于該值時對曲線進行光順。";
+
+FrameGeneralEnd.FrameSmooth.Frame035.FrameSmoothParam.CheckButtonCurvatureActivity.LongHelp="指定當曲率不連續高于該值時對曲線進行光順。";
+FrameGeneralEnd.FrameSmooth.Frame035.FrameSmoothParam.ParameterEditorCurvature.LongHelp="指定當曲率不連續高于該值時對曲線進行光順。";
+
+FrameGeneralEnd.FrameSmooth.Frame035.FrameSmoothParam.Label024.LongHelp="指定管半徑，結果必須包含在此管內。";
+FrameGeneralEnd.FrameSmooth.Frame035.FrameSmoothParam.ParameterEditor025.LongHelp="指定管半徑，結果必須包含在此管內。";
+
+FrameGeneralEnd.FrameSmooth.Frame035.FrameSimplif.CheckButtonSimplif.LongHelp="允許通過刪除連續頂點來簡化輸出拓撲。";
+
+FrameGeneralEnd.Frame030.CheckButtonInvertStackingOrder.LongHelp="指定以在交換期間反轉鋪層順序。";
+
+
+// 3951 校正官方漢化 for wrap curve
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Title="曲線";
+FrameGeneralWrap.TabContainer015.CurvesTabPage.LongHelp="指定參考曲線、目標曲線
+和對包裹曲線曲面結果的約束。";
+
+// 3951 校正官方漢化 number of the selected elements
+NumberColumnTitle="否";
+
+RefColumnTitle="參考";
+TargetColumnTitle="目標";
+
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame006.LongHelp="指定參考曲線和目標曲線。
+參考曲線不能互相交叉。
+目標曲線不能互相交叉。";
+
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame006.Frame009.PushButtonRemove.Title="移除";
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame006.Frame009.PushButtonRemove.LongHelp="允許移除所選參考曲線和目標曲線對。";
+
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame006.Frame009.PushButtonInsert.Title="之前插入";
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame006.Frame009.PushButtonInsert.LongHelp="允許在所選曲線之前插入參考曲線。";
+
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame047.Frame070.LabelRefCurve.Title="參考： ";
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame047.Frame070.LongHelp="指定參考曲線。";
+
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame047.Frame068.CheckButtonRefCurve.Title="固定參考曲線";
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame047.Frame068.CheckButtonRefCurve.LongHelp="指定所選參考曲線是否固定，
+即沒有任何目標曲線與它相關聯。";
+
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame047.FrameTargetCurve.Label013.Title="目標： ";
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame047.FrameTargetCurve.LongHelp="指定目標曲線。";
+
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame049.Label051.Title="當前曲線： ";
+
+NoneKeepTitle="無";
+TangencyKeepTitle="保留相切";
+CurvatureKeepTitle="保留曲率";
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame059.Label061.Title="約束";
+
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame062.Label063.Title="對起始曲線： ";
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame062.Label064.Title="對結束曲線： ";
+FrameGeneralWrap.TabContainer015.CurvesTabPage.Frame004.Frame062.LongHelp="指定對結果變形曲面、
+起始曲線和結束曲線的約束：
+- 無：沒有任何約束，
+- 保留相切：變形曲面的相切
+與起始曲線和/或結束曲線處的
+原始曲面相同，
+- 保留曲率：變形曲面的相切和曲率
+與起始曲線和/或結束曲線處的
+原始曲面相同。";
+
+FrameGeneralWrap.TabContainer015.ReferenceTabPage.Title="參考";
+
+FrameGeneralWrap.TabContainer015.ReferenceTabPage.Frame018.CheckButtonRefSpine.Title="與第一參考曲線相同";
+FrameGeneralWrap.TabContainer015.ReferenceTabPage.Frame018.CheckButtonRefSpine.LongHelp="指定脊線與第一參考曲線相同。";
+
+FrameGeneralWrap.TabContainer015.ReferenceTabPage.Frame018.Frame022.LabelSpine.Title="脊線： ";
+FrameGeneralWrap.TabContainer015.ReferenceTabPage.Frame018.Frame022.LongHelp="指定用戶定義的脊線。";
+
+FrameGeneralWrap.TabContainer015.ReferenceTabPage.Frame019.CheckButtonRefDir.Title="經過計算所得的";
+FrameGeneralWrap.TabContainer015.ReferenceTabPage.Frame019.CheckButtonRefDir.LongHelp="指定由 CATIA 計算所得的投影方向";
+
+FrameGeneralWrap.TabContainer015.ReferenceTabPage.Frame019.Frame071.RadioAutoDir.Title="已計算";
+FrameGeneralWrap.TabContainer015.ReferenceTabPage.Frame019.Frame071.RadioNormalDir.Title="常規";
+FrameGeneralWrap.TabContainer015.ReferenceTabPage.Frame019.Frame071.RadioNormalDirInv.Title="法線（反轉）";
+
+FrameGeneralWrap.TabContainer015.ReferenceTabPage.Frame019.Frame025.Label026.Title="方向： ";
+FrameGeneralWrap.TabContainer015.ReferenceTabPage.Frame019.Frame025.LongHelp="指定用戶定義的投影方向。";
+
+FrameGeneralWrap.TabContainer015.ReferenceTabPage.Frame052.Label054.Title="脊線";
+FrameGeneralWrap.TabContainer015.ReferenceTabPage.Frame056.Label058.Title="投影方向";

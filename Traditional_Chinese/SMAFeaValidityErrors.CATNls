@@ -1,0 +1,320 @@
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Error messages for the Validity
+// 3951 校正官方漢化
+
+ERR_WRONG_SUPPORT.Request="支持面定義錯誤。";
+ERR_WRONG_SUPPORT.Diagnostic="/P01 的支持面定義不正確。";
+ERR_WRONG_SUPPORT.Advice="檢查選定支持面的數量和類型。";
+
+ERR_WRONGSUPPORT_NB.Request="支持面定義錯誤。";
+ERR_WRONGSUPPORT_NB.Diagnostic="/P01 的支持面數量不正確。";
+
+ERR_WRONGSUPPORT_TYPE.Request="支持面定義錯誤。";
+ERR_WRONGSUPPORT_TYPE.Diagnostic="/P01 的支持面定義不正確。";
+ERR_WRONGSUPPORT_TYPE.Advice="檢查選定的支持面是否適用于此特征。";
+
+ERR_WRONGSUPPORT_MIXEDTYPE.Request="支持面定義錯誤。";
+ERR_WRONGSUPPORT_MIXEDTYPE.Diagnostic="/P01 的支持面包含幾何實體和特征實體。";
+ERR_WRONGSUPPORT_MIXEDTYPE.Advice="所有支持面必須是相同的實體類型。";
+
+ERR_WRONGSUPPORT_REMOVED.Request="支持面定義錯誤。";
+ERR_WRONGSUPPORT_REMOVED.Diagnostic="/P01 的其中一個支持面已移除。";
+ERR_WRONGSUPPORT_REMOVED.Advice="需重新選擇此支持面。";
+
+ERR_WRONGSUPPORT_NOMESH.Request="支持面定義錯誤。";
+ERR_WRONGSUPPORT_NOMESH.Diagnostic="/P01 的其中一個支持面沒有關聯的網格零件。";
+ERR_WRONGSUPPORT_NOMESH.Advice="在此支持面上應用網格零件。";
+
+ERR_WRONGSUPPORT_NONODE.Request="支持面定義錯誤。";
+ERR_WRONGSUPPORT_NONODE.Diagnostic="/P01 的支持面沒有任何關聯的節點。";
+ERR_WRONGSUPPORT_NONODE.Advice="檢查此支持面上應用的網格零件規格。";
+
+ERR_WRONGSUPPORT_NOFACE.Request="支持面定義錯誤。";
+ERR_WRONGSUPPORT_NOFACE.Diagnostic="/P01 的支持面沒有任何關聯的元素面。";
+ERR_WRONGSUPPORT_NOFACE.Advice="檢查此支持面上應用的網格零件規格。";
+
+ERR_WRONGSUPPORT_NOELEM.Request="支持面定義錯誤。";
+ERR_WRONGSUPPORT_NOELEM.Diagnostic="/P01 的支持面沒有任何關聯的元素。";
+ERR_WRONGSUPPORT_NOELEM.Advice="檢查此支持面上應用的網格零件規格。";
+
+ERR_WRONGSUPPORT_NONODEELEM.Request="支持面定義錯誤。";
+ERR_WRONGSUPPORT_NONODEELEM.Diagnostic="/P01 的支持面沒有任何關聯的節點和元素。";
+ERR_WRONGSUPPORT_NONODEELEM.Advice="檢查此支持面上應用的網格零件規格。";
+
+ERR_ABS_ZERO_BC.Request="初始溫度無效。";
+ERR_ABS_ZERO_BC.Diagnostic="溫度初始條件 /P01 等于或低于絕度零度。";
+ERR_ABS_ZERO_BC.Advice="移除此初始條件或將其更改為有效值。";
+
+ERR_PROP_NOMAT.Request="截面無效。";
+ERR_PROP_NOMAT.Diagnostic="/P01 截面未引用任何材料。";
+ERR_PROP_NOMAT.Advice="將有效材料與截面相關聯。";
+
+ERR_PROP_INVALIDMAT.Request="截面無效。";
+ERR_PROP_INVALIDMAT.Diagnostic="截面 /P01 引用了無效的材料 /P02：/P03";
+
+ERR_PROP_INVALIDFIELD.Request="截面無效。";
+ERR_PROP_INVALIDFIELD.Diagnostic="盒體截面 /P01 未定義任何厚度點。";
+
+ERR_PROP_INVALIDTHICKNESS.Request="截面無效。";
+ERR_PROP_INVALIDTHICKNESS.Diagnostic="盒體截面 /P01 的厚度為負值或零。";
+ERR_PROP_INVALIDTHICKNESS.Advice="盒體截面的厚度必須為正值";
+
+ERR_PROP_INCONSISTENTMAT.Request="截面無效。";
+ERR_PROP_INCONSISTENTMAT.Diagnostic="截面 /P01 引用的材料 /P02 與步長 /P03 不兼容：/P04";
+ERR_PROP_INCONSISTENTMAT.Advice="更改材料或審查引用材料的模擬域，以確保已定義合適的選項。";
+
+ERR_PROP_MATVERSUSEXCITATION.Request="截面無效。";
+ERR_PROP_MATVERSUSEXCITATION.Diagnostic="截面 /P01 引用的材料沒有任何密度。/P02 /P03 需要密度。";
+ERR_PROP_MATVERSUSEXCITATION.Advice="向材料的模擬域添加密度選項。";
+
+ERR_PROP_HYPERELAS_WITHOUT_NLGEOM.Request="步長定義與超彈性材料不兼容。";
+ERR_PROP_HYPERELAS_WITHOUT_NLGEOM.Diagnostic="截面 /P01 引用的超彈性材料 /P02 與不包含幾何非線性的步長 /P03 不兼容。";
+ERR_PROP_HYPERELAS_WITHOUT_NLGEOM.Advice="更改材料，或將幾何非線性包括到步長中。";
+
+ERR_PROP_NO_ONE_SUPPORT.Request="支持面定義錯誤。";
+ERR_PROP_NO_ONE_SUPPORT.Diagnostic="需要 /p1 的一個支持面。";
+ERR_PROP_NO_ONE_SUPPORT.Advice="選擇一個支持面。";
+
+ERR_PROP_NO_COMPOSITE_ENTITY.Request="復合定義錯誤。";
+ERR_PROP_NO_COMPOSITE_ENTITY.Diagnostic="未為復合盒體截面 /P01 選擇任何復合。";
+ERR_PROP_NO_COMPOSITE_ENTITY.Advice="選擇復合實體。";
+
+ERR_PROP_NO_COMPOSITE_DOMAIN_MATERIAL.Request="HVAC 材料定義。";
+ERR_PROP_NO_COMPOSITE_DOMAIN_MATERIAL.Diagnostic="在 /P02 用于復合盒體截面 /P01 的材料 /P03 中未定義復合材料域。";
+ERR_PROP_NO_COMPOSITE_DOMAIN_MATERIAL.Advice="添加復合域。";
+
+ERR_PROP_NO_SIMULATION_DOMAIN_LAMINA_OPTION_MATERIAL.Request="HVAC 材料定義。";
+ERR_PROP_NO_SIMULATION_DOMAIN_LAMINA_OPTION_MATERIAL.Diagnostic="在 /P02 用于復合盒體截面 /P01 的材料 /P03 的模擬域中未定義任何壓層行為。";
+ERR_PROP_NO_SIMULATION_DOMAIN_LAMINA_OPTION_MATERIAL.Advice="在模擬域中添加壓層行為。";
+
+ERR_PROP_NO_SIMULATION_DOMAIN_DENSITY_OPTION_MATERIAL.Request="錯誤材料定義。";
+ERR_PROP_NO_SIMULATION_DOMAIN_DENSITY_OPTION_MATERIAL.Diagnostic="在 /P02 用于復合盒體截面 /P01 的材料 /P03 的模擬域中未定義任何密度行為。";
+ERR_PROP_NO_SIMULATION_DOMAIN_DENSITY_OPTION_MATERIAL.Advice="在模擬域中添加密度行為。";
+
+ERR_INVALID_CHILDFEATURE.Request="復合特征無效。";
+ERR_INVALID_CHILDFEATURE.Diagnostic="復合特征 /P01 引用了無效的子級特征 /P02。/P03";
+ERR_INVALID_CHILDFEATURE.Advice="檢查復合特征的子級特征。";
+
+ERR_CONTACTINTERFERENCE_INVALID_S2S.Request="接觸干涉無效。";
+ERR_CONTACTINTERFERENCE_INVALID_S2S.Diagnostic="接觸干涉特征 /P01 未引用有效的基于曲面的接觸特征。";
+
+ERR_CONTACTINTERFERENCE_INVALID_CONSINE.Request="接觸干涉無效。";
+ERR_CONTACTINTERFERENCE_INVALID_CONSINE.Diagnostic="接觸干涉特征 /P01 的余弦值無效。";
+
+WNG_INVALID_DISPLACEMENTRESTRAINT.Request="位移限制無效。";
+WNG_INVALID_DISPLACEMENTRESTRAINT.Diagnostic="位移限制特征 /P01 必須至少約束一個方向。";
+
+ERR_CLEARANCE_INVALID_S2S.Request="初始接觸間隙無效。";
+ERR_CLEARANCE_INVALID_S2S.Diagnostic="初始接觸間隙特征 /P01 引用的基于曲面的接觸特征 /P02 沒有使用小滑移公式。";
+ERR_CLEARANCE_INVALID_S2S.Advice="選擇小滑移且基于曲面的接觸特征作為特征的參考。";
+
+ERR_CLEARANCE_INVALID_CLEARANCE_VALUE.Request="初始接觸間隙無效。";
+ERR_CLEARANCE_INVALID_CLEARANCE_VALUE.Diagnostic="初始接觸間隙特征 /P01 包含零間隙值。";
+ERR_CLEARANCE_INVALID_CLEARANCE_VALUE.Advice="間隙值必須大于零。";
+
+ERR_RIGIDBODY_NOPINNODE.Request="無引腳節點。";
+ERR_RIGIDBODY_NOPINNODE.Diagnostic="所有引腳節點與剛性幾何體約束 /P01 均無關聯";
+ERR_RIGIDBODY_NOPINNODE.Advice="檢查為此剛性幾何體約束選擇的引腳節點。";
+
+ERR_RIGIDBODY_NOTIENODE.Request="無連接節點。";
+ERR_RIGIDBODY_NOTIENODE.Diagnostic="所有連接節點與剛性幾何體約束 /P01 均無關聯";
+ERR_RIGIDBODY_NOTIENODE.Advice="檢查為此剛性幾何體約束選擇的連接節點。";
+
+ERR_ARS_NOPROFILE.Request="特征支持面沒有輪廓。";
+ERR_ARS_NOPROFILE.Diagnostic="沒有與分析剛性曲面 /P01 相關聯的輪廓。";
+ERR_ARS_NOPROFILE.Advice="檢查此分析剛性曲面的特征支持面。";
+
+ERR_ARS_WRONGPROFILE.Request="特征支持面的輪廓類型不正確。";
+ERR_ARS_WRONGPROFILE.Diagnostic="僅幾何或草圖類型輪廓可與分析剛性曲面 /P01 相關聯";
+ERR_ARS_WRONGPROFILE.Advice="檢查此分析剛性曲面的特征支持面。";
+
+ERR_ARS_INVALID_DOMAIN.Request="特征支持面的輪廓類型無效。";
+ERR_ARS_INVALID_DOMAIN.Diagnostic="與分析剛性曲面 /P01 相關聯的輪廓必須由單個連接區域組成。";
+ERR_ARS_INVALID_DOMAIN.Advice="確保分析剛性曲面的特征支持面由單個連接區域組成。";
+
+ERR_ARS_NONPLANAR_PROFILE.Request="特征支持面的輪廓無效。";
+ERR_ARS_NONPLANAR_PROFILE.Diagnostic="與分析剛性曲面 /P01 相關聯的輪廓必須為平面。";
+ERR_ARS_NONPLANAR_PROFILE.Advice="確保分析剛性曲面的特征支持面為平面。";
+
+ERR_ARS_INVALIDENTITY_PROFILE.Request="特征支持面輪廓的實體無效。";
+ERR_ARS_INVALIDENTITY_PROFILE.Diagnostic="與分析剛性曲面 /P01 相關聯的輪廓只能由直線和小于 180.0 度的弧組成。";
+ERR_ARS_INVALIDENTITY_PROFILE.Advice="確保分析剛性曲面的特征支持面只由直線和小于 180.0 度的弧組成。";
+
+ERR_ARS_INVALIDREVOLVE_PROFILE.Request="特征支持面的輪廓無效。";
+ERR_ARS_INVALIDREVOLVE_PROFILE.Diagnostic="與分析剛性曲面 /P01 相關聯的輪廓必須完全位于旋轉軸的一側。";
+ERR_ARS_INVALIDREVOLVE_PROFILE.Advice="確保分析剛性曲面的旋轉特征支持面完全位于軸線的一側。";
+
+ERR_ARS_INVALIDREVOLVE_FEATURE.Request="特征支持面的旋轉特征無效。";
+ERR_ARS_INVALIDREVOLVE_FEATURE.Diagnostic="分析剛性曲面 /P01 的旋轉特征支持面必須經過 360 度的旋轉。";
+
+ERR_ARS_INVALIDORIENTATION_FEATURE.Request="輪廓未正交到掃掠方向。";
+ERR_ARS_INVALIDORIENTATION_FEATURE.Diagnostic="與分析剛性曲面 /P01 相關聯的輪廓必須正交到特征的掃掠方向。";
+ERR_ARS_INVALIDORIENTATION_FEATURE.Advice="確保輪廓平面已正交到特征支持面的掃掠方向。";
+
+ERR_SIM_MESH_NOPROP.Request="截面定義不完整。";
+ERR_SIM_MESH_NOPROP.Diagnostic="部分元素沒有任何相關聯的截面。";
+ERR_SIM_MESH_NOPROP.Advice="確保已將截面分派給所有網格零件。";
+
+ERR_BOLT_INCONSISTENTSUPPORT.Request="支持面類型不一致。";
+ERR_BOLT_INCONSISTENTSUPPORT.Diagnostic="不一致的支持面類型與 /P01 /P02 相關聯。";
+ERR_BOLT_INCONSISTENTSUPPORT.Advice="此特征的所有支持面必須是相同的類型。";
+
+ERR_S2S_ARSASSLAVE.Request="從屬曲面無效。";
+ERR_S2S_ARSASSLAVE.Diagnostic="基于曲面的接觸特性 /P01 引用分析剛性曲面 /P02 作為從屬曲面。";
+ERR_S2S_ARSASSLAVE.Advice="僅可選擇分析剛性曲面作為基于曲面的接觸特征中的主曲面。";
+
+ERR_S2S_SURFACEONARSASSLAVE.Request="從屬曲面無效。";
+ERR_S2S_SURFACEONARSASSLAVE.Diagnostic="基于曲面的接觸特征 /P01 引用分析剛性曲面 /P02 作為從屬曲面。";
+ERR_S2S_SURFACEONARSASSLAVE.Advice="僅可選擇分析剛性曲面作為基于曲面的接觸特征中的主曲面。";
+
+ERR_S2S_NEGATIVE_CRITICAL_PENETRATION.Request="關鍵貫通負值";
+ERR_S2S_NEGATIVE_CRITICAL_PENETRATION.Diagnostic="基于曲面的接觸特征 /P01 的關鍵貫通值為負值：/P02。";
+
+ERR_SIM_MESH_NOASS.Request="元素類型分派定義不完整。";
+ERR_SIM_MESH_NOASS.Diagnostic="部分元素沒有任何關聯的類型。";
+
+ERR_S2S_NEGATIVE_CRITICAL_PENETRATION.Advice="給出一個等于或大于零的值。";
+
+ERR_S2S_INVALID_EXTENSION_ZONE.Request="擴展區域值無效。";
+ERR_S2S_INVALID_EXTENSION_ZONE.Diagnostic="基于曲面的接觸特征 /P01 包含無效的擴展區域值：/P02。";
+ERR_S2S_INVALID_EXTENSION_ZONE.Advice="給出一個介于 0.0 和 0.2 之間的值。";
+
+ERR_S2S_MISSING_INTERACTION_PROPERTY.Request="缺少交互屬性。";
+ERR_S2S_MISSING_INTERACTION_PROPERTY.Diagnostic="基于曲面的接觸特征 /P01 的交互屬性已刪除。";
+ERR_S2S_MISSING_INTERACTION_PROPERTY.Advice="重新選擇此接觸特征的交互屬性。";
+
+ERR_S2SIP_NEGATIVE_FRICTION_COEF.Request="負摩擦系數。";
+ERR_S2SIP_NEGATIVE_FRICTION_COEF.Diagnostic="交互屬性特征 /P01 包含負摩擦系數值：/P02。";
+ERR_S2SIP_NEGATIVE_FRICTION_COEF.Advice="給出一個等于或大于零的值。";
+
+ERR_S2SIP_NEGATIVE_SLIP_TOL.Request="負滑動公差。";
+ERR_S2SIP_NEGATIVE_SLIP_TOL.Diagnostic="接觸交互屬性特征 /P01 包含負滑動公差值或空滑動公差值：/P02。";
+ERR_S2SIP_NEGATIVE_SLIP_TOL.Advice="給出一個大于零的值。";
+
+ERR_NOREFPOINT.Request="缺少參考點。";
+ERR_NOREFPOINT.Diagnostic="/P01 特征 /P02 未引用參考點。";
+ERR_NOREFPOINT.Advice="必須選擇參考點。";
+
+ERR_ROTARY_ACCELERATION_NOLINE.Request="缺少旋轉軸線。";
+ERR_ROTARY_ACCELERATION_NOLINE.Diagnostic="/P01 特征 /P02 未引用直線作為旋轉軸。";
+ERR_ROTARY_ACCELERATION_NOLINE.Advice="必須選擇軸線。";
+
+ERR_PRETENSION_SECTION_NOPLANE.Request="缺少橫截面平面。";
+ERR_PRETENSION_SECTION_NOPLANE.Diagnostic="預張力截面特征 /P01 未引用橫截面平面。";
+ERR_PRETENSION_SECTION_NOPLANE.Advice="必須選擇橫截面平面。";
+
+ERR_PRETENSION_SECTION_PLANE_NOT_INTERSECT.Request="橫截面平面與預張力截面零件不相交。";
+ERR_PRETENSION_SECTION_PLANE_NOT_INTERSECT.Diagnostic="預張力截面特征 /P01 橫截面平面與其支持面不相交。";
+ERR_PRETENSION_SECTION_PLANE_NOT_INTERSECT.Advice="確保橫截面平面可與特征支持面相交。";
+
+ERR_PRETENSION_SECTION_CUT_THRO_ALL_ELEMS.Request="無法為預張力截面特征生成內截面曲面。";
+ERR_PRETENSION_SECTION_CUT_THRO_ALL_ELEMS.Diagnostic="預張力截面特征 /P01 無法標識內部元素面來創建交叉截面曲面。";
+ERR_PRETENSION_SECTION_CUT_THRO_ALL_ELEMS.Advice="確保支持幾何體的網格部分沿螺栓軸方面至少有兩層元素。";
+
+ERR_STEPDEF_INVALIDSTEPTIME.Request="步長參數不正確。";
+ERR_STEPDEF_INVALIDSTEPTIME.Diagnostic="在步長 /P01 中，步長時間設置為無效值：/P02。";
+
+ERR_STEPDEF_INVALIDINITTIME.Request="步長參數不正確。";
+ERR_STEPDEF_INVALIDINITTIME.Diagnostic="在步長 /P01 中，初始時間增量設置為無效值：/P02。";
+
+ERR_STEPDEF_INVALIDMINTIME.Request="步長參數不正確。";
+ERR_STEPDEF_INVALIDMINTIME.Diagnostic="在步長 /P01 中，最小時間增量設置為無效值：/P02。";
+
+ERR_STEPDEF_INVALIDMAXTIME.Request="步長參數不正確。";
+ERR_STEPDEF_INVALIDMAXTIME.Diagnostic="在步長 /P01 中，最大時間增量設置為無效值：/P02。";
+
+ERR_STEPDEF_INVALIDNUMINCS.Request="步長參數不正確。";
+ERR_STEPDEF_INVALIDNUMINCS.Diagnostic="在步長 /P01 中，增量數設置為無效值：/P02。";
+
+ERR_STEPDEF_INITTGTTOTALT.Request="步長參數不正確。";
+ERR_STEPDEF_INITTGTTOTALT.Diagnostic="在步長 /P01 中，初始時間增量值設置為大于總步長時間。";
+
+ERR_STEPDEF_MINTGTMAXT.Request="步長參數不正確。";
+ERR_STEPDEF_MINTGTMAXT.Diagnostic="在步長 /P01 中，最小時間增量值設置為大于最大時間增量。";
+
+ERR_STEPDEF_INVALIDNUMMODES.Request="步長參數不正確。";
+ERR_STEPDEF_INVALIDNUMMODES.Diagnostic="在步長 /P01 中，模式數設置為無效值：/P02。";
+
+ERR_STEPDEF_NORANGENONUMMODES.Request="步長參數不正確。";
+ERR_STEPDEF_NORANGENONUMMODES.Diagnostic="在步長 /P01 中，未設置有效的頻率范圍或模式數。";
+
+ERR_STEPDEF_MINFGTMAXF.Request="步長參數不正確。";
+ERR_STEPDEF_MINFGTMAXF.Diagnostic="在步長 /P01 中，最小頻率值設置為大于最大頻率。";
+
+ERR_SEQUENCE_MISSING_STEP.Request="缺少步長定義。";
+ERR_SEQUENCE_MISSING_STEP.Diagnostic="方案未定義任何步長。";
+ERR_SEQUENCE_MISSING_STEP.Advice="在方案中至少創建一個步長。";
+
+ERR_HYDROSTATIC_PRES_NOTOPPNT.Request="缺少零壓力點。";
+ERR_HYDROSTATIC_PRES_NOTOPPNT.Diagnostic="靜水壓特征 /P01 未引用參考點作為零壓力點。";
+ERR_HYDROSTATIC_PRES_NOTOPPNT.Advice="必須選擇參考點。";
+
+ERR_HYDROSTATIC_PRES_NOBOTPNT.Request="缺少最大壓力點。";
+ERR_HYDROSTATIC_PRES_NOBOTPNT.Diagnostic="靜水壓特征 /P01 未引用參考點作為最大壓力點。";
+ERR_HYDROSTATIC_PRES_NOBOTPNT.Advice="必須選擇參考點。";
+
+ERR_SELOUT_NOPROBES.Request="未選擇任何輸出變量。";
+ERR_SELOUT_NOPROBES.Diagnostic="輸出特征 /P01 沒有任何相關聯的輸出變量。";
+ERR_SELOUT_NOPROBES.Advice="向此輸出請求中添加一些輸出變量。";
+
+ERR_CONNPROPERTYDEF_INVALIDELASTICITY.Request="彈簧定義無效。";
+ERR_CONNPROPERTYDEF_INVALIDELASTICITY.Diagnostic="連接 /P01 中所用彈簧的硬度組件無效。";
+ERR_CONNPROPERTYDEF_INVALIDELASTICITY.Advice="硬度只能使用正值。";
+
+ERR_CONNPROPERTYDEF_INVALIDGENSPRING1.Request="常規彈簧定義無效。";
+ERR_CONNPROPERTYDEF_INVALIDGENSPRING1.Diagnostic="連接 /P01 中所用彈簧的硬度定義無效。";
+ERR_CONNPROPERTYDEF_INVALIDGENSPRING1.Advice="至少有一個彈簧組件必須具有正硬度值。";
+
+ERR_CONNPROPERTYDEF_INVALIDGENSPRING2.Request="常規彈簧定義無效。";
+ERR_CONNPROPERTYDEF_INVALIDGENSPRING2.Diagnostic="連接 /P01 中所用彈簧的硬度定義無效。";
+ERR_CONNPROPERTYDEF_INVALIDGENSPRING2.Advice="所有彈簧組件的硬度必須為正值或空值。";
+
+ERR_CONNPROPERTYDEF_INVALIDSPRINGSUPPORTS.Request="支持面無效。";
+ERR_CONNPROPERTYDEF_INVALIDSPRINGSUPPORTS.Diagnostic="彈簧連接特征 /P01 包含無效支持面。";
+ERR_CONNPROPERTYDEF_INVALIDSPRINGSUPPORTS.Advice="必須選擇至少一個點。除要接地的彈簧外，支持面應包括相同數量的點。";
+
+ERR_CONNPROPERTYDEF_INVALIDGENNONLINEARDEF1.Request="彈簧定義無效。";
+ERR_CONNPROPERTYDEF_INVALIDGENNONLINEARDEF1.Diagnostic="與連接 /P02 中所用非線性彈簧的自由度 /P01 相對應的表不完整。";
+
+ERR_CONNPROPERTYDEF_INVALIDGENNONLINEARDEF2.Request="彈簧定義無效。";
+ERR_CONNPROPERTYDEF_INVALIDGENNONLINEARDEF2.Diagnostic="與連接 /P02 中所用非線性彈簧的自由度 /P01 相對應的表必須包含至少兩個數據點。";
+
+ERR_CONNPROPERTYDEF_INVALIDGENNONLINEARDEF3.Request="彈簧定義無效。";
+ERR_CONNPROPERTYDEF_INVALIDGENNONLINEARDEF3.Diagnostic="與連接 /P01 中所用非線性彈簧的組件相對應的所有表均不包含值。";
+ERR_CONNPROPERTYDEF_INVALIDGENNONLINEARDEF3.Advice="必須至少一個表中包含值。";
+
+ERR_CONNPROPERTYDEF_INVALIDTIESUPPORTS.Request="接點約束定義的支持面無效。";
+ERR_CONNPROPERTYDEF_INVALIDTIESUPPORTS.Diagnostic="必須為接點約束定義兩個支持面。";
+ERR_CONNPROPERTYDEF_INVALIDTIESUPPORTS.Diagnostic="確保兩個支持面均已定義實體。";
+
+ERR_RELAY_MISSING_AMPLITUDE.Request="缺少振幅。";
+ERR_RELAY_MISSING_AMPLITUDE.Diagnostic="實體 /P01 的振幅已在步驟 /P02 中刪除。";
+ERR_RELAY_MISSING_AMPLITUDE.Advice="重新選擇此實體的振幅。";
+
+ERR_AMPLITUDE_DEF.Request="檢測到振幅無效。";
+ERR_AMPLITUDE_DEF.Diagnostic="振幅 /P01 包含無效定義。";
+
+ERR_AMPLITUDE_TIMEORDER.Request="檢測到振幅無效。";
+ERR_AMPLITUDE_TIMEORDER.Diagnostic="時間值必須呈遞增順序。";
+
+ERR_MASSSCALING_FIXEDOVERLAP.Request="質量縮放的區域交疊。";
+ERR_MASSSCALING_FIXEDOVERLAP.Diagnostic="在步長 /P01 中創建或傳播的一個或多個起始步長質量縮放具有交疊的支持面。";
+ERR_MASSSCALING_FIXEDOVERLAP.Advice="修改這些特征的支持面，以使其不交疊。";
+
+ERR_MASSSCALING_VARIABLEOVERLAP.Request="質量縮放的區域交疊。";
+ERR_MASSSCALING_VARIABLEOVERLAP.Diagnostic="在步長 /P01 中創建或傳播的一個或多個貫通步長質量縮放具有交疊的支持面。";
+ERR_MASSSCALING_VARIABLEOVERLAP.Advice="修改這些特征的支持面，以使其不交疊。";
+
+ERR_MASSSCALING_FIXEDZERODTANDFACTOR.Request="檢測到值為零的系數和時間增量。";
+ERR_MASSSCALING_FIXEDZERODTANDFACTOR.Diagnostic="此質量縮放的定義的系數和時間增量均為零。";
+ERR_MASSSCALING_FIXEDZERODTANDFACTOR.Advice="為其中一個或這兩個值指定一個非零值。";
+
+ERR_MASSSCALING_VARIABLEZERODT.Request="檢測到值為零的時間增量。";
+ERR_MASSSCALING_VARIABLEZERODT.Diagnostic="穩定時間增量的值為零。";
+ERR_MASSSCALING_VARIABLEZERODT.Advice="為穩定時間增量指定一個非零值。";
+
+ERR_MASSSCALING_VARIABLETIMEINCREMENT.Requext="步長和間隔數為零。";
+ERR_MASSSCALING_VARIABLETIMEINCREMENT.Diagnostic="步長和間隔數的值均為零。";
+ERR_MASSSCALING_VARIABLETIMEINCREMENT.Advice="將其中一個參數的值設為非零值。";
+

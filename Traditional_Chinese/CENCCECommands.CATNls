@@ -1,0 +1,68 @@
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化 CCE commands NLS-File Number range x25000..x25999
+// 3951 校正官方漢化
+// 3951 校正官方漢化 $Revision: 1.2 $
+// 3951 校正官方漢化 $Date: 2008/04/24 15:48:13MESZ $
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Syntax:
+// 3951 校正官方漢化   <ModuleId>_<MsgId>.<Key> = "Text";
+// 3951 校正官方漢化   where 
+// 3951 校正官方漢化     ModuleId: Text   - for classification (internally not used yet)
+// 3951 校正官方漢化     MsgId   : Number - Messagenumber (first digit is severity)
+// 3951 校正官方漢化     Key     : Text   - "iSev" -> Severity
+// 3951 校正官方漢化                        "sMsg" -> Short Message Text (not used yet)
+// 3951 校正官方漢化                        "lMsg" -> Long Message Text
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Limitations:
+// 3951 校正官方漢化    # max. nb. of parameters supported: /P1 .. /P25
+// 3951 校正官方漢化    # max. nb. of lMsg-lines: 10
+// 3951 校正官方漢化    # Key iSev has to be before lMsg 
+// 3951 校正官方漢化
+// 3951 校正官方漢化 =====================================================================
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Information messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化CCE_IM125000.iSev = "1";
+// 3951 校正官方漢化CCE_IM125000.sMsg = "Info";
+// 3951 校正官方漢化CCE_IM125000.lMsg = "Application Information - Param: /P1";
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Warning messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化CCE_WM325000.iSev = "3";
+// 3951 校正官方漢化CCE_WM325000.sMsg = "Warn";
+// 3951 校正官方漢化CCE_WM325000.lMsg = "Application Warning - Param: /P1";
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Error messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化CCE_EM425000.iSev = "4";
+// 3951 校正官方漢化CCE_EM425000.sMsg = "Err";
+// 3951 校正官方漢化CCE_EM425000.lMsg = "Application Error - Param1: /P1";
+
+
+// 3951 校正官方漢化CCE_EM525000.iSev = "5";
+// 3951 校正官方漢化CCE_EM525000.sMsg = "Err";
+// 3951 校正官方漢化CCE_EM525000.lMsg = "Application Error - Param1: /P1";
+
+CCE_EM525001.iSev="5";
+CCE_EM525001.sMsg="Err";
+CCE_EM525001.lMsg="讀取 '_MCE_CONFIGURATIONS' 部分時，找不到 id = '/P1' 的語句。";
+
+CCE_EM525002.iSev="5";
+CCE_EM525002.sMsg="Err";
+CCE_EM525002.lMsg="讀取 '_MCE_CONFIGURATIONS' 部分時，無法定義 id = '/P2' 的布爾語句的值 '/P1。有效值為 'TRUE' 或 'FALSE'。";
+
+CCE_EM525003.iSev="5";
+CCE_EM525003.sMsg="Err";
+CCE_EM525003.lMsg="讀取 '_MCE_CONFIGURATIONS' 部分時，無法定義 id = '/P1' 的語句的類型。";
+
+
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化 End of CCE utility NLS-File
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化

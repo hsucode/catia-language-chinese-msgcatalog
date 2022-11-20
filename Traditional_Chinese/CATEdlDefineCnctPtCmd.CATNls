@@ -1,0 +1,37 @@
+NotDirectAxisSystem.Title="連接點定義";
+NotDirectAxisSystem.Text="您定義的軸系統不為直接狀態（間接狀態或不為正交）。\n使用時可能會遇到問題。";
+
+CATEdlDefineCnctPtCmd.CavityState.Message="選擇要定義型腔的設備或選擇一個型腔進行編輯。";
+CATEdlDefineCnctPtCmd.ConnectorCnxPtState.Message="選擇要定義連接器連接點的設備，或選擇某個連接器連接點進行編輯。";
+CATEdlDefineCnctPtCmd.BundleCnxPtState.Message="選擇要定義電氣物理系統連接點的設備，或選擇某個電氣物理系統連接點進行編輯。";
+CATEdlDefineCnctPtCmd.CavityCnxPtState.Message="選擇要定義型腔連接點的設備，或選擇某個型腔連接點進行編輯。";
+CATEdlDefineCnctPtCmd.BackShellCnxPtState.Message="選擇要定義尾線夾連接點的設備，或選擇某個尾線夾連接點進行編輯。";
+CATEdlDefineCnctPtCmd.BundlePosPtState.Message="選擇要定義電氣物理系統位置點的設備，或選擇某個電氣物理系統位置點進行編輯。";
+CATEdlDefineCnctPtCmd.ShellCnxPtState.Message="選擇要定義殼體連接點的設備，或選擇某個殼體連接點進行編輯。";
+
+CATEdlDefineCnctPtCmd.StdDefinitionState.Message="命名連接點并定義相關軸系統。";
+CATEdlDefineCnctPtCmd.MultiDefinitionState.Message="命名連接點并選擇要定義該連接點的幾何元素。";
+
+Selection_NoProductAssociated="此零件沒有關聯的產品。";
+Selection_WrongDeviceType="此類設備上無法創建 /P1。";
+Selection_OneCnctPtAlreadyExists="一個設備上只能創建一次 /P1。";
+Selection_ProductWithoutElecBehavior="此零件不包含電氣行為。";
+
+Cavity="型腔";
+CavityCnctPt="型腔連接點";
+ConnectorCnctPt="連接器連接點";
+BackShellCnctPt="尾線夾連接點";
+ShellCnctPt="殼體連接點";
+BundleCnctPt="電氣物理系統連接點";
+BundlePosPt="電氣物理系統位置點";
+
+SelectionGeo_AlreadyUsedByAnotherCnctPt="已由其他連接點用作主要元素。\n請選擇其他元素或創建一個元素。";
+SelectionGeo_GeometryAlreadyPublished="已發布。請選擇一個未發布的元素或創建一個新元素。";
+SelectionGeo_AlreadyUsedInThisCnctPt="已在此連接點中使用。\n請選擇其他連接點或創建一個新的連接點。";
+SelectionGeo_ContactPointCanNotBeChanged="連接點定義后\n此幾何元素便無法更改。";
+
+InvalidCnctPtName.Title="連接點定義";
+InvalidCnctPtName.Text="無法使用定義的名稱：\n- 該名稱已使用。\n- 該名稱包含“：”、“<”、“>”或“！”。\n- 字符串開頭或末尾包含空白字符。\n\n請選擇其他名稱。";
+
+ElementsOnlyInActivePartSelectable="只能在活動零件中創建\編輯連接點。\n活動零件應包含電氣行為";
+FeaturesOnlyInActivePartSelectable="只能選擇活動零件中的特征來定義連接點。";

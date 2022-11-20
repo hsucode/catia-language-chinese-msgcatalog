@@ -1,0 +1,76 @@
+DialogBoxTitle="頭部影響分析";
+
+Label_Elements.Title="元素： ";
+Label_Elements.LongHelp="選擇要分析的曲面幾何圖形。可使用上下文菜單。可使用選擇窗口。";
+Label_Elements.ShortHelp="定義元素";
+
+Frame_Tessallation.Title="網格";
+Frame_Tessallation.LongHelp="此分析基于三角數據。
+這表示在檢查曲面之前，已將它們轉換為多面體模型。";
+CheckButton_Length.Title="多面體長度： ";
+CheckButton_Length.LongHelp="為多面體定義最大長度，與曲面曲率無關。";
+CheckButton_Length.ShortHelp="最大多面體長度";
+Label_Tolerance.Title="公差： ";
+Label_Tolerance.LongHelp="為基于曲率的網格定義多面體模型與曲面的最大偏差。";
+Label_Tolerance.ShortHelp="與曲面的最大偏差";
+
+Frame_Options.Title="選項";
+Frame_Options.LongHelp="以下選項可用：
+拓撲、銳化彎曲、邊線、半徑、曲率半徑。";
+Frame_Display.Title="顯示";
+Frame_Display.LongHelp="分析結果的顯示模式：
+- 顯示多面體邊線
+- 顯示著色";
+RadioButton_Edge.Title="邊線";
+RadioButton_Edge.LongHelp="顯示多面體邊線";
+RadioButton_Shading.Title="著色";
+RadioButton_Shading.LongHelp="僅當顯示模式含材料著色處于激活狀態時，著色模式才可用。";
+Frame_Topology.Title="拓撲";
+Frame_Topology.LongHelp="確定要檢測的元素：
+- 銳化彎曲
+- 邊線";
+CheckButton_SharpBend.Title="銳化彎曲";
+CheckButton_SharpBend.LongHelp="檢測銳化彎曲。";
+CheckButton_SharpBend.ShortHelp="顯示銳化彎曲";
+CheckButton_Edge.Title="邊線";
+CheckButton_Edge.LongHelp="檢測多面體邊線。";
+CheckButton_Edge.ShortHelp="顯示邊線";
+Label_Radius.Title="半徑： ";
+Label_Radius.LongHelp="確定球面半徑。
+標準頭部的假定半徑為 80 
+resp.85mm。";
+Label_Radius.ShortHelp="定義半徑";
+Label_CurvatureRadius.Title="曲率半徑： ";
+Label_CurvatureRadius.LongHelp="所有曲率小于該半徑的幾何圖形區域均被標記為紅色以示嚴重性。";
+Label_CurvatureRadius.ShortHelp="定義曲率半徑";
+
+Frame_Parameters.Title="參數";
+Frame_Parameters.LongHelp="確定參數：
+- 分隔
+- 單個";
+CheckButton_Separate.Title="分隔： ";
+CheckButton_Separate.LongHelp="可定義另一曲率半徑。
+可選擇一個曲面作為分隔曲面。
+可使用上下文菜單。可使用選擇窗口。";
+CheckButton_Separate.ShortHelp="定義另一曲率半徑。";
+CheckButton_Individual.Title="單個： ";
+CheckButton_Individual.LongHelp="可為診斷分隔面定義單個曲率半徑。可使用上下文菜單。可使用選擇窗口。";
+CheckButton_Individual.ShortHelp="定義單個曲率半徑。";
+
+Frame_Orientation.Title="法線方向";
+Frame_Orientation.LongHelp="顯示每個盒體的法線。";
+RadioButton_Automatic.Title="自動";
+RadioButton_Automatic.LongHelp="法線將自動對齊拓撲邊界。";
+RadioButton_Manual.Title="手動";
+RadioButton_Manual.LongHelp="手動對齊法線。";
+RadioButton_Original.Title="原始";
+RadioButton_Original.LongHelp="每個曲面的收斂方向假定為其自然法線的方向。";
+RadioButton_Inverted.Title="已反轉";
+RadioButton_Inverted.LongHelp="每個曲面的收斂方向假定為與其自然法線的方向相反。";
+
+CheckButton_ShowNormals.Title="顯示盒體法線";
+CheckButton_ShowNormals.LongHelp="可通過單擊操作器的中間手柄反轉法線。";
+CheckButton_ShowNormals.ShortHelp="顯示盒體法線";
+PushButton_Reset.Title="重置";
+PushButton_Reset.LongHelp="可重置法線反轉。";
+PushButton_Reset.ShortHelp="重置";

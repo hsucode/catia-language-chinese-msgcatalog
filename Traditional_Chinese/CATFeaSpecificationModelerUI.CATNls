@@ -1,0 +1,513 @@
+CATFeaEnvelopSet.Window.Title="Envelop Definition";
+CATFeaEnvelopSet.Window.Help="Modifies the Envelop definition";
+CATFeaEnvelopSet.Window.LongHelp="Modifies the Envelop definition.";
+CATFeaEnvelopSet.Window.ShortHelp="Envelop definition";
+
+
+CATFeaEnvTableEditor.EntityPtrLabel.Title="Solutions: ";
+CATFeaEnvTableEditor_Title0.Label.Title="Index";
+CATFeaEnvTableEditor_Title1.Label.Title="Solutions";
+CATFeaEnvTableEditor.MultiSelection.OneSelection = "/P1 solution";
+CATFeaEnvTableEditor.MultiSelection.Selections = "/P1 solutions";
+CATFeaEnvSolutionPtr.Window.Title="Edit Occurrences";
+CATFeaEnvTableEditor.EntityPtrLabel.Help = " Defines the solution sets to  select or remove";
+CATFeaEnvTableEditor.EntityPtrLabel.LongHelp = " Defines the solution sets to  select or remove";
+CATFeaEnvTableEditor.EntityPtrLabel.ShortHelp = " Select or remove solution sets";
+CATFeaEnvTableEditor.Message = " Select or Remove Solutions:";
+
+CATFeaEnvGroupPtr.EntityPtrLabel.Title="Support: ";
+CATFeaEnvGroupPtr.EntityPtrLabel.LongHelp="Defines the support of the envelop.";
+CATFeaEnvGroupPtr.EntityPtrLabel.Help="Defines the support of the envelop";
+CATFeaEnvGroupPtr.EntityPtrLabel.ShortHelp="Support Selection";
+CATFeaEnvGroupPtr.NoSelection="All supports";
+CATFeaEnvGroupPtr.OneSelection="/P1 support";
+CATFeaEnvGroupPtr.Selections="/P1 supports";
+CATFeaEnvGroupPtr.Message ="Select Meshes or Groups or Images.";
+
+CATFeaPressure.Window.Title="Pressure";
+CATFeaPressure.Window.Help="Modifies the pressure characteristics";
+CATFeaPressure.Window.LongHelp="Modifies the pressure characteristics.";
+CATFeaPressure.Window.ShortHelp="Pressure Characteristics";
+CATFeaPressure.ParentSet="Loads";
+
+CATFeaPressureMag.1.Label.Title="Pressure:";
+CATFeaPressureMag.1.Help = "Modifies the pressure magnitude";
+CATFeaPressureMag.1.ShortHelp = "Pressure Magnitude";
+CATFeaPressureMag.1.LongHelp = "Modifies the pressure magnitude.";
+CATFeaPressure_CATFeaPressureMag.1.NOFrame = "1";
+
+CATFeaClamp.Window.Title="Clamp";
+CATFeaClamp.Window.Help="Modifies the clamp characteristics";
+CATFeaClamp.Window.LongHelp="Modifies the clamp characteristics.";
+CATFeaClamp.Window.ShortHelp="Clamp Characteristics";
+CATFeaClamp.ParentSet="Restraints";
+
+CATFeaRestraint.Window.Title="User-defined Restraint";
+CATFeaRestraint.Window.LongHelp="Modifies the user-defined restraint characteristics.";
+CATFeaRestraint.Window.Help="Modifies the user-defined restraint characteristics";
+CATFeaRestraint.Window.ShortHelp="User-defined Restraint Characteristics";
+CATFeaRestraint.ParentSet="Restraints";
+
+CATFeaSurfaceSlider.Window.Title="Surface Slider";
+CATFeaSurfaceSlider.Window.LongHelp="Modifies the surface slider characteristics.";
+CATFeaSurfaceSlider.Window.Help="Modifies the surface slider characteristics";
+CATFeaSurfaceSlider.Window.ShortHelp="Surface Slider Characteristics";
+CATFeaSurfaceSlider.ParentSet="Restraints";
+
+CATFeaIsostatic.Window.Title="Isostatic Restraint";
+CATFeaIsostatic.Window.LongHelp="Modifies the isostatic restraint characteristics.";
+CATFeaIsostatic.Window.Help="Modifies the isostatic restraint characteristics";
+CATFeaIsostatic.Window.ShortHelp="Isostatic Restraint Characteristics";
+CATFeaIsostatic.ParentSet="Restraints";
+
+CATFeaDistributedMass.Window.Title="Mass";
+CATFeaDistributedMass.Window.Help="Creates a mass";
+CATFeaDistributedMass.Window.LongHelp="Creates a mass on a geometry.";
+CATFeaDistributedMass.Window.ShortHelp="Mass";
+
+CATFeaMassMag.Label.Title="Mass:";
+CATFeaMassMag.LongHelp = "Modifies the mass magnitude.";
+CATFeaMassMag.Help = "Modifies the mass magnitude";
+CATFeaMassMag.ShortHelp = "Mass Magnitude";
+CATFeaDistributedMass_CATFeaMassMag.NOFrame ="1";
+
+CATFeaLineicMass.Window.Title="Line Mass Density";
+CATFeaLineicMass.Window.LongHelp="Modifies the line mass density characteristics.";
+CATFeaLineicMass.Window.Help="Modifies the line mass density characteristics";
+CATFeaLineicMass.Window.ShortHelp="Line Mass Density Characteristics";
+CATFeaLineicMass.ParentSet="Masses";
+
+CATFeaLineicMassMag.Label.Title="Density:";
+CATFeaLineicMassMag.LongHelp = "Modifies the line mass density magnitude.";
+CATFeaLineicMassMag.Help = "Modifies the line mass density magnitude";
+CATFeaLineicMassMag.ShortHelp = "Line Mass Density Magnitude";
+CATFeaLineicMass_CATFeaLineicMassMag.NOFrame ="1";
+
+CATFeaSurfacicMass.Window.Title="Surface Mass Density";
+CATFeaSurfacicMass.Window.LongHelp="Modifies the surface mass density characteristics.";
+CATFeaSurfacicMass.Window.Help="Modifies the surface mass density characteristics";
+CATFeaSurfacicMass.Window.ShortHelp="Surface Mass Density Characteristics";
+CATFeaSurfacicMass.ParentSet="Masses";
+
+CATFeaSurfacicMassMag.Label.Title="Density:";
+CATFeaSurfacicMassMag.LongHelp = "Modifies the surface mass density magnitude.";
+CATFeaSurfacicMassMag.Help = "Modifies the surface mass density magnitude";
+CATFeaSurfacicMassMag.ShortHelp = "Surface Mass Density Magnitude";
+CATFeaSurfacicMass_CATFeaSurfacicMassMag.NOFrame ="1";
+
+CATFeaDistributedMassAndInertia.Window.Title="Distributed Mass and Inertia";
+CATFeaDistributedMassAndInertia.Window.LongHelp="Distributes Mass and Inertia on the selected support(s)";
+CATFeaDistributedMassAndInertia.Window.Help="Distributes Mass and Inertia on the selected support(s)";
+CATFeaDistributedMassAndInertia.Window.ShortHelp="Distributed Mass and Inertia";
+CATFeaDistributedMassAndInertia.ParentSet="Masses";
+
+CATFeaDistMassInertiaMag.Label.Title="Mass:";
+CATFeaDistMassInertiaMag.LongHelp = "Modifies the mass magnitude.";
+CATFeaDistMassInertiaMag.Help = "Modifies the mass magnitude";
+CATFeaDistMassInertiaMag.ShortHelp = "Mass Magnitude";
+CATFeaDistributedMassAndInertia_CATFeaDistMassInertiaMag.NOFrame ="1";
+
+CATFeaBCDistMassInertiaTensorInst.Title="Inertia Tensor";
+CATFeaBCDistMassInertiaTensorInst.LongHelp="Modifies the Inertia Tensor";
+CATFeaBCDistMassInertiaTensorInst.Help="Modifies the Inertia Tensor Values";
+CATFeaBCDistMassInertiaTensorInst.ShortHelp="Inertia Tensor";
+
+CATFeaBCDistMassInertiaTensor.InertiaXX.Title ="I11";
+CATFeaBCDistMassInertiaTensor.InertiaXX.Help = "Modifies the I11 value of Inertia Tensor";
+
+CATFeaBCDistMassInertiaTensor.InertiaYY.Title ="I22";
+CATFeaBCDistMassInertiaTensor.InertiaYY.Help = "Modifies the I22 value of Inertia Tensor";
+
+CATFeaBCDistMassInertiaTensor.InertiaZZ.Title ="I33";
+CATFeaBCDistMassInertiaTensor.InertiaZZ.Help = "Modifies the I33 value of Inertia Tensor";
+
+CATFeaBCDistMassInertiaTensor.InertiaXY.Title ="I12";
+CATFeaBCDistMassInertiaTensor.InertiaXY.Help = "Modifies the I12 value of Inertia Tensor";
+
+CATFeaBCDistMassInertiaTensor.InertiaXZ.Title ="I13";
+CATFeaBCDistMassInertiaTensor.InertiaXZ.Help = "Modifies the I13 value of Inertia Tensor";
+
+CATFeaBCDistMassInertiaTensor.InertiaYZ.Title ="I23";
+CATFeaBCDistMassInertiaTensor.InertiaYZ.Help = "Modifies the I23 value of Inertia Tensor";
+
+CATFeaBCRestraintDOF.Title_0.Title="Restrain Translation 1";
+CATFeaBCRestraintDOF.Title_0.Help="Select to block translation 1";
+CATFeaBCRestraintDOF.Title_0.ShortHelp="Block Translation 1";
+CATFeaBCRestraintDOF.Title_0.LongHelp="Select to block translation 1.";
+
+CATFeaBCRestraintDOF.Title_1.Title="Restrain Translation 2";
+CATFeaBCRestraintDOF.Title_1.Help="Select to block translation 2";
+CATFeaBCRestraintDOF.Title_1.ShortHelp="Block Translation 2";
+CATFeaBCRestraintDOF.Title_1.LongHelp="Select to block translation 2.";
+
+CATFeaBCRestraintDOF.Title_2.Title="Restrain Translation 3";
+CATFeaBCRestraintDOF.Title_2.Help="Select to block translation 3";
+CATFeaBCRestraintDOF.Title_2.ShortHelp="Block Translation 3";
+CATFeaBCRestraintDOF.Title_2.LongHelp="Select to block translation 3.";
+
+CATFeaBCRestraintDOF.Title_3.Title="Restrain Rotation 1";
+CATFeaBCRestraintDOF.Title_3.Help="Select to block rotation 1";
+CATFeaBCRestraintDOF.Title_3.ShortHelp="Block Rotation 1";
+CATFeaBCRestraintDOF.Title_3.LongHelp="Select to block rotation 1.";
+
+CATFeaBCRestraintDOF.Title_4.Title="Restrain Rotation 2";
+CATFeaBCRestraintDOF.Title_4.Help="Select to block rotation 2";
+CATFeaBCRestraintDOF.Title_4.ShortHelp="Block Rotation 2";
+CATFeaBCRestraintDOF.Title_4.LongHelp="Select to block rotation 2.";
+
+CATFeaBCRestraintDOF.Title_5.Title="Restrain Rotation 3";
+CATFeaBCRestraintDOF.Title_5.Help="Select to block rotation 3";
+CATFeaBCRestraintDOF.Title_5.ShortHelp="Block Rotation 3";
+CATFeaBCRestraintDOF.Title_5.LongHelp="Select to block rotation 3.";
+
+CATFeaLineicForce.Window.Title="Line Force Density";
+CATFeaLineicForce.Window.LongHelp="Modifies the line force density characteristics.";
+CATFeaLineicForce.Window.Help="Modifies the line force density characteristics";
+CATFeaLineicForce.Window.ShortHelp="Line Force Density Characteristics";
+CATFeaLineicForce.ParentSet="Loads";
+
+CATFeaSurfacicForce.Window.Title="Surface Force Density";
+CATFeaSurfacicForce.Window.LongHelp="Modifies the surface force density characteristics.";
+CATFeaSurfacicForce.Window.Help="Modifies the surface force density characteristics";
+CATFeaSurfacicForce.Window.ShortHelp="Surface Force Density Characteristics";
+CATFeaSurfacicForce.ParentSet="Loads";
+
+CATFeaVolumicForce.Window.Title="Volume Force Density";
+CATFeaVolumicForce.Window.LongHelp="Modifies the volume force density characteristics.";
+CATFeaVolumicForce.Window.Help="Modifies the volume force density characteristics";
+CATFeaVolumicForce.Window.ShortHelp="Volume Force Density Characteristics";
+CATFeaVolumicForce.ParentSet="Loads";
+
+CATFeaMoment.Window.Title="Moment";
+CATFeaMoment.Window.LongHelp="Modifies the moment characteristics.";
+CATFeaMoment.Window.Help="Modifies the moment characteristics";
+CATFeaMoment.Window.ShortHelp="Moment Characteristics";
+CATFeaMoment.ParentSet="Loads";
+
+CATFeaBCLineicForceVector.Title="Force Vector";
+
+CATFeaBCLineicForceVector_ValuesNorme.Label.Title="Norm:";
+CATFeaBCLineicForceVector_ValuesNorme.LongHelp = "Modifies the force magnitude.";
+CATFeaBCLineicForceVector_ValuesNorme.Help = "Modifies the force magnitude";
+CATFeaBCLineicForceVector_ValuesNorme.ShortHelp = "Force magnitude";
+
+CATFeaBCLineicForceVector_Values_1.Label.Title ="X:";
+CATFeaBCLineicForceVector_Values_1.LongHelp = "Modifies the first force coordinate.";
+CATFeaBCLineicForceVector_Values_1.Help = "Modifies the first force coordinate";
+CATFeaBCLineicForceVector_Values_1.ShortHelp = "First Force Coordinate";
+
+CATFeaBCLineicForceVector_Values_2.Label.Title="Y:";
+CATFeaBCLineicForceVector_Values_2.LongHelp = "Modifies the second force coordinate.";
+CATFeaBCLineicForceVector_Values_2.Help = "Modifies the second force coordinate";
+CATFeaBCLineicForceVector_Values_2.ShortHelp = "Second Force Coordinate";
+
+CATFeaBCLineicForceVector_Values_3.Label.Title="Z:";
+CATFeaBCLineicForceVector_Values_3.LongHelp = "Modifies the third force coordinate.";
+CATFeaBCLineicForceVector_Values_3.Help = "Modifies the third force coordinate";
+CATFeaBCLineicForceVector_Values_3.ShortHelp = "Third Force Coordinate";
+
+CATFeaBCSurfacicForceVector.Title="Force Vector";
+
+CATFeaBCSurfacicForceVector_ValuesNorme.Label.Title="Norm:";
+CATFeaBCSurfacicForceVector_ValuesNorme.LongHelp = "Modifies the force magnitude";
+CATFeaBCSurfacicForceVector_ValuesNorme.Help = "Modifies the force magnitude";
+CATFeaBCSurfacicForceVector_ValuesNorme.ShortHelp = "Force magnitude";
+
+CATFeaBCSurfacicForceVector_Values_1.Label.Title="X:";
+CATFeaBCSurfacicForceVector_Values_1.LongHelp = "Modifies the first force coordinate.";
+CATFeaBCSurfacicForceVector_Values_1.Help = "Modifies the first force coordinate";
+CATFeaBCSurfacicForceVector_Values_1.ShortHelp = "First Force Coordinate";
+
+CATFeaBCSurfacicForceVector_Values_2.Label.Title="Y:";
+CATFeaBCSurfacicForceVector_Values_2.LongHelp = "Modifies the second force coordinate.";
+CATFeaBCSurfacicForceVector_Values_2.Help = "Modifies the second force coordinate";
+CATFeaBCSurfacicForceVector_Values_2.ShortHelp = "Second Force Coordinate";
+
+CATFeaBCSurfacicForceVector_Values_3.Label.Title="Z:";
+CATFeaBCSurfacicForceVector_Values_3.LongHelp = "Modifies the third force coordinate.";
+CATFeaBCSurfacicForceVector_Values_3.Help = "Modifies the third force coordinate";
+CATFeaBCSurfacicForceVector_Values_3.ShortHelp = "Third Force Coordinate";
+
+CATFeaBCVolumicForceVector.Title="Force Vector";
+
+CATFeaBCVolumicForceVector_ValuesNorme.Label.Title="Norm:";
+CATFeaBCVolumicForceVector_ValuesNorme.LongHelp = "Modifies the force magnitude.";
+CATFeaBCVolumicForceVector_ValuesNorme.Help = "Modifies the force magnitude";
+CATFeaBCVolumicForceVector_ValuesNorme.ShortHelp = "Force magnitude";
+
+CATFeaBCVolumicForceVector_Values_1.Label.Title="X:";
+CATFeaBCVolumicForceVector_Values_1.LongHelp = "Modifies the first force coordinate.";
+CATFeaBCVolumicForceVector_Values_1.Help = "Modifies the first force coordinate";
+CATFeaBCVolumicForceVector_Values_1.ShortHelp = "First Force Coordinate";
+
+CATFeaBCVolumicForceVector_Values_2.Label.Title="Y:";
+CATFeaBCVolumicForceVector_Values_2.LongHelp = "Modifies the second force coordinate.";
+CATFeaBCVolumicForceVector_Values_2.Help = "Modifies the second force coordinate";
+CATFeaBCVolumicForceVector_Values_2.ShortHelp = "Second Force Coordinate";
+
+CATFeaBCVolumicForceVector_Values_3.Label.Title="Z:";
+CATFeaBCVolumicForceVector_Values_3.LongHelp = "Modifies the third force coordinate.";
+CATFeaBCVolumicForceVector_Values_3.Help = "Modifies the third force coordinate";
+CATFeaBCVolumicForceVector_Values_3.ShortHelp = "Third Force Coordinate";
+
+CATFeaForceDensity.Window.Title="Force";
+CATFeaForceDensity.Window.LongHelp="Modifies the force characteristics.";
+CATFeaForceDensity.Window.Help="Modifies the force characteristics";
+CATFeaForceDensity.Window.ShortHelp="Force Characteristics";
+CATFeaForceDensity.ParentSet="Loads";
+
+CATFeaBCForceVector.Title="Force Vector";
+
+CATFeaBCForceVector_ValuesNorme.Label.Title="Norm:";
+CATFeaBCForceVector_ValuesNorme.LongHelp = "Modifies the force magnitude.";
+CATFeaBCForceVector_ValuesNorme.Help = "Modifies the force magnitude";
+CATFeaBCForceVector_ValuesNorme.ShortHelp = "Force magnitude";
+
+CATFeaBCForceVector_Values_1.Label.Title="X:";
+CATFeaBCForceVector_Values_1.LongHelp = "Modifies the first force coordinate.";
+CATFeaBCForceVector_Values_1.Help = "Modifies the first force coordinate";
+CATFeaBCForceVector_Values_1.ShortHelp = "First Force Coordinate";
+
+CATFeaBCForceVector_Values_2.Label.Title="Y:";
+CATFeaBCForceVector_Values_2.LongHelp = "Modifies the second force coordinate.";
+CATFeaBCForceVector_Values_2.Help = "Modifies the second force coordinate";
+CATFeaBCForceVector_Values_2.ShortHelp = "Second Force Coordinate";
+
+CATFeaBCForceVector_Values_3.Label.Title="Z:";
+CATFeaBCForceVector_Values_3.LongHelp = "Modifies the third force coordinate.";
+CATFeaBCForceVector_Values_3.Help = "Modifies the third force coordinate";
+CATFeaBCForceVector_Values_3.ShortHelp = "Third Force Coordinate";
+
+CATFeaDistributedForce.Window.Title="Distributed Force";
+CATFeaDistributedForce.Window.LongHelp="Modifies the distributed force characteristics.";
+CATFeaDistributedForce.Window.Help="Modifies the distributed force characteristics";
+CATFeaDistributedForce.Window.ShortHelp="Distributed Force Characteristics";
+CATFeaDistributedForce.ParentSet="Loads";
+
+CATFeaBCSlavePointPtr.LabelSupport.Title="Handler:";
+CATFeaBCSlavePointPtr.LabelSupport.LongHelp="Defines a handler for the entity.";
+CATFeaBCSlavePointPtr.LabelSupport.Help="Defines a handler for the entity";
+CATFeaBCSlavePointPtr.LabelSupport.ShortHelp="Handler Selection";
+
+CATFeaBCMomentVector.Title="Moment Vector";
+
+CATFeaBCMomentVector_ValuesNorme.Label.Title="Norm:";
+CATFeaBCMomentVector_ValuesNorme.LongHelp = "Modifies the moment magnitude.";
+CATFeaBCMomentVector_ValuesNorme.Help = "Modifies the moment magnitude";
+CATFeaBCMomentVector_ValuesNorme.ShortHelp = "Moment magnitude";
+
+CATFeaBCMomentVector_Values_1.Label.Title="X:";
+CATFeaBCMomentVector_Values_1.LongHelp = "Modifies the first moment coordinate.";
+CATFeaBCMomentVector_Values_1.Help = "Modifies the first moment coordinate";
+CATFeaBCMomentVector_Values_1.ShortHelp = "First Moment Coordinate";
+
+CATFeaBCMomentVector_Values_2.Label.Title="Y:";
+CATFeaBCMomentVector_Values_2.LongHelp = "Modifies the second moment coordinate.";
+CATFeaBCMomentVector_Values_2.Help = "Modifies the second moment coordinate";
+CATFeaBCMomentVector_Values_2.ShortHelp = "Second Moment Coordinate";
+
+CATFeaBCMomentVector_Values_3.Label.Title="Z:";
+CATFeaBCMomentVector_Values_3.LongHelp = "Modifies the third moment coordinate.";
+CATFeaBCMomentVector_Values_3.Help = "Modifies the third moment coordinate";
+CATFeaBCMomentVector_Values_3.ShortHelp = "Third Moment Coordinate";
+
+CATFeaTranslationAcceleration.Window.Title="Acceleration";
+CATFeaTranslationAcceleration.Window.LongHelp="Modifies the acceleration characteristics.";
+CATFeaTranslationAcceleration.Window.Help="Modifies the acceleration characteristics";
+CATFeaTranslationAcceleration.Window.ShortHelp="Acceleration Characteristics";
+CATFeaTranslationAcceleration.ParentSet="Loads";
+
+CATFeaBCTranslationAccelerationVector.Title="Acceleration Vector";
+
+CATFeaBCTranslationAccelerationVector_ValuesNorme.Label.Title="Norm:";
+CATFeaBCTranslationAccelerationVector_ValuesNorme.LongHelp = "Modifies the acceleration magnitude.";
+CATFeaBCTranslationAccelerationVector_ValuesNorme.Help = "Modifies the acceleration magnitude";
+CATFeaBCTranslationAccelerationVector_ValuesNorme.ShortHelp = "Acceleration Magnitude";
+
+CATFeaBCTranslationAccelerationVector_Values_1.Label.Title="X:";
+CATFeaBCTranslationAccelerationVector_Values_1.LongHelp = "Modifies the first acceleration coordinate.";
+CATFeaBCTranslationAccelerationVector_Values_1.Help = "Modifies the first acceleration coordinate";
+CATFeaBCTranslationAccelerationVector_Values_1.ShortHelp = "First Acceleration Coordinate";
+
+CATFeaBCTranslationAccelerationVector_Values_2.Label.Title="Y:";
+CATFeaBCTranslationAccelerationVector_Values_2.LongHelp = "Modifies the second acceleration coordinate.";
+CATFeaBCTranslationAccelerationVector_Values_2.Help = "Modifies the second acceleration coordinate";
+CATFeaBCTranslationAccelerationVector_Values_2.ShortHelp = "Second Acceleration Coordinate";
+
+CATFeaBCTranslationAccelerationVector_Values_3.Label.Title="Z:";
+CATFeaBCTranslationAccelerationVector_Values_3.LongHelp = "Modifies the third acceleration coordinate.";
+CATFeaBCTranslationAccelerationVector_Values_3.Help = "Modifies the third acceleration coordinate";
+CATFeaBCTranslationAccelerationVector_Values_3.ShortHelp = "Third Acceleration Coordinate";
+
+
+CATFeaRotationForce.Window.Title="Rotation Force";
+CATFeaRotationForce.Window.LongHelp="Modifies the rotation force characteristics.";
+CATFeaRotationForce.Window.Help="Modifies the rotation force characteristics";
+CATFeaRotationForce.Window.ShortHelp="Rotation Force Characteristics";
+CATFeaRotationForce.ParentSet="Loads";
+
+CATFeaBCRotForceGeomPtr.LabelSupport.Title="Rotation Axis:";
+CATFeaBCRotForceGeomPtr.LabelSupport.LongHelp="Select a line or an axis to define the rotation axis.";
+CATFeaBCRotForceGeomPtr.LabelSupport.Help="Select a line or an axis to define the rotation axis";
+CATFeaBCRotForceGeomPtr.LabelSupport.ShortHelp="Rotation Axis";
+
+CATFeaAngularVelocity.Label.Title= "Angular Velocity:";
+CATFeaAngularVelocity.LongHelp = "Modifies the angular velocity characteristics";
+CATFeaAngularVelocity.Help = "Modifies the angular velocity";
+CATFeaAngularVelocity.ShortHelp = "Angular Velocity Magnitude";
+CATFeaRotationForce_CATFeaAngularVelocity.NOFrame = "1";
+
+CATFeaRotAcceleration.Label.Title="Angular Acceleration:";
+CATFeaRotAcceleration.LongHelp = "Modifies the angular acceleration characteristics";
+CATFeaRotAcceleration.Help = "Modifies the angular acceleration";
+CATFeaRotAcceleration.ShortHelp = "Angular Acceleration Magnitude";
+
+CATFeaBCEnforcedDispEntityPtr.EntityPtrLabel.Title="Restraint:";
+CATFeaBCEnforcedDispEntityPtr.EntityPtrLabel.LongHelp="Select the associated restraint.";
+CATFeaBCEnforcedDispEntityPtr.EntityPtrLabel.Help="Select the associated restraint.";
+CATFeaBCEnforcedDispEntityPtr.EntityPtrLabel.ShortHelp="Select Restraint";
+
+CATFeaEnforcedDispTranslationX.Label.Title="X translation:";
+CATFeaEnforcedDispTranslationX.LongHelp = "Modifies the value of the enforced translation on the restraint first local axis.";
+CATFeaEnforcedDispTranslationX.Help = "Modifies the value of the enforced translation on the restraint first local axis";
+CATFeaEnforcedDispTranslationX.ShortHelp = "Enforced Translation in the First Direction";
+
+CATFeaEnforcedDispTranslationY.Label.Title="Y translation:";
+CATFeaEnforcedDispTranslationY.LongHelp = "Modifies the value of the enforced translation on the restraint second local axis.";
+CATFeaEnforcedDispTranslationY.Help = "Modifies the value of the enforced translation on the restraint second local axis";
+CATFeaEnforcedDispTranslationY.ShortHelp = "Enforced Translation in the Second Direction";
+
+CATFeaEnforcedDispTranslationZ.Label.Title="Z translation:";
+CATFeaEnforcedDispTranslationZ.LongHelp = "Modifies the value of the enforced translation on the restraint third local axis.";
+CATFeaEnforcedDispTranslationZ.Help = "Modifies the value of the enforced translation on the restraint third local axis";
+CATFeaEnforcedDispTranslationZ.ShortHelp = "Enforced Translation in the Third Direction";
+
+CATFeaEnforcedDispRotationX.Label.Title="X rotation:";
+CATFeaEnforcedDispRotationX.LongHelp = "Modifies the value of the enforced rotation on the restraint first local axis.";
+CATFeaEnforcedDispRotationX.Help = "Modifies the value of the enforced rotation on the restraint first local axis";
+CATFeaEnforcedDispRotationX.ShortHelp = "Enforced Rotation in the First Direction";
+
+CATFeaEnforcedDispRotationY.Label.Title="Y rotation:";
+CATFeaEnforcedDispRotationY.LongHelp = "Modifies the value of the enforced rotation on the restraint second local axis.";
+CATFeaEnforcedDispRotationY.Help = "Modifies the value of the enforced rotation on the restraint second local axis";
+CATFeaEnforcedDispRotationY.ShortHelp = "Enforced Rotation in the Second Direction";
+
+CATFeaEnforcedDispRotationZ.Label.Title="Z rotation:";
+CATFeaEnforcedDispRotationZ.LongHelp = "Modifies the value of the enforced rotation on the restraint third local axis.";
+CATFeaEnforcedDispRotationZ.Help = "Modifies the value of the enforced rotation on the restraint third local axis";
+CATFeaEnforcedDispRotationZ.ShortHelp = "Enforced Rotation in the Third Direction";
+
+CATFeaEnforcedDisp.Window.Title="Enforced Displacement";
+CATFeaEnforcedDisp.Window.LongHelp="Modifies the enforced displacement characteristics.";
+CATFeaEnforcedDisp.Window.Help="Modifies the enforced displacement characteristics";
+CATFeaEnforcedDisp.Window.ShortHelp="Enforced Displacement Characteristics";
+CATFeaEnforcedDisp.ParentSet="Loads";
+
+CATFeaGlobalSensor.Window.Title="Global Sensor";
+CATFeaBCSolutionPtr.EntityPtrLabel.Title = "Solution: ";
+CATFeaBCSolutionPtr.EntityPtrLabel.LongHelp="Select the associated solution.";
+CATFeaBCSolutionPtr.EntityPtrLabel.Help="Select the associated solution.";
+CATFeaBCSolutionPtr.EntityPtrLabel.ShortHelp="Select Solution";
+
+CATFeaReactionSensor.Window.Title="Reaction Sensor";
+CATFeaBCRestraintPtr.EntityPtrLabel.Title = "Restraint ";
+
+CATFeaTemperatureField.Window.Title="Temperature Field";
+CATFeaTemperatureField.Window.Help="Creates a new temperature field";
+CATFeaTemperatureField.Window.LongHelp="Creates a new temperature field on a body.";
+CATFeaTemperatureField.Window.ShortHelp="Temperature Field";
+CATFeaTemperatureField.ParentSet="Loads";
+
+CATFeaTemperatureMag.Label.Title="Temperature: ";
+CATFeaTemperatureMag.LongHelp = "Modifies the temperature magnitude.";
+CATFeaTemperatureMag.Help = "Modifies the temperature magnitude";
+CATFeaTemperatureMag.ShortHelp = "Temperature Magnitude";
+CATFeaTemperatureField_CATFeaTemperatureMag.NOFrame ="1";
+
+CATFeaTemperatureRefMag.Label.Title="Initial temperature: ";
+CATFeaTemperatureRefMag.LongHelp = "Modifies the initial temperature magnitude.";
+CATFeaTemperatureRefMag.Help = "Modifies the initial temperature magnitude";
+CATFeaTemperatureRefMag.ShortHelp = "Initial temperature Magnitude";
+CATFeaTemperatureField_CATFeaTemperatureRefMag.NOFrame ="1";
+
+CATFeaBearingLoad.Window.Title="Bearing Load";
+CATFeaBearingLoad.ParentSet="Loads";
+CATFeaBearAngle.Label.Title="Angle: ";
+
+CATFeaBearingProfileManager.Label.Title="Profile:";
+CATFeaBearingProfileManager.Label.LongHelp="Define the profile";
+CATFeaBearingProfileManager.Label.Help="Define the profile";
+CATFeaBearingProfileManager.Label.ShortHelp="Profile type";
+
+                          
+CATFeaBearProfile.Combo.sinusoidal="Sinusiodal";
+CATFeaBearProfile.Combo.parabolic="Parabolic";
+CATFeaBearProfile.Combo.byLaw="By Law";
+CATFeaBearProfile.Combo.LongHelp="Defines how to vary the Force intensity\naccording to the angle:\n\nSinusoidal, Parabolic or Law.";
+CATFeaBearProfile.Combo.Help="Select the profile type";
+CATFeaBearProfile.Combo.ShortHelp="Profile type";
+
+CATFeaBearingLoadEntityPtr.EntityPtrLabel.Title="Law: ";
+CATFeaBearingLoadEntityPtr.EditorPtrEditor.LongHelp="Select a law";
+CATFeaBearingLoadEntityPtr.EditorPtrEditor.Help="Select a law";
+CATFeaBearingLoadEntityPtr.EditorPtrEditor.ShortHelp="Law Selection";
+
+CATFeaBearLoadDistribution.Title="Distribution";
+CATFeaBearLoadDistribution.LongHelp="Modifies the distribution type";
+CATFeaBearLoadDistribution.Help="Modifies the distribution";
+CATFeaBearLoadDistribution.ShortHelp="Distribution type";
+
+CATFeaBearLoadDistribution.RadioB_0.LongHelp="Outward Distribution \n
+The force distribution is outward \ni.e. along the direction from B to A";
+CATFeaBearLoadDistribution.RadioB_1.LongHelp="Inward Distribution \n
+The force distribution is inward \ni.e. along the direction from A to B";
+
+CATFeaBearingProfileManager.Window.Title="Definition";
+
+
+
+CATFeaBearOrientation.Title="Orientation";
+CATFeaBearOrientation.LongHelp="Select the orientation type";
+CATFeaBearOrientation.Help="Select the orientation type";
+CATFeaBearOrientation.ShortHelp="Orientation type";
+
+CATFeaBearOrientation.RadioB_0.LongHelp="All the force vectors at the mesh nodes are normal
+to the surface in all points.\n 
+This is generally used for force contact";
+CATFeaBearOrientation.RadioB_1.LongHelp="All the force vectors at the mesh nodes are parallel
+to the resulting force vectors\n 
+This can useful in the case of specific loads.";
+
+CATFeaPostProType.1.Label.Title="Post treatment:";
+CATFeaPostProType.1.LongHelp="Select the post-treatment";
+CATFeaPostProType.1.Help="Select the post-treatment type";
+CATFeaPostProType.1.ShortHelp="Post-treatment Selection";
+
+CATFeaLocalSensor.Window.Title="Local Sensor";
+
+CATFeaBCPLMDocLoads.Title ="Data mapping";
+CATFeaBCPLMDocLoads.LabelDocName.Title="Data mapping:";
+CATFeaBCPLMDocLoads.PushBDocChooser.Title="...";
+CATFeaBCPLMDocLoads.CheckButtonBoundingBox.Title="Display bounding box";
+CATFeaBCPLMDocLoads.PushBDocChooser.Help="Allows the selection of Mapping File";
+CATFeaBCPLMDocLoads.PushBDocChooser.LongHelp="Allows the selection of Mapping File";
+CATFeaBCPLMDocLoads.PushBDocChooser.ShortHelp="Allows the selection of Mapping File";
+CATFeaBCPLMDocLoads.PushBDocViewer.Title="View...";
+CATFeaBCPLMDocLoads.PushBDocViewer.Help="View selected Mapping File";
+CATFeaBCPLMDocLoads.PushBDocViewer.LongHelp="View selected Mapping File";
+CATFeaBCPLMDocLoads.PushBDocViewer.ShortHelp="View selected Mapping File";
+CATFeaBCPLMDocLoads.DocumentChooserDlg.Title="Select a Data Mapping File";
+
+
+// Mapping Property
+CATSimBCPLMDoc.LabelDocName.Title="File: ";
+CATSimBCPLMDoc.PushBDocChooser.Title= "Browse";
+CATSimBCPLMDoc.PushBDocChooser.Help="Displays the browser";
+CATSimBCPLMDoc.PushBDocChooser.LongHelp="Displays the browser.";
+CATSimBCPLMDoc.PushBDocChooser.ShortHelp="Browse Folders";
+CATSimBCPLMDoc.PushBDocViewer.Title= "View...";
+CATSimBCPLMDoc.PushBDocViewer.Help="View selected file";
+CATSimBCPLMDoc.PushBDocViewer.LongHelp="View selected file";
+CATSimBCPLMDoc.PushBDocViewer.ShortHelp="View selected file";
+CATSimBCPLMDoc.DocumentChooserDlg.Title="File Selection";
+

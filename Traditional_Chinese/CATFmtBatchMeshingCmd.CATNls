@@ -1,0 +1,134 @@
+
+// Commande
+
+BatchMeshingInitialStateMessage="Selects parameters to run batch meshing application.";
+
+//Dialog principal
+
+CATFmtBatchMeshingDlg.Title="Batch Meshing";
+BatchMeshingTreeList.xxxTREExxx.Label="Product Structure";
+BatchMeshingTreeList.3DShape.Label="3D Shape";
+BatchMeshingTreeList.FEM.Label="FEM";
+BatchMeshingTreeList.MeshingRule.Label="Meshing Rule";
+BatchMeshingTreeList.Support.Label="Support";
+BatchMeshingTreeList.Report.Label="Report";
+OkButton.Label="Ok";
+RunButton.Label="Run";
+CloseButton.Label="Ãö³¬";
+BatchExecutionOptions.Label="Options";
+SelectRule="Select a rule";
+CreateRule="Select a rule";
+SelectRuleCombo="Select an existing meshing rule file";
+CreateRuleCombo="Create a new meshing rule file";
+NoPublication="No publication";
+
+Create="Create a new FEM";
+Ignore="©¿²¤";
+CreateCombo="Create a new FEM representation";
+IgnoreCombo="Ignore the product";
+
+// sous dialogues
+
+OpenOptionsDlg.Title= "Open";
+OpenOk.Label="Ok";
+OpenCancel.Label="Cancel";
+
+WithFEMRep.Label="With FEM representations";
+With3DShapes.Label="With 3D Shapes";
+
+NoHostMessage="No host specified";
+NoHostText="No host specificed";
+NoHostInfo="Modify the execution mode or specify a host name";
+
+NoRuleAvailable="No rule available";
+NoRuleInfo="There is no rule available";
+
+LocalHost = "Local Host";
+Host = "hostname";
+
+FilterOptionsDlg.Title= "Filter";
+FilterOk.Label="Ok";
+FilterCancel.Label="Cancel";
+
+ExecutionOptionsDlg.Title="Execution Options";
+HostEditor.Label="Host:";
+ThreadLabel.Label="Number of threads:";
+ExecutionOptionsOk.Label="Ok";
+
+ExecutionLocalBtn_1.Label="Local";
+ExecutionLocalBtn_2.Label="Remote";
+
+SearchPublicationDlg.Title="Search Publication";
+SearchEditor.Label="Publication's name :";
+SearchPublicationOk.Label="Ok";
+
+RuleChooserDlg.Title="Rule Chooser";
+RuleChooserApply.Label="Ok";
+
+// Contextual menus
+
+BatchMeshingTreeList.FilterItem.Label="Filter";
+BatchMeshingTreeList.OpenItem.Label="Open";
+BatchMeshingTreeList.OpenSingleItem.Label="Open";
+BatchMeshingTreeList.ApplyMeshingRule.Label="Apply meshing rule file to all";
+BatchMeshingTreeList.FindMeshingRule.Label="Select all FEMs with this rule";
+BatchMeshingTreeList.ApplyPublication.Label="Apply same Publication to all";
+BatchMeshingTreeList.ViewMeshingRule.Label="View the meshing rule";
+BatchMeshingTreeList.CreateFEM.Label="Create a new FEM representation";
+BatchMeshingTreeList.IgnoreFEM.Label="Ignore the product";
+BatchMeshingTreeList.SelectRule.Label="Select an existing meshing rule file";
+BatchMeshingTreeList.CreateRule.Label="Create a new meshing rule file";
+BatchMeshingTreeList.ReframeOn.Label="Reframe On";
+BatchMeshingTreeList.SearchPublication.Label="Search Publication and Apply to selection";
+BatchMeshingTreeList.ApplyRuleToSelection.Label="Search an existing rule and Apply to selection";
+
+// Tooltip
+BatchMeshingTreeList.MeshingRuleTooltip.Tooltip="Select a meshing rule by double clicking on the cell";
+BatchMeshingTreeList.SupportTooltip.Tooltip="No publication found in the product";
+
+// Report
+
+CATFmtBatchMeshingReportDlg.Title="Report:  /P1";
+ReportOk.Label="Ok";
+FemNameEditor.Label="Fem:";
+
+InfoList.Fem.Label="FEM";
+InfoList.3DShape.Label="3D Shape";
+InfoList.Support.Label="Support";
+InfoList.Rules.Label="Rule";
+InfoList.Mesh.Label="Mesh";
+InfoList.Status.Label="Status";
+InfoList.Plus.Label="+";
+
+NodesElementsList.Entity.Label="Entity";
+NodesElementsList.Size.Label="Size";
+
+ConnectivityList.Connectivity.Label="Connectivity";
+ConnectivityList.Statistics.Label="Statistics";
+
+CriteriaList.Criterion.Label="Criterion";
+CriteriaList.Good.Label="Good";
+CriteriaList.Poor.Label="Poor";
+CriteriaList.Bad.Label="Bad";
+CriteriaList.Worst.Label="Worst";
+CriteriaList.Average.Label="Average";
+
+CriteriaObjectiveDlg.Title="Criteria Objectives";
+CriteriaList.Criterion.Label="Criterion";
+CriteriaList.Connectivity.Label="Connectivity";
+CriteriaList.ErrorThreshold.Label="Error Threshold";
+CriteriaList.WarningThreshold.Label="Warning Threshold";
+CriteriaOkButton.Label="Ok";
+
+// Panel de fin de batch
+
+CATFmtVidMessageBox.Info="FEM created successfully";
+CATFmtVidMessageBox.Error="FEM created with error";
+CATFmtVidMessageBox.Title="Warning";
+CATFmtVidMessageBoxRefresh.Label="Refresh the session";
+
+Info.Meshed.Label="Meshed";
+Info.NotMeshed.Label="Not Meshed";
+
+Nodes.Label="Nodes";
+Elements.Label="Elements";

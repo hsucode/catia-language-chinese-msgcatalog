@@ -1,0 +1,29 @@
+// 3951 校正官方漢化 States
+CATCoGridMergePliesCmd.WaitingForReferencePlies.Message="選擇參考鋪層/鋪層集";
+CATCoGridMergePliesCmd.WaitingForMergedPlies.Message="選擇要合并的鋪層/鋪層集";
+
+// 3951 校正官方漢化 Error & Warning messages
+MsgMissingPly="缺少鋪層";
+MsgMissingSequence="缺少序列";
+MsgMaterialSeparator=" 與 ";
+MsgOrientationSeparator=" 與 ";
+
+MessagesTitle="合并鋪層/序列";
+PliesCannotBeMerged.Message="/p1 鋪層集無法進行幾何圖形合并。\n總共 /p2 個鋪層將被移動，而不進行輪廓合并。\n仍然繼續？";
+SequenceSimplyMoved.Message="要合并的 /p1 序列沒有參考序列對應部分。\n將按原樣移動它們。";
+WrongStackingOrder.Message="錯誤的堆疊順序：/p1 應該在 /p2 之前";
+MergedPlyCannotRefPly.Message="不能選擇合并已經存在于參考鋪層列表中的鋪層";
+RosetteDiffers.Message="坐標系差異";
+ReferenceSurfaceDiffers.Message="參考曲面差異";
+ImpossibleGeometricalMerge.Message="不可能的幾何圖形合并";
+MissingRefPlyMoveOnlyMerge.Message="缺少參考鋪層。/p1 將移動到 /p2 中";
+MissingRefPlyMoveSequenceOnly.Message="缺少參考鋪層。帶有鋪層的 /p1 將移動到 /p2 之后";
+MissingRefSequenceMoveSequenceOnly.Message="缺少參考序列。帶有鋪層的 /p1 將移動到 /p2 之后";
+NoMerge.Message="*無合并*";
+
+MergeFailed.Error.Title="錯誤";
+MergeFailed.Error.Message="與 /P1 合并失敗。/P1 只是移動到參考鋪層的序列。";
+
+tangencyCheckFails.Message="連接檢查失敗";
+tangencyDistanceFails.Message="頂點未連接\n偏差 = ";
+tangencyAngleFails.Message="不同角度\n";

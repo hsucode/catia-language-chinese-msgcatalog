@@ -1,0 +1,72 @@
+PersistentCacheFrame.HeaderFrame.Global.Title="持續高速緩存資源";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.CacheActivationButton.Title="使用持續高速緩存";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.CacheActivationButton.ShortHelp="激活高速緩存以使用持續高速緩存系統";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.CacheActivationButton.LongHelp="為獲得更好的性能，高速緩存系統允許使用存儲在持續高速緩存中的數據。強烈建議定義本地持續高速緩存";
+
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.CachePathLabel.Title="高速緩存位置";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.CachePathPushB.ShortHelp="選擇位置";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.cachePathEditor.LongHelp="用于永久存儲從 ENOVIA 資源庫打開的流的目錄。
+僅當激活高速緩存系統時使用。
+首次從 ENOVIA 資源庫打開 CATIA 文檔時，將其復制到持續高速緩存中以優化對這些數據的下一次訪問。
+這意味著文檔流已在會話中加載，并保存在持續高速緩存中，同時顯示在文檔窗口內。
+下次需要此文檔時，將自動從持續高速緩存中加載已存在的（而非 ENOVIA 資源庫中的）相應流";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.SizeControlCheckButton.Title="檢查最大大小";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.SizeControlCheckButton.ShortHelp="高速緩存系統可以檢查或不檢查持續高速緩存允許的最大大小";
+CacheFrameSize.IconAndOptionsFrame.OptionsFrame.SizeControlCheckButton.LongHelp="激活本地高速緩存上的最大大小檢查。
+如果超過最大大小，將在“最近最少使用”的基礎上刪除足夠數量的文件，以便為新文件騰出空間";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.CacheSizeLabel.Title="最大大小（以 MB 為單位）";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.CacheSizeUnit.Title=" MB";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.cacheSizeEditor.ShortHelp="以兆字節表示的最大高速緩存大小";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.cacheSizeEditor.LongHelp="以兆字節表示的大小值定義了持續高速緩存目錄允許的最大大小。
+如果超過最大大小，將在“最近最少使用”的基礎上刪除足夠數量的文件，以便為需要復制的流文件騰出空間";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.CacheUseLabel.Title="磁盤內存使用";
+
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.FrameMemDel.DeleteCachePushB.Title="刪除文件";
+PersistentCacheFrame.IconAndOptionsFrame.OptionsFrame.FrameMemDel.DeleteCachePushB.ShortHelp="空持續高速緩存內容";
+
+
+
+SessionCacheFrame.HeaderFrame.Global.Title="會話高速緩存 ";
+SessionCacheFrame.IconAndOptionsFrame.OptionsFrame.HelpSessionLabel.Title="        這是什么？： ";
+SessionCacheFrame.IconAndOptionsFrame.OptionsFrame.cacheSessionHelpPush.ShortHelp="會話高速緩存用于優化會話管理";
+SessionCacheFrame.IconAndOptionsFrame.OptionsFrame.cacheSessionHelpPush.LongHelp="會話高速緩存用于優化流管理，例如在會話內打開、保存....。一旦刪除會話，也將清理高速緩存內容";
+
+SessionCacheFrame.IconAndOptionsFrame.OptionsFrame.CacheEncodingLabel.Title="使用的技術";
+
+SessionCacheFrame.IconAndOptionsFrame.OptionsFrame.ShortHelp="本地高速緩存的絕對路徑位置";
+
+SessionCacheFrame.IconAndOptionsFrame.OptionsFrame.CachePathSessionLabel.Title="高速緩存位置";
+
+SessionCacheFrame.IconAndOptionsFrame.OptionsFrame.CachePathSessionPushB.ShortHelp="選擇位置";
+
+SessionCacheFrame.IconAndOptionsFrame.OptionsFrame.cachePathSessionEditor.LongHelp="會話高速緩存必須位于計算機上。
+只能為會話高速緩存定義一個目錄。它定義了會話高速緩存的根路徑。會話高速緩存用于優化會話管理。
+一旦刪除會話，也將清理每個高速緩存內容";
+
+
+
+
+DirectoryBrowser.Title="持續高速緩存的路徑";
+
+DirectoryReleaseBrowser.Title="會話高速緩存的路徑";
+
+Notify.Title="警告";
+Warning="重新啟動應用程序以保存修改";
+WarningEmptyCache="請立即重新啟動應用程序";
+WarningDrop23="尚無法停用持續高速緩存";
+ErrorMessage0="該路徑與有效目錄不對應或無法創建目錄";
+ErrorMessage1="無法創建目錄";
+ErrorMessage2="該路徑與目錄不對應";
+ErrorMessage3="拒絕訪問路徑目錄";
+ErrorMessage4="為會話高速緩存輸入的路徑與有效目錄不對應";
+ErrorMessage5="取消選中“使用持續高速緩存”選項，而非定義 null 大小的持續高速緩存";
+

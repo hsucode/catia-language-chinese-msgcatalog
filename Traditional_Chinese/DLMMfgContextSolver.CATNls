@@ -1,0 +1,103 @@
+NoLicense="PCR 產品授權不Available.";
+
+NoInputFile="No Input XML 文件 specified.";
+InputFileNotFound="輸入XML 文件沒發現 on disk.";
+InputFile="輸入XML 文件: /P1";
+
+NoE5User="No Manufacturing Hub 用戶Name specified.";
+NoPassword="No Manufacturing Hub 用戶Password specified.";
+
+Username="Manufacturing Hub User: /P1";
+
+NoRefProc="The Reference Process is不specified.";
+InvalidRefProc="非法 Reference Process specified.\nObject does不exist in the Manufacturing Hub Database.";
+InvalidRefProcType="非法 Reference Process specified. The Input ID is不of一個Process Object.";
+RefProcInfo="參考Process: '/P1'  Object ID - '/P2'";
+
+NoRootProc="The Root Process for Manufacturing Context is不specified.";
+InvalidRootProc="非法 Root Process specified.\nObject does不exist in the Manufacturing Hub Database.";
+InvalidRootProcType="非法 Root Process specified. The Input ID is不of一個Process Object.";
+RootProcInfo="Root Process: '/P1'  Object ID - '/P2'";
+
+NoRootProd="The Root Product for Manufacturing Context is不specified.";
+InvalidRootProd="非法 Root Product specified.\nObject does不exist in the Manufacturing Hub Database.";
+InvalidRootProdType="非法 Root Product specified. The Input ID is不of一個Product Object.";
+RootProdInfo="Root Product: '/P1'  Object ID - '/P2'";
+
+NoRootRes="The Root Resource for Manufacturing Context is不specified.";
+InvalidRootRes="非法 Root Resource specified.\nObject does不exist in the Manufacturing Hub Database.";
+InvalidRootResType="非法 Root Resource specified. The Input ID is不of一個Resource Object.";
+RootResInfo="Root Resource: '/P1'  Object ID - '/P2'";
+
+NoPCOption="No 'Option' specified for Volumetric Context. Please input一個value.";
+InvalidPCOption="非法 'Option' specified for Volumetric Context. Please specify一個valid value.";
+
+NoMCOption="No 'Option' specified for Manufacturing Context. Please input一個value.";
+InvalidMCOption="非法 'Option' specified for Manufacturing Context. Please specify一個valid value.";
+
+DeletePC ="The existing Volumetric Context will be deleted as per the input options.";
+RetainPC ="The existing Volumetric Context will be retained as per the input options.";
+
+DeleteMC ="The existing Manufacturing Context will be deleted as per the input options.";
+RetainMC ="The existing Manufacturing Context will be retained as per the input options.";
+
+PCBlankExpDate="Expiry Date for Planning Context inputs is不specified.\nPlanning Context will不be computed.";
+MCBlankExpDate="Expiry Date for Manufacturing Context inputs is不specified.\nManufacturing Context will不be computed.";
+
+PCInvalidExpDate="Expiry Date for Planning Context inputs is invalid.\nPlanning Context will不be computed.";
+MCInvalidExpDate="Expiry Date for Manufacturing Context inputs is invalid.\nManufacturing Context will不be computed.";
+       
+PCInputExpired="Inputs specified for Volumetric Context have expired. Request to compute will be ignored.";
+MCInputExpired="Inputs specified for Manufacturing Context have expired. Request to compute will be ignored.";
+
+NoPCBBox="No Bounding Box specified for Volumetric Context.";
+
+InvalidBoundaryOp="非法 Boundary Operator specified. Please select from 'FullyIn'或 'PartlyIn'.";
+NoBoundOp="No value specified for the Boundary Operator. Please input一個value.";
+
+NoBBoxValue="No value specified for '/P1'. Please input一個value.";
+InvalidBBoxValue="非法 value specified for '/P1'. Please specify一個numeric value.";
+
+InvalidBBox="The specified Bounding Box does不enclose一個volume. Please specify一個valid Bounding Box.";
+InvalidValues="The input Bounding Box has missing/invalid values. Please specify一個valid Bounding Box.";
+
+NoFilterValue="No value specified for filter '/P1'. Please input一個值";
+
+NoComputePC="Volumetric Context cannot be computed because of invalid/missing inputs.";
+NoComputeMC="Manufacturing Context cannot be computed because of invalid/missing inputs.";
+
+NoProcRel="No process relations are specified for computing the Manufacturing Context.";
+NoProdRel="No product relations are specified for computing the Manufacturing Context.";
+NoResRel="No resource relations are specified for computing the Manufacturing Context.";
+
+OnlyRemoveProdRel="Only Process Removes Product relation is specified for Manufacturing Context.\nRequest to compute will be ignored if only product inputs are specified.";
+OnlyDetachesResRel="Only Process Detaches Resource relation is specified for Manufacturing Context.\nRequest to compute will be ignored if only resource inputs are specified.";
+
+NoUserRights="用戶does不have required rights在參考 Process.";
+RefProcLockFailed = "Could不acquire lock on the Reference Process.";
+
+NoAction="Solver terminated because of invalid inputs或 specified input Options.";
+
+ParseInputXMLFailed = "輸入XML 文件 could不be read.";
+CreateE5TransactionFailed = "Could不initiate一個connection with the Manufacturing Hub database.";
+
+ComputePCFail = "There was一個error while computing the Volumetric Context.";
+NoPCObjects = "There are no products in the Volumetric Context.";
+ComputePCOk = "Volumetric Context computed successfully.";
+NumPCObjects = "Number of Volumetric Context Products: /P1";
+
+ComputeMCFail = "There was一個error while computing the Manufacturing Context.";
+NoMCObjects = "There are no objects in the Manufacturing Context.";
+ComputeMCOk = "Manufacturing Context computed successfully. ";
+NumMCObjects = "Number of Manufacturing Context Objects: /P1";
+
+BlobSaveOK = "The Context Detailing was saved/updated successfully.";
+BlobDeleteOK = "The Context Detailing was deleted successfully.";
+
+NoBlobDelete = "There is no existing Context Detailing on the Reference process from which to delete the context.";
+BlobActionFailed = "There was一個error while saving/deleting the Context Detailing.";
+
+// 3951 校正官方漢化End of Change
+
+
+

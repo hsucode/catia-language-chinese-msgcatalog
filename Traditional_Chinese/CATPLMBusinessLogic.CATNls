@@ -1,0 +1,170 @@
+CATPLMBusinessLogic.Alias="PLM 業務邏輯實施";
+CATPLMBusinessLogic.Description="定義開口以使用業務規則自定義 PLM 系統。";
+
+PLMInstanceAggregationCheck.Alias="實例聚集檢查";
+PLMInstanceAggregationCheck.Description="能夠集成業務邏輯，以通過實例驗證其他項中的參考聚集。";
+
+PLMInstanceAggregationCheck.ThisObject.Alias="聚集的參考";
+PLMInstanceAggregationCheck.ThisObject.Description="此業務邏輯實際上是我們嘗試將實例聚集其中的參考。";
+
+PLMInstanceAggregationCheck.ReferenceToInstantiate.Alias="參考實例化";
+PLMInstanceAggregationCheck.ReferenceToInstantiate.Description="此參數包含我們要在其他參考下聚集的參考";
+
+PLMIdentificationInitialization.Alias="屬性初始化";
+PLMIdentificationInitialization.Description="能夠集成業務邏輯，以預先評估創建時對象的 PLM 屬性。";
+
+PLMIdentificationInitialization.ThisObject.Alias="要創建的參考。";
+PLMIdentificationInitialization.ThisObject.Description="此業務邏輯實際上是我們要創建的參考。它尚不是 PLM 對象。而是 PLM 代理。";
+
+PLMIdentificationInitialization.OperationId.Alias="對此對象執行的操作。";
+PLMIdentificationInitialization.OperationId.Description="精確對象的創建上下文：PLM 新命令中的“新建”，在復制中使用時為“克隆”，通過應用程序創建對象時為“隱式”，其他所有情況下均為“默認”。";
+
+PLMIdentificationInitialization.IdString.Alias="建議的前綴。";
+PLMIdentificationInitialization.IdString.Description="包含為評估標識符屬性而建議的前綴。";
+
+PLMIdentificationInitialization.IdCloningString.Alias="在復制模式下建議的前綴。";
+PLMIdentificationInitialization.IdCloningString.Description="包含為在復制上下文中評估標識符屬性而建議的前綴。";
+
+PLMIdentificationInitialization.CopyFrom.Alias="已復制的對象。";
+PLMIdentificationInitialization.CopyFrom.Description="包含在復制上下文中復制的原始對象。對讀取其部分屬性非常有用。";
+
+PLMIdentificationInitialization.CoupledRef.Alias="已耦合的參考。";
+PLMIdentificationInitialization.CoupledRef.Description="包含復制展示時復制的參考。";
+
+PLMIdentificationInitialization.AggregatingReference.Alias="聚集的參考。";
+PLMIdentificationInitialization.AggregatingReference.Description="已創建的實例的聚集參考（如果進行實例初始化）。";
+
+PLMIdentificationInitialization.Reference.Alias="實例參考。";
+PLMIdentificationInitialization.Reference.Description="我們初始化的實例的參考（如果進行實例初始化）。";
+
+PLMIdentificationInitialization.IncSessionId.Alias="在會話中遞增。";
+PLMIdentificationInitialization.IncSessionId.Description="在會話中遞增以幫助評估識別的屬性的整數。";
+
+PLMAttributesValuationCheck.Alias="屬性評估檢查";
+PLMAttributesValuationCheck.Description="能夠在最終用戶修改屬性之后集成業務邏輯。";
+
+PLMAttributesValuationCheck.ThisObject.Alias="已修改對象。";
+PLMAttributesValuationCheck.ErrorAttributes.Description="此業務邏輯實際上是已在其上修改屬性的 PLM 對象。";
+
+PLMAttributesValuationCheck.ErrorAttributes.Alias="屬性出錯。";
+PLMAttributesValuationCheck.ErrorAttributes.Description="包含修改后出錯的屬性列表。";
+
+PLMAttributesValuationCheck.WarningAttributes.Alias="屬性警告。";
+PLMAttributesValuationCheck.ErrorAttributes.Description="包含修改后已產生警告的屬性列表。";
+
+PLMAttributesValuationCheck.ErrorMessages.Alias="錯誤消息。";
+PLMAttributesValuationCheck.ErrorMessages.Description="包含要產生的錯誤消息的列表。";
+
+PLMAttributesValuationCheck.WarningMessages.Alias="警告消息。";
+PLMAttributesValuationCheck.WarningMessages.Description="包含要產生的警告消息的列表。";
+
+PLMAttributesValuationFinalization.Alias="屬性評估最終檢查";
+PLMAttributesValuationFinalization.Description="能夠在最終用戶修改屬性之后集成業務邏輯。";
+
+PLMAttributesValuationFinalization.ThisObject.Alias="已修改對象。";
+PLMAttributesValuationFinalization.ErrorAttributes.Description="此業務邏輯實際上是已在其上修改屬性的 PLM 對象。";
+
+PLMAttributesValuationFinalization.ErrorAttributes.Alias="屬性出錯。";
+PLMAttributesValuationFinalization.ErrorAttributes.Description="包含修改后出錯的屬性列表。";
+
+PLMAttributesValuationFinalization.WarningAttributes.Alias="屬性警告。";
+PLMAttributesValuationFinalization.ErrorAttributes.Description="包含修改后已產生警告的屬性列表。";
+
+PLMAttributesValuationFinalization.ErrorMessages.Alias="錯誤消息。";
+PLMAttributesValuationFinalization.ErrorMessages.Description="包含要產生的錯誤消息的列表。";
+
+PLMAttributesValuationFinalization.WarningMessages.Alias="警告消息。";
+PLMAttributesValuationFinalization.WarningMessages.Description="包含要產生的警告消息的列表。";
+
+PLMAttributesPropagation.Alias="屬性評估傳播";
+PLMAttributesPropagation.Description="能夠在最終用戶修改屬性之后集成業務邏輯，以傳播信息：屬性修改或屬性可視性。";
+
+PLMAttributesPropagation.ThisObject.Alias="已修改對象。";
+PLMAttributesPropagation.ThisObject.Description="此業務邏輯實際上是已在其上修改屬性的 PLM 對象。";
+
+PLMAttributesPropagation.PropagationMode.Alias="傳播模式。";
+PLMAttributesPropagation.PropagationMode.Description="指明我們是希望業務邏輯傳播屬性值（評估），還是屬性可視性（編輯）。";
+
+PLMAttributesPropagation.EditAttributeId.Alias="已修改屬性。";
+PLMAttributesPropagation.EditAttributeId.Description="已修改的屬性名稱。";
+
+PLMImportExportAttributesValuation.Alias="導入/導出評估傳播";
+PLMImportExportAttributesValuation.Description="能夠在導入（以評估 PLM 屬性）或導出（以從 PLM 屬性提取信息）時集成業務邏輯。";
+
+PLMImportExportAttributesValuation.ThisObject.Alias="要導出的對象，或要在導入時評估的 PLM 代理。";
+PLMImportExportAttributesValuation.ThisObject.Description="此業務邏輯實際上是已導出的 PLM 對象，或即將在導入時創建的對象（PLM 代理）。";
+
+PLMImportExportAttributesValuation.OperationId.Alias="對此對象執行的操作。";
+PLMImportExportAttributesValuation.OperationId.Description="精確此業務邏輯的用法上下文：在基于文件的導出時為 DataExchangeExport，在基于文件的導入時為 DataExchangeImport，在導入公文包時為 BriefcaseImport。";
+
+PLMImportExportAttributesValuation.IdString.Alias="建議的前綴。";
+PLMImportExportAttributesValuation.IdString.Description="包含為評估標識符屬性而建議的前綴。";
+
+PLMImportExportAttributesValuation.iFileId.Alias="文件名";
+PLMImportExportAttributesValuation.iFileId.Description="已導入的文件名。";
+
+PLMImportExportAttributesValuation.oReferenceId.Alias="要創建的文件名";
+PLMImportExportAttributesValuation.oReferenceId.Description="即將導出的文件名。";
+
+PLMImportExportAttributesValuation.IncSessionId.Alias="在會話中遞增。";
+PLMImportExportAttributesValuation.IncSessionId.Description="在會話中遞增以幫助評估識別的屬性的整數。";
+
+PLMImportExportAttributesValuation.GlobalWarningMessage.ComponentType="用于部件類型：/p1。\n";
+PLMImportExportAttributesValuation.WarningMessage.Truncation="屬性 /p1 已被截斷為 /p2 個字符。\n";
+
+PLMRelationEstablishmentCheck.Alias="關系建立檢查";
+PLMRelationEstablishmentCheck.Description="能夠集成業務邏輯，以驗證兩個對象之間的關系建立。";
+
+PLMRelationEstablishmentCheck.RelationType.Alias="關系類型。";
+PLMRelationEstablishmentCheck.RelationType.Description="關系類型。在 PLM 中，所有關系都有一個特定類型";
+
+PLMRelationEstablishmentCheck.Target.Alias="目標。";
+PLMRelationEstablishmentCheck.RelationType.Description="要通過關系參考的對象";
+
+PLMCustoTypeMapping.Alias="自定義類型映射計算";
+PLMCustoTypeMapping.Description="能夠在共存方案中集成業務邏輯，以根據源自定義類型和屬性設置對象的目標自定義類型。";
+
+PLMCustoTypeMapping.ThisObject.Alias="實體對象。";
+PLMCustoTypeMapping.ThisObject.Description="此業務邏輯實際上是要在尚未具有自定義類型（不使用）的情況下創建的目標對象。";
+
+PLMCustoTypeMapping.OperationId.Alias="對此對象執行的操作。";
+PLMCustoTypeMapping.OperationId.Description="精確此業務邏輯的用法上下文：在共存交換期間共存";
+
+PLMCustoTypeMapping.SourceObject.Alias="源對象。";
+PLMCustoTypeMapping.SourceObject.Description="代表具有其自定義類型和屬性的源對象的 PLMProxy。";
+
+PLMCustoTypeMapping.SourceProvider.Alias="源提供程序名稱";
+PLMCustoTypeMapping.SourceProvider.Description="源對象的提供程序的名稱。";
+
+PLMCustoTypeMapping.TargetProvider.Alias="目標提供程序的名稱";
+PLMCustoTypeMapping.TargetProvider.Description="目標對象的提供程序的名稱。";
+
+PLMAttributesMapping.Alias="屬性映射執行";
+PLMAttributesMapping.Description="能夠在共存方案中集成業務邏輯，以映射外部屬性。";
+
+PLMAttributesMapping.ThisObject.Alias="目標對象。";
+PLMAttributesMapping.ThisObject.Description="此業務邏輯實際上是在其上設置屬性的目標對象的代理。";
+
+PLMAttributesMapping.OperationId.Alias="對此對象執行的操作。";
+PLMAttributesMapping.OperationId.Description="精確此業務邏輯的用法上下文：在共存交換期間共存";
+
+PLMAttributesMapping.SourceObject.Alias="源對象。";
+PLMAttributesMapping.SourceObject.Description="代表具有其自定義類型和屬性的源對象的 PLMProxy。";
+
+PLMAttributesMapping.SourceProvider.Alias="源提供程序名稱";
+PLMAttributesMapping.SourceProvider.Description="源對象的提供程序的名稱。";
+
+PLMAttributesMapping.TargetProvider.Alias="目標提供程序名稱";
+PLMAttributesMapping.TargetProvider.Description="目標對象的提供程序的名稱。";
+
+ContactAdministrator="聯系您的管理員以解決以下問題。";
+
+PLMRelationSuppressionCheck.Alias="關系取消檢查";
+PLMRelationSuppressionCheck.Description="能夠集成業務邏輯，以驗證兩個對象之間關系的取消。";
+
+PLMRelationSuppressionCheck.RelationType.Alias="關系類型。";
+PLMRelationSuppressionCheck.RelationType.Description="關系類型。在 PLM 中，所有關系都有一個特定類型";
+
+PLMRelationSuppressionCheck.Target.Alias="目標。";
+PLMRelationSuppressionCheck.RelationType.Description="通過關系參考以及我們要斷開連接的對象。";
+

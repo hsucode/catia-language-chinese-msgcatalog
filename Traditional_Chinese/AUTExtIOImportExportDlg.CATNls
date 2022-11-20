@@ -1,0 +1,38 @@
+DlgTitle="導入/導出 IO 定義";
+ActionFrame.RadioButtonExport.Title="導出";
+ActionFrame.RadioButtonImport.Title="導入";
+OpenFileExport="選擇要導出到的文件";
+OpenFileImport="選擇要導入的文件";
+ExportFileExists="文件 /p1 已存在。\n要替換它嗎？";
+Export="導出至文件";
+Import="從文件導入";
+OpenFileFailed="無法打開文件：\n/p1";
+ImportDefDone="已完成導入定義";
+ExportDefDone="導出定義完成";
+ContinueOnError="想要繼續嗎？";
+LabelFile.Title="文件：";
+FileFrame.Title="文件";
+NoFileToRead="CSV 文件讀取操作失敗\n",
+"請通過瀏覽命令選擇一個要讀取的 CSV 文件源。\n";
+NoFileToWrite="CSV 寫入操作失敗\n",
+"請通過瀏覽命令選擇一個要寫入的 CSV 文件位置。\n";
+
+OpenCSVFile="打開 csv 文件：/p";
+OpenCSVFileFailure="無法打開 csv 文件：/p";
+ReadCSVFile="讀取 csv 文件...";
+ReadCSVFileOK="讀取 csv 文件...完成";
+WriteCSVFile="寫入 csv 文件...";
+WriteCSVFileOK="寫入 csv 文件...完成";
+BadCSVFieldNB="\t-> 行/p1：語法錯誤：需要 5 個項屬性（已找到 /p2）";
+ImportIODef="導入 IO 定義...";
+ImportIODefOK="導入 IO 定義...完成";
+ExportIODef="導出 IO 定義...";
+ExportIODefOK="導出 IO 定義...完成";
+UnableToCreatePort="\t-> 無法創建 IO 端口定義";
+NbOfCreatedIO="\t-> /p 新項已被成功創建";
+NbOfFailedIO="\t-> /p 項的導入操作已失敗";
+IOTypeError="\t-> 行/p1：類型錯誤：不支持\"/p2\"類型";
+IOTypeWarning="\t-> 行/p1：類型警告：缺失類型";
+IODirError="\t-> 行 /p: 方向錯誤：僅支持\"進\"或\"出\"方向";
+IODirWarning="\t-> 行 /p: 方向警告：缺失方向";
+BadIONameSyntax="\t-> 行 /p: 語法錯誤：IO 名稱屬性語法錯誤";

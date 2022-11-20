@@ -1,0 +1,82 @@
+// 3951 校正官方漢化=================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2006
+// 3951 校正官方漢化=================================================================
+// 3951 校正官方漢化 VPM (c) Copyright Dassault Systemes 2006
+// 3951 校正官方漢化=================================================================
+// 3951 校正官方漢化 Usage Notes:
+// 3951 校正官方漢化=================================================================
+// 3951 校正官方漢化 History:
+// 3951 校正官方漢化 Aug 2007 - PBI - Creation
+// 3951 校正官方漢化=================================================================
+
+// 3951 校正官方漢化=================================================================
+// 3951 校正官方漢化 Communication with server
+// 3951 校正官方漢化=================================================================
+E_NO_PLMCONNECTION.Request="連接到索引服務器期間發生錯誤";
+E_NO_PLMCONNECTION.Diagnostic="未找到與 PLM 提供程序的連接。無法檢索用戶連接參數。";
+E_NO_PLMCONNECTION.Advice="請檢查與 PLM 提供程序的連接，或與您當地的支持人員聯系。";
+
+
+// 3951 校正官方漢化 if execute query is KO, it may be because the sdam is time out.
+E_EXECUTE_QUERY.Request="PLMIndex 軟件中發生錯誤";
+E_EXECUTE_QUERY.Diagnostic="無法執行索引查詢。";
+E_EXECUTE_QUERY.Advice="請檢查索引服務器是否正常，或與您當地的支持人員聯系";
+E_EXECUTE_QUERY.ErrorConvertToBase64="轉換為 Base64 時發生內部錯誤";
+E_EXECUTE_QUERY.ErrorGetMemoryBuffer="獲取內存緩沖區時發生內部錯誤";
+
+// 3951 校正官方漢化 default Request and Advice for messages coming from Index Server
+E_GENERIC_INDEXERROR.Request="PLMIndex 軟件中發生錯誤";
+E_GENERIC_INDEXERROR.Diagnostic="查詢索引服務器時發生意外錯誤。";
+E_GENERIC_INDEXERROR.Advice="請與您當地的支持人員聯系";
+
+E_CHECK_LOGON="檢查您的登錄";
+// 3951 校正官方漢化=================================================================
+// 3951 校正官方漢化 3DQL syntax error
+// 3951 校正官方漢化=================================================================
+
+E_FAILED_OVERWRITE_PREV_QUERY.Request="PLMIndexQL 發生內部錯誤";
+E_FAILED_OVERWRITE_PREV_QUERY.Diagnostic="無法從內部堆棧中移除先前定義的查詢";
+E_FAILED_OVERWRITE_PREV_QUERY.Advice="發生嚴重的內存錯誤。請保存您的工作并重新啟動";
+
+E_MISSING_PARAM.Request="PLMIndexQL 中發生語法錯誤";
+E_MISSING_PARAM.Diagnostic="查詢 /P02 中缺少 /P01 參數。";
+E_MISSING_PARAM.Advice="檢查您的查詢并添加缺失的參數。";
+E_MISSING_PARAM.Info="查詢中缺失參數： ";
+
+E_MISSING_QUERY.Request="PLMIndexQL 中發生語法錯誤";
+E_MISSING_QUERY.Diagnostic="嘗試運行索引查詢，但未定義任何內容。";
+E_MISSING_QUERY.Advice="檢查您的查詢。";
+
+E_TOOMANY_PARAM.Msg="為查詢設置的參數過多：";
+E_TOOMANY_PARAM.Request="PLMIndexQL 中發生語法錯誤";
+E_TOOMANY_PARAM.Diagnostic="為查詢 /P01 定義的參數過多。";
+E_TOOMANY_PARAM.Advice="檢查您的查詢并移除額外的參數。";
+
+E_WRONG_PARAM.Request="參數類型錯誤";
+E_WRONG_PARAM.Diagnostic="找到的參數類型與期望的不同。";
+E_WRONG_PARAM.Advice="檢查您的查詢并添加正確的參數。";
+E_WRONG_PARAM.Info="查詢中的參數錯誤。";
+
+// 3951 校正官方漢化=================================================================
+// 3951 校正官方漢化 Connection with 3D Index Server errors
+// 3951 校正官方漢化=================================================================
+ErrorMsgId_IndexBridge_DaemonPool_InitFailed.Request="索引橋接處理器問題";
+ErrorMsgId_IndexBridge_DaemonPool_InitFailed.Diagnostic="無效的索引橋接處理器配置";
+ErrorMsgId_IndexBridge_DaemonPool_InitFailed.Advice="必須配置索引橋接處理器以計算索引請求";
+
+ErrorMsgId_IndexBridge_ConnectionPool_ServerURL_InvalidURLReturnedByConnectionPool.Request="索引橋接處理器問題";
+ErrorMsgId_IndexBridge_ConnectionPool_ServerURL_InvalidURLReturnedByConnectionPool.Diagnostic="用于索引橋接服務器和索引服務器之間的請求無效";
+ErrorMsgId_IndexBridge_ConnectionPool_ServerURL_InvalidURLReturnedByConnectionPool.Advice="檢查索引橋接配置文件";
+
+ErrorMsgId_IndexBridge_ConnectionServer_ConnectionRefusedByServer.Request="連接到 3D 索引服務器時出錯。";
+ErrorMsgId_IndexBridge_ConnectionServer_ConnectionRefusedByServer.Diagnostic="無法連接到 3D 索引服務器。\n可能未啟動 3D 索引服務器。";
+ErrorMsgId_IndexBridge_ConnectionServer_ConnectionRefusedByServer.Advice="啟動 3D 索引服務器。啟動之后，您需要重新啟動客戶端，否則，連接仍將失敗。";
+
+ErrorMsgId_IndexBridge_ConnectionPool_MaximunConReached.Request="無法處理 3D 索引請求";
+ErrorMsgId_IndexBridge_ConnectionPool_MaximunConReached.Diagnostic="所有 3D 索引服務器進程均處于忙碌狀態。";
+ErrorMsgId_IndexBridge_ConnectionPool_MaximunConReached.Advice="稍后重試，并請求 IT 支持，以增加 3D 索引服務器的數量。";
+
+ErrorMsgId_IndexBridge_ConnectionPool_InternalError.Request="索引橋接處理器中存在內部問題";
+ErrorMsgId_IndexBridge_ConnectionPool_InternalError.Diagnostic="已檢測到連接池問題";
+ErrorMsgId_IndexBridge_ConnectionPool_InternalError.Advice="檢查服務器日志";
+

@@ -1,0 +1,93 @@
+Title="保存";
+OptionsTopFrame.UITableSelectionLabel.Title="視圖";
+OptionsTopFrame.VoidLabel1.Title="  ";
+OptionsTopFrame.VoidLabel3.Title="  ";
+
+
+OptionsTopFrame.CreateVersionCheckButton.ShortHelp="創建版本";
+OptionsTopFrame.CreateVersionCheckButton.LongHelp="創建版本";
+
+OptionsTopFrame.SaveScopeCombo.ShortHelp="保存范圍";
+OptionsTopFrame.SaveScopeCombo.LongHelp="選擇要用于保存的范圍。";
+OptionsTopFrame.SaveScopeCombo.Help="選擇要用于保存的范圍。";
+
+SaveScopeCombo_Session.Title="會話";
+SaveScopeCombo_Editor.Title="當前編輯器";
+SaveScopeCombo_ActiveDoc.Title="活動文檔";
+
+OptionsTopFrame.FilterButton.ShortHelp="僅顯示已修改的文檔（如已選定）。";
+OptionsTopFrame.FilterButton.LongHelp="僅顯示已修改的文檔（如已選定）。";
+OptionsTopFrame.FilterButton.Help="僅顯示已修改的文檔（如已選定）。";
+
+SaveFrame.Title="保存列表框架";
+SaveFrame.PreviewAndStatsFrame.VoidLabel.Title="  ";
+SaveFrame.PreviewAndStatsFrame.VoidLabel6.Title=" ";
+FilteredObj=" 已過濾的對象";
+NewObjs=" 新對象";
+NewObj=" 新對象";
+ModifiedObjs=" 已修改的對象";
+ModifiedObj=" 已修改的對象";
+SaveScope="保存范圍包括：";
+ExcludedObjs=" 已排除的對象";
+ExcludedObj=" 已排除的對象";
+IncludedObjs=" 已包括的對象";
+IncludedObj=" 已包括的對象";
+
+// 3951 校正官方漢化 Error Message Box Title
+MessageTitle="ENOVIA V6 - 保存";
+ServerErrorTitle=" - 服務器錯誤";
+ErrorTitle=" - 錯誤";
+
+// 3951 校正官方漢化 Introduction message for each of the cases where an error might popup
+SaveDialogBuildFailed="嘗試構建“保存”對話框時發生了錯誤：\n\n";
+SaveFailed="嘗試保存選定文檔時發生了錯誤：\n\n";
+ExploreFailed="嘗試在 ENOVIA 中瀏覽文檔時發生了錯誤：\n\n";
+TableSwitchFailed="更改“保存”對話框的表時發生了錯誤：\n\n";
+
+// 3951 校正官方漢化 Detailed Error cases
+DefaultErrorMessage="抱歉，未能識別問題。";
+
+NewNotSavedNodesConfirmation="這些文件未保存到磁盤上：\n/P1\n將使用默認文件名將它們保存在本地工作區目錄中：\n/P2\n\n是否要繼續？";
+
+NewNotSavedNodesError.Request="無法將新文檔保存到磁盤。";
+NewNotSavedNodesError.Diagnostic="這些文件未保存到磁盤上：\n/P1\n本地工作區目錄中已存在一些同名文件：\n/P2";
+NewNotSavedNodesError.Advice="在啟動“保存”之前，請使用適當的名稱保存這些文件。";
+
+NewNotSavedNodesSaveError.Request="無法將新文檔保存到磁盤。";
+NewNotSavedNodesSaveError.Diagnostic="嘗試保存以下新文檔失敗：\n/P1";
+NewNotSavedNodesSaveError.Advice="請檢查磁盤空間和您對本地工作區目錄的訪問權限，并在啟動“ENOVIA V6 保存”之前將新文檔保存到磁盤。";
+
+NothingToSave.Request="沒有要保存的內容。";
+NothingToSave.Diagnostic="未打開任何文檔。";
+NothingToSave.Advice="要在 ENOVIA 中保存文檔，請先在會話中打開它。";
+
+NoModificationToSave.Request="所有文檔均已保存在 ENOVIA 中。";
+NoModificationToSave.Diagnostic="本地文檔不包含任何尚未保存的修改。";
+NoModificationToSave.Advice="如果愿意，您仍可選擇現有文檔來創建新的次要版本或新的主要修訂版。";
+
+ObsoleteUUIDDocs.Request="無法保存 UI 選擇的文檔。";
+ObsoleteUUIDDocs.Diagnostic="某些文檔已作廢或存在 UUID 沖突。";
+ObsoleteUUIDDocs.Advice="如果要保存，請解決沖突。";
+
+LockedByOtherUser.Request="無法保存 UI 選擇的文檔。";
+LockedByOtherUser.Diagnostic="某些文檔被其他用戶鎖定且仍在修改。";
+LockedByOtherUser.Advice="如果要保存，請解決文檔狀態。";
+
+TableError.Request="無法將表 /P1 用于“保存”對話框。";
+TableError.Diagnostic="表中缺少某些必填字段：\n/P2";
+TableError.Advice="請先在表 /P1 中定義這些字段，然后再將其用于“保存”對話框。有關自定義“保存”對話框表的其他信息可在文檔中找到。";
+
+SaveSuccess="已將 /P1 對象成功保存到 ENOVIA V6。";
+OptionsTopFrame.WorkspaceFolderButton.Title="工作區文件夾按鈕";
+OptionsTopFrame.WorkspaceFolderButton.LongHelp="工作區文件夾選擇";
+OptionsTopFrame.WorkspaceFolderButton.ShortHelp="工作區文件夾選擇";
+OptionsTopFrame.SaveTo.Title="保存到";
+
+ECValidationFailed.Request="無法保存 UI 選擇的文檔。";
+ECValidationFailed.Diagnostic="驗證嵌入式部件時，檢測到問題。";
+ECValidationFailed.Advice="如果要保存，請解決嵌入式部件問題。";
+
+SelectionValidationFailed.Request="無法保存 UI 選擇的文檔。";
+SelectionValidationFailed.Diagnostic="所有這些項目均無權創建/覆蓋版本。";
+SelectionValidationFailed.Advice="如果要保存，請修改您的選擇。";
+

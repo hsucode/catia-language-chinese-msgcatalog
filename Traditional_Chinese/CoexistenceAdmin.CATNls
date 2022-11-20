@@ -1,0 +1,103 @@
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2007 - CATIA V5R204
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化 March, 6th 2007 - Creation: YWE
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化 CoexistenceAdmin implementation
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化 This msgcatalog is used to define the CoexistenceAdmin messages used in
+// 3951 校正官方漢化   both CoexistenceAdmin & CoexistenceAdminUI modules and objects
+// 3951 校正官方漢化      - CoexistenceAdmin: Integration in BatchMonitor (CATBatchStarter)
+// 3951 校正官方漢化      - CoexistenceAdminBM: Integration in BatchMonitor (CATUTIL)
+// 3951 校正官方漢化      - CoexistenceAdminPLM: Adhesion to CATIBatchAppl
+// 3951 校正官方漢化      - CoexistenceAdminUI: CoexistenceAdminUI specific user interface
+// 3951 校正官方漢化
+// 3951 校正官方漢化 US Version
+// 3951 校正官方漢化===========================================================================
+
+CoexistenceAdmin.Title="管理 V5/V6 共存映射數據";
+CoexistenceAdmin.Err.Licence="CoexistenceAdmin 應用程序在當前配置中不可用。";
+CoexistenceAdmin.BatchOK="執行成功。";
+CoexistenceAdmin.BatchKO="執行中止。";
+CoexistenceAdmin.Err.Security="當前配置不支持 CoexistenceAdministration 操作。";
+CoexistenceAdmin.Err.ObjectNotProcessed="尚未處理對象。";
+
+LblMappingOpTitle.Title="  映射操作  ";
+RdbMappingOpDelete.Title="刪除                    ";
+RdbMappingOpOwnership.Title="所有權轉移  ";
+LblMappingOpDeleteSpc.Title="     ";
+LblMappingOpOwnershipSpc.Title="     ";
+CkbOperationMode.Title="預覽";
+
+LblApplyToOpTitle.Title="  將操作應用到   ";
+RdbApplyToOpSelComp.Title="選擇的部件";
+RdbApplyToOpAllComp.Title="與上下文相關的所有部件";
+
+Report.Title.Delete="刪除結果";
+Report.Title.Ownership="所有權轉移結果";
+Report.Title.Preview=" （預覽模式）";
+
+Report.Info.DeleteForObject="刪除對象的映射 ";
+Report.Info.OwnershipForObject="對象的所有權轉移 ";
+Report.Info.OwnershipFromV5V6Master=" 從 V5 到 V6 主數據";
+Report.Info.OwnershipFromV6V5Master=" 從 V6 到 V5 主數據";
+Report.Info.OwnershipAllowRepWarning=" 警告：如果重新導入，則為此對象定義的規格可能會丟失。";
+Report.Info.ContextName="上下文名稱： ";
+Report.Info.DWSName="Designer Workspace 名稱： ";
+Report.Info.PropagateAll="傳播到所有子級";
+Report.Info.PropagateNo="無傳播";
+Report.Info.PropagateDepth="傳播到深度為 /p1 的子級";
+Report.Info.OperationResult="操作結果";
+Report.Info.ObjectsPropagatedFrom="對象傳播來源 ";
+Report.Info.ObjectsRetrievedFrom="對象檢索來源 ";
+
+Report.Info.InternalError="內部錯誤，請報告問題 ";
+Report.Info.UnexpectedError="意外錯誤 ";
+Report.Info.DeleteInOneContext="刪除選定上下文中的映射 ";
+Report.Info.DeleteAllInContext="刪除選定上下文中的映射 ";
+Report.Info.RunOwnershipOK="所有權轉移成功 ";
+Report.Info.RunOwnershipKO="所有權轉移失敗 ";
+Report.Info.InfoCollectionOK="信息收集成功 ";
+Report.Info.InfoCollectionKO="信息收集失敗 ";
+Report.Info.SaveMappingKO="保存映射失敗 ";
+Report.Info.SetMappingMasterKO="尚未更改所有權 ";
+Report.Info.RunSuccessful="映射操作成功 ";
+Report.Info.RunPartial="映射操作已部分處理 ";
+Report.Info.RunUnsuccessful="映射操作失敗 ";
+Report.Info.StatusKO=" 失敗 ";
+Report.Info.StatusOK=" 成功 ";
+Report.Info.StatusIgnored=" 已忽略 ";
+Report.Info.StatusNoMapping=" 此部件沒有映射 ";
+Report.Info.StatusNotInCurrentDWS=" 不屬于 Designer Workspace /p1 ";
+Report.Info.StatusSkipped=" 已跳過 ";
+Report.Info.StatusSameOwnership=" 所有權已 ";
+Report.Info.StatusNotAllowed=" 不允許 ";
+Report.Info.StatusRepIsV6Master=" 展示為 V6Master，不允許轉移所有權，因為已按結果轉換零件。請先按規格轉換零件。 ";
+Report.Info.StatusRepIsV6MasterAsSpecButNeedAllowRep=" 展示為 V6Master，要允許轉移所有權，必須啟用“允許展示”復選按鈕";
+Report.Info.StatusRepIsV6MstAndMustBeSelected=" 展示為 V6Master，僅當不進行傳播時才能更改";
+Report.Info.StatusCmpIsV4Master=" 部件為 V4Master ";
+Report.Info.StatusCmpIsV5Master=" 部件為 V5Master ";
+Report.Info.StatusCmpIsV5CgrMaster=" 部件為 V5Master 并已在可視化模式下導入 ";
+Report.Info.StatusCmpIsV6CgrMaster=" 部件為 V6Master 并已在可視化模式下導出 ";
+Report.Info.StatusCmpIsV6MasterFromDWS=" 部件為 V6Master 并已在 Design Workspace 中導出 ";
+Report.Info.StatusObjNotManaged=" 未管理對象 ";
+Report.Info.ImpactedComp="受影響的 V6 部件";
+Report.Info.ImpactedNone="無";
+Report.Info.ImpactNotComputed="未計算";
+Report.Info.WrongOwnership="未識別所有權值";
+Report.Info.ConnectToDWSFailure="無法連接到 Designer Workspace /p1 ";
+Report.Info.Warnings="映射操作警告：";
+
+Check.Err.ContextName="未定義上下文名稱";
+Check.Err.OperationType="不支持的映射操作： ";
+Check.Err.OwnershipType="不支持的所有權轉移類型： ";
+Check.Err.OwnershipOption="不支持的所有權轉移選項： ";
+Check.Err.PropagateValue="不支持的傳播值 ";
+Check.Err.PropagateFileMode="處于文件模式： ";
+Check.Err.ApplyType="映射操作將應用到以下不支持的類型： ";
+Check.Err.OwnershipToAllComp="無法對所有部件應用所有權轉移";
+Check.Err.Mode="不支持的映射操作模式： ";
+
+PopUp.DeleteAll.Warning="是否確定要刪除 /p1 上下文中的所有映射數據？";
+PopUp.DeleteAllDWS.Warning="是否確定要刪除 /p1 設計工作區中的所有映射數據？";
+PopUp.Warning="警告";

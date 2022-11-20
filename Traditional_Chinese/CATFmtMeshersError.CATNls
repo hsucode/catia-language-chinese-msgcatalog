@@ -1,0 +1,330 @@
+
+// 3951 校正官方漢化 Exemple de message :
+// 3951 校正官方漢化
+// 3951 校正官方漢化 ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// 3951 校正官方漢化 ERR_2000.Diagnostic = "Un des parametres est negatif";
+// 3951 校正官方漢化 ERR_2000.Advice     = "Utilisez des parametres positifs";
+
+ERR_0004.Request="未找到幾何支持面（已刪除？）。";
+ERR_0004.Diagnostic="無法找到特征 /P01 的幾何支持面";
+ERR_0004.Advice="更新特征的支持面或將其消除。";
+
+
+ERR_0005.Request="幾何支持面
+/P01 的大小不合適";
+ERR_0005.Diagnostic="對于 /P01 特征，幾何支持面無效";
+ERR_0005.Advice="更新特征的支持面或將其消除。";
+
+ERR_0008.Request="連接面必須為平面。";
+ERR_0008.Diagnostic="網格零件 /P01 的幾何支持面無效";
+ERR_0008.Advice="更新網格零件的支持面或將其消除。";
+
+ERR_0009.Request="連接的面數必須等于剛性位移。";
+ERR_0009.Diagnostic="網格零件 /P01 的幾何支持面無效。";
+ERR_0009.Advice="可能的原因：\n1.要連接的面的形狀不相同\n2. 在至少一個面上未找到任何元素\n3. 無法使用幾何信息定義剛性位移。";
+
+ERR_0013.Request="/P01 網格化零件失敗";
+
+ERR_0015.Request="未找到幾何支持面。";
+ERR_0015.Diagnostic="特征
+/P01 的幾何支持面未打開";
+ERR_0015.Advice="打開特征的支持面。";
+
+ERR_0017.Request="無法設置幾何支持面。";
+ERR_0017.Diagnostic="對于以下特征，幾何支持面無效：
+/P01";
+ERR_0017.Advice="選擇有效的幾何支持面。";
+
+ERR_0020.Diagnostic="內部錯誤： 
+/p01";
+
+ERR_0021.Request="對于拉伸網格器，類型為用戶法則曲線的分布仍不可用。";
+ERR_0021.Diagnostic="網格零件：/P01";
+ERR_0021.Advice="更改分布類型。";
+
+ERR_0031.Request="不支持幾何圖形上定義的發布：/P01";
+ERR_0031.Diagnostic="對于 /P01 特征，幾何支持面無效";
+ERR_0031.Advice="必須在幾何特征中定義發布。";
+
+
+BeamMeshERR_0003.Request="由于 /P01，網格化失敗。";
+BeamMeshERR_0003.Diagnostic="部分曲線沒有網格。";
+
+SurfaceMeshERR_0003.Request="對于 /P01，網格化失敗。";
+SurfaceMeshERR_0003.Diagnostic="部分域沒有網格。";
+
+SurfaceMeshERR_0006.Request="無法對網格零件幾何圖形進行網格化。";
+SurfaceMeshERR_0006.Advice="嘗試使用不同的元素大小。如果使用偏移網格，則減小偏移值。";
+
+SurfaceMeshERR_0007.Request="無法網格化。";
+SurfaceMeshERR_0007.Diagnostic="部分參數無效。";
+SurfaceMeshERR_0007.Advice="檢查以下項：
+  - 絕對弦高是否大于 0（如果定義）。
+  - 相對弦高是否大于 0 且小于 1（如果定義）。
+  - 最小大小是否大于 0 且小于網格大小（如果定義）。";
+
+SurfaceMeshERR_0008.Request="網格大小應大于 0。";
+SurfaceMeshERR_0008.Diagnostic="對于 /P01，網格大小無效";
+SurfaceMeshERR_0008.Advice="更改網格大小值";
+
+SurfaceMeshERR_0009.Request="幾何圖形大小應大于 0。";
+SurfaceMeshERR_0009.Diagnostic="對于 /P01，幾何圖形大小無效";
+SurfaceMeshERR_0009.Advice="更改幾何圖形大小值";
+
+SurfaceMeshERR_0010.Request="幾何圖形簡化的最小大小應大于或等于 0。";
+SurfaceMeshERR_0010.Diagnostic="對于 /P01，最小大小無效";
+SurfaceMeshERR_0010.Advice="更改最小大小值";
+
+SurfaceMeshERR_0011.Request="網格大小應大于或等于幾何圖形簡化的最小大小。";
+SurfaceMeshERR_0011.Diagnostic="對于 /P01，網格大小無效";
+SurfaceMeshERR_0011.Advice="更改網格大小值";
+
+SurfaceMeshERR_0012.Request="最小孔大小應大于或等于 0。";
+SurfaceMeshERR_0012.Diagnostic="對于 /P01，最小孔大小無效。";
+SurfaceMeshERR_0012.Advice="更改最小孔大小值";
+
+SurfaceMeshERR_0013.Request="已刪除捕獲的網格零件";
+SurfaceMeshERR_0013.Diagnostic="對于網格零件 /P01，已刪除一個或多個捕獲的網格零件";
+SurfaceMeshERR_0013.Advice="修改已捕獲的網格零件的列表";
+
+Connection_ERR_0002.Request="無法對網格零件
+/P01 進行網格連接";
+Connection_ERR_0002.Diagnostic="在幾何支持面 /P01 上未找到任何關聯網格";
+Connection_ERR_0002.Advice="檢查幾何支持面周圍的網格是否太粗糙。";
+
+// 3951 校正官方漢化 Erreur Connection Mesher (Fastened and Periodicity) : algo
+
+ConnAlgERR_0001.Request="無法對網格零件 /P01 進行網格連接";
+ConnAlgERR_0001.Diagnostic="無法投影。";
+ConnAlgERR_0001.Advice="可能的原因：\n1. 連接已設計為鏈接 2 個封閉的幾何圖形/網格。\n - 由于內部計算基于要連接的網格，投影公差 = /P01。\n - 減小幾何圖形/網格之間的距離，以獲取連接網格\n2. 投影源是投影目標。\n3. 沒有要投影的源。";
+
+ConnAlgERR_0002.Request="部分網格。";
+ConnAlgERR_0002.Diagnostic="部分節點已壓縮，部分 spider 可能尚未生成。";
+ConnAlgERR_0002.Advice="可能的原因：\n 1. 一個網格的節點已被其他網格捕獲。\n 2. 分析連接的支持面相同";
+
+ConnAlgERR_0003.Request="無法網格連接網格零件：/P01";
+ConnAlgERR_0003.Diagnostic="多個節點與一個幾何點相關聯。";
+ConnAlgERR_0003.Advice="可能的原因：\n  1. 使用要連接的其中一個網格創建變換網格。\n  2. 壓縮節點";
+
+ConnAlgERR_0004.Request="無法對網格零件 /P01 進行網格連接";
+ConnAlgERR_0004.Diagnostic="無法按照給定的公差 /P01 創建連接網格。";
+
+ConnAlgERR_0005.Request="無法網格連接網格零件：/P01";
+ConnAlgERR_0005.Diagnostic="連接起點屬性：檢索的節點未啟用網格化。";
+ConnAlgERR_0005.Advice="修改分析連接定義。";
+
+ConnAlgERR_0006.Request="無法對網格零件 /P01 進行網格連接";
+ConnAlgERR_0006.Diagnostic="連接終點屬性：檢索的節點未啟用網絡化。";
+ConnAlgERR_0006.Advice="修改分析連接定義。";
+
+ConnAlgERR_0007.Request="無法對網格零件 /P01 進行網格連接";
+ConnAlgERR_0007.Diagnostic="螺栓配置無效：不能定義旋轉軸。";
+ConnAlgERR_0007.Advice="修改分析連接定義。";
+
+ConnAlgERR_0008.Request="無法對網格零件 /P01 進行網格連接";
+ConnAlgERR_0008.Diagnostic="無效配置。";
+ConnAlgERR_0008.Advice="修改分析連接定義。";
+
+ConnAlgERR_0009.Request="無法對網格零件 /P01 進行網格連接";
+ConnAlgERR_0009.Diagnostic="螺栓配置無效：要連接側的旋轉軸不平行。";
+ConnAlgERR_0009.Advice="修改分析連接定義。";
+
+// 3951 校正官方漢化 Erreur Weld : algo
+
+WeldAlgERR_0001.Request="無法投影聚光源。";
+WeldAlgERR_0001.Diagnostic="最大間隔值太小，或聚光源無法投影到所有支持面上。";
+WeldAlgERR_0001.Advice="2 個可能的解決方法：增大最大間隔，或修改幾何圖形以啟用投影。";
+
+WeldAlgERR_0002.Request="鑲邊案例無效。";
+WeldAlgERR_0002.Diagnostic="無法對支持面鑲邊。";
+WeldAlgERR_0002.Advice="如果您使用白色緊固接頭中的幾何體：請移除鑲邊選項（如果無用），或更改支持面。\n如果您使用分析連接：請更改支持面。";
+
+WeldAlgERR_0003.Request="無法網格化。";
+WeldAlgERR_0003.Diagnostic="需能夠在至少 2 個支持面上投影聚光源。";
+WeldAlgERR_0003.Advice="修改幾何圖形。";
+
+WeldAlgERR_0004.Request="無法網格化。";
+WeldAlgERR_0004.Diagnostic="聚光源投影位于已退化的元素上。";
+WeldAlgERR_0004.Advice="修改支持面網格或取消此退化的元素。";
+
+WeldAlgERR_0005.Request="部分網格。";
+WeldAlgERR_0005.Diagnostic="不允許生成質量較差的元素（雅可比值為負或空）。";
+WeldAlgERR_0005.Advice="可能的原因：\n1. 支持面可能相互交叉\n2. 要連接的面相同";
+
+WeldAlgERR_0006.Request="無法網格連接網格零件：/P01。";
+WeldAlgERR_0006.Diagnostic="無效參數。";
+WeldAlgERR_0006.Advice="檢查所有參數是否均已設置為非空值。";
+
+WeldAlgERR_0007.Request="無法對網格零件 /P01 進行網格連接。";
+WeldAlgERR_0007.Diagnostic="要連接的一個支持面在分析連接中出現兩次。";
+WeldAlgERR_0007.Advice="檢查支持面和網格。";
+
+WeldAlgERR_0008.Request="無法對網格零件 /P01 進行網格連接。";
+WeldAlgERR_0008.Diagnostic="一個要連接的支持面不相關。";
+WeldAlgERR_0008.Advice="檢查支持面和網格。";
+
+// 3951 校正官方漢化 Erreur Spot Weld: algo
+
+SpotWeldAlgERR_0001.Request="無法網格化。";
+SpotWeldAlgERR_0001.Diagnostic="必須在要焊接的每個支持面上投影點分析連接。";
+SpotWeldAlgERR_0001.Advice="檢查每個支持面上是否已投影點分析連接。\n確認投影已成功。";
+
+SpotWeldAlgERR_0002.Request="無法網格化。";
+SpotWeldAlgERR_0002.Diagnostic="所有支持面上的聚光源投影必須位于四角形上。";
+SpotWeldAlgERR_0002.Advice="修改支持面網格，以獲取聚光源上面和下面的四角形。";
+
+SpotWeldAlgERR_0003.Request="無法網格化。";
+SpotWeldAlgERR_0003.Diagnostic="不支持一個支持面中的點分析連接的兼容網格。";
+SpotWeldAlgERR_0003.Advice="使用不兼容的網格選項。";
+
+SpotWeldAlgERR_0004.Request="無法網格化。";
+SpotWeldAlgERR_0004.Diagnostic="已壓縮要焊接的支持面節點。";
+SpotWeldAlgERR_0004.Advice="修改支持面網格。";
+
+// 3951 校正官方漢化 Erreur Seam Weld: algo
+
+SeamWeldAlgERR_0001.Request="無法網格化。";
+SeamWeldAlgERR_0001.Diagnostic="不支持非流形線分析連接。";
+SeamWeldAlgERR_0001.Advice="修改線分析連接的邊線。";
+
+SeamWeldAlgERR_0002.Request="無法網格化。";
+SeamWeldAlgERR_0002.Diagnostic="不支持由分離邊線組成的線分析連接。";
+SeamWeldAlgERR_0002.Advice="修改線分析連接的邊線。";
+
+SeamWeldAlgERR_0003.Request="無法網格化。";
+SeamWeldAlgERR_0003.Diagnostic="僅允許在兩個支持面之間或在一個零件內部進行焊接。";
+SeamWeldAlgERR_0003.Advice="取消接合幾何體中的支持面。";
+
+SeamWeldAlgERR_0004.Request="無法網格化。";
+SeamWeldAlgERR_0004.Diagnostic="僅在 2 個不同支持面之間支持兼容的滾焊連接網格。";
+SeamWeldAlgERR_0004.Advice="修改接合幾何體。";
+
+SeamWeldAlgERR_0005.Request="無法網格化。";
+SeamWeldAlgERR_0005.Diagnostic="必須將線分析連接投影到要焊接的每個支持面上。";
+SeamWeldAlgERR_0005.Advice="檢查每個支持面上是否已投影線分析連接（向曲線網格器中添加曲線約束）。\n確認投影已成功。";
+
+SeamWeldAlgERR_0006.Request="無法網格化。";
+SeamWeldAlgERR_0006.Diagnostic="要焊接的每個支持面上描述滾焊投影的節點數必須相同。";
+SeamWeldAlgERR_0006.Advice="為第二個支持面添加曲線約束時，使用捕獲網格邊線選項\n確認曲線投影和節點捕獲已成功。";
+
+SeamWeldAlgERR_0007.Request="無法網格化。";
+SeamWeldAlgERR_0007.Diagnostic="已壓縮要焊接的支持面節點。";
+SeamWeldAlgERR_0007.Advice="修改支持面網格。";
+
+SeamWeldAlgERR_0008.Request="無法網格化。";
+SeamWeldAlgERR_0008.Diagnostic="曲線端點必須面對面。";
+SeamWeldAlgERR_0008.Advice="修改直線分析連接的邊線。";
+
+SeamWeldAlgERR_0009.Request="無法在從屬縫上映射主縫（最長的)縫。";
+SeamWeldAlgERR_0009.Diagnostic="從屬縫方向與主縫方向不相同。";
+SeamWeldAlgERR_0009.Advice="修改直線分析連接的邊線。";
+
+SeamWeldAlgERR_0010.Request="無法網格化。";
+SeamWeldAlgERR_0010.Diagnostic="不支持 2 條引導線的線分析連接的兼容網格。";
+SeamWeldAlgERR_0010.Advice="使用不兼容網格選項。";
+
+SeamWeldAlgERR_0011.Request="線分析連接離散化太粗造。";
+SeamWeldAlgERR_0011.Diagnostic="閉合的線分析連接必須至少由 3 條邊線離散。";
+SeamWeldAlgERR_0011.Advice="減少網格步長。";
+
+SeamWeldAlgERR_0012.Request="無法網格化。";
+SeamWeldAlgERR_0012.Diagnostic="不支持閉合邊線組成的 2 引導線線分析連接。";
+SeamWeldAlgERR_0012.Advice="修改 2 引導線線分析連接的邊線。";
+
+SeamWeldAlgERR_0013.Request="無法網格化。";
+SeamWeldAlgERR_0013.Diagnostic="曲線 1 和曲線 2 之間的角度非常重要。";
+SeamWeldAlgERR_0013.Advice="修改曲線之間的角度（曲線端點處的切線和兩個端點的向量之間的角度不能超過 5*PI/6 弧度）。";
+
+SeamWeldAlgERR_0014.Request="無法網格化。";
+SeamWeldAlgERR_0014.Diagnostic="無法使用一個零件創建兼容元素。";
+SeamWeldAlgERR_0014.Advice="創建曲線-曲線連接。";
+
+SurfWeldAlgERR_0001.Request="無法對網格零件 /P01 進行網格連接。";
+SurfWeldAlgERR_0001.Diagnostic="曲面的支持面無效。";
+SurfWeldAlgERR_0001.Advice="修改曲面分析連接所指向的曲面。";
+
+SurfWeldAlgERR_0002.Request="無法對網格零件 /P01 進行網格連接。";
+SurfWeldAlgERR_0002.Diagnostic="無法對曲面進行網格化。";
+SurfWeldAlgERR_0002.Advice="修改曲面分析連接所指向的曲面。";
+
+
+TransfoERR_0001.Request="無法對網格零件 /P01 進行網格變換";
+TransfoERR_0001.Diagnostic="由于公差太大，網格捕獲將生成不可預測的結果。";
+TransfoERR_0001.Advice="減小捕獲公差。
+它應比最小的元素邊線低（拋物線元素的半邊線）。";
+
+ExtrudeERR_0001.Request="無法對網格零件
+/P01 沿脊線進行網格拉伸";
+ExtrudeERR_0001.Diagnostic="拉伸長度超過脊線曲線長度，這會產生退化元素。";
+ExtrudeERR_0001.Advice="減小拉伸長度。";
+
+OffsetERR_0001.Request="無法網格化偏移網格零件。";
+OffsetERR_0001.Diagnostic="輸入無效。";
+OffsetERR_0001.Advice="請檢查輸入。";
+
+OffsetERR_0002.Request="無法網格化偏移網格零件。";
+OffsetERR_0002.Diagnostic="網格面方向不一致。";
+OffsetERR_0002.Advice="將方向一致的網格設置為輸入。";
+
+OffsetERR_0003.Request="無法網格化偏移網格零件。";
+OffsetERR_0003.Diagnostic="輸入網格為非流形（部分網格邊線的存在超過兩次）。";
+OffsetERR_0003.Advice="將流形曲面網格設置為輸入。";
+
+TopoERR_0001.Request="分配失敗";
+
+ImportERR_0001.Request="無法打開文件。";
+ImportERR_0001.Diagnostic="已打開的文件
+/P02 上的網格零件 /P01 的網格化失敗。";
+ImportERR_0001.Advice="檢查是否在包含模式中分配文件，或文件是否已被刪除。";
+
+ImportERR_0002.Request="直線無效";
+ImportERR_0002.Diagnostic="直線
+/P02 上的網格零件 /P01 的網格化失敗";
+ImportERR_0002.Advice="檢查格式";
+
+// 3951 校正官方漢化 Hole Filler
+
+HoleFillerERR_0001.Request="2D 支持面無效。";
+HoleFillerERR_0001.Diagnostic="曲面網格缺失。";
+HoleFillerERR_0001.Advice="創建曲面網格。";
+
+HoleFillerERR_0002.Request="支持面無效。";
+HoleFillerERR_0002.Diagnostic="支持面尺寸錯誤。";
+HoleFillerERR_0002.Advice="設置 2D 網格作為支持面。";
+
+HoleFillerERR_0003.Request="缺少接口曲線。";
+HoleFillerERR_0003.Diagnostic="未設置表示接口的幾何曲線。";
+HoleFillerERR_0003.Advice="設置幾何曲線。";
+
+HoleFillerERR_0004.Request="缺少關聯網格。";
+HoleFillerERR_0004.Diagnostic="沒有在幾何曲線上找到關聯網格。";
+HoleFillerERR_0004.Advice="將網格關聯到幾何曲線。";
+
+HoleFillerERR_0005.Request="不完整的關聯網格。";
+HoleFillerERR_0005.Diagnostic="在幾何曲線上找到的關聯網格不是封閉網格。";
+HoleFillerERR_0005.Advice="檢查曲線是否封閉或是否存在關聯網格。";
+
+// 3951 校正官方漢化 Cavity Mesher
+
+CavityMesherERR_0001.Request="2D 支持面無效。";
+CavityMesherERR_0001.Diagnostic="曲面網格缺失。";
+CavityMesherERR_0001.Advice="創建曲面網格。";
+
+CavityMesherERR_0002.Request="支持面無效。";
+CavityMesherERR_0002.Diagnostic="支持面尺寸錯誤。";
+CavityMesherERR_0002.Advice="設置 2D 網格作為支持面。";
+
+CavityMesherERR_0003.Request="缺少點。";
+CavityMesherERR_0003.Diagnostic="未設置指定空腔的幾何點。";
+CavityMesherERR_0003.Advice="設置幾何點。";
+
+CavityMesherERR_0004.Request="尚未定義好空腔。";
+CavityMesherERR_0004.Diagnostic="空腔的網格不是封閉網格，或缺少點。";
+CavityMesherERR_0004.Advice="檢查曲線網格或指定空腔中的點。";
+
+NodeToNodeConnectionERR_001.Request="無法對網格零件 \n/P01 進行網格連接。";
+NodeToNodeConnectionERR_001.Diagnostic="未在幾何支持面 \n/P01 上找到任何關聯網格。";
+NodeToNodeConnectionERR_001.Advice="將網格關聯到幾何選擇。";
+
+VirtualConnection_ERR_0001.Request="無法對虛擬網格零件 /P01 進行網格化";
+VirtualConnection_ERR_0001.Diagnostic="僅可將一個組用作支持面";

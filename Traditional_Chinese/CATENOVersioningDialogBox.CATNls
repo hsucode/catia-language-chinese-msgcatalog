@@ -1,0 +1,49 @@
+Versioning.title           		= "Save As New Version";
+Versioning.msg           		= "Product ";
+Versioning.msg0           		= "Part ";
+Versioning.msg2           		= " and all its children are going to be versioned.";
+Versioning.msg3           		= " and its authorized children are going to be versioned.";
+Versioning.msg4           		= " is going to be versioned.";
+Versioning.msg1           		= "Click OK to Version.";
+
+VersioningError.Title = "Error Message";
+VersioningError.NewData = "Versioning is not allowed, Please save the data before creating new version";
+VersioningError.PRC = "Versioning is not allowed. Versioning only works when the current\n window contains a CATPart or CATProduct Workpackage as the\n top of the specification tree.";
+VersioningError.InSession1 = "An instance of the WorkPackage ";
+VersioningError.InSession2 = " is in CATIA Session,\nClose the PRC where the instance is present and Save as New Version again";
+VersioningError.RootNotAuthorized1 = "Versioning not authorized on the ";
+VersioningError.RootNotAuthorized2 = " in CATIA Session.";
+VersioningError.UnknownError = "The command has failed. Unknown Error.";
+VersioningError.UEIsAuthorizedFailed = "The command has failed. Contact your administrator.\nRuntime error in implementation of ENOVIUEWorkPackageCmd. Method IsAuthorized.";
+VersioningError.UEPrepareFailed = "The command has failed. Contact your administrator.\nRuntime error in implementation of ENOVIUEWorkPackageCmd. Method Prepare.";
+VersioningError.SwitchMode = "The command has failed. Unable to switch WorkPackage in Design Mode. Switch to Design Mode before creating New Version.";
+VersioningError.WPPVNotLocked1 = "Versioning of the WorkPackage is not allowed. Lock the Part Version ";
+VersioningError.WPDRNotLocked1 = "Versioning of the WorkPackage is not allowed. Lock the Document Revision ";
+VersioningError.WPPVDRNotLocked1 = "Versioning of the WorkPackage is not allowed. Lock the Part Version ";
+VersioningError.WPPVDRNotLocked2 = " and Document Revision ";
+VersioningError.WPNotLocked2 = " before creating New Version.";
+VersioningError.NotLatestPV = "At least one Part version is not latest. Versioning is not allowed.";
+VersioningError.Default= " The SaveAsNewVersion command has failed. "; 
+
+Versioning.INF_FurtiveToolTip ="Versioning Successful.";
+
+WRN_VersioningError_FinalState = " Part is not in the final state. Versioning is not allowed.";
+WRN_VersioningError_FinalState.Generic = " Part is not in the final state. Versioning is not allowed.";
+WRN_VersioningError_FinalState.Detail = "/p1";
+
+WRN_VersioningError_NotLatestPV = " Part Version is not latest. Versioning is not allowed.";
+WRN_VersioningError_NotLatestPV.Generic = " Part Version is not latest. Versioning is not allowed.";
+WRN_VersioningError_NotLatestPV.Detail = "/p1";
+
+WRN_VersioningError_NotLatestDR= " Document Revision is not latest. Versioning is not allowed.";
+WRN_VersioningError_NotLatestDR.Generic= "  Document Revision is not latest. Versioning is not allowed.";
+WRN_VersioningError_NotLatestDR.Detail= "/p1";
+
+WRN_VersioningError_Privileges = " Versioning is not allowed due to missing privileges.";
+WRN_VersioningError_Privileges.Generic = " Versioning is not allowed due to missing privileges.";
+WRN_VersioningError_Privileges.Detail = "/p1";
+
+
+
+
+

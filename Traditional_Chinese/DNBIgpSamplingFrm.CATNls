@@ -1,0 +1,68 @@
+// 3951 校正官方漢化*****************************************************************************
+// 3951 校正官方漢化  SAMPLING FRAME
+// 3951 校正官方漢化*****************************************************************************
+
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Labels/Captions
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+SamplingModeLabel.Title=" Mode ";
+SagLabel.Title=" 垂度  ";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Short Help
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+PointCriterionLabel.ShortHelp=" 點間距條件 ";
+SamplingModeLabel.ShortHelp=" 基于距離、速度或點數創建標記 ";
+SamplingModeCombo.ShortHelp=" 基于距離、速度或點數創建標記 ";
+SagLabel.ShortHelp=" 曲線和弦之間的最大偏差 ";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Long Help
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+PointCriterionLabel.LongHelp="距離 - 曲線上兩點間的最大弦長度
+速度 - 兩點間的最大 TCP 速度
+點數 - 等距點的數量";
+
+SamplingModeLabel.LongHelp="距離 - 曲線上兩點間的最大弦長度
+速度 - 兩點間的最大 TCP 速度
+點數 - 等距點的數量";
+
+SamplingModeCombo.LongHelp="距離 - 曲線上兩標記間的最大弦長度
+速度 - 兩標記間的最大 TCP 速度
+點數 - 等距標記的數量";
+
+SagLabel.LongHelp="曲線和弦之間的最大偏差。
+在下面的曲線中，較高的值會導致標記減少，但會降低精確度。 ";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Parameter 默認值
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+SamplingComboOption1="距離（弦長度）";
+SamplingComboOption2="速度（TCP 速度）";
+SamplingComboOption3="點數（標記數）";
+
+SamplingLabelOption1=" Distance";
+SamplingLabelOption2=" 速度   ";
+SamplingLabelOption3=" 點  ";
+
+MinimumDistanceBetweenPoints="1";
+MaximumDistanceBetweenPoints="100000";
+StepForDistanceBetweenPoints="25";
+DefaultValueForDistanceBetweenPoints="250";
+
+MinimumSpeedBetweenPoints=".000001";
+MaximumSpeedBetweenPointss="1";
+StepForSpeedBetweenPoints=".01";
+DefaultValueForSpeedBetweenPoints=".1";
+
+MinimumPoints="2";
+MaximumPoints="10000";
+StepForPoints="1";
+DefaultValueForPoints="2";
+
+MinimumSag=".001";
+MaximumSag="1000";
+StepForSag="1";
+DefaultValueForSag="1";
+
+

@@ -1,0 +1,118 @@
+DNBIgpOlpImport.DNBIgpOlpSelectSequence.Message="選擇a Robot或一個Device, and一個New Robot或一個裝置任務Will Be Created,或 Select一個Existing Robot或 Device 任務";
+DNBIgpOlpImport.DNBIgpSelectProgram.Message="選擇a機器人程序";
+DNBIgpOlpImport.DNBIgpSelectJarFile.Message="選擇an Uploader文件";
+DNBIgpOlpImport.DNBIgpSelectUploadingMethod.Message="選擇a Part for each ObjectFrame if Part Coords was Selected, otherwise OK";
+
+LoadProgram.Title = "選擇機器人程序";
+LoadJarFile.Title = "選擇Translator Jar文件";
+
+JavaUploadingError.Text="Unrecoverable error during translation has occurred.\nSelected機器人program uploader core dumped或 \nJava 2 SDK version 1.4.1或 later has不been selected in OLP options.\nPlease contact Delmia technical支持面for assistance.\n";
+JavaUploadingError.Title="UPLOADING ABORTED";
+
+Validation.ErrorLocation = "\nLine Number: ";
+Validation.Warning = "\nWarning Message: ";
+Validation.RecoverableError = "\nError Message: ";
+Validation.FatalError = "\nFatal Error Message: ";
+Validation.Header.Part1 = "\nRESULT OF ";
+Validation.Header.Part2 = " FILE VALIDATION BY W3C XML SCHEMA:\n";
+Validation.XMLValid = "\nXML 文件 is valid.\n";
+
+LogicalErrors.Header = "\nLOGICAL ERRORS不CAUGHT BY W3C XML SCHEMA IN FILE: ";
+LogicalErrors.NoErrors = "所有 the input data is logically correct.\n";
+LogicalErrors.Warning.Activity.Header = "警告: In activity element ";
+LogicalErrors.Warning.Action.Header = "警告: In action element ";
+LogicalErrors.Warning.Tag.Header = "警告:Tagelement ";
+LogicalErrors.Error.LogicInstruction.StartCondition.Header = "錯誤: Start Condition instruction which contains the following expression: ";
+LogicalErrors.Warning.LogicInstruction.CallTask.Header = "警告: Run Task instruction which points to the following task 名稱: ";
+LogicalErrors.Error.LogicInstruction.SetSignal.Header = "錯誤: Set Signal instruction which contains the following expression: ";
+LogicalErrors.Error.LogicInstruction.WaitSignal.Header = "錯誤: Wait For Signal instruction which contains the following expression: ";
+LogicalErrors.Error.UserProfile.NotFounfInCATFct.Header = "錯誤: Applicative (User) profile of type: ";
+LogicalErrors.Warning.UserProfile.AttributeValue.Header = "警告: Value XML element, descendant of UserProfileInstance/UserDefineAttribute XML elements whose Name attribute and DisplayName subelement are: ";
+
+LogicalErrors.Error.Activity = "錯誤: Activity ";
+
+LogicalErrors.Activity.All.InvalidActivity.Header = "錯誤: Activity element ";
+LogicalErrors.Activity.All.InvalidActivity.Part1 = " does不contain ";
+LogicalErrors.Activity.All.InvalidActivity.Part2 = " element, which is一個mandatory element. The activity cannot be created in RobotTask\n";
+LogicalErrors.Activity.All.NegativeDuration = " StartTime element value is greater than EndTime element value. Absolute value has been used instead.\n";
+
+LogicalErrors.Activity.Move.MotionProfile.Header = "警告: Cannot create 運動輪廓 ";
+LogicalErrors.Activity.Move.MotionProfile.Message = " in Controller. Cannot find its definition in xml.\n";
+LogicalErrors.Activity.Move.ToolProfile.Header = "警告: Cannot create 工具輪廓";
+LogicalErrors.Activity.Move.ToolProfile.Message = " in Controller. Cannot find its definition in xml.\n";
+LogicalErrors.Activity.Move.AccuracyProfile.Header = "警告: Cannot create 精度輪廓 ";
+LogicalErrors.Activity.Move.AccuracyProfile.Message = " in Controller. Cannot find its definition in xml.\n";
+LogicalErrors.Activity.Move.ObjectFrameProfile.Header = "警告: Cannot create 對象框架路徑 ";
+LogicalErrors.Activity.Move.ObjectFrameProfile.Message = " in Controller. Cannot find its definition in xml.\n";
+LogicalErrors.Activity.Move.UserProfile.Header = "警告: Cannot create applicative profile ";
+LogicalErrors.Activity.Move.UserProfile.Message = ", since its definition in不能發現 in xml.\n";
+LogicalErrors.Activity.Move.Config.Message = " the機器人cannot set the specified config. Using the default value instead.\n";
+LogicalErrors.Activity.Move.RapidConfig.Message = " the機器人cannot set the specified RAPID config. Using the default value instead.\n";
+LogicalErrors.Activity.Move.RapidConfigTolerance.Message = " the機器人set the specified RAPID config using 公差值s.\n";
+LogicalErrors.Activity.Move.FixedTCPReach.Message = " the機器人cannot reach the specified location for Fixed TCP. Using the default value instead.\n";
+LogicalErrors.Activity.Move.AuxAxes.Message = " number of 輔助axes is不the same as the number of 輔助axes set for the robot. No 輔助axis values will be set for the activity.\n";
+LogicalErrors.Activity.Move.HomeName.Message = " HomeName element specifies一個non existing home name for the robot.一個joint target will be created at the previous move's location.\n";
+LogicalErrors.Activity.Move.JointNumber.Message = " number of Joint elements is不the same as the number of programmable dofs on the robot. Some dofs may have incorrect values.\n"; 
+LogicalErrors.Activity.Move.Tag.Message = " contains attributes TagGroup and AttachedToPart that cannot be located in either Resource或 Product contexts of PPR tree. ThisTagpoint will be associated with default標簽組 owned by the robot.\n"; 
+LogicalErrors.Activity.Move.FixedTCP.Header = "警告: Fixed TCP RobotMotion activity named: ";
+LogicalErrors.Activity.Move.FixedTCP.Message = ", must be either uploaded in 零件坐標 and its object frame associated with一個V5 part,或 the XML description of this activity must contain一個\"標簽\" XML element with \"AttachedToPart\" attribute that points to一個V5 part. Target for the created activity will be incorrectly set.\n";
+LogicalErrors.Activity.Move.WrongRefPart.Header = "錯誤: RobotMotion activity named: ";
+LogicalErrors.Activity.Move.WrongRefPart.Message = ", contains wrong target information, since Tagit was supposed to reference was specified to be placed in一個標簽組 whose parent is either一個Tagor another標簽組, which is不可行.\n";
+
+LogicalErrors.Activity.WaitIO.Header="錯誤: WaitIO activity(ies) may have been created incorrectly\n";
+LogicalErrors.Activity.WaitIO.Message.Part1="    Reason: Either the selected機器人doesn't have defined Input IO signals with the following number(s): ";
+LogicalErrors.Activity.WaitIO.Message.Part2="    as they appear in the機器人program,或 if these Input IO signals are defined, they are不connected\n";
+LogicalErrors.Activity.WaitIO.Message.Part3="    to any of the Output IO signals belonging to any of the remaining robots in the workcell.\n";
+LogicalErrors.Activity.WaitIO.Message.Part4="   機器人program statements that use these input IO signals may不result in creation of valid WaitIO activities in the newly created 機器人任務";
+
+LogicalErrors.Activity.IOZone.ZoneResource.Message = "名稱 attribute of一個ZoneResource element contains the value that cannot be located in resource context of PPR tree. Created activity will be either incomplete或 incorrect.\n";
+LogicalErrors.Activity.IOZone.ZoneTask.Message = " ZoneTask element value cannot be located in the TaskList of the owning resource. Created activity will be either incomplete或 incorrect.\n";
+LogicalErrors.Activity.IOZone.MissingZoneResourceElement.Message = " ZoneResource subelement is missing. Since specified ZoneName element contains一個zone name which does不exist, the specified zone activity will不be created in機器人任務.\n";
+
+LogicalErrors.Activity.Grab.GrabbedObject.Message = " GrabbedObject element value不能發現 in either resource或 product contexts of PPR tree. Created activity will be either incomplete或 incorrect.\n";
+LogicalErrors.Activity.Grab.GrabbingObject.Message = " GrabbingObject element value不能發現 in either resource或 product contexts of PPR tree. Created activity will be either incomplete或 incorrect.\n";
+
+LogicalErrors.Activity.Mount.MountTool.Message = " MountTool element value不能發現 in 列表. of mounted devices for the uploading resource. Created activity will be incomplete.\n";
+LogicalErrors.Activity.Mount.ToolProfile.Message = " SetToolProfile element value不能發現 in 列表. of controller's工具輪廓 for the uploading resource. Created activity will be either incomplete或 incorrect.\n";
+LogicalErrors.Activity.Mount.NotInAction.Message = " cannot be used as一個independent, atomic activity. It has be be一個part of一個action. Parameters of this activity will不be set properly.\n";
+
+LogicalErrors.Activity.Release.ReleasedObject.Message = " ReleasedObject element value不能發現 in either resource或 product contexts of PPR tree. Created activity will be either incomplete或 incorrect.\n";
+
+LogicalErrors.Activity.UnMount.UnMountTool.Message = " UnmountTool element value不能發現 in 列表. of mounted devices for the uploading resource. Created activity will be either incomplete或 incorrect.\n";
+
+LogicalErrors.Action.ResourceName.Message = " ResourceName subelement has一個name which is different from the資源名稱 assigned to this action in PPR tree. Using default resource instead.\n";
+LogicalErrors.Action.ActionCatalog.Message = " ActionType attribute points to action library that不能發現. Please assign一個correct act file through Tools\Options\Action Libraries dialog.\n";
+LogicalErrors.Action.ActivityPosition.Message = " types of atomic activities或 their positions within the action element are incorrect. Atomic activities will不be set properly.\n";
+LogicalErrors.Action.NumberOfActivities.Message = " number of atomic activities within that action element is incorrect. Atomic activities will不be set properly.\n";
+LogicalErrors.LogicInstruction.Expression.Message = " is invalid. Only port names, and \"true\", \"false\", \"and\", \"or\" keywords are permitted in expressions. No expression will be created for this instruction.\n";
+LogicalErrors.LogicInstruction.PortName.Message = " is invalid. One或 more of specified port names in expression cannot be identified for the selected resource. No expression will be created for this instruction.\n";
+LogicalErrors.LogicInstruction.PortName.NonOutputSignalInSet.Message = " is trying to set the value of一個input port. This instruction only sets the output port values. No expression will be created for this instruction.\n";
+LogicalErrors.LogicInstruction.TaskName.Message = " is invalid. Specified 任務名稱 does不point to any of the existing tasks in selected resource's task list.一個new empty task will be created and will be referenced by this instruction.\n";
+
+LogicalErrors.Action.SpotWeld.TimerTable.Header = " SpotWeld action named ";
+LogicalErrors.Action.SpotWeld.TimerTable.Message = " references一個non-existing timer table instance. No reference to the timer table will be created.\n";
+
+LogicalErrors.Error.UserProfile.NotFounfInCATFct.Message = "不能發現 in associated CATfct file. No 用戶profiles of that type will be either created或 referenced in 機器人任務.\n";
+LogicalErrors.Warning.UserProfile.AttributeValue.WrongDataType.Message = " respectively, contains the value of different data type then defined in associated CATfct file. Default attribute value will be set instead.\n";
+LogicalErrors.Warning.UserProfile.AttributeValue.MissingElement.Message = " respectively, either does不exist或 does不contain any value. Default attribute value will be set instead.\n";
+
+LogicalErrors.MoveSlave.Header = " Master robot, named ";
+LogicalErrors.MoveSlave.Message = ",不能發現 in PPR tree. As一個consequence, slave機器人was不relocated with respect to its master.\n";
+
+V5DataFile.Title = "V5 DATA AVAILABLE TO OLP UPLOADER\n";
+V5DataFile.InputFile = "輸入文件\n";
+V5DataFile.OutputFile = "輸出文件\n";
+V5DataFile.XMLValidationFile = "XML Validation File\n";
+V5DataFile.LogFile = "載入Log File\n";
+V5DataFile.ResourceParameters = "資源Parameters\n";
+V5DataFile.NumberOfAxes = "系統軸數\n";
+V5DataFile.AxisTypes = "軸類型s\n";
+V5DataFile.HomePositionNames = "Home Position Names\n";
+V5DataFile.ToolProfileNames = "工具輪廓Names\n";
+V5DataFile.ObjectFrameProfileNames = "Object Frame Pro文件名s\n";
+V5DataFile.MountedTool = "當前ly Mounted Tool\n";
+V5DataFile.Rail.Title = "Rail/Track/Gantry: ";
+V5DataFile.Tool.Title = "End Of Arm Tooling: ";
+V5DataFile.Positioner.Title = "工件變位器: ";
+
+LCMUploadError.Text = "Error in Uploading LCM XML";

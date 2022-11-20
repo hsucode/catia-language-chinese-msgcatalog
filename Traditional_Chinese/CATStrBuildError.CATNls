@@ -1,0 +1,255 @@
+// 3951 校正官方漢化 *--------------------------------------------*// 3951 校正官方漢化
+// 3951 校正官方漢化 *               Message example              *// 3951 校正官方漢化
+// 3951 校正官方漢化 *                                            *// 3951 校正官方漢化
+// 3951 校正官方漢化 *------------------------------------------- *// 3951 校正官方漢化
+// 3951 校正官方漢化 ENGINPUT_ERR_XXX.Request    = "Operation failed";
+// 3951 校正官方漢化 ENGINPUT_ERR_XXX.Diagnostic = "Curve support /p1 is invalid";
+// 3951 校正官方漢化 ENGINPUT_ERR_XXX.Advice     = "Choose a smoother curve";
+
+
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化/
+// 3951 校正官方漢化                            ATTRIBUTE ERRORS                           // 3951 校正官方漢化
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化/
+// 3951 校正官方漢化 Mandatory input
+STR_UPDATE_ERROR_MANDATORYINPUT.Request="需整理的特征 /p1。";
+STR_UPDATE_ERROR_MANDATORYINPUT.Diagnostic="缺少 /p1 屬性。";
+STR_UPDATE_ERROR_MANDATORYINPUT.Advice="請編輯特征并設置該屬性。";
+
+// 3951 校正官方漢化 Mandatory input (backward compatible version - same as STR_UPDATE_ERROR_MANDATORYINPUT)
+ENGINPUT_ERR_MANDATORYINPUT.Request="需整理的特征 /p1。";
+ENGINPUT_ERR_MANDATORYINPUT.Diagnostic="缺少 /p1 屬性。";
+ENGINPUT_ERR_MANDATORYINPUT.Advice="請編輯特征并設置該屬性。";
+
+// 3951 校正官方漢化 Null value
+ENGINPUT_ERR_NULLVALUE.Request="需整理的特征 /p1。";
+ENGINPUT_ERR_NULLVALUE.Diagnostic="/p1 屬性有一個空值。";
+ENGINPUT_ERR_NULLVALUE.Advice="請編輯特征并將此屬性設置為非空值。";
+
+// 3951 校正官方漢化 Useless limit
+ENGINPUT_ERR_USELESSLIMIT.Request="需整理的特征 /p1。";
+ENGINPUT_ERR_USELESSLIMIT.Diagnostic="限制 /p1 無用。";
+ENGINPUT_ERR_USELESSLIMIT.Advice="請移除此不必要的數據。";
+
+// 3951 校正官方漢化 limit of trace
+ENGINPUT_ERR_OFFSETORIENTLIMIT.Request="需整理的特征 /p1。";
+ENGINPUT_ERR_OFFSETORIENTLIMIT.Diagnostic="限制不能用作已定義的特征。";
+ENGINPUT_ERR_OFFSETORIENTLIMIT.Advice="請更改偏移或限制方向。";
+
+
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化/
+// 3951 校正官方漢化                           TOPOLOGICAL ERRORS                          // 3951 校正官方漢化
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化/
+// 3951 校正官方漢化 No body associated
+STR_UPDATE_ERROR_NOBODY.Request="需整理的特征 /p1。";
+STR_UPDATE_ERROR_NOBODY.Diagnostic="/p2 沒有任何幾何體。";
+STR_UPDATE_ERROR_NOBODY.Advice="嘗試改進幾何圖形或重建此特征。";
+
+// 3951 校正官方漢化 No body associated (backward compatible version - same as STR_UPDATE_ERROR_NOBODY)
+ENGINPUT_ERR_BODY.Request="需整理的特征 /p1。";
+ENGINPUT_ERR_BODY.Diagnostic="/p2 沒有任何幾何體。";
+ENGINPUT_ERR_BODY.Advice="嘗試改進幾何圖形或重建此特征。";
+
+// 3951 校正官方漢化 No body associated (backward compatible version - same as STR_UPDATE_ERROR_NOBODY)
+STRINPUT_ERR_1003.Request="需整理的特征 /p1。";
+STRINPUT_ERR_1003.Diagnostic="/p2 沒有任何幾何體。";
+STRINPUT_ERR_1003.Advice="嘗試改進幾何圖形或重建此特征。";
+
+// 3951 校正官方漢化 No body associated (backward compatible version - same as XXXXXXXXXXX)
+STRINPUT_ERR_1003.Request="需整理的特征 /p1。";
+STRINPUT_ERR_1003.Diagnostic="/p2 沒有任何幾何體。";
+STRINPUT_ERR_1003.Advice="嘗試改進幾何圖形或重建此特征。";
+
+// 3951 校正官方漢化 Mono-domain wanted (backward compatible version - same as XXXXXXXXXXX)
+STRINPUT_ERR_1004.Request="需整理的特征 /p1。";
+STRINPUT_ERR_1004.Diagnostic="/p1 域的數目是 /p2。";
+STRINPUT_ERR_1004.Advice="域的數目必須是 /p1。";
+
+// 3951 校正官方漢化 Dimension error (backward compatible version - same as XXXXXXXXXXX)
+STRINPUT_ERR_1005.Request="需整理的特征 /p1。";
+STRINPUT_ERR_1005.Diagnostic="/p1 的尺寸是 /p2。";
+STRINPUT_ERR_1005.Advice="尺寸必須是 /p1。";
+
+// 3951 校正官方漢化 Opened wire (backward compatible version - same as XXXXXXXXXXX)
+STRINPUT_ERR_1006.Request="需整理的特征 /p1。";
+STRINPUT_ERR_1006.Diagnostic="/p1 是一條開放線。";
+STRINPUT_ERR_1006.Advice="嘗試改進幾何圖形。";
+
+// 3951 校正官方漢化 Multi-domains (backward compatible version - same as XXXXXXXXXXX)
+STRINPUT_ERR_1015.Request="需整理的特征 /p1。";
+STRINPUT_ERR_1015.Diagnostic="禁止多域結果。";
+STRINPUT_ERR_1015.Advice="嘗試改進幾何圖形。";
+
+// 3951 校正官方漢化 Curve Support is not layed down on the molded surface (backward compatible version - same as XXXXXXXXXXX)
+STRINPUT_ERR_1024.Request="需整理的特征 /p1。";
+STRINPUT_ERR_1024.Diagnostic="曲線支持面 /p1 必須放置在模型曲面上";
+STRINPUT_ERR_1024.Advice="";
+
+// 3951 校正官方漢化 Context for SfmSubElement (backward compatible version - same as XXXXXXXXXXX)
+STRINPUT_ERR_1026.Request="需整理的特征 /p1。";
+STRINPUT_ERR_1026.Diagnostic="必須有上下文。";
+STRINPUT_ERR_1026.Advice="";
+
+// 3951 校正官方漢化 No body associated (backward compatible version - same as XXXXXXXXXXX)
+STRINPUT_ERR_1030.Request="需整理的特征 /p1。";
+STRINPUT_ERR_1030.Diagnostic="缺少輪廓的輸入。";
+STRINPUT_ERR_1030.Advice="請編輯輪廓并檢查其輸入 ";
+
+// 3951 校正官方漢化 Nb of domains wanted
+ENGINPUT_ERR_DOM.Request="需整理的特征 /p1。";
+ENGINPUT_ERR_DOM.Diagnostic="/p1 域的數目是 /p2。";
+ENGINPUT_ERR_DOM.Advice="域的數目必須是 /p1。";
+
+// 3951 校正官方漢化 Multi-domains
+ENGINPUT_ERR_MONODOM.Request="需整理的特征 /p1。";
+ENGINPUT_ERR_MONODOM.Diagnostic="禁止多域結果。";
+ENGINPUT_ERR_MONODOM.Advice="嘗試改進幾何圖形。";
+
+// 3951 校正官方漢化 Dimension error
+STR_UPDATE_ERROR_DIM.Request="需整理的特征 /p1。";
+STR_UPDATE_ERROR_DIM.Diagnostic="/p1 的尺寸是 /p2。";
+STR_UPDATE_ERROR_DIM.Advice="尺寸必須是 /p1。";
+
+// 3951 校正官方漢化 Dimension error (backward compatible version - same as STR_UPDATE_ERROR_DIM)
+ENGINPUT_ERR_DIM.Request="需整理的特征 /p1。";
+ENGINPUT_ERR_DIM.Diagnostic="/p1 的尺寸是 /p2。";
+ENGINPUT_ERR_DIM.Advice="尺寸必須是 /p1。";
+
+// 3951 校正官方漢化 Infinite plane
+ENGINPUT_ERR_INFINITE.Request="需整理的特征 /p1。";
+ENGINPUT_ERR_INFINITE.Diagnostic="/p1 不是無限特征。";
+ENGINPUT_ERR_INFINITE.Advice="請給出一個無限平面。";
+
+// 3951 校正官方漢化 Infinite geometry forbidden
+ENGINPUT_ERR_FINITE.Request="需整理的特征 /p1。";
+ENGINPUT_ERR_FINITE.Diagnostic="/p1 是無限特征。";
+ENGINPUT_ERR_FINITE.Advice="請給出一個有限幾何圖形。";
+
+// 3951 校正官方漢化 Opened wire
+ENGINPUT_ERR_OPENEDWIRE.Request="需整理的特征 /p1。";
+ENGINPUT_ERR_OPENEDWIRE.Diagnostic="/p1 是一條開放線。";
+ENGINPUT_ERR_OPENEDWIRE.Advice="嘗試改進幾何圖形。";
+
+// 3951 校正官方漢化 Closed wire
+ENGINPUT_ERR_CLOSEDWIRE.Request="需整理的特征 /p1。";
+ENGINPUT_ERR_CLOSEDWIRE.Diagnostic="/p1 是一條閉合線。";
+ENGINPUT_ERR_CLOSEDWIRE.Advice="嘗試改進幾何圖形。";
+
+// 3951 校正官方漢化 Multi-intersections
+ENGINPUT_ERR_MULTIINTERSECT.Request="需整理的特征 /p1。";
+ENGINPUT_ERR_MULTIINTERSECT.Diagnostic="/p1 導致多重相交的結果。";
+ENGINPUT_ERR_MULTIINTERSECT.Advice="嘗試改進幾何圖形。";
+
+// 3951 校正官方漢化 Projection ambiguity
+ENGINPUT_ERR_PROJECTION.Request="投影模糊的情況";
+ENGINPUT_ERR_PROJECTION.Diagnostic="";
+ENGINPUT_ERR_PROJECTION.Advice="必須將 3D 曲線放置在 3D 支持曲面上。";
+
+// 3951 校正官方漢化 Projection gives no result
+ENGINPUT_ERR_NULLPROJECTION.Request="投影失敗。";
+ENGINPUT_ERR_NULLPROJECTION.Diagnostic="/p1 上的投影失敗。";
+ENGINPUT_ERR_NULLPROJECTION.Advice="請修改輸入。";
+
+// 3951 校正官方漢化 Intersection gives no result
+ENGINPUT_ERR_NULLINTERSECTION.Request="相交失敗。";
+ENGINPUT_ERR_NULLINTERSECTION.Diagnostic="/p1 和 /p2 之間的相交失敗。";
+ENGINPUT_ERR_NULLINTERSECTION.Advice="請修改輸入。";
+
+// 3951 校正官方漢化 Intersection gives multi-domains result
+ENGINPUT_ERR_INTERSECTIONMULTIDOM.Request="多域相交。";
+ENGINPUT_ERR_INTERSECTIONMULTIDOM.Diagnostic="/p1 和 /p2 之間的相交給出多個解。";
+ENGINPUT_ERR_INTERSECTIONMULTIDOM.Advice="請修改輸入。";
+
+// 3951 校正官方漢化 Line of null length
+ENGINPUT_ERR_NULLLENGTH.Request="該操作導致長度為空的曲線。";
+ENGINPUT_ERR_NULLLENGTH.Diagnostic="兩點混亂。";
+ENGINPUT_ERR_NULLLENGTH.Advice="請修改輸入。";
+
+// 3951 校正官方漢化 Intersection Curve-Surface is not a point
+ENGINPUT_ERR_INTERSECTCRVSURFNOPOINT.Request="相交失敗。";
+ENGINPUT_ERR_INTERSECTCRVSURFNOPOINT.Diagnostic="/p1 和 /p2 之間的相交沒有交點。";
+ENGINPUT_ERR_INTERSECTCRVSURFNOPOINT.Advice="請修改輸入。";
+
+// 3951 校正官方漢化 Intersection Surface-Surface is not a curve
+ENGINPUT_ERR_INTERSECTSURFSURFNOCRV.Request="相交失敗。";
+ENGINPUT_ERR_INTERSECTSURFSURFNOCRV.Diagnostic="/p1 和 /p2 之間的相交沒有給出一條曲線。";
+ENGINPUT_ERR_INTERSECTSURFSURFNOCRV.Advice="請修改輸入。";
+
+// 3951 校正官方漢化 Intersection Surface-Surface-Surface is not a point
+ENGINPUT_ERR_INTERSECTSURFSURFNOPT.Request="相交失敗。";
+ENGINPUT_ERR_INTERSECTSURFSURFNOPT.Diagnostic="/p1、/p2 和 /p3 之間的相交沒有交點。";
+ENGINPUT_ERR_INTERSECTSURFSURFNOPT.Advice="請修改輸入。";
+
+// 3951 校正官方漢化 Offset too big
+ENGINPUT_ERR_PTOFFSETOUTSIDECRV.Request="曲線上的點。";
+ENGINPUT_ERR_PTOFFSETOUTSIDECRV.Diagnostic="偏移值和方向導致在曲線外產生一個點。";
+ENGINPUT_ERR_PTOFFSETOUTSIDECRV.Advice="請修改輸入。";
+
+// 3951 校正官方漢化 Minimal segment length
+ENGINPUT_ERR_MINSEGMENTLENGTH.Request="最小段長度。";
+ENGINPUT_ERR_MINSEGMENTLENGTH.Diagnostic="曲線 /p1 中至少有一個直線段小于最小長度。";
+ENGINPUT_ERR_MINSEGMENTLENGTH.Advice="請檢查您的規格。";
+
+// 3951 校正官方漢化 Curvature check for the guide of the sweep
+ENGINPUT_ERR_CURVESWEEPCURVATURE.Request="曲率問題。";
+ENGINPUT_ERR_CURVESWEEPCURVATURE.Diagnostic="引導曲線顯示的曲率對于該截面尺寸太小。";
+ENGINPUT_ERR_CURVESWEEPCURVATURE.Advice="調整截面的尺寸或調整引導曲線的曲率。";
+
+// 3951 校正官方漢化 Curve lay down on a surface
+ENGINPUT_ERR_CURVELAYDOWN.Request="曲線沒有放置在曲面上。";
+ENGINPUT_ERR_CURVELAYDOWN.Diagnostic="引導曲線 /p1 沒有放置在選定的曲面  /p2 上。";
+ENGINPUT_ERR_CURVELAYDOWN.Advice="修復您的幾何圖形。";
+
+// 3951 校正官方漢化 Not common support for Stiffener on Multi-plates
+ENGINPUT_ERR_COMMONSUPPORT.Request="支持曲面無效";
+ENGINPUT_ERR_COMMONSUPPORT.Diagnostic="/p1 中的一個或多個板/支持面沒有共同的支持面";
+ENGINPUT_ERR_COMMONSUPPORT.Advice="選擇有共同面的一個板或支持面。";
+
+
+
+
+
+
+
+
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化/
+// 3951 校正官方漢化                           MOLDED SURFACE ERRORS                       // 3951 校正官方漢化
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化/
+// 3951 校正官方漢化 contour not closed
+STRBUILD_ERR_CONTOURNOTCLOSED.Request="需整理的特征 /p1。";
+STRBUILD_ERR_CONTOURNOTCLOSED.Diagnostic="平面的限制輪廓未閉合";
+STRBUILD_ERR_CONTOURNOTCLOSED.Advice="請編輯特征并添加限制以使輪廓閉合。";
+
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化/
+// 3951 校正官方漢化                  SDD PLATE THICKNESS COMPENSATION                     // 3951 校正官方漢化
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化/
+SddPlateBuildAlgo_CreateFillFail.Request="構建特征 /p1 遇到了問題。";
+SddPlateBuildAlgo_CreateFillFail.Diagnostic="板及其限制之一（/p1）的相交處的曲率太小。";
+SddPlateBuildAlgo_CreateFillFail.Advice="請重新考慮使用此限制。";
+
+SddPlateBuild_NoThicknessCompensation.Request="構建特征 /p1 遇到了問題。";
+SddPlateBuild_NoThicknessCompensation.Diagnostic="過程中遇到 了一個限制，因此所有限制的切除類型最終被忽略。";
+SddPlateBuild_NoThicknessCompensation.Advice="請手動處理切除操作。";
+
+SddPlateBuild_NegativeThickness.Request="構建特征 /p1 遇到了問題。";
+SddPlateBuild_NegativeThickness.Diagnostic="厚度的值為負或零。";
+SddPlateBuild_NegativeThickness.Advice="使用嚴格為正的厚度值。";
+
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化/
+// 3951 校正官方漢化                     SDD BUILT-IN SLOT CONTOUR                         // 3951 校正官方漢化
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化/
+SddSlotContourBuild_IgnoredParameters.Request="創建特征 /p1 時遇到問題。";
+SddSlotContourBuild_IgnoredParameters.Diagnostic="已忽略以下參數：/p1.";
+SddSlotContourBuild_IgnoredParameters.Advice="修正它們的值。";
+
+SddSlotContourBuild_Failure.Request="創建特征 /p1 時遇到問題。";
+SddSlotContourBuild_Failure.Diagnostic="觸發了未指定的錯誤。";
+
+// 3951 校正官方漢化HS7 Start --> IR-137519
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化/
+// 3951 校正官方漢化                              STR  OPENING                             // 3951 校正官方漢化
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化/
+StrOpeningStrategyBuild_NoIntersectionOfDMSwithReference.Request="創建開口時遇到問題。";
+StrOpeningStrategyBuild_NoIntersectionOfDMSwithReference.Diagnostic="板和參考的相交為空";
+StrOpeningStrategyBuild_NoIntersectionOfDMSwithReference.Advice="修正板或開口的輸入";
+
+// 3951 校正官方漢化HS7 End

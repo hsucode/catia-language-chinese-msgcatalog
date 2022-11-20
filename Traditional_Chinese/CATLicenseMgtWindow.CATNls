@@ -1,0 +1,216 @@
+Title="本地許可證密鑰管理";
+
+GlobalFrame.TabFrame.LicensesStatus.Title="許可證狀態";
+GlobalFrame.TabFrame.OfflineManagement.Title="脫機管理";
+GlobalFrame.TabFrame.Properties.Title="屬性";
+
+GlobalFrame.TabFrame.LicensesStatus.NodelockFrame.Title="許可證有效期";
+
+pBarMenu.pMenuFile.Title="文件";
+pBarMenu.pMenuFile.Mnemonic="F";
+
+pBarMenu.pMenuFile.Import.Title="導入";
+pBarMenu.pMenuFile.Import.Mnemonic="I";
+
+pBarMenu.pMenuFile.DumpLicenses.Title="轉儲許可證";
+pBarMenu.pMenuFile.DumpLicenses.Mnemonic="D";
+
+pBarMenu.pMenuFile.CleanExpired.Title="清除過期的許可證";
+pBarMenu.pMenuFile.CleanExpired.Mnemonic="C";
+
+pBarMenu.pMenuFile.Exit.Title="退出";
+pBarMenu.pMenuFile.Exit.Mnemonic="E";
+
+pBarMenu.pMenuTargetID.Title="計算機 ID";
+pBarMenu.pMenuTargetID.Mnemonic="T";
+pBarMenu.pMenuTargetID.CopyToClipBoard.Title="復制到剪貼板";
+pBarMenu.pMenuTargetID.CopyToClipBoard.Mnemonic="C";
+
+pBarMenu.pMenuNamedUser.Title="脫機指定的用戶";
+pBarMenu.pMenuNamedUser.Mnemonic="N";
+pBarMenu.pMenuNamedUser.ExtractNU.Title="提取富客戶端分配的許可證";
+pBarMenu.pMenuNamedUser.ExtractNU.Mnemonic="E";
+pBarMenu.pMenuNamedUser.ExtractANU.Title="提取所有分配的許可證";
+pBarMenu.pMenuNamedUser.ExtractANU.Mnemonic="A";
+pBarMenu.pMenuNamedUser.Login.Title="登錄到 ENOVIA V6";
+pBarMenu.pMenuNamedUser.Login.Mnemonic="L";
+pBarMenu.pMenuNamedUser.RestituteNU.Title="恢復指定用戶的許可證";
+pBarMenu.pMenuNamedUser.RestituteNU.Mnemonic="R";
+
+pBarMenu.pMenuHelp.Title="幫助";
+pBarMenu.pMenuHelp.Mnemonic="H";
+
+pBarMenu.pMenuHelp.Help.Title="?";
+pBarMenu.pMenuHelp.Help.Mnemonic="?";
+
+pBarMenu.pMenuHelp.About.Title="關于";
+pBarMenu.pMenuHelp.About.Mnemonic="A";
+
+pHelp.Title="幫助";
+
+pHelp.HelpBoxFrame.l1.Title="應用程序菜單：";
+
+pHelp.HelpBoxFrame.l2.Title="文件";
+
+pHelp.HelpBoxFrame.l3.Title="導入：導入節點鎖文件";
+
+pHelp.HelpBoxFrame.l4.Title="清除過期的許可證：從本地許可證檔案庫中清除過期的許可證";
+
+pHelp.HelpBoxFrame.l5.Title="轉儲許可證：創建許可證檔案庫存檔文件（僅用于調試目的）";
+
+pHelp.HelpBoxFrame.l6.Title="退出：關閉此應用程序";
+
+pHelp.HelpBoxFrame.l7.Title="幫助";
+
+pHelp.HelpBoxFrame.l8.Title="?：此為幫助消息";
+
+pHelp.HelpBoxFrame.l9.Title="關于：此應用程序的相關信息";
+
+pHelp.HelpBoxFrame.l10.Title="脫機指定的用戶";
+
+pHelp.HelpBoxFrame.l11.Title="提取指定用戶的許可證：提取分配給 ENOVIA V6 P&O 中指定用戶的所有富客戶端許可證";
+
+pHelp.HelpBoxFrame.l12.Title="恢復指定用戶的許可證：恢復先前針對指定用戶提取的所有脫機許可證";
+
+
+LogonNamedUser="警告：登錄進程";
+LogonNamedUser2="啟動登錄進程后，如果您無法提供正確的登錄，此應用程序將關閉。想要繼續嗎？";
+
+ExtractNamedUser="提取指定用戶的許可證";
+ExtractNamedUser2="確定要提取分配給此登錄的所有富客戶端許可證嗎？";
+
+ExtractAllNamedUser3="提取所有授權指定用戶許可證";
+ExtractAllNamedUser4="確定要針對此登錄提取所有指定用戶的服務器授權許可證嗎？";
+
+
+RestituteNamedUser="恢復指定用戶的許可證";
+RestituteNamedUser2="確定要恢復先前針對此登錄提取的所有指定用戶許可證嗎？";
+
+LevelLabel="構建日期：/P1";
+InternalBuild="內部構建：/P1";
+
+FileAlreadyExist="文件已存在";
+FileOverwrite="文件已經存在，要覆蓋它嗎？";
+
+Validity.texte="/P1 天 /P2 小時 /P3 分鐘";
+Validity0days.texte="/P1 小時 /P2 分鐘";
+
+Days.texte=" 天數";
+
+Version.texte="版本";
+TimeLeft.texte="剩余時間";
+Name.texte="名稱";
+NamedUser.texte="指定用戶";
+Offline.texte="脫機";
+Status.texte="狀態";
+Expired.texte="許可證有效期截止日期";
+ExpireSoon.texte="許可證在 /P1 天內到期";
+InvalidVersion.texte="許可證無效，其版本應高于 /P1";
+Description.texte="名稱";
+MaxExpirationDays.texte="最長持續時間（天數）";
+MaxExpirationDate="最大持續日期";
+
+LabelConfirmationRestitute=" 確定要恢復 /P1 嗎？ ";
+RestituteSuccesfull="許可證 /P1 已成功恢復";
+RestituteFailed="許可證 /P1 尚未恢復";
+RestitutePopUpTitle="恢復";
+LabelConfirmationExtract=" 正在提取：/P1  ";
+SelectReservePeriod="請選擇保留周期（天數）：";
+
+ExtractPopUpTitle="提取";
+ExtractFailed="尚未提取許可證 /P1";
+ExtractSuccesfull="已成功提取許可證 /P1";
+ExtractNotGranted="未提取許可證 /P1，\n未授權許可證或密碼錯誤";
+
+ShortExtendePeriodMessage="太接近最大值，無法擴展持續時間（天數）";
+ShortExtendePeriod="無法擴展持續時間";
+
+
+ReservePassword="密碼： ";
+
+GlobalFrame.TabFrame.Properties.pPropertiesFrame.Title="許可證信息";
+GlobalFrame.TabFrame.Properties.pPropertiesFrame.TargetID.Title=" 計算機 ID： ";
+GlobalFrame.TabFrame.Properties.pPropertiesFrame.NodelockPath.Title=" 許可證檔案庫： ";
+GlobalFrame.TabFrame.Properties.pPropertiesFrame.LicensePath.Title=" 許可證檔案庫： ";
+GlobalFrame.TabFrame.Properties.pPropertiesFrame.pFrameTampon.NetworkAdapter.Title=" 網絡適配器： ";
+GlobalFrame.TabFrame.Properties.pPropertiesFrame.ExpiryAlert.Title=" 到期警報： ";
+GlobalFrame.TabFrame.Properties.pPropertiesFrame.ActiveServers.Title=" 許可證服務器：";
+
+GlobalFrame.TabFrame.Properties.pPropertiesFrame.pFrameTampon.ChangeTargetID.Title="更改用于計算機 ID 的網絡適配器";
+
+ServerName.texte="服務器名稱";
+ServerStatus.texte="狀態";
+Server.texte="服務器";
+
+WarningTargetID="警告：更改用于計算機 ID 的網絡適配器\n將會更改計算機 ID 的值，這會使\n先前提取的所有許可證無效。";
+WarningTargetIDTitle="更改網絡適配器";
+ChoosingNATitle=" 選擇要用于計算機 ID 的網絡適配器： ";
+ChoosingNAFTitle="更改網絡適配器";
+
+FileSelectionDescCertif="證書文件 (*.lic)";
+FileSelectionDescAll="所有文件 (*.*)";
+
+Restart="應用程序將會關閉，以使執行的更改生效。\n請重新啟動所有會話。";
+RestartTitle="關閉應用程序";
+
+ImportFile.Title="導入許可證文件選擇框";
+DumpFile.Title="轉儲許可證文件";
+
+pAbout.Title="關于許可證管理實用程序";
+
+pAbout.LabelCopyright1="警告：本軟件受版權法、知識產權法、";
+pAbout.LabelCopyright2="商業機密和國際條約的保護。以任何形式和/或任何方式";
+pAbout.LabelCopyright3="對本軟件作部分或整體的復制、說明、分發、傳播，";
+pAbout.LabelCopyright4="說明、分發、傳播，都要求獲得 Dassault Systemes";
+pAbout.LabelCopyright5="或其受益人的事先書面許可。任何未授權的行為都可能會導致";
+pAbout.LabelCopyright6="損害賠償民事索賠和/或刑事訴訟。";
+
+
+ExtractCasualNotGrantedTitle="未提取許可證。";
+
+ExtractCasualNotGranted="未提取許可證。 \n隨意許可證已分配給此用戶";
+
+
+LicenseImported="已導入許可證";
+LicenseNotImported="未導入許可證";
+
+CleanExpired="清除過期的許可證";
+NoExpired="沒有要清除的過期許可證";
+ExpiredCleaned="已清除過期的許可證";
+
+SelectExtendePeriod="請選擇新的保留周期（天數）：";
+
+GlobalFrame.TabFrame.OfflineManagement.pOfflineSpliter.pOfflineSpliterFrameUp.pOfflineFrame.Title="本地提取脫機許可證";
+GlobalFrame.TabFrame.OfflineManagement.pOfflineSpliter.pOfflineSpliterFrameUp.pOfflineFrame.pOfflineList.pMenuOffline.Restitute.Title="恢復";
+GlobalFrame.TabFrame.OfflineManagement.pOfflineSpliter.pOfflineSpliterFrameUp.pOfflineFrame.pOfflineList.pMenuOffline.DeleteFile.Title="刪除";
+
+
+GlobalFrame.TabFrame.OfflineManagement.pOfflineSpliter.pOfflineSpliterFrameDown.pOfflineAvaillableFrame.Title="可供從許可證服務器中脫機提取的許可證";
+GlobalFrame.TabFrame.OfflineManagement.pOfflineSpliter.pOfflineSpliterFrameDown.tampon1.RefreshList.Title="刷新列表";
+GlobalFrame.TabFrame.OfflineManagement.pOfflineSpliter.pOfflineSpliterFrameDown.pOfflineAvaillableList.pMenuExtract.Extract.Title="提取";
+
+CannotCreateDump.text="無法創建轉儲文件，請檢查是否已存在給出的路徑";
+
+HelpBatch.text="
+用法：DSLicMgtB  [-i NodelockFileName] 導入節點鎖許可證密鑰文件
+                  [-c yes|no]           檢查模式（默認情況下打開）
+                  [-id]                 提供標識（互斥）
+                  [-na]                 用于計算機 ID 的當前網絡適配器
+                  [-dump FilePath]      創建許可證檔案庫存檔文件（僅用于調試目的）
+                  [-v yes|no]           詳細模式（默認情況下打開）                       
+                  [-h ]                 幫助";
+
+HelpBatchUKU.text="
+用法：DSLicMgtB  [-c yes|no]           檢查模式（默認情況下打開）
+                  [-id]                 提供標識（互斥）
+                  [-na]                 用于計算機 ID 的當前網絡適配器
+                  [-dump FilePath]      創建許可證檔案庫存檔文件（僅用于調試目的）
+                  [-v yes|no]           詳細模式（默認情況下打開）
+                  [-h ]                 幫助";
+
+Compatible.texte="兼容";
+
+
+
+
+ 

@@ -1,0 +1,62 @@
+OPC="OPC";
+EIP="EthernetIP";
+
+OpcConnectionFailure.Request="OPC 連接失敗";
+OpcConnectionFailure.Diagnostic="/p1";
+OpcConnectionFailure.Advice="/p1";
+
+EipConnectionFailure.Request="EthernetIP 連接失敗";
+EipConnectionFailure.Diagnostic="無法連接到名為 '/p' 的設備。";
+EipConnectionFailure.Advice="請檢查您的 Applicom 軟件設置。";
+
+ConnectionSuccess.Request="/p1 連接成功";
+ConnectionSuccess.Diagnostic="/p1";
+ConnectionSuccess.Advice="/p1";
+
+OpcGroupInitFailure.Request=" OPC 組初始化失敗";
+OpcGroupInitFailure.Diagnostic="/p1";
+OpcGroupInitFailure.Advice="/p1";
+
+OpcGroupCreationFailure.Request="OPC 組創建失敗";
+OpcGroupCreationFailure.Diagnostic="/p1";
+OpcGroupCreationFailure.Advice="/p1";
+
+EipInitFailure1.Request="EthernetIP 初始化失敗";
+EipInitFailure1.Diagnostic="內部錯誤";
+EipInitFailure1.Advice="請與您的支持團隊聯系";
+
+EipInitFailure2.Request="EthernetIP 初始化失敗";
+EipInitFailure2.Diagnostic="無法檢索 EthernetIP 標記";
+EipInitFailure2.Advice="請編輯通信協議配置，連接到\n",
+"目標設備，并執行項目檢查程序以獲取診斷權限";
+
+OPCRevisedUpdateRate.Request="OPC 更新率修訂版";
+OPCRevisedUpdateRate.Diagnostic="/p1";
+OPCRevisedUpdateRate.Advice="/p1";
+
+OpcReadCmdFailure.Request="OPC 讀取操作失敗";
+OpcReadCmdFailure.Diagnostic="/p1";
+OpcReadCmdFailure.Advice="/p1";
+
+OpcWriteCmdFailure.Request="OPC 寫入操作失敗";
+OpcWriteCmdFailure.Diagnostic="/p1";
+OpcWriteCmdFailure.Advice="/p1";
+
+EipReadCmdFailure.Request="EthernetIP 讀取操作失敗";
+EipReadCmdFailure.Diagnostic="";
+EipReadCmdFailure.Advice="請檢查 Applicom 設備的配置";
+
+EipWriteCmdFailure.Request="EthernetIP 寫入操作失敗";
+EipWriteCmdFailure.Diagnostic="";
+EipWriteCmdFailure.Advice="請檢查 Applicom 設備的配置";
+
+DisconnectionFailure.Request="/p1 連接關閉失敗";
+DisconnectionFailure.Diagnostic="/p1";
+DisconnectionFailure.Advice="/p1";
+
+DisconnectionSuccess.Request="/p1 連接關閉成功";
+DisconnectionSuccess.Diagnostic="/p1";
+DisconnectionSuccess.Advice="/p1";
+
+UndefOpcSrvNameDiag="沒有要連接到的服務器名稱。";
+UndefOpcSrvNameAdv="通過編輯控制塊 \"/p1\" 設置服務器名稱。";

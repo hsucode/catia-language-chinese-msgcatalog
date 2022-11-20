@@ -1,0 +1,56 @@
+AUTDcnExecuteCmd_WaitSelectObject = "選擇an execution environment";
+Simulate = "仿真 running...";
+
+CLCompilationError = "Compilation 錯誤";
+AUTTitleTlb = "仿真";
+MappingErrorTitle = "仿真 錯誤";
+MappingErrorMsg = "You must do一個Mapping before running the simulation.\n/P1";
+ProgressTaskUI.Title = "構建ing in progress";
+AUTDcnSimulateCmdErrorTitle = "錯誤";
+AUTDcnSimulateCmdLogicCheckFailed = "Error while building /p1.\n";
+
+LaunchSimErrorMsg = "You have來選擇 at least two blocks\n",
+					"and map them to launch一個simulation.\n/P1";
+
+AUTDcnSimulateCmdLogicCheckFailed_addConstraints = 
+			"This simulation won't be allowed to be run\n",
+			"since some ports do不have一個precise type.\n",
+			"You must add一個type constraint on them.\n",
+			"檢查 the following blocks : /P1\n",
+			"/P2";
+
+BadRuntimeReference = "不能發現 Runtime reference /P1. To fix this error,\n",
+					  "顯示contextual menu on \"/P2\" runtime block,",
+					  "and select 'Update Runtime Path' command.\n",
+					  "/P3";
+BuildError = 
+	"構建 Error on Block \"/P1\":\n\n",
+	"/P2\n/P3";
+	
+PathAccesError = 
+	"/P1 -> Path access error\n",
+	"/P2";
+
+AUTDcnSimulateCmdWarnTitle=
+	"警告";
+	
+AUTDcnSimulationRTBCorrupted=
+	"Runtime Engine \"/P1\" is corrupted! There is no implementation's\n",
+	"名稱 attached to this block. Your simulation is going to stop, so after,\n",
+	"刪除your runtime block, rebuild another one with the same name (build,\n",
+	"下載 and run if needed) and restart the simulation.\n",
+	"/P2";
+	
+AUTDcnSimulationMode=
+	"You can't run一個synchronous simulation with the uncontrollable\n",
+	"runtime block \"/P1\". If you want to play一個simulation with this\n",
+	"one, please switch in asynchronous mode in your settings.\n",
+	"/P2";
+
+AUTDcnSimulationFailure=
+	"An error occurs during initialization step:\n\n",
+	"/P1";
+
+AUTDcnSimManagerFailure=
+	"不能 close Simulation Manager.\n",
+	"/P1";

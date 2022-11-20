@@ -1,0 +1,107 @@
+DialogBoxTitle="曲線偏移";
+
+LabelElement.Title="元素： ";
+LabelElement.LongHelp="選擇要偏移的曲線。
+您可以使用選擇窗口進行多選擇操作。
+可使用上下文菜單。
+可通過上下文菜單創建接合。";
+LabelElement.ShortHelp="要偏移的曲線";
+
+TabPageOptions.Title="選項";
+
+FrameOrientation.Title="方向";
+FrameOrientation.LongHelp="偏移曲線可與曲面、平面或視圖平面對齊。";
+
+LabelAlignment.Title="對齊： ";
+LabelAlignment.LongHelp="可用以下方式對齊偏移曲線：
+- 曲面法線：輸入曲線在法線方向上被投影到曲面上，用距離選項在法線方向上投影此曲線。
+- 曲面上：輸入曲線在法線方向上被投影到曲面上，此曲線偏移到曲面上。
+  在曲面上測量距離。
+- 弦：輸入曲線在法線方向上被投影到曲面上，此曲線偏移到曲面上。
+  在弦方向上測量距離。
+- 視圖：偏移向量（輸入曲線的點）與視圖平面平行，并且在輸入曲線的法線平面上。它的長度即為距離。
+- 平面：輸入曲線在法線方向上被投影到平面上并且在此平面內測量距離。";
+LabelAlignment.ShortHelp="要對齊偏移曲線的對象";
+Alignment.NormalToSurface="曲面法線";
+Alignment.OnSurface="在曲面上";
+Alignment.Chordal="弦";
+Alignment.View="視圖平面";
+Alignment.Plane="平面";
+
+LabelSupport.Title="支持面： ";
+LabelSupport.LongHelp="支持面是一個曲面并可用于以下對齊選項：
+- 曲面法線，
+- 曲面上和
+- 弦。
+您可以使用選擇窗口進行多選擇操作。
+可使用上下文菜單。
+可通過上下文菜單創建接合。";
+LabelSupport.ShortHelp="要對齊偏移曲線的曲面";
+LabelPlane.Title="平面： ";
+LabelPlane.LongHelp="要對齊偏移曲線的平面。
+此選項用于對齊平面。";
+LabelPlane.ShortHelp="要對齊偏移曲線的平面";
+FrameDistance.Title="距離";
+FrameDistance.LongHelp="可使用值或點定義偏移距離。投影點，從而定義距離。
+根據對齊投影。不顯示投影的點。";
+CheckButtonPoint.Title="點";
+CheckButtonPoint.LongHelp="此選項對單獨元素不起作用。
+可用點定義偏移距離。
+投影點，從而定義距離。
+根據對齊投影。
+不顯示投影的點。點被投影到支持面、平面或視圖平面上。";
+CheckButtonPoint.ShortHelp="要定義距離的點";
+
+FrameOption.Title="選項";
+FrameOption.LongHelp="可修改偏移曲線。";
+CheckButtonBothSides.Title="兩側";
+CheckButtonBothSides.LongHelp="在輸入曲線兩側創建偏移曲線。";
+CheckButtonBothSides.ShortHelp="兩側的偏移曲線";
+CheckButtonIndividual.Title="單獨的";
+CheckButtonIndividual.LongHelp="可為每個向量操作器單獨定義偏移距離。默認向量操作器是輸入元素每個終點處的操作器。可通過移動接觸點操作器創建其他向量操作器。
+其默認位置是輸入曲線中間。 ";
+CheckButtonIndividual.ShortHelp="每個向量操作器的單獨偏移距離";
+
+CheckButtonMultiResultOutput.Title="多結果輸出";
+
+PushButtonInvert.Title="反轉";
+PushButtonInvert.LongHelp="當兩側均開啟時，此按鈕被禁用。將在輸入曲線的另一側創建偏移曲線。";
+PushButtonInvert.ShortHelp="反轉偏移曲線所在側";
+
+FrameExtrapolation.Title="外插延伸";
+FrameExtrapolation.LongHelp="外插延伸僅在曲面和弦上與對齊選項一同作用。
+可在起點和/或終點處外插延伸偏移曲線。
+外插延伸至支持面的端部。";
+Start.LongHelp="選擇 G1、G2 或 G3 以將曲線從其起點外插延伸到支持面的端部。";
+Start.ShortHelp="起點處 G1、G2 或 G3";
+End.LongHelp="選擇 G1、G2 或 G3 以將曲線從其終點外插延伸到支持面的端部。";
+End.ShortHelp="終點處 G1、G2 或 G3";
+Continuity_Start.Button_G1.LongHelp="在標有 S 的一側外插延伸偏移曲線。
+連續階數為 G1。";
+Continuity_Start.Button_G1.ShortHelp="起點處 G1";
+Continuity_Start.Button_G2.LongHelp="在標有 S 的一側外插延伸偏移曲線。
+連續階數為 G2。";
+Continuity_Start.Button_G2.ShortHelp="起點處 G2";
+Continuity_End.Button_G1.LongHelp="在標有 E 的一側外插延伸偏移曲線。
+連續階數為 G1。";
+Continuity_End.Button_G1.ShortHelp="終點處 G1";
+Continuity_End.Button_G2.LongHelp="在標有 E 的一側外插延伸偏移曲線。
+連續階數為 G2。";
+Continuity_End.Button_G2.ShortHelp="終點處 G2";
+Continuity_Start.Button_G3.ShortHelp="起點處 G3";
+Continuity_Start.Button_G3.LongHelp="在標有 S 的一側外插延伸偏移曲線（不包含額外段）。";
+Continuity_End.Button_G3.ShortHelp="終點處 G3";
+Continuity_End.Button_G3.LongHelp="在標有 E 的一側外插延伸偏移曲線（不包含額外段）。";
+
+CheckButtonSurfaceCurve.Title="2D 曲線";
+CheckButtonSurfaceCurve.ShortHelp="2D 曲線結果";
+CheckButtonSurfaceCurve.LongHelp="偏移曲線由 2D 曲線組成。";
+
+NearestProjectionMode.Title="如果有多個投影，則僅使用最近的投影。";
+
+AdditionalBody.Title="將為相反的曲線創建另一幾何體。";
+
+
+//????????????????????????????????????????
+CheckButtonCurve.Title="曲線： ";
+CheckButtonSupport.Title="支持面： ";

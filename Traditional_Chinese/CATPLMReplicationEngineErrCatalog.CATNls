@@ -1,0 +1,593 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2008-2011
+
+REPLENG_ERR_INTERNAL.Request="/p1：";
+REPLENG_ERR_INTERNAL.Diagnostic="內部錯誤。";
+REPLENG_ERR_INTERNAL.Advice="請聯系支持中心。";
+// 3951 校正官方漢化**/#define RE_PLMID 1
+// 3951 校正官方漢化****/#define RE_UNKNOWNPLMID 1
+
+REPLENG_ERR_USER_1_1.Request="/p1：";
+REPLENG_ERR_USER_1_1.Diagnostic="提供的 PLMID 未知。";
+REPLENG_ERR_USER_1_1.Advice="請刷新您的查詢結果或將其展開。嘗試再次導出選擇。";
+
+// 3951 校正官方漢化****/#define RE_CORRUPTEDPLMID 2
+
+REPLENG_ERR_USER_1_2.Request="/p1：";
+REPLENG_ERR_USER_1_2.Diagnostic="提供的 PLMID 無效。";
+REPLENG_ERR_USER_1_2.Advice="請刷新您的查詢結果或將其展開。嘗試再次導出選擇。";
+
+// 3951 校正官方漢化****/#define RE_LISTTOOLONG 3
+
+REPLENG_ERR_USER_1_3.Request="/p1：";
+REPLENG_ERR_USER_1_3.Diagnostic="提供的部件過多。";
+REPLENG_ERR_USER_1_3.Advice="";
+
+// 3951 校正官方漢化****/#define RE_EMPTYLIST 4
+
+REPLENG_ERR_USER_1_4.Request="/p1：";
+REPLENG_ERR_USER_1_4.Diagnostic="無任何部件可供導出。";
+REPLENG_ERR_USER_1_4.Advice="請刷新您的查詢結果或將其展開。";
+
+// 3951 校正官方漢化****/#define RE_INCONSISTENTLIST 5
+
+REPLENG_ERR_USER_1_5.Request="/p1：";
+REPLENG_ERR_USER_1_5.Diagnostic="無法從多個檔案庫中導出部件。";
+REPLENG_ERR_USER_1_5.Advice="";
+
+// 3951 校正官方漢化****/#define RE_UNSUPPORTEDDATAMODELER 6
+
+REPLENG_ERR_USER_1_6.Request="/p1：";
+REPLENG_ERR_USER_1_6.Diagnostic="不支持該數據建模器。";
+REPLENG_ERR_USER_1_6.Advice="請聯系管理員。";
+
+// 3951 校正官方漢化****/#define RE_UNSUPPORTEDREPOSITORY 7
+
+REPLENG_ERR_USER_1_7.Request="/p1：";
+REPLENG_ERR_USER_1_7.Diagnostic="只有 MatrixOne VPLM 服務器才支持此操作。";
+REPLENG_ERR_USER_1_7.Advice="請聯系管理員。";
+
+// 3951 校正官方漢化****/#define RE_UNDETACHABLELOCALPLMID 8
+
+REPLENG_ERR_USER_1_8.Request="/p1：";
+REPLENG_ERR_USER_1_8.Diagnostic="無法拆離本地部件。";
+REPLENG_ERR_USER_1_8.Advice="";
+
+// 3951 校正官方漢化****/#define RE_IMPOSSIBLETOKENTRANSFER 9
+
+REPLENG_ERR_USER_1_9.Request="/p1：";
+REPLENG_ERR_USER_1_9.Diagnostic="無法傳輸令牌：至少有一個部件不是本地部件或未被鎖定。";
+REPLENG_ERR_USER_1_9.Advice="";
+
+// 3951 校正官方漢化****/#define RE_NOIMPORTOFWEAKENEDINBC 10
+
+REPLENG_ERR_USER_1_10.Request="/p1：";
+REPLENG_ERR_USER_1_10.Diagnostic="導入不允許創建降級部件和已在導入的公文包中降級的部件。";
+REPLENG_ERR_USER_1_10.Advice="";
+
+// 3951 校正官方漢化****/#define RE_NOPREFEREDITERATION 11
+
+REPLENG_ERR_USER_1_11.Request="/p1：";
+REPLENG_ERR_USER_1_11.Diagnostic="對于從兩個不同分支發布的迭代，導入時不能在本地迭代和傳入迭代之間進行選擇。";
+REPLENG_ERR_USER_1_11.Advice="定義一個適用于上述情況的導入沖突規則，并為本地迭代或傳入迭代提供優先級。";
+
+// 3951 校正官方漢化****/#define RE_NOIMPORTOFDEGRADATED 12
+
+REPLENG_ERR_USER_1_12.Request="/p1：";
+REPLENG_ERR_USER_1_12.Diagnostic="在導入禁止創建已降級部件的情況下選擇導入，這導致了部件降級。";
+REPLENG_ERR_USER_1_12.Advice="";
+
+// 3951 校正官方漢化****/#define RE_ISNOTVPLMCONTROLLED 13
+
+REPLENG_ERR_USER_1_13.Request="/p1：";
+REPLENG_ERR_USER_1_13.Diagnostic="已拒絕導入為新對象，因為數據文件包含本地 MatrixOne 對象。";
+REPLENG_ERR_USER_1_13.Advice="使用導入作為參考";
+
+// 3951 校正官方漢化****/#define RE_UNREVOKABLELOCALPLMID 14
+
+REPLENG_ERR_USER_1_14.Request="/p1：";
+REPLENG_ERR_USER_1_14.Diagnostic="無法撤銷本地部件。";
+REPLENG_ERR_USER_1_14.Advice="";
+
+// 3951 校正官方漢化****/#define RE_REVOKEDETECTED 15
+
+REPLENG_ERR_USER_1_15.Request="/p1：";
+REPLENG_ERR_USER_1_15.Diagnostic="檢測到撤銷，無法輸入";
+REPLENG_ERR_USER_1_15.Advice="執行輸入前請拆離委托數據";
+
+// 3951 校正官方漢化****/#define RE_DELEGATION_NOT_ALLOWED_EEMODE 16
+
+REPLENG_ERR_USER_1_16.Request="/p1：";
+REPLENG_ERR_USER_1_16.Diagnostic="無法以 EE 模式執行輸入";
+REPLENG_ERR_USER_1_16.Advice="某些實體已被委托，無法以該模式授權";
+
+// 3951 校正官方漢化****/#define RE_ALREADYDELEGATED 17
+
+REPLENG_ERR_USER_1_17.Request="/p1：";
+REPLENG_ERR_USER_1_17.Diagnostic="無法執行輸入";
+REPLENG_ERR_USER_1_17.Advice="某些實體已被委托";
+
+
+// 3951 校正官方漢化**/#define RE_BRIEFCASE 2
+// 3951 校正官方漢化****/#define RE_UNSUPPORTEDFORMAT 1
+
+REPLENG_ERR_USER_2_1.Request="/p1：";
+REPLENG_ERR_USER_2_1.Diagnostic="不支持數據交換文件版本 /p1。";
+REPLENG_ERR_USER_2_1.Advice="請聯系管理員。";
+
+// 3951 校正官方漢化****/#define RE_INVALIDEXTENSION 2
+
+REPLENG_ERR_USER_2_2.Request="/p1：";
+REPLENG_ERR_USER_2_2.Diagnostic="數據交換文件具有無效擴展名。";
+REPLENG_ERR_USER_2_2.Advice="提供擴展名為 'PLMBriefcase' 的新路徑。";
+
+// 3951 校正官方漢化****/#define RE_FILEALREADYEXIST 3
+
+REPLENG_ERR_USER_2_3.Request="/p1：";
+REPLENG_ERR_USER_2_3.Diagnostic="數據交換文件 /p1 已經存在。";
+REPLENG_ERR_USER_2_3.Advice="不支持覆蓋，刪除現有文件或選擇其他路徑。";
+
+// 3951 校正官方漢化****/#define RE_CANNOTCREATE 4 
+
+REPLENG_ERR_USER_2_4.Request="/p1：";
+REPLENG_ERR_USER_2_4.Diagnostic="無法創建數據交換文件 /p1。";
+REPLENG_ERR_USER_2_4.Advice="檢查路徑訪問權限和路徑安全性。";
+
+// 3951 校正官方漢化****/#define RE_CANNOTOPEN 5
+REPLENG_ERR_USER_2_5.Request="/p1:";
+REPLENG_ERR_USER_2_5.Diagnostic="無法打開數據交換文件 /p1。此文件可能已丟失、損壞或使用了棄用的格式。";
+REPLENG_ERR_USER_2_5.Advice="請聯系支持中心.";
+
+
+// 3951 校正官方漢化****/#define RE_EEMODEFORBIDDEN 6
+
+REPLENG_ERR_USER_2_6.Request="/p1：";
+REPLENG_ERR_USER_2_6.Diagnostic="無法導入數據交換文件，因為沒有為擴展企業交換生成該文件。/p1。";
+REPLENG_ERR_USER_2_6.Advice="請聯系支持中心。";
+
+// 3951 校正官方漢化****/#define RE_EEMODEONLY 7
+
+REPLENG_ERR_USER_2_7.Request="/p1：";
+REPLENG_ERR_USER_2_7.Diagnostic="無法導入數據交換文件，因為沒有為擴展企業交換生成該文件。/p1。";
+REPLENG_ERR_USER_2_7.Advice="請聯系支持中心。";
+
+// 3951 校正官方漢化****/#define RE_INVALIDATTACHMENT 8
+
+REPLENG_ERR_USER_2_8.Request="/p1：";
+REPLENG_ERR_USER_2_8.Diagnostic="無法附加文件：/p1。";
+REPLENG_ERR_USER_2_8.Advice="檢查文件路徑是否有效，以及是否已授予訪問權限。";
+
+// 3951 校正官方漢化****/#define RE_INVALIDTARGET 9
+
+REPLENG_ERR_USER_2_9.Request="/p1：";
+REPLENG_ERR_USER_2_9.Diagnostic="數據文件 /p1 具有目標檔案庫。禁止在當前的本地檔案庫中處理該文件。";
+REPLENG_ERR_USER_2_9.Advice="處理此文件之前，請先連接到適當的檔案庫。";
+
+// 3951 校正官方漢化****/#define RE_UNEXPECTEDREVISION 10
+
+REPLENG_ERR_USER_2_10.Request="/p1：";
+REPLENG_ERR_USER_2_10.Diagnostic="禁止導入數據文件 /p1，因為它是通道修訂版文件。";
+REPLENG_ERR_USER_2_10.Advice="使用通道同步處理數據文件。";
+
+// 3951 校正官方漢化****/#define RE_INVALIDREVISION 11
+
+REPLENG_ERR_USER_2_11.Request="/p1：";
+REPLENG_ERR_USER_2_11.Diagnostic="無法將數據文件 /p1 用于同步，因為它不是修訂版。";
+REPLENG_ERR_USER_2_11.Advice="請選擇其他數據文件。";
+
+// 3951 校正官方漢化****/#define RE_OLDERFORMAT 12
+
+REPLENG_ERR_USER_2_12.Request="/p1：";
+REPLENG_ERR_USER_2_12.Diagnostic="不再支持數據交換文件版本 /p1。";
+REPLENG_ERR_USER_2_12.Advice="請聯系管理員。";
+
+// 3951 校正官方漢化****/#define RE_NEWERFORMAT 13
+
+REPLENG_ERR_USER_2_13.Request="/p1：";
+REPLENG_ERR_USER_2_13.Diagnostic="尚不支持數據交換文件版本 /p1。";
+REPLENG_ERR_USER_2_13.Advice="請聯系管理員。";
+
+// 3951 校正官方漢化**/#define RE_INTERRUPT 3
+// 3951 校正官方漢化****/#define RE_INTERRUPTEDBYUSER 1
+
+REPLENG_ERR_USER_3_1.Request="/p1：";
+REPLENG_ERR_USER_3_1.Diagnostic="用戶已中斷操作。";
+REPLENG_ERR_USER_3_1.Advice="";
+
+// 3951 校正官方漢化**/#define RE_ENVIRONMENT 4
+// 3951 校正官方漢化****/#define RE_MISSINGENV 1
+
+REPLENG_ERR_USER_4_1.Request="/p1：";
+REPLENG_ERR_USER_4_1.Diagnostic="無法導入數據，因為未選擇目標環境。";
+REPLENG_ERR_USER_4_1.Advice="選擇 PLM 環境，然后再次導入。";
+
+// 3951 校正官方漢化**/#define RE_CHANNEL 5
+// 3951 校正官方漢化****/#define RE_INVALIDCHANNELID 1
+
+REPLENG_ERR_USER_5_1.Request="/p1：";
+REPLENG_ERR_USER_5_1.Diagnostic="提供的 PLM 通道標識符 /p1 的格式無效。應該是 32 個字符的十六進制字符串。";
+REPLENG_ERR_USER_5_1.Advice="請提供其他 PLM 通道標識符。";
+
+// 3951 校正官方漢化****/#define RE_CHANNELIDMISMATCH 2
+
+REPLENG_ERR_USER_5_2.Request="/p1：";
+REPLENG_ERR_USER_5_2.Diagnostic="已拒絕同步，因為修訂版與 PLM 標識符 /p1 不匹配。";
+REPLENG_ERR_USER_5_2.Advice="使用其他修訂版文件。";
+
+// 3951 校正官方漢化****/#define RE_UNKNOWNCHANNELID 3
+
+REPLENG_ERR_USER_5_3.Request="/p1：";
+REPLENG_ERR_USER_5_3.Diagnostic="服務器未分辨出提供的 PLM 通道標識符。";
+REPLENG_ERR_USER_5_3.Advice="";
+
+// 3951 校正官方漢化****/#define RE_CHANNELIDALREADYEXIST 4
+
+REPLENG_ERR_USER_5_4.Request="/p1：";
+REPLENG_ERR_USER_5_4.Diagnostic="服務器已分辨出 PLM 通道標識符。";
+REPLENG_ERR_USER_5_4.Advice="已創建、接受或拒絕 PLM 插頭。";
+
+// 3951 校正官方漢化****/#define RE_PLUGALREADYDELETED 5
+
+REPLENG_ERR_USER_5_5.Request="/p1：";
+REPLENG_ERR_USER_5_5.Diagnostic="已刪除服務器中的 PLM 插頭。";
+REPLENG_ERR_USER_5_5.Advice="";
+
+// 3951 校正官方漢化****/#define RE_OLDREVISION 6
+
+REPLENG_ERR_USER_5_6.Request="/p1：";
+REPLENG_ERR_USER_5_6.Diagnostic="已拒絕同步，因為 PLM 插頭已分辨出較新的修訂版。";
+REPLENG_ERR_USER_5_6.Advice="使用較新的修訂版。";
+
+// 3951 校正官方漢化****/#define RE_WRONGPLUG 7
+
+REPLENG_ERR_USER_5_7.Request="/p1：";
+REPLENG_ERR_USER_5_7.Diagnostic="已拒絕同步，因為 PLM 插頭無法對自身應用修訂版。";
+REPLENG_ERR_USER_5_7.Advice="使用其他修訂版文件。";
+
+// 3951 校正官方漢化****/#define RE_PLUGDELETIONFORBIDBYOPERATION 8
+
+REPLENG_ERR_USER_5_8.Request="/p1：";
+REPLENG_ERR_USER_5_8.Diagnostic="已拒絕刪除 PLM 插頭，因為正在 PLM 通道中進行“版本令牌傳輸”操作。";
+REPLENG_ERR_USER_5_8.Advice="完成版本令牌傳輸。";
+
+// 3951 校正官方漢化****/#define RE_FORBIDBYLOCALPLUGSTATUS 9
+
+REPLENG_ERR_USER_5_9.Request="/p1：";
+REPLENG_ERR_USER_5_9.Diagnostic="由于 PLM 插頭的狀態而拒絕操作。";
+REPLENG_ERR_USER_5_9.Advice="只有活動插頭才能同步或發布數據或版本令牌。";
+
+// 3951 校正官方漢化****/#define RE_FORBIDBYPEERPLUGSTATUS 10
+
+REPLENG_ERR_USER_5_10.Request="/p1：";
+REPLENG_ERR_USER_5_10.Diagnostic="由于對等插頭的狀態而拒絕發布。";
+REPLENG_ERR_USER_5_10.Advice="不允許將“發布”操作用于拒絕或刪除的對等插頭。";
+
+// 3951 校正官方漢化****/#define RE_INVALIDPEERPRIID 11
+
+REPLENG_ERR_USER_5_11.Request="/p1：";
+REPLENG_ERR_USER_5_11.Diagnostic="已拒絕創建 PLM 插頭，因為提供的名片是本地名片。";
+REPLENG_ERR_USER_5_11.Advice="使用在其他 PLM 檔案庫中生成的名片或修訂版。";
+
+// 3951 校正官方漢化****/#define RE_OPTIMIZEDPUBLISHMISMATCHCHANNELID 12
+
+REPLENG_ERR_USER_5_12.Request="/p1：";
+REPLENG_ERR_USER_5_12.Diagnostic="無法執行發布，因為用于已優化發布的確認文件的通道標識符與當前的不同。";
+REPLENG_ERR_USER_5_12.Advice="檢查您是否使用了錯誤的通道或確認文件";
+
+// 3951 校正官方漢化****/#define RE_OPTIMIZEDPUBLISHMATCHPLUGID 13
+
+REPLENG_ERR_USER_5_13.Request="/p1：";
+REPLENG_ERR_USER_5_13.Diagnostic="無法執行發布，因為用于已優化發布的確認文件的插頭標識符與當前的相同";
+REPLENG_ERR_USER_5_13.Advice="使用來自對等插頭的確認文件";
+
+// 3951 校正官方漢化****/#define RE_OPTIMIZEDSYNCHROERROR 14
+
+REPLENG_ERR_USER_5_14.Request="/p1：";
+REPLENG_ERR_USER_5_14.Diagnostic="同步失敗，在上次發布期間執行的優化與檔案庫的當前狀態不一致";
+REPLENG_ERR_USER_5_14.Advice="用于執行發布的確認文件可能已過期";
+
+// 3951 校正官方漢化**/#define RE_DATACOMPATIBILITY 6
+// 3951 校正官方漢化****/#define RE_SERVERGREATERMAJORRELEASE 1
+
+REPLENG_ERR_USER_6_1.Request="/p1：";
+REPLENG_ERR_USER_6_1.Diagnostic="交換文件的詞典數據版本級別低于服務器的版本級別。";
+REPLENG_ERR_USER_6_1.Advice="只能在具有同一詞典數據主要版本級別的服務器中導入交換文件。";
+
+// 3951 校正官方漢化****/#define RE_BRIEFCASEGREATERMAJORRELEASE 2
+
+REPLENG_ERR_USER_6_2.Request="/p1：";
+REPLENG_ERR_USER_6_2.Diagnostic="交換文件的詞典數據版本級別高于服務器的版本級別。";
+REPLENG_ERR_USER_6_2.Advice="只能在具有同一詞典數據主要版本級別的服務器中導入交換文件。";
+
+// 3951 校正官方漢化****/#define  RE_SERVERREQUIREMENTKO 3
+
+REPLENG_ERR_USER_6_3.Request="/p1：";
+REPLENG_ERR_USER_6_3.Diagnostic="交換文件所需的服務器功能不可用。";
+REPLENG_ERR_USER_6_3.Advice="交換文件需要激活次要/主要功能。";
+
+// 3951 校正官方漢化****/#define  RE_UNKOWNOPTIONALFEATURE 4
+
+REPLENG_ERR_USER_6_4.Request="/p1：";
+REPLENG_ERR_USER_6_4.Diagnostic="交換文件需要的服務器或客戶端功能不可用：\n";
+REPLENG_ERR_USER_6_4.Advice="需要更新安裝以支持此可選功能。";
+
+
+// 3951 校正官方漢化**/#define RE_PROGRAMMING 7
+// 3951 校正官方漢化****/#define RE_BCEXISTENCECHECKPRIORTOINFOACCESS 1
+
+REPLENG_ERR_USER_7_1.Request="/p1：";
+REPLENG_ERR_USER_7_1.Diagnostic="在 PLMBriefcase 的上下文中，訪問該 PLMBriefcase 中不存在的 PLM 實體的特性。";
+REPLENG_ERR_USER_7_1.Advice="調用類 CATPLMREDataImportResultRecord 的 GetExistenceInPLMBriefcase 服務時，程序必須先檢查 PLMBriefcase 中是否存在 PLM 實體，然后再訪問該實體的其中一個特性。";
+
+// 3951 校正官方漢化**/#define RE_PRERELEASE 8
+// 3951 校正官方漢化****/#define RE_PRERELEASESTATEWARNING 1
+
+REPLENG_ERR_USER_8_1.Request="/p1：";
+REPLENG_ERR_USER_8_1.Diagnostic="遇到預發行狀態：\n /p1 ";
+REPLENG_ERR_USER_8_1.Advice="根據情況，盡可能地移至非預發行級別的代碼，以及/或者計劃刪除檢測到的預發行數據（如果需要，使用非預發行數據替換）\n是否繼續此操作？";
+
+// 3951 校正官方漢化****/#define RE_PRERELEASESTATEERROR 2
+
+REPLENG_ERR_USER_8_2.Request="/p1：";
+REPLENG_ERR_USER_8_2.Diagnostic="由于遇到預發行狀態而取消操作：\n /p1 ";
+REPLENG_ERR_USER_8_2.Advice="根據情況，移至非預發行級別代碼，以及/或者刪除檢測到的預發行數據（如果需要，使用非預發行數據替換）";
+
+// 3951 校正官方漢化**/#define RE_LICENCESTAMP 9
+// 3951 校正官方漢化**/ The 3DXML is has an education watermarkstamp : It can be imported into a education server.
+// 3951 校正官方漢化****/#define RE_EDUCATIONSTAMP 1
+
+REPLENG_ERR_USER_9_1.Request="/p1：";
+REPLENG_ERR_USER_9_1.Diagnostic="已使用教育許可證生成該數據文件。";
+REPLENG_ERR_USER_9_1.Advice="不允許在業務環境中導入在教育環境中創建的數據";
+
+// 3951 校正官方漢化**/#define RE_POMAPPING 10
+// 3951 校正官方漢化**/ one or two attributes is/are not mapped, they have to be mapped all or none
+// 3951 校正官方漢化****/#define RE_POMAPPINGMISSINGATTRIBUTE 1
+
+REPLENG_ERR_USER_10_1.Request="/p1：";
+REPLENG_ERR_USER_10_1.Diagnostic="尚未映射某些人員和組織屬性：/p1。";
+REPLENG_ERR_USER_10_1.Advice="映射所有人員和組織屬性";
+
+
+// 3951 校正官方漢化-- RESOURCE
+// 3951 校正官方漢化**/#define RE_MEMORY 1
+// 3951 校正官方漢化****/#define RE_OUT_OF_MEMORY 1
+
+REPLENG_ERR_RESOURCE_1_1.Request="/p1：";
+REPLENG_ERR_RESOURCE_1_1.Diagnostic="客戶端上的內存分配失敗。";
+REPLENG_ERR_RESOURCE_1_1.Advice="";
+
+// 3951 校正官方漢化**/#define RE_VVS 2
+// 3951 校正官方漢化****/#define RE_READDOCUMENT 1
+
+REPLENG_ERR_RESOURCE_2_1.Request="/p1：";
+REPLENG_ERR_RESOURCE_2_1.Diagnostic="無法讀取資源庫文檔。無法訪問資源庫，或者本地磁盤已滿。";
+REPLENG_ERR_RESOURCE_2_1.Advice="檢查臨時目錄的可用磁盤空間。";
+
+// 3951 校正官方漢化****/#define RE_UPDATEDOCUMENT 2
+
+REPLENG_ERR_RESOURCE_2_2.Request="/p1：";
+REPLENG_ERR_RESOURCE_2_2.Diagnostic="無法寫入資源庫文檔。";
+REPLENG_ERR_RESOURCE_2_2.Advice="請聯系管理員。";
+
+// 3951 校正官方漢化****/#define RE_MISSINGDOCUMENT 3
+
+REPLENG_ERR_RESOURCE_2_3.Request="/p1：";
+REPLENG_ERR_RESOURCE_2_3.Diagnostic="無法導出 PLM 實體，因為缺少此資源庫文件：/p1。";
+REPLENG_ERR_RESOURCE_2_3.Advice="恢復缺少的資源庫文件。";
+
+// 3951 校正官方漢化**/#define RE_FILESYSTEM 3
+// 3951 校正官方漢化****/#define RE_READBRIEFCASE 1
+
+REPLENG_ERR_RESOURCE_3_1.Request="/p1：";
+REPLENG_ERR_RESOURCE_3_1.Diagnostic="無法讀取數據交換文件。公文包可能已損壞。";
+REPLENG_ERR_RESOURCE_3_1.Advice="檢查文件訪問權限。";
+
+// 3951 校正官方漢化****/#define RE_WRITEBRIEFCASE 2
+
+REPLENG_ERR_RESOURCE_3_2.Request="/p1：";
+REPLENG_ERR_RESOURCE_3_2.Diagnostic="無法寫入數據交換文件。";
+REPLENG_ERR_RESOURCE_3_2.Advice="檢查目錄訪問權限和可用磁盤空間。";
+
+// 3951 校正官方漢化****/#define RE_CREATETEMPFOLDER 3
+
+REPLENG_ERR_RESOURCE_3_3.Request="/p1：";
+REPLENG_ERR_RESOURCE_3_3.Diagnostic="無法創建臨時文件夾。";
+REPLENG_ERR_RESOURCE_3_3.Advice="請聯系管理員。";
+
+// 3951 校正官方漢化****/#define RE_XSDREAD 4
+
+REPLENG_ERR_RESOURCE_3_4.Request="/p1：";
+REPLENG_ERR_RESOURCE_3_4.Diagnostic="無法加載數據交換文件 XML 架構。";
+REPLENG_ERR_RESOURCE_3_4.Advice="請聯系管理員。";
+
+// 3951 校正官方漢化****/#define RE_DICTIONARYPATH 5
+
+REPLENG_ERR_RESOURCE_3_5.Request="/p1：";
+REPLENG_ERR_RESOURCE_3_5.Diagnostic="無法讀取詞典。";
+REPLENG_ERR_RESOURCE_3_5.Advice="請聯系管理員。";
+
+// 3951 校正官方漢化****/#define RE_EXTRACTSTREAM 6
+
+REPLENG_ERR_RESOURCE_3_6.Request="/p1：";
+REPLENG_ERR_RESOURCE_3_6.Diagnostic="無法解壓縮文檔。數據文件 /p1 可能已損壞或磁盤已滿。";
+REPLENG_ERR_RESOURCE_3_6.Advice="檢查臨時目錄的可用磁盤空間。";
+
+
+// 3951 校正官方漢化**/#define RE_SERVER 4
+// 3951 校正官方漢化****/#define RE_CANNOTINITTRANSACTION 1
+
+REPLENG_ERR_RESOURCE_4_1.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_1.Diagnostic="無法初始化導入交易。";
+REPLENG_ERR_RESOURCE_4_1.Advice="檢查你的連接";
+
+// 3951 校正官方漢化****/#define RE_READPLMCOMPONENT 2
+
+REPLENG_ERR_RESOURCE_4_2.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_2.Diagnostic="無法讀取 PLM 部件。\n服務器信息：/p1";
+REPLENG_ERR_RESOURCE_4_2.Advice="";
+
+// 3951 校正官方漢化****/#define RE_UPDATEPLMCOMPONENT 3
+
+REPLENG_ERR_RESOURCE_4_3.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_3.Diagnostic="無法更新 PLM 部件。\n服務器消息：/p1";
+REPLENG_ERR_RESOURCE_4_3.Advice="";
+
+// 3951 校正官方漢化****/#define RE_READEXCHANGESTATUS 4
+
+REPLENG_ERR_RESOURCE_4_4.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_4.Diagnostic="無法讀取數據交換狀態。\n服務器消息：/p1";
+REPLENG_ERR_RESOURCE_4_4.Advice="";
+
+// 3951 校正官方漢化****/#define RE_UPDATEEXCHANGESTATUS 5
+
+REPLENG_ERR_RESOURCE_4_5.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_5.Diagnostic="無法更新數據交換狀態。\n服務器消息：/p1";
+REPLENG_ERR_RESOURCE_4_5.Advice="";
+
+// 3951 校正官方漢化****/#define RE_CANNOTCOMMIT 6
+
+REPLENG_ERR_RESOURCE_4_6.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_6.Diagnostic="無法將修改提交到數據庫。\n服務器消息：/p1";
+REPLENG_ERR_RESOURCE_4_6.Advice="";
+
+// 3951 校正官方漢化****/#define RE_COLLISIONONEXPORT 7
+
+REPLENG_ERR_RESOURCE_4_7.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_7.Diagnostic="在導出期間對 PLM 實體執行修改：已取消導出。";
+REPLENG_ERR_RESOURCE_4_7.Advice="請刷新您的查詢結果或將其展開。嘗試再次導出選擇。";
+
+// 3951 校正官方漢化****/#define RE_READOPERATION 8
+
+REPLENG_ERR_RESOURCE_4_8.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_8.Diagnostic="無法讀取版本令牌傳輸操作信息。";
+REPLENG_ERR_RESOURCE_4_8.Advice="";
+
+// 3951 校正官方漢化****/#define RE_READPLUG 9
+
+REPLENG_ERR_RESOURCE_4_9.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_9.Diagnostic="無法讀取通道信息。";
+REPLENG_ERR_RESOURCE_4_9.Advice="";
+
+// 3951 校正官方漢化****/#define RE_COMPLETEFORDETACH 10
+
+REPLENG_ERR_RESOURCE_4_10.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_10.Diagnostic="正在填寫要拆離的一組部件。";
+REPLENG_ERR_RESOURCE_4_10.Advice="";
+
+// 3951 校正官方漢化****/#define RE_GETRECORDWRITEFAILED 11
+REPLENG_ERR_RESOURCE_4_11.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_11.Diagnostic="無法寫入到服務器交易。";
+REPLENG_ERR_RESOURCE_4_11.Advice="";
+
+// 3951 校正官方漢化****/#define RE_GETURLFAILED 12
+REPLENG_ERR_RESOURCE_4_12.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_12.Diagnostic="無法獲取流拷貝的資源庫文件。";
+REPLENG_ERR_RESOURCE_4_12.Advice="";
+
+// 3951 校正官方漢化****/#define RE_GETCESTAMPFAILED 13
+REPLENG_ERR_RESOURCE_4_13.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_13.Diagnostic="無法從服務器獲取并發工程時間戳。";
+REPLENG_ERR_RESOURCE_4_13.Advice="";
+
+// 3951 校正官方漢化****/#define RE_GETVVSTRANSACTIONFAILED 14
+REPLENG_ERR_RESOURCE_4_14.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_14.Diagnostic="無法初始化流傳輸交易。";
+REPLENG_ERR_RESOURCE_4_14.Advice="";
+
+// 3951 校正官方漢化****/#define RE_NOTCONNECTED 15
+REPLENG_ERR_RESOURCE_4_15.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_15.Diagnostic="由于與服務器的連接中斷而取消操作。";
+REPLENG_ERR_RESOURCE_4_15.Advice="重新連接到服務器。";
+
+// 3951 校正官方漢化****/#define RE_UPDATEPLUG 16
+REPLENG_ERR_RESOURCE_4_16.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_16.Diagnostic="無法更新通道信息。";
+REPLENG_ERR_RESOURCE_4_16.Advice="";
+
+// 3951 校正官方漢化****/#define RE_RESERVENAME 17
+REPLENG_ERR_RESOURCE_4_17.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_17.Diagnostic="無法生成服務器命名。";
+REPLENG_ERR_RESOURCE_4_17.Advice="請聯系管理員";
+
+// 3951 校正官方漢化****/#define RE_DATADICTIONARYLEVEL 18
+REPLENG_ERR_RESOURCE_4_18.Request="/p1：";
+REPLENG_ERR_RESOURCE_4_18.Diagnostic="無法檢索數據詞典級別。";
+REPLENG_ERR_RESOURCE_4_18.Advice="請聯系管理員";
+
+
+// 3951 校正官方漢化**/#define RE_DICTIONARY 5
+// 3951 校正官方漢化****/#define RE_MISSINGCLASS 1
+
+REPLENG_ERR_RESOURCE_5_1.Request="/p1：";
+REPLENG_ERR_RESOURCE_5_1.Diagnostic="無法在 PLM 詞典中找到類型 '/p1'";
+REPLENG_ERR_RESOURCE_5_1.Advice="請聯系管理員。";
+
+// 3951 校正官方漢化-- can not find environment in dictionary
+// 3951 校正官方漢化****/#define RE_INVALIDENV 2
+
+REPLENG_ERR_RESOURCE_5_2.Request="/p1：";
+REPLENG_ERR_RESOURCE_5_2.Diagnostic="無法加載環境“/p1”。";
+REPLENG_ERR_RESOURCE_5_2.Advice="嘗試其他環境";
+
+// 3951 校正官方漢化-- can not find authoring type
+
+REPLENG_ERR_RESOURCE_5_3.Request="/p1：";
+REPLENG_ERR_RESOURCE_5_3.Diagnostic="無法在 PLM 詞典中找到用于 '/p1' 建模器類型的創作類型";
+REPLENG_ERR_RESOURCE_5_3.Advice="嘗試其他環境";
+
+// 3951 校正官方漢化-- can not find environment in dictionary
+
+// 3951 校正官方漢化****/#define RE_INVALIDSR 4
+REPLENG_ERR_RESOURCE_5_4.Request="/p1：";
+REPLENG_ERR_RESOURCE_5_4.Diagnostic="由于關系無效而無法導入 PLM 實體。";
+REPLENG_ERR_RESOURCE_5_4.Advice="";
+
+// 3951 校正官方漢化****/#define RE_REMOVEATTR 5
+REPLENG_ERR_RESOURCE_5_5.Request="/p1：";
+REPLENG_ERR_RESOURCE_5_5.Diagnostic="數據丟失：屬性“/p1” 已被移除。";
+REPLENG_ERR_RESOURCE_5_5.Advice="";
+
+// 3951 校正官方漢化****/#define RE_ADDATTR 6
+REPLENG_ERR_RESOURCE_5_6.Request="/p1：";
+REPLENG_ERR_RESOURCE_5_6.Diagnostic="已添加屬性“/p1”。";
+REPLENG_ERR_RESOURCE_5_6.Advice="";
+
+// 3951 校正官方漢化****/#define RE_REMOVEEXT 7
+REPLENG_ERR_RESOURCE_5_7.Request="/p1：";
+REPLENG_ERR_RESOURCE_5_7.Diagnostic="數據丟失：已移除擴展名 '/p1'。";
+REPLENG_ERR_RESOURCE_5_7.Advice="";
+
+
+// 3951 校正官方漢化**/#define RE_BUSINESSLOGIC 6
+// 3951 校正官方漢化****/#define RE_BL_CALL 1
+
+REPLENG_ERR_RESOURCE_6_1.Request="/p1：";
+REPLENG_ERR_RESOURCE_6_1.Diagnostic="無法執行業務邏輯規則。原因是：/p1 ";
+REPLENG_ERR_RESOURCE_6_1.Advice="檢查規則定義。";
+
+// 3951 校正官方漢化****/#define RE_BL_DICO 2
+
+REPLENG_ERR_RESOURCE_6_2.Request="/p1：";
+REPLENG_ERR_RESOURCE_6_2.Diagnostic="無法準備業務邏輯的執行過程";
+REPLENG_ERR_RESOURCE_6_2.Advice="請聯系支持中心。";
+
+// 3951 校正官方漢化**/#define RE_BUSINESSCARD 7
+
+// 3951 校正官方漢化****/#define RE_NULLBUSINESSCARD 1
+
+REPLENG_ERR_RESOURCE_7_1.Request="/p1：";
+REPLENG_ERR_RESOURCE_7_1.Diagnostic="提供的名片為 Null";
+REPLENG_ERR_RESOURCE_7_1.Advice="檢查名片是否有效。";
+
+// 3951 校正官方漢化****/#define RE_PHYSICALREPOID 2
+
+REPLENG_ERR_RESOURCE_7_2.Request="/p1：";
+REPLENG_ERR_RESOURCE_7_2.Diagnostic="無法訪問名片的物理檔案庫標識屬性";
+REPLENG_ERR_RESOURCE_7_2.Advice="檢查名片是否有效。";
+
+// 3951 校正官方漢化**/#define RE_CACHE 8
+// 3951 校正官方漢化****/#define RE_OPENCONNECTION 1
+
+REPLENG_ERR_RESOURCE_8_1.Request="/p1：";
+REPLENG_ERR_RESOURCE_8_1.Diagnostic="在使用高速緩存輸出期間未能打開連接。";
+REPLENG_ERR_RESOURCE_8_1.Advice="";

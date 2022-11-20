@@ -1,0 +1,53 @@
+
+frMode.FramePriority.LabelPriority.Title="規則優先級： ";
+
+frMode.BRButtonsFrame.LabelHelp.Title="業務規則開頭幫助： ";
+frMode.BRButtonsFrame.HelpButton.LongHelp="顯示已編輯 PLM 開頭的文檔";
+
+BRSignature="業務規則特征符";
+UnsetFactType="警告：未設置事實類型。";
+
+TabContainer.ConditionTab.Title="條件";
+TabContainer.CorrectionTab.Title="修正";
+TabContainer.ReportTab.Title="報告";
+
+TabContainer.CorrectionTab.CorrectingMethodFrame.Title="修正方法";
+TabContainer.CorrectionTab.CorrectingMethodFrame.CorrectMethodComment.Title="修正注釋";
+
+TabContainer.ReportTab.HelpFrame.Title="幫助消息";
+
+// 3951 校正官方漢化 Rule Help
+frMode.FramePriority.Priority.ShortHelp="優先級別";
+frMode.FramePriority.Priority.LongHelp="指定規則的優先級別。\n注意：1 的優先級別比 2 高。";
+ExpertRuleSignatureFrame.LongHelp="指定要對其應用規則的對象類型\n\n例如，以下輸入參數：S:Shell ; H:Hole \n該規則將應用到所有殼體和孔，H 和 P 將用作變量";
+splitter.frEditor.text_editor.LongHelp="定義規則正文。\n\n例如：\n\nif (S.Activity == true) AND (H.Activity == true ) Message（\"已激活所有殼體和孔\"）\n\n注意：您可以使用 Intellisense 幫助簡化您對規則正文的編輯。\n按 <Ctrl + Space> 鍵，顯示可用變量和函數的列表。";
+
+// 3951 校正官方漢化 Check Help
+TabContainer.ConditionTab.frMode.AutoformatButton.ShortHelp="自動文本格式化";
+TabContainer.ConditionTab.frMode.AutoformatButton.LongHelp="允許自動文本格式化。";
+TabContainer.ConditionTab.frMode.ErrorButton.ShortHelp="自動表達式解析";
+TabContainer.ConditionTab.frMode.ErrorButton.LongHelp="能夠自動進行表達式解析，\n并在出現語法錯誤時發出可視通知。";
+TabContainer.ConditionTab.frMode.ButtonsFrame.FindAndReplace.ShortHelp=" 查找和替換";
+TabContainer.ConditionTab.frMode.ButtonsFrame.FindAndReplace.LongHelp="查找和替換文本。";
+TabContainer.ConditionTab.frMode.ButtonsFrame.ShowLineButton.ShortHelp="語法錯誤";
+TabContainer.ConditionTab.frMode.ButtonsFrame.ShowLineButton.LongHelp="突出顯示語法錯誤，并發出可視通知。";
+TabContainer.ConditionTab.frMode.ButtonsFrame.TypeWizardButton.ShortHelp="語言瀏覽器窗口";
+TabContainer.ConditionTab.frMode.ButtonsFrame.TypeWizardButton.LongHelp="打開類型瀏覽器。要使用該瀏覽器，請選擇您要在幾何體中\n使用的對象或單擊\n“ ...”按鈕以選擇列表中的類型。\n- 支持的/繼承的類型字段提供了選定類型支持的類型\n列表和選定類型從中繼承的類型\n列表。\n- “屬性”字段列出了類型的\n可能屬性和受支持類型及繼承類型的可能屬性。\n - 使用類型字段的函數列出首個參數屬于受支持/繼承類型列表中某種類型的函數\n和方法。\n- 返回類型字段的函數列出了返回選定類型的\n函數和方法。";
+TabContainer.ConditionTab.frMode.ButtonsFrame.Knowl.ShortHelp="URL 和注釋...";
+TabContainer.ConditionTab.frMode.ButtonsFrame.Knowl.LongHelp="將 URL 或注釋關聯到公式。";
+TabContainer.ConditionTab.frMode.ButtonsFrame.pbclear.ShortHelp="文本字段擦除器";
+TabContainer.ConditionTab.frMode.ButtonsFrame.pbclear.LongHelp="擦除“編輯”窗口中的內容。";
+
+
+TabContainer.ConditionTab.ExpertRuleSignatureFrame.LongHelp="指定將要檢查的對象類型\n\n例如，使用以下輸入參數：S:Shell ; H:Hole \n將會所有殼體和孔進行檢查；H 和 P 將用作變量";
+TabContainer.ConditionTab.splitter.frEditor.text_editor.ShortHelp="檢查正文定義";
+TabContainer.ConditionTab.splitter.frEditor.text_editor.LongHelp="定義檢查正文。\n例如：\nS.Activity == true AND H.Activity == true\n注意：您可以使用 Intellisense 幫助簡化您對檢查正文的編輯。\n按 <Ctrl + Space> 鍵，顯示可用參數和函數的列表。\n";
+TabContainer.CorrectionTab.CorrectingMethodFrame.CorrectMethodType.ShortHelp="修正方法的類型";
+TabContainer.CorrectionTab.CorrectingMethodFrame.CorrectMethodType.LongHelp="- VB 腳本：描述 VB 中的修正\n- 建議修正：顯示報告中與規則庫求解相關聯的備注，右鍵單擊樹中的檢查然后選擇“修正”功能便可訪問報告備注。\n- URL：打開 URL 頁。\n- 用戶功能：描述知識工程專家語言中的修正，并支持重復使用修正幾何體中條件區域的變量。";
+TabContainer.CorrectionTab.CorrectingMethodFrame.CorrectingMethodEditor.ShortHelp="修正方法";
+TabContainer.CorrectionTab.CorrectingMethodFrame.CorrectingMethodEditor.LongHelp="修正方法使您可以聲明\n在未執行檢查時要應用的修正。";
+TabContainer.CorrectionTab.CorrectingMethodFrame.CommentEditor.ShortHelp="關于修正方法的注釋。";
+TabContainer.CorrectionTab.CorrectingMethodFrame.CommentEditor.LongHelp="定義關于修正方法的注釋。";
+TabContainer.ReportTab.HelpFrame.ShortHelp="幫助消息";
+TabContainer.ReportTab.HelpFrame.LongHelp="單擊工作臺的“報告”圖標時，此幫助消息將顯示在\n生成的報告中。";
+

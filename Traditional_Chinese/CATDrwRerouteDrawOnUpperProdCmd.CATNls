@@ -1,0 +1,28 @@
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化                                     CNEXT - CXR16
+// 3951 校正官方漢化                          COPYRIGHT DASSAULT SYSTEMES 2006
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 FILENAME    :    CATDrwRerouteDrawOnUpperProdCmd
+// 3951 校正官方漢化 LOCATION    :    DraftingGenUI/CNext/resources/msgcatalog
+// 3951 校正官方漢化 AUTHOR      :    bty
+// 3951 校正官方漢化 DATE        :    jan. 2006
+// 3951 校正官方漢化------------------------------------------------------------------------------
+// 3951 校正官方漢化 DESCRIPTION :    Resources File for NLS purpose related to command rerouting a drawing on the instanctiation of its product in an other one.
+// 3951 校正官方漢化                  
+// 3951 校正官方漢化------------------------------------------------------------------------------
+// 3951 校正官方漢化 COMMENTS    :
+// 3951 校正官方漢化------------------------------------------------------------------------------
+// 3951 校正官方漢化MODIFICATIONS     user  date      purpose
+// 3951 校正官方漢化   HISTORY        ----  ----      -------
+// 3951 校正官方漢化------------------------------------------------------------------------------
+
+CATDrwRerouteDrawOnUpperProdCmd.Title="重設";
+CATDrwRerouteDrawOnUpperProdCmd.SelectPrd="選擇要重設工程制圖的文檔";
+
+CATDrwRerouteDrawOnUpperProdCmd.Error.NGDrwOnPrd="僅能重設產品的創成式工程圖。";
+CATDrwRerouteDrawOnUpperProdCmd.Error.NSamePtdDoc="活動工程圖的創成式視圖并非都指向同一產品。";
+CATDrwRerouteDrawOnUpperProdCmd.Error.NoInst="選定的文檔不包含以下項的任何實例";
+CATDrwRerouteDrawOnUpperProdCmd.Error.MoreThan1Inst="選定的文檔包含以下項的多個實例";
+
+CATDrwRerouteDrawOnUpperProdCmd.PartialFailure="命令部分失敗。尚未在新產品上完全重設工程圖。不要保存工程圖。";
+CATDrwRerouteDrawOnUpperProdCmd.TotalFailure="在新產品上重設工程圖的命令完全失敗。";

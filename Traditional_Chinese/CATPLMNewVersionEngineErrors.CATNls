@@ -1,0 +1,27 @@
+
+SystemERR.Diagnostic="語法錯誤";
+SystemERR.Advice="";
+
+PLMc_ForbiddenScenario1.Diagnostic="無法對新的 PLM 部件使用版本控制";
+PLMc_ForbiddenScenario1.Advice="請先保存此部件，然后再嘗試版本控制";
+
+// 3951 校正官方漢化PLMc_ForbiddenScenario2.Diagnostic = "This new version scenario is forbidden : The data you want to version are in relation with modifications due to the precedent new version" ;
+// 3951 校正官方漢化PLMc_ForbiddenScenario2.Advice = "Make sure you have saved your session after the precedent new version" ;
+
+PLMc_ForbiddenScenario2.Diagnostic="禁止此新版本方案：必須在兩次版本調用之間執行完全保存";
+PLMc_ForbiddenScenario2.Advice="在再次調用新版本之前，先保存您的會話";
+
+PLMc_ForbiddenScenario3.Diagnostic="在會話中無法對此部件進行版本控制";
+PLMc_ForbiddenScenario3.Advice="另一個會話已修改部件。請嘗試將本地修改另存為新版本。";
+
+InvalidAncestor.Diagnostic="不能使用原始項執行版本控制操作";
+InvalidAncestor.Advice="選擇與您要進行衍生的版本控制系列一致的原始項";
+
+InvalidComponentState.Diagnostic="無法對此部件使用版本控制，因為它從未保存到檔案庫";
+InvalidComponentState.Advice="在對此部件使用版本控制之前，先將其傳播到檔案庫";
+
+InvalidTypeOfComponent.Diagnostic="不允許對此類型的 PLM 部件使用版本控制";
+InvalidTypeOfComponent.Advice="提供可控制版本的部件以使用版本控制";
+
+InvalidComponentForDWS.Diagnostic="不允許在該工作區中對此類型的 PLM 部件進行版本控制";
+InvalidComponentForDWS.Advice="";

@@ -1,0 +1,126 @@
+DialogBoxTitle="曲線投影";
+
+CheckButtonCurve.Title="元素： ";
+CheckButtonCurve.LongHelp="選擇要投影的曲線。
+可使用多選擇和上下文菜單。";
+CheckButtonCurve.ShortHelp="選擇要投影的曲線";
+
+CheckButtonPoint.Title="點： ";
+CheckButtonPoint.LongHelp="選擇要投影的點。
+可使用多選擇和上下文菜單。";
+CheckButtonPoint.ShortHelp="選擇要投影的點";
+
+LabelSupport.Title="支持面： ";
+LabelSupport.LongHelp="選擇支持元素以將曲線投影到其上。
+支持面可為一組曲面、平面或掃描。
+可使用多選擇和上下文菜單。";
+LabelSupport.ShortHelp="選擇投影支持面";
+
+// TabContainer
+// . Approx
+TabPageApprox.Title="近似值";
+// . Options
+TabPageOptionsR19HF10.Title="選項";
+TabOutput.Title="輸出";
+
+FrameExtrapolation.Title="外插延伸";
+FrameExtrapolation.LongHelp="僅當曲面被選作支持面時，才可用。
+投影的曲線的起點和/或終點被自動外插延伸到最近的曲面邊線，并被修剪。
+可用 G1-G3 為曲線的起點和終點定義到擴展的連續。";
+Start.LongHelp="起點處 (S) 投影曲線的外插延伸（具備 G1、G2 或 G3 連續）。";
+Start.ShortHelp="起點 S 處外插延伸";
+End.LongHelp="終點處 (E) 投影曲線的外插延伸（具備 G1、G2 或 G3 連續）。";
+End.ShortHelp="終點 E 處外插延伸";
+Continuity_Start.Button_G1.LongHelp="在起點 S 處，投影曲線以相切的方式外插延伸到曲面邊線。
+對于擴展，將創建新單元。";
+Continuity_Start.Button_G1.ShortHelp="曲線起點 S 處 G1 外插延伸";
+Continuity_Start.Button_G2.LongHelp="在起點 S 處，投影曲線以曲率連續 (G2) 的方式外插延伸到曲面邊線。
+對于擴展，將創建新段。";
+Continuity_Start.Button_G2.ShortHelp="曲線起點 S 處 G2 外插延伸";
+Continuity_Start.Button_G3.LongHelp="首先原始曲線在其起點 S 處外插延伸，然后投影到支持面上（而非投影曲線）。
+在這種情況下，不會創建新段。";
+Continuity_Start.Button_G3.ShortHelp="曲線起點 S 處 G3 外插延伸";
+Continuity_End.Button_G1.LongHelp="在終點 E 處，投影曲線以相切的方式外插延伸到曲面邊線。
+對于擴展，將創建新單元。";
+Continuity_End.Button_G1.ShortHelp="曲線終點 E 處 G1 外插延伸";
+Continuity_End.Button_G2.LongHelp="在終點 E 處，投影曲線以曲率連續 (G2) 的方式外插延伸到曲面邊線。
+對于擴展，將創建新段。";
+Continuity_End.Button_G2.ShortHelp="曲線終點 E 處 G2 外插延伸";
+Continuity_End.Button_G3.LongHelp="首先原始曲線在其終點 E 處外插延伸，然后投影到支持面上（而非投影曲線）。
+在這種情況下，不會創建新段。";
+Continuity_End.Button_G3.ShortHelp="曲線終點 E 處 G3 外插延伸";
+// .. Switches
+// ... Buttons
+FrameSwitches.Title="參數";
+FrameSwitches.LongHelp="投影曲線參數化。";
+CheckButtonBasicSurface.Title="基礎曲面";
+CheckButtonBasicSurface.LongHelp="如果支持面是面，元素將被投影到基礎曲面上。";
+CheckButtonBasicSurface.ShortHelp="投影到基礎曲面上";
+CheckButtonTangent.Title="切線";
+CheckButtonTangent.LongHelp="當設為開啟，將在起點和終點按相切近似。
+否則將忽略相切。";
+CheckButtonTangent.ShortHelp="近似時保持相切。";
+LabelDomain.Title="域： ";
+LabelDomain.LongHelp="可使用以下選項：
+- 關閉 -
+  將在整個曲線上計算投影曲線的參數化，而與選定支持曲面無關。  
+- 單獨 -
+  曲線被投影到選定曲面群集的每個曲面上。
+- 分隔 -
+  將在整個曲線上計算投影曲線的參數化，但結果將在每個支持曲面邊界處被分隔。
+- 2D 曲線 -
+  2D 曲線是參數化的 NURBS 曲線。";
+LabelDomain.ShortHelp="定義域：關閉、單獨、分隔或 2D 曲線。";
+Combo.Off="關閉";
+Combo.Separate="單獨";
+Combo.Divide="分隔";
+Combo.2DCurve="2D 曲線";
+Combo.Standard="標準";
+Combo.Adapt="調整";
+ComboDomain.Title="域";
+ComboDomain.LongHelp="可使用以下選項：
+- 關閉 -
+  將在整個曲線上計算投影曲線的參數化，而與選定支持曲面無關。  
+- 單獨 -
+  曲線被投影到選定曲面群集的每個曲面上。
+- 分隔 -
+  將在整個曲線上計算投影曲線的參數化，但結果將在每個支持曲面邊界處被分隔。
+- 2D 曲線 -
+  2D 曲線是參數化的 NURBS 曲線。";
+
+ComboStandard.Title="標準";
+ComboStandard.LongHelp="投影結果的參數化。
+- 標準 -
+  投影曲線的參數化計算與支持面無關。
+- 調整 -
+  將使用支持面計算投影曲線的參數化。";
+
+// .. Distance
+CheckButtonMaxDist.Title="最大距離： ";
+CheckButtonMaxDist.LongHelp="當將曲線投影到曲面上時，僅取與原始曲線的距離小于此處指定的值的那些點用作計算。";
+CheckButtonMaxDist.ShortHelp="投影的最大距離";
+
+// Result
+CheckButtonDisplayDeviations.Title="顯示";
+CheckButtonDisplayDeviations.LongHelp="將在圖形區域顯示投影曲線與支持面之間的最大偏差。
+值將顯示在出現最大偏差的位置。";
+CheckButtonDisplayDeviations.ShortHelp="在圖形窗口顯示最大偏差";
+
+// . Deviation
+FrameDeviation.Title="偏差";
+FrameDeviation.LongHelp="最大值是投影結果和支持面之間的最大距離值。";
+FrameDeviation.ShortHelp="結果和支持面之間的最大距離";
+LabelMaxDeviation.Title="最大： ";
+LabelMaxDeviation.LongHelp="最大值是投影結果和支持面之間的最大距離值。";
+LabelMaxDeviation.ShortHelp="結果和支持面之間的最大距離";
+
+CheckButtonMultiResultOutput.Title="多結果";
+CheckButtonTopology.Title="檢查拓撲";
+
+AdaptModeOld2New.Title="參數化模式調整已被更改為標準。
+不再支持當調整失敗時自動切換到參數化模式標準。";
+
+AdaptModeNew2Old.Title="已在更新的環境中創建此特征。
+結果在當前環境中可能會更改。
+建議在更新的環境下使用此特征。";
+

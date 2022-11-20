@@ -1,0 +1,60 @@
+Title = "部件查看器";
+ToolViewer = "部件查看器";
+
+Element = "圖元";
+Function = "功能";
+Noselect="無選擇";
+NodeSelection= "節點選擇";
+nodes = "節點";
+
+Coolant = "冷卻部件";
+Customizable = "Customizable";
+Ejection = "Ejection";
+Fixation = "Fixation";
+Formed = "Formed";
+Guiding = "Guiding";
+Injection = "Injection";
+Insert = "Insert"; 
+Locating = "定位件"; 
+Miscellaneous = "其它"; 
+Slider = "滑塊";
+AllComponents = "所有部件";
+AllPlates = "所有模板";
+
+RootFrame.Title = "部件查看器";
+RootFrame.LongHelp = "選擇elements of the tool by type and modifies their display properties.";
+
+RootFrame.ActionFrame.Title = "操作";
+RootFrame.ActionFrame.SelectionSetFrame.PushSelectionSet.Title = "選擇集";
+RootFrame.ActionFrame.SelectionSetFrame.PushSelectionSet.LongHelp = "創建選擇集 that can be used as input for another command, e.g. Properties command.";
+RootFrame.ActionFrame.HideShowFrame.PushHideShow.Title = "隱藏/顯示";
+RootFrame.ActionFrame.HideShowFrame.PushHideShow.LongHelp = "Hides or shows the selection.";
+RootFrame.ActionFrame.GraphicFrame.Title = "圖形屬性";
+RootFrame.ActionFrame.GraphicFrame.ColorFrame.LbColor.Title = "顏色";
+RootFrame.ActionFrame.GraphicFrame.TransparencyFrame.LbTransparency.Title = "透明度";
+RootFrame.ActionFrame.GraphicFrame.TransparencyFrame.ChkTransparency.Title = " ";
+RootFrame.ActionFrame.GraphicFrame.TransparencyFrame.ChkTransparency.LongHelp = "Puts transparency's inheritance to the selection.";
+RootFrame.ActionFrame.GraphicFrame.IntensityFrame.ChkLowIntensity.Title = "低亮度";
+RootFrame.ActionFrame.GraphicFrame.IntensityFrame.ChkLowIntensity.LongHelp = "Puts the selection into Low or High Intensity.";
+RootFrame.ActionFrame.GraphicFrame.PushGraphic.LongHelp = "Applies 圖形屬性 to the selection.";
+RootFrame.ActionFrame.GraphicFrame.PushGraphic.Title = "應用圖形屬性";
+
+RootFrame.FilterFrame.Title = "選擇";
+RootFrame.FilterFrame.ButtonFrame.ClearFrame.PushClearSelection.Title = "清除選擇";
+RootFrame.FilterFrame.ButtonFrame.ClearFrame.PushClearSelection.LongHelp = "清除所有選擇.";
+//RootFrame.FilterFrame.ButtonFrame.MoreFrame.PushMoreDetailed.Title = "更多>>";
+
+RootFrame.FilterFrame.StructureFrame.Title = "節點";
+RootFrame.FilterFrame.StructureFrame.ProductFrame.ChkBInjection.Title = "定模側";
+RootFrame.FilterFrame.StructureFrame.ProductFrame.ChkBInjection.LongHelp = "選擇定模側.";
+RootFrame.FilterFrame.StructureFrame.ProductFrame.ChkBEjection.Title = "動模側";
+RootFrame.FilterFrame.StructureFrame.ProductFrame.ChkBEjection.LongHelp = "選擇動模側.";
+RootFrame.FilterFrame.StructureFrame.ProductFrame.ChkBEjector.Title = "頂出系統";
+RootFrame.FilterFrame.StructureFrame.ProductFrame.ChkBEjector.LongHelp = "選擇頂出系統.";
+RootFrame.FilterFrame.StructureFrame.ProductFrame.ChkBOther.Title = "其他節點";
+RootFrame.FilterFrame.StructureFrame.ProductFrame.ChkBOther.LongHelp = "選擇其他節點.";
+
+RootFrame.FilterFrame.StructureFrame.ProductSelFrame.LongHelp = "選擇樹活3D視圖中的節點.";
+RootFrame.FilterFrame.StructureFrame.ProductSelFrame.ProductSelector.Title = "節點選擇";
+RootFrame.FilterFrame.StructureFrame.ProductSelFrame.ProductSelector.LongHelp = "選擇節點.";
+RootFrame.FilterFrame.StructureFrame.ProductSelFrame.PushMultiSelector.LongHelp = "關聯節點列表.";

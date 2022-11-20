@@ -1,0 +1,79 @@
+Title="等厚度區域";
+
+CreateFromFrame.Title="創建自 ";
+
+CreateFromFrame.SelTypeFrame.StackingRB.Title="完成堆疊";
+CreateFromFrame.SelTypeFrame.StackingRB.LongHelp="從完成的堆疊創建等厚度區域。";
+CreateFromFrame.SelTypeFrame.SelectedPGRB.Title="組選擇";
+CreateFromFrame.SelTypeFrame.SelectedPGRB.LongHelp="為選定的鋪層組創建等厚度區域。";
+
+// 3951 校正官方漢化 Deprecated
+AssistPB.Title="3D 助手";
+CSFrame.PtIndicRB.Title="點指示 ";
+CSFrame.PtIndicRB.LongHelp="在創作窗口中選擇一個虛擬點作為取樣點。";
+
+CSFrame.PtSelectRB.Title="點選擇 ";
+CSFrame.PtSelectRB.LongHelp="在創作窗口中選擇一個實際點作為取樣點。";
+
+BoundariesCB.Title="生成殼體邊界";
+BoundariesCB.LongHelp="為每一等厚度區域殼體自動生成殼體邊界。
+默認情況下，此復選框不選中。";
+
+OffsetSurfCB.Title="生成偏移曲面";
+OffsetSurfCB.LongHelp="為每一等厚度區域殼體自動生成偏移曲面。
+默認情況下，此復選框不選中。";
+
+SavePointsCB.Title="將指示點保存于工作對象中";
+SavePointsCB.LongHelp="定義指示點的保存方式：
+     當此復選框選中時，所有挑選的指示點都保存于當前開放幾何體中。
+     當此復選框清空時，每個指示點都在其等厚度區域下聚集。
+   默認情況下，此復選框不選中。";
+
+AddThicknessParamFrame.EnglobingFrame.IntermediateFrame.Label.Title="其他厚度比率 ";
+AddThicknessParamFrame.LongHelp="定義其他厚度作為當前厚度的比率（例如 0.1 表示 +10%，默認值是 0）。
+在創建階段，此比率應用于新組的所有等厚度區域。
+在編輯階段，若組的以往其他厚度比率應用于所有其等厚度區域，修改將應用于所有等厚度區域。否則，將彈出消息讓您決定如何應用修改。";
+
+
+// 3951 校正官方漢化 new messages
+SlopeFrame.Title="衰減值 ";
+SlopeFrame.LongHelp="定義衰減值以計算斜坡的底部。
+這些參數僅應用于非網格情況，對于從虛擬堆疊創建的鋪層，會忽略它們。";
+SlopeFrame.MaxDropOffLabel.Title=" 最大值： ";
+SlopeFrame.MaxDropOffLabel.LongHelp="限制對衰減值（對非基于網格斜坡支持面曲線\n 的等厚度區域邊線）的搜索。";
+
+SlopeFrame.DefaultDropOffLabel.Title=" 默認值： ";
+SlopeFrame.DefaultDropOffLabel.LongHelp="定義當衰減值無法被檢索或估計（單一鋪層或衰減大于最大值）時使用的值。";
+
+CSFrame.MinimumWidthITAForAutoSelectParmFrame.EnglobingFrame.IntermediateFrame.Spinner.LongHelp="定義用于點的自動選擇的值：僅比此值更寬的區域會被選中";
+
+
+CSFrame.SavePointsCB.Title="將指示點保存于工作對象中";
+CSFrame.SavePointsCB.LongHelp="定義指示點的保存方式：
+     當此復選框選中時，所有挑選的指示點都保存于當前開放幾何體中。
+     當此復選框清空時，每個指示點都在其等厚度區域下聚集。
+   默認情況下，此復選框不選中。";
+
+CSFrame.Title="點定義區域";
+OtherOutputFrame.Title="其他輸出";
+OtherOutputFrame.LongHelp="讓您可以選擇其他輸出。";
+OtherOutputFrame.BoundariesCB.Title="生成殼體邊界";
+OtherOutputFrame.OffsetSurfCB.Title="生成偏移曲面";
+OtherOutputFrame.SavePointsCB.Title="將截面定義為工作對象";
+OtherOutputFrame.SavePointsCB.LongHelp="定義指示點的保存方式：
+     當此復選框選中時，所有挑選的指示點都保存于當前開放幾何體中。
+     當此復選框清空時，每個指示點都在其等厚度區域下聚集。
+   默認情況下，此復選框不選中。";
+// 3951 校正官方漢化 CSFrame.AutoSelectPB.Title = " Initialize ";
+CSFrame.AutoSelectPB.LongHelp="自動計算寬度大于請求的最小值的等厚度區域\n并創建一個中心點，如同受設計器指示一樣";
+AutoSelectLabelMsg=" 計算并選擇寬度大于 /p1 的區域 ";
+ModifiersFrame.Title="修改器";
+ModifiersFrame.AddThicknessParamFrame.EnglobingFrame.IntermediateFrame.Label.Title="其他厚度比率 ";
+ModifiersFrame.AddThicknessParamFrame.EnglobingFrame.LongHelp="定義其他厚度比率，特定于當前等厚度區域。";
+ModifiersFrame.LongHelp="定義其他厚度比率，特定于當前等厚度區域。";
+
+
+More="更多...";
+Less="更少...";
+
+

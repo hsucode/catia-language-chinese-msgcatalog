@@ -1,0 +1,30 @@
+TabTitle="Modelica 屬性";
+
+ModelicaAttrFrame.LibNameEditor.ShortHelp="輸入 modelica 庫名稱";
+
+ModelicaAttrFrame.LibVersionEditor.ShortHelp="輸入 modelica 庫版本";
+
+ModelicaAttrFrame.LibNameLabel.Title="庫名稱";
+ModelicaAttrFrame.LibNameLabel.ShortHelp="輸入 modelica 庫名稱（必填）";
+
+ModelicaAttrFrame.LibVersionLabel.Title="庫版本";
+ModelicaAttrFrame.LibVersionLabel.ShortHelp="輸入 Modelica 庫版本（非必填）";
+
+ValidName="庫名稱有效";
+NotValidName="庫名稱無效";
+
+InsertInLibError.Request="庫參考參數化";
+InsertInLibError.Diagnostic="設置庫名稱和版本失敗";
+InsertInLibError.Advice="嘗試其他庫名稱和版本耦合";
+
+DeclareRootError.Request="庫參考參數化";
+DeclareRootError.Diagnostic="設置庫名稱和版本失敗（已存在）";
+DeclareRootError.Advice="嘗試其他庫名稱和版本耦合";
+
+NewLibError.Request="庫參考參數化";
+NewLibError.Diagnostic="設置庫名稱和版本失敗\n（其他同名庫可能已在會話中加載）";
+NewLibError.Advice="請嘗試其他庫名稱和版本耦合，或者從會話中移除該庫";
+
+InvalidModelicaAtributes.Request="庫展示參考參數化";
+InvalidModelicaAtributes.Diagnostic="請求的 Modelica 屬性無效";
+InvalidModelicaAtributes.Advice="修正 Modelica 屬性值";

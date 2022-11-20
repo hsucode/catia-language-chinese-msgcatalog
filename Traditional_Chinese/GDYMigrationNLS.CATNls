@@ -1,0 +1,30 @@
+// Migration messages
+ERR_GDY_Migration_Parameters="Failure to migrate the case parameters: Internal Error";
+ERR_GDY_Migration_DampingCreation="Failed to add the damping feature to the scenario.";
+ERR_GDY_Migration_DampingInternalError="Internal error during damping migration.";
+ERR_GDY_Migration_DampingByMode="The damping could not be migrated since it is defined by mode number.  Please review the damping parameters." ;
+ERR_GDY_Migration_DampingOutOfRange="The damping values are out of range. Please review the damping settings.";
+ERR_GDY_Migration_DampingSuccess="Successful migration.";
+
+ERR_GDY_Migration_ParameterMinFreq="The minimum sampling size is not withing the acceptable limits.  Please review the settings in the scenario parameters for minimum frequency.";
+ERR_GDY_Migration_ParameterMaxFreq="The maximum sampling size is not within the acceptable limits.  Please review the settings in the scenario parameters for maximum frequency.";
+ERR_GDY_Migration_ParameterMinMaxFreq="The maximum sampling is less than the minimum sampling.  Please review the settings in the scenario parameters.";
+ERR_GDY_Migration_ParameterSteps="The number of steps is not within the acceptable limits.  Please review the settings in the scenario parameters for number of intervals.";
+ERR_GDY_Migration_ParameterDuration="The maximum sampling size is not within acceptable limits.  Please review the settings in the scenario parameters for duration.";
+ERR_GDY_Migration_ParameterInverval="The number of steps is not within the acceptable limits.  Please review the settings in the scenario parameters for number of intervals.";
+
+ERR_GDY_Migration_LoadExcInternalError="Internal error during load excitation migration.";
+ERR_GDY_Migration_LoadExcRefLoad="The excitation does not have a referenced load set.";
+ERR_GDY_Migration_LoadExcRefMod="The excitation does not have a referenced modulation.";
+ERR_GDY_Migration_LoadExcTransWhiteNoise="Transient loads do not support white noise.";
+ERR_GDY_Migration_LoadExcFailure="Unable to migrate the new feature.";
+ERR_GDY_Migration_LoadExcFactor="The factor is out of range.  Please review the load excitation feature.";
+ERR_GDY_Migration_LoadExcPhase="The phase is out of range.  Please review the load excitation feature.";
+
+ERR_GDY_Migration_BaseMotInternalError="Internal error during load excitation migration.";
+ERR_GDY_Migration_BaseMotTransWhiteNoise="Transient restraints do not support white noise.";
+ERR_GDY_Migration_BaseMotTransAccel="The acceleration is out of range.  Please review the base motion feature.";
+ERR_GDY_Migration_BaseMotTransPhase="The phase is out of range.  Please review the base motion feature.";
+ERR_Gdy_Migration_ModulationFileWarning="Modulation file not found.";
+
+ERR_GDY_Migration_ModulationDataNotMigrated="Migration of modulation data is not currently supported.";

@@ -1,0 +1,184 @@
+// 3951 校正官方漢化EnvironmentVariablesWarning.HeaderFrame.Global.Title = "MX_CATIA_INSTALL_DIR is set!";
+EnvironmentVariablesWarning.HeaderFrame.Global.Title=" ";
+EnvironmentVariableWarningEditor.Content="由于設置了環境變量 MX_CATIA_INSTALL_DIR，將使用
+它所指向的設置，而非使用此頁面上的設置。建議您取消設置該環境變量并重新啟動 CATIA，以切換為使用
+此屬性頁面，因為 
+MX_CATIA_INSTALL_DIR 現在已被棄用，在將來的
+發布中可能不受支持。然后，下面的設置將顯示為可訪問。";
+
+MatrixMenuStatus.HeaderFrame.Global.Title="用戶界面";
+MatrixMenuStatus.IconAndOptionsFrame.OptionsFrame.MatrixMenuStatusCheckButton.Title="在 CATIA 菜單欄中顯示 ENOVIA 集成菜單";
+MatrixMenuStatus.IconAndOptionsFrame.OptionsFrame.MatrixMenuStatusCheckButton.ShortHelp="允許/禁止訪問 ENOVIA 集成";
+MatrixMenuStatus.IconAndOptionsFrame.OptionsFrame.MatrixMenuStatusCheckButton.LongHelp="選中此框將允許訪問 CATIA 菜單中 CATIA V5 - ENOVIA 集成的所有命令";
+
+ServerSettings.HeaderFrame.Global.Title="服務器設置";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixProtocolLabel.Title="協議  ";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixProtocolLabel.ShortHelp="訪問 ENOVIA Web 界面使用的協議";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixProtocolLabel.LongHelp="默認情況下，使用的協議為純 http，但如果對服務器進行了相應的配置，則可以使用 https 來驗證服務器并對通信加密";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixProtocolCombo.ShortHelp="訪問 ENOVIA Web 界面使用的協議";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixProtocolCombo.LongHelp="默認情況下，使用的協議為純 http，但如果對服務器進行了相應的配置，則可以使用 https 來驗證服務器并對通信加密";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixHostNameLabel.Title="主機名  ";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixHostNameLabel.ShortHelp="服務器主機名或 IP";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixHostNameLabel.LongHelp="這是 ENOVIA 主協作服務器的主機名";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixHostNameEditor.ShortHelp="服務器主機名或 IP";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixHostNameEditor.LongHelp="這是 ENOVIA 主協作服務器的主機名";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixPortLabel.Title="端口號  ";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixPortLabel.ShortHelp="服務器 TCP 端口";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixPortLabel.LongHelp="ENOVIA 服務器偵聽的 TCP 端口";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixPortSpinner.ShortHelp="服務器 TCP 端口";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixPortSpinner.LongHelp="ENOVIA 服務器偵聽的 TCP 端口";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixAppNameLabel.Title="應用程序名稱  ";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixAppNameLabel.ShortHelp="ENOVIA Web 應用程序名稱";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixAppNameLabel.LongHelp="這是 ENOVIA Web 應用程序安裝到服務器時使用的名稱";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixAppNameEditor.ShortHelp="ENOVIA Web 應用程序名稱";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.EMatrixAppNameEditor.LongHelp="這是 ENOVIA Web 應用程序安裝到服務器時使用的名稱";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.DSCVersionLabel.Title="DesignerCentral 版本  ";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.DSCVersionLabel.ShortHelp="服務器上安裝的 DesignerCentral 版本";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.DSCVersionLabel.LongHelp="這是 ENOVIA 服務器上運行的 DesignerCentral 部件的版本";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.DSCVersionEditor.ShortHelp="服務器上安裝的 DesignerCentral 版本";
+ServerSettings.IconAndOptionsFrame.OptionsFrame.DSCVersionEditor.LongHelp="這是 ENOVIA 服務器上運行的 DesignerCentral 部件的版本";
+
+UserExits.HeaderFrame.Global.Title="用戶定義的退出函數";
+UserExits.IconAndOptionsFrame.OptionsFrame.UserExitsPathLabel.Title="UserExits 插件路徑  ";
+UserExits.IconAndOptionsFrame.OptionsFrame.UserExitsPathLabel.ShortHelp="自定義 UserExits 插件的可選路徑";
+UserExits.IconAndOptionsFrame.OptionsFrame.UserExitsPathLabel.LongHelp="指定自定義 UserExits 插件將使其中定義的掛鉤在每次執行關聯的集成操作時運行";
+UserExits.IconAndOptionsFrame.OptionsFrame.UserExitsPathEditor.ShortHelp="自定義 UserExits 插件的可選路徑";
+UserExits.IconAndOptionsFrame.OptionsFrame.UserExitsPathEditor.LongHelp="指定自定義 UserExits 插件將使其中定義的掛鉤在每次執行關聯的集成操作時運行";
+UserExits.IconAndOptionsFrame.OptionsFrame.UserExitsPathPushButton.Title="瀏覽";
+
+BrowserSelection.HeaderFrame.Global.Title="瀏覽器選擇";
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.UnixBrowserPathLabel.Title="瀏覽器路徑  ";
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.UnixBrowserPathLabel.ShortHelp="Web 瀏覽器可執行文件的路徑";
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.UnixBrowserPathLabel.LongHelp="此路徑是 unix 系統上 CATIA 能夠連接到 ENOVIA Web 應用程序所必需的路徑";
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.UnixBrowserPathEditor.ShortHelp="Web 瀏覽器可執行文件的路徑";
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.UnixBrowserPathEditor.LongHelp="此路徑是 unix 系統上 CATIA 能夠連接到 ENOVIA Web 應用程序所必需的路徑";
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.UnixBrowserPathPushButton.Title="瀏覽";
+
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.WinBrowserPathEditor.ShortHelp="Web 瀏覽器可執行文件的路徑";
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.WinBrowserPathEditor.LongHelp="此路徑是 Windows 系統上 CATIA 能夠連接到 ENOVIA Web 應用程序所必需的路徑";
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.WinBrowserPathPushButton.Title="瀏覽";
+
+RestartNeededNotification.Title="警告";
+RestartNeededNotification.Message="請重新啟動會話，使此修改生效。";
+
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.DefaultBrowser.Title="默認瀏覽器 ";
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.DefaultBrowser.ShortHelp="使用默認瀏覽器 ";
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.DefaultBrowser.LongHelp="此單選按鈕將使用 Windows 系統上的默認瀏覽器";
+
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.AppAssociatedToHtmlFile.Title="與 html 文件關聯的應用程序 ";
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.AppAssociatedToHtmlFile.ShortHelp="與 html 文件關聯的應用程序 ";
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.AppAssociatedToHtmlFile.LongHelp="此單選按鈕將使用 Windows 系統上與 html 文件關聯的應用程序";
+
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.CustomApplicationOrBrowser.Title="自定義應用程序/瀏覽器 ";
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.CustomApplicationOrBrowser.ShortHelp="自定義應用程序/瀏覽器 ";
+BrowserSelection.IconAndOptionsFrame.OptionsFrame.CustomApplicationOrBrowser.LongHelp="此單選按鈕將使用 Windows 系統上用戶設置的自定義應用程序或瀏覽器";
+
+LifeCycleOptimization.HeaderFrame.Global.Title="生命周期操作優化";
+LifeCycleOptimization.IconAndOptionsFrame.OptionsFrame.LCOptimizationSpeed.Title="速度";
+LifeCycleOptimization.IconAndOptionsFrame.OptionsFrame.LCOptimizationSpeed.ShortHelp="優化生命周期操作的速度";
+LifeCycleOptimization.IconAndOptionsFrame.OptionsFrame.LCOptimizationSpeed.LongHelp="對生命周期操作的速度進行優化。在此模式下，文件可能會在 CATIA 會話中加載并在生命周期操作終止后保持加載";
+LifeCycleOptimization.IconAndOptionsFrame.OptionsFrame.LCOptimizationMemory.Title="內存使用";
+LifeCycleOptimization.IconAndOptionsFrame.OptionsFrame.LCOptimizationMemory.ShortHelp="優化生命周期操作的內存使用";
+LifeCycleOptimization.IconAndOptionsFrame.OptionsFrame.LCOptimizationMemory.LongHelp="對生命周期操作的內存使用進行優化。在此模式下，文件可能會在 CATIA 會話中加載并在使用后自動卸載";
+
+LocalWorkspaceDirectory.HeaderFrame.Global.Title="本地工作區目錄";
+LocalWorkspaceDirectory.IconAndOptionsFrame.OptionsFrame.LocalWorkspaceDirectoryEditor.ShortHelp="本地工作區目錄";
+LocalWorkspaceDirectory.IconAndOptionsFrame.OptionsFrame.LocalWorkspaceDirectoryEditor.LongHelp="本地工作區目錄";
+LocalWorkspaceDirectory.IconAndOptionsFrame.OptionsFrame.LocalWorkspaceDirectoryPushButton.Title="選擇文件夾";
+LocalWorkspaceDirectory.IconAndOptionsFrame.OptionsFrame.LocalWorkspaceDLNamePushButton.Title="選擇 DLName";
+LocalWorkspaceDirectory.IconAndOptionsFrame.OptionsFrame.LocalWorkspaceDirectoryCheckButton.Title="允許在打開的窗格中選擇本地工作區目錄";
+
+// 3951 校正官方漢化ETH : CT5 NEW UI : V6R2011x : START
+ENODC5_MODE_DISABLED="已禁用";
+ENODC5_MODE_NEWUI="嵌入式集成";
+ENODC5_MODE_BROWSER="Web 集成";
+
+LockOnTheFly.HeaderFrame.Global.Title="修改已解鎖文檔";
+LockOnTheFly.IconAndOptionsFrame.OptionsFrame.LockOnTheFlyCheckButton.Title="第一次修改時顯示“動態鎖定”對話框";
+
+DC5IntegrationMode.HeaderFrame.Global.Title="用戶界面";
+DC5IntegrationMode.IconAndOptionsFrame.OptionsFrame.CT5IntegrationModeLabel.Title="集成模式  ";
+
+DC5IntegrationMode.IconAndOptionsFrame.OptionsFrame.CT5IntegrationModeLabel.ShortHelp="允許/禁止訪問 ENOVIA 集成";
+DC5IntegrationMode.IconAndOptionsFrame.OptionsFrame.CT5IntegrationModeLabel.LongHelp="您可以從下拉列表中選擇在 CATIA 菜單中禁用 CATIA V5 - ENOVIA 集成，或者使用本機 UI 模式或舊瀏覽器模式";
+
+DC5IntegrationMode.IconAndOptionsFrame.OptionsFrame.CT5IntegrationModeCombo.Title="CATIA V5 - ENOVIA 集成模式選擇";
+DC5IntegrationMode.IconAndOptionsFrame.OptionsFrame.CT5IntegrationModeCombo.ShortHelp="允許/禁止訪問 ENOVIA 集成/本機 UI/CATIA V5 - ENOVIA V6 集成的瀏覽器模式";
+DC5IntegrationMode.IconAndOptionsFrame.OptionsFrame.CT5IntegrationModeCombo.LongHelp="您可以從下拉列表中選擇在 CATIA 菜單中禁用 CATIA V5 - ENOVIA 集成，或者使用本機 UI 模式或舊瀏覽器模式";
+
+NewUINotInstalled.Title="錯誤";
+NewUINotInstalled.Message="嵌入式集成在此 CATIA 安裝中不可用。請安裝 DCI 產品。";
+
+MissingNewUILicense.Title="錯誤";
+MissingNewUILicense.Message="嵌入式集成要求授予 DCI 產品許可證。請使用許可證管理器獲取該許可證。";
+
+IEFClientSettingsSelection.HeaderFrame.Global.Title="IEFClient 設置";
+IEFClientSettingsSelection.IconAndOptionsFrame.OptionsFrame.IEFClientVersionLabel.Title="IEFClient 版本  ";
+IEFClientSettingsSelection.IconAndOptionsFrame.OptionsFrame.IEFClientVersionLabel.ShortHelp="客戶端上安裝的 IEFClient 版本";
+IEFClientSettingsSelection.IconAndOptionsFrame.OptionsFrame.IEFClientVersionLabel.LongHelp="這是客戶端計算機上運行的 IEFClient 部件的版本";
+IEFClientSettingsSelection.IconAndOptionsFrame.OptionsFrame.IEFClientVersionEditor.ShortHelp="客戶端上安裝的 IEFClient 版本";
+IEFClientSettingsSelection.IconAndOptionsFrame.OptionsFrame.IEFClientVersionEditor.LongHelp="這是客戶端計算機上運行的 IEFClient 部件的版本";
+
+IEFClientSettingsSelection.IconAndOptionsFrame.OptionsFrame.UnixIEFClientPathLabel.Title="IEFClientWorkspaceService 文件夾路徑  ";
+IEFClientSettingsSelection.IconAndOptionsFrame.OptionsFrame.UnixIEFClientPathLabel.ShortHelp="IEFClientWorkspaceService 文件夾的路徑";
+IEFClientSettingsSelection.IconAndOptionsFrame.OptionsFrame.UnixIEFClientPathLabel.LongHelp="此路徑是 unix 系統上 CATIA 能夠啟動到 ENOVIA DEC IEFClientWorkspaceService 所必需的路徑";
+IEFClientSettingsSelection.IconAndOptionsFrame.OptionsFrame.UnixIEFClientPathEditor.ShortHelp="IEFClientWorkspaceService 文件夾的路徑";
+IEFClientSettingsSelection.IconAndOptionsFrame.OptionsFrame.UnixIEFClientPathEditor.LongHelp="此路徑是 unix 系統上 CATIA 能夠啟動到 ENOVIA DEC IEFClientWorkspaceService 所必需的路徑";
+IEFClientSettingsSelection.IconAndOptionsFrame.OptionsFrame.UnixIEFClientPathPushButton.Title="瀏覽";
+
+BrowserModeSettings.HeaderFrame.Global.Title="瀏覽器模式設置";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.HeaderFrame.Global.Title="瀏覽器選擇";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.UnixBrowserPathLabel.Title="瀏覽器路徑  ";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.UnixBrowserPathLabel.ShortHelp="Web 瀏覽器可執行文件的路徑";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.UnixBrowserPathLabel.LongHelp="此路徑是 unix 系統上 CATIA 能夠連接到 ENOVIA Web 應用程序所必需的路徑";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.UnixBrowserPathEditor.ShortHelp="Web 瀏覽器可執行文件的路徑";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.UnixBrowserPathEditor.LongHelp="此路徑是 unix 系統上 CATIA 能夠連接到 ENOVIA Web 應用程序所必需的路徑";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.UnixBrowserPathPushButton.Title="瀏覽";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.WinBrowserPathEditor.ShortHelp="Web 瀏覽器可執行文件的路徑";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.WinBrowserPathEditor.LongHelp="此路徑是 Windows 系統上 CATIA 能夠連接到 ENOVIA Web 應用程序所必需的路徑";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.WinBrowserPathPushButton.Title="瀏覽";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.DefaultBrowser.Title="默認瀏覽器 ";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.DefaultBrowser.ShortHelp="使用默認瀏覽器 ";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.DefaultBrowser.LongHelp="此單選按鈕將使用 Windows 系統上的默認瀏覽器";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.AppAssociatedToHtmlFile.Title="與 html 文件關聯的應用程序 ";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.AppAssociatedToHtmlFile.ShortHelp="與 html 文件關聯的應用程序 ";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.AppAssociatedToHtmlFile.LongHelp="此單選按鈕將使用 Windows 系統上與 html 文件關聯的應用程序";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.CustomApplicationOrBrowser.Title="自定義應用程序/瀏覽器 ";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.CustomApplicationOrBrowser.ShortHelp="自定義應用程序/瀏覽器 ";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSelection.IconAndOptionsFrame.OptionsFrame.CustomApplicationOrBrowser.LongHelp="此單選按鈕將使用 Windows 系統上用戶設置的自定義應用程序或瀏覽器";
+
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.HeaderFrame.Global.Title="服務器設置";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixProtocolLabel.Title="協議  ";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixProtocolLabel.ShortHelp="訪問 ENOVIA Web 界面使用的協議";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixProtocolLabel.LongHelp="默認情況下，使用的協議為純 http，但如果對服務器進行了相應的配置，則可以使用 https 來驗證服務器并對通信加密";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixProtocolCombo.ShortHelp="訪問 ENOVIA Web 界面使用的協議";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixProtocolCombo.LongHelp="默認情況下，使用的協議為純 http，但如果對服務器進行了相應的配置，則可以使用 https 來驗證服務器并對通信加密";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixHostNameLabel.Title="主機名  ";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixHostNameLabel.ShortHelp="服務器主機名或 IP";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixHostNameLabel.LongHelp="這是 ENOVIA 主協作服務器的主機名";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixHostNameEditor.ShortHelp="服務器主機名或 IP";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixHostNameEditor.LongHelp="這是 ENOVIA 主協作服務器的主機名";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixPortLabel.Title="端口號  ";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixPortLabel.ShortHelp="服務器 TCP 端口";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixPortLabel.LongHelp="ENOVIA 服務器偵聽的 TCP 端口";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixPortSpinner.ShortHelp="服務器 TCP 端口";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixPortSpinner.LongHelp="ENOVIA 服務器偵聽的 TCP 端口";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixAppNameLabel.Title="應用程序名稱  ";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixAppNameLabel.ShortHelp="ENOVIA Web 應用程序名稱";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixAppNameLabel.LongHelp="這是 ENOVIA Web 應用程序安裝到服務器時使用的名稱";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixAppNameEditor.ShortHelp="ENOVIA Web 應用程序名稱";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.EMatrixAppNameEditor.LongHelp="這是 ENOVIA Web 應用程序安裝到服務器時使用的名稱";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.DSCVersionLabel.Title="DesignerCentral 版本  ";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.DSCVersionLabel.ShortHelp="服務器上安裝的 DesignerCentral 版本";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.DSCVersionLabel.LongHelp="這是 ENOVIA 服務器上運行的 DesignerCentral 部件的版本";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.DSCVersionEditor.ShortHelp="服務器上安裝的 DesignerCentral 版本";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.BrowserSettings.IconAndOptionsFrame.OptionsFrame.DSCVersionEditor.LongHelp="這是 ENOVIA 服務器上運行的 DesignerCentral 部件的版本";
+
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.UserExits.HeaderFrame.Global.Title="用戶定義的退出函數";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.UserExits.IconAndOptionsFrame.OptionsFrame.UserExitsPathLabel.Title="UserExits 插件路徑  ";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.UserExits.IconAndOptionsFrame.OptionsFrame.UserExitsPathLabel.ShortHelp="自定義 UserExits 插件的可選路徑";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.UserExits.IconAndOptionsFrame.OptionsFrame.UserExitsPathLabel.LongHelp="指定自定義 UserExits 插件將使其中定義的掛鉤在每次執行關聯的集成操作時運行";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.UserExits.IconAndOptionsFrame.OptionsFrame.UserExitsPathEditor.ShortHelp="自定義 UserExits 插件的可選路徑";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.UserExits.IconAndOptionsFrame.OptionsFrame.UserExitsPathEditor.LongHelp="指定自定義 UserExits 插件將使其中定義的掛鉤在每次執行關聯的集成操作時運行";
+BrowserModeSettings.IconAndOptionsFrame.OptionsFrame.UserExits.IconAndOptionsFrame.OptionsFrame.UserExitsPathPushButton.Title="瀏覽";
+// 3951 校正官方漢化ETH : CT5 NEW UI : V6R2011x : END

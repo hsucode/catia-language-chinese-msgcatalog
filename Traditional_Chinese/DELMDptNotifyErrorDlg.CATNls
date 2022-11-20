@@ -1,0 +1,136 @@
+// 3951 校正官方漢化 DO不EDIT :: THE CAA2 WIZARD WILL REPLACE所有 CODE HERE
+DELMDptMOBuildIPMNotUpToDate.Title="IPM不Upto Date";
+DELMDptMOBuildIPMNotUpToDate.Message="IPM Model is不Up to Date. Update the IPM before running 仿真";
+
+DELMDptGenDrawingCmdNotInProcAct.Title="不正確動作";
+DELMDptGenDrawingCmdNotInProcAct.Message="選擇 Activity must be一個Part Operation或 must have一個Part Operation in its hierarchy";
+DELMDptGenDrawingCmdNoAssoc3DView.Title="No Associated 3D Views";
+DELMDptGenDrawingCmdNoAssoc3DView.Message="No 3D Views associated to IPM Part of the selected Machining操作";
+DELMDptGenDrawingCmdViewNotInIPM.Title="View不in IPM";
+DELMDptGenDrawingCmdViewNotInIPM.Message="選擇 3D View is不associated to the IPM 零件";
+DELMDptGenDrawingCmdInCompatStd.Title="Incompatible Standards";
+DELMDptGenDrawingCmdInCompatStd.Message="View generation is不allowed when 3D view and drawing standards are different. Create drawing in the same standard as 3D視圖";
+DELMDptGenDrawingCmdFileExists.Title  ="另存為";
+DELMDptGenDrawingCmdFileExists.Message="This Item已經存在.Do you want it to be overridden ?";
+DELMDptGenDrawingCmdBlobNotSaved.Title ="Detailing不Saved";
+DELMDptGenDrawingCmdBlobNotSaved.Message="保存detailing before extracting drawing";
+DELMDptGenDrawingCmdNoIPM.Title ="IPM has不been generated for the選擇動作";
+DELMDptGenDrawingCmdNoIPM.Message="選擇an activity with IPM generated或 generate/update the IPM";
+DELMDptGenDrawingCmdReadOnlyDrawingInputDocument.Title="選擇 file不writable";
+DELMDptGenDrawingCmdReadOnlyDrawingInputDocument.Message="The selected file cannot be saved because it is write-protected. Please choose another文件名";
+DELMDptGenDrawingCmdWrongDrawingInputDocument.Title="Wrong Drawing name inputed";
+DELMDptGenDrawingCmdWrongDrawingInputDocument.Message="The inputed Drawing name contains some forbidden characters或 refers to一個unaccessible existing document. Please change the Drawing name.";
+DELMDptGenDrawingCmdExistingDrwFromActNotAccessible.Title="Unaccessible Existing Drawing";
+DELMDptGenDrawingCmdExistingDrwFromActNotAccessible.Message="文件 /P1 cannot be opened. Please verify that it is located in the right folder according to the DPM Machining Process Planner options (under the Tools menu)或 select another activity或 another drawing extraction mode.";
+
+
+DELMDptRemoveLinkToDrawingCmdNotInProcAct.Title="不正確動作";
+DELMDptRemoveLinkToDrawingCmdNotInProcAct.Message="選擇 Activity must be一個Part Operation或 must have一個Part Operation in its hierarchy";
+DELMDptRemoveLinkToDrawingCmdNoDwgInAct.Title="不正確動作";
+DELMDptRemoveLinkToDrawingCmdNoDwgInAct.Message="選擇 Activity has no drawing associated, so there is no Link To Drawing to remove";
+DELMDptRemoveLinkToDrawingCmdUserConfirmation.Title="移除 Link To Drawing Action Confirmation";
+DELMDptRemoveLinkToDrawingCmdUserConfirmation.Message="Do you really want to remove the Link To Drawing of /P1 ?";
+
+DELMDptIpmNavigDlgMsg1.Title="No動作";
+DELMDptIpmNavigDlgMsg1.Message="You must have atleast one activity in the Process tree before using這個命令!";
+DELMDptIpmNavigDlgMsg2.Title="不正確Links";
+DELMDptIpmNavigDlgMsg2.Message="One或 more links between activities is不correct.  Please fix and retry."; 
+DELMDptIpmNavigDlgMsg3.Title="Next Activity不Linked";
+DELMDptIpmNavigDlgMsg3.Message="The Next activity is不linked into the process.";
+DELMDptIpmNavigDlgMsg4.Title="Previous Activity不Linked";
+DELMDptIpmNavigDlgMsg4.Message="The Previous activity is不linked into the process.";
+
+DELMDptNewDrawingInvalidScale.Title="非法 Scale";
+DELMDptNewDrawingInvalidScale.Message="The Scale you have entered is out of range [10e-5...10e4]";
+
+DELMDptSelectCrtActCmdIncorrectAct.Title="不正確動作";
+DELMDptSelectCrtActCmdIncorrectAct.Message="選擇 activity cannot be set as the current activity!";
+
+GenericTitle.Title="DPM Machining 錯誤";
+
+DELMDptInsertIPMFileExists.Title="文件 Exists";
+DELMDptInsertIPMFileExists.Message="文件 with this name exists !! Try out some other 名稱";
+
+DELMDptInsertIPMNoFile.Title="警告消息";
+DELMDptInsertIPMNoFile.Message="Provide some 文件名 !!";
+
+
+DELMDptSeqAssistanceNoMachine.Title="No Associated Machine";
+DELMDptSeqAssistanceNoMachine.Message="No Machine associated to this Part操作";
+
+
+DELMDptSeqAssistanceAddMachine.Title="No Machine Warning";
+DELMDptSeqAssistanceAddMachine.Message="No Machine associated to this Part Operation \n       Select some other PartOp ";
+
+DELMDptSeqAssistanceWrongMachine.Title="Wrong Machine 錯誤";
+DELMDptSeqAssistanceWrongMachine.Message="The Machine type is不allowed ";
+
+DELMDptSeqAssistanceWrongMachineSecond.Title="Wrong Machine Warning";
+DELMDptSeqAssistanceWrongMachineSecond.Message="The Machine type is不allowed \n Select some other PartOp of 3/5-Axis Machine";
+
+DELMDptSeqAssistanceSamePOWarning.Title="Same PartOp";
+DELMDptSeqAssistanceSamePOWarning.Message="目標 and Destination cann't be same \n Select some other PartOp";
+
+
+DELMDptSeqAssistanceNoShow.Title="Design Part Visibility";
+DELMDptSeqAssistanceNoShow.Message="Corresponding DesignPart is in NoShow Mode \n Make it visible and proceed";
+
+DELMDptSeqAssistanceNoDesignPart.Title="No Design 產品";
+DELMDptSeqAssistanceNoDesignPart.Message="No Design Part corresponding to the PartPO";
+
+DELMDptSeqAssistanceWrongSelection.Title="Wrong 平面";
+DELMDptSeqAssistanceWrongSelection.Message="選擇 Plane doesn't belong to corresponding DesignPart \n Select correct 平面";
+
+DELMDptSelectFatherComSelFather.Title="選擇Father";
+DELMDptSelectFatherComSelFather.Message="選擇father of to be assigned MOs";
+
+DELMDptSeqAssistanceNoChecks.Title="Wrong Checks文件";
+DELMDptSeqAssistanceNoChecks.Message="選擇Some other RuleBase Check file from Tools > Options > Pwtrn > Commands";
+
+DELMDptSeqAssistanceNoChecksFile.Title="No Check文件";
+DELMDptSeqAssistanceNoChecksFile.Message="選擇RuleBase Check file from Tools > Options > Pwtrn > Commands";
+
+DELMDptSeqAssistanceChecksNotEnabled.Title="檢查s Disabled";
+DELMDptSeqAssistanceChecksNotEnabled.Message="Enable KW Checks Based assistance to run KW 邏輯 ";
+
+DELMDptSeqAssistanceNoMO.Title="Sequence Assistance";
+DELMDptSeqAssistanceNoMO.Message="No Machining Operation found for assignment";
+
+DELMDptGenerateTIPWarning.Title="覆蓋文件";
+DELMDptGenerateTIPWarning.Message="模式l has already been extracted \nThis process will over-write - /P1";
+
+DELMDptIPMModeWarning.Title="不正確IPM Generation 模式";
+DELMDptIPMModeWarning.Message="IPM generation mode has to be by Tools for Tool In Part model extraction";
+
+DELMDptExecuteMacroNotFound.Title="Macro沒有發現";
+DELMDptExecuteMacroNotFound.Message="Make sure the macro /p1 exists in one of the libraries defined in the Tools > Macro > Macros menu \nor in the default library: /p2";
+
+DELMDptMachFeatNotSet.Title="Wrong MAF選擇";
+DELMDptMachFeatNotSet.Message="當前 machining area is不compatible with operation \n       Machining area不associated";
+
+DELMDptActivityCreationFailed.Title="Activity Creation Failed";
+DELMDptActivityCreationFailed.Message="Please check if the insertion level is authorized for that activity type.";
+
+DELMDptDocumentsSettingsOutsideDrawingFolderInputValue.Title="繪圖folder path不changed";
+DELMDptDocumentsSettingsOutsideDrawingFolderInputValue.Message="The input Drawing folder path is不inside the PPRHub Shared location. The Drawing folder will be reset to /P1";
+
+DELMDptDocumentsSettingsWrongDrawingFolderInputValue.Title="繪圖folder path不changed";
+DELMDptDocumentsSettingsWrongDrawingFolderInputValue.Message="The input Drawing folder path is unaccessible. The Drawing folder will be reset to /P1";
+
+DELMDptDocumentsSettingsOutsideIPMFolderInputValue.Title="IPM folder path不changed";
+DELMDptDocumentsSettingsOutsideIPMFolderInputValue.Message="The input IPM folder path is不inside the PPRHub Shared location. The IPM folder will be reset to /P1";
+
+DELMDptDocumentsSettingsWrongIPMFolderInputValue.Title="IPM folder path不changed";
+DELMDptDocumentsSettingsWrongIPMFolderInputValue.Message="The input IPM folder path is unaccessible. The IPM folder will be reset to /P1";
+
+DELMDptDocumentsSettingsOutsideIPMInstanceFolderInputValue.Title="IPM Instance folder path不changed";
+DELMDptDocumentsSettingsOutsideIPMInstanceFolderInputValue.Message="The input IPM Instance folder path is不inside the PPRHub Shared location. The IPM Instance folder will be reset to /P1";
+
+DELMDptDocumentsSettingsWrongIPMInstanceFolderInputValue.Title="IPM Instance folder path不changed";
+DELMDptDocumentsSettingsWrongIPMInstanceFolderInputValue.Message="The input IPM Instance folder path is unaccessible. The IPM Instance folder will be reset to /P1";
+
+DELMDptDocumentsSettingsWrongIPMTemplateFolderInputValue.Title="IPM Template path不changed";
+DELMDptDocumentsSettingsWrongIPMTemplateFolderInputValue.Message="The input IPM Template path is unaccessible. The IPM Template path will be reset to /P1";
+
+
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE

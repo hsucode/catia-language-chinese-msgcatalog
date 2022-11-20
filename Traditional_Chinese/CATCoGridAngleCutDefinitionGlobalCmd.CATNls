@@ -1,0 +1,46 @@
+
+
+CATCoGridAngleCutDefinitionGlobalCmd.Title="網格鋪層尖角向導";
+CATCoGridAngleCutDefinitionGlobalCmd.SelPlyGroupState.Message="選擇鋪層組";
+CATCoGridAngleCutDefinitionGlobalCmd.PlyGroupSelectedState.Message="啟動分析";
+CATCoGridAngleCutDefinitionGlobalCmd.AnalyseLaunchedState.Message="通過單擊 3D 標注啟動生成鋪層尖角";
+
+CATCoGridAngleCutDefinitionGlobalCmd.LaunchAnalysisAgent.UndoTitle="啟動分析";
+CATCoGridAngleCutDefinitionGlobalCmd.LaunchGenerationAgent.UndoTitle="鋪層尖角已創建";
+
+
+// 3951 校正官方漢化 Highlighter
+Highlight.Marker.Valid.Red="0";
+Highlight.Marker.Valid.Green="255";
+Highlight.Marker.Valid.Blue="0";
+Highlight.Marker.Invalid.Red="255";
+Highlight.Marker.Invalid.Green="0";
+Highlight.Marker.Invalid.Blue="0";
+Highlight.OrientationArrow.lengthLine="200";
+Highlight.OrientationArrow.lengthArrow="0";
+Highlight.WarningFeature.lengthLine="200";
+Highlight.OrientationArrow.lengthArrow="0";
+// 3951 校正官方漢化 默認值 for parameters
+MaxAngleBetweenTangentsInDeg.Default="170";
+TowWidthInMM.Default="10";
+MinimumLengthInMM.Default="100";
+AngleBisMaxInDeg.Default="45";
+MinAngleOrientationTgtInDeg.Default="5";
+
+// 3951 校正官方漢化 Error & Warning messages
+UnexpectedError.Message="意外錯誤";
+UserInterrupt.Message="任務已取消";
+
+// 3951 校正官方漢化 Progress bar
+ProgressTaskUI.Title="網格鋪層尖角分析...";
+ProgressTaskUI.ObjectName="分析/計算";
+ProgressTaskUI.Comment="進度";
+ProgressTaskUI.Step0.ObjectName="初始化";
+ProgressTaskUI.Step1.ObjectName="分析";
+
+EditMode="需要的鋪層尖角";
+EditModeMessage="單擊添加鋪層尖角";
+
+infoGenerationAnalysis=" 必須先啟動分析，才能開始生成";
+infoGenerationAnalysisError=" 分析未能以現有參數識別鋪層尖角";
+infoGenerationEditAngleCut=" 您現在可通過單擊 3D 標注開始生成鋪層尖角";

@@ -1,0 +1,84 @@
+TCACfsMain.main.1="無法打開會話。";
+TCACfsMain.main.2="意外錯誤。";
+TCACfsMain.main.3="PX1 許可證不可用。";
+TCACfsMain.main.4="目錄列表為空。";
+TCACfsMain.main.5="無法打開目錄。";
+TCACfsMain.main.6="搜索根項目時無法讀取文檔";
+TCACfsMain.main.7="無法打開報告文件： ";
+TCACfsMain.main.8="報告文件為空，因為根項目不存在。";
+TCACfsMain.main.9="無法打開解析的報告文件： ";
+TCACfsMain.main.10="解析的報告文件為空，因為根項目不存在。";
+TCACfsMain.main.11="無法刪除會話。";
+
+TCACfsMain.checkArguments.1="
+\"NAME\"
+CV5ConsistentFileSet - 批處理程序允許
+針對 Catia V5 文檔集和非 Catia V5 文件的一致性
+檢查指定目錄。
+
+\"SYNOPSIS\"
+CV5ConsistentFileSet [-?,-h,-help,-v,-version] 
+CV5ConsistentFileSet [ -env environmentName -direnv environmentDirectory ] -d inputDirectory
+                     -o reportFile -l logFile [-r resolvedReportFile] 
+
+\"DESCRIPTION\"
+CV5 ConsistentFileSet 針對 Catia V5 文檔的文件集和
+非 Catia V5 文件的一致性檢查指定目錄。文檔集如果包含相互鏈接的
+所有文件，它則是一致的。
+程序生成：
+- XML 報告s
+- 日志文件
+- 錯誤代碼
+XML 報告包含以下內容：
+- 所有包含文件的列表
+- Catia V5 文件的名稱、目錄和版本以及上次保存日期
+- 缺失文件的信息
+- 重命名文件的信息，
+等等
+
+\"OPTIONS\"
+-?,-h,-help 顯示此信息端。
+-v,-version 顯示工具版本。
+-env 環境名稱 
+-direnv 環境目錄 
+-d 包含要創建的文檔的目錄的完整路徑名稱。
+-o 報告文件 (XML) 的完整路徑名稱。
+-r 解析的報告文件 (XML) 的完整路徑名稱。
+-l 帶有 NLS 錯誤消息的文件的完整路徑。
+
+\"EXAMPLE\"
+CV5ConsistentFileSet -d /V5Models -o /tmp/report.xml -l /tmp/log.txt";
+
+TCACfsMain.checkArguments.2="未選擇輸入目錄。";
+TCACfsMain.checkArguments.3="未選擇報告文件。";
+
+TCACfsMain.writeLogFile.1="版本：";
+TCACfsMain.writeLogFile.2="命令行：";
+TCACfsMain.writeLogFile.3="錯誤：";
+TCACfsMain.writeLogFile.4="文件：";
+TCACfsMain.writeLogFile.5="根：";
+TCACfsMain.writeLogFile.6="缺失的文件：";
+TCACfsMain.writeLogFile.7="重命名的文件：";
+
+TCACfsSearchItem.readAllItemsProperties.1="內部錯誤：此根的有些屬性不可用。";
+TCACfsSearchItem.readAllItemsProperties.2="內部錯誤：無法讀取此根的指向項目。意外錯誤。";
+TCACfsSearchItem.readAllItemsProperties.3="內部錯誤：無法讀取此根的指向項目。處理過程中出錯。";
+TCACfsSearchItem.readAllItemsProperties.4="內部錯誤：無法讀取此根的指向項目。已在會話中加載和修改一個項目，應先將其保存。";
+TCACfsSearchItem.readAllItemsProperties.5="內部錯誤：此子級的有些屬性不可用。";
+TCACfsSearchItem.readAllItemsProperties.6="內部錯誤：此缺失子級的有些屬性不可用。";
+
+TCACfsWriteOutputFile.createOutputXMLFile.1="<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
+TCACfsWriteOutputFile.createOutputXMLFile.2="CV5_CONSISTENT_FILE_SET";
+TCACfsWriteOutputFile.createOutputXMLFile.3="ROOT_FILE";
+TCACfsWriteOutputFile.createOutputXMLFile.4="FILE";
+TCACfsWriteOutputFile.createOutputXMLFile.5="STATUS";
+TCACfsWriteOutputFile.createOutputXMLFile.6="NAME";
+TCACfsWriteOutputFile.createOutputXMLFile.7="DIRECTORY";
+TCACfsWriteOutputFile.createOutputXMLFile.8="類型";
+TCACfsWriteOutputFile.createOutputXMLFile.9="LAST_SAVE_NAME";
+TCACfsWriteOutputFile.createOutputXMLFile.10="LAST_SAVE_DIRECTORY";
+TCACfsWriteOutputFile.createOutputXMLFile.11="LAST_SAVE_VERSION";
+TCACfsWriteOutputFile.createOutputXMLFile.12="EXISTING";
+TCACfsWriteOutputFile.createOutputXMLFile.13="MISSING";
+TCACfsWriteOutputFile.createOutputXMLFile.14="RENAMED";
+

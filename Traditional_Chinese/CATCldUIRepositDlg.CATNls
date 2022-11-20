@@ -1,0 +1,143 @@
+// 3951 校正官方漢化 =============================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES PROVENCE 2006
+// 3951 校正官方漢化 =============================================================================
+// 3951 校正官方漢化 CATCldUIRepositBaseDlg : NLS resource file for Reposit Base Dialog Box
+// 3951 校正官方漢化 =============================================================================
+// 3951 校正官方漢化 Implementation Notes:
+// 3951 校正官方漢化 =============================================================================
+// 3951 校正官方漢化 27-Oct-2006 YSN: Creation
+// 3951 校正官方漢化 =============================================================================
+
+// 3951 校正官方漢化 ------
+// 3951 校正官方漢化 Titles
+// 3951 校正官方漢化 ------
+CmdTitle.Compass.Title="用機器人對齊";
+CmdTitle.BestFit.Title="按最佳擬合對齊";
+CmdTitle.Constraint.Title="用約束對齊";
+CmdTitle.RPS.Title="用 RPS 對齊";
+CmdTitle.Sphere.Title="用球面對齊";
+CmdTitle.Trsf.Title="用上一個變換對齊";
+
+// 3951 校正官方漢化 ----------
+// 3951 校正官方漢化 Base class
+// 3951 校正官方漢化 ----------
+MainFrame.SourceFrame.SourceLabel.Title="要對齊的云： ";
+MainFrame.SourceFrame.SourceLabel.LongHelp="顯示要對齊的云。";
+
+MoreString=" 更多 >> ";
+LessString=" << 更少 ";
+MainFrame.MoreFrame.MorePushButton.LongHelp="顯示或隱藏輸出統計信息。";
+FrameStats.LongHelp="顯示輸出統計信息。";
+FrameStats.Title="統計信息";
+
+MoveBtn.Title="保留初始方向";
+MoveBtn.LongHelp="選擇后，創建初始的“要對齊的云”的副本，并將初始的“要對齊的云”與“參考”對齊。
+清除后，將初始的“要對齊的云”與“參考”對齊，不保留副本。";
+
+// 3951 校正官方漢化 ----------
+// 3951 校正官方漢化 With Robot
+// 3951 校正官方漢化 ----------
+MainFrame.CompassFrame.VisuFrame.Title="顯示";
+MainFrame.CompassFrame.VisuFrame.LongHelp="定義顯示結果。";
+MainFrame.CompassFrame.VisuFrame.PointsCheck.Title="點";
+MainFrame.CompassFrame.VisuFrame.TrianglesCheck.Title="三角形";
+MainFrame.CompassFrame.VisuFrame.ShadingCheck.Title="著色";
+MainFrame.CompassFrame.VisuFrame.SampleSlider.LongHelp="設置要顯示的點的百分比。";
+
+MainFrame.CompassFrame.MoveFrame.Title="移動";
+MainFrame.CompassFrame.MoveFrame.PushReset.Title="重置 Depl.";
+MainFrame.CompassFrame.MoveFrame.PushReset.LongHelp="重置對齊。";
+MainFrame.CompassFrame.MoveFrame.PushInit.Title="初始 Depl.";
+MainFrame.CompassFrame.MoveFrame.PushInit.LongHelp="提供按照慣性軸的對齊。";
+MainFrame.CompassFrame.MoveFrame.CompRdio.Title="活動機器人";
+MainFrame.CompassFrame.MoveFrame.CompRdio.LongHelp="將機器人放置在要移動的云的重心上。";
+
+// 3951 校正官方漢化 --------
+// 3951 校正官方漢化 Best Fit
+// 3951 校正官方漢化 ---------
+SelectorMulti.Reference.Panel.Title="參考";
+
+MainFrame.SourceFrame.SourceSelector.SourceCtxMenu.SourceCtxItem.Title="激活";
+
+MainFrame.SourceFrame.TargetLabel.Title="參考： ";
+MainFrame.SourceFrame.TargetLabel.ReferenceName="參考： ";
+MainFrame.SourceFrame.TargetLabel.LongHelp="選擇參考。可以是：
+- 云點和/或曲面集 
+- 或點集。
+（不允許混合）。";
+
+MainFrame.SourceFrame.TargetSelector.TargetCtxMenu.TargetCtxItem.Title="激活";
+
+Activate.LongHelp="激活區域。";
+Activate.ShortHelp="激活";
+
+PushBMulti.LongHelp="顯示選定的元素列表。";
+PushBMulti.ShortHelp="多重選擇";
+
+// 3951 校正官方漢化 ---------------------
+// 3951 校正官方漢化 by Constraint and RPS
+// 3951 校正官方漢化 ---------------------
+MainFrame.ConstraintsList.Title="約束列表";
+MainFrame.RPSList.Title="RPS 約束列表";
+
+MainFrame.ConstraintsFrame.LongHelp="列出為對齊云定義的約束。\n 約束包括兩個約束元素（一個在要對齊的云中，另一個在參考中）、 \n 及其按照約束對齊的優先值或 RPS 對齊的固定軸。";
+MainFrame.ConstraintsFrame.PushClear.Title="全部清除";
+MainFrame.ConstraintsFrame.PushClear.LongHelp="從列表中刪除所有約束。";
+MainFrame.ConstraintsFrame.PushDelete.Title="刪除";
+MainFrame.ConstraintsFrame.PushDelete.LongHelp="從列表中刪除選定的約束。";
+MainFrame.ConstraintsFrame.PushAdd.Title="添加";
+MainFrame.ConstraintsFrame.PushAdd.LongHelp="添加一個新約束到列表中：先在要對齊的云中拾取一個約束元素，\n 然后在參考中拾取另一個約束元素。";
+MainFrame.ConstraintsFrame.Input.Title="在要對齊的云中";
+MainFrame.ConstraintsFrame.Target.Title="在參考中";
+MainFrame.ConstraintsFrame.Priority.Title="優先級";
+MainFrame.ConstraintsFrame.CtxItem.PriorityLabel1="精確";
+MainFrame.ConstraintsFrame.CtxItem.PriorityLabel2="高";
+MainFrame.ConstraintsFrame.CtxItem.PriorityLabel3="高于平均值";
+MainFrame.ConstraintsFrame.CtxItem.PriorityLabel4="平均值";
+MainFrame.ConstraintsFrame.CtxItem.PriorityLabel5="低于平均值";
+MainFrame.ConstraintsFrame.CtxItem.PriorityLabel6="低";
+MainFrame.ConstraintsFrame.CtxItem.Edit="編輯優先級";
+MainFrame.ConstraintsFrame.XYZ.XLabel="X";
+MainFrame.ConstraintsFrame.XYZ.YLabel="Y";
+MainFrame.ConstraintsFrame.XYZ.ZLabel="Z";
+MainFrame.RPSParamFrame.Title="重復的 RPS 參數";
+
+MainFrame.OrientFrame.Title="方向";
+MainFrame.OrientFrame.LongHelp="定義直線和平面方向。注意方位對點類型的約束元素無意義。";
+
+MainFrame.OrientFrame.OrientAutoLabel.Title="自動";
+MainFrame.OrientFrame.OrientAutoLabel.LongHelp="自動優化要對齊的平面、直線和軸中的方位（方位未可視化）
+此選項比“手動”選項更耗時。";
+
+MainFrame.OrientFrame.OrientManuLabel.Title="手動";
+MainFrame.OrientFrame.OrientManuLabel.LongHelp="可以控制在要對齊的云中的平面、直線和軸的方位。
+單擊一條直線或一個軸反轉其方向。
+如果“自動”的結果不令人滿意或者如果需要控制方向，使用此選項。";
+
+// 3951 校正官方漢化 ---------
+// 3951 校正官方漢化 By Sphere
+// 3951 校正官方漢化 ---------
+MainFrame.SphereFrame.Title="球面半徑";
+MainFrame.SphereFrame.LongHelp="定義球面半徑";
+MainFrame.SphereFrame.ImposedBut.Title="已約束";
+MainFrame.SphereFrame.ImposedBut.LongHelp="選擇后，用鍵入的半徑計算球面。";
+
+// 3951 校正官方漢化 Icones
+
+MainFrame.SourceFrame.SourceHideShowB.Title="隱藏/顯示要對齊的云";
+MainFrame.SourceFrame.SourceHideShowB.ShortHelp="隱藏/顯示要對齊的云";
+MainFrame.SourceFrame.SourceHideShowB.LongHelp="隱藏/顯示要對齊的云
+交替隱藏或顯示要對齊的云。";
+
+MainFrame.SourceFrame.TargetHideShowB.Title="隱藏/顯示參考";
+MainFrame.SourceFrame.TargetHideShowB.ShortHelp="隱藏/顯示參考";
+MainFrame.SourceFrame.TargetHideShowB.LongHelp="隱藏/顯示參考
+交替隱藏或顯示參考。";
+
+MainFrame.SourceFrame.SourceSphereB.Title="在要對齊的云上的球面";
+MainFrame.SourceFrame.SourceSphereB.ShortHelp="在要對齊的云上的球面";
+MainFrame.SourceFrame.SourceSphereB.LongHelp="可以定義要對齊的云上的球面。";
+
+MainFrame.SourceFrame.TargetSphereB.Title="在參考上的球面";
+MainFrame.SourceFrame.TargetSphereB.ShortHelp="在參考上的球面";
+MainFrame.SourceFrame.TargetSphereB.LongHelp="可以定義在參考上的球面。";

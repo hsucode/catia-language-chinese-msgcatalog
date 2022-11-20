@@ -1,0 +1,101 @@
+DELPLMMachiningFBDI.Resource.MigrateLink="無法遷移 V5 資源 [";
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_0101.Key1="] 及其用戶展示之間的鏈接。";
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_0101.Key2=" 問題由來：用戶展示不包含知識工程參數 [CuttingType]。";
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_0101.Key3=" 解決方案：";
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_0101.Key4="  第一項建議：在 V5 中，修改（或添加）知識工程參數 [CuttingType]，如文檔中所述：";
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_0101.Key5="                   NC 加工基礎結構/材料移除模擬/CATProduct 用戶展示/命名約定。";
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_0101.Key6="  第二項建議：在 V5 中，從 NC 資源中移除用戶展示。";
+
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_0102.Key1="] 及其支架的用戶展示之間的鏈接無法被遷移，因為 [";
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_0102.Key2="] 不是刀具裝配體。";
+
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_0103.Key1="] 及其支架的用戶展示之間的鏈接無法被遷移。";
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_0104.Key1="] 及其刀具的用戶展示之間的鏈接無法被遷移。";
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_0105.Key1="] 及其柄的用戶展示之間的鏈接無法被遷移。";
+
+DELPLMMachiningFBDI.Resource.IsMigrable.MACHINING_0108.Key1=" 未遷移該 CATProcess 中包含的立式或臥式 NC 車床。";
+DELPLMMachiningFBDI.Resource.IsMigrable.MACHINING_0108.Key2=" 它被替換為包含 1 個轉塔和 1 個主軸的新型 V6 常規 NC 機床。";
+DELPLMMachiningFBDI.Resource.IsMigrable.MACHINING_0108.Key3=" 未遷移轉塔和主軸參數。";
+DELPLMMachiningFBDI.Resource.IsMigrable.MACHINING_0108.Key4=" 用戶將必須重新定義這種新型的 V6 NC 機床，以在 V6 中獲取預期的刀具路徑。";
+
+DELPLMMachiningFBDI.Resource.IsMigrable.MACHINING_0109.Key1=" 未遷移 V5 NC 資源 [";
+DELPLMMachiningFBDI.Resource.IsMigrable.MACHINING_0109.Key2="]，因為它沒有關聯的 CATProduct。";
+
+DELPLMMachiningFBDI.Resource.IsMigrable.MACHINING_0110.Key1=" V5 NC 機床 [";
+DELPLMMachiningFBDI.Resource.IsMigrable.MACHINING_0110.Key2="] 參考了 PPtable 目錄中不存在的 PPTable 文件 [";
+DELPLMMachiningFBDI.Resource.IsMigrable.MACHINING_0110.Key3="]： ";
+DELPLMMachiningFBDI.Resource.IsMigrable.MACHINING_0110.Key4=" 必須將該文件放入 PPtable 目錄，以像在 V5 中那樣生成 NC 代碼。";
+
+DELPLMMachiningFBDI.ManufacturingConnector.IsMigrable.MACHINING_0201.Key1="未同步指向  的鏈接 [";
+DELPLMMachiningFBDI.ManufacturingConnector.IsMigrable.MACHINING_0201.Key2="] ";
+DELPLMMachiningFBDI.ManufacturingConnector.IsMigrable.MACHINING_0201.Key3=" 。";
+DELPLMMachiningFBDI.ManufacturingConnector.IsMigrable.MACHINING_0201.Key4="此鏈接指向 2 個不同文檔：";
+DELPLMMachiningFBDI.ManufacturingConnector.IsMigrable.MACHINING_0201.Key5="被指向的幾何圖形包含在： ";
+DELPLMMachiningFBDI.ManufacturingConnector.IsMigrable.MACHINING_0201.Key6=" 但此鏈接還參考： ";
+DELPLMMachiningFBDI.ManufacturingConnector.IsMigrable.MACHINING_0201.Key7="問題由來：對設置裝配體的修改（編輯/鏈接功能）超出了加工應用限制。";
+DELPLMMachiningFBDI.ManufacturingConnector.IsMigrable.MACHINING_0201.Key8="問題修復方法：在 V5 中，移除鏈接并重新選擇幾何圖形，然后在 V6 中啟動導入。";
+
+DELPLMMachiningFBDI.ManufacturingConnector.MigrateEntities.MACHINING_0202.Key1=" 鏈接已斷開，該鏈接在 V6:[";
+DELPLMMachiningFBDI.ManufacturingConnector.MigrateEntities.MACHINING_0202.Key2="] 中指向 -> ";
+
+DELPLMMachiningFBDI.ManufacturingConnector.MigrateEntities.MACHINING_0203.Key1=" 鏈接已遷移（但未遷移產品上下文），該鏈接在 V5:[";
+DELPLMMachiningFBDI.ManufacturingConnector.MigrateEntities.MACHINING_0203.Key2="] 中指向 -> ";
+
+DELPLMMachiningFBDI.ManufacturingOperation.IsMigrable.MACHINING_0301.Key1=" 無法遷移，因為發生基本錯誤。";
+
+DELPLMMachiningFBDI.ManufacturingOperation.IsMigrable.MACHINING_0303.Key1=" 無法遷移，因為它是 V4 活動。";
+
+DELPLMMachiningFBDI.ManufacturingProgram.IsMigrable.MACHINING_0304.Key1=" 無法遷移，因為 ";
+DELPLMMachiningFBDI.ManufacturingProgram.IsMigrable.MACHINING_0304.Key2=" 它是 V4 程序。";
+
+DELPLMMachiningFBDI.ManufacturingSetup.IsMigrable=" 無法遷移，因為 ";
+DELPLMMachiningFBDI.ManufacturingSetup.IsMigrable.MACHINING_0305.Key1=" 發生基本錯誤。";
+
+DELPLMMachiningFBDI.ManufacturingSetup.IsMigrable.MACHINING_0306.Key1=" 零件操作未參考 NC 機床。 ";
+DELPLMMachiningFBDI.ManufacturingSetup.IsMigrable.MACHINING_0306.Key2=" 在 V6 中，在運行中添加默認 3 軸機床。";
+
+DELPLMMachiningFBDI.ManufacturingSetup.IsMigrable.MACHINING_0307.Key1=" CATProcess 中包含其他未參考同一 NC 機床的零件操作。";
+
+DELPLMMachiningFBDI.ManufacturingSetup.IsMigrable.MACHINING_0308.Key1=" 是 V4 活動。";
+
+DELPLMMachiningFBDI.ManufacturingOperation.IsMigrable.MACHINING_0309.Key1=" 被遷移忽略，因為它將刀具路徑保留為輸入（提醒：尚未遷移刀具路徑）。";
+DELPLMMachiningFBDI.ManufacturingOperation.IsMigrable.MACHINING_0310.Key1=" 被遷移忽略，因為尚未遷移刀具路徑。";
+
+DELPLMMachiningFBDI.ManufacturingOperation.IsMigrable.MACHINING_0311.Key1=" 被遷移忽略，并且必須通過“V6 零件操作”面板重新定義。";
+
+DELPLMMachiningFBDI.ManufacturingSetup.MACHINING_0312.Key1=" 的同一設置裝配體具有多個設置位置。";
+DELPLMMachiningFBDI.ManufacturingSetup.MACHINING_0312.Key2="在“零件操作”編輯器中檢查設置位置，然后向每個位置重新分派預期的子產品。";
+
+DELPLMMachiningFBDI.ManufacturingSetup.MACHINING_0313.Key1="自動坯料選擇選項 ";
+DELPLMMachiningFBDI.ManufacturingSetup.MACHINING_0313.Key2=" 已被轉換為中間坯料選項。必須重新計算坯料。";
+
+DELPLMMachiningFBDI.CATManufacturingContainer.IsMigrable="CATManufacturingContainer 尚無法遷移。";
+DELPLMMachiningFBDI.CATManufacturingContainer.IsMigrable.MACHINING_0401.Key1="CATProcess 中包含的資源太舊（在 V5R12 之前）。";
+DELPLMMachiningFBDI.CATManufacturingContainer.IsMigrable.MACHINING_0401.Key2="將 CATProcess 保存到 V5R12 及其上一級別，然后執行導入，以遷移這些資源。";
+
+DELPLMMachiningFBDI.MACHINING_0403.Key1="CATProcess 無法遷移，因為它包含多個 NC 機床。";
+DELPLMMachiningFBDI.MACHINING_0403.Key2="解決方案：移除未使用的 NC 機床，或分割 CATProcess 使其數量與 NC 機床數相同。";
+
+DELPLMMachiningFBDI.FormulaMigration.MACHINING_0601.Key1=" 尚未遷移： ";
+
+DELPLMMachiningFBDI.ToolpathMigration.MACHINING_0701.Key1="刀具路徑遷移失敗。";
+DELPLMMachiningFBDI.ToolpathMigration.MACHINING_0702.Key1="以下對象的刀具路徑 ";
+DELPLMMachiningFBDI.ToolpathMigration.MACHINING_0702.Key2=" 無法遷移，因為太舊。";
+DELPLMMachiningFBDI.ToolpathMigration.MACHINING_0703.Key1="以下對象的刀具路徑 ";
+DELPLMMachiningFBDI.ToolpathMigration.MACHINING_0703.Key2=" 無法遷移，因為已壓縮。";
+DELPLMMachiningFBDI.ToolpathMigration.MACHINING_0703.Key3="外部文件為 ";
+
+DELPLMMachiningFBDI.ManufacturingActivity.IsMigrable.MACHINING_1000.Key1=" 指向 ";
+DELPLMMachiningFBDI.ManufacturingActivity.IsMigrable.MACHINING_1000.Key2=" 被遷移忽略。";
+
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_1001.Key1="V6 中不包含 [";
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_1001.Key2=" ] 和資源展示 [";
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_1001.Key3="] 之間的鏈接，因為在 V5 中找不到該資源展示。";
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_1001.Key4="解決方案：關聯 V6 會話中的新資源展示。";
+
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_1002.Key1="[";
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_1002.Key2=" ] 和資源展示 [";
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_1002.Key3="] 之間的鏈接斷開，因為它在 V5 中的定義錯誤。";
+DELPLMMachiningFBDI.Resource.MigrateLink.MACHINING_1002.Key4="在 V5 中重新正確定義鏈接。";
+
+DELPLMMachiningFBDIReplace.MTBMachine.MACHINING_0111="無法以更新模式導入 DELMIA NC 機床";

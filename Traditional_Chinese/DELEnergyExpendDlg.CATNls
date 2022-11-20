@@ -1,0 +1,133 @@
+// 3951 校正官方漢化 ==========================================================================
+// 3951 校正官方漢化 ==========================================================================
+// 3951 校正官方漢化 DELEnergyExpendDlg English Message File
+// 3951 校正官方漢化 ==========================================================================
+// 3951 校正官方漢化 ==========================================================================
+
+EnergyExpendMainDlg.Title="能量消耗";
+
+OK.Title="計算...";
+OK.ShortHelp="計算能量消耗";
+Apply.Title="刷新...";
+Apply.ShortHelp="刷新能量消耗配置";
+
+// 3951 校正官方漢化 First Tab : Dialog window for action input
+TabContainer.TabPageDialog.Title="動作輸入";
+// 3951 校正官方漢化 Labels
+TabContainer.TabPageDialog.LabelHumanTask.Title="人工任務：";
+TabContainer.TabPageDialog.LabelFromAction.Title="源操作： ";
+TabContainer.TabPageDialog.LabelToAction.Title="目標操作：";
+TabContainer.TabPageDialog.LabelEditorTitle.Title="Title :";
+
+// 3951 校正官方漢化 PushButtons
+TabContainer.TabPageDialog.FrameInput.PushBKcalParameters.Title="輸入 Kcal 參數";
+TabContainer.TabPageDialog.FrameInput.PushBKcalParameters.ShortHelp="輸入 Kcal 參數";
+TabContainer.TabPageDialog.FrameInput.PushBKcalApply.Title="將當前參數插入到動作列表中";
+TabContainer.TabPageDialog.FrameInput.PushBKcalApply.ShortHelp="將當前參數插入到動作列表中";
+
+// 3951 校正官方漢化 Blank Line Labels
+TabContainer.TabPageDialog.LabelBlankLine.Title="                  ";
+
+// 3951 校正官方漢化 Second Tab : MultiList of actions
+TabContainer.TabListPostures.Title="動作列表";
+ColumnTitleOrder="#";
+ColumnTitleFrom="源操作";
+ColumnTitleTo="目標操作";
+ColumnTitleTitle="Title";
+TabContainer.TabListPostures.FrameOption.Title="Options";
+TabContainer.TabListPostures.FrameOption.PushBRemove.Title="移除選定的條目";
+TabContainer.TabListPostures.FrameOption.PushBRemove.ShortHelp="移除選定的條目";
+TabContainer.TabListPostures.FrameOption.PushBModify.Title="修改 Kcal 參數...";
+TabContainer.TabListPostures.FrameOption.PushBModify.ShortHelp="修改 Kcal 參數";
+
+// 3951 校正官方漢化 Error Messages
+WalkActivityError="選定的行走活動包含至少一個子活動（不是 MoveToPosture）。";
+InvalidHumanTask="此選擇不屬于當前人工任務。";
+InvalidFromAction="“源操作”的活動選擇無效。";
+InvalidToAction="“目標操作”的活動選擇無效。";
+InvalidActivity="選定的活動無效。";
+InvalidSelection="Invalid Selection.";
+MoveToPostureOrder="選定作為“目標動作”的元素必須跟在選定作為“源動作”的元素之后。";
+PickMoveToPosture="MoveToPosture 必須始終在拾取動作之前執行。";
+PlaceMoveToPosture="MoveToPosture 必須始終在拾取動作之前執行。";
+NotMoveToPosture="選定的對象不是 MoveToPosture 活動。";
+NoDataInstance="Invalid parameters";
+NoManikin="沒有與當前任務相關的人體模型";
+
+// 3951 校正官方漢化 Warning Messages
+MultiRemoveWarning="是否確定要從動作列表中移除 '/p1' 選定數據？";
+RemoveWarning="是否確定要從動作列表中移除選定數據？";
+RemoveTitle="移除之前的警告";
+RefreshConfirm="此動作將啟動新配置；\n所有應用的數據都將丟失。\n是否要繼續？";
+RefreshConfirmTitle="刷新配置確認";
+ClimbWarning="來自 Garg（用于能量消耗）的原始研究中\n沒有與攀爬活動相關聯的數據。\n因此，已將與行走活動相關聯的值\n應用到攀爬活動。";
+Posture="姿勢";
+// 3951 校正官方漢化 Other messages
+NoSelection="無選擇";
+NoFollowingAction="無跟隨動作";
+Activity=" Activity";
+UnknownActivity="未知活動。";
+SecondAction="第二個手臂的移動";
+CommentsOnMass="質量集位于 ";
+MassUnits=" kg.";
+PlaceActivity="放置活動。";
+// 3951 校正官方漢化StairLadderWarning.Title = "Warning";
+// 3951 校正官方漢化StairLadderWarning.Message = "Energy Expenditure can't be accurately \nevaluated for a climbing activity.\n Take note that this kind of activity \nis computed as a walking activity."; 
+// 3951 校正官方漢化 Progress Dialog
+// 3951 校正官方漢化================
+UnknownTask="未知任務";
+TextComment="分析完成于 ";
+
+ErrorInEnergyExpenditureCompute="計算時出錯。中止。";
+
+// 3951 校正官方漢化 File Kcal Results
+// 3951 校正官方漢化==================
+ReportWindow.Title="能量消耗結果";
+Close.Title="關閉";
+ReportEditor.ShortHelp="能量消耗報告";
+SaveIcon.ShortHelp="Save Report";
+ClearIcon.ShortHelp="Clear Report";
+KcalReportTitle="能量消耗計算報告";
+Manikin="分析的對象： ";
+Task="分析的任務： ";
+ManikinWeight="體重： ";
+WeightUnit="\tkg";
+Sex="性別： ";
+Female="女";
+Male="男";
+FromAction="源活動  ";
+ToAction=" 目標活動  ";
+UserSelection="來自分析的 Kcal 參數：";
+ArmAction_0="左臂動作： ";
+ArmAction_1="右臂動作： ";
+NoArmAction="無手臂動作";
+CarriedObject="承載負載： ";
+Load_0="左臂負載： ";
+Load_1="右臂負載： ";
+LoadUnits="\tkg";
+ComputationsResults="結果： ";
+MoveKcal="移動能量 = ";
+KcalUnit="\tkcal";
+MoveTime="移動時間 = ";
+TimeUnit="\t 秒";
+DelayKcal="延遲能量（針對姿勢保持）= ";
+DelayTime="延遲時間 = ";
+WalkDistance="行走距離 = ";
+DistanceUnit="\t 米";
+AvgKcalRate="平均速度 = ";
+AvgKcalRateUnit="\tkcal/min";
+KcalSummary="Kcal 摘要\n";
+underline="============\n";
+TotalKcal="總能量 = ";
+TotalTime="總時間 = ";
+TotalDistance="總行走距離 = ";
+TimeIsNull="<nil>";
+WalkAction="行走活動";
+ClimbAction="攀爬活動";
+ClimbActionNotice="
+-------------------------------------------------------------------------------------\r
+|重要通知：來自 Garg（用于能量消耗）的原始研究中\t|\r沒有與攀爬活動相關聯的數據。\t|\r因此，已將與行走活動相關聯的值\t|\r應用到攀爬活動。\t\t\t\t\t|\r
+-------------------------------------------------------------------------------------\n";
+PickedObjects="在當前動作中拾取的對象： ";
+PlacedObjects="在當前動作中放置的對象： ";
+EndOfReport="--- 報告結束 ---\n";

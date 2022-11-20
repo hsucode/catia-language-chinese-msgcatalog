@@ -1,0 +1,99 @@
+// 3951 校正官方漢化=====================================================================================
+// 3951 校正官方漢化                                     CNEXT - CXR1
+// 3951 校正官方漢化                          COPYRIGHT DASSAULT SYSTEMES 1999 
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 FILENAME    :    CATDrwOptGen
+// 3951 校正官方漢化 LOCATION    :    DraftingUI
+// 3951 校正官方漢化 AUTHOR      :    fgx
+// 3951 校正官方漢化 BUT         :    
+// 3951 校正官方漢化 DATE        :    06.01.1999
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 DESCRIPTION :    Tools/Option du Drafting - Onglet Generative
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 COMMENTS    :    
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 MODIFICATIONS     user  date        purpose
+// 3951 校正官方漢化    HISTORY        ----  ----        -------
+// 3951 校正官方漢化      00           fgx   06.01.1999  Creation 	
+// 3951 校正官方漢化      01           fgx   08.01.1999  Passage sur CATDrwOptTitle et CATDrwOptIcon
+// 3951 校正官方漢化      02           fgx   13.01.1999  Nouvelles options gendim
+// 3951 校正官方漢化      03           fgx   21.01.1999  Nouvelles options elements generes
+// 3951 校正官方漢化      04           fgx   28.01.1999  Ajout de GenDimFilter et GenDimAnal
+// 3951 校正官方漢化      05           fgx   05.02.1999  Ajout de GenDimAutoTrans
+// 3951 校正官方漢化      06           fgx   14.04.1999  Modif de GenGeo
+// 3951 校正官方漢化	  08		   lgk   26.06.2002  Revision
+// 3951 校正官方漢化	  09 	    	   lgk   15.10.02    Revision
+// 3951 校正官方漢化=====================================================================================
+
+Title="生成";
+
+frameUpdate.HeaderFrame.Global.Title="更新";
+frameUpdate.HeaderFrame.Global.LongHelp="定義視圖的更新模式。";
+frameUpdate.IconAndOptionsFrame.OptionsFrame.chkDelayedAutoUpdate.Title="在創建視圖時禁用自動更新";
+frameUpdate.IconAndOptionsFrame.OptionsFrame.chkDelayedAutoUpdate.LongHelp="不會在創建視圖時執行更新。更新視圖前將顯示簡化的結果。";
+frameUpdate.IconAndOptionsFrame.OptionsFrame.chkPreventAutoUpdate.Title="在修改視圖時禁用自動更新";
+frameUpdate.IconAndOptionsFrame.OptionsFrame.chkPreventAutoUpdate.LongHelp="禁止在修改屬性時更新視圖。";
+
+frameView.HeaderFrame.Global.Title="視圖";
+frameView.HeaderFrame.Global.LongHelp="創建視圖
+定義要使用視圖創建的元素。";
+frameView.IconAndOptionsFrame.OptionsFrame.chkExactPreview.Title="視圖生成的精確預覽";
+frameView.IconAndOptionsFrame.OptionsFrame.chkExactPreview.LongHelp="您可以在設計模式中預覽視圖，
+即使您正在可視化模式中工作。
+若不選擇此選項，將使用嵌入在 3D 文檔中的可視化數據來預覽。
+此選項僅與精確視圖相關。";
+frameView.IconAndOptionsFrame.OptionsFrame.checkGenPropa.Title="拓展截面視圖和剖面視圖的規格";
+frameView.IconAndOptionsFrame.OptionsFrame.checkGenPropa.LongHelp="復制截面視圖和剖面視圖的規格。";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewOrient.Title="根據輪廓確定輔助視圖和剖視圖的方向";
+frameView.IconAndOptionsFrame.OptionsFrame.checkViewOrient.LongHelp="輔助視圖和剖視圖具有和輪廓相同的方向。";
+frameView.IconAndOptionsFrame.OptionsFrame.checkStrictPos.Title="基于 3D 軸系的視圖軸系";
+frameView.IconAndOptionsFrame.OptionsFrame.checkStrictPos.LongHelp="視圖投影平面的坐標系將通過投影 3D 軸系來定義。";
+
+frameGenGeom.HeaderFrame.Global.Title="生成幾何圖形";
+frameGenGeom.HeaderFrame.Global.LongHelp="生成幾何圖形";
+frameGenGeom.IconAndOptionsFrame.OptionsFrame.chkGMECreation.Title="保留應用于圖形屬性的修改";
+frameGenGeom.IconAndOptionsFrame.OptionsFrame.chkGMECreation.LongHelp="保留應用于圖形屬性的修改。";
+
+
+frameGenDim.HeaderFrame.Global.Title="尺寸生成 ";
+frameGenDim.HeaderFrame.Global.LongHelp="尺寸生成
+定義是否根據 3D 零件的
+約束生成尺寸。
+可以生成以下約束：距離、
+長度、角度、半徑和直徑。 ";
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDim.Title="更新圖紙時生成尺寸 ";
+
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimFilter.Title="生成前過濾";
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimFilter.LongHelp="生成前過濾
+生成前顯示“尺寸生成過濾器”
+對話框。";
+
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimAutoPos.Title="生成后自動定位";
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimAutoPos.LongHelp="生成后自動定位
+生成后自動定位尺寸。";
+
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimAutoTrans.Title="允許視圖間自動轉移";
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimAutoTrans.LongHelp="允許視圖間自動轉移
+重新生成時，自動將尺寸轉移至最佳視圖。";
+
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimAnal.Title="生成后分析";
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimAnal.LongHelp="生成后分析
+生成后顯示“尺寸生成分析”
+對話框。";
+
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimFromPart.Title="從包括在裝配件視圖中的零件生成尺寸";
+frameGenDim.IconAndOptionsFrame.OptionsFrame.checkGenDimFromPart.LongHelp="從包括在裝配件視圖中的零件生成尺寸
+從包括在裝配件視圖中的零件生成尺寸。";
+
+frameGenDim.IconAndOptionsFrame.OptionsFrame.labelGenDimSemiAuto.Title="逐步模式生成之間的延遲： ";
+frameGenDim.IconAndOptionsFrame.OptionsFrame.labelGenDimSemiAuto.LongHelp="逐步模式生成之間的延遲
+指定逐步生成尺寸時
+各尺寸生成之間的延遲。";
+
+
+
+frameGenBal.HeaderFrame.Global.Title="零件序號生成";
+frameGenBal.HeaderFrame.Global.LongHelp="定義生成零件序號時所使用的選項。";
+frameGenBal.IconAndOptionsFrame.OptionsFrame.checkGenBalloonByInstance.Title="為每個產品實例創建零件序號";
+frameGenBal.IconAndOptionsFrame.OptionsFrame.checkGenBalloonByInstance.LongHelp="為每個產品實例創建零件序號
+為每個產品實例創建零件序號。";

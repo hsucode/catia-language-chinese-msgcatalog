@@ -1,0 +1,167 @@
+// 3951 校正官方漢化-----------------------------------------------------
+// 3951 校正官方漢化 Resource file for CATCCSPartingSrfDlg class
+// 3951 校正官方漢化 En_US
+// 3951 校正官方漢化-----------------------------------------------------
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2003
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化   Resource file for NLS purpose. 
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Implementation Notes :
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 19/02/03 : jcb; creation
+// 3951 校正官方漢化=============================================================================
+
+Title="分型面定義";
+
+NoSelection="無選擇";
+
+PartingSurfacePrefix="PartSrf_";
+
+UpToSketch=" 截至草圖 ";
+DirLength=" 方向 ";
+
+
+// 3951 校正官方漢化 Support to extrude
+FrmRoot.FrmSupport.Title=" 輪廓支持面   ";
+FrmRoot.FrmSupport.LbReference.Title=" 參考 ";
+
+// 3951 校正官方漢化 Les onglets 
+FrmRoot.MainTabContainer.TabExtrude.Title=" ";
+FrmRoot.MainTabContainer.TabExtrude.ShortHelp="通過拉伸的分型面";
+FrmRoot.MainTabContainer.TabExtrude.LongHelp="通過拉伸創建分型面。";
+
+FrmRoot.MainTabContainer.TabLoft.Title=" ";
+FrmRoot.MainTabContainer.TabLoft.ShortHelp="通過懸桿的分型面";
+FrmRoot.MainTabContainer.TabLoft.LongHelp="通過懸桿創建分型面。";
+
+FrmRoot.MainTabContainer.TabFill.Title=" ";
+FrmRoot.MainTabContainer.TabFill.ShortHelp="平面分型面";
+FrmRoot.MainTabContainer.TabFill.LongHelp="創建平面分型面。";
+
+FrmRoot.MainTabContainer.TabParams.Title=" ";
+FrmRoot.MainTabContainer.TabParams.ShortHelp="分型面參數";
+FrmRoot.MainTabContainer.TabParams.LongHelp="分型面參數
+合并距離是出于接合目的在相同位置考慮兩個截面的距離。 
+最大偏差用于定義曲線光順。";
+
+// 3951 校正官方漢化 Profile Elements 
+FrmRoot.MainTabContainer.TabExtrude.FrmProfile.Title=" 輪廓定義 ";
+FrmRoot.MainTabContainer.TabExtrude.FrmProfile.LbStart.Title=" 頂點 1:          ";
+FrmRoot.MainTabContainer.TabExtrude.FrmProfile.LbEnd.Title=" 頂點 2:          ";
+FrmRoot.MainTabContainer.TabExtrude.FrmProfile.ExtrudeInvertProfile.Title=" 補充      ";
+
+// 3951 校正官方漢化 Profile Direction
+
+
+FrmRoot.MainTabContainer.TabExtrude.FrmDirLength.FrmDirection.Title=" 方向定義 ";
+FrmRoot.MainTabContainer.TabExtrude.FrmDirLength.FrmDirection.ShortHelp=" 方向定義 ";
+FrmRoot.MainTabContainer.TabExtrude.FrmDirLength.FrmDirection.LongHelp="定義拉伸方向：
+選擇草圖，
+提取方向位于草圖的平面中并且是選定邊線的法線。";
+
+
+FrmRoot.MainTabContainer.TabExtrude.FrmDirLength.FrmLength.LbLength.Title="      長度  ";
+FrmRoot.MainTabContainer.TabExtrude.FrmDirLength.FrmLength.LbLength.ShortHelp="拉伸長度  ";
+FrmRoot.MainTabContainer.TabExtrude.FrmDirLength.FrmLength.LbLength.LongHelp="拉伸長度
+定義拉伸長度。";
+
+
+// 3951 校正官方漢化 Extrusion
+FrmRoot.MainTabContainer.TabExtrude.FrmExtrude.Title=" 拉伸 ";
+
+// 3951 校正官方漢化 Titres des colonnes de la multi liste 
+NumberColumnTitle="N°";
+ExtrudeColumnTitle="拉伸";
+SupportColumnTitle="支持面";
+LengthColumnTitle="長度";
+LoftColumnTitle="多截面曲面";
+FillColumnTitle="平面";
+
+// 3951 校正官方漢化 Contextual menu
+ReframeOnEltItem="重新構造";
+LineRemoveItem="移除 ";
+HideItem="隱藏 ";
+ShowItem="顯示 ";
+EditItem="編輯 ";
+ReverseItem="反轉 ";
+LengthItem="長度 ";
+OtherItem="另一側";
+CreateLineItem="創建直線";
+CreatePlaneItem="創建平面";
+
+// 3951 校正官方漢化 Loft sections
+FrmRoot.MainTabContainer.TabLoft.FrmSection.Title=" 截面定義 ";
+FrmRoot.MainTabContainer.TabLoft.FrmSection.LbSection1.Title=" 截面 1           ";
+FrmRoot.MainTabContainer.TabLoft.FrmSection.LbSection2.Title=" 截面 2           ";
+
+// 3951 校正官方漢化 Loft guide
+FrmRoot.MainTabContainer.TabLoft.FrmGuide.Title=" 引導線定義 ";
+FrmRoot.MainTabContainer.TabLoft.FrmGuide.LbGuide.Title=" 參考        ";
+FrmRoot.MainTabContainer.TabLoft.FrmGuide.LbStartGuide.Title=" 頂點 1:          ";
+FrmRoot.MainTabContainer.TabLoft.FrmGuide.LbEndGuide.Title=" 頂點 2:          ";
+FrmRoot.MainTabContainer.TabLoft.FrmGuide.LoftInvertProfile.Title=" 補充";
+
+// 3951 校正官方漢化 Loft
+FrmRoot.MainTabContainer.TabLoft.FrmLoft.Title="多截面曲面";
+
+// 3951 校正官方漢化 Fill
+FrmRoot.MainTabContainer.TabFill.FrmFill.Title="平面";
+
+FrmRoot.MainTabContainer.TabFill.FrmFill.LbStartEdge.Title="邊線 ";
+FrmRoot.MainTabContainer.TabFill.FrmFill.LbStartEdge.LongHelp="將平面邊線選擇為分型面的起點。";
+
+FrmRoot.MainTabContainer.TabFill.FrmFill.lbSketch.Title="草圖 ";
+FrmRoot.MainTabContainer.TabFill.FrmFill.lbSketch.LongHelp="選擇草圖作為分型面的限制和方向。";
+
+FrmRoot.MainTabContainer.TabFill.FrmFill.FrmFillMultiList.Title="平面 ";
+FrmRoot.MainTabContainer.TabFill.FrmFill.FrmFillMultiList.FillList.Title="平面 ";
+FrmRoot.MainTabContainer.TabFill.FrmFill.FrmFillMultiList.FillList.LongHelp="列出創建的分型面。";
+
+// 3951 校正官方漢化 Parameters
+FrmRoot.MainTabContainer.TabParams.FrmParams.FrmJoin.JoinCreation.Title="接合分型面 ";
+FrmRoot.MainTabContainer.TabParams.FrmParams.FrmJoin.JoinCreation.LongHelp="接合最終分型面的所有元素。";
+
+FrmRoot.MainTabContainer.TabParams.FrmParams.FrmToler.LabelMerging.Title="合并距離 ";
+FrmRoot.MainTabContainer.TabParams.FrmParams.FrmToler.LabelMerging.ShortHelp="合并距離 ";
+FrmRoot.MainTabContainer.TabParams.FrmParams.FrmToler.LabelMerging.LongHelp="合并距離
+定義用于接合用途的合并距離。";
+
+FrmRoot.MainTabContainer.TabParams.FrmParams.FrmToler.LabelMaxDeviation.Title="最大偏差 ";
+FrmRoot.MainTabContainer.TabParams.FrmParams.FrmToler.LabelMaxDeviation.ShortHelp="最大偏差 ";
+FrmRoot.MainTabContainer.TabParams.FrmParams.FrmToler.LabelMaxDeviation.LongHelp="最大偏差
+定義用于曲線光順的最大偏差。";
+
+
+// 3951 校正官方漢化 Help  
+FrmRoot.FrmSupport.LongHelp="顯示您將要創建分型面的元素名稱。";
+
+FrmRoot.MainTabContainer.TabExtrude.FrmProfile.LongHelp="顯示限制您創建分型曲輪廓的頂點。
+在您選擇了輪廓支持面后，可用的頂點會顯示為白色。選擇所需頂點。輪廓將顯示為綠色。使用上下文菜單創建其他點。";
+
+FrmRoot.MainTabContainer.TabExtrude.FrmProfile.ExtrudeInvertProfile.LongHelp=" 切換至補充該建議的輪廓。";
+
+FrmRoot.MainTabContainer.TabLoft.FrmGuide.LongHelp="顯示限制您正在創建的分型面引導線的頂點。";
+
+FrmRoot.MainTabContainer.TabLoft.FrmGuide.LoftInvertProfile.LongHelp=" 切換至補充該建議的輪廓。";
+
+FrmRoot.MainTabContainer.TabLoft.FrmSection.LongHelp="顯示您正在創建的分型面的截面。";
+
+
+FrmRoot.MainTabContainer.TabExtrude.FrmExtrude.LongHelp="列出此操作中已經創建的拉伸詳細信息。
+提供了上下文菜單以重新構造、移除、隱藏或顯示拉伸。
+當您選擇列表中的元素時，它會在圖形區域中突出顯示。";
+
+FrmRoot.MainTabContainer.TabLoft.FrmLoft.LongHelp="列出此操作中已創建的多截面曲面的詳細信息。提供了上下文菜單以重新構造、移除、隱藏或顯示多截面曲面。
+當您選擇列表中的元素時，它會在圖形區域中突出顯示。";
+
+
+
+FrmRoot.MainTabContainer.TabExtrude.FrmDirLength.FrmRadio.RadBtnUpToSketch.LongHelp="直到草圖 選擇從中得出拉伸方向和長度的草圖。";
+
+FrmRoot.MainTabContainer.TabExtrude.FrmDirLength.FrmRadio.RadBtnDirLength.LongHelp="方向和長度
+直接輸入拉伸的方向和長度。";

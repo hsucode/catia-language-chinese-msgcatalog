@@ -1,0 +1,186 @@
+Title="控制器同步";
+
+
+
+FrameResourceId.LabelSelectedResourceId.Title="選定的資源： ";
+FrameResourceId.LabelSelectedResourceId.ShortHelp="選定的資源名稱。";
+FrameResourceId.LabelSelectedResourceId.LongHelp="選定的資源名稱。";
+FrameResourceId.LabelSelectedResourceId.Help="選定的資源名稱。";
+
+FrameResourceId.EditorResourceFrameId.EditorSelectedResourceId.Title="選定的資源：";
+FrameResourceId.EditorResourceFrameId.EditorSelectedResourceId.ShortHelp="選定的資源名稱。";
+FrameResourceId.EditorResourceFrameId.EditorSelectedResourceId.LongHelp="選定的資源名稱";
+FrameResourceId.EditorResourceFrameId.EditorSelectedResourceId.Help="選定的資源名稱";
+
+SplitterId.FrameDiffId.FrameSelectedCategoryId.Title="當前類別";
+
+SplitterId.FrameDiffId.FrameSelectedCategoryId.LabelSelectedCategoryId.Title="刪除類別： ";
+SplitterId.FrameDiffId.FrameSelectedCategoryId.LabelSelectedCategoryId.ShortHelp="選定的類別名稱。";
+SplitterId.FrameDiffId.FrameSelectedCategoryId.LabelSelectedCategoryId.LongHelp="類別展示了一個控制器下找到的數據類型。數據必須擁有實例和參考。";
+SplitterId.FrameDiffId.FrameSelectedCategoryId.LabelSelectedCategoryId.Help="結構樹中的選定類別名稱";
+
+SplitterId.FrameDiffId.FrameSelectedCategoryId.EditorCategoryFrameId.EditorSelectedCategoryId.Title="選定類別：";
+SplitterId.FrameDiffId.FrameSelectedCategoryId.EditorCategoryFrameId.EditorSelectedCategoryId.ShortHelp="選定的類別名稱。";
+SplitterId.FrameDiffId.FrameSelectedCategoryId.EditorCategoryFrameId.EditorSelectedCategoryId.LongHelp="類別展示了一個控制器下找到的數據類型。數據必須擁有實例和參考。";
+SplitterId.FrameDiffId.FrameSelectedCategoryId.EditorCategoryFrameId.EditorSelectedCategoryId.Help="結構樹中的選定類別名稱";
+
+
+SplitterId.FrameDiffId.FrameObjectDiffId.Title="選定對象的屬性值";
+SplitterId.FrameDiffId.FrameObjectDiffId.LabelObjectDiffId.Title="選定對象的屬性值";
+SplitterId.FrameDiffId.FrameObjectDiffId.LabelObjectDiffId.ShortHelp="顯示選定對象的值的列表";
+SplitterId.FrameDiffId.FrameObjectDiffId.LabelObjectDiffId.LongHelp="顯示了選定對象值的列表。\n 列表在給定對象的參考和實例上下文中顯示給定對象：
+  - 對象名稱：對象的名稱
+  - 屬性名稱：屬性的名稱
+  - 實例值：實例對象的屬性值
+  - 實例值：參考對象的屬性值";
+SplitterId.FrameDiffId.FrameObjectDiffId.LabelObjectDiffId.Help="顯示選定對象的值的列表";
+
+
+SplitterId.FrameDiffId.FrameObjectDiffId.MultiObjectDiffId.Title="選定對象的屬性值";
+SplitterId.FrameDiffId.FrameObjectDiffId.MultiObjectDiffId.ShortHelp="顯示選定對象的值的列表";
+SplitterId.FrameDiffId.FrameObjectDiffId.MultiObjectDiffId.LongHelp="顯示了選定對象值的列表。\n 列表在給定對象的參考和實例上下文中顯示給定對象：
+  - 對象名稱：對象的名稱
+  - 屬性名稱：屬性的名稱
+  - 實例值：實例對象的屬性值
+  - 實例值：參考對象的屬性值";
+SplitterId.FrameDiffId.FrameObjectDiffId.MultiObjectDiffId.Help="顯示選定對象的值的列表";
+
+
+SplitterId.FrameDiffId.FrameListObjId.Title="類別內容";
+
+SplitterId.FrameDiffId.FrameListObjId.LabelListObjId.Title="類別內容";
+SplitterId.FrameDiffId.FrameListObjId.LabelListObjId.ShortHelp="顯示當前類別的對象列表";
+SplitterId.FrameDiffId.FrameListObjId.LabelListObjId.LongHelp="顯示當前類別的對象列表。
+存在實例和參考對象：
+  - 參考對象：在設備控制器自身的層級上定義的對象。
+  - 實例對象：創建自參考的對象。實例與
+                     給定上下文中定義的設備控制器相關。
+
+對象按自己的名稱列出：
+  - 一列顯示存在于實例層級的對象
+  - 一列顯示存在于參考層級的對象
+  - 一列顯示對象狀態。狀態可以為：
+     - 相同：實例和參考對象擁有相同的值。
+     - 僅在參考上定義：對象僅存在于參考層級。
+     - 僅在實例上定義：對象僅存在于實例層級。
+     - 從參考修改：實例對象在最近被修改。
+     - 從實例修改：參考對象在最近被修改。";
+SplitterId.FrameDiffId.FrameListObjId.LabelListObjId.Help="顯示當前類別的對象列表";
+
+SplitterId.FrameDiffId.FrameListObjId.MultiListObjId.Title="類別內容";
+SplitterId.FrameDiffId.FrameListObjId.MultiListObjId.ShortHelp="顯示當前類別的對象列表";
+SplitterId.FrameDiffId.FrameListObjId.MultiListObjId.LongHelp="顯示當前類別的對象列表。
+存在實例和參考對象：
+  - 參考對象：在設備控制器自身的層級上定義的對象。
+  - 實例對象：創建自參考的對象。實例與
+                     給定上下文中定義的設備控制器相關。
+
+對象按自己的名稱列出：
+  - 一列顯示存在于實例層級的對象
+  - 一列顯示存在于參考層級的對象
+  - 一列顯示對象狀態。狀態可以為：
+     - 相同：實例和參考對象擁有相同的值。
+     - 僅在參考上定義：對象僅存在于參考層級。
+     - 僅在實例上定義：對象僅存在于實例層級。
+     - 從參考修改：實例對象在最近被修改。
+     - 從實例修改：參考對象在最近被修改。";
+SplitterId.FrameDiffId.FrameListObjId.MultiListObjId.Help="顯示當前類別的對象列表";
+
+
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.Title="同步選項";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.ShortHelp="同步選項";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.LongHelp="同步選項";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.Help="同步選項";
+
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushRefInsAllId.Title="從實例同步所有參考數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushRefInsAllId.ShortHelp="從實例中同步當前類別的所有參考數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushRefInsAllId.LongHelp="從實例中同步當前類別的所有參考數據。";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushRefInsAllId.Help="從實例中同步當前類別的所有參考數據";
+
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushInsRefAllId.Title="從參考同步所有實例數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushInsRefAllId.ShortHelp="從參考同步所有實例數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushInsRefAllId.LongHelp="從參考中同步當前類別的所有實例數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushInsRefAllId.Help="從參考中同步當前類別的所有實例數據";
+
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushRefInsId.Title="從實例同步選定參考數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushRefInsId.ShortHelp="從實例同步選定參考數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushRefInsId.LongHelp="從實例同步選定參考數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushRefInsId.Help="從實例同步選定參考數據";
+
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushInsRefId.Title="從參考同步選定實例數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushInsRefId.ShortHelp="從參考同步選定實例數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushInsRefId.LongHelp="從參考同步選定實例數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.PushInsRefId.Help="從參考同步選定實例數據";
+
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.LabelSynchModeId.Title="";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.LabelSynchModeId.ShortHelp="";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.LabelSynchModeId.LongHelp="";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.LabelSynchModeId.Help="";
+
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.CheckSynchModeAddId.Title="添加新數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.CheckSynchModeAddId.ShortHelp="在沒有數據存在時添加新數據的選項";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.CheckSynchModeAddId.LongHelp="在沒有數據存在時添加新數據的選項。\n 當對象只存在于實例或參考中時使用此選項。";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.CheckSynchModeAddId.Help="在沒有數據存在時添加新數據的選項";
+
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.CheckSynchModeOverwriteId.Title="覆蓋現有數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.CheckSynchModeOverwriteId.ShortHelp="允許一個對象（實例或參考）覆蓋其對應對象（參考或實例）的選項。";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.CheckSynchModeOverwriteId.LongHelp="允許一個對象（實例或參考）覆蓋其對應對象（參考或實例）的選項。";
+SplitterId.FrameDiffId.FrameListObjId.FrameButtonsId.CheckSynchModeOverwriteId.Help="允許一個對象（實例或參考）覆蓋其對應對象（參考或實例）的選項。";
+
+
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.Title="顯示選項";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.ShortHelp="過濾顯示的產品";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.LongHelp="根以下選項過濾顯示對象：
+  - 相同數據：顯示實例和參考層級中的相同對象
+  - 僅參考：顯示僅存在于參考層級中的對象
+  - 僅實例：顯示僅存在于實例層級中的對象
+  - 與參考不同：顯示從參考修改的實例對象。
+  - 與參考不同：顯示從實例修改的參考對象。
+選項是累積的（只要可能）。";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.Help="過濾顯示的產品";
+
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckSimilarId.Title="相同名稱";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckSimilarId.ShortHelp="顯示實例和參考層級中的相同對象";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckSimilarId.LongHelp="顯示實例和參考層級中的相同對象。\n 這意味著對象已被同步。";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckSimilarId.Help="顯示實例和參考層級中的相同對象";
+
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckOnlyRefId.Title="僅參考";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckOnlyRefId.ShortHelp="顯示僅存在于參考上的數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckOnlyRefId.LongHelp="顯示僅存在于參考上的數據。\n 這意味著缺少實例對象。";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckOnlyRefId.Help="顯示僅存在于參考上的數據";
+
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckOnlyInsId.Title="僅實例";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckOnlyInsId.ShortHelp="顯示僅存在于實例上的數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckOnlyInsId.LongHelp="顯示僅存在于實例上的數據。\n 這意味著缺少參考對象。";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckOnlyInsId.Help="顯示僅存在于實例上的數據";
+
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckDifferentFromRefId.Title="與參考不同";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckDifferentFromRefId.ShortHelp="顯示與參考不同的數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckDifferentFromRefId.LongHelp="顯示存在于參考和實例上的數據。\n 但是，實例數據和參考不同。";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckDifferentFromRefId.Help="顯示存在于參考和實例上的數據。";
+
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckDifferentFromInsId.Title="與實例不同";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckDifferentFromInsId.ShortHelp="顯示與實例不同的數據";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckDifferentFromInsId.LongHelp="顯示存在于參考和實例上的數據。\n 但是，參考數據和距離不同。";
+SplitterId.FrameDiffId.FrameListObjId.FrameDisplayId.CheckDifferentFromInsId.Help="顯示存在于參考和實例上的數據。";
+
+
+DNBControllerCategoryStatus_SameId="相同";
+DNBControllerCategoryStatus_ExistOnlyInReferenceId="僅在參考上定義";
+DNBControllerCategoryStatus_ExistOnlyInInstanceId="僅在實例上定義";
+DNBControllerCategoryStatus_DifferentFromReferenceId="從參考修改";
+DNBControllerCategoryStatus_DifferentFromInstanceId="從實例修改";
+
+MultiListObjectDiff1Id="#";
+MultiListObjectDiff2Id="實例對象";
+MultiListObjectDiff3Id="狀態";
+MultiListObjectDiff4Id="參考對象";
+
+
+MultiObjectDiff1Id="對象名稱";
+MultiObjectDiff2Id="屬性名稱";
+MultiObjectDiff3Id="實例值";
+MultiObjectDiff4Id="參考值";
+
+DELMDruControllerSynchronizationError="同步失敗";
+

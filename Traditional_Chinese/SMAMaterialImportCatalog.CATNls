@@ -1,0 +1,72 @@
+ERR_MaterialImport_BadFile.Request="無法打開輸入文件。";
+ERR_MaterialImport_BadFile.Diagnostic="文件打開失敗。";
+ERR_MaterialImport_BadFile.Advice="如果文件存在，檢查文件的訪問權限。";
+
+ERR_MaterialImport_BadImport.Request="材料的輸入文件導入失敗。";
+ERR_MaterialImport_BadImport.Diagnostic="至少一個材料無法成功導入。";
+ERR_MaterialImport_BadImport.Advice="檢查輸入文件是否存在錯誤。";
+
+ERR_MaterialImport_NoName.Request="材料已缺失或包含無效名稱參數。";
+ERR_MaterialImport_NoName.Diagnostic="至少有一個材料不是從輸入文件導入的。";
+ERR_MaterialImport_NoName.Advice="在輸入文件中審查材料關鍵字。";
+
+ERR_MaterialImport_BadName.Request="材料的名稱參數無效。";
+ERR_MaterialImport_BadName.Diagnostic="至少有一個材料不是從輸入文件導入的。";
+ERR_MaterialImport_BadName.Advice="在輸入文件中審查材料關鍵字。";
+
+ERR_MaterialImport_InvalidName.Request="材料的名稱參數無效。";
+ERR_MaterialImport_InvalidName.Diagnostic="至少有一個材料不是從輸入文件導入的。";
+ERR_MaterialImport_InvalidName.Advice="在輸入文件中審查材料關鍵字。";
+
+ERR_MaterialImport_MultiName.Request="多個材料使用了同一個名稱定義。";
+ERR_MaterialImport_MultiName.Diagnostic="無法導入共用同一個名稱的多個材料關鍵字。";
+ERR_MaterialImport_MultiName.Advice="檢查輸入文件是否有多個材料定義。";
+
+ERR_Elastic_UnsupportedType.Request="彈性選項包含不受支持的類型參數值。";
+ERR_Elastic_UnsupportedType.Diagnostic="彈性選項僅支持 TYPE=ISOTROPIC。";
+ERR_Elastic_UnsupportedType.Advice="檢查輸入文件是否有不受支持的彈性選項參數。";
+
+ERR_Elastic_UnsupportedParam.Request="彈性選項包含不受支持的參數 /P01。";
+ERR_Elastic_UnsupportedParam.Diagnostic="無法導入彈性選項。";
+ERR_Elastic_UnsupportedParam.Advice="檢查輸入文件是否有不受支持的彈性選項參數。";
+
+ERR_Plastic_UnsupportedHardening.Request="彈性選項包含不受支持的硬化值。";
+ERR_Plastic_UnsupportedHardening.Diagnostic="彈性選項僅支持 HARDENING=ISOTROPIC。";
+ERR_Plastic_UnsupportedHardening.Advice="檢查輸入文件是否包含不受支持的塑料選項參數。";
+
+ERR_Plastic_UnsupportedParam.Request="塑料選項包含不受支持的參數 /P01。";
+ERR_Plastic_UnsupportedParam.Diagnostic="無法導入塑料選項。";
+ERR_Plastic_UnsupportedParam.Advice="檢查輸入文件是否包含不受支持的塑料選項參數。";
+
+ERR_Conductivity_UnsupportedType.Request="傳導性選項包含不受支持的類型參數值。";
+ERR_Conductivity_UnsupportedType.Diagnostic="傳導性選項僅支持 TYPE=ISOTROPIC。";
+ERR_Conductivity_UnsupportedType.Advice="檢查輸入文件是否有不受支持的傳導性選項參數。";
+
+ERR_Density_UnsupportedParam.Request="密度選項包含不受支持的參數 /P01。";
+ERR_Density_UnsupportedParam.Diagnostic="無法導入密度選項。";
+ERR_Density_UnsupportedParam.Advice="檢查輸入文件是否有不受支持的密度選項參數。";
+
+ERR_Hyperelastic_UnsupportedN.Request="超彈性選項包含參數 N > 1 。";
+ERR_Hyperelastic_UnsupportedN.Diagnostic="尚不支持大于 1 的超彈性 N 值。";
+ERR_Hyperelastic_UnsupportedN.Advice="檢查輸入文件是否有 N > 1 的超彈性選項。";
+
+ERR_Hyperelastic_UnsupportedParam.Request="超彈性選項包含不受支持的參數 /P01。";
+ERR_Hyperelastic_UnsupportedParam.Diagnostic="無法導入超彈性選項。";
+ERR_Hyperelastic_UnsupportedParam.Advice="檢查輸入文件是否有不受支持的超彈性選項參數。";
+
+ERR_Viscoelastic_UnsupportedTimeValue.Request="粘彈性選項包含的時間域未定義為 PRONY 系列。";
+ERR_Viscoelastic_UnsupportedTimeValue.Diagnostic="粘彈性選項僅支持 TIME=PRONY。";
+ERR_Viscoelastic_UnsupportedTimeValue.Advice="檢查輸入文件是否有粘彈性選項上的 TIME 參數。";
+
+ERR_Viscoelastic_UnsupportedParam.Request="粘彈性選項包含不受支持的參數 /P01。";
+ERR_Viscoelastic_UnsupportedParam.Diagnostic="無法導入粘彈性選項。";
+ERR_Viscoelastic_UnsupportedParam.Advice="檢查輸入文件是否有不受支持的粘彈性選項參數。";
+
+ERR_Damping_UnsupportedParam.Request="阻尼選項包含不受支持的參數  /P01。";
+ERR_Damping_UnsupportedParam.Diagnostic="無法導入阻尼選項。";
+ERR_Damping_UnsupportedParam.Advice="檢查輸入文件是否有不受支持的阻尼選項參數。";
+
+
+
+
+

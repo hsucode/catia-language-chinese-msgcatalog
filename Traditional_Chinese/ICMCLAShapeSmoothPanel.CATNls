@@ -1,0 +1,106 @@
+DialogBoxTitle="光順";
+
+LabelType.Title="類型： ";
+LabelType.LongHelp="在選項光順或減小之間選擇。
+光順：用于將光順計算應用到選定的元素。
+減小：用于將數據減小計算應用到選定的元素。";
+LabelType.ShortHelp="選擇類型";
+
+ComboType.Smooth="光順";
+ComboType.Reduction="減小";
+ComboType.LongHelp="可通過上下文菜單定義類型。
+光順：用于將光順計算應用到選定的元素。
+減小：用于將數據減小計算應用到選定的元素。";
+ComboType.ShortHelp="選擇類型";
+
+LabelElement.Title="元素： ";
+LabelElement.LongHelp="指定要光順的元素。";
+LabelElement.ShortHelp="元素規格";
+
+TabPageSmooth.Title="光順";
+
+FrameApproximation.Title="近似值";
+FrameApproximation.LongHelp="有兩種近似類型和三種近似優先級。";
+
+FrameType.Title="類型";
+FrameType.LongHelp="在近似類型等距和弦之間選擇。";
+RadioButtonEquidistant.Title="等距";
+RadioButtonEquidistant.LongHelp="在假設給定的點根據曲線參數規則分布的條件下執行計算。";
+RadioButtonEquidistant.ShortHelp="類型等距";
+RadioButtonChordal.Title="弦";
+RadioButtonChordal.LongHelp="在假設給定的點之間的距離同時也確定其參數化的條件下執行計算。";
+RadioButtonChordal.ShortHelp="類型弦";
+
+FramePriority.Title="優先級";
+FramePriority.LongHelp="在優先級類型變化、形和弧長之間選擇。";
+RadioButtonVariation.Title="變化";
+RadioButtonVariation.LongHelp="計算優先級是等距分布控制點。";
+RadioButtonVariation.ShortHelp="優先級變化";
+RadioButtonShape.Title="形狀";
+RadioButtonShape.LongHelp="計算優先級是輸入幾何圖形的形。次要優先級是控制點分布。";
+RadioButtonShape.ShortHelp="優先級形狀";
+RadioButtonArcLength.Title="弧長";
+RadioButtonArcLength.LongHelp="計算優先級盡可能地減少密切控制點。";
+RadioButtonArcLength.ShortHelp="優先級弧長";
+
+FrameOptions.Title="選項";
+FrameOptions.LongHelp="其他選項設置";
+LabelAlong.Title="沿： ";
+LabelAlong.LongHelp="提供三項光順功能以沿應用光順的方向影響光順。";
+LabelAlong.ShortHelp="選項沿";
+ComboAlong.LongHelp="可通過上下文菜單：兩者、U 和 V 定義所沿的方向。
+兩者：沿 U 和 V 方向影響光順。
+U：沿 U 方向影響光順。
+V：沿 V 方向影響光順。";
+ComboAlong.ShortHelp="方向：兩者、U、V";
+ComboAlong.Both="兩者";
+ComboAlong.U="U";
+ComboAlong.V="V";
+
+LabelFactor.Title="系數： ";
+LabelFactor.LongHelp="可用控制控制點之間的多邊線長度的光順系數來影響近似質量。";
+LabelFactor.ShortHelp="光順系數";
+SpinnerFactor.LongHelp="可用控制控制點之間的多邊線長度的光順系數來影響近似質量。";
+SpinnerFactor.ShortHelp="光順系數";
+LabelBlend.Title="橋接： ";
+LabelBlend.LongHelp="允許在原始幾何圖形和修改的幾何圖形之間進行連續轉換。";
+LabelBlend.ShortHelp="橋接";
+LabelBlendMin.Title="0 ";
+LabelBlendMax.Title=" 1";
+SliderBlend.LongHelp="使用此滑塊，您可以在元素的舊版本和新版本之間進行任意橋接。";
+SliderBlend.ShortHelp="滑塊橋接";
+
+
+TabPageReduction.Title="減小";
+
+CheckButtonReductionTypeDeviation.Title="偏差： ";
+CheckButtonReductionTypeDeviation.LongHelp="僅當最大偏差小于此處指定的值時，才可重新排列控制點。";
+CheckButtonReductionTypeDeviation.ShortHelp="類型偏差";
+CheckButtonReductionTypeAngle.Title="角度： ";
+CheckButtonReductionTypeAngle.LongHelp="僅當終點切線的最大角度差小于此處指定的值時，才可重新排列控制點。";
+CheckButtonReductionTypeAngle.ShortHelp="類型角度";
+
+CheckButtonReductionKeepSeg.Title="保留分段";
+CheckButtonReductionKeepSeg.LongHelp="系統在保留分段的同時，盡可能地減少控制點的數量。";
+CheckButtonReductionKeepSeg.ShortHelp="選項保留分段";
+
+FrameReductionDisplay.Title="顯示";
+CheckButtonReductionDisplayDeviation.Title="偏差";
+CheckButtonReductionDisplayDeviation.LongHelp="可在圖形窗口顯示偏差。";
+CheckButtonReductionDisplayDeviation.ShortHelp="顯示偏差";
+
+FrameReductionResult.Title="結果";
+FrameReductionResult.LongHelp="將顯示在減少之前和減少之后的 U 和 V 方向的控制點數和段數。";
+LabelReductionResultControlPointsStat.Title="控制點： ";
+LabelReductionResultControlPointsStat.LongHelp="控制點數";
+LabelReductionResultControlPointsStat.ShortHelp="控制點";
+LabelReductionResultSegUStat.Title="U 方向段數： ";
+LabelReductionResultSegUStat.LongHelp="U 方向的段數";
+LabelReductionResultSegUStat.ShortHelp="U 方向段數";
+LabelReductionResultSegVStat.Title="V 方向段數： ";
+LabelReductionResultSegVStat.LongHelp="V 方向的段數";
+LabelReductionResultSegVStat.ShortHelp="V 方向段數";
+
+
+FrameDeviation.Title="最大偏差";
+FrameDeviation.LongHelp="顯示新創建版本和之前版本相比的偏差值。";

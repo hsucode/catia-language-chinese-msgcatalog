@@ -1,0 +1,91 @@
+// 3951 校正官方漢化--------------------------------------------------
+// 3951 校正官方漢化 Electrical Export KBL command 
+// 3951 校正官方漢化--------------------------------------------------
+
+
+// 3951 校正官方漢化 Command states
+CATEgfEditorKBLExportCmd.RepositoryValidationState.Message="請檢查設置";
+CATEgfEditorKBLExportCmd.SystemSelectionState.Message="選擇要繪制軌跡的幾何對象";
+CATEgfEditorKBLExportCmd.FileSelectionState.Message="選擇要與元素相交的元素";
+CATEgfEditorKBLExportCmd.FileExistingState.Message="打開選定的文件";
+CATEgfEditorKBLExportCmd.ResultState.Message="添加結果";
+
+CATEgfEditorKBLExportCmd.UndoTitle="外部系統";
+CATEgfEditorKBLExportCmd.RedoTitle="外部系統";
+
+KBLExportNotEHFCompatible.Title="上下文錯誤";
+KBLExportNotEHFCompatible.Text="提取的電氣幾何圖形或電氣系統無法導出。";
+
+// 3951 校正官方漢化 Selection panel
+SelectionWindow.Title="導出為 CSV 文件";
+SelectionWindow.FileKBLType="HTML 文件 (*.html)";
+
+// 3951 校正官方漢化 Existing file window
+ExistingWindow.Title="選擇了錯誤的文件";
+ExistingWindow.Message="要刪除選定的鏈接嗎？";
+
+// 3951 校正官方漢化 Warning window
+WarningWindow.Title="正在導出工作指令...";
+WarningWindow.IntroFrame.IntroTitleLabel.Title="仍加載了以下對象。";
+WarningWindow.ListFrame.WarningList.Column1="系統";
+WarningWindow.ListFrame.WarningList.Column2="描述";
+WarningWindow.ListFrame.WarningList.Column3="對象";
+WarningWindow.ListFrame.WarningList.Column4="工作指令";
+
+// 3951 校正官方漢化 Error window
+ErrorWindow.Title="展開錯誤";
+ErrorGeneral.Message="更改指令導出失敗。";
+ErrorFileAccess.Message="選定的變體為默認變體，不可刪除。";
+// 3951 校正官方漢化ErrorRepository.Message                            = "The default iXF repository is not set. Use the Tools\Options menu to set its directory.";
+ErrorPath.Message="找不到文件";
+ErrorFile.Message="無效文件名";
+ErrorParsing.Message="填充部分失敗。";
+ErrorElectricalRootReference.Message="此選定對象不是軸系";
+
+// 3951 校正官方漢化 Warning Aliases
+WarningNoEndsFound.Message="未找到命令。";
+
+WarningIdUnicity.Message="線路中找不到電纜的端點";
+WarningNoWireEndPorts.Message="未處理以下零件實例，因為它們包含";
+WarningNoWireExtremities.Message="未處理以下零件實例，因為它們包含";
+WarningWireEndPort1NotConnected.Message="### 錯誤 -> 未識別以下類型:";
+WarningWireEndPort2NotConnected.Message="### 錯誤 -> 未識別以下類型:";
+WarningWireEndPort1UnexpectedConnection.Message="以下導線實例的導線端口 1 的連接出現意外";
+WarningWireEndPort2UnexpectedConnection.Message="以下導線實例的導線端口 2 的連接出現意外";
+WarningNoNetEndPorts.Message="過濾器列表必須至少有兩個元素。";
+WarningNoSubWire.Message="此工作指令沒有父工作指令";
+WarningNoSubNet.Message="此工作指令沒有父工作指令";
+WarningNoCompatibility.Message="此電氣端口必須正確鏈接到";
+WarningIncompatibleMatingConnector.Message="“端口”字段必須是 16 位的十進制數";
+WarningIncompatibleObject.Message="無法編輯此電氣元素的屬性，";
+WarningC1NotFound.Message="未找到第二個肘管";
+WarningICNotSupported.Message="不支持此 xml 格式的界面連接器";
+WarningShellNotSupported.Message="確認 XML 文件中不存在 MO。";
+
+// 3951 校正官方漢化 Action Aliases
+ActionNoExport.Message="對象不受支持。";
+ActionNoAction.Message="無工作指令";
+ActionNoImport.Message="嘗試保存下列新文檔失敗：/P1";
+ActionNoImportNoWireConnection.Message="嘗試導入當前 iXF 系統將失敗。請連接導線端點。";
+ActionNoImportNoWireConnectionPort1.Message="嘗試導入當前 iXF 系統將失敗。請連接導線端口 1";
+ActionNoImportNoWireConnectionPort2.Message="嘗試導入當前 iXF 系統將失敗。請連接導線端口 2";
+ActionNoImportCreateAndConnectTwoPorts.Message="嘗試導入當前 iXF 系統將失敗。請創建端點端口并進行連接";
+ActionNoImportNoNetConnection.Message="嘗試導入當前 iXF 系統將失敗。請至少連接兩個端口";
+ActionNoConnectorPortsExported.Message="嘗試導入當前 iXF 系統將失敗。端口子元素將不會導出。";
+ActionPinsShouldBeUnderC1.Message="使用連接器端口鏈接命令在 C1 連接器端口下進行鏈接";
+ActionObjectUnderThisInstance.Message="控制點命令";
+ActionObjectUnderThisHierarchy.Message="控制點命令";
+ActionNoMatingConnectorInfoHierarchy.Message="系統不支持此配置。";
+ActionNoExportingElectricalPort.Message="不支持此外部鏈接。";
+ActionChangeClassification.Message="在屬性面板中更改連接器端口分類";
+ActionCreateC1.Message="創建的單個連接器端口的值為";
+
+// 3951 校正官方漢化 Result window
+ResultWindow.Title="導出操作成功。";
+ResultWindow.Message.Part1="電氣用戶";
+ResultWindow.Message.Part2="已成功寫入。";
+
+WireHarnessInitKO.Message="無法更新電氣特征。";
+WireHarnessInitKO.Message="無法檢索點數";
+DeviceExportKO.Message="無法展開一個或多個面。";
+TopologyExportKO.Message="無法更新電氣特征。";

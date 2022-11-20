@@ -1,0 +1,11 @@
+ECContainNewRelationship.Request="/P1";
+ECContainNewRelationship.Diagnostic="\n它們包含下列已在其下創建/刪除關系的嵌入式部件：\n/P2\n";
+ECContainNewRelationship.Advice="請確保沒有嵌入式部件包含已創建/刪除的關系。";
+
+ECPresentInNewRelationship.Request="/P1";
+ECPresentInNewRelationship.Diagnostic="\n它們包含下列已針對其創建/刪除關系的嵌入式部件：\n/P2\n";
+ECPresentInNewRelationship.Advice="請確保沒有文檔創建/刪除與嵌入式部件的關系。";
+
+DocumentLoadError.Request="無法在 CATIA 會話中加載文檔。";
+DocumentLoadError.Diagnostic="以下文件已成功下載，但無法在會話中加載：\n/P1\n";
+DocumentLoadError.Advice="文檔無法加載或與當前的 CATIA 級別不兼容。";

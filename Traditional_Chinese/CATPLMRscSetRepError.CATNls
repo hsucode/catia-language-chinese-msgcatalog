@@ -1,0 +1,23 @@
+InternalError.Message="內部錯誤";
+
+TableCreateError.Title="創建資源集";
+TableCreateError.Message.Prefix="無法創建資源集";
+TableCreateError.Message.FileInfo="文件： '/p1.xml' (/p2, /p3)";
+
+TableCopyError.Title="復制資源集";
+TableCopyError.Duplicate.Message="新名稱不能為空或與復制的名稱相同";
+
+TableLoadError.Title="加載資源集";
+TableLoadError.Message="無法從數據庫中加載資源集\n檢查是否連接數據庫";
+
+TableDeleteError.Title="刪除資源集";
+TableDeleteError.Message="無法從數據庫中刪除資源集。\n/p1";
+
+// 3951 校正官方漢化 P&O and RscTable connections table
+POSTableError.Title="加載或創建 P&O 和資源集設置";
+POSTableError.Message="無法加載或創建 P&O 和資源集設置表";
+POSTableSubItemCreateError.Duplicate.Message="\nP&O 項目標識符 (= '/p1') 已在其他子項中使用。";
+POSTableSubItemCreateError.IdNotMatch.Message="\n資源的資源集標識必須等于 '/p1'。";
+POSTableSubItemCreateError.TypeNotMatch.Message="\n資源的 PLM 類型必須是“PLM 資源集”。";
+
+ResourceSetAlreadyBound="資源集 '/p1'\n已與此項目綁定。";

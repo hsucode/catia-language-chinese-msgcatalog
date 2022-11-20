@@ -1,0 +1,86 @@
+OPCParam.Title = "Overall OPC 參數 ";
+
+// 3951 校正官方漢化 Host selection
+OPCParam.Frame.HostLabel.Title = "Server Host name或 IP Address: ";
+OPCParam.Frame.HostSelector.Title = "瀏覽 ...";
+OPCParam.Frame.HostSelector.ShortHelp = "瀏覽 Network";
+
+// 3951 校正官方漢化 Server selection
+OPCParam.Frame.ServerLabel.Title = "OPC Server 名稱: ";
+OPCParam.Frame.ServerSelector.Title = "瀏覽 ...";
+OPCParam.Frame.ServerSelector.ShortHelp = "瀏覽 OPC servers on host";
+
+// 3951 校正官方漢化	Connect button
+OPCParam.Frame.OpcConnect.ShortHelp = "Connect to / Disconnect from OPC server";
+OpcConnect = " Connect ";
+OpcDisconnect = "Dis連接";
+TryToConnect = "\n\nConnecting to /P1 on /P2\n\n";
+
+ChgTitle = "警告";
+HostChgMess = "Host has changed. 你想 erase the parameters of the ports ?";
+ServerChgMess = "Server has changed. 你想 erase the parameters of the ports ?";
+HostChgMessServerChgMess = "Host and server have changed. 你想 erase the parameters of the ports ?";
+
+// 3951 校正官方漢化Write method
+OPCParam.Write.Label.Title = "Write Method";
+OPCParam.Write.Sync.Title = "同步";
+OPCParam.Write.Sync.ShortHelp = "仿真 is halted until the request has been processed";
+OPCParam.Write.Async.Title = "異步";
+OPCParam.Write.Async.ShortHelp = "The request is sent to the server and the simulation continues";
+
+// 3951 校正官方漢化Read method
+OPCParam.Read.Label.Title = "Read Method";
+OPCParam.Read.Cache.Title = "Cache";
+OPCParam.Read.Cache.ShortHelp = "IO values are read from the cache of the opc server";
+OPCParam.Read.Device.Title = "裝置";
+OPCParam.Read.Device.ShortHelp = "IO values are read from the 裝置";
+
+// 3951 校正官方漢化	Server Refresh Rate
+OPCParam.Rate.RateLabel.Title = "更新rate (ms): ";
+OPCParam.Rate.DataCb.Title = "使用Data Callback";
+OPCParam.DBFrame.DeadbandLabel.Title = "\nPercent Deadband (%)    ";
+
+OPCItemsFrame.Title = "OPC Items Browser";
+
+OPCItemsFrame.Filter.Label.Title = "Filter :";
+OPCItemsFrame.Filter.Refresh.Title = "Refresh";
+
+// 3951 校正官方漢化 OPC related text
+Cmd.Buttons.CreateAndAssociate.ShortHelp = "創建Ports from OPC項目";
+Cmd.Buttons.Associate.ShortHelp = "關聯一個OPC Item to一個Port";
+
+Cmd.Buttons2.Check.ShortHelp = "檢查 if selected ports are合法";
+
+AUTServerSelector.Title = "選擇an OPC server";
+ConnectingTo = "Connecting to /P1";
+
+TypeErrTitle = "警告 !";
+TypeErrMess = "Port /p1 was previously defined as /p2 but is registered as /p3 in the server.\n你想 change the type?\nCancel will stop the process.";
+TypeErrMess2 = "Port /p1 was previously defined as /p2 but is registered as /p3 in the server.\n你想 change the type?\nCancel will stop the process but keep your previous changes.";
+DirErrTitle = "警告!";
+DirErrMess  = "Port /p1 was defined with direction /p2 but is registered as /p3 in the server.\n你想 change the direction?\n(No will cancel your change on the type)";
+DirErrMess2 = "Port /p1 was defined with direction /p2 but is registered as /p3 in the server.\n你想 change the direction?\nCancel will stop the process but keep your previous changes.";
+
+NoBrowserTitle = "OPC Warning";
+NoBrowserMess = "The Server Address Space Browser is不available on your \nOPC Server. So, you have to enter your OPC標簽manually!";
+
+PortsNotCreatedTitle = "警告 !";
+PortsNotCreated = "The following ports are不added to your block because their type is不handled by the simulation : /p1";
+
+CheckDoneTitle = "信息";
+CheckDone = "OPC Items check is done.\nItems checked : /p6 \ /p1 \n\n  - Type Errors\t\t/p2 \ /p6\n",
+																	"  - Direction Errors\t\t/p3 \ /p6\n",
+																	"  - Item Validity Errors\t/p4 \ /p6\n",
+																	"  - Item Quality Warning\t/p5 \ /p6";
+															
+CheckCancelled = "OPC Item checker cancelled.\nItems checked : /p6 \ /p1 \n\n  - Type Errors\t\t/p2 \ /p6\n",
+																			"  - Direction Errors\t\t/p3 \ /p6\n",
+																			"  - Item Validity Errors\t/p4 \ /p6\n",
+																			"  - Item Quality Warning\t/p5 \ /p6";
+GoodQuality = "確定";
+BadQuality = "Inconsistent";
+UncertainQuality = "Uncertain";
+InvalidQuality = "非法項目";
+UnknownQuality = "未知";
+
+RootNetworkName = "Entire Network";

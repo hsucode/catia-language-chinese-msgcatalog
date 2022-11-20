@@ -1,0 +1,43 @@
+DNBArcPositionerPrgCmd.initialState.Message="單擊視圖任一位置退出";
+DNBArcPositionerPrgCmd.EnterValues.Message="計算輔助軸值";
+
+DNBArcPositionerPrgCmd.SelectSequence.Message="選擇機器人任務";
+
+InvalidUserVector.Title="錯誤";
+InvalidUserVector.Msg="非法 矢量長度 for 用戶定義向量r"; 
+
+NoPositionerError.Title="錯誤";
+NoPositionerError.Msg="No 變位機接觸到機器人"; 
+
+NoOperation.Title="錯誤"; // 3951 校正官方漢化WFF
+NoOperation.Message="機器人任務 is empty";
+
+PositionerDOFError.Title="錯誤";
+PositionerDOFError.Msg="變位機 DOF's should be one或 two"; 
+
+MorePositionerWarning.Title="警告";
+MorePositionerWarning.Msg="Multiple 變位機not supported. Using the first Positioner."; 
+
+JointTypeError.Title="錯誤";
+JointTypeError.Msg="Only Prismatic, Revolute and FullyRestricted joints are \n
+supported in the 變位機裝置";
+
+AxisCalculationError.Title = "錯誤";
+AxisCalculationError.Msg= "不能 identify 軸類型(s) of the auxillary device joints";
+
+CantSaveOldValues = "不能 save old輔助軸Values for: ";
+Unreachable.Title = "Unreachable標簽";
+Unreachable.Message = "Original輔助軸values are restored for unreachable標簽";
+CantRestore = "不能 restore initial輔助軸values for: ";
+AssignmentFail = "Aux Axis Value assignment failed for: ";
+RestorePrevVal = "Previous輔助軸value is restored for: ";
+CantSaveOldValues = "不能 save old輔助軸Values for: ";
+CantCheckReachability = "Corresponding target不present, can't check reachabilty for: ";
+RestorationFail = "不能 restore initial輔助軸values for: ";
+CantUpdateResult = "不能 update result for: ";
+CantUpdateResultForUnreachable = "標簽is unreachable, can't update result for: ";
+NoAuxAxes.Title="錯誤";
+NoAuxAxes.Message="No 輔助Axes to Assign";
+NoTransAuxAxes.Title="錯誤";
+NoTransAuxAxes.Message="No TRANSLATIONAL 輔助Axes to Assign";
+

@@ -1,0 +1,50 @@
+AUTDcnOpcRteEngineName= 
+	"OPC";
+
+AUTDcnOpcRteErrTitle=
+	"Debug 錯誤";
+
+AUTDcnOpcRteConnectionFailure =
+	"不能 connect runtime engine \"/P2\" with the OPC Server \"/P1\"\n",
+	"Please, Please check your OPC server and start一個new debug session.\n\n",
+	"/P3";
+
+AUTDcnOpcRteUnexplainedError=
+	"An unexplained OPC error occured:\n",
+	"(File : /P1, Line : /P2)\n\n",
+	"/P3 => /P4\n\n",
+	"The debug session must be stopped!\n";
+
+AUTDcnOpcRteUnknownOpcItem=
+	"The item /P1 is unknown to the OPC server /P2.\n",
+	"Please, check the OPC server's configuration.\n\n",
+	"/P3";
+
+AUTDcnOpcRteDataTfrFailure=
+	"Communication failure with the OPC server /P1或 the PLC.\n",
+	"Please, check both of them and start一個new debug session.\n\n",
+	"/P2";
+
+AUTDcnOpcRteBytecodeInconsistency=
+	"The bytecode ran in the PLC doesn't match with the current version of the LCM application block.\n",
+	"Please, rebuild the runtime and download it to the PLC before starting一個new debug session.\n",
+	"/P1";
+
+AUTDcnOpcRteCycleTimeInconsistency=
+	"The 周期 value利用the PLC (/P2 ms) doesn't match with the current value set in\n",
+	"the runtime block \"/P1\" (/P3 ms). Please, rebuild this one and download it into the PLC before\n",
+	"restarting一個new debug session或 change the 周期 value in the \"/P1\" block's properties.\n",
+	"/P4";
+		
+AUTDcnOpcUnknownOpcServer= 
+	"un被定義";
+
+AUTDcnOpcRteInitErr= 
+	"The OPC RTE hasn't been properly initialized";
+
+AUTDcnOpcRteRun1CycleFailure=
+	"No response或 late response from the runtime when requested for running 1 cycle.\n",
+	"Please, check the actual runtime's 周期 (should be /P1 ms as specified in the runtime block's properties).\n\n",
+	"/P2";
+
+AUTDcnOpcRteSingleArg="/p";

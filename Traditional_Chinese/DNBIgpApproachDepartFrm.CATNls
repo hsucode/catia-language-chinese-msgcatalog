@@ -1,0 +1,61 @@
+// 3951 校正官方漢化*****************************************************************************
+// 3951 校正官方漢化  APPROACH/DEPART FRAME
+// 3951 校正官方漢化*****************************************************************************
+Title="進刀/退刀";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Labels/Captions
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化Approach section
+chkApproachMode.Title="進刀";
+lblApproachDistance.Title="Distance";
+lblApproachPoints.Title="點";
+
+// 3951 校正官方漢化Depart section
+chkDepartMode.Title="退刀";
+lblDepartDistance.Title="Distance";
+lblDepartPoints.Title="點";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Short Help
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+chkApproachMode.ShortHelp="向焊接軌跡添加/移除進刀部分";
+lblApproachDistance.ShortHelp="定義進刀點和焊接起點之間的距離";
+
+chkDepartMode.ShortHelp="向焊接軌跡添加/移除退刀部分";
+lblDepartDistance.ShortHelp="定義退刀點和焊接終點之間的距離";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Long Help
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+
+chkApproachMode.LongHelp="向焊接軌跡添加/移除進刀部分";
+lblApproachDistance.LongHelp="定義進刀點和焊接起點之間的距離。
+進刀點將是與第一個標記的 Z 軸向量的偏移。";
+
+chkDepartMode.LongHelp="向焊接軌跡添加/移除退刀部分";
+lblDepartDistance.LongHelp="定義退刀點和焊接終點之間的距離。
+退刀點將是與最后一個標記的 Z 軸向量的偏移。";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Parameter 默認值
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+ApproachDistanceMinimum="0";
+ApproachDistanceMaximum="10000";
+ApproachDistanceDefault="300";
+ApproachDistanceStep="100";
+
+DepartDistanceMinimum="0";
+DepartDistanceMaximum="10000";
+DepartDistanceDefault="300";
+DepartDistanceStep="100";
+
+ApproachPointsMinimum="1";
+ApproachPointsMaximum="10";
+ApproachPointsDefault="1";
+ApproachPointsStep="1";
+
+DepartPointsMinimum="1";
+DepartPointsMaximum="10";
+DepartPointsDefault="1";
+DepartPointsStep="1";

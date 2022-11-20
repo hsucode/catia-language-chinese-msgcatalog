@@ -1,0 +1,41 @@
+// 3951 校正官方漢化 CATCoParameters2Cmd
+
+CATCoParameters2Cmd.MainState.Message="設置用于模型中的材料、方向和層";
+CATCoParameters2Cmd.AddDirectionState.Message="在模型中添加新方向";
+CATCoParameters2Cmd.EditDirectionState.Message="編輯現有方向";
+CATCoParameters2Cmd.AddMaterialState.Message="在模型中添加新材料";
+CATCoParameters2Cmd.RerouteMaterialState.Message="重設現有材料的鏈接";
+CATCoParameters2Cmd.AddLaminateState.Message="在模型中添加新層";
+CATCoParameters2Cmd.EditLaminateState.Message="編輯現有層";
+
+Desactivated="已取消激活";
+NotLoaded="未加載";
+Isolated="已隔離";
+
+DeleteFileMessage="想要刪除現有文件嗎？";
+FileExistsMessage="文件存在";
+FileNotFoundText="找不到文件";
+
+ImportOKTitle="導入層";
+ImportOKMessage="導入執行成功";
+
+ExportOKTitle="導出層";
+ExportOKMessage="導出執行成功";
+
+ImportKOMessage="導入執行尚未成功完成。";
+
+MessagesTitle="復合參數";
+NameMissing="必須指定文件名。";
+NameNotUnique="名稱已被使用。請選擇其他名稱。";
+ValueMissing="輸入一個值。";
+ValueNotUnique="此值已由方向 /P1 使用。請選擇其他值或取消。";
+MaterialMissingInCatalog="內部錯誤：無法在目錄中檢索 /p1。將不會添加材料。";
+CannotAddExistingMaterial="/P1 已存在于材料列表中。\n請從將要添加的材料列表中移除它。";
+CannotRerouteToSameMaterialInCatalog="已為重設選擇兩次 /p1。\n在同一目錄中一種材料只能選擇一次。";
+CannotRerouteSinceMaterialAlreadyUsed="由于已被材料 ID 為“/p3”的材料使用，因此不能將 ID 為“/p1”的材料重設為/p2。";
+SelectOnlyOneMaterialForRerouting="請僅選擇一種要重設的材料。";
+
+DirectionUsed="方向 /p1 目前已被（如被 /p2)使用。您是否要將其連同關聯元素一起移除？";
+MaterialUsed="材料 /p1 目前已被（如被 /p2）使用。您是否要將其連同關聯元素一起移除？";
+LaminateUsed="層 /p1 目前已被（如被 /p2）使用。您是否要將它及其上的任何參考一起移除？";
+

@@ -1,0 +1,84 @@
+DialogBoxTitle								= "通過曲線補片";
+
+LabelEdge1.Title							= "邊 1: ";
+LabelEdge1.LongHelp							=
+"右鍵菜單可用.
+如果選擇曲線只有G0連續可用
+如果選擇曲面邊G0,G1,G2和G3
+都可用";
+LabelEdge1.ShortHelp							= "選擇曲線或邊";
+LabelEdge2.Title							= "邊 2: ";
+LabelEdge2.LongHelp							=
+"右鍵菜單可用.
+如果選擇曲線只有G0連續可用
+如果選擇曲面邊G0,G1,G2和G3
+都可用.";
+LabelEdge2.ShortHelp							= "選擇曲線或邊";
+LabelEdge3.Title							= "邊 3: ";
+LabelEdge3.LongHelp							=
+"右鍵菜單可用.
+如果選擇曲線只有G0連續可用
+如果選擇曲面邊G0,G1,G2和G3
+都可用.";
+LabelEdge3.ShortHelp							= "選擇曲線或邊";
+LabelEdge4.Title							= "邊 4: ";
+LabelEdge4.LongHelp							=
+"右鍵菜單可用.
+如果選擇曲線只有G0連續可用
+如果選擇曲面邊G0,G1,G2和G3
+都可用.";
+LabelEdge4.ShortHelp							= "選擇曲線或邊";
+
+TabContainer.TabPageOption.Title					= "選項";
+TabPageOption.LongHelp							= "通過曲線補片選項.";
+TabPageOption.ShortHelp							= "曲線參數";
+LabelEdge1G0.Title							= "邊 1 G0: ";
+LabelEdge1G0.LongHelp							= "創建補片時邊1G0連續錯誤";
+LabelEdge1G0.ShortHelp							= "邊 1  G0錯誤";
+LabelEdge2G0.Title							= "邊 2 G0: ";
+LabelEdge2G0.LongHelp							= "創建補片時邊2G0連續錯誤";
+LabelEdge2G0.ShortHelp							= "邊 2  G0錯誤";
+LabelEdge3G0.Title							= "邊 3 G0: ";
+LabelEdge3G0.LongHelp							= "創建補片時邊3G0連續錯誤";
+LabelEdge3G0.ShortHelp							= "邊 3  G0錯誤";
+LabelEdge4G0.Title							= "邊 4 G0: ";
+LabelEdge4G0.LongHelp							= "創建補片時邊4G0連續錯誤";
+LabelEdge4G0.ShortHelp							= "邊 4  G0錯誤";
+
+FrameParameter.Title							= "參數";
+FrameParameter.LongHelp							= 
+"定義逼近法和適配.
+逼近法定義曲面的參數.
+適配確定在三個邊放置好的情況下
+怎樣定義第四邊.";
+
+CheckButtonApproximation.Title						= "逼近法";
+CheckButtonApproximation.LongHelp					= 
+"逼近法確定曲面的參數.
+關:階數和段數由輸入曲線決定.
+開:由選項定義階數,段數和光滑度";
+CheckButtonApproximation.ShortHelp					= "逼近分開/關";
+
+CheckAdapt.Title							= "適合";
+CheckAdapt.LongHelp							= 
+"適配確定在三個邊放置好的情況下
+怎樣定義第四邊.
+關: 第四邊為直線.
+開: 第四邊通過相對邊堆疊命令創建,
+移動和旋轉可以執行.";
+
+CheckAdapt.ShortHelp							= "適配開/關";
+ButtonAlternative.Title							= "替代";
+ButtonAlternative.LongHelp						= 
+"允許選擇所有的三個替代圖元來定義退化邊的位置. 
+目的是為了適應調整曲面的參數化.";
+ButtonAlternative.ShortHelp						= "替代";
+
+
+TabContainer.TabPageOption.FrameTolerance.Title				= "公差";
+TabContainer.TabPageOption.FrameTolerance.LabelGap.Title		= "間隙";
+TabContainer.TabPageOption.FrameTolerance.LabelAngle.Title		= "角度";
+TabContainer.TabPageOption.FrameParameter.Title				= "參數";
+TabContainer.TabPageOption.FrameParameter.CheckApproximation.Title	= "逼近法";
+TabContainer.TabPageOption.FrameParameter.CheckAdapt.Title		= "適合";
+TabContainer.TabPageOption.FrameParameter.ButtonAlternative.Title	= "替代";

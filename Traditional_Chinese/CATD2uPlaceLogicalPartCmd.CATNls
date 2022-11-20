@@ -1,0 +1,35 @@
+//=============================================================================
+//                                     CNEXT - CXR5
+//                          COPYRIGHT DASSAULT SYSTEMES 2000 
+//-----------------------------------------------------------------------------
+// FILENAME    :    CATD2uPlaceLogicalPartCmd.CATNls
+// FRAMEWORK   :    CAT2DDiagramUI
+// AUTHOR      :    ehh
+// DATE        :    April 2000
+//------------------------------------------------------------------------------
+// DESCRIPTION :    Resources File for NLS purpose related to Interactive
+//                  Schematic Platform Commands.
+//                  
+//------------------------------------------------------------------------------
+// COMMENTS    :
+//------------------------------------------------------------------------------
+//MODIFICATION     user  date      purpose
+//   HISTORY       ----  ----      -------
+//------------------------------------------------------------------------------
+
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// DialogEngine state prompts 
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CATD2uPlaceLogicalPartCmd.DefineComponentState.Message="Select component to be placed";
+CATD2uPlaceLogicalPartCmd.DefineEffectivityState.Message="Define effectivity of placed components";
+CATD2uPlaceLogicalPartCmd.PlaceComponentState.Message="Define placement location";
+CATD2uPlaceLogicalPartCmd.MovePlacedCompState.Message="Indicate final location";
+//EditabilityErrorTitle = "Editability Error";
+//EditabilityErrorText ="You do not have the necessary rights to edit the following objects:
+//";
+CATD2uPlaceLogicalPartCmd.LogAssmUnsupportedTitle = "Logical Assembly Unsupported";
+CATD2uPlaceLogicalPartCmd.LogAssmUnsupportedText ="Logical assemblies are not supported for component placement.";
+CATD2uPlaceLogicalPartCmd.NoAssocSymbolTitle = "No Associated Symbol";
+CATD2uPlaceLogicalPartCmd.NoAssocSymbolText ="Selected logical reference does not have an associated symbol.  Only  
+logical references with associated symbols are supported for placement.";

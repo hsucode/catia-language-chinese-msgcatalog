@@ -1,0 +1,54 @@
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES PROVENCE 2003
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化   Resource file for NLS purpose. 
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Implementation Notes :
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 10/10/05 : jcb; creation
+// 3951 校正官方漢化=============================================================================
+
+Title="光亮曲面";
+
+NoSelection="無選擇";
+
+MaxTitle="最大偏差 = ";
+MinTitle="最小偏差 = ";
+NbPtsTitle="點數 = ";
+NbLostTitle="超出公差范圍的百分比 = ";
+NbFreeTitle="自由邊線數 = ";
+NbNonManTitle="非流形工具欄的數目 = ";
+
+CCSSurfaceName="光亮曲面";
+
+
+FrmRoot.LbSurface.Title="曲面           ";
+FrmRoot.LbDeviation.Title="目標偏差";
+FrmRoot.LbStat.Title="統計信息        ";
+FrmRoot.LbDisplay.Title="            ";
+FrmRoot.ChkShowLostPts.Title="顯示超出公差范圍的點 ";
+
+
+// 3951 校正官方漢化 Help
+FrmRoot.LbSurface.LongHelp="選擇要處理的曲面。 
+ 該曲面必須為流形，只有一個邊界，同時該邊界為曲面的外邊界，并且無自動相交。
+ 各面之間的間隔不得超過 0.1 毫米。 
+ 至少存在一個方向，在該方向上曲面不存在底切。";
+
+FrmRoot.EditSurface.LongHelp="選擇要處理的曲面。 
+ 該曲面必須為流形，只有一個邊界，同時該邊界為曲面的外邊界，并且無自動相交。
+ 各面之間的間隔不得超過 0.1 毫米。 
+ 至少存在一個方向，在該方向上曲面不存在底切。";
+
+FrmRoot.LbDeviation.LongHelp="定義用于計算簡化曲面的公差。";
+FrmRoot.LengDeviation.LongHelp="定義用于計算簡化曲面的公差。";
+
+FrmRoot.StatsSimplify.LongHelp="顯示簡化的數值結果。";
+FrmRoot.LbStat.LongHelp="顯示簡化的數值結果。";
+
+FrmRoot.ChkShowLostPts.LongHelp="顯示超出公差范圍的點。";
+

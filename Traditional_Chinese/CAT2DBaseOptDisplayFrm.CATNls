@@ -1,0 +1,187 @@
+// 3951 校正官方漢化=====================================================================================
+// 3951 校正官方漢化                                     CNEXT - CXR207
+// 3951 校正官方漢化                          COPYRIGHT DASSAULT SYSTEMES 2008
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 FILENAME    :    CATDrwOptDisplay
+// 3951 校正官方漢化 LOCATION    :    DraftingBaseSettings
+// 3951 校正官方漢化 AUTHOR      :    npq
+// 3951 校正官方漢化 BUT         :    
+// 3951 校正官方漢化 DATE        :    08.10.14
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 DESCRIPTION :    Tools/Option Drafting - Display
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 COMMENTS    :    
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 MODIFICATIONS     user  date        purpose
+// 3951 校正官方漢化    HISTORY        ----  ----        -------
+// 3951 校正官方漢化=====================================================================================
+
+Title="顯示";
+
+frameGrid.HeaderFrame.Global.Title="網格 ";
+frameGrid.HeaderFrame.Global.LongHelp="網格
+定義將幫助您繪制幾何圖形或對齊視圖的網格。";
+frameGrid.IconAndOptionsFrame.OptionsFrame.checkGrid.Title="顯示 ";
+frameGrid.IconAndOptionsFrame.OptionsFrame.checkGrid.LongHelp="定義將要顯示網格。";
+frameGrid.IconAndOptionsFrame.OptionsFrame.checkSnap.Title="點捕捉 ";
+frameGrid.IconAndOptionsFrame.OptionsFrame.checkSnap.LongHelp="幫您在所給位置創建點。";
+frameGrid.IconAndOptionsFrame.OptionsFrame.labelGridSpacing.Title="主間距： ";
+frameGrid.IconAndOptionsFrame.OptionsFrame.labelGridSpacing.LongHelp="定義應用于網格的主間距。";
+frameGrid.IconAndOptionsFrame.OptionsFrame.labelGridGraduation.Title="刻度： ";
+frameGrid.IconAndOptionsFrame.OptionsFrame.labelGridGraduation.LongHelp="將指定數量的刻度應用于每個主
+間距。";
+
+frameGrid.IconAndOptionsFrame.OptionsFrame.checkAllowDistortions.Title="允許變形";
+frameGrid.IconAndOptionsFrame.OptionsFrame.checkAllowDistortions.LongHelp="允許變形\n允許 H 和 V 具有不同刻度和間距。";
+frameGrid.IconAndOptionsFrame.OptionsFrame.labelH.Title="H：";
+frameGrid.IconAndOptionsFrame.OptionsFrame.labelV.Title="V：";
+
+frameTree.HeaderFrame.Global.Title="樹";
+frameTree.HeaderFrame.Global.LongHelp="定義是否在樹下顯示特征。";
+
+
+frameTree.IconAndOptionsFrame.OptionsFrame.checkTrackHistory.Title="跟蹤顯示視圖的歷史記錄";
+frameTree.IconAndOptionsFrame.OptionsFrame.checkTrackHistory.LongHelp="指定是否在樹中跟蹤已經顯示的視圖。";
+
+frameTree.IconAndOptionsFrame.OptionsFrame.labelDisplay.Title="顯示：";
+
+frameTree.IconAndOptionsFrame.OptionsFrame.checkParameters.Title="參數";
+frameTree.IconAndOptionsFrame.OptionsFrame.checkParameters.LongHelp="顯示樹中使用的參數。";
+
+
+frameTree.IconAndOptionsFrame.OptionsFrame.checkRelations.Title="關系";
+frameTree.IconAndOptionsFrame.OptionsFrame.checkRelations.LongHelp="顯示樹中使用的關系。";
+
+frameTree.IconAndOptionsFrame.OptionsFrame.checkGenViewSpec.Title="創成式視圖規格";
+frameTree.IconAndOptionsFrame.OptionsFrame.checkGenViewSpec.LongHelp="在樹中顯示創成式視圖規格。";
+
+frameTree.IconAndOptionsFrame.OptionsFrame.checkCallouts.Title="標注";
+frameTree.IconAndOptionsFrame.OptionsFrame.checkCallouts.LongHelp="在樹中顯示標注。";
+
+frameTree.IconAndOptionsFrame.OptionsFrame.checkFixTogether.Title="固聯";
+frameTree.IconAndOptionsFrame.OptionsFrame.checkFixTogether.LongHelp="在樹中顯示固聯。";
+
+frameTree.IconAndOptionsFrame.OptionsFrame.checkHideIn3DStatus.Title="在 3D 狀態中隱藏";
+frameTree.IconAndOptionsFrame.OptionsFrame.checkHideIn3DStatus.LongHelp="顯示在 3D 中隱藏的布局圖標、圖紙和視圖的掩碼。";
+
+frameTree.IconAndOptionsFrame.OptionsFrame.checkDitto.Title="2D 部件實例";
+frameTree.IconAndOptionsFrame.OptionsFrame.checkDitto.LongHelp="在樹中顯示 2D 部件實例。";
+
+frameTree.IconAndOptionsFrame.OptionsFrame.checkUseEdges.Title="使用邊線";
+frameTree.IconAndOptionsFrame.OptionsFrame.checkUseEdges.LongHelp="在樹中顯示使用邊線。";
+
+frameTree.IconAndOptionsFrame.OptionsFrame.checkUseEdgeInput.Title="使用邊線輸入";
+frameTree.IconAndOptionsFrame.OptionsFrame.checkUseEdgeInput.LongHelp="在樹中顯示使用邊線輸入。";
+
+frameTree.IconAndOptionsFrame.OptionsFrame.checkReports.Title="報告";
+frameTree.IconAndOptionsFrame.OptionsFrame.checkReports.LongHelp="在樹中顯示報告。";
+
+frameTree.IconAndOptionsFrame.OptionsFrame.checkAnnotInSpecTreeGeomFeat.Title="在幾何特征節點下";
+frameTree.IconAndOptionsFrame.OptionsFrame.checkAnnotInSpecTreeGeomFeat.LongHelp="指定是否在樹中的幾何特征節點下顯示標注。";
+
+frameTree.IconAndOptionsFrame.OptionsFrame.checkAnnotInSpecTreePlane.Title="在視圖/注釋平面節點下";
+frameTree.IconAndOptionsFrame.OptionsFrame.checkAnnotInSpecTreePlane.LongHelp="指定是否在樹中的視圖/注釋平面節點下顯示注釋。";
+
+frameTree.IconAndOptionsFrame.OptionsFrame.checkAnnotInSpecTreeAnnotSet.Title="在注釋集節點下";
+frameTree.IconAndOptionsFrame.OptionsFrame.checkAnnotInSpecTreeAnnotSet.LongHelp="指定是否在樹中的注釋集節點下顯示注釋。";
+
+frameVisulization.HeaderFrame.Global.Title="可視化";
+frameVisulization.HeaderFrame.Global.LongHelp="可視化";
+
+frameVisulization.IconAndOptionsFrame.OptionsFrame.chkDisplayBackAndCutting.Title="加載布局時顯示背景和切除面";
+frameVisulization.IconAndOptionsFrame.OptionsFrame.chkDisplayBackAndCutting.LongHelp="加載布局時顯示背景和切除面";
+
+frameVisulization.IconAndOptionsFrame.OptionsFrame.chkPropagateHighlight.Title="拓展突出顯示";
+frameVisulization.IconAndOptionsFrame.OptionsFrame.chkPropagateHighlight.LongHelp="拓展突出顯示";
+
+frameDesignMode.HeaderFrame.Global.Title="元素分析 ";
+frameDesignMode.HeaderFrame.Global.LongHelp="元素分析。";
+
+frameDesignMode.IconAndOptionsFrame.OptionsFrame.checkDesignMode.Title="激活元素分析";
+frameDesignMode.IconAndOptionsFrame.OptionsFrame.checkDesignMode.LongHelp="以不同的可自定義顏色顯示各種類型的元素。";
+
+frameDesignMode.IconAndOptionsFrame.OptionsFrame.diagElementsColorsPushButton.Title="配置...";
+frameDesignMode.IconAndOptionsFrame.OptionsFrame.diagElementsColorsPushButton.LongHelp="用不同的可自定義顏色來顯示各種類型的尺寸。";
+
+// 3951 校正官方漢化 NLS de l'onglet Dimension pour Analysis Colors
+dlgAnalysisDisplay.Title="元素分析";
+dlgAnalysisDisplay.frameDimColor.HeaderFrame.Global.Title="尺寸";
+dlgAnalysisDisplay.frameDimColor.HeaderFrame.Global.LongHelp="讓您定義和自定義不同顏色來用于各種類型的尺寸。";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimNotUpToDate.Title="上次更新失敗的尺寸";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimNotUpToDate.LongHelp="定義在分析顯示模式中用于表示上次更新失敗的尺寸的顏色。";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimNonAssoc.Title="（3D 上的）非關聯性尺寸";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimNonAssoc.LongHelp="定義在分析顯示模式中用來表示與 3D 幾何圖形無關聯的尺寸的顏色。";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimBroken.Title="轉換為圖形元素的尺寸";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimBroken.LongHelp="定義在分析顯示模式中用來表示轉換為圖形元素的尺寸的顏色。";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimFake.Title="假尺寸";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimFake.LongHelp="定義在分析顯示模式中用來表示假尺寸的顏色。";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimDriving.Title="驅動 2D 幾何圖形的尺寸";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimDriving.LongHelp="定義在分析顯示模式中用來表示驅動 2D 幾何圖形的尺寸的顏色。";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDim3DCst.Title="3D 約束中生成的尺寸";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDim3DCst.LongHelp="定義在分析顯示模式中用來表示 3D 約束中生成的尺寸的顏色。";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimNUTD3DCst.Title="驅動非最新 3D 約束的尺寸";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimNUTD3DCst.LongHelp="定義在分析顯示模式中用來表示驅動非最新 3D 約束的尺寸的顏色。";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimTrue.Title="實際尺寸";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimTrue.LongHelp="定義在分析顯示模式中用來表示實際長度尺寸的顏色。";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimIsolated.Title="已隔離尺寸";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimIsolated.LongHelp="定義在分析顯示模式中用來表示未鏈接到任何幾何圖形的尺寸的顏色。";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimOnNonVisGeom.Title="非可視幾何圖形上的尺寸";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimOnNonVisGeom.LongHelp="定義在分析顯示模式中用來表示附加到非可視幾何圖形上的尺寸的顏色。";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimClipped.Title="已裁減尺寸";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkDimClipped.LongHelp="定義在分析顯示模式中用來表示已裁減尺寸的顏色。";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkAnnotDelGeom.Title="已刪除幾何圖形上的尺寸和注釋";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkAnnotDelGeom.LongHelp="定義在分析顯示模式中用來表示已刪除幾何圖形上的尺寸和注釋的顏色。";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkAnnotUnloadGeom.Title="未加載幾何圖形上的尺寸和注釋";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkAnnotUnloadGeom.LongHelp="定義在分析顯示模式中用來表示未加載幾何圖形上的尺寸和注釋的顏色。";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkAnnotInvalid.Title="無效的尺寸和注釋";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkAnnotInvalid.LongHelp="定義在分析顯示模式中用來表示無效的尺寸和注釋的顏色。";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkTechFeatDim.Title="技術特征尺寸";
+dlgAnalysisDisplay.frameDimColor.IconAndOptionsFrame.OptionsFrame.chkTechFeatDim.LongHelp="定義在分析顯示模式中用來表示技術特征尺寸的顏色。";
+
+dlgAnalysisDisplay.frameGeometries.HeaderFrame.Global.Title="幾何圖形";
+dlgAnalysisDisplay.frameGeometries.HeaderFrame.Global.LongHelp="讓您定義和自定義不同顏色來用于各種類型的幾何圖形。";
+
+dlgAnalysisDisplay.frameGeometries.IconAndOptionsFrame.OptionsFrame.chkFilterGeneratedElements.Title="生成的元素";
+dlgAnalysisDisplay.frameGeometries.IconAndOptionsFrame.OptionsFrame.chkFilterGeneratedElements.LongHelp="定義在分析顯示模式中用來表示生成的元素的顏色。";
+
+dlgAnalysisDisplay.frameCallouts.HeaderFrame.Global.Title="標注";
+dlgAnalysisDisplay.frameCallouts.HeaderFrame.Global.LongHelp="讓您定義和自定義不同顏色來用于各種類型的標注。";
+
+dlgAnalysisDisplay.frameCallouts.IconAndOptionsFrame.OptionsFrame.chkCalloutLastUpdateFailed.Title="上次更新失敗的標注";
+dlgAnalysisDisplay.frameCallouts.IconAndOptionsFrame.OptionsFrame.chkCalloutLastUpdateFailed.LongHelp="定義在分析顯示模式中用于表示上次更新失敗的標注的顏色。";
+
+dlgAnalysisDisplay.frameCallouts.IconAndOptionsFrame.OptionsFrame.chkIsolatedCallout.Title="已隔離標注";
+dlgAnalysisDisplay.frameCallouts.IconAndOptionsFrame.OptionsFrame.chkIsolatedCallout.LongHelp="定義在分析顯示模式中用來表示未鏈接到任何視圖的標注的顏色。";
+
+dlgAnalysisDisplay.frameWelding.HeaderFrame.Global.Title="焊接";
+dlgAnalysisDisplay.frameWelding.HeaderFrame.Global.LongHelp="讓您定義和自定義不同顏色來用于各種類型的焊接。";
+
+dlgAnalysisDisplay.frameWelding.IconAndOptionsFrame.OptionsFrame.chkDrwWeldNotUpToDate.Title="上次更新失敗的焊接";
+dlgAnalysisDisplay.frameWelding.IconAndOptionsFrame.OptionsFrame.chkDrwWeldNotUpToDate.LongHelp="定義是否將顏色用于表示非最新的焊接。";
+
+dlgAnalysisDisplay.framePatterns.HeaderFrame.Global.Title="陣列";
+dlgAnalysisDisplay.framePatterns.HeaderFrame.Global.LongHelp="讓您定義和自定義不同線寬來用于各種類型的陣列。";
+
+dlgAnalysisDisplay.framePatterns.IconAndOptionsFrame.OptionsFrame.chkPatternContourPitch.Title="用于尺寸小于螺距的陣列區域的輪廓線寬";
+dlgAnalysisDisplay.framePatterns.IconAndOptionsFrame.OptionsFrame.chkPatternContourPitch.LongHelp="定義用于表示區域大小低于螺距的輪廓的線寬。";
+
+
+frameDesignMode.IconAndOptionsFrame.OptionsFrame.checkVisualizationDiag.Title="激活幾何圖形診斷 ";
+frameDesignMode.IconAndOptionsFrame.OptionsFrame.checkVisualizationDiag.LongHelp="在受約束的元素上\n定義診斷的可視化。";
+frameDesignMode.IconAndOptionsFrame.OptionsFrame.diagGeometriesColorsPushButton.Title="配置...";
+frameDesignMode.IconAndOptionsFrame.OptionsFrame.diagGeometriesColorsPushButton.LongHelp="定義診斷顏色。";
+
+dlgVisuDiagColor.Title="診斷顏色";
+dlgVisuDiagColor.frameButtonDiagColors.HeaderFrame.Global.Title="診斷顏色";
+dlgVisuDiagColor.frameButtonDiagColors.HeaderFrame.Global.LongHelp="診斷顏色\n定義診斷顏色。";
+dlgVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelOverConsElts.Title="過分約束的元素 ";
+dlgVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelOverConsElts.LongHelp="過分約束的元素 \n定義過分約束的模型中元素所使用的顏色。";
+dlgVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelIsoConsElts.Title="等約束元素 ";
+dlgVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelIsoConsElts.LongHelp="等約束元素 \n定義等約束模型中元素所使用的顏色。";
+dlgVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelInconsElts.Title="不一致的元素 ";
+dlgVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelInconsElts.LongHelp="不一致的元素\n定義不一致模型中元素使用的顏色。";
+dlgVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelNotChanElts.Title="未更改的元素 ";
+dlgVisuDiagColor.frameButtonDiagColors.IconAndOptionsFrame.OptionsFrame.labelNotChanElts.LongHelp="未更改的元素\n定義未更改元素使用的顏色。";
+
+
+

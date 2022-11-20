@@ -1,0 +1,49 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES  2005
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 CATCmoUtilities.CATNls :
+// 3951 校正官方漢化                                 
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 Goal             : Catalog used for CmoUtilities
+// 3951 校正官方漢化 Owner            : CVI
+// 3951 校正官方漢化 Creation date    : 11/10/2005
+// 3951 校正官方漢化 Usage notes      : 
+// 3951 校正官方漢化         
+// 3951 校正官方漢化=============================================================================
+
+
+// 3951 校正官方漢化on curve of contour is not laying on the surface
+StdContour_LayingOnSurfaceError.Request="標準輪廓";
+StdContour_LayingOnSurfaceError.Diagnostic="一條或多條輸入曲線不在支持曲面上；修改輸入曲線";
+StdContour_LayingOnSurfaceError.Advice="";
+
+// 3951 校正官方漢化the contour is auto-intersecting
+StdContour_AutoIntersectError.Request="標準輪廓";
+StdContour_AutoIntersectError.Diagnostic="輪廓自交；修改輸入曲線";
+StdContour_AutoIntersectError.Advice="";
+
+// 3951 校正官方漢化 Error messages to be displayed when highlighting an invalid contour
+StdContour_InputCurveIntersectError="打開輪廓（間隔 = /p1 mm）：\n/p2 和 /p3 之 /p4 不相交。";
+StdContour_InputCurveIntersectError2="打開輪廓（間隔 = /p1 mm）：輸入曲線不相交";
+StdContour_LayingOnSurfaceError2="/p1 無效的輸入曲線：\n/p2 不在 /p3 上。";
+StdContour_LayingOnSurfaceError3="無效的輸入曲線不在參考曲面上";
+Contour_SelfIntersectingError="輪廓自相交";
+Contour_InvalidGeneralError="輪廓無效或未更新";
+AdviceWhenInputCurvesKO="修改輪廓的輸入曲線";
+
+CATCmoUtilities_ERR_0003.Request="";
+CATCmoUtilities_ERR_0003.Diagnostic="結果輪廓未閉合。";
+CATCmoUtilities_ERR_0003.Advice="";
+
+// 3951 校正官方漢化 Ressources used for migration to extended laminates
+ExtendedLaminateAlreadyExist="模型中已經存在一些擴展的層。請取消遷移，糾正之前的錯誤，然后重試。";
+MigrateGrid="遷移網格 /P1";
+MigrateZone="遷移區域 /P1";
+MigrateZoneEmptyLaminate="區域 /p1 中有無效的層（通常是沒有堆疊）。此區域在遷移的模型中將沒有已定義的層。";
+AddedExtendedLaminate="已創建新層：/p1 (/p2)";
+NewLaminateName.SS="SS./p1";
+NewLaminateName.TL="TL./p1";
+Separator.SS=",";
+Separator.TL="/";
+MultipleMaterials=" （/p1 材料）";

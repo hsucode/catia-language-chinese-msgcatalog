@@ -1,0 +1,63 @@
+ElectricalHarness.Alias="電氣物理系統設計資源";
+ElectricalHarness.Description="線束設計過程所需的資源定義";
+
+ElectricalCatalog.Alias="3D 電氣部件目錄";
+ElectricalCatalog.Description="允許聲明 3D 電氣部件目錄";
+ElectricalCatalog.Standard.Description="將使用的標準";
+
+ELBConnect_ValidateDevicesToConnect.Alias="驗證設備連接";
+ELBConnect_ValidateDevicesToConnect.Description="檢查兩個電氣零件實例是否能夠連接在一起的業務規則。";
+
+ELBConnect_CompatibleDevicesToConnect.Alias="計算兼容設備";
+ELBConnect_CompatibleDevicesToConnect.Description="用于計算兼容電氣參考零件編號列表（可連接至所選零件實例）的業務規則。";
+
+EHIRouting_ValidateAddSegmentToSupport.Alias="驗證通過支持面的段傳遞";
+EHIRouting_ValidateAddSegmentToSupport.Description="檢查是否能夠將段添加至支持面實例的業務規則。";
+
+EHIRouting_ComputeUVAddSegmentToSupport.Alias="計算支持面中分支段的位置";
+EHIRouting_ComputeUVAddSegmentToSupport.Description="計算支持面實例內部分支段的默認位置 (U, V) 的業務規則。";
+
+EHIRouting_ValidateBranchExtremityConnection.Alias="驗證分支端點連接";
+EHIRouting_ValidateBranchExtremityConnection.Description="檢查是否能夠將段端點連接至其他對象（其他段端點或設備）的業務規則。";
+
+EWRRouting_ValidateWireRoute.Alias="驗證導體傳遞";
+EWRRouting_ValidateWireRoute.Description="檢查將通過段集傳遞的導體兼容性的業務規則。";
+
+EWRRouting_ValidateSegmentSelectionForWireRoute.Alias="驗證導體傳遞過程中的段選擇";
+EWRRouting_ValidateSegmentSelectionForWireRoute.Description="檢查是否能夠將段添加至導體傳遞線路的業務規則。";
+
+EWRUpdate_ComputeBundleSegment.Alias="計算用于更新的段";
+EWRUpdate_ComputeBundleSegment.Description="通過內部包含的導體和導體組列表計算段直徑和分支折彎半徑的業務規則。";
+
+EHIMerge_ComputeMergeBranchParameters.Alias="計算參數以合并兩個分支";
+EHIMerge_ComputeMergeBranchParameters.Description="計算合并兩個分支時要設置的不同參數的業務規則。";
+
+EHINetwork_ValidateSegmentConnection.Alias="驗證段連接";
+EHINetwork_ValidateSegmentConnection.Description="檢查分析網絡中兩個電氣連接的段端點狀態的業務規則。";
+
+ELBManageLink_ValidateLinkInstance.Alias="驗證 XML 設備和設備實例鏈接";
+ELBManageLink_ValidateLinkInstance.Description="檢查 XML 設備實例與要鏈接的 V6 設備實例是否兼容的業務規則。";
+
+EHI_ValidateTargetSupportCompatibilityForCopyArrangement.Alias="驗證目標支持面的兼容性";
+EHI_ValidateTargetSupportCompatibilityForCopyArrangement.Description="檢查所選目標支持面能否用于從源支持面復制排列的業務規則";
+
+EHI_ValidateSegmentSupportAtSourceAndTargetForCopyArrangement.Alias="驗證源和目標處的段與支持面的組合";
+EHI_ValidateSegmentSupportAtSourceAndTargetForCopyArrangement.Description="檢查源和目標處的段與支持面的組合能否用于復制排列的業務規則";
+
+EWR_ValidateRoutingAllConductorsInSegment.Alias="驗證段與基礎導體的組合是否過載";
+EWR_ValidateRoutingAllConductorsInSegment.Description="檢查段與基礎導體的組合是否會導致段過載的業務規則";
+
+EHI_ValidateSegmentArrangementInSupport.Alias="驗證支持截面中的段排列";
+EHI_ValidateSegmentArrangementInSupport.Description="驗證支持截面內段排列的業務規則";
+
+EHI_ComputeSegmentMaterialProperties.Alias="計算段材料屬性";
+EHI_ComputeSegmentMaterialProperties.Description="為 FLEX 算法計算段材料屬性的業務規則";
+
+PortSubType.Alias="電氣端口子類型";
+PortSubType.Description="電氣端口子類型的離散字符串類型屬性值";
+
+PortSubType.SubTypeFilter.Alias="子類型過濾器";
+PortSubType.SubTypeFilter.Description="用于過濾子類型列表的值";
+
+EHINetwork_ComputeSegmentFillingRatio.Alias="計算此段的填充比率";
+EHINetwork_ComputeSegmentFillingRatio.Description="計算段填充比率的業務規則。";

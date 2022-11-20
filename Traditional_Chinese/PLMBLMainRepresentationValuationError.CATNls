@@ -1,0 +1,22 @@
+RunMainRepresentationValuationERR_1="MainRepresentation 評估的業務邏輯訪問服務失敗。";
+RunMainRepresentationValuationERR_2="MainRepresentation 評估的業務邏輯執行失敗。錯誤為：/p1";
+RunMainRepresentationValuationERR_3="MainRepresentation 評估的業務邏輯啟動失敗。錯誤為：/p1";
+RunMainRepresentationValuationERR_4="業務邏輯已選擇無效展示作為 MainRepresentation。MainRepresentation 評估失敗。錯誤為：/p1";
+
+InvalidOperationIDERR_1001.Request="運行 MainRepresentation 評估業務邏輯：";
+InvalidOperationIDERR_1001.Diagnostic="用于啟動 MainRepresentation 評估業務邏輯的 OperationId 錯誤。";
+InvalidOperationIDERR_1001.Advice="確保使用 \"CATDWCExport\" 作為 OperationId。";
+
+InvalidInputArgERR_1001.Request="運行 MainRepresentation 評估業務邏輯：";
+InvalidInputArgERR_1001.Diagnostic="用于啟動 MainRepresentation 評估業務邏輯的 / NULL 參考無效。";
+InvalidInputArgERR_1001.Advice="確保使用正確評估的參考。";
+
+ReferenceWithZeroChildrenfERR_1001.Request="運行 MainRepresentation 評估業務邏輯：";
+ReferenceWithZeroChildrenfERR_1001.Diagnostic="MainRepresentation 評估業務邏輯在不含任何展示的參考上重播。";
+ReferenceWithZeroChildrenfERR_1001.Advice="確保參考在其下面實例化展示。";
+
+InvalidMainRepSelectERR_1001.Request="運行 MainRepresentation 評估業務邏輯：";
+InvalidMainRepSelectERR_1001.Diagnostic="設置為 DWCMainRep 的展示對象不是指定參考的子級。";
+InvalidMainRepSelectERR_1001.Advice="確保從 ListOfChildrenRepRefs 屬性檢索展示對象。";
+
+BusinessLogic.Report.NoScriptFound="未為 \"/p1\" 類型的產品參考找到主要展示定義的合適腳本。\n因此，將以默認轉換行為處理對象。";

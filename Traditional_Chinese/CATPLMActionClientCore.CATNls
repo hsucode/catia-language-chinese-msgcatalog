@@ -1,0 +1,79 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2006
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 CATPLMActionClientCore.CATNls
+// 3951 校正官方漢化
+// 3951 校正官方漢化===========================================================================
+
+CATPLMActionEntity.Alias="NotFound";
+CATPLMActionEntity.MAO.Domain="PLMChgMAO";
+CATPLMActionEntity.MAO.Type="PLMChgMAO";
+CATPLMActionEntity.MAO.RelationName="DefaultAssocData";
+CATPLMActionEntity.Attachment.Domain="PLMChgAttachment";
+CATPLMActionEntity.Attachment.Type="PLMChgAttachment";
+CATPLMActionEntity.Attachment.RelationName="DefaultAssocData";
+CATPLMActionEntity.PVS.Domain="PLMChgAttachment";
+CATPLMActionEntity.PVS.RelationName="PVS";
+CATPLMActionEntity.DefaultPVS.Domain="PLMChgAttachment";
+CATPLMActionEntity.DefaultPVS.RelationName="DefaultPVS";
+CATPLMActionEntity.NamedEff.Domain="PLMChgNamedEff";
+CATPLMActionEntity.NamedEff.Type="PLMChgNamedEff";
+CATPLMActionEntity.NamedEff.RelationName="DefaultNamedEff";
+CATPLMActionEntity.TaskInput.Domain="PLMChgTaskInput";
+CATPLMActionEntity.TaskInput.Type="PLMChgTaskInput";
+CATPLMActionEntity.TaskInput.RelationName="DefaultActionInputs";
+CATPLMActionEntity.ProductInput.Domain="PLMChgProductInput";
+CATPLMActionEntity.ProductInput.Type="PLMChgProductInput";
+CATPLMActionEntity.ProductInput.RelationName="DefaultActionInputs";
+CATPLMActionEntity.Attributes.ExternalID="PLM_ExternalID";
+CATPLMActionEntity.Attributes.Description="V_description";
+CATPLMActionEntity.CoreDomain="PLMCORE";
+CATPLMActionEntity.Connection="PLMConnection";
+CATPLMActionEntity.DocumentationAction.Domain="PLMChgDocumentationAction";
+CATPLMActionEntity.DocumentationAction.Type="PLMDocumentationAction";
+CATPLMActionEntity.DesignAction.Domain="PLMChgDesignAction";
+CATPLMActionEntity.DesignAction.Type="PLMDesignAction";
+CATPLMActionEntity.MaintenanceAction.Domain="PLMChgMaintenanceAction";
+CATPLMActionEntity.MaintenanceAction.Type="PLMMaintenanceAction";
+CATPLMActionEntity.ManufacturingAction.Domain="PLMChgManufacturingAction";
+CATPLMActionEntity.ManufacturingAction.Type="PLMManufacturingAction";
+CATPLMActionEntity.SignoffAction.Domain="PLMChgSignoffAction";
+CATPLMActionEntity.SignoffAction.Type="PLMSignoffAction";
+CATPLMActionEntity.ChildAction.Domain="PLMChgActionBase";
+CATPLMActionEntity.ChildAction.Type="PLMChildAction";
+CATPLMActionEntity.Connection.RelationName="DefaultAssocData";
+CATPLMActionEntity.uKey="PLMACTION";
+CATPLMActionEntity.CoreReference="PLMCoreReference";
+CATPLMActionEntity.CoreRepReference="PLMCoreRepReference";
+CATPLMActionEntity.CoreInstance="PLMCoreInstance";
+CATPLMActionEntity.CoreRepInstance="PLMCoreRepInstance";
+CATPLMActionEntity.Connection="PLMConnection";
+CATPLMActionEntity.Port="PLMPort";
+CATPLMActionEntity.PLMConfigNamedEffectivity.Domain="PLMConfigNamedEffectivity";
+CATPLMActionEntity.PLMCfgNamedEffectivity.Type="PLMCfgNamedEffectivity";
+CATPLMActionEntity.Error.BRExecService="獲取業務規則執行服務時發生內部錯誤";
+CATPLMActionEntity.Error.ClientCoreEntityNULL="內部錯誤 — 已通過的 CATIPLMClientCoreEntity 為 NULL";
+CATPLMActionEntity.Error.MaturityNULL="內部錯誤 — 無法獲取 CATIPLMClientCoreMaturity";
+CATPLMActionEntity.Error.StateHasNoTransitions="錯誤 — 針對 ChangeStatus 的 ECA 的當前狀態沒有轉換";
+CATPLMActionEntity.Error.ListTransitions="在 CATIPLMClientCoreMaturity->ListTransitions() 期間發生內部錯誤";
+CATPLMActionEntity.Error.CouldNotFindTransition="錯誤 — 無法找到轉換名稱 ";
+CATPLMActionEntity.Error.GetChildActionsFailed="錯誤 — 獲取子 ECA 失敗";
+CATPLMActionEntity.Error.ChildActionsAreCompleteFailed="內部錯誤 — CATPLMActionPrivateUtilities::ChildActionsAreComplete() 失敗";
+CATPLMActionEntity.Error.GetNamedEffectivitiesFailed="內部錯誤 — CATPLMActionPrivateUtilities::GetNamedEffectivities() 失敗";
+CATPLMActionEntity.Error.CATBaseUnknown="內部錯誤 — 無法獲取 ECA 的 CATBaseUnknown";
+CATPLMActionEntity.Error.ChildActionsAreCompleteFailed="內部錯誤 — CATPLMActionPrivateUtilities::ChildActionsAreComplete() 失敗";
+CATPLMActionEntity.Error.ChildActionNotFinal="錯誤 — 子 ECA 未完成： ";
+CATPLMActionEntity.Error.NEsAreCompleteFailed="內部錯誤 — CATPLMActionPrivateUtilities::NEsAreComplete() 失敗";
+CATPLMActionEntity.Error.NENotPublished="錯誤 — 未發布已命名的有效性 ";
+CATPLMActionEntity.Error.AffObjsAreCompleteFailed="內部錯誤 — CATPLMActionPrivateUtilities::AffObjsAreComplete() 失敗";
+CATPLMActionEntity.Error.DupRelation="錯誤 — /P01 已與 ECA 關聯";
+CATPLMActionEntity.Error.DupActId="錯誤 — 已存在 ECA 標識。提供其他 ECA 標識并重試。";
+CATPLMActionEntity.Error.TaskAffObjNotComplete="錯誤 — 輸出對象未完成： ";
+CATPLMActionEntity.Error.ECAAffObjNotComplete="錯誤 — 至少有一個已實施的項目未完成 ";
+CATPLMActionEntity.Error.DupNEId="錯誤 — 已存在名稱 /P01。提供其他名稱并重試。";
+CATPLMActionEntity.Error.ActionOpen="錯誤 — 已在編輯器中打開要刪除的對象 /P01。請關閉此對象并重試。";
+CATPLMActionEntity.Error.ActionImplStarted="錯誤 — 已啟動要刪除的對象 /P01 的實施。不能將其刪除。";
+CATPLMActionEntity.ActionList.Action="/P01";
+
+
+

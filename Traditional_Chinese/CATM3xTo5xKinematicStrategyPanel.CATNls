@@ -1,0 +1,38 @@
+Title="機床運動學";
+
+M3xTo5xOptimizeAngularVariations="優化旋轉自由度";
+M3xTo5xOptimizeAngularVariations.LongHelp="嘗試將旋轉自由度降至最低。";
+
+AngularFrame.AngularModeFrame.Title="如何更正？";
+AngularFrame.DOFFrame.Title="關于旋轉自由度";
+
+M3xTo5xActivateOutLimit="更正超限點";
+M3xTo5xActivateOutLimit.LongHelp="更正超限點。如果點超出限制：
+    - 在 X、Y 或 Z 軸中：將會移除該點。
+    - 在 A、B 或 C 軸中：將會更正刀軸：將其鎖定在限制位置。
+      在使用該新刀軸時，如果點陷入沖突，則會移除該點。";
+
+M3xTo5xActivateAngular="更正旋轉自由度的較大角度變化";
+M3xTo5xActivateAngular.LongHelp="更正旋轉自由度的較大角度變化。";
+
+M3xTo5xMaxAngular="最大變化";
+M3xTo5xMaxAngular.LongHelp="定義可接受的旋轉自由度的最大角度。";
+
+M3xTo5xModeLinking="關于現有宏";
+M3xTo5xModeLinking.LongHelp="修改鏈接宏，以避免較大的角度變化。";
+
+M3xTo5xModeOnPart="關于加工刀路";
+M3xTo5xModeOnPart.LongHelp="修改加工刀路，以避免較大的角度變化。";
+
+M3xTo5xModeRetract="關于強制用戶宏";
+M3xTo5xModeRetract.LongHelp="新建退刀宏以避免較大的角度變化。";
+
+M3xTo5xFanningDst="扇形距離";
+M3xTo5xFanningDst.LongHelp="定義更正前的扇形距離。";
+
+M3xTo5xMaxDiscretAngle="最大離散";
+M3xTo5xMaxDiscretAngle.LongHelp="定義旋轉自由度的最大離散步長。";
+
+KinematicHelp="使用的 NC 機床不受支持。
+必須提供使用機床刀具生成器構建的 NC 銑床。";
+

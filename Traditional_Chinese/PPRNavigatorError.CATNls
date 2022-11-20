@@ -1,0 +1,65 @@
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Errors for  PPR Navigator UI
+// 3951 校正官方漢化 =================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Deux manieres de formater vos messages : 
+// 3951 校正官方漢化
+// 3951 校正官方漢化 a- Specifier en delimitant avec le caractere '\n' :
+// 3951 校正官方漢化       Request      (ce que l'on tentait de faire)
+// 3951 校正官方漢化       Diagnostic   (ce qui est arrive)
+// 3951 校正官方漢化       Advice       (...ce qu'il pourrait faire si possible)
+// 3951 校正官方漢化
+// 3951 校正官方漢化     Exemple :
+// 3951 校正官方漢化       ERR_3000 = "Initializing '/p1' attribute in '/p2'.\nAttribute does not exist.\nContact your local support.";  
+// 3951 校正官方漢化       
+// 3951 校正官方漢化               NOTE : Le parametrage des messages se fait via SetNLSParameter
+// 3951 校正官方漢化
+// 3951 校正官方漢化 ou bien
+// 3951 校正官方漢化
+// 3951 校正官方漢化 b- Specifier vos messages avec la cle + les 3 facettes Request/Diagnostic/Advice
+// 3951 校正官方漢化
+// 3951 校正官方漢化     Exemple :
+// 3951 校正官方漢化       ERR_3000.Request    "Initializing '/p1' attribute in '/p2'." 
+// 3951 校正官方漢化       ERR_3000.Diagnostic "Attribute does not exist."
+// 3951 校正官方漢化       ERR_3000.Advice     "\nContact your local support."
+// 3951 校正官方漢化 
+// 3951 校正官方漢化               NOTE : Le parametrage de chaque facette se fait par :
+// 3951 校正官方漢化                         Request    : SetNLSRequestParams
+// 3951 校正官方漢化                         Diagnostic : SetNLSDiagnosticParams
+// 3951 校正官方漢化                         Advice     : SetNLSAdviceParams
+// 3951 校正官方漢化
+// 3951 校正官方漢化 =====================================================================
+
+
+ERR_2001.Request="為 /P1 檢測到不兼容的過濾器\n";
+ERR_2001.Diagnostic="/P1 根零部件上的過濾器與瀏覽的零部件不兼容";
+ERR_2001.Advice="您必須修改您的過濾器或修改您要處理的數據集（完成）";
+
+ERR_2002.Request="智能完成：不兼容的次要版本\n";
+ERR_2002.Diagnostic="/p1 PLM 對象和 /p2 PLM 對象擁有不同的次要版本";
+ERR_2002.Advice="您必須修改您的完成選擇以避免加載不同的次要版本 \n 這可能是由參考了不同次要版本的關系造成的 \n 同樣，使用關系分析器來識別命名對象上的次要版本";
+
+ERR_2003.Request="智能完成：從過濾器訪問次要版本時出現問題\n";
+ERR_2003.Diagnostic="應用于 /P1 PLM 根對象的次要過濾器不一致";
+ERR_2003.Advice="檢查應用于 /P1 PLM 根對象的過濾器";
+
+ERR_2004.Request="智能完成：從一個零部件中至少延伸出了兩個 BSF 次要版本\n";
+ERR_2004.Diagnostic="/p1 零部件至少會為同一次要版本生成兩個 BSF 次要版本";
+ERR_2004.Advice="這可能涉及到零部件自身，或者是存在于它的上下文中、與定義了實例路徑的此零部件相關的一個零部件 \n 此案例不支持驗證完成";
+
+ERR_2005.Request="智能完成：完成結果包含沒有定義根的次要版本\n";
+ERR_2005.Diagnostic="至少有一個零部件包含次要版本。第一個與 /p1 零部件相關（它自身、上下文中或路徑中的其中一個零部件）";
+ERR_2005.Advice="\n 首先，插入與零部件類型對應的范圍根，然后重試完成 \n 一個次要過濾器會被添加到此根零部件或者 \n如果根本身為次要版本，它將被添加為根";
+
+ERR_2006.Request="智能完成：過濾器中的次要版本和來自完成的次要版本不兼容\n";
+ERR_2006.Diagnostic="/p1 零部件次要版本與來自同一零部件系列的次要版本過濾器不兼容";
+ERR_2006.Advice="\n 您必須修改次要版本過濾器才能完成來自選定零部件的會話。\n";
+
+ERR_2007.Request="智能完成：無法從 BSF 次要版本獲取標識符\n";
+ERR_2007.Diagnostic="無法從 /p1 零部件次要版本訪問 BSF 標識符 ";
+ERR_2007.Advice="\n 這可能是由于數據庫訪問 \n";
+
+ERR_2008.Request="智能完成：一個包含次要版本的完成結果在 PPR 結構樹中擁有多于一個根\n";
+ERR_2008.Diagnostic="至少 /p1 零部件（它自身、上下文或路徑中的其中一個零部件）包含一個次要版本并且\n 在相應 PPR Navigator 假節點中存在多于一個根";
+ERR_2008.Advice="\n 這是一個當前限制，您必須僅保留一個根以成功完成 \n";

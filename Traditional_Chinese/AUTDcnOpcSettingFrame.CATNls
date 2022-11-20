@@ -1,0 +1,49 @@
+OPCParam.Title = "Overall OPC Parameters";
+
+OPCParam.Frame.OPCNameLabel.Title = "Name: ";
+
+// Host selection
+OPCParam.Frame.ServerHostNameLabel.Title = "Server Host name or IP Adress: ";
+OPCParam.Frame.HostSelector.Title = "Browse ...";
+OPCParam.Frame.HostSelector.ShortHelp = "Browse Network";
+
+// Server selection
+OPCParam.Frame.ServerNameLabel.Title = "OPC Server name: ";
+OPCParam.Frame.ServerSelector.Title = "Browse ...";
+OPCParam.Frame.ServerSelector.ShortHelp = "Browse OPC servers on host";
+
+//	Connect button
+OPCParam.Frame.OpcDisconnect.ShortHelp = "Connect to / Disconnect from OPC server";
+OpcConnect = " Connect ";
+OpcDisconnect = "Disconnect";
+TryToConnect = "\n\nConnecting to /P1 on /P2\n\n";
+
+ChgTitle = "Warning !";
+HostChgMess = "Host has changed. Do you want to erase the parameters of the ports ?";
+ServerChgMess = "Server has changed. Do you want to erase the parameters of the ports ?";
+HostChgMessServerChgMess = "Host and server have changed. Do you want to erase the parameters of the ports ?";
+
+//Write method
+OPCParam.Write.Label.Title = "Write Method";
+OPCParam.Write.Sync.Title = "Synchronous";
+OPCParam.Write.Sync.ShortHelp = "Simulation is halted until the request has been processed";
+OPCParam.Write.Async.Title = "Asynchronous";
+OPCParam.Write.Async.ShortHelp = "The request is sent to the server and the simulation continues";
+
+//Read method
+OPCParam.Read.Label.Title = "Read Method";
+OPCParam.Read.Cache.Title = "Cache";
+OPCParam.Read.Cache.ShortHelp = "IO values are read from cache in the OPC server";
+OPCParam.Read.Device.Title = "Device";
+OPCParam.Read.Device.ShortHelp = "IO values are read directly from the device";
+
+//	Server Refresh Rate
+OPCParam.Rate.Label.Title = "Update rate (ms): ";
+
+AUTServerSelector.Title = "Select an OPC server";
+ConnectingTo = "Connecting to /P1";
+
+NoBrowserTitle = "OPC Warning";
+NoBrowserMess = "The Server Address Space Browser is not available on your \nOPC Server. So, you have to enter your OPC tags manually!";
+
+RootNetworkName = "Entire Network";

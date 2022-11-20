@@ -1,0 +1,66 @@
+DialogBoxTitle="調整";
+
+MultiListVectors.ColumnTitle1=" ";
+MultiListVectors.ColumnTitle2="向量";
+MultiListVectors.ColumnTitle3="開始";
+MultiListVectors.ColumnTitle4="結束";
+MultiListVectors.LongHelp="列出定義的向量及其起點和終點。
+根據定義的向量數，可進行以下變換：
+1 個向量：平移
+2 個向量：平移、旋轉
+3 個向量：平移、旋轉、補償
+如果有 3 個以上的向量，補償將作用于平均平面上。";
+MultiListVectors.ShortHelp="列出定義的向量及其起點和終點";
+
+FrameSelection.LongHelp="選擇選項";
+FrameSelection.LabelElements.Title="元素： ";
+FrameSelection.LabelElements.LongHelp="選擇要調整的元素。
+輸入元素可以為點、曲線或曲面。";
+FrameSelection.LabelElements.ShortHelp="要調整的元素";
+FrameSelection.LabelPoint.Title="點： ";
+FrameSelection.LabelPoint.LongHelp="選擇要定義向量的點。
+點列出在向量表上。";
+FrameSelection.LabelPoint.ShortHelp="選擇要定義向量的點。";
+
+FrameOthers.FrameOptions.Title="選項";
+FrameOthers.FrameOptions.LongHelp="必須按以下順序定義向量：平移、旋轉、補償。 
+- 平移 - 
+  平移元素。
+- 旋轉 -
+  可用平移和旋轉向量進行旋轉。
+- 補償 -
+  與平移和旋轉一起定義變換的起始平面和結束平面。
+- 縮放 -
+  縮放結果。";
+
+FrameOthers.FrameOptions.CheckTranslation.Title="平移";
+FrameOthers.FrameOptions.CheckTranslation.LongHelp="需要一個向量。
+必須始終開啟平移。
+沒有平移，則無法進行任何變換。
+平移將元素從向量起點移至終點。";
+FrameOthers.FrameOptions.CheckTranslation.ShortHelp="第一個向量 - 定義平移。";
+
+FrameOthers.FrameOptions.CheckScale.Title="縮放";
+FrameOthers.FrameOptions.CheckScale.LongHelp="僅當開啟平移和旋轉時才可用。
+此選項無需其他向量。
+縮放原點即為向量平移的終點。
+縮放系數是向量平移和旋轉的終點和起點之間差值的商。";
+FrameOthers.FrameOptions.CheckScale.ShortHelp="縮放結果。";
+
+FrameOthers.FrameOptions.CheckRotation.Title="旋轉";
+FrameOthers.FrameOptions.CheckRotation.LongHelp="需要另一向量。
+向量平移和向量旋轉一起定義元素的原點和一個方向。
+如果縮放開啟，縮放系數即為兩個向量的終點距離和起點距離的商。";
+FrameOthers.FrameOptions.CheckRotation.ShortHelp="第二個向量 - 定義旋轉。";
+
+FrameOthers.FrameOptions.CheckCompensation.Title="補償";
+FrameOthers.FrameOptions.CheckCompensation.LongHelp="僅當開啟平移和旋轉時才可用。
+需要第三個向量以和前兩個向量一起定義兩個平面。
+三個向量的起點和終點定義起始平面和結束平面。
+除平移和旋轉外，元素由起始平面變換為結束平面。";
+FrameOthers.FrameOptions.CheckCompensation.ShortHelp="第三個向量 - 定義平面。";
+
+
+//???????????????????????????????????????????????????
+TranslatationVector="平移";
+RotationVector="旋轉";

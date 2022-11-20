@@ -1,0 +1,101 @@
+// 3951 校正官方漢化NLS-ENGLISH VERSION
+// 3951 校正官方漢化=======================================================================
+// 3951 校正官方漢化 MODULE :  ProductStructureDataExchange
+// 3951 校正官方漢化=======================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Creation : 2008-01-14 - Jean-Pierre CRISPI (JRX)
+// 3951 校正官方漢化=======================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Numeros reserves :
+// 3951 校正官方漢化 [9501] --> [9599]
+// 3951 校正官方漢化
+// 3951 校正官方漢化=======================================================================
+
+
+// 3951 校正官方漢化-----------------------------------------------------------------------
+// 3951 校正官方漢化 Messages pour AbstractFactoryDataExchangeTranslator
+// 3951 校正官方漢化-----------------------------------------------------------------------
+// 3951 校正官方漢化 Numeros reserves :
+// 3951 校正官方漢化 [9501] --> [9549]
+// 3951 校正官方漢化-----------------------------------------------------------------------
+
+
+AbstractFactoryDataExchangeTranslator.Info.PSOK="   <I> [9501] 已正確創建產品結構。/p3";
+
+AbstractFactoryDataExchangeTranslator.Info.NoPS="   <I> [9502] 沒有要創建的產品結構。/p3";
+
+AbstractFactoryDataExchangeTranslator.Info.GeomOK="   <I> [9503] 已正確創建展示。/p3";
+
+AbstractFactoryDataExchangeTranslator.Error.GeomKO="!  <E> [9504] 創建展示時出現問題。/p3";
+
+AbstractFactoryDataExchangeTranslator.Info.ADOK="   <I> [9505] 已在展示中正確創建應用性數據。/p3";
+
+AbstractFactoryDataExchangeTranslator.Info.NoAD="   <I> [9506] 沒有要從輸入展示轉換的應用性數據。/p3";
+
+AbstractFactoryDataExchangeTranslator.Error.ADKO="!  <E> [9507] 處理應用性數據時出現問題。/p3";
+
+AbstractFactoryDataExchangeTranslator.Info.NbInstances="   <I> [9508] 當前產品聚集 /p4 個實例。/p3";
+
+AbstractFactoryDataExchangeTranslator.Info.EltFound="   <I> [9509] /p4 已存在。/p3";
+
+AbstractFactoryDataExchangeTranslator.Info.EltStored="   <I> [9510] /p4 已儲存。/p3";
+
+AbstractFactoryDataExchangeTranslator.Info.RepTessellee="   <I> [9511] 正在處理鑲嵌展示。/p3";
+
+AbstractFactoryDataExchangeTranslator.Info.RepExacte="   <I> [9512] 正在處理精確邊界展示。/p3";
+
+AbstractFactoryDataExchangeTranslator.Info.ProcessingRep="   <I> [9513] 展示名稱: /p4。/p3";
+
+AbstractFactoryDataExchangeTranslator.Error.GetGeomRepresentation="!  <E> [9514] 無法獲得幾何圖形展示。/p3";
+
+AbstractFactoryDataExchangeTranslator.Info.SetOption="   <I> [9515] 已設置選項: /p4。/p3";
+
+AbstractFactoryDataExchangeTranslator.Info.NbOptionsInput="   <I> [9516] /p4 選項已轉發到輸入應用。/p3";
+
+
+RepresentationError_1001.Request="轉換鑲嵌零件文件失敗";
+RepresentationError_1001.Diagnostic="轉換選項不正確，無法支持鑲嵌零件文件。";
+RepresentationError_1001.Advice="如可能，請選擇另一數據格式選項，如鑲嵌。";
+
+
+// 3951 校正官方漢化-----------------------------------------------------------------------
+// 3951 校正官方漢化 Messages pour CATPLMProductStructureOutputData
+// 3951 校正官方漢化-----------------------------------------------------------------------
+// 3951 校正官方漢化 Numeros reserves :
+// 3951 校正官方漢化 [9551] --> [9570]
+// 3951 校正官方漢化-----------------------------------------------------------------------
+
+CATPLMProductStructureOutputData.Error.CreateProductReference="!  <E> [9551] 無法創建產品參考。/p3";
+
+CATPLMProductStructureOutputData.Error.InstanceKO="!  <E> [9552] 無法將實例聚集到參考。/p3";
+
+CATPLMProductStructureOutputData.Error.RepRefNotCreated="!  <E> [9553] 無法創建展示參考。/p3";
+
+CATPLMProductStructureOutputData.Info.ADOK="   <I> [9554] 已在參考中正確創建應用性數據。/p3";
+
+CATPLMProductStructureOutputData.Info.NoAD="   <I> [9555] 沒有要從輸入參考轉換的應用性數據。/p3";
+
+CATPLMProductStructureOutputData.Error.ADKO="!  <E> [9556] 處理應用性數據時出現問題。/p3";
+
+CATPLMProductStructureOutputData.Error.CreateRepReferenceInstanceKO="!  <E> [9557] 無法創建實例。/p3";
+
+CATPLMProductStructureOutputData.Error.SaveRepInter="!  <E> [9558] 無法保存展示參考。/p3";
+
+
+
+// 3951 校正官方漢化-----------------------------------------------------------------------
+// 3951 校正官方漢化 Messages pour Inputdata
+// 3951 校正官方漢化-----------------------------------------------------------------------
+// 3951 校正官方漢化 Numeros reserves :
+// 3951 校正官方漢化 [9571] --> [9590]
+// 3951 校正官方漢化-----------------------------------------------------------------------
+
+CATPLMV6Product.Info.ProcessingV6Product="   <I> [9571] 正在處理名為 /p4 的產品/p3";
+
+CATPLMV6Product.Warning.MultiRepProduct="   <W> [9572] 此產品包含 /p4 個展示，但只能導出一個展示(不支持導出多個展示)。/p3";
+
+CATPLMV6Product.Info.FoundRep="   <I> [9573] 發現一個類型為 /p4 的展示。/p3";
+
+CATPLMV6Product.Info.SelectedRep="   <I> [9574] 將導出此類型為 /p4 的展示。/p3";
+
+CATPLMV6Product.Warning.NoRep="   <W> [9575] 沒有要導出的展示。/p3";

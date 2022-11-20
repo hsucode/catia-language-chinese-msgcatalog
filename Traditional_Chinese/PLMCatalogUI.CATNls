@@ -1,0 +1,182 @@
+
+// 3951 校正官方漢化 ********************************************************************************
+// 3951 校正官方漢化 Commandes
+// 3951 校正官方漢化 ********************************************************************************
+PLMCatalogUI.CatalogInsertChapter.Title="新章節";
+PLMCatalogUI.CatalogInsertChapter.Help="新章節";
+PLMCatalogUI.CatalogInsertChapter.ShortHelp="插入新章節";
+PLMCatalogUI.CatalogInsertChapter.LongHelp="插入新章節";
+
+PLMCatalogUI.PLMCatalogInsertNewFromChapter.Title="新章節，從";
+PLMCatalogUI.PLMCatalogInsertNewFromChapter.Help="新章節，從 ";
+PLMCatalogUI.PLMCatalogInsertNewFromChapter.ShortHelp="插入新章節，從";
+PLMCatalogUI.PLMCatalogInsertNewFromChapter.LongHelp="從其他章節插入新章節";
+
+PLMCatalogUI.MatrixSynchronizeHdr1.Title="與企業同步";
+PLMCatalogUI.MatrixSynchronizeHdr1.ShortHelp="與企業同步";
+PLMCatalogUI.MatrixSynchronizeHdr1.Help="與企業同步";
+PLMCatalogUI.MatrixSynchronizeHdr1.LongHelp="與企業同步";
+
+// 3951 校正官方漢化 ********************************************************************************
+// 3951 校正官方漢化 Agents
+// 3951 校正官方漢化 ********************************************************************************
+PLMCatalogUI.PLMCatalogInsertChapter.StateSelection.Message="選擇章節";
+PLMCatalogUI.PLMCatalogInsertChapter.StateLaunchPLMNewCmd.Message="屬性評估";
+PLMCatalogUI.PLMCatalogInsertNewFromChapter.StateSelection.Message="選擇章節";
+PLMCatalogUI.PLMCatalogInsertNewFromChapter.StateLaunchPLMChooserCmd.Message="選擇章節";
+PLMCatalogUI.PLMCatalogChoiceModelerCmd.ObjectSelection.Message="選擇目錄";
+PLMCatalogUI.PLMCatalogChoiceModelerCmd.ModelerChooserState.Message="選擇實體建模器和類型";
+PLMCatalogUI.PLMCatalogAddPLMItemCmd.StateLaunchPLMChooserCmd.Message="選擇現有實體";
+PLMCatalogUI.PLMCatalogAddPLMItemCmd.ObjectSelection.Message="選擇參考";
+
+
+// 3951 校正官方漢化 ********************************************************************************
+// 3951 校正官方漢化 Messages
+// 3951 校正官方漢化 ********************************************************************************
+ReferenceInsertNewChapterNotAllowed.Title="插入新章節 - 報告";
+ReferenceInsertNewChapterNotAllowed.Msg="選擇無效。插入新章節不在非目錄參考和企業目錄/章節上。";
+
+
+// 3951 校正官方漢化 ********************************************************************************
+// 3951 校正官方漢化 Error Messages
+// 3951 校正官方漢化 ********************************************************************************
+// 3951 校正官方漢化UpdateReferenceToNewVersionSelection.Title = "Update Reference Version - Report";
+// 3951 校正官方漢化UpdateReferenceToNewVersionSelection.Msg   = "Selection is not valid.\nUpdate Reference Version cannot be applied to folder.";
+
+RootCopyNotAllowed.Title="復制 - 報告";
+RootCopyNotAllowed.Msg="選擇無效。\n“復制”對根目錄或獨立項目均不適用。";
+
+CutNotAllowed.Title="剪切 - 報告";
+// 3951 校正官方漢化CutNotAllowed.Msg   = "Selection is not valid.\nCut is available neither on Root Catalog nor on alone Item.";
+CutNotAllowed.Msg="選擇無效。\n“剪切”對目錄或企業章節或獨立項目均不適用。";
+
+ReferencePasteNotAllowed.Title="參考粘貼 - 報告";
+ReferencePasteNotAllowed.Msg="選擇無效。\n“粘貼”對此目標不適用。";
+
+ClipboardEmpty.Title="粘貼 - 報告";
+ClipboardEmpty.Msg="無法應用命令。\n剪貼板為空。";
+
+CopyPasteStandardFailed.Title="粘貼標準 - 報告";
+CopyPasteStandardFailed.Msg="因下列某種原因無法執行操作：\n - 可能已修改的參考已附加到舊父級目錄之下的結構 \n - 可能已修改的參考已附加到新父級目錄之下的結構。\n";
+
+CopyPasteStructureFailed.Title="粘貼結構 - 報告";
+CopyPasteStructureFailed.Msg="無法執行操作，\n因為可能已修改的參考已附加到新父級目錄之下的結構。\n";
+
+CutPasteFailed.Title="移動 - 報告";
+CutPasteFailed.Msg="因下列某種原因無法執行操作：\n - 可能已修改的參考已附加到舊父級目錄之下的結構 \n - 可能已修改的參考已附加到新父級目錄之下的結構。\n";
+
+PasteSpecialNotAllowed.Title="選擇性粘貼 - 報告";
+PasteSpecialNotAllowed.Msg="“選擇性粘貼”只能在“復制”之后應用。";
+
+PasteReferenceOnRoot.Title="粘貼 - 報告";
+PasteReferenceOnRoot.Msg="無法在根目錄上粘貼參考。";
+
+RootDeleteNotAllowedInWindow.Title="目錄根刪除 - 報告";
+RootDeleteNotAllowedInWindow.Msg="在該窗口中，不可以刪除根目錄。\n可以從結果窗口中刪除它。\n在 VPLM 中，不可以刪除企業目錄、章節或項目。";
+
+RemoveSuppDoc.Msg="無法刪除支持文檔。\n要將其從目錄中移除，請先將其分離。";
+RemoveNonVPMControlledItem.Msg="在 VPLM 中，不可以刪除企業項目。";
+RemoveNonVPMControlledChapter.Msg="在 VPLM 中，不可以刪除企業章節。";
+RemoveCatalog.Msg="在該窗口中，不可以刪除根目錄。\n可以從結果窗口中將其刪除。";
+RemoveNotPossible.Msg="不可以刪除選定對象。";
+
+ConfirmDelete.Title="刪除章節和/或參考";
+ConfirmDeleteObject.Msg="將會刪除選定章節（或項目）以及其下的所有章節和項目，不會再附加參考。";
+ConfirmDeleteReference.Msg="不會再附加參考。";
+ConfirmDelete.Msg="無法完成該操作。\n是否繼續？";
+
+ReferenceInsertNewNotAllowed.Title="插入新章節 - 報告";
+ReferenceInsertNewNotAllowed.Msg="選擇無效。插入新章節不在非目錄參考和企業目錄/章節上。";
+
+ReferenceInsertNewFromNotAllowed.Title="從章節插入新項目 - 報告";
+ReferenceInsertNewFromNotAllowed.Msg="選擇無效。“從章節插入新項目”對附加的參考不適用。";
+
+InsertFailed.Title="插入章節 - 報告";
+InsertFailed.Msg="無法執行操作，因為參考可能已修改成父級文件夾之下的結構。\n";
+
+InsertNewFromFailed.Title="從章節插入新項目 - 報告";
+InsertNewFromFailed.Msg="因以下某種原因無法執行操作：\n - 可能已修改的參考已附加至舊父級文件夾之下的結構 \n - 可能已修改的參考已附加至新父級文件夾之下的結構。\n";
+
+AttachReferenceFailed.Title="插入現有參考 - 報告";
+AttachReferenceFailed.Msg="無法執行操作，因為參考可能已修改。\n";
+
+AttachReferenceNotAllowedBecauseOfDWS.Title="插入項目參考 - 報告";
+AttachReferenceNotAllowedBecauseOfDWS.Msg="無法將屬于設計工作區的參考分類。";
+
+DetachReferenceFailed.Title="分離參考 - 報告";
+DetachReferenceFailed.Msg="無法執行操作 \n因為已修改的參考可能已鏈接至當前參考。\n";
+
+AddExistingReferenceInvalidSelection.Title="添加現有參考 - 報告";
+AddExistingReferenceInvalidSelection.Msg="選擇無效。\n“添加現存參考”只能應用于非根章節。";
+
+UpdateReferenceToNewVersionLatestVersion.Title="更新為最新版本 - 報告";
+UpdateReferenceToNewVersionLatestVersion.Msg="選定參考已是最新版本 \n未執行任何操作。";
+
+UpdateReferenceToNewVersionLatestVersionFailed.Title="更新為最新版本 - 報告";
+UpdateReferenceToNewVersionLatestVersionFailed.Msg="無法執行操作 \n因為可能已修改的參考已附加到新父級文件夾之下的結構。\n";
+
+AttachRefFailedDeletedOrNotVisibleChapter.Title="插入項目 - 報告";
+AttachRefFailedDeletedOrNotVisibleChapter.Msg="無法將參考或展示附加到已刪除的或不再可讀的章節。";
+
+AddChapterFailedDeletedOrNotVisibleParent.Title="插入章節 - 報告";
+AddChapterFailedDeletedOrNotVisibleParent.Msg="無法插入新章節。\n父級已刪除或不再可讀。";
+
+MaxNameLengthError.Title="創建失敗";
+MaxNameLengthError.Msg="目錄/章節創建而名稱長度而失敗。\n請嘗試較短的名稱。";
+
+CannotDeleteEnterpriseCatalog.Request="";
+CannotDeleteEnterpriseCatalog.Diagnostic="在 VPM 客戶端會話中無法刪除實體。";
+CannotDeleteEnterpriseCatalog.Advice="刪除此實體（創建時使用的客戶端會話相同）。";
+
+// 3951 校正官方漢化 ********************************************************************************
+// 3951 校正官方漢化 Containers in contextual menus
+// 3951 校正官方漢化 ********************************************************************************
+// 3951 校正官方漢化To be removed with runtime flag NewCatalogMenu
+CatalogInsert="目錄";
+ChapterInsert="章節";
+
+Catalog="目錄";
+Chapter="章節";
+Insert="插入";
+CatalogKeyword="項目";
+
+// 3951 校正官方漢化GJI - To be changed after switch to NewCatalogMenu
+AddNewFrom="插入新章節，從";
+AddExistingReferenceChooser="插入項目：參考";
+AddExistingRepresentationChooser="插入項目：展示";
+AddExistingPersistentQuery="插入持久查詢";
+
+PLMCatalogUI.PLMCatalogAddExistingFeatureCmd.SelectExternalFeature.Message="選擇外部特征";
+SelectExtFeature="請通過在其他編輯器中選擇目標完成插入特征命令，或按 Esc 鍵取消此命令";
+PLMCatalogUI.PLMCatalogAddExistingFeatureCmd.SelectChapter.Message="選擇章節";
+
+PLMCatalogUI.CatalogRefToNewVersion.Title="替換為/插入最新版本";
+PLMCatalogUI.CatalogRefToNewVersion.Help="替換為/插入最新參考版本";
+PLMCatalogUI.CatalogRefToNewVersion.ShortHelp="替換為或插入選定參考的最新版本";
+PLMCatalogUI.CatalogRefToNewVersion.LongHelp="替換為或插入選定參考的最新版本";
+
+ERR_DOCUMENT_ATTACHED="文檔已附加到章節。每個章節只能有一個支持文檔。";
+DuplicateCatalogId="無法創建目錄，標識符已被占用。";
+DuplicateChapterId="無法創建章節，標識符已被占用。";
+DetachReferencePQFailed="無法執行操作，\n因為選定項目已被持續查詢。";
+AttachRefNotAllowedOnEnterprise="選擇無效。插入新項目不在企業章節上。";
+AttachPQNotAllowedOnEnterprise="選擇無效。插入新持久查詢不在企業章節上。";
+AttachRefNotAllowedOnDescription="選擇無效。請選擇章節并執行此命令。";
+LaunchFilterNotAllowedOnDescription="選擇無效。請選擇目錄或章節。";
+
+// 3951 校正官方漢化Drag and drop error messages
+FLDObjsDnDToChapNoAllowed="無法在目錄或章節之下丟棄此類型的對象。";
+DnDNotAllowedOnEnterprise="無法在企業目錄/章節之下插入項目";
+
+// 3951 校正官方漢化Deletion of items locked by someone other than current users are forbidden.
+CannotDeleteLockedItem="無法刪除一個或多個項目，因為它們被以下用戶鎖定：\n/P1\n/P2\n/P3\n/P4\n/P5";
+
+// 3951 校正官方漢化Part Usage HL
+NoUsageData="未找到使用數據。";
+// 3951 校正官方漢化Warning :the 3 following tags should only contain utf8 chars because they are displayed in an html web page
+PartUsageForChapter="章節的部分使用： ";
+XSL_ItemName="項目名稱";
+XSL_Usage="使用";
+// 3951 校正官方漢化
+PartUsageReportError="零件使用報告錯誤：\n/P1\n/P2\n/P3\n/P4\n/P5";
+ProcessedMsg="已處理";

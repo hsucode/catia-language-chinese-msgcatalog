@@ -1,0 +1,41 @@
+// 3951 校正官方漢化 CATDlgNotify messages
+
+NoResourcesWithIOError.Title = "不能 find Resources with IO定義";
+NoResourcesWithIOError.Message = "錯誤: 不能 find Resources which can Set IO, Define IO for the Devices that Set IO first";
+
+IOStateAlreadyDefined.Title = "信號-重定義";
+IOStateAlreadyDefined.Message = "警告: Signal已經存在. Cannot create with same Signal 名稱";
+
+IOStateWithNumberAlreadyDefined.Title = "信號-重定義";
+IOStateWithNumberAlreadyDefined.Message = "錯誤: Signal已經存在 with this IO Number. Cannot create with same Signal number";
+
+EmptyIOState.Title = "信號- Empty";
+EmptyIOState.Message = "錯誤: Signal name cannot be blank";
+
+CannotFindSetResource.Title = "不能發現 Resource Setting IO";
+CannotFindSetResource.Message = "警告:  Cannot find the Resource for which this Wait is performed. Either it is removed from the CATProcess或 the IO is removed from that Resource. Cannot Simulate!!";
+
+NoIZoneDefined.Title = "不能發現 Defined Interefrence 區域";
+NoIZoneDefined.Message = "錯誤: Cannot Create EnterZone或 ClearZone Activities without一個Interference Zone定義";
+
+IZoneNameAlreadyDefined.Title = "Interefrence Zone已經存在";
+IZoneNameAlreadyDefined.Message = "錯誤: Interference Zone with this Name已經存在. Cannot create with same name again.";
+
+CannotDeleteIO.Title = "刪除Signal </P01>";
+CannotDeleteIO.Message = "錯誤: Cannot Delete </P01> Signal as its being利用the Tasks[Logics]";
+
+CannotModifyIZItems.Title = "修改 信號";
+CannotModifyIZItems.Message = "錯誤: Cannot Modify Interference Zone related Signals";
+
+NoResourceIODefinition.Title = "No Resources with IO定義";
+NoResourceIODefinition.Message = "錯誤: Cannot find any resources with IO定義";
+
+NoIOUsedInSelectedTasks.Title = "No IO Usage in Selected 任務";
+NoIOUsedInSelectedTasks.Message = "錯誤: Tasks Selected do不use any IO動作";
+
+DuplicateSensor.Title = "Duplicate 傳感器";
+DuplicateSensor.Message = "錯誤: Sensor with this name已經存在";
+
+LogicCompileFailure.Title = "Logic Compile Failure";
+LogicCompileFailure.Message = "Logic created could不be compiled correctly - Unknown compilation 錯誤";
+

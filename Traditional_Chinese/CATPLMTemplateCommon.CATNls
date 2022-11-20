@@ -1,0 +1,98 @@
+Components="部件";
+Links="鏈接";
+Inputs="輸入";
+MetaInputs="元輸入";
+Parameters="參數";
+Properties="特性";
+Models="已加載的部件";
+NotARep="您必須選擇位于展示中的對象";
+NotADuplicatedComponent="您必須選擇位于已復制部件中的對象";
+Load="單擊以加載部件";
+
+ChangeComponentList="在模板中更改要復制的部件列表";
+AddComponent="在模板中添加要復制的根";
+RemoveComponent="在模板中移除要復制的根";
+ChangeInputName="更改模板的輸入的名稱";
+AddInputs="在模板中添加輸入";
+AddParameters="在模板中添加已發布的參數";
+ChangeParameterName="更改模板參數的名稱";
+RemoveInputs="移除模板的輸入";
+RemoveParameters="移除模板的參數";
+CannotDuplicateStandard="無法復制部件 /P1，因為它是標準部件。它已作為“要替換”添加到已處理部件。";
+CannotAddSelectedObjectToTemplate="無法將 /P1 添加到模板定義，因為它不受 PLM 模板支持，或您沒有處理此對象所需的許可證。";
+CannotAddSelectedObjectToTemplateBecauseNotSaved="無法將 /P1 添加到模板定義，因為它未在數據庫中傳播。請先傳播它，然后再將其添加到模板。";
+CannotDuplicateParentReplaced="無法將部件 /P1 添加到已處理部件，因為它是已替換部件的子級";
+CannotSetObjectAsToReplace="無法將 /P1 設置為“要替換”。";
+BecauseOfLifeCycle="它的生命周期受其所有者控制。";
+BecauseImpossibleToLoadComponent="無法正確加載其某個子部件。";
+BecauseBadPointing="已從未在根級別指向發布的部件 /P1 中檢測到鏈接。";
+BecauseNotDuplicated="/P1 正指向已替換的部件，但未被模板復制。";
+BecausePointingRefusesReplace="/P1 正指向已替換的部件，但不允許進行替代。";
+BecauseAggregatingRefusesReplace="/P1 集合了已替換的部件，但不允許進行替代。";
+ComponentIsNotReplaceCompliant="選定部件不符合替換條件。";
+RemoveAttributes="移除模板的屬性";
+AddAttribute="在模板中添加屬性";
+ChangeAction="更改對模板根的操作";
+ChangeBehavior="更改對模板部件的行為";
+ChangeLinkAction="更改對鏈接的操作";
+AddComment="在輸入或參數上添加備注";
+
+IdChooserRef="選擇要插入到模板中的參考";
+IdChooserRep="選擇要插入到模板中的展示";
+CompReplaceChooserRep="選擇要替換原始展示的展示";
+CompReplaceChooserRef="選擇要替換原始參考的參考";
+Template="模板";
+RootAction="要執行的操作";
+ComponentBehavior="實例化時的行為";
+
+From="從";
+To="到";
+
+ClickToLoad="單擊以加載 /P1";
+InstantiationTemplate="PLM 模板實例化命令";
+DefinitionTemplate="PLM 模板定義編輯器";
+CloseInstantiationCommand="關閉 PLM 模板實例化命令";
+CloseDefinitionEditor="關閉 PLM 模板定義編輯器";
+ChooserInstantiation="選擇要實例化的模板";
+Loaded="已加載展示 /P1，因此可以選擇輸入";
+Information="信息";
+InstantiationInfo="此模板的實例化已復制數據庫中的數據。\n即使不保存打開的模型，此數據也將存在于數據庫中，其中所有部件名稱均使用 \"ToDelete:\" 作為前綴。\n";
+SelectElementContainingInputs="在 PLM 模板定義樹中選擇包含輸入的元素。\n該元素必須標記為“已復制”。";
+SelectElementContainingParameters="在 PLM 模板定義樹中選擇包含參數的元素。\n該元素必須標記為“已復制”。";
+ComponentsAutomaticallyNotProcessed="已自動將以下部件從“已處理”中移除，以確保實例化時的完整性：";
+ComponentsAutomaticallyDuplicated="已自動將以下部件添加到“已復制”，以確保實例化時的完整性：";
+ComponentsAutomaticallyNotProcessedBecauseReplace="已自動將以下部件從“已處理”中移除，因為它們是已替換部件的子級：";
+
+
+NoName="沒有名稱";
+GiveAName="創建 PLM 知識工程模板時未提供任何名稱";
+NotPKTLicence="許可證或安全性權限無效";
+InvalidLicence="執行此操作需要 PKT 許可證，并且您必須為授權用戶";
+EditProperties="PLM 模板";
+LifeCycleOwner="您剛才添加的對象 /P1 的生命周期已鏈接到其所有者的生命周期。\n因此，已將其所有者添加到已復制的部件";
+InstantiateTemplate="知識工程模板實例化";
+FailedToDeleteMulti="無法刪除以下已復制的部件：\n/P1\n它們的名稱已使用 \"ToDelete:\" 作為前綴";
+FailedToDelete="無法刪除以下已復制的部件：\n/P1\n它的名稱已使用 \"ToDelete:\" 作為前綴";
+RemoveSubInput="從模板的元輸入中移除子輸入";
+AddSubInput="在模板的元輸入中添加子輸入";
+AddMetaInput="在模板中添加元輸入";
+RemoveMetaInput="在模板中移除元輸入";
+CloningNameTruncated="無法使用名稱 \"/P1\" 創建對象。\n名稱被截斷為 \"/P2\"。";
+CloningAttrTruncated="無法使用值 \"/P2\" 為屬性 /P1 賦值。\n值被截斷為 \"/P3\"。";
+NotSavedBeforeUnfolded="導入的文件包含了無法打開的模板。\n只能在啟用“使用映射表”選項時才能執行“導入文檔模板”操作。";
+NotSavedBeforeUnfoldedTitle="導入錯誤";
+CannotInstantiateTemplateWorkspace="連接到工作區時，無法實例化 PLM 模板";
+UpdateFailedOnPreview="因為更新失敗，將不會顯示預覽。\n更新引擎返回以下消息：";
+
+IsParentOfComponent="集合規則";
+OnceInstantiable="通用生命周期規則";
+RelationBetween="影響規則";
+
+PictureNameContainingInvalidChar="為進行圖片檢索指定其中一個字段包含無效字符。";
+PictureNotFound="根據當前信息（項目，數據 zip，圖片名稱），未找到與此模板關聯的圖片。";
+
+CannotDeleteTemplate.Diagnostic="無法刪除選定的模板，因為其已被鎖定或當前處于編輯狀態。";
+CannotDeleteTemplate.Advice="嘗試解鎖對象或關閉任何可能打開此對象的編輯器。";
+CannotDeleteTemplate.Request="";
+TemplateUnavailableInWorkspace="連接到 Designer Workspace 時，不允許進行此操作。";
+

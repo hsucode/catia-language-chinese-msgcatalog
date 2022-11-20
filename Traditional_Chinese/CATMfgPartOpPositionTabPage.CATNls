@@ -1,0 +1,158 @@
+// 3951 校正官方漢化------------------------------------------------------------------------    
+// 3951 校正官方漢化 Copyright DASSAULT SYSTEMES 2009
+// 3951 校正官方漢化 ------------------------------------------------------------------------    
+// 3951 校正官方漢化 Pour des infos pertinentes la signification des differentes messages :
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+// 3951 校正官方漢化    a- Title = Nom de la commande affich?
+// 3951 校正官方漢化/              REGLES: - Commencer par un verbe ?l'infinitif// 3951 校正官方漢化//                      - Min/maj : chaque mot doit commencer par une majuscule.// 3951 校正官方漢化//                  // 3951 校正官方漢化//    b- Help = Help affich?en bas ?gauche du Frame CAT// 3951 校正官方漢化
+//              REGLES: - Phrase normale au niveau des min/ma// 3951 校正官方漢化
+// 3951 校正官方漢化
+//    c- ShortHelp = Bulle affich// 3951 校正官方漢化
+//              REGLES: - Phrase normale au niveau des min/ma// 3951 校正官方漢化
+// 3951 校正官方漢化
+//    d- LongHelp = Help affich?en selectionnant le Menu principal 'Help' + What's Thi// 3951 校正官方漢化?
+//              REGLES: - Phrase normale au niveau des min/m// 3951 校正官方漢化.
+//						- SOYEZ BAVARD !!// 3951 校正官方漢化
+
+// ------------------------------------------------------------------------    
+
+NewSetup="添加新設置";
+Help="定義設置。";
+
+PositionProp.PositionNameEditor.ShortHelp="設置位置的名稱";
+PositionProp.PositionNameEditor.LongHelp="定義此設置位置的名稱。";
+PositionProp.PositionNameEditor.Help="定義此設置位置的名稱。";
+
+PositionProp.PositionDown.ShortHelp="修改順序";
+PositionProp.PositionDown.LongHelp="修改此設置位置的順序。";
+PositionProp.PositionDown.Help="修改此設置位置的順序。";
+
+PositionProp.PositionUp.ShortHelp="修改順序";
+PositionProp.PositionUp.LongHelp="修改此設置位置的順序。";
+PositionProp.PositionUp.Help="修改此設置位置的順序。";
+
+PositionProp.PositionRemove.Short"移除"move";
+PositionProp.PositionRemove.LongHelp="移除此設置位置。";
+PositionProp.PositionRemove.Help="移除此設置位置。";
+// 3951 校正官方漢化
+
+//Product
+IProduct.Help="選擇設置裝配體，或移除與設置裝配體相關的所有幾何圖形";
+IProduct.LongHelp="能夠將設置裝配體關聯到零件操作，\n或移除由零件操作聚集的加工對象的幾何圖形鏈接。";
+ProductEdt.LongHelp="能夠將設置裝配體關聯到零件操作，\n或移除由零件操作聚集的加工對象的幾何圖形。";
+No_product_selected=" 未選定設置裝配體";
+SetupAssembly_Short_Help="設置裝配體";
+SetupAssembly_Short_Help_RemoveLinks="移除與設置裝配體相關的幾何圖形";
+RemoveLinksPanelTitle="移除設置裝配體";
+RemoveLinksPanelText="是否確實要移除與設置裝配體相關的所有幾何圖形鏈接？"// 3951 校正官方漢化
+
+// Page Geomet// 3951 校正官方漢化e
+// -------------
+
+GeometryNotFound="未找到幾何圖形";
+
+IPart.ShortHelp="設計零件";
+IPart.LongHelp="允許訪問用于選擇設計零件的幾何圖形。";
+IPart.Help="選擇設計零件幾何圖形";
+PartCmb.LongHelp="允許訪問用于選擇設計零件的幾何圖形。";
+No_designs_selected=" 未選定設計零件";
+1_design_selected="  已選定設計零件";
+_designs_selected=" 已選定設計零件";
+Designs_no_found=" 未找到設計零件";
+
+IPartEditor.LongHelp="允許訪問用于選擇設計零件的幾何圖形。";
+IPartEditor.Help="選擇設計零件幾何圖形";
+
+IStock.ShortHelp="坯料";
+IStock.LongHelp="允許訪問用于選擇坯料的幾何圖形。";
+IStock.Help="選擇坯料幾何圖形";
+StockCmb.LongHelp="允許訪問用于選擇坯料的幾何圖形。 
+例如，這可用于材料移除模擬。";
+No_stocks_selected=" 未選定坯料";
+1_stock_selected="  已選定坯料";
+_stocks_selected=" 已選定坯料";
+Stocks_no_found=" 未找到坯料";
+
+IStockEditor.LongHelp="允許訪問用于選擇坯料的幾何圖形。";
+IStockEditor.Help="選擇坯料幾何圖形";
+
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyLabel.Title="坯料精確度： ";
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyLabel.ShortHelp="圖片/視頻模擬的坯料精確度";
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyLabel.Help="圖片/視頻模擬的坯料精確度";
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyLabel.LongHelp="圖片/視頻模擬的坯料精確度";
+
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyDefault.T"默認值"ault";
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyDefault.ShortHelp="圖片/視頻模擬的默認坯料精確度";
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyDefault.Help="圖片/視頻模擬的默認坯料精確度";
+GlobalGeom.TabContainer.SimulationPage.StockAccuracyDefault.LongHelp="圖片/視頻模擬的默認坯料精確度"// 3951 校正官方漢化
+
+// AutoStock turning
+StockCmb.ContextualStock.AutoStock.Title="自動為車削操作選擇坯料";
+StockCmb.ContextualStock.AutoStock.Help="將為當前車削操作計算坯料并自動選擇坯料";
+StockCmb.ContextualStock.AutoStock.ShortHelp="將為當前車削操作計算坯料并自動選擇坯料。
+手動選擇坯料變為可選。";
+StockCmb.ContextualStock.AutoStock.LongHelp="將為當前車削操作計算坯料并自動選擇坯料。
+手動選擇坯料仍可用，但變為可選選項。
+如果手動選擇坯料，則會將其考慮到操作中。";
+
+IFixt.ShortHelp="Fixtures";
+IFixt.LongHelp="允許訪問用于選擇裝置器的幾何圖形。";
+IFixt.Help="選擇裝置器幾何圖形";
+FixtCmb.LongHelp="允許訪問用于選擇裝置器的幾何圖形。";
+No_fixtures_selected=" 未選定裝置器";
+1_fixture_selected="  已選定裝置器";
+_fixtures_selected=" 已選定裝置器";
+Fixtures_no_found=" 未找到裝置器";
+
+IFixtEditor.LongHelp="允許訪問用于選擇裝置器的幾何圖形。";
+IFixtEditor.Help="選擇裝置器幾何圖形";
+
+ISafety.ShortHelp="安全平面";
+ISafety.LongHelp="允許訪問幾何圖形，以選擇零件操作的全局間隙平面。";
+ISafety.Help="選擇安全平面";
+SafetyCmb.LongHelp="允許訪問幾何圖形，以選擇零件操作的全局間隙平面。";
+No_Safety_selected=" 未選定安全平面";
+1_Safety_selected="  已選定安全平面";
+_Safety_selected=" 已選定安全平面";
+Safety_no_found=" 未找到安全平面";
+
+ISafetyEditor.LongHelp="允許訪問幾何圖形，以選擇零件操作的全局間隙平面。";
+ISafetyEditor.Help="選擇安全平面";
+
+ITraverseBox.ShortHelp="槽輥箱平面";
+ITraverseBox.LongHelp="允許訪問幾何圖形，以選擇定義零件操作的槽輥箱的全局平面。";
+ITraverseBox.Help="選擇槽輥箱平面";
+TraverseBoxCmb.LongHelp="允許訪問幾何圖形，以選擇定義零件操作的槽輥箱的全局平面。";
+No_TraverseBox_selected=" 未選定槽輥箱平面";
+1_TraverseBox_selected="  已選定槽輥箱平面";
+_TraverseBox_selected=" 已選定槽輥箱平面";
+TraverseBox_no_found=" 未找到槽輥箱平面";
+
+ITraverseBoxEditor.LongHelp="允許訪問幾何圖形，以選擇定義零件操作的槽輥箱的全局平面。";
+ITraverseBoxEditor.Help="選擇槽輥箱平面";
+
+ITransition.ShortHelp="轉換平面";
+ITransition.LongHelp="允許訪問幾何圖形，以選擇零件操作的全局轉換平面。";
+ITransition.Help="選擇轉換平面";
+TransitionCmb.LongHelp="允許訪問幾何圖形，以選擇零件操作的全局轉換平面。";
+No_Transition_selected=" 未選定轉換平面";
+1_Transition_selected="  已選定轉換平面";
+_Transition_selected=" 已選定轉換平面";
+Transition_no_found=" 未找到轉換平面";
+
+ITransitionEditor.LongHelp="允許訪問幾何圖形，以選擇零件操作的全局轉換平面。";
+ITransitionEditor.Help="選擇轉換平面";
+
+IRotary.ShortHelp="旋轉平面";
+IRotary.LongHelp="允許訪問幾何圖形，以選擇零件操作的全局旋轉平面。";
+IRotary.Help="選擇旋轉平面";
+RotaryCmb.LongHelp="允許訪問幾何圖形，以選擇零件操作的全局旋轉平面。";
+No_Rotary_selected=" 未選定旋轉平面";
+1_Rotary_selected="  已選定旋轉平面";
+_Rotary_selected=" 已選定旋轉平面";
+Rotary_no_found=" 未找到旋轉平面";
+
+IRotaryEditor.LongHelp="允許訪問幾何圖形，以選擇零件操作的全局旋轉平面。";
+IRotaryEditor.Help="選擇旋轉平面"平面";
+

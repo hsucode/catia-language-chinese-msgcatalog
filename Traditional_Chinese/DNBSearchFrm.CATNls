@@ -1,0 +1,57 @@
+// 3951 校正官方漢化*****************************************************************************
+// 3951 校正官方漢化  SEARCH FRAME (SEAM SEARCH)
+// 3951 校正官方漢化*****************************************************************************
+Title="Search";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Labels/Captions
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+lblMaxDistance.Title="Distance";
+lblSearchOrder.Title="順序";
+lblSearchOffset.Title="Offset";
+lblDriveType.Title="驅動類型";
+lblDriveDirection.Title="Direction";
+btnSetSearchDirection.Title="設置方向";
+lblOrientation.Title="Orientation";
+btnOrientationConst.Title="Fixed";
+btnOrientationVar.Title="可變";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Short Help
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+edtMaximum.ShortHelp="輸入/修改最大搜索距離";
+cboSearchOrder.ShortHelp="選擇搜索順序";
+cboDriveType.ShortHelp="選擇驅動類型 - 與曲面垂直或在選定方向上";
+edtDriveDirection.ShortHelp="搜索方向";
+edtOffset.ShortHelp="搜索偏移";
+btnOrientationConst.ShortHelp="選擇參考曲面期間保持焊槍方向不變";
+btnOrientationVar.ShortHelp="調整焊槍方向以使刀具向量與二等分線對齊";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Long Help
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Parameter 默認值
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+DriveTypeNormal="Normal";
+DriveTypeDirection="Direction";
+
+SearchOrderBWS="基底-墻體-側面";
+SearchOrderBSW="基底-側面-墻體";
+SearchOrderWSB="墻體-基底-側面";
+SearchOrderWSB="墻體-側面-基底";
+SearchOrderSBW="側面-基底-墻體";
+SearchOrderSWB="側面-墻體-基底";
+
+MaxDistanceMinimum="0.0";
+MaxDistanceMaximum="100000";
+MaxDistanceDefault="100.0";
+MaxDistanceStep="100.0";
+
+SearchOffsetMinimum="0.0";
+SearchOffsetMaximum="100000";
+SearchOffsetDefault="0.0";
+SearchOffsetStep="10.0";
+

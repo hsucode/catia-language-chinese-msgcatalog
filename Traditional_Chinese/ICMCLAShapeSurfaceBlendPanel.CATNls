@@ -1,0 +1,244 @@
+DialogBoxTitle="橋接曲面";
+
+// Type
+Frame_Type.Title="橋接類型";
+Combo_Type.Single="單個";
+Combo_Type.Global="全局";
+Frame_Type.LongHelp="單個：移動框架選項卡不可用。
+全局：移動框架選項卡可用。";
+Frame_Type.ShortHelp="移動框架：是 - 否";
+Frame_TangentLengthModes.Title="切線長度";
+
+// Selection
+Frame_Selection1.Title="側邊 1";
+Label_Edge1.Title="邊線 1： ";
+Label_Edge1.LongHelp="橋接曲面起始于一組曲線，通常這些曲線為一組曲面的邊線。
+這些邊線必須是 GO 連續。
+可使用上下文菜單。
+您可以使用選擇窗口進行多選擇操作。";
+Label_Edge1.ShortHelp="側邊 1 的曲線、邊線";
+Frame_Selection2.Title="側邊 2：";
+Label_Edge2.Title="邊線 2： ";
+Label_Edge2.LongHelp="橋接曲面終止于一組曲線，通常這些曲線為一組曲面的邊線。
+這些邊線必須是 GO 連續。
+可使用上下文菜單。
+您可以使用選擇窗口進行多選擇操作。";
+Label_Edge2.ShortHelp="側邊 2 的曲線、邊線";
+
+//Tab Options
+TabPage_Option.Title="選項";
+
+//Frame Side1
+Frame_Edge1.Title="側邊 1";
+Frame_Edge1.LongHelp="側邊 1 選項的設置與側邊 2 選項無關。
+可為起始邊線和終止邊線設置邊線連續";
+
+//Continuity
+Frame_Continuity1.Title="連續";
+Frame_Continuity1.LongHelp="連續作用于橋接曲面與側邊 1 曲面之間。
+如果僅選定并未基于曲面的曲線，則只有 G0 可用。
+連續階數控制若干控制點。
+G0 需要 1 行控制點，G1 需要 2 行控制點，G2 需要 3 行控制點，G3 需要 4 行控制點。";
+Frame_Continuity1.ShortHelp="到側邊 1 曲面的連續";
+Label_Align1.Title="對齊： ";
+Combo_Align1.Standard="標準";
+Combo_Align1.Edges_Start_End="邊線起點/終點";
+Combo_Align1.Edges_All="所有邊線";
+Combo_Align1.Linear="線性";
+Combo_Align1.Auto="自動";
+Continuity_1.Button_G0.LongHelp="從橋接曲面到側邊 1 曲面的 G0 連續。";
+Continuity_1.Button_G0.ShortHelp="到側邊 1 的 G0";
+Continuity_1.Button_G1.LongHelp="從橋接曲面到側邊 1 曲面的 G1 連續";
+Continuity_1.Button_G1.ShortHelp="到側邊 1 的 G1";
+Continuity_1.Button_G2.LongHelp="從橋接曲面到側邊 1 曲面的 G2 連續";
+Continuity_1.Button_G2.ShortHelp="到側邊 1 的 G2";
+Continuity_1.Button_G3.LongHelp="從橋接曲面到側邊 1 曲面的 G3 連續";
+Continuity_1.Button_G3.ShortHelp="到側邊 1 的 G3";
+
+CheckButton_Begin1.LongHelp="激活為從橋接曲面的起始邊線到側邊 1 曲面合適邊線選定的連續階數";
+CheckButton_Begin1.ShortHelp="起始邊線連續";
+Label_BeginIcon1.LongHelp="從橋接曲面的起始邊線到側邊 1 曲面合適邊線的連續階數";
+Label_BeginIcon1.ShortHelp="起始邊線連續";
+Continuity_Beg1.Button_G0.LongHelp="從橋接曲面的起始邊線到側邊 1 曲面合適邊線的 G0 連續";
+Continuity_Beg1.Button_G0.ShortHelp="起始邊線的 G0";
+Continuity_Beg1.Button_G1.LongHelp="從橋接曲面的起始邊線到側邊 1 曲面合適邊線的 G1 連續";
+Continuity_Beg1.Button_G1.ShortHelp="起始邊線的 G1";
+Continuity_Beg1.Button_G2.LongHelp="從橋接曲面的起始邊線到側邊 1 曲面合適邊線的 G2 連續";
+Continuity_Beg1.Button_G2.ShortHelp="起始邊線的 G2";
+Continuity_Beg1.Button_G3.LongHelp="從橋接曲面的起始邊線到側邊 1 曲面合適邊線的 G3 連續";
+Continuity_Beg1.Button_G3.ShortHelp="起始邊線的 G3";
+CheckButton_End1.LongHelp="激活為從橋接曲面的終止邊線到側邊 1 曲面合適邊線選定的連續階數";
+CheckButton_End1.ShortHelp="終止邊線連續";
+Label_EndIcon1.LongHelp="從橋接曲面的終止邊線到側邊 1 曲面合適邊線的連續階數";
+Label_EndIcon1.ShortHelp="終止邊線連續";
+Continuity_End1.Button_G0.LongHelp="從橋接曲面的終止邊線到側邊 1 曲面合適邊線的 G0 連續";
+Continuity_End1.Button_G0.ShortHelp="終止邊線的 G0";
+Continuity_End1.Button_G1.LongHelp="從橋接曲面的終止邊線到側邊 1 曲面合適邊線的 G1 連續";
+Continuity_End1.Button_G1.ShortHelp="終止邊線的 G1";
+Continuity_End1.Button_G2.LongHelp="從橋接曲面的終止邊線到側邊 1 曲面合適邊線的 G2 連續";
+Continuity_End1.Button_G2.ShortHelp="終止邊線的 G2";
+Continuity_End1.Button_G3.LongHelp="從橋接曲面的終止邊線到側邊 1 曲面合適邊線的 G3 連續";
+Continuity_End1.Button_G3.ShortHelp="終止邊線的 G3";
+LinkButton_Link1.LongHelp="終點的連續階數等于起點的連續階數";
+LinkButton_Link1.ShortHelp="終點連續等于起點連續";
+
+//Frame Support
+Label_Project1.Title="支持面 1： ";
+Label_Project1.LongHelp="如果選定的曲線沒有連接到曲面，則您可以選擇一個支持面。
+支持面以相同的方式作用。
+如果曲面沒有在此支持面上，它將被投影到支持面上。";
+CheckButton_Project1.LongHelp="如果選定的曲線沒有連接到曲面，則您可以選擇一個支持面。
+支持面以相同的方式作用。
+如果曲面沒有在此支持面上，它將被投影到支持面上。";
+CheckButton_Project1.ShortHelp="可選擇支持面";
+
+//Frame Trim Type 1
+Frame_TrimType1.Title="修剪類型";
+Frame_TrimType1.LongHelp="將修剪側邊 1 上的曲面集。
+此修剪可為面修剪或曲面修剪。";
+CheckButton_Trim1.ShortHelp="修剪側邊 1";
+CheckButton_Trim1.LongHelp="修剪側邊 1 上的曲面集";
+RadioButton_TrimTypeFace1.LongHelp="此修剪為面修剪。
+這表示曲面將保留為基礎曲面。";
+RadioButton_TrimTypeFace1.ShortHelp="面修剪";
+RadioButton_TrimTypeSurface1.LongHelp="此修剪為曲面修剪。
+這表示沒有保留基礎曲面。";
+RadioButton_TrimTypeSurface1.ShortHelp="曲面修剪";
+
+//Frame Side 2
+Frame_Edge2.Title="側邊 2";
+Frame_Edge2.LongHelp="側邊 2 選項的設置與側邊 1 選項無關。
+可為起始邊線和終止邊線設置邊線連續";
+
+//Continuity
+Frame_Continuity2.Title="連續";
+Frame_Continuity2.LongHelp="連續作用于橋接曲面與側邊 2 曲面之間。
+如果僅選定并未基于曲面的曲線，則只有 G0 可用。
+連續階數控制控制點數。
+G0 需要 1 行控制點，G1 需要 2 行控制點，G2 需要 3 行控制點，G3 需要 4 行控制點。";
+Frame_Continuity2.ShortHelp="到側邊 1 曲面的連續";
+Label_Align2.Title="對齊： ";
+Combo_Align2.Standard="標準";
+Combo_Align2.Edges_Start_End="邊線起點/終點";
+Combo_Align2.Edges_All="所有邊線";
+Combo_Align2.Linear="線性";
+Combo_Align2.Auto="自動";
+Continuity_2.Button_G0.LongHelp="從橋接曲面到側邊 2 曲面的 G0 連續。";
+Continuity_2.Button_G0.ShortHelp="到側邊 2 的 G0";
+Continuity_2.Button_G1.LongHelp="從橋接曲面到側邊 2 曲面的 G1 連續";
+Continuity_2.Button_G1.ShortHelp="到側邊 2 的 G1";
+Continuity_2.Button_G2.LongHelp="從橋接曲面到側邊 2 曲面的 G2 連續";
+Continuity_2.Button_G2.ShortHelp="到側邊 2 的 G2";
+Continuity_2.Button_G3.LongHelp="從橋接曲面到側邊 2 曲面的 G3 連續";
+Continuity_2.Button_G3.ShortHelp="到側邊 2 的 G3";
+
+CheckButton_Begin2.LongHelp="激活為從橋接曲面的起始邊線到側邊 2 曲面合適邊線選定的連續階數";
+CheckButton_Begin2.ShortHelp="起始邊線連續";
+Label_BeginIcon2.LongHelp="從橋接曲面的起始邊線到側邊 2 曲面合適邊線的連續階數";
+Label_BeginIcon2.ShortHelp="起始邊線連續";
+Continuity_Beg2.Button_G0.LongHelp="從橋接曲面的起始邊線到側邊 2 曲面合適邊線的 G0 連續";
+Continuity_Beg2.Button_G0.ShortHelp="起始邊線的 G0";
+Continuity_Beg2.Button_G1.LongHelp="從橋接曲面的起始邊線到側邊 2 曲面合適邊線的 G1 連續";
+Continuity_Beg2.Button_G1.ShortHelp="起始邊線的 G1";
+Continuity_Beg2.Button_G2.LongHelp="從橋接曲面的起始邊線到側邊 2 曲面合適邊線的 G2 連續";
+Continuity_Beg2.Button_G2.ShortHelp="起始邊線的 G2";
+Continuity_Beg2.Button_G3.LongHelp="從橋接曲面的起始邊線到側邊 2 曲面合適邊線的 G3 連續";
+Continuity_Beg2.Button_G3.ShortHelp="起始邊線的 G3";
+CheckButton_End2.LongHelp="激活為從橋接曲面的終止邊線到側邊 2 曲面合適邊線選定的連續階數";
+CheckButton_End2.ShortHelp="終止邊線連續";
+Label_EndIcon2.LongHelp="從橋接曲面的終止邊線到側邊 2 曲面合適邊線的連續階數";
+Label_EndIcon2.ShortHelp="終止邊線連續";
+Continuity_End2.Button_G0.LongHelp="從橋接曲面的終止邊線到側邊 2 曲面合適邊線的 G0 連續";
+Continuity_End2.Button_G0.ShortHelp="終止邊線的 G0";
+Continuity_End2.Button_G1.LongHelp="從橋接曲面的終止邊線到側邊 2 曲面合適邊線的 G1 連續";
+Continuity_End2.Button_G1.ShortHelp="終止邊線的 G1";
+Continuity_End2.Button_G2.LongHelp="從橋接曲面的終止邊線到側邊 2 曲面合適邊線的 G2 連續";
+Continuity_End2.Button_G2.ShortHelp="終止邊線的 G2";
+Continuity_End2.Button_G3.LongHelp="從橋接曲面的終止邊線到側邊 2 曲面合適邊線的 G3 連續";
+Continuity_End2.Button_G3.ShortHelp="終止邊線的 G3";
+LinkButton_Link2.LongHelp="終點的連續階數等于起點的連續階數";
+LinkButton_Link2.ShortHelp="終點連續等于起點連續";
+
+//Frame Support 
+Label_Project2.Title="支持面 2： ";
+Label_Project2.LongHelp="如果選定的曲線沒有連接到曲面，則您可以選擇一個支持面。
+支持面以相同的方式作用。
+如果曲面沒有在此支持面上，它將被投影到支持面上。";
+CheckButton_Project2.LongHelp="如果選定的曲線沒有連接到曲面，則您可以選擇一個支持面。
+支持面以相同的方式作用。
+如果曲面沒有在此支持面上，它將被投影到支持面上。";
+CheckButton_Project2.ShortHelp="可選擇支持面";
+
+//Frame Trim Type 2
+Frame_TrimType2.Title="修剪類型";
+Frame_TrimType2.LongHelp="將修剪側邊 2 上的曲面集。
+此修剪可為面修剪或曲面修剪。";
+CheckButton_Trim2.ShortHelp="修剪側邊 2";
+CheckButton_Trim2.LongHelp="在創建橋接曲面之后修剪側邊 2 曲面";
+RadioButton_TrimTypeFace2.LongHelp="此修剪為面修剪。
+這表示曲面將保留為基礎曲面。";
+RadioButton_TrimTypeFace2.ShortHelp="面修剪";
+RadioButton_TrimTypeSurface2.LongHelp="此修剪為曲面修剪。
+這表示沒有保留基礎曲面。";
+RadioButton_TrimTypeSurface2.ShortHelp="曲面修剪";
+
+//Frame Shape
+FrameShape.Title="形： ";
+Frame_ShapeDebug.LongHelp="形定義橋接曲面在輪廓之間的運行。
+- 線性形：橋接曲面在輪廓之間以線性方式運行。
+- 本地形：
+- 光順形：
+- 全局形： ";
+Combo_ShapeDebug.ShortHelp="形影響橋接曲面的運行";
+Combo_ShapeDebug.Linear="線性形狀";
+Combo_ShapeDebug.Local="本地形狀";
+Combo_ShapeDebug.Smooth="光順形狀";
+Combo_ShapeDebug.Global="全局形狀";
+Combo_ShapeDebug.LongHelp="轉換類型指定曲面的形，即單獨選定輪廓之間的轉換類型。\n\n-線性形-\n通過計算輪廓之間的線性平均值來得出兩個相鄰輪廓之間的曲面的形。\n\n-本地形-\n在每個給定輪廓的位置，此輪廓在其環境中保持常量，\n然后以光順的方式與下一輪廓合并。\n-光順形-\n此外，兩個相鄰輪廓之間的轉換由下一輪廓定義。\n由此，可避免曲面振蕩。\n\n-全局形-\n由所有選定的輪廓定義兩個相鄰輪廓之間的曲面的形。\n";
+//MovingFrame
+TabPage_MovingFrame.Title="移動框架";
+
+//Coupling
+TabPage_Coupling.Title="耦合";
+
+// . Approximation
+TabPage_Approximation.Title="近似值";
+Frame_EdgeSegmentation.Title="橋接曲面分段";
+Frame_EdgeSegmentation.LongHelp="-單獨脊線- 
+由字段單獨脊線中指定的曲線得出段數。
+-單獨脊線和側邊 1- 
+由字段單獨脊線和側邊 1 中指定的曲線得出段數。
+-單獨脊線和側邊 2- 
+由字段單獨脊線和側邊 2 中指定的曲線得出段數。
+-所有- 
+由字段單獨脊線、側邊 1 和側邊 2 中指定的曲線得出段數。";
+Combo_Segmentation.ShortHelp="定義邊線分段";
+
+ComboProfileSegmentation.LongHelp="首個：
+段數由首個選定的輪廓定義
+最多：
+段數由具備最多段數的輪廓定義。
+所有：
+段數由所有輪廓定義";
+Combo.Spine="單獨脊線";
+Combo.SpineEdge1="單獨脊線和側邊 1";
+Combo.SpineEdge2="單獨脊線和側邊 2";
+Combo.All="所有";
+//*************************************************
+//Frame_Fix1 with Title Options
+Frame_Fix1.Title="選項";
+Frame_Fix1.LongHelp="從橋接曲面的起始和終止邊線到側邊 1 曲面合適邊線的連續階數";
+//Frame_Fix2 with title Options
+Frame_Fix2.Title="選項";
+Frame_Fix2.LongHelp="從橋接曲面的起始和終止邊線到側邊 2 曲面合適邊線的連續階數";
+
+//*************************************************
+Frame_ShapeDebug.Title="形狀";
+
+DomainMode.Title="域模式已更改為強制單域。
+不再支持域模式的使用首個域。";
+
+Combo_TangentLength.Auto="自動";
+Combo_TangentLength.Constant="常量";
+Combo_TangentLength.Ratio="比率";
+

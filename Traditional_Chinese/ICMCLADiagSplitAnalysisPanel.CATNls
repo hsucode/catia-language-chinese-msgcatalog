@@ -1,0 +1,214 @@
+DialogBoxTitle="分割分析";
+
+
+//Selection
+
+DisplaySetSelection="顯示集： ";
+
+ElementSelection="元素： ";
+
+ComboSelectionType.ShortHelp="選擇類型";
+ComboSelectionType.LongHelp="- 元素 -
+  為單個元素選擇顯示選擇字段。
+  分析將應用到選定的元素
+- 顯示集 -
+  顯示包含所有定義的顯示集的組合框。
+  當選擇一個顯示集，此集中儲存的所有元素均將作為分析輸入。
+  如果選定的顯示集被修改，則分析也將自動更新。";
+
+//old
+LabelElements.LongHelp="選擇要分析的一組曲面。
+曲面沒有連接。
+可使用上下文菜單。
+可使用選擇包。";
+LabelElements.ShortHelp="要分析的曲面";
+LabelElements.Title="元素： ";
+
+
+//Direction
+
+FrameDirection.Title="方向";
+FrameDirection.LongHelp="分割方向。
+分割方向和分割曲線上某點處的曲面法線成 90 度角。
+可通過以下方式定義方向
+- 上下文菜單，
+- X、Y 和 Z 軸，或
+- 編輯方向對話框。
+可還原定義的方向。";
+
+CheckButtonSelection.LongHelp="開啟：
+通過選擇字段定義關聯的方向。
+要定義方向，請選擇一個元素或從上下文菜單選擇一個選項。
+選項 X、Y、Z 和編輯不可用。
+關閉：
+使用選項 X、Y、Z 或編輯定義固定（靜態）方向（默認）。";
+CheckButtonSelection.ShortHelp="關聯（開啟）或靜態（關閉）方向";
+
+InvisibleFrameSelection.LongHelp="僅當復選按鈕開啟時可用。
+定義關聯方向。
+要定義方向，請選擇一個元素或從上下文菜單選擇一個選項。
+選項 X、Y、Z 和編輯不可用。";
+
+PushButtonDirectionX.LongHelp="方向為模型坐標系的 X 軸。";
+PushButtonDirectionX.ShortHelp="X 方向";
+PushButtonDirectionX.Title="X";
+
+PushButtonDirectionY.LongHelp="方向為模型坐標系的 Y 軸。";
+PushButtonDirectionY.ShortHelp="Y 方向";
+PushButtonDirectionY.Title="Y";
+
+PushButtonDirectionZ.LongHelp="方向為模型坐標系的 Z 軸。";
+PushButtonDirectionZ.ShortHelp="Z 方向";
+PushButtonDirectionZ.Title="Z";
+
+PushButtonEditDirection.LongHelp="已激活編輯方向對話框。";
+PushButtonEditDirection.ShortHelp="編輯方向";
+PushButtonEditDirection.Title="編輯";
+
+CheckButtonRevertDirection.LongHelp="已還原選定的方向。";
+CheckButtonRevertDirection.ShortHelp="還原方向";
+
+
+//Symmetry Plane
+
+FrameSymmetry.LongHelp="鏡像選定的幾何圖形。";
+FrameSymmetry.Title="對稱平面";
+
+
+//Angle
+
+FrameAngle.LongHelp="分割角度分割正區域（默認為綠色）和負區域（默認為紅色）內的所有曲面。";
+FrameAngle.Title="角度";
+
+LabelDraftAngle.LongHelp="拔模曲面的寬度由拔模角度確定。";
+LabelDraftAngle.ShortHelp="拔模角度";
+LabelDraftAngle.Title="拔模角度： ";
+
+SliderDraftAngle.LongHelp="拔模角度加大，無底切的區域減小。";
+SliderDraftAngle.ShortHelp="拔模角度的寬度";
+
+LabelPos.LongHelp="正區域 - 無底切。
+角度小于 90 度。";
+LabelPos.ShortHelp="無底切";
+LabelPos.Title="+ 正";
+
+ColorButtonDraftAnglePos.LongHelp="可在顏色窗口定義正區域的顯示顏色";
+ColorButtonDraftAnglePos.ShortHelp="正區域";
+
+LabelNeg.LongHelp="負區域 - 底切。
+角度大于 90 度。";
+LabelNeg.ShortHelp="底切";
+LabelNeg.Title="- 負";
+
+ColorButtonDraftAngleNeg.LongHelp="可在顏色窗口定義負區域的顯示顏色。";
+ColorButtonDraftAngleNeg.ShortHelp="負區域";
+
+LabelTolAngle.LongHelp="公差角度定義分割曲線在模型工具上的公差范圍。";
+LabelTolAngle.ShortHelp="公差角度";
+LabelTolAngle.Title="公差角度： ";
+
+SliderTolAngle.LongHelp="公差角度定義分割曲線在模型工具上的公差范圍。";
+SliderTolAngle.ShortHelp="公差角度的寬度";
+
+ColorButtonTolAnglePos.LongHelp="定義淡墨區域的顏色。";
+ColorButtonTolAnglePos.ShortHelp="淡墨區域";
+
+
+//Display Options
+
+FrameDisplayOptions.LongHelp="- 著色 -
+  區域填充有顏色。
+- 曲線 -
+  顯示分割曲線。
+- 網格 -
+  網格參數著色。";
+FrameDisplayOptions.Title="顯示選項";
+
+//Shaded
+
+FrameDisplayShaded.LongHelp="曲面上的區域按其定義的顏色著色。";
+FrameDisplayShaded.Title="著色";
+
+CheckButtonDisplayShaded.LongHelp="曲面上的區域按其定義的顏色著色";
+CheckButtonDisplayShaded.ShortHelp="顯示著色區域";
+
+CheckButtonAntiAlias.LongHelp="彩色邊界抗鋸齒。";
+CheckButtonAntiAlias.ShortHelp="抗鋸齒";
+
+CheckButtonLighting.LongHelp="關閉：
+每個像素的亮度值相同。
+分析顯示與光源設置無關。
+開啟：
+使用當前光源設置對分析曲面著色。
+由于亮度值不同，顯示具有立體效果。";
+CheckButtonLighting.ShortHelp="啟用照明";
+
+//Curves
+
+FrameDisplayCurves.LongHelp="顯示分割曲線。
+在定義淡墨區域的角度公差下限處出現的精確分割角度下，計算分析曲線。";
+FrameDisplayCurves.Title="曲線";
+
+CheckButtonDisplayCurves.LongHelp="顯示分割曲線。
+在定義淡墨區域的角度公差下限處出現的精確分割角度下，計算分析曲線。";
+CheckButtonDisplayCurves.ShortHelp="顯示分割曲線";
+
+ColorButtonCurves.LongHelp="可在顏色窗口定義分割曲線的顏色。";
+
+//Tesselation
+
+FrameTesselation.LongHelp="網格定義顯示選項著色的精確度";
+FrameTesselation.Title="網格";
+
+CheckButtonLocalMode.LongHelp="開啟：
+可由用戶設置網格。
+關閉：
+通過工具 > 選項獲取網格。";
+CheckButtonLocalMode.ShortHelp="切換網格";
+
+SpinnerTesselation.LongHelp="憑借網格參數，您可以影響著色結果的精確度。
+網格參數定義從曲面到三角形的最大距離。
+較小值 = 較高精確度。
+較大值 = 較低精確度。";
+SpinnerTesselation.ShortHelp="網格參數";
+
+LabelTrianglesCount1.Title="三角形數量： ";
+LabelTrianglesCount2.Title="-";
+
+
+//Alignment
+
+FrameAlignment.LongHelp="當選擇了多個元素且它們的法線方向不同時，必須執行對齊操作。";
+FrameAlignment.Title="對齊";
+
+CheckButtonAlign.LongHelp="切換對齊功能。";
+CheckButtonAlign.ShortHelp="對齊";
+CheckButtonAlign.Title="對齊";
+
+CheckButtonDisplayNormals.LongHelp="顯示輸入元素的法線。";
+CheckButtonDisplayNormals.ShortHelp="顯示法線";
+CheckButtonDisplayNormals.Title="法線";
+
+PushButtonAuto.LongHelp="自動對齊輸入元素的法線。";
+PushButtonAuto.ShortHelp="自動對齊";
+PushButtonAuto.Title="自動";
+
+PushButtonReset.LongHelp="重置輸入元素的自動對齊。";
+PushButtonReset.ShortHelp="重置對齊";
+PushButtonReset.Title="重置";
+
+
+//--------------------------------------------------------------------------------------------------------------------------
+
+
+CheckButtonGSMTool.LongHelp="在結構樹中選擇一個幾何圖形集。
+如果您選擇一個元素，則同一幾何圖形集內的所有元素均被選定。";
+CheckButtonGSMTool.ShortHelp="選擇幾何圖形集";
+
+ICMCLADiagSplitAnalysisPanel.AlignmentFailed="由于元素無效，自動對齊失敗：/P1";
+
+ICMCLADiagSplitAnalysisPanel.Warning="警告";
+
+LabelEmpty.Title=" ";
+
+

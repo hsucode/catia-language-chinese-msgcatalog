@@ -1,0 +1,417 @@
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES  2005
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 CATStOLDTopoFilletDialog: Resource file for NLS purpose related to TopoFillet command
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Implementation Notes:
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 March 05   Creation                                    Ritesh Kanetkar
+// 3951 校正官方漢化=============================================================================
+DialogBoxTitle="樣式圓角";
+TabCont.GeneralTab.Title="圓角輸入";
+TabCont.ApproxTab.Title="近似值";
+
+TabCont.GeneralTab.MainFrame.ContinuityFrame.Title="公差";
+TabCont.GeneralTab.MainFrame.RadiusFrame.Title="半徑";
+TabCont.GeneralTab.MainFrame.ArcTypeFrame.Title="弧類型";
+TabCont.GeneralTab.MainFrame.ParameterFrame.Title="參數";
+TabCont.GeneralTab.MainFrame.ResultFrame.Title="結果";
+TabCont.GeneralTab.MainFrame.OptionFrame.Title="選項";
+TabCont.GeneralTab.MainFrame.SelectionFrame.Title="選擇";
+
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.PDefault.Title="默認";
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.PPatch1.Title="補面 1";
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.PPatch2.Title="補面 2";
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.PAverage.Title="平均值";
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.PBlend.Title="橋接曲面";
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.PChordal.Title="弦";
+
+TabCont.GeneralTab.MainFrame.ResultFrame.TrimCombo.TrimFace.Title="修剪面";
+TabCont.GeneralTab.MainFrame.ResultFrame.TrimCombo.TrimApprox.Title="近似值";
+
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSurCombo.SSStitch.Title="縫合";
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSurCombo.SSRip.Title="裂縫";
+
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G0Radio.ShortHelp="G0";
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G0Radio.LongHelp="圓角和輸入元素之間的 G0 連續";
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G1Radio.ShortHelp="G1";
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G1Radio.LongHelp="圓角和輸入元素之間的 G1 連續";
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G2Radio.ShortHelp="G2";
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G2Radio.LongHelp="圓角和輸入元素之間的 G2 連續";
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G3Radio.ShortHelp="G3";
+TabCont.GeneralTab.MainFrame.ContinuityFrame.G3Radio.LongHelp="圓角和輸入元素之間的 G3 連續";
+
+
+TabCont.GeneralTab.MainFrame.RadiusFrame.Radius.ShortHelp="固定半徑";
+TabCont.GeneralTab.MainFrame.RadiusFrame.Radius.LongHelp="圓角的固定半徑";
+TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadFlag.ShortHelp="最小半徑";
+TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadFlag.LongHelp="打開/關閉最小半徑";
+TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadius.ShortHelp="最小半徑值";
+TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadius.LongHelp="最小半徑值";
+TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadRelativeFlag.ShortHelp="相對半徑";
+TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadRelativeFlag.LongHelp="打開/關閉相對半徑";
+TabCont.GeneralTab.MainFrame.RadiusFrame.VariableRadChkBtn.ShortHelp="可變半徑";
+TabCont.GeneralTab.MainFrame.RadiusFrame.VariableRadChkBtn.LongHelp="打開/關閉可變半徑";
+
+TabCont.GeneralTab.MainFrame.ArcTypeFrame.BlendRadio.ShortHelp="橋接曲面";
+TabCont.GeneralTab.MainFrame.ArcTypeFrame.BlendRadio.LongHelp="在輸入元素間創建橋接曲面";
+TabCont.GeneralTab.MainFrame.ArcTypeFrame.ApproxRadio.ShortHelp="近似值";
+TabCont.GeneralTab.MainFrame.ArcTypeFrame.ApproxRadio.LongHelp="在輸入元素間創建圓形貝賽爾近似值";
+TabCont.GeneralTab.MainFrame.ArcTypeFrame.ExactRadio.ShortHelp="精確值";
+TabCont.GeneralTab.MainFrame.ArcTypeFrame.ExactRadio.LongHelp="使用真圓形截面創建有理曲面";
+
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.ShortHelp="參數";
+TabCont.GeneralTab.MainFrame.ParameterFrame.ParameterCombo.LongHelp=" 為圓角曲面的參數化提供了不同選項";
+
+TabCont.GeneralTab.MainFrame.ResultFrame.TrimSwitch.ShortHelp="修剪結果";
+TabCont.GeneralTab.MainFrame.ResultFrame.TrimSwitch.LongHelp="打開/關閉修剪結果選項";
+TabCont.GeneralTab.MainFrame.ResultFrame.TrimCombo.ShortHelp="修剪面/修剪近似值";
+TabCont.GeneralTab.MainFrame.ResultFrame.TrimCombo.LongHelp="修剪結果選項的類型。修剪面 - 結果為面
+修剪近似值 - 結果不為面";
+TabCont.GeneralTab.MainFrame.ResultFrame.Extrapol.ShortHelp="外插延伸";
+TabCont.GeneralTab.MainFrame.ResultFrame.Extrapol.LongHelp="對結果圓角曲面進行外插延伸";
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSur.ShortHelp="小曲面";
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSur.LongHelp="如果兩個輸入集都有多個曲面，且這些曲面的邊界
+不完全在同一位置，則結果為一個（非常）小的曲面。它的“打開/關閉”模式";
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSurCombo.ShortHelp="縫合/裂縫";
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSurCombo.LongHelp="縫合：可以將這個小曲面與相鄰的一個曲面縫合
+裂縫：將這個小曲面（沿對角方向）分為兩個曲面";
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSurfaceTolerancee.ShortHelp="小曲面公差";
+TabCont.GeneralTab.MainFrame.ResultFrame.SmallSurfaceTolerancee.LongHelp="用于創建小曲面的公差";
+
+TabCont.GeneralTab.MainFrame.OptionFrame.TrimBase.ShortHelp="修剪輸入";
+TabCont.GeneralTab.MainFrame.OptionFrame.TrimBase.LongHelp="修剪圓角的輸入元素";
+TabCont.GeneralTab.MainFrame.OptionFrame.ChordalFillet.ShortHelp="弦圓角";
+TabCont.GeneralTab.MainFrame.OptionFrame.ChordalFillet.LongHelp="沿滾球方向的圓角邊線之間的距離為弦距";
+TabCont.GeneralTab.MainFrame.OptionFrame.CtrlPts.ShortHelp="控制點";
+TabCont.GeneralTab.MainFrame.OptionFrame.CtrlPts.LongHelp="啟用圓角曲面的外形修改";
+TabCont.GeneralTab.MainFrame.OptionFrame.TrueMinimalRadius.ShortHelp="最小真值";
+TabCont.GeneralTab.MainFrame.OptionFrame.TrueMinimalRadius.LongHelp="已控制最小半徑";
+TabCont.GeneralTab.MainFrame.OptionFrame.IndependentApproximation.ShortHelp="獨立近似值";
+TabCont.GeneralTab.MainFrame.OptionFrame.IndependentApproximation.LongHelp="內部獨立近似值";
+
+TabCont.GeneralTab.MainFrame.SelectionFrame.FirstSetSur.ShortHelp="選擇曲面集 1";
+TabCont.GeneralTab.MainFrame.SelectionFrame.FirstSetSur.LongHelp="選擇用于圓角操作的第一組曲面";
+TabCont.GeneralTab.MainFrame.SelectionFrame.SecondSetSur.ShortHelp="選擇曲面集 2";
+TabCont.GeneralTab.MainFrame.SelectionFrame.SecondSetSur.LongHelp="選擇用于圓角操作的第二組曲面";
+TabCont.GeneralTab.MainFrame.SelectionFrame.FirstSetCur.ShortHelp="選擇曲線集 1";
+TabCont.GeneralTab.MainFrame.SelectionFrame.FirstSetCur.LongHelp="選擇用于圓角操作的第一組曲線";
+TabCont.GeneralTab.MainFrame.SelectionFrame.SecondSetCur.ShortHelp="選擇曲線集 2";
+TabCont.GeneralTab.MainFrame.SelectionFrame.SecondSetCur.LongHelp="選擇用于圓角操作的第二組曲線";
+TabCont.GeneralTab.MainFrame.SelectionFrame.SpineSet.ShortHelp="選擇脊線集";
+TabCont.GeneralTab.MainFrame.SelectionFrame.SpineSet.LongHelp="選擇用于圓角操作的脊線";
+TabCont.GeneralTab.MainFrame.SelectionFrame.PtOnSpineSet.ShortHelp="在脊線上選擇點";
+TabCont.GeneralTab.MainFrame.SelectionFrame.PtOnSpineSet.LongHelp="選擇脊線上的點，用于圓角操作";
+
+
+// 3951 校正官方漢化 New UI
+
+MainOuterFrameTabs.TabCont.GeneralTab.Title="選項";
+// 3951 校正官方漢化 MainOuterFrameTabs.TabCont.ApproxTab.Title = "Advanced"; // 3951 校正官方漢化 WAP 08:08:26 R19SP4 HL2 - Nls entry commented.
+
+
+// 3951 校正官方漢化 Continuity Frame
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ContinuityFrame.Title="連續";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ContinuityFrame.G0Radio.ShortHelp="G0";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ContinuityFrame.G0Radio.LongHelp="圓角和輸入元素之間的 G0 連續";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ContinuityFrame.G1Radio.ShortHelp="G1";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ContinuityFrame.G1Radio.LongHelp="圓角和輸入元素之間的 G1 連續";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ContinuityFrame.G2Radio.ShortHelp="G2";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ContinuityFrame.G2Radio.LongHelp="圓角和輸入元素之間的 G2 連續";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ContinuityFrame.G3Radio.ShortHelp="G3";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ContinuityFrame.G3Radio.LongHelp="圓角和輸入元素之間的 G3 連續";
+
+// 3951 校正官方漢化 Radius Frame
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.RadiusFrame.Title="半徑參數";
+// 3951 校正官方漢化MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.RadiusFrame.RadiusLabel.Title = "Radius :"; // 3951 校正官方漢化 WAP 08:11:25 R19SP3 HL
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.RadiusFrame.RadiusLabel.ShortHelp="固定半徑";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.RadiusFrame.RadiusLabel.LongHelp="圓角的固定半徑";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.RadiusFrame.Radius.ShortHelp="固定半徑";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.RadiusFrame.Radius.LongHelp="圓角的固定半徑";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadFlag.Title="最小半徑：";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadFlag.ShortHelp="最小半徑";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadFlag.LongHelp="打開/關閉最小半徑";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadius.ShortHelp="最小半徑值";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadius.LongHelp="最小半徑值";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadRelativeFlag.ShortHelp="相對半徑";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.RadiusFrame.MinRadRelativeFlag.LongHelp="打開/關閉相對半徑";
+
+// 3951 校正官方漢化 Arc Type 
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.ArcTypeFrame.Title="弧類型";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.ArcTypeFrame.BlendRadio.ShortHelp="橋接曲面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.ArcTypeFrame.BlendRadio.LongHelp="在輸入元素間創建橋接曲面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.ArcTypeFrame.ApproxRadio.ShortHelp="近似值";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.ArcTypeFrame.ApproxRadio.LongHelp="在輸入元素間創建圓形貝賽爾近似值";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.ArcTypeFrame.ExactRadio.ShortHelp="精確值";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.ArcTypeFrame.ExactRadio.LongHelp="使用真圓形截面創建有理曲面";
+
+
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.Title="結果";
+
+// 3951 校正官方漢化 Simplification Frame
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.SimplificationFrame.Title="簡化";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.SimplificationFrame.SmallSurStich.Title="縫合";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.SimplificationFrame.SmallSurStich.ShortHelp="小曲面 - 縫合";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.SimplificationFrame.SmallSurStich.LongHelp="縫合：可以將這個小曲面與相鄰的一個曲面縫合";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.SimplificationFrame.SmallSurRip.Title="裂縫";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.SimplificationFrame.SmallSurRip.ShortHelp="小曲面 - 裂縫";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.SimplificationFrame.SmallSurRip.LongHelp="裂縫：將這個小曲面（沿對角方向）分為兩個曲面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.SimplificationFrame.SmallSurfaceTolerancee.ShortHelp="小曲面公差";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.SimplificationFrame.SmallSurfaceTolerancee.LongHelp="用于創建小曲面的公差";
+
+// 3951 校正官方漢化 Relimitation Frame
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.RelimitationFrame.Title="重新限定";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.RelimitationFrame.TrimFace.Title="修剪面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.RelimitationFrame.TrimFace.ShortHelp="修剪面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.RelimitationFrame.TrimFace.LongHelp="結果為面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.RelimitationFrame.TrimApprox.Title="修剪近似值";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.RelimitationFrame.TrimApprox.ShortHelp="修剪近似值";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.RelimitationFrame.TrimApprox.LongHelp="結果不為面";
+// 3951 校正官方漢化 For R18SP3 UI
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.Title="幾何圖形";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.Extrapol1.ShortHelp="外插延伸第 1 面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.Extrapol1.LongHelp="將結果外插延伸到第 1 面上";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.Extrapol2.ShortHelp="外插延伸第 2 面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.Extrapol2.LongHelp="將結果外插延伸到第 2 面上";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.Relimit1.ShortHelp="重新限定第 1 面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.Relimit1.LongHelp="將結果重新限定到第 1 面上";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.Relimit2.ShortHelp="重新限定第 2 面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.Relimit2.LongHelp="將結果重新限定到第 2 面上";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.TrimFace.Title="修剪面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.TrimFace.ShortHelp="修剪面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.TrimFace.LongHelp="結果為面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.TrimApprox.Title="修剪近似值";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.TrimApprox.ShortHelp="修剪近似值";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.TrimApprox.LongHelp="結果不為面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.Merge.ShortHelp="連接";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.Merge.LongHelp="將多單元圓角筋鏈接到單一單元結果（僅限于單元間的 G2 連續）";
+
+// 3951 校正官方漢化 Geometry Frame
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.GeometryFrame.Title="幾何圖形";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.GeometryFrame.Extrapol.Title="外插延伸";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.GeometryFrame.Extrapol.ShortHelp="外插延伸";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.GeometryFrame.Extrapol.LongHelp="對結果圓角曲面進行外插延伸";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.GeometryFrame.Merge.ShortHelp="連接";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.GeometryFrame.Merge.LongHelp="將多單元圓角筋鏈接到單一單元結果（僅限于單元間的 G2 連續）";
+// 3951 校正官方漢化--------------------------------------
+
+// 3951 校正官方漢化 Options Frame
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.OptionFrame.Title="圓角類型";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.OptionFrame.VariableRadChkBtn.ShortHelp="可變半徑";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.OptionFrame.VariableRadChkBtn.LongHelp="打開/關閉可變半徑";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.OptionFrame.TrimBase.ShortHelp="修剪輸入";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.OptionFrame.TrimBase.LongHelp="修剪圓角的輸入元素";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.OptionFrame.ChordalFillet.ShortHelp="弦圓角";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.OptionFrame.ChordalFillet.LongHelp="沿滾球方向的圓角邊線之間的距離為弦距";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.OptionFrame.CtrlPts.ShortHelp="控制點";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.OptionFrame.CtrlPts.LongHelp="啟用圓角曲面的外形修改";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.OptionFrame.TrueMinimalRadius.ShortHelp="最小真值";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.OptionFrame.TrueMinimalRadius.LongHelp="已控制最小半徑";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.OptionFrame.IndependentApproximation.ShortHelp="獨立近似值";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.FrameArcTypeAndOpt.OptionFrame.IndependentApproximation.LongHelp="內部獨立近似值";
+
+
+// 3951 校正官方漢化 Surface-1 Curv-1
+// 3951 校正官方漢化MainOuterFrame.Surface1Curve1Frame.Title = "Support 1";
+// 3951 校正官方漢化MainOuterFrame.Surface1Curve1Frame.ShortHelp = "Select surface and curve set 1";
+// 3951 校正官方漢化MainOuterFrame.Surface1Curve1Frame.LongHelp = "Select first set of surfaces and curves for fillet operation";
+// 3951 校正官方漢化MainOuterFrame.Surface1Curve1Frame.Surface1Selector.ShortHelp = "Select surface set 1";
+// 3951 校正官方漢化MainOuterFrame.Surface1Curve1Frame.Surface1Selector.LongHelp = "Select first set of surfaces for fillet operation";
+MainOuterFrame.Surface1Curve1Frame.Curve1Selector.ShortHelp="選擇曲線集 1"; // 3951 校正官方漢化 WAP 09:01:23
+MainOuterFrame.Surface1Curve1Frame.Curve1Selector.LongHelp="選擇用于圓角操作的第一組曲線"; // 3951 校正官方漢化 WAP 09:01:23 
+// 3951 校正官方漢化MainOuterFrame.Surface1Curve1Frame.LabelSurface1.Title = "Surface :";
+// 3951 校正官方漢化MainOuterFrame.Surface1Curve1Frame.LabelSurface1.ShortHelp = "Select surface set 1";
+// 3951 校正官方漢化MainOuterFrame.Surface1Curve1Frame.LabelSurface1.LongHelp = "Select first set of surfaces for fillet operation";
+MainOuterFrame.Surface1Curve1Frame.LabelCurve1.Title="曲線：";
+MainOuterFrame.Surface1Curve1Frame.LabelCurve1.ShortHelp="選擇曲線集 1";
+MainOuterFrame.Surface1Curve1Frame.LabelCurve1.LongHelp="選擇用于圓角操作的第一組曲線";
+MainOuterFrame.Surface1Curve1Frame.TrimBase1.ShortHelp="修剪支持面 1";
+MainOuterFrame.Surface1Curve1Frame.TrimBase1.LongHelp="在圓角的支持面集 1 中修剪輸入元素（曲面）。";
+// 3951 校正官方漢化MainOuterFrame.Surface1Curve1Frame.Curve1SelState.ShortHelp = "Enable curve 1 set";// 3951 校正官方漢化 WAP 09:01:23 
+// 3951 校正官方漢化MainOuterFrame.Surface1Curve1Frame.Curve1SelState.LongHelp = "Enables selection in the curve 1 set.";// 3951 校正官方漢化 WAP 09:01:23 
+
+// 3951 校正官方漢化 Surface-2 Curv-2
+MainOuterFrame.Surface2Curve2Frame.Title="支持面 2";
+MainOuterFrame.Surface2Curve2Frame.ShortHelp="選擇曲面和曲線集 2";
+MainOuterFrame.Surface2Curve2Frame.LongHelp="選擇用于圓角操作的第二組曲面和曲線";
+MainOuterFrame.Surface2Curve2Frame.Surface2Selector.ShortHelp="選擇曲面集 2";
+MainOuterFrame.Surface2Curve2Frame.Surface2Selector.LongHelp="選擇用于圓角操作的第二組曲面";
+// 3951 校正官方漢化MainOuterFrame.Surface2Curve2Frame.Curve2Selector.ShortHelp = "Select curve set 2"; // 3951 校正官方漢化 WAP 09:01:23
+// 3951 校正官方漢化MainOuterFrame.Surface2Curve2Frame.Curve2Selector.LongHelp = "Select second set of curves for fillet operation"; // 3951 校正官方漢化 WAP 09:01:23
+MainOuterFrame.Surface2Curve2Frame.LabelSurface2.Title="曲面：";
+MainOuterFrame.Surface2Curve2Frame.LabelSurface2.ShortHelp="選擇曲面集 2";
+MainOuterFrame.Surface2Curve2Frame.LabelSurface2.LongHelp="選擇用于圓角操作的第二組曲面";
+MainOuterFrame.Surface2Curve2Frame.LabelCurve2.Title="曲線：";
+MainOuterFrame.Surface2Curve2Frame.LabelCurve2.ShortHelp="選擇曲線集 2";
+MainOuterFrame.Surface2Curve2Frame.LabelCurve2.LongHelp="選擇用于圓角操作的第二組曲線";
+MainOuterFrame.Surface2Curve2Frame.TrimBase2.ShortHelp="修剪支持面 2";
+MainOuterFrame.Surface2Curve2Frame.TrimBase2.LongHelp="在圓角的支持面集 2 中修剪輸入元素（曲面）。";
+// 3951 校正官方漢化MainOuterFrame.Surface2Curve2Frame.Curve2SelState.ShortHelp = "Enable curve 2 set";// 3951 校正官方漢化 WAP 09:01:23 
+// 3951 校正官方漢化MainOuterFrame.Surface2Curve2Frame.Curve2SelState.LongHelp = "Enables selection in the curve 2 set.";// 3951 校正官方漢化 WAP 09:01:23 
+
+// 3951 校正官方漢化 Point-Spine
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.SpinePointFrame.SpineSelector.ShortHelp="選擇脊線集";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.SpinePointFrame.SpineSelector.LongHelp="選擇用于圓角操作的脊線";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.SpinePointFrame.PointSelector.ShortHelp="在脊線上選擇點";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.SpinePointFrame.PointSelector.LongHelp="選擇脊線上的點，用于圓角操作";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.SpinePointFrame.LabelSpine.Title="脊線：";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.SpinePointFrame.LabelSpine.ShortHelp="選擇脊線集";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.SpinePointFrame.LabelSpine.LongHelp="選擇用于圓角操作的脊線";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.SpinePointFrame.LabelPoint.Title="點：";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.SpinePointFrame.LabelPoint.ShortHelp="在脊線上選擇點";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.SpinePointFrame.LabelPoint.LongHelp="選擇脊線上的點，用于圓角操作";
+
+// 3951 校正官方漢化 Parameters
+MainOuterFrameTabs.TabCont.ApproxTab.ParameterFrame.Title="參數";
+MainOuterFrameTabs.TabCont.ApproxTab.ParameterFrame.ParameterCombo.ShortHelp="參數";
+MainOuterFrameTabs.TabCont.ApproxTab.ParameterFrame.ParameterCombo.LongHelp=" 為圓角曲面的參數化提供了不同選項";
+MainOuterFrameTabs.TabCont.ApproxTab.ParameterFrame.ParameterCombo.PDefault.Title="默認";
+MainOuterFrameTabs.TabCont.ApproxTab.ParameterFrame.ParameterCombo.PPatch1.Title="補面 1";
+MainOuterFrameTabs.TabCont.ApproxTab.ParameterFrame.ParameterCombo.PPatch2.Title="補面 2";
+MainOuterFrameTabs.TabCont.ApproxTab.ParameterFrame.ParameterCombo.PAverage.Title="平均值";
+MainOuterFrameTabs.TabCont.ApproxTab.ParameterFrame.ParameterCombo.PBlend.Title="橋接曲面";
+MainOuterFrameTabs.TabCont.ApproxTab.ParameterFrame.ParameterCombo.PChordal.Title="弦";
+
+// 3951 校正官方漢化 Independent Approximation
+MainOuterFrameTabs.TabCont.ApproxTab.IndependentApproximation.Title="獨立近似值";
+MainOuterFrameTabs.TabCont.ApproxTab.IndependentApproximation.ShortHelp="獨立近似值";
+MainOuterFrameTabs.TabCont.ApproxTab.IndependentApproximation.LongHelp="內部獨立近似值";
+
+Surface1BagTitle.Message="選擇曲面 1";
+Curve1BagTitle.Message="選擇曲線 1";
+Surface2BagTitle.Message="選擇曲面 2";
+Curve2BagTitle.Message="選擇曲線 2";
+SpineBagTitle.Message="選擇脊線";
+PointOnSpineBagTitle.Message="在脊線上選擇點";
+
+MaxDevOptionsFrame.MaxDevDisplayOptionsFrame.Title="顯示偏差";
+MaxDevOptionsFrame.MaxDevDisplayOptionsFrame.DevBetFilletCellsChkB.ShortHelp="圓角單元之間的連接";
+MaxDevOptionsFrame.MaxDevDisplayOptionsFrame.DevBetFilletCellsChkB.LongHelp="只顯示圓角筋單元之間的連接";
+MaxDevOptionsFrame.MaxDevDisplayOptionsFrame.DevBetFilletAndSupportChkB.ShortHelp="圓角筋和支持面之間的連接";
+MaxDevOptionsFrame.MaxDevDisplayOptionsFrame.DevBetFilletAndSupportChkB.LongHelp="顯示圓角筋和支持面之間的連接";
+MaxDevOptionsFrame.MaxDevValueFrame.Title="最大偏差";
+MaxDevOptionsFrame.MaxDevValueFrame.LongHelp="顯示每個連續的最大值和最小值";
+MaxDevOptionsFrame.MaxDevValueFrame.G0TitleLabel.Title="G0：";
+MaxDevOptionsFrame.MaxDevValueFrame.G0Label="----   ";
+MaxDevOptionsFrame.MaxDevValueFrame.G1TitleLabel.Title="G1：";
+MaxDevOptionsFrame.MaxDevValueFrame.G2TitleLabel.Title="G2：";
+MaxDevOptionsFrame.MaxDevValueFrame.G3TitleLabel.Title="G3：";
+
+// 3951 校正官方漢化 Start WAP 08:08:26 R19SP4 HL1 AND HL2
+
+NewApproxTab.Message="近似值";
+ApproxTab.Message="高級";
+OutputResultFrame.Title="輸出結果";
+OutputResultFrame.NbOfCellsTitleLabel.Title="單元數：";
+OutputResultFrame.MaxOrderTitleLabel.Title="最大階次：";
+OutputResultFrame.MaxSegTitleLabel.Title="每個單元的最大線段數：";
+OutputResultFrame.OrdUTitleLabel.Title="U：";
+OutputResultFrame.OrdVTitleLabel.Title="V：";
+OutputResultFrame.SegUTitleLabel.Title="U：";
+OutputResultFrame.SegVTitleLabel.Title="V：";
+OutputResultFrame.NbOfCellsTitleLabel.ShortHelp="顯示單元數";
+OutputResultFrame.NbOfCellsTitleLabel.LongHelp="顯示已創建圓角中的單元數";
+OutputResultFrame.MaxOrderTitleLabel.ShortHelp="顯示 U 方向和 V 方向上的最大階次";
+OutputResultFrame.MaxOrderTitleLabel.LongHelp="顯示 U 和 V 方向上已創建結果的最大階次";
+OutputResultFrame.MaxSegTitleLabel.ShortHelp="顯示 U 方向和 V 方向上每個單元的最大線段數";
+OutputResultFrame.MaxSegTitleLabel.LongHelp="顯示 U 和 V 方向上每個已創建結果單元的最大線段數";
+// 3951 校正官方漢化 End WAP 08:08:26	
+
+// 3951 校正官方漢化 Start WAP 08:11:25 R19SP3 HL
+LengthLabel.Message="長度：";
+RadiusLabel.Message="半徑：";
+// 3951 校正官方漢化 End WAP 08:11:25
+
+// 3951 校正官方漢化 Start WAP 08:12:02 R19SP4 HL6
+// 3951 校正官方漢化Spine - Point Frame	
+MainOuterFrame.SpinePointFrame.LabelSpine.Title="脊線：";
+MainOuterFrame.SpinePointFrame.LabelPoint.Title="點：";
+MainOuterFrame.SpinePointFrame.SpineSelector.ShortHelp="選擇脊線集";
+MainOuterFrame.SpinePointFrame.SpineSelector.LongHelp="選擇用于圓角操作的脊線";
+MainOuterFrame.SpinePointFrame.PointSelector.ShortHelp="在脊線上選擇點";
+MainOuterFrame.SpinePointFrame.PointSelector.LongHelp="選擇脊線上的點，用于圓角操作";
+
+// 3951 校正官方漢化 Geometry Frame
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.LabelExtrapolRelimit1.Title="外插延伸/重新限定第 1 面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.LabelExtrapolRelimit1.ShortHelp="外插延伸/重新限定第 1 面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.LabelExtrapolRelimit1.LongHelp="將結果外插延伸/重新限定到第 1 面上";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.LabelExtrapolRelimit2.Title="外插延伸/重新限定第 2 面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.LabelExtrapolRelimit2.ShortHelp="外插延伸/重新限定第 2 面";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.GeomRelimFrame.LabelExtrapolRelimit2.LongHelp="將結果外插延伸/重新限定到第 2 面上";
+
+// 3951 校正官方漢化 Result Frame
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.LogicalMerge.Title="邏輯接合";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.LogicalMerge.ShortHelp="邏輯接合";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.LogicalMerge.LongHelp="使用 0.1 mm 的固定公差裝配結果（圓角筋、修剪輸入曲面）";
+
+// 3951 校正官方漢化 Simplification Frame
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.SimplificationFrame.Merge.Title="連接";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.SimplificationFrame.Merge.ShortHelp="連接";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.SimplificationFrame.Merge.LongHelp="將多單元圓角筋鏈接到單一單元結果（僅限于單元間的 G2 連續）";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.SimplificationFrame.LogicalMerge.Title="邏輯接合";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.SimplificationFrame.LogicalMerge.ShortHelp="邏輯接合";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.ResultFrame.SimplificationFrame.LogicalMerge.LongHelp="使用 0.1 mm 的固定公差裝配結果（圓角筋、修剪輸入曲面）";
+// 3951 校正官方漢化 End WAP 08:12:02
+
+// 3951 校正官方漢化 Start WAP 09:01:23 R19SP4 HL5
+Curve1SelectorShortHelp.Message="選擇曲線集 1";
+Curve1SelectorLongHelp.Message="選擇用于圓角操作的第一組曲線";
+Curve1SelStateShortHelp.Message="啟用曲線集 1";
+Curve1SelStateLongHelp.Message="在曲線集 1 中啟用選擇。";
+
+Curve2SelectorShortHelp.Message="選擇曲線集 2";
+Curve2SelectorLongHelp.Message="選擇用于圓角操作的第二組曲線";
+Curve2SelStateShortHelp.Message="啟用曲線集 2";
+Curve2SelStateLongHelp.Message="在曲線集 2 中啟用選擇。";
+
+
+EdgesToExtrapol1SelectorShortHelp.Message="選擇要外插延伸的邊線 1";
+EdgesToExtrapol1SelectorLongHelp.Message="選擇要外插延伸的第一組邊線，進行可變圓角操作";
+EdgesToExtrapol1SelStateShortHelp.Message="啟用要外插延伸的邊線 1";
+EdgesToExtrapol1SelStateLongHelp.Message="啟用要外插延伸的第一組邊線，進行可變圓角操作";
+EdgesToExtrapol2SelectorShortHelp.Message="選擇要外插延伸的邊線 2";
+EdgesToExtrapol2SelectorLongHelp.Message="選擇要外插延伸的第二組邊線，進行可變圓角操作";
+EdgesToExtrapol2SelStateShortHelp.Message="啟用要外插延伸的邊線 2";
+EdgesToExtrapol2SelectorLongHelp.Message="啟用要外插延伸的第二組邊線，進行可變圓角操作";
+
+// 3951 校正官方漢化 End WAP 09:01:23
+
+// 3951 校正官方漢化 Start WAP 08:12:02 R19SP5
+// 3951 校正官方漢化 Input Parameter Frame
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.InputParameterFrame.Title="輸入參數";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.InputParameterFrame.LabelMergeDist.Title="合并距離： ";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.InputParameterFrame.SpinnerMergeDist.ShortHelp="合并距離";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.InputParameterFrame.SpinnerMergeDist.LongHelp="設置多單元圓角的合并距離";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.InputParameterFrame.TolerantLaydownCheck.ShortHelp="容差放置";
+MainOuterFrameTabs.TabCont.GeneralTab.MainFrame.InputParameterFrame.TolerantLaydownCheck.LongHelp="使用容差放置";
+TolerantLaydown.Title="容差放置";
+// 3951 校正官方漢化 End WAP 08:12:02					   
+
+MainOuterFrame.Surface2Curve2Frame.EdgeFilletMode.Title="圓角類型";
+MainOuterFrame.Surface2Curve2Frame.EdgeFilletMode.ShortHelp="圓角類型";
+MainOuterFrame.Surface2Curve2Frame.EdgeFilletMode.LongHelp="選擇圓角操作的類型。支持面圓角/倒圓角";
+
+EdgeFilletModeLabel.Message="要圓角化的對象";
+SupportFilletMode.Message="支持面 1";
+
+Surface1Curve1FrameShortHelp.Message="選擇曲面和曲線集 1";
+Surface1Curve1FrameLongHelp.Message="選擇用于圓角操作的第一組曲面和曲線";
+ObjectsToFilletFrameShortHelp.Message="選擇要圓角化的對象";
+ObjectsToFilletFrameLongHelp.Message="選擇用于圓角操作的銳邊/具有銳邊的面";
+
+Surface1Title.Message="曲面：";
+Surface1ShortHelp.Message="選擇曲面集 1";
+Surface1LongHelp.Message="選擇用于圓角操作的第一組曲面";
+
+ObjectToFilletTitle.Message="要圓角化的對象：";
+ObjectToFilletShortHelp.Message="選擇要圓角化的對象";
+ObjectToFilletLongHelp.Message="選擇用于圓角操作的銳邊/具有銳邊的面";
+
+Surface1SelectorShortHelp.Message="選擇曲面集 1";
+Surface1SelectorLongHelp.Message="選擇用于圓角操作的第一組曲面";
+ObjectsToFilletSelectorShortHelp.Message="選擇要圓角化的對象";
+ObjectsToFilletSelectorLongHelp.Message="選擇用于圓角操作的銳邊/具有銳邊的面";

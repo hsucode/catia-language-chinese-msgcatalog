@@ -1,0 +1,65 @@
+// 3951 校正官方漢化 Resource File for DNBHtsTrackTrajectoryCmd Class
+// 3951 校正官方漢化 English
+// 3951 校正官方漢化--------History------------------------------------------------------------
+// 3951 校正官方漢化 Author : lfrancis
+// 3951 校正官方漢化 Date : July 06 2002
+// 3951 校正官方漢化 Goal : Creation
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 DO不EDIT :: THE CAA2 WIZARD WILL REPLACE所有 CODE HERE
+
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 state diagram messages
+DNBHtsTrackTrajectoryCmd.statePickPrevious.Message = "選擇人體資源或先前任務/動作";
+DNBHtsTrackTrajectoryCmd.StatePickMoveAct.Message="Pick the 移動動作";
+DNBHtsTrackTrajectoryCmd.StatePickManikin.Message="Pick 人體模型";
+DNBHtsTrackTrajectoryCmd.StatePickArea.Message="Pick Walk Plane/Area";
+DNBHtsTrackTrajectoryCmd.StateGenPosture.Message="生成 姿勢";
+DNBHtsTrackTrajectoryCmd.StateUserDialogInteraction.Message="軌跡跟蹤選項";
+
+// 3951 校正官方漢化 Messages for Plane selection
+Misc.PlaneSelection.Message="Plane from ";
+
+// 3951 校正官方漢化 Warning Messages
+Warn.SelectWalkPlane.Title="行走 Plane不selected";
+Warn.SelectWalkPlane.Message="選擇walk plane to generate姿勢";
+Warn.DuplicatePointsInTrack.Title="警告";
+Warn.DuplicatePointsInTrack.Message="The Assembly Move Activity contains atleast ONE Shot defined by duplicate points.\n
+Duplicate Points would be ignored";
+Warn.TrackLenLessThanObjMoveDist.Title="警告";
+Warn.TrackLenLessThanObjMoveDist.Message="Following Tracks have length lesser than Object Move distances.
+The object move distances is設置為1/3 of track-length for these tracks.
+
+      Track Nos:  ";
+
+// 3951 校正官方漢化 Error Messages
+Error.UnableToGetInterface.Title="不能 get INTERFACE handle";
+Error.UnableToGetInterface.Message="不能 get CATIProduct/CATIMovable Interface handle";
+Error.DissectingAssemblyAct.Title="錯誤";
+Error.DissectingAssemblyAct.Message="Error in reading the選擇動作";
+Error.GettingProducts.Title="錯誤";
+Error.GettingProducts.Message="Error in getting Products from選擇動作";
+
+Error.NoTrackToProcess.Title="錯誤";
+Error.NoTrackToProcess.Message="錯誤 : Track doesn't contain valid shots";
+Error.RotationsInTrackForWalking.Title="錯誤 - Track Walking";
+Error.RotationsInTrackForWalking.Message="Assembly Move Activity contains rotations.
+Tracks containing rotations are不supported in Track Walking";
+Error.SideStepInvalidTrack.Title="錯誤";
+Error.SideStepInvalidTrack.Message="Cannot 創建行為 - SideStep is supported for Single Shot MoveActivity only";
+
+// 3951 校正官方漢化 Currently unsupported feature
+Unsupported.ExtraPath.Title="Unsupported 特征";
+Unsupported.ExtraPath.Message="In interpolating for object positions between 2 Walk Postures\n there exists 1或 more Object Path曲線";
+
+// 3951 校正官方漢化 Continue或 cancel generating postures
+YesNoDlg.OKButton.Title="是";
+YesNoDlg.CANCELButton.Title="否";
+
+Prompt.PostureCreation.Title="生成 姿勢";
+Prompt.PostureCreation.Message="Continue creating postures ?";
+
+// 3951 校正官方漢化 Temporary Messages
+Temp.IncrementalViewing.Title="View next";
+Temp.IncrementalViewing.Message="View next";
+// 3951 校正官方漢化----------------------------------------------------------------------------
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE

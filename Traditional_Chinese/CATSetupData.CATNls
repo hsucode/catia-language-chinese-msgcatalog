@@ -1,0 +1,74 @@
+
+// 3951 校正官方漢化 Setup Data Errors
+CATSetupDataERR_2000.Request="創建資源集。";
+CATSetupDataERR_2000.Diagnostic="XML 文件 '/p2.xml' 中聲明的資源集標識符 '/p1' 無效。";
+CATSetupDataERR_2000.Advice="資源集標識符必須與 XML 文件名稱匹配。";
+
+CATSetupDataERR_2001.Request="分派資源。";
+CATSetupDataERR_2001.Diagnostic="無法為項目 '/p2' 分派所選資源 '/p1'。\n/p3\n";
+CATSetupDataERR_2001.Advice="選擇有效資源。";
+
+CATSetupDataERR_2010.Request="創建業務規則資源。";
+CATSetupDataERR_2010.Diagnostic="'/p1' 的資源類型不能設置為 '/p2'。";
+CATSetupDataERR_2010.Advice="業務規則資源類型必須為 'PLMRuleSet'。";
+
+CATSetupDataERR_2011.Request="創建業務規則資源。";
+CATSetupDataERR_2011.Diagnostic="（參數 = '/p1'，業務規則 = '/p2'）的條件屬性不能為 true。";
+CATSetupDataERR_2011.Advice="僅當“模式”屬性 = IN 或 INOUT 時，參數的條件屬性才可設置為 true。";
+
+CATSetupDataERR_2012.Request="創建業務規則資源。";
+CATSetupDataERR_2012.Diagnostic="（參數 = '/p1'，業務規則 = '/p2'）的定義\n與其中一個默認“規則上下文”參數沖突。";
+CATSetupDataERR_2012.Advice="'/p1' 參數的“類型”和“模式”屬性必須為 '/p2' 和 '/p3'。";
+
+CATSetupDataERR_2013.Request="創建業務規則資源。";
+CATSetupDataERR_2013.Diagnostic="（參數 = '/p1'，業務規則 = '/p2'）的名稱\n是單個事實情況的保留關鍵字。";
+CATSetupDataERR_2013.Advice="選擇其他參數名稱。";
+
+PRM="項目資源管理";
+FoundNTables="找到 /p1 個綁定到 P&O 項目 /p2 的資源表";
+TableInfo="表：/p1";
+NoTable="沒有表！";
+SearchTable="針對當前項目對表 </p1> 的搜索返回了 </p2>";
+RetrieveBusinessRules="正在檢索用于打開 </p1> 的 PLM 業務規則";
+ItemContainsNBR="該項目包含 /p1 條業務規則：";
+NotSet="未設置！";
+BRInfos="事實類型 </p1> 的業務規則：</p2>";
+ErrorLoadingBR="錯誤：無法加載 PLM 業務規則 </p1>！";
+NoBROpeningSet="沒有與打開的標識 </p1> 對應的已聲明打開集";
+NoResourceSet="沒有標識為 </p1> 的資源集";
+NbResourceSet="數據庫中具有 /p1 個標識為 </p2> 的資源集";
+ErrorGettingResourceSet="錯誤！！\n 無法針對 id </p1> 檢測是否存在資源集！\n";
+
+UpgradeTable="升級資源表 '/p1'：\n";
+UpgradeItem="已升級資源項 '/p1'：\n";
+UpgradeNewItem="已將資源項 '/p1' 添加到該表。\n";
+UpgradeItemRemoval="以下資源項現已作廢，并已從該表中移除：\n";
+UpgradeObsoleteItem="以下資源項現已作廢，但為實現向下兼容已將其保留：\n";
+UpgradeItemType="已修改該項的類型。\n";
+UpgradeItemMandatory="該項現在是必需項。\n";
+UpgradeItemNotMandatory="該項不再是必需項。\n";
+UpgradeItemMultiple="該項現在支持多個資源。\n";
+UpgradeItemNotMultiple="該項不再支持多個資源。\n";
+UpgradeItemFormatChecker="已修改該項的驗證規則。\n";
+UpgradeNewCriterion="已將條件 '/p1' 添加到該項。\n";
+UpgradeCriterionRemoval="條件 '/p1' 現已作廢，并已從該項中移除。\n";
+UpgradeCriterionType="已修改條件 '/p1' 的類型。\n";
+UpgradeCriterionPossibleValues="已修改條件 '/p1' 的可能值。\n";
+UpgradeCriterionMinMax="已修改條件 '/p1' 的最小值和最大值。\n";
+
+SimulUpgradeItem="必須升級資源項 '/p1'：\n";
+SimulUpgradeNewItem="必須將資源項 '/p1' 添加到該表。\n";
+SimulUpgradeItemRemoval="以下資源項現已作廢，并可能已從該表中移除：\n";
+SimulUpgradeItemType="必須修改該項的類型。\n";
+SimulUpgradeItemMandatory="該項現在將是必需項。\n";
+SimulUpgradeItemNotMandatory="該項不能再是必需項。\n";
+SimulUpgradeItemMultiple="該項現在必須支持多個資源。\n";
+SimulUpgradeItemNotMultiple="該項將不再支持多個資源。\n";
+SimulUpgradeItemFormatChecker="必須修改該項的驗證規則。\n";
+SimulUpgradeNewCriterion="必須將條件 '/p1' 添加到該項。\n";
+SimulUpgradeCriterionRemoval="條件 '/p1' 現已作廢，并且必須從該項中移除。\n";
+SimulUpgradeCriterionType="必須修改條件 '/p1' 的類型。\n";
+SimulUpgradeCriterionPossibleValues="必須修改 '/p1' 的可能值。\n";
+SimulUpgradeCriterionMinMax="必須修改條件 '/p1' 的最小值和最大值。\n";
+
+

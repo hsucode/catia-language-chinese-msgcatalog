@@ -1,0 +1,153 @@
+// 3951 校正官方漢化 ==========================================================================
+// 3951 校正官方漢化 ==========================================================================
+// 3951 校正官方漢化 DNBEnergyExpendDlg English Message File
+// 3951 校正官方漢化 ==========================================================================
+// 3951 校正官方漢化 ==========================================================================
+
+EnergyExpendMainDlg.Title = "Energy Expenditure";
+
+OK.Title = "計算...";
+OK.ShortHelp = "計算 Energy Expenditure";
+Apply.Title     = "Refresh...";
+Apply.ShortHelp = "Refresh Energy Expenditure Configuration";
+
+// 3951 校正官方漢化 First Tab : Dialog window for action input
+TabContainer.TabPageDialog.Title = "Action Input";
+// 3951 校正官方漢化 Labels
+TabContainer.TabPageDialog.LabelHumanTask.Title  = "人體功效:";
+TabContainer.TabPageDialog.LabelFromAction.Title = "From Operation : ";
+TabContainer.TabPageDialog.LabelToAction.Title   = "To Operation :";
+TabContainer.TabPageDialog.LabelEditorTitle.Title   = "標題 :";
+
+// 3951 校正官方漢化 PushButtons
+TabContainer.TabPageDialog.FrameInput.PushBKcalParameters.Title     = "輸入Kcal 參數 ";
+TabContainer.TabPageDialog.FrameInput.PushBKcalParameters.ShortHelp = "輸入Kcal 參數 ";
+TabContainer.TabPageDialog.FrameInput.PushBKcalApply.Title          = "插入current parameters into Action 列表";
+TabContainer.TabPageDialog.FrameInput.PushBKcalApply.ShortHelp      = "插入current parameters into Action 列表";
+
+// 3951 校正官方漢化 Blank Line Labels
+TabContainer.TabPageDialog.LabelBlankLine.Title = "                  ";
+
+// 3951 校正官方漢化 Second Tab : MultiList of actions
+TabContainer.TabListPostures.Title = "Action 列表";
+ColumnTitleOrder    = "#";
+ColumnTitleFrom     = "From操作";
+ColumnTitleTo       = "To操作";
+ColumnTitleTitle    = "標題";
+TabContainer.TabListPostures.FrameOption.Title = "選項";
+TabContainer.TabListPostures.FrameOption.PushBRemove.Title      = "移除選擇 Entry";
+TabContainer.TabListPostures.FrameOption.PushBRemove.ShortHelp  = "移除選擇 Entry";
+TabContainer.TabListPostures.FrameOption.PushBModify.Title = "修改 Kcal Parameters...";
+TabContainer.TabListPostures.FrameOption.PushBModify.ShortHelp  = "修改 Kcal 參數 ";
+
+// 3951 校正官方漢化 Error Messages
+WalkActivityError  = "The Walk activity selected contains at least one sub-activity which is not一個MoveToPosture.";
+InvalidHumanTask   = "This selection is不part of current Human Task.";
+InvalidFromAction  = "非法 activity selection for 'From Operation'.";
+InvalidToAction    = "非法 activity selection for 'To Operation'.";
+InvalidActivity    = "非法 Activity 選擇";
+InvalidSelection   = "非法 Selection.";
+MoveToPostureOrder = "The element selected as 'To Action' must follow the one selected as 'From Action'.";
+PickMoveToPosture  = "Pick action must be always preceded by一個MoveToPosture.";
+PlaceMoveToPosture = "放置 action must be always preceded by一個MoveToPosture.";
+NotMoveToPosture   = "The object selected  is not一個MoveToPosture activity.";
+NoDataInstance     = "非法 參數 ";
+No人體模型         = "No 人體模型related to the current 任務";
+
+// 3951 校正官方漢化 Warning Messages
+MultiRemoveWarning  = "Are you sure you wish to remove the '/p1' selected data from Action List ?";
+RemoveWarning       = "Are you sure you wish to remove the selected data from Action List ?";
+RemoveTitle         = "警告 Prior to Removal";
+RefreshConfirm      = "This action will start一個new configuration; \nall applied data will be lost. \nDo you wish to proceed ?";
+RefreshConfirmTitle = "Refresh Configuration Confirmation";
+ClimbWarning        = "There is no data associated with the climb activity \nin the或iginal study from Garg for Energy Expenditure. \nTherefore,the value associated to一個walk activity has \nbeen apply to the climb 動作";
+
+// 3951 校正官方漢化 Other messages
+NoSelection = "無選擇";
+NoFollowingAction = "No Following動作 ";
+Activity          = " 動作";
+UnknownActivity   = "Unknown Activity.";
+SecondAction      = "Second arm movement";
+CommentsOnMass    = "Mass set at ";
+MassUnits         = " kg.";
+PlaceActivity     = "放置 Activity.";
+// 3951 校正官方漢化StairLadderWarning.Title = "警告";
+// 3951 校正官方漢化StairLadderWarning.Message = "Energy Expenditure can't be accurately \nevaluated for一個climbing activity.\n Take note that this kind of activity \nis computed as一個walking activity."; 
+// 3951 校正官方漢化 Progress Dialog
+// 3951 校正官方漢化================
+UnknownTask   = "Unknown 任務";
+TextComment   = "分析completed at ";
+
+ErrorInEnergyExpenditureCompute = "Error in calculation.  Aborting.";
+
+// 3951 校正官方漢化 File Kcal Results
+// 3951 校正官方漢化==================
+ReportWindow.Title    = "Energy Expenditure Results";
+Close.Title            = "關閉";
+ReportEditor.ShortHelp = "Energy Expenditure 報告";
+SaveIcon.ShortHelp     = "保存報告";
+ClearIcon.ShortHelp    = "清除 報告";
+KcalReportTitle        = "Energy Expenditure Calculations 報告";
+人體模型               = "Analyzed subject : ";
+Task                   = "Analyzed Task : ";
+ManikinWeight          = "Weight : ";
+WeightUnit             = "\tkg";
+Sex                    = "性別 : ";
+Female                 = "Woman";
+Male                   = "Man";
+FromAction             = "From Activity  ";
+ToAction               = " to activity  ";
+UserSelection          = "Kcal Parameters from analysis :";
+ArmAction_0            = "左側 Arm Action : ";
+ArmAction_1            = "右側 Arm Action : ";
+NoArmAction            = "No Arm動作 ";
+CarriedObject          = "Carried loads : ";
+Load_0                 = "左側 Arm Load : ";
+Load_1                 = "右側 Arm Load : ";
+LoadUnits              = "\tkg";
+ComputationsResults    = "結果 : ";
+MoveKcal               = "移動 Energy   = ";
+KcalUnit               = "\tkcal";
+MoveTime               = "移動 Time     = ";
+TimeUnit               = "\tseconds";
+DelayKcal              = "Delay Energy (for posture maintenance & hold) = ";
+DelayTime              = "延遲時間  = ";
+WalkDistance           = "行走 Distance = ";
+DistanceUnit           = "\tmeters";
+AvgKcalRate            = "Average Rate  = ";
+AvgKcalRateUnit        = "\tkcal/min";
+KcalSummary            = "Kcal Summary\n";
+underline              = "============\n";
+TotalKcal              = "Total Energy = ";
+TotalTime              = "Total Time   = ";
+TotalDistance          = "Total Walk Distance = ";
+TimeIsNull             = "<nil>";
+WalkAction             = "行走ing 動作";
+ClimbAction            = "Climbing 動作";
+ClimbActionNotice      = "
+-------------------------------------------------------------------------------------\r
+|IMPORTANT NOTICE : There is no data associated with the climb\t|\r
+|activity in the或iginal study from Garg for Energy Expenditure.\t|\r
+|Therefore, the value associated to一個walk activity has been\t|\r
+|apply to the climb activity.\t\t\t\t\t|\r
+-------------------------------------------------------------------------------------\n";
+PickedObjects          = "拾取 Objects in current action : ";
+PlacedObjects          = "放置d Objects in current action : ";
+EndOfReport            = "--- 報告終止 ---\n";
+
+// 3951 校正官方漢化 Warning Dialog
+// 3951 校正官方漢化===============
+WarningTitle.Title = "Pick Activity Warning";
+
+// 3951 校正官方漢化 IMPORTANT NOTICE : the following labels are used as lines to display一個warning 
+// 3951 校正官方漢化                    message.  If the message is longer than this one then use 
+// 3951 校正官方漢化                    extra lines (_4 and _5).
+
+LabelWarning_1.Title = "載入(s) picked by the 人體模型will不be taken into account";
+LabelWarning_2.Title = "in Energy Expenditure results if the related Pick activity(ies)";
+LabelWarning_3.Title = "is(are)不part of the analyzed Human Task.";
+LabelWarning_4.Title = " ";
+LabelWarning_5.Title = " ";
+
+BlankLineLabel.Title = "        ";
+CheckBShow.Title   = "不顯示該信息";

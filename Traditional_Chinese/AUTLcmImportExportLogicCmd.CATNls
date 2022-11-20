@@ -1,0 +1,106 @@
+// 3951 校正官方漢化 DO不EDIT :: THE CAA2 WIZARD WILL REPLACE所以 CODE HERE
+FrameFile.LabelFile.Title = "File:";
+FrameFile.PushButtonBrowse.Title = "Browse";
+FrameOperation.RadioButtonImport.Title = "Import 邏輯 ";
+FrameOperation.RadioButtonExport.Title = "Export 邏輯 ";
+Frame001.Title = "選擇items";
+Frame001.CheckButtonModules.Title = "Sub-modules";
+Frame001.CheckButtonBlocks.Title = "Blocks";
+Frame001.CheckButtonFunctions.Title = "功能";
+Frame001.CheckButtonTypes.Title = "類型s";
+Frame001.CheckButtonConstants.Title = "Constants";
+Frame001.CheckButtonDimensions.Title = "Dimensions";
+Frame001.CheckButtonUUID.Title = "Export item's UUID";
+Frame001.FrameLib.CheckButtonLibContent.Title = "Export library content";
+Frame001.FrameLib.RadioButtonSeparateSubLib.Title = "Export library content in separate文件";
+Frame001.FrameLib.RadioButtonInlineSubLib.Title = "Inline library content";
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE
+FrameXSLT.Title = "XSLT Transform";
+FrameXSLT.LabelFileXSLT.Title = "XSLT File:";
+FrameXSLT.PushButtonBrowseXSLT.Title = "Browse";
+
+PartialImportTitle = "零件ial Import";
+ImportExportTitle = "導入/導出t 邏輯 ";
+ProgressTaskUI.Title = "導入/導出t";
+ 
+OpenFileExport = "選擇文件 to export to";
+OpenFileImport = "選擇文件 to import";
+ExportFileExists = "文件 /P1 already exists.\nDo you want it to be overwritten?";
+Export = "Export to文件";
+Import = "Import from文件";
+ImportDone = "Import logic done";
+ExportDone = "Export logic done";
+ReplaceBlock = "The block /P1 will be replaced.\nDo you want to continue?";
+posModuleQuestion = "更新the content of the current module?\nClick No if you want to import module as a sub-module.";
+posModuleTitle = "Import module";
+
+IMPEXPLOGIC_ERR001 = "不能open 文件: /P1";				
+IMPEXPLOGIC_ERR002 = "Cannot map /P1 and /P2 because they are already mapped";
+IMPEXPLOGIC_ERR003 = "Function already exists: /P1";
+IMPEXPLOGIC_ERR004 = "類型 already exists: /P1";
+IMPEXPLOGIC_ERR005 = "Constant already exists: /P1";
+IMPEXPLOGIC_ERR006 = "Block already exists: /P1";
+IMPEXPLOGIC_ERR007 = "Nothing to export";
+IMPEXPLOGIC_ERR008 = "無選擇";
+IMPEXPLOGIC_ERR009 = "Exporting workspace failed";
+IMPEXPLOGIC_ERR010 = "Exporting module failed";
+IMPEXPLOGIC_ERR011 = "Exporting block failed";
+IMPEXPLOGIC_ERR014 = "Exporting block connexions failed";
+IMPEXPLOGIC_ERR016 = "Exporting constant failed";
+IMPEXPLOGIC_ERR017 = "Exporting type failed";
+IMPEXPLOGIC_ERR018 = "Exporting function failed";
+IMPEXPLOGIC_ERR019 = "Exporting block instances failed";
+IMPEXPLOGIC_ERR022 = "Exporting port failed";
+IMPEXPLOGIC_ERR023 = "Exporting signal failed";
+IMPEXPLOGIC_ERR024 = "Error when creating library /P1";
+IMPEXPLOGIC_ERR025 = "Root XML element should be: <block>";
+IMPEXPLOGIC_ERR026 = "Root XML element should be: <module>或 <block>";
+IMPEXPLOGIC_ERR027 = "Module already exists: /P1";	
+IMPEXPLOGIC_ERR028 = "XML element <name>不found或 empty for Module";	
+IMPEXPLOGIC_ERR029 = "XML element <name>不found或 empty for Function";	
+IMPEXPLOGIC_ERR030 = "XML element <name>不found或 empty for類型";	
+IMPEXPLOGIC_ERR031 = "XML element <name>不found或 empty for 常量";	
+IMPEXPLOGIC_ERR032 = "XML element <name>不found或 empty for Port";	
+IMPEXPLOGIC_ERR033 = "Failed to write in文件";	
+IMPEXPLOGIC_ERR034 = "No kind specified for block: /P1";				
+IMPEXPLOGIC_ERR035 = "No kind specified for function: /P1";				
+IMPEXPLOGIC_ERR036 = "No kind specified for type: /P1";				
+IMPEXPLOGIC_ERR037 = "No kind specified for constant: /P1";				
+IMPEXPLOGIC_ERR038 = "Port /P1沒有發現";				
+IMPEXPLOGIC_ERR039 = "No treekind specified for port: /P1";				
+IMPEXPLOGIC_ERR040 = "No treekind specified for pattern: /P1";				
+IMPEXPLOGIC_ERR041 = "XML element <name>不found或 empty for Block";				
+IMPEXPLOGIC_ERR042 = "Warning: The block /P1 has no behavior defined.Please update或 edit the block before exporting";
+IMPEXPLOGIC_ERR043 = "不能import/export. The current selection is invalid";				
+IMPEXPLOGIC_ERR044 = "/P1: Cannot import block with an old structure";				
+IMPEXPLOGIC_ERR045 = "Cannot export this圖元";				
+IMPEXPLOGIC_ERR046 = "Dimension already exists: /P1";
+IMPEXPLOGIC_ERR047 = "No kind specified for dimension: /P1";				
+IMPEXPLOGIC_ERR048 = "不能load the library: /P1.Please check the path in the XML文件";				
+IMPEXPLOGIC_ERR049 = "Failed to load the library: /P1";				
+IMPEXPLOGIC_ERR050 = "非法 image path: /P1";		
+IMPEXPLOGIC_ERR051 = "Cannot create the block /P1. Please check the block kind in the XML文件";				
+IMPEXPLOGIC_ERR052 = "Cannot get reference workspace of the library /P1";				
+IMPEXPLOGIC_ERR053 = "外部function block already exists: /P1";		
+IMPEXPLOGIC_ERR054 = "Block /P1 defined in XML was沒有發現";		
+IMPEXPLOGIC_ERR055 = "Block /P1 : signal /P2:/P3 used for mapping was沒有發現";		
+IMPEXPLOGIC_ERR056 = "Failed to load XML parser: /P1";		
+IMPEXPLOGIC_ERR057 = "XML file不well-formed: /P1\nImport aborted";		
+IMPEXPLOGIC_ERR058 = "Failed to load XML schema: /P1";		
+IMPEXPLOGIC_ERR059 = "Parsing error: line /P1,col /P2 : /P3";		
+IMPEXPLOGIC_ERR060 = "Parsing warning: line /P1,col /P2 : /P3";		
+IMPEXPLOGIC_ERR061 = "XML file不valid: /P1 \nImport aborted";		
+IMPEXPLOGIC_ERR062 = "Cannot update block : kinds of blocks are different";		
+IMPEXPLOGIC_ERR063 = "Warning : The XML file doesn't contain the informations used for validation. You should update 文件 with the correct informations";		
+IMPEXPLOGIC_ERR064 = "不能launch XSLT Transformation";		
+IMPEXPLOGIC_ERR065 = "XSLT Transformation failed";		
+IMPEXPLOGIC_ERR066 = "No command line specified for XSLT Transformation";		
+					
+
+	
+	
+
+
+
+
+

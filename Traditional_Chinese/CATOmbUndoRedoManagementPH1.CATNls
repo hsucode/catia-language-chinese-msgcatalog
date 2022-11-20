@@ -1,0 +1,25 @@
+CATOMBUNDOERR_IMPUNDO = 
+"/p1 在 /p2 上已檢測到一個無法反轉的操作。\n撤銷/重做歷史已齊平";
+
+CATOMBUNDOERR_IMPREDO = 
+"/p1 在 /p2 上已檢測到一個無法反轉的操作。\n撤銷/重做歷史已齊平";
+
+CATOMBUNDOERR_IMPLOG = 
+"/p1 在 /p2 上已檢測到一個無法為撤銷/重做歷史追蹤的操作。\n撤銷/重做歷史已齊平";
+
+CATOMBUNDOERR_MUTLICLIENTLOG = 
+"/p1 在 /p3 及其依賴項\n /p2 上打開多各編輯器。\n
+這將對撤銷/重做操作引起不可預測的不安全行為。因此齊平撤銷/重做日志。\n僅在此模型上保留一個編輯器繼續使用。";
+
+CATOMBUNDOERR_MUTLICLIENTLOGOFFSET = 
+"/p1 在 /p3 及其依賴項\n /p2 上打開多各編輯器。無法從 /p3 保留 /p2 編輯器執行的更改";
+
+CATOMBUNDOERR_BADMUTLICLIENTLOG = 
+"/p1/p2 由多個編輯器\n /p3\n管理撤銷/重做歷史。僅在此模型上保留一個編輯器繼續使用。";
+
+OMB_MULTIEDITOR_UNDOERROR =
+"檢測到撤銷/重做錯誤";
+
+OMB_MULTIEDITOR_UNDOERROR_MESSAGE =
+"在多編輯器配置中撤銷/重做時出錯。\n將退出會話。";
+

@@ -1,0 +1,123 @@
+DialogBoxTitle="等曲率分析";
+// Elements
+LabelElements.Title="元素： ";
+LabelElements.LongHelp="等曲率分析的元素可為一組曲面。
+這些曲面沒有連接。
+可使用上下文菜單。
+您可以使用選擇窗口進行多選擇操作。";
+LabelElements.ShortHelp="選擇一組曲面";
+// Frame Distribution
+FrameDistribution.Title="分布";
+FrameDistribution.LongHelp="分布作用于等參數曲線的 u 和 v 方向。
+分別從每個曲面單獨獲取參數，而無需考慮相鄰曲面。";
+LabelDirection.Title="方向： ";
+LabelDirection.LongHelp="如果箭狀沿 U 運行，則它在 v 等參數曲線上運行，反之亦然。";
+LabelDirection.ShortHelp="箭狀方向";
+ComboIsoCurvatureMode.LongHelp="沿 U：結果為 v 等參數曲線，數量為“U 數量”的值。
+沿 V：結果為 u 等參數曲線，數量為“V 數量”的值。
+沿 U&V：結果為“沿 U”和“沿 V”數值的公共結果。";
+ComboIsoCurvatureMode.ShortHelp="箭狀沿選定參數運行。";
+IsoCurvatureMode.AlongU="沿 U";
+IsoCurvatureMode.AlongV="沿 V";
+IsoCurvatureMode.AlongUV="沿 U & V";
+// Frame Number
+FrameNumber.Title="數目";
+FrameNumber.LongHelp="用箭狀顯示的 u 方向/v 方向上的等參數曲線數。";
+LabelNIsoLinesU.Title="U： ";
+LabelNIsoLinesU.LongHelp="用箭狀顯示的 v 等參數曲線數。
+箭狀沿 u 方向運行。";
+LabelNIsoLinesU.ShortHelp="沿 u 的等參數曲線數";
+LabelNIsoLinesV.Title="V： ";
+LabelNIsoLinesV.LongHelp="用箭狀顯示的 u 等參數曲線數。
+箭狀沿 v 方向運行。";
+LabelNIsoLinesV.ShortHelp="沿 v 的等參數曲線數";
+// Frame Range
+FrameRange.Title="范圍";
+FrameRange.LongHelp="使用 u/v 起點和終點參數、定義的等參數曲線數的分布和箭狀在這些曲線上的間隔來定義范圍。";
+CheckButtonRange.LongHelp="如果此按鈕設為關閉：
+定義的等參數曲線數分布在參數范圍 0 到 1 之間。
+箭狀顯示在參數范圍 0 到 1 之間的等參數曲線上。
+如果此按鈕設為開啟，則等參數曲線和沿這些等參數曲線運行的箭狀的分布有一個起點和一個終點。
+由范圍參數在 u 方向和 v 方向定義起點和終點。";
+CheckButtonRange.ShortHelp="切換范圍開啟/關閉";
+LabelStart.Title="起點";
+LabelStart.LongHelp="僅在被起點和終點值限制的范圍內顯示等參數曲線和箭狀。
+可在 u 方向和 v 方向定義范圍。
+0 <= 起點 < 終點 <= 1。";
+LabelStart.ShortHelp="范圍的起點參數";
+LabelEnd.Title="終點";
+LabelEnd.LongHelp="僅在被起點和終點值限制的范圍內顯示等參數曲線和箭狀。
+可在 u 方向和 v 方向定義范圍。
+0 <= 起點 < 終點 <= 1。";
+LabelEnd.ShortHelp="范圍的終點參數";
+
+// Frame Options 
+FrameOptions.Title="選項";
+FrameOptions.LongHelp="使用選項可在面或其基礎曲面上創建箭狀。
+可在圖形窗口顯示半徑的最小值和最大值。
+可反轉箭狀。";
+CheckButtonBasicSurface.Title="基礎曲面";
+CheckButtonBasicSurface.LongHelp="如果選定的元素是面，則在其基礎曲面上創建分析";
+CheckButtonBasicSurface.ShortHelp="在基礎曲面上創建箭狀";
+CheckButtonShowUVAlignment.Title="顯示 UV-對齊";
+CheckButtonShowUVAlignment.LongHelp="顯示操作器以對齊選定對象的 uv 方向，以進行分析。";
+CheckButtonShowUVAlignment.ShortHelp="顯示操作器以進行 UV-對齊";
+CheckButtonMin.Title="最小值";
+CheckButtonMin.LongHelp="在圖形窗口內顯示半徑的最小值。";
+CheckButtonMin.ShortHelp="最小半徑";
+CheckButtonMax.Title="最大值";
+CheckButtonMax.LongHelp="在圖形窗口內顯示半徑的最大值。";
+CheckButtonMax.ShortHelp="最大半徑";
+CheckButtonIndividualMinMax.Title="單個";
+CheckButtonIndividualMinMax.LongHelp="在圖形窗口中顯示每段半徑各自的最小值/最大值。";
+CheckButtonIndividualMinMax.ShortHelp="單個最小值/最大值";
+CheckButtonReverse.Title="反轉";
+CheckButtonReverse.LongHelp="箭狀已反轉，其尖峰顯示在曲面的另一端。";
+CheckButtonReverse.ShortHelp="反轉箭狀";
+
+// Frame Curvature
+FrameDisplay.Title="顯示";
+FrameDisplay.LongHelp="箭狀尖峰的參數。
+您可以顯示半徑或曲率尖峰。
+尖峰密度及其縮放由值控制，并可通過滑塊或鍵入值來更改。";
+ComboCurvatureType.ShortHelp="曲率或半徑";
+ComboCurvatureType.LongHelp="曲率是 1 除以半徑。
+線的曲率為 0，尺寸為 1/mm。";
+CurvatureType.Curvature="曲率";
+CurvatureType.Radius="半徑";
+LabelDensity.Title="密度： ";
+LabelDensity.LongHelp="對于所有等參數曲線，尖峰數都相同。
+指定的尖峰數分布在定義的范圍內。
+范圍越小，密度越大，因為尖峰數不會變。2 <= 數量 <= 100。";
+LabelDensity.ShortHelp="尖峰數";
+SliderDensity.LongHelp="對于所有等參數曲線，尖峰數都相同。
+指定的尖峰數分布在定義的范圍內。
+范圍越小，密度越大，因為尖峰數不會變。2 <= 數量 <= 100。";
+SliderDensity.ShortHelp="尖峰數";
+LabelScale.Title="縮放： ";
+LabelScale.LongHelp="可以縮放尖峰的顯示長度。
+如果縮放值為 1，則尖峰的顯示長度等于半徑。尺寸來自半徑。
+對于曲率，尖峰的顯示長度等于曲率乘以 mm * mm。這將得出長度的尺寸值。";
+LabelScale.ShortHelp="縮放尖峰的長度";
+SliderScale.LongHelp="可以縮放尖峰的顯示長度。
+如果縮放值為 1，則尖峰的顯示長度等于半徑。尺寸來自半徑。
+對于曲率，尖峰的顯示長度等于曲率乘以 mm * mm。這將得出長度的尺寸值。";
+SliderScale.ShortHelp="縮放尖峰的長度";
+
+// Frame Display
+FrameDisplayOptions.Title="選項";
+FrameDisplayOptions.LongHelp="顯示梳或梳的包絡 。
+可由用戶定義梳和包絡的顏色。";
+LabelComb.Title="梳";
+LabelComb.LongHelp="可由用戶定義梳的顏色。
+不能關閉顯示梳的選項。";
+LabelComb.ShortHelp="梳的顏色";
+ColorButtonComb.LongHelp="可在顏色窗口中定義梳的顏色。
+可從表中選擇顏色或由值來定義顏色。";
+ColorButtonComb.ShortHelp="梳的顏色";
+CheckButtonEnvelope.Title="包絡";
+CheckButtonEnvelope.LongHelp="可以開啟或關閉包絡。";
+CheckButtonEnvelope.ShortHelp="開啟/關閉包絡";
+ColorButtonEnvelope.LongHelp="可在顏色窗口中定義包絡的顏色。
+可從表中選擇顏色或由值來定義顏色。";
+ColorButtonEnvelope.ShortHelp="包絡的顏色";

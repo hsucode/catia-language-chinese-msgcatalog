@@ -1,0 +1,148 @@
+// 3951 校正官方漢化=====================================================================================
+// 3951 校正官方漢化                                     CNEXT - CXR1
+// 3951 校正官方漢化                          COPYRIGHT DASSAULT SYSTEMES 1999 
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 FILENAME    :    CATDrwOptGeo
+// 3951 校正官方漢化 LOCATION    :    DraftingUI
+// 3951 校正官方漢化 AUTHOR      :    fgx
+// 3951 校正官方漢化 BUT         :    
+// 3951 校正官方漢化 DATE        :    06.01.1999
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 DESCRIPTION :    Tools/Option du Drafting - Onglet Geometry
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 COMMENTS    :    
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 MODIFICATIONS     user  date        purpose
+// 3951 校正官方漢化    HISTORY        ----  ----        -------
+// 3951 校正官方漢化      00           fgx   06.01.1999  Creation 	
+// 3951 校正官方漢化      01           fgx   08.01.1999  Passage sur CATDrwOptTitle et CATDrwOptIcon
+// 3951 校正官方漢化      02           fgx   20.01.1999  Ajout des options de visu des cst
+// 3951 校正官方漢化      03           fgx   20.01.1999  Deplacement des options de la grid de geo a gal
+// 3951 校正官方漢化      04           fgx   20.01.1999  Ajout de CreateCenter
+// 3951 校正官方漢化      05           fgx   22.02.1999  Ajout de CstCreation, retrait de CreateConstraint
+// 3951 校正官方漢化      06           fgx   23.08.1999  Manipulation directe de la geometrie
+// 3951 校正官方漢化      07           lgk   18.12.02    revision
+// 3951 校正官方漢化=====================================================================================
+
+Title="幾何圖形";
+
+frameCenter.HeaderFrame.Global.Title="幾何圖形";
+frameCenter.HeaderFrame.Global.LongHelp="提供在幾何圖形中創建\n附加元素的功能。";
+frameCenter.IconAndOptionsFrame.OptionsFrame.checkCenter.Title="創建圓心和橢圓中心";
+frameCenter.IconAndOptionsFrame.OptionsFrame.checkCenter.LongHelp="創建圓和橢圓時\n創建圓心和橢圓中心。";
+frameCenter.IconAndOptionsFrame.OptionsFrame._checkDragWithEndPts.Title="拖動元素（包括其端點）";
+frameCenter.IconAndOptionsFrame.OptionsFrame._checkDragWithEndPts.LongHelp="拖動元素（包括其端點）。";
+frameCenter.IconAndOptionsFrame.OptionsFrame.chkEndPtsDuplGenGeom.Title="復制生成的幾何圖形時創建端點";
+frameCenter.IconAndOptionsFrame.OptionsFrame.chkEndPtsDuplGenGeom.LongHelp="復制從 3D 生成的幾何圖形時，創建端點。";
+frameCenter.IconAndOptionsFrame.OptionsFrame.labelSmartPickColor.Title="智能選取顏色：";
+frameCenter.IconAndOptionsFrame.OptionsFrame.cmbSmartPick.LongHelp="智能選取元素\n定義智能選取元素使用的顏色。";
+frameCenter.IconAndOptionsFrame.OptionsFrame.chkShowHV.Title="在“工具控制板”中顯示 H 和 V 字段";
+frameCenter.IconAndOptionsFrame.OptionsFrame.chkShowHV.LongHelp="創建 2D 幾何圖形或偏移元素時，\n在“工具控制板”中顯示 H 和 V 字段。";
+
+// 3951 校正官方漢化drag elements
+frameCenter.IconAndOptionsFrame.OptionsFrame.checkGeomDrag.Title="允許直接操作 ";
+frameCenter.IconAndOptionsFrame.OptionsFrame.checkGeomDrag.LongHelp="您可以使用鼠標移動幾何圖形。";
+frameCenter.IconAndOptionsFrame.OptionsFrame.dragOptionPushButton.Title="求解模式...";
+frameCenter.IconAndOptionsFrame.OptionsFrame.dragOptionPushButton.LongHelp="您可以為移動元素定義求解模式。";
+
+frameCstCreation.HeaderFrame.Global.Title="創建約束 ";
+frameCstCreation.HeaderFrame.Global.LongHelp="創建檢測到的和
+基于特征的約束。";
+frameCstCreation.IconAndOptionsFrame.OptionsFrame.checkCstCreation.Title="創建檢測到的和基于特征的約束 ";
+frameCstCreation.IconAndOptionsFrame.OptionsFrame.checkCstCreation.LongHelp="創建檢測到的和
+基于特征的約束。";
+frameCstCreation.IconAndOptionsFrame.OptionsFrame.framePushButton.smartPickPushButton.Title="智能拾取...";
+frameCstCreation.IconAndOptionsFrame.OptionsFrame.framePushButton.smartPickPushButton.LongHelp="動態檢測邏輯約束。";
+
+frameCstVisu.HeaderFrame.Global.Title="約束顯示";
+frameCstVisu.HeaderFrame.Global.LongHelp="為 2D 約束顯示定義選項";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.LongHelp="為 2D 約束顯示定義選項";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.checkCstVisu.Title="顯示約束 ";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.checkCstVisu.LongHelp="使以下約束類型可視。";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.labelCstRefSize.Title="參考大小： ";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.labelCstRefSize.LongHelp="定義用來顯示約束符號
+的參考大小。更改此參考大小將更改
+所有約束展示的大小。";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.editorCstRefSize.LongHelp="定義用來顯示約束符號
+的參考大小。更改此參考大小將更改
+所有約束展示的大小。";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.labelCstColor.Title="約束顏色： ";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.comboCstColor.LongHelp="定義用來顯示約束符號的顏色。
+更改它將更改所有約束展示
+的顏色。";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.labelCstColor.LongHelp="定義用來顯示約束符號的顏色。
+更改它將更改所有約束展示
+的顏色。";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.frameCTPushButton.cstTypesPushButton.Title="約束類型...";
+frameCstVisu.IconAndOptionsFrame.OptionsFrame.frameCTPushButton.cstTypesPushButton.LongHelp="定義要顯示的\n不同約束類型。";
+
+
+frameGeomManipDirect.HeaderFrame.Global.Title="操作器 ";
+frameGeomManipDirect.HeaderFrame.Global.LongHelp="定義是否必須通過單擊激活操作器
+才能移動幾何圖形。";
+
+frameGeomManipDirect.IconAndOptionsFrame.OptionsFrame.checkGeomManipDirect.Title="允許直接操作 ";
+frameGeomManipDirect.IconAndOptionsFrame.OptionsFrame.checkGeomManipDirect.LongHelp="允許直接操作
+定義是否必須通過單擊激活操作器
+才能移動幾何圖形。";
+
+
+
+// 3951 校正官方漢化 NLS push button solving mode dans onglet geometry
+geoAllowGeomManip.Title="拖動元素";
+geoAllowGeomManip.frameButtonDragElts.HeaderFrame.Global.Title="拖動元素  ";
+geoAllowGeomManip.frameButtonDragElts.HeaderFrame.Global.LongHelp="定義移動元素方式。";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.checkDragWithEndPts.Title="拖動元素（包括其端點）";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.checkDragWithEndPts.LongHelp="拖動元素（包括其端點）。";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.frameDragMode.Title="求解模式 ";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.frameDragMode.frameDragModelocked.radioDragModeStd.Title="標準模式";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.frameDragMode.frameDragModelocked.radioDragModeStd.LongHelp="移動元素時使用標準模式。";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.frameDragMode.frameDragModelocked.radioDragModeMin.Title="最小移動";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.frameDragMode.frameDragModelocked.radioDragModeMin.LongHelp="執行最小移動。";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.frameDragMode.frameDragModelocked.radioDragModeRel.Title="松弛";
+geoAllowGeomManip.frameButtonDragElts.IconAndOptionsFrame.OptionsFrame.frameDragMode.frameDragModelocked.radioDragModeRel.LongHelp="使用松弛。";
+
+// 3951 校正官方漢化 Push Button SmartPick
+geoSmartPick.Title="智能拾取";
+geoSmartPick.frameSmartPick.HeaderFrame.Global.Title="智能拾取";
+geoSmartPick.frameSmartPick.HeaderFrame.Global.LongHelp="智能拾取
+幾何圖形智能拾取。自動檢測 2D 幾何元素的位置。";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickCoincid.Title="支持線和圓";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickCoincid.LongHelp="檢測支持線和圓。";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickAlign.Title="對齊 ";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickAlign.LongHelp="定義互相對齊的兩個元素。";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickParaPerpenTang.Title="平行、垂直和相切 ";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickParaPerpenTang.LongHelp="定義兩個元素相互平行、
+垂直或相切。";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickHoriVerti.Title="水平和垂直";
+geoSmartPick.frameSmartPick.IconAndOptionsFrame.OptionsFrame.checkSmartPickHoriVerti.LongHelp="定義兩個元素相互水平或垂直。";
+
+// 3951 校正官方漢化 Constraints types
+geoTypeCst.Title="約束類型";
+geoTypeCst.frameConstraintsTypes.HeaderFrame.Global.Title="約束類型";
+geoTypeCst.frameConstraintsTypes.HeaderFrame.Global.LongHelp="定義要可視化的不同的\n約束類型。";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuHori.Title="水平 ";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuHori.LongHelp="水平
+顯示水平約束。";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuVerti.Title="垂直";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuVerti.LongHelp="垂直
+顯示垂直約束。";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuPara.Title="平行 ";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuPara.LongHelp="平行
+顯示平行約束。";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuPerpen.Title="垂直 ";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuPerpen.LongHelp="垂直
+顯示垂直約束。";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuConcen.Title="同心 ";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuConcen.LongHelp="同心
+顯示同心約束。";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuCoinci.Title="相合 ";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuCoinci.LongHelp="相合
+顯示相合約束。";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuTangen.Title="相切 ";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuTangen.LongHelp="相切
+顯示相切約束。";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuSym.Title="對稱 ";
+geoTypeCst.frameConstraintsTypes.IconAndOptionsFrame.OptionsFrame.checkCstVisuSym.LongHelp="對稱
+顯示對稱約束。";
+

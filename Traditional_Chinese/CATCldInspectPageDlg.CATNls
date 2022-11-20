@@ -1,0 +1,82 @@
+// 3951 校正官方漢化 =============================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES PROVENCE 2006
+// 3951 校正官方漢化 =============================================================================
+// 3951 校正官方漢化 CATCldUINoteRootDlg : 
+// 3951 校正官方漢化 =============================================================================
+// 3951 校正官方漢化 Implementation Notes:
+// 3951 校正官方漢化 =============================================================================
+// 3951 校正官方漢化 23-Mai-2006 YSN: Creation
+// 3951 校正官方漢化 =============================================================================
+
+MainPageTitle="顯示偏差標注";
+
+MainFrame.DeviaFrame.AnnotationSetLabel.Title="標注集";
+MainFrame.DeviaFrame.AnnotationSetLabel.LongHelp="顯示創建新標注的標注集。
+如果不存在標注集，則自動創建標注集。
+如果只有一個標注集，則自動選擇該標注集。
+如果有多個標注集，則選擇一個標注集。";
+
+MainFrame.DeviaFrame.DeviaLabel.Title="偏差分析";
+MainFrame.DeviaFrame.DeviaLabel.LongHelp="顯示創建標注的偏差分析的名稱。";
+
+// 3951 校正官方漢化 Property page
+MainFrame.ArrangeFrame.HeaderFrame.Global.Title="排列標注，按照";
+MainFrame.ArrangeFrame.HeaderFrame.Global.LongHelp="指定同一個集的所有標注在屏幕中排列的方式。";
+
+// 3951 校正官方漢化 Dialog box
+MainFrame.ArrangeFrame.IconAndOptionsFrame.OptionsFrame.Title="排列標注，按照";
+MainFrame.ArrangeFrame.IconAndOptionsFrame.OptionsFrame.LongHelp="指定同一個集的所有標注在屏幕中排列的方式。";
+
+MainFrame.ArrangeFrame.IconAndOptionsFrame.OptionsFrame.ArrangeUserRadio.Title="用戶定義";
+MainFrame.ArrangeFrame.IconAndOptionsFrame.OptionsFrame.ArrangeUserRadio.LongHelp="按照用戶排列同一個集的標注。";
+
+MainFrame.ArrangeFrame.IconAndOptionsFrame.OptionsFrame.ArrangeAutoRadio.Title="自動排列";
+MainFrame.ArrangeFrame.IconAndOptionsFrame.OptionsFrame.ArrangeAutoRadio.LongHelp="在偏差分析周圍自動排列一個標注集的所有標注。";
+
+// 3951 校正官方漢化 Property page
+MainFrame.DisplayFrame.HeaderFrame.Global.Title="顯示";
+MainFrame.DisplayFrame.HeaderFrame.Global.LongHelp="定義要顯示的標注集的所有標注的內容。";
+
+// 3951 校正官方漢化 Dialog box
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.Title="顯示";
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.LongHelp="定義要顯示的標注集的所有標注的內容。";
+
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.NameCheckBtn.Title="名稱";
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.NameCheckBtn.LongHelp="顯示標注名稱。";
+
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.XYZCheckBtn.Title="X Y Z";
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.XYZCheckBtn.LongHelp="顯示您已經選擇的定位標注的點的坐標。";
+
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.dXYZCheckBtn.Title="dX dY dZ";
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.dXYZCheckBtn.LongHelp="顯示 X、Y、Z 方向的偏差值。";
+
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.DeltaCheckBtn.Title="偏差";
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.DeltaCheckBtn.LongHelp="顯示相對 (+或-) 偏差值。";
+
+// 3951 校正官方漢化 MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.OKCheckBtn.Title = "Status, based on following tolerances";
+// 3951 校正官方漢化 MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.OKCheckBtn.LongHelp = "Indicates the deviation status by comparing the relative deviation value with 
+// 3951 校正官方漢化 the tolerances defined below. If the deviation value is positive, it is compared to the positive tolerance.
+// 3951 校正官方漢化 If this option is unchecked, the following tolerance definition is not used.";
+
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.OKCheckBtn.Title="狀態";
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.OKCheckBtn.LongHelp="顯示偏差分析公差的標注定位點。
+注意這些公差必須在偏差分析中顯示。
+當定位點的偏差值為正時，如果偏差值小于或等于正公差，狀態為“OK”。否則狀態為“KO”。
+當定位點的偏差值為負時，如果偏差值大于或等于負公差，狀態為“OK”。否則狀態為“KO”。";
+
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.TolFrame.ColorMapTolRadio.Title="自動";
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.TolFrame.ColorMapTolRadio.LongHelp="使用在輸入偏差分析的顏色映射中定義的正負公差值。
+顏色映射中公差值的修改對偏差狀態自動生效。";
+
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.TolFrame.UserTolRadio.Title="用戶定義的";
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.TolFrame.UserTolRadio.LongHelp="由用戶定義正負公差。";
+
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.TolFrame.PositiveTolLabel.Title="正公差";
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.TolFrame.PositiveTolLabel.LongHelp="顯示用戶定義的正公差值。如果偏差為正，將與該正公差值進行比較。";
+
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.TolFrame.NegativeTolLabel.Title="負公差";
+MainFrame.DisplayFrame.IconAndOptionsFrame.OptionsFrame.TolFrame.NegativeTolLabel.LongHelp="定義用戶定義的負公差值。如果偏差為負，將與該負公差值進行比較。";
+
+MainFrame.GraphicFrame.HeaderFrame.Global.Title="圖形屬性和格式";
+MainFrame.GraphicFrame.HeaderFrame.Global.LongHelp="定義標注的圖形屬性和數值格式。";
+

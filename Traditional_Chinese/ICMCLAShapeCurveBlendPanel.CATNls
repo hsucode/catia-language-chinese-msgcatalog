@@ -1,0 +1,130 @@
+DialogBoxTitle="橋接曲線";
+
+CheckButtonSingleWire.Title=" ";
+CheckButtonSingleWire.LongHelp="關閉：
+只可選擇一個元素。
+在曲線的兩端之間創建橋接。
+開啟：
+必須選擇兩個元素。";
+CheckButtonSingleWire.ShortHelp="一條曲線或兩條曲線";
+
+LabelElement1.Title="曲線 1： ";
+LabelElement1.LongHelp="選擇曲線集 1。
+您可以使用選擇窗口進行多選擇操作。
+可使用上下文菜單。
+可通過上下文菜單創建接合。";
+LabelElement1.ShortHelp="選擇曲線 1";
+
+CheckButtonBreakCrv1.LongHelp="曲線 1 已修剪，并已顯示已修剪的橋接曲線結果。
+原始曲線 1 在隱藏模式下。";
+CheckButtonBreakCrv1.ShortHelp="修剪曲線 1";
+
+LabelElement2.Title="曲線 2： ";
+LabelElement2.LongHelp="選擇曲線集 2。
+您可以使用選擇窗口進行多選擇操作。
+可使用上下文菜單。
+可通過上下文菜單創建接合。";
+LabelElement2.ShortHelp="選擇曲線 2";
+
+CheckButtonBreakCrv2.LongHelp="曲線 2 已修剪，并已顯示已修剪的橋接曲線結果。
+原始曲線 1 在隱藏模式下。";
+CheckButtonBreakCrv2.ShortHelp="修剪曲線 2";
+
+//FrameCurve1Options   ***
+FrameCurve1Options.Title="曲線 1 選項";
+FrameCurve1Options.LongHelp="曲線 1 處的橋接曲線參數";
+LabelContinuity1.Title="連續： ";
+LabelContinuity1.LongHelp="從橋接曲線起點到曲線 1 的連續階數。
+定義的方向具備優先級。
+若選中：將從曲線 1 獲得 G2（曲率）和 G3（曲率變更）。";
+LabelContinuity1.ShortHelp="到曲線 1 的連續";
+Continuity_Curve1.Button_G0.LongHelp="G0 從橋接曲線到曲線 1";
+Continuity_Curve1.Button_G0.ShortHelp="G0 - 曲線 1";
+Continuity_Curve1.Button_G1.LongHelp="G1 從橋接曲線到曲線 1。
+定義的方向具備優先級。";
+Continuity_Curve1.Button_G1.ShortHelp="G1 - 曲線 1";
+Continuity_Curve1.Button_G2.LongHelp="G2 從橋接曲線到曲線 1。
+定義的方向具備優先級。
+定義的半徑具備優先級。";
+Continuity_Curve1.Button_G2.ShortHelp="G2 - 曲線 1";
+Continuity_Curve1.Button_G3.LongHelp="G3 從橋接曲線到曲線 1。
+定義的方向具備優先級。
+定義的半徑具備優先級。";
+Continuity_Curve1.Button_G3.ShortHelp="G3 - 曲線 1";
+CheckButtonRadius1.Title="起始半徑： ";
+CheckButtonRadius1.LongHelp="橋接曲線開始于曲線 1 處具備此半徑值的弧段。
+此弧段的外插延伸是貝塞爾曲線。";
+CheckButtonRadius1.ShortHelp="起始段的半徑";
+
+CheckButtonCrv1Direction.Title="方向： ";
+CheckButtonCrv1Direction.LongHelp="可定義橋接曲線的方向。
+當您移動起點時，將保持此方向。
+保留 G0。未保留 G1、G2、G3 到曲線 1。";
+CheckButtonCrv1Direction.ShortHelp="定義起點方向";
+CheckButtonCrv1Limit.Title="限制： ";
+CheckButtonCrv1Limit.LongHelp="可由曲線 1 上的一個點定義橋接曲線的起點。如果該點不在曲線 1 上，則它將在法線方向被投影到曲線 1 上。";
+CheckButtonCrv1Limit.ShortHelp="由一個點定義橋接曲線的起點";
+Label_MidContinuity1.Title="中間連續： ";
+Label_MidContinuity1.LongHelp="定義連接曲線中間部分的連續情況。僅當開啟起始半徑時，此選項才可用。";
+Label_MidContinuity1.ShortHelp="定義中間部分的連續情況。";
+
+//FrameCurve2Options   ***
+FrameCurve2Options.Title="曲線 2 選項";
+FrameCurve2Options.LongHelp="曲線 2 處的橋接曲線參數";
+LabelContinuity2.Title="連續： ";
+LabelContinuity2.LongHelp="從橋接曲線終點到曲線 2 的連續階數。
+定義的方向具備優先級。
+若選中：將從曲線 2 獲得 G2（曲率）和 G3（曲率變更）。";
+LabelContinuity2.ShortHelp="到曲線 2 的連續";
+Continuity_Curve2.Button_G0.LongHelp="G0 從橋接曲線到曲線 2";
+Continuity_Curve2.Button_G0.ShortHelp="G0 - 曲線 2";
+Continuity_Curve2.Button_G1.LongHelp="G1 從橋接曲線到曲線 2。
+定義的方向具備優先級。";
+Continuity_Curve2.Button_G1.ShortHelp="G1 - 曲線 2";
+Continuity_Curve2.Button_G2.LongHelp="G2 從橋接曲線到曲線 2。
+定義的方向具備優先級。
+定義的半徑具備優先級。";
+Continuity_Curve2.Button_G2.ShortHelp="G2 - 曲線 2";
+Continuity_Curve2.Button_G3.LongHelp="G3 從橋接曲線到曲線 2。
+定義的方向具備優先級。
+定義的半徑具備優先級。";
+Continuity_Curve2.Button_G3.ShortHelp="G3 - 曲線 2";
+CheckButtonRadius2.Title="起始半徑： ";
+CheckButtonRadius2.LongHelp="橋接曲線結束于曲線 2 處具備此半徑值的弧段。
+此弧段的先導是貝塞爾曲線。";
+CheckButtonRadius2.ShortHelp="結束段的半徑";
+
+CheckButtonCrv2Direction.Title="方向： ";
+CheckButtonCrv2Direction.LongHelp="可定義橋接曲線的方向。
+當您移動終點時，將保持此方向。
+保留 G0。未保留 G1、G2、G3 到曲線 2。";
+CheckButtonCrv2Direction.ShortHelp="定義終點方向。";
+CheckButtonCrv2Limit.Title="限制： ";
+CheckButtonCrv2Limit.LongHelp="可由曲線 2 上的一個點定義橋接曲線的終點。如果該點不在曲線 2 上，則它將在法線方向被投影到曲線 2 上。";
+CheckButtonCrv2Limit.ShortHelp="由一個點定義橋接曲線的終點。";
+Label_MidContinuity2.Title="中間連續： ";
+Label_MidContinuity2.LongHelp="定義連接曲線中間部分的連續情況。僅當開啟起始半徑時，此選項才可用。";
+Label_MidContinuity2.ShortHelp="定義中間部分的連續情況。";
+
+LinkButtonH_CurveLink.LongHelp="曲線 2 的連續等于曲線 1 的連續";
+LinkButtonH_CurveLink.ShortHelp="連續相等";
+LinkButtonH_MidLink.LongHelp="曲線 2 的中間連續等于曲線 1 的中間連續。";
+LinkButtonH_MidLink.ShortHelp="中間連續相等";
+
+LabelSupport.Title="支持面： ";
+CheckButtonOnSupport.ShortHelp="啟用支持面";
+CheckButtonOnSupport.LongHelp="啟用支持曲面以創建曲面曲線。";
+CheckButtonAdapt.ShortHelp="啟用調整";
+CheckButtonAdapt.LongHelp="啟用調整以根據支持曲面的參數化調整橋接曲線的參數化。";
+
+CheckButton_MatchSurface1Enabled.Title="曲面 1： ";
+CheckButton_MatchSurface2Enabled.Title="曲面 2： ";
+
+GraphicLabel_Limit1.Title="限制 1";
+GraphicLabel_Limit2.Title="限制 2";
+GraphicLabel_Direction1.Title="方向 1";
+GraphicLabel_Direction2.Title="方向 2";
+
+//???????????????????????????????????????????????????????????????????
+CheckButtonBreakCrv1.Title="修剪曲線 1";
+CheckButtonBreakCrv2.Title="修剪曲線 2";

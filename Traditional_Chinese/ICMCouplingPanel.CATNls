@@ -1,0 +1,36 @@
+TabPageCoupling.Title="耦合";
+
+CheckButtonCoupling.Title="耦合";
+CheckButtonCoupling.ShortHelp="打開和關閉耦合功能。";
+CheckButtonCoupling.LongHelp="關閉：如果邊線 1 和 2 具備相同的段數，則分段是橋接曲面計算的決定性因素，即將從原始幾何圖形獲取段邊界。
+開啟：根據弧長計算分段。";
+
+CheckButtonDisplay.Title="顯示";
+CheckButtonDisplay.LongHelp="定義的耦合被顯示為線。";
+CheckButtonDisplay.ShortHelp="顯示為線";
+
+CheckButtonParameterMapping.Title="在邊線方向強制 G1 連續";
+CheckButtonParameterMapping.LongHelp="關閉：計算的結果繼承選定的支持面連續和指定的耦合條件。
+開啟：計算嘗試移除任何內部 G1 不連續。";
+CheckButtonParameterMapping.ShortHelp="移除內部 G1 不連續";
+
+CouplingName="耦合";
+MultiListCouplingVertices.ColumnTitle1=" ";
+MultiListCouplingVertices.ColumnTitle2="耦合";
+MultiListCouplingVertices.ColumnTitle3="側邊 1";
+MultiListCouplingVertices.ColumnTitle4="側邊 2";
+MultiListCouplingVertices.LongHelp="耦合表：
+- X -
+  可刪除定義的耦合。
+- 耦合 -
+  顯示定義的耦合。
+- 邊線 1/2 -
+  顯示邊線 1 和 2 上選定的耦合頂點。
+  當在表中單擊耦合頂點之后可更改選擇。";
+
+LabelCouplingVertex.Title="耦合頂點： ";
+LabelCouplingVertex.LongHelp="對于當前耦合，可以選定的現有點作為耦合頂點，或通過上下文菜單創建新點。";
+LabelCouplingVertex.ShortHelp="選擇點作為耦合頂點";
+
+VertexSelectionWarning.Title="選定的頂點不在邊線 /P1 上。
+確保已在正確的橋接邊線上定義耦合頂點。";

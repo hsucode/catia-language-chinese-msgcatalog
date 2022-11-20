@@ -1,0 +1,51 @@
+ERR_LINK_0="無法創建鏈接，因為請求的大小太大。";
+
+// 3951 校正官方漢化=================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2009
+// 3951 校正官方漢化=================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Usage Notes:    This is the OmbLink Document Unstream Warning/Errors Catalog
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+// 3951 校正官方漢化 In this catalog should only be declared all user messages relative to OMB Document Unstream
+// 3951 校正官方漢化 Please refer to the PES PLM Error Managment for the definition of a PLM error.
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Any error of this catalog must be described with :
+// 3951 校正官方漢化
+// 3951 校正官方漢化 - a Definition   :    \\ DEFINTION_WITTEN_WITH_CAPITAL_LETTERS
+// 3951 校正官方漢化 - the Mode of Treatment of this error : to be interpreted by ... / to be converted   (comment form)
+// 3951 校正官方漢化 - an Error Key & associated description :   MyErrKey.Diagnostic = "........";
+// 3951 校正官方漢化                                             MyErrKey.Advice     = "........";
+// 3951 校正官方漢化                                             MyErrKey.Request    = "........";
+// 3951 校正官方漢化 - Diagnostic,Advice,Request's nls parameters documentation :   
+// 3951 校正官方漢化                               Example:      In Diagnostic's /p :  content,  ...
+// 3951 校正官方漢化
+// 3951 校正官方漢化   Diagnostic : what exactly happens
+// 3951 校正官方漢化   Advice     : what to do to solve the error or understand it better
+// 3951 校正官方漢化   Request    : for "by action" error only, expresses what is requested on the PLM component to prevent this error. 
+// 3951 校正官方漢化                This field can be empty.
+// 3951 校正官方漢化   Diagnostic,Advice,Request's nls parameters : 
+// 3951 校正官方漢化
+// 3951 校正官方漢化   This fields are to write in understandable terms for the end user (no debug messages!)
+// 3951 校正官方漢化
+// 3951 校正官方漢化   These fields may be empty : if the error is not understandable in end user terms 
+// 3951 校正官方漢化   (no more possible explanation than "the action failed") these fields may be empty
+// 3951 校正官方漢化   This means that the PLM error is only dedicated to interpretration use. 
+// 3951 校正官方漢化
+// 3951 校正官方漢化   NLS parameters :
+// 3951 校正官方漢化   - have to be understandable by the end user
+// 3951 校正官方漢化   - NEVER indicate which PLM component is concerned by the error.
+// 3951 校正官方漢化     The PLM component concerned by the error is indicated with the CATComponentId associated to the error.
+// 3951 校正官方漢化
+// 3951 校正官方漢化=================================================================
+
+
+// 3951 校正官方漢化=================   DURING OMB STEP OF CATDWC V6TOV5 AS SPEC PROCESS  =====================
+
+// 3951 校正官方漢化 Parameter is be interpreted by omb step at CATDWC or Check prepro for CATDWC time
+// 3951 校正官方漢化 Specificity : user message valuated at run time into parameter when usefull
+OMB_CATALOG_COMPLIANCE_ERROR.Diagnostic="/p ";
+OMB_CATALOG_COMPLIANCE_ERROR.Advice="請檢查 V6ToV5 目錄合規性聲明。";
+OMB_CATALOG_COMPLIANCE_ERROR.Request="\n";
+
+

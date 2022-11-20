@@ -1,0 +1,54 @@
+// 3951 校正官方漢化------------------------------------
+// 3951 校正官方漢化 Electrical Logical - PLM Compasses
+// 3951 校正官方漢化------------------------------------
+
+// 3951 校正官方漢化 Harness links review
+EastQuadrant.HarnessLinksReview.Legend.Name="電氣：線束鏈接檢查";
+
+EastQuadrant.HarnessLinksReview.GreenStatus.Legend="直接鏈接";
+EastQuadrant.HarnessLinksReview.BlueStatus.Legend="隱式鏈接";
+EastQuadrant.HarnessLinksReview.RedStatus.Legend="無鏈接";
+EastQuadrant.HarnessLinksReview.WhiteStatus.Legend="無鏈接預期";
+
+EastQuadrant.HarnessLinksReview.Instance.Aggregation.Green.Message="聚集到線束";
+EastQuadrant.HarnessLinksReview.Instance.Allocation.Green.Message="分配到線束";
+EastQuadrant.HarnessLinksReview.Instance.Allocation.Green.IC.Message="通過其兩個或多個連接器端口進行分配";
+EastQuadrant.HarnessLinksReview.Instance.PartialAllocation.IC.Message="通過其一個連接器端口進行分配";
+EastQuadrant.HarnessLinksReview.Instance.Blue.Message="在線束內容中為隱式";
+EastQuadrant.HarnessLinksReview.Instance.Red.Message="無線束鏈接";
+EastQuadrant.HarnessLinksReview.Connection.Red.Message="邏輯連接不應屬于兩個可傳遞項的一部分";
+EastQuadrant.HarnessLinksReview.Port.Allocation.Green.Message="分配到線束";
+EastQuadrant.HarnessLinksReview.Port.Red.Message="無線束鏈接";
+EastQuadrant.HarnessLinksReview.White.Message="無線束鏈接預期";
+
+// 3951 校正官方漢化 Allocation review
+EastQuadrant.AllocationReview.Legend.Name="電氣：分配檢查";
+
+EastQuadrant.AllocationReview.GreenStatus.Legend="已分配";
+EastQuadrant.AllocationReview.YellowStatus.Legend="部分已分配";
+EastQuadrant.AllocationReview.RedStatus.Legend="未分配";
+EastQuadrant.AllocationReview.WhiteStatus.Legend="無分配預期";
+
+EastQuadrant.AllocationReview.WhiteStatus.Message="無分配預期";
+
+EastQuadrant.AllocationReview.NetAllocatingWires.Message="網分配如下導線";
+EastQuadrant.AllocationReview.NetNotAllocatingWires.Message="網未分配任何導線";
+EastQuadrant.AllocationReview.NetWithValidEnds.Message="網端點目標由已分配的線進行驗證";
+EastQuadrant.AllocationReview.NetWithNoValidEnds.Message="網端點目標未由已分配的線進行驗證";
+
+EastQuadrant.AllocationReview.WireImplementsANet.Message="線定義以下網";
+EastQuadrant.AllocationReview.WireDoesntImplementsANet.Message="線未定義任何網";
+EastQuadrant.AllocationReview.WireValidatesNetEnds.Message="線包含有效目標端點";
+EastQuadrant.AllocationReview.WireValidatesPartiallyNetEnds.Message="線包含一個有效目標端點";
+EastQuadrant.AllocationReview.WireDoesntValidatesNetEnds.Message="線不包含有效目標端點";
+
+EastQuadrant.AllocationReview.NetGroupAllocatingCables.Message="網組分配以下電纜";
+EastQuadrant.AllocationReview.NetGroupNotAllocatingCables.Message="網組未分配任何電纜";
+EastQuadrant.AllocationReview.NetGroupWithValidEnds.Message="網組端點目標由已分配的電纜進行驗證";
+EastQuadrant.AllocationReview.NetGroupWithNoValidEnds.Message="網組端點目標未由已分配的電纜進行驗證";
+
+EastQuadrant.AllocationReview.CableImplementsANetGroup.Message="電纜定義以下網組";
+EastQuadrant.AllocationReview.CableDoesntImplementsANetGroup.Message="電纜未定義任何網組";
+EastQuadrant.AllocationReview.CableValidatesNetGroupEnds.Message="電纜包含有效目標端點";
+EastQuadrant.AllocationReview.CableValidatesPartiallyNetGroupEnds.Message="電纜包含一個有效目標端點";
+EastQuadrant.AllocationReview.CableDoesntValidatesNetGroupEnds.Message="電纜不包含有效目標端點";

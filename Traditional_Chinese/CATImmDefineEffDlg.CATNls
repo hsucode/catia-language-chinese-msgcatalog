@@ -1,0 +1,119 @@
+// 3951 校正官方漢化Title = "Define Effectivity";
+TitleForEffectivity="定義有效性";
+TitleForNamedEffectivity="創建/分配已命名的生效性";
+NameInputFrame.EnvironmentLabel.Title="環境： ";
+NameInputFrame.NameLabel.Title="名稱： ";
+NameInputFrame.ObjectLabel.Title="對象： ";
+NameInputFrame.DescLabel.Title="描述： ";
+CurrentEffButtonFrame.SetCurrentEffButton.Title="設置為當前生效性";
+CurrentEffButtonFrame.GetCurrentEffButton.Title="從當前生效性加載";
+CurrentEffButtonFrame.ClearCurrentEffButton.Title="清除當前生效性";
+TabContainer.NamedEffPage.Title="使用已命名的生效性";
+TabContainer.NamedEffPage.ShortHelp="查詢現有已命名的生效性";
+TabContainer.ExprBuilderPage.Title="建立表達式";
+TabContainer.ExprBuilderPage.ShortHelp="建立生效性表達式";
+TabContainer.ExprBuilderPage.ExprBuilderFrame.EffSummaryFrm.Title="生效性概要";
+TabContainer.ExprBuilderPage.ExprBuilderFrame.IntervalFrame.StartSerialLabel.Title="開始序列號： ";
+TabContainer.ExprBuilderPage.ExprBuilderFrame.IntervalFrame.EndSerialLabel.Title="結束序列號： ";
+TabContainer.ExprBuilderPage.ExprBuilderFrame.IntervalFrame.StartDateLabel.Title="開始日期： ";
+TabContainer.ExprBuilderPage.ExprBuilderFrame.IntervalFrame.EndDateLabel.Title="結束日期： ";
+TabContainer.DirectEntryPage.Title="直接輸入生效性";
+TabContainer.DirectEntryPage.ShortHelp="將生效性表達式作為文本中的一行輸入";
+TabContainer.DirectEntryPage.DirectEntryFrame.ValidateEntryButton.Title="驗證表達式";
+
+SuccessCreateNamedEff="成功創建已命名的生效性。";
+ErrorCreateNamedEff="創建已命名的生效性出錯。";
+SuccessUseExistingNamedEff="使用現有已命名的生效性。";
+ErrorUseExistingNamedEff="檢索現有已命名生效性時出錯。";
+SuccessFromPanel="成功創建表達式。";
+ErrorFromPanel="試圖創建配置表達式時出錯。";
+ErrorFromPanelNotSet="無法創建表達式，對話框中無設置。";
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE
+
+EffDlg_NotConfigurable_Title="配置";
+EffDlg_NotConfigurable_Error="由于無法應用配置，已取消操作  \n配置信息至少在一個參考中不可用";
+EffDlg_WithoutVS_Title="配置";
+EffDlg_WithoutVS_Error="已在不進行任何配置的情況下執行操作 \n所有參考均聲明為不可配置";
+EffDlg_MultipleVS_Title="配置";
+EffDlg_MultipleVS_Error="由于無法應用配置，已取消操作 \n您正使用的參考未使用兼容配置";
+EffDlg_NENotCompatible_Title="配置";
+EffDlg_NENotCompatible_Error="由于無法應用配置，已取消操作 \n參考正使用的配置與創作上下文中的當前有效性不兼容";
+EffDlg_SessEffyNotCompatible_Title="配置";
+EffDlg_SessEffyNotCompatible_Error="由于無法應用配置，已取消操作 \n參考正使用的配置與創作上下文中的會話有效性不兼容";
+EffDlg_ConfigWOVS_Title="配置";
+EffDlg_ConfigWOVS_Error="已取消操作 \n至少配置了一個參考，但配置定義不可用 \n版本已禁止 ";
+EffDlg_SessEffyAxis_Title="配置";
+EffDlg_SessEffyAxis_Error="由于無法應用配置，已取消操作 \n創作上下文中的會話有效性正使用的軸未在參考中啟用";
+SessionEffyFrame.SessionEffyCheck.Title="在會話的下一操作中保持此有效性";
+
+// 3951 校正官方漢化Operation behavior
+SplitPanelTitle="不在上下文中的操作";
+SplitPanelText="此操作將影響在選定實例上定義的所有配置 \n請注意，其中的某些配置已超出當前的配置上下文范圍 \n您可以取消此操作，分割這些實例，然后重復此操作，\n或者繼續此操作";
+
+// 3951 校正官方漢化Titles
+EffDlg_OperationError_Title="操作錯誤";
+EffDlg_Operation_Warning_Title="操作警告";
+
+// 3951 校正官方漢化Warning/Errors
+EffDlg_MixOf_Config_Unconfig_Error="無法對此組實例執行此操作，因為它們不兼容。\n其中包含帶有有效性的實例，以及不帶有效性的實例。";
+EffDlg_MixOf_Including_Exclusing_Error="無法對此組實例執行此操作，因為它們不兼容。\n其中包含帶有與操作上下文兼容的有效性的實例，以及帶有不兼容有效性的實例。";
+EffDlg_Incompatible_Operation_Title="不兼容操作";
+EffDlg_Incompatible_Operation_Error="無法執行此操作，因為選定實例的有效性\n與操作的上下文不兼容。";
+EffDlg_Incompatible_Operation_Warning="選定實例的有效性與操作的上下文不兼容。\n\n您可以：\n\n    a) 選擇 [OK] 在不進行配置的情況下繼續操作，以影響\n        為選定實例定義的所有配置，或\n    b) 選擇 [Cancel] 取消操作";
+DefineEffDlg_Incompatible_Operation_Warning="選定實例的有效性與操作的上下文不兼容。\n\n您可以：\n\n    a) 選擇 [OK] 在不進行配置的情況下繼續操作，以影響\n        為選定實例定義的所有配置，或\n    b) 選擇 [Cancel] 返回至有效性定義";
+EffDlg_Operation_Beyond_Context_Title="操作已超出當前的配置上下文范圍";
+EffDlg_SplitContinue_Warning="為實例的有效性定義的某些配置已超出\n操作的上下文范圍。是否要分割這些實例？\n\n您可以：\n\n    a) 選擇 [Yes] 分割這些實例并繼續對新實例進行操作，\n       以僅影響通過上下文定義的配置，或\n    b) 選擇 [No] 在不進行配置的情況下繼續操作，以影響\n       為選定實例定義的所有配置，或\n    c) 選擇 [Cancel] 取消操作。";
+DefineEffDlg_SplitContinue_Warning="為實例的有效性定義的某些配置已超出\n操作的上下文范圍。是否要分割這些實例？\n\n您可以：\n\n    a) 選擇 [Yes] 分割這些實例并繼續對新實例進行操作，\n       以僅影響通過上下文定義的配置，或\n    b) 選擇 [No] 在不進行配置的情況下繼續操作，以影響\n       為選定實例定義的所有配置，或\n    c) 選擇 [Cancel] 返回至有效性定義。";
+EffDlg_Split_Same_Eff_Error="無法執行此操作，因為選定實例\n的有效性和操作的上下文\n相同。";
+EffDlg_EmptyMod_NoConfig_Operation_Warning="已在不進行配置的情況下執行操作。\n已命名有效性的上下文既不包含變型，也不包含衍生條件。";
+EffDlg_EffKind_context_Incompatible_Warning="已在不進行配置的情況下執行操作。\n使用不同的配置特性（變型與衍生）\n定義了父參考和操作上下文。";
+EffDlg_NE_Operation_NonValidatedNE_Warning="尚未驗證操作上下文的配置。\n\n您可以：\n\n    a) 選擇 [OK] 分割這些實例并繼續對新實例進行操作，\n       以僅影響通過上下文定義的配置，或\n    b) 選擇 [Cancel] 取消操作。";
+EffDlg_Operation_EffWithNonValidatedNE_Error="無法執行此操作，因為已使用尚未驗證的已命名有效性對\n選定實例進行了修改。\n在修改這些實例之前，請先驗證此命名有效性。";
+Error1_Ref_EffKind_None="無法執行操作。\n尚未在選定實例的父參考上啟用任何配置特性。\n您可以在父參考的“特性”面板中啟用配置。";
+Error2_Incompatible_Ctx_Eff="無法執行操作。\n使用不同的配置特性（變型與衍生）定義了父參考和操作上下文。";
+EffDlg_EffExpAnalysis_Error="分析有效性的內容時出錯。\n已設置有效性，但表達式可能不可用。";
+EffDlg_NamedEffExpAnalysis_Error="分析已命名有效性的內容時出錯。\n已設置表達式，但其可能不可用。";
+
+// 3951 校正官方漢化Assign Effectivity error
+EffDlg_AuthOperationError_Title="配置創作錯誤";
+ErrorAssignEffectivity="無法為實例分派有效性";
+
+// 3951 校正官方漢化Error for Change Validation
+ErrDlgTitle="錯誤消息";
+ErrDlgText="您正使用的對象正在執行“更改驗證” \n無法執行操作。\n請在創作模式下提供已命名的有效性以使用此命令。";
+
+Info_Instance_Split="已分割實例，但尚未驗證操作上下文的配置。";
+
+Error_Split_Ref_EffKind_None="無法執行分割操作。\n尚未在選定實例的父參考上啟用任何配置特性。\n您可以在父參考的“特性”面板中啟用配置。";
+
+Error_Non_configured_split="無法執行實例的已配置分割。\n未配置某些選定實例的父參考。";
+
+Expr_FALSE_ERROR="無法設置表達式，因為其導致了不含有效性域的實例";
+FALSE_Effectivity_Title="表達式為 FALSE";
+
+EffDlg_DifferentNE_Error="無法對此組實例執行此操作。\n某些實例的 NE 與在 AuthoringContext 上設置的 NE 不同。";
+
+Split_NotPossibleWithNE="無法對具有 NE 有效性的實例執行分割操作";
+
+EffDlg_Insts_hasDifferentNE_Err="無法對此組實例執行此操作，因為它們不兼容。\n實例的 NE 不同。";
+Cut=" 用于“剪切”";
+Paste=" 用于“粘貼”";
+EffDlg_EffKind_context_IncompatibleNE_Warning="未配置操作。\n實例的有效性包含創作上下文的 NE。";
+DnDPasteWithLinks_Paste=" 用于“粘貼”";
+DnDPasteWithLinks_Cut=" 用于“剪切”";
+NoImportOfHistoryDate="未導入選定實例的“歷史記錄日期”";
+
+Split_NoConf_Error="您正處于 <No Configuration> 創作模式。\n無法執行已配置的分割。\n請切換到已配置的創作模式以使用此命令";
+Covered_input="分割無用，選定配置已包含有效性";
+Domain_Not_Enabled="無法分割，沒有為實例激活任何配置";
+Eff_Not_Overlap="無法分割，有效性不重疊選定的配置";
+Split_Failed=" 分割操作失敗";
+No_Config_Act="未在參考上激活任何配置";
+No_Change_Enabled="未在參考上啟用任何更改";
+Op_Handler_Required="需要操作處理程序（更改）";
+Expr_OutOf_Scope="未在參考上啟用相同條件";
+Op_Handler_Exp_OutOf_Scope="對這些條件/模型的驗證將失敗";
+Op_Handler_Forbidden="輸入更改時不能編輯有效性";
+Set_Eff_Forbidden=" 啟用更改驗證時不能修改有效性";
+
+

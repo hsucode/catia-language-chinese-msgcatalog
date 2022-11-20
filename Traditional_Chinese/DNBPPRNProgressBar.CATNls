@@ -1,0 +1,183 @@
+// 3951 タ﹛よ簙て DOぃEDIT :: THE CAA2 WIZARD WILL REPLACE┮Τ CODE HERE
+Title = "Manufacturing Hub Load篈";
+
+// 3951 タ﹛よ簙て Scenarios 
+
+// 3951 タ﹛よ簙て Load without detailing
+
+FreshLoad.Title =				"更ing兜ヘ";
+FreshLoad.Range =				"7";
+// 3951 タ﹛よ簙てFreshLoad.Icon  =				"I_DNB_IPD_Open兜ヘ";
+FreshLoad.LibLoad.Msg =			"      Loading Process Plantypes";
+FreshLoad.LibLoad.Prog =		"1";
+FreshLoad.CreateAppCont.Msg =   "      Creating Applicative Containers";
+FreshLoad.CreateProdAppCont.Msg =   "      Creating Applicative Product Containers";
+FreshLoad.ParentProcLoad.Msg =	"      Loading Parent Processes";
+FreshLoad.ParentProcLoad.Prog = "2";
+FreshLoad.ChildProcLoad.Msg =	"      Loading Child Processes";
+FreshLoad.ChildProcLoad.Prog =	"3";
+FreshLoad.CompMfgContext.Msg =	"      Computing Manufacturing Context";
+FreshLoad.AddMfgContext.Msg =	"      Manufacturing Context Load Preprocessing";
+FreshLoad.LoadMfgContext.Msg =	"      Loading Manufacturing Context";
+
+FreshLoad.CATSPPPPRContLoad.Msg = "      Loading Product and Resource Container";
+FreshLoad.ProdLoad.Msg =		"      Creating Product Tree";
+FreshLoad.ProdLoad.Prog =		"4";
+FreshLoad.ResLoad.Msg =			"      Creating Resource Tree";
+FreshLoad.ResLoad.Prog =		"5";
+FreshLoad.Container.Msg =		"      Loading Applicative Containers";
+FreshLoad.Container.Prog =		"6";
+FreshLoad.DNBMBomNodesContLoad.Msg =	"      Loading Manaufacturing Assembly Container";
+FreshLoad.DNBStateContainer.Msg =		"      Loading States Container";
+FreshLoad.DNBFastenerFeatCont.Msg =		"      Loading Fastener 獺";
+FreshLoad.DNBLocatorFeatCont.Msg =		"      Loading Locator 獺";
+FreshLoad.DNBDpmAppContPert.Msg =		"      Loading Process Graphs";
+FreshLoad.SPPPositionsContainer.Msg =	"      Loading Position 獺";
+FreshLoad.NewWindow.Msg =		"      Creating 3D window";
+FreshLoad.NewWindow.Prog =		"7";
+
+FreshLoad.PPRLoad.Msg =		"      Loading < /p >";
+
+// 3951 タ﹛よ簙て Load detailing
+
+BlobLoad.Title =				"更ing Detailing";
+BlobLoad.Range =				"9";
+// 3951 タ﹛よ簙てBlobLoad.Icon  =				"I_DNB_IPD_Open兜ヘ";
+BlobLoad.LibLoad.Msg =			"      Loading Process Plantypes";
+BlobLoad.LibLoad.Prog =			"1";
+BlobLoad.GetBlob.Msg =			"      Getting Detailing from Process Engineer";
+BlobLoad.GetBlob.Prog =			"2";
+BlobLoad.UnstreamBlob.Msg =		"      Opening Detailing";
+BlobLoad.UnstreamBlob.Prog =	"3";
+BlobLoad.ParentProcLoad.Msg =	"      Updating Parent Processes";
+BlobLoad.ParentProcLoad.Prog =	"4";
+BlobLoad.ChildProcLoad.Msg =	"      Updating Child Processes";
+BlobLoad.ChildProcLoad.Prog =	"5";
+BlobLoad.CompMfgContext.Msg =	"      Computing Manufacturing Context";
+BlobLoad.AddMfgContext.Msg =	"      Manufacturing Context Load Preprocessing";
+BlobLoad.LoadMfgContext.Msg =	"      Loading Manufacturing Context";
+BlobLoad.CATSPPPPRContLoad.Msg = "      Updating Product and Resource Container";
+BlobLoad.ProdLoad.Msg =			"      Updating Product Tree";
+BlobLoad.ProdLoad.Prog =		"6";
+BlobLoad.ResLoad.Msg =			"      Updating Resource Tree";
+BlobLoad.ResLoad.Prog =			"7";
+BlobLoad.Container.Msg =		"      Updating Containers";
+BlobLoad.Container.Prog =		"8";
+BlobLoad.DNBMBomNodesContLoad.Msg =	"      Updating Manaufacturing Assembly Container";
+BlobLoad.DNBStateContainer.Msg =		"      Updating States Container";
+BlobLoad.DNBFastenerFeatCont.Msg =		"      Updating Fastener 獺";
+BlobLoad.DNBLocatorFeatCont.Msg =		"      Updating Locator 獺";
+BlobLoad.DNBDpmAppContPert.Msg =		"      Updating Process Graphs";
+BlobLoad.SPPPositionsContainer.Msg =	"      Updating Position 獺";
+BlobLoad.NewWindow.Msg =		"      Creating 3D window";
+BlobLoad.NewWindow.Prog =		"9";
+
+BlobLoad.PPRLoad.Msg =		"      Updating < /p >";
+
+// 3951 タ﹛よ簙て FOR HIGHLEVELAPI
+
+FreshLoad.H.Title =					"更ing兜ヘ";
+FreshLoad.H.Range =					"19";
+// 3951 タ﹛よ簙てFreshLoad.H.Icon  =					"I_DNB_IPD_Open兜ヘ";
+
+FreshLoad.H.LibLoad.Msg          =	"更ing Process Plantypes";
+FreshLoad.H.LibLoad.Prog         =	"1";
+FreshLoad.H.ProcGet.Msg          =	"莉眔ting Process Tree from Process Engineer";
+FreshLoad.H.ProcGet.Prog         =	"2";
+FreshLoad.H.ProcLoad.Msg         =	"更ing Processes";
+FreshLoad.H.ProcLoad.Prog        =	"3";
+FreshLoad.H.ProcProcRelLoad.Msg  =	"更ing Process Process Relations";
+FreshLoad.H.ProcProcRelLoad.Prog =	"4";
+FreshLoad.H.GetPcsPrdResRel.Msg  =	"莉眔ting Process Product and Process Resource Relations";
+FreshLoad.H.GetPcsPrdResRel.Prog =	"5";
+FreshLoad.H.GetPrdRes.Msg		 =	"莉眔ting Product and Resource Tree from Process Engineer";
+FreshLoad.H.GetPrdRes.Prog		 =	"6";
+FreshLoad.H.GetMK.Msg			 =	"莉眔ting Manufacturing Kits from Process Engineer";
+FreshLoad.H.GetMK.Prog			 =	"7";
+FreshLoad.H.MfgCxtLoad.Msg		 =	"Computing Manufacturing Context";
+FreshLoad.H.MfgCxtLoad.Prog		 =	"8";
+FreshLoad.H.GetAttachInfo.Msg	 =	"莉眔ting Attachment 獺";
+FreshLoad.H.GetAttachInfo.Prog	 =	"9";
+FreshLoad.H.PrdLoad.Msg          =	"更ing玻珇";
+FreshLoad.H.PrdLoad.Prog         =	"10";
+FreshLoad.H.ResLoad.Msg          =	"更ing戈方";
+FreshLoad.H.ResLoad.Prog         =	"11";
+FreshLoad.H.LoadAttach.Msg       =	"更ing Attachments";
+FreshLoad.H.LoadAttach.Prog      =	"12";
+FreshLoad.H.LoadMK.Msg			 =	"更ing Manufacturing Kits";
+FreshLoad.H.LoadMK.Prog			 =	"13";
+FreshLoad.H.RelLoad.Msg		 	 =	"更ing Process Product and Process Resource Relations";
+FreshLoad.H.RelLoad.Prog		 =	"14";
+FreshLoad.H.PertLoad.Msg	 	 =	"更ing Process Graphs";
+FreshLoad.H.PertLoad.Prog		 =	"15";
+FreshLoad.H.Load3DState.Msg	 	 =	"更ing States and 竚";
+FreshLoad.H.Load3DState.Prog	 =	"16";
+FreshLoad.H.FastnerLoad.Msg	 	 =	"更ing Fasteners and Locators";
+FreshLoad.H.FastnerLoad.Prog	 =	"17";
+FreshLoad.H.PSSLoad.Msg        = "更ing Production System Simulation 计沮";
+FreshLoad.H.PSSLoad.Prog       = "18";
+FreshLoad.H.NewWindow.Msg =			"Creating 3D window";
+FreshLoad.H.NewWindow.Prog =		"19";
+
+BlobLoad.H.Title =					"更ing Detailing";
+BlobLoad.H.Range =					"20";
+// 3951 タ﹛よ簙てBlobLoad.H.Icon  =					"I_DNB_IPD_Open兜ヘ";
+
+BlobLoad.H.LibLoad.Msg          =	"更ing Process Plantypes";
+BlobLoad.H.LibLoad.Prog         =	"1";
+BlobLoad.H.OpenBlob.Msg         =	"ゴ秨ing Detailing";
+BlobLoad.H.OpenBlob.Prog        =	"2";
+BlobLoad.H.ProcGet.Msg          =	"莉眔ting Process Tree from Process Engineer";
+BlobLoad.H.ProcGet.Prog         =	"3";
+BlobLoad.H.ProcLoad.Msg         =	"更ing Processes";
+BlobLoad.H.ProcLoad.Prog        =	"4";
+BlobLoad.H.ProcProcRelLoad.Msg  =	"更ing Process Process Relations";
+BlobLoad.H.ProcProcRelLoad.Prog =	"5";
+BlobLoad.H.GetPcsPrdResRel.Msg  =	"莉眔ting Process Product and Process Resource Relations";
+BlobLoad.H.GetPcsPrdResRel.Prog =	"6";
+BlobLoad.H.GetMK.Msg			=	"莉眔ting Manufacturing Kits from Process Engineer";
+BlobLoad.H.GetMK.Prog			=	"7";
+BlobLoad.H.GetPrdRes.Msg		=	"莉眔ting Product and Resource Tree from Process Engineer";
+BlobLoad.H.GetPrdRes.Prog		=	"8";
+BlobLoad.H.MfgCxtLoad.Msg		=	"Computing Manufacturing Context";
+BlobLoad.H.MfgCxtLoad.Prog		=	"9";
+BlobLoad.H.GetAttachInfo.Msg	=	"莉眔ting Attachment 獺";
+BlobLoad.H.GetAttachInfo.Prog	=	"10";
+BlobLoad.H.PrdLoad.Msg          =	"更ing玻珇";
+BlobLoad.H.PrdLoad.Prog         =	"11";
+BlobLoad.H.ResLoad.Msg          =	"更ing戈方";
+BlobLoad.H.ResLoad.Prog         =	"12";
+BlobLoad.H.SyncAttach.Msg       =	"Synchronizing Attachments";
+BlobLoad.H.SyncAttach.Prog      =	"13";
+BlobLoad.H.LoadMK.Msg			=	"更ing Manufacturing Kits";
+BlobLoad.H.LoadMK.Prog			=	"14";
+BlobLoad.H.RelLoad.Msg		 	=	"更ing Process Product and Process Resource Relations";
+BlobLoad.H.RelLoad.Prog			=	"15";
+BlobLoad.H.PertLoad.Msg	 		=	"更ing Process Graphs";
+BlobLoad.H.PertLoad.Prog		=	"16";
+BlobLoad.H.Load3DState.Msg	 	=	"更ing States and 竚";
+BlobLoad.H.Load3DState.Prog		=	"17";
+BlobLoad.H.FastnerLoad.Msg	 	=	"更ing Fasteners and Locators";
+BlobLoad.H.FastnerLoad.Prog		=	"18";
+BlobLoad.H.PSSLoad.Msg        = "更ing Production System Simulation 计沮";
+BlobLoad.H.PSSLoad.Prog       = "19";
+BlobLoad.H.NewWindow.Msg		=	"Creating 3D window";
+BlobLoad.H.NewWindow.Prog		=	"20";
+
+
+PPRLoad	= "Creating < /p > ";
+PPRReslLoad = "Linking </p> and </p> ";
+
+
+Query = "莉眔ting Information from Process Engineer";
+FilterProc = "Filtering Process 獺";
+MBOM = "莉眔ting Linked Manufacturing Assembly Information from Process Engineer";
+GetPrd = "莉眔ting Linked Products Information from Process Engineer";
+GetRes = "莉眔ting Linked Resources Information from Process Engineer";
+AttachInfo = "莉眔ting Attachment獺";
+UnstreamBlob = "ゴ秨ing Detailing";
+ProdSync = "Synchronizing玻珇";
+ResSync = "Synchronizing戈方";
+// 3951 タ﹛よ簙て END WIZARD REPLACEMENT ZONE
+
+

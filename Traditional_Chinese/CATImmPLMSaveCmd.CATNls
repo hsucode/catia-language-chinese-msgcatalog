@@ -1,0 +1,50 @@
+Report.Title="傳播報告";
+VersionOkSaveKO.Message="已成功在數據庫中對選定對象進行版本化。\n已在會話中使用新版本替換先前版本，但尚未在數據庫中進行傳播。\n提示：\n\t- 解決下面提到的錯誤，然后重新進行傳播，而不創建先前版本化的對象的新版本\n\t- 否則，對要單獨傳播的子實體（裝配體、過程或資源）使用“在新窗口中打開”上下文命令，然后對其進行傳播。";
+SaveAsNewOKSaveKO.Message="已成功將選定對象作為新對象在數據庫中進行傳播。\n已在會話中執行新實體對先前實體的替換，但尚未在數據庫中進行傳播。\n提示：\n\t- 解決下面提到的錯誤，然后重新進行傳播，而不對先前作為新對象傳播的對象執行“傳播為新對象”操作\n\t- 否則，對要單獨傳播的子實體（裝配體、過程或資源）使用“在新窗口中打開”上下文命令，然后對其進行傳播。";
+
+SaveSuccessfull="傳播成功。";
+
+CreatedObjects="已創建 /p1 個對象";
+CreatedObject="已創建 /p1 個對象";
+ModifiedObjects="已修改 /p1 個對象";
+ModifiedObject="已修改 /p1 個對象";
+DeletedObjects="已刪除 /p1 個對象";
+DeletedObject="已刪除 /p1 個對象";
+AutoExcludedObjects="無法傳播 /p1 個已修改對象";
+AutoExcludedObject="無法傳播 /p1 個已修改對象";
+StreamSize="已向資源庫傳輸總計 /p1 KB。";
+SavedAttributes="傳播屬性：/p1";
+SavedLinks="已傳播影響鏈接：/p1";
+
+
+RootEmpty="沒有要傳播的對象。\n已取消操作。";
+CATImmPLMSaveCmd.FirstState.Message="已準備好傳播。";
+CATImmPLMSaveCmd.AfterLaunchState.Message="已準備好傳播。";
+CATImmPLMSaveCmd.AfterCheckState.Message="已準備好傳播。";
+CATImmPLMSaveCmd.SecondState.Message="傳播診斷。";
+
+UnpropagatableObj="已排除以下對象，因為其無法傳播：";
+UnpropagatableObjs="已排除以下對象，因為其無法傳播：";
+UnpropagatableObj1="無法傳播以下已修改的對象：";
+UnpropagatableObj1s="無法傳播以下已修改的對象：";
+
+
+ERR_001.Diagnostic="尚未傳播任何對象。";
+ERR_001.Advice="檢查是否未從傳播范圍中排除所有已修改的對象或新對象。";
+
+ERR_001b.Diagnostic="不能傳播任何修改。";
+ERR_001b.Advice="";
+
+ERR_001c.Diagnostic="退出前不能傳播任何修改。";
+ERR_001c.Advice="";
+
+ERR_002.Diagnostic="內部傳播錯誤";
+ERR_002.Advice="";
+
+ERR_003.Diagnostic="無法在沒有參考的情況下傳播聚集展示。";
+ERR_003.Advice="";
+
+ERR_005.Diagnostic="已取消傳播操作。另一用戶當前正使用當前工作區";
+ERR_005.Advice="請等待此操作結束或稍后重試";
+
+AdvicePostVersionning="請使用“傳播”面板中的“選定項”選項，傳播僅與 UI 激活對象相關的對象。";

@@ -1,0 +1,156 @@
+ERR_INVALID_CHILD_PORT_1001.Request="子進程端口無效。";
+ERR_INVALID_CHILD_PORT_1001.Diagnostic="已達到端口限制。";
+ERR_INVALID_CHILD_PORT_1001.Advice="在環境文件中增加范圍值端口。";
+
+ERR_INVALID_REQUEST_PROTOCOL_1002.Request="客戶機請求格式無效。";
+ERR_INVALID_REQUEST_PROTOCOL_1002.Diagnostic="這不是 Get http 請求。";
+ERR_INVALID_REQUEST_PROTOCOL_1002.Advice="請修改 http 請求格式。";
+
+ERR_NULL_REQUEST_URI_1003.Request="客戶機請求格式為空。";
+ERR_NULL_REQUEST_URI_1003.Diagnostic="客戶機請求格式錯誤。";
+ERR_NULL_REQUEST_URI_1003.Advice="請修改 http 請求。";
+
+ERR_NO_CHILDREN_AVALAIBLE_1004.Request="無可用進程。";
+ERR_NO_CHILDREN_AVALAIBLE_1004.Diagnostic="所有進程都在使用。";
+ERR_NO_CHILDREN_AVALAIBLE_1004.Advice="請等待或修改配置文件。";
+
+ERR_LOGON_PWD_NOT_DEFINED_1005.Request="密碼無效。";
+ERR_LOGON_PWD_NOT_DEFINED_1005.Diagnostic="未找到密碼參數。";
+ERR_LOGON_PWD_NOT_DEFINED_1005.Advice="請將密碼參數放入您的請求中。";
+
+ERR_LOGON_USER_NOT_DEFINED_1006.Request="無效用戶。";
+ERR_LOGON_USER_NOT_DEFINED_1006.Diagnostic="未找到用戶參數。";
+ERR_LOGON_USER_NOT_DEFINED_1006.Advice="請將用戶參數放入您的請求中。";
+
+ERR_LOGON_INVALID_CLIENTID_1007.Request="會話 ID 無效。";
+ERR_LOGON_INVALID_CLIENTID_1007.Diagnostic="請求中的會話 ID 參數無效。";
+ERR_LOGON_INVALID_CLIENTID_1007.Advice="請將正確的會話 ID 參數放入請求中。";
+
+
+ERR_LOGON_CLIENTID_NOT_FOUND_1008.Request="會話 ID 無效。";
+ERR_LOGON_CLIENTID_NOT_FOUND_1008.Diagnostic="未找到會話 ID 參數。";
+ERR_LOGON_CLIENTID_NOT_FOUND_1008.Advice="請將會話 ID 參數放入您的請求中。";
+
+ERR_LOGON_USER_NULL_1009.Request="用戶為 null。";
+ERR_LOGON_USER_NULL_1009.Diagnostic="用戶參數為 null。";
+ERR_LOGON_USER_NULL_1009.Advice="在請求中添加用戶參數。";
+
+ERR_LOGON_AUTHENTICATION_FAILED_1010.Request="認證失敗。";
+ERR_LOGON_AUTHENTICATION_FAILED_1010.Diagnostic="用戶或密碼錯誤。";
+ERR_LOGON_AUTHENTICATION_FAILED_1010.Advice="檢查用戶和密碼的有效性。";
+
+ERR_LOGON_AUTHENTICATION_TABLE_FULL_1011.Request="認證表已滿。";
+ERR_LOGON_AUTHENTICATION_TABLE_FULL_1011.Diagnostic="已達到最大會話數目。";
+ERR_LOGON_AUTHENTICATION_TABLE_FULL_1011.Advice="請修改配置文件中的會話數目參數。";
+
+ERR_LOGON_UNKNOWN_1012.Request="未知的登錄錯誤。";
+ERR_LOGON_UNKNOWN_1012.Diagnostic="內部登錄錯誤。";
+ERR_LOGON_UNKNOWN_1012.Advice="請檢查配置服務器文件。";
+
+ERR_COM_CHILD_SOCKET_ERROR_1013.Request="內部錯誤。";
+ERR_COM_CHILD_SOCKET_ERROR_1013.Diagnostic="通信失敗。套接字錯誤。";
+ERR_COM_CHILD_SOCKET_ERROR_1013.Advice="請檢查服務器跟蹤文件，獲取更多信息。";
+
+ERR_IMPERSONATION_CHILDREN_IMPOSSIBLE_1014.Request="進程扮演失敗。";
+ERR_IMPERSONATION_CHILDREN_IMPOSSIBLE_1014.Diagnostic="無法更改進程標識。";
+ERR_IMPERSONATION_CHILDREN_IMPOSSIBLE_1014.Advice="驗證新身份的有效性。檢查用戶和密碼。";
+
+ERR_LOGON_SESSIONID_NULL_1015.Request="會話 ID 無效。";
+ERR_LOGON_SESSIONID_NULL_1015.Diagnostic="會話 ID 為 null。";
+ERR_LOGON_SESSIONID_NULL_1015.Advice="請將正確的會話 ID 參數放入請求中。";
+
+ERR_REQUEST_TIMEOUT_REACHED_1016.Request="請求已超時。";
+ERR_REQUEST_TIMEOUT_REACHED_1016.Diagnostic="請求太長，已被取消。";
+ERR_REQUEST_TIMEOUT_REACHED_1016.Advice="請重新啟動請求。";
+
+ERR_DUMP_PARAM_TYPE_NOT_FOUND_1017.Request="未找到參數。";
+ERR_DUMP_PARAM_TYPE_NOT_FOUND_1017.Diagnostic="請求中沒有類型參數。";
+ERR_DUMP_PARAM_TYPE_NOT_FOUND_1017.Advice="請將類型參數放入請求中。";
+
+ERR_LOGON_PWD_NULL_1018.Request="密碼無效。";
+ERR_LOGON_PWD_NULL_1018.Diagnostic="密碼為 null。";
+ERR_LOGON_PWD_NULL_1018.Advice="在請求中添加正確的密碼參數。";
+
+ERR_NOT_ACCESS_CHILD_1021.Request="無法聯系子進程。";
+ERR_NOT_ACCESS_CHILD_1021.Diagnostic="進程已死或不再啟動。";
+ERR_NOT_ACCESS_CHILD_1021.Advice="請重新啟動請求。";
+
+ERR_LOGON_USER_UNKNOWN_1022.Request="認證失敗。";
+ERR_LOGON_USER_UNKNOWN_1022.Diagnostic="用戶或密碼錯誤。";
+ERR_LOGON_USER_UNKNOWN_1022.Advice="檢查用戶和密碼的有效性";
+
+ERR_LOGON_PWD_UNKNOWN_1023.Request="認證失敗。";
+ERR_LOGON_PWD_UNKNOWN_1023.Diagnostic="用戶或密碼錯誤。";
+ERR_LOGON_PWD_UNKNOWN_1023.Advice="檢查用戶和密碼的有效性。";
+
+ERR_LOGON_INTERNAL_1024.Request="認證失敗。";
+ERR_LOGON_INTERNAL_1024.Diagnostic="無法交換標識。";
+ERR_LOGON_INTERNAL_1024.Advice="檢查用戶和密碼的有效性。";
+
+ERR_CREATE_FACTORY_IMPL_1026.Request="無法實例化實施工廠";
+ERR_CREATE_FACTORY_IMPL_1026.Diagnostic="請參閱跟蹤文件，獲取更多信息";
+ERR_CREATE_FACTORY_IMPL_1026.Advice="請參閱跟蹤文件，獲取更多信息";
+
+ERR_CHILDREN_BUSY_1027.Request="無法聯系子進程。";
+ERR_CHILDREN_BUSY_1027.Diagnostic="有狀態子進程正忙。";
+ERR_CHILDREN_BUSY_1027.Advice="請檢查上一個請求的結尾并再次發送請求。";
+
+ERR_LOGON_IMPL_ID_NOT_DEFINED_1028.Request="實施標識符為 null。";
+ERR_LOGON_IMPL_ID_NOT_DEFINED_1028.Diagnostic="實施標識符參數為 null。";
+ERR_LOGON_IMPL_ID_NOT_DEFINED_1028.Advice="在請求中添加實施標識符參數。";
+
+ERR_LOGON_IMPL_ID_NOT_FOUND_1029.Request="未找到實施標識符。";
+ERR_LOGON_IMPL_ID_NOT_FOUND_1029.Diagnostic="實施標識符參數無效。";
+ERR_LOGON_IMPL_ID_NOT_FOUND_1029.Advice="在請求中添加正確的實施標識符參數。";
+
+ERR_LOGON_IMPL_NAME_NOT_FOUND_1030.Request="未找到實施名稱。";
+ERR_LOGON_IMPL_NAME_NOT_FOUND_1030.Diagnostic="不是此實施標識符的實施名稱。";
+ERR_LOGON_IMPL_NAME_NOT_FOUND_1030.Advice="檢查實施詞典。";
+
+ERR_LOGON_IMPL_LIBRARY_NOT_FOUND_1031.Request="未找到實施庫。";
+ERR_LOGON_IMPL_LIBRARY_NOT_FOUND_1031.Diagnostic="不是此實施標識符的實施庫。";
+ERR_LOGON_IMPL_LIBRARY_NOT_FOUND_1031.Advice="檢查實施詞典。";
+
+ERR_LOGON_IMPL_ID_IS_NULL_1032.Request="實施標識符為 null。";
+ERR_LOGON_IMPL_ID_IS_NULL_1032.Diagnostic="內部檢查失敗。";
+ERR_LOGON_IMPL_ID_IS_NULL_1032.Advice="檢查實施標識符參數。";
+
+ERR_LOGON_POST_CONTENT_INVALID_1038.Request="登錄請求無效。";
+ERR_LOGON_POST_CONTENT_INVALID_1038.Diagnostic="登錄 POST 請求不是滿意的有效信息。";
+ERR_LOGON_POST_CONTENT_INVALID_1038.Advice="修改登錄請求。";
+
+ERR_INTERNAL_INVALID_POINTER_1039.Request="內部錯誤。";
+ERR_INTERNAL_INVALID_POINTER_1039.Diagnostic="檢測到 NULL 指針。";
+ERR_INTERNAL_INVALID_POINTER_1039.Advice="請參閱跟蹤文件，獲取更多信息。";
+
+ERR_DUMP_PARAM_OPERATION_NOT_FOUND_1040.Request="未找到參數。";
+ERR_DUMP_PARAM_OPERATION_NOT_FOUND_1040.Diagnostic="請求中沒有操作參數。";
+ERR_DUMP_PARAM_OPERATION_NOT_FOUND_1040.Advice="請將操作參數放入請求中。";
+
+ERR_DUMP_PARAM_TYPE_VALUE_UNKNOWN_1041.Request="參數值無效。";
+ERR_DUMP_PARAM_TYPE_VALUE_UNKNOWN_1041.Diagnostic="類型參數的值未知";
+ERR_DUMP_PARAM_TYPE_VALUE_UNKNOWN_1041.Advice="請放入正確的參數類型值。";
+
+ERR_DUMP_PARAM_OPERATION_UNKNOWN_1042.Request="未找到參數。";
+ERR_DUMP_PARAM_OPERATION_UNKNOWN_1042.Diagnostic="請求中沒有操作參數。";
+ERR_DUMP_PARAM_OPERATION_UNKNOWN_1042.Advice="請將操作參數放入請求中。";
+
+ERR_LOGON_INVALID_CLIENTID_FOR_THIS_IMPL_1043.Request="會話標識對此實施無效。";
+ERR_LOGON_INVALID_CLIENTID_FOR_THIS_IMPL_1043.Diagnostic="無法訪問具有此會話標識的該服務。";
+ERR_LOGON_INVALID_CLIENTID_FOR_THIS_IMPL_1043.Advice="請使用正確的實施重試登錄請求。";
+
+ERR_SERVICE_IMPL_INTERNAL_ERROR_1044.Request="無法執行服務請求。";
+ERR_SERVICE_IMPL_INTERNAL_ERROR_1044.Diagnostic="內部錯誤。";
+ERR_SERVICE_IMPL_INTERNAL_ERROR_1044.Advice="內部錯誤。";
+
+ERR_SERVICE_IMPOSSIBLE_SET_PARAM_1045.Request="無法設置參數。";
+ERR_SERVICE_IMPOSSIBLE_SET_PARAM_1045.Diagnostic="未知參數。";
+ERR_SERVICE_IMPOSSIBLE_SET_PARAM_1045.Advice="驗證要設置的參數名稱。";
+
+ERR_SERVICE_PARAM_NOT_FOUND_1046.Request="無法設置參數。";
+ERR_SERVICE_PARAM_NOT_FOUND_1046.Diagnostic="未知參數。";
+ERR_SERVICE_PARAM_NOT_FOUND_1046.Advice="驗證參數名稱。";
+
+
+
+

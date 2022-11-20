@@ -1,0 +1,81 @@
+
+ERR_GDY_InvalidFrequencySetting.Diagnostic="Invalid frequency value.  The value must be greater than 0.0 to /P01.";
+ERR_GDY_InvalidNumIntvSetting.Diagnostic="Invalid Number of Intervals value.  The value must be from 1 to /P01.";
+ERR_GDY_InvalidFrequencySettings_MaxMin.Diagnostic="Invalid frequency settings in the scenario parameters.  The starting frequency must be less than or equal to ending frequency.";
+ERR_GDY_InvalidStep.Diagnostic="Invalid step interval setting in the scenario parameters.  The duration divided by the interval must be from 0 to /P01.";
+ERR_GDY_StepLessThanZero.Diagnostic="Invalid step interval setting in the scenario parameters.  The interval must be greater than 0.";
+ERR_GDY_InvalidDuration.Diagnostic="Invalid duration setting in the scenario parameters.  The value must be from 0 to /P01.";
+ERR_GDY_MissingFrequencyScenario.Diagnostic="Frequency scenario selection is mandatory.Select one or click Cancel to exit.";
+ERR_GDY_MissingFrequencyScenario.Advice="";
+ERR_GDY_MissingFrequencyScenario.Request="";
+ERR_GDY_MissingExcitation.Diagnostic="There must be at least one load excitation or base motion.";
+ERR_TransientHarmonicLicenseError.Diagnostic = "You are not authorized to modify the features under this scenario. Get the license that authorize you to modify.";
+
+ERR_GDY_DampingInvalidGlobalDirect="Invalid Global Direct damping value.  The value must be from 0 to /P01.";
+ERR_GDY_DampingInvalidGlobalRayleighAlpha="Invalid Global Rayleigh Alpha damping value.  The value must be from 0 to /P01.";
+ERR_GDY_DampingInvalidGlobalRayleighBeta="Invalid Global Rayleigh Beta damping value.  The value must be from 0 to /P01.";
+
+ERR_GDY_DampingOverlappingFrequency="There are overlapping frequency ranges in the damping table.";
+ERR_GDY_DampingMinGTMaxFrequency="The maximu frequency must be greater than the minimum.";
+ERR_GDY_DampingInvalidFrequency="Invalid damping frequency.  The value must be from 0 to /P01.";
+ERR_GDY_DampingInvalidDirect="Invalid Direct damping value in the damping table.  The value must be from 0 to /P01";
+ERR_GDY_DampingInvalidRayleighAlpha="Invalid Rayleigh Alpha damping value in the damping table.  The value must be from 0 to /P01.";
+ERR_GDY_DampingInvalidRayleighBeta="Invalid Rayleigh Beta damping value in the damping table.  The value must be from 0 to /P01.";
+ERR_GDY_DampingInternalError="Internal error during damping validation.";
+
+ERR_GDY_InternalError="Internal error.";
+
+ERR_GDY_ModulationError.Diagnostic="/P01 is not a valid unit of /P02";
+
+ERR_2001.Request    = "GDY Internal Error ; unable to compute response.";
+ERR_2001.Diagnostic = "Unexpected Internal Condition.";
+
+ERR_2002.Request    = "GDY Internal Error ; unable to compute response.";
+ERR_2002.Diagnostic = "Unexpected SIM Exception.";
+
+ERR_2003.Request    = "GDY Internal Error ; unable to compute response.";
+ERR_2003.Diagnostic = "Unexpected Exception.";
+
+ERR_2011.Request    = "Too many frames requested ; unable to compute response.";
+ERR_2011.Diagnostic = "/P01 Frame points requested; limit is /P02 frame points.";
+
+ERR_2012.Request    = "Invalid transient analysis parameters.";
+ERR_2012.Diagnostic = "Step(/P01) and Duration(/P02) must both be greater than zero.";
+
+ERR_2013.Request    = "Unable to compute frame points.";
+ERR_2013.Diagnostic = "Step(/P01) too small for requested Duration(/P02).";
+
+ERR_2014.Request    = "Please correct the start frequency.";
+ERR_2014.Diagnostic = "Start frequency must be greater than zero (0.0).";
+
+ERR_2015.Request    = "Please correct the start or end frequency.";
+ERR_2015.Diagnostic = "End frequency must be greater than start frequency.";
+
+ERR_2016.Request    = "Please correct the number of requested intervals.";
+ERR_2016.Diagnostic = "Requested number of intervals (/P01) exceeds limit (/P02).";
+
+ERR_2017.Request    = "Please correct the number of requested intervals";
+ERR_2017.Diagnostic = "Number of intervals must be greater than zero.";
+
+ERR_2021.Request    = "One or more GDY input features are invalid.";
+ERR_2021.Diagnostic = "Unable to solve with invalid inputs.";
+ERR_2021.Advice     = "Please correct the invalid input parameters.";
+
+ERR_2022.Request    = "All loads and motions have zero scale.";
+ERR_2022.Diagnostic = "Unable to solve with no load or motion as input.";
+ERR_2022.Advice     = "Please check and correct loading conditions.";
+
+ERR_2023.Request    = "Load modulation is in invalid units.";
+ERR_2023.Diagnostic = "Check load modulations for correct units.";
+
+ERR_2024.Request    = "Base motion translation modulation is in invalid units.";
+ERR_2024.Diagnostic = "Check translation modulation for correct units.";
+
+ERR_2025.Request    = "Base motion rotation modulation is in invalid units.";
+ERR_2025.Diagnostic = "Check rotational modulation for correct units.";
+
+PROGRESS_00 = "Frame Computation";
+PROGRESS_01 = "Load Setup";
+PROGRESS_02 = "Motion Setup";
+PROGRESS_03 = "Damping Resolution";
+PROGRESS_04 = "System Solve";

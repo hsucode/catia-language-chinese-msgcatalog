@@ -1,0 +1,186 @@
+// 3951 校正官方漢化 DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+
+FrameKinChain.LabelKinChain.Title=" 逆運動鏈 ";
+FrameKinChain.LabelKinChain.Help="當前逆運動鏈。";
+FrameKinChain.LabelKinChain.ShortHelp="當前逆運動鏈。";
+FrameKinChain.LabelKinChain.LongHelp="當前逆運動鏈。\n一個機器人可以像雙腕機器人一樣擁有多條鏈。";
+
+FrameKinChain.ComboKinChain.Title=" 逆運動鏈 ";
+FrameKinChain.ComboKinChain.Help="當前逆運動鏈。";
+FrameKinChain.ComboKinChain.ShortHelp="當前逆運動鏈。";
+FrameKinChain.ComboKinChain.LongHelp="當前逆運動鏈。\n 一個機器人可以像雙腕機器人一樣擁有多條鏈。";
+
+
+FrameKinChain.BtnCreateInvKinChain.Title=" 創建新的 IK 鏈 ";
+FrameKinChain.BtnCreateInvKinChain.Help=" 創建新的逆運動鏈";
+FrameKinChain.BtnCreateInvKinChain.ShortHelp=" 創建新的逆運動鏈";
+FrameKinChain.BtnCreateInvKinChain.LongHelp=" 創建新的逆運動鏈。\n 一個機器人可以像雙腕機器人一樣擁有多條鏈。";
+
+
+FrameKinChain.BtnRemoveCurrentKinChain.Title=" 刪除當前 IK 鏈 ";
+FrameKinChain.BtnRemoveCurrentKinChain.Help=" 刪除當前的逆運動鏈 ";
+FrameKinChain.BtnRemoveCurrentKinChain.ShortHelp=" 刪除當前的逆運動鏈 ";
+FrameKinChain.BtnRemoveCurrentKinChain.LongHelp=" 刪除當前逆運動鏈。\n 始終存在一條默認運動鏈。";
+
+// 3951 校正官方漢化-------------------------------------------------------
+// 3951 校正官方漢化Basic tab page
+// 3951 校正官方漢化-------------------------------------------------------
+TabBasicContainer.Basic.Title="基本";
+TabBasicContainer.Basic.Help="輸入基本信息以定義逆運動。";
+TabBasicContainer.Basic.ShortHelp="輸入基本信息以定義逆運動。";
+TabBasicContainer.Basic.LongHelp="輸入基本信息以定義逆運動=\n  - 安裝零件\n  - 基本零件\n  - 參考零件\  - 求解器類型";
+
+TabBasicContainer.Basic.LabelMountPart.Title="安裝零件";
+TabBasicContainer.Basic.LabelMountPart.Help="機器人的安裝零件";
+TabBasicContainer.Basic.LabelMountPart.ShortHelp="機器人的安裝零件";
+TabBasicContainer.Basic.LabelMountPart.LongHelp="機器人的安裝零件。\n 要設置它，請設置關聯編輯器的焦點并選擇一個零件。";
+
+TabBasicContainer.Basic.EditorMountPart.Title="安裝零件";
+TabBasicContainer.Basic.EditorMountPart.Help="機器人的安裝零件";
+TabBasicContainer.Basic.EditorMountPart.ShortHelp="機器人的安裝零件";
+TabBasicContainer.Basic.EditorMountPart.LongHelp="機器人的安裝零件。\n 要設置它，請設置關聯編輯器的焦點并選擇一個零件。";
+
+TabBasicContainer.Basic.LabelMountOffset.Title="安裝偏移";
+TabBasicContainer.Basic.LabelMountOffset.Help="定義工具中心點（TCP）的安裝偏移。";
+TabBasicContainer.Basic.LabelMountOffset.ShortHelp="定義工具中心點（TCP）的安裝偏移。";
+TabBasicContainer.Basic.LabelMountOffset.LongHelp="通過選擇安裝零件上感興趣的框架來指示的工具中心位置。\n 要對其進行設置，請設置關聯編輯器的焦點并選擇一個零件 \n 這是可選選項。默認情況下，如果未指定字段，安裝零件的原點會被假定。";
+
+TabBasicContainer.Basic.EditorMountOffset.Title="安裝偏移";
+TabBasicContainer.Basic.EditorMountOffset.Help="定義工具中心點（TCP）的安裝偏移。";
+TabBasicContainer.Basic.EditorMountOffset.ShortHelp="定義工具中心點（TCP）的安裝偏移。";
+TabBasicContainer.Basic.EditorMountOffset.LongHelp="通過選擇安裝零件上感興趣的框架來指示的工具中心位置。\n 要對其進行設置，請設置關聯編輯器的焦點并選擇一個零件 \n 這是可選選項。默認情況下，如果未指定字段，安裝零件的原點會被假定。";
+
+TabBasicContainer.Basic.LabelBasePart.Title="基本零件";
+TabBasicContainer.Basic.LabelBasePart.Help="機器人的基本零件。";
+TabBasicContainer.Basic.LabelBasePart.ShortHelp="機器人的基本零件。";
+TabBasicContainer.Basic.LabelBasePart.LongHelp="機器人的基本零件。\n 要設置它，請設置關聯編輯器的焦點并選擇一個零件。";
+
+TabBasicContainer.Basic.EditorBasePart.Title="選擇基本零件";
+TabBasicContainer.Basic.EditorBasePart.Help="選擇機器人的基本零件。";
+TabBasicContainer.Basic.EditorBasePart.ShortHelp="選擇機器人的基本零件。";
+TabBasicContainer.Basic.EditorBasePart.LongHelp="選擇機器人的基本零件。\n 要設置它，請設置關聯編輯器的焦點并選擇一個零件。";
+
+TabBasicContainer.Basic.LabelRefPart.Title="參考零件";
+TabBasicContainer.Basic.LabelRefPart.Help="機器人的參考零件。";
+TabBasicContainer.Basic.LabelRefPart.ShortHelp="機器人的參考零件。";
+TabBasicContainer.Basic.LabelRefPart.LongHelp="機器人的參考零件。\n 參考零件多數情況下與基本零件相同。\n 它在已安裝的系統中會不同。\n 要設置它，請設置關聯編輯器的焦點并選擇一個零件。";
+
+TabBasicContainer.Basic.EditorRefPart.Title="選擇參考零件";
+TabBasicContainer.Basic.EditorRefPart.Help="選擇機器人得參考零件。";
+TabBasicContainer.Basic.EditorRefPart.ShortHelp="選擇機器人得參考零件。";
+TabBasicContainer.Basic.EditorRefPart.LongHelp="選擇機器人的參考零件。\n 參考零件多數情況下與基本零件相同。\n 它在已安裝的系統中會不同。\n 要設置它，請設置關聯編輯器的焦點并選擇一個零件。";
+
+TabBasicContainer.Basic.LabelApproachAxis.Title="接近軸";
+TabBasicContainer.Basic.LabelApproachAxis.Help="機器人的接近軸。";
+TabBasicContainer.Basic.LabelApproachAxis.ShortHelp="機器人的接近軸。";
+TabBasicContainer.Basic.LabelApproachAxis.LongHelp="機器人的接近軸。\n 選擇 X、Y 或 Z。";
+
+TabBasicContainer.Basic.ComboApproachAxis.Title="接近軸";
+TabBasicContainer.Basic.ComboApproachAxis.Help="機器人的接近軸。";
+TabBasicContainer.Basic.ComboApproachAxis.ShortHelp="機器人的接近軸。";
+TabBasicContainer.Basic.ComboApproachAxis.LongHelp="機器人的接近軸。\n 選擇 X、Y 或 Z。";
+
+TabBasicContainer.Basic.LabelApproachDirection.Title="接近方向";
+TabBasicContainer.Basic.LabelApproachDirection.Help="機器人的接近方向。";
+TabBasicContainer.Basic.LabelApproachDirection.ShortHelp="機器人的接近方向。";
+TabBasicContainer.Basic.LabelApproachDirection.LongHelp="機器人得接近方向。\n 可為“進”或“出”。";
+
+TabBasicContainer.Basic.ComboApproachDirection.Title="接近方向";
+TabBasicContainer.Basic.ComboApproachDirection.Help="機器人的接近方向。";
+TabBasicContainer.Basic.ComboApproachDirection.ShortHelp="機器人的接近方向。";
+TabBasicContainer.Basic.ComboApproachDirection.LongHelp="機器人得接近方向。\n 可為“進”或“出”。";
+
+ApproachXId="X";
+ApproachYId="Y";
+ApproachZId="Z";
+ApproachOutId="流出";
+ApproachInId="流入";
+IKSolverLegacyNumericId="遺留數字反轉";
+IKSolverGenericId="一般反轉";
+IKSolverDeviceId="設備特定的反轉";
+IKSolverUserDefinedId="用戶反轉";
+IKSolverCdsNumericId="數字反轉";
+
+TabBasicContainer.Basic.LabelSolverType.Title="求解器類型";
+TabBasicContainer.Basic.LabelSolverType.Help="用于計算運動的求解器類型。";
+TabBasicContainer.Basic.LabelSolverType.ShortHelp="用于計算運動的求解器類型。";
+TabBasicContainer.Basic.LabelSolverType.LongHelp="用于計算運動的求解器類型。\n 有 4 種求解器：\n  - 數字：基于數字計算。\n  - 常規：基于常規計算。\n  - 設備特定：針對設備類型進行優化。\n  - 用戶定義：在外部共享庫中定義的求解器。";
+
+TabBasicContainer.Basic.ComboSolverType.Title="選擇求解器類型";
+TabBasicContainer.Basic.ComboSolverType.Help="用于計算運動的求解器類型。";
+TabBasicContainer.Basic.ComboSolverType.ShortHelp="用于計算運動的求解器類型。";
+TabBasicContainer.Basic.ComboSolverType.LongHelp="用于計算運動的求解器類型。\n 有 4 種求解器：\n  - 數字：基于數字計算。\n  - 常規：基于常規計算。\n  - 設備特定：針對設備類型進行優化。\n  - 用戶定義：在外部共享庫中定義的求解器。";
+
+
+TabBasicContainer.Basic.LabelKinematicRoutine.Title="例程";
+TabBasicContainer.Basic.LabelKinematicRoutine.Help="基于選定求解器類型的非可編輯的字符串。";
+TabBasicContainer.Basic.LabelKinematicRoutine.ShortHelp="基于選定求解器類型的非可編輯的字符串。";
+TabBasicContainer.Basic.LabelKinematicRoutine.LongHelp="基于選定求解器類型的非可編輯的字符串。";
+
+TabBasicContainer.Basic.EditorRoutineName.Title="例程";
+TabBasicContainer.Basic.EditorRoutineName.Help="基于選定求解器類型的非可編輯的字符串。";
+TabBasicContainer.Basic.EditorRoutineName.ShortHelp="基于選定求解器類型的非可編輯的字符串。";
+TabBasicContainer.Basic.EditorRoutineName.LongHelp="基于選定求解器類型的非可編輯的字符串。";
+
+TabBasicContainer.Basic.LabelKinematicClass.Title="運動類別";
+TabBasicContainer.Basic.LabelKinematicClass.Help="基于當前求解器可用的運動類別。";
+TabBasicContainer.Basic.LabelKinematicClass.ShortHelp="基于當前求解器可用的運動類別。";
+TabBasicContainer.Basic.LabelKinematicClass.LongHelp="基于當前求解器可用的運動類別。\n 此屬性不可用于數字求解器。";
+
+TabBasicContainer.Basic.ComboClassName.Title="運動類別";
+TabBasicContainer.Basic.ComboClassName.Help="基于當前求解器可用的運動類別。";
+TabBasicContainer.Basic.ComboClassName.ShortHelp="基于當前求解器可用的運動類別。";
+TabBasicContainer.Basic.ComboClassName.LongHelp="基于當前求解器可用的運動類別。\n 此屬性不可用于數字求解器。\n\n 注意：一旦安裝零件、參考零件和基礎零件被全部選中 \n，此命令將嘗試自動識別運動類別。";
+
+TabBasicContainer.Basic.ComboClassName.Title="運動類別";
+TabBasicContainer.Basic.ComboClassName.Help="選擇運動類別。注意：一旦安裝零件、參考零件和基本零件被全部選中，系統不會嘗試自動識別運動類別。";
+TabBasicContainer.Basic.ComboClassName.ShortHelp="選擇運動類。";
+TabBasicContainer.Basic.ComboClassName.LongHelp="選擇運動類別。注意：一旦安裝零件、參考零件和基本零件被全部選中，系統不會嘗試自動識別運動類別。";
+
+IKClassName1Id="直角 [ TTT:RRR ]";
+IKClassName2Id="SCARA [ TRR:RRR ]";
+IKClassName3Id="圓柱 [ TRT:RRR ]";
+IKClassName4Id="塊 [ TTR:RRR ]";
+IKClassName5Id="口徑 [ RTT:RRR ]";
+IKClassName6Id="聯接的 [ RRR:RRR ]";
+IKClassName7Id="球面 [ RRT:RRR ]";
+IKClassName8Id="鐘擺 [ RTR:RRR ]";
+IKClassName9Id="未知";
+
+TabBasicContainer.Basic.ButtonDELMIAKinRoutine.Title="激活 DELMIA 許可證 kin 例程";
+TabBasicContainer.Basic.ButtonDELMIAKinRoutine.Help="DELMIA 許可證 kin 例程";
+TabBasicContainer.Basic.ButtonDELMIAKinRoutine.ShortHelp="DELMIA 許可證 kin 例程";
+TabBasicContainer.Basic.ButtonDELMIAKinRoutine.LongHelp="DELMIA 許可證 kin 例程";
+
+TabBasicContainer.Basic.FrameDELMIAKinRoutineId.LabelDELMIAKinRoutineProductId.Title="許可證產品：";
+TabBasicContainer.Basic.FrameDELMIAKinRoutineId.LabelDELMIAKinRoutineProductId.Help="選擇產品許可證。";
+TabBasicContainer.Basic.FrameDELMIAKinRoutineId.LabelDELMIAKinRoutineProductId.ShortHelp="選擇產品許可證。";
+TabBasicContainer.Basic.FrameDELMIAKinRoutineId.LabelDELMIAKinRoutineProductId.LongHelp="選擇產品許可證。";
+
+TabBasicContainer.Basic.FrameDELMIAKinRoutineId.ComboDELMIAKinRoutineProductId.Title="許可證產品：";
+TabBasicContainer.Basic.FrameDELMIAKinRoutineId.ComboDELMIAKinRoutineProductId.Help="選擇產品許可證。";
+TabBasicContainer.Basic.FrameDELMIAKinRoutineId.ComboDELMIAKinRoutineProductId.ShortHelp="選擇產品許可證。";
+TabBasicContainer.Basic.FrameDELMIAKinRoutineId.ComboDELMIAKinRoutineProductId.LongHelp="選擇產品許可證。";
+
+NotinKinematicChain="不在運動鏈中";
+Warning="警告";
+
+FrameButton.BtnMore.Title=" 高級...";
+FrameButton.BtnMore.Help="顯示高級選項卡頁面以自定義逆運動求解器的輸入和輸出";
+FrameButton.BtnMore.ShortHelp="顯示高級選項卡頁面。";
+FrameButton.BtnMore.LongHelp="顯示高級選項卡頁面以自定義逆運動求解器的輸入和輸出";
+
+GenericInvKinComputationError="針對給定機器人的常規逆運動參數的計算失敗";
+CommandJointsExceededErrorGeneric="要計算常規逆運動參數 \n，命令接合數不應多于 6";
+CommandJointsExceededErrorOther="接合數超出了...的限制 ";
+
+
+TabContainerInvKin.BasicMore.Title="基本更多";
+
+
+IKChainDataInvalid="無效的逆運動數據。\n 請確保數據對于所有鏈有效";
+MaxKinChainReached="已超出運動鏈的最大數。\n 它無法大于 /p";
+GenericInvKinComputationError="無效接合展示列。\n 展示的接合總數不能大于實際接合數";
+SingleIKChainId="IK 鏈無法被刪除。應當展示至少一條 IK 鏈";
+
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE

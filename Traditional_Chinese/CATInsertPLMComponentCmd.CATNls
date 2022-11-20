@@ -1,0 +1,53 @@
+InfoMessageForEffectivityTitle="Insertion context";	
+InfoMessageForEffectivityBegin=" is going to be inserted into ";	
+InfoMessageForEffectivityEnd="Please define the effectivity.";	
+
+// Destination is not a Product Reference
+DestinationNotACATIPLMProducts.Request.Expert="Input error";
+DestinationNotACATIPLMProducts.Diagnostic.Expert="The input /p1 does not reference a Product Reference.";
+DestinationNotACATIPLMProducts.Advice.Expert="Check /p1.";
+
+DestinationNotACATIPLMProducts.Request.User="Input error";
+DestinationNotACATIPLMProducts.Diagnostic.User="The input /p1 does not reference a Product Reference.";
+DestinationNotACATIPLMProducts.Advice.User="Contact your expert";
+
+
+
+// Cannot retrieve Reference
+DestinationNotReference.Request.Expert="Input error";
+DestinationNotReference.Diagnostic.Expert="Cannot retrieve Reference of input /p1";
+DestinationNotReference.Advice.Expert="Check /p1.";
+
+DestinationNotReference.Request.User="Input error";
+DestinationNotReference.Diagnostic.User="Cannot retrieve Reference of input /p1";
+DestinationNotReference.Advice.User="Contact your expert";
+
+
+//Destination is not edited in session
+DestinationIsNotEditedInSession.Request.Expert="Execution error";
+DestinationIsNotEditedInSession.Diagnostic.Expert="The component /p1 cannot be used as a destination. It does not have an editor in the session.";
+DestinationIsNotEditedInSession.Advice.Expert="Check your design.";
+
+DestinationIsNotEditedInSession.Request.User="Execution error";
+DestinationIsNotEditedInSession.Diagnostic.User="The component /p1 cannot be used as a destination. It does not have an editor in the session.";
+DestinationIsNotEditedInSession.Advice.User="Check you previous selection or contact your expert.";
+
+// PLMComponent does not have a valid type
+PLMComponentNotAValidObject.Request.Expert="Input error";
+PLMComponentNotAValidObject.Diagnostic.Expert="The input /p1 does not reference a Product Reference nor a 3D Shape Representation.";
+PLMComponentNotAValidObject.Advice.Expert="Check /p1.";
+
+PLMComponentNotAValidObject.Request.User="Input error";
+PLMComponentNotAValidObject.Diagnostic.User="The input /p1 does not reference a Product Reference nor a 3D Shape Representation.";
+PLMComponentNotAValidObject.Advice.User="Contact your expert";
+
+//
+// The type of the object to be added is not supported
+//
+KWETypesMismatch.Request.Expert= "Input error"; 
+KWETypesMismatch.Diagnostic.Expert = "Type \"/p1\" of \"/p2\" is not compatible with type \"/p3\" of the list.";
+KWETypesMismatch.Advice.Expert = "Check the inputs.";
+
+KWETypesMismatch.Request.User= "Input error";
+KWETypesMismatch.Diagnostic.User = "Type \"/p1\" of \"/p2\" is not compatible with type \"/p3\" of the list.";
+KWETypesMismatch.Advice.User = "Contact your expert.";

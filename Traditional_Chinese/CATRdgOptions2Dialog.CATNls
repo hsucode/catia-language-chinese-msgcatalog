@@ -1,0 +1,391 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2006
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 CATRdgOptions2Dialog
+// 3951 校正官方漢化
+// 3951 校正官方漢化===========================================================================
+
+Title="渲染選項";
+
+Custom="自定義";
+
+container.frame.lensTypeFrame.lensLabel.Title="鏡頭";
+container.frame.lensTypeFrame.lensLabel.Help="鏡頭類型";
+container.frame.lensTypeFrame.lensLabel.ShortHelp="鏡頭類型";
+container.frame.lensTypeFrame.lensLabel.LongHelp="定義鏡頭類型。";
+
+container.frame.lensTypeFrame.lensCombo.Help="鏡頭類型";
+container.frame.lensTypeFrame.lensCombo.ShortHelp="鏡頭類型";
+container.frame.lensTypeFrame.lensCombo.LongHelp="定義鏡頭類型。";
+
+container.frame.lensFrame.focalLengthLabel.Title="焦距";
+container.frame.lensFrame.focalLengthLabel.Help="焦距";
+container.frame.lensFrame.focalLengthLabel.ShortHelp="焦距";
+container.frame.lensFrame.focalLengthLabel.LongHelp="鏡頭的焦距是指從鏡頭到傳感器的距離。該值可定義鏡頭的光學縮放系數。";
+
+container.frame.lensFrame.focalLengthSpinner.Help="焦距";
+container.frame.lensFrame.focalLengthSpinner.ShortHelp="焦距";
+container.frame.lensFrame.focalLengthSpinner.LongHelp="鏡頭的焦距是指從鏡頭到傳感器的距離。該值可定義鏡頭的光學縮放系數。";
+
+container.frame.lensFrame.autofocusLabel.Title="自動對焦";
+container.frame.lensFrame.autofocusLabel.Help="自動對焦";
+container.frame.lensFrame.autofocusLabel.ShortHelp="自動對焦";
+container.frame.lensFrame.autofocusLabel.LongHelp="啟用自動對焦后，焦點平面將設置為圖像中間像素中的最近點。";
+
+container.frame.lensFrame.autofocusCheck.Title=" ";
+container.frame.lensFrame.autofocusCheck.Help="自動對焦";
+container.frame.lensFrame.autofocusCheck.ShortHelp="自動對焦";
+container.frame.lensFrame.autofocusCheck.LongHelp="啟用自動對焦后，焦點平面將設置為圖像中間像素中的最近點。";
+
+container.frame.lensFrame.focalDistanceLabel.Title="焦點平面";
+container.frame.lensFrame.focalDistanceLabel.Help="焦點平面";
+container.frame.lensFrame.focalDistanceLabel.ShortHelp="焦點平面";
+container.frame.lensFrame.focalDistanceLabel.LongHelp="焦點平面是照相機的目標距離。與平面相交的對象將對準焦點，因此顯示得很明顯。";
+
+container.frame.lensFrame.focalDistanceSpinner.Help="焦點平面";
+container.frame.lensFrame.focalDistanceSpinner.ShortHelp="焦點平面";
+container.frame.lensFrame.focalDistanceSpinner.LongHelp="焦點平面是照相機的目標距離。與平面相交的對象將對準焦點，因此顯示得很明顯。";
+
+container.frame.lensFrame.focalDistancePickerButton.Help="如果對焦，請選取平面";
+container.frame.lensFrame.focalDistancePickerButton.ShortHelp="選取焦點平面";
+container.frame.lensFrame.focalDistancePickerButton.LongHelp="通過在查看器中選取，可設置焦點平面。";
+
+container.frame.lensFrame.diaphragmLabel.Title="光圈";
+container.frame.lensFrame.diaphragmLabel.Help="光圈類型";
+container.frame.lensFrame.diaphragmLabel.ShortHelp="光圈類型";
+container.frame.lensFrame.diaphragmLabel.LongHelp="定義光圈形狀。這將影響由焦點外的亮點導致的散景效果的形狀。";
+
+container.frame.lensFrame.diaphragmCombo.Help="光圈類型";
+container.frame.lensFrame.diaphragmCombo.ShortHelp="光圈類型";
+container.frame.lensFrame.diaphragmCombo.LongHelp="定義光圈形狀。這將影響由焦點外的亮點導致的散景效果的形狀。";
+
+diaphragmType0="圓";
+diaphragmType1="5 個葉片";
+diaphragmType2="6 個葉片";
+diaphragmType3="7 個葉片";
+diaphragmType4="8 個葉片";
+
+container.frame.lensFrame.bladeAngleLabel.Title="葉片角度";
+container.frame.lensFrame.bladeAngleLabel.Help="葉片角度";
+container.frame.lensFrame.bladeAngleLabel.ShortHelp="葉片角度";
+container.frame.lensFrame.bladeAngleLabel.LongHelp="定義葉片角度。";
+
+container.frame.lensFrame.bladeAngleSpinner.Help="葉片角度";
+container.frame.lensFrame.bladeAngleSpinner.ShortHelp="葉片角度";
+container.frame.lensFrame.bladeAngleSpinner.LongHelp="定義葉片角度。";
+
+container.frame.lensFrame.fnumberLabel.Title="光圈系數";
+container.frame.lensFrame.fnumberLabel.Help="鏡頭孔徑";
+container.frame.lensFrame.fnumberLabel.ShortHelp="鏡頭孔徑";
+container.frame.lensFrame.fnumberLabel.LongHelp="定義鏡頭孔徑。可將光圈系數視為鏡頭允許通過的光量比。它定義為反比，因此光圈系數 = 1 表示光圈已完全打開。";
+
+container.frame.lensFrame.fnumberSpinner.Help="鏡頭孔徑";
+container.frame.lensFrame.fnumberSpinner.ShortHelp="鏡頭孔徑";
+container.frame.lensFrame.fnumberSpinner.LongHelp="定義鏡頭孔徑。可將光圈系數視為鏡頭允許通過的光量比。它定義為反比，因此光圈系數 = 1 表示光圈已完全打開。";
+
+
+container.frame.exposureTypeFrame.exposureLabel.Title="曝光";
+container.frame.exposureTypeFrame.exposureLabel.Help="曝光類型";
+container.frame.exposureTypeFrame.exposureLabel.ShortHelp="曝光類型";
+container.frame.exposureTypeFrame.exposureLabel.LongHelp="定義曝光類型。";
+
+container.frame.exposureTypeFrame.exposureCombo.Help="曝光類型";
+container.frame.exposureTypeFrame.exposureCombo.ShortHelp="曝光類型";
+container.frame.exposureTypeFrame.exposureCombo.LongHelp="定義曝光類型。";
+
+container.frame.exposureFrame.isoLabel.Title="ISO 靈敏度";
+container.frame.exposureFrame.isoLabel.Help="曝光類型";
+container.frame.exposureFrame.isoLabel.ShortHelp="曝光類型";
+container.frame.exposureFrame.isoLabel.LongHelp="定義傳感器靈敏度。ISO 值越大，傳感器對光的靈敏度越高。";
+
+container.frame.exposureFrame.isoSpinner.Help="曝光類型";
+container.frame.exposureFrame.isoSpinner.ShortHelp="曝光類型";
+container.frame.exposureFrame.isoSpinner.LongHelp="定義傳感器靈敏度。ISO 值越大，傳感器對光的靈敏度越高。";
+
+container.frame.exposureFrame.shutterTimeLabel.Title="快門時間";
+container.frame.exposureFrame.shutterTimeLabel.Help="快門時間";
+container.frame.exposureFrame.shutterTimeLabel.ShortHelp="快門時間";
+container.frame.exposureFrame.shutterTimeLabel.LongHelp="定義一秒內快門保持打開的時間。值越大表明光到達傳感器的時間越短。";
+
+container.frame.exposureFrame.shutterTimeSpinner.Help="曝光類型";
+container.frame.exposureFrame.shutterTimeSpinner.ShortHelp="曝光類型";
+container.frame.exposureFrame.shutterTimeSpinner.LongHelp="定義一秒內快門保持打開的時間。值越大表明光到達傳感器的時間越短。";
+
+container.frame.exposureFrame.whitePointLabel.Title="白點";
+container.frame.exposureFrame.whitePointLabel.Help="白點";
+container.frame.exposureFrame.whitePointLabel.ShortHelp="白點";
+container.frame.exposureFrame.whitePointLabel.LongHelp="定義白平衡的基準白。";
+
+container.frame.exposureFrame.whitePointButton.Help="白點";
+container.frame.exposureFrame.whitePointButton.ShortHelp="白點";
+container.frame.exposureFrame.whitePointButton.LongHelp="定義白平衡的基準白。";
+
+container.frame.exposureFrame.whitePointPickerButton.Help="選取白點";
+container.frame.exposureFrame.whitePointPickerButton.ShortHelp="選取白點";
+container.frame.exposureFrame.whitePointPickerButton.LongHelp="通過在查看器中選取，可設置基準白。";
+
+
+container.frame.lightingTypeFrame.lightingLabel.Title="照明";
+container.frame.lightingTypeFrame.lightingLabel.Help="照明效果";
+container.frame.lightingTypeFrame.lightingLabel.ShortHelp="照明效果";
+container.frame.lightingTypeFrame.lightingLabel.LongHelp="定義照明效果。";
+
+container.frame.lightingTypeFrame.lightingCombo.Help="照明效果";
+container.frame.lightingTypeFrame.lightingCombo.ShortHelp="照明效果";
+container.frame.lightingTypeFrame.lightingCombo.LongHelp="定義照明效果。";
+
+container.frame.lightingFrame.finalGatherLabel.Title="最終聚集";
+container.frame.lightingFrame.finalGatherLabel.Help="最終聚集";
+container.frame.lightingFrame.finalGatherLabel.ShortHelp="最終聚集";
+container.frame.lightingFrame.finalGatherLabel.LongHelp="啟用最終聚集。
+最終聚焦模擬簡單的散射間接照明。在曲面著色過程中，點上的半球體通過發送射線來收集額外照明，從而進行采樣。";
+
+container.frame.lightingFrame.finalGatherCheck.Title=" ";
+container.frame.lightingFrame.finalGatherCheck.Help="最終聚集";
+container.frame.lightingFrame.finalGatherCheck.ShortHelp="最終聚集";
+container.frame.lightingFrame.finalGatherCheck.LongHelp="啟用最終聚集。
+最終聚焦模擬簡單的散射間接照明。在曲面著色過程中，點上的半球體通過發送射線來收集額外照明，從而進行采樣。";
+
+container.frame.lightingFrame.globalLabel.Title="全局照明";
+container.frame.lightingFrame.globalLabel.Help="全局照明";
+container.frame.lightingFrame.globalLabel.ShortHelp="全局照明";
+container.frame.lightingFrame.globalLabel.LongHelp="啟用全局照明。
+全局照明是對所有光相互反射效果（焦散除外）的模擬。這包括相鄰墻體之間的滲色等效果。全局照明效果很細膩，但會使場景更真實。全局照明的計算需要具備在預處理步驟中生成的光子貼圖，在預處理步驟中，光子從光源發射并通過場景反射。每次反射時，光子能量均存儲在光子貼圖中。在對光子貼圖進行曲面著色過程中，光子貼圖將用于從鄰近光子收集額外照明。";
+
+container.frame.lightingFrame.globalCheck.Title=" ";
+container.frame.lightingFrame.globalCheck.Help="全局照明";
+container.frame.lightingFrame.globalCheck.ShortHelp="全局照明";
+container.frame.lightingFrame.globalCheck.LongHelp="啟用全局照明。
+全局照明是對所有光相互反射效果（焦散除外）的模擬。這包括相鄰墻體之間的滲色等效果。全局照明效果很細膩，但會使場景更真實。全局照明的計算需要具備在預處理步驟中生成的光子貼圖，在預處理步驟中，光子從光源發射并通過場景反射。每次反射時，光子能量均存儲在光子貼圖中。在對光子貼圖進行曲面著色過程中，光子貼圖將用于從鄰近光子收集額外照明。";
+
+container.frame.lightingFrame.globalPhotonsLabel.Title="光子";
+container.frame.lightingFrame.globalPhotonsLabel.Help="全局照明光子";
+container.frame.lightingFrame.globalPhotonsLabel.ShortHelp="全局照明光子";
+container.frame.lightingFrame.globalPhotonsLabel.LongHelp="全局照明的光子快照。
+全局照明是對所有光相互反射效果（焦散除外）的模擬。這包括相鄰墻體之間的滲色等效果。全局照明效果很細膩，但會使場景更真實。全局照明的計算需要具備在預處理步驟中生成的光子貼圖，在預處理步驟中，光子從光源發射并通過場景反射。每次反射時，光子能量均存儲在光子貼圖中。在對光子貼圖進行曲面著色過程中，光子貼圖將用于從鄰近光子收集額外照明。";
+
+container.frame.lightingFrame.globalPhotonsSpinner.Help="全局照明光子";
+container.frame.lightingFrame.globalPhotonsSpinner.ShortHelp="全局照明光子";
+container.frame.lightingFrame.globalPhotonsSpinner.LongHelp="全局照明的光子快照。
+全局照明是對所有光相互反射效果（焦散除外）的模擬。這包括相鄰墻體之間的滲色等效果。全局照明效果很細膩，但會使場景更真實。全局照明的計算需要具備在預處理步驟中生成的光子貼圖，在預處理步驟中，光子從光源發射并通過場景反射。每次反射時，光子能量均存儲在光子貼圖中。在對光子貼圖進行曲面著色過程中，光子貼圖將用于從鄰近光子收集額外照明。";
+
+container.frame.lightingFrame.globalRadiusLabel.Title="半徑";
+container.frame.lightingFrame.globalRadiusLabel.Help="全局照明半徑";
+container.frame.lightingFrame.globalRadiusLabel.ShortHelp="全局照明半徑";
+container.frame.lightingFrame.globalRadiusLabel.LongHelp="用于收集鄰近光子的最大半徑。
+全局照明是對所有光相互反射效果（焦散除外）的模擬。這包括相鄰墻體之間的滲色等效果。全局照明效果很細膩，但會使場景更真實。全局照明的計算需要具備在預處理步驟中生成的光子貼圖，在預處理步驟中，光子從光源發射并通過場景反射。每次反射時，光子能量均存儲在光子貼圖中。在對光子貼圖進行曲面著色過程中，光子貼圖將用于從鄰近光子收集額外照明。";
+
+container.frame.lightingFrame.globalRadiusSpinner.Help="全局照明半徑";
+container.frame.lightingFrame.globalRadiusSpinner.ShortHelp="全局照明半徑";
+container.frame.lightingFrame.globalRadiusSpinner.LongHelp="用于收集鄰近光子的最大半徑。
+全局照明是對所有光相互反射效果（焦散除外）的模擬。這包括相鄰墻體之間的滲色等效果。全局照明效果很細膩，但會使場景更真實。全局照明的計算需要具備在預處理步驟中生成的光子貼圖，在預處理步驟中，光子從光源發射并通過場景反射。每次反射時，光子能量均存儲在光子貼圖中。在對光子貼圖進行曲面著色過程中，光子貼圖將用于從鄰近光子收集額外照明。";
+
+container.frame.lightingFrame.causticsLabel.Title="焦散";
+container.frame.lightingFrame.causticsLabel.Help="焦散";
+container.frame.lightingFrame.causticsLabel.ShortHelp="焦散";
+container.frame.lightingFrame.causticsLabel.LongHelp="啟用焦散。
+焦散是來自光源的光通過一個或多個鏡面反射或傳輸照射到散射面上時形成的一種光模式。
+例如：
+- 游泳池底部形成的光模式。
+- 一杯水所聚集的光。
+與全局照明類似，焦散的計算也需要具備在預處理步驟中生成的光子貼圖，在預處理步驟中，光子從光源發射并通過場景反射。每次反射時，光子能量均存儲在光子貼圖中。在對光子貼圖進行曲面著色過程中，光子貼圖將用于從鄰近光子收集額外照明。";
+
+container.frame.lightingFrame.causticsCheck.Title=" ";
+container.frame.lightingFrame.causticsCheck.Help="焦散";
+container.frame.lightingFrame.causticsCheck.ShortHelp="焦散";
+container.frame.lightingFrame.causticsCheck.LongHelp="啟用焦散。
+焦散是來自光源的光通過一個或多個鏡面反射或傳輸照射到散射面上時形成的一種光模式。
+例如：
+- 游泳池底部形成的光模式。
+- 一杯水所聚集的光。
+與全局照明類似，焦散的計算也需要具備在預處理步驟中生成的光子貼圖，在預處理步驟中，光子從光源發射并通過場景反射。每次反射時，光子能量均存儲在光子貼圖中。在對光子貼圖進行曲面著色過程中，光子貼圖將用于從鄰近光子收集額外照明。";
+
+container.frame.lightingFrame.causticsPhotonsLabel.Title="光子";
+container.frame.lightingFrame.causticsPhotonsLabel.Help="焦散光子";
+container.frame.lightingFrame.causticsPhotonsLabel.ShortHelp="焦散光子";
+container.frame.lightingFrame.causticsPhotonsLabel.LongHelp="焦散的光子快照。 
+焦散是來自光源的光通過一個或多個鏡面反射或傳輸照射到散射面上時形成的一種光模式。
+例如：
+- 游泳池底部形成的光模式。
+- 一杯水所聚集的光。
+與全局照明類似，焦散的計算也需要具備在預處理步驟中生成的光子貼圖，在預處理步驟中，光子從光源發射并通過場景反射。每次反射時，光子能量均存儲在光子貼圖中。在對光子貼圖進行曲面著色過程中，光子貼圖將用于從鄰近光子收集額外照明。表面陰影貼圖過程中，光子貼圖用于從周圍的光子中收集額外的光源。";
+
+container.frame.lightingFrame.causticsPhotonsSpinner.Help="焦散光子";
+container.frame.lightingFrame.causticsPhotonsSpinner.ShortHelp="焦散光子";
+container.frame.lightingFrame.causticsPhotonsSpinner.LongHelp="焦散的光子快照。
+焦散是來自光源的光通過一個或多個鏡面反射或傳輸照射到散射面上時形成的一種光模式。
+例如：
+- 游泳池底部形成的光模式。
+- 一杯水所聚集的光。
+與全局照明類似，焦散的計算也需要具備在預處理步驟中生成的光子貼圖，在預處理步驟中，光子從光源發射并通過場景反射。每次反射時，光子能量均存儲在光子貼圖中。在對光子貼圖進行曲面著色過程中，光子貼圖將用于從鄰近光子收集額外照明。表面陰影貼圖過程中，光子貼圖用于從周圍的光子中收集額外的光源。";
+
+container.frame.lightingFrame.causticsRadiusLabel.Title="半徑";
+container.frame.lightingFrame.causticsRadiusLabel.Help="焦散半徑";
+container.frame.lightingFrame.causticsRadiusLabel.ShortHelp="焦散半徑";
+container.frame.lightingFrame.causticsRadiusLabel.LongHelp="用于收集鄰近光子的最大半徑。
+焦散是來自光源的光通過一個或多個鏡面反射或傳輸照射到散射面上時形成的一種光模式。
+例如：
+- 游泳池底部形成的光模式。
+- 一杯水所聚集的光。
+與全局照明類似，焦散的計算也需要具備在預處理步驟中生成的光子貼圖，在預處理步驟中，光子從光源發射并通過場景反射。每次反射時，光子能量均存儲在光子貼圖中。在對光子貼圖進行曲面著色過程中，光子貼圖將用于從鄰近光子收集額外照明。表面陰影貼圖過程中，光子貼圖用于從周圍的光子中收集額外的光源。";
+
+container.frame.lightingFrame.causticsRadiusSpinner.Help="焦散半徑";
+container.frame.lightingFrame.causticsRadiusSpinner.ShortHelp="焦散半徑";
+container.frame.lightingFrame.causticsRadiusSpinner.LongHelp="用于收集鄰近光子的最大半徑。
+焦散是來自光源的光通過一個或多個鏡面反射或傳輸照射到散射面上時形成的一種光模式。
+例如：
+- 游泳池底部形成的光模式。
+- 一杯水所聚集的光。
+與全局照明類似，焦散的計算也需要具備在預處理步驟中生成的光子貼圖，在預處理步驟中，光子從光源發射并通過場景反射。每次反射時，光子能量均存儲在光子貼圖中。在對光子貼圖進行曲面著色過程中，光子貼圖將用于從鄰近光子收集額外照明。表面陰影貼圖過程中，光子貼圖用于從周圍的光子中收集額外的光源。";
+
+container.frame.lightingFrame.spectralLabel.Title="散射";
+container.frame.lightingFrame.spectralLabel.Help="散射";
+container.frame.lightingFrame.spectralLabel.ShortHelp="散射";
+container.frame.lightingFrame.spectralLabel.LongHelp="啟用光散射。
+折射指數隨產生彩虹效果的波長的變化而變化。";
+
+container.frame.lightingFrame.spectralCheck.Title=" ";
+container.frame.lightingFrame.spectralCheck.Help="散射";
+container.frame.lightingFrame.spectralCheck.ShortHelp="散射";
+container.frame.lightingFrame.spectralCheck.LongHelp="啟用光散射。
+折射指數隨產生彩虹效果的波長的變化而變化。";
+
+container.frame.lightingFrame.spectralRaysLabel.Title="波長";
+container.frame.lightingFrame.spectralRaysLabel.Help="波長數量";
+container.frame.lightingFrame.spectralRaysLabel.ShortHelp="波長數量";
+container.frame.lightingFrame.spectralRaysLabel.LongHelp="波長數量。
+折射指數隨產生彩虹效果的波長的變化而變化。";
+
+container.frame.lightingFrame.spectralRaysSpinner.Help="波長數量";
+container.frame.lightingFrame.spectralRaysSpinner.ShortHelp="波長數量";
+container.frame.lightingFrame.spectralRaysSpinner.LongHelp="波長數量。
+折射指數隨產生彩虹效果的波長的變化而變化。";
+
+
+container.frame.qualityTypeFrame.qualityLabel.Title="質量";
+container.frame.qualityTypeFrame.qualityLabel.Help="輸出質量";
+container.frame.qualityTypeFrame.qualityLabel.ShortHelp="輸出質量";
+container.frame.qualityTypeFrame.qualityLabel.LongHelp="定義輸出質量。";
+
+container.frame.qualityTypeFrame.qualityCombo.Help="輸出質量";
+container.frame.qualityTypeFrame.qualityCombo.ShortHelp="輸出質量";
+container.frame.qualityTypeFrame.qualityCombo.LongHelp="定義輸出質量。";
+
+container.frame.qualityFrame.reflectionsLabel.Title="反射";
+container.frame.qualityFrame.reflectionsLabel.Help="最大反射深度";
+container.frame.qualityFrame.reflectionsLabel.ShortHelp="最大反射深度";
+container.frame.qualityFrame.reflectionsLabel.LongHelp="定義射線的最大反射數量。";
+
+container.frame.qualityFrame.reflectionsSpinner.Help="最大反射深度";
+container.frame.qualityFrame.reflectionsSpinner.ShortHelp="最大反射深度";
+container.frame.qualityFrame.reflectionsSpinner.LongHelp="定義射線的最大反射數量。";
+
+container.frame.qualityFrame.refractionsLabel.Title="折射";
+container.frame.qualityFrame.refractionsLabel.Help="最大折射深度";
+container.frame.qualityFrame.refractionsLabel.ShortHelp="最大折射深度";
+container.frame.qualityFrame.refractionsLabel.LongHelp="定義射線的最大折射量。";
+
+container.frame.qualityFrame.refractionsSpinner.Help="最大折射深度";
+container.frame.qualityFrame.refractionsSpinner.ShortHelp="最大折射深度";
+container.frame.qualityFrame.refractionsSpinner.LongHelp="定義射線的最大折射數量。";
+
+container.frame.qualityFrame.minSamplesLabel.Title="最小樣本數";
+container.frame.qualityFrame.minSamplesLabel.Help="抗鋸齒最小樣本數";
+container.frame.qualityFrame.minSamplesLabel.ShortHelp="抗鋸齒最小樣本數";
+container.frame.qualityFrame.minSamplesLabel.LongHelp="定義抗鋸齒的最小樣本數。";
+
+container.frame.qualityFrame.minSamplesCombo.Help="抗鋸齒最小樣本數";
+container.frame.qualityFrame.minSamplesCombo.ShortHelp="抗鋸齒最小樣本數";
+container.frame.qualityFrame.minSamplesCombo.LongHelp="定義抗鋸齒的最小樣本數。";
+
+container.frame.qualityFrame.maxSamplesLabel.Title="最大樣本數";
+container.frame.qualityFrame.maxSamplesLabel.Help="抗鋸齒最大樣本數";
+container.frame.qualityFrame.maxSamplesLabel.ShortHelp="抗鋸齒最大樣本數";
+container.frame.qualityFrame.maxSamplesLabel.LongHelp="定義抗鋸齒的最大樣本數。";
+
+container.frame.qualityFrame.maxSamplesCombo.Help="抗鋸齒最大樣本數";
+container.frame.qualityFrame.maxSamplesCombo.ShortHelp="抗鋸齒最大樣本數";
+container.frame.qualityFrame.maxSamplesCombo.LongHelp="定義抗鋸齒的最大樣本數。";
+
+samples0="每 16 個像素投射 1 束射線";
+samples1="每 4 個像素投射 1 束射線";
+samples2="每個像素投射 1 束射線";
+samples3="每個像素投射 4 束射線";
+samples4="每個像素投射 16 束射線";
+samples5="每個像素投射 64 束射線";
+
+container.frame.qualityFrame.contrastLabel.Title="對比度";
+container.frame.qualityFrame.contrastLabel.Help="抗鋸齒對比度";
+container.frame.qualityFrame.contrastLabel.ShortHelp="抗鋸齒對比度";
+container.frame.qualityFrame.contrastLabel.LongHelp="對比度可控制過采樣。如果相鄰樣本由于超過對比度而有所差異，則將根據采樣參數的指定完成超級采樣。";
+
+container.frame.qualityFrame.contrastSpinner.Help="抗鋸齒對比度";
+container.frame.qualityFrame.contrastSpinner.ShortHelp="抗鋸齒對比度";
+container.frame.qualityFrame.contrastSpinner.LongHelp="對比度可控制過采樣。如果相鄰樣本由于超過對比度而有所差異，則將根據采樣參數的指定完成超級采樣。";
+
+
+container.frame.resolutionTypeFrame.resolutionLabel.Title="分辨率";
+container.frame.resolutionTypeFrame.resolutionLabel.Help="圖像分辨率";
+container.frame.resolutionTypeFrame.resolutionLabel.ShortHelp="圖像分辨率";
+container.frame.resolutionTypeFrame.resolutionLabel.LongHelp="定義圖像分辨率。";
+
+container.frame.resolutionTypeFrame.resolutionCombo.Help="圖像分辨率";
+container.frame.resolutionTypeFrame.resolutionCombo.ShortHelp="圖像分辨率";
+container.frame.resolutionTypeFrame.resolutionCombo.LongHelp="定義圖像分辨率。";
+
+container.frame.resolutionFrame.orientationLabel.Title="方向";
+container.frame.resolutionFrame.orientationLabel.Help="圖像方向";
+container.frame.resolutionFrame.orientationLabel.ShortHelp="圖像方向";
+container.frame.resolutionFrame.orientationLabel.LongHelp="定義圖像方向。";
+
+container.frame.resolutionFrame.orientationCombo.Help="圖像方向";
+container.frame.resolutionFrame.orientationCombo.ShortHelp="圖像方向";
+container.frame.resolutionFrame.orientationCombo.LongHelp="定義圖像方向。";
+
+orientationType0="縱向";
+orientationType1="橫向";
+
+container.frame.resolutionFrame.widthLabel.Title="寬度";
+container.frame.resolutionFrame.widthLabel.Help="圖像寬度";
+container.frame.resolutionFrame.widthLabel.ShortHelp="圖像寬度";
+container.frame.resolutionFrame.widthLabel.LongHelp="定義圖像寬度。";
+
+container.frame.resolutionFrame.widthSpinner.Help="圖像寬度";
+container.frame.resolutionFrame.widthSpinner.ShortHelp="圖像寬度";
+container.frame.resolutionFrame.widthSpinner.LongHelp="定義圖像寬度。";
+
+container.frame.resolutionFrame.heightLabel.Title="高度";
+container.frame.resolutionFrame.heightLabel.Help="圖像高度";
+container.frame.resolutionFrame.heightLabel.ShortHelp="圖像高度";
+container.frame.resolutionFrame.heightLabel.LongHelp="定義圖像高度。";
+
+container.frame.resolutionFrame.heightSpinner.Help="圖像高度";
+container.frame.resolutionFrame.heightSpinner.ShortHelp="圖像高度";
+container.frame.resolutionFrame.heightSpinner.LongHelp="定義圖像高度。";
+
+container.frame.resolutionFrame.keepRatioButton.Help="保留圖像比率";
+container.frame.resolutionFrame.keepRatioButton.ShortHelp="保留圖像比率";
+container.frame.resolutionFrame.keepRatioButton.LongHelp="保留圖像高度和寬度之間的比率。";
+
+container.frame.resolutionFrame.unitsLabel.Title="單位";
+container.frame.resolutionFrame.unitsLabel.Help="圖像大小單位";
+container.frame.resolutionFrame.unitsLabel.ShortHelp="圖像大小單位";
+container.frame.resolutionFrame.unitsLabel.LongHelp="定義用于寬度和高度的單位。";
+
+container.frame.resolutionFrame.unitsCombo.Help="圖像大小單位";
+container.frame.resolutionFrame.unitsCombo.ShortHelp="圖像大小單位";
+container.frame.resolutionFrame.unitsCombo.LongHelp="定義用于寬度和高度的單位。";
+
+unitsType0="像素";
+unitsType1="厘米";
+unitsType2="毫米";
+unitsType3="英寸";
+
+container.frame.resolutionFrame.dpiLabel.Title="DPI";
+container.frame.resolutionFrame.dpiLabel.Help="像素密度";
+container.frame.resolutionFrame.dpiLabel.ShortHelp="像素密度";
+container.frame.resolutionFrame.dpiLabel.LongHelp="定義每英寸的像素密度（以點表示）。";
+
+container.frame.resolutionFrame.dpiSpinner.Help="像素密度";
+container.frame.resolutionFrame.dpiSpinner.ShortHelp="像素密度";
+container.frame.resolutionFrame.dpiSpinner.LongHelp="定義每英寸的像素密度（以點表示）。";

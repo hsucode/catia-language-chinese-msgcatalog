@@ -1,0 +1,420 @@
+AUTDcnEZSocketRteEngineName= 
+	"EZSocket";
+
+AUTDcnEZSocketRteConnectionFailure =
+	"不能 open MELSEC connection\n",
+	"Please, check your communication settings and start一個new debug session.\n\n",
+	"Diagnosis: /p1";
+	
+InitEZSocketItfFailure=
+	"EZSocket interface initialization failure.\n",
+	"Diagnosis: /p1";
+
+InitEngineFailure=
+	"Runtime Engine initialization failure.\n",
+	"Diagnosis: /p1";
+	
+InitIOFailure=
+	"IO initialization failure.\n",
+	"Diagnosis: /p1";
+	
+CloseEngineFailure=
+	"不能 close correctly runtime engine.\n",
+	"Diagnosis: /p1";
+
+WritingOperationFailure=
+	"Writing operation failure.\n",
+	"Diagnosis: /p1";
+
+ReadingOperationFailure=
+	"Reading operation failure.\n",
+	"Diagnosis: /p1";
+
+ReadAxisValueFailure=
+	"Reading of axis values has failed.\n",
+	"Diagnosis: /p1";
+
+WriteInstructionFailure=
+	"Writing of instruction has failed.\n",
+	"Diagnosis: /p1";
+
+WriteAxisValueFailure=
+	"Writing of axis values has failed.\n",
+	"Diagnosis: /p1";
+
+AUTDcnEZSocketRteCtrlInitFailure=
+	"Controller initialization failure.\n",
+	"Diagnosis: /p1";
+ 
+AUTDcnEZSocketRteRun1CycleFailure=
+	"Failure on running 1 cycle request.\n",
+	"Please, check GX Simulator status.\n\n",
+	"Diagnosis: /p1";
+
+AUTDcnEZSocketRteResetFailure=
+	"Failure on reset operation.\n",
+	"Please, check GX Simulator status.\n\n",
+	"Diagnosis: /p1";
+
+ProtocolSettingsAreNotSet = "Connection protocol properties have不been set.\nPlease edit EZSocket connection properties and assign parameters.";
+UnknownCpuTargetType = "No CPU target type has been 被定義.";
+UndefinedCpuTgt = "No CPU target has been set correctly.";
+UnsupportedDevTypeTitle = "Unsupported Device Type warning.";
+UnsupportedDevTypeWrng = "/p1\n\nThe above IO data will不been taken into account if you continue.\n你想繼續 simulation initilization?";
+LastDevTypeError = "/p1\n";
+PYIsReadOnly = "裝置 \"/p1\" on /p2 data called /p3 can only be read, so it has to be affected to一個output data.";
+PXIsWriteOnly = "裝置 \"/p1\" on /p2 data called /p3 can only be written, so it has to be affected to一個input data.";
+OutOfRangeAddr = "裝置 address \"/p1\" on /p2 data called /p3 is out of range.";
+IncorrectDevice = "裝置 \"/p1\" on /p2 data called /p3 is incorrect.";
+BadDevSyntax = "Bad syntax on Device \"/p1\" on /p2 data called /p3. (Check syntax and address representation)";
+UnsupportedDevType = "Unsupported Device Type \"/p1\" on /p2 data called /p3";
+BasicDevTypeError = "裝置 \"/p1\" on /p2 data called /p3 is不compliant with the selected type. (Check device vs. type and even addressing for 32\\64 bits types";
+TooManyUnsupportedDevType = "Too many unsupported device, out of range device或 basic type error for IO data definition.\nSimulation initialization aborted";
+RaiseUnsupportedDevTypeError = "/p1";
+RaiseAbortedSimError = "仿真 aborted due to unsupported device, basic type error或 out of range devices.\nPlease, check your IO data definitions."; 
+RaiseAbortedSimError2 = "/p1";
+ReadWrongWordOrBitPos = "Reading operation failure due to wrong word或 bit position on /p1.\nPlease, contact your支持面team";
+IONameAndDevAddr = "IO called /p1 with device address /p2";
+EZSocketUnknownError = "Unknown 錯誤";
+
+ESCOMM_ERR = "ESCommunication 錯誤"; // 3951 校正官方漢化 0x01000000	
+ESCOMM_CLASS_ERR = "Class 錯誤"; // 3951 校正官方漢化 0x00800000	
+ESCOMM_ACPU_ERR = "ACPU 錯誤"; // 3951 校正官方漢化 0x00010000
+ESCOMM_QCPU_ERR = "QCPU 錯誤"; // 3951 校正官方漢化 0x00020000
+ESCOMM_C24_ERR = "C24 錯誤"; // 3951 校正官方漢化 0x00030000	
+ESCOMM_QC24_ERR = "QC24 錯誤"; // 3951 校正官方漢化 0x00040000
+ESCOMM_E71_ERR = "E71 錯誤"; // 3951 校正官方漢化 0x00050000	
+ESCOMM_QE71_ERR = "QE71 錯誤"; // 3951 校正官方漢化 0x00060000
+ESCOMM_BOARD_ERR = "Board 錯誤"; // 3951 校正官方漢化 0x00070000
+ESCOMM_PC_ERR = "PC 錯誤"; // 3951 校正官方漢化 0x00080000
+ESCOMM_FXCPU_ERR = "FXCPU 錯誤"; // 3951 校正官方漢化 0x00090000
+ESCOMM_QNCPU_ERR = "QNCPU 錯誤"; // 3951 校正官方漢化 0x000A0000
+ESCOMM_QJ71C24_ERR = "QJ71C24 錯誤"; // 3951 校正官方漢化 0x000B0000
+ESCOMM_QJ71E71_ERR = "QJ71E71 錯誤"; // 3951 校正官方漢化 0x000C0000
+ESCOMM_QBF_ERR = "QBF 錯誤"; // 3951 校正官方漢化 0x000D0000
+ESCOMM_QSS_ERR = "QSS 錯誤"; // 3951 校正官方漢化 0x000E0000
+ESCOMM_AGOT_ERR = "Command 錯誤"; // 3951 校正官方漢化 0x000F0000
+
+// 3951 校正官方漢化 Common 
+ESCOMM_NO_COMMAND = "Command 錯誤"; // 3951 校正官方漢化 0x01800001
+ESCOMM_MEMORY_LOCK_ERR = "Memory lock 錯誤"; // 3951 校正官方漢化 0x01800002
+ESCOMM_MEMORY_ALLOC_ERR = "Memory securing 錯誤"; // 3951 校正官方漢化0x01800003
+ESCOMM_LOAD_ERR = "DLL load 錯誤"; // 3951 校正官方漢化 0x01800004
+ESCOMM_RESOURCE_ERR = "資源securing 錯誤"; // 3951 校正官方漢化 0x01800005
+
+// 3951 校正官方漢化 Class error 
+ESCOMM_RESOURCE_TIMEOUT_ERR = "資源time-out 錯誤"; // 3951 校正官方漢化 0x01801001
+ESCOMM_OPEN_ERR = "Multi-line open 錯誤"; // 3951 校正官方漢化 0x01801002
+ESCOMM_NOOPEN_ERR = "打開不yet executed"; // 3951 校正官方漢化 0x01801003
+ESCOMM_OPEN_TYPE_ERR = "打開 parameter unauthorized"; // 3951 校正官方漢化 0x01801004
+ESCOMM_PORT_TYPE_ERR = "指定 port 錯誤"; // 3951 校正官方漢化 0x01801005
+ESCOMM_UNIT_TYPE_ERR = "指定 unit 錯誤"; // 3951 校正官方漢化 0x01801006
+ESCOMM_CPU_TYPE_ERR = "指定 CPU 錯誤"; // 3951 校正官方漢化 0x01801007
+ESCOMM_ACCESS_STATION_ERR = "Destination station access 錯誤"; // 3951 校正官方漢化 0x01801008
+ESCOMM_REGISTKEY_OPEN_ERR = "Registry key open failure"; // 3951 校正官方漢化 0x01801009
+ESCOMM_PACKET_TYPE_ERR = "指定 packet does不exist/is不compatible"; // 3951 校正官方漢化 0x0180100A
+ESCOMM_PROTOCOL_TYPE_ERR = "指定 protocol does不exist/is不compatible"; // 3951 校正官方漢化 0x0180100B
+ESCOMM_REGIST_RETREIVAL_ERR = "Registry search failure"; // 3951 校正官方漢化 0x0180100C
+ESCOMM_GETPROCADDRESS_ERR = "獲得ProcAddress failure"; // 3951 校正官方漢化 0x0180100D
+ESCOMM_UNLOAD_LIBRARY_ERR = "DLL no-load 錯誤"; // 3951 校正官方漢化 0x0180100E
+ESCOMM_OBJECT_ACCESS_ERR = "其它 Object in execution"; // 3951 校正官方漢化 0x0180100F
+
+// 3951 校正官方漢化 Data error
+ESCOMM_DEVICE_TYPE_ERR = "裝置 錯誤"; // 3951 校正官方漢化 0x01802001
+ESCOMM_DEVICE_NUMBER_ERR = "裝置 number 錯誤"; // 3951 校正官方漢化 0x01802002
+ESCOMM_PROGRAM_TYPE_ERR = "Program type 錯誤"; // 3951 校正官方漢化 0x01802003
+ESCOMM_CHECKSUM_ERR = "檢查sum 錯誤"; // 3951 校正官方漢化 0x01802004
+ESCOMM_SIZE_ERR = "Size 錯誤"; // 3951 校正官方漢化 0x01802005
+ESCOMM_BLOCK_NUMBER_ERR = "Block number 錯誤"; // 3951 校正官方漢化 0x01802006
+ESCOMM_RECEIVE_DATA_ERR = "Receive data 錯誤"; // 3951 校正官方漢化 0x01802007
+ESCOMM_WRITE_PROTECT_ERR = "Write protect 錯誤"; // 3951 校正官方漢化 0x01802008
+ESCOMM_PARAMETER_READ_ERR = "參數 read 錯誤"; // 3951 校正官方漢化 0x01802009
+ESCOMM_PARAMETER_WRITE_ERR = "參數 write 錯誤"; // 3951 校正官方漢化 0x0180200A
+ESCOMM_PC_DEFFERS_ERR = "PLC type mismatch"; // 3951 校正官方漢化 0x0180200B
+ESCOMM_REQUEST_CANCEL = "Request cancel"; // 3951 校正官方漢化 0x0180200C
+ESCOMM_DRIVENAME_ERR = "Drive name 錯誤"; // 3951 校正官方漢化 0x0180200D
+ESCOMM_STARTSTEP_ERR = "First step 錯誤"; // 3951 校正官方漢化 0x0180200E
+ESCOMM_PARAMETER_TYPE_ERR = "參數 type 錯誤"; // 3951 校正官方漢化 0x0180200F
+ESCOMM_FILENAME_ERR = "文件 name 錯誤"; // 3951 校正官方漢化 0x01802010
+ESCOMM_STATUS_ERR = "Registration/cancellation/setting status 錯誤"; // 3951 校正官方漢化 0x01802011
+ESCOMM_CONDITION_ERR = "Detailed condition classification 錯誤"; // 3951 校正官方漢化 0x01802012
+ESCOMM_STEP_CONDITION_ERR = "Step condition 錯誤"; // 3951 校正官方漢化 0x01802013
+ESCOMM_BITDEVICE_CONDITION_ERR = "Bit device condition 錯誤"; // 3951 校正官方漢化 0x01802014
+ESCOMM_PARAMETER_SET_ERR = "參數 setting 錯誤"; // 3951 校正官方漢化 0x01802015
+ESCOMM_STATION_ERR = "Station number specifying 錯誤"; // 3951 校正官方漢化 0x01802016
+ESCOMM_KEYWORD_ERR = "Keyword 錯誤"; // 3951 校正官方漢化 0x01802017
+ESCOMM_PROTECT_FLAG_ERR = "Read/write flag 錯誤"; // 3951 校正官方漢化 0x01802018
+ESCOMM_REFRESH_ERR = "Refresh system 錯誤"; // 3951 校正官方漢化 0x01802019
+ESCOMM_BUFFER_ASCCESS_ERR = "Buffer access system 錯誤"; // 3951 校正官方漢化 0x0180201A
+ESCOMM_MODE_ERR = "開始ing mode/stop mode 錯誤"; // 3951 校正官方漢化 0x0180201B
+ESCOMM_CLOCKDATA_WRITE_ERR = "Clock data write 錯誤"; // 3951 校正官方漢化 0x0180201C
+ESCOMM_RUNNING_WRITE_ERR = "Online write 錯誤"; // 3951 校正官方漢化 0x0180201D
+ESCOMM_ROM_OPERATION_ERR = "ROM operation 錯誤"; // 3951 校正官方漢化 0x0180201E
+ESCOMM_TRACE_RUN_ERR = "Trace-in-execution 錯誤"; // 3951 校正官方漢化 0x0180201F
+ESCOMM_STARTIO_ERR = "First I/O number 錯誤"; // 3951 校正官方漢化 0x01802020
+ESCOMM_ADDRESS_ERR = "First address 錯誤"; // 3951 校正官方漢化 0x01802021
+ESCOMM_PATTERN_ERR = "Pattern 錯誤"; // 3951 校正官方漢化 0x01802022
+ESCOMM_SFC_BLOCK_NUMBER_ERR = "SFC block number 錯誤"; // 3951 校正官方漢化 0x01802023
+ESCOMM_SFC_STEP_NUMBER_ERR = "SFC step number 錯誤"; // 3951 校正官方漢化 0x01802024
+ESCOMM_STEP_NUMBER_ERR = "Step number 錯誤"; // 3951 校正官方漢化 0x01802025
+ESCOMM_DATA_COMPARE_ERR = "Data 錯誤"; // 3951 校正官方漢化 0x01802026
+ESCOMM_SYSTEM_DATA_ERR = "System data 錯誤"; // 3951 校正官方漢化 0x01802027
+ESCOMM_TC_SIZE_ERR = "T/C set value quantity 錯誤"; // 3951 校正官方漢化 0x01802028
+ESCOMM_CLEARMODE_ERR = "清除 mode 錯誤"; // 3951 校正官方漢化 0x01802029
+ESCOMM_SIGNALFLOW_ERR = "信號flow 錯誤"; // 3951 校正官方漢化 0x0180202A
+ESCOMM_STRUCT_VERSION_ERR = "版本 management 錯誤"; // 3951 校正官方漢化 0x0180202B
+ESCOMM_MONITOR_NO_REGIST_ERR = "Monitor non-registration 錯誤"; // 3951 校正官方漢化 0x0180202C
+ESCOMM_PI_TYPE_ERR = "P/I type 錯誤"; // 3951 校正官方漢化 0x0180202D
+ESCOMM_PI_NUMBER_ERR = "P/I number 錯誤"; // 3951 校正官方漢化 0x0180202E
+ESCOMM_PI_SIZE_ERR = "P/I quantity 錯誤"; // 3951 校正官方漢化 0x0180202F
+ESCOMM_SHIFT_MINUS_ERR = "Shift 錯誤"; // 3951 校正官方漢化 0x01802030
+ESCOMM_FILE_TYPE_ERR = "文件 type 錯誤"; // 3951 校正官方漢化 0x01802031
+ESCOMM_TARGET_UNIT_ERR = "指定 unit 錯誤"; // 3951 校正官方漢化 0x01802032
+ESCOMM_ERROR_CHECK_FLG_ERR = "Error check flag 錯誤"; // 3951 校正官方漢化 0x01802033
+ESCOMM_STEPRUN_OPERATION_ERR = "Step run operation 錯誤"; // 3951 校正官方漢化 0x01802034
+ESCOMM_STEPRUN_DATA_ERR = "Step run data 錯誤"; // 3951 校正官方漢化 0x01802035
+ESCOMM_STEPRUN_ERR = "Step run-in-execution 錯誤"; // 3951 校正官方漢化 0x01802036
+ESCOMM_E2ROM_PROGRAMRUNWRITE_ERR = "To-E2ROM program online-write 錯誤"; // 3951 校正官方漢化 0x01802037
+ESCOMM_CLOCKDATAREADWRITE_ERR = "Clock data read/write 錯誤"; // 3951 校正官方漢化 0x01802038
+ESCOMM_NOTRACE_ERR = "Trace non-completion"; // 3951 校正官方漢化 0x01802039
+ESCOMM_ENTRY_FLG_ERR = "Registration clear flag 錯誤"; // 3951 校正官方漢化 0x0180203A
+ESCOMM_OPERATION_ERR = "操作錯誤"; // 3951 校正官方漢化 0x0180203B
+ESCOMM_STATION_COUNT_ERR = "Station count 錯誤"; // 3951 校正官方漢化 0x0180203C
+ESCOMM_LOOP_COUNT_ERR = "Loop count specifying 錯誤"; // 3951 校正官方漢化 0x0180203D
+ESCOMM_DATA_SELECT_ERR = "Acquired data selection 錯誤"; // 3951 校正官方漢化 0x0180203E
+ESCOMM_SFC_CYCLE_ERR = "SFC cycle count 錯誤"; // 3951 校正官方漢化 0x0180203F
+ESCOMM_MOTION_CPU_ERR = "Motion CPU 錯誤"; // 3951 校正官方漢化 0x01802040
+ESCOMM_MOTION_COMMUNICATION_ERR = "Motion CPU communication 錯誤"; // 3951 校正官方漢化 0x01802041
+ESCOMM_CONSTANT_RUNTIME_ERR = "Constant run time setting 錯誤"; // 3951 校正官方漢化 0x01802042
+ESCOMM_FUNCTION_SIZE_ERR = "Function count specifying 錯誤"; // 3951 校正官方漢化 0x01802043
+ESCOMM_DESIGNATED_DATA_ERR = "System information specifying 錯誤"; // 3951 校正官方漢化 0x01802044
+ESCOMM_CONDITION_FAIL_ERR = "Registration condition不yet enabled"; // 3951 校正官方漢化 0x01802045
+ESCOMM_FUNCTION_NUMBER_ERR = "Function number specifying 錯誤"; // 3951 校正官方漢化 0x01802046
+ESCOMM_RAM_OPERATION_ERR = "RAM operation 錯誤"; // 3951 校正官方漢化 0x01802047
+ESCOMM_TRANSMIT_ROM_ERR = "Boot source ROM transfer 錯誤"; // 3951 校正官方漢化 0x01802048
+ESCOMM_BACKUP_STATUS_ERR = "Boot source transfer mode specifying 錯誤"; // 3951 校正官方漢化 0x01802049
+ESCOMM_NOT_ENOUGH_MEMORY_ERR = "不enough memory"; // 3951 校正官方漢化 0x0180204A
+ESCOMM_BACKUP_DRIVE_ROM_ERR = "Backup drive ROM 錯誤"; // 3951 校正官方漢化 0x0180204B
+ESCOMM_BLOCK_SIZE_ERR = "Block size 錯誤"; // 3951 校正官方漢化 0x0180204C
+ESCOMM_UNIT_ALREADY_REGIST_ERR = "Unit already registered"; // 3951 校正官方漢化 0x0180204E
+ESCOMM_PASSWORD_DATA_FULL_ERR = "Motion CPU 錯誤"; // 3951 校正官方漢化 0x0180204F
+ESCOMM_PASSWORD_UNREGISTRATION = "Password unregistration 錯誤"; // 3951 校正官方漢化 0x01802050	
+ESCOMM_REMOTE_PASSWORD_ERR = "Remote password 錯誤"; // 3951 校正官方漢化 0x01802051
+ESCOMM_IPADDRESS_ERR = "IP Address 錯誤"; // 3951 校正官方漢化 0x01802052
+ESCOMM_TIMEOUT_SIZE_ERR = "時間out size 錯誤"; // 3951 校正官方漢化 0x01802053
+ESCOMM_INSTRUCTION_NOT_FOUND_ERR = "Instruction沒有發現"; // 3951 校正官方漢化 0x01802054
+ESCOMM_TRACE_TYPE_ERR = "Trace type 錯誤"; // 3951 校正官方漢化 0x01802055
+ESCOMM_VERSION_ERR = "版本 錯誤"; // 3951 校正官方漢化 0x01802056
+ESCOMM_TYPE_INDETERMINATION_ERR = "類型 indetermination"; // 3951 校正官方漢化 0x01802057
+ESCOMM_SYSTEM_CHANGE_ERR = "System change error 錯誤"; // 3951 校正官方漢化 0x01802058
+ESCOMM_WRITE_ATTRIBUTE_ERR = "Write attribute 錯誤"; // 3951 校正官方漢化 0x01802059
+ESCOMM_CHANGE_ATTRIBUTE_ERR = "Change attribute 錯誤"; // 3951 校正官方漢化 0x0180205A
+ESCOMM_TRANSIENT_PATH_ERR = "Transient path 錯誤"; // 3951 校正官方漢化 0x0180205B
+ESCOMM_USE_MEMORY_CARD_RUNWRITE_ERR = "Run write error on memory card"; // 3951 校正官方漢化 0x01802061
+ESCOMM_PACKETCRC_ERR = "Packet CRC 錯誤"; // 3951 校正官方漢化 0x01802062
+ESCOMM_DATACRC_ERR = "Data CRC 錯誤"; // 3951 校正官方漢化 0x01802063
+
+// 3951 校正官方漢化 Hardware port error 
+ESCOMM_ALREADY_OPEN_ERR = "Double open 錯誤"; // 3951 校正官方漢化 0x01808001
+
+// 3951 校正官方漢化 Open error 
+ESCOMM_CHANNEL_NUMBER_ERR = "Channel number specifying 錯誤"; // 3951 校正官方漢化 0x01808002
+ESCOMM_DRIVER_NOT_RUN_ERR = "Driver不yet started"; // 3951 校正官方漢化 0x01808003
+ESCOMM_CREATE_OVERLAPEVENT_ERR = "重疊 event generation 錯誤"; // 3951 校正官方漢化 0x01808004
+ESCOMM_CREAT_MUTEX_ERR = "MUTEX generation 錯誤"; // 3951 校正官方漢化 0x01808005
+ESCOMM_SOCKETOBJECT_CREAT_ERR = "Socket object generation 錯誤"; // 3951 校正官方漢化 0x01808007
+ESCOMM_SOCKET_CONNECT_ERR = "Port connection 錯誤"; // 3951 校正官方漢化 0x01808008
+ESCOMM_OPEN_COMM_ERR = "COMM port handle 錯誤"; // 3951 校正官方漢化 0x01808009
+ESCOMM_SET_BUFFER_SIZE_ERR = "Buffer size setting 錯誤"; // 3951 校正官方漢化 0x0180800A
+ESCOMM_GET_COMM_ERR = "DCB value getting 錯誤"; // 3951 校正官方漢化 0x0180800B
+ESCOMM_SET_COMM_ERR = "DCB setting 錯誤"; // 3951 校正官方漢化 0x0180800C
+ESCOMM_SET_TIMEOUT_ERR = "時間-out value setting 錯誤"; // 3951 校正官方漢化 0x0180800D
+ESCOMM_SHAREDMEMORY_OPEN_ERR = "Shared memory securing 錯誤"; // 3951 校正官方漢化 0x0180800E
+
+// 3951 校正官方漢化 Close error 
+ESCOMM_ALREADY_CLOSE_ERR = "Double close 錯誤"; // 3951 校正官方漢化 0x01808101
+ESCOMM_CLOSE_COMM_ERR = "Handle close 錯誤"; // 3951 校正官方漢化 0x01808102
+ESCOMM_DRIVER_CLOSE_ERR = "Driver close 錯誤"; // 3951 校正官方漢化 0x01808103
+ESCOMM_OVERLAPPEDEVENT_CLOSE_ERR = "重疊 event close 錯誤"; // 3951 校正官方漢化 0x01808104
+ESCOMM_CLOSE_MUTEX_ERR = "MUTEX handle close 錯誤"; // 3951 校正官方漢化 0x01808105
+ESCOMM_CLOSE_COM_ERR = "COM handle close 錯誤"; // 3951 校正官方漢化 0x01808106
+
+// 3951 校正官方漢化 Send error E
+ESCOMM_SEND_ERR = "Send 錯誤"; // 3951 校正官方漢化 0x01808201
+ESCOMM_MAX_BUFFSIZE_OVER_ERR = "Send data size 錯誤"; // 3951 校正官方漢化 0x01808202
+ESCOMM_CLEAR_QUE_ERR = "Queue clear 錯誤"; // 3951 校正官方漢化 0x01808203
+
+// 3951 校正官方漢化 Receive error 
+ESCOMM_RECEIVE_ERR = "Receive 錯誤"; // 3951 校正官方漢化 0x01808301
+ESCOMM_NOT_SEND_ERR = "Non-send 錯誤"; // 3951 校正官方漢化 0x01808302
+ESCOMM_MESSAGE_QUE_RECEIVE_ERR = "重疊 event getting 錯誤"; // 3951 校正官方漢化 0x01808303
+ESCOMM_BUFFER_NOT_ENOUGH_ERR = "Receive buffer size shortage"; // 3951 校正官方漢化 0x01808304
+
+// 3951 校正官方漢化 Others 
+ESCOMM_CHANGE_COMM_CONTROL_ERR = "Control 錯誤"; // 3951 校正官方漢化 0x01808401
+ESCOMM_FUNCTION_VALUE_ERR = "信號line control 錯誤"; // 3951 校正官方漢化 0x01808402
+ESCOMM_SET_FUNCTION_ERR = "信號line specifying 錯誤"; // 3951 校正官方漢化 0x01808403
+ESCOMM_NOT_OPEN_ERR = "打開不yet executed"; // 3951 校正官方漢化 0x01808404
+ESCOMM_COMBINATION_VALUE_ERR = "Communication parameter 錯誤"; // 3951 校正官方漢化 0x01808405
+ESCOMM_BAUDRATE_VALUE_ERR = "Baudrate value specifying 錯誤"; // 3951 校正官方漢化 0x01808406
+ESCOMM_BITSIZE_VALUE_ERR = "Data length 錯誤"; // 3951 校正官方漢化 0x01808407
+ESCOMM_PARITY_VALUE_ERR = "Parity specifying 錯誤"; // 3951 校正官方漢化 0x01808408
+ESCOMM_STOPBIT_VALUE_ERR = "停止 bit specifying 錯誤"; // 3951 校正官方漢化 0x01808409
+ESCOMM_COMMUNICATION_VALUE_ERR = "Communication setting 錯誤"; // 3951 校正官方漢化 0x0180840A
+ESCOMM_TIMEOUT_ERR = "時間-out 錯誤"; // 3951 校正官方漢化 0x0180840B
+ESCOMM_NOT_CONNECT_ERR = "Connect 錯誤"; // 3951 校正官方漢化 0x0180840C
+ESCOMM_ALREADY_CONNECT_ERR = "Double connect 錯誤"; // 3951 校正官方漢化 0x0180840D
+ESCOMM_ATTACH_FAILED_ERR = "Attach failure"; // 3951 校正官方漢化 0x0180840E
+ESCOMM_GET_MODEM_STATUS_ERR = "信號line status getting failure"; // 3951 校正官方漢化 0x0180840F
+ESCOMM_CD_SIGNAL_OFF_ERR = "CD signal line off"; // 3951 校正官方漢化 0x01808410
+ESCOMM_TEL_PASSWORD_ERR = "TEL password mismatch 錯誤"; // 3951 校正官方漢化 0x01808411
+ESCOMM_TEL_ACCESS_ERR = "TEL communication 錯誤"; // 3951 校正官方漢化 0x01808412
+
+// 3951 校正官方漢化 USB related 
+ESCOMM_USBD_LOAD_ERR = "USB driver load 錯誤"; // 3951 校正官方漢化 0x01808501
+ESCOMM_USBD_OPEN_ERR = "USB driver open 錯誤"; // 3951 校正官方漢化 0x01808502
+ESCOMM_USBD_SEND_ERR = "USB send 錯誤"; // 3951 校正官方漢化 0x01808503
+ESCOMM_USBD_RECEIVE_ERR = "USB receive 錯誤"; // 3951 校正官方漢化 0x01808504
+ESCOMM_USBD_TIMEOUT_ERR = "時間-out 錯誤"; // 3951 校正官方漢化 0x01808505
+ESCOMM_USBD_INIT_ERR = "USB driver initialization 錯誤"; // 3951 校正官方漢化 0x01808506
+ESCOMM_USBD_MISC_ERR = "其它 錯誤"; // 3951 校正官方漢化 0x01808507
+
+ESCOMM_SIM2_NOT_INSTALL_ERR = "GX Simulator 2 is不installed"; // 3951 校正官方漢化 0x01809000
+ESCOMM_SIM2_MANAGER_NOT_RUN = "仿真 manager is不running"; // 3951 校正官方漢化 0x01809001
+ESCOMM_SIM2_MANAGER_RUN_ERR = "仿真 manager run 錯誤"; // 3951 校正官方漢化 0x01809002
+ESCOMM_SIM2_MANAGER_RUN_TIMEOUT = "GSimulation manager run timeout"; // 3951 校正官方漢化 0x01809003
+ESCOMM_SIM2_MANAGER_STOP_ERR = "仿真 manager stop 錯誤"; // 3951 校正官方漢化 0x01809004
+ESCOMM_SIM2_SIMRUN_RUN_ERR = "仿真 run 錯誤"; // 3951 校正官方漢化 0x01809005
+ESCOMM_SIM2_SIMRUN_RUN_TIMEOUT = "仿真 run timeout"; // 3951 校正官方漢化 0x01809006
+ESCOMM_SIM2_SIMRUN_STOP_ERR = "仿真 run stop 錯誤"; // 3951 校正官方漢化 0x01809007
+ESCOMM_SIM2_LIMIT_PROCESS = "Limit 過程"; // 3951 校正官方漢化 0x01809008
+ESCOMM_SIM2_LOADED_PROCESS = "載入ed 過程"; // 3951 校正官方漢化 0x01809009
+ESCOMM_SIM2_PROCESS_CONNECTED = "過程 connected"; // 3951 校正官方漢化 0x0180900A
+ESCOMM_SIM2_OPEN_ERR = "打開 錯誤"; // 3951 校正官方漢化 0x0180900B
+ESCOMM_SIM2_MANAGER_CONNECTED = "仿真 manager connected"; // 3951 校正官方漢化 0x0180900C
+ESCOMM_SIM2_NOTSUPPORTCMD_ARG_ERR = "Argument command不supported"; // 3951 校正官方漢化 0x0180900D
+ESCOMM_SIM2_NOTSUPPORTCMD_FILE_ACCESS_ERR = "文件 access command不supported"; // 3951 校正官方漢化 0x0180900E
+ESCOMM_SIM2_NOTSUPPORTCMD_CSV_SYNTAX_ERR = "CSV syntax command不supported"; // 3951 校正官方漢化 0x0180900F
+ESCOMM_SIM2_ARRAY_COUNT_ERR = "Array count 錯誤"; // 3951 校正官方漢化 0x01809010
+ESCOMM_SIM2_BOOT_ENGINE_COUNT_ERR = "Boot engine count 錯誤"; // 3951 校正官方漢化 0x01809011
+ESCOMM_SIM2_SIMRUN_ATTACH = "Attach 錯誤"; // 3951 校正官方漢化 0x01809020
+
+EZ_ERR_NOT_OPEN = "Communication line is不opened";
+EZ_ERR_DOUBLE_OPEN = "Double open 錯誤";
+EZ_ERR_DATA_TYPE = "Illegal data類型";
+EZ_ERR_DATA_RANGE = "Illegal data range";
+EZ_ERR_NOT_SUPPORT = "不supported";
+EZ_ERR_NULLPTR = "Argument is NULL pointer";
+EZ_ERR_CANNOT_OPEN = "不能 open communication 直線";
+EZ_ERR_DATA_LENGTH = "Illegal data length";
+EZ_ERR_OPEN_COMM = "打開 communication line failure";
+
+EZMC_COM_CPUTYPE_ERR = "CPU type 錯誤";
+EZMC_COM_OSTYPE_ERR = "OS Type 錯誤";
+EZMC_COM_OPENED_ERR = "Communication line is already opened";
+EZMC_COM_NOTOPEN_ERR = "Communication line is不opened";
+EZMC_COM_NOTEXIST_ERR = "Sub module沒有發現";
+EZMC_COM_CREATE_ERR = "Communication object creation 錯誤";
+EZMC_COM_PCOBJECT_ERR = "EZSocketPc object creation 錯誤";
+EZMC_COM_NOTREGIST_ERR = "Communication setup information不registered";
+EZMC_COM_REGISTED_ERR = "EZMC_COM_REGISTED_ERR";
+EZMC_COM_MEMALLOC_ERR = "Failed to secure memory";
+EZMC_COM_ILLEGALDATA_ERR = "Character 錯誤";
+
+EZMC_DEV_MEMALLOC_ERR = "Failed to secure memory";
+
+EZMC_SYS_CPUTYPE_ERR = "CPU type 錯誤";
+EZMC_SYS_MEMALLOC_ERR = "Failed to secure memory";
+
+EZMC_MON_CPUTYPE_ERR = "CPU type 錯誤";
+EZMC_MON_OSTYPE_ERR = "OS Type 錯誤";
+EZMC_MON_OPENED_ERR = "Communication line is already opened";
+EZMC_MON_NOTOPEN_ERR = "Communication line is不opened";
+EZMC_MON_OTHEROPENED_ERR = "EZMC_MON_OTHEROPENED_ERR";
+EZMC_MON_NOTEXIST_ERR = "Sub module沒有發現";
+EZMC_MON_CREATE_ERR = "創建monitoring interface failure";
+EZMC_MON_PCOBJECT_ERR = "EZSocketPc object creation 錯誤";
+EZMC_MON_NOTREGIST_ERR = "Communication setup information不registered";
+EZMC_MON_REGISTED_ERR = "EZMC_MON_REGISTED_ERR";
+EZMC_MON_MEMALLOC_ERR = "Failed to secure memory";
+EZMC_MON_READ_ERR = "Reading不executed";
+EZMC_MON_BUSY_ERR = "Monitoring in access";
+EZMC_MON_NOTREAD_ERR = "Monitoring reading";
+
+EZMC_SYS_MANAGER_START_ERR = "Error of Starting MTS Manager";
+EZMC_SYS_ENGINE_START_ERR = "Error of Starting MTS Engine";
+EZMC_SYS_MANAGER_CONNECT_ERR = "Communication Error with the MTS Manager";
+EZMC_SYS_ENGINE_LIMIT_ERR = "Error of Maximum Number (4) of MTS Engine";
+EZMC_SYS_MANAGER_STOP_ERR = "Error of Stoping MTS Manager";
+EZMC_SYS_ENGINE_STOP_ERR = "Error of Stoping MTS Engine";
+EZMC_SYS_PROCECC_CONNECTED = "The other process has been connectingto the MTS Manager";
+EZMC_SYS_INSTRUCTION_ERR = "Execution error of the dedicated instruction for運動";
+EZMC_SYS_SIGNAL_ERR = "Execution error of the external 信號";
+EZMC_SYS_SYSTEM_DATA_ERR = "Error in writing the system setting 數據";
+EZMC_SYS_FILE_NOT_FOUND_ERR = "Backup file沒有發現";
+EZMC_SYS_FILE_WRITE_ERR = "Error in writing the backup文件";
+EZMC_SYS_FILE_READ_ERR = "Error in reading backup文件";
+EZMC_SYS_ENGINE_ERR = "EZMC_SYS_ENGINE_ERR";
+EZMC_SYS_ENGINE_NOT_FOUND_ERR = "The specified MTS Engine不存在";
+EZMC_SYS_MANAGER_NOT_RUN_ERR = "MTS manager is不running";
+EZMC_SYS_INSTRUCTION_ARG_ERR = "EZMC_SYS_INSTRUCTION_ARG_ERR";
+EZMC_SYS_BACKUP_ERR = "Execution error of backing up文件";
+EZMC_SYS_RESTORE_ERR = "Execution error in restoring the axes";
+EZMC_SYS_AXIS_SET_ERR = "Execution error of setting the value of軸";
+EZMC_SYS_DATASIZE_ERR = "非法 Data Size of 參數 ";
+EZMC_SYS_MTS_NOT_INST_ERR = "Error of Uninstalled MTS";
+EZMC_SYS_EXL_CONTROL_ERR = "EZMC_SYS_EXL_CONTROL_ERR";
+EZMC_SYS_CTRLNUM_USED_ERR = "Error of specified machine in use";
+EZMC_SYS_TELEGRAM_ERR = "Error of Invalid Sending 數據";
+EZMC_SYS_ENGINE_RUN_ERR = "Running MTS Engine has failed";
+EZMC_SYS_ENGINE_PAUSE_ERR = "Pausing MTS Engine has failed";
+EZMC_SYS_MANAGER_STOPPING_ERR = "停止ing MTS Engine has failed";
+EZMC_SYS_ALREADY_CONNECT_ERR = "EZMC_SYS_ALREADY_CONNECT_ERR";
+EZMC_SYS_NOT_CONNECT_ERR = "EZMC_SYS_NOT_CONNECT_ERR";
+
+// 3951 校正官方漢化 Common Q/QH CPU error
+EZMC_QCPU_RUNMODE_ERR = "不available in RUN";
+EZMC_QCPU_SEARCH_ERR = "不detected in search";
+EZMC_QCPU_SUMCHECK_ERR = "Sumcheck 錯誤";
+EZMC_QCPU_RECIEVESIZE_ERR = "Receive length 錯誤";
+EZMC_QCPU_PROTOCOL_ERR = "Protocol 錯誤";
+EZMC_QCPU_ADDRESS_ERR = "增加ress 錯誤";
+EZMC_QCPU_INSTALLSW_ERR = "Installation switch 錯誤";
+EZMC_QCPU_FROMWRITE_ERR = "F.ROM write 錯誤";
+EZMC_QCPU_EROMWRITE_ERR = "E2ROM write 錯誤";
+EZMC_QCPU_ACCESSREFUSAL_ERR = "Access denied 錯誤";
+EZMC_QCPU_PCNO_ERR = "PC No. 錯誤";
+EZMC_QCPU_MODE_ERR = "模式 錯誤";
+EZMC_QCPU_EXUNIT_ERR = "Special unit specification 錯誤";
+EZMC_QCPU_OTHERDATA_ERR = "其它 data 錯誤";
+EZMC_QCPU_REMOTECALL_ERR = "Remote request 錯誤";
+EZMC_QCPU_LINKTIMEOVER_ERR = "鏈接time over";
+EZMC_QCPU_TARGETCPUBUSY_ERR = "目標 BUSY/PCPU in 過程";
+EZMC_QCPU_BOOTCPUBUSY_ERR = "開始ing source BUSY";
+EZMC_QCPU_LINK_ERR = "鏈接錯誤";
+EZMC_QCPU_EXUNITBUS_ERR = "Special unit bus 錯誤";
+EZMC_QCPU_TIMEOVER_ERR = "時間 over";
+
+// 3951 校正官方漢化 Common QD CPU error
+EZMC_QDCPU_RUNMODE_ERR = "不available in RUN";
+EZMC_QDCPU_SEARCH_ERR = "不detected in search";
+EZMC_QDCPU_SUMCHECK_ERR = "Sumcheck 錯誤";
+EZMC_QDCPU_RECIEVESIZE_ERR = "Receive length 錯誤";
+EZMC_QDCPU_PROTOCOL_ERR = "Protocol 錯誤";
+EZMC_QDCPU_ADDRESS_ERR = "增加ress 錯誤";
+EZMC_QDCPU_INSTALLSW_ERR = "Installation switch 錯誤";
+EZMC_QDCPU_FROMWRITE_ERR = "F.ROM write 錯誤";
+EZMC_QDCPU_EROMWRITE_ERR = "E2ROM write 錯誤";
+EZMC_QDCPU_ACCESSREFUSAL_ERR = "Access denied 錯誤";
+EZMC_QDCPU_PCNO_ERR = "PC No. 錯誤";
+EZMC_QDCPU_MODE_ERR = "模式 錯誤";
+EZMC_QDCPU_EXUNIT_ERR = "Special unit specification 錯誤";
+EZMC_QDCPU_OTHERDATA_ERR = "其它 data 錯誤";
+EZMC_QDCPU_REMOTECALL_ERR = "Remote request 錯誤";
+EZMC_QDCPU_LINKTIMEOVER_ERR = "鏈接time over";
+EZMC_QDCPU_TARGETCPUBUSY_ERR = "目標 BUSY/PCPU in 過程";
+EZMC_QDCPU_BOOTCPUBUSY_ERR = "開始ing source BUSY";
+EZMC_QDCPU_LINK_ERR = "鏈接錯誤";
+EZMC_QDCPU_EXUNITBUS_ERR = "Special unit bus 錯誤";
+EZMC_QDCPU_TIMEOVER_ERR = "時間 over";
+

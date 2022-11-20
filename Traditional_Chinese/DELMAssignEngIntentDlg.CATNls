@@ -1,0 +1,87 @@
+Title = "Plan技術要求 Implementation";
+
+ActivityFrame.AssignmentFrame.Title= "Implementation類型";
+ActivityFrame.AssignmentFrame.AssignmentLabel.Title = "類型 of Implementation:";
+ActivityFrame.AssignmentFrame.AssignmentCombo.Help = "選擇Implementation Type for ER";
+ActivityFrame.AssignmentFrame.AssignmentCombo.LongHelp = "選擇Partial或 Complete as the Implementation Type for the ER";
+
+
+ActivityFrame.AssignedToFrame.Title = "Implemented By";
+ActivityFrame.AssignedToFrame.AssignedToLabel.Title = "Implemented By:";
+ActivityFrame.AssignedToFrame.AssignedToCombo.Help = "選擇operation";
+ActivityFrame.AssignedToFrame.AssignedToCombo.ShortHelp = "選擇operation";
+ActivityFrame.AssignedToFrame.AssignedToCombo.LongHelp = "選擇the operation that will implement the ER.";
+
+ActivityFrame.ShowEIFrame.Title = "顯示Engineering Requirements in:";
+ActivityFrame.ShowEIFrame.ShowEILabel.Title = "顯示Engineering Requirements in:";
+ActivityFrame.ShowEIFrame.ShowArmCombo.Help = "選擇ARM";
+ActivityFrame.ShowEIFrame.ShowArmCombo.ShortHelp = "選擇ARM";
+ActivityFrame.ShowEIFrame.ShowArmCombo.LongHelp = "選擇ARM from the 列表";
+
+EIFrame.LeftFrame.Title = "Avaliable ERs";
+EIFrame.LeftFrame.LeftLabel.Title = "Avaliable ERs";
+EIFrame.LeftFrame.LeftLabel.UnConsumedEIList.Help = "ERs to be implemented by selected操作";
+EIFrame.LeftFrame.LeftLabel.UnConsumedEIList.ShortHelp = "ERs to be implemented by selected操作";
+EIFrame.LeftFrame.LeftLabel.UnConsumedEIList.LongHelp = "ERs to be implemented by selected操作";
+
+EIFrame.LeftFrame.LeftNumAvailEILabel.Title = "可用";
+EIFrame.LeftFrame.LeftNumAvailEIEditor.Help = "可用 ERs";
+
+EIFrame.LeftFrame.LeftNumSelectedEILabel.Title = "選擇";
+EIFrame.LeftFrame.LeftNumSelectedEIEditor.Help = "選擇 ERs";
+
+EIFrame.RightFrame.Title = "Implemented ERs";
+EIFrame.RightFrame.RightLabel.Title = "Implemented ERs";
+EIFrame.RightFrame.RightLabel.ConsumedEIList.Help = "ERs implemented by selected操作";
+EIFrame.RightFrame.RightLabel.ConsumedEIList.ShortHelp = "ERs implemented by selected操作";
+EIFrame.RightFrame.RightLabel.ConsumedEIList.LongHelp = "ERs implemented by selected操作";
+
+EIFrame.RightFrame.RightNumAssignedEILabel.Title = "Implemented";
+EIFrame.RightFrame.RightNumAssignedEIEditor.Help = "Implemented ERs";
+
+EIFrame.RightFrame.RightNumSelectedEILabel.Title = "選擇";
+EIFrame.RightFrame.RightNumSelectedEIEditor.Help = "選擇 ERs";
+
+EIFrame.CenterFrame.Title = " ";
+// 3951 校正官方漢化EIFrame.CenterFrame.LeftToRightPushButton.ShortHelp = "Plan the Implementation of ERs by操作";
+// 3951 校正官方漢化EIFrame.CenterFrame.LeftToRightPushButton.Help = "Plan the Implementation of selected ERs by操作";
+// 3951 校正官方漢化EIFrame.CenterFrame.LeftToRightPushButton.LongHelp = "指派 selected ERs from lists of available ERs to一個operation";
+
+// 3951 校正官方漢化EIFrame.CenterFrame.RightToLeftPushButton.ShortHelp = "Unassign ERs from一個operation";
+// 3951 校正官方漢化EIFrame.CenterFrame.RightToLeftPushButton.Help = "Unassign selected ERs from一個operation";
+// 3951 校正官方漢化EIFrame.CenterFrame.RightToLeftPushButton.LongHelp = "Unassign selected ERs from lists of consumed ERs to一個operation";
+
+
+GlobalFrame.Title = "Project View 信息";
+// 3951 校正官方漢化GlobalFrame.GlobalLabel.Title = "顯示Project View of ER implementation";
+GlobalFrame.GlobalLabel.ShortHelp = "Project View of implementation of ER";
+GlobalFrame.GlobalLabel.LongHelp = "View the implementation of ERs within the current project視圖";
+GlobalLabel = "顯示Project View of ER implementation for";
+
+GlobalViewFrame.Title = "Project View ER 信息";
+// 3951 校正官方漢化GlobalViewFrame.GlobalViewLabel.Title = "Project View of ER";
+GlobalViewFrame.GlobalViewList.Help = "Project View of Implementation of ER";
+GlobalViewFrame.GlobalViewList.ShortHelp = "Project View of implementation of ER";
+GlobalViewFrame.GlobalViewList.LongHelp = "Project View of implementation of ER";
+GlobalViewLabel = "選擇 Product / Part:";
+
+EI= "名稱 of ER";
+EI1= "名稱 of ER";
+AssignmentType = "類型";
+
+EIName = "名稱 of ER";
+Consumedby = "Implemented By";
+Consumptiontype = "Implementation類型";
+
+Partial="部分";
+Complete="完整";
+
+SelectProduct="選擇產品";
+
+Information.Title    = " 信息 ";
+Information.Message	 = " Recently planned技術要求 has already been planned for implementation. \n Please unplan it before making一個new implementation plan.";
+
+// 3951 校正官方漢化 V5 R19 Higlight
+ConsumedCtxMenuUnAssign = "Un-Assign";
+ConsumedCtxMenuPartialToComplete = "Change \"零件ial\" to \"Complete\"";
+ConsumedCtxMenuCompleteToPartial = "Change \"Complete\" to \"零件ial\"";

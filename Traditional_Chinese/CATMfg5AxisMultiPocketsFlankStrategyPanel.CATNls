@@ -1,0 +1,126 @@
+// 3951 校正官方漢化 ----------------
+// 3951 校正官方漢化 Onglet Machining
+// 3951 校正官方漢化 ----------------
+MfgMachiningTabPage="加工";
+
+MfgMachToler="加工公差";
+MfgMachToler.LongHelp="這是用于控制輸出位置分布和數量的弦公差。";
+MfgMaxDiscretizationAngle="最大離散角";
+MfgMaxDiscretizationAngle.LongHelp="指定機床可以到達的兩個連續位置之間允許的最大離散角。
+如果理論刀具路徑計算提供的多對相鄰位置 (i,j,k) 的角度超過了一個機床
+可以到達的角度，則機床將可能無法創建插補。為避免此類情況，
+可處理其他計算，以輸出附加位置。";
+
+CuttingMode="切削模式";
+MfgDirectionOfCut.LongHelp="指定執行銑削的方式：
+- 順銑：
+  進刀（加工方向）的前部先切入材料
+- 逆銑：
+  進刀（加工方向）的后部先切入材料 ";
+
+MfgMachiningMode="加工模式：";
+MfgMachiningMode1.LongHelp="讓您決定是逐平面還是逐區域加工。";
+MfgMachiningMode2.LongHelp="讓您決定是僅加工型腔，還是僅加工外部零件，還是同時加工二者。";
+
+// 3951 校正官方漢化 ----------------
+// 3951 校正官方漢化 Onglet Step-Over
+// 3951 校正官方漢化 ----------------
+MfgStepOverTabPage="步距";
+
+MfgSequencingMode="排序";
+MfgSequencingMode.LongHelp="指定完成加工的順序：
+- 軸向：
+  先完成軸向加工，然后再完成徑向加工
+- 徑向：
+  先完成徑向加工，然后再完成軸向加工。";
+
+RadialStrategyFrame="徑向策略";
+MfgDistanceBetweenPaths="路徑間距離";
+MfgDistanceBetweenPaths.LongHelp="定義在徑向策略中
+兩個連續刀具路徑之間的最大距離。";
+MfgNumberOfRadialPaths="路徑數";
+MfgNumberOfRadialPaths.LongHelp="定義徑向策略中的刀具路徑數。";
+
+SemiAxialStrategyFrame="軸向策略";
+Mfg5AxisMultiLevelMode="模式";
+Mfg5AxisRoughMultiLevelMode.LongHelp="定義軸向路徑的計算模式。";
+MfgMaxDepthOfCut="路徑間距離";
+MfgMaxDepthOfCut.LongHelp="定義在軸向策略中
+兩個連續刀具路徑之間的最大距離。";
+MfgScallopHeight="殘料高度";
+MfgScallopHeight.LongHelp="定義軸向策略中的殘料高度。";
+
+// 3951 校正官方漢化 ----------------
+// 3951 校正官方漢化 Onglet Finishing
+// 3951 校正官方漢化 ----------------
+MfgFinishingTabPage="精加工";
+
+SideFinish="模式";
+SideFinish.LongHelp="指示是否要在機床的
+側面區域生成精銑刀路。
+側精銑可在操作的每層中完成，
+也可僅在操作的上一層中完成。";
+Thickness="側精銑厚度";
+Thickness.LongHelp="指定側精銑厚度。";
+BottomThickness="底部的側面厚度";
+BottomThickness.LongHelp="指定底部精銑刀路使用的厚度。";
+ThicknessBottom="底部精銑厚度";
+ThicknessBottom.LongHelp="指定底部精銑厚度。";
+SpringPath="跳刀路徑";
+SpringPath.LongHelp="指示是否要在與上一個側精銑刀路
+相同的情況下在側面上生成跳刀路徑。
+跳刀路徑用于補償刀具的自然“跳刀”。";
+
+Mfg5AxisFinishMultiLevelMode="精加工步距";
+Mfg5AxisFinishMultiLevelMode.LongHelp="定義精銑路徑的計算模式。";
+MfgMaxDepthOfCutFinish.LongHelp="定義在軸向精加工策略中兩個連續刀具路徑
+之間的最大距離。";
+MfgScallopHeightFinish.LongHelp="定義軸向精加工策略中的殘料高度。";
+
+// 3951 校正官方漢化 ----------------
+// 3951 校正官方漢化 Onglet Tool-Axis
+// 3951 校正官方漢化 ----------------
+MfgToolAxisTabPage="刀軸";
+
+Fanning="扇形距離";
+
+
+Mfg5AxisMaxTiltAngle="最大傾角";
+Mfg5AxisMaxTiltAngle.LongHelp="指定最大傾角值。";
+
+Mfg5AxisMPFAxisStrategy="導向";
+Mfg5AxisMPFAxisStrategy.LongHelp="指定要用于驅動面的策略。";
+
+// 3951 校正官方漢化 ----------------
+// 3951 校正官方漢化 Onglet HSM
+// 3951 校正官方漢化 ----------------
+MfgHSMTabPage="HSM";
+
+MfgCorneringFlag="轉角";
+MfgCorneringFlag.LongHelp="指定是否要在用于高速銑削的軌跡上完成轉角。";
+
+MfgCorneringRadius="圓角半徑";
+MfgCorneringRadius.LongHelp="指定沿高速銑削操作軌跡且用于圍繞圓角的半徑。";
+
+MfgCorneringFinishFlag="側精銑路徑上的轉角";
+MfgCorneringFinishFlag.LongHelp="指定是否要在側精銑路徑上完成刀具路徑轉角";
+
+MfgCorneringFinishRadius="圓角半徑";
+MfgCorneringFinishRadius.LongHelp="指定用于高速銑削操作的側精銑刀路的圓角半徑。";
+
+// 3951 校正官方漢化 Tab page : Output ( For Circular interpolation
+CATMfgOutputTabPage.Title="輸出";
+
+MfgCircInterpo="圓弧插補";
+MfgCircInterpo.LongHelp="激活圓弧插補。";
+
+MfgCircInterpoOptim="用于優化圓弧插補的近似刀路。";
+MfgCircInterpoOptim.LongHelp="定義刀具路徑的刀路是否相近，以優化圓弧插補。";
+
+MfgToolPathDistanceOverlap="刀路重疊";
+MfgToolPathDistanceOverlap.LongHelp="指定刀路末端與其開始部分的重疊寬度。";
+
+MfgFeedrateDistanceThreshold="切換到快速進給速度";
+MfgFeedrateDistanceThreshold.LongHelp="指定其進給速度將更改為快速進給速度的鏈接路徑的長度。";
+
+

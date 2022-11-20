@@ -1,0 +1,73 @@
+// 3951 校正官方漢化 DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+// 3951 校正官方漢化Advanced Options
+Title = "Manufacturing Context Inputs";
+Title.Help="選擇 inputs for computing and loading manufacturing context";
+
+LoadXml.Title = "Load Input XML";
+LoadXmlPB.Title = "...";
+
+RootProc.Title = "Root Process";
+RootProcPB.Title = "...";
+
+RootProd.Title = "Root Product";
+RootProdPB.Title = "...";
+
+RootRes.Title = "Root Resource";
+RootResPB.Title = "...";
+
+VolFilter.Title = "Volume Filter";
+VolFilterPB.Title = "...";
+
+SaveXml.Title = "Save XML";
+SaveXmlPB.Title = "...";
+
+ProcRelFrame.Title = "Process Relations";
+ProcRelFrame.ProcPrecedeProc.Title = "Process must precede process";
+ProcRelFrame.ProcRunsBeforeProc.Title = "Process runs before process";
+
+ProcProdRelFrame.Title = "Process Product Relations";
+ProcProdRelFrame.ProcProcessesProd.Title = "Process processes product";
+ProcProdRelFrame.ProcFirstProcProd.Title = "Process first processes product";
+ProcProdRelFrame.ProcCreatesProd.Title = "Process creates product";
+ProcProdRelFrame.ProcRemovesProd.Title = "Process removes product";
+
+ProcResRelFrame.Title = "Process Resource Relations ";
+ProcResRelFrame.ProcAttachesRes.Title = "Process attaches resource";
+ProcResRelFrame.ProcDetachesRes.Title = "Process detaches resource";
+ProcResRelFrame.ProcUsesPlant.Title = "Process uses resource";
+
+StPosFrame.Title = "States and Positions";
+StPosFrame.3DStatePos.Title = "Consider 3D States and Position";
+StPosFrame.ManfgPos.Title = "Consider Manufacturing Position";
+StPosFrame.3dStPosPB.Title = "...";
+
+SelectPrcTitle = "Manufacturing Hub - Select Process";
+SelectPrdTitle = "Manufacturing Hub - Select Product";
+SelectResTitle = "Manufacturing Hub - Select Resource";
+
+NoRootProc="The Root Process for Manufacturing Context is not specified.";
+InvalidRootProc="Invalid Root Process specified.\nObject does not exist in the Manufacturing Hub Database.";
+
+NoRootProd="The Root Product for Manufacturing Context is not specified.";
+InvalidRootProd="Invalid Root Product specified.\nObject does not exist in the Manufacturing Hub Database.";
+
+NoRootRes="The Root Resource for Manufacturing Context is not specified.";
+InvalidRootRes="Invalid Root Resource specified.\nObject does not exist in the Manufacturing Hub Database.";
+
+NoComputeMC="Manufacturing Context cannot be computed because of invalid/missing inputs.";
+
+NoProcRel="No process relations are specified for computing the Manufacturing Context.";
+NoProdRel="No product relations are specified for computing the Manufacturing Context.";
+NoResRel="No resource relations are specified for computing the Manufacturing Context.";
+
+OnlyRemoveProdRel="Only Process Removes Product relation is selected for computing Manufacturing Context.";
+OnlyDetachesResRel="Only Process Detaches Resource relation is selected for computing Manufacturing Context.";
+
+MissingBBoxValue="The input Bounding Box has missing values.\nThe input volume filter will be ignored.";
+
+ParseInputXMLFailed = "Input XML File could not be read.";
+
+ErrorTitle = "Error";
+WarningTitle = "Warning";
+
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE

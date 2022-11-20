@@ -1,0 +1,95 @@
+DialogBoxTitle="外形建模";
+
+FrameSelection.LongHelp="               選擇
+可以選擇曲線或曲面集。
+不必連接這些元素。";
+LabelElement.Title="元素： ";
+LabelElement.LongHelp="選擇要建模的曲線或曲面集。
+不必連接這些元素。";
+LabelElement.ShortHelp="選擇要建模的元素";
+
+
+TabPageOptions.Title="選項";
+
+FrameReference.Title="參考";
+FrameReference.LongHelp="可以建模的對象包括
+- 以曲線作為參考的一系列曲線
+- 以曲面作為參考的一系列曲線
+- 以曲線作為參考的一系列曲面
+- 以曲面作為參考的一系列曲面
+所有參數將應用到這個曲面，而不是內部計算的曲面。
+選擇和修改參考曲面，而不是建模的元素本身。
+對參考曲面的修改會傳遞給元素。";
+CheckButtonAuto.Title="自動";
+CheckButtonAuto.LongHelp="參考可以是用戶定義的或自動創建的。
+自動創建的參考盡可能小。
+建模的結果不同。";
+CheckButtonAuto.ShortHelp="無法自動創建參考。";
+LabelRefAlignment.Title="對齊： ";
+LabelRefAlignment.LongHelp="方向可以是法線或用戶定義的方向。";
+LabelRefAlignment.ShortHelp="如何定義方向";
+ComboAlignmentType.LongHelp="指定用于對齊
+參考曲面的方向類型。";
+ComboAlignmentType.ShortHelp="選擇方向";
+LabelRefDirection.Title="方向： ";
+LabelRefDirection.LongHelp="自動創建的參考垂直于所定義的方向。";
+LabelRefDirection.ShortHelp="用于參考的方向";
+LabelRefPosition.Title="位置： ";
+LabelRefPosition.LongHelp="必須定義一個點，然后自動
+創建的參考將通過這個點。";
+LabelRefPosition.ShortHelp="用于自動參考的點";
+
+FrameProjection.Title="投影";
+FrameProjection.LongHelp="僅修改了其投影與參考相交的元素。";
+LabelProjectionType.Title="類型： ";
+LabelProjectionType.LongHelp="法線到曲面或已經定義的方向";
+LabelProjectionType.ShortHelp="投影方向";
+LabelProjDirection.Title="方向： ";
+LabelProjDirection.LongHelp="指定沿一個方向的投影";
+LabelProjDirection.ShortHelp="定義方向";
+ComboProjectionType.LongHelp="指定從參考曲面到
+元素的投影類型。";
+ComboProjectionType.ShortHelp="投影類型";
+Direction.AlongADirection="沿某一方向";
+Direction.Normal="常規";
+
+TabPageParameter.Title="參數";
+
+CheckButtonTranslation.Title="平移";
+CheckButtonTranslation.LongHelp="只有參考所涵蓋的幾何區域被修改。
+通過此選項，您可以決定未涵蓋在參考中的
+幾何區域在修改時的行為。
+關：拉伸或壓縮未涵蓋的區域。
+開：平移未涵蓋的區域。";
+CheckButtonTranslation.ShortHelp="如果未參考元素，則平移";
+
+CheckButtonRotation.Title="旋轉";
+CheckButtonRotation.LongHelp="此選項只影響曲面。
+您可以決定幾何形狀在修改時是否應根據參考而旋轉。
+-關- 幾何形狀將只進行平移。
+-開- 幾何形狀還會旋轉。
+這意味著幾何形狀和參考之間的角度總是相同的值。";
+CheckButtonRotation.ShortHelp="元素將被旋轉";
+
+CheckButtonControlPoint.Title="控制點";
+CheckButtonControlPoint.LongHelp="參考的控制點被修改，接著是參考所涵蓋的控制點。
+參考以外的控制點將不會被修改。
+幾何圖形沒有沒重新近似。";
+CheckButtonControlPoint.ShortHelp="參考上的控制點被修改。";
+
+CheckButtonSmoothFactor.Title="光順因子： ";
+CheckButtonSmoothFactor.LongHelp="可以為近似打開或關閉光順。
+-開- 可以指定光順系數。
+-關- 近似的光順系數為 0。";
+CheckButtonSmoothFactor.ShortHelp="光順結果";
+SpinnerSmoothFactor.LongHelp="光順因子";
+SpinnerSmoothFactor.ShortHelp="光順因子";
+
+LabelMinOrder.Title="最小階數： ";
+LabelMinOrder.LongHelp="如果選定的曲面比此處指定的最小階數低，
+其階數將自動增加到這個值。";
+LabelMinOrder.ShortHelp="輸出的最小階數";
+SpinnerMinOrder.LongHelp="輸出的最小階數";
+SpinnerMinOrder.ShortHelp="輸出的最小階數";
+
+TabModification.Title="修改";

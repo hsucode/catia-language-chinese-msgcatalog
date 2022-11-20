@@ -1,0 +1,248 @@
+MSG_MSGBOXTITLE="ENOVIA MatrixOne";
+MSG_MSGBOXTITLE_V6="ENOVIA V6";
+MSG_ABOUT="ENOVIA MatrixOne-CATIA v5 集成\n
+產品版本：/P1 
+日期：/P2 \n
+與 Designer Central 兼容：/P3 ";
+MSG_ACTIVESESSION="已加入活動會話。";
+MSG_CHECKOUTSUCCESS="已成功簽出以下文件：\n\t";
+MSG_CHECKINSUCCESS="已成功簽入以下項：";
+MSG_STARTDESIGNSUCCESS="已對以下文件成功執行“開始設計”操作：\n\n\t";
+MSG_PARTIALCHECKOUTERRORMESSAGE="由于以下原因之一，無法執行部分簽出：
+1. 裝配體包含新創建或已修改的關系
+2. 裝配體包含重命名的對象
+\n要能夠對請求的對象執行簽出，請選擇
+1. 當前選定節點的新關系/已修改關系的子級
+2. 當前選定節點的重命名子級
+\n在執行下一簽出操作之前，請刪除簽出目錄中的文件。";
+MSG_CHECKOUTNOTLOADABLE="無法在 CATIA 中加載此類型的文檔";
+MSG_CHECKOUTNOTVIEWABLE="無法在其自身的窗口中查看此類型的文檔";
+MSG_NOACTIVEDGN="無活動設計文件。";
+MSG_CHECKINDELETEDFILES="已成功刪除以下項：";
+MSG_LOCKUNLOCKSUCCESS="鎖定/解鎖成功。";
+MSG_FILENOTEXISTS="ENOVIA V6 中不存在該文件。";
+MSG_NOFILESCHKOUT="用戶未簽出任何文件。";
+MSG_NOT_CONNECTED="未連接。\n請連接并登錄。";
+MSG_DISCONNECT="是否要斷開連接？";
+DOC_CYCLIC_DEP="無法處理。設計結構存在遞歸依賴關系。";
+INVALID_SERVERSETTINGS="服務器設置無效。";
+MSG_EXCEPTION_OCCURED="錯誤：出現異常。";
+MSG_TAG_ATTRIB_SYNCH_BARRED="不允許標記屬性同步。要激活標記屬性同步，請修改安裝目錄中的 settings.ini 文件。";
+NOTCONNECTEDTOAPPLET="無法連接至 applet";
+INVALIDLOGIN="連接失敗。\n您未登錄到 applet 或 applet 會話超時。";
+HELP_FILE_URL_NOT_FOUND="'settings.ini' 文件中未提供幫助文件 URL";
+FAILED_TO_LAUNCH_EXE_WITH_URL="無法使用幫助文件啟動可執行文件";
+CHECK_FOR_UPDATE_SUCCESS_MSG="已成功更新以下文件：\n\n";
+CHECK_FOR_UPDATE_FAILURE_MSG="無法更新以下文件：\n\n";
+// 3951 校正官方漢化IR 0668595 : SC8 - FIX START
+CHECK_FOR_UPDATE_NONE="未更新任何文檔\n\n";
+// 3951 校正官方漢化IR 0668595 : SC8 - FIX END
+RECOGNIZE_VERSION_SUCCESS_MSG="已成功識別以下文件：\n\n";
+FILESNOTOPND="無法打開以下文件：";
+MSG_DELETE_AND_NEW_INFO="要刪除本地文件，必須關閉此文件并打開新文件。\n
+在“另存為”對話框中：
+    指定要創建和打開的新文件的位置/名稱，然后單擊“保存”。
+    請勿按“取消”。
+    按“確定”繼續。";
+INVALID_NEW_FILE_NAME="請輸入一個有效的文件名并單擊“保存”";
+FILE_ALREADY_EXISTS="磁盤中已存在您輸入的文件名。
+請輸入新文件名并單擊“保存”。";
+SYNCH_ATTR_TO_MATRIX_SUCCESS_MSG="已成功同步以下文件：";
+SYNCH_ATTR_TO_MATRIX_ERROR_MSG="未同步以下文件：";
+MSG_PROGRESS_BAR="正在進行操作。請稍候...";
+USEREXIT_ERROR_AND_ABORTING="User Exit 函數出錯。故中止。";
+USEREXIT_EXCEPTION="User Exit 函數發生異常：'/P1' \n";
+USEREXIT_FAILEDTOGETPROCADDRESS="用戶退出失敗。無法獲取以下項的進程地址：'/P1' \n";
+MSG_FOLL_FILES_SUCCESS_SYNCHRONISED="已成功同步以下文件：";
+MSG_FOLL_FILES_NOT_SYNCHRONISED="未同步以下文件：";
+SYNCH_ATTR_TO_MATRIX_NO_SYNC="未進行屬性同步，可能是因為以下原因：\n1) 會話中的 CAD 文件不支持這些屬性。\n2) 沒有適當的 GCO 映射。\n3) 屬性在 CAD 文件中不存在。\n4) 同步文件中的必需屬性時出錯。";
+MSG_FOLL_ATTRIB_WERE_SYNCHRONISED="已同步以下屬性：";
+MSG_NO_ATTRIB_PRESENT_TO_MODIFY="此文件沒有要修改的屬性。";
+MSG_REASON="原因";
+ERROR_MODIFY_ATTRIBUTE="修改屬性時出錯。";
+MSG_RFA_FILE="RFA 文件。";
+MSG_INVSAVENEW_OR_ACTIVE="CATIA 中的活動文件為新文件或/和尚未保存。
+在使用該命令前，請先保存文件。";
+MSG_INVNOACTIVEDOC="無法處理。沒有處于“活動”狀態的文檔。";
+MSG_INVSAVEUNSAVEDALL="CATIA 中打開的其中一個文件為新文件或尚未保存。
+在使用該命令前，請先保存文件。";
+MSG_NOACTIVEASMDOC="無法處理。活動文檔不是裝配體文檔";
+WORKINGSET_UPDATE_FAILURE="更新工作集條目時出錯。用戶需要手動為 iPartMember 對象更新此條目。";
+REFRESHFILESLIST_ERRORMSG="如果 CSE 更新以下文件，將在 CAD 工具中加載這些文件的引用。
+因此不會更新這些文件。\n
+用戶需要關閉這些文件及引用這些文件的文件，然后重新加載它們：";
+MSG_COMMAND_NOT_ENABLED="無法執行選定的命令，因為該命令已在全局設置中禁用。";
+DELETE_MODIFIED_FILES_ON_CHECKIN="是否要在簽入后刪除修改的文件 /P1？";
+MSG_READREGISTRY_FAIL="無法從注冊表獲取安裝路徑。";
+ERROR="錯誤";
+MSG_CANNOT_INSERT_DOC="無法在此文件類型下插入任何文檔。";
+
+// 3951 校正官方漢化IR-046085 Fix: START
+MSG_FILE_READONLY_CANNOT_INSERT_DOC="無法在此只讀文檔下插入。";
+// 3951 校正官方漢化IR-046085 Fix: END
+
+MSG_CT5_LICENSE_MISSING="此 CT5 許可未授權給該 CATIA V5 實例。";
+MSG_FAILED_TO_LAUNCH_BROWSER="無法啟動瀏覽器。";
+MSG_NO_ACTIVE_DOC="沒有處于活動狀態的文檔";
+MSG_DOC_ALREADY_OPEN="無法打開頂層文檔。\n文檔已從其他位置打開";
+MSG_MULTIPLE_FORMATS_FORBIDDEN="錯誤：對象 /P1 包含多個不同的文件。";
+MSG_ERROR_NO_ATTACHED_FORMAT="DesignerCentral 響應錯誤：對象 /P1 不包含任何文件或模板。";
+MSG_ERROR_INVALID_ALIAS="錯誤：別名 /P1 是在 DesignerCentral 中對路徑 /P2 定義的，但 CATIA 中沒有名為 /P1 的匹配 DLName。請斷開連接再重新連接 CATIA 以更新別名表，然后在選擇有效的別名后重試。";
+MSG_ERROR_INCORRECT_ALIAS="錯誤：別名 /P1 是在 DesignerCentral 中對路徑 /P2 定義的，但 CATIA 中的匹配 DLName 指向路徑 /P3。請斷開連接再重新連接 CATIA 以更新別名表，然后在選擇有效的別名后重試。";
+PROGRESS_TEXT="請稍候，正在進行后臺處理...";
+PROGRESS_GETOBJECTINFO="簽出：正在獲取對象信息...";
+PROGRESS_GETRELATIONSHIP="簽出：正在獲取關系...";
+PROGRESS_HANDLERFA="簽出：正在處理 RFA...";
+PROGRESS_GENERATENEWSTRUCTURE="簽出：正在生成新結構...";
+PROGRESS_PROCESSRENAMEDOBJECTS="簽出：正在處理重命名的對象...";
+PROGRESS_HANDLERELATIONSHIPATTRIBUTES="簽出：正在處理關系屬性...";
+PROGRESS_OPENTOPLEVELDOCUMENTS="簽出：正在打開頂層文檔...";
+PROGRESS_ATTRIBUTESYNC="簽出：正在同步屬性...";
+MANUAL_DERIVED_OUTPUT_NOT_PRESENT_MESSAGE="包含“手動生成”選項的某些派生輸出文件不在磁盤上。
+已禁止自動生成“手動派生輸出”文件。
+因此，將取消簽入操作。\n \n ";
+MANUAL_DERIVED_OUTPUT_NOT_PRESENT_LIST="不存在的派生輸出文件：\n ";
+MSG_CONSISTENTSET_NOTLOADED="CATIA 中未加載一致的文檔集或加載的文檔未保存。\n管理員已強制加載一致的文檔集。\n請加載一致的文檔集并保存，以執行簽入操作。";
+
+// 3951 校正官方漢化R1X4CT5008 Implementation: START
+MSG_NOT_SAVED_NODES="由于以下文件尚未保存，不會執行簽入操作：";
+// 3951 校正官方漢化R1X4CT5008 Implementation: START
+
+// 3951 校正官方漢化IR 0622328 Fix : START
+MSG_ASSIGN_PART_FAILED="無法將對象 /P1 重命名為 /P2，因為文件 /P3 已在磁盤上。\n";
+// 3951 校正官方漢化IR 0622328 Fix : END
+
+MSG_FAILED_TO_CONNECT_TO_ENOVIA="與 ENOVIA Designer Central 建立連接失敗。原因可能是您在調用“快速簽出并啟動 CAD 工具”后關閉了瀏覽器窗口。\n請確保在調用“快速簽出并啟動 CAD 工具”后，不要關閉瀏覽器窗口";
+
+// 3951 校正官方漢化ETH : IR 0642804 Fix : START
+MSG_CHECKOUT_CANCELLED_DOC_NOTSYNC="由于會話中已打開以下文件，簽出取消。\n這些文件可能已在磁盤中被覆蓋。\n請從會話中關閉這些文件并再次簽出。\n \n";
+MSG_CHECKOUT_CANCELLED_FILENAME_IN_SESSION="由于會話中已打開具有沖突名稱的文件，簽出取消。\n請從會話中關閉這些文件并再次簽出。\n \n";
+// 3951 校正官方漢化ETH : IR 0642804 Fix : END
+
+// 3951 校正官方漢化ETH : IR 0619843 Fix : START 
+SYNC_FROM_MATRIX_FAILED="由于未知原因，從 ENOVIA 進行屬性同步失敗。";
+SYNC_TO_MATRIX_FAILED="由于未知原因，將屬性同步到 ENOVIA 失敗。";
+// 3951 校正官方漢化ETH : IR 0619843 Fix : END
+
+// 3951 校正官方漢化ETH : IR 0646367 Fix : START 
+MSG_NEW_FROM_FAILED="簽出取消。無法從模板中新建文檔：/P1。";
+// 3951 校正官方漢化ETH : IR 0646367 Fix : END
+
+// 3951 校正官方漢化ETH : IR 0646274 Fix : START 
+MSG_TOP_LEVEL_EMBEDDED_COMP="簽出取消。無法將嵌入式部件作為根節點打開。";
+// 3951 校正官方漢化ETH : IR 0646274 Fix : END
+
+// 3951 校正官方漢化ETH : IR 0646397 Fix : START 
+MSG_CHECKOUT_INSERT_FAILED="簽出取消。無法插入文件：/P1。\n由于擴展名類型無效或不一致，插入失敗。";
+// 3951 校正官方漢化ETH : IR 0646397 Fix : END
+
+// 3951 校正官方漢化ZKE : IR 0645609  Fix : START 
+MSG_IDENTICAL_FILE_NAME_ERROR_MESSAGE_1="CATIA 數據結構包含重復的名稱。\n沖突文檔列表：\n";
+MSG_IDENTICAL_FILE_NAME_ERROR_MESSAGE_2="請確保結構的所有文檔的名稱均不相同。";
+// 3951 校正官方漢化ZKE : IR 0645609  Fix : END 
+
+MSG_FILE_SAVE_TO_DISK_FAILURE="簽入取消。將更改同步到磁盤時出錯。\n以下需要保存的文件為只讀文件：\n";
+
+MSG_FILE_MANDATORY_ATTRIBUTE_ABSENT="簽入取消。同步文件中的必填屬性時出錯。";
+
+MSG_UNSUPPORTED_FILE_NAME_ERROR_MSG_1="某些 CATIA 對象名稱包含不支持的字符。\n包含不支持字符的文件名列表：\n";
+MSG_UNSUPPORTED_FILE_NAME_ERROR_MSG_2="請確保結構的所有文檔的文件名均有效。";
+
+// 3951 校正官方漢化ETH : IR 0666591 Fix : START
+MSG_DERIVEDOUTPUT_NOT_CREATED_FOUND="無法創建或查找以下派生輸出文件：\n";
+// 3951 校正官方漢化ETH : IR 0666591 Fix : END
+
+// 3951 校正官方漢化 YXC : 0663268 :START 
+MSG_FILENAME_INVALID_LENGHT_FOR_ENOVIA="以下文件名無效，無法簽入到 ENOVIA 中：\n";
+MSG_FILENAME_MAX_LENGHT_ERROR="以下文件名超過 CATIA 允許的最大長度：\n";
+// 3951 校正官方漢化 YXC : 0663268 :End
+
+MSG_CHECKINDELETEDFILES_INVALID="無法取消加載以下項以進行刪除：";
+MSG_CHECKINDELETEDFILES_FAILED="刪除以下項失敗：";
+
+MSG_CREATERELATIONSHIP_ERROR="簽出中止。無法在 /P1 和 /P2 之間建立關系"; // 3951 校正官方漢化SC8 : Corrected Error Message
+
+// 3951 校正官方漢化ETH : IR-034494 Fix : START
+MSG_DELETERELATIONSHIP_ERROR="簽出中止。無法刪除 /P1 和 /P2 之間的關系";
+// 3951 校正官方漢化ETH : IR-034494 Fix : END
+
+// 3951 校正官方漢化SC8 :	IR-010221V5R20 Fix: START
+ERR_MSG_UNABLE_TO_OPEN_DOC="簽出中止。無法在 CATIA 中打開以下文件：";
+// 3951 校正官方漢化SC8 :	IR-010221V5R20 Fix: END
+
+// 3951 校正官方漢化AP6 :	Code Change IR-30737: Start
+ERR_MSG_LOCK_UNLOCK_FAILED="鎖定/解鎖以下文件失敗：\n";
+// 3951 校正官方漢化AP6 :	Code Change IR-30737: End
+
+// 3951 校正官方漢化ETH : BULK LOADER V6R2011
+BULK_LOAD_MODIFIED="已修改";
+BULK_LOAD_EXISTS="存在";
+BULK_LOAD_NEW="新建";
+BULK_LOAD_SELECTED="已選定用于導入";
+BULK_LOAD_CREATE="在 ENOVIA 中創建對象";
+BULK_LOAD_KEEP="保留現有版本";
+BULK_LOAD_ABORT="中止操作";
+BULK_LOAD_OVERWRITE="覆蓋現有版本";
+BULK_LOAD_NEW_VERSION="新建版本";
+BULK_LOAD_PROCESSED="已處理";
+BULK_LOAD_NOT_SELECTED="未選定用于導入";
+BULK_LOAD_CHECKIN_SUCCESS="確定";
+BULK_LOAD_CHECKIN_FAILED="KO";
+BULK_LOAD_DELETE_FAILED="成功保存到 ENOVIA。無法刪除所有文件。";
+BULK_LOAD_RIGHTS_FAILED="權限不足";
+BULK_LOAD_CONSOLIDATE_FAILED="由于權限不足，簽入過程中止。";
+BULK_LOAD_POSTPROCESS_FAILED="成功保存到 ENOVIA。在磁盤上對文件進行后處理失敗。";
+BULK_LOAD_DOC_NAME="文檔名稱";
+BULK_LOAD_PROCESSED_ALONGWITH="已隨文檔處理";
+BULK_LOAD_IMPORT_STATUS_OF="以下項的 ENOVIA V6 導入狀態 ";
+BULK_LOAD_STATUS_IN_ENOVIA="ENOVIA V6 中的狀態";
+BULK_LOAD_ACTION="要執行的操作";
+BULK_LOAD_PROCESS_RESULT="處理結果";
+BULK_LOAD_CONFLICTING_NAME="已處理具有相同名稱的文檔";
+BULK_LOAD_DOC_NAME_ERROR="由于已處理具有相同名稱的文件，無法處理文件。";
+BULK_LOAD_INITIALIZE_ERROR="無法初始化 EV6CatiaV5ImportUtility 進程。";
+BULK_LOAD_LICENSE_ERROR="CT5 許可未授權。";
+BULK_LOAD_LOGIN_ERROR="無法連接到 Enovia V6 服務器。";
+BULK_LOAD_LOGIN_DETAILS_ERROR="無法讀取 Enovia V6 服務器連接詳細信息。";
+BULK_LOAD_IMPORT_DETAILS_ERROR="無法讀取 Enovia V6 導入設置。";
+
+// 3951 校正官方漢化ETH : IR-035967 & IR-036019 Fix : START
+BULK_LOAD_EC_VALIDATION_FAILED="嵌入式部件名稱驗證失敗";
+// 3951 校正官方漢化ETH : IR-035967 & IR-036019 Fix : END
+
+// 3951 校正官方漢化ETH : BULK LOADER V6R2011
+
+// 3951 校正官方漢化SC8 : A0671444 START
+ERR_MSG_CHECKOUT_ROOTNODE_OPEN_FAILURE="無法將以下文件作為根節點打開：\n\t /P1";
+// 3951 校正官方漢化SC8 : A0671444 END
+
+// 3951 校正官方漢化SC8:HL Function_011647 : START
+ERR_MSG_CHECKIN_FAILURE_INCONSISTENT_BEHAVIOR="\n錯誤：簽入操作失敗：行為不一致\n\n";
+ERR_MSG_EMBEDDEDCOMPONENT_PARTIAL_CHECKIN="/P1 包含子級嵌入式部件；應一起選擇嵌入式部件及其父級。\n";
+ERR_MSG_EMBEDDEDCOMPONENT_PARTIAL_CHECKIN_SUGGESTION="應將嵌入式部件及其父級簽入同一修訂版。";
+MSG_WARNING_INCOMPLETE_CHECKOUT="\n某些 CATProduct 包含未被選定的嵌入式部件。簽出操作仍會繼續，但請注意，可能會出現一些元數據不一致的情況。";
+MSG_WARNING_INCOMPLETE_CHECKOUT_PRD_UNSELECTED="\n某些嵌入式部件已選定，但未選定其所包含的 CATProduct。簽出操作仍會繼續，但會因此而無法訪問這些嵌入式部件。";
+MSG_INCOMPLETE_CHECKOUT_FILELIST="相關的嵌入式部件包括：\n/P1\n";
+MSG_WARNING_WRONG_VERSIONS_CHECKED_OUT="\n為某些嵌入式部件選定的修訂版/版本與在其所包含的 CATProduct 中找到的不匹配。簽出操作仍會繼續，但請注意，嵌入式部件的修訂版/版本不是預期的，并且可能會出現一些元數據不一致的情況。";
+MSG_LIST_OF_ERROR_FILES="以下文件不一致：\n /P1\n";
+ERR_MSG_CHECKIN_ABORTED="\n錯誤：簽入操作中止：\n";
+ERR_MSG_SAME_EMBEDDED_COMPONENT_NAMES="具有相同名稱的嵌入式部件顯示在不同的父級下。 ";
+ERR_MSG_SAME_EMBEDDED_COMPONENT_SUGGESTION="不同父級下具有相同名稱的嵌入式部件不能存在于 ENOVIA 中。";
+MSG_LIST_OF_ERROR_FILE_NAMES="以下文件名不一致：\n /P1\n";
+
+// 3951 校正官方漢化SC8:HL Function_011647 : END
+
+// 3951 校正官方漢化SC8 : 035249 : START
+ERR_MSG_PRODUCT_EC_NAME_CONFLICT="簽入中止。會話中的 CATProduct 和 CATIA 嵌入式部件具有相同的名稱。沖突的文件名包括：\n /P1 \n ";
+// 3951 校正官方漢化SC8 : 035249 : START
+
+// 3951 校正官方漢化YXC : IR-070091 - START
+ERR_MSG_PRODUCT_NAME_CONFLICT="簽入中止。檢測到具有相同名稱的文件。沖突的文件：\n ";
+// 3951 校正官方漢化YXC : IR-070091 - END
+
+// 3951 校正官方漢化S1T : IR-035550V6R2011 Fix : START
+MSG_FILE_SAVE_FAILURE_WARNING="\n由于元數據同步，某些文件應在簽出過程中進行修改。但由于這些文件為只讀文件，無法將這些修改保存到磁盤。簽出操作仍將繼續，但一些元數據可能不一致。以下文件未保存：\n/P1 ";
+// 3951 校正官方漢化S1T : IR-035550V6R2011 Fix : END
+
+MSG_FOLD_POINTING_WARN="在“鏈接的文檔本地化”（“工具”>“選項”>“常規”>“文檔”）中：\n\"/p1\" 不活動或在 \"/p2\" 之后。\n這可能會導致不可預測的問題。建議您在連接前更改此設置。\n是否仍要連接？";
+

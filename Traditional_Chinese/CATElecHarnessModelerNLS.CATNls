@@ -1,0 +1,60 @@
+// 3951 校正官方漢化========================================================================================
+// 3951 校正官方漢化                                                                                       
+// 3951 校正官方漢化   COPYRIGHT Dassault Systemes 2007
+// 3951 校正官方漢化
+// 3951 校正官方漢化   CATElecHarnessModelerNLS.CATNls
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+// 3951 校正官方漢化   objet		:	new NLS for ehi objects CCP
+// 3951 校正官方漢化   Date		:	10-04-2007
+// 3951 校正官方漢化========================================================================================
+
+ErrorHarnessObjectNoCCP="不允許剪切或復制此元素。";
+
+ErrorHarnessObjectNoCut="不允許對此元素執行“剪切”操作。";
+
+CollapsedWarning.Text=" 是自相交叉";
+
+
+// 3951 校正官方漢化 Warnings dedicated to flat cables and folds (cc3flag to be migrated)
+// 3951 校正官方漢化 -------------------------------------------------------------
+
+EHM_BUILD_WARNING_FLATCABLESHAPE.Text="由于 FLEX 計算失敗，平面電纜的 3D 展示可能不真實，輪廓方向可能與規格不同。";
+EHM_BUILD_WARNING_FLATCABLESHAPE.Type="警告";
+
+EHM_BUILD_WARNING_FOLDINTERFERENCE.Text="計算曲線時無法處理折疊，因為存在以下折疊區域干涉: /p1";
+EHM_BUILD_WARNING_FOLDINTERFERENCE.Type="警告";
+
+// 3951 校正官方漢化EHM_BUILD_WARNING_MINSLACKWITHFOLDS.Text = "The slack (or length) defined on the curve is too low to be able to compute curve shape with associated folds. The slack for computation has been set to /p1.";
+// 3951 校正官方漢化EHM_BUILD_WARNING_MINSLACKWITHFOLDS.Type = "Warning";
+
+// 3951 校正官方漢化 Other errors
+// 3951 校正官方漢化 --------------
+
+ErrorCCPOldSupportNotSupported="不支持舊的支持面";
+CCPERROR_CYCLE_DETECTED="您無法將選定的分支粘帖到電氣分支幾何體 /P1 內，";
+CCP_PASTE_SPECIAL="按鏈接指定";
+
+ErrorCCPAcrossDocumentNotSupported="不能在不同的文檔中粘帖分支";
+
+EHM_EXTREMITY_REP_CORRUPTED.Diagnostic="缺少某個必需的輸入元素或該元素無效、未填。";
+EHM_EXTREMITY_REP_CORRUPTED.Request="缺少輸入元素或該元素無效、未填。";
+EHM_EXTREMITY_REP_CORRUPTED.Advice="此運算沒有任何解法。";
+
+// 3951 校正官方漢化 new message harness symmetry V6 R209 - 2011 
+// 3951 校正官方漢化 EHM_Symmetry_Missing_Warning.Text = " has no counterpart within the symmetrical assembly";
+// 3951 校正官方漢化 EHM_Symmetry_RerouteKO.Text = " The associated contextual and electrical links cannot be rerouted for the symmetrical electrical branch geometry : ";
+
+EHM_BUILD_INFO_BRPT_AssToStd="此關聯的分支點沒有任何有效的解。\n 將關聯的分支點轉換為標準分支點。";
+EHM_BUILD_INFO_INTERSECT_Boundary.Diagnostic="沒有有效解。";
+EHM_BUILD_INFO_INTERSECT_Boundary.Request="相交結果超出段邊界。請更改平面定義。";
+EHM_BUILD_INFO_INTERSECT_Boundary.Advice="相交結果超出段邊界。請更改平面定義。";
+EHM_BUILD_INFO_INTERSECT_Failed.Diagnostic="沒有有效解。";
+EHM_BUILD_INFO_INTERSECT_Failed.Request="參考平面與分支之間的相交無效。";
+EHM_BUILD_INFO_INTERSECT_Failed.Advice="參考平面與分支之間的相交無效。";
+
+EHM_INPUT_INVALID.Diagnostic="缺少某個必需的輸入元素或該元素無效、未填。";
+EHM_INPUT_INVALID.Request="缺少輸入元素或該元素無效、未填。";
+EHM_INPUT_INVALID.Advice="此運算沒有任何解法。";
+
+

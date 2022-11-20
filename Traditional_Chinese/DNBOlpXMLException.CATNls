@@ -1,0 +1,59 @@
+Error.Message="無法創建 XML 輸出并轉換以下活動：";
+ErrorInfo.FileOpen.OutputFile.Header="無法打開 XSLT 輸出文件";
+ErrorInfo.FileOpen.ErrorFile.Header="無法打開 XSLT 錯誤文件";
+ErrorInfo.FileOpen.Message="。\n請檢查對系統臨時目錄的文件訪問權限。\n";
+ErrorInfo.Casting.Message="無法將句柄從 CATIDOMNode_var 傳播到 CATIDOMElement_var。";
+
+ErrorInfo.ResolveGrabbingObject.Message="無法解析零件路徑。\n找不到零件，或\n多個零件與給定路徑匹配。";
+MissingElement.Diagnostic="XML 文檔中缺少必需元素。\n元素 /p1 沒有子元素 /p2。";
+MissingElement.Advice="此元素在 XML 架構中可能是可選元素，但邏輯約束要求存在此元素。正在上載的轉換器可能未創建有效的 XML 文檔。";
+
+NoTranslators.Diagnostic="在目錄 /p1 中未找到能夠將 XML 文檔轉換為機器人程序的轉換器。";
+NoTranslators.Advice="驗證是否正確設置“工具”->“選項”的“機撲工程學”/“離線編程”中的下載程序目錄。";
+
+NoParsers.Diagnostic="在目錄 /p1 中未找到能夠將機器人程序轉換為 XML 文檔的解析器。";
+NoParsers.Advice="驗證是否正確設置“工具”->“選項”的“機撲工程學”/“離線編程”中的上載程序目錄。";
+
+InvalidFileSetting.Diagnostic="未找到文件或目錄 /p1。";
+InvalidFileSetting.Advice="此文件或目錄通過“工具”->“選項”的“機撲工程學”/“離線編程”進行配置。驗證其設置是否正確。";
+
+LogicalErrors.Activity.Grab.Duplicate.Diagnostic="警告：已在未釋放零件 /p1 的情況下將其抓取。對于固定 TCP 動作，將忽略抓取活動對零件位置的影響。";
+LogicalErrors.Activity.Grab.Duplicate.Advice="刪除或修改抓取活動以僅抓取一次零件，或者確保在啟動下載或上載時釋放零件。";
+LogicalErrors.Activity.Grab.PartNotFound.Diagnostic="錯誤：此會話中不存在通過此活動抓取或釋放的零件。";
+LogicalErrors.Activity.Grab.PartNotFound.Advice="產品可能已被刪除或在打開的產品的父級中。例如，產品可能在 PPR 上下文中，但僅打開了資源。";
+LogicalErrors.Activity.Grab.NoPriorMove.Diagnostic="警告：在移動機器人之前已抓取零件 /p1，因此無法確定抓取位置。";
+LogicalErrors.Activity.Grab.NoPriorMove.Advice="如果此零件用于固定 TCP 動作，您必須將機器人動作添加在任務中的抓取指令之前。";
+LogicalErrors.Activity.Grab.ChildAlreadyGrabbed.Diagnostic="警告：已抓取零件 /p1 的子級。如果將標記附加到該子級，這可能會導致下載的機器人動作位置與模擬不同。";
+LogicalErrors.Activity.Grab.ChildAlreadyGrabbed.Advice="請不要同時抓取子產品和父產品。";
+LogicalErrors.Activity.Grab.ParentAlreadyGrabbed.Diagnostic="警告：已抓取零件 /p1 的父級。如果將標記附加到該子級，這可能會導致下載的機器人動作位置與模擬不同。";
+LogicalErrors.Activity.Grab.ParentAlreadyGrabbed.Advice="請不要同時抓取子產品和父產品。";
+LogicalErrors.Activity.Grab.AttachedToWorkpiece.Diagnostic="警告：已抓取零件 /p1，但其已連接到工件定位器或其他輔助軸。如果將標記附加到此零件或其子級，這可能會導致下載的機器人動作位置與模擬不同。";
+LogicalErrors.Activity.Grab.AttachedToWorkpiece.Advice="機器人無法抓取附加到輔助軸的零件。";
+
+LogicalErrors.Activity.Release.NotGrabbed.Diagnostic="警告：尚未在釋放零件 /p1 之前將其抓取。對于固定 TCP 動作，將忽略釋放活動對零件位置的影響。";
+LogicalErrors.Activity.Release.NotGrabbed.Advice="修改抓取或釋放活動以在釋放零件之前先將其抓取，或者確保在啟動下載或上載時抓取零件。";
+
+LogicalErrors.Activity.Move.FixedTCPPartNotGrabbed.Diagnostic="錯誤：尚未在固定 TCP 標記目標動作之前正確抓取零件 /p1。無法計算機器人動作的目標位置。";
+LogicalErrors.Activity.Move.FixedTCPPartNotGrabbed.Advice="對于移至標記目標位置的固定 TCP 動作，必須將標記附加到機器人抓取的零件上。該零件必須附加到機器人的安裝板上且在啟動下載/上載之前已被抓取，或者必須已被與固定 TCP 動作相同的任務中的抓取活動抓取。在后一種情況中，必須至少有一個機器人動作是可在抓取活動前到達的。";
+LogicalErrors.Activity.Move.Unreachable.Diagnostic="警告：未到達機器人動作 /p1。這可能會導致不正確的下載位置。";
+LogicalErrors.Activity.Move.Unreachable.Advice="修改要到達的動作。";
+LogicalErrors.Activity.Move.TagOwnerNotFound.Diagnostic="錯誤：此會話中不存在包含該機器人動作所用標記的標記組所有者。";
+LogicalErrors.Activity.Move.TagOwnerNotFound.Advice="產品可能已被刪除或在打開的產品的父級中。例如，產品可能在 PPR 上下文中，但僅打開了資源。";
+LogicalErrors.Activity.Move.TagAttachedPartError.Diagnostic="警告：無法確定與標記組 /p2 中的標記 /p1 相關聯的零件。";
+LogicalErrors.Activity.Move.TagAttachedPartError.Advice="如果您正在執行零件坐標下載，則將不會在零件坐標中下載此動作。產品可能已被刪除或在打開的產品的父級中。例如，產品可能在 PPR 上下文中，但僅打開了資源。";
+LogicalErrors.Activity.Move.InvalidGrab.Diagnostic="錯誤：零件 /p1 已被機器人抓取，但用于移動 TCP 動作。";
+LogicalErrors.Activity.Move.InvalidGrab.Advice="修改任務以在此動作之前釋放零件或不抓取零件。";
+LogicalErrors.Activity.Move.UnknownLocation.Diagnostic="錯誤：零件 /p1 位于未知位置，但附加到此零件的標記已用于標記目標動作。";
+LogicalErrors.Activity.Move.UnknownLocation.Advice="檢查上述警告消息，以了解此錯誤的可能原因。";
+LogicalErrors.Activity.Move.AuxAxisValuesMissing.Diagnostic="錯誤：此動作沒有動作組中所有設備的輔助軸值。";
+LogicalErrors.Activity.Move.AuxAxisValuesMissing.Advice="此動作可能在設備添加到動作組之前已創建，或者在創建此動作時可能已存在錯誤。請嘗試在教導中修改此動作的位置，或重新創建此動作。";
+
+LogicalErrors.Activity.Wait.NotSupported.Diagnostic="錯誤：在正上載的任務中找到 Wait 指令。";
+LogicalErrors.Activity.Wait.NotSupported.Advice="上載操作不支持 Wait 指令。轉換器可以將上載 Wait 指令更改為上載自定義活動。";
+
+LogicalErrors.Activity.Arc.RobotReferenceUploadInvalid.Diagnostic="錯誤：無法為此任務中的圓弧焊接操作創建圓弧軌跡。";
+LogicalErrors.Activity.Arc.RobotReferenceUploadInvalid.Advice="無法將包含圓弧操作的任務上載到機器人參考上。機器人必須位于站內或其他組織資源內。";
+LogicalErrors.Activity.Arc.SeamSearchTagType.Diagnostic="警告：焊縫搜索操作缺少標記元素中的“圓弧標記類型”屬性或其值無效。標記的類型將設置為接觸點。";
+LogicalErrors.Activity.Arc.SeamSearchTagType.Advice="對于焊縫搜索操作，“圓弧標記類型”應為“搜索依據”或“搜索接觸”。XML 值為 '/p1'。";
+LogicalErrors.Activity.Arc.ArcTagType.Diagnostic="警告：圓弧操作缺少標記元素中的“圓弧標記類型”屬性或其值無效。標記的類型將設置為焊接點。";
+LogicalErrors.Activity.Arc.ArcTagType.Advice="對于圓弧操作，“圓弧標記類型”應為“開始焊接”、“焊接”或“結束焊接”之一。XML 值為 '/p1'。";

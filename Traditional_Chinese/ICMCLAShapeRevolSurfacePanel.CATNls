@@ -1,0 +1,101 @@
+DialogBoxTitle="旋轉曲面";
+
+LabelComboType.Title="類型： ";
+LabelComboType.LongHelp="有 6 種類型的旋轉曲面。
+類型名稱是助記型名稱。
+各類型具備不同的參數。
+各對話框也相應地各不相同。";
+LabelComboType.ShortHelp="旋轉曲面類型";
+ComboRevolType.LongHelp="有 6 種類型的旋轉曲面。
+類型名稱是助記型名稱。
+各類型具備不同的參數。
+各對話框也相應地各不相同。";
+ComboRevolType.ShortHelp="選擇類型";
+Combo.Cylinder="圓柱面";
+Combo.Cone="圓錐面";
+Combo.Sphere="球面";
+Combo.Torus="環形狀";
+Combo.Barrel="桶形狀";
+Combo.Freeform="自由式";
+
+LabelRotationAxis.Title="軸： ";
+LabelRotationAxis.LongHelp="旋轉曲面的特征為其旋轉軸。
+在此處定義該軸的方向。
+連接點是其作用點。";
+LabelRotationAxis.ShortHelp="軸方向";
+
+LabelAttachmentPoint.Title="連接點： ";
+LabelAttachmentPoint.LongHelp="旋轉軸貫穿連接點";
+LabelAttachmentPoint.ShortHelp="軸的連接點";
+
+LabelGuide.Title="引導線： ";
+LabelGuide.LongHelp="類型自由式需要引導線。
+引導線是繞軸旋轉并沿軸移動的曲線。
+引導線不一定是平面曲線。";
+LabelGuide.ShortHelp="類型：自由式 - 旋轉引導線";
+
+TabPageOptions.Title="選項";
+
+FrameParameters.Title="參數";
+FrameParameters.LongHelp="參數：主要半徑、高度、次要半徑：
+圓柱面：半徑、高度
+圓錐面：半徑、高度、次要
+球面：半徑
+環形：半徑、次要
+桶形：次要
+自由式：無半徑、無高度";
+LabelRadius.Title="半徑： ";
+LabelRadius.LongHelp="圓柱面和球面的半徑
+圓錐面和環形的主要半徑";
+LabelRadius.ShortHelp="主要半徑";
+LabelHeight.Title="高度： ";
+LabelHeight.LongHelp="圓柱面和圓錐面的高度。";
+LabelHeight.ShortHelp="高度 - 圓柱面、圓錐面";
+LabelMinor.Title="鏡像： ";
+LabelMinor.LongHelp="圓錐面和環形的次要半徑。
+桶形僅需要此次要半徑";
+LabelMinor.ShortHelp="次要半徑";
+
+FrameAngle.Title="旋轉";
+FrameAngle.LongHelp="旋轉曲面繞軸旋轉有一個起始角度和一個終止角度。
+常用范圍為：
+0 度 <= 起始 < 終止 <= 360 度。";
+StartColon_Angle.LongHelp="繞軸旋轉的起始角度。";
+StartColon_Angle.ShortHelp="起始角度 - 旋轉";
+EndColon_Angle.LongHelp="繞軸旋轉的終止角度。";
+EndColon_Angle.ShortHelp="終止角度 - 旋轉";
+CheckButtonRotationClose.Title="閉合";
+CheckButtonRotationClose.LongHelp="閉合開啟表示：
+起始角度等于 0 度
+終止角度等于 360 度。
+曲面繞軸閉合。";
+CheckButtonRotationClose.ShortHelp="繞軸閉合";
+
+FrameRange.Title="范圍";
+FrameRange.LongHelp="球面、環形和桶形需要范圍。
+此角度的軸垂直于旋轉軸。
+常用范圍為：
+環形：-180 度 <= 起始 < 終止 <= 180 度。
+球面：-90 度 <= 起始 < 終止 <=  90 度。
+桶形：最大角度取決于次要。
+0 度角垂直于旋轉軸。";
+StartColon_Range.LongHelp="范圍的起始角度。
+范圍角度垂直于旋轉軸。";
+StartColon_Range.ShortHelp="起始角度 - 范圍";
+EndColon_Range.LongHelp="范圍的終止角度。
+范圍角度垂直于旋轉軸。";
+EndColon_Range.ShortHelp="終止角度 - 范圍";
+CheckButtonRangeClose.Title="閉合";
+CheckButtonRangeClose.LongHelp="閉合開啟表示：
+環形：范圍起始 = -180、范圍終止 = 180
+球面：范圍起始 =  -90、范圍終止 =  90
+桶形：曲面接觸到軸";
+CheckButtonRangeClose.ShortHelp="閉合垂直于軸";
+
+FrameDeviation.Title="偏差";
+CheckButtonFormDeviation.Title="形： ";
+CheckButtonFormDeviation.LongHelp="顯示與旋轉曲面的偏差";
+CheckButtonFormDeviation.ShortHelp="旋轉曲面偏差";
+CheckButtonGuideDeviation.Title="引導線： ";
+CheckButtonGuideDeviation.LongHelp="顯示與引導曲線近似值的偏差";
+CheckButtonGuideDeviation.ShortHelp="引導線偏差";

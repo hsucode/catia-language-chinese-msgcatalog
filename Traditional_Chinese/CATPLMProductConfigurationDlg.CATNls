@@ -1,0 +1,67 @@
+NewTitlePrefix="新建";
+EditTitlePrefix="編輯";
+AttributesStep="特性";
+ProdDefinitionStep="表達式";
+ChangesStep="條件";
+SummaryStep="摘要";
+PredefinedConfiguration="預定義配置";
+PredefinedCfgSearchDlg.Title="搜索要導入的預定義配置";
+
+// 3951 校正官方漢化Step1 Attribute Frame 
+AttributeStep1Frame.AttributeFrame.AttributesLabel.Title="配置屬性";
+AttributeStep1Frame.AttributeFrame.ProductLabel.Title="產品：";
+AttributeStep1Frame.AttributeFrame.NameLabel.Title="名稱：";
+AttributeStep1Frame.AttributeFrame.DescriptionLabel.Title="描述：";
+AttributeStep1Frame.AttributeFrame.IterationLabel.Title="迭代：";
+AttributeStep1Frame.ConfigTypeFr.ConfigTypeRadioFr.PCValidatedViewRadio.Title="基于經驗證的視圖的配置";
+AttributeStep1Frame.ConfigTypeFr.ConfigTypeRadioFr.PCProposedViewRadio.Title="基于建議的視圖的配置";
+AttributeStep1Frame.ConfigTypeFr.ConfigTypeRadioFr.PCWithProposedChangesRadio.Title="基于經驗證的視圖（包含建議的更改）的配置";
+AttributeStep1Frame.ConfigTypeFr.ConfigTypeRadioFr.PCChangesOnlyRadio.Title="僅更改";
+AttributeStep1Frame.ImportExistingButton.Title="從現有項中導入..";
+ValidatedView.Help="可以使用該產品配置類型從其經驗證的視圖中查看產品的特定配置。在此視圖中，實例的有效性將僅考慮經驗證的更改（已命名的有效性）以達到展開配置的目的";
+ProposedView.Help="通過假設已驗證所有建議的更改（已命名的有效性），可以使用該產品配置類型從其建議視圖中查看產品的特定配置";
+ValidatedViewWithChanges.Help="可以使用該產品配置類型從其經驗證的視圖中查看，對產品的特定配置執行建議更改所帶來的影響。此類型表示將配置應用到經驗證的視圖以及僅包括指定的更改，以了解對產品執行建議的更改所帶來的影響";
+ChangesOnly.Help="可以使用該產品配置類型查看僅對產品執行的更改";
+ModeLabel.Title="模式";
+DefaultName="Cfg";
+FilteMode150="150%";
+FilteModeStandard="標準";
+
+notif.Error.Title="錯誤";
+notif.ObjectExistsError.Text="具有相同名稱的預定義配置已存在。\n請選擇其他名稱。";
+notif.MandatoryFieldsEmpty.Title="缺少必填信息";
+notif.MandatoryFieldsEmpty.Text="缺少有關一個或多個必填字段的信息";
+notif.NoProductDefnError.Title="缺少產品定義";
+notif.NoProductDefnError.Text="未定義產品定義。\n至少需要為選定的配置類型定義一個條件（“日期”或“序列”或“選項”或“選擇”）";
+notif.NoChangesError.Title="缺少更改條件";
+notif.NoChangesError.Text="未定義更改。\n至少需要為選定的配置類型定義一個更改（已命名的有效性）";
+notif.EnvError.Title="環境錯誤";
+notif.EnvError.Text="環境無效。";
+notif.CreateExprError.Title="創建表達式錯誤";
+notif.CreateExprError.Text="無法從選定的條件中創建表達式。";
+notif.NoExpression.Text="未定義表達式條件。\n至少需要定義一個條件";
+notif.GetVSError.Text="無法獲取可變性空間";
+notif.CreateQueryError.Title="創建預定義配置錯誤";
+notif.CreateQueryError.Text="創建預定義配置失敗。";
+notif.SetAttributeError.Text="設置 /p1 屬性時發生錯誤。";
+notif.SetCfgTypeAttributeError.Text="設置“配置”類型屬性時發生錯誤。";
+notif.CreateQuerySuccessful.Text="創建預定義配置 /p1 成功。";
+notif.ValidateExpression.Title="驗證表達式";
+notif.ExpressionOK.Text="表達式有效";
+notif.ExpressionKO.Text="表達式無效。\n請檢查語法是否正確";
+AssociateToRef="關聯到參考";
+notif.CreateCfgContextError.Title="關聯到參考錯誤";
+notif.CreateCfgContextError.Text="無法關聯到參考。\n請選擇對象 ";
+SelectObject="選擇對象";
+notif.AssociateToRefVSMismatchError.Text="無法將產品配置關聯到選定的參考。\n產品配置的可變性空間與選定的參考不同。";
+notif.AssociateVSToRefError.Text="無法將可變性空間關聯到參考。";
+notif.AssociateToRefError.Text="無法將預定義配置關聯到選定的參考。";
+notif.SetExpressionError.Text="無法設置預定義配置對象的定義 ";
+notif.RemoveIncompatibleNEsChoice.Text="在條件中定義的一些建議更改與選定的配置條件不兼容。\n是否要從定義中移除這些更改。";
+notif.RemoveIncompatibleNEsChoice.Title="警告";
+notif.CreateVolatileQueryError.Title="創建配置條件錯誤";
+notif.CreateVolatileQueryError.Text="創建配置條件失敗。";
+
+
+
+

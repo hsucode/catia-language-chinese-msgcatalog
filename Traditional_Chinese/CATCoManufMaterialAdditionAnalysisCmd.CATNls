@@ -1,0 +1,45 @@
+// 3951 校正官方漢化 CATCoManufMaterialAdditionAnalysis.CATNls
+
+CATCoManufMaterialAdditionAnalysisCmd.SelPlyGroupState.Message = "選擇a ply 組";
+CATCoManufMaterialAdditionAnalysisCmd.PlyGroupSelectedState.Message = "Launch分析";
+CATCoManufMaterialAdditionAnalysisCmd.AnalyseLaunchedState.Message = "Launch generation";
+CATCoManufMaterialAdditionAnalysisCmd.MMAGeneratedState.Message = "Validate (OK)或 Cancel";
+
+// 3951 校正官方漢化 默認值 for parameters
+MaxAngleBetweenTangentsInDeg.Default = "170";
+TowWidthInMM.Default = "10";
+MinimumLengthInMM.Default = "100";
+MinAngleOrientationTgtInDeg.Default="5";
+AbsoluteDistanceMaxInMM.Default = "2000";
+ShortDistanceMaxInMM.Default = "60";
+AngleBisMaxInDeg.Default = "40";
+DiffAngleTgtsMaxInDeg.Default = "45";
+LateralStaggeringInMM.Default = "10";
+
+// 3951 校正官方漢化 Error & Warning messages
+UnexpectedError.Message              = "Unexpected 錯誤";
+UserInterrupt.Message                = "任務 canceled";
+NoMMAToBeGenerated.Message           = "There is no Material addition to be generated";
+
+// 3951 校正官方漢化 Highlighter
+Highlight.Marker.Valid.Red="0";
+Highlight.Marker.Valid.Green="255";
+Highlight.Marker.Valid.Blue="0";
+Highlight.Marker.Invalid.Red="255";
+Highlight.Marker.Invalid.Green="0";
+Highlight.Marker.Invalid.Blue="0";
+Highlight.OrientationArrow.lengthLine="200";
+Highlight.OrientationArrow.lengthArrow="0";
+Highlight.WarningFeature.lengthLine="200";
+Highlight.OrientationArrow.lengthArrow="0";
+
+Highlight.Contour.thickness="5";
+Highlight.Contour.linetype="1";
+
+// 3951 校正官方漢化 Progress bar
+ProgressTaskUI.Title  =  "材料 addition analysis...";  
+ProgressTaskUI.ObjectName  =  "分析/計算";  
+ProgressTaskUI.Comment  =  "Progress";  
+ProgressTaskUI.Step0.ObjectName  =  "Initialization"; 
+ProgressTaskUI.Step1.ObjectName  =  "Analysis";  
+ProgressTaskUI.Step3.ObjectName  =  "Generation";  

@@ -1,0 +1,266 @@
+//
+// 19/01/2010 : fdm; R209: Rename Guide-CenterRail en GuideCenterRail 
+// 09/03/2010 : ysn; R210: Add StripperOverlap and StopPinH
+// 20/12/2010 : iwa; R210: Add all disciplines
+// 01/06/2011 : iwa; R212: Add error messages for CouldContainSubProduct
+// 17/06/2011 : ysn; R212: Clean-up
+// 10/11/2011 : fdm; R213: Update
+
+//---------------------------------------------------
+// 1.0: les disciplines tooling 
+//----------------------------------------------------
+ToolingSkeleton="加工框架";
+ToolingComponent="加工部件";
+ToolingMobileUnit="加工移動單元";
+ToolingTool="加工工具";
+ToolingDistributedComponent="分布式加工部件";
+ToolingLayout="加工布局";
+ToolingFlow="加工流";
+ToolingPart="加工零件";
+
+//---------------------------------------------------
+// 1.1: les types de tooling component hors plates 
+//----------------------------------------------------
+AnglePin="角度銷";
+AngularCam="角凸輪";
+Baffle="擋板";
+BaffleBoard="擋板";
+Block="塊";
+Bushing="套管";
+CapScrew="帽螺釘";
+ClipRing="開口環";
+ComponentOfRunner="滑道部件";
+ConnectorPlug="連接器塞";
+ConnectorPlugClamp="連接器塞夾";
+CorePin="型芯銷";
+CountersunkScrew="埋頭螺釘";
+DateStamp="日期戳";
+DowelPin="定位銷";
+EjectionUnit="噴射器單元";
+Ejector="噴射器";
+EjectorPin="噴射器銷";
+EjectorSleeve="噴射器套管";
+Electrode="電極";
+ElectrodeCore="電極芯";
+EyeBolt="吊環螺栓";
+FlatEjector="平噴射器";
+GuideCenterRail="中心導軌";
+GuidePin="引導銷";
+HeatingItem="加熱項";
+Holder="電極夾";
+HolderBlock="電極夾塊";
+HolderPlate="電極夾平板";
+HotRunnerBlock="熱滑道塊";
+InclinedPin="斜銷";
+Insert="插入";
+InsertCavity="插入型腔";
+InsertCore="插入型芯";
+Interlock="內部鎖定";
+KnockOut="脫模";
+LayoutInsertEjector="噴射器布局";
+LayoutInsertCore="插入型芯布局";
+LayoutInsertCavity="插入型腔布局";
+LeaderPin="引線銷";
+Lifter="提升器";
+LocatingRing="定位環";
+LockingBlock="鎖定塊";
+LockingScrew="鎖緊螺釘";
+MoldOpeningController="開模控制器";
+ORing="O 形環";
+PinPointGateBushing="銷點門關套管";
+PlugBaffle="塞擋板";
+Plug="塞";
+Mechanism="機械裝置";
+PrintEjector="打印噴射器";
+PrintCavity="打印型腔";
+PrintCore="打印型芯";
+Protection="保護";
+Retainer="固定器";
+ReturnPin="復位銷";
+Sleeve="套管";
+SlideGuide="引導滑塊";
+Slider="滑塊";
+SlottedKey="槽鍵";
+SphereBushing="球形套管";
+SpiralBaffle="螺線擋板";
+Spring="彈簧";
+SpringScrew="彈簧螺釘";
+SprueBushing="注口套管";
+SpruePuller="注口拉拔器";
+StopDisc="止動盤";
+StopPin="止動銷";
+StraightPin="直銷";
+SupportPillar="支持柱";
+Switch="開關";
+TunnelGate="調整門關";
+UserComponent="用戶部件";
+Washer="墊圈";
+WearPlate="耐磨板";
+
+FuncType1="功能類型 1";
+FuncType2="功能類型 2";
+FuncType3="功能類型 3";
+FuncType4="功能類型 4";
+FuncType5="功能類型 5";
+FuncType6="功能類型 6";
+FuncType7="功能類型 7";
+FuncType8="功能類型 8";
+FuncType9="功能類型 9";
+FuncType10="功能類型 10";
+FuncType11="功能類型 11";
+FuncType12="功能類型 12";
+FuncType13="功能類型 13";
+FuncType14="功能類型 14";
+FuncType15="功能類型 15";
+FuncType16="功能類型 16";
+FuncType17="功能類型 17";
+FuncType18="功能類型 18";
+FuncType19="功能類型 19";
+FuncType20="功能類型 20";
+
+StandardType1="標準類型 1";
+StandardType2="標準類型 2";
+StandardType3="標準類型 3";
+StandardType4="標準類型 4";
+StandardType5="標準類型 5";
+StandardType6="標準類型 6";
+StandardType7="標準類型 7";
+StandardType8="標準類型 8";
+StandardType9="標準類型 9";
+StandardType10="標準類型 10";
+StandardType11="標準類型 11";
+StandardType12="標準類型 12";
+StandardType13="標準類型 13";
+StandardType14="標準類型 14";
+StandardType15="標準類型 15";
+StandardType16="標準類型 16";
+StandardType17="標準類型 17";
+StandardType18="標準類型 18";
+StandardType19="標準類型 19";
+StandardType20="標準類型 20";
+
+FixingFamily="固定系列";
+GuidingFamily="引導系列";
+MiscFamily="其他系列";
+UndercutFamily="底切系列";
+EjectionFamily="噴射系列";
+FormedEjectionFamily="形成的噴射系列";
+InjectionFamily="注射系列";
+CoolingFamily="冷卻系列";
+ToolStructureFamily="工具結構系列";
+ToolUnitElementFamily="加工單元元素系列";
+ElectrodeFamily="電極系列";
+CustomizedFamily="自定義系列";
+
+//---------------------------
+// Anchorize command
+//---------------------------
+AnyComponent="任何部件";
+AnyMobileUnit="任何移動單元";
+
+//---------------------------------------
+// 1.2: les types de plaques 
+//---------------------------------------
+Cast="鑄件";
+CavityPlate="型腔板";
+CavitySupportPlate="型腔支持板";
+ClampingPlate="夾板";
+CorePlate="型芯板";
+CoreSupportPlate="型芯支持板";
+EjectorPlateA="噴射器板 A";
+EjectorPlateB="噴射器板 B";
+RiserBar="支承墊板";
+SettingPlate="固定板";
+StripperPlate="脫模板";
+UpperBar="上層桿";
+UserPlate="用戶面板";
+
+//------------------------------------------------------------------
+// 2.1: les types de Mobile Unit (V_Discipline ToolingMobileUnit)
+//------------------------------------------------------------------
+EjectionSide="噴射側";
+EjectorSystem="噴射系統";
+InjectionSide="注射側";
+LowerDie="下模";
+UpperDie="上模";
+UserMobileUnit="用戶移動單元";
+MoldBase="模具庫";
+// MoldWithLayout = "Mold With Layout";
+
+//------------------------------------------------------------------
+// 2.2: les types de squeleton (V_Discipline ToolingSkeleton)
+//------------------------------------------------------------------
+MobileUnitSkeleton="移動單元框架";
+ToolingInterfaceSkeleton="加工接口框架";
+CoolingSystemSkeleton="冷卻框架";
+SimpleSkeleton="簡單框架";
+FormSkeleton="形式框架";
+ConceptMoldSkeleton="概念模具框架";
+
+//------------------------------------------------------------------
+// 2.3: les types de Layout (V_Discipline ToolingLayout)
+//------------------------------------------------------------------
+LayoutUnit="布局單元";
+CoreUnit="型芯單元";
+CavityUnit="型腔單元";
+InsertUnit="插入單元";
+LayoutInsertUnit="插入單元布局";
+ProjectUnit="項目單元";
+
+//------------------------------------------------------------------
+// 2.4: les types de Tool (V_Discipline ToolingTool)
+//------------------------------------------------------------------
+MoldInjection="模具注射";
+PressDie="沖模";
+Stamping="沖壓模";
+
+//------------------------------------------------------------------
+// 2.5: les types de Flow (V_Discipline ToolingFlow)
+//------------------------------------------------------------------
+CoolingSystem="冷卻系統";
+Coolant="冷卻液";
+Runner="滑道";
+HotRunner="熱滑道";
+Flow="流";
+
+//------------------------------------------------------------------
+// 2.6: les types de Part (V_Discipline ToolingPart)
+//------------------------------------------------------------------
+MoldedPart="已建模零件";
+StampingPart="沖壓零件";
+
+//=============================================================================
+// 4: Types de hole (solides)
+//=============================================================================
+DrillHole="鉆孔";
+TapHole="分接頭孔";
+Pad="凸臺";
+Pocket="凹槽";
+
+//=============================================================================
+// 5: Types de surfaces
+//=============================================================================
+CavitySurface="型腔曲面";
+CoreSurface="型芯曲面";
+
+
+//---------------------------
+// The 2 items below are not for Type. It's added for MoldBase dialog box help tool tip.
+//---------------------------
+StripperOverlap="交疊脫模";
+StopPinH="止動銷肩高";
+
+
+//=============================================================================
+// 6: Error messages for CouldContainSubProduct
+//=============================================================================
+InsertError3DPart="3D 零件不能包含其他冷卻產品。";
+InsertErrorCannotContainAnother="不能包含其他加工產品。";
+InsertErrorCannotContain="不能包含";
+InsertErrorCanContainOnlyOne="只能包含一個";
+InsertErrorStructInAToolingComponent="不能將結構化加工部件插入加工部件中。";
+InsertErrorStructInAStruct="不能將結構化加工部件插入其他結構化加工部件中。";
+InsertErrorStructInLifeCycleMode="不能在結構化加工部件處于生命周期模式時向其中插入。";
+InsertErrorStructNonSplitable="不能將可分割加工部件插入不可分割的結構化加工部件中。";
+InsertErrorStructInsertionContext="您不能在目標 2D 部件中粘貼 2D 部件實例。";
+

@@ -1,0 +1,191 @@
+// 3951 校正官方漢化*****************************************************************************
+// 3951 校正官方漢化  DNBIgpArcSeamSearchCmd
+// 3951 校正官方漢化*****************************************************************************
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Labels/Captions
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+MainDialogTitle.Target="焊縫搜索軌跡";
+MainDialogTitle.Modify="Modify";
+MainDialogTitle.Create="Create";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Angles dialog
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+AnglesDialog.Title="焊槍角度";
+Angle.Default.Yaw="0";
+Angle.Default.Pitch="0";
+Angle.Default.Roll="0";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Undo titles
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+DNBIgpArcSeamSearchCmd.ToolOkAgent.UndoTitle="選擇刀具";
+DNBIgpArcSeamSearchCmd.SurfSelectAgent.UndoTitle="添加搜索路徑";
+DNBIgpArcSeamSearchCmd.PathDeleteAgent.UndoTitle="刪除搜索路徑";
+DNBIgpArcSeamSearchCmd.PathReorderUpAgent.UndoTitle="向上搜索路徑";
+DNBIgpArcSeamSearchCmd.PathReorderDnAgent.UndoTitle="向下搜索路徑";
+DNBIgpArcSeamSearchCmd.SearchDistAgent.UndoTitle="更改搜索距離";
+DNBIgpArcSeamSearchCmd.PassThruDistAgent.UndoTitle="更改通過距離";
+DNBIgpArcSeamSearchCmd.SearchTypeAgent.UndoTitle="更改搜索類型";
+DNBIgpArcSeamSearchCmd.PathMoveAgent.UndoTitle="移動搜索路徑";
+DNBIgpArcSeamSearchCmd.TagDeleteAgent.UndoTitle="刪除標記";
+DNBIgpArcSeamSearchCmd.TagBeforeAgent.UndoTitle="之前插入標記";
+DNBIgpArcSeamSearchCmd.TagAfterAgent.UndoTitle="之后插入標記";
+DNBIgpArcSeamSearchCmd.TagMoveAgent.UndoTitle="移動標記";
+DNBIgpArcSeamSearchCmd.MainNameAgent.UndoTitle="更改名稱";
+
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Short Help
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Long Help
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Parameter 默認值
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+
+SearchType1="與曲面垂直";
+SearchType2="與驅動方向垂直";
+SearchType3="自由形態";
+
+TagPrefix="SS";
+TagPostfix="";
+
+InitialStateMessage="選擇刀具、機器人或站臺";
+EditionStateMessage="選擇曲面或搜索路徑";
+
+Multilist.Item="Search";
+
+NoSelection="無選擇";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Bubble Bar
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+DNBIgpArcInsertViaTagBefore.Bubble.ShortHelp="在當前位置之前插入標記";
+DNBIgpArcInsertViaTagBefore.Bubble.Help="在當前位置之前插入標記";
+DNBIgpArcInsertViaTagBefore.Bubble.LongHelp="在當前位置之前插入標記。
+當前位置之前的標記是
+表面接觸點中的父級。";
+
+DNBIgpArcInsertViaTagAfter.Bubble.ShortHelp="在當前位置之后插入標記";
+DNBIgpArcInsertViaTagAfter.Bubble.Help="在當前位置之后插入標記";
+DNBIgpArcInsertViaTagAfter.Bubble.LongHelp="在當前位置之后插入標記。
+當前位置之后的標記 
+更接近曲面接觸點。";
+
+DNBIgpArcDeleteTag.Bubble.ShortHelp="刪除標記";
+DNBIgpArcDeleteTag.Bubble.Help="刪除標記";
+DNBIgpArcDeleteTag.Bubble.LongHelp="刪除標記（從該接觸點路徑中刪除標記）";
+
+DNBIgpArcDeletePath.Bubble.ShortHelp="Delete path";
+DNBIgpArcDeletePath.Bubble.Help="Delete path";
+DNBIgpArcDeletePath.Bubble.LongHelp="刪除路徑（接觸點以及形成它的所有標記）";
+
+DNBIgpArcClose.Bubble.ShortHelp="隱藏氣泡條";
+DNBIgpArcClose.Bubble.Help="隱藏氣泡條";
+DNBIgpArcClose.Bubble.LongHelp="隱藏氣泡條（再次選擇標記預覽選項以重新激活）";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Messages
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+InvalidTrajectoryName.Title="Error";
+InvalidTrajectoryName.Msg="軌跡名稱無效。
+請輸入一個正確名稱。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+NotValidForTouchedSurface.Title="Error";
+NotValidForTouchedSurface.Msg="此位置對 
+選定的焊縫搜索類型無效。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+ProjectionError.Title="Error";
+ProjectionError.Msg="無法從 SSSP 中
+投影接觸點。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+ToolNotFound.Title="Warning";
+ToolNotFound.Msg="沒有為此機器人/站臺找到有效焊槍。  
+刀具方向預覽將不可用。
+
+建議：
+1) 檢查機器人上的默認刀具輪廓，或者
+2) 選擇刀具來替代機器人";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+TCPNotFound.Title="Warning";
+TCPNotFound.Msg="沒有為附加的焊槍找到 TCP。  
+刀具方向預覽將不可用。
+
+建議：
+檢查刀具設備的機械端口。
+需要“工具點”端口并且它應參考 3D 軸系。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+StationNotFound.Title="Error";
+StationNotFound.Msg="此選擇未參考有效的機器人站臺。
+無法在此處創建焊縫搜索軌跡。
+
+建議：
+選擇帶機器人和刀具的組織資源。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+BaseProjectionFailed.Title="Warning";
+BaseProjectionFailed.Msg="已達到第一個曲面搜索點的移動限制。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+WallProjectionFailed.Title="Warning";
+WallProjectionFailed.Msg="已達到第二個曲面搜索點的移動限制。
+
+建議：
+您可以嘗試修改第二個搜索類型，
+然后再次嘗試此更改。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+SideProjectionFailed.Title="Warning";
+SideProjectionFailed.Msg="已達到第三個曲面搜索點的移動限制。
+
+建議：
+您可以嘗試修改第三個搜索類型，
+然后再次嘗試此更改。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+AttemptNormalInvert.Title="Warning";
+AttemptNormalInvert.Msg="計算從焊縫搜索起點
+到選定點之間的路徑時遇到錯誤。
+選定曲面具有的法線向量可能不正確。  
+
+是否要嘗試反轉其法線向量？";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+AllProjectionAttemptsFailed.Title="Error";
+AllProjectionAttemptsFailed.Msg="選定曲面無法用作
+第二個或第三個曲面。
+
+建議：
+重新啟動此命令并先選擇此曲面。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+InitialProjectionFailed.Title="Warning";
+InitialProjectionFailed.Msg="當前對話框設置可能不適用于
+選定搜索類型。
+
+是否要嘗試其他搜索類型？";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+UnsetOrientations.Title="Warning";
+UnsetOrientations.Msg="突出顯示的曲面具有默認的 
+刀具設備方向，此方向可能不是進行沖突檢測
+的最佳方向。
+
+是否要繼續？
+
+是：保存并退出此命令
+
+否：繼續此命令并修改
+ 刀具方向。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+InvertNormalQuestion.Title="Question";
+InvertNormalQuestion.Msg="是否要反轉此曲面法線的方向？";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+CannotEdit.Title="Error";
+CannotEdit.Msg="訪問此軌跡的數據時遇到問題。
+因此無法對其進行編輯。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+DistanceOutOfRange.Title="Error";
+DistanceOutOfRange.Msg="到此曲面的距離超出范圍。";
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+

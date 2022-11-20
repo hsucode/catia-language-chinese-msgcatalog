@@ -1,0 +1,104 @@
+Title = "網格檢測";
+
+MsgInfo = "三角形數目: ";
+MsgFace = "圖元";
+MsgFaces = "圖元組";
+
+FrameDest.EdtDest.LongHelp="指定儲存網格結果位置.";
+FrameDest.EdtPartBody.LongHelp="指定計算網格零件本體.";
+
+FrameDest.LabelFace.Title = " 修剪面:";
+FrameDest.EdtFace.LongHelp="指定計算網格修剪面清單.";
+
+M3xMeshTolerance = "弦錯誤";
+M3xMeshTolerance.LongHelp = "指定網格精度數值.";
+
+M3xEdgeFusion = "連接精度";
+M3xEdgeFusion.LongHelp = "指定邊線溶接精度.";
+
+M3xFaceTolerance = "細長面精度";
+M3xFaceTolerance.LongHelp = "指定細長面精度數值.";
+
+M3xEdgeLengthMax = "最大邊線長度";
+M3xEdgeLengthMax.LongHelp = "指定最大邊線長度數值.";
+
+M3xNullArea = "無效面積標準";
+M3xNullArea.LongHelp = "指定無效面積標準數值.";
+
+M3xToolDiameter = "刀具直徑";
+M3xToolDiameter.LongHelp = "指定刀具直徑數值.";
+
+M3xToolRadius = "刀具圓角半徑";
+M3xToolRadius.LongHelp = "指定刀具圓角半徑數值.";
+
+M3xThickness = "超越厚度";
+M3xThickness.LongHelp = "指定超越厚度數值.";
+
+TabCont.MesgDbgAdvanced.G0FusionCheckButton.Title = "G0 頂點合并";
+TabCont.MesgDbgAdvanced.G0FusionCheckButton.LongHelp = "G0 頂點合并";
+
+TabCont.MesgDbgAdvanced.G1FusionCheckButton.Title = "G1 頂點合并";
+TabCont.MesgDbgAdvanced.G1FusionCheckButton.LongHelp = "G1 頂點合并";
+
+TabCont.MesgDbgGen.Display3D.Title = "3D 顯示";
+TabCont.MesgDbgGen.Display3D.LongHelp = "如勾選則 3D 顯示,否則只顯示 2D";
+
+TabCont.MesgDbgGen.MeshForMachining.Title = "加工網格";
+TabCont.MesgDbgGen.MeshForMachining.LongHelp = "以計入刀具來計算貼圖";
+
+TabCont.MesgDbgGen.DisplayNormals.Title = "顯示垂直";
+TabCont.MesgDbgGen.DisplayNormals.LongHelp = "顯示垂直";
+
+TabCont.MesgDbgGen.NoInternalBoundaries.Title = "無內部邊界";
+TabCont.MesgDbgGen.NoInternalBoundaries.LongHelp = "無內部邊界";
+
+TabCont.MesgDbgGen.AfficheContours.Title = "顯示邊界";
+TabCont.MesgDbgGen.AfficheContours.LongHelp = "顯示邊界";
+
+TabCont.MesgDbgGen.ActiveTopoCleaner.Title = "啟動清理曲線";
+TabCont.MesgDbgGen.ActiveTopoCleaner.LongHelp = "啟動清理曲線";
+
+FrameAct.Title = "動作";
+
+FrameAct.RadioBordLibre.Title = "釋放邊線";
+FrameAct.RadioBordLibre.LongHelp = "計算釋放邊線";
+
+FrameAct.RadioTesselation.Title = "貼圖所有修剪面";
+FrameAct.RadioTesselation.LongHelp = "計算貼圖";
+
+FrameAct.RadioPAL.Title = "計算零件自動限制";
+FrameAct.RadioPAL.LongHelp = "計算貼圖";
+
+FrameAct.RadioSurfaceSupport.Title = "曲面依附格線";
+FrameAct.RadioSurfaceSupport.LongHelp = "計算曲面依附格線";
+
+FrameAct.RadioDebugSpatial.Title = "偵錯空間";
+FrameAct.RadioDebugSpatial.LongHelp = "幫助空間演算偵錯";
+
+FrameAct.RadioDiscretiseEdge.Title = "不連續邊線";
+FrameAct.RadioDiscretiseEdge.LongHelp = "不連續邊線";
+
+FrameAct.RadioPersistentTag.Title = "獲取修剪面固定標簽";
+FrameAct.RadioPersistentTag.LongHelp = "獲取修剪面固定標簽";
+
+FrameFilter.Accuracy.Title= "詳細層級:";
+FrameFilter.Accuracy.LongHelp= "指定結果精確度.
+預設為大型零件數值.";
+FrameFilter.Slider.LongHelp= "指定結果精確度.
+預設為大型零件數值.";
+FrameFilter.Min.Title= "  最小";
+FrameFilter.Max.Title= "最大";
+
+TabCont.MesgDbgGen.Title = "一般";
+TabCont.MesgDbgAdvanced.Title = "高級";
+TabCont.MesgDbgMachining.Title = "加工";
+
+TabCont.MesgDbgMachining.FrameParm.FrameToolAxis.Title = "方向";
+TabCont.MesgDbgMachining.FrameParm.FrameToolAxis.AxisButton.Title = "選擇";
+TabCont.MesgDbgMachining.FrameParm.FrameToolAxis.AxisButton.LongHelp= "指定軸方向.
+選擇線或平面垂直方向來指定方向.";
+TabCont.MesgDbgMachining.FrameParm.FrameToolAxis.ReverseButton.Title = " 反向";
+TabCont.MesgDbgMachining.FrameParm.FrameToolAxis.ReverseButton.LongHelp= " 反向軸方向.";
+
+TabCont.MesgDbgMachining.FrameParm.FrameAxis.AxisButton.Title = "選擇";
+TabCont.MesgDbgMachining.FrameParm.FrameAxis.AxisButton.LongHelp = "選擇平面, 平面形式修剪面或軸系來更改材料方向.";

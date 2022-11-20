@@ -1,0 +1,184 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 1998
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 CATRscLightClassicIlluminationPropertyFrame
+// 3951 校正官方漢化
+// 3951 校正官方漢化===========================================================================
+
+typeSepFrame.typeSepLabel.Title="源";
+typeSepFrame.typeSepLabel.Help="設置光源類型";
+typeSepFrame.typeSepLabel.ShortHelp="光源類型";
+typeSepFrame.typeSepLabel.LongHelp="更改光源類型。";
+
+typeLabel.Title="類型";
+typeLabel.Help="定義光源類型";
+typeLabel.ShortHelp="光源類型";
+typeLabel.LongHelp="定義光源類型。";
+
+typeFrame.typeCombo.Help="定義光源類型";
+typeFrame.typeCombo.ShortHelp="光源類型";
+typeFrame.typeCombo.LongHelp="定義光源類型。";
+
+SpotLight="聚光";
+PointLight="點光";
+DirectionalLight="平行光";
+
+angleLabel.Title="角度";
+angleLabel.Help="定義聚光角度";
+angleLabel.ShortHelp="聚光角度";
+angleLabel.LongHelp="定義聚光角度。";
+
+angleWheel.Title="";
+angleWheel.Help="定義聚光角度";
+angleWheel.ShortHelp="聚光角度";
+angleWheel.LongHelp="定義聚光角度。";
+
+colorSepFrame.colorSepLabel.Title="顏色";
+colorSepFrame.colorSepLabel.Help="設置光的顏色和強度";
+colorSepFrame.colorSepLabel.ShortHelp="光的顏色和強度";
+colorSepFrame.colorSepLabel.LongHelp="更改光的顏色和強度。";
+
+colorLabel.Title="顏色";
+colorLabel.Help="設置光的顏色";
+colorLabel.ShortHelp="光的顏色";
+colorLabel.LongHelp="更改光的顏色。";
+
+colorSlider.Title="";
+colorSlider.Help="設置光的顏色";
+colorSlider.ShortHelp="光的顏色";
+colorSlider.LongHelp="更改光的顏色。";
+
+intensityLabel.Title="強度";
+intensityLabel.Help="定義光的強度";
+intensityLabel.ShortHelp="光的強度";
+intensityLabel.LongHelp="定義光的強度。";
+
+intensitySlider.Help="定義光的強度";
+intensitySlider.ShortHelp="光的強度";
+intensitySlider.LongHelp="定義光的強度。";
+
+attenuationSepFrame.attenuationSepLabel.Title="衰減";
+attenuationSepFrame.attenuationSepLabel.Help="定義照明衰減";
+attenuationSepFrame.attenuationSepLabel.ShortHelp="照明衰減";
+attenuationSepFrame.attenuationSepLabel.LongHelp="更改照明衰減。";
+
+falloffLabel.Title="衰減";
+falloffLabel.Help="定義照明衰減";
+falloffLabel.ShortHelp="照明衰減";
+falloffLabel.LongHelp="定義照明衰減類型：
+- 無：照明持續且無限。
+- 線性：照明在一定距離處（請參見“初始比率”）開始呈直線衰減，在衰減末端為零。";
+
+falloffFrame.falloffCombo.Help="定義照明衰減";
+falloffFrame.falloffCombo.ShortHelp="照明衰減";
+falloffFrame.falloffCombo.LongHelp="定義照明衰減類型：
+- 無：照明持續且無限。
+- 線性：照明在一定距離處（請參見“初始比率”）開始呈直線衰減，在衰減末端為零。";
+
+FalloffNone="無";
+FalloffInverse="線性";
+FalloffInverseSquare="平方";
+
+endLabel.Title="結束";
+endLabel.Help="定義衰減末端";
+endLabel.ShortHelp="衰減末端";
+endLabel.LongHelp="定義到中心（光照明度從該位置開始為零或可忽略不計）的距離。";
+
+endWheel.Title="";
+endWheel.Help="定義衰減末端";
+endWheel.ShortHelp="衰減末端";
+endWheel.LongHelp="定義到中心（光照明度從該位置開始為零或可忽略不計）的距離。";
+
+attenuationStartLabel.Title="初始比率";
+attenuationStartLabel.Help="定義衰減初始比率";
+attenuationStartLabel.ShortHelp="衰減初始比率";
+attenuationStartLabel.LongHelp="定義中心至衰減處距離與中心至目標距離的比率。 
+例如：0: 從中心開始衰減，
+    0.5: 從中間開始衰減，
+    1: 從末端開始衰減（即無衰減）。";
+
+attenuationStartSlider.Title="";
+attenuationStartSlider.Help="定義衰減初始比率";
+attenuationStartSlider.ShortHelp="衰減初始比率";
+attenuationStartSlider.LongHelp="定義中心至衰減處距離與中心至目標距離的比率。 
+例如：0: 從中心開始衰減，
+    0.5: 從中間開始衰減，
+    1: 從末端開始衰減（即無衰減）。";
+
+attenuationAngleLabel.Title="角度比率";
+attenuationAngleLabel.Help="定義衰減角度比率";
+attenuationAngleLabel.ShortHelp="衰減角度比率";
+attenuationAngleLabel.LongHelp="定義光開始衰減時光角度與光軸角度的比率。                        例如： 0: 角度從軸開始衰減，
+    0.5: 角度從半角開始衰減，
+    1: 從末端開始衰減（即無衰減）。";
+
+attenuationExponentLabel.Title="指數 ";
+attenuationExponentLabel.Help="定義聚光燈衰減指數";
+attenuationExponentLabel.ShortHelp="衰減指數";
+attenuationExponentLabel.LongHelp="定義聚光燈衰減指數。
+例如：0：最小值，
+    128：最大值。";
+
+attenuationExponentSlider.Title="";
+attenuationExponentSlider.Help="定義聚光燈衰減指數";
+attenuationExponentSlider.ShortHelp="聚光燈衰減指數";
+attenuationExponentSlider.LongHelp="定義聚光燈衰減指數。
+例如：0：最小值，
+    128：最大值。";
+
+attenuationAngleSlider.Title="";
+attenuationAngleSlider.Help="定義衰減角度比率";
+attenuationAngleSlider.ShortHelp="衰減角度比率";
+attenuationAngleSlider.LongHelp="定義光開始衰減時光角度與光軸角度的比率。                        例如： 0: 角度從軸開始衰減，
+    0.5: 角度從半角開始衰減，
+    1: 從末端開始衰減（即無衰減）。";
+
+shadowSepFrame.shadowSepLabel.Title="陰影";
+shadowSepFrame.shadowSepLabel.Help="啟用陰影";
+shadowSepFrame.shadowSepLabel.ShortHelp="啟用陰影";
+shadowSepFrame.shadowSepLabel.LongHelp="啟用/禁用陰影投射。";
+
+shadowCheck.Title="已跟蹤的射線";
+shadowCheck.Help="啟用已跟蹤射線的陰影";
+shadowCheck.ShortHelp="啟用已跟蹤射線的陰影";
+shadowCheck.LongHelp="啟用/禁用已跟蹤射線的陰影投射
+（該功能僅用于軟件渲染）。";
+
+hardwareShadowCheck.Title="實時";
+hardwareShadowCheck.Help="啟用實時陰影";
+hardwareShadowCheck.ShortHelp="啟用實時陰影";
+hardwareShadowCheck.LongHelp="啟用/禁用實時陰影投射
+（該功能僅用于實時渲染）。";
+
+shadowSmoothingLabel.Title="光順";
+shadowSmoothingLabel.Help="定義陰影光順限制";
+shadowSmoothingLabel.ShortHelp="陰影光順";
+shadowSmoothingLabel.LongHelp="定義陰影光順限制。";
+
+shadowSmoothingSlider.Title="";
+shadowSmoothingSlider.Help="定義陰影光順限制";
+shadowSmoothingSlider.ShortHelp="陰影光順";
+shadowSmoothingSlider.LongHelp="定義陰影光順限制。";
+
+shadowColorLabel.Title="顏色";
+shadowColorLabel.Help="設置陰影顏色";
+shadowColorLabel.ShortHelp="陰影顏色";
+shadowColorLabel.LongHelp="更改陰影顏色。";
+
+shadowColorSlider.Title="";
+shadowColorSlider.Help="設置陰影顏色";
+shadowColorSlider.ShortHelp="陰影顏色";
+shadowColorSlider.LongHelp="更改陰影顏色。";
+
+shadowTransparencyLabel.Title="透明度";
+shadowTransparencyLabel.Help="設置陰影透明度";
+shadowTransparencyLabel.ShortHelp="陰影透明度";
+shadowTransparencyLabel.LongHelp="更改陰影透明度。";
+
+shadowTransparencySlider.Title="";
+shadowTransparencySlider.Help="設置陰影透明度";
+shadowTransparencySlider.ShortHelp="陰影透明度";
+shadowTransparencySlider.LongHelp="更改陰影透明度。";
+
+EnvironmentCreationWarning="沒有活動的陰影環境。\n是否要新建透明環境？";
+

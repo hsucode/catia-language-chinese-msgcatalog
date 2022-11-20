@@ -1,0 +1,489 @@
+// DASSAULT SYSTEMES COPYRIGHT 2008
+// =======================================================================================================================
+// Mechanisms FBDI (KIN)
+// =======================================================================================================================
+//
+// Usage: Errors / warnings / informations messages linked to FBDI process
+//
+// =======================================================================================================================
+// Creation - Feb 08 - LYT
+// =======================================================================================================================
+
+// -----------------------------------------------------------------------------------------------------------------------
+// Fix name is not in CATMCXAsmTypes.CATNls
+// -----------------------------------------------------------------------------------------------------------------------
+Fix="Fix";
+
+// -----------------------------------------------------------------------------------------------------------------------
+// Broken MCX prefix name
+// -----------------------------------------------------------------------------------------------------------------------
+BrokenMCX.Prefix="Broken:";
+
+// -----------------------------------------------------------------------------------------------------------------------
+// Simulation suffix
+// -----------------------------------------------------------------------------------------------------------------------
+Simulation.Suffix="_KIN_FBDI_Simulation";
+
+// -----------------------------------------------------------------------------------------------------------------------
+// Errors (declaration as warnings is a trick because an error stops the whole migration)
+// -----------------------------------------------------------------------------------------------------------------------
+FBDIKin_0000.Msg="KIN_0000";
+FBDIKin_0000.Type="Warning";
+FBDIKin_0000.DetailedMsg="No mechanism was found. Therefore, no mechanism was migrated.";
+
+FBDIKin_0001.Msg="KIN_0001";
+FBDIKin_0001.Type="Warning";
+FBDIKin_0001.DetailedMsg="- /P01:\n An internal error occurred while proceeding to mechanism (/P02) importation.";
+
+FBDIKin_0002.Msg="KIN_0002";
+FBDIKin_0002.Type="Warning";
+FBDIKin_0002.DetailedMsg="- /P01:\n An internal error occurred while proceeding to fixed part (/P02) importation.";
+
+FBDIKin_0003.Msg="KIN_0003";
+FBDIKin_0003.Type="Warning";
+FBDIKin_0003.DetailedMsg="- /P01:\n An internal error occurred while proceeding to joint (/P02) importation.";
+
+FBDIKin_0004.Msg="KIN_0004";
+FBDIKin_0004.Type="Warning";
+FBDIKin_0004.DetailedMsg="- /P01:\n An internal error occurred while proceeding to command (/P02) importation.";
+
+FBDIKin_0005.Msg="KIN_0005";
+FBDIKin_0005.Type="Error";
+FBDIKin_0005.DetailedMsg="An irreparable error occured.";
+
+FBDIKin_0006.Msg="KIN_0006";
+FBDIKin_0006.Type="Warning";
+FBDIKin_0006.DetailedMsg="- /P01:\n An internal error occurred while proceeding to relation (/P02) importation.";
+
+FBDIKin_0007.Msg="KIN_0007";
+FBDIKin_0007.Type="Warning";
+FBDIKin_0007.DetailedMsg="- /P01:\n An internal error occurred while proceeding to dressup (/P02) importation.";
+
+// -----------------------------------------------------------------------------------------------------------------------
+// Warnings - Mechanism
+// -----------------------------------------------------------------------------------------------------------------------
+FBDIKin_1000.Msg="KIN_1000";
+FBDIKin_1000.Type="Warning";
+FBDIKin_1000.DetailedMsg="- /P01:\n Mechanism (/P02) was not migrated because it contains neither fixed part nor joint.";
+
+FBDIKin_1001.Msg="KIN_1001";
+FBDIKin_1001.Type="Warning";
+FBDIKin_1001.DetailedMsg="- /P01:\n Mechanism (/P02) could not be migrated, because it was 
+unable to retrieve reference product or mechanism.";
+
+FBDIKin_1002.Msg="KIN_1002";
+FBDIKin_1002.Type="Warning";
+FBDIKin_1002.DetailedMsg="- /P01:\n Mechanism (/P02) failed to declare itself in the Links Mapping Table (LMT).";
+
+FBDIKin_1003.Msg="KIN_1003";
+FBDIKin_1003.Type="Warning";
+FBDIKin_1003.DetailedMsg="- /P01:\n Mechanism (/P02) failed to declare itself in the Relationship Mapping Table (RMT).
+As a result, RMT won't be used for this object during future migration.";
+
+FBDIKin_1004.Msg="KIN_1004";
+FBDIKin_1004.Type="Warning";
+FBDIKin_1004.DetailedMsg="- /P01:\n Mechanism (/P02) is created in older (previous to V5-R6) version of CATIA. 
+As a result this mechanism cannot be migrated to V6. Please open this model in the newer version (from V5-R9 onwards) 
+of CATIA V5, delete existing imported mechanisms and re-import them.";
+
+FBDIKin_1005.Msg="KIN_1005";
+FBDIKin_1005.Type="Warning";
+FBDIKin_1005.DetailedMsg="/P01:\n Mechanism could not be migtrated.
+FBDI of imported mechanism from third level product is not supported.";
+
+FBDIKin_1006.Msg="KIN_1006";
+FBDIKin_1006.Type="Warning";
+FBDIKin_1006.DetailedMsg="/P01:\n Imported Mechanism (/P02) is different from its reference mechanism.
+Please open this model in CATIA V5, delete existing imported mechanisms and re-import them.";
+
+FBDIKin_1007.Msg="KIN_1007";
+FBDIKin_1007.Type="Warning";
+FBDIKin_1007.DetailedMsg="/P01:\n Imported Mechanism (/P02) do not resolve the link to its reference mechanism.
+Please open this model in CATIA V5, and reimport the mechanisms.";
+
+// -----------------------------------------------------------------------------------------------------------------------
+// Warnings - Fixed part
+// -----------------------------------------------------------------------------------------------------------------------
+FBDIKin_2000.Msg="KIN_2000";
+FBDIKin_2000.Type="Warning";
+FBDIKin_2000.DetailedMsg="- /P01:\n Fixed part (/P02) has unresolved link to a constraint.
+The equivalent engineering connection may be broken.";
+
+FBDIKin_2001.Msg="KIN_2001";
+FBDIKin_2001.Type="Warning";
+FBDIKin_2001.DetailedMsg="- /P01:\n Fixed part (/P02) has unresolved link to part (/P03).
+A broken engineering connection will be created.";
+
+FBDIKin_2002.Msg="KIN_2002";
+FBDIKin_2002.Type="Warning";
+FBDIKin_2002.DetailedMsg="- /P01:\n Fixed part (/P02) failed to declare itself in the Links Mapping Table (LMT).";
+
+FBDIKin_2003.Msg="KIN_2003";
+FBDIKin_2003.Type="Warning";
+FBDIKin_2003.DetailedMsg="- /P01:\n Fixed part (/P02) failed to declare itself in the Relationship Mapping Table (RMT).
+As a result, RMT won't be used for this object during future migration.";
+
+FBDIKin_2004.Msg="KIN_2004";
+FBDIKin_2004.Type="Warning";
+FBDIKin_2004.DetailedMsg="- /P01:\n Fixed part (/P02) failed to retrieve its reference product.
+It is likely that the engineering connection creation will abort.";
+
+FBDIKin_2005.Msg="KIN_2005";
+FBDIKin_2005.Type="Warning";
+FBDIKin_2005.DetailedMsg="- /P01:\n Fixed part (/P02) has got a constraint (/P03) whose type is unknown.
+A broken engineering connection will be created.";
+
+FBDIKin_2006.Msg="KIN_2006";
+FBDIKin_2006.Type="Warning";
+FBDIKin_2006.DetailedMsg="- /P01:\n Fixed part (/P02) was equivalent to (/P03). Therefore it was not duplicated.";
+
+// -----------------------------------------------------------------------------------------------------------------------
+// Warnings - Joint
+// -----------------------------------------------------------------------------------------------------------------------
+FBDIKin_3000.Msg="KIN_3000";
+FBDIKin_3000.Type="Warning";
+FBDIKin_3000.DetailedMsg="- /P01:\n Joint (/P02) has unresolved link to a constraint.
+A broken engineering connection will be created.";
+
+FBDIKin_3001.Msg="KIN_3001";
+FBDIKin_3001.Type="Warning";
+FBDIKin_3001.DetailedMsg="- /P01:\n Joint (/P02) has unresolved link to part (/P03).
+A broken engineering connection will be created.";
+
+FBDIKin_3002.Msg="KIN_3002";
+FBDIKin_3002.Type="Warning";
+FBDIKin_3002.DetailedMsg="- /P01:\n Joint (/P02) has unresolved link to a connector.
+A broken engineering connection will be created.";
+
+FBDIKin_3003.Msg="KIN_3003";
+FBDIKin_3003.Type="Warning";
+FBDIKin_3003.DetailedMsg="- /P01:\n Joint (/P02) has unresolved link to a knowledge formula.
+A broken engineering connection will be created.";
+
+FBDIKin_3004.Msg="KIN_3004";
+FBDIKin_3004.Type="Warning";
+FBDIKin_3004.DetailedMsg="- /P01:\n Joint (/P02) failed to add a representation under product (/P03).
+Thus it was impossible to create an axis system.
+As a result, this joint is not drivable.
+A controlled mechanical relation (MRX) in engineering connection (/P04) has to be added for it to become drivable.";
+
+FBDIKin_3005.Msg="KIN_3005";
+FBDIKin_3005.Type="Warning";
+FBDIKin_3005.DetailedMsg="- /P01:\n Joint (/P02) failed to create an axis system.
+As a result, this joint is not drivable.
+A controlled mechanical relation (MRX) in engineering connection (/P03) has to be added for it to become drivable.";
+
+FBDIKin_3006.Msg="KIN_3006";
+FBDIKin_3006.Type="Warning";
+FBDIKin_3006.DetailedMsg="- /P01:\n The type of joint (/P02) is currently not fully supported by FBDI.
+As a result, this joint was not migrated.";
+
+FBDIKin_3007.Msg="KIN_3007";
+FBDIKin_3007.Type="Warning";
+FBDIKin_3007.DetailedMsg="- /P01:\n Joint (/P02) or Fixed part was not attached to mechanism (/P03).
+Please check the type of engineering connection and its mechanical relations (MRX).";
+
+FBDIKin_3008.Msg="KIN_3008";
+FBDIKin_3008.Type="Warning";
+FBDIKin_3008.DetailedMsg="- /P01:\n Joint (/P02) failed to declare itself in the Links Mapping Table (LMT).";
+
+FBDIKin_3009.Msg="KIN_3009";
+FBDIKin_3009.Type="Warning";
+FBDIKin_3009.DetailedMsg="- /P01:\n Joint (/P02) failed to declare itself in the Relationship Mapping Table (RMT).
+As a result, RMT won't be used for this object during future migration.";
+
+FBDIKin_300A.Msg="KIN_300A";
+FBDIKin_300A.Type="Warning";
+FBDIKin_300A.DetailedMsg="- /P01:\n Joint (/P02) failed to retrieve its reference product.
+It is likely that the engineering connection creation will abort.";
+
+FBDIKin_300B.Msg="KIN_300B";
+FBDIKin_300B.Type="Warning";
+FBDIKin_300B.DetailedMsg="- /P01:\n Joint (/P02) has got a constraint (/P03) whose type is unknown.
+A broken engineering connection will be created.";
+
+FBDIKin_300C.Msg="KIN_300C";
+FBDIKin_300C.Type="Warning";
+FBDIKin_300C.DetailedMsg="- /P01:\n Rigid joint (/P02) has unresolved link to its fix together constraint or
+involves more than two parts, or an internal error occured during V5 (ASM) constraint FBDI.
+A broken engineering connection may be created.";
+
+FBDIKin_300D.Msg="KIN_300D";
+FBDIKin_300D.Type="Warning";
+FBDIKin_300D.DetailedMsg="- /P01:\n Joint (/P02) failed to create a controlled mechanical relation (MRX) driven in (/P03).";
+
+FBDIKin_300E.Msg="KIN_300E";
+FBDIKin_300E.Type="Warning";
+FBDIKin_300E.DetailedMsg="- /P01:\n Joint (/P02) failed to create its mechanical asssociations tree (MAX).
+Some mechanical relations (MRX) may be missing. Therefore the engineering connection status is broken.";
+
+FBDIKin_300F.Msg="KIN_300F";
+FBDIKin_300F.Type="Warning";
+FBDIKin_300F.DetailedMsg="- /P01:\n Joint (/P02) failed to retrieve any constraint.
+As a result, the related engineering connection is broken.";
+
+FBDIKin_3010.Msg="KIN_3010";
+FBDIKin_3010.Type="Warning";
+FBDIKin_3010.DetailedMsg="- /P01:\n The mechanical relation (/P03) of the engineering connection (/P02) is not satisfied.
+This might lead mechanism (/P04) not to be drivable. An update may fix this issue.";
+
+FBDIKin_3011.Msg="KIN_3011";
+FBDIKin_3011.Type="Warning";
+FBDIKin_3011.DetailedMsg="- /P01:\n Joint (/P02) has got less than /P03 support(s), which is the expected number.
+This might lead mechanism (/P04) not to be drivable, or to show unexpected behaviors.";
+
+FBDIKin_3012.Msg="KIN_3012";
+FBDIKin_3012.Type="Warning";
+FBDIKin_3012.DetailedMsg="- /P01:\n Joint (/P02) has got less than /P03 connector(s), which is the expected number.
+This might lead mechanism (/P04) not to be drivable, or to show unexpected behaviors.";
+
+FBDIKin_3013.Msg="KIN_3013";
+FBDIKin_3013.Type="Warning";
+FBDIKin_3013.DetailedMsg="- /P01:\n Joint (/P02) has failed to create an axis system.";
+
+FBDIKin_3014.Msg="KIN_3014";
+FBDIKin_3014.Type="Warning";
+FBDIKin_3014.DetailedMsg="- /P01:\n Universal joint (/P02) was migrated as a spherical joint.
+Due to the new engineering connections model, this kind of universal joint has to become a spherical joint.";
+
+FBDIKin_3015.Msg="KIN_3015";
+FBDIKin_3015.Type="Warning";
+FBDIKin_3015.DetailedMsg="- /P01:\n Universal joint (/P02) was migrated as a rigid joint.
+Due to the new engineering connections model, this kind of universal joint has to become a rigid joint.";
+
+FBDIKin_3016.Msg="KIN_3016";
+FBDIKin_3016.Type="Warning";
+FBDIKin_3016.DetailedMsg="- /P01:\n Joint (/P02) was equivalent to (/P03). Therefore it was not duplicated.";
+
+FBDIKin_3017.Msg="KIN_3017";
+FBDIKin_3017.Type="Warning";
+FBDIKin_3017.DetailedMsg="- /P01:\n Joint (/P02) has unresolved link to a geometry.
+A broken engineering connection will be created.";
+
+FBDIKin_3018.Msg="KIN_3018";
+FBDIKin_3018.Type="Warning";
+FBDIKin_3018.DetailedMsg="- /P01:\n Joint (/P02) failed to retrieve any constraint.
+As a result, the related engineering connection is broken.";
+
+FBDIKin_3019.Msg="KIN_3019";
+FBDIKin_3019.Type="Warning";
+FBDIKin_3019.DetailedMsg="- /P01:\n Compound joint (/P02) failed to retrieve a leaf joint.
+As a result, the related engineering connection is broken.";
+
+FBDIKin_301A.Msg="KIN_301A";
+FBDIKin_301A.Type="Warning";
+FBDIKin_301A.DetailedMsg="- /P01:\n Joint (/P02) has a value which is defined outside its boundaries.
+The application has tried to set automatically the value of the V6 engineering connection inside its boundaries, for ease of use.
+By the consequence, the V5 joint value of /P02 is not the value set in the V6 engineering connection.
+Thus, the V6 simulation behavior is neither guaranteed to be the same as the one of V5, nor even to work at all.
+Please update your model in CATIA V5 DMU Kinematics in order to reset the value of /P02 within its boundaries.";
+
+FBDIKin_301B.Msg="301B";
+FBDIKin_301B.Type="Warning";
+FBDIKin_301B.DetailedMsg="- Joint (/P01) and the joint (/P02) are created using same parts (/P03) & (/P04)
+but different supports. It may lead to over-constraint errors in PLMupdate of the product. You should consider removing one of joint 
+(Engineering connection).";
+
+FBDIKin_301C.Msg="KIN_301C";
+FBDIKin_301C.Type="Warning";
+FBDIKin_301C.DetailedMsg="- /P01:\n Joint (/P02) failed to compute its /P03 value. Zero was set as a default value.
+However, this default value may create over-constraints with respect to other engineering connections. Please edit 
+/P02 before running the update in order to reset its value.";
+
+// -----------------------------------------------------------------------------------------------------------------------
+// Warnings - Command
+// -----------------------------------------------------------------------------------------------------------------------
+FBDIKin_4000.Msg="KIN_4000";
+FBDIKin_4000.Type="Warning";
+FBDIKin_4000.DetailedMsg="- /P01:\n Command (/P02) failed to declare itself in the Links Mapping Table (LMT).";
+
+FBDIKin_4001.Msg="KIN_4001";
+FBDIKin_4001.Type="Warning";
+FBDIKin_4001.DetailedMsg="- /P01:\n Command (/P02) failed to declare itself in the Relationship Mapping Table (RMT).
+As a result, RMT won't be used for this object during future migration.";
+
+FBDIKin_4002.Msg="KIN_4002";
+FBDIKin_4002.Type="Warning";
+FBDIKin_4002.DetailedMsg="- /P01:\n Command (/P02) has unresolved link to its owner mechanism.
+Command migration failed.";
+
+FBDIKin_4003.Msg="KIN_4003";
+FBDIKin_4003.Type="Warning";
+FBDIKin_4003.DetailedMsg="- /P01:\n Command (/P02) has unresolved link to its driven joint.
+Command migration failed.";
+
+FBDIKin_4004.Msg="KIN_4004";
+FBDIKin_4004.Type="Warning";
+FBDIKin_4004.DetailedMsg="- /P01:\n Command (/P02) failed to be migrated.
+Please check that joint (/P03) is not broken and that it contains a controlled mechanical relation (MRX).";
+
+FBDIKin_4005.Msg="KIN_4005";
+FBDIKin_4005.Type="Warning";
+FBDIKin_4005.DetailedMsg="- /P01:\n Command (/P02) failed to retrieve its relation.";
+
+// -----------------------------------------------------------------------------------------------------------------------
+// Informations
+// -----------------------------------------------------------------------------------------------------------------------
+FBDIKin_5000.Msg="KIN_5000";
+FBDIKin_5000.Type="Information";
+FBDIKin_5000.DetailedMsg="Only the following joints are fully supported in the current FBDI drop:
+- Fix,
+- Rigid,
+- Prismatic,
+- Revolute,
+- Spherical,
+- Planar,
+- Cylindrical,
+- Universal,
+- Point Curve,
+- Point Surface,
+- Roll Curve,
+- Slide Curve,
+- Gear,
+- Rack,
+- Cable,
+- Constant Velocity (migrated as two Universal joints).";
+
+FBDIKin_5001.Msg="Mechanisms Container";
+FBDIKin_5001.Type="Information";
+FBDIKin_5001.DetailedMsg="Migration of the mechanisms container succeeded.";
+
+FBDIKin_5002.Msg="KIN_5002";
+FBDIKin_5002.Type="Information";
+FBDIKin_5002.DetailedMsg="The CATIA V5 object (/P01) did not find any equivalent neither in CATIA V6
+LMT (Link Mapping Table) nor in RMT (Relationship Mapping Table).";
+
+FBDIKin_5003.Msg="KIN_5003";
+FBDIKin_5003.Type="Information";
+FBDIKin_5003.DetailedMsg="The last Broken:Fix has been repaired.";
+
+FBDIKin_5004.Msg="KIN_5004";
+FBDIKin_5004.Type="Information";
+FBDIKin_5004.DetailedMsg="The last Broken:Rigid has been repaired.";
+
+FBDIKin_5005.Msg="KIN_5005";
+FBDIKin_5005.Type="Information";
+FBDIKin_5005.DetailedMsg="V5 Imported Mechanism (/P01) has not been duplicated.
+FBDI process deals natively with V5 Imported Mechanisms; therefore it is useless to import them twice.";
+
+FBDIKin_5006.Msg="KIN_5006";
+FBDIKin_5006.Type="Information";
+FBDIKin_5006.DetailedMsg="The last Broken:/P01 has been repaired.";
+
+FBDIKin_5007.Msg="KIN_5007";
+FBDIKin_5007.Type="Information";
+FBDIKin_5007.DetailedMsg="The last Broken:/P01 has been deleted according to the settings
+found in Tools -> Options -> Assembly Design -> FBDI.";
+
+// -----------------------------------------------------------------------------------------------------------------------
+// Warnings - Relation
+// -----------------------------------------------------------------------------------------------------------------------
+FBDIKin_6000.Msg="KIN_6000";
+FBDIKin_6000.Type="Warning";
+FBDIKin_6000.DetailedMsg="- /P01:\n Relation (/P02) failed to declare itself in the Links Mapping Table (LMT).";
+
+FBDIKin_6001.Msg="KIN_6001";
+FBDIKin_6001.Type="Warning";
+FBDIKin_6001.DetailedMsg="- /P01:\n Relation (/P02) failed to create or retrieve a simulation object.
+Relation migration failed.";
+
+FBDIKin_6002.Msg="KIN_6002";
+FBDIKin_6002.Type="Warning";
+FBDIKin_6002.DetailedMsg="- /P01:\n Relation (/P02) failed to create or retrieve a scenario.
+Relation migration failed.";
+
+FBDIKin_6003.Msg="KIN_6003";
+FBDIKin_6003.Type="Warning";
+FBDIKin_6003.DetailedMsg="- /P01:\n Relation (/P02) failed to create or retrieve an excitation.
+Relation migration failed.";
+
+FBDIKin_6004.Msg="KIN_6004";
+FBDIKin_6004.Type="Warning";
+FBDIKin_6004.DetailedMsg="- /P01:\n Relation (/P02) has unresolved link to an external parameter.
+Either the resulting expression of this relation will be wrong
+or the relation will not be migrated at all.";
+
+FBDIKin_6005.Msg="KIN_6005";
+FBDIKin_6005.Type="Warning";
+FBDIKin_6005.DetailedMsg="- /P01:\n Relation (/P02) failed to migrate parameter (/P03).
+Either the resulting expression of this relation will be wrong
+or the relation will not be migrated at all.";
+
+FBDIKin_6006.Msg="KIN_6006";
+FBDIKin_6006.Type="Warning";
+FBDIKin_6006.DetailedMsg="- /P01:\n Relation (/P02) failed to migrate its activity status.";
+
+FBDIKin_6007.Msg="KIN_6007";
+FBDIKin_6007.Type="Warning";
+FBDIKin_6007.DetailedMsg="- /P01:\n Relation (/P02) failed to translate its V5 expression into a V6
+understandable expression.";
+
+FBDIKin_6008.Msg="KIN_6008";
+FBDIKin_6008.Type="Warning";
+FBDIKin_6008.DetailedMsg="- /P01:\n FBDI failed to create or retrieve relation (/P02).
+Relation migration failed.";
+
+FBDIKin_6009.Msg="KIN_6009";
+FBDIKin_6009.Type="Warning";
+FBDIKin_6009.DetailedMsg="- /P01:\n Relation (/P02) is deactivated. FBDI is unable to migrate such a
+relation. Please consider to activate this relation in CATIA V5 and retry FBDI.";
+
+// -----------------------------------------------------------------------------------------------------------------------
+// Warnings - Dressup
+// -----------------------------------------------------------------------------------------------------------------------
+FBDIKin_7000.Msg="KIN_7000";
+FBDIKin_7000.Type="Warning";
+FBDIKin_7000.DetailedMsg="- /P01:\n Dressup (/P02) could not be migrated, because it was 
+unable to retrieve reference product or mechanism.";
+
+FBDIKin_7001.Msg="KIN_7001";
+FBDIKin_7001.Type="Warning";
+FBDIKin_7001.DetailedMsg="- /P01:\n Dressup (/P02) failed to retrieve its reference mechanism.";
+
+FBDIKin_7002.Msg="KIN_7002";
+FBDIKin_7002.Type="Warning";
+FBDIKin_7002.DetailedMsg="- /P01:\n Dressup (/P02) failed to retrieve some parts linked to mechanism (/P03).
+Parts in mechanism may be missing.";
+
+FBDIKin_7003.Msg="KIN_7003";
+FBDIKin_7003.Type="Error";
+FBDIKin_7003.DetailedMsg="Deprecated message.";
+
+FBDIKin_7004.Msg="KIN_7004";
+FBDIKin_7004.Type="Warning";
+FBDIKin_7004.DetailedMsg="- /P01:\n Dressup (/P02) failed to retrieve part (/P03).
+Parts in Dressup may be missing.";
+
+FBDIKin_7005.Msg="KIN_7005";
+FBDIKin_7005.Type="Warning";
+FBDIKin_7005.DetailedMsg="Deprecated message.";
+
+FBDIKin_7006.Msg="KIN_7006";
+FBDIKin_7006.Type="Warning";
+FBDIKin_7006.DetailedMsg="Deprecated message.";
+
+FBDIKin_7007.Msg="KIN_7007";
+FBDIKin_7007.Type="Warning";
+FBDIKin_7007.DetailedMsg="Deprecated message.";
+
+FBDIKin_7008.Msg="KIN_7008";
+FBDIKin_7008.Type="Warning";
+FBDIKin_7008.DetailedMsg="- /P01:\n Dressup (/P02) failed to declare itself in the Links Mapping Table (LMT).";
+
+FBDIKin_7009.Msg="KIN_7009";
+FBDIKin_7009.Type="Warning";
+FBDIKin_7009.DetailedMsg="- /P01:\n Dressup (/P02) failed to retrieve the context of its reference mechanism.";
+
+FBDIKin_700A.Msg="KIN_700A";
+FBDIKin_700A.Type="Warning";
+FBDIKin_700A.DetailedMsg="- /P01:\n Dressup (/P02) failed to assemble mechanism (/P03).";
+
+FBDIKin_700B.Msg="KIN_700B";
+FBDIKin_700B.Type="Warning";
+FBDIKin_700B.DetailedMsg="- /P01:\n Dressup (/P02) failed to retrieve its associated mechanism.
+A mechanism will be generated in V6. However, this mechanism won't be referenced in mapping tables.
+Please update and simulate your model in CATIA V5 DMU Kinematics so as that to generate the
+required mechanism in CATIA V5.";
+
+
+

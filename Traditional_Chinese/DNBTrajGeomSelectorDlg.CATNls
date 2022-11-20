@@ -1,0 +1,36 @@
+DialogTitle="Select Geometry";
+
+BOK.Title="Finish";
+
+FieldsFrame.Field1.Label="幾何圖形集 1";
+FieldsFrame.Field2.Label="幾何圖形集 2";
+FieldsFrame.Field2.Label="幾何圖形集 3";
+
+Field.ShortHelp="幾何圖形集";
+Field.LongHelp="幾何圖形集。
+單擊一次幾何圖形可將其添加到集。
+再次單擊同一幾何圖形可將其移除。";
+
+FieldsFrame.Field1BagBtn.ShortHelp="編輯選定元素的列表";
+FieldsFrame.Field2BagBtn.ShortHelp="編輯選定元素的列表";
+FieldsFrame.Field3BagBtn.ShortHelp="編輯選定元素的列表";
+
+PropagationFrame.PropagateMode.Title=" 沿切線邊界傳播選擇";
+PropagationFrame.PropagateMode.ShortHelp="沿切線邊界傳播每個幾何圖形選擇";
+PropagationFrame.PropagateMode.LongHelp="沿切線邊界傳播每個幾何圖形選擇。
+激活后，每個幾何圖形選擇都將嘗試
+捕獲所有相切連續的相鄰幾何圖形。
+這適用于曲線和曲面選擇。";
+
+AuxSpinnerFrame.AuxSpinnerMode.ShortHelp="如果不存在相交，定義要外插延伸曲面的距離";
+AuxSpinnerFrame.AuxSpinnerMode.LongHelp="如果不存在相交，定義要外插延伸曲面的距離。
+該軟件將嘗試延伸曲面，以在先前
+不存在相交的曲面之間創建相交。
+此選項在復雜或曲線幾何圖形中不可靠。";
+
+AuxSpinnerFrame.AuxBtn.Title="最小值";
+AuxSpinnerFrame.AuxBtn.ShortHelp="計算最小所需距離";
+AuxSpinnerFrame.AuxBtn.LongHelp="計算最小所需距離。
+該軟件將查找在曲面之間
+創建相交所需的最小距離。
+此選項在復雜或曲線幾何圖形中不可靠。";

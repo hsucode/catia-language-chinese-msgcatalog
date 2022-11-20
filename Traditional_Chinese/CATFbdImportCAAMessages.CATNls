@@ -1,0 +1,65 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2008
+
+// 3951 校正官方漢化---------------------------------
+// 3951 校正官方漢化  CAA Messages for FBDI Report
+// 3951 校正官方漢化---------------------------------
+CATFbdImportCAAMessages.CAASupport.WrongFolder="未找到為 CAA XML 文件定義的文件夾。";
+CATFbdImportCAAMessages.CAASupport.NoFolder="“工具/選項”中沒有為 CAA XML 文件定義的文件夾。";
+CATFbdImportCAAMessages.CAASupport.NoXMLFile="為 CAA XML 文件定義的文件夾未包含任何 XML 文件。";
+CATFbdImportCAAMessages.CAASupport.SyntaxXML="用于 CAA 支持的 XML 文件的語法中存在錯誤。";
+CATFbdImportCAAMessages.CAASupport.Parse="無法解析 xml 文件。";
+CATFbdImportCAAMessages.CAASupport.RootElement="無法檢索根節點。";
+CATFbdImportCAAMessages.CAASupport.FeaturesNode="無法檢索 CAAFeatures 節點。";
+CATFbdImportCAAMessages.CAASupport.ContainersNode="無法檢索 CAAContainers 節點。";
+CATFbdImportCAAMessages.CAASupport.RootElementName="根節點不是 CAADataForFBDI 類型。";
+CATFbdImportCAAMessages.CAASupport.RootElementOldName="根節點不是 CAAContainers 類型。\n 應該添加名為 CAADataForFBDI 的新根節點，其中節點  CAAContainers 作為其子級。";
+CATFbdImportCAAMessages.CAASupport.ChildNodesFeature="從 CAAFeatures 節點檢索子節點時出錯。";
+CATFbdImportCAAMessages.CAASupport.ChildNodesContainer="從 CAAContainers 節點檢索子節點時出錯。";
+CATFbdImportCAAMessages.CAASupport.ChildNodesNumber="檢索子節點的數量時出錯。";
+CATFbdImportCAAMessages.CAASupport.ChildNode="檢索子節點時出錯。";
+CATFbdImportCAAMessages.CAASupport.ChildNodeAttributes="檢索節點屬性時出錯。";
+CATFbdImportCAAMessages.CAASupport.ChildNodeAttributesNumber="容器節點未包含 3、4 或 5 個屬性。";
+CATFbdImportCAAMessages.CAASupport.ChildNodeAttributesNumberAttr="屬性節點未包含 2 個屬性。";
+CATFbdImportCAAMessages.CAASupport.ChildNodeAttributeType="容器節點未包含 Type 屬性。";
+CATFbdImportCAAMessages.CAASupport.ChildNodeAttributeDocType="容器節點未包含 DocType 屬性。";
+CATFbdImportCAAMessages.CAASupport.ChildNodeAttributeMode="容器節點未包含 Mode 屬性。";
+CATFbdImportCAAMessages.CAASupport.ChildNodeAttributeNoTargetRep="容器節點的已聲明屬性中未包含屬性 TargetRep。";
+CATFbdImportCAAMessages.CAASupport.ChildNodeAttributeRepId="容器節點的 5 個已聲明屬性中未包含屬性 RepId。";
+CATFbdImportCAAMessages.CAASupport.ChildNodeAttributeNewAttr="屬性節點未定義其 NewAttr。";
+CATFbdImportCAAMessages.CAASupport.ChildNodeAttributeOldAttr="屬性節點未定義其 OldAttr。";
+CATFbdImportCAAMessages.CAASupport.ChildNodeImport="導入子節點時出錯。";
+CATFbdImportCAAMessages.CAASupport.ChildNodeAppend="附加子節點時出錯。";
+CATFbdImportCAAMessages.CAASupport.FeatureNodeAttributeType="特征節點未包含 Type 屬性。";
+CATFbdImportCAAMessages.CAASupport.Incompatible2TimesDecl="使用其他 Mode 對容器進行了兩次聲明。";
+CATFbdImportCAAMessages.CAASupport.Incompatible2TimesDeclRepId="使用其他 TargetRep 或其他 RepId 屬性對容器進行了兩次聲明。";
+CATFbdImportCAAMessages.CAASupport.Incompatible2TimesDeclAttr="使用其他新屬性對此特征的舊屬性進行了兩次聲明。";
+CATFbdImportCAAMessages.CAASupport.NotSupportedDocument="此類文檔不受支持。";
+CATFbdImportCAAMessages.CAASupport.NotSupportedRepType="此類展示參考不受支持。";
+CATFbdImportCAAMessages.CAASupport.NotSupportedProductMode="CATProduct 文檔不支持此模式。";
+CATFbdImportCAAMessages.CAASupport.NotSupportedPartMode="CATPart 或 CATDrawing 文檔不支持此模式。";
+CATFbdImportCAAMessages.CAASupport.AlreadyDefineImpl="此容器已包含一個執行。";
+CATFbdImportCAAMessages.CAASupport.ContentXML="用于 CAA 支持的 XML 文件的內容中存在錯誤";
+CATFbdImportCAAMessages.CAASupport.Error="用于 CAA 支持的 XML 文件的分析中存在錯誤。";
+CATFbdImportCAAMessages.CAASupport.NotSupported="由于遠離導入了 Ex Situ 的文檔，正在導入 CAA 容器。";
+CATFbdImportCAAMessages.CAASupport.XMLChanges="CAA XML 文件內容在會話期間發生更改。";
+CATFbdImportCAAMessages.CAASupport.ActivationChanges="CAA 支持在會話期間處于啟用或禁用狀態。";
+CATFbdImportCAAMessages.CAASupport.RestartSession="重新啟動會話以使 CAA 支持更改生效。";
+
+CATFbdImportCAAMessages.CAAImpl.SourceContainer="CAA 容器";
+CATFbdImportCAAMessages.CAAImpl.IsMigrableDefault="無法遷移 CAA 容器 /p1。";
+CATFbdImportCAAMessages.CAAImpl.DeclarePLMEntitiesDefault="CAA 容器 /p1 無法聲明 PLM 實體。";
+CATFbdImportCAAMessages.CAAImpl.MigrateEntitiesDefault="CAA 容器 /p1 無法遷移 PLM 實體。";
+CATFbdImportCAAMessages.CAAImpl.MigrateLinksDefault="CAA 容器 /p1 無法遷移鏈接。";
+CATFbdImportCAAMessages.CAAImpl.NotSupported="此導入不受支持。";
+CATFbdImportCAAMessages.CAAImpl.MigrateLinks="更新鏈接時出錯。";
+CATFbdImportCAAMessages.CAAImpl.RemoveMigrateEntities="移除容器時出錯。";
+
+CATFbdImportCAAMessages.CAACheck.SourceContainer="CAA 容器檢查失敗";
+CATFbdImportCAAMessages.CAACheck.AggrInterContKO="容器具有聚集無需遷移到同一 Rep Ref 中的其他特征的特征。";
+CATFbdImportCAAMessages.CAACheck.ExtnInterContKO="容器具有擴展無需遷移到同一 Rep Ref 中的其他特征的特征。";
+CATFbdImportCAAMessages.CAACheck.MechFeatIn3DShapeKO="容器具有“力學”特征，并且無需遷移到 3DShape。";
+CATFbdImportCAAMessages.CAACheck.WarningContainer="CAA 容器檢查警告";
+CATFbdImportCAAMessages.CAACheck.ParentRemoveWarning="將不會遷移此特征，因為已移除其父特征（聚集/基本特征）。";
+CATFbdImportCAAMessages.CAACheck.ChkLinkInterRepTkSpec="特征正在通過 tk_specobject 鏈接指向不屬于同一 Rep Ref 的其他特征。";
+CATFbdImportCAAMessages.CAACheck.ElementAlreadyExists="在同一文檔中兩次發現元素。";
+

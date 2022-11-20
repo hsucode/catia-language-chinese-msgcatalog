@@ -1,0 +1,121 @@
+// 3951 校正官方漢化--------------------------------------------------
+// 3951 校正官方漢化 Electrical Logical Editor - Import Xml system command 
+// 3951 校正官方漢化--------------------------------------------------
+
+
+// 3951 校正官方漢化 Command states
+CATELEditorIxfImportCmd.RepositoryValidationState.Message="檢查設置...";
+CATELEditorIxfImportCmd.SystemSelectionState.Message="選擇要導入的系統";
+CATELEditorIxfImportCmd.SystemImportState.Message="選擇要在當前系統上執行的操作";
+
+CATELEditorIxfImportCmd.UndoTitle="導入電氣系統";
+CATELEditorIxfImportCmd.RedoTitle="導入電氣系統";
+
+// 3951 校正官方漢化 Selection panel
+SelectionWindow.Title="導入 xml 文件";
+SelectionWindow.FileDescription="Xml 文件 (*.xml)";
+
+// 3951 校正官方漢化 Content panel
+ContentWindow.Title="導入 xml 系統";
+ContentWindow.TreeFrame.Title="系統內容";
+
+ContentWindow.ButtonsFrame.FilterTitle="顯示對象";
+ContentWindow.ButtonsFrame.NewFilter.Title="已創建";
+ContentWindow.ButtonsFrame.DeletedFilter.Title="已刪除";
+ContentWindow.ButtonsFrame.ModifiedFilter.Title="已修改";
+ContentWindow.ButtonsFrame.UnchangedFilter.Title="未更改";
+
+ContentWindow.ButtonsFrame.ApplyTitle="應用更改：";
+ContentWindow.ButtonsFrame.YesButton.Title="導入當前系統";
+ContentWindow.ButtonsFrame.YesAllButton.Title="導入所有剩余系統";
+ContentWindow.ButtonsFrame.NoButton.Title="跳過當前系統";
+ContentWindow.ButtonsFrame.NoAllButton.Title="跳過所有剩余系統";
+
+ContentWindow.HelpFrame.HelpTitleLabel.Title="對象的操作：";
+ContentWindow.HelpFrame.HelpLabel1.Title="已創建";
+ContentWindow.HelpFrame.HelpLabel2.Title="已刪除";
+ContentWindow.HelpFrame.HelpLabel3.Title="已修改";
+ContentWindow.HelpFrame.HelpLabel4.Title="未更改";
+
+// 3951 校正官方漢化 2D tree
+EquipmentsNode.Title="設備";
+ConnectorsNode.Title="連接器";
+HarnessesNode.Title="線束";
+NetsNode.Title="網";
+NetGroupsNode.Title="網組";
+WiresNode.Title="線";
+WireGroupsNode.Title="電纜";
+
+ObjectName.Unset.Message="-";
+
+SystemStatus.New.Message="新建";
+SystemStatus.Modified.Message="已修改";
+SystemStatus.Deleted.Message="已移除";
+SystemStatus.Unchanged.Message="未更改";
+InstanceStatus.New.Message="新建";
+InstanceStatus.Modified.Message="已修改";
+InstanceStatus.Deleted.Message="已移除";
+InstanceStatus.Unchanged.Message="未更改";
+PortStatus.New.Message="新建";
+PortStatus.Modified.Message="已修改";
+PortStatus.Deleted.Message="已移除";
+PortStatus.Unchanged.Message="未更改";
+
+ReferenceName.Message="參考";
+
+ReferenceStatus.New.Message="新建參考";
+ReferenceStatus.Modified.Message="已修改的參考";
+ReferenceStatus.Unchanged.Message="未更改的參考";
+
+// 3951 校正官方漢化 Warning window
+WarningWindow.Title="正在導入系統修改";
+WarningWindow.IntroFrame.IntroTitleLabel.Title="已解決下列沖突：";
+WarningWindow.ListFrame.WarningList.Column1="系統";
+WarningWindow.ListFrame.WarningList.Column2="描述";
+WarningWindow.ListFrame.WarningList.Column3="對象";
+WarningWindow.ListFrame.WarningList.Column4="工作指令";
+
+// 3951 校正官方漢化 Error window
+ErrorWindow.Title="導入命令錯誤";
+EditabilityErrorWindow.Title="可編輯性通知錯誤";
+
+// 3951 校正官方漢化 Errors and warnings aliases
+ErrorGeneral.Message="Xml 導入失敗。上次處理的系統可能未充分導入。";
+ErrorRepository.Message="未設置默認 xml 檔案庫。使用“工具\選項”菜單來設置其目錄。";
+ErrorPath.Message="找不到文件";
+ErrorFile.Message="無效文件名";
+ErrorParsing.Message="Xml 文件解析失敗。文件可能無效。";
+
+WarningNoObjectInFile.Message="當前文件不具有 xml 對象";
+WarningElectricalInstanceNotInFile.Message="在 xml 文件中找不到此實例";
+WarningComparaisonProblem.Message="此參考具有其他不同類型的電氣參考使用的 partnumber 屬性";
+WarningNoPartNumber.Message="此參考在 xml 文件中不具有 partnumber 屬性值";
+WarningNoPortName.Message="電氣端口不具有名稱屬性值";
+WarningPortDisciplineDifferent.Message="電氣端口與會話中的端口具有不同的電氣專業";
+WarningSeveralPortsHaveSameNameInLevel.Message="電氣端口的名稱在同一級別中不是唯一";
+WarningUnProperMatingConnectorType.Message="設備類型不能代表接合連接器";
+WarningUnProperConnectionIds.Message="接合連接器在文件中具有不同的標識符值";
+WarningMissingIds.Message="接合連接器不具有端點值";
+WarningDeviceNotFound.Message="在 xml 文件中找不到設備";
+WarningComparaisonProblemLogical.Message="參考中包含邏輯參考使用的 partnumber 屬性";
+WarningDiferentAttribute.Message="檢測到此 xml 對象與文件中同系對象的屬性值存在差異";
+WarningSystemShouldBeLogicalRef.Message="您的現有系統應該是純邏輯參考或電氣線束";
+WarningEditability.Message="一個或多個對象無法編輯";
+
+ActionNewRefCreated.Message="已創建新的電氣參考";
+ActionPortNameChanged.Message="已更改第二個端口的名稱";
+ActionFirstAttrUsed.Message="已保留第一個對象的屬性";
+ActionNewPartNumber.Message="已生成新的參考名稱";
+ActionNewPortName.Message="已生成新的名稱屬性";
+ActionNoAction.Message="無工作指令";
+ActionNoConnection.Message="無法建立連接";
+ActionNoConnectionWith.Message="無法建立連接";
+ActionFirstAttribute.Message="使用此 ID 值檢查下列 xml 對象";
+ActionNewSystemName.Message="已生成新的系統名稱 ";
+ActionNoImport.Message="您無法導入文件數據";
+
+// 3951 校正官方漢化 Result window
+ResultWindow.Title="導入電氣系統結果";
+ResultWindow.Message1="下列系統已導入編輯器：";
+ResultWindow.Message2="下列系統已導入編輯器：";
+ResultWindow.Message3="由于可編輯性下列系統無法導入編輯器：";

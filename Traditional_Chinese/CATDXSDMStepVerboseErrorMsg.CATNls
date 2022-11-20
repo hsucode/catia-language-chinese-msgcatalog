@@ -1,0 +1,159 @@
+// 3951 校正官方漢化 ==============================================================================================
+// 3951 校正官方漢化 ErrorMessages STEP
+// 3951 校正官方漢化 
+// 3951 校正官方漢化 12/13/2002: AIY: Creation
+// 3951 校正官方漢化 ==============================================================================================
+
+ErrorMsg.Header="+++ 詳圖：";
+
+ErrorMsg.InstanceNo="\n 實例數：\t";
+
+ErrorMsg.EntityName="\n 實體名稱：\t";
+
+ErrorMsg.End="\n------\n";
+
+
+
+ErrorMsg.OPEN_FILE_MSG.Diagnostic="\n 診斷：\t 無法打開 STEP21 文件";
+
+ErrorMsg.INVALID_SCHEMA_MSG.Diagnostic="\n 診斷：\t 模型模式和 STEP21 文件模式：名稱不匹配";
+
+ErrorMsg.INVALID_SCHEMA_VERSION_MSG.Diagnostic="\n 診斷：\t 模型模式和 STEP 文件模式：版本不匹配";
+
+ErrorMsg.INVALID_ENTITY_MSG.Diagnostic="\n 診斷：\t 未在當前模式中定義實體";
+ErrorMsg.INVALID_ENTITY_MSG.Name="\n 實體名稱：\t";
+
+
+ErrorMsg.INVALID_DIESELE_MSG.Diagnostic="\n 診斷：\t 無效實例數";
+
+ErrorMsg.UNKNOWN_AGGR_MSG.Diagnostic="\n 診斷：\t 找到未知類型的聚集";
+ErrorMsg.UNKNOWN_AGGR_MSG.Message="\n 無法創建聚集：\t";
+
+ErrorMsg.NOT_IMPLEMENTED_MSG.Diagnostic="\n 診斷：\t 尚未執行";
+
+ErrorMsg.UNKNOWN_TYPE_MSG.Diagnostic="\n 診斷：\t 未知的 SDAI 類型";
+
+ErrorMsg.UNKNOWN_ATTR_MSG.Diagnostic="\n 診斷：\t 當前實例中存在未知屬性";
+
+ErrorMsg.INVALID_FORMAT.Diagnostic="\n 診斷：\t 無效的 STEP21 文件格式";
+
+ErrorMsg.UNDEF_ENTITY_REF.Diagnostic="\n 診斷：\t 參考的實體不存在 \t";
+ErrorMsg.UNDEF_ENTITY_REF.ElemNo="\n 參考元素數：\t";
+ErrorMsg.UNDEF_ENTITY_REF.Message="\n 此實例將被忽略 \t";
+
+ErrorMsg.EXTD_SCHEMA_MSG.Name="\n 延伸模式：\t";
+ErrorMsg.EXTD_SCHEMA_MSG.Warning="\n 警告!! “CCD_CLA_GVP_AST_ASD”將被用作文件模式 \n";
+
+ErrorMsg.RequiredArg="\n 所需的屬性數：\t";
+ErrorMsg.GivenArg="\n 給定的屬性數：\t";
+ErrorMsg.WRONG_NUM_ARG.Name="\n 實例定義中的屬性數錯誤。將創建不完整的實例 \n";
+
+ErrorMsg.AttributeIndex="\n 屬性列表中的屬性位置：\t";
+ErrorMsg.AttributeName="\n 屬性名稱：\t";
+ErrorMsg.RequiredArgType="\n 所需的屬性類型：\t";
+ErrorMsg.GivenArgType="\n 給定的屬性類型：\t";
+ErrorMsg.INVALID_ARG_TYP.Name="\n 屬性類型錯誤。\n";
+
+
+// 3951 校正官方漢化--------------------------------------------------------------------------------------
+// 3951 校正官方漢化				SDAI ERROR MESSAGES....
+// 3951 校正官方漢化--------------------------------------------------------------------------------------
+ErrorMsg.sdaiESESSINIT.Msg="\n 診斷：\t 會話已打開 \t";
+
+ErrorMsg.sdaiENOSDAI.Msg="\n 診斷：\tSDAI 不可用 \t";
+
+ErrorMsg.sdaiENOSESS.Msg="\n 診斷：\t 未啟動會話 \t";
+
+ErrorMsg.sdaiENOREP.Msg="\n 診斷：\t 檔案庫不存在 \t";
+
+ErrorMsg.sdaiENOREPACC.Msg="\n 診斷：\t 檔案庫訪問被拒絕 \t";
+
+ErrorMsg.sdaiEREPOPEN.Msg="\n 診斷：\t檔案庫已打開 \t";
+
+ErrorMsg.sdaiEREPCLOSE.Msg="\n 診斷：\t 未打開檔案庫 \t";
+
+ErrorMsg.sdaiEREPACERR.Msg="\n 診斷：\t 檔案庫訪問模式沖突 \t";
+
+ErrorMsg.sdaiEREPNOTRO.Msg="\n 診斷：\t 檔案庫不處于只讀訪問模式 \t";
+
+ErrorMsg.sdaiEREPNOTRW.Msg="\n 診斷：\t 檔案庫不處于讀/寫訪問模式 \t";
+
+ErrorMsg.sdaiEUNREPACC.Msg="\n 診斷：\t 檔案庫處于未定義的訪問模式 \t";
+
+ErrorMsg.sdaiENOMODEL.Msg="\n 診斷：\t 模型不存在 \t";
+
+ErrorMsg.sdaiENOMODACT.Msg="\n 診斷：\t 模型不處于活動狀態 \t";
+
+ErrorMsg.sdaiEMODACCERR.Msg="\n 診斷：\t 模型訪問模式沖突 \t";
+
+ErrorMsg.sdaiEMODNOTRO.Msg="\n 診斷：\t 模型不處于只讀訪問模式 \t";
+
+ErrorMsg.sdaiEMODNOTRW.Msg="\n 診斷：\t 模型不處于讀/寫訪問模式 \t";
+
+ErrorMsg.sdaiEUNMODACC.Msg="\n 診斷：\t 模型處于未定義的訪問模式 \t";
+
+ErrorMsg.sdaiEDUPMODNM.Msg="\n 診斷：\t 模型名稱不唯一 \t";
+
+ErrorMsg.sdaiEUNKEDEF.Msg="\n 診斷：\t 模型中的實體定義未知 \t";
+
+ErrorMsg.sdaiEUNKTYPE.Msg="\n 診斷：\t 類型未知 \t";
+
+ErrorMsg.sdaiEBADTYPE.Msg="\n 診斷：\t 類型的模式不同 \t";
+
+ErrorMsg.sdaiENORULE.Msg="\n 診斷：\t 規則不存在 \t";
+
+ErrorMsg.sdaiENOOPER.Msg="\n 診斷：\t 未實現操作 \t";
+
+ErrorMsg.sdaiENOOBJ.Msg="\n 診斷：\t 對象不存在 \t";
+
+ErrorMsg.sdaiEUNKATTR.Msg="\n 診斷：\t 屬性名稱未知 \t";
+
+ErrorMsg.sdaiENODERIVE.Msg="\n 診斷：\t 沒有派生屬性的訪問權限 \t";
+
+ErrorMsg.sdaiEVALTYPER.Msg="\n 診斷：\t 值的類型錯誤 \t";
+
+ErrorMsg.sdaiEVALNOASN.Msg="\n 診斷：\t 未指定值 \t";
+
+ErrorMsg.sdaiENOAGGR.Msg="\n 診斷：\t 聚集不存在 \t";
+
+ErrorMsg.sdaiENOITER.Msg="\n 診斷：\t 枚舉器不存在 \t";
+
+ErrorMsg.sdaiEEMPTAGGR.Msg="\n 診斷：\t 聚集為空 \t";
+
+ErrorMsg.sdaiENOCURMBR.Msg="\n 診斷：\t 未定義當前成員 \t";
+
+ErrorMsg.sdaiENOOPAGGR.Msg="\n 診斷：\t 聚集類型的操作無效 \t";
+
+ErrorMsg.sdaiEDUPVALUE.Msg="\n 診斷：\t 聚集中已有值 \t";
+
+ErrorMsg.sdaiEUNDEFRES.Msg="\n 診斷：\t 返回結果未定義 \t";
+
+ErrorMsg.sdaiEINDEXBND.Msg="\n 診斷：\t 索引超出范圍 \t";
+
+ErrorMsg.sdaiENOTS.Msg="\n 診斷：\t 事務不存在 \t";
+
+ErrorMsg.sdaiESYSERROR.Msg="\n 診斷：\t 底層系統錯誤 \t";
+
+ErrorMsg.sdaiEITERATOR.Msg="\n 診斷：\t 不一致的運算符： 原因舉例：枚舉器中的對象已刪除（這也可發生在單一上下文中!）。\t";
+
+ErrorMsg.sdaiECONTEXT.Msg="\n 診斷：\t 執行了一個超出上下文的錯誤，意思是當多個上下文作用于同一模型時，您執行了不受支持的操作。\t";
+
+ErrorMsg.sdaiEISOLATION.Msg="\n 診斷：\t 嘗試執行違反組內隔離的模型修改。\t";
+
+ErrorMsg.sdaiENOCOW.Msg="\n 診斷：\t";
+
+ErrorMsg.sdaiESTORE.Msg="\n 診斷：\t 存儲或恢復上下文時發生錯誤 \t";
+
+ErrorMsg.sdaiLOWMEM.Msg="\n 診斷：\t 系統中沒有足夠的可用內存以執行此事務 \t";
+
+ErrorMsg.sdaiDEFAULT.Msg="\n 診斷：\t 出現了一些 SDAI 錯誤。";
+
+
+
+
+
+
+
+
+
+

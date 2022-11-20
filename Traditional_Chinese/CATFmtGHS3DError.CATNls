@@ -1,0 +1,60 @@
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Error codes used by the GHS3D interface
+// 3951 校正官方漢化
+
+ERR_0001.Request="內存不足。";
+ERR_0001.Diagnostic="";
+ERR_0001.Advice="";
+
+ERR_0002.Request="大小進度無效。";
+ERR_0002.Diagnostic="大小進度小于 1.0";
+ERR_0002.Advice="選擇大于或等于 1.0 的大小進度";
+
+ERR_0003.Request="2D 支持面無效。";
+ERR_0003.Diagnostic="曲面網格缺失。";
+ERR_0003.Advice="創建曲面網格。";
+
+ERR_0004.Request="曲面網格無效。";
+ERR_0004.Diagnostic="它包含不受支持的元素形狀。";
+ERR_0004.Advice="將這些元素細分為支持的形狀。";
+
+ERR_0005.Request="曲面網格無效。";
+ERR_0005.Diagnostic="檢查曲面網格。";
+ERR_0005.Advice="";
+
+ERR_0006.Request="曲面網格錯誤。";
+ERR_0006.Diagnostic="已復制部分元素。";
+ERR_0006.Advice="檢查曲面網格。";
+
+ERR_0007.Request="四面體網格化失敗。";
+ERR_0007.Diagnostic="曲面網格可能非常差。";
+ERR_0007.Advice="檢查曲面網格。";
+
+ERR_0008.Request="四面體網格化失敗。";
+ERR_0008.Diagnostic="部分曲面節點被視為重合。";
+ERR_0008.Advice="檢查曲面網格。";
+
+ERR_0009.Request="四面體網格化失敗。";
+ERR_0009.Diagnostic="使用四面體填充時，無法準確匹配曲面網格。";
+ERR_0009.Advice="嘗試提高曲面網格質量或指定更小的元素大小。";
+
+ERR_0010.Request="曲面網格錯誤。";
+ERR_0010.Diagnostic="它包含至少一個孔。";
+ERR_0010.Advice="檢查曲面網格。";
+
+ERR_0011.Request="曲面網格包含相交元素。";
+ERR_0011.Diagnostic="檢查曲面網格是否相交以及是否有不良偏斜度。";
+ERR_0011.Advice="或許可以使用“干涉”功能\n（通過網格檢查器工具）查找相交。";
+
+ERR_0012.Request="生成的包絡體網格包括折疊元素、反轉元素或非常差的元素。";
+ERR_0012.Diagnostic="檢查包絡體網格的質量。";
+ERR_0012.Advice="";
+
+ERR_0013.Request="體積邊界上的有些網格邊緣已拉直 \n，以提高四面體的質量。\n";
+ERR_0013.Diagnostic="每條拉直邊的中間點重復。\n 因此，不與給定曲面網格共享 /P01 節點。\n";
+ERR_0013.Advice="使用無素大小較小的 \n 曲面網格可以降低離散化不準確性。";
+
+
+ERR_9999.Request="意外網格化故障。";
+ERR_9999.Diagnostic="缺陷癥狀。";
+ERR_9999.Advice="請撥打熱線。";

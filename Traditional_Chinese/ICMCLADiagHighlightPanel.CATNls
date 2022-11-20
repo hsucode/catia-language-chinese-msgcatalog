@@ -1,0 +1,211 @@
+DialogBoxTitle="突出顯示分析";
+
+
+//Selection
+
+DisplaySetSelection="顯示集： ";
+
+ElementSelection="元素： ";
+
+ComboSelectionType.ShortHelp="選擇類型";
+ComboSelectionType.LongHelp="- 元素 -
+  為單個元素選擇顯示選擇字段。
+  分析將應用到選定的元素
+- 顯示集 -
+  顯示包含所有定義的顯示集的組合框。
+  當選擇一個顯示集，此集中儲存的所有元素均將作為分析輸入。
+  如果選定的顯示集被修改，則分析也將自動更新。";
+
+ComboDisplaySets.LongHelp="所有定義的顯示集。
+當選擇一個顯示集，此集中儲存的所有元素均將作為分析輸入。
+如果選定的顯示集被修改，則分析也將自動更新。";
+ComboDisplaySets.ShortHelp="所有定義的顯示集。";
+
+//old  
+LabelElements.LongHelp="將在選定的元素上顯示突出顯示分析。
+可使用上下文菜單。
+可使用選擇包。";
+LabelElements.ShortHelp="要進行突出顯示分析的元素";
+LabelElements.Title="元素： ";
+
+
+//Frame Type
+
+FrameType.LongHelp="- 顏色 -
+  突出顯示分析結果用不同的顏色顯示。
+  結果不會更改。
+- 投影 -
+  光束和圓柱面是兩種不同的分析方法。
+  如果本地網格設為關閉，則投影將禁用。
+  投影被設為光束。";
+FrameType.Title="類型";
+
+LabelColor.LongHelp="顯示顏色更改。
+結果與選擇無關。";
+LabelColor.ShortHelp="顯示顏色";
+LabelColor.Title="顏色： ";
+
+RadioButtonHighlight.LongHelp="分析結果用彩色的曲線顯示。
+顏色由用戶定義。";
+RadioButtonHighlight.ShortHelp="突出顯示";
+
+RadioButtonColored.LongHelp="分析結果用彩色的、突出顯示的曲線顯示。顏色可以更改。";
+
+RadioButtonColored.ShortHelp="彩色";
+RadioButtonBlackAndWhite.LongHelp="分析結果用黑白的、突出顯示的曲線顯示。";
+RadioButtonBlackAndWhite.ShortHelp="黑白";
+
+LabelProjection.Title="投影： ";
+LabelProjection.LongHelp="有兩種類型的光源可以創建突出顯示的曲線。
+僅當本地網格設為開啟時，才可使用圓柱面。";
+LabelProjection.ShortHelp="光源類型";
+
+RadioButtonBeam.LongHelp="用一組圓形的同心光源創建突出顯示的曲線。
+可通過沿兩個圓形移動此光源或通過方向參數來更改方向。";
+RadioButtonBeam.ShortHelp="光束";
+
+RadioButtonCylinder.LongHelp="用一組線性光源創建突出顯示的曲線。這些光源被組合到圓柱面上。此圓柱面包含所有選定的元素。沒有方向。";
+RadioButtonCylinder.ShortHelp="圓柱面";
+
+
+//Options
+
+FrameOptions.Title="選項";
+FrameOptions.LongHelp="選項：抗鋸齒";
+
+CheckButtonAntiAlias.LongHelp="抗鋸齒是一種能夠最小化變形失真（被稱作圖形失真）的技術。";
+CheckButtonAntiAlias.ShortHelp="抗鋸齒";
+
+
+//Attached
+
+FrameAttached.Title="已附加";
+FrameAttached.LongHelp="投影光束可附加到視圖或模型。
+當您操縱視圖時，附加到視圖的光束不會更改其位置或方向。
+附加到模型的光束會隨視圖操縱而變化。";
+
+RadioButtonView.Title="視圖";
+RadioButtonView.LongHelp="當您更改視圖時，附加到視圖的光束不會更改其位置或方向。";
+RadioButtonView.ShortHelp="光束已附加到視圖。";
+
+RadioButtonModel.Title="模型";
+RadioButtonModel.LongHelp="當您更改視圖，附加到模型的光束不會更改其到元素的位置或方向。";
+RadioButtonModel.ShortHelp="光束已附加到模型。";
+
+
+//Frame Tesselation
+
+FrameTesselation.Title="網格";
+FrameTesselation.LongHelp="網格定義精確度";
+
+CheckButtonLocalMode.LongHelp="開啟：
+可由用戶設置網格。
+關閉：
+通過工具 > 選項獲取網格。";
+CheckButtonLocalMode.ShortHelp="切換網格";
+
+SpinnerTesselation.LongHelp="憑借網格參數，您可以影響著色結果的精確度。
+網格參數定義從曲面到三角形的最大距離。
+較小值 = 較高精確度。
+較大值 = 較低精確度。";
+SpinnerTesselation.ShortHelp="網格參數";
+
+LabelTrianglesCount1.Title="三角形數量：";
+LabelTrianglesCount2.Title="-";
+
+
+//Frame Color
+
+FrameColor.LongHelp="可由用戶定義著色和曲線的顏色。
+循環影響突出顯示的曲線的數量。
+僅當類型為彩色且突出顯示時，投光才可用。";
+FrameColor.Title="顏色";
+
+CheckButtonDisplayShaded.LongHelp="突出顯示的曲線以著色樣式顯示。";
+CheckButtonDisplayShaded.ShortHelp="著色樣式";
+CheckButtonDisplayShaded.Title="著色";
+
+ColorButtonShaded.LongHelp="僅當類型為彩色且突出顯示時才可用。
+可在此處選擇著色樣式的顏色。";
+
+CheckButtonDisplayCurves.LongHelp="突出顯示分析顯示為曲線。";
+CheckButtonDisplayCurves.ShortHelp="顯示曲線";
+CheckButtonDisplayCurves.Title="曲線";
+
+ColorButtonCurves.LongHelp="可在此處選擇突出顯示的曲線的顏色。";
+
+LabelCycles.LongHelp="循環影響突出顯示的曲線的數量。";
+LabelCycles.ShortHelp="曲線數";
+LabelCycles.Title="循環：";
+
+SliderCycles.LongHelp="循環影響突出顯示的曲線的數量。";
+SliderCycles.ShortHelp="曲線數";
+
+SpinnerCycles.LongHelp="循環影響突出顯示的曲線的數量";
+SpinnerCycles.ShortHelp="曲線數";
+
+LabelShine.LongHelp="投光影響突出顯示的曲線的寬度。";
+LabelShine.ShortHelp="寬度";
+LabelShine.Title="投光：";
+
+SliderShine.LongHelp="投光影響突出顯示的曲線的寬度。";
+SliderShine.ShortHelp="寬度";
+
+SpinnerShine.LongHelp="投光影響突出顯示的曲線的寬度。";
+SpinnerShine.ShortHelp="寬度";
+
+
+//Symmetry Plane
+
+FrameSymmetry.Title="對稱平面";
+FrameSymmetry.LongHelp="鏡像選定的幾何圖形。";
+
+
+//Direction
+
+FrameDirection.LongHelp="可通過以下方式定義投影光束的方向
+- 軸按鈕 X、Y、Z
+- 編輯方向窗口。
+可反轉定義的方向。 ";
+FrameDirection.Title="方向";
+
+PushButtonDirectionX.LongHelp="投影光束的方向更改為視圖的 X 方向或模型坐標系的 X 方向。";
+PushButtonDirectionX.ShortHelp="投影光束 X 方向";
+PushButtonDirectionX.Title="X";
+
+PushButtonDirectionY.LongHelp="投影光束的方向更改為視圖的 Y 方向或模型坐標系的 Y 方向。";
+PushButtonDirectionY.ShortHelp="投影光束 Y 方向";
+PushButtonDirectionY.Title="Y";
+
+PushButtonDirectionZ.LongHelp="投影光束的方向更改為視圖的 Z 方向或模型坐標系的 Z 方向。";
+PushButtonDirectionZ.ShortHelp="投影光束 Z 方向";
+PushButtonDirectionZ.Title="Z";
+
+PushButtonEditDirection.LongHelp="在編輯方向窗口可通過方向向量部件定義方向。";
+PushButtonEditDirection.ShortHelp="編輯方向窗口";
+PushButtonEditDirection.Title="編輯";
+
+PushButtonDirectionInvert.LongHelp="將還原投影光束的方向";
+PushButtonDirectionInvert.ShortHelp="還原方向";
+
+CheckButtonTransparency.Title="透明度";
+CheckButtonTransparency.ShortHelp="啟用透明度突出顯示。";
+
+PushButtonUpdateMaterial.Title="更新材料";
+PushButtonUpdateMaterial.ShortHelp="更新材料定義。";
+PushButtonUpdateMaterial.LongHelp="為透明度突出顯示更新材料（僅當在本地模式下且啟用透明度時需要）。";
+
+//----------------------------------------------------------------------------------------------------------------------
+CheckButtonGSMTool.LongHelp="在結構樹中選擇一個幾何圖形集。
+如果您選擇一個元素，則同一幾何圖形集內的所有元素均被選定。";
+CheckButtonGSMTool.ShortHelp="選擇幾何圖形集";
+
+LabelEmpty.Title=" ";
+
+
+
+
+//??????????????????????????????????????????????????????????
+//CheckButtonLocalMode.LongHelp                  = "Selected elements are tesselated with the specified tolerance";
+//CheckButtonLocalMode.ShortHelp                 = "Local Tesselation";
+

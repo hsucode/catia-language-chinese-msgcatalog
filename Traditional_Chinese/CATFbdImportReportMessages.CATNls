@@ -1,0 +1,345 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2005
+
+// 3951 校正官方漢化---------------------------------
+// 3951 校正官方漢化  Messages for CATFbdImportReport
+// 3951 校正官方漢化---------------------------------
+CATFbdImportReportMessage.Source.MainReport="基于文件的設計導入";
+CATFbdImportReportMessage.Source.MainReportDBDI="展示遷移";
+CATFbdImportReportMessage.Source.MainReportFBDISplit="基于文件的設計導入分割";
+CATFbdImportReportMessage.Source.MainReportDBDIScope="遷移范圍構造";
+
+CATFbdImportReportMessage.Error.BrokenLink="具有未解析的鏈接：";
+CATFbdImportReportMessage.Error.BrokenLink.detail="此文檔來自環境： ";
+CATFbdImportReportMessage.Error.V6MasterModified="無法導入此文檔。";
+CATFbdImportReportMessage.Error.V6MasterModified.detail1="將其記錄為 V6 Master。";
+CATFbdImportReportMessage.Error.V6MasterModified.detail2="它來自 CATIA V6，并在 CATIA V5 中進行了修改。";
+CATFbdImportReportMessage.Error.HttpLinkNotSupported="不支持從 http/https 鏈接中導入文檔。";
+CATFbdImportReportMessage.Error.InvalidChar="在文檔名稱中找到無效字符";
+
+CATFbdImportReportMessage.Error.NoFile="此輸入文件不存在";
+CATFbdImportReportMessage.Error.LinkAnalysis="已中止外部鏈接分析。";
+CATFbdImportReportMessage.Error.ExtNotMigrableDlg=" 無法遷移文檔。";
+CATFbdImportReportMessage.Error.RecentV5Doc="無法讀取文檔，因為它是在較新版本的 CATIA V5 中創建的。";
+CATFbdImportReportMessage.Error.ContainerNotImpl="此容器不包含任何執行，因此拒絕遷移。";
+CATFbdImportReportMessage.Error.DocNotImpl="無法導入此文檔，因為其類型不受支持。";
+CATFbdImportReportMessage.Warning.LocatorFileActivation="激活文件的搜索順序時出現問題。";
+CATFbdImportReportMessage.Error.ContainerNoImplError="此容器未在 CAA XML 文件中聲明，因此導入被拒絕。請填寫 CAA XML 聲明文件，或通過激活“移除未在 CAA XML 文件中聲明的 CAA 容器”選項來忽略此容器。";
+CATFbdImportReportMessage.Error.ContainerNoImplWarning="由于 CAA XML 聲明文件中尚未找到導入此容器的方法，此容器已被移除。";
+
+CATFbdImportReportMessage.AffectPLMId.ErrorSource="影響 PLMId";
+CATFbdImportReportMessage.AffectPLMId.ErrorMessage="PLMId 正在經受兩次影響。";
+
+CATFbdImportReportMessage.GetAuthoringType.ErrorSource="無法使用當前環境導入建模器中的數據： ";
+CATFbdImportReportMessage.GetAuthoringType.ErrorMessage="選擇其他環境，然后重試導入。";
+
+CATFbdImportReportMessage.IsMigrable.ErrorMessage="此文檔拒絕遷移。";
+CATFbdImportReportMessage.IsMigrable.OKMessage="此文檔接受遷移。";
+CATFbdImportReportMessage.IsMigrable.OKMessage.LightMode="此文檔接受簡單模式下的遷移。";
+CATFbdImportReportMessage.IsMigrable.OutInfra="將不會遷移此文檔，因為其已超出基礎結構范圍。";
+CATFbdImportReportMessage.IsMigrable.Unknown="未知遷移狀態";
+CATFbdImportReportMessage.IsMigrable.UnknownDetail="未測試此文檔，因為先前檢測到錯誤。";
+
+CATFbdImportReportMessage.DeclarePLMId.ErrorMessage="此文檔無法聲明 PLM 實體。";
+CATFbdImportReportMessage.DeclarePLMId.OKMessage="此文檔已聲明 PLM 實體。";
+CATFbdImportReportMessage.MigrateEntities.ErrorMessage="此文檔無法遷移實體。";
+CATFbdImportReportMessage.MigrateEntities.OKMessage="此文檔已遷移實體。";
+CATFbdImportReportMessage.MigrateLinks.ErrorMessage="此文檔無法遷移鏈接。";
+CATFbdImportReportMessage.MigrateLinks.OKMessage="此文檔已遷移鏈接。";
+CATFbdImportReportMessage.NonCATIADocMigration.OKMessage="此文檔已正確遷移。";
+CATFbdImportReportMessage.NonCATIADocMigration.KOMessage="此文檔無法遷移內部鏈接。";
+CATFbdImportReportMessage.Migrate.ErrorMessage="此文檔無法遷移。";
+
+CATFbdImportReportMessage.UpdateCtxLinks="重定向上下文鏈接期間出錯。";
+CATFbdImportReportMessage.RemoveContainer="刪除舊數據期間發生錯誤。";
+
+CATFbdImportReportMessage.Run.ErrorMessage="發生了內部錯誤。";
+CATFbdImportReportMessage.Open.WarningMessage="打開文件時產生了警告 ";
+CATFbdImportReportMessage.Open.ErrorMessage="無法打開文檔。";
+CATFbdImportReportMessage.Open.DetailUnknownExtension1="無法讀取文檔。";
+CATFbdImportReportMessage.Open.DetailUnknownExtension2="可以借助擴展過濾器將其忽略。FBDI 設置面板中提供此過濾器（要忽略的擴展）。";
+CATFbdImportReportMessage.Open.DetailKnownExtension="讀取文檔時出錯。";
+CATFbdImportReportMessage.CreateRepRef.ErrorMessage="無法為此文件創建展示參考。";
+CATFbdImportReportMessage.GetDocType.ErrorMessage="無法	檢索此文件的類型。";
+
+CATFbdImportReportMessage.Level.Source="CATIA 級別信息";
+CATFbdImportReportMessage.Level.Version="CATIA 版本為： ";
+CATFbdImportReportMessage.Level.HotFix="CATIA 緊急修復編號為： ";
+CATFbdImportReportMessage.Level.BuildDate="構建日期為： ";
+CATFbdImportReportMessage.Level.Delivery="交付編號 ";
+
+CATFbdImportReportMessage.Context.Source="上下文信息";
+
+CATFbdImportReportMessage.Context.ExecutionMode.Source="執行模式";
+CATFbdImportReportMessage.Context.ExecutionMode.Detail.UpdateMappingtables="使用映射表";
+CATFbdImportReportMessage.Context.ExecutionMode.Detail.DonotUpdateMappingtables="不要使用映射表";
+
+// 3951 校正官方漢化To remove after FBDI_InternalDS_ReplaceEvolution208 removal 
+CATFbdImportReportMessage.Context.SimilarDocumentsOptions.Source="相似文檔選項";
+// 3951 校正官方漢化End of To remove after FBDI_InternalDS_ReplaceEvolution208 removal 
+
+CATFbdImportReportMessage.Context.SimilarDocumentsOptionsTitle.Source="相似文檔選項：";
+CATFbdImportReportMessage.Context.NewerSimilarDocOption.Source="較新文件";
+CATFbdImportReportMessage.Context.SimilarDocOption.Detail.UpdateSimilarDocument="更新";
+CATFbdImportReportMessage.Context.SimilarDocOption.Detail.NoReImportSimilarDocument="無重新導入";
+CATFbdImportReportMessage.Context.SimilarDocOption.Detail.ForceImportForSimilarDocument="強制導入";
+
+CATFbdImportReportMessage.Context.IdenticalSimilarDocOption.Source="相同文件";
+
+CATFbdImportReportMessage.Context.OlderSimilarDocOption.Source="較舊文件";
+
+CATFbdImportReportMessage.Context.MainMappingEnvironment.Source="主映射上下文";
+
+CATFbdImportReportMessage.Context.MappingEnvironmentFriends.Source="主映射上下文好友";
+CATFbdImportReportMessage.Context.MappingEnvironmentFriends.Detail.MappingEnvironmentFriendsDetail="無";
+
+CATFbdImportReportMessage.Context.IsolationMode.Source="隔離模式";
+CATFbdImportReportMessage.Context.IsolationMode.Detail.UseIsolation="使用隔離";
+CATFbdImportReportMessage.Context.IsolationMode.Detail.DonotUseIsolation="不要使用隔離";
+
+CATFbdImportReportMessage.Context.LightMode.Source="簡單模式";
+CATFbdImportReportMessage.Context.LightMode.Detail.UseLight="使用簡單導入";
+CATFbdImportReportMessage.Context.LightMode.Detail.DonotUseLight="不要使用簡單導入";
+
+CATFbdImportReportMessage.Context.Versioning.Source="版本控制";
+CATFbdImportReportMessage.Context.Versioning.Detail.UpdateAsReplace="不要使用版本控制";
+CATFbdImportReportMessage.Context.Versioning.Detail.UpdateAsNewVersion="新建版本";
+CATFbdImportReportMessage.Context.Versioning.Detail.NewVersionAndPropagation="創建和傳播新版本";
+
+
+CATFbdImportReportMessage.Context.EnvtVariables.Source="已激活 FBDI 變量";
+CATFbdImportReportMessage.Context.DebugInformations.Detail="報告中已生成調試信息";
+CATFbdImportReportMessage.Context.InfraOnly.Detail="已激活“僅基礎結構”模式";
+CATFbdImportReportMessage.Context.NonImplCont.Detail="已激活針對未執行容器的特殊支持";
+CATFbdImportReportMessage.Context.CATDUADeactivated.Detail="已停用 CATDUA";
+CATFbdImportReportMessage.Context.NoProductProperties.Detail="未遷移產品屬性";
+
+CATFbdImportReportMessage.Context.CATPartMigrationMode.Source="CATPart 遷移模式";
+CATFbdImportReportMessage.Context.3DPartActive.Detail="已將 CATPart 遷移為 3DPart";
+CATFbdImportReportMessage.Context.OnceInstRep.Detail="已將 CATPart 遷移為產品和可一次性實例化的 3DShape";
+CATFbdImportReportMessage.Context.SharableRep.Detail="已將 CATPart 遷移為產品和可共享的 3DShape";
+
+CATFbdImportReportMessage.Context.AcceptMissingStartUp.Detail="啟動“接受缺失”";
+CATFbdImportReportMessage.Context.CATDUACheckforFBDI.Detail="已忽略 CATDUA 規則“/p1”";
+
+CATFbdImportReportMessage.Context.CATIAVersion.Source="CATIA 版本";
+CATFbdImportReportMessage.Context.CATIAVersion.Delivery="交付編號 ";
+
+CATFbdImportReportMessage.Context.CATIAEmergencyFixNumber.Source="CATIA 緊急修復編號";
+
+CATFbdImportReportMessage.Context.BuildDate.Source="構建日期";
+
+CATFbdImportReportMessage.Context.UsedMachine.Source="客戶端計算機";
+
+CATFbdImportReportMessage.Context.InputDataSize.Source="輸入數據大小";
+CATFbdImportReportMessage.Context.InputDataSize.Detail.Kbytes=" KB";
+
+CATFbdImportReportMessage.Context.InputDataNumber.Source="輸入數據編號";
+
+CATFbdImportReportMessage.Context.ReportName.Source="報告名稱";
+
+CATFbdImportReportMessage.Context.FbdiEngineStartTime.Source="開始時間";
+CATFbdImportReportMessage.Context.DependencyAnalysisDuration.Source="依賴性分析持續時間";
+CATFbdImportReportMessage.Context.ImportDuration.Source="導入持續時間";
+CATFbdImportReportMessage.Context.SaveDuration.Source="保存持續時間";
+CATFbdImportReportMessage.Context.FbdiEngineTotalTime.Source="總時間";
+CATFbdImportReportMessage.Context.FbdiEngineEndTime.Source="結束時間";
+
+CATFbdImportReportMessage.Context.ImportApplication.Source="導入應用程序";
+CATFbdImportReportMessage.Context.ImportApplication.Detail.Batch="批處理";
+CATFbdImportReportMessage.Context.ImportApplication.Detail.Interactif="交互命令";
+
+CATFbdImportReportMessage.Context.DesignerWorkspace.Source="設計器工作區";
+
+CATFbdImportReportMessage.DocExecutionMode.Source="執行模式";
+
+CATFbdImportReportMessage.DocExecutionMode.undefImport="未定義的導入模式";
+CATFbdImportReportMessage.DocExecutionMode.import="導入";
+CATFbdImportReportMessage.DocExecutionMode.lightImport="導入（簡單）";
+CATFbdImportReportMessage.DocExecutionMode.update="更新";
+CATFbdImportReportMessage.DocExecutionMode.lightUpdate="更新（簡單）";
+CATFbdImportReportMessage.DocExecutionMode.noImport="無導入";
+CATFbdImportReportMessage.DocExecutionMode.noImportV6Master="無導入 (V6 Master)";
+CATFbdImportReportMessage.ForceExecMode="文檔中的某些數據導致采用“無導入”模式";
+
+CATFbdImportReportMessage.NoLocator.Main="無法構建要處理的文檔的列表。";
+CATFbdImportReportMessage.NoLocator.Detail1="指向的文件中至少有一個鏈接未格式化。";
+CATFbdImportReportMessage.NoLocator.Detail2="從 Smarteam 資源庫提取文檔時，此情況可能發生。";
+CATFbdImportReportMessage.NoLocator.Detail3="在這種情況下，鏈接仍為 Smarteam 格式。";
+
+CATFbdImportReportMessage.CATfct="無法導入此類 CATfct 文件。";
+CATFbdImportReportMessage.SaveError="保存期間出錯。";
+CATFbdImportReportMessage.SaveErrorDetail="嘗試保存導入的數據時出錯。";
+CATFbdImportReportMessage.NothingToSave="沒有要保存的數據。";
+
+CATFbdImportReportMessage.LDError="鏈接 Doctor 錯誤";
+CATFbdImportReportMessage.LDWarning="鏈接 Doctor 警告";
+CATFbdImportReportMessage.SaveNotAllowed="導入了部分數據。無法執行保存。";
+
+CATFbdImportReportMessage.NotFixedError="不可修復錯誤： ";
+CATFbdImportReportMessage.ToSolveNotFixedError="清理 CATIA V5 級別的數據。";
+CATFbdImportReportMessage.OriginOfProblem="錯誤源： ";
+CATFbdImportReportMessage.DataIntegrity="數據完整性檢查";
+CATFbdImportReportMessage.CleanModel.ErrorMessage="清理 V4 模型文件時出錯。";
+CATFbdImportReportMessage.DocGloballyLoaded.ErrorMessage="全局加載文檔時出錯。";
+CATFbdImportReportMessage.FixableFBD_1="清理未知特征";
+CATFbdImportReportMessage.NotFixableFBD_1="封裝或許可證問題。";
+CATFbdImportReportMessage.PathOfFileWrongCase.Source="磁盤上文件的情況與其他文檔中指向文件的情況不對應。";
+CATFbdImportReportMessage.PathOfFileWrongCase.Detail1="文件的 FBDI 不可行： ";
+CATFbdImportReportMessage.PathOfFileWrongCase.Detail2="您可以將 V5 命令“發送至”用于此文件和指向的文檔，以恢復內聚性。";
+
+CATFbdImportReportMessage.BadMappingAtribute.RepRef="無法評估展示參考的映射屬性";
+CATFbdImportReportMessage.BadMappingAtribute.3DShape="無法評估 3DShape 的映射屬性";
+CATFbdImportReportMessage.BadMappingAtribute.TechnoRep="無法評估技術展示的映射屬性";
+CATFbdImportReportMessage.IsolateRefRefLinkOnProduct="已隔離 CATProduct 文件中某個參數的導入鏈接。";
+
+CATFbdImportReportMessage.NoMappingTableDirectory.Main="映射表目錄不存在。";
+CATFbdImportReportMessage.NoMappingTableDirectory.Detail1="/p1 目錄不存在。";
+CATFbdImportReportMessage.NoMappingTableDirectory.Detail2="進入 FBDI 設置面板，然后將映射表目錄設置為有效目錄。";
+CATFbdImportReportMessage.NoMappingTableDirectory.Detail3="然后再次啟動 FBDI 命令。";
+
+CATFbdImportReportMessage.UnavailableDoc="不可用文檔。";
+CATFbdImportReportMessage.UnavailableDocMsg="磁盤上缺少以下指向的文檔。";
+CATFbdImportReportMessage.IsolableMissingDoc="但可以通過激活“隔離鏈接”選項將其隔離。";
+CATFbdImportReportMessage.NotIsolableMissingDoc="無法隔離其鏈接。";
+
+CATFbdImportReportMessage.IsolateRefRefLinkOnProduct="已隔離 CATProduct 文件中某個參數的導入鏈接。";
+
+CATFbdImportReportMessage.Isolation="隔離鏈接";
+CATFbdImportReportMessage.IsolatedPointedDocName="已隔離指向以下文檔的鏈接：";
+CATFbdImportReportMessage.IsolatedUnreadableDoc="已隔離指向不可讀文檔的鏈接。此文檔可以保存為 VPM 格式。";
+CATFbdImportReportMessage.MissingPointedDocName="缺少此文檔。";
+
+CATFbdImportReportMessage.OldV4Model.Msg="此 V4 模型太舊，不受支持";
+CATFbdImportReportMessage.OldV4Model.Det1="已在 V4.18 之前的版本中創建了此模型";
+CATFbdImportReportMessage.OldV4Model.Det2="如果在 V4.21 之后的版本中打開并保存此模型，則它將受支持";
+
+CATFbdImportReportMessage.Split.IsolatedMissingRef="已隔離缺失參考。";
+CATFbdImportReportMessage.Split.Package="已在包編號中插入此文檔 ";
+CATFbdImportReportMessage.Split.DocOK="此包導入已遷移該文檔。";
+CATFbdImportReportMessage.Split.DocKO="此包導入未遷移該文檔。";
+CATFbdImportReportMessage.Split.DocWarned="從此包遷移中發出警告。";
+CATFbdImportReportMessage.Split.DocUNK="此包遷移處于未知狀態。";
+CATFbdImportReportMessage.Prereq.DocKO="無法遷移此文檔，因為指向的文檔出錯。";
+CATFbdImportReportMessage.Prereq.DocKO1="出錯的指向文檔的文件路徑為 ";
+CATFbdImportReportMessage.Prereq.DocKO2="。\n此指向文檔屬于其他失敗包，或者其自身具有來自其他失敗包的先決文檔。";
+CATFbdImportReportMessage.Prereq.NoImport="無任何內容可供導入。";
+
+CATFbdImportReportMessage.NotAuthorizedExtInfo=" 已忽略指向的文檔";
+CATFbdImportReportMessage.NotAuthorizedExtDetail=" 已將其忽略，因為其擴展未經授權。";
+
+CATFbdImportReportMessage.ImpactingDocNotInToMigrateList="在“替換模式”中，文檔無法執行導入";
+CATFbdImportReportMessage.ImpactingDocNotInToMigrateListDtl="為導入當前的選定文檔，請在選擇中添加以下項： ";
+
+CATFbdImportReportMessage.ImportKO="導入期間發生一個錯誤";
+CATFbdImportReportMessage.ComputeDocsToMigrateKO="計算文檔列表期間發生一個錯誤";
+CATFbdImportReportMessage.ImpactingDocTooOld="在“替換模式”中，選定的文檔太舊而無法執行導入";
+CATFbdImportReportMessage.ImpactingDocTooOldDtl="為導入當前的選定文檔，請在選擇中添加最新版本的以下文檔： ";
+CATFbdImportReportMessage.ComputeFbdDocImportModeKO="無法計算此文檔的導入模式。";
+
+CATFbdImportReportMessage.MoreThanOneCtxLink="文檔無效";
+CATFbdImportReportMessage.MoreThanOneCtxLinkDtl="其指向多個上下文鏈接。嘗試導入之前在 CATIA V5 中清理此文檔。 ";
+
+CATFbdImportReportMessage.RepRefCheckerWarning="展示參考更新檢查程序";
+CATFbdImportReportMessage.SaveMappingKO="檢索要保存的映射表期間出錯。";
+
+CATFbdImportReportMessage.UpwardLink.Public="未正確轉換向上鏈接";
+CATFbdImportReportMessage.UpwardLink.Private="對象的向上鏈接遷移失敗 ";
+
+CATFbdImportReportMessage.Versioning1.Source="新版本創建錯誤";
+CATFbdImportReportMessage.Versioning1.Detail="無法創建以下部件的新版本。";
+CATFbdImportReportMessage.Versioning2.Source="創建新版本之后無法更新映射";
+CATFbdImportReportMessage.Versioning2.DetailToDelete="創建的新版本無用，應該刪除。";
+CATFbdImportReportMessage.VersioningReport.Source="已使用版本控制的部件";
+CATFbdImportReportMessage.SaveMappingAfterUpdate.Source="創建新版本之后無法保存映射。";
+CATFbdImportReportMessage.SaveMappingAfterUpdate.Detail="應該刪除已創建的部件新版本。";
+
+CATFbdImportReportMessage.AlreadyImported="已導入此文件。";
+CATFbdImportReportMessage.AlreadyImported.ImpactUpdate="要更新的文檔影響此文檔，因此將更新此文檔。";
+
+CATFbdImportReportMessage.DesignTables="設計表出現問題。";
+CATFbdImportReportMessage.DesignTablesDetail="未保存某些設計表。";
+
+CATFbdImportReportMessage.ProxySpaceSynchronizer="代理空間同步檢查失敗。";
+CATFbdImportReportMessage.LinkDoctor="鏈接 doctor 全局錯誤狀況為非“正常”。";
+CATFbdImportReportMessage.LogToDWS="鎖定/記錄設計器工作區中的部件期間出現問題";
+CATFbdImportReportMessage.LockForVersionning_DWS="在 Designer Workspace 中的版本控制操作期間鎖定部件時出現問題";
+
+CATFbdImportReportMessage.LoadMapping="加載映射表期間出錯。";
+CATFbdImportReportMessage.RemoveRowsFromMappingTables="只有保存之后才能移除某些映射行";
+CATFbdImportReportMessage.SaveApplicativeTable="無法保存某些適用表";
+
+CATFbdImportReportMessage.ChangeOfAffectationState="更新的對象先前已被聲明且未受影響。但現在對該對象進行聲明，并且該對象將受到影響。";
+CATFbdImportReportMessage.AffectationError="執行虛飾方法期間發生錯誤。";
+CATFbdImportReportMessage.InvalidBL.Source="用于創建 '/p1' 部件的業務邏輯無效。此部件類型是使用 '/p2' 建模器創建的";
+
+CATFbdImportReportMessage.NotFileDocumentInfo=" 指向文檔的環境不是“文件”";
+CATFbdImportReportMessage.NotFileDocumentInfoDetail1=" 指向文檔： ";
+CATFbdImportReportMessage.NotFileDocumentInfoDetail2=" 已將其忽略，因為其環境為： ";
+CATFbdImportReportMessage.NotFileDocumentInfoDetail3=" 可以通過 DBDI 將其導入 ";
+CATFbdImportReportMessage.NotFileDocumentInfoDetail4=" 嘗試先通過 DBDI 將其導入 ";
+
+CATFbdImportReportMessage.UpdateError.Source="更新過程中出錯";
+CATFbdImportReportMessage.UpdateError.RetrieveComponent="無法檢索先前遷移的數據";
+CATFbdImportReportMessage.UpdateError.ReloadComponent="無法重新加載由先前導入而獲得的某些 V6 部件。";
+CATFbdImportReportMessage.UpdateError.ReloadComponentInSession="某些要更新的數據已存在于會話中。執行 FBDI 之前，請將其關閉";
+CATFbdImportReportMessage.UpdateError.RemoveComponents="無法移除某些數據";
+CATFbdImportReportMessage.RemoveComponent="無法移除的部件類型： ";
+CATFbdImportReportMessage.UpdateWarning.Source="更新過程中產生警告";
+CATFbdImportReportMessage.UpdateWarning.SwitchEditMode="在“編輯模式”下，無法重新加載某些先前遷移的數據";
+
+CATFbdImportReportMessage.FileUpdate="將更新此文檔。";
+
+CATFbdImportReportMessage.UpdateStatus.Capture.OK="V5 數據為最新狀態。";
+CATFbdImportReportMessage.UpdateStatus.Capture.NotToDate="V5 數據不是最新狀態。";
+CATFbdImportReportMessage.UpdateStatus.Capture.Error="無法捕獲 V5 數據的更新狀態。";
+
+CATFbdImportReportMessage.UpdateStatus.Restore.OK.Before="恢復之前，V6 數據為最新狀態。";
+CATFbdImportReportMessage.UpdateStatus.Restore.OK.After="恢復之后，V6 數據為最新狀態。";
+CATFbdImportReportMessage.UpdateStatus.Restore.NotToDate.Before="恢復之前，V6 數據不是最新狀態。";
+CATFbdImportReportMessage.UpdateStatus.Restore.NotToDate.After="V6 數據仍然不是最新狀態。";
+CATFbdImportReportMessage.UpdateStatus.Restore.NotToDate.After.Public="導入之后，數據不再為最新狀態。需要手動更新。";
+CATFbdImportReportMessage.UpdateStatus.Restore.Error="無法恢復 V6 數據的更新狀態。";
+CATFbdImportReportMessage.UpdateStatus.Restore.ErrorCapture="無法恢復 V6 數據的更新狀態，因為其捕獲已失敗。";
+CATFbdImportReportMessage.UpdateStatus.Restore.CATDUA="已取消恢復更新狀況，因為 CATDUA 規則會影響更新狀態。";
+
+
+CATFbdImportReportMessage.IdSetModifiedAttr.Source="已忽略對標識符集屬性的修改";
+CATFbdImportReportMessage.IdSetModifiedAttr.Detail1="已通過業務邏輯修改了對象類型 '/p2' 上屬性 '/p1' 的值。";
+CATFbdImportReportMessage.IdSetModifiedAttr.Detail2="由于此屬性屬于標識符集，已忽略此修改。";
+
+CATFbdImportReportMessage.CompleteDMTElementsWithM1Component="DMTElements 已完成，但 M1 部件失敗";
+CATFbdImportReportMessage.CycleDetected.Source="文檔之間的鏈接中檢測到循環";
+
+CATFbdImportReportMessage.WrongMappingContext="用于 CATIA V6 文件的映射上下文錯誤";
+CATFbdImportReportMessage.WrongMappingContextDetail="首先在 CATIA V6 會話中創建了當前文件。但未在當前映射環境中參考該文件。無法通過 FBDI 處理該文件。";
+
+CATFbdImportReportMessage.CATDWCOrigin="在 CATIA V6 上創建數據，并在 CATIA V5 上對其進行修改";
+CATFbdImportReportMessage.CATDWCOriginDetail="正在嘗試導入的數據來自 CATIA V6，并且已在 CATIA V5 中對其進行修改。這是一種沖突情況。將不會通過 FBDI 更新當前數據以及其指向的數據。";
+
+CATFbdImportReportMessage.ContextError="檢索共存映射上下文時出錯。";
+CATFbdImportReportMessage.ContextNameNotSet="未設置上下文名稱。";
+CATFbdImportReportMessage.ContextNameNotFound="上下文列表中未找到上下文名稱 '/p1'。";
+
+CATFbdImportReportMessage.V6Vault="CATIA V6 資源庫文件";
+CATFbdImportReportMessage.V6VaultDetail="當前文件來自 CATIA V6 資源庫。此文件無法通過 FBDI 進行處理。";
+
+CATFbdImportReportMessage.RemainingDocument.Source="剩余文檔數：'/p1'";
+CATFbdImportReportMessage.RemainingDocument.Detail="剩余文檔：'/p1'";
+
+CATFbdImportReportMessage.UnauthorizedOptionRoundTrip="缺少為往返共存方案授予的許可證。";
+CATFbdImportReportMessage.UnauthorizedOptionRoundTripDetail="某些 V5 主數據指向某些 V6 主數據。獲取往返共存許可證以導入此類數據。";
+
+CATFbdImportReportMessage.OpenError="打開失敗";
+CATFbdImportReportMessage.OpenError.Detail="已跳過遷移。將隔離指向此文檔的鏈接。";
+CATFbdImportReportMessage.OpenError.Source="檢查源是否已損壞：'/p1'";
+
+CATFbdImportReportMessage.SaveMappingError="保存映射時出錯";
+CATFbdImportReportMessage.SaveMappingError.Detail="意外錯誤。不會保存當前包轉換的文檔。";
+
+CATFbdImportReportMessage.lockIssue="無法鎖定設計器工作區中的某些部件";
+
+CATFbdImportReportMessage.SynchronizeKO="同步失敗";
+CATFbdImportReportMessage.SynchronizeKODetail="調用鏈接同步失敗";
+
+CATFbdImportReportMessage.DWSConnectionKO="連接到 Designer Workspace 失敗";
+

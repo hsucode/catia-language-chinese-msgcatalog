@@ -1,0 +1,34 @@
+LblCtx.ContextName="上下文名稱";
+LblCtx.Title="";
+
+Ctx.Collector.XMLFileNotSet="共存上下文的 XML 文件必須在“工具”/“選項”中進行設置";
+Ctx.Collector.XMLFileNotValid="XML 文件：不存在、沒有讀取權限或擴展名錯誤（必須為 .xml）";
+Ctx.Collector.ParseError="XML 解析錯誤";
+Ctx.Collector.CheckError="XML 檢查錯誤";
+Ctx.Collector.SetFriendsError="XML 好友錯誤";
+Ctx.Collector.StreamError="XML 流錯誤";
+Ctx.Collector.InternalError="內部錯誤，請提交問題";
+
+Ctx.Parse.XMLSyntaxError="意外 XML 語法";
+Ctx.Parse.NotAValidTag="/p1 不是有效標記";
+Ctx.Parse.TagNotFound="未找到標記 /p1";
+Ctx.Parse.CtxNoName="上下文不包含名稱";
+Ctx.Parse.CtxNoParam="上下文名稱 /p1 不包含參數";
+Ctx.Parse.CtxNoParamType="上下文名稱 /p1 不包含參數類型";
+Ctx.Parse.NoCtxDefinedForFriend="在好友范圍前未定義上下文";
+Ctx.Parse.CtxFriendWithFriend="好友上下文不能包含好友";
+Ctx.Parse.CtxFriendNoName="上下文名稱 /p1 包含不帶名稱的好友";
+
+Ctx.Check.NoCtxDefined="未定義上下文";
+Ctx.Check.CtxEmptyName="上下文包含空名稱";
+Ctx.Check.CtxNameTooLong="上下文名稱 /p1 過長，名稱最長為 125 個字符";
+Ctx.Check.CtxEmptyParam="上下文名稱 /p1 包含空參數";
+Ctx.Check.CtxUnknownParamType="上下文名稱 /p2 包含未知參數類型 /p1";
+Ctx.Check.CtxAlreadyDefined="已定義上下文名稱 /p1";
+Ctx.Check.CtxAndFriendWithSameName="上下文名稱 /p1 和好友名稱 /p2 具有相同名稱";
+Ctx.Check.CtxAndFriendWithCyclicity="已禁止上下文名稱 /p1 和好友名稱 /p2 之間的循環性";
+Ctx.Check.CtxDefaultInvalidName="如果需要參數類型 /p2、上下文名稱 /p3，則禁止上下文名稱 /p1";
+Ctx.Check.CtxDefaultInvalidParam="上下文名稱 /p1 包含無效參數 /p2，需要空參數";
+Ctx.Check.CtxDefaultInvalidParamType="上下文名稱 /p1 包含無效參數類型 /p2，需要參數類型 /p3";
+
+Ctx.SetFriends.CtxFriendNoMatchingCtx="上下文名稱 /p1 包含引用未定義上下文的好友名稱 /p2";

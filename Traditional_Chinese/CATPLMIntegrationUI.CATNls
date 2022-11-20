@@ -1,0 +1,55 @@
+ErrorAtRestore.Msg="會話恢復失敗";
+ErrorAtRestore.Title="恢復時出錯";
+
+ServerPbAtRestore="到服務器的連接似乎已斷開";
+
+MetadataInitFailure.Diagnostic="無法初始化元數據";
+MetadataInitFailure.Advice="您的元數據自定義可能已損壞。該應用程序將退出以防止創建受損數據。\n請與您的管理員聯系。";
+
+WrongUserAtRestore.Diagnostic="您無權恢復此會話，只有 /p1 可執行此操作。";
+WrongServerAtRestore.Diagnostic="不要使用正確的服務器來恢復此會話，您應連接至 /p1。";
+WrongPortAtRestore.Diagnostic="不要使用正確的服務器端口來恢復此會話，您應與 /p1 連接。";
+WrongRoleAtRestore.Diagnostic="您未使用正確的角色來恢復此會話，請使用 /p1。";
+WrongLoginAtRestore.Diagnostic="當前給定的登錄參數與選定會話中的參數不匹配。\n將退出應用程序。";
+
+WrongUserAtRestore.Advice="嘗試通過正確的登錄特性來恢復此會話。";
+WrongServerAtRestore.Advice="嘗試通過正確的登錄特性來恢復此會話。";
+WrongPortAtRestore.Advice="嘗試通過正確的登錄特性來恢復此會話。";
+WrongRoleAtRestore.Advice="嘗試通過正確的登錄特性來恢復此會話。";
+
+RecordWarning.Msg="您正在維護模式下運行 CATIA。";
+RecordLicenceError.Msg="維護模式的許可證錯誤。正在退出。";
+RecordWarning.Title="用于維護的 CATIA V6";
+
+ReplayWarning.Msg="您正在調試模式下運行 CATIA。";
+ReplayLicenceError.Msg="調試模式的許可證錯誤。正在退出。";
+ReplayWarning.Title="用于調試的 CATIA V6";
+
+TubeError.PLMQL.Msg="錯誤：找不到有關具有以下 PLMQL 的服務器調用處理器 /p1 的數據：\n /p2";
+TubeError.Processor.Msg="錯誤：找不到有關 /p1 服務器調用處理器的任何數據。\n（關聯的 PLMQL：/p2）";
+TubeError.Title="PLMMaintenance 重放錯誤";
+
+FaradayUnavailableError.Msg="沒有準備好用于脫機工作的備份會話。\n應用程序將聯機啟動。";
+FaradayUnavailableError.Title="脫機工作不可用";
+
+CATPLMIntegrationUI.CATPLMFaradayCmdChk.Title="脫機工作";
+CATPLMIntegrationUI.CATPLMFaradayCmdChk.Help="脫機工作";
+CATPLMIntegrationUI.CATPLMFaradayCmdChk.ShortHelp="脫機工作";
+CATPLMIntegrationUI.CATPLMFaradayCmdChk.LongHelp="脫機工作";
+CATPLMFaradayCmd.Online.Msg="您現在已聯機";
+CATPLMFaradayCmd.Offline.Msg="您現在已聯機";
+CATPLMFaradayCmd.Password.Title="聯機密碼";
+CATPLMFaradayCmd.Password.Label="請輸入您的密碼：";
+
+FaradayTubeError.Msg="到 ENOVIA V6 的連接不可用。/p 必須聯機才可完成當前操作。";
+FaradayTubeError.Title="/p 脫機錯誤";
+FaradayFrame.Title=" - [脫機工作]";
+
+TemporaryCacheWarning.Msg="由于并發高速緩存訪問權限，停用本地保存。";
+TemporaryCacheWarning.Title="本地保存停用";
+
+LaunchingParameterError.Msg="打開 /p1 文件時出錯。";
+LaunchingParameterError.Title="打開文件時出錯";
+
+CacheSettingWarning.Msg="已檢測到會話高速緩存設置更改。\n連接時已從數據庫管理中修改了高速緩存設置參數。\n請重新啟動應用程序以使此修改生效。";
+CacheSettingWarning.Title="會話重新啟動警告";

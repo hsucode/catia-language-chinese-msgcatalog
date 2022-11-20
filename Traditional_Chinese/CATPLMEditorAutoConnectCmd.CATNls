@@ -1,0 +1,33 @@
+Title="CATPLMEditorAutoConnectCmd";
+
+EntitySelection="請從同一個父參考中選擇多個實體進行自動連接。";
+EntitySelectionWithTypes="請選擇功能實體/邏輯實體/端口/MUX/DEMUX。";
+
+Message.Succeeded="/P1 上的自動連接命令已完成";
+Message.CreatedConnections="   - 已創建 /P1 個連接";
+Message.NoPortOnEntity="   - 已創建 0 個連接，因為所選實體沒有端口";
+Message.FailedConnections="   - /P1 個連接創建失敗";
+Message.AlreadyConnected="   - 已忽略 /P1 個端口，因為這些端口已連接";
+Message.MultipleConnection="   - 已忽略 /P1 個端口，因為可能會出現多個連接";
+Message.NotTyped="   - 已忽略 /P1 個端口，因為這些端口未歸類";
+Message.NoCnxPossibility="   - 已忽略 /P1 個端口，因為無法進行連接";
+
+Message.NoPortOnEntities="   - 所選實體中有 /P1 個沒有端口";
+Message.MultiSel="/P1 個實體上的自動連接命令已完成";
+Message.NotAvailable="其他父參考上無法自動連接";
+
+Message.CreatedConnection=" - 已創建連接";
+Message.FailedConnection=" - 連接創建失敗";
+Message.AlreadyConnectedPort=" - 已忽略端口，因為已連接";
+Message.PortOfMultipleConnection=" - 已忽略端口，因為可能會出現多個連接";
+Message.NotTypedPort=" - 已忽略端口，因為未歸類";
+Message.NoCnxPossibilityPort=" - 已忽略端口，因為無法連接";
+
+Message.Requirement="要求無法自動連接";
+Message.Physical="物理部件無法自動連接";
+Message.Connection="連接無法自動連接";
+Message.Representation="展示無法自動連接";
+
+FatherElementNotEditable="該連接的父連接無法自動連接";
+Message.SelOnSameEntity="自動連接無法用于同一個參考/實例的多重選擇";
+

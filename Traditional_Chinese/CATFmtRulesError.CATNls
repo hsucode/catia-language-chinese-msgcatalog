@@ -1,0 +1,89 @@
+
+// 3951 校正官方漢化 Exemple de message :
+// 3951 校正官方漢化
+// 3951 校正官方漢化 ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// 3951 校正官方漢化 ERR_2000.Diagnostic = "Un des parametres est negatif";
+// 3951 校正官方漢化 ERR_2000.Advice     = "Utilisez des parametres positifs";
+
+RuleERR_0001.Request="規則名稱參數無效。";
+RuleERR_0001.Diagnostic="規則：/P01 無參數：/P02.";
+RuleERR_0001.Advice="使用有效的名稱參數。";
+
+RuleERR_0002.Request="缺少必需的規則參數。";
+RuleERR_0002.Diagnostic="規則：/P01 有未定義的必需參數：/P02 。";
+RuleERR_0002.Advice="定義參數值。";
+
+RuleERR_0003.Request="多個規則參數值。";
+RuleERR_0003.Diagnostic="規則：/P01 必須具有參數：/P02的唯一值。";
+RuleERR_0003.Advice="定義唯一的參數值。";
+
+RuleERR_0004.Request="規則參數必須為正值。";
+RuleERR_0004.Diagnostic="規則：/P01 必須具有參數：/P02的正值。";
+RuleERR_0004.Advice="設置正值。";
+
+RuleERR_0005.Request="無法加載網格化規則。";
+RuleERR_0005.Diagnostic="網格化規則文件無法打開或包含無效規則。";
+RuleERR_0005.Advice="修改網格化規則。";
+
+RuleERR_0006.Request="網格化規則無效。";
+RuleERR_0006.Diagnostic="規則：/P01 無法創建且將被忽略。";
+
+RuleERR_0007.Request="缺少規則支持面。";
+RuleERR_0007.Diagnostic="規則：缺少 /P01 支持面。";
+RuleERR_0007.Advice="定義規則支持面。";
+
+RuleERR_0008.Request="網格化規則無效。";
+RuleERR_0008.Diagnostic="規則類型：/P01 包含無效參數且將被忽略。";
+RuleERR_0008.Advice="修改網格化規則參數。";
+
+RuleERR_0009.Request="無法加載網格化規則。";
+RuleERR_0009.Diagnostic="文檔不包含任何規則。";
+RuleERR_0009.Advice="選擇包含規則的文檔";
+
+RuleERR_0010.Request="無法加載網格化規則。";
+RuleERR_0010.Diagnostic="文檔不包含任何質量條件。";
+RuleERR_0010.Advice="選擇包含質量條件的文檔";
+
+RuleERR_0011.Request="規則參數不一致。";
+RuleERR_0011.Diagnostic="規則包含不一致的參數：\n /P01 > /P02";
+RuleERR_0011.Advice="修改規則參數。";
+
+RuleERR_0012.Request="缺少必需的規則。";
+RuleERR_0012.Diagnostic="規則類型：網格器缺少 /P01 。";
+RuleERR_0012.Advice="定義規則。";
+
+RuleERR_0013.Request="不允許存在多個規則。";
+RuleERR_0013.Diagnostic="規則類型：/P01 在規則集中必須唯一。";
+RuleERR_0013.Advice="僅定義此類型的一個規則。";
+
+RuleERR_0014.Request="規則支持面無效。";
+RuleERR_0014.Diagnostic="規則：/P01 包含無效支持面：\n /P02 = /P03。";
+RuleERR_0014.Advice="修改規則支持面。";
+
+RuleERR_0015.Request="規則支持面無效。";
+RuleERR_0015.Diagnostic="規則：/P01 包含無效支持面：\n /P03 < /P02 < /P04";
+RuleERR_0015.Advice="修改規則支持面。";
+
+RuleERR_0016.Request="網格化規則文件：無法加載 /P01。";
+RuleERR_0016.Diagnostic="文件已刪除或已破壞。";
+RuleERR_0016.Advice="檢查網格化規則文件。";
+
+RuleERR_0017.Request="規則參數無效。";
+RuleERR_0017.Diagnostic="規則：/P01 必須包含有效參數值：/P02。";
+RuleERR_0017.Advice="設置有效值。";
+
+RuleERR_0018.Request="規則參數不一致。";
+RuleERR_0018.Diagnostic="規則包含不一致的參數：\n /P01（簡化幾何圖形）> /P02";
+RuleERR_0018.Advice="修改規則參數。";
+
+RuleERR_0019.Request="網格化規則文件：無法創建 /P01。";
+RuleERR_0019.Diagnostic="文件包含無效路徑或已破壞。";
+RuleERR_0019.Advice="檢查網格化規則文件。";
+
+RuleERR_0020.Request="/P01 網格化失敗。";
+RuleERR_0020.Diagnostic="部分域無網格。";
+RuleERR_0020.Advice="嘗試檢查網格化參數或規則。";
+
+RuleERR_0021.Request="零件網格化失敗。";
+RuleERR_0021.Diagnostic="部分域無網格。";
+RuleERR_0021.Advice="嘗試檢查網格化參數或規則。";

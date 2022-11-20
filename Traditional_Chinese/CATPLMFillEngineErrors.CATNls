@@ -1,0 +1,38 @@
+
+// 3951 校正官方漢化 FACTORIZATION ERROR DECLARATION :
+// 3951 校正官方漢化 XXXXX_F_n  : _F indicated that this client PLM error is a factorization error
+// 3951 校正官方漢化 XXXXX_F_n.Advice & XXXXX_F_n.Request : common to all the concerned component
+
+// 3951 校正官方漢化 Case 0 : XXXXX_F_0:  Factorization error without parameter  
+// 3951 校正官方漢化 XXXXX_F_0.Diagnostic = "\p PLM< components cannot ....."
+// 3951 校正官方漢化 where \p is not given at the error posting to the reporter :
+// 3951 校正官方漢化 \p is computed by the reporter just before sending the error to the listener
+// 3951 校正官方漢化 \p value : the number of PLM concerned by the error.
+
+// 3951 校正官方漢化 Case 1 : XXXXX_F_1 : Factorization error with 1 parameter : 
+// 3951 校正官方漢化 This parameter is the list of paramters coresponding to each PLM component 
+// 3951 校正官方漢化 This parameter has to be documented
+
+
+
+
+NoElement.Diagnostic="沒有發送到填充引擎的元素";
+NoElement.Advice="檢查數據庫中的數據可用性";
+
+NoElementGrowable.Diagnostic="沒有可通過填充引擎處理的元素";
+NoElementGrowable.Advice="在加載之前，先檢查部件的狀態";
+
+ComponentLogged.Diagnostic="已記錄提供的部件";
+ComponentLogged.Advice="檢查是否尚未在該會話中執行任何修改";
+
+ComponentNotBrowsed.Diagnostic="在進行此交易之前，已填充提供的部件";
+ComponentNotBrowsed.Advice="在加載之前，先檢查部件的狀態";
+
+ComponentNotRepresented.Diagnostic="提供的部件尚未在該會話中打開";
+ComponentNotRepresented.Advice="在填充數據之前，先將其展開";
+
+ComponentNotInWS.Diagnostic="提供的部件在當前工作區中不可用";
+ComponentNotInWS.Advice="在填充部件目標之前，先對其進行檢查";
+
+Internal.Diagnostic="內部填充引擎錯誤";
+Internal.Advice="與您當地的 ENOVIA/CATIA 管理員聯系";

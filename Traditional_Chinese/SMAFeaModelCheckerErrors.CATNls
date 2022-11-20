@@ -1,0 +1,137 @@
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Error messages for the model checker (SMAFeaModelChecker)
+// 3951 校正官方漢化 Parameters are only supported for the diagnostic part of the error
+// 3951 校正官方漢化
+
+ERR_NO_SIMULATION_DOMAIN.Request="材料不包含模擬域。";
+ERR_NO_SIMULATION_DOMAIN.Diagnostic="材料 /P01 不包含模擬域。";
+ERR_NO_SIMULATION_DOMAIN.Advice="向材料添加模擬域。";
+
+ERR_NO_SIMULATION_OPTIONS.Request="模擬域中的材料行為未引用任何材料選項。";
+ERR_NO_SIMULATION_OPTIONS.Diagnostic="材料	 /P01 (/P02) 未引用任何模擬材料選項。";
+ERR_NO_SIMULATION_OPTIONS.Advice="向材料模擬行為添加至少一個材料選項。";
+
+ERR_INVALID_MAT_NAME.Request="材料名稱無效。";
+ERR_INVALID_MAT_NAME.Diagnostic="材料 /P01 對于模擬無效。";
+ERR_INVALID_MAT_NAME.Advice="材料名稱必須以字母開頭且只包含可打印字符。";
+
+ERR_INVALID_MAT_PARAMS.Request="材料包含無效參數。";
+ERR_INVALID_MAT_PARAMS.Diagnostic="材料 /P01 包含無效參數：/P02";
+ERR_INVALID_MAT_PARAMS.Advice="修改材料參數。";
+
+ERR_INVALID_PROPERTY.Request="未找到有效材料。";
+ERR_INVALID_PROPERTY.Diagnostic="屬性 /P01 未引用有效的材料。";
+ERR_INVALID_PROPERTY.Advice="檢查是否已將有效材料分派給與屬性相關的幾何圖形。";
+
+ERR_INVALID_MAT_BEHAVIOR.Request="材料行為不一致或引用的選項無效。";
+ERR_INVALID_MAT_BEHAVIOR.Diagnostic="材料 /P01 包含不一致的行為：\n /P02";
+ERR_INVALID_MAT_BEHAVIOR.Advice="修改材料行為或行為引用的選項。";
+
+ERR_INVALID_MAT_UNSTABLE_HYPERELASTIC.Request="超彈性材料選項不穩定。";
+ERR_INVALID_MAT_UNSTABLE_HYPERELASTIC.Diagnostic="材料 /P01 包含不穩定的超彈性數據。";
+ERR_INVALID_MAT_UNSTABLE_HYPERELASTIC.Advice="修改超彈性選項上的超彈性系數數據。";
+
+ERR_UPGRADE_MATERIAL.Request="材料需要升級。";
+ERR_UPGRADE_MATERIAL.Diagnostic="材料 /P01 的版本太舊，只有升級后才能提交模擬。";
+ERR_UPGRADE_MATERIAL.Advice="在材料編輯器中打開材料并升級。";
+
+ERR_INVALID_MATERIAL.Request="未找到有效材料。";
+ERR_INVALID_MATERIAL.Diagnostic="產品 /P01 未引用有效的材料。";
+ERR_INVALID_MATERIAL.Advice="檢查是否已將有效材料分派給與產品相關的幾何圖形。";
+
+ERR_NO_PROPERTY.Request="未找到屬性。";
+ERR_NO_PROPERTY.Diagnostic="沒有為模型分派任何屬性。無法創建完整的模擬模型。";
+ERR_NO_PROPERTY.Advice="為模型分派屬性。";
+
+ERR_BAD_ASSIGNMENT.Request="向產品分派的材料不一致或無效。";
+ERR_BAD_ASSIGNMENT.Diagnostic="向產品分派的材料無效。";
+ERR_BAD_ASSIGNMENT.Advice="審查分派給產品的材料內容。";
+
+ERR_INVALID_CONSTRAINTS.Request="檢測到不兼容的約束。";
+ERR_INVALID_CONSTRAINTS.Diagnostic="在同一個幾何圖形上應用時以下特征不兼容：方案 /P02 中的 /P01。";
+ERR_INVALID_CONSTRAINTS.Advice="修改這些特征，以移除重疊。";
+
+ERR_NO_SUPPORT.Request="檢測到指向支持面的激勵沒有基礎網格。";
+ERR_NO_SUPPORT.Diagnostic="以下特征分派的支持面沒有基礎網格：方案 /P02 中的 /P01。";
+ERR_NO_SUPPORT.Advice="以下是可能的原因：1) 指定的支持面可能非常小，無法將任何網格實體與其相關聯。請選擇較大的支持面。2) 您編輯幾何圖形的方式可能會使現有特征的支持面無效。請重新定義特征，使其符合新幾何圖形。";
+
+ERR_INCOMPATIBLE_CONSTRAINTS.Request="檢測到不兼容的負載/約束。";
+ERR_INCOMPATIBLE_CONSTRAINTS.Diagnostic="在同一個幾何圖形上應用時以下特征不兼容：方案 /P01 中的 /P02。";
+ERR_INCOMPATIBLE_CONSTRAINTS.Advice="修改這些特征，以移除重疊。";
+
+ERR_NO_MESHPARTS.Request="未找到網格零件。";
+ERR_NO_MESHPARTS.Diagnostic="沒有向模型分派任何網格零件。無法生成完整的模擬模型。";
+ERR_NO_MESHPARTS.Advice="在模型中創建網格零件。";
+
+ERR_BC_OVERCONSTRAINT.Request="檢測到過分約束。";
+ERR_BC_OVERCONSTRAINT.Diagnostic="方案 /P02 中應用的兩個位移約束 /P01 的支持面共用邊線或頂點，且包含相沖突的平移/旋轉值。";
+ERR_BC_OVERCONSTRAINT.Advicce="為不共用邊界的約束選擇支持面，或更正應用的值，使其可兼容。";
+
+ERR_DISP_BALLJ_OVERCONSTRAINT.Request="檢測到過分約束。";
+ERR_DISP_BALLJ_OVERCONSTRAINT.Diagnostic="方案 /P02 中應用的位移限制和球接頭限制 /P01 的支持面共用邊線或頂點，且位移邊界條件包含非零旋轉。";
+ERR_DISP_BALLJ_OVERCONSTRAINT.Diagnostic="為不共用邊界的約束選擇支持面，或更正應用的值，使其可兼容。";
+
+ERR_NO_LOAD_FOUND.Request="缺少應用的負載。";
+ERR_NO_LOAD_FOUND.Diagnostic="模型在方案 /P01 中沒有任何已應用的負載。模擬需要負載。";
+ERR_NO_LOAD_FOUND.Advice="向模型中應用至少一個負載。";
+
+ERR_INSUFFICIENT_CONSTRAINTS.Request="檢測到約束不充分。";
+ERR_INSUFFICIENT_CONSTRAINTS.Diagnostic="模型在方案 /P01 中的約束不充分，這會導致剛性幾何體運動。";
+ERR_INSUFFICIENT_CONSTRAINTS.Advice="向模型應用至少一個緊固支架或至少三個球接頭限制。";
+
+ERR_UNCONNECTED_PARTS.Request="裝配體模型中未連接的零件。";
+ERR_UNCONNECTED_PARTS.Diagnostic="以下零件未連接到模型：方案 /P02 中的 /P02。";
+ERR_UNCONNECTED_PARTS.Advice="將這些零件連接到模型，或將其從分析中移除。";
+
+ERR_UNRESTRAINED_PARTS.Request="裝配體包含已斷開連接或不受限制的零件組。";
+ERR_UNRESTRAINED_PARTS.Diagnostic="以下零件組未連接到受限制的模型零件，因此不受約束：方案 /P02 中的 /P02";
+ERR_UNRESTRAINED_PARTS.Advice="從裝配體中排除這些組，或添加連接來連接這些組，或將其緊固以避免剛性幾何體運動。";
+
+ERR_NONCONTRIB_EXCITATIONS.Request="零件上應用的負載或限制尚未從模擬中移除。";
+ERR_NONCONTRIB_EXCITATIONS.Diagnostic="已將以下負載或限制應用到已移除的零件：方案 /P02 中的 /P02。";
+ERR_NONCONTRIB_EXCITATIONS.Advice="移除這些負載或限制，或重新向模擬中添加零件。";
+
+ERR_ABS_ZERO_BC.Request="檢測到絕對零度溫度邊界條件。";
+ERR_ABS_ZERO_BC.Diagnostic="以下溫度邊界條件的值等于或低于絕對零度：方案 /P02 中的 /P02。";
+ERR_ABS_ZERO_BC.Advice="移除這些邊界條件或將其編輯為大于零的值。";
+
+ERR_FREQ_INVALID_PARAMS.Request="頻率步長包含無效的求解參數。";
+ERR_FREQ_INVALID_PARAMS.Diagnostic="頻率步長 (/P01) 指定的零模式無有效頻率范圍。";
+ERR_FREQ_INVALID_PARAMS.Advice="將模式數設置為非零值，或將頻率范圍設置為有效范圍。";
+
+ERR_MIN_MODES.Request="請求的模式數不足。";
+ERR_MIN_MODES.Diagnostic="存在針對方案 /P02 的 /P03 估計剛性幾何體模式。請求的模式數應大于剛性幾何體模式數。 ";
+ERR_MIN_MODES.Advice="請增加模式數，調整頻率范圍，或向模型添加約束，然后重新嘗試模擬。";
+
+SIMIFICATION_REGION_WARNING.Request="激勵更新失敗，因為選定支持面出現問題。";
+SIMIFICATION_REGION_WARNING.Diagnostic="以下特征上的更新失敗：/P01";
+SIMIFICATION_REGION_WARNING.Advice="選擇其他支持面。";
+
+ERR_ZERO_UNIFORM_THICKNESS.Request="零厚度值。";
+ERR_ZERO_UNIFORM_THICKNESS.Diagnostic="盒體零件的統一厚度值為零。";
+ERR_ZERO_UNIFORM_THICKNESS.Advice="向模型分派正確的厚度值。";
+
+ERR_NO_THICKNESS_FIELD.Request="未定義任何厚度。";
+ERR_NO_THICKNESS_FIELD.Diagnostic="盒體零件沒有厚度。";
+ERR_NO_THICKNESS_FIELD.Advice="向模型分派正確的厚度值。如果已使用厚度文件，則檢查其一致性。";
+
+ERR_ZERO_VARYING_THICKNESS.Request="厚度投影失敗使投影厚度值為零。";
+ERR_ZERO_VARYING_THICKNESS.Diagnostic="厚度投影無法將厚度值投影到盒體零件。";
+ERR_ZERO_VARYING_THICKNESS.Advice="用于指定厚度的點太稀疏或定向不正確。請使用厚度值指定更多的點或檢查其方向。";
+
+ERR_THICKNESS_MAPPING.Request="無法投影厚度數據。";
+ERR_THICKNESS_MAPPING.Diagnostic="";
+ERR_THICKNESS_MAPPING.Advice="";
+
+ERR_MAT_ISOPLASTICITY.Request="各向同性彈性材料選項與粘彈性材料選項不兼容。";
+ERR_MAT_ISOPLASTICITY.Diagnostic="材料 /P01 (/P02) 引用了不兼容的選項（彈性和粘彈性）。";
+ERR_MAT_ISOPLASTICITY.Advice="編輯域數據";
+
+ERR_INSUFFICIENT_ELEMENT_TYPE.Request="缺少元素類型分派。";
+ERR_INSUFFICIENT_ELEMENT_TYPE.Diagnostic="模型中至少有一部分元素沒有正確的 Abaqus 元素類型分派。";
+ERR_INSUFFICIENT_ELEMENT_TYPE.Advice="重新檢查元素類型分派拓撲圖，以確保模型中的所有拓撲均包含 Abaqus 元素類型分派。";
+
+
+
+

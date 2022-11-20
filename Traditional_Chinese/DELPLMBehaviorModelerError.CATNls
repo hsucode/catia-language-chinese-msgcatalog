@@ -1,0 +1,44 @@
+// 3951 校正官方漢化************************************************************
+// 3951 校正官方漢化 Resource team shared Errors
+// 3951 校正官方漢化************************************************************
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Please fullfill following fields for each error: 
+// 3951 校正官方漢化
+// 3951 校正官方漢化       ERR_xxx.Request	= "What you tried to do." 
+// 3951 校正官方漢化       ERR_xxx.Diagnostic 	= "What happened."
+// 3951 校正官方漢化       ERR_xxx.Advice     	= "What has to be achieved by end-user or API caller."
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Only ERR_xxx.Diagnostic is Mandatory	
+// 3951 校正官方漢化               NOTE : Le parametrage de chaque facette se fait par :
+// 3951 校正官方漢化                         Request    : SetNLSRequestParams
+// 3951 校正官方漢化                         Diagnostic : SetNLSDiagnosticParams
+// 3951 校正官方漢化                         Advice     : SetNLSAdviceParams
+// 3951 校正官方漢化
+// 3951 校正官方漢化************************************************************
+
+ModelerError.Title="行為建模器錯誤";
+
+// 3951 校正官方漢化************************************************************
+// 3951 校正官方漢化 Generic Errors (From 0 to 999)
+// 3951 校正官方漢化************************************************************
+ERR_0.Request="行為建模器錯誤。";
+ERR_0.Diagnostic="出現故障。\n 錯誤為：/p1。";
+ERR_0.Advice="請重試。如果問題仍然存在，請聯系您的本地支持。";
+
+
+// 3951 校正官方漢化************************************************************
+// 3951 校正官方漢化 Behavior specific errors (From 1000 to 4999)
+// 3951 校正官方漢化************************************************************
+ERR_1000.Diagnostic="行為建模器錯誤.";
+ERR_1000.Advice="請重試。如果問題仍然存在，請聯系您的本地支持。";
+
+ERR_1001.Request="正在使用要鏈接的對象創建“/P1”類型的 PLM 對象：";
+ERR_1001.Diagnostic="無法創建 PLM 對象。";
+ERR_1001.Advice="請對比“/p1”，檢查要鏈接的對象是否處于適當的位置。";
+
+
+ERR_1002.Request="模擬已激活";
+ERR_1002.Diagnostic="此新選擇還不能生效";
+ERR_1002.Advice="請等到啟動模擬結束";
+
+

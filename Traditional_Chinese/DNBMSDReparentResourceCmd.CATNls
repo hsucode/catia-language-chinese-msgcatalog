@@ -1,0 +1,21 @@
+DNBMSDReparentResourceCmd.SelectResource.Message = "選擇a Resource to be moved.";
+DNBMSDReparentResourceCmd.SelectParent.Message = "選擇the new Parent Resource.";
+Failed.Title = "父 Resource has failed !";
+Failed.Text = "Problem with the Selected Resources ! \nIt could be一個naming conflict或 the 2nd selection is not一個valid target. \nTo resolve try renaming (1st selection或 its children)或 change 2nd selection(new parent).";
+ResourceResource.Title = "父 Resource has failed !";
+ResourceResource.Text = "不possible to move一個resource to一個direct child !";
+
+InfoNotAResource="... is not一個resource.";
+InfoNoRights="... is locked或 用戶has no rights to modify this Resource.";
+InfoResourceDoesntMatch="... doesn't match the plantype hierarchy for the selected new parent.";
+InfoParentDoesntMatch="... doesn't match the plantype hierarchy of one of the selected Resources.";
+InfoRobotRobot="... is一個Robot.機器人cannot be 子項 another Robot.";
+
+ErrorCycles.Title="非法選擇";
+ErrorCycles.Text="The following resources would create cycling references after reparenting.\n
+/P01\n\nPlease remove them from the selection或 unlink their TSAs from the new parent resource
+and the complete structure above the new parent resource.";
+
+
+NoResource.Title = "父 Resource:不Done";
+NoResource.Text = "No Resources are selected for Reparenting.";

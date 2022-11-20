@@ -1,0 +1,119 @@
+
+Error.Request.NoError="無錯誤";
+Error.Request.SyntaxError="語法錯誤";
+Error.Request.ScopeError="范圍錯誤";
+Error.Request.TypeError="類型錯誤";
+Error.Request.ModelingError="建模錯誤";
+
+GenericError.Request="/P1";
+GenericError.Diagnostic="/P1";
+GenericError.Advice="/P1";
+
+InfiniteLoop.Request="建模錯誤";
+InfiniteLoop.Diagnostic="檢測到連接環。環中的連接是：";
+InfiniteLoop.Advice="模型正確";
+
+ConnectionMappingError.Request="建模錯誤";
+ConnectionMappingError.Diagnostic="連接無效";
+ConnectionMappingError.Advice="模型正確";
+
+ConnectionChainBuildError.Request="建模錯誤";
+ConnectionChainBuildError.Diagnostic="此參考的至少一個連接無效";
+ConnectionChainBuildError.Advice="模型正確";
+
+RepMappingError.Request="建模錯誤";
+RepMappingError.Diagnostic="“/P1”上的行為映射無效";
+RepMappingError.Advice="使用映射工具來定義正確的映射";
+
+MappingNotSelected.Request="行為選擇警告";
+MappingNotSelected.Diagnostic="PLM 參考“/P1”上有數個映射，已選擇默認映射。";
+MappingNotSelected.Advice="使用行為選擇命令";
+
+// 3951 校正官方漢化UpdateMappingTool.Request = "Modeling Warning";
+// 3951 校正官方漢化UpdateMappingTool.Diagnostic = "The behavior mapping on object is updated";
+// 3951 校正官方漢化UpdateMappingTool.Advice = "Verify the new mapping tool definition";
+
+NoBehaviorError.Request="建模錯誤";
+NoBehaviorError.Diagnostic="未在“/P1”上定義任何行為";
+NoBehaviorError.Advice="";
+
+NoBehaviorWarning.Request="建模警告";
+NoBehaviorWarning.Diagnostic="未在以下位置定義任何行為：\n/P1";
+NoBehaviorWarning.Advice="";
+
+PortIgnored.Request="建模警告";
+PortIgnored.Diagnostic="已忽略端口 /P1";
+PortIgnored.Advice="";
+
+PortNotFoundInRunTime.Request="建模警告";
+PortNotFoundInRunTime.Diagnostic="在執行視圖中找不到端口“/P1”。";
+PortNotFoundInRunTime.Advice="檢查端口與內部行為的連接是否良好";
+
+MultiMonoError.Request="PLM 執行屬性錯誤";
+MultiMonoError.Diagnostic="塊 /P1 未定義任何執行屬性并且位于多頻/混合上下文中";
+MultiMonoError.Advice="更新執行屬性";
+
+OffsetEqualsCycleTimeError.Request="PLM 執行屬性錯誤";
+OffsetEqualsCycleTimeError.Diagnostic="塊 /P1 具有相同的循環時間和偏移時間值";
+OffsetEqualsCycleTimeError.Advice="更新執行屬性";
+
+ModelicaWithSampleWarning.Request="PLM 執行屬性警告";
+ModelicaWithSampleWarning.Diagnostic="參考 /P1 包含持續行為并且具有循環時間，循環時間未考慮在內";
+ModelicaWithSampleWarning.Advice="";
+
+SampleNotUseInfo.Request="PLM 執行屬性信息";
+SampleNotUseInfo.Diagnostic="子實例屬性使 /P1 的取樣時間過載";
+SampleNotUseInfo.Advice="";
+
+ConnectionInactiveInfo.Request="行為選擇信息";
+ConnectionInactiveInfo.Diagnostic="連接 /P1 為非活動狀態";
+ConnectionInactiveInfo.Advice="";
+
+DoubleEmissionError.Request="PLM 執行屬性錯誤";
+DoubleEmissionError.Diagnostic="檢測到時間約束雙發射";
+DoubleEmissionError.Advice="調整執行屬性。當取樣涉及次諧波時鐘，添加偏移或反應時間會刪除時間約束雙發射";
+
+CausalityLoopError.Request="PLM 執行屬性錯誤";
+CausalityLoopError.Diagnostic="檢測到時間約束原因環";
+CausalityLoopError.Advice="將反應時間添加到其中一個連接對象。";
+
+IncompatibleIOError.Request="建模錯誤";
+IncompatibleIOError.Diagnostic="端口 /P1 和 /P2 具有不兼容的類型";
+IncompatibleIOError.Advice="模型正確";
+
+InstanceError.Request="致命錯誤";
+InstanceError.Diagnostic="無法加載子部件 /P1";
+InstanceError.Advice="檢查與正確版本的依存關系是否存在于數據庫中";
+
+PortError.Request="嚴重內部錯誤";
+PortError.Diagnostic="無法在參考 /P2 中創建端口 /P1";
+PortError.Advice="接觸支持面";
+
+ReferenceError.Request="嚴重內部錯誤";
+ReferenceError.Diagnostic="無法創建參考 /P1";
+ReferenceError.Advice="接觸支持面";
+
+MultiPointed3D.Request="建模警告";
+MultiPointed3D.Diagnostic="已指向“/P1”下的 3D 零件數次";
+MultiPointed3D.Advice="";
+
+DBMLink3DKO.Request="建模警告";
+DBMLink3DKO.Diagnostic="CATIA_3DBody“/P1”鏈接無效";
+DBMLink3DKO.Advice="檢查 CATIA_3DBody 部件鏈接。它不應該直接指向模擬根模型。";
+
+NoFlexibleDesign3D.Request="建模警告";
+NoFlexibleDesign3D.Diagnostic="已經從其他出現情況中設置了“/P1”位置。 ";
+NoFlexibleDesign3D.Advice="您可以將父實例手動移動到正確的位置";
+
+
+CATIALib_1_0.Request="建模警告";
+CATIALib_1_0.Diagnostic="使用了舊 CATIA 庫版本。建議使用最新的版本。";
+CATIALib_1_0.Advice="請更新到 CATIA 庫的最新版本。";
+
+ConnectionNotTyped.Request="建模錯誤";
+ConnectionNotTyped.Diagnostic="未鍵入端口。檢查連接：\n/P1";
+ConnectionNotTyped.Advice="請鍵入端口";
+
+ConnectionFiltered.Request="建模信息";
+ConnectionFiltered.Diagnostic="連接：\n/P1 已過濾";
+ConnectionFiltered.Advice="";

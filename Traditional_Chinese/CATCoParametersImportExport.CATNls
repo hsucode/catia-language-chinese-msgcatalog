@@ -1,0 +1,38 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES  2011
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 CATCoParametersImportExport.CATNls
+
+
+ImportComment="導入層";
+
+Laminate.Name.Title="名稱";
+Laminate.Type.Title="類型";
+Laminate.Type.TL="TL";
+Laminate.Type.SS="SS";
+
+Laminate.Color.Title="顏色索引";
+Laminate.Stacking.Title="堆疊";
+
+Laminate.Separator="#";
+
+ImportLaminate.Message="導入層";
+
+// 3951 校正官方漢化 Errors
+
+CATCoParametersImportExport_ERR_0101.Request="層導入";
+CATCoParametersImportExport_ERR_0101.Diagnostic="導入文件的行數少于 2。";
+CATCoParametersImportExport_ERR_0101.Advice="請檢查導入文件";
+
+CannotCreateLaminateSinceDisabled.Title="無法添加層 /p1，因為已禁用根據復合體參數命令進行創建。";
+ColorIdxAlreadyUsed.Title="層 /p1：顏色索引號 /p2 已由不建議的層 /p3 使用。";
+ExistingLaminateWithSameFinalStacking.Title="層 /p1：已存在具有相同最終堆疊序列（定義為 /p3）的層 /p2。";
+MultipleDefinitionLaminate.Title="層 /p1 在導入文件中定義了多次。將僅采用最后一次定義。";
+LaminateDefinitionNotFound.Title="層 /P1 存在于模型而非文件中，定義保持不變。";
+LaminateHasNoStacking.Title="層 /p1 未定義堆疊。";
+UnexpectedLine.Title="意外的行號 /p1 '/p2'。";
+ImportFileLessTwoLines.Title="導入文件的行數少于 2。";
+MaterialNotInModel.Title="模型中未定義該文件中使用的材料 /p1。";
+OrientationNotInModel.Title="模型中未定義該文件中使用的方向 /P1。";
+FailedToRetrieveOrientations.Title="無法在復合體參數中檢索方向";
+BadTLLayer.Title="厚度法則（層數）的定義錯誤";

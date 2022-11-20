@@ -1,0 +1,45 @@
+// 3951 校正官方漢化 Nls for CATAsmUpdateCommand and its related objects
+
+// 3951 校正官方漢化 Command's transition
+CATAsmUpdateCommand.initialState.Message="更新助手";
+CATAsmUpdateCommand.AskContinueState.Message="繼續更新確認";
+CATAsmUpdateCommand.ErrorMngtState.Message="更新失敗";
+CATAsmUpdateCommand.AnalyseStaticErrorsAndInfosState.Message=" 選擇您是否希望執行其他操作";
+
+// 3951 校正官方漢化 Scan toolbar
+CATAsmUpdateCommand.UpdateScanTB.Title="掃描和更新";
+CATAsmUpdateCommand.UpdateScanTB.StrategyCombo.ShortHelp="選擇更新模式";
+CATAsmUpdateCommand.UpdateScanTB.StrategyCombo.Update="更新";
+CATAsmUpdateCommand.UpdateScanTB.StrategyCombo.Structure="結構";
+
+CATAsmUpdateCommand.UpdateScanTB.ScanGraph.ShortHelp="隱藏/顯示更新結構";
+// 3951 校正官方漢化CATAsmUpdateCommand.UpdateScanTB.ScanFirst.ShortHelp="Scan back to first step";
+// 3951 校正官方漢化CATAsmUpdateCommand.UpdateScanTB.ScanPrevious.ShortHelp="scan back to previous step";
+CATAsmUpdateCommand.UpdateScanTB.ScanPause.ShortHelp="暫停執行更新";
+CATAsmUpdateCommand.UpdateScanTB.ScanPlay.ShortHelp="更新所選步幅";
+CATAsmUpdateCommand.UpdateScanTB.ScanNext.ShortHelp="更新下一個過期步幅";
+CATAsmUpdateCommand.UpdateScanTB.ScanIconBox.ScanToSelected.ShortHelp="更新至所選步幅";
+CATAsmUpdateCommand.UpdateScanTB.ScanIconBox.ScanLast.ShortHelp="全部更新";
+CATAsmUpdateCommand.UpdateScanTB.ScanIconBox.ScanUpToExclusive.ShortHelp="更新所有父步幅";
+CATAsmUpdateCommand.UpdateScanTB.ScanExit.ShortHelp="退出";
+CATAsmUpdateCommand.UpdateScanTB.UpdateReport.ShortHelp="更新報告面板";
+CATAsmUpdateCommand.UpdateScanTB.MinimizeMemory.ShortHelp="打開/關閉內存優化";
+
+// 3951 校正官方漢化 Contextual Menu on Node Step (in work)
+CATAsmUpdateCommand.CATAsmUpdateGraphCtxMenu.ExpandOneLevel.Title="展開第一層";
+CATAsmUpdateCommand.CATAsmUpdateGraphCtxMenu.ExpandOutOfDate.Title="展開所有過期的層";
+CATAsmUpdateCommand.CATAsmUpdateGraphCtxMenu.ExpandAll.Title="全部展開";
+CATAsmUpdateCommand.CATAsmUpdateGraphCtxMenu.CollapseAll.Title="全部折疊";
+CATAsmUpdateCommand.CATAsmUpdateGraphCtxMenu.ReframeOn.Title="居中";
+CATAsmUpdateCommand.CATAsmUpdateGraphCtxMenu.ExpandAndReframeOnNextStepToUpdate.Title="使下一步幅居中";
+CATAsmUpdateCommand.CATAsmUpdateGraphCtxMenu.CenterGraph.Title="使圖居中";
+
+// 3951 校正官方漢化 Progress Task
+Updating="正在更新 ";
+// 3951 校正官方漢化 Format impose par le protocole CATIProgressTask / CATIProgressTaskUI
+ProgressTaskUI.Title="PLM 更新...";
+ProgressTaskUI.ObjectName="步幅";
+ProgressTaskUI.Comment="步幅 i/j";
+
+// 3951 校正官方漢化 Analyse Broken Relations warning dialog
+CATAsmUpdateCommand.AnalyseBrokenRelationsPanel.WarningMessage="由于某些關系中斷，PLM 更新將失敗。\n 您是否希望現在分析中斷的關系？";

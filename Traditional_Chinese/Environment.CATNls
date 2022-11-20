@@ -1,0 +1,349 @@
+// 3951 校正官方漢化===================================================================================
+// 3951 校正官方漢化XX  XX   XXXXXXX  XXXX     XXXXXX            XX   XX   XXXXXX    XXXX
+// 3951 校正官方漢化XX  XX    XX   X   XX       XX  XX           XXX XXX  XX    X   XX  X
+// 3951 校正官方漢化XX  XX    XX X     XX       XX  XX           XXXXXXX  XX       XX
+// 3951 校正官方漢化XXXXXX    XXXX     XX       XXXXX            XX X XX   XXXXX   XX
+// 3951 校正官方漢化XX  XX    XX X     XX       XX               XX   XX       XX  XX  XXX
+// 3951 校正官方漢化XX  XX    XX   X   XX  XX   XX               XX   XX  X    XX   XX  XX
+// 3951 校正官方漢化XX  XX   XXXXXXX  XXXXXXX  XXXX              XX   XX  XXXXXX     XXX X
+// 3951 校正官方漢化====================================================================================
+SETCATENV_HELP_NT.text="創建新環境文件和相應的桌面圖標。 
+
+setcatenv -e name [-d directory][-p concatenation ][-a user|global][-new yes|no][-server][-menu  yes|no]
+                  [-cf path][-icon  yes|no][-desktop yes|no][-cs product_line][-v yes|no][-tools]
+                  [-caa Module.exe][-cn CompanyName][-refresh]
+
+常規選項：
+    -e environment_name ：環境名稱，必選項。 
+    -d directory        ：環境文件存儲文件夾。 
+                          默認值為 \"/P1\"。
+    -p concatenation    ：安裝路徑。可指定多個路徑，使用 : 作為路徑分隔符。 
+                          默認值為 \"/P2\"
+    -a user|global      ：環境類型。若指定了 -d，則無用。
+                          user：環境文件存儲于 \"/P3\"。
+                          global：環境文件存儲于 \"/P4\"
+                          默認值：user
+    -new     yes|no     ：若環境有相同名稱，則覆蓋。 
+                          默認值：yes
+    -server             ：激活服務器模式。
+                          對于服務器環境，用戶數據存儲于服務器而非用戶 
+                          漫游資料中。 
+                          所有用戶特定的變量 (CATUserSetiingPath, CATTemp, CATErrorLog..) 取決于 
+                          USER_HOME 變量。對于非服務器環境（即交互環境），此變量將被賦值給 Windows 用戶資料的子文件夾。對于服務器環境，此變量將被賦值給本地計算機上的 Windows \"All Users\" 
+                          資料的子文件夾。
+                          默認值：未激活。
+    -cn \"MyCompany\"     ：用環境文件中的 \"MyCompany\" 來替換 DassaultSystemes 中的所有匹配項。這會影響 
+                          USER_HOME 值和顯示在環境文件頭中的公司名稱。   
+    -cf    file_path    ：指定您從中新建環境的現有環境的名稱或路徑。
+                          例如，命令：   setcatenv -e MyNewEnv -cf MyFirstEnv
+                          從 MyFirstEnv 的副本新建環境 MyNewEnv。
+                          此操作可繼承之前的自定義，而無需在新環境中將其重新創建。
+                          例如：CATReferenceSettingPath 變量頻繁用于存儲由管理員鎖定的 
+                          設置，并可連接多個不同級別的設置。復制現有環境 
+                          節省了時間，因為無需自定義新環境。
+                          請注意：若不使用 \"-cf\" 選項，將在新環境中使用其默認值設置所有變量。 
+                          若僅在 \"-cf\" 選項中指定了名稱，則模板環境將在默認存儲文件夾（user 或 global） 
+                          中搜索。
+    -v yes|no           ：激活詳細模式。默認值：yes
+    -h|-help            ：此幫助。
+    
+桌面相關選項：
+    -icon    yes|no     ：在 Windows 桌面創建圖標  默認值：yes
+    -menu    yes|no     ：在“開始”菜單中創建快捷方式    默認值：yes
+    -desktop yes|no     ：已不用。默認值：yes（與 -icon yes 和 -menu yes 等效）
+    -refresh            ：更新桌面和“開始”菜單快捷方式（附加安裝后使用）。
+    -cs    product_line ：指定“開始”菜單條目的產品系列。 
+                          可用產品系列：/P5。
+                          默認值：/P6。
+    -tools              ：設置與特定產品系列相關的工具快捷方式。
+                          這是專有選項，請按以下方式運行此命令：setcatenv -tools -cs MyProductLine。
+    -caa Module.exe     為已創建的快捷方式使用 Module.exe。 
+                          將在 -p 選項或 PATH 變量的指定路徑中搜索 Module.exe";
+
+// 3951 校正官方漢化***************************************************************************************************************************************
+SETCATENV_HELP_UNIX.text="新建環境文件和相應的桌面圖標。 
+
+setcatenv -e name [-d directory][-p concatenation ][-a user|global][-new yes|no][-server]
+          [-cf path][-desktop yes|no][-cs product_line][-v yes|no][-regserver]
+
+常規選項：
+    -e environment_name ：環境名稱。必選項 
+    -d directory        ：環境文件存儲文件夾。  
+                          默認值為 \"/P1\"。
+    -p concatenation    ：安裝路徑。可指定多個路徑，使用 : 作為路徑分隔符。 
+                          默認值為 \"/P2\"
+    -a user|global      ：環境類型。如果指定了 -d，則無用。 
+                          user：   環境文件存儲在 \"/P3\"。
+                          global： 環境文件存儲在 \"/P4\"
+                          默認值：user
+    -new     yes|no     ：如果環境具有相同的名稱，則將其覆蓋。 
+                          默認值：yes
+    -server             ：已不用。 
+    -cf    file_path    ：指定您要從中新建環境的現有環境的名稱或路徑。
+                          例如，命令：   setcatenv -e MyNewEnv -cf MyFirstEnv
+                          從 MyFirstEnv 副本中新建環境  MyNewEnv。
+                          這允許您繼承先前的自定義，無需在新環境中重新創建。
+                          例如，CATReferenceSettingPath 變量頻繁用于存儲由管理員鎖定的設置 
+                          并可連接多個不同級別的設置。復制現有環境可節約您的時間，
+                          因為您無需自定義新環境。
+                          請注意，如果不使用 \"-cf\" 選項，將在新環境中使用其默認值設置所有變量。 
+                          如果在 \"-cf\" 選項中僅指定了名稱，將在默認存儲文件夾 (user or global) 中搜索模板環境。
+    -v yes|no           ：激活詳細模式。默認值：yes
+    -h|-help            ：此幫助。
+    
+桌面相關選項：
+    -desktop yes|no     ：在桌面上創建快捷方式。默認值：yes
+    -regserver          ：通過添加或修改特定數量的文件（在桌面環境中支持拖放文檔時所需的文件），在工作站上注冊 
+                          應用程序，并在雙擊文檔時，與行為相關聯。 
+                          需要為每個產品系列執行此操作。如果已安裝基本配置，該選項則無用，因為桌面環境已存在。 
+                          如果未安裝任何基本配置，則僅使用 \"-regserver\" 選項。應在創建參考環境后使用，且只能由管理員使用。
+    -cs    product_line ：指定“開始”菜單條目中的產品系列。 
+                          可用產品系列：/P5。
+                          默認值為 /P6。";
+// 3951 校正官方漢化***************************************************************************************************************************************
+SETCATENV_HELP_MAC.text="新建環境文件。
+
+setcatenv -e name [-d directory][-p concatenation ][-a user|global][-new yes|no][-server]
+          [-cf path][-v yes|no]
+
+常規選項：
+    -e environment_name：環境名稱。必選項。
+    -d directory   ：環境文件存儲文件夾。
+                          默認值：\"/P1\"。
+    -p concatenation    ：安裝路徑。可指定多個路徑，使用 : 作為路徑分隔符。 
+                          默認值：\"/P2\"
+    -a user|global      ：環境類型。如指定 -d ，則無用。
+                         user：   環境文件存儲于 \"/P3\" 。
+                         global：   環境文集存儲于 \"/P4\" 
+                         默認值：user
+    -new     yes|no     ：如果環境有相同名稱，則將其覆蓋。
+                          默認值：yes
+    -server             ：已不用。 
+    -cf    file_path    ：指定您從中新建環境的現有環境的名稱或路徑。
+                         例如，命令：   setcatenv -e MyNewEnv -cf MyFirstEnv
+                          從 MyFirstEnv 的副本中新建環境 MyNewEnv。
+                          這可使您繼承先前的自定義，無需在新環境中重新創建。
+                          例如，CATReferenceSettingPath 可頻繁用于存儲由管理員鎖定的設置， 
+                          且可連接多個不同級別的設置。復制現有環境可節約您的時間，因為您無需自定義新環境。
+                          請注意，如果您不使用 \"-cf\" 選項，將在新環境中使用其默認值設置所有變量。如果在 \"-cf\" 選項中僅指定了名稱，將在默認存儲文件夾（user 或 global）中搜索模板環境。
+    -v yes|no           ：激活詳細模式。默認值：是
+    -h|-help            ：此幫助。";
+
+// 3951 校正官方漢化***************************************************************************************************************************************    
+DELCATENV_HELP_UNIX.text="刪除環境文件和相應的桌面圖標。
+
+delcatenv -e name [-d directory][-a user|global][-desktop yes|no][-cs product_line][-v yes|no][-unregserver]
+
+常規選項：
+    -e environment_name ：環境名稱。必選項。
+    -d directory        ：環境文件存儲文件夾。
+                         默認值：\"/P1\"。
+    -a user|global      ：環境類型。如果指定 -d ，則無用。
+                          user：   環境文件存儲于 \"/P2\" 。
+                          global： 環境文件存儲于 \"/P3\" 
+                          默認值：user
+    -v yes|no           ：激活詳細模式。默認：yes
+    -h|-help            ：此幫助。
+    
+桌面相關選項：
+    -desktop yes|no     ：創建桌面快捷方式。默認：yes
+    -unregserver        ：取消在工作站注冊應用程序，并刪除由 \"-regserver\" 設置 setcatenv 選項設置的適當桌面文件。效果是：將停用在桌面環境中拖放文檔以及與雙擊文檔相關聯的行為。該選項必須單獨使用： 
+                          delcatenv -unregserver -cs MyProductLine，
+                          且只能在指定的工作站中使用一次，因為它取消了同一個工作站中所有安裝的注冊。如果在同一個工作站中有多個安裝，使用該選項時請慎重。 
+    -cs    product_line ： 指定“開始”菜單條目的產品系列。 
+                         可用產品系列：/P4。
+                          默認值： /P5。";
+
+// 3951 校正官方漢化***************************************************************************************************************************************    
+DELCATENV_HELP_MAC.text="刪除環境文件。
+
+delcatenv -e name [-d directory][-a user|global][-v yes|no]
+
+常規選項：
+    -e environment_name ：環境名稱。必選項。 
+    -d directory        ：環境文件存儲文件夾。
+                         默認值：\"/P1\"。
+    -a user|global      ：環境類型。如果指定 -d ，則無用。
+                          user：環境文件存儲于 \"/P2\" 。
+                          global：環境文件存儲于 \"/P3\" 
+                          默認值：user
+    -v yes|no           ：激活詳細模式。默認：yes
+    -h|-help            ：此幫助。";
+
+// 3951 校正官方漢化***************************************************************************************************************************************    
+DELCATENV_HELP_NT.text="刪除環境文件和相應的桌面圖標。
+
+delcatenv -e name [-d directory][-a user|global][-desktop yes|no][-cs product_line][-v yes|no][-unregserver]
+
+常規選項：
+    -e environment_name ：環境名稱，必選項。
+    -d directory        ：環境文件存儲文件夾。
+                        默認值為 \"/P1\"。
+    -a user|global      ：環境類型。如果指定了 -d，則無用。
+                        user：環境文件存儲于 \"/P2\"。
+                        global：環境文件存儲于 \"/P3\"
+                        默認值：user
+    -v yes|no           ：激活詳細模式。默認值：yes
+    -h|-help            ：此幫助。
+    
+桌面相關選項：
+    -icon    yes|no     ：在 Windows 桌面創建圖標  默認值：yes
+    -menu    yes|no     ：在“開始”菜單創建快捷模式    默認值：yes
+    -desktop yes|no     ：已不用。默認值：yes（與 -icon yes 和 -menu yes 等效）
+    -cs    product_line ：指定“開始”菜單條目的產品系列。
+                        可用產品系列：/P4。
+                        默認值：/P5。
+    -tools              ：刪除與特定產品系列相關的工具快捷方式。
+                        此為專有選項，請按以下方式運行此命令：delcatenv -tools -cs MyProductLine。";
+
+// 3951 校正官方漢化***************************************************************************************************************************************
+LSCATENV_HELP.text="列出可用環境： 
+
+lscatenv   [-a user|global] [-d storage_directory_name]
+
+選項：
+    -d directory        ：環境文件存儲文件夾。
+                        默認值為 \"/P1\"。
+    -a user|global      ：環境類型。若指定了 -d，則無用。
+                        user：環境文件存儲于 \"/P2\"。
+                        global：環境文件存儲于 \"/P3\" 
+                        默認值：user";
+// 3951 校正官方漢化***************************************************************************************************************************************
+READCATENV_HELP.text="顯示環境文件的內容。
+
+readcatenv -e name [-d directory][-a user|global][-var variable][-short][-l]
+
+選項：
+    -e environment_name ：環境名稱，必選項。
+    -d directory        ：環境文件存儲文件夾。
+                        默認值為 \"/P1\"。
+    -a user|global      ：環境類型。若指定了 -d，則無用。
+                        user：環境文件存儲于 \"/P2\"。
+                        global：環境文件存儲于 \"/P3\"
+                        默認值：user
+    -var varname        ：僅顯示指定的變量值。若未設置此選項，
+                        則 readcatenv 顯示環境文件中賦值的所有變量。
+    -short              ：僅顯示變量值。
+    -l                  ：不擴展變量值。";
+
+// 3951 校正官方漢化***************************************************************************************************************************************
+CHCATENV_HELP_NT.text="編輯環境文件中的變量。
+
+chcatenv -e name -var variable=value [-d directory][-a user|global][-new][-com][-del]
+
+選項：
+    -e environment_name ：環境名稱，必選項。
+    -d directory        ：環境文件存儲文件夾。
+                        默認值為 \"/P1\"。
+    -a user|global      ：環境類型。若指定了 -d，則無用。
+                        user：環境文件存儲于 \"/P2\"。
+                        global：環境文件存儲于 \"/P3\"
+                        默認值：user
+    -var var1=new_value ：用 new_value 設置變量 var1；用引號將此參數括起。
+                        例如：chcatenv -e MyEnv -a user -var \"CATTemp=C:\Temp\MyData\"
+                        或  chcatenv -e MyEnv -a user -var \"CATTemp=C:\Temp\My Data\"
+                        若要更新變量，請按以下方式運行命令：
+                        chcatenv -e MyEnv -a user -var \"CATInstallPath=%CATInstallPath%;C:\Temp\MyNewPath\"                           
+                        或
+                        chcatenv -e MyEnv -a user -var \"CATInstallPath=C:\Temp\MyNewPath\;%CATInstallPath%\"                            
+    -new                ：若 -var 選項中所指定的變量不存在，則創建一個。
+                        例如：chcatenv -e MyEnv -a user -var \"MyVariable=FOOBAR\" -new. 
+                        要避免未請求的行為，應在變量名中避免空白字符。
+    -com \"Comment\"    ：為指定變量在環境文件中添加備注；
+                        僅可用于由用戶創建的變量。
+                        例如：chcatenv -e MyEnv -a user -var \"MyVariable=FOOBAR\" -com \"Add some comment here\"
+    -del                ：刪除 -var 選項中指定的變量（僅針對由用戶創建的變量）。
+                        例如：chcatenv -e MyEnv -a user -var \"MyVariable\" -del";
+
+// 3951 校正官方漢化***************************************************************************************************************************************
+CHCATENV_HELP_UNIX.text="編輯環境文件中的變量。
+
+chcatenv -e name -var variable=value [-d directory][-a user|global][-new][-com][-del]
+
+選項：
+    -e environment_name ：環境名稱，必選項。
+    -d directory        ：環境文件存儲文件夾。
+                        默認值為 \"/P1\"。
+    -a user|global      ：環境類型。若指定了 -d，則無用。
+                        user：環境文件存儲于 \"/P2\"。
+                        global：環境文件存儲于 \"/P3\"
+                        默認值：user
+    -var var1=new_value ：用 new_value 設置變量 var1；用引號將此參數括起。
+                        例如：chcatenv -e MyEnv -a user -var \"CATTemp=/tmp/MyData\"
+                        若要更新變量，請按以下方式運行命令：
+                        chcatenv -e MyEnv -a user -var \"CATInstallPath=\$CATInstallPath:/tmp/MyNewPath\"                           
+                        或
+                        chcatenv -e MyEnv -a user -var \"CATInstallPath=/tmp/MyNewPath:\$CATInstallPath\"
+    -new                ：若 -var 選項中指定的變量不存在，則創建一個。
+                        例如：chcatenv -e MyEnv -a user -var \"MyVariable=FOOBAR\" -new. 
+                        要避免未請求的行為，應在變量名中避免空白字符。
+    -com \"Comment\"    ：為指定變量在環境文件中添加備注；
+                        僅可用于由用戶創建的變量。
+                        例如：chcatenv -e MyEnv -a user -var \"MyVariable=FOOBAR\" -com \"Add some comment here\"
+    -del                ：刪除 -var 選項中指定的變量（僅針對由用戶創建的變量）。
+                        例如：chcatenv -e MyEnv -a user -var \"MyVariable\" -del";
+// 3951 校正官方漢化***************************************************************************************************************************************
+
+
+// 3951 校正官方漢化***************************************************************************************************************************************
+
+
+// 3951 校正官方漢化====================================================================================
+// 3951 校正官方漢化XXXXXXX  XXXXXX   XXXXXX    XXXXX   XXXXXX            XX   XX   XXXXXX    XXXX
+// 3951 校正官方漢化 XX   X   XX  XX   XX  XX  XX   XX   XX  XX           XXX XXX  XX    X   XX  X
+// 3951 校正官方漢化 XX X     XX  XX   XX  XX  XX   XX   XX  XX           XXXXXXX  XX       XX
+// 3951 校正官方漢化 XXXX     XXXXX    XXXXX   XX   XX   XXXXX            XX X XX   XXXXX   XX
+// 3951 校正官方漢化 XX X     XX XX    XX XX   XX   XX   XX XX            XX   XX       XX  XX  XXX
+// 3951 校正官方漢化 XX   X   XX  XX   XX  XX  XX   XX   XX  XX           XX   XX  X    XX   XX  XX
+// 3951 校正官方漢化XXXXXXX  XXX  XX  XXX  XX   XXXXX   XXX  XX           XX   XX  XXXXXX     XXX X
+// 3951 校正官方漢化====================================================================================
+
+AccessPb.Text="無法在 \"/P1\" 中保存環境文件。";
+BadFormatedVariable.Text="-var 選項中指定的值無效。";
+BadOptions.Text="參數錯誤，請檢查命令行";
+CannotDelOfficalVar.Text="不能刪除此變量，只能刪除新變量。";
+DefaultFolderNotFound.Text="默認環境存儲文件夾 (/P1) 不可訪問";
+DirDoesntExist.Text="目錄 /P1 不可訪問。";
+DiskFull.Text="無法保存環境文件：磁盤已滿";
+EnvCreationFailed.text="環境創建失敗";
+EnvFileDoesntExist.Text="找不到指定的環境。";
+EnvFileNotFound.Text="找不到環境文件";
+EnvNameNotSpecified.Text="環境名稱必須在“-e” 選項中指定。";
+ErrDelEnv.Text="刪除環境失敗";
+ErrDelEnvUsr.Text="刪除環境展示失敗";
+ErrUnset.Text="取消設置工作站失敗";
+FileAlreadyExist.Text="環境文件已存在";
+GeneralFailure.Text="chcatenv 初始化期間出現問題。";
+IconeCreationFailed.text="環境圖標創建失敗";
+IconeCreationFailed2.text="未創建任何桌面快捷方式，請檢查安裝目錄中是否存在 /P1。";
+InitFolderFailed.Text="找不到默認儲存文件夾。\n環境保存于：/P1";
+InvalidEnvModeOption.Text="\"-a\"  選項必須設置為 \"user\" 或 \"global\"。";
+InvalidEnvNameOption.Text="環境名稱必須在 \"-e\" 選項中指定。";
+ModifyVariableFailed.text="環境變量修改失敗。";
+MustBeSystemAdmin.Text="執行此工作指令需要管理員權限。";
+NoBlankInEnvName.text="環境名稱中不允許有空白字符";
+NoCommentOnOfficialVar.Text="您只能備注新變量。";
+NoConcatSpecified.Text="必須指定連接";
+NoDirModeOption.Text="\"-a\" 選項必須設置為 \"user\" 或 \"global\" ，或通過 \"-d\" 選項指定存儲目錄。";
+NoHome.text="找不到 \$HOME 環境變量";
+NoNewOfficialVariable.Text="/P1 已存在，請選擇其他變量名稱。";
+NoReadAccessInDir.Text="目錄 /P1 不可以讀取模式訪問";
+NoSuchVariable.text="環境文件中找不到變量。";
+NoVarSpecified.Text="必須指定 \"-var\" 選項。";
+NoWriteAccessInDir.Text="目錄 /P1 選項不可以寫入模式訪問";
+NonValidType.Text="必須通過 -a 選項指定類型（user 或 global）。";
+ReadFailed.text="無法讀取此環境";
+ReadFailed.text="無法讀取此環境";
+RefFileNotFound.Text="找不到參考文件描述符。";
+SpecifiedFolderNotFound.Text="目錄 \"/P1\" 不可訪問。";
+ToolsSetupFailed.text="工具安裝失敗";
+UnableToReadEnvFile.Text="無法讀取環境文件。";
+UnableToWriteFile.Text="無法保存已修改的環境文件。";
+UnknownOption.Text="無效選項：/P1。 ";
+UnknownProductLine.Text="/P1 不是有效的產品系列。\n-cs 選項的授權值為：/P2";
+UpdateVariableFailed.text="環境變量更新失敗。";
+VariableNotFound.Text="環境文件中找不到變量 /P1。 ";
+VariableNotValued.Text="未賦值變量 /P1。若要將空字符串設為新值，則不要在 = 符號后添加任何內容。\n例如：chcatenv -e MyEnv -a user -var\"MyNewVar=\" ";
+WSSsetupFailed.text="工作站設置失敗";
+
+

@@ -1,0 +1,63 @@
+CATKweProductTable.CATKweProductTableCom.UndoTitle="產品表";
+
+CATKweProductTable.CATKweProductTableCom.KweProductTableInitialState.Message="選擇產品實例、參數或系列部件，以定義列";
+
+CATKweProductTableFrame.KweProductTableButtons.KwePTNewRowButton.Title="新行";
+CATKweProductTableFrame.KweProductTableButtons.KwePTNewRowButton.LongHelp="添加新行";
+CATKweProductTableFrame.KweProductTableButtons.KwePTApplyRowButton.Title="應用行";
+CATKweProductTableFrame.KweProductTableButtons.KwePTApplyRowButton.LongHelp="將選定行應用到模型";
+CATKweProductTableFrame.KweProductTableButtons.KwePTParameterButton.Title="參數...";
+CATKweProductTableFrame.KweProductTableButtons.KwePTParameterButton.LongHelp="使用常用對話框選擇參數";
+CATKweProductTableFrame.KweProductTableButtons.KwePTEditSheetButton.Title="編輯表單...";
+CATKweProductTableFrame.KweProductTableButtons.KwePTEditSheetButton.LongHelp="編輯可定義產品表的表單的文件";
+CATKweProductTableFrame.KweProductTableButtons.KwePTImportButton.Title="導入...";
+CATKweProductTableFrame.KweProductTableButtons.KwePTImportButton.LongHelp="將現有表單作為中間列復制到產品表";
+CATKweProductTableFrame.KweProductTableButtons.KwePTModifyModeButton.Title="編輯單元";
+CATKweProductTableFrame.KweProductTableButtons.KwePTModifyModeButton.LongHelp="允許編輯單元";
+CATKweProductTableFrame.KweProductTableButtons.KwePTShowNeutralColumnsButton.Title="中間列";
+CATKweProductTableFrame.KweProductTableButtons.KwePTShowNeutralColumnsButton.LongHelp="顯示列，這些列不會修改模型";
+
+// 3951 校正官方漢化 Debug
+CATKweProductTableFrame.KweProductTableButtons.KwePTDeleteProductModeButton.Title="刪除產品";
+CATKweProductTableFrame.KweProductTableButtons.KwePTDeleteProductModeButton.LongHelp="如果選中，將刪除產品實例，否則將僅停用";
+CATKweProductTableFrame.KweProductTableButtons.KwePTCheckButton.Title="檢查";
+CATKweProductTableFrame.KweProductTableButtons.KwePTCheckButton.LongHelp="請檢查該產品表是否有效";
+
+CheckError_ProductTableCorrect="產品表不正確。";
+CheckError_InternalError="內部錯誤";
+CheckError_NoDesignTable="未找到設計表。";
+CheckError_ColumnObject="無法讀取 /p 列的對象。";
+CheckError_InvalidColumnObject="/p1 列的對象類型為 /p2，該類型無效。";
+CheckError_ColumnParameter="無法讀取 /p 列的參數。";
+CheckError_NoColumnInSheet="產品表的 /p 列未獲得表單中的列。";
+CheckError_NoSheet="未找到表單。";
+CheckError_FamilyElement="列 /p1：\n/p2 不是該系列的元素。";
+CheckError_InvalidParameter="列 /p1：\n 無效參數。";
+CheckError_InvalidParameterType="列 /p1：\n 無效參數類型。";
+CheckError_ParameterWithoutColumn="某個參數未鏈接到任何列。";
+CheckError_VolatileParameter="列 /p1：\n 參數可變。";
+CheckError_VolatileManipulator="列 /p1：\n 操作器可變。";
+CheckError_InvalidPLO="列 /p1：\n PLO 無效。";
+CheckError_InvalidColumnsNumber="產品表已獲得 /p1 個列。\n設計表已獲得與參數關聯的 /p2 個列。\n這些數字必須相等。";
+CheckError_InvalidFirstColumn="第一列“標識符”與參數關聯。";
+CheckError_SameColumnTitle="/p1 已是 /p2 列的標題。\n 兩個列不能具有相同標題。";
+CheckError_SameIdentifier="/p1 已是 /p2 行的標識符。\n 兩個行不能具有相同標識符。";
+CheckError_CellNotCompliantWithParameter="行 /p1：值 /p2 與 /p3 列的參數類型不兼容。";
+CheckError_FamilyLinks="系列部件中的列數：/p1。\n系列中的鏈接數：/p2。\n這些數量應相等。";
+
+RenameColumn="重命名列...";
+MakeColumnNeutral="使之處于中間位置";
+RemoveColumn="刪除";
+RefreshFamily="刷新系列";
+
+CATKweProductTableRenameColumnFrame.KwePTColumnTitleLabel.Title="列標題：";
+ConfirmMakeColumnNeutral="是否確定要使此列處于中間位置？";
+ConfirmDeleteColumn="是否確定要刪除此列？";
+
+ReplaceObjectOrCreateColumn="您可以替換列對象或新建一列。\n請回復“是”替換列對象，或回復“否”創建列。";
+UseNeutralColumnOrCreateColumn="您可以嘗試將所選內容關聯到選定的中間列或新建一列。\n請回復“是”以使用中間列，或回復“否”以創建列。";
+UseNeutralColumnError="使用選定的中間列失敗。\n請檢查該列的所有值是否與選定的對象一致。";
+
+SheetValuesCorrected="表單中的無效布爾值已替換為 true。\n已更正的值數：/p1";
+
+CATKweProductTableNoLicencePKT="您需要 PKT 許可證才可使用產品表。";

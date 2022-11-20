@@ -1,0 +1,26 @@
+LogicalErrors.Activity.Grab.Duplicate.Diagnostic="已在未釋放零件 /p1 的情況下將其抓取。對于固定 TCP 動作，將忽略抓取活動對零件位置的影響。";
+LogicalErrors.Activity.Grab.Duplicate.Advice="刪除或修改抓取活動以僅抓取一次零件，或者確保在啟動下載或上載時釋放零件。";
+LogicalErrors.Activity.Grab.NoPriorMove.Diagnostic="在移動機器人之前已抓取零件 /p1，因此無法確定抓取位置。";
+LogicalErrors.Activity.Grab.NoPriorMove.Advice="如果此零件用于固定 TCP 動作，您必須將機器人動作添加在任務中的抓取指令之前。";
+LogicalErrors.Activity.Grab.ChildAlreadyGrabbed.Diagnostic="已抓取零件 /p1 的子級。如果將標記附加到該子級，這可能會導致下載的機器人動作位置與模擬不同。";
+LogicalErrors.Activity.Grab.ChildAlreadyGrabbed.Advice="請不要同時抓取子產品和父產品。";
+LogicalErrors.Activity.Grab.ParentAlreadyGrabbed.Diagnostic="已抓取零件 /p1 的父級。如果將標記附加到該子級，這可能會導致下載的機器人動作位置與模擬不同。";
+LogicalErrors.Activity.Grab.ParentAlreadyGrabbed.Advice="請不要同時抓取子產品和父產品。";
+LogicalErrors.Activity.Grab.AttachedToWorkpiece.Diagnostic="已抓取零件 /p1，但其已連接到工件定位器或其他輔助軸。如果將標記附加到此零件或其子級，這可能會導致下載的機器人動作位置與模擬不同。";
+LogicalErrors.Activity.Grab.AttachedToWorkpiece.Advice="機器人無法抓取附加到輔助軸的零件。";
+
+LogicalErrors.Activity.Release.NotGrabbed.Diagnostic="尚未在釋放零件 /p1 之前將其抓取。對于固定 TCP 動作，將忽略釋放活動對零件位置的影響。";
+LogicalErrors.Activity.Release.NotGrabbed.Advice="修改抓取或釋放活動以在釋放零件之前先將其抓取，或者確保在啟動下載或上載時抓取零件。";
+
+LogicalErrors.Activity.Move.InvalidGrab.Diagnostic="零件 /p1 已被機器人抓取，但用于移動 TCP 動作。";
+LogicalErrors.Activity.Move.InvalidGrab.Advice="修改任務以在此動作之前釋放零件或不抓取零件。";
+LogicalErrors.Activity.Move.UnknownLocation.Diagnostic="零件 /p1 位于未知位置，但附加到此零件的標記已用于標記目標動作。";
+LogicalErrors.Activity.Move.UnknownLocation.Advice="檢查上述警告消息，以了解此錯誤的可能原因。";
+
+InvalidGrab="零件 /p1 已被機器人抓取，但用于移動 TCP 動作。修改任務以在此動作之前釋放零件或不抓取零件。";
+PartLocationMerge="無法追蹤零件 /p1 的位置。兩個或多個執行路徑在指令 '/p2' 中聚合。當來自指令 '/p3' 時，零件的位置與來自指令 '/p4' 時不同。";
+Grab.Invalid="無法追蹤零件 /p1 的位置。Grab 指令 /p2 無效。請參閱早期的警告以了解原因。";
+NoPriorMove="無法追蹤零件 /p1 的位置。在移動機器人之前發生 /p2 指令，因此無法確定機器人的位置。您必須將機器人動作添加在任務中的此指令之前。";
+InvalidMove="無法追蹤零件 /p1 的位置。在無法計算機器人位置時發生 /p2 指令。  ";
+SeeEarlierWarnings="請參閱早期的警告以了解原因。";
+DummyMsg="/p1";

@@ -1,0 +1,58 @@
+Message="信息";
+Question="問題";
+NumericalColumn="/P1 函數中使用的列非數值列。該函數將返回 0";
+NumericalColumnHd="非數字列";
+NotAssociated="/P2 函數中所用的參數 /P1 與設計表 /P3 中的列無關聯。該函數將返回 0";
+NotAssociatedHd="參數未相關聯";
+DuplicateDT="警告！兩個或更多個設計表具有相同的名稱：/P1。\n從規則調用的設計表函數無法判斷要使用哪個設計表";
+DuplicateDTHd="設計表具有同一名稱";
+NoDT="找不到設計表 /P1。請檢查您使用的設計表函數中的名稱";
+NoDTHd="未找到設計表";
+StringType="參數 /P1 必須為字符串（設計表的列名稱）";
+StringTypeHd="/P1";
+NumericalType="參數 /P1 必須為數值";
+NumericalTypeHd="/P1";
+ColumnName="/P1 不是設計表的列名稱";
+ColumnNameHd="/P1";
+NumericalColumn2="名稱為 /P1 的列非數值列";
+NumericalColumn2Hd="/P1";
+FileDontExist="找不到文件 /P1";
+MacroDontExist="此文檔中不存在從關系 /P1 啟動的宏";
+BadArgument="為宏 /P1 指定的參數 /P2 不能用作 VB 腳本程序的參數";
+BadArgumentHd="參數類型不正確";
+WrongArgNb="為 /P3 (/P1) 指定的參數數量與等待的數量不匹配 (/P2)";
+WrongArgNbHd="宏的參數數量不正確";
+SheetKO="文件 /P1 不存在或為只讀。函數 SetCell 失敗";
+SheetKOHd="函數 SetCell 失敗";
+SheetBadIndex="函數 SetCell 的參數 indexRow 和 indexColumn 必須大于或等于 1";
+DTNotDeactivated="必須停用頁的設計表才能使函數 SetCell 工作";
+ColumnDontExist="找不到列 /P1 導致函數 LocateValueInColumn 失敗， \n可能因為找不到設計表文件";
+RowDontExist="找不到行 /P1 導致函數 LocateValueInRow 失敗，\n可能因為找不到設計表文件";
+
+StringType2="參數 /P1 必須是以下字符串之一：\"<\"、 \">\"、\"<=\"、\">=\" 和 \"==\"";
+
+
+
+
+VolatileSheet.SetCellForbidden.Title="禁止使用 SetCell 方法";
+VolatileSheet.SetCellForbidden.Message="因 CreateSheet 函數而不能在創建的頁上使用 SetCell 方法。這些頁為只讀。";
+
+VolatileSheet.ExcelWorksheetIndexError.Title="Excel 工作表索引錯誤";
+VolatileSheet.ExcelWorksheetIndexError.Message="Excel 工作表索引必須大于或等于 1。無法創建頁。";
+
+VolatileSheet.FilePathSuffixUnknown.Title="未知的文件格式錯誤";
+VolatileSheet.FilePathSuffixUnknown.Message="您嘗試使用的文件未以 \"txt\" 或 \"xls\" 擴展名結尾。用于創建頁的授權表文件為文本文件或 Excel 文件。 ";
+VolatileSheet.FilePathError.Title="文件路徑錯誤";
+VolatileSheet.FilePathError.Message="無法訪問要創建頁的文件。";
+
+VolatileSheet.UnknownRepRefType.Title="未知的展示參考類型";
+VolatileSheet.UnknownRepRefType.Message="對于文本或 Excel 類型，必須使用展示參考創建頁。";
+
+VolatileSheet.ARMTableEmpty.Title="語法錯誤：表名稱為空";
+VolatileSheet.ARMTableEmpty.Message="檢索資源以創建頁的表名稱為空。正確的語法應為 tableName|logicalNameOfResource。";
+
+VolatileSheet.ARMLogicalNameEmpty.Title="語法錯誤：邏輯名稱為空";
+VolatileSheet.ARMLogicalNameEmpty.Message="檢索資源以創建頁的邏輯名稱的為空。正確的語法為 tableName|logicalNameOfResource。";
+
+VolatileSheet.ARMSyntaxError.Title="語法錯誤：無法創建頁";
+VolatileSheet.ARMSyntaxError.Message="語法錯誤：正確的語法為 tableName|logicalNameOfResource。";

@@ -1,0 +1,173 @@
+CheckButtonExtendEnd.LongHelp="圓角曲面可在 E 處外插延伸以與支持面相交";
+CheckButtonExtendEnd.ShortHelp="在 E 處外插延伸";
+CheckButtonExtendStart.LongHelp="圓角曲面可在 S 處外插延伸以與支持面相交";
+CheckButtonExtendStart.ShortHelp="在 S 處外插延伸";
+CheckButtonFormFactor.LongHelp="允許定義圓角曲面的形式系數";
+CheckButtonFormFactor.ShortHelp="圓角曲面的形式系數";
+CheckButtonFormFactor.Title="形式系數： ";
+CheckButtonLeadInRadius1.LongHelp="圓角曲面到支持面 1 在其邊線處的半徑";
+CheckButtonLeadInRadius1.ShortHelp="到支持面 1 的半徑";
+CheckButtonLeadInRadius1.Title="引入線";
+CheckButtonLeadInRadius2.LongHelp="圓角曲面到支持面 2 在其邊線處的半徑";
+CheckButtonLeadInRadius2.ShortHelp="到支持面 2 的半徑";
+CheckButtonLeadInRadius2.Title="引入線";
+CheckButtonMatchEnd.LongHelp="圓角曲面可在 E 處配裝到支持面";
+CheckButtonMatchEnd.ShortHelp="在 E 處配裝";
+CheckButtonMatchStart.LongHelp="圓角曲面可在 S 處配裝到支持面";
+CheckButtonMatchStart.ShortHelp="在 S 處配裝";
+CheckButtonMidRadius.LongHelp="允許定義圓角中線處的半徑";
+CheckButtonMidRadius.ShortHelp="中線處的半徑";
+CheckButtonMidRadius.Title="中間半徑： ";
+CheckButtonTrimCluster1.LongHelp="可在圓角曲面的適當邊線處修剪支持面 1 的曲面";
+CheckButtonTrimCluster1.ShortHelp="修剪支持面 1";
+CheckButtonTrimCluster2.LongHelp="可在圓角曲面的適當邊線處修剪支持面 2 的曲面";
+CheckButtonTrimCluster2.ShortHelp="修剪支持面 2";
+Clean.Title="清除";
+ComboFilletType.LongHelp="2 個支持面 + 半徑：
+  帶半徑的圓角。
+2 個支持面 + 弦長度： 
+  半徑作為弦長度。
+2 個支持面 + 1 條支持曲線：
+  由曲線跟蹤邊線。
+  一個支持面上僅需要一條曲線。
+ 2 個支持面 + 3 個半徑：
+  給定半徑頂部的 2 個引入線半徑觸發非對稱創建。
+2 個支持面 + 2 個弦長度：
+  到支持面相交處的兩個距離觸發非對稱創建。
+2 個支持面 + 最小實際半徑：
+  保留帶最小實際半徑的圓角。";
+ComboFilletType.ShortHelp="所示類型";
+ComboSegmentType.LongHelp="-支持面 1-
+通過在第一個支持面上更改曲面來獲得初始參數化。
+-支持面 2-
+通過在第二個支持面上更改曲面來獲得初始參數化。
+-兩個支持面-
+通過在兩個支持面上更改曲面來獲得初始參數化。
+-縫合-
+根據公差集，去除過小元素。
+-平均值-
+插入的段將在兩個初始段之間取平均值。";
+ComboSegmentType.ShortHelp="參數化";
+Continuity1.Button_G0.LongHelp="邊線到支持面 1 的 GO 連續";
+Continuity1.Button_G0.ShortHelp="G0 到支持面 1";
+Continuity1.Button_G1.LongHelp="邊線到支持面 1 的 G1 連續";
+Continuity1.Button_G1.ShortHelp="G1 到支持面 1";
+Continuity1.Button_G2.LongHelp="邊線到支持面 1 的 G2 連續";
+Continuity1.Button_G2.ShortHelp="G2 到支持面 1";
+Continuity1.Button_G3.LongHelp="邊線到支持面 1 的 G3 連續";
+Continuity1.Button_G3.ShortHelp="G3 到支持面 1";
+Continuity2.Button_G0.LongHelp="邊線到支持面 2 的 GO 連續";
+Continuity2.Button_G0.ShortHelp="G0 到支持面 2";
+Continuity2.Button_G1.LongHelp="邊線到支持面 2 的 G1 連續";
+Continuity2.Button_G1.ShortHelp="G1 到支持面 2";
+Continuity2.Button_G2.LongHelp="邊線到支持面 2 的 G2 連續";
+Continuity2.Button_G2.ShortHelp="G2 到支持面 2";
+Continuity2.Button_G3.LongHelp="邊線到支持面 2 的 G3 連續";
+Continuity2.Button_G3.ShortHelp="G3 到支持面 2";
+Debug.Title="禁用";
+DialogBoxTitle="高級圓角";
+End.LongHelp="圓角曲面可在 E 處外插延伸并配裝到支持面邊線";
+End.ShortHelp="E 處邊線";
+FrameExtend.LongHelp="圓角曲面可在其起點或終點擴展和配裝。
+起點側標記為 S。
+終點側標記為 E。";
+FrameExtend.Title="擴展";
+FrameFilletType.LongHelp="小圖顯示了提供的類型。
+參數如圖所示。";
+FrameFilletType.Title="圓角類型";
+FrameInput.Title="輸入";
+FrameOption.LongHelp="參數化
+重新限定
+擴展";
+FrameOption.Title="選項";
+FrameParameter.LongHelp="參數 - 半徑與弦長度相互交換
+半徑僅為類型 2 個支持面 + 半徑的圓角曲面的半徑。
+半徑為類型 2 個支持面 + 3 個半徑定義引入線邊線。
+弦長度的定義如小圖所示。
+引入線半徑是支持面邊線處的圓角曲面的半徑。
+邊線到支持面的連續為 G0、G1、G2、G3。
+中間半徑
+形式系數";
+FrameParameter.Title="半徑參數";
+FrameSegmentType.LongHelp="指定如何影響圓角曲面的參數化。";
+FrameSegmentType.Title="參數化";
+FrameSupport1.LongHelp="支持面 1 為一組必須連接的曲面。";
+FrameSupport1.Title="支持面 1";
+FrameSupport2.LongHelp="支持面 2 為一組必須連接的曲面。";
+FrameSupport2.Title="支持面 2";
+FrameTrimType.LongHelp="可將圓角曲面修剪為面或修剪并重新近似為曲面（無面）。";
+FrameTrimType.Title="重新限定";
+LabelCluster1.LongHelp="為支持面 1 選擇曲面";
+LabelCluster1.ShortHelp="支持面 1 的曲面";
+LabelCluster1.Title="曲面 1： ";
+LabelCluster2.LongHelp="為支持面 2 選擇曲面";
+LabelCluster2.ShortHelp="支持面 2 的曲面";
+LabelCluster2.Title="曲面 2： ";
+LabelContinuity1.LongHelp="定義圓角曲面到支持面 1 的曲面之間的連續階數";
+LabelContinuity1.ShortHelp="連續到支持面 1";
+LabelContinuity1.Title="連續支持面1： ";
+LabelContinuity2.LongHelp="定義圓角曲面到支持面 2 的曲面之間的連續階數";
+LabelContinuity2.ShortHelp="連續到支持面 2";
+LabelContinuity2.Title="連續支持面2： ";
+LabelCurve1.LongHelp="在支持面 1 上選擇曲線。
+一個支持面上僅需一條曲線。";
+LabelCurve1.ShortHelp="支持面 1 上的曲線";
+LabelCurve1.Title="曲線： ";
+LabelCurve2.LongHelp="在支持面 2 上選擇曲線。
+一個支持面上僅需一條曲線。";
+LabelCurve2.ShortHelp="支持面 2 上的曲線";
+LabelCurve2.Title="曲線： ";
+LabelExtrapolate.LongHelp="指定是否要擴展圓角直到它留下兩個群集。";
+LabelExtrapolate.ShortHelp="在 S 或 E 處外插延伸";
+LabelExtrapolate.Title="外插延伸： ";
+LabelLeadInRadius1.LongHelp="圓角曲面到支持面 1 在其邊線處的半徑";
+LabelLeadInRadius1.ShortHelp="到支持面 1 的半徑";
+LabelLeadInRadius1.Title="半徑 1： ";
+LabelLeadInRadius1_Length.ShortHelp="支持面 1 上的長度";
+LabelLeadInRadius1_Length.Title="長度 1： ";
+LabelLeadInRadius1_length.LongHelp="支持面 1 上的圓角起始曲線到兩個弧切線的相交之間的距離";
+LabelLeadInRadius2.LongHelp="圓角曲面到支持面 2 在其邊線處的半徑";
+LabelLeadInRadius2.ShortHelp="到支持面 2 的半徑";
+LabelLeadInRadius2.Title="半徑 2： ";
+LabelLeadInRadius2_Length.LongHelp="支持面 2 上的圓角起始曲線到兩個弧切線的相交之間的距離";
+LabelLeadInRadius2_Length.ShortHelp="支持面 2 上的長度";
+LabelLeadInRadius2_Length.Title="長度 2： ";
+LabelMatch.LongHelp="指定圓角邊線與基礎群集的邊線是否以相切的方式相連接。";
+LabelMatch.ShortHelp="在 S 處或 E 處配裝";
+LabelMatch.Title="終點配裝： ";
+LabelRadius.LongHelp="為圓角曲面指定滾球的半徑";
+LabelRadius.ShortHelp="滾球半徑";
+LabelRadius.Title="半徑： ";
+LabelRadius_Chordal.LongHelp="為創建圓角指定弦長度";
+LabelRadius_Chordal.ShortHelp="創建圓角所需的弦長度";
+LabelRadius_Chordal.Title="弦長度： ";
+LabelRadius_MinRadius.LongHelp="指定在創建圓角時需保持的最小半徑。
+這對于選定 G2 和 G3 連續時尤為有用。";
+LabelRadius_MinRadius.ShortHelp="創建圓角時需保持的最小實際半徑。";
+LabelRadius_MinRadius.Title="最小實際半徑： ";
+LabelSegTolerance.LongHelp="已獲取圓角的初始分段，并增加該值直至符合公差。";
+LabelSegTolerance.ShortHelp="公差";
+LabelSegTolerance.Title="公差： ";
+LinkContinuity.LongHelp="使到支持面 2 的連續階數與到支持面 1 的連續階數相鏈接。
+到支持面 2 的連續等于到支持面 1 的連續。";
+LinkContinuity.ShortHelp="到兩個支持面的連續相同";
+Merge.Title="合并";
+RadioButtonFace.LongHelp="如果一條邊線被配裝，圓角將被面化。";
+RadioButtonFace.ShortHelp="修剪為面";
+RadioButtonTrim.LongHelp="如果一條邊線被配裝，圓角將被重新近似。";
+RadioButtonTrim.ShortHelp="修剪，非面";
+SegmentType.Average="平均值";
+SegmentType.Both="兩個支持面";
+SegmentType.Rip="裂縫";
+SegmentType.Stitch="縫合";
+SegmentType.Support1="支持面 1";
+SegmentType.Support2="支持面 2";
+Start.LongHelp="圓角曲面可在 S 處外插延伸并配裝到支持面邊線";
+Start.ShortHelp="S 處邊線";
+TabPageParameter.Title="參數";
+Type.ChordalFillet="2 個支持面 + 弦長度";
+Type.EdgeFillet="2 個支持面 + 1 條支持面曲線";
+Type.Fillet="2 個支持面 + 半徑";
+Type.MinRadiusFillet="2 個支持面 + 最小實際半徑";
+Type.ThreeRadiiFillet="2 個支持面 + 3 個半徑";
+Type.TwoLengthsFillet="2 個支持面 + 2 個弦長度";

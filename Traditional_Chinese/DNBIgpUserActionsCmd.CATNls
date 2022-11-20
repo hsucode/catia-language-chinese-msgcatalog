@@ -1,0 +1,64 @@
+// 3951 校正官方漢化 To get the Labels reflected for the ACTIONS 
+// 3951 校正官方漢化 		 ActionTypeName.Label  for Action Display Name
+// 3951 校正官方漢化		 For each child of the Action, to display the correct information
+// 3951 校正官方漢化       ActionTypeName.Child1.Label for first child of Action
+// 3951 校正官方漢化       ActionTypeName.Child2.Label for second child of Action
+
+DNBIgpSpotWeld.Title="點焊 ";
+DNBIgpSpotWeld.Help="創建焊接操作";
+DNBIgpSpotWeld.ShortHelp="焊接操作";
+DNBIgpSpotWeld.LongHelp="創建焊接操作";
+
+DNBIgpSpotWeld.Label="Weld";
+DNBIgpSpotWeld.Child1.Label="關閉焊槍";
+DNBIgpSpotWeld.Child2.Label="焊接時間";
+DNBIgpSpotWeld.Child3.Label="打開焊槍";
+
+DNBIgpSpotRetract.Title="點退出 ";
+DNBIgpSpotRetract.Help="創建退出操作";
+DNBIgpSpotRetract.ShortHelp="退出操作";
+DNBIgpSpotRetract.LongHelp="創建退出操作";
+
+DNBIgpSpotRetract.Label="退出";
+DNBIgpSpotRetract.Child1.Label="退出焊槍";
+
+DNBIgpSpotPick.Title="拾取點 ";
+DNBIgpSpotPick.Help="創建拾取操作";
+DNBIgpSpotPick.ShortHelp="拾取操作";
+DNBIgpSpotPick.LongHelp="創建拾取操作";
+
+DNBIgpSpotPick.Label="Pick";
+DNBIgpSpotPick.Child1.Label="關閉夾持器";
+DNBIgpSpotPick.Child2.Label="拾取零件";
+
+DNBIgpSpotDrop.Title="放置點 ";
+DNBIgpSpotDrop.Help="創建放置操作";
+DNBIgpSpotDrop.ShortHelp="放置操作";
+DNBIgpSpotDrop.LongHelp="創建放置操作";
+
+DNBIgpSpotDrop.Label="Drop";
+DNBIgpSpotDrop.Child1.Label="打開夾持器";
+DNBIgpSpotDrop.Child2.Label="放置零件";
+
+DNBIgpToolPick.Title="工具拾取 ";
+DNBIgpToolPick.Help="創建工具拾取操作";
+DNBIgpToolPick.ShortHelp="工具拾取操作";
+DNBIgpToolPick.LongHelp="創建工具拾取操作";
+
+DNBIgpToolPick.Label="工具拾取";
+DNBIgpToolPick.Child1.Label="安裝工具";
+
+DNBIgpToolDrop.Title="工具放置 ";
+DNBIgpToolDrop.Help="創建工具放置操作";
+DNBIgpToolDrop.ShortHelp="工具放置操作";
+DNBIgpToolDrop.LongHelp="創建工具放置操作";
+
+DNBIgpToolDrop.Label="工具放置";
+DNBIgpToolDrop.Child1.Label="卸載工具";
+
+DNBIgpUserActionsCmd.DefineFather.Message="選擇父活動";
+DNBIgpUserActionsCmd.SelectResource.Message="選擇工具作為資源";
+DNBIgpUserActionsCmd.SelectOption.Message="選擇要在其中插入操作的選項";
+
+Title="AddChild 失敗";
+ErrorMessage="AddChild 命令失敗。可能嘗試了向其自身添加不允許的活動類型";

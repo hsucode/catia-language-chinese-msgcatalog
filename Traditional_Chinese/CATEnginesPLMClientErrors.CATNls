@@ -1,0 +1,33 @@
+
+// 3951 校正官方漢化 FACTORIZATION ERROR DECLARATION :
+// 3951 校正官方漢化 XXXXX_F_n  : _F indicated that this client PLM error is a factorization error
+// 3951 校正官方漢化 XXXXX_F_n.Advice & XXXXX_F_n.Request : common to all the concerned component
+
+// 3951 校正官方漢化 Case 0 : XXXXX_F_0:  Factorization error without parameter  
+// 3951 校正官方漢化 XXXXX_F_0.Diagnostic = "\p PLM< components cannot ....."
+// 3951 校正官方漢化 where \p is not given at the error posting to the reporter :
+// 3951 校正官方漢化 \p is computed by the reporter just before sending the error to the listener
+// 3951 校正官方漢化 \p value : the number of PLM concerned by the error.
+
+// 3951 校正官方漢化 Case 1 : XXXXX_F_1 : Factorization error with 1 parameter : 
+// 3951 校正官方漢化 This parameter is the list of paramters coresponding to each PLM component 
+// 3951 校正官方漢化 This parameter has to be documented
+
+
+
+NotFirstVersionNotModifiable_F_1.Diagnostic="參考不是第一版參考，因此無法修改其標識符屬性集。相關參考：\n/p1";
+NotFirstVersionNotModifiable_F_1.Advice="";
+NotFirstVersionNotModifiable_F_1.Request="您只能修改第一版參考的標識符屬性集。";
+
+
+BlockingOwnerMaturity1_F_0.Diagnostic="
+    無法創建 /p 實例，因為其所有者參考不可編輯：
+   \n因為其成熟度狀態，其所有者參考不可編輯。";
+BlockingOwnerMaturity1_F_0.Advice="修改所有者對象的成熟度狀態。";
+BlockingOwnerMaturity1_F_0.Request="";
+
+
+// 3951 校正官方漢化  In Diagnostic's /p : Precision on which system problem occurs: this is DEBUG information
+PLMc_ServerSystemPb_F_1.Diagnostic="服務器中的系統問題 \n（調試信息：\n/p）";
+PLMc_ServerSystemPb_F_1.Advice="";
+PLMc_ServerSystemPb_F_1.Request="";

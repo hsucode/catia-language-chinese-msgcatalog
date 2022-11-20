@@ -1,0 +1,82 @@
+// 3951 校正官方漢化 ---
+// 3951 校正官方漢化 Branch Error messages
+// 3951 校正官方漢化 ---
+UnableToRemoveBranchPoint="您目前無法移除此分支點。其他路徑仍堵在此處。請先斷開它們。";
+
+// 3951 校正官方漢化 Build error dedicated to sweep reps
+// 3951 校正官方漢化 -------------------------------------
+
+// 3951 校正官方漢化 Build error CATESB_ERROR_SWEEP_STD
+ESB_BUILD_ERR_999.Diagnostic="段數據不一致。";
+ESB_BUILD_ERR_999.Request="內部段數據損壞或缺失。";
+ESB_BUILD_ERR_999.Advice="必須刪除分支。";
+
+// 3951 校正官方漢化 Build error CATESB_ERROR_SWEEP_CURVE
+ESB_BUILD_ERR_1.Diagnostic="沒有傳遞線路鏈接到段。";
+ESB_BUILD_ERR_1.Request="分支不再鏈接到任何傳遞線路。";
+ESB_BUILD_ERR_1.Advice="刪除分支。";
+
+// 3951 校正官方漢化 Build error CATESB_ERROR_SWEEP_DIAM
+ESB_BUILD_ERR_2.Diagnostic="段的直徑等于 0。";
+ESB_BUILD_ERR_2.Request=" ";
+ESB_BUILD_ERR_2.Advice="必須設置直徑。";
+
+// 3951 校正官方漢化 Build error CATESB_ERROR_SWEEP_PROFILE
+ESB_BUILD_ERR_3.Diagnostic="輪廓沒有設置為段/分支。";
+ESB_BUILD_ERR_3.Request="沒有為段/分支展示定義輪廓。";
+ESB_BUILD_ERR_3.Advice="在段的輪廓管理中更改輪廓。";
+
+// 3951 校正官方漢化 Build error CATESB_ERROR_SWEEP_LAW
+ESB_BUILD_ERR_4.Diagnostic="無法計算平面電纜展示的角度法則。";
+ESB_BUILD_ERR_4.Request="FLEX 數據不一致。";
+ESB_BUILD_ERR_4.Advice="重新構建分支或刪除分支。";
+
+// 3951 校正官方漢化 Build error CATESB_ERROR_SWEEP_INVERT
+ESB_BUILD_ERR_5.Diagnostic="無效的方向。";
+ESB_BUILD_ERR_5.Request="必須反轉段。";
+ESB_BUILD_ERR_5.Advice="反轉段端點。";
+
+
+// 3951 校正官方漢化 Build error dedicated to folds
+// 3951 校正官方漢化 -------------------------------
+
+// 3951 校正官方漢化 Build error CATESB_ERROR_FOLD_STD
+ESB_BUILD_ERR_100.Diagnostic="折疊數據不一致。";
+ESB_BUILD_ERR_100.Request="折疊內部數據損壞或缺失。";
+ESB_BUILD_ERR_100.Advice="必須刪除折疊/分支。";
+
+// 3951 校正官方漢化 Build error CATESB_ERROR_FOLD_CURVES
+ESB_BUILD_ERR_101.Diagnostic="無法構建折疊內部實體：引導曲線。";
+ESB_BUILD_ERR_101.Request="未正確定義折疊輸入。";
+ESB_BUILD_ERR_101.Advice="請修改折疊輸入。";
+
+// 3951 校正官方漢化 Build error CATESB_ERROR_FOLD_SWEEPS
+ESB_BUILD_ERR_102.Diagnostic="無法構建折疊內部實體：掃掠。";
+ESB_BUILD_ERR_102.Request="未正確定義折疊輸入。";
+ESB_BUILD_ERR_102.Advice="請修改折疊輸入。";
+
+// 3951 校正官方漢化 Build error CATESB_ERROR_FOLD_SPLITS
+ESB_BUILD_ERR_103.Diagnostic="無法構建折疊內部實體：分割。";
+ESB_BUILD_ERR_103.Request="未正確定義折疊輸入。";
+ESB_BUILD_ERR_103.Advice="請修改折疊輸入。";
+
+// 3951 校正官方漢化 Build error CATESB_ERROR_FOLD_JOIN
+ESB_BUILD_ERR_104.Diagnostic="無法構建折疊內部實體：矩形接頭。";
+ESB_BUILD_ERR_104.Request="未正確定義折疊輸入。";
+ESB_BUILD_ERR_104.Advice="修改折疊輸入或切換到薄展示模式。";
+
+// 3951 校正官方漢化 Build error CATESB_ERROR_FOLD_UNION
+ESB_BUILD_ERR_105.Diagnostic="無法構建折疊內部實體：添加。";
+ESB_BUILD_ERR_105.Request="未正確定義折疊輸入。";
+ESB_BUILD_ERR_105.Advice="請修改折疊輸入。";
+
+// 3951 校正官方漢化 Build error CATESB_ERROR_FOLD_ELECCURVE
+ESB_BUILD_ERR_106.Diagnostic="分支上的折疊區域之間可能出現相互干涉，或 Flex 曲線計算可能失敗。";
+ESB_BUILD_ERR_106.Request="計算時電氣曲線未考慮折疊。";
+ESB_BUILD_ERR_106.Advice="解決干涉并重新計算分支曲線。";
+
+// 3951 校正官方漢化 Build error CATESB_ERROR_FOLD_DIMENSIONS
+ESB_BUILD_ERR_107.Diagnostic="扁平電纜厚度大于寬度。";
+ESB_BUILD_ERR_107.Request="使用不正確的尺寸無法計算折疊展示。";
+ESB_BUILD_ERR_107.Advice="請修改扁平電纜尺寸。";
+

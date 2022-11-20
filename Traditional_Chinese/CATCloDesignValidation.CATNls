@@ -1,0 +1,121 @@
+Spec01="規格 - 查找規格值不同于線路值的零件";
+Spec02="規格 - 查找無規格值的零件";
+PartSpec="零件規格";
+LineSpec="線路規格";
+
+Ids01="對象名稱不符合命名規則";
+Ids_column1="默認名稱 3D ";
+Ids_column2="默認名稱 2D";
+
+Iso01="ISO 符號名稱將不會被 ISOGEN 識別（未映射）";
+Iso_column1="Iso 符號名稱";
+
+Cord1="原點處的 CATProduct 坐標";
+Cord_column1="原點詳圖上的零件";
+
+RefBroken01="斷開實例 - 參考鏈接 - 查詢";
+RefBroken_column1="參考 1";
+RefBroken_column2="狀態報告 1";
+
+RefBrokenFix01="斷開實例 - 參考鏈接 - 固定";
+RefBrokenFix_column1="參考 2";
+RefBrokenFix_column2="狀態報告 2";
+
+TimeStamp01="時間戳 - 參考比工作包更新";
+TimeStamp_column1="參考時間戳";
+TimeStamp_column2="工作包時間戳";
+
+Atr01="未定義零件的必需屬性值";
+Atr02="未定義連接器的必需屬性值";
+Atr_column1="屬性名稱";
+Atr_column2="零件/連接器";
+
+Run01="線路包含長度小于允許值的段";
+Run02="線路包含已斷開的段";
+Run03="線路包含大于最大允許值的彎曲半徑";
+Run04="線路包含與彎曲規則不匹配的彎曲半徑";
+Run_column1="線路段編號";
+Run_column2="實際值";
+Run_column3="所需的值";
+
+Mfg01="彎曲 - 彎曲半徑與彎曲規則不匹配";
+Mfg04="彎曲 - 夾具長度小于允許的最小值";
+Mfg05="彎曲 - 相切長度小于允許的最小值";
+Mfg06="彎曲 - 彎曲無法由給定的彎曲機處理";
+Mfg08="彎曲 - 彎曲角度小于允許的最小值";
+Mfg09="彎曲 - 彎曲角度大于允許的最大值";
+Mfg10="管/管道長度大于允許的最大值";
+Mfg11="彎曲 - 末端連接器上定義的流與節點創建順序不一致";
+Mfg12="管/管道 - 零長度管檢查";
+Mfg_column1="段號";
+Mfg_column2="實際值";
+Mfg_column3="所需的值";
+Mfg_column4="類型";
+
+Slope01="管/管道的斜度不是允許值";
+Slope_column1="段";
+Slope_column2="實際斜度百分比";
+Slope_column3="所需的斜度百分比";
+
+Cnx01="連接 - 已連接的零件不兼容";
+Cnx02="連接 - 有多個零件連接至零件";
+Cnx03="連接 - 兩個已連接零件之間有間隔";
+Cnx04="連接 - 已連接的零件未對齊";
+Cnx05="連接 - 已連接的零件未正確計時/定向";
+Cnx07="連接 - 零件并未與其所有連接器連接";
+Cnx_column1="連接器";
+Cnx_column2="信息";
+
+RunCnx01="線路連接至零件且它們之間有間隔";
+RunCnx02="線路中放置了零件并且零件孔連接器與線路不對齊";
+RunCnx03="線路連接至另一線路且它們之間有間隔";
+RunCnx_column1="零件（名稱）";
+RunCnx_column2="零件（類型）";
+RunCnx_column3="描述";
+
+IdDup01="復制 - 找到多個零件同名";
+IdDupDoc="實例名稱重復的文檔";
+
+RunIdDup="復制 - 找到多個線路同名";
+
+EqtCablewayCnx01="連接 - 設備未連接到纜道網絡";
+EqtCablewayCnx_column1="設備連接器";
+EqtCablewayCnx_column2="設備信息";
+
+HangerCnx01="連接 - 支架未連接到纜道網絡";
+HangerCnx02="連接 - 支架并未與其所有連接器連接";
+HangerCnx_column1="支架連接器";
+HangerCnx_column2="支架信息";
+
+SectionCnx01="連接 - 截面的連接少于 2 個";
+SectionCnx_column1="連接數";
+SectionCnx_column2="截面信息";
+
+LoftCnx01="連接 - 放樣的連接少于 2 個";
+LoftCnx_column1="連接數";
+LoftCnx_column2="放樣信息";
+
+HVAC_Util01="在每個 HVAC 零件連接器位置添加 3D 點";
+HVAC_Util_column1="違例原因";
+HVAC_Util_GS_Name="連接器點";
+HVAC_Util01_Err_Msg1="只讀文檔";
+HVAC_Util01_Err_Msg2="無足夠的權限";
+
+OutOfDateInstance="工作包過期的實例";
+OutOfDateInstance_column1="參考存儲路徑";
+OutOfDateInstance_column2="實例時間戳";
+OutOfDateInstance_column3="參考時間戳";
+
+BadContext01="放樣 - 斷開的上下文鏈接 - 查詢";
+BadContextFix01="放樣 - 斷開的上下文鏈接 - 固定（文檔必須保存為固定，才能生效）";
+
+QryBrokenSpecData01="零件和設計數據的斷開關系？查詢";
+FixBrokenSpecData01="零件和設計數據的斷開關系？固定";
+FixBrokenSpecData01_column1="子產品名稱";
+FixBrokenSpecData01_column2="斷開規格數據狀態";
+
+InstAttrSyncChk=" 檢查實例屬性是否與參考屬性同步 - 查詢";
+InstAttrSyncFix=" 檢查實例屬性是否與參考屬性同步 - 固定";
+InstAttrSyncFix_column1=" 實例屬性名稱不同步";
+
+

@@ -1,0 +1,259 @@
+DialogBoxTitle="凸緣";
+
+//Selection area
+
+FrameSelection.LongHelp="選擇選項";
+
+LabelAlignment.Title="對齊： ";
+LabelAlignment.LongHelp="基礎凸緣方向對齊
+- 殼體法線 -
+  為選定曲面的引導線上每點法線的方向。
+- 引導線 + Prio. 切線 -
+  由移動框架類型定義，此框架類型由曲線每點的法線平面和定義的方向對齊。
+  每個曲線點處的基礎凸緣方向可以不同。
+- 引導線 + Prio. 方向 -
+  由移動框架定義，此框架僅由定義的方向對齊。
+  每個曲線點處的基礎凸緣方向均相同。
+- 移動框架 -
+  由用戶定義的移動框架類型來定義。";
+LabelAlignment.ShortHelp="基礎凸緣方向對齊";
+
+Alignment.ShellNormal="殼體法線";
+Alignment.GuidePrioTangent="引導線 + Prio. 切線";
+Alignment.GuidePrioDirection="引導線 + Prio. 方向";
+Alignment.MovingFrames="移動框架";
+ComboAlign.LongHelp="基礎凸緣方向對齊
+- 殼體法線 -
+  為選定曲面的引導線上每點法線的方向。
+- 引導線 + Prio. 切線 -
+  由移動框架類型定義，此框架類型由曲線每點的法線平面和定義的方向對齊。
+  每個曲線點處的基礎凸緣方向可以不同。
+- 引導線 + Prio. 方向 -
+  由移動框架定義，此框架僅由定義的方向對齊。
+  每個曲線點處的基礎凸緣方向均相同。
+- 移動框架 -
+  由用戶定義的移動框架類型來定義。";
+ComboAlign.ShortHelp="基礎凸緣方向對齊";
+
+LabelGuide.Title="引導線： ";
+LabelGuide.LongHelp="選擇一條或多條引導線。
+可選擇以下元素：
+- 簡單曲線。允許所有曲線類型。
+- 連接到曲面的曲線。
+- 曲面邊線。";
+LabelGuide.ShortHelp="選擇引導線";
+
+LabelAlignSurface.Title="曲面： ";
+LabelAlignSurface.LongHelp="僅可用于對齊殼體法線。
+選擇一個曲面或平面，其法線指定引導線點的基礎凸緣方向。";
+LabelAlignSurface.ShortHelp="選擇一個或多個曲面或平面。";
+
+//Options tab
+
+TabPageOptions.Title="選項";
+
+//Orientation frame
+
+FrameOrientation.Title="方向";
+FrameOrientation.LongHelp="僅用于對齊  
+- 引導線 + Prio. 切線
+- 引導線 + Prio. 方向";
+CheckButtonAuto.Title="自動";
+CheckButtonAuto.LongHelp="由引導線平面的法線定義基礎凸緣方向。";
+CheckButtonAuto.ShortHelp="自動定義基礎凸緣方向";
+CheckButtonBasicSurface.Title="基礎曲面";
+CheckButtonBasicSurface.LongHelp="從面的基礎曲面獲取法線。";
+CheckButtonBasicSurface.ShortHelp="從面的基礎曲面獲取的法線";
+LabelAlignDirection.Title="方向： ";
+LabelAlignDirection.LongHelp="可通過上下文菜單手動定義凸緣方向。";
+LabelAlignDirection.ShortHelp="手動定義基礎凸緣方向";
+
+//Parameter frame
+
+FrameParameter.Title="參數";
+FrameParameter.LongHelp="凸緣參數";
+
+LabelLength.Title="長度： ";
+LabelLength.LongHelp="定義凸緣的主長度。";
+LabelLength.ShortHelp="凸緣長度";
+
+LabelAngle.Title="角度： ";
+LabelAngle.LongHelp="根據選定的對齊選項，定義凸緣角度。";
+LabelAngle.ShortHelp="基礎凸緣方向和操作器之間的角度";
+
+CheckButtonIndividualLength.Title="單獨的";
+CheckButtonIndividualLength.LongHelp="可為每個操作器單獨定義長度。
+可通過在引導線的中間移動接觸點創建新操作器。";
+CheckButtonIndividualLength.ShortHelp="單獨長度";
+
+CheckButtonIndividualAngle.Title="單獨的";
+CheckButtonIndividualAngle.LongHelp="可為每個操作器單獨定義角度。
+可通過在引導線的中間移動接觸點創建新操作器。";
+CheckButtonIndividualAngle.ShortHelp="單獨角度";
+
+CheckButtonLengthBothSides.Title="兩側";
+CheckButtonLengthBothSides.LongHelp="在凸緣對齊的兩個方向均創建凸緣曲面。";
+CheckButtonLengthBothSides.ShortHelp="兩側凸緣";
+
+CheckButtonDistanceLength.Title="距離";
+CheckButtonDistanceLength.LongHelp="開啟：
+將在凸緣方向創建凸緣曲面。
+將沿基礎凸緣方向測量凸緣長度。
+關閉：
+將在凸緣方向創建凸緣曲面。
+將沿定義的凸緣方向測量凸緣長度。";
+CheckButtonDistanceLength.ShortHelp="沿基礎凸緣方向（開啟）或定義的凸緣方向（關閉）測量的長度。";
+
+CheckButtonAlignOpposite.Title="相反對齊";
+CheckButtonAlignOpposite.LongHelp="僅當“兩側”和“單獨角度”處于激活狀態時可用。
+可對齊相反角度。
+兩個角度之間始終相差 180 度。
+在這種情況下，僅創建一個凸緣曲面。";
+CheckButtonAlignOpposite.ShortHelp="對齊相反角度 = 角度 + 180 度";
+
+CheckButtonAssignTangents.Title="分配切線";
+CheckButtonAssignTangents.LongHelp="在凸緣曲面的相反邊線處，將在引導線的兩端采用切線。";
+CheckButtonAssignTangents.ShortHelp="在相反邊線處從引導線采用切線。";
+
+PushButtonInvertLength.Title="反轉";
+PushButtonInvertLength.LongHelp="可反轉基礎凸緣方向。
+長度值也將被反轉。";
+PushButtonInvertLength.ShortHelp="反轉方向";
+
+PushButtonInvertAngle.Title="反轉";
+PushButtonInvertAngle.LongHelp="僅當角度不為零時可用。
+可反轉凸緣角度。
+角度值也將被反轉。";
+PushButtonInvertAngle.ShortHelp="反轉角度";
+
+PushButtonInvertLengthIcon.LongHelp="可反轉基礎凸緣方向。
+長度值也將被反轉。";
+PushButtonInvertLengthIcon.ShortHelp="反轉方向";
+
+PushButtonInvertAngleIcon.LongHelp="僅當角度不為零時可用。
+可反轉凸緣角度。
+角度值也將被反轉。";
+PushButtonInvertAngleIcon.ShortHelp="反轉角度";
+
+PushButtonRevertLength.LongHelp="可還原基礎凸緣方向。
+長度值將被保留。";
+PushButtonRevertLength.ShortHelp="還原方向";
+
+PushButtonRevertAngle.LongHelp="僅當角度不為零時可用。
+可還原凸緣角度。
+角度值將被保留。";
+PushButtonRevertAngle.ShortHelp="還原角度";
+
+//Advanced tab
+
+TabPageAdvanced.Title="高級";
+
+//Options frame
+
+FrameAdvancedOption.Title="選項";
+FrameAdvancedOption.LongHelp="凸緣可以 
+- 起始于參考 - 目標。
+  引導線被投影到參考上。
+  此投影的方向是基礎方向。  
+- 結束于參考 - 連接。
+  對齊和凸緣角度將不考慮參考。";
+LabelType.Title="類型： ";
+LabelType.LongHelp="- 無 -
+  未定義任何項。
+- 目標 -
+  凸緣曲面起始于目標曲面（參考）。
+  結果凸緣將被移到目標曲面。
+  引導線和角度被用作輸入參數。
+- 連接 - 
+  結果凸緣結束于選定的參考。
+  參考元素可為曲面或平面。";
+LabelType.ShortHelp="起始于目標曲面的凸緣";
+Options.None="無";
+Options.Target="目標";
+Options.Connect="連接";
+ComboOptions.LongHelp="- 無 -
+  未定義任何項。
+- 目標 -
+  凸緣曲面起始于目標曲面（參考）。
+  結果凸緣將被移到目標曲面。
+  引導線和角度被用作輸入參數。
+- 連接 - 
+  結果凸緣結束于選定的參考。
+  參考元素可為曲面或平面。";
+ComboOptions.ShortHelp="使用目標曲面";
+
+LabelReference.Title="參考： ";
+LabelReference.LongHelp="選擇參考（目標曲面）
+參考元素可為曲面或平面。";
+LabelReference.ShortHelp="參考為曲面或平面";
+
+//Crowning frame
+
+FrameAdvancedCrown.Title="過凸起";
+FrameAdvancedCrown.LongHelp="通過指定凸起系數或拔模角度使凸緣曲面凸起。
+當開啟過凸起選項，兩側選項將被禁用。";
+CheckButtonCrownFactor.Title="系數";
+CheckButtonCrownFactor.LongHelp="凸緣中間點的凸起高度取決于凸起系數和凸緣長度（未過凸起）。";
+CheckButtonCrownFactor.ShortHelp="凸起系數";
+CheckButtonCrownAngle.Title="角度";
+CheckButtonCrownAngle.LongHelp="拔模角度是凸緣端切線旋轉的角度。";
+CheckButtonCrownAngle.ShortHelp="拔模角度";
+CheckButtonIndividualCrown.Title="單獨凸起";
+CheckButtonIndividualCrown.LongHelp="可使用操作器為每個點單獨指定拔模角度。";
+CheckButtonIndividualCrown.ShortHelp="單獨拔模角度";
+
+//Shape frame
+
+FrameAdvancedShape.Title="形狀";
+FrameAdvancedShape.LongHelp="影響凸緣邊線上的操作器的效果。";
+CheckButtonShape.Title="形狀";
+CheckButtonShape.LongHelp="當凸緣至少有一個內部操作器，且為參數長度、角度或過凸起單獨賦值時，可影響凸緣形。
+如果形設為關閉，則默認使用光順形。";
+CheckButtonShape.ShortHelp="影響凸緣邊線的形狀";
+Shape.Linear="線性形狀";
+Shape.Local="局部形狀";
+Shape.Smooth="光順形狀";
+Shape.Global="全局形狀";
+
+//Corner frame
+
+FrameAdvancedCorner.Title="圓角";
+FrameAdvancedCorner.LongHelp="可分別選擇和計算圓角。";
+CheckButtonCorner.Title="圓角";
+CheckButtonCorner.LongHelp="選擇圓角以在特定轉換條件下分別計算它們。";
+CheckButtonCorner.ShortHelp="單獨計算圓角";
+
+
+//More Info area
+
+FrameDeviation.Title="偏差";
+CheckButtonDeviation.Title="形： ";
+CheckButtonDeviation.LongHelp="顯示與凸緣的偏差。";
+CheckButtonDeviation.ShortHelp="凸緣偏差";
+CheckButtonGuideDeviation.Title="引導線： ";
+CheckButtonGuideDeviation.LongHelp="顯示與引導曲線近似值的偏差。";
+CheckButtonGuideDeviation.ShortHelp="引導線偏差";
+
+//-------------------------------------------------------------------------
+
+DomainMode.Title="域模式已更改為強制單域。
+不再支持域模式的使用首個域。";
+
+DomainModeWhenIndividual.Title="當設置了單獨的長度、角度或凸起，只有單域曲線可用作引導曲線。如果設置了單獨選項，多域將不再受支持。";
+
+AutoDir.Title="自動方向不再受支持。請選擇一個方向。";
+
+//Neu
+EnableStructureControl.Title="脊線選擇的結構控制模式已更改為啟用結構控制。
+不再支持結構控制模式的忽略結構。";
+
+SpineInvertDirections.Title="已在更新的環境中創建此特征。
+結果在當前環境中可能會更改。
+建議在更新的環境下使用此特征。";
+
+CornerFlangeWarning.Title="已在更新的環境中創建此特征。
+將忽略選定的圓角。";
+
+InputOrderWarning.Title="已在更新的環境中創建此特征。
+將忽略輸入階數。";
+

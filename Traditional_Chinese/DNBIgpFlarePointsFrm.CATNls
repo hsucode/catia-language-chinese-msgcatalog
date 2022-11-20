@@ -1,0 +1,72 @@
+// 3951 校正官方漢化*****************************************************************************
+// 3951 校正官方漢化  FLARE POINTS FRAME
+// 3951 校正官方漢化*****************************************************************************
+Title="燃燒點";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Labels/Captions
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化Flare Start section
+chkFlareStartMode.Title="擴口起始角";
+lblFlareStartDistance.Title="Distance";
+lblFlareStartAngle.Title="Angle";
+
+// 3951 校正官方漢化Flare End section
+chkFlareEndMode.Title="擴口終點";
+lblFlareEndDistance.Title="Distance";
+lblFlareEndAngle.Title="Angle";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Short Help
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+chkFlareStartMode.ShortHelp="向焊接軌跡添加/移除擴口起點截面";
+lblFlareStartDistance.ShortHelp="定義擴口起點和傾角點之間的距離";
+lblFlareStartAngle.ShortHelp="為擴口起點定義自定義傾角";
+
+chkFlareEndMode.ShortHelp="向焊接軌跡添加/移除擴口終點截面";
+lblFlareEndDistance.ShortHelp="定義傾角點和擴口終點之間的距離";
+lblFlareEndAngle.ShortHelp="為擴口終點定義自定義傾角";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Long Help
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+chkFlareStartMode.LongHelp="向焊接軌跡添加/移除擴口起點截面。
+如果此設置發生更改，則將重新計算軌跡的標記數。";
+
+lblFlareStartDistance.LongHelp="定義擴口起點和傾角點之間的距離。
+采用全局傾角設置的第一個軌跡點將是按給定線性距離劃分的自焊接起點的偏移。";
+
+lblFlareStartAngle.LongHelp="為擴口起點定義自定義傾角。
+第一個軌跡點將使用此傾角而不使用全局傾角。";
+
+chkFlareEndMode.LongHelp="向焊接軌跡添加/移除擴口終點截面。
+如果此設置發生更改，則將重新計算軌跡的標記數。";
+
+lblFlareEndDistance.LongHelp="定義傾角點和擴口終點之間的距離。
+采用全局傾角設置的最后一個軌跡點將是按給定線性距離劃分的自焊接終點的偏移。";
+
+lblFlareEndAngle.LongHelp="為擴口終點定義自定義傾角。
+最后一個軌跡點將使用此傾角而不使用全局傾角。";
+
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 Parameter 默認值
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+FlareStartDistanceMinimum="0";
+FlareStartDistanceMaximum="1000";
+FlareStartDistanceDefault="50";
+FlareStartDistanceStep="25";
+
+FlareEndDistanceMinimum="0";
+FlareEndDistanceMaximum="1000";
+FlareEndDistanceDefault="50";
+FlareEndDistanceStep="25";
+
+FlareStartAngleMinimum="-90";
+FlareStartAngleMaximum="90";
+FlareStartAngleDefault="30";
+FlareStartAngleStep="1";
+
+FlareEndAngleMinimum="-90";
+FlareEndAngleMaximum="90";
+FlareEndAngleDefault="30";
+FlareEndAngleStep="1";

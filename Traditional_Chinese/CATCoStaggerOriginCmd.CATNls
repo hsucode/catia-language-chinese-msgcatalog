@@ -1,0 +1,91 @@
+// 3951 校正官方漢化 States
+CATCoStaggerOriginCmd.WaitingForPlyGroup.Message="選擇鋪層組";
+CATCoStaggerOriginCmd.Idle.Message="選擇參數并檢查或計算交錯原點";
+CATCoStaggerOriginCmd.WaitingForReferencePoint.Message="選擇一點作為參考點";
+CATCoStaggerOriginCmd.WaitingForOriginPoint.Message="選擇一點作為原點";
+
+// 3951 校正官方漢化 Error & Warning messages
+
+UnexpectedError.Message="意外錯誤";
+MissingOriginPoint.Message="未定義原點";
+MissingRosette.Message="無關聯的坐標系";
+ReferencePointNotFound.Message="特定參考點/p1已定義但無法再從 CAT 零件中找到";
+StaggerIndexOutOfRange.Message="交錯索引超出范圍 [/p1, /p2]";
+OriginPointOutOfPly.Message="原點不屬于鋪層曲面";
+OddStaggerIndexConflict.Message="已請求了最小交錯索引，但鋪層與也具有奇數索引的鋪層 /p1 交疊";
+EvenStaggerIndexConflict.Message="已請求了最小交錯索引，但鋪層與也具有奇數索引的鋪層 /p1 交疊";
+SameStaggerIndexAsLinkedPly.Message="具有與交疊鋪層 /p1 相同的交錯索引";
+AcceptableStaggeringConflict.Message="原點不在交錯線（#SI=/p1）上，但足夠接近（/p2<=/p3）";
+DuplicatedPlyName.Message="鋪層組中的其他鋪層有相同名稱";
+OrientationOutOfRange.Message="已跳過該鋪層，因為其方位超出范圍 [/p1,/p2]";
+OriginTooFarFromStaggerLine.Message="原點不在交錯線（#SI=/p1）上并且遠離它（/p2>/p3）";
+ReferencePointProjectNotFound.Message="參考點不可投影在曲面上";
+CopyAllOriginPointForAllSelectionPlies.Message="執行了多重選擇時，將生成原點的基準副本（無移動點的可能性）";
+CopyOriginPointForNewPly.Message="選定的點是 /p1 的交錯原點。將生成基準副本（無移動點的可能性）";
+
+EmptyPlyGroup.Message="鋪層組為空";
+NoReferenceSurfaceFound.Message="在該組的任何鋪層中都未找到參考曲面";
+PliesWithDifferentSurface.Message="所有鋪層不共享相同曲面。只考慮 /p1，但會對某些鋪層導致某些鋪層無法預料的結果";
+ConfirmOK.Message="真要確認更改并關閉面板嗎？";
+
+FileExists.Message="文件存在";
+ReplaceFile.Message="想要替換現有文件嗎？";
+ChangeOpenBody.Message="/p1 不屬于鋪層的制造開放幾何體。\n您想要移動它（選“是”）還是只簡單地生成一份基準副本（選“否”）？";
+
+UnknownStatus.Message="* 未知 *";
+
+// 3951 校正官方漢化 Status & other displayed data in table
+StatusSumUp.OK="確定";
+StatusSumUp.KO="* 失敗！*";
+StatusSumUp.Warning="警告";
+StatusSumUp.Info="信息";
+StatusSumUp.Unknown="???";
+
+ReferencePoint.Default="<默認值>";
+OriginPoint.Computed="<計算值>";
+OriginPoint.None="<無>";
+
+Filter.Default="<默認值>";
+Filter.All="<全部>";
+
+MessagesTitle="交錯原點定義";
+UserInterrupt.Message="任務已取消";
+
+UnexpectedError.Title="交錯原點定義";
+
+// 3951 校正官方漢化 Parameter 默認值
+MinimumStaggerValue.default="20";
+MinimumNumberOfPlies.default="4";
+MaterialWidth.default="100";
+Gap.default="1";
+Tolerance.default="1";
+AngleForOrientation.minimum="-180";
+AngleForOrientation.maximum="+180";
+
+// 3951 校正官方漢化 Graphic properties
+HighlightContour.Thickness="7";
+HighlightContour.LineType="1";
+HighlightLogicalContour.Thickness="7";
+HighlightLogicalContour.LineType="2";
+HighlightPoint.PointType="4";
+HighlightParallel.Thickness="2";
+HighlightParallel.LineType="2";
+HighlightUsedParallel.Thickness="2";
+HighlightUsedParallel.LineType="1";
+HighlightPerpendicular.Thickness="2";
+HighlightPerpendicular.LineType="6";
+
+// 3951 校正官方漢化 Progress bar
+ProgressTaskUI.Title="交錯原點...";
+ProgressTaskUI.ObjectName="分析/計算";
+ProgressTaskUI.Comment="進度";
+ProgressTaskUI.Step0.ObjectName="初始化";
+ProgressTaskUI.Step1.ObjectName="分析";
+ProgressTaskUI.Step2.ObjectName="計算";
+
+ExportTable.Success="此表已正確導出到文件";
+ExportTable.Fail="導出表失敗";
+
+StaggerOriginProjectionPointFailed.Message="無法投影以下參考點：/P1想要繼續嗎？";
+
+

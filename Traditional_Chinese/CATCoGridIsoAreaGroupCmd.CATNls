@@ -1,0 +1,43 @@
+CATCoGridIsoAreaGroupCmd.PtIndState.Message="在創作窗口中挑選一個指示點以定義取樣點 ";
+CATCoGridIsoAreaGroupCmd.PtSelState.Message="選擇一個頂點作為取樣點 ";
+
+Area.SynchroParams.WarnDlgContinue.Title="其他厚度參數同步";
+Area.SynchroParams.WarnDlgContinue.Message="您是否想僅針對具有以前的默認值 /p2的等厚度區域限定對新默認厚度比率 /p1 進行拓展?";
+
+AC_Warning="警告";
+Warning_AreaDuplication="這些等厚度區域是相同的。這可能導致無效的結果。
+請移除不必要的相同等厚度區域。";
+Warning_AreaDuplication2="這些等厚度區域是相同的，請從以下列表中移除其中一部分：\n/p1\n這將導致錯誤的結果。";
+Warning_AreaDuplication3.Request="重復的等厚度區域";
+Warning_AreaDuplication3.Diagnostic="下列等厚度區域是相同的： \n/p1\n這將導致無效的結果。";
+Warning_AreaDuplication3.Advice="移除不必要的重復等厚度區域";
+
+Warning_AreaConnected="這些等厚度區域彼此相互連接。請單擊鋪層定義。";
+Warning_AreaConnected2="下列等厚度區域彼此相互連接：\n/p1\n請檢查鋪層定義。";
+Warning_AreaConnected3.Request="連接的等厚度區域";
+Warning_AreaConnected3.Diagnostic="下列等厚度區域彼此相互連接：\n/p1。";
+Warning_AreaConnected3.Advice="請檢查鋪層定義。";
+
+Warning_AreaOverlap="這些等厚度區域彼此相互重疊。請檢查鋪層定義。";
+Warning_AreaOverlap2="這些等厚度區域彼此相互重疊。\n/p1\n請檢查鋪層定義。";
+Warning_AreaOverlap3.Request="重疊的等厚度區域";
+Warning_AreaOverlap3.Diagnostic="下列等厚度區域彼此相互重疊：\n/p1。";
+Warning_AreaOverlap3.Advice="請檢查鋪層定義。";
+
+MessagesTitle="錯誤";
+CannotHaveNegativeOrNullMinimumWidthITA.Message="要開始點的初始化，用于選擇等厚度區域的最小寬度標準必須大于 0mm。";
+ConfirmUnselectOfPreviousPoints.Message="一些點已被選中。\n你真要取消選擇它們并重啟點的初始化？";
+
+DropOffValuesShouldNotBeNull.Message="最大值和默認衰減值必須大于 0mm。\n";
+MaxDropOffValueShouldBeGreaterThanDefault.Message="最大衰減值必須大于或等于默認值。";
+DropOffValuesShouldNotBeNullUpdateProposed.Message="最大和默認衰減值必須大于 0mm。\n您是否希望用在斜坡支持面中找到的最小和最大步幅來設置默認和最大衰減值（分別為 /p1mm 和 /p2mm）？";
+
+DefaultDropOffValueUsed.Message="使用的默認衰減值";
+NonRelimitedEdge.Message="非受限邊線";
+
+ProgressTaskUI.Title="等厚度區域";
+ProgressTaskUI.id0.ObjectName="初始化等厚度區域組的工作曲面";
+ProgressTaskUI.id1.ObjectName="選擇足夠寬的等厚度區域";
+ProgressTaskUI.id2.ObjectName="計算等厚度區域的底部邊線";
+Interrupted.Message="用戶已中斷任務";
+

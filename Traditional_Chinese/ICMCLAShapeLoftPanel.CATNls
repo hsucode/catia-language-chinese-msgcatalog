@@ -1,0 +1,304 @@
+DialogBoxTitle="放樣";
+
+//Selection
+
+LabelGuides.Title="引導線： ";
+LabelGuides.LongHelp="在 V 方向選擇兩條或更多曲線元素作為引導線。";
+LabelGuides.ShortHelp="V 方向的引導線";
+
+LabelProfiles.Title="輪廓： ";
+LabelProfiles.LongHelp="在 U 方向選擇兩條或更多曲線元素作為輪廓。";
+LabelProfiles.ShortHelp="U 方向的輪廓";
+
+CheckButtonSpine.Title="脊線： ";
+CheckButtonSpine.LongHelp="在 V 方向選擇一條曲線元素作為脊線。";
+CheckButtonSpine.ShortHelp="選擇脊線";
+
+
+//Options tab
+
+TabOptions.Title="選項";
+
+//Tolerance frame
+
+FrameTolerance.Title="公差";
+FrameTolerance.LongHelp="定義公差";
+
+LabelIntersection.Title="相交： ";
+LabelIntersection.LongHelp="選定的輪廓和引導曲線必須彼此相交以創建結果的公差值范圍。";
+LabelIntersection.ShortHelp="相交公差";
+
+LabelSegment.Title="段： ";
+LabelSegment.LongHelp="確定引導線和輪廓之間相交點處的結果曲面的段邊界。";
+LabelSegment.ShortHelp="段公差";
+
+
+//Guide/Profile Segmentation frame
+
+FrameGuideSegmentation.Title="引導線分段";
+FrameGuideSegmentation.LongHelp="根據引導線上的分段點影響結果。";
+
+ComboGuideSegmentation.LongHelp="- 首個 -
+  段數由首個選定的引導線定義。
+- 最多 -
+  段數由具備最多段數的引導線定義。
+- 所有 -
+  段數由所有引導線定義。";
+
+FrameProfileSegmentation.Title="輪廓分段";
+FrameProfileSegmentation.LongHelp="根據輪廓上的分段點影響結果。";
+
+ComboProfileSegmentation.LongHelp="- 首個 -
+  段數由首個選定的輪廓定義。
+- 最多 -
+  段數由具備最多段數的輪廓定義。
+- 所有 -
+  段數由所有輪廓定義。";
+
+ComboSegmentation.First="首個";
+ComboSegmentation.Max="最多";
+ComboSegmentation.All="所有";
+
+//Guide/Profile Trim frame
+
+FrameGuideTrim.Title="引導線修剪";
+FrameGuideTrim.LongHelp="可臨時修剪沒有相合端的輸入曲線。根據需要從輸入曲線獲得的結果，選擇起點或終點或兩者。然后將在臨時修剪的引導線之間創建結果曲面。";
+
+CheckButtonGuideTrimStart.Title="起點";
+CheckButtonGuideTrimStart.LongHelp="在起點處修剪引導線。";
+CheckButtonGuideTrimStart.ShortHelp="選項：起點";
+CheckButtonGuideTrimEnd.Title="終點";
+CheckButtonGuideTrimEnd.LongHelp="在終點處修剪引導線。";
+CheckButtonGuideTrimEnd.ShortHelp="選項：終點";
+
+FrameProfileTrim.Title="輪廓修剪";
+FrameProfileTrim.LongHelp="可臨時修剪沒有相合端的輸入曲線。根據需要從輸入曲線獲得的結果，選擇起點或終點或兩者。然后將在臨時修剪的輪廓之間創建結果曲面。";
+
+CheckButtonProfileTrimStart.Title="起點";
+CheckButtonProfileTrimStart.LongHelp="在起點處修剪輪廓。";
+CheckButtonProfileTrimStart.ShortHelp="選項：起點";
+CheckButtonProfileTrimEnd.Title="終點";
+CheckButtonProfileTrimEnd.LongHelp="在終點處修剪輪廓。";
+CheckButtonProfileTrimEnd.ShortHelp="選項：終點";
+
+
+//Guide/Profile Coupling frame
+
+FrameGuideCoupling.Title="引導線耦合";
+FrameGuideCoupling.LongHelp="這些選項能夠在結果曲面穿越引導線時管理結果曲面的內部參數化。
+可使用以下選項指定每組曲線之間耦合的參數化：
+- 無
+- 段
+- 單元
+- 彎曲
+- 引導線耦合連續。";
+
+ComboGuideCoupling.LongHelp="- 無 -
+  耦合由命令自動定義，并且用戶無法控制引導線的重新參數化。
+- 段 -
+  耦合的計算由曲線集包含的段數定義，該曲線集定義允許用戶根據內部連續重新參數化的引導線。
+- 單元 -
+  耦合的計算由單元數定義，這些單元定義允許用戶根據內部連續重新參數化的引導線。 
+- 彎曲- 
+  耦合的計算由彎曲數定義，這些彎曲定義允許用戶根據內部連續重新參數化的引導線。
+- 引導線耦合連續 -
+  連續選項僅可用于選項段、單元和彎曲。";
+
+ContinuityGuideCoupling.Button_G0.LongHelp="結果沿引導線保留 G0 連續。";
+ContinuityGuideCoupling.Button_G0.ShortHelp="沿引導線 G0 連續";
+ContinuityGuideCoupling.Button_G1.LongHelp="結果沿引導線保留 G1 連續。";
+ContinuityGuideCoupling.Button_G1.ShortHelp="沿引導線 G1 連續";
+ContinuityGuideCoupling.Button_G2.LongHelp="結果沿引導線保留 G2 連續。";
+ContinuityGuideCoupling.Button_G2.ShortHelp="沿引導線 G2 連續";
+ContinuityGuideCoupling.LongHelp="沿引導線的連續設置：G0、G1、G2。";
+ContinuityGuideCoupling.ShortHelp="連續設置";
+
+FrameProfileCoupling.Title="輪廓耦合";
+FrameProfileCoupling.LongHelp="這些選項能夠在結果曲面穿越輪廓時管理結果曲面的內部參數化。
+可使用以下選項指定每組曲線之間耦合的參數化：
+- 無
+- 段
+- 單元
+- 彎曲
+- 輪廓耦合連續。";
+
+ComboProfileCoupling.LongHelp="- 無 -
+  耦合由命令自動定義，并且用戶無法控制輪廓的重新參數化。
+- 段 -
+  耦合的計算由曲線集包含的段數定義，該曲線集定義允許用戶根據內部連續重新參數化的輪廓。
+- 單元 -
+  耦合的計算由單元數定義，這些單元定義允許用戶根據內部連續重新參數化的輪廓。 
+- 彎曲- 
+  耦合的計算由彎曲數定義，這些彎曲定義允許用戶根據內部連續重新參數化的輪廓。
+- 輪廓耦合連續 -
+  連續選項僅可用于選項段、單元和彎曲。";
+
+ComboCoupling.Bends="彎曲";
+ComboCoupling.Cells="單元";
+ComboCoupling.None="無";
+ComboCoupling.Segments="段";
+
+ContinuityProfileCoupling.Button_G0.LongHelp="結果在輪廓上具備 G0 連續。";
+ContinuityProfileCoupling.Button_G0.ShortHelp="輪廓上 G0 連續";
+ContinuityProfileCoupling.Button_G1.LongHelp="結果在輪廓上具備 G1 連續。";
+ContinuityProfileCoupling.Button_G1.ShortHelp="輪廓上 G1 連續";
+ContinuityProfileCoupling.Button_G2.LongHelp="結果在輪廓上具備 G2 連續。";
+ContinuityProfileCoupling.Button_G2.ShortHelp="輪廓上 G2 連續";
+ContinuityProfileCoupling.LongHelp="輪廓上的連續設置：G0、G1、G2。";
+ContinuityProfileCoupling.ShortHelp="連續設置";
+
+
+//Guide/Profile Alignment frame
+
+FrameGuideAlignment.Title="引導線對齊";
+FrameGuideAlignment.LongHelp="允許影響任一引導線的選定起始曲線和結束曲線與相鄰支持曲面集之間的連續條件。";
+
+CheckButtonSupportGuide1.Title="支持面： ";
+CheckButtonSupportGuide1.LongHelp="選擇用于在引導線起點處提供邊線連續的元素。
+默認設置為 G0。
+每個選定的元素上可用的連續有 G0、G1 和 G2。";
+CheckButtonSupportGuide1.ShortHelp="選擇引導線起點處的支持元素";
+
+CheckButtonSupportGuide2.Title="支持面： ";
+CheckButtonSupportGuide2.LongHelp="選擇用于在引導線終點處提供邊線連續的元素。
+默認設置為 G0。
+每個選定的元素上可用的連續有 G0、G1 和 G2。";
+CheckButtonSupportGuide2.ShortHelp="選擇引導線終點處的支持元素";
+
+GuideAlignmentStart.Button_G0.LongHelp="允許影響任一引導線的選定起始曲線與相鄰支持曲面集之間的連續條件。";
+GuideAlignmentStart.Button_G0.ShortHelp="起點處 G0";
+
+GuideAlignmentStart.Button_G1.LongHelp="允許影響任一引導線的選定起始曲線與相鄰支持曲面集之間的連續條件。";
+GuideAlignmentStart.Button_G1.ShortHelp="起點處 G1";
+
+GuideAlignmentStart.Button_G2.LongHelp="允許影響任一引導線的選定起始曲線與相鄰支持曲面集之間的連續條件。";
+GuideAlignmentStart.Button_G2.ShortHelp="起點處 G2";
+
+GuideAlignmentStart.Button_G3.LongHelp="允許影響任一引導線的選定起始曲線與相鄰支持曲面集之間的連續條件。";
+GuideAlignmentStart.Button_G3.ShortHelp="起點處 G3";
+
+GuideAlignmentEnd.Button_G0.LongHelp="允許影響任一引導線的選定結束曲線與相鄰支持曲面集之間的連續條件。";
+GuideAlignmentEnd.Button_G0.ShortHelp="終點處 G0";
+
+GuideAlignmentEnd.Button_G1.LongHelp="允許影響任一引導線的選定結束曲線與相鄰支持曲面集之間的連續條件。";
+GuideAlignmentEnd.Button_G1.ShortHelp="終點處 G1";
+
+GuideAlignmentEnd.Button_G2.LongHelp="允許影響任一引導線的選定結束曲線與相鄰支持曲面集之間的連續條件。";
+GuideAlignmentEnd.Button_G2.ShortHelp="終點處 G2";
+
+GuideAlignmentEnd.Button_G3.LongHelp="允許影響任一引導線的選定結束曲線與相鄰支持曲面集之間的連續條件。";
+GuideAlignmentEnd.Button_G3.ShortHelp="終點處 G3";
+
+
+FrameProfileAlignment.Title="輪廓對齊";
+FrameProfileAlignment.LongHelp="允許影響任一輪廓的選定起始曲線和結束曲線與相鄰支持曲面集之間的連續條件。";
+
+CheckButtonSupportProfile1.Title="支持面： ";
+CheckButtonSupportProfile1.LongHelp="選擇用于在輪廓起點處提供邊線連續的元素。
+默認設置為 G0。
+每個選定的元素上可用的連續有 G0、G1 和 G2。";
+CheckButtonSupportProfile1.ShortHelp="選擇輪廓起點處的支持元素";
+
+CheckButtonSupportProfile2.Title="支持面： ";
+CheckButtonSupportProfile2.LongHelp="選擇用于在輪廓終點處提供邊線連續的元素。
+默認設置為 G0。
+每個選定的元素上可用的連續有 G0、G1 和 G2。";
+CheckButtonSupportProfile2.ShortHelp="選擇輪廓終點處的支持元素";
+
+ProfileAlignmentStart.Button_G0.LongHelp="允許影響任一輪廓的選定起始曲線與相鄰支持曲面集之間的連續條件。";
+ProfileAlignmentStart.Button_G0.ShortHelp="起點處 G0";
+
+ProfileAlignmentStart.Button_G1.LongHelp="允許影響任一輪廓的選定起始曲線與相鄰支持曲面集之間的連續條件。";
+ProfileAlignmentStart.Button_G1.ShortHelp="起點處 G1";
+
+ProfileAlignmentStart.Button_G2.LongHelp="允許影響任一輪廓的選定起始曲線與相鄰支持曲面集之間的連續條件。";
+ProfileAlignmentStart.Button_G2.ShortHelp="起點處 G2";
+
+ProfileAlignmentStart.Button_G3.LongHelp="允許影響任一輪廓的選定起始曲線與相鄰支持曲面集之間的連續條件。";
+ProfileAlignmentStart.Button_G3.ShortHelp="起點處 G3";
+
+ProfileAlignmentEnd.Button_G0.LongHelp="允許影響任一輪廓的選定結束曲線與相鄰支持曲面集之間的連續條件。";
+ProfileAlignmentEnd.Button_G0.ShortHelp="終點處 G0";
+
+ProfileAlignmentEnd.Button_G1.LongHelp="允許影響任一輪廓的選定結束曲線與相鄰支持曲面集之間的連續條件。";
+ProfileAlignmentEnd.Button_G1.ShortHelp="終點處 G1";
+
+ProfileAlignmentEnd.Button_G2.LongHelp="允許影響任一輪廓的選定結束曲線與相鄰支持曲面集之間的連續條件。";
+ProfileAlignmentEnd.Button_G2.ShortHelp="終點處 G2";
+
+ProfileAlignmentEnd.Button_G3.LongHelp="允許影響任一輪廓的選定結束曲線與相鄰支持曲面集之間的連續條件。";
+ProfileAlignmentEnd.Button_G3.ShortHelp="終點處 G3";
+
+
+//Alignment Influence frame
+
+FrameGuideAlignmentInfluence.Title="對齊影響";
+FrameGuideAlignmentInfluence.LongHelp="- 局部 -
+  分配給特定邊線的連續僅影響根據指定連續局部位于第一和第二曲線之間的曲面形。
+- 分布 -
+  分配給特定邊線的連續影響根據指定的連續分布于所有選定的內部引導線和輪廓的曲面形。
+- 全局 -
+  當選項對齊影響被設為全局，分配給特定邊線的連續將影響整個曲面形。";
+
+ComboGuideAlignmentInfluence.LongHelp="- 局部 -
+  分配給特定邊線的連續僅影響根據指定連續局部位于第一和第二曲線之間的曲面形。
+- 分布 -
+  分配給特定邊線的連續影響根據指定的連續分布于所有選定的內部引導線和輪廓的曲面形。
+- 全局 -
+  分配給特定邊線的連續將影響整個曲面形。";
+
+FrameProfileAlignmentInfluence.Title="對齊影響";
+FrameProfileAlignmentInfluence.LongHelp="- 局部 -
+  分配給特定邊線的連續僅影響根據指定連續局部位于第一和第二曲線之間的曲面形。
+- 分布 -
+  分配給特定邊線的連續影響根據指定的連續分布于所有選定的內部引導線和輪廓的曲面形。
+- 全局 -
+  分配給特定邊線的連續將影響整個曲面形。";
+
+ComboInfluence.Global="全局";
+ComboInfluence.Local="局部";
+ComboInfluence.Spread="分布";
+
+
+//Adjust frame
+
+FrameAdjust.Title="調整";
+FrameAdjust.LongHelp="允許根據輸入，選擇要將何種優先級分配到結果計算：
+- 調整引導線 -
+  計算結果的優先級分配給引導線。
+- 平均 -
+  根據所有輸入的平均值計算結果。
+- 調整輪廓 -
+  計算結果的優先級分配給輪廓。";
+
+ComboAdjust.AdjustToGuide="調整引導線";
+ComboAdjust.Mean="平均";
+ComboAdjust.AdjustToProfile="調整輪廓";
+
+//Shape frame
+
+FrameShape.Title="形狀";
+FrameShape.LongHelp="指定曲面形，即單獨選定輪廓之間的轉換類型。";
+
+ComboShape.Linear="線性形狀";
+ComboShape.Local="局部形狀";
+ComboShape.Smooth="光順形狀";
+ComboShape.Global="全局形狀";
+
+
+TabApproximation.Title="近似值";
+
+
+// Result
+
+UseSpineAndSupportsOld2New.Title="已在較舊的環境中創建此特征。
+結果在當前環境中可能會更改。
+要使用的支持面已分為：
+使用支持面引導線起點、
+使用支持面引導線終點、
+使用支持面輪廓起點和
+使用支持面輪廓終點";
+
+UseSpineAndSupportsNew2Old.Title="已在更新的環境中創建此特征。
+結果在當前環境中可能會更改。
+建議在更新的環境下使用此特征。";

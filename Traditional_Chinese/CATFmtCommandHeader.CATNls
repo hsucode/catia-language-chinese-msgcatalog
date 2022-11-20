@@ -1,0 +1,1426 @@
+
+// 3951 校正官方漢化 1D Mesher
+
+CATFmtCommandHeader.CATFmtBeamHdr.Title="橫梁網格";
+CATFmtCommandHeader.CATFmtBeamHdr.Help="對模型線零件生成橫梁元素";
+CATFmtCommandHeader.CATFmtBeamHdr.ShortHelp="橫梁網格";
+CATFmtCommandHeader.CATFmtBeamHdr.LongHelp="橫梁網格 \n 生成橫梁元素以建模線零件。";
+
+// 3951 校正官方漢化 Octree2D
+
+CATFmtCommandHeader.CATFmtOctree2DHdr.Title="八叉樹三角形網格";
+CATFmtCommandHeader.CATFmtOctree2DHdr.Help="生成三角形元素以建模曲面零件";
+CATFmtCommandHeader.CATFmtOctree2DHdr.ShortHelp="八叉樹三角形網格";
+CATFmtCommandHeader.CATFmtOctree2DHdr.LongHelp="八叉樹三角形網格 \n 生成三角形元素以建模曲面零件。";
+
+// 3951 校正官方漢化 Octree3D
+
+CATFmtCommandHeader.CATFmtOctree3DHdr.Title="八叉樹四面體網格";
+CATFmtCommandHeader.CATFmtOctree3DHdr.Help="生成四面體元素以建模實體零件";
+CATFmtCommandHeader.CATFmtOctree3DHdr.ShortHelp="八叉樹四面體網格";
+CATFmtCommandHeader.CATFmtOctree3DHdr.LongHelp="八叉樹四面體網格 \n 生成四面體元素以建模實體零件。";
+
+
+// 3951 校正官方漢化 Sweep3D
+
+CATFmtCommandHeader.CATFmtSweep3DHdr.Title="掃掠 3D 網格";
+CATFmtCommandHeader.CATFmtSweep3DHdr.Help="生成六面體或楔形元素以建模實體零件";
+CATFmtCommandHeader.CATFmtSweep3DHdr.ShortHelp="掃掠 3D 網格";
+CATFmtCommandHeader.CATFmtSweep3DHdr.LongHelp="掃掠 3D 網格 \n 生成六面體楔形元素以建模實體零件。";
+
+// 3951 校正官方漢化 Surface Mesh
+
+CATFmtCommandHeader.CATFmtSurfaceHdr.Title="曲面網格";
+CATFmtCommandHeader.CATFmtSurfaceHdr.Help="生成曲面元素以建模曲面和實體零件";
+CATFmtCommandHeader.CATFmtSurfaceHdr.ShortHelp="曲面網格";
+CATFmtCommandHeader.CATFmtSurfaceHdr.LongHelp="曲面網格 \n 生成曲面元素以建模曲面和實體零件。";
+
+// 3951 校正官方漢化 GHS3D
+
+CATFmtCommandHeader.CATFmtGHS3DHdr.Title="四面體填充網格";
+CATFmtCommandHeader.CATFmtGHS3DHdr.Help="從曲面邊界網格生成四面體元素";
+CATFmtCommandHeader.CATFmtGHS3DHdr.ShortHelp="四面體填充網格";
+CATFmtCommandHeader.CATFmtGHS3DHdr.LongHelp="四面體填充網格 \n 從曲面邊界網格生成四面體元素。";
+
+// 3951 校正官方漢化 Translation
+
+CATFmtCommandHeader.CATFmtTranslationHdr.Title="平移網格";
+CATFmtCommandHeader.CATFmtTranslationHdr.Help="生成平移網格";
+CATFmtCommandHeader.CATFmtTranslationHdr.ShortHelp="平移網格";
+CATFmtCommandHeader.CATFmtTranslationHdr.LongHelp="平移網格 \n 生成平移網格。";
+
+// 3951 校正官方漢化 Rotation
+
+CATFmtCommandHeader.CATFmtRotationHdr.Title="旋轉網格";
+CATFmtCommandHeader.CATFmtRotationHdr.Help="生成旋轉網格";
+CATFmtCommandHeader.CATFmtRotationHdr.ShortHelp="旋轉網格";
+CATFmtCommandHeader.CATFmtRotationHdr.LongHelp="旋轉網格\n生成旋轉網格。";
+
+// 3951 校正官方漢化 Symmetry
+
+CATFmtCommandHeader.CATFmtSymmetryHdr.Title="對稱網格";
+CATFmtCommandHeader.CATFmtSymmetryHdr.Help="生成對稱網格";
+CATFmtCommandHeader.CATFmtSymmetryHdr.ShortHelp="對稱網格";
+CATFmtCommandHeader.CATFmtSymmetryHdr.LongHelp="對稱網格 \n 生成對稱網格。";
+
+// 3951 校正官方漢化 Offset
+
+CATFmtCommandHeader.CATFmtOffsetHdr.Title="偏移網格";
+CATFmtCommandHeader.CATFmtOffsetHdr.Help="生成偏移網格";
+CATFmtCommandHeader.CATFmtOffsetHdr.ShortHelp="偏移網格";
+CATFmtCommandHeader.CATFmtOffsetHdr.LongHelp="偏移網格 \n 生成偏移網格。";
+
+// 3951 校正官方漢化 Extrude de MP par translation.
+
+CATFmtCommandHeader.CATFmtExtrTranslationHdr.Title="平移拉伸網格";
+CATFmtCommandHeader.CATFmtExtrTranslationHdr.Help="通過平移生成拉伸網格";
+CATFmtCommandHeader.CATFmtExtrTranslationHdr.ShortHelp="平移拉伸網格";
+CATFmtCommandHeader.CATFmtExtrTranslationHdr.LongHelp="拉伸網格器 \n 通過平移生成拉伸網格。";
+
+// 3951 校正官方漢化 Extrude de MP par rotation.
+
+CATFmtCommandHeader.CATFmtExtrRotationHdr.Title="旋轉拉伸網格";
+CATFmtCommandHeader.CATFmtExtrRotationHdr.Help="通過旋轉生成拉伸網格";
+CATFmtCommandHeader.CATFmtExtrRotationHdr.ShortHelp="旋轉拉伸網格";
+CATFmtCommandHeader.CATFmtExtrRotationHdr.LongHelp="拉伸網格 \n 通過旋轉生成拉伸網格。";
+
+// 3951 校正官方漢化 Extrude de MP par sym?rie.
+
+CATFmtCommandHeader.CATFmtExtrSymmetryHdr.Title="對稱拉伸網格";
+CATFmtCommandHeader.CATFmtExtrSymmetryHdr.Help="通過對稱生成拉伸網格";
+CATFmtCommandHeader.CATFmtExtrSymmetryHdr.ShortHelp="對稱拉伸網格";
+CATFmtCommandHeader.CATFmtExtrSymmetryHdr.LongHelp="拉伸網格 \n 生成對稱拉伸網格。";
+
+// 3951 校正官方漢化 Extrude de MP le long d'une courbe.
+
+CATFmtCommandHeader.CATFmtExtrSpineHdr.Title="沿脊線拉伸網格";
+CATFmtCommandHeader.CATFmtExtrSpineHdr.Help="沿脊線生成拉伸網格。";
+CATFmtCommandHeader.CATFmtExtrSpineHdr.ShortHelp="沿脊線拉伸網格";
+CATFmtCommandHeader.CATFmtExtrSpineHdr.LongHelp="沿脊線拉伸網格 \n 沿脊線生成拉伸網格。";
+
+// 3951 校正官方漢化 Extrude de MP par offset.
+
+CATFmtCommandHeader.CATFmtExtrOffsetMesherHdr.Title="偏移拉伸網格";
+CATFmtCommandHeader.CATFmtExtrOffsetMesherHdr.Help="生成偏移拉伸網格";
+CATFmtCommandHeader.CATFmtExtrOffsetMesherHdr.ShortHelp="偏移拉伸網格";
+CATFmtCommandHeader.CATFmtExtrOffsetMesherHdr.LongHelp="偏移拉伸網格 \n 生成偏移拉伸網格。";
+
+// 3951 校正官方漢化 Coating 1D
+
+CATFmtCommandHeader.CATFmtCoating1DMesherHdr.Title="涂層 1D 網格";
+CATFmtCommandHeader.CATFmtCoating1DMesherHdr.Help="從曲面網格生成條形";
+CATFmtCommandHeader.CATFmtCoating1DMesherHdr.ShortHelp="涂層 1D 網格";
+CATFmtCommandHeader.CATFmtCoating1DMesherHdr.LongHelp="涂層 1D 網格 \n 通過從曲面網格集中提取，生成條形元素。";
+
+// 3951 校正官方漢化 Coating 2D
+
+CATFmtCommandHeader.CATFmtCoating2DMesherHdr.Title="涂層 2D 網格";
+CATFmtCommandHeader.CATFmtCoating2DMesherHdr.Help="從實體網格生成面元素";
+CATFmtCommandHeader.CATFmtCoating2DMesherHdr.ShortHelp="涂層 2D 網格";
+CATFmtCommandHeader.CATFmtCoating2DMesherHdr.LongHelp="涂層 2D 網格 \n 通過從實體網格集中提取，生成面元素。";
+
+// 3951 校正官方漢化 FE Management
+
+CATFmtCommandHeader.CATFmtFemManagementHdr.Title="FE 模型管理";
+CATFmtCommandHeader.CATFmtFemManagementHdr.Help="管理有限元素模型展示";
+CATFmtCommandHeader.CATFmtFemManagementHdr.ShortHelp="FE 模型管理";
+CATFmtCommandHeader.CATFmtFemManagementHdr.LongHelp="FE 模型管理 \n 管理有限元素模型展示。";
+
+// 3951 校正官方漢化 Visu Mangement
+
+CATFmtCommandHeader.CATFmtVisuManagementHdr.Title="可視化管理";
+CATFmtCommandHeader.CATFmtVisuManagementHdr.ShortHelp="可視化管理";
+CATFmtCommandHeader.CATFmtVisuManagementHdr.Help="交替顯示隱藏和顯示的展示";
+CATFmtCommandHeader.CATFmtVisuManagementHdr.LongHelp="可視化管理 \n 交替顯示隱藏和顯示的展示。";
+
+CATFmtCommandHeader.CATFmtMeshVisuManagementHdr.Title="可視化管理";
+CATFmtCommandHeader.CATFmtMeshVisuManagementHdr.ShortHelp="可視化管理";
+CATFmtCommandHeader.CATFmtMeshVisuManagementHdr.Help="交替顯示隱藏和顯示的展示";
+CATFmtCommandHeader.CATFmtMeshVisualizationToolsHdr.LongHelp="可視化管理 \n 交替顯示隱藏和顯示的展示。";
+
+
+// 3951 校正官方漢化 Mesh Visualization tools
+
+CATFmtCommandHeader.CATFmtMeshVisualizationToolsHdr.Title="網格可視化";
+CATFmtCommandHeader.CATFmtMeshVisualizationToolsHdr.ShortHelp="網格可視化";
+CATFmtCommandHeader.CATFmtMeshVisualizationToolsHdr.Help="顯示可視化模式和工具";
+CATFmtCommandHeader.CATFmtMeshVisualizationToolsHdr.LongHelp="網格可視化 \n 顯示可視化模式和工具。";
+
+// 3951 校正官方漢化 Shrink ( commande sur les FEM rep)
+
+CATFmtCommandHeader.CATFmtShrinkElementsFemRepHdr.Title="縮小元素";
+CATFmtCommandHeader.CATFmtShrinkElementsFemRepHdr.Help="縮小元素";
+CATFmtCommandHeader.CATFmtShrinkElementsFemRepHdr.ShortHelp="縮小元素";
+CATFmtCommandHeader.CATFmtShrinkElementsFemRepHdr.LongHelp="縮小元素 \n 縮小元素的可視化。";
+
+// 3951 校正官方漢化 Cutting Plane
+
+CATFmtCommandHeader.CATFmtCuttingPlaneHdr.Title="剪切平面";
+CATFmtCommandHeader.CATFmtCuttingPlaneHdr.Help="使用精確剪切平面或近似剪切平面檢查網格";
+CATFmtCommandHeader.CATFmtCuttingPlaneHdr.ShortHelp="剪切平面";
+CATFmtCommandHeader.CATFmtCuttingPlaneHdr.LongHelp="剪切平面 \n 使用精確剪切平面或近似剪切平面檢查網格。";
+
+// 3951 校正官方漢化 VisuStandard
+
+CATFmtCommandHeader.CATFmtVisuStandardHdr.Title="標準可視化";
+CATFmtCommandHeader.CATFmtVisuStandardHdr.Help="切換到元素標準可視化模式";
+CATFmtCommandHeader.CATFmtVisuStandardHdr.ShortHelp="標準可視化";
+CATFmtCommandHeader.CATFmtVisuStandardHdr.LongHelp="標準可視化 \n 切換到元素標準可視化模式。";
+
+// 3951 校正官方漢化 VisuOrientation
+
+CATFmtCommandHeader.CATFmtVisuOrientationHdr.Title="方向可視化";
+CATFmtCommandHeader.CATFmtVisuOrientationHdr.Help="切換到元素方向可視化模式";
+CATFmtCommandHeader.CATFmtVisuOrientationHdr.ShortHelp="方向可視化";
+CATFmtCommandHeader.CATFmtVisuOrientationHdr.LongHelp="方向可視化 \n 切換到元素方向可視化模式。";
+
+// 3951 校正官方漢化 VisuQuality
+
+CATFmtCommandHeader.CATFmtVisuQualityHdr.Title="質量可視化";
+CATFmtCommandHeader.CATFmtVisuQualityHdr.Help="切換到元素質量可視化模式";
+CATFmtCommandHeader.CATFmtVisuQualityHdr.ShortHelp="質量可視化";
+CATFmtCommandHeader.CATFmtVisuQualityHdr.LongHelp="質量可視化 \n 切換到元素質量可視化模式。";
+
+// 3951 校正官方漢化 VisuByMeshPart
+
+CATFmtCommandHeader.CATFmtVisuByMPHdr.Title="網格可視化";
+CATFmtCommandHeader.CATFmtVisuByMPHdr.Help="切換到元素可視化（按網格）";
+CATFmtCommandHeader.CATFmtVisuByMPHdr.ShortHelp="網格可視化";
+CATFmtCommandHeader.CATFmtVisuByMPHdr.LongHelp="網格可視化 \n 切換到元素可視化（按網格）";
+
+// 3951 校正官方漢化 VisuByGroup
+
+CATFmtCommandHeader.CATFmtVisuByGrpHdr.Title="組可視化";
+CATFmtCommandHeader.CATFmtVisuByGrpHdr.Help="切換到元素可視化（按組）";
+CATFmtCommandHeader.CATFmtVisuByGrpHdr.ShortHelp="組可視化";
+CATFmtCommandHeader.CATFmtVisuByGrpHdr.LongHelp="組可視化\n切換到元素可視化（按組）";
+
+// 3951 校正官方漢化 Free Edges
+
+CATFmtCommandHeader.CATFmtFreeEdgeCheckerHdr.Title="自由邊線";
+CATFmtCommandHeader.CATFmtFreeEdgeCheckerHdr.Help="顯示網格的自由邊線";
+CATFmtCommandHeader.CATFmtFreeEdgeCheckerHdr.ShortHelp="自由邊線";
+CATFmtCommandHeader.CATFmtFreeEdgeCheckerHdr.LongHelp="自由邊線 \n 顯示網格的自由邊線。";
+
+// 3951 校正官方漢化 Interferences
+
+CATFmtCommandHeader.CATFmtInterferenceCheckerHdr.Title="干涉";
+CATFmtCommandHeader.CATFmtInterferenceCheckerHdr.Help="檢查網格，以檢測相交/干涉";
+CATFmtCommandHeader.CATFmtInterferenceCheckerHdr.ShortHelp="干涉";
+CATFmtCommandHeader.CATFmtInterferenceCheckerHdr.LongHelp="干涉 \n 檢查網格，以檢測相交/干涉。";
+
+// 3951 校正官方漢化 Duplicate Elements
+
+CATFmtCommandHeader.CATFmtDuplicateElementCheckerHdr.Title="復制元素";
+CATFmtCommandHeader.CATFmtDuplicateElementCheckerHdr.Help="檢查網格，以檢測復制元素";
+CATFmtCommandHeader.CATFmtDuplicateElementCheckerHdr.ShortHelp="復制元素";
+CATFmtCommandHeader.CATFmtDuplicateElementCheckerHdr.LongHelp="復制元素 \n 檢查網格，以檢測復制元素。";
+
+// 3951 校正官方漢化 Duplicate Nodes
+
+CATFmtCommandHeader.CATFmtDuplicateNodeCheckerHdr.Title="復制節點";
+CATFmtCommandHeader.CATFmtDuplicateNodeCheckerHdr.Help="檢查網格，以檢測復制節點";
+CATFmtCommandHeader.CATFmtDuplicateNodeCheckerHdr.ShortHelp="復制節點";
+CATFmtCommandHeader.CATFmtDuplicateNodeCheckerHdr.LongHelp="復制節點 \n 檢查網格，以檢測復制節點。";
+
+// 3951 校正官方漢化 Group by Associativity
+
+CATFmtCommandHeader.CATFmtGroupByAssociativityHdr.Title="幾何組";
+CATFmtCommandHeader.CATFmtGroupByAssociativityHdr.Help="與一系列幾何圖形相關聯的組元素";
+CATFmtCommandHeader.CATFmtGroupByAssociativityHdr.ShortHelp="幾何組";
+CATFmtCommandHeader.CATFmtGroupByAssociativityHdr.LongHelp="幾何組 \n 與一系列幾何圖形相關聯的組元素。";
+
+// 3951 校正官方漢化 Group by Proximity
+
+CATFmtCommandHeader.CATFmtGroupByProximityHdr.Title="近似組";
+CATFmtCommandHeader.CATFmtGroupByProximityHdr.Help="與一系列幾何圖形相鄰的組元素";
+CATFmtCommandHeader.CATFmtGroupByProximityHdr.ShortHelp="近似組";
+CATFmtCommandHeader.CATFmtGroupByProximityHdr.LongHelp="近似組 \n 與一系列幾何圖形相鄰的組元素。";
+
+// 3951 校正官方漢化 Group by Boundary
+
+CATFmtCommandHeader.CATFmtGroupByBoundaryHdr.Title="邊界組";
+CATFmtCommandHeader.CATFmtGroupByBoundaryHdr.Help="與邊界幾何圖形相關聯的組元素";
+CATFmtCommandHeader.CATFmtGroupByBoundaryHdr.ShortHelp="邊界組";
+CATFmtCommandHeader.CATFmtGroupByBoundaryHdr.LongHelp="邊界組 \n 與邊界幾何圖形相關聯的組元素。";
+
+// 3951 校正官方漢化 Group by Box
+
+CATFmtCommandHeader.CATFmtGroupByBoxHdr.Title="框組";
+CATFmtCommandHeader.CATFmtGroupByBoxHdr.Help="使用邊界框的組元素";
+CATFmtCommandHeader.CATFmtGroupByBoxHdr.ShortHelp="框組";
+CATFmtCommandHeader.CATFmtGroupByBoxHdr.LongHelp="框組 \n 使用邊界框的組元素。";
+
+// 3951 校正官方漢化 Group by Sphere
+
+CATFmtCommandHeader.CATFmtGroupBySphereHdr.Title="球面組";
+CATFmtCommandHeader.CATFmtGroupBySphereHdr.Help="使用邊界球面的組元素";
+CATFmtCommandHeader.CATFmtGroupBySphereHdr.ShortHelp="球面組";
+CATFmtCommandHeader.CATFmtGroupBySphereHdr.LongHelp="球面組 \n 使用邊界球面的組元素。";
+
+
+// 3951 校正官方漢化 Spatial Group
+
+CATFmtCommandHeader.CATFmtGroupSpatialHdr.Title="空間組";
+CATFmtCommandHeader.CATFmtGroupSpatialHdr.Help="使用空間邊界的組元素，它可以是球面或方框  ";
+CATFmtCommandHeader.CATFmtGroupSpatialHdr.ShortHelp="空間組";
+CATFmtCommandHeader.CATFmtGroupSpatialHdr.LongHelp="空間組 \n 使用空間邊界對元素分組。";
+
+
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Menus contextuels
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+
+// 3951 校正官方漢化 Destruction du maillage d'une mesh part
+
+CATFmtCommandHeader.CATFmtEmptyMeshPartHdr.Title="移除網格";
+CATFmtCommandHeader.CATFmtEmptyMeshPartHdr.Help="移除選定的網格";
+CATFmtCommandHeader.CATFmtEmptyMeshPartHdr.ShortHelp="移除網格";
+CATFmtCommandHeader.CATFmtEmptyMeshPartHdr.LongHelp="移除選定的網格。";
+
+// 3951 校正官方漢化 Destruction du maillage d'une mesh set
+
+CATFmtCommandHeader.CATFmtEmptyMeshSetHdr.Title="移除所有網格";
+CATFmtCommandHeader.CATFmtEmptyMeshSetHdr.Help="移除所有網格";
+CATFmtCommandHeader.CATFmtEmptyMeshSetHdr.ShortHelp="移除所有網格";
+CATFmtCommandHeader.CATFmtEmptyMeshSetHdr.LongHelp="移除所有網格。";
+
+// 3951 校正官方漢化 Update du maillage d'une mesh part
+
+CATFmtCommandHeader.CATFmtUpdateMeshPartHdr.Title="更新網格";
+CATFmtCommandHeader.CATFmtUpdateMeshPartHdr.Help="更新選定的網格";
+CATFmtCommandHeader.CATFmtUpdateMeshPartHdr.ShortHelp="更新網格";
+CATFmtCommandHeader.CATFmtUpdateMeshPartHdr.LongHelp="更新選定的網格。";
+
+// 3951 校正官方漢化 Active/Inactivate du maillage d'une mesh part
+
+CATFmtCommandHeader.CATFmtActivateMeshPartHdr.Title="激活/停用";
+CATFmtCommandHeader.CATFmtActivateMeshPartHdr.Help="激活/停用選定的網格";
+CATFmtCommandHeader.CATFmtActivateMeshPartHdr.ShortHelp="激活/停用";
+CATFmtCommandHeader.CATFmtActivateMeshPartHdr.LongHelp="激活/停用選定的網格。";
+
+// 3951 校正官方漢化 Update des maillages du mesh set
+
+CATFmtCommandHeader.CATFmtUpdateMeshSetHdr.Title="更新所有網格";
+CATFmtCommandHeader.CATFmtUpdateMeshSetHdr.Help="更新所有網格";
+CATFmtCommandHeader.CATFmtUpdateMeshSetHdr.ShortHelp="更新所有網格";
+CATFmtCommandHeader.CATFmtUpdateMeshSetHdr.LongHelp="更新所有網格。";
+
+// 3951 校正官方漢化 Couleur des maillages du mesh set
+
+CATFmtCommandHeader.CATFmtColorMeshSetHdr.Title="網格顏色";
+CATFmtCommandHeader.CATFmtColorMeshSetHdr.Help="修改網格顏色";
+CATFmtCommandHeader.CATFmtColorMeshSetHdr.ShortHelp="網格顏色";
+CATFmtCommandHeader.CATFmtColorMeshSetHdr.LongHelp="修改網格顏色。";
+
+// 3951 校正官方漢化 Couleur des maillages des Fem Rep
+
+CATFmtCommandHeader.CATFmtColorFemRepHdr.Title="網格顏色";
+CATFmtCommandHeader.CATFmtColorFemRepHdr.Help="修改網格顏色";
+CATFmtCommandHeader.CATFmtColorFemRepHdr.ShortHelp="網格顏色";
+CATFmtCommandHeader.CATFmtColorFemRepHdr.LongHelp="修改網格顏色。";
+
+// 3951 校正官方漢化 Hide/Show de la Mesh Part
+
+CATFmtCommandHeader.CATFmtHideShowMeshPartHdr.Title="隱藏/顯示網格";
+CATFmtCommandHeader.CATFmtHideShowMeshPartHdr.Help="隱藏/顯示網格";
+CATFmtCommandHeader.CATFmtHideShowMeshPartHdr.ShortHelp="隱藏/顯示網格";
+CATFmtCommandHeader.CATFmtHideShowMeshPartHdr.LongHelp="隱藏/顯示網格。";
+
+// 3951 校正官方漢化 Hide/Show des maillages du Mesh Set
+
+CATFmtCommandHeader.CATFmtHideShowMeshSetHdr.Title="隱藏/顯示所有網格";
+CATFmtCommandHeader.CATFmtHideShowMeshSetHdr.Help="隱藏/顯示所有網格";
+CATFmtCommandHeader.CATFmtHideShowMeshSetHdr.ShortHelp="隱藏/顯示所有網格";
+CATFmtCommandHeader.CATFmtHideShowMeshSetHdr.LongHelp="隱藏/顯示所有網格。";
+
+// 3951 校正官方漢化 Shrink (contextuel) for meshpart and meshset
+
+CATFmtCommandHeader.CATFmtShrinkElementsMeshPartHdr.Title="縮小元素";
+CATFmtCommandHeader.CATFmtShrinkElementsMeshPartHdr.Help="修改元素縮小";
+CATFmtCommandHeader.CATFmtShrinkElementsMeshPartHdr.ShortHelp="縮小元素";
+CATFmtCommandHeader.CATFmtShrinkElementsMeshPartHdr.LongHelp="修改用于可視化的元素縮小。";
+
+CATFmtCommandHeader.CATFmtShrinkElementsMeshSetHdr.Title="縮小元素";
+CATFmtCommandHeader.CATFmtShrinkElementsMeshSetHdr.Help="修改元素縮小";
+CATFmtCommandHeader.CATFmtShrinkElementsMeshSetHdr.ShortHelp="縮小元素";
+CATFmtCommandHeader.CATFmtShrinkElementsMeshSetHdr.LongHelp="修改用于可視化的元素縮小。";
+
+// 3951 校正官方漢化 Anayse Qualit?( contextuel )
+
+CATFmtCommandHeader.CATFmtAnalyzeMeshHdr.Title="分析";
+CATFmtCommandHeader.CATFmtAnalyzeMeshHdr.Help="分析選定網格的網格質量";
+CATFmtCommandHeader.CATFmtAnalyzeMeshHdr.ShortHelp="分析";
+CATFmtCommandHeader.CATFmtAnalyzeMeshHdr.LongHelp="分析選定網格的網格質量。";
+
+// 3951 校正官方漢化/ Anayse Qualit?( commnade globale )
+
+CATFmtCommandHeader.CATFmtQualityCheckerHdr.Title="質量分析";
+CATFmtCommandHeader.CATFmtQualityCheckerHdr.Help="分析元素質量，選擇并調整質量條件";
+CATFmtCommandHeader.CATFmtQualityCheckerHdr.ShortHelp="質量分析";
+CATFmtCommandHeader.CATFmtQualityCheckerHdr.LongHelp="分析元素質量，選擇并調整質量條件。";
+// 3951 校正官方漢化// Group Creation
+
+CATFmtCommandHeader.CATFmtGroupHdr.Title="創建組";
+// 3951 校正官方漢化// GroupSet Update
+
+CATFmtCommandHeader.CATFmtGroupSetUpdateHdr.Title="更新";
+CATFmtCommandHeader.CATFmtGroupSetUpdateHdr.Help="更新所有組";
+CATFmtCommandHeader.CATFmtGroupSetUpdateHdr.ShortHelp="更新";
+CATFmtCommandHeader.CATFmtGroupSetUpdateHdr.LongHelp="更新所有組。";
+// 3951 校正官方漢化// Group Update
+
+CATFmtCommandHeader.CATFmtGroupUpdateHdr.Title="更新";
+CATFmtCommandHeader.CATFmtGroupUpdateHdr.Help="修改選定的組。";
+CATFmtCommandHeader.CATFmtGroupUpdateHdr.ShortHelp="更新";
+CATFmtCommandHeader.CATFmtGroupUpdateHdr.LongHelp="修改選定的組。";
+// 3951 校正官方漢化// Group Analyze
+
+CATFmtCommandHeader.CATFmtGroupAnalyzeHdr.Title="顯示內容";
+CATFmtCommandHeader.CATFmtGroupAnalyzeHdr.Help="顯示組內容";
+CATFmtCommandHeader.CATFmtGroupAnalyzeHdr.ShortHelp="顯示內容";
+CATFmtCommandHeader.CATFmtGroupAnalyzeHdr.LongHelp="顯示組內容。";
+// 3951 校正官方漢化//// 3951 校正官方漢化// Menus contextuels dans les mailleurs// 3951 校正官方漢化//
+// 3951 校正官方漢化// Commande contextuelle de destruction de spec locale
+
+CATFmtCommandHeader.CATFmtDeleteLocalSpecHdr.Title="刪除";
+CATFmtCommandHeader.CATFmtDeleteLocalSpecHdr.Help="刪除本地規格";
+CATFmtCommandHeader.CATFmtDeleteLocalSpecHdr.ShortHelp="刪除";
+CATFmtCommandHeader.CATFmtDeleteLocalSpecHdr.LongHelp="刪除本地規格。";
+// 3951 校正官方漢化// Commande contextuelle d'閐ition de spec locale
+
+CATFmtCommandHeader.CATFmtEditLocalSpecHdr.Title="編輯";
+CATFmtCommandHeader.CATFmtEditLocalSpecHdr.Help="編輯本地規格";
+CATFmtCommandHeader.CATFmtEditLocalSpecHdr.ShortHelp="編輯";
+CATFmtCommandHeader.CATFmtEditLocalSpecHdr.LongHelp="編輯本地規格。";
+// 3951 校正官方漢化//// 3951 校正官方漢化//// 3951 校正官方漢化// Commandes du mailleur surfacique// 3951 校正官方漢化//// 3951 校正官方漢化//
+// 3951 校正官方漢化// Exit
+
+CATFmtCommandHeader.CATFmtExitWorkbenchHdr.Title="退出";
+CATFmtCommandHeader.CATFmtExitWorkbenchHdr.Help="退出曲面網格化工作臺";
+CATFmtCommandHeader.CATFmtExitWorkbenchHdr.ShortHelp="退出";
+CATFmtCommandHeader.CATFmtExitWorkbenchHdr.LongHelp="退出 \n 退出曲面網格化工作臺。";
+// 3951 校正官方漢化// Spec locale de Projection de point
+
+CATFmtCommandHeader.CATFmtPointProjectionHdr.Title="強加點";
+CATFmtCommandHeader.CATFmtPointProjectionHdr.Help="強加一個或多個點";
+CATFmtCommandHeader.CATFmtPointProjectionHdr.ShortHelp="強加點";
+CATFmtCommandHeader.CATFmtPointProjectionHdr.LongHelp="強加點 \n 強加一個或多個點。";
+// 3951 校正官方漢化// Spec locale de Projection de courbe
+
+CATFmtCommandHeader.CATFmtCurveProjectionHdr.Title="強加曲線";
+CATFmtCommandHeader.CATFmtCurveProjectionHdr.Help="強加一條或多條曲線";
+CATFmtCommandHeader.CATFmtCurveProjectionHdr.ShortHelp="強加曲線";
+CATFmtCommandHeader.CATFmtCurveProjectionHdr.LongHelp="強加曲線 \n 強加一條或多條曲線。";
+// 3951 校正官方漢化// Spec locale de contrainte de TopVertex
+
+CATFmtCommandHeader.CATFmtConstrainVertexHdr.Title="約束的頂點";
+CATFmtCommandHeader.CATFmtConstrainVertexHdr.Help="約束一個或多個自由頂點";
+CATFmtCommandHeader.CATFmtConstrainVertexHdr.ShortHelp="約束的頂點";
+CATFmtCommandHeader.CATFmtConstrainVertexHdr.LongHelp="約束的頂點 \n 約束一個或多個自由頂點。";
+// 3951 校正官方漢化// Spec locale de d閏ontrainte de TopVertex
+
+CATFmtCommandHeader.CATFmtUnconstrainVertexHdr.Title="解除約束的頂點";
+CATFmtCommandHeader.CATFmtUnconstrainVertexHdr.Help="移除頂點上的約束";
+CATFmtCommandHeader.CATFmtUnconstrainVertexHdr.ShortHelp="解除約束的頂點";
+CATFmtCommandHeader.CATFmtUnconstrainVertexHdr.LongHelp="解除約束的頂點 \n 移除頂點上的約束。";
+// 3951 校正官方漢化// Spec locale de contrainte de TopEdge
+
+CATFmtCommandHeader.CATFmtConstrainEdgeHdr.Title="約束的邊線";
+CATFmtCommandHeader.CATFmtConstrainEdgeHdr.Help="約束一條或多條邊線";
+CATFmtCommandHeader.CATFmtConstrainEdgeHdr.ShortHelp="約束的邊線";
+CATFmtCommandHeader.CATFmtConstrainEdgeHdr.LongHelp="約束的邊線 \n 約束一條或多條邊線。";
+// 3951 校正官方漢化// Spec locale de d閏ontrainte de TopEdge
+
+CATFmtCommandHeader.CATFmtUnconstrainEdgeHdr.Title="解除約束的邊線";
+CATFmtCommandHeader.CATFmtUnconstrainEdgeHdr.Help="移除邊線上的約束";
+CATFmtCommandHeader.CATFmtUnconstrainEdgeHdr.ShortHelp="解除約束的邊線";
+CATFmtCommandHeader.CATFmtUnconstrainEdgeHdr.LongHelp="解除約束的邊線 \n 移除邊線上的約束。";
+// 3951 校正官方漢化// Spec locale de contrainte de trou
+
+CATFmtCommandHeader.CATFmtConstrainHoleHdr.Title="約束的孔";
+CATFmtCommandHeader.CATFmtConstrainHoleHdr.Help="約束一個或多個孔";
+CATFmtCommandHeader.CATFmtConstrainHoleHdr.ShortHelp="約束的孔";
+CATFmtCommandHeader.CATFmtConstrainHoleHdr.LongHelp="約束的孔 \n 約束一個或多個孔。";
+// 3951 校正官方漢化// Spec locale de d閏ontrainte de trou
+
+CATFmtCommandHeader.CATFmtUnconstrainHoleHdr.Title="解除約束的孔";
+CATFmtCommandHeader.CATFmtUnconstrainHoleHdr.Help="移除孔上的約束";
+CATFmtCommandHeader.CATFmtUnconstrainHoleHdr.ShortHelp="解除約束的孔";
+CATFmtCommandHeader.CATFmtUnconstrainHoleHdr.LongHelp="解除約束的孔 \n 移除孔上的約束。";
+// 3951 校正官方漢化// Spec locale de grouping
+
+CATFmtCommandHeader.CATFmtGroupingHdr.Title="分組幾何圖形";
+CATFmtCommandHeader.CATFmtGroupingHdr.Help="對不同的幾何圖形進行分組，以構建域";
+CATFmtCommandHeader.CATFmtGroupingHdr.ShortHelp="分組幾何圖形";
+CATFmtCommandHeader.CATFmtGroupingHdr.LongHelp="分組幾何圖形 \n 對不同的幾何圖形進行分組，以構建域。";
+// 3951 校正官方漢化// Spec locale de distribution
+
+CATFmtCommandHeader.CATFmtStDistributionHdr.Title="邊線分布";
+CATFmtCommandHeader.CATFmtStDistributionHdr.Help="在邊線上分布元素";
+CATFmtCommandHeader.CATFmtStDistributionHdr.ShortHelp="邊線分布";
+CATFmtCommandHeader.CATFmtStDistributionHdr.LongHelp="邊線分布 \n 在邊線上分布元素。";
+// 3951 校正官方漢化// Capture d'elements 
+
+CATFmtCommandHeader.CATFmtStCaptureHdr.Title="元素捕獲";
+CATFmtCommandHeader.CATFmtStCaptureHdr.Help="捕獲元素";
+CATFmtCommandHeader.CATFmtStCaptureHdr.ShortHelp="元素捕獲";
+CATFmtCommandHeader.CATFmtStCaptureHdr.LongHelp="元素捕獲 \n 捕獲元素。";
+// 3951 校正官方漢化// Distribution autour de trous
+
+CATFmtCommandHeader.CATFmtStHoleHdr.Title="孔周圍的網格";
+CATFmtCommandHeader.CATFmtStHoleHdr.Help="在孔周圍分布元素";
+CATFmtCommandHeader.CATFmtStHoleHdr.ShortHelp="孔周圍的網格";
+CATFmtCommandHeader.CATFmtStHoleHdr.LongHelp="孔周圍的網格 \n 在孔周圍分布元素。";
+// 3951 校正官方漢化// Distribution autour de courbes
+
+CATFmtCommandHeader.CATFmtStBoundaryLayerHdr.Title="曲線周圍的網格";
+CATFmtCommandHeader.CATFmtStBoundaryLayerHdr.Help="在曲線周圍分布元素";
+CATFmtCommandHeader.CATFmtStBoundaryLayerHdr.ShortHelp="曲線周圍的網格";
+CATFmtCommandHeader.CATFmtStBoundaryLayerHdr.LongHelp="曲線周圍的網格 \n 在曲線周圍分布元素。";
+// 3951 校正官方漢化// Propagation de distribution
+
+CATFmtCommandHeader.CATFmtStPropagationHdr.Title="分布拓展";
+CATFmtCommandHeader.CATFmtStPropagationHdr.Help="拓展現有元素分布";
+CATFmtCommandHeader.CATFmtStPropagationHdr.ShortHelp="分布拓展";
+CATFmtCommandHeader.CATFmtStPropagationHdr.LongHelp="分布拓展 \n 拓展現有元素分布。";
+// 3951 校正官方漢化// Mailleur Frontal quadrangle
+
+CATFmtCommandHeader.CATFmtStFrontalQuadHdr.Title="前四角形方法";
+CATFmtCommandHeader.CATFmtStFrontalQuadHdr.Help="使用前四角形方法重新網格化域";
+CATFmtCommandHeader.CATFmtStFrontalQuadHdr.ShortHelp="前四角形方法";
+CATFmtCommandHeader.CATFmtStFrontalQuadHdr.LongHelp="前四邊形方法 \n 使用前四邊形方法重新網格劃分域。";
+// 3951 校正官方漢化// Mailleur Frontal triangle
+
+CATFmtCommandHeader.CATFmtStFrontalTriaHdr.Title="前三角形方法";
+CATFmtCommandHeader.CATFmtStFrontalTriaHdr.Help="使用前三角形方法重新網格化域";
+CATFmtCommandHeader.CATFmtStFrontalTriaHdr.ShortHelp="前三角形方法";
+CATFmtCommandHeader.CATFmtStFrontalTriaHdr.LongHelp="前三角形方法 \n 使用前三角形方法重新網格劃分域。";
+// 3951 校正官方漢化// Mailleur Mapped
+
+CATFmtCommandHeader.CATFmtStMappedHdr.Title="映射方法";
+CATFmtCommandHeader.CATFmtStMappedHdr.Help="使用映射方法重新網格化域";
+CATFmtCommandHeader.CATFmtStMappedHdr.ShortHelp="映射方法";
+CATFmtCommandHeader.CATFmtStMappedHdr.LongHelp="映射方法 \n 使用映射方法重新網格劃分域。";
+// 3951 校正官方漢化// Mailleur Mapped libre
+
+CATFmtCommandHeader.CATFmtStMappedFreeHdr.Title="映射自由方法";
+CATFmtCommandHeader.CATFmtStMappedFreeHdr.Help="使用映射自由方法重新網格化域";
+CATFmtCommandHeader.CATFmtStMappedFreeHdr.ShortHelp="映射自由方法";
+CATFmtCommandHeader.CATFmtStMappedFreeHdr.LongHelp="映射自由方法 \n 使用映射自由方法重新網格劃分域。";
+// 3951 校正官方漢化// Mailleur minimal
+
+CATFmtCommandHeader.CATFmtStMappedFreeMinimalHdr.Title="最小方法";
+CATFmtCommandHeader.CATFmtStMappedFreeMinimalHdr.Help="使用最小方法重新網格化域";
+CATFmtCommandHeader.CATFmtStMappedFreeMinimalHdr.ShortHelp="最小方法";
+CATFmtCommandHeader.CATFmtStMappedFreeMinimalHdr.LongHelp="最小方法 \n 使用最小方法重新網格劃分域。";
+// 3951 校正官方漢化// Mailleur bead
+
+CATFmtCommandHeader.CATFmtStBeadHdr.Title="凸圓方法";
+CATFmtCommandHeader.CATFmtStBeadHdr.Help="使用凸圓方法重新網格化域";
+CATFmtCommandHeader.CATFmtStBeadHdr.ShortHelp="凸圓方法";
+CATFmtCommandHeader.CATFmtStBeadHdr.LongHelp="凸圓方法 \n 使用凸圓方法重新網格劃分域。";
+// 3951 校正官方漢化// Mailleur half-bead
+
+CATFmtCommandHeader.CATFmtStHalfBeadHdr.Title="半凸圓方法";
+CATFmtCommandHeader.CATFmtStHalfBeadHdr.Help="使用半凸圓方法重新網格化域";
+CATFmtCommandHeader.CATFmtStHalfBeadHdr.ShortHelp="半凸圓方法";
+CATFmtCommandHeader.CATFmtStHalfBeadHdr.LongHelp="半凸圓方法 \n 使用半凸圓方法對域重新網格劃分。";
+// 3951 校正官方漢化// Edition des param鑤res globaux
+
+CATFmtCommandHeader.CATFmtSurfaceMesherParamsEditionHdr.Title="全局參數";
+CATFmtCommandHeader.CATFmtSurfaceMesherParamsEditionHdr.Help="編輯網格的全局參數";
+CATFmtCommandHeader.CATFmtSurfaceMesherParamsEditionHdr.ShortHelp="全局參數";
+CATFmtCommandHeader.CATFmtSurfaceMesherParamsEditionHdr.LongHelp="全局參數 \n 編輯網格的全局參數。";
+// 3951 校正官方漢化// Modification des parametres de Remesh
+
+CATFmtCommandHeader.CATFmtSurfaceMeshOptionsHdr.Title="重新網格化選項";
+CATFmtCommandHeader.CATFmtSurfaceMeshOptionsHdr.Help="設置重新網格化選項。";
+CATFmtCommandHeader.CATFmtSurfaceMeshOptionsHdr.ShortHelp="重新網格化選項";
+CATFmtCommandHeader.CATFmtSurfaceMeshOptionsHdr.LongHelp="重新網格化選項 \n 設置重新網格化選項。";
+// 3951 校正官方漢化// Compute de la simplification de la topology
+
+CATFmtCommandHeader.CATFmtSimplificationRunHdr.Title="簡化拓撲";
+CATFmtCommandHeader.CATFmtSimplificationRunHdr.Help="簡化拓撲";
+CATFmtCommandHeader.CATFmtSimplificationRunHdr.ShortHelp="簡化拓撲";
+CATFmtCommandHeader.CATFmtSimplificationRunHdr.LongHelp="簡化拓撲 \n 簡化拓撲。";
+// 3951 校正官方漢化// Remove de la simplification de la topology
+
+CATFmtCommandHeader.CATFmtSimplificationRemoveHdr.Title="移除拓撲簡化";
+CATFmtCommandHeader.CATFmtSimplificationRemoveHdr.Help="移除拓撲簡化";
+CATFmtCommandHeader.CATFmtSimplificationRemoveHdr.ShortHelp="移除拓撲簡化";
+CATFmtCommandHeader.CATFmtSimplificationRemoveHdr.LongHelp="移除拓撲簡化 \n 移除拓撲簡化。";
+// 3951 校正官方漢化// Global Mesh
+
+CATFmtCommandHeader.CATFmtGlobalMeshHdr.Title="網格";
+CATFmtCommandHeader.CATFmtGlobalMeshHdr.Help="網格化幾何圖形";
+CATFmtCommandHeader.CATFmtGlobalMeshHdr.ShortHelp="網格";
+CATFmtCommandHeader.CATFmtGlobalMeshHdr.LongHelp="網格 \n 網格化幾何圖形。";
+// 3951 校正官方漢化// Global Mesh
+
+CATFmtCommandHeader.CATFmtGlobalUnMeshHdr.Title="移除網格";
+CATFmtCommandHeader.CATFmtGlobalUnMeshHdr.Help="移除生成的網格";
+CATFmtCommandHeader.CATFmtGlobalUnMeshHdr.ShortHelp="移除網格";
+CATFmtCommandHeader.CATFmtGlobalUnMeshHdr.LongHelp="移除網格 \n 移除生成的網格。";
+// 3951 校正官方漢化// Edition de la topologie
+
+CATFmtCommandHeader.CATFmtTopologyEditionHdr.Title="編輯拓撲";
+CATFmtCommandHeader.CATFmtTopologyEditionHdr.Help="設置對邊線和頂點進行手動修改。";
+CATFmtCommandHeader.CATFmtTopologyEditionHdr.ShortHelp="編輯拓撲";
+CATFmtCommandHeader.CATFmtTopologyEditionHdr.LongHelp="編輯拓撲 \n 設置對邊線和頂點進行手動修改。";
+// 3951 校正官方漢化// Activation/Desactivation d'edge
+
+CATFmtCommandHeader.CATFmtActiveEdgeHdr.Title="添加/移除邊線約束";
+CATFmtCommandHeader.CATFmtActiveEdgeHdr.Help="添加/移除邊線約束";
+CATFmtCommandHeader.CATFmtActiveEdgeHdr.ShortHelp="添加/移除邊線約束";
+CATFmtCommandHeader.CATFmtActiveEdgeHdr.LongHelp="添加/移除邊線約束。";
+// 3951 校正官方漢化// Activation/Desactivation d'un trou
+
+CATFmtCommandHeader.CATFmtActiveHoleHdr.Title="添加/移除孔約束";
+CATFmtCommandHeader.CATFmtActiveHoleHdr.Help="添加/移除孔約束";
+CATFmtCommandHeader.CATFmtActiveHoleHdr.ShortHelp="添加/移除孔約束";
+CATFmtCommandHeader.CATFmtActiveHoleHdr.LongHelp="添加/移除孔約束。";
+// 3951 校正官方漢化// Collapse d'edge
+
+CATFmtCommandHeader.CATFmtCollapseEdgeHdr.Title="折疊邊線";
+CATFmtCommandHeader.CATFmtCollapseEdgeHdr.Help="折疊約束的邊線";
+CATFmtCommandHeader.CATFmtCollapseEdgeHdr.ShortHelp="折疊邊線";
+CATFmtCommandHeader.CATFmtCollapseEdgeHdr.LongHelp="折疊約束的邊線。";
+// 3951 校正官方漢化// Cut d'edge
+
+CATFmtCommandHeader.CATFmtCutEdgeHdr.Title="剪切邊線";
+CATFmtCommandHeader.CATFmtCutEdgeHdr.Help="剪切邊線";
+CATFmtCommandHeader.CATFmtCutEdgeHdr.ShortHelp="剪切邊線";
+CATFmtCommandHeader.CATFmtCutEdgeHdr.LongHelp="剪切邊線。";
+// 3951 校正官方漢化// Merge d'edge
+
+CATFmtCommandHeader.CATFmtMergeEdgeHdr.Title="合并邊線";
+CATFmtCommandHeader.CATFmtMergeEdgeHdr.Help="合并兩條邊線";
+CATFmtCommandHeader.CATFmtMergeEdgeHdr.ShortHelp="合并邊線";
+CATFmtCommandHeader.CATFmtMergeEdgeHdr.LongHelp="合并兩條邊線。";
+// 3951 校正官方漢化// Contrainte de vertex
+
+CATFmtCommandHeader.CATFmtActiveVertexHdr.Title="添加/移除頂點約束";
+CATFmtCommandHeader.CATFmtActiveVertexHdr.Help="添加/移除頂點約束";
+CATFmtCommandHeader.CATFmtActiveVertexHdr.ShortHelp="添加/移除頂點約束";
+CATFmtCommandHeader.CATFmtActiveVertexHdr.LongHelp="添加/移除頂點約束。";
+// 3951 校正官方漢化// Drag  de Vertex
+
+CATFmtCommandHeader.CATFmtDragVertexHdr.Title="移動頂點";
+CATFmtCommandHeader.CATFmtDragVertexHdr.Help="移動邊線上的選定頂點";
+CATFmtCommandHeader.CATFmtDragVertexHdr.ShortHelp="移動頂點";
+CATFmtCommandHeader.CATFmtDragVertexHdr.LongHelp="移動邊線上的選定頂點。";
+// 3951 校正官方漢化// Split
+
+CATFmtCommandHeader.CATFmtSplitDomainHdr.Title="分割域";
+CATFmtCommandHeader.CATFmtSplitDomainHdr.Help="分割域";
+CATFmtCommandHeader.CATFmtSplitDomainHdr.ShortHelp="分割域";
+CATFmtCommandHeader.CATFmtSplitDomainHdr.LongHelp="分割域。";
+
+CATFmtCommandHeader.CATFmtCutSplitDomainHdr.Title="分割域";
+CATFmtCommandHeader.CATFmtCutSplitDomainHdr.Help="分割域";
+CATFmtCommandHeader.CATFmtCutSplitDomainHdr.ShortHelp="分割域";
+CATFmtCommandHeader.CATFmtCutSplitDomainHdr.LongHelp="分割域。";
+// 3951 校正官方漢化// Split orthogonal
+
+CATFmtCommandHeader.CATFmtOrthogonalSplitDomainHdr.Title="正交分割域";
+CATFmtCommandHeader.CATFmtOrthogonalSplitDomainHdr.Help="正交分割域";
+CATFmtCommandHeader.CATFmtOrthogonalSplitDomainHdr.ShortHelp="正交分割域";
+CATFmtCommandHeader.CATFmtOrthogonalSplitDomainHdr.LongHelp="正交分割域。";
+// 3951 校正官方漢化// Edition manuelle de maillage
+
+CATFmtCommandHeader.CATFmtMeshEditionHdr.Title="編輯網格";
+CATFmtCommandHeader.CATFmtMeshEditionHdr.Help="編輯網格以提高元素質量";
+CATFmtCommandHeader.CATFmtMeshEditionHdr.ShortHelp="編輯網格";
+CATFmtCommandHeader.CATFmtMeshEditionHdr.LongHelp="編輯網格 \n 編輯網格，以提高元素質量。";
+// 3951 校正官方漢化// Freeze de domaines maillage
+
+CATFmtCommandHeader.CATFmtFreezeDomainsHdr.Title="鎖定域";
+CATFmtCommandHeader.CATFmtFreezeDomainsHdr.Help="鎖定或解鎖域";
+CATFmtCommandHeader.CATFmtFreezeDomainsHdr.ShortHelp="鎖定域";
+CATFmtCommandHeader.CATFmtFreezeDomainsHdr.LongHelp="鎖定域 \n 鎖定或解鎖域。";
+// 3951 校正官方漢化// Unmesh de domaines maillages
+
+CATFmtCommandHeader.CATFmtUnmeshDomainsHdr.Title="移除域中的網格";
+CATFmtCommandHeader.CATFmtUnmeshDomainsHdr.Help="移除選定域的網格";
+CATFmtCommandHeader.CATFmtUnmeshDomainsHdr.ShortHelp="移除域中的網格";
+CATFmtCommandHeader.CATFmtUnmeshDomainsHdr.LongHelp="移除域中的網格 \n 移除選定域的網格。";
+// 3951 校正官方漢化// Split de quadrangles
+
+CATFmtCommandHeader.CATFmtSplitQuadsHdr.Title="分割四角形";
+CATFmtCommandHeader.CATFmtSplitQuadsHdr.Help="分割四角形，以提高元素質量";
+CATFmtCommandHeader.CATFmtSplitQuadsHdr.ShortHelp="分割四角形";
+CATFmtCommandHeader.CATFmtSplitQuadsHdr.LongHelp="分割四角形 \n 分割四角形，以提高元素質量。";
+// 3951 校正官方漢化// Merge de deux triangles
+
+CATFmtCommandHeader.CATFmtMeshMergeTriaHdr.Title="移除邊線";
+CATFmtCommandHeader.CATFmtMeshMergeTriaHdr.Help="移除邊線以合并三角形";
+CATFmtCommandHeader.CATFmtMeshMergeTriaHdr.ShortHelp="移除邊線";
+CATFmtCommandHeader.CATFmtMeshMergeTriaHdr.LongHelp="移除邊線以合并三角形";
+// 3951 校正官方漢化// Condense des noeuds d'un edge
+
+CATFmtCommandHeader.CATFmtMeshCondenseEdgeHdr.Title="壓縮節點";
+CATFmtCommandHeader.CATFmtMeshCondenseEdgeHdr.Help="壓縮邊線的節點";
+CATFmtCommandHeader.CATFmtMeshCondenseEdgeHdr.ShortHelp="壓縮節點";
+CATFmtCommandHeader.CATFmtMeshCondenseEdgeHdr.LongHelp="壓縮邊線的節點。";
+// 3951 校正官方漢化// Ajout d'un noeud sur un edge
+
+CATFmtCommandHeader.CATFmtMeshInsertNodeHdr.Title="插入節點";
+CATFmtCommandHeader.CATFmtMeshInsertNodeHdr.Help="在邊線上插入節點";
+CATFmtCommandHeader.CATFmtMeshInsertNodeHdr.ShortHelp="插入節點";
+CATFmtCommandHeader.CATFmtMeshInsertNodeHdr.LongHelp="在邊線上插入節點。";
+// 3951 校正官方漢化// Swap d'un edge
+
+CATFmtCommandHeader.CATFmtMeshSwapEdgeHdr.Title="交換邊線";
+CATFmtCommandHeader.CATFmtMeshSwapEdgeHdr.Help="交換邊線";
+CATFmtCommandHeader.CATFmtMeshSwapEdgeHdr.ShortHelp="交換邊線";
+CATFmtCommandHeader.CATFmtMeshSwapEdgeHdr.LongHelp="交換邊線。";
+// 3951 校正官方漢化// Condense des noeuds d'un element
+
+CATFmtCommandHeader.CATFmtMeshCondenseQuadHdr.Title="壓縮節點";
+CATFmtCommandHeader.CATFmtMeshCondenseQuadHdr.Help="壓縮元素的節點";
+CATFmtCommandHeader.CATFmtMeshCondenseQuadHdr.ShortHelp="壓縮節點";
+CATFmtCommandHeader.CATFmtMeshCondenseQuadHdr.LongHelp="壓縮元素的節點。";
+// 3951 校正官方漢化// Split d'un quadrangle
+
+CATFmtCommandHeader.CATFmtMeshSplitQuadHdr.Title="分割元素";
+CATFmtCommandHeader.CATFmtMeshSplitQuadHdr.Help="將元素分割成兩個三角形";
+CATFmtCommandHeader.CATFmtMeshSplitQuadHdr.ShortHelp="分割元素";
+CATFmtCommandHeader.CATFmtMeshSplitQuadHdr.LongHelp="將元素分割成兩個三角形。";
+// 3951 校正官方漢化// Browser de domaines non maill閟
+
+CATFmtCommandHeader.CATFmtUnmeshedDomainsHdr.Title="未網格化的域";
+CATFmtCommandHeader.CATFmtUnmeshedDomainsHdr.Help="顯示未網格化的域";
+CATFmtCommandHeader.CATFmtUnmeshedDomainsHdr.ShortHelp="未網格化的域";
+CATFmtCommandHeader.CATFmtUnmeshedDomainsHdr.LongHelp="未網格化的域 \n 顯示未網格化的域。";
+
+CATFmtCommandHeader.CATFmtFollowHdr.Title="統計信息";
+CATFmtCommandHeader.CATFmtFollowHdr.Help="顯示網格統計信息：三角形數、元素質量等";
+CATFmtCommandHeader.CATFmtFollowHdr.ShortHelp="統計信息";
+CATFmtCommandHeader.CATFmtFollowHdr.LongHelp="統計信息 \n 顯示網格統計信息：三角形數、元素質量等";
+// 3951 校正官方漢化// Mesh Visu Mangement
+
+CATFmtCommandHeader.CATFmtMeshVisualizationToolsHdr.Title="網格可視化";
+CATFmtCommandHeader.CATFmtMeshVisualizationToolsHdr.ShortHelp="網格可視化";
+CATFmtCommandHeader.CATFmtMeshVisualizationToolsHdr.Help="顯示可視化模式和工具";
+CATFmtCommandHeader.CATFmtMeshVisualizationToolsHdr.LongHelp="網格可視化 \n 顯示可視化模式和工具。";
+// 3951 校正官方漢化// Mesh Visu tools
+
+CATFmtCommandHeader.CATFmtMeshVisuToolsHdr.Title="網格可視化";
+CATFmtCommandHeader.CATFmtMeshVisuToolsHdr.ShortHelp="網格可視化";
+CATFmtCommandHeader.CATFmtMeshVisuToolsHdr.Help="顯示可視化模式和工具";
+CATFmtCommandHeader.CATFmtMeshVisuToolsHdr.LongHelp="網格可視化 \n 顯示可視化模式和工具。";
+// 3951 校正官方漢化// Export du maillage
+
+CATFmtCommandHeader.CATFmtMeshExportHdr.Title="導出網格";
+CATFmtCommandHeader.CATFmtMeshExportHdr.Help="導出網格";
+CATFmtCommandHeader.CATFmtMeshExportHdr.ShortHelp="導出網格";
+CATFmtCommandHeader.CATFmtMeshExportHdr.LongHelp="導出網格";
+
+CATFmtCommandHeader.CATFmtExportHdr.Title="導出網格";
+CATFmtCommandHeader.CATFmtExportHdr.Help="導出網格";
+CATFmtCommandHeader.CATFmtExportHdr.ShortHelp="導出網格";
+CATFmtCommandHeader.CATFmtExportHdr.LongHelp="導出網格";
+// 3951 校正官方漢化// Import du maillage
+
+CATFmtCommandHeader.CATFmtImportHdr.Title="導入網格";
+CATFmtCommandHeader.CATFmtImportHdr.Help="導入網格";
+CATFmtCommandHeader.CATFmtImportHdr.ShortHelp="導入網格";
+CATFmtCommandHeader.CATFmtImportHdr.LongHelp="導入網格";
+// 3951 校正官方漢化// Connection Manager
+
+CATFmtCommandHeader.CATFmtConnectionPropertiesManagerHdr.Title="連接屬性管理器";
+CATFmtCommandHeader.CATFmtConnectionPropertiesManagerHdr.ShortHelp="連接屬性管理器";
+CATFmtCommandHeader.CATFmtConnectionPropertiesManagerHdr.Help="顯示連接屬性管理器";
+CATFmtCommandHeader.CATFmtConnectionPropertiesManagerHdr.LongHelp="連接屬性管理器 \n 顯示連接屬性管理器。";
+// 3951 校正官方漢化// Measure between
+
+CATFmtCommandHeader.CATFmtMeasureBetweenHdr.Title="兩項之間非持久測量";
+CATFmtCommandHeader.CATFmtMeasureBetweenHdr.ShortHelp="創建兩項之間非持久測量";
+CATFmtCommandHeader.CATFmtMeasureBetweenHdr.LongHelp="非持久性測量兩個項目之間的距離和角度";
+CATFmtCommandHeader.CATFmtMeasureBetweenHdr.Help="非持久性測量兩個項目之間的距離和角度";
+// 3951 校正官方漢化// Measure
+
+CATFmtCommandHeader.CATFmtMeasureItemHdr.Title="非持久測量項";
+CATFmtCommandHeader.CATFmtMeasureItemHdr.ShortHelp="創建非持久測量項";
+CATFmtCommandHeader.CATFmtMeasureItemHdr.LongHelp="非持久性測量與選定項目相關聯的屬性";
+CATFmtCommandHeader.CATFmtMeasureItemHdr.Help="非持久性測量與選定項目相關聯的屬性";
+// 3951 校正官方漢化//// 3951 校正官方漢化//// 3951 校正官方漢化// Commandes du mailleur surfacique de r鑗les// 3951 校正官方漢化//// 3951 校正官方漢化//
+// 3951 校正官方漢化// Exit
+
+CATFmtCommandHeader.CATFmtSurfaceRulesExitWorkbenchHdr.Title="退出";
+CATFmtCommandHeader.CATFmtSurfaceRulesExitWorkbenchHdr.Help="退出曲面網格化工作臺";
+CATFmtCommandHeader.CATFmtSurfaceRulesExitWorkbenchHdr.ShortHelp="退出";
+CATFmtCommandHeader.CATFmtSurfaceRulesExitWorkbenchHdr.LongHelp="退出 \n 退出曲面網格化工作臺。";
+// 3951 校正官方漢化// Spec locale de Projection de point
+
+CATFmtCommandHeader.CATFmtSurfaceRulesPointProjectionHdr.Title="強加點";
+CATFmtCommandHeader.CATFmtSurfaceRulesPointProjectionHdr.Help="強加一個或多個點";
+CATFmtCommandHeader.CATFmtSurfaceRulesPointProjectionHdr.ShortHelp="強加點";
+CATFmtCommandHeader.CATFmtSurfaceRulesPointProjectionHdr.LongHelp="強加點 \n 強加一個或多個點。";
+// 3951 校正官方漢化// Spec locale de Projection de courbe
+
+CATFmtCommandHeader.CATFmtSurfaceRulesCurveProjectionHdr.Title="強加曲線";
+CATFmtCommandHeader.CATFmtSurfaceRulesCurveProjectionHdr.Help="強加一條或多條曲線";
+CATFmtCommandHeader.CATFmtSurfaceRulesCurveProjectionHdr.ShortHelp="強加曲線";
+CATFmtCommandHeader.CATFmtSurfaceRulesCurveProjectionHdr.LongHelp="強加曲線 \n 強加一條或多條曲線。";
+// 3951 校正官方漢化// Spec locale de contrainte de TopVertex
+
+CATFmtCommandHeader.CATFmtSurfaceRulesConstrainVertexHdr.Title="約束的頂點";
+CATFmtCommandHeader.CATFmtSurfaceRulesConstrainVertexHdr.Help="約束一個或多個自由頂點";
+CATFmtCommandHeader.CATFmtSurfaceRulesConstrainVertexHdr.ShortHelp="約束的頂點";
+CATFmtCommandHeader.CATFmtSurfaceRulesConstrainVertexHdr.LongHelp="約束的頂點 \n 約束一個或多個自由頂點。";
+// 3951 校正官方漢化// Spec locale de d閏ontrainte de TopVertex
+
+CATFmtCommandHeader.CATFmtSurfaceRulesUnconstrainVertexHdr.Title="解除約束的頂點";
+CATFmtCommandHeader.CATFmtSurfaceRulesUnconstrainVertexHdr.Help="移除頂點上的約束";
+CATFmtCommandHeader.CATFmtSurfaceRulesUnconstrainVertexHdr.ShortHelp="解除約束的頂點";
+CATFmtCommandHeader.CATFmtSurfaceRulesUnconstrainVertexHdr.LongHelp="解除約束的頂點 \n 移除頂點上的約束。";
+// 3951 校正官方漢化// Spec locale de contrainte de TopEdge
+
+CATFmtCommandHeader.CATFmtSurfaceRulesConstrainEdgeHdr.Title="約束的邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesConstrainEdgeHdr.Help="約束一條或多條邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesConstrainEdgeHdr.ShortHelp="約束的邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesConstrainEdgeHdr.LongHelp="約束的邊線 \n 約束一條或多條邊線。";
+// 3951 校正官方漢化// Spec locale de d閏ontrainte de TopEdge
+
+CATFmtCommandHeader.CATFmtSurfaceRulesUnconstrainEdgeHdr.Title="解除約束的邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesUnconstrainEdgeHdr.Help="移除邊線上的約束";
+CATFmtCommandHeader.CATFmtSurfaceRulesUnconstrainEdgeHdr.ShortHelp="解除約束的邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesUnconstrainEdgeHdr.LongHelp="解除約束的邊線 \n 移除邊線上的約束。";
+// 3951 校正官方漢化// Spec locale de contrainte de trou
+
+CATFmtCommandHeader.CATFmtSurfaceRulesConstrainHoleHdr.Title="約束的孔";
+CATFmtCommandHeader.CATFmtSurfaceRulesConstrainHoleHdr.Help="約束一個或多個孔";
+CATFmtCommandHeader.CATFmtSurfaceRulesConstrainHoleHdr.ShortHelp="約束的孔";
+CATFmtCommandHeader.CATFmtSurfaceRulesConstrainHoleHdr.LongHelp="約束的孔 \n 約束一個或多個孔。";
+// 3951 校正官方漢化// Spec locale de d閏ontrainte de trou
+
+CATFmtCommandHeader.CATFmtSurfaceRulesUnconstrainHoleHdr.Title="解除約束的孔";
+CATFmtCommandHeader.CATFmtSurfaceRulesUnconstrainHoleHdr.Help="移除孔上的約束";
+CATFmtCommandHeader.CATFmtSurfaceRulesUnconstrainHoleHdr.ShortHelp="解除約束的孔";
+CATFmtCommandHeader.CATFmtSurfaceRulesUnconstrainHoleHdr.LongHelp="解除約束的孔 \n 移除孔上的約束。";
+// 3951 校正官方漢化// Spec locale de grouping
+
+CATFmtCommandHeader.CATFmtSurfaceRulesGroupingHdr.Title="分組幾何圖形";
+CATFmtCommandHeader.CATFmtSurfaceRulesGroupingHdr.Help="對不同的幾何圖形進行分組，以構建域";
+CATFmtCommandHeader.CATFmtSurfaceRulesGroupingHdr.ShortHelp="分組幾何圖形";
+CATFmtCommandHeader.CATFmtSurfaceRulesGroupingHdr.LongHelp="分組幾何圖形 \n 對不同的幾何圖形進行分組，以構建域。";
+// 3951 校正官方漢化// Spec locale de distribution
+
+CATFmtCommandHeader.CATFmtSurfaceRulesStDistributionHdr.Title="邊線分布";
+CATFmtCommandHeader.CATFmtSurfaceRulesStDistributionHdr.Help="在邊線上分布元素";
+CATFmtCommandHeader.CATFmtSurfaceRulesStDistributionHdr.ShortHelp="邊線分布";
+CATFmtCommandHeader.CATFmtSurfaceRulesStDistributionHdr.LongHelp="邊線分布 \n 在邊線上分布元素。";
+// 3951 校正官方漢化// Propagation de distribution
+
+CATFmtCommandHeader.CATFmtSurfaceRulesStPropagationHdr.Title="分布拓展";
+CATFmtCommandHeader.CATFmtSurfaceRulesStPropagationHdr.Help="拓展現有元素分布";
+CATFmtCommandHeader.CATFmtSurfaceRulesStPropagationHdr.ShortHelp="分布拓展";
+CATFmtCommandHeader.CATFmtSurfaceRulesStPropagationHdr.LongHelp="分布拓展 \n 拓展現有元素分布。";
+// 3951 校正官方漢化// Capture d'elements 
+
+CATFmtCommandHeader.CATFmtSurfaceRulesStCaptureHdr.Title="元素捕獲";
+CATFmtCommandHeader.CATFmtSurfaceRulesStCaptureHdr.Help="捕獲元素";
+CATFmtCommandHeader.CATFmtSurfaceRulesStCaptureHdr.ShortHelp="元素捕獲";
+CATFmtCommandHeader.CATFmtSurfaceRulesStCaptureHdr.LongHelp="元素捕獲 \n 捕獲元素。";
+// 3951 校正官方漢化// Distribution autour de trous
+
+CATFmtCommandHeader.CATFmtSurfaceRulesStHoleHdr.Title="孔周圍的網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesStHoleHdr.Help="在孔周圍分布元素";
+CATFmtCommandHeader.CATFmtSurfaceRulesStHoleHdr.ShortHelp="孔周圍的網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesStHoleHdr.LongHelp="孔周圍的網格 \n 在孔周圍分布元素。";
+// 3951 校正官方漢化// Distribution autour de courbes
+
+CATFmtCommandHeader.CATFmtSurfaceRulesStBoundaryLayerHdr.Title="曲線周圍的網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesStBoundaryLayerHdr.Help="在曲線周圍分布元素";
+CATFmtCommandHeader.CATFmtSurfaceRulesStBoundaryLayerHdr.ShortHelp="曲線周圍的網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesStBoundaryLayerHdr.LongHelp="曲線周圍的網格 \n 在曲線周圍分布元素。";
+// 3951 校正官方漢化// Mailleur Frontal quadrangle
+
+CATFmtCommandHeader.CATFmtSurfaceRulesStFrontalQuadHdr.Title="前四角形方法";
+CATFmtCommandHeader.CATFmtSurfaceRulesStFrontalQuadHdr.Help="使用前四角形方法重新網格化域";
+CATFmtCommandHeader.CATFmtSurfaceRulesStFrontalQuadHdr.ShortHelp="前四角形方法";
+CATFmtCommandHeader.CATFmtSurfaceRulesStFrontalQuadHdr.LongHelp="前四邊形方法 \n 使用前四邊形方法重新網格劃分域。";
+// 3951 校正官方漢化// Mailleur Frontal triangle
+
+CATFmtCommandHeader.CATFmtSurfaceRulesStFrontalTriaHdr.Title="前三角形方法";
+CATFmtCommandHeader.CATFmtSurfaceRulesStFrontalTriaHdr.Help="使用前三角形方法重新網格劃分域";
+CATFmtCommandHeader.CATFmtSurfaceRulesStFrontalTriaHdr.ShortHelp="前三角形方法";
+CATFmtCommandHeader.CATFmtSurfaceRulesStFrontalTriaHdr.LongHelp="前三角形方法 \n 使用前三角形方法重新網格劃分域。";
+// 3951 校正官方漢化// Mailleur Mapped
+
+CATFmtCommandHeader.CATFmtSurfaceRulesStMappedHdr.Title="映射方法";
+CATFmtCommandHeader.CATFmtSurfaceRulesStMappedHdr.Help="使用映射方法重新網格化域";
+CATFmtCommandHeader.CATFmtSurfaceRulesStMappedHdr.ShortHelp="映射方法";
+CATFmtCommandHeader.CATFmtSurfaceRulesStMappedHdr.LongHelp="映射方法 \n 使用映射方法重新網格劃分域。";
+// 3951 校正官方漢化// Mailleur Mapped libre
+
+CATFmtCommandHeader.CATFmtSurfaceRulesStMappedFreeHdr.Title="映射自由方法";
+CATFmtCommandHeader.CATFmtSurfaceRulesStMappedFreeHdr.Help="使用映射自由方法重新網格化域";
+CATFmtCommandHeader.CATFmtSurfaceRulesStMappedFreeHdr.ShortHelp="映射自由方法";
+CATFmtCommandHeader.CATFmtSurfaceRulesStMappedFreeHdr.LongHelp="映射自由方法 \n 使用映射自由方法重新網格劃分域。";
+// 3951 校正官方漢化// Mailleur minimal
+
+CATFmtCommandHeader.CATFmtSurfaceRulesStMappedFreeMinimalHdr.Title="最小方法";
+CATFmtCommandHeader.CATFmtSurfaceRulesStMappedFreeMinimalHdr.Help="使用最小方法重新網格化域";
+CATFmtCommandHeader.CATFmtSurfaceRulesStMappedFreeMinimalHdr.ShortHelp="最小方法";
+CATFmtCommandHeader.CATFmtSurfaceRulesStMappedFreeMinimalHdr.LongHelp="最小方法 \n 使用最小方法重新網格劃分域。";
+// 3951 校正官方漢化// Mailleur bead
+
+CATFmtCommandHeader.CATFmtSurfaceRulesStBeadHdr.Title="凸圓方法";
+CATFmtCommandHeader.CATFmtSurfaceRulesStBeadHdr.Help="使用凸圓方法重新網格化域";
+CATFmtCommandHeader.CATFmtSurfaceRulesStBeadHdr.ShortHelp="凸圓方法";
+CATFmtCommandHeader.CATFmtSurfaceRulesStBeadHdr.LongHelp="凸圓方法 \n 使用凸圓方法重新網格劃分域。";
+// 3951 校正官方漢化// Mailleur half-bead
+
+CATFmtCommandHeader.CATFmtSurfaceRulesStHalfBeadHdr.Title="半凸圓方法";
+CATFmtCommandHeader.CATFmtSurfaceRulesStHalfBeadHdr.Help="使用半凸圓方法重新網格化域";
+CATFmtCommandHeader.CATFmtSurfaceRulesStHalfBeadHdr.ShortHelp="半凸圓方法";
+CATFmtCommandHeader.CATFmtSurfaceRulesStHalfBeadHdr.LongHelp="半凸圓方法 \n 使用半凸圓方法對域重新網格劃分。";
+
+// 3951 校正官方漢化// Modification des parametres de Remesh
+
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshOptionsHdr.Title="重新網格化選項";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshOptionsHdr.Help="設置重新網格化選項。";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshOptionsHdr.ShortHelp="重新網格化選項";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshOptionsHdr.LongHelp="重新網格化選項 \n 設置重新網格化選項。";
+// 3951 校正官方漢化// Compute de la simplification de la topology
+
+CATFmtCommandHeader.CATFmtSurfaceRulesSimplificationRunHdr.Title="簡化拓撲";
+CATFmtCommandHeader.CATFmtSurfaceRulesSimplificationRunHdr.Help="簡化拓撲";
+CATFmtCommandHeader.CATFmtSurfaceRulesSimplificationRunHdr.ShortHelp="簡化拓撲";
+CATFmtCommandHeader.CATFmtSurfaceRulesSimplificationRunHdr.LongHelp="簡化拓撲 \n 簡化拓撲。";
+// 3951 校正官方漢化// Remove de la simplification de la topology
+
+CATFmtCommandHeader.CATFmtSurfaceRulesSimplificationRemoveHdr.Title="移除拓撲簡化";
+CATFmtCommandHeader.CATFmtSurfaceRulesSimplificationRemoveHdr.Help="移除拓撲簡化";
+CATFmtCommandHeader.CATFmtSurfaceRulesSimplificationRemoveHdr.ShortHelp="移除拓撲簡化";
+CATFmtCommandHeader.CATFmtSurfaceRulesSimplificationRemoveHdr.LongHelp="移除拓撲簡化 \n 移除拓撲簡化。";
+// 3951 校正官方漢化// Global Mesh
+
+CATFmtCommandHeader.CATFmtSurfaceRulesGlobalMeshHdr.Title="網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesGlobalMeshHdr.Help="網格化幾何圖形";
+CATFmtCommandHeader.CATFmtSurfaceRulesGlobalMeshHdr.ShortHelp="網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesGlobalMeshHdr.LongHelp="網格 \n 網格化幾何圖形。";
+// 3951 校正官方漢化// Global Mesh
+
+CATFmtCommandHeader.CATFmtSurfaceRulesGlobalUnMeshHdr.Title="移除網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesGlobalUnMeshHdr.Help="移除生成的網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesGlobalUnMeshHdr.ShortHelp="移除網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesGlobalUnMeshHdr.LongHelp="移除網格 \n 移除生成的網格。";
+// 3951 校正官方漢化// Edition de la topologie
+
+CATFmtCommandHeader.CATFmtSurfaceRulesTopologyEditionHdr.Title="編輯拓撲";
+CATFmtCommandHeader.CATFmtSurfaceRulesTopologyEditionHdr.Help="設置對邊線和頂點進行手動修改。";
+CATFmtCommandHeader.CATFmtSurfaceRulesTopologyEditionHdr.ShortHelp="編輯拓撲";
+CATFmtCommandHeader.CATFmtSurfaceRulesTopologyEditionHdr.LongHelp="編輯拓撲 \n 設置對邊線和頂點進行手動修改。";
+// 3951 校正官方漢化// Activation/Desactivation d'edge
+
+CATFmtCommandHeader.CATFmtSurfaceRulesActiveEdgeHdr.Title="添加/移除邊線約束";
+CATFmtCommandHeader.CATFmtSurfaceRulesActiveEdgeHdr.Help="添加/移除邊線約束";
+CATFmtCommandHeader.CATFmtSurfaceRulesActiveEdgeHdr.ShortHelp="添加/移除邊線約束";
+CATFmtCommandHeader.CATFmtSurfaceRulesActiveEdgeHdr.LongHelp="添加/移除邊線約束。";
+// 3951 校正官方漢化// Activation/Desactivation d'un trou
+
+CATFmtCommandHeader.CATFmtActiveHoleHdr.Title="添加/移除孔約束";
+CATFmtCommandHeader.CATFmtActiveHoleHdr.Help="添加/移除孔約束";
+CATFmtCommandHeader.CATFmtActiveHoleHdr.ShortHelp="添加/移除孔約束";
+CATFmtCommandHeader.CATFmtActiveHoleHdr.LongHelp="添加/移除孔約束。";
+// 3951 校正官方漢化// Collapse d'edge
+
+CATFmtCommandHeader.CATFmtSurfaceRulesCollapseEdgeHdr.Title="折疊邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesCollapseEdgeHdr.Help="折疊約束的邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesCollapseEdgeHdr.ShortHelp="折疊邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesCollapseEdgeHdr.LongHelp="折疊約束的邊線。";
+// 3951 校正官方漢化// Cut d'edge
+
+CATFmtCommandHeader.CATFmtSurfaceRulesCutEdgeHdr.Title="剪切邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesCutEdgeHdr.Help="剪切邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesCutEdgeHdr.ShortHelp="剪切邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesCutEdgeHdr.LongHelp="剪切邊線。";
+// 3951 校正官方漢化// Merge d'edge
+
+CATFmtCommandHeader.CATFmtSurfaceRulesMergeEdgeHdr.Title="合并邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesMergeEdgeHdr.Help="合并兩條邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesMergeEdgeHdr.ShortHelp="合并邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesMergeEdgeHdr.LongHelp="合并兩條邊線。";
+// 3951 校正官方漢化// Contrainte de vertex
+
+CATFmtCommandHeader.CATFmtSurfaceRulesActiveVertexHdr.Title="添加/移除頂點約束";
+CATFmtCommandHeader.CATFmtSurfaceRulesActiveVertexHdr.Help="添加/移除頂點約束";
+CATFmtCommandHeader.CATFmtSurfaceRulesActiveVertexHdr.ShortHelp="添加/移除頂點約束";
+CATFmtCommandHeader.CATFmtSurfaceRulesActiveVertexHdr.LongHelp="添加/移除頂點約束。";
+// 3951 校正官方漢化// Drag  de Vertex
+
+CATFmtCommandHeader.CATFmtSurfaceRulesDragVertexHdr.Title="移動頂點";
+CATFmtCommandHeader.CATFmtSurfaceRulesDragVertexHdr.Help="移動邊線上的選定頂點";
+CATFmtCommandHeader.CATFmtSurfaceRulesDragVertexHdr.ShortHelp="移動頂點";
+CATFmtCommandHeader.CATFmtSurfaceRulesDragVertexHdr.LongHelp="移動邊線上的選定頂點。";
+// 3951 校正官方漢化// Split
+
+CATFmtCommandHeader.CATFmtSurfaceRulesSplitDomainHdr.Title="分割域";
+CATFmtCommandHeader.CATFmtSurfaceRulesSplitDomainHdr.Help="分割域";
+CATFmtCommandHeader.CATFmtSurfaceRulesSplitDomainHdr.ShortHelp="分割域";
+CATFmtCommandHeader.CATFmtSurfaceRulesSplitDomainHdr.LongHelp="分割域。";
+
+CATFmtCommandHeader.CATFmtSurfaceRulesCutSplitDomainHdr.Title="分割域";
+CATFmtCommandHeader.CATFmtSurfaceRulesCutSplitDomainHdr.Help="分割域";
+CATFmtCommandHeader.CATFmtSurfaceRulesCutSplitDomainHdr.ShortHelp="分割域";
+CATFmtCommandHeader.CATFmtSurfaceRulesCutSplitDomainHdr.LongHelp="分割域。";
+// 3951 校正官方漢化// Split orthogonal
+
+CATFmtCommandHeader.CATFmtSurfaceRulesOrthogonalSplitDomainHdr.Title="正交分割域";
+CATFmtCommandHeader.CATFmtSurfaceRulesOrthogonalSplitDomainHdr.Help="正交分割域";
+CATFmtCommandHeader.CATFmtSurfaceRulesOrthogonalSplitDomainHdr.ShortHelp="正交分割域";
+CATFmtCommandHeader.CATFmtSurfaceRulesOrthogonalSplitDomainHdr.LongHelp="正交分割域。";
+// 3951 校正官方漢化// Edition manuelle de maillage
+
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshEditionHdr.Title="編輯網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshEditionHdr.Help="編輯網格以提高元素質量";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshEditionHdr.ShortHelp="編輯網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshEditionHdr.LongHelp="編輯網格 \n 編輯網格，以提高元素質量。";
+// 3951 校正官方漢化// Freeze de domaines maillage
+
+CATFmtCommandHeader.CATFmtSurfaceRulesFreezeDomainsHdr.Title="鎖定域";
+CATFmtCommandHeader.CATFmtSurfaceRulesFreezeDomainsHdr.Help="鎖定或解鎖域";
+CATFmtCommandHeader.CATFmtSurfaceRulesFreezeDomainsHdr.ShortHelp="鎖定域";
+CATFmtCommandHeader.CATFmtSurfaceRulesFreezeDomainsHdr.LongHelp="鎖定域 \n 鎖定或解鎖域。";
+// 3951 校正官方漢化// Unmesh de domaines maillages
+
+CATFmtCommandHeader.CATFmtSurfaceRulesUnmeshDomainsHdr.Title="移除域中的網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesUnmeshDomainsHdr.Help="移除選定域的網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesUnmeshDomainsHdr.ShortHelp="移除域中的網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesUnmeshDomainsHdr.LongHelp="移除域中的網格 \n 移除選定域的網格。";
+// 3951 校正官方漢化// Split de quadrangles
+
+CATFmtCommandHeader.CATFmtSurfaceRulesSplitQuadsHdr.Title="分割四角形";
+CATFmtCommandHeader.CATFmtSurfaceRulesSplitQuadsHdr.Help="分割四角形，以提高元素質量";
+CATFmtCommandHeader.CATFmtSurfaceRulesSplitQuadsHdr.ShortHelp="分割四角形";
+CATFmtCommandHeader.CATFmtSurfaceRulesSplitQuadsHdr.LongHelp="分割四角形 \n 分割四角形，以提高元素質量。";
+// 3951 校正官方漢化// Merge de deux triangles
+
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshMergeTriaHdr.Title="移除邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshMergeTriaHdr.Help="移除邊線以合并三角形";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshMergeTriaHdr.ShortHelp="移除邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshMergeTriaHdr.LongHelp="移除邊線以合并三角形";
+// 3951 校正官方漢化// Condense des noeuds d'un edge
+
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshCondenseEdgeHdr.Title="壓縮節點";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshCondenseEdgeHdr.Help="壓縮邊線的節點";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshCondenseEdgeHdr.ShortHelp="壓縮節點";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshCondenseEdgeHdr.LongHelp="壓縮邊線的節點。";
+// 3951 校正官方漢化// Ajout d'un noeud sur un edge
+
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshInsertNodeHdr.Title="插入節點";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshInsertNodeHdr.Help="在邊線上插入節點";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshInsertNodeHdr.ShortHelp="插入節點";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshInsertNodeHdr.LongHelp="在邊線上插入節點。";
+// 3951 校正官方漢化// Swap d'un edge
+
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshSwapEdgeHdr.Title="交換邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshSwapEdgeHdr.Help="交換邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshSwapEdgeHdr.ShortHelp="交換邊線";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshSwapEdgeHdr.LongHelp="交換邊線。";
+// 3951 校正官方漢化// Condense des noeuds d'un element
+
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshCondenseQuadHdr.Title="壓縮節點";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshCondenseQuadHdr.Help="壓縮元素的節點";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshCondenseQuadHdr.ShortHelp="壓縮節點";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshCondenseQuadHdr.LongHelp="壓縮元素的節點。";
+// 3951 校正官方漢化// Split d'un quadrangle
+
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshSplitQuadHdr.Title="分割元素";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshSplitQuadHdr.Help="將元素分割成兩個三角形";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshSplitQuadHdr.ShortHelp="分割元素";
+CATFmtCommandHeader.CATFmtSurfaceRulesMeshSplitQuadHdr.LongHelp="將元素分割成兩個三角形。";
+// 3951 校正官方漢化// Browser de domaines non maill閟
+
+CATFmtCommandHeader.CATFmtSurfaceRulesUnmeshedDomainsHdr.Title="未網格化的域";
+CATFmtCommandHeader.CATFmtSurfaceRulesUnmeshedDomainsHdr.Help="顯示未網格化的域";
+CATFmtCommandHeader.CATFmtSurfaceRulesUnmeshedDomainsHdr.ShortHelp="未網格化的域";
+CATFmtCommandHeader.CATFmtSurfaceRulesUnmeshedDomainsHdr.LongHelp="未網格化的域 \n 顯示未網格化的域。";
+
+CATFmtCommandHeader.CATFmtSurfaceRulesFollowHdr.Title="統計信息";
+CATFmtCommandHeader.CATFmtSurfaceRulesFollowHdr.Help="顯示網格統計信息：三角形數、元素質量等";
+CATFmtCommandHeader.CATFmtSurfaceRulesFollowHdr.ShortHelp="統計信息";
+CATFmtCommandHeader.CATFmtSurfaceRulesFollowHdr.LongHelp="統計信息 \n 顯示網格統計信息：三角形數、元素質量等";
+// 3951 校正官方漢化//// 3951 校正官方漢化//// 3951 校正官方漢化// Commandes du mailleur Servant// 3951 校正官方漢化//// 3951 校正官方漢化//
+// 3951 校正官方漢化// Exit
+
+CATFmtCommandHeader.CATFmtServantExitWorkbenchHdr.Title="退出";
+CATFmtCommandHeader.CATFmtServantExitWorkbenchHdr.Help="退出基于規則的曲面網格工作臺";
+CATFmtCommandHeader.CATFmtServantExitWorkbenchHdr.ShortHelp="退出";
+CATFmtCommandHeader.CATFmtServantExitWorkbenchHdr.LongHelp="退出 \n 退出曲面網格工作臺。";
+// 3951 校正官方漢化// Compute de la simplification de la topology
+
+CATFmtCommandHeader.CATFmtServantSimplificationRunHdr.Title="簡化拓撲";
+CATFmtCommandHeader.CATFmtServantSimplificationRunHdr.Help="簡化拓撲";
+CATFmtCommandHeader.CATFmtServantSimplificationRunHdr.ShortHelp="簡化拓撲";
+CATFmtCommandHeader.CATFmtServantSimplificationRunHdr.LongHelp="簡化拓撲 \n 簡化拓撲。";
+// 3951 校正官方漢化// Remove de la simplification de la topology
+
+CATFmtCommandHeader.CATFmtServantSimplificationRemoveHdr.Title="移除拓撲簡化";
+CATFmtCommandHeader.CATFmtServantSimplificationRemoveHdr.Help="移除拓撲簡化";
+CATFmtCommandHeader.CATFmtServantSimplificationRemoveHdr.ShortHelp="移除拓撲簡化";
+CATFmtCommandHeader.CATFmtServantSimplificationRemoveHdr.LongHelp="移除拓撲簡化 \n 移除拓撲簡化。";
+// 3951 校正官方漢化// Global Mesh
+
+CATFmtCommandHeader.CATFmtServantGlobalMeshHdr.Title="網格";
+CATFmtCommandHeader.CATFmtServantGlobalMeshHdr.Help="網格化幾何圖形";
+CATFmtCommandHeader.CATFmtServantGlobalMeshHdr.ShortHelp="網格";
+CATFmtCommandHeader.CATFmtServantGlobalMeshHdr.LongHelp="網格 \n 網格化幾何圖形。";
+// 3951 校正官方漢化// Global UnMesh
+
+CATFmtCommandHeader.CATFmtServantGlobalUnMeshHdr.Title="移除網格";
+CATFmtCommandHeader.CATFmtServantGlobalUnMeshHdr.Help="移除生成的網格";
+CATFmtCommandHeader.CATFmtServantGlobalUnMeshHdr.ShortHelp="移除網格";
+CATFmtCommandHeader.CATFmtServantGlobalUnMeshHdr.LongHelp="移除網格 \n 移除生成的網格。";
+// 3951 校正官方漢化// Edition de la topologie
+
+CATFmtCommandHeader.CATFmtServantTopologyEditionHdr.Title="編輯拓撲";
+CATFmtCommandHeader.CATFmtServantTopologyEditionHdr.Help="設置對邊線和頂點進行手動修改。";
+CATFmtCommandHeader.CATFmtServantTopologyEditionHdr.ShortHelp="編輯拓撲";
+CATFmtCommandHeader.CATFmtServantTopologyEditionHdr.LongHelp="編輯拓撲 \n 設置對邊線和頂點進行手動修改。";
+// 3951 校正官方漢化// Activation/Desactivation d'edge
+
+CATFmtCommandHeader.CATFmtServantActiveEdgeHdr.Title="添加/移除邊線約束";
+CATFmtCommandHeader.CATFmtServantActiveEdgeHdr.Help="添加/移除邊線約束";
+CATFmtCommandHeader.CATFmtServantActiveEdgeHdr.ShortHelp="添加/移除邊線約束";
+CATFmtCommandHeader.CATFmtServantActiveEdgeHdr.LongHelp="添加/移除邊線約束。";
+// 3951 校正官方漢化// Activation/Desactivation d'un trou
+
+CATFmtCommandHeader.CATFmtActiveHoleHdr.Title="添加/移除孔約束";
+CATFmtCommandHeader.CATFmtActiveHoleHdr.Help="添加/移除孔約束";
+CATFmtCommandHeader.CATFmtActiveHoleHdr.ShortHelp="添加/移除孔約束";
+CATFmtCommandHeader.CATFmtActiveHoleHdr.LongHelp="添加/移除孔約束。";
+// 3951 校正官方漢化// Collapse d'edge
+
+CATFmtCommandHeader.CATFmtServantCollapseEdgeHdr.Title="折疊邊線";
+CATFmtCommandHeader.CATFmtServantCollapseEdgeHdr.Help="折疊約束的邊線";
+CATFmtCommandHeader.CATFmtServantCollapseEdgeHdr.ShortHelp="折疊邊線";
+CATFmtCommandHeader.CATFmtServantCollapseEdgeHdr.LongHelp="折疊約束的邊線。";
+// 3951 校正官方漢化// Cut d'edge
+
+CATFmtCommandHeader.CATFmtServantCutEdgeHdr.Title="剪切邊線";
+CATFmtCommandHeader.CATFmtServantCutEdgeHdr.Help="剪切邊線";
+CATFmtCommandHeader.CATFmtServantCutEdgeHdr.ShortHelp="剪切邊線";
+CATFmtCommandHeader.CATFmtServantCutEdgeHdr.LongHelp="剪切邊線。";
+// 3951 校正官方漢化// Merge d'edge
+
+CATFmtCommandHeader.CATFmtServantMergeEdgeHdr.Title="合并邊線";
+CATFmtCommandHeader.CATFmtServantMergeEdgeHdr.Help="合并兩條邊線";
+CATFmtCommandHeader.CATFmtServantMergeEdgeHdr.ShortHelp="合并邊線";
+CATFmtCommandHeader.CATFmtServantMergeEdgeHdr.LongHelp="合并兩條邊線。";
+// 3951 校正官方漢化// Contrainte de vertex
+
+CATFmtCommandHeader.CATFmtServantActiveVertexHdr.Title="添加/移除頂點約束";
+CATFmtCommandHeader.CATFmtServantActiveVertexHdr.Help="添加/移除頂點約束";
+CATFmtCommandHeader.CATFmtServantActiveVertexHdr.ShortHelp="添加/移除頂點約束";
+CATFmtCommandHeader.CATFmtServantActiveVertexHdr.LongHelp="添加/移除頂點約束。";
+// 3951 校正官方漢化// Drag  de Vertex
+
+CATFmtCommandHeader.CATFmtServantDragVertexHdr.Title="移動頂點";
+CATFmtCommandHeader.CATFmtServantDragVertexHdr.Help="移動邊線上的選定頂點";
+CATFmtCommandHeader.CATFmtServantDragVertexHdr.ShortHelp="移動頂點";
+CATFmtCommandHeader.CATFmtServantDragVertexHdr.LongHelp="移動邊線上的選定頂點。";
+// 3951 校正官方漢化// Split
+
+CATFmtCommandHeader.CATFmtServantSplitDomainHdr.Title="分割域";
+CATFmtCommandHeader.CATFmtServantSplitDomainHdr.Help="分割域";
+CATFmtCommandHeader.CATFmtServantSplitDomainHdr.ShortHelp="分割域";
+CATFmtCommandHeader.CATFmtServantSplitDomainHdr.LongHelp="分割域。";
+
+CATFmtCommandHeader.CATFmtServantCutSplitDomainHdr.Title="分割域";
+CATFmtCommandHeader.CATFmtServantCutSplitDomainHdr.Help="分割域";
+CATFmtCommandHeader.CATFmtServantCutSplitDomainHdr.ShortHelp="分割域";
+CATFmtCommandHeader.CATFmtServantCutSplitDomainHdr.LongHelp="分割域。";
+// 3951 校正官方漢化// Split orthogonal
+
+CATFmtCommandHeader.CATFmtServantOrthogonalSplitDomainHdr.Title="正交分割域";
+CATFmtCommandHeader.CATFmtServantOrthogonalSplitDomainHdr.Help="正交分割域";
+CATFmtCommandHeader.CATFmtServantOrthogonalSplitDomainHdr.ShortHelp="正交分割域";
+CATFmtCommandHeader.CATFmtServantOrthogonalSplitDomainHdr.LongHelp="正交分割域。";
+// 3951 校正官方漢化// Edition manuelle de maillage
+
+CATFmtCommandHeader.CATFmtServantMeshEditionHdr.Title="編輯網格";
+CATFmtCommandHeader.CATFmtServantMeshEditionHdr.Help="編輯網格以提高元素質量";
+CATFmtCommandHeader.CATFmtServantMeshEditionHdr.ShortHelp="編輯網格";
+CATFmtCommandHeader.CATFmtServantMeshEditionHdr.LongHelp="編輯網格 \n 編輯網格，以提高元素質量。";
+// 3951 校正官方漢化// Freeze de domaines maillage
+
+CATFmtCommandHeader.CATFmtServantFreezeDomainsHdr.Title="鎖定域";
+CATFmtCommandHeader.CATFmtServantFreezeDomainsHdr.Help="鎖定或解鎖域";
+CATFmtCommandHeader.CATFmtServantFreezeDomainsHdr.ShortHelp="鎖定域";
+CATFmtCommandHeader.CATFmtServantFreezeDomainsHdr.LongHelp="鎖定域 \n 鎖定或解鎖域。";
+// 3951 校正官方漢化// Unmesh de domaines maillages
+
+CATFmtCommandHeader.CATFmtServantUnmeshDomainsHdr.Title="移除域中的網格";
+CATFmtCommandHeader.CATFmtServantUnmeshDomainsHdr.Help="移除選定域的網格";
+CATFmtCommandHeader.CATFmtServantUnmeshDomainsHdr.ShortHelp="移除域中的網格";
+CATFmtCommandHeader.CATFmtServantUnmeshDomainsHdr.LongHelp="移除域中的網格 \n 移除選定域的網格。";
+// 3951 校正官方漢化// Split de quadrangles
+
+CATFmtCommandHeader.CATFmtServantSplitQuadsHdr.Title="分割四角形";
+CATFmtCommandHeader.CATFmtServantSplitQuadsHdr.Help="分割四角形，以提高元素質量";
+CATFmtCommandHeader.CATFmtServantSplitQuadsHdr.ShortHelp="分割四角形";
+CATFmtCommandHeader.CATFmtServantSplitQuadsHdr.LongHelp="分割四角形 \n 分割四角形，以提高元素質量。";
+// 3951 校正官方漢化// Merge de deux triangles
+
+CATFmtCommandHeader.CATFmtServantMeshMergeTriaHdr.Title="移除邊線";
+CATFmtCommandHeader.CATFmtServantMeshMergeTriaHdr.Help="移除邊線以合并三角形";
+CATFmtCommandHeader.CATFmtServantMeshMergeTriaHdr.ShortHelp="移除邊線";
+CATFmtCommandHeader.CATFmtServantMeshMergeTriaHdr.LongHelp="移除邊線以合并三角形";
+// 3951 校正官方漢化// Condense des noeuds d'un edge
+
+CATFmtCommandHeader.CATFmtServantMeshCondenseEdgeHdr.Title="壓縮節點";
+CATFmtCommandHeader.CATFmtServantMeshCondenseEdgeHdr.Help="壓縮邊線的節點";
+CATFmtCommandHeader.CATFmtServantMeshCondenseEdgeHdr.ShortHelp="壓縮節點";
+CATFmtCommandHeader.CATFmtServantMeshCondenseEdgeHdr.LongHelp="壓縮邊線的節點。";
+// 3951 校正官方漢化// Ajout d'un noeud sur un edge
+
+CATFmtCommandHeader.CATFmtServantMeshInsertNodeHdr.Title="插入節點";
+CATFmtCommandHeader.CATFmtServantMeshInsertNodeHdr.Help="在邊線上插入節點";
+CATFmtCommandHeader.CATFmtServantMeshInsertNodeHdr.ShortHelp="插入節點";
+CATFmtCommandHeader.CATFmtServantMeshInsertNodeHdr.LongHelp="在邊線上插入節點。";
+// 3951 校正官方漢化// Swap d'un edge
+
+CATFmtCommandHeader.CATFmtServantMeshSwapEdgeHdr.Title="交換邊線";
+CATFmtCommandHeader.CATFmtServantMeshSwapEdgeHdr.Help="交換邊線";
+CATFmtCommandHeader.CATFmtServantMeshSwapEdgeHdr.ShortHelp="交換邊線";
+CATFmtCommandHeader.CATFmtServantMeshSwapEdgeHdr.LongHelp="交換邊線。";
+// 3951 校正官方漢化// Condense des noeuds d'un element
+
+CATFmtCommandHeader.CATFmtServantMeshCondenseQuadHdr.Title="壓縮節點";
+CATFmtCommandHeader.CATFmtServantMeshCondenseQuadHdr.Help="壓縮元素的節點";
+CATFmtCommandHeader.CATFmtServantMeshCondenseQuadHdr.ShortHelp="壓縮節點";
+CATFmtCommandHeader.CATFmtServantMeshCondenseQuadHdr.LongHelp="壓縮元素的節點。";
+// 3951 校正官方漢化// Split d'un quadrangle
+
+CATFmtCommandHeader.CATFmtServantMeshSplitQuadHdr.Title="分割元素";
+CATFmtCommandHeader.CATFmtServantMeshSplitQuadHdr.Help="將元素分割成兩個三角形";
+CATFmtCommandHeader.CATFmtServantMeshSplitQuadHdr.ShortHelp="分割元素";
+CATFmtCommandHeader.CATFmtServantMeshSplitQuadHdr.LongHelp="將元素分割成兩個三角形。";
+// 3951 校正官方漢化// Browser de domaines non maill閟
+
+CATFmtCommandHeader.CATFmtServantUnmeshedDomainsHdr.Title="未網格化的域";
+CATFmtCommandHeader.CATFmtServantUnmeshedDomainsHdr.Help="顯示未網格化的域";
+CATFmtCommandHeader.CATFmtServantUnmeshedDomainsHdr.ShortHelp="未網格化的域";
+CATFmtCommandHeader.CATFmtServantUnmeshedDomainsHdr.LongHelp="未網格化的域 \n 顯示未網格化的域。";
+
+CATFmtCommandHeader.CATFmtServantFollowHdr.Title="統計信息";
+CATFmtCommandHeader.CATFmtServantFollowHdr.Help="顯示網格統計信息：三角形數、元素質量等";
+CATFmtCommandHeader.CATFmtServantFollowHdr.ShortHelp="統計信息";
+CATFmtCommandHeader.CATFmtServantFollowHdr.LongHelp="統計信息 \n 顯示網格統計信息：三角形數、元素質量等";
+
+// 3951 校正官方漢化// Modification des parametres de Remesh
+
+CATFmtCommandHeader.CATFmtServantMeshOptionsHdr.Title="重新網格化選項";
+CATFmtCommandHeader.CATFmtServantMeshOptionsHdr.Help="設置重新網格化選項。";
+CATFmtCommandHeader.CATFmtServantMeshOptionsHdr.ShortHelp="重新網格化選項";
+CATFmtCommandHeader.CATFmtServantMeshOptionsHdr.LongHelp="重新網格化選項 \n 設置重新網格化選項。";
+
+// 3951 校正官方漢化// Spec locale de distribution
+
+CATFmtCommandHeader.CATFmtServantStDistributionHdr.Title="邊線分布";
+CATFmtCommandHeader.CATFmtServantStDistributionHdr.Help="在邊線上分布元素";
+CATFmtCommandHeader.CATFmtServantStDistributionHdr.ShortHelp="邊線分布";
+CATFmtCommandHeader.CATFmtServantStDistributionHdr.LongHelp="邊線分布 \n 在邊線上分布元素。";
+// 3951 校正官方漢化// Capture d'elements 
+
+CATFmtCommandHeader.CATFmtServantStCaptureHdr.Title="元素捕獲";
+CATFmtCommandHeader.CATFmtServantStCaptureHdr.Help="捕獲元素";
+CATFmtCommandHeader.CATFmtServantStCaptureHdr.ShortHelp="元素捕獲";
+CATFmtCommandHeader.CATFmtServantStCaptureHdr.LongHelp="元素捕獲 \n 捕獲元素。";
+// 3951 校正官方漢化// Distribution autour de trous
+
+CATFmtCommandHeader.CATFmtServantStHoleHdr.Title="孔周圍的網格";
+CATFmtCommandHeader.CATFmtServantStHoleHdr.Help="在孔周圍分布元素";
+CATFmtCommandHeader.CATFmtServantStHoleHdr.ShortHelp="孔周圍的網格";
+CATFmtCommandHeader.CATFmtServantStHoleHdr.LongHelp="孔周圍的網格 \n 在孔周圍分布元素。";
+// 3951 校正官方漢化// Propagation de distribution
+
+CATFmtCommandHeader.CATFmtServantStPropagationHdr.Title="分布拓展";
+CATFmtCommandHeader.CATFmtServantStPropagationHdr.Help="拓展現有元素分布";
+CATFmtCommandHeader.CATFmtServantStPropagationHdr.ShortHelp="分布拓展";
+CATFmtCommandHeader.CATFmtServantStPropagationHdr.LongHelp="分布拓展 \n 拓展現有元素分布。";
+// 3951 校正官方漢化// Mailleur Frontal quadrangle
+
+CATFmtCommandHeader.CATFmtServantStFrontQuadHdr.Title="前四角形方法";
+CATFmtCommandHeader.CATFmtServantStFrontQuadHdr.Help="使用前四角形方法重新網格化域";
+CATFmtCommandHeader.CATFmtServantStFrontQuadHdr.ShortHelp="前四角形方法";
+CATFmtCommandHeader.CATFmtServantStFrontQuadHdr.LongHelp="前四角形方法 \n 使用前四角形方法重新網格化域。";
+// 3951 校正官方漢化// Mailleur Frontal triangle
+
+CATFmtCommandHeader.CATFmtServantStFrontTriaHdr.Title="前三角形方法";
+CATFmtCommandHeader.CATFmtServantStFrontTriaHdr.Help="使用前三角形方法重新網格劃分域";
+CATFmtCommandHeader.CATFmtServantStFrontTriaHdr.ShortHelp="前三角形方法";
+CATFmtCommandHeader.CATFmtServantStFrontTriaHdr.LongHelp="前三角形方法 \n 使用前三角形方法重新網格化域。";
+// 3951 校正官方漢化// Mailleur Mapped
+
+CATFmtCommandHeader.CATFmtServantStMappedHdr.Title="映射方法";
+CATFmtCommandHeader.CATFmtServantStMappedHdr.Help="使用映射方法重新網格化域";
+CATFmtCommandHeader.CATFmtServantStMappedHdr.ShortHelp="映射方法";
+CATFmtCommandHeader.CATFmtServantStMappedHdr.LongHelp="映射方法 \n 使用映射方法重新網格化域。";
+// 3951 校正官方漢化// Mailleur Mapped libre
+
+CATFmtCommandHeader.CATFmtServantStMappedFreeHdr.Title="映射自由方法";
+CATFmtCommandHeader.CATFmtServantStMappedFreeHdr.Help="使用映射自由方法重新網格化域";
+CATFmtCommandHeader.CATFmtServantStMappedFreeHdr.ShortHelp="映射自由方法";
+CATFmtCommandHeader.CATFmtServantStMappedFreeHdr.LongHelp="映射自由方法 \n 使用映射自由方法重新網格化域。";
+// 3951 校正官方漢化// Mailleur minimal
+
+CATFmtCommandHeader.CATFmtServantStMappedFreeMinimalHdr.Title="最小方法";
+CATFmtCommandHeader.CATFmtServantStMappedFreeMinimalHdr.Help="使用最小方法重新網格化域";
+CATFmtCommandHeader.CATFmtServantStMappedFreeMinimalHdr.ShortHelp="最小方法";
+CATFmtCommandHeader.CATFmtServantStMappedFreeMinimalHdr.LongHelp="最小方法 \n 使用最小方法重新網格化域。";
+// 3951 校正官方漢化// Mailleur bead
+
+CATFmtCommandHeader.CATFmtServantStBeadHdr.Title="凸圓方法";
+CATFmtCommandHeader.CATFmtServantStBeadHdr.Help="使用凸圓方法重新網格化域";
+CATFmtCommandHeader.CATFmtServantStBeadHdr.ShortHelp="凸圓方法";
+CATFmtCommandHeader.CATFmtServantStBeadHdr.LongHelp="凸圓方法 \n 使用凸圓方法重新網格化域。";
+// 3951 校正官方漢化// Mailleur half-bead
+
+CATFmtCommandHeader.CATFmtServantStHalfBeadHdr.Title="半凸圓方法";
+CATFmtCommandHeader.CATFmtServantStHalfBeadHdr.Help="使用半凸圓方法重新網格化域";
+CATFmtCommandHeader.CATFmtServantStHalfBeadHdr.ShortHelp="半凸圓方法";
+CATFmtCommandHeader.CATFmtServantStHalfBeadHdr.LongHelp="半凸圓方法 \n 使用半凸圓方法對域重新網格化。";
+// 3951 校正官方漢化// Free Edges
+
+CATFmtCommandHeader.CATFmtServantFreeEdgeCheckerHdr.Title="自由邊線";
+CATFmtCommandHeader.CATFmtServantFreeEdgeCheckerHdr.Help="顯示網格的自由邊線";
+CATFmtCommandHeader.CATFmtServantFreeEdgeCheckerHdr.ShortHelp="自由邊線";
+CATFmtCommandHeader.CATFmtServantFreeEdgeCheckerHdr.LongHelp="自由邊線 \n 顯示網格的自由邊線。";
+// 3951 校正官方漢化// Interferences
+
+CATFmtCommandHeader.CATFmtServantInterferenceCheckerHdr.Title="干涉";
+CATFmtCommandHeader.CATFmtServantInterferenceCheckerHdr.Help="檢查網格，以檢測相交/干涉";
+CATFmtCommandHeader.CATFmtServantInterferenceCheckerHdr.ShortHelp="干涉";
+CATFmtCommandHeader.CATFmtServantInterferenceCheckerHdr.LongHelp="干涉 \n 檢查網格，以檢測相交/干涉。";
+// 3951 校正官方漢化// Cutting Plane
+
+CATFmtCommandHeader.CATFmtServantCuttingPlaneHdr.Title="剪切平面";
+CATFmtCommandHeader.CATFmtServantCuttingPlaneHdr.Help="使用精確剪切平面或近似剪切平面檢查網格";
+CATFmtCommandHeader.CATFmtServantCuttingPlaneHdr.ShortHelp="剪切平面";
+CATFmtCommandHeader.CATFmtServantCuttingPlaneHdr.LongHelp="剪切平面 \n 使用精確剪切平面或近似剪切平面檢查網格。";
+// 3951 校正官方漢化// Anayse Qualit?( commnade globale )
+
+CATFmtCommandHeader.CATFmtServantQualityCheckerHdr.Title="質量分析";
+CATFmtCommandHeader.CATFmtServantQualityCheckerHdr.Help="分析元素質量，選擇并調整質量條件";
+CATFmtCommandHeader.CATFmtServantQualityCheckerHdr.ShortHelp="質量分析";
+CATFmtCommandHeader.CATFmtServantQualityCheckerHdr.LongHelp="分析元素質量，選擇并調整質量條件。";
+// 3951 校正官方漢化
+// V6 Batch Meshing
+
+CATFmtCommandHeader.CATFmtBatchFEMCreationSilverLayerHdr.Title="啟動批處理網格化應用程序";
+CATFmtCommandHeader.CATFmtBatchFEMCreationSilverLayerHdr.Help="啟動批處理網格化應用程序";
+CATFmtCommandHeader.CATFmtBatchFEMCreationSilverLayerHdr.ShortHelp="啟動批處理網格化應用程序";
+CATFmtCommandHeader.CATFmtBatchFEMCreationSilverLayerHdr.LongHelp="啟動批處理網格化應用程序";
+// 3951 校正官方漢化
+// Clipping Box
+
+CATFmtCommandHeader.CATFmtClippingBoxHdr.Title="裁剪框";
+CATFmtCommandHeader.CATFmtClippingBoxHdr.Help="框周圍的裁剪可視化";
+CATFmtCommandHeader.CATFmtClippingBoxHdr.ShortHelp="裁剪框";
+CATFmtCommandHeader.CATFmtClippingBoxHdr.LongHelp="框周圍的裁剪可視化";
+// 3951 校正官方漢化
+// Surface Rules Mesh
+
+CATFmtCommandHeader.CATFmtSurfaceRulesMesherHdr.Title="曲面規則網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesMesherHdr.Help="曲面規則網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesMesherHdr.ShortHelp="曲面規則網格";
+CATFmtCommandHeader.CATFmtSurfaceRulesMesherHdr.LongHelp="曲面規則網格";
+// 3951 校正官方漢化
+// Rules Mesh Editor
+
+CATFmtCommandHeader.CATFmtMeshingRulesEditorHdr.Title="網格化規則編輯器";
+CATFmtCommandHeader.CATFmtMeshingRulesEditorHdr.Help="網格化規則編輯器";
+CATFmtCommandHeader.CATFmtMeshingRulesEditorHdr.ShortHelp="網格化規則編輯器";
+CATFmtCommandHeader.CATFmtMeshingRulesEditorHdr.LongHelp="網格化規則編輯器";
+// 3951 校正官方漢化
+// Rules Mesh Editor
+
+CATFmtCommandHeader.CATFmtMeshingEditionToolsHdr.Title="網格化編輯器";
+CATFmtCommandHeader.CATFmtMeshingEditionToolsHdr.Help="網格化編輯器";
+CATFmtCommandHeader.CATFmtMeshingEditionToolsHdr.ShortHelp="網格化編輯器";
+CATFmtCommandHeader.CATFmtMeshingEditionToolsHdr.LongHelp="網格化編輯器";
+// 3951 校正官方漢化
+// Clipping Box ( Servant )
+
+CATFmtCommandHeader.CATFmtServantClippingBoxHdr.Title="裁剪框";
+CATFmtCommandHeader.CATFmtServantClippingBoxHdr.Help="框周圍的裁剪可視化";
+CATFmtCommandHeader.CATFmtServantClippingBoxHdr.ShortHelp="裁剪框";
+CATFmtCommandHeader.CATFmtServantClippingBoxHdr.LongHelp="框周圍的裁剪可視化";
+// 3951 校正官方漢化
+// Deletion (mesh edition)
+
+CATFmtCommandHeader.CATFmtVidMeshEditDeletionHdr.Title="刪除元素";
+CATFmtCommandHeader.CATFmtVidMeshEditDeletionHdr.Help="刪除元素";
+CATFmtCommandHeader.CATFmtVidMeshEditDeletionHdr.ShortHelp="刪除元素";
+CATFmtCommandHeader.CATFmtVidMeshEditDeletionHdr.LongHelp="刪除元素";
+// 3951 校正官方漢化
+// Optimization (mesh edition)
+
+CATFmtCommandHeader.CATFmtVidMeshEditOptimizationHdr.Title="優化";
+CATFmtCommandHeader.CATFmtVidMeshEditOptimizationHdr.Help="優化";
+CATFmtCommandHeader.CATFmtVidMeshEditOptimizationHdr.ShortHelp="優化";
+CATFmtCommandHeader.CATFmtVidMeshEditOptimizationHdr.LongHelp="優化";
+// 3951 校正官方漢化
+// Remesh area (mesh edition)
+
+CATFmtCommandHeader.CATFmtVidMeshEditRemeshHdr.Title="重新網格化區域";
+CATFmtCommandHeader.CATFmtVidMeshEditRemeshHdr.Help="重新網格化區域";
+CATFmtCommandHeader.CATFmtVidMeshEditRemeshHdr.ShortHelp="重新網格化區域";
+CATFmtCommandHeader.CATFmtVidMeshEditRemeshHdr.LongHelp="重新網格化區域";
+// 3951 校正官方漢化
+// Manual edition (mesh edition)
+
+CATFmtCommandHeader.CATFmtVidMeshEditManualHdr.Title="手動編輯";
+CATFmtCommandHeader.CATFmtVidMeshEditManualHdr.Help="手動編輯";
+CATFmtCommandHeader.CATFmtVidMeshEditManualHdr.ShortHelp="手動編輯";
+CATFmtCommandHeader.CATFmtVidMeshEditManualHdr.LongHelp="手動編輯";
+// 3951 校正官方漢化
+// Node creation (mesh edition)
+
+CATFmtCommandHeader.CATFmtVidMeshEditNodeCreationHdr.Title="創建節點";
+CATFmtCommandHeader.CATFmtVidMeshEditNodeCreationHdr.Help="創建節點";
+CATFmtCommandHeader.CATFmtVidMeshEditNodeCreationHdr.ShortHelp="創建節點";
+CATFmtCommandHeader.CATFmtVidMeshEditNodeCreationHdr.LongHelp="創建節點";
+// 3951 校正官方漢化
+// Element creation (mesh edition)
+
+CATFmtCommandHeader.CATFmtVidMeshEditElementCreationHdr.Title="創建元素";
+CATFmtCommandHeader.CATFmtVidMeshEditElementCreationHdr.Help="創建元素";
+CATFmtCommandHeader.CATFmtVidMeshEditElementCreationHdr.ShortHelp="創建元素";
+CATFmtCommandHeader.CATFmtVidMeshEditElementCreationHdr.LongHelp="創建元素";
+// 3951 校正官方漢化
+// Align nodes (mesh edition)
+
+CATFmtCommandHeader.CATFmtVidMeshEditAlignNodesHdr.Title="對齊節點";
+CATFmtCommandHeader.CATFmtVidMeshEditAlignNodesHdr.Help="對齊節點";
+CATFmtCommandHeader.CATFmtVidMeshEditAlignNodesHdr.ShortHelp="對齊節點";
+CATFmtCommandHeader.CATFmtVidMeshEditAlignNodesHdr.LongHelp="對齊節點";
+// 3951 校正官方漢化
+// Split elements (mesh edition)
+
+CATFmtCommandHeader.CATFmtVidMeshEditSplitElementsHdr.Title="分割元素";
+CATFmtCommandHeader.CATFmtVidMeshEditSplitElementsHdr.Help="分割元素";
+CATFmtCommandHeader.CATFmtVidMeshEditSplitElementsHdr.ShortHelp="分割元素";
+CATFmtCommandHeader.CATFmtVidMeshEditSplitElementsHdr.LongHelp="分割元素";
+// 3951 校正官方漢化
+// Condense nodes (mesh edition)
+
+CATFmtCommandHeader.CATFmtVidMeshEditCondenseNodesHdr.Title="壓縮節點";
+CATFmtCommandHeader.CATFmtVidMeshEditCondenseNodesHdr.Help="壓縮節點";
+CATFmtCommandHeader.CATFmtVidMeshEditCondenseNodesHdr.ShortHelp="壓縮節點";
+CATFmtCommandHeader.CATFmtVidMeshEditCondenseNodesHdr.LongHelp="壓縮節點";
+// 3951 校正官方漢化
+// Knowledge
+
+CATFmtCommandHeader.CATFmtVidKnowledgeHdr.Title="知識工程";
+CATFmtCommandHeader.CATFmtVidKnowledgeHdr.Help="知識工程";
+CATFmtCommandHeader.CATFmtVidKnowledgeHdr.ShortHelp="知識工程";
+CATFmtCommandHeader.CATFmtVidKnowledgeHdr.LongHelp="知識工程"    ;

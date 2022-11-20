@@ -1,0 +1,61 @@
+// 3951 校正官方漢化 *--------------------------------------------*// 3951 校正官方漢化
+// 3951 校正官方漢化 *               Exemple de message           *// 3951 校正官方漢化
+// 3951 校正官方漢化 *  En_US                                     *// 3951 校正官方漢化
+// 3951 校正官方漢化 *------------------------------------------- *// 3951 校正官方漢化
+// 3951 校正官方漢化 ERR_2000.Request    = "Vous avez additionne /p1 avec /p2";
+// 3951 校正官方漢化 ERR_2000.Diagnostic = "Un des parametres est negatif";
+// 3951 校正官方漢化 ERR_2000.Advice     = "Utilisez des parametres positifs";
+
+// 3951 校正官方漢化100. Infra error
+// 3951 校正官方漢化Linking error
+SBM_INTERNAL_ERR_100.Request="您正在鏈接兩個模型。";
+SBM_INTERNAL_ERR_100.Diagnostic="此鏈接失敗。";
+SBM_INTERNAL_ERR_100.Advice="請確保該鏈接合法。";
+
+// 3951 校正官方漢化200. TDM Error
+SBM_INTERNAL_ERR_200.Request="創建連接";
+SBM_INTERNAL_ERR_200.Diagnostic="創建此連接失敗";
+SBM_INTERNAL_ERR_200.Advice="請確保此連接合法。";
+
+// 3951 校正官方漢化3XX. Import
+// 3951 校正官方漢化301 - Interrupted
+SBM_INTERNAL_ERR_301.Request="導入 Modelica 文件 /p1";
+SBM_INTERNAL_ERR_301.Diagnostic="導入已中斷";
+SBM_INTERNAL_ERR_301.Advice="";
+
+// 3951 校正官方漢化302 - Successful single root
+SBM_INTERNAL_ERR_302.Request="導入 Modelica 文件 /p1";
+SBM_INTERNAL_ERR_302.Diagnostic="導入成功。/p1 已導入。";
+SBM_INTERNAL_ERR_302.Advice="如果已創建新的 PLM 版本，請立即進行拓展。";
+
+SBM_INTERNAL_ERR_303.Request="導入 Modelica 文件 /p1";
+SBM_INTERNAL_ERR_303.Diagnostic="導入成功。/p1 個新庫已導入：\n/p2";
+SBM_INTERNAL_ERR_303.Advice="如果已創建新的 PLM 版本，請立即進行拓展。";
+
+SBM_INTERNAL_ERR_304.Request="設置依賴項上的鏈接";
+SBM_INTERNAL_ERR_304.Diagnostic="找不到請求的類 /p1";
+SBM_INTERNAL_ERR_304.Advice="請確保存在正確版本的類。";
+
+SBM_INTERNAL_ERR_305.Request="獲取 /p1 的依賴項";
+SBM_INTERNAL_ERR_305.Diagnostic="無法找到所需的類：\n/p1";
+SBM_INTERNAL_ERR_305.Advice="請確保存在正確版本的依賴項。";
+
+SBM_INTERNAL_ERR_306.Request="新 Modelica 版本";
+SBM_INTERNAL_ERR_306.Diagnostic="/p1";
+SBM_INTERNAL_ERR_306.Advice="確保庫版本為當前的最新版本。";
+
+SBM_INTERNAL_ERR_307.Request="在版本沖突的依賴項上設置鏈接";
+SBM_INTERNAL_ERR_307.Diagnostic="無法在給定類上設置依賴項，因為使用語句不兼容：/p1\n該庫上的依賴項已清除。";
+SBM_INTERNAL_ERR_307.Advice="加載兼容版本或更改使用語句。";
+
+SBM_INTERNAL_ERR_401.Request="加載版本沖突的 Modelica 類";
+SBM_INTERNAL_ERR_401.Diagnostic="類 /p2 的版本 /p1 已在會話中加載，將會替換版本 /p3 進行使用";
+SBM_INTERNAL_ERR_401.Advice="如果需要其他版本，請顯式加載要使用的庫。";
+
+SBM_INTERNAL_ERR_402.Request="Modelica 文件 /p1 已部分導入";
+SBM_INTERNAL_ERR_402.Diagnostic="導入部分成功。/p1 已導入但可能包含錯誤。";
+SBM_INTERNAL_ERR_402.Advice="檢查以上錯誤消息";
+
+SBM_INTERNAL_ERR_403.Request="Modelica 文件 /p1 已部分導入";
+SBM_INTERNAL_ERR_403.Diagnostic="部分導入成功。/p1 個新庫已導入：\n/p2，但可能包含錯誤";
+SBM_INTERNAL_ERR_403.Advice="檢查以上錯誤消息";

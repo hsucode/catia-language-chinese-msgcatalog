@@ -1,0 +1,397 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2002
+// 3951 校正官方漢化===========================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 CATRmaRenderingProceduralMaterialFrame (English)
+// 3951 校正官方漢化
+// 3951 校正官方漢化===========================================================================
+MarbleShader="大理石";
+VeinShader="紋理";
+AlternateVeinShader="交替紋理";
+RockShader="巖石";
+ChessboardShader="棋盤";
+
+container.proceduralFrame.textureFrame.bumpFactoryFrm.Title="凹凸";
+container.proceduralFrame.textureFrame.transformFrm.Title="變換";
+
+container.proceduralFrame.textTypeFrm.textTypeLabel.Title="程序材料類型：";
+container.proceduralFrame.textTypeFrm.textTypeLabel.Help="更改程序材料類型";
+container.proceduralFrame.textTypeFrm.textTypeLabel.ShortHelp="程序類型";
+container.proceduralFrame.textTypeFrm.textTypeLabel.LongHelp="更改程序材料的類型。";
+
+container.proceduralFrame.mappingFrame.mappingTypeLabel.Title="映射類型： ";
+container.proceduralFrame.mappingFrame.mappingTypeLabel.Help="結構映射類型";
+container.proceduralFrame.mappingFrame.mappingTypeLabel.ShortHelp="修改映射類型";
+container.proceduralFrame.mappingFrame.mappingTypeLabel.LongHelp="定義用于程序材料的映射類型。";
+
+container.proceduralFrame.mappingFrame.iconBox.Title="更改映射類型";
+container.proceduralFrame.mappingFrame.iconBox.Help="更改映射類型";
+container.proceduralFrame.mappingFrame.iconBox.ShortHelp="更改映射類型";
+container.proceduralFrame.mappingFrame.iconBox.LongHelp="更改用于結構的映射類型。";
+
+container.proceduralFrame.mappingFrame.iconBox.planRadioButton.Title="平面映射";
+container.proceduralFrame.mappingFrame.iconBox.planRadioButton.Help="映射類型為平面映射";
+container.proceduralFrame.mappingFrame.iconBox.planRadioButton.ShortHelp="平面映射";
+container.proceduralFrame.mappingFrame.iconBox.planRadioButton.LongHelp="選擇平面映射類型，在支持面上應用材料。";
+
+container.proceduralFrame.mappingFrame.buttonsFrame.iconBox.sphereRadioButton.Title="球面映射";
+container.proceduralFrame.mappingFrame.iconBox.sphereRadioButton.Help="映射類型為球面映射";
+container.proceduralFrame.mappingFrame.iconBox.sphereRadioButton.ShortHelp="球面映射";
+container.proceduralFrame.mappingFrame.iconBox.sphereRadioButton.LongHelp="選擇球面映射類型，在支持面上應用材料。";
+
+container.proceduralFrame.mappingFrame.iconBox.cylinderRadioButton.Title="圓柱映射";
+container.proceduralFrame.mappingFrame.iconBox.cylinderRadioButton.Help="映射類型為圓柱映射";
+container.proceduralFrame.mappingFrame.iconBox.cylinderRadioButton.ShortHelp="圓柱映射";
+container.proceduralFrame.mappingFrame.iconBox.cylinderRadioButton.LongHelp="選擇圓柱映射類型，在支持面上應用材料。";
+
+container.proceduralFrame.mappingFrame.iconBox.cubeRadioButton.Title="預覽盒子";
+container.proceduralFrame.mappingFrame.iconBox.cubeRadioButton.Help="映射類型為立方體映射";
+container.proceduralFrame.mappingFrame.iconBox.cubeRadioButton.ShortHelp="立方體映射";
+container.proceduralFrame.mappingFrame.iconBox.cubeRadioButton.LongHelp="選擇立方體映射類型，在支持面上應用材料。";
+
+container.proceduralFrame.mappingFrame.iconBox.automaticRadioButton.Title="自動適應性映射";
+container.proceduralFrame.mappingFrame.iconBox.automaticRadioButton.Help="映射類型為自動適應性映射";
+container.proceduralFrame.mappingFrame.iconBox.automaticRadioButton.ShortHelp="自動適應性映射";
+container.proceduralFrame.mappingFrame.iconBox.automaticRadioButton.LongHelp="選擇自動適應性映射類型，在支持面上應用材料。";
+
+container.proceduralFrame.mappingFrame.iconBox.manualRadioButton.Title="手動適應性映射";
+container.proceduralFrame.mappingFrame.iconBox.manualRadioButton.Help="映射類型為手動適應性映射";
+container.proceduralFrame.mappingFrame.iconBox.manualRadioButton.ShortHelp="手動適應性映射";
+container.proceduralFrame.mappingFrame.iconBox.manualRadioButton.LongHelp="選擇手動適應性映射類型，在支持面上應用材料。";
+
+DisabledRampCursor="禁用";
+EnableVeinColor="啟用";
+
+Marble0Lab.Title="基底顏色   ";
+Marble1Lab.Title="紋理顏色 1 ";
+Marble2Lab.Title="紋理顏色 2 ";
+Marble3Lab.Title="紋理顏色 3 ";
+
+MarbleBut.Help="大理石結構顏色參數";
+MarbleBut.ShortHelp="大理石結構顏色參數";
+MarbleBut.LongHelp="大理石結構顏色參數。";
+
+Vein0Lab.Title="基底顏色 ";
+Vein1Lab.Title="紋理顏色 1 ";
+Vein2Lab.Title="紋理顏色 2 ";
+Vein3Lab.Title="紋理顏色 3 ";
+Vein4Lab.Title="紋理顏色 4 ";
+
+VeinBut.Help="紋理結構顏色參數";
+VeinBut.ShortHelp="紋理結構顏色參數";
+VeinBut.LongHelp="指示紋理顏色參數。";
+
+VeinSld.Help="紋理寬度參數";
+VeinSld.ShortHelp="紋理寬度參數";
+VeinSld.LongHelp="指示紋理寬度參數。";
+
+VeinChk.Help="使用紋理參數";
+VeinChk.ShortHelp="使用紋理參數";
+VeinChk.LongHelp="指示 3D 結構是否使用此紋理。";
+
+Rock0Lab.Title="材料顏色 ";
+Rock1Lab.Title="1 顏色 ";
+Rock2Lab.Title="2 顏色 ";
+
+RockBut.Help="巖石結構顏色參數";
+RockBut.ShortHelp="巖石結構顏色參數";
+RockBut.LongHelp="指示巖石顏色參數。";
+
+ChessBoard0Lab.Title="平鋪顏色 1";
+ChessBoard1Lab.Title="平鋪顏色 2";
+ChessBoard2Lab.Title="平鋪顏色 3";
+ChessBoard3Lab.Title="平鋪顏色 4";
+ChessBoard4Lab.Title="接合顏色 ";
+
+ChessBoardBut.Help="棋盤結構顏色參數";
+ChessBoardBut.ShortHelp="棋盤結構顏色參數";
+ChessBoardBut.LongHelp="棋盤結構顏色參數。";
+
+ChessBoardChk.Help="使用平鋪參數";
+ChessBoardChk.ShortHelp="使用平鋪參數";
+ChessBoardChk.LongHelp="指示 3D 結構是否使用此平鋪。";
+
+container.proceduralFrame.textureFrame.colorSepFrame.colorSepLabel.Title="顏色";
+container.proceduralFrame.textureFrame.noiseSepFrame.noiseSepLabel.Title="變形";
+container.proceduralFrame.textureFrame.bumpSepFrame.bumpSepLabel.Title="凹凸";
+container.proceduralFrame.textureFrame.transformSepFrame.transformSepLabel.Title="變換";
+
+// 3951 校正官方漢化 Marble Frame
+// 3951 校正官方漢化-------------
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.chkTurbulence.Title="擾動 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.chkTurbulence.Help="使用擾動功能";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.chkTurbulence.ShortHelp="使用擾動";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.chkTurbulence.LongHelp="指示是否使用擾動功能對結構進行變形。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.octaveLab.Title="復雜性 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.octaveLab.Help="結構的復雜性參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.octaveLab.ShortHelp="復雜性參數（從 1 到 10）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.octaveLab.LongHelp="指示結構變形的復雜性。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.octaveSld.Title="復雜性 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.octaveSld.Help="結構的復雜性參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.octaveSld.ShortHelp="復雜性參數（從 1 到 10）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.octaveSld.LongHelp="指示結構變形的復雜性。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.lacunarityLab.Title="攝動 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.lacunarityLab.Help="結構的攝動參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.lacunarityLab.ShortHelp="攝動參數（從 1 到 10）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.lacunarityLab.LongHelp="指示結構變形的攝動。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.lacunaritySld.Title="攝動 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.lacunaritySld.Help="結構的攝動參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.lacunaritySld.ShortHelp="攝動參數（從 1 到 10）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.lacunaritySld.LongHelp="指示結構變形的攝動。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.gainLab.Title="增益 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.gainLab.Help="結構的增益參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.gainLab.ShortHelp="增益參數（從 0 到 2）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.gainLab.LongHelp="指示結構變形的子復雜性。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.gainSld.Title="增益 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.gainSld.Help="結構的增益參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.gainSld.ShortHelp="增益參數（從 0 到 2）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.gainSld.LongHelp="指示結構變形的子復雜性。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.filterWidthLab.Title="振幅 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.filterWidthLab.Help="結構的振幅參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.filterWidthLab.ShortHelp="振幅參數（從 0 到 1）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.filterWidthLab.LongHelp="指示結構變形的振幅。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.filterWidthSld.Title="振幅 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.filterWidthSld.Help="結構的振幅參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.filterWidthSld.ShortHelp="振幅參數（從 0 到 1）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.marbleFrm.filterWidthSld.LongHelp="指示結構變形的振幅。";
+
+// 3951 校正官方漢化 Vein Frame
+// 3951 校正官方漢化-----------
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.chkTurbulence.Title="擾動 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.chkTurbulence.Help="使用擾動功能";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.chkTurbulence.ShortHelp="使用擾動";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.chkTurbulence.LongHelp="指示是否使用擾動功能對結構進行變形。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.amplitudeLab.Title="振幅 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.amplitudeLab.Help="結構的振幅參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.amplitudeLab.ShortHelp="振幅參數（從 0 到 10）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.amplitudeLab.LongHelp="指示結構變形的振幅。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.amplitudeSld.Title="振幅 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.amplitudeSld.Help="結構的振幅參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.amplitudeSld.ShortHelp="振幅參數（從 0 到 10）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.amplitudeSld.LongHelp="指示結構變形的振幅。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.octaveLab.Title="復雜性 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.octaveLab.Help="結構的復雜性參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.octaveLab.ShortHelp="復雜性參數（從 0 到 10）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.octaveLab.LongHelp="指示結構變形的復雜性。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.octaveSld.Title=" 復雜性 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.octaveSld.Help="結構的復雜性參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.octaveSld.ShortHelp="復雜性參數（從 0 到 10）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.octaveSld.LongHelp="指示結構變形的復雜性。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.lacunarityLab.Title="攝動 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.lacunarityLab.Help="結構的攝動參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.lacunarityLab.ShortHelp="攝動參數（從 1 到 10）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.lacunarityLab.LongHelp="指示結構變形的攝動。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.lacunaritySld.Title="攝動 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.lacunaritySld.Help="結構的攝動參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.lacunaritySld.ShortHelp="攝動參數（從 1 到 10）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.lacunaritySld.LongHelp="指示結構變形的攝動。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.gainLab.Title="增益 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.gainLab.Help="結構的增益參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.gainLab.ShortHelp="增益參數（從 0 到 2）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.gainLab.LongHelp="指示結構變形的子復雜性。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.gainSld.Title=" 增益 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.gainSld.Help="結構的增益參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.gainSld.ShortHelp="增益參數（從 0 到 2）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.gainSld.LongHelp="指示結構變形的子復雜性。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.filterWidthLab.Title="振幅 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.filterWidthLab.Help="結構的振幅參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.filterWidthLab.ShortHelp="振幅參數（從 2 到 4）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.filterWidthLab.LongHelp="指示結構變形的振幅。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.filterWidthSld.Title="振幅 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.filterWidthSld.Help="結構的振幅參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.filterWidthSld.ShortHelp="振幅參數（從 2 到 4）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.veinFrm.filterWidthSld.LongHelp="指示結構變形的振幅。";
+
+// 3951 校正官方漢化 Rock Frame
+// 3951 校正官方漢化-----------
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.chkTurbulence.Title="擾動 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.chkTurbulence.Help="使用擾動功能";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.chkTurbulence.ShortHelp="使用擾動";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.chkTurbulence.LongHelp="指示是否使用擾動功能對結構進行變形。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.octaveLab.Title="復雜性 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.octaveLab.Help="結構的復雜性參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.octaveLab.ShortHelp="復雜性參數（從 0 到 10）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.octaveLab.LongHelp="指示結構變形的復雜性。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.octaveSld.Title="復雜性 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.octaveSld.Help="結構的復雜性參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.octaveSld.ShortHelp="復雜性參數（從 0 到 10）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.octaveSld.LongHelp="指示結構變形的復雜性。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.lacunarityLab.Title="攝動 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.lacunarityLab.Help="結構的攝動參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.lacunarityLab.ShortHelp="攝動參數（從 1 到 10）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.lacunarityLab.LongHelp="指示結構變形的攝動。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.lacunaritySld.Title="攝動 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.lacunaritySld.Help="結構的攝動參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.lacunaritySld.ShortHelp="攝動參數（從 1 到 10）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.lacunaritySld.LongHelp="指示結構變形的攝動。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.gainLab.Title="增益 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.gainLab.Help="結構的增益參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.gainLab.ShortHelp="增益參數（從 0 到 2）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.gainLab.LongHelp="指示結構變形的子復雜性。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.gainSld.Title="增益 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.gainSld.Help="結構的增益參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.gainSld.ShortHelp="增益參數（從 0 到 2）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.gainSld.LongHelp="指示結構變形的子復雜性。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.filterWidthLab.Title="振幅 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.filterWidthLab.Help="結構的振幅參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.filterWidthLab.ShortHelp="振幅參數（從 0 到 1）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.filterWidthLab.LongHelp="指示結構變形的振幅。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.filterWidthSld.Title="振幅 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.filterWidthSld.Help="結構的振幅參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.filterWidthSld.ShortHelp="振幅參數（從 0 到 1）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.rockFrm.filterWidthSld.LongHelp="指示結構變形的振幅。";
+
+// 3951 校正官方漢化 Chessboard Frame
+// 3951 校正官方漢化-----------------
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileWLab.Title="平鋪寬度 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileWLab.Help=" 平鋪寬度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileWLab.ShortHelp=" 平鋪寬度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileWLab.LongHelp="指示結構的平鋪寬度。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileWSld.Title="平鋪寬度 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileWSld.Help=" 平鋪寬度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileWSld.ShortHelp=" 平鋪寬度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileWSld.LongHelp="指示結構的平鋪寬度。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileHLab.Title="平鋪高度 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileHLab.Help=" 平鋪高度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileHLab.ShortHelp=" 平鋪高度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileHLab.LongHelp="指示結構的平鋪高度。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileHSld.Title="平鋪高度 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileHSld.Help="平鋪高度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileHSld.ShortHelp=" 平鋪高度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.tileHSld.LongHelp="指示結構的平鋪高度。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarWLab.Title="接合寬度 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarWLab.Help=" 接合寬度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarWLab.ShortHelp=" 接合寬度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarWLab.LongHelp="指示結構的接合寬度參數。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarWSld.Title="接合寬度 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarWSld.Help=" 接合寬度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarWSld.ShortHelp=" 接合寬度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarWSld.LongHelp="指示結構的接合寬度參數。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarHLab.Title="接合高度 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarHLab.Help=" 接合高度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarHLab.ShortHelp=" 接合高度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarHLab.LongHelp="指示結構的接合高度。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarHSld.Title="接合高度 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarHSld.Help="接合高度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarHSld.ShortHelp=" 接合高度參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.mortarHSld.LongHelp="指示結構的接合高度。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.decalLab.Title=" 偏移 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.decalLab.Help=" 偏移參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.decalLab.ShortHelp=" 偏移參數（從 0 到 0.5）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.decalLab.LongHelp="指示結構中各直線間的偏移。";
+
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.decalSld.Title="偏移 ";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.decalSld.Help=" 偏移參數";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.decalSld.ShortHelp=" 偏移參數（從 0 到 0.5）";
+container.proceduralFrame.textureFrame.noiseFactoryFrm.chessboardFrm.decalSld.LongHelp="指示結構中各直線間的偏移。";
+
+// 3951 校正官方漢化 Bump Frame
+// 3951 校正官方漢化------------
+container.proceduralFrame.textureFrame.bumpFactoryFrm.bumpLab.Title="振幅 ";
+container.proceduralFrame.textureFrame.bumpFactoryFrm.bumpLab.Help="要應用于結構的凹凸的振幅";
+container.proceduralFrame.textureFrame.bumpFactoryFrm.bumpLab.ShortHelp="凹凸振幅（從 -1 到 1）";
+container.proceduralFrame.textureFrame.bumpFactoryFrm.bumpLab.LongHelp="定義要應用于結構的凹凸振幅。";
+
+container.proceduralFrame.textureFrame.bumpFactoryFrm.bumpSld.Title="振幅 ";
+container.proceduralFrame.textureFrame.bumpFactoryFrm.bumpSld.Help="要應用于結構的凹凸的振幅";
+container.proceduralFrame.textureFrame.bumpFactoryFrm.bumpSld.ShortHelp="凹凸振幅（從 -1 到 1）";
+container.proceduralFrame.textureFrame.bumpFactoryFrm.bumpSld.LongHelp="定義要應用于結構的凹凸振幅。";
+
+// 3951 校正官方漢化 Transformation Frame
+// 3951 校正官方漢化---------------------
+container.proceduralFrame.textureFrame.transformFrm.xLabel.Title="X 軸： ";
+container.proceduralFrame.textureFrame.transformFrm.yLabel.Title="Y 軸： ";
+container.proceduralFrame.textureFrame.transformFrm.zLabel.Title="Z 軸： ";
+
+container.proceduralFrame.textureFrame.transformFrm.scalingLabel.Title="縮放 ";
+container.proceduralFrame.textureFrame.transformFrm.scalingLabel.Help="結構的縮放變換";
+container.proceduralFrame.textureFrame.transformFrm.scalingLabel.ShortHelp="縮放變換";
+container.proceduralFrame.textureFrame.transformFrm.scalingLabel.LongHelp="結構的縮放變換。";
+
+container.proceduralFrame.textureFrame.transformFrm.xScaling.Title="縮放 ";
+container.proceduralFrame.textureFrame.transformFrm.xScaling.Help="沿 X 軸縮放";
+container.proceduralFrame.textureFrame.transformFrm.xScaling.ShortHelp="沿 X 軸縮放";
+container.proceduralFrame.textureFrame.transformFrm.xScaling.LongHelp="沿 X 軸縮放結構。";
+
+container.proceduralFrame.textureFrame.transformFrm.yScaling.Title="縮放 ";
+container.proceduralFrame.textureFrame.transformFrm.yScaling.Help="沿 Y 軸縮放";
+container.proceduralFrame.textureFrame.transformFrm.yScaling.ShortHelp="沿 Y 軸縮放";
+container.proceduralFrame.textureFrame.transformFrm.yScaling.LongHelp="沿 Y 軸縮放結構。";
+
+container.proceduralFrame.textureFrame.transformFrm.zScaling.Title="縮放 ";
+container.proceduralFrame.textureFrame.transformFrm.zScaling.Help="沿 Z 軸縮放";
+container.proceduralFrame.textureFrame.transformFrm.zScaling.ShortHelp="沿 Z 軸縮放";
+container.proceduralFrame.textureFrame.transformFrm.zScaling.LongHelp="沿 Z 軸縮放結構。";
+
+container.proceduralFrame.textureFrame.transformFrm.rotationLabel.Title="旋轉 ";
+container.proceduralFrame.textureFrame.transformFrm.rotationLabel.Help="結構的旋轉變換";
+container.proceduralFrame.textureFrame.transformFrm.rotationLabel.ShortHelp="旋轉變換（從 -360 度到 360 度）";
+container.proceduralFrame.textureFrame.transformFrm.rotationLabel.LongHelp="結構的旋轉變換。";
+
+container.proceduralFrame.textureFrame.transformFrm.xRotation.Title="旋轉 ";
+container.proceduralFrame.textureFrame.transformFrm.xRotation.Help="沿 X 軸旋轉";
+container.proceduralFrame.textureFrame.transformFrm.xRotation.ShortHelp="沿 X 軸旋轉";
+container.proceduralFrame.textureFrame.transformFrm.xRotation.LongHelp="沿 X 軸旋轉結構。";
+
+container.proceduralFrame.textureFrame.transformFrm.yRotation.Title="旋轉 ";
+container.proceduralFrame.textureFrame.transformFrm.yRotation.Help="沿 Y 軸旋轉";
+container.proceduralFrame.textureFrame.transformFrm.yRotation.ShortHelp="沿 Y 軸旋轉";
+container.proceduralFrame.textureFrame.transformFrm.yRotation.LongHelp="沿 Y 軸旋轉結構。";
+
+container.proceduralFrame.textureFrame.transformFrm.zRotation.Title="旋轉 ";
+container.proceduralFrame.textureFrame.transformFrm.zRotation.Help="沿 Z 軸旋轉";
+container.proceduralFrame.textureFrame.transformFrm.zRotation.ShortHelp="沿 Z 軸旋轉";
+container.proceduralFrame.textureFrame.transformFrm.zRotation.LongHelp="沿 Z 軸旋轉結構。";
+
+container.proceduralFrame.textureFrame.transformFrm.transLabel.Title="平移 ";
+container.proceduralFrame.textureFrame.transformFrm.transLabel.Help="結構的平移變換";
+container.proceduralFrame.textureFrame.transformFrm.transLabel.ShortHelp="平移變換";
+container.proceduralFrame.textureFrame.transformFrm.transLabel.LongHelp="結構的平移變換。";
+
+container.proceduralFrame.textureFrame.transformFrm.xTrans.Title="平移 ";
+container.proceduralFrame.textureFrame.transformFrm.xTrans.Help="沿 X 軸平移";
+container.proceduralFrame.textureFrame.transformFrm.xTrans.ShortHelp="沿 X 軸平移";
+container.proceduralFrame.textureFrame.transformFrm.xTrans.LongHelp="沿 X 軸平移結構。";
+
+container.proceduralFrame.textureFrame.transformFrm.yTrans.Title="平移 ";
+container.proceduralFrame.textureFrame.transformFrm.yTrans.Help="沿 Y 軸平移";
+container.proceduralFrame.textureFrame.transformFrm.yTrans.ShortHelp="沿 Y 軸平移";
+container.proceduralFrame.textureFrame.transformFrm.yTrans.LongHelp="沿 Y 軸平移結構。";
+
+container.proceduralFrame.textureFrame.transformFrm.zTrans.Title="平移 ";
+container.proceduralFrame.textureFrame.transformFrm.zTrans.Help="沿 Z 軸平移";
+container.proceduralFrame.textureFrame.transformFrm.zTrans.ShortHelp="沿 Z 軸平移";
+container.proceduralFrame.textureFrame.transformFrm.zTrans.LongHelp="沿 Z 軸平移結構。";

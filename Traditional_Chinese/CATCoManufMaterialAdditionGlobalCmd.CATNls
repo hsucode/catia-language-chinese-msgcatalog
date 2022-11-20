@@ -1,0 +1,50 @@
+// 3951 校正官方漢化 CATCoManufMaterialAdditionGlobal.CATNls
+
+CATCoManufMaterialAdditionGlobalCmd.SelPlyGroupState.Message="選擇鋪層組";
+CATCoManufMaterialAdditionGlobalCmd.PlyGroupSelectedState.Message="啟動分析";
+CATCoManufMaterialAdditionGlobalCmd.AnalyseLaunchedState.Message="啟動生成";
+CATCoManufMaterialAdditionGlobalCmd.MMAGeneratedState.Message="驗證（“確定”）或“取消”";
+
+// 3951 校正官方漢化 默認值 for parameters
+MaxAngleBetweenTangentsInDeg.Default="170";
+TowWidthInMM.Default="10";
+MinimumLengthInMM.Default="100";
+MinAngleOrientationTgtInDeg.Default="5";
+AbsoluteDistanceMaxInMM.Default="2000";
+ShortDistanceMaxInMM.Default="60";
+AngleBisMaxInDeg.Default="40";
+DiffAngleTgtsMaxInDeg.Default="45";
+LateralStaggeringInMM.Default="10";
+
+// 3951 校正官方漢化 Error & Warning messages
+UnexpectedError.Message="意外錯誤";
+UserInterrupt.Message="任務已取消";
+NoMMAToBeGenerated.Message="沒有要生成的材料添加";
+FilteringInvalidForGeneration.Message="僅對具有 /p1 方向的鋪層進行了分析，而您選擇生成 /p2。\n使用 /p2 重新啟動分析，或者切換過濾到 /p1。";
+FilteringRestrictiveForGeneration.Message="方向上沒有使用過濾進行分析，而只有 /p1 個鋪層當前被可視化。\n您確定要在 /p2 鋪層上限制生成嗎？";
+CannotComputeConsideredAsFullPly.Message="在鋪層組中檢索完整鋪層失敗。 將使用具有最大面積的 /p1 代替";
+CannotComputeFullPly.Message="在鋪層組中檢索完整鋪層或檢索最大鋪層失敗。僅所有頂點選項可用";
+ConfirmDeactivation.Message="您確定要取消激活 /p1 并移除相應的錯誤消息？";
+
+// 3951 校正官方漢化 Highlighter
+Highlight.Marker.Valid.Red="0";
+Highlight.Marker.Valid.Green="255";
+Highlight.Marker.Valid.Blue="0";
+Highlight.Marker.Invalid.Red="255";
+Highlight.Marker.Invalid.Green="0";
+Highlight.Marker.Invalid.Blue="0";
+Highlight.OrientationArrow.lengthLine="200";
+Highlight.OrientationArrow.lengthArrow="0";
+Highlight.WarningFeature.lengthLine="200";
+Highlight.OrientationArrow.lengthArrow="0";
+
+Highlight.Contour.thickness="5";
+Highlight.Contour.linetype="1";
+
+// 3951 校正官方漢化 Progress bar
+ProgressTaskUI.Title="材料添加分析...";
+ProgressTaskUI.ObjectName="分析/計算";
+ProgressTaskUI.Comment="進度";
+ProgressTaskUI.Step0.ObjectName="初始化";
+ProgressTaskUI.Step1.ObjectName="分析";
+ProgressTaskUI.Step3.ObjectName="生成";

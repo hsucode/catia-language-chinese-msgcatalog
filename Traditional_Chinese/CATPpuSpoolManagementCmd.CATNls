@@ -1,0 +1,69 @@
+// 3951 校正官方漢化Command menu items
+
+CATPpuSpoolModifyMenuItem.Title="編輯線圈";
+CATPpuSpoolModifyMenuItem.ShortHelp="編輯線圈";
+CATPpuSpoolModifyMenuItem.LongHelp="編輯線圈及其成員";
+
+CATPpuSpoolDeleteMenuItem.Title="刪除線圈";
+CATPpuSpoolDeleteMenuItem.ShortHelp="刪除線圈";
+CATPpuSpoolDeleteMenuItem.LongHelp="刪除線圈，其成員將會移至父線圈";
+
+CATPpuSpoolMoveMenuItem.Title="處于移動模式";
+CATPpuSpoolMoveMenuItem.ShortHelp="處于移動模式";
+CATPpuSpoolMoveMenuItem.LongHelp="已添加的成員將以物理方式移動到修改產品結構的線圈";
+
+CATPpuSpoolLinkMenuItem.Title="處于鏈接模式";
+CATPpuSpoolLinkMenuItem.ShortHelp="處于鏈接模式";
+CATPpuSpoolLinkMenuItem.LongHelp="已添加的成員將只能鏈接到未修改產品結構的線圈";
+
+CATPpuSpoolCommitMenuItem.Title="提交以移動成員";
+CATPpuSpoolCommitMenuItem.ShortHelp="提交以移動成員";
+CATPpuSpoolCommitMenuItem.LongHelp="所有成員將移動到修改產品結構的線圈中";
+
+CATPpuSpoolCommitDeleteMenuItem.Title="提交以刪除線圈";
+CATPpuSpoolCommitDeleteMenuItem.ShortHelp="提交以刪除線圈";
+CATPpuSpoolCommitDeleteMenuItem.LongHelp="刪除線圈，其成員將會移至父線圈";
+
+CATPpuSpoolCommitShiftingMenuItem.Title="提交以轉換線圈";
+CATPpuSpoolCommitShiftingMenuItem.ShortHelp="提交以轉換線圈";
+CATPpuSpoolCommitShiftingMenuItem.LongHelp="轉移至其他線圈";
+
+// 3951 校正官方漢化BuildGraph states
+
+CATPpuSpoolManagementCmd.initialState.Message="加載線圈數據";
+CATPpuSpoolManagementCmd.spoolloadedState.Message="選擇或取消選擇對象以修改線圈";
+CATPpuSpoolManagementCmd.selectiveNavigationState.Message="刷新線圈數據";
+
+// 3951 校正官方漢化Immersive warning panels infos
+
+WarningTitle="警告";
+WorkingModeError="線圈轉換";
+WorkingModeErrorDetail="線圈同時包含已移動成員和已鏈接成員！\n\n已鏈接成員將在當前線圈下移動。";
+
+EmptySpoolError="不允許線圈為空";
+EmptySpoolErrorDetail="您將要從線圈移除所有成員，但這是不允許的。最后選擇的對象將會保持選定狀態，或者刪除線圈。";
+
+// 3951 校正官方漢化Message
+
+DeleteMsgTitle="刪除線圈";
+SpoolDeletionSuccess="線圈刪除成功";
+
+MoreThan10Compo="以及更多...";
+InfoTitle="信息";
+InvalidMemberError="已清除無效成員                           ";
+// 3951 校正官方漢化InvalidMemberErrorDetail = "Following member(s) has(have) been cleaned, because no spool found - possibly spool deleted without using Fluidic workbench command. Member(s) is(are) added to current spool after cleaning:\n/p1";
+InvalidMemberErrorDetail="對于以下成員，線圈連接已找到，但是未檢索到任何線圈 - 可能是因為未使用液體工作臺命令刪除這些成員所屬的線圈，因此這些成員會被清除并添加到當前線圈：- \n/p1";
+
+// 3951 校正官方漢化Info panel
+
+InfoPanelTitle="線圈管理信息面板";
+TitleAsName="名稱";
+TitleAsValue="值";
+SpoolInWork="工作線圈";
+NbUnsavedMembers="未保存成員數";
+UnsavedMemberName="成員 - 未保存";
+NbLinkedMembers="已鏈接成員數";
+LinkedMemberName="成員 - 已鏈接";
+NbMovedMembers="物理成員數";
+MovedMemberName="成員 - 物理";
+

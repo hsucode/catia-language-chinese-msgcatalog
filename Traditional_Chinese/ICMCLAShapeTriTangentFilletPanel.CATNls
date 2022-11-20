@@ -1,0 +1,138 @@
+DialogBoxTitle="三切線圓角";
+
+// Frame Selection - Title: Inputs
+FrameSelection.Title="輸入";
+FrameSelection.LongHelp="選擇\n三切線圓角的輸入為三個曲面。
+兩個支持曲面和一個限制曲面。
+三切線圓角到支持面為 G1、G2、G3 連續，并與
+限制面相切。可定義到限制面的偏移距離";
+LabelSupport1.Title="支持面 1： ";
+LabelSupport1.LongHelp="選擇一組曲面作為支持面 1。
+可使用上下文菜單。
+您可以使用選擇包進行多選擇操作。
+可通過上下文菜單創建接合。";
+LabelSupport1.ShortHelp="選擇支持面 1";
+CheckTrimSupport1.LongHelp="可在圓角曲面的適當邊線處
+修剪支持面 1 的曲面。";
+CheckTrimSupport1.ShortHelp="修剪支持面 1";
+LabelSupport2.Title="支持面 2： ";
+LabelSupport2.LongHelp="選擇一組曲面作為支持面 2。
+可使用上下文菜單。
+您可以使用選擇包進行多選擇操作。
+可通過上下文菜單創建接合。";
+LabelSupport2.ShortHelp="選擇支持面 2";
+CheckTrimSupport2.LongHelp="可在圓角曲面的適當邊線處
+修剪支持面 2 的曲面。";
+CheckTrimSupport2.ShortHelp="修剪支持面 2";
+LabelLimit.Title="限制： ";
+LabelLimit.LongHelp="選擇一組曲面作為限制面。
+可使用上下文菜單。
+您可以使用選擇包進行多選擇操作。";
+LabelLimit.ShortHelp="選擇限制面。";
+
+// Tab Option - Title: Options
+TabPageOption.Title="選項";
+
+// Frame Parameters
+FrameParameters.Title="參數";
+FrameParameters.LongHelp="參數控制連續順序和
+圓角偏移距離。";
+
+// Frame Continuity
+FrameContinuity.Title="連續";
+FrameContinuity.LongHelp="可定義三切線圓角的連續順序，
+以符合到支持曲面的連續要求。";
+ContinuityParam.Button_G1.LongHelp="從三切線圓角到支持
+曲面保持 G1 連續。";
+ContinuityParam.Button_G1.ShortHelp="到支持面 G1 連續";
+ContinuityParam.Button_G2.LongHelp="從三切線圓角到支持
+曲面保持 G2 連續。";
+ContinuityParam.Button_G2.ShortHelp="到支持面 G2 連續";
+ContinuityParam.Button_G3.LongHelp="從三切線圓角到支持
+曲面保持 G3 連續。";
+ContinuityParam.Button_G3.ShortHelp="到支持面 G3 連續";
+CheckUseOffset.LongHelp="三切線圓角與限制面的
+一個偏移曲面相切，距離為圓角偏移的值。";
+CheckUseOffset.ShortHelp="與限制面的偏移";
+LabelOffset.Title="圓角偏移： ";
+LabelOffset.LongHelp="圓角偏移值是三切線圓角到限制面的距離。";
+LabelOffset.ShortHelp="與限制面的偏移";
+
+// Frame Extensions Title: Extensions
+FrameExtends.Title="擴展";
+FrameExtends.LongHelp="三切線圓角可在其起始和/或終止處外插延伸到限制曲面的邊線。
+如果不進行外插延伸，三切線圓角終止處的支持曲面邊線將最窄。
+使用匹配可將三切線圓角的邊線匹配為與支持曲面邊線 G1 連續。";
+StartUI.LongHelp="外插延伸，在起始處匹配";
+StartUI.ShortHelp="外插延伸，在起始處匹配";
+EndUI.LongHelp="外插延伸，在終止處匹配";
+EndUI.ShortHelp="外插延伸，在終止處匹配";
+LabelExtrapolate.Title="外插延伸： ";
+LabelExtrapolate.LongHelp="三切線圓角可在其邊線處
+外插延伸到支持面的邊線。";
+LabelExtrapolate.ShortHelp="對圓角曲面進行外插延伸";
+CheckExtrapolate1.LongHelp="在起始處對圓角曲面進行外插延伸";
+CheckExtrapolate1.ShortHelp="在起始處外插延伸";
+CheckExtrapolate2.LongHelp="在終止處對圓角曲面進行外插延伸";
+CheckExtrapolate2.ShortHelp="在終止處外插延伸";
+LabelMatchEnd.Title="匹配終止處： ";
+LabelMatchEnd.LongHelp="可將三切線圓角的終止邊線匹配為
+與支持面適當邊線 G1 連續。";
+LabelMatchEnd.ShortHelp="將邊線匹配到支持面";
+CheckMatchEnd1.LongHelp="在起始處匹配";
+CheckMatchEnd1.ShortHelp="在起始處匹配";
+CheckMatchEnd2.LongHelp="在終止處匹配";
+CheckMatchEnd2.ShortHelp="在終止處匹配";
+
+// Frame Type - Title: Relimitation
+FrameType.Title="重新限定";
+FrameType.LongHelp="僅當外插延伸設為開啟時才處于激活狀態。 
+可用兩種不同的方法修剪圓角曲面。 
+在修剪操作中，圓角曲面是基礎曲面。";
+CheckFace.LongHelp="修剪面：基礎曲面保持不變。
+結果為一個面。";
+CheckFace.ShortHelp="修剪面";
+CheckApprox.LongHelp="修剪近似值：基礎曲面改變。
+結果不為面。";
+CheckApprox.ShortHelp="修剪近似值。";
+
+// FrameParameterization - Title: Parameterization
+FrameParametrization.Title="參數化";
+FrameParametrization.LongHelp="參數化定義圓角曲面的參數。";
+LabelParameterTolerance.Title="公差： ";
+LabelParameterTolerance.LongHelp="公差";
+LabelParameterTolerance.ShortHelp="公差";
+ComboParametrization.LongHelp="-默認-
+  自動計算參數化。
+- 支持面 1-
+  通過在第一個支持面上更改曲面來獲得初始參數化。
+- 支持面 2-
+通過在第二個支持面上更改曲面來獲得初始參數化。
+- 縫合-
+  根據公差集，去除過小元素。
+-平均值 -
+  插入的段將在兩個初始段之間取平均值。";
+ComboParametrization.ShortHelp="參數化";
+Combo.Default="默認值";
+Combo.Support1="支持面 1";
+Combo.Support2="支持面 2";
+Combo.Stitch="縫合";
+Combo.Average="平均值";
+Combo.Rip="裂縫";
+
+
+//????????????????????????
+// Tabs
+FrameTabs.Title=" ";
+FrameSupport1.Title=" ";
+FrameSupport2.Title=" ";
+FrameLimit.Title=" ";
+
+LabelMinRadius.Title="最小半徑： ";
+// FeatureModeling
+TabPageModeling.Title="修改";
+CheckFeatureModeling.Title="特征建模";
+
+Debug.Title="禁用";
+Merge.Title="合并";
+Clean.Title="清除";

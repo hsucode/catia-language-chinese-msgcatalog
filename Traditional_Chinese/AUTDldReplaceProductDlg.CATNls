@@ -1,0 +1,51 @@
+// 3951 校正官方漢化 DO不EDIT :: THE CAA2 WIZARD WILL REPLACE所有 CODE HERE
+Title = "替換 Product instance and 邏輯 ";
+FGene.LTarget.Title = "Instance:";
+FGene.LSource.Title = "By ref:";
+FGene.SelFile.Title = "Sel ";
+FGene.LRefTarget.Title = "替換 ref:";
+FGene.SelInTree.Title = "Sel in tree";
+TabPage.Options.Title = "選項";
+TabPage.Options.MultiSel.Title = "Multi Instances replace";
+TabPage.Options.KeepName.Title = "Keep 舊名稱s";
+TabPage.Options.UpdateInst.Title = "更新block instances";
+TabPage.PageSelInst.Title = "Multi Instances";
+TabPage.PageSelInst.SelAll.Title = "所有";
+TabPage.PageSelInst.ResetAll.Title = "復位";
+TabPage.PageSelInst.InvertAll.Title = "反向";
+TabPage.PageMatching.Title = "Matching logics";
+TabPage.PageMatching.FDone.Title = "Matching logics";
+ TabPage.PageMatching.FDone.Matched.ColumnTitle1 = "To Replace";
+ TabPage.PageMatching.FDone.Matched.ColumnTitle2 = "By";
+TabPage.PageMatching.FDone.Match.Title = "關聯";
+TabPage.PageMatching.FToMatch.Title = "Logics to match";
+TabPage.PageMatching.FToMatch.LExisting.Title = "Orphans";
+TabPage.PageMatching.FToMatch.LCandidate.Title = "Candidates";
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE
+
+
+FGene.MultiSel.Title = "Multi Instances replace";
+FMultiSel.SelAll.Title = "所有";
+FMultiSel.ResetAll.Title = "復位";
+FMultiSel.InvertAll.Title = "反向";
+
+
+Bad="Bad選擇";
+BadProductLoop="The selected product /P1 is一個ancestor of selected instance, loop imposssible";
+BadProductLoop2="The selected product /P1 contain father of selected instance, loop imposssible";
+Warning="警告";
+NoUndo="警告, this replace could不be undone
+你想 continue ?";
+NoMatchPossible="Some used logics of the target could不be associated with logic in source,
+(first is /P1)
+Suppress the use of these logics before to use this命令";
+
+MatchToPerform="Some used logics of the target  could不be automatically associated with logic in source,
+(first is /P1)
+Define the matching 
+OR
+Suppress the use of these logics before to use this命令";
+CannotRef="Cannot replace一個reference";
+Same="Same Target and source products are selected";
+
+PbInProduct="Problem in product replace, command aborted";

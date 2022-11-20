@@ -1,0 +1,66 @@
+
+DELHumanSimPUTCmd.SelTrack.Message="從追蹤列表中選擇追蹤，或創建直線追蹤 ";
+DELHumanSimPUTCmd.SelOK.Message="選擇“確定”創建，或選擇“取消”退出 ";
+DELHumanSimPUTCmd.InternalTrackCreate.Message="已選擇創建的追蹤。選擇“確定”創建，或選擇“取消”退出 ";
+DELHumanSimPUTCmd.CompassMove.Message="拖動機器人以指定用于放置對象的軌跡";
+DELHumanSimPUTCmd.SelObjToPlace.Message="在 3D 中選擇“追蹤”或使用機器人定義追蹤/按 Alt 鍵在對象和人體模型足部之間切換指南針";
+DELHumanSimPUTCmd.stateSearchSkill.Message="在數據庫中搜索包含基本技能的庫展示";
+DELHumanSimPUTCmd.statePreparation.Message="定義準備姿勢，或單擊“下一步”轉至“動作”頁";
+DELHumanSimPUTCmd.stateSkilltoInstantiate.Message="選擇基本技能";
+DELHumanSimPUTCmd.stateReturn.Message="單擊縮略圖可應用姿勢。雙擊縮略圖可編輯姿勢";
+DELHumanSimPUTCmd.stateAction.Message=" 在 3D 中選擇“追蹤”或使用機器人定義追蹤/按 Alt 鍵在對象和人體模型足部之間切換指南針";
+DELHumanSimPUTCmd.stateRegrasp.Message="定義重新抓取姿勢";
+DELHumanSimPUTCmd.stateReposition.Message="定義重新定位姿勢";
+DELHumanSimPUTCmd.stateStartStop.Message="在 3D 中選擇軌跡點并設置為起點/終點 ";
+DELHumanSimPUTCmd.FreeWalkDrag.Message="拖動已捕捉的輕型機器人的人體模型足部以進行行走，或選擇人體位置";
+
+
+InternalTrackName="PUT_Track";
+
+TrackSequenceError.Title="排序追蹤時出錯";
+TrackSequenceError.Message="在人工任務中排序追蹤時出錯";
+Regrasp="重新抓取";
+ExitRegrasp="完成";
+Reposition="激活/停用約束";
+Unlock="激活/停用約束";
+Previous.Title="上一個軌跡點";
+Next.Title="下一個軌跡點";
+OK.Title="確定";
+Edit.Title="Edit";
+Cancel.Title="取消";
+Record.Title="插入軌跡點";
+Modify.Title="修改軌跡點";
+Delete.Title="刪除軌跡點";
+Attach.Title="附加";
+Detach.Title="拆離";
+StartStop="指定要重復使用的追蹤的零件 ";
+Snap.Title="累積捕捉";
+
+StartShot.Title="設置起始軌跡點";
+StopShot.Title="設置終止軌跡點";
+StartShotError.Title="錯誤";
+StartShotError.Message="未設置起始軌跡點";
+StopShotError.Title="錯誤";
+StopShotError.Message="未設置終止軌跡點";
+
+InsertShotFeedBack.Title="插入軌跡點";
+InsertShotFeedBack.Message="已在 /p1 上插入軌跡點 ";
+
+ModifyShotFeedBack.Title="修改軌跡點";
+ModifyShotFeedBack.Message="已修改軌跡點 /p1  ";
+
+DeleteShotFeedBack.Title="刪除軌跡點";
+DeleteShotFeedBack.Message="已刪除軌跡點 /p1  ";
+
+ShotBrowseFeedBack.Title="當前軌跡點";
+ShotBrowseFeedBack.Message="當前的活動軌跡點為 /p1";
+
+MoveMan.Message="使用輕型機器人拖動人體模型";
+
+PressAltKey.Message="按 Alt 鍵在對象和人體模型足部之間切換指南針";
+
+TrackError.Title="未定義追蹤";
+TrackError.Message="未定義追蹤";
+AttachedObjError.Message="命令已中止：人體模型未抓取任何對象";
+StandAlonePutEditError.Title="獨立 PUT 編輯錯誤";
+StandAlonePutEditError.Message="命令已中止：在人工任務或組織資源的任務中使用 GET 排序獨立 PUT";

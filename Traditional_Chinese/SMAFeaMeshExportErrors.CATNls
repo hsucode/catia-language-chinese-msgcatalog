@@ -1,0 +1,21 @@
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Error messages for the mesh exporter (SMAFeaFEMRepExport)
+// 3951 校正官方漢化 Parameters are only supported for the diagnostic part of the error
+// 3951 校正官方漢化
+
+ERR_001.Request="無節點或元素。";
+ERR_001.Diagnostic="模型沒有任何節點或元素。";
+ERR_001.Advice="請在導出之前添加網格零件或更新現有網格。";
+
+ERR_002.Request="網格零件中使用了多個支持面。";
+ERR_002.Diagnostic="網格零件包含多個支持面，這對于導出到 Abaqus 網格無效。";
+ERR_002.Advice="從網格零件中移除所有支持面（除一個支持面外）。";
+
+ERR_003.Request="材料無效。";
+ERR_003.Diagnostic="與網格零件關聯的材料 /P01 似乎不是有效的 Abaqus 材料。";
+ERR_003.Advice="請移除或修改此材料，使其成為有效的 Abaqus 材料。";
+
+ERR_004.Request="不支持的拓撲。";
+ERR_004.Diagnostic="Abaqus 網格導出程序不支持拓撲 /P01。";
+ERR_004.Advice="請使用支持的拓撲：TE4、TE10、TR3、QD4";
+

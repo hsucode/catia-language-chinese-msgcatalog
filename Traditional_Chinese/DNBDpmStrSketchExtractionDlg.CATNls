@@ -1,0 +1,54 @@
+// 3951 校正官方漢化 DO不EDIT :: THE CAA2 WIZARD WILL REPLACE所有 CODE HERE
+Title = "Workshop Documents Extraction";
+BOK = "Launch";
+_mainFrame._textFrame1.ProcessNameLbl.Title = "列出 of Activties to Process  ";
+_mainFrame._TopFrame.Title = "列出 of activities to process:";
+_mainFrame._TopFrame.ActMultiList.Help = "選擇row/s, if you to see list of車間文件s";
+// 3951 校正官方漢化_mainFrame._TopFrame.ActMultiList.ShortHelp = "選擇row to see車間文件s";
+_mainFrame._TopFrame.ActMultiList.LongHelp = "選擇row/s, if you to see list of車間文件s supported by the activity/ies";
+ // 3951 校正官方漢化_mainFrame._TopFrame.ActMultiList.ColumnTitle1 = "過程/動作";
+ _mainFrame._TopFrame.ActMultiList.ColumnTitle1 = " 名稱";
+ _mainFrame._TopFrame.ActMultiList.ColumnTitle2 = "類型";
+ _mainFrame._TopFrame.ActMultiList.ColumnTitle3 = "輸出產品";
+ _mainFrame._TopFrame.ActMultiList.ColumnTitle4 = "Extraction狀態";
+ _mainFrame.Frame003._emptyLbl.Title = "                                 ";
+_mainFrame.Frame003._actTypeLbl.Title = "Activity type filter:";
+_mainFrame.Frame003._actTypeCombo.Help = "單擊 to see activities in top frame of the selected類型";
+// 3951 校正官方漢化_mainFrame.Frame003._actTypeCombo.ShortHelp = "Choose activity類型";
+_mainFrame.Frame003._checkStatus.Title = "檢查狀態";
+_mainFrame.Frame003._checkStatus.Help = "單擊 to check the status of the選擇動作";
+// 3951 校正官方漢化_mainFrame.Frame003._checkStatus.ShortHelp = "檢查 status of選擇動作";
+_mainFrame.Frame003._removeButton.Title = "移動";
+_mainFrame.Frame003._removeButton.Help = "單擊 to 移除選擇 activity/ies from the 列表";
+// 3951 校正官方漢化_mainFrame.Frame003._removeButton.ShortHelp = "移除s selected activity/ies from 列表";
+_mainFrame.Frame003._removeButton.LongHelp = "單擊 to 移除選擇 activity/ies from 列表., this button will不be available if nothing is selected in the tree above";
+_mainFrame.Frame003._selectAllButton.Title = "選擇所有";
+_mainFrame.Frame003._selectAllButton.Help = "單擊來選擇 all activities in the 列表";
+_mainFrame.Frame003._selectAllButton.ShortHelp = "單擊來選擇 all activities in the 列表";
+// 3951 校正官方漢化_mainFrame.Frame003._selectAllButton.LongHelp = "單擊來選擇 all activities in the 列表";
+_mainFrame._bottomFrame.Title = "類型s of車間文件s:";
+
+_mainFrame._bottomFrame.WDocNameLbl.Title = "Workshop Documents  ";
+_mainFrame._bottomFrame._workshopDocsList.Help = "單擊 to choose whether you want to extract sketch或 not";
+// 3951 校正官方漢化_mainFrame._bottomFrame._workshopDocsList.ShortHelp = "單擊 to decide if you want extact this document";
+_mainFrame._bottomFrame._workshopDocsList.LongHelp = "單擊 on third column to choose whether you want to extract sketch或 not";
+ // 3951 校正官方漢化_mainFrame._bottomFrame._workshopDocsList.ColumnTitle1 = "Workshop Document 名稱";
+ _mainFrame._bottomFrame._workshopDocsList.ColumnTitle1 = " 名稱";
+ _mainFrame._bottomFrame._workshopDocsList.ColumnTitle2 = "類型";
+ _mainFrame._bottomFrame._workshopDocsList.ColumnTitle3 = "To Extract";
+ _mainFrame._bottomFrame._workshopDocsList.ColumnTitle4 = "Already Extracted";
+
+_mainFrame.Frame004.WDSaveLabel.Title = "存儲位置: ";
+
+FabSkecthes = "Fabrication sketches cannot be extracted \nGenerate/Update IPM part \n";
+IBC = "IBC XML data cannot be extracted \nGenerate IBC Curves \n";
+Distortion = "Distortion XML data cannot be extracted \nGenerate Distortion Information \n";
+Pinjigs = "Pin jigs XML data and Pin jigs sketch cannot be extracted \nGenerate resource in Pin Jigs tab of activity panel \n";
+GirthTapes = "Girth table XML data and Girth table sketch cannot be extracted \nGenerate resource in Girth Table tab of activity panel \n";
+Plate_Template = "Plate templates sketch cannot be extracted \nGenerate resource in Templates tab of activity panel \n";
+Profile_Template = "Profile templates sketch cannot be extracted \nGenerate resource in Templates tab activity panel \n";
+
+String9 = "The  input  Drawing  folder  path  is 不 inside  the  PPRHub  Shared  location.  The  Drawing  folder  will  be  reset  to ";
+String10 = "The  input  Drawing  folder  path  is 不 inside  the  root  Shared  location.  The  Drawing  folder  will  be  reset  to ";
+String11 = "The  input  Drawing  folder is unaccessible. The drawing folder will be reset to ";
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE

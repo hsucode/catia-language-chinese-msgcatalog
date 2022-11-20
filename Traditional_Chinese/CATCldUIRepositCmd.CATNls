@@ -1,0 +1,88 @@
+// 3951 校正官方漢化 =============================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES PROVENCE 2006
+// 3951 校正官方漢化 =============================================================================
+// 3951 校正官方漢化 CATCldUIRepositBaseCmd : NLS resource file for Reposit Base Command
+// 3951 校正官方漢化 =============================================================================
+// 3951 校正官方漢化 Implementation Notes:
+// 3951 校正官方漢化 =============================================================================
+// 3951 校正官方漢化 27-Oct-2006 YSN: Creation
+// 3951 校正官方漢化 =============================================================================
+
+// 3951 校正官方漢化 ----------------
+// 3951 校正官方漢化 Base class
+// 3951 校正官方漢化 ----------------
+Base.Warning.Title="對齊的相關信息";
+Base.Warning.Text1="“不保留”選項未被允許也未選中，因為要對齊的云是特征。";
+Base.Warning.Text2="“不保留”選項未被允許也未選中，因為要對齊的云點集共享給 ";
+
+CATCldUIRepositCmd.initialState.Message="選擇要對齊的云";
+
+// 3951 校正官方漢化 ----------------
+// 3951 校正官方漢化 robot
+// 3951 校正官方漢化 ----------------
+CATCldUIRepositCmd.CompassState2.Message="選擇第一參考";
+CATCldUIRepositCmd.CompassState3a.Message="選擇下一參考（云類型）";
+CATCldUIRepositCmd.CompassState3b.Message="選擇下一參考（面類型）";
+CATCldUIRepositCmd.CompassState3c.Message="選擇下一參考（點類型）";
+CATCldUIRepositCmd.CompassState4.Message="用機器人移動云";
+
+// 3951 校正官方漢化 ----------------
+// 3951 校正官方漢化 Best Fit
+// 3951 校正官方漢化 ----------------
+CATCldUIRepositCmd.targetSelState.Message="選擇參考，參考可以是一個或多個云和曲面，或點集";
+CATCldUIRepositCmd.targetSelPoints.Message="選擇點作為參考";
+CATCldUIRepositCmd.targetSelCldSrf.Message="選擇云或曲面作為參考";
+
+BestFit.Warning.Text1="選定的云總是用作參考。它不可以用作對齊的云。";
+BestFit.Warning.Text2="選定的云總是用作對齊的云。它不可以用作參考。";
+BestFit.Warning.Text3="參考邊線是點、曲面或云。";
+BestFit.Warning.Text4="參考邊線是點集，或點和/或曲面集。不可混合。";
+BestFit.Warning.Text5="最佳擬合對齊失敗。首先用“機器人對齊”進行粗略對齊，然后再嘗試最佳擬合對齊。";
+BestFit.Warning.Text6="無法更改參考選擇，因為已經對其應用了局部選擇。必須在更改參考選擇之前首先取消局部選擇。";
+BestFit.Warning.Text7="無法更改要對齊的云選擇，因為已經對其應用了局部選擇。必須首先取消局部選擇。";
+BestFit.Stat.AlignNb="對齊#";
+BestFit.Stat.NbOfIter="修訂版數： ";
+BestFit.Stat.NbOfPoints="用于統計信息計算的點數： ";
+BestFit.Stat.MinDev="最小偏差： ";
+BestFit.Stat.AveDev="平均偏差： ";
+BestFit.Stat.MaxDev="最大偏差： ";
+BestFit.Stat.StdDev="標準偏差： ";
+BestFit.Stat.UnderTol="公差下的點的百分比： ";
+
+// 3951 校正官方漢化 ---------------------
+// 3951 校正官方漢化 By Constraint and RPS
+// 3951 校正官方漢化 ---------------------
+CATCldUIRepositCmd.CtrNeutralState.Message="用“添加”添加“約束”，然后用“應用”更新";
+CATCldUIRepositCmd.CtrAddPushedState.Message="選擇云中要對齊的第一約束元素";
+CATCldUIRepositCmd.Ctr1SelectedState.Message="選擇參考中的第二約束元素";
+
+Warning.Title="關于“與約束對齊”的信息";
+Warning.Text1="未發現解。檢查輸入約束的連續性和優先值。";
+Warning.Text3="更新結果時發生錯誤。";
+Warning.Text4="內部錯誤。";
+Warning.Text5="元素已經用作要對齊的云的約束元素。不可以同時用作參考中的約束元素。";
+Warning.Text6="此元素已經用作參考中的約束元素。不可以同時用作要對齊的云的約束元素。";
+Warning.Text7="至少一個固定約束條件不符合。檢查輸入約束和優先值的一致性，并確保輸入順序（要對齊的云中的元素/參考中的元素）不逆轉。";
+Warning.Text8="已存在含有要對齊的云中的相同約束元素和參考中的相同約束元素的約束。選擇另一個參考中的約束元素。";
+Warning.Text9="至少一個固定約束條件不符合。比較統計信息窗口了解詳細信息。檢查輸入約束的一致性，特別是確保輸入順序（要對齊的云中的元素/參考中的元素）不逆轉。釋放一些約束，再次嘗試對齊。";
+
+Ctr.NumRecal="對齊#";
+Ctr.NumCtr="約束#";
+Ctr.Type="，類型： ";
+Ctr.Point="點";
+Ctr.Line="直線";
+Ctr.Plane="平面";
+Ctr.Dist="  距離 = ";
+Ctr.Angl="  角度 = ";
+Ctr.TolLin="線性公差 = ";
+Ctr.TolAng="角度公差 = ";
+Ctr.NotCalculated=" 未計算";
+Ctr.RPSLabel="RPS";
+Ctr.NotFrozenLabel=" 未凍結";
+
+// 3951 校正官方漢化 ----------------
+// 3951 校正官方漢化 Sphere
+// 3951 校正官方漢化 ----------------
+CATCldUIRepositCmd.SphereTargetSelState.Message="選擇參考云點";
+CATCldUIRepositCmd.SphereRunningPtState.Message="拾取云上的一個要對齊的點";
+CATCldUIRepositCmd.SphereRunningPtState.Target="拾取參考中的一個點";

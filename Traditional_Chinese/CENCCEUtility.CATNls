@@ -1,0 +1,128 @@
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化 CCE utility NLS-File Number range x12000..x12999
+// 3951 校正官方漢化
+// 3951 校正官方漢化 $Revision: 1.8 $
+// 3951 校正官方漢化 $Date: 2010/03/26 11:05:17MEZ $
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Syntax:
+// 3951 校正官方漢化   <ModuleId>_<MsgId>.<Key> = "Text";
+// 3951 校正官方漢化   where 
+// 3951 校正官方漢化     ModuleId: Text   - for classification (internally not used yet)
+// 3951 校正官方漢化     MsgId   : Number - Messagenumber (first digit is severity)
+// 3951 校正官方漢化     Key     : Text   - "iSev" -> Severity
+// 3951 校正官方漢化                        "sMsg" -> Short Message Text (not used yet)
+// 3951 校正官方漢化                        "lMsg" -> Long Message Text
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Limitations:
+// 3951 校正官方漢化    # max. nb. of parameters supported: /P1 .. /P25
+// 3951 校正官方漢化    # max. nb. of lMsg-lines: 10
+// 3951 校正官方漢化    # Key iSev has to be before lMsg 
+// 3951 校正官方漢化
+// 3951 校正官方漢化 =====================================================================
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Information messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化 MacroInterpreter message for severity 1
+CCE_EM112000.iSev="1";
+CCE_EM112000.sMsg="內部信息";
+CCE_EM112000.lMsg="/P1";
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Warning messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化 MacroInterpreter message for severity 3
+CCE_EM312000.iSev="3";
+CCE_EM312000.sMsg="內部警告";
+CCE_EM312000.lMsg="/P1";
+
+// 3951 校正官方漢化 MacroInterpreter message for function CCE_SetConfig()
+CCE_EM312001.iSev="3";
+CCE_EM312001.sMsg="宏解釋程序函數中出錯";
+CCE_EM312001.lMsg="命令：/P1
+序列：/P2
+行號：/P3
+警告：未找到配置參數 '/P4'。";
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Error messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化 MacroInterpreter message for severity 4
+CCE_EM412000.iSev="4";
+CCE_EM412000.sMsg="Internal Error";
+CCE_EM412000.lMsg="/P1";
+
+// 3951 校正官方漢化 MacroInterpreter message for function CCE_GetConfig()
+CCE_EM412001.iSev="4";
+CCE_EM412001.sMsg="宏解釋程序函數中出錯";
+CCE_EM412001.lMsg="命令：/P1
+序列：/P2
+行號：/P3
+錯誤：未找到配置參數 '/P4'。";
+
+// 3951 校正官方漢化 MacroInterpreter message for function CCE_GetConfig()
+CCE_EM412002.iSev="4";
+CCE_EM412002.sMsg="宏解釋程序函數中出錯";
+CCE_EM412002.lMsg="命令：/P1
+序列：/P2
+行號：/P3
+錯誤：不允許將空配置參數用于 '/P4'。";
+
+// 3951 校正官方漢化 MacroInterpreter message for function CCE_GetRtData()
+CCE_EM412010.iSev="4";
+CCE_EM412010.sMsg="宏解釋程序函數中出錯";
+CCE_EM412010.lMsg="命令：/P1
+序列：/P2
+行號：/P3
+錯誤：未找到 ID '/P4'的運行時數據參數。";
+
+// 3951 校正官方漢化 MacroInterpreter message for function CCE_GetParam()/CCE_SetParam()
+CCE_EM412020.iSev="4";
+CCE_EM412020.sMsg="宏解釋程序函數中出錯";
+CCE_EM412020.lMsg="命令：/P1
+序列：/P2
+行號：/P3
+錯誤：未找到 ID '/P4' 的參數。";
+
+// 3951 校正官方漢化 MacroInterpreter message for function CCE_SetParam()
+CCE_EM412021.iSev="4";
+CCE_EM412021.sMsg="宏解釋程序函數中出錯";
+CCE_EM412021.lMsg="命令：/P1
+序列：/P2
+行號：/P3
+錯誤：參數 ID '/P4' 的變量類型必須為“數字”。";
+
+// 3951 校正官方漢化 MacroInterpreter message for function CCE_SetParam()
+CCE_EM412022.iSev="4";
+CCE_EM412022.sMsg="宏解釋程序函數中出錯";
+CCE_EM412022.lMsg="命令：/P1
+序列：/P2
+行號：/P3
+錯誤：參數 ID '/P4' 的參數類型必須為“字符串”。";
+
+// 3951 校正官方漢化 MacroInterpreter message for severity 5
+CCE_EM512000.iSev="5";
+CCE_EM512000.sMsg="Internal Error";
+CCE_EM512000.lMsg="/P1
+正在終止...";
+
+CCE_EM512001.iSev="5";
+CCE_EM512001.sMsg="宏解釋程序中出錯";
+CCE_EM512001.lMsg="應用程序錯誤 - 沒有定義 NC 程序的主條目。";
+
+CCE_EM512002.iSev="5";
+CCE_EM512002.sMsg="RX 映射定義中出錯";
+CCE_EM512002.lMsg="應用程序最高版本：/P1。/P2。/P3。/P4
+RX 解析器錯誤：輸入映射定義版本高于應用程序最高版本。";
+
+CCE_EM512003.iSev="5";
+CCE_EM512003.sMsg="RX 解析器預映射中出錯";
+CCE_EM512003.lMsg="應用程序錯誤 - ISO 預映射中出現無法恢復錯誤 (rc=/P1)。正在中止...";
+
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化 End of CCE utility NLS-File
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化

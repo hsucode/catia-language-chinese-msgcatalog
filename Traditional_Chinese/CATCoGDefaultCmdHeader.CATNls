@@ -1,0 +1,869 @@
+// 3951 校正官方漢化 -*-c++-*-
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2002
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化 CATCoGDefaultCmdHeader
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+// 3951 校正官方漢化  mm-dd-yyyy  History                                                    user
+// 3951 校正官方漢化  02-dd-2002  Cre                                                         ???
+// 3951 校正官方漢化  10-20-2002  Mod  Reformatted and added Numerical analysis stuff         dky
+// 3951 校正官方漢化  01-06-2003  Mod  Added core sampling command                            dky
+// 3951 校正官方漢化  09-24-2007  Mod  Added swap edge cmd	                                nrd
+// 3951 校正官方漢化-----------------------------------------------------------------------------
+
+CATCoGDefaultCmdHeader.CATCwbCreateTransitionZoneHdr.Title="過渡區域";
+CATCoGDefaultCmdHeader.CATCwbCreateTransitionZoneHdr.Help="過渡區域";
+CATCoGDefaultCmdHeader.CATCwbCreateTransitionZoneHdr.ShortHelp="過渡區域";
+CATCoGDefaultCmdHeader.CATCwbCreateTransitionZoneHdr.LongHelp="過渡區域\n創建新過渡區域。";
+
+CATCoGDefaultCmdHeader.CATCwbCreateZoneCreationHdr.Title="區域";
+CATCoGDefaultCmdHeader.CATCwbCreateZoneCreationHdr.Help="區域";
+CATCoGDefaultCmdHeader.CATCwbCreateZoneCreationHdr.ShortHelp="區域";
+CATCoGDefaultCmdHeader.CATCwbCreateZoneCreationHdr.LongHelp="區域\n創建新區域";
+
+CATCoGDefaultCmdHeader.CreateITPId.Title="ITP";
+CATCoGDefaultCmdHeader.CreateITPId.Help="ITP";
+CATCoGDefaultCmdHeader.CreateITPId.ShortHelp="ITP";
+CATCoGDefaultCmdHeader.CreateITPId.LongHelp="ITP\n通過其層所在位置創建強加的厚度點";
+
+CATCoGDefaultCmdHeader.CATCoPlyCoAttrUpgradeId.Title="復合文檔升級";
+CATCoGDefaultCmdHeader.CATCoPlyCoAttrUpgradeId.Help="從 V5R10 升級至 V5R11";
+CATCoGDefaultCmdHeader.CATCoPlyCoAttrUpgradeId.ShortHelp="從 V5R10 升級至 V5R11";
+CATCoGDefaultCmdHeader.CATCoPlyCoAttrUpgradeId.LongHelp="將 V5R10 復合文檔升級至 V5R11 狀態";
+
+CATCoGDefaultCmdHeader.ParametersId.Title="復合參數";
+CATCoGDefaultCmdHeader.ParametersId.Help="復合參數";
+CATCoGDefaultCmdHeader.ParametersId.ShortHelp="復合參數";
+CATCoGDefaultCmdHeader.ParametersId.LongHelp="復合參數\n創建或編輯復合參數";
+
+CATCoGDefaultCmdHeader.ConnGeneratorId.Title="連接生成器";
+CATCoGDefaultCmdHeader.ConnGeneratorId.Help="連接生成器";
+CATCoGDefaultCmdHeader.ConnGeneratorId.ShortHelp="連接生成器";
+CATCoGDefaultCmdHeader.ConnGeneratorId.LongHelp="連接生成器\n運行連接生成器";
+
+// 3951 校正官方漢化 ZonesAnalyzer (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.ZonesAnalyzerId.Title="區域橋接分析器";
+CATCoGDefaultCmdHeader.ZonesAnalyzerId.Help="區域橋接分析器";
+CATCoGDefaultCmdHeader.ZonesAnalyzerId.ShortHelp="區域橋接分析器";
+CATCoGDefaultCmdHeader.ZonesAnalyzerId.LongHelp="區域橋接分析器\n在區域橋接模式下檢查區域覆蓋范圍";
+
+CATCoGDefaultCmdHeader.SolidCreationId.Title="來自區域的實體";
+CATCoGDefaultCmdHeader.SolidCreationId.Help="來自區域的實體";
+CATCoGDefaultCmdHeader.SolidCreationId.ShortHelp="來自區域的實體";
+CATCoGDefaultCmdHeader.SolidCreationId.LongHelp="來自區域的實體\n從區域創建實體";
+
+// 3951 校正官方漢化 ZonesSolid (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.ZonesSolidId.Title="來自區域的關聯實體";
+CATCoGDefaultCmdHeader.ZonesSolidId.Help="來自區域的關聯實體";
+CATCoGDefaultCmdHeader.ZonesSolidId.ShortHelp="來自區域的關聯實體";
+CATCoGDefaultCmdHeader.ZonesSolidId.LongHelp="來自區域的關聯實體\n從區域創建關聯實體";
+
+// 3951 校正官方漢化 DropOff (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.DropOffId.Title="衰減";
+CATCoGDefaultCmdHeader.DropOffId.Help="衰減";
+CATCoGDefaultCmdHeader.DropOffId.ShortHelp="衰減";
+CATCoGDefaultCmdHeader.DropOffId.LongHelp="衰減\n創建新斜坡形狀";
+
+// 3951 校正官方漢化 SwapBoundaries (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.SwapBoundariesId.Title="交換邊界";
+CATCoGDefaultCmdHeader.SwapBoundariesId.Help="交換邊界";
+CATCoGDefaultCmdHeader.SwapBoundariesId.ShortHelp="交換邊界";
+CATCoGDefaultCmdHeader.SwapBoundariesId.LongHelp="交換邊界\n交換兩個序列的邊界";
+
+// 3951 校正官方漢化 ITPHeight (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.ITPHeightId.Title="ITP 高度";
+CATCoGDefaultCmdHeader.ITPHeightId.Help="ITP 高度";
+CATCoGDefaultCmdHeader.ITPHeightId.ShortHelp="ITP 高度";
+CATCoGDefaultCmdHeader.ITPHeightId.LongHelp="ITP 高度\n根據其高度創建強加的厚度點";
+
+CATCoGDefaultCmdHeader.CreatePlyActId.Title="鋪層";
+CATCoGDefaultCmdHeader.CreatePlyActId.Help="鋪層";
+CATCoGDefaultCmdHeader.CreatePlyActId.ShortHelp="鋪層";
+CATCoGDefaultCmdHeader.CreatePlyActId.LongHelp="鋪層\n創建新鋪層";
+
+CATCoGDefaultCmdHeader.CreateCoreId.Title="核心";
+CATCoGDefaultCmdHeader.CreateCoreId.Help="核心";
+CATCoGDefaultCmdHeader.CreateCoreId.ShortHelp="核心";
+CATCoGDefaultCmdHeader.CreateCoreId.LongHelp="核心\n創建新核心";
+
+CATCoGDefaultCmdHeader.CreatePlyGroupId.Title="鋪層組";
+CATCoGDefaultCmdHeader.CreatePlyGroupId.Help="鋪層組";
+CATCoGDefaultCmdHeader.CreatePlyGroupId.ShortHelp="鋪層組";
+CATCoGDefaultCmdHeader.CreatePlyGroupId.LongHelp="鋪層組\n創建新鋪層組";
+
+CATCoGDefaultCmdHeader.CATCwbCreateTestCmdHdr.Title="測試命令";
+CATCoGDefaultCmdHeader.CATCwbCreateTestCmdHdr.Help="測試命令";
+CATCoGDefaultCmdHeader.CATCwbCreateTestCmdHdr.ShortHelp="測試命令";
+CATCoGDefaultCmdHeader.CATCwbCreateTestCmdHdr.LongHelp="測試命令";
+
+CATCoGDefaultCmdHeader.NumAnalysisId.Title="數值分析";
+CATCoGDefaultCmdHeader.NumAnalysisId.Help="數值分析";
+CATCoGDefaultCmdHeader.NumAnalysisId.ShortHelp="數值分析";
+CATCoGDefaultCmdHeader.NumAnalysisId.LongHelp="數值分析\n計算復合實體的數值";
+
+CATCoGDefaultCmdHeader.CoreSampleGroup.Title="取樣組";
+CATCoGDefaultCmdHeader.CoreSampleExportId.Title="導出取樣";
+CATCoGDefaultCmdHeader.CoreSampleExportId.ShortHelp="導出取樣";
+CATCoGDefaultCmdHeader.CoreSampleExportId.LongHelp="導出取樣\以外部格式導出取樣";
+
+CATCoGDefaultCmdHeader.CoreSampleId.Title="取樣";
+CATCoGDefaultCmdHeader.CoreSampleId.Help="取樣";
+CATCoGDefaultCmdHeader.CoreSampleId.ShortHelp="取樣";
+CATCoGDefaultCmdHeader.CoreSampleId.LongHelp="取樣\n執行一個取樣來審查復合零件";
+
+CATCoGDefaultCmdHeader.MultipleCoreSampleId.Title="多重取樣";
+CATCoGDefaultCmdHeader.MultipleCoreSampleId.Help="多重取樣";
+CATCoGDefaultCmdHeader.MultipleCoreSampleId.ShortHelp="多重取樣";
+CATCoGDefaultCmdHeader.MultipleCoreSampleId.LongHelp="多重取樣\n在一行中執行多個取樣";
+
+CATCoGDefaultCmdHeader.CATCwbCreateZonesGroupHdr.Title="區域組";
+CATCoGDefaultCmdHeader.CATCwbCreateZonesGroupHdr.Help="區域組";
+CATCoGDefaultCmdHeader.CATCwbCreateZonesGroupHdr.ShortHelp="區域組";
+CATCoGDefaultCmdHeader.CATCwbCreateZonesGroupHdr.LongHelp="多重取樣\n在樹中插入區域組";
+
+CATCoGDefaultCmdHeader.CreatePlyCreFromZonesId.Title="來自區域的鋪層";
+CATCoGDefaultCmdHeader.CreatePlyCreFromZonesId.Help="來自區域的鋪層";
+CATCoGDefaultCmdHeader.CreatePlyCreFromZonesId.ShortHelp="來自區域的鋪層";
+CATCoGDefaultCmdHeader.CreatePlyCreFromZonesId.LongHelp="來自區域的鋪層\n從各自區域組創建鋪層";
+
+// 3951 校正官方漢化 ZonesFromSurfaceId
+CATCoGDefaultCmdHeader.ZonesFromSurfaceId.Title="區域創建向導";
+CATCoGDefaultCmdHeader.ZonesFromSurfaceId.Help="區域創建向導";
+CATCoGDefaultCmdHeader.ZonesFromSurfaceId.ShortHelp="區域創建向導";
+CATCoGDefaultCmdHeader.ZonesFromSurfaceId.LongHelp="區域創建向導\n在區域組中創建區域和轉換";
+
+CATCoGDefaultCmdHeader.CreateStkUpFileFromZonesId.Title="來自區域的堆疊文件";
+CATCoGDefaultCmdHeader.CreateStkUpFileFromZonesId.Help="來自區域的堆疊文件";
+CATCoGDefaultCmdHeader.CreateStkUpFileFromZonesId.ShortHelp="來自區域的堆疊文件";
+CATCoGDefaultCmdHeader.CreateStkUpFileFromZonesId.LongHelp="來自區域的堆疊文件\n創建一個帶有鋪層，序列和區域信息的文件";
+
+// 3951 校正官方漢化 StkUpFileFromCSInfo (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CreateStkUpFileFromCSInfoId.Title="來自取樣的堆疊文件";
+CATCoGDefaultCmdHeader.CreateStkUpFileFromCSInfoId.Help="來自取樣的堆疊文件";
+CATCoGDefaultCmdHeader.CreateStkUpFileFromCSInfoId.ShortHelp="來自取樣的堆疊文件";
+CATCoGDefaultCmdHeader.CreateStkUpFileFromCSInfoId.LongHelp="來自取樣的堆疊文件\n創建一個帶有鋪層，序列和取樣信息的文件";
+
+// 3951 校正官方漢化 Checks Zones laminate (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CheckZonesId.Title="檢查區域層";
+CATCoGDefaultCmdHeader.CheckZonesId.Help="檢查區域層";
+CATCoGDefaultCmdHeader.CheckZonesId.ShortHelp="檢查區域層";
+CATCoGDefaultCmdHeader.CheckZonesId.LongHelp="檢查區域層\n在所有區域中與一個取樣進行比較";
+
+// 3951 校正官方漢化 SlicingGroup (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.SlicingGroupId.Title="分割組";
+CATCoGDefaultCmdHeader.SlicingGroupId.Help="分割組";
+CATCoGDefaultCmdHeader.SlicingGroupId.ShortHelp="分割組";
+CATCoGDefaultCmdHeader.SlicingGroupId.LongHelp="分割組\n創建具有實體和區域組的分割組";
+
+// 3951 校正官方漢化 RemoveSliceGroup (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.RemoveSliceGroupId.Title="移除分割組";
+CATCoGDefaultCmdHeader.RemoveSliceGroupId.Help="移除分割組";
+CATCoGDefaultCmdHeader.RemoveSliceGroupId.ShortHelp="移除分割組";
+CATCoGDefaultCmdHeader.RemoveSliceGroupId.LongHelp="移除分割組";
+
+// 3951 校正官方漢化 PliesFromSlicing (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.PliesFromSlicingId.Title="來自分割組的鋪層";
+CATCoGDefaultCmdHeader.PliesFromSlicingId.Help="來自分割組的鋪層";
+CATCoGDefaultCmdHeader.PliesFromSlicingId.ShortHelp="來自分割組的鋪層";
+CATCoGDefaultCmdHeader.PliesFromSlicingId.LongHelp="來自分割組的鋪層\n從分割組創建鋪層";
+
+// 3951 校正官方漢化 Ply management (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.PlyMgtId.Title="交互式鋪層表";
+CATCoGDefaultCmdHeader.PlyMgtId.Help="交互式鋪層表";
+CATCoGDefaultCmdHeader.PlyMgtId.ShortHelp="交互式鋪層表";
+CATCoGDefaultCmdHeader.PlyMgtId.LongHelp="交互式鋪層表\n交互式地管理鋪層表";
+
+CATCoGDefaultCmdHeader.CreateStkUpFileAtPlyLvlId.Title="鋪層表";
+CATCoGDefaultCmdHeader.CreateStkUpFileAtPlyLvlId.Help="鋪層表";
+CATCoGDefaultCmdHeader.CreateStkUpFileAtPlyLvlId.ShortHelp="鋪層表";
+CATCoGDefaultCmdHeader.CreateStkUpFileAtPlyLvlId.LongHelp="鋪層表\n創建一個文件并將所有信息寫入鋪層級";
+
+
+CATCoGDefaultCmdHeader.PliesCreFromStkUpFileId.Title="鋪層表導入";
+CATCoGDefaultCmdHeader.PliesCreFromStkUpFileId.Help="鋪層表導入";
+CATCoGDefaultCmdHeader.PliesCreFromStkUpFileId.ShortHelp="鋪層表導入";
+CATCoGDefaultCmdHeader.PliesCreFromStkUpFileId.LongHelp="鋪層表導入\n從堆疊文件創建鋪層";
+
+CATCoGDefaultCmdHeader.OldPliesCreFromStkUpFileId.Title="舊鋪層表導入";
+CATCoGDefaultCmdHeader.OldPliesCreFromStkUpFileId.Help="舊鋪層表導入";
+CATCoGDefaultCmdHeader.OldPliesCreFromStkUpFileId.ShortHelp="舊鋪層表導入";
+CATCoGDefaultCmdHeader.OldPliesCreFromStkUpFileId.LongHelp="從堆疊文件創建鋪層";
+
+CATCoGDefaultCmdHeader.ImportLaminateId.Title="導入層";
+CATCoGDefaultCmdHeader.ImportLaminateId.Help="導入層";
+CATCoGDefaultCmdHeader.ImportLaminateId.ShortHelp="導入層";
+CATCoGDefaultCmdHeader.ImportLaminateId.LongHelp="導入層\n從文件導入層并更新層功能";
+
+CATCoGDefaultCmdHeader.CreateProducibilityId.Title="可生產性";
+CATCoGDefaultCmdHeader.CreateProducibilityId.Help="可生產性";
+CATCoGDefaultCmdHeader.CreateProducibilityId.ShortHelp="可生產性";
+CATCoGDefaultCmdHeader.CreateProducibilityId.LongHelp="可生產性\n分析鋪層的可生產性";
+
+CATCoGDefaultCmdHeader.CreateFlatteningId.Title="展平";
+CATCoGDefaultCmdHeader.CreateFlatteningId.Help="展平";
+CATCoGDefaultCmdHeader.CreateFlatteningId.ShortHelp="展平";
+CATCoGDefaultCmdHeader.CreateFlatteningId.LongHelp="展平\n展平鋪層";
+
+CATCoGDefaultCmdHeader.CreateProducibilityMultiEditionId.Title="可生產性多重編輯";
+CATCoGDefaultCmdHeader.CreateProducibilityMultiEditionId.Help="可生產性多重編輯";
+CATCoGDefaultCmdHeader.CreateProducibilityMultiEditionId.ShortHelp="可生產性多重編輯";
+CATCoGDefaultCmdHeader.CreateProducibilityMultiEditionId.LongHelp="可生產性多重編輯\n創建并編輯多個可生產性";
+
+CATCoGDefaultCmdHeader.FlattenOptimizationId.Title="展平優化";
+CATCoGDefaultCmdHeader.FlattenOptimizationId.Help="展平優化";
+CATCoGDefaultCmdHeader.FlattenOptimizationId.ShortHelp="展平優化";
+CATCoGDefaultCmdHeader.FlattenOptimizationId.LongHelp="展平優化\光順鋪層的展平形狀";
+
+CATCoGDefaultCmdHeader.CreateGeometryTransferId.Title="幾何圖形轉換";
+CATCoGDefaultCmdHeader.CreateGeometryTransferId.Help="幾何圖形轉換";
+CATCoGDefaultCmdHeader.CreateGeometryTransferId.ShortHelp="幾何圖形轉換";
+CATCoGDefaultCmdHeader.CreateGeometryTransferId.LongHelp="幾何圖形轉換\n從鋪層展平轉換為幾何圖形或將幾何圖形轉換為鋪層展平";
+
+CATCoGDefaultCmdHeader.CreateProduceInspectionId.Title="可生產性檢查";
+CATCoGDefaultCmdHeader.CreateProduceInspectionId.Help="可生產性檢查";
+CATCoGDefaultCmdHeader.CreateProduceInspectionId.ShortHelp="可生產性檢查";
+CATCoGDefaultCmdHeader.CreateProduceInspectionId.LongHelp="可生產性檢查\n檢查一組鋪層的可生產性";
+
+// 3951 校正官方漢化 PEY R20 
+CATCoGDefaultCmdHeader.CATCoProducibilityActivateId.Title="可生產性激活";
+CATCoGDefaultCmdHeader.CATCoProducibilityActivateId.Help="可生產性激活";
+CATCoGDefaultCmdHeader.CATCoProducibilityActivateId.ShortHelp="可生產性激活";
+CATCoGDefaultCmdHeader.CATCoProducibilityActivateId.LongHelp="可生產性激活\n將所選可生產性設置為活動";
+
+CATCoGDefaultCmdHeader.CATCoProducibilityForManufSetId.Title="定義為可供制造使用";
+CATCoGDefaultCmdHeader.CATCoProducibilityForManufSetId.Help="定義為可供制造使用";
+CATCoGDefaultCmdHeader.CATCoProducibilityForManufSetId.ShortHelp="定義為可供制造使用";
+CATCoGDefaultCmdHeader.CATCoProducibilityForManufId.LongHelp="定義為可供制造使用\n將一個類型的可生產性設置為開啟以使之可供制造使用";
+
+CATCoGDefaultCmdHeader.CATCoProducibilityForManufUnsetId.Title="取消可供制造使用設置";
+CATCoGDefaultCmdHeader.CATCoProducibilityForManufUnsetId.Help="取消可供制造使用設置";
+CATCoGDefaultCmdHeader.CATCoProducibilityForManufUnsetId.ShortHelp="取消可供制造使用設置";
+CATCoGDefaultCmdHeader.CATCoProducibilityForManufUnsetId.LongHelp="取消可供制造使用設置\n取消一個類型的可生產性開啟設置以使之不可供制造使用";
+
+CATCoGDefaultCmdHeader.CATCoProducibilityRemoveId.Title="移除無用的可生產性";
+CATCoGDefaultCmdHeader.CATCoProducibilityRemoveId.Help="移除無用的可生產性";
+CATCoGDefaultCmdHeader.CATCoProducibilityRemoveId.ShortHelp="移除無用的可生產性";
+CATCoGDefaultCmdHeader.CATCoProducibilityRemoveId.LongHelp="移除無用的可生產性\n移除過期或非可供制造使用的可生產性";
+// 3951 校正官方漢化 PEY 
+
+CATCoGDefaultCmdHeader.CreateFiberDirectionId.Title="纖維方向";
+CATCoGDefaultCmdHeader.CreateFiberDirectionId.Help="纖維方向";
+CATCoGDefaultCmdHeader.CreateFiberDirectionId.ShortHelp="纖維方向";
+CATCoGDefaultCmdHeader.CreateFiberDirectionId.LongHelp="纖維方向\n顯示理論上的纖維方向和局部坐標系軸";
+
+CATCoGDefaultCmdHeader.ExplodeId.Title="鋪層分解器";
+CATCoGDefaultCmdHeader.ExplodeId.Help="鋪層分解器";
+CATCoGDefaultCmdHeader.ExplodeId.ShortHelp="鋪層分解器";
+CATCoGDefaultCmdHeader.ExplodeId.LongHelp="鋪層分解器\n分解鋪層";
+
+CATCoGDefaultCmdHeader.CATCoSkinSwappingId.Title="蒙皮切換組";
+CATCoGDefaultCmdHeader.CATCoSkinSwappingId.Help="蒙皮切換組";
+CATCoGDefaultCmdHeader.CATCoSkinSwappingId.ShortHelp="蒙皮切換組";
+CATCoGDefaultCmdHeader.CATCoSkinSwappingId.LongHelp="蒙皮切換\n切換鋪層的曲面";
+
+CATCoGDefaultCmdHeader.CATCoMaterialExcessId.Title="材料過剩";
+CATCoGDefaultCmdHeader.CATCoMaterialExcessId.Help="材料過剩";
+CATCoGDefaultCmdHeader.CATCoMaterialExcessId.ShortHelp="材料過剩";
+CATCoGDefaultCmdHeader.CATCoMaterialExcessId.LongHelp="材料過剩\n同時為 EEOP 和 MEOP 定義材料過剩。";
+
+CATCoGDefaultCmdHeader.CATCoEOPId.Title="零件邊線";
+CATCoGDefaultCmdHeader.CATCoEOPId.Help="零件邊線";
+CATCoGDefaultCmdHeader.CATCoEOPId.ShortHelp="零件邊線";
+CATCoGDefaultCmdHeader.CATCoEOPId.LongHelp="零件邊線\n定義零件邊線";
+
+CATCoGDefaultCmdHeader.PlyExportId.Title="鋪層數據導出";
+CATCoGDefaultCmdHeader.PlyExportId.Help="鋪層數據導出";
+CATCoGDefaultCmdHeader.PlyExportId.ShortHelp="鋪層數據導出";
+CATCoGDefaultCmdHeader.PlyExportId.LongHelp="鋪層數據導出\n導出鋪層幾何圖形為 IGES 或 DXF";
+
+CATCoGDefaultCmdHeader.ActivateView.Title="激活視圖";
+CATCoGDefaultCmdHeader.ActivateEnggId.Title="工程視圖";
+CATCoGDefaultCmdHeader.ActivateEnggId.Help="激活工程視圖";
+CATCoGDefaultCmdHeader.ActivateEnggId.ShortHelp="激活工程視圖";
+CATCoGDefaultCmdHeader.ActivateEnggId.LongHelp="激活工程視圖";
+CATCoGDefaultCmdHeader.ActivateManfId.Title="制造視圖";
+CATCoGDefaultCmdHeader.ActivateManfId.Help="激活制造視圖";
+CATCoGDefaultCmdHeader.ActivateManfId.ShortHelp="激活制造視圖";
+CATCoGDefaultCmdHeader.ActivateManfId.LongHelp="激活制造視圖";
+CATCoGDefaultCmdHeader.ActivateFlatId.Title="展平視圖";
+CATCoGDefaultCmdHeader.ActivateFlatId.Help="激活展平視圖";
+CATCoGDefaultCmdHeader.ActivateFlatId.ShortHelp="激活展平視圖";
+CATCoGDefaultCmdHeader.ActivateFlatId.LongHelp="激活展平視圖";
+
+
+CATCoGDefaultCmdHeader.CATCoPlyShellCleanCmdId.Title="移除鋪層殼體";
+CATCoGDefaultCmdHeader.CATCoPlyShellCleanCmdId.Help="移除鋪層殼體";
+CATCoGDefaultCmdHeader.CATCoPlyShellCleanCmdId.ShortHelp="移除鋪層殼體";
+CATCoGDefaultCmdHeader.CATCoPlyShellCleanCmdId.LongHelp="移除重新限定的鋪層殼體";
+
+
+CATCoGDefaultCmdHeader.CATCoDeleteFeatureContextuallyCmdId.Title="刪除分解的曲面";
+CATCoGDefaultCmdHeader.CATCoDeleteFeatureContextuallyCmdId.Help="刪除分解的曲面";
+CATCoGDefaultCmdHeader.CATCoDeleteFeatureContextuallyCmdId.ShortHelp="刪除分解的曲面";
+CATCoGDefaultCmdHeader.CATCoDeleteFeatureContextuallyCmdId.LongHelp="刪除分解的曲面";
+
+CATCoGDefaultCmdHeader.CATCoDeleteLCFeatureContextuallyCmdId.Title="移除所有限制輪廓";
+CATCoGDefaultCmdHeader.CATCoDeleteLCFeatureContextuallyCmdId.Help="移除所有限制輪廓";
+CATCoGDefaultCmdHeader.CATCoDeleteLCFeatureContextuallyCmdId.ShortHelp="移除所有限制輪廓";
+CATCoGDefaultCmdHeader.CATCoDeleteLCFeatureContextuallyCmdId.LongHelp="移除所有限制輪廓\n移除鋪層中的所有限制輪廓";
+
+CATCoGDefaultCmdHeader.CATCoDeleteFlatteningContextuallyCmdId.Title="移除展平功能";
+CATCoGDefaultCmdHeader.CATCoDeleteFlatteningContextuallyCmdId.Help="移除展平功能";
+CATCoGDefaultCmdHeader.CATCoDeleteFlatteningContextuallyCmdId.ShortHelp="移除展平功能";
+CATCoGDefaultCmdHeader.CATCoDeleteFlatteningContextuallyCmdId.LongHelp="移除展平功能\n移除鋪層中的所有展平輪廓";
+
+CATCoGDefaultCmdHeader.CATCoDeleteMEContextuallyCmdId.Title="移除材料過剩";
+CATCoGDefaultCmdHeader.CATCoDeleteMEContextuallyCmdId.Help="移除材料過剩";
+CATCoGDefaultCmdHeader.CATCoDeleteMEContextuallyCmdId.ShortHelp="移除材料過剩";
+CATCoGDefaultCmdHeader.CATCoDeleteMEContextuallyCmdId.LongHelp="移除材料過剩\n移除鋪層中的所有材料過剩";
+
+CATCoGDefaultCmdHeader.CATCoDeleteSkinSwappingContextuallyCmdId.Title="移除蒙皮切換";
+CATCoGDefaultCmdHeader.CATCoDeleteSkinSwappingContextuallyCmdId.Help="移除蒙皮切換";
+CATCoGDefaultCmdHeader.CATCoDeleteSkinSwappingContextuallyCmdId.ShortHelp="移除蒙皮切換";
+CATCoGDefaultCmdHeader.CATCoDeleteSkinSwappingContextuallyCmdId.LongHelp="移除蒙皮切換\n從鋪層中移除所有蒙皮切換";
+
+CATCoGDefaultCmdHeader.PlyLimitContourId.Title="限制輪廓";
+CATCoGDefaultCmdHeader.PlyLimitContourId.Help="限制輪廓";
+CATCoGDefaultCmdHeader.PlyLimitContourId.ShortHelp="限制輪廓";
+CATCoGDefaultCmdHeader.PlyLimitContourId.LongHelp="限制輪廓\n為鋪層創建限制輪廓";
+
+CATCoGDefaultCmdHeader.DartId.Title="飛鏢";
+CATCoGDefaultCmdHeader.DartId.Help="飛鏢";
+CATCoGDefaultCmdHeader.DartId.ShortHelp="飛鏢";
+CATCoGDefaultCmdHeader.DartId.LongHelp="飛鏢\n為鋪層創建飛鏢";
+
+CATCoGDefaultCmdHeader.ContourValidationId.Title="檢查輪廓";
+CATCoGDefaultCmdHeader.ContourValidationId.Help="檢查輪廓";
+CATCoGDefaultCmdHeader.ContourValidationId.ShortHelp="檢查輪廓";
+CATCoGDefaultCmdHeader.ContourValidationId.LongHelp="檢查輪廓\n檢查鋪層的輪廓";
+
+CATCoGDefaultCmdHeader.CATCoCoreSampleTestCmdID.Title="取樣測試";
+CATCoGDefaultCmdHeader.CATCoCoreSampleTestCmdID.Help="取樣測試";
+CATCoGDefaultCmdHeader.CATCoCoreSampleTestCmdID.ShortHelp="取樣測試";
+CATCoGDefaultCmdHeader.CATCoCoreSampleTestCmdID.LongHelp="取樣測試";
+
+CATCoGDefaultCmdHeader.AutoLimitContourId.Help="來自輸入文件的限制輪廓";
+CATCoGDefaultCmdHeader.AutoLimitContourId.ShortHelp="來自輸入文件的限制輪廓";
+CATCoGDefaultCmdHeader.AutoLimitContourId.LongHelp="來自輸入文件的限制輪廓\n在輸入文件中為鋪層創建輪廓";
+
+CATCoGDefaultCmdHeader.MultiSpliceId.Title="接頭鋪層";
+CATCoGDefaultCmdHeader.MultiSpliceId.Help="接頭鋪層";
+CATCoGDefaultCmdHeader.MultiSpliceId.ShortHelp="接頭鋪層";
+CATCoGDefaultCmdHeader.MultiSpliceId.LongHelp="接頭鋪層\n為選定的鋪層創建 3D 多重接頭";
+
+CATCoGDefaultCmdHeader.CreateManuDocGenId.Title="制造堆疊";
+CATCoGDefaultCmdHeader.CreateManuDocGenId.Help="制造堆疊";
+CATCoGDefaultCmdHeader.CreateManuDocGenId.ShortHelp="制造堆疊";
+CATCoGDefaultCmdHeader.CreateManuDocGenId.LongHelp="制造堆疊\n創建制造堆疊展示";
+
+CATCoGDefaultCmdHeader.CATCoStackingSynchronizeId.Title="同步制造堆疊";
+CATCoGDefaultCmdHeader.CATCoStackingSynchronizeId.Help="同步制造堆疊";
+CATCoGDefaultCmdHeader.CATCoStackingSynchronizeId.ShortHelp="同步制造堆疊";
+CATCoGDefaultCmdHeader.CATCoStackingSynchronizeId.LongHelp="同步制造堆疊\n同步制造堆疊以反映工程更改";
+
+CATCoGDefaultCmdHeader.CATCoPlySymmetryId.Title="對稱鋪層堆疊";
+CATCoGDefaultCmdHeader.CATCoPlySymmetryId.Help="對稱鋪層堆疊";
+CATCoGDefaultCmdHeader.CATCoPlySymmetryId.ShortHelp="對稱鋪層堆疊";
+CATCoGDefaultCmdHeader.CATCoPlySymmetryId.LongHelp="對稱鋪層堆疊\n對稱鋪層堆疊";
+
+CATCoGDefaultCmdHeader.CATCwbCreateSolidFromPliesCmdHdr.Title="來自鋪層的實體";
+CATCoGDefaultCmdHeader.CATCwbCreateSolidFromPliesCmdHdr.Help="來自鋪層的實體";
+CATCoGDefaultCmdHeader.CATCwbCreateSolidFromPliesCmdHdr.ShortHelp="來自鋪層的實體";
+CATCoGDefaultCmdHeader.CATCwbCreateSolidFromPliesCmdHdr.LongHelp="來自鋪層的實體\n通過鋪層創建實體";
+
+CATCoGDefaultCmdHeader.CATCwbCreateIML1CmdHdr.Title="IML 生成";
+CATCoGDefaultCmdHeader.CATCwbCreateIML1CmdHdr.Help="IML 生成";
+CATCoGDefaultCmdHeader.CATCwbCreateIML1CmdHdr.ShortHelp="IML 生成";
+CATCoGDefaultCmdHeader.CATCwbCreateIML1CmdHdr.LongHelp="IML 生成\n通過鋪層生成內模線曲面";
+
+CATCoGDefaultCmdHeader.CATCwbCreateIML2CmdHdr.Title="擴展的 IML 生成";
+CATCoGDefaultCmdHeader.CATCwbCreateIML2CmdHdr.Help="擴展的 IML 生成";
+CATCoGDefaultCmdHeader.CATCwbCreateIML2CmdHdr.ShortHelp="擴展的 IML 生成";
+CATCoGDefaultCmdHeader.CATCwbCreateIML2CmdHdr.LongHelp="擴展的 IML 生成\n通過具有擴展參數的鋪層生成內模線曲面";
+
+// 3951 校正官方漢化 == GSD Point == 
+CATCoGDefaultCmdHeader.FromGSDPointID.Title="點...";
+CATCoGDefaultCmdHeader.FromGSDPointID.Help="創建一個或多個點";
+CATCoGDefaultCmdHeader.FromGSDPointID.ShortHelp="點";
+CATCoGDefaultCmdHeader.FromGSDPointID.LongHelp="點
+創建一個或多個點。";
+
+
+// 3951 校正官方漢化 == GSD Line == 
+CATCoGDefaultCmdHeader.FromGSDLineID.Title="直線...";
+CATCoGDefaultCmdHeader.FromGSDLineID.Help="創建直線";
+CATCoGDefaultCmdHeader.FromGSDLineID.ShortHelp="直線";
+CATCoGDefaultCmdHeader.FromGSDLineID.LongHelp="直線
+創建直線。";
+
+
+// 3951 校正官方漢化 == GSD Plane == 
+CATCoGDefaultCmdHeader.FromGSDPlaneID.Title="平面...";
+CATCoGDefaultCmdHeader.FromGSDPlaneID.Help="創建平面";
+CATCoGDefaultCmdHeader.FromGSDPlaneID.ShortHelp="平面";
+CATCoGDefaultCmdHeader.FromGSDPlaneID.LongHelp="平面
+創建平面。";
+
+// 3951 校正官方漢化 == GSD Circle ==
+CATCoGDefaultCmdHeader.FromGSDCircleID.Title="圓...";
+CATCoGDefaultCmdHeader.FromGSDCircleID.Help="創建圓或圓弧";
+CATCoGDefaultCmdHeader.FromGSDCircleID.ShortHelp="圓";
+CATCoGDefaultCmdHeader.FromGSDCircleID.LongHelp="圓
+創建圓或圓弧。";
+
+// 3951 校正官方漢化 == GSD Assemble == 
+CATCoGDefaultCmdHeader.FromGSDAssembleID.Title="接合...";
+CATCoGDefaultCmdHeader.FromGSDAssembleID.Help="接合曲線或曲面";
+CATCoGDefaultCmdHeader.FromGSDAssembleID.ShortHelp="接合";
+CATCoGDefaultCmdHeader.FromGSDAssembleID.LongHelp="接合
+接合曲線或曲面。";
+
+CATCoGDefaultCmdHeader.CATCwbSynchronizationId.Title="同步制造堆疊";
+CATCoGDefaultCmdHeader.CATCwbSynchronizationId.Help="同步制造堆疊";
+CATCoGDefaultCmdHeader.CATCwbSynchronizationId.ShortHelp="同步制造堆疊";
+CATCoGDefaultCmdHeader.CATCwbSynchronizationId.LongHelp="同步制造堆疊\n同步制造堆疊以反映工程更改";
+
+CATCoGDefaultCmdHeader.RemoveLimitContour.Title="移除相似限制輪廓...";
+CATCoGDefaultCmdHeader.RemoveLimitContour.Help="從所有鋪層中移除相似限制輪廓";
+CATCoGDefaultCmdHeader.RemoveLimitContour.ShortHelp="從所有鋪層中移除相似限制輪廓";
+CATCoGDefaultCmdHeader.RemoveLimitContour.LongHelp="從所有鋪層中移除相似限制輪廓";
+
+CATCoGDefaultCmdHeader.CATCoCreateLimitContourGroupCmdID.Title="創建限制輪廓組";
+CATCoGDefaultCmdHeader.CATCoCreateLimitContourGroupCmdID.Help="創建限制輪廓組";
+CATCoGDefaultCmdHeader.CATCoCreateLimitContourGroupCmdID.ShortHelp="創建限制輪廓組";
+CATCoGDefaultCmdHeader.CATCoCreateLimitContourGroupCmdID.LongHelp="創建限制輪廓組";
+
+CATCoGDefaultCmdHeader.RemoveMatExcessContour.Title="移除相似材料過剩";
+CATCoGDefaultCmdHeader.RemoveMatExcessContour.Help="從所有鋪層中移除材料過剩";
+CATCoGDefaultCmdHeader.RemoveMatExcessContour.ShortHelp="從所有鋪層中移除材料過剩";
+CATCoGDefaultCmdHeader.RemoveMatExcessContour.LongHelp="從所有鋪層中移除材料過剩";
+
+CATCoGDefaultCmdHeader.RemoveSkinSwapContour.Title="移除相似蒙皮切換";
+CATCoGDefaultCmdHeader.RemoveSkinSwapContour.Help="從所有鋪層中移除相似蒙皮切換";
+CATCoGDefaultCmdHeader.RemoveSkinSwapContour.ShortHelp="從所有鋪層中移除相似蒙皮切換";
+CATCoGDefaultCmdHeader.RemoveSkinSwapContour.LongHelp="從所有鋪層中移除相似蒙皮切換";
+
+CATCoGDefaultCmdHeader.CATCoCreateSSGCmdID.Title="創建蒙皮切換組";
+CATCoGDefaultCmdHeader.CATCoCreateSSGCmdID.Help="創建蒙皮切換組";
+CATCoGDefaultCmdHeader.CATCoCreateSSGCmdID.ShortHelp="創建蒙皮切換組";
+CATCoGDefaultCmdHeader.CATCoCreateSSGCmdID.LongHelp="創建蒙皮切換組";
+
+CATCoGDefaultCmdHeader.CATCoShowHideContourCmdId.Title="隱藏/顯示 3D 輪廓";
+CATCoGDefaultCmdHeader.CATCoShowHideContourCmdId.Help="隱藏/顯示 3D 輪廓";
+CATCoGDefaultCmdHeader.CATCoShowHideContourCmdId.ShortHelp="隱藏/顯示 3D 輪廓";
+CATCoGDefaultCmdHeader.CATCoShowHideContourCmdId.LongHelp="隱藏或顯示 3D 輪廓";
+
+CATCoGDefaultCmdHeader.CATCoShowHideExplodeCmdId.Title="隱藏/顯示分解的曲面";
+CATCoGDefaultCmdHeader.CATCoShowHideExplodeCmdId.Help="隱藏/顯示分解的曲面";
+CATCoGDefaultCmdHeader.CATCoShowHideExplodeCmdId.ShortHelp="隱藏/顯示分解的曲面";
+CATCoGDefaultCmdHeader.CATCoShowHideExplodeCmdId.LongHelp="隱藏/顯示分解的曲面";
+
+CATCoGDefaultCmdHeader.CATCoShowHideFlattenCmdId.Title="隱藏/顯示展平輪廓";
+CATCoGDefaultCmdHeader.CATCoShowHideFlattenCmdId.Help="隱藏/顯示展平輪廓";
+CATCoGDefaultCmdHeader.CATCoShowHideFlattenCmdId.ShortHelp="隱藏/顯示展平輪廓";
+CATCoGDefaultCmdHeader.CATCoShowHideFlattenCmdId.LongHelp="隱藏/顯示展平輪廓";
+
+CATCoGDefaultCmdHeader.CreateCollobIDs.Title="準備同步";
+CATCoGDefaultCmdHeader.CreateCollobIDs.Help="準備同步";
+CATCoGDefaultCmdHeader.CreateCollobIDs.ShortHelp="準備同步";
+CATCoGDefaultCmdHeader.CreateCollobIDs.LongHelp="準備同步";
+
+CATCoGDefaultCmdHeader.CreateOdtDataId.Title="創建參考數據";
+CATCoGDefaultCmdHeader.CompareOdtDataId.Title="與參考數據比較";
+CATCoGDefaultCmdHeader.ValidateCompositesOdtId.Title="驗證 ODT 結果";
+
+CATCoGDefaultCmdHeader.CATCoSelectionId.Title="動態信息";
+CATCoGDefaultCmdHeader.CATCoSelectionId.Help="動態信息";
+CATCoGDefaultCmdHeader.CATCoSelectionId.ShortHelp="動態信息";
+CATCoGDefaultCmdHeader.CATCoSelectionId.LongHelp="動態信息";
+
+CATCoGDefaultCmdHeader.SelectPliesGroup.Title="鋪層組的動態信息";
+CATCoGDefaultCmdHeader.SelectPliesGroup.Help="鋪層組的動態信息";
+CATCoGDefaultCmdHeader.SelectPliesGroup.ShortHelp="鋪層組的動態信息";
+CATCoGDefaultCmdHeader.SelectPliesGroup.LongHelp="鋪層組的動態信息";
+
+CATCoGDefaultCmdHeader.SelectSequeence.Title="序列的動態信息";
+CATCoGDefaultCmdHeader.SelectSequeence.Help="序列的動態信息";
+CATCoGDefaultCmdHeader.SelectSequeence.ShortHelp="序列的動態信息";
+CATCoGDefaultCmdHeader.SelectSequeence.LongHelp="序列的動態信息";
+
+CATCoGDefaultCmdHeader.SelectPlies.Title="鋪層或核心的動態信息";
+CATCoGDefaultCmdHeader.SelectPlies.Help="鋪層或核心的動態信息";
+CATCoGDefaultCmdHeader.SelectPlies.ShortHelp="鋪層或核心的動態信息";
+CATCoGDefaultCmdHeader.SelectSequeence.LongHelp="鋪層或核心的動態信息";
+
+CATCoGDefaultCmdHeader.SelectCutPiece.Title="切片的動態信息";
+CATCoGDefaultCmdHeader.SelectCutPiece.Help="切片的動態信息";
+CATCoGDefaultCmdHeader.SelectCutPiece.ShortHelp="切片的動態信息";
+CATCoGDefaultCmdHeader.SelectCutPiece.LongHelp="切片的動態信息";
+
+CATCoGDefaultCmdHeader.SelectLimitContour.Title="限制輪廓的動態信息";
+CATCoGDefaultCmdHeader.SelectLimitContour.Help="限制輪廓的動態信息";
+CATCoGDefaultCmdHeader.SelectLimitContour.ShortHelp="限制輪廓的動態信息";
+CATCoGDefaultCmdHeader.SelectLimitContour.LongHelp="限制輪廓的動態信息";
+
+CATCoGDefaultCmdHeader.SelectLimitContourGroup.Title="限制輪廓組的動態信息";
+CATCoGDefaultCmdHeader.SelectLimitContourGroup.Help="限制輪廓組的動態信息";
+CATCoGDefaultCmdHeader.SelectLimitContourGroup.ShortHelp="限制輪廓組的動態信息";
+CATCoGDefaultCmdHeader.SelectLimitContourGroup.LongHelp="限制輪廓組的動態信息";
+
+CATCoGDefaultCmdHeader.SelectFlattenCurve.Title="展平的動態信息";
+CATCoGDefaultCmdHeader.SelectFlattenCurve.Help="展平的動態信息";
+CATCoGDefaultCmdHeader.SelectFlattenCurve.ShortHelp="展平的動態信息";
+CATCoGDefaultCmdHeader.SelectFlattenCurve.LongHelp="展平的動態信息";
+
+CATCoGDefaultCmdHeader.SelectProducibility.Title="可生產性的動態信息";
+CATCoGDefaultCmdHeader.SelectProducibility.Help="可生產性的動態信息";
+CATCoGDefaultCmdHeader.SelectProducibility.ShortHelp="可生產性的動態信息";
+CATCoGDefaultCmdHeader.SelectProducibility.LongHelp="可生產性的動態信息";
+
+CATCoGDefaultCmdHeader.SelectMaterialExcess.Title="材料過剩的動態信息";
+CATCoGDefaultCmdHeader.SelectMaterialExcess.Help="材料過剩的動態信息";
+CATCoGDefaultCmdHeader.SelectMaterialExcess.ShortHelp="材料過剩的動態信息";
+CATCoGDefaultCmdHeader.SelectMaterialExcess.LongHelp="材料過剩的動態信息";
+
+CATCoGDefaultCmdHeader.SelectSkinSwap.Title="蒙皮切換的動態信息";
+CATCoGDefaultCmdHeader.SelectSkinSwap.Help="蒙皮切換的動態信息";
+CATCoGDefaultCmdHeader.SelectSkinSwap.ShortHelp="蒙皮切換的動態信息";
+CATCoGDefaultCmdHeader.SelectSkinSwap.LongHelp="蒙皮切換的動態信息";
+
+CATCoGDefaultCmdHeader.CATCoPlySectionId.Title="鋪層剖面";
+CATCoGDefaultCmdHeader.CATCoPlySectionId.Help="鋪層剖面";
+CATCoGDefaultCmdHeader.CATCoPlySectionId.ShortHelp="鋪層剖面";
+CATCoGDefaultCmdHeader.CATCoPlySectionId.LongHelp="鋪層剖面\n創建鋪層的剖面";
+
+CATCoGDefaultCmdHeader.ValidatePlyUpdateId.Title="驗證鋪層更新";
+CATCoGDefaultCmdHeader.SpecViewId.Title="規格視圖";
+CATCoGDefaultCmdHeader.SpliceParallelWngId.Title="接頭平行";
+
+CATCoGDefaultCmdHeader.CheckFeatID.Title="cpd 功能檢查";
+
+// 3951 校正官方漢化 ply book
+CATCoGDefaultCmdHeader.CATCoPlyBookCmdId.Title="鋪層表";
+CATCoGDefaultCmdHeader.CATCoPlyBookCmdId.Help="鋪層表";
+CATCoGDefaultCmdHeader.CATCoPlyBookCmdId.ShortHelp="鋪層表";
+CATCoGDefaultCmdHeader.CATCoPlyBookCmdId.LongHelp="鋪層表\n在工程圖中創建鋪層表";
+
+CATCoGDefaultCmdHeader.CreateButtSpliceId.Title="對接區域";
+CATCoGDefaultCmdHeader.CreateButtSpliceId.Help="對接區域";
+CATCoGDefaultCmdHeader.CreateButtSpliceId.ShortHelp="對接區域";
+CATCoGDefaultCmdHeader.CreateButtSpliceId.LongHelp="對接區域\n創建對接區域";
+
+CATCoGDefaultCmdHeader.CreateNoSpliceId.Title="無接頭區域";
+CATCoGDefaultCmdHeader.CreateNoSpliceId.Help="無接頭區域";
+CATCoGDefaultCmdHeader.CreateNoSpliceId.ShortHelp="無接頭區域";
+CATCoGDefaultCmdHeader.CreateNoSpliceId.LongHelp="無接頭區域\n創建無接頭區域";
+
+
+
+
+// 3951 校正官方漢化 mirror
+CATCoGDefaultCmdHeader.CATCoMirrorPartCmdId.Title="鏡像展示";
+CATCoGDefaultCmdHeader.CATCoMirrorPartCmdId.Help="鏡像展示";
+CATCoGDefaultCmdHeader.CATCoMirrorPartCmdId.ShortHelp="鏡像展示";
+CATCoGDefaultCmdHeader.CATCoMirrorPartCmdId.LongHelp="鏡像展示\n創建鏡像展示";
+
+// 3951 校正官方漢化 Synchro mirror
+CATCoGDefaultCmdHeader.CATCoSynchroMirrorPartCmdId.Title="同步鏡像展示";
+CATCoGDefaultCmdHeader.CATCoSynchroMirrorPartCmdId.Help="同步鏡像展示";
+CATCoGDefaultCmdHeader.CATCoSynchroMirrorPartCmdId.ShortHelp="同步鏡像展示";
+CATCoGDefaultCmdHeader.CATCoSynchroMirrorPartCmdId.LongHelp="同步鏡像展示\n將鏡像展示與原始展示同步。";
+
+// 3951 校正官方漢化 XML export
+CATCoGDefaultCmdHeader.CATCoXMLExportCmdId.Title="XML 導出";
+CATCoGDefaultCmdHeader.CATCoXMLExportCmdId.Help="XML 導出";
+CATCoGDefaultCmdHeader.CATCoXMLExportCmdId.ShortHelp="XML 導出";
+CATCoGDefaultCmdHeader.CATCoXMLExportCmdId.LongHelp="XML 導出\n將鋪層信息導出到 XML";
+
+// 3951 校正官方漢化 activate darts
+CATCoGDefaultCmdHeader.CATCoActivateDartsID.Title="重新激活飛鏢";
+CATCoGDefaultCmdHeader.CATCoActivateDartsID.Help="重新激活飛鏢";
+CATCoGDefaultCmdHeader.CATCoActivateDartsID.ShortHelp="重新激活飛鏢";
+CATCoGDefaultCmdHeader.CATCoActivateDartsID.LongHelp="重新激活飛鏢";
+
+// 3951 校正官方漢化 deactivate darts
+CATCoGDefaultCmdHeader.CATCoDeActivateDartsID.Title="取消激活飛鏢";
+CATCoGDefaultCmdHeader.CATCoDeActivateDartsID.Help="取消激活飛鏢";
+CATCoGDefaultCmdHeader.CATCoDeActivateDartsID.ShortHelp="取消激活飛鏢";
+CATCoGDefaultCmdHeader.CATCoDeActivateDartsID.LongHelp="取消激活飛鏢";
+
+// 3951 校正官方漢化 Remove darts
+CATCoGDefaultCmdHeader.CATCoRemoveDartsCmdID.Title="移除飛鏢";
+CATCoGDefaultCmdHeader.CATCoRemoveDartsCmdID.Help="移除飛鏢";
+CATCoGDefaultCmdHeader.CATCoRemoveDartsCmdID.ShortHelp="移除飛鏢";
+CATCoGDefaultCmdHeader.CATCoRemoveDartsCmdID.LongHelp="移除飛鏢";
+
+// 3951 校正官方漢化 Remove dart
+CATCoGDefaultCmdHeader.CATCoRemoveDartID.Title="移除飛鏢";
+CATCoGDefaultCmdHeader.CATCoRemoveDartID.Help="移除飛鏢";
+CATCoGDefaultCmdHeader.CATCoRemoveDartID.ShortHelp="移除飛鏢";
+CATCoGDefaultCmdHeader.CATCoRemoveDartID.LongHelp="移除飛鏢";
+
+// 3951 校正官方漢化 New Top Surface from zones
+CATCoGDefaultCmdHeader.TopSurfaceFromZonesId.Title="從區域生成新的上表面（測試）";
+CATCoGDefaultCmdHeader.TopSurfaceFromZonesId.Help="從區域生成新的上表面（測試）";
+CATCoGDefaultCmdHeader.TopSurfaceFromZonesId.ShortHelp="從區域生成新的上表面（測試）";
+CATCoGDefaultCmdHeader.TopSurfaceFromZonesId.LongHelp="從區域生成新的上表面（測試）";
+
+// 3951 校正官方漢化 New Top Surface from plies
+CATCoGDefaultCmdHeader.TopSurfaceFromPliesId.Title="從區域生成新的上表面（測試）";
+CATCoGDefaultCmdHeader.TopSurfaceFromPliesId.Help="從區域生成新的上表面（測試）";
+CATCoGDefaultCmdHeader.TopSurfaceFromPliesId.ShortHelp="從區域生成新的上表面（測試）";
+CATCoGDefaultCmdHeader.TopSurfaceFromPliesId.LongHelp="從區域生成新的上表面（測試）";
+// 3951 校正官方漢化Activate CompMaterial
+CATCoGDefaultCmdHeader.CATCoActivateCompMaterialID.Title="激活復合材料";
+CATCoGDefaultCmdHeader.CATCoActivateCompMaterialID.Help="激活復合材料";
+CATCoGDefaultCmdHeader.CATCoActivateCompMaterialID.ShortHelp="激活復合材料";
+CATCoGDefaultCmdHeader.CATCoActivateCompMaterialID.LongHelp="激活復合材料";
+
+// 3951 校正官方漢化DeActivate CompMaterial
+CATCoGDefaultCmdHeader.CATCoDeActivateCompMaterialID.Title="取消激活復合材料";
+CATCoGDefaultCmdHeader.CATCoDeActivateCompMaterialID.Help="取消激活復合材料";
+CATCoGDefaultCmdHeader.CATCoDeActivateCompMaterialID.ShortHelp="取消激活復合材料";
+CATCoGDefaultCmdHeader.CATCoDeActivateCompMaterialID.LongHelp="取消激活復合材料";
+
+// 3951 校正官方漢化Isolate CompMaterial
+CATCoGDefaultCmdHeader.CATCoIsolateCompMaterialsID.Title="絕緣復合材料";
+CATCoGDefaultCmdHeader.CATCoIsolateCompMaterialsID.Help="絕緣復合材料";
+CATCoGDefaultCmdHeader.CATCoIsolateCompMaterialsID.ShortHelp="絕緣復合材料";
+CATCoGDefaultCmdHeader.CATCoIsolateCompMaterialsID.LongHelp="絕緣復合材料";
+// 3951 校正官方漢化 Grid definition (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CATCoGridDefinitionId.Title="網格";
+CATCoGDefaultCmdHeader.CATCoGridDefinitionId.Help="網格";
+CATCoGDefaultCmdHeader.CATCoGridDefinitionId.ShortHelp="網格";
+CATCoGDefaultCmdHeader.CATCoGridDefinitionId.LongHelp="網格\n在面板上定義網格。";
+
+CATCoGDefaultCmdHeader.CATCoGridPanelDefinitionHdr.Title="網格面板";
+CATCoGDefaultCmdHeader.CATCoGridPanelDefinitionHdr.Help="網格面板";
+CATCoGDefaultCmdHeader.CATCoGridPanelDefinitionHdr.ShortHelp="網格面板";
+CATCoGDefaultCmdHeader.CATCoGridPanelDefinitionHdr.LongHelp="網格面板\n定義網格面板。";
+
+CATCoGDefaultCmdHeader.CATCoGridRampSupportDefinitionId.Title="網格斜坡支持面";
+CATCoGDefaultCmdHeader.CATCoGridRampSupportDefinitionId.Help="網格斜坡支持面";
+CATCoGDefaultCmdHeader.CATCoGridRampSupportDefinitionId.ShortHelp="網格斜坡支持面";
+CATCoGDefaultCmdHeader.CATCoGridRampSupportDefinitionId.LongHelp="斜坡支持面\n定義網格斜坡支持面。";
+
+CATCoGDefaultCmdHeader.CATCoGridRampSupportRemUselessId.Title="移除無用的斜坡支持面";
+CATCoGDefaultCmdHeader.CATCoGridRampSupportRemUselessId.Help="移除無用的斜坡支持面";
+CATCoGDefaultCmdHeader.CATCoGridRampSupportRemUselessId.ShortHelp="移除無用的斜坡支持面";
+CATCoGDefaultCmdHeader.CATCoGridRampSupportRemUselessId.LongHelp="移除無用的斜坡支持面\n刪除不再使用的斜坡支持面";
+
+CATCoGDefaultCmdHeader.CATCoGridVirtualStackingMngtId.Title="虛擬堆疊";
+CATCoGDefaultCmdHeader.CATCoGridVirtualStackingMngtId.Help="虛擬堆疊";
+CATCoGDefaultCmdHeader.CATCoGridVirtualStackingMngtId.ShortHelp="虛擬堆疊";
+CATCoGDefaultCmdHeader.CATCoGridVirtualStackingMngtId.LongHelp="虛擬堆疊\n管理虛擬堆疊";
+
+CATCoGDefaultCmdHeader.CATCoGridVSMDisplay3DInfoCmdId.Title="顯示/隱藏 3D 顯示信息";
+CATCoGDefaultCmdHeader.CATCoGridVSMDisplay3DInfoCmdId.Help="顯示/隱藏 3D 顯示信息";
+CATCoGDefaultCmdHeader.CATCoGridVSMDisplay3DInfoCmdId.ShortHelp="顯示/隱藏 3D 顯示信息";
+CATCoGDefaultCmdHeader.CATCoGridVSMDisplay3DInfoCmdId.LongHelp="顯示/隱藏 3D 顯示信息";
+
+CATCoGDefaultCmdHeader.CATCoGridVSMDisplay3DOptionsCmdId.Title="顯示 3D 選項...";
+CATCoGDefaultCmdHeader.CATCoGridVSMDisplay3DOptionsCmdId.Help="顯示 3D 選項...";
+CATCoGDefaultCmdHeader.CATCoGridVSMDisplay3DOptionsCmdId.ShortHelp="顯示 3D 選項...";
+CATCoGDefaultCmdHeader.CATCoGridVSMDisplay3DOptionsCmdId.LongHelp="顯示 3D 選項...";
+
+CATCoGDefaultCmdHeader.CATCoStaggeringSectionId.Title="局部衰減";
+CATCoGDefaultCmdHeader.CATCoStaggeringSectionId.Help="局部衰減";
+CATCoGDefaultCmdHeader.CATCoStaggeringSectionId.ShortHelp="局部衰減";
+CATCoGDefaultCmdHeader.CATCoStaggeringSectionId.LongHelp="局部衰減\n管理有交錯剖面的局部衰減。";
+
+CATCoGDefaultCmdHeader.CATCoGridAngleCutInitDefinitionId.Title="網格鋪層尖角初始化";
+CATCoGDefaultCmdHeader.CATCoGridAngleCutInitDefinitionId.Help="網格鋪層尖角初始化。";
+CATCoGDefaultCmdHeader.CATCoGridAngleCutInitDefinitionId.ShortHelp="網格鋪層尖角初始化";
+CATCoGDefaultCmdHeader.CATCoGridAngleCutInitDefinitionId.LongHelp="網格鋪層尖角初始化\n定義網格鋪層尖角初始化。";
+
+// 3951 校正官方漢化CATCoGDefaultCmdHeader.CATCoGridAngleCutDefinitionId.Title = "Grid Angle Cut";
+// 3951 校正官方漢化CATCoGDefaultCmdHeader.CATCoGridAngleCutDefinitionId.Help = "Grid Angle Cut.";
+// 3951 校正官方漢化CATCoGDefaultCmdHeader.CATCoGridAngleCutDefinitionId.ShortHelp = "Grid Angle Cut";
+// 3951 校正官方漢化CATCoGDefaultCmdHeader.CATCoGridAngleCutDefinitionId.LongHelp = "Grid Angle Cut\nDefines Grid Angle Cut.";
+
+CATCoGDefaultCmdHeader.CATCoGridAngleCutDefinition2Id.Title="網格鋪層尖角";
+CATCoGDefaultCmdHeader.CATCoGridAngleCutDefinition2Id.Help="網格鋪層尖角";
+CATCoGDefaultCmdHeader.CATCoGridAngleCutDefinition2Id.ShortHelp="網格鋪層尖角";
+CATCoGDefaultCmdHeader.CATCoGridAngleCutDefinition2Id.LongHelp="網格鋪層尖角\n定義網格鋪層尖角。";
+
+// 3951 校正官方漢化 Reroute ply contour (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CATCoGridReroutePlyContourId.Title="重設鋪層輪廓";
+CATCoGDefaultCmdHeader.CATCoGridReroutePlyContourId.Help="重設鋪層輪廓";
+CATCoGDefaultCmdHeader.CATCoGridReroutePlyContourId.ShortHelp="重設鋪層輪廓";
+CATCoGDefaultCmdHeader.CATCoGridReroutePlyContourId.LongHelp="重設鋪層輪廓\n重設鋪層輪廓并拓展更改到相似形狀鋪層上";
+
+// 3951 校正官方漢化 Swap Edge (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CATCoGridSwapEdgeHdr.Title="交換邊線";
+CATCoGDefaultCmdHeader.CATCoGridSwapEdgeHdr.Help="交換邊線";
+CATCoGDefaultCmdHeader.CATCoGridSwapEdgeHdr.ShortHelp="交換邊線";
+CATCoGDefaultCmdHeader.CATCoGridSwapEdgeHdr.LongHelp="交換邊線\n交換輪廓邊線";
+
+CATCoGDefaultCmdHeader.CATCoGridRampSupportShowLastCurveId.Title="顯示斜坡支持面底部斜率曲線";
+CATCoGDefaultCmdHeader.CATCoGridRampSupportShowLastCurveId.Help="顯示斜坡支持面底部斜率曲線。";
+CATCoGDefaultCmdHeader.CATCoGridRampSupportShowLastCurveId.ShortHelp="顯示斜坡支持面底部斜率曲線。";
+CATCoGDefaultCmdHeader.CATCoGridRampSupportShowLastCurveId.LongHelp="顯示斜坡支持面底部斜率曲線。";
+
+CATCoGDefaultCmdHeader.CATCoGridRampSupportHideLastCurveId.Title="隱藏斜坡支持面底部斜率曲線";
+CATCoGDefaultCmdHeader.CATCoGridRampSupportHideLastCurveId.Help="隱藏斜坡支持面底部斜率曲線。";
+CATCoGDefaultCmdHeader.CATCoGridRampSupportHideLastCurveId.ShortHelp="隱藏斜坡支持面底部斜率曲線。";
+CATCoGDefaultCmdHeader.CATCoGridRampSupportHideLastCurveId.LongHelp="隱藏斜坡支持面底部斜率曲線。";
+
+CATCoGDefaultCmdHeader.CATCoGridPliesGenerationId.Title="來自虛擬堆疊的鋪層";
+CATCoGDefaultCmdHeader.CATCoGridPliesGenerationId.Help="來自虛擬堆疊的鋪層";
+CATCoGDefaultCmdHeader.CATCoGridPliesGenerationId.ShortHelp="來自虛擬堆疊的鋪層";
+CATCoGDefaultCmdHeader.CATCoGridPliesGenerationId.LongHelp="來自虛擬堆疊的鋪層\n通過虛擬堆疊定義生成鋪層。";
+
+CATCoGDefaultCmdHeader.CATCoPliesSymmetryId.Title="對稱鋪層";
+CATCoGDefaultCmdHeader.CATCoPliesSymmetryId.Help="創建對稱鋪層";
+CATCoGDefaultCmdHeader.CATCoPliesSymmetryId.ShortHelp="對稱鋪層";
+CATCoGDefaultCmdHeader.CATCoPliesSymmetryId.LongHelp="對稱鋪層\n創建對稱鋪層";
+
+// 3951 校正官方漢化 Merge plies (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CATCoGridMergePliesId.Title="合并鋪層";
+CATCoGDefaultCmdHeader.CATCoGridMergePliesId.Help="合并鋪層";
+CATCoGDefaultCmdHeader.CATCoGridMergePliesId.ShortHelp="合并鋪層";
+CATCoGDefaultCmdHeader.CATCoGridMergePliesId.LongHelp="合并鋪層\n合并具有相同材料和方向的鋪層";
+
+// 3951 校正官方漢化 Material addition for manufacturing (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CATCoManufMaterialAdditionId.Title="材料添加";
+CATCoGDefaultCmdHeader.CATCoManufMaterialAdditionId.Help="材料添加";
+CATCoGDefaultCmdHeader.CATCoManufMaterialAdditionId.ShortHelp="材料添加";
+CATCoGDefaultCmdHeader.CATCoManufMaterialAdditionId.LongHelp="材料添加\n將材料添加到鋪層以便用于生產目的";
+
+// 3951 校正官方漢化 Material addition analysis for manufacturing (Airbus/HFR18SP2)
+CATCoGDefaultCmdHeader.CATCoManufMaterialAdditionGlobalId.Title="材料添加向導";
+CATCoGDefaultCmdHeader.CATCoManufMaterialAdditionGlobalId.Help="材料添加向導";
+CATCoGDefaultCmdHeader.CATCoManufMaterialAdditionGlobalId.ShortHelp="材料添加向導";
+CATCoGDefaultCmdHeader.CATCoManufMaterialAdditionGlobalId.LongHelp="材料添加向導\n分析需要添加材料的位置并給出自動生成材料添加的建議";
+
+// 3951 校正官方漢化 Material addition analysis for manufacturing (Airbus/HFR18SP2)
+CATCoGDefaultCmdHeader.CATCoGridAngleCutDefinitionGlobalId.Title="網格鋪層尖角向導";
+CATCoGDefaultCmdHeader.CATCoGridAngleCutDefinitionGlobalId.Help="網格鋪層尖角向導";
+CATCoGDefaultCmdHeader.CATCoGridAngleCutDefinitionGlobalId.ShortHelp="網格鋪層尖角向導";
+CATCoGDefaultCmdHeader.CATCoGridAngleCutDefinitionGlobalId.LongHelp="網格鋪層尖角向導\n分析需要添加鋪層尖角的位置并允許交互式地生成它們";
+
+// 3951 校正官方漢化== Standard Contour (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CATCoStdContourId.Title="輪廓";
+CATCoGDefaultCmdHeader.CATCoStdContourId.Help="輪廓";
+CATCoGDefaultCmdHeader.CATCoStdContourId.ShortHelp="輪廓";
+CATCoGDefaultCmdHeader.CATCoStdContourId.LongHelp="輪廓\n創建獨立輪廓";
+
+// 3951 校正官方漢化== No Drop Off Area (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CATCoNoDropOffAreaId.Title="無衰減區域";
+CATCoGDefaultCmdHeader.CATCoNoDropOffAreaId.Help="無衰減區域。";
+CATCoGDefaultCmdHeader.CATCoNoDropOffAreaId.ShortHelp="無衰減區域";
+CATCoGDefaultCmdHeader.CATCoNoDropOffAreaId.LongHelp="無衰減區域\n定義無衰減區域";
+
+// 3951 校正官方漢化== Iso-thickness Area Group (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CATCoIsoAreaGroupId.Title="等厚度區域";
+CATCoGDefaultCmdHeader.CATCoIsoAreaGroupId.Help="等厚度區域";
+CATCoGDefaultCmdHeader.CATCoIsoAreaGroupId.ShortHelp="等厚度區域";
+CATCoGDefaultCmdHeader.CATCoIsoAreaGroupId.LongHelp="等厚度區域\n創建等厚度區域";
+
+// 3951 校正官方漢化== Junction Iso-thickness Area (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CATCoJunctionIsoAreaId.Title="等厚度連接線";
+CATCoGDefaultCmdHeader.CATCoJunctionIsoAreaId.Help="等厚度連接線";
+CATCoGDefaultCmdHeader.CATCoJunctionIsoAreaId.ShortHelp="等厚度連接線";
+CATCoGDefaultCmdHeader.CATCoJunctionIsoAreaId.LongHelp="等厚度連接線\n在等厚度區域創建連接線。";
+
+// 3951 校正官方漢化== Junction Iso-thickness Area (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CATCoJunctionIsoAreaWizardId.Title="等厚度連接向導";
+CATCoGDefaultCmdHeader.CATCoJunctionIsoAreaWizardId.Help="等厚度連接向導";
+CATCoGDefaultCmdHeader.CATCoJunctionIsoAreaWizardId.ShortHelp="等厚度連接向導";
+CATCoGDefaultCmdHeader.CATCoJunctionIsoAreaWizardId.LongHelp="等厚度連接向導\n為在等厚度區域創建連接線提供輔助。";
+
+// 3951 校正官方漢化== Iso-thickness Area Solid (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CATCoIsoAreaSolidId.Title="來自等厚度區域的實體";
+CATCoGDefaultCmdHeader.CATCoIsoAreaSolidId.Help="來自等厚度區域的實體";
+CATCoGDefaultCmdHeader.CATCoIsoAreaSolidId.ShortHelp="來自等厚度區域的實體";
+CATCoGDefaultCmdHeader.CATCoIsoAreaSolidId.LongHelp="來自等厚度區域的實體\n從等厚度區域創建實體";
+
+// 3951 校正官方漢化== Edit Ramp Support from aggregated geometry (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CATCoGridRampSupportEditFromGeometryId.Title="編輯斜坡支持面";
+CATCoGDefaultCmdHeader.CATCoGridRampSupportEditFromGeometryId.Help="編輯斜坡支持面";
+CATCoGDefaultCmdHeader.CATCoGridRampSupportEditFromGeometryId.ShortHelp="編輯斜坡支持面";
+CATCoGDefaultCmdHeader.CATCoGridRampSupportEditFromGeometryId.LongHelp="編輯斜坡支持面";
+
+// 3951 校正官方漢化 Synchronize stacking(Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CATCoGridSynchronizeStackingId.Title="同步堆疊";
+CATCoGDefaultCmdHeader.CATCoGridSynchronizeStackingId.Help="同步堆疊";
+CATCoGDefaultCmdHeader.CATCoGridSynchronizeStackingId.ShortHelp="同步堆疊";
+CATCoGDefaultCmdHeader.CATCoGridSynchronizeStackingId.LongHelp="同步堆疊\n同步一組鋪層中的堆疊與原始虛擬堆疊";
+
+// 3951 校正官方漢化 Limit plies from panel (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.CATCoGridLimitPliesFromPanelId.Title="限定/取消限定鋪層";
+CATCoGDefaultCmdHeader.CATCoGridLimitPliesFromPanelId.Help="通過面板限定來限定鋪層";
+CATCoGDefaultCmdHeader.CATCoGridLimitPliesFromPanelId.ShortHelp="限定/取消限定鋪層";
+CATCoGDefaultCmdHeader.CATCoGridLimitPliesFromPanelId.LongHelp="限定/取消限定鋪層\n通過面板限定來限定/取消限定鋪層";
+
+// 3951 校正官方漢化 Upgrade contours (Airbus/HFR16SP4)
+CATCoGDefaultCmdHeader.UpgradeStdContoursId.Title="升級輪廓";
+
+
+CATCoGDefaultCmdHeader.CreateUnfoldEntityId.Title="展開復合實體";
+CATCoGDefaultCmdHeader.CreateUnfoldEntityId.Help="展開復合實體";
+CATCoGDefaultCmdHeader.CreateUnfoldEntityId.ShortHelp="展開復合實體";
+CATCoGDefaultCmdHeader.CreateUnfoldEntityId.LongHelp="展開復合實體\n使用展開功能展平復合實體";
+
+CATCoGDefaultCmdHeader.CATCoStaggerOriginId.Title="交錯原點";
+CATCoGDefaultCmdHeader.CATCoStaggerOriginId.Help="交錯原點";
+CATCoGDefaultCmdHeader.CATCoStaggerOriginId.ShortHelp="交錯原點";
+CATCoGDefaultCmdHeader.CATCoStaggerOriginId.LongHelp="交錯原點\n為每一鋪層定義交錯原點";
+
+CATCoGDefaultCmdHeader.CATCwbMergeStackingId.Title="合并堆疊";
+CATCoGDefaultCmdHeader.CATCwbMergeStackingId.Help="合并堆疊";
+CATCoGDefaultCmdHeader.CATCwbMergeStackingId.ShortHelp="合并堆疊";
+CATCoGDefaultCmdHeader.CATCwbMergeStackingId.LongHelp="合并堆疊\n合并來自不同復合零件的堆疊";
+
+// 3951 校正官方漢化 Solid Creation From Grid
+CATCoGDefaultCmdHeader.CATCoSolidFromGridId.Title="來自網格的實體";
+CATCoGDefaultCmdHeader.CATCoSolidFromGridId.Help="來自網格的實體";
+CATCoGDefaultCmdHeader.CATCoSolidFromGridId.ShortHelp="來自網格的實體";
+CATCoGDefaultCmdHeader.CATCoSolidFromGridId.LongHelp="來自網格的實體";
+
+CATCoGDefaultCmdHeader.CreateGapOffsetId.Title="縫隙偏移";
+CATCoGDefaultCmdHeader.CreateGapOffsetId.Help="縫隙偏移";
+CATCoGDefaultCmdHeader.CreateGapOffsetId.ShortHelp="縫隙偏移";
+CATCoGDefaultCmdHeader.CreateGapOffsetId.LongHelp="縫隙偏移\n在接頭區域創建縫隙偏移";
+
+CATCoGDefaultCmdHeader.CreateUnfoldEntityId.Title="展開復合實體";
+CATCoGDefaultCmdHeader.CreateUnfoldEntityId.Help="展開復合實體";
+CATCoGDefaultCmdHeader.CreateUnfoldEntityId.ShortHelp="展開復合實體";
+CATCoGDefaultCmdHeader.CreateUnfoldEntityId.LongHelp="展開復合實體\n展開鋪層以獲得展平幾何";
+
+CATCoGDefaultCmdHeader.FromGSDUnfoldID.Title="展開";
+CATCoGDefaultCmdHeader.FromGSDUnfoldID.Help="展開";
+CATCoGDefaultCmdHeader.FromGSDUnfoldID.ShortHelp="展開";
+CATCoGDefaultCmdHeader.FromGSDUnfoldID.LongHelp="展開\n展開曲面";
+
+CATCoGDefaultCmdHeader.FromGSDTransferID.Title="轉換";
+CATCoGDefaultCmdHeader.FromGSDTransferID.Help="轉換";
+CATCoGDefaultCmdHeader.FromGSDTransferID.ShortHelp="轉換";
+CATCoGDefaultCmdHeader.FromGSDTransferID.LongHelp="轉換\n轉換幾何圖形";
+
+CATCoGDefaultCmdHeader.RemoveGapOffsetContour.Title="移除縫隙偏移";
+CATCoGDefaultCmdHeader.RemoveGapOffsetContour.Help="移除縫隙偏移";
+CATCoGDefaultCmdHeader.RemoveGapOffsetContour.ShortHelp="移除縫隙偏移";
+CATCoGDefaultCmdHeader.RemoveGapOffsetContour.LongHelp="移除縫隙偏移";
+
+CATCoGDefaultCmdHeader.CATCusAddVariableCoreCommandId.Title="升級實體或頂部曲面";
+CATCoGDefaultCmdHeader.CATCusAddVariableCoreCommandId.Help="升級實體或頂部曲面";
+CATCoGDefaultCmdHeader.CATCusAddVariableCoreCommandId.ShortHelp="升級實體或頂部曲面";
+CATCoGDefaultCmdHeader.CATCusAddVariableCoreCommandId.LongHelp="升級實體或頂部曲面\n使用在設計中找到的可變核心定義，升級實體或頂部曲面。";
+
+CATCoGDefaultCmdHeader.CATCoDelGapOffsetContexuallyCmdId.Title="移除所有縫隙偏移";
+CATCoGDefaultCmdHeader.CATCoDelGapOffsetContexuallyCmdId.Help="移除所有縫隙偏移";
+CATCoGDefaultCmdHeader.CATCoDelGapOffsetContexuallyCmdId.ShortHelp="移除所有縫隙偏移";
+CATCoGDefaultCmdHeader.CATCoDelGapOffsetContexuallyCmdId.LongHelp="移除所有縫隙偏移\n從當前堆疊中移除所有縫隙偏移";
+
+CATCoGDefaultCmdHeader.CATCoImportExportId.Title="導入/導出設計";
+CATCoGDefaultCmdHeader.CATCoImportExportId.Help="導入/導出設計";
+CATCoGDefaultCmdHeader.CATCoImportExportId.ShortHelp="導入/導出設計";
+CATCoGDefaultCmdHeader.CATCoImportExportId.LongHelp="導入/導出設計";
+
+CATCoDefaultCmdHeader.CATCoMigrateRampSupportsId.Title="遷移斜坡支持面";
+CATCoDefaultCmdHeader.CATCoMigrateRampSupportsId.Help="遷移斜坡支持面";
+CATCoDefaultCmdHeader.CATCoMigrateRampSupportsId.ShortHelp="遷移斜坡支持面";
+CATCoDefaultCmdHeader.CATCoMigrateRampSupportsId.LongHelp="遷移斜坡支持面";
+
+// 3951 校正官方漢化 Rounded Corner Contour
+CATCoDefaultCmdHeader.CornerMgtId.Title="圓角輪廓";
+CATCoDefaultCmdHeader.CornerMgtId.Help="圓角輪廓";
+CATCoDefaultCmdHeader.CornerMgtId.ShortHelp="圓角輪廓";
+CATCoDefaultCmdHeader.CornerMgtId.LongHelp="圓角輪廓";

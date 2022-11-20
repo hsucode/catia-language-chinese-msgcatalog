@@ -1,0 +1,233 @@
+// 3951 校正官方漢化==============================================================================================
+// 3951 校正官方漢化 CATGVCParamCompareDlg Dialog Box ressources (boite de parametres)
+// 3951 校正官方漢化==============================================================================================
+CATGVCParamCompareDlgTitle="比較";
+
+_pMainFrame.Title="主選項";
+
+_pDistanceLabel.Title="距離： ";
+_pMainFrame._pDistanceAndMethodFrame._pDistanceLabel.LongHelp="設置距離，在此距離下兩個面或區域被視作相同。";
+
+_pMainFrame._pDistanceAndMethodFrame._pMethodLabel.Title="方法： ";
+_pMethodCombo.Value0="快速";
+_pMethodCombo.Value1="詳細";
+_pMainFrame._pDistanceAndMethodFrame._pMethodLabel.LongHelp="讓您選擇比較方法：\n- 快速：檢測相同、不同或嵌入的面，\n- 詳細：檢測相同的區域，或已添加或移除的區域。";
+
+CheckVisu_0.TitleQuick="相同面";
+CheckVisu_0.LongHelpQuick="顯示找到的相同面的數目，并讓您選擇其可視化顏色。";
+CheckVisu_1.TitleQuick="不同面（比較模型內）";
+CheckVisu_1.LongHelpQuick="顯示在比較模型內找到的不同面的數目，并讓您選擇其可視化顏色。";
+CheckVisu_2.TitleQuick="不同面（原始模型內）";
+CheckVisu_2.LongHelpQuick="顯示在原始模型內找到的不同面的數目，并讓您選擇其可視化顏色。";
+CheckVisu_0.TitleDetailed="相同區域";
+CheckVisu_0.LongHelpDetailed="顯示找到的相同區域的數目，并讓您選擇其可視化顏色。";
+CheckVisu_1.TitleDetailed="已添加的區域";
+CheckVisu_1.LongHelpDetailed="顯示已添加的區域數，并讓您選擇其可視化顏色。\n添加的區域對應于在比較模型內部檢測到的不同區域。";
+CheckVisu_2.TitleDetailed="已移除的區域";
+CheckVisu_2.LongHelpDetailed="顯示已移除的區域數，并讓您選擇其可視化顏色。\n移除的區域對應于在原始模型內部檢測到的不同區域。";
+
+NbAreaLabelVisu.TitleQuick=" 面 ";
+NbAreaLabelVisu.TitleDetailed=" 區域 ";
+
+_pMainFrame._pWindowLayoutFrame._pWindowLayoutLabel.Title="窗口布局： ";
+_pMainFrame._pWindowLayoutFrame._pWindowLayoutLabel.LongHelp="讓您選擇預覽時使用的比較窗口布局（垂直或水平）。";
+_pMainFrame._pWindowLayoutFrame._pVerticalLayoutRadioBt.Title="垂直窗口";
+_pMainFrame._pWindowLayoutFrame._pVerticalLayoutRadioBt.LongHelp="將比較窗口的方向定義為垂直。比較模型將在右部的窗口中。";
+_pMainFrame._pWindowLayoutFrame._pHorizontalLayoutRadioBt.Title="水平窗口";
+_pMainFrame._pWindowLayoutFrame._pHorizontalLayoutRadioBt.LongHelp="將比較窗口的方向定義為水平。比較模型將在下部的窗口中。";
+
+_pMainFrame._pMergePushButton.Title=" 合并 ";
+_pMainFrame._pMergePushButton.LongHelp="啟動一個合并工具以記錄找到的不同項。";
+
+_pMoreAndLessPushButton.TitleMore="更少 <<";
+_pMoreAndLessPushButton.TitleLess="更多 >>";
+
+_pMoreFrame._pDetailedOptionFrame.Title="詳細選項";
+
+_pMoreFrame._pDetailedOptionFrame._pMeshLabel.Title=" 網格： ";
+_pMeshCombo.Value0="大";
+_pMeshCombo.Value1="中等";
+_pMeshCombo.Value2="精度";
+_pMeshCombo.Value3="用戶參數";
+_pMoreFrame._pDetailedOptionFrame._pMeshLabel.LongHelp="讓您決定如何構建模型網格。\n大、中等和精度為自動方法，由命令控制。\n用戶參數讓您定義弦高的初始值和比較網格的步幅。";
+
+_pSagLabel.Title=" 弦高： ";
+_pMoreFrame._pDetailedOptionFrame._pSagLabel.LongHelp="當用曲率構建模型網格時，會應用一個弦錯誤。\n值越小，比較質量越高。但它比較耗時。";
+
+_pStepLabel.Title=" 步幅： ";
+_pMoreFrame._pDetailedOptionFrame._pStepLabel.LongHelp="定義比較網格的邊線的最大長度。\n值越小，比較質量越高。但它比較耗時。";
+
+_pMoreFrame._pDetailedOptionFrame._pTopologicalCmpCheck.Title="拓撲比較";
+_pMoreFrame._pDetailedOptionFrame._pTopologicalCmpCheck.LongHelp="讓您決定是否希望檢測拓撲不同項。";
+
+_pMoreFrame._pQuickOptionFrame.Title="快速選項";
+
+_pMoreFrame._pQuickOptionFrame.QuickCheckVisu_0.Title="嵌入面（比較模型內）";
+_pMoreFrame._pQuickOptionFrame.QuickCheckVisu_0.LongHelp="顯示在比較模型內找到的嵌入面的數目，并讓您選擇其可視化顏色。";
+_pMoreFrame._pQuickOptionFrame.QuickCheckVisu_1.Title="嵌入面（原始模型內）";
+_pMoreFrame._pQuickOptionFrame.QuickCheckVisu_1.LongHelp="顯示在原始模型內找到的嵌入面的數目，并讓您選擇其可視化顏色。";
+
+// 3951 校正官方漢化==============================================================================================
+// 3951 校正官方漢化 CATGVCTrfCompareDlg Dialog Box ressources (boite de merge)
+// 3951 校正官方漢化==============================================================================================
+
+MergeTitle="合并";
+
+NomTrf_0_0="相同_1";
+NomTrf_0_1="不同_比較_1";
+NomTrf_0_2="不同_原始_1";
+NomTrf_0_3="嵌入_比較_1";
+NomTrf_0_4="嵌入_原始_1";
+
+NomTrf_0_5="相同_1";
+NomTrf_0_6="不同_比較_1";
+NomTrf_0_7="不同_原始_1";
+NomTrf_0_8="嵌入_比較_1";
+NomTrf_0_9="嵌入_原始_1";
+
+NomTrf_1_0="相同_1";
+NomTrf_1_1="已添加_1";
+NomTrf_1_2="已移除_1";
+
+NomTrf_1_3="相同_1";
+NomTrf_1_4="已添加_1";
+NomTrf_1_5="已移除_1";
+
+
+FrmRootMerge.FrmRooty0.Mode_Trf.Title="合并模式： ";
+FrmRootMerge.FrmRooty0.CheckLigne_0.Title="幾何圖形集";
+// 3951 校正官方漢化FrmRootMerge.FrmRooty0.CheckLigne_0.LongHelp = "Copies faces from original model inside dedicated Geometrical Set.\n this option is only relevant if the destination representation is set to Original."; 
+FrmRootMerge.FrmRooty0.CheckLigne_0.LongHelp="從專用幾何圖形集內部的原始模型復制面。";
+FrmRootMerge.FrmRooty0.CheckLigne_1.Title="選擇集：";
+FrmRootMerge.FrmRooty0.CheckLigne_1.LongHelp="將與區域關聯的面或數據放置到給定的選擇集內。";
+FrmRootMerge.FrmRooty0.CheckLigne_2.Title="顏色";
+FrmRootMerge.FrmRooty0.CheckLigne_2.LongHelp="將與區域關聯的面或數據的顏色更改為給定的顏色。";
+FrmRootMerge.FrmRooty0.CheckLigne_3.Title="全名：";
+FrmRootMerge.FrmRooty0.CheckLigne_3.LongHelp="用輸入特征的原始名定義復制面的名稱。";
+
+// 3951 校正官方漢化 === Tab1 ====
+FrmRootMerge.TabContainer.Tab_1.Title="幾何圖形集";
+
+FrmRootMerge.TabContainer.Tab_1.Copy_1_1.Title="復制   ";
+
+FrmRootMerge.TabContainer.Tab_1.Into_1_1.Title="到：  ";
+
+// 3951 校正官方漢化 Tab1 cas CQG
+FrmRootMerge.TabContainer.Tab_1.Check_01_1_1.Title="相同面";
+FrmRootMerge.TabContainer.Tab_1.Check_01_1_1.LongHelp="將相同面復制到給定的幾何圖形集內。";
+
+FrmRootMerge.TabContainer.Tab_1.Check_01_2_2.Title="不同面（比較模型內）";
+FrmRootMerge.TabContainer.Tab_1.Check_01_2_2.LongHelp="從比較模型將不同面復制到給定的幾何圖形集內。";
+
+FrmRootMerge.TabContainer.Tab_1.Check_01_3_3.Title="不同面（原始模型內）";
+FrmRootMerge.TabContainer.Tab_1.Check_01_3_3.LongHelp="從原始模型將不同面復制到給定的幾何圖形集內。";
+
+FrmRootMerge.TabContainer.Tab_1.Check_01_4_4.Title="嵌入面（比較模型內）";
+FrmRootMerge.TabContainer.Tab_1.Check_01_4_4.LongHelp="從比較模型將嵌入面復制到給定的幾何圖形集內。";
+
+FrmRootMerge.TabContainer.Tab_1.Check_01_5_5.Title="嵌入面（原始模型內）";
+FrmRootMerge.TabContainer.Tab_1.Check_01_5_5.LongHelp="從原始模型將嵌入面復制到給定的幾何圖形集內。";
+
+// 3951 校正官方漢化 Tab1 cas GVC
+
+FrmRootMerge.TabContainer.Tab_1.Check_11_1_1.Title="相同區域";
+FrmRootMerge.TabContainer.Tab_1.Check_11_1_1.LongHelp="將相同區域和關聯數據（面）復制到給定的幾何圖形集內。";
+
+FrmRootMerge.TabContainer.Tab_1.Check_11_2_2.Title="已添加的區域";
+FrmRootMerge.TabContainer.Tab_1.Check_11_2_2.LongHelp="將添加的區域和關聯數據（面和曲線）復制到給定的幾何圖形集內。";
+
+FrmRootMerge.TabContainer.Tab_1.Check_11_3_3.Title="已移除的區域";
+FrmRootMerge.TabContainer.Tab_1.Check_11_3_3.LongHelp="將移除的區域和關聯數據（面和曲線）復制到給定的幾何圖形集內。";
+
+// 3951 校正官方漢化 === Tab2 ====
+
+FrmRootMerge.TabContainer.Tab_2.Title="選擇集：";
+
+FrmRootMerge.TabContainer.Tab_2.Copy_2_1.Title="放置   ";
+
+FrmRootMerge.TabContainer.Tab_2.Into_2_1.Title="到：  ";
+
+FrmRootMerge.TabContainer.Tab_2.Check_02_1_1.Title="相同面";
+FrmRootMerge.TabContainer.Tab_2.Check_02_1_1.LongHelp="將相同面放置到給定的選擇集內。";
+
+FrmRootMerge.TabContainer.Tab_2.Check_02_2_2.Title="不同面（比較模型內）";
+FrmRootMerge.TabContainer.Tab_2.Check_02_2_2.LongHelp="從比較模型將不同面放置到給定的選擇集內。";
+
+FrmRootMerge.TabContainer.Tab_2.Check_02_3_3.Title="不同面（原始模型內）";
+FrmRootMerge.TabContainer.Tab_2.Check_02_3_3.LongHelp="從原始模型將不同面放置到給定的選擇集內。";
+
+FrmRootMerge.TabContainer.Tab_2.Check_02_4_4.Title="嵌入面（比較模型內）";
+FrmRootMerge.TabContainer.Tab_2.Check_02_4_4.LongHelp="從比較模型將嵌入面放置到給定的選擇集內。";
+
+FrmRootMerge.TabContainer.Tab_2.Check_02_5_5.Title="嵌入面（原始模型內）";
+FrmRootMerge.TabContainer.Tab_2.Check_02_5_5.LongHelp="從原始模型將嵌入面放置到給定的選擇集內。";
+
+// 3951 校正官方漢化 Tab1 cas GVC
+
+FrmRootMerge.TabContainer.Tab_2.Check_12_1_1.Title="相同區域";
+FrmRootMerge.TabContainer.Tab_2.Check_12_1_1.LongHelp="將相同區域和關聯數據（面）放置到給定的選擇集內。";
+
+FrmRootMerge.TabContainer.Tab_2.Check_12_2_2.Title="已添加的區域";
+FrmRootMerge.TabContainer.Tab_2.Check_12_2_2.LongHelp="將添加的區域和關聯數據（面和曲線）放置到給定的選擇集內。";
+
+FrmRootMerge.TabContainer.Tab_2.Check_12_3_3.Title="已移除的區域";
+FrmRootMerge.TabContainer.Tab_2.Check_12_3_3.LongHelp="將不同區域和關聯數據（面和曲線）放置到給定的選擇集內。";
+
+// 3951 校正官方漢化 === Tab3 ====
+
+FrmRootMerge.TabContainer.Tab_3.Title="顏色";
+
+FrmRootMerge.TabContainer.Tab_3.Copy_3_1.Title="更改   ";
+
+FrmRootMerge.TabContainer.Tab_3.Into_3_1.Title="到：  ";
+
+FrmRootMerge.TabContainer.Tab_3.Check_03_1_1.Title="相同面";
+FrmRootMerge.TabContainer.Tab_3.Check_03_1_1.LongHelp="將相同面的顏色更改為給定的顏色。";
+
+FrmRootMerge.TabContainer.Tab_3.Check_03_2_2.Title="不同面（比較模型內）";
+FrmRootMerge.TabContainer.Tab_3.Check_03_2_2.LongHelp="將比較模型內不同面的顏色更改為給定的顏色。";
+
+FrmRootMerge.TabContainer.Tab_3.Check_03_3_3.Title="不同面（原始模型內）";
+FrmRootMerge.TabContainer.Tab_3.Check_03_3_3.LongHelp="將原始模型內不同面的顏色更改為給定的顏色。";
+
+FrmRootMerge.TabContainer.Tab_3.Check_03_4_4.Title="嵌入面（比較模型內）";
+FrmRootMerge.TabContainer.Tab_3.Check_03_4_4.LongHelp="將比較模型內嵌入面的顏色更改為給定的顏色。";
+
+FrmRootMerge.TabContainer.Tab_3.Check_03_5_5.Title="嵌入面（原始模型內）";
+FrmRootMerge.TabContainer.Tab_3.Check_03_5_5.LongHelp="將原始模型內嵌入面的顏色更改為給定的顏色。";
+
+// 3951 校正官方漢化 Tab1 cas GVC
+FrmRootMerge.TabContainer.Tab_3.Check_13_1_1.Title="相同區域";
+FrmRootMerge.TabContainer.Tab_3.Check_13_1_1.LongHelp="將相同區域和關聯數據（面）的顏色更改為給定的顏色。";
+
+FrmRootMerge.TabContainer.Tab_3.Check_13_2_2.Title="已添加的區域";
+FrmRootMerge.TabContainer.Tab_3.Check_13_2_2.LongHelp="將添加的區域和關聯數據（面和曲線）的顏色更改為給定的顏色。";
+
+FrmRootMerge.TabContainer.Tab_3.Check_13_3_3.Title="已移除的區域";
+FrmRootMerge.TabContainer.Tab_3.Check_13_3_3.LongHelp="將移除的區域和關聯數據（面和曲線）的顏色更改為給定的顏色。";
+
+// 3951 校正官方漢化
+FrmRootMerge.FrmRooty.Model.Title="目標： ";
+FrmRootMerge.FrmRooty.Model.LongHelp="將結果數據存儲到新的 3D 零件或原始展示內。";
+
+FrmRootMerge.FrmRooty.pRadioNew.Title="新建";
+FrmRootMerge.FrmRooty.pRadioNew.LongHelp="在新的 3D 零件內創建合并結果。";
+
+FrmRootMerge.FrmRooty.pRadioCur.Title="原始";
+FrmRootMerge.FrmRooty.pRadioCur.LongHelp="在原始展示內創建合并結果。";
+
+
+// 3951 校正官方漢化==============================================================================================
+// 3951 校正官方漢化 other...
+// 3951 校正官方漢化==============================================================================================
+
+From="_從_";
+Complementary="_的_補充";
+GeomSetSurf="曲面";
+GeomSetCloud="云";
+GeomSetCrv="曲線";
+
+FrmRootDuplique.MessDuplique.Title="至少在一個要比較的展示中找到復制或嵌入的面。";
+FrmRootDuplique.MessCause.Title="將忽略復制或嵌入的面，以及原始項。";
+FrmRootDuplique.MessToDo.Title="使用曲面連接檢查器清除您的模型。";
+

@@ -1,0 +1,96 @@
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES Delmia 2000 
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 DELMDptIPMSettingDlg
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 Usages Notes:
+// 3951 校正官方漢化  Naming the frame in the property sheet :
+// 3951 校正官方漢化    Tools/Options/DPM/Powertrain solution 
+// 3951 校正官方漢化
+// 3951 校正官方漢化=============================================================================
+// 3951 校正官方漢化 Mar. 2001  Creation											 Anand Undemane
+// 3951 校正官方漢化=============================================================================
+
+// 3951 校正官方漢化 IPM Colorsframe
+IPMFrameId.HeaderFrame.Global.Title = "In-Process Model Colors";
+IPMFrameId.HeaderFrame.Global.LongHelp = "Definition of colors of IPM faces during IPM navigation";
+
+// 3951 校正官方漢化IPMFrameId.IconAndOptionsFrame.OptionsFrame.DummyLabelId.Title = "Dummy label";
+
+IPMFrameId.IconAndOptionsFrame.OptionsFrame.IPMcolorFrameId.IPMMainColorLblId.Title = "當前ly machined faces:";
+IPMFrameId.IconAndOptionsFrame.OptionsFrame.IPMcolorFrameId.IPMMainColorLblId.ShortHelp = "選擇the color for IPM faces of the current 動作";
+IPMFrameId.IconAndOptionsFrame.OptionsFrame.IPMcolorFrameId.IPMMainColorLblId.LongHelp =  "選擇the color for IPM faces corresponding the activity that is currently navigated";
+
+IPMFrameId.IconAndOptionsFrame.OptionsFrame.IPMcolorFrameId.UseMOColorChkButtId.Title = "使用Machining Operation 顏色";
+IPMFrameId.IconAndOptionsFrame.OptionsFrame.IPMcolorFrameId.UseMOColorChkButtId.ShortHelp = "Pick the option to colorize IPM faces in the color defined on the current 動作";
+IPMFrameId.IconAndOptionsFrame.OptionsFrame.IPMcolorFrameId.UseMOColorChkButtId.LongHelp = "Pick the option to colorize IPM faces in the color defined on the activity that is currently navigated";
+
+
+IPMFrameId.IconAndOptionsFrame.OptionsFrame.IPMcolorFrameId.IPMSecondColorLblId.Title = "Previously machined faces:";
+IPMFrameId.IconAndOptionsFrame.OptionsFrame.IPMcolorFrameId.IPMSecondColorLblId.ShortHelp = "選擇the color for IPM faces of the previous動作";
+IPMFrameId.IconAndOptionsFrame.OptionsFrame.IPMcolorFrameId.IPMSecondColorLblId.LongHelp =  "選擇the color for IPM faces corresponding to activities preceeding the current one";
+
+// 3951 校正官方漢化 IPM Generation Mode
+IPMModeOptionsFrameId.HeaderFrame.Global.Title = "In-Process Model Generation";
+IPMModeOptionsFrameId.HeaderFrame.Global.LongHelp = "Radio buttons below  define the way IPM is generated ";
+
+IPMModeOptionsFrameId.IconAndOptionsFrame.OptionsFrame.IPMmodeId.IPMmodeLabelId.Title = "In-Process Model Generation 模式";
+IPMModeOptionsFrameId.IconAndOptionsFrame.OptionsFrame.IPMmodeId.IPMmodeLabelId.ShortHelp = "In-Process Model Generation 模式";
+IPMModeOptionsFrameId.IconAndOptionsFrame.OptionsFrame.IPMmodeId.IPMmodeLabelId.LongHelp =  "Radio buttons below  define the way IPM is generated";
+
+IPMModeOptionsFrameId.IconAndOptionsFrame.OptionsFrame.IPMmodeId.IPMToolsRadioBtn.Title = "生成 IPM from工具";
+IPMModeOptionsFrameId.IconAndOptionsFrame.OptionsFrame.IPMmodeId.IPMToolsRadioBtn.ShortHelp = "IPM generated from工具";
+IPMModeOptionsFrameId.IconAndOptionsFrame.OptionsFrame.IPMmodeId.IPMToolsRadioBtn.LongHelp =  "檢查 this button for generating IPM from tool shape (in this case MOs must have一個tool attached)";
+
+IPMModeOptionsFrameId.IconAndOptionsFrame.OptionsFrame.IPMmodeId.IPMGeomRadioBtn.Title = "生成 IPM from 幾何";
+IPMModeOptionsFrameId.IconAndOptionsFrame.OptionsFrame.IPMmodeId.IPMGeomRadioBtn.ShortHelp = "IPM generated from feature 幾何";
+IPMModeOptionsFrameId.IconAndOptionsFrame.OptionsFrame.IPMmodeId.IPMGeomRadioBtn.LongHelp =  "檢查 this button for generating IPM from geometry of the feature of MO";
+
+IPMModeOptionsFrameId.IconAndOptionsFrame.OptionsFrame.IPMmodeId.IPMBothRadioBtn.Title = "生成 IPM from either";
+IPMModeOptionsFrameId.IconAndOptionsFrame.OptionsFrame.IPMmodeId.IPMBothRadioBtn.ShortHelp = "IPM generated from feature geometry或 from tool";
+IPMModeOptionsFrameId.IconAndOptionsFrame.OptionsFrame.IPMmodeId.IPMBothRadioBtn.LongHelp =  "檢查 this button for generating IPM from tool shape或 from feature geometry if there is no tool attached";
+
+// 3951 校正官方漢化 VDX 11/12/01 MRV Computation
+MRVModeOptionsFrameId.HeaderFrame.Global.Title = "材料 Removal Volume計算";
+
+MRVModeOptionsFrameId.IconAndOptionsFrame.OptionsFrame.MRVmodeId.MRVmodeChkBtn.Title = "激活";
+MRVModeOptionsFrameId.IconAndOptionsFrame.OptionsFrame.MRVmodeId.MRVmodeChkBtn.ShortHelp = "";
+MRVModeOptionsFrameId.IconAndOptionsFrame.OptionsFrame.MRVmodeId.MRVmodeChkBtn.LongHelp =  "";
+// 3951 校正官方漢化 end VDX
+
+// 3951 校正官方漢化 RKB 1/22/2002 Automatic Zoom
+IPMAutomaticZoomOptionsFrameId.HeaderFrame.Global.Title = "In-Process Model Animation";
+// 3951 校正官方漢化IPMAutomaticZoomOptionsFrameId.HeaderFrame.Global.Title = "其它 options related to IPM navigation";
+
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AutomaticZoomFrameId.AutomaticZoomLabelId.Title = "自動 Zoom";
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AutomaticZoomFrameId.AutomaticZoomLabelId.ShortHelp = "顯示machined faces of IPM in一個secondary window";
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AutomaticZoomFrameId.AutomaticZoomLabelId.LongHelp = "Radio buttons below define whether Automatic zoom is enabled或 not, during navigation";
+
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AutomaticZoomFrameId.AutomaticZoomOnRadioBtnId.Title = "是";
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AutomaticZoomFrameId.AutomaticZoomOnRadioBtnId.ShortHelp = "自動 zoom activated";
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AutomaticZoomFrameId.AutomaticZoomOnRadioBtnId.LongHelp = "檢查 this button for displaying machined faces of IPM in一個secondary window";
+
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AutomaticZoomFrameId.AutomaticZoomOfRadioBtnId.Title = "否";
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AutomaticZoomFrameId.AutomaticZoomOfRadioBtnId.ShortHelp = "自動 zoom deactivated";
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AutomaticZoomFrameId.AutomaticZoomOfRadioBtnId.LongHelp = "檢查 this button for不displaying any secondary window";
+
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AnimationModeFrameId.AnimationModeLabelId.Title = "Animation 模式";
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AnimationModeFrameId.AnimationModeLabelId.ShortHelp = "Animation Mode of the Automatic Zoom";
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AnimationModeFrameId.AnimationModeLabelId.LongHelp = "Radio buttons below define animation mode of the secondary window during navigation (if enabled)";
+
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AnimationModeFrameId.SmoothModeRadioBtnId.Title = "Smooth";
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AnimationModeFrameId.SmoothModeRadioBtnId.ShortHelp = "Smooth Animation during IPM navigation";
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AnimationModeFrameId.SmoothModeRadioBtnId.LongHelp = "檢查 this button for getting Smooth Animation during IPM navigation";
+
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AnimationModeFrameId.SnapModeRadioBtnId.Title = "捕捉";
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AnimationModeFrameId.SnapModeRadioBtnId.ShortHelp = "移動s rapidly to machined faces of the選擇動作";
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.AnimationModeFrameId.SnapModeRadioBtnId.LongHelp = "檢查 this button for getting Snap style Animation during IPM navigation";
+// 3951 校正官方漢化 end RKB
+
+// 3951 校正官方漢化 Center on activity in PPR tree AUE 11/07/02
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.CenterActivityModeFrameId.CenterActivityChkBtn.Title = "中心 Current Activity in PPR tree";
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.CenterActivityModeFrameId.CenterActivityChkBtn.ShortHelp = "中心 Current Activity in PPR tree";
+IPMAutomaticZoomOptionsFrameId.IconAndOptionsFrame.OptionsFrame.CenterActivityModeFrameId.CenterActivityChkBtn.LongHelp =  "檢查 this option for automatically center the PPR tree to the currently navigated 動作";
+// 3951 校正官方漢化 end AUE
+

@@ -1,0 +1,148 @@
+// 3951 校正官方漢化=====================================================================================
+// 3951 校正官方漢化                                     CNEXT - CXRn
+// 3951 校正官方漢化                          COPYRIGHT DASSAULT SYSTEMES 1999 
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 FILENAME    :    CATDrwDimensionFrame
+// 3951 校正官方漢化 LOCATION    :    DraftingUI
+// 3951 校正官方漢化 AUTHOR      :    fgx
+// 3951 校正官方漢化 BUT         :    
+// 3951 校正官方漢化 DATE        :    26.11.1999
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 DESCRIPTION :    Tools/Option du Drafting
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 COMMENTS    :    
+// 3951 校正官方漢化-------------------------------------------------------------------------------------
+// 3951 校正官方漢化 MODIFICATIONS     user  date        purpose
+// 3951 校正官方漢化    HISTORY        ----  ----        -------
+// 3951 校正官方漢化 01			lgk 17.12.02 Revision
+// 3951 校正官方漢化=====================================================================================
+
+
+frameDimSketch.HeaderFrame.Global.Title="創建尺寸 ";
+frameDimSketch.HeaderFrame.Global.LongHelp="在創建過程中，定義尺寸的放置方式
+以及尺寸的隊列方式。";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.checkDimSketch.Title="跟隨光標（CTRL 切換）的尺寸";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.checkDimSketch.LongHelp="尺寸跟隨鼠標光標。
+按“CTRL”鍵暫時激活或取消激活
+該模式。";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.checkDimLinePosRelative.Title="尺寸線和幾何圖形間的偏移恒定";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.checkDimLinePosRelative.LongHelp="幾何圖形移動時，使尺寸線與幾何圖形之間保持
+所定義的距離。";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.frameLinePosValue.labelDimLinePosValue.Title="默認尺寸線/幾何圖形距離： ";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.frameLinePosValue.labelDimLinePosValue.LongHelp="在創建和/或移動幾何圖形時，定義尺寸線
+和幾何圖形之間的默認距離。";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._checkDimLineUpEnds.Title="在排列中終止創建尺寸";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._checkDimLineUpEnds.LongHelp="為排列選擇其他尺寸時
+終止創建尺寸流程。";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.frameDimAssoc3D.pushAssoc3D.Title="3D 關聯性...";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.frm.checkDimDriveAuto.Title="創建驅動尺寸";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.frm.checkDimDriveAuto.LongHelp="在 2D 幾何圖形和 2D 或 3D 生成的幾何圖形之間，創建
+驅動尺寸";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.frm.chkDetectChamfer.Title="檢測倒角";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame.frm.chkDetectChamfer.LongHelp="檢測倒角并創建適當的尺寸。";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._frameDimCircle._labelDimCircle.Title="默認情況下，在圓上創建尺寸：";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._frameDimCircle._frameDimCircleRadio._frameDimCircleRadiolocked._radioDimCircleCenter.Title="中心";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._frameDimCircle._frameDimCircleRadio._frameDimCircleRadiolocked._radioDimCircleCenter.LongHelp="默認情況下，在圓心上創建尺寸。";
+
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._frameDimCircle._frameDimCircleRadio._frameDimCircleRadiolocked._radioDimCircleEdge.Title="邊線";
+frameDimSketch.IconAndOptionsFrame.OptionsFrame._frameDimCircle._frameDimCircleRadio._frameDimCircleRadiolocked._radioDimCircleEdge.LongHelp="默認情況下，在圓的邊線上創建尺寸。";
+
+_frameMove.HeaderFrame.Global.Title="移動";
+_frameMove.HeaderFrame.Global.LongHelp="定義尺寸移動方式。
+另請參閱“操作器”選項卡。";
+
+_frameMove.IconAndOptionsFrame.OptionsFrame._checkDimSnap.Title="默認捕捉（SHIFT 切換） ";
+_frameMove.IconAndOptionsFrame.OptionsFrame._checkDimSnap.LongHelp="移動尺寸時激活捕捉。
+使用“配置捕捉” 按鈕自定義
+尺寸捕捉的方式。
+按“Shift”鍵可以
+暫時激活或取消激活模式。";
+_frameMove.IconAndOptionsFrame.OptionsFrame._frameDimSnap._pushDimSnap.Title="配置捕捉";
+_frameMove.IconAndOptionsFrame.OptionsFrame._frameDimSnap._pushDimSnap.LongHelp="配置如何捕捉尺寸
+在網格上的位置或符號間的值";
+_frameMove.IconAndOptionsFrame.OptionsFrame._checkDimMoveSubPart.Title="僅移動所選子零件 ";
+_frameMove.IconAndOptionsFrame.OptionsFrame._checkDimMoveSubPart.LongHelp="僅允許移動尺寸
+（尺寸線、值或次要尺寸線）的選定子零件。";
+
+
+
+_frameLineUp.HeaderFrame.Global.Title="排列";
+_frameLineUp.HeaderFrame.Global.LongHelp="在創建中或在“排列”命令中，
+定義用于排列尺寸的默認參數。您可以標識系統或忽略它們。";
+
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._labelLineUpBaseOffset.Title="參考的默認偏移值：";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._labelLineUpBaseOffset.LongHelp="為長度/距離/角度尺寸、半徑/直徑尺寸
+定義參考的默認偏移值。";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._editorLineUpBaseOffsetLength.LongHelp="為長度/距離/角度尺寸
+定義參考的默認偏移值。";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._editorLineUpBaseOffsetAngle.LongHelp="為半徑/直徑尺寸
+定義參考的默認偏移值。";
+
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._labelLineUpOffset.Title="尺寸之間的默認偏移值：";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._labelLineUpOffset.LongHelp="為長度/距離/角度尺寸和半徑/直徑尺寸
+定義尺寸之間的
+默認偏移值。";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._editorLineUpOffsetLength.LongHelp="長度/距離/角度尺寸間尺寸的
+默認偏移值。";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame._editorLineUpOffsetAngle.LongHelp="為半徑/直徑尺寸定義
+尺寸間的默認偏移值。";
+
+_frameLineUp.IconAndOptionsFrame.OptionsFrame.checkLineUpStackVal.Title="對齊堆疊式尺寸值";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame.checkLineUpStackVal.LongHelp="根據組中最小的尺寸值對齊
+該組中所有的堆疊式尺寸值。";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame.checkLineUpCumulVal.Title="對齊累積尺寸值";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame.checkLineUpCumulVal.LongHelp="根據組中最小的尺寸值對齊
+該組中所有累積尺寸值。";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame.tmpFrame.checkLineUpAutoFunnel.Title="自動添加一個尺寸線漏斗";
+_frameLineUp.IconAndOptionsFrame.OptionsFrame.tmpFrame.checkLineUpAutoFunnel.LongHelp="在沒有尺寸線漏斗則無法
+正確顯示尺寸值時，
+自動添加一個尺寸線漏斗。";
+
+
+
+dimAssocWnd.Title="3D 尺寸關聯性";
+// 3951 校正官方漢化frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked.Title="Associativity on 3D";
+dimAssocWnd.frameDimAssoc3D.HeaderFrame.Global.Title="3D 關聯性";
+
+dimAssocWnd.frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked._radioDimForce2DAlways.Title="僅創建非關聯的尺寸";
+dimAssocWnd.frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked._radioDimForce2DAlways.LongHelp="僅在 3D 上創建無關聯性的尺寸。";
+
+dimAssocWnd.frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked._radioDimForce2DWhenPb.Title="允許非關聯的尺寸";
+dimAssocWnd.frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked._radioDimForce2DWhenPb.LongHelp="僅當無法創建 3D 關聯性時，
+才在 3D 上創建無關聯性的尺寸。";
+
+dimAssocWnd.frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked._radioDimForce2DNever.Title="請勿創建非關聯的尺寸";
+dimAssocWnd.frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked._radioDimForce2DNever.LongHelp="請勿在 3D 上創建無關聯性的尺寸。";
+
+dimAssocWnd.Title="3D 尺寸關聯性";
+// 3951 校正官方漢化frameDimAssoc3D.IconAndOptionsFrame.OptionsFrame._frameDimForce2D._frameDimForce2Dlocked.Title="Associativity on 3D";
+dimAssocWnd.frameAssocDimApprox.HeaderFrame.Global.Title="“近似”模式視圖中的關聯性";
+
+dimAssocWnd.frameAssocDimApprox.IconAndOptionsFrame.OptionsFrame.chkAssocDimOnApproximate.Title="允許在近似視圖中創建關聯性尺寸";
+dimAssocWnd.frameAssocDimApprox.IconAndOptionsFrame.OptionsFrame.chkAssocDimOnApproximate.LongHelp="若選擇該項，則將在近似視圖中應用“3D 關聯性”部分中定義的尺寸關聯性規則，\n否則，在那些視圖中這些尺寸將是非關聯的。";
+
+dimSnapWnd.Title="尺寸捕捉";
+dimSnapWnd.frameDimSnap.HeaderFrame.Global.Title="捕捉尺寸";
+dimSnapWnd.frameDimSnap.HeaderFrame.Global.LongHelp="配置尺寸捕捉的方式。";
+dimSnapWnd.frameDimSnap.IconAndOptionsFrame.OptionsFrame.frameRadioDimSnap.frameRadioDimSnaplocked._radioDimSnapOnGrid.Title="在網格上";
+dimSnapWnd.frameDimSnap.IconAndOptionsFrame.OptionsFrame.frameRadioDimSnap.frameRadioDimSnaplocked._radioDimSnapOnGrid.LongHelp="在網格上捕捉尺寸的位置。";
+dimSnapWnd.frameDimSnap.IconAndOptionsFrame.OptionsFrame.frameRadioDimSnap.frameRadioDimSnaplocked._radioDimSnapValue.Title="符號之間的值";
+dimSnapWnd.frameDimSnap.IconAndOptionsFrame.OptionsFrame.frameRadioDimSnap.frameRadioDimSnaplocked._radioDimSnapValue.LongHelp="如果值在符號之間，則捕捉該值，
+使其處于它的標準位置上。";
+dimSnapWnd.frameDimSnap.IconAndOptionsFrame.OptionsFrame.frameRadioDimSnap.frameRadioDimSnaplocked._radioDimSnapBoth.Title="兩者";
+dimSnapWnd.frameDimSnap.IconAndOptionsFrame.OptionsFrame.frameRadioDimSnap.frameRadioDimSnaplocked._radioDimSnapBoth.LongHelp="既捕捉網格上的位置，
+也捕捉符號之間的值。";
+
+
+frmDimOriented.HeaderFrame.Global.Title="與一個原點相關的尺寸";
+frmDimOriented.IconAndOptionsFrame.OptionsFrame.chkDimOriginSymb.Title="使用尺寸原點符號";
+frmDimOriented.IconAndOptionsFrame.OptionsFrame.chkDimOriginSymb.LongHelp="使用尺寸原點符號";

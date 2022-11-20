@@ -1,0 +1,33 @@
+// 3951 校正官方漢化 Messages used in Logical to physical synchronization
+// 3951 校正官方漢化 Error or Warning messages
+NoPreDefPN="沒有設置預定義零件編號";
+PhysicalRefNotInDB="沒有找到對應預定義零件編號的物理參考";
+BRComputedPartNumNotFound="沒有找到計算零件編號的業務規則";
+RefComputedPartNumNotFound="在數據庫內沒有找到由業務規則計算的帶零件編號的物理參考";
+EquipmentFatherNotFound="設備所處的物理產品未知。未提供業務規則或計算聚集產品失敗";
+
+// 3951 校正官方漢化 For modification messsages
+NewVsOldPN="新零件編號 = /P1；舊零件編號 = /P2；";
+NewVsOldPos="新位置 = \n/P1；舊位置 = \n/P2；";
+NewVsOldInstName="邏輯實例名稱：= /P1；物理實例名稱 = /P2；";
+NewCompPosition="已實例化部件的位置： ";
+
+// 3951 校正官方漢化 For Status messsages
+ElementSynchronized="已經同步元素。";
+ForbiddenByBR="業務規則禁止同步該元素。";
+CreateComp="將以物理方式創建 /P1 的新實例。";
+CreateNoPartNum="將以物理形式創建元素，但是未設置預定義零件編號，并無法由業務規則計算。";
+CreateNoRef="將以物理形式創建元素，但是在數據庫中沒有找到預定義零件編號 /P1 相應的物理參考。";
+CreateNoParent="將要創建 /P1 的新實例，但是聚集物理參考未知。";
+CreateNoPartNumAndParent="將要創建元素，但是預定義零件編號和聚集物理參考未知。";
+CreateNoRefAndParent="將要創建元素，但是要實例化的物理參考和聚集物理參考未知。";
+ReplaceNoRef="已修改預定義零件編號，但是在數據庫中沒有找到新的預定義零件編號對應的物理參考。";
+ModifyElem="將使用邏輯信息修改物理元素。";
+UnknownStatus="元素的同步狀態未知。";
+CreateNoPort="沒有找到物理形式并具備匹配的名稱 /P 的端口。";
+
+// 3951 校正官方漢化 Other messages/ strings
+RefPartNumTitle="選擇要實例化的參考";
+UnknownName="未知";
+LinkedByUser="元素 /p1 是另一個元素的內部特征，無法共享。";
+

@@ -1,0 +1,128 @@
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化 CCE core NLS-File Number range x26000..x26999
+// 3951 校正官方漢化
+// 3951 校正官方漢化 $Revision: 1.12 $
+// 3951 校正官方漢化 $Date: 2010/02/17 12:20:31MEZ $
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Syntax:
+// 3951 校正官方漢化   <ModuleId>_<MsgId>.<Key> = "Text";
+// 3951 校正官方漢化   where 
+// 3951 校正官方漢化     ModuleId: Text   - for classification (internally not used yet)
+// 3951 校正官方漢化     MsgId   : Number - Messagenumber (first digit is severity)
+// 3951 校正官方漢化     Key     : Text   - "iSev" -> Severity
+// 3951 校正官方漢化                        "sMsg" -> Short Message Text (not used yet)
+// 3951 校正官方漢化                        "lMsg" -> Long Message Text
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Limitations:
+// 3951 校正官方漢化    # max. nb. of parameters supported: /P1 .. /P25
+// 3951 校正官方漢化    # max. nb. of lMsg-lines: 10
+// 3951 校正官方漢化    # Key iSev has to be before lMsg 
+// 3951 校正官方漢化
+// 3951 校正官方漢化 =====================================================================
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Information messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化CCE_IM126000.iSev = "1";
+// 3951 校正官方漢化CCE_IM126000.sMsg = "Info";
+// 3951 校正官方漢化CCE_IM126000.lMsg = "Application Information - Param: /P1";
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Warning messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化CCE_WM326000.iSev = "3";
+// 3951 校正官方漢化CCE_WM326000.sMsg = "Warn";
+// 3951 校正官方漢化CCE_WM326000.lMsg = "Application Warning - Param: /P1";
+
+CCE_WM326001.iSev="3";
+CCE_WM326001.sMsg="Warn";
+CCE_WM326001.lMsg="無法執行“機床坐標系”指令。原因：“增量尺寸”指令處于活動狀態。";
+
+CCE_WM326002.iSev="3";
+CCE_WM326002.sMsg="Warn";
+CCE_WM326002.lMsg="找不到任何駐留參數。";
+
+// 3951 校正官方漢化 ------------------------------------------------------------------
+// 3951 校正官方漢化 Error messages
+// 3951 校正官方漢化 ------------------------------------------------------------------
+
+// 3951 校正官方漢化CCE_EM426000.iSev = "4";
+// 3951 校正官方漢化CCE_EM426000.sMsg = "Err";
+// 3951 校正官方漢化CCE_EM426000.lMsg = "Application Error - Param1: /P1";
+
+CCE_EM426001.iSev="4";
+CCE_EM426001.sMsg="Err";
+CCE_EM426001.lMsg="無法定義動作控制類型（TCP 或 CP？）。";
+
+CCE_EM426002.iSev="4";
+CCE_EM426002.sMsg="Err";
+CCE_EM426002.lMsg="參數不足，無法執行圓弧插補指令。";
+
+CCE_EM426003.iSev="4";
+CCE_EM426003.sMsg="Err";
+CCE_EM426003.lMsg="無法/P1名稱為 '/P2' 的軸。";
+
+CCE_EM426004.iSev="4";
+CCE_EM426004.sMsg="Err";
+CCE_EM426004.lMsg="無法設置用于檢索旋轉軸的 '/P1' 優化模式。";
+
+CCE_EM426005.iSev="4";
+CCE_EM426005.sMsg="Err";
+CCE_EM426005.lMsg="圓弧插補時，起點坐標和終點坐標無任何差異。";
+
+CCE_EM426006.iSev="4";
+CCE_EM426006.sMsg="Err";
+CCE_EM426006.lMsg="無法到達給定半徑 = /P1 m 的圓弧的目標位置。";
+
+CCE_EM426007.iSev="4";
+CCE_EM426007.sMsg="Err";
+CCE_EM426007.lMsg="圓弧插補時，圓弧 (R = /P1 m) 的半徑值無效。";
+
+CCE_EM426008.iSev="4";
+CCE_EM426008.sMsg="Err";
+CCE_EM426008.lMsg="圓弧插補時，圓弧 (alpha = /P1) 的開角值無效。有效區域為 (1...359)。";
+
+CCE_EM426009.iSev="4";
+CCE_EM426009.sMsg="Err";
+CCE_EM426009.lMsg="主軸旋轉數值 S = /P1 無效。";
+
+CCE_EM420010.iSev="4";
+CCE_EM420010.sMsg="Err";
+CCE_EM420010.lMsg="找不到指令 '/P1' 的任何參數。";
+
+CCE_EM420011.iSev="4";
+CCE_EM420011.sMsg="Err";
+CCE_EM420011.lMsg="調用指令“平面軸”期間出現意外參數 '/P1'";
+
+CCE_EM420012.iSev="4";
+CCE_EM420012.sMsg="Err";
+CCE_EM420012.lMsg="調用“平面軸”指令期間，參數值 '/P1' (/P2) 和軸 '/P3' (/P4) 的當前值不相同。";
+
+CCE_EM420013.iSev="4";
+CCE_EM420013.sMsg="Err";
+CCE_EM420013.lMsg="機床描述 '/P1' 和 '/P2' 中存在多個旋轉方向軸。";
+
+CCE_EM420014.iSev="4";
+CCE_EM420014.sMsg="Err";
+CCE_EM420014.lMsg="刀具向量和方向法向量非正交 (dScalProd = /P1)。";
+
+CCE_EM420015.iSev="4";
+CCE_EM420015.sMsg="Err";
+CCE_EM420015.lMsg="無法在機床描述文件中找到類型為“方向”的任何軸。";
+
+CCE_EM420016.iSev="4";
+CCE_EM420016.sMsg="Err";
+CCE_EM420016.lMsg="對于包含版本低于 v1.3 的機床描述的機床，不支持語句 '/P1'。";
+
+
+
+// 3951 校正官方漢化CCE_EM526000.iSev = "5";
+// 3951 校正官方漢化CCE_EM526000.sMsg = "Err";
+// 3951 校正官方漢化CCE_EM526000.lMsg = "Application Error - Param1: /P1";
+
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化 End of CCE utility NLS-File
+// 3951 校正官方漢化 =====================================================================
+// 3951 校正官方漢化

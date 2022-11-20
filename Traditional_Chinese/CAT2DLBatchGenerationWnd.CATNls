@@ -1,0 +1,23 @@
+Title="生成批處理工程圖";
+BOK="運行";
+DirectoryPrefix="工程圖批處理";
+
+TabContainer.RepPage.Title="工程圖";
+TabContainer.DrawingPage.Title="工程圖信息";
+TabContainer.BatchPage.Title="批處理信息";
+
+TabContainer.RepPage.RepFrame.RepNameLabel.Title="展示名稱";
+
+TabContainer.DrawingPage.DrawingFrame.StandardFrame.Title="標準";
+TabContainer.DrawingPage.DrawingFrame.ViewsLayoutFrame.Title="自動視圖創建布局";
+AttachToProd="在 /p1 中插入工程圖";
+
+TabContainer.BatchPage.BatchFrame.RunLocal.Title="運行本地";
+TabContainer.BatchPage.BatchFrame.RunRemote.Title="運行遠程 － 主機名：";
+
+ErrorPanel.Title="從當前布局生成";
+ErrorPanel.RepRefNotInDatabase="當前布局展示未拓展到數據庫。\n在以批處理模式生成工程圖前，您需要對它進行拓展。";
+ErrorPanel.RepRefHasNoContext="此展示沒有產品上下文，或者此上下文沒有被保存。\n啟動此命令前，請在產品下實例化此展示";
+ErrorPanel.RepRefHasSeveralContext="此展示具有一些產品上下文。\n此命令在具有單個上下文的 2D 布局展示中運行";
+ErrorPanel.RepRefNotSaved="一些更改還沒有被拓展。\n是否要繼續并從數據庫生成工程圖？";
+ErrorPanel.BatchNotLaunched="無法啟動批處理。\n請檢查遠程主機名稱。";

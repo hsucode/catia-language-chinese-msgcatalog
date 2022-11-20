@@ -1,0 +1,668 @@
+
+Dialog.Title.Error="錯誤";
+Dialog.Title.Warning="警告";
+
+
+// 3951 校正官方漢化 for general use (to initialize a string before calling GetAlias, etc.)
+StringValue.Unknown="（未知）";
+
+
+MakeOccurContributing.InvalidSupport="無法使匹配項起作用。\n 零件幾何圖形與此方法不兼容。";
+
+CreateMeshParts.InvalidSupport="    零件 '/P1' （匹配項 '/P2'）";
+
+CreateMeshParts.NoValidParts="模型不包含任何起作用的零件。\n 可視的零件對于此方法都無效。\n 零件幾何圖形與此方法不兼容。\n\n 請使用“定義裝配體”使所需的零件起作用。";
+
+DefineAssembly.CreateMeshPart.NoMeshSpec="方法未定義網格規格。";
+
+DefineAssembly.MakeOccurContrib.KO="無法使零件 '/P1' 起作用。";
+
+
+LoadAction.NoAllowableFeatures="操作 '/P1' 無相關聯的特征類型。\n（這些可指定此操作可以創建的特征。）\n 因此，此操作將無法執行。\n\n 這可能是由于沒有適用于擬定特征類型的許可證。";
+
+
+LoadAction.FeatureNotCreated="為沒有創建的操作 '/P2' 自動創建 /P1 特征。\n\n 特征類型 '/P1' 與此操作不相關聯。\n 這可能是由于沒有適用于對象特征類型的許可證。";
+
+
+LoadMethod.LoadTemplate.ParseFailure="方法定義不正確。\n[/P1]";
+
+LoadMethod.MethodLoadFailed="加載方法失敗。";
+
+LoadMethod.MethodInitFailed="方法初始化失敗。";
+
+LoadMethod.SelectExperimentsFailed="OOPs, GetSelectedExperiments() 失敗";
+
+LoadMethod.NoMethodName="未為方法指定名稱。";
+
+LoadMethod.NoMeshDef="未為方法定義網格。";
+
+LoadMethod.LoadExperiment.Failed="加載研究 '/P1' 失敗。";
+LoadMethod.LoadExperiment.LoadImplicit.Failed="加載隱含的研究失敗。";
+
+LoadMethod.Actions.NoActionsLoaded="未為方法加載操作。";
+LoadMethod.Actions.TooManyOfSameType="=\"/P1\" 類型的操作定義太多。（允許的最大值 = /P2）\n\n提示：請修改 \"/P3\" 方法定義。";
+LoadMethod.Actions.LoadDefault.Failed="為類型 '/P1'加載默認操作規格失敗";
+
+LoadMethod.Action.NoLT="未為 '/P1' 操作 '/P2' 指定延遲類型。";
+LoadMethod.Action.NoPrivate="無法獲取以下操作類型的 SMAIMpeAction 接口：'/P1' ID：'/P2'";
+
+LoadMethod.LoadAction.Failed="加載 '/P1' 操作 '/P2' 失敗。";
+
+LoadMethod.LoadAction.ValidateLists.Failed="無法加載操作'/P1'。\n'/P2' 列表中存在錯誤。";
+
+LoadMethod.InitNew.InitAction.Failed="初始化操作 '/P1' 失敗。";
+
+LoadMethod.Open.OpenAction.Failed="初始化操作 '/P1'失敗。";
+
+Open.DeprecatedFeature="無法打開模擬。\n 模擬包含已不用的 '\P1' 特征。";
+
+LoadMethod.InitNew.InitExperiment.Failed="初始化實驗 '/P1' 失敗。";
+
+LoadMethod.Open.OpenExperiment.Failed="初始化研究 '/P1' 失敗。";
+
+LoadMethod.AssemblyNotPermitted.Error="選定的方法與關聯的產品不兼容。\n 不能將此方法與裝配體配合使用。";
+
+LoadMethod.ModelCheck.Error="產品與選定方法文件不兼容。";
+
+LoadMethod.MeshTypeCheck.Error="檢查產品幾何圖形與指定網格類型的方法 \n 是否兼容時出錯。";
+
+LoadMethod.Migration.Failed="向當前發布遷移模擬時出錯。";
+
+LoadMethod.NoMethodTag="方法文件中缺少“方法”標簽。";
+
+LoadMethod.NoScenarioTag="方法文件中缺少“方案”標簽。";
+
+LoadMethod.NoExperimentTag="方法文件中缺少“實驗”標簽。";
+
+LoadMethod.NoMeshTag="方法文件中缺少“網格”標簽。";
+
+LoadMethod.NoSpecificationTag="方法文件中缺少“規格”標簽。";
+
+LoadMethod.NoCriteriaSetTag="方法文件中缺少“條件集”標簽。";
+
+LoadMethod.NoCriterionTag="方法文件中缺少“條件”標簽。";
+
+LoadMethod.NoAdaptivityTag="方法文件中缺少“適用性”標簽。";
+
+LoadMethod.AdaptivityLevel="方法文件中指定的“適用性級別”值不正確。";
+
+LoadMethod.AdaptivityPasses="方法文件中指定的通過數不正確。";
+
+LoadMethod.AdaptivitySchemaError="適用性模式錯誤：'/P1' 的值無效。";
+
+LoadMethod.MeshSchemaError="網格元素類型模式錯誤：指定的元素類型無效：'/P1'。";
+
+LoadMethod.NoPublicationTag="方法文件中缺少“發布”標簽。";
+
+LoadMethod.HelpLoadError="加載幫助定義時出錯。";
+
+LoadMethod.NoActionTag="在方法文件中未找到“操作”標簽。";
+
+LoadMethod.NoAssignmentsTag="在方法文件中未找到“任務”標簽。";
+
+LoadMethod.NoAssignTag="在方法文件中未找到“分派”標簽。";
+
+LoadMethod.Action.FeatureDefErr="無法加載以下操作 ID 的“特征定義”標簽：'/P1'";
+
+LoadMethod.Action.ConfigDataErr="無法加載以下操作 ID 的“配置數據”標簽：'/P1'";
+
+LoadMethod.Action.GroupErr="為以下操作 ID 指定的組數無效：'/P1'";
+
+LoadMethod.Action.SupportError="為以下操作 ID 指定的支持面無效：'/P1'";
+
+LoadMethod.Action.PubError="以下操作 ID 缺少發布名稱：'/P1'";
+
+LoadMethod.Action.FeatureErr="操作的特征元素數不能超過一個。以下操作 ID 的特征元素數超過一個：'/P1'";
+
+LoadMethod.MinRequiredError="方法文件中指定的最小需求量無效。應大于零。";
+
+LoadMethod.MaxAllowedError="允許的最大特征計數無效。應不等于零且不能小于最小值。";
+
+LoadMethod.Propagate.Error="為“傳播”標簽指定的值無效。";
+
+LoadMethod.IndenterTypeError="指定的縮進類型無效。";
+
+LoadMethod.IndenterApplicationPointError="為縮進指定的應用點無效。";
+
+LoadMethod.DisplacementBCMagError="為 BC 限制特征指定的數量值無效。";
+
+LoadMethod.ForceApplicationPointError="為力特征指定的應用點無效。";
+
+LoadMethod.HydPressurePubErr="靜水壓特征缺少發布。";
+
+LoadMethod.MomentApplicationPointError="為移動特征指定的應用點無效。";
+
+LoadMethod.RigidBodyErr="剛性幾何體特征缺少發布。";
+
+
+SimMigration.R212.Failed="執行 R2012X 模擬遷移失敗。";
+
+SimMigration.IErr="模擬遷移期間出錯。";
+
+SimMigration.IErr.Action="獲取關閉模具操作的操作特征時出錯。";
+
+SimMigration.CM.Error.1="執行關閉模具公式遷移失敗。";
+
+SimMigration.CM.Error.2="為 '/P1' 遷移公式失敗。";
+
+SimMigration.CM.Error.3="為 '/P1' 檢索公式實體時出錯。";
+
+SimMigration.CM.Error.4="遷移公式 '/P1' 失敗。";
+
+SimMigration.CM.Error.5="為 '/P1' 獲取參數發布程序失敗。";
+
+
+
+MeshTypeCheck.Solid.Error="選定的方法與關聯的產品不兼容。\n 方法需要 3D 實體幾何圖形，但產品中沒有 3D 實體零件。";
+
+
+LoadMethod.ValidatePublications.Error="選定的方法無法用于關聯的產品。\n 必須具備以下發布，但這些發布已缺失或無效：\n/P1";
+
+LoadMethod.InvalidPublications.Error="選定的方法無法用于關聯的產品。\n 驗證所需的發布時出錯。";
+
+LoadMethod.ExperimentCheck.Error="選定的方法不能與關聯的產品一起使用。\n 驗證實驗時遇到錯誤.";
+
+InitOutputReqs.Failed1="為實驗 '/P1' 創建輸出請求失敗。";
+
+InitOutputReqs.Scenario.Failed="為方案 '/P1' 創建輸出請求失敗。";
+
+InitOutputReqs.InvalidElem="輸出請求無效：無效的元素標記：/P1。";
+
+InitOutputReqs.NoPosition="輸出請求無效：未指定位置。";
+
+InitOutputReqs.NoVariable="輸出請求無效：未指定輸出變量。";
+
+InitOutputReqs.InvalidPosition="輸出請求位置無效：'/P1'。";
+
+InitOutputReqs.Create1.Failed="為請求 '/P1' 創建輸出請求特征失敗。";
+
+InitOutputReqs.SetGroup.Failed="為輸出請求 '/P1' 設置請求類型失敗。";
+
+InitOutputReqs.SetPos.Failed="為輸出請求 '/P1' 設置輸出位置失敗。";
+
+InitOutputReqs.CreateProbe2.Failed="為輸出請求 '/P1' 創建探針失敗。";
+
+InitOutputReqs.CreateProbe.Failed="為輸出請求創建探針失敗。";
+
+InitOutputReqs.CreateClock.Failed="為輸出請求 '/P1' 創建時鐘失敗。";
+
+InitOutputReqs.SetVar.Failed="為輸出探針設置輸出變量失敗。";
+
+InitOutputReqs.SetProbe.Failed="向輸出請求添加探針失敗。";
+
+
+InitOutputReqs.Feature.Failed="為特征 '/P1' 創建輸出請求失敗。";
+
+InitOutputReqs.GetPublication.Failed="檢索發布 '/P1' 失敗。";
+
+InitOutputReqs.GetFeature.Failed="檢索特征 '/P1' 失敗。";
+
+InitOutputReqs.SetSupport.Failed="為輸出探針設置支持面失敗。";
+
+InitOutputReqs.LocalMeshSpec.Failed="為輸出請求 '/P1' 創建局部網格規格失敗。";
+
+
+InitScenario.Part2.Failed="這實驗 '/P2'完成 '/P1' 方案初始化失敗。";
+InitScenario.KW.Failed="為方案 '/P1' 處理知識工程模塊條目失敗。";
+
+
+GetScenarioOfExperiment.Failed="無法檢索實驗 '/P2' 的方案 '/P1'。";
+
+
+
+
+LoadMesh.SpecDef.Failed="讀取網格規格時出錯。";
+
+LoadMesh.InvalidNature="指定的網格性質無效：'/P1'";
+
+LoadMesh.MultipleSpecs="模式錯誤：網格規格必須包含單一的規格元素";
+
+
+LoadAdaptivity.MultipleElems="模式錯誤：適應性元素太多。";
+
+LoadAdaptivity.Failed="讀取適應性規格時出錯。";
+
+
+InitMesh.CreatePart.Failed="為零件 '/P1' 創建網格零件失敗。";
+
+
+
+LoadScenario.NoType="模式錯誤：沒有為方案元素指定方案類型。";
+
+LoadScenario.InvalidType="模式錯誤：方案元素指定的方案類型 '/P1' 無效 。";
+
+LoadScenario.Load.Failed="讀取方案規格時出錯。";
+
+LoadScenario.AssemblyNotPermitted.Error="方案與關聯的產品不兼容。\n 此方案（類型 ='/P1'，id='/P2'）不能與裝配體配合使用。";
+
+
+
+LoadExperiment.NoName="未為研究指定 ID。";
+
+LoadExperiment.NoScenario="研究未指定方案。";
+
+LoadExperiment.CreateScenario.ScenarioNotLicensed="方案類型 '/P1' 無許可證。";
+
+LoadExperiment.CreateScenario.CoupleNotFound="為研究 '/P2' 創建方案 '/P2' 時出錯：\n耦合方案的 ID 無效。";
+
+LoadExperiment.CreateScenario.CreateFailed="為研究 '/P2' 創建方案 '/P1' 失敗。";
+
+LoadExperiment.CreateScenario.InvalidTaskType="無法創建類型為 '/P1'的方案。";
+
+LoadExperiment.InitScenario.199.Failed="為研究 '/P2' 設置方案 '/P1' 的參數時出錯。";
+
+LoadExperiment.InitScenario.1.Failed="為研究 '/P2' 初始化方案 '/P1' 時出錯。/P3";
+
+LoadExperiment.InitScenario.GetMethod.Failed="在方案初始化期間無法獲取方法。";
+
+LoadExperiment.FemRep.GetReps.Failed="無法初始化模擬。（解析 FEM 展示）";
+
+LoadExperiment.Product.GetReps.NoFemReps="產品不包含任何 FEM 展示。";
+
+LoadExperiment.CreateSequence.CreateFailed="為研究 '/P1' 創建序列失敗。";
+
+Experiment.GetSequence.Failed="為研究 /P1 檢索數據失敗。";
+
+Experiment.GetScenarios.Failed="為研究 /P1 獲取方案失敗。";
+
+Experiment.GetScenarios2.Failed="為模擬獲取方案失敗。";
+
+
+Experiment.Status.NeedRequiredFeature.Tooltip="所需的特征 '???' 不存在";
+
+
+Experiment.GetScenario1.Failed="研究 '/P2' 不包含方案 '/P1'";
+
+Experiment.GetScenarioByName.ScenarioNotFound="實驗 '/P2' 不包含名稱為 '/P1' 的方案。";
+
+Experiment.GetScenarioData.Failed="實驗 '/P2' 不包含方案 '/P1'";
+
+
+Experiment.LoadScenario.Failed="加載方案規格 '/P1' 時出錯。";
+
+Experiment.LoadScenario.ModelCheck.Error="無法添加 /P1 方案。\n/P1 方案與模擬的關聯產品不兼容。";
+
+
+
+
+LoadAction.AssignmentsMissing="操作 '/P1' 未指定必要的實驗分派。";
+
+LoadAction.LoadAssignments.InvalidScenario="為操作 '/P1' 在分派中指定的方案 '/P2' 無效。";
+
+LoadAction.LoadAssignments.GetScenarios.Failed="為研究獲取方案失敗。";
+
+LoadFeatureDef.Schema.NoType="未為操作 '/P1' 的特征定義指定特征類型。";
+
+LoadFeatureConfig.Schema.Failed="無法為操作 '/P1' 加載特征特定的配置。";
+
+
+AddAutoSupport.Publication.NotFound="無法設置特征支持面。\n 檢索發布 '/P1' 失敗。";
+
+AddAutoSupport.MeshPart.NotFound="無法設置特征支持面。\n 檢索網格零件 '/P1' 失敗。";
+
+
+CreateFeature.InvalidFeatureType="自動創建特征規格無效：自動創建特征類型 '/P2' 不是操作 '/P1' 允許的特征類型。";
+
+CreateFeature.CreatePhantomList.Failed="特征創建失敗：創建陰影特征列表失敗。";
+
+CreateFeature.AddToAction.Failed="特征創建失敗：向模擬操作添加特征失敗。";
+
+CreateFeature.Failed="創建 /P1 特征失敗。";
+
+CreateFeature.Failed.Group="從組創建特征失敗。";
+
+CreateFeature.Failed.Publication="從發布創建特征失敗。";
+
+CreateFeature.CreatePhantom.Failed="創建陰影 /P1 特征失敗。";
+
+CreateFeature.CreatePhantom.AddToList.Failed="向陰影特征列表中添加特征失敗。";
+
+CreateFeature.Failed.ExceedMaxAllowed="創建 /P1 特征失敗：超過允許的最大值";
+
+Propagate.Relay.Error="為特征獲取中繼失敗。";
+
+Propagate.Element.Error="“傳播”標簽中的元素無效。";
+
+Knowledgeware.SetContext.Error="建立知識工程模塊上下文失敗。";
+
+
+UpdatePhantoms.GetList.Failed="為特征 '/P1' 獲取特征列表失敗。";
+
+
+CheckScenarioLicenses.ScenarioNotLicensed="方案類型 '/P1' 無許可證。";
+
+
+SMAFeaExsGeoUtil.ComputeBbox.Failed="計算邊界框失敗。";
+
+
+Indenter.OpposingIndenter.CreationFailed="創建反向壓頭失敗。";
+
+Indenter.ComputeDirectionFailed="確定壓頭方向失敗。";
+
+Indenter.InvalidRadius="半徑必須大于零。";
+
+Indenter.InvalidDisplacement="位移必須大于零。";
+
+Indenter.InvalidFriction="摩擦力必須大于或等于零。";
+
+Indenter.InvalidGemoetry="幾何圖形無效，無法創建壓頭。";
+
+Indenter.InvalidDirection="無法創建壓頭，因為其無法擠壓指定方向上的零件。";
+
+Indenter.NoPartInFrontIndenter="壓頭前無零件。";
+
+Indenter.AtContactPosition.Title="壓頭";
+Indenter.AtContactPosition.Message="壓頭已處于接觸位置。";
+
+Indenter.KnowledgewareFailed="建立知識工程模塊上下文失敗";
+
+Indenter.NoVizViewer="查看器不可用。";
+
+DefineConnections.MultipleFacesNotSupported="連接時不支持選擇零件中的多個面。";
+
+
+ExportInputFile.IncompleteExperiments="只有在實驗的狀態為“完成”時，才能寫入輸入文件。\n 已寫入以下輸入文件。\n/P1 \n\n 未寫入以下輸入文件。\n/P2 ";
+ExportInputFile.IncompleteExperimentsNone="無";
+
+ExportInputFile.ErrorWritingFile="寫入文件時出錯。\n\n 請打開診斷查看器查看錯誤。";
+
+DefineMesh.Meshing.Failed="網格化失敗：請查看診斷查看器。";
+DefineMesh.ShowMesh.Failed="無法顯示網格。";
+DefineMesh.ClearElements.Failed="無法移除元素質量可視化。";
+DefineMesh.UpdateQualityResults.Failed="無法更新質量結果。";
+DefineMesh.MKSToUnit.Failed="無法從 MKS 單位轉換。";
+DefineMesh.UnitToMKS.Failed="無法轉換到 MKS 單位。";
+DefineMesh.ApplyMeshSpecs.Failed="無法將規格應用到網格。";
+DefineMesh.ApplyQualityCriteria.Failed="無法將質量條件應用到網格";
+DefineMesh.GenerateMesh.Failed="無法生成網格。";
+DefineMesh.Cleanup.Failed="無法清除網格可視化。";
+DefineMesh.SpecifyPart.Failed="無法指定要網格化的零件。";
+DefineMesh.DeleteMeshPart.Failed="無法從零件中移除網格。";
+DefineMesh.MeshParam.NoName="模式錯誤：未為網格參數條目指定名稱。";
+DefineMesh.QualityCriteria.NoName="模式錯誤：未為質量條件條目指定名稱。";
+DefineMesh.QualityCriteria.Failed="模式錯誤：無法加載質量條件。";
+DefineMesh.Publication.None="模式錯誤：未為網格零件條目指定發布。";
+DefineMesh.Publication.Create.Failed="無法為發布 '/P1' 創建網格零件；\n未找到發布。";
+DefineMesh.Publication.Create.Error="為發布 '/P1' 創建網格零件時出錯。";
+
+DefineMesh.Property.Id.None="模式錯誤：未為網格屬性條目指定 ID。";
+DefineMesh.Property.Conversion="無法將支持面轉換到路徑。";
+DefineMesh.Property.Failed="無法創建網格屬性。";
+DefineMesh.Property.AddSupport="無法將支持面添加到網格屬性 '/P1'。";
+
+DefineMesh.CreateMeshPart.Failed="創建網格零件失敗。";
+DefineMesh.MeshPart.Initialize.1="初始化新網格零件失敗。(1)";
+DefineMesh.MeshPart.Initialize.2="初始化新網格零件失敗。(2)";
+DefineMesh.MeshPart.Initialize.3="初始化新網格零件失敗。(3)";
+DefineMesh.MeshPart.Initialize.4="初始化新網格零件失敗。(4)";
+DefineMesh.MeshPart.Initialize.5="初始化新網格零件失敗。(5)";
+DefineMesh.Colorize.WrongMeshType="元素質量可視化僅對于四邊形主導的網格可用";
+DefineMesh.Action.Unavailable="只有應用材料后，操作才可用";
+
+DefineMesh.FEMSelect.Apply="無法將 FEM 展示與當前模擬相關聯。";
+DefineMesh.FEMSelect.Apply.NoSelection="必須先選擇 FEM 展示。";
+DefineMesh.FEMSelect.Apply.SetFEMOnSequence="模擬可能未定義方案。";
+DefineMesh.FEMSelect.Apply.InvalidProperties="選定的 FEM 包含無效屬性 ";
+DefineMesh.FEMSelect.Preview="無法預覽選定的 FEM 展示。";
+DefineMesh.FEMSelect.Preview.NoSelection="必須先選擇 FEM 展示。";
+DefineMesh.FEMSelect.FEMAlreadySelected="已選定 FEM 展示。\n您可以預覽其他 FEM 展示，但不能再進行選擇。";
+DefineMesh.FEMSelect.NewFEM="無法創建新 FEM 展示。 ";
+DefineMesh.FEMSelect.InitFEM="無法初始化新 FEM。 ";
+DefineMesh.FEMSelect.NewFEM.NoParts="已創建 FEM，但無有效的網格零件。 ";
+
+DefineCavity.Filler.BadPublication="無法為空腔 '/P1' 檢索發布支持面。";
+
+DefineCavity.Cavity.BadPublication="空腔支持面的發布 '/P1' 無效。";
+
+DefineCavity.Cavity.PubError="為空腔支持面檢索發布 '/P1' 失敗。";
+DefineCavity.AutoCreate.Error="自動創建特征規格無效：自動創建特征類型 '/P2' 不是操作 '/P1' 允許的類型。";
+DefineCavity.Initialize.Error="無法為操作 '/P2' 初始化 '/P1' 特征。";
+DefineCavity.PropCreate.Error="為流體空腔 '/P1' 創建屬性失敗。";
+DefineCavity.FluidType.Error="方法中的流體類型無效。";
+DefineCavity.DeleteFeature.Error="空腔特征已存在。請在創建新特征之前刪除現有特征。";
+DefineCavity.WrongGeometry.Error="創建空腔時選取的邊界不正確。請選取其他邊界。";
+DefineCavity.InvalidBoundary.Error="無法創建空腔。瓶狀幾何圖形無效。";
+DefineCavity.PointMissing.Error="創建空腔時出錯。無法在選定的邊界上找到點。";
+
+SealContainer.BadGeometry.Error="創建封蓋時選取的邊界不正確。請選取上部邊界。";
+SealContainer.Support.BadPublication="為封蓋 '/P1' 檢索發布支持面失敗。";
+SealContainer.Filler.BadPublication="為封蓋 '/P1' 檢索發布失敗。";
+SealContainer.MeshProperty.Error="為封蓋創建網格屬性失敗。";
+SealContainer.Thickness.Error="無法將厚度添加到封蓋。";
+SealContainer.MeshPart.Error="創建封蓋網格零件失敗。";
+SealContainer.MeshPartInitialization.Error="初始化封蓋網格零件失敗。";
+SealContainer.CapDefined.Error="已定義封蓋。請先刪除現有封蓋，然后再創建新封蓋。";
+SealContainer.PointMissing.Error="創建封蓋時出錯。無法在選定的邊界上找到點。";
+
+FeatureEdit.FeatureSupport.Error="檢索要添加的特征 '/P1' 作為支持面失敗。";
+
+FeatureEdit.Formula.Error="為 '/P1' 特征創建公式失敗。";
+FeatureEdit.Formula.Error.2="為操作 '/P2' 的 '/P1' 特征創建公式失敗。";
+
+FeatureEdit.AddLocalMeshSpec.Failed="為操作 '/P2' 的特征 '/P1' 創建局部網格規格失敗。";
+
+
+HydrostaticPressureEdit.Point.Error="檢索發布 '/P1' 失敗，\n無法將點添加到靜水壓特征。";
+HydrostaticPressureEdit.NumberOfPoint.Error="為靜水壓特征指定的點數不正確。";
+HydrostaticPressureEdit.FormulaCreate.Error="為 HYD 壓力特征創建公式方法失敗";
+
+
+GetPublication.Error="檢索發布 '/P1' 失敗。";
+
+AddLocalMeshSpec.InvalidSupportType="為發布 '/P1' 創建局部網格規格失敗。\n支持面類型無效（不支持支持面）。";
+
+AddLocalMeshSpec.CreateFailed="為發布 '/P1' 創建局部網格規格失敗。";
+
+AddLocalMeshSpec.InitFailed="為發布 '/P1' 創建局部網格規格失敗。\n初始化本地規格失敗。";
+
+GetMeshViaPublication.NotFound="無法為發布 '/P1' 檢索網格零件。";
+
+
+
+
+KW.Formula.NoInputs="無法為參數 '/P1' 的公式確定輸入參數。 ";
+KW.KwsError="建立知識工程模塊上下文失敗。";
+KW.Formula.Schema.Error.R="公式元素模式錯誤：無“結果”屬性。";
+KW.Formula.Schema.Error.B="公式元素模式錯誤：無“幾何體”屬性。";
+KW.Formula.Schema.Error.pt="對于參數 '/P1' 的公式，公式元素模式錯誤：\n無 'paramType' 屬性。";
+KW.Formula.Body.SyntaxError="為參數解析公式幾何體時出錯。無效的語法：\n'/P1'";
+KW.FormulaCreate.Error="為參數 '/P1' 創建公式失敗。\n (CreateFormula())";
+KW.Formula.ParmNF="找不到引用的參數 '/P1'。";
+KW.Formula.GetInputs.Error="為參數 '/P1' 的公式獲取引用參數失敗。";
+KW.Formula.GetContext.Failed="為參數 '/P1' 創建公式時失敗。\n無法檢索容器特征 '/P2'。";
+KW.ParamNodeNF="未找到 '/P1' 的參數元素。";
+KW.Param.Schema.Error.pt="對于參數 '/P1'，參數元素模式錯誤：無 'paramType' 屬性。";
+KW.Param.Schema.Error.fp="對于參數 '/P1'，參數元素模式錯誤：無 'featurePath' 屬性。";
+KW.Param.Schema.Error.pa="對于參數 '/P1'，參數元素模式錯誤：無 'parameter' 屬性。";
+KW.CreateParm.Failed="創建知識工程模塊參數 '/P1' 失敗。";
+KW.CreateParm.GetContext.Failed="創建知識工程模塊參數 '/P1' 失敗。\n無法檢索容器特征 '/P2'。";
+KW.GetContext.NotFeature="無法檢索容器特征 '/P1'。\n起始上下文并非特征。";
+KW.GetContext.NoResMgr="無法檢索容器特征 '/P1'。\n獲取資源管理器失敗。";
+KW.GetContext.NoFeatureList="無法檢索容器特征 '/P1'。\n獲取特征列表失敗。";
+KW.GetParam.Error="無法檢索知識工程模塊參數 '/P1'\n('/P2')。";
+KW.ImportParam.Error="無法導入知識工程模塊參數 '/P2'\n（作為 '/P1' 引用）。";
+KW.Param.InvalidOp="為參數 '/P2' 指定的類型 ('/P1') 無效。";
+KW.GetES.Error="無法找到根產品的工程規格展示。";
+KW.GetES.Error2="無法檢索根產品的工程規格展示。";
+KW.GetES.Error3="無法檢索根產品的工程規格展示。(3)";
+KW.GetES.Error4="無法檢索根產品的工程規格展示。(4)";
+
+
+
+
+RigidBodyConstraint.RefPoint.Error="嘗試向剛性幾何體特征中添加參考點時出現錯誤。";
+RigidBodyConstraint.Initialize.Error="無法初始化剛性幾何體約束特征。";
+
+RigidBodyConstraintEdit.Point.Error="無法為剛性幾何體約束參考點檢索發布 '/P1'。";
+
+ContactPairControlsEdit.Initialize.Error="無法初始化接觸對控制特征。";
+ContactPairControlsEdit.Stabilize.Error="缺少接觸對控制特征的穩定值。";
+
+DirectLinearEquationSolverEdit.Initialize.Error="無法初始化線性方程式求解器特征。";
+DirectLinearEquationSolverEdit.Optimization.Error="缺少線性方程式求解器特征的優化值。";
+
+LoadScenarioData.InvalidNature="指定的方案性質無效：'/P1'";
+
+LoadScenarioData.Frequency.NoSolverType="模式錯誤：必須為頻率方案指定求解器類型。";
+
+LoadScenarioData.Frequency.InvalidSolverType="模式錯誤：頻率方案 /P1 的求解器類型無效。";
+
+
+InitScenario.GetSolver.Failed="無法為方案 '/P1' 獲取求解器。";
+
+InitScenario.CreateTimeControl.Failed="無法為方案 '/P1' 創建時間增量特征。";
+InitScenario.CreateBulkViscosity.Failed="無法為方案 '/P1' 創建體積粘度特征。";
+InitScenario.CreateDirectLinearEquationSolver.Failed="無法為方案 '/P1' 創建直接線性方程式特征。";
+InitScenario.GetSequence.Failed="無法為方案 '/P1' 獲取序列。";
+
+
+LoadMethod.NoProduct="無法獲取模擬的目標產品。";
+
+LoadMethod.SwitchProduct.Failed="無法在設計模式中打開目標產品。";
+LoadMethod.CheckLicensesFailed="許可證不足。";
+LoadMethod.IsGeneralPurpose.NonBooleanValue="\"isGeneralPurpose\" 屬性的值無效：'/P1'";
+
+ApplyThickness.ProjectionFailed="無法確定幾何圖形上的投影點。";
+ApplyThickness.GeometryExtractFailed="無法從選定項檢索幾何圖形。";
+
+AutoCreateFeature.ApplyAmplitude.NoSuchAmplitude="特征 '/P1' 引用的振幅 '/P2' 不存在";
+AutoCreateFeature.SetAmplitude.Failed="無法為特征 '/P1' 設置振幅 '/P2'";
+AutoCreateFeature.SetAmplitude.NotSet="未找到可為特征 '/P1' 設置振幅 '/P2' 的合適中繼。";
+
+Amplitude.InitializeFrom.AmplitudePairSizeMismatch="對于振幅 '/P1'，時間/振幅對大小不匹配";
+Amplitude.Initialize.MissingAmplitudeElement="振幅 '/P1' 缺少必要的“振幅”元素";
+TabularAmplitude.GetSmoothing.InvalidSmoothing="振幅 '/P1' 的“光順”值無效：'/P2'";
+Amplitude.GetAmplitudeAndTime.NullAmplitude="振幅 '/P1' 缺少必要的“振幅”屬性。";
+Amplitude.GetAmplitudeAndTime.InvalidAmplitude="振幅 '/P1' 包含的“振幅”值無效： '/P2'";
+Amplitude.GetAmplitudeAndTime.NullTime="振幅 '/P1' 缺少必要的“時間”屬性";
+Amplitude.GetAmplitudeAndTime.InvalidTime="振幅 '/P1' 包含的“時間”值無效：'/P2'";
+
+AnalyticRigidSurface.TypeNotsupported="不支持分析曲面的曲面類型";
+
+GeneralContact.FailToCreate="無法創建常規接觸。";
+GeneralContact.InvalidFriction="常規接觸的摩擦值必須大于或等于零。";
+GeneralContact.PublicationError="無法在常規接觸中找到發布。";
+GeneralContact.FrictionError="常規接觸中的摩擦值無效。";
+
+
+// 3951 校正官方漢化 MeshProperty.UsingFirstCompliantMatlBehavior = "Although /P1 different compliant material behaviors were found\nfor material '/P2',\nonly '/P3' (the first one found) will be used.";
+// 3951 校正官方漢化 MeshProperty.BadAddSupport.DifferentFeature = "Support '/P1'\ncannot be added to\nmesh property '/P2'\nbecause it is from a different /P3 than\nSupport '/P4'.";
+// 3951 校正官方漢化 MeshProperty.UpgradeMatlBehaviorName = "Material behavior needs to be upgraded on material '/P1'\n\nTIP:  Using the material editor from a product workbench,\nopen the material and only select OK to save it\n(without making any changes).\nThis automatically assigns a name to the material behavior.";
+
+ManageSteps.StepSelected.Panel.Failed="無法顯示選定步長的合適操作。";
+
+ManageStepsActionItem.GetCurrentExperiment.Failed="無法獲取當前實驗。";
+ManageStepsActionItem.GetScenarios.Failed="無法獲取步長列表。";
+ManageStepsActionItem.SetComboSize.Failed="無法重新調整組合框組件的大小。";
+ManageStepsActionItem.SetComboItemText.Failed="無法設置以下組合框項的文本：'/P1'";
+
+ManageStepsAction.LoadScenarios.Error="無法加載方案定義。";
+ManageStepsAction.NoScenarioDefFound.Error="未找到方案定義。";
+ManageStepsAction.GetPalette.Error="無法檢索步長調板。";
+ManageStepsAction.AddStep.Error="無法添加 ID 為 '/P1' 的新步長。";
+ManageStepsAction.NoValidScenarios.Error="所有方案定義均不與產品相兼容。";
+
+ManageStepsEditor.BuildPanel.Failed="無法建立用于管理步長的高級編輯器";
+
+ManageStepsAction.SelectStep.Failed="無法選擇名稱為 '/P1' 的步長";
+
+ManageStepsAction.ScenarioDef.AssemblyNotPermitted.Error="選定步長與關聯產品不兼容。\n此步長（類型 ='/P1'，id='/P2'）無法與裝配體配合使用。";
+ManageStepsAction.ScenarioDef.ModelCheck.Error="產品與選定步長（類型 ='/P1'，id='/P2'）不兼容。";
+
+SimulationPanel.Experiment.MixedCategory="實驗包含類別組合。類別分派不明確。";
+
+Product.GetFEMReps.InSession="無法檢索會話中 FEM 展示的列表。";
+Product.GetFEMReps.Database="無法從數據庫檢索 FEM 展示的列表。";
+
+ContactPair.FailToCreate="無法創建接觸對。";
+ContactPair.InvalidFriction="接觸對的摩擦值必須大于或等于零。";
+ContactPair.InvalidSlipTolerance="接觸對的滑動公差必須大于零，且需要指定摩擦力。";
+ContactPair.FailToCreateSurfaceToSurfaceInteractionProperty="無法創建曲面到曲面交互屬性。";
+ContactPair.FailToCreateTangentialBehavior="無法創建切線行為。";
+ContactPair.PublicationError="無法找到接觸對中的發布。";
+
+ContactInterference.FailToCreate="無法創建接觸干涉。";
+ContactInterference.FailToLocateContactPair="無法定位接觸對。";
+ContactInterference.ReferenceInterferenceNotFound="找不到參考干涉值。";
+ContactInterference.InvalidCosineValues="方向余弦值的平方根不能大于 1.0。";
+
+ContactChangeFriction.FailToCreate="無法創建接觸更改摩擦力。";
+ContactChangeFriction.FailToLocateContactPair="無法定位接觸對。";
+ContactChangeFriction.InvalidFriction="接觸更改摩擦力的摩擦值必須大于或等于零。";
+ContactChangeFriction.InvalidSlipTolerance="接觸更改摩擦力的滑動公差必須大于零，且需要指定摩擦力。";
+ContactChangeFriction.FailToCreateTangentialBehavior="無法創建切線行為。";
+
+AppliedLoad.FailToRetrieveMagnitude="無法檢索數值。";
+
+Group.PrerequisiteIncomplete=" 無法完成“組選擇”。\n以下先決條件操作不完整：\n '/P1'";
+
+PropertiesTree.PrerequisiteIncomplete=" 無法完成“屬性樹選擇”。\n以下先決條件操作不完整：\n '/P1'";
+
+Action.PrerequisiteIncomplete=" 無法激活 '/P1'。\n以下先決條件不完整：\n '/P2'";
+Action.Locked=" '/P1' 已鎖定，無法激活。";
+Action.Activate.Failed=" 無法激活操作：'/P1'。";
+
+SpringConnectorEdit.FailToCreate="無法創建彈簧連接器。";
+
+ElementMapAction.SimulationObjectNull="無法獲取有效模擬對象。";
+ElementMapAction.ConfigurationFile.Missing="找不到元素封蓋配置文件。";
+ElementMapAction.ConfigurationFile.LoadError="無法加載元素映射配置文件。";
+ElementMapAction.ConfigurationFile.ReadError="無法從元素映射配置文件中讀取。";
+ElementMapAction.CurrentScenario.Missing=" 無法激活 '/P1'。需要選擇步長。\n";
+ElementMapAction.Mesher.Unknown="出現未知網格器。無法確定元素類型。";
+ElementMapAction.Validation.Failed="無法驗證元素類型分派。";
+ElementMapAction.RemoveLocalAssignment.Failed="無法移除本地元素類型分派。";
+ElementMapAction.ElementOrder.Failed="找不到網格零件的元素順序.";
+
+FeaturePropagation.Deactivate.Failed="無法停用特征。";
+FeaturePropagation.Activate.Failed="無法激活特征。";
+
+OutputRequest.Create.Failed="無法為以下方案創建輸出請求特征：'/P1'。";
+OutputRequestAction.CurrentScenario.Missing="無當前方案。";
+OutputRequestAction.EditInterface.Missing="無特征的編輯界面。";
+
+SupportTree.FailToOpen="無法打開樹以選取支持面。";
+SupportTree.InvalidSupportString="無法確定方法中此特征的支持面。";
+
+Configuration.UIConfig.FileNotFound="未找到 UI 配置文件。";
+Configuration.UIConfig.FileLoadError="無法加載 UI 配置文件。";
+Configuration.UIConfig.NoRootNode="未找到 UI 配置文件的根節點。";
+
+Configuration.FeatureLib.FileNotFound="未找到特征庫文件。";
+Configuration.FeatureLib.FileLoadError="無法加載特征庫文件。";
+Configuration.FeatureLib.NoRootNode="未找到特征庫文件的根節點。";
+
+AdvPanel.Support.Error="無法為此特征設置正確的支持面。";
+AdvPanel.Frame.Error="創建框架期間遇到錯誤。";
+
+
+SolveAction.KOResetInternalLists="無法為選定的實驗重置內部列表。";
+SolveAction.KOBuildParametersPanel="無法構建模擬參數面板。";
+SolveAction.KOGetMethod="無法獲取當前方法。";
+SolveAction.KOGetFrame="無法獲取應用程序框架。";
+SolveAction.KOGetMainWindow="無法從應用程序框架獲取主窗口。";
+SolveAction.KOGetAdaptLevel="無法獲取網格適應性（精確度）級別。";
+SolveAction.KOGetDataOfAdaptLevel="無法獲取網格適應性（精確度）級別的數據。";
+SolveAction.KOCreateExeProgressDlg="無法創建進度對話框。";
+SolveAction.InvalidActionStatus="部分操作包含無效狀態。";
+SolveAction.KOPrepForSolve="準備運行模擬時失敗。";
+SolveAction.KOGetTargetProduct="無法獲取模擬的目標產品。";
+SolveAction.KOSequenceModelChecker="無法獲取當前序列/實驗的模型檢查器。";
+SolveAction.KOUpdateStatusAfterExecute="執行完成后更新狀態時失敗。";
+
+ExecuteCommandHeader.GetHeaderFromList.Failed="未找到命令頭：/P1";
+ExecuteCommandHeader.StartCommand.Failed="無法啟動命令：/P1";
+
+BaseCommandAction.GetCommandHeader.Failed="未找到命令頭：/P1";
+BaseCommandAction.CommandHeader.Unavailable="命令頭不可用：/P1";
+BaseCommandAction.StartCommand.Failed="無法啟動命令：/P1";
+
+BaseCommandAction.LoadCustomization.EmptyLateType="指定的操作自定義延遲類型為空。";
+BaseCommandAction.LoadCustomization.NoInterface="操作自定義延遲類型無效：/P1";
+
+
+GPAContactAction.NotFirstStep.NotExplicit=" 無法激活 '/P1'。靜態步長或頻率步長的接觸特征僅在分析的第一步中可用。";
+
+SMAFeaDSValidator.NoProduct.Error="內部錯誤。無產品";
+SMAFeaDSValidator.BadProduct.Erorr="內部錯誤。無法檢索根發生情況.";
+SMAFeaDSValidator.InvalidProduct.Error="該產品對給定方法無效。";

@@ -1,0 +1,138 @@
+WritingOperationFailure.Request="Applicom 寫入操作失敗";
+WritingOperationFailure.Diagnostic="/p1";
+WritingOperationFailure.Advice="";
+
+ReadingOperationFailure.Request="Applicom 讀取操作失敗";
+ReadingOperationFailure.Diagnostic="/p1";
+ReadingOperationFailure.Advice="";
+
+ConnectionFailure.Request="Applicom 連接失敗";
+ConnectionFailure.Diagnostic="/p1";
+ConnectionFailure.Advice="";
+
+CreateCyclicFunctionFailure.Request="創建循環函數失敗";
+CreateCyclicFunctionFailure.Diagnostic="/p1";
+CreateCyclicFunctionFailure.Advice="";
+
+ApplicomStatus1="錯誤 #/p1：未知函數。不支持請求的函數。\n",
+"請檢查是否為工業以太網通信正確配置 Applicom 設備。\n";
+
+ApplicomStatus2="錯誤 #/p1：您的某個端口地址不正確。標記地址超出分隔符范圍。\n",
+"請先重新定義地址，然后再進行模擬。";
+
+ApplicomStatus3="錯誤 #/p1：\n幀內容不一致：",
+"\n返回的字節數不等于等待數量。\n請與您的支持團隊聯系。";
+
+ApplicomStatus4="錯誤 #/p1：數據不可訪問。\n",
+"物理地址不存在“QVZ 錯誤”（例如：PLC 中不存在輸入或輸出卡）。";
+
+ApplicomStatus32="錯誤 #/p1：傳遞到函數的參數錯誤。\n",
+"請與您的支持團隊聯系。";
+
+ApplicomStatus33="錯誤 #/p1：超時故障。\n",
+"\t- 設備已配置，但未通過網絡連接。布線問題、CPU 不運行通信塊、未在 CPU 中聲明連接或聲明錯誤。",
+"\n\t- 設備或網關的 IP 地址錯誤。";
+
+ApplicomStatus35="錯誤 #/p1：數據不可用于循環讀取。\n",
+"嘗試先使用循環模式傳輸數據，然后再讀取設備中的數據。\n請與支持團隊聯系。";
+
+ApplicomStatus36="錯誤 #/p1：未配置設備。\n",
+"使用控制臺（MS-Windows 控制臺）定義設備配置，并重新初始化 Applicom 產品。";
+
+ApplicomStatus40="錯誤 #/p1：達到可同時使用延緩模式的任務的最大數量時，任務會延緩讀取或寫入嘗試。\n";
+
+ApplicomStatus41="錯誤 #/p1：延遲的請求注冊已滿。";
+
+ApplicomStatus42="錯誤 #/p1：延遲的請求注冊為空。\n";
+
+ApplicomStatus45="錯誤 #/p1：通信程序未駐留。\n",
+"請先初始化 Applicom 接口，然后再使用它。\n如果您在 windows 環境下工作，則可使用命令 'pcinit'。";
+
+ApplicomStatus46="錯誤 #/p1：未配置板號，或者 Applicom 主/客戶端功能瞄準了已配置為從屬/服務器的通道，反之亦然。\n";
+
+ApplicomStatus47="錯誤 #/p1：無 Applicom 接口。\n";
+
+ApplicomStatus49="錯誤 #/p1：隊列超時故障。\n",
+"由于缺少資源（無可用通信通道），無法發送請求。\n",
+"此時間對應于正在處理的請求超時值的 4 倍。\n",
+"增加“正在處理的請求的超時”的值。\n",
+"增加在目標設備上同時進行的最大請求數。";
+
+ApplicomStatus51="錯誤 #/p1：驅動程序發生系統問題。\n";
+
+ApplicomStatus55="錯誤 #/p1：超時超出“正在處理的請求的超時”的值，已建立連接，問題已確認，但無響應。";
+
+ApplicomStatus59="錯誤 #/p1：Applicom 接口上缺少保護鍵。\n";
+
+ApplicomStatus66="錯誤 #/p1：Applicom 接口內存不足。\n";
+
+ApplicomStatus70="錯誤 #/p1：出現連接問題后，連接已中止。\n",
+"由于通信問題，通信已中止。\n",
+"布線問題、CPU 停止、CPU 不運行通信 FB、未在 CPU 中聲明連接或聲明錯誤、設備或網關 IP 地址錯誤、遠程站已關閉。";
+
+ApplicomStatus93="錯誤 #/p1：無法檢測 Applicom 卡。\n",
+"請檢查是否在機床上正確設置設備。";
+
+ApplicomStatusDefault="錯誤 #/p1：未知錯誤。\n",
+"請與您的支持團隊聯系。";
+
+AUTDcnAppS7AgentWrArrayLimit="由于地址 '/p2' 上存在越行陣列，名為 '/p1' 的端口上的寫入操作失敗。";
+
+AUTDcnAppS7AgentRdArrayLimit="由于地址 '/p2' 上存在越行陣列，名為 '/p1' 的端口上的讀取操作失敗。";
+
+AUTDcnAppS7AgentWrBitPos="由于地址 '/p2' 上的位位置錯誤，名為 '/p1' 的端口上的寫入操作失敗。";
+
+AUTDcnAppS7AgentRdBitPos="由于地址 '/p2' 上的位位置錯誤，名為 '/p1' 的端口上的讀取操作失敗。";
+
+AUTDcnAppS7AgentInternalError.Request="Applicom S7 代理程序內部錯誤";
+AUTDcnAppS7AgentInternalError.Diagnostic="/p1";
+AUTDcnAppS7AgentInternalError.Advice="請與您的支持團隊聯系。";
+
+AUTDcnAppS7AgentMemBlkErr="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，S7 內存塊地址錯誤。";
+
+AUTDcnAppS7AgentUnsupportedTag="名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口具有不受支持的 S7 設備名稱。",
+"\n請先分派有效的 S7 設備名稱，然后再進行模擬。（例如，I、Q、M 或 DB）";
+
+AUTDcnAppS7AgentVarDefError.Request="IO 端口定義中的 S7 內存地址錯誤";
+AUTDcnAppS7AgentVarDefError.Diagnostic="/p1";
+AUTDcnAppS7AgentVarDefError.Advice="";
+
+AUTDcnAppS7AgentUnsupportedType="不支持名為 '/p1' 的端口使用的數據類型。",
+"\n請先重新定義它，然后再進行模擬。";
+
+S7_WRONG_BOOL_TYPE="名為 '/p1' 且具有 S7 內存地址 '/p2' 的端口應與布爾數據類型關聯。\n請先重新定義它，然后再進行模擬。";
+S7_WRONG_8BITS_TYPE="名為 '/p1' 且具有 S7 內存地址 '/p2' 的端口應與 8 位數據類型關聯。\n請先重新定義它，然后再進行模擬。";
+S7_WRONG_16BITS_TYPE="名為 '/p1' 且具有 S7 內存地址 '/p2' 的端口應與 16 位數據類型關聯。\n請先重新定義它，然后再進行模擬。";
+S7_WRONG_32BITS_TYPE="名為 '/p1' 且具有 S7 內存地址 '/p2' 的端口應與 32 位數據類型關聯。\n請先重新定義它，然后再進行模擬。";
+S7_WRONG_VAR="名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口具有不受支持的 S7 設備名稱。\n請先分派有效的 S7 設備名稱，然后再進行模擬。（例如，I、Q、M 或 DB）";
+S7_WRONG_M_SYNTAX="名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口上的語法錯誤。\nS7 內存地址的語法應與 Mx.y 匹配。請先修改它，然后再運行新模擬。";
+S7_M_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，標志內存編號超出范圍 [0 - 65535]。\n請先修改它，然后再運行新模擬。";
+S7_MX_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，標志內存上的位位置 [0 - 7] 錯誤。\n請先修改它，然后再運行新模擬。";
+S7_MB_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，標志內存字節超出范圍 [0 - 65535]。\n請先修改它，然后再運行新模擬。";
+S7_MW_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，標志內存字超出范圍 [0 - 65534]。\n請先修改它，然后再運行新模擬。";
+S7_MD_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，標志內存雙字超出范圍 [0 - 65532]。\n請先修改它，然后再運行新模擬。";
+S7_WRONG_Q_SYNTAX="名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口上的語法錯誤。\nS7 內存地址的語法應與 Qx.y 匹配。請先修改它，然后再運行新模擬。";
+S7_Q_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，離散輸出編號超出范圍 [0 - 65535]。\n請先修改它，然后再運行新模擬。";
+S7_QX_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，離散輸出上的位位置 [0 - 7] 錯誤。\n請先修改它，然后再運行新模擬。";
+S7_QB_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，離散輸出上的字節數超出范圍 [0 - 65535]。\n請先修改它，然后再運行新模擬。";
+S7_QW_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，離散輸出上的字數超出范圍 [0 - 65534]。\n請先修改它，然后再運行新模擬。";
+S7_QD_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，離散輸出上的雙字數超出范圍 [0 - 65532]。\n請先修改它，然后再運行新模擬。";
+S7_WRONG_I_SYNTAX="名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口上的語法錯誤。\nS7 內存地址的語法應與 Ix.y 匹配。請先修改它，然后再運行新模擬。";
+S7_I_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，離散輸入編號超出范圍 [0 - 65535]。\n請先修改它，然后再運行新模擬。";
+S7_IX_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，離散輸入上的位位置 [0 - 7] 錯誤。\n請先修改它，然后再運行新模擬。";
+S7_IB_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，離散輸入上的字節數超出范圍 [0 - 65535]。\n請先修改它，然后再運行新模擬。";
+S7_IW_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，離散輸入上的字數超出范圍 [0 - 65534]。\n請先修改它，然后再運行新模擬。";
+S7_ID_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，離散輸入上的雙字數超出范圍 [0 - 65532]。\n請先修改它，然后再運行新模擬。";
+S7_WRONG_DB_SYNTAX="名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口上的語法錯誤。\nS7 內存地址的語法應與 DBx.DBXy.z、DBx.DBBy、DBx.DBWy 或 DBx.DBDy 匹配。\n請先修改它，然后再運行新模擬。";
+S7_DB_OUT_OF_RANGE1="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，數據塊編號超出范圍 [1 - 8191]。\n請先修改它，然后再運行新模擬。";
+S7_DB_OUT_OF_RANGE2="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，數據塊編號超出范圍 [1 - 32767]。\n請先修改它，然后再運行新模擬。";
+S7_DBX_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，數據塊上的位位置 [0 - 7] 錯誤。\n請先修改它，然后再運行新模擬。";
+S7_DBB_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，數據塊上的字節數超出范圍 [0 - 65535]。\n請先修改它，然后再運行新模擬。";
+S7_DBW_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，數據塊上的字數超出范圍 [0 - 65534]。\n請先修改它，然后再運行新模擬。";
+S7_DBD_OUT_OF_RANGE="對于名為 '/p1' 且具有關聯的 S7 內存地址 '/p2' 的端口，數據塊上的雙字數超出范圍 [0 - 65532]。\n請先修改它，然后再運行新模擬。";
+
+AppItfNotSupported.Request="Applicom 通信接口未實施";
+AppItfNotSupported.Diagnostic="/p";
+AppItfNotSupported.Advice="請運行 x86 版本的 DELMIA 以使用 Applicom 功能。";
+
+x64Failure="x64 架構中不本地支持 Applicom 軟件。";

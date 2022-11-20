@@ -1,0 +1,28 @@
+
+// 3951 校正官方漢化 FACTORIZATION ERROR DECLARATION :
+// 3951 校正官方漢化 XXXXX_F_n  : _F indicated that this client PLM error is a factorization error
+// 3951 校正官方漢化 XXXXX_F_n.Advice & XXXXX_F_n.Request : common to all the concerned component
+
+// 3951 校正官方漢化 Case 0 : XXXXX_F_0:  Factorization error without parameter  
+// 3951 校正官方漢化 XXXXX_F_0.Diagnostic = "\p PLM< components cannot ....."
+// 3951 校正官方漢化 where \p is not given at the error posting to the reporter :
+// 3951 校正官方漢化 \p is computed by the reporter just before sending the error to the listener
+// 3951 校正官方漢化 \p value : the number of PLM concerned by the error.
+
+// 3951 校正官方漢化 Case 1 : XXXXX_F_1 : Factorization error with 1 parameter : 
+// 3951 校正官方漢化 This parameter is the list of paramters coresponding to each PLM component 
+// 3951 校正官方漢化 This parameter has to be documented
+
+
+SystemERR.Diagnostic="系統錯誤。";
+SystemERR.Advice="請與支持人員聯系。";
+
+
+ServerInternalERR.Diagnostic="內部服務器錯誤。";
+ServerInternalERR.Advice="";
+
+VaultServerInternalERR.Diagnostic="內部資源庫服務器錯誤。";
+VaultServerInternalERR.Advice="";
+
+NoObjectToSaveWRN.Diagnostic="沒有任何對象可供傳播。";
+NoObjectToSaveWRN.Advice="請確保確實已選擇修改的對象。";

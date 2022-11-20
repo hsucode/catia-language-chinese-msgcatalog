@@ -1,0 +1,28 @@
+DlgTitle = "選擇PLC Instruction";
+MainFrame.LabelFrame.Label.Title = "Enter the motion dedicated PLC instruction";
+MainFrame.GlbPlcInstFrame.PlcInstFrame.PlcInstLabel.Title = "PLC Instruction";
+MainFrame.GlbPlcInstFrame.TgtCPUFrame.TgtCPULabel.Title = "目標 CPU";
+MainFrame.GlbPlcInstFrame.TgtAxisFrame.TgtAxisLabel.Title = "目標軸";
+MainFrame.GlbPlcInstFrame.ValueFrame.ValueLabel.Title = "Instruction 值";
+
+EZSocketMcInstInfoTitle = "PLC instruction 信息";
+NoPlcInstValue = "PLC instruction value has to be assigned by一個numerical value.";
+NoPlcTgtAxisValue1 = "目標 axis (Jn, En或 Cn) for PLC instruction /p has to be assigned.";
+NoPlcTgtAxisValue2 = "目標 axis (Jn) for PLC instruction /p has to be assigned.";
+NoPlcTgtAxisAndInstValue = "目標 axis and value for PLC instruction /p have to be assigned.";
+
+SFCSOutRangeValue = "數值 value is out of range.\nInput range: 0 to 255 for D(P).SFCS instruction";
+SVSTOutRangeValue = "數值 value is out of range.\nInput range: 0 to 4095 for D(P).SVST instruction";
+CHGAOutRangeValue = "數值 value is out of range.\nInput range: -2147483648 to 2147483647 for D(P).CHGA instruction";
+CHGVOutRangeValue = "數值 value is out of range.\nInput range: -2147483648 to 2147483647 for D(P).CHGV instruction";
+CHGTOutRangeValue = "數值 value is out of range.\nInput range: 0 to 1000 for D(P).CHGT instruction";
+GINTOutRangeValue = "數值 value is out of range.\nInput range: 0 to 15 for D(P).GINT instruction";
+
+SVSTTgtAxisErrorSyntax = "輸入format for target axis is incorrect.\nInput format: Jn或 ...JnJk...";
+CHGATgtAxisErrorSyntax = "輸入format for target axis is incorrect.\nInput format: Jn, En或 Cn";
+CHGVTgtAxisErrorSyntax = "輸入format for target axis is incorrect.\nInput format: Jn";
+CHGTTgtAxisErrorSyntax = "輸入format for target axis is incorrect.\nInput format: Jn";
+
+Q172DOutRangeTgtAxis = "目標 axis is out of range for Q172D CPU.\nInput range: 1 to 8";
+Q173DOutRangeTgtAxis = "目標 axis is out of range for Q173D CPU.\nInput range: 1 to 32";
+

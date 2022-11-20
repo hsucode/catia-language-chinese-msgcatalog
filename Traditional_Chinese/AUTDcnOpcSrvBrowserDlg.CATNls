@@ -1,0 +1,43 @@
+Title = "OPC Server Browser";
+SplitterFrame.OPCGenFrame.OPCItemsFrame.Title = "OPC Items Browser";
+
+SplitterFrame.OPCGenFrame.OPCItemsFrame.FilterLabel.Title = "Filter :";
+SplitterFrame.OPCGenFrame.OPCItemsFrame.Refresh.Title = "Refresh";
+SplitterFrame.OPCGenFrame.OPCItemsFrame.AUTDcnPortName.Title="Name";
+SplitterFrame.OPCGenFrame.OPCItemsFrame.AUTDcnPortTag.Title="OPC Tag";
+
+// OPC related text
+SplitterFrame.OPCGenFrame.Cmd.Buttons.CreateAndAssociate.ShortHelp = "Create Ports from OPC Items";
+SplitterFrame.OPCGenFrame.Cmd.Buttons.Associate.ShortHelp = "Associate an OPC Item to a Port";
+SplitterFrame.OPCGenFrame.Cmd.Buttons2.Check.ShortHelp = "Check if selected ports are valid";
+
+SplitterFrame.AUTExtControlDlgFrame.Warning.Title = "Each port must have a defined direction before you can continue";
+
+TypeErrTitle = "Warning !";
+TypeErrMess = "Port /p1 was previously defined as /p2 but is registered as /p3 in the server.\nDo you want to change the type?\nCancel will stop the process.";
+DirErrTitle = "Warning!";
+DirErrMess  = "Port /p1 was defined with direction /p2 but is registered as /p3 in the server.\nDo you want to change the direction?\n(No will cancel your change on the type)";
+DirErrMess2 = "Port /p1 was defined with direction /p2 but is registered as /p3 in the server.\nDo you want to change the direction?\nCancel will stop the process but keep your previous changes.";
+
+PortsNotCreatedTitle = "Warning !";
+PortsNotCreated = "The following ports are not added to your block because their type is not handled by the simulation : /p1";
+
+NoDirPortTitle = "Warning !";
+NoDirPort = "Each port must have a defined direction to continue";
+
+CheckDoneTitle = "Information";
+CheckDone = "OPC Items check is done.\nItems checked : /p6 \ /p1 \n\n  - Type Errors\t\t/p2 \ /p6\n",
+																	"  - Direction Errors\t\t/p3 \ /p6\n",
+																	"  - Item Validity Errors\t/p4 \ /p6\n",
+																	"  - Item Quality Warning\t/p5 \ /p6";
+															
+CheckCancelled = "OPC Item checker cancelled.\nItems checked : /p6 \ /p1 \n\n  - Type Errors\t\t/p2 \ /p6\n",
+																			"  - Direction Errors\t\t/p3 \ /p6\n",
+																			"  - Item Validity Errors\t/p4 \ /p6\n",
+																			"  - Item Quality Warning\t/p5 \ /p6";
+GoodQuality = "Ok";
+BadQuality = "Inconsistent";
+UncertainQuality = "Uncertain";
+InvalidQuality = "Invalid Item";
+UnknownQuality = "Unknown";
+

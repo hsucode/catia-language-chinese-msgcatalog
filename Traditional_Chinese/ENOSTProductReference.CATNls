@@ -1,0 +1,32 @@
+// 3951 校正官方漢化This file contains the Nls resources for Business Logic & Predefined Queries (PLM Toolbar Search) 
+// 3951 校正官方漢化in the context of the customization of ENOVIA_PLM_Express
+// 3951 校正官方漢化defined in file: resources\plmsearch\plmtoolbar\PLM1\ENOVIA_PLM_Express\ENOSTProductReference.CATRsc
+// 3951 校正官方漢化
+// 3951 校正官方漢化Deviation validated (DRL) = adding a PQ for getting "multi-type" behaving result like "ref".
+// 3951 校正官方漢化This is the default applied to Any Product Reference that do not have published "類型"
+
+// 3951 校正官方漢化PQ+BL
+ENOSTProductReference.Title="物理產品";
+SENOSTProductReference.Title="標準物理產品";
+
+// 3951 校正官方漢化for any type of reference
+ENOSTProductReferenceAny.Title="物理參考";
+
+// 3951 校正官方漢化BL for untyped reference
+ENOSTProductReference.Abbreviation="prd";
+ENOSTProductReference.Prefix="產品";
+
+// 3951 校正官方漢化PQ for non 3DPart reference
+ENOSTProductReference.ShortHelp="物理產品 (prd:)";
+ENOSTProductReference.Abbreviations="product|prd|eprd";
+
+// 3951 校正官方漢化PQ for any type of reference (see agreed deviation from PQ file)
+ENOSTProductReferenceAny.ShortHelp="物理參考 (ref:)";
+ENOSTProductReferenceAny.Abbreviations="reference|ref|eref";
+
+// 3951 校正官方漢化Dedicate Standard PQ
+SENOSTProductReference.ShortHelp="標準物理產品 (sprd:)";
+SENOSTProductReference.Abbreviations="sprd|seprd";
+
+
+

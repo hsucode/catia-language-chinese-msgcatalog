@@ -1,0 +1,89 @@
+// 3951 校正官方漢化 DO不EDIT :: THE CAA2 WIZARD WILL REPLACE所有 CODE HERE
+// 3951 校正官方漢化Title = " 分析結果 ";
+DNBDpmBIWGunSearchResult.LoadResultFile.Message = "文件 \"/P01\"不能發現  \n選擇文本或 XML 文件 ";
+DNBDpmBIWGunSearchResult.LoadResultFile.Title = "文件 錯誤";
+BCancel = "關閉";
+Wrongfile = " Possible Wrong Result File ";
+ActivityNFFromFile = "結果不Valid \nSaved Activity沒發現 In Current Process Document \n\nImpact: Analysis Can't Be Re-run ";
+NoResultToSave = " No Result to Save ";
+NoWeldguns = "無選擇焊槍";
+NotWelds = "選擇 Object Is不Weld或Tag點";
+MultiWeldguns = "Can't Assign Multiple焊槍";
+LoadSaveFrame.LoadButton.Help = "載入";
+LoadSaveFrame.LoadButton.ShortHelp = "載入 分析結果";
+LoadSaveFrame.LoadButton.LongHelp = "載入 分析結果 From Saved文件";
+LoadSaveFrame.SaveButton.Help = "保存";
+LoadSaveFrame.SaveButton.ShortHelp = "保存分析結果";
+LoadSaveFrame.SaveButton.LongHelp = "保存分析結果 To文件";
+AnalysisFrame.Title = "分析 ";
+
+LegendFrame.ResultLegendLabel.Title = " N:不計算       O: 可達到       X: 不可達到";
+LegendFrame.ExampleNoFlipFlip.Title = " 第一個字母代表非碰撞結果   |  第而個字母代表碰撞結果";
+LegendFrame.OXExample.Title         = " OX  = 在非碰撞中是可達到；在碰撞中是不可達到。";
+
+Option.Title = " Options ";
+Option.AngularStep.Title = " Angle Step ";
+Option.AngularStep.Help = "Step角度";
+Option.AngularStep.ShortHelp = "焊槍搜索 Step角度";
+Option.AngularStep.LongHelp = "焊槍搜索 Step角度";
+Option.StepEditor.Help = "Step角度";
+Option.StepEditor.ShortHelp = "焊槍搜索 Step角度";
+Option.StepEditor.LongHelp = "焊槍搜索 Step角度";
+Option.CheckFlip.Title = " Check Flip ";
+Option.CheckFlip.Help = "檢查 Flip";
+Option.CheckFlip.ShortHelp = "翻轉 Weldgun 180 Deg And Check";
+Option.CheckFlip.LongHelp = "翻轉 Weldgun 180 Deg And Check";
+
+Option.CheckFlipButton.Title = " ";
+Option.ComputePieButton.Title = " ";
+
+Option.AllowFail.Title = " Allowed Failure ";
+Option.AllowFail.Help = "所有owed Failure";
+Option.AllowFail.ShortHelp = "If (不可達 Welds / Total Welds ) is bigger than the allowed Failure\n do不check the other焊接";
+Option.AllowFail.LongHelp = "The Allowed Failure is一個acceptance criteria allowing to quickly exclude weldguns even though the computation is不finished.\nThe Failure is defined by the ratio ( Number of non accessible welds / Total number of welds ).\nIf during the computation, this failure becomes greater than the allowed failure, the computation stops for the current weldgun.\nAllowed Failure = 0% means that weldguns that can不reach所有 welds are excluded.";
+Option.AllowFailEditor.Help = "所有owed Failure";
+Option.AllowFailEditor.ShortHelp = "If (不可達 Welds / Total Welds ) is bigger than the allowed Failure\n do不check the other焊接";
+Option.AllowFailEditor.LongHelp = "The Allowed Failure is一個acceptance criteria allowing to quickly exclude weldguns even though the computation is不finished.\nThe Failure is defined by the ratio ( Number of non accessible welds / Total number of welds ).\nIf during the computation, this failure becomes greater than the allowed failure, the computation stops for the current weldgun.\nAllowed Failure = 0% means that weldguns that can不reach所有 welds are excluded.";
+
+ComputeFrame.ComputeButton.Title = " 計算 ";
+ComputeFrame.ComputeButton.Help = "計算";
+ComputeFrame.ComputeButton.ShortHelp = "開始計算";
+ComputeFrame.ComputeButton.LongHelp = "開始計算";
+ComputeFrame.StopButton.Title =    "  Stop   ";
+ComputeFrame.StopButton.Help = "停止";
+ComputeFrame.StopButton.ShortHelp = "停止計算";
+ComputeFrame.StopButton.LongHelp = "停止計算";
+ComputeFrame.ResumeButton.Title =  " Resume  ";
+ComputeFrame.ResumeButton.Help = "重新開始";
+ComputeFrame.ResumeButton.ShortHelp = "重新開始計算";
+ComputeFrame.ResumeButton.LongHelp = "重新開始計算";
+ComputeFrame.ToleranceFrame.CollisionTolerance.Title = "                                     碰撞公差  ";
+
+ActivityFrame.Title = "動作";
+ActivityFrame.AssignButton.Title = " Assign焊槍Activity ";
+ActivityFrame.AssignButton.Help = "指派焊槍動作";
+ActivityFrame.AssignButton.ShortHelp = "指派 Selected焊槍動作";
+ActivityFrame.AssignButton.LongHelp = "指派 Selected Weldgun to選擇動作";
+
+ButtonFrame.TempLabel1.Title = "      ";
+ButtonFrame.CloseButton.Title = "關閉";
+ButtonFrame.CloseButton.Help = "關閉";
+ButtonFrame.CloseButton.ShortHelp = "關閉分析窗口";
+ButtonFrame.CloseButton.LongHelp = "關閉焊槍Search 分析結果 Window";
+ButtonFrame.BackButton.Title =  "  < Back   ";
+ButtonFrame.BackButton.Help =  "返回";
+ButtonFrame.BackButton.ShortHelp =  "Back To Previous Window";
+ButtonFrame.BackButton.LongHelp =  "Back To Previous 焊槍搜索 Window";
+
+Option.AnalyseAll.Title = "分析全部";
+Option.AnalyseAll.Help = "選擇to compute PIE for 360 degrees";
+Option.AnalyseAll.ShortHelp = "選擇to compute PIE for 360 degrees";
+Option.AnalyseAll.LongHelp = "選擇to compute PIE for 360 degrees";
+
+PieFrame.Title = "Pie";
+PieFrame.ShowPie.Title = "顯示餅形";
+PieFrame.ShowPie.ShortHelp = "顯示/隱藏 Pie";
+PieFrame.ShowPie.LongHelp = "選擇to show pie";
+
+
+// 3951 校正官方漢化 END WIZARD REPLACEMENT ZONE

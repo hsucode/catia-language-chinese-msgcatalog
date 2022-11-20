@@ -1,0 +1,67 @@
+// 3951 校正官方漢化
+// 3951 校正官方漢化 ------------------------------------------------------------
+// 3951 校正官方漢化 |
+// 3951 校正官方漢化 | This file contains the strings recognized in PLM Toolbar Search text field
+// 3951 校正官方漢化 | enabling the user to trigger specific commands.
+// 3951 校正官方漢化 |
+// 3951 校正官方漢化 | WARNING: this file complements Predefined queries definition files
+// 3951 校正官方漢化 |          resources\plmsearch\plmtoolbar\PQ_xxx.CATRsc
+// 3951 校正官方漢化 |          resources\msgcatalog\PQ_xxx.CATNls
+// 3951 校正官方漢化 |
+// 3951 校正官方漢化 ------------------------------------------------------------
+// 3951 校正官方漢化
+// 3951 校正官方漢化 ------------------------------------------------------------
+// 3951 校正官方漢化 | Special names for Keyboard Input
+// 3951 校正官方漢化 ------------------------------------------------------------
+// 3951 校正官方漢化 For the following translations, the names of the commands, as well as the name for 
+// 3951 校正官方漢化 the shortcuts MUST BE distinctive
+// 3951 校正官方漢化   from each other
+// 3951 校正官方漢化 AND
+// 3951 校正官方漢化   from the one's declared in  resources\msgcatalog\PQ_xxx.CATNls files
+// 3951 校正官方漢化
+// 3951 校正官方漢化 In case of a clash, choose the name of the shortcut the shortest possible to be 
+// 3951 校正官方漢化 differentiable
+// 3951 校正官方漢化 Priority rule: The shortcut for Command has the highest priority level:
+// 3951 校正官方漢化   command -> c
+// 3951 校正官方漢化   color   -> col
+// 3951 校正官方漢化 Priority rule: The shortcut for Search is independant from others:
+// 3951 校正官方漢化   search -> s
+// 3951 校正官方漢化   set    -> s
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Example: If 2 commands' names are plane and planification
+// 3951 校正官方漢化          choose plane and plani for the 2 associate shortcuts
+
+// 3951 校正官方漢化 ------------------------------------------------------------
+// 3951 校正官方漢化 | Find command and options
+// 3951 校正官方漢化 | Select under currently selected node all the elements whose ...
+// 3951 校正官方漢化 | replacing the selection (default behavior) 
+// 3951 校正官方漢化 ------------------------------------------------------------
+
+// 3951 校正官方漢化  name to launch Find command
+// 3951 校正官方漢化  usage: "find:hello" : Select ... whose name in graph contains hello
+Find="在會話中搜索對象";
+Find.Shortcut="查找";
+
+// 3951 校正官方漢化  string to characterize the name of an object as shown in the specification tree (graph)
+// 3951 校正官方漢化  usage: "su:g:hello" : Select ... whose name in graph contains hello
+// 3951 校正官方漢化         Notice that this is the default mode: "su:g,hello" <=> "su:hello"
+NameInGraph="圖中的名稱";
+NameInGraphShortcut="g";
+
+// 3951 校正官方漢化  string to characterize the name of an object
+// 3951 校正官方漢化  usage: "su:n:hello" : Select ... whose name contains hello
+Name="名稱";
+NameShortcut="n";
+
+// 3951 校正官方漢化  string to characterize the type of an object 
+// 3951 校正官方漢化  usage: "su:t:part" : Select ... whose type is the one defined in part predefined query
+Type="類型";
+TypeShortcut="t";
+
+// 3951 校正官方漢化  string to characterize the Keep selection mode
+// 3951 校正官方漢化  usage: "su:t:part +:" : Select ... whose type is the one defined in part predefined query
+// 3951 校正官方漢化                         and keep selected nodes
+KeepSelection="保留選擇";
+KeepSelectionShortcut="+";
+
+

@@ -1,0 +1,33 @@
+// 3951 校正官方漢化--------------------------------------------------------------------
+// 3951 校正官方漢化 Mechanism assembly specific errors
+// 3951 校正官方漢化 (TODO: rework the messages with FBP)
+// 3951 校正官方漢化--------------------------------------------------------------------
+// 3951 校正官方漢化 Assembly Cycle
+AssemblyCycle.Request="機械裝置裝配體包含一個循環。";
+AssemblyCycle.Diagnostic="機械裝置裝配體包含以下循環：/P01。
+最后一個機械裝置已直接或間接裝配。禁止循環。
+必須移除機械裝置之間鏈接。/P02";
+
+// 3951 校正官方漢化 Wrong specification tree branch
+MechanismWrongBranch.Request="已裝配機械裝置所在的位置非法。";
+MechanismWrongBranch.Diagnostic="機械裝置裝配體無法裝配機械裝置 /P01，因為其在結構樹中所處的位置非法。只有與該機械裝置裝配體同一級別或同一樹分支以下的位置才是合法位置。/P02";
+MechanismWrongBranch.Repair="\n此機械裝置已自動拆解。";
+
+// 3951 校正官方漢化 Broken PLO
+BrokenMechanismPLO.Request="應隔離指向機械裝置的中斷鏈接。";
+BrokenMechanismPLO.Diagnostic="機械裝置裝配體的鏈接編號 /P01 中斷。此鏈接應當隔離。/P02";
+BrokenMechanismPLO.Repair="\n此鏈接已自動隔離。";
+
+// 3951 校正官方漢化 MCX not instantiated
+MCXnotInstantiated.Request="裝配體級別缺少工程連接。";
+MCXnotInstantiated.Diagnostic="該機械裝置裝配體無法裝配機械裝置 /P01，因為其工程連接未在機械裝置裝配體級別實例化。
+要實例化的缺少工程連接為：/P02。/P03";
+MCXnotInstantiated.Repair="\n此機械裝置已自動拆解。";
+
+// 3951 校正官方漢化 Mechanisms not disjoint
+MechanismsNotDisjoint.Request="機械裝置未解體。";
+MechanismsNotDisjoint.Diagnostic="機械裝置 /P01 的工程連接 /P03 與機械裝置 /P02 的工程連接 /P04 共享同樣的影響產品。
+因此，機械裝置 /P01 和機械裝置 /P02 并非解體裝置。因此，機械裝置裝配體可能受到約束，也可能包含相互依賴的命令。/P05";
+
+
+

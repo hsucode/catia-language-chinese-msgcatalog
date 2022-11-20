@@ -1,0 +1,114 @@
+
+// 3951 校正官方漢化=================================================================
+// 3951 校正官方漢化 COPYRIGHT DASSAULT SYSTEMES 2005
+// 3951 校正官方漢化=================================================================
+// 3951 校正官方漢化 VPM (c) Copyright Dassault Systemes 2005
+// 3951 校正官方漢化=================================================================
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Usage Notes:               This is a PLM ERRORS Catalog
+// 3951 校正官方漢化
+// 3951 校正官方漢化
+// 3951 校正官方漢化 In this catalog can be declared ONLY PLM ERRORS.
+// 3951 校正官方漢化 Please refer to the PES PLM Error Managment for the definition of a PLM error.
+// 3951 校正官方漢化
+// 3951 校正官方漢化 Any error of this catalog must be described with :
+// 3951 校正官方漢化
+// 3951 校正官方漢化 - a Definition   :    \\ DEFINTION_WITTEN_WITH_CAPITAL_LETTERS
+// 3951 校正官方漢化 - the Mode of Treatment of this error : to be interpreted by ... / to be converted   (comment form)
+// 3951 校正官方漢化 - an Error Key & associated description :   MyErrKey.Diagnostic = "........";
+// 3951 校正官方漢化                                             MyErrKey.Request    = "........";
+// 3951 校正官方漢化                                             MyErrKey.Advice     = "........";
+// 3951 校正官方漢化 - Diagnostic,Advice,Request's nls parameters documentation :   
+// 3951 校正官方漢化                                             /p :  content,  ...
+// 3951 校正官方漢化
+// 3951 校正官方漢化   Diagnostic : what exactly happens
+// 3951 校正官方漢化   Advice     : what to do to solve the error or understand it better
+// 3951 校正官方漢化   Request    : for "by action" error only, expresses what is requested on the PLM component to prevent this error. 
+// 3951 校正官方漢化                This field can be empty.
+// 3951 校正官方漢化
+// 3951 校正官方漢化   This fields are to write in understandable terms for the end user (no debug messages!)
+// 3951 校正官方漢化
+// 3951 校正官方漢化   These fields may be empty : if the error is not understandable in end user terms 
+// 3951 校正官方漢化   (no more possible explanation than "the action failed") these fields may be empty
+// 3951 校正官方漢化   This means that the PLM error is only dedicated to interpretration use. 
+// 3951 校正官方漢化
+// 3951 校正官方漢化   The  nls parameters (/p1, ...) that may be included in the Diagnostic,Advice,Request fields 
+// 3951 校正官方漢化   haved to be documented !
+// 3951 校正官方漢化
+// 3951 校正官方漢化=================================================================
+
+
+
+
+
+// 3951 校正官方漢化 **************   FURTHER SERVER ERRORS TO PLM ERRORS : MAPPING   **************
+// 3951 校正官方漢化
+// 3951 校正官方漢化 FROM ENOVPLMIntegrationErrors.CATNls  :
+// 3951 校正官方漢化
+// 3951 校正官方漢化 OperationError                               --->  PLM_NotFirstVersionNotModifiable
+// 3951 校正官方漢化
+// 3951 校正官方漢化 *********************************************************************************
+
+
+
+
+
+
+
+
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化
+// 3951 校正官方漢化 Query, Expand, Open, Save ( modif or delete ),new version              + lock, unlock ?
+// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化// 3951 校正官方漢化
+
+
+
+// 3951 校正官方漢化 INFORMING OF AT LEAST ONE ACTION FAILURE
+// 3951 校正官方漢化 To be interpreted by the client engine ( -> "hushing up" : no communication of this error to the listener)
+PLM_AtLeastOneActionFailure.Request="";
+PLM_AtLeastOneActionFailure.Diagnostic="至少一個操作失敗";
+PLM_AtLeastOneActionFailure.Advice="請讀取操作狀態";
+
+
+
+// 3951 校正官方漢化 SERVER CORRUPTION
+// 3951 校正官方漢化 To be converted by the client engine 
+// 3951 校正官方漢化 Note :
+// 3951 校正官方漢化  - This error is not to use in an action status  : 
+// 3951 校正官方漢化    only global status is allowed to inform (in a compact way) that a unsolvable system probem occurs
+// 3951 校正官方漢化  In Diagnostic's /p : Precision on which system problem occurs: this is DEBUG information
+PLM_CorruptedServer.Diagnostic="服務器會話已損壞";
+PLM_CorruptedServer.Advice="重新啟動您的服務器進程并聯系支持中心（調試信息：\p）";
+PLM_CorruptedServer.Request="";
+
+
+// 3951 校正官方漢化 ADMINISTRATION PROBLEM
+// 3951 校正官方漢化 To be converted by the client engine 
+// 3951 校正官方漢化 This error is  ONE OF THE 2 ERRRORS THAT CAN BE USED FOR A "GLOBAL" OR A "BY ACTION" STATUS
+// 3951 校正官方漢化  In Diagnostic's /p : Precision on which administration problem occurs: this is DEBUG information
+PLM_SystemPbDueToAdmin.Diagnostic="問題與您的管理有關。\n（管理員的信息：/p）";
+PLM_SystemPbDueToAdmin.Advice="請聯系管理員";
+PLM_SystemPbDueToAdmin.Request="";
+
+
+
+// 3951 校正官方漢化 Possible traitment des err systeme dans le futur, si on ne choisit pas de les remonter uniquement via .params
+// 3951 校正官方漢化 SYSTEM ERROR 
+// 3951 校正官方漢化 To be converted by the client engine 
+// 3951 校正官方漢化 This error is ONE OF THE 2 ERRRORS THAT CAN BE USED FOR A "GLOBAL" OR A "BY ACTION" STATUS
+// 3951 校正官方漢化  In Diagnostic's /p : Precision on which system problem occurs: this is DEBUG information
+PLM_SystemPb.Diagnostic="服務器中出現系統問題。\n（要報告給支持中心的信息：/p）";
+PLM_SystemPb.Advice="請聯系支持中心。";
+PLM_SystemPb.Request="";
+
+PLM_SystemVaultNotFound.Diagnostic="找不到資源庫";
+PLM_SystemVaultNotFound.Advice="請檢查啟用資源庫使用的服務器資源庫設置";
+PLM_SystemVaultNotFound.Request="";
+
+_PLM_NOT_ENOUGH_MEMORY_.Request="";
+_PLM_NOT_ENOUGH_MEMORY_.Diagnostic="已超過服務器內存容量";
+_PLM_NOT_ENOUGH_MEMORY_.Advice="嘗試減小交易大小";
+
+// 3951 校正官方漢化 NO ACCESS RIGHTS FOR THE OPERATION
+PLM_SecurityDenied.Request="";
+PLM_SecurityDenied.Diagnostic="安全信息：您沒有繼續執行該操作的訪問權限。";
+PLM_SecurityDenied.Advice="聯系您的安全管理員，以了解訪問受限的原因。";

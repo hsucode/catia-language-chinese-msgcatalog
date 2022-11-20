@@ -1,0 +1,263 @@
+
+Title="切割";
+
+FrameDef.Title="定義及輸出";
+FrameDef.LongHelp="可以定義截面平面名稱。";
+
+FramePos.Title="位置";
+FramePos.LongHelp="可以定義截面平面位置";
+
+FrameDef.3DCut.Title="剪切";
+FrameDef.3DCut.ShortHelp="剪切包絡體";
+FrameDef.3DCut.Help="激活/取消激活剪切包絡體";
+FrameDef.3DCut.LongHelp="剪切包絡體\n激活該選項會從平面切除材料，\n因此會使產品出現一個腔體。\n取消激活該選項可以恢復被切除的材料。";
+
+
+FramePos.PosInvert.Title="反轉";
+FramePos.PosInvert.ShortHelp="反轉法線";
+FramePos.PosInvert.Help="反轉切割工具的法線";
+FramePos.PosInvert.LongHelp="反轉法線\n反轉切割工具的法線。";
+
+FramePos.PosReset.Title="重置";
+FramePos.PosReset.ShortHelp="重置位置";
+FramePos.PosReset.Help="恢復切割工具的原始位置";
+FramePos.PosReset.LongHelp="文本位置\n恢復切割工具的原始位置。";
+
+FrameBehavior.Title="行為";
+FrameBehavior.LongHelp="可以定義截面行為。";
+
+FrameBehavior.BehaviorUpdate.Title="更新";
+FrameBehavior.BehaviorUpdate.ShortHelp="截面更新模式";
+FrameBehavior.BehaviorUpdate.Help="為當前截面激活更新模式";
+FrameBehavior.BehaviorUpdate.LongHelp="激活更新模式，在此模式中，截面結果可以從凍結模式自動修改和更新。";
+
+FrameBehavior.BehaviorFreeze.Title="凍結截面";
+FrameBehavior.BehaviorFreeze.ShortHelp="截面凍結模式";
+FrameBehavior.BehaviorFreeze.Help="為當前截面激活凍結模式";
+FrameBehavior.BehaviorFreeze.LongHelp="激活凍結模式，從而防止當前截面結果被修改。";
+
+
+ToolBar.ExitCommand.Title="退出";
+ToolBar.ExitCommand.ShortHelp="退出";
+ToolBar.ExitCommand.Help="結束編輯切割結果";
+ToolBar.ExitCommand.LongHelp="退出\n結束編輯切割結果。";
+
+NetOfPlaneDefinition.Title="平面網";
+NetOfPlaneDefinition.LongHelp="平面網\n設置截面平面數。";
+
+ToolBar.PosTargetIconBox.PosTarget.Title="選擇";
+ToolBar.PosTargetIconBox.PosTarget.ShortHelp="幾何目標";
+ToolBar.PosTargetIconBox.PosTarget.Help="通過圖形選擇來定義切割工具";
+ToolBar.PosTargetIconBox.PosTarget.LongHelp="幾何目標\n通過圖形選擇來定義切割工具。";
+
+ToolBar.PosTargetIconBox.PosTargetCylinder.Title="選擇";
+ToolBar.PosTargetIconBox.PosTargetCylinder.ShortHelp="幾何目標";
+ToolBar.PosTargetIconBox.PosTargetCylinder.Help="根據選擇的幾何圖形、所檢測到的孔以及圓柱面來定位切割工具";
+ToolBar.PosTargetIconBox.PosTargetCylinder.LongHelp="幾何圖形目標\n通過圖形選擇來定義切割工具\n檢測孔以及圓柱面\n同時定位垂直于對象的截面平面。";
+
+FramePos.PosTarget.Title="選擇";
+FramePos.PosTarget.ShortHelp="幾何目標";
+FramePos.PosTarget.Help="根據選擇的幾何圖形、所檢測到的孔以及圓柱面來定位切割工具";
+FramePos.PosTarget.LongHelp="幾何圖形目標\n通過圖形選擇來定義切割工具\n檢測孔以及圓柱面\n同時定位垂直于對象的截面平面。";
+
+TabContainer.FrameDef.Title="定義";
+TabContainer.FrameDef.ShortHelp="定義";
+TabContainer.FrameDef.LongHelp="可以定義截面平面名稱.";
+
+TabContainer.FramePos.Title="定位";
+TabContainer.FramePos.ShortHelp="定位";
+TabContainer.FramePos.LongHelp="可以定義截面平面位置";
+
+TabContainer.FramePos.InvisibleLabel0.Title="      ";
+TabContainer.FramePos.InvisibleLabel1.Title="      ";
+TabContainer.FramePos.InvisibleLabel2.Title="      ";
+TabContainer.FramePos.InvisibleLabel3.Title="      ";
+TabContainer.FramePos.InvisibleLabel4.Title="      ";
+
+TabContainer.FrameBehavior.Title="行為";
+TabContainer.FrameBehavior.ShortHelp="行為";
+TabContainer.FrameBehavior.LongHelp="可以定義截面的行為（更新或凍結）";
+
+
+SPA_SECTION_PLANE.TypeName="截面平面";
+SPA_SECTION_RESULT.TypeName="截面";
+
+
+
+TabContainer.FramePos.Pos3Pts.ShortHelp="通過 2/3 選擇定位";
+TabContainer.FramePos.Pos3Pts.Help="通過 2/3 選擇定位";
+TabContainer.FramePos.Pos3Pts.LongHelp="通過選擇 3 個點、2 條線或 1 點/1 線進行定位";
+
+ErreurPointSame="選擇不同于上一選擇的點。";
+ErreurVectNonCopl="選擇與上一選擇共面的線。";
+ErreurPointLineaire="選擇與上一選擇不共面的點。";
+ErreurLignePointLineaire="選擇不包含第一個選定點的線。";
+ErreurVectIdentical="選擇與前面所選的線不共面的線。";
+
+Pos3Ptstate1="選擇要捕捉的第一項";
+Pos3Ptstate2="選擇要捕捉的第二項";
+Pos3Ptstate3="選擇要捕捉的第三項";
+
+
+TabContainer.FramePos.PosInvert.Title="反轉";
+TabContainer.FramePos.PosInvert.ShortHelp="反轉法線";
+TabContainer.FramePos.PosInvert.Help="反轉切割工具的法線";
+TabContainer.FramePos.PosInvert.LongHelp="反轉法線\n反轉切割工具的法線。";
+
+TabContainer.FramePos.PosReset.Title="重置";
+TabContainer.FramePos.PosReset.ShortHelp="重置位置";
+TabContainer.FramePos.PosReset.Help="恢復切割工具的原始位置";
+TabContainer.FramePos.PosReset.LongHelp="文本位置\n恢復切割工具的原始位置。";
+
+TabContainer.FramePos.PosTarget.Title="選擇";
+TabContainer.FramePos.PosTarget.ShortHelp="幾何目標";
+TabContainer.FramePos.PosTarget.Help="根據選擇的幾何圖形、所檢測到的孔以及圓柱面來定位切割工具";
+TabContainer.FramePos.PosTarget.LongHelp="幾何圖形目標\n通過圖形選擇來定義切割工具\n檢測孔以及圓柱面\n同時定位垂直于對象的截面平面。";
+
+TabContainer.FrameBehavior.BehaviorUpdate.Title="更新";
+TabContainer.FrameBehavior.BehaviorUpdate.ShortHelp="截面更新模式";
+TabContainer.FrameBehavior.BehaviorUpdate.Help="為當前截面激活更新模式";
+TabContainer.FrameBehavior.BehaviorUpdate.LongHelp="激活更新模式，在此模式中，截面結果可以從凍結模式自動修改和更新";
+
+TabContainer.FrameBehavior.BehaviorFreeze.Title="凍結截面";
+TabContainer.FrameBehavior.BehaviorFreeze.ShortHelp="截面凍結模式";
+TabContainer.FrameBehavior.BehaviorFreeze.Help="為當前截面激活凍結模式";
+TabContainer.FrameBehavior.BehaviorFreeze.LongHelp="激活凍結模式，從而防止當前截面結果被修改.";
+
+
+TabContainer.FrameDef.Frame2Def.3DCut.Title="剪切";
+TabContainer.FrameDef.Frame2Def.3DCut.ShortHelp="剪切包絡體";
+TabContainer.FrameDef.Frame2Def.3DCut.Help="激活/取消激活剪切包絡體";
+TabContainer.FrameDef.Frame2Def.3DCut.LongHelp="剪切包絡體\n激活該選項會從平面切除材料，\n因此會使產品出現一個腔體。\n取消激活該選項可以恢復被切除的材料。";
+
+TabContainer.FrameResult.myFirstLineFrameResult.iconRempli4.Title="          ";
+
+TabContainer.FrameDefinition.mySecondFrameDefinition.spaceLabel1.Title="     ";
+TabContainer.FrameDefinition.mySecondFrameDefinition.spaceLabel2.Title="  ";
+
+TabContainer.FrameGeneralP1.Title="定義";
+TabContainer.FrameGeneralP1.ShortHelp="定義";
+TabContainer.FrameGeneralP1.LongHelp="可以定義截面平面名稱\n和要完成截面的選擇。";
+
+TabContainer.FramePosP1.Title="定位";
+TabContainer.FramePosP1.ShortHelp="定位";
+TabContainer.FramePosP1.LongHelp="可以定義截面平面位置";
+
+
+TabContainer.FrameGeneralP1.3DCut.Title="剪切";
+TabContainer.FrameGeneralP1.3DCut.ShortHelp="剪切包絡體";
+TabContainer.FrameGeneralP1.3DCut.Help="激活/取消激活剪切包絡體";
+TabContainer.FrameGeneralP1.3DCut.LongHelp="剪切包絡體\n激活該選項會從平面切除材料，\n因此會使產品出現一個腔體。\n取消激活該選項可以恢復被切除的材料。";
+
+
+TabContainer.FrameGeneralP1.spaceLabel1.Title="                ";
+
+
+TabContainer.FramePosP1.InvisibleLabel0.Title="      ";
+TabContainer.FramePosP1.InvisibleLabel1.Title="      ";
+TabContainer.FramePosP1.InvisibleLabel2.Title="      ";
+TabContainer.FramePosP1.InvisibleLabel3.Title="      ";
+TabContainer.FramePosP1.InvisibleLabel4.Title="      ";
+
+TabContainer.FramePosP1.Pos3Pts.ShortHelp="通過 2/3 選擇定位";
+TabContainer.FramePosP1.Pos3Pts.Help="通過 2/3 選擇定位";
+TabContainer.FramePosP1.Pos3Pts.LongHelp="通過選擇 3 個點、2 條線或 1 點/1 線進行定位";
+
+TabContainer.FramePosP1.PosInvert.Title="反轉";
+TabContainer.FramePosP1.PosInvert.ShortHelp="反轉法線";
+TabContainer.FramePosP1.PosInvert.Help="反轉切割工具的法線";
+TabContainer.FramePosP1.PosInvert.LongHelp="反轉法線\n反轉切割工具的法線。";
+
+
+TabContainer.FramePosP1.PosReset.Title="重置";
+TabContainer.FramePosP1.PosReset.ShortHelp="重置位置";
+TabContainer.FramePosP1.PosReset.Help="恢復切割工具的原始位置";
+TabContainer.FramePosP1.PosReset.LongHelp="文本位置\n恢復切割工具的原始位置。";
+
+TabContainer.FramePosP1.PosTarget.Title="選擇";
+TabContainer.FramePosP1.PosTarget.ShortHelp="幾何目標";
+TabContainer.FramePosP1.PosTarget.Help="根據選擇的幾何圖形、所檢測到的孔以及圓柱面來定位切割工具";
+TabContainer.FramePosP1.PosTarget.LongHelp="幾何圖形目標\n通過圖形選擇來定義切割工具\n檢測孔以及圓柱面\n同時定位垂直于對象的截面平面。";
+
+TabContainer.FrameResult.myFirstLineFrameResult.3DCut.Title="剪切";
+TabContainer.FrameResult.myFirstLineFrameResult.3DCut.ShortHelp="剪切包絡體";
+TabContainer.FrameResult.myFirstLineFrameResult.3DCut.Help="激活/取消激活剪切包絡體";
+TabContainer.FrameResult.myFirstLineFrameResult.3DCut.LongHelp="剪切包絡體\n激活該選項會從平面切除材料，\n因此會使產品出現一個腔體。\n取消激活該選項可以恢復被切除的材料。";
+
+TabContainer.FrameDef.Frame2Def.CutOrCulling.3DCut.Title="剪切";
+TabContainer.FrameDef.Frame2Def.CutOrCulling.3DCut.ShortHelp="剪切包絡體";
+TabContainer.FrameDef.Frame2Def.CutOrCulling.3DCut.Help="激活/取消激活剪切包絡體";
+TabContainer.FrameDef.Frame2Def.CutOrCulling.3DCut.LongHelp="剪切包絡體\n激活該選項會從平面切除材料，\n因此會使產品出現一個腔體。\n取消激活該選項可以恢復被切除的材料。";
+
+
+// 3951 校正官方漢化============================================================================
+// 3951 校正官方漢化 for the interactive bubble
+// 3951 校正官方漢化============================================================================
+DisplayBubbleShort="修改截面顯示";
+DisplayModeBubbleShort="修改截面類型";
+DisplayContourShort="僅顯示截面的輪廓和上下文";
+DisplayContourWithoutCtxtShort="僅顯示截面的輪廓";
+DisplayGridAndContourShort="顯示截面的輪廓和網格";
+DisplayPlaneAndContourShort="顯示截面的輪廓和平面";
+
+HideShowSection="隱藏/顯示截面";
+DeleteSection="刪除截面";
+CutSceneRender="顯示截面正面分割";
+NoCutSceneRender="隱藏截面分割";
+CutSceneRenderBack="顯示截面背面分割";
+CutSceneRenderAuto="總是顯示截面分割";
+SceneRenderType="更改截面分割的顯示";
+goToPosSection="將截面平面查看器移動到定義的位置";
+goToNormalOfSection="移動到截面平面";
+switchXYZandUVW="切換 XYZ 和 UVW 模式";
+defineHomePosition="將當前截面平面位置定義為“主頁”位置";
+goToXSection="將截面平面移動到 X 位置";
+goToYSection="將截面平面移動到 Y 位置";
+goToZSection="將截面平面移動到 Z 位置";
+goToUSection="將截面平面移動到 U 位置";
+goToVSection="將截面平面移動到 V 位置";
+goToWSection="將截面平面移動到 W 位置";
+goToResetSection="恢復截面平面的原始位置";
+goTo23Posdirection="精確指定截面平面的位置";
+sectionGridOptions="管理網格選項";
+sectionGridIntervalleDown="減少網格的直線數";
+sectionGridIntervalleUp="增加網格的直線數";
+sectionGridIntervalleEdit="編輯網格的直線數";
+sectionGridAbsolut="在“絕對”/“相對”之間更改網格模式";
+sectionDisplayModePlane="顯示平面";
+sectionDisplayModeSlice="顯示截片";
+sectionDisplayModeBox="顯示框";
+sectionGraphicProp="更改截面的圖形屬性";
+cbChangePropShort="更改截面的屬性";
+TextSliderSectionTitle="截面平面";
+UTextGridEditorLabel="U 間距";
+VTextGridEditorLabel="V 間距";
+section2DViewer="激活/取消激活次要查看器";
+validateOKSection="驗證截面";
+updateModeSection="在“更新模式”和“凍結模式”間切換";
+
+// 3951 校正官方漢化============================================================================
+// 3951 校正官方漢化 2,3 positionning dialog
+// 3951 校正官方漢化============================================================================
+position3PointState1="選擇要捕捉的第一項";
+position3PointState2="選擇要捕捉的第二項";
+position3PointState3="選擇要捕捉的第三項";
+
+ErreurPointSame="選擇不同于上一選擇的點。";
+ErreurVectNonCopl="選擇與上一選擇共面的線。";
+ErreurPointLineaire="選擇與上一選擇不共面的點。";
+ErreurLignePointLineaire="選擇不包含第一個選定點的線。";
+ErreurVectIdentical="選擇與前面所選的線不共面的線。";
+
+secondaryWindowName="次要查看器 ";
+secondaryWindowNameNP="次要查看器";
+
+FillInShortHelp="填充顏色";
+Lock2DShortHelp="鎖定 2D 視點";
+
+// 3951 校正官方漢化 GZT : Switch Secondary Viewer HL
+SwitchViewerToMDIShortHelp="切換至 MDI 查看器";
+SwitchViewerToDlgDialogShortHelp="切換至對話查看器";
+secondaryMDIWindowName="次要 MDI 查看器 ";
+secondaryMDIWindowNameNP="次要 MDI 查看器";
+

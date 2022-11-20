@@ -1,0 +1,43 @@
+NO_CURRENT_OBJECT_FOR_INSTANCE.Request="要對類進行實例化，必須將其激活。";
+NO_CURRENT_OBJECT_FOR_INSTANCE.Diagnostic="當前無活動 Modelica 類。";
+NO_CURRENT_OBJECT_FOR_INSTANCE.Advice="激活 Modelica 類。";
+
+INSTANCIATE_IN_NON_AUTHORABLE.Request="您不能在無法編輯的類中進行實例化操作。";
+INSTANCIATE_IN_NON_AUTHORABLE.Diagnostic="無法修改已激活的類。";
+INSTANCIATE_IN_NON_AUTHORABLE.Advice="請確保當前對象不為只讀（已實例化為實例的類）";
+
+INSTANCIATE_IN_NON_MCA_CLASS.Request="必須在 Modelica 類中完成實例化。";
+INSTANCIATE_IN_NON_MCA_CLASS.Diagnostic="當前對象不是 Modelica 類。";
+INSTANCIATE_IN_NON_MCA_CLASS.Advice="激活 Modelica 類。";
+
+INSTANCIATE_NON_MCA_CLASS.Request="只有 Modelica 類才能實例化。";
+INSTANCIATE_NON_MCA_CLASS.Diagnostic="您嘗試實例化的對象不是 Modelica 類。";
+INSTANCIATE_NON_MCA_CLASS.Advice="實例化 Modelica 類。";
+
+DROP_INTERNAL_ERROR.Request="無法執行此實例化操作";
+DROP_INTERNAL_ERROR.Diagnostic="實例化時發生內部錯誤。";
+DROP_INTERNAL_ERROR.Advice="重試您的操作。";
+
+TARGET_NON_EDITABLE.Request="不允許在只讀的 Modelica 類中進行實例化。";
+TARGET_NON_EDITABLE.Diagnostic="當前對象在會話中為只讀。";
+TARGET_NON_EDITABLE.Advice="更改可編輯性狀態。";
+
+INSTANCIATION_OF_PLMCONNECTORS_FORBIDDEN.Request="實例化 PLMConnectors 中的連接器";
+INSTANCIATION_OF_PLMCONNECTORS_FORBIDDEN.Diagnostic="不允許實例化 PLMConnectors 中的連接器。";
+INSTANCIATION_OF_PLMCONNECTORS_FORBIDDEN.Advice="實例化某個已授權的類。";
+
+INSTANCIATE_IN_PLMCONNECTORS_FORBIDDEN.Request="在 PLMConnectors 中創建部件";
+INSTANCIATE_IN_PLMCONNECTORS_FORBIDDEN.Diagnostic="禁止實例化 PLMConnectors 包中的部件。";
+INSTANCIATE_IN_PLMCONNECTORS_FORBIDDEN.Advice="在已授權的類中進行實例化。";
+
+FAIL_CHECKING_PLMITF_RULES.Request="發生未知錯誤";
+FAIL_CHECKING_PLMITF_RULES.Diagnostic="無法檢查是實例還是其目標為 PLMInterfaces。";
+FAIL_CHECKING_PLMITF_RULES.Advice="重試您的操作。";
+
+INITIAL_SCALE_ERROR.Request="無法執行此實例化操作";
+INITIAL_SCALE_ERROR.Diagnostic="部件的初始標度為 0。";
+INITIAL_SCALE_ERROR.Advice="更改部件類的初始標度。";
+
+COORDINATE_SYSTEM_ERROR.Request="無法執行此實例化操作";
+COORDINATE_SYSTEM_ERROR.Diagnostic="圖標的坐標系統不正確";
+COORDINATE_SYSTEM_ERROR.Advice="更改部件類的圖標坐標系統。";

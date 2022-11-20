@@ -1,0 +1,87 @@
+// 3951 校正官方漢化----------------------------------------------------------
+// 3951 校正官方漢化 Electrical Logical Editor - Manage Pin Allocation command 
+// 3951 校正官方漢化----------------------------------------------------------
+
+// 3951 校正官方漢化 Panel addins
+Title="引腳分配管理";
+
+// 3951 校正官方漢化 Result window
+ExitPanelMessage="關閉引腳分配管理面板";
+
+// 3951 校正官方漢化 Action window
+LockInstanceInDatabase="鎖定數據庫中的部件";
+UnlockInstanceInDatabase="解除數據庫中部件的鎖定";
+UpdateSystemInDatabase="更新數據庫中的系統";
+LockInstanceInDatabaseSuccessful="鎖定成功完成";
+UnlockInstanceInDatabaseSuccessful="解除鎖定成功完成";
+UpdateSystemInDatabaseSuccessful="更新成功完成";
+CreationSuccessMessage="電氣保留操作成功完成：";
+RemoveSuccessMessage="電氣移除操作成功完成：";
+UpdateSuccessMessage="電氣屬性更新成功完成：";
+UnReserveAndUpdateSuccessMessage="電氣更新成功完成：";
+PinReserved="已保留引腳";
+PinsReserved="已保留多個引腳";
+PinUnReserved="已移除引腳";
+PinsUnReserved="已移除多個引腳";
+PairOfPinsReserved="已保留引腳對";
+PairsOfPinsReserved="已保留多個引腳對";
+PairOfPinsUnReserved="已移除引腳對";
+PairsOfPinsUnReserved="已移除多個引腳對";
+AttributeUpdate="已更新屬性";
+AttributesUpdate="已更新多個屬性";
+LockSuccessful="鎖定數據庫中的部件成功";
+PropagateSuccessful="將數據拓展到數據庫成功";
+UnlockSuccessful="解除數據庫中的部件鎖定成功";
+NoAction="無法執行操作\n選擇引腳或修改屬性";
+
+// 3951 校正官方漢化 Warning window
+ProblemSelection.Title="必須選擇引腳";
+InvalidSelection.Title="無效選擇";
+InvalidSelection.Message="必須選擇引腳";
+UnReserveInvalidSelection.Title="無效選擇";
+UnReserveInvalidSelection.Message="至少在樹中選擇一個保留的引腳";
+NoSelectedPinNodes_InvalidNumberOfPins.Title="無法保留引腳集";
+NoSelectedPinNodes_InvalidNumberOfPins.Message="選擇樹中的自由引腳集或輸入有效的引腳數。";
+ErrorInSelection.Title="選擇錯誤";
+ErrorInSelection.Message="僅選擇引腳節點";
+EquipmentWithNoPin.Title="設備不具有引腳";
+EquipmentWithNoPin.Message="選定的設備必須至少具有一個電氣引腳。";
+ConnectorWithNoPin.Title="連接器部件不具有引腳";
+ConnectorWithNoPin.Message="選定的連接器部件必須至少具有一個電氣引腳。";
+ConnectorPortWithNoGroupedPin.Title="連接器端口不具有引腳";
+ConnectorPortWithNoGroupedPin.Message="選定的連接器端口必須分組至少一個電氣引腳。";
+NoFreePinInSession.Title="在會話中找不到任何自由引腳";
+NoFreePinInSession.Message="添加新引腳或從數據庫更新您的系統。";
+NoFreePinsEnough.Title="無自由引腳";
+NoFreePinsEnough.Message="在會話中找不到足夠的自由引腳。";
+NoFreePinsFound.Title="無自由引腳";
+NoFreePinsFound.Message="在會話中找不到任何自由引腳。";
+NoFreePinInSessionAndDatabase.Title="在會話和數據庫中找不到任何自由引腳";
+NoFreePinInSessionAndDatabase.Message="添加新引腳或從數據庫更新您的系統。";
+NoFreePinInSessionAndDatabaseIC.Title="在會話和數據庫中找不到任何自由引腳";
+NoFreePinInSessionAndDatabaseIC.Message="界面連接器端口不具有相同的自由引腳數。";
+AlreadyLockedInDatabase.Title="并發工程情形";
+AlreadyLockedInDatabase.Message="其他會話已經請求了部件。";
+APinIsNoMoreFree.Title="引腳狀態";
+APinIsNoMoreFree.Message="其中一個選定的引腳不再自由。它已保留在數據庫中。";
+UnexpectedError.Title="意外情形";
+UnexpectedError.Message="不支持的情形。";
+
+// 3951 校正官方漢化 Dialog states
+CATELEditorManagePinAllocationCmd.SelectionState.Message="選擇電氣部件/連接器端口分組電氣引腳";
+CATELEditorManagePinAllocationCmd.PanelState.Message="引腳分配管理面板";
+CATELEditorManagePinAllocationCmd.ExitState.Message="退出命令";
+
+// 3951 校正官方漢化 Selection errors 
+ComponentMustBeAnInstance="無法選擇參考。";
+EquipmentMustHaveAtLeastOnePin="要選擇此設備，它必須至少具有一個引腳。";
+ConnectorCompMustHaveAtLeastOnePin="要選擇此連接器部件，它必須至少具有一個引腳。";
+SelectAConnectorPortOfThisConnectorInterface="選擇此連接器界面的連接器端口";
+InstanceNotSupported="無法為引腳分配管理選擇此類型的對象。";
+ConnectorPortMustHaveAtLeastOnePin="要選擇此連接器端口，它必須至少具有一個引腳。";
+ComponentOfConnectorMustBeElectrical="要選擇此連接器端口，其部件必須是電氣部件。";
+ComponentOfConnectorPortMustBeAnInstance="要選擇此連接器端口，其部件必須為系統中使用的部件。";
+PortNotSupported="無法為引腳分配管理選擇此類型的對象。";
+CouldNotFindHomologueConnectorPort="找不到同系連接器端口 \n創建具有相同引腳數量的連接器端口";
+CannotSupportMoreThanTwoConnectorPorts="界面連接器部件上不支持兩個以上的連接器端口。";
+InterfaceConnectorPortsMustHaveSameNumberOfPins="界面連接器端口必須有相同數量的分組電氣引腳。";

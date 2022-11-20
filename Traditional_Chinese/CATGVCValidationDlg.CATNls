@@ -1,0 +1,40 @@
+// 3951 校正官方漢化==============================================================================================
+// 3951 校正官方漢化 CATGVCValidationDlg Dialog Box ressources (boite de parametres)
+// 3951 校正官方漢化 25/03/2010  RCD : Creation
+// 3951 校正官方漢化==============================================================================================
+Title="比較參數";
+
+_pMainFrame.Title="主選項";
+
+_pDistanceLabel.Title="距離： ";
+_pMainFrame._pDistanceAndMethodFrame._pDistanceLabel.LongHelp="設置距離，在此距離下兩個區域被視作相同。";
+
+_pMethodLabel.Title="方法： ";
+_pMethodCombo.Value0="快速";
+_pMethodCombo.Value1="詳細";
+_pMainFrame._pDistanceAndMethodFrame._pMethodLabel.LongHelp="讓您選擇比較方法：\n- 快速：性能較高，精度較低，\n- 詳細：精度較高，性能較低。";
+
+_pDetailedOptionFrame.Title="詳細選項";
+
+_pMeshLabel.Title=" 網格： ";
+
+_pMeshCombo.Value0="大";
+_pMeshCombo.Value1="中等";
+_pMeshCombo.Value2="精度";
+_pMeshCombo.Value3="用戶參數";
+
+_pMoreFrame._pDetailedOptionFrame._pMeshLabel.LongHelp="讓您決定如何構建模型網格。\n大、中等和精度為自動方法，由命令控制。\n用戶參數讓您定義弦高的初始值和比較網格的步幅。";
+
+_pSagLabel.Title=" 弦高： ";
+_pMoreFrame._pDetailedOptionFrame._pSagLabel.LongHelp="當用曲率構建模型網格時，會應用一個弦錯誤。\n值越小，比較質量越高。但它比較耗時。";
+
+_pStepLabel.Title=" 步幅： ";
+_pMoreFrame._pDetailedOptionFrame._pStepLabel.LongHelp="定義比較網格的邊線的最大長度。\n值越小，比較質量越高。但它比較耗時。";
+
+_pNamesFrame.Title="選定的展示";
+_pNamesFrame._pModel1Label="參考： ";
+_pModel1Label.Title="參考： ";
+_pNamesFrame._pModel1Label.LongHelp="標識參考展示。";
+_pNamesFrame._pModel2Label="新建： ";
+_pModel2Label.Title="新建： ";
+_pNamesFrame._pModel2Label.LongHelp="標識與參考進行比較的新展示。";

@@ -1,0 +1,78 @@
+
+
+InputDoesNotContainAKnowledgeTemplate.Request.Expert="Input error";
+InputDoesNotContainAKnowledgeTemplate.Diagnostic.Expert=" Input /p1 does not reference a PLM Template. ";
+InputDoesNotContainAKnowledgeTemplate.Advice.Expert="Please check the valuation of input /p1 .";
+
+InputDoesNotContainAKnowledgeTemplate.Request.User="Input error";
+InputDoesNotContainAKnowledgeTemplate.Diagnostic.User="Input /p1 does not reference a PLM Template. ";
+InputDoesNotContainAKnowledgeTemplate.Advice.User="Check you previous selection if any or contact your expert.";
+
+InvalidKnowlegeTemplateRef.Request.Expert="Execution error";
+InvalidKnowlegeTemplateRef.Diagnostic.Expert="Error while loading Knowledge Template data.";
+InvalidKnowlegeTemplateRef.Advice.Expert="Please check the Knowledge Template.";
+
+InvalidKnowlegeTemplateRef.Request.User="Execution error";
+InvalidKnowlegeTemplateRef.Diagnostic.User="Error while loading Knowledge Template data.";
+InvalidKnowlegeTemplateRef.Advice.User="Please check the Knowledge Template.";
+
+InputDestinationDoesNotContainACATIPLMProducts.Request.Expert="Input error";
+InputDestinationDoesNotContainACATIPLMProducts.Diagnostic.Expert="Input Destination does not reference a Product Reference.";
+InputDestinationDoesNotContainACATIPLMProducts.Advice.Expert="Please check the valuation of input Destination.";
+
+InputDestinationDoesNotContainACATIPLMProducts.Request.User="Input error";
+InputDestinationDoesNotContainACATIPLMProducts.Diagnostic.User="Input Destination does not reference a Product Reference.";
+InputDestinationDoesNotContainACATIPLMProducts.Advice.User="Contact your expert.";
+
+//Destination is not edited in session
+DestinationIsNotEditedInSession.Request.Expert="Execution error";
+DestinationIsNotEditedInSession.Diagnostic.Expert="The component /p1 cannot be used as a destination. It does not have an editor in the session.";
+DestinationIsNotEditedInSession.Advice.Expert="Check your design.";
+
+DestinationIsNotEditedInSession.Request.User="Execution error";
+DestinationIsNotEditedInSession.Diagnostic.User="The component /p1 cannot be used as a destination. It does not have an editor in the session.";
+DestinationIsNotEditedInSession.Advice.User="Check you previous selection or contact your expert.";	
+
+NoWayToCreateUniqPLMIDForNewRef.Request.Expert="Input error";
+NoWayToCreateUniqPLMIDForNewRef.Diagnostic.Expert="Impossible to create an identifier to the new references.";
+NoWayToCreateUniqPLMIDForNewRef.Advice.Expert="Please define a prefix and a suffix on the behavior or use the customization rule.";
+
+NoWayToCreateUniqPLMIDForNewRef.Request.User="Input error";
+NoWayToCreateUniqPLMIDForNewRef.Diagnostic.User="Impossible to create an identifier to the new references.";
+NoWayToCreateUniqPLMIDForNewRef.Advice.User="Contact your expert.";
+
+NotAUniqPLMID.Request.Expert="Execution error";
+NotAUniqPLMID.Diagnostic.Expert="PLMID for the instantiated template may already exist in the database.";
+NotAUniqPLMID.Advice.Expert="The values of prefix and suffix inputs may need to be modified.";
+
+NotAUniqPLMID.Request.User="Execution error";
+NotAUniqPLMID.Diagnostic.User="PLMID for the instantiated template may already exist in the database.";
+NotAUniqPLMID.Advice.User="The values of prefix and suffix inputs may need to be modified.";
+
+
+// Cancel durant l'instantiation
+PLMTemplateCancelInInstantiationPanel.Request.Expert="Execution error";
+PLMTemplateCancelInInstantiationPanel.Diagnostic.Expert="The Insert Object dialog box was canceled during execution.";
+PLMTemplateCancelInInstantiationPanel.Advice.Expert="Relaunch the execution.";
+
+PLMTemplateCancelInInstantiationPanel.Request.User="Execution error";
+PLMTemplateCancelInInstantiationPanel.Diagnostic.User="The Insert Object dialog box was canceled during execution.";
+PLMTemplateCancelInInstantiationPanel.Advice.User="Relaunch the execution.";
+
+PLMTemplateInstantiatedButSetVariableValueKO.Request.Expert="Execution error";
+PLMTemplateInstantiatedButSetVariableValueKO.Diagnostic.Expert="The PLM Template has been instantiated but the output NewInstances could not be valuated.";
+PLMTemplateInstantiatedButSetVariableValueKO.Advice.Expert="Check your PLM Template.";
+
+PLMTemplateInstantiatedButSetVariableValueKO.Request.User="Execution error";
+PLMTemplateInstantiatedButSetVariableValueKO.Diagnostic.User="The PLM Template has been instantiated but the output NewInstances could not be valuated.";
+PLMTemplateInstantiatedButSetVariableValueKO.Advice.User="Contact your expert.";
+
+// NO KT1 license
+NoKT1Lic.Request.Expert="Execution error";
+NoKT1Lic.Diagnostic.Expert="License to instantiate a Knowledge Template is not available.";
+NoKT1Lic.Advice.Expert="Contact your administrator.";
+
+NoKT1Lic.Request.User="Execution error";
+NoKT1Lic.Diagnostic.User="License to instantiate a Knowledge Template is not available.";
+NoKT1Lic.Advice.User="Contact your administrator.";
+
